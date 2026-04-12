@@ -1,0 +1,2581 @@
+# Transcript
+
+Source: supplementary/particle_physics_1_basic_concepts/2009_fall/075 - Lecture 1 ｜ New Revolutions in Particle Physics： Basic Concepts [2eFvVzNF24g].webm
+
+- [00:00:00,000 - 00:00:07,000] Stanford University
+- [00:00:07,000 - 00:00:12,000] Alright, so what is particle physics about?
+- [00:00:12,000 - 00:00:15,000] Particle physics is about particles.
+- [00:00:15,000 - 00:00:17,500] It's about the question, and
+- [00:00:17,500 - 00:00:20,000] this is a very ancient question,
+- [00:00:20,000 - 00:00:25,000] at least, I suspect, about 2500 years old,
+- [00:00:25,000 - 00:00:27,000] is nature discrete?
+- [00:00:27,000 - 00:00:30,000] Discrete meaning to say, not that it's polite,
+- [00:00:30,000 - 00:00:36,000] but that matter and substances and energy,
+- [00:00:36,000 - 00:00:38,000] they didn't think about energy,
+- [00:00:38,000 - 00:00:40,000] but they thought about matter.
+- [00:00:40,000 - 00:00:43,000] That matter comes in discrete units,
+- [00:00:43,000 - 00:00:47,000] in indivisible units,
+- [00:00:47,000 - 00:00:50,000] which of course the Greeks called atom.
+- [00:00:50,000 - 00:00:53,000] I'm told that the word atom means indivisible,
+- [00:00:53,000 - 00:00:54,500] despite the fact that of course
+- [00:00:54,500 - 00:00:56,000] we break up atoms all the time.
+- [00:00:56,000 - 00:00:57,000] Nevertheless,
+- [00:00:57,000 - 00:00:59,000] the origin of the word,
+- [00:00:59,000 - 00:01:00,000] indivisible,
+- [00:01:00,000 - 00:01:03,000] that all things in the universe
+- [00:01:03,000 - 00:01:07,000] are made up out of something discrete.
+- [00:01:07,000 - 00:01:09,000] Let's call them particles.
+- [00:01:09,000 - 00:01:11,000] Particles is a good name for something discrete,
+- [00:01:11,000 - 00:01:14,000] something indivisible.
+- [00:01:14,000 - 00:01:20,000] That idea is, as I said, extremely ancient.
+- [00:01:20,000 - 00:01:23,000] The opposite idea is also ancient.
+- [00:01:23,000 - 00:01:26,000] Again, I don't know precisely when it was first formulated,
+- [00:01:26,000 - 00:01:28,500] I happen to remember a little more
+- [00:01:28,500 - 00:01:31,000] about the history of the atomic idea,
+- [00:01:31,000 - 00:01:33,000] that was, it doesn't matter who it is.
+- [00:01:33,000 - 00:01:36,000] Incidentally, do not trust my history,
+- [00:01:36,000 - 00:01:39,000] not because I don't know the history,
+- [00:01:39,000 - 00:01:41,500] but I sometimes tell the history
+- [00:01:41,500 - 00:01:44,000] in which I organize things logically,
+- [00:01:44,000 - 00:01:47,000] rather than temporally.
+- [00:01:47,000 - 00:01:51,000] So don't trust the time sequence that I tell you.
+- [00:01:51,000 - 00:01:54,000] It often represents what I wish the time sequence was,
+- [00:01:54,000 - 00:01:56,000] rather than what it actually was.
+- [00:01:56,000 - 00:01:59,000] But it's good for being,
+- [00:01:59,000 - 00:02:01,000] to present the logic of what happened,
+- [00:02:01,000 - 00:02:03,000] to present it in a logically compelling way,
+- [00:02:03,000 - 00:02:06,000] rather than a strict historical way.
+- [00:02:06,000 - 00:02:09,000] In any case,
+- [00:02:09,000 - 00:02:14,000] there were these characters who were the atomists,
+- [00:02:14,000 - 00:02:18,000] and the opposite of them,
+- [00:02:18,000 - 00:02:22,000] the people who thought that matter, material, and so forth,
+- [00:02:22,000 - 00:02:24,000] was continuously distributed.
+- [00:02:24,000 - 00:02:26,500] Continuously distributed means simply not
+- [00:02:26,500 - 00:02:29,000] made up out of discrete elements,
+- [00:02:29,000 - 00:02:31,000] but, I don't know what the right word is,
+- [00:02:31,000 - 00:02:34,000] uniform, continuous is the right word,
+- [00:02:34,000 - 00:02:38,000] a smear, as my grandmother would have said.
+- [00:02:38,000 - 00:02:39,000] A smear.
+- [00:02:39,000 - 00:02:41,500] Smeared out of a space in
+- [00:02:41,500 - 00:02:44,000] some uniform, continuous kind of way.
+- [00:02:44,000 - 00:02:48,000] And we might call that the field theory of matter.
+- [00:02:48,000 - 00:02:50,000] Fields, what are fields?
+- [00:02:50,000 - 00:02:53,000] Fields are functions in space,
+- [00:02:53,000 - 00:02:57,000] for example, they could be the density of material
+- [00:02:57,000 - 00:03:01,000] in a given region of space.
+- [00:03:01,000 - 00:03:04,000] They could be the electric and magnetic fields.
+- [00:03:04,000 - 00:03:06,000] Those are good examples.
+- [00:03:06,000 - 00:03:08,000] Electric and magnetic fields that
+- [00:03:08,000 - 00:03:10,000] determine how charged particles move.
+- [00:03:10,000 - 00:03:13,000] But the fields themselves, the electric and magnetic fields,
+- [00:03:13,000 - 00:03:15,500] are things that we conceive of
+- [00:03:15,500 - 00:03:18,000] as being uniformly distributed in space,
+- [00:03:18,000 - 00:03:21,000] not in the form of particles.
+- [00:03:21,000 - 00:03:23,000] And so,
+- [00:03:23,000 - 00:03:28,000] perhaps, matter, liquids, solids, and so forth,
+- [00:03:28,000 - 00:03:31,000] are also, in some sense, continuous,
+- [00:03:31,000 - 00:03:33,000] just like the electromagnetic field.
+- [00:03:33,000 - 00:03:35,000] That was the opposite idea.
+- [00:03:37,000 - 00:03:40,000] The particle idea, the discrete idea,
+- [00:03:40,000 - 00:03:43,000] had words like molecules, atoms, and so forth,
+- [00:03:43,000 - 00:03:48,000] collisions, and particles.
+- [00:03:48,000 - 00:03:51,000] The continuum idea, continuum is the right word,
+- [00:03:51,000 - 00:03:56,000] the continuum idea had words like fields attached to it,
+- [00:03:56,000 - 00:04:01,000] continuous fields of properties of various kinds.
+- [00:04:01,000 - 00:04:05,000] Which turned out to be right?
+- [00:04:05,000 - 00:04:08,000] In some sense, neither and both.
+- [00:04:08,000 - 00:04:09,500] In some sense, neither and
+- [00:04:09,500 - 00:04:11,000] both turned out to be right.
+- [00:04:11,000 - 00:04:14,500] The subtleties of quantum mechanics got in the
+- [00:04:14,500 - 00:04:18,000] way of either of them being completely right,
+- [00:04:18,000 - 00:04:18,500] but it also got in the way
+- [00:04:18,500 - 00:04:19,000] of either of them being completely right.
+- [00:04:19,000 - 00:04:21,000] But it also got in the way
+- [00:04:21,000 - 00:04:23,000] of either of them being completely wrong.
+- [00:04:23,000 - 00:04:27,000] Quantum mechanics is a subtle and difficult subject,
+- [00:04:27,000 - 00:04:34,000] as are many of the preliminaries to particle physics.
+- [00:04:34,000 - 00:04:35,500] I think I have taught all
+- [00:04:35,500 - 00:04:37,000] of them by now several times,
+- [00:04:37,000 - 00:04:39,000] and they do exist on the internet.
+- [00:04:39,000 - 00:04:42,000] The internet lectures that I've given, they're out there.
+- [00:04:42,000 - 00:04:45,000] And I advise you,
+- [00:04:45,000 - 00:04:47,000] as I said, I will try to keep itself contained,
+- [00:04:47,000 - 00:04:51,000] but I am going to assume to some extent
+- [00:04:51,000 - 00:04:53,000] the knowledge that I have
+- [00:04:53,000 - 00:04:55,000] taught previously in these classes.
+- [00:04:55,000 - 00:04:58,000] It can be picked up off the internet very easily.
+- [00:04:58,000 - 00:05:00,000] I don't know how to do it.
+- [00:05:00,000 - 00:05:02,000] I couldn't do it for the life of me.
+- [00:05:02,000 - 00:05:04,000] I can never access my own lectures.
+- [00:05:04,000 - 00:05:06,000] But everybody else can do it.
+- [00:05:06,000 - 00:05:08,000] And, well, the real reason is
+- [00:05:08,000 - 00:05:10,000] I don't like looking at myself.
+- [00:05:10,000 - 00:05:13,000] So I never do open my own lectures.
+- [00:05:13,000 - 00:05:14,000] But they're out there.
+- [00:05:14,000 - 00:05:16,000] And they're fairly complete.
+- [00:05:16,000 - 00:05:18,000] There are at least two
+- [00:05:18,000 - 00:05:20,000] courses out there on quantum mechanics.
+- [00:05:20,000 - 00:05:24,000] I think one on classical mechanics,
+- [00:05:24,000 - 00:05:27,000] at least one on special
+- [00:05:27,000 - 00:05:30,000] theory of relativity and electromagnetism.
+- [00:05:30,000 - 00:05:34,000] So since I put that effort in,
+- [00:05:34,000 - 00:05:37,000] I'm now going to try to draw on it,
+- [00:05:37,000 - 00:05:40,000] not today, but in the future,
+- [00:05:40,000 - 00:05:42,000] and use many of the
+- [00:05:42,000 - 00:05:44,000] things that I have lectured about.
+- [00:05:44,000 - 00:05:46,000] Okay.
+- [00:05:46,000 - 00:05:48,000] So, as I said,
+- [00:05:48,000 - 00:05:50,000] the particle physics question is
+- [00:05:50,000 - 00:05:52,000] whether nature is discrete or not.
+- [00:05:52,000 - 00:05:54,000] Let's just do a little bit of history,
+- [00:05:54,000 - 00:05:56,000] which I will probably get wrong,
+- [00:05:56,000 - 00:05:59,000] but that's at least chronologically.
+- [00:05:59,000 - 00:06:02,000] To my knowledge, the first real evidence,
+- [00:06:02,000 - 00:06:04,000] again, it's to my knowledge,
+- [00:06:04,000 - 00:06:08,000] the first real evidence that matter was discrete
+- [00:06:08,000 - 00:06:10,000] came, of course, from chemistry.
+- [00:06:10,000 - 00:06:11,000] It didn't come from physics.
+- [00:06:11,000 - 00:06:13,000] It came from chemistry.
+- [00:06:13,000 - 00:06:15,000] The division between chemistry and physics
+- [00:06:15,000 - 00:06:17,000] is a highly artificial one.
+- [00:06:17,000 - 00:06:19,000] Chemistry is simply just the,
+- [00:06:19,000 - 00:06:22,000] basically the physics of atoms and molecules.
+- [00:06:22,000 - 00:06:25,000] But it came from the chemist,
+- [00:06:25,000 - 00:06:26,000] John, John Dalton?
+- [00:06:26,000 - 00:06:27,000] John, I think.
+- [00:06:27,000 - 00:06:29,000] John Dalton,
+- [00:06:29,000 - 00:06:34,000] who realized that the masses of chemicals,
+- [00:06:34,000 - 00:06:38,000] the mass of a given number of molecules,
+- [00:06:38,000 - 00:06:40,000] a given number of molecules,
+- [00:06:40,000 - 00:06:42,000] now how he knew that he had
+- [00:06:42,000 - 00:06:44,000] to deal with a given number of molecules
+- [00:06:44,000 - 00:06:45,500] when he might be talking
+- [00:06:45,500 - 00:06:47,000] on the one hand of hydrogen,
+- [00:06:47,000 - 00:06:50,000] the other hand of a carbon dioxide or something,
+- [00:06:50,000 - 00:06:51,500] how he knew it was a given
+- [00:06:51,500 - 00:06:53,000] number of molecules is itself a story.
+- [00:06:53,000 - 00:06:55,000] Avogadro's name comes into it and so forth.
+- [00:06:55,000 - 00:06:57,000] The word mole,
+- [00:06:57,000 - 00:06:59,000] not the creature that lives under the ground,
+- [00:06:59,000 - 00:07:04,000] but the mole is Avogadro's number of molecules.
+- [00:07:04,000 - 00:07:06,000] How they knew how many molecules,
+- [00:07:06,000 - 00:07:07,000] they didn't know how many molecules,
+- [00:07:07,000 - 00:07:10,000] but how they knew how to compare different substances
+- [00:07:10,000 - 00:07:11,000] and say both of them
+- [00:07:11,000 - 00:07:12,000] had the same number of molecules,
+- [00:07:12,000 - 00:07:13,000] that itself is an interesting story.
+- [00:07:13,000 - 00:07:16,000] But it's not the story I want to tell.
+- [00:07:16,000 - 00:07:17,500] The story I want to tell
+- [00:07:17,500 - 00:07:19,000] had to do with the mass
+- [00:07:19,000 - 00:07:23,000] of a mole of material,
+- [00:07:23,000 - 00:07:27,000] a mass of a given number, Avogadro's number of molecules,
+- [00:07:27,000 - 00:07:32,000] that it came in discrete multiples
+- [00:07:32,000 - 00:07:37,000] of the mass of a mole of hydrogen.
+- [00:07:37,000 - 00:07:39,000] Now not exactly,
+- [00:07:39,000 - 00:07:43,000] but close enough to a pretty good precision
+- [00:07:43,000 - 00:07:48,000] are the mass of a mole of gobbledygook
+- [00:07:48,000 - 00:07:51,000] is an integer multiple,
+- [00:07:51,000 - 00:07:54,000] not three halves, not pi,
+- [00:07:54,000 - 00:07:57,000] not some other silly number,
+- [00:07:57,000 - 00:08:00,000] but some integer times the mass
+- [00:08:00,000 - 00:08:03,000] of the same number of molecules of hydrogen.
+- [00:08:03,000 - 00:08:05,000] That sort of suggested to Dalton
+- [00:08:05,000 - 00:08:08,000] that there were building blocks,
+- [00:08:08,000 - 00:08:12,000] that carbon, what is it, carbon eight?
+- [00:08:12,000 - 00:08:14,000] Carbon twelve.
+- [00:08:14,000 - 00:08:18,000] Carbon twelve had twelve units
+- [00:08:18,000 - 00:08:22,000] of whatever hydrogen one had.
+- [00:08:22,000 - 00:08:25,000] Hydrogen was one unit of stuff,
+- [00:08:25,000 - 00:08:28,000] whatever that stuff was, carbon twelve,
+- [00:08:28,000 - 00:08:30,000] or whatever the other numbers were.
+- [00:08:30,000 - 00:08:33,000] So it seemed like things were being built up
+- [00:08:33,000 - 00:08:35,000] out of basic units,
+- [00:08:35,000 - 00:08:37,000] which basically had the same mass
+- [00:08:37,000 - 00:08:40,000] as a hydrogen atom,
+- [00:08:40,000 - 00:08:42,000] almost as though everything was made up
+- [00:08:42,000 - 00:08:45,000] of units of hydrogen.
+- [00:08:45,000 - 00:08:49,000] Dalton, I think, proposed something like that,
+- [00:08:49,000 - 00:08:51,000] that there were basic units,
+- [00:08:51,000 - 00:08:53,000] and those basic units had the mass
+- [00:08:53,000 - 00:08:55,000] roughly of a hydrogen atom.
+- [00:08:55,000 - 00:08:58,000] So that was the first bit of evidence,
+- [00:08:58,000 - 00:09:01,000] and of course this was essentially right.
+- [00:09:01,000 - 00:09:03,000] Today we understand,
+- [00:09:03,000 - 00:09:05,000] let me just tell you why that's true
+- [00:09:05,000 - 00:09:06,000] from today's perspective,
+- [00:09:06,000 - 00:09:08,000] not to make a mystery out of it.
+- [00:09:08,000 - 00:09:11,000] Everything is made out of atoms,
+- [00:09:12,000 - 00:09:15,000] protons, neutrons, and electrons.
+- [00:09:15,000 - 00:09:17,000] Electrons are very, very light
+- [00:09:17,000 - 00:09:20,000] compared to protons and neutrons,
+- [00:09:20,000 - 00:09:22,000] and in counting up the mass of an atom,
+- [00:09:22,000 - 00:09:25,000] the electrons are not very significant.
+- [00:09:25,000 - 00:09:29,000] An electron has about a mass of one two thousandth,
+- [00:09:29,000 - 00:09:31,000] no, one two thousandth,
+- [00:09:31,000 - 00:09:34,000] one two thousandth of the mass
+- [00:09:34,000 - 00:09:36,000] of a proton or a neutron.
+- [00:09:36,000 - 00:09:39,000] So electrons don't come into the equation,
+- [00:09:39,000 - 00:09:41,000] they do come into the equation,
+- [00:09:41,000 - 00:09:43,000] but only a very, very small term.
+- [00:09:43,000 - 00:09:45,000] Forget about them.
+- [00:09:45,000 - 00:09:48,000] Protons and neutrons constitute most of the mass,
+- [00:09:48,000 - 00:09:49,000] almost all of the mass,
+- [00:09:49,000 - 00:09:51,000] of ordinary material.
+- [00:09:51,000 - 00:09:53,000] On the other hand,
+- [00:09:53,000 - 00:09:55,000] protons and neutrons, surprisingly,
+- [00:09:55,000 - 00:09:57,000] there's no, well, there is a good reason for it,
+- [00:09:57,000 - 00:10:00,000] but at the time there was certainly no known reason.
+- [00:10:00,000 - 00:10:03,000] In fact, protons and neutrons weren't known.
+- [00:10:03,000 - 00:10:05,000] But protons and neutrons have about
+- [00:10:05,000 - 00:10:08,000] the same mass as each other.
+- [00:10:08,000 - 00:10:10,000] As I said, about two thousand times
+- [00:10:10,000 - 00:10:12,000] the mass of an electron.
+- [00:10:12,000 - 00:10:15,000] And so the mass of a molecule
+- [00:10:15,000 - 00:10:19,000] is basically the mass of protons plus neutrons.
+- [00:10:19,000 - 00:10:21,000] They have about the same mass,
+- [00:10:21,000 - 00:10:23,000] and therefore the mass of a molecule
+- [00:10:23,000 - 00:10:25,000] is an integer multiple
+- [00:10:25,000 - 00:10:28,000] of the mass of a proton and neutron.
+- [00:10:28,000 - 00:10:30,000] On the other hand, hydrogen is,
+- [00:10:30,000 - 00:10:33,000] the nucleus of hydrogen is just one proton,
+- [00:10:33,000 - 00:10:37,000] and so it did turn out that Dalton was right.
+- [00:10:37,000 - 00:10:39,000] All materials have a mass which is
+- [00:10:39,000 - 00:10:42,000] approximately, there's an approximation in there,
+- [00:10:42,000 - 00:10:45,000] protons and neutrons don't have quite the same mass,
+- [00:10:45,000 - 00:10:48,000] slightly different, less than a percent, incidentally,
+- [00:10:48,000 - 00:10:51,000] a tenth of a percent or even less,
+- [00:10:51,000 - 00:10:53,000] whereas electrons are so light
+- [00:10:53,000 - 00:10:56,000] that they don't come into it very much.
+- [00:10:56,000 - 00:10:58,000] And so Dalton was right.
+- [00:10:58,000 - 00:11:00,000] And it was the first, to my knowledge,
+- [00:11:00,000 - 00:11:02,000] the first real evidence
+- [00:11:02,000 - 00:11:05,000] that matter came in discrete units.
+- [00:11:05,000 - 00:11:12,000] Now, molecules weren't atoms, of course.
+- [00:11:12,000 - 00:11:14,000] It took a little while longer
+- [00:11:14,000 - 00:11:16,000] to find out that molecules
+- [00:11:16,000 - 00:11:18,000] were made up out of atoms,
+- [00:11:18,000 - 00:11:21,000] and the atoms weren't just protons and neutrons or hydrogen,
+- [00:11:21,000 - 00:11:25,000] that atoms themselves, the things we now call atoms,
+- [00:11:25,000 - 00:11:28,000] that there were about a hundred of them,
+- [00:11:28,000 - 00:11:30,000] a hundred different kinds.
+- [00:11:30,000 - 00:11:32,000] This was, of course, the great triumph of chemistry
+- [00:11:32,000 - 00:11:34,000] of the 19th century and early 20th century,
+- [00:11:34,000 - 00:11:37,000] to identify all of the elements
+- [00:11:37,000 - 00:11:40,000] that go into the periodic table up there.
+- [00:11:40,000 - 00:11:43,000] Incidentally, the periodic table is not very periodic.
+- [00:11:43,000 - 00:11:47,000] You know, if you really look at it,
+- [00:11:47,000 - 00:11:50,000] it's a bit of a fake, the periodic table.
+- [00:11:50,000 - 00:11:52,000] It's not very periodic.
+- [00:11:52,000 - 00:11:54,500] But nevertheless, identifying all
+- [00:11:54,500 - 00:11:57,000] those separate atoms up there,
+- [00:11:57,000 - 00:12:00,000] the elements, the elements are in some things
+- [00:12:00,000 - 00:12:02,000] which are composed of all the same kind,
+- [00:12:02,000 - 00:12:03,000] you know that story,
+- [00:12:03,000 - 00:12:05,000] composed of atoms,
+- [00:12:05,000 - 00:12:07,000] and identifying the atoms,
+- [00:12:07,000 - 00:12:10,000] and at the end of the identification of atoms,
+- [00:12:10,000 - 00:12:13,000] roughly about a hundred of them,
+- [00:12:13,000 - 00:12:16,000] less than a hundred occurring in nature,
+- [00:12:16,000 - 00:12:19,000] 92 of them to be precise,
+- [00:12:19,000 - 00:12:22,000] well, more than that if you include isotopes,
+- [00:12:22,000 - 00:12:26,000] but over a hundred different kinds of atoms,
+- [00:12:26,000 - 00:12:29,000] and everything made up out of atoms.
+- [00:12:29,000 - 00:12:32,000] So atoms, at the end of the 19th century,
+- [00:12:32,000 - 00:12:35,000] the things we call atoms or elements
+- [00:12:35,000 - 00:12:36,000] were the building blocks,
+- [00:12:36,000 - 00:12:39,000] the elementary particles of nature.
+- [00:12:39,000 - 00:12:41,000] Now of course it took another five years
+- [00:12:41,000 - 00:12:43,000] after the turn of the century for Einstein
+- [00:12:43,000 - 00:12:45,000] to do something that nailed,
+- [00:12:45,000 - 00:12:50,000] really, really nailed the molecular theory of matter.
+- [00:12:50,000 - 00:12:56,000] It wasn't until 1905 that Einstein explained in detail
+- [00:12:56,000 - 00:12:58,000] how you could prove that matter
+- [00:12:58,000 - 00:13:00,000] was really made out of particles,
+- [00:13:00,000 - 00:13:03,000] but long before that,
+- [00:13:03,000 - 00:13:06,000] chemists, physicists understood,
+- [00:13:06,000 - 00:13:08,000] for the most part,
+- [00:13:08,000 - 00:13:12,000] that everything was made out of these 92 elements.
+- [00:13:12,000 - 00:13:15,000] So they were the elementary particles.
+- [00:13:15,000 - 00:13:18,000] Now, sort of all hell broke loose
+- [00:13:18,000 - 00:13:20,000] in the beginning of the 20th century,
+- [00:13:20,000 - 00:13:23,000] very, very end of the 19th century,
+- [00:13:23,000 - 00:13:27,000] when some discoveries were made.
+- [00:13:27,000 - 00:13:29,000] The electron was discovered.
+- [00:13:29,000 - 00:13:30,500] About three years, I think,
+- [00:13:30,500 - 00:13:32,000] before the turn of the century,
+- [00:13:32,000 - 00:13:34,000] I don't know exactly when it was,
+- [00:13:34,000 - 00:13:35,000] the electron was discovered,
+- [00:13:35,000 - 00:13:37,000] and a number of other things were discovered,
+- [00:13:37,000 - 00:13:40,000] but in particular, radioactivity was discovered.
+- [00:13:40,000 - 00:13:46,000] Radioactivity was the first real signal
+- [00:13:46,000 - 00:13:52,000] of the thing which was later to become
+- [00:13:52,000 - 00:13:54,000] nuclear physics,
+- [00:13:54,000 - 00:13:58,000] and nuclear physics and particle physics,
+- [00:13:59,000 - 00:14:02,000] were all the things that needed to be explained,
+- [00:14:02,000 - 00:14:04,000] sort of there,
+- [00:14:04,000 - 00:14:08,000] in a sort of tiny, tiny little version.
+- [00:14:08,000 - 00:14:10,000] So let me just remind
+- [00:14:10,000 - 00:14:12,000] you about radioactivity, just for fun.
+- [00:14:12,000 - 00:14:14,000] Who was it who discovered radioactivity?
+- [00:14:14,000 - 00:14:16,000] I don't even remember.
+- [00:14:16,000 - 00:14:17,500] I don't think it was
+- [00:14:17,500 - 00:14:19,000] Marie Curie who discovered radioactivity.
+- [00:14:19,000 - 00:14:21,000] I don't think so.
+- [00:14:21,000 - 00:14:23,000] Was it Becquerel?
+- [00:14:23,000 - 00:14:25,000] I think it was Becquerel.
+- [00:14:25,000 - 00:14:27,000] I don't think it was Marie Curie.
+- [00:14:27,000 - 00:14:29,000] What she did was,
+- [00:14:29,000 - 00:14:32,000] lots and lots of experiments to pin it down,
+- [00:14:32,000 - 00:14:34,000] but it was Becquerel.
+- [00:14:34,000 - 00:14:38,000] And he had a chunk of lead.
+- [00:14:38,000 - 00:14:40,000] Don't ask me why he did this.
+- [00:14:40,000 - 00:14:42,000] I do not know.
+- [00:14:42,000 - 00:14:44,000] He had a chunk of lead,
+- [00:14:44,000 - 00:14:45,500] and a little hole in
+- [00:14:45,500 - 00:14:47,000] the chunk of lead like that,
+- [00:14:47,000 - 00:14:50,000] and some material down here.
+- [00:14:50,000 - 00:14:52,000] Radioactivity.
+- [00:14:52,000 - 00:14:54,000] I guess the first thing that happened
+- [00:14:54,000 - 00:14:56,000] was he had some radioactive material,
+- [00:14:56,000 - 00:14:58,000] presumably radium or something like it,
+- [00:14:58,000 - 00:15:00,000] in his laboratory,
+- [00:15:00,000 - 00:15:02,000] and he had a photographic plate,
+- [00:15:02,000 - 00:15:05,000] and accidentally the photographic plate
+- [00:15:05,000 - 00:15:08,000] happened to be near the material.
+- [00:15:08,000 - 00:15:10,000] Not here, over here.
+- [00:15:10,000 - 00:15:12,000] Material, photographic plate.
+- [00:15:12,000 - 00:15:15,000] And the photographic plate got ruined.
+- [00:15:15,000 - 00:15:18,000] Ruined by the presence of the radioactive material.
+- [00:15:18,000 - 00:15:22,000] The radioactive material just ruined,
+- [00:15:22,000 - 00:15:25,000] you know, was like light shining on it,
+- [00:15:25,000 - 00:15:27,000] and ruined the photographic plate.
+- [00:15:27,000 - 00:15:29,000] Anybody else, or not anybody else, probably me,
+- [00:15:29,000 - 00:15:31,000] would have just thrown away the plate and said,
+- [00:15:31,000 - 00:15:33,000] ah, this is ruined, let's find another plate
+- [00:15:33,000 - 00:15:35,000] and start the experiment over again.
+- [00:15:35,000 - 00:15:38,000] But Becquerel realized he had discovered something.
+- [00:15:38,000 - 00:15:41,000] He had discovered that radioactive materials
+- [00:15:41,000 - 00:15:43,000] do something to the photographic plate
+- [00:15:43,000 - 00:15:46,000] as if they had been illuminated by some radiation.
+- [00:15:46,000 - 00:15:48,000] So he decided to study
+- [00:15:48,000 - 00:15:50,000] that radiation a little bit better,
+- [00:15:50,000 - 00:15:52,000] and he put the source of
+- [00:15:52,000 - 00:15:54,000] it deep in a block of lead.
+- [00:15:54,000 - 00:15:56,000] How he knew to use lead, I do not know,
+- [00:15:56,000 - 00:15:59,000] but lead was a good substance because it's very dense.
+- [00:15:59,000 - 00:16:01,000] And he put it into
+- [00:16:01,000 - 00:16:03,000] a hole, drilled into the lead,
+- [00:16:03,000 - 00:16:06,000] and then put his photographic plate out here,
+- [00:16:06,000 - 00:16:11,000] and wanted to see whether it would illuminate
+- [00:16:11,000 - 00:16:14,000] a single spot over here.
+- [00:16:14,000 - 00:16:17,000] Everything was collimated by this hole.
+- [00:16:17,000 - 00:16:20,000] He wanted to see whether it
+- [00:16:20,000 - 00:16:23,000] would create a sharp little spot
+- [00:16:23,000 - 00:16:26,000] as if something were coming up out of this hole.
+- [00:16:26,000 - 00:16:28,000] And indeed it did.
+- [00:16:28,000 - 00:16:30,000] So he got the idea
+- [00:16:30,000 - 00:16:32,000] that a beam of some sort
+- [00:16:32,000 - 00:16:36,000] was being ejected, or something was being ejected
+- [00:16:36,000 - 00:16:39,000] by this radioactive material,
+- [00:16:39,000 - 00:16:42,000] and being collimated along a beam.
+- [00:16:42,000 - 00:16:44,000] That was the first particle beam.
+- [00:16:44,000 - 00:16:46,000] That was the first beam of particles.
+- [00:16:46,000 - 00:16:49,000] What was it? He had no idea what it was.
+- [00:16:49,000 - 00:16:53,000] But then I guess a second fortuitous accident,
+- [00:16:53,000 - 00:16:55,000] I think it was an accident, again,
+- [00:16:55,000 - 00:16:57,000] I'm making up the history as I go along,
+- [00:16:57,000 - 00:16:59,000] but it's close to the truth.
+- [00:16:59,000 - 00:17:02,000] He happened to have a magnet in the laboratory.
+- [00:17:02,000 - 00:17:04,000] And for some reason the
+- [00:17:04,000 - 00:17:06,000] magnet was in a position here
+- [00:17:06,000 - 00:17:09,000] where a magnetic field was created
+- [00:17:09,000 - 00:17:13,000] near where these particles were being ejected.
+- [00:17:13,000 - 00:17:16,000] And what happened when he put the magnetic field,
+- [00:17:16,000 - 00:17:19,000] when he put the magnet near this,
+- [00:17:19,000 - 00:17:23,000] is the beam split into three separate beams.
+- [00:17:23,000 - 00:17:25,000] Three separate beams.
+- [00:17:25,000 - 00:17:28,000] One went straight ahead,
+- [00:17:28,000 - 00:17:33,000] just as if the magnetic field was not there.
+- [00:17:33,000 - 00:17:36,000] One of them got deviated to the left,
+- [00:17:36,000 - 00:17:39,000] and one of them got deviated to the right.
+- [00:17:39,000 - 00:17:41,000] Left, right, right, left, whatever.
+- [00:17:41,000 - 00:17:44,000] One deviated more than the other, in fact.
+- [00:17:44,000 - 00:17:46,000] They were not symmetric.
+- [00:17:46,000 - 00:17:50,000] And Becquerel, or somebody, whoever was around,
+- [00:17:50,000 - 00:17:55,000] knew enough to realize that beams of force
+- [00:17:55,000 - 00:17:58,000] were not the force of the magnetic field.
+- [00:17:58,000 - 00:18:01,000] So the magnetic field is a force of force.
+- [00:18:01,000 - 00:18:03,000] And it's a force of force.
+- [00:18:03,000 - 00:18:04,000] And if you have a magnet,
+- [00:18:04,000 - 00:18:06,000] and you have a charged particle,
+- [00:18:06,000 - 00:18:09,000] the charged particle goes through the magnetic field
+- [00:18:09,000 - 00:18:13,000] and either bends to the right or to the left,
+- [00:18:13,000 - 00:18:16,000] depending on the sign of the magnetic field
+- [00:18:16,000 - 00:18:19,000] and the charge of the particle.
+- [00:18:19,000 - 00:18:22,000] So if the particle was a positively charged particle,
+- [00:18:22,000 - 00:18:24,000] it would bend one way in the magnetic field.
+- [00:18:24,000 - 00:18:26,000] And what Becquerel had found
+- [00:18:26,000 - 00:18:29,000] is that there were three kinds of radiation.
+- [00:18:29,000 - 00:18:31,500] One behaving as if it
+- [00:18:31,500 - 00:18:34,000] was composed of electrically neutral particles.
+- [00:18:34,000 - 00:18:36,000] Which one was electrically neutral?
+- [00:18:36,000 - 00:18:39,000] The one that wasn't deviated at all.
+- [00:18:39,000 - 00:18:41,000] Of course, he didn't know they were particles.
+- [00:18:41,000 - 00:18:44,000] All he knew was that some collimated effect happened
+- [00:18:44,000 - 00:18:48,000] that illuminated the magnetic field.
+- [00:18:48,000 - 00:18:51,000] And that was the first thing he found.
+- [00:18:51,000 - 00:18:53,000] And then he found that the second thing he found
+- [00:18:53,000 - 00:18:57,000] was the detector, the screen, the photographic plate.
+- [00:18:57,000 - 00:19:00,000] One of them got deviated to the right
+- [00:19:00,000 - 00:19:04,000] as if it were a negatively charged particle.
+- [00:19:04,000 - 00:19:08,000] He called that component of the radiation,
+- [00:19:08,000 - 00:19:10,000] he called that component beta.
+- [00:19:10,000 - 00:19:12,000] The component that went straight ahead,
+- [00:19:12,000 - 00:19:14,000] he called gamma.
+- [00:19:14,000 - 00:19:17,000] And the component that deviated in the other direction
+- [00:19:17,000 - 00:19:19,000] as if it were positively charged,
+- [00:19:19,000 - 00:19:21,000] he called alpha.
+- [00:19:21,000 - 00:19:23,000] These became the three components
+- [00:19:23,000 - 00:19:28,000] of the three distinct kinds of radioactive effects,
+- [00:19:28,000 - 00:19:31,000] the three distinct kinds of radioactivity.
+- [00:19:31,000 - 00:19:37,000] Beta radioactivity, gamma and alpha.
+- [00:19:40,000 - 00:19:43,000] Just again, I'm not interested in making suspense here.
+- [00:19:43,000 - 00:19:44,000] Let me just tell you what they were.
+- [00:19:44,000 - 00:19:46,000] You probably know what they were.
+- [00:19:46,000 - 00:19:48,000] Many of you know what they were.
+- [00:19:48,000 - 00:19:52,000] Beta was electrons, negatively charged particles.
+- [00:19:53,000 - 00:19:55,000] Which were just the electrons
+- [00:19:55,000 - 00:19:57,000] that had already been previously discovered
+- [00:19:57,000 - 00:20:00,000] from cathode ray tubes and that kind of thing.
+- [00:20:00,000 - 00:20:03,000] These were electrons coming out.
+- [00:20:03,000 - 00:20:07,000] The alpha particles, we now understand,
+- [00:20:07,000 - 00:20:09,000] and at that time there was no precedent for it,
+- [00:20:09,000 - 00:20:11,000] that they are helium nuclei.
+- [00:20:11,000 - 00:20:14,000] Two protons and two neutrons stuck together.
+- [00:20:14,000 - 00:20:16,000] Atomic number four.
+- [00:20:16,000 - 00:20:20,000] Dalton, had he had access to helium,
+- [00:20:20,000 - 00:20:22,000] which he didn't,
+- [00:20:22,000 - 00:20:24,000] he would have said helium was number four
+- [00:20:24,000 - 00:20:30,000] on his integer collection of materials.
+- [00:20:30,000 - 00:20:34,000] And gamma are photons.
+- [00:20:34,000 - 00:20:37,000] Electrically neutral, no electricity at all.
+- [00:20:37,000 - 00:20:41,000] And these three kinds of...
+- [00:20:41,000 - 00:20:47,000] Now, I think he did...
+- [00:20:47,000 - 00:20:49,000] Again, I don't remember the history,
+- [00:20:49,000 - 00:20:51,000] but he might have.
+- [00:20:51,000 - 00:20:55,000] And so, don't think you know.
+- [00:20:55,000 - 00:20:56,000] But in that case,
+- [00:20:56,000 - 00:20:58,000] the results were that
+- [00:20:58,000 - 00:21:00,000] all of the electrons that the atom had
+- [00:21:00,000 - 00:21:03,000] had a sufficiently dilute source
+- [00:21:03,000 - 00:21:05,000] that these particles arrived,
+- [00:21:05,000 - 00:21:06,000] one at a time,
+- [00:21:06,000 - 00:21:08,000] at their destination.
+- [00:21:08,000 - 00:21:09,000] And in that case,
+- [00:21:09,000 - 00:21:10,000] he would not have seen
+- [00:21:10,000 - 00:21:12,000] a bright spot over here.
+- [00:21:12,000 - 00:21:14,000] He would have seen
+- [00:21:14,000 - 00:21:15,000] blip,
+- [00:21:15,000 - 00:21:16,000] blip,
+- [00:21:16,000 - 00:21:17,000] blip,
+- [00:21:17,000 - 00:21:18,000] blip,
+- [00:21:18,000 - 00:21:19,000] illumination occurring,
+- [00:21:19,000 - 00:21:20,000] or spots occurring,
+- [00:21:20,000 - 00:21:23,300] And he might have said, oh, those are particles.
+- [00:21:24,260 - 00:21:26,630] Particles arriving one at a
+- [00:21:26,630 - 00:21:29,000] time, illuminating a screen discreetly.
+- [00:21:30,320 - 00:21:32,260] He would have done exactly the
+- [00:21:32,260 - 00:21:34,200] same thing for the alpha particles.
+- [00:21:34,480 - 00:21:36,660] He would have found that the
+- [00:21:36,660 - 00:21:38,840] alpha particles arrived one at a time.
+- [00:21:39,920 - 00:21:41,190] In other words, he could have used,
+- [00:21:41,190 - 00:21:42,460] he might have used, he probably did,
+- [00:21:42,720 - 00:21:45,220] used the screen here as a counter,
+- [00:21:45,220 - 00:21:47,720] analogous to a Geiger counter or something.
+- [00:21:47,720 - 00:21:50,160] Whether he did or not, I don't know.
+- [00:21:51,300 - 00:21:54,140] But it's something you can imagine, that he
+- [00:21:54,140 - 00:21:56,980] detected the particles coming one at a time.
+- [00:21:57,080 - 00:21:59,220] That would certainly be feasible with a Geiger counter.
+- [00:22:00,520 - 00:22:05,340] And so, evidence that whatever this radiation is,
+- [00:22:05,640 - 00:22:07,250] it's coming in discreet little
+- [00:22:07,250 - 00:22:08,860] bundles that we could call particles.
+- [00:22:09,440 - 00:22:12,440] What about gamma? Same thing for gamma.
+- [00:22:13,200 - 00:22:14,940] Gamma's coming one at a time.
+- [00:22:15,160 - 00:22:17,700] But at that time, Becquerel had no idea.
+- [00:22:17,920 - 00:22:21,920] Neither did anybody else what gamma was.
+- [00:22:22,620 - 00:22:25,120] It was uncharged. That was all that was known.
+- [00:22:26,220 - 00:22:32,020] And it illuminated the screen just as the others did.
+- [00:22:32,620 - 00:22:34,920] Okay. That was, as I said, in
+- [00:22:34,920 - 00:22:37,220] some sense, the first particle physics experiment.
+- [00:22:38,120 - 00:22:39,470] We'll come to some later
+- [00:22:39,470 - 00:22:40,820] particle physics experiments soon enough.
+- [00:22:42,520 - 00:22:47,120] Let's next talk about electromagnetic radiation.
+- [00:22:47,720 - 00:22:49,720] Ordinary electromagnetic radiation.
+- [00:22:50,220 - 00:22:53,720] Oh, well, I said I wasn't going to make suspense.
+- [00:22:54,320 - 00:22:57,920] Gamma is photons. Gamma is light.
+- [00:22:58,120 - 00:23:00,620] Gamma, well, it's very high energy light.
+- [00:23:00,920 - 00:23:06,920] But gamma is in some way connected to ordinary light.
+- [00:23:08,220 - 00:23:09,420] So let's come to light.
+- [00:23:09,720 - 00:23:12,270] Gamma was the big mystery because there
+- [00:23:12,270 - 00:23:14,820] were no neutral particles known at that time
+- [00:23:15,320 - 00:23:15,920] that
+- [00:23:16,080 - 00:23:17,520] could account for the gamma radiation.
+- [00:23:17,520 - 00:23:19,520] So gamma was a mystery.
+- [00:23:20,020 - 00:23:25,020] And that mystery persisted until fairly
+- [00:23:25,020 - 00:23:30,020] late in the very early 20th century.
+- [00:23:30,020 - 00:23:31,020] Let's put it that way.
+- [00:23:31,020 - 00:23:34,020] Fairly late in the very early 20th century.
+- [00:23:35,020 - 00:23:40,020] It was, of course, Planck and Einstein, really Einstein,
+- [00:23:40,020 - 00:23:43,020] who were the first to
+- [00:23:43,020 - 00:23:46,020] understand that light comes in quanta,
+- [00:23:46,020 - 00:23:47,020] that light comes in photons.
+- [00:23:47,020 - 00:23:48,520] But let's go back.
+- [00:23:49,520 - 00:23:53,520] Light was sort of the strong, strong case
+- [00:23:53,520 - 00:23:57,520] for something which was not made of particles.
+- [00:23:58,020 - 00:24:01,020] Light was something which was clearly made of fields.
+- [00:24:01,020 - 00:24:03,520] It was made of the electromagnetic field.
+- [00:24:04,020 - 00:24:06,770] Okay, the electromagnetic field, electric
+- [00:24:06,770 - 00:24:09,520] fields and magnetic fields forming waves.
+- [00:24:09,520 - 00:24:13,020] When you shake a charge, waves get given off.
+- [00:24:13,020 - 00:24:16,020] The wave fields are continuous wave fields,
+- [00:24:16,020 - 00:24:16,520] at least according to,
+- [00:24:16,520 - 00:24:19,020] according to classical electrodynamics.
+- [00:24:19,520 - 00:24:21,520] And they give off waves
+- [00:24:21,520 - 00:24:23,520] that propagate through space completely continuously.
+- [00:24:24,020 - 00:24:29,020] And Newton, of course, had thought that light was particles.
+- [00:24:29,520 - 00:24:32,020] But Newton, by that time, had
+- [00:24:32,020 - 00:24:34,520] been completely relegated to the dustbin,
+- [00:24:34,520 - 00:24:37,020] at least as far as theory of light went.
+- [00:24:37,520 - 00:24:39,770] There were many experiments, some
+- [00:24:39,770 - 00:24:42,020] of them done by Newton himself,
+- [00:24:42,520 - 00:24:46,020] that strongly said light is waves, not particles.
+- [00:24:46,520 - 00:24:48,520] So let's just talk about
+- [00:24:48,520 - 00:24:50,520] light a little bit, electromagnetic radiation.
+- [00:24:53,020 - 00:24:57,520] If you take electromagnetic radiation, it comes in waves.
+- [00:24:58,520 - 00:25:00,020] So if there's a source
+- [00:25:00,020 - 00:25:01,520] of electromagnetic radiation here, an antenna,
+- [00:25:02,020 - 00:25:04,770] some form of antenna emitting, it could
+- [00:25:04,770 - 00:25:07,520] be radio waves, it could be microwaves,
+- [00:25:07,520 - 00:25:10,270] it could be infrared, it could
+- [00:25:10,270 - 00:25:13,020] be light, it could be ultraviolet.
+- [00:25:13,520 - 00:25:15,520] An atom is a perfectly good,
+- [00:25:15,520 - 00:25:17,520] a good antenna, incidentally.
+- [00:25:18,020 - 00:25:21,020] It doesn't have to be a big macroscopic tower.
+- [00:25:21,020 - 00:25:23,020] An atom with a charge going
+- [00:25:23,020 - 00:25:25,020] around in a circle is an antenna.
+- [00:25:25,520 - 00:25:28,020] Antennas emit waves.
+- [00:25:29,520 - 00:25:32,020] And those electromagnetic waves, when they
+- [00:25:32,020 - 00:25:34,520] also fall on a photographic plate
+- [00:25:35,020 - 00:25:37,270] or other device which is sensitive
+- [00:25:37,270 - 00:25:39,520] to light or sensitive to radiation,
+- [00:25:40,020 - 00:25:44,020] will illuminate that, will illuminate that
+- [00:25:44,020 - 00:25:45,520] and turn it white or
+- [00:25:45,520 - 00:25:47,020] black, turn it black, I guess.
+- [00:25:47,520 - 00:25:50,020] And that's in the character of light.
+- [00:25:50,020 - 00:25:53,020] Now how do we know that these things are waves?
+- [00:25:53,020 - 00:25:57,520] How can we tell that they're also
+- [00:25:57,520 - 00:26:02,020] not bullets shot out of the source here?
+- [00:26:02,520 - 00:26:05,770] So one thing you might do is do
+- [00:26:05,770 - 00:26:09,020] something very similar to what was done over here.
+- [00:26:09,520 - 00:26:11,520] Put an obstruction,
+- [00:26:11,520 - 00:26:13,520] a little hole,
+- [00:26:14,020 - 00:26:17,770] and see whether the light is collimated exactly as if
+- [00:26:17,770 - 00:26:21,520] it were bullets being shot out of a gun here.
+- [00:26:22,520 - 00:26:24,020] If it was bullets, you would
+- [00:26:24,020 - 00:26:25,520] illuminate a little spot over here.
+- [00:26:26,020 - 00:26:29,020] And of course what happens is that
+- [00:26:29,020 - 00:26:32,020] you don't illuminate such a small spot.
+- [00:26:32,520 - 00:26:35,020] You illuminate something which is fuzzier than that.
+- [00:26:38,520 - 00:26:40,520] You illuminate a fuzzy region.
+- [00:26:40,520 - 00:26:42,020] But that in itself did
+- [00:26:42,020 - 00:26:43,520] not prove that light was waves.
+- [00:26:44,520 - 00:26:45,520] Not at all.
+- [00:26:45,520 - 00:26:48,770] You could say, well, just maybe when
+- [00:26:48,770 - 00:26:52,020] these particles go through this opening here,
+- [00:26:52,520 - 00:26:56,020] maybe they have little forces exerted on them
+- [00:26:56,020 - 00:26:59,520] by the edges of the hole here or whatever,
+- [00:26:59,520 - 00:27:03,020] which deflect them, some of them get deflected,
+- [00:27:03,520 - 00:27:06,020] and so maybe you get a more smeary picture,
+- [00:27:06,020 - 00:27:08,520] a more smeary image than you might have hoped for.
+- [00:27:08,520 - 00:27:12,520] So it was not just that the beams got deflected,
+- [00:27:12,520 - 00:27:13,520] the light beams got deflected,
+- [00:27:13,520 - 00:27:16,520] that in itself was not enough to
+- [00:27:16,520 - 00:27:19,520] argue for a particle structure to light,
+- [00:27:19,520 - 00:27:22,520] or sorry, a wave structure to light, I'm sorry.
+- [00:27:22,520 - 00:27:25,520] But you do something else, which is much
+- [00:27:25,520 - 00:27:28,520] more sensitive to the wave character of light.
+- [00:27:28,520 - 00:27:31,020] Here's the screen over here again.
+- [00:27:31,020 - 00:27:32,770] You open up two little holes,
+- [00:27:32,770 - 00:27:34,520] two little holes next to each other.
+- [00:27:36,020 - 00:27:38,520] If light was simply particles,
+- [00:27:38,520 - 00:27:40,770] what you would expect to find here
+- [00:27:40,770 - 00:27:43,020] is basically two smears of the same kind,
+- [00:27:43,020 - 00:27:46,020] just superimposed on top of each other,
+- [00:27:46,020 - 00:27:47,770] maybe a little extra dense
+- [00:27:47,770 - 00:27:49,520] in the center where they overlap,
+- [00:27:49,520 - 00:27:52,520] but just two smears, one the image of this
+- [00:27:52,520 - 00:27:55,520] hole, one the image of that hole, with nothing unusual.
+- [00:27:55,520 - 00:27:58,520] This of course is not what happens.
+- [00:27:58,520 - 00:28:02,520] What happens is each hole emits waves.
+- [00:28:05,520 - 00:28:09,020] You could do the same trick with water waves.
+- [00:28:09,020 - 00:28:10,520] In fact, it's not hard to
+- [00:28:10,520 - 00:28:12,020] do the same trick with water waves.
+- [00:28:13,020 - 00:28:16,020] And the water waves interfere.
+- [00:28:16,020 - 00:28:18,020] If this is the high point
+- [00:28:18,020 - 00:28:20,020] of a wave coming out of here,
+- [00:28:20,020 - 00:28:22,020] and this is the low point of a wave,
+- [00:28:22,020 - 00:28:25,520] places where the high points combine
+- [00:28:25,520 - 00:28:29,020] from the two holes reinforce each other.
+- [00:28:29,020 - 00:28:32,520] Places where a high point from one hole meets
+- [00:28:32,520 - 00:28:36,020] a low point from the other hole cancel each other.
+- [00:28:37,020 - 00:28:39,520] And so the effect is to see when
+- [00:28:39,520 - 00:28:42,020] it hits the screen here, to see bands.
+- [00:28:43,020 - 00:28:47,020] The bands of positive reinforcement
+- [00:28:47,020 - 00:28:51,020] where the high points add,
+- [00:28:51,020 - 00:28:54,020] missing places with no light where
+- [00:28:54,020 - 00:28:57,020] the high points meet low points.
+- [00:28:57,020 - 00:29:00,020] That's an interference pattern.
+- [00:29:00,020 - 00:29:02,520] Interference pattern is a real signal
+- [00:29:02,520 - 00:29:05,020] of wave-like motion, of wave behavior.
+- [00:29:05,020 - 00:29:08,020] Waves, you can do this, as I said, with water.
+- [00:29:08,020 - 00:29:09,520] You just put your finger
+- [00:29:09,520 - 00:29:11,020] into water and wiggle two fingers,
+- [00:29:11,020 - 00:29:13,020] and the two waves, from the two ends,
+- [00:29:13,020 - 00:29:15,020] will spread out.
+- [00:29:15,020 - 00:29:19,020] Some places they'll reinforce, some places they'll cancel.
+- [00:29:19,020 - 00:29:25,020] And so rather peculiarly, but nothing terribly unusual,
+- [00:29:25,020 - 00:29:27,520] places which would have been illuminated by
+- [00:29:27,520 - 00:29:30,020] either of the two holes by themselves,
+- [00:29:30,020 - 00:29:33,020] there's destructive interference, they get canceled,
+- [00:29:33,020 - 00:29:37,020] and places you get constructive interference and they add,
+- [00:29:37,020 - 00:29:40,020] and you get extra intensity.
+- [00:29:40,020 - 00:29:42,020] That is the kind of thing,
+- [00:29:42,020 - 00:29:45,520] this interference property was the kind of thing
+- [00:29:45,520 - 00:29:49,020] that really nailed the wave theory of light.
+- [00:29:50,020 - 00:29:52,020] So light was a wave.
+- [00:29:52,020 - 00:29:55,020] In fact, this did not occur after Newton,
+- [00:29:55,020 - 00:29:57,020] it really occurred before Newton.
+- [00:29:57,020 - 00:30:03,020] Huygens was a 17th century?
+- [00:30:03,020 - 00:30:06,020] Huygens must have been 17th century, but previous to Newton.
+- [00:30:06,020 - 00:30:07,020] Who? What?
+- [00:30:07,020 - 00:30:08,020] Thomas Young?
+- [00:30:08,020 - 00:30:09,020] Yeah.
+- [00:30:09,020 - 00:30:11,020] The physicist that demonstrated the interference.
+- [00:30:11,020 - 00:30:14,020] Yeah, yeah, but Huygens already had
+- [00:30:14,020 - 00:30:17,020] the basic ideas of wave propagation,
+- [00:30:17,020 - 00:30:19,020] and that's from the 1600s sometime.
+- [00:30:19,020 - 00:30:21,020] So this debate went back,
+- [00:30:21,020 - 00:30:24,020] and Newton had done many experiments himself,
+- [00:30:24,020 - 00:30:28,020] which should have been interpreted as interference,
+- [00:30:28,020 - 00:30:30,020] as interference, wave interference.
+- [00:30:30,020 - 00:30:31,020] But he didn't.
+- [00:30:31,020 - 00:30:33,020] In any case,
+- [00:30:33,020 - 00:30:38,020] after these experiments, Young's experiment, others,
+- [00:30:38,020 - 00:30:40,020] it was definitely confirmed,
+- [00:30:40,020 - 00:30:45,020] that light is made of waves.
+- [00:30:45,020 - 00:30:47,020] Okay, what kind of waves?
+- [00:30:47,020 - 00:30:49,020] Well, that took Maxwell.
+- [00:30:49,020 - 00:30:51,520] Maxwell realized that they were
+- [00:30:51,520 - 00:30:54,020] waves of electric and magnetic field.
+- [00:30:54,020 - 00:30:57,020] You know what an electric and magnetic field is?
+- [00:30:57,020 - 00:31:00,020] An electric field, well, I,
+- [00:31:00,020 - 00:31:02,020] look it up if you don't know,
+- [00:31:02,020 - 00:31:04,020] electric and magnetic fields,
+- [00:31:04,020 - 00:31:06,020] and light is a wavy
+- [00:31:06,020 - 00:31:08,020] motion of electric and magnetic fields.
+- [00:31:08,020 - 00:31:10,020] First of all, light is a wave,
+- [00:31:10,020 - 00:31:15,020] and here's a wave moving down the axis.
+- [00:31:15,020 - 00:31:18,020] What is that wave a wave in?
+- [00:31:18,020 - 00:31:21,020] Well, it's a wave of electric field.
+- [00:31:21,020 - 00:31:25,020] Here the electric field is pointing down.
+- [00:31:25,020 - 00:31:29,020] Here the electric field is pointing up.
+- [00:31:29,020 - 00:31:32,020] Here the electric field is pointing down.
+- [00:31:32,020 - 00:31:35,020] Let's just draw a line through there.
+- [00:31:35,020 - 00:31:39,020] Alternating electric field up, down, up, down.
+- [00:31:39,020 - 00:31:41,020] And the whole thing moves
+- [00:31:41,020 - 00:31:43,020] off with the speed of light.
+- [00:31:43,020 - 00:31:46,020] The whole thing moves off with the speed of light.
+- [00:31:46,020 - 00:31:48,020] Electric field, incidentally, there's also a
+- [00:31:48,020 - 00:31:50,020] magnetic field attached to the thing.
+- [00:31:50,020 - 00:31:53,020] It's a complicated object.
+- [00:31:53,020 - 00:31:55,020] It has magnetic field also.
+- [00:31:55,020 - 00:31:59,020] The magnetic field is perpendicular to the electric field.
+- [00:31:59,020 - 00:32:05,020] And so it sticks out this way.
+- [00:32:05,020 - 00:32:06,520] And that's what a light wave
+- [00:32:06,520 - 00:32:08,020] would look like if you could see,
+- [00:32:08,020 - 00:32:10,520] if you could sample its electric and
+- [00:32:10,520 - 00:32:13,020] magnetic field as it went past you.
+- [00:32:13,020 - 00:32:15,020] Of course, as it passes you,
+- [00:32:15,020 - 00:32:17,520] it will constantly alternate very rapidly
+- [00:32:17,520 - 00:32:20,020] if it's an ordinary light wave.
+- [00:32:20,020 - 00:32:23,020] Much too rapidly for you to be able to see.
+- [00:32:23,020 - 00:32:26,020] But if it were an extremely long radio wave,
+- [00:32:26,020 - 00:32:28,020] very, very long radio wave,
+- [00:32:28,020 - 00:32:30,020] you might be able to see
+- [00:32:30,020 - 00:32:32,020] the field oscillating in front of you.
+- [00:32:32,020 - 00:32:34,020] And this is, as I
+- [00:32:34,020 - 00:32:36,020] said, what it would look like.
+- [00:32:36,020 - 00:32:37,020] It's a wave.
+- [00:32:37,020 - 00:32:41,020] Being a wave, it will exhibit interference patterns.
+- [00:32:41,020 - 00:32:46,020] And Maxwell had absolutely nailed the
+- [00:32:46,020 - 00:32:51,020] wave and the electromagnetic theory of light.
+- [00:32:51,020 - 00:32:54,520] So let's talk about waves a
+- [00:32:54,520 - 00:32:58,020] little bit before we talk about particles.
+- [00:32:58,020 - 00:33:01,020] Let's talk a little more about
+- [00:33:01,020 - 00:33:04,020] waves and the properties of waves.
+- [00:33:04,020 - 00:33:07,020] The first property of a wave that I want to...
+- [00:33:07,020 - 00:33:11,020] come to is the wavelength.
+- [00:33:11,020 - 00:33:15,020] Wavelength is simply the distance along the wave
+- [00:33:15,020 - 00:33:24,020] before you return one full cycle to the next wave.
+- [00:33:24,020 - 00:33:25,520] All right, so you start here
+- [00:33:25,520 - 00:33:27,020] and you go and you come back
+- [00:33:27,020 - 00:33:30,020] to the same exact kind of thing as over here.
+- [00:33:30,020 - 00:33:34,020] That's one cycle or one full wavelength.
+- [00:33:34,020 - 00:33:37,020] And wavelength, the symbol for wavelength is lambda.
+- [00:33:37,020 - 00:33:40,020] Greek lambda.
+- [00:33:40,020 - 00:33:41,020] Okay.
+- [00:33:41,020 - 00:33:43,020] Lambda for length.
+- [00:33:43,020 - 00:33:45,020] That's the wavelength.
+- [00:33:45,020 - 00:33:47,020] And it's measured in units of distance.
+- [00:33:47,020 - 00:33:49,020] It's measured in meters or it's measured in centimeters,
+- [00:33:49,020 - 00:33:52,020] whatever your choice of units are.
+- [00:33:55,020 - 00:33:58,020] Okay, so lambda equals wavelength.
+- [00:33:58,020 - 00:34:00,020] Wavelength, let's just call it wavelength.
+- [00:34:00,020 - 00:34:03,020] Another property is if you were to stand still
+- [00:34:03,020 - 00:34:05,020] and just watch the wave go past you,
+- [00:34:05,020 - 00:34:06,520] you go ahead and go up and down
+- [00:34:06,520 - 00:34:08,020] and up and down and up and down,
+- [00:34:08,020 - 00:34:10,020] it would have some frequency.
+- [00:34:10,020 - 00:34:12,020] How many cycles per second?
+- [00:34:12,020 - 00:34:15,020] This is not the length of the wave in space.
+- [00:34:15,020 - 00:34:19,020] It's kind of the number of cycles per second
+- [00:34:19,020 - 00:34:22,020] or perhaps even something simpler,
+- [00:34:22,020 - 00:34:24,520] the time that it takes to go
+- [00:34:24,520 - 00:34:27,020] through one cycle as it passes you.
+- [00:34:27,020 - 00:34:30,020] That could be called the period of the wave.
+- [00:34:30,020 - 00:34:32,020] Period.
+- [00:34:32,020 - 00:34:33,020] It's a time.
+- [00:34:33,020 - 00:34:35,020] It's measured in seconds.
+- [00:34:35,020 - 00:34:37,520] So, and a light wave
+- [00:34:37,520 - 00:34:40,020] has a very, very short period.
+- [00:34:40,020 - 00:34:42,020] Up and down and up and down extremely fast,
+- [00:34:42,020 - 00:34:44,020] 10 to the minus 15 seconds or something, whatever.
+- [00:34:44,020 - 00:34:47,020] The longer the wavelength, the slower the period.
+- [00:34:47,020 - 00:34:50,020] The shorter the wavelength, the faster,
+- [00:34:50,020 - 00:34:54,020] the shorter the wavelength, the shorter the period.
+- [00:34:54,020 - 00:34:58,020] Okay, what's the connection between wavelength and period?
+- [00:34:58,020 - 00:35:00,020] Yeah.
+- [00:35:00,020 - 00:35:01,020] Right.
+- [00:35:01,020 - 00:35:05,020] So think about the wave moving past you one wavelength.
+- [00:35:05,020 - 00:35:07,020] How long, how far does it move?
+- [00:35:07,020 - 00:35:09,020] It's moved distance lambda.
+- [00:35:09,020 - 00:35:11,020] How long has it taken?
+- [00:35:11,020 - 00:35:13,020] It's taken the period.
+- [00:35:13,020 - 00:35:15,020] The distance that it moves divided by the
+- [00:35:15,020 - 00:35:17,020] time that it takes to move that distance
+- [00:35:17,020 - 00:35:19,020] is the velocity of the wave.
+- [00:35:19,020 - 00:35:23,020] For light, that would be the speed of light.
+- [00:35:23,020 - 00:35:24,520] If it's not a light wave,
+- [00:35:24,520 - 00:35:26,020] it might be moving with different speed.
+- [00:35:26,020 - 00:35:27,520] If it's a water wave,
+- [00:35:27,520 - 00:35:29,020] it would be much smaller speed.
+- [00:35:29,020 - 00:35:31,020] If it's a sound wave, it's a smaller speed.
+- [00:35:31,020 - 00:35:33,020] But for a light wave,
+- [00:35:33,020 - 00:35:35,020] the wavelength divided by the speed
+- [00:35:35,020 - 00:35:37,020] divided by the period
+- [00:35:37,020 - 00:35:39,020] is always equal to the speed of light.
+- [00:35:39,020 - 00:35:41,020] Whatever the wavelength is,
+- [00:35:41,020 - 00:35:43,020] the period is given in terms of the wavelength
+- [00:35:43,020 - 00:35:45,020] or the wavelength is given in terms of the period.
+- [00:35:45,020 - 00:35:47,020] So that's a fundamental relation.
+- [00:35:47,020 - 00:35:50,020] It's usually expressed a different way.
+- [00:35:50,020 - 00:35:53,020] The inverse of the period, one over the period,
+- [00:35:53,020 - 00:35:55,020] is called the frequency.
+- [00:35:55,020 - 00:35:59,020] It's the number of oscillations per second.
+- [00:35:59,020 - 00:36:02,020] The number of oscillations per unit time
+- [00:36:02,020 - 00:36:04,020] is called the frequency,
+- [00:36:04,020 - 00:36:07,020] and that's equal to one over the period.
+- [00:36:07,020 - 00:36:09,020] The faster the period, the shorter the frequency.
+- [00:36:09,020 - 00:36:11,020] And so you can also write this
+- [00:36:11,020 - 00:36:15,020] as the wavelength times the frequency
+- [00:36:15,020 - 00:36:18,020] is equal to the speed of light.
+- [00:36:18,020 - 00:36:20,020] So if I give you the wavelength,
+- [00:36:20,020 - 00:36:21,020] you can tell me the frequency.
+- [00:36:21,020 - 00:36:22,020] If I give you the frequency,
+- [00:36:22,020 - 00:36:25,020] you can tell me the wavelength by solving this equation.
+- [00:36:25,020 - 00:36:28,020] And that's the fundamental connection
+- [00:36:28,020 - 00:36:32,020] between wavelength and frequency.
+- [00:36:32,020 - 00:36:34,020] Now since one of the things
+- [00:36:34,020 - 00:36:35,520] that we really do want
+- [00:36:35,520 - 00:36:37,020] to teach you a little bit
+- [00:36:37,020 - 00:36:42,020] is the terminology that physicists use for things.
+- [00:36:42,020 - 00:36:46,020] And they tend not to use the terminology
+- [00:36:46,020 - 00:36:50,020] of cycles per second for frequency.
+- [00:36:50,020 - 00:36:52,020] They use something else.
+- [00:36:52,020 - 00:36:55,020] It's radians per second.
+- [00:36:55,020 - 00:36:56,020] What does that mean?
+- [00:36:56,020 - 00:37:02,020] Imagine a thing going around in a circle.
+- [00:37:02,020 - 00:37:04,020] It's going around in a circle
+- [00:37:04,020 - 00:37:06,020] with a frequency f.
+- [00:37:06,020 - 00:37:10,020] That means f times around the circle per second.
+- [00:37:10,020 - 00:37:12,020] Physicists tend to use,
+- [00:37:12,020 - 00:37:14,020] physicists and mathematicians,
+- [00:37:14,020 - 00:37:17,020] tend to use not the number of times
+- [00:37:17,020 - 00:37:18,020] you go around in a second,
+- [00:37:18,020 - 00:37:20,020] but the number of radians.
+- [00:37:20,020 - 00:37:23,020] Radian is about 57 degrees.
+- [00:37:23,020 - 00:37:25,020] It's an angle about that big.
+- [00:37:25,020 - 00:37:27,020] How many radians per second?
+- [00:37:27,020 - 00:37:29,020] And the relationship between
+- [00:37:29,020 - 00:37:32,020] the frequency in terms of cycles per second
+- [00:37:32,020 - 00:37:33,020] and the frequency in terms of cycles per second,
+- [00:37:33,020 - 00:37:36,020] the frequency in terms of radians per second
+- [00:37:36,020 - 00:37:38,020] is very simple.
+- [00:37:38,020 - 00:37:39,020] In terms of radians per second,
+- [00:37:39,020 - 00:37:42,020] we call it omega.
+- [00:37:42,020 - 00:37:45,020] And they're closely connected to each other.
+- [00:37:45,020 - 00:37:49,020] Omega is just 2 pi times the frequency.
+- [00:37:49,020 - 00:37:50,020] Why 2 pi?
+- [00:37:50,020 - 00:37:54,020] Because there are 2 pi radians in a circle.
+- [00:37:54,020 - 00:37:57,020] So frequency can be measured in either way.
+- [00:37:57,020 - 00:38:00,020] Physicists tend to use omega,
+- [00:38:00,020 - 00:38:03,020] except when they're writing elementary physics books,
+- [00:38:03,020 - 00:38:06,020] for undergraduate pre-med majors,
+- [00:38:06,020 - 00:38:08,020] in which case they use f.
+- [00:38:08,020 - 00:38:10,020] Okay?
+- [00:38:10,020 - 00:38:11,020] We're all physicists.
+- [00:38:11,020 - 00:38:12,020] We're all grown up.
+- [00:38:12,020 - 00:38:14,020] We're all, you know,
+- [00:38:14,020 - 00:38:16,020] so we can use omega
+- [00:38:16,020 - 00:38:19,020] like the world of physics does.
+- [00:38:19,020 - 00:38:24,020] Omega is the frequency of light measured
+- [00:38:24,020 - 00:38:26,020] not in cycles per second,
+- [00:38:26,020 - 00:38:27,020] but in radians per second.
+- [00:38:27,020 - 00:38:28,020] You say, where is the
+- [00:38:28,020 - 00:38:29,020] angle for a light wave going?
+- [00:38:29,020 - 00:38:30,020] Don't worry about where the angle is.
+- [00:38:30,020 - 00:38:31,020] Just divide frequency,
+- [00:38:31,020 - 00:38:33,020] just multiply frequency by 2 pi.
+- [00:38:33,020 - 00:38:35,020] And that defines omega.
+- [00:38:35,020 - 00:38:36,020] All right.
+- [00:38:36,020 - 00:38:37,020] They're proportional to each other.
+- [00:38:37,020 - 00:38:38,020] All right.
+- [00:38:38,020 - 00:38:43,020] So we can also write this then as,
+- [00:38:43,020 - 00:38:45,020] let's write it this way.
+- [00:38:45,020 - 00:38:46,020] Frequency, I'm going to write it,
+- [00:38:46,020 - 00:38:52,020] frequency is equal to c divided by lambda.
+- [00:38:52,020 - 00:38:55,020] And now I'm going to substitute for frequency
+- [00:38:55,020 - 00:38:58,020] omega divided by 2 pi.
+- [00:38:58,020 - 00:39:00,020] And what do we get?
+- [00:39:00,020 - 00:39:03,020] We get omega is equal to 2 pi.
+- [00:39:03,020 - 00:39:07,020] 2 pi c over lambda.
+- [00:39:07,020 - 00:39:10,020] Fundamental equation of wave motion
+- [00:39:10,020 - 00:39:12,020] that the frequency measured in radians
+- [00:39:12,020 - 00:39:15,020] and the wavelength are related
+- [00:39:15,020 - 00:39:17,020] by 2 pi times the speed of light.
+- [00:39:17,020 - 00:39:19,020] This, of course, is true for any wave
+- [00:39:19,020 - 00:39:23,020] if you plug in the right velocity.
+- [00:39:23,020 - 00:39:26,020] Okay, we will use that equation from time to time.
+- [00:39:26,020 - 00:39:28,020] So get it down.
+- [00:39:28,020 - 00:39:31,020] Now, as I said,
+- [00:39:31,020 - 00:39:34,020] light comes in different wavelengths.
+- [00:39:34,020 - 00:39:36,020] And those different wavelengths characterize
+- [00:39:36,020 - 00:39:40,020] the different kinds of radiation.
+- [00:39:40,020 - 00:39:43,020] Radio waves are very long wavelengths.
+- [00:39:43,020 - 00:39:45,020] Meters are certainly more than,
+- [00:39:45,020 - 00:39:50,020] certainly more than microscopic lengths.
+- [00:39:50,020 - 00:39:53,020] Radio waves can be anything from, what,
+- [00:39:53,020 - 00:39:57,020] a few centimeters to 10 centimeters or something.
+- [00:39:57,020 - 00:40:00,020] I don't remember exactly where the radio spectrum begins.
+- [00:40:00,020 - 00:40:02,020] Hmm?
+- [00:40:02,020 - 00:40:05,020] It can go up to anything.
+- [00:40:05,020 - 00:40:08,020] Arbitrarily long wavelengths are called still radio waves,
+- [00:40:08,020 - 00:40:10,020] even though no radio could
+- [00:40:10,020 - 00:40:12,020] work on the basis of waves
+- [00:40:12,020 - 00:40:15,020] that had a wavelength of a billion light years.
+- [00:40:15,020 - 00:40:19,020] But still, they're still called radio waves.
+- [00:40:19,020 - 00:40:21,020] And where's the smaller, what's the smallest radio wave?
+- [00:40:21,020 - 00:40:23,020] I think about 10 centimeters.
+- [00:40:23,020 - 00:40:27,020] And it's a highly arbitrary division, of course,
+- [00:40:27,020 - 00:40:29,020] completely arbitrary.
+- [00:40:29,020 - 00:40:32,020] Smaller than radio waves, smaller wavelength.
+- [00:40:32,020 - 00:40:35,020] Microwaves, microwaves go from a few centimeters
+- [00:40:35,020 - 00:40:41,020] down to, what, a micrometer or something like that, micron.
+- [00:40:41,020 - 00:40:45,020] Smaller wavelength than microwaves.
+- [00:40:45,020 - 00:40:47,020] Infrared, infrared waves.
+- [00:40:47,020 - 00:40:49,020] And then from infrared waves,
+- [00:40:49,020 - 00:40:51,020] you have light waves, visible light.
+- [00:40:51,020 - 00:40:53,020] Visible light is a rather
+- [00:40:53,020 - 00:40:55,020] narrow range of frequencies or wavelengths.
+- [00:40:55,020 - 00:40:59,020] And then comes ultraviolet, shorter wavelengths.
+- [00:40:59,020 - 00:41:02,020] X-rays, gamma rays.
+- [00:41:02,020 - 00:41:05,020] Gamma rays are just exactly these objects here.
+- [00:41:05,020 - 00:41:08,520] Very, very short wavelength,
+- [00:41:08,520 - 00:41:12,020] extremely short wavelength radiation.
+- [00:41:12,020 - 00:41:14,020] And that's what Becquerel had
+- [00:41:14,020 - 00:41:16,020] discovered coming out of there.
+- [00:41:16,020 - 00:41:19,020] The only trouble is
+- [00:41:19,020 - 00:41:22,020] that Becquerel discovered discrete bumps,
+- [00:41:22,020 - 00:41:25,020] you know, discrete blips, one at a time,
+- [00:41:25,020 - 00:41:29,020] and not nice, continuous waves.
+- [00:41:29,020 - 00:41:34,520] Okay, that then brings us
+- [00:41:34,520 - 00:41:40,020] to the puzzle of quantum mechanics.
+- [00:41:40,020 - 00:41:42,020] Now, we're not going to go into
+- [00:41:42,020 - 00:41:44,020] it in any great depth, certainly not tonight,
+- [00:41:44,020 - 00:41:48,020] but let's just recount the history a little bit.
+- [00:41:48,020 - 00:41:53,020] Einstein and Planck realized for a variety of reasons,
+- [00:41:53,020 - 00:41:56,020] mostly thermodynamic properties of light,
+- [00:41:56,020 - 00:41:58,020] that Einstein, Planck, and Planck,
+- [00:41:58,020 - 00:42:01,020] Einstein, that light had to be thought
+- [00:42:01,020 - 00:42:04,020] of as being made up out of discrete,
+- [00:42:04,020 - 00:42:07,020] indivisible elements.
+- [00:42:07,020 - 00:42:13,020] He might have, it might have been an experimental discovery.
+- [00:42:13,020 - 00:42:15,020] In fact, in some sense,
+- [00:42:15,020 - 00:42:17,020] Becquerel's discovery was an experimental discovery.
+- [00:42:17,020 - 00:42:19,520] It's just he didn't realize the
+- [00:42:19,520 - 00:42:22,020] thing he was seeing was electromagnetic radiation.
+- [00:42:22,020 - 00:42:25,020] So I won't go through the actual history,
+- [00:42:25,020 - 00:42:27,020] but let's make up an imaginary history
+- [00:42:27,020 - 00:42:30,020] of how the discreteness of light might have been discovered.
+- [00:42:30,020 - 00:42:32,020] It could have been discovered this way.
+- [00:42:32,020 - 00:42:37,020] You, again, shine your light on a,
+- [00:42:37,020 - 00:42:40,020] you shine your light on a screen.
+- [00:42:40,020 - 00:42:42,020] And you illuminate the screen,
+- [00:42:42,020 - 00:42:44,020] and of course what you see
+- [00:42:44,020 - 00:42:46,020] is a nice continuous blob of light.
+- [00:42:46,020 - 00:42:49,020] It could either be an interference pattern,
+- [00:42:49,020 - 00:42:51,020] or it could just be a single hole,
+- [00:42:51,020 - 00:42:52,520] in which case it would just
+- [00:42:52,520 - 00:42:54,020] be a blob on the screen.
+- [00:42:54,020 - 00:42:56,020] Okay.
+- [00:42:56,020 - 00:42:58,020] But now you do the experiment differently.
+- [00:42:58,020 - 00:43:00,020] Here's your source of light.
+- [00:43:00,020 - 00:43:02,020] You put an obstruction in the way.
+- [00:43:02,020 - 00:43:04,020] The obstruction is a filter.
+- [00:43:04,020 - 00:43:06,020] The obstruction is a, not a filter, but a,
+- [00:43:06,020 - 00:43:10,020] a semi-transparent, semi-opaque
+- [00:43:10,020 - 00:43:14,020] thing which blocks out a certain percentage of the light.
+- [00:43:14,020 - 00:43:16,020] What happens over here?
+- [00:43:16,020 - 00:43:18,020] Well, the blob gets dimmer.
+- [00:43:18,020 - 00:43:20,020] Okay. It's not as intense.
+- [00:43:20,020 - 00:43:22,020] You make it thicker.
+- [00:43:22,020 - 00:43:24,020] It's even less intense.
+- [00:43:24,020 - 00:43:29,020] You see less light arriving per unit of time.
+- [00:43:29,020 - 00:43:31,020] And you make it even a little bit thicker.
+- [00:43:31,020 - 00:43:34,020] And at some point, all of a sudden,
+- [00:43:34,020 - 00:43:37,020] the character of what's here changes.
+- [00:43:37,020 - 00:43:40,020] And instead of seeing the blob,
+- [00:43:40,020 - 00:43:48,020] you see discrete events, little blips.
+- [00:43:48,020 - 00:43:51,020] Now, if you wait a long time,
+- [00:43:51,020 - 00:43:53,020] these little blips build up.
+- [00:43:54,020 - 00:43:56,020] And they build up to something
+- [00:43:56,020 - 00:43:59,020] which has exactly the same pattern
+- [00:43:59,020 - 00:44:01,020] as the blob had.
+- [00:44:01,020 - 00:44:04,020] So the blob in this case, then,
+- [00:44:04,020 - 00:44:07,020] is some sort of effect
+- [00:44:07,020 - 00:44:09,020] that has to do with lots of little blips.
+- [00:44:09,020 - 00:44:11,020] So many little blips that you can't recognize them
+- [00:44:11,020 - 00:44:13,020] as being individual.
+- [00:44:13,020 - 00:44:15,020] That's the blob.
+- [00:44:15,020 - 00:44:18,020] But if you attenuate the light
+- [00:44:18,020 - 00:44:20,020] and cut it down
+- [00:44:20,020 - 00:44:22,020] so that the intensity coming through here
+- [00:44:22,020 - 00:44:24,020] is really, really small,
+- [00:44:24,020 - 00:44:26,020] what you see is blips.
+- [00:44:26,020 - 00:44:28,020] This experiment can actually be done.
+- [00:44:28,020 - 00:44:30,020] It was not done in those early days.
+- [00:44:30,020 - 00:44:32,020] But you can imagine.
+- [00:44:32,020 - 00:44:35,020] And this is what Einstein had suggested
+- [00:44:35,020 - 00:44:39,020] really does happen in his photoelectric paper,
+- [00:44:39,020 - 00:44:43,020] that light comes through as absolutely discrete things.
+- [00:44:43,020 - 00:44:47,020] The motivation for it was thermodynamics
+- [00:44:47,020 - 00:44:48,020] and other things.
+- [00:44:48,020 - 00:44:51,020] But this might have been the form of discovery,
+- [00:44:51,020 - 00:44:54,020] discovering these individual blips,
+- [00:44:54,020 - 00:44:56,020] and then,
+- [00:44:56,020 - 00:44:58,020] the light is coming through.
+- [00:44:58,020 - 00:45:00,020] And this is what really would happen.
+- [00:45:00,020 - 00:45:04,020] So, something very, very confusing going on.
+- [00:45:04,020 - 00:45:06,020] Light is a wave.
+- [00:45:06,020 - 00:45:08,020] That had already been proved.
+- [00:45:08,020 - 00:45:13,020] In fact, if we put a screen over here
+- [00:45:13,020 - 00:45:17,020] with two little holes in it,
+- [00:45:17,020 - 00:45:19,020] two little holes in it,
+- [00:45:19,020 - 00:45:23,020] we will again see light coming through
+- [00:45:23,020 - 00:45:25,020] bit by bit.
+- [00:45:29,020 - 00:45:31,020] One at a time.
+- [00:45:31,020 - 00:45:33,020] And if we leave it up there a long time,
+- [00:45:33,020 - 00:45:37,020] the blips will sort of fill in,
+- [00:45:37,020 - 00:45:42,020] and what they will form is an interference pattern.
+- [00:45:42,020 - 00:45:45,020] So it became clear,
+- [00:45:45,020 - 00:45:48,020] clear but still very confusing,
+- [00:45:48,020 - 00:45:51,020] that light is made up out of indivisible elements
+- [00:45:51,020 - 00:45:53,020] called photons,
+- [00:45:53,020 - 00:45:57,020] and that the wave character of the light
+- [00:45:57,020 - 00:46:00,020] really represents, or the wave pattern,
+- [00:46:00,020 - 00:46:03,020] really represents the probability
+- [00:46:03,020 - 00:46:06,020] that the photon appears at different places.
+- [00:46:06,020 - 00:46:09,020] In other words, it's randomly arriving blips,
+- [00:46:09,020 - 00:46:11,020] but they arrive with a probability
+- [00:46:11,020 - 00:46:13,020] in different locations,
+- [00:46:13,020 - 00:46:16,020] which follows the pattern
+- [00:46:16,020 - 00:46:19,020] that was established by the wave theory.
+- [00:46:19,020 - 00:46:22,020] The wave theory gives you a wave theory of probabilities.
+- [00:46:23,020 - 00:46:25,020] That's quantum mechanics.
+- [00:46:25,020 - 00:46:27,020] We may have to talk about,
+- [00:46:27,020 - 00:46:29,020] we will have to talk about quantum mechanics
+- [00:46:29,020 - 00:46:31,020] a great deal more.
+- [00:46:31,020 - 00:46:36,020] But this kind of experiment,
+- [00:46:36,020 - 00:46:38,020] this kind of observation about light
+- [00:46:38,020 - 00:46:43,020] was the first example of a connection
+- [00:46:43,020 - 00:46:44,520] which is really in a sense
+- [00:46:44,520 - 00:46:46,020] what this course is all about.
+- [00:46:46,020 - 00:46:50,020] It's a connection, first of all,
+- [00:46:50,020 - 00:46:53,020] between waves of any kind,
+- [00:46:53,020 - 00:46:59,020] and particles.
+- [00:46:59,020 - 00:47:02,020] They are not two different things.
+- [00:47:02,020 - 00:47:05,020] Somehow, waves and particles
+- [00:47:05,020 - 00:47:09,020] are two manifestations of the same thing.
+- [00:47:09,020 - 00:47:11,020] We'll have to come back to that,
+- [00:47:11,020 - 00:47:14,020] and we'll try to explain it perhaps again later.
+- [00:47:14,020 - 00:47:18,020] Now I'm just filling in some early facts,
+- [00:47:18,020 - 00:47:23,020] mostly just to set the stage.
+- [00:47:23,020 - 00:47:26,020] Waves and particles,
+- [00:47:26,020 - 00:47:29,020] at least when it came to light,
+- [00:47:29,020 - 00:47:32,020] were somehow intimately connected,
+- [00:47:32,020 - 00:47:33,520] and it didn't make sense
+- [00:47:33,520 - 00:47:35,020] to say light is a particle,
+- [00:47:35,020 - 00:47:36,520] or it didn't make sense
+- [00:47:36,520 - 00:47:38,020] to say light is a wave,
+- [00:47:38,020 - 00:47:41,020] but has manifestations of both.
+- [00:47:41,020 - 00:47:46,020] All right, the situation only got more complicated
+- [00:47:46,020 - 00:47:51,020] when electrons were studied.
+- [00:47:51,020 - 00:47:53,020] Electrons are clearly particles.
+- [00:47:53,020 - 00:47:55,020] Everybody knows electrons are particles.
+- [00:47:55,020 - 00:47:57,020] There was no ambiguity about that,
+- [00:47:57,020 - 00:47:59,020] no more ambiguity than there was
+- [00:47:59,020 - 00:48:01,020] about whether light was a wave or not.
+- [00:48:01,020 - 00:48:02,020] It was.
+- [00:48:02,020 - 00:48:04,020] But yet, something funny.
+- [00:48:04,020 - 00:48:07,020] Well, something funny also happened with electrons.
+- [00:48:07,020 - 00:48:10,020] You could do exactly the same kind of experiment
+- [00:48:10,020 - 00:48:12,020] with electrons. You can.
+- [00:48:12,020 - 00:48:14,020] Today, this experiment can really be done.
+- [00:48:14,020 - 00:48:16,520] At the time, it was
+- [00:48:16,520 - 00:48:19,020] a bit of a thought experiment,
+- [00:48:19,020 - 00:48:21,020] but equivalent experiments,
+- [00:48:21,020 - 00:48:22,020] you'd have to put the holes,
+- [00:48:22,020 - 00:48:23,020] you'd have to make a screen,
+- [00:48:23,020 - 00:48:25,020] you'd put the holes much closer to each other
+- [00:48:25,020 - 00:48:26,020] if you want to do it with electrons
+- [00:48:26,020 - 00:48:28,020] for one reason or another,
+- [00:48:28,020 - 00:48:29,020] and you send electrons through.
+- [00:48:29,020 - 00:48:31,020] Of course they come through one at a time.
+- [00:48:31,020 - 00:48:33,020] Everybody knew electrons were little particles
+- [00:48:33,020 - 00:48:36,020] that came through one at a time.
+- [00:48:36,020 - 00:48:39,020] What was totally unexpected is,
+- [00:48:39,020 - 00:48:41,020] or would have been unexpected,
+- [00:48:41,020 - 00:48:42,020] was that the electrons,
+- [00:48:42,020 - 00:48:45,020] when you open two holes,
+- [00:48:45,020 - 00:48:48,020] form an interference pattern.
+- [00:48:48,020 - 00:48:51,020] So it wasn't just that light was funny.
+- [00:48:51,020 - 00:48:54,020] Particles were funny in general.
+- [00:48:54,020 - 00:48:59,020] Electrons exhibited wave properties.
+- [00:48:59,020 - 00:49:02,020] Light exhibited particle properties.
+- [00:49:02,020 - 00:49:06,020] In fact, had we taken the alpha particles,
+- [00:49:06,020 - 00:49:08,020] which are much heavier than electrons,
+- [00:49:08,020 - 00:49:10,020] much, much heavier than electrons,
+- [00:49:10,020 - 00:49:12,020] 8,000 times heavier than an electron,
+- [00:49:12,020 - 00:49:15,020] much harder to do these kind of experiments with,
+- [00:49:15,020 - 00:49:18,020] but send them through two little holes like that,
+- [00:49:18,020 - 00:49:20,020] we also would see interference patterns
+- [00:49:20,020 - 00:49:22,020] and interference patterns.
+- [00:49:22,020 - 00:49:24,020] This has been done with objects
+- [00:49:24,020 - 00:49:27,020] which are much, much bigger than helium nuclei,
+- [00:49:27,020 - 00:49:28,020] namely buckyballs.
+- [00:49:28,020 - 00:49:31,020] Buckyballs have been sent through
+- [00:49:31,020 - 00:49:34,020] interference experiments like this
+- [00:49:34,020 - 00:49:38,020] and seen to form the same kind of interference pattern.
+- [00:49:38,020 - 00:49:41,020] So everybody know what a buckyball is?
+- [00:49:41,020 - 00:49:43,020] 60 carbons...
+- [00:49:45,020 - 00:49:47,020] In the shape of a soccer ball.
+- [00:49:47,020 - 00:49:49,020] In the shape of a generalized soccer ball.
+- [00:49:49,020 - 00:49:51,020] Yeah, right.
+- [00:49:51,020 - 00:49:54,020] Is it a regular soccer ball?
+- [00:49:54,020 - 00:49:56,020] Yeah, like a soccer ball.
+- [00:49:56,020 - 00:49:58,020] No, it's not really a soccer ball, but...
+- [00:49:58,020 - 00:50:00,020] Well...
+- [00:50:00,020 - 00:50:02,020] So...
+- [00:50:02,020 - 00:50:03,520] And it is widely believed that
+- [00:50:03,520 - 00:50:05,020] if you did it with bowling balls,
+- [00:50:05,020 - 00:50:07,020] well, you can't really do it with bowling balls.
+- [00:50:07,020 - 00:50:09,020] Much, much, much too hard.
+- [00:50:09,020 - 00:50:11,020] I understand that people who did it with buckyballs
+- [00:50:11,020 - 00:50:12,520] are going to try to
+- [00:50:12,520 - 00:50:14,020] do it with living cells, viruses,
+- [00:50:14,020 - 00:50:18,020] to prove that viruses are quantum mechanical.
+- [00:50:19,020 - 00:50:23,020] And then they're going to ask the virus
+- [00:50:23,020 - 00:50:26,020] what the virus felt when it...
+- [00:50:29,020 - 00:50:31,020] Anyway...
+- [00:50:31,020 - 00:50:33,020] Good.
+- [00:50:37,020 - 00:50:40,020] The waves and particles are somehow the same thing,
+- [00:50:40,020 - 00:50:43,020] and if you want to penetrate that more deeply,
+- [00:50:43,020 - 00:50:45,020] you've got to learn some quantum mechanics,
+- [00:50:45,020 - 00:50:47,020] and the place to do it is...
+- [00:50:49,020 - 00:50:52,020] In my lectures,
+- [00:50:52,020 - 00:50:55,020] which don't cost anything.
+- [00:50:55,020 - 00:50:58,020] They're on the internet.
+- [00:50:58,020 - 00:50:59,020] Okay.
+- [00:50:59,020 - 00:51:00,020] That's...
+- [00:51:00,020 - 00:51:01,520] Now let's talk about the
+- [00:51:01,520 - 00:51:03,020] properties of photons a little bit.
+- [00:51:03,020 - 00:51:09,020] Photons are these discrete, indivisible elements of light.
+- [00:51:09,020 - 00:51:12,020] Light has energy.
+- [00:51:12,020 - 00:51:16,020] If you absorb the sunlight,
+- [00:51:16,020 - 00:51:17,020] it heats things.
+- [00:51:17,020 - 00:51:19,020] Obviously has energy.
+- [00:51:19,020 - 00:51:22,020] So therefore, photons have energy.
+- [00:51:22,020 - 00:51:26,020] What do we know about the energy of a photon?
+- [00:51:26,020 - 00:51:29,020] Photons being indivisible,
+- [00:51:29,020 - 00:51:32,020] we know the energy must come in very discrete packets.
+- [00:51:32,020 - 00:51:34,020] Now what is a photon characterized by?
+- [00:51:34,020 - 00:51:35,020] Or a light wave.
+- [00:51:35,020 - 00:51:37,020] Imagine a light wave coming in,
+- [00:51:37,020 - 00:51:41,020] composed out of these discrete photons.
+- [00:51:41,020 - 00:51:43,020] Don't try to picture it.
+- [00:51:43,020 - 00:51:44,020] It's impossible to picture.
+- [00:51:44,020 - 00:51:47,020] When the light wave actually falls on a screen,
+- [00:51:47,020 - 00:51:48,020] it...
+- [00:51:48,020 - 00:51:50,020] It forms these little dots.
+- [00:51:50,020 - 00:51:53,020] So it's particles.
+- [00:51:53,020 - 00:51:54,020] Made of particles,
+- [00:51:54,020 - 00:51:55,520] but we see some sort
+- [00:51:55,520 - 00:51:57,020] of wave phenomena associated with it.
+- [00:51:57,020 - 00:52:01,020] The wave phenomena is associated with a wavelength,
+- [00:52:01,020 - 00:52:03,020] and therefore a frequency,
+- [00:52:03,020 - 00:52:05,020] an angular frequency.
+- [00:52:05,020 - 00:52:07,020] We discover that that light wave
+- [00:52:07,020 - 00:52:09,020] is made up out of discrete units,
+- [00:52:09,020 - 00:52:13,020] each with an indivisible bit of energy.
+- [00:52:13,020 - 00:52:15,020] Cannot be subdivided.
+- [00:52:15,020 - 00:52:17,020] And the energy of one photon,
+- [00:52:18,020 - 00:52:22,020] the energy of every single photon in this light beam,
+- [00:52:22,020 - 00:52:25,020] with a given wavelength and a given frequency,
+- [00:52:25,020 - 00:52:29,020] is given by a number called h-bar,
+- [00:52:29,020 - 00:52:31,020] Planck's constant,
+- [00:52:31,020 - 00:52:32,020] one of Planck's many...
+- [00:52:32,020 - 00:52:34,020] one of Planck's constants.
+- [00:52:40,020 - 00:52:44,020] h-bar times omega.
+- [00:52:44,020 - 00:52:46,020] In other words,
+- [00:52:46,020 - 00:52:48,020] omega is large,
+- [00:52:48,020 - 00:52:50,020] when the wavelength is short.
+- [00:52:50,020 - 00:52:51,020] The shorter the wavelength,
+- [00:52:51,020 - 00:52:53,020] the larger the frequency.
+- [00:52:53,020 - 00:52:54,020] The larger the frequency,
+- [00:52:54,020 - 00:52:55,020] or the shorter the wavelength,
+- [00:52:55,020 - 00:52:59,020] the larger the energy in every photon.
+- [00:52:59,020 - 00:53:00,020] So,
+- [00:53:00,020 - 00:53:02,020] first lesson.
+- [00:53:02,020 - 00:53:05,020] Short wavelength photons have lots of energy.
+- [00:53:05,020 - 00:53:08,020] Long wavelength individual photons
+- [00:53:08,020 - 00:53:10,020] have very low energy.
+- [00:53:10,020 - 00:53:11,020] Now of course,
+- [00:53:11,020 - 00:53:15,020] a radio wave can carry a huge amount of energy.
+- [00:53:15,020 - 00:53:16,020] There's no question.
+- [00:53:16,020 - 00:53:18,020] You can make radio waves with lots of energy.
+- [00:53:18,020 - 00:53:21,020] Lots and lots of energy.
+- [00:53:21,020 - 00:53:24,020] How do you make radio waves with lots of energy?
+- [00:53:24,020 - 00:53:27,020] You pile lots of photons up.
+- [00:53:27,020 - 00:53:29,020] Many, many photons,
+- [00:53:29,020 - 00:53:34,020] all with the same wavelength and the same frequency.
+- [00:53:34,020 - 00:53:35,020] But,
+- [00:53:35,020 - 00:53:37,020] there is something nevertheless,
+- [00:53:37,020 - 00:53:39,020] some remnant of the discreteness.
+- [00:53:39,020 - 00:53:41,020] Namely, the energy of such a wave
+- [00:53:41,020 - 00:53:44,020] is always an integer multiple.
+- [00:53:44,020 - 00:53:46,020] This is the energy of a photon.
+- [00:53:46,020 - 00:53:49,020] The energy of a light ray,
+- [00:53:49,020 - 00:53:51,020] let's just call it a ray,
+- [00:53:51,020 - 00:53:53,020] or a light wave,
+- [00:53:53,020 - 00:53:55,020] is some integer number,
+- [00:53:55,020 - 00:53:57,020] some integer multiple
+- [00:53:57,020 - 00:53:59,020] of h bar omega.
+- [00:53:59,020 - 00:54:03,020] Alright, so the light rays come in indivisible units.
+- [00:54:03,020 - 00:54:04,020] Every light ray,
+- [00:54:04,020 - 00:54:05,020] every light wave,
+- [00:54:05,020 - 00:54:07,020] every pulse of light
+- [00:54:07,020 - 00:54:11,020] with a given frequency and wavelength
+- [00:54:11,020 - 00:54:14,020] has an integer multiple of energy
+- [00:54:14,020 - 00:54:15,020] in units of light.
+- [00:54:15,020 - 00:54:18,020] In units of h bar omega.
+- [00:54:18,020 - 00:54:20,020] So this is an important equation here.
+- [00:54:20,020 - 00:54:25,020] This equation is of absolute central importance
+- [00:54:25,020 - 00:54:28,020] to understanding why particle physics is the way it is.
+- [00:54:28,020 - 00:54:31,020] In particular, it's very, very central to the question
+- [00:54:31,020 - 00:54:33,020] of why we have to build big giant machines
+- [00:54:33,020 - 00:54:36,020] to see smaller and smaller objects.
+- [00:54:36,020 - 00:54:38,020] My grandson, my grandson's not a kid,
+- [00:54:38,020 - 00:54:39,020] he's 26 years old,
+- [00:54:39,020 - 00:54:41,020] but he asked me one day,
+- [00:54:41,020 - 00:54:44,020] how come you have to build bigger and bigger machines
+- [00:54:44,020 - 00:54:46,020] to see smaller and smaller things?
+- [00:54:46,020 - 00:54:48,020] Why don't you build small machines to see...
+- [00:54:48,020 - 00:54:50,020] Alright, we're going to try to answer that question,
+- [00:54:50,020 - 00:54:52,020] but this is the central fact
+- [00:54:52,020 - 00:54:57,020] that the energy is proportional to the frequency
+- [00:54:57,020 - 00:55:00,020] of a single photon.
+- [00:55:03,020 - 00:55:07,020] Alright, we've been through waves and particles,
+- [00:55:07,020 - 00:55:11,020] photons carrying discrete units of energy,
+- [00:55:14,020 - 00:55:18,020] and the way that the energy is being transported
+- [00:55:18,020 - 00:55:20,020] is very important.
+- [00:55:20,020 - 00:55:21,520] So this is the first
+- [00:55:21,520 - 00:55:23,020] thing that I'm going to do.
+- [00:55:23,020 - 00:55:26,020] I'm going to go over the theory of relativity.
+- [00:55:26,020 - 00:55:27,520] And then I'm going to go
+- [00:55:27,520 - 00:55:29,020] over the theory of quantum mechanics.
+- [00:55:29,020 - 00:55:30,520] And then I'm going to
+- [00:55:30,520 - 00:55:32,020] go over the theory of relativity.
+- [00:55:32,020 - 00:55:33,520] And then I'm going to
+- [00:55:33,520 - 00:55:35,020] go over the theory of relativity.
+- [00:55:35,020 - 00:55:38,020] I want to come to another set of concepts now.
+- [00:55:38,020 - 00:55:40,020] This is...
+- [00:55:40,020 - 00:55:43,020] We're certainly not abandoning this line of thought here,
+- [00:55:43,020 - 00:55:44,520] but I want to come
+- [00:55:44,520 - 00:55:46,020] to another set of concepts now.
+- [00:55:46,020 - 00:55:48,020] Particle physics is, in
+- [00:55:48,020 - 00:55:50,020] a sense, relativistic quantum mechanics,
+- [00:55:50,020 - 00:55:53,020] the combination of relativity and quantum mechanics.
+- [00:55:53,020 - 00:55:57,020] And so, let me just remind you of
+- [00:55:57,020 - 00:56:00,020] one particular simple fact,
+- [00:56:00,020 - 00:56:05,020] and then be clear about what that fact means.
+- [00:56:06,020 - 00:56:09,020] The most famous equation of physics,
+- [00:56:09,020 - 00:56:12,020] E equals mc squared.
+- [00:56:13,020 - 00:56:17,020] This equation also plays a very important role
+- [00:56:17,020 - 00:56:19,020] in the reason that...
+- [00:56:19,020 - 00:56:23,020] in explaining why particle physics is the way it is.
+- [00:56:25,020 - 00:56:27,020] Energy is mc squared.
+- [00:56:27,020 - 00:56:30,020] Let's just be very clear about what it means.
+- [00:56:33,020 - 00:56:37,020] In the early days of relativity,
+- [00:56:37,020 - 00:56:41,020] people spoke of the rest mass of an object
+- [00:56:41,020 - 00:56:43,020] and the moving mass of an object.
+- [00:56:43,020 - 00:56:46,020] The moving mass and the rest mass were different.
+- [00:56:46,020 - 00:56:49,020] The mass of an object was minimum
+- [00:56:49,020 - 00:56:51,020] when it was standing still,
+- [00:56:51,020 - 00:56:54,020] but when it moved, the mass increases.
+- [00:56:54,020 - 00:56:58,020] You still read that in elementary physics textbooks,
+- [00:56:58,020 - 00:57:01,020] but you never read it in any...
+- [00:57:01,020 - 00:57:06,020] in any work of modern physics.
+- [00:57:06,020 - 00:57:09,020] You never read that the mass of an object
+- [00:57:09,020 - 00:57:11,020] depends on its state of motion.
+- [00:57:11,020 - 00:57:15,020] It's largely a change in language.
+- [00:57:18,020 - 00:57:20,020] The change in language is such
+- [00:57:20,020 - 00:57:22,020] that what we now call mass
+- [00:57:22,020 - 00:57:25,020] is what used to be called rest mass.
+- [00:57:25,020 - 00:57:26,020] Period.
+- [00:57:26,020 - 00:57:28,020] Whenever I refer to a mass of an object,
+- [00:57:28,020 - 00:57:31,020] I'm talking about its rest mass.
+- [00:57:31,020 - 00:57:35,020] All electrons have exactly the same rest mass.
+- [00:57:35,020 - 00:57:38,020] All electrons have exactly the same mass.
+- [00:57:38,020 - 00:57:39,020] Period.
+- [00:57:39,020 - 00:57:40,020] If you look up...
+- [00:57:40,020 - 00:57:43,020] If you look up the masses of particles
+- [00:57:43,020 - 00:57:47,020] in a table of masses and so forth,
+- [00:57:47,020 - 00:57:49,020] you will not find them called rest mass.
+- [00:57:49,020 - 00:57:51,020] You will just find them called mass.
+- [00:57:51,020 - 00:57:53,020] So from now on, we will
+- [00:57:53,020 - 00:57:55,020] never speak about the rest mass.
+- [00:57:55,020 - 00:57:57,020] We will speak about the mass of the electron
+- [00:57:57,020 - 00:57:59,020] as a number that experimental
+- [00:57:59,020 - 00:58:01,020] physicists measure in great detail.
+- [00:58:01,020 - 00:58:03,020] Every electron has exactly the
+- [00:58:03,020 - 00:58:05,020] same mass as every other electron.
+- [00:58:05,020 - 00:58:07,020] And the mass is not something
+- [00:58:07,020 - 00:58:09,020] which depends on the state of motion.
+- [00:58:10,020 - 00:58:12,020] But of course the energy is something
+- [00:58:12,020 - 00:58:14,020] which depends on the state of motion.
+- [00:58:14,020 - 00:58:16,020] The faster an electron moves,
+- [00:58:16,020 - 00:58:19,020] the more kinetic energy it has.
+- [00:58:19,020 - 00:58:21,020] So there's something wrong with this equation.
+- [00:58:21,020 - 00:58:23,020] Yes, there's something wrong with this equation.
+- [00:58:23,020 - 00:58:26,020] This equation is no longer...
+- [00:58:26,020 - 00:58:29,020] Even though it's the most famous equation in physics,
+- [00:58:29,020 - 00:58:31,020] it's not the right equation.
+- [00:58:31,020 - 00:58:34,020] At least with modern terminology.
+- [00:58:34,020 - 00:58:37,020] Energy is only equal to mass times c squared
+- [00:58:37,020 - 00:58:39,020] for an object at rest.
+- [00:58:40,020 - 00:58:43,020] The right way to say it
+- [00:58:43,020 - 00:58:46,020] is the energy of an object at rest
+- [00:58:46,020 - 00:58:50,020] if the object has no net motion.
+- [00:58:50,020 - 00:58:52,020] Now it could be a complicated object
+- [00:58:52,020 - 00:58:54,020] with all sorts of internal motions,
+- [00:58:54,020 - 00:58:57,020] but it could be a box of gas.
+- [00:58:57,020 - 00:58:59,020] All the molecules flying around like mad.
+- [00:58:59,020 - 00:59:01,020] But as long as the
+- [00:59:01,020 - 00:59:03,020] box of gas is itself stationary,
+- [00:59:03,020 - 00:59:05,020] then we speak of its rest mass,
+- [00:59:05,020 - 00:59:08,020] and we can speak of its rest energy,
+- [00:59:08,020 - 00:59:10,020] the energy of that box of gas,
+- [00:59:10,020 - 00:59:12,020] when it's standing still.
+- [00:59:12,020 - 00:59:14,020] And Einstein's equation says that
+- [00:59:14,020 - 00:59:16,020] the rest energy of an object
+- [00:59:16,020 - 00:59:18,020] is the rest mass, or just the mass,
+- [00:59:18,020 - 00:59:20,020] times the speed of light squared.
+- [00:59:20,020 - 00:59:21,020] Now what exactly...
+- [00:59:21,020 - 00:59:23,020] Let me imagine two experiments
+- [00:59:23,020 - 00:59:25,020] that you might do to confirm this,
+- [00:59:25,020 - 00:59:28,020] just to understand precisely what it means.
+- [00:59:28,020 - 00:59:34,020] You take a pot of...
+- [00:59:34,020 - 00:59:38,020] Not a pot, a box with molecules in it.
+- [00:59:38,020 - 00:59:41,020] And you put it on a scale
+- [00:59:41,020 - 00:59:44,020] to measure its weight or its mass.
+- [00:59:44,020 - 00:59:47,020] And draw a scale.
+- [00:59:53,020 - 00:59:55,020] The molecules are cold.
+- [00:59:55,020 - 00:59:59,020] You begin with the box of gas very, very cold.
+- [00:59:59,020 - 01:00:01,020] And you measure the mass.
+- [01:00:01,020 - 01:00:02,020] So you measure...
+- [01:00:02,020 - 01:00:04,020] Yes, you measure the mass.
+- [01:00:04,020 - 01:00:06,020] You get some number.
+- [01:00:06,020 - 01:00:08,020] Now you feed some energy into the box.
+- [01:00:08,020 - 01:00:10,020] You heat it up.
+- [01:00:10,020 - 01:00:12,020] You heat up the molecules in here.
+- [01:00:12,020 - 01:00:14,020] You increase their energy.
+- [01:00:14,020 - 01:00:16,020] The box is still at rest.
+- [01:00:16,020 - 01:00:17,020] The molecules are not.
+- [01:00:17,020 - 01:00:19,020] The molecules are moving around,
+- [01:00:19,020 - 01:00:21,020] but the box is at rest.
+- [01:00:21,020 - 01:00:22,020] And we can ask,
+- [01:00:22,020 - 01:00:25,020] what is the rest mass of the box of gas?
+- [01:00:25,020 - 01:00:26,020] The answer is,
+- [01:00:26,020 - 01:00:28,020] if you increase the energy
+- [01:00:28,020 - 01:00:30,020] by adding thermal energy,
+- [01:00:30,020 - 01:00:33,020] you add a certain number of calories,
+- [01:00:33,020 - 01:00:35,020] or a certain number of joules,
+- [01:00:35,020 - 01:00:37,020] joules is a unit of energy,
+- [01:00:37,020 - 01:00:39,020] you add a certain amount of energy,
+- [01:00:39,020 - 01:00:41,020] you add a certain amount of energy,
+- [01:00:41,020 - 01:00:43,020] you add a certain amount of energy,
+- [01:00:43,020 - 01:00:45,020] and you add a certain amount of energy.
+- [01:00:45,020 - 01:00:48,020] And so you can measure the mass of the box.
+- [01:00:48,020 - 01:00:51,020] You will discover that the box is mass.
+- [01:00:51,020 - 01:00:53,020] The box of gas, its mass increases.
+- [01:00:53,020 - 01:00:55,020] Its weight increases.
+- [01:00:55,020 - 01:00:58,020] Now, the amount that it would increase
+- [01:00:58,020 - 01:01:00,020] is so tiny,
+- [01:01:00,020 - 01:01:02,020] if you increase the temperature
+- [01:01:02,020 - 01:01:04,020] by a thousand degrees or something,
+- [01:01:04,020 - 01:01:06,020] it's so tiny that it would be quite unmeasurable.
+- [01:01:06,020 - 01:01:08,020] The mass increases, its weight increases.
+- [01:01:08,020 - 01:01:10,020] Also, its inertia increases.
+- [01:01:10,020 - 01:01:12,020] Harder to move it.
+- [01:01:12,020 - 01:01:15,020] Another example,
+- [01:01:15,020 - 01:01:17,020] now this example is not something
+- [01:01:17,020 - 01:01:19,020] that you can really do,
+- [01:01:19,020 - 01:01:21,020] but the other example is something that is,
+- [01:01:21,020 - 01:01:23,020] you know, real experimental physics,
+- [01:01:23,020 - 01:01:25,020] observational physics.
+- [01:01:25,020 - 01:01:27,020] You start not,
+- [01:01:27,020 - 01:01:29,020] you start with an electron
+- [01:01:29,020 - 01:01:32,020] and a positron.
+- [01:01:32,020 - 01:01:34,020] We haven't talked about anti-particles,
+- [01:01:34,020 - 01:01:36,020] let's just,
+- [01:01:36,020 - 01:01:37,520] ignore the fact that we haven't
+- [01:01:37,520 - 01:01:39,020] talked about them for a moment.
+- [01:01:39,020 - 01:01:41,020] Two kinds of particles,
+- [01:01:41,020 - 01:01:43,020] electrons which have negative charge,
+- [01:01:43,020 - 01:01:46,020] positrons which have positive charge.
+- [01:01:46,020 - 01:01:48,020] They have exactly the same mass,
+- [01:01:48,020 - 01:01:50,020] precisely the same mass.
+- [01:01:50,020 - 01:01:52,020] They are in every respect similar,
+- [01:01:52,020 - 01:01:56,020] except for the fact that they have opposite electric charge.
+- [01:01:56,020 - 01:01:59,020] Because they have opposite electric charge,
+- [01:01:59,020 - 01:02:01,020] they can combine and disappear.
+- [01:02:01,020 - 01:02:03,020] They have plus charge and a minus charge,
+- [01:02:03,020 - 01:02:04,020] the net charge is zero,
+- [01:02:04,020 - 01:02:06,020] nothing prevents them from
+- [01:02:06,020 - 01:02:07,020] disappearing.
+- [01:02:07,020 - 01:02:10,020] Well, something does prevent them from disappearing.
+- [01:02:10,020 - 01:02:12,020] They have energy.
+- [01:02:12,020 - 01:02:14,020] Each one has an energy,
+- [01:02:14,020 - 01:02:16,020] let's suppose these two particles are at rest,
+- [01:02:16,020 - 01:02:18,020] we bring them together,
+- [01:02:18,020 - 01:02:21,020] each one has an energy equal to mc squared,
+- [01:02:21,020 - 01:02:26,020] so the total energy is twice mc squared.
+- [01:02:26,020 - 01:02:29,020] mc squared for each particle.
+- [01:02:29,020 - 01:02:31,020] We bring them together,
+- [01:02:31,020 - 01:02:32,020] that energy can't disappear.
+- [01:02:32,020 - 01:02:33,020] Energy is conserved.
+- [01:02:33,020 - 01:02:35,020] What happens to that energy?
+- [01:02:35,020 - 01:02:39,020] That energy becomes photons.
+- [01:02:39,020 - 01:02:41,020] Photons go out.
+- [01:02:41,020 - 01:02:43,020] You bring an electron next to a positron,
+- [01:02:43,020 - 01:02:44,020] you let them annihilate,
+- [01:02:44,020 - 01:02:46,020] poof, out go photons.
+- [01:02:46,020 - 01:02:49,020] The photons, in some sense, are energy.
+- [01:02:49,020 - 01:02:52,020] They can be absorbed by a material
+- [01:02:52,020 - 01:02:54,020] and heat the material.
+- [01:02:54,020 - 01:02:57,020] They can be converted to all forms of energy.
+- [01:02:57,020 - 01:03:00,020] And how much energy do you get
+- [01:03:00,020 - 01:03:04,020] by annihilating an electron and a positron?
+- [01:03:04,020 - 01:03:07,020] The answer is twice the mass of an electron
+- [01:03:07,020 - 01:03:09,020] times the speed of light squared.
+- [01:03:09,020 - 01:03:10,020] That's a tiny amount of energy.
+- [01:03:10,020 - 01:03:12,020] I mean, if you just had one electron and positron,
+- [01:03:12,020 - 01:03:14,020] you couldn't do much with it.
+- [01:03:14,020 - 01:03:17,020] You need, you know, huge numbers of them
+- [01:03:17,020 - 01:03:19,020] to heat a cup of coffee,
+- [01:03:19,020 - 01:03:22,020] but still, in principle, that's what happens.
+- [01:03:22,020 - 01:03:26,020] And of course, this is an observational fact.
+- [01:03:26,020 - 01:03:34,020] That's the meaning of E equals mc squared.
+- [01:03:34,020 - 01:03:36,020] And another way to really say it,
+- [01:03:36,020 - 01:03:38,020] which I think is the right way to say it,
+- [01:03:38,020 - 01:03:40,020] is to say energy and mass,
+- [01:03:40,020 - 01:03:42,020] at least for an object at rest,
+- [01:03:42,020 - 01:03:44,020] are the same thing.
+- [01:03:44,020 - 01:03:46,020] Why do we have to have an equation?
+- [01:03:46,020 - 01:03:50,020] Really, it's just a conversion of units
+- [01:03:50,020 - 01:03:52,020] from what we call mass units
+- [01:03:52,020 - 01:03:54,020] to what we call energy units.
+- [01:03:54,020 - 01:03:55,020] And this tells you the conversion,
+- [01:03:55,020 - 01:04:00,020] roughly like a conversion
+- [01:04:00,020 - 01:04:04,020] from meters to centimeters or whatever.
+- [01:04:04,020 - 01:04:09,020] This is the conversion between energy units and mass units.
+- [01:04:09,020 - 01:04:11,020] All right, but in any case,
+- [01:04:11,020 - 01:04:12,020] if you know the mass of an object
+- [01:04:12,020 - 01:04:13,020] and you want to know
+- [01:04:13,020 - 01:04:14,020] how much energy you would get
+- [01:04:14,020 - 01:04:15,020] if it disappeared,
+- [01:04:15,020 - 01:04:18,020] you multiply by the square of the speed of light.
+- [01:04:18,020 - 01:04:20,020] So you get a lot of
+- [01:04:20,020 - 01:04:22,020] energy for a small amount of mass.
+- [01:04:22,020 - 01:04:23,020] What is the speed of light,
+- [01:04:23,020 - 01:04:25,020] and what is Planck's constant?
+- [01:04:25,020 - 01:04:27,020] Let's write down the numerical values
+- [01:04:27,020 - 01:04:31,020] of the speed of light and Planck's constant.
+- [01:04:31,020 - 01:04:33,020] We need them, one for here,
+- [01:04:33,020 - 01:04:37,020] and one for here.
+- [01:04:37,020 - 01:04:39,020] Photon energy.
+- [01:04:39,020 - 01:04:41,020] On the E equals mc squared,
+- [01:04:41,020 - 01:04:46,020] does the mass have to have a mechanism
+- [01:04:46,020 - 01:04:49,020] for the energy to be released, or...?
+- [01:04:49,020 - 01:04:54,020] Well, yes, it has to have a mechanism,
+- [01:04:55,020 - 01:04:57,020] and we haven't talked about that mechanism,
+- [01:04:57,020 - 01:05:00,020] but just let's stand on the outside and say,
+- [01:05:00,020 - 01:05:01,020] look, this thing happens.
+- [01:05:01,020 - 01:05:02,020] An electron and a positron,
+- [01:05:02,020 - 01:05:04,020] when you put them together, will just disappear.
+- [01:05:04,020 - 01:05:06,020] Let's not ask what the mechanism is.
+- [01:05:06,020 - 01:05:07,020] The one thing we know is,
+- [01:05:07,020 - 01:05:09,020] independent of the mechanism,
+- [01:05:09,020 - 01:05:11,020] energy should be conserved.
+- [01:05:11,020 - 01:05:14,020] If E equals mc squared for the electrons,
+- [01:05:14,020 - 01:05:16,020] that energy has to show up somewheres.
+- [01:05:16,020 - 01:05:18,020] So there are some things you say
+- [01:05:18,020 - 01:05:20,020] without knowing what the mechanism is.
+- [01:05:20,020 - 01:05:22,020] Conservation laws,
+- [01:05:22,020 - 01:05:24,020] where you know that certain things are conserved,
+- [01:05:24,020 - 01:05:27,020] you can often say important things about a system
+- [01:05:27,020 - 01:05:31,020] without knowing detailed mechanisms.
+- [01:05:31,020 - 01:05:36,020] Okay, let's talk about numbers.
+- [01:05:36,020 - 01:05:38,020] The speed of light is a very big number.
+- [01:05:38,020 - 01:05:42,020] Planck's constant is a very small number.
+- [01:05:42,020 - 01:05:44,020] How do I know it's a small number?
+- [01:05:44,020 - 01:05:46,020] Well, the energy of a photon
+- [01:05:46,020 - 01:05:48,020] is a tiny amount of energy.
+- [01:05:48,020 - 01:05:51,020] The frequency of a light wave is very large,
+- [01:05:51,020 - 01:05:52,520] so it better be that
+- [01:05:52,520 - 01:05:54,020] h bar is a small number.
+- [01:05:54,020 - 01:05:55,020] Let's write them down.
+- [01:05:55,020 - 01:05:57,020] Okay, so c, the speed of light,
+- [01:05:57,020 - 01:06:09,020] that is equal to 2.99762458,
+- [01:06:09,020 - 01:06:11,020] I'm not kidding you, this is true,
+- [01:06:11,020 - 01:06:15,020] plus or minus something in the last digit over here,
+- [01:06:15,020 - 01:06:21,020] times 10 to the eighth meters per second.
+- [01:06:21,020 - 01:06:23,020] Units, units are important.
+- [01:06:23,020 - 01:06:29,020] It's not just 2.99762458 times 10 to the eighth,
+- [01:06:29,020 - 01:06:32,020] it's that number of meters per second.
+- [01:06:32,020 - 01:06:34,020] That's the speed of light.
+- [01:06:34,020 - 01:06:36,020] How about Planck's constant?
+- [01:06:36,020 - 01:06:40,020] Everybody, of course, will memorize this number
+- [01:06:40,020 - 01:06:45,020] because it's important to this class
+- [01:06:45,020 - 01:06:48,020] that you know that number.
+- [01:06:48,020 - 01:06:50,020] One point, same thing here,
+- [01:06:50,020 - 01:06:52,020] I'll memorize this one.
+- [01:06:52,020 - 01:07:01,020] 0.0545571628 times 10 to the minus 34.
+- [01:07:01,020 - 01:07:03,020] Very small number.
+- [01:07:03,020 - 01:07:04,020] And what are the units?
+- [01:07:04,020 - 01:07:05,020] Anybody know what the units are?
+- [01:07:05,020 - 01:07:06,520] I worked out the units,
+- [01:07:06,520 - 01:07:08,020] but I think I erased them.
+- [01:07:08,020 - 01:07:10,020] Hmm?
+- [01:07:10,020 - 01:07:14,020] Energy times time, right.
+- [01:07:14,020 - 01:07:18,020] But what are the units of energy?
+- [01:07:18,020 - 01:07:20,020] Mass times velocity squared, right?
+- [01:07:20,020 - 01:07:21,020] mc squared.
+- [01:07:21,020 - 01:07:23,020] That'll be mc squared.
+- [01:07:23,020 - 01:07:24,020] Mass times velocity.
+- [01:07:24,020 - 01:07:26,520] So it's mass, kilograms, times
+- [01:07:26,520 - 01:07:29,020] length squared over time squared.
+- [01:07:29,020 - 01:07:31,020] That's energy.
+- [01:07:31,020 - 01:07:35,020] And Planck's constant has another unit of length in it.
+- [01:07:35,020 - 01:07:39,020] Another unit of time.
+- [01:07:39,020 - 01:07:40,020] Okay.
+- [01:07:40,020 - 01:07:45,020] So Planck's constant is measured in,
+- [01:07:45,020 - 01:07:48,020] what's the unit of mass?
+- [01:07:48,020 - 01:07:49,020] Kilograms.
+- [01:07:49,020 - 01:07:50,020] Kilograms?
+- [01:07:50,020 - 01:07:51,020] Millimеличes.
+- [01:07:51,020 - 01:07:52,020] Kilograms?
+- [01:07:52,020 - 01:07:53,020] Yes.
+- [01:07:53,020 - 01:07:54,020] So Clean Waves.
+- [01:07:54,020 - 01:07:56,020] Circle- ido,
+- [01:07:56,020 - 01:07:58,020] we've got two people here.
+- [01:07:58,020 - 01:07:59,020] Okay.
+- [01:07:59,020 - 01:08:00,020] Zero?
+- [01:08:00,020 - 01:08:01,020] Zero.
+- [01:08:01,020 - 01:08:02,020] Zero?
+- [01:08:02,020 - 01:08:03,020] No, that doesn't matter.
+- [01:08:03,020 - 01:08:04,020] Zero.
+- [01:08:04,020 - 01:08:05,020] Zero, no matter.
+- [01:08:05,020 - 01:08:06,020] Zero.
+- [01:08:06,020 - 01:08:07,020] Zero?
+- [01:08:07,020 - 01:08:11,020] Zero, 1.
+- [01:08:11,020 - 01:08:12,020] Zero?
+- [01:08:12,020 - 01:08:13,020] Zero, two.
+- [01:08:13,020 - 01:08:14,020] Zero.
+- [01:08:14,020 - 01:08:15,020] Zero?
+- [01:08:15,020 - 01:08:16,020] Zero.
+- [01:08:18,020 - 01:08:21,540] in using peculiar units
+- [01:08:21,540 - 01:08:24,340] for example, the speed of light
+- [01:08:24,340 - 01:08:28,340] is something which depends on your choice of units
+- [01:08:28,340 - 01:08:32,020] if you measure it, instead of measuring it in meters per second,
+- [01:08:32,020 - 01:08:35,700] you measure it in feet per hours, you will get a different answer
+- [01:08:35,700 - 01:08:38,500] so there's nothing sacred about this number
+- [01:08:38,500 - 01:08:41,300] it depends on your choice of units
+- [01:08:41,300 - 01:08:44,020] length units in this case and time units
+- [01:08:44,020 - 01:08:46,580] you could certainly work with units in which
+- [01:08:46,580 - 01:08:49,140] the speed of light was a more convenient number
+- [01:08:49,140 - 01:08:51,060] you could work with units in
+- [01:08:51,060 - 01:08:52,979] which the speed of light was one
+- [01:08:52,979 - 01:08:56,819] the units would be light years per year, for example
+- [01:08:56,819 - 01:09:00,020] the speed of light is one light year per year
+- [01:09:00,020 - 01:09:02,819] or one light second per second
+- [01:09:02,819 - 01:09:05,060] so it's not hard to choose
+- [01:09:05,060 - 01:09:07,300] the speed of light to be one
+- [01:09:07,300 - 01:09:11,620] you just use different units of space and time
+- [01:09:11,620 - 01:09:13,939] same is true of Planck's constant
+- [01:09:13,939 - 01:09:16,499] you can use units in which
+- [01:09:16,499 - 01:09:19,059] Planck's constant is equal to one
+- [01:09:19,059 - 01:09:21,459] but why is it that
+- [01:09:21,459 - 01:09:23,859] we actually use such peculiar units?
+- [01:09:23,859 - 01:09:27,859] why don't, how come the people who
+- [01:09:27,859 - 01:09:31,859] invented units, Mr. Metric or whoever he was
+- [01:09:31,859 - 01:09:34,579] the British are worse than the metric
+- [01:09:34,579 - 01:09:37,299] system of course, they were really perverse
+- [01:09:37,299 - 01:09:42,500] 5280 feet in a mile
+- [01:09:42,500 - 01:09:43,700] how many
+- [01:09:43,939 - 01:09:47,059] how many stone how many pounds on a stone
+- [01:09:49,379 - 01:09:52,179] i i don't know where they got these units from
+- [01:09:52,179 - 01:09:55,299] hmm i don't know is a stone 16 pounds
+- [01:09:55,299 - 01:09:58,660] 14 pounds even worse
+- [01:09:59,139 - 01:10:01,139] 16 is at least divisible by
+- [01:10:01,139 - 01:10:03,139] two four times but seven okay
+- [01:10:03,139 - 01:10:05,620] 14 14 pounds
+- [01:10:05,620 - 01:10:09,940] hmm how many hands high is your horse
+- [01:10:09,940 - 01:10:13,299] that's another good one how about horsepower
+- [01:10:13,300 - 01:10:17,180] yeah i mean just bizarre units metric units
+- [01:10:17,180 - 01:10:21,060] are better but they're also very very arbitrary
+- [01:10:21,060 - 01:10:23,700] for example the meter had to do with
+- [01:10:23,700 - 01:10:26,340] how far a man's hand is from his nose
+- [01:10:26,340 - 01:10:28,300] why because he was using
+- [01:10:28,300 - 01:10:30,260] measuring length of rope or something
+- [01:10:32,980 - 01:10:35,740] so these are highly arbitrary units and have more to
+- [01:10:35,740 - 01:10:38,500] do with biology than they have to do with physics
+- [01:10:38,500 - 01:10:40,020] they have to do with biology in the sense that the real
+- [01:10:40,020 - 01:10:41,540] question is not why they're going to be used in the future
+- [01:10:41,540 - 01:10:41,660] the real question is not why they're
+- [01:10:41,660 - 01:10:41,780] going to be used in the future
+- [01:10:41,780 - 01:10:42,300] the real question is not why they're
+- [01:10:42,300 - 01:10:42,820] going to be used in the future
+- [01:10:42,820 - 01:10:47,299] but why uh a meter is what it is
+- [01:10:47,299 - 01:10:51,499] why why a meter is what it is it's a question of
+- [01:10:51,499 - 01:10:55,700] why why an arm has to have x number of molecules in it
+- [01:10:55,700 - 01:10:58,580] and there's nothing special about these numbers
+- [01:10:58,580 - 01:11:02,019] all right given that you can ask are there units
+- [01:11:02,019 - 01:11:05,499] are there better choices of units of the three units
+- [01:11:05,499 - 01:11:08,980] what do we need we have we need three units
+- [01:11:08,980 - 01:11:12,019] we need a length
+- [01:11:12,019 - 01:11:12,299] the three things that you need
+- [01:11:12,299 - 01:11:12,580] to have a length of three units
+- [01:11:12,580 - 01:11:13,900] the three things that you need the
+- [01:11:13,900 - 01:11:15,220] three kinds of units we need are length
+- [01:11:18,580 - 01:11:22,100] meters or feet or whatever time
+- [01:11:24,820 - 01:11:28,180] seconds or years or hours or something else
+- [01:11:28,980 - 01:11:32,260] and mass all of the other units in physics can
+- [01:11:32,260 - 01:11:35,540] be re-expressed in terms of these this is a complete
+- [01:11:35,540 - 01:11:38,980] set of uh of units there are three of them
+- [01:11:38,980 - 01:11:42,420] and we can choose them in various ways for example
+- [01:11:42,580 - 01:11:43,140] and we can choose them in
+- [01:11:43,140 - 01:11:43,700] various ways for example instead of using
+- [01:11:43,700 - 01:11:45,180] instead of using the kilogram we
+- [01:11:45,180 - 01:11:46,660] could use the mass of a
+- [01:11:46,660 - 01:11:47,380] the kilogram we could use the mass of a proton
+- [01:11:47,380 - 01:11:48,980] proton as the basic unit of mass
+- [01:11:48,980 - 01:11:50,900] as the basic unit of mass or the
+- [01:11:50,900 - 01:11:52,820] mass of the sun or and so forth use
+- [01:11:52,820 - 01:11:54,740] or the mass of the sun or
+- [01:11:54,740 - 01:11:56,660] and so forth use different units of mass
+- [01:11:56,660 - 01:11:59,220] certain things in astrophysics are a lot
+- [01:11:59,220 - 01:12:00,100] certain things in astrophysics are a lot easier
+- [01:12:00,100 - 01:12:02,820] easier not easier but a lot smaller the
+- [01:12:02,820 - 01:12:03,820] not easier but a lot smaller
+- [01:12:03,820 - 01:12:04,820] the equations are simpler they involve less
+- [01:12:04,820 - 01:12:05,860] equations are simpler they involve less constants
+- [01:12:05,860 - 01:12:09,140] constants fewer constants if you use units in
+- [01:12:09,140 - 01:12:09,860] constants fewer constants if you use units
+- [01:12:09,860 - 01:12:10,580] in which the mass of the sun is
+- [01:12:10,580 - 01:12:11,100] which the mass of the sun is one okay so the environment in which you
+- [01:12:11,100 - 01:12:11,620] can draw planets it makes sense you can toppings you y you draw planets with connections
+- [01:12:11,620 - 01:12:15,430] Okay, equations in nuclear physics are
+- [01:12:15,430 - 01:12:19,240] simpler, only simpler in the sense that
+- [01:12:19,240 - 01:12:21,879] they don't involve as many arbitrary constants
+- [01:12:21,879 - 01:12:24,519] if you use units in which the
+- [01:12:24,519 - 01:12:28,149] mass of a proton is one. So you
+- [01:12:28,149 - 01:12:31,780] can make your equations simpler and get rid of
+- [01:12:31,780 - 01:12:34,300] these weird numbers, and how many numbers can
+- [01:12:34,300 - 01:12:36,820] you get rid of? How many numbers can
+- [01:12:36,820 - 01:12:38,840] you get rid of these? Well you have
+- [01:12:38,840 - 01:12:40,860] a choice of three units, mass, length, and
+- [01:12:40,860 - 01:12:43,860] time, and that means you can simplify
+- [01:12:43,860 - 01:12:46,860] three of the constants of nature, or
+- [01:12:46,860 - 01:12:50,499] three of these type of constants here,
+- [01:12:50,499 - 01:12:54,139] and set them equal to one if you
+- [01:12:54,139 - 01:12:59,059] like. So in astrophysics or in cosmology
+- [01:12:59,059 - 01:13:03,980] you might want to use the light year.
+- [01:13:03,980 - 01:13:07,409] That's a much better unit than
+- [01:13:07,409 - 01:13:10,839] the centimeter. And if you use the
+- [01:13:10,840 - 01:13:13,460] light year and also the year, light year
+- [01:13:13,460 - 01:13:16,080] for distance, year for time, speed of light
+- [01:13:16,080 - 01:13:20,710] comes out one, of course. So we
+- [01:13:20,710 - 01:13:25,340] can simplify three numbers. Usually, and what
+- [01:13:25,340 - 01:13:28,080] are we doing? The question of
+- [01:13:28,080 - 01:13:30,820] which numbers we simplify might depend on
+- [01:13:30,820 - 01:13:33,640] what kind of physics we're doing.
+- [01:13:33,640 - 01:13:36,460] If we're doing astrophysics we might want
+- [01:13:36,460 - 01:13:38,650] to simplify certain numbers. If we're doing
+- [01:13:38,650 - 01:13:40,840] atomic physics we might want to simplify
+- [01:13:40,840 - 01:13:47,120] other numbers. And in particle physics,
+- [01:13:47,120 - 01:13:53,400] in particle physics there are basically
+- [01:13:53,400 - 01:13:56,630] these two constants which we can set
+- [01:13:56,630 - 01:13:59,860] equal to one by appropriate choices of
+- [01:13:59,860 - 01:14:03,440] units. Appropriate choices of units can set
+- [01:14:03,440 - 01:14:07,020] c equal to one. That's easy. You just
+- [01:14:07,020 - 01:14:10,680] use units in which time is measured
+- [01:14:10,840 - 01:14:13,430] in such a way that time and distance
+- [01:14:13,430 - 01:14:16,020] are measured in such a way that the
+- [01:14:16,020 - 01:14:18,520] distance something moves in one unit of
+- [01:14:18,520 - 01:14:21,020] time is one unit of distance. You can
+- [01:14:21,020 - 01:14:24,520] also set h bar equal to one. You
+- [01:14:24,520 - 01:14:28,020] have your choice about one other unit. What's a
+- [01:14:28,020 - 01:14:30,580] good unit to set equal to one? What's a
+- [01:14:30,580 - 01:14:33,140] good unit, a mass unit, to set equal to
+- [01:14:33,140 - 01:14:35,980] one in particle physics? Well, you could use
+- [01:14:35,980 - 01:14:38,820] it. What about the proton? Why not the
+- [01:14:38,820 - 01:14:40,820] proton? Or why not the Higgs boson?
+- [01:14:40,840 - 01:14:44,340] Or why not the mu particle? Well, the
+- [01:14:44,340 - 01:14:47,840] answer is obvious that there isn't the best. There
+- [01:14:50,060 - 01:14:53,560] is no particularly good unit of mass
+- [01:14:53,560 - 01:14:57,060] which will simplify particle physics so that at
+- [01:14:59,380 - 01:15:02,880] best you can set one arbitrary particle to have
+- [01:15:02,880 - 01:15:06,380] a mass of one. And that would be foolish
+- [01:15:08,180 - 01:15:10,460] because there would be no particular reason to
+- [01:15:10,460 - 01:15:13,320] focus on any one particle. Why do we
+- [01:15:13,320 - 01:15:16,180] pick the speed of light and Planck's constant?
+- [01:15:19,540 - 01:15:21,770] DR. Well, they do appear in so many
+- [01:15:21,770 - 01:15:24,000] equations but so does the mass of the proton.
+- [01:15:24,020 - 01:15:26,980] Or the size of the proton. Why…
+- [01:15:29,020 - 01:15:33,710] Okay. I'll tell you why. There are two very, very
+- [01:15:33,710 - 01:15:38,400] fundamental facts about Planck's Constant and the Speed of Light.
+- [01:15:38,400 - 01:15:40,240] The way I'll say it is just technical.
+- [01:15:40,460 - 01:15:42,700] to say the words.
+- [01:15:42,700 - 01:15:44,800] No object in nature moves
+- [01:15:44,800 - 01:15:46,900] faster than the speed of light.
+- [01:15:46,900 - 01:15:48,850] It doesn't matter what it is, no
+- [01:15:48,850 - 01:15:50,800] matter how you try to accelerate it,
+- [01:15:50,800 - 01:15:52,130] you can get it up closer
+- [01:15:52,130 - 01:15:53,460] and closer to the speed of light,
+- [01:15:53,460 - 01:15:55,980] but you can't pass the speed of light.
+- [01:15:55,980 - 01:15:59,560] For any object in nature, any.
+- [01:15:59,560 - 01:16:01,580] So there's something universal about the speed of light.
+- [01:16:01,580 - 01:16:06,200] It's a universal bound, universal for all forms of matter,
+- [01:16:06,200 - 01:16:08,580] that anything that we can
+- [01:16:08,580 - 01:16:10,960] make, it has a certain universality.
+- [01:16:10,960 - 01:16:15,800] All objects are constrained by the speed of light.
+- [01:16:15,800 - 01:16:18,480] So it has some reason to
+- [01:16:18,480 - 01:16:21,160] be thought of as something universal.
+- [01:16:21,160 - 01:16:22,540] What about Planck's constant?
+- [01:16:22,540 - 01:16:24,700] Does Planck's constant come into anything
+- [01:16:24,700 - 01:16:26,860] where you would want to say
+- [01:16:26,860 - 01:16:29,610] everything in the world
+- [01:16:29,610 - 01:16:32,360] necessarily has precisely this property?
+- [01:16:32,360 - 01:16:34,860] Uncertainty?
+- [01:16:34,860 - 01:16:36,200] It's the uncertainty principle.
+- [01:16:36,200 - 01:16:39,019] We haven't discussed the uncertainty principle,
+- [01:16:39,019 - 01:16:41,409] but all objects in nature, the
+- [01:16:41,409 - 01:16:43,800] precision with which you can measure
+- [01:16:43,800 - 01:16:46,599] their positions and velocities and momenta,
+- [01:16:46,599 - 01:16:50,000] are constrained by exactly the same constant.
+- [01:16:50,000 - 01:16:53,300] The uncertainty in position times the uncertainty in momenta
+- [01:16:53,300 - 01:16:55,699] are always constrained to be as
+- [01:16:55,699 - 01:16:58,099] big or bigger than Planck's constant.
+- [01:16:58,099 - 01:17:01,480] Again, everything, all particles, not just particles,
+- [01:17:01,480 - 01:17:03,840] but objects of all kind
+- [01:17:03,840 - 01:17:06,200] are constrained by the same number.
+- [01:17:06,200 - 01:17:08,700] So it's for that reason,
+- [01:17:08,700 - 01:17:11,200] the specialness of these two constants,
+- [01:17:11,200 - 01:17:13,200] that it makes a lot of
+- [01:17:13,200 - 01:17:15,200] sense to set them equal to one.
+- [01:17:15,200 - 01:17:17,200] The size of the proton, for example,
+- [01:17:17,200 - 01:17:19,200] or not the size of the proton,
+- [01:17:19,200 - 01:17:20,700] well, let's say the size of the
+- [01:17:20,700 - 01:17:22,200] proton or the mass of the proton,
+- [01:17:22,200 - 01:17:25,200] there's nothing very special about the proton.
+- [01:17:25,200 - 01:17:27,700] The proton is one of hundreds
+- [01:17:27,700 - 01:17:30,200] of elementary, one of hundreds of objects.
+- [01:17:30,200 - 01:17:32,700] Why didn't we set the mass of,
+- [01:17:32,700 - 01:17:35,200] give me some weird element from a particle.
+- [01:17:36,200 - 01:17:38,700] Rubidium. Why didn't we set the
+- [01:17:38,700 - 01:17:41,200] mass of a rubidium atom to one?
+- [01:17:41,200 - 01:17:43,700] Because you say rubidium is not
+- [01:17:43,700 - 01:17:46,200] in any way more special than thuvonium.
+- [01:17:46,200 - 01:17:51,200] You're learning about my chemistry knowledge.
+- [01:17:51,200 - 01:17:53,200] There's nothing special about rubidium.
+- [01:17:53,200 - 01:17:55,200] It's just one of many.
+- [01:17:55,200 - 01:17:56,700] Same thing is true of the
+- [01:17:56,700 - 01:17:58,200] proton. It's just one of many.
+- [01:17:58,200 - 01:18:00,200] The electron is one of many.
+- [01:18:00,200 - 01:18:02,200] So there's nothing universal about it.
+- [01:18:02,200 - 01:18:05,200] Is there a third universal quantity which is so special
+- [01:18:05,200 - 01:18:06,200] that we can't measure it?
+- [01:18:06,200 - 01:18:08,200] We might want to set it equal to one.
+- [01:18:08,200 - 01:18:12,200] Something which everything is constrained by.
+- [01:18:12,200 - 01:18:14,200] Charge.
+- [01:18:14,200 - 01:18:16,200] Electric charge.
+- [01:18:16,200 - 01:18:18,700] Yeah, the trouble is electric
+- [01:18:18,700 - 01:18:21,200] charge is a dimensionless quantity.
+- [01:18:21,200 - 01:18:24,200] But yes, we could, the electric
+- [01:18:24,200 - 01:18:27,200] charge is a fundamental constant like that.
+- [01:18:27,200 - 01:18:29,200] The equation of gravity.
+- [01:18:29,200 - 01:18:31,200] Gravity.
+- [01:18:31,200 - 01:18:32,200] Gene.
+- [01:18:32,200 - 01:18:34,200] Right. What can we say?
+- [01:18:34,200 - 01:18:36,200] We can say all objects in nature.
+- [01:18:36,200 - 01:18:38,700] Attract each other with a force which
+- [01:18:38,700 - 01:18:41,200] is equal to the product of the mass
+- [01:18:41,200 - 01:18:43,700] divided by the square of the
+- [01:18:43,700 - 01:18:46,200] distance between them times Newton's constant.
+- [01:18:46,200 - 01:18:49,200] We don't make any exceptions.
+- [01:18:49,200 - 01:18:51,200] It's not that there are some objects
+- [01:18:51,200 - 01:18:53,200] which do that and other objects which don't.
+- [01:18:53,200 - 01:18:54,700] Incidentally, in the case of the electric
+- [01:18:54,700 - 01:18:56,200] charge, of course, there are neutral particles.
+- [01:18:56,200 - 01:19:01,200] So not all objects interact in the same way electrically.
+- [01:19:01,200 - 01:19:05,200] But everything in the world interacts exactly the same way.
+- [01:19:05,200 - 01:19:08,700] Product of the masses divided by the square
+- [01:19:08,700 - 01:19:12,200] of the distance between them times Newton's constant.
+- [01:19:12,200 - 01:19:15,200] So Newton's constant is one of these very universal things.
+- [01:19:15,200 - 01:19:18,200] G.
+- [01:19:18,200 - 01:19:21,200] I don't know, what is it?
+- [01:19:26,200 - 01:19:28,200] I assure you it's not known
+- [01:19:28,200 - 01:19:30,200] to anything like that kind of precision.
+- [01:19:30,200 - 01:19:34,200] I think it's 6.7 times 10 to the minus 11th.
+- [01:19:34,200 - 01:19:37,200] Some units or other.
+- [01:19:37,200 - 01:19:39,200] It's another thing that it makes a
+- [01:19:39,200 - 01:19:41,200] lot of sense to set equal to one.
+- [01:19:41,200 - 01:19:45,200] Why don't we do it in particle physics?
+- [01:19:45,200 - 01:19:48,700] The reason is that particle
+- [01:19:48,700 - 01:19:52,200] physics is totally insensitive to gravity.
+- [01:19:52,200 - 01:19:55,200] The gravitational force between objects
+- [01:19:55,200 - 01:19:58,200] in particle physics is absolutely negligible.
+- [01:19:58,200 - 01:20:00,200] So gravity would be a stupid
+- [01:20:00,200 - 01:20:02,200] thing to set equal to one
+- [01:20:02,200 - 01:20:04,700] because gravity just doesn't come
+- [01:20:04,700 - 01:20:07,200] into the equations of particle physics.
+- [01:20:07,200 - 01:20:09,200] Particles are too light to
+- [01:20:09,200 - 01:20:11,200] experience significant amounts of gravity.
+- [01:20:11,200 - 01:20:14,700] Particles that we know about today are
+- [01:20:14,700 - 01:20:18,200] just too light to experience any significant gravity.
+- [01:20:18,200 - 01:20:22,200] And so there's no particular value since none
+- [01:20:22,200 - 01:20:26,200] of the equations in particle physics involve G.
+- [01:20:26,200 - 01:20:29,200] It's better to leave it alone. Just go away.
+- [01:20:29,200 - 01:20:31,200] And not fix one of the units.
+- [01:20:32,200 - 01:20:34,200] Just leave it free.
+- [01:20:34,200 - 01:20:36,700] Isn't it even fair to say that
+- [01:20:36,700 - 01:20:39,200] making the assumption that you're dismissing it...
+- [01:20:39,200 - 01:20:40,200] What's that?
+- [01:20:40,200 - 01:20:43,200] Isn't it fair to say that particle physics dismisses
+- [01:20:43,200 - 01:20:46,200] it all the time because it would be insignificant
+- [01:20:46,200 - 01:20:48,200] if you actually don't even...
+- [01:20:48,200 - 01:20:51,200] It's not even fair to assume that G is dismissible.
+- [01:20:51,200 - 01:20:54,200] That in fact the particles you're examining at
+- [01:20:54,200 - 01:20:57,200] these high energies may not be subject to gravity
+- [01:20:57,200 - 01:20:59,200] in the classical way we know it.
+- [01:20:59,200 - 01:21:00,200] Well of course we know
+- [01:21:00,200 - 01:21:01,200] that they are subject to gravity.
+- [01:21:01,200 - 01:21:04,200] If you take enough particles, they form the Earth.
+- [01:21:04,200 - 01:21:06,200] And you take another enough particle...
+- [01:21:06,200 - 01:21:08,200] Not when they split apart.
+- [01:21:08,200 - 01:21:10,200] Yeah. So that's right.
+- [01:21:10,200 - 01:21:13,200] We don't really really know what...
+- [01:21:16,200 - 01:21:18,200] How elementary particles...
+- [01:21:18,200 - 01:21:20,200] Well...
+- [01:21:20,200 - 01:21:22,200] No, we do.
+- [01:21:22,200 - 01:21:24,200] Well we can certainly take one elementary particle and
+- [01:21:24,200 - 01:21:26,200] see how it behaves in the field of the Earth.
+- [01:21:26,200 - 01:21:28,200] See whether it falls, and they do.
+- [01:21:28,200 - 01:21:30,200] Single particles do fall in the field of the Earth.
+- [01:21:31,200 - 01:21:33,700] But how single particles
+- [01:21:33,700 - 01:21:36,200] would influence each other gravitationally,
+- [01:21:36,200 - 01:21:38,200] that of course has never been measured.
+- [01:21:38,200 - 01:21:42,200] And so, yeah, it's possible to question whether
+- [01:21:42,200 - 01:21:46,200] the universal law of gravitation applies to particles.
+- [01:21:48,200 - 01:21:50,200] I don't think many physicists do question it.
+- [01:21:50,200 - 01:21:53,200] But the main point is a practical point.
+- [01:21:53,200 - 01:21:54,700] There's no benefit gotten by setting
+- [01:21:54,700 - 01:21:56,200] G equal to one in particle physics
+- [01:21:56,200 - 01:21:59,200] because G just doesn't come into particle physics.
+- [01:21:59,200 - 01:22:00,200] At least...
+- [01:22:01,200 - 01:22:07,200] I mean, there are some current versions of particle physics.
+- [01:22:07,200 - 01:22:11,200] There are other attractions, such as attractions
+- [01:22:11,200 - 01:22:15,200] of two electrons, or the other forces.
+- [01:22:15,200 - 01:22:17,200] Wouldn't it make sense...
+- [01:22:17,200 - 01:22:19,200] Are you talking about gravitational attraction?
+- [01:22:19,200 - 01:22:22,200] ...to set those to one, instead of G?
+- [01:22:22,200 - 01:22:24,200] The attraction of two electrons, for example.
+- [01:22:24,200 - 01:22:27,200] Electrons don't attract, they repel, but... yeah.
+- [01:22:27,200 - 01:22:29,200] Yeah, you could do that.
+- [01:22:29,200 - 01:22:30,200] But that doesn't go...
+- [01:22:30,200 - 01:22:33,200] But that doesn't go into your particle physics either.
+- [01:22:33,200 - 01:22:35,200] It does go into your particle physics.
+- [01:22:35,200 - 01:22:37,200] Right. It does.
+- [01:22:38,200 - 01:22:39,200] It does.
+- [01:22:41,200 - 01:22:44,700] Yes, you could use units, and we often do,
+- [01:22:44,700 - 01:22:48,200] in which the electric charge is equal to one.
+- [01:22:48,200 - 01:22:54,200] And the attraction, the repulsion, is the third constant.
+- [01:22:54,200 - 01:22:58,200] Yeah, you could. You could. You could. You could.
+- [01:22:58,200 - 01:23:00,200] Traditionally, we haven't.
+- [01:23:00,200 - 01:23:01,200] Yeah, traditionally, we haven't.
+- [01:23:01,200 - 01:23:03,700] There's a reason that we haven't,
+- [01:23:03,700 - 01:23:06,200] and we'll eventually get to it.
+- [01:23:06,200 - 01:23:08,200] Wasn't that your point about
+- [01:23:08,200 - 01:23:10,200] the electric charge being dimensionless?
+- [01:23:10,200 - 01:23:13,700] Once you set C at H bar
+- [01:23:13,700 - 01:23:17,200] to be dimensionless, the charge is also dimensionless?
+- [01:23:17,200 - 01:23:20,200] Yeah, the charge is equal to one over a hundred...
+- [01:23:20,200 - 01:23:21,700] The square of the charge
+- [01:23:21,700 - 01:23:23,200] is equal to one over 137,
+- [01:23:23,200 - 01:23:26,200] is a dimensionless measure of the charge.
+- [01:23:28,200 - 01:23:31,200] And it's a completely dimensionless number.
+- [01:23:31,200 - 01:23:33,200] And we'll come to it.
+- [01:23:33,200 - 01:23:35,200] We'll come to what it means.
+- [01:23:35,200 - 01:23:37,200] You could...
+- [01:23:37,200 - 01:23:39,200] Coulomb's constant is one you're saying?
+- [01:23:39,200 - 01:23:40,700] Or would that be the third
+- [01:23:40,700 - 01:23:42,200] one if you didn't Coulomb's constant?
+- [01:23:42,200 - 01:23:45,200] Well, you can't set one over 137 equal to one.
+- [01:23:45,200 - 01:23:48,200] So there's an obstruction to...
+- [01:23:48,200 - 01:23:51,200] Because Coulomb's constant, you can set it Coulomb's.
+- [01:23:51,200 - 01:23:53,200] Actually, when I took physics, that's what they did.
+- [01:23:53,200 - 01:23:56,200] That would be the third one. They said Coulomb's constant.
+- [01:23:56,200 - 01:23:57,200] Coulomb's constant?
+- [01:23:57,200 - 01:23:59,200] Coulomb's constant.
+- [01:23:59,200 - 01:24:01,200] Yeah, you could.
+- [01:24:01,200 - 01:24:04,200] Right. You could.
+- [01:24:04,200 - 01:24:08,200] For whatever reason, historically we haven't done that.
+- [01:24:08,200 - 01:24:11,200] And there's probably no particular benefit in it.
+- [01:24:14,200 - 01:24:17,200] In any case, we will use units in
+- [01:24:17,200 - 01:24:20,200] which C and H bar are equal to one.
+- [01:24:20,200 - 01:24:22,200] Quite often. Not always, but sometimes.
+- [01:24:22,200 - 01:24:25,200] Only when I want to illustrate the size of numbers
+- [01:24:25,200 - 01:24:29,200] will I put C and H bar back into equations.
+- [01:24:29,200 - 01:24:40,200] So we...
+- [01:24:40,200 - 01:24:43,200] Oh, some equations come out simpler. Yeah.
+- [01:24:43,200 - 01:24:45,200] If we set C equal to
+- [01:24:45,200 - 01:24:47,200] one, then E is equal to M.
+- [01:24:47,200 - 01:24:51,200] That's it. Energy and mass are just the same thing.
+- [01:24:51,200 - 01:24:53,200] We have another equation over here.
+- [01:24:53,200 - 01:24:56,200] This is the equation of a...
+- [01:24:56,200 - 01:24:58,200] energy for a photon.
+- [01:24:58,200 - 01:25:01,200] This is the energy of a massive particle
+- [01:25:01,200 - 01:25:03,200] which has some rest mass.
+- [01:25:03,200 - 01:25:08,200] Energy of a photon is equal to H bar omega.
+- [01:25:08,200 - 01:25:10,700] Well, the equation simplifies if we
+- [01:25:10,700 - 01:25:13,200] set H bar equal to one.
+- [01:25:13,200 - 01:25:16,200] Energy is just equal to frequency.
+- [01:25:16,200 - 01:25:24,200] So that's just an illustration of the use of...
+- [01:25:24,200 - 01:25:26,200] What's that?
+- [01:25:26,200 - 01:25:31,200] No. Well, yes, yes, yes, yes, yes.
+- [01:25:31,200 - 01:25:33,200] But not for a photon.
+- [01:25:33,200 - 01:25:35,200] Photons have no mass.
+- [01:25:35,200 - 01:25:36,200] Don't forget, this is...
+- [01:25:36,200 - 01:25:37,700] Okay, there's a difference between the
+- [01:25:37,700 - 01:25:39,200] meaning of E in these equations.
+- [01:25:39,200 - 01:25:44,200] In this equation, it's rest mass and rest energy.
+- [01:25:44,200 - 01:25:47,200] But photons can never be brought to rest.
+- [01:25:47,200 - 01:25:51,200] Nevertheless, they do have energy, but it's not rest energy.
+- [01:25:51,200 - 01:25:54,200] It's basically kinetic energy.
+- [01:25:54,200 - 01:25:58,200] Photons have kinetic energy, energy of motion.
+- [01:25:58,200 - 01:26:02,200] So this is just plain energy, whatever the energy is,
+- [01:26:02,200 - 01:26:04,200] and it's equal to their frequency.
+- [01:26:04,200 - 01:26:06,200] So they're two different...
+- [01:26:06,200 - 01:26:07,200] Yeah.
+- [01:26:07,200 - 01:26:09,200] Well, mass and...
+- [01:26:09,200 - 01:26:12,200] rest mass and rest energy are relativistic because...
+- [01:26:12,200 - 01:26:13,200] Mm-hmm.
+- [01:26:13,200 - 01:26:14,200] ...foot is zero.
+- [01:26:14,200 - 01:26:16,200] What is rest?
+- [01:26:16,200 - 01:26:19,200] It has to be relative to something.
+- [01:26:19,200 - 01:26:20,200] Yeah.
+- [01:26:20,200 - 01:26:21,200] Yeah, no, no, no, no.
+- [01:26:21,200 - 01:26:24,200] Just forget the word rest now.
+- [01:26:24,200 - 01:26:25,200] Just forget the word rest.
+- [01:26:25,200 - 01:26:28,200] You just use it to differentiate them,
+- [01:26:28,200 - 01:26:30,200] but, you know, what is
+- [01:26:30,200 - 01:26:32,200] mass at rest in the universe?
+- [01:26:32,200 - 01:26:33,200] Where would it be?
+- [01:26:33,200 - 01:26:34,200] Not in the universe.
+- [01:26:34,200 - 01:26:36,200] It's in the laboratory we're talking about.
+- [01:26:36,200 - 01:26:38,200] Yeah, and then it becomes relative to the...
+- [01:26:38,200 - 01:26:40,200] Relative to the laboratory.
+- [01:26:40,200 - 01:26:43,200] Energies are measured relative to the laboratory.
+- [01:26:43,200 - 01:26:45,700] Energies are different depending on the
+- [01:26:45,700 - 01:26:48,200] state of motion of the observer.
+- [01:26:48,200 - 01:26:50,200] If you have a photon or anything
+- [01:26:50,200 - 01:26:52,200] else and two different observers observing it,
+- [01:26:52,200 - 01:26:54,200] they see two different energies.
+- [01:26:54,200 - 01:26:57,200] Obviously, even in Newtonian physics, that's true.
+- [01:26:57,200 - 01:26:59,700] If I have an object here and I
+- [01:26:59,700 - 01:27:02,200] see it, I say it has no kinetic energy.
+- [01:27:02,200 - 01:27:03,700] You're running by at 100 miles
+- [01:27:03,700 - 01:27:05,200] an hour, you look at it,
+- [01:27:05,200 - 01:27:07,200] and you see that it has kinetic energy.
+- [01:27:07,200 - 01:27:09,200] So energy is something both sides...
+- [01:27:09,200 - 01:27:10,200] Yeah.
+- [01:27:10,200 - 01:27:12,200] Energy is something that depends on the state of motion.
+- [01:27:12,200 - 01:27:14,200] It depends on the state of motion of an object.
+- [01:27:14,200 - 01:27:16,700] It makes sense to ask what the energy of
+- [01:27:16,700 - 01:27:19,200] this cup of coffee is when it's at rest.
+- [01:27:19,200 - 01:27:21,200] Then it's just the internal motion
+- [01:27:21,200 - 01:27:23,200] of the molecules and so forth
+- [01:27:23,200 - 01:27:26,200] and no overall kinetic energy.
+- [01:27:26,200 - 01:27:29,200] That's the thing which is the...
+- [01:27:29,200 - 01:27:32,200] When you write energy is equal to mass.
+- [01:27:32,200 - 01:27:34,700] Right, but all I'm saying is that the
+- [01:27:34,700 - 01:27:37,200] counter that it's sitting on is not at rest.
+- [01:27:37,200 - 01:27:38,200] What's that?
+- [01:27:38,200 - 01:27:39,700] In the universe, the counter that
+- [01:27:39,700 - 01:27:41,200] it's sitting on is not at rest.
+- [01:27:42,200 - 01:27:44,200] Okay.
+- [01:27:44,200 - 01:27:47,200] I mean, if it's at rest, then
+- [01:27:47,200 - 01:27:50,200] it's at rest relative to something else.
+- [01:27:50,200 - 01:27:53,200] Yes, and the point is that energy is
+- [01:27:53,200 - 01:27:56,200] measured relative to a given frame of reference.
+- [01:27:56,200 - 01:27:58,700] Energy is not a universal
+- [01:27:58,700 - 01:28:01,200] thing that everybody will agree on.
+- [01:28:01,200 - 01:28:04,200] It's relative to a particular frame of reference.
+- [01:28:04,200 - 01:28:06,200] So relative to my frame of reference,
+- [01:28:06,200 - 01:28:08,200] the energy of this cup of coffee,
+- [01:28:08,200 - 01:28:09,700] when it's standing still relative to
+- [01:28:09,700 - 01:28:11,200] me, is equal to its mass.
+- [01:28:12,200 - 01:28:13,200] Okay.
+- [01:28:13,200 - 01:28:14,200] Question.
+- [01:28:14,200 - 01:28:19,200] Earlier this evening, again, on this
+- [01:28:19,200 - 01:28:24,200] whole subject of naming things and constants,
+- [01:28:24,200 - 01:28:28,200] you didn't like frequency cycles per second.
+- [01:28:28,200 - 01:28:31,200] You said physicists use omega, 2 pi...
+- [01:28:31,200 - 01:28:33,200] To some extent, that's a historical fact.
+- [01:28:33,200 - 01:28:36,700] My question is, it seems to
+- [01:28:36,700 - 01:28:40,200] me, 2 pi using radio 57 whatever,
+- [01:28:40,200 - 01:28:42,200] 2 pi times that,
+- [01:28:42,200 - 01:28:45,200] is more complicated than a complete cycle.
+- [01:28:45,200 - 01:28:47,200] I agree with you.
+- [01:28:47,200 - 01:28:50,700] Why would one use something that appears
+- [01:28:50,700 - 01:28:54,200] to be more complex than a single cycle?
+- [01:28:54,200 - 01:28:56,200] Good question.
+- [01:28:56,200 - 01:28:59,200] Good question.
+- [01:28:59,200 - 01:29:04,200] Engineering math, except for if you do engineering math.
+- [01:29:04,200 - 01:29:05,200] Yeah, yeah.
+- [01:29:05,200 - 01:29:07,700] I mean, there's some mathematical
+- [01:29:07,700 - 01:29:10,200] simplicity to radians that is...
+- [01:29:10,200 - 01:29:11,200] I don't know.
+- [01:29:12,200 - 01:29:15,200] I think the answer is you look
+- [01:29:15,200 - 01:29:18,200] at all the equations you write down,
+- [01:29:18,200 - 01:29:20,700] you write them in both terms of frequencies
+- [01:29:20,700 - 01:29:23,200] and you write them in terms of omegas.
+- [01:29:23,200 - 01:29:25,700] And you see in which form
+- [01:29:25,700 - 01:29:28,200] you encounter fewer factors of 2 pi.
+- [01:29:31,200 - 01:29:34,200] I'm not sure what the answer to that is.
+- [01:29:34,200 - 01:29:36,200] It's omega.
+- [01:29:36,200 - 01:29:39,200] Omega, for sure.
+- [01:29:39,200 - 01:29:40,200] It's simpler.
+- [01:29:40,200 - 01:29:41,200] You think so?
+- [01:29:41,200 - 01:29:42,200] Yeah.
+- [01:29:42,200 - 01:29:43,200] Okay.
+- [01:29:43,200 - 01:29:44,200] Yeah.
+- [01:29:44,200 - 01:29:45,200] Do you do a lot of things with b
+- [01:29:45,200 - 01:29:46,200] to the i something along with it or anything?
+- [01:29:46,200 - 01:29:47,200] Great question.
+- [01:29:47,200 - 01:29:48,200] Great question.
+- [01:29:48,200 - 01:29:49,200] It's time.
+- [01:29:49,200 - 01:29:50,200] That's right.
+- [01:29:50,200 - 01:29:51,200] Good question.
+- [01:29:51,200 - 01:29:54,700] Practically speaking, is it possible to accelerate
+- [01:29:54,700 - 01:29:58,200] 2 particles fast enough with energy that
+- [01:29:58,200 - 01:30:01,200] they will interact gravitationally?
+- [01:30:01,200 - 01:30:03,200] In principle, certainly.
+- [01:30:03,200 - 01:30:05,700] Practically speaking, like large
+- [01:30:05,700 - 01:30:08,200] hexagonal lighters, that's proportional.
+- [01:30:08,200 - 01:30:09,200] Very far from it.
+- [01:30:09,200 - 01:30:10,200] Very far from it.
+- [01:30:10,200 - 01:30:13,200] Very, very far from it.
+- [01:30:13,200 - 01:30:14,200] No.
+- [01:30:14,200 - 01:30:15,700] Of course, it depends on
+- [01:30:15,700 - 01:30:17,200] what you mean by a particle.
+- [01:30:17,200 - 01:30:18,700] I don't think you'd want
+- [01:30:18,700 - 01:30:20,200] to call the Earth a particle.
+- [01:30:20,200 - 01:30:25,200] But, well, what's elementary?
+- [01:30:25,200 - 01:30:26,200] Yeah.
+- [01:30:26,200 - 01:30:27,200] Yeah.
+- [01:30:27,200 - 01:30:29,200] What is the source of positron?
+- [01:30:29,200 - 01:30:30,200] What's it?
+- [01:30:30,200 - 01:30:31,200] A source of positron.
+- [01:30:31,200 - 01:30:34,200] What is the source of positron?
+- [01:30:34,200 - 01:30:36,200] High energy collisions.
+- [01:30:36,200 - 01:30:38,200] That's the only way to do it?
+- [01:30:38,200 - 01:30:41,200] Oh, you need it.
+- [01:30:41,200 - 01:30:42,200] Yeah.
+- [01:30:42,200 - 01:30:44,480] You need a collision to create positrons.
+- [01:30:44,480 - 01:30:47,040] Nuclear processes?
+- [01:30:47,040 - 01:30:48,040] Yeah.
+- [01:30:48,040 - 01:30:49,040] Nuclear processes.
+- [01:30:49,040 - 01:30:53,519] So nuclear decay, sometimes you yield positrons.
+- [01:30:53,519 - 01:30:55,440] You used Planck's constant.
+- [01:30:55,440 - 01:30:57,920] Planck time and Planck distance and things like that.
+- [01:30:57,920 - 01:30:58,960] Well, we're not doing that.
+- [01:30:58,960 - 01:31:00,580] Planck time and Planck distance correspond
+- [01:31:00,580 - 01:31:02,200] to setting g equal to one.
+- [01:31:02,200 - 01:31:03,200] Yeah.
+- [01:31:03,200 - 01:31:04,200] So we're not doing that.
+- [01:31:04,200 - 01:31:05,200] Okay.
+- [01:31:05,200 - 01:31:05,700] Now, one of the reasons that
+- [01:31:05,700 - 01:31:06,200] we might not want to do that—
+- [01:31:06,200 - 01:31:06,700] This is the sort of thing
+- [01:31:06,700 - 01:31:07,200] called the Planck time and Planck distance.
+- [01:31:07,200 - 01:31:10,950] do that is once you set three of these
+- [01:31:10,950 - 01:31:14,700] equal to one let's say then you have a
+- [01:31:14,700 - 01:31:17,040] natural unit of length a natural unit
+- [01:31:17,040 - 01:31:19,380] of time and natural unit of mass the
+- [01:31:19,380 - 01:31:21,529] natural unit of length when you set G equal
+- [01:31:21,529 - 01:31:23,679] to one and all of them equal to one
+- [01:31:23,679 - 01:31:26,539] is called the Planck length and
+- [01:31:26,539 - 01:31:29,400] it's very very much smaller than anything
+- [01:31:29,400 - 01:31:31,350] that comes up in normal particle physics
+- [01:31:31,350 - 01:31:33,300] so you would not want to measure
+- [01:31:33,300 - 01:31:37,110] particle sizes particle radii and so
+- [01:31:37,110 - 01:31:40,920] forth in units of the Planck
+- [01:31:40,920 - 01:31:42,920] length it's just too small it's much
+- [01:31:42,920 - 01:31:44,920] smaller than anything that occurs in so
+- [01:31:44,920 - 01:31:47,590] that's the reason for not doing it
+- [01:31:47,590 - 01:31:50,260] you use like in black holes or cosmology
+- [01:31:50,260 - 01:31:52,440] yeah anything that really involves
+- [01:31:52,440 - 01:31:54,620] gravity and quantum mechanics together
+- [01:31:54,620 - 01:31:58,740] and relativity it makes sense to put all three
+- [01:31:58,740 - 01:32:02,860] of them to one but if only two of
+- [01:32:02,860 - 01:32:03,070] them are important then you have a
+- [01:32:03,070 - 01:32:03,280] very small particle size and you can't do
+- [01:32:03,280 - 01:32:04,280] anything about it but if it's not important you
+- [01:32:04,280 - 01:32:05,280] may only want to set to two of the
+- [01:32:05,280 - 01:32:10,220] constants equal to one okay let's see
+- [01:32:10,220 - 01:32:15,160] I want to go a little bit further
+- [01:32:16,400 - 01:32:20,190] yeah let's go a little bit further
+- [01:32:20,190 - 01:32:23,980] with the basic concepts that we'll draw on
+- [01:32:23,980 - 01:32:27,610] over and over I mean today
+- [01:32:27,610 - 01:32:31,240] I'm just listing basically the preliminary
+- [01:32:31,240 - 01:32:32,040] concepts prior to the application of
+- [01:32:32,040 - 01:32:32,840] the Planck length and the Lagrangian length
+- [01:32:33,560 - 01:32:36,180] and the Lagrangian Membrane length now there
+- [01:32:36,180 - 01:32:38,800] are okay what are the basic concepts
+- [01:32:38,800 - 01:32:42,560] there's a very small ones but three
+- [01:32:42,560 - 01:32:46,320] I like they're called Pi roof worked
+- [01:32:46,320 - 01:32:48,750] alnya objects protect the what I
+- [01:32:48,750 - 01:32:51,180] mean by put and restricted line
+- [01:32:52,520 - 01:32:56,360] and the I mean though applying only
+- [01:32:56,360 - 01:33:00,200] the training rules fine let's try and get
+- [01:33:00,200 - 01:33:00,520] all
+- [01:33:00,520 - 01:33:01,580] all right
+- [01:33:01,580 - 01:33:02,120] here's a nice example and it's bowing down again
+- [01:33:02,120 - 01:33:02,660] for a second after you get a level Что
+- [01:33:02,660 - 01:33:05,210] If you take an object and it's
+- [01:33:05,210 - 01:33:07,760] at rest, it has no momentum at all.
+- [01:33:07,760 - 01:33:09,730] It may have energy, it
+- [01:33:09,730 - 01:33:11,700] has E equals m squared energy,
+- [01:33:11,700 - 01:33:15,660] but it has no momentum, an object at rest.
+- [01:33:17,059 - 01:33:20,340] If it's moving, it typically has momentum.
+- [01:33:20,340 - 01:33:22,900] Momentum is conserved, just like energy.
+- [01:33:22,900 - 01:33:26,060] When two objects hit each other,
+- [01:33:26,060 - 01:33:29,220] the net amount of momentum doesn't change.
+- [01:33:29,220 - 01:33:32,660] So momentum is a conserved quantity,
+- [01:33:32,660 - 01:33:37,660] and because it's a conserved quantity, it has an importance.
+- [01:33:37,660 - 01:33:40,460] Anything that's conserved is important.
+- [01:33:41,980 - 01:33:45,900] Momentum is a combination of the mass of an object,
+- [01:33:45,900 - 01:33:51,580] or better yet, its energy, and its direction of motion.
+- [01:33:51,580 - 01:33:54,180] Its mass, its velocity, and its direction of motion.
+- [01:33:54,180 - 01:33:55,980] It's a vector quantity.
+- [01:33:55,980 - 01:33:58,780] It's a vector quantity, and as a rule,
+- [01:33:58,780 - 01:34:02,540] it's proportional, or as a vector quantity,
+- [01:34:02,540 - 01:34:06,340] it points along the direction of motion of an object.
+- [01:34:06,340 - 01:34:08,259] It points along its velocity.
+- [01:34:08,259 - 01:34:09,980] For a non-relativistic object,
+- [01:34:09,980 - 01:34:11,840] an object moving with much
+- [01:34:11,840 - 01:34:13,700] slower than the speed of light,
+- [01:34:13,700 - 01:34:17,040] the momentum, of course, is equal
+- [01:34:17,040 - 01:34:20,380] to the mass times the velocity.
+- [01:34:20,380 - 01:34:22,980] The arrow on top means that it's a vector quantity.
+- [01:34:22,980 - 01:34:25,099] It has a direction.
+- [01:34:25,099 - 01:34:26,819] Okay, so mass times velocity
+- [01:34:26,819 - 01:34:28,540] is momentum in non-relativistic physics,
+- [01:34:28,540 - 01:34:31,840] but it's not quite the
+- [01:34:31,840 - 01:34:35,140] right expression for in relativistic physics,
+- [01:34:35,140 - 01:34:37,980] and in particular, it's not quite the right
+- [01:34:37,980 - 01:34:40,820] thing for things moving with the speed of light.
+- [01:34:40,820 - 01:34:42,420] So let's talk about light.
+- [01:34:42,420 - 01:34:43,420] Does light have...
+- [01:34:43,420 - 01:34:44,860] First of all, does light have energy?
+- [01:34:44,860 - 01:34:45,780] Yes.
+- [01:34:45,780 - 01:34:48,300] A beam of light shining on something heats it.
+- [01:34:48,300 - 01:34:51,220] Does light have momentum?
+- [01:34:51,220 - 01:34:53,540] Now, ordinary light, if it hits
+- [01:34:53,540 - 01:34:55,860] you in the chest or something,
+- [01:34:55,860 - 01:34:57,980] doesn't give you much of a push.
+- [01:34:57,980 - 01:34:58,540] Why?
+- [01:34:58,540 - 01:35:02,100] It's because the light is so dilute, and
+- [01:35:02,100 - 01:35:05,660] it just doesn't have much of a kick.
+- [01:35:05,660 - 01:35:07,860] But if you got hit by
+- [01:35:07,860 - 01:35:10,060] this laser beam that they make in...
+- [01:35:10,060 - 01:35:12,340] Where is it? Across the bay on the other side.
+- [01:35:12,340 - 01:35:14,019] What's that place?
+- [01:35:14,019 - 01:35:15,420] Livermore, yeah.
+- [01:35:15,420 - 01:35:17,460] They got this great big laser,
+- [01:35:17,460 - 01:35:19,500] and that laser shines its light,
+- [01:35:19,500 - 01:35:20,860] and when it hits a piece
+- [01:35:20,860 - 01:35:22,220] of material, it just implodes it.
+- [01:35:22,220 - 01:35:23,380] What is it that's imploding it?
+- [01:35:23,380 - 01:35:27,460] It's the momentum of the light, just pure, sheer momentum.
+- [01:35:27,460 - 01:35:28,460] And it can be huge.
+- [01:35:28,540 - 01:35:31,100] So yes, light has momentum, and
+- [01:35:31,100 - 01:35:33,660] a pulse of light moving along...
+- [01:35:33,660 - 01:35:39,500] Let's imagine a pulse of light moving along the x-axis.
+- [01:35:39,500 - 01:35:44,700] Every pulse of light moving along a given direction.
+- [01:35:44,700 - 01:35:46,980] Now, of course, real light might have some dispersion.
+- [01:35:46,980 - 01:35:47,820] It might...
+- [01:35:47,820 - 01:35:48,980] Some of it might go out.
+- [01:35:48,980 - 01:35:50,900] Some parts of the light wave may go one way.
+- [01:35:50,900 - 01:35:53,060] Some parts may go the other way.
+- [01:35:53,060 - 01:35:55,700] But if the light is very collimated, so
+- [01:35:55,700 - 01:35:58,340] that it's moving along a particular axis, then...
+- [01:35:58,540 - 01:36:00,580] The right formula...
+- [01:36:00,580 - 01:36:02,580] Now, I'm not going to prove this.
+- [01:36:02,580 - 01:36:03,580] I'm not going to prove it.
+- [01:36:03,580 - 01:36:11,240] I'm just going to tell you the right formula for a light beam is
+- [01:36:11,240 - 01:36:18,900] that it is the energy of the light beam divided by the speed of light.
+- [01:36:18,900 - 01:36:21,060] Let me just compare it with this.
+- [01:36:21,060 - 01:36:23,800] Or another way to write it is the energy is
+- [01:36:23,800 - 01:36:26,540] C times P, but let's leave it in this form here.
+- [01:36:26,540 - 01:36:27,540] Yeah.
+- [01:36:27,540 - 01:36:28,540] Yeah.
+- [01:36:28,540 - 01:36:31,580] Let me just compare these two things.
+- [01:36:31,580 - 01:36:33,980] Momentum is mass times velocity.
+- [01:36:33,980 - 01:36:37,180] Momentum is energy divided by velocity.
+- [01:36:37,180 - 01:36:38,660] Just a simple question.
+- [01:36:38,660 - 01:36:41,300] Are they dimensionally the same?
+- [01:36:41,300 - 01:36:42,780] Are they dimensionally the same?
+- [01:36:42,780 - 01:36:47,840] So to inquire whether they're dimensionally the same, all you have to remember
+- [01:36:47,840 - 01:36:52,900] is that the dimensions of energy are mass times the speed of light squared.
+- [01:36:52,900 - 01:36:58,340] So just in terms of units, energy is like mc2.
+- [01:36:58,540 - 01:37:01,580] It's like mc2 divided by c.
+- [01:37:01,580 - 01:37:07,180] Just tells you that the momentum of a
+- [01:37:07,180 - 01:37:12,780] beam of light is its mass times its velocity.
+- [01:37:12,780 - 01:37:13,780] Not really its mass.
+- [01:37:13,780 - 01:37:14,780] Its mass...
+- [01:37:14,780 - 01:37:16,040] The rest of the mass of
+- [01:37:16,040 - 01:37:17,300] a light beam is really zero.
+- [01:37:17,300 - 01:37:20,700] It has no mass, rest mass.
+- [01:37:20,700 - 01:37:23,140] But in terms of units, it's
+- [01:37:23,140 - 01:37:25,580] equal to an energy times c squared.
+- [01:37:25,580 - 01:37:26,580] Sorry.
+- [01:37:26,580 - 01:37:27,580] Mass times c squared.
+- [01:37:27,580 - 01:37:28,580] Sorry.
+- [01:37:28,580 - 01:37:30,019] Mass times c squared divided by c.
+- [01:37:30,019 - 01:37:31,019] You get the point?
+- [01:37:31,019 - 01:37:33,580] It's just a question of units.
+- [01:37:33,580 - 01:37:35,740] This doesn't look like this in terms of units.
+- [01:37:35,740 - 01:37:37,220] One has a velocity upstairs.
+- [01:37:37,220 - 01:37:39,420] One has a velocity downstairs.
+- [01:37:39,420 - 01:37:41,520] But it is the same in units
+- [01:37:41,520 - 01:37:43,620] when you remember that E equals mc squared.
+- [01:37:43,620 - 01:37:44,620] Okay.
+- [01:37:44,620 - 01:37:48,900] So this is the formula for the
+- [01:37:48,900 - 01:37:53,180] momentum or the relationship between the momentum and
+- [01:37:53,180 - 01:37:54,580] the energy of a light beam.
+- [01:37:59,580 - 01:38:00,580] Ok.
+- [01:38:01,580 - 01:38:02,580] So, you get the whole momentum sum, the motion.
+- [01:38:04,580 - 01:38:05,580] It points in the direction along the motion.
+- [01:38:05,580 - 01:38:06,580] That's right.
+- [01:38:06,580 - 01:38:07,580] How to write this?
+- [01:38:07,580 - 01:38:08,580] It points along the direction of the light beam.
+- [01:38:08,580 - 01:38:11,080] But the magnitude of the momentum is
+- [01:38:11,080 - 01:38:13,580] equal to the energy divided by c.
+- [01:38:13,580 - 01:38:14,580] The magnitude of the momentum.
+- [01:38:14,580 - 01:38:18,080] The direction is along the direction of the
+- [01:38:18,080 - 01:38:21,580] axis of the light beam, along the direction
+- [01:38:21,580 - 01:38:22,580] of the motion of the light beam.
+- [01:38:26,580 - 01:38:27,580] of it
+- [01:38:27,580 - 01:38:30,160] is equal to the energy of the light
+- [01:38:30,160 - 01:38:32,740] beam divided by the speed of light c
+- [01:38:32,740 - 01:38:36,220] you can see now momentum
+- [01:38:36,220 - 01:38:38,920] is energy divided by c
+- [01:38:38,920 - 01:38:41,240] that's why
+- [01:38:41,240 - 01:38:44,860] that's why the momentum is so small
+- [01:38:44,860 - 01:38:47,740] you can detect the energy of a light beam
+- [01:38:47,740 - 01:38:49,940] sure you can, it heats up a little
+- [01:38:49,940 - 01:38:52,140] bit of water, it heats up, it evaporates
+- [01:38:52,140 - 01:38:53,450] water and so forth, it's
+- [01:38:53,450 - 01:38:54,760] not hard to detect the energy
+- [01:38:54,760 - 01:38:56,420] but it's quite hard to detect
+- [01:38:56,420 - 01:38:58,080] the momentum of the light beam
+- [01:38:58,080 - 01:39:01,800] and that's because there's this c in the denominator here
+- [01:39:01,800 - 01:39:05,940] momentum of a light beam is very small, typically
+- [01:39:05,940 - 01:39:07,120] of course if you
+- [01:39:07,120 - 01:39:08,740] as i said if you
+- [01:39:08,740 - 01:39:10,580] pump up the light beam enough
+- [01:39:10,580 - 01:39:14,040] it can give quite a kick
+- [01:39:14,040 - 01:39:18,960] alright so that, oh, oh, let's do one little exercise
+- [01:39:18,960 - 01:39:23,780] let's just um...
+- [01:39:23,780 - 01:39:26,040] the momentum of a light beam is
+- [01:39:26,040 - 01:39:28,300] its energy divided by the speed of light
+- [01:39:28,300 - 01:39:30,179] now we had a formula, do you remember
+- [01:39:30,179 - 01:39:32,059] the formula for the energy of a photon?
+- [01:39:32,059 - 01:39:33,940] let's take one photon now
+- [01:39:33,940 - 01:39:37,440] one photon is an example of a light beam
+- [01:39:37,440 - 01:39:42,080] let's figure out what the momentum of a photon is
+- [01:39:42,080 - 01:39:44,940] so it is equal to its energy divided by the
+- [01:39:44,940 - 01:39:47,800] speed of light, but what's the energy of a photon?
+- [01:39:47,800 - 01:39:49,719] h bar omega
+- [01:39:49,719 - 01:39:51,679] so the momentum
+- [01:39:51,679 - 01:39:53,660] in magnitude is equal to
+- [01:39:53,780 - 01:39:55,000] h bar
+- [01:39:55,000 - 01:39:56,360] omega
+- [01:39:56,360 - 01:39:59,700] divided by the speed of light
+- [01:39:59,700 - 01:40:03,960] now do you remember the relationship between frequency
+- [01:40:03,960 - 01:40:10,179] wavelength and the speed of light?
+- [01:40:10,179 - 01:40:12,320] we had that before
+- [01:40:12,320 - 01:40:14,139] that
+- [01:40:14,139 - 01:40:17,259] what was it, frequency times
+- [01:40:17,259 - 01:40:20,380] wavelength is equal to c, right?
+- [01:40:20,380 - 01:40:22,820] frequency times wavelength and now if i use
+- [01:40:22,820 - 01:40:23,160] if i put omega in the
+- [01:40:23,160 - 01:40:23,500] denominator, it's equal to c, right?
+- [01:40:23,500 - 01:40:24,720] omega here
+- [01:40:24,720 - 01:40:27,580] omega times lambda is what?
+- [01:40:27,580 - 01:40:30,500] 2 pi times c or 2 pi divided by c?
+- [01:40:30,500 - 01:40:32,360] 2 pi times c, right?
+- [01:40:32,360 - 01:40:35,140] 2 pi times c
+- [01:40:35,140 - 01:40:37,640] no, 2 pi
+- [01:40:37,640 - 01:40:42,660] omega is 2 pi
+- [01:40:42,660 - 01:40:44,240] c over 2 pi?
+- [01:40:44,240 - 01:40:47,620] c over 2 pi, good
+- [01:40:47,620 - 01:40:49,720] c over 2 pi
+- [01:40:49,720 - 01:40:52,920] is that right?
+- [01:40:52,920 - 01:40:58,140] you guys abdominal
+- [01:41:10,140 - 01:41:12,220] aizumi
+- [01:41:12,220 - 01:41:13,200] right
+- [01:41:14,640 - 01:41:15,640] right
+- [01:41:15,640 - 01:41:18,440] so wait a minute i don't believe you
+- [01:41:18,440 - 01:41:19,980] i have to talk about myself
+- [01:41:19,980 - 01:41:22,140] we have frequency times lambda equals c, right?
+- [01:41:22,140 - 01:41:28,390] equals c, right? So therefore, yeah. So now,
+- [01:41:28,390 - 01:41:34,640] wait. Omega is equal to 2 pi times frequency.
+- [01:41:34,640 - 01:41:38,670] Right. So frequency is omega over 2 pi, so this
+- [01:41:38,670 - 01:41:42,700] is omega over 2 pi, and I say that omega
+- [01:41:42,700 - 01:41:49,820] times lambda is 2 pi times c. I was right.
+- [01:41:49,820 - 01:41:56,940] Right. Omega times lambda is 2 pi c. So let's
+- [01:41:56,940 - 01:42:00,660] get rid of the omega here and write omega
+- [01:42:00,660 - 01:42:04,380] is equal to 2 pi c over lambda. I've just
+- [01:42:04,380 - 01:42:08,140] divided by lambda. Let's just see what we get.
+- [01:42:08,140 - 01:42:11,900] We get momentum of a photon is h bar
+- [01:42:11,900 - 01:42:12,700] divided by c.
+- [01:42:12,700 - 01:42:18,399] And now times omega, and omega is 2 pi
+- [01:42:18,399 - 01:42:24,099] over lambda times c. The c's cancel out. That's
+- [01:42:24,099 - 01:42:27,539] good because I know the c's should cancel out.
+- [01:42:27,539 - 01:42:30,980] And what do we find? We find the momentum
+- [01:42:30,980 - 01:42:34,720] of a photon is 2 pi h
+- [01:42:34,720 - 01:42:38,460] bar, that's a number, divided by the wavelength.
+- [01:42:38,460 - 01:42:41,900] I thought pi h bar equal h.
+- [01:42:41,900 - 01:42:42,700] What's that?
+- [01:42:42,700 - 01:42:47,399] Yeah, yeah, yeah. 2 pi h bar equals h.
+- [01:42:47,399 - 01:42:52,099] Right. Right. That's right. Right. So p is also equal
+- [01:42:52,099 - 01:42:56,079] to just old-fashioned h divided by lambda. There's
+- [01:42:56,079 - 01:43:00,059] an example where we did it. It was
+- [01:43:00,059 - 01:43:03,039] possibly not so smart to use h bar. Right.
+- [01:43:03,039 - 01:43:06,019] Okay. Look, the 2 pi's are going to get you
+- [01:43:06,019 - 01:43:08,459] one way or another. Some place they're going
+- [01:43:08,459 - 01:43:10,900] to get you. The pi's always come up somewheres.
+- [01:43:10,900 - 01:43:12,540] You can't get rid of them. Okay.
+- [01:43:12,700 - 01:43:16,109] What does this say? This says the
+- [01:43:16,109 - 01:43:19,519] shorter the wavelength, the larger the momentum of
+- [01:43:19,519 - 01:43:24,249] a photon. A single photon of a radio
+- [01:43:24,249 - 01:43:28,980] wave has a very, very small momentum. A single
+- [01:43:28,980 - 01:43:32,460] photon of a gamma ray, a gamma ray is
+- [01:43:32,460 - 01:43:35,940] a very, very short wavelength photon, has a good kick
+- [01:43:35,940 - 01:43:39,320] to it. One photon, it won't hit, it's still
+- [01:43:39,320 - 01:43:42,700] a pretty small kick. But what this is telling
+- [01:43:42,700 - 01:43:45,910] you is that the momentum is related
+- [01:43:45,910 - 01:43:49,120] to the wavelength. The shorter the wavelength, the
+- [01:43:49,120 - 01:43:53,850] bigger the momentum. That is an
+- [01:43:53,850 - 01:43:58,580] extremely important lesson. The shorter the wavelength,
+- [01:43:58,580 - 01:44:01,030] the bigger the momentum, and also, of course,
+- [01:44:01,030 - 01:44:03,480] the bigger the energy. The energy and the
+- [01:44:03,480 - 01:44:08,099] momentum are related or proportional to each other.
+- [01:44:08,099 - 01:44:10,299] So if you try to make very short
+- [01:44:10,299 - 01:44:12,500] wavelength photons, the result would be that you have
+- [01:44:12,500 - 01:44:12,700] to speak up.
+- [01:44:12,700 - 01:44:15,460] spend a lot of energy to make them.
+- [01:44:15,460 - 01:44:19,049] Now it becomes clear why physicists
+- [01:44:19,049 - 01:44:22,639] have to build bigger and bigger machines
+- [01:44:22,639 - 01:44:26,019] to see smaller and smaller things.
+- [01:44:26,019 - 01:44:29,429] The reason is if you want to see
+- [01:44:29,429 - 01:44:32,840] a small thing, you have to use short wavelengths.
+- [01:44:32,840 - 01:44:36,830] If you tried to take a picture of me
+- [01:44:36,830 - 01:44:40,820] with radio waves, I would look like a blur.
+- [01:44:40,820 - 01:44:43,640] If you wanted to see any sort of distinctness
+- [01:44:43,640 - 01:44:46,460] to my features, you would have to use wavelengths
+- [01:44:46,460 - 01:44:49,719] which are shorter than the size of my head.
+- [01:44:49,719 - 01:44:53,689] If you wanted to see a little hair on
+- [01:44:53,689 - 01:44:57,660] my head, you would have to use wavelengths which are
+- [01:44:57,660 - 01:44:59,760] as small as the thickness
+- [01:44:59,760 - 01:45:01,860] of the hair on my head.
+- [01:45:01,860 - 01:45:04,650] The smaller the object that you want to
+- [01:45:04,650 - 01:45:07,440] see in a microscope, the shorter the wavelength
+- [01:45:07,440 - 01:45:09,960] of light that you have to use.
+- [01:45:09,960 - 01:45:10,799] Okay?
+- [01:45:10,800 - 01:45:14,620] If you want to see an atom, literally see
+- [01:45:14,620 - 01:45:18,440] what's going on in an atom, you have to illuminate
+- [01:45:18,440 - 01:45:21,490] it with radiation whose wavelength is as
+- [01:45:21,490 - 01:45:24,540] short as the size of the atom.
+- [01:45:24,540 - 01:45:27,060] But that means the shorter the wavelength, the
+- [01:45:27,060 - 01:45:29,580] smaller the object you want to see, the
+- [01:45:29,580 - 01:45:32,640] larger the momentum of the photons that
+- [01:45:32,640 - 01:45:35,700] you would have to use to see it.
+- [01:45:35,700 - 01:45:38,160] So if you want to see really small
+- [01:45:38,160 - 01:45:40,620] things, you have to use very—make very high energy
+- [01:45:40,800 - 01:45:41,900] particles.
+- [01:45:41,900 - 01:45:44,850] Very high energy photons or very
+- [01:45:44,850 - 01:45:47,800] high energy particles of different types.
+- [01:45:47,800 - 01:45:49,700] How do you make high energy particles?
+- [01:45:49,700 - 01:45:52,420] You accelerate them in bigger and bigger accelerators.
+- [01:45:52,420 - 01:45:55,400] You have to pump more and more energy
+- [01:45:55,400 - 01:45:58,380] into them to make very high energy particles.
+- [01:45:58,380 - 01:46:01,850] So this equation and its near
+- [01:46:01,850 - 01:46:05,320] relative, what is its near relative?
+- [01:46:05,320 - 01:46:07,800] E equals h bar omega.
+- [01:46:07,800 - 01:46:08,800] Okay?
+- [01:46:08,800 - 01:46:09,800] Okay.
+- [01:46:09,800 - 01:46:10,800] Okay.
+- [01:46:10,800 - 01:46:11,800] Okay.
+- [01:46:11,800 - 01:46:16,350] So the equations are sort of the
+- [01:46:16,350 - 01:46:20,900] central theme of particle physics that particle physics
+- [01:46:20,900 - 01:46:24,060] progresses by making higher and higher energy
+- [01:46:24,060 - 01:46:27,220] particles because the higher and higher energy
+- [01:46:27,220 - 01:46:30,470] particles have shorter and shorter wavelengths and
+- [01:46:30,470 - 01:46:33,720] allow you to see smaller and smaller structures.
+- [01:46:33,720 - 01:46:36,200] That's the pattern that has held sway
+- [01:46:36,200 - 01:46:38,680] over basically a century of particle physics or
+- [01:46:38,680 - 01:46:39,900] almost a century of particle physics.
+- [01:46:39,900 - 01:46:40,400] Okay.
+- [01:46:40,400 - 01:46:40,600] Okay.
+- [01:46:40,600 - 01:46:40,700] Okay.
+- [01:46:40,700 - 01:46:40,800] Okay.
+- [01:46:40,800 - 01:46:41,320] Huh.
+- [01:46:41,320 - 01:46:43,350] Uh, somewhat, uh, the striving for
+- [01:46:43,350 - 01:46:45,380] smaller and smaller distances, that's obviously
+- [01:46:45,380 - 01:46:46,460] what you want to do.
+- [01:46:46,460 - 01:46:48,800] You want to see smaller and smaller things.
+- [01:46:48,800 - 01:46:51,460] And, at the same time the striving for
+- [01:46:51,460 - 01:46:54,120] shorter and shorter wavelengths which means that the
+- [01:46:54,120 - 01:46:55,680] higher and higher momentum, or
+- [01:46:55,680 - 01:46:57,240] higher and higher energy particles.
+- [01:46:57,240 - 01:46:58,240] Is there a theoretical limit?
+- [01:46:58,240 - 01:47:00,440] Is there a limit to shorter and shorter wavelengths?
+- [01:47:00,440 - 01:47:04,200] Yeah, we think there is.
+- [01:47:04,200 - 01:47:07,320] Well, yes or no.
+- [01:47:07,320 - 01:47:09,080] Yes, in some sense — yes.
+- [01:47:09,080 - 01:47:10,080] We think.
+- [01:47:10,080 - 01:47:13,740] the Planck length, something new begins to happen.
+- [01:47:13,740 - 01:47:16,370] And we can talk about that at some point
+- [01:47:16,370 - 01:47:19,000] in these lectures, where it may bottom out, but
+- [01:47:19,000 - 01:47:23,160] we're very far from the place where it bottoms out.
+- [01:47:23,160 - 01:47:25,420] If it bottoms out, it probably bottoms out
+- [01:47:25,420 - 01:47:27,680] at the Planck length, which is, you know,
+- [01:47:27,680 - 01:47:31,300] 17 orders of magnitude smaller scale than
+- [01:47:31,300 - 01:47:34,920] what we're trying to see at the LHC.
+- [01:47:34,920 - 01:47:36,840] So we've got a long ways to go.
+- [01:47:36,840 - 01:47:38,500] A very long ways to go,
+- [01:47:38,500 - 01:47:40,160] even if it does bottom out.
+- [01:47:40,160 - 01:47:44,020] All right, those are the basic facts that
+- [01:47:44,020 - 01:47:47,880] I wanted to get out in front of you.
+- [01:47:47,880 - 01:47:50,500] They sort of determine largely how particle
+- [01:47:50,500 - 01:47:53,120] physics has progressed, and as I said, it
+- [01:47:53,120 - 01:47:55,920] has progressed by going at every stage
+- [01:47:55,920 - 01:47:58,720] to shorter and shorter wavelengths, larger and
+- [01:47:58,720 - 01:48:02,680] larger momentum and energy, and smaller and smaller objects.
+- [01:48:02,680 - 01:48:03,680] Question.
+- [01:48:03,680 - 01:48:06,680] Would there be any heuristic?
+- [01:48:06,680 - 01:48:10,560] Saying that the wavelength or the size of
+- [01:48:10,560 - 01:48:14,440] the particle you want to look at is inversely
+- [01:48:14,440 - 01:48:17,440] related to the size of the cyclopron you're building.
+- [01:48:17,440 - 01:48:20,940] I realize it's a ridiculous ratio, but is
+- [01:48:20,940 - 01:48:24,440] that sort of, you know, one mile per...
+- [01:48:24,440 - 01:48:27,040] Roughly speaking, yes, that's correct.
+- [01:48:27,040 - 01:48:29,640] Roughly speaking, that's right.
+- [01:48:29,640 - 01:48:33,090] If you have a given capacity to
+- [01:48:33,090 - 01:48:36,540] accelerate, now what determines your capacity to accelerate?
+- [01:48:36,540 - 01:48:38,700] The size of the electric and
+- [01:48:38,700 - 01:48:40,860] the magnetic fields that you can create.
+- [01:48:40,860 - 01:48:43,240] So let's suppose you take the largest fields that
+- [01:48:43,240 - 01:48:45,620] you can create in a magnet made of steel
+- [01:48:45,620 - 01:48:51,720] this big, and that determines your ability to accelerate.
+- [01:48:51,720 - 01:48:55,010] Ability to accelerate means the energy that
+- [01:48:55,010 - 01:48:58,300] you can pump into something per meter.
+- [01:48:58,300 - 01:49:00,120] Given a meter of accelerator, how
+- [01:49:00,120 - 01:49:01,940] much energy can you pump in?
+- [01:49:01,940 - 01:49:04,120] All right, so to double the amount of energy
+- [01:49:04,120 - 01:49:06,300] that slack produces, it would have to be twice
+- [01:49:06,300 - 01:49:07,300] as long.
+- [01:49:07,300 - 01:49:08,300] Or round.
+- [01:49:08,300 - 01:49:11,300] Or round, but that's right.
+- [01:49:11,300 - 01:49:14,300] But round gives you another problem.
+- [01:49:14,300 - 01:49:16,800] The problem that round gives you is that
+- [01:49:16,800 - 01:49:19,300] when particles move in circular orbits, they radiate.
+- [01:49:19,300 - 01:49:21,080] And when they radiate, they lose energy.
+- [01:49:21,080 - 01:49:23,300] So let's take the case of a linear accelerator.
+- [01:49:23,300 - 01:49:26,080] The longer the linear accelerator is, the higher
+- [01:49:26,080 - 01:49:28,860] the energy that you can pump the particles
+- [01:49:28,860 - 01:49:29,860] to.
+- [01:49:29,860 - 01:49:30,240] And pretty much linearly proportional
+- [01:49:30,240 - 01:49:30,620] to the size of the accelerator.
+- [01:49:30,620 - 01:49:35,620] And it's going to get half the double the resistance.
+- [01:49:35,620 - 01:49:36,620] Double the resolution?
+- [01:49:36,620 - 01:49:37,620] Yeah.
+- [01:49:37,620 - 01:49:42,620] So basically, resolution times size is the constant.
+- [01:49:42,620 - 01:49:43,620] Rough?
+- [01:49:43,620 - 01:49:44,620] Yeah.
+- [01:49:44,620 - 01:49:45,620] Yeah.
+- [01:49:45,620 - 01:49:47,620] So if you wanted to get to this Planck
+- [01:49:47,620 - 01:49:49,620] length, how big an accelerator would you have to have?
+- [01:49:49,620 - 01:49:53,120] Well, as I said, 17 orders
+- [01:49:53,120 - 01:49:56,620] of magnitude longer than the CERN accelerator.
+- [01:49:56,620 - 01:49:57,620] No universe?
+- [01:49:57,620 - 01:50:00,620] No, I think it's more like the galaxy.
+- [01:50:00,620 - 01:50:01,620] Oh.
+- [01:50:01,620 - 01:50:03,620] It's the ring engineer.
+- [01:50:03,620 - 01:50:04,620] Yeah.
+- [01:50:04,620 - 01:50:06,620] I call it the Gdankotron.
+- [01:50:06,620 - 01:50:07,620] Right.
+- [01:50:07,620 - 01:50:08,620] Right.
+- [01:50:08,620 - 01:50:09,620] Yeah.
+- [01:50:09,620 - 01:50:14,120] How high are the energies of cosmic
+- [01:50:14,120 - 01:50:18,620] ray compared to cosmic ray in the IFC?
+- [01:50:18,620 - 01:50:19,620] Higher.
+- [01:50:19,620 - 01:50:21,620] I mean, the highest cosmic ray energies are
+- [01:50:21,620 - 01:50:23,620] 10 to the 21 electron volts or something like
+- [01:50:23,620 - 01:50:28,620] that, which is 21 minus 9 is what?
+- [01:50:28,620 - 01:50:29,620] Quick.
+- [01:50:29,620 - 01:50:30,620] 21 minus 9.
+- [01:50:32,620 - 01:50:36,120] 12 GeV, whereas the accelerator in,
+- [01:50:36,120 - 01:50:39,620] well, no, it actually doesn't work.
+- [01:50:39,620 - 01:50:42,620] The highest energy cosmic rays
+- [01:50:42,620 - 01:50:45,620] are 10 to the 12 GeV.
+- [01:50:45,620 - 01:50:48,620] But the problem is, you see, the problem
+- [01:50:48,620 - 01:50:51,620] is cosmic rays, they may have this huge energy,
+- [01:50:51,620 - 01:50:54,620] but they hit stationary targets.
+- [01:50:54,620 - 01:50:57,620] Whereas in the accelerated CERN,
+- [01:50:57,620 - 01:51:00,620] they're going to be colliding targets.
+- [01:51:00,620 - 01:51:02,620] And so you get more bang
+- [01:51:02,620 - 01:51:04,620] for your buck from the colliding particles.
+- [01:51:04,620 - 01:51:08,120] But still, still, cosmic rays have much
+- [01:51:08,120 - 01:51:11,620] more energy than, effective energy than the accelerators.
+- [01:51:11,620 - 01:51:14,120] The problem with them is in order to really
+- [01:51:14,120 - 01:51:16,620] do good experiments, you have to have a huge
+- [01:51:16,620 - 01:51:19,620] flux of particles.
+- [01:51:19,620 - 01:51:22,620] You can't do an experiment with one high energy particle.
+- [01:51:22,620 - 01:51:26,120] It will probably miss your target or it probably
+- [01:51:26,120 - 01:51:29,620] won't be a good dead on, head on collision.
+- [01:51:29,620 - 01:51:31,620] You don't learn anything from that.
+- [01:51:31,620 - 01:51:33,620] You learn very little from that.
+- [01:51:33,620 - 01:51:37,620] So what you want is enough flux of particles
+- [01:51:37,620 - 01:51:41,620] so that you have a good chance of having a
+- [01:51:41,620 - 01:51:43,620] significant number of head on collisions.
+- [01:51:43,620 - 01:51:45,620] That takes a lot of
+- [01:51:45,620 - 01:51:47,620] particles when the targets are small.
+- [01:51:47,620 - 01:51:49,120] So I told you how big
+- [01:51:49,120 - 01:51:50,620] an accelerator you would have to make.
+- [01:51:50,620 - 01:51:53,620] Now I would tell you how many particles
+- [01:51:53,620 - 01:51:56,620] have to collide in order to see something interesting.
+- [01:51:56,620 - 01:51:57,620] And I once worked out how much energy
+- [01:51:57,620 - 01:51:58,620] you would have to make to see something interesting.
+- [01:51:58,620 - 01:52:00,120] So you would have to be able to see
+- [01:52:00,120 - 01:52:01,620] how much energy it would take to fuel this accelerator
+- [01:52:01,620 - 01:52:03,620] in order that you could do
+- [01:52:03,620 - 01:52:05,620] experiments in a reasonable amount of time.
+- [01:52:05,620 - 01:52:08,620] And then I got something like a
+- [01:52:08,620 - 01:52:11,620] hundred trillion barrels of oil a second.
+- [01:52:11,620 - 01:52:15,620] So you would need the accelerator as
+- [01:52:15,620 - 01:52:19,620] big as the galaxy being fueled by something.
+- [01:52:19,620 - 01:52:22,620] I think it was a hundred
+- [01:52:22,620 - 01:52:25,620] trillion barrels of oil a second.
+- [01:52:25,620 - 01:52:27,120] And it's going to be
+- [01:52:27,120 - 01:52:28,620] a while till we do experiments.
+- [01:52:28,620 - 01:52:33,559] experiments like that.
+- [01:52:33,559 - 01:52:35,720] But these are real distance scales.
+- [01:52:35,720 - 01:52:40,260] They really do come into physics.
+- [01:52:40,260 - 01:52:43,040] The puzzle and the question is how to probe
+- [01:52:43,040 - 01:52:45,820] them, how to get at them without being able
+- [01:52:45,820 - 01:52:50,600] to spend 100 billion barrels of
+- [01:52:50,600 - 01:52:55,380] oil and build a galactic-sized accelerator.
+- [01:52:55,380 - 01:52:58,850] So what is the GEV
+- [01:52:58,850 - 01:53:02,320] energy level hopeful from the LHT?
+- [01:53:02,320 - 01:53:04,140] Is it hopeful in what sense?
+- [01:53:04,140 - 01:53:06,140] In what sense would you ask is it hopeful?
+- [01:53:06,140 - 01:53:08,320] Compared to this 10 to the
+- [01:53:08,320 - 01:53:10,500] 12 GEV we get from it.
+- [01:53:10,500 - 01:53:15,730] It's not comparable to the 10
+- [01:53:15,730 - 01:53:20,960] to the 12 GEV from, no.
+- [01:53:20,960 - 01:53:25,380] When you have a particle hitting a stationary target.
+- [01:53:25,380 - 01:53:26,590] Take that 10 to the
+- [01:53:26,590 - 01:53:27,800] 12 and take its square root.
+- [01:53:27,800 - 01:53:29,480] It's 10 to the sixth.
+- [01:53:29,480 - 01:53:32,820] It's like having 10 to the sixth
+- [01:53:32,820 - 01:53:36,160] GEV in colliding particles, each one colliding.
+- [01:53:36,160 - 01:53:38,490] So if you have two particles colliding, each one
+- [01:53:38,490 - 01:53:40,820] with 10 to the sixth GEV, it's like having
+- [01:53:40,820 - 01:53:42,690] one particle with 10 to
+- [01:53:42,690 - 01:53:44,560] the 12th hitting a stationary particle.
+- [01:53:44,560 - 01:53:47,320] Now 10 to the sixth, that's a million GEV.
+- [01:53:47,320 - 01:53:49,240] That's a thousand TEV.
+- [01:53:49,240 - 01:53:51,840] So we're still very low compared
+- [01:53:51,840 - 01:53:54,440] to what cosmic rays can do.
+- [01:53:54,440 - 01:53:55,380] Okay.
+- [01:53:55,380 - 01:53:56,830] But if you have a
+- [01:53:56,830 - 01:53:58,280] handful of cosmic rays coming in,
+- [01:53:58,280 - 01:53:59,940] the chances are that it's going
+- [01:53:59,940 - 01:54:01,600] to do an interesting collision, a negligible.
+- [01:54:05,600 - 01:54:08,880] For more, please visit us at stanford.edu.
