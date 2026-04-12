@@ -1,0 +1,2283 @@
+# Transcript
+
+Source: supplementary/particle_physics_2_standard_model/2010_winter/088 - Lecture 4 ｜ New Revolutions in Particle Physics： Standard Model [n88Qe-aAAYE].mkv
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:06,400 - 00:00:08,980] I'm going to do something now
+- [00:00:08,980 - 00:00:11,560] I've wanted to do for years.
+- [00:00:11,560 - 00:00:13,760] I've really wanted to do this.
+- [00:00:13,760 - 00:00:14,260] Okay.
+- [00:00:15,880 - 00:00:18,700] Ladies and gentlemen, people out in
+- [00:00:18,700 - 00:00:21,520] the audience viewing this from afar,
+- [00:00:21,520 - 00:00:23,320] we're now going to stop for a commercial break.
+- [00:00:23,320 - 00:00:28,400] I want you all to go out and
+- [00:00:28,400 - 00:00:32,140] buy my book, The Black Hole War.
+- [00:00:33,460 - 00:00:35,180] My battle with Stephen Hawking to
+- [00:00:35,180 - 00:00:36,900] make the world safe for quantum mechanics.
+- [00:00:36,900 - 00:00:39,530] In that book, you will learn
+- [00:00:39,530 - 00:00:42,160] about the cruelty of theoretical physicists.
+- [00:00:42,160 - 00:00:46,220] You will not only learn about Schrodinger's cat,
+- [00:00:47,280 - 00:00:49,520] but you will learn about Susskind's fish
+- [00:00:49,520 - 00:00:51,760] and how he flushed them down the toilet.
+- [00:00:51,760 - 00:00:57,340] Audience, please.
+- [00:00:57,340 - 00:00:58,400] Yeah, I'm sorry.
+- [00:00:58,400 - 00:00:58,900] Come on.
+- [00:00:58,900 - 00:01:04,599] All right, now back to our program.
+- [00:01:04,599 - 00:01:07,309] You may remember that when
+- [00:01:07,309 - 00:01:10,020] we last saw Alice and Bob,
+- [00:01:10,020 - 00:01:13,800] Alice was crying bitterly because the cruel
+- [00:01:13,800 - 00:01:17,580] Bob was forcing her to learn group theory.
+- [00:01:17,580 - 00:01:24,680] Alice, sad to say, is not finished.
+- [00:01:24,680 - 00:01:26,380] Bob is not finished with her.
+- [00:01:26,380 - 00:01:27,620] All right.
+- [00:01:27,620 - 00:01:28,360] All right.
+- [00:01:28,360 - 00:01:28,860] All right.
+- [00:01:28,860 - 00:01:29,360] Tonight.
+- [00:01:32,280 - 00:01:35,960] Tonight, we will see Alice suffer more.
+- [00:01:38,960 - 00:01:43,200] Okay, are there any questions about group theory for
+- [00:01:43,200 - 00:01:47,440] the moment that now that we're back to the story,
+- [00:01:47,440 - 00:01:50,680] main storyline, any questions about group theory?
+- [00:01:52,340 - 00:01:53,720] We're not finished with it.
+- [00:01:53,720 - 00:01:54,880] We're really not finished with it.
+- [00:01:57,020 - 00:01:57,520] Yeah.
+- [00:01:58,360 - 00:02:03,140] There's two parts of your exposé on groups.
+- [00:02:03,140 - 00:02:05,080] It seems to be some kind of abstract
+- [00:02:05,080 - 00:02:07,020] mathematical object that has some kind of multiplication
+- [00:02:07,020 - 00:02:08,360] table.
+- [00:02:08,360 - 00:02:10,610] And there's also the part on
+- [00:02:10,610 - 00:02:12,860] how those groups act on various objects.
+- [00:02:12,860 - 00:02:17,240] Can we dissociate the two, or is it...
+- [00:02:17,240 - 00:02:20,780] Well, they're completely related.
+- [00:02:20,780 - 00:02:23,840] There's the abstract notion.
+- [00:02:23,840 - 00:02:28,800] Let's take the case of rotation of a spin.
+- [00:02:28,800 - 00:02:31,380] There's a perfect case to study.
+- [00:02:31,380 - 00:02:33,950] There's the abstract, completely abstract
+- [00:02:33,950 - 00:02:36,520] notion of a rotation in space.
+- [00:02:36,520 - 00:02:38,020] And I don't tell you what it acts on.
+- [00:02:38,020 - 00:02:40,310] I just tell you that is
+- [00:02:40,310 - 00:02:42,600] an operation that you can do.
+- [00:02:42,600 - 00:02:46,860] Physics has to respect symmetry
+- [00:02:46,860 - 00:02:51,120] under the rotations of space.
+- [00:02:51,120 - 00:02:53,720] And so we must then say,
+- [00:02:53,720 - 00:02:59,290] how does the rotation of space act
+- [00:02:59,290 - 00:03:04,860] on the quantities which are physically relevant?
+- [00:03:04,860 - 00:03:08,170] If we were talking about classical physics, we
+- [00:03:08,170 - 00:03:11,480] might just say that the rotation of space
+- [00:03:11,480 - 00:03:13,940] rotates the coordinates of a particle.
+- [00:03:13,940 - 00:03:16,259] It might rotate the direction
+- [00:03:16,259 - 00:03:18,579] of a magnet, whatever it does.
+- [00:03:18,579 - 00:03:19,860] We know how to describe that.
+- [00:03:19,860 - 00:03:21,520] We describe that by...
+- [00:03:21,520 - 00:03:22,640] We know how to describe that.
+- [00:03:22,640 - 00:03:23,640] Okay.
+- [00:03:23,720 - 00:03:27,660] In quantum mechanics, the states of a system
+- [00:03:27,660 - 00:03:31,600] are always represented by a linear vector space.
+- [00:03:31,600 - 00:03:34,400] There's the abstract notion of a state of a system,
+- [00:03:34,400 - 00:03:37,250] and there's the concrete representation of
+- [00:03:37,250 - 00:03:40,100] it in terms of column vectors.
+- [00:03:40,100 - 00:03:42,020] How big are those column vectors?
+- [00:03:42,020 - 00:03:45,220] What's the number of entries into the column vector?
+- [00:03:45,220 - 00:03:47,160] Well, that depends on the system.
+- [00:03:47,160 - 00:03:50,040] But basically, it's the number of
+- [00:03:50,040 - 00:03:52,920] mutually orthogonal possibilities for that system.
+- [00:03:52,920 - 00:03:53,720] Okay.
+- [00:03:53,720 - 00:03:56,330] If the system in question
+- [00:03:56,330 - 00:03:58,940] only consists of an electron spin,
+- [00:03:58,940 - 00:04:01,650] then there's only two states, two
+- [00:04:01,650 - 00:04:04,360] mutually orthogonal states, spin up, spin down.
+- [00:04:04,360 - 00:04:06,140] If it's two electrons, and again,
+- [00:04:06,140 - 00:04:07,920] we're only interested in the spin,
+- [00:04:07,920 - 00:04:11,200] then there would be four states, two up, two
+- [00:04:11,200 - 00:04:14,480] down, one up, one down, one down, one up.
+- [00:04:14,480 - 00:04:17,999] If we're talking about a more complex object,
+- [00:04:17,999 - 00:04:21,519] for example, the entire motion of an electron,
+- [00:04:21,519 - 00:04:22,539] its position, as well as its
+- [00:04:22,539 - 00:04:23,560] momentum, it's a very complex object.
+- [00:04:23,560 - 00:04:24,780] It's a very complex object.
+- [00:04:24,780 - 00:04:27,020] It's a very complex object.
+- [00:04:27,020 - 00:04:29,440] And if you're talking about a more complex object,
+- [00:04:29,440 - 00:04:30,720] then you have to think about the
+- [00:04:30,720 - 00:04:32,000] number of states that are in it.
+- [00:04:32,000 - 00:04:34,000] And if you're talking about an electron,
+- [00:04:34,000 - 00:04:35,940] then there are an infinite number of states.
+- [00:04:35,940 - 00:04:37,480] The number of states that it
+- [00:04:37,480 - 00:04:39,020] takes to describe the orbital locat—
+- [00:04:39,020 - 00:04:43,640] the number of mutually orthogonal states of an electron,
+- [00:04:43,640 - 00:04:46,260] speaking now about its position, is infinite.
+- [00:04:46,260 - 00:04:48,220] It could be anywhere in space,
+- [00:04:48,220 - 00:04:49,890] or you could choose to
+- [00:04:49,890 - 00:04:51,560] describe it in terms of momentum.
+- [00:04:51,560 - 00:04:53,540] So the column vectors describing an electron's position
+- [00:04:53,560 - 00:04:57,080] are an amplitude for every possible
+- [00:04:57,080 - 00:05:00,600] location or for every possible momentum.
+- [00:05:00,600 - 00:05:04,940] So there must be representations of the rotation group,
+- [00:05:04,940 - 00:05:07,130] of this group of
+- [00:05:07,130 - 00:05:09,320] rotations, which are infinite-dimensional matrices.
+- [00:05:09,320 - 00:05:10,540] And they are.
+- [00:05:10,540 - 00:05:11,540] They are.
+- [00:05:11,540 - 00:05:13,710] Just how—what are the matrices
+- [00:05:13,710 - 00:05:15,880] which act on the column vectors
+- [00:05:15,880 - 00:05:19,080] which describe the system that you're interested in?
+- [00:05:19,080 - 00:05:21,210] The size of those matrices will depend
+- [00:05:21,210 - 00:05:23,340] on the number of mutually orthogonal states.
+- [00:05:23,560 - 00:05:26,740] All right. So let's come back.
+- [00:05:26,740 - 00:05:27,940] Spin of the electron—throw away
+- [00:05:27,940 - 00:05:29,140] everything else out of your head.
+- [00:05:29,140 - 00:05:32,840] Spin of the electron, 2x2 matrices.
+- [00:05:32,840 - 00:05:36,620] The group elements are the abstract rotations.
+- [00:05:36,620 - 00:05:40,580] They're represented by 2x2 matrices.
+- [00:05:40,580 - 00:05:42,220] A spin-1 particle.
+- [00:05:42,220 - 00:05:48,760] A spin-1 particle has three mutually orthogonal states.
+- [00:05:48,760 - 00:05:52,220] The rotations are represented by 3x3 matrices.
+- [00:05:52,220 - 00:05:53,540] In that case—
+- [00:05:53,560 - 00:05:57,860] Those 3x3 matrices are familiar to some of you.
+- [00:05:57,860 - 00:06:00,490] They are the three-dimensional matrices which
+- [00:06:00,490 - 00:06:03,120] mix up the components of three vectors.
+- [00:06:03,120 - 00:06:06,520] What comes after spin...
+- [00:06:06,520 - 00:06:09,420] after three halves?
+- [00:06:09,420 - 00:06:11,960] Alright, one half, well first
+- [00:06:11,960 - 00:06:14,500] spin zero. What about spin zero?
+- [00:06:14,500 - 00:06:17,580] Spin zero, rotations don't act on
+- [00:06:17,580 - 00:06:20,660] it all. They just leave it alone.
+- [00:06:20,660 - 00:06:23,400] So it's completely trivial.
+- [00:06:23,400 - 00:06:29,520] You can think of it in some very useless sense that
+- [00:06:29,520 - 00:06:35,640] rotations act on a spin zero just to leave it alone.
+- [00:06:35,640 - 00:06:39,099] Okay, that corresponds to one by one matrices.
+- [00:06:39,099 - 00:06:40,999] Just the unit matrix, that's all.
+- [00:06:40,999 - 00:06:42,900] Just the unit matrix, there's nothing.
+- [00:06:42,900 - 00:06:45,640] Two by two, that's spin a half.
+- [00:06:45,640 - 00:06:47,799] Three by three, that's spin one.
+- [00:06:47,799 - 00:06:51,560] Four by four, that's spin three halves, and so forth.
+- [00:06:51,560 - 00:06:53,359] So the same abstract...
+- [00:06:53,360 - 00:06:58,920] group element, the same abstract symmetry operation...
+- [00:06:58,920 - 00:07:01,970] may have many matrix
+- [00:07:01,970 - 00:07:05,020] representations of different dimensionality.
+- [00:07:05,020 - 00:07:09,460] That's an important fact.
+- [00:07:09,460 - 00:07:13,400] And we're gonna spend a little more time on it.
+- [00:07:13,400 - 00:07:18,200] But let's just review for a moment what the...
+- [00:07:18,200 - 00:07:20,450] symmetries... we talked about the
+- [00:07:20,450 - 00:07:22,700] symmetries of rotation of space...
+- [00:07:22,700 - 00:07:26,480] on a spin, on a spin a half
+- [00:07:26,480 - 00:07:30,260] particle, in particular on a spin a half particle.
+- [00:07:30,260 - 00:07:34,600] And we said those rotation operations become
+- [00:07:34,600 - 00:07:38,940] represented by matrices which I called U.
+- [00:07:38,940 - 00:07:42,659] U because they're unitary.
+- [00:07:42,659 - 00:07:45,560] So these are two by two unitary matrices.
+- [00:07:45,560 - 00:07:47,650] I won't bother being more
+- [00:07:47,650 - 00:07:49,740] specific than just putting dots there.
+- [00:07:49,740 - 00:07:52,560] Those two by two unitary matrices act on...
+- [00:07:52,700 - 00:07:56,840] the state vectors...
+- [00:07:56,840 - 00:07:58,800] of a spin a half.
+- [00:07:58,800 - 00:08:01,640] Again, I won't be more specific than writing that.
+- [00:08:01,640 - 00:08:07,760] Let's erase it for the moment.
+- [00:08:07,760 - 00:08:12,060] And this is called a representation of the group.
+- [00:08:12,060 - 00:08:14,630] It's in one-to-one correspondence with the
+- [00:08:14,630 - 00:08:17,200] group elements, matrix multiplication, group multiplication.
+- [00:08:17,200 - 00:08:19,500] They're in one-to-one correspondence.
+- [00:08:19,500 - 00:08:21,539] Let's just flesh it out.
+- [00:08:21,539 - 00:08:22,539] What does it mean for matrix multiplication?
+- [00:08:22,540 - 00:08:26,680] It means that it's inverse is its Hermitian conjugate.
+- [00:08:26,680 - 00:08:28,740] It means that it's inverse is its Hermitian conjugate.
+- [00:08:28,740 - 00:08:33,840] It means that it's inverse is its Hermitian conjugate.
+- [00:08:33,840 - 00:08:37,610] But we know that the number of
+- [00:08:37,610 - 00:08:41,380] degrees of freedom, the number of parameters,
+- [00:08:41,380 - 00:08:45,640] in a unitary two by two matrix is how many?
+- [00:08:45,640 - 00:08:47,740] How many did we say there were?
+- [00:08:47,740 - 00:08:48,980] Eight to begin with.
+- [00:08:48,980 - 00:08:50,640] Four elements, each complex.
+- [00:08:50,640 - 00:08:51,640] That's four elements.
+- [00:08:51,640 - 00:08:52,440] That's four elements.
+- [00:08:52,440 - 00:08:54,040] Four elements.
+- [00:08:54,040 - 00:08:56,240] This is four equations.
+- [00:08:56,240 - 00:08:59,240] That cuts you down to four.
+- [00:08:59,240 - 00:09:01,990] But there are only three independent parameters,
+- [00:09:01,990 - 00:09:04,740] the three Euler angles, if you like,
+- [00:09:04,740 - 00:09:06,960] the three angles describing a rotation,
+- [00:09:06,960 - 00:09:09,180] the three things describing a rotation,
+- [00:09:09,180 - 00:09:11,980] namely the rotation angle and the two
+- [00:09:11,980 - 00:09:14,780] parameters which determine the direction of the rotation.
+- [00:09:14,780 - 00:09:16,430] So there are only three
+- [00:09:16,430 - 00:09:18,080] independent parameters of a rotation.
+- [00:09:18,080 - 00:09:21,180] These matrices have one too many parameters.
+- [00:09:21,180 - 00:09:21,730] And to get rid of that one too many parameters,
+- [00:09:21,730 - 00:09:22,280] you have to get rid of the three independent parameters.
+- [00:09:22,280 - 00:09:26,179] There's one extra parameter, one more
+- [00:09:26,179 - 00:09:30,079] condition, and that's the determinant of U.
+- [00:09:30,079 - 00:09:31,040] I'll just represent that.
+- [00:09:31,040 - 00:09:32,280] We could write it as debt.
+- [00:09:32,280 - 00:09:35,939] But I'll just write it as absolute value.
+- [00:09:35,939 - 00:09:37,480] But it's not really absolute value.
+- [00:09:37,480 - 00:09:40,020] It's a symbol for a determinant.
+- [00:09:40,020 - 00:09:43,040] But that is equal to one.
+- [00:09:43,040 - 00:09:46,929] Now a simple fact incidentally, that
+- [00:09:46,929 - 00:09:50,819] when you multiply matrices, the determinants multiply.
+- [00:09:50,819 - 00:09:51,420] So how can you multiply?
+- [00:09:51,420 - 00:09:51,819] You multiply them.
+- [00:09:51,819 - 00:09:51,880] You multiply them.
+- [00:09:51,880 - 00:09:56,730] The determinant of the product of A and B
+- [00:09:56,730 - 00:10:01,580] is the determinant of A times the determinant of B.
+- [00:10:02,939 - 00:10:06,309] It is also true that the determinant
+- [00:10:06,309 - 00:10:09,680] of a Hermitian conjugate of an operator
+- [00:10:09,680 - 00:10:12,160] is the complex conjugate of
+- [00:10:12,160 - 00:10:14,640] the determinant of the original operator.
+- [00:10:15,600 - 00:10:17,940] So, here's what we can say. Let's
+- [00:10:17,940 - 00:10:20,280] take the determinant of both sides of this.
+- [00:10:20,280 - 00:10:23,450] The determinant of both sides of this is,
+- [00:10:23,450 - 00:10:26,620] first of all, the determinant of U dagger U,
+- [00:10:27,220 - 00:10:30,940] but that's also equal to the determinant
+- [00:10:30,940 - 00:10:34,660] of U dagger times the determinant of U.
+- [00:10:36,199 - 00:10:37,800] And what's the determinant of 1?
+- [00:10:39,040 - 00:10:42,360] 1 is equal to 1.
+- [00:10:44,620 - 00:10:46,779] 1 here, of course, means the
+- [00:10:46,779 - 00:10:48,939] unit matrix, all 1s on the diagonal.
+- [00:10:48,939 - 00:10:50,260] All right, now.
+- [00:10:50,280 - 00:10:53,080] Next thing is the determinant of
+- [00:10:53,080 - 00:10:55,880] U dagger is just the determinant of...
+- [00:11:02,220 - 00:11:04,880] Well, is the determinant of...
+- [00:11:05,920 - 00:11:08,640] is the complex conjugate of the determinant of U.
+- [00:11:10,000 - 00:11:11,240] And...
+- [00:11:13,079 - 00:11:15,909] If the determinant of U is 1, the determinant of
+- [00:11:15,909 - 00:11:18,740] U dagger is 1, and the whole thing is consistent.
+- [00:11:18,740 - 00:11:20,260] The only point is that it is consistent.
+- [00:11:20,280 - 00:11:24,319] It's a consistent condition on U's that's...
+- [00:11:24,319 - 00:11:27,499] When I say consistent, I mean that
+- [00:11:27,499 - 00:11:30,680] it's consistent with the law of matrix multiplication.
+- [00:11:30,680 - 00:11:31,680] All right?
+- [00:11:31,680 - 00:11:34,480] If you take a bunch of unitary
+- [00:11:34,480 - 00:11:37,280] matrices, every one of which has determinant 1,
+- [00:11:37,280 - 00:11:39,380] and you multiply them together, you'll
+- [00:11:39,380 - 00:11:41,480] again get a thing with determinant 1.
+- [00:11:41,480 - 00:11:44,520] All right, so it's a mathematical theorem, which
+- [00:11:44,520 - 00:11:47,560] may not be too surprising for many of you,
+- [00:11:47,560 - 00:11:50,120] that the special unitary matrix...
+- [00:11:50,120 - 00:11:53,260] matrices, 2 by 2 matrices, which have 3 parameters
+- [00:11:53,260 - 00:11:56,400] in them, special means that U dagger U equals 1,
+- [00:11:56,400 - 00:11:59,230] that the group of those matrices
+- [00:11:59,230 - 00:12:02,060] is identical to the group of...
+- [00:12:02,060 - 00:12:06,260] of rotations in 3-dimensional space.
+- [00:12:06,260 - 00:12:09,060] Now, it's not quite true.
+- [00:12:09,060 - 00:12:10,060] Go ahead.
+- [00:12:10,060 - 00:12:12,380] Uh, is there...
+- [00:12:12,380 - 00:12:14,670] Is there nothing that says that
+- [00:12:14,670 - 00:12:16,960] the determinant has to be real?
+- [00:12:16,960 - 00:12:18,960] No, the determinant of a...
+- [00:12:18,960 - 00:12:22,820] It just has to be radius 1.
+- [00:12:22,820 - 00:12:23,820] Yeah.
+- [00:12:23,820 - 00:12:24,820] Complex number...
+- [00:12:24,820 - 00:12:25,820] Right.
+- [00:12:25,820 - 00:12:27,010] The determinant of a unitary
+- [00:12:27,010 - 00:12:28,200] matrix must be a pure phase.
+- [00:12:28,200 - 00:12:29,200] Okay?
+- [00:12:29,200 - 00:12:31,200] That's just from the fact that it's unitary.
+- [00:12:31,200 - 00:12:32,200] Okay?
+- [00:12:32,200 - 00:12:35,780] From the fact that it's unitary.
+- [00:12:35,780 - 00:12:37,080] But you can take any...
+- [00:12:37,080 - 00:12:38,080] All right, here's the point.
+- [00:12:38,080 - 00:12:40,900] You can take any unitary matrix.
+- [00:12:40,900 - 00:12:46,100] Let's suppose its determinant is E to the i theta.
+- [00:12:46,100 - 00:12:47,240] You can then multiply that unitary matrix.
+- [00:12:47,240 - 00:12:48,240] All right.
+- [00:12:48,240 - 00:12:48,280] All right.
+- [00:12:48,280 - 00:12:48,360] All right.
+- [00:12:48,360 - 00:12:48,440] All right.
+- [00:12:48,440 - 00:12:48,540] All right.
+- [00:12:48,540 - 00:12:48,600] All right.
+- [00:12:48,600 - 00:12:48,660] All right.
+- [00:12:48,660 - 00:12:48,680] All right.
+- [00:12:48,680 - 00:12:48,740] All right.
+- [00:12:48,740 - 00:12:48,760] All right.
+- [00:12:48,760 - 00:12:48,840] All right.
+- [00:12:48,840 - 00:12:48,860] All right.
+- [00:12:48,860 - 00:12:48,940] All right.
+- [00:12:48,960 - 00:12:49,120] All right.
+- [00:12:49,120 - 00:12:49,160] All right.
+- [00:12:49,160 - 00:12:51,780] An put in this unitary matrix by...
+- [00:12:51,780 - 00:12:52,840] Um...
+- [00:12:52,840 - 00:12:56,880] Well you'd multiply it by...
+- [00:12:56,880 - 00:13:00,140] Because when you calculate the determinant, you multiply two
+- [00:13:00,140 - 00:13:01,560] elements together.
+- [00:13:01,560 - 00:13:02,100] All right.
+- [00:13:02,100 - 00:13:07,660] So if you took you and multiplied it...
+- [00:13:07,660 - 00:13:09,530] By E to the minus i theta
+- [00:13:09,530 - 00:13:11,400] over 2, you would construct a special
+- [00:13:11,400 - 00:13:12,060] unitary matrix.
+- [00:13:12,060 - 00:13:13,040] All right.
+- [00:13:13,040 - 00:13:15,820] So the point is, the extra
+- [00:13:15,820 - 00:13:18,600] phase that's in there is almost
+- [00:13:18,600 - 00:13:23,300] you can always get rid of it by
+- [00:13:23,300 - 00:13:28,000] a redefinition of U and in fact the
+- [00:13:28,000 - 00:13:30,900] rotation group doesn't contain this piece
+- [00:13:30,900 - 00:13:33,800] here it's just isomorphic to the
+- [00:13:33,800 - 00:13:37,710] matrices with with determinant one okay I told
+- [00:13:37,710 - 00:13:41,620] you a little fib when I said that
+- [00:13:41,620 - 00:13:44,180] SU is exactly the same as the
+- [00:13:44,180 - 00:13:46,740] rotation groups it's not exactly there's a
+- [00:13:46,740 - 00:13:50,160] two-to-one correspondence instead of
+- [00:13:50,160 - 00:13:53,580] a one-to-one correspondence the unitary
+- [00:13:53,580 - 00:13:57,500] operators U and minus U if U is
+- [00:13:57,500 - 00:14:01,420] a unitary operator U dagger U equals one
+- [00:14:01,420 - 00:14:05,500] so is minus U whatever U is
+- [00:14:05,500 - 00:14:09,580] right in fact is a two-to-one correspondence the
+- [00:14:09,580 - 00:14:12,440] matrices U and minus U both correspond
+- [00:14:12,440 - 00:14:15,300] to the same rotation in space but that's
+- [00:14:15,300 - 00:14:16,720] a fine point that that
+- [00:14:16,720 - 00:14:19,960] I which is not going to play any special
+- [00:14:19,960 - 00:14:23,200] role in in what we say at least for the
+- [00:14:23,200 - 00:14:28,500] time being so a simple statement which
+- [00:14:28,500 - 00:14:33,800] is almost true is that there's a
+- [00:14:33,800 - 00:14:35,760] correspondence certainly there's a
+- [00:14:35,760 - 00:14:37,720] correspondence but that there's a
+- [00:14:37,720 - 00:14:39,340] one-to-one correspondence not quite
+- [00:14:39,340 - 00:14:40,960] true it's two-to-one correspondence between
+- [00:14:40,960 - 00:14:43,620] the unitary matrices two by two
+- [00:14:43,620 - 00:14:46,280] matrices the special unitary matrices those would
+- [00:14:46,720 - 00:14:48,480] get here separately between two and
+- [00:14:48,480 - 00:14:50,240] two but holes simultaneously as we move
+- [00:14:50,240 - 00:14:51,840] along theoped eighty-nine-lerge and the nonunpsy 謝謝
+- [00:14:51,840 - 00:14:52,780] by- could be simply one so
+- [00:14:52,780 - 00:14:53,720] the means is it's aially just a
+- [00:14:53,720 - 00:14:54,580] one-to-one correspondence so there's a
+- [00:14:54,580 - 00:14:55,440] widefting between this and all the
+- [00:14:55,440 - 00:15:14,460] counters with our
+- [00:15:16,720 - 00:15:19,590] And the symmetry is represented by
+- [00:15:19,590 - 00:15:22,460] a set of matrices like this.
+- [00:15:22,460 - 00:15:25,680] Then there's a concept of the generators.
+- [00:15:25,680 - 00:15:27,700] The generators have to do
+- [00:15:27,700 - 00:15:29,720] with infinitesimal elements of the group.
+- [00:15:29,720 - 00:15:32,310] An infinitesimal element of the group means,
+- [00:15:32,310 - 00:15:34,900] in the case of rotation, a rotation about
+- [00:15:34,900 - 00:15:39,480] some axis by a very, very small angle.
+- [00:15:39,480 - 00:15:41,880] In other words, it's an element of
+- [00:15:41,880 - 00:15:44,280] the group which is very close to unity.
+- [00:15:44,280 - 00:15:46,300] Unity means no transformation.
+- [00:15:46,300 - 00:15:48,860] Elements which are very close, which are just
+- [00:15:48,860 - 00:15:51,420] very small shifts of angles and so forth,
+- [00:15:51,420 - 00:15:55,199] are called infinitesimal elements of the group.
+- [00:15:55,199 - 00:16:01,009] And the generators of the group are
+- [00:16:01,009 - 00:16:06,819] very closely related to these infinitesimally small operations.
+- [00:16:06,819 - 00:16:10,149] Now one of the reasons that the
+- [00:16:10,149 - 00:16:13,479] infinitely small elements are important and interesting
+- [00:16:13,479 - 00:16:16,240] is because you can build up any element out of
+- [00:16:16,240 - 00:16:16,260] a set of matrices.
+- [00:16:16,260 - 00:16:16,270] So you can build up any
+- [00:16:16,270 - 00:16:16,280] element out of a set of matrices.
+- [00:16:16,280 - 00:16:18,500] Now, let's look at the sequence of small ones.
+- [00:16:18,500 - 00:16:21,130] In other words, if I want to rotate about
+- [00:16:21,130 - 00:16:23,760] some angle by a finite rotation, I just think
+- [00:16:23,760 - 00:16:26,160] of it as a multiplication
+- [00:16:26,160 - 00:16:28,560] of a bunch of infinitesimal ones.
+- [00:16:28,560 - 00:16:31,870] So if you know the properties of the
+- [00:16:31,870 - 00:16:35,180] infinitesimal generators, you can put together the entire
+- [00:16:35,180 - 00:16:38,699] structure of the group.
+- [00:16:38,699 - 00:16:39,699] We're not going to do that.
+- [00:16:39,699 - 00:16:41,740] We're not going to study that today.
+- [00:16:41,740 - 00:16:43,990] But we are just going to
+- [00:16:43,990 - 00:16:46,240] define the generators of the group.
+- [00:16:46,240 - 00:16:48,160] The reason we're going to define the generators
+- [00:16:48,160 - 00:16:50,080] of the group is because they really are the
+- [00:16:50,080 - 00:16:51,900] conserved quantities.
+- [00:16:51,900 - 00:16:56,730] They are the quantities that are conserved
+- [00:16:56,730 - 00:17:01,560] and which play the role of conservation laws
+- [00:17:01,560 - 00:17:04,000] once you know what the symmetry group is.
+- [00:17:04,000 - 00:17:06,859] Okay, so let's define them.
+- [00:17:06,859 - 00:17:09,869] Incidentally, for what I've written here,
+- [00:17:09,869 - 00:17:12,880] there's nothing specific to SU .
+- [00:17:12,880 - 00:17:15,000] This could be SU .
+- [00:17:15,000 - 00:17:16,200] Where N is the denominator.
+- [00:17:16,200 - 00:17:18,800] The number of elements.
+- [00:17:18,800 - 00:17:23,099] The special unitary N by N matrices.
+- [00:17:23,099 - 00:17:26,720] They're of course not all isomorphic to rotations.
+- [00:17:26,720 - 00:17:28,940] It's only the SU group which
+- [00:17:28,940 - 00:17:31,160] is isomorphic to rotations of space.
+- [00:17:31,160 - 00:17:34,000] SU , SU , SU .
+- [00:17:34,000 - 00:17:35,820] Not so easy to visualize.
+- [00:17:35,820 - 00:17:41,320] Okay, so here we have the definition.
+- [00:17:41,320 - 00:17:43,260] And now let's take an element
+- [00:17:43,260 - 00:17:45,200] which is very close to the identity.
+- [00:17:45,200 - 00:17:46,200] It doesn't have to be SU .
+- [00:17:46,200 - 00:17:48,800] Let's write it.
+- [00:17:48,800 - 00:17:53,840] U is equal to the identity, 1, plus something small.
+- [00:17:53,840 - 00:17:58,860] And let's put an i in for simply notational simplicity.
+- [00:17:58,860 - 00:18:00,900] It'll simplify notations.
+- [00:18:00,900 - 00:18:04,670] A small parameter epsilon and a quantity which is
+- [00:18:04,670 - 00:18:08,440] often, I'm not going to call it g, g for
+- [00:18:08,440 - 00:18:12,720] generator because we've already used g for group element.
+- [00:18:12,720 - 00:18:15,200] And so therefore I will use t.
+- [00:18:15,200 - 00:18:15,840] Yt.
+- [00:18:15,840 - 00:18:18,840] Beats me, I don't know.
+- [00:18:18,840 - 00:18:22,840] So U is 1 plus it.
+- [00:18:22,840 - 00:18:23,840] What is t?
+- [00:18:23,840 - 00:18:26,340] Let's find out what we can learn about t.
+- [00:18:26,340 - 00:18:28,389] We use the fact, first of
+- [00:18:28,389 - 00:18:30,439] all, that U dagger U is 1.
+- [00:18:30,439 - 00:18:32,389] All right, so U dagger U,
+- [00:18:32,389 - 00:18:34,340] that's 1 plus i epsilon t.
+- [00:18:34,340 - 00:18:37,590] Oh, incidentally, it's easy to prove that if U
+- [00:18:37,590 - 00:18:40,840] dagger U is 1, then U U dagger is 1.
+- [00:18:40,840 - 00:18:42,340] I won't prove that for you.
+- [00:18:42,340 - 00:18:45,439] That U and U dagger always commute with each other.
+- [00:18:45,840 - 00:18:48,840] Not for all operators, but for unitaries.
+- [00:18:48,840 - 00:18:51,840] So it doesn't matter which order you multiply.
+- [00:18:51,840 - 00:18:55,840] All right, so it's 1 plus i epsilon
+- [00:18:55,840 - 00:18:59,840] t times 1 minus i epsilon t dagger.
+- [00:18:59,840 - 00:19:03,840] If this is U, then this is U dagger.
+- [00:19:03,840 - 00:19:07,840] i gets changed to minus i when you complex conjugate.
+- [00:19:07,840 - 00:19:09,840] And this is supposed to be equal to 1.
+- [00:19:09,840 - 00:19:14,840] Let's retain things only to the lowest order in epsilon.
+- [00:19:15,840 - 00:19:18,840] Epsilon squared is too small for our interest tonight,
+- [00:19:18,840 - 00:19:20,840] so let's just keep things to order epsilon.
+- [00:19:20,840 - 00:19:23,840] And that says 1 times 1 cancels the 1 there.
+- [00:19:23,840 - 00:19:26,840] And it says that i epsilon times
+- [00:19:26,840 - 00:19:29,840] t minus t dagger is equal to 0.
+- [00:19:29,840 - 00:19:32,840] Or, to simplify, it just says
+- [00:19:32,840 - 00:19:35,840] that t is equal to t dagger.
+- [00:19:35,840 - 00:19:38,840] What's an operator that's equal to its own conjugate?
+- [00:19:38,840 - 00:19:40,840] Hermitian.
+- [00:19:40,840 - 00:19:43,340] And Hermitian operators in
+- [00:19:43,340 - 00:19:45,840] quantum mechanics represent observables.
+- [00:19:45,840 - 00:19:47,840] All right?
+- [00:19:47,840 - 00:19:50,840] Hermitian operators represent observable quantities.
+- [00:19:50,840 - 00:19:59,840] For the case of rotations, what are these t's?
+- [00:19:59,840 - 00:20:02,840] What physical significance do they have?
+- [00:20:02,840 - 00:20:04,840] There are three of them.
+- [00:20:04,840 - 00:20:06,840] First of all, why are there three of them?
+- [00:20:06,840 - 00:20:09,840] There are actually an infinite number of them,
+- [00:20:09,840 - 00:20:12,840] but there are three linearly independent ones.
+- [00:20:12,840 - 00:20:14,840] So let me explain why that is.
+- [00:20:14,840 - 00:20:17,340] The reason is because the
+- [00:20:17,340 - 00:20:19,840] rotation group has only three parameters.
+- [00:20:19,840 - 00:20:24,840] There's only three independent ways that you can rotate.
+- [00:20:24,840 - 00:20:27,840] You can rotate about the x-axis.
+- [00:20:27,840 - 00:20:30,340] So I could have made
+- [00:20:30,340 - 00:20:32,840] an infinitesimal rotation about the x-axis.
+- [00:20:32,840 - 00:20:35,840] I could have made an infinitesimal
+- [00:20:35,840 - 00:20:38,840] rotation about the y-axis or the z-axis.
+- [00:20:38,840 - 00:20:41,840] And in fact, for an infinitesimal rotation,
+- [00:20:41,840 - 00:20:44,840] if I wanted to rotate about some other axis,
+- [00:20:44,840 - 00:20:46,340] what I could first do is
+- [00:20:46,340 - 00:20:47,840] rotate a little about the x-axis
+- [00:20:47,840 - 00:20:49,340] and then a little about the y-axis
+- [00:20:49,340 - 00:20:50,840] and then a little about the z-axis.
+- [00:20:50,840 - 00:20:53,340] Another way to say it is
+- [00:20:53,340 - 00:20:55,840] that the generators behave like vectors.
+- [00:20:55,840 - 00:20:58,840] If I want a vector in an arbitrary direction,
+- [00:20:58,840 - 00:21:02,840] in other words, a vector rotation about some axis,
+- [00:21:02,840 - 00:21:05,840] about an arbitrary direction,
+- [00:21:05,840 - 00:21:07,840] the way I can think of it
+- [00:21:07,840 - 00:21:09,840] is making it up out of the components,
+- [00:21:09,840 - 00:21:13,840] the component rotations about the x, y, and z-axis.
+- [00:21:13,840 - 00:21:16,840] So there are three independent
+- [00:21:16,840 - 00:21:19,840] directions that you can rotate in
+- [00:21:19,840 - 00:21:23,840] and three independent, linearly independent t's.
+- [00:21:23,840 - 00:21:25,840] Oh, we missed one point.
+- [00:21:25,840 - 00:21:28,840] Come back. Back up.
+- [00:21:28,840 - 00:21:31,840] There is this condition here.
+- [00:21:31,840 - 00:21:35,840] The condition that the determinant is one.
+- [00:21:35,840 - 00:21:37,840] All right, so let me tell you before...
+- [00:21:37,840 - 00:21:39,840] We'll get back to it in a moment.
+- [00:21:39,840 - 00:21:41,840] The determinant being one,
+- [00:21:41,840 - 00:21:42,840] the determinant...
+- [00:21:43,840 - 00:21:48,840] of any matrix which is of the form one plus,
+- [00:21:48,840 - 00:21:52,840] let's call it epsilon times a small matrix,
+- [00:21:52,840 - 00:21:58,840] the determinant of m...
+- [00:21:58,840 - 00:22:05,340] is equal to one plus epsilon
+- [00:22:05,340 - 00:22:11,840] times the trace of small m.
+- [00:22:11,840 - 00:22:13,840] The determinant...
+- [00:22:13,840 - 00:22:15,840] of a matrix...
+- [00:22:15,840 - 00:22:17,840] which is close to the identity...
+- [00:22:17,840 - 00:22:18,840] is one.
+- [00:22:18,840 - 00:22:19,840] That's just the identity.
+- [00:22:19,840 - 00:22:22,840] And then the small deviation is epsilon times the trace.
+- [00:22:22,840 - 00:22:23,840] That's something to prove.
+- [00:22:23,840 - 00:22:25,840] I'm going to go home and prove that.
+- [00:22:25,840 - 00:22:29,840] But we can see what that means immediately.
+- [00:22:29,840 - 00:22:35,840] It means that the trace of t...
+- [00:22:35,840 - 00:22:37,840] is zero.
+- [00:22:37,840 - 00:22:41,840] The trace of t has to be zero...
+- [00:22:41,840 - 00:22:42,840] in order for...
+- [00:22:42,840 - 00:22:46,840] the determinant of u to be equal to one.
+- [00:22:46,840 - 00:22:49,840] All right, so that's the second condition.
+- [00:22:49,840 - 00:22:52,840] The trace of t is zero.
+- [00:22:52,840 - 00:22:55,840] And it should be Hermitian.
+- [00:22:55,840 - 00:22:58,340] How many independent Hermitian 2x2 matrices
+- [00:22:58,340 - 00:23:00,840] are there with trace equal to zero?
+- [00:23:00,840 - 00:23:02,840] The answer is three of them.
+- [00:23:02,840 - 00:23:06,840] And they correspond to the rotations about the three axes.
+- [00:23:06,840 - 00:23:09,840] But more abstractly and generally,
+- [00:23:09,840 - 00:23:11,840] the generators of the group of rotations...
+- [00:23:12,840 - 00:23:16,840] are the angular momentum operators for a system.
+- [00:23:16,840 - 00:23:19,840] So that's what angular momentum means in quantum mechanics.
+- [00:23:19,840 - 00:23:24,840] It is the generators of the rotation group.
+- [00:23:24,840 - 00:23:26,840] And you act with the angular momentum,
+- [00:23:26,840 - 00:23:29,840] or one plus i epsilon times the angular momentum,
+- [00:23:29,840 - 00:23:32,840] to rotate a system a small amount.
+- [00:23:32,840 - 00:23:33,840] And then if you want
+- [00:23:33,840 - 00:23:34,840] to rotate it a large amount,
+- [00:23:34,840 - 00:23:36,840] you just do it over and over again.
+- [00:23:36,840 - 00:23:38,840] So everything is contained.
+- [00:23:38,840 - 00:23:40,840] All the information about the structure of the group
+- [00:23:40,840 - 00:23:41,840] is contained in the generators.
+- [00:23:41,840 - 00:23:45,340] In fact, it's contained in
+- [00:23:45,340 - 00:23:48,840] the commutation relations of the generators.
+- [00:23:48,840 - 00:23:50,840] Those are the important things.
+- [00:23:50,840 - 00:23:52,840] I won't go into them again.
+- [00:23:52,840 - 00:23:54,840] We did commutation relations of angular momentum.
+- [00:23:54,840 - 00:23:56,340] I just wanted to connect things
+- [00:23:56,340 - 00:23:57,840] up a little bit for you.
+- [00:23:57,840 - 00:24:02,840] But the important thing is that the conserved quantities
+- [00:24:02,840 - 00:24:05,840] associated with the symmetry are the generators.
+- [00:24:05,840 - 00:24:07,840] And...
+- [00:24:07,840 - 00:24:10,840] So there are three independent 2x2?
+- [00:24:11,840 - 00:24:13,840] Traceless 2x2 Hermitian matrices.
+- [00:24:13,840 - 00:24:15,840] Yeah, they have a name.
+- [00:24:15,840 - 00:24:17,840] The Pauli matrices.
+- [00:24:17,840 - 00:24:19,840] Yeah, the three Pauli matrices.
+- [00:24:19,840 - 00:24:22,840] And then if you went to 3x3 matrices?
+- [00:24:22,840 - 00:24:24,840] 3x3 unitary matrices?
+- [00:24:24,840 - 00:24:26,840] Unitary, traceless.
+- [00:24:26,840 - 00:24:28,840] And there are eight.
+- [00:24:28,840 - 00:24:29,840] Like the Gell-Mann?
+- [00:24:29,840 - 00:24:31,840] Yeah, they're the other Gell-Mann matrices.
+- [00:24:31,840 - 00:24:33,840] We're going to do that in a moment.
+- [00:24:33,840 - 00:24:35,840] So, I'm going to go back to the first part.
+- [00:24:35,840 - 00:24:37,840] I'm going to go back to the first part.
+- [00:24:37,840 - 00:24:39,840] I'm going to go back to the first part.
+- [00:24:39,840 - 00:24:40,840] I'm going to go back to the first part.
+- [00:24:40,840 - 00:24:42,840] I'm going to go back to that in a moment.
+- [00:24:42,840 - 00:24:43,840] All right.
+- [00:24:43,840 - 00:24:50,840] That eight is the same eight as the eight gluons.
+- [00:24:50,840 - 00:24:52,840] Eightfold weight.
+- [00:24:52,840 - 00:24:55,840] Eightfold weight.
+- [00:24:55,840 - 00:24:59,840] Actually, that's a different eight.
+- [00:24:59,840 - 00:25:02,840] Not because it's mathematically the same,
+- [00:25:02,840 - 00:25:08,840] but it's associated with a different SU symmetry than color.
+- [00:25:10,840 - 00:25:15,840] But yeah, mathematics is the same.
+- [00:25:15,840 - 00:25:19,340] Okay, so that was a
+- [00:25:19,340 - 00:25:22,840] little bit about a little review.
+- [00:25:22,840 - 00:25:25,840] The sorrows of Alice.
+- [00:25:25,840 - 00:25:31,840] Let's torture Alice even more.
+- [00:25:31,840 - 00:25:33,840] Let's go to SU .
+- [00:25:33,840 - 00:25:36,340] SU the pattern is exactly the
+- [00:25:36,340 - 00:25:38,840] same, except we're talking about 3x3 matrices.
+- [00:25:38,840 - 00:25:39,840] All right.
+- [00:25:39,840 - 00:25:41,840] So, what is 3x3 matrix?
+- [00:25:41,840 - 00:25:55,600] You can find the 3x3 matrix in the
+- [00:25:55,600 - 00:25:59,840] The 3x3 matrix is a 3x3 matrix.
+- [00:25:59,840 - 00:26:02,840] The 3x3 matrix is a 3x3 matrix.
+- [00:26:02,840 - 00:26:05,840] The 3x3 matrix is a 3x3 matrix.
+- [00:26:05,840 - 00:26:07,340] In fact, I'm not even sure that
+- [00:26:07,340 - 00:26:08,840] there's very much more to say about it.
+- [00:26:08,840 - 00:26:10,840] So, we have nine independent complex numbers.
+- [00:26:10,840 - 00:26:12,840] That's 18.
+- [00:26:12,840 - 00:26:17,840] But then we have U dagger U equals one.
+- [00:26:17,840 - 00:26:22,840] Now, this really is an equation for each element.
+- [00:26:22,840 - 00:26:23,840] This is a product.
+- [00:26:23,840 - 00:26:24,840] This is a matrix product.
+- [00:26:24,840 - 00:26:26,840] So, we can think of it as IJ.
+- [00:26:26,840 - 00:26:29,840] And this is delta IJ over here.
+- [00:26:29,840 - 00:26:32,840] How many equations is this?
+- [00:26:32,840 - 00:26:34,840] This is nine equations.
+- [00:26:34,840 - 00:26:36,840] So, we have 18 minus nine is nine.
+- [00:26:36,840 - 00:26:38,840] But then one additional equation that
+- [00:26:38,840 - 00:26:40,840] the determinant is equal to one.
+- [00:26:40,840 - 00:26:42,840] That's eight equations.
+- [00:26:42,840 - 00:26:45,840] And so, we can guess that there are eight different.
+- [00:26:45,840 - 00:26:49,840] If we start with the unit matrix,
+- [00:26:49,840 - 00:26:53,340] in how many distinct directions in the group
+- [00:26:53,340 - 00:26:56,840] space can we deform away from the identity?
+- [00:26:56,840 - 00:26:58,840] And the answer is eight.
+- [00:26:58,840 - 00:27:02,340] The implication being there are eight
+- [00:27:02,340 - 00:27:05,840] linearly independent 3x3 traceless Hermitian matrices.
+- [00:27:06,840 - 00:27:10,340] Traceless Hermitian matrices, the
+- [00:27:10,340 - 00:27:13,840] number of parameters is eight.
+- [00:27:13,840 - 00:27:19,840] So, we're going to come back to that.
+- [00:27:19,840 - 00:27:26,340] But before we do, let's talk a little
+- [00:27:26,340 - 00:27:32,840] bit about how representations combine to form new representations.
+- [00:27:32,840 - 00:27:34,840] Now, what we're talking about
+- [00:27:34,840 - 00:27:36,840] here is combining systems together.
+- [00:27:36,840 - 00:27:39,840] To form new systems.
+- [00:27:39,840 - 00:27:44,340] In the case of spin, we might be
+- [00:27:44,340 - 00:27:48,840] talking about combining more than one particle together.
+- [00:27:48,840 - 00:27:51,840] To create some sort of composite, for example.
+- [00:27:51,840 - 00:27:54,840] And that composite would also have a spin.
+- [00:27:54,840 - 00:27:56,840] Let's not worry about the motion of the particles.
+- [00:27:56,840 - 00:27:58,840] Let's just think of them as things
+- [00:27:58,840 - 00:28:00,840] that we staple on top of each other.
+- [00:28:00,840 - 00:28:02,840] So, they're nailed down to each other.
+- [00:28:02,840 - 00:28:04,840] But each one has a spin.
+- [00:28:04,840 - 00:28:07,840] So, each one has a spin.
+- [00:28:10,840 - 00:28:14,840] And let's suppose that we take two such particles.
+- [00:28:14,840 - 00:28:16,340] We put them on top
+- [00:28:16,340 - 00:28:17,840] of each other, two half-spin particles.
+- [00:28:17,840 - 00:28:19,840] What do we get?
+- [00:28:19,840 - 00:28:22,840] Well, we get four possible states.
+- [00:28:22,840 - 00:28:27,840] But those four possible states can be thought
+- [00:28:27,840 - 00:28:32,840] of as a basis in that four particle states.
+- [00:28:32,840 - 00:28:35,840] Can be thought of as a spin-zero object.
+- [00:28:35,840 - 00:28:41,840] And the three spin-one objects that two half-spins can make.
+- [00:28:41,840 - 00:28:43,840] If we take two half-spins,
+- [00:28:43,840 - 00:28:45,840] we can certainly make a spin-one.
+- [00:28:45,840 - 00:28:47,340] Why? We can line up
+- [00:28:47,340 - 00:28:48,840] the spins in the same direction.
+- [00:28:48,840 - 00:28:50,840] So, the z-component of spin can be one.
+- [00:28:50,840 - 00:28:52,840] It can be minus one.
+- [00:28:52,840 - 00:28:54,340] And it can be zero, but
+- [00:28:54,340 - 00:28:55,840] it can be zero in two ways.
+- [00:28:55,840 - 00:28:57,840] Alright, but still, a spin-one
+- [00:28:57,840 - 00:28:59,840] particle only has three states.
+- [00:28:59,840 - 00:29:01,840] So, one of those two ways of making zero.
+- [00:29:02,840 - 00:29:07,840] Must not be part of the spin-one multiplet.
+- [00:29:07,840 - 00:29:08,840] What can it be?
+- [00:29:08,840 - 00:29:11,840] It can only be spin-zero.
+- [00:29:11,840 - 00:29:12,840] Why spin-zero?
+- [00:29:12,840 - 00:29:14,840] Because there's nothing for it to transform into.
+- [00:29:14,840 - 00:29:17,340] So, there are three combinations
+- [00:29:17,340 - 00:29:19,840] which form the spin-one multiplet.
+- [00:29:19,840 - 00:29:22,840] And one which forms the spin-zero multiplet.
+- [00:29:22,840 - 00:29:26,340] When you combine spins together that way, there
+- [00:29:26,340 - 00:29:29,840] are two possible total spins you can make.
+- [00:29:29,840 - 00:29:31,840] So, if you were to take an atom.
+- [00:29:31,840 - 00:29:34,840] Made out of two half-spin particles.
+- [00:29:34,840 - 00:29:37,840] And ignore the orbital motion altogether.
+- [00:29:37,840 - 00:29:39,840] One possibility is that the
+- [00:29:39,840 - 00:29:41,840] spins are in the same direction.
+- [00:29:41,840 - 00:29:43,840] That would give you spin-one.
+- [00:29:43,840 - 00:29:45,340] And the other possibility is that
+- [00:29:45,340 - 00:29:46,840] they are in the opposite direction.
+- [00:29:46,840 - 00:29:48,840] In which case, it would be spin-zero.
+- [00:29:48,840 - 00:29:50,840] It's ortho and para-hydrogen.
+- [00:29:50,840 - 00:29:53,840] In particular, for the hydrogen atom.
+- [00:29:53,840 - 00:29:55,840] Where the two spins would
+- [00:29:55,840 - 00:29:57,840] be the proton and the electron.
+- [00:29:57,840 - 00:29:59,840] Right.
+- [00:29:59,840 - 00:30:00,840] So, you combine.
+- [00:30:00,840 - 00:30:03,840] It's important to know how to combine spins.
+- [00:30:03,840 - 00:30:05,840] And to know what you get.
+- [00:30:05,840 - 00:30:09,840] What possibilities you get when you combine them together.
+- [00:30:12,840 - 00:30:16,840] What happens in SU .
+- [00:30:16,840 - 00:30:20,840] Now, we want to jump to SU .
+- [00:30:20,840 - 00:30:27,840] And discuss some very specific representations of SU .
+- [00:30:27,840 - 00:30:30,840] They're the important ones which we will discuss.
+- [00:30:30,840 - 00:30:33,840] First of all, there is the triplet.
+- [00:30:33,840 - 00:30:35,840] The triplet is simply.
+- [00:30:35,840 - 00:30:42,840] If U is a 3x3 matrix.
+- [00:30:42,840 - 00:30:44,840] Then it has to act
+- [00:30:44,840 - 00:30:46,840] on a thing with three components.
+- [00:30:46,840 - 00:30:48,840] In the present context.
+- [00:30:48,840 - 00:30:53,840] The three components represent the three colors of a quark.
+- [00:30:53,840 - 00:30:55,840] So, we're talking now for the moment about one quark.
+- [00:30:55,840 - 00:30:56,840] Not three quarks.
+- [00:30:56,840 - 00:30:57,840] One quark.
+- [00:30:57,840 - 00:30:59,840] And that quark can be red, yellow, red.
+- [00:30:59,840 - 00:31:01,840] Blue or green.
+- [00:31:01,840 - 00:31:03,840] It can be red, blue or green.
+- [00:31:03,840 - 00:31:05,840] This is the amplitude that it's red.
+- [00:31:05,840 - 00:31:07,840] This is the amplitude that it's blue.
+- [00:31:07,840 - 00:31:09,840] This is the amplitude that it's green.
+- [00:31:09,840 - 00:31:12,840] And what does the group do to them?
+- [00:31:12,840 - 00:31:14,840] It mixes them up.
+- [00:31:14,840 - 00:31:16,840] It mixes up red, blue and green.
+- [00:31:16,840 - 00:31:18,840] Takes any particular state.
+- [00:31:18,840 - 00:31:22,840] And sends it to some quantum superposition of states.
+- [00:31:22,840 - 00:31:25,840] Of mixed color, shall we say.
+- [00:31:25,840 - 00:31:27,840] So, if we took a red quark.
+- [00:31:27,840 - 00:31:28,840] And we put it in a 3x3 matrix.
+- [00:31:28,840 - 00:31:31,840] Red quark.
+- [00:31:31,840 - 00:31:34,840] That would be like an up spin.
+- [00:31:36,840 - 00:31:38,840] And we rotated it.
+- [00:31:38,840 - 00:31:40,840] By this SU operation.
+- [00:31:40,840 - 00:31:42,840] We would get something of a mixed character.
+- [00:31:42,840 - 00:31:46,840] Which would have amplitudes for being red, blue or green.
+- [00:31:46,840 - 00:31:48,840] Some quantum superposition.
+- [00:31:48,840 - 00:31:51,840] So, that's the meaning of these operations.
+- [00:31:51,840 - 00:31:54,840] But it's interesting and important.
+- [00:31:54,840 - 00:31:56,840] To know what happens
+- [00:31:56,840 - 00:31:58,840] if you combine representations together.
+- [00:31:58,840 - 00:32:00,840] Let me go back a step.
+- [00:32:00,840 - 00:32:03,340] Now we want to talk about
+- [00:32:03,340 - 00:32:05,840] the various representations of SU .
+- [00:32:05,840 - 00:32:09,840] The representations of SU are the spin states.
+- [00:32:09,840 - 00:32:15,840] Spin 0, 1, 3, 2, 5 and so forth.
+- [00:32:15,840 - 00:32:18,840] Those are the representations of rotations.
+- [00:32:18,840 - 00:32:20,840] We want to know something
+- [00:32:20,840 - 00:32:22,840] about the representations of SU .
+- [00:32:22,840 - 00:32:23,840] And I'm not going to tell you very much.
+- [00:32:23,840 - 00:32:25,840] Just a very little bit.
+- [00:32:25,840 - 00:32:27,840] There are rather 3 important representations.
+- [00:32:27,840 - 00:32:29,840] For our purposes.
+- [00:32:29,840 - 00:32:32,840] One of them is just a 3 dimensional representation.
+- [00:32:32,840 - 00:32:35,840] And it can be thought of as the 3 components.
+- [00:32:35,840 - 00:32:37,840] The 3 things that go here.
+- [00:32:37,840 - 00:32:41,840] Could be thought of as the 3 field operators.
+- [00:32:41,840 - 00:32:45,840] For, let's call them quark, red.
+- [00:32:45,840 - 00:32:47,840] Quark, blue.
+- [00:32:47,840 - 00:32:49,840] Quark, green.
+- [00:32:49,840 - 00:32:52,840] We can either think of these matrices as
+- [00:32:52,840 - 00:32:55,840] mixing up the states of a single quark.
+- [00:32:55,840 - 00:32:56,840] Or we can think of them as a combination.
+- [00:32:56,840 - 00:32:58,840] Of a single quark.
+- [00:32:58,840 - 00:33:01,340] Or we can think of it as mixing
+- [00:33:01,340 - 00:33:03,840] up the field operators that create single quarks.
+- [00:33:03,840 - 00:33:05,840] Red, blue and green.
+- [00:33:05,840 - 00:33:07,840] Alright.
+- [00:33:07,840 - 00:33:08,840] Now.
+- [00:33:08,840 - 00:33:09,840] Next.
+- [00:33:09,840 - 00:33:11,840] This representation.
+- [00:33:11,840 - 00:33:15,840] By 3 by 3 matrices that acts on the quarks.
+- [00:33:15,840 - 00:33:21,840] That representation is called the 3.
+- [00:33:21,840 - 00:33:23,840] In the same language you would.
+- [00:33:23,840 - 00:33:24,840] If you use the same language.
+- [00:33:24,840 - 00:33:27,840] You would call the half spin.
+- [00:33:27,840 - 00:33:28,840] Particle of SU2.
+- [00:33:28,840 - 00:33:30,840] You would call it the 2.
+- [00:33:30,840 - 00:33:32,840] 2 for 2 states.
+- [00:33:32,840 - 00:33:33,840] Okay.
+- [00:33:33,840 - 00:33:37,840] So the 3 is a representation that's identified.
+- [00:33:37,840 - 00:33:39,840] With the quark field itself.
+- [00:33:39,840 - 00:33:41,840] Or with quarks.
+- [00:33:41,840 - 00:33:42,840] Now.
+- [00:33:42,840 - 00:33:44,840] There are also anti-quarks.
+- [00:33:44,840 - 00:33:47,840] Anti-quarks.
+- [00:33:47,840 - 00:33:50,340] Their field operators are the
+- [00:33:50,340 - 00:33:52,840] complex conjugates of the quark operators.
+- [00:33:52,840 - 00:33:53,840] So you can ask yourself.
+- [00:33:53,840 - 00:33:54,840] If.
+- [00:33:54,840 - 00:33:56,840] There is a matrix.
+- [00:33:56,840 - 00:33:57,840] Which acts.
+- [00:33:57,840 - 00:33:58,840] On.
+- [00:33:58,840 - 00:33:59,840] Q.
+- [00:33:59,840 - 00:34:01,840] To give some new thing.
+- [00:34:01,840 - 00:34:05,840] We could complex conjugate everything.
+- [00:34:05,840 - 00:34:07,840] We could complex conjugate everything.
+- [00:34:07,840 - 00:34:08,840] And we could say.
+- [00:34:08,840 - 00:34:09,840] Let's write it.
+- [00:34:09,840 - 00:34:10,840] If.
+- [00:34:10,840 - 00:34:12,840] Let's call it U.
+- [00:34:12,840 - 00:34:15,840] U is a 3 by 3 matrix.
+- [00:34:15,840 - 00:34:18,840] If it acts on the column vector Q.
+- [00:34:18,840 - 00:34:20,840] I'm now being a schematic.
+- [00:34:20,840 - 00:34:21,840] U is a 3 by 3 matrix.
+- [00:34:21,840 - 00:34:22,840] Q is a column vector Q.
+- [00:34:22,840 - 00:34:23,840] Okay.
+- [00:34:23,840 - 00:34:24,840] So if it acts on the column vector.
+- [00:34:24,840 - 00:34:25,840] If it acts to give.
+- [00:34:25,840 - 00:34:26,840] Let's call it Q prime.
+- [00:34:26,840 - 00:34:27,840] The rotated Q.
+- [00:34:27,840 - 00:34:29,840] Then what is it that acts on the complex conjugate.
+- [00:34:29,840 - 00:34:31,840] Or the Hermitian conjugate field operator.
+- [00:34:31,840 - 00:34:33,840] That's the object which represents anti-quarks.
+- [00:34:33,840 - 00:34:34,840] Well it's quite obvious.
+- [00:34:34,840 - 00:34:35,840] It's going to be.
+- [00:34:35,840 - 00:34:36,840] The complex conjugate.
+- [00:34:36,840 - 00:34:37,840] The.
+- [00:34:37,840 - 00:34:38,840] Not the Hermitian conjugate.
+- [00:34:38,840 - 00:34:39,840] The set of elements.
+- [00:34:39,840 - 00:34:40,840] If U.
+- [00:34:40,840 - 00:34:41,840] If U.
+- [00:34:41,840 - 00:34:42,840] If U.
+- [00:34:42,840 - 00:34:43,840] If U.
+- [00:34:43,840 - 00:34:44,840] If U.
+- [00:34:44,840 - 00:34:45,840] If U.
+- [00:34:45,840 - 00:34:46,840] If U.
+- [00:34:46,840 - 00:34:47,840] If U.
+- [00:34:47,840 - 00:34:48,840] If U.
+- [00:34:48,840 - 00:34:49,840] If U.
+- [00:34:49,840 - 00:34:50,840] If U.
+- [00:34:50,840 - 00:34:51,840] If U.
+- [00:34:51,840 - 00:34:52,840] If U.
+- [00:34:52,840 - 00:34:53,840] If U.
+- [00:34:53,840 - 00:34:54,840] If U.
+- [00:34:54,840 - 00:34:55,840] If U.
+- [00:34:55,840 - 00:34:56,840] If U.
+- [00:34:56,840 - 00:34:57,840] If U.
+- [00:34:57,840 - 00:34:58,840] Is a bunch of elements.
+- [00:34:58,840 - 00:35:00,840] Then U star is nothing but the complex conjugate elements.
+- [00:35:00,840 - 00:35:01,840] Let's call it star.
+- [00:35:01,840 - 00:35:03,840] Let's call it star to be consistent.
+- [00:35:03,840 - 00:35:09,840] So there is a second representation of SU three.
+- [00:35:09,840 - 00:35:12,840] Which is the set of matrices.
+- [00:35:12,840 - 00:35:14,840] Which are the complex conjugate represent.
+- [00:35:14,840 - 00:35:16,840] Which are the complex conjugate matrices.
+- [00:35:16,840 - 00:35:17,840] For every matrix U.
+- [00:35:17,840 - 00:35:19,840] There is a complex conjugate.
+- [00:35:19,840 - 00:35:21,840] And that defines a second representation of.
+- [00:35:21,840 - 00:35:25,440] a second representation. It's called a
+- [00:35:25,440 - 00:35:29,040] complex conjugate representation. It is the transformation
+- [00:35:29,040 - 00:35:33,250] property of antiquarks, and that representation is
+- [00:35:33,250 - 00:35:37,460] called the three bar. This is very abstract,
+- [00:35:38,460 - 00:35:40,650] but what is it in the case of electrons?
+- [00:35:40,650 - 00:35:42,840] What does this correspond to in case of electrons?
+- [00:35:43,780 - 00:35:46,860] It is simply the fact that if the electron
+- [00:35:46,860 - 00:35:49,940] wave function gets multiplied by e to the i theta,
+- [00:35:49,940 - 00:35:52,300] then the positron wave function gets multiplied
+- [00:35:52,300 - 00:35:54,660] by e to the minus i theta.
+- [00:35:55,300 - 00:35:58,740] They transform with complex conjugate group elements.
+- [00:36:00,960 - 00:36:03,670] So you would say that the electron
+- [00:36:03,670 - 00:36:06,380] and the positron are complex conjugate representations
+- [00:36:06,380 - 00:36:09,790] of the U1 group. That's the language.
+- [00:36:09,790 - 00:36:13,200] The quark and the antiquark are complex conjugate
+- [00:36:13,200 - 00:36:16,640] representations of the group SU3.
+- [00:36:17,260 - 00:36:19,860] It would be the complex conjugate.
+- [00:36:19,940 - 00:36:23,260] What is the matrix of the Pauli-Split matrices?
+- [00:36:25,260 - 00:36:29,720] For the case SU2. SU2 is a special
+- [00:36:29,720 - 00:36:34,180] degenerate case where the complex conjugate is equivalent
+- [00:36:34,180 - 00:36:37,240] to the original matrices by another matrix. It's
+- [00:36:37,240 - 00:36:40,300] a special case. It's called a real group,
+- [00:36:40,300 - 00:36:43,780] but this is not important for us now.
+- [00:36:43,780 - 00:36:47,260] The three and the three bar representation are
+- [00:36:47,260 - 00:36:48,260] quite different.
+- [00:36:49,940 - 00:36:52,140] They look very similar to each other, but
+- [00:36:52,140 - 00:36:54,340] they are distinct. They should not be thought
+- [00:36:54,340 - 00:36:56,820] of as the same representation
+- [00:36:56,820 - 00:36:59,300] of SU3. They're quite different.
+- [00:36:59,300 - 00:37:03,840] In fact, the generators of the three bar
+- [00:37:03,840 - 00:37:08,380] representation are the negatives of the generators of the
+- [00:37:08,380 - 00:37:13,360] three representation. That's not too hard to
+- [00:37:13,360 - 00:37:18,340] prove. That means they carry the opposite
+- [00:37:18,340 - 00:37:19,340] color.
+- [00:37:19,340 - 00:37:23,040] If a quark carries a red color, then an
+- [00:37:23,040 - 00:37:26,740] antiquark carries a minus red color. It has the opposite
+- [00:37:26,740 - 00:37:28,700] value for the generators.
+- [00:37:28,700 - 00:37:32,150] All right, so these are the quark and the
+- [00:37:32,150 - 00:37:35,600] antiquark. Now what happens if you take a quark
+- [00:37:35,600 - 00:37:40,270] and a quark, two quarks, or a quark and
+- [00:37:40,270 - 00:37:44,940] an antiquark? Just like you could take two electrons
+- [00:37:44,940 - 00:37:45,800] and make a spin one, which was a triplet. Not
+- [00:37:45,800 - 00:37:46,660] got to do with this three, but the spin one.
+- [00:37:46,660 - 00:37:47,160] So you could take two electrons and make a spin one, which was a triplet.
+- [00:37:47,160 - 00:37:47,660] Not got to do with this three, but the three bar representation is the same.
+- [00:37:49,340 - 00:37:56,490] So you could take two quarks and put
+- [00:37:56,490 - 00:38:03,640] them together. You can call that three times three
+- [00:38:03,640 - 00:38:07,150] bar. Sorry, three times three. Two quarks
+- [00:38:07,150 - 00:38:10,660] are three. This is just a notation. Three
+- [00:38:10,660 - 00:38:13,060] times three means two quarks. Sometimes this
+- [00:38:13,060 - 00:38:15,460] is represented by a circle to indicate that
+- [00:38:15,460 - 00:38:17,340] you're not actually multiplying numbers.
+- [00:38:17,340 - 00:38:19,340] You're simply building a space.
+- [00:38:19,340 - 00:38:23,170] Which is now a space of two quarks.
+- [00:38:23,170 - 00:38:27,000] It has nine independent states. Red, red, red, blue,
+- [00:38:27,000 - 00:38:32,480] red, green, and so forth. All nine states.
+- [00:38:32,480 - 00:38:37,960] And if you work out what representations of
+- [00:38:37,960 - 00:38:43,190] SU appear when you multiply three by three, the
+- [00:38:43,190 - 00:38:48,420] answer is, first of all, there is an antiquark
+- [00:38:49,340 - 00:38:50,340] that is the same color as the anti-quark.
+- [00:38:50,340 - 00:38:50,960] That's a little bit odd, don't you think?
+- [00:38:50,960 - 00:38:51,580] But it's true. It's true anyway. And one more
+- [00:38:51,580 - 00:38:54,080] representation called the six-dimensional representation of SU
+- [00:38:54,080 - 00:38:56,580] . We're never going to need the six-dimensional
+- [00:38:56,580 - 00:39:00,580] representation, but there is a six-dimensional representation
+- [00:39:00,580 - 00:39:04,580] of SU . I can tell you what
+- [00:39:18,320 - 00:39:19,340] these things correspond to.
+- [00:39:19,340 - 00:39:24,380] If you think of the quarks as just
+- [00:39:24,380 - 00:39:29,420] indices, color indices, then you can combine the two
+- [00:39:29,420 - 00:39:35,670] quark states symmetrically or anti-symmetrically. You
+- [00:39:35,670 - 00:39:41,920] can combine them symmetrically or anti-symmetrically.
+- [00:39:41,920 - 00:39:43,450] Anti-symmetrically gives you the three bar.
+- [00:39:43,450 - 00:39:44,980] Symmetrically gives you the six. But this
+- [00:39:44,980 - 00:39:46,650] is not terribly important. The point is, if
+- [00:39:46,650 - 00:39:48,320] you make two quarks somehow, in the labyrinth,
+- [00:39:48,320 - 00:39:52,460] in the laboratory, the transformation properties of
+- [00:39:52,460 - 00:39:56,600] the two quark system under this SU there
+- [00:39:56,600 - 00:39:59,000] will be one term, or one way
+- [00:39:59,000 - 00:40:01,400] of combining them together, three independent states of
+- [00:40:01,400 - 00:40:03,680] that system, which will be like an anti-quark,
+- [00:40:03,680 - 00:40:05,960] and the other one will be this mysterious
+- [00:40:05,960 - 00:40:08,260] six, which we don't give a damn
+- [00:40:08,260 - 00:40:10,560] about. We'll see why as we go along.
+- [00:40:10,560 - 00:40:12,370] Now, what happens if we
+- [00:40:12,370 - 00:40:14,180] take a quark and an anti-quark?
+- [00:40:18,320 - 00:40:21,880] If we take a quark and an anti-quark, what
+- [00:40:21,880 - 00:40:25,440] we get is different than what we get when
+- [00:40:25,440 - 00:40:28,160] we get a quark and a quark. We get,
+- [00:40:28,160 - 00:40:30,880] again, six and three is nine states, but it's not
+- [00:40:30,880 - 00:40:34,290] the same nine possibilities. First of all, we
+- [00:40:34,290 - 00:40:37,700] make an object which is a one. What is
+- [00:40:37,700 - 00:40:42,580] a one? That's a thing which
+- [00:40:42,580 - 00:40:47,460] is completely invariant under the color operations.
+- [00:40:48,320 - 00:40:53,010] Roughly speaking, it's a red plus a
+- [00:40:53,010 - 00:40:57,700] red anti-red, a quantum superposition of red anti-red,
+- [00:40:57,700 - 00:41:01,050] blue anti-blue, and green anti-green. That's
+- [00:41:01,050 - 00:41:04,400] one thing. And that's a single representation,
+- [00:41:04,400 - 00:41:07,760] and it simply does not transform under the
+- [00:41:07,760 - 00:41:11,120] SU group. It's called a singlet, an SU
+- [00:41:11,120 - 00:41:14,600] singlet. And one way of saying
+- [00:41:14,600 - 00:41:18,080] it is it's the analog of combining
+- [00:41:18,080 - 00:41:18,280] together the two quarks.
+- [00:41:18,320 - 00:41:19,510] So, you take a quark and an anti-quark,
+- [00:41:19,510 - 00:41:20,700] and you put them together, two electrons to make
+- [00:41:20,700 - 00:41:24,080] a spin zero state. It's like a spin
+- [00:41:24,080 - 00:41:27,460] zero state. It does not transform under the rotations.
+- [00:41:27,460 - 00:41:29,630] It doesn't transform at all. It's just
+- [00:41:29,630 - 00:41:31,800] one state, so how could it transform? There's
+- [00:41:31,800 - 00:41:34,170] nothing for it to transform into. So, when
+- [00:41:34,170 - 00:41:36,540] you take a quark and an anti-quark, there
+- [00:41:36,540 - 00:41:40,310] are nine states, one of which, one
+- [00:41:40,310 - 00:41:44,080] linear combination, red anti-red plus blue anti-blue
+- [00:41:44,080 - 00:41:47,640] plus green anti-green, that just forms a singlet.
+- [00:41:48,320 - 00:41:51,350] And then, there are eight others, and
+- [00:41:51,350 - 00:41:54,380] those eight others are called the eight-dimensional
+- [00:41:54,380 - 00:41:58,110] representation of SU . That eight, incidentally,
+- [00:41:58,110 - 00:42:01,840] think about that eight for a moment.
+- [00:42:01,840 - 00:42:05,420] We've seen eight in another place. It was
+- [00:42:05,420 - 00:42:09,000] the number of generators. Just like the number
+- [00:42:09,000 - 00:42:13,480] of angular momenta. When you rotate space, the
+- [00:42:13,480 - 00:42:17,960] angular momenta rotate into each other. When you rotate
+- [00:42:18,320 - 00:42:21,440] In color space, the eight generators
+- [00:42:21,440 - 00:42:24,560] get mixed up with each other.
+- [00:42:24,560 - 00:42:27,000] The way the eight generators
+- [00:42:27,000 - 00:42:29,440] transform is called the eight-dimensional representation
+- [00:42:29,440 - 00:42:30,440] of SU .
+- [00:42:30,440 - 00:42:32,980] This is sometimes called the adjoint representation.
+- [00:42:32,980 - 00:42:34,980] The words don't matter.
+- [00:42:34,980 - 00:42:38,110] It's just the representation that transforms
+- [00:42:38,110 - 00:42:41,240] the same way as the generators.
+- [00:42:41,240 - 00:42:43,160] And that's what you get when
+- [00:42:43,160 - 00:42:45,080] you multiply 3 cross 3 bar.
+- [00:42:45,080 - 00:42:47,580] Finally, one other operation.
+- [00:42:47,580 - 00:42:53,120] What do you get if you take three quarks?
+- [00:42:53,120 - 00:42:58,960] Three cross three cross three.
+- [00:42:58,960 - 00:43:02,259] You take three quarks, there are 27 states.
+- [00:43:02,259 - 00:43:05,080] Well, you can do it in pieces.
+- [00:43:05,080 - 00:43:08,220] You can say, if I combine together these two
+- [00:43:08,220 - 00:43:11,360] quarks, what I will get is either a one, sorry,
+- [00:43:11,360 - 00:43:14,460] is either a three bar, which
+- [00:43:14,460 - 00:43:17,560] is an anti-quark, or a six.
+- [00:43:17,560 - 00:43:24,620] So, two of these quarks together will necessarily
+- [00:43:24,620 - 00:43:31,680] either transform as an anti-quark or as a six.
+- [00:43:31,680 - 00:43:34,000] A six is a peculiar representation, which
+- [00:43:34,000 - 00:43:36,320] I said we won't care about very much.
+- [00:43:36,320 - 00:43:39,470] Now, what happens if you take this
+- [00:43:39,470 - 00:43:42,620] product and now cross it again with three?
+- [00:43:42,620 - 00:43:47,100] In other words, we see what we get.
+- [00:43:47,100 - 00:43:51,100] When we combine two quarks, here's what we get.
+- [00:43:51,100 - 00:43:54,600] And then we combine it again with another quark.
+- [00:43:54,600 - 00:43:57,240] We will either get what appears if we take
+- [00:43:57,240 - 00:43:59,880] a quark and an anti-quark, but we know what
+- [00:43:59,880 - 00:44:01,259] that is.
+- [00:44:01,259 - 00:44:02,680] That's one plus eight.
+- [00:44:02,680 - 00:44:04,720] The plus here just means or.
+- [00:44:04,720 - 00:44:09,259] You either get a one, the singlet, or an eight.
+- [00:44:09,259 - 00:44:10,829] Just like saying you either
+- [00:44:10,829 - 00:44:12,400] get spin one or spin zero.
+- [00:44:12,400 - 00:44:14,400] That's what this plus means, or.
+- [00:44:17,100 - 00:44:21,719] When you multiply six times three, I
+- [00:44:21,719 - 00:44:26,339] think you get an eight plus a ten.
+- [00:44:26,339 - 00:44:29,080] But this, again, is not very interesting to us.
+- [00:44:29,080 - 00:44:31,259] We don't care very much about that.
+- [00:44:31,259 - 00:44:34,159] The interesting thing, and the most interesting
+- [00:44:34,159 - 00:44:37,060] thing, is when we multiply three quarks together,
+- [00:44:37,060 - 00:44:40,580] we get the possibility again of a
+- [00:44:40,580 - 00:44:44,100] singlet, of a state which is completely colorless.
+- [00:44:44,100 - 00:44:47,100] It has no transformation property.
+- [00:44:47,100 - 00:44:51,949] It's just a combination of a plus charge
+- [00:44:51,949 - 00:44:56,799] and a minus charge, which cancel each other.
+- [00:44:56,799 - 00:44:58,989] We get the singlet, which
+- [00:44:58,989 - 00:45:01,180] has no SU transformation at all.
+- [00:45:01,180 - 00:45:05,030] And it can be thought of as a
+- [00:45:05,030 - 00:45:08,880] combination which simply is invariant under the SU group,
+- [00:45:08,880 - 00:45:12,920] under the SU of the mixing up the quarks.
+- [00:45:12,920 - 00:45:13,920] What is it?
+- [00:45:13,920 - 00:45:14,920] Can we guess what it is like?
+- [00:45:14,920 - 00:45:16,440] I'll tell you what it is.
+- [00:45:16,440 - 00:45:20,980] It's just a red, a green, and a blue quark.
+- [00:45:20,980 - 00:45:21,980] But you have to be careful.
+- [00:45:21,980 - 00:45:26,820] It's a red, green, and blue quark anti-symmetrized.
+- [00:45:26,820 - 00:45:27,820] Not important.
+- [00:45:27,820 - 00:45:29,820] It's a red, green, and blue quark.
+- [00:45:29,820 - 00:45:35,120] A red, green, and blue quark are the singlet.
+- [00:45:35,120 - 00:45:36,120] Then there are other combinations.
+- [00:45:36,120 - 00:45:38,720] Red, red, green, and so forth.
+- [00:45:38,720 - 00:45:42,240] They form the remaining states here.
+- [00:45:42,240 - 00:45:44,330] But the most interesting one for
+- [00:45:44,330 - 00:45:46,420] our purposes will be this singlet here.
+- [00:45:46,440 - 00:45:49,290] So we see that when we take a quark
+- [00:45:49,290 - 00:45:52,140] and an anti-quark, just with regard to the colors,
+- [00:45:52,140 - 00:45:54,550] you can combine the colors in a particular
+- [00:45:54,550 - 00:45:56,960] way to get a singlet plus other stuff.
+- [00:45:56,960 - 00:45:59,470] And when you take three quarks, you can
+- [00:45:59,470 - 00:46:01,980] combine them together to get a singlet plus other
+- [00:46:01,980 - 00:46:02,980] junk.
+- [00:46:02,980 - 00:46:07,570] Is it the probability of these other
+- [00:46:07,570 - 00:46:12,160] things so low that we don't consider it?
+- [00:46:12,160 - 00:46:14,440] The question is what the energy of them is.
+- [00:46:14,440 - 00:46:16,280] And I will tell you.
+- [00:46:16,280 - 00:46:17,520] The energy of them is infinite.
+- [00:46:17,520 - 00:46:20,180] But we will come to that.
+- [00:46:20,180 - 00:46:22,720] The energy of them is infinite, and
+- [00:46:22,720 - 00:46:25,260] so they don't appear in the spectrum.
+- [00:46:25,260 - 00:46:28,280] How can the energy of them be infinite?
+- [00:46:28,280 - 00:46:32,550] That was a great puzzle, which we now understand,
+- [00:46:32,550 - 00:46:36,820] and I'm going to talk about it a little bit.
+- [00:46:36,820 - 00:46:37,820] Right.
+- [00:46:37,820 - 00:46:39,820] But now, ah, there is one
+- [00:46:39,820 - 00:46:41,820] other kind of particle in nature.
+- [00:46:41,820 - 00:46:44,700] Sorry, there's many other kinds of particles in nature.
+- [00:46:44,700 - 00:46:45,740] But there's one other particle in nature.
+- [00:46:45,740 - 00:46:48,740] There's one other particle in quantum chromodynamics.
+- [00:46:48,740 - 00:46:51,789] We're talking about quantum chromodynamics, QCD,
+- [00:46:51,789 - 00:46:54,839] the theory of quarks and gluons.
+- [00:46:54,839 - 00:46:58,979] What of course we've left out is the gluon.
+- [00:46:58,979 - 00:47:01,499] The gluon is an object, which I think I've
+- [00:47:01,499 - 00:47:04,020] told you before, behaves as if it were a quark
+- [00:47:04,020 - 00:47:05,419] and an anti-quark.
+- [00:47:05,419 - 00:47:08,699] With respect to the symmetry, it doesn't behave
+- [00:47:08,699 - 00:47:11,979] like a quark and an anti-quark with respect
+- [00:47:11,979 - 00:47:14,359] to what happens if you hit it or anything.
+- [00:47:14,359 - 00:47:15,180] Just with respect to the colors.
+- [00:47:15,180 - 00:47:15,200] Right.
+- [00:47:15,200 - 00:47:18,769] So the color symmetry, its color properties are
+- [00:47:18,769 - 00:47:22,339] the same as a quark and an anti-quark,
+- [00:47:22,339 - 00:47:25,399] but only the eight.
+- [00:47:25,399 - 00:47:28,439] It transforms as the eight dimensional representation.
+- [00:47:28,439 - 00:47:30,569] It transforms the same way
+- [00:47:30,569 - 00:47:32,700] as the generators of the group.
+- [00:47:32,700 - 00:47:33,919] Right.
+- [00:47:33,919 - 00:47:37,119] So again, it is this octet,
+- [00:47:37,119 - 00:47:40,319] which is separate from the singlet here.
+- [00:47:40,319 - 00:47:44,520] It's the remaining states here.
+- [00:47:44,520 - 00:47:45,080] And that's what a gluon is.
+- [00:47:45,080 - 00:47:47,770] A gluon is a thing with two indices, like
+- [00:47:47,770 - 00:47:50,460] a quark and an anti-quark, except a quark and
+- [00:47:50,460 - 00:47:55,080] an anti-quark arranged into this octet of SU3.
+- [00:47:55,080 - 00:47:57,600] So it's not neutral.
+- [00:47:57,600 - 00:48:00,340] It itself is not neutral.
+- [00:48:00,340 - 00:48:01,799] So let's quark.
+- [00:48:01,799 - 00:48:10,580] Postulates, if you like, of quantum chroma of QCD.
+- [00:48:10,580 - 00:48:13,080] It's got an SU3 symmetry, which I won't write down.
+- [00:48:13,080 - 00:48:14,080] A quark.
+- [00:48:14,080 - 00:48:14,960] A quark.
+- [00:48:15,080 - 00:48:16,640] It transforms as a three.
+- [00:48:16,640 - 00:48:18,340] Sorry.
+- [00:48:18,340 - 00:48:23,900] The anti-quark transforms as a three bar.
+- [00:48:23,900 - 00:48:31,080] And the gluon or the gluon field as an eight.
+- [00:48:31,080 - 00:48:36,779] Of course, these equations don't really mean anything.
+- [00:48:36,779 - 00:48:38,420] Particles can't equal numbers.
+- [00:48:38,420 - 00:48:39,520] Particles are particles.
+- [00:48:39,520 - 00:48:41,240] Numbers are numbers.
+- [00:48:41,240 - 00:48:44,380] This just means the quark field transforms as a triplet.
+- [00:48:44,380 - 00:48:44,880] Right.
+- [00:48:44,880 - 00:48:47,430] So the anti-quark as the anti-triplet, complex
+- [00:48:47,430 - 00:48:49,980] conjugate, and the gluon as the eight, which
+- [00:48:49,980 - 00:48:54,920] is a piece of a quark anti-quark.
+- [00:48:54,920 - 00:49:00,440] This remaining possible gluon doesn't exist in nature.
+- [00:49:00,440 - 00:49:01,980] Do we know why?
+- [00:49:01,980 - 00:49:05,380] Not completely.
+- [00:49:05,380 - 00:49:08,520] But the important point about it is it doesn't
+- [00:49:08,520 - 00:49:11,660] mix up with the other components, and so throwing
+- [00:49:11,660 - 00:49:13,000] it away is a consistent.
+- [00:49:13,000 - 00:49:14,320] A mathematically consistent thing to do.
+- [00:49:14,320 - 00:49:17,770] Because it doesn't get mixed up with the
+- [00:49:17,770 - 00:49:21,220] other components when you transform the SU group.
+- [00:49:21,220 - 00:49:29,180] That's group theory as applied to quantum
+- [00:49:29,180 - 00:49:37,140] chromodynamics, as applied to quarks and gluons.
+- [00:49:37,140 - 00:49:39,640] Another postulate of quantum chromodynamics, and it's
+- [00:49:39,640 - 00:49:42,140] not really a postulate, it's a dynamical
+- [00:49:42,140 - 00:49:43,320] output of the theory.
+- [00:49:43,320 - 00:49:44,320] But it's a dynamic output of the theory.
+- [00:49:44,320 - 00:49:48,060] But let's take it as a postulate and
+- [00:49:48,060 - 00:49:51,800] then explore what it means in a moment.
+- [00:49:51,800 - 00:49:54,070] And that postulate is all of the particles
+- [00:49:54,070 - 00:49:56,340] of nature, the real particles of nature, not
+- [00:49:56,340 - 00:50:00,100] quarks and gluons, which are never seen singly,
+- [00:50:00,100 - 00:50:03,860] but are always seen in composites, that the
+- [00:50:03,860 - 00:50:06,650] particles which can be separated off and
+- [00:50:06,650 - 00:50:09,440] examined individually, particles of finite mass, the
+- [00:50:09,440 - 00:50:13,320] real things that occur in the laboratory, are all particles.
+- [00:50:13,320 - 00:50:14,320] Real particles.
+- [00:50:14,320 - 00:50:18,340] I don't know, there's nothing not real about a
+- [00:50:18,340 - 00:50:22,360] quark, so I hate to call them the real particles.
+- [00:50:22,360 - 00:50:25,800] The unconfined particles, the free particles,
+- [00:50:25,800 - 00:50:29,240] the liberated particles, or whatever we wish
+- [00:50:29,240 - 00:50:32,770] to call them, free particles
+- [00:50:32,770 - 00:50:36,300] are always transforming under the one.
+- [00:50:36,300 - 00:50:39,280] In other words, they are singlets.
+- [00:50:39,280 - 00:50:41,680] All the real particles in nature are singlets.
+- [00:50:41,680 - 00:50:43,320] There is only two independent ways.
+- [00:50:43,320 - 00:50:44,320] Well, I'll tell you about that.
+- [00:50:44,320 - 00:50:46,440] I'll tell you what the ways of creating singlets are.
+- [00:50:46,440 - 00:50:48,500] This is a mathematical fact now.
+- [00:50:48,500 - 00:50:51,380] There are only two fundamental ways
+- [00:50:51,380 - 00:50:54,260] of making singlets out of quarks.
+- [00:50:54,260 - 00:50:56,690] One of them is to
+- [00:50:56,690 - 00:50:59,120] take a quark and an anti-quark.
+- [00:50:59,120 - 00:51:00,720] That creates a singlet.
+- [00:51:00,720 - 00:51:03,140] The other is to take three quarks.
+- [00:51:03,140 - 00:51:05,840] Now, you can do other things.
+- [00:51:05,840 - 00:51:08,350] You can take a quark and an
+- [00:51:08,350 - 00:51:10,860] anti-quark and juxtapose it with three quarks.
+- [00:51:10,860 - 00:51:12,160] But the elements, the basic...
+- [00:51:12,160 - 00:51:14,320] Or you can take three quarks and another three quarks.
+- [00:51:14,320 - 00:51:16,790] Three quarks in a singlet and
+- [00:51:16,790 - 00:51:19,260] three other quarks in a singlet.
+- [00:51:19,260 - 00:51:21,300] That will also be in a singlet.
+- [00:51:21,300 - 00:51:25,320] But all of the objects that you can
+- [00:51:25,320 - 00:51:29,340] make up have the quantum numbers of combinations of
+- [00:51:29,340 - 00:51:32,290] things made out of three quarks
+- [00:51:32,290 - 00:51:35,240] or a quark and an anti-quark.
+- [00:51:35,240 - 00:51:38,400] What about the gluons themselves?
+- [00:51:38,400 - 00:51:39,810] First of all, before we do
+- [00:51:39,810 - 00:51:41,220] it, let's give these things names.
+- [00:51:41,220 - 00:51:42,440] What is an object made out of three quarks?
+- [00:51:42,440 - 00:51:43,440] It's an object made out of three quarks.
+- [00:51:43,440 - 00:51:43,520] It's an object made out of three quarks.
+- [00:51:43,520 - 00:51:45,020] It's a baryon.
+- [00:51:45,020 - 00:51:45,740] Or a baryon.
+- [00:51:45,740 - 00:51:46,540] A baryon.
+- [00:51:46,540 - 00:51:48,640] A baryon, right.
+- [00:51:48,640 - 00:51:50,820] Baryon.
+- [00:51:50,820 - 00:51:53,600] They always have half spin, and half spin, when
+- [00:51:53,600 - 00:51:56,380] I say half spin, that can be one half,
+- [00:51:56,380 - 00:51:58,460] three halves, five halves, seven halves.
+- [00:51:58,460 - 00:51:59,060] Why?
+- [00:51:59,060 - 00:52:03,540] Because they're made out of three half spin particles.
+- [00:52:03,540 - 00:52:06,080] What about the quark anti-quarks?
+- [00:52:06,080 - 00:52:09,880] These are the ones, of course, in the three.
+- [00:52:09,880 - 00:52:11,690] In three cross three cross three,
+- [00:52:11,690 - 00:52:13,500] there's the triple, there's the triplet.
+- [00:52:13,520 - 00:52:14,560] There's the triplet.
+- [00:52:14,560 - 00:52:17,580] Sorry, the singlet are called baryons.
+- [00:52:17,580 - 00:52:19,270] The singlet in three cross
+- [00:52:19,270 - 00:52:20,960] three bar, what are they called?
+- [00:52:20,960 - 00:52:23,180] Quark and an anti-quark?
+- [00:52:23,180 - 00:52:27,400] Mesons.
+- [00:52:27,400 - 00:52:30,480] Now we left out one thing.
+- [00:52:30,480 - 00:52:33,920] Can we make things out of the gluons?
+- [00:52:33,920 - 00:52:35,700] We make things out of the gluons.
+- [00:52:35,700 - 00:52:38,020] Yeah, there's a thing that you
+- [00:52:38,020 - 00:52:40,340] can make just out of gluons.
+- [00:52:40,340 - 00:52:42,820] In fact, if you take an eight cross an eight.
+- [00:52:42,820 - 00:52:45,570] I told you roughly what
+- [00:52:45,570 - 00:52:48,320] happens if you combine quarks together.
+- [00:52:48,320 - 00:52:51,200] You could ask what happens if you
+- [00:52:51,200 - 00:52:54,080] combine gluons together, or gluons with quarks.
+- [00:52:54,080 - 00:52:55,980] I'm not going to go through the whole
+- [00:52:55,980 - 00:52:57,880] list of multiplication tables that you get when
+- [00:52:57,880 - 00:53:00,660] you combine all sorts of things, but
+- [00:53:00,660 - 00:53:03,440] there's certainly at least one more interesting thing,
+- [00:53:03,440 - 00:53:05,440] and that's an eight cross an eight.
+- [00:53:05,440 - 00:53:08,800] This is simply two gluons.
+- [00:53:08,800 - 00:53:09,800] Two gluons.
+- [00:53:09,800 - 00:53:10,800] Now it's not obvious.
+- [00:53:10,800 - 00:53:12,580] You get 63 states altogether.
+- [00:53:12,580 - 00:53:14,779] Eight cross eight.
+- [00:53:14,779 - 00:53:17,080] One of them is a singlet.
+- [00:53:17,080 - 00:53:22,340] What did I say, 63?
+- [00:53:22,340 - 00:53:23,340] 64 states.
+- [00:53:23,340 - 00:53:25,340] Did I say 63?
+- [00:53:25,340 - 00:53:26,500] Yeah.
+- [00:53:26,500 - 00:53:29,830] There are 64 states in eight cross eight,
+- [00:53:29,830 - 00:53:33,160] and the rest of them form 63 things which
+- [00:53:33,160 - 00:53:38,860] are a combination of eights and other things.
+- [00:53:38,860 - 00:53:40,299] Eight appears a number of times.
+- [00:53:40,299 - 00:53:41,299] I forget which.
+- [00:53:41,299 - 00:53:42,460] I don't remember which representation.
+- [00:53:42,580 - 00:53:43,580] Those are the two positions.
+- [00:53:43,580 - 00:53:44,580] So, that's the first equation.
+- [00:53:44,580 - 00:53:45,080] The second equation is the number of states
+- [00:53:45,080 - 00:53:45,580] that are together, but there is a number of
+- [00:53:45,580 - 00:53:46,580] states that are together.
+- [00:53:46,580 - 00:53:47,580] These are the two states.
+- [00:53:47,580 - 00:53:48,580] The number of states that are together.
+- [00:53:48,580 - 00:53:49,080] You might have heard of the number of
+- [00:53:49,080 - 00:53:49,580] states that are together, but there are 63 states.
+- [00:53:49,580 - 00:53:50,580] None of them are singlets.
+- [00:53:50,580 - 00:53:51,080] There's one way of combining
+- [00:53:51,080 - 00:53:51,580] together gluons to form singlets.
+- [00:53:51,580 - 00:53:56,610] So, you might ask, is there a
+- [00:53:56,610 - 00:54:01,640] particle which is composed of two gluons?
+- [00:54:01,640 - 00:54:03,750] Just two gluons bound together into an
+- [00:54:03,750 - 00:54:05,860] SU3 singlet, and the answer is yes.
+- [00:54:05,860 - 00:54:07,620] They're called glu-balls.
+- [00:54:07,620 - 00:54:09,840] They're not made of quarks.
+- [00:54:09,840 - 00:54:11,500] They don't have any quark content in them.
+- [00:54:11,500 - 00:54:12,460] They're made of quarks.
+- [00:54:12,580 - 00:54:16,180] They're fundamentally just a pair of gluons.
+- [00:54:16,180 - 00:54:18,220] You can also make three gluons, incidentally.
+- [00:54:18,220 - 00:54:21,259] It's possible also in, it's also
+- [00:54:21,259 - 00:54:24,299] possible to get more complicated things.
+- [00:54:24,299 - 00:54:27,299] But there are gluobals.
+- [00:54:27,299 - 00:54:29,819] So the spectrum of hadrons, the
+- [00:54:29,819 - 00:54:32,340] spectrum of strongly interacting particles which come
+- [00:54:32,340 - 00:54:37,610] from quarks and gluons, consists
+- [00:54:37,610 - 00:54:42,880] of baryons, mesons, and gluobals.
+- [00:54:42,880 - 00:54:46,440] All of them are color singlets.
+- [00:54:46,440 - 00:54:51,020] Color singlets is the watchword.
+- [00:54:51,020 - 00:54:56,000] Now another fact, another fact.
+- [00:54:56,000 - 00:54:57,500] You can check this yourself easily.
+- [00:54:57,500 - 00:54:59,240] I think we've actually checked it before.
+- [00:54:59,240 - 00:55:00,240] Remember now.
+- [00:55:00,240 - 00:55:02,240] All we can make is quark-anti-singlets.
+- [00:55:02,240 - 00:55:06,210] Quark-anti-quark, quark-quark-quark, or gluon-gluon,
+- [00:55:06,210 - 00:55:10,180] and combinations of those.
+- [00:55:10,180 - 00:55:12,710] What kind of electric charges do
+- [00:55:12,710 - 00:55:15,240] we get if we combine three quarks?
+- [00:55:15,240 - 00:55:21,680] Well, I think we can get charge two.
+- [00:55:21,680 - 00:55:26,620] Let's see, we can get zero, one, and two.
+- [00:55:26,620 - 00:55:29,430] We can get two by taking
+- [00:55:29,430 - 00:55:32,240] three up quarks, three down quarks.
+- [00:55:32,240 - 00:55:34,120] Sorry, what were three down quarks?
+- [00:55:34,120 - 00:55:37,439] Three down quarks is minus one.
+- [00:55:37,439 - 00:55:40,089] Three down quarks is minus one, and
+- [00:55:40,089 - 00:55:42,740] you have minus one, zero, one, and two.
+- [00:55:42,740 - 00:55:44,930] But the important point is you cannot
+- [00:55:44,930 - 00:55:47,120] make a fractional charge with three quarks.
+- [00:55:47,120 - 00:55:50,549] There is no way to take
+- [00:55:50,549 - 00:55:53,979] three quarks and make a fractional charge.
+- [00:55:53,979 - 00:55:55,279] What about a quark and an anti-quark?
+- [00:55:55,279 - 00:55:57,729] Well, again, you can take an up,
+- [00:55:57,729 - 00:56:00,180] and an anti-up, or two-thirds, and minus-thirths.
+- [00:56:00,180 - 00:56:01,180] Three quarks.
+- [00:56:01,180 - 00:56:02,180] Three quarks.
+- [00:56:02,240 - 00:56:03,240] Two-thirds and one-third.
+- [00:56:03,240 - 00:56:04,240] No, two-thirds and one-third.
+- [00:56:04,240 - 00:56:06,200] You know what the story is.
+- [00:56:06,200 - 00:56:08,200] And you can, again, make integer charges.
+- [00:56:08,200 - 00:56:10,440] I don't remember you telling us
+- [00:56:10,440 - 00:56:12,680] what the charge of a strange was.
+- [00:56:12,680 - 00:56:15,000] It's the same as the charge of a down.
+- [00:56:15,000 - 00:56:16,199] I did tell you because
+- [00:56:16,199 - 00:56:17,399] the way that I grouped them.
+- [00:56:17,399 - 00:56:19,240] I didn't remember.
+- [00:56:19,240 - 00:56:21,919] Yeah, it's the same as a down.
+- [00:56:21,919 - 00:56:24,939] All of the quarks are either up-like
+- [00:56:24,939 - 00:56:27,959] or down-like, and they come in three families.
+- [00:56:27,959 - 00:56:31,240] The up-to-down, the charm, the strange.
+- [00:56:31,240 - 00:56:32,240] Okay.
+- [00:56:32,240 - 00:56:35,190] And the top and the bottom, but
+- [00:56:35,190 - 00:56:38,140] they're three replicas of the same thing.
+- [00:56:38,140 - 00:56:41,859] So all you can make is integer-charged particles.
+- [00:56:41,859 - 00:56:44,749] And so from the point of view of
+- [00:56:44,749 - 00:56:47,640] color, the fact that you only have integer-charged particles
+- [00:56:47,640 - 00:56:52,160] in nature is the same statement as
+- [00:56:52,160 - 00:56:56,680] all the particles combine always into SU3 singlets,
+- [00:56:56,680 - 00:56:57,680] color singlets.
+- [00:56:57,680 - 00:56:58,680] Question about that.
+- [00:56:58,680 - 00:56:59,680] A singlet is like a pair of rectangular electrodes.
+- [00:56:59,680 - 00:57:00,680] It's like a pair of rectangular electrodes.
+- [00:57:00,680 - 00:57:01,680] It's like a pair of rectangular electrodes.
+- [00:57:01,680 - 00:57:02,200] Yeah.
+- [00:57:02,240 - 00:57:05,240] And is that any significance here?
+- [00:57:05,240 - 00:57:06,240] Yeah.
+- [00:57:06,240 - 00:57:11,839] Other than the way you transform them?
+- [00:57:11,839 - 00:57:15,089] Well, that is the way you make
+- [00:57:15,089 - 00:57:18,339] such states is to entangle them very definitely.
+- [00:57:18,339 - 00:57:20,339] They are certainly entangled.
+- [00:57:20,339 - 00:57:23,240] Does it have any, I'm not sure.
+- [00:57:23,240 - 00:57:25,740] You can't separate them separately and make a
+- [00:57:25,740 - 00:57:28,240] correlation zone like you can in Bell's theory.
+- [00:57:28,240 - 00:57:30,240] Well, you can't separate them
+- [00:57:30,240 - 00:57:32,240] because they get stuck together.
+- [00:57:32,240 - 00:57:35,740] But, you know, you can separate them as far as
+- [00:57:35,740 - 00:57:39,240] you like and it'll just cost you a lot of energy.
+- [00:57:39,240 - 00:57:45,240] So in principle, yes, they're entangled objects.
+- [00:57:45,240 - 00:57:46,240] Not easy to manipulate.
+- [00:57:46,240 - 00:57:48,240] You wouldn't want to try to do
+- [00:57:48,240 - 00:57:50,240] an experiment of that type with them.
+- [00:57:50,240 - 00:57:51,240] Question?
+- [00:57:51,240 - 00:57:56,240] I'm actually having trouble understanding those equations.
+- [00:57:56,240 - 00:57:58,240] Not the details of how you get it, but
+- [00:57:58,240 - 00:58:00,240] what the, you know, the, you know, the, you know,
+- [00:58:00,240 - 00:58:00,740] the, you know, the, you know, the, you know,
+- [00:58:00,740 - 00:58:01,240] the, you know, the, you know, the, you know,
+- [00:58:01,240 - 00:58:03,240] what the operations are.
+- [00:58:03,240 - 00:58:04,240] All right.
+- [00:58:04,240 - 00:58:05,240] Good.
+- [00:58:05,240 - 00:58:08,240] So the left-hand side got three cross three.
+- [00:58:08,240 - 00:58:09,240] Yeah.
+- [00:58:09,240 - 00:58:12,240] Which is the group three.
+- [00:58:12,240 - 00:58:15,240] The representation three.
+- [00:58:15,240 - 00:58:16,240] Okay.
+- [00:58:16,240 - 00:58:18,240] So let's, let me, let me tell
+- [00:58:18,240 - 00:58:20,240] you more mathematically what is going on here.
+- [00:58:20,240 - 00:58:21,240] That's sort of my question.
+- [00:58:21,240 - 00:58:22,240] Yeah.
+- [00:58:22,240 - 00:58:23,240] Okay.
+- [00:58:23,240 - 00:58:25,740] Let's take SU first, all right,
+- [00:58:25,740 - 00:58:28,240] and take two spin of halves.
+- [00:58:28,240 - 00:58:30,240] We can think of the two spin of halves.
+- [00:58:30,240 - 00:58:31,240] Okay.
+- [00:58:31,240 - 00:58:32,740] So let's take two spin of halves in
+- [00:58:32,740 - 00:58:34,240] terms of the field operators which create their
+- [00:58:34,240 - 00:58:35,240] particles.
+- [00:58:35,240 - 00:58:36,240] That's the easiest way to
+- [00:58:36,240 - 00:58:37,240] think about it for the moment.
+- [00:58:37,240 - 00:58:38,240] All right.
+- [00:58:38,240 - 00:58:40,740] So let's just call the field operator
+- [00:58:40,740 - 00:58:43,240] psi, and there are two components to it.
+- [00:58:43,240 - 00:58:46,240] The psi which creates a up spin
+- [00:58:46,240 - 00:58:49,240] and the psi which creates a down spin.
+- [00:58:49,240 - 00:58:53,740] Let's call them psi, psi i where i
+- [00:58:53,740 - 00:58:58,240] can take on two values either up or down.
+- [00:58:58,240 - 00:58:59,240] Okay.
+- [00:58:59,240 - 00:59:03,240] Now supposing we want to create two particles.
+- [00:59:03,240 - 00:59:07,240] If psi creates a particle, or psi dagger, doesn't matter.
+- [00:59:07,240 - 00:59:09,740] If psi creates a particle, how do we
+- [00:59:09,740 - 00:59:12,240] create two, psi creates a particle, we can think
+- [00:59:12,240 - 00:59:14,740] of the two components, we can think of it as
+- [00:59:14,740 - 00:59:17,240] psi one and psi two, or psi up and psi
+- [00:59:17,240 - 00:59:21,240] down.
+- [00:59:21,240 - 00:59:24,240] And the SU operations act on this.
+- [00:59:24,240 - 00:59:27,240] Now, that's one particle.
+- [00:59:27,240 - 00:59:28,240] How do we make two particles?
+- [00:59:28,240 - 00:59:31,240] Well, we act twice with psi.
+- [00:59:31,240 - 00:59:33,740] But we can act with psi
+- [00:59:33,740 - 00:59:36,240] up twice, that creates two up particles.
+- [00:59:36,240 - 00:59:37,740] We can act with psi down
+- [00:59:37,740 - 00:59:39,240] twice, that creates two down particles.
+- [00:59:39,240 - 00:59:45,240] Or we can do it one of each.
+- [00:59:45,240 - 00:59:50,240] So let's write psi i, psi j.
+- [00:59:50,240 - 00:59:52,740] In fact, these two operators don't really
+- [00:59:52,740 - 00:59:55,240] have to correspond to the same particle.
+- [00:59:55,240 - 00:59:56,240] Let's even, we could even think
+- [00:59:56,240 - 00:59:57,240] of one of them as a particle.
+- [00:59:57,240 - 00:59:58,740] We could even think of one of them as
+- [00:59:58,740 - 01:00:00,240] being the electron, the other being the proton and
+- [01:00:00,240 - 01:00:02,240] the hydrogen atom, for example.
+- [01:00:02,240 - 01:00:05,240] Let's see, let's even give them different names.
+- [01:00:05,240 - 01:00:07,240] Ah, psi and phi.
+- [01:00:07,240 - 01:00:09,240] They might be the same, they might not be.
+- [01:00:09,240 - 01:00:10,740] But let's, let's allow them
+- [01:00:10,740 - 01:00:12,240] to be different for the moment.
+- [01:00:12,240 - 01:00:14,240] Okay.
+- [01:00:14,240 - 01:00:18,240] So, this now is an object with two indices.
+- [01:00:18,240 - 01:00:20,240] It's an object with two indices.
+- [01:00:20,240 - 01:00:23,240] It's kind of like a tensor, if
+- [01:00:23,240 - 01:00:26,240] we were thinking about vectors in three-dimensional space.
+- [01:00:26,240 - 01:00:30,240] Tensors are objects with two vector indices.
+- [01:00:30,240 - 01:00:33,740] This object is like a tensor,
+- [01:00:33,740 - 01:00:37,240] in that it has repeated indices.
+- [01:00:37,240 - 01:00:40,740] Now, SU can operate on it, because
+- [01:00:40,740 - 01:00:44,240] SU operates on psi and acts on phi.
+- [01:00:44,240 - 01:00:47,240] This is a collection of four objects.
+- [01:00:47,240 - 01:00:51,240] Up, up, up, down, down, up, and down, down.
+- [01:00:51,240 - 01:00:54,240] So we could lay out those four.
+- [01:00:56,240 - 01:01:00,740] Psi up, psi up, psi-phi up, psi up,
+- [01:01:00,740 - 01:01:05,240] phi down, and so forth and so on.
+- [01:01:05,240 - 01:01:09,740] We could lay them out in an array, and then ask,
+- [01:01:09,740 - 01:01:14,240] what happens when you act with SU on this composite object here?
+- [01:01:14,240 - 01:01:16,240] Well, they get mixed up with each other.
+- [01:01:16,240 - 01:01:18,740] They get mixed up with each other for the simple
+- [01:01:18,740 - 01:01:21,240] reason that the sies get mixed up with each other,
+- [01:01:21,240 - 01:01:24,240] and the phis get mixed up with each other.
+- [01:01:24,240 - 01:01:26,240] And so, certainly, these psi times phi,
+- [01:01:26,240 - 01:01:27,740] these sies are going to
+- [01:01:27,740 - 01:01:29,240] get mixed up with each other.
+- [01:01:29,240 - 01:01:35,240] And there's going to be a 4x4 matrix,
+- [01:01:35,240 - 01:01:38,740] which represents the same action as
+- [01:01:38,740 - 01:01:42,240] just going through sies and phis separately
+- [01:01:42,240 - 01:01:45,240] and rotating them by the group action.
+- [01:01:45,240 - 01:01:47,240] Okay.
+- [01:01:47,240 - 01:01:49,240] Now, you look at these, at the
+- [01:01:49,240 - 01:01:51,240] way these things mix up with each other.
+- [01:01:51,240 - 01:01:52,740] You look at the way they mix up
+- [01:01:52,740 - 01:01:54,240] with each other, and you come to a discovery.
+- [01:01:54,240 - 01:01:56,240] You discover that the combination of these two things,
+- [01:01:56,240 - 01:01:59,240] the combination, let's see what it is,
+- [01:01:59,240 - 01:02:09,240] psi up, phi down, minus psi down, phi up,
+- [01:02:09,240 - 01:02:13,240] doesn't mix with anything else under this operation.
+- [01:02:13,240 - 01:02:16,240] It just goes into itself.
+- [01:02:16,240 - 01:02:18,240] It just goes into itself.
+- [01:02:18,240 - 01:02:20,240] This is an easy thing to check.
+- [01:02:20,240 - 01:02:24,240] You just see how SU acts on psi up.
+- [01:02:24,240 - 01:02:25,240] It mixes it with psi down.
+- [01:02:25,240 - 01:02:27,240] You see how it acts on phi down.
+- [01:02:27,240 - 01:02:31,240] And you check what happens to this particular combination.
+- [01:02:31,240 - 01:02:33,240] And the answer is nothing.
+- [01:02:33,240 - 01:02:36,240] So this is a singlet.
+- [01:02:36,240 - 01:02:38,240] This is a 1.
+- [01:02:38,240 - 01:02:40,240] The other three possibilities, what are they?
+- [01:02:40,240 - 01:02:44,240] They are psi up,
+- [01:02:44,240 - 01:02:51,240] phi down, plus psi down, phi up.
+- [01:02:51,240 - 01:02:52,240] This is a, I have not
+- [01:02:52,240 - 01:02:53,240] put in square roots of 2,
+- [01:02:53,240 - 01:02:54,240] but you could put in the
+- [01:02:54,240 - 01:02:55,240] square roots of 2 if you wanted.
+- [01:02:55,240 - 01:03:00,240] This is orthogonal to this.
+- [01:03:00,240 - 01:03:05,240] And then there's psi up, phi up,
+- [01:03:05,240 - 01:03:12,240] and psi down, phi down.
+- [01:03:12,240 - 01:03:14,240] What happens when you do the SU3,
+- [01:03:14,240 - 01:03:17,240] SU2 rotations on these states?
+- [01:03:17,240 - 01:03:21,240] They mix into each other.
+- [01:03:21,240 - 01:03:23,240] In particular ways, they will mix into each other.
+- [01:03:23,240 - 01:03:25,240] This is a,
+- [01:03:25,240 - 01:03:27,740] singlet does not get mixed
+- [01:03:27,740 - 01:03:30,240] with these three states at all.
+- [01:03:30,240 - 01:03:33,240] And these three states mix up among themselves
+- [01:03:33,240 - 01:03:36,240] as if they were a spin 1 object.
+- [01:03:36,240 - 01:03:38,240] They get mixed among each other.
+- [01:03:38,240 - 01:03:42,240] And this is then called the 3.
+- [01:03:42,240 - 01:03:45,240] Spin 1 has three states.
+- [01:03:45,240 - 01:03:48,240] These three mix up among themselves.
+- [01:03:48,240 - 01:03:51,240] This doesn't mix up with anything.
+- [01:03:51,240 - 01:03:53,240] So when you combine two half-spin states,
+- [01:03:53,240 - 01:03:56,240] that's, well,
+- [01:03:56,240 - 01:03:58,240] when you combine two half-spin states,
+- [01:03:58,240 - 01:04:01,240] you make a 1 or you make a 3,
+- [01:04:01,240 - 01:04:04,240] depending on which combination you take.
+- [01:04:04,240 - 01:04:06,240] You make a 1 or you make a 3.
+- [01:04:06,240 - 01:04:08,240] You make spin 1, sorry, you
+- [01:04:08,240 - 01:04:10,240] make spin 0 or spin 1.
+- [01:04:10,240 - 01:04:12,240] That's the sense in which
+- [01:04:12,240 - 01:04:14,240] these equations are being used here.
+- [01:04:14,240 - 01:04:21,240] When you combine together a quark and an anti-quark,
+- [01:04:21,240 - 01:04:23,240] there are nine different ways to do it.
+- [01:04:23,240 - 01:04:29,240] One of the linear combinations behaves in this way here,
+- [01:04:29,240 - 01:04:30,240] and it's a singlet,
+- [01:04:30,240 - 01:04:32,240] and the others transform into each other.
+- [01:04:32,240 - 01:04:34,240] Eight objects, eight additional objects
+- [01:04:34,240 - 01:04:36,240] will transform into each other.
+- [01:04:36,240 - 01:04:39,240] So that's the meaning of these equations here.
+- [01:04:39,240 - 01:04:42,240] How many of each kind of combination you get?
+- [01:04:42,240 - 01:04:48,240] Is that a neat thing?
+- [01:04:48,240 - 01:04:50,240] This multiplication table is neat.
+- [01:04:50,240 - 01:04:52,240] It could be 2 plus 7 if the...
+- [01:04:52,240 - 01:04:54,240] Say it again.
+- [01:04:54,240 - 01:04:55,240] Okay, so...
+- [01:04:55,240 - 01:04:56,240] You have to know some group...
+- [01:04:56,240 - 01:04:59,240] 3 plus 3, 2 plus 7, or...
+- [01:04:59,240 - 01:05:01,240] No, no, you have to know
+- [01:05:01,240 - 01:05:03,240] what the representations of SU are.
+- [01:05:03,240 - 01:05:05,240] We did a bit of work to
+- [01:05:05,240 - 01:05:07,240] find out what the representations of SU were,
+- [01:05:07,240 - 01:05:09,240] and they were all the spin half and spin,
+- [01:05:09,240 - 01:05:12,240] and integer spin particles.
+- [01:05:12,240 - 01:05:14,240] We could spend two more
+- [01:05:14,240 - 01:05:16,240] weeks studying SU and find out
+- [01:05:16,240 - 01:05:19,240] what the representations of SU are.
+- [01:05:19,240 - 01:05:20,240] What are...
+- [01:05:20,240 - 01:05:22,240] What matrix representations are there?
+- [01:05:22,240 - 01:05:24,740] There are not matrix
+- [01:05:24,740 - 01:05:27,240] representations of every dimensionality.
+- [01:05:27,240 - 01:05:30,240] There are matrix representations for SU that happen to be,
+- [01:05:30,240 - 01:05:32,240] for every dimensionality,
+- [01:05:32,240 - 01:05:34,240] a matrix representation of SU .
+- [01:05:34,240 - 01:05:36,240] For SU , not so.
+- [01:05:36,240 - 01:05:39,240] There's the singlet, there's the triplet,
+- [01:05:39,240 - 01:05:41,240] there's the antitriplet,
+- [01:05:41,240 - 01:05:43,240] there is the octet, the 8,
+- [01:05:43,240 - 01:05:46,240] there's a 10, there's a 15, there's a 20,
+- [01:05:46,240 - 01:05:47,240] there's a whole bunch of them,
+- [01:05:47,240 - 01:05:49,240] but not every number appears
+- [01:05:49,240 - 01:05:51,240] in the possible matrices
+- [01:05:51,240 - 01:05:55,240] which have the same multiplication table as SU .
+- [01:05:55,240 - 01:05:57,240] So that's a bit of work to prove.
+- [01:05:57,240 - 01:05:58,240] We didn't want to go there.
+- [01:05:58,240 - 01:05:59,240] I just went there by saying,
+- [01:05:59,240 - 01:06:01,240] all right, here's what you get.
+- [01:06:01,240 - 01:06:05,240] And, uh, but the real interesting point
+- [01:06:05,240 - 01:06:07,240] is the singlets that appear.
+- [01:06:07,240 - 01:06:09,240] The ways that you can combine quarks together
+- [01:06:09,240 - 01:06:12,240] to get combinations which don't rotate,
+- [01:06:12,240 - 01:06:17,240] or which are the analog of electrically neutral.
+- [01:06:17,240 - 01:06:19,240] Why do I say electrically neutral?
+- [01:06:19,240 - 01:06:21,240] Because electrically neutral are exactly the same things
+- [01:06:21,240 - 01:06:23,240] as the things that are electrically neutral.
+- [01:06:23,240 - 01:06:26,240] They're exactly the objects which don't transform
+- [01:06:26,240 - 01:06:28,240] under that U1,
+- [01:06:28,240 - 01:06:32,240] the things which the phase cancels out of.
+- [01:06:32,240 - 01:06:36,240] Remember? Go back again to electrodynamics.
+- [01:06:36,240 - 01:06:38,240] The things which are electrically neutral
+- [01:06:38,240 - 01:06:42,240] are the combinations where all the phases cancel out.
+- [01:06:42,240 - 01:06:45,240] If an electron has an e to the i theta,
+- [01:06:45,240 - 01:06:48,240] and a positron an e to the minus i theta,
+- [01:06:48,240 - 01:06:50,240] then an electron and a positron,
+- [01:06:50,240 - 01:06:52,240] are neutral.
+- [01:06:52,240 - 01:06:55,240] Don't transform at all.
+- [01:06:55,240 - 01:06:59,240] Two electrons, that gets an e to the 2i theta.
+- [01:06:59,240 - 01:07:01,240] So it's not called neutral.
+- [01:07:01,240 - 01:07:05,240] Or it's not called, or it transforms under the group.
+- [01:07:05,240 - 01:07:07,240] So singlets are important,
+- [01:07:07,240 - 01:07:10,240] but you should just think of them as neutral objects
+- [01:07:10,240 - 01:07:14,240] with respect to the, uh, to the transformation properties.
+- [01:07:14,240 - 01:07:18,240] And, uh...
+- [01:07:18,240 - 01:07:19,240] I mean, is there a possibility,
+- [01:07:19,240 - 01:07:22,240] that you could just show what that singlet,
+- [01:07:22,240 - 01:07:24,240] uh, that, that transformation?
+- [01:07:24,240 - 01:07:27,240] Uh, just one example there? Is that, uh...
+- [01:07:27,240 - 01:07:29,240] Oh, we can go through it, yeah.
+- [01:07:29,240 - 01:07:30,240] Uh...
+- [01:07:30,240 - 01:07:31,240] Maybe it's too much.
+- [01:07:31,240 - 01:07:34,240] It is a little too much, but, um...
+- [01:07:34,240 - 01:07:36,240] Okay, that's fine.
+- [01:07:36,240 - 01:07:37,240] Yeah.
+- [01:07:37,240 - 01:07:38,240] Uh...
+- [01:07:38,240 - 01:07:40,240] All right, one simple way to see it.
+- [01:07:40,240 - 01:07:43,240] I don't know if this will help you at all.
+- [01:07:43,240 - 01:07:44,240] Uh...
+- [01:07:44,240 - 01:07:48,240] If we write, just write this object here, epsilon.
+- [01:07:48,240 - 01:07:49,240] You know what epsilon is?
+- [01:07:49,240 - 01:07:52,240] What epsilon ij is?
+- [01:07:52,240 - 01:07:54,740] It's the 2x2 matrix, which
+- [01:07:54,740 - 01:07:57,240] is, uh, the anti-symmetric matrix.
+- [01:07:57,240 - 01:07:58,240] Yeah.
+- [01:07:58,240 - 01:07:59,240] Um...
+- [01:07:59,240 - 01:08:01,240] And contract the indices this way.
+- [01:08:01,240 - 01:08:03,240] It's, uh, that, that's equal to this.
+- [01:08:03,240 - 01:08:05,240] That's equal to this.
+- [01:08:05,240 - 01:08:07,240] And it's easy to prove that this is a...
+- [01:08:07,240 - 01:08:08,240] Oh, okay.
+- [01:08:08,240 - 01:08:12,240] This...
+- [01:08:12,240 - 01:08:14,240] Uh, I'll just spend a moment at it.
+- [01:08:14,240 - 01:08:16,240] In every dimensionality,
+- [01:08:16,240 - 01:08:18,240] for matrix dimensionality,
+- [01:08:18,240 - 01:08:20,240] there is always an epsilon symbol,
+- [01:08:20,240 - 01:08:22,240] which has a certain number of indices.
+- [01:08:22,240 - 01:08:24,240] For 2x2 matrices, the epsilon symbol...
+- [01:08:24,240 - 01:08:27,240] And the epsilon symbol is the anti-symmetric,
+- [01:08:27,240 - 01:08:30,240] uh, the fully anti-symmetric matrix
+- [01:08:30,240 - 01:08:32,240] composed out of zeros and ones.
+- [01:08:32,240 - 01:08:33,240] Okay?
+- [01:08:33,240 - 01:08:34,240] All right.
+- [01:08:34,240 - 01:08:38,240] Epsilon ij is the 2x2 matrix.
+- [01:08:38,240 - 01:08:41,240] What about for, what about for, uh, 3x3 matrices
+- [01:08:41,240 - 01:08:43,240] in a three-dimensional?
+- [01:08:43,240 - 01:08:45,240] And it's epsilon ijk.
+- [01:08:45,240 - 01:08:47,240] Requires three indices.
+- [01:08:47,240 - 01:08:48,240] All right?
+- [01:08:48,240 - 01:08:49,240] So I'll tell you right now,
+- [01:08:49,240 - 01:08:50,240] if you take an SU3,
+- [01:08:50,240 - 01:08:52,240] epsilon ijk,
+- [01:08:52,240 - 01:08:53,240] and let's call it...
+- [01:08:53,240 - 01:08:55,240] What did we call the quark fields?
+- [01:08:55,240 - 01:08:56,240] Q?
+- [01:08:56,240 - 01:09:00,240] Qi, qj, qk.
+- [01:09:00,240 - 01:09:05,240] Then you make the three-quark singlet,
+- [01:09:05,240 - 01:09:07,240] which has no color.
+- [01:09:07,240 - 01:09:09,240] ij and k have to
+- [01:09:09,240 - 01:09:11,240] all be different from each other.
+- [01:09:11,240 - 01:09:13,240] Otherwise, this is zero.
+- [01:09:13,240 - 01:09:14,740] So that's why I said a
+- [01:09:14,740 - 01:09:16,240] red, a green, and a blue.
+- [01:09:16,240 - 01:09:18,240] Uh, make a singlet.
+- [01:09:18,240 - 01:09:19,240] Okay.
+- [01:09:19,240 - 01:09:21,240] Well, uh, I, I...
+- [01:09:21,240 - 01:09:23,240] We don't want to make Alice suffer too much tonight.
+- [01:09:23,240 - 01:09:24,240] Um...
+- [01:09:24,240 - 01:09:25,240] For what it's worth,
+- [01:09:25,240 - 01:09:26,740] I just happened to bump
+- [01:09:26,740 - 01:09:28,240] into this in this other book,
+- [01:09:28,240 - 01:09:32,240] uh, that 8 x 8 equals 27.
+- [01:09:32,240 - 01:09:33,240] Oh, let's write it down.
+- [01:09:33,240 - 01:09:35,240] Okay, 8 x 8.
+- [01:09:35,240 - 01:09:36,240] All right, so that means when you,
+- [01:09:36,240 - 01:09:38,240] when you take two 8s and put them together,
+- [01:09:38,240 - 01:09:40,240] in other words, two gluons,
+- [01:09:40,240 - 01:09:42,240] you first of all make a singlet.
+- [01:09:42,240 - 01:09:43,240] What else?
+- [01:09:43,240 - 01:09:45,240] Plus 8 plus 8 plus 10.
+- [01:09:45,240 - 01:09:46,240] Well, say it again.
+- [01:09:46,240 - 01:09:48,240] 8 plus 8 plus 8.
+- [01:09:48,240 - 01:09:50,240] Okay, I'll tell you what this means in a minute.
+- [01:09:50,240 - 01:09:52,240] Plus 10 plus 10.
+- [01:09:52,240 - 01:09:53,240] Plus 10 plus 10?
+- [01:09:53,240 - 01:09:54,240] Right.
+- [01:09:54,240 - 01:09:55,240] Okay.
+- [01:09:55,240 - 01:09:57,240] All right, so let's see.
+- [01:09:57,240 - 01:09:58,240] Is that right?
+- [01:09:58,240 - 01:09:59,240] Uh, 10 and 10 is 20,
+- [01:09:59,240 - 01:10:01,240] and 8 and 8, uh, this should make, uh...
+- [01:10:03,240 - 01:10:06,240] Well, well, well, 8 x 8 is 64.
+- [01:10:06,240 - 01:10:08,240] Oh, it's plus 27.
+- [01:10:08,240 - 01:10:10,240] It's not equal, equal to, yeah,
+- [01:10:10,240 - 01:10:12,240] it's plus 27 at the end.
+- [01:10:12,240 - 01:10:14,240] You say there's a plus of 27?
+- [01:10:14,240 - 01:10:16,240] Does that make 63?
+- [01:10:16,240 - 01:10:18,240] I can't tell.
+- [01:10:19,240 - 01:10:20,240] Is that 64?
+- [01:10:20,240 - 01:10:21,240] Yeah.
+- [01:10:21,240 - 01:10:22,240] Okay, good.
+- [01:10:22,240 - 01:10:23,240] All right.
+- [01:10:23,240 - 01:10:25,240] All right, so for your information,
+- [01:10:25,240 - 01:10:27,240] this is a fact I know.
+- [01:10:27,240 - 01:10:30,240] I know the representations of SU up to 27.
+- [01:10:30,240 - 01:10:32,240] I think there's a 35, but I don't remember.
+- [01:10:32,240 - 01:10:34,240] Uh, but...
+- [01:10:34,240 - 01:10:36,240] Another 10?
+- [01:10:36,240 - 01:10:37,240] Another 10?
+- [01:10:37,240 - 01:10:39,240] Uh, we don't, we're not up to 60?
+- [01:10:39,240 - 01:10:40,240] No, okay.
+- [01:10:40,240 - 01:10:41,240] We're not up to 60.
+- [01:10:41,240 - 01:10:42,240] We're not up to 60.
+- [01:10:42,240 - 01:10:43,240] We're not up to 60.
+- [01:10:43,240 - 01:10:44,240] Okay.
+- [01:10:44,240 - 01:10:45,240] All right.
+- [01:10:45,240 - 01:10:47,740] So what this means is, first of
+- [01:10:47,740 - 01:10:50,240] all, there is one and only one combination,
+- [01:10:50,240 - 01:10:55,240] quantum, quantum superposition of states of two gluons,
+- [01:10:55,240 - 01:10:57,240] which makes a singlet.
+- [01:10:57,240 - 01:10:58,240] One and only one.
+- [01:10:58,240 - 01:10:59,240] And that's the glue ball.
+- [01:10:59,240 - 01:11:02,740] Then it turns out there are
+- [01:11:02,740 - 01:11:06,240] two orthogonal ways of making octets.
+- [01:11:06,240 - 01:11:12,240] Two, that's 16 states altogether, but they form two groups,
+- [01:11:12,240 - 01:11:14,240] and the first group mixes into
+- [01:11:14,240 - 01:11:16,240] themselves without mixing into the second.
+- [01:11:16,240 - 01:11:18,240] The second group mixes into
+- [01:11:18,240 - 01:11:20,240] itself without mixing into the first,
+- [01:11:20,240 - 01:11:23,240] and both of them form octets.
+- [01:11:23,240 - 01:11:25,240] Different combinations, different patterns of symmetry
+- [01:11:25,240 - 01:11:27,240] of the wave function of the,
+- [01:11:27,240 - 01:11:30,240] of the state of the two,
+- [01:11:30,240 - 01:11:33,240] of the two, um, gluon system.
+- [01:11:33,240 - 01:11:38,240] Then there's something called a 10.
+- [01:11:38,240 - 01:11:40,240] And again, there are two distinct
+- [01:11:40,240 - 01:11:42,240] ways of combining the gluons together
+- [01:11:42,240 - 01:11:43,740] like tens, but who cares about tens
+- [01:11:43,740 - 01:11:45,240] because they don't appear in nature anyway.
+- [01:11:45,240 - 01:11:48,240] And then there's a 27 dimensional representation.
+- [01:11:48,240 - 01:11:51,240] How about in three cross three cross three?
+- [01:11:51,240 - 01:11:52,240] Okay.
+- [01:11:52,240 - 01:11:53,240] Okay.
+- [01:11:53,240 - 01:11:56,240] So there's a singlet.
+- [01:11:56,240 - 01:11:57,240] I don't know.
+- [01:11:57,240 - 01:11:58,240] I, I don't know.
+- [01:11:58,240 - 01:12:01,240] We had them written down, but I don't remember.
+- [01:12:01,240 - 01:12:02,240] Can I ask a question?
+- [01:12:02,240 - 01:12:04,740] Is it fair to say that,
+- [01:12:04,740 - 01:12:07,240] that what happens if you change the,
+- [01:12:07,240 - 01:12:09,240] sort of the basis of
+- [01:12:09,240 - 01:12:11,240] the, of the thing to the,
+- [01:12:11,240 - 01:12:14,240] let's go back to the spin two case,
+- [01:12:14,240 - 01:12:16,740] to the, to the singlet and the triplet
+- [01:12:16,740 - 01:12:19,240] and the two up, up, up, down, down.
+- [01:12:19,240 - 01:12:20,240] Wait a second.
+- [01:12:20,240 - 01:12:21,240] Where are we going?
+- [01:12:21,240 - 01:12:22,240] Where are we?
+- [01:12:22,240 - 01:12:23,240] Oh, it may have gotten worse.
+- [01:12:23,240 - 01:12:24,240] Here?
+- [01:12:24,240 - 01:12:25,240] Yeah.
+- [01:12:25,240 - 01:12:26,240] All right.
+- [01:12:26,240 - 01:12:28,740] So you have that and, so, so
+- [01:12:28,740 - 01:12:31,240] use those four things as, as a basis.
+- [01:12:31,240 - 01:12:34,240] Then the matrix which describes
+- [01:12:34,240 - 01:12:37,240] the operation factors into a,
+- [01:12:37,240 - 01:12:40,240] has, has, has one zero, zero, zero, zero.
+- [01:12:40,240 - 01:12:44,240] And then a, a, let's see, yes, and
+- [01:12:44,240 - 01:12:48,240] a, and a, and a lower part that is,
+- [01:12:48,240 - 01:12:50,740] that moves, that moves the, that
+- [01:12:50,740 - 01:12:53,240] exchange, moves the three among themselves.
+- [01:12:53,240 - 01:12:54,740] So the make, you can describe it
+- [01:12:54,740 - 01:12:56,240] in terms of how, how the matrix looks.
+- [01:12:56,240 - 01:13:00,740] If you just work in terms of the basis vectors up, up,
+- [01:13:00,740 - 01:13:05,240] up, down, up, up, up, up, down, down, up, and down, down,
+- [01:13:05,240 - 01:13:07,240] then there's a certain set of four,
+- [01:13:07,240 - 01:13:09,240] four by four matrices which represent the group.
+- [01:13:09,240 - 01:13:10,240] All right.
+- [01:13:10,240 - 01:13:13,740] But if you work in terms of these linear
+- [01:13:13,740 - 01:13:17,240] combinations, this one, this one, this one, and this one,
+- [01:13:17,240 - 01:13:22,240] then the matrices have exactly the property that you say.
+- [01:13:22,240 - 01:13:25,240] There's a one over here and then
+- [01:13:25,240 - 01:13:28,240] a three by three matrices down here.
+- [01:13:28,240 - 01:13:29,240] Right.
+- [01:13:29,240 - 01:13:31,240] And the same thing for this other case here.
+- [01:13:31,240 - 01:13:32,240] There's a one.
+- [01:13:32,240 - 01:13:33,240] Yeah.
+- [01:13:33,240 - 01:13:34,240] That's right.
+- [01:13:34,240 - 01:13:35,240] That's right.
+- [01:13:35,240 - 01:13:37,740] The matrices, the big eight, the big 64
+- [01:13:37,740 - 01:13:40,240] by 64 dimensional matrices break up into a bunch.
+- [01:13:40,240 - 01:13:42,240] A bunch of blocks.
+- [01:13:42,240 - 01:13:43,240] Block diagonal.
+- [01:13:43,240 - 01:13:44,240] Right.
+- [01:13:44,240 - 01:13:46,240] It's block diagonal in a particular basis.
+- [01:13:46,240 - 01:13:47,240] In the basis.
+- [01:13:47,240 - 01:13:48,240] Right, in the basis.
+- [01:13:48,240 - 01:13:49,240] That's right.
+- [01:13:49,240 - 01:13:50,240] That's right.
+- [01:13:50,240 - 01:13:51,740] In fact, what you're saying
+- [01:13:51,740 - 01:13:53,240] is that there exists a basis.
+- [01:13:53,240 - 01:13:54,240] Exactly.
+- [01:13:54,240 - 01:13:55,240] In which this complicated matrix.
+- [01:13:55,240 - 01:13:56,240] That's right.
+- [01:13:56,240 - 01:13:57,240] Simplifies into block diagonal.
+- [01:13:57,240 - 01:13:58,240] That's right.
+- [01:13:58,240 - 01:13:59,240] So there are 64 states.
+- [01:13:59,240 - 01:13:59,740] So the SU three operation has to be
+- [01:13:59,740 - 01:14:00,240] represented on the two, on the two gluons.
+- [01:14:00,240 - 01:14:01,240] Well just to make it simple.
+- [01:14:01,240 - 01:14:02,240] So you're saying that it's 2.
+- [01:14:02,240 - 01:14:03,240] Right.
+- [01:14:09,240 - 01:14:13,360] on the two-gluon system as 64 by 64 dimensional matrices.
+- [01:14:14,519 - 01:14:18,880] But in some basis, those 64 by 64 dimensional matrices
+- [01:14:18,880 - 01:14:23,620] are a 1, an 8 by 8 matrix over here,
+- [01:14:24,559 - 01:14:26,880] another 8 by 8 matrix over here,
+- [01:14:27,460 - 01:14:29,620] then a 10 by 10, I don't have enough room,
+- [01:14:29,620 - 01:14:31,609] another 10 by 10 matrix, and
+- [01:14:31,609 - 01:14:33,599] then a 27 matrix down there.
+- [01:14:34,019 - 01:14:36,700] In a particular basis, that's exactly right.
+- [01:14:36,700 - 01:14:41,740] So each one of those doesn't mix the other ones?
+- [01:14:41,820 - 01:14:42,320] That's right.
+- [01:14:43,320 - 01:14:45,679] That's right.
+- [01:14:45,880 - 01:14:48,820] In the right basis, they don't get mixed.
+- [01:14:48,880 - 01:14:50,170] This one doesn't get mixed with this
+- [01:14:50,170 - 01:14:51,460] one, doesn't get mixed with this one.
+- [01:14:51,500 - 01:14:53,420] They only get mixed
+- [01:14:53,420 - 01:14:55,340] together as an 8-dimensional representation.
+- [01:14:55,660 - 01:14:59,660] Is there a label or a name for that
+- [01:14:59,660 - 01:15:03,660] type of subset of the total 64 by 64?
+- [01:15:03,660 - 01:15:04,300] Is that basis?
+- [01:15:06,700 - 01:15:10,540] You mean for a piece of it like this?
+- [01:15:10,540 - 01:15:12,540] Yeah, whether that holds that or not.
+- [01:15:17,320 - 01:15:18,320] Well, when you multiply...
+- [01:15:19,059 - 01:15:22,540] I'm not sure what the right buzzword...
+- [01:15:24,639 - 01:15:26,529] I think you're looking for a particular
+- [01:15:26,529 - 01:15:28,420] term which is escaping me right now.
+- [01:15:29,200 - 01:15:30,500] In fact, I don't think such a
+- [01:15:30,500 - 01:15:31,800] term exists, but I know what you mean.
+- [01:15:36,700 - 01:15:38,700] When you say particles...
+- [01:15:38,700 - 01:15:41,700] The 10 particles don't exist in nature,
+- [01:15:42,240 - 01:15:44,310] and the others, it says
+- [01:15:44,310 - 01:15:46,380] that you've declared non-existent natures,
+- [01:15:46,460 - 01:15:47,320] and you don't care about them.
+- [01:15:47,860 - 01:15:50,280] Well, maybe you shouldn't say you shouldn't care about them,
+- [01:15:50,280 - 01:15:54,040] but they won't appear as real particles in the laboratory.
+- [01:15:55,460 - 01:15:58,170] We're going to talk about
+- [01:15:58,170 - 01:16:00,880] what creates this peculiar situation
+- [01:16:00,880 - 01:16:02,640] that you can't have a free quark
+- [01:16:02,640 - 01:16:04,400] by itself, but we'll come to that.
+- [01:16:05,820 - 01:16:06,280] So let's...
+- [01:16:06,700 - 01:16:07,700] Let's talk about it a little bit.
+- [01:16:09,980 - 01:16:11,970] Incidentally, the quantum chromodynamics idea
+- [01:16:11,970 - 01:16:13,960] goes back a long ways.
+- [01:16:14,099 - 01:16:15,240] It goes back a some time.
+- [01:16:16,880 - 01:16:20,780] I know it's due to Nambu, the Yoichiro Nambu.
+- [01:16:22,639 - 01:16:26,340] And Nambu had the idea quite about 1962,
+- [01:16:27,040 - 01:16:30,780] quite maybe a good 10 years before quantum chromodynamics
+- [01:16:31,320 - 01:16:35,580] became the standard theory of quarks and gluons.
+- [01:16:36,700 - 01:16:38,169] In fact, the whole idea
+- [01:16:38,169 - 01:16:39,639] of color goes back to him.
+- [01:16:39,740 - 01:16:40,580] He didn't call it color.
+- [01:16:40,700 - 01:16:41,639] I don't know what he called it.
+- [01:16:42,320 - 01:16:45,360] And the idea of gluons also in the same idea.
+- [01:16:45,880 - 01:16:48,519] And his idea was fairly simple.
+- [01:16:48,519 - 01:16:52,120] He understood that if you made color singlets,
+- [01:16:52,380 - 01:16:55,540] then you would not get fractionally charged particles.
+- [01:16:55,679 - 01:16:56,639] That was his motivation.
+- [01:16:56,920 - 01:17:00,160] What do you have to add into quantum chroma...
+- [01:17:00,160 - 01:17:02,570] into the theory of quarks
+- [01:17:02,570 - 01:17:04,980] in order to have some dynamics
+- [01:17:04,980 - 01:17:06,519] which will forbid particles?
+- [01:17:06,700 - 01:17:08,920] Particles of fractional charge.
+- [01:17:09,580 - 01:17:12,129] So he realized that if the quarks
+- [01:17:12,129 - 01:17:14,679] carried this kind of color quantum number,
+- [01:17:14,880 - 01:17:18,000] and if the color always had to be a singlet,
+- [01:17:19,320 - 01:17:25,920] then you would never get fractionally charged particles.
+- [01:17:26,800 - 01:17:30,110] He had an answer to the question
+- [01:17:30,110 - 01:17:33,420] of why particles should only occur in singlets,
+- [01:17:33,519 - 01:17:34,599] and it went something like this.
+- [01:17:35,360 - 01:17:35,639] He said,
+- [01:17:36,700 - 01:17:40,080] All right, now we need another postulate,
+- [01:17:40,080 - 01:17:43,560] and the other postulate is the connection
+- [01:17:43,560 - 01:17:47,040] or the interaction between quarks and gluons.
+- [01:17:49,519 - 01:17:52,549] The postulate is that gluons play
+- [01:17:52,549 - 01:17:55,580] the same role in quantum chromodynamics
+- [01:17:55,580 - 01:18:00,800] that photons do in electrodynamics,
+- [01:18:01,099 - 01:18:04,320] but photons couple to the electric charge.
+- [01:18:04,320 - 01:18:06,620] The source of the photon field is...
+- [01:18:06,620 - 01:18:08,030] I said consonants, and it's
+- [01:18:08,030 - 01:18:09,440] fun to get rid of them,
+- [01:18:09,440 - 01:18:11,059] there's a new one called cube effect,
+- [01:18:11,059 - 01:18:13,309] and on these chords you do
+- [01:18:13,309 - 01:18:15,559] a sub à plus of add Racian,
+- [01:18:15,840 - 01:18:21,000] with radian and ion allegrological rules.
+- [01:18:21,000 - 01:18:24,410] This way you know that football
+- [01:18:24,410 - 01:18:27,820] players are playing the same issue,
+- [01:18:28,200 - 01:18:29,160] which isification,
+- [01:18:29,160 - 01:18:30,360] wp,
+- [01:18:30,599 - 01:18:31,800] O,
+- [01:18:32,099 - 01:18:33,320] I forgot the slash,
+- [01:18:33,320 - 01:18:34,480] O,
+- [01:18:34,580 - 01:18:35,500] 있는데요17OhM buying it.
+- [01:18:35,500 - 01:18:35,800] Take a break.
+- [01:18:35,800 - 01:18:41,680] correspond to fields which are similar in some sense to
+- [01:18:41,680 - 01:18:46,460] to the photons or to the electromagnetic field
+- [01:18:46,460 - 01:18:50,320] the electromagnetic field is sourced by electric charge
+- [01:18:50,320 - 01:18:54,380] what is the source of the gluon field
+- [01:18:54,380 - 01:18:57,720] well what eight quantities do we have available the eight
+- [01:18:57,720 - 01:19:02,020] generators of SU which are
+- [01:19:02,020 - 01:19:05,940] analogous to angular momentum for SU
+- [01:19:05,940 - 01:19:08,170] angular momentum is a conserved quantity
+- [01:19:08,170 - 01:19:10,400] it's additive if you have two objects
+- [01:19:10,400 - 01:19:12,900] you add their angular momentum
+- [01:19:12,900 - 01:19:16,380] and color really means
+- [01:19:16,380 - 01:19:18,330] when you speak of the color of
+- [01:19:18,330 - 01:19:20,280] an object you're speaking about how it transforms
+- [01:19:20,280 - 01:19:21,340] under the group
+- [01:19:21,340 - 01:19:24,940] but the actual thing which radiates
+- [01:19:24,940 - 01:19:28,140] the thing which radiates the gluon field
+- [01:19:28,140 - 01:19:30,080] is the color itself or the color
+- [01:19:30,080 - 01:19:32,020] itself or the generators of the color group
+- [01:19:32,020 - 01:19:37,240] eight of them and each one can emit
+- [01:19:37,240 - 01:19:41,400] the appropriate kind of gluon
+- [01:19:41,400 - 01:19:44,350] the first meaning of this is that if
+- [01:19:44,350 - 01:19:47,300] you take a colored object such as a quark
+- [01:19:47,300 - 01:19:54,300] it's going to be surrounded by a gluon field
+- [01:19:55,740 - 01:19:58,980] so much like electrodynamics
+- [01:19:58,980 - 01:20:00,000] uh... the
+- [01:20:00,000 - 01:20:00,020] the
+- [01:20:00,020 - 01:20:00,420] the
+- [01:20:00,420 - 01:20:00,520] the
+- [01:20:00,520 - 01:20:01,020] the
+- [01:20:01,020 - 01:20:01,620] the
+- [01:20:01,620 - 01:20:02,020] the
+- [01:20:02,020 - 01:20:04,100] seeing
+- [01:20:05,880 - 01:20:07,920] quantum chromodynamics
+- [01:20:07,920 - 01:20:10,520] replaces the electromagnetic field
+- [01:20:10,520 - 01:20:11,860] with a quantum chromo
+- [01:20:11,860 - 01:20:14,380] then with a chromodynamic field
+- [01:20:14,380 - 01:20:16,080] but the only thing new about it
+- [01:20:16,080 - 01:20:17,900] is that there are eight such fields
+- [01:20:17,900 - 01:20:19,700] and the eight such fields
+- [01:20:19,700 - 01:20:22,160] transform the same way under that same
+- [01:20:22,160 - 01:20:25,600] eight that's associated with the eight gluons
+- [01:20:25,600 - 01:20:27,980] ok so that's the first thing
+- [01:20:27,980 - 01:20:31,380] now the second thing is to know something about
+- [01:20:31,380 - 01:20:31,880] ah
+- [01:20:32,020 - 01:20:36,020] about the dynamics of electromagnetism
+- [01:20:38,020 - 01:20:43,020] Let's begin with a charge and an anti-charge
+- [01:20:44,020 - 01:20:48,020] A charge and an anti-charge attract each other
+- [01:20:48,020 - 01:20:50,520] The meaning of that is that if you
+- [01:20:50,520 - 01:20:53,020] bring them close together, the energy goes down
+- [01:20:54,020 - 01:20:57,020] So a charge and an anti-charge have less energy if
+- [01:20:57,020 - 01:21:00,020] they're close together than they are if they're far apart
+- [01:21:00,020 - 01:21:03,020] That's why they bind, that's why they bind
+- [01:21:03,020 - 01:21:06,520] Because the energy of a neutral system is
+- [01:21:06,520 - 01:21:10,020] less than the energy of the two charge
+- [01:21:10,020 - 01:21:13,020] Well, the energy of a neutral system is lower
+- [01:21:13,020 - 01:21:16,020] than the energy of a charge system as a rule
+- [01:21:16,020 - 01:21:19,020] For example, the energy of two plus charges is much more
+- [01:21:19,020 - 01:21:22,020] than the energy of a plus charge and a minus charge
+- [01:21:22,020 - 01:21:23,520] How do I know that? Because
+- [01:21:23,520 - 01:21:25,020] the two plus charges repel each other
+- [01:21:25,020 - 01:21:27,020] You have to do work to
+- [01:21:27,020 - 01:21:29,020] push the two plus charges together
+- [01:21:29,020 - 01:21:31,520] You get work out of letting a
+- [01:21:31,520 - 01:21:34,020] plus charge fall towards a minus charge
+- [01:21:35,020 - 01:21:39,520] So here's an example where a system with a net charge
+- [01:21:39,520 - 01:21:44,020] has more energy than a system in which the charges cancel out
+- [01:21:45,020 - 01:21:49,020] Another way to think about it is if you have
+- [01:21:49,020 - 01:21:53,020] two plus charges, the lines of force have to go somewheres
+- [01:21:57,020 - 01:21:58,020] And so there's net field
+- [01:21:59,020 - 01:22:01,020] Out beyond the object
+- [01:22:01,020 - 01:22:03,020] That net field has field energy
+- [01:22:05,020 - 01:22:07,020] Field energy is always positive, it's proportional
+- [01:22:07,020 - 01:22:09,020] to the square of the electric field
+- [01:22:09,020 - 01:22:12,020] And so there's field energy stored in the
+- [01:22:12,020 - 01:22:15,020] fact that there are two plus charges here
+- [01:22:15,020 - 01:22:17,020] If there was a plus charge and a
+- [01:22:17,020 - 01:22:19,020] minus charge, there might be field in between them
+- [01:22:19,020 - 01:22:22,020] And let's suppose you brought them very close together
+- [01:22:22,020 - 01:22:24,520] There might be a little dipole field in there,
+- [01:22:24,520 - 01:22:27,020] but there would be no field on the outside
+- [01:22:27,020 - 01:22:30,020] There would be no large field energy on the outside
+- [01:22:30,020 - 01:22:35,020] And so the field energy stored in a neutral system
+- [01:22:35,020 - 01:22:40,020] is less than the field energy stored in a charge system
+- [01:22:40,020 - 01:22:45,520] The larger the charge of the electron, the more profitable
+- [01:22:45,520 - 01:22:51,020] it is, let's say, to have a neutral system energetically
+- [01:22:51,020 - 01:22:53,020] Or the less profitable or the more expensive it
+- [01:22:53,020 - 01:22:55,020] is in energy to have a neutral system energetically
+- [01:22:55,020 - 01:22:57,020] Or the less profitable or the more expensive it
+- [01:22:57,020 - 01:22:59,020] is in energy to have a net charge system
+- [01:22:59,020 - 01:23:02,520] So the bigger the electric charge, if the electric charge
+- [01:23:02,520 - 01:23:06,020] of the electron was a thousand times bigger than it is
+- [01:23:06,020 - 01:23:09,020] The self energy of the electron, due to the
+- [01:23:09,020 - 01:23:12,020] electromagnetic field, would be much bigger than it is
+- [01:23:12,020 - 01:23:15,020] In fact, the repulsive force between two plus
+- [01:23:15,020 - 01:23:18,020] charges would be much, much stronger than it is
+- [01:23:18,020 - 01:23:20,520] And the amount of energy it would take to
+- [01:23:20,520 - 01:23:23,020] assemble two plus charges would be very much bigger
+- [01:23:23,020 - 01:23:24,020] Than the energy needed for a plus charge system
+- [01:23:25,020 - 01:23:26,020] So the large charge of the
+- [01:23:26,020 - 01:23:27,020] electron would be a minus charge system
+- [01:23:27,020 - 01:23:30,520] The huge charge of the electron would then
+- [01:23:30,520 - 01:23:34,020] make it very, very prohibitive to have net charge
+- [01:23:34,020 - 01:23:37,020] And very, very efficient, low energy,
+- [01:23:37,020 - 01:23:40,020] to have all charges cancel out
+- [01:23:40,020 - 01:23:43,520] So if the coupling constant
+- [01:23:43,520 - 01:23:47,020] of electrodynamics were large, very large
+- [01:23:47,020 - 01:23:50,020] We would be very used to the idea that the
+- [01:23:50,020 - 01:23:53,020] low energy particles, the low mass, mass is energy of course
+- [01:23:53,020 - 01:23:55,020] The low mass particles in nature would be very large
+- [01:23:55,020 - 01:23:59,020] The low mass objects in nature would be electrically neutral
+- [01:23:59,020 - 01:24:02,520] If the charge was big enough, we
+- [01:24:02,520 - 01:24:06,020] might never have discovered individual electrically charged particles
+- [01:24:06,020 - 01:24:08,020] They would be confined
+- [01:24:08,020 - 01:24:11,020] It would just be too prohibitive in energy
+- [01:24:11,020 - 01:24:14,020] to pull them out of an atom, for example
+- [01:24:14,020 - 01:24:17,020] So what Nambu said is, look,
+- [01:24:17,020 - 01:24:20,020] if I have this quantum chromodynamics
+- [01:24:20,020 - 01:24:22,020] And if color, the color generator,
+- [01:24:22,020 - 01:24:24,020] or the color degree of freedom
+- [01:24:24,020 - 01:24:28,020] Is the source of the gluon field
+- [01:24:28,020 - 01:24:34,020] Then if we make the charge, the numerical coupling constant
+- [01:24:34,020 - 01:24:37,020] The analog of electric charge,
+- [01:24:37,020 - 01:24:40,020] if we make it large enough
+- [01:24:40,020 - 01:24:43,520] Then it would be simply impossible to
+- [01:24:43,520 - 01:24:47,020] pull apart these quarks into non-singlet states
+- [01:24:47,020 - 01:24:50,020] A singlet state is the analog of neutral
+- [01:24:50,020 - 01:24:52,020] Pulling them apart, you would be
+- [01:24:52,020 - 01:24:54,020] left over with net amounts of particles
+- [01:24:54,020 - 01:24:55,520] And you would have a color
+- [01:24:55,520 - 01:24:57,020] which would cost you lots of energy
+- [01:24:57,020 - 01:25:00,020] So he understood that when systems
+- [01:25:00,020 - 01:25:03,020] were in the color singlet state
+- [01:25:03,020 - 01:25:06,020] They were fully attractive and pulled themselves together
+- [01:25:06,020 - 01:25:09,020] When they weren't, there was always an element of repulsion
+- [01:25:09,020 - 01:25:11,520] That meant it cost an enormous
+- [01:25:11,520 - 01:25:14,020] amount of energy to pull them together
+- [01:25:14,020 - 01:25:16,020] So that was Nambu's explanation
+- [01:25:16,020 - 01:25:18,520] He said, quantum chromodynamics has
+- [01:25:18,520 - 01:25:21,020] a natural way of making sure
+- [01:25:21,020 - 01:25:24,020] That the real particles in nature are integer charged
+- [01:25:24,020 - 01:25:26,520] And that quarks always come
+- [01:25:26,520 - 01:25:29,020] in either the quark-anti-quark combination
+- [01:25:29,020 - 01:25:31,020] Or the three-quark combination
+- [01:25:31,020 - 01:25:35,020] And this was essentially correct
+- [01:25:35,020 - 01:25:39,020] It turned out to be correct
+- [01:25:39,020 - 01:25:42,020] But the dynamics is a little more interesting than that
+- [01:25:42,020 - 01:25:44,020] So let's talk about the dynamics
+- [01:25:44,020 - 01:25:46,020] and why the dynamics is more interesting
+- [01:25:46,020 - 01:25:50,020] Any questions up until now?
+- [01:25:50,020 - 01:25:53,020] Okay
+- [01:25:53,020 - 01:25:55,020] Why is the dynamics more interesting than that?
+- [01:25:55,020 - 01:25:58,020] And the reason the dynamics is more interesting than that
+- [01:25:58,020 - 01:26:02,020] Is because the analog of the photon, the gluon
+- [01:26:02,020 - 01:26:06,020] Is charged, carries color
+- [01:26:06,020 - 01:26:11,020] The gluon itself is not neutral with respect to the
+- [01:26:11,020 - 01:26:13,520] Remember, the neutral piece was this
+- [01:26:13,520 - 01:26:16,020] ninth member that we threw away
+- [01:26:16,020 - 01:26:22,020] The eight gluons themselves are not neutral
+- [01:26:22,020 - 01:26:25,020] They transform under the eight
+- [01:26:25,020 - 01:26:28,020] It's as if they had a color charge
+- [01:26:28,020 - 01:26:34,020] That is why gluons don't appear in nature as objects
+- [01:26:34,020 - 01:26:36,020] The color, they themselves are colored
+- [01:26:36,020 - 01:26:37,520] And because they're colored, they have
+- [01:26:37,520 - 01:26:39,020] a big color field around them
+- [01:26:39,020 - 01:26:42,020] And they're prohibitive in energy
+- [01:26:42,020 - 01:26:43,020] But this is interesting
+- [01:26:43,020 - 01:26:45,520] What it says is that the gluon itself is
+- [01:26:45,520 - 01:26:48,020] charged in a way that the photon is not
+- [01:26:48,020 - 01:26:51,020] The fact that photons are not charged
+- [01:26:52,020 - 01:26:54,020] Means they don't interact with each other
+- [01:26:54,020 - 01:26:55,020] They're not sources
+- [01:26:55,020 - 01:26:58,020] A photon is not a source of another photon
+- [01:26:58,020 - 01:27:01,020] Electrodynamics, or at least classical electrodynamics
+- [01:27:01,020 - 01:27:03,020] Is a completely linear theory
+- [01:27:03,020 - 01:27:06,020] Meaning to say that electromagnetic waves
+- [01:27:06,020 - 01:27:09,020] just pass right through each other
+- [01:27:09,020 - 01:27:11,020] That's because the electromagnetic
+- [01:27:11,020 - 01:27:13,020] wave itself is not charged
+- [01:27:13,020 - 01:27:18,020] And doesn't influence other electromagnetic waves
+- [01:27:18,020 - 01:27:22,020] So, electrodynamics, the photon
+- [01:27:22,020 - 01:27:25,020] And the electromagnetic wave are very simple and linear
+- [01:27:25,020 - 01:27:28,020] But in quantum chromodynamics it's much more complicated
+- [01:27:28,020 - 01:27:32,020] The analog of the photon itself is charged
+- [01:27:32,020 - 01:27:36,020] That means that the analog of an electromagnetic wave
+- [01:27:36,020 - 01:27:39,020] Intersecting another electromagnetic wave
+- [01:27:39,020 - 01:27:42,020] Will be a serious interacting phenomenon
+- [01:27:42,020 - 01:27:46,020] In fact, even just a single wave of the gluon
+- [01:27:46,020 - 01:27:49,020] One part of it will interact with the other
+- [01:27:49,020 - 01:27:52,020] One part of it may have some color
+- [01:27:52,020 - 01:27:54,020] The other part of it may have some color
+- [01:27:54,020 - 01:27:56,020] Those colors will interact with each other
+- [01:27:56,020 - 01:28:00,020] And the dynamics of gluons is far
+- [01:28:00,020 - 01:28:02,020] And the, not just gluons
+- [01:28:02,020 - 01:28:05,020] But the field
+- [01:28:05,020 - 01:28:08,020] Analogous to the electromagnet, to the Maxwell field
+- [01:28:08,020 - 01:28:11,020] Is far, far more complicated
+- [01:28:11,020 - 01:28:14,020] And dynamically interesting
+- [01:28:14,020 - 01:28:17,020] But also much more difficult to understand
+- [01:28:18,020 - 01:28:20,020] It turned out that the
+- [01:28:20,020 - 01:28:26,020] Pretty much the important thing that happens
+- [01:28:26,020 - 01:28:28,020] Which is new
+- [01:28:28,020 - 01:28:31,020] Can be summarized fairly easily
+- [01:28:31,020 - 01:28:34,020] And I'll summarize it for you on the blackboard
+- [01:28:34,020 - 01:28:36,020] In terms of pictures
+- [01:28:36,020 - 01:28:38,020] The equations that go with this
+- [01:28:38,020 - 01:28:39,020] There are equations
+- [01:28:39,020 - 01:28:43,020] But the pictures I think are better than the equations
+- [01:28:47,020 - 01:28:48,020] There's a quark
+- [01:28:48,020 - 01:28:50,020] And there is, and there is
+- [01:28:50,020 - 01:28:55,020] A quantum chromo dynamical gluons field around it
+- [01:28:55,020 - 01:28:57,020] Now in Electro-dynamics
+- [01:28:57,020 - 01:29:00,020] The different phoetons, or electromagnetic fields
+- [01:29:00,020 - 01:29:03,020] Do not interact with each other
+- [01:29:03,020 - 01:29:05,020] And so there's no sense
+- [01:29:05,020 - 01:29:07,020] In which one field line
+- [01:29:07,020 - 01:29:10,020] Repels or retracts other field lines
+- [01:29:10,020 - 01:29:13,020] They just, they just completely independent
+- [01:29:13,020 - 01:29:15,020] They don't interact with each other
+- [01:29:15,020 - 01:29:17,020] In quantum chromo dynamics
+- [01:29:17,020 - 01:29:19,020] The gluon field itself
+- [01:29:19,020 - 01:29:21,700] is not neutral and therefore the gluon
+- [01:29:21,700 - 01:29:24,380] field interacts with other pieces of gluon field
+- [01:29:24,380 - 01:29:26,320] and the result is very simple.
+- [01:29:26,320 - 01:29:28,260] It turns out to be fairly simple.
+- [01:29:28,260 - 01:29:32,340] The lines of flux basically attract each other.
+- [01:29:32,340 - 01:29:34,680] They attract each other and they
+- [01:29:34,680 - 01:29:37,020] attract each other in a way
+- [01:29:37,020 - 01:29:39,140] which makes...
+- [01:29:39,140 - 01:29:41,520] The rule about lines of flux is
+- [01:29:41,520 - 01:29:43,900] they don't end except on another charge.
+- [01:29:43,900 - 01:29:47,180] The lines of flux coming out of a quark
+- [01:29:47,180 - 01:29:50,460] or coming out of a color charge attract each other
+- [01:29:50,460 - 01:29:54,059] and in the process of attracting each other
+- [01:29:54,059 - 01:29:57,580] energetically they want to form tubes.
+- [01:29:57,580 - 01:29:59,919] They want to form tubes of flux
+- [01:29:59,919 - 01:30:02,259] with the flux running right down the tube.
+- [01:30:02,259 - 01:30:05,019] It is more or less you can either imagine
+- [01:30:05,019 - 01:30:07,700] that the lines of flux are attracting each other
+- [01:30:07,700 - 01:30:12,179] or that empty space is repelling the lines of flux
+- [01:30:12,179 - 01:30:13,820] and pushing them and squeezing them
+- [01:30:13,820 - 01:30:13,860] into the flux.
+- [01:30:13,860 - 01:30:13,900] into the flux.
+- [01:30:13,900 - 01:30:15,660] That's what happens.
+- [01:30:15,660 - 01:30:19,019] That's pretty much the main effect
+- [01:30:19,019 - 01:30:23,700] of the nonlinear interactions between the gluon field
+- [01:30:23,700 - 01:30:29,580] that it makes it energetically favorable
+- [01:30:29,580 - 01:30:32,339] to take those lines of flux and bundle them
+- [01:30:32,339 - 01:30:35,460] and bundle them into tubes.
+- [01:30:35,460 - 01:30:37,179] Let's suppose that's true now.
+- [01:30:37,179 - 01:30:41,940] Now supposing we have a quark and an anti-quark.
+- [01:30:41,940 - 01:30:43,860] We have a quark and an anti-quark
+- [01:30:43,860 - 01:30:46,740] lines of flux come out of
+- [01:30:46,740 - 01:30:49,620] the quark and go into the anti-quark.
+- [01:30:49,620 - 01:30:53,600] If this were electrodynamics, those lines of flux
+- [01:30:53,600 - 01:30:57,580] would separate and form a nice dipole pattern
+- [01:30:57,580 - 01:30:58,700] that we're all familiar with.
+- [01:30:58,700 - 01:31:01,059] Anybody who's ever looked at a magnet and...
+- [01:31:01,059 - 01:31:05,299] Right.
+- [01:31:05,299 - 01:31:08,019] The field energy associated with this
+- [01:31:08,019 - 01:31:10,740] big dipole configuration is relatively small
+- [01:31:10,740 - 01:31:13,820] because the field gets weak far away.
+- [01:31:13,820 - 01:31:14,540] Right.
+- [01:31:14,540 - 01:31:18,380] In this configuration, there's a uniform field,
+- [01:31:18,380 - 01:31:20,960] no matter how far you
+- [01:31:20,960 - 01:31:23,540] take these particles from each other,
+- [01:31:23,540 - 01:31:27,860] there is a uniform field in between,
+- [01:31:27,860 - 01:31:30,180] just exactly as if you
+- [01:31:30,180 - 01:31:32,500] took an electric or magnetic field
+- [01:31:32,500 - 01:31:34,380] and pushed it through a tube.
+- [01:31:34,380 - 01:31:36,299] There would be a uniform field,
+- [01:31:36,299 - 01:31:38,219] the lines of flux don't end,
+- [01:31:38,219 - 01:31:40,380] and because there's a uniform field,
+- [01:31:40,380 - 01:31:43,780] there's a uniform energy per unit length.
+- [01:31:43,820 - 01:31:46,620] What's the result of that?
+- [01:31:46,620 - 01:31:49,060] The result of that is if you
+- [01:31:49,060 - 01:31:51,500] try to separate a quark from an anti-quark,
+- [01:31:51,500 - 01:31:53,940] the energy just grows linearly
+- [01:31:53,940 - 01:31:56,380] with the distance between them.
+- [01:31:56,380 - 01:31:59,239] As you pull this out, it's
+- [01:31:59,239 - 01:32:02,099] like the gluon field was really sticky,
+- [01:32:02,099 - 01:32:04,299] really Turkish taffy,
+- [01:32:04,299 - 01:32:06,359] except Turkish taffy would get thinner
+- [01:32:06,359 - 01:32:08,420] and thinner as you stretched it out.
+- [01:32:08,420 - 01:32:11,179] So it's not quite like chewing gum of Turkish taffy.
+- [01:32:11,179 - 01:32:13,259] It's like a kind of chewing gum that,
+- [01:32:13,260 - 01:32:15,700] as you separated it,
+- [01:32:15,700 - 01:32:18,300] always created more chewing gum in between
+- [01:32:18,300 - 01:32:20,380] so that it never got thinner and thinner.
+- [01:32:20,380 - 01:32:22,460] There's always a fixed number of lines of flux
+- [01:32:22,460 - 01:32:24,660] coming out of every charged object,
+- [01:32:24,660 - 01:32:26,340] and they don't disappear.
+- [01:32:26,340 - 01:32:30,660] So this tube, it's called a flux tube,
+- [01:32:30,660 - 01:32:32,380] or a fluxoid,
+- [01:32:32,380 - 01:32:42,460] and the fluxoid has a uniform charge per unit distance.
+- [01:32:42,460 - 01:32:44,580] Any charged object, which means
+- [01:32:44,580 - 01:32:46,700] any object with non-zero color,
+- [01:32:46,700 - 01:32:51,140] any non-singlet, any object which is not a singlet,
+- [01:32:51,140 - 01:32:54,860] here it is, it puts out lines of flux.
+- [01:32:54,860 - 01:32:57,340] Those lines of flux bundle themselves,
+- [01:32:57,340 - 01:33:04,220] and unless they end on an object of opposite color,
+- [01:33:04,220 - 01:33:06,940] that object is just going to have an infinite charge
+- [01:33:06,940 - 01:33:09,780] because those lines of flux have to go someplace.
+- [01:33:09,780 - 01:33:11,420] They'll end in infinity.
+- [01:33:11,420 - 01:33:11,940] The cost and energy will go up.
+- [01:33:11,940 - 01:33:12,100] That's the difference.
+- [01:33:12,100 - 01:33:12,180] That's the difference.
+- [01:33:12,180 - 01:33:12,260] That's the difference.
+- [01:33:12,260 - 01:33:12,340] That's the difference.
+- [01:33:12,340 - 01:33:12,420] That's the difference.
+- [01:33:12,420 - 01:33:12,620] That's the difference.
+- [01:33:12,620 - 01:33:13,140] That's the difference.
+- [01:33:13,140 - 01:33:16,820] That's the basic dynamics of quantum chromodynamics.
+- [01:33:16,820 - 01:33:19,460] Linear flux tubes like this,
+- [01:33:19,460 - 01:33:22,220] which are the ingredients which keep quarks
+- [01:33:22,220 - 01:33:24,940] from flying around freely.
+- [01:33:24,940 - 01:33:27,820] If you hit a quark real hard inside a meson,
+- [01:33:27,820 - 01:33:30,240] this is a picture of a
+- [01:33:30,240 - 01:33:32,660] sort of extreme picture of a meson,
+- [01:33:32,660 - 01:33:34,580] a quark and an anti-quark.
+- [01:33:34,580 - 01:33:37,940] You hit that quark hard, it goes flying out,
+- [01:33:37,940 - 01:33:41,100] but it simply can't get away.
+- [01:33:41,100 - 01:33:42,300] The field energy just increases,
+- [01:33:42,300 - 01:33:45,900] increases and increases and increases linearly with distance
+- [01:33:45,900 - 01:33:47,460] until you've run out of kinetic
+- [01:33:47,460 - 01:33:49,020] energy and then it gets pulled back.
+- [01:33:49,020 - 01:33:50,380] Or something else happens.
+- [01:33:50,380 - 01:33:52,700] What's the other thing that can happen?
+- [01:33:55,020 - 01:33:56,500] Right.
+- [01:33:56,500 - 01:33:57,940] Yeah, right.
+- [01:33:57,940 - 01:34:00,600] The other thing that can happen
+- [01:34:00,600 - 01:34:03,260] is that the string can break.
+- [01:34:03,260 - 01:34:09,380] If this is a quark and this is an anti-quark,
+- [01:34:09,380 - 01:34:12,180] then spontaneously, it's going to break.
+- [01:34:12,180 - 01:34:15,900] And then spontaneously out of the vacuum,
+- [01:34:15,900 - 01:34:19,940] particle pair production can create an anti-quark over here
+- [01:34:19,940 - 01:34:21,660] and a quark over here.
+- [01:34:21,660 - 01:34:24,900] But you still haven't created a quark.
+- [01:34:24,900 - 01:34:28,020] You've created two mesons.
+- [01:34:28,020 - 01:34:30,360] So you give one quark
+- [01:34:30,360 - 01:34:32,700] in a meson a good shot.
+- [01:34:32,700 - 01:34:34,220] You hit it really hard.
+- [01:34:34,220 - 01:34:36,020] It tries to escape.
+- [01:34:36,020 - 01:34:38,100] And either it can't escape because it
+- [01:34:38,100 - 01:34:40,180] runs out of energy and gets pulled back,
+- [01:34:40,180 - 01:34:41,380] but actually, it can't escape.
+- [01:34:41,380 - 01:34:43,360] But actually, more likely, what will
+- [01:34:43,360 - 01:34:45,340] happen is a quark and an anti-quark
+- [01:34:45,340 - 01:34:47,120] will be created in between
+- [01:34:47,120 - 01:34:48,900] and you'll just create two mesons.
+- [01:34:48,900 - 01:34:53,100] If this quark over here is still going too fast,
+- [01:34:53,100 - 01:34:54,620] it may still try to escape.
+- [01:34:54,620 - 01:34:56,660] It may try to escape this one over here.
+- [01:34:56,660 - 01:34:57,500] What will happen?
+- [01:35:04,820 - 01:35:07,920] And so what happens when you
+- [01:35:07,920 - 01:35:11,020] hit a quark really hard is that,
+- [01:35:11,020 - 01:35:14,640] inside a meson, is that a
+- [01:35:14,640 - 01:35:18,260] whole bunch of mesons go flying off,
+- [01:35:18,260 - 01:35:20,060] forming what is called a jet.
+- [01:35:20,060 - 01:35:21,860] Do you ever get any other hadrons?
+- [01:35:21,860 - 01:35:22,420] Oh, yeah.
+- [01:35:22,420 - 01:35:23,500] Oh, yes, absolutely.
+- [01:35:23,500 - 01:35:28,060] You can get anything as long as it's neutral.
+- [01:35:28,060 - 01:35:30,260] This is the picture of a meson.
+- [01:35:30,260 - 01:35:34,260] The other ingredient that is in quantum chromodynamics
+- [01:35:34,260 - 01:35:36,140] is that three quarks can exist.
+- [01:35:36,140 - 01:35:38,380] This doesn't explain three quarks.
+- [01:35:38,380 - 01:35:41,020] The three quarks are explained by a mathematical fact.
+- [01:35:41,020 - 01:35:46,020] The flux lines can come together in threes.
+- [01:35:46,020 - 01:35:49,020] Quark, quark, quark.
+- [01:35:49,020 - 01:35:53,020] And, uh, but that's not
+- [01:35:53,020 - 01:35:57,020] too surprising because three quarks, again,
+- [01:35:57,020 - 01:35:59,020] make a neutral object.
+- [01:35:59,020 - 01:36:02,020] Three quarks, again, make a neutral object.
+- [01:36:02,020 - 01:36:04,020] And that means that if you have three quarks,
+- [01:36:04,020 - 01:36:06,020] there'll be no net lines coming out of it.
+- [01:36:06,020 - 01:36:07,520] So somehow the lines are forced to
+- [01:36:07,520 - 01:36:09,020] come out of each one of them,
+- [01:36:09,020 - 01:36:10,020] have to...
+- [01:36:11,020 - 01:36:13,020] be able to cancel each other.
+- [01:36:13,020 - 01:36:15,020] That's quantum chromodynamics.
+- [01:36:15,020 - 01:36:17,020] It's based on the SU group.
+- [01:36:17,020 - 01:36:19,020] And it's called a gauge theory.
+- [01:36:19,020 - 01:36:21,020] A gauge theory is simply
+- [01:36:21,020 - 01:36:23,020] any theory where the conserved quantities
+- [01:36:23,020 - 01:36:27,020] are coupled to a Maxwell-like field,
+- [01:36:27,020 - 01:36:31,020] are coupled to a field similar to photons.
+- [01:36:31,020 - 01:36:33,020] It has a deeper meaning
+- [01:36:33,020 - 01:36:35,020] than that, but for our purposes,
+- [01:36:35,020 - 01:36:38,020] any time there is a
+- [01:36:38,020 - 01:36:41,020] conserved quantity analogous to electric charge,
+- [01:36:41,020 - 01:36:48,020] which functions as the source of a photon-like field,
+- [01:36:48,020 - 01:36:50,020] photon-like field, a gluon-like field,
+- [01:36:50,020 - 01:36:52,020] that's called a gauge theory.
+- [01:36:52,020 - 01:36:55,020] The gauge theories are always based on symmetries.
+- [01:36:55,020 - 01:36:56,020] Why are they based on symmetries?
+- [01:36:56,020 - 01:37:00,020] Because they're based on the idea of conserved charge.
+- [01:37:00,020 - 01:37:05,020] And conserved charge means a symmetry of some kind.
+- [01:37:05,020 - 01:37:07,020] Incidentally, why...
+- [01:37:07,020 - 01:37:09,020] What's the connection between conservation and logic?
+- [01:37:09,020 - 01:37:13,020] Between conservation and lines of flux.
+- [01:37:13,020 - 01:37:17,020] Conservation and lines of flux are intimately connected.
+- [01:37:21,020 - 01:37:25,020] If you have a rule, for example, in electrodynamics,
+- [01:37:25,020 - 01:37:27,520] that every charged particle has to
+- [01:37:27,520 - 01:37:30,020] be the source of lines of flux,
+- [01:37:32,020 - 01:37:34,020] and that lines of flux
+- [01:37:34,020 - 01:37:36,020] can only end on charged particles,
+- [01:37:36,020 - 01:37:39,020] then charge has to be conserved.
+- [01:37:39,020 - 01:37:40,020] There's no way...
+- [01:37:40,020 - 01:37:43,020] Remember, these lines of force go off to infinity.
+- [01:37:43,020 - 01:37:44,520] Well, you could say, I
+- [01:37:44,520 - 01:37:46,020] could make this charge suddenly disappear
+- [01:37:46,020 - 01:37:48,520] if I allow the lines
+- [01:37:48,520 - 01:37:51,020] of flux to simultaneously all disappear.
+- [01:37:51,020 - 01:37:55,020] But that would violate the speed of light constraint.
+- [01:37:55,020 - 01:37:57,520] You would be able to
+- [01:37:57,520 - 01:38:00,020] send a message arbitrarily far distance
+- [01:38:00,020 - 01:38:03,020] if, by simply removing that charge,
+- [01:38:03,020 - 01:38:09,020] you suddenly changed the field at infinity.
+- [01:38:09,020 - 01:38:11,020] The fact that you cannot send a
+- [01:38:11,020 - 01:38:13,020] signal faster than the speed of light
+- [01:38:13,020 - 01:38:16,020] tells you that you can't remove this charge.
+- [01:38:16,020 - 01:38:17,020] Why?
+- [01:38:17,020 - 01:38:19,020] Because it's sort of anchored
+- [01:38:19,020 - 01:38:21,020] by the flux lines at infinity,
+- [01:38:21,020 - 01:38:24,020] and if you could remove it,
+- [01:38:24,020 - 01:38:26,020] either one of two things.
+- [01:38:26,020 - 01:38:29,020] Either you would send a sudden signal far away
+- [01:38:29,020 - 01:38:31,020] that the charge wasn't there by removing the field,
+- [01:38:31,020 - 01:38:33,020] or you would be left
+- [01:38:33,020 - 01:38:35,020] over with these lines of flux
+- [01:38:35,020 - 01:38:37,020] that don't end on charges.
+- [01:38:37,020 - 01:38:40,020] So if lines of flux have to end on charges,
+- [01:38:40,020 - 01:38:43,020] then that's tantamount to saying that
+- [01:38:43,020 - 01:38:46,020] the sources of the field are conserved,
+- [01:38:46,020 - 01:38:51,020] which, in another language, says there must be a symmetry.
+- [01:38:51,020 - 01:38:56,020] So some symmetries are connected with photon-like fields
+- [01:38:56,020 - 01:38:59,020] which give rise to lines of flux.
+- [01:38:59,020 - 01:39:02,020] Those theories are called gauge theories.
+- [01:39:02,020 - 01:39:05,020] And you can't even imagine,
+- [01:39:05,020 - 01:39:07,020] without breaking the rules of physics,
+- [01:39:07,020 - 01:39:09,020] without breaking the rules of a theory,
+- [01:39:09,020 - 01:39:10,520] what it would mean for
+- [01:39:10,520 - 01:39:12,020] the charge not to be conserved,
+- [01:39:12,020 - 01:39:16,020] because the rules of a theory attach the charged particles
+- [01:39:16,020 - 01:39:19,020] to the lines of force.
+- [01:39:19,020 - 01:39:22,020] Okay, that's quantum chromodynamics.
+- [01:39:22,020 - 01:39:24,020] Now we've actually gone,
+- [01:39:24,020 - 01:39:26,020] either depending on how you count,
+- [01:39:26,020 - 01:39:28,520] either two-thirds or three-quarters of
+- [01:39:28,520 - 01:39:31,020] the way through the standard model,
+- [01:39:31,020 - 01:39:35,020] we've gone through nine generators, if you like.
+- [01:39:35,020 - 01:39:37,020] The eight generators of SU3,
+- [01:39:37,020 - 01:39:40,020] the electric charge,
+- [01:39:40,020 - 01:39:41,520] the electric charge, which is
+- [01:39:41,520 - 01:39:43,020] not the ninth generator of U3.
+- [01:39:43,020 - 01:39:47,020] The electric charge, those are nine conserved quantities.
+- [01:39:47,020 - 01:39:50,020] They couple to the nine gauge fields,
+- [01:39:50,020 - 01:39:53,020] the eight gluons and the photon.
+- [01:39:53,020 - 01:39:56,020] The standard model has three more generators,
+- [01:39:56,020 - 01:39:58,020] which we will talk about.
+- [01:39:58,020 - 01:40:00,020] So we've got nine out of twelve.
+- [01:40:00,020 - 01:40:03,020] That's three-quarters.
+- [01:40:03,020 - 01:40:04,520] The other way of counting
+- [01:40:04,520 - 01:40:06,020] is to say we studied SU3,
+- [01:40:07,020 - 01:40:10,020] that's quantum chromodynamics.
+- [01:40:10,020 - 01:40:14,020] We've studied U1, that's electrodynamics.
+- [01:40:14,020 - 01:40:18,020] The standard model is SU3 cross SU2 cross U1.
+- [01:40:18,020 - 01:40:20,020] We're missing the SU2.
+- [01:40:20,020 - 01:40:23,020] The SU2, it's not angular momentum.
+- [01:40:23,020 - 01:40:27,020] There's another ingredient in the standard model called SU2.
+- [01:40:27,020 - 01:40:30,020] We'll start to take up SU2 next time.
+- [01:40:30,020 - 01:40:33,020] We've covered a lot of ground,
+- [01:40:33,020 - 01:40:36,020] and I think in about two more lectures,
+- [01:40:36,020 - 01:40:40,020] we can probably finish off the basic structure
+- [01:40:40,020 - 01:40:44,020] of the standard model, SU3 cross SU2 cross U1,
+- [01:40:44,020 - 01:40:47,020] put it together into a package,
+- [01:40:47,020 - 01:40:49,520] and I think the other
+- [01:40:49,520 - 01:40:52,020] element that we need, of course,
+- [01:40:52,020 - 01:40:54,020] is the Higgs field.
+- [01:40:54,020 - 01:40:57,020] The Higgs field plays an important role there.
+- [01:40:57,020 - 01:41:03,020] But I would say within about three lectures,
+- [01:41:03,020 - 01:41:05,020] we will have the working parts of the standard model.
+- [01:41:05,020 - 01:41:06,520] And then we can start to
+- [01:41:06,520 - 01:41:08,020] explore what the puzzles of it are,
+- [01:41:08,020 - 01:41:09,520] why people think we have
+- [01:41:09,520 - 01:41:11,020] to go beyond the standard model,
+- [01:41:11,020 - 01:41:12,520] and why people think there are
+- [01:41:12,520 - 01:41:14,020] going to be interesting new things
+- [01:41:14,020 - 01:41:16,020] discovered at CERN.
+- [01:41:16,020 - 01:41:19,020] I think that's what we want to get.
+- [01:41:19,020 - 01:41:21,020] Okay, good.
+- [01:41:21,020 - 01:41:24,020] For more, please visit us at stanford.edu.
