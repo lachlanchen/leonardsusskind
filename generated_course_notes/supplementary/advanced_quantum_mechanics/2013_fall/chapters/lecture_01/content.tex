@@ -1,0 +1,205 @@
+\chapter{Advanced Quantum Mechanics I: Quantum Dynamics and Symmetries}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+
+This chapter rebuilds the basic mathematical spine of the lecture: quantum states as vectors, particles in the position representation, the Hamiltonian-generated unitary time flow, and the symmetry principle that identifies conserved quantities by commuting operators. The goal is to move from abstract postulates to the concrete rules used in practical calculations, with a consistent convention and clear links between infinitesimal generators and finite transformations.
+
+\section{Review of the quantum kinematic structure}
+
+A physical system is represented by vectors in a (complex) vector space. A state is written as a ket \(\ket\psi\), and its dual by \(\bra\psi\). The inner product \(\langle\phi|\psi\rangle\) is a complex number associated to each pair of states.  
+\begin{equation}
+\langle\psi|\psi\rangle=1 \quad \text{for a normalized state}.
+\end{equation}
+
+An observable \(A\) is represented by a Hermitian operator \(\hat A\) (\(\hat A^\dagger=\hat A\)). The eigenvalue problem has physical meaning:
+\begin{equation}
+\hat A\ket{a} = a\ket{a},\qquad a\in\mathbb R.
+\end{equation}
+If the system is in \(\ket a\), measurement of \(A\) is certain to give \(a\).  
+Operational distinguishability is encoded by orthogonality:
+\begin{equation}
+\ket\phi\text{ and }\ket\psi\text{ are distinguishable with certainty } \Longleftrightarrow \langle\phi|\psi\rangle=0.
+\end{equation}
+
+In finite dimensions these are ordinary vectors; for particles and fields, the basis index becomes continuous and states are represented by functions.
+
+\section{Particle kinematics in the position representation}
+
+For a one-dimensional particle, define position eigenstates \(\ket{x}\) by
+\begin{equation}
+\langle x|x'\rangle=\delta(x-x').
+\end{equation}
+The corresponding wavefunction is the position amplitude
+\begin{equation}
+\psi(x)=\langle x|\psi\rangle.
+\end{equation}
+Its modulus squared is the position probability density:
+\begin{equation}
+p(x)=|\psi(x)|^2 = \psi^*(x)\psi(x),
+\end{equation}
+and for normalizable states \(\int dx\,|\psi(x)|^2=1\).
+
+The position operator acts by multiplication:
+\begin{equation}
+(\hat x\psi)(x)=x\,\psi(x).
+\end{equation}
+
+\paragraph{Distributional caveat.}
+The “vectors'' \(\ket{x}\) are not ordinary square-integrable functions. Their coordinate overlap is the Dirac delta, and the position eigenfunctions are idealized delta spikes rather than physical packet states. Physical states are square-integrable approximants (e.g., narrow Gaussians).
+
+\section{Momentum in the same representation}
+
+The momentum observable is represented by a differential operator:
+\begin{equation}
+(\hat p\psi)(x)=-i\hbar\,\frac{d\psi(x)}{dx}.
+\end{equation}
+(If \(\hbar=1\), drop it from formulas.)
+
+Momentum eigenstates satisfy
+\begin{equation}
+\hat p\phi_p(x)=p\,\phi_p(x).
+\end{equation}
+A convenient representative is
+\begin{equation}
+\phi_p(x)=\frac{1}{\sqrt{2\pi\hbar}}\,e^{ipx/\hbar},
+\end{equation}
+which has \(|\phi_p(x)|^2=\text{constant}\): momentum certainty implies complete delocalization in position. This is the uncertainty tradeoff in precise mathematical form.
+
+\section{Time evolution as a unitary transformation}
+
+Time evolution is represented by a family \(U(t)\) of operators mapping each state to a later state:
+\begin{equation}
+\ket{\psi(t)} = U(t)\ket{\psi(0)},\qquad U(0)=\mathbf 1.
+\end{equation}
+A symmetry of information requires inner products to be preserved:
+\begin{equation}
+\langle\phi|\psi\rangle=\langle U(t)\phi|U(t)\psi\rangle
+\;\Longrightarrow\; U^\dagger(t)U(t)=\mathbf 1.
+\end{equation}
+So \(U(t)\) is unitary.
+
+Assuming continuity, for small \(\epsilon\),
+\begin{equation}
+U(\epsilon)=\mathbf 1-i\epsilon H+\mathcal O(\epsilon^2).
+\end{equation}
+Unitarity to first order gives
+\begin{equation}
+H^\dagger=H,
+\end{equation}
+so \(H\) is Hermitian and identified as the Hamiltonian.
+
+Now use
+\begin{equation}
+\ket{\psi(t+\epsilon)}=U(\epsilon)\ket{\psi(t)}
+\end{equation}
+and rearrange:
+\begin{equation}
+\frac{\ket{\psi(t+\epsilon)}-\ket{\psi(t)}}{\epsilon}
+=-iH\ket{\psi(t)}+\mathcal O(\epsilon).
+\end{equation}
+Hence
+\begin{equation}
+i\,\frac{d}{dt}\ket{\psi(t)}=H\ket{\psi(t)}.
+\end{equation}
+For wavefunctions this is
+\begin{equation}
+i\hbar\,\frac{\partial \psi(x,t)}{\partial t}=H\psi(x,t).
+\end{equation}
+
+Finite time is obtained by exponentiation:
+\begin{equation}
+U(t)=e^{-iHt/\hbar}.
+\end{equation}
+Stationary states are eigenstates of \(H\):
+\begin{equation}
+H\ket{E_n}=E_n\ket{E_n}.
+\end{equation}
+Then
+\begin{equation}
+\ket{E_n(t)}=e^{-iE_n t/\hbar}\ket{E_n},
+\end{equation}
+so the same Hamiltonian controls both time dependence and allowed energy levels.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_01_frame_03.png}
+\caption{Infinitesimal-to-finite evolution structure for \(U(\epsilon)\).}
+\end{figure}
+
+\section{Symmetry as commuting operators}
+
+A symmetry \(V\) is taken to be a unitary map on states that preserves all physical distinctions. If it represents a true symmetry of dynamics, then evolving then transforming is equivalent to transforming then evolving:
+\begin{equation}
+V\,U(t)=U(t)\,V,\qquad \forall t.
+\end{equation}
+Using \(U(t)=e^{-iHt/\hbar}\), this is equivalent to
+\begin{equation}
+[V,H]=0.
+\end{equation}
+
+For a continuous family \(V(\epsilon)=\mathbf1-i\epsilon G+\mathcal O(\epsilon^2)\),
+the same logic gives
+\begin{equation}
+[G,H]=0.
+\end{equation}
+When \(G=G^\dagger\), this is exactly a conserved generator:
+\begin{equation}
+\frac{d}{dt}\langle G\rangle
+=\frac{i}{\hbar}\langle[H,G]\rangle=0.
+\end{equation}
+Thus symmetry \(\leftrightarrow\) conserved quantity is the operator-level statement.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[>=Stealth, node distance=2.8cm and 3.2cm]
+\node (a) at (0,0) {$\left|\psi_1\right\rangle$};
+\node (b) at (3.2,0) {$\left|\psi_2\right\rangle=U(t)\left|\psi_1\right\rangle$};
+\node (c) at (0,-2.0) {$V\left|\psi_1\right\rangle$};
+\node (d) at (3.2,-2.0) {$V\left|\psi_2\right\rangle=U(t)\,V\left|\psi_1\right\rangle$};
+
+\draw[->] (a) -- node[above] {$U(t)$} (b);
+\draw[->] (c) -- node[above] {$U(t)$} (d);
+\draw[->] (a) -- node[left] {$V$} (c);
+\draw[->] (b) -- node[right] {$V$} (d);
+\end{tikzpicture}
+\caption{A symmetry operation \(V\) commutes with time evolution \(U(t)\) if the two routes between states coincide.}
+\end{figure}
+
+\section{Continuous symmetry example: spatial translations}
+
+Define the spatial translation operator \(T(\epsilon)\) acting on wavefunctions by
+\begin{equation}
+(T(\epsilon)\psi)(x)=\psi(x+\epsilon),
+\end{equation}
+which is a rightward shift by \(\epsilon\). For small \(\epsilon\),
+\begin{equation}
+\psi(x+\epsilon)=\psi(x)+\epsilon\,\partial_x\psi(x)+\mathcal O(\epsilon^2),
+\end{equation}
+so
+\begin{equation}
+T(\epsilon)=\mathbf1+\epsilon\,\partial_x+\mathcal O(\epsilon^2)
+=\mathbf1-\frac{i\epsilon}{\hbar}\,\hat p_x+\mathcal O(\epsilon^2).
+\end{equation}
+Hence
+\begin{equation}
+T(\epsilon)=\exp\!\left(-\frac{i}{\hbar}\epsilon\,\hat p_x\right),
+\end{equation}
+so the generator is
+\begin{equation}
+G_{\text{trans}}=\frac{\hat p_x}{\hbar}.
+\end{equation}
+
+For a free particle,
+\begin{equation}
+H=\frac{\hat p_x^2}{2m},
+\end{equation}
+and \([H,\hat p_x]=0\), so translation is a symmetry and \(\hat p_x\) is conserved. Thus the same operator appears as both “generator of translations” and “conserved quantity,” illustrating the lecture’s central symmetry--conservation link.
+
+\section{Summary}
+
+The lecture’s core chain is:  
+state vectors \(\to\) continuous basis amplitudes \(\to\) operator representation \(\to\) unitary time flow.  
+Continuity plus unitarity forces \(U(t)\) to be generated by a Hermitian Hamiltonian and yields the Schrödinger equations.  
+A symmetry is an additional unitary map compatible with \(U(t)\), which becomes a commutator condition with \(H\).  
+For continuous symmetries, infinitesimal generators \(G\) define finite transformations via exponentials, and commuting generators are conserved quantities.  
+Translations provide the prototype: \(T(\epsilon)=e^{-i\epsilon \hat p_x/\hbar}\), and for \(H=p^2/2m\), momentum conservation follows directly from \([H,\hat p_x]=0\).

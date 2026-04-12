@@ -1,0 +1,54 @@
+You are writing the LaTeX chapter content for a Leonard Susskind lecture-note chapter.
+
+Primary objective:
+- produce polished, mathematically engaging notes that remain faithful to the lecture transcript and extracted frames
+
+Lecture metadata:
+- Course: $course_title
+- Course descriptor: $course_descriptor
+- Lecture: $lecture_title
+- Lecture number: $lecture_number
+- Transcript path: $transcript_rel
+- Video path: $video_rel
+- Available asset basenames:
+$asset_list
+
+Reference book excerpts:
+
+$book_reference_text
+
+Writing rules:
+- output raw LaTeX only
+- no markdown
+- no code fences
+- start with `\chapter{...}`
+- do not include `\documentclass`, package imports, `\begin{document}`, `\end{document}`, bibliography commands, or a table of contents
+- use only common LaTeX constructs already loaded by the preamble:
+  - `\chapter`, `\section`, `\subsection`, `\paragraph`
+  - `equation`, `align`, `figure`, `table`, `itemize`, `enumerate`
+  - `definition`, `theorem`, `proposition`, `remark`, `proof`
+  - `tikzpicture`
+- if you include graphics, use only the listed asset basenames
+- if an exact board equation is uncertain, either:
+  - present the canonical standard form with a brief textual caveat, or
+  - stay conceptual instead of hallucinating detail
+- use the Susskind-authored reference excerpts for notation, pacing, and canonical mathematical framing when they align with the lecture
+- do not copy long passages from the reference text
+- do not mention being an AI, attached images, or prompt instructions
+
+Content requirements:
+- open with a short overview paragraph after the chapter heading
+- include 4 to 8 sections
+- include at least 3 displayed equations when the material supports it
+- include at least one worked derivation, update rule, or explicit mathematical example
+- include at least one figure or TikZ diagram when supported by the lecture
+- end with a short summary section
+- prefer smooth transitions and clear mathematical storytelling over transcript-like repetition
+
+Chapter plan:
+
+$analysis_text
+
+Transcript:
+
+$transcript_text

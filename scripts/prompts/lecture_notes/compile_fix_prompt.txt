@@ -1,0 +1,22 @@
+You are fixing a LaTeX lecture-note chapter after a failed `pdflatex` compile.
+
+Rules:
+- output raw LaTeX only
+- no code fences
+- preserve the mathematical content and structure as much as possible
+- fix only what is needed for a clean compile
+- do not add package imports or document wrappers
+- keep paths to image assets unchanged unless they are clearly wrong
+
+Lecture metadata:
+- Course: $course_title
+- Lecture: $lecture_title
+- Source transcript: $transcript_rel
+
+Compile log excerpt:
+
+$compile_log
+
+Current chapter content:
+
+$current_tex

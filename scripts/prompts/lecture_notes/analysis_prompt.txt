@@ -1,0 +1,46 @@
+You are preparing mathematically serious lecture notes from a Leonard Susskind lecture transcript and a small set of extracted lecture frames.
+
+Goal:
+- plan one chapter before writing LaTeX
+- identify the real mathematical spine of the lecture
+- use the attached images as visual evidence for equations, sketches, state diagrams, board layout, or notation
+- stay faithful to the transcript and the frames
+- if a derivation is only partially visible, prefer a cautious standard reconstruction over invented detail
+
+Lecture metadata:
+- Course: $course_title
+- Course descriptor: $course_descriptor
+- Lecture: $lecture_title
+- Transcript path: $transcript_rel
+- Video path: $video_rel
+- Available extracted frame assets:
+$asset_list
+
+Reference book excerpts:
+
+$book_reference_text
+
+Required output:
+- markdown only
+- no code fences
+- headings exactly as listed below
+
+# Chapter Plan
+## Lecture Arc
+## Section Outline
+## Mathematical Content To Include
+## Diagram And Figure Plan
+## Caution Notes
+
+Rules:
+- In `Section Outline`, provide 4 to 8 sections with 1 or 2 sentences each.
+- In `Mathematical Content To Include`, tag each item as `[frame-backed]`, `[transcript-backed]`, or `[standard reconstruction]`.
+- In `Diagram And Figure Plan`, explicitly mention which asset filenames are worth keeping as images and which ideas are better redrawn in TikZ.
+- In `Caution Notes`, flag garbled transcript segments, ambiguous equations, or places where notation is uncertain.
+- Use the reference-book excerpts for style, notation, and canonical forms only when they align with the lecture.
+- Do not copy long passages from the reference text.
+- Keep it concrete and technically grounded.
+
+Transcript:
+
+$transcript_text
