@@ -1,0 +1,2673 @@
+# Transcript
+
+Source: supplementary/advanced_quantum_mechanics/2013_fall/193 - Advanced Quantum Mechanics Lecture 9 [7a1hon7NJ1M].mp4
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:06,400 - 00:00:12,240] All right, so we spoke a little bit about quantum fields.
+- [00:00:13,920 - 00:00:19,320] The quanta of the fields, creation operators, annihilation operators.
+- [00:00:19,320 - 00:00:23,840] We even went so far as to talk about the Hamiltonian operator
+- [00:00:23,840 - 00:00:33,120] for a very simple quantum field, satisfying particles, satisfying the Schrodinger equation.
+- [00:00:33,120 - 00:00:37,120] Write it down.
+- [00:00:41,120 - 00:00:43,120] This is what it looked like.
+- [00:00:46,120 - 00:00:48,120] Integral over position.
+- [00:00:48,120 - 00:00:53,720] Now when I write dx, you don't need to imagine that it's one-dimensional.
+- [00:00:53,720 - 00:01:00,120] You can imagine that it's multi-dimensional and x stands for a collection of coordinates, x, y, and z.
+- [00:01:00,120 - 00:01:03,120] But I'll write it as if it were one-dimensional.
+- [00:01:03,120 - 00:01:08,120] And then there's the quantum field, psi dagger.
+- [00:01:08,120 - 00:01:10,120] That's the creation operator.
+- [00:01:10,120 - 00:01:12,120] It creates a particle at position x.
+- [00:01:14,120 - 00:01:16,120] And then there's a minus sign.
+- [00:01:16,120 - 00:01:20,120] Let's put the minus sign explicitly over here.
+- [00:01:20,120 - 00:01:23,120] Del squared, the second derivative operator.
+- [00:01:23,120 - 00:01:26,120] And if we put the mass in, the mass goes downstairs here.
+- [00:01:26,120 - 00:01:28,120] That's p squared over 2m.
+- [00:01:28,120 - 00:01:32,120] That's the standard kinetic energy of a particle.
+- [00:01:32,120 - 00:01:34,120] And then psi.
+- [00:01:37,120 - 00:01:42,120] If the particle also happens to be in a potential, if there's a potential energy,
+- [00:01:42,120 - 00:01:47,120] then you would add in here, and this of course is also of x,
+- [00:01:47,120 - 00:01:51,120] and then there's a v of x, the potential,
+- [00:01:51,120 - 00:01:53,120] times psi dagger.
+- [00:01:53,120 - 00:01:59,120] And then the energy of the particle is psi dagger of x, psi of x.
+- [00:01:59,120 - 00:02:04,120] And the way you would understand this term is just every particle,
+- [00:02:04,120 - 00:02:09,120] if it's at position x, has a potential energy v of x.
+- [00:02:09,120 - 00:02:13,120] Psi dagger of x times psi of x, what is that?
+- [00:02:13,120 - 00:02:17,120] That's the density of particles at point x.
+- [00:02:17,120 - 00:02:21,120] So this is just counting the number of particles at point x
+- [00:02:21,120 - 00:02:25,120] and giving each one an energy, a potential energy v of x.
+- [00:02:27,120 - 00:02:29,120] You would write that down classically too.
+- [00:02:29,120 - 00:02:33,120] You would write down that if you had a gas of particles,
+- [00:02:33,120 - 00:02:35,120] and they were moving in some potential,
+- [00:02:35,120 - 00:02:41,120] you would write that the potential energy is the integral of all space,
+- [00:02:41,120 - 00:02:44,120] the density of particles at point x,
+- [00:02:44,120 - 00:02:47,120] times the potential at that point x.
+- [00:02:47,120 - 00:02:55,120] Okay, so that's the Hamiltonian of a system of particles
+- [00:02:55,120 - 00:02:57,120] non-interacting with each other.
+- [00:02:57,120 - 00:03:00,120] They may be interacting with some potential.
+- [00:03:00,120 - 00:03:03,120] Okay, I'm going to leave out the O.
+- [00:03:03,120 - 00:03:06,120] Tell you what, yeah.
+- [00:03:12,120 - 00:03:15,120] Let's forget this term for a moment.
+- [00:03:17,120 - 00:03:20,120] No, I'll tell you what, I'm going to put it back,
+- [00:03:20,120 - 00:03:25,120] but I'm going to put it back v of x,
+- [00:03:25,120 - 00:03:28,120] and I'm going to take v of x to be a constant.
+- [00:03:28,120 - 00:03:32,120] Now we all know that a constant term, potential energy,
+- [00:03:32,120 - 00:03:34,120] doesn't exert any forces.
+- [00:03:34,120 - 00:03:37,120] So it really doesn't do anything, but let's put it anyway.
+- [00:03:37,120 - 00:03:39,120] A constant, it doesn't matter what we call it,
+- [00:03:39,120 - 00:03:44,120] times psi dagger of x, psi of x.
+- [00:03:44,120 - 00:03:45,120] Okay.
+- [00:03:45,120 - 00:03:46,120] Okay.
+- [00:03:46,120 - 00:03:50,120] What kind of term in the energy would this correspond to?
+- [00:03:50,120 - 00:03:55,120] Well, it's a term which, when you integrate it over x,
+- [00:03:55,120 - 00:03:58,120] it just counts the total number of particles.
+- [00:03:58,120 - 00:04:01,120] So, if it counts the number of particles,
+- [00:04:01,120 - 00:04:05,120] it's just an energy proportional to the number of particles.
+- [00:04:05,120 - 00:04:07,120] It's giving each particle an energy.
+- [00:04:07,120 - 00:04:09,120] How much energy does a particle have?
+- [00:04:09,120 - 00:04:11,120] I'm not talking about its kinetic energy.
+- [00:04:11,120 - 00:04:13,120] We've already got its kinetic energy,
+- [00:04:13,120 - 00:04:15,120] but just a particle standing still.
+- [00:04:15,120 - 00:04:17,120] Does a particle standing still have any energy?
+- [00:04:17,120 - 00:04:19,120] Yeah, as mc squared.
+- [00:04:19,120 - 00:04:21,120] So if we wanted to put that in,
+- [00:04:21,120 - 00:04:25,120] if we wanted to keep track of the fact that every particle has an energy mc squared,
+- [00:04:25,120 - 00:04:27,120] we would put it over here.
+- [00:04:27,120 - 00:04:30,120] Whatever it is, it's a number.
+- [00:04:30,120 - 00:04:35,120] The reason I want to include this here is for a very simple reason.
+- [00:04:35,120 - 00:04:40,120] I want to spend a minute or two talking about energy,
+- [00:04:40,120 - 00:04:43,120] not energy conservation, momentum conservation.
+- [00:04:43,120 - 00:04:45,120] How do we see,
+- [00:04:45,120 - 00:04:51,120] from this expression,
+- [00:04:51,120 - 00:04:54,120] that momentum is conserved?
+- [00:04:54,120 - 00:04:57,120] What does it mean for momentum to be conserved?
+- [00:04:57,120 - 00:05:01,120] Well, what does the Hamiltonian do?
+- [00:05:01,120 - 00:05:03,120] What's the role of the Hamiltonian?
+- [00:05:03,120 - 00:05:15,120] The role of the Hamiltonian is to update the state of the system.
+- [00:05:15,120 - 00:05:20,120] If the state of the system at time t is psi of t,
+- [00:05:20,120 - 00:05:22,120] now I'm using psi to indicate a state.
+- [00:05:22,120 - 00:05:24,120] I'd better not do that.
+- [00:05:24,120 - 00:05:26,120] I've already used psi for several different things.
+- [00:05:26,120 - 00:05:28,120] One of them is for the field operator.
+- [00:05:28,120 - 00:05:31,120] One of them is for the single particle wave functions.
+- [00:05:31,120 - 00:05:33,120] I'd better not use it again.
+- [00:05:33,120 - 00:05:37,120] So let's use a different terminology for the state vector of a system.
+- [00:05:37,120 - 00:05:39,120] Let's not call it psi.
+- [00:05:39,120 - 00:05:43,120] The vector itself, let's call it phi.
+- [00:05:45,120 - 00:05:51,120] Right, if the state of the system at one instant of time,
+- [00:05:51,120 - 00:05:53,120] let's say at time t,
+- [00:05:53,120 - 00:05:55,120] is the vector psi of phi,
+- [00:05:55,120 - 00:05:57,120] excuse me, phi of t,
+- [00:05:57,120 - 00:06:01,120] then what is it at the next instant of time displaced
+- [00:06:01,120 - 00:06:04,120] by time epsilon?
+- [00:06:04,120 - 00:06:07,120] Well, the answer is,
+- [00:06:07,120 - 00:06:12,120] that's what the Hamiltonian does.
+- [00:06:12,120 - 00:06:14,120] It gives you one,
+- [00:06:15,120 - 00:06:18,120] minus,
+- [00:06:18,120 - 00:06:20,120] minus i epsilon,
+- [00:06:20,120 - 00:06:22,120] that's the little time interval,
+- [00:06:22,120 - 00:06:24,120] little separation of time,
+- [00:06:24,120 - 00:06:27,120] the Hamiltonian,
+- [00:06:27,120 - 00:06:30,120] times phi itself.
+- [00:06:30,120 - 00:06:35,120] Sorry, this is phi of t plus epsilon.
+- [00:06:35,120 - 00:06:37,120] The field, or sorry, the state,
+- [00:06:37,120 - 00:06:43,120] at a slightly displaced time.
+- [00:06:43,120 - 00:06:44,120] And so what h does,
+- [00:06:44,120 - 00:06:45,120] is it just updates
+- [00:06:45,120 - 00:06:46,120] things.
+- [00:06:46,120 - 00:06:51,120] You can write this as just phi of t.
+- [00:06:51,120 - 00:06:53,120] That's the same state back again.
+- [00:06:53,120 - 00:06:55,120] Nothing has happened.
+- [00:06:55,120 - 00:06:57,120] Plus a little correction after time epsilon,
+- [00:06:57,120 - 00:07:01,120] which is minus i epsilon,
+- [00:07:01,120 - 00:07:05,120] times the Hamiltonian acting on phi.
+- [00:07:05,120 - 00:07:07,120] That's what the Hamiltonian does.
+- [00:07:07,120 - 00:07:09,120] And you can think of it as being iterated.
+- [00:07:09,120 - 00:07:11,120] You can do it over and over and over again
+- [00:07:11,120 - 00:07:12,120] at each step.
+- [00:07:12,120 - 00:07:14,120] That of course is another way of talking about
+- [00:07:14,120 - 00:07:15,120] the Schrodinger equation.
+- [00:07:15,120 - 00:07:16,120] The Schrodinger equation says
+- [00:07:16,120 - 00:07:17,120] the time derivative of phi
+- [00:07:17,120 - 00:07:20,120] is equal to h times phi.
+- [00:07:20,120 - 00:07:23,120] So that's what the Hamiltonian does.
+- [00:07:23,120 - 00:07:26,120] It changes the state from one instant to another.
+- [00:07:26,120 - 00:07:28,120] What would it mean
+- [00:07:28,120 - 00:07:32,120] to say that momentum is conserved?
+- [00:07:32,120 - 00:07:36,120] What it means is that the Hamiltonian,
+- [00:07:36,120 - 00:07:39,120] when it acts on a state of definite momentum,
+- [00:07:39,120 - 00:07:42,120] does not change the momentum.
+- [00:07:42,120 - 00:07:45,120] Whatever the Hamiltonian does,
+- [00:07:45,120 - 00:07:47,120] if it acts on a state of a given momentum,
+- [00:07:47,120 - 00:07:51,120] it must give back a state of the same momentum
+- [00:07:51,120 - 00:07:53,120] if momentum is conserved.
+- [00:07:53,120 - 00:07:55,120] I'm not saying it is conserved.
+- [00:07:55,120 - 00:07:57,120] I'm saying that's what it would mean.
+- [00:07:57,120 - 00:07:59,120] If the momentum is conserved,
+- [00:07:59,120 - 00:08:02,120] it means that when the Hamiltonian acts,
+- [00:08:02,120 - 00:08:05,120] it doesn't change the momentum of the system.
+- [00:08:05,120 - 00:08:06,120] It may change other things,
+- [00:08:06,120 - 00:08:08,120] but it doesn't change the momentum.
+- [00:08:08,120 - 00:08:10,120] Okay, we can check that.
+- [00:08:10,120 - 00:08:12,120] This is an interesting thing to check.
+- [00:08:12,120 - 00:08:15,120] For this Hamiltonian,
+- [00:08:15,120 - 00:08:22,120] does it change the momentum of the system?
+- [00:08:22,120 - 00:08:26,120] Okay, let's begin by looking at this term here.
+- [00:08:26,120 - 00:08:28,120] Let's forget the other term and see what it does
+- [00:08:28,120 - 00:08:33,120] when it acts on a state with a given total momentum.
+- [00:08:33,120 - 00:08:37,120] Okay, so what do we want to do?
+- [00:08:37,120 - 00:08:41,120] We want to rewrite this in the momentum basis.
+- [00:08:41,120 - 00:08:43,120] Let me remind you how that worked.
+- [00:08:43,120 - 00:08:45,120] That was just a good old Fourier transform.
+- [00:08:51,120 - 00:08:53,120] Okay, so the way that works
+- [00:08:53,120 - 00:08:56,120] is you say the creation operator for a...
+- [00:08:56,120 - 00:08:59,120] Oh, this happens to be the annihilation operator.
+- [00:08:59,120 - 00:09:02,120] But the annihilation operator for a particle at point x
+- [00:09:02,120 - 00:09:06,120] is an integral over all of the momentum
+- [00:09:06,120 - 00:09:08,120] to the square root of 2 pi,
+- [00:09:08,120 - 00:09:09,120] if you want to keep track of it.
+- [00:09:09,120 - 00:09:10,120] In fact, there's a square root of 2 pi,
+- [00:09:10,120 - 00:09:12,120] for each direction of space.
+- [00:09:12,120 - 00:09:14,120] So if this were three-dimensional,
+- [00:09:14,120 - 00:09:16,120] there would be a 2 pi cubed,
+- [00:09:16,120 - 00:09:21,120] but again, this is incidental and not important.
+- [00:09:21,120 - 00:09:29,120] And then, what we called psi twiddle, I believe, of p.
+- [00:09:29,120 - 00:09:31,120] This is the annihilation operator
+- [00:09:31,120 - 00:09:34,120] for a particle of momentum p.
+- [00:09:34,120 - 00:09:37,120] This annihilates a particle of momentum x.
+- [00:09:37,120 - 00:09:38,120] This annihilates a particle of momentum p,
+- [00:09:38,120 - 00:09:45,120] but then we have to multiply this by e to the i p x
+- [00:09:45,120 - 00:09:48,120] and integrate over p.
+- [00:09:48,120 - 00:09:51,120] That's the creation operator x
+- [00:09:51,120 - 00:09:53,120] in terms of the creation operator
+- [00:09:53,120 - 00:09:55,120] for a particle of momentum p.
+- [00:09:55,120 - 00:09:58,120] Now, I'm interested in what this operator does
+- [00:09:58,120 - 00:10:00,120] when it acts on a state,
+- [00:10:00,120 - 00:10:03,120] but I'm interested in what it does to the momentum.
+- [00:10:03,120 - 00:10:07,120] So the natural thing to do is to rewrite this
+- [00:10:07,120 - 00:10:10,120] in terms of the momentum variables.
+- [00:10:10,120 - 00:10:11,120] So let's do that.
+- [00:10:11,120 - 00:10:13,120] Let's go down here.
+- [00:10:13,120 - 00:10:17,120] mc squared, that's just a number.
+- [00:10:17,120 - 00:10:23,120] And now, we have integral dx.
+- [00:10:23,120 - 00:10:27,120] Now, each one of these can be rewritten that way.
+- [00:10:27,120 - 00:10:29,120] Alright, so there's an integral.
+- [00:10:29,120 - 00:10:32,120] Let's write a second equation here.
+- [00:10:32,120 - 00:10:35,120] Psi dagger of x
+- [00:10:35,120 - 00:10:37,120] is a similar integral.
+- [00:10:37,120 - 00:10:40,120] I'm not going to write it as an integral of p
+- [00:10:40,120 - 00:10:42,120] because I've already used p.
+- [00:10:42,120 - 00:10:44,120] p is an integration variable.
+- [00:10:44,120 - 00:10:46,120] I don't want to reuse it.
+- [00:10:46,120 - 00:10:47,120] I don't want to recycle it.
+- [00:10:47,120 - 00:10:49,120] I want to use another variable.
+- [00:10:49,120 - 00:10:53,120] Let's call it q, dq,
+- [00:10:53,120 - 00:10:58,120] over 2 pi.
+- [00:10:58,120 - 00:11:02,120] Psi dagger twiddle of q.
+- [00:11:02,120 - 00:11:06,120] And now there's an e to the minus i q x.
+- [00:11:06,120 - 00:11:09,120] Why is it e to the minus i q x?
+- [00:11:09,120 - 00:11:13,120] Because we're supposed to put the complex conjugate wave functions here.
+- [00:11:13,120 - 00:11:16,120] Everything gets complex conjugated.
+- [00:11:16,120 - 00:11:21,120] Okay, let's take psi of x times psi dagger of x,
+- [00:11:21,120 - 00:11:25,120] exactly the thing which appears here.
+- [00:11:25,120 - 00:11:28,120] And then let's integrate it over x and see what we get.
+- [00:11:28,120 - 00:11:29,120] Just for fun.
+- [00:11:29,120 - 00:11:32,120] This is sort of fun like going to the dentist, right?
+- [00:11:32,120 - 00:11:33,120] Yeah, okay.
+- [00:11:33,120 - 00:11:35,120] So we multiply the two of these together.
+- [00:11:35,120 - 00:11:38,120] And we get a double integral.
+- [00:11:38,120 - 00:11:40,120] What's that?
+- [00:11:40,120 - 00:11:43,120] That?
+- [00:11:43,120 - 00:11:45,120] Ah, okay.
+- [00:11:45,120 - 00:11:48,120] Okay, so we get to the dentist.
+- [00:11:48,120 - 00:11:52,120] And the dentist, first of all, says 1 over 2 pi.
+- [00:11:52,120 - 00:11:54,120] 1 over 2 pi for each direction.
+- [00:11:54,120 - 00:11:57,120] And then there is
+- [00:11:57,120 - 00:12:02,120] psi twiddle of p times psi dagger.
+- [00:12:02,120 - 00:12:04,120] I suppose we should put them in the opposite order
+- [00:12:04,120 - 00:12:05,120] since over here,
+- [00:12:05,120 - 00:12:08,120] the daggers stand to the left.
+- [00:12:08,120 - 00:12:12,120] So let's stand the daggers to the left.
+- [00:12:12,120 - 00:12:15,120] Psi twiddle dagger of q.
+- [00:12:15,120 - 00:12:17,120] That's this one.
+- [00:12:17,120 - 00:12:22,120] And then psi twiddle of p.
+- [00:12:22,120 - 00:12:25,120] We're going to integrate over p and q in a moment.
+- [00:12:25,120 - 00:12:32,120] But let's first put e to the i p minus q x.
+- [00:12:32,120 - 00:12:34,120] That's this factor, e to the i p minus q x.
+- [00:12:34,120 - 00:12:40,120] Question?
+- [00:12:40,120 - 00:12:41,120] No.
+- [00:12:41,120 - 00:12:42,120] Okay.
+- [00:12:42,120 - 00:12:44,120] And then we integrate over x.
+- [00:12:44,120 - 00:12:47,120] This instruction here is to integrate over x.
+- [00:12:47,120 - 00:12:51,120] Okay.
+- [00:12:51,120 - 00:12:54,120] Does anybody remember what you get
+- [00:12:54,120 - 00:13:00,120] when you integrate e to the i something times x over x?
+- [00:13:00,120 - 00:13:02,120] A delta function.
+- [00:13:02,120 - 00:13:04,120] A delta function.
+- [00:13:04,120 - 00:13:06,120] Now the way, if you forget that,
+- [00:13:06,120 - 00:13:08,120] the way to think about it is the following.
+- [00:13:08,120 - 00:13:12,120] Supposing p minus q is not 0,
+- [00:13:12,120 - 00:13:15,120] then this is an oscillating thing.
+- [00:13:15,120 - 00:13:17,120] If p minus q is not 0,
+- [00:13:17,120 - 00:13:19,120] then it oscillates with x.
+- [00:13:19,120 - 00:13:21,120] What happens if you integrate something which oscillates
+- [00:13:21,120 - 00:13:23,120] as much positive as negative?
+- [00:13:23,120 - 00:13:25,120] Dp dq.
+- [00:13:25,120 - 00:13:27,120] Yeah. Sorry. Dp dq.
+- [00:13:27,120 - 00:13:30,120] Okay.
+- [00:13:30,120 - 00:13:31,120] Yeah.
+- [00:13:31,120 - 00:13:36,120] Yeah, it just depends on the nature of the oscillation,
+- [00:13:36,120 - 00:13:39,120] but if it's all symmetric, then it cancels out.
+- [00:13:39,120 - 00:13:40,120] That's right. Okay.
+- [00:13:40,120 - 00:13:41,120] This is a mnemonic.
+- [00:13:41,120 - 00:13:45,120] This is not a rigorous argument.
+- [00:13:45,120 - 00:13:47,120] But if p is not equal to q,
+- [00:13:47,120 - 00:13:50,120] it oscillates, it has a sine in it, a cosine in it.
+- [00:13:50,120 - 00:13:53,120] The sines and cosines are as positive as they are negative,
+- [00:13:53,120 - 00:13:55,120] and that must integrate to 0.
+- [00:13:55,120 - 00:13:58,120] On the other hand, if p is equal to q,
+- [00:13:58,120 - 00:13:59,120] then this is just 1,
+- [00:13:59,120 - 00:14:03,120] and the integral of 1 over all space is infinite.
+- [00:14:03,120 - 00:14:06,120] So this is a function of p minus q,
+- [00:14:06,120 - 00:14:10,120] which is 0 if p minus q is not 0,
+- [00:14:10,120 - 00:14:12,120] in other words, if p is not equal to q,
+- [00:14:12,120 - 00:14:15,120] and it's infinite if p equals q.
+- [00:14:15,120 - 00:14:19,120] Obviously, this is proportional to the Dirac delta function,
+- [00:14:19,120 - 00:14:22,120] and with the 2 pi there, it is the Dirac delta function.
+- [00:14:22,120 - 00:14:24,120] So this all becomes...
+- [00:14:24,120 - 00:14:27,120] We can erase...
+- [00:14:27,120 - 00:14:29,120] We can erase the e to the i,
+- [00:14:29,120 - 00:14:31,120] p minus q,
+- [00:14:31,120 - 00:14:33,120] erase the integral dx,
+- [00:14:33,120 - 00:14:38,120] and just write that this is delta of p minus q,
+- [00:14:38,120 - 00:14:41,120] and we also get rid of the 1 over 2 pi.
+- [00:14:41,120 - 00:14:42,120] Okay.
+- [00:14:42,120 - 00:14:47,120] What happens if we integrate psi dagger of q times psi of p
+- [00:14:47,120 - 00:14:51,120] with a function which is 0 unless p is equal to q?
+- [00:14:51,120 - 00:14:53,120] Well, that's just the instruction.
+- [00:14:53,120 - 00:14:55,120] Do the integral, but set p equal to q.
+- [00:14:55,120 - 00:14:58,120] If you set p equal to q, there's only one integration,
+- [00:14:58,120 - 00:15:00,120] and this is just equal to
+- [00:15:00,120 - 00:15:05,120] psi dagger twiddle of q.
+- [00:15:05,120 - 00:15:07,120] Let's write it as p.
+- [00:15:07,120 - 00:15:11,120] The instruction here is set q equal to p,
+- [00:15:11,120 - 00:15:16,120] so this is p psi of p.
+- [00:15:16,120 - 00:15:19,120] Okay. Now, what do we have here?
+- [00:15:19,120 - 00:15:23,120] We have an operator which contains a destruction operator,
+- [00:15:23,120 - 00:15:25,120] or an annihilation operator,
+- [00:15:25,120 - 00:15:27,120] times a creation operator.
+- [00:15:27,120 - 00:15:31,120] It's an annihilation operator for a particle of momentum p,
+- [00:15:31,120 - 00:15:34,120] so if it finds a particle of momentum p,
+- [00:15:34,120 - 00:15:38,120] it pulls it out and kills it, you know, it annihilates it,
+- [00:15:38,120 - 00:15:42,120] but then it puts back a particle of the same momentum.
+- [00:15:42,120 - 00:15:45,120] Notice, here was the important thing,
+- [00:15:45,120 - 00:15:47,120] that by the time you're finished,
+- [00:15:47,120 - 00:15:50,120] p had to equal q.
+- [00:15:50,120 - 00:15:55,120] p had to equal q tells you that if you remove a particle,
+- [00:15:55,120 - 00:15:58,120] you put back a particle of the same momentum,
+- [00:15:58,120 - 00:16:01,120] and the momentum doesn't change
+- [00:16:01,120 - 00:16:04,120] when this operator operates on a state,
+- [00:16:04,120 - 00:16:07,120] it does not change the momentum.
+- [00:16:07,120 - 00:16:10,120] Whatever it takes out, it puts back.
+- [00:16:10,120 - 00:16:12,120] Okay.
+- [00:16:12,120 - 00:16:15,120] What was the working ingredient here?
+- [00:16:15,120 - 00:16:17,120] It was the integral over x,
+- [00:16:17,120 - 00:16:20,120] which turned this into a delta function.
+- [00:16:20,120 - 00:16:23,120] Okay. The integral over x turned it into a delta function,
+- [00:16:23,120 - 00:16:25,120] and the delta function,
+- [00:16:25,120 - 00:16:29,120] you can say, was the delta function of momentum conservation.
+- [00:16:31,120 - 00:16:34,120] Momentum, that when the Hamiltonian acts,
+- [00:16:34,120 - 00:16:36,120] when it updates the state a little bit,
+- [00:16:36,120 - 00:16:40,120] we somehow no longer have the little,
+- [00:16:40,120 - 00:16:41,120] the updating of the state,
+- [00:16:41,120 - 00:16:43,120] but when it updates the state a little bit,
+- [00:16:43,120 - 00:16:45,120] it doesn't change the momentum.
+- [00:16:45,120 - 00:16:46,120] Okay.
+- [00:16:46,120 - 00:16:49,120] Now, we can go,
+- [00:16:49,120 - 00:16:53,120] we can do the same thing
+- [00:16:53,120 - 00:16:55,120] with this term here,
+- [00:16:55,120 - 00:16:58,120] let's do it,
+- [00:16:58,120 - 00:16:59,120] let's go through it,
+- [00:16:59,120 - 00:17:00,120] just to peek,
+- [00:17:00,120 - 00:17:02,120] just so that you see how the machinery works.
+- [00:17:02,120 - 00:17:03,120] Quick question, please.
+- [00:17:03,120 - 00:17:04,120] Yeah.
+- [00:17:04,120 - 00:17:05,120] What happened to the being infinite
+- [00:17:05,120 - 00:17:07,120] when p is equal to q?
+- [00:17:07,120 - 00:17:09,120] Somehow, we don't talk about it.
+- [00:17:09,120 - 00:17:11,120] No, no, that's okay.
+- [00:17:11,120 - 00:17:14,120] Whenever you integrate a Dirac delta function
+- [00:17:14,120 - 00:17:17,120] with another function,
+- [00:17:17,120 - 00:17:23,120] you just get that function at point zero.
+- [00:17:23,120 - 00:17:25,120] That's the definition of Dirac delta function.
+- [00:17:25,120 - 00:17:29,120] The fact that it's infinite but of zero width.
+- [00:17:29,120 - 00:17:33,120] See, it's a thing which is infinitely high
+- [00:17:33,120 - 00:17:35,120] but infinitely narrow.
+- [00:17:35,120 - 00:17:39,120] The area under it is one unit.
+- [00:17:39,120 - 00:17:40,120] Okay.
+- [00:17:40,120 - 00:17:42,120] So it doesn't give anything infinite,
+- [00:17:42,120 - 00:17:44,120] it just gives back,
+- [00:17:44,120 - 00:17:46,120] and in this case,
+- [00:17:46,120 - 00:17:47,120] it just tells you,
+- [00:17:47,120 - 00:17:50,120] set p minus q equal to zero,
+- [00:17:50,120 - 00:17:53,120] which is the same thing as setting p equal to q.
+- [00:17:53,120 - 00:17:54,120] Okay.
+- [00:17:54,120 - 00:17:56,120] Before I look at this term here,
+- [00:17:56,120 - 00:18:00,120] let me just point out that this could be more general.
+- [00:18:00,120 - 00:18:04,120] Let's suppose we had a term in the Hamiltonian
+- [00:18:04,120 - 00:18:06,120] which had, for whatever reason,
+- [00:18:06,120 - 00:18:08,120] for reasons that we'll talk about later,
+- [00:18:08,120 - 00:18:13,120] we had a whole bunch of fields.
+- [00:18:13,120 - 00:18:17,120] They could even be fields for different kinds of particles.
+- [00:18:17,120 - 00:18:19,120] Creation operator and annihilation operator
+- [00:18:19,120 - 00:18:22,120] for different kinds of particles.
+- [00:18:22,120 - 00:18:24,120] And instead of having just a single field,
+- [00:18:24,120 - 00:18:26,120] just two of them,
+- [00:18:26,120 - 00:18:28,120] we could imagine in the Hamiltonian,
+- [00:18:28,120 - 00:18:30,120] and we'll discuss what this means,
+- [00:18:30,120 - 00:18:37,120] that we could have any number of side daggers,
+- [00:18:37,120 - 00:18:39,120] a particle of type A,
+- [00:18:39,120 - 00:18:41,120] particle of type B,
+- [00:18:41,120 - 00:18:43,120] any number of size,
+- [00:18:43,120 - 00:18:44,120] particle of type C,
+- [00:18:44,120 - 00:18:45,120] particle of type D,
+- [00:18:45,120 - 00:18:50,120] they could all be the same or not the same,
+- [00:18:50,120 - 00:18:54,120] any number of side daggers and any number of size.
+- [00:18:54,120 - 00:18:59,120] So, let's suppose in some insane world,
+- [00:18:59,120 - 00:19:02,120] we put this thing into the Hamiltonian.
+- [00:19:02,120 - 00:19:04,120] What would happen?
+- [00:19:04,120 - 00:19:08,120] Well, instead of getting what we have up here,
+- [00:19:08,120 - 00:19:10,120] this simple expression,
+- [00:19:10,120 - 00:19:14,120] what we would have is a whole bunch of integrals,
+- [00:19:14,120 - 00:19:19,120] a p integration for each field that appears here.
+- [00:19:19,120 - 00:19:22,120] Let's, yeah,
+- [00:19:22,120 - 00:19:24,120] whole bunches of p's,
+- [00:19:24,120 - 00:19:27,120] the p's could stand for the half of the particles
+- [00:19:27,120 - 00:19:29,120] that are being created, for example,
+- [00:19:29,120 - 00:19:34,120] dp1, dp2, dp3, and so forth,
+- [00:19:34,120 - 00:19:36,120] however many particles,
+- [00:19:36,120 - 00:19:39,120] or however many fields there are with dagger.
+- [00:19:39,120 - 00:19:41,120] And then,
+- [00:19:41,120 - 00:19:43,120] oh no, those are q's, sorry,
+- [00:19:43,120 - 00:19:45,120] q's go with the daggers,
+- [00:19:45,120 - 00:19:47,120] p's go with the size.
+- [00:19:47,120 - 00:19:49,120] Alright, so we have some q's also,
+- [00:19:49,120 - 00:19:52,120] dq1, however many of those there are.
+- [00:19:52,120 - 00:19:57,120] And then we have a bunch of creation and annihilation operators
+- [00:19:57,120 - 00:19:59,120] of exactly the same kind,
+- [00:19:59,120 - 00:20:02,120] except many of them now.
+- [00:20:02,120 - 00:20:05,120] side dagger of p1,
+- [00:20:05,120 - 00:20:08,120] or side twiddle of p1, dot dot dot,
+- [00:20:08,120 - 00:20:12,120] side daggers,
+- [00:20:12,120 - 00:20:15,120] size of q's,
+- [00:20:15,120 - 00:20:18,120] q1, dot dot dot.
+- [00:20:18,120 - 00:20:21,120] But then the all important exponentials.
+- [00:20:22,120 - 00:20:24,120] The all important exponentials,
+- [00:20:24,120 - 00:20:27,120] and they read, for each side,
+- [00:20:27,120 - 00:20:30,120] let's see, for each,
+- [00:20:32,120 - 00:20:34,120] I think I did it wrong again,
+- [00:20:34,120 - 00:20:36,120] q, p.
+- [00:20:36,120 - 00:20:38,120] If I wanted to follow the same notation up there,
+- [00:20:38,120 - 00:20:40,120] p.
+- [00:20:40,120 - 00:20:44,120] Then I would have an e to the i,
+- [00:20:44,120 - 00:20:46,120] and then for each p,
+- [00:20:46,120 - 00:20:50,120] p1 plus p2 plus p3,
+- [00:20:50,120 - 00:20:52,120] all times x,
+- [00:20:52,120 - 00:20:56,120] each one would come in with its own e to the i, px,
+- [00:20:56,120 - 00:20:58,120] and you'd add them all up in the exponent,
+- [00:20:58,120 - 00:21:02,120] but then you'd also have minus i,
+- [00:21:02,120 - 00:21:08,120] q1 plus q2, dot dot dot, x.
+- [00:21:08,120 - 00:21:12,120] In other words, instead of just having a single p and a single q,
+- [00:21:12,120 - 00:21:14,120] you would have a bunch of p's,
+- [00:21:14,120 - 00:21:16,120] for all the creation operators,
+- [00:21:16,120 - 00:21:18,120] which ones get the p's,
+- [00:21:18,120 - 00:21:20,120] p's go with the annihilation operators,
+- [00:21:20,120 - 00:21:22,120] and q's go with the creation operators.
+- [00:21:22,120 - 00:21:24,120] Okay.
+- [00:21:24,120 - 00:21:26,120] And you have to integrate it over x.
+- [00:21:26,120 - 00:21:28,120] You have to integrate it over x.
+- [00:21:28,120 - 00:21:30,120] What does the integration over x give you?
+- [00:21:30,120 - 00:21:32,120] Again, it gives you a delta function,
+- [00:21:32,120 - 00:21:34,120] and it's a delta function of the sum of all the p's,
+- [00:21:34,120 - 00:21:36,120] minus the sum of all the q's.
+- [00:21:36,120 - 00:21:38,120] In other words, it's a rule,
+- [00:21:38,120 - 00:21:40,120] that the sum of the p's has to be equal to the sum of the q's.
+- [00:21:40,120 - 00:21:42,120] The sum of the p's,
+- [00:21:42,120 - 00:21:44,120] is equal to the sum of the q's.
+- [00:21:44,120 - 00:21:46,120] So,
+- [00:21:46,120 - 00:21:48,120] the sum of the p's,
+- [00:21:48,120 - 00:21:50,120] is equal to the sum of the q's.
+- [00:21:50,120 - 00:21:52,120] The sum of the p's,
+- [00:21:52,120 - 00:21:54,120] is
+- [00:21:54,120 - 00:21:56,120] all the particles that you take out.
+- [00:21:56,120 - 00:21:58,120] The things of the annihilation operators.
+- [00:21:58,120 - 00:22:00,120] The sum of the p's,
+- [00:22:00,120 - 00:22:02,120] is all of the momentum of the particles that you put in.
+- [00:22:04,120 - 00:22:06,120] So it's just a rule.
+- [00:22:06,120 - 00:22:08,120] It says, the rule just says,
+- [00:22:08,120 - 00:22:10,120] the total momentum of the particles
+- [00:22:10,120 - 00:22:12,120] that you take out,
+- [00:22:12,120 - 00:22:14,120] must equal the total momentum of the particles that you put back.
+- [00:22:16,120 - 00:22:18,120] It's a rule,
+- [00:22:18,120 - 00:22:20,120] that
+- [00:22:20,120 - 00:22:22,120] follows from this kind of Hamiltonian here.
+- [00:22:24,120 - 00:22:26,120] Now, what's really going on,
+- [00:22:26,120 - 00:22:28,120] is the fact that this Hamiltonian is translation invariant.
+- [00:22:28,120 - 00:22:30,120] But I wanted to show you how
+- [00:22:30,120 - 00:22:32,120] the machinery works.
+- [00:22:32,120 - 00:22:34,120] And so whenever you see a Hamiltonian of this form,
+- [00:22:34,120 - 00:22:36,120] that it has a whole bunch of
+- [00:22:36,120 - 00:22:38,120] size and side daggers,
+- [00:22:38,120 - 00:22:40,120] but you integrate it over space.
+- [00:22:40,120 - 00:22:42,120] It's the integral over space,
+- [00:22:42,120 - 00:22:44,120] which gives you the delta function.
+- [00:22:44,120 - 00:22:46,120] It's the integral over space,
+- [00:22:46,120 - 00:22:48,120] which says,
+- [00:22:48,120 - 00:22:50,120] momentum conservation,
+- [00:22:50,120 - 00:22:52,120] momentum conservation, momentum conservation.
+- [00:22:52,120 - 00:22:54,120] It doesn't say that each,
+- [00:22:54,120 - 00:22:56,120] that p1 should be equal to q1,
+- [00:22:56,120 - 00:22:58,120] and p2 should equal q2.
+- [00:22:58,120 - 00:23:00,120] It says the sum of all the incoming momentum
+- [00:23:00,120 - 00:23:02,120] should be the same as the sum of all the outgoing momentum.
+- [00:23:02,120 - 00:23:04,120] Okay, so that's momentum conservation.
+- [00:23:04,120 - 00:23:06,120] In the Hamiltonian,
+- [00:23:06,120 - 00:23:08,120] that's the product of all these field operators?
+- [00:23:08,120 - 00:23:10,120] Yeah,
+- [00:23:10,120 - 00:23:12,120] the product of all these field operators.
+- [00:23:12,120 - 00:23:14,120] Why would you do that?
+- [00:23:14,120 - 00:23:16,120] We'll come to why you might do that.
+- [00:23:16,120 - 00:23:18,120] Not why you might,
+- [00:23:18,120 - 00:23:20,120] but why you might.
+- [00:23:20,120 - 00:23:22,120] So,
+- [00:23:22,120 - 00:23:24,120] let's go back to
+- [00:23:24,120 - 00:23:26,120] points of quantum field theory.
+- [00:23:26,120 - 00:23:28,120] But before we do it,
+- [00:23:28,120 - 00:23:30,120] let's take this term in the Hamiltonian over here.
+- [00:23:30,120 - 00:23:32,120] This has the additional derivatives.
+- [00:23:32,120 - 00:23:34,120] Let's go back and ask
+- [00:23:34,120 - 00:23:36,120] what would happen
+- [00:23:36,120 - 00:23:38,120] to this calculation,
+- [00:23:38,120 - 00:23:40,120] the first, the original one here,
+- [00:23:44,120 - 00:23:46,120] if we changed it
+- [00:23:46,120 - 00:23:48,120] by
+- [00:23:48,120 - 00:23:50,120] differentiating with
+- [00:23:50,120 - 00:23:52,120] minus del squared
+- [00:23:54,120 - 00:23:56,120] the psi dagger.
+- [00:23:56,120 - 00:23:58,120] Before we multiply it with psi,
+- [00:23:58,120 - 00:24:00,120] what does minus del squared,
+- [00:24:00,120 - 00:24:02,120] this is just the second derivative,
+- [00:24:02,120 - 00:24:04,120] what does it do when it hits here?
+- [00:24:04,120 - 00:24:06,120] Well, to know,
+- [00:24:06,120 - 00:24:08,120] we just go over to this side.
+- [00:24:08,120 - 00:24:10,120] Let's differentiate this side twice with x.
+- [00:24:10,120 - 00:24:12,120] What depends on x?
+- [00:24:12,120 - 00:24:14,120] Well, dq doesn't depend on x,
+- [00:24:14,120 - 00:24:16,120] 2 pi doesn't depend on x,
+- [00:24:16,120 - 00:24:18,120] in fact, psi dagger doesn't depend on x.
+- [00:24:18,120 - 00:24:20,120] The only thing that depends on x
+- [00:24:20,120 - 00:24:22,120] are these oscillating wave functions here.
+- [00:24:22,120 - 00:24:24,120] So what happens
+- [00:24:24,120 - 00:24:26,120] if you differentiate twice
+- [00:24:26,120 - 00:24:28,120] the oscillation here?
+- [00:24:30,120 - 00:24:32,120] q squared, plus q squared.
+- [00:24:34,120 - 00:24:36,120] Minus iq times minus iq,
+- [00:24:36,120 - 00:24:38,120] so this would give us
+- [00:24:38,120 - 00:24:40,120] q squared.
+- [00:24:40,120 - 00:24:42,120] In other words, the square of the momentum
+- [00:24:42,120 - 00:24:44,120] of the particle
+- [00:24:44,120 - 00:24:46,120] that you're creating here.
+- [00:24:46,120 - 00:24:48,120] Isn't it minus?
+- [00:24:48,120 - 00:24:50,120] No.
+- [00:24:50,120 - 00:24:52,120] It's minus.
+- [00:24:52,120 - 00:24:54,120] No, it's minus.
+- [00:24:54,120 - 00:24:56,120] Look at the far left side of the equation,
+- [00:24:56,120 - 00:24:58,120] there's a minus sign.
+- [00:24:58,120 - 00:25:00,120] There's a minus here, and then a minus...
+- [00:25:00,120 - 00:25:02,120] I didn't see that.
+- [00:25:02,120 - 00:25:04,120] Right.
+- [00:25:04,120 - 00:25:06,120] There's a minus here, that's why this
+- [00:25:06,120 - 00:25:08,120] well, this minus is here because that's what goes in the Hamiltonian,
+- [00:25:08,120 - 00:25:10,120] but, um, yeah.
+- [00:25:12,120 - 00:25:14,120] Okay, so what's
+- [00:25:14,120 - 00:25:16,120] the upshot?
+- [00:25:16,120 - 00:25:18,120] It's the same kind of expression that we had before.
+- [00:25:18,120 - 00:25:20,120] Again, you get to integrate
+- [00:25:20,120 - 00:25:22,120] e to the i p minus qx.
+- [00:25:22,120 - 00:25:24,120] It's again going to give you
+- [00:25:24,120 - 00:25:26,120] um,
+- [00:25:26,120 - 00:25:28,120] our momentum conservation.
+- [00:25:28,120 - 00:25:30,120] But instead of just having integral
+- [00:25:30,120 - 00:25:32,120] psi dagger of
+- [00:25:32,120 - 00:25:34,120] so I'd take a twiddle of p
+- [00:25:34,120 - 00:25:36,120] times psi
+- [00:25:36,120 - 00:25:38,120] twiddle of p,
+- [00:25:38,120 - 00:25:40,120] that just
+- [00:25:40,120 - 00:25:42,120] counted the total number of particles
+- [00:25:42,120 - 00:25:44,120] of each momentum and added them up.
+- [00:25:44,120 - 00:25:46,120] There's another factor of
+- [00:25:46,120 - 00:25:48,120] p squared.
+- [00:25:48,120 - 00:25:50,120] It's this thing here,
+- [00:25:50,120 - 00:25:52,120] which when you use the delta function
+- [00:25:52,120 - 00:25:54,120] just gives you p squared.
+- [00:25:54,120 - 00:25:56,120] What is this thing giving you?
+- [00:25:56,120 - 00:25:58,120] First of all, it conserves momentum.
+- [00:25:58,120 - 00:26:00,120] The momentum in and the momentum out
+- [00:26:00,120 - 00:26:02,120] have to be the same, for exactly the same
+- [00:26:02,120 - 00:26:04,120] reason, but it's just weighing
+- [00:26:04,120 - 00:26:06,120] each particle with its, with the square
+- [00:26:06,120 - 00:26:08,120] of its momentum. In other words,
+- [00:26:08,120 - 00:26:10,120] it's counting the kinetic energy of each
+- [00:26:10,120 - 00:26:12,120] particle. It's just adding up
+- [00:26:12,120 - 00:26:14,120] all the particles, adding up the number
+- [00:26:14,120 - 00:26:16,120] operator for each momentum,
+- [00:26:16,120 - 00:26:18,120] and multiplying it by p squared. I suppose
+- [00:26:18,120 - 00:26:20,120] where's the 2m? We left out the 2m.
+- [00:26:20,120 - 00:26:22,120] p squared over 2m.
+- [00:26:24,120 - 00:26:26,120] So it's doing exactly
+- [00:26:26,120 - 00:26:28,120] what it's supposed to do. It's counting up the kinetic
+- [00:26:28,120 - 00:26:30,120] energy of the particles, and
+- [00:26:30,120 - 00:26:32,120] momentum is conserved
+- [00:26:32,120 - 00:26:34,120] because of the
+- [00:26:34,120 - 00:26:36,120] delta function.
+- [00:26:38,120 - 00:26:40,120] Okay, let me show you an example of
+- [00:26:40,120 - 00:26:42,120] an interesting term
+- [00:26:42,120 - 00:26:44,120] that you could put into the Hamiltonian.
+- [00:26:44,120 - 00:26:46,120] Let's suppose you had
+- [00:26:46,120 - 00:26:48,120] two species of particles.
+- [00:26:50,120 - 00:26:52,120] Let's call one
+- [00:26:52,120 - 00:26:54,120] an electron and the other a proton.
+- [00:26:54,120 - 00:26:56,120] Species.
+- [00:26:56,120 - 00:26:58,120] Now, I'm cheating because
+- [00:26:58,120 - 00:27:00,120] if I really wanted to do electrons and protons,
+- [00:27:00,120 - 00:27:02,120] I wouldn't be doing boson operators.
+- [00:27:02,120 - 00:27:04,120] Okay,
+- [00:27:04,120 - 00:27:06,120] so these are fake electrons
+- [00:27:06,120 - 00:27:08,120] and protons which happen to be
+- [00:27:08,120 - 00:27:10,120] bosons.
+- [00:27:12,120 - 00:27:14,120] Let's forget the mc squared term.
+- [00:27:14,120 - 00:27:16,120] No, we're not going to work
+- [00:27:16,120 - 00:27:18,120] with the mc squared term.
+- [00:27:18,120 - 00:27:20,120] What's that?
+- [00:27:20,120 - 00:27:22,120] In the conservation of
+- [00:27:22,120 - 00:27:24,120] energy, kinetic energy.
+- [00:27:24,120 - 00:27:26,120] It's only in the case when
+- [00:27:26,120 - 00:27:28,120] Kinetic energy,
+- [00:27:28,120 - 00:27:30,120] momentum or energy?
+- [00:27:30,120 - 00:27:32,120] Kinetic energy.
+- [00:27:32,120 - 00:27:34,120] That's only true in the case where
+- [00:27:34,120 - 00:27:36,120] the potential energy is constant.
+- [00:27:36,120 - 00:27:38,120] We haven't put any, exactly, yes so.
+- [00:27:38,120 - 00:27:40,120] That is so.
+- [00:27:40,120 - 00:27:42,120] That is a true statement.
+- [00:27:42,120 - 00:27:44,120] What is the interpretation of the side dagger
+- [00:27:44,120 - 00:27:46,120] in the Hamiltonian?
+- [00:27:46,120 - 00:27:48,120] It counts.
+- [00:27:52,120 - 00:27:54,120] It counts.
+- [00:27:54,120 - 00:27:56,120] Psi times psi dagger is a
+- [00:27:56,120 - 00:27:58,120] counting operator.
+- [00:27:58,120 - 00:28:00,120] In this case, it's counting the number of
+- [00:28:00,120 - 00:28:02,120] particles with each momentum and multiplying
+- [00:28:02,120 - 00:28:04,120] by p squared.
+- [00:28:04,120 - 00:28:06,120] No, no, he just,
+- [00:28:06,120 - 00:28:08,120] he didn't see the multiplication there.
+- [00:28:08,120 - 00:28:10,120] Oh, okay, good.
+- [00:28:10,120 - 00:28:12,120] Yeah. You know, there's another trick
+- [00:28:12,120 - 00:28:14,120] you can do.
+- [00:28:14,120 - 00:28:16,120] This thing looks negative, doesn't it?
+- [00:28:16,120 - 00:28:18,120] But of course everybody knows the kinetic energy
+- [00:28:18,120 - 00:28:20,120] of a particle is positive.
+- [00:28:20,120 - 00:28:22,120] So what's going on?
+- [00:28:22,120 - 00:28:24,120] Well, everybody
+- [00:28:24,120 - 00:28:26,120] know how to integrate by parts
+- [00:28:26,120 - 00:28:28,120] if you have
+- [00:28:28,120 - 00:28:30,120] psi dagger
+- [00:28:30,120 - 00:28:32,120] of x
+- [00:28:32,120 - 00:28:34,120] and you have two derivatives
+- [00:28:34,120 - 00:28:36,120] with a minus sign,
+- [00:28:36,120 - 00:28:38,120] d by dx
+- [00:28:38,120 - 00:28:40,120] times d by dx
+- [00:28:40,120 - 00:28:42,120] times psi.
+- [00:28:42,120 - 00:28:44,120] I'm not going
+- [00:28:44,120 - 00:28:46,120] to work this out in detail. I'm going to tell you
+- [00:28:46,120 - 00:28:48,120] the result.
+- [00:28:48,120 - 00:28:50,120] The d by dx's both act
+- [00:28:50,120 - 00:28:52,120] to the right.
+- [00:28:52,120 - 00:28:54,120] They act on psi.
+- [00:28:54,120 - 00:28:56,120] Integration by parts allows
+- [00:28:56,120 - 00:28:58,120] you to take one of these derivatives
+- [00:28:58,120 - 00:29:00,120] and shift it to the other side.
+- [00:29:00,120 - 00:29:02,120] In fact, integration by parts
+- [00:29:02,120 - 00:29:04,120] would allow you to take both of them
+- [00:29:04,120 - 00:29:06,120] and shift them to the other side.
+- [00:29:06,120 - 00:29:08,120] But I don't want to shift both of them. I just want to shift one of them.
+- [00:29:08,120 - 00:29:10,120] But what do you have to do when you
+- [00:29:10,120 - 00:29:12,120] integrate by parts in addition to taking
+- [00:29:12,120 - 00:29:14,120] the derivative and shifting it to the other factor?
+- [00:29:14,120 - 00:29:16,120] Change the sign.
+- [00:29:16,120 - 00:29:18,120] You also have to worry about
+- [00:29:18,120 - 00:29:20,120] edge effects, but
+- [00:29:20,120 - 00:29:22,120] we won't worry
+- [00:29:22,120 - 00:29:24,120] about that now.
+- [00:29:24,120 - 00:29:26,120] So, you can rewrite this
+- [00:29:26,120 - 00:29:28,120] as
+- [00:29:28,120 - 00:29:30,120] d by dx
+- [00:29:30,120 - 00:29:32,120] of psi dagger
+- [00:29:32,120 - 00:29:34,120] times d by dx
+- [00:29:34,120 - 00:29:36,120] of psi
+- [00:29:36,120 - 00:29:38,120] and now this is just a square of something
+- [00:29:38,120 - 00:29:40,120] and it's positive.
+- [00:29:40,120 - 00:29:42,120] Integrated dx.
+- [00:29:46,120 - 00:29:50,120] That's kind of interesting
+- [00:29:50,120 - 00:29:52,120] to see in the Hamiltonian
+- [00:29:52,120 - 00:29:54,120] the square of the derivative
+- [00:29:54,120 - 00:29:56,120] of psi.
+- [00:29:56,120 - 00:29:58,120] It's very much like
+- [00:29:58,120 - 00:30:00,120] any other field theory
+- [00:30:00,120 - 00:30:02,120] where
+- [00:30:02,120 - 00:30:04,120] what you see in the Hamiltonian is
+- [00:30:04,120 - 00:30:06,120] squares of derivatives of the fields.
+- [00:30:06,120 - 00:30:08,120] In this case, squares of the space
+- [00:30:08,120 - 00:30:10,120] derivatives of the fields.
+- [00:30:10,120 - 00:30:12,120] And it's positive.
+- [00:30:12,120 - 00:30:14,120] It's positive because
+- [00:30:14,120 - 00:30:16,120] the derivative of psi dagger
+- [00:30:16,120 - 00:30:18,120] times the derivative of psi
+- [00:30:18,120 - 00:30:20,120] is positive.
+- [00:30:20,120 - 00:30:22,120] Okay, let's take
+- [00:30:22,120 - 00:30:24,120] another example of a possible
+- [00:30:24,120 - 00:30:26,120] thing in the Hamiltonian
+- [00:30:26,120 - 00:30:28,120] and discuss what it means.
+- [00:30:28,120 - 00:30:30,120] Now, again, without
+- [00:30:30,120 - 00:30:32,120] mathematical proofs because
+- [00:30:32,120 - 00:30:34,120] we're just
+- [00:30:34,120 - 00:30:36,120] belabor points
+- [00:30:36,120 - 00:30:38,120] that were essentially already made,
+- [00:30:38,120 - 00:30:40,120] but let's add in here
+- [00:30:40,120 - 00:30:44,120] let's assume there are two kinds of particles first.
+- [00:30:44,120 - 00:30:46,120] I'm not going to give them names.
+- [00:30:46,120 - 00:30:48,120] I'm going to call them A and B.
+- [00:30:48,120 - 00:30:50,120] You can call them proton and electron
+- [00:30:50,120 - 00:30:52,120] if you like.
+- [00:30:52,120 - 00:30:54,120] Then first of all, there's the energy of the electrons.
+- [00:30:54,120 - 00:30:56,120] So this is the field operator
+- [00:30:56,120 - 00:30:58,120] for electrons.
+- [00:30:58,120 - 00:31:00,120] It creates and annihilates electrons.
+- [00:31:00,120 - 00:31:02,120] It does nothing to protons.
+- [00:31:02,120 - 00:31:04,120] This is the kinetic energy of all the electrons.
+- [00:31:04,120 - 00:31:06,120] We have to add to that
+- [00:31:06,120 - 00:31:08,120] the kinetic energy of all the protons.
+- [00:31:08,120 - 00:31:10,120] So,
+- [00:31:10,120 - 00:31:12,120] this is
+- [00:31:20,120 - 00:31:22,120] this is twice m electron,
+- [00:31:22,120 - 00:31:24,120] this is twice m proton,
+- [00:31:24,120 - 00:31:26,120] and then
+- [00:31:26,120 - 00:31:28,120] psi
+- [00:31:28,120 - 00:31:30,120] proton of x.
+- [00:31:30,120 - 00:31:32,120] Okay, so far all I
+- [00:31:32,120 - 00:31:34,120] have is the
+- [00:31:34,120 - 00:31:36,120] is the kinetic
+- [00:31:36,120 - 00:31:38,120] energies. Now,
+- [00:31:38,120 - 00:31:40,120] I'm going to add something. It's not the realistic
+- [00:31:40,120 - 00:31:42,120] real interaction between electrons
+- [00:31:42,120 - 00:31:44,120] and protons. This is just a model interaction.
+- [00:31:44,120 - 00:31:46,120] And what I'm going to add
+- [00:31:46,120 - 00:31:48,120] is plus the integral
+- [00:31:48,120 - 00:31:50,120] over space, integral of the
+- [00:31:50,120 - 00:31:52,120] x, times
+- [00:31:52,120 - 00:31:54,120] the
+- [00:31:54,120 - 00:31:56,120] creation
+- [00:31:56,120 - 00:31:58,120] operator
+- [00:31:58,120 - 00:32:00,120] of an electron at point x
+- [00:32:00,120 - 00:32:02,120] times
+- [00:32:02,120 - 00:32:04,120] the creation operator of a proton
+- [00:32:04,120 - 00:32:06,120] at point x
+- [00:32:06,120 - 00:32:08,120] times the annihilation
+- [00:32:08,120 - 00:32:10,120] operator of an electron at point x.
+- [00:32:10,120 - 00:32:12,120] times the annihilation
+- [00:32:12,120 - 00:32:14,120] of a proton
+- [00:32:14,120 - 00:32:16,120] at the same point x.
+- [00:32:16,120 - 00:32:18,120] at the same point x.
+- [00:32:22,120 - 00:32:24,120] And
+- [00:32:24,120 - 00:32:26,120] yes.
+- [00:32:26,120 - 00:32:28,120] Okay.
+- [00:32:28,120 - 00:32:30,120] This comes along
+- [00:32:30,120 - 00:32:32,120] and it annihilates a proton
+- [00:32:32,120 - 00:32:34,120] and an electron if it finds them.
+- [00:32:34,120 - 00:32:36,120] Where does it annihilate them?
+- [00:32:36,120 - 00:32:38,120] It annihilates them at position x.
+- [00:32:38,120 - 00:32:40,120] So if that happens,
+- [00:32:40,120 - 00:32:42,120] it turns to be an electron and a proton.
+- [00:32:42,120 - 00:32:44,120] And let's draw this the following way.
+- [00:32:44,120 - 00:32:46,120] This is a space-time diagram.
+- [00:32:46,120 - 00:32:48,120] Here's a space-time diagram. Here's time.
+- [00:32:48,120 - 00:32:50,120] This is just a way to visualize.
+- [00:32:50,120 - 00:32:52,120] This is not
+- [00:32:52,120 - 00:32:54,120] to be taken too seriously
+- [00:32:54,120 - 00:32:56,120] at the moment.
+- [00:32:56,120 - 00:32:58,120] But an electron and a proton are moving around.
+- [00:32:58,120 - 00:33:00,120] Here they are.
+- [00:33:00,120 - 00:33:02,120] This is time. This is space.
+- [00:33:02,120 - 00:33:04,120] These are
+- [00:33:04,120 - 00:33:06,120] the world lines of the electrons and the proton.
+- [00:33:06,120 - 00:33:08,120] The electron and the proton.
+- [00:33:08,120 - 00:33:10,120] If they're not at the same
+- [00:33:10,120 - 00:33:12,120] place,
+- [00:33:12,120 - 00:33:14,120] then you can't, then this is not going to
+- [00:33:14,120 - 00:33:16,120] give anything if it acts on the state.
+- [00:33:16,120 - 00:33:18,120] This will act on a state and will only act
+- [00:33:18,120 - 00:33:20,120] if it finds both a proton
+- [00:33:20,120 - 00:33:22,120] and an electron at the same place.
+- [00:33:22,120 - 00:33:24,120] It doesn't matter
+- [00:33:24,120 - 00:33:26,120] what place, because you're integrating
+- [00:33:26,120 - 00:33:28,120] over x, you'll get some kind of thing
+- [00:33:28,120 - 00:33:30,120] no matter where x is
+- [00:33:30,120 - 00:33:32,120] if there are two particles at the same place.
+- [00:33:32,120 - 00:33:34,120] But if there are not two particles at the same
+- [00:33:34,120 - 00:33:36,120] place, it just gives zero.
+- [00:33:36,120 - 00:33:38,120] Okay, so first of all, it looks
+- [00:33:38,120 - 00:33:40,120] for particles at the same place.
+- [00:33:40,120 - 00:33:42,120] If it finds particles at the
+- [00:33:42,120 - 00:33:44,120] same place,
+- [00:33:44,120 - 00:33:46,120] it annihilates the proton,
+- [00:33:46,120 - 00:33:48,120] it annihilates the electron,
+- [00:33:48,120 - 00:33:50,120] but then it creates
+- [00:33:50,120 - 00:33:52,120] a proton,
+- [00:33:52,120 - 00:33:54,120] and it creates an electron
+- [00:33:54,120 - 00:33:56,120] at the same point.
+- [00:33:56,120 - 00:33:58,120] It scatters
+- [00:33:58,120 - 00:34:00,120] the electron and the proton,
+- [00:34:00,120 - 00:34:02,120] is what it does. Electron and proton
+- [00:34:02,120 - 00:34:04,120] come in, and when they're at
+- [00:34:04,120 - 00:34:06,120] the same point, and then they go out,
+- [00:34:06,120 - 00:34:08,120] and it scatters them.
+- [00:34:08,120 - 00:34:10,120] Is the momentum
+- [00:34:10,120 - 00:34:12,120] conserved? Yes, the momentum is
+- [00:34:12,120 - 00:34:14,120] conserved for exactly the reason we wrote
+- [00:34:14,120 - 00:34:16,120] up there. But are the individual
+- [00:34:16,120 - 00:34:18,120] momentums conserved? No.
+- [00:34:18,120 - 00:34:20,120] The individual momentums are not
+- [00:34:20,120 - 00:34:22,120] conserved. I should have gone through that
+- [00:34:22,120 - 00:34:24,120] here. The individual momentums are not conserved.
+- [00:34:24,120 - 00:34:26,120] The only conservation of
+- [00:34:26,120 - 00:34:28,120] momentum is the overall conservation.
+- [00:34:28,120 - 00:34:30,120] So when an operator
+- [00:34:30,120 - 00:34:32,120] like this comes along
+- [00:34:32,120 - 00:34:34,120] and hits the state of
+- [00:34:34,120 - 00:34:36,120] an electron-proton system,
+- [00:34:36,120 - 00:34:38,120] it scatters the electron-proton
+- [00:34:38,120 - 00:34:40,120] system.
+- [00:34:40,120 - 00:34:42,120] So it's a scattering operator. It's equivalent
+- [00:34:42,120 - 00:34:44,120] to a potential energy between
+- [00:34:44,120 - 00:34:46,120] the electron and proton
+- [00:34:46,120 - 00:34:48,120] when they're at the same spot.
+- [00:34:48,120 - 00:34:50,120] Of course, real electrons and protons
+- [00:34:50,120 - 00:34:52,120] interact even if they're not at the same
+- [00:34:52,120 - 00:34:54,120] spot to the Coulomb potential,
+- [00:34:54,120 - 00:34:56,120] but we're just taking little steps
+- [00:34:56,120 - 00:34:58,120] one at a time.
+- [00:34:58,120 - 00:35:00,120] Okay, so
+- [00:35:00,120 - 00:35:02,120] if
+- [00:35:02,120 - 00:35:04,120] through experiment, you
+- [00:35:04,120 - 00:35:06,120] discovered that there was an interaction
+- [00:35:06,120 - 00:35:08,120] where electrons and protons
+- [00:35:08,120 - 00:35:10,120] by a short range
+- [00:35:10,120 - 00:35:12,120] of potential,
+- [00:35:12,120 - 00:35:14,120] short range meaning it only acts when they're at the same
+- [00:35:14,120 - 00:35:16,120] point, scatter each other,
+- [00:35:16,120 - 00:35:18,120] this is what you would put into the Hamiltonian.
+- [00:35:18,120 - 00:35:20,120] So it's a kind
+- [00:35:20,120 - 00:35:22,120] of experimental, you know,
+- [00:35:22,120 - 00:35:24,120] a bit of experimental physics to tell you
+- [00:35:24,120 - 00:35:26,120] what kind of things
+- [00:35:26,120 - 00:35:28,120] the particles can do, and once
+- [00:35:28,120 - 00:35:30,120] you know what they can do, you mock it up
+- [00:35:30,120 - 00:35:32,120] by expressions
+- [00:35:32,120 - 00:35:34,120] like this. Let's do some more.
+- [00:35:34,120 - 00:35:36,120] Let's see what else we could imagine having.
+- [00:35:36,120 - 00:35:38,120] Another thing we could imagine
+- [00:35:38,120 - 00:35:40,120] having...
+- [00:35:40,120 - 00:35:42,120] Why is that part of the Hamiltonian?
+- [00:35:42,120 - 00:35:44,120] The energy doesn't
+- [00:35:44,120 - 00:35:46,120] change, right?
+- [00:35:46,120 - 00:35:48,120] That's equivalent
+- [00:35:48,120 - 00:35:50,120] to a potential energy in the Hamiltonian
+- [00:35:50,120 - 00:35:52,120] between the electron and the proton.
+- [00:35:52,120 - 00:35:54,120] Oh.
+- [00:35:54,120 - 00:35:56,120] Any other questions?
+- [00:35:56,120 - 00:35:58,120] But, you know,
+- [00:35:58,120 - 00:36:00,120] what Hamiltonians do is change
+- [00:36:00,120 - 00:36:02,120] states from one instant to the next.
+- [00:36:02,120 - 00:36:04,120] If you discovered experimentally
+- [00:36:04,120 - 00:36:06,120] that an electron
+- [00:36:06,120 - 00:36:08,120] and a proton over a short period
+- [00:36:08,120 - 00:36:10,120] of time will scatter each other
+- [00:36:10,120 - 00:36:12,120] if they're at the same place,
+- [00:36:12,120 - 00:36:14,120] you've got to say there must be something
+- [00:36:14,120 - 00:36:16,120] in the Hamiltonian, the thing which updates
+- [00:36:16,120 - 00:36:18,120] the state, which corresponds
+- [00:36:18,120 - 00:36:20,120] to that scattering. And that's the kind of thing you would
+- [00:36:20,120 - 00:36:22,120] write down.
+- [00:36:22,120 - 00:36:24,120] So when you see in quantum field theory
+- [00:36:24,120 - 00:36:26,120] expressions like
+- [00:36:26,120 - 00:36:28,120] this, interactions involving
+- [00:36:28,120 - 00:36:30,120] products of fields,
+- [00:36:30,120 - 00:36:32,120] maybe products for
+- [00:36:32,120 - 00:36:34,120] different fields, different kinds of
+- [00:36:34,120 - 00:36:36,120] particles, they're representing
+- [00:36:36,120 - 00:36:38,120] these basic simple interactions
+- [00:36:38,120 - 00:36:40,120] where particles, if they're at the same point
+- [00:36:40,120 - 00:36:42,120] can interact with each other.
+- [00:36:42,120 - 00:36:44,120] Another example, supposing
+- [00:36:44,120 - 00:36:46,120] experimentally you discovered
+- [00:36:46,120 - 00:36:48,120] that particle
+- [00:36:48,120 - 00:36:50,120] of type A
+- [00:36:52,120 - 00:36:54,120] could decay
+- [00:36:54,120 - 00:36:56,120] and form
+- [00:36:56,120 - 00:36:58,120] particle of type B and particle
+- [00:36:58,120 - 00:37:00,120] of type C. Again, this is time.
+- [00:37:00,120 - 00:37:02,120] Read it
+- [00:37:02,120 - 00:37:04,120] from bottom to top.
+- [00:37:04,120 - 00:37:06,120] Particle A comes along
+- [00:37:06,120 - 00:37:08,120] and you discover
+- [00:37:08,120 - 00:37:10,120] that
+- [00:37:10,120 - 00:37:12,120] there's a process where
+- [00:37:12,120 - 00:37:14,120] particle A disappears at a point
+- [00:37:14,120 - 00:37:16,120] and particle B and C
+- [00:37:16,120 - 00:37:18,120] appear at the same point.
+- [00:37:18,120 - 00:37:20,120] You discover in your
+- [00:37:20,120 - 00:37:22,120] bubble chamber, you discover
+- [00:37:22,120 - 00:37:24,120] tracks which lead you
+- [00:37:24,120 - 00:37:26,120] to conclude that
+- [00:37:26,120 - 00:37:28,120] A came in, B and C went out
+- [00:37:28,120 - 00:37:30,120] and
+- [00:37:30,120 - 00:37:32,120] they came out from the same
+- [00:37:32,120 - 00:37:34,120] place that A came in. What would you write down?
+- [00:37:34,120 - 00:37:36,120] Well, okay.
+- [00:37:36,120 - 00:37:38,120] So,
+- [00:37:38,120 - 00:37:40,120] you need something to
+- [00:37:40,120 - 00:37:42,120] remove the A.
+- [00:37:42,120 - 00:37:44,120] What happens over a short period of time
+- [00:37:44,120 - 00:37:46,120] is an A disappears,
+- [00:37:46,120 - 00:37:48,120] that's an annihilation operator,
+- [00:37:48,120 - 00:37:50,120] and a B and a C are created.
+- [00:37:50,120 - 00:37:52,120] So let's try that. What kind of thing might we write down?
+- [00:37:52,120 - 00:37:54,120] We might write down the
+- [00:37:54,120 - 00:37:56,120] annihilation operator
+- [00:37:56,120 - 00:37:58,120] for A,
+- [00:37:58,120 - 00:38:00,120] for field A,
+- [00:38:00,120 - 00:38:02,120] at position X, that's the
+- [00:38:02,120 - 00:38:04,120] annihilation operator, and then
+- [00:38:04,120 - 00:38:06,120] two creation operators, one for B and one for C.
+- [00:38:10,120 - 00:38:20,120] And you'd say, look, I've discovered experimentally
+- [00:38:20,120 - 00:38:22,120] that the state of the system changes
+- [00:38:22,120 - 00:38:24,120] in such a way that an A
+- [00:38:24,120 - 00:38:26,120] disappears,
+- [00:38:26,120 - 00:38:28,120] that's this, and a B and a C
+- [00:38:28,120 - 00:38:30,120] are produced. Furthermore,
+- [00:38:30,120 - 00:38:32,120] because every point of space
+- [00:38:32,120 - 00:38:34,120] is like every other point of space,
+- [00:38:34,120 - 00:38:36,120] you would
+- [00:38:36,120 - 00:38:38,120] begin to suspect this could happen not only
+- [00:38:38,120 - 00:38:40,120] at point X, but it could happen anywhere.
+- [00:38:40,120 - 00:38:42,120] So, you integrate it
+- [00:38:42,120 - 00:38:44,120] over X.
+- [00:38:46,120 - 00:38:48,120] Weigh all points of space equally.
+- [00:38:48,120 - 00:38:50,120] Once you do this,
+- [00:38:50,120 - 00:38:52,120] you can read off
+- [00:38:52,120 - 00:38:54,120] from what we talked about over here
+- [00:38:54,120 - 00:38:56,120] that the momentum is conserved.
+- [00:38:56,120 - 00:38:58,120] The momentum
+- [00:38:58,120 - 00:39:00,120] of A becomes the momentum
+- [00:39:00,120 - 00:39:02,120] of B and C. Now, energy conservation
+- [00:39:02,120 - 00:39:04,120] is a little more complicated.
+- [00:39:04,120 - 00:39:06,120] But energy is always
+- [00:39:06,120 - 00:39:08,120] conserved, let's put it that way.
+- [00:39:08,120 - 00:39:10,120] Okay, so
+- [00:39:10,120 - 00:39:12,120] over the long
+- [00:39:12,120 - 00:39:14,120] run, anyway.
+- [00:39:14,120 - 00:39:16,120] Okay, so this is
+- [00:39:16,120 - 00:39:18,120] what else would you put
+- [00:39:18,120 - 00:39:20,120] into this Hamiltonian, or this term
+- [00:39:20,120 - 00:39:22,120] in the Hamiltonian, besides these products of fields?
+- [00:39:26,120 - 00:39:28,120] How about a number?
+- [00:39:30,120 - 00:39:32,120] For example, in both
+- [00:39:32,120 - 00:39:34,120] cases, incidentally, I should have said that
+- [00:39:34,120 - 00:39:36,120] also in this case over here.
+- [00:39:40,120 - 00:39:42,120] The possible number plus
+- [00:39:42,120 - 00:39:44,120] G,
+- [00:39:44,120 - 00:39:46,120] the coupling constant.
+- [00:39:46,120 - 00:39:48,120] The coupling constant
+- [00:39:48,120 - 00:39:50,120] is a number, which can be anything.
+- [00:39:52,120 - 00:39:54,120] And it can
+- [00:39:54,120 - 00:39:56,120] be extremely
+- [00:39:56,120 - 00:39:58,120] small if the particles are very
+- [00:39:58,120 - 00:40:00,120] weakly interacting. That would mean
+- [00:40:00,120 - 00:40:02,120] that even if the particles arrive at the same
+- [00:40:02,120 - 00:40:04,120] point, the probability
+- [00:40:04,120 - 00:40:06,120] that they scatter is small.
+- [00:40:06,120 - 00:40:08,120] And you would
+- [00:40:08,120 - 00:40:10,120] experimentally verify this. You would
+- [00:40:10,120 - 00:40:12,120] scatter two particles, and you would discover
+- [00:40:12,120 - 00:40:14,120] most of the time they don't interact.
+- [00:40:14,120 - 00:40:16,120] In that case, G is a small number.
+- [00:40:18,120 - 00:40:20,120] If the particles have a
+- [00:40:20,120 - 00:40:22,120] large interaction
+- [00:40:22,120 - 00:40:24,120] probability, then G is a large
+- [00:40:24,120 - 00:40:26,120] number. And G is called the
+- [00:40:26,120 - 00:40:28,120] coupling constant.
+- [00:40:28,120 - 00:40:30,120] Okay, we're on our
+- [00:40:30,120 - 00:40:32,120] way to building quantum field theories.
+- [00:40:32,120 - 00:40:34,120] Let me say one more thing
+- [00:40:34,120 - 00:40:36,120] about
+- [00:40:36,120 - 00:40:38,120] this term here.
+- [00:40:38,120 - 00:40:40,120] What goes
+- [00:40:40,120 - 00:40:42,120] in the Hamiltonian must be hermition.
+- [00:40:42,120 - 00:40:44,120] That's a rule.
+- [00:40:44,120 - 00:40:46,120] Hamiltonians are hermition, and
+- [00:40:46,120 - 00:40:48,120] that's equal or equivalent to the
+- [00:40:48,120 - 00:40:50,120] statement that the time evolution is
+- [00:40:50,120 - 00:40:52,120] unitary. Time evolution
+- [00:40:52,120 - 00:40:54,120] is unitary because it's got to
+- [00:40:54,120 - 00:40:56,120] conserve probabilities.
+- [00:40:56,120 - 00:40:58,120] Okay, so
+- [00:40:58,120 - 00:41:00,120] is this hermition?
+- [00:41:00,120 - 00:41:02,120] Well, it's not hermition.
+- [00:41:02,120 - 00:41:04,120] It's not hermition.
+- [00:41:04,120 - 00:41:06,120] And the reason it's not hermition
+- [00:41:06,120 - 00:41:08,120] is because the hermition conjugates of
+- [00:41:08,120 - 00:41:10,120] a psi dagger are a psi.
+- [00:41:10,120 - 00:41:12,120] And the hermition conjugates of a
+- [00:41:12,120 - 00:41:14,120] psi are a psi dagger.
+- [00:41:14,120 - 00:41:16,120] To make it hermition, you must add
+- [00:41:16,120 - 00:41:18,120] its hermition conjugate.
+- [00:41:18,120 - 00:41:20,120] Its hermition conjugate
+- [00:41:20,120 - 00:41:22,120] is the same operator,
+- [00:41:22,120 - 00:41:24,120] except with everything
+- [00:41:24,120 - 00:41:26,120] replaced by its conjugate.
+- [00:41:26,120 - 00:41:28,120] And you also have to remember
+- [00:41:28,120 - 00:41:30,120] when you hermition conjugate things, you've got to
+- [00:41:30,120 - 00:41:32,120] change the order, but in this case it wouldn't
+- [00:41:32,120 - 00:41:34,120] matter. But let's
+- [00:41:34,120 - 00:41:36,120] do it anyway.
+- [00:41:38,120 - 00:41:40,120] It doesn't matter in this case, because if they're
+- [00:41:40,120 - 00:41:42,120] different fields, they commute with each other.
+- [00:41:42,120 - 00:41:44,120] So let's, um, but we can do it.
+- [00:41:44,120 - 00:41:46,120] We can do it.
+- [00:41:46,120 - 00:41:48,120] Psi dagger A of X
+- [00:41:48,120 - 00:41:50,120] times
+- [00:41:50,120 - 00:41:52,120] psi
+- [00:41:52,120 - 00:41:54,120] B of X
+- [00:41:54,120 - 00:41:56,120] times psi C of X.
+- [00:41:58,120 - 00:42:00,120] Now how is this different than this?
+- [00:42:00,120 - 00:42:02,120] The answer is every creation
+- [00:42:02,120 - 00:42:04,120] operator has been replaced by an annihilation
+- [00:42:04,120 - 00:42:06,120] operator. Every annihilation operator
+- [00:42:06,120 - 00:42:08,120] has been replaced by a creation operator.
+- [00:42:08,120 - 00:42:10,120] And the process
+- [00:42:10,120 - 00:42:12,120] described by the second half
+- [00:42:12,120 - 00:42:14,120] here, let's look what it says,
+- [00:42:14,120 - 00:42:16,120] it annihilates
+- [00:42:16,120 - 00:42:18,120] a C and it annihilates a B
+- [00:42:18,120 - 00:42:20,120] and creates an A.
+- [00:42:20,120 - 00:42:22,120] So it's just the whole thing turned over.
+- [00:42:22,120 - 00:42:24,120] B and C come in
+- [00:42:24,120 - 00:42:26,120] and A go out.
+- [00:42:28,120 - 00:42:30,120] So, once you discover
+- [00:42:30,120 - 00:42:32,120] that there's a process
+- [00:42:32,120 - 00:42:34,120] where A goes to B and C,
+- [00:42:34,120 - 00:42:36,120] you can
+- [00:42:36,120 - 00:42:38,120] immediately conclude that it must also
+- [00:42:38,120 - 00:42:40,120] be the case that if you have a B and a C,
+- [00:42:40,120 - 00:42:42,120] they can
+- [00:42:42,120 - 00:42:44,120] turn into an A.
+- [00:42:44,120 - 00:42:46,120] Okay?
+- [00:42:46,120 - 00:42:48,120] What's that?
+- [00:42:48,120 - 00:42:50,120] Is there any kind of exception to this?
+- [00:42:50,120 - 00:42:52,120] Is there any exception to this?
+- [00:42:52,120 - 00:42:54,120] No.
+- [00:42:56,120 - 00:42:58,120] If there is,
+- [00:42:58,120 - 00:43:00,120] we don't know about it.
+- [00:43:02,120 - 00:43:04,120] Okay, so now we have the basic rules,
+- [00:43:04,120 - 00:43:06,120] basic rules
+- [00:43:06,120 - 00:43:08,120] of a simple version of
+- [00:43:08,120 - 00:43:10,120] quantum field theory.
+- [00:43:10,120 - 00:43:12,120] You have creation and annihilation
+- [00:43:12,120 - 00:43:14,120] operators.
+- [00:43:14,120 - 00:43:16,120] You have fields made out of them.
+- [00:43:16,120 - 00:43:18,120] The fields are functions
+- [00:43:18,120 - 00:43:20,120] of position and they can be thought of as creation
+- [00:43:20,120 - 00:43:22,120] and annihilation operators for particles at
+- [00:43:22,120 - 00:43:24,120] definite positions. Each
+- [00:43:24,120 - 00:43:26,120] type of particle has its own field.
+- [00:43:28,120 - 00:43:30,120] And you write down Hamiltonians.
+- [00:43:30,120 - 00:43:32,120] The Hamiltonians always contain, or
+- [00:43:32,120 - 00:43:34,120] typically contain,
+- [00:43:34,120 - 00:43:36,120] typically contain the kinetic
+- [00:43:36,120 - 00:43:38,120] energies of the particles.
+- [00:43:38,120 - 00:43:40,120] That's the top thing there.
+- [00:43:40,120 - 00:43:42,120] And then, in addition,
+- [00:43:42,120 - 00:43:44,120] various other concoctions
+- [00:43:44,120 - 00:43:46,120] which, um,
+- [00:43:46,120 - 00:43:48,120] let's put it this way.
+- [00:43:48,120 - 00:43:50,120] In the first round of particle physics,
+- [00:43:50,120 - 00:43:52,120] those concoctions largely came
+- [00:43:52,120 - 00:43:54,120] from experiment.
+- [00:43:54,120 - 00:43:56,120] Well, electrodynamics,
+- [00:43:56,120 - 00:43:58,120] of course, came from a little more
+- [00:43:58,120 - 00:44:00,120] than just experiment.
+- [00:44:00,120 - 00:44:02,120] But a classic example is
+- [00:44:02,120 - 00:44:04,120] the theory of beta decay.
+- [00:44:04,120 - 00:44:06,120] The theory of beta decay is
+- [00:44:06,120 - 00:44:08,120] a neutron decaying
+- [00:44:08,120 - 00:44:10,120] into a particle.
+- [00:44:10,120 - 00:44:12,120] A proton, an electron,
+- [00:44:12,120 - 00:44:14,120] and a neutrino.
+- [00:44:14,120 - 00:44:16,120] Proton goes to electron,
+- [00:44:16,120 - 00:44:18,120] and so forth.
+- [00:44:18,120 - 00:44:20,120] So what would you write there?
+- [00:44:20,120 - 00:44:22,120] Then you would have four operators.
+- [00:44:22,120 - 00:44:24,120] This would be
+- [00:44:24,120 - 00:44:26,120] annihilate a neutron,
+- [00:44:26,120 - 00:44:28,120] create a proton,
+- [00:44:28,120 - 00:44:30,120] create
+- [00:44:30,120 - 00:44:32,120] an electron,
+- [00:44:32,120 - 00:44:34,120] and create a neutrino.
+- [00:44:40,120 - 00:44:42,120] Let's go one step further.
+- [00:45:02,120 - 00:45:04,120] When I wrote that, um,
+- [00:45:04,120 - 00:45:06,120] psi
+- [00:45:06,120 - 00:45:08,120] of,
+- [00:45:08,120 - 00:45:10,120] well,
+- [00:45:10,120 - 00:45:12,120] phi of
+- [00:45:12,120 - 00:45:14,120] t plus epsilon
+- [00:45:14,120 - 00:45:16,120] is equal
+- [00:45:16,120 - 00:45:18,120] to phi of t
+- [00:45:20,120 - 00:45:22,120] minus i h bar
+- [00:45:22,120 - 00:45:24,120] minus i
+- [00:45:24,120 - 00:45:26,120] epsilon h
+- [00:45:26,120 - 00:45:28,120] times phi of t.
+- [00:45:28,120 - 00:45:30,120] This, of course, was an approximation.
+- [00:45:30,120 - 00:45:32,120] It was an approximation
+- [00:45:32,120 - 00:45:34,120] to leading first order in
+- [00:45:34,120 - 00:45:36,120] small quantities, namely epsilon.
+- [00:45:36,120 - 00:45:38,120] What would happen if I made
+- [00:45:38,120 - 00:45:40,120] epsilon a little bit bigger?
+- [00:45:40,120 - 00:45:42,120] Well, there would be a next term
+- [00:45:42,120 - 00:45:44,120] which would be order epsilon squared.
+- [00:45:44,120 - 00:45:46,120] You know what it would be?
+- [00:45:46,120 - 00:45:48,120] It would be minus
+- [00:45:48,120 - 00:45:50,120] epsilon squared
+- [00:45:50,120 - 00:45:52,120] over two
+- [00:45:52,120 - 00:45:54,120] times h squared
+- [00:45:54,120 - 00:45:56,120] phi.
+- [00:45:56,120 - 00:45:58,120] So,
+- [00:45:58,120 - 00:46:00,120] this is
+- [00:46:00,120 - 00:46:02,120] the order of
+- [00:46:02,120 - 00:46:04,120] epsilon squared
+- [00:46:04,120 - 00:46:06,120] over two
+- [00:46:06,120 - 00:46:08,120] times h squared
+- [00:46:08,120 - 00:46:10,120] over two times h squared.
+- [00:46:10,120 - 00:46:12,120] This is just another way of saying
+- [00:46:12,120 - 00:46:14,120] that if,
+- [00:46:14,120 - 00:46:16,120] well, it's the Schrodinger equation.
+- [00:46:16,120 - 00:46:18,120] The Schrodinger equation gives you
+- [00:46:18,120 - 00:46:20,120] the derivative of psi proportional
+- [00:46:20,120 - 00:46:22,120] to h times psi.
+- [00:46:22,120 - 00:46:24,120] But it can also give you the second derivative of psi.
+- [00:46:24,120 - 00:46:26,120] And that's proportional to h squared
+- [00:46:26,120 - 00:46:28,120] times psi.
+- [00:46:28,120 - 00:46:30,120] So this is what you would learn if you went to the next
+- [00:46:30,120 - 00:46:32,120] order in small quantities
+- [00:46:32,120 - 00:46:34,120] that
+- [00:46:34,120 - 00:46:36,120] in the next order in small quantities
+- [00:46:36,120 - 00:46:38,120] there's a change in the state
+- [00:46:38,120 - 00:46:40,120] from one instant to another which is proportional
+- [00:46:40,120 - 00:46:42,120] to h squared times psi.
+- [00:46:42,120 - 00:46:44,120] That's very interesting
+- [00:46:44,120 - 00:46:46,120] because, for example,
+- [00:46:46,120 - 00:46:48,120] one of the things it would say
+- [00:46:48,120 - 00:46:50,120] we could draw some
+- [00:46:50,120 - 00:46:52,120] diagrams now.
+- [00:46:52,120 - 00:46:54,120] What does h squared do?
+- [00:46:54,120 - 00:46:56,120] Well, we could take h squared
+- [00:46:56,120 - 00:46:58,120] and multiply it all out.
+- [00:46:58,120 - 00:47:00,120] Okay, and we could try to see what it does.
+- [00:47:00,120 - 00:47:02,120] But that's dumb.
+- [00:47:02,120 - 00:47:04,120] The easy way to do it is
+- [00:47:04,120 - 00:47:06,120] just to use the pictures.
+- [00:47:06,120 - 00:47:08,120] Take the pictures
+- [00:47:08,120 - 00:47:10,120] and let's erase this.
+- [00:47:10,120 - 00:47:12,120] And the pictures say that
+- [00:47:12,120 - 00:47:14,120] in lowest order
+- [00:47:14,120 - 00:47:16,120] a thing which can happen
+- [00:47:16,120 - 00:47:18,120] is b and c can come together
+- [00:47:18,120 - 00:47:20,120] and make a.
+- [00:47:20,120 - 00:47:22,120] That's just the Hamiltonian itself
+- [00:47:22,120 - 00:47:24,120] or this term in the Hamiltonian.
+- [00:47:24,120 - 00:47:26,120] But supposing the Hamiltonian
+- [00:47:26,120 - 00:47:28,120] actually is a constant
+- [00:47:28,120 - 00:47:30,120] and the Hamiltonian
+- [00:47:30,120 - 00:47:32,120] is a constant
+- [00:47:32,120 - 00:47:34,120] and the Hamiltonian
+- [00:47:34,120 - 00:47:36,120] is a constant
+- [00:47:36,120 - 00:47:38,120] and the Hamiltonian
+- [00:47:38,120 - 00:47:40,120] acted again on this.
+- [00:47:40,120 - 00:47:42,120] Well, here's another term in the Hamiltonian.
+- [00:47:42,120 - 00:47:44,120] The same term can act twice.
+- [00:47:44,120 - 00:47:46,120] Oops, this is wrong. B and c.
+- [00:47:46,120 - 00:47:48,120] But this term
+- [00:47:48,120 - 00:47:50,120] can't really act twice
+- [00:47:50,120 - 00:47:52,120] because for it to act twice
+- [00:47:52,120 - 00:47:54,120] it has to find, the second time,
+- [00:47:54,120 - 00:47:56,120] it has to find a b and a c again.
+- [00:47:56,120 - 00:47:58,120] Well, in the first round here
+- [00:47:58,120 - 00:48:00,120] the b and the c were eaten.
+- [00:48:00,120 - 00:48:02,120] No b and c.
+- [00:48:02,120 - 00:48:04,120] So this term can't act successively twice.
+- [00:48:04,120 - 00:48:06,120] But what can happen is
+- [00:48:06,120 - 00:48:08,120] when you square the Hamiltonian
+- [00:48:08,120 - 00:48:10,120] this term times this term.
+- [00:48:10,120 - 00:48:12,120] In other words,
+- [00:48:12,120 - 00:48:14,120] let's write it out.
+- [00:48:14,120 - 00:48:16,120] It's got
+- [00:48:16,120 - 00:48:18,120] psi b
+- [00:48:18,120 - 00:48:20,120] psi c
+- [00:48:20,120 - 00:48:22,120] times
+- [00:48:22,120 - 00:48:24,120] psi dagger a
+- [00:48:24,120 - 00:48:26,120] and then
+- [00:48:26,120 - 00:48:28,120] psi dagger a
+- [00:48:28,120 - 00:48:30,120] then psi a
+- [00:48:30,120 - 00:48:32,120] psi b
+- [00:48:32,120 - 00:48:34,120] psi c
+- [00:48:34,120 - 00:48:36,120] A big mess.
+- [00:48:36,120 - 00:48:38,120] That's the square of
+- [00:48:38,120 - 00:48:40,120] a term or a piece of the square
+- [00:48:40,120 - 00:48:42,120] of the term of the Hamiltonian.
+- [00:48:42,120 - 00:48:44,120] But it's very easy to see what it says.
+- [00:48:44,120 - 00:48:46,120] It says it takes a b and a c and it makes an a
+- [00:48:46,120 - 00:48:48,120] and the, uh, yeah, it takes a b
+- [00:48:48,120 - 00:48:50,120] and a c and turns it into an a
+- [00:48:50,120 - 00:48:52,120] and then it takes the a
+- [00:48:52,120 - 00:48:54,120] annihilates the a
+- [00:48:54,120 - 00:48:56,120] and puts back a b and a c.
+- [00:48:56,120 - 00:48:58,120] The effect of this
+- [00:48:58,120 - 00:49:00,120] is to contribute or to create
+- [00:49:00,120 - 00:49:02,120] a scattering between b and c.
+- [00:49:02,120 - 00:49:04,120] The a
+- [00:49:04,120 - 00:49:06,120] that's just temporary.
+- [00:49:06,120 - 00:49:08,120] The b and the c came in
+- [00:49:08,120 - 00:49:10,120] in the form of a
+- [00:49:10,120 - 00:49:12,120] they annihilated the form a
+- [00:49:12,120 - 00:49:14,120] and a then converted back to b and c
+- [00:49:14,120 - 00:49:16,120] using the same Hamiltonian.
+- [00:49:16,120 - 00:49:18,120] So it's not just that the Hamiltonian
+- [00:49:18,120 - 00:49:20,120] updates the state.
+- [00:49:20,120 - 00:49:22,120] All the powers of the Hamiltonian
+- [00:49:22,120 - 00:49:24,120] give you a vast variety
+- [00:49:24,120 - 00:49:26,120] of different processes that can happen
+- [00:49:26,120 - 00:49:28,120] that contribute
+- [00:49:28,120 - 00:49:30,120] to the amplitude for scattering.
+- [00:49:30,120 - 00:49:32,120] This is the amplitude for scattering
+- [00:49:32,120 - 00:49:34,120] b goes to c
+- [00:49:36,120 - 00:49:38,120] and the only rule
+- [00:49:38,120 - 00:49:40,120] at least the only rule we've set up till now
+- [00:49:40,120 - 00:49:42,120] is that momentum is conserved.
+- [00:49:42,120 - 00:49:44,120] Total momentum.
+- [00:49:44,120 - 00:49:46,120] The momentum of c can change,
+- [00:49:46,120 - 00:49:48,120] the momentum of b can change,
+- [00:49:48,120 - 00:49:50,120] but going from beginning to end
+- [00:49:50,120 - 00:49:52,120] the total momentum should be the same.
+- [00:49:52,120 - 00:49:54,120] Okay.
+- [00:49:54,120 - 00:49:56,120] Should that psi sub c on the left
+- [00:49:56,120 - 00:49:58,120] should that have a dagger?
+- [00:49:58,120 - 00:50:00,120] Possibly, yes.
+- [00:50:04,120 - 00:50:06,120] Right, so you see
+- [00:50:06,120 - 00:50:08,120] once you learn this little piece of information
+- [00:50:08,120 - 00:50:10,120] you can do a lot of things.
+- [00:50:10,120 - 00:50:12,120] Oh my goodness, all sorts of other things can happen.
+- [00:50:12,120 - 00:50:14,120] Well, we now know
+- [00:50:18,120 - 00:50:20,120] what did I just do?
+- [00:50:20,120 - 00:50:22,120] I erased
+- [00:50:22,120 - 00:50:24,120] a and b
+- [00:50:24,120 - 00:50:26,120] goes to c.
+- [00:50:30,120 - 00:50:32,120] Good.
+- [00:50:32,120 - 00:50:34,120] Here's something else that can happen.
+- [00:50:34,120 - 00:50:36,120] a can come in
+- [00:50:36,120 - 00:50:38,120] create b and c
+- [00:50:38,120 - 00:50:40,120] but now
+- [00:50:40,120 - 00:50:42,120] if there happened to have been another
+- [00:50:42,120 - 00:50:44,120] b around, let's suppose
+- [00:50:44,120 - 00:50:46,120] there was another b around to begin with
+- [00:50:46,120 - 00:50:48,120] yeah
+- [00:50:50,120 - 00:50:52,120] this says
+- [00:50:52,120 - 00:50:54,120] that if b finds a c
+- [00:50:54,120 - 00:50:56,120] to annihilate with
+- [00:50:56,120 - 00:50:58,120] then it can make an a.
+- [00:51:00,120 - 00:51:02,120] So again, in the second order
+- [00:51:02,120 - 00:51:04,120] of the Hamiltonian
+- [00:51:04,120 - 00:51:06,120] where you iterate the Hamiltonian twice
+- [00:51:06,120 - 00:51:08,120] you not only get processors
+- [00:51:08,120 - 00:51:10,120] in which a goes to b and c
+- [00:51:10,120 - 00:51:12,120] and b and c go to a
+- [00:51:12,120 - 00:51:14,120] or that b and c go back to b and c
+- [00:51:14,120 - 00:51:16,120] but now you have a scattering amplitude
+- [00:51:16,120 - 00:51:18,120] where a and b scatter with each other
+- [00:51:20,120 - 00:51:22,120] with the exchange
+- [00:51:22,120 - 00:51:24,120] of a c. This is called an exchange
+- [00:51:24,120 - 00:51:26,120] diagram. It looks as though
+- [00:51:26,120 - 00:51:28,120] you're drawing a picture where a c
+- [00:51:28,120 - 00:51:30,120] jumps over from here to here.
+- [00:51:30,120 - 00:51:32,120] All it is is a contribution to the
+- [00:51:32,120 - 00:51:34,120] scattering coming from the Hamiltonian
+- [00:51:34,120 - 00:51:36,120] twice, acting twice.
+- [00:51:36,120 - 00:51:38,120] So in following
+- [00:51:38,120 - 00:51:40,120] the evolution of the system when the Hamiltonian
+- [00:51:40,120 - 00:51:42,120] acts twice, the first
+- [00:51:42,120 - 00:51:44,120] time it can take an a
+- [00:51:44,120 - 00:51:46,120] and a b to c leaving this b
+- [00:51:46,120 - 00:51:48,120] over here alone. This is a different b.
+- [00:51:48,120 - 00:51:50,120] Leaving it alone
+- [00:51:50,120 - 00:51:52,120] not doing anything. And then the second
+- [00:51:52,120 - 00:51:54,120] power of the Hamiltonian can take
+- [00:51:54,120 - 00:51:56,120] c and b and convert it back to a.
+- [00:51:56,120 - 00:51:58,120] So you see, once you have
+- [00:51:58,120 - 00:52:00,120] these simple terms
+- [00:52:00,120 - 00:52:02,120] in the Hamiltonian, you have a vast
+- [00:52:02,120 - 00:52:04,120] forest of many
+- [00:52:04,120 - 00:52:06,120] many different kinds of interactions
+- [00:52:06,120 - 00:52:08,120] that are mediated by
+- [00:52:08,120 - 00:52:10,120] the same simple term
+- [00:52:10,120 - 00:52:12,120] in the Hamiltonian. That's why
+- [00:52:12,120 - 00:52:14,120] quantum field theory is powerful.
+- [00:52:14,120 - 00:52:16,120] A small number of terms
+- [00:52:16,120 - 00:52:18,120] in the Hamiltonian can lead to a huge
+- [00:52:18,120 - 00:52:20,120] number of different reactions.
+- [00:52:20,120 - 00:52:22,120] All related
+- [00:52:22,120 - 00:52:24,120] by having the same form
+- [00:52:24,120 - 00:52:26,120] in the Hamiltonian, the same coupling constant
+- [00:52:26,120 - 00:52:28,120] for example
+- [00:52:28,120 - 00:52:30,120] the coupling constant, yeah
+- [00:52:30,120 - 00:52:32,120] if there's a coupling
+- [00:52:32,120 - 00:52:34,120] constant governing a term in the Hamiltonian
+- [00:52:34,120 - 00:52:36,120] here, then when you square the Hamiltonian
+- [00:52:36,120 - 00:52:38,120] you might get the coupling
+- [00:52:38,120 - 00:52:40,120] constant squared.
+- [00:52:40,120 - 00:52:42,120] In fact you would here
+- [00:52:42,120 - 00:52:44,120] each one of these vertices
+- [00:52:44,120 - 00:52:46,120] these are called vertices, they carry
+- [00:52:46,120 - 00:52:48,120] a coupling constant in the Hamiltonian.
+- [00:52:48,120 - 00:52:50,120] So this
+- [00:52:50,120 - 00:52:52,120] process would have a coupling constant
+- [00:52:52,120 - 00:52:54,120] squared in front of it.
+- [00:52:54,120 - 00:52:56,120] So this would correlate
+- [00:52:56,120 - 00:52:58,120] an enormous amount of data
+- [00:52:58,120 - 00:53:00,120] about all of the possible interactions
+- [00:53:00,120 - 00:53:02,120] of a's, b's and c's.
+- [00:53:04,120 - 00:53:06,120] There are many, of course
+- [00:53:06,120 - 00:53:08,120] this is the most common thing in the world
+- [00:53:08,120 - 00:53:10,120] in particle physics
+- [00:53:10,120 - 00:53:12,120] is to be studying those correlations.
+- [00:53:12,120 - 00:53:14,120] So if
+- [00:53:14,120 - 00:53:16,120] I assume you can have a
+- [00:53:18,120 - 00:53:20,120] decaying into b and c
+- [00:53:20,120 - 00:53:22,120] and then b and c coming back together
+- [00:53:22,120 - 00:53:24,120] form an a. But what is that?
+- [00:53:24,120 - 00:53:26,120] Say it again now.
+- [00:53:26,120 - 00:53:28,120] Oh, a going to b and c and then b and c
+- [00:53:28,120 - 00:53:30,120] coming back together. That's a self energy
+- [00:53:30,120 - 00:53:32,120] diagram for an a.
+- [00:53:34,120 - 00:53:36,120] It changes the structure of a. What it tells
+- [00:53:36,120 - 00:53:38,120] you is that a real a particle
+- [00:53:38,120 - 00:53:40,120] that you might measure in the laboratory
+- [00:53:40,120 - 00:53:42,120] spends, has a probability
+- [00:53:42,120 - 00:53:44,120] to be not just an a
+- [00:53:44,120 - 00:53:46,120] but to be a b and c
+- [00:53:46,120 - 00:53:48,120] close to each other. So what it means
+- [00:53:48,120 - 00:53:50,120] is that if you found an a in your
+- [00:53:50,120 - 00:53:52,120] laboratory
+- [00:53:52,120 - 00:53:54,120] and you scattered something
+- [00:53:54,120 - 00:53:56,120] off it, with some probability
+- [00:53:56,120 - 00:53:58,120] you would find that that a
+- [00:53:58,120 - 00:54:00,120] behaved as if it were a b and a c
+- [00:54:00,120 - 00:54:02,120] together, close together.
+- [00:54:02,120 - 00:54:04,120] So for example
+- [00:54:04,120 - 00:54:06,120] um
+- [00:54:06,120 - 00:54:08,120] you know
+- [00:54:08,120 - 00:54:10,120] electron, one such
+- [00:54:10,120 - 00:54:12,120] process, one
+- [00:54:12,120 - 00:54:14,120] example of this
+- [00:54:16,120 - 00:54:18,120] would be an electron
+- [00:54:18,120 - 00:54:20,120] emitting a photon.
+- [00:54:22,120 - 00:54:24,120] Electron
+- [00:54:24,120 - 00:54:26,120] comes in, electron goes out,
+- [00:54:26,120 - 00:54:28,120] emits a photon.
+- [00:54:28,120 - 00:54:30,120] Okay, so
+- [00:54:30,120 - 00:54:32,120] the operator for that would be
+- [00:54:34,120 - 00:54:36,120] side dagger
+- [00:54:36,120 - 00:54:38,120] electron.
+- [00:54:38,120 - 00:54:40,120] Sorry, side electron that
+- [00:54:40,120 - 00:54:42,120] annihilates an electron.
+- [00:54:42,120 - 00:54:44,120] Side dagger
+- [00:54:46,120 - 00:54:48,120] create an electron
+- [00:54:48,120 - 00:54:50,120] and then a photon creation operator.
+- [00:54:50,120 - 00:54:52,120] Photons, the photon
+- [00:54:52,120 - 00:54:54,120] field is called a.
+- [00:54:54,120 - 00:54:56,120] All at the same point.
+- [00:54:56,120 - 00:54:58,120] So it absorbs an electron, creates
+- [00:54:58,120 - 00:55:00,120] an electron and emits a photon.
+- [00:55:00,120 - 00:55:02,120] Okay, so one of the things that can
+- [00:55:02,120 - 00:55:04,120] happen is, Kevin points
+- [00:55:04,120 - 00:55:06,120] out, is you can have the
+- [00:55:06,120 - 00:55:08,120] electron moving along
+- [00:55:08,120 - 00:55:10,120] becoming an electron, emitting
+- [00:55:10,120 - 00:55:12,120] a photon and then the photon
+- [00:55:12,120 - 00:55:14,120] coming back and becoming an electron.
+- [00:55:14,120 - 00:55:16,120] Now, don't take
+- [00:55:16,120 - 00:55:18,120] too literally
+- [00:55:18,120 - 00:55:20,120] the statement, this happens
+- [00:55:20,120 - 00:55:22,120] and then that happens and then that happens.
+- [00:55:22,120 - 00:55:24,120] This is really just standing for a term
+- [00:55:24,120 - 00:55:26,120] second order in the Hamiltonian.
+- [00:55:26,120 - 00:55:28,120] Iterating the Hamiltonian
+- [00:55:28,120 - 00:55:30,120] twice. But it's clearly
+- [00:55:30,120 - 00:55:32,120] very tempting to
+- [00:55:32,120 - 00:55:34,120] to try to describe
+- [00:55:34,120 - 00:55:36,120] this by saying sequence
+- [00:55:36,120 - 00:55:38,120] of things happen. Now of course if you
+- [00:55:38,120 - 00:55:40,120] go into the system and look and see
+- [00:55:40,120 - 00:55:42,120] whether that something happened
+- [00:55:42,120 - 00:55:44,120] you screw up the whole thing as usual
+- [00:55:44,120 - 00:55:46,120] in quantum mechanics.
+- [00:55:46,120 - 00:55:48,120] So, but what
+- [00:55:48,120 - 00:55:50,120] this does tell you
+- [00:55:50,120 - 00:55:52,120] is that if you scatter another
+- [00:55:52,120 - 00:55:54,120] electron off the first electron
+- [00:55:54,120 - 00:55:56,120] you will find some of
+- [00:55:56,120 - 00:55:58,120] the time that this
+- [00:55:58,120 - 00:56:00,120] electron contains a photon.
+- [00:56:00,120 - 00:56:02,120] That what you thought was a single
+- [00:56:02,120 - 00:56:04,120] electron really looks
+- [00:56:04,120 - 00:56:06,120] like a composite of an
+- [00:56:06,120 - 00:56:08,120] electron with a
+- [00:56:08,120 - 00:56:10,120] with a photon.
+- [00:56:10,120 - 00:56:12,120] The probability to find
+- [00:56:12,120 - 00:56:14,120] a photon there is small.
+- [00:56:14,120 - 00:56:16,120] It's about 1%. But
+- [00:56:16,120 - 00:56:18,120] but that's what
+- [00:56:18,120 - 00:56:20,120] it says. So
+- [00:56:20,120 - 00:56:22,120] it really should be thought
+- [00:56:22,120 - 00:56:24,120] of as a correction
+- [00:56:24,120 - 00:56:26,120] to the structure of the electron
+- [00:56:26,120 - 00:56:28,120] rather than a
+- [00:56:28,120 - 00:56:30,120] than a new process.
+- [00:56:30,120 - 00:56:32,120] It only becomes a new process
+- [00:56:32,120 - 00:56:34,120] when you interfere with it and you look
+- [00:56:34,120 - 00:56:36,120] and see what's inside and
+- [00:56:36,120 - 00:56:38,120] some of the times you will find that what's inside
+- [00:56:38,120 - 00:56:40,120] contains a photon.
+- [00:56:40,120 - 00:56:42,120] Of course what will happen
+- [00:56:42,120 - 00:56:44,120] if you look for the photon, you'll discover the photon
+- [00:56:44,120 - 00:56:46,120] some of the times, you'll scatter
+- [00:56:46,120 - 00:56:48,120] the photon out and you'll completely screw up
+- [00:56:48,120 - 00:56:50,120] the electron. You'll excite
+- [00:56:50,120 - 00:56:52,120] the electron and things will happen.
+- [00:56:52,120 - 00:56:54,120] At that first vertex
+- [00:56:54,120 - 00:56:56,120] are both energy and momentum concerned?
+- [00:56:56,120 - 00:56:58,120] No, only
+- [00:56:58,120 - 00:57:00,120] momentum. Only
+- [00:57:00,120 - 00:57:02,120] momentum.
+- [00:57:02,120 - 00:57:04,120] Right. And as I said
+- [00:57:04,120 - 00:57:06,120] these things are not literally happening
+- [00:57:06,120 - 00:57:08,120] they're shorthands
+- [00:57:08,120 - 00:57:10,120] for the mathematics in this case of just
+- [00:57:10,120 - 00:57:12,120] squaring the Hamiltonian.
+- [00:57:12,120 - 00:57:14,120] So what actually happens is
+- [00:57:14,120 - 00:57:16,120] superposition of all possible
+- [00:57:16,120 - 00:57:18,120] things. And so that's why
+- [00:57:18,120 - 00:57:20,120] the energy of any individual one
+- [00:57:20,120 - 00:57:22,120] do not be conserved.
+- [00:57:24,120 - 00:57:26,120] And there's all kinds of, don't forget, there's all
+- [00:57:26,120 - 00:57:28,120] sorts of terms in the energy and counting
+- [00:57:28,120 - 00:57:30,120] up all the energy, don't
+- [00:57:30,120 - 00:57:32,120] forget to count up these interaction terms.
+- [00:57:32,120 - 00:57:34,120] So the energy isn't just
+- [00:57:34,120 - 00:57:36,120] the sum of the energy of the particles but that
+- [00:57:36,120 - 00:57:38,120] sort of gets hidden in these pictures.
+- [00:57:38,120 - 00:57:40,120] That
+- [00:57:40,120 - 00:57:42,120] missing
+- [00:57:42,120 - 00:57:44,120] energy that's in the interactions
+- [00:57:44,120 - 00:57:46,120] you might say
+- [00:57:46,120 - 00:57:48,120] allows the
+- [00:57:48,120 - 00:57:50,120] pictures
+- [00:57:50,120 - 00:57:52,120] to violate energy conservation
+- [00:57:52,120 - 00:57:54,120] at each vertex.
+- [00:57:54,120 - 00:57:56,120] But, you know, if you get confused
+- [00:57:56,120 - 00:57:58,120] you just go back to where it came from. It came
+- [00:57:58,120 - 00:58:00,120] from the Schrodinger equation going to the
+- [00:58:00,120 - 00:58:02,120] second order in small quantities.
+- [00:58:02,120 - 00:58:04,120] And that's what it means.
+- [00:58:04,120 - 00:58:06,120] Now we're not going to do Feynman diagrams
+- [00:58:06,120 - 00:58:08,120] in their full blown glory, but
+- [00:58:08,120 - 00:58:10,120] this is where they come from
+- [00:58:10,120 - 00:58:12,120] and this is where
+- [00:58:12,120 - 00:58:14,120] the
+- [00:58:16,120 - 00:58:18,120] the rest is just
+- [00:58:18,120 - 00:58:20,120] technology and
+- [00:58:20,120 - 00:58:22,120] tricks to calculate
+- [00:58:22,120 - 00:58:24,120] things with. But this is the
+- [00:58:24,120 - 00:58:26,120] basic physics of it. Yeah.
+- [00:58:26,120 - 00:58:28,120] I was just
+- [00:58:28,120 - 00:58:30,120] thinking about the electric
+- [00:58:30,120 - 00:58:32,120] field of the electron there.
+- [00:58:32,120 - 00:58:34,120] Well, good.
+- [00:58:34,120 - 00:58:36,120] This is the electric field of the electron.
+- [00:58:36,120 - 00:58:38,120] Well, that's what I was going to ask about.
+- [00:58:38,120 - 00:58:40,120] No.
+- [00:58:40,120 - 00:58:42,120] Because it seems to me that at least
+- [00:58:42,120 - 00:58:44,120] in a
+- [00:58:44,120 - 00:58:46,120] literal sense, I mean it
+- [00:58:46,120 - 00:58:48,120] seems like
+- [00:58:48,120 - 00:58:50,120] the field, the presence
+- [00:58:50,120 - 00:58:52,120] of the field at some distance
+- [00:58:52,120 - 00:58:54,120] isn't
+- [00:58:54,120 - 00:58:56,120] literally created
+- [00:58:56,120 - 00:58:58,120] by radiation.
+- [00:58:58,120 - 00:59:00,120] Say that again.
+- [00:59:00,120 - 00:59:02,120] It's
+- [00:59:02,120 - 00:59:04,120] not,
+- [00:59:04,120 - 00:59:06,120] you could say it's the propagation of the
+- [00:59:06,120 - 00:59:08,120] field ahead of the electron
+- [00:59:08,120 - 00:59:10,120] obeys
+- [00:59:10,120 - 00:59:12,120] the same weight equation
+- [00:59:12,120 - 00:59:14,120] as radiation would, but
+- [00:59:14,120 - 00:59:16,120] it's not literally the radiation.
+- [00:59:16,120 - 00:59:18,120] No, it's not literally the radiation,
+- [00:59:18,120 - 00:59:20,120] although if you take a very high
+- [00:59:20,120 - 00:59:22,120] energy electron,
+- [00:59:22,120 - 00:59:24,120] 1% of the time
+- [00:59:24,120 - 00:59:26,120] it behaves as if it
+- [00:59:26,120 - 00:59:28,120] were a real electron and a
+- [00:59:28,120 - 00:59:30,120] real photon. That's because
+- [00:59:30,120 - 00:59:32,120] photons move at the speed of light.
+- [00:59:32,120 - 00:59:34,120] These photons are clearly
+- [00:59:34,120 - 00:59:36,120] not going to move at the speed of light. It's got to go
+- [00:59:36,120 - 00:59:38,120] from here to here and the electron is not
+- [00:59:38,120 - 00:59:40,120] moving with the speed of light.
+- [00:59:40,120 - 00:59:42,120] So, literally thinking of these
+- [00:59:42,120 - 00:59:44,120] as photons moving around is not going to work.
+- [00:59:44,120 - 00:59:46,120] But if the electron itself is
+- [00:59:46,120 - 00:59:48,120] moving with the speed of light,
+- [00:59:48,120 - 00:59:50,120] or close to it, very close to it,
+- [00:59:50,120 - 00:59:52,120] then it really does behave as
+- [00:59:52,120 - 00:59:54,120] though it were a
+- [00:59:54,120 - 00:59:56,120] superposition of an electron
+- [00:59:56,120 - 00:59:58,120] and then an electron with a real
+- [00:59:58,120 - 01:00:00,120] photon, with a genuine photon.
+- [01:00:00,120 - 01:00:02,120] I'm actually thinking of things where the electrons are
+- [01:00:02,120 - 01:00:04,120] moving rather slowly, and the field
+- [01:00:04,120 - 01:00:06,120] is moving very quickly
+- [01:00:06,120 - 01:00:08,120] as a wave ahead of it.
+- [01:00:08,120 - 01:00:10,120] And then...
+- [01:00:10,120 - 01:00:12,120] Now, then you're going to get yourself completely confused
+- [01:00:12,120 - 01:00:14,120] trying to form a model for what's going on.
+- [01:00:14,120 - 01:00:16,120] Well, I'm just saying it's not literally
+- [01:00:16,120 - 01:00:18,120] creating real photons
+- [01:00:18,120 - 01:00:20,120] to fill the field.
+- [01:00:20,120 - 01:00:22,120] Right.
+- [01:00:22,120 - 01:00:24,120] Don't try
+- [01:00:24,120 - 01:00:26,120] to create a
+- [01:00:26,120 - 01:00:28,120] mechanical model of what's going on.
+- [01:00:28,120 - 01:00:30,120] It won't work.
+- [01:00:30,120 - 01:00:32,120] No, no, but there's
+- [01:00:32,120 - 01:00:34,120] effects like self-interference
+- [01:00:34,120 - 01:00:36,120] in the two-slit experiment,
+- [01:00:36,120 - 01:00:38,120] self-interference of a single
+- [01:00:38,120 - 01:00:40,120] photon.
+- [01:00:40,120 - 01:00:42,120] Okay?
+- [01:00:42,120 - 01:00:44,120] You have to have
+- [01:00:44,120 - 01:00:46,120] sort of the wave
+- [01:00:46,120 - 01:00:48,120] of the wave
+- [01:00:48,120 - 01:00:50,120] version of the photon
+- [01:00:50,120 - 01:00:52,120] I mean, you know,
+- [01:00:52,120 - 01:00:54,120] the...
+- [01:00:54,120 - 01:00:56,120] meets up with
+- [01:00:56,120 - 01:00:58,120] its own field.
+- [01:00:58,120 - 01:01:00,120] Right? Coming through...
+- [01:01:00,120 - 01:01:02,120] It has nothing to do with this, though.
+- [01:01:02,120 - 01:01:04,120] Well, it's...
+- [01:01:04,120 - 01:01:06,120] It was related to my question.
+- [01:01:06,120 - 01:01:08,120] And you have the...
+- [01:01:08,120 - 01:01:10,120] Haranoff-Bohm
+- [01:01:10,120 - 01:01:12,120] experiment, so that
+- [01:01:12,120 - 01:01:14,120] you know, the field is
+- [01:01:14,120 - 01:01:16,120] present where
+- [01:01:16,120 - 01:01:18,120] you know, it's not really radiation.
+- [01:01:18,120 - 01:01:20,120] Yeah, no, this is
+- [01:01:20,120 - 01:01:22,120] not the radiation field. This is the induction field.
+- [01:01:22,120 - 01:01:24,120] Right, but as I tell you,
+- [01:01:24,120 - 01:01:26,120] when the electron is fast, it can be thought of as
+- [01:01:26,120 - 01:01:28,120] a radiation field.
+- [01:01:28,120 - 01:01:30,120] Can you finish your thought? You were starting to say about...
+- [01:01:30,120 - 01:01:32,120] Lost it. It's gone. It's finished.
+- [01:01:32,120 - 01:01:34,120] You were starting to say that if
+- [01:01:34,120 - 01:01:36,120] you try to create a model of this,
+- [01:01:36,120 - 01:01:38,120] it will fail. Well,
+- [01:01:38,120 - 01:01:40,120] you try to create...
+- [01:01:40,120 - 01:01:42,120] You know, your brain is always trying to
+- [01:01:42,120 - 01:01:44,120] create classical models, classical pictures
+- [01:01:44,120 - 01:01:46,120] for things.
+- [01:01:46,120 - 01:01:48,120] You
+- [01:01:48,120 - 01:01:50,120] can get some experience doing some
+- [01:01:50,120 - 01:01:52,120] calculations, and after a while you know
+- [01:01:52,120 - 01:01:54,120] how to deal with these diagrams,
+- [01:01:54,120 - 01:01:56,120] and you start to give some
+- [01:01:56,120 - 01:01:58,120] literalness
+- [01:01:58,120 - 01:02:00,120] to the diagrams,
+- [01:02:00,120 - 01:02:02,120] which really is not really
+- [01:02:02,120 - 01:02:04,120] right. It's
+- [01:02:04,120 - 01:02:06,120] just a mathematical trick to calculate
+- [01:02:06,120 - 01:02:08,120] h squared, h cubed. They
+- [01:02:08,120 - 01:02:10,120] basically were calculating e to the i ht
+- [01:02:10,120 - 01:02:12,120] by expanding it out
+- [01:02:12,120 - 01:02:14,120] in powers of h.
+- [01:02:14,120 - 01:02:16,120] Right?
+- [01:02:16,120 - 01:02:18,120] e to the i ht
+- [01:02:18,120 - 01:02:20,120] is the time development,
+- [01:02:20,120 - 01:02:22,120] and that's what we're expanding out here.
+- [01:02:22,120 - 01:02:24,120] 1 minus i epsilon h
+- [01:02:24,120 - 01:02:26,120] minus epsilon square over 2.
+- [01:02:26,120 - 01:02:28,120] This 2 is the 2 of
+- [01:02:28,120 - 01:02:30,120] the exponential
+- [01:02:30,120 - 01:02:32,120] expansion. What's the next term?
+- [01:02:36,120 - 01:02:38,120] I guess it's plus i epsilon h
+- [01:02:38,120 - 01:02:40,120] 1 cubed h cubed
+- [01:02:40,120 - 01:02:42,120] over 3 factorial.
+- [01:02:42,120 - 01:02:44,120] Right.
+- [01:02:46,120 - 01:02:48,120] Now,
+- [01:02:48,120 - 01:02:50,120] how do you actually calculate
+- [01:02:50,120 - 01:02:52,120] the probability of a given scattering?
+- [01:02:52,120 - 01:02:54,120] That, of course, requires
+- [01:02:54,120 - 01:02:56,120] some
+- [01:02:56,120 - 01:02:58,120] technology
+- [01:02:58,120 - 01:03:00,120] which we haven't done.
+- [01:03:00,120 - 01:03:02,120] But,
+- [01:03:02,120 - 01:03:04,120] okay.
+- [01:03:04,120 - 01:03:06,120] So somehow, and I
+- [01:03:06,120 - 01:03:08,120] imagine we're not going to be seeing it tonight or next
+- [01:03:08,120 - 01:03:10,120] week, this mechanism
+- [01:03:10,120 - 01:03:12,120] if you
+- [01:03:12,120 - 01:03:14,120] do the right
+- [01:03:14,120 - 01:03:16,120] mathematics with this
+- [01:03:16,120 - 01:03:18,120] mechanism, and you have an electron here
+- [01:03:18,120 - 01:03:20,120] and an electron here,
+- [01:03:20,120 - 01:03:22,120] you can somehow
+- [01:03:22,120 - 01:03:24,120] show the Coulomb attraction
+- [01:03:24,120 - 01:03:26,120] as a classical limit of this
+- [01:03:26,120 - 01:03:28,120] process.
+- [01:03:28,120 - 01:03:30,120] Yes. But the way you would do it, the simplest way to do it,
+- [01:03:30,120 - 01:03:32,120] well, yes, the answer is yes.
+- [01:03:36,120 - 01:03:38,120] But it's not literally that a photon
+- [01:03:38,120 - 01:03:40,120] jumps from one place to another.
+- [01:03:40,120 - 01:03:42,120] No.
+- [01:03:42,120 - 01:03:44,120] That's a little bit too simplistic. Yeah?
+- [01:03:44,120 - 01:03:46,120] Are the coupling constants calculated
+- [01:03:46,120 - 01:03:48,120] because these poles are in there?
+- [01:03:48,120 - 01:03:50,120] No. Sometimes
+- [01:03:52,120 - 01:03:54,120] Sometimes relationships between
+- [01:03:54,120 - 01:03:56,120] coupling constants can be calculated
+- [01:03:56,120 - 01:03:58,120] from symmetry principles.
+- [01:03:58,120 - 01:04:00,120] But,
+- [01:04:00,120 - 01:04:02,120] generally the coupling
+- [01:04:02,120 - 01:04:04,120] constants are basically experimental
+- [01:04:04,120 - 01:04:06,120] input.
+- [01:04:06,120 - 01:04:08,120] So,
+- [01:04:08,120 - 01:04:10,120] disappointing, isn't it?
+- [01:04:10,120 - 01:04:12,120] Yeah?
+- [01:04:14,120 - 01:04:16,120] On the other hand,
+- [01:04:16,120 - 01:04:18,120] think about what happens
+- [01:04:18,120 - 01:04:20,120] when there is a relation
+- [01:04:20,120 - 01:04:22,120] between coupling constants that's
+- [01:04:22,120 - 01:04:24,120] dictated by the mathematics, some symmetry
+- [01:04:24,120 - 01:04:26,120] principle. Then
+- [01:04:26,120 - 01:04:28,120] it relates to otherwise
+- [01:04:28,120 - 01:04:30,120] independent and
+- [01:04:30,120 - 01:04:32,120] different reactions.
+- [01:04:32,120 - 01:04:34,120] When that happens and you go in the laboratory
+- [01:04:34,120 - 01:04:36,120] and you discover that the reactions
+- [01:04:36,120 - 01:04:38,120] behave according to the way the coupling
+- [01:04:38,120 - 01:04:40,120] constants, which have been determined from
+- [01:04:40,120 - 01:04:42,120] first principles, tell you they're supposed to behave,
+- [01:04:42,120 - 01:04:44,120] that's exhilarating.
+- [01:04:44,120 - 01:04:46,120] It doesn't happen very often.
+- [01:04:46,120 - 01:04:48,120] But it happens. It does happen.
+- [01:04:48,120 - 01:04:50,120] The difference between an accidental
+- [01:04:50,120 - 01:04:52,120] symmetry...
+- [01:04:52,120 - 01:04:54,120] Yeah.
+- [01:04:54,120 - 01:04:56,120] Accidental symmetries are accidents
+- [01:04:56,120 - 01:04:58,120] and they usually don't tell you very much.
+- [01:04:58,120 - 01:05:00,120] Gauge symmetries are
+- [01:05:00,120 - 01:05:02,120] the symmetries which tell you something.
+- [01:05:02,120 - 01:05:04,120] Okay.
+- [01:05:04,120 - 01:05:06,120] Well, I take
+- [01:05:06,120 - 01:05:08,120] back what I said. Accidental symmetries also tell
+- [01:05:08,120 - 01:05:10,120] you things.
+- [01:05:10,120 - 01:05:12,120] Important things.
+- [01:05:18,120 - 01:05:20,120] We're going to...
+- [01:05:20,120 - 01:05:22,120] I had promised to start fermions today
+- [01:05:22,120 - 01:05:24,120] and I'm going to.
+- [01:05:24,120 - 01:05:26,120] But instead of talking about
+- [01:05:26,120 - 01:05:28,120] fermion fields, which we'll come to
+- [01:05:28,120 - 01:05:30,120] next time, let's talk about the Dirac
+- [01:05:30,120 - 01:05:32,120] equation. Let's start the Dirac
+- [01:05:32,120 - 01:05:34,120] equation today.
+- [01:05:38,120 - 01:05:40,120] From one point of view, the Dirac equation...
+- [01:05:40,120 - 01:05:42,120] First of all, that means we're
+- [01:05:42,120 - 01:05:44,120] entering into relativity theory.
+- [01:05:44,120 - 01:05:46,120] We're using relativity theory.
+- [01:05:46,120 - 01:05:48,120] Thus far,
+- [01:05:48,120 - 01:05:50,120] what we did was
+- [01:05:50,120 - 01:05:52,120] to study non-relativistic
+- [01:05:52,120 - 01:05:54,120] second quantization.
+- [01:05:54,120 - 01:05:56,120] Now we want to
+- [01:05:56,120 - 01:05:58,120] move on
+- [01:05:58,120 - 01:06:00,120] a little bit and study the
+- [01:06:00,120 - 01:06:02,120] relativistic electron.
+- [01:06:04,120 - 01:06:06,120] We're going to study...we're going to begin with
+- [01:06:06,120 - 01:06:08,120] a one-dimensional electron. An electron
+- [01:06:08,120 - 01:06:10,120] is only moving in one direction dimension.
+- [01:06:10,120 - 01:06:12,120] The simplest possible
+- [01:06:12,120 - 01:06:14,120] theory of an electron.
+- [01:06:14,120 - 01:06:16,120] It's not a realistic theory. Electrons
+- [01:06:16,120 - 01:06:18,120] move in three dimensions.
+- [01:06:18,120 - 01:06:20,120] But it's the easiest
+- [01:06:20,120 - 01:06:22,120] place to get started. Without having
+- [01:06:22,120 - 01:06:24,120] to throw a bunch of formulas and a
+- [01:06:24,120 - 01:06:26,120] bunch of symbols, we can study
+- [01:06:26,120 - 01:06:28,120] the one-dimensional electron
+- [01:06:30,120 - 01:06:32,120] and learn quite a lot.
+- [01:06:32,120 - 01:06:34,120] Without getting
+- [01:06:34,120 - 01:06:36,120] spurious complexity
+- [01:06:36,120 - 01:06:38,120] because of the three-dimensionality of space.
+- [01:06:38,120 - 01:06:40,120] Then we come back to three dimensions.
+- [01:06:40,120 - 01:06:42,120] Three plus one, three dimensions.
+- [01:06:42,120 - 01:06:44,120] Right. Okay.
+- [01:06:44,120 - 01:06:46,120] So...
+- [01:06:46,120 - 01:06:48,120] The electron ought to have a Schrodinger equation.
+- [01:06:48,120 - 01:06:50,120] Particles should
+- [01:06:50,120 - 01:06:52,120] have Schrodinger equations.
+- [01:06:52,120 - 01:06:54,120] On the other hand, it shouldn't be...
+- [01:06:54,120 - 01:06:56,120] If we're dealing with relativity...
+- [01:06:56,120 - 01:06:58,120] Incidentally, the reason why
+- [01:06:58,120 - 01:07:00,120] we deal with relativity when we deal with
+- [01:07:00,120 - 01:07:02,120] electrons is because electrons are pretty light.
+- [01:07:02,120 - 01:07:04,120] They move around in...
+- [01:07:04,120 - 01:07:06,120] They move around in...of course,
+- [01:07:06,120 - 01:07:08,120] in an accelerator we can get them up to
+- [01:07:08,120 - 01:07:10,120] the speed of light. But I'm
+- [01:07:10,120 - 01:07:12,120] thinking now back to the age of Dirac.
+- [01:07:12,120 - 01:07:14,120] Why would Dirac have bothered
+- [01:07:14,120 - 01:07:16,120] using a relativistic theory
+- [01:07:16,120 - 01:07:18,120] other than curiosity, perhaps, about
+- [01:07:18,120 - 01:07:20,120] how relativistic electrons work?
+- [01:07:20,120 - 01:07:22,120] And the answer is that
+- [01:07:22,120 - 01:07:24,120] in an atom, and particularly
+- [01:07:24,120 - 01:07:26,120] in a hydrogen atom,
+- [01:07:26,120 - 01:07:28,120] the electron moves
+- [01:07:28,120 - 01:07:30,120] with an appreciable fraction of the speed
+- [01:07:30,120 - 01:07:32,120] of light, about one percent of the speed of light.
+- [01:07:32,120 - 01:07:34,120] So relativity is
+- [01:07:34,120 - 01:07:36,120] an important correction for the motion of
+- [01:07:36,120 - 01:07:38,120] electron. If you take
+- [01:07:38,120 - 01:07:40,120] heavy atoms, where
+- [01:07:40,120 - 01:07:42,120] the inner electrons are closer
+- [01:07:42,120 - 01:07:44,120] to the nucleus, they are really moving
+- [01:07:44,120 - 01:07:46,120] and they can be pretty close to...
+- [01:07:46,120 - 01:07:48,120] They're not moving with the speed of light, but they
+- [01:07:48,120 - 01:07:50,120] can be moving with even more appreciable
+- [01:07:50,120 - 01:07:52,120] velocities.
+- [01:07:52,120 - 01:07:54,120] So if you want to get
+- [01:07:54,120 - 01:07:56,120] atoms right,
+- [01:07:56,120 - 01:07:58,120] not just, you know, to
+- [01:07:58,120 - 01:08:00,120] zeroth order, you want to get the corrections to
+- [01:08:00,120 - 01:08:02,120] atoms right, important corrections
+- [01:08:02,120 - 01:08:04,120] are relativistic.
+- [01:08:04,120 - 01:08:06,120] So,
+- [01:08:06,120 - 01:08:08,120] now whether Dirac was motivated
+- [01:08:08,120 - 01:08:10,120] by that fact, or he was just motivated
+- [01:08:10,120 - 01:08:12,120] by
+- [01:08:12,120 - 01:08:14,120] curiosity about how to make relativistic
+- [01:08:14,120 - 01:08:16,120] Schrodinger equations, I don't know.
+- [01:08:18,120 - 01:08:20,120] Okay,
+- [01:08:20,120 - 01:08:22,120] we begin
+- [01:08:22,120 - 01:08:24,120] in formulating the idea
+- [01:08:24,120 - 01:08:26,120] of a Schrodinger
+- [01:08:26,120 - 01:08:28,120] equation for a particle,
+- [01:08:28,120 - 01:08:30,120] we begin pretty much with a
+- [01:08:30,120 - 01:08:32,120] classical relationship
+- [01:08:32,120 - 01:08:34,120] between energy and momentum.
+- [01:08:34,120 - 01:08:36,120] We start
+- [01:08:36,120 - 01:08:38,120] with energy as a function of momentum
+- [01:08:38,120 - 01:08:40,120] and then we
+- [01:08:40,120 - 01:08:42,120] go from quantum mechanics to
+- [01:08:42,120 - 01:08:44,120] classical mechanics,
+- [01:08:44,120 - 01:08:46,120] because that's the logic.
+- [01:08:46,120 - 01:08:48,120] But what we tend to know about
+- [01:08:48,120 - 01:08:50,120] is classical physics, and so
+- [01:08:50,120 - 01:08:52,120] we usually go in the other direction.
+- [01:08:52,120 - 01:08:54,120] And for an ordinary
+- [01:08:54,120 - 01:08:56,120] non-relativistic particle,
+- [01:08:56,120 - 01:08:58,120] the energy, which I'll call a Hamiltonian,
+- [01:08:58,120 - 01:09:00,120] let's call it E, let's call it E,
+- [01:09:00,120 - 01:09:02,120] but remember it is the Hamiltonian,
+- [01:09:02,120 - 01:09:04,120] it's
+- [01:09:04,120 - 01:09:06,120] E equals
+- [01:09:06,120 - 01:09:08,120] E squared over 2m.
+- [01:09:08,120 - 01:09:10,120] That's the energy as a function
+- [01:09:10,120 - 01:09:12,120] of momentum, and then to go to
+- [01:09:12,120 - 01:09:14,120] quantum mechanics, we replace energy
+- [01:09:14,120 - 01:09:16,120] by Hamiltonian,
+- [01:09:16,120 - 01:09:18,120] which we then
+- [01:09:18,120 - 01:09:20,120] replace by
+- [01:09:20,120 - 01:09:22,120] I d by dt.
+- [01:09:24,120 - 01:09:26,120] In other words, the Hamiltonian
+- [01:09:26,120 - 01:09:28,120] is the thing which gives you the time derivative
+- [01:09:28,120 - 01:09:30,120] of the wave function, that's on the
+- [01:09:30,120 - 01:09:32,120] left side, and on the right side
+- [01:09:32,120 - 01:09:34,120] we replace p
+- [01:09:34,120 - 01:09:36,120] by minus I
+- [01:09:36,120 - 01:09:38,120] d by dx.
+- [01:09:40,120 - 01:09:42,120] And that gives us the Schrodinger equation.
+- [01:09:42,120 - 01:09:44,120] d psi by dt
+- [01:09:44,120 - 01:09:46,120] or I d psi by dt
+- [01:09:46,120 - 01:09:48,120] is minus d squared over
+- [01:09:48,120 - 01:09:50,120] 2m, second derivative,
+- [01:09:50,120 - 01:09:52,120] you know the story.
+- [01:09:52,120 - 01:09:54,120] Schrodinger equation.
+- [01:09:54,120 - 01:09:56,120] Okay, so Dirac said, why don't I do the same thing?
+- [01:09:56,120 - 01:09:58,120] What's the energy as a
+- [01:09:58,120 - 01:10:00,120] function of momentum?
+- [01:10:00,120 - 01:10:02,120] It's ugly.
+- [01:10:02,120 - 01:10:04,120] Square root of p squared
+- [01:10:04,120 - 01:10:06,120] plus m squared. Let's write down, because we'll
+- [01:10:06,120 - 01:10:08,120] need it later, the relation between
+- [01:10:08,120 - 01:10:10,120] energy and momentum.
+- [01:10:12,120 - 01:10:14,120] E squared
+- [01:10:16,120 - 01:10:18,120] equals p squared
+- [01:10:18,120 - 01:10:20,120] plus m squared. Now I've set the
+- [01:10:20,120 - 01:10:22,120] speed of light equal to 1, and I will do so
+- [01:10:22,120 - 01:10:24,120] continuously throughout.
+- [01:10:24,120 - 01:10:26,120] Speed of light is equal to 1.
+- [01:10:26,120 - 01:10:28,120] E squared is equal to p squared
+- [01:10:28,120 - 01:10:30,120] plus m squared. From this,
+- [01:10:30,120 - 01:10:32,120] you can write down immediately
+- [01:10:32,120 - 01:10:34,120] an equation. If you
+- [01:10:34,120 - 01:10:36,120] take e to be
+- [01:10:36,120 - 01:10:38,120] I d by dt, then what is
+- [01:10:38,120 - 01:10:40,120] e squared?
+- [01:10:42,120 - 01:10:44,120] It's the second derivative
+- [01:10:44,120 - 01:10:46,120] with respect to t. Minus the second
+- [01:10:46,120 - 01:10:48,120] derivative with respect to t. So
+- [01:10:48,120 - 01:10:50,120] you would write down
+- [01:10:50,120 - 01:10:52,120] minus second
+- [01:10:52,120 - 01:10:54,120] derivative with respect to t squared,
+- [01:10:54,120 - 01:10:56,120] that's e,
+- [01:10:56,120 - 01:10:58,120] on some phi
+- [01:10:58,120 - 01:11:00,120] of x, or psi of x, some
+- [01:11:00,120 - 01:11:02,120] wave function,
+- [01:11:02,120 - 01:11:06,120] equals
+- [01:11:06,120 - 01:11:08,120] p squared, that's minus
+- [01:11:08,120 - 01:11:10,120] d by dx squared,
+- [01:11:10,120 - 01:11:12,120] psi,
+- [01:11:12,120 - 01:11:14,120] plus m squared psi,
+- [01:11:14,120 - 01:11:16,120] or phi,
+- [01:11:16,120 - 01:11:18,120] whatever, phi, psi, I don't know.
+- [01:11:18,120 - 01:11:20,120] Doesn't matter, whatever we call it.
+- [01:11:20,120 - 01:11:22,120] The wave function of the electron.
+- [01:11:22,120 - 01:11:24,120] Or the wave function of something.
+- [01:11:26,120 - 01:11:28,120] Anybody know what the name of this equation
+- [01:11:28,120 - 01:11:30,120] is?
+- [01:11:30,120 - 01:11:32,120] I seem to have a...
+- [01:11:32,120 - 01:11:34,120] Yeah, that's right.
+- [01:11:34,120 - 01:11:36,120] That's right.
+- [01:11:36,120 - 01:11:38,120] That's the Klein-Gordon equation.
+- [01:11:38,120 - 01:11:40,120] And you might say,
+- [01:11:40,120 - 01:11:42,120] Dirac, why didn't he do this?
+- [01:11:42,120 - 01:11:44,120] I don't know why
+- [01:11:44,120 - 01:11:46,120] he didn't do this. He had an argument.
+- [01:11:46,120 - 01:11:48,120] His argument was, look, we're supposed
+- [01:11:48,120 - 01:11:50,120] to write, according to
+- [01:11:50,120 - 01:11:52,120] my principles of quantum mechanics,
+- [01:11:52,120 - 01:11:54,120] which are in my textbook,
+- [01:11:54,120 - 01:11:56,120] we're supposed to write
+- [01:11:56,120 - 01:11:58,120] i d by dt
+- [01:11:58,120 - 01:12:00,120] is equal to h times psi
+- [01:12:00,120 - 01:12:02,120] We're not supposed to have to square
+- [01:12:02,120 - 01:12:04,120] the second derivative.
+- [01:12:04,120 - 01:12:06,120] I don't want to know what the
+- [01:12:06,120 - 01:12:08,120] h squared is,
+- [01:12:08,120 - 01:12:10,120] I want to know what h is.
+- [01:12:10,120 - 01:12:12,120] That's what I wrote in my book, and I'm going to
+- [01:12:12,120 - 01:12:14,120] stick by it.
+- [01:12:14,120 - 01:12:16,120] So he wants an equation
+- [01:12:16,120 - 01:12:18,120] that reads
+- [01:12:18,120 - 01:12:20,120] i
+- [01:12:20,120 - 01:12:22,120] d, let's call it psi,
+- [01:12:22,120 - 01:12:24,120] now it's not a field operator,
+- [01:12:24,120 - 01:12:26,120] it's just a wave function for an electron,
+- [01:12:26,120 - 01:12:28,120] by dt
+- [01:12:28,120 - 01:12:30,120] is equal to some
+- [01:12:30,120 - 01:12:32,120] operator on psi.
+- [01:12:34,120 - 01:12:36,120] What kind of an operator?
+- [01:12:36,120 - 01:12:38,120] Well, it's got to have the momentum,
+- [01:12:38,120 - 01:12:40,120] it's got to have the mass.
+- [01:12:40,120 - 01:12:42,120] He could just put here the square root of
+- [01:12:42,120 - 01:12:44,120] p squared plus m squared,
+- [01:12:44,120 - 01:12:46,120] and then write,
+- [01:12:46,120 - 01:12:48,120] the following strange equation,
+- [01:12:48,120 - 01:12:50,120] is equal to
+- [01:12:50,120 - 01:12:52,120] square root
+- [01:12:52,120 - 01:12:54,120] of p squared,
+- [01:12:54,120 - 01:12:56,120] which is minus d by dx
+- [01:12:56,120 - 01:12:58,120] squared
+- [01:12:58,120 - 01:13:00,120] plus m squared
+- [01:13:00,120 - 01:13:02,120] psi.
+- [01:13:02,120 - 01:13:04,120] What on earth does that mean?
+- [01:13:04,120 - 01:13:06,120] What does the square root of
+- [01:13:06,120 - 01:13:08,120] d by dx squared plus m squared mean?
+- [01:13:08,120 - 01:13:10,120] It doesn't mean very much.
+- [01:13:10,120 - 01:13:12,120] Well,
+- [01:13:12,120 - 01:13:14,120] you can give it some technical meaning,
+- [01:13:14,120 - 01:13:16,120] but it's pretty horrible.
+- [01:13:16,120 - 01:13:18,120] It's not a nice,
+- [01:13:18,120 - 01:13:20,120] the square root of a differential operator
+- [01:13:20,120 - 01:13:22,120] like this is not a nice thing.
+- [01:13:22,120 - 01:13:24,120] So I think that Dirac
+- [01:13:24,120 - 01:13:26,120] just backed away from it
+- [01:13:26,120 - 01:13:28,120] and said,
+- [01:13:28,120 - 01:13:30,120] I don't like that.
+- [01:13:30,120 - 01:13:32,120] I don't like that.
+- [01:13:32,120 - 01:13:34,120] I don't have a convincing case against it,
+- [01:13:34,120 - 01:13:36,120] but I'm going to start over again.
+- [01:13:36,120 - 01:13:38,120] I'm going to start from the beginning.
+- [01:13:38,120 - 01:13:40,120] Here's what he said.
+- [01:13:40,120 - 01:13:42,120] We'll do it in the one-dimensional case,
+- [01:13:42,120 - 01:13:44,120] and then we'll come back to...
+- [01:13:48,120 - 01:13:50,120] Let's start
+- [01:13:50,120 - 01:13:52,120] the one-dimensional case
+- [01:13:52,120 - 01:13:54,120] with a
+- [01:13:54,120 - 01:13:56,120] massless particle,
+- [01:13:56,120 - 01:13:58,120] a particle with no mass.
+- [01:13:58,120 - 01:14:00,120] An electron that doesn't have a mass.
+- [01:14:00,120 - 01:14:02,120] We'll put the mass back in,
+- [01:14:02,120 - 01:14:04,120] and we'll see how that works.
+- [01:14:06,120 - 01:14:08,120] So,
+- [01:14:08,120 - 01:14:10,120] here's what you know about a particle
+- [01:14:10,120 - 01:14:12,120] moving along the x-axis
+- [01:14:12,120 - 01:14:14,120] with the speed of light.
+- [01:14:14,120 - 01:14:16,120] It's massless, so it moves with the speed of light.
+- [01:14:16,120 - 01:14:18,120] Its momentum
+- [01:14:18,120 - 01:14:20,120] is equal
+- [01:14:20,120 - 01:14:22,120] to its energy.
+- [01:14:22,120 - 01:14:24,120] Strictly speaking, if I put the speed
+- [01:14:24,120 - 01:14:26,120] of light back, it would go over here.
+- [01:14:26,120 - 01:14:28,120] Energy is equal to c
+- [01:14:28,120 - 01:14:30,120] times the momentum.
+- [01:14:30,120 - 01:14:32,120] This is true for a photon.
+- [01:14:32,120 - 01:14:34,120] It's true for any massless particle.
+- [01:14:36,120 - 01:14:38,120] This is a massless particle
+- [01:14:38,120 - 01:14:40,120] moving to the right. What about a massless particle
+- [01:14:40,120 - 01:14:42,120] moving to the left, incidentally?
+- [01:14:44,120 - 01:14:46,120] Yeah, p would be negative in that case.
+- [01:14:46,120 - 01:14:48,120] p would be positive if the particle
+- [01:14:48,120 - 01:14:50,120] moves to the right.
+- [01:14:50,120 - 01:14:52,120] If the particle moves to the left, then p is negative,
+- [01:14:52,120 - 01:14:54,120] but clearly the energy should still be positive,
+- [01:14:54,120 - 01:14:56,120] so we would have to write
+- [01:14:56,120 - 01:14:58,120] p equals minus c.
+- [01:14:58,120 - 01:15:00,120] Well, we only get to write one thing. We don't get to write
+- [01:15:00,120 - 01:15:02,120] both.
+- [01:15:02,120 - 01:15:04,120] So let's start with p equals e
+- [01:15:04,120 - 01:15:06,120] and content ourselves
+- [01:15:06,120 - 01:15:08,120] with studying a particle moving to the right.
+- [01:15:08,120 - 01:15:10,120] So we know what this says.
+- [01:15:10,120 - 01:15:12,120] We've actually studied this equation.
+- [01:15:12,120 - 01:15:14,120] This equation, if we now say that
+- [01:15:14,120 - 01:15:16,120] e is equal to the Hamiltonian
+- [01:15:16,120 - 01:15:18,120] and Hamiltonian is
+- [01:15:18,120 - 01:15:20,120] i d by dt,
+- [01:15:20,120 - 01:15:22,120] it says
+- [01:15:22,120 - 01:15:24,120] i d psi by dt
+- [01:15:24,120 - 01:15:26,120] that's h psi
+- [01:15:26,120 - 01:15:28,120] is equal to
+- [01:15:28,120 - 01:15:30,120] the momentum of the massless particle.
+- [01:15:30,120 - 01:15:32,120] So that's equal to
+- [01:15:32,120 - 01:15:34,120] p times psi, and that's minus i
+- [01:15:34,120 - 01:15:36,120] d psi by dx.
+- [01:15:38,120 - 01:15:40,120] That's a pretty simple equation.
+- [01:15:40,120 - 01:15:42,120] What does it say? It says
+- [01:15:44,120 - 01:15:46,120] d psi by dt
+- [01:15:48,120 - 01:15:50,120] plus d psi by dx
+- [01:15:50,120 - 01:15:52,120] equals zero.
+- [01:15:52,120 - 01:16:02,120] What kind of, what are the solutions of such an equation?
+- [01:16:02,120 - 01:16:04,120] No?
+- [01:16:06,120 - 01:16:08,120] They're functions of x minus t.
+- [01:16:08,120 - 01:16:10,120] Any function
+- [01:16:10,120 - 01:16:12,120] of x minus t
+- [01:16:12,120 - 01:16:14,120] will satisfy this equation.
+- [01:16:16,120 - 01:16:18,120] A function of x minus t
+- [01:16:18,120 - 01:16:20,120] is a wave which is moving
+- [01:16:20,120 - 01:16:22,120] along the axis to the right
+- [01:16:22,120 - 01:16:24,120] with
+- [01:16:24,120 - 01:16:26,120] the speed of light. Speed of light now
+- [01:16:26,120 - 01:16:28,120] being chosen to be equal to one.
+- [01:16:28,120 - 01:16:30,120] Any function
+- [01:16:30,120 - 01:16:32,120] of x minus t
+- [01:16:32,120 - 01:16:34,120] psi is a
+- [01:16:34,120 - 01:16:36,120] function of x minus t
+- [01:16:38,120 - 01:16:40,120] that means it describes a wave
+- [01:16:40,120 - 01:16:42,120] moving to the right
+- [01:16:42,120 - 01:16:44,120] of rigid
+- [01:16:44,120 - 01:16:46,120] profile. Profile
+- [01:16:46,120 - 01:16:48,120] doesn't change, but the location
+- [01:16:48,120 - 01:16:50,120] of the center of the wave changes, and it
+- [01:16:50,120 - 01:16:52,120] moves with the speed of light.
+- [01:16:52,120 - 01:16:54,120] Okay, this is a fine equation.
+- [01:16:54,120 - 01:16:56,120] Very nice.
+- [01:16:58,120 - 01:17:00,120] Two things wrong with it.
+- [01:17:00,120 - 01:17:02,120] Two things, and they're unrelated
+- [01:17:02,120 - 01:17:04,120] things. They're unrelated. They're not the
+- [01:17:04,120 - 01:17:06,120] same thing. The first thing
+- [01:17:06,120 - 01:17:08,120] that's wrong with it is it's got negative energy.
+- [01:17:08,120 - 01:17:10,120] What if the momentum is negative?
+- [01:17:12,120 - 01:17:14,120] We're allowed to have negative momentum.
+- [01:17:14,120 - 01:17:16,120] Momentum is a
+- [01:17:16,120 - 01:17:18,120] observable which can be positive or negative.
+- [01:17:18,120 - 01:17:20,120] It's negative
+- [01:17:20,120 - 01:17:22,120] if it's
+- [01:17:22,120 - 01:17:24,120] pointing along the minus x axis.
+- [01:17:24,120 - 01:17:26,120] It's positive if it's along the plus x axis.
+- [01:17:26,120 - 01:17:28,120] It's got
+- [01:17:28,120 - 01:17:30,120] particles of negative energy with
+- [01:17:30,120 - 01:17:32,120] negative momentum.
+- [01:17:32,120 - 01:17:34,120] This sounds very
+- [01:17:34,120 - 01:17:36,120] dangerous. It sounds
+- [01:17:36,120 - 01:17:38,120] like we can
+- [01:17:38,120 - 01:17:40,120] take those, we can just
+- [01:17:40,120 - 01:17:42,120] keep filling up the world
+- [01:17:42,120 - 01:17:44,120] with more and more negative
+- [01:17:44,120 - 01:17:46,120] energy particles, lowering the
+- [01:17:46,120 - 01:17:48,120] energy, lowering it, lowering it
+- [01:17:48,120 - 01:17:50,120] without bound from below.
+- [01:17:50,120 - 01:17:52,120] That's a pretty dangerous
+- [01:17:52,120 - 01:17:54,120] situation. We don't want that.
+- [01:17:54,120 - 01:17:56,120] So first
+- [01:17:56,120 - 01:17:58,120] problem with this is it contains
+- [01:17:58,120 - 01:18:00,120] particles of negative energy.
+- [01:18:00,120 - 01:18:02,120] We've got to fix that.
+- [01:18:02,120 - 01:18:04,120] The second problem
+- [01:18:04,120 - 01:18:06,120] with it is it only has particles
+- [01:18:06,120 - 01:18:08,120] which move to the right.
+- [01:18:08,120 - 01:18:10,120] Okay.
+- [01:18:10,120 - 01:18:12,120] Well, we could imagine
+- [01:18:12,120 - 01:18:14,120] a theory of particles that only
+- [01:18:14,120 - 01:18:16,120] move to the right, but it wouldn't look like
+- [01:18:16,120 - 01:18:18,120] certainly wouldn't look like
+- [01:18:18,120 - 01:18:20,120] garden variety electrons.
+- [01:18:20,120 - 01:18:22,120] We don't know any particles that only move along
+- [01:18:22,120 - 01:18:24,120] one direction.
+- [01:18:24,120 - 01:18:26,120] If it can move to the right,
+- [01:18:26,120 - 01:18:28,120] it can also move to the left.
+- [01:18:28,120 - 01:18:30,120] So
+- [01:18:30,120 - 01:18:32,120] that's another thing we can try to fix.
+- [01:18:32,120 - 01:18:34,120] Okay, so here's what Dirac
+- [01:18:34,120 - 01:18:36,120] said.
+- [01:18:36,120 - 01:18:38,120] He said
+- [01:18:38,120 - 01:18:40,120] in effect,
+- [01:18:40,120 - 01:18:42,120] in effect, it's not exactly what he said, but
+- [01:18:42,120 - 01:18:44,120] in effect he said, let's
+- [01:18:44,120 - 01:18:46,120] take two species
+- [01:18:46,120 - 01:18:48,120] this is to
+- [01:18:48,120 - 01:18:50,120] get rid of the left-right story, not
+- [01:18:50,120 - 01:18:52,120] the energy story, to get rid of
+- [01:18:52,120 - 01:18:54,120] the left-right story. He said let's take
+- [01:18:54,120 - 01:18:56,120] two species. Let's call it
+- [01:18:56,120 - 01:18:58,120] psi 1 and psi 2.
+- [01:18:58,120 - 01:19:00,120] Two species
+- [01:19:00,120 - 01:19:02,120] of electrons, one of which
+- [01:19:02,120 - 01:19:04,120] we'll think of as the species of electrons
+- [01:19:04,120 - 01:19:06,120] which move to the right, and the other we'll think of
+- [01:19:06,120 - 01:19:08,120] as the species of electrons which go to the left.
+- [01:19:08,120 - 01:19:10,120] And let's just write down
+- [01:19:10,120 - 01:19:12,120] two separate equations.
+- [01:19:12,120 - 01:19:14,120] Let's call them
+- [01:19:14,120 - 01:19:16,120] and think of two separate kinds
+- [01:19:16,120 - 01:19:18,120] of particles.
+- [01:19:20,120 - 01:19:22,120] Or
+- [01:19:22,120 - 01:19:24,120] we can say a particle can be
+- [01:19:24,120 - 01:19:26,120] one kind or the other.
+- [01:19:26,120 - 01:19:28,120] If we have only one
+- [01:19:28,120 - 01:19:30,120] particle, it could be the right kind
+- [01:19:30,120 - 01:19:32,120] or the left kind. And so
+- [01:19:32,120 - 01:19:34,120] let's put a psi 1
+- [01:19:34,120 - 01:19:36,120] here. This is the equation
+- [01:19:36,120 - 01:19:38,120] for particles which move to the right.
+- [01:19:38,120 - 01:19:40,120] And what about the equation
+- [01:19:40,120 - 01:19:42,120] for particles to move to the left, which we'll
+- [01:19:42,120 - 01:19:44,120] call psi 2. That's the
+- [01:19:44,120 - 01:19:46,120] equation
+- [01:19:46,120 - 01:19:48,120] psi 2
+- [01:19:48,120 - 01:19:50,120] by dt
+- [01:19:50,120 - 01:19:52,120] minus
+- [01:19:52,120 - 01:19:54,120] d psi 2 by dx
+- [01:19:54,120 - 01:19:56,120] is equal
+- [01:19:56,120 - 01:19:58,120] to zero.
+- [01:19:58,120 - 01:20:00,120] Now, in quantum
+- [01:20:00,120 - 01:20:02,120] mechanics, of course, if you
+- [01:20:02,120 - 01:20:04,120] can have a particle of type 1
+- [01:20:04,120 - 01:20:06,120] and a particle of type 2, you can have
+- [01:20:06,120 - 01:20:08,120] a linear superposition of them.
+- [01:20:08,120 - 01:20:10,120] So you can have particles
+- [01:20:10,120 - 01:20:12,120] which have a probability
+- [01:20:12,120 - 01:20:14,120] of half, for example, of moving to the left
+- [01:20:14,120 - 01:20:16,120] and half moving to the right.
+- [01:20:16,120 - 01:20:18,120] But these are the
+- [01:20:18,120 - 01:20:20,120] wave
+- [01:20:20,120 - 01:20:22,120] functions of the two kinds of particles.
+- [01:20:22,120 - 01:20:24,120] So Dirac-Nicks said,
+- [01:20:24,120 - 01:20:26,120] look, it looks to me like
+- [01:20:26,120 - 01:20:28,120] what we're talking about is a particle
+- [01:20:28,120 - 01:20:30,120] with a degree of freedom,
+- [01:20:30,120 - 01:20:32,120] an extra degree
+- [01:20:32,120 - 01:20:34,120] of freedom, not just
+- [01:20:34,120 - 01:20:36,120] x,
+- [01:20:36,120 - 01:20:38,120] not just the coordinate position
+- [01:20:38,120 - 01:20:40,120] or equivalently the momentum,
+- [01:20:40,120 - 01:20:42,120] you can trade one for the other, but
+- [01:20:42,120 - 01:20:44,120] it looks like it has a discrete thing,
+- [01:20:44,120 - 01:20:46,120] a plus oneness
+- [01:20:46,120 - 01:20:48,120] or a minus oneness,
+- [01:20:48,120 - 01:20:50,120] sort of like a spin.
+- [01:20:50,120 - 01:20:52,120] It's not a spin, but sort of
+- [01:20:52,120 - 01:20:54,120] like a spin. It can either
+- [01:20:54,120 - 01:20:56,120] be up or it can be down.
+- [01:20:56,120 - 01:20:58,120] Up in this case means traveling
+- [01:20:58,120 - 01:21:00,120] to the right, down means traveling
+- [01:21:00,120 - 01:21:02,120] to the left. So
+- [01:21:02,120 - 01:21:04,120] he understood a little bit about matrices
+- [01:21:04,120 - 01:21:06,120] and so forth, and he
+- [01:21:06,120 - 01:21:08,120] said, look, let's write this in
+- [01:21:08,120 - 01:21:10,120] matrix form. Let's
+- [01:21:10,120 - 01:21:12,120] introduce observables
+- [01:21:12,120 - 01:21:14,120] which tell you whether
+- [01:21:14,120 - 01:21:16,120] you're 1 or 2,
+- [01:21:16,120 - 01:21:18,120] and that means that
+- [01:21:18,120 - 01:21:20,120] what we want to do is take our size
+- [01:21:20,120 - 01:21:22,120] and think of them as a column vector.
+- [01:21:22,120 - 01:21:24,120] Psi 1 and psi 2,
+- [01:21:24,120 - 01:21:26,120] put them together
+- [01:21:26,120 - 01:21:28,120] like so.
+- [01:21:28,120 - 01:21:30,120] This is the amplitude that the particle
+- [01:21:30,120 - 01:21:32,120] is right moving,
+- [01:21:32,120 - 01:21:34,120] this is the amplitude that the particle is left
+- [01:21:34,120 - 01:21:36,120] moving, and
+- [01:21:36,120 - 01:21:38,120] let's introduce matrices.
+- [01:21:38,120 - 01:21:40,120] In particular, let's introduce
+- [01:21:40,120 - 01:21:42,120] a matrix
+- [01:21:42,120 - 01:21:44,120] whose eigenvectors
+- [01:21:44,120 - 01:21:46,120] are 1 or 2.
+- [01:21:46,120 - 01:21:48,120] In other words,
+- [01:21:48,120 - 01:21:50,120] 1 or 2.
+- [01:21:50,120 - 01:21:52,120] Here's a matrix
+- [01:21:52,120 - 01:21:58,120] which
+- [01:21:58,120 - 01:22:00,120] the eigenvectors
+- [01:22:00,120 - 01:22:02,120] are
+- [01:22:02,120 - 01:22:04,120] 1 with eigenvalue 1
+- [01:22:04,120 - 01:22:06,120] and
+- [01:22:06,120 - 01:22:08,120] minus 1 with eigenvalue 2.
+- [01:22:08,120 - 01:22:10,120] So here is an observable
+- [01:22:10,120 - 01:22:12,120] which distinguishes
+- [01:22:12,120 - 01:22:14,120] the two kinds of particles.
+- [01:22:14,120 - 01:22:16,120] Either up,
+- [01:22:16,120 - 01:22:18,120] well it's not up or down, but it's moving
+- [01:22:18,120 - 01:22:20,120] to the right or it's moving to the left,
+- [01:22:20,120 - 01:22:22,120] and we'll just give this matrix a name.
+- [01:22:22,120 - 01:22:24,120] Now,
+- [01:22:24,120 - 01:22:26,120] if it was spin,
+- [01:22:26,120 - 01:22:28,120] and it's the observable,
+- [01:22:28,120 - 01:22:30,120] it is the observable, the matrix observable
+- [01:22:30,120 - 01:22:32,120] or the operator, the linear operator,
+- [01:22:32,120 - 01:22:34,120] which distinguishes between
+- [01:22:34,120 - 01:22:36,120] the two kinds of particles.
+- [01:22:36,120 - 01:22:38,120] It's very much like a spin
+- [01:22:38,120 - 01:22:40,120] being up or a spin being down, except that it's not spin.
+- [01:22:40,120 - 01:22:42,120] Okay,
+- [01:22:42,120 - 01:22:44,120] this matrix has a name.
+- [01:22:44,120 - 01:22:46,120] Anybody know what its name is?
+- [01:22:46,120 - 01:22:48,120] I forget. No, I don't.
+- [01:22:48,120 - 01:22:50,120] Sigma 1?
+- [01:22:50,120 - 01:22:52,120] It is sigma 3.
+- [01:22:52,120 - 01:22:54,120] It's a Pauli matrix,
+- [01:22:54,120 - 01:22:56,120] but it's a Pauli matrix in the context
+- [01:22:56,120 - 01:22:58,120] where we're thinking about spin,
+- [01:22:58,120 - 01:23:00,120] and spin has to do with angular momentum.
+- [01:23:00,120 - 01:23:02,120] It's just not that here.
+- [01:23:02,120 - 01:23:04,120] Alright? It's just a different thing.
+- [01:23:04,120 - 01:23:06,120] Dirac
+- [01:23:06,120 - 01:23:08,120] called it alpha.
+- [01:23:10,120 - 01:23:12,120] He called it alpha,
+- [01:23:12,120 - 01:23:14,120] so let's call it alpha.
+- [01:23:14,120 - 01:23:16,120] It's exactly that matrix.
+- [01:23:18,120 - 01:23:20,120] And then he wrote,
+- [01:23:20,120 - 01:23:22,120] I'm saying he did this,
+- [01:23:22,120 - 01:23:24,120] he actually didn't do this.
+- [01:23:24,120 - 01:23:26,120] He plunged right in and did it in three dimensions.
+- [01:23:26,120 - 01:23:28,120] But, uh,
+- [01:23:28,120 - 01:23:30,120] I don't know,
+- [01:23:30,120 - 01:23:32,120] for all I know, maybe he did do this, but, uh...
+- [01:23:32,120 - 01:23:34,120] It might make a certain,
+- [01:23:34,120 - 01:23:36,120] a different kind of sense in
+- [01:23:36,120 - 01:23:38,120] three dimensions.
+- [01:23:40,120 - 01:23:42,120] When you have the direction,
+- [01:23:42,120 - 01:23:44,120] vector type direction.
+- [01:23:44,120 - 01:23:46,120] Yeah, right, it does.
+- [01:23:46,120 - 01:23:48,120] But if he were doing it in one dimension,
+- [01:23:48,120 - 01:23:50,120] which is the easy baby way to get started,
+- [01:23:50,120 - 01:23:52,120] and it's not so baby, it's correct,
+- [01:23:52,120 - 01:23:54,120] you would write that
+- [01:23:54,120 - 01:23:56,120] H instead of the Hamiltonian,
+- [01:23:56,120 - 01:23:58,120] instead of, E is the Hamiltonian,
+- [01:23:58,120 - 01:24:00,120] but now we're
+- [01:24:00,120 - 01:24:02,120] thinking of it as a Hamiltonian, not just a number,
+- [01:24:02,120 - 01:24:04,120] the Hamiltonian
+- [01:24:04,120 - 01:24:06,120] is
+- [01:24:06,120 - 01:24:08,120] P if the particle is moving
+- [01:24:08,120 - 01:24:10,120] to the right, and minus
+- [01:24:10,120 - 01:24:12,120] P if the particle,
+- [01:24:12,120 - 01:24:14,120] the two kinds of particles,
+- [01:24:14,120 - 01:24:16,120] when moved to the right, they'll go.
+- [01:24:16,120 - 01:24:18,120] So it's P if it's a right mover,
+- [01:24:18,120 - 01:24:20,120] and minus P if it's a left mover,
+- [01:24:20,120 - 01:24:22,120] but the right movers and the left movers
+- [01:24:22,120 - 01:24:24,120] are distinguished by alpha.
+- [01:24:24,120 - 01:24:26,120] So we can summarize it
+- [01:24:26,120 - 01:24:28,120] by just writing H equals
+- [01:24:28,120 - 01:24:30,120] alpha P.
+- [01:24:30,120 - 01:24:32,120] If alpha is plus one,
+- [01:24:32,120 - 01:24:34,120] it's a right mover,
+- [01:24:34,120 - 01:24:36,120] if alpha is minus one, it's a left mover.
+- [01:24:36,120 - 01:24:38,120] So it puts together
+- [01:24:38,120 - 01:24:40,120] into a single structure
+- [01:24:40,120 - 01:24:42,120] a
+- [01:24:42,120 - 01:24:44,120] particle with a degree of freedom
+- [01:24:44,120 - 01:24:46,120] which is its position, and another
+- [01:24:46,120 - 01:24:48,120] degree of freedom which is its alpha.
+- [01:24:48,120 - 01:24:50,120] Puts it together,
+- [01:24:50,120 - 01:24:52,120] and says H is equal to alpha P.
+- [01:24:52,120 - 01:24:54,120] This now becomes
+- [01:24:54,120 - 01:24:56,120] an equation, you can write it in a number
+- [01:24:56,120 - 01:24:58,120] of ways. Here is one way of
+- [01:24:58,120 - 01:25:00,120] writing it.
+- [01:25:00,120 - 01:25:02,120] But we can also write it
+- [01:25:02,120 - 01:25:04,120] as I
+- [01:25:04,120 - 01:25:06,120] d by dt
+- [01:25:06,120 - 01:25:08,120] of
+- [01:25:08,120 - 01:25:10,120] psi one, psi two,
+- [01:25:10,120 - 01:25:12,120] a two component
+- [01:25:12,120 - 01:25:14,120] column vector,
+- [01:25:14,120 - 01:25:16,120] is equal
+- [01:25:16,120 - 01:25:18,120] to alpha,
+- [01:25:18,120 - 01:25:20,120] which is the matrix one minus
+- [01:25:20,120 - 01:25:22,120] one, O O,
+- [01:25:22,120 - 01:25:24,120] times
+- [01:25:24,120 - 01:25:26,120] minus I
+- [01:25:26,120 - 01:25:28,120] d psi by dx.
+- [01:25:30,120 - 01:25:32,120] Let's put the minus I
+- [01:25:32,120 - 01:25:34,120] over here.
+- [01:25:40,120 - 01:25:42,120] Or?
+- [01:25:42,120 - 01:25:44,120] Hmm?
+- [01:25:44,120 - 01:25:46,120] Yeah, I'm sorry.
+- [01:25:46,120 - 01:25:48,120] d by dx,
+- [01:25:48,120 - 01:25:50,120] good. d by dx,
+- [01:25:50,120 - 01:25:52,120] of
+- [01:26:00,120 - 01:26:12,120] psi one, psi two. Or we can just condense it. We don't need all of this stuff. We can just write I d psi by dt is equal to minus I alpha d psi by dx. But remember that psi is this two component column vector. They all are the same thing.
+- [01:26:12,120 - 01:26:14,120] Keep in mind that
+- [01:26:14,120 - 01:26:16,120] and
+- [01:26:16,120 - 01:26:18,120] since alpha has both positive and negative eigenvalue,
+- [01:26:18,120 - 01:26:20,120] this describes both right moving and left moving waves.
+- [01:26:20,120 - 01:26:22,120] Okay, so by the trick of introducing
+- [01:26:22,120 - 01:26:24,120] the Dirac matrix alpha
+- [01:26:24,120 - 01:26:26,120] and a two component structure
+- [01:26:26,120 - 01:26:28,120] for the wave function,
+- [01:26:28,120 - 01:26:30,120] we now have cured the problem
+- [01:26:30,120 - 01:26:32,120] of the one way street.
+- [01:26:32,120 - 01:26:34,120] It's now a two way street.
+- [01:26:34,120 - 01:26:36,120] And electrons,
+- [01:26:36,120 - 01:26:38,120] an electron can go either to the left or the right.
+- [01:26:38,120 - 01:26:40,120] I said there were two things wrong.
+- [01:26:40,120 - 01:26:42,120] I said there were two things wrong.
+- [01:26:42,120 - 01:26:44,120] I said there were two things wrong.
+- [01:26:44,120 - 01:26:46,120] I said there were two things wrong.
+- [01:26:46,120 - 01:26:48,120] I said there were two things wrong.
+- [01:26:48,120 - 01:26:50,120] The first I said was the negative energy.
+- [01:26:50,120 - 01:26:52,120] The first I said was the negative energy.
+- [01:26:52,120 - 01:26:54,120] We still have that.
+- [01:26:54,120 - 01:26:56,120] The second was the one wayness.
+- [01:26:56,120 - 01:26:58,120] I forgot a third one.
+- [01:26:58,120 - 01:27:00,120] So far the electron has no mass.
+- [01:27:00,120 - 01:27:02,120] This is something moving with the speed of light.
+- [01:27:02,120 - 01:27:04,120] Okay?
+- [01:27:04,120 - 01:27:06,120] This is not what we want.
+- [01:27:06,120 - 01:27:08,120] We want an electron which moves with less than the speed of light.
+- [01:27:08,120 - 01:27:10,120] In other words, we want an electron with a mass.
+- [01:27:10,120 - 01:27:12,120] Okay?
+- [01:27:12,120 - 01:27:14,120] I think I could have done this.
+- [01:27:14,120 - 01:27:16,120] It took the genius of Dirac
+- [01:27:16,120 - 01:27:18,120] to make the next step.
+- [01:27:18,120 - 01:27:20,120] He said,
+- [01:27:20,120 - 01:27:22,120] here's what he said,
+- [01:27:22,120 - 01:27:24,120] well, let's
+- [01:27:24,120 - 01:27:26,120] He said, let's just add a term to the Hamiltonian
+- [01:27:26,120 - 01:27:28,120] and see if we can get it to come out to be a mass.
+- [01:27:28,120 - 01:27:30,120] and see if we can get it to come out to be a mass.
+- [01:27:34,120 - 01:27:36,120] I'm going to add something here
+- [01:27:38,120 - 01:27:40,120] that ought to be proportional to the mass.
+- [01:27:40,120 - 01:27:42,120] m of course means mc squared, strictly.
+- [01:27:42,120 - 01:27:44,120] It's the energy of a particle at rest
+- [01:27:44,120 - 01:27:46,120] when it has no momentum.
+- [01:27:46,120 - 01:27:48,120] So we want something to account
+- [01:27:48,120 - 01:27:50,120] for the energy of a particle
+- [01:27:50,120 - 01:27:52,120] when it has no momentum.
+- [01:27:52,120 - 01:27:54,120] But since all of these equations
+- [01:27:54,120 - 01:27:56,120] now are acting on these two
+- [01:27:56,120 - 01:27:58,120] component columns,
+- [01:27:58,120 - 01:28:00,120] in general, this thing has
+- [01:28:00,120 - 01:28:02,120] to be a matrix.
+- [01:28:02,120 - 01:28:04,120] It's got to be something which can act.
+- [01:28:04,120 - 01:28:06,120] It could be the unit matrix for all I know.
+- [01:28:06,120 - 01:28:08,120] But let's not prejudice it.
+- [01:28:08,120 - 01:28:10,120] Let's add something here proportional to the mass.
+- [01:28:10,120 - 01:28:12,120] And let's introduce
+- [01:28:12,120 - 01:28:14,120] another matrix
+- [01:28:14,120 - 01:28:16,120] and let's call it beta.
+- [01:28:16,120 - 01:28:18,120] Okay.
+- [01:28:18,120 - 01:28:20,120] Now here I have a feeling
+- [01:28:20,120 - 01:28:22,120] I probably would not have caught this.
+- [01:28:22,120 - 01:28:24,120] Dirac did.
+- [01:28:24,120 - 01:28:26,120] And moreover
+- [01:28:26,120 - 01:28:28,120] caught it in three dimensions
+- [01:28:28,120 - 01:28:30,120] which is a little bit harder
+- [01:28:30,120 - 01:28:32,120] but not much.
+- [01:28:32,120 - 01:28:34,120] Okay.
+- [01:28:34,120 - 01:28:36,120] So this is some operator.
+- [01:28:36,120 - 01:28:38,120] It's a genuine operator.
+- [01:28:38,120 - 01:28:40,120] P is the momentum operator.
+- [01:28:40,120 - 01:28:42,120] Alpha is the alpha operator.
+- [01:28:42,120 - 01:28:44,120] Beta is some operator
+- [01:28:44,120 - 01:28:46,120] which has only to do
+- [01:28:46,120 - 01:28:48,120] with the
+- [01:28:48,120 - 01:28:50,120] two componentness.
+- [01:28:50,120 - 01:28:52,120] Doesn't have to do with x.
+- [01:28:52,120 - 01:28:54,120] It doesn't have to do with p.
+- [01:28:54,120 - 01:28:56,120] It just acts on the two component spinners.
+- [01:28:56,120 - 01:28:58,120] We'll call them spinners for what they are.
+- [01:28:58,120 - 01:29:00,120] And here's what he said.
+- [01:29:00,120 - 01:29:02,120] He said, look, here's what I know.
+- [01:29:02,120 - 01:29:04,120] I know that in a relativistic theory
+- [01:29:04,120 - 01:29:06,120] the energy squared
+- [01:29:06,120 - 01:29:08,120] which is the Hamiltonian squared
+- [01:29:08,120 - 01:29:10,120] should equal p squared plus m squared.
+- [01:29:12,120 - 01:29:14,120] Let's insist on this.
+- [01:29:14,120 - 01:29:16,120] Let's insist on this.
+- [01:29:16,120 - 01:29:18,120] Let's insist that when I square this
+- [01:29:18,120 - 01:29:20,120] when I square h
+- [01:29:20,120 - 01:29:22,120] that I get p squared plus m squared.
+- [01:29:22,120 - 01:29:24,120] So let's see what that says.
+- [01:29:24,120 - 01:29:26,120] Alright, so that says
+- [01:29:26,120 - 01:29:28,120] h squared which is e squared
+- [01:29:28,120 - 01:29:30,120] should equal
+- [01:29:30,120 - 01:29:32,120] alpha p plus beta m
+- [01:29:32,120 - 01:29:34,120] times
+- [01:29:34,120 - 01:29:36,120] alpha p
+- [01:29:36,120 - 01:29:38,120] plus beta m.
+- [01:29:40,120 - 01:29:42,120] Okay, first of all
+- [01:29:42,120 - 01:29:44,120] I'm going to get a p squared term.
+- [01:29:44,120 - 01:29:46,120] It's going to be alpha squared
+- [01:29:46,120 - 01:29:48,120] or incidentally alpha commutes with p.
+- [01:29:48,120 - 01:29:50,120] It acts in a different tensor product space.
+- [01:29:50,120 - 01:29:52,120] We don't have to worry about
+- [01:29:52,120 - 01:29:54,120] commutation between alphas and p's.
+- [01:29:54,120 - 01:29:56,120] Okay, the first term is
+- [01:29:56,120 - 01:29:58,120] alpha squared p squared.
+- [01:30:02,120 - 01:30:04,120] That looks good.
+- [01:30:04,120 - 01:30:06,120] We want to get p squared.
+- [01:30:06,120 - 01:30:08,120] We got alpha squared p squared.
+- [01:30:08,120 - 01:30:10,120] It's easy to deal with.
+- [01:30:10,120 - 01:30:12,120] Let's just insist that alpha squared be one.
+- [01:30:12,120 - 01:30:14,120] But wait a minute.
+- [01:30:14,120 - 01:30:16,120] We already know what alpha is.
+- [01:30:16,120 - 01:30:18,120] It's square is one.
+- [01:30:18,120 - 01:30:20,120] So we're in good shape
+- [01:30:20,120 - 01:30:22,120] with a p squared term.
+- [01:30:22,120 - 01:30:24,120] That's good.
+- [01:30:24,120 - 01:30:26,120] If we use the fact that we know
+- [01:30:26,120 - 01:30:28,120] what alpha is
+- [01:30:28,120 - 01:30:30,120] then this is just p squared.
+- [01:30:30,120 - 01:30:32,120] How about the
+- [01:30:32,120 - 01:30:34,120] m squared term?
+- [01:30:34,120 - 01:30:36,120] There's another term which is beta squared m squared.
+- [01:30:40,120 - 01:30:42,120] Well I don't know what beta is yet.
+- [01:30:42,120 - 01:30:44,120] I haven't decided what beta is yet.
+- [01:30:44,120 - 01:30:46,120] But what do I know?
+- [01:30:46,120 - 01:30:48,120] I know that p squared should be one.
+- [01:30:48,120 - 01:30:50,120] So let's write down what we know.
+- [01:30:50,120 - 01:30:52,120] Alpha squared equals one.
+- [01:30:52,120 - 01:30:54,120] That's good.
+- [01:30:54,120 - 01:30:56,120] We have that already.
+- [01:30:56,120 - 01:30:58,120] Beta squared equals one.
+- [01:30:58,120 - 01:31:00,120] There's lots of matrices around
+- [01:31:00,120 - 01:31:02,120] whose square is equal to one.
+- [01:31:02,120 - 01:31:04,120] So not to worry.
+- [01:31:04,120 - 01:31:06,120] Any one of the Pauli matrices
+- [01:31:06,120 - 01:31:08,120] whose square is equal to one.
+- [01:31:08,120 - 01:31:10,120] One means the identity matrix.
+- [01:31:10,120 - 01:31:12,120] Yes. Any of the Pauli matrices
+- [01:31:12,120 - 01:31:14,120] whose square is equal to one.
+- [01:31:14,120 - 01:31:16,120] The identity matrix itself
+- [01:31:16,120 - 01:31:18,120] is taken care of that.
+- [01:31:18,120 - 01:31:20,120] But now this is p squared plus m squared.
+- [01:31:20,120 - 01:31:22,120] But then we have
+- [01:31:22,120 - 01:31:24,120] an extra term.
+- [01:31:24,120 - 01:31:26,120] And the extra term is alpha beta
+- [01:31:30,120 - 01:31:32,120] It's a product of p with m.
+- [01:31:32,120 - 01:31:34,120] And it's got
+- [01:31:34,120 - 01:31:36,120] one term which has alpha beta
+- [01:31:36,120 - 01:31:38,120] and another term which has beta alpha.
+- [01:31:38,120 - 01:31:40,120] So it has alpha beta
+- [01:31:40,120 - 01:31:42,120] plus beta alpha
+- [01:31:44,120 - 01:31:46,120] times pn.
+- [01:31:46,120 - 01:31:48,120] We don't want that term.
+- [01:31:48,120 - 01:31:50,120] That term is
+- [01:31:50,120 - 01:31:52,120] something we don't want.
+- [01:31:52,120 - 01:31:54,120] Hmm?
+- [01:31:54,120 - 01:31:56,120] So they should anti-commute.
+- [01:31:56,120 - 01:31:58,120] So we want that alpha beta
+- [01:31:58,120 - 01:32:00,120] plus beta alpha
+- [01:32:00,120 - 01:32:02,120] is equal to zero.
+- [01:32:02,120 - 01:32:04,120] And once we do that
+- [01:32:04,120 - 01:32:06,120] then we have our cake and eat it.
+- [01:32:06,120 - 01:32:08,120] We first of all have an equation
+- [01:32:08,120 - 01:32:10,120] of this very simple kind
+- [01:32:10,120 - 01:32:12,120] that Dirac liked so much.
+- [01:32:12,120 - 01:32:14,120] Namely, where is it?
+- [01:32:14,120 - 01:32:16,120] H on psi equals d psi i d c.
+- [01:32:16,120 - 01:32:18,120] For one thing.
+- [01:32:18,120 - 01:32:20,120] And we also have
+- [01:32:20,120 - 01:32:22,120] that e squared equals p squared plus m squared.
+- [01:32:22,120 - 01:32:24,120] All we have to do is find a matrix
+- [01:32:24,120 - 01:32:26,120] which anti-commutes.
+- [01:32:26,120 - 01:32:28,120] That means when you change the order
+- [01:32:28,120 - 01:32:30,120] the sign changes.
+- [01:32:30,120 - 01:32:32,120] Which anti-commutes with alpha.
+- [01:32:32,120 - 01:32:34,120] Now, I
+- [01:32:34,120 - 01:32:36,120] Pauli
+- [01:32:36,120 - 01:32:38,120] had already invented his matrices
+- [01:32:38,120 - 01:32:40,120] and Dirac
+- [01:32:40,120 - 01:32:42,120] had he done things this way
+- [01:32:42,120 - 01:32:44,120] would have instantly recognized
+- [01:32:44,120 - 01:32:46,120] that the matrix would be
+- [01:32:46,120 - 01:32:48,120] one of the Pauli matrices
+- [01:32:48,120 - 01:32:50,120] and he also would have known
+- [01:32:50,120 - 01:32:52,120] that any pair of the Pauli matrices
+- [01:32:52,120 - 01:32:54,120] anti-commute.
+- [01:32:54,120 - 01:32:56,120] So he could simply take for beta
+- [01:32:56,120 - 01:32:58,120] any other of the Pauli matrices
+- [01:32:58,120 - 01:33:00,120] In practice he took those equations
+- [01:33:00,120 - 01:33:02,120] that you wrote down
+- [01:33:02,120 - 01:33:04,120] and just said well
+- [01:33:04,120 - 01:33:06,120] he already knows the Pauli matrices
+- [01:33:06,120 - 01:33:08,120] do that.
+- [01:33:08,120 - 01:33:10,120] Yeah.
+- [01:33:10,120 - 01:33:12,120] He did have Pauli
+- [01:33:12,120 - 01:33:14,120] to back him up on this.
+- [01:33:14,120 - 01:33:16,120] He had done lots of work with these.
+- [01:33:16,120 - 01:33:18,120] He just used unknowns here.
+- [01:33:18,120 - 01:33:20,120] He just used unknowns.
+- [01:33:20,120 - 01:33:22,120] He did.
+- [01:33:22,120 - 01:33:24,120] But then he said let's find some matrices
+- [01:33:24,120 - 01:33:26,120] which do this.
+- [01:33:26,120 - 01:33:28,120] Alright, so in this case
+- [01:33:32,120 - 01:33:34,120] we have a choice about beta
+- [01:33:34,120 - 01:33:36,120] but let's
+- [01:33:36,120 - 01:33:38,120] resolve that ambiguity.
+- [01:33:38,120 - 01:33:40,120] It's not a real genuine
+- [01:33:40,120 - 01:33:42,120] ambiguity.
+- [01:33:42,120 - 01:33:44,120] It's a convention.
+- [01:33:44,120 - 01:33:46,120] So we have a second matrix beta.
+- [01:33:46,120 - 01:33:48,120] This is alpha and this is beta.
+- [01:33:48,120 - 01:33:50,120] Namely 0, 1, 1, 0.
+- [01:33:52,120 - 01:33:54,120] You can go home and check
+- [01:33:54,120 - 01:33:56,120] that alpha times beta
+- [01:33:56,120 - 01:33:58,120] is minus beta times alpha.
+- [01:33:58,120 - 01:34:00,120] I'm not going to do it on the blackboard.
+- [01:34:00,120 - 01:34:02,120] It's a straightforward thing.
+- [01:34:02,120 - 01:34:04,120] They do anti-commute and so Dirac
+- [01:34:04,120 - 01:34:06,120] now had his
+- [01:34:06,120 - 01:34:08,120] his
+- [01:34:08,120 - 01:34:10,120] equation and let's see what it says.
+- [01:34:14,120 - 01:34:16,120] Let's see what kind of equation he had.
+- [01:34:24,120 - 01:34:26,120] It's not Einstein's beta, right?
+- [01:34:26,120 - 01:34:28,120] What's that?
+- [01:34:28,120 - 01:34:30,120] It's not Einstein's beta, right?
+- [01:34:30,120 - 01:34:32,120] It's not what?
+- [01:34:32,120 - 01:34:34,120] The relativistic beta.
+- [01:34:34,120 - 01:34:36,120] No, no, it's a matrix. It's Pauli matrix.
+- [01:34:36,120 - 01:34:38,120] No, no, it's definitely not that.
+- [01:34:38,120 - 01:34:40,120] We just don't have enough letters.
+- [01:34:40,120 - 01:34:42,120] Yeah. I'm following Dirac's notation.
+- [01:34:42,120 - 01:34:44,120] So the two matrices of beta are called Dirac matrices.
+- [01:34:44,120 - 01:34:46,120] In this case, they're 2x2 matrices.
+- [01:34:46,120 - 01:34:48,120] We'll find out
+- [01:34:48,120 - 01:34:50,120] probably next week that you can't
+- [01:34:50,120 - 01:34:52,120] do it with 2x2 matrices in three dimensions
+- [01:34:52,120 - 01:34:54,120] but we'll do something else.
+- [01:34:54,120 - 01:34:56,120] Okay, so let's see what this says.
+- [01:34:56,120 - 01:34:58,120] This says,
+- [01:34:58,120 - 01:35:00,120] where was our equation?
+- [01:35:00,120 - 01:35:02,120] It says I d psi dt
+- [01:35:02,120 - 01:35:04,120] where psi is a two component
+- [01:35:04,120 - 01:35:06,120] spinner
+- [01:35:06,120 - 01:35:08,120] is equal to
+- [01:35:08,120 - 01:35:10,120] alpha p
+- [01:35:10,120 - 01:35:12,120] times psi
+- [01:35:12,120 - 01:35:14,120] plus beta m
+- [01:35:14,120 - 01:35:16,120] times psi
+- [01:35:16,120 - 01:35:18,120] where m is the mass.
+- [01:35:18,120 - 01:35:20,120] Okay, let's write it out.
+- [01:35:22,120 - 01:35:24,120] As a two component equation,
+- [01:35:24,120 - 01:35:26,120] this is I
+- [01:35:26,120 - 01:35:28,120] and in the first slot here
+- [01:35:28,120 - 01:35:30,120] we would write d psi by dt
+- [01:35:30,120 - 01:35:32,120] Well, let's write it
+- [01:35:32,120 - 01:35:34,120] I d by dt
+- [01:35:34,120 - 01:35:36,120] psi 1
+- [01:35:36,120 - 01:35:38,120] psi 2
+- [01:35:38,120 - 01:35:40,120] And this
+- [01:35:40,120 - 01:35:42,120] seems to be
+- [01:35:42,120 - 01:35:44,120] this stands for a column
+- [01:35:44,120 - 01:35:46,120] made out of I d psi 1 dt
+- [01:35:46,120 - 01:35:48,120] and I d psi 2 by dt
+- [01:35:48,120 - 01:35:50,120] Then we have alpha
+- [01:35:50,120 - 01:35:52,120] and alpha is
+- [01:35:52,120 - 01:35:54,120] 1 minus 1
+- [01:35:54,120 - 01:35:56,120] 0, 0
+- [01:35:56,120 - 01:35:58,120] times p
+- [01:35:58,120 - 01:36:00,120] but p is minus
+- [01:36:00,120 - 01:36:02,120] I d by dx
+- [01:36:02,120 - 01:36:04,120] So we have a minus I
+- [01:36:04,120 - 01:36:06,120] equals minus I
+- [01:36:08,120 - 01:36:10,120] d by dx
+- [01:36:10,120 - 01:36:12,120] of psi 1
+- [01:36:12,120 - 01:36:14,120] and psi 2
+- [01:36:14,120 - 01:36:16,120] Now so far
+- [01:36:16,120 - 01:36:18,120] we're just rewriting the two equations here
+- [01:36:18,120 - 01:36:20,120] We're just rewriting these two equations
+- [01:36:20,120 - 01:36:22,120] Separate equations for psi 1 and psi 2
+- [01:36:22,120 - 01:36:24,120] And the reason they're separate
+- [01:36:24,120 - 01:36:26,120] is because this matrix is diagonal
+- [01:36:26,120 - 01:36:28,120] It does not mix
+- [01:36:28,120 - 01:36:30,120] psi 1 with psi 2
+- [01:36:30,120 - 01:36:32,120] But then we have beta
+- [01:36:32,120 - 01:36:34,120] And so let's add
+- [01:36:34,120 - 01:36:36,120] plus beta
+- [01:36:36,120 - 01:36:38,120] and beta is
+- [01:36:38,120 - 01:36:40,120] 1, 1, 0, 0
+- [01:36:40,120 - 01:36:42,120] We have to multiply it by m
+- [01:36:42,120 - 01:36:44,120] So let's put the m right in here
+- [01:36:44,120 - 01:36:46,120] m right in here
+- [01:36:46,120 - 01:36:48,120] psi 1, psi 2
+- [01:36:48,120 - 01:36:50,120] If we write out this term
+- [01:36:50,120 - 01:36:52,120] we'll find that the upper
+- [01:36:52,120 - 01:36:54,120] because the psi 1 is off diagonal
+- [01:36:54,120 - 01:36:56,120] sorry
+- [01:36:56,120 - 01:36:58,120] because the beta is off diagonal
+- [01:36:58,120 - 01:37:00,120] What does this do?
+- [01:37:00,120 - 01:37:02,120] It switches psi 1 and psi 2
+- [01:37:02,120 - 01:37:04,120] So we have beta
+- [01:37:04,120 - 01:37:06,120] and beta
+- [01:37:06,120 - 01:37:08,120] and beta
+- [01:37:08,120 - 01:37:10,120] switches psi 1 and psi 2
+- [01:37:10,120 - 01:37:12,120] So this term
+- [01:37:12,120 - 01:37:14,120] this term here just becomes
+- [01:37:14,120 - 01:37:16,120] m
+- [01:37:18,120 - 01:37:20,120] psi 2, psi 1
+- [01:37:22,120 - 01:37:24,120] So let's come back to this equation
+- [01:37:24,120 - 01:37:26,120] over here
+- [01:37:26,120 - 01:37:28,120] What it does
+- [01:37:28,120 - 01:37:30,120] I'll never get the I in the right place
+- [01:37:30,120 - 01:37:32,120] So let's put the I in the right place
+- [01:37:32,120 - 01:37:34,120] I, I, I
+- [01:37:34,120 - 01:37:36,120] minus I
+- [01:37:36,120 - 01:37:38,120] equals
+- [01:37:38,120 - 01:37:40,120] m psi 2
+- [01:37:40,120 - 01:37:42,120] and the other one is m psi 1
+- [01:37:44,120 - 01:37:46,120] So you see, once you introduce
+- [01:37:46,120 - 01:37:48,120] the mass term
+- [01:37:48,120 - 01:37:50,120] the two components are not independent anymore
+- [01:37:50,120 - 01:37:52,120] they interact with each other
+- [01:37:52,120 - 01:37:54,120] The equation couples
+- [01:37:54,120 - 01:37:56,120] one to the other
+- [01:37:56,120 - 01:37:58,120] And what does
+- [01:37:58,120 - 01:38:00,120] that coupling do?
+- [01:38:00,120 - 01:38:02,120] It gives the particle a mass
+- [01:38:02,120 - 01:38:04,120] and if you work out how it moves
+- [01:38:04,120 - 01:38:06,120] it moves slower than the speed of light
+- [01:38:06,120 - 01:38:08,120] It moves as if it were a particle
+- [01:38:08,120 - 01:38:10,120] with e squared equals
+- [01:38:10,120 - 01:38:12,120] p squared plus m squared
+- [01:38:12,120 - 01:38:14,120] In other words, a relativistic particle of finite mass
+- [01:38:14,120 - 01:38:16,120] This is what Dirac
+- [01:38:16,120 - 01:38:18,120] did
+- [01:38:18,120 - 01:38:20,120] to get rid of the left-right
+- [01:38:20,120 - 01:38:22,120] nonsense
+- [01:38:22,120 - 01:38:24,120] and at the same time
+- [01:38:24,120 - 01:38:26,120] to get a mass
+- [01:38:26,120 - 01:38:28,120] Now I suspect he knew something else
+- [01:38:28,120 - 01:38:30,120] that the mass
+- [01:38:30,120 - 01:38:32,120] was connected with the left-rightness
+- [01:38:32,120 - 01:38:34,120] If you have
+- [01:38:34,120 - 01:38:36,120] a particle which is massless
+- [01:38:36,120 - 01:38:38,120] it's consistent
+- [01:38:38,120 - 01:38:40,120] it can only go along the right
+- [01:38:40,120 - 01:38:42,120] along
+- [01:38:42,120 - 01:38:44,120] in one dimension
+- [01:38:44,120 - 01:38:46,120] go in one direction
+- [01:38:46,120 - 01:38:48,120] The reason is because
+- [01:38:48,120 - 01:38:50,120] any Lawrence transformation
+- [01:38:50,120 - 01:38:52,120] of a particle moving to the right
+- [01:38:52,120 - 01:38:54,120] Is still a particle moving to the right
+- [01:38:54,120 - 01:38:56,120] If it is moving with the speed of light
+- [01:38:56,120 - 01:38:58,120] gehen
+- [01:39:03,200 - 01:39:05,960] So, particles which move with the speed of light
+- [01:39:06,520 - 01:39:08,120] Steven P with the speed of light
+- [01:39:08,120 - 01:39:13,100] right ones don't talk to each other through Lorentz transformations.
+- [01:39:13,100 - 01:39:16,120] If a particle has a mass, you can bring it to rest.
+- [01:39:16,120 - 01:39:22,060] Or you can, yeah, you can maybe not bring it to rest, but you can bring it to some finite
+- [01:39:22,060 - 01:39:27,080] momentum along the x, a finite velocity along the x-axis.
+- [01:39:27,080 - 01:39:30,580] So it's moving with half the speed of light this way.
+- [01:39:30,580 - 01:39:34,600] And then you get on your horse and run with three quarters of the speed of light.
+- [01:39:34,600 - 01:39:37,160] It is now moving in the opposite direction.
+- [01:39:37,160 - 01:39:42,300] So it's just not possible to have a massive particle which only moves to the right.
+- [01:39:42,300 - 01:39:51,260] So Dirac knew, again, I imagine he knew, that the left-rightness was coupled together with
+- [01:39:51,260 - 01:39:59,540] the mass issue, and that by fixing the left-right issue, he could potentially create a mass
+- [01:39:59,540 - 01:40:00,540] for the electron.
+- [01:40:00,540 - 01:40:01,540] Yeah?
+- [01:40:01,540 - 01:40:02,540] Is this in some sense a chiral oscillation?
+- [01:40:02,540 - 01:40:03,540] What's that?
+- [01:40:03,540 - 01:40:04,540] Is this in some sense related to chiral oscillation?
+- [01:40:04,540 - 01:40:05,540] Yeah.
+- [01:40:05,540 - 01:40:06,540] Yeah.
+- [01:40:06,540 - 01:40:07,040] Yeah.
+- [01:40:07,160 - 01:40:10,440] Is this a chiral oscillation?
+- [01:40:10,440 - 01:40:14,480] The left-rightness is called the chirality in this case.
+- [01:40:14,480 - 01:40:16,700] It means handedness.
+- [01:40:16,700 - 01:40:17,700] In this case.
+- [01:40:17,700 - 01:40:18,700] In this case, the…
+- [01:40:18,700 - 01:40:22,700] Two, swapping of two and one is what I'm thinking.
+- [01:40:22,700 - 01:40:23,700] Yeah.
+- [01:40:23,700 - 01:40:28,860] No, in this case, no, in this case, the handedness is just the alpha matrix over here.
+- [01:40:28,860 - 01:40:31,860] It's not a swap, but it's the mass term which is the swap.
+- [01:40:31,860 - 01:40:34,160] Yeah, I was just talking about the whole, the full equation.
+- [01:40:34,160 - 01:40:35,160] Is there, is there a chiral oscillation built in?
+- [01:40:35,160 - 01:40:36,160] Yeah.
+- [01:40:36,160 - 01:40:37,160] Yeah.
+- [01:40:37,160 - 01:40:38,160] Is there a chiral oscillation built into that?
+- [01:40:38,160 - 01:40:39,160] Yeah.
+- [01:40:39,160 - 01:40:42,040] The mass term is the chiral oscillation.
+- [01:40:42,040 - 01:40:43,040] Yeah.
+- [01:40:43,040 - 01:40:44,040] Yeah.
+- [01:40:44,040 - 01:40:45,040] Oh absolutely.
+- [01:40:45,040 - 01:40:46,040] Yeah, mm-hm.
+- [01:40:46,040 - 01:40:51,680] Why should a fermion equation come from the square root of a boson equation?
+- [01:40:51,680 - 01:40:54,000] No, no, no, no.
+- [01:40:54,000 - 01:40:56,240] This has nothing to do with fermions or bosons.
+- [01:40:56,240 - 01:41:00,720] E squared equals P squared plus M squared for any part, for any relativistic system.
+- [01:41:00,720 - 01:41:04,160] Yeah, as long as it's not massless.
+- [01:41:04,160 - 01:41:05,160] Yeah.
+- [01:41:05,160 - 01:41:06,160] Yeah.
+- [01:41:06,160 - 01:41:07,160] Yeah.
+- [01:41:07,160 - 01:41:08,160] Yeah.
+- [01:41:08,160 - 01:41:09,160] E squared is equal to P squared plus M squared.
+- [01:41:09,160 - 01:41:16,040] That has nothing particular to do with whether it's a, every particle satisfies that.
+- [01:41:16,040 - 01:41:19,200] Right.
+- [01:41:19,200 - 01:41:26,840] So it's true, you can sort of think of the Dirac equation as a kind of square root of
+- [01:41:26,840 - 01:41:30,160] the Klein-Gordon equation, but I don't think that's particularly helpful.
+- [01:41:30,160 - 01:41:31,380] All right.
+- [01:41:31,380 - 01:41:34,160] So the last thing we have to do is get straight.
+- [01:41:34,160 - 01:41:35,160] D minus M.
+- [01:41:35,160 - 01:41:36,160] D plus M.
+- [01:41:36,160 - 01:41:37,160] Yeah.
+- [01:41:37,160 - 01:41:40,040] Well, we'll first wave of the linear reaction into certain factorization which is sort of
+- [01:41:40,040 - 01:41:41,260] left movers, right movers.
+- [01:41:41,260 - 01:41:42,260] Uh-huh.
+- [01:41:42,260 - 01:41:43,260] No.
+- [01:41:43,260 - 01:41:46,800] Right, so we have two things to do with the Dirac equation.
+- [01:41:46,800 - 01:41:50,060] One is to understand how to get rid of the negative energies.
+- [01:41:50,060 - 01:41:52,320] This has not gotten rid of the negative energies.
+- [01:41:52,320 - 01:41:55,900] Now we have negative energy right movers and negative energy left movers.
+- [01:41:55,900 - 01:41:57,160] We made it worse.
+- [01:41:57,160 - 01:42:02,320] And the other is to get the three-dimensional space.
+- [01:42:02,320 - 01:42:03,320] But that's easy.
+- [01:42:03,320 - 01:42:04,320] Yeah.
+- [01:42:04,320 - 01:42:05,200] You just pointed back and you said that Dirac is the big one, not the right side side space.
+- [01:42:05,200 - 01:42:09,920] you said the Dirac equation, does this pair of equations constitute the Dirac equation?
+- [01:42:09,920 - 01:42:12,560] for the one-dimensional case, yeah
+- [01:42:12,560 - 01:42:15,600] yeah this is a really long version of the Dirac equation
+- [01:42:15,600 - 01:42:17,600] the usual equation
+- [01:42:17,600 - 01:42:20,480] no, the Dirac equation would be written this way
+- [01:42:20,480 - 01:42:44,100] i d psi by dt is equal to minus, sorry, is equal to, yeah, minus i alpha d psi by dx plus beta m psi
+- [01:42:44,100 - 01:42:50,020] that would be the Dirac equation written in one form
+- [01:42:50,480 - 01:42:57,840] you can also write it another way which is also these days more familiar
+- [01:42:57,840 - 01:43:04,480] you multiply both sides of the equation by beta
+- [01:43:04,480 - 01:43:17,760] and you write i, ah, let's come to it next time, it's enough for tonight, it's enough for tonight
+- [01:43:17,760 - 01:43:20,460] there's a more symmetric way to write it
+- [01:43:20,460 - 01:43:26,700] which is pretty and the standard way to write it but it doesn't add anything at this point
+- [01:43:26,700 - 01:43:30,940] good, okay, we're finished
+- [01:43:30,940 - 01:43:34,060] for more please visit us at stanford.edu
