@@ -1,0 +1,1235 @@
+# Transcript
+
+Source: supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory/110 - Lecture 6 ｜ Topics in String Theory [5p4PvLUHH88].mkv
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:06,400 - 00:00:23,200] What I had prepared for tonight was a lesson on how string theory gave a resolution to the
+- [00:00:23,200 - 00:00:31,140] question of the entropy, what is it that carries the entropy of a black hole.
+- [00:00:31,140 - 00:00:38,000] I don't know if we'll make it all through it because it's late already, but let's start it.
+- [00:00:38,000 - 00:00:45,920] To say that a system has an entropy, a large entropy in particular, is another way of saying
+- [00:00:45,920 - 00:00:51,900] that there's a large number of microscopic degrees of freedom which are too small and
+- [00:00:51,900 - 00:00:53,180] too numerous for you to keep track of.
+- [00:00:53,180 - 00:00:58,940] So when somebody says the bathtub full of hot water has an entropy of 10 to the 30th
+- [00:00:58,940 - 00:01:05,840] or whatever it happens to be, they're implicitly making a statement that there is microscopic
+- [00:01:05,840 - 00:01:12,840] structure there which you can't see, or maybe you can see it, but you choose not to see
+- [00:01:12,840 - 00:01:15,920] it.
+- [00:01:15,920 - 00:01:22,920] Too many particles, too numerous, and that they are carrying 10 to the 30th degree of
+- [00:01:23,180 - 00:01:29,000] bits of information which for practical purposes is hidden.
+- [00:01:29,000 - 00:01:38,500] So it then becomes a question that you can ask, all right, you do the thermodynamics,
+- [00:01:38,500 - 00:01:44,620] you study water, you heat it a little bit, you measure its energy, you measure its temperature,
+- [00:01:44,620 - 00:01:48,660] you use the laws of thermodynamics and you discover that it has a certain entropy and
+- [00:01:48,660 - 00:01:49,660] so forth.
+- [00:01:49,660 - 00:01:51,920] It then becomes a question, what is it?
+- [00:01:51,920 - 00:01:58,880] What are those microscopic degrees of freedom that are carrying the entropy?
+- [00:01:58,880 - 00:02:03,420] Given that it has an entropy, you know they're there.
+- [00:02:03,420 - 00:02:05,620] But that doesn't tell you what those degrees of freedom are.
+- [00:02:05,620 - 00:02:09,540] It doesn't tell you what those objects are.
+- [00:02:09,540 - 00:02:12,520] And the same is true of a black hole.
+- [00:02:12,520 - 00:02:19,360] The same is true of general relativity in particular, but in particular a black hole,
+- [00:02:19,360 - 00:02:20,360] when
+- [00:02:20,360 - 00:02:21,360] Bekenstein put forward a theory of the black hole, and it was a very interesting theory,
+- [00:02:21,360 - 00:02:28,220] put forward the idea that black holes have entropy, the natural question was what are
+- [00:02:28,220 - 00:02:34,420] these tiny microscopic things, which apparently in some way are on the surface of the black
+- [00:02:34,420 - 00:02:38,500] hole, because he said the entropy was proportional to the area.
+- [00:02:38,500 - 00:02:44,280] But there was nothing in the general theory of relativity which gave any clue as to what
+- [00:02:44,280 - 00:02:48,340] they might be.
+- [00:02:48,340 - 00:02:51,160] The reason is not so different.
+- [00:02:51,360 - 00:02:54,440] than the statement that if you study fluid dynamics,
+- [00:02:55,040 - 00:02:59,700] fluid dynamics makes no real reference to the microscopic nature of fluids.
+- [00:03:01,080 - 00:03:02,220] What does it do?
+- [00:03:02,340 - 00:03:08,120] It's a sort of coarse-grained description of the macroscopic flow of fluids.
+- [00:03:08,840 - 00:03:11,400] There's a velocity at every point in the fluid.
+- [00:03:11,760 - 00:03:13,380] There's a density of the fluid.
+- [00:03:14,520 - 00:03:16,700] A few things like that.
+- [00:03:16,700 - 00:03:19,320] And it makes no reference to the microscopic theory.
+- [00:03:19,320 - 00:03:23,300] But when you change the temperature of the fluid,
+- [00:03:23,440 - 00:03:24,900] you change the energy of the fluid,
+- [00:03:25,020 - 00:03:26,240] you discover there's an entropy,
+- [00:03:26,820 - 00:03:28,900] and it tells you there's a microscopic structure there.
+- [00:03:29,520 - 00:03:31,880] Just like fluid dynamics doesn't tell you what that,
+- [00:03:32,160 - 00:03:34,580] or fluid dynamics together with some thermodynamics,
+- [00:03:35,220 - 00:03:39,300] does not tell you what that fundamental microscopic structure is.
+- [00:03:39,520 - 00:03:40,760] It tells you it's there.
+- [00:03:43,780 - 00:03:47,300] And, you know, invites you to
+- [00:03:47,300 - 00:03:49,300] start a new study.
+- [00:03:49,520 - 00:03:52,820] And you start to consider the question of what is there
+- [00:03:52,820 - 00:03:57,320] beyond the simple fluid dynamics questions you could ask.
+- [00:03:57,320 - 00:03:59,320] In the same way,
+- [00:03:59,320 - 00:04:02,820] the entropy of black holes invited us to start asking,
+- [00:04:02,820 - 00:04:05,820] is there a microscopic structure
+- [00:04:05,820 - 00:04:08,820] to black holes, or to gravitational fields,
+- [00:04:08,820 - 00:04:11,320] or to space-time, or whatever,
+- [00:04:11,320 - 00:04:14,320] that is explaining this entropy?
+- [00:04:15,320 - 00:04:18,320] Now, string theory did provide
+- [00:04:18,320 - 00:04:19,320] an explanation of this.
+- [00:04:19,320 - 00:04:22,320] It provided an explanation of the entropy of black holes.
+- [00:04:22,320 - 00:04:24,320] It may not be the only explanation.
+- [00:04:24,320 - 00:04:27,320] String theory might not be the right theory of black holes,
+- [00:04:27,320 - 00:04:29,320] might not be the right theory of nature,
+- [00:04:29,320 - 00:04:30,320] we don't know.
+- [00:04:31,320 - 00:04:34,320] But within the context of string theory,
+- [00:04:34,320 - 00:04:37,320] it provided a picture and an explanation
+- [00:04:37,320 - 00:04:40,320] of what the microscopic objects are
+- [00:04:41,320 - 00:04:44,320] that carry the entropy of the black hole.
+- [00:04:45,320 - 00:04:48,320] So I thought I would take you through the very, very simplest
+- [00:04:48,320 - 00:04:53,320] way of, and it's not so simple,
+- [00:04:53,320 - 00:04:57,320] but the simplest example of counting the entropy
+- [00:04:57,320 - 00:05:00,320] of a black hole using string theory.
+- [00:05:00,320 - 00:05:04,320] Fortunately, you don't have to know too much about string theory,
+- [00:05:04,320 - 00:05:06,320] very little, in fact.
+- [00:05:06,320 - 00:05:10,320] The argument is basically qualitative.
+- [00:05:10,320 - 00:05:13,320] Unfortunately, it's a little bit too crude
+- [00:05:13,320 - 00:05:15,320] to see any absolute exactness,
+- [00:05:15,320 - 00:05:17,320] but it's good enough to get the,
+- [00:05:17,320 - 00:05:20,320] to get the order of magnitude answer right.
+- [00:05:20,320 - 00:05:22,320] So we'll go through that.
+- [00:05:24,320 - 00:05:26,320] The first thing you need to know
+- [00:05:28,320 - 00:05:32,320] is some facts about
+- [00:05:32,320 - 00:05:36,320] the constants of string theory and gravity.
+- [00:05:38,320 - 00:05:40,320] First thing is, both in gravitation
+- [00:05:40,320 - 00:05:42,320] and in string theory,
+- [00:05:42,320 - 00:05:44,320] there's a unit of length.
+- [00:05:45,320 - 00:05:47,320] The unit of length that's important
+- [00:05:47,320 - 00:05:49,320] for the structure of strings
+- [00:05:49,320 - 00:05:51,320] is different than the unit of length
+- [00:05:51,320 - 00:05:54,320] that's important for the structure of gravity.
+- [00:05:55,320 - 00:05:58,320] The gravitational length scale
+- [00:05:58,320 - 00:06:00,320] is called the Planck length.
+- [00:06:01,320 - 00:06:03,320] Let's call it L sub p.
+- [00:06:06,320 - 00:06:08,320] It's some combination,
+- [00:06:08,320 - 00:06:10,320] somebody remember it, that,
+- [00:06:10,320 - 00:06:13,320] that contains G, H bar, and C,
+- [00:06:13,320 - 00:06:15,320] I can't remember what it is,
+- [00:06:15,320 - 00:06:18,320] square root of G, H bar over C cubed,
+- [00:06:18,320 - 00:06:20,320] does that ring a bell?
+- [00:06:29,320 - 00:06:30,320] That sounds right.
+- [00:06:30,320 - 00:06:31,320] That's the Planck length,
+- [00:06:31,320 - 00:06:33,320] 10 to the minus 33 centimeters,
+- [00:06:33,320 - 00:06:34,320] very, very small.
+- [00:06:34,320 - 00:06:36,320] We're going to work with units
+- [00:06:36,320 - 00:06:39,320] in which H bar equals C equals 1.
+- [00:06:39,320 - 00:06:43,320] So in those units, G,
+- [00:06:43,320 - 00:06:46,320] or the square root of G,
+- [00:06:46,320 - 00:06:48,320] is just the Planck length.
+- [00:06:48,320 - 00:06:49,320] That's all it is.
+- [00:06:49,320 - 00:06:54,320] Newton's constant in units like this,
+- [00:06:57,320 - 00:06:59,320] the square root of it is the Planck length.
+- [00:06:59,320 - 00:07:01,320] Or to write it another way,
+- [00:07:01,320 - 00:07:03,320] the Planck length squared
+- [00:07:03,320 - 00:07:05,320] is Newton's constant.
+- [00:07:09,320 - 00:07:11,320] Now Newton's constant has another meaning,
+- [00:07:11,320 - 00:07:12,320] of course.
+- [00:07:12,320 - 00:07:14,320] Newton's constant is the constant of gravitation,
+- [00:07:14,320 - 00:07:16,320] tells you the force law between,
+- [00:07:16,320 - 00:07:17,320] between massive objects.
+- [00:07:17,320 - 00:07:19,320] We'll come back to this in a minute.
+- [00:07:19,320 - 00:07:20,320] Main point now is that
+- [00:07:20,320 - 00:07:23,320] Newton's constant has units of area.
+- [00:07:23,320 - 00:07:26,320] That's why we say that the,
+- [00:07:26,320 - 00:07:28,320] that the entropy of a black hole
+- [00:07:28,320 - 00:07:32,320] is its area measured in Planck units.
+- [00:07:32,320 - 00:07:36,320] It's its area measured in units of G.
+- [00:07:36,320 - 00:07:39,320] Okay, that's one statement.
+- [00:07:39,320 - 00:07:41,320] Now what about string theory?
+- [00:07:41,320 - 00:07:45,320] String theory also has a unit of length.
+- [00:07:45,320 - 00:07:47,320] It's not the Planck length,
+- [00:07:47,320 - 00:07:49,320] and I'll tell you what it is.
+- [00:07:51,320 - 00:07:55,320] If you were to take a typical string
+- [00:07:55,320 - 00:07:57,320] in string theory,
+- [00:07:57,320 - 00:07:59,320] heat it up,
+- [00:07:59,320 - 00:08:02,320] you would find out that it wiggles all over the place.
+- [00:08:05,320 - 00:08:07,320] But you would find out that if you looked at it
+- [00:08:07,320 - 00:08:09,320] through a microscope,
+- [00:08:09,320 - 00:08:13,320] that the size of the wiggles
+- [00:08:13,320 - 00:08:19,320] would be of a particular characteristic size scale.
+- [00:08:19,320 - 00:08:21,320] You would find out that,
+- [00:08:21,320 - 00:08:25,320] that the wiggles were never on a smaller,
+- [00:08:25,320 - 00:08:28,320] smaller scale than a certain scale,
+- [00:08:28,320 - 00:08:31,320] and that scale is called the string length scale.
+- [00:08:31,320 - 00:08:36,320] It's not terribly important exactly how it's defined.
+- [00:08:36,320 - 00:08:37,320] It is,
+- [00:08:37,320 - 00:08:38,320] roughly speaking,
+- [00:08:38,320 - 00:08:42,320] it's the size of an oscillating string
+- [00:08:42,320 - 00:08:45,320] if it has one unit of oscillation.
+- [00:08:45,320 - 00:08:48,320] So it's a certain length scale that goes into string theory.
+- [00:08:48,320 - 00:08:52,320] It has to do with the wiggliness of strings
+- [00:08:52,320 - 00:08:56,320] and the length scale along which it wiggles.
+- [00:08:56,320 - 00:09:00,320] But whatever it is, it's called L-string.
+- [00:09:02,320 - 00:09:06,320] Alright, so there's something called L-string.
+- [00:09:08,320 - 00:09:11,320] Also something called L-string squared,
+- [00:09:11,320 - 00:09:13,320] but for the moment there's L-string.
+- [00:09:13,320 - 00:09:17,320] And finally, there's another constant in string theory,
+- [00:09:17,320 - 00:09:20,320] and it's the string coupling constant.
+- [00:09:20,320 - 00:09:22,320] Anybody remember what the string coupling constant is?
+- [00:09:22,320 - 00:09:24,320] What it, what it, what it, first of all,
+- [00:09:24,320 - 00:09:26,320] what its meaning is?
+- [00:09:26,320 - 00:09:27,320] Entry.
+- [00:09:27,320 - 00:09:28,320] Legend.
+- [00:09:28,320 - 00:09:29,320] Probability.
+- [00:09:29,320 - 00:09:36,320] The probability that if a string crosses itself, it breaks.
+- [00:09:36,320 - 00:09:37,320] Alright?
+- [00:09:37,320 - 00:09:43,320] So it's the probability that if you have a string,
+- [00:09:43,320 - 00:09:46,320] and
+- [00:09:46,320 - 00:09:48,320] it pinches off like this,
+- [00:09:48,320 - 00:09:51,320] it's the probability that it breaks.
+- [00:09:51,320 - 00:09:57,320] And it's called G.
+- [00:09:57,320 - 00:10:00,320] It's the amplitude for the string to break.
+- [00:10:00,320 - 00:10:03,320] It plays the same role in string theory
+- [00:10:03,320 - 00:10:06,320] as the electric charge does in electrodynamics.
+- [00:10:06,320 - 00:10:10,320] In electrodynamics, the electric charge is the amplitude
+- [00:10:10,320 - 00:10:15,320] for a charged particle to emit a photon.
+- [00:10:15,320 - 00:10:18,320] The string coupling constant is the amplitude
+- [00:10:18,320 - 00:10:23,320] for an oscillating string to emit a small string.
+- [00:10:23,320 - 00:10:27,320] The small string is, of course, a graviton.
+- [00:10:27,320 - 00:10:33,320] So, it's the amplitude for a oscillating string,
+- [00:10:33,320 - 00:10:35,320] whatever it's doing, to emit a graviton.
+- [00:10:36,320 - 00:10:41,320] Finally, let's talk about gravitational forces.
+- [00:10:41,320 - 00:10:44,320] How do we think, first, electromagnetic forces?
+- [00:10:44,320 - 00:10:46,320] How do we think about electromagnetic forces?
+- [00:10:46,320 - 00:10:51,320] We draw a Feynman diagram, and a photon is exchanged.
+- [00:10:51,320 - 00:10:56,320] Now, this should be taken with a little bit of a grain of salt.
+- [00:10:56,320 - 00:10:59,320] It's not exactly, really, a photon being shot
+- [00:10:59,320 - 00:11:02,320] from one charged particle to another.
+- [00:11:02,320 - 00:11:05,320] But the diagram has some real value.
+- [00:11:05,320 - 00:11:08,320] It has some real meaning.
+- [00:11:08,320 - 00:11:11,320] There is an emission of a photon over here.
+- [00:11:11,320 - 00:11:15,320] The amplitude for that is E, the electric charge.
+- [00:11:15,320 - 00:11:19,320] And there's an absorption of a photon over here,
+- [00:11:19,320 - 00:11:22,320] another factor of electric charge.
+- [00:11:22,320 - 00:11:25,320] Two factors of electric charge.
+- [00:11:25,320 - 00:11:30,320] The meaning of that, in common language,
+- [00:11:30,320 - 00:11:34,320] is that the force between two charged particles
+- [00:11:35,320 - 00:11:38,320] caused by the photon is proportional
+- [00:11:38,320 - 00:11:42,320] to the product of the two charges.
+- [00:11:42,320 - 00:11:46,320] One for emission, one for absorption.
+- [00:11:46,320 - 00:11:50,320] Well, what about gravity?
+- [00:11:50,320 - 00:11:53,320] If gravity is controlled by string theory,
+- [00:11:53,320 - 00:11:58,320] then the analogous thing would be two objects,
+- [00:11:58,320 - 00:12:00,320] both of which are made out of string.
+- [00:12:00,320 - 00:12:03,320] Everything is made out of string in string theory.
+- [00:12:05,320 - 00:12:08,320] One emits a graviton.
+- [00:12:08,320 - 00:12:09,320] Here it goes. Here it is.
+- [00:12:09,320 - 00:12:10,320] It's wiggling around.
+- [00:12:10,320 - 00:12:14,320] It emits a graviton.
+- [00:12:14,320 - 00:12:17,320] The amplitude for that is G.
+- [00:12:17,320 - 00:12:20,320] The graviton goes over to this side here
+- [00:12:20,320 - 00:12:24,320] and reconnects with that.
+- [00:12:24,320 - 00:12:27,320] In string theory, that is the source
+- [00:12:27,320 - 00:12:30,320] of the gravitational interaction between two objects.
+- [00:12:30,320 - 00:12:33,320] It's analogous to the Feynman diagram of,
+- [00:12:33,320 - 00:12:34,320] uh, of electrodynamics.
+- [00:12:34,320 - 00:12:39,320] And the main point is that the force
+- [00:12:39,320 - 00:12:42,320] between two massive objects
+- [00:12:42,320 - 00:12:45,320] is proportional to the square
+- [00:12:45,320 - 00:12:47,320] of the string coupling constant.
+- [00:12:47,320 - 00:12:53,320] One for absorption, one for emission.
+- [00:12:53,320 - 00:12:55,320] It also contains, incidentally,
+- [00:12:55,320 - 00:12:58,320] the product of the masses of the object
+- [00:12:58,320 - 00:13:01,320] and the distance between them squared,
+- [00:13:01,320 - 00:13:03,320] but that's not so important.
+- [00:13:03,320 - 00:13:06,320] The important thing is that this G squared
+- [00:13:06,320 - 00:13:09,320] appears in the force law.
+- [00:13:09,320 - 00:13:11,320] Well, there's another object
+- [00:13:11,320 - 00:13:14,320] that sometimes appears in the force law.
+- [00:13:14,320 - 00:13:16,320] It's not little G squared. What is it?
+- [00:13:16,320 - 00:13:19,320] It's big G.
+- [00:13:19,320 - 00:13:22,320] The usual Newtonian force,
+- [00:13:22,320 - 00:13:24,320] you put big G, not big G squared,
+- [00:13:24,320 - 00:13:26,320] but little G.
+- [00:13:26,320 - 00:13:30,320] So, it sounds very much
+- [00:13:30,320 - 00:13:32,320] like little G squared
+- [00:13:32,320 - 00:13:35,320] must be big G.
+- [00:13:35,320 - 00:13:37,320] But that's not quite true
+- [00:13:37,320 - 00:13:40,320] because they have different dimensions.
+- [00:13:40,320 - 00:13:45,320] Big G has units of length squared.
+- [00:13:45,320 - 00:13:49,320] Little G,
+- [00:13:49,320 - 00:13:51,320] that's just a probability.
+- [00:13:51,320 - 00:13:55,320] It's the probability that two strings will separate.
+- [00:13:55,320 - 00:13:57,320] Probabilities are dimensionless.
+- [00:13:57,320 - 00:14:00,320] They have no dimensions at all.
+- [00:14:00,320 - 00:14:02,320] So, it must be that
+- [00:14:02,320 - 00:14:05,320] little G squared
+- [00:14:05,320 - 00:14:08,320] must be connected to big G
+- [00:14:08,320 - 00:14:11,320] by something that carries dimensions.
+- [00:14:11,320 - 00:14:13,320] What's the units of big G again?
+- [00:14:13,320 - 00:14:15,320] Length squared.
+- [00:14:15,320 - 00:14:17,320] What's the probability of little G?
+- [00:14:17,320 - 00:14:23,320] What goes here is the string length squared.
+- [00:14:23,320 - 00:14:26,320] Now it's dimensionally consistent.
+- [00:14:26,320 - 00:14:29,320] Now it's dimensionally consistent.
+- [00:14:29,320 - 00:14:32,320] Area on one side is the length squared.
+- [00:14:32,320 - 00:14:34,320] Area on the other.
+- [00:14:34,320 - 00:14:35,320] But it's also true
+- [00:14:35,320 - 00:14:39,320] that the Planck length squared
+- [00:14:39,320 - 00:14:43,320] is L Planck squared.
+- [00:14:43,320 - 00:14:45,320] So, we've just derived
+- [00:14:45,320 - 00:14:47,320] the relationship
+- [00:14:47,320 - 00:14:49,320] between the Planck length,
+- [00:14:49,320 - 00:14:51,320] the string length,
+- [00:14:51,320 - 00:14:53,320] and the coupling constant.
+- [00:14:53,320 - 00:14:55,320] Removing the square root,
+- [00:14:55,320 - 00:14:57,320] it's the coupling constant
+- [00:14:57,320 - 00:14:59,320] times the string length
+- [00:14:59,320 - 00:15:01,320] is equal to the Planck length.
+- [00:15:02,320 - 00:15:04,320] Now typically,
+- [00:15:04,320 - 00:15:07,320] we imagine that G is a small number.
+- [00:15:07,320 - 00:15:09,320] That the probability for strings breaking up
+- [00:15:09,320 - 00:15:11,320] is a small number.
+- [00:15:11,320 - 00:15:13,320] If it's a big number,
+- [00:15:13,320 - 00:15:14,320] we don't even know how to get started
+- [00:15:14,320 - 00:15:16,320] in doing string theory.
+- [00:15:16,320 - 00:15:18,320] We typically think of it as a small number.
+- [00:15:18,320 - 00:15:20,320] And so the Planck length
+- [00:15:20,320 - 00:15:22,320] is typically a small fraction
+- [00:15:22,320 - 00:15:23,320] of the string length.
+- [00:15:23,320 - 00:15:26,320] But that's, we just keep that in mind.
+- [00:15:26,320 - 00:15:30,320] This is one of our basic equations.
+- [00:15:30,320 - 00:15:35,320] L Planck squared is the Newton constant.
+- [00:15:35,320 - 00:15:41,320] And L Planck is equal to the string coupling constant
+- [00:15:41,320 - 00:15:43,320] times the string length scale.
+- [00:15:43,320 - 00:15:46,320] These are two important equations.
+- [00:15:46,320 - 00:15:48,320] Write them down.
+- [00:15:48,320 - 00:15:50,320] If we don't get through this derivate,
+- [00:15:50,320 - 00:15:52,320] we may get through it tonight.
+- [00:15:52,320 - 00:15:53,320] We may.
+- [00:15:53,320 - 00:15:55,320] Alright, that's one set of facts.
+- [00:15:55,320 - 00:15:57,320] One fact.
+- [00:15:57,320 - 00:15:59,320] No, actually there's two facts there.
+- [00:15:59,320 - 00:16:00,320] Excuse me.
+- [00:16:00,320 - 00:16:02,320] Did you say that G,
+- [00:16:02,320 - 00:16:06,320] I'm trying to figure if G is greater or less than one or...
+- [00:16:06,320 - 00:16:09,320] Well, G is usually less than one.
+- [00:16:09,320 - 00:16:10,320] Yeah.
+- [00:16:10,320 - 00:16:12,320] So that means that the string scale
+- [00:16:12,320 - 00:16:15,320] is typically bigger than the Planck scale.
+- [00:16:15,320 - 00:16:17,320] In general, the Planck scale is
+- [00:16:17,320 - 00:16:19,320] the smallest scale
+- [00:16:19,320 - 00:16:22,320] if you wind up thinking about.
+- [00:16:22,320 - 00:16:26,320] String scale can be bigger.
+- [00:16:26,320 - 00:16:28,320] Okay.
+- [00:16:28,320 - 00:16:30,320] Next.
+- [00:16:30,320 - 00:16:32,320] Entropy.
+- [00:16:32,320 - 00:16:39,320] Let's start with entropy of black holes.
+- [00:16:39,320 - 00:16:41,320] What's the symbol for entropy?
+- [00:16:41,320 - 00:16:42,320] S.
+- [00:16:42,320 - 00:16:43,320] S.
+- [00:16:43,320 - 00:16:51,320] So I won't write entropy, I'll write S.
+- [00:16:51,320 - 00:16:53,320] What's BH stand for?
+- [00:16:53,320 - 00:16:55,320] Black hole?
+- [00:16:55,320 - 00:16:57,320] You sure it isn't Bekenstein Hawking?
+- [00:16:58,320 - 00:17:02,320] Okay.
+- [00:17:02,320 - 00:17:05,320] S black hole is equal to...
+- [00:17:05,320 - 00:17:10,320] Now, we're not going to worry very much about the numerical constants.
+- [00:17:10,320 - 00:17:12,320] First of all,
+- [00:17:12,320 - 00:17:15,320] it's equal to the area of the horizon
+- [00:17:15,320 - 00:17:16,320] divided by G.
+- [00:17:16,320 - 00:17:17,320] Does that make sense?
+- [00:17:17,320 - 00:17:19,320] Is this dimensionally consistent?
+- [00:17:19,320 - 00:17:20,320] Sure.
+- [00:17:20,320 - 00:17:22,320] Area has units of area,
+- [00:17:22,320 - 00:17:24,320] and G has units of area.
+- [00:17:24,320 - 00:17:25,320] There's a four in there,
+- [00:17:25,320 - 00:17:26,320] but we're not going to worry about the four.
+- [00:17:26,320 - 00:17:27,320] That's...
+- [00:17:27,320 - 00:17:28,320] All right.
+- [00:17:28,320 - 00:17:30,320] Another way we could write it
+- [00:17:30,320 - 00:17:32,320] is to remember that the area
+- [00:17:32,320 - 00:17:36,320] is proportional to the square of the Schwarzschild radius
+- [00:17:36,320 - 00:17:38,320] divided by G.
+- [00:17:38,320 - 00:17:41,320] And the Schwarzschild radius
+- [00:17:41,320 - 00:17:43,320] is 2MG.
+- [00:17:43,320 - 00:17:45,320] So,
+- [00:17:45,320 - 00:17:49,320] this becomes proportional to M squared G squared.
+- [00:17:49,320 - 00:17:52,320] MG is the radius.
+- [00:17:52,320 - 00:17:55,320] M squared G squared is the area.
+- [00:17:55,320 - 00:17:59,320] And now we can factor out a G.
+- [00:17:59,320 - 00:18:02,320] So, the entropy of a black hole
+- [00:18:02,320 - 00:18:05,320] is the mass squared
+- [00:18:05,320 - 00:18:07,320] times Newton's constant.
+- [00:18:07,320 - 00:18:09,320] But,
+- [00:18:09,320 - 00:18:11,320] it's also
+- [00:18:11,320 - 00:18:14,320] the mass squared
+- [00:18:14,320 - 00:18:17,320] times the Planck length squared.
+- [00:18:17,320 - 00:18:20,320] All of these are the same thing.
+- [00:18:20,320 - 00:18:23,320] Mass squared times Planck length squared.
+- [00:18:23,320 - 00:18:25,320] That comes from here.
+- [00:18:25,320 - 00:18:28,320] So, that's the black hole entropy.
+- [00:18:28,320 - 00:18:31,320] Now, let's think about a string.
+- [00:18:31,320 - 00:18:34,320] Imagine that we have a string.
+- [00:18:34,320 - 00:18:35,320] A little string.
+- [00:18:35,320 - 00:18:36,320] A little one.
+- [00:18:36,320 - 00:18:37,320] A graviton.
+- [00:18:37,320 - 00:18:38,320] But now,
+- [00:18:38,320 - 00:18:40,320] we hit it hard.
+- [00:18:40,320 - 00:18:41,320] We hit it hard,
+- [00:18:41,320 - 00:18:43,320] and we give it a lot of energy.
+- [00:18:43,320 - 00:18:45,320] We heat it up.
+- [00:18:45,320 - 00:18:46,320] How do we heat it up?
+- [00:18:46,320 - 00:18:49,320] By bombarding it with a lot of particles,
+- [00:18:49,320 - 00:18:51,320] or just putting it in a fire.
+- [00:18:51,320 - 00:18:52,320] And then,
+- [00:18:52,320 - 00:18:53,320] we heat it up.
+- [00:18:53,320 - 00:18:54,320] And then,
+- [00:18:54,320 - 00:18:55,320] we heat it up.
+- [00:18:55,320 - 00:18:56,320] Or just putting it in a frying pan,
+- [00:18:56,320 - 00:18:57,320] or boiling it,
+- [00:18:57,320 - 00:18:58,320] whatever we do with it.
+- [00:18:58,320 - 00:19:00,320] We pump a lot of energy into it.
+- [00:19:00,320 - 00:19:03,320] What happens when we pump a lot of energy into it?
+- [00:19:03,320 - 00:19:04,320] It starts to vibrate.
+- [00:19:04,320 - 00:19:06,320] It starts to oscillate.
+- [00:19:06,320 - 00:19:08,320] And, typically,
+- [00:19:08,320 - 00:19:12,320] unless we do it in an especially careful way,
+- [00:19:12,320 - 00:19:16,320] it'll form a big tangle of string.
+- [00:19:16,320 - 00:19:19,320] There it is.
+- [00:19:19,320 - 00:19:22,320] All over the place.
+- [00:19:22,320 - 00:19:23,320] If we heat it up,
+- [00:19:23,320 - 00:19:26,320] that's about what we'll get.
+- [00:19:29,320 - 00:19:31,320] It's like a big ball of...
+- [00:19:31,320 - 00:19:33,320] A big ball...
+- [00:19:33,320 - 00:19:34,320] You know,
+- [00:19:34,320 - 00:19:35,320] if you go fishing,
+- [00:19:35,320 - 00:19:41,320] you'll remember what your reel looks like after a big tangle mess.
+- [00:19:41,320 - 00:19:44,320] Big tangle messes have entropy.
+- [00:19:44,320 - 00:19:49,320] They have entropy just because there are many, many tangles
+- [00:19:49,320 - 00:19:52,320] which are hard to tell apart.
+- [00:19:53,320 - 00:19:55,320] What's the entropy?
+- [00:19:55,320 - 00:19:59,320] The entropy of a thing
+- [00:19:59,320 - 00:20:04,320] is the number of configurations which are hard to tell apart.
+- [00:20:04,320 - 00:20:09,320] Which are too hard to tell apart because the pieces are too small and numerous.
+- [00:20:09,320 - 00:20:11,320] So a string,
+- [00:20:11,320 - 00:20:16,320] a vibrating string like this also has entropy.
+- [00:20:16,320 - 00:20:18,320] Let's try to guess.
+- [00:20:18,320 - 00:20:22,320] Let's try to guess what the entropy of a vibrating string is.
+- [00:20:22,320 - 00:20:25,320] To do that, I'm going to make a model.
+- [00:20:25,320 - 00:20:28,320] A very, very simple model of a string.
+- [00:20:28,320 - 00:20:31,320] It's an oversimplification.
+- [00:20:31,320 - 00:20:33,320] It gives the right answer.
+- [00:20:33,320 - 00:20:37,320] It's certainly an oversimplification.
+- [00:20:37,320 - 00:20:40,320] But qualitatively, it's the right picture.
+- [00:20:40,320 - 00:20:41,320] And here's the idea.
+- [00:20:41,320 - 00:20:45,320] Instead of thinking of string theory in ordinary space,
+- [00:20:45,320 - 00:20:50,320] let's imagine that space is replaced by a lattice.
+- [00:20:50,320 - 00:20:56,320] A cubic lattice that looks like that.
+- [00:20:56,320 - 00:21:01,320] And then what is a string?
+- [00:21:01,320 - 00:21:08,320] A string is a collection of links,
+- [00:21:08,320 - 00:21:11,320] the lines of the lattice, just in terminology.
+- [00:21:11,320 - 00:21:14,320] The lines of the lattice are called links.
+- [00:21:14,320 - 00:21:16,320] The nodes are called sites.
+- [00:21:16,320 - 00:21:19,320] S-I-T-E. Sites. Links.
+- [00:21:20,320 - 00:21:22,320] The squares,
+- [00:21:22,320 - 00:21:26,320] you know what the fancy name for the squares of a lattice are?
+- [00:21:26,320 - 00:21:30,320] The plaquettes.
+- [00:21:30,320 - 00:21:31,320] The plaquettes.
+- [00:21:31,320 - 00:21:35,320] But we're not going to have anything to do with plaquettes.
+- [00:21:35,320 - 00:21:37,320] So there's the links of the lattice,
+- [00:21:37,320 - 00:21:42,320] and a string would be a connected set of links.
+- [00:21:42,320 - 00:21:46,320] In other words, a line or a curve through space
+- [00:21:46,320 - 00:21:49,320] is replaced by a sequence of links.
+- [00:21:50,320 - 00:21:52,320] The links can go back over themselves.
+- [00:21:52,320 - 00:21:55,320] No rule that says the link can't go back over itself,
+- [00:21:55,320 - 00:21:57,320] but we follow it.
+- [00:21:57,320 - 00:22:02,320] And let's say we follow it from beginning to end.
+- [00:22:02,320 - 00:22:06,320] Imagine now a big jumbled string.
+- [00:22:06,320 - 00:22:09,320] Kind of random walking string.
+- [00:22:09,320 - 00:22:14,320] How many configurations of it are there?
+- [00:22:14,320 - 00:22:16,320] Alright, let's start at one end.
+- [00:22:16,320 - 00:22:19,320] We're going to ignore the question of whether it's a closed or open string.
+- [00:22:19,320 - 00:22:21,320] It doesn't matter for those purposes.
+- [00:22:21,320 - 00:22:23,320] You get the same answer, pretty much.
+- [00:22:23,320 - 00:22:25,320] Supposing you start at one end.
+- [00:22:25,320 - 00:22:28,320] How many possibilities are there?
+- [00:22:28,320 - 00:22:31,320] I've drawn a two-dimensional world.
+- [00:22:31,320 - 00:22:34,320] If it were a three-dimensional world,
+- [00:22:34,320 - 00:22:36,320] we would have the lattice coming out of the blackboard.
+- [00:22:36,320 - 00:22:38,320] If it were a four-dimensional world,
+- [00:22:38,320 - 00:22:40,320] but the basic picture would be the same.
+- [00:22:40,320 - 00:22:43,320] Okay, let's work with a two-dimensional world for simplicity.
+- [00:22:43,320 - 00:22:48,320] How many ways are there of starting out?
+- [00:22:48,320 - 00:22:50,320] Four.
+- [00:22:50,320 - 00:22:51,320] Four.
+- [00:22:56,320 - 00:22:58,320] Okay, we get to this one over here.
+- [00:22:58,320 - 00:23:00,320] Could have gone to any four.
+- [00:23:00,320 - 00:23:04,320] What's the next number of ways to continue?
+- [00:23:04,320 - 00:23:06,320] Four.
+- [00:23:06,320 - 00:23:09,320] We're allowed to cut back on ourselves.
+- [00:23:09,320 - 00:23:11,320] Times four.
+- [00:23:12,320 - 00:23:16,320] Supposing altogether the string
+- [00:23:16,320 - 00:23:22,320] has little n links.
+- [00:23:22,320 - 00:23:24,320] Incidentally, in this model,
+- [00:23:24,320 - 00:23:28,320] I want you to imagine the size of a link
+- [00:23:28,320 - 00:23:32,320] is the string length, L string.
+- [00:23:32,320 - 00:23:34,320] The size, we're doing string theory,
+- [00:23:34,320 - 00:23:38,320] so what else could it possibly be if we're doing string theory?
+- [00:23:38,320 - 00:23:42,320] Each one of these is size L string.
+- [00:23:42,320 - 00:23:46,320] Supposing the total length of the string
+- [00:23:46,320 - 00:23:48,320] was n units.
+- [00:23:48,320 - 00:23:50,320] How many states are there?
+- [00:23:50,320 - 00:23:51,320] Four to the n.
+- [00:23:51,320 - 00:23:53,320] Four to the n, right?
+- [00:23:53,320 - 00:23:55,320] Which happens to be two to the two n.
+- [00:24:00,320 - 00:24:02,320] Let's just write four to the n.
+- [00:24:04,320 - 00:24:06,320] Supposing it was a three-dimensional lattice,
+- [00:24:06,320 - 00:24:08,320] what would it be?
+- [00:24:08,320 - 00:24:09,320] Six.
+- [00:24:09,320 - 00:24:10,320] Six to the n.
+- [00:24:10,320 - 00:24:14,320] Whatever it is, it's some ordinary number to the nth power.
+- [00:24:14,320 - 00:24:18,320] Supposing it was a lattice which wasn't a cubic lattice,
+- [00:24:18,320 - 00:24:20,320] but was a hexagonal close-packed lattice
+- [00:24:20,320 - 00:24:22,320] or some other ridiculous lattice,
+- [00:24:22,320 - 00:24:26,320] the number would still be some number to the nth power.
+- [00:24:26,320 - 00:24:31,320] Now, what is the definition of the entropy?
+- [00:24:31,320 - 00:24:36,320] That's how many random states,
+- [00:24:36,320 - 00:24:38,320] and in fact, it's an interesting fact,
+- [00:24:38,320 - 00:24:41,320] of course, some of them are very special.
+- [00:24:41,320 - 00:24:44,320] There's the one state which is just a straight line.
+- [00:24:44,320 - 00:24:47,320] That's a pretty rare possibility.
+- [00:24:47,320 - 00:24:50,320] The chances that you would get a straight line
+- [00:24:50,320 - 00:24:52,320] are pretty remote, one out of four to the n,
+- [00:24:52,320 - 00:24:54,320] if n is large.
+- [00:24:54,320 - 00:24:57,320] If you run this on a computer
+- [00:24:57,320 - 00:25:01,320] and just random, you know, get a random number generator
+- [00:25:01,320 - 00:25:04,320] and just start generating string configurations,
+- [00:25:04,320 - 00:25:08,320] and n is relatively large, let's say a hundred,
+- [00:25:08,320 - 00:25:11,320] they'll all look about the same.
+- [00:25:11,320 - 00:25:13,320] They'll all look, they'll form a ball
+- [00:25:13,320 - 00:25:15,320] or a random walking stuff.
+- [00:25:15,320 - 00:25:18,320] They'll all look about the same.
+- [00:25:18,320 - 00:25:21,320] The chances that you will get a
+- [00:25:21,320 - 00:25:25,320] untypical looking string are very, very small.
+- [00:25:25,320 - 00:25:27,320] With a hundred links, boy, every day,
+- [00:25:27,320 - 00:25:30,320] they really look very similar.
+- [00:25:30,320 - 00:25:33,320] So, that means that the number of states
+- [00:25:33,320 - 00:25:35,320] which are all similar to each other,
+- [00:25:35,320 - 00:25:39,320] hard to tell apart, is four to the n.
+- [00:25:39,320 - 00:25:41,320] What's the entropy of that?
+- [00:25:41,320 - 00:25:42,320] N.
+- [00:25:42,320 - 00:25:45,320] N log four, right?
+- [00:25:45,320 - 00:25:47,320] The entropy is by definition
+- [00:25:47,320 - 00:25:50,320] the logarithm of the number of,
+- [00:25:50,320 - 00:25:55,320] let's call them macroscopically indistinguishable states.
+- [00:25:55,320 - 00:25:59,320] So now we know the entropy of a random string.
+- [00:25:59,320 - 00:26:02,320] Let's put it over here.
+- [00:26:02,320 - 00:26:10,320] S string is equal to the number of links
+- [00:26:12,320 - 00:26:15,320] times logarithm of four,
+- [00:26:15,320 - 00:26:18,320] or some ordinary number.
+- [00:26:18,320 - 00:26:22,320] Let's not worry about logarithm of four.
+- [00:26:22,320 - 00:26:25,320] It's proportional to the number of links
+- [00:26:25,320 - 00:26:26,320] of the string.
+- [00:26:26,320 - 00:26:30,320] In other words, it's proportional to the length of the string.
+- [00:26:30,320 - 00:26:32,320] But n is dimensionless.
+- [00:26:32,320 - 00:26:34,320] It's just an integer.
+- [00:26:34,320 - 00:26:37,320] Length is dimensional,
+- [00:26:37,320 - 00:26:40,320] as units of whatever units are.
+- [00:26:40,320 - 00:26:43,320] So how do I make this...
+- [00:26:43,320 - 00:26:45,320] Well, let's see, what am I writing?
+- [00:26:45,320 - 00:26:48,320] Oh, no, no, this is correct.
+- [00:26:48,320 - 00:26:50,320] This is correct.
+- [00:26:50,320 - 00:26:51,320] This is correct.
+- [00:26:51,320 - 00:26:54,320] But there's another way that we can write this.
+- [00:26:54,320 - 00:26:57,320] Supposing the length of the string,
+- [00:26:57,320 - 00:27:02,320] and by the length of the string I mean following it around,
+- [00:27:02,320 - 00:27:04,320] is L.
+- [00:27:04,320 - 00:27:07,320] L is the length of the string.
+- [00:27:07,320 - 00:27:09,320] How many little links
+- [00:27:09,320 - 00:27:12,320] does it have?
+- [00:27:12,320 - 00:27:14,320] Well, n, I know.
+- [00:27:14,320 - 00:27:15,320] But what is n?
+- [00:27:15,320 - 00:27:17,320] The question is, what is n?
+- [00:27:17,320 - 00:27:20,320] L over L string, right?
+- [00:27:20,320 - 00:27:24,320] That's n.
+- [00:27:24,320 - 00:27:26,320] The total length of the string
+- [00:27:26,320 - 00:27:30,320] divided up into these little unit string lengths,
+- [00:27:30,320 - 00:27:31,320] that's n.
+- [00:27:31,320 - 00:27:33,320] So we can also write
+- [00:27:33,320 - 00:27:36,320] that the entropy of a string
+- [00:27:36,320 - 00:27:38,320] is its length...
+- [00:27:39,320 - 00:27:41,320] divided by times?
+- [00:27:41,320 - 00:27:43,320] No, divided by L string.
+- [00:27:48,320 - 00:27:51,320] Let me rewrite this formula over here.
+- [00:27:51,320 - 00:27:53,320] It's A over G,
+- [00:27:53,320 - 00:27:56,320] but G is L Planck squared.
+- [00:28:00,320 - 00:28:03,320] There's something both similar
+- [00:28:03,320 - 00:28:06,320] and totally different about these formulas.
+- [00:28:06,320 - 00:28:08,320] Area is replaced by length,
+- [00:28:09,320 - 00:28:14,320] L Planck squared is replaced by L string.
+- [00:28:14,320 - 00:28:16,320] They are different, they're not the same.
+- [00:28:16,320 - 00:28:19,320] They contain different powers.
+- [00:28:19,320 - 00:28:22,320] This is linear in the length,
+- [00:28:22,320 - 00:28:26,320] this is quadratic in the size of the thing,
+- [00:28:26,320 - 00:28:28,320] contains L string downstairs,
+- [00:28:28,320 - 00:28:30,320] this one contains L Planck downstairs.
+- [00:28:30,320 - 00:28:33,320] But, you know, there is some similarity,
+- [00:28:33,320 - 00:28:35,320] but they are different.
+- [00:28:35,320 - 00:28:38,320] Now, let's rewrite it another way.
+- [00:28:39,320 - 00:28:41,320] In string theory,
+- [00:28:41,320 - 00:28:43,320] each one of these little links
+- [00:28:43,320 - 00:28:45,320] has a mass.
+- [00:28:45,320 - 00:28:48,320] The mass of one link,
+- [00:28:48,320 - 00:28:51,320] let's consider it.
+- [00:28:51,320 - 00:28:55,320] Let's call it little m
+- [00:28:55,320 - 00:28:57,320] for mass,
+- [00:28:57,320 - 00:28:58,320] the mass of one link,
+- [00:28:58,320 - 00:29:00,320] L I N K,
+- [00:29:00,320 - 00:29:04,320] what is that equal to?
+- [00:29:04,320 - 00:29:07,320] Okay, in our units,
+- [00:29:07,320 - 00:29:09,320] in units where there's a lot of space,
+- [00:29:09,320 - 00:29:11,320] where are our units?
+- [00:29:11,320 - 00:29:13,320] Our units are up here.
+- [00:29:13,320 - 00:29:20,320] C equals H bar equals one.
+- [00:29:20,320 - 00:29:23,320] What's the relationship between units of mass
+- [00:29:23,320 - 00:29:28,320] and units of length?
+- [00:29:28,320 - 00:29:31,320] Inverse.
+- [00:29:31,320 - 00:29:34,320] A mass is an inverse length.
+- [00:29:34,320 - 00:29:36,320] So the mass of one of these links,
+- [00:29:36,320 - 00:29:37,320] in string theory,
+- [00:29:37,320 - 00:29:39,320] since we're doing string theory,
+- [00:29:39,320 - 00:29:41,320] there's only one thing it could be.
+- [00:29:41,320 - 00:29:48,320] One over L string.
+- [00:29:48,320 - 00:29:51,320] So that's the mass of a link.
+- [00:29:51,320 - 00:29:53,320] Okay,
+- [00:29:53,320 - 00:29:56,320] what about the mass of the whole string?
+- [00:29:56,320 - 00:29:59,320] Let's take the mass of the whole string now.
+- [00:29:59,320 - 00:30:02,320] I think we can erase this.
+- [00:30:02,320 - 00:30:05,320] What's the mass of the whole long string?
+- [00:30:05,320 - 00:30:07,320] Or the whole ball of,
+- [00:30:07,320 - 00:30:11,320] N over L string.
+- [00:30:11,320 - 00:30:15,320] N over L string.
+- [00:30:15,320 - 00:30:16,320] But what is N?
+- [00:30:16,320 - 00:30:19,320] I think I lost N.
+- [00:30:19,320 - 00:30:25,320] N was L over L string.
+- [00:30:25,320 - 00:30:29,320] N itself was L over L string.
+- [00:30:29,320 - 00:30:31,320] And so the mass of the string
+- [00:30:31,320 - 00:30:33,320] is the length of the string
+- [00:30:33,320 - 00:30:35,320] divided by the square of,
+- [00:30:35,320 - 00:30:39,320] the length of the string
+- [00:30:39,320 - 00:30:41,320] divided by the string length squared.
+- [00:30:41,320 - 00:30:43,320] Does that make sense?
+- [00:30:43,320 - 00:30:45,320] This is a constant of nature,
+- [00:30:45,320 - 00:30:48,320] with the units of length.
+- [00:30:48,320 - 00:30:50,320] This is the length
+- [00:30:50,320 - 00:30:52,320] following the string.
+- [00:30:52,320 - 00:30:56,320] Following the string around on its curve.
+- [00:30:56,320 - 00:30:58,320] Alright, so that's M string.
+- [00:30:58,320 - 00:31:01,320] And now let's eliminate L.
+- [00:31:01,320 - 00:31:03,320] L.
+- [00:31:03,320 - 00:31:05,320] L.
+- [00:31:05,320 - 00:31:07,320] Is equal to M string
+- [00:31:07,320 - 00:31:10,320] times L string squared.
+- [00:31:10,320 - 00:31:12,320] And let's plug it in
+- [00:31:12,320 - 00:31:15,320] to the formula for entropy.
+- [00:31:15,320 - 00:31:17,320] What do I get?
+- [00:31:17,320 - 00:31:19,320] L
+- [00:31:19,320 - 00:31:22,320] is the mass of the string
+- [00:31:30,320 - 00:31:32,320] times L string, right?
+- [00:31:32,320 - 00:31:34,320] Did I get it right?
+- [00:31:35,320 - 00:31:38,320] I got it right.
+- [00:31:38,320 - 00:31:39,320] Well the mass of the,
+- [00:31:39,320 - 00:31:40,320] let's not even call it
+- [00:31:40,320 - 00:31:41,320] the mass of the string,
+- [00:31:41,320 - 00:31:43,320] the mass of the whole thing,
+- [00:31:43,320 - 00:31:45,320] whatever it is.
+- [00:31:45,320 - 00:31:46,320] In string theory,
+- [00:31:46,320 - 00:31:47,320] strings can be anything.
+- [00:31:47,320 - 00:31:49,320] You're a string, I'm a string.
+- [00:31:49,320 - 00:31:50,320] Alright?
+- [00:31:50,320 - 00:31:52,320] A star is a string,
+- [00:31:52,320 - 00:31:55,320] or a collection of strings.
+- [00:31:55,320 - 00:31:57,320] So again, we see something else
+- [00:31:57,320 - 00:32:00,320] that's sort of similar.
+- [00:32:00,320 - 00:32:02,320] The entropy of the string,
+- [00:32:02,320 - 00:32:04,320] or the entropy of the black hole,
+- [00:32:04,320 - 00:32:06,320] is the square of the mass
+- [00:32:06,320 - 00:32:08,320] times the Planck length squared.
+- [00:32:08,320 - 00:32:10,320] The entropy of a string
+- [00:32:10,320 - 00:32:12,320] is the mass of the string
+- [00:32:12,320 - 00:32:14,320] times the string length.
+- [00:32:14,320 - 00:32:16,320] There's a pattern here.
+- [00:32:16,320 - 00:32:17,320] There is a pattern here.
+- [00:32:17,320 - 00:32:18,320] It's the wrong pattern.
+- [00:32:18,320 - 00:32:20,320] It's not the pattern we want.
+- [00:32:20,320 - 00:32:21,320] Because after all,
+- [00:32:21,320 - 00:32:22,320] what we'd really like to say
+- [00:32:22,320 - 00:32:24,320] is this big ball of tangled string
+- [00:32:24,320 - 00:32:26,320] is a black hole.
+- [00:32:26,320 - 00:32:27,320] Why not?
+- [00:32:27,320 - 00:32:28,320] I mean, you know,
+- [00:32:28,320 - 00:32:29,320] you take two strings,
+- [00:32:29,320 - 00:32:30,320] you collide them together
+- [00:32:30,320 - 00:32:32,320] with a terrific force,
+- [00:32:32,320 - 00:32:33,320] you make a big jump
+- [00:32:33,320 - 00:32:34,320] of string,
+- [00:32:34,320 - 00:32:36,320] what could it possibly be?
+- [00:32:36,320 - 00:32:38,320] It must be a black hole.
+- [00:32:38,320 - 00:32:39,320] But it's not working.
+- [00:32:39,320 - 00:32:40,320] It's not working.
+- [00:32:40,320 - 00:32:41,320] Something's wrong.
+- [00:32:41,320 - 00:32:42,320] Not working.
+- [00:32:42,320 - 00:32:43,320] But it's almost working.
+- [00:32:43,320 - 00:32:44,320] Well, not almost working,
+- [00:32:44,320 - 00:32:45,320] but it's working.
+- [00:32:45,320 - 00:32:47,320] Some pattern is right.
+- [00:32:47,320 - 00:32:49,320] Let's take a little break.
+- [00:32:49,320 - 00:32:50,320] I need a break.
+- [00:32:50,320 - 00:32:51,320] You're going to leave us
+- [00:32:51,320 - 00:32:52,320] in suspense?
+- [00:32:52,320 - 00:32:53,320] No, no.
+- [00:32:53,320 - 00:32:55,320] I don't know if we'll get there tonight.
+- [00:32:55,320 - 00:32:56,320] I'm not sure.
+- [00:32:56,320 - 00:32:58,320] But, um...
+- [00:32:58,320 - 00:32:59,320] I'm going to leave you
+- [00:32:59,320 - 00:33:00,320] in suspense.
+- [00:33:00,320 - 00:33:01,320] I'm going to leave you
+- [00:33:01,320 - 00:33:02,320] in suspense.
+- [00:33:02,320 - 00:33:04,320] You asked too many questions.
+- [00:33:04,320 - 00:33:05,320] I didn't intend to leave you
+- [00:33:05,320 - 00:33:07,320] in suspense, but, uh...
+- [00:33:09,320 - 00:33:10,320] All right.
+- [00:33:10,320 - 00:33:12,320] Here are the basic formulas
+- [00:33:12,320 - 00:33:14,320] that you need to follow
+- [00:33:14,320 - 00:33:17,320] what I may not finish tonight.
+- [00:33:18,320 - 00:33:20,320] But they're simple formulas,
+- [00:33:20,320 - 00:33:22,320] so write them down,
+- [00:33:22,320 - 00:33:23,320] look at them,
+- [00:33:23,320 - 00:33:25,320] and, uh...
+- [00:33:26,320 - 00:33:28,320] if we don't finish tonight,
+- [00:33:28,320 - 00:33:30,320] remember them.
+- [00:33:30,320 - 00:33:32,320] Newton comes to the world
+- [00:33:32,320 - 00:33:33,320] of the Newton constant.
+- [00:33:33,320 - 00:33:34,320] That's nothing but
+- [00:33:34,320 - 00:33:36,320] the Planck area.
+- [00:33:36,320 - 00:33:39,320] Newton constant is the Planck area.
+- [00:33:41,320 - 00:33:42,320] The relation between
+- [00:33:42,320 - 00:33:43,320] the Planck length
+- [00:33:43,320 - 00:33:45,320] and the string length
+- [00:33:45,320 - 00:33:47,320] is through the string coupling constant.
+- [00:33:47,320 - 00:33:48,320] And it goes this way,
+- [00:33:48,320 - 00:33:50,320] not the other way.
+- [00:33:52,320 - 00:33:55,320] Black hole entropy
+- [00:33:55,320 - 00:33:59,320] is area divided by Planck area.
+- [00:33:59,320 - 00:34:01,320] And it's also...
+- [00:34:01,320 - 00:34:04,320] mass squared
+- [00:34:04,320 - 00:34:06,320] times Planck length squared.
+- [00:34:06,320 - 00:34:08,320] We can forget the g here if we like.
+- [00:34:10,320 - 00:34:12,320] Entropy of a string
+- [00:34:12,320 - 00:34:13,320] is the length of the string
+- [00:34:13,320 - 00:34:15,320] instead of the area
+- [00:34:15,320 - 00:34:18,320] divided by one power of L string.
+- [00:34:18,320 - 00:34:19,320] And it also happens to be
+- [00:34:19,320 - 00:34:21,320] one power of mass,
+- [00:34:21,320 - 00:34:23,320] not times the Planck length,
+- [00:34:23,320 - 00:34:24,320] but by the string length.
+- [00:34:24,320 - 00:34:25,320] By the string length.
+- [00:34:25,320 - 00:34:26,320] All right.
+- [00:34:26,320 - 00:34:29,320] Those are the basic working, uh...
+- [00:34:29,320 - 00:34:30,320] equations that...
+- [00:34:31,320 - 00:34:32,320] we'll use.
+- [00:34:35,320 - 00:34:36,320] Now...
+- [00:34:37,320 - 00:34:39,320] in string theory,
+- [00:34:40,320 - 00:34:43,320] g is something that you can change.
+- [00:34:44,320 - 00:34:46,320] You can imagine,
+- [00:34:46,320 - 00:34:48,320] uh...
+- [00:34:48,320 - 00:34:51,320] that the coupling constant g
+- [00:34:51,320 - 00:34:53,320] is something that somebody
+- [00:34:53,320 - 00:34:54,320] could have a knob
+- [00:34:54,320 - 00:34:56,320] that could change.
+- [00:34:56,320 - 00:34:58,320] Let's not ask how you build such a knob.
+- [00:34:58,320 - 00:35:00,320] It's built into string theory
+- [00:35:00,320 - 00:35:02,320] that, uh...
+- [00:35:02,320 - 00:35:03,320] things like coupling constants
+- [00:35:03,320 - 00:35:05,320] are things that could vary.
+- [00:35:05,320 - 00:35:07,320] So let's imagine
+- [00:35:07,320 - 00:35:09,320] that they could vary.
+- [00:35:09,320 - 00:35:11,320] Not imagine, but, uh...
+- [00:35:11,320 - 00:35:13,320] let's assume that they can.
+- [00:35:14,320 - 00:35:16,320] What happens...
+- [00:35:16,320 - 00:35:18,320] And let's start.
+- [00:35:18,320 - 00:35:20,320] Let's start our game
+- [00:35:20,320 - 00:35:21,320] with
+- [00:35:21,320 - 00:35:25,320] the coupling constant g being very small.
+- [00:35:25,320 - 00:35:27,320] If it's very small,
+- [00:35:27,320 - 00:35:28,320] negligible,
+- [00:35:28,320 - 00:35:29,320] maybe even zero,
+- [00:35:29,320 - 00:35:31,320] if it's zero,
+- [00:35:31,320 - 00:35:33,320] strings don't split at all
+- [00:35:33,320 - 00:35:35,320] when they cross each other.
+- [00:35:35,320 - 00:35:36,320] Strings don't split
+- [00:35:36,320 - 00:35:38,320] and jump across to other strings.
+- [00:35:38,320 - 00:35:40,320] There is no gravity.
+- [00:35:40,320 - 00:35:43,320] Gravity is infinitely weak
+- [00:35:43,320 - 00:35:44,320] if, uh...
+- [00:35:44,320 - 00:35:46,320] if the string coupling constant is zero.
+- [00:35:46,320 - 00:35:47,320] So that's a starting point.
+- [00:35:47,320 - 00:35:49,320] And now let's start
+- [00:35:49,320 - 00:35:52,320] with a big tangled string.
+- [00:35:52,320 - 00:35:53,320] So, uh...
+- [00:35:53,320 - 00:35:56,320] let's start with a big tangled string.
+- [00:35:56,320 - 00:35:57,320] So, uh...
+- [00:35:57,320 - 00:35:59,320] let's start with a big tangled string.
+- [00:35:59,320 - 00:36:03,320] So much energy has been put into it
+- [00:36:03,320 - 00:36:08,320] that it's massively big,
+- [00:36:08,320 - 00:36:10,320] as big as a star,
+- [00:36:10,320 - 00:36:12,320] or bigger.
+- [00:36:12,320 - 00:36:15,320] It can't be a black hole.
+- [00:36:15,320 - 00:36:17,320] Why can't it be a black hole?
+- [00:36:17,320 - 00:36:19,320] Because the relationships
+- [00:36:19,320 - 00:36:21,320] between the entropy of a string
+- [00:36:21,320 - 00:36:22,320] and the entropy of a black hole
+- [00:36:22,320 - 00:36:23,320] are not right.
+- [00:36:23,320 - 00:36:25,320] All it is is a string.
+- [00:36:25,320 - 00:36:27,320] Entropy proportional to its length.
+- [00:36:27,320 - 00:36:28,320] Um...
+- [00:36:29,320 - 00:36:31,320] Now let's imagine
+- [00:36:31,320 - 00:36:33,320] increasing G,
+- [00:36:33,320 - 00:36:34,320] little g.
+- [00:36:34,320 - 00:36:37,320] What starts to happen?
+- [00:36:37,320 - 00:36:40,320] What starts to happen
+- [00:36:40,320 - 00:36:41,320] is...
+- [00:36:41,320 - 00:36:45,320] Let's see, where are we?
+- [00:36:45,320 - 00:36:47,320] Well, what does start to happen
+- [00:36:47,320 - 00:36:50,320] as we increase little g?
+- [00:36:50,320 - 00:36:51,320] Splitting.
+- [00:36:51,320 - 00:36:52,320] Strings get shorter.
+- [00:36:52,320 - 00:36:54,320] Well, uh...
+- [00:36:54,320 - 00:36:58,320] Let's hold L string fixed.
+- [00:36:58,320 - 00:37:00,320] It's convenient.
+- [00:37:00,320 - 00:37:01,320] It's convenient to work in units
+- [00:37:01,320 - 00:37:04,320] in which L string is held fixed.
+- [00:37:04,320 - 00:37:08,320] So, if G gets bigger,
+- [00:37:08,320 - 00:37:10,320] L Planck gets bigger,
+- [00:37:10,320 - 00:37:12,320] but that's another way of saying
+- [00:37:12,320 - 00:37:14,320] that the gravitational coupling constant
+- [00:37:14,320 - 00:37:17,320] gets bigger.
+- [00:37:17,320 - 00:37:19,320] That's not too surprising.
+- [00:37:19,320 - 00:37:20,320] If we increase G,
+- [00:37:20,320 - 00:37:22,320] it means little strings can break off.
+- [00:37:22,320 - 00:37:23,320] If they can break off,
+- [00:37:23,320 - 00:37:25,320] they can jump across,
+- [00:37:25,320 - 00:37:27,320] and gravitation becomes important.
+- [00:37:27,320 - 00:37:31,320] So, as little g starts to increase,
+- [00:37:31,320 - 00:37:34,320] gravity starts to become important.
+- [00:37:34,320 - 00:37:35,320] What happens to this thing
+- [00:37:35,320 - 00:37:42,320] as gravity starts to become important?
+- [00:37:42,320 - 00:37:44,320] Gravity starts to pull it together.
+- [00:37:44,320 - 00:37:46,320] It pulls it together,
+- [00:37:46,320 - 00:37:48,320] shrinks the size of it.
+- [00:37:48,320 - 00:37:53,320] What happens to the energy of it, incidentally?
+- [00:37:53,320 - 00:37:55,320] Does it increase or decrease?
+- [00:37:55,320 - 00:37:58,320] It decreases.
+- [00:37:58,320 - 00:38:00,320] It decreases.
+- [00:38:00,320 - 00:38:02,320] It decreases.
+- [00:38:02,320 - 00:38:06,320] That's because the gravitational attraction,
+- [00:38:06,320 - 00:38:09,320] the potential energy is negative,
+- [00:38:09,320 - 00:38:11,320] and when it gets pulled together,
+- [00:38:11,320 - 00:38:13,320] it lowers the energy.
+- [00:38:13,320 - 00:38:16,320] When an object gets pulled together by gravity,
+- [00:38:16,320 - 00:38:21,320] typically its energy decreases.
+- [00:38:21,320 - 00:38:23,320] So, its mass decreases.
+- [00:38:23,320 - 00:38:25,320] But it becomes denser.
+- [00:38:25,320 - 00:38:27,320] And at some point,
+- [00:38:27,320 - 00:38:29,320] just like any other object,
+- [00:38:29,320 - 00:38:31,320] if you squeeze it more and more,
+- [00:38:31,320 - 00:38:33,320] at some point,
+- [00:38:33,320 - 00:38:37,320] its structure will pass its Schwarzschild radius.
+- [00:38:37,320 - 00:38:39,320] It'll become smaller than the Schwarzschild radius,
+- [00:38:39,320 - 00:38:41,320] and what happens?
+- [00:38:41,320 - 00:38:44,320] It becomes a black hole.
+- [00:38:44,320 - 00:38:47,320] So, let's imagine doing this very slowly.
+- [00:38:47,320 - 00:38:51,320] We slowly, slowly, slowly change G.
+- [00:38:51,320 - 00:38:54,320] The string begins to shrink and shrink and shrink,
+- [00:38:54,320 - 00:38:55,320] and at some...
+- [00:38:55,320 - 00:38:59,320] By shrink, I mean to say that it...
+- [00:38:59,320 - 00:39:04,320] the whole ball of thing begins to contract,
+- [00:39:04,320 - 00:39:06,320] and at some point,
+- [00:39:06,320 - 00:39:08,320] it turns into a black hole.
+- [00:39:08,320 - 00:39:09,320] I'll tell you...
+- [00:39:09,320 - 00:39:11,320] I'll try to tell you when it turns into a black hole.
+- [00:39:11,320 - 00:39:13,320] I'll try to give you an idea
+- [00:39:13,320 - 00:39:20,320] of what the crossover is between string and black hole.
+- [00:39:20,320 - 00:39:22,320] So,
+- [00:39:22,320 - 00:39:26,320] this end is G equals zero.
+- [00:39:26,320 - 00:39:28,320] No gravity.
+- [00:39:28,320 - 00:39:37,320] Gravity has not turned on yet.
+- [00:39:37,320 - 00:39:39,320] Now we start increasing G.
+- [00:39:39,320 - 00:39:42,320] The string starts to shrink,
+- [00:39:42,320 - 00:39:44,320] and eventually,
+- [00:39:44,320 - 00:39:50,320] when G is large enough,
+- [00:39:50,320 - 00:39:53,320] becomes a black hole.
+- [00:39:53,320 - 00:39:54,320] I don't know.
+- [00:39:54,320 - 00:39:56,320] This is some value of G.
+- [00:39:56,320 - 00:39:59,320] The value of G depends on the mass of the object.
+- [00:39:59,320 - 00:40:01,320] The more massive it is,
+- [00:40:01,320 - 00:40:05,320] the smaller G has to be in order to make it a black hole.
+- [00:40:05,320 - 00:40:07,320] That's pretty clear.
+- [00:40:07,320 - 00:40:08,320] The more massive it is,
+- [00:40:08,320 - 00:40:10,320] the more easily it'll become a black hole.
+- [00:40:10,320 - 00:40:11,320] So, at some point,
+- [00:40:11,320 - 00:40:13,320] depending on what we started with,
+- [00:40:13,320 - 00:40:16,320] it will become a black hole.
+- [00:40:16,320 - 00:40:17,320] Now...
+- [00:40:17,320 - 00:40:18,320] Quick question.
+- [00:40:18,320 - 00:40:19,320] Is...
+- [00:40:19,320 - 00:40:20,320] Is G between zero...
+- [00:40:20,320 - 00:40:21,320] value between zero and one,
+- [00:40:21,320 - 00:40:24,320] or is it a big number?
+- [00:40:24,320 - 00:40:26,320] Let's say it's between zero and one.
+- [00:40:26,320 - 00:40:27,320] I think it's convenient to say.
+- [00:40:27,320 - 00:40:31,320] I think it's useful to think of it as being between zero and one.
+- [00:40:31,320 - 00:40:32,320] Yeah.
+- [00:40:32,320 - 00:40:33,320] Yeah.
+- [00:40:33,320 - 00:40:36,320] It's not...
+- [00:40:36,320 - 00:40:39,320] The story is not pretty when G gets bigger than one.
+- [00:40:39,320 - 00:40:41,320] We don't want to go there.
+- [00:40:41,320 - 00:40:42,320] Okay.
+- [00:40:42,320 - 00:40:44,320] So, yeah.
+- [00:40:44,320 - 00:40:45,320] And in fact,
+- [00:40:45,320 - 00:40:48,320] we're going to continue to think of G as small.
+- [00:40:48,320 - 00:40:50,320] If G is small,
+- [00:40:50,320 - 00:40:53,320] it may take a very big object
+- [00:40:53,320 - 00:40:55,320] in order to turn into a black hole.
+- [00:40:55,320 - 00:40:57,320] And it will.
+- [00:40:57,320 - 00:40:58,320] Right?
+- [00:40:58,320 - 00:41:02,320] So, it may take a rather large thing to turn into a black hole.
+- [00:41:02,320 - 00:41:03,320] But whatever G is,
+- [00:41:03,320 - 00:41:05,320] whatever G is,
+- [00:41:05,320 - 00:41:07,320] basically, there's an object which is big enough
+- [00:41:07,320 - 00:41:08,320] that when you...
+- [00:41:08,320 - 00:41:10,320] By the time you turn G up to that value,
+- [00:41:10,320 - 00:41:13,320] it will turn into a black hole.
+- [00:41:13,320 - 00:41:14,320] Okay.
+- [00:41:14,320 - 00:41:17,320] So, that's what happens if you slowly...
+- [00:41:17,320 - 00:41:19,320] There's another word for slowly.
+- [00:41:19,320 - 00:41:20,320] Adiabatic.
+- [00:41:20,320 - 00:41:21,320] Adiabatic.
+- [00:41:21,320 - 00:41:25,320] Adiabatic is a physicist's fancy term
+- [00:41:25,320 - 00:41:29,320] for changing a control parameter very slowly,
+- [00:41:29,320 - 00:41:31,320] turning a dial very slowly.
+- [00:41:31,320 - 00:41:34,320] So, under an adiabatic change of G,
+- [00:41:34,320 - 00:41:37,320] this turns into a black hole.
+- [00:41:37,320 - 00:41:41,320] What would you guess happens if you then take the black hole
+- [00:41:41,320 - 00:41:44,320] and turn G back again?
+- [00:41:47,320 - 00:41:51,320] You turn it to be so small
+- [00:41:51,320 - 00:41:54,320] that there's not enough gravity to hold the black hole together.
+- [00:41:54,320 - 00:41:55,320] What does it become?
+- [00:41:55,320 - 00:41:59,320] A ball of string.
+- [00:41:59,320 - 00:42:00,320] A ball of string.
+- [00:42:00,320 - 00:42:01,320] What else could it be?
+- [00:42:01,320 - 00:42:02,320] What else could it be?
+- [00:42:02,320 - 00:42:05,320] Everything is a ball of string when you turn off gravity.
+- [00:42:05,320 - 00:42:08,320] And so, it also goes this way.
+- [00:42:08,320 - 00:42:11,320] Now, there's actually a technical point here.
+- [00:42:11,320 - 00:42:15,320] It's a technical point about the relative entropy
+- [00:42:15,320 - 00:42:16,320] of a single...
+- [00:42:16,320 - 00:42:18,320] of a single string
+- [00:42:18,320 - 00:42:23,320] and many strings with the same total amount of mass.
+- [00:42:23,320 - 00:42:25,320] You might think, well, when you go back again,
+- [00:42:25,320 - 00:42:27,320] perhaps it doesn't turn into a single string.
+- [00:42:27,320 - 00:42:31,320] Perhaps it turns into three disconnected pieces of string
+- [00:42:31,320 - 00:42:34,320] or 100,000 disconnected pieces of string.
+- [00:42:34,320 - 00:42:36,320] No, there is a technical point
+- [00:42:36,320 - 00:42:39,320] about counting the number of states of strings.
+- [00:42:39,320 - 00:42:42,320] And the answer is
+- [00:42:42,320 - 00:42:45,320] there are many, many more states of a single string
+- [00:42:45,320 - 00:42:46,320] than there are of a single string.
+- [00:42:46,320 - 00:42:48,320] So, you might have thought,
+- [00:42:48,320 - 00:42:50,320] oh, I have a bar of multiple strings.
+- [00:42:50,320 - 00:42:52,320] That's a little bit counterintuitive.
+- [00:42:52,320 - 00:42:54,320] You might have thought, if I have two strings...
+- [00:42:54,320 - 00:42:56,320] oh, of the same mass.
+- [00:42:56,320 - 00:42:57,320] You take a certain amount of mass
+- [00:42:57,320 - 00:42:59,320] and you divide it up into 10 strings,
+- [00:42:59,320 - 00:43:01,320] how many configurations are there
+- [00:43:01,320 - 00:43:03,320] relative to if you took the whole mass
+- [00:43:03,320 - 00:43:05,320] and made one big string out of it?
+- [00:43:05,320 - 00:43:07,320] There are many more configurations of one string.
+- [00:43:07,320 - 00:43:09,320] That's surprising.
+- [00:43:09,320 - 00:43:10,320] It's a fact.
+- [00:43:10,320 - 00:43:12,320] So, the most likely thing that you'll get
+- [00:43:12,320 - 00:43:15,320] when you go back is another single string.
+- [00:43:15,320 - 00:43:19,320] So, imagine somebody with this dial turning it one way,
+- [00:43:19,320 - 00:43:21,320] string becomes black hole.
+- [00:43:21,320 - 00:43:23,320] Turning it back again,
+- [00:43:23,320 - 00:43:26,320] black hole becomes string, and so forth.
+- [00:43:26,320 - 00:43:31,320] Now, what happens to the stringy stuff
+- [00:43:31,320 - 00:43:33,320] when you turn it to a black hole?
+- [00:43:33,320 - 00:43:35,320] Does the string disappear?
+- [00:43:35,320 - 00:43:38,320] Does it get sucked into the black hole?
+- [00:43:38,320 - 00:43:41,320] We're watching this thing from the outside.
+- [00:43:41,320 - 00:43:43,320] It's inside the horizon.
+- [00:43:43,320 - 00:43:44,320] It's inside the horizon.
+- [00:43:44,320 - 00:43:46,320] But if we're watching it from the outside,
+- [00:43:46,320 - 00:43:49,320] nothing ever crosses the horizon.
+- [00:43:49,320 - 00:43:52,320] So, the answer is it's not inside the black hole.
+- [00:43:52,320 - 00:43:58,320] It's on the horizon, or near the horizon of the black hole.
+- [00:43:58,320 - 00:44:00,320] Here it is.
+- [00:44:08,320 - 00:44:13,320] Of course, it's only a good macroscopic size black hole
+- [00:44:13,320 - 00:44:17,320] when the black hole is much bigger than the string length scale.
+- [00:44:17,320 - 00:44:19,320] And so, when the black hole is really much bigger
+- [00:44:19,320 - 00:44:21,320] than the string length scale,
+- [00:44:21,320 - 00:44:29,320] the string is just a little bit of fuzziness on the horizon.
+- [00:44:29,320 - 00:44:31,320] And that's what you would see from the outside.
+- [00:44:31,320 - 00:44:33,320] As you turned up gravitation,
+- [00:44:33,320 - 00:44:35,320] the object would collapse,
+- [00:44:35,320 - 00:44:37,320] but you would see the string sort of collect
+- [00:44:37,320 - 00:44:41,320] on the horizon of the black hole.
+- [00:44:41,320 - 00:44:43,320] Okay?
+- [00:44:43,320 - 00:44:58,320] Let's think about black holes of different size
+- [00:44:58,320 - 00:45:01,320] relative to the string length scale.
+- [00:45:01,320 - 00:45:04,320] The string length scale is basically the size
+- [00:45:04,320 - 00:45:07,320] of these loops of string here.
+- [00:45:07,320 - 00:45:11,320] Let's imagine a smaller black hole.
+- [00:45:11,320 - 00:45:14,320] Here's a smaller black hole.
+- [00:45:14,320 - 00:45:17,320] And here's the loops of string.
+- [00:45:20,320 - 00:45:22,320] Do you think it makes sense
+- [00:45:22,320 - 00:45:24,320] to think about a black hole
+- [00:45:24,320 - 00:45:27,320] which is itself much smaller than the
+- [00:45:29,320 - 00:45:32,320] lengths of the loops of string
+- [00:45:32,320 - 00:45:35,320] which make up the black hole?
+- [00:45:37,320 - 00:45:39,320] Well, it's not a big deal.
+- [00:45:39,320 - 00:45:42,320] Well, there's no way you can answer that
+- [00:45:42,320 - 00:45:44,320] other than to know a little bit more about string theory
+- [00:45:44,320 - 00:45:46,320] than we've talked about.
+- [00:45:46,320 - 00:45:48,320] But the answer is no.
+- [00:45:48,320 - 00:45:52,320] The point at which the Schwarzschild radius
+- [00:45:52,320 - 00:45:55,320] gets as small as the loops of string,
+- [00:45:55,320 - 00:45:58,320] that's the transition point.
+- [00:45:58,320 - 00:45:59,320] All right?
+- [00:45:59,320 - 00:46:05,320] So if you imagined varying the constants
+- [00:46:05,320 - 00:46:08,320] so that the relative size of the loops of string,
+- [00:46:08,320 - 00:46:11,320] in the case of the Schwarzschild radius
+- [00:46:11,320 - 00:46:14,320] and the string length scale varied,
+- [00:46:14,320 - 00:46:15,320] somehow you did that,
+- [00:46:15,320 - 00:46:18,320] then at the point where the string length scale
+- [00:46:18,320 - 00:46:21,320] is comparable to the Schwarzschild radius,
+- [00:46:21,320 - 00:46:27,320] that's the point at which the black hole becomes a string
+- [00:46:27,320 - 00:46:29,320] or the string becomes a black hole.
+- [00:46:29,320 - 00:46:31,320] There's another way to say it.
+- [00:46:31,320 - 00:46:33,320] It's also the point at which the black hole
+- [00:46:33,320 - 00:46:36,320] does not have enough mass to create a gravitational field
+- [00:46:36,320 - 00:46:37,320] to hold the string down on the string.
+- [00:46:37,320 - 00:46:44,060] the string down onto it. The fluctuations of the string will simply cause it to
+- [00:46:44,060 - 00:46:55,500] float up off the horizon. So one more element in this going back and forth
+- [00:46:55,500 - 00:47:02,220] between strings and black holes, the point, the point of separation between
+- [00:47:02,220 - 00:47:08,040] strings and black holes, let's call it the transition point. The transition
+- [00:47:08,040 - 00:47:26,280] point, transition, is when the Schwarzschild radius, oops, is when the
+- [00:47:26,280 - 00:47:30,720] Schwarzschild radius, R Schwarzschild, is
+- [00:47:31,320 - 00:47:32,200] equal to the point of separation between strings and black holes.
+- [00:47:32,220 - 00:47:44,820] The Schwarzschild radius will are approximately equal to the string length scale. If the Schwarzschild black hole radius is smaller than these little loops of string, it doesn't mean anything anymore to say it's a black hole. It just becomes a string.
+- [00:47:47,680 - 00:47:58,340] This is the transition point. Let's rewrite it. The Schwarzschild radius is what? M times G.
+- [00:48:01,320 - 00:48:01,840] M
+- [00:48:01,840 - 00:48:02,180] Tuesdays.
+- [00:48:02,220 - 00:48:03,900] Tuesdays don't count. We don't care about twos.
+- [00:48:05,980 - 00:48:06,860] Two are equal to one.
+- [00:48:08,040 - 00:48:10,900] And G is equal to L Planck squared.
+- [00:48:19,660 - 00:48:23,200] Actually, we can go one step further, can't we?
+- [00:48:23,980 - 00:48:27,440] We can relate L Planck to L string.
+- [00:48:29,240 - 00:48:32,200] Let's see, which way should we do this? Let's get rid of L Planck.
+- [00:48:32,220 - 00:48:33,900] In this formula here.
+- [00:48:33,900 - 00:48:40,280] So this would be, yeah.
+- [00:48:42,100 - 00:48:43,660] Let's rewrite this.
+- [00:48:44,400 - 00:48:48,500] M times L Planck squared, that's G squared.
+- [00:48:51,080 - 00:48:55,480] L string squared is L string.
+- [00:48:55,580 - 00:48:58,560] Let's go back over what I did. I'm just going to do it again for you.
+- [00:49:00,600 - 00:49:02,100] Do the steps again.
+- [00:49:02,220 - 00:49:07,980] Schwarzschild radius equals L string.
+- [00:49:07,980 - 00:49:12,300] Schwarzschild radius is M G equals L string.
+- [00:49:12,300 - 00:49:18,900] G, that's mass times L Planck squared equals L string.
+- [00:49:18,900 - 00:49:24,540] And now we use that L Planck is G times L string.
+- [00:49:24,540 - 00:49:31,580] So this is M Planck G squared L string squared equals L string.
+- [00:49:31,580 - 00:49:32,280] Did I do that right?
+- [00:49:34,020 - 00:49:34,460] Yeah.
+- [00:49:35,380 - 00:49:37,600] I think we can cancel something here, can't we?
+- [00:49:38,820 - 00:49:39,540] Equals one.
+- [00:49:47,540 - 00:49:50,340] I didn't write a one. I will now do it.
+- [00:49:51,640 - 00:49:53,220] Okay, so let's see what that means.
+- [00:49:58,060 - 00:49:59,460] For a given mass,
+- [00:49:59,460 - 00:50:03,860] as you start to decrease the coupling constant G,
+- [00:50:04,680 - 00:50:07,720] this quantity here will eventually go down to about one,
+- [00:50:08,080 - 00:50:13,520] and then that's the point at which the transition between strings and black holes takes place.
+- [00:50:15,260 - 00:50:17,420] All right, so we need to know this equation here.
+- [00:50:18,540 - 00:50:20,900] Somewhere there you wrote that the entropies are equal.
+- [00:50:21,640 - 00:50:22,100] Of what?
+- [00:50:24,860 - 00:50:29,020] You wrote M L E squared and so on.
+- [00:50:29,460 - 00:50:30,460] Okay.
+- [00:50:30,460 - 00:50:32,460] One is equal to L S.
+- [00:50:32,460 - 00:50:37,460] Well, so far I haven't even talked about entropy.
+- [00:50:37,460 - 00:50:39,460] I mean, I talked about entropy earlier.
+- [00:50:39,460 - 00:50:43,460] No, I think that you have M squared L P squared,
+- [00:50:43,460 - 00:50:48,460] and if you will factor out M from that, you get the lower equation.
+- [00:50:48,460 - 00:50:49,460] Which one, this one?
+- [00:50:49,460 - 00:50:52,460] It looks like the entropies will be equated.
+- [00:50:52,460 - 00:50:58,460] That's true. We're going to, you know, I just want to lay down all the equations for you.
+- [00:50:58,460 - 00:50:58,940] We're not going to finish this.
+- [00:50:58,940 - 00:51:02,940] We're not going to finish it tonight, and then I want you to go and study those equations.
+- [00:51:04,940 - 00:51:06,940] Remind yourselves about that, and then we're going to put them together.
+- [00:51:07,940 - 00:51:13,940] We're going to put them together, and out of them we're going to see a derivation of the entropy of a black hole.
+- [00:51:17,940 - 00:51:20,940] Coming from the entropy of strings,
+- [00:51:20,940 - 00:51:25,940] we're basically going to derive this formula from this formula.
+- [00:51:25,940 - 00:51:28,940] String theory derives black hole entropy.
+- [00:51:28,940 - 00:51:33,940] Okay, there's one more element, one more moving part.
+- [00:51:33,940 - 00:51:35,940] I'm trying to lay out all the parts.
+- [00:51:35,940 - 00:51:39,940] It's a, in a sense it's a simple argument.
+- [00:51:39,940 - 00:51:42,940] We don't even need an integral.
+- [00:51:42,940 - 00:51:44,940] Not even a derivative, let alone an integral.
+- [00:51:44,940 - 00:51:49,940] But on the other hand, there's some logical pieces there which are kind of intricate.
+- [00:51:49,940 - 00:51:52,940] So I'll try to go slowly and spell them out.
+- [00:51:52,940 - 00:51:53,940] One more.
+- [00:51:53,940 - 00:51:54,940] Okay.
+- [00:51:54,940 - 00:51:56,940] One more.
+- [00:51:57,940 - 00:52:02,940] It's the fact that when you change a system adiabatically,
+- [00:52:02,940 - 00:52:08,940] you have a control parameter, coupling constant, a magnetic field, an electric field,
+- [00:52:08,940 - 00:52:10,940] and you have some system in it.
+- [00:52:10,940 - 00:52:18,940] It could be a box of, a container of fluid, gas,
+- [00:52:18,940 - 00:52:22,940] and the whole thing is in a huge magnetic field,
+- [00:52:22,940 - 00:52:26,940] and you slowly, slowly, slowly vary the magnetic field.
+- [00:52:26,940 - 00:52:29,940] What happens to the entropy?
+- [00:52:33,940 - 00:52:34,940] It's a constant.
+- [00:52:34,940 - 00:52:36,940] It doesn't change.
+- [00:52:36,940 - 00:52:40,940] You turn the magnetic field up, all sorts of things happen.
+- [00:52:40,940 - 00:52:46,940] The energy changes, the volume might change because the gas might press against the,
+- [00:52:46,940 - 00:52:48,940] all kinds of stuff happens.
+- [00:52:48,940 - 00:52:52,940] The one thing that doesn't happen is the entropy doesn't change.
+- [00:52:52,940 - 00:53:00,940] This is partly a consequence of something which I've emphasized over and over in these lectures,
+- [00:53:00,940 - 00:53:03,940] the conservation of information.
+- [00:53:03,940 - 00:53:07,940] Entropy is hidden information.
+- [00:53:07,940 - 00:53:11,940] When you change, when you change the environment,
+- [00:53:11,940 - 00:53:14,940] not the environment in terms of the atmosphere and things like that,
+- [00:53:14,940 - 00:53:18,940] but when you take a control parameter and you slowly change it,
+- [00:53:18,940 - 00:53:21,940] the amount of hidden information,
+- [00:53:21,940 - 00:53:24,940] the hidden information doesn't change.
+- [00:53:24,940 - 00:53:27,940] That's the same as saying entropy doesn't change.
+- [00:53:27,940 - 00:53:32,940] So in an adiabatic process like we're talking about here,
+- [00:53:32,940 - 00:53:35,940] where you slowly change the coupling constant,
+- [00:53:35,940 - 00:53:37,940] the entropy doesn't change.
+- [00:53:37,940 - 00:53:40,940] So that's one more thing.
+- [00:53:40,940 - 00:53:45,940] Let's just write it down.
+- [00:53:45,940 - 00:53:46,940] I'll just write it.
+- [00:53:46,940 - 00:53:48,940] Adiabatic,
+- [00:53:51,940 - 00:53:56,940] change of anything,
+- [00:53:56,940 - 00:53:58,940] but in particular G,
+- [00:53:58,940 - 00:54:01,940] does not change the entropy.
+- [00:54:01,940 - 00:54:06,940] Question, wouldn't that be contingent on,
+- [00:54:06,940 - 00:54:10,940] doesn't go through a phase transition like steam to water or water to gas?
+- [00:54:10,940 - 00:54:14,940] Yeah, it is contingent on not going through a phase transition.
+- [00:54:14,940 - 00:54:19,940] But phase transitions are characteristic of infinite systems.
+- [00:54:19,940 - 00:54:21,940] Phase transitions,
+- [00:54:21,940 - 00:54:24,940] really strict phase transitions only happen
+- [00:54:24,940 - 00:54:27,940] when a system has infinite volume.
+- [00:54:27,940 - 00:54:29,940] Systems of finite volume never have,
+- [00:54:29,940 - 00:54:32,940] strictly speaking, phase transitions.
+- [00:54:36,940 - 00:54:38,940] If you go slow enough,
+- [00:54:38,940 - 00:54:40,940] if you go slow enough with your change,
+- [00:54:40,940 - 00:54:44,940] the entropy doesn't change for a finite system.
+- [00:54:44,940 - 00:54:48,940] The statement that said that a long string
+- [00:54:48,940 - 00:54:52,940] has more entropy than having a set of smaller strings,
+- [00:54:52,940 - 00:54:55,940] that sounds sort of...
+- [00:54:55,940 - 00:54:57,940] In a certain volume, in a volume.
+- [00:54:57,940 - 00:54:58,940] You fix a volume,
+- [00:54:58,940 - 00:55:01,940] you put enough string in there to more or less fill the volume,
+- [00:55:01,940 - 00:55:07,940] and now you think about the possibility of one long string versus several...
+- [00:55:07,940 - 00:55:10,940] It seems that you have more information than any small one.
+- [00:55:10,940 - 00:55:12,940] It would seem so, doesn't it?
+- [00:55:12,940 - 00:55:13,940] Yeah.
+- [00:55:13,940 - 00:55:14,940] Right?
+- [00:55:14,940 - 00:55:15,940] Happens not to be true.
+- [00:55:15,940 - 00:55:16,940] Okay.
+- [00:55:16,940 - 00:55:17,940] By explicit calculation.
+- [00:55:17,940 - 00:55:21,940] There is a reason.
+- [00:55:21,940 - 00:55:23,940] I'll tell you what...
+- [00:55:23,940 - 00:55:25,940] Do it next time.
+- [00:55:25,940 - 00:55:26,940] Remind me next time.
+- [00:55:26,940 - 00:55:29,940] There is a reason, and it's actually simple.
+- [00:55:29,940 - 00:55:31,940] It's a surprising but simple thing.
+- [00:55:31,940 - 00:55:37,940] Okay, so what's the strategy going to be?
+- [00:55:37,940 - 00:55:42,940] The strategy is going to be to start with a black hole.
+- [00:55:42,940 - 00:55:45,940] Start with a black hole
+- [00:55:45,940 - 00:55:47,940] with a given mass
+- [00:55:47,940 - 00:55:49,940] at a given coupling constant.
+- [00:55:49,940 - 00:55:51,940] Let's call it M0 and G0.
+- [00:55:51,940 - 00:55:53,940] This is our target object.
+- [00:55:53,940 - 00:55:55,940] This is what we're interested in.
+- [00:55:55,940 - 00:55:58,940] The black hole of mass M0
+- [00:55:58,940 - 00:56:01,940] when the coupling constant is G0.
+- [00:56:01,940 - 00:56:05,940] And now we're going to start slowly changing G0.
+- [00:56:05,940 - 00:56:07,940] As we slowly change G0,
+- [00:56:07,940 - 00:56:12,940] the character of this object, its mass, its whole structure is going to change.
+- [00:56:12,940 - 00:56:15,940] And then we're going to start to change G0.
+- [00:56:15,940 - 00:56:18,940] Its whole structure is going to change.
+- [00:56:18,940 - 00:56:21,940] And it's going to morph.
+- [00:56:21,940 - 00:56:24,940] And eventually when G is small enough,
+- [00:56:24,940 - 00:56:26,940] namely at this transition point,
+- [00:56:26,940 - 00:56:29,940] it's going to turn into a string.
+- [00:56:29,940 - 00:56:30,940] Okay.
+- [00:56:30,940 - 00:56:33,940] Once it turns it...
+- [00:56:33,940 - 00:56:35,940] No, it starts as a black hole.
+- [00:56:35,940 - 00:56:37,940] Starts as a black hole.
+- [00:56:37,940 - 00:56:40,940] And now we start decreasing G
+- [00:56:40,940 - 00:56:43,940] until it turns into a string.
+- [00:56:43,940 - 00:56:46,940] Once it turns into a string,
+- [00:56:46,940 - 00:56:51,940] we use string theory to tell what the entropy is.
+- [00:56:51,940 - 00:56:55,940] But the entropy couldn't have changed during that process
+- [00:56:55,940 - 00:57:01,940] because entropy just doesn't change during an adiabatic process.
+- [00:57:01,940 - 00:57:04,940] So once it's turned into a string,
+- [00:57:04,940 - 00:57:07,940] we can then use string theory to say what the entropy is
+- [00:57:07,940 - 00:57:10,940] and in that way figure out what the original black hole entropy was.
+- [00:57:10,940 - 00:57:12,940] As simple as that.
+- [00:57:12,940 - 00:57:13,940] We're going to do it.
+- [00:57:13,940 - 00:57:15,940] And what we're going to show is when you do it,
+- [00:57:15,940 - 00:57:18,940] this formula for the string
+- [00:57:20,940 - 00:57:23,940] becomes this formula for the black hole.
+- [00:57:25,940 - 00:57:28,940] So that's a remarkable fact that...
+- [00:57:32,940 - 00:57:36,940] And it's been checked for many, many, many different kinds of black holes.
+- [00:57:36,940 - 00:57:39,940] Rotating black holes, charged black holes,
+- [00:57:39,940 - 00:57:41,940] higher dimensional black holes.
+- [00:57:41,940 - 00:57:47,940] It's not an accident of a little bit of an accidental agreement.
+- [00:57:47,940 - 00:57:51,940] It's something which has been checked for a wide, wide variety
+- [00:57:51,940 - 00:57:54,940] of different kinds of black holes.
+- [00:57:54,940 - 00:57:58,940] Rotating, not rotating, charged, uncharged, magnetically charged,
+- [00:57:58,940 - 00:58:01,940] higher dimensional, you name it.
+- [00:58:01,940 - 00:58:05,940] So in that sense,
+- [00:58:05,940 - 00:58:09,940] there's a good candidate for the understanding of the entropy of a black hole.
+- [00:58:09,940 - 00:58:10,940] And if you like,
+- [00:58:10,940 - 00:58:14,940] in some rough and ready sense,
+- [00:58:14,940 - 00:58:17,940] it's just the stringy stuff
+- [00:58:17,940 - 00:58:20,940] that's trapped near the horizon
+- [00:58:20,940 - 00:58:23,940] when the black hole forms.
+- [00:58:25,940 - 00:58:26,940] Question.
+- [00:58:26,940 - 00:58:27,940] Yeah.
+- [00:58:27,940 - 00:58:33,940] The entropy, the string with the greatest entropy is one string.
+- [00:58:33,940 - 00:58:37,940] The string of a given length or a given mass.
+- [00:58:37,940 - 00:58:39,940] Remember, the mass is proportional to its length.
+- [00:58:39,940 - 00:58:44,940] So if you have a given mass of string
+- [00:58:44,940 - 00:58:46,940] where you've turned off gravity,
+- [00:58:46,940 - 00:58:48,940] in the process of turning off gravity,
+- [00:58:48,940 - 00:58:50,940] it became a string.
+- [00:58:50,940 - 00:58:52,940] Once it becomes a string,
+- [00:58:52,940 - 00:58:58,940] the string that would fill a certain volume
+- [00:58:58,940 - 00:59:01,940] of a total mass, m,
+- [00:59:01,940 - 00:59:05,940] the entropy is greatest for the single string.
+- [00:59:05,940 - 00:59:08,940] But you also said that there's a finite probability
+- [00:59:08,940 - 00:59:11,940] that it may end up being two strings instead of one.
+- [00:59:11,940 - 00:59:14,940] There's a finite probability it may end up being two strings.
+- [00:59:14,940 - 00:59:18,940] And in fact, the answer would not change very much
+- [00:59:18,940 - 00:59:21,940] if it were two strings.
+- [00:59:21,940 - 00:59:23,940] One string, you get an answer.
+- [00:59:23,940 - 00:59:26,940] Two strings, you get a similar answer.
+- [00:59:26,940 - 00:59:29,940] It doesn't break up into a lot of strings.
+- [00:59:29,940 - 00:59:31,940] If it broke up into a lot of strings,
+- [00:59:31,940 - 00:59:33,940] you'd get a very different answer.
+- [00:59:33,940 - 00:59:34,940] Right.
+- [00:59:34,940 - 00:59:36,940] So the statistical counting,
+- [00:59:36,940 - 00:59:38,940] I mean, there's a fancy kind of statistical mechanics
+- [00:59:38,940 - 00:59:40,940] of counting configurations
+- [00:59:40,940 - 00:59:43,940] and saying when you go back and forth,
+- [00:59:43,940 - 00:59:45,940] the black hole, which is in a sense
+- [00:59:45,940 - 00:59:47,940] the maximum entropy that you can squeeze
+- [00:59:47,940 - 00:59:49,940] in a region of space,
+- [00:59:49,940 - 00:59:52,940] morphs into the maximum entropy
+- [00:59:52,940 - 00:59:56,940] that you can contain on a string.
+- [00:59:56,940 - 01:00:01,940] So it's a very interesting logic.
+- [01:00:01,940 - 01:00:04,940] And we can carry it out for the simplest case.
+- [01:00:04,940 - 01:00:05,940] Beyond the simplest case,
+- [01:00:05,940 - 01:00:07,940] it's too hard.
+- [01:00:07,940 - 01:00:11,940] But, okay, let's,
+- [01:00:11,940 - 01:00:15,940] all right, we'll finish this argument next week.
+- [01:00:18,940 - 01:00:22,940] For more, please visit us at stanford.edu.
