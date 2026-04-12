@@ -1,0 +1,46 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathmorphing}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  urlcolor=blue!50!black,
+  citecolor=blue!50!black
+}
+
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{topsep=0.25em,itemsep=0.2em}
+\setlist[enumerate]{topsep=0.25em,itemsep=0.2em}
+\numberwithin{equation}{chapter}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+\providecommand{\braket}[2]{\left\langle#1\,\middle|\,#2\right\rangle}
+\providecommand{\expect}[1]{\left\langle#1\right\rangle}
+\newcommand{\lectureoverview}[1]{\paragraph{Overview.} #1}
