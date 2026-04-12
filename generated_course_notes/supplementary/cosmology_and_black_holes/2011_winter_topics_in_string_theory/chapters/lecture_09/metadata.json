@@ -1,0 +1,80 @@
+{
+  "course_rel": "supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory",
+  "transcript_rel": "supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory/113 - Lecture 9 \uff5c Topics in String Theory [jnItLp3NR5I].md",
+  "video_rel": "supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory/113 - Lecture 9 \uff5c Topics in String Theory [jnItLp3NR5I].mkv",
+  "lecture_number": 9,
+  "lecture_slug": "lecture_09",
+  "lecture_title": "Lecture 9 : Topics in String Theory",
+  "assets": [
+    {
+      "name": "lecture_09_figure_02.png",
+      "timestamp_seconds": 774.72,
+      "timestamp_hhmmss": "00:12:54.720",
+      "source_candidate": "lecture_09_window_02_candidate_03_001254720.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the clearest and least occluded frame. It preserves the simple crossed-diagonal board layout that Susskind is drawing at the moment he refers back to black-hole pictures, without his body covering the key lines. The content is diagrammatic rather than algebraic, so it is most useful as documentary evidence paired with a clean TikZ redraw.",
+      "subtitle_excerpt": "Remember, we've drawn pictures of black holes.",
+      "segment_start_seconds": 768.87,
+      "segment_start_hhmmss": "00:12:48.870",
+      "segment_end_seconds": 777.87,
+      "segment_end_hhmmss": "00:12:57.870",
+      "caption_hint": "initial black-hole diagram scaffold"
+    },
+    {
+      "name": "lecture_09_figure_03.png",
+      "timestamp_seconds": 944.57,
+      "timestamp_hhmmss": "00:15:44.570",
+      "source_candidate": "lecture_09_window_03_candidate_04_001544570.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame shows the most finished state of the diagram in this subtitle window. The newly drawn vertical line is complete and clearly functions as the horizon marker Susskind is referring to, while enough of the earlier causal-line structure remains visible on the left to preserve the diagrammatic context. The lecturer is present but does not obscure the essential new line.",
+      "subtitle_excerpt": "draw this a different way, we would say here's the horizon.",
+      "segment_start_seconds": 942.37,
+      "segment_start_hhmmss": "00:15:42.370",
+      "segment_end_seconds": 944.87,
+      "segment_end_hhmmss": "00:15:44.870",
+      "caption_hint": "horizon as a vertical boundary"
+    },
+    {
+      "name": "lecture_09_figure_04.png",
+      "timestamp_seconds": 2424.746,
+      "timestamp_hhmmss": "00:40:24.746",
+      "source_candidate": "lecture_09_window_04_candidate_04_004024746.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest frame in the window because Susskind's hand no longer blocks the central coefficient, while the metric line across the top and the horizon relation on the right are both visible together. It preserves the key board content more completely than the earlier frames, which are more occluded by his gesture.",
+      "subtitle_excerpt": "This metric also has a gravitational potential.",
+      "segment_start_seconds": 2422.986,
+      "segment_start_hhmmss": "00:40:22.986",
+      "segment_end_seconds": 2424.986,
+      "segment_end_hhmmss": "00:40:24.986",
+      "caption_hint": "static-patch metric and horizon radius"
+    },
+    {
+      "name": "lecture_09_figure_05.png",
+      "timestamp_seconds": 3088.486,
+      "timestamp_hhmmss": "00:51:28.486",
+      "source_candidate": "lecture_09_window_05_candidate_04_005128486.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame captures the most finished and legible board state in the window. The equality to rho has been completed, Susskind's hand is no longer obscuring the writing, and both the schematic Poisson equation and its radial derivative form are visible together. Earlier frames show the equation mid-construction.",
+      "subtitle_excerpt": "radially symmetric distribution of mass is equal to rho.",
+      "segment_start_seconds": 3083.086,
+      "segment_start_hhmmss": "00:51:23.086",
+      "segment_end_seconds": 3089.086,
+      "segment_end_hhmmss": "00:51:29.086",
+      "caption_hint": "Poisson equation and radial simplification"
+    },
+    {
+      "name": "lecture_09_figure_06.png",
+      "timestamp_seconds": 3296.857,
+      "timestamp_hhmmss": "00:54:56.857",
+      "source_candidate": "lecture_09_window_06_candidate_01_005456857.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the strongest frame in a fairly weak set. It preserves the largest amount of relevant board content at once: the right-hand potential-style curve, the central schematic, and the rough Hubble-scale note across the top. The lecturer still occupies the foreground, but the key diagrammatic material is more complete here than in the later frames.",
+      "subtitle_excerpt": "The force is the derivative of the potential.",
+      "segment_start_seconds": 3296.586,
+      "segment_start_hhmmss": "00:54:56.586",
+      "segment_end_seconds": 3298.846,
+      "segment_end_hhmmss": "00:54:58.846",
+      "caption_hint": "potential sketch and force discussion"
+    }
+  ]
+}
