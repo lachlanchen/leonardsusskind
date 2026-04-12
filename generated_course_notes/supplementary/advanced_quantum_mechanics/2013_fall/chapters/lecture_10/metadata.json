@@ -7,28 +7,60 @@
   "lecture_title": "Advanced Quantum Mechanics Lecture 10",
   "assets": [
     {
-      "name": "lecture_10_frame_01.png",
-      "timestamp_seconds": 480.0,
-      "timestamp_hhmmss": "00:08:00.000",
-      "source_candidate": "lecture_10_candidate_07_000800000.png",
-      "recommended_use": "tikz_reference",
-      "rationale": "Best readable equal-point fermion anticommutator board state; it supports the exclusion-principle step without relying on a blurry reconstruction."
+      "name": "lecture_10_figure_02.png",
+      "timestamp_seconds": 339.2,
+      "timestamp_hhmmss": "00:05:39.200",
+      "source_candidate": "lecture_10_window_02_candidate_03_000539200.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame captures the most complete and legible stage of the operator equation within the subtitle window. The left-hand product \\(\\psi^\\dagger(x)\\psi^\\dagger(y)\\) is substantially written and readable, while the lecturer's body does not yet occlude the line as much as in the later frame. Earlier candidates are clearly less finished.",
+      "subtitle_excerpt": "It means psi dagger of x times psi dagger of y equals minus this over here.",
+      "segment_start_seconds": 334.0,
+      "segment_start_hhmmss": "00:05:34.000",
+      "segment_end_seconds": 342.0,
+      "segment_end_hhmmss": "00:05:42.000",
+      "caption_hint": "fermionic minus-sign operator step"
     },
     {
-      "name": "lecture_10_frame_02.png",
-      "timestamp_seconds": 1086.0,
-      "timestamp_hhmmss": "00:18:06.000",
-      "source_candidate": "lecture_10_candidate_10_001806000.png",
-      "recommended_use": "tikz_reference",
-      "rationale": "Clearest usable review frame for the 1D Dirac setup, showing the right-moving equation and Hamiltonian form while the left-moving species is being added."
+      "name": "lecture_10_figure_03.png",
+      "timestamp_seconds": 484.4,
+      "timestamp_hhmmss": "00:08:04.400",
+      "source_candidate": "lecture_10_window_03_candidate_04_000804400.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame is the clearest and most finished statement of the equal-point argument. The coefficient 2 is already written, the repeated operator product at x is legible, and the equals-zero conclusion is visible. Earlier frames still show the lecturer writing or partially occluding the coefficient, while this one gives the most complete board state for note reconstruction.",
+      "subtitle_excerpt": "This is just twice psi dagger of x times psi dagger of x equals zero.",
+      "segment_start_seconds": 480.0,
+      "segment_start_hhmmss": "00:08:00.000",
+      "segment_end_seconds": 485.0,
+      "segment_end_hhmmss": "00:08:05.000",
+      "caption_hint": "equal-point fermion exclusion step"
     },
     {
-      "name": "lecture_10_frame_03.png",
-      "timestamp_seconds": 1677.0,
-      "timestamp_hhmmss": "00:27:57.000",
-      "source_candidate": "lecture_10_candidate_12_002757000.png",
-      "recommended_use": "figure",
-      "rationale": "Stable and legible Pauli-matrix identification frame; it cleanly anchors the move to the three-dimensional massless Dirac construction."
+      "name": "lecture_10_figure_04.png",
+      "timestamp_seconds": 1560.6,
+      "timestamp_hhmmss": "00:26:00.600",
+      "source_candidate": "lecture_10_window_04_candidate_03_002600600.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest usable board state for the transition to the three-dimensional massless Dirac equation. The Hamiltonian line \\(H=\\alpha\\cdot P\\) is centered, legible, and more context from the surrounding board is preserved than in the other candidates. The lecturer no longer blocks the left side of the equation, and the frame is sharper and more compositionally useful for note writing than the adjacent options.",
+      "subtitle_excerpt": "The answer is energy squared equals momentum squared,",
+      "segment_start_seconds": 1558.0,
+      "segment_start_hhmmss": "00:25:58.000",
+      "segment_end_seconds": 1562.0,
+      "segment_end_hhmmss": "00:26:02.000",
+      "caption_hint": "three-dimensional Dirac ansatz"
+    },
+    {
+      "name": "lecture_10_figure_05.png",
+      "timestamp_seconds": 1696.4,
+      "timestamp_hhmmss": "00:28:16.400",
+      "source_candidate": "lecture_10_window_05_candidate_04_002816400.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the most useful frame because the lower-board equation \\(H=\\sigma\\cdot p\\) is fully written and unobstructed, while the upper board still preserves the nearby identification \\(\\alpha_z=\\sigma_z\\). Earlier candidates are transitional writing frames and are less finished.",
+      "subtitle_excerpt": "In other words, our Hamiltonian h is equal to sigma dot p.",
+      "segment_start_seconds": 1689.0,
+      "segment_start_hhmmss": "00:28:09.000",
+      "segment_end_seconds": 1697.0,
+      "segment_end_hhmmss": "00:28:17.000",
+      "caption_hint": "massless Hamiltonian as sigma dot p"
     }
   ]
 }
