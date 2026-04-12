@@ -1,234 +1,115 @@
 [English](README.md) · [العربية](i18n/README.ar.md) · [Español](i18n/README.es.md) · [Français](i18n/README.fr.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Tiếng Việt](i18n/README.vi.md) · [中文 (简体)](i18n/README.zh-Hans.md) · [中文（繁體）](i18n/README.zh-Hant.md) · [Deutsch](i18n/README.de.md) · [Русский](i18n/README.ru.md)
 
-
-
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
 # Leonard Susskind Lecture Notes Repository
 
-![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
-![Content Type](https://img.shields.io/badge/content-Lecture%20Notes%20%26%20LaTeX-informational)
-![Status](https://img.shields.io/badge/status-Active%20Archive-success)
-![LaTeX](https://img.shields.io/badge/tooling-LaTeX-008080)
-![Core Tracks](https://img.shields.io/badge/core_tracks-6-1f6feb)
-![Supplemental Tracks](https://img.shields.io/badge/supplemental_tracks-9-9a6700)
-![i18n](https://img.shields.io/badge/i18n-10%20translations%20%2B%20English-orange)
-![Stars](https://img.shields.io/github/stars/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=stars&color=22c55e)
-![Forks](https://img.shields.io/github/forks/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=forks&color=3b82f6)
-![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
+This repository is a physics-study archive centered on Leonard Susskind lectures, the broader *Theoretical Minimum* ecosystem, and transcript-derived companion notes.
 
-> 🎓 A multilingual archive of Leonard Susskind lecture-note materials, preserving both polished PDFs and editable LaTeX sources for study, reuse, and reference.
+It is not only a PDF dump. The repository is organized so that lecture videos, subtitles, Markdown transcripts, generated TeX notes, compiled PDFs, and hand-maintained course folders all live in one place with stable paths.
 
----
+If any material should not be mirrored here, open an issue or contact the maintainer and it can be reviewed or removed.
 
-## Overview
-This repository is a content-first archive of lecture-note materials from Professor Leonard Susskind's teaching ecosystem.
+## What This Repo Provides
 
-> The lecture notes of Professor Leonard Susskind. If this violates any copyrights, please contact me to delete this repository. Professor Susskind takes no responsibility for the error or misinformation in the notes, neither do I.
+- Existing hand-maintained course PDFs and LaTeX material in `core_*` and `supplemental_*` folders.
+- A paired transcription layer for the lecture archive:
+  - `subtitles/` for `.srt`
+  - `markdown/` for timestamped Markdown transcripts
+- A transcript-to-TeX pipeline in `generated_course_notes/`.
+- Imported companion material in `theoretical_minimum_companion_notes/`.
+- Reusable LaTeX templates in `template/kaobook` and `template/tuftle`.
 
-It combines three layers in one place:
+English is the canonical README. Translations live in `i18n/` and may lag behind the English file.
 
-- Curated note tracks and course-level progress.
-- Published artifacts (`.pdf`) for reading and sharing.
-- Source files (`.tex`, `.bib`, templates) for people who maintain or extend the archive.
+## Canonical Paths
 
-### Primary Goals
-- Keep course notes and progress in one place.
-- Preserve draft/notes progress visibility across core and supplementary tracks.
-- Provide source materials (PDF, TeX, BibTeX, templates) for continued authoring.
+| Layer | Canonical path | What it contains |
+|---|---|---|
+| Hand-maintained course folders | `core_*`, `supplemental_*` | Existing PDFs, READMEs, and selected LaTeX sources |
+| Subtitles | `subtitles/<track>/<subject>/<run>/` | Lecture `.srt` files |
+| Markdown transcripts | `markdown/<track>/<subject>/<run>/` | Timestamped lecture transcripts |
+| Generated lecture note sources | `generated_course_notes/<track>/<subject>/<run>/chapters/lecture_XX/` | `content.tex`, `lecture.tex`, analysis files, figure notes, and chapter build inputs |
+| Generated lecture PDFs | `generated_course_notes/<track>/<subject>/<run>/chapters/lecture_XX/lecture.pdf` | One compiled PDF per lecture |
+| Generated merged course PDFs | `generated_course_notes/<track>/<subject>/<run>/course.pdf` | One compiled PDF for the full course run |
+| Canonical published Advanced Quantum PDFs | `supplemental_advanced_quantum/course.pdf` and `supplemental_advanced_quantum/lecture_*.pdf` | Reader-facing published artifacts for that track |
+| Companion note import | `theoretical_minimum_companion_notes/` | Imported TeX companion notes derived from `weka511/tm` |
+| Theoretical Minimum submodule | `the_theoretical_minimum/` | Separate submodule checkout for related material |
+| Templates | `template/kaobook/`, `template/tuftle/` | Reusable LaTeX scaffolding |
 
-## Features
-- 📚 Core course tracking and references.
-- 📌 Supplementary course progress tracking.
-- 📄 Existing lesson PDFs for several core tracks.
-- 🧪 LaTeX source material in selected tracks.
-- 📚 Imported companion notes in `theoretical_minimum_companion_notes/`.
-- 🧷 Reusable LaTeX templates in `template/tuftle` and `template/kaobook`.
-- 🎨 Repository visuals in `figs/`.
-- 🌐 Multilingual README set in `i18n/`.
+## Root Course Folders
 
-## Quick Snapshot
-| Area | What is available |
+| Group | Folders |
 |---|---|
-| 📝 Notes | Multiple course note sets with progress tracking |
-| 🧾 Source | TeX/BibTeX sources in selected subprojects |
-| 📚 Companion Notes | `theoretical_minimum_companion_notes/` imported from `weka511/tm` |
-| 🧱 Templates | `template/tuftle` and `template/kaobook` |
-| 🎨 Branding | `figs/banner.*`, `figs/logo.*`, `figs/logo-w-text.*` |
-| 🌍 i18n | `i18n/README.*.md` language variants |
+| Core | `core_classical`, `core_quantum`, `core_special_relativity`, `core_general_relativity`, `core_cosmology`, `core_statistical_mechanics` |
+| Supplemental | `supplemental_advanced_quantum`, `supplemental_cosmology_and_black_holes`, `supplemental_higgs_boson`, `supplemental_particle_physics_1`, `supplemental_particle_physics_2`, `supplemental_particle_physics_3`, `supplemental_quantum_entanglement`, `supplemental_relativity`, `supplemental_string_theory` |
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Quick Snapshot](#quick-snapshot)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Examples](#examples)
-- [Development Notes](#development-notes)
-- [Canonical Course Progress (Preserved and Reorganized)](#canonical-course-progress-preserved-and-reorganized)
-- [Troubleshooting](#troubleshooting)
-- [Roadmap](#roadmap)
-- [Contribution](#contribution)
-- [❤️ Support](#-support)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+## How To Use The Repo
 
-## Project Structure
-```text
-leonardsusskind/
-├── README.md
-├── LICENSE
-├── tuftle_book_guide.pdf
-├── figs/
-│   ├── banner.(png|svg)
-│   ├── logo.(png|svg)
-│   └── logo-w-text.(png|svg)
-├── i18n/
-│   ├── README.ar.md
-│   ├── README.de.md
-│   ├── README.es.md
-│   ├── README.fr.md
-│   ├── README.ja.md
-│   ├── README.ko.md
-│   ├── README.ru.md
-│   ├── README.vi.md
-│   ├── README.zh-Hans.md
-│   └── README.zh-Hant.md
-├── theoretical_minimum_companion_notes/
-│   ├── README.md
-│   ├── build_all.sh
-│   ├── shared/
-│   ├── core/
-│   ├── supplementary/
-│   └── extras/
-├── core_classical/
-│   └── README.md
-├── core_quantum/
-│   └── README.md
-├── core_special_relativity/
-│   └── README.md
-├── core_general_relativity/
-│   ├── README.md
-│   └── lesson_1.pdf ... lesson_10.pdf
-├── core_cosmology/
-│   ├── README.md
-│   ├── lesson_1.pdf ... lesson_9.pdf
-│   └── cosmology_ch10/
-│       ├── cosmology_ch10.tex
-│       └── ref.bib
-├── core_statistical_mechanics/
-│   ├── README.md
-│   └── lesson_1.pdf ... lesson_11.pdf
-├── supplemental_advanced_quantum/
-│   ├── README.md
-│   ├── course.pdf
-│   └── lecture_01.pdf ... lecture_10.pdf
-├── supplemental_cosmology_and_black_holes/
-│   └── README.md
-├── supplemental_higgs_boson/
-│   └── README.md
-├── supplemental_particle_physics_1/
-│   ├── README.md
-│   ├── ch1/
-│   │   ├── main.tex
-│   │   ├── book_1_template.tex
-│   │   └── bibliography.bib
-│   └── lecture transcript .txt files
-├── supplemental_particle_physics_2/
-│   ├── README.md
-│   ├── NumberTheory.pdf
-│   └── lecture transcript .txt files
-├── supplemental_particle_physics_3/
-│   └── README.md
-├── supplemental_quantum_entanglement/
-│   └── README.md
-├── supplemental_relativity/
-│   └── README.md
-├── supplemental_string_theory/
-│   └── README.md
-└── template/
-    ├── kaobook/
-    │   ├── main.tex
-    │   ├── structure.tex
-    │   └── bibliography.bib
-    └── tuftle/
-        ├── main.tex
-        ├── book_1_template.tex
-        └── bibliography.bib
-```
+### Read published notes
 
-## Prerequisites
-For reading:
-- 📖 A PDF reader (system or app-based).
+Open the PDFs in the relevant course folder, for example:
 
-For editing/building TeX materials:
-- 📦 A LaTeX distribution (TeX Live / MiKTeX).
-- ⚙️ `pdflatex`.
-- 🗂️ `bibtex` or `biber` depending on subproject.
-- 🔎 `makeindex` for projects that use indexed entries.
-
----
-
-Assumption notes:
-- There is no single root-level build system (`Makefile`, `package.json`, `pyproject.toml`) visible in this repository.
-- Build workflows are expected to be run from each subproject directory.
-
-## Installation
-```bash
-# Clone the repository
-git clone https://github.com/lachlanchen/leonardsusskind.git
-cd leonardsusskind
-```
-
-This repository is content-first. If it is mirrored or forked, replace the remote URL with your own copy accordingly.
-
-No global package install is required to read existing notes.
-
-## Usage
-### 1) Read existing notes
-Open PDFs in relevant folders, for example:
 - `core_general_relativity/lesson_1.pdf`
 - `core_cosmology/lesson_1.pdf`
 - `core_statistical_mechanics/lesson_1.pdf`
 - `supplemental_advanced_quantum/course.pdf`
-- `supplemental_particle_physics_2/NumberTheory.pdf`
 
-### 2) Author or extend LaTeX materials
-- Edit `.tex` and `.bib` files in the target course/template folder.
-- Compile with the workflow specified by that folder.
-- Build in-place so local relative assets and style files resolve correctly.
+### Read transcripts directly
 
-### 3) Navigate by track-level entry points
-Each major track has its own `README.md` with scoped scope notes, references, and progress.
+For the same lecture archive, use:
 
-### 4) Use imported companion notes
-`theoretical_minimum_companion_notes/` contains a dedicated import of companion TeX notes sourced from `https://github.com/weka511/tm`. Build them with:
+- `subtitles/.../*.srt` for subtitle-style reading and timestamp fidelity
+- `markdown/.../*.md` for text review, searching, and note generation
+
+### Work on transcript-derived notes
+
+The generated-note tree lives under:
+
+- `generated_course_notes/<track>/<subject>/<run>/`
+
+Typical generated outputs include:
+
+- chapter TeX in `chapters/lecture_XX/content.tex`
+- lecture PDF in `chapters/lecture_XX/lecture.pdf`
+- merged course PDF in `course.pdf`
+
+### Work on imported companion notes
 
 ```bash
 ./theoretical_minimum_companion_notes/build_all.sh
 ```
 
-## Configuration
-There is no global configuration file.
+## Collaboration
 
-Configuration is local to each TeX project. Typical knobs are embedded in document sources, including:
-- Document class and package setup in `template/kaobook/main.tex`
-- Reusable style/structure in `template/kaobook/`
-- Bibliography backend and cite style in local `main.tex`/`ref.bib` pairs
-- Include paths for images and chapter-specific assets in each project
+Collaborations are welcome, especially if you want to improve the mathematical quality and reach of Leonard Susskind-related study material.
 
-Representative local configuration points:
-- `template/kaobook/main.tex`
-- `template/tuftle/main.tex`
-- `core_cosmology/cosmology_ch10/cosmology_ch10.tex`
-- `supplemental_particle_physics_1/ch1/main.tex`
+High-value contribution areas:
 
-## Examples
-### Example A: Build `template/kaobook`
-`template/kaobook/main.tex` documents this compile chain:
+- transcript cleanup
+  - fix speaker attribution
+  - repair timestamps
+  - correct physics terms, names, and notation
+- TeX improvement
+  - turn transcripts into cleaner mathematical exposition
+  - improve structure, typography, and cross-references
+  - refine generated chapters into durable course notes
+- figure and equation work
+  - verify extracted lecture frames
+  - redraw diagrams in TikZ
+  - convert blackboard equations into reliable LaTeX
+- broader physics archival work
+  - improve *Theoretical Minimum* companion material
+  - connect related Susskind lectures, books, and note sets
+  - help spread and preserve this body of physics teaching responsibly
+
+If you contribute, prefer focused commits and mention the exact folders, transcripts, or course runs you changed.
+
+## Build Notes
+
+There is no single root build system. Build from the specific folder you are working in.
+
+Examples:
 
 ```bash
 cd template/kaobook
@@ -239,9 +120,6 @@ pdflatex main
 pdflatex main
 ```
 
-### Example B: Build `core_cosmology/cosmology_ch10`
-`cosmology_ch10.tex` uses a BibTeX-style workflow:
-
 ```bash
 cd core_cosmology/cosmology_ch10
 pdflatex cosmology_ch10.tex
@@ -250,112 +128,16 @@ pdflatex cosmology_ch10.tex
 pdflatex cosmology_ch10.tex
 ```
 
-### Example C: Build `supplemental_particle_physics_1/ch1`
-```bash
-cd supplemental_particle_physics_1/ch1
-pdflatex main.tex
-bibtex main
-makeindex main.idx
-pdflatex main.tex
-pdflatex main.tex
-```
-
-### Example D: View output locally
-```bash
-xdg-open supplemental_particle_physics_1/ch1/main.pdf
-```
-
-## Development Notes
-- This is primarily a documentation/notes repository, not an application codebase.
-- Some folders include generated TeX artifacts (`.aux`, `.log`, `.toc`, `.bbl`, etc.) committed in-repo.
-- Build commands can vary by subdirectory; follow the local `.tex` conventions.
-- Per-track `README.md` files exist across core and supplemental directories and should be kept aligned with root-level progress claims.
-- `i18n/` exists and is used for multilingual README variants.
-- The root README is treated as canonical; localized files should follow it when updated.
-
-## Canonical Course Progress (Preserved and Reorganized)
-
-### Core Courses
-
-#### Classical Mechanics
-The textbook of this courses [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) had been published. You can buy it from Amazon [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681).
-
-#### Quantum Mechanics
-The textbook of this courses [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) had been published. You can buy it from Amazon [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903).
-
-#### Special Relativity and Electrodynamics
-The textbook of this courses [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) had been published. You can buy it from Amazon [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065).
-
-#### Core Progress Table
-| Course | Draft Progress | Notes Progress | Notes/Reference |
-|---|---:|---:|---|
-| General Relativity | 10/10 | 10/10 | The lecture notes had been taken by https://www.lapasserelle.com/general_relativity/ . |
-| Cosmology | 10/10 | 9/10 | The lecture notes, from chapter 1 to 9, had been taken by https://www.lapasserelle.com/cosmology/ . The chapter 10 is in the process. |
-| Statistical Mechanics | 11/11 | 10/10 | The lecture notes had been taken by https://www.lapasserelle.com/statistical_mechanics/. |
-
-### Supplementary Courses
-| Course | Draft Progress | Notes Progress |
-|---|---:|---:|
-| Advanced Quantum Mechanics | 0/10 | 0/10 |
-| Higgs Boson | 0/1 | 0/1 |
-| Quantum Entanglement | 0/9 | 0/9 |
-| Relativity | 0/9 | 0/9 |
-| Particle Physics 1: Basic Concepts | 6/10 | 0/10 |
-| Particle Physics 2: Standard Model | 0/10 | 0/10 |
-| Particle Physics 3: Supersymmetry and Grand Unification | 0/10 | 0/10 |
-| String Theory | 0/11 | 10/10 |
-| Cosmology and Black Holes | 0/8 | 0/10 |
-
-### Progress Integrity Note
-- The progress tables above are preserved from the canonical README text.
-- Repository files include both mature and placeholder tracks; if a table entry and folder state appear inconsistent, treat the table as the documented intent and update both together in future revisions.
-
-## Troubleshooting
-| Issue | Resolution |
-|---|---|
-| `pdflatex: command not found` | Install a LaTeX distribution and ensure binaries are in `PATH`. |
-| Bibliography/index not appearing | Run the required backend (`bibtex` or `biber`) and `makeindex` if used, then rerun `pdflatex`. |
-| Missing style/class file errors | Build from the intended project directory so relative paths to local assets resolve correctly. |
-| Build output differs across environments | This repository contains materials produced in different environments; align package versions where possible. |
-| Stale multilingual links or missing language README | Ensure the top language options line and files under `i18n/` stay synchronized. |
-| GitHub markdown link mismatch after folder rename | Revalidate root-language links and all `i18n/README.*.md` references in one pass. |
-
-## Roadmap
-- Continue supplementary tracks with real chapter content and source files.
-- Improve consistency of per-course README files.
-- Expand and maintain multilingual README files under `i18n/` and keep the language selector synchronized.
-- Add a repository-level build guidance section for each subproject that has TeX sources.
-- Add per-track compile snippets where local toolchain differences exist.
-- Add minimal automation to validate README/i18n link integrity.
-
-## Contribution
-You can contribute to this project by forking it and sending a pull request.
-
-Suggested contribution scope:
-- Add or improve chapter notes and references.
-- Improve TeX source quality and reproducible build instructions.
-- Keep root and per-track README progress statements synchronized.
-- Maintain multilingual README parity under `i18n/`.
-
-Recommended pull request hygiene:
-- Mention the exact track folder(s) changed.
-- Include the TeX compile commands used (if source files were edited).
-- Update relevant progress tables when chapter state changes.
-- Update `i18n/` readmes after canonical English README changes.
-
 ## Acknowledgements
-- Professor Leonard Susskind for the original lecture content.
-- Simon Crase for the companion-note repository imported under `theoretical_minimum_companion_notes/`.
-- Companion note source repository: https://github.com/weka511/tm
-- Existing referenced note source: https://www.lapasserelle.com/general_relativity/
-- Existing referenced note source: https://www.lapasserelle.com/cosmology/
-- Existing referenced note source: https://www.lapasserelle.com/statistical_mechanics/
 
-## ❤️ Support
-
-| Donate | PayPal | Stripe |
-| --- | --- | --- |
-| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
+- Leonard Susskind for the original lecture content.
+- Simon Crase for the companion-note repository imported into `theoretical_minimum_companion_notes/`.
+- Companion note source repository: <https://github.com/weka511/tm>
+- Existing referenced note sources:
+  - <https://www.lapasserelle.com/general_relativity/>
+  - <https://www.lapasserelle.com/cosmology/>
+  - <https://www.lapasserelle.com/statistical_mechanics/>
 
 ## License
+
 This repository is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE).
