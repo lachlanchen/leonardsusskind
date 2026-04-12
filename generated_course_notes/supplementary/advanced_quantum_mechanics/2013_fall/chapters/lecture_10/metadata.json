@@ -12,7 +12,7 @@
       "timestamp_hhmmss": "00:08:00.000",
       "source_candidate": "lecture_10_candidate_07_000800000.png",
       "recommended_use": "tikz_reference",
-      "rationale": "Best readable anticommutator board state; it captures the equal-point fermionic operator algebra central to the exclusion-principle discussion."
+      "rationale": "Best readable equal-point fermion anticommutator board state; it supports the exclusion-principle step without relying on a blurry reconstruction."
     },
     {
       "name": "lecture_10_frame_02.png",
@@ -20,7 +20,7 @@
       "timestamp_hhmmss": "00:18:06.000",
       "source_candidate": "lecture_10_candidate_10_001806000.png",
       "recommended_use": "tikz_reference",
-      "rationale": "Clearest usable review frame for the 1D Dirac/right-moving component equations, including the time-space derivative relation and Hamiltonian form."
+      "rationale": "Clearest usable review frame for the 1D Dirac setup, showing the right-moving equation and Hamiltonian form while the left-moving species is being added."
     },
     {
       "name": "lecture_10_frame_03.png",
@@ -28,7 +28,7 @@
       "timestamp_hhmmss": "00:27:57.000",
       "source_candidate": "lecture_10_candidate_12_002757000.png",
       "recommended_use": "figure",
-      "rationale": "Stable and legible shot of the Pauli-matrix identifications for the alpha matrices, directly supporting the move to the multidimensional Dirac construction."
+      "rationale": "Stable and legible Pauli-matrix identification frame; it cleanly anchors the move to the three-dimensional massless Dirac construction."
     }
   ]
 }
