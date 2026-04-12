@@ -1,0 +1,2635 @@
+# Transcript
+
+Source: supplementary/quantum_entanglement/2006_fall_part_1/051 - Lecture 4 ｜ Quantum Entanglements, Part 1 (Stanford) [5vfo512fvlE].mp4
+
+- [00:00:00,000 - 00:00:10,040] This program is brought to you by Stanford University.
+- [00:00:10,460 - 00:00:12,960] Please visit us at stanford.edu.
+- [00:00:17,620 - 00:00:19,620] We won't get to Bell's theorem, but that's okay.
+- [00:00:19,680 - 00:00:20,560] We can do that next week.
+- [00:00:22,060 - 00:00:23,560] I hope we get to entanglement.
+- [00:00:24,300 - 00:00:26,380] All right, but we were in the midst of still,
+- [00:00:26,860 - 00:00:28,720] entanglement has to do with what happens,
+- [00:00:28,720 - 00:00:30,900] the simplest case of it is when
+- [00:00:30,900 - 00:00:33,080] you have two electrons with their spins.
+- [00:00:33,760 - 00:00:35,839] Forget the fact that electrons can move around,
+- [00:00:35,940 - 00:00:37,180] just worry about their spins.
+- [00:00:37,960 - 00:00:39,790] Entanglement is what happens when
+- [00:00:39,790 - 00:00:41,620] you have more than one system
+- [00:00:41,620 - 00:00:45,920] and the kind of interesting quantum states
+- [00:00:45,920 - 00:00:48,060] that can be made for
+- [00:00:48,060 - 00:00:50,200] systems which have parts to them,
+- [00:00:50,480 - 00:00:51,599] more than one part.
+- [00:00:52,400 - 00:00:56,140] We're still struggling through trying to understand
+- [00:00:56,140 - 00:00:57,920] the simplest quantum system,
+- [00:00:57,920 - 00:01:01,160] the one bit or the one quantum bit system,
+- [00:01:01,160 - 00:01:03,960] the spin, the two-state system.
+- [00:01:03,960 - 00:01:06,320] And I wanted to finish that
+- [00:01:06,320 - 00:01:08,680] up because it will come in
+- [00:01:08,680 - 00:01:10,920] in a very central way, all
+- [00:01:10,920 - 00:01:13,160] of the things we are talking about,
+- [00:01:13,160 - 00:01:15,160] about the simple spin system.
+- [00:01:16,160 - 00:01:20,160] Last time we talked about what happens if you're interested
+- [00:01:20,160 - 00:01:24,160] in the component of spin along some axis,
+- [00:01:24,160 - 00:01:26,160] which is neither three, two, or one,
+- [00:01:26,160 - 00:01:27,840] but along some arbitrary axis.
+- [00:01:27,840 - 00:01:30,840] And the arbitrary axis can
+- [00:01:30,840 - 00:01:33,840] be represented by a unit vector,
+- [00:01:33,840 - 00:01:35,840] a unit pointer,
+- [00:01:35,840 - 00:01:40,840] a unit pointer that has components
+- [00:01:42,840 - 00:01:48,840] n1, n2, n3, incidentally,
+- [00:01:48,840 - 00:01:53,840] okay, so here's my coordinates in space,
+- [00:01:53,840 - 00:01:55,340] I guess I've called this one
+- [00:01:55,340 - 00:01:56,840] one, this one two, this one three,
+- [00:01:56,840 - 00:01:57,840] and this one three.
+- [00:01:57,840 - 00:02:01,840] And I may lapse every now and then
+- [00:02:01,840 - 00:02:05,840] into calling one, x, two, y, and three, z.
+- [00:02:05,840 - 00:02:10,840] So keep in mind that's, I've tried not to,
+- [00:02:10,840 - 00:02:13,840] I've tried to keep a consistent notation in my notes,
+- [00:02:13,840 - 00:02:15,340] but I do have that habit
+- [00:02:15,340 - 00:02:16,840] of sometimes going back and forth
+- [00:02:16,840 - 00:02:18,840] from one, two, and three to x, y, and z.
+- [00:02:22,840 - 00:02:26,840] And then if you have an ordinary,
+- [00:02:27,840 - 00:02:31,840] vector in space, not this unit vector in particular,
+- [00:02:31,840 - 00:02:33,840] but some other vector, yes?
+- [00:02:33,840 - 00:02:35,840] Is that a right-handed coordinate system?
+- [00:02:35,840 - 00:02:37,840] Is that right-handed or not?
+- [00:02:37,840 - 00:02:41,840] I intended it to be right-handed, but I can, x,
+- [00:02:41,840 - 00:02:45,840] I think so, but I almost, my shoulder is broken,
+- [00:02:45,840 - 00:02:47,840] and I don't think I can do it.
+- [00:02:47,840 - 00:02:49,840] It doesn't matter.
+- [00:02:49,840 - 00:02:51,840] One, two, and, I mean, it does matter,
+- [00:02:51,840 - 00:02:53,840] but is it right-handed or isn't it?
+- [00:02:53,840 - 00:02:54,840] No?
+- [00:02:54,840 - 00:02:55,840] It's left-handed.
+- [00:02:55,840 - 00:02:56,840] It's left-handed, okay.
+- [00:02:56,840 - 00:02:58,840] So then we have to
+- [00:02:58,840 - 00:03:00,840] have y going into the board.
+- [00:03:00,840 - 00:03:03,340] All right, then we have to
+- [00:03:03,340 - 00:03:05,840] have y going into the board, but...
+- [00:03:05,840 - 00:03:08,840] Although you could have just relabeled y,
+- [00:03:08,840 - 00:03:10,840] and y and z, and z could have gone out.
+- [00:03:10,840 - 00:03:13,840] Yeah, yeah, indeed.
+- [00:03:13,840 - 00:03:22,840] But my broken shoulder is limiting my orientation.
+- [00:03:22,840 - 00:03:25,840] All right, now, if you have some physical vector,
+- [00:03:25,840 - 00:03:29,840] thing that you can measure, in particular,
+- [00:03:29,840 - 00:03:33,840] a thing that we've represented as having components sigma,
+- [00:03:33,840 - 00:03:37,840] sigma x or sigma 1, sigma 2, and sigma 3,
+- [00:03:37,840 - 00:03:40,840] this is supposed to be some physically measurable
+- [00:03:40,840 - 00:03:43,840] little magnetic moment or spin vector.
+- [00:03:43,840 - 00:03:47,840] It has components along the 1, 2, and 3 axes.
+- [00:03:47,840 - 00:03:49,340] We can call them sigma
+- [00:03:49,340 - 00:03:50,840] 1, sigma 2, and sigma 3,
+- [00:03:50,840 - 00:03:52,340] and we have called them sigma
+- [00:03:52,340 - 00:03:53,840] 1, sigma 2, and sigma 3.
+- [00:03:53,840 - 00:03:55,840] Those are observable quantities,
+- [00:03:55,840 - 00:03:57,840] and we represent them by matrices.
+- [00:03:57,840 - 00:04:00,840] But for the moment, forget that they're matrices.
+- [00:04:00,840 - 00:04:03,840] If we're interested in the component of sigma
+- [00:04:03,840 - 00:04:08,840] along the arbitrary axis n,
+- [00:04:08,840 - 00:04:11,340] then what we're interested in is
+- [00:04:11,340 - 00:04:13,840] the dot product of sigma with n.
+- [00:04:13,840 - 00:04:15,840] And to indicate a unit vector,
+- [00:04:15,840 - 00:04:17,839] it's conventional to put a
+- [00:04:17,839 - 00:04:19,839] little hat on top of it.
+- [00:04:19,839 - 00:04:21,839] If it's a unit vector,
+- [00:04:21,839 - 00:04:24,840] then let's just write down a couple of equations.
+- [00:04:25,840 - 00:04:29,840] n1 squared plus n2 squared plus
+- [00:04:29,840 - 00:04:33,840] n3 squared is equal to 1.
+- [00:04:33,840 - 00:04:36,840] Okay, that's the definition of a unit vector.
+- [00:04:36,840 - 00:04:39,340] And sigma dot n, this
+- [00:04:39,340 - 00:04:41,840] is the ordinary space dot product,
+- [00:04:41,840 - 00:04:43,840] not the inner product of
+- [00:04:43,840 - 00:04:45,840] two abstract vectors representing states,
+- [00:04:45,840 - 00:04:48,340] but just the ordinary dot
+- [00:04:48,340 - 00:04:50,840] product in space of a vector
+- [00:04:50,840 - 00:04:52,840] that we can measure
+- [00:04:52,840 - 00:04:54,840] whose components are measurable quantities.
+- [00:04:54,840 - 00:04:58,840] And the unit vector n, then this is by definition
+- [00:04:58,840 - 00:05:02,840] n1 sigma 1 plus n2
+- [00:05:02,840 - 00:05:06,840] sigma 2 plus n3 sigma 3.
+- [00:05:06,840 - 00:05:09,840] But now, each of the sigmas is itself a matrix.
+- [00:05:09,840 - 00:05:11,840] The n's are just numbers.
+- [00:05:11,840 - 00:05:15,840] The direction cosines of some direction is what they are.
+- [00:05:15,840 - 00:05:17,840] The direction cosines of some direction.
+- [00:05:17,840 - 00:05:21,840] But the sigmas are matrices,
+- [00:05:21,840 - 00:05:23,840] and so this whole thing is itself matrices or operators,
+- [00:05:23,840 - 00:05:26,840] if I want to be really technically correct,
+- [00:05:26,840 - 00:05:28,840] linear operators.
+- [00:05:28,840 - 00:05:30,840] But let's just think of them as matrices.
+- [00:05:30,840 - 00:05:32,840] And then remembering what's,
+- [00:05:32,840 - 00:05:35,840] let's write down what the matrix is.
+- [00:05:35,840 - 00:05:37,840] Okay, so sigma 3,
+- [00:05:37,840 - 00:05:39,840] remember what sigma 3 is,
+- [00:05:39,840 - 00:05:42,840] it's the matrix with a 1 and a minus 1.
+- [00:05:42,840 - 00:05:45,840] So that means we would multiply it by n3
+- [00:05:45,840 - 00:05:50,840] and put n3 here and minus n3 here.
+- [00:05:50,840 - 00:05:53,840] Sigma 1 has a 1,
+- [00:05:53,840 - 00:05:55,840] and a 1 over here,
+- [00:05:55,840 - 00:05:58,840] so we would put an n1 over here,
+- [00:05:58,840 - 00:06:00,840] and an n1 over here.
+- [00:06:00,840 - 00:06:03,840] And then sigma 2 has a minus i,
+- [00:06:03,840 - 00:06:05,840] and a plus i.
+- [00:06:05,840 - 00:06:09,840] So we would write plus i,
+- [00:06:09,840 - 00:06:11,840] and let me make this bigger.
+- [00:06:14,840 - 00:06:17,840] n1 plus i n2.
+- [00:06:20,840 - 00:06:22,840] And then down here it would be n1,
+- [00:06:22,840 - 00:06:26,840] no sorry, minus i n2.
+- [00:06:26,840 - 00:06:28,840] And here it would be n1 minus,
+- [00:06:28,840 - 00:06:32,840] plus i n2.
+- [00:06:32,840 - 00:06:35,840] And then minus n3 over here.
+- [00:06:35,840 - 00:06:39,840] Notice that it's Hermitian.
+- [00:06:39,840 - 00:06:41,840] The diagonal elements are real,
+- [00:06:41,840 - 00:06:43,340] the off-diagonal elements are
+- [00:06:43,340 - 00:06:44,840] complex conjugates of each other,
+- [00:06:44,840 - 00:06:47,840] that makes it Hermitian.
+- [00:06:47,840 - 00:06:51,840] And I'm going to just make a little notation,
+- [00:06:52,840 - 00:06:54,840] I may or may not use it very much,
+- [00:06:54,840 - 00:06:56,840] but it's a standard notation,
+- [00:06:56,840 - 00:07:00,840] to write that n1 minus i n2
+- [00:07:00,840 - 00:07:03,840] is equal to n minus,
+- [00:07:03,840 - 00:07:06,840] and n1 plus i n2
+- [00:07:06,840 - 00:07:08,840] is equal to n plus.
+- [00:07:08,840 - 00:07:10,840] Just definition.
+- [00:07:10,840 - 00:07:12,840] Okay.
+- [00:07:14,840 - 00:07:17,840] Let me write another interesting simple equation.
+- [00:07:17,840 - 00:07:19,840] If you multiply n plus,
+- [00:07:19,840 - 00:07:21,340] oh, then we can just
+- [00:07:21,340 - 00:07:22,840] write that this is equal to,
+- [00:07:22,840 - 00:07:24,840] and simplify the expression,
+- [00:07:24,840 - 00:07:31,840] n3 n minus n plus minus n3.
+- [00:07:31,840 - 00:07:34,840] That's the matrix sigma dot n,
+- [00:07:34,840 - 00:07:36,840] and it's supposed to be an observable,
+- [00:07:36,840 - 00:07:38,840] something we can measure.
+- [00:07:38,840 - 00:07:41,840] We measure it by putting the electron,
+- [00:07:41,840 - 00:07:44,840] or suddenly turning on a large magnetic field,
+- [00:07:44,840 - 00:07:47,840] oriented along the n-axis,
+- [00:07:47,840 - 00:07:49,840] and then checking whether it
+- [00:07:49,840 - 00:07:51,840] does or doesn't emit a photon.
+- [00:07:51,840 - 00:07:53,840] If it doesn't emit a photon,
+- [00:07:53,840 - 00:07:55,840] then it has
+- [00:07:55,840 - 00:07:59,840] positive component of sigma dot n.
+- [00:08:00,840 - 00:08:01,840] Okay.
+- [00:08:01,840 - 00:08:03,840] Now, one thing that we checked last time,
+- [00:08:03,840 - 00:08:05,840] I believe we checked last time,
+- [00:08:05,840 - 00:08:07,840] was that for any n,
+- [00:08:07,840 - 00:08:10,840] sigma dot n squared
+- [00:08:10,840 - 00:08:13,840] is equal to one.
+- [00:08:13,840 - 00:08:16,840] You can check that
+- [00:08:16,840 - 00:08:19,840] either by multiplying this matrix by itself,
+- [00:08:19,840 - 00:08:21,840] and then using the fact
+- [00:08:21,840 - 00:08:23,840] that n1 squared plus n2 squared
+- [00:08:23,840 - 00:08:26,840] plus n squared 3 squared equals one,
+- [00:08:26,840 - 00:08:29,840] or you can check it
+- [00:08:29,840 - 00:08:31,840] from the fact that each one of the,
+- [00:08:31,840 - 00:08:33,339] well, you can check it
+- [00:08:33,339 - 00:08:34,839] from properties of the sigma matrices,
+- [00:08:34,839 - 00:08:36,839] from the sigma matrices themselves.
+- [00:08:36,839 - 00:08:38,839] I think I, did I work that out last time?
+- [00:08:38,839 - 00:08:39,839] Yeah.
+- [00:08:39,839 - 00:08:41,839] And it follows from the fact
+- [00:08:41,839 - 00:08:43,839] that any one of the sigmas
+- [00:08:43,839 - 00:08:47,839] times any one of the other sigmas
+- [00:08:47,839 - 00:08:49,839] is equal to minus
+- [00:08:49,840 - 00:08:52,840] sigma j sigma i,
+- [00:08:52,840 - 00:08:54,840] for i not equal to j.
+- [00:08:57,840 - 00:08:59,340] So sigma 1 sigma 2
+- [00:08:59,340 - 00:09:00,840] is minus sigma 2 sigma 1,
+- [00:09:00,840 - 00:09:02,840] and you can check that easily
+- [00:09:02,840 - 00:09:05,840] that the square is equal to one.
+- [00:09:05,840 - 00:09:08,840] Now, I'm not going to prove this right now,
+- [00:09:08,840 - 00:09:10,840] it's a very, very,
+- [00:09:10,840 - 00:09:12,340] I can't prove every single
+- [00:09:12,340 - 00:09:13,840] little detail of everything we do,
+- [00:09:13,840 - 00:09:14,840] because it would take forever.
+- [00:09:14,840 - 00:09:16,840] So, here and there,
+- [00:09:16,840 - 00:09:18,840] if I say something that you don't know,
+- [00:09:19,840 - 00:09:20,840] usually it's,
+- [00:09:20,840 - 00:09:22,840] it usually means it's something that takes
+- [00:09:22,840 - 00:09:24,840] about a half a line to prove,
+- [00:09:24,840 - 00:09:26,840] and you can prove it.
+- [00:09:28,840 - 00:09:30,840] Think of it as a homework assignment.
+- [00:09:30,840 - 00:09:32,840] Okay, so if sigma dot
+- [00:09:32,840 - 00:09:34,840] n squared is equal to one,
+- [00:09:34,840 - 00:09:36,840] well, if a number squared is equal to one,
+- [00:09:36,840 - 00:09:38,840] that means that the number
+- [00:09:38,840 - 00:09:40,840] is either plus or minus one.
+- [00:09:40,840 - 00:09:41,840] Right?
+- [00:09:41,840 - 00:09:44,840] If a matrix squared is equal to one,
+- [00:09:44,840 - 00:09:47,840] it means its eigenvalues are all plus or minus one.
+- [00:09:47,840 - 00:09:48,840] Okay.
+- [00:09:48,840 - 00:09:51,840] So sigma dot n, in fact, has two,
+- [00:09:51,840 - 00:09:53,840] for any n, has two eigenvalues,
+- [00:09:53,840 - 00:09:56,840] one plus one and one equal to minus one,
+- [00:09:56,840 - 00:09:57,840] as you might expect,
+- [00:09:57,840 - 00:10:00,840] corresponding to the two possibilities
+- [00:10:00,840 - 00:10:02,840] that when you measure the spin along that axis,
+- [00:10:02,840 - 00:10:04,840] you either get plus or minus.
+- [00:10:04,840 - 00:10:07,840] So, for sigma dot n squared is equal to one,
+- [00:10:07,840 - 00:10:08,840] that's one fact.
+- [00:10:08,840 - 00:10:12,840] Another little algebraic fact,
+- [00:10:12,840 - 00:10:13,840] which is kind of neat,
+- [00:10:13,840 - 00:10:14,840] if you multiply these,
+- [00:10:14,840 - 00:10:15,840] I don't know if it's neat,
+- [00:10:15,840 - 00:10:17,840] it's true, that's all.
+- [00:10:17,840 - 00:10:19,840] If it's n plus times n minus,
+- [00:10:19,840 - 00:10:22,840] that's equal to n one squared plus n two squared.
+- [00:10:22,840 - 00:10:24,840] Oh, notice that n plus and n minus
+- [00:10:24,840 - 00:10:26,840] are complex conjugates of each other.
+- [00:10:26,840 - 00:10:29,840] So n plus n minus,
+- [00:10:29,840 - 00:10:32,840] oops, n plus n minus,
+- [00:10:32,840 - 00:10:38,840] is equal to n one squared plus n two squared.
+- [00:10:38,840 - 00:10:44,840] Now this is a true statement.
+- [00:10:44,840 - 00:10:45,840] All right, let me add to this,
+- [00:10:45,840 - 00:10:46,840] all right, let me add to this,
+- [00:10:47,840 - 00:10:49,840] n plus n minus is equal to
+- [00:10:49,840 - 00:10:51,840] n one squared plus n three squared,
+- [00:10:51,840 - 00:10:54,840] and then subtract n three squared.
+- [00:10:54,840 - 00:10:56,840] I haven't changed it.
+- [00:10:56,840 - 00:10:58,840] And now I see that n plus n minus
+- [00:10:58,840 - 00:11:02,840] is equal to one minus n three squared.
+- [00:11:02,840 - 00:11:05,840] One minus, one minus,
+- [00:11:05,840 - 00:11:06,840] I don't want to square the whole thing,
+- [00:11:06,840 - 00:11:09,840] I only want to square the n three.
+- [00:11:09,840 - 00:11:15,840] That's a, that's a useful little algebraic fact
+- [00:11:15,840 - 00:11:17,840] that if you do the homework,
+- [00:11:17,840 - 00:11:19,840] I'll write a little sign for you,
+- [00:11:19,840 - 00:11:23,840] you will use over and over again.
+- [00:11:23,840 - 00:11:27,840] But it's, it's, it's not anything deep,
+- [00:11:27,840 - 00:11:31,840] it's just a little algebraic fact.
+- [00:11:31,840 - 00:11:33,840] Okay, here is the question,
+- [00:11:33,840 - 00:11:37,840] ultimately the question I want to ask is the following.
+- [00:11:37,840 - 00:11:40,840] Supposing I orient the spin,
+- [00:11:40,840 - 00:11:43,340] I prepare a spin by putting
+- [00:11:43,340 - 00:11:45,840] it in a large magnetic field,
+- [00:11:45,840 - 00:11:47,840] waiting for it to decay or not decay,
+- [00:11:47,840 - 00:11:49,840] and then I force it into a particular,
+- [00:11:49,840 - 00:11:51,840] along a particular axis.
+- [00:11:51,840 - 00:11:57,840] Supposing I force it to be along the n axis.
+- [00:11:57,840 - 00:12:00,340] Then I measure the component of
+- [00:12:00,340 - 00:12:02,840] the spin along a different axis.
+- [00:12:02,840 - 00:12:05,840] Let's call it the m axis.
+- [00:12:05,840 - 00:12:09,840] Here's the m axis over here.
+- [00:12:09,840 - 00:12:14,840] What's the probability that if I make the spin
+- [00:12:14,840 - 00:12:17,840] with a spin along the n axis,
+- [00:12:17,840 - 00:12:20,840] I measure it along the m axis,
+- [00:12:20,840 - 00:12:24,840] I will find that it's plus along the m axis,
+- [00:12:24,840 - 00:12:26,840] and of course the opposite probability
+- [00:12:26,840 - 00:12:28,840] that it's minus along the m axis.
+- [00:12:28,840 - 00:12:30,840] This is the central kind of question
+- [00:12:30,840 - 00:12:33,840] that quantum mechanics deals with.
+- [00:12:33,840 - 00:12:36,840] For the simple spin, electron spin,
+- [00:12:36,840 - 00:12:39,840] this is about the only interesting question
+- [00:12:39,840 - 00:12:41,840] that you can ask.
+- [00:12:41,840 - 00:12:43,840] Question?
+- [00:12:43,840 - 00:12:45,840] Okay.
+- [00:12:45,840 - 00:12:47,840] You could also of course ask,
+- [00:12:47,840 - 00:12:49,840] supposing you oriented along the m axis
+- [00:12:49,840 - 00:12:51,840] and measured on the n axis.
+- [00:12:51,840 - 00:12:53,840] By symmetry it's pretty clear
+- [00:12:53,840 - 00:12:55,840] that they should be equal to each other.
+- [00:12:55,840 - 00:12:57,840] And furthermore,
+- [00:12:57,840 - 00:12:59,840] you might even expect
+- [00:12:59,840 - 00:13:02,840] that the rotational symmetry of the world
+- [00:13:02,840 - 00:13:04,840] should mean that the answer only depends
+- [00:13:04,840 - 00:13:06,840] on the angle between n and m.
+- [00:13:06,840 - 00:13:08,840] That would be a nice thing to discover,
+- [00:13:08,840 - 00:13:09,840] and in fact it's true.
+- [00:13:09,840 - 00:13:11,840] The answer only depends on the angle between them.
+- [00:13:11,840 - 00:13:14,840] That's going to be part of your homework assignment.
+- [00:13:14,840 - 00:13:16,840] But how do you do it?
+- [00:13:16,840 - 00:13:17,840] Okay.
+- [00:13:17,840 - 00:13:19,840] So we have to go back then
+- [00:13:19,840 - 00:13:23,840] to the basic probability postulate
+- [00:13:23,840 - 00:13:26,840] about quantum mechanics.
+- [00:13:26,840 - 00:13:28,840] That what we first do
+- [00:13:28,840 - 00:13:31,840] is calculate the eigenvectors
+- [00:13:31,840 - 00:13:33,840] of sigma dot n
+- [00:13:33,840 - 00:13:36,840] and the eigenvectors of sigma dot m.
+- [00:13:36,840 - 00:13:38,840] Now, we first find the eigenvector
+- [00:13:38,840 - 00:13:40,840] of sigma dot n that corresponds
+- [00:13:40,840 - 00:13:43,840] to spin pointing definitely along this axis.
+- [00:13:44,840 - 00:13:47,840] And then we take the inner product
+- [00:13:47,840 - 00:13:50,840] with the eigenvector of sigma dot m
+- [00:13:50,840 - 00:13:53,840] corresponding to spin pointing along this direction.
+- [00:13:53,840 - 00:13:55,840] So we could write this out.
+- [00:13:55,840 - 00:13:57,840] Let's make a notation.
+- [00:14:00,840 - 00:14:01,840] Okay.
+- [00:14:01,840 - 00:14:03,840] Question? No. Yes.
+- [00:14:03,840 - 00:14:06,840] Yeah, you just told us that
+- [00:14:06,840 - 00:14:11,840] sigma 1, 2, and 3 are spin operators.
+- [00:14:11,840 - 00:14:13,840] Does quantum mechanics tell us that,
+- [00:14:13,840 - 00:14:16,840] or did some experiments tell us that?
+- [00:14:16,840 - 00:14:20,840] Well, it's no single experiment.
+- [00:14:20,840 - 00:14:23,840] It's the whole accumulated, I mean,
+- [00:14:23,840 - 00:14:27,840] um, how to say this?
+- [00:14:27,840 - 00:14:29,840] There was a whole lot of data about this.
+- [00:14:29,840 - 00:14:31,340] You could do this experiment
+- [00:14:31,340 - 00:14:32,840] over and over and over again,
+- [00:14:32,840 - 00:14:38,840] and eventually you would discover
+- [00:14:38,840 - 00:14:40,840] that the probabilities,
+- [00:14:40,840 - 00:14:42,840] that there are probabilities,
+- [00:14:42,840 - 00:14:44,840] that's an experimental fact,
+- [00:14:44,840 - 00:14:46,840] that the probabilities are given by the formulas
+- [00:14:46,840 - 00:14:48,840] we're going to write down.
+- [00:14:48,840 - 00:14:51,840] That was something that was deduced by guessing.
+- [00:14:51,840 - 00:14:54,840] It was guessing. It was brilliant guessing.
+- [00:14:54,840 - 00:14:58,840] Um, but, uh,
+- [00:14:58,840 - 00:15:00,840] and who guessed it?
+- [00:15:00,840 - 00:15:02,840] It wasn't any single person.
+- [00:15:02,840 - 00:15:04,840] It was a buildup from the work of,
+- [00:15:04,840 - 00:15:06,840] first of all, starting with Einstein,
+- [00:15:06,840 - 00:15:08,840] who was the first to realize that quantum theory
+- [00:15:08,840 - 00:15:10,840] involved probabilities,
+- [00:15:10,840 - 00:15:11,840] and then Born,
+- [00:15:11,840 - 00:15:12,840] and then Heisenberg,
+- [00:15:12,840 - 00:15:14,840] and then Dirac.
+- [00:15:14,840 - 00:15:16,840] So there was a series of steps
+- [00:15:16,840 - 00:15:18,840] in which all of this was eventually discovered.
+- [00:15:18,840 - 00:15:20,840] Now, nobody, nobody has ever understood
+- [00:15:20,840 - 00:15:22,840] what the hell Heisenberg was thinking
+- [00:15:22,840 - 00:15:25,840] when he invented matrix mechanics.
+- [00:15:25,840 - 00:15:29,840] Nobody understands what the mystical experience
+- [00:15:29,840 - 00:15:31,840] or what he was smoking or what,
+- [00:15:31,840 - 00:15:35,840] but, uh, but, uh, he did.
+- [00:15:35,840 - 00:15:39,840] And, uh, I think you simply have to take
+- [00:15:39,840 - 00:15:41,840] quantum mechanics as data,
+- [00:15:41,840 - 00:15:45,780] by
+- [00:15:45,780 - 00:15:48,840] the mechanics of a big questions.
+- [00:15:48,840 - 00:16:06,580] Okay, so, what
+- [00:16:06,840 - 00:16:08,840] we're talking about now,
+- [00:16:08,840 - 00:16:09,840] what I'll introduce,
+- [00:16:09,840 - 00:16:10,840] certainly to this.
+- [00:16:10,840 - 00:16:15,660] call it the vector, the eigenvector of
+- [00:16:15,660 - 00:16:20,480] sigma dot n with eigenvalue plus 1.
+- [00:16:20,480 - 00:16:24,660] What does it satisfy? It satisfies
+- [00:16:24,660 - 00:16:28,840] that sigma dot n equals 1.
+- [00:16:32,840 - 00:16:36,200] If you apply sigma dot n to
+- [00:16:36,200 - 00:16:39,560] it, you just get the same vector back.
+- [00:16:39,560 - 00:16:43,350] This whole elaborate thing here is just
+- [00:16:43,350 - 00:16:47,140] a statement that I'm talking about the eigenvector
+- [00:16:47,140 - 00:16:50,210] of sigma dot n with eigenvalue plus 1. If
+- [00:16:50,210 - 00:16:53,280] I apply sigma dot n to such an eigenvector,
+- [00:16:53,280 - 00:17:00,280] I just get 1 times the same vector.
+- [00:17:02,920 - 00:17:07,879] That's the eigenvector corresponding to a state.
+- [00:17:07,879 - 00:17:09,560] We could call it...
+- [00:17:09,560 - 00:17:11,810] We can call it an eigenstate. The
+- [00:17:11,810 - 00:17:14,060] word eigenstate is also used all the time.
+- [00:17:14,060 - 00:17:16,829] This is the eigenstate of sigma dot n such
+- [00:17:16,829 - 00:17:19,599] that sigma dot n, if you measure it, is definitely
+- [00:17:19,599 - 00:17:21,319] equal to plus 1.
+- [00:17:21,319 - 00:17:27,359] We can do the same for sigma dot m.
+- [00:17:27,359 - 00:17:32,309] Sigma dot m on the state sigma dot
+- [00:17:32,309 - 00:17:37,260] m equals plus 1 also equals sigma dot m.
+- [00:17:37,260 - 00:17:38,679] This equal here is not an equals.
+- [00:17:38,679 - 00:17:39,560] It's just part of the notation.
+- [00:17:39,560 - 00:17:46,560] This is the notation labeling the vector.
+- [00:17:46,560 - 00:17:49,560] I could have used a simpler notation.
+- [00:17:49,560 - 00:17:51,560] What do we have to do?
+- [00:17:51,560 - 00:17:55,060] The first step is to construct these vectors to find out
+- [00:17:55,060 - 00:17:58,560] what the eigenvectors of sigma dot n are and sigma dot m.
+- [00:17:58,560 - 00:18:01,060] Then when you've done that, you
+- [00:18:01,060 - 00:18:03,560] construct what is called the probability amplitude.
+- [00:18:03,560 - 00:18:06,560] The first step is the probability amplitude.
+- [00:18:06,560 - 00:18:07,560] That's the inner product.
+- [00:18:07,560 - 00:18:08,560] That's the inner product.
+- [00:18:08,560 - 00:18:09,560] That's the inner product.
+- [00:18:09,560 - 00:18:11,060] That's the Cry偵ás type of neighbourhood.
+- [00:18:11,060 - 00:18:15,210] And over here, this girls
+- [00:18:15,210 - 00:18:19,360] is equal to sigma dot m.
+- [00:18:19,360 - 00:18:19,560] Alright?
+- [00:18:19,560 - 00:18:20,560] So now we pulled that out, and this
+- [00:18:20,560 - 00:18:21,560] is what you would get that it's trivial.
+- [00:18:21,560 - 00:18:26,560] See dí's equalár between the prepared state and
+- [00:18:26,560 - 00:18:31,560] the final outcome whose probability you're interested in.
+- [00:18:32,760 - 00:18:35,560] Sigma dot m equals 1.
+- [00:18:36,560 - 00:18:38,060] This is the probability amplitude that if you
+- [00:18:38,060 - 00:18:39,560] create an electron with its spin along the n-axis,
+- [00:18:39,560 - 00:18:42,620] Not the probability, this is the probability amplitude.
+- [00:18:42,620 - 00:18:45,399] To get the probability, this is a
+- [00:18:45,399 - 00:18:48,179] complex number in general, you square it.
+- [00:18:48,179 - 00:18:51,399] You multiply it by its complex conjugate, which
+- [00:18:51,399 - 00:18:54,620] is labeled by two bars and a square.
+- [00:18:54,620 - 00:18:57,879] The absolute value of it squared.
+- [00:18:57,879 - 00:19:00,299] That's the probability, we can call that the
+- [00:19:00,299 - 00:19:02,720] probability that, I don't want to write all
+- [00:19:02,720 - 00:19:03,940] this out.
+- [00:19:03,940 - 00:19:06,070] It's the probability that if sigma dot n is
+- [00:19:06,070 - 00:19:08,200] equal to one, and then you measure sigma dot
+- [00:19:08,200 - 00:19:14,040] m, you'll get one, as opposed to minus one.
+- [00:19:14,040 - 00:19:18,700] That's the kind of thing that quantum mechanics calculates.
+- [00:19:18,700 - 00:19:21,240] That's exactly what quantum mechanics
+- [00:19:21,240 - 00:19:23,780] does in every single case.
+- [00:19:23,780 - 00:19:26,960] It asks a question, what is the probability
+- [00:19:26,960 - 00:19:30,140] that you'll get a certain outcome about a
+- [00:19:30,140 - 00:19:33,370] particular variable, given that you've prepared the
+- [00:19:33,370 - 00:19:36,600] state in some way, perhaps involving some
+- [00:19:36,600 - 00:19:37,400] other variable.
+- [00:19:38,200 - 00:19:41,700] One notation in probability is that you use
+- [00:19:41,700 - 00:19:45,200] the given as a subscript, and then what you
+- [00:19:45,200 - 00:19:47,500] test for is the .
+- [00:19:47,500 - 00:19:54,000] Okay, so we could then write the probability
+- [00:19:54,000 - 00:20:00,500] that if sigma dot n equals one, then sigma
+- [00:20:00,500 - 00:20:04,580] dot m equals one.
+- [00:20:04,580 - 00:20:08,040] The probability in general will be less than one.
+- [00:20:08,040 - 00:20:10,500] So let's think of some cases.
+- [00:20:10,500 - 00:20:12,939] If n and m are equal,
+- [00:20:12,939 - 00:20:15,379] then obviously the probability is one.
+- [00:20:15,379 - 00:20:17,709] If n and m are opposite directions, then
+- [00:20:17,709 - 00:20:20,040] that's just a question, what's the probability if
+- [00:20:20,040 - 00:20:21,800] the spin is up, then it's down?
+- [00:20:21,800 - 00:20:24,980] Well, that must be zero, so we should find that.
+- [00:20:24,980 - 00:20:30,139] What about at 90 degrees?
+- [00:20:30,139 - 00:20:31,139] A half.
+- [00:20:31,139 - 00:20:33,679] Anywhere in the plane, if m is in the
+- [00:20:33,679 - 00:20:36,220] plane perpendicular to n, we would expect to get
+- [00:20:36,220 - 00:20:37,879] the probability being a half.
+- [00:20:38,040 - 00:20:40,100] And that's true.
+- [00:20:40,100 - 00:20:41,100] But how do we justify it?
+- [00:20:41,100 - 00:20:44,220] How do we actually calculate it?
+- [00:20:44,220 - 00:20:47,559] So I'm going to take you through the
+- [00:20:47,559 - 00:20:50,899] calculation of the eigenvectors, but then you are going
+- [00:20:50,899 - 00:20:53,049] to go home and take their inner product,
+- [00:20:53,049 - 00:20:55,200] I'll take their inner product, but then you'll
+- [00:20:55,200 - 00:20:59,510] square it and boil it and cook
+- [00:20:59,510 - 00:21:03,820] it and stamp on it and cry.
+- [00:21:03,820 - 00:21:05,520] It's an ugly little calculation.
+- [00:21:05,520 - 00:21:06,500] It's not a pleasant one.
+- [00:21:06,500 - 00:21:07,540] No, it's not a pleasant one.
+- [00:21:07,540 - 00:21:08,040] Okay.
+- [00:21:08,040 - 00:21:08,540] It's not very hard.
+- [00:21:08,540 - 00:21:10,800] It took me about 15 minutes.
+- [00:21:10,800 - 00:21:12,540] But I used a lot of tricks, which means it
+- [00:21:12,540 - 00:21:14,280] took me a lot longer than it will take you
+- [00:21:14,280 - 00:21:18,040] without any tricks.
+- [00:21:18,040 - 00:21:23,399] Okay, so let's find the eigenvector.
+- [00:21:23,399 - 00:21:25,019] Now first of all, when you start looking
+- [00:21:25,019 - 00:21:26,639] for eigenvectors, we're going to try to solve
+- [00:21:26,639 - 00:21:28,639] the problem.
+- [00:21:28,639 - 00:21:30,520] Sigma dot n, where is it?
+- [00:21:30,520 - 00:21:37,540] It's n3 minus n3 and minus n plus.
+- [00:21:37,540 - 00:21:39,840] That's sigma dot n.
+- [00:21:39,840 - 00:21:45,410] And we're going to look for a vector,
+- [00:21:45,410 - 00:21:50,980] alpha beta, such that we get alpha beta back.
+- [00:21:50,980 - 00:21:53,480] Now in the first round, I'm not
+- [00:21:53,480 - 00:21:55,980] going to worry about normalizing the vector.
+- [00:21:55,980 - 00:22:00,220] Later on, we can normalize the vector.
+- [00:22:00,220 - 00:22:02,100] Normalizing it means multiplying it by some constant
+- [00:22:02,100 - 00:22:03,980] so that the sums of the squares add
+- [00:22:03,980 - 00:22:05,659] up to 1.
+- [00:22:05,659 - 00:22:07,540] But for the moment, let's not worry about that.
+- [00:22:07,540 - 00:22:10,420] And if I don't normalize the vector, also
+- [00:22:10,420 - 00:22:13,300] another thing, I don't think I've ever mentioned
+- [00:22:13,300 - 00:22:15,139] it.
+- [00:22:15,139 - 00:22:20,029] All of the physical quantities in
+- [00:22:20,029 - 00:22:24,920] quantum mechanics are insensitive to multiplying the
+- [00:22:24,920 - 00:22:28,340] vectors, any one of the vectors, by a phase.
+- [00:22:28,340 - 00:22:32,960] A phase means a complex number of magnitude 1.
+- [00:22:32,960 - 00:22:35,000] And the reason is because all of
+- [00:22:35,000 - 00:22:37,040] the physical quantities, you always count them.
+- [00:22:37,040 - 00:22:40,260] You always complex conjugate them and square it.
+- [00:22:40,260 - 00:22:43,520] And the complex conjugate are of, and a number
+- [00:22:43,520 - 00:22:46,780] whose magnitude is 1, a number like e to the
+- [00:22:46,780 - 00:22:49,530] i theta, it will not enter
+- [00:22:49,530 - 00:22:52,280] into any probability that you ever calculate.
+- [00:22:52,280 - 00:22:55,160] So if you take a vector and you multiply it
+- [00:22:55,160 - 00:22:58,040] by the number e to the i theta, you have changed
+- [00:22:58,040 - 00:23:01,840] nothing about its properties.
+- [00:23:01,840 - 00:23:06,639] Because you always wind up multiplying a quantity.
+- [00:23:06,640 - 00:23:10,060] A quantity by its complex conjugate.
+- [00:23:10,060 - 00:23:13,210] So that's something to keep in mind,
+- [00:23:13,210 - 00:23:16,360] that you should normalize the vector, but multiplying
+- [00:23:16,360 - 00:23:19,200] both the top and the bottom here by the
+- [00:23:19,200 - 00:23:22,040] same e to the i theta doesn't change anything.
+- [00:23:22,040 - 00:23:25,040] All right, but the upshot of that is
+- [00:23:25,040 - 00:23:28,040] we can arbitrarily, for example, choose alpha to
+- [00:23:28,040 - 00:23:30,100] be 1.
+- [00:23:30,100 - 00:23:32,470] If we don't care about normalizing the vector
+- [00:23:32,470 - 00:23:34,840] and we don't care about its phase, then there's
+- [00:23:34,840 - 00:23:36,240] no loss of generality.
+- [00:23:36,240 - 00:23:37,380] And just choosing alpha to
+- [00:23:37,380 - 00:23:38,520] be 1, and I'll do it.
+- [00:23:38,520 - 00:23:41,060] And then later we'll come back and normalize it.
+- [00:23:41,060 - 00:23:43,320] So what happens if we choose alpha, let's choose
+- [00:23:43,320 - 00:23:45,580] alpha to be 1, and then I'm going to
+- [00:23:45,580 - 00:23:47,140] call the lower entry here z.
+- [00:23:47,140 - 00:23:59,800] And I want to get back 1z.
+- [00:23:59,800 - 00:24:01,740] The question is, what does z have to be?
+- [00:24:01,740 - 00:24:03,660] What is the numerical value of z?
+- [00:24:03,660 - 00:24:05,660] All right, so let's read it off.
+- [00:24:05,660 - 00:24:07,440] Let's work out the equation.
+- [00:24:07,440 - 00:24:09,400] Let's take the top component.
+- [00:24:09,400 - 00:24:13,320] That's n3 times 1 plus n minus times z.
+- [00:24:13,320 - 00:24:18,980] n3 times 1 plus n minus times z.
+- [00:24:18,980 - 00:24:22,740] That has to be equal to 1.
+- [00:24:22,740 - 00:24:24,800] That's reading off the top component of the
+- [00:24:24,800 - 00:24:26,860] left-hand side and setting it equal to the
+- [00:24:26,860 - 00:24:29,260] top component of the right-hand side.
+- [00:24:29,260 - 00:24:33,420] Now, you can do the same with the bottom component.
+- [00:24:33,420 - 00:24:35,540] You get exactly the same equation.
+- [00:24:35,660 - 00:24:38,660] You get exactly the same equation for z.
+- [00:24:38,660 - 00:24:40,660] OK, so I won't even bother.
+- [00:24:40,660 - 00:24:43,660] We obviously have enough equations here to find z.
+- [00:24:43,660 - 00:24:47,660] We don't need to write the second equation.
+- [00:24:47,660 - 00:24:49,660] So let's just solve it.
+- [00:24:49,660 - 00:24:51,660] We can subtract n3.
+- [00:24:51,660 - 00:24:55,660] We get n minus z is equal to
+- [00:24:55,660 - 00:24:59,660] 1 minus n3, and then divide by n minus.
+- [00:24:59,660 - 00:25:01,660] And we have found...
+- [00:25:01,660 - 00:25:03,660] We've now found an eigenvector of z.
+- [00:25:03,660 - 00:25:04,660] So we can write the second equation.
+- [00:25:04,660 - 00:25:05,660] OK.
+- [00:25:05,660 - 00:25:08,660] So we have the eigenvector of sigma dot n.
+- [00:25:08,660 - 00:25:09,660] And here it is.
+- [00:25:09,660 - 00:25:10,660] I'll write it out now.
+- [00:25:10,660 - 00:25:20,660] It's equal to 1 minus n3 over n minus.
+- [00:25:20,660 - 00:25:22,660] Now, it's not normalized.
+- [00:25:22,660 - 00:25:23,660] It's not normalized.
+- [00:25:23,660 - 00:25:28,160] To normalize it, we have
+- [00:25:28,160 - 00:25:32,660] to multiply it by some number.
+- [00:25:32,660 - 00:25:34,660] Let's just call it c.
+- [00:25:34,660 - 00:25:37,660] We have to multiply it something so that this...
+- [00:25:37,660 - 00:25:39,660] So that the sums of
+- [00:25:39,660 - 00:25:41,660] the squares add up to 1.
+- [00:25:41,660 - 00:25:42,660] All right.
+- [00:25:42,660 - 00:25:44,160] Now, what do we actually have
+- [00:25:44,160 - 00:25:45,660] to do to be more precise?
+- [00:25:45,660 - 00:25:48,160] We have to make the inner product of
+- [00:25:48,160 - 00:25:50,660] this vector with itself be equal to 1.
+- [00:25:50,660 - 00:25:52,160] Let's see what the inner product
+- [00:25:52,160 - 00:25:53,660] of the vector with itself is.
+- [00:25:53,660 - 00:25:55,660] So let's first write the
+- [00:25:55,660 - 00:25:57,660] row vector, the corresponding row vector.
+- [00:25:57,660 - 00:26:00,660] 1, 1 minus n3.
+- [00:26:00,660 - 00:26:02,660] Now, shall I write n minus down here?
+- [00:26:02,660 - 00:26:04,660] Conjugate.
+- [00:26:04,660 - 00:26:05,660] Conjugate.
+- [00:26:05,660 - 00:26:08,660] And the conjugate is n plus.
+- [00:26:08,660 - 00:26:09,660] OK.
+- [00:26:09,660 - 00:26:11,660] That's the row vector.
+- [00:26:11,660 - 00:26:15,660] And if I multiply this by the column
+- [00:26:15,660 - 00:26:19,660] vector, 1, 1 minus n3 over n minus,
+- [00:26:19,660 - 00:26:25,160] then what I'll get is 1
+- [00:26:25,160 - 00:26:30,660] times 1 plus 1 minus n3.
+- [00:26:32,660 - 00:26:39,660] Squared over n plus n minus.
+- [00:26:39,660 - 00:26:40,660] Did I do that right?
+- [00:26:40,660 - 00:26:50,660] Which is 1 minus n3.
+- [00:26:50,660 - 00:26:51,660] Which is what?
+- [00:26:51,660 - 00:26:55,660] 1 minus n3 squared.
+- [00:26:55,660 - 00:26:56,660] Yeah.
+- [00:26:56,660 - 00:26:58,660] Let's work it out.
+- [00:26:58,660 - 00:27:00,660] Let's work it out.
+- [00:27:00,660 - 00:27:02,660] Let's multiply 1 by n.
+- [00:27:02,660 - 00:27:03,660] 1 minus n plus n minus.
+- [00:27:03,660 - 00:27:10,660] So this becomes n plus n minus plus 1.
+- [00:27:10,660 - 00:27:14,160] When I square this out, I'll get
+- [00:27:14,160 - 00:27:17,660] 1 plus n3 squared minus twice n3.
+- [00:27:17,660 - 00:27:22,660] Is that right?
+- [00:27:22,660 - 00:27:26,660] Am I doing this right?
+- [00:27:26,660 - 00:27:28,660] And then we have to divide
+- [00:27:28,660 - 00:27:30,660] that by n plus n minus.
+- [00:27:30,660 - 00:27:31,160] I'm just going to take
+- [00:27:31,160 - 00:27:31,660] you a little ways into this.
+- [00:27:31,660 - 00:27:33,160] I'm going to take you
+- [00:27:33,160 - 00:27:34,660] a little ways into this calculation.
+- [00:27:34,660 - 00:27:38,660] Now, what is n plus n minus?
+- [00:27:38,660 - 00:27:40,660] That's, where did we have it?
+- [00:27:40,660 - 00:27:45,660] n plus n minus is 1 minus n3 squared.
+- [00:27:45,660 - 00:27:51,660] And so plus n3 squared, this just gives us
+- [00:27:51,660 - 00:27:57,660] n plus n minus is 1 minus n3 squared.
+- [00:27:57,660 - 00:27:59,660] The n3 squares cancel.
+- [00:27:59,660 - 00:28:06,660] The 1's add, and you get 2
+- [00:28:06,660 - 00:28:13,660] minus twice n3 over n plus n minus.
+- [00:28:13,660 - 00:28:16,660] Is that right?
+- [00:28:16,660 - 00:28:18,660] I think that's right.
+- [00:28:27,660 - 00:28:31,660] You can simplify it a little bit further.
+- [00:28:37,660 - 00:28:38,660] Yeah.
+- [00:28:38,660 - 00:28:40,660] This is 1 minus n3 squared downstairs.
+- [00:28:40,660 - 00:28:42,660] I'm not going to do all the algebra.
+- [00:28:42,660 - 00:28:43,660] I'm just going to take you a little ways.
+- [00:28:44,660 - 00:28:45,660] Hm?
+- [00:28:48,546 - 00:28:49,846] 對
+- [00:28:49,858 - 00:28:51,498] Yeah, so this is, first
+- [00:28:51,498 - 00:28:53,138] of all, there's a 2 outside
+- [00:28:53,138 - 00:28:56,818] then there's a 1 minus n3 in the numerator
+- [00:28:56,818 - 00:29:00,818] and then in the denominator, that's 1 minus n3 squared
+- [00:29:04,778 - 00:29:07,108] It's 1 minus n3 squared, which is
+- [00:29:07,108 - 00:29:09,438] 1 minus n3 times 1 plus n3
+- [00:29:09,438 - 00:29:10,758] Right
+- [00:29:10,758 - 00:29:12,358] So we take
+- [00:29:12,358 - 00:29:14,128] 1 minus n3 times 1 plus
+- [00:29:14,128 - 00:29:15,898] n3, and don't worry if you don't
+- [00:29:15,898 - 00:29:17,438] if you're not following, because I'm going
+- [00:29:17,438 - 00:29:18,978] to make you do it over for homework
+- [00:29:18,978 - 00:29:21,918] Alright, and then we cancel out the 1 minus n3
+- [00:29:21,918 - 00:29:24,598] We get an answer, the answer
+- [00:29:24,598 - 00:29:27,278] is 2 divided by 1 plus n3
+- [00:29:27,278 - 00:29:30,508] What was that? That was the
+- [00:29:30,508 - 00:29:33,738] inner product of the vector with itself
+- [00:29:33,738 - 00:29:36,158] And we didn't get 1, that's bad,
+- [00:29:36,158 - 00:29:38,578] that's bad, we haven't normalized the vector
+- [00:29:38,578 - 00:29:41,058] What do we have to do
+- [00:29:41,058 - 00:29:43,538] to the vector to normalize it?
+- [00:29:43,538 - 00:29:45,538] We have to multiply it, not by the square root
+- [00:29:45,538 - 00:29:47,538] of this, but by the square root of 1 over this
+- [00:29:48,978 - 00:29:51,278] We want to kill, we want to
+- [00:29:51,278 - 00:29:53,578] cancel this 2 divided by 1 plus n3
+- [00:29:53,578 - 00:29:56,978] And so we have to multiply the vector, the eigenvector
+- [00:29:56,978 - 00:30:00,178] by the inverse square root
+- [00:30:00,178 - 00:30:03,178] So here is the normalized eigenvector
+- [00:30:03,178 - 00:30:06,778] and the homework, of course, is to check this and
+- [00:30:06,778 - 00:30:10,378] to check that it is the normalized eigenvector over 2
+- [00:30:10,378 - 00:30:16,278] times 1 minus n3 over n minus
+- [00:30:18,978 - 00:30:23,478] That's the normalized eigenvector corresponding to
+- [00:30:23,478 - 00:30:27,978] measuring the spin along the n-axis
+- [00:30:27,978 - 00:30:33,778] The same thing is true along the m-axis
+- [00:30:33,778 - 00:30:39,578] except wherever you see n, you put m
+- [00:30:39,578 - 00:30:42,628] Let's rewrite this, let's actually put
+- [00:30:42,628 - 00:30:45,678] the square roots on the inside
+- [00:30:45,678 - 00:30:47,228] A square root of 1
+- [00:30:47,228 - 00:30:48,778] plus n3 minus n3 over n
+- [00:30:48,978 - 00:30:52,448] n3 over 2, and then 1 minus n3,
+- [00:30:52,448 - 00:30:55,918] this looks too complicated, this is more complicated
+- [00:30:55,918 - 00:31:00,258] than it really has to be, but
+- [00:31:00,258 - 00:31:04,598] 1 plus n3 square root divided by 2.
+- [00:31:04,598 - 00:31:06,498] That's the normalized eigenvector.
+- [00:31:06,498 - 00:31:10,158] Now what about the other half of the calculation?
+- [00:31:10,158 - 00:31:13,178] The other half of the calculation is the
+- [00:31:13,178 - 00:31:16,198] other vector, the eigenvector of sigma dot m.
+- [00:31:16,198 - 00:31:17,598] And that's easy.
+- [00:31:17,598 - 00:31:20,078] All we have to do is
+- [00:31:20,078 - 00:31:22,558] replace n by m and complex conjugate.
+- [00:31:22,558 - 00:31:27,238] So the appropriate row vector looks very similar, square
+- [00:31:27,238 - 00:31:31,918] root of 1 plus m3, and then in the
+- [00:31:31,918 - 00:31:35,538] second entry, 1 minus m3.
+- [00:31:35,538 - 00:31:39,208] Now instead of m minus, we'll put
+- [00:31:39,208 - 00:31:42,878] m plus, because it's complex conjugated, and then
+- [00:31:42,878 - 00:31:46,018] square root of 1 plus m3 over 2.
+- [00:31:47,598 - 00:31:51,318] What do we do with this mess?
+- [00:31:51,318 - 00:31:53,598] We take the inner product.
+- [00:31:53,598 - 00:31:55,598] The inner product, I'm not going to do it.
+- [00:31:55,598 - 00:31:58,438] I'm going to tell you what the answer is.
+- [00:31:58,438 - 00:32:00,398] We multiply this one by this
+- [00:32:00,398 - 00:32:02,358] one, oh, this is 2, right?
+- [00:32:03,358 - 00:32:04,358] Nobody told me 2.
+- [00:32:04,358 - 00:32:06,658] We multiply this one by this one,
+- [00:32:06,658 - 00:32:08,958] and we add this one times this one.
+- [00:32:08,958 - 00:32:13,558] It looks like an unholy mess, and it is.
+- [00:32:13,558 - 00:32:14,638] Okay?
+- [00:32:14,638 - 00:32:16,038] But.
+- [00:32:16,038 - 00:32:17,038] If you use...
+- [00:32:17,038 - 00:32:17,558] Okay.
+- [00:32:17,598 - 00:32:21,098] If you use the law of algebra, and you
+- [00:32:21,098 - 00:32:24,598] just go through it, brute force, it will take you
+- [00:32:24,598 - 00:32:25,598] 10 minutes.
+- [00:32:25,598 - 00:32:28,188] If you use all the
+- [00:32:28,188 - 00:32:30,778] tricks, it'll take you 15 minutes.
+- [00:32:30,778 - 00:32:34,338] So and you just use, you use over and over
+- [00:32:34,338 - 00:32:37,898] again the fact that n plus n minus is 1 minus
+- [00:32:37,898 - 00:32:39,538] n3 squared.
+- [00:32:39,538 - 00:32:40,538] You fiddle it.
+- [00:32:40,538 - 00:32:41,838] I'm going to tell you what the answer is.
+- [00:32:41,838 - 00:32:42,838] Not for this.
+- [00:32:42,838 - 00:32:43,838] Not for this in itself.
+- [00:32:43,838 - 00:32:45,818] But we have to do one more thing with this.
+- [00:32:45,818 - 00:32:47,038] What's the next thing we have to do with it?
+- [00:32:47,598 - 00:32:48,598] What's that?
+- [00:32:48,598 - 00:32:49,598] It has to be 0.
+- [00:32:49,598 - 00:32:50,598] Why does it have to be 0?
+- [00:32:50,598 - 00:32:51,598] They're orthogonal.
+- [00:32:51,598 - 00:32:52,598] Why?
+- [00:32:52,598 - 00:32:53,598] This is m, this is n.
+- [00:32:53,598 - 00:32:54,598] What?
+- [00:32:54,598 - 00:32:55,598] There's nothing orthogonal about them.
+- [00:32:55,598 - 00:33:01,598] If this were n, this would be
+- [00:33:01,598 - 00:33:07,598] a vector times its... what are you saying?
+- [00:33:07,598 - 00:33:09,028] If m and n were the
+- [00:33:09,028 - 00:33:10,458] same, the inner product would be 1.
+- [00:33:10,458 - 00:33:12,598] That's what we took care of to make sure of.
+- [00:33:12,598 - 00:33:15,598] No, no, no, they're not orthogonal.
+- [00:33:15,598 - 00:33:16,598] Okay.
+- [00:33:16,598 - 00:33:18,598] What do we want to do with them?
+- [00:33:18,598 - 00:33:23,598] What we want to do with it, that's... okay.
+- [00:33:23,598 - 00:33:24,598] Square it.
+- [00:33:24,598 - 00:33:26,598] Take it times its complex conjugate.
+- [00:33:26,598 - 00:33:28,598] It times its complex conjugate.
+- [00:33:28,598 - 00:33:30,598] So we take this inner product.
+- [00:33:30,598 - 00:33:32,598] We multiply it out.
+- [00:33:32,598 - 00:33:35,098] It's a big mess, but it's
+- [00:33:35,098 - 00:33:37,598] just a mess of n's and m's.
+- [00:33:37,598 - 00:33:39,598] And we take the whole thing when we get
+- [00:33:39,598 - 00:33:41,598] it and we multiply it by its complex conjugate.
+- [00:33:46,598 - 00:33:53,598] And we multiply it by its complex conjugate.
+- [00:33:53,598 - 00:33:56,098] And you sit and you calculate and you
+- [00:33:56,098 - 00:33:58,598] calculate and you calculate and you... you can even
+- [00:33:58,598 - 00:34:00,598] try to throw it onto a computer and
+- [00:34:00,598 - 00:34:02,598] see what you get using Mathematica or something or
+- [00:34:02,598 - 00:34:04,598] whatever you like, however you like to do it.
+- [00:34:04,598 - 00:34:07,598] But the answer is incredibly simple.
+- [00:34:07,598 - 00:34:11,598] I have yet to be able to find
+- [00:34:11,598 - 00:34:15,598] a one-line way to prove, to demonstrate the answer.
+- [00:34:15,598 - 00:34:17,098] I always have to do
+- [00:34:17,098 - 00:34:18,598] it, go through the whole thing.
+- [00:34:18,598 - 00:34:21,098] I am absolutely convinced that there's a
+- [00:34:21,098 - 00:34:23,598] one-line argument, but I can never find it.
+- [00:34:23,598 - 00:34:32,098] Anyway, the answer is 1 plus n1 m1
+- [00:34:32,098 - 00:34:40,598] plus n2 m2 plus n3 m3 divided by 2.
+- [00:34:40,598 - 00:34:44,598] Or 1 plus n dot m.
+- [00:34:44,598 - 00:34:48,598] Over 2.
+- [00:34:48,598 - 00:34:50,598] That's the whole answer.
+- [00:34:50,598 - 00:34:52,598] After you're finished.
+- [00:34:52,598 - 00:34:54,598] It has n's and m's, all
+- [00:34:54,598 - 00:34:56,598] of the components, all over the place.
+- [00:34:56,598 - 00:34:59,598] And it simply boils down eventually to this expression.
+- [00:34:59,598 - 00:35:01,598] Now what is n dot m?
+- [00:35:01,598 - 00:35:03,598] Anybody know what n dot m is?
+- [00:35:03,598 - 00:35:06,598] It's the cosine of the angle between them.
+- [00:35:06,598 - 00:35:11,598] It's the cosine, let's call this theta nm.
+- [00:35:11,598 - 00:35:13,598] The angle between the n-axis and the m-axis.
+- [00:35:13,598 - 00:35:19,598] And so this is just 1 plus
+- [00:35:19,598 - 00:35:25,598] cosine of theta nm divided by 2.
+- [00:35:25,598 - 00:35:29,598] Now, first of all, one interesting thing about it is
+- [00:35:29,598 - 00:35:33,598] that it only depends on the angle between n and m.
+- [00:35:33,598 - 00:35:37,598] That means you would get the same
+- [00:35:37,598 - 00:35:41,598] result if you rotated the whole experiment.
+- [00:35:41,598 - 00:35:42,598] Okay?
+- [00:35:42,598 - 00:35:44,598] That's an interesting fact.
+- [00:35:44,598 - 00:35:46,598] And it's an important fact, of course.
+- [00:35:46,598 - 00:35:50,598] It's what has to do with rotational invariance of physics.
+- [00:35:50,598 - 00:35:53,598] That the axes didn't matter.
+- [00:35:53,598 - 00:35:56,098] That if you rotated the whole
+- [00:35:56,098 - 00:35:58,598] experiment, you would get the same answer.
+- [00:35:58,598 - 00:36:01,598] It's also symmetric in n and m, since
+- [00:36:01,598 - 00:36:04,598] it only depends on the angle between them.
+- [00:36:04,598 - 00:36:06,598] And the angle between them, it doesn't matter
+- [00:36:06,598 - 00:36:08,598] whether you write n first or m first.
+- [00:36:08,598 - 00:36:10,598] It's exactly the same answer
+- [00:36:10,598 - 00:36:12,598] if you interchange n and m.
+- [00:36:12,598 - 00:36:14,598] That's interesting.
+- [00:36:14,598 - 00:36:18,598] But let's see what it gives for various situations.
+- [00:36:18,598 - 00:36:20,098] First of all, supposing n and
+- [00:36:20,098 - 00:36:21,598] m are in the same direction.
+- [00:36:21,598 - 00:36:24,598] If n and m are in
+- [00:36:24,598 - 00:36:27,598] the same direction, then theta is 0.
+- [00:36:27,598 - 00:36:28,598] Alright?
+- [00:36:28,598 - 00:36:29,598] The angle is 0.
+- [00:36:29,598 - 00:36:32,598] And cosine of 0 is 1.
+- [00:36:32,598 - 00:36:34,598] 1 plus 1 is 2.
+- [00:36:34,598 - 00:36:36,598] 2 divided by 2 is 1.
+- [00:36:36,598 - 00:36:39,598] So, the first thing it says
+- [00:36:39,598 - 00:36:42,598] is that if you prepare the electron,
+- [00:36:42,598 - 00:36:44,598] pointing along the n-axis,
+- [00:36:44,598 - 00:36:47,598] and then you measure it along the n-axis,
+- [00:36:47,598 - 00:36:49,598] you will definitely find it up.
+- [00:36:49,598 - 00:36:51,098] You made it up, you measure
+- [00:36:51,098 - 00:36:52,598] it, and you find it up.
+- [00:36:52,598 - 00:36:54,598] That's a good thing.
+- [00:36:54,598 - 00:36:56,598] What about if n and
+- [00:36:56,598 - 00:36:58,598] m are opposite to each other?
+- [00:36:58,598 - 00:37:01,598] Not perpendicular, but opposite.
+- [00:37:01,598 - 00:37:03,598] In other words, then theta is 180 degrees,
+- [00:37:03,598 - 00:37:07,598] cosine of 180 degrees is minus 1.
+- [00:37:07,598 - 00:37:10,598] 1 plus minus 1 is 0.
+- [00:37:10,598 - 00:37:11,598] Okay?
+- [00:37:11,598 - 00:37:14,598] So, the first thing it says is that
+- [00:37:14,598 - 00:37:17,598] if you prepare the electron along the n-axis,
+- [00:37:17,598 - 00:37:19,598] and then look and ask whether
+- [00:37:19,598 - 00:37:21,598] its spin is along the minus n-axis,
+- [00:37:21,598 - 00:37:23,598] you get 0 probability.
+- [00:37:23,598 - 00:37:25,098] In other words, if it's pointing that
+- [00:37:25,098 - 00:37:26,598] way, it's definitely not pointing that way.
+- [00:37:26,598 - 00:37:28,598] That's a good thing.
+- [00:37:28,598 - 00:37:30,598] What if theta is 90 degrees?
+- [00:37:30,598 - 00:37:32,598] And it doesn't matter.
+- [00:37:32,598 - 00:37:36,598] Notice, it doesn't matter if n is fixed.
+- [00:37:36,598 - 00:37:40,598] m can be anywhere in space.
+- [00:37:40,598 - 00:37:42,598] In space, as long as its angle is
+- [00:37:42,598 - 00:37:44,598] fixed, so it could be on a cone.
+- [00:37:44,598 - 00:37:46,598] But in any case, if theta
+- [00:37:46,598 - 00:37:48,598] is 90 degrees, what do you get?
+- [00:37:48,598 - 00:37:53,598] Cosine of 90 degrees is 0, huh?
+- [00:37:53,598 - 00:37:56,598] Cosine of 90 degrees is 0,
+- [00:37:56,598 - 00:37:58,098] and so you just get 1
+- [00:37:58,098 - 00:37:59,598] half, which is what we expected.
+- [00:37:59,598 - 00:38:02,598] But now we actually know the interpolating formula,
+- [00:38:02,598 - 00:38:05,598] the formula that's good for any angle.
+- [00:38:05,598 - 00:38:08,098] And this is the most
+- [00:38:08,098 - 00:38:10,598] primitive but basic quantum mechanical calculation.
+- [00:38:10,598 - 00:38:14,598] that quantum mechanics does.
+- [00:38:14,598 - 00:38:18,598] So notice, I mean, think this is a remarkable achievement.
+- [00:38:18,598 - 00:38:20,598] We have some strange theory in
+- [00:38:20,598 - 00:38:22,598] where whenever we measure the spin
+- [00:38:22,598 - 00:38:25,098] along any given axis, it's either
+- [00:38:25,098 - 00:38:27,598] plus or minus and nothing in between.
+- [00:38:27,598 - 00:38:30,598] And yet, there's something about this
+- [00:38:30,598 - 00:38:33,598] system which doesn't care about the axes.
+- [00:38:33,598 - 00:38:36,098] You can orient the spin along any
+- [00:38:36,098 - 00:38:38,598] axis and measure it along any other axis,
+- [00:38:38,598 - 00:38:40,598] and instead of getting fractional answers,
+- [00:38:40,598 - 00:38:44,598] you get fractional probabilities for the result.
+- [00:38:44,598 - 00:38:49,598] And this is the fractional probability.
+- [00:38:49,598 - 00:38:51,598] Okay, are there any questions up till now?
+- [00:38:51,598 - 00:38:54,598] Well, we could plot this function,
+- [00:38:54,598 - 00:38:57,598] incidentally, as a function of angle.
+- [00:38:57,598 - 00:38:59,598] At 180 degrees, it goes to 0.
+- [00:38:59,598 - 00:39:01,598] At 0 degrees, it's 1.
+- [00:39:01,598 - 00:39:04,598] And it looks like, whoops,
+- [00:39:04,598 - 00:39:07,598] I'll put 180 degrees over here.
+- [00:39:07,598 - 00:39:09,598] It just looks like that.
+- [00:39:10,598 - 00:39:14,598] So we know the answer now to
+- [00:39:14,598 - 00:39:18,598] any question that you can meaningfully ask
+- [00:39:18,598 - 00:39:20,598] about a single quantum bit.
+- [00:39:20,598 - 00:39:25,598] How do we know that it's the same electron?
+- [00:39:25,598 - 00:39:27,598] Well, we just have one electron.
+- [00:39:27,598 - 00:39:30,598] But how do we know that?
+- [00:39:30,598 - 00:39:36,598] We observe it somehow, which means it's interact with it,
+- [00:39:36,598 - 00:39:39,598] but we do not .
+- [00:39:39,598 - 00:39:41,598] Well, we build us a
+- [00:39:41,598 - 00:39:43,598] cavity and put some sealed walls
+- [00:39:43,598 - 00:39:46,598] that prevent anything from going in and going out,
+- [00:39:46,598 - 00:39:53,598] and we do find that that electron stays in there.
+- [00:39:53,598 - 00:39:56,098] We can measure the electric charge
+- [00:39:56,098 - 00:39:58,598] by measuring the outgoing electric flux.
+- [00:39:58,598 - 00:40:00,598] We find it doesn't change.
+- [00:40:00,598 - 00:40:03,598] So, yeah, we can measure the electric charge, for example.
+- [00:40:03,598 - 00:40:07,598] And...
+- [00:40:07,598 - 00:40:11,598] What's that?
+- [00:40:11,598 - 00:40:14,598] If it doesn't matter,
+- [00:40:14,598 - 00:40:16,098] the glowing electrons instead of the
+- [00:40:16,098 - 00:40:17,598] one that results should match the...
+- [00:40:17,598 - 00:40:19,098] If we do the same thing
+- [00:40:19,098 - 00:40:20,598] to every one of the electrons,
+- [00:40:20,598 - 00:40:21,598] is that what you mean?
+- [00:40:21,598 - 00:40:22,598] Yeah.
+- [00:40:22,598 - 00:40:23,598] That's right.
+- [00:40:23,598 - 00:40:25,098] And in practice, we can
+- [00:40:25,098 - 00:40:26,598] either do one of two things.
+- [00:40:26,598 - 00:40:28,598] You don't measure a probability.
+- [00:40:28,598 - 00:40:30,598] In order to measure a probability,
+- [00:40:30,598 - 00:40:32,598] you have to do an experiment repeatedly.
+- [00:40:32,598 - 00:40:33,598] Okay?
+- [00:40:33,598 - 00:40:34,598] You have to do the
+- [00:40:34,598 - 00:40:35,598] same experiment over and over again.
+- [00:40:35,598 - 00:40:36,598] You can do it in one of two ways.
+- [00:40:36,598 - 00:40:40,098] You can take the same
+- [00:40:40,098 - 00:40:43,598] electron and continuously repeat the experiment.
+- [00:40:43,598 - 00:40:47,598] So you put your big magnetic field along the n-axis,
+- [00:40:47,598 - 00:40:49,598] line up that electron, and
+- [00:40:49,598 - 00:40:51,598] then measure it along the m-axis.
+- [00:40:51,598 - 00:40:53,598] Then when you're finished, you put back
+- [00:40:53,598 - 00:40:55,598] your big electric field along the n-axis,
+- [00:40:55,598 - 00:40:58,098] line it up again, and do the experiment
+- [00:40:58,098 - 00:41:00,598] over and over and over and over again.
+- [00:41:00,598 - 00:41:03,098] You can do that, or you can
+- [00:41:03,098 - 00:41:05,598] get yourself a whole bunch of electrons,
+- [00:41:05,598 - 00:41:08,598] and do a million identical experiments
+- [00:41:08,598 - 00:41:11,598] doing one experiment on each electron.
+- [00:41:11,598 - 00:41:13,598] You should get, and you do get, the same answer.
+- [00:41:13,598 - 00:41:14,598] Okay?
+- [00:41:14,598 - 00:41:17,598] You do get the same answer for the probability.
+- [00:41:17,598 - 00:41:19,598] In the case that you have a million electrons,
+- [00:41:19,598 - 00:41:22,098] the probability simply means the ratio
+- [00:41:22,098 - 00:41:24,598] of the number of ups and downs
+- [00:41:24,598 - 00:41:26,598] within the margin of error, of course.
+- [00:41:26,598 - 00:41:29,598] There's always margins of error.
+- [00:41:29,598 - 00:41:32,098] You're saying that the million electrons
+- [00:41:32,098 - 00:41:34,598] are all covered in one experiment?
+- [00:41:34,598 - 00:41:35,598] Well, you could...
+- [00:41:35,598 - 00:41:37,598] You can do an experiment in
+- [00:41:37,598 - 00:41:39,598] which you take a million electrons,
+- [00:41:39,598 - 00:41:42,598] line them all up along the n-axis, okay?
+- [00:41:42,598 - 00:41:45,098] Okay, you fellows, line up along the n-axis,
+- [00:41:45,098 - 00:41:47,598] put a big magnetic field on each one,
+- [00:41:47,598 - 00:41:52,598] and then measure each one's spin along the m-axis.
+- [00:41:52,598 - 00:41:55,598] Some will be plus, some will be minus.
+- [00:41:55,598 - 00:41:56,598] Okay?
+- [00:41:56,598 - 00:41:59,098] But the ratio of the number of pluses and
+- [00:41:59,098 - 00:42:01,598] minuses will measure the probability for plus and minus.
+- [00:42:01,598 - 00:42:04,598] Actually, they just all have to have the same thing.
+- [00:42:04,598 - 00:42:05,598] The same...
+- [00:42:05,598 - 00:42:06,598] They don't have to have
+- [00:42:06,598 - 00:42:07,598] the same thing all lined up.
+- [00:42:07,598 - 00:42:08,598] Okay, but if you really want to...
+- [00:42:08,598 - 00:42:09,598] Yeah, right.
+- [00:42:09,598 - 00:42:10,598] But that's indeed so.
+- [00:42:10,598 - 00:42:12,598] But yes, that's true.
+- [00:42:12,598 - 00:42:17,098] But let's be a little bit purist about it and
+- [00:42:17,098 - 00:42:21,598] say we do the same repeated experiment over and over.
+- [00:42:21,598 - 00:42:22,598] But yes, you're right.
+- [00:42:22,598 - 00:42:23,598] Yeah?
+- [00:42:23,598 - 00:42:26,098] If you use one electron, how many times can
+- [00:42:26,098 - 00:42:28,598] you repeat it and it can always emit photons?
+- [00:42:28,598 - 00:42:29,598] Wait, say it again?
+- [00:42:29,598 - 00:42:32,598] How many photons can an electron emit?
+- [00:42:32,598 - 00:42:33,598] Endless numbers.
+- [00:42:33,598 - 00:42:34,598] Endless numbers.
+- [00:42:34,598 - 00:42:35,598] Endless numbers.
+- [00:42:35,598 - 00:42:36,598] Endless numbers.
+- [00:42:36,598 - 00:42:38,098] It's the energy fed in
+- [00:42:38,098 - 00:42:39,598] by turning on the magnetic field.
+- [00:42:39,598 - 00:42:40,598] Okay?
+- [00:42:40,598 - 00:42:42,598] When you turn on that magnetic field,
+- [00:42:42,598 - 00:42:44,598] if the spin is in the wrong direction,
+- [00:42:44,598 - 00:42:47,598] you have to do a little more work to turn
+- [00:42:47,598 - 00:42:50,598] on the magnetic field than if it's in the right direction.
+- [00:42:50,598 - 00:42:53,098] And it's that energy which
+- [00:42:53,098 - 00:42:55,598] is effectively the photon that's emitted.
+- [00:42:55,598 - 00:42:57,598] So there's no limit to the number
+- [00:42:57,598 - 00:42:59,598] of times you can do this experiment.
+- [00:43:01,598 - 00:43:02,598] Now you had defined the same thing.
+- [00:43:03,598 - 00:43:06,598] You said sigma in terms of the three sigma matrices.
+- [00:43:06,598 - 00:43:07,598] Yes.
+- [00:43:07,598 - 00:43:11,598] And one of the side effects of this
+- [00:43:11,598 - 00:43:15,598] was that you went from having nice clean eigenvectors
+- [00:43:15,598 - 00:43:17,598] to really ugly looking eigenvectors.
+- [00:43:17,598 - 00:43:18,598] Yeah.
+- [00:43:18,598 - 00:43:21,098] And also, ugliness is in the
+- [00:43:21,098 - 00:43:23,598] eye of the beholder, of course.
+- [00:43:23,598 - 00:43:28,598] So I mean, yeah, I mean it is.
+- [00:43:28,598 - 00:43:30,598] One of these days I'm going to find a
+- [00:43:30,598 - 00:43:32,598] trick for this calculation so that it's not so ugly.
+- [00:43:32,598 - 00:43:33,598] But yeah.
+- [00:43:33,598 - 00:43:37,598] The question is, is this a general
+- [00:43:37,598 - 00:43:41,598] characteristic of that type of matrix operator?
+- [00:43:41,598 - 00:43:46,598] And would it help to define the basis of one?
+- [00:43:46,598 - 00:43:47,598] Yeah.
+- [00:43:47,598 - 00:43:49,598] Let me put it this way.
+- [00:43:49,598 - 00:43:53,098] There's another way to prove that the
+- [00:43:53,098 - 00:43:56,598] answer only depends on the angle between them.
+- [00:43:56,598 - 00:43:59,598] But that will take us into unitary matrices and things.
+- [00:43:59,598 - 00:44:00,598] And we'll get into that.
+- [00:44:00,598 - 00:44:01,598] We will get into that.
+- [00:44:01,598 - 00:44:04,098] And symmetries and interesting things
+- [00:44:04,098 - 00:44:06,598] that we haven't gotten to yet.
+- [00:44:06,598 - 00:44:10,598] But I could do just a simple example.
+- [00:44:10,598 - 00:44:15,598] I could, for example, take n to be up.
+- [00:44:15,598 - 00:44:17,598] Supposing I took n to be up.
+- [00:44:17,598 - 00:44:18,598] Let's see what we get if
+- [00:44:18,598 - 00:44:19,598] we take n to be up.
+- [00:44:19,598 - 00:44:20,598] Okay.
+- [00:44:20,598 - 00:44:23,598] So if n is up, m doesn't,
+- [00:44:23,598 - 00:44:26,598] the m eigenvector stays the same, right?
+- [00:44:26,598 - 00:44:29,598] m is just some arbitrary direction.
+- [00:44:29,598 - 00:44:30,598] All right.
+- [00:44:30,598 - 00:44:34,598] So let's take the n eigenvector to be up.
+- [00:44:34,598 - 00:44:39,598] Then this is just 1, 0.
+- [00:44:39,598 - 00:44:40,598] Okay.
+- [00:44:40,598 - 00:44:42,598] Now the answer is easy.
+- [00:44:42,598 - 00:44:45,598] It's just this times this.
+- [00:44:45,598 - 00:44:47,598] Plus this times this, but that's 0.
+- [00:44:47,598 - 00:44:48,598] All right.
+- [00:44:48,598 - 00:44:53,598] So the probability amplitude, the thing that you square, is
+- [00:44:53,598 - 00:44:58,598] just the square root of 1 plus m3 over 2.
+- [00:44:58,598 - 00:45:01,598] We square it.
+- [00:45:01,598 - 00:45:03,598] And what do we get?
+- [00:45:03,598 - 00:45:07,598] We get 1 plus m3 over 2.
+- [00:45:07,598 - 00:45:11,098] But m3 is just the cosine of the
+- [00:45:11,098 - 00:45:14,598] angle of m with the third axis, right?
+- [00:45:14,598 - 00:45:15,598] That's what m3 is.
+- [00:45:15,598 - 00:45:17,598] m3 is a direction cosine.
+- [00:45:17,598 - 00:45:19,598] In this case, the direction cosine of m.
+- [00:45:19,598 - 00:45:23,598] And so it actually is just cosine of that angle.
+- [00:45:23,598 - 00:45:26,598] So if we're willing to pick particular directions,
+- [00:45:26,598 - 00:45:29,098] and in particular if some of the directions
+- [00:45:29,098 - 00:45:31,598] are along the axis, one of the axes,
+- [00:45:31,598 - 00:45:34,598] then it's usually very simple.
+- [00:45:34,598 - 00:45:36,598] But it's still not a unit matrix.
+- [00:45:36,598 - 00:45:38,598] Which is not a unit matrix?
+- [00:45:38,598 - 00:45:40,598] Well, that, because it's...
+- [00:45:40,598 - 00:45:43,598] First of all, I don't see any matrix here.
+- [00:45:43,598 - 00:45:45,598] This was not a matrix.
+- [00:45:45,598 - 00:45:47,598] This was absolute value squared.
+- [00:45:47,598 - 00:45:50,598] It means times its complex conjugate.
+- [00:45:50,598 - 00:45:53,598] So you can set the coordinates any direction you want?
+- [00:45:53,598 - 00:45:54,598] Wait, wait, wait.
+- [00:45:54,598 - 00:45:55,598] Yes.
+- [00:45:59,598 - 00:46:00,598] Yes.
+- [00:46:00,598 - 00:46:01,598] Yeah.
+- [00:46:01,598 - 00:46:02,598] Yeah.
+- [00:46:02,598 - 00:46:03,598] Yeah.
+- [00:46:03,598 - 00:46:07,598] One of the matrices was just sigma3, by itself,
+- [00:46:07,598 - 00:46:12,598] which has eigenvectors and .
+- [00:46:12,598 - 00:46:15,598] Alright, so I chose this eigenvector.
+- [00:46:15,598 - 00:46:16,598] Alright?
+- [00:46:16,598 - 00:46:18,598] In particular, we should check
+- [00:46:18,598 - 00:46:20,598] that that really is the eigenvector.
+- [00:46:20,598 - 00:46:23,598] Supposing m3 is plus 1.
+- [00:46:23,598 - 00:46:25,598] Supposing it's plus 1.
+- [00:46:25,598 - 00:46:26,598] Okay?
+- [00:46:26,598 - 00:46:29,098] n3 being plus 1 just means that
+- [00:46:29,098 - 00:46:31,598] n is along the third axis pointing up.
+- [00:46:31,598 - 00:46:32,598] Alright?
+- [00:46:32,598 - 00:46:34,598] 1 plus n3 would be 2.
+- [00:46:34,598 - 00:46:36,598] 2 divided by 2 is 1.
+- [00:46:36,598 - 00:46:38,598] So this just becomes 1.
+- [00:46:38,598 - 00:46:40,598] That's gone.
+- [00:46:40,598 - 00:46:42,598] 1 is up here.
+- [00:46:42,598 - 00:46:44,598] But 1 minus n3, that would be 0.
+- [00:46:44,598 - 00:46:45,598] Right?
+- [00:46:45,598 - 00:46:47,598] If n3 is 1, this would be 0.
+- [00:46:47,598 - 00:46:50,598] So in fact, for the special case where
+- [00:46:50,598 - 00:46:53,598] n3, where we're in, is along the third axis,
+- [00:46:53,598 - 00:46:54,598] the eigenvector would be 0.
+- [00:46:54,598 - 00:46:56,598] The eigenvector is just 1, 0.
+- [00:46:56,598 - 00:47:00,598] And it's the eigenvector then of just plain old sigma3.
+- [00:47:00,598 - 00:47:01,598] Okay?
+- [00:47:01,598 - 00:47:02,598] Good.
+- [00:47:02,598 - 00:47:03,598] So...
+- [00:47:03,598 - 00:47:06,598] But you can always choose the coordinates however you want.
+- [00:47:06,598 - 00:47:08,598] Well, no, no, no.
+- [00:47:08,598 - 00:47:09,598] You're right.
+- [00:47:09,598 - 00:47:10,598] You're right.
+- [00:47:10,598 - 00:47:12,598] But there was nothing from the start that
+- [00:47:12,598 - 00:47:14,598] guaranteed that we were going to be able to
+- [00:47:14,598 - 00:47:21,598] find a, um, find rotational invariance in the problem.
+- [00:47:21,598 - 00:47:22,098] So one of the things
+- [00:47:22,098 - 00:47:22,598] we proved by doing this calculation,
+- [00:47:22,598 - 00:47:27,598] is that the answer is rotationally invariant.
+- [00:47:27,598 - 00:47:29,598] If we had independent reason to
+- [00:47:29,598 - 00:47:31,598] believe that the answer was rotationally invariant,
+- [00:47:31,598 - 00:47:32,598] then we'd just pick an axis.
+- [00:47:32,598 - 00:47:34,598] I know I'm cheating, but all
+- [00:47:34,598 - 00:47:36,598] the mathematics you did was rotationally invariant.
+- [00:47:36,598 - 00:47:39,598] So you did the dot product and the eigenvector.
+- [00:47:39,598 - 00:47:41,098] Well, I just picked this
+- [00:47:41,098 - 00:47:42,598] crazy set of 3 sigma matrices.
+- [00:47:42,598 - 00:47:43,598] Where did I get them from?
+- [00:47:43,598 - 00:47:44,598] Yeah.
+- [00:47:44,598 - 00:47:45,598] Yeah.
+- [00:47:45,598 - 00:47:47,598] Once you've done that, you already
+- [00:47:47,598 - 00:47:49,598] know what you're going to be.
+- [00:47:49,598 - 00:47:50,598] Right.
+- [00:47:50,598 - 00:47:51,598] But we're talking about...
+- [00:47:51,598 - 00:47:54,598] We're touching on the question of symmetries
+- [00:47:54,598 - 00:47:57,598] now, namely the symmetry of a system under
+- [00:47:57,598 - 00:47:58,598] rotation.
+- [00:47:58,598 - 00:48:01,598] And there's a whole subject of symmetry and
+- [00:48:01,598 - 00:48:04,598] quantum mechanics which we will come to, which
+- [00:48:04,598 - 00:48:06,598] is interesting on its own.
+- [00:48:06,598 - 00:48:10,098] And I prefer to defer that discussion about
+- [00:48:10,098 - 00:48:13,598] picking axes until we have a language to speak
+- [00:48:13,598 - 00:48:14,598] about it in.
+- [00:48:14,598 - 00:48:17,098] At the moment, let's just take it as a
+- [00:48:17,098 - 00:48:19,598] boon, as a gift from one of our professors.
+- [00:48:19,598 - 00:48:20,598] Yeah.
+- [00:48:20,598 - 00:48:21,598] Yeah.
+- [00:48:21,598 - 00:48:24,598] And it's a gift from God that the answer
+- [00:48:24,598 - 00:48:27,598] came out to be only dependent on the angle
+- [00:48:27,598 - 00:48:30,598] between the N and M.
+- [00:48:30,598 - 00:48:35,598] May I ask you a question?
+- [00:48:35,598 - 00:48:36,598] Yeah.
+- [00:48:36,598 - 00:48:37,598] So we're observing this probability...
+- [00:48:37,598 - 00:48:38,598] Whoops.
+- [00:48:38,598 - 00:48:39,598] Ay-yi-yi.
+- [00:48:39,598 - 00:48:40,598] I'm going to get in big trouble.
+- [00:48:40,598 - 00:48:41,098] So we're observing the probabilities and the gift
+- [00:48:41,098 - 00:48:41,598] of God that it only depends on the angle.
+- [00:48:41,598 - 00:48:42,598] Yeah.
+- [00:48:42,598 - 00:48:43,598] And from the physical perspective, how do we explain that?
+- [00:48:43,598 - 00:48:44,098] Well, the answer is, well, the answer
+- [00:48:44,098 - 00:48:44,598] is that the angle is a given.
+- [00:48:44,598 - 00:48:45,598] The angle is a given.
+- [00:48:45,598 - 00:48:46,598] The angle is a given.
+- [00:48:46,598 - 00:48:47,598] The angle is a given.
+- [00:48:47,598 - 00:48:48,598] The angle is a given.
+- [00:48:48,598 - 00:48:49,598] The angle is a given.
+- [00:48:49,598 - 00:48:52,598] So you could totally explain why it's a given angle.
+- [00:48:52,598 - 00:48:55,098] I'll tell you, let's wait a little while.
+- [00:48:55,098 - 00:48:56,098] Let's wait a little while.
+- [00:48:56,098 - 00:48:58,688] But is the question of symmetries
+- [00:48:58,688 - 00:49:01,278] and how symmetries work in quantum mechanics.
+- [00:49:01,278 - 00:49:03,828] And it's a step that I don't want to do
+- [00:49:03,828 - 00:49:06,378] right now because I do want to get to entanglement
+- [00:49:06,378 - 00:49:08,238] and getting entangled in...
+- [00:49:08,238 - 00:49:09,598] They're good questions.
+- [00:49:09,598 - 00:49:11,058] They're very good questions.
+- [00:49:11,058 - 00:49:14,568] But I would prefer just to say at
+- [00:49:14,568 - 00:49:18,078] this point, it's just luck, luck of a draw.
+- [00:49:18,078 - 00:49:19,558] We picked the right matrices.
+- [00:49:19,558 - 00:49:24,558] All right, first of all, when you...
+- [00:49:25,558 - 00:49:26,358] I'll just get something to munch on.
+- [00:49:26,358 - 00:49:27,098] Eh, leave it.
+- [00:49:27,178 - 00:49:27,778] No, no.
+- [00:49:27,958 - 00:49:30,118] Let me just get the cookie out of the way.
+- [00:49:30,178 - 00:49:31,218] That's the most important thing.
+- [00:49:39,038 - 00:49:43,178] Yeah, another important idea that we've sort of mentioned
+- [00:49:43,178 - 00:49:45,308] but never really focused on
+- [00:49:45,308 - 00:49:47,438] is when you measure a thing,
+- [00:49:47,438 - 00:49:50,018] you get an answer, but then you
+- [00:49:50,018 - 00:49:52,598] leave the system in some new state.
+- [00:49:53,358 - 00:49:54,878] In other words, when you measure
+- [00:49:54,878 - 00:49:56,398] something, you go into the system,
+- [00:49:56,638 - 00:49:58,488] you interact with it, and
+- [00:49:58,488 - 00:50:00,338] you change its state in general.
+- [00:50:00,777 - 00:50:02,947] In particular, if you measure a
+- [00:50:02,947 - 00:50:05,118] particular quantity and you get an answer,
+- [00:50:06,078 - 00:50:09,118] that answer corresponds to some eigenvalue,
+- [00:50:09,737 - 00:50:14,537] you leave the system in an eigenvector with that eigenvalue.
+- [00:50:14,537 - 00:50:16,537] So, if you...
+- [00:50:17,438 - 00:50:20,117] If you measure the spin
+- [00:50:20,117 - 00:50:22,797] along the m-axis to be up,
+- [00:50:23,338 - 00:50:25,728] you leave the system in the state
+- [00:50:25,728 - 00:50:28,118] where the spin along the m-axis is up.
+- [00:50:28,178 - 00:50:31,158] You started with the state along the n-axis.
+- [00:50:31,698 - 00:50:33,258] You measured it by putting
+- [00:50:33,258 - 00:50:34,818] it into this large magnetic field,
+- [00:50:35,057 - 00:50:37,757] and you leave it in the state
+- [00:50:37,757 - 00:50:40,458] corresponding to the measurement that you've made.
+- [00:50:41,158 - 00:50:43,018] So that's an important idea that
+- [00:50:43,018 - 00:50:44,878] not only is it a measurement,
+- [00:50:44,878 - 00:50:47,198] but it's a kind of filter which...
+- [00:50:47,198 - 00:50:50,478] like a polarizer that polarizes photons.
+- [00:50:52,057 - 00:50:54,107] You measure the polarization of a
+- [00:50:54,107 - 00:50:56,158] photon by sending it through a polarizer,
+- [00:50:56,158 - 00:50:58,768] but at the same time you also leave it
+- [00:50:58,768 - 00:51:01,378] in the state of polarization corresponding to that polarizer.
+- [00:51:01,378 - 00:51:03,198] Same idea here,
+- [00:51:03,198 - 00:51:06,127] that the electron is left in an
+- [00:51:06,127 - 00:51:09,057] eigenstate of whatever it is you measured,
+- [00:51:10,277 - 00:51:12,277] corresponding to the value that you measured.
+- [00:51:14,797 - 00:51:16,797] Okay.
+- [00:51:17,198 - 00:51:17,698] Let's see.
+- [00:51:17,698 - 00:51:19,698] Oh, there's another interesting theorem.
+- [00:51:25,898 - 00:51:26,898] No, let's...
+- [00:51:26,898 - 00:51:27,398] Yeah.
+- [00:51:29,317 - 00:51:30,257] Can you measure...
+- [00:51:30,257 - 00:51:32,257] Can you do a single measurement,
+- [00:51:32,797 - 00:51:35,797] or simultaneously two measurements,
+- [00:51:35,797 - 00:51:40,297] that measured both sigma 1 and sigma 2 simultaneously?
+- [00:51:40,997 - 00:51:43,997] Can you do a measurement which measures both of them,
+- [00:51:43,997 - 00:51:46,997] and doesn't screw up somehow?
+- [00:51:47,198 - 00:51:48,198] And the answer is no.
+- [00:51:48,198 - 00:51:49,497] And the answer is very simple.
+- [00:51:49,497 - 00:51:51,497] The reason is very simple.
+- [00:51:51,497 - 00:51:53,497] The eigenvectors...
+- [00:51:53,497 - 00:51:56,497] If you measure sigma 1 and you get an answer,
+- [00:51:56,497 - 00:51:58,497] and you measure sigma 2 and you get an answer,
+- [00:51:58,497 - 00:52:00,997] remember, the rule is that you leave the
+- [00:52:00,997 - 00:52:03,497] system in an eigenstate corresponding to that measurement.
+- [00:52:04,497 - 00:52:05,497] Okay?
+- [00:52:13,098 - 00:52:14,098] Okay.
+- [00:52:14,098 - 00:52:17,098] You've got your A.
+- [00:52:17,098 - 00:52:18,098] Just carry on.
+- [00:52:20,598 - 00:52:21,598] All right.
+- [00:52:21,598 - 00:52:25,598] Now, the problem is, there are no eigenvectors
+- [00:52:25,598 - 00:52:29,598] in common between sigma n and sigma m.
+- [00:52:29,598 - 00:52:31,598] They have different eigenvectors.
+- [00:52:31,598 - 00:52:33,598] They are not in common.
+- [00:52:33,598 - 00:52:37,098] Therefore, you cannot measure them both simultaneously,
+- [00:52:37,098 - 00:52:40,198] because you cannot leave them in a state which is
+- [00:52:40,198 - 00:52:43,298] both an eigenvector of sigma dot n and sigma dot m.
+- [00:52:43,298 - 00:52:43,798] They just are no...
+- [00:52:43,798 - 00:52:47,798] There are no eigenvectors which they share.
+- [00:52:47,798 - 00:52:48,798] All right?
+- [00:52:48,798 - 00:52:50,798] So, no, it is not possible to measure them.
+- [00:52:50,798 - 00:52:53,798] But an interesting question is, what is the condition,
+- [00:52:53,798 - 00:52:56,298] the mathematical condition,
+- [00:52:56,298 - 00:52:59,798] that you can measure two quantities simultaneously?
+- [00:52:59,798 - 00:53:02,298] And the answer is that they
+- [00:53:02,298 - 00:53:04,798] had better have all the same eigenvectors,
+- [00:53:04,798 - 00:53:07,798] that the eigenvectors of one of them had better be
+- [00:53:07,798 - 00:53:10,798] exactly the same as the eigenvectors of the other one.
+- [00:53:10,798 - 00:53:12,798] Because if you measure them and you get an answer,
+- [00:53:13,798 - 00:53:17,798] then the answer has to be an eigenvalue,
+- [00:53:17,798 - 00:53:20,798] and the eigenvalues correspond to distinct eigenvectors.
+- [00:53:20,798 - 00:53:22,298] And the only way that you
+- [00:53:22,298 - 00:53:23,798] can ever measure two quantities simultaneously,
+- [00:53:23,798 - 00:53:25,798] and be sure that you get answers,
+- [00:53:25,798 - 00:53:30,798] is if they share all the same eigenvectors.
+- [00:53:34,798 - 00:53:36,798] What was that?
+- [00:53:37,798 - 00:53:40,298] If two matrices share all the
+- [00:53:40,298 - 00:53:42,798] same eigenvectors, they have a property.
+- [00:53:42,798 - 00:53:45,798] The property is they commute.
+- [00:53:45,798 - 00:53:46,798] Okay?
+- [00:53:46,798 - 00:53:49,298] Now, this is again something I do
+- [00:53:49,298 - 00:53:51,798] want to get to where I'm going tonight.
+- [00:53:51,798 - 00:53:54,298] But let me write that
+- [00:53:54,298 - 00:53:56,798] as a theorem on the blackboard.
+- [00:53:56,798 - 00:53:58,798] You can attempt to measure it, but...
+- [00:53:58,798 - 00:53:59,798] What's that?
+- [00:53:59,798 - 00:54:04,798] You can measure and get the right answer,
+- [00:54:04,798 - 00:54:05,798] or they don't disturb one another.
+- [00:54:05,798 - 00:54:07,798] You can do the measurement, but...
+- [00:54:07,798 - 00:54:09,798] Well, how would you measure
+- [00:54:09,798 - 00:54:11,798] sigma x and sigma y simultaneously?
+- [00:54:12,798 - 00:54:13,798] You could do the physical experiment.
+- [00:54:13,798 - 00:54:14,798] How?
+- [00:54:15,798 - 00:54:17,798] Remember, you measure sigma x by putting it
+- [00:54:17,798 - 00:54:19,798] into a large magnetic field along the x-axis.
+- [00:54:19,798 - 00:54:21,798] You measure sigma y by putting it
+- [00:54:21,798 - 00:54:23,798] into a large magnetic field along the y-axis.
+- [00:54:23,798 - 00:54:26,298] Well, you can put it into a magnetic field
+- [00:54:26,298 - 00:54:28,798] which is both along the x-axis and the y-axis,
+- [00:54:28,798 - 00:54:30,798] but then you'll be measuring, you know,
+- [00:54:30,798 - 00:54:33,798] you'll be measuring not sigma x or sigma y,
+- [00:54:33,798 - 00:54:35,798] but sigma along a 45-degree angle.
+- [00:54:35,798 - 00:54:37,798] You'll be measuring something different.
+- [00:54:38,798 - 00:54:40,798] So, the answer is you'll never think
+- [00:54:40,798 - 00:54:42,798] of a way of even measuring it.
+- [00:54:42,798 - 00:54:44,798] But that's good because the mathematics
+- [00:54:44,798 - 00:54:46,798] says you shouldn't be able to.
+- [00:54:46,798 - 00:54:50,298] All right, the condition, if I have
+- [00:54:50,298 - 00:54:53,798] two matrices that they have all common eigenvectors,
+- [00:54:53,798 - 00:54:56,798] I'm going to write the condition and either
+- [00:54:56,798 - 00:54:59,798] look up the proof of it, prove it yourself.
+- [00:54:59,798 - 00:55:01,798] It really is a one-liner.
+- [00:55:01,798 - 00:55:03,798] This really is a one,
+- [00:55:03,798 - 00:55:05,798] well, maybe two lines at most.
+- [00:55:05,798 - 00:55:08,798] But if two matrices, A and
+- [00:55:08,798 - 00:55:11,798] B, have all the same eigenvectors,
+- [00:55:11,798 - 00:55:14,798] let's call them alpha sub i.
+- [00:55:14,798 - 00:55:17,798] These are the various eigenvectors.
+- [00:55:27,798 - 00:55:30,798] No, that's not what I want to write.
+- [00:55:30,798 - 00:55:32,798] Lambda i.
+- [00:55:33,798 - 00:55:35,798] This is the ith eigenvector.
+- [00:55:35,798 - 00:55:37,798] Wow.
+- [00:55:37,798 - 00:55:39,798] Alpha i.
+- [00:55:39,798 - 00:55:40,798] Yeah.
+- [00:55:40,798 - 00:55:45,798] And another matrix has exactly the same eigenvectors,
+- [00:55:45,798 - 00:55:47,798] but perhaps different eigenvalues.
+- [00:55:47,798 - 00:55:49,798] Let's call them mu.
+- [00:55:49,798 - 00:55:51,798] Mu i times alpha i.
+- [00:55:51,798 - 00:55:54,298] In other words, the same set of
+- [00:55:54,298 - 00:55:56,798] alphas are the eigenvectors of both matrices.
+- [00:55:56,798 - 00:55:58,798] Then you can measure
+- [00:55:58,798 - 00:56:00,798] them simultaneously, the two quantities,
+- [00:56:00,798 - 00:56:03,798] if they have the same eigenvectors.
+- [00:56:06,798 - 00:56:09,798] And under those circumstances,
+- [00:56:10,798 - 00:56:15,798] there's a theorem that's a one-liner, as I said.
+- [00:56:15,798 - 00:56:19,298] It says that A times B
+- [00:56:19,298 - 00:56:22,798] is equal to B times A.
+- [00:56:22,798 - 00:56:26,798] Or, in mathematical terminology, well,
+- [00:56:26,798 - 00:56:28,798] or A minus B, A B
+- [00:56:28,798 - 00:56:30,798] minus B A is equal to zero.
+- [00:56:30,798 - 00:56:34,798] Remember, the order that you multiply matrices is important.
+- [00:56:34,798 - 00:56:36,798] When you multiply matrices, it's important.
+- [00:56:36,798 - 00:56:38,798] If the matrices commute,
+- [00:56:38,798 - 00:56:40,298] that means it doesn't matter
+- [00:56:40,298 - 00:56:41,798] which order you write them in,
+- [00:56:41,798 - 00:56:45,298] then all of the eigenvectors are
+- [00:56:45,298 - 00:56:48,798] simultaneous eigenvectors of the two operators.
+- [00:56:48,798 - 00:56:50,798] That's a theorem.
+- [00:56:50,798 - 00:56:53,298] Necessary and sufficient condition for all
+- [00:56:53,298 - 00:56:55,798] of the eigenvectors to be the same
+- [00:56:55,798 - 00:56:58,798] are that the matrices commute.
+- [00:56:58,798 - 00:57:02,798] Commute means you can interchange the order.
+- [00:57:02,798 - 00:57:04,798] Another way of writing the same thing,
+- [00:57:04,798 - 00:57:07,798] the mathematical notation for A B minus B A,
+- [00:57:07,798 - 00:57:10,798] is to just write them in a bracket.
+- [00:57:10,798 - 00:57:14,798] Not a bracket, a commutator.
+- [00:57:14,798 - 00:57:16,798] This is called the commutator, and
+- [00:57:16,798 - 00:57:18,798] it means A B minus B A.
+- [00:57:18,798 - 00:57:23,798] If two operators commute,
+- [00:57:23,798 - 00:57:25,798] you can measure them simultaneously,
+- [00:57:25,798 - 00:57:28,798] because they have exactly the same eigenvectors.
+- [00:57:28,798 - 00:57:31,798] That's a theorem, and as I said,
+- [00:57:31,798 - 00:57:34,798] it really is a one- or two-line theorem.
+- [00:57:34,798 - 00:57:36,798] You know how A acts on,
+- [00:57:36,798 - 00:57:38,798] just multiplied by a number,
+- [00:57:38,798 - 00:57:40,798] and then you know how B acts,
+- [00:57:40,798 - 00:57:42,798] it also multiplies by a number,
+- [00:57:42,798 - 00:57:44,298] and so you can easily figure out
+- [00:57:44,298 - 00:57:45,798] what the product of A and B is
+- [00:57:45,798 - 00:57:49,798] on any vector, on any eigenvector,
+- [00:57:49,798 - 00:57:51,798] and from that you can conclude,
+- [00:57:51,798 - 00:57:53,798] you can make your conclusion.
+- [00:57:53,798 - 00:57:54,798] So I don't want to
+- [00:57:54,798 - 00:57:55,798] go through the proof of that,
+- [00:57:55,798 - 00:57:57,798] because it would take us astray,
+- [00:57:57,798 - 00:58:00,798] but I do want to get to...
+- [00:58:00,798 - 00:58:02,798] Okay.
+- [00:58:02,798 - 00:58:04,798] There is one more theorem,
+- [00:58:04,798 - 00:58:07,798] another theorem about the simple spin,
+- [00:58:07,798 - 00:58:09,798] and it's a very interesting theorem,
+- [00:58:09,798 - 00:58:11,798] and an important theorem.
+- [00:58:11,798 - 00:58:14,798] This one is really quite important.
+- [00:58:14,798 - 00:58:17,798] It's a theorem about the single spin.
+- [00:58:17,798 - 00:58:20,298] What it says is that no
+- [00:58:20,298 - 00:58:22,798] matter what state you write down,
+- [00:58:22,798 - 00:58:24,798] what vector, in other words,
+- [00:58:24,798 - 00:58:31,798] any vector you write down, alpha, beta,
+- [00:58:31,798 - 00:58:34,798] with presumably alpha star,
+- [00:58:34,798 - 00:58:36,798] plus beta star, beta equals one,
+- [00:58:36,798 - 00:58:38,798] assume that,
+- [00:58:40,798 - 00:58:43,798] so that's normalized,
+- [00:58:43,798 - 00:58:46,798] no matter what state you write down,
+- [00:58:46,798 - 00:58:51,798] there is always some direction of space,
+- [00:58:51,798 - 00:58:56,798] such that if the electron is in this state,
+- [00:58:56,798 - 00:59:00,798] then the spin along that direction is definitely plus.
+- [00:59:00,798 - 00:59:03,798] In other words, any vector that you write down
+- [00:59:03,798 - 00:59:10,798] is an eigenvector of some sigma dot n.
+- [00:59:10,798 - 00:59:12,798] Given an alpha and beta,
+- [00:59:12,798 - 00:59:16,798] you can find a direction in space
+- [00:59:16,798 - 00:59:22,798] such that this is an eigenvector.
+- [00:59:22,798 - 00:59:28,798] Let's write it alpha beta equals alpha beta.
+- [00:59:28,798 - 00:59:31,798] Any alpha or beta.
+- [00:59:33,798 - 00:59:38,798] In this case, the problem is not finding the eigenvector.
+- [00:59:38,798 - 00:59:41,798] Given an n, you can look for an eigenvector.
+- [00:59:41,798 - 00:59:43,798] This is the reverse problem.
+- [00:59:43,798 - 00:59:45,798] Given the state of an electron,
+- [00:59:45,798 - 00:59:48,298] can you find the direction along
+- [00:59:48,298 - 00:59:50,798] which that electron is definitely up?
+- [00:59:50,798 - 00:59:52,798] And the answer is yes.
+- [00:59:52,798 - 00:59:56,798] And the simplest way to prove it is to count,
+- [00:59:56,798 - 00:59:58,798] think of this as equations,
+- [00:59:58,798 - 01:00:01,798] alpha and beta are fixed numbers,
+- [01:00:01,798 - 01:00:03,798] fixed complex numbers.
+- [01:00:03,798 - 01:00:08,798] This is an equation for
+- [01:00:08,798 - 01:00:13,798] the components n1, n2, and n3.
+- [01:00:13,798 - 01:00:16,298] The simplest way to prove it is
+- [01:00:16,298 - 01:00:18,798] simply to count the number of equations
+- [01:00:18,798 - 01:00:20,798] and the number of variables that you have.
+- [01:00:20,798 - 01:00:22,798] The number of equations is the
+- [01:00:22,798 - 01:00:24,798] same as the number of variables.
+- [01:00:24,798 - 01:00:26,798] Basically, there are two equations,
+- [01:00:26,798 - 01:00:28,298] one for the top component
+- [01:00:28,298 - 01:00:29,798] and one for the bottom component.
+- [01:00:29,798 - 01:00:31,798] How many components of n are there?
+- [01:00:31,798 - 01:00:32,798] Three.
+- [01:00:32,798 - 01:00:33,798] Yes?
+- [01:00:33,798 - 01:00:36,298] I think sigma dot n
+- [01:00:36,298 - 01:00:38,798] is up there on the board,
+- [01:00:38,798 - 01:00:40,798] and it's got n3 and n plots.
+- [01:00:40,798 - 01:00:42,798] So there are two variables.
+- [01:00:42,798 - 01:00:44,798] Yeah, no, there's only two variables.
+- [01:00:44,798 - 01:00:48,798] There's two variables, two real variables,
+- [01:00:48,798 - 01:00:50,798] because nx squared plus ny squared
+- [01:00:50,798 - 01:00:52,798] plus nz squared is equal to one.
+- [01:00:52,798 - 01:00:54,798] In other words, n is a unit vector,
+- [01:00:54,798 - 01:00:56,298] and so the number of variables that
+- [01:00:56,298 - 01:00:57,798] it takes to describe it are two angles,
+- [01:00:57,798 - 01:01:00,798] longitude and latitude, on a sphere.
+- [01:01:00,798 - 01:01:02,798] So there are two variables,
+- [01:01:02,798 - 01:01:04,798] there are two equations, two unknowns,
+- [01:01:04,798 - 01:01:06,798] and the number of unknowns and
+- [01:01:06,798 - 01:01:08,798] the number of equations is the same.
+- [01:01:08,798 - 01:01:09,798] You can check that.
+- [01:01:09,798 - 01:01:11,798] And so there's always an n.
+- [01:01:11,798 - 01:01:14,798] There is always an n given any vector.
+- [01:01:14,798 - 01:01:16,298] So what that says is that
+- [01:01:16,298 - 01:01:17,798] if you take it a lot...
+- [01:01:17,798 - 01:01:20,798] Here's the way you might do the experiment.
+- [01:01:20,798 - 01:01:23,798] You've made an electron in some definite state,
+- [01:01:23,798 - 01:01:27,798] but you're not sure what direction it corresponds to.
+- [01:01:27,798 - 01:01:28,798] You're not sure.
+- [01:01:28,798 - 01:01:30,798] You did something with the electron,
+- [01:01:30,798 - 01:01:32,798] and you weren't clear.
+- [01:01:32,798 - 01:01:33,798] Somebody...
+- [01:01:33,798 - 01:01:35,298] All you know is somebody
+- [01:01:35,298 - 01:01:36,798] put a magnetic field on it
+- [01:01:36,798 - 01:01:38,798] and lined it up along some direction.
+- [01:01:38,798 - 01:01:40,798] Oh, I don't even know what they did.
+- [01:01:40,798 - 01:01:41,798] Whatever they did.
+- [01:01:41,798 - 01:01:43,798] They did something, and they
+- [01:01:43,798 - 01:01:45,798] left the electron in some state,
+- [01:01:45,798 - 01:01:47,798] and we would like to find
+- [01:01:47,798 - 01:01:49,798] out if there is a definite direction
+- [01:01:49,798 - 01:01:51,798] along which the spin is up.
+- [01:01:51,798 - 01:01:52,798] So here's what we do.
+- [01:01:52,798 - 01:01:55,798] We, first of all, make a whole
+- [01:01:55,798 - 01:01:58,798] bunch of replicas of the same experiment.
+- [01:01:58,798 - 01:02:00,798] So we have a whole bunch of replicas
+- [01:02:00,798 - 01:02:04,798] of electrons, all identically prepared.
+- [01:02:04,798 - 01:02:06,798] All identically prepared.
+- [01:02:06,798 - 01:02:08,798] Now we measure...
+- [01:02:08,798 - 01:02:09,798] Now we use the...
+- [01:02:09,798 - 01:02:11,798] And how many of them?
+- [01:02:11,798 - 01:02:13,798] A hundred zillion of them.
+- [01:02:13,798 - 01:02:16,798] We're going to use the first hundred million
+- [01:02:16,798 - 01:02:19,798] to find out which direction the spin is pointing.
+- [01:02:19,798 - 01:02:21,798] And then we'll check all the rest of them
+- [01:02:21,798 - 01:02:23,798] and check and make sure that they
+- [01:02:23,798 - 01:02:25,798] really are all pointing in the same direction.
+- [01:02:25,798 - 01:02:27,798] So what you can do is
+- [01:02:27,798 - 01:02:29,798] you can measure the spin of
+- [01:02:29,798 - 01:02:36,798] the first one along some arbitrary axis.
+- [01:02:36,798 - 01:02:38,298] You can measure the first
+- [01:02:38,298 - 01:02:39,798] hundred of them along that axis.
+- [01:02:39,798 - 01:02:41,798] If they all point up along that axis,
+- [01:02:41,798 - 01:02:44,298] it sounds like there's a good
+- [01:02:44,298 - 01:02:46,798] bet that they're up along that axis.
+- [01:02:46,798 - 01:02:48,798] And then you measure all the rest of them,
+- [01:02:48,798 - 01:02:50,798] and you find them all up.
+- [01:02:50,798 - 01:02:52,298] But you might find that
+- [01:02:52,298 - 01:02:53,798] if you measure along the z-axis,
+- [01:02:53,798 - 01:02:55,798] you'll find some up and some down.
+- [01:02:55,798 - 01:02:56,798] Okay?
+- [01:02:56,798 - 01:02:57,798] If you measure the first hundred of them,
+- [01:02:57,798 - 01:02:59,798] and you find some up and some down,
+- [01:02:59,798 - 01:03:01,798] change direction a little bit.
+- [01:03:01,798 - 01:03:03,798] Change the direction of your magnet a little bit,
+- [01:03:03,798 - 01:03:06,798] and check another hundred of them.
+- [01:03:06,798 - 01:03:08,298] If you still find there
+- [01:03:08,298 - 01:03:09,798] are some up and some down,
+- [01:03:09,798 - 01:03:11,798] change the direction of the magnet again.
+- [01:03:11,798 - 01:03:13,798] Keep changing the direction of the magnet
+- [01:03:13,798 - 01:03:16,798] until you find the direction
+- [01:03:16,798 - 01:03:22,798] where all hundred or all thousand test electrons
+- [01:03:22,798 - 01:03:24,798] are definitely up.
+- [01:03:24,798 - 01:03:26,798] Then, when you've found that,
+- [01:03:26,798 - 01:03:27,798] you will find that all
+- [01:03:27,798 - 01:03:28,798] the rest of them are up.
+- [01:03:28,798 - 01:03:30,798] Okay?
+- [01:03:30,798 - 01:03:32,798] A thousand may not be a big enough number.
+- [01:03:32,798 - 01:03:34,798] You may have to use ten thousand.
+- [01:03:34,798 - 01:03:37,798] But that's the idea.
+- [01:03:37,798 - 01:03:39,798] There is, for any state of an electron,
+- [01:03:39,798 - 01:03:41,798] no matter how you prepare it,
+- [01:03:41,798 - 01:03:43,798] if you prepare it carefully,
+- [01:03:43,798 - 01:03:46,798] there will be a direction
+- [01:03:46,798 - 01:03:51,798] along which it is definitely pointing in that direction.
+- [01:03:51,798 - 01:03:52,798] Yeah?
+- [01:03:52,798 - 01:03:55,798] The n has two degrees of freedom.
+- [01:03:55,798 - 01:03:58,798] The n has two degrees of freedom.
+- [01:03:58,798 - 01:03:59,798] No.
+- [01:03:59,798 - 01:04:01,798] But l and beta are complex.
+- [01:04:01,798 - 01:04:02,798] Right.
+- [01:04:02,798 - 01:04:03,798] Good.
+- [01:04:03,798 - 01:04:04,798] Very good.
+- [01:04:04,798 - 01:04:05,798] So it sounds like there are four.
+- [01:04:05,798 - 01:04:06,798] It sounds like there are four.
+- [01:04:06,798 - 01:04:08,798] But you have that normalization.
+- [01:04:08,798 - 01:04:09,798] Right.
+- [01:04:09,798 - 01:04:11,798] We have the normalization,
+- [01:04:11,798 - 01:04:15,798] but we also have the freedom to change the phase.
+- [01:04:15,798 - 01:04:17,798] We also have the freedom to change the phase.
+- [01:04:17,798 - 01:04:18,798] So there's no...
+- [01:04:18,798 - 01:04:20,798] The phase drops out of the equation also.
+- [01:04:20,798 - 01:04:23,798] Don't you need a eigenvalue?
+- [01:04:23,798 - 01:04:24,798] One.
+- [01:04:24,798 - 01:04:25,798] One?
+- [01:04:25,798 - 01:04:28,798] Well, we're looking for a direction.
+- [01:04:28,798 - 01:04:31,798] Such that the eigenvalue is one.
+- [01:04:31,798 - 01:04:33,298] We're searching for some direction
+- [01:04:33,298 - 01:04:34,798] that the eigenvalue is one.
+- [01:04:34,798 - 01:04:36,298] And this gentleman over here
+- [01:04:36,298 - 01:04:37,798] asked exactly the right question.
+- [01:04:37,798 - 01:04:39,798] He started counting variables.
+- [01:04:39,798 - 01:04:40,798] How many equations are there?
+- [01:04:40,798 - 01:04:42,798] Well, there's as many equations as
+- [01:04:42,798 - 01:04:44,798] there are components of alpha and beta.
+- [01:04:44,798 - 01:04:45,798] Okay?
+- [01:04:45,798 - 01:04:47,798] There are four complex components.
+- [01:04:47,798 - 01:04:50,798] This equation reduces it down to three.
+- [01:04:50,798 - 01:04:53,298] But then the fact that the
+- [01:04:53,298 - 01:04:55,798] overall phase of the wave function,
+- [01:04:55,798 - 01:04:56,798] that you can...
+- [01:04:56,798 - 01:04:57,798] That...
+- [01:04:57,798 - 01:05:01,798] That doesn't matter in this equation either.
+- [01:05:01,798 - 01:05:03,798] In other words, multiplying it by both sides,
+- [01:05:03,798 - 01:05:05,798] by e to the i theta doesn't matter.
+- [01:05:05,798 - 01:05:10,798] And so really there are only two degrees of freedom
+- [01:05:10,798 - 01:05:15,798] in writing down a complex vector for an electron.
+- [01:05:15,798 - 01:05:17,798] Two degrees of freedom.
+- [01:05:17,798 - 01:05:19,798] Two variables here.
+- [01:05:19,798 - 01:05:21,798] Two independent interesting variables here.
+- [01:05:21,798 - 01:05:23,798] Two of them here.
+- [01:05:23,798 - 01:05:25,298] And so the number of equations is
+- [01:05:25,298 - 01:05:26,798] the same as the number of unknowns.
+- [01:05:27,798 - 01:05:30,798] But there's a theta in it, physical meaning there.
+- [01:05:30,798 - 01:05:31,798] The theta...
+- [01:05:31,798 - 01:05:33,798] The overall phase of the wave function does not have...
+- [01:05:33,798 - 01:05:35,798] Or this is called a wave function.
+- [01:05:35,798 - 01:05:38,798] The overall phase of the state
+- [01:05:38,798 - 01:05:41,798] vector does not have a physical significance.
+- [01:05:41,798 - 01:05:42,798] Why not?
+- [01:05:42,798 - 01:05:46,798] Because whenever you calculate any physical probability,
+- [01:05:46,798 - 01:05:50,798] you always wind up multiplying it by its complex conjugate.
+- [01:05:50,798 - 01:05:52,798] When you multiply by a
+- [01:05:52,798 - 01:05:54,798] complex conjugate, the phase goes away.
+- [01:05:54,798 - 01:05:55,798] Okay?
+- [01:05:55,798 - 01:05:56,798] So the answer is,
+- [01:05:56,798 - 01:06:00,798] there are two variables,
+- [01:06:00,798 - 01:06:03,798] two physically interesting variables,
+- [01:06:03,798 - 01:06:06,798] that go into defining the state of an electron.
+- [01:06:06,798 - 01:06:08,798] And they're in one-to-one correspondence
+- [01:06:08,798 - 01:06:10,798] with the two physical variables
+- [01:06:10,798 - 01:06:13,798] that define a directionality in space.
+- [01:06:13,798 - 01:06:17,798] So you can make a correspondence between the components here
+- [01:06:17,798 - 01:06:20,798] and directions of space.
+- [01:06:20,798 - 01:06:22,798] Alright.
+- [01:06:22,798 - 01:06:23,798] Alright.
+- [01:06:23,798 - 01:06:26,798] That's true of single electrons.
+- [01:06:26,798 - 01:06:28,798] Everything I said.
+- [01:06:28,798 - 01:06:32,798] Now, I am going to continue because...
+- [01:06:32,798 - 01:06:34,798] Well, let's see.
+- [01:06:34,798 - 01:06:37,798] No, we can take a five-minute break.
+- [01:06:45,798 - 01:06:50,798] Let's try to get to entanglement today.
+- [01:06:50,798 - 01:06:54,798] To get to entanglement, we have to think about...
+- [01:06:54,798 - 01:06:56,798] I'll tell you something.
+- [01:06:56,798 - 01:06:58,798] I went to a school, a middle school,
+- [01:06:58,798 - 01:07:00,798] and I taught a bunch of ten-year-olds
+- [01:07:00,798 - 01:07:05,798] about string theory and extra dimensions and all that stuff.
+- [01:07:05,798 - 01:07:08,798] It was kind of interesting.
+- [01:07:08,798 - 01:07:11,798] Teaching them was very much like teaching you guys.
+- [01:07:11,798 - 01:07:13,798] It's...
+- [01:07:13,798 - 01:07:14,798] No, no, no, no, no, no, no.
+- [01:07:14,798 - 01:07:15,798] It was.
+- [01:07:15,798 - 01:07:16,798] It was.
+- [01:07:16,798 - 01:07:17,798] It was.
+- [01:07:17,798 - 01:07:18,798] It was.
+- [01:07:18,798 - 01:07:19,798] They're unafraid to ask questions.
+- [01:07:19,798 - 01:07:20,798] They're boisterous.
+- [01:07:20,798 - 01:07:22,798] They're fun to teach.
+- [01:07:22,798 - 01:07:24,798] It's the people in the middle, the undergraduates,
+- [01:07:24,798 - 01:07:26,798] who are just terrified of asking a question.
+- [01:07:26,798 - 01:07:28,798] Just no fun to teach.
+- [01:07:28,798 - 01:07:30,798] One kid asked me a brilliant question.
+- [01:07:30,798 - 01:07:32,798] He said, the neutrinos, there's all these neutrinos around.
+- [01:07:32,798 - 01:07:34,798] Are those the things that give me headaches?
+- [01:07:41,798 - 01:07:43,798] But, you know, it really has the same feel.
+- [01:07:46,798 - 01:07:50,798] We're going to begin now studying pairs of electrons
+- [01:07:50,798 - 01:07:53,798] to get to the basic idea of entanglement.
+- [01:07:53,798 - 01:07:55,798] All we need is two electrons.
+- [01:07:55,798 - 01:07:57,298] But just before we do that,
+- [01:07:57,298 - 01:07:58,798] I want to make a table.
+- [01:07:58,798 - 01:08:02,798] A table of the action of the sigma matrices.
+- [01:08:02,798 - 01:08:05,798] I just want to write sigma...
+- [01:08:05,798 - 01:08:07,798] Sigma one on up.
+- [01:08:07,798 - 01:08:10,798] What does sigma one on up give?
+- [01:08:14,798 - 01:08:18,798] Sigma one is the matrix which interchanges up and down.
+- [01:08:18,798 - 01:08:19,798] Sigma one is the matrix which interchanges up and down.
+- [01:08:19,798 - 01:08:21,798] Sigma one is the matrix which interchanges up and down.
+- [01:08:21,798 - 01:08:24,798] It's off diagonal, and it means that it interchanges.
+- [01:08:24,798 - 01:08:26,798] It takes up to down.
+- [01:08:28,798 - 01:08:32,798] Sigma one on down equals up.
+- [01:08:34,798 - 01:08:35,798] Sigma two...
+- [01:08:35,798 - 01:08:37,798] What does sigma two do on up?
+- [01:08:41,798 - 01:08:43,798] Well, sigma two and sigma one are very similar,
+- [01:08:43,798 - 01:08:46,798] except there's an i in there and a minus sign.
+- [01:08:46,798 - 01:08:48,798] So actually, what sigma two on up does...
+- [01:08:48,798 - 01:08:50,798] Anybody know?
+- [01:08:50,798 - 01:08:55,798] Well, it gives you down again,
+- [01:08:55,798 - 01:08:57,298] but it gives you down with
+- [01:08:57,298 - 01:08:58,798] an i in front of it.
+- [01:08:58,798 - 01:09:01,798] And sigma two on down
+- [01:09:01,798 - 01:09:04,798] gives you minus i times up.
+- [01:09:04,798 - 01:09:07,798] You can check that just from the matrices.
+- [01:09:07,798 - 01:09:09,798] And finally, sigma three.
+- [01:09:09,798 - 01:09:11,798] What does sigma three do when it hits up?
+- [01:09:14,798 - 01:09:16,798] It just goes up.
+- [01:09:16,798 - 01:09:17,798] Up is an eigenvector of sigma three,
+- [01:09:17,798 - 01:09:19,798] with eigenvalue plus one.
+- [01:09:19,798 - 01:09:21,798] So it just goes up.
+- [01:09:21,798 - 01:09:27,798] And sigma three on down gives minus down,
+- [01:09:27,798 - 01:09:30,798] because it's an eigenvector with minus sign.
+- [01:09:30,798 - 01:09:35,798] This is an abstract representation of the sigma matrices.
+- [01:09:35,798 - 01:09:36,798] Well, it's not abstract.
+- [01:09:36,798 - 01:09:37,798] It's concrete.
+- [01:09:37,798 - 01:09:40,798] But it has the same
+- [01:09:40,798 - 01:09:43,798] content that the matrix structure has.
+- [01:09:43,798 - 01:09:45,798] Now let's come to pair of electrons.
+- [01:09:45,798 - 01:09:46,798] And when I speak of pair of electrons,
+- [01:09:46,798 - 01:09:48,798] once again, I'm not concerned with their position.
+- [01:09:48,798 - 01:09:50,798] I imagine that they're nailed down.
+- [01:09:50,798 - 01:09:52,798] They've been nailed to the wall.
+- [01:09:52,798 - 01:09:54,298] And the only thing that's
+- [01:09:54,298 - 01:09:55,798] free to vary is the spin,
+- [01:09:55,798 - 01:09:57,798] spin of the electron,
+- [01:09:57,798 - 01:09:59,798] the little magnetic moment that it carries.
+- [01:09:59,798 - 01:10:01,798] And now we have two of them.
+- [01:10:01,798 - 01:10:02,798] We have two of them,
+- [01:10:02,798 - 01:10:04,798] and we're interested in the space of states,
+- [01:10:04,798 - 01:10:08,798] the possible configurations of two spins.
+- [01:10:08,798 - 01:10:11,798] Now again, I can measure the spins.
+- [01:10:11,798 - 01:10:14,798] For example, I can measure the spin of a magnet.
+- [01:10:14,798 - 01:10:16,798] I can measure the spins,
+- [01:10:16,798 - 01:10:18,798] for example, along the third axis,
+- [01:10:18,798 - 01:10:21,798] and use the measurements along the
+- [01:10:21,798 - 01:10:24,798] third axis of the two spins.
+- [01:10:24,798 - 01:10:26,798] And I could choose the same axis.
+- [01:10:26,798 - 01:10:28,798] Just for simplicity, I will choose
+- [01:10:28,798 - 01:10:30,798] to measure them along the same axis
+- [01:10:30,798 - 01:10:33,798] and label them very similar to
+- [01:10:33,798 - 01:10:36,798] the way I label the single electron.
+- [01:10:36,798 - 01:10:38,798] But now we need two labels.
+- [01:10:38,798 - 01:10:41,298] So for example, here's a fact we
+- [01:10:41,298 - 01:10:43,798] can write down all of the states.
+- [01:10:43,798 - 01:10:46,798] Let me write down all the possibilities.
+- [01:10:46,798 - 01:10:49,298] We have in the first entry
+- [01:10:49,298 - 01:10:51,798] here will correspond to the first electron,
+- [01:10:51,798 - 01:10:55,798] and the second entry will correspond to the second electron.
+- [01:10:55,798 - 01:10:58,798] So this means electron number one is up,
+- [01:10:58,798 - 01:11:01,798] and electron number two is up.
+- [01:11:01,798 - 01:11:04,798] We will never get confused about which electron is which.
+- [01:11:04,798 - 01:11:06,298] One of the electrons is
+- [01:11:06,298 - 01:11:07,798] nailed to the blackboard over here.
+- [01:11:07,798 - 01:11:09,798] The other one is nailed over here.
+- [01:11:09,798 - 01:11:12,798] And we call this one, and we call this two.
+- [01:11:12,798 - 01:11:13,798] So there'll be no confusion.
+- [01:11:13,798 - 01:11:16,798] There'll be no confusion about which electron is which.
+- [01:11:16,798 - 01:11:19,798] This is electron one up, electron two up.
+- [01:11:19,798 - 01:11:21,298] And then there's a state
+- [01:11:21,298 - 01:11:22,798] in which electron one is down,
+- [01:11:22,798 - 01:11:24,798] and electron two is up.
+- [01:11:24,798 - 01:11:26,798] And then there's another one
+- [01:11:26,798 - 01:11:28,798] in which electron one is up,
+- [01:11:28,798 - 01:11:30,798] but electron two is down.
+- [01:11:30,798 - 01:11:32,798] And then the last one, down, down.
+- [01:11:32,798 - 01:11:34,798] That's all there is.
+- [01:11:34,798 - 01:11:36,798] Those are all the possibilities that we can get.
+- [01:11:36,798 - 01:11:39,798] Four possibilities, two times two.
+- [01:11:39,798 - 01:11:42,798] These are
+- [01:11:42,798 - 01:11:45,798] the four possible states of two spins.
+- [01:11:45,798 - 01:11:48,298] And so we're evidently dealing, obviously,
+- [01:11:48,298 - 01:11:50,798] with a four-dimensional vector space now,
+- [01:11:50,798 - 01:11:53,798] with four basis vectors,
+- [01:11:53,798 - 01:11:57,798] and two sets of quantities, two sets of observables.
+- [01:11:57,798 - 01:12:00,298] Now, the two sets of observables are,
+- [01:12:00,298 - 01:12:02,798] of course, the spins of the two electrons.
+- [01:12:02,798 - 01:12:04,798] How am I going to label
+- [01:12:04,798 - 01:12:06,798] the two spins of the electrons?
+- [01:12:06,798 - 01:12:08,798] I can't call them sigma one and sigma two,
+- [01:12:08,798 - 01:12:10,298] because I've already used sigma one
+- [01:12:10,298 - 01:12:11,798] and sigma two for something else.
+- [01:12:12,798 - 01:12:15,798] For the two components of the spin of one electron.
+- [01:12:15,798 - 01:12:17,798] So I need another name.
+- [01:12:17,798 - 01:12:21,798] The first one I will continue to call sigma.
+- [01:12:21,798 - 01:12:25,798] The second one I'm simply going to give another name.
+- [01:12:25,798 - 01:12:29,798] Tau follows sigma in some alphabet or other.
+- [01:12:29,798 - 01:12:32,798] So we're going to label the first electron spin
+- [01:12:32,798 - 01:12:35,798] and just call it sigma.
+- [01:12:35,798 - 01:12:39,798] It has three components, same as it had before.
+- [01:12:39,798 - 01:12:41,798] Sigma one, sigma two, and sigma three.
+- [01:12:42,798 - 01:12:45,798] And the other one I'm just going to label tau.
+- [01:12:45,798 - 01:12:48,298] And it also has three components,
+- [01:12:48,298 - 01:12:50,798] tau one, tau two, and tau three.
+- [01:12:50,798 - 01:12:55,798] How do the spin operators for the two electrons,
+- [01:12:55,798 - 01:12:57,798] how do they operate and what
+- [01:12:57,798 - 01:12:59,798] do they do to these vectors?
+- [01:12:59,798 - 01:13:03,798] Let me teach you now how you think about...
+- [01:13:03,798 - 01:13:06,798] First, let's take the first electron.
+- [01:13:06,798 - 01:13:08,798] What does the spin operator, sigma
+- [01:13:08,798 - 01:13:10,798] one, sigma two, and sigma three,
+- [01:13:10,798 - 01:13:13,798] do to these four state vectors?
+- [01:13:13,798 - 01:13:15,798] How does it act on these four state vectors?
+- [01:13:15,798 - 01:13:17,798] And here's the answer.
+- [01:13:17,798 - 01:13:19,798] If you're interested in the first
+- [01:13:19,798 - 01:13:21,798] spin, the one on the left here,
+- [01:13:21,798 - 01:13:24,798] you simply turn a blind eye to the second one.
+- [01:13:24,798 - 01:13:27,798] You don't look at it. It's passive.
+- [01:13:27,798 - 01:13:31,798] The operator sigma, which refers to the first spin,
+- [01:13:31,798 - 01:13:34,798] has no action on the second electron.
+- [01:13:34,798 - 01:13:36,798] It does nothing to it.
+- [01:13:36,798 - 01:13:38,798] So when sigma acts,
+- [01:13:38,798 - 01:13:40,798] it may or may not flip
+- [01:13:40,798 - 01:13:42,798] the spin of the first electron,
+- [01:13:42,798 - 01:13:46,798] but it leaves the second one completely unchanged.
+- [01:13:46,798 - 01:13:48,798] That's the rule.
+- [01:13:48,798 - 01:13:50,798] Now, this rule, of course, is an empirical rule,
+- [01:13:50,798 - 01:13:52,798] but it sounds reasonable
+- [01:13:52,798 - 01:13:55,298] that the spin of the first electron
+- [01:13:55,298 - 01:13:57,798] should only act on the first electron,
+- [01:13:57,798 - 01:13:59,798] on the coordinate of the first electron.
+- [01:13:59,798 - 01:14:02,798] So, for example, let's do one or two examples.
+- [01:14:02,798 - 01:14:07,798] What does sigma one do
+- [01:14:07,798 - 01:14:09,798] when it acts on the state up-down,
+- [01:14:09,798 - 01:14:11,798] just as an arbitrary example?
+- [01:14:11,798 - 01:14:15,798] Well, you just turn a blind eye to down,
+- [01:14:15,798 - 01:14:16,798] and in fact, when I
+- [01:14:16,798 - 01:14:17,798] say you turn a blind eye,
+- [01:14:17,798 - 01:14:20,298] I mean we will not change
+- [01:14:20,298 - 01:14:22,798] the down for the second electron,
+- [01:14:22,798 - 01:14:25,798] but we'll do to the first electron
+- [01:14:25,798 - 01:14:27,798] exactly the same thing
+- [01:14:27,798 - 01:14:31,798] that sigma one did on the first electron.
+- [01:14:31,798 - 01:14:34,798] What did it do? It flipped it down.
+- [01:14:34,798 - 01:14:37,798] So, turning a blind eye to the second electron,
+- [01:14:37,798 - 01:14:42,798] sigma one makes down,
+- [01:14:42,798 - 01:14:45,798] makes the first electron down.
+- [01:14:45,798 - 01:14:47,798] It has done nothing,
+- [01:14:47,798 - 01:14:50,798] the second electron is completely passive,
+- [01:14:50,798 - 01:14:54,798] sigma one does that.
+- [01:14:54,798 - 01:14:57,798] Let's do another example,
+- [01:14:57,798 - 01:15:03,798] let's do sigma one on down-down.
+- [01:15:03,798 - 01:15:06,798] Well, again, it does nothing to the second electron,
+- [01:15:06,798 - 01:15:11,798] and it flips the first electron up.
+- [01:15:11,798 - 01:15:14,798] Up-down.
+- [01:15:14,798 - 01:15:16,798] Okay, so you see what I mean by saying
+- [01:15:16,798 - 01:15:18,798] the second electron is passive.
+- [01:15:18,798 - 01:15:21,798] Now let's ask about what tau does.
+- [01:15:21,798 - 01:15:27,798] Tau are the operators associated with the second electron.
+- [01:15:27,798 - 01:15:30,798] They also do something to the state vectors.
+- [01:15:30,798 - 01:15:32,798] This time, you turn a
+- [01:15:32,798 - 01:15:34,798] blind eye to the first electron,
+- [01:15:34,798 - 01:15:37,798] and allow the operator to act exactly the same way,
+- [01:15:37,798 - 01:15:39,798] except substitute sigma for tau,
+- [01:15:39,798 - 01:15:41,798] exactly the same way,
+- [01:15:41,798 - 01:15:44,798] but as it applies on the,
+- [01:15:44,798 - 01:15:46,298] oh, before I do that, let
+- [01:15:46,298 - 01:15:47,798] me do one more case of sigma.
+- [01:15:47,798 - 01:15:50,798] What about sigma three on,
+- [01:15:50,798 - 01:15:54,798] let's take an arbitrary case, up-up-down.
+- [01:15:54,798 - 01:15:58,798] What does this give?
+- [01:15:58,798 - 01:16:00,798] Well, sigma three on up leaves up,
+- [01:16:00,798 - 01:16:02,798] with a plus one.
+- [01:16:02,798 - 01:16:04,798] So it does nothing.
+- [01:16:04,798 - 01:16:06,798] Up, and the second one is passive,
+- [01:16:06,798 - 01:16:08,798] which just stays the way it is.
+- [01:16:08,798 - 01:16:12,798] What about sigma three on down-down?
+- [01:16:12,798 - 01:16:14,798] Well, you look over here on this chart,
+- [01:16:14,798 - 01:16:16,798] sigma three takes down to down,
+- [01:16:16,798 - 01:16:18,798] but with a minus sign.
+- [01:16:18,798 - 01:16:22,798] So it gives you minus down-down.
+- [01:16:22,798 - 01:16:25,798] In other words, the second electron
+- [01:16:25,798 - 01:16:28,798] just goes along for the ride.
+- [01:16:28,798 - 01:16:30,798] What about the taus?
+- [01:16:30,798 - 01:16:32,798] The taus,
+- [01:16:32,798 - 01:16:34,798] act on the second electron,
+- [01:16:34,798 - 01:16:36,798] and the first electron goes along for the ride.
+- [01:16:36,798 - 01:16:39,798] So let's do one or two cases.
+- [01:16:39,798 - 01:16:42,798] Let's take tau two,
+- [01:16:42,798 - 01:16:45,798] and act on up-down.
+- [01:16:45,798 - 01:16:48,798] Alright, so to see what it does,
+- [01:16:48,798 - 01:16:50,798] we go over to the chart,
+- [01:16:50,798 - 01:16:54,798] we're acting on the second electron being down,
+- [01:16:54,798 - 01:16:56,798] so we go over to sigma two on down,
+- [01:16:56,798 - 01:16:59,798] and it gives us minus i times up.
+- [01:16:59,798 - 01:17:02,798] So, this just gives us,
+- [01:17:02,798 - 01:17:05,798] minus i times up up.
+- [01:17:05,798 - 01:17:07,798] The first electron has been passive,
+- [01:17:07,798 - 01:17:09,798] nothing has happened to it.
+- [01:17:09,798 - 01:17:11,298] The second electron has responded
+- [01:17:11,298 - 01:17:12,798] exactly the same way to tau,
+- [01:17:12,798 - 01:17:14,798] to tau two,
+- [01:17:14,798 - 01:17:17,798] as dictated by this chart here.
+- [01:17:17,798 - 01:17:20,798] That's a set of definitions.
+- [01:17:20,798 - 01:17:22,298] That's a set of definitions
+- [01:17:22,298 - 01:17:23,798] of what sigma and tau do.
+- [01:17:23,798 - 01:17:25,798] If you know what sigma and tau
+- [01:17:25,798 - 01:17:27,798] do to all of the various vectors,
+- [01:17:27,798 - 01:17:30,798] to all the independent vectors,
+- [01:17:30,798 - 01:17:32,798] then you also know what they
+- [01:17:32,798 - 01:17:34,798] do to any linear combination of them.
+- [01:17:34,798 - 01:17:37,798] So this is a complete specification
+- [01:17:37,798 - 01:17:40,798] of how sigma one,
+- [01:17:40,798 - 01:17:42,798] sorry, how sigma and tau,
+- [01:17:42,798 - 01:17:44,798] all components of them,
+- [01:17:44,798 - 01:17:46,798] act on any vector.
+- [01:17:46,798 - 01:17:47,798] Yeah?
+- [01:17:47,798 - 01:17:50,798] Why is the minus i outside of the cap?
+- [01:17:50,798 - 01:17:52,798] You did that on the left,
+- [01:17:52,798 - 01:17:53,798] on the left,
+- [01:17:53,798 - 01:17:54,798] and it sort of slipped by,
+- [01:17:54,798 - 01:17:56,798] but now it's got significant implications
+- [01:17:56,798 - 01:17:59,798] because the minus i is affecting both the electrons.
+- [01:17:59,798 - 01:18:00,798] Electrons.
+- [01:18:00,798 - 01:18:02,798] What happens to the minus i inside?
+- [01:18:02,798 - 01:18:04,798] Well, multiplying a vector by an i,
+- [01:18:04,798 - 01:18:06,798] it doesn't matter where you put it,
+- [01:18:06,798 - 01:18:07,798] it doesn't make,
+- [01:18:07,798 - 01:18:10,798] there's no meaning to putting it inside the vector.
+- [01:18:10,798 - 01:18:14,798] You can multiply a vector by a constant,
+- [01:18:14,798 - 01:18:15,798] but the constant,
+- [01:18:15,798 - 01:18:17,798] that's a notational notation,
+- [01:18:17,798 - 01:18:19,798] standard notation to leave the constant
+- [01:18:19,798 - 01:18:21,798] on the outside of the vector.
+- [01:18:21,798 - 01:18:23,798] To put it another way,
+- [01:18:23,798 - 01:18:25,798] the inside of the cap is just a label?
+- [01:18:25,798 - 01:18:27,798] Yeah, it's a label, right.
+- [01:18:27,798 - 01:18:28,798] Right, that's right.
+- [01:18:28,798 - 01:18:29,798] It's a label.
+- [01:18:29,798 - 01:18:31,798] It's just a labeling configuration.
+- [01:18:31,798 - 01:18:34,298] It doesn't make any sense to
+- [01:18:34,298 - 01:18:36,798] multiply the label by a number.
+- [01:18:36,798 - 01:18:38,798] So it goes on the outside.
+- [01:18:38,798 - 01:18:40,798] But you are,
+- [01:18:40,798 - 01:18:41,798] yeah, I mean,
+- [01:18:41,798 - 01:18:44,798] you wouldn't be able to tell from this equation alone,
+- [01:18:44,798 - 01:18:46,798] from this equation alone,
+- [01:18:46,798 - 01:18:48,298] whether this i was because
+- [01:18:48,298 - 01:18:49,798] of this up or that up.
+- [01:18:49,798 - 01:18:51,798] But if you look at all the various possibilities,
+- [01:18:51,798 - 01:18:53,798] you know, here's this tau 2,
+- [01:18:53,798 - 01:18:55,298] let's write all the various
+- [01:18:55,298 - 01:18:56,798] things that tau 2 can do.
+- [01:18:56,798 - 01:18:58,798] Let's first do up up.
+- [01:18:58,798 - 01:19:00,798] So tau 2,
+- [01:19:00,798 - 01:19:01,798] let's see,
+- [01:19:01,798 - 01:19:02,798] that the,
+- [01:19:02,798 - 01:19:07,298] we have to see tau 2
+- [01:19:07,298 - 01:19:11,798] on up gives i times down.
+- [01:19:11,798 - 01:19:14,798] So that's i times down,
+- [01:19:14,798 - 01:19:16,798] plus i times down,
+- [01:19:16,798 - 01:19:17,798] and so forth.
+- [01:19:17,798 - 01:19:19,798] We can go through the list of them.
+- [01:19:19,798 - 01:19:22,798] The point is we know what sigma and
+- [01:19:22,798 - 01:19:25,798] tau do to every one of the vectors.
+- [01:19:25,798 - 01:19:26,798] And so we know completely what
+- [01:19:26,798 - 01:19:27,798] the nature of the vector is.
+- [01:19:27,798 - 01:19:30,798] We know completely what the nature of these operators are.
+- [01:19:30,798 - 01:19:33,798] We don't have to bother writing down matrices.
+- [01:19:33,798 - 01:19:34,798] We know what they do.
+- [01:19:34,798 - 01:19:36,798] That's enough for us for now.
+- [01:19:36,798 - 01:19:39,798] We could invent matrices describing them,
+- [01:19:39,798 - 01:19:42,798] but it's unnecessary for the moment.
+- [01:19:42,798 - 01:19:44,798] Maybe later we'll do it.
+- [01:19:44,798 - 01:19:49,798] So is that i or rotation?
+- [01:19:49,798 - 01:19:52,798] No, it's just multiplication by i.
+- [01:19:52,798 - 01:19:54,798] It's not physically,
+- [01:19:54,798 - 01:19:56,798] it's just multiplication of the vector by the number i.
+- [01:19:56,798 - 01:20:00,798] It doesn't represent any rotation in real space,
+- [01:20:00,798 - 01:20:02,798] if that's what you're asking.
+- [01:20:02,798 - 01:20:05,798] It does not represent the rotation in real space.
+- [01:20:05,798 - 01:20:07,798] It's just the action of these matrices.
+- [01:20:07,798 - 01:20:08,798] That's all.
+- [01:20:08,798 - 01:20:09,798] The matrices do.
+- [01:20:09,798 - 01:20:10,798] And they just do the
+- [01:20:10,798 - 01:20:11,798] same as they would have done
+- [01:20:11,798 - 01:20:13,798] had the other label not been there.
+- [01:20:13,798 - 01:20:15,798] That's...
+- [01:20:22,798 - 01:20:25,798] Now, how many...
+- [01:20:26,798 - 01:20:30,798] Over here, this gentleman over here remarked before
+- [01:20:30,798 - 01:20:34,798] about the number of variables that it takes to specify
+- [01:20:34,798 - 01:20:36,798] the state of an electron.
+- [01:20:36,798 - 01:20:38,798] And the answer was two.
+- [01:20:38,798 - 01:20:41,798] The answer was two independent real variables
+- [01:20:41,798 - 01:20:45,798] that are important in specifying the state of an electron.
+- [01:20:45,798 - 01:20:47,798] How many do you think
+- [01:20:47,798 - 01:20:49,798] it takes to specify two electrons?
+- [01:20:51,798 - 01:20:53,798] That's what you'd think, wouldn't you?
+- [01:20:53,798 - 01:20:55,798] But let's go through the counting.
+- [01:20:56,798 - 01:20:59,798] There's a four-dimensional vector space.
+- [01:20:59,798 - 01:21:00,798] You can...
+- [01:21:00,798 - 01:21:01,798] Where are they all?
+- [01:21:01,798 - 01:21:04,798] Up, up, down, up, up, down, down, down.
+- [01:21:04,798 - 01:21:06,798] What states can you build?
+- [01:21:06,798 - 01:21:08,298] You can multiply each one
+- [01:21:08,298 - 01:21:09,798] of these by a complex number
+- [01:21:09,798 - 01:21:11,798] and add them all together.
+- [01:21:11,798 - 01:21:14,798] That's the most general state of two electrons
+- [01:21:14,798 - 01:21:15,798] that you can write down.
+- [01:21:15,798 - 01:21:18,798] The linear combination of arbitrary...
+- [01:21:18,798 - 01:21:21,798] with arbitrary coefficients
+- [01:21:21,798 - 01:21:24,798] subject to the constraint that the sums of the squares
+- [01:21:24,798 - 01:21:25,798] are equal to one.
+- [01:21:25,798 - 01:21:28,798] And that the phase doesn't matter.
+- [01:21:28,798 - 01:21:30,798] Now how many are there?
+- [01:21:30,798 - 01:21:32,798] What's the counting now?
+- [01:21:35,798 - 01:21:37,798] Six.
+- [01:21:37,798 - 01:21:38,798] Eight.
+- [01:21:38,798 - 01:21:40,798] Four complex numbers.
+- [01:21:40,798 - 01:21:42,798] Yeah, we have to remove two. Right.
+- [01:21:42,798 - 01:21:44,798] Right.
+- [01:21:44,798 - 01:21:46,798] Four complex numbers.
+- [01:21:46,798 - 01:21:49,798] That's eight variables, eight real variables.
+- [01:21:49,798 - 01:21:52,798] Remove two. That gives you six.
+- [01:21:52,798 - 01:21:54,798] Right. Something's going on here.
+- [01:21:54,798 - 01:21:57,798] There seem to be more possibilities
+- [01:21:57,798 - 01:21:59,798] than you might have guessed
+- [01:21:59,798 - 01:22:02,298] had you said each electron
+- [01:22:02,298 - 01:22:04,798] itself can be in some state.
+- [01:22:04,798 - 01:22:06,798] If each electron was in some state,
+- [01:22:06,798 - 01:22:08,798] each electron requires two variables
+- [01:22:08,798 - 01:22:10,798] to define its physical state,
+- [01:22:10,798 - 01:22:13,798] you might have guessed the answer was four.
+- [01:22:13,798 - 01:22:15,798] Okay?
+- [01:22:15,798 - 01:22:17,798] It seems that the space
+- [01:22:17,798 - 01:22:19,798] of states must somehow be richer.
+- [01:22:19,798 - 01:22:22,798] It must contain things which are...
+- [01:22:22,798 - 01:22:25,798] which cannot be described simply
+- [01:22:25,798 - 01:22:28,798] as each electron having its own state.
+- [01:22:28,798 - 01:22:30,798] Because there are just too many variables.
+- [01:22:30,798 - 01:22:32,798] Just too many possibilities.
+- [01:22:32,798 - 01:22:33,798] Instead of four, there are six.
+- [01:22:33,798 - 01:22:34,798] So six variables.
+- [01:22:34,798 - 01:22:38,798] Six independent real numbers
+- [01:22:38,798 - 01:22:42,798] characterizing the state of a two-electron system.
+- [01:22:42,798 - 01:22:44,798] All right.
+- [01:22:44,798 - 01:22:46,798] This is entanglement.
+- [01:22:46,798 - 01:22:49,798] But first let me tell you what corresponds
+- [01:22:49,798 - 01:22:50,798] to a pair of electrons,
+- [01:22:50,798 - 01:22:52,798] each with its own state,
+- [01:22:52,798 - 01:22:54,798] each with its own state
+- [01:22:54,798 - 01:22:57,798] that you would recognize as...
+- [01:22:57,798 - 01:23:00,798] Supposing the state of the...
+- [01:23:00,798 - 01:23:03,798] electron number one...
+- [01:23:06,798 - 01:23:09,798] Well, supposing we put the electron number one
+- [01:23:09,798 - 01:23:11,798] in the state alpha up
+- [01:23:11,798 - 01:23:14,798] plus beta down.
+- [01:23:14,798 - 01:23:16,798] And let me put a one here
+- [01:23:16,798 - 01:23:19,798] to indicate that this is electron one.
+- [01:23:19,798 - 01:23:21,798] So, let's say that this is electron one.
+- [01:23:22,798 - 01:23:23,798] That's electron one.
+- [01:23:23,798 - 01:23:29,798] That's the state of electron one.
+- [01:23:29,798 - 01:23:31,798] And now what about electron two?
+- [01:23:31,798 - 01:23:34,798] Electron two, I'm going to write alpha two
+- [01:23:34,798 - 01:23:36,798] times up
+- [01:23:36,798 - 01:23:38,798] plus beta two
+- [01:23:38,798 - 01:23:39,798] times down.
+- [01:23:39,798 - 01:23:40,798] I'm not going to write...
+- [01:23:40,798 - 01:23:41,798] It's state of two.
+- [01:23:41,798 - 01:23:45,798] State of two.
+- [01:23:45,798 - 01:23:48,798] Now, neither of these are really two-electron states.
+- [01:23:48,798 - 01:23:51,798] Two-electron states have to have two indices.
+- [01:23:51,798 - 01:23:52,798] What...
+- [01:23:52,798 - 01:23:54,798] If electron one is in this state
+- [01:23:54,798 - 01:23:56,798] and electron two is in this state,
+- [01:23:56,798 - 01:23:58,798] then the two-electron state
+- [01:23:58,798 - 01:24:00,798] you write down the following way.
+- [01:24:00,798 - 01:24:02,798] You write it as a product.
+- [01:24:02,798 - 01:24:03,798] Alpha one up...
+- [01:24:03,798 - 01:24:05,798] And then I'll tell you what to do with it.
+- [01:24:05,798 - 01:24:09,798] Alpha one up plus beta one down
+- [01:24:09,798 - 01:24:10,798] times...
+- [01:24:10,798 - 01:24:15,798] Let's put a bracket.
+- [01:24:15,798 - 01:24:18,798] Alpha two up
+- [01:24:18,798 - 01:24:21,798] plus beta two down.
+- [01:24:21,798 - 01:24:28,798] And then read off from this the following object.
+- [01:24:28,798 - 01:24:32,798] Alpha one alpha two
+- [01:24:32,798 - 01:24:35,798] times both electrons up.
+- [01:24:35,798 - 01:24:38,798] Up, up.
+- [01:24:38,798 - 01:24:46,798] Plus alpha one beta two
+- [01:24:46,798 - 01:24:50,798] times the first electron up, the second electron down.
+- [01:24:50,798 - 01:24:56,798] Then beta one alpha two...
+- [01:24:56,798 - 01:25:04,798] Beta one times alpha two times down up.
+- [01:25:04,798 - 01:25:10,798] And then finally, plus beta one beta two
+- [01:25:10,798 - 01:25:16,798] down, down.
+- [01:25:16,798 - 01:25:19,798] This two-electron state...
+- [01:25:20,798 - 01:25:23,798] This two-electron state, which was obtained
+- [01:25:23,798 - 01:25:27,798] by combining two one-electron states,
+- [01:25:27,798 - 01:25:29,798] corresponds...
+- [01:25:29,798 - 01:25:33,798] corresponds to a state in which each electron
+- [01:25:33,798 - 01:25:36,798] has comfortably been placed in its own state
+- [01:25:36,798 - 01:25:39,798] sort of independently.
+- [01:25:39,798 - 01:25:42,798] That's what this is.
+- [01:25:42,798 - 01:25:46,798] If you were, for example, to take such a state,
+- [01:25:46,798 - 01:25:48,798] you would find
+- [01:25:48,798 - 01:25:50,798] that there is a state,
+- [01:25:50,798 - 01:25:53,798] there is some direction
+- [01:25:53,798 - 01:25:55,798] in which sigma one is definitely up.
+- [01:25:55,798 - 01:25:58,798] Remember, for any electron state
+- [01:25:58,798 - 01:26:00,798] that you can make with an alpha and a beta,
+- [01:26:00,798 - 01:26:03,798] there is always some direction
+- [01:26:03,798 - 01:26:05,798] in which sigma is...
+- [01:26:05,798 - 01:26:07,798] sigma dot n is up.
+- [01:26:07,798 - 01:26:09,798] This state has that property.
+- [01:26:09,798 - 01:26:11,798] With the same...
+- [01:26:11,798 - 01:26:13,298] Just using alpha one and
+- [01:26:13,298 - 01:26:14,798] beta one in the same way,
+- [01:26:14,798 - 01:26:17,798] you'll find a direction in space
+- [01:26:17,798 - 01:26:19,798] such that sigma one
+- [01:26:19,798 - 01:26:21,798] is definitely positive.
+- [01:26:21,798 - 01:26:23,798] It'll be the same direction
+- [01:26:23,798 - 01:26:25,798] as you would have gotten
+- [01:26:25,798 - 01:26:28,798] by just looking at the one-electron system by itself.
+- [01:26:28,798 - 01:26:29,798] Same thing for the two-electron,
+- [01:26:29,798 - 01:26:31,798] for the second electron.
+- [01:26:31,798 - 01:26:33,798] There exists some direction,
+- [01:26:33,798 - 01:26:35,798] a different direction in general,
+- [01:26:35,798 - 01:26:37,798] a different direction
+- [01:26:37,798 - 01:26:39,798] in which the second electron
+- [01:26:39,798 - 01:26:42,798] is also pointing along the positive axis.
+- [01:26:42,798 - 01:26:44,798] You can check
+- [01:26:44,798 - 01:26:46,798] that if these two states
+- [01:26:46,798 - 01:26:47,798] have the property
+- [01:26:47,798 - 01:26:48,798] that this one is definitely up,
+- [01:26:48,798 - 01:26:50,798] this one is definitely along the n-axis,
+- [01:26:50,798 - 01:26:53,798] and this one is definitely along the m-axis,
+- [01:26:53,798 - 01:26:55,798] then you can check
+- [01:26:55,798 - 01:26:59,798] that the thing that you've composed in this way
+- [01:26:59,798 - 01:27:01,798] has the same property
+- [01:27:01,798 - 01:27:04,798] with respect to the more complicated
+- [01:27:04,798 - 01:27:06,798] two-electron system.
+- [01:27:06,798 - 01:27:09,798] Remember, sigma one only acts on the ups...
+- [01:27:09,798 - 01:27:10,798] Sorry, on the first electron.
+- [01:27:10,798 - 01:27:12,798] Sigma... tau... sorry.
+- [01:27:12,798 - 01:27:14,798] Sigma acts on the first electron.
+- [01:27:14,798 - 01:27:16,798] Tau acts on the second electron.
+- [01:27:16,798 - 01:27:18,798] And you can check
+- [01:27:18,798 - 01:27:21,798] that this two-electron state
+- [01:27:21,798 - 01:27:23,798] has all the properties you would expect
+- [01:27:23,798 - 01:27:26,798] if you simply had two distinct electrons
+- [01:27:26,798 - 01:27:29,798] that had been prepared completely separately,
+- [01:27:29,798 - 01:27:32,798] never talking to each other independently.
+- [01:27:32,798 - 01:27:34,798] Not necessarily in the same state,
+- [01:27:34,798 - 01:27:35,798] two different states.
+- [01:27:35,798 - 01:27:36,798] For example,
+- [01:27:36,798 - 01:27:37,798] if you just put electron one
+- [01:27:37,798 - 01:27:39,798] in magnetic field pointing this way
+- [01:27:39,798 - 01:27:40,798] and electron two
+- [01:27:40,798 - 01:27:42,798] in magnetic field pointing this way,
+- [01:27:42,798 - 01:27:43,798] and let them come to rest
+- [01:27:43,798 - 01:27:45,798] and let them give off their photon
+- [01:27:45,798 - 01:27:46,798] or not give off their photon,
+- [01:27:46,798 - 01:27:48,798] then that's what this kind of state is.
+- [01:27:48,798 - 01:27:49,798] That's what a product state would be.
+- [01:27:49,798 - 01:27:51,798] It's called a product state.
+- [01:27:51,798 - 01:27:53,798] It's a simple product state.
+- [01:27:53,798 - 01:27:55,798] And it always has
+- [01:27:55,798 - 01:27:57,798] a pair of directions
+- [01:27:57,798 - 01:27:59,798] along which
+- [01:27:59,798 - 01:28:01,798] each electron is polarized.
+- [01:28:01,798 - 01:28:02,798] That's the word.
+- [01:28:02,798 - 01:28:03,798] To say that the electron
+- [01:28:03,798 - 01:28:05,798] is definitely up along some axis
+- [01:28:05,798 - 01:28:09,798] is to say it's polarized along that axis.
+- [01:28:09,798 - 01:28:11,798] Now I'm going to construct for you
+- [01:28:11,798 - 01:28:12,798] a state
+- [01:28:12,798 - 01:28:15,798] which obviously doesn't have that property,
+- [01:28:15,798 - 01:28:17,798] which does not have the property
+- [01:28:17,798 - 01:28:18,798] that there's some direction
+- [01:28:18,798 - 01:28:21,798] along which the spin is up.
+- [01:28:21,798 - 01:28:24,798] And it is an entangled state.
+- [01:28:24,798 - 01:28:26,798] It's one that does not have the property
+- [01:28:26,798 - 01:28:28,798] that you can think of it
+- [01:28:28,798 - 01:28:31,798] as two separate electrons
+- [01:28:31,798 - 01:28:33,798] which have been prepared independently,
+- [01:28:33,798 - 01:28:36,798] each one with its own state.
+- [01:28:36,798 - 01:28:42,798] Somehow the electrons are more intricately entangled.
+- [01:28:42,798 - 01:28:44,798] The state of the electrons
+- [01:28:44,798 - 01:28:46,798] are more intimately entangled.
+- [01:28:47,798 - 01:28:48,798] Here's a state.
+- [01:28:48,798 - 01:28:50,798] It's very simple.
+- [01:28:53,798 - 01:28:55,798] One electron is up.
+- [01:29:00,798 - 01:29:01,798] One electron is up.
+- [01:29:01,798 - 01:29:04,798] The other electron is down.
+- [01:29:04,798 - 01:29:06,798] And you add to that
+- [01:29:06,798 - 01:29:08,798] the first electron down
+- [01:29:08,798 - 01:29:10,798] and the second electron up.
+- [01:29:10,798 - 01:29:11,798] Of course, you'll have to put
+- [01:29:11,798 - 01:29:13,798] a one over square root of two
+- [01:29:13,798 - 01:29:15,798] to normalize it.
+- [01:29:15,798 - 01:29:17,798] And you'll have to put
+- [01:29:17,798 - 01:29:19,798] a one over square root of two down.
+- [01:29:19,798 - 01:29:21,798] But that one over square root of two
+- [01:29:21,798 - 01:29:22,798] is not going to play any role
+- [01:29:22,798 - 01:29:23,798] in what I say.
+- [01:29:23,798 - 01:29:24,798] Here's a state.
+- [01:29:24,798 - 01:29:26,798] And this state has the property.
+- [01:29:26,798 - 01:29:28,798] If you think about what this state means,
+- [01:29:28,798 - 01:29:30,798] it has the following property.
+- [01:29:30,798 - 01:29:34,798] That if you measure electron number two
+- [01:29:34,798 - 01:29:36,798] and find it's down,
+- [01:29:36,798 - 01:29:39,798] then electron number one must be up.
+- [01:29:39,798 - 01:29:42,798] And if you find electron number two up,
+- [01:29:42,798 - 01:29:45,798] then electron number one is down.
+- [01:29:45,798 - 01:29:47,798] This state has a funny property
+- [01:29:47,798 - 01:29:50,798] that if you know that it's in this state,
+- [01:29:50,798 - 01:29:52,798] if you happen to know that it's in this state,
+- [01:29:52,798 - 01:29:54,798] the combined system,
+- [01:29:54,798 - 01:29:56,798] then you would learn something
+- [01:29:56,798 - 01:29:57,798] about the second electron
+- [01:29:57,798 - 01:29:59,798] by measuring the first electron.
+- [01:30:01,798 - 01:30:03,798] This state has the property
+- [01:30:03,798 - 01:30:06,798] that if you measure
+- [01:30:06,798 - 01:30:08,798] the second electron to be down,
+- [01:30:08,798 - 01:30:10,798] then the first electron is up.
+- [01:30:10,798 - 01:30:13,798] And if you measure the second electron to be up,
+- [01:30:13,798 - 01:30:15,798] the second one is down.
+- [01:30:15,798 - 01:30:16,798] Now the first one is down.
+- [01:30:16,798 - 01:30:18,798] You know what I mean.
+- [01:30:18,798 - 01:30:19,798] I'm getting tongue-tied.
+- [01:30:19,798 - 01:30:21,798] It's getting too late.
+- [01:30:24,798 - 01:30:26,798] Let me prove something to you.
+- [01:30:26,798 - 01:30:29,798] Let me prove that every one of the sigma matrices
+- [01:30:29,798 - 01:30:31,798] as well as the tau matrices
+- [01:30:31,798 - 01:30:35,798] has average value zero
+- [01:30:35,798 - 01:30:37,798] in this state.
+- [01:30:37,798 - 01:30:40,798] Remember how to calculate the average value?
+- [01:30:42,798 - 01:30:45,798] You sandwich the operator that you're interested
+- [01:30:45,798 - 01:30:47,798] between the state and its...
+- [01:30:47,798 - 01:30:50,798] the same state on one side and the other.
+- [01:30:50,798 - 01:30:52,798] Okay?
+- [01:30:52,798 - 01:30:54,798] Supposing it were true.
+- [01:30:54,798 - 01:30:56,798] Supposing the expectation value
+- [01:30:56,798 - 01:30:59,798] of all three of the sigmas was zero.
+- [01:30:59,798 - 01:31:01,798] Then it will also be true
+- [01:31:01,798 - 01:31:03,798] that the expectation value
+- [01:31:03,798 - 01:31:05,798] of any sigma dot n will be zero.
+- [01:31:05,798 - 01:31:09,798] If the expectation value of sigma dot n is zero,
+- [01:31:09,798 - 01:31:12,798] that means that there's a half a probability
+- [01:31:12,798 - 01:31:14,798] for it to be up along that direction
+- [01:31:14,798 - 01:31:17,798] and a half a probability for it to be down.
+- [01:31:17,798 - 01:31:19,798] So if all of the expectation values
+- [01:31:19,798 - 01:31:22,798] of all three sigmas are equal to zero,
+- [01:31:22,798 - 01:31:24,798] then there can be no direction
+- [01:31:24,798 - 01:31:26,798] along which sigma is definitely up
+- [01:31:26,798 - 01:31:28,798] because along any direction
+- [01:31:28,798 - 01:31:30,798] the probabilities are a half a half.
+- [01:31:30,798 - 01:31:32,798] So let's see if we can prove that.
+- [01:31:32,798 - 01:31:36,798] Let's take the three sigmas and check.
+- [01:31:36,798 - 01:31:38,298] First of all, we have to
+- [01:31:38,298 - 01:31:39,798] make a bra vector out of this.
+- [01:31:39,798 - 01:31:41,798] All of the coefficients are real
+- [01:31:41,798 - 01:31:43,798] so there's no complex conjugation.
+- [01:31:43,798 - 01:31:46,798] The one over square root of two
+- [01:31:46,798 - 01:31:48,798] is not going to play any interesting role here.
+- [01:31:48,798 - 01:31:50,798] It doesn't do anything.
+- [01:31:50,798 - 01:31:52,798] Let's make the corresponding bra vector.
+- [01:31:52,798 - 01:31:58,798] The corresponding bra vector
+- [01:31:58,798 - 01:32:03,798] also is the sum of two terms.
+- [01:32:03,798 - 01:32:09,798] And it's up down plus down up.
+- [01:32:09,798 - 01:32:11,798] And now let's pick a sigma.
+- [01:32:11,798 - 01:32:13,798] Let's start with sigma one.
+- [01:32:13,798 - 01:32:20,798] Sigma one and then same state
+- [01:32:20,798 - 01:32:22,798] except the ket version of it,
+- [01:32:22,798 - 01:32:28,798] up down plus down up.
+- [01:32:28,798 - 01:32:30,798] Okay, now we know how sigma one acts.
+- [01:32:30,798 - 01:32:32,798] What does sigma one do?
+- [01:32:32,798 - 01:32:34,798] It acts on the first entry here
+- [01:32:34,798 - 01:32:36,798] and it changes, it intertwines up and down.
+- [01:32:36,798 - 01:32:38,798] That's all it does.
+- [01:32:38,798 - 01:32:40,798] It changes up to down in the first entry
+- [01:32:40,798 - 01:32:41,798] and down to up.
+- [01:32:41,798 - 01:32:43,798] So sigma one on this state here
+- [01:32:43,798 - 01:32:45,798] is the sum of two terms.
+- [01:32:45,798 - 01:32:47,798] Up goes to down, down down.
+- [01:32:47,798 - 01:32:50,798] And takes this down and makes it up.
+- [01:32:50,798 - 01:32:57,798] The other side here, I've done nothing.
+- [01:32:57,798 - 01:33:03,798] Up down plus down up.
+- [01:33:03,798 - 01:33:10,798] What's the inner product of up down with down down?
+- [01:33:10,798 - 01:33:12,798] Well, I didn't tell you that.
+- [01:33:12,798 - 01:33:14,798] Well, I didn't tell you.
+- [01:33:14,798 - 01:33:16,798] But the answer is zero.
+- [01:33:16,798 - 01:33:19,798] They correspond to physically different situations
+- [01:33:19,798 - 01:33:23,798] where one electron, which was up over here,
+- [01:33:23,798 - 01:33:25,798] is down over here.
+- [01:33:25,798 - 01:33:28,798] That always means they're orthogonal.
+- [01:33:28,798 - 01:33:30,798] That always means they're orthogonal.
+- [01:33:30,798 - 01:33:34,798] Different labels always correspond to orthogonality.
+- [01:33:34,798 - 01:33:37,798] Up down, up up, down down, and down up
+- [01:33:37,798 - 01:33:40,798] are all mutually orthogonal to each other.
+- [01:33:40,798 - 01:33:41,798] That's an assumption.
+- [01:33:41,798 - 01:33:44,798] But it goes together with the idea
+- [01:33:44,798 - 01:33:46,798] that these are
+- [01:33:46,798 - 01:33:48,798] measurable, distinctly different configurations.
+- [01:33:48,798 - 01:33:51,298] So, we have an up down
+- [01:33:51,298 - 01:33:53,798] and a down up over here.
+- [01:33:53,798 - 01:33:56,798] But no up down and no down up over here.
+- [01:33:56,798 - 01:33:58,798] So these must be orthogonal.
+- [01:33:58,798 - 01:34:01,798] Everything here is orthogonal to everything here.
+- [01:34:01,798 - 01:34:04,798] And the inner product is just plain zero.
+- [01:34:04,798 - 01:34:07,798] You'll only get something if there's something common
+- [01:34:07,798 - 01:34:09,298] between the left, between the
+- [01:34:09,298 - 01:34:10,798] bra vector and the ket vector.
+- [01:34:10,798 - 01:34:13,798] That's the only way you can get something non-zero.
+- [01:34:13,798 - 01:34:16,798] That's the expectation value of sigma one.
+- [01:34:16,798 - 01:34:20,798] What about the expectation value of sigma two?
+- [01:34:20,798 - 01:34:22,798] Well, sigma two does about the
+- [01:34:22,798 - 01:34:24,798] same thing that sigma one does,
+- [01:34:24,798 - 01:34:28,798] except it throws in some i's and some minus signs.
+- [01:34:28,798 - 01:34:32,798] But still, there's up down here and down up.
+- [01:34:32,798 - 01:34:35,798] Over here, there's only down down and up up.
+- [01:34:35,798 - 01:34:37,798] So it's still orthogonal.
+- [01:34:37,798 - 01:34:39,798] This is still orthogonal to this.
+- [01:34:39,798 - 01:34:43,798] The expectation value of sigma two is zero.
+- [01:34:43,798 - 01:34:45,798] We found the expectation value of
+- [01:34:45,798 - 01:34:47,798] sigma one is equal to zero.
+- [01:34:47,798 - 01:34:50,798] The expectation value of sigma two is equal to zero.
+- [01:34:50,798 - 01:34:53,798] The only one left is sigma three.
+- [01:34:53,798 - 01:34:56,798] So let's check sigma three.
+- [01:35:00,798 - 01:35:03,798] What does sigma three do on this?
+- [01:35:03,798 - 01:35:07,798] Well, keeps it up. Does nothing.
+- [01:35:07,798 - 01:35:10,798] What does it do to this one?
+- [01:35:10,798 - 01:35:13,798] Minus sign.
+- [01:35:13,798 - 01:35:17,798] So sigma three just multiplies this one by minus.
+- [01:35:17,798 - 01:35:19,798] Now let's look at the inner product.
+- [01:35:19,798 - 01:35:22,798] What's the inner product of up down with up down?
+- [01:35:25,798 - 01:35:28,798] One.
+- [01:35:28,798 - 01:35:31,798] What's the inner product of up down with down up?
+- [01:35:31,798 - 01:35:33,798] They're different situations.
+- [01:35:33,798 - 01:35:34,798] Zero.
+- [01:35:34,798 - 01:35:36,798] Down up with up down?
+- [01:35:37,798 - 01:35:38,798] Zero.
+- [01:35:38,798 - 01:35:43,798] And up down, sorry, down up with down up?
+- [01:35:43,798 - 01:35:45,798] There's one, but there's a minus sign.
+- [01:35:49,798 - 01:35:52,798] So we found all three
+- [01:35:52,798 - 01:35:55,798] expectation values are equal to zero.
+- [01:35:57,798 - 01:36:01,298] We've encountered a situation which is impossible
+- [01:36:01,298 - 01:36:04,798] if every electron had its own state
+- [01:36:04,798 - 01:36:05,798] in the same sense that it
+- [01:36:05,798 - 01:36:06,798] would happen in the same way.
+- [01:36:06,798 - 01:36:09,798] So, let's say that it would have a state
+- [01:36:09,798 - 01:36:12,798] as if there was just a one electron system.
+- [01:36:12,798 - 01:36:17,798] For any one electron system, there is always some
+- [01:36:17,798 - 01:36:22,798] axis such that sigma dot n is equal to one.
+- [01:36:22,798 - 01:36:24,798] That the expectation value of sigma
+- [01:36:24,798 - 01:36:26,798] dot n is equal to one.
+- [01:36:26,798 - 01:36:29,798] And incidentally, in any eigenvector of a
+- [01:36:29,798 - 01:36:32,798] quantity, the expectation value is just that eigenvalue.
+- [01:36:32,798 - 01:36:34,298] So there's always some direction that
+- [01:36:34,298 - 01:36:35,798] sigma dot n is equal to one.
+- [01:36:35,798 - 01:36:39,298] But if all three components
+- [01:36:39,298 - 01:36:42,798] of sigma have zero expectation value,
+- [01:36:42,798 - 01:36:44,798] then every sigma dot n
+- [01:36:44,798 - 01:36:46,798] expectation value is equal to zero.
+- [01:36:46,798 - 01:36:51,798] So, in every single direction in space, the probability is
+- [01:36:51,798 - 01:36:56,798] a half a half to find the electron up or down.
+- [01:36:56,798 - 01:36:59,798] This is something new.
+- [01:36:59,798 - 01:37:01,798] When we concentrated on single electrons
+- [01:37:01,798 - 01:37:03,798] and prepared them in magnetic fields,
+- [01:37:03,798 - 01:37:06,798] no matter how we prepared it with a magnetic field,
+- [01:37:06,798 - 01:37:09,798] we found directions where the electron
+- [01:37:09,798 - 01:37:12,798] spin was pointing in that direction.
+- [01:37:12,798 - 01:37:17,798] Now when we have two electrons, in this interesting state,
+- [01:37:17,798 - 01:37:21,798] where measuring one tells you something about the other,
+- [01:37:21,798 - 01:37:24,798] we find something new.
+- [01:37:24,798 - 01:37:26,798] We find that there is
+- [01:37:26,798 - 01:37:28,798] no direction, or in every direction,
+- [01:37:28,798 - 01:37:32,798] the expectation value of sigma is equal to zero.
+- [01:37:33,797 - 01:37:38,797] Equivalently, any direction that you measure the spin along,
+- [01:37:38,797 - 01:37:42,797] you'll find 50-50 probability that it's either up or down.
+- [01:37:42,797 - 01:37:44,797] There'll be no bias toward upness
+- [01:37:44,797 - 01:37:46,797] or downness along any axis whatever.
+- [01:37:46,797 - 01:37:49,797] Which is quite different than you might have expected
+- [01:37:49,797 - 01:37:51,797] if you just had independent
+- [01:37:51,797 - 01:37:53,797] electrons, prepared them with magnetic fields.
+- [01:37:53,797 - 01:37:54,797] This is something new.
+- [01:37:54,797 - 01:37:58,797] Something that cannot be if the only possible states were
+- [01:37:58,797 - 01:38:02,797] the ones that were like just having two independent electrons prepared.
+- [01:38:02,797 - 01:38:04,797] It's called an entangled state.
+- [01:38:04,797 - 01:38:06,797] And as I said, the one way
+- [01:38:06,797 - 01:38:08,797] you can read off that it's entangled
+- [01:38:08,797 - 01:38:10,797] is from the fact that if you
+- [01:38:10,797 - 01:38:12,797] measure one, you learn something about the other.
+- [01:38:12,797 - 01:38:13,797] Okay.
+- [01:38:13,797 - 01:38:15,797] Now, how odd a phenomenon is this?
+- [01:38:15,797 - 01:38:18,797] We're going to dwell on this at length,
+- [01:38:18,797 - 01:38:21,297] but this is our
+- [01:38:21,297 - 01:38:23,797] first experience seeing quantum entanglement.
+- [01:38:23,797 - 01:38:25,797] I'm a little confused though.
+- [01:38:25,797 - 01:38:27,797] You're trying to make, I guess
+- [01:38:27,797 - 01:38:29,797] what I'd call a direct measurement,
+- [01:38:29,797 - 01:38:31,797] or the first one gives...
+- [01:38:32,797 - 01:38:34,797] Nonsense, it's a contradictory thing.
+- [01:38:34,797 - 01:38:37,797] But you started off by saying, well another way to
+- [01:38:37,797 - 01:38:40,797] do this is to measure the spin of the second one.
+- [01:38:40,797 - 01:38:42,297] And then you could say something
+- [01:38:42,297 - 01:38:43,797] about the spin of the first one.
+- [01:38:43,797 - 01:38:45,798] Yeah, yeah, yeah, two separate things.
+- [01:38:45,798 - 01:38:47,298] Making spin, trying to measure the spin of the
+- [01:38:47,298 - 01:38:48,798] second one, it's a separate thing for you and me.
+- [01:38:48,798 - 01:38:50,298] Let's for a minute forget the statement about
+- [01:38:50,298 - 01:38:51,798] measuring one and learning something about the other.
+- [01:38:51,798 - 01:38:53,798] Let's forget that for a minute.
+- [01:38:53,798 - 01:38:56,298] So we found the system that no matter what
+- [01:38:56,298 - 01:38:58,798] direction you put the magnetic field on electron one,
+- [01:38:58,798 - 01:38:59,798] forget electron two,
+- [01:38:59,798 - 01:39:01,798] no matter what direction
+- [01:39:01,798 - 01:39:03,798] you impose the magnetic field,
+- [01:39:03,798 - 01:39:07,798] you'll always find 50-50 probability.
+- [01:39:07,798 - 01:39:09,798] This is something that would not have happened
+- [01:39:09,798 - 01:39:13,298] had you created the electrons
+- [01:39:13,298 - 01:39:16,798] independently by their own magnetic field.
+- [01:39:16,798 - 01:39:19,298] There's another question, how do
+- [01:39:19,298 - 01:39:21,798] you create electrons in this state?
+- [01:39:21,798 - 01:39:23,798] In this state over here.
+- [01:39:23,798 - 01:39:25,798] And we'll come to that.
+- [01:39:25,798 - 01:39:29,798] But for the moment, apparently in the mathematics,
+- [01:39:29,798 - 01:39:31,798] there are a collection of state vectors,
+- [01:39:31,798 - 01:39:34,798] or a collection of quantum states,
+- [01:39:34,798 - 01:39:40,798] which have properties that know,
+- [01:39:40,798 - 01:39:44,798] well, that are odd.
+- [01:39:44,798 - 01:39:47,298] Now they do have the property, we're going to come
+- [01:39:47,298 - 01:39:49,798] to this in a moment, we'll come back to it.
+- [01:39:49,798 - 01:39:52,798] Supposing you measure electron one
+- [01:39:52,798 - 01:39:55,798] and find it in some state,
+- [01:39:55,798 - 01:39:57,798] do you learn anything about electron two?
+- [01:39:57,798 - 01:39:59,798] The answer will be yes.
+- [01:39:59,798 - 01:40:00,798] It will be just as
+- [01:40:00,798 - 01:40:01,798] you might expect, as I said,
+- [01:40:01,798 - 01:40:03,798] if you measure electron two up,
+- [01:40:03,798 - 01:40:05,798] you will find electron one down.
+- [01:40:05,798 - 01:40:07,798] How odd is this from
+- [01:40:07,798 - 01:40:09,798] a simple probability point of view?
+- [01:40:09,798 - 01:40:13,798] Well, in some sense, it's not that odd.
+- [01:40:13,798 - 01:40:15,798] In some sense.
+- [01:40:15,798 - 01:40:18,798] Supposing I have, you know, a penny and a dime.
+- [01:40:18,798 - 01:40:19,798] Okay?
+- [01:40:19,798 - 01:40:21,798] And I take the penny and the dime,
+- [01:40:21,798 - 01:40:23,798] well, let's suppose for the moment that the
+- [01:40:23,798 - 01:40:25,798] penny and the dime are exactly the same size,
+- [01:40:25,798 - 01:40:27,798] so I can't tell the difference with my hand.
+- [01:40:27,798 - 01:40:29,798] And I take them and I shake them up,
+- [01:40:29,798 - 01:40:32,798] and without looking, I grab one and I
+- [01:40:32,798 - 01:40:35,798] grab the other and I take them far apart.
+- [01:40:35,798 - 01:40:36,798] Guess what?
+- [01:40:36,798 - 01:40:38,798] If I look at this one and I find it's
+- [01:40:38,798 - 01:40:40,798] a dime, I instantly know this one is a penny.
+- [01:40:40,798 - 01:40:43,798] Likewise, if I look at this one and I find
+- [01:40:43,798 - 01:40:46,798] it's a penny, I instantly know this one's a dime.
+- [01:40:46,798 - 01:40:50,798] Without any lag, without any time lag.
+- [01:40:50,798 - 01:40:55,798] So that's a classical version of entangled probabilities.
+- [01:40:55,798 - 01:40:57,798] It's not all that odd.
+- [01:40:57,798 - 01:40:59,798] Uh...
+- [01:40:59,798 - 01:41:01,798] Question?
+- [01:41:01,798 - 01:41:03,798] Or at least at first
+- [01:41:03,798 - 01:41:05,798] sight, it doesn't seem terribly odd.
+- [01:41:05,798 - 01:41:07,798] The difference...
+- [01:41:07,798 - 01:41:09,298] Well, I think we'll come to
+- [01:41:09,298 - 01:41:10,798] it next time, what the difference is.
+- [01:41:10,798 - 01:41:13,798] There is a difference, and we'll come to it.
+- [01:41:13,798 - 01:41:16,798] But just from a simple probabilistic point of view,
+- [01:41:16,798 - 01:41:18,798] let's say just measuring the
+- [01:41:18,798 - 01:41:20,798] upness and downness of electrons,
+- [01:41:20,798 - 01:41:23,798] at first sight, it seems no odder
+- [01:41:23,798 - 01:41:27,798] than the situation where I have
+- [01:41:27,798 - 01:41:29,798] a penny and a dime.
+- [01:41:29,798 - 01:41:31,798] I shake them up and I don't look, and
+- [01:41:31,798 - 01:41:33,798] I ask about the probabilities when I take them apart.
+- [01:41:33,798 - 01:41:35,798] You know what? First of all,
+- [01:41:35,798 - 01:41:37,798] there'll be 50-50 probability that it's
+- [01:41:37,798 - 01:41:39,798] up or down, either one of them,
+- [01:41:39,798 - 01:41:41,298] no matter which one I look at,
+- [01:41:41,298 - 01:41:42,798] if I only look at one of them.
+- [01:41:42,798 - 01:41:44,298] But if I look at one, then
+- [01:41:44,298 - 01:41:45,798] I instantly know what the other one does.
+- [01:41:45,798 - 01:41:47,798] Only if you're sure that you
+- [01:41:47,798 - 01:41:49,798] have a penny and a dime.
+- [01:41:49,798 - 01:41:51,298] Only if I'm sure that I
+- [01:41:51,298 - 01:41:52,798] had a penny and a dime. Exactly.
+- [01:41:52,798 - 01:41:55,798] And the corresponding thing is true here.
+- [01:41:55,798 - 01:41:58,798] Only if I'm sure that I've
+- [01:41:58,798 - 01:42:01,798] prepared the two-electron system in this state.
+- [01:42:01,798 - 01:42:04,298] Only if I'm sure that I've
+- [01:42:04,298 - 01:42:06,798] prepared the two-electron system in this state.
+- [01:42:06,798 - 01:42:09,798] When you make the sigma-3 measurement, you're
+- [01:42:09,798 - 01:42:12,798] measuring for both of them being up.
+- [01:42:12,798 - 01:42:14,798] Is that what you're saying?
+- [01:42:14,798 - 01:42:18,798] When you make a sigma measurement on both of them,
+- [01:42:18,798 - 01:42:20,798] No, no, when you make a
+- [01:42:20,798 - 01:42:22,798] sigma measurement on both of them, yeah.
+- [01:42:22,798 - 01:42:24,798] Of this pair, of this pair.
+- [01:42:24,798 - 01:42:27,298] And the probability that they both will be
+- [01:42:27,298 - 01:42:29,798] up is zero. Is that what you're saying?
+- [01:42:29,798 - 01:42:31,798] That is true.
+- [01:42:31,798 - 01:42:33,798] Is that what you mean?
+- [01:42:33,798 - 01:42:35,298] It is true that the probability of
+- [01:42:35,298 - 01:42:36,798] both of them is up to zero.
+- [01:42:36,798 - 01:42:38,798] Right, because essentially they're all pointing,
+- [01:42:38,798 - 01:42:40,798] classically you would say that they're...
+- [01:42:40,798 - 01:42:42,298] Yeah, I can tell you something else.
+- [01:42:42,298 - 01:42:43,798] You can define the new observable quantity.
+- [01:42:43,798 - 01:42:46,798] The product of the two sigmas,
+- [01:42:46,798 - 01:42:49,798] well, that's not a good example.
+- [01:42:49,798 - 01:42:52,798] This is not the right state.
+- [01:42:52,798 - 01:42:54,798] Okay, well, that's, yes, but what you're saying,
+- [01:42:54,798 - 01:42:56,798] Oh.
+- [01:42:56,798 - 01:42:58,798] Um...
+- [01:43:00,798 - 01:43:02,798] No, what I'm going to say is wrong.
+- [01:43:02,798 - 01:43:04,798] Um...
+- [01:43:04,798 - 01:43:06,298] But you... What is it that
+- [01:43:06,298 - 01:43:07,798] you said? You said that the, uh...
+- [01:43:07,798 - 01:43:09,798] You're not just measuring one of them and
+- [01:43:09,798 - 01:43:11,798] finding the other one is in the opposite direction.
+- [01:43:11,798 - 01:43:13,798] You're measuring both in one measurement and finding that...
+- [01:43:13,798 - 01:43:15,798] If you measure... Right, right.
+- [01:43:15,798 - 01:43:18,298] If you measure both in one
+- [01:43:18,298 - 01:43:20,798] measurement, you will find they're opposite.
+- [01:43:20,798 - 01:43:22,298] But you could say you don't
+- [01:43:22,298 - 01:43:23,798] have to measure them both simultaneously.
+- [01:43:24,798 - 01:43:26,798] You could measure one of them over
+- [01:43:26,798 - 01:43:28,798] here, and then your friend down there,
+- [01:43:28,798 - 01:43:30,798] it doesn't even have to be you, your
+- [01:43:30,798 - 01:43:32,798] friend down there can measure the other one.
+- [01:43:32,798 - 01:43:36,298] And then you can communicate, and then you can come
+- [01:43:36,298 - 01:43:39,798] together and talk about what you discovered and so forth.
+- [01:43:39,798 - 01:43:43,798] You can be sure that if you discovered a penny,
+- [01:43:43,798 - 01:43:45,798] you can be sure that when your friend
+- [01:43:45,798 - 01:43:47,798] comes over and tells you what she discovered,
+- [01:43:47,798 - 01:43:51,798] that it will be a dime, unless something intervened.
+- [01:43:51,798 - 01:43:53,298] It seems to me it's like you had the
+- [01:43:53,298 - 01:43:54,798] penny and the dime in the amount of a rod,
+- [01:43:54,798 - 01:43:56,298] so that when one of them is
+- [01:43:56,298 - 01:43:57,798] heads up, the other one is heads down,
+- [01:43:57,798 - 01:43:59,798] and you didn't see this rod,
+- [01:43:59,798 - 01:44:01,798] but no matter how you shook it,
+- [01:44:01,798 - 01:44:03,298] you would never get two heads
+- [01:44:03,298 - 01:44:04,798] or two tails, because they're connected.
+- [01:44:04,798 - 01:44:06,798] Well, there are ways to shake
+- [01:44:06,798 - 01:44:08,798] it that you might disturb it, but...
+- [01:44:08,798 - 01:44:10,798] But I mean, one of them would
+- [01:44:10,798 - 01:44:12,798] be up, I mean, because they're welded together.
+- [01:44:12,798 - 01:44:14,798] Well, in the classical case, you just
+- [01:44:14,798 - 01:44:16,798] started with a penny and a dime,
+- [01:44:16,798 - 01:44:18,298] so you just know that there's
+- [01:44:18,298 - 01:44:19,798] always a penny and a dime.
+- [01:44:19,798 - 01:44:21,798] Unless, of course, an alchemist takes the
+- [01:44:21,798 - 01:44:23,798] penny and comes in with a dime.
+- [01:44:24,798 - 01:44:27,798] I'm sorry, there's something going on here that nobody...
+- [01:44:27,798 - 01:44:29,798] That was in the Hamiltonian system.
+- [01:44:29,798 - 01:44:32,798] Yeah, exactly. Right.
+- [01:44:32,798 - 01:44:35,798] I was taught the law of large
+- [01:44:35,798 - 01:44:38,798] numbers to find probabilities and statistical analysis.
+- [01:44:38,798 - 01:44:42,298] And I was wondering what there is about this
+- [01:44:42,298 - 01:44:45,798] that the law of large numbers is not used for.
+- [01:44:45,798 - 01:44:47,798] No, no, we're using the laws
+- [01:44:47,798 - 01:44:49,798] of large numbers in many cases.
+- [01:44:49,798 - 01:44:51,798] We're using the laws of large
+- [01:44:51,798 - 01:44:53,798] numbers, but at the moment I'm not.
+- [01:44:53,798 - 01:44:55,798] But in many cases, when I
+- [01:44:55,798 - 01:44:57,798] say the expectation value of something,
+- [01:44:57,798 - 01:45:01,798] the expectation value is something that you only measure
+- [01:45:01,798 - 01:45:05,798] by doing many, many repeated experiments and gathering data.
+- [01:45:05,798 - 01:45:09,298] But in this very simple case of the penny
+- [01:45:09,298 - 01:45:12,798] and the dime, I need only do one experiment.
+- [01:45:12,798 - 01:45:15,798] If I do one experiment and I find that penny,
+- [01:45:15,798 - 01:45:18,798] I know that the other person will find the dime.
+- [01:45:18,798 - 01:45:20,798] Now, you may want to do this over
+- [01:45:20,798 - 01:45:22,798] and over again. You may want to collect data.
+- [01:45:23,798 - 01:45:25,798] You may want to do the same experiment
+- [01:45:25,798 - 01:45:27,798] over and over and check that it really works.
+- [01:45:27,798 - 01:45:30,298] That every time I find
+- [01:45:30,298 - 01:45:32,798] a penny, she finds a dime.
+- [01:45:32,798 - 01:45:35,798] Every time I find a dime, she finds a penny.
+- [01:45:35,798 - 01:45:38,298] So we would perhaps like to do
+- [01:45:38,298 - 01:45:40,798] this experiment over and over and over again
+- [01:45:40,798 - 01:45:43,298] and check that statistically this
+- [01:45:43,298 - 01:45:45,798] correlation, it's called a correlation,
+- [01:45:45,798 - 01:45:48,298] that this correlation exists between what
+- [01:45:48,298 - 01:45:50,798] she measures and what I measure.
+- [01:45:50,798 - 01:45:51,798] It would be necessary to
+- [01:45:51,798 - 01:45:52,798] do it over and over again
+- [01:45:52,798 - 01:45:54,798] and collect statistics about it.
+- [01:45:54,798 - 01:45:56,798] But what we should find is
+- [01:45:56,798 - 01:45:58,798] that every single time we do it,
+- [01:45:58,798 - 01:46:01,798] there will be, we could call it an anti-correlation between
+- [01:46:01,798 - 01:46:04,798] what one person sees and what the other person sees.
+- [01:46:04,798 - 01:46:05,798] Okay?
+- [01:46:05,798 - 01:46:10,798] So entanglement of probabilities is not that odd a thing.
+- [01:46:10,798 - 01:46:14,798] It just means you know something about the combined system
+- [01:46:14,798 - 01:46:18,298] and that that something doesn't get
+- [01:46:18,298 - 01:46:21,798] disturbed perhaps as you separate the things.
+- [01:46:21,798 - 01:46:24,798] The odd thing is you could separate the two
+- [01:46:24,798 - 01:46:27,798] people, one with a penny and one with a dime,
+- [01:46:27,798 - 01:46:30,298] take her off to Alpha Centauri where it takes
+- [01:46:30,298 - 01:46:32,798] four years to get information from one to the other.
+- [01:46:32,798 - 01:46:37,298] Nevertheless, the instant I look at my penny,
+- [01:46:37,298 - 01:46:41,798] I know what my friend out there will find.
+- [01:46:41,798 - 01:46:46,798] She doesn't. She doesn't. But I do.
+- [01:46:46,798 - 01:46:48,798] You're not saying that that setup
+- [01:46:48,798 - 01:46:50,798] is what we should be thinking about?
+- [01:46:50,798 - 01:46:52,298] At a classical level, that's
+- [01:46:52,298 - 01:46:53,798] what you should be thinking about.
+- [01:46:53,798 - 01:46:55,298] But we're going to find, we're going
+- [01:46:55,298 - 01:46:56,798] to find, that's what Bell's theorem is about.
+- [01:46:56,798 - 01:46:58,798] Bell's theorem is about the difference
+- [01:46:58,798 - 01:47:00,798] between the situation that I just described
+- [01:47:00,798 - 01:47:02,798] and the corresponding quantum system.
+- [01:47:11,798 - 01:47:13,798] Yeah, but we know how to make it.
+- [01:47:16,798 - 01:47:18,798] Yeah.
+- [01:47:18,798 - 01:47:19,798] Let me put a minus sign in here.
+- [01:47:20,798 - 01:47:22,798] It won't change anything.
+- [01:47:22,798 - 01:47:24,798] Nothing will change.
+- [01:47:24,798 - 01:47:28,298] We'll put minus signs here, but
+- [01:47:28,298 - 01:47:31,798] then it'll have exactly the same effect.
+- [01:47:31,798 - 01:47:32,798] Okay.
+- [01:47:32,798 - 01:47:33,798] It's a better state.
+- [01:47:33,798 - 01:47:35,798] Okay, here's how you make it.
+- [01:47:35,798 - 01:47:40,798] Remember that each electron is itself a magnet.
+- [01:47:40,798 - 01:47:42,298] First of all, I'll tell
+- [01:47:42,298 - 01:47:43,798] you what this state corresponds to.
+- [01:47:43,798 - 01:47:48,798] It corresponds to the magnets being oppositely oriented,
+- [01:47:48,798 - 01:47:50,798] but without any preference to the other.
+- [01:47:50,798 - 01:47:51,798] So, this is what it's supposed to be.
+- [01:47:51,798 - 01:47:52,798] So, this is the moment for which direction, all right?
+- [01:47:52,798 - 01:47:57,798] So, whichever way one magnet is pointing, the
+- [01:47:57,798 - 01:48:02,798] other one is pointing in the opposite direction.
+- [01:48:02,798 - 01:48:05,798] And that naturally happens if
+- [01:48:05,798 - 01:48:08,798] you bring two electrons together.
+- [01:48:08,798 - 01:48:10,798] Because bringing one electron into
+- [01:48:10,798 - 01:48:12,798] the field of the other electron,
+- [01:48:12,798 - 01:48:14,798] they naturally, one electron wants
+- [01:48:14,798 - 01:48:16,798] to respond to the other electron
+- [01:48:16,798 - 01:48:19,798] and make its magnetic moment in the opposite direction.
+- [01:48:19,798 - 01:48:21,798] So, if you brought the
+- [01:48:21,798 - 01:48:23,798] electrons together in some wrong configuration,
+- [01:48:23,798 - 01:48:25,798] they would emit a photon
+- [01:48:25,798 - 01:48:27,798] and jump to an opposite configuration.
+- [01:48:27,798 - 01:48:29,798] So, all you have to do is bring
+- [01:48:29,798 - 01:48:31,798] the two electrons together, leave them for a while.
+- [01:48:31,798 - 01:48:34,798] A photon either will or won't be emitted, and
+- [01:48:34,798 - 01:48:37,798] after a while, they will be in this state.
+- [01:48:37,798 - 01:48:39,798] They'll be in this state because the
+- [01:48:39,798 - 01:48:41,798] two magnets will try to anti-align each other,
+- [01:48:41,798 - 01:48:44,298] but there's no particular preference for them
+- [01:48:44,298 - 01:48:46,798] to anti-align this way, this way, this way.
+- [01:48:46,798 - 01:48:48,798] And so, you'll have something.
+- [01:48:48,798 - 01:48:52,798] You'll have something which is the same in every direction,
+- [01:48:52,798 - 01:48:55,798] but no matter what direction you measure the spin,
+- [01:48:55,798 - 01:48:57,298] you'll find that the other
+- [01:48:57,298 - 01:48:58,798] one is in the opposite direction.
+- [01:48:58,798 - 01:49:01,798] So, the preparation here is just to have two electrons.
+- [01:49:01,798 - 01:49:02,798] Is what?
+- [01:49:02,798 - 01:49:04,798] Just to have two electrons in practice.
+- [01:49:04,798 - 01:49:06,798] Yeah, really, that's right.
+- [01:49:06,798 - 01:49:08,298] And just bring them together
+- [01:49:08,298 - 01:49:09,798] and leave them for a while.
+- [01:49:09,798 - 01:49:13,798] And they'll go into this so-called singlet state.
+- [01:49:13,798 - 01:49:16,798] This is the singlet state of two electrons, yeah.
+- [01:49:16,798 - 01:49:19,798] So, it's the same as the Pauli's exclusion principle?
+- [01:49:19,798 - 01:49:20,798] No, no, no.
+- [01:49:20,798 - 01:49:23,798] At the moment, there's no exclusion principle.
+- [01:49:23,798 - 01:49:26,798] We don't have to think about the exclusion principle
+- [01:49:26,798 - 01:49:29,798] for the reason that we've definitely put
+- [01:49:29,798 - 01:49:32,798] the electrons at different places in space.
+- [01:49:32,798 - 01:49:36,798] If they're in different places in space, then
+- [01:49:36,798 - 01:49:40,798] there's no issue about the Pauli exclusion principle.
+- [01:49:40,798 - 01:49:44,798] Yeah, yeah, if you bring them so that they're wave-fo...
+- [01:49:44,798 - 01:49:45,798] Yeah, yeah, yeah.
+- [01:49:45,798 - 01:49:46,798] ...nailed down and we know where they are,
+- [01:49:46,798 - 01:49:47,798] you don't have to bring
+- [01:49:47,798 - 01:49:48,798] them on top of each other.
+- [01:49:48,798 - 01:49:51,798] You just have to bring them
+- [01:49:51,798 - 01:49:54,798] close enough that their magnetic fields interact,
+- [01:49:54,798 - 01:49:56,798] can feel each other.
+- [01:49:56,798 - 01:50:00,798] And then, if the electrons are parallel,
+- [01:50:00,798 - 01:50:02,798] that's like having two magnets which are parallel,
+- [01:50:02,798 - 01:50:05,798] the north poles repel each other,
+- [01:50:05,798 - 01:50:08,798] and it has more energy than if they're anti-parallel.
+- [01:50:08,798 - 01:50:11,798] And so, what'll happen is it'll emit
+- [01:50:11,798 - 01:50:14,798] a photon and somehow come out with opposite...
+- [01:50:14,798 - 01:50:15,798] Yeah.
+- [01:50:15,798 - 01:50:18,798] ...polarization.
+- [01:50:18,798 - 01:50:21,798] And this is what will happen to those two electrons.
+- [01:50:21,798 - 01:50:25,798] So it's really just using one electron
+- [01:50:25,798 - 01:50:29,798] as the magnet which polarizes the other electron.
+- [01:50:29,798 - 01:50:31,798] Yeah.
+- [01:50:31,798 - 01:50:33,798] So in an electron beam,
+- [01:50:33,798 - 01:50:35,798] you have a pair of electrons.
+- [01:50:35,798 - 01:50:36,798] Yeah, a pair of electrons.
+- [01:50:36,798 - 01:50:38,798] And this is the pair of electrons in the muons.
+- [01:50:38,798 - 01:50:39,798] Say it again.
+- [01:50:39,798 - 01:50:41,298] In one electron beam, a
+- [01:50:41,298 - 01:50:42,798] pair of electrons in the muons.
+- [01:50:42,798 - 01:50:44,798] Electron beam, oh, oh, oh, oh.
+- [01:50:44,798 - 01:50:46,798] Well, if you have an electron...
+- [01:50:46,798 - 01:50:48,798] Do I have a pair of electrons in there?
+- [01:50:50,798 - 01:50:51,798] You have to...
+- [01:50:51,798 - 01:50:53,298] All right, if the electrons
+- [01:50:53,298 - 01:50:54,798] are far apart from each other,
+- [01:50:54,798 - 01:50:56,798] and in an electron beam, the electrons are very far...
+- [01:50:56,798 - 01:50:58,798] No, no, they're very far apart.
+- [01:50:58,798 - 01:51:00,798] Oh, yes.
+- [01:51:00,798 - 01:51:01,798] Electrons...
+- [01:51:01,798 - 01:51:04,798] An electron beam is a very, very dilute thing.
+- [01:51:04,798 - 01:51:06,798] Okay?
+- [01:51:06,798 - 01:51:10,298] Believe me, electrons are very, very far apart
+- [01:51:10,298 - 01:51:13,798] by comparison with the length scales inside an electron.
+- [01:51:14,798 - 01:51:17,798] Imagine they cross over on an electron beam.
+- [01:51:17,798 - 01:51:18,798] They cross over.
+- [01:51:18,798 - 01:51:19,798] You mean they hit each other?
+- [01:51:19,798 - 01:51:20,798] No.
+- [01:51:20,798 - 01:51:21,798] They cross over.
+- [01:51:21,798 - 01:51:22,798] Right.
+- [01:51:22,798 - 01:51:24,798] If you have two beams of electrons, then something...
+- [01:51:24,798 - 01:51:25,798] A single exchange.
+- [01:51:25,798 - 01:51:26,798] Oh.
+- [01:51:26,798 - 01:51:28,798] They still don't get all that close to each other.
+- [01:51:28,798 - 01:51:29,798] They still...
+- [01:51:29,798 - 01:51:32,798] Well, an electron and a single beam, to a
+- [01:51:32,798 - 01:51:35,798] good approximation, they don't interact with each other very much.
+- [01:51:35,798 - 01:51:38,798] There is some Coulomb repulsion between them,
+- [01:51:38,798 - 01:51:41,798] but there's very little spin-spin interaction between them.
+- [01:51:41,798 - 01:51:42,798] They're too far apart.
+- [01:51:42,798 - 01:51:43,798] It's too dilute.
+- [01:51:44,798 - 01:51:45,798] What's that?
+- [01:51:45,798 - 01:51:47,798] What should be the distance for the interaction?
+- [01:51:47,798 - 01:51:48,798] Ah, okay.
+- [01:51:48,798 - 01:51:52,798] The magnetic moment has units of length.
+- [01:51:52,798 - 01:51:55,298] The magnetic moment is the magnetic
+- [01:51:55,298 - 01:51:57,798] charge times the distance between them.
+- [01:51:57,798 - 01:51:58,798] Okay?
+- [01:51:58,798 - 01:52:02,798] So the magnetic moment has units of length, and that's the
+- [01:52:02,798 - 01:52:06,798] length which sets the scale about how close the electrons should be.
+- [01:52:06,798 - 01:52:09,298] So in other words, they should
+- [01:52:09,298 - 01:52:11,798] be within that...roughly within that distance.
+- [01:52:11,798 - 01:52:13,798] And then in a fairly rapid time...
+- [01:52:13,798 - 01:52:15,798] Look, it's a question of time scales.
+- [01:52:15,798 - 01:52:19,798] No matter how far apart the electrons are, they will
+- [01:52:19,798 - 01:52:23,798] eventually settle down to their ground state, which was the opposite...
+- [01:52:23,798 - 01:52:24,798] Eventually they will.
+- [01:52:24,798 - 01:52:26,798] It's a question of how long you're willing
+- [01:52:26,798 - 01:52:28,798] to wait for the photon to get emitted.
+- [01:52:28,798 - 01:52:35,298] So if the electrons are far apart, then the difference between the energy of two parallel ones
+- [01:52:35,298 - 01:52:41,798] and two anti-parallel ones is so tiny that the photon that's emitted is such a long wavelength photon,
+- [01:52:41,798 - 01:52:43,798] it's a very, very, very long
+- [01:52:43,798 - 01:52:45,798] time for that process to happen.
+- [01:52:45,798 - 01:52:49,298] So in a typical electron beam, there just isn't enough time
+- [01:52:49,298 - 01:52:52,798] for the electron magnetic moments to feel each other very much.
+- [01:52:52,798 - 01:52:56,298] Now, of course, if the electrons collide, then,
+- [01:52:56,298 - 01:52:59,798] in fact, you do make states like this typically.
+- [01:52:59,798 - 01:53:01,798] So that does happen.
+- [01:53:01,798 - 01:53:03,798] So what should be the distance between
+- [01:53:03,798 - 01:53:05,798] two electrons in such a way that they...
+- [01:53:05,798 - 01:53:08,798] 10 to the minus 11 centimeters or something like that.
+- [01:53:08,798 - 01:53:09,798] Yeah?
+- [01:53:09,798 - 01:53:10,798] Yeah.
+- [01:53:10,798 - 01:53:13,798] Why does that state have a minus sign
+- [01:53:13,798 - 01:53:16,798] in it instead of a plus sign in it?
+- [01:53:16,798 - 01:53:18,798] Oh, we'll have to do that.
+- [01:53:18,798 - 01:53:19,798] We'll have to...
+- [01:53:19,798 - 01:53:22,798] Yeah, that's by no means obvious.
+- [01:53:22,798 - 01:53:24,798] That's far from obvious.
+- [01:53:24,798 - 01:53:26,798] Right.
+- [01:53:26,798 - 01:53:27,798] Right.
+- [01:53:27,798 - 01:53:28,798] That's far from obvious.
+- [01:53:28,798 - 01:53:29,798] I will tell you...
+- [01:53:29,798 - 01:53:31,798] But I'll tell you the answer anyway.
+- [01:53:31,798 - 01:53:38,798] I'll tell you the answer anyway.
+- [01:53:38,798 - 01:53:39,798] No, I won't.
+- [01:53:40,798 - 01:53:43,798] I'll tell you the answer next time.
+- [01:53:43,798 - 01:53:44,798] Time to go.
+- [01:53:44,798 - 01:53:45,798] Time to go.
+- [01:53:45,798 - 01:53:48,798] The preceding program is copyrighted by Stanford University.
+- [01:53:48,798 - 01:53:51,798] Please visit us at stanford.edu.
