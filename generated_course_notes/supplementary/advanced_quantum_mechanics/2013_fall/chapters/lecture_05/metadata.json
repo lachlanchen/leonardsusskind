@@ -1,0 +1,34 @@
+{
+  "course_rel": "supplementary/advanced_quantum_mechanics/2013_fall",
+  "transcript_rel": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+  "video_rel": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].mkv",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Advanced Quantum Mechanics Lecture 5",
+  "assets": [
+    {
+      "name": "lecture_05_frame_01.png",
+      "timestamp_seconds": 283.26,
+      "timestamp_hhmmss": "00:04:43.260",
+      "source_candidate": "lecture_05_candidate_05_000443260.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Cleanest early shell-spectrum sketch; the S/P columns and level marks are legible enough to reconstruct the energy-level diagram."
+    },
+    {
+      "name": "lecture_05_frame_02.png",
+      "timestamp_seconds": 1463.062,
+      "timestamp_hhmmss": "00:24:23.062",
+      "source_candidate": "lecture_05_candidate_07_002423062.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Best view of the multi-column board layout for atomic states and single-particle labels; useful as a reference for redrawing the state diagram."
+    },
+    {
+      "name": "lecture_05_frame_03.png",
+      "timestamp_seconds": 2125.582,
+      "timestamp_hhmmss": "00:35:25.582",
+      "source_candidate": "lecture_05_candidate_10_003525582.png",
+      "recommended_use": "figure",
+      "rationale": "Readable exchange-symmetry board with the multi-particle wavefunction and red swap arrows visible; strong reference for the permutation discussion."
+    }
+  ]
+}
