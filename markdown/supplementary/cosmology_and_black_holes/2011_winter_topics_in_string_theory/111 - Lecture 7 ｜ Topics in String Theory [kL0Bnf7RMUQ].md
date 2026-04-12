@@ -1,0 +1,1778 @@
+# Transcript
+
+Source: supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory/111 - Lecture 7 ｜ Topics in String Theory [kL0Bnf7RMUQ].mkv
+
+- [00:00:00,000 - 00:00:07,000] Stanford University
+- [00:00:07,000 - 00:00:22,000] Let's go back. I think we were in the midst of me trying to explain to you how string theory gives a rough explanation of the entropy of black holes.
+- [00:00:22,000 - 00:00:27,000] But there was a puzzle, if you remember, and I'll just remind you if you didn't remember.
+- [00:00:27,000 - 00:00:32,000] Let's write some equations on the blackboard here which will be useful.
+- [00:00:32,000 - 00:00:37,000] Did I draw that? I didn't draw that, did I? I don't think so.
+- [00:00:37,000 - 00:00:46,000] Question on counting strings. Do you distinguish between the character of the small strings or do you treat them as indistinguishable?
+- [00:00:46,000 - 00:00:49,000] We treat them as indistinguishable.
+- [00:00:49,000 - 00:00:55,000] Well, we treat them as, wait, we treat them as indistinguishable if they're identical.
+- [00:00:55,000 - 00:00:56,000] Identical length.
+- [00:00:56,000 - 00:00:57,000] Yeah.
+- [00:00:57,000 - 00:01:00,000] Do you count their positions within the box?
+- [00:01:00,000 - 00:01:03,000] We count their positions within the box, yeah.
+- [00:01:03,000 - 00:01:11,000] But we're putting them into a box of a certain size, namely the size that the single big string would take up.
+- [00:01:11,000 - 00:01:14,000] Yeah.
+- [00:01:14,000 - 00:01:19,000] If we, well, okay, that'll have to do.
+- [00:01:19,000 - 00:01:26,000] Okay, I want to first write some equations on the blackboard to remind you, they're simple equations.
+- [00:01:26,000 - 00:01:34,000] And then I want to set the target goal for the simple little derivation of the entropy of a black hole.
+- [00:01:34,000 - 00:01:39,000] It's kind of indirect and it's very subtle but very easy.
+- [00:01:39,000 - 00:01:47,000] Doesn't involve anything as complicated, I don't think it involves even a derivative, let alone an integral.
+- [00:01:47,000 - 00:01:51,000] Certainly no infinite sums.
+- [00:01:51,000 - 00:01:53,000] It's pretty easy.
+- [00:01:53,000 - 00:01:55,000] But still, it is subtle.
+- [00:01:55,000 - 00:02:01,000] Sometimes the subtlest things are the easiest ones in the sense of easy mathematically.
+- [00:02:01,000 - 00:02:04,000] And this is one of them.
+- [00:02:04,000 - 00:02:09,000] All right, let's write first equation.
+- [00:02:09,000 - 00:02:12,000] G. G is Newton's constant.
+- [00:02:12,000 - 00:02:19,000] We're going to work in units in which C equals h-bar equals 1.
+- [00:02:19,000 - 00:02:22,000] I'm not going to set Newton's constant equal to 1.
+- [00:02:22,000 - 00:02:24,000] We'll leave that floating.
+- [00:02:24,000 - 00:02:25,000] All right.
+- [00:02:25,000 - 00:02:27,000] So C is 1 because, why is C 1?
+- [00:02:27,000 - 00:02:30,000] Because we measure space and time in the same units.
+- [00:02:30,000 - 00:02:33,000] And so the speed of light is 1.
+- [00:02:33,000 - 00:02:39,000] Planck's constant being equal to 1, that's something that's permissible to do.
+- [00:02:39,000 - 00:02:52,000] And it's just units in which the uncertainty principle says that the product of the uncertainty of position times the uncertainty of momentum is equal to one unit, one unit of something.
+- [00:02:52,000 - 00:02:54,000] Namely, one unit of action.
+- [00:02:54,000 - 00:02:56,000] But C equals h-bar equals 1.
+- [00:02:56,000 - 00:03:01,000] But we won't fiddle around or try to simplify Newton's constant for a moment.
+- [00:03:01,000 - 00:03:10,000] If, oh, if you set C equals h-bar equal to 1, then there's only one unit that you have to specify.
+- [00:03:10,000 - 00:03:14,000] You can either take it to be a length or a mass.
+- [00:03:14,000 - 00:03:18,000] And a mass is an inverse length.
+- [00:03:18,000 - 00:03:20,000] A mass is an inverse length.
+- [00:03:20,000 - 00:03:21,000] I'll just remind you of that.
+- [00:03:21,000 - 00:03:24,000] I'll just remind you why that is.
+- [00:03:24,000 - 00:03:30,000] It's the fact that energy, which is the same as mass, all you need to do is to write an equation.
+- [00:03:30,000 - 00:03:37,000] Find some equation for energy and look at the various dimensions and we'll see what happens.
+- [00:03:37,000 - 00:03:38,000] All right.
+- [00:03:38,000 - 00:03:48,000] So energy, for example, in quantum mechanics, energy is given by Planck's constant divided by the wavelength times C.
+- [00:03:48,000 - 00:03:51,000] Where lambda is the wavelength of a photon, for example.
+- [00:03:51,000 - 00:03:56,000] This would be a connection between the energy of a photon and its wavelength.
+- [00:03:56,000 - 00:04:04,000] We're not using it for anything except to say what the relationship between the energy, between the mass units and length units are.
+- [00:04:04,000 - 00:04:06,000] Now, this is not mass.
+- [00:04:06,000 - 00:04:09,000] To make it mass, I think we have to divide it by C squared.
+- [00:04:09,000 - 00:04:10,000] Is that right?
+- [00:04:10,000 - 00:04:17,000] E over C squared is equal to m.
+- [00:04:17,000 - 00:04:20,000] There were lots of people who knew that E over C squared was equal to m.
+- [00:04:20,000 - 00:04:25,000] But it took the genius of Einstein to realize that m is equal to C squared.
+- [00:04:25,000 - 00:04:26,000] True.
+- [00:04:26,000 - 00:04:27,000] All right.
+- [00:04:27,000 - 00:04:28,000] So we put another C in here.
+- [00:04:28,000 - 00:04:30,000] It's C downstairs.
+- [00:04:30,000 - 00:04:31,000] But I don't really care.
+- [00:04:31,000 - 00:04:33,000] Now this is m.
+- [00:04:33,000 - 00:04:38,000] I don't really care where the C's are because we're going to set them equal to 1.
+- [00:04:38,000 - 00:04:48,000] So the only point of this was to say the units of mass, when we set C equal to 1,
+- [00:04:48,000 - 00:04:50,000] are the same as the units of Planck's constant.
+- [00:04:50,000 - 00:04:52,000] So we set Planck's constant over length.
+- [00:04:52,000 - 00:04:56,000] But if we also set Planck's constant equal to 1,
+- [00:04:56,000 - 00:04:58,000] then the units of mass are 1 over length.
+- [00:04:58,000 - 00:04:59,000] So keep that in mind.
+- [00:04:59,000 - 00:05:05,000] Mass is 1 over length in units, unit-wise.
+- [00:05:05,000 - 00:05:08,000] Now, what about the units of G?
+- [00:05:08,000 - 00:05:10,000] We have not set G equal to 1.
+- [00:05:10,000 - 00:05:12,000] G has units.
+- [00:05:12,000 - 00:05:16,000] It's not too hard to figure out what the units of G are.
+- [00:05:16,000 - 00:05:18,000] We just take, again, some equation that has G in it.
+- [00:05:18,000 - 00:05:19,000] And we just take, again, some equation that has G in it.
+- [00:05:20,000 - 00:05:22,000] And we look at its...
+- [00:05:22,000 - 00:05:28,000] What's the simplest equation that contains G?
+- [00:05:28,000 - 00:05:32,000] Acceleration equals mass times G over R squared.
+- [00:05:32,000 - 00:05:33,000] Good.
+- [00:05:33,000 - 00:05:41,000] Acceleration equals G m over R squared.
+- [00:05:41,000 - 00:05:45,000] Now, the left-hand side, what's the units of the left-hand side?
+- [00:05:45,000 - 00:05:48,000] L over T squared.
+- [00:05:48,000 - 00:05:49,000] L over T squared.
+- [00:05:49,000 - 00:05:50,000] L over T squared.
+- [00:05:50,000 - 00:05:55,000] We need a...
+- [00:05:55,000 - 00:05:59,000] Is length over time squared.
+- [00:05:59,000 - 00:06:03,000] But length and time have the same units when C is equal to 1.
+- [00:06:03,000 - 00:06:11,000] So this is just length over length squared, which is 1 over length, right?
+- [00:06:11,000 - 00:06:13,000] R squared, of course, is length squared.
+- [00:06:13,000 - 00:06:17,000] So let's call this length squared.
+- [00:06:17,000 - 00:06:19,000] And now we can multiply both sides of the equation by length.
+- [00:06:19,000 - 00:06:21,000] And now we can multiply both sides of the equation by length squared.
+- [00:06:21,000 - 00:06:24,000] And this becomes length upstairs.
+- [00:06:24,000 - 00:06:26,000] Oh, we knew that before, didn't we?
+- [00:06:26,000 - 00:06:27,000] That's the radius...
+- [00:06:27,000 - 00:06:33,000] This is the Schwarzschild radius, or proportional to the Schwarzschild radius of a black hole.
+- [00:06:33,000 - 00:06:37,000] But now a mass is 1 over a length.
+- [00:06:37,000 - 00:06:39,000] Inverse length.
+- [00:06:39,000 - 00:06:44,000] And so we can write that the mass is 1 over a length.
+- [00:06:44,000 - 00:06:46,000] Transfer it to the other side.
+- [00:06:46,000 - 00:06:48,000] And we discover that in this case, we have a mass.
+- [00:06:48,000 - 00:06:56,000] We discover that in these units, G has units of an area.
+- [00:06:56,000 - 00:06:58,000] What area?
+- [00:06:58,000 - 00:07:02,000] There's only one area around that it could be.
+- [00:07:02,000 - 00:07:04,000] It's the Planck area.
+- [00:07:04,000 - 00:07:10,000] All right, so G is in fact not only an area.
+- [00:07:10,000 - 00:07:16,000] It's also the Planck area squared.
+- [00:07:16,000 - 00:07:18,000] That's an important equation.
+- [00:07:18,000 - 00:07:29,000] In fact, that helps us understand why it is that the entropy of a black hole is the area divided by 4 times G.
+- [00:07:29,000 - 00:07:31,000] Forget the 4.
+- [00:07:31,000 - 00:07:33,000] It's the area divided by G.
+- [00:07:33,000 - 00:07:37,000] It's the area in Planck units, is what it is.
+- [00:07:37,000 - 00:07:40,000] Okay, so that's one equation.
+- [00:07:40,000 - 00:07:42,000] Now, there's another fact.
+- [00:07:42,000 - 00:07:44,000] And that's that G, of course, also has...
+- [00:07:44,000 - 00:07:45,000] It's not a mass.
+- [00:07:45,000 - 00:07:47,000] It's not just a length squared.
+- [00:07:47,000 - 00:07:50,000] It does have to do with the strength of gravity.
+- [00:07:50,000 - 00:07:59,000] Okay, so let's think about it in the context of string theory as having to do with the force of gravity.
+- [00:07:59,000 - 00:08:01,000] What does the force of gravity come from?
+- [00:08:01,000 - 00:08:03,000] The force of gravity...
+- [00:08:03,000 - 00:08:06,000] And no explanation of this tonight.
+- [00:08:06,000 - 00:08:07,000] This is not for tonight.
+- [00:08:07,000 - 00:08:09,000] We've talked about it before.
+- [00:08:09,000 - 00:08:11,000] This is just a cartoon.
+- [00:08:11,000 - 00:08:13,000] The force of gravity between two objects.
+- [00:08:13,000 - 00:08:14,000] This could be the Earth.
+- [00:08:14,000 - 00:08:16,000] This could be the Moon over here.
+- [00:08:16,000 - 00:08:19,000] It's due to the exchange of gravitons.
+- [00:08:19,000 - 00:08:21,000] How does that happen in string theory?
+- [00:08:21,000 - 00:08:24,000] Well, everything is made up out of strings.
+- [00:08:24,000 - 00:08:26,000] A little string breaks off.
+- [00:08:26,000 - 00:08:27,000] How does it break off?
+- [00:08:27,000 - 00:08:31,000] It breaks off...
+- [00:08:31,000 - 00:08:40,000] When the string crosses itself, there is a probability that when a string...
+- [00:08:40,000 - 00:08:42,000] Can everybody see this string?
+- [00:08:42,000 - 00:08:44,000] Oh, boy.
+- [00:08:44,000 - 00:08:45,000] No, let's see.
+- [00:08:45,000 - 00:08:48,000] We want to turn this hand around, keep that hand...
+- [00:08:48,000 - 00:08:49,000] Okay.
+- [00:08:49,000 - 00:08:54,000] When the string crosses itself, that it can rearrange.
+- [00:08:54,000 - 00:08:55,000] All right?
+- [00:08:55,000 - 00:08:58,000] That when the string crosses itself, that it can rearrange.
+- [00:08:58,000 - 00:09:03,000] That probability, or the square root of that probability, strictly speaking,
+- [00:09:03,000 - 00:09:10,000] the square root of it, is called the amplitude for string rearrangement.
+- [00:09:10,000 - 00:09:11,000] Okay?
+- [00:09:11,000 - 00:09:14,000] Rearrangement, or string breaking, or whatever.
+- [00:09:14,000 - 00:09:16,000] It's not really breaking.
+- [00:09:16,000 - 00:09:17,000] It's rearrangement.
+- [00:09:17,000 - 00:09:18,000] And it's called little g.
+- [00:09:18,000 - 00:09:20,000] We've talked about it before.
+- [00:09:20,000 - 00:09:21,000] Little g.
+- [00:09:21,000 - 00:09:26,000] The main thing about it is it's a square root of a probability,
+- [00:09:26,000 - 00:09:30,000] and a probability has no units.
+- [00:09:30,000 - 00:09:32,000] So it's dimensionless.
+- [00:09:32,000 - 00:09:37,000] There's little g, which is the probability that when a string crosses itself,
+- [00:09:37,000 - 00:09:39,000] it breaks off a little piece.
+- [00:09:39,000 - 00:09:40,000] That little piece...
+- [00:09:40,000 - 00:09:45,000] That little piece jumps across to another thing,
+- [00:09:45,000 - 00:09:48,000] rearranges again,
+- [00:09:48,000 - 00:09:51,000] so that the string jumps from one side to the other.
+- [00:09:51,000 - 00:09:54,000] That, in string theory, is the Feynman diagram,
+- [00:09:54,000 - 00:09:56,000] or the analog of the Feynman diagram,
+- [00:09:56,000 - 00:09:59,000] which has to do with the forces between the two sides.
+- [00:09:59,000 - 00:10:04,000] And the important thing is that it's proportional to two powers of this g.
+- [00:10:04,000 - 00:10:07,000] One to emit the little string,
+- [00:10:07,000 - 00:10:09,000] and one to absorb the little string.
+- [00:10:10,000 - 00:10:16,000] That tells us that the force of gravity is proportional to little g squared.
+- [00:10:16,000 - 00:10:21,000] So what it must tell us then,
+- [00:10:21,000 - 00:10:28,000] is that little g squared
+- [00:10:28,000 - 00:10:32,000] must be proportional to Newton's constant.
+- [00:10:32,000 - 00:10:35,000] Newton's constant is the strength of gravity.
+- [00:10:35,000 - 00:10:38,000] Little g is the probability for break of strength.
+- [00:10:38,000 - 00:10:41,000] Newton's constant is the probability for break of strength breaking.
+- [00:10:41,000 - 00:10:43,000] But this can't be right.
+- [00:10:43,000 - 00:10:45,000] The left-hand side is dimensionless,
+- [00:10:45,000 - 00:10:47,000] has no dimensions, it's just a probability.
+- [00:10:47,000 - 00:10:50,000] The right-hand side has units of area.
+- [00:10:50,000 - 00:10:53,000] So there has to be something else in here
+- [00:10:53,000 - 00:10:55,000] to make up the units,
+- [00:10:55,000 - 00:10:59,000] to give you an area on the left side.
+- [00:10:59,000 - 00:11:01,000] What is that?
+- [00:11:01,000 - 00:11:05,000] That has to do with the fundamental length scale of string theory.
+- [00:11:05,000 - 00:11:07,000] It's not the Planck length.
+- [00:11:07,000 - 00:11:11,000] It's the fundamental length scale of string theory.
+- [00:11:11,000 - 00:11:14,000] It is basically,
+- [00:11:14,000 - 00:11:16,000] if you look at a long wiggly string,
+- [00:11:16,000 - 00:11:19,000] you'll discover, inevitably,
+- [00:11:19,000 - 00:11:21,000] it consists of little wiggles,
+- [00:11:21,000 - 00:11:24,000] it random walks, but it has little wiggles,
+- [00:11:24,000 - 00:11:27,000] and it's basically the size of the little wiggles.
+- [00:11:27,000 - 00:11:30,000] Basic size of the little wiggles,
+- [00:11:30,000 - 00:11:34,000] and it's called L-string.
+- [00:11:34,000 - 00:11:36,000] We've talked about it before,
+- [00:11:37,000 - 00:11:39,000] I'm just reminding you.
+- [00:11:39,000 - 00:11:42,000] It's the only other variable around in the problem.
+- [00:11:42,000 - 00:11:47,000] This is L-Planck squared.
+- [00:11:47,000 - 00:11:49,000] This side is string theory,
+- [00:11:49,000 - 00:11:52,000] this side is gravity.
+- [00:11:52,000 - 00:11:57,000] Gravity tells us that this side is L-Planck squared.
+- [00:11:57,000 - 00:12:00,000] The only sensible equation that I can write
+- [00:12:00,000 - 00:12:04,000] that only contains things that have to do with string theory on this side
+- [00:12:04,000 - 00:12:07,000] is to say that this is G squared,
+- [00:12:07,000 - 00:12:09,000] times L-string squared.
+- [00:12:09,000 - 00:12:11,000] And that's the correct equation.
+- [00:12:11,000 - 00:12:15,000] That is the correct equation that
+- [00:12:15,000 - 00:12:19,000] the Planck length squared, which is the same as big G,
+- [00:12:19,000 - 00:12:22,000] is little g squared times L-string squared.
+- [00:12:22,000 - 00:12:24,000] Now just think about what that means.
+- [00:12:24,000 - 00:12:27,000] That means that
+- [00:12:27,000 - 00:12:32,000] if little g were tiny,
+- [00:12:32,000 - 00:12:34,000] a tiny number,
+- [00:12:34,000 - 00:12:36,000] gravity would be very weak,
+- [00:12:36,000 - 00:12:38,000] and what it would tell us
+- [00:12:38,000 - 00:12:43,000] is that the Planck length was much, much smaller than the string length.
+- [00:12:43,000 - 00:12:47,000] So in fact, this G, this little g which appears here,
+- [00:12:47,000 - 00:12:49,000] can also be thought of
+- [00:12:49,000 - 00:12:54,000] as having to do with the relative size of the Planck length scale,
+- [00:12:54,000 - 00:12:57,000] the length scale that has to do with gravity,
+- [00:12:57,000 - 00:12:59,000] and the string length scale.
+- [00:12:59,000 - 00:13:03,000] In fact, we can even take the square root of this equation.
+- [00:13:03,000 - 00:13:04,000] Let's do so.
+- [00:13:06,000 - 00:13:10,000] It says
+- [00:13:10,000 - 00:13:14,000] that L-Planck is G times L-string.
+- [00:13:14,000 - 00:13:17,000] Okay, so that's another equation I want to write down here.
+- [00:13:17,000 - 00:13:23,000] L-Planck is equal to G times L-string.
+- [00:13:23,000 - 00:13:28,000] What other equations do we need?
+- [00:13:28,000 - 00:13:30,000] All right, next equation.
+- [00:13:30,000 - 00:13:32,000] Just make a list of them
+- [00:13:32,000 - 00:13:34,000] before we try to use them
+- [00:13:34,000 - 00:13:36,000] and before we try to derive anything.
+- [00:13:36,000 - 00:13:41,000] Next equation, the entropy of a string.
+- [00:13:41,000 - 00:13:44,000] The entropy of a string S.
+- [00:13:44,000 - 00:13:46,000] Now remember,
+- [00:13:46,000 - 00:13:50,000] entropy basically counts the number of decisions,
+- [00:13:50,000 - 00:13:55,000] yes, no, or up, down, or left, right decisions
+- [00:13:55,000 - 00:13:57,000] that you have to make to describe a system.
+- [00:13:57,000 - 00:13:59,000] Let's just leave it at that.
+- [00:13:59,000 - 00:14:04,000] It's the number of primitive binary,
+- [00:14:04,000 - 00:14:05,000] doesn't matter what's binary,
+- [00:14:05,000 - 00:14:07,000] it could be trinary,
+- [00:14:07,000 - 00:14:08,000] or quadrinary,
+- [00:14:08,000 - 00:14:10,000] or some small number.
+- [00:14:10,000 - 00:14:12,000] Number of decisions that you have to make
+- [00:14:12,000 - 00:14:15,000] to specify a configuration.
+- [00:14:15,000 - 00:14:17,000] I gave you a little example
+- [00:14:17,000 - 00:14:20,000] of a model for string theory.
+- [00:14:20,000 - 00:14:23,000] And it's a reasonably good model for string theory.
+- [00:14:23,000 - 00:14:26,000] It's one that statistical mechanics people use all the time,
+- [00:14:26,000 - 00:14:29,000] not for string theory, but for other purposes,
+- [00:14:29,000 - 00:14:31,000] where they replace a string
+- [00:14:31,000 - 00:14:34,000] by a series of links of a line.
+- [00:14:34,000 - 00:14:37,000] Links of a lattice, and so forth.
+- [00:14:37,000 - 00:14:39,000] Link can go back on itself,
+- [00:14:39,000 - 00:14:41,000] can do whatever it wants.
+- [00:14:41,000 - 00:14:43,000] All right.
+- [00:14:43,000 - 00:14:46,000] Depending on the number of dimensions of space,
+- [00:14:46,000 - 00:14:49,000] let's just be simple
+- [00:14:49,000 - 00:14:53,000] and think about two dimensions of space for simplicity.
+- [00:14:53,000 - 00:14:56,000] Then the string, whenever it gets to a new vertex,
+- [00:14:56,000 - 00:15:00,000] has a choice that it can make of moving further
+- [00:15:00,000 - 00:15:02,000] in any of four directions.
+- [00:15:02,000 - 00:15:03,000] All right, so it's not binary,
+- [00:15:03,000 - 00:15:10,000] it's each decision requires two binary decisions.
+- [00:15:10,000 - 00:15:12,000] The binary decisions could,
+- [00:15:12,000 - 00:15:15,000] well, if you have four possibilities,
+- [00:15:15,000 - 00:15:20,000] that's equivalent to two heads, tails kind of decisions.
+- [00:15:20,000 - 00:15:22,000] Let's not distinguish, worry about
+- [00:15:22,000 - 00:15:24,000] the difference between four and two.
+- [00:15:24,000 - 00:15:27,000] The number of elementary decisions
+- [00:15:27,000 - 00:15:30,000] to describe the configuration of the string
+- [00:15:30,000 - 00:15:33,000] is clearly proportional to its length.
+- [00:15:33,000 - 00:15:35,000] All right.
+- [00:15:35,000 - 00:15:38,000] So the entropy of a string,
+- [00:15:38,000 - 00:15:40,000] the number of decisions,
+- [00:15:40,000 - 00:15:42,000] is going to be proportional
+- [00:15:42,000 - 00:15:44,000] to the length of the string.
+- [00:15:44,000 - 00:15:45,000] Let me not write it that way.
+- [00:15:45,000 - 00:15:47,000] Let me write it not L,
+- [00:15:47,000 - 00:15:49,000] but not the string length,
+- [00:15:49,000 - 00:15:51,000] but the length of the string.
+- [00:15:51,000 - 00:15:53,000] Let's just call it L.
+- [00:15:53,000 - 00:15:55,000] And,
+- [00:15:55,000 - 00:15:59,000] but that's not a consistent equation.
+- [00:15:59,000 - 00:16:01,000] Why not?
+- [00:16:01,000 - 00:16:03,000] Entropy is dimensionless.
+- [00:16:03,000 - 00:16:05,000] Entropy has no units.
+- [00:16:05,000 - 00:16:08,000] At least in modern statistical mechanics
+- [00:16:08,000 - 00:16:11,000] where we're familiar with the idea
+- [00:16:11,000 - 00:16:13,000] that entropy is really energy.
+- [00:16:13,000 - 00:16:17,000] No, entropy is not,
+- [00:16:17,000 - 00:16:19,000] temperature is energy.
+- [00:16:19,000 - 00:16:22,000] Entropy has no units.
+- [00:16:22,000 - 00:16:23,000] Length has units.
+- [00:16:23,000 - 00:16:26,000] So this equation can't be right.
+- [00:16:26,000 - 00:16:28,000] The problem with the equation
+- [00:16:28,000 - 00:16:31,000] is it's not telling us how long
+- [00:16:31,000 - 00:16:35,000] each one of these little excursions is.
+- [00:16:35,000 - 00:16:38,000] We're talking roughly about a random walk.
+- [00:16:38,000 - 00:16:40,000] And in order to talk about a random walk,
+- [00:16:40,000 - 00:16:44,000] you have to talk about the size scale
+- [00:16:44,000 - 00:16:48,000] of the individual steps of the random walk.
+- [00:16:48,000 - 00:16:50,000] These are the steps of the random walk.
+- [00:16:50,000 - 00:16:51,000] And guess what?
+- [00:16:51,000 - 00:16:54,000] The size of the steps of a random walk
+- [00:16:54,000 - 00:16:58,000] for a string is L string.
+- [00:16:58,000 - 00:16:59,000] So,
+- [00:16:59,000 - 00:17:01,000] the natural thing is to count up
+- [00:17:01,000 - 00:17:04,000] how many wiggles are there,
+- [00:17:04,000 - 00:17:06,000] or how many steps are there.
+- [00:17:06,000 - 00:17:08,000] That's going to be the length of the string
+- [00:17:10,000 - 00:17:13,000] divided by L string.
+- [00:17:13,000 - 00:17:16,000] That's the,
+- [00:17:16,000 - 00:17:20,000] that's the entropy of a string.
+- [00:17:20,000 - 00:17:21,000] Now notice,
+- [00:17:21,000 - 00:17:23,000] it's length divided by L string.
+- [00:17:23,000 - 00:17:26,000] I'm going to write another equation for it in a minute.
+- [00:17:26,000 - 00:17:29,000] What about,
+- [00:17:29,000 - 00:17:31,000] everybody knows,
+- [00:17:31,000 - 00:17:32,000] I assume,
+- [00:17:32,000 - 00:17:35,000] the convention that S is entropy.
+- [00:17:35,000 - 00:17:37,000] I will write,
+- [00:17:37,000 - 00:17:38,000] I'll write it just to remind you,
+- [00:17:38,000 - 00:17:43,000] entropy.
+- [00:17:43,000 - 00:17:45,000] Okay, what about the mass of the string?
+- [00:17:45,000 - 00:17:47,000] Well, the mass of the string is also
+- [00:17:47,000 - 00:17:50,000] clearly proportional to its length.
+- [00:17:50,000 - 00:17:53,000] It's just the mass of the sum of the little bits.
+- [00:17:53,000 - 00:17:56,000] Now that's a mild oversimplification,
+- [00:17:56,000 - 00:17:59,000] but not much.
+- [00:17:59,000 - 00:18:01,000] In the end, it's true.
+- [00:18:01,000 - 00:18:02,000] You might ask,
+- [00:18:02,000 - 00:18:03,000] what happened to the kinetic energy
+- [00:18:03,000 - 00:18:05,000] of the motion of the string?
+- [00:18:05,000 - 00:18:08,000] Well, it's not too hard to prove
+- [00:18:08,000 - 00:18:10,000] in using a little bit of statistical mechanics
+- [00:18:10,000 - 00:18:12,000] that the kinetic energy
+- [00:18:12,000 - 00:18:14,000] plus the potential,
+- [00:18:14,000 - 00:18:18,000] is essentially equal to the potential energy.
+- [00:18:18,000 - 00:18:21,000] It is a correct statement in the end
+- [00:18:21,000 - 00:18:23,000] that the mass of the string
+- [00:18:23,000 - 00:18:26,000] is just the sum of the masses
+- [00:18:26,000 - 00:18:30,000] for each one of the little segments.
+- [00:18:30,000 - 00:18:32,000] Okay?
+- [00:18:32,000 - 00:18:34,000] But what's the mass of a segment?
+- [00:18:34,000 - 00:18:35,000] That leaves us with the question of
+- [00:18:35,000 - 00:18:37,000] what is the mass of a segment?
+- [00:18:37,000 - 00:18:38,000] What is the mass of the most primitive,
+- [00:18:38,000 - 00:18:40,000] basic little piece of string?
+- [00:18:40,000 - 00:18:42,000] Let's call it M,
+- [00:18:42,000 - 00:18:44,000] I don't,
+- [00:18:44,000 - 00:18:45,000] we're going to,
+- [00:18:45,000 - 00:18:46,000] there's a bit of an ambiguity.
+- [00:18:46,000 - 00:18:48,000] I'm going to write M string,
+- [00:18:48,000 - 00:18:51,000] but I don't mean the mass of the whole big string.
+- [00:18:51,000 - 00:18:54,000] I mean the mass of the little bit
+- [00:18:54,000 - 00:18:56,000] of elementary string.
+- [00:18:56,000 - 00:18:58,000] Is that of length Ls?
+- [00:18:58,000 - 00:19:00,000] It's of length of Ls.
+- [00:19:00,000 - 00:19:02,000] It's of length Ls.
+- [00:19:02,000 - 00:19:04,000] And now all we have to remember
+- [00:19:04,000 - 00:19:06,000] is that mass units
+- [00:19:06,000 - 00:19:09,000] are the same as inverse length units.
+- [00:19:09,000 - 00:19:13,000] Mass units are the same as inverse length units.
+- [00:19:13,000 - 00:19:16,000] And the only possible equation
+- [00:19:16,000 - 00:19:18,000] that we can write down for this
+- [00:19:18,000 - 00:19:21,000] is that it's equal to one divided
+- [00:19:21,000 - 00:19:23,000] by the string length scale.
+- [00:19:23,000 - 00:19:26,000] So whatever the string length scale is,
+- [00:19:26,000 - 00:19:28,000] that is associated with it,
+- [00:19:28,000 - 00:19:29,000] the smaller it is,
+- [00:19:29,000 - 00:19:32,000] the bigger the mass scale.
+- [00:19:32,000 - 00:19:36,000] So if the basic unit of length
+- [00:19:36,000 - 00:19:42,000] for a string is 10 to the minus 6 zillion centimeters,
+- [00:19:42,000 - 00:19:44,000] then the mass of a little bit of string
+- [00:19:44,000 - 00:19:48,000] is going to be 10 to the plus 6 zillion something or others.
+- [00:19:48,000 - 00:19:50,000] All right, so the smaller the string length,
+- [00:19:50,000 - 00:19:52,000] the bigger the mass scale.
+- [00:19:52,000 - 00:19:55,000] And now we can write down the answer.
+- [00:19:55,000 - 00:19:57,000] The mass of the string,
+- [00:19:57,000 - 00:19:59,000] the total mass of the string,
+- [00:19:59,000 - 00:20:03,000] is equal to the number of little segments.
+- [00:20:03,000 - 00:20:05,000] How many little segments?
+- [00:20:05,000 - 00:20:11,000] The number of little segments
+- [00:20:11,000 - 00:20:14,000] is L divided by L string
+- [00:20:14,000 - 00:20:18,000] times the mass of each little segment.
+- [00:20:18,000 - 00:20:22,000] And that gives us another L string downstairs.
+- [00:20:22,000 - 00:20:27,000] We can, this is the mass of the big string.
+- [00:20:27,000 - 00:20:28,000] Let's call this the mass big string.
+- [00:20:29,000 - 00:20:31,000] Big M stands for the whole thing.
+- [00:20:31,000 - 00:20:34,000] Now we can manipulate these equations in various ways.
+- [00:20:34,000 - 00:20:38,000] We can also write this as the length of the string
+- [00:20:38,000 - 00:20:42,000] times little m sub string.
+- [00:20:42,000 - 00:20:44,000] Because L string in the denominator
+- [00:20:44,000 - 00:20:47,000] is the same as M string in the numerator,
+- [00:20:47,000 - 00:20:49,000] and so forth and so on.
+- [00:20:49,000 - 00:20:51,000] Or we can do a bit more.
+- [00:20:51,000 - 00:20:56,000] We can get rid of L by replacing it with M.
+- [00:20:56,000 - 00:20:57,000] Let's replace it by M.
+- [00:20:57,000 - 00:20:59,000] Let's just write some more.
+- [00:20:59,000 - 00:21:01,000] Let's write some more equations.
+- [00:21:01,000 - 00:21:02,000] Doing nothing here.
+- [00:21:02,000 - 00:21:07,000] L is L string squared times capital M.
+- [00:21:07,000 - 00:21:09,000] So what is that going to give us?
+- [00:21:09,000 - 00:21:15,000] That's going to give us
+- [00:21:15,000 - 00:21:20,000] L string squared times capital M.
+- [00:21:20,000 - 00:21:23,000] That's L times M string.
+- [00:21:23,000 - 00:21:26,000] But M string is one over L string, right?
+- [00:21:26,000 - 00:21:29,000] So we can just take away one of these L strings.
+- [00:21:29,000 - 00:21:35,000] I think I'll just condense this into two equations
+- [00:21:35,000 - 00:21:38,000] because parts of them I'm not interested in.
+- [00:21:38,000 - 00:21:42,000] S is the length divided by the string length,
+- [00:21:42,000 - 00:21:49,000] but it also happens to be the mass times the string length.
+- [00:21:49,000 - 00:21:56,000] The total mass of the total string M times the string length.
+- [00:21:56,000 - 00:21:57,000] Okay.
+- [00:21:57,000 - 00:22:06,000] Now I want to compare some of these equations with black hole physics.
+- [00:22:06,000 - 00:22:08,000] I don't think I need this.
+- [00:22:08,000 - 00:22:09,000] Write it down.
+- [00:22:09,000 - 00:22:11,000] I may need it again, but I don't think so.
+- [00:22:11,000 - 00:22:14,000] But let's, maybe I will, maybe I won't.
+- [00:22:14,000 - 00:22:17,000] This is string theory, if you like.
+- [00:22:17,000 - 00:22:22,000] I should have headed the column here, string theory.
+- [00:22:27,000 - 00:22:30,000] Okay.
+- [00:22:30,000 - 00:22:33,000] Now let's put over here black hole theory,
+- [00:22:33,000 - 00:22:37,000] which we could also call gravitational theory or general relativity,
+- [00:22:37,000 - 00:22:40,000] but a little more than general relativity.
+- [00:22:40,000 - 00:22:43,000] General relativity plus Hawking and Bekenstein
+- [00:22:43,000 - 00:22:46,000] who taught us about the entropy of black holes.
+- [00:22:46,000 - 00:22:47,000] All right.
+- [00:22:47,000 - 00:22:52,000] So here we put black hole physics.
+- [00:22:52,000 - 00:22:54,000] This, of course, is part of it,
+- [00:22:54,000 - 00:22:57,000] but I'm mainly interested in the entropy of a black hole.
+- [00:22:57,000 - 00:22:59,000] All right.
+- [00:22:59,000 - 00:23:03,000] The entropy of the black hole, according to Bekenstein,
+- [00:23:03,000 - 00:23:08,000] is equal to the area of the horizon, A,
+- [00:23:08,000 - 00:23:13,000] divided by either L Planck squared,
+- [00:23:13,000 - 00:23:16,000] let's write it as L Planck squared,
+- [00:23:16,000 - 00:23:18,000] or capital G, either one.
+- [00:23:18,000 - 00:23:21,000] And I'm going to, they're the same thing,
+- [00:23:21,000 - 00:23:24,000] so I'm not cheating you or anything.
+- [00:23:24,000 - 00:23:27,000] And there's a numerical code.
+- [00:23:27,000 - 00:23:28,000] It's a coefficient.
+- [00:23:28,000 - 00:23:30,000] Do you remember what the numerical coefficient was?
+- [00:23:30,000 - 00:23:32,000] Four.
+- [00:23:32,000 - 00:23:33,000] Four.
+- [00:23:33,000 - 00:23:35,000] We're never going to be able to calculate that four.
+- [00:23:35,000 - 00:23:37,000] It's too hard.
+- [00:23:37,000 - 00:23:39,000] But this is the scaling.
+- [00:23:39,000 - 00:23:42,000] This is the parametric behavior of it.
+- [00:23:42,000 - 00:23:46,000] The area divided by L Planck squared.
+- [00:23:46,000 - 00:23:52,000] Compare that with this equation over here.
+- [00:23:52,000 - 00:23:55,000] The entropy is the length in string units.
+- [00:23:55,000 - 00:23:56,000] It's the air.
+- [00:23:56,000 - 00:23:58,000] So another system.
+- [00:23:58,000 - 00:24:03,000] Length divided by string length for strings.
+- [00:24:03,000 - 00:24:08,000] Area divided by Planck area for black holes.
+- [00:24:08,000 - 00:24:10,000] Now, I'm not saying these are the same.
+- [00:24:10,000 - 00:24:11,000] They're not the same.
+- [00:24:11,000 - 00:24:13,000] They're clearly not the same.
+- [00:24:13,000 - 00:24:19,000] I'm just pointing out the similarities and the differences.
+- [00:24:19,000 - 00:24:24,000] We can also write this another way.
+- [00:24:24,000 - 00:24:31,000] The area is equal to the square of the Schwarzschild radius.
+- [00:24:31,000 - 00:24:35,000] And the Schwarzschild radius is mg.
+- [00:24:35,000 - 00:24:39,000] Now, I'm leaving out twos and fours and things like that.
+- [00:24:39,000 - 00:24:43,000] mg is the Schwarzschild radius.
+- [00:24:43,000 - 00:24:45,000] We want to square that.
+- [00:24:45,000 - 00:24:47,000] M squared, G squared.
+- [00:24:47,000 - 00:24:48,000] That's the area.
+- [00:24:48,000 - 00:24:53,000] And now we want to divide it by either G or L Planck squared.
+- [00:24:53,000 - 00:24:55,000] So we'll divide it by G.
+- [00:24:55,000 - 00:24:57,000] L Planck squared.
+- [00:24:57,000 - 00:25:02,000] And it's just M squared times G.
+- [00:25:02,000 - 00:25:05,000] M squared times G.
+- [00:25:05,000 - 00:25:08,000] And G is L Planck squared.
+- [00:25:08,000 - 00:25:17,000] So we can rewrite this as just M squared L Planck squared.
+- [00:25:17,000 - 00:25:19,000] That's the entropy.
+- [00:25:19,000 - 00:25:21,000] Let's write it over here.
+- [00:25:21,000 - 00:25:23,000] No, there it is.
+- [00:25:23,000 - 00:25:25,000] Let's write this.
+- [00:25:25,000 - 00:25:27,000] Yeah.
+- [00:25:30,000 - 00:25:34,000] All right, so again, there's a similarity and a difference.
+- [00:25:34,000 - 00:25:43,000] The similarity is mass, some power of mass times some power of Planck length
+- [00:25:43,000 - 00:25:51,000] being different and similar to some power of mass times some power of string length.
+- [00:25:51,000 - 00:25:52,000] Okay.
+- [00:25:52,000 - 00:25:53,000] So, let's write it over here.
+- [00:25:53,000 - 00:25:54,000] Let me write it over here.
+- [00:25:54,000 - 00:25:59,000] Equals M squared L Planck squared.
+- [00:25:59,000 - 00:26:02,000] What, if anything, is the connection between these formulas?
+- [00:26:02,000 - 00:26:03,000] Is there any connection?
+- [00:26:03,000 - 00:26:04,000] Are they in any way the same?
+- [00:26:04,000 - 00:26:06,000] Clearly they're not the same.
+- [00:26:06,000 - 00:26:16,000] If a string is a black hole and a black hole is a string, and what else could a black hole be in string theory but a string?
+- [00:26:16,000 - 00:26:19,000] There is nothing in string theory except strings.
+- [00:26:19,000 - 00:26:21,000] So if a black hole is a string, it would stand to the left.
+- [00:26:21,000 - 00:26:26,000] It would stand to reason that it should satisfy some rules of string theory.
+- [00:26:26,000 - 00:26:29,000] And you might think this is the right formula.
+- [00:26:29,000 - 00:26:33,000] But this is missing something important.
+- [00:26:33,000 - 00:26:45,000] It's missing the strong interactions between the parts of the string, namely the gravitational interactions between it,
+- [00:26:45,000 - 00:26:50,000] which have an effect of squeezing the string together.
+- [00:26:50,000 - 00:26:52,000] We haven't accounted for that.
+- [00:26:52,000 - 00:26:54,000] We haven't accounted.
+- [00:26:54,000 - 00:26:57,000] It's almost like pretending.
+- [00:26:57,000 - 00:26:59,000] The mistake we're making is something like this.
+- [00:26:59,000 - 00:27:07,000] If we wanted to calculate the properties of a star, of a given mass and a given temperature,
+- [00:27:07,000 - 00:27:15,000] we might take that amount of mass and put it in a box about as big as a star.
+- [00:27:15,000 - 00:27:18,000] That amount of particles.
+- [00:27:18,000 - 00:27:19,000] No, put them in a box.
+- [00:27:19,000 - 00:27:20,000] Don't put them in a box.
+- [00:27:20,000 - 00:27:26,000] Put them in a box bigger than the size of the star.
+- [00:27:26,000 - 00:27:33,000] And heat the box up to the temperature of the star.
+- [00:27:33,000 - 00:27:37,000] Would that be a good description of the star?
+- [00:27:37,000 - 00:27:38,000] No.
+- [00:27:38,000 - 00:27:40,000] It wouldn't be a good description of the star.
+- [00:27:40,000 - 00:27:42,000] It would leave out one important thing.
+- [00:27:42,000 - 00:27:47,000] The gravitational forces between the parts of the star, which pull it together,
+- [00:27:47,000 - 00:27:49,000] make the size of the box smaller.
+- [00:27:49,000 - 00:27:54,000] The size of the box smaller than it would be,
+- [00:27:54,000 - 00:27:57,000] smaller than it would be for the same gas at the same temperature,
+- [00:27:57,000 - 00:28:01,000] at the same entropy and so forth,
+- [00:28:01,000 - 00:28:07,000] and in fact change the relationship between entropy and energy.
+- [00:28:07,000 - 00:28:15,000] It changes the relationship between entropy and energy because it changes the energy of the star.
+- [00:28:15,000 - 00:28:18,000] In fact, the energy of the star is less than it would be
+- [00:28:18,000 - 00:28:20,000] if it wasn't for gravity.
+- [00:28:20,000 - 00:28:25,000] It's less than it would be because the forces pulling it together are attractive
+- [00:28:25,000 - 00:28:29,000] and the pulling it together lowers the energy.
+- [00:28:29,000 - 00:28:31,000] So you have to account for that.
+- [00:28:31,000 - 00:28:37,000] We have to account for the complicated physics of what pulls the string together
+- [00:28:37,000 - 00:28:44,000] and turns it into this tiny, tiny little nugget of a black hole.
+- [00:28:44,000 - 00:28:47,000] And of course, actually following that is difficult.
+- [00:28:47,000 - 00:28:48,000] Yeah.
+- [00:28:48,000 - 00:28:54,000] Just to combine the two blackboards together,
+- [00:28:54,000 - 00:29:00,000] if you have a string with big L over L sub s,
+- [00:29:00,000 - 00:29:07,000] and then you said if a little piece of it breaks off,
+- [00:29:07,000 - 00:29:09,000] then the entropy is less,
+- [00:29:09,000 - 00:29:12,000] with the total entropy of the system.
+- [00:29:12,000 - 00:29:14,000] It would be less of a little.
+- [00:29:14,000 - 00:29:16,000] I didn't say that, but did I say that?
+- [00:29:16,000 - 00:29:17,000] No.
+- [00:29:17,000 - 00:29:18,000] I didn't say that.
+- [00:29:18,000 - 00:29:23,000] That's what this, where you had one big string and a three little...
+- [00:29:23,000 - 00:29:25,000] Oh, oh, oh, oh, yeah.
+- [00:29:25,000 - 00:29:30,000] If you broke it up into pieces in the same volume, the entropy would be less.
+- [00:29:30,000 - 00:29:34,000] So you have a big string and then a little chunk sort of goes off,
+- [00:29:34,000 - 00:29:36,000] and that's called a graviton.
+- [00:29:36,000 - 00:29:38,000] It does lower the entropy a little bit.
+- [00:29:38,000 - 00:29:40,000] So that's my question is...
+- [00:29:40,000 - 00:29:41,000] It does.
+- [00:29:41,000 - 00:29:45,000] Doesn't the gravitating process lower the entropy?
+- [00:29:45,000 - 00:29:46,000] No.
+- [00:29:46,000 - 00:29:47,000] No.
+- [00:29:47,000 - 00:29:48,000] No.
+- [00:29:48,000 - 00:29:49,000] It actually doesn't.
+- [00:29:49,000 - 00:29:52,000] No more than it lowers the mass of the...
+- [00:29:52,000 - 00:29:56,000] The particles which jump back and forth between the...
+- [00:29:56,000 - 00:30:01,000] The virtual particles which jump back and forth between the sun and the earth
+- [00:30:01,000 - 00:30:03,000] form a kind of equilibrium,
+- [00:30:03,000 - 00:30:08,000] and the equilibrium neither increases nor decreases the mass of the sun in itself.
+- [00:30:08,000 - 00:30:12,000] So when the graviton gets absorbed, it makes its transition?
+- [00:30:12,000 - 00:30:13,000] Yeah.
+- [00:30:13,000 - 00:30:14,000] Yeah.
+- [00:30:14,000 - 00:30:16,000] But then another one jumps the other way.
+- [00:30:16,000 - 00:30:17,000] Let's just leave it at that.
+- [00:30:17,000 - 00:30:21,000] An equilibrium is set up, and we're not going to do quantum field theory tonight.
+- [00:30:21,000 - 00:30:28,000] As I said, the picture of things jumping back and forth, the cartoon, is too simple for real discussion.
+- [00:30:28,000 - 00:30:36,000] All we really used it for was to say that capital G was proportional to little g squared,
+- [00:30:36,000 - 00:30:41,000] and that, I assure you, is a very important thing.
+- [00:30:41,000 - 00:30:42,000] So...
+- [00:30:42,000 - 00:30:45,000] I assure you, is true.
+- [00:30:45,000 - 00:30:48,000] Okay.
+- [00:30:48,000 - 00:30:53,000] Now, we're going to make a hypothesis or a guess.
+- [00:30:53,000 - 00:30:59,000] And the guess is going to be...
+- [00:30:59,000 - 00:31:03,000] The first half of the guess is not a guess.
+- [00:31:03,000 - 00:31:10,000] If you take a string, and in particular, you take a string under the circumstance
+- [00:31:10,000 - 00:31:13,000] that little g is so small...
+- [00:31:13,000 - 00:31:17,000] Imagine that little g starts out essentially zero.
+- [00:31:17,000 - 00:31:21,000] No probability at all for it to split and join.
+- [00:31:21,000 - 00:31:25,000] That's the same as turning off the strength of gravity.
+- [00:31:25,000 - 00:31:29,000] Letting little g be arbitrarily small, let's say zero,
+- [00:31:29,000 - 00:31:33,000] is the same as turning off gravity altogether.
+- [00:31:33,000 - 00:31:38,000] Under those circumstances, you're not turning off other things,
+- [00:31:38,000 - 00:31:39,000] but turning off little g is the same as turning off gravity altogether.
+- [00:31:39,000 - 00:31:43,000] But turning off little g, sending it to zero,
+- [00:31:43,000 - 00:31:47,000] produces a string which has a bunch of wiggles in it,
+- [00:31:47,000 - 00:31:52,000] and it's a string for which you don't have to worry about what happens when the string crosses itself.
+- [00:31:52,000 - 00:31:55,000] It just goes right through and nothing happens.
+- [00:31:55,000 - 00:31:56,000] Okay.
+- [00:31:56,000 - 00:31:58,000] That's one limit of string theory.
+- [00:31:58,000 - 00:32:02,000] Now you imagine starting to increase g, little g.
+- [00:32:02,000 - 00:32:06,000] You imagine starting to increase little g,
+- [00:32:06,000 - 00:32:09,000] gravity starts turning on,
+- [00:32:09,000 - 00:32:17,000] and you're keeping L-string fixed.
+- [00:32:17,000 - 00:32:19,000] We're keeping L-string fixed.
+- [00:32:19,000 - 00:32:21,000] The thing we're keeping, you always ask,
+- [00:32:21,000 - 00:32:23,000] what is it keeping fixed?
+- [00:32:23,000 - 00:32:25,000] I'm keeping L-string fixed,
+- [00:32:25,000 - 00:32:27,000] the size of these wiggles,
+- [00:32:27,000 - 00:32:30,000] and now I start turning on little g.
+- [00:32:30,000 - 00:32:33,000] The Newton constant starts getting bigger,
+- [00:32:33,000 - 00:32:37,000] gravity starts becoming important for this object,
+- [00:32:37,000 - 00:32:42,000] and eventually does the same thing to it that gravity would do to the star.
+- [00:32:42,000 - 00:32:47,000] Make gravity strong enough and the star will turn into a black hole.
+- [00:32:50,000 - 00:32:53,000] Now, the interesting thing about string theory
+- [00:32:53,000 - 00:32:57,000] is little g is a quantity which can change in string theory.
+- [00:32:57,000 - 00:33:01,000] You can imagine a dial which turns it.
+- [00:33:01,000 - 00:33:04,000] It's a variable in the theory.
+- [00:33:04,000 - 00:33:06,000] We're not going to get deeply into that,
+- [00:33:06,000 - 00:33:10,000] but it is meaningful in string theory to change little g.
+- [00:33:10,000 - 00:33:15,000] This is what happens to a big blob of highly excited string
+- [00:33:15,000 - 00:33:18,000] as you increase g.
+- [00:33:18,000 - 00:33:22,000] It pulls the string together and eventually turns it into a black hole.
+- [00:33:22,000 - 00:33:26,000] What happens if you take the black hole now
+- [00:33:26,000 - 00:33:29,000] and you start decreasing g?
+- [00:33:29,000 - 00:33:32,000] Eventually you come to the point
+- [00:33:32,000 - 00:33:35,000] where there's not enough gravity to hold the string,
+- [00:33:35,000 - 00:33:38,000] but you can still get to hold the black hole together.
+- [00:33:38,000 - 00:33:42,000] Eventually you can imagine when little g gets so small,
+- [00:33:42,000 - 00:33:45,000] let's say zero,
+- [00:33:45,000 - 00:33:48,000] then there's no gravity left at all.
+- [00:33:48,000 - 00:33:51,000] What can the black hole turn into?
+- [00:33:51,000 - 00:33:54,000] There's only one thing around for it to turn into in that limit,
+- [00:33:54,000 - 00:33:56,000] strings.
+- [00:33:56,000 - 00:33:59,000] That's all there is in string theory.
+- [00:33:59,000 - 00:34:02,000] If that's all there is, it has to turn back into string.
+- [00:34:02,000 - 00:34:04,000] Well, it could turn into one string,
+- [00:34:04,000 - 00:34:05,000] it could turn into two strings,
+- [00:34:05,000 - 00:34:06,000] it could turn into three strings,
+- [00:34:06,000 - 00:34:08,000] it could turn into four strings,
+- [00:34:08,000 - 00:34:09,000] maybe a zillion strings.
+- [00:34:09,000 - 00:34:11,000] That might be your best guess,
+- [00:34:11,000 - 00:34:15,000] unless you knew that the overwhelming majority of configurations
+- [00:34:15,000 - 00:34:17,000] was a single string.
+- [00:34:17,000 - 00:34:24,000] So the basic guess is that this is kind of a reversible game.
+- [00:34:24,000 - 00:34:26,000] Take a highly excited string,
+- [00:34:26,000 - 00:34:29,000] turn on gravity, it turns into a black hole.
+- [00:34:29,000 - 00:34:32,000] Turn off gravity, it turns back into a string.
+- [00:34:32,000 - 00:34:34,000] Do it slowly.
+- [00:34:34,000 - 00:34:37,000] Call adiabatically.
+- [00:34:37,000 - 00:34:40,000] String turns to black hole,
+- [00:34:40,000 - 00:34:42,000] back again to string,
+- [00:34:42,000 - 00:34:44,000] and back and forth again.
+- [00:34:44,000 - 00:34:47,000] Now the one thing about doing things slowly
+- [00:34:47,000 - 00:34:50,000] is it doesn't change the entropy.
+- [00:34:50,000 - 00:34:52,000] That's a property of entropy.
+- [00:34:52,000 - 00:34:55,000] In the 19th century it was discovered
+- [00:34:55,000 - 00:34:59,000] that entropy is an adiabatic invariant.
+- [00:34:59,000 - 00:35:01,000] The meaning of that,
+- [00:35:01,000 - 00:35:04,000] an adiabatic invariant was a quantity
+- [00:35:04,000 - 00:35:09,000] that doesn't change when you change things slowly.
+- [00:35:09,000 - 00:35:12,000] It was the notion of an adiabatic invariant.
+- [00:35:12,000 - 00:35:17,000] And it was noticed in various contexts
+- [00:35:17,000 - 00:35:20,000] that entropy was an adiabatic invariant,
+- [00:35:20,000 - 00:35:22,000] if you vary things slowly.
+- [00:35:22,000 - 00:35:25,000] So here's the game we're going to try to play.
+- [00:35:25,000 - 00:35:26,000] We're going to try to say,
+- [00:35:26,000 - 00:35:29,000] look, let's start with a black hole.
+- [00:35:29,000 - 00:35:32,000] This is our target black hole over here.
+- [00:35:32,000 - 00:35:35,000] It has mass,
+- [00:35:35,000 - 00:35:42,000] let's give it capital M for big mass.
+- [00:35:42,000 - 00:35:44,000] It has mass M,
+- [00:35:44,000 - 00:35:47,000] and let's call it M naught.
+- [00:35:47,000 - 00:35:49,000] Just to indicate it's,
+- [00:35:49,000 - 00:35:51,000] the naught is just indicating
+- [00:35:51,000 - 00:35:53,000] it's the one that we're interested in.
+- [00:35:53,000 - 00:36:00,000] And there is a coupling constant G naught
+- [00:36:00,000 - 00:36:01,000] so that
+- [00:36:01,000 - 00:36:05,000] gravity is strong enough to hold it together into a black hole.
+- [00:36:05,000 - 00:36:07,000] That's an M naught and a G naught
+- [00:36:07,000 - 00:36:11,000] such that it is a black hole.
+- [00:36:11,000 - 00:36:15,000] And now somebody comes along and starts turning the dial,
+- [00:36:15,000 - 00:36:16,000] the G dial,
+- [00:36:16,000 - 00:36:19,000] starts decreasing G,
+- [00:36:19,000 - 00:36:26,000] decreases G so much that gravity effectively turns off.
+- [00:36:26,000 - 00:36:28,000] What happens to the black hole incidentally
+- [00:36:28,000 - 00:36:30,000] when you start turning off gravity,
+- [00:36:30,000 - 00:36:32,000] you start decreasing the strength of gravity.
+- [00:36:32,000 - 00:36:34,000] Does it grow, does it shrink?
+- [00:36:34,000 - 00:36:35,000] It grows.
+- [00:36:35,000 - 00:36:36,000] It grows because after all,
+- [00:36:36,000 - 00:36:39,000] if you turn gravity on, it shrinks.
+- [00:36:39,000 - 00:36:40,000] Right.
+- [00:36:40,000 - 00:36:41,000] It starts growing,
+- [00:36:41,000 - 00:36:44,000] and at some point,
+- [00:36:44,000 - 00:36:48,000] it turns back into a string.
+- [00:36:48,000 - 00:36:51,000] We're going to guess at what point that happens.
+- [00:36:51,000 - 00:36:53,000] We're going to make two guesses.
+- [00:36:53,000 - 00:36:54,000] They're not really guesses.
+- [00:36:54,000 - 00:36:58,000] They're some things we could,
+- [00:36:58,000 - 00:36:59,000] a little bit of mathematics,
+- [00:36:59,000 - 00:37:01,000] we could confirm.
+- [00:37:01,000 - 00:37:06,000] We're going to treat them as intuitive guesses.
+- [00:37:06,000 - 00:37:07,000] All right.
+- [00:37:07,000 - 00:37:14,000] The first thing has to do with the entropy of a black hole.
+- [00:37:14,000 - 00:37:16,000] I'm not going to use this formula
+- [00:37:16,000 - 00:37:19,000] because that's the formula I'm going to try to prove.
+- [00:37:19,000 - 00:37:20,000] This is the,
+- [00:37:20,000 - 00:37:24,000] the target is to prove this formula
+- [00:37:24,000 - 00:37:29,000] that the entropy of a black hole is M squared L Planck squared.
+- [00:37:29,000 - 00:37:34,000] Using the fact that the entropy of a string
+- [00:37:34,000 - 00:37:37,000] is M times L string.
+- [00:37:37,000 - 00:37:38,000] That's what we're going to try to do.
+- [00:37:38,000 - 00:37:41,000] Use this fact to prove this fact.
+- [00:37:41,000 - 00:37:44,000] Now, these equations can't possibly,
+- [00:37:44,000 - 00:37:46,000] you can't take these equations,
+- [00:37:46,000 - 00:37:47,000] start plugging them in,
+- [00:37:47,000 - 00:37:48,000] and go from here to here.
+- [00:37:48,000 - 00:37:51,000] It's the wrong idea.
+- [00:37:51,000 - 00:37:54,000] And we'll see why.
+- [00:37:54,000 - 00:37:56,000] Okay, so that's the goal,
+- [00:37:56,000 - 00:37:58,000] to prove this
+- [00:37:58,000 - 00:38:00,000] using this,
+- [00:38:00,000 - 00:38:02,000] and using this idea that we can go back and forth
+- [00:38:02,000 - 00:38:04,000] from strings to black holes
+- [00:38:04,000 - 00:38:09,000] by turning on and off the coupling constant.
+- [00:38:09,000 - 00:38:13,000] Let's start with the entropy of a black hole.
+- [00:38:13,000 - 00:38:17,000] Now, here's the formula.
+- [00:38:17,000 - 00:38:21,000] M squared L Planck squared.
+- [00:38:21,000 - 00:38:24,000] Entropy is dimensionless.
+- [00:38:24,000 - 00:38:27,000] The entropy of a large black hole,
+- [00:38:27,000 - 00:38:29,000] what can it depend on?
+- [00:38:29,000 - 00:38:31,000] The question is what can it depend on?
+- [00:38:31,000 - 00:38:38,000] And of course it can depend on the mass.
+- [00:38:38,000 - 00:38:40,000] But mass is not dimensionless.
+- [00:38:40,000 - 00:38:42,000] There's nothing you can write down
+- [00:38:42,000 - 00:38:44,000] that involves only the mass
+- [00:38:44,000 - 00:38:45,000] that could give you,
+- [00:38:45,000 - 00:38:48,000] it can be mass, mass squared, mass cubed,
+- [00:38:48,000 - 00:38:51,000] mass 15th power, none of them work.
+- [00:38:51,000 - 00:38:54,000] What must you put here in order to get a dimensionless thing?
+- [00:38:54,000 - 00:38:57,000] You must put L Planck.
+- [00:38:57,000 - 00:39:00,000] Mass times L Planck.
+- [00:39:04,000 - 00:39:07,000] Mass times the length scale
+- [00:39:07,000 - 00:39:09,000] that's associated with gravity.
+- [00:39:09,000 - 00:39:12,000] Now, we're doing black hole physics over here.
+- [00:39:12,000 - 00:39:14,000] It doesn't even know yet about string theory.
+- [00:39:14,000 - 00:39:15,000] We haven't even,
+- [00:39:15,000 - 00:39:18,000] we're in the old days when Hawking first,
+- [00:39:18,000 - 00:39:21,000] Hawking and Bekenstein first discovered the fact
+- [00:39:21,000 - 00:39:25,000] that the entropy, that black holes have entropy.
+- [00:39:25,000 - 00:39:27,000] And you could ask at that time,
+- [00:39:27,000 - 00:39:29,000] what can the entropy depend on?
+- [00:39:29,000 - 00:39:32,000] And Hawking and Bekenstein and everybody else
+- [00:39:32,000 - 00:39:36,000] would have said the only thing that it could depend on
+- [00:39:36,000 - 00:39:38,000] is the mass times L Planck.
+- [00:39:38,000 - 00:39:40,000] But that doesn't tell you that it's mass squared
+- [00:39:40,000 - 00:39:42,000] times L Planck squared.
+- [00:39:42,000 - 00:39:45,000] It could be mass cubed times L Planck cubed.
+- [00:39:45,000 - 00:39:47,000] It could be mass times L Planck.
+- [00:39:47,000 - 00:39:49,000] This doesn't say any such thing.
+- [00:39:49,000 - 00:39:52,000] This doesn't say that.
+- [00:39:52,000 - 00:39:56,000] All it says is that this is the dimensionless combination
+- [00:39:56,000 - 00:40:00,000] of variables that S can depend on.
+- [00:40:01,000 - 00:40:04,000] Okay, now let's come to the point.
+- [00:40:04,000 - 00:40:06,000] Here we're going to draw a diagram.
+- [00:40:06,000 - 00:40:08,000] We're going to draw a graph.
+- [00:40:08,000 - 00:40:11,000] And on the graph we're going to plot two things.
+- [00:40:11,000 - 00:40:14,000] We're going to plot G.
+- [00:40:14,000 - 00:40:18,000] And we're going to plot the mass of an object.
+- [00:40:18,000 - 00:40:23,000] And we're going to start over here with a relatively large G.
+- [00:40:23,000 - 00:40:25,000] Pretty large.
+- [00:40:25,000 - 00:40:28,000] And the mass is not really going to be small.
+- [00:40:28,000 - 00:40:30,000] It's just I need a lot of space here.
+- [00:40:30,000 - 00:40:32,000] A lot of vertical space.
+- [00:40:32,000 - 00:40:35,000] So I'm going to put the mass down here.
+- [00:40:35,000 - 00:40:38,000] But this mass is pretty big.
+- [00:40:38,000 - 00:40:40,000] This mass is pretty big.
+- [00:40:40,000 - 00:40:43,000] Pretty big could mean solar mass.
+- [00:40:43,000 - 00:40:46,000] Whatever mass you like for a black hole.
+- [00:40:46,000 - 00:40:49,000] And G is also pretty big.
+- [00:40:49,000 - 00:40:51,000] So the mass is big. G is big.
+- [00:40:51,000 - 00:40:53,000] It's a black hole.
+- [00:40:53,000 - 00:40:54,000] There's no question it's a black hole.
+- [00:40:54,000 - 00:40:56,000] It's a black hole.
+- [00:40:56,000 - 00:41:03,000] And let's give it mass M naught and coupling G naught.
+- [00:41:03,000 - 00:41:07,000] This is the target object that we want to understand.
+- [00:41:07,000 - 00:41:10,000] We want to calculate its entropy.
+- [00:41:10,000 - 00:41:12,000] But what are we going to do?
+- [00:41:12,000 - 00:41:17,000] We're going to get our magician who turns the knob of G,
+- [00:41:17,000 - 00:41:19,000] who starts decreasing it.
+- [00:41:19,000 - 00:41:22,000] He starts decreasing it.
+- [00:41:22,000 - 00:41:23,000] We take this object.
+- [00:41:23,000 - 00:41:24,000] Here it is.
+- [00:41:24,000 - 00:41:27,000] And we start decreasing G.
+- [00:41:27,000 - 00:41:30,000] What happens to the mass as we decrease G?
+- [00:41:30,000 - 00:41:38,000] As we decrease G, the negative gravitational energy disappears.
+- [00:41:38,000 - 00:41:40,000] So the mass increases.
+- [00:41:40,000 - 00:41:49,000] The mass increases because we're deleting the negative gravitational binding energy.
+- [00:41:49,000 - 00:41:53,000] And so the mass starts to increase.
+- [00:41:53,000 - 00:41:55,000] And how does it increase?
+- [00:41:55,000 - 00:42:00,000] Well, if you do it slowly, the entropy doesn't change.
+- [00:42:00,000 - 00:42:02,000] All right?
+- [00:42:02,000 - 00:42:07,000] But the entropy is only a function of mass times L Planck.
+- [00:42:07,000 - 00:42:09,000] Mass times L Planck.
+- [00:42:09,000 - 00:42:11,000] Oh, let's write that another way.
+- [00:42:11,000 - 00:42:14,000] I told you that this is very easy.
+- [00:42:14,000 - 00:42:17,000] And it's also very subtle.
+- [00:42:17,000 - 00:42:20,000] It's difficult because there's a lot of pieces.
+- [00:42:20,000 - 00:42:22,000] Every single piece is no more than the mass.
+- [00:42:22,000 - 00:42:25,000] There's no more.
+- [00:42:25,000 - 00:42:32,000] I don't even think there's anything as complicated as multiplication and addition in the same formula.
+- [00:42:32,000 - 00:42:34,000] The worst is multiplication and division.
+- [00:42:34,000 - 00:42:36,000] I don't even think we have to use the addition sign.
+- [00:42:36,000 - 00:42:38,000] Certainly not the integral or derivative.
+- [00:42:38,000 - 00:42:40,000] But there are a lot of pieces.
+- [00:42:40,000 - 00:42:41,000] L Planck.
+- [00:42:41,000 - 00:42:43,000] What is L Planck?
+- [00:42:43,000 - 00:42:46,000] L Planck is G times L string.
+- [00:42:46,000 - 00:42:48,000] So let's plug that in here.
+- [00:42:48,000 - 00:42:49,000] It looks like we're getting stuff for free.
+- [00:42:49,000 - 00:42:50,000] And we are.
+- [00:42:50,000 - 00:42:51,000] L Planck is L.
+- [00:42:51,000 - 00:42:57,000] L Planck is G times L string.
+- [00:42:57,000 - 00:43:00,000] And I'm going to hold L string fixed.
+- [00:43:00,000 - 00:43:01,000] We're doing string theory.
+- [00:43:01,000 - 00:43:04,000] We're going to hold the string length scale fixed.
+- [00:43:04,000 - 00:43:11,000] And it tells us that the entropy is a function of the product of M and G.
+- [00:43:11,000 - 00:43:13,000] For a fixed L string.
+- [00:43:13,000 - 00:43:17,000] Holding L string fixed is a choice of units.
+- [00:43:17,000 - 00:43:19,000] If we hold L string fixed,
+- [00:43:19,000 - 00:43:21,000] the basic unit of mass,
+- [00:43:21,000 - 00:43:27,000] then the entropy is a function of the product of M and G.
+- [00:43:27,000 - 00:43:29,000] In other words,
+- [00:43:29,000 - 00:43:32,000] this line here
+- [00:43:32,000 - 00:43:38,000] must be the line along which M times G is fixed.
+- [00:43:38,000 - 00:43:40,000] M times G is fixed along here.
+- [00:43:40,000 - 00:43:41,000] Why is it?
+- [00:43:41,000 - 00:43:42,000] Let me go back again.
+- [00:43:42,000 - 00:43:45,000] We're slowly varying G.
+- [00:43:45,000 - 00:43:47,000] And so we don't change the entropy.
+- [00:43:47,000 - 00:43:49,000] But the entropy is known to be fixed.
+- [00:43:49,000 - 00:43:53,000] It's known to be a function of M times G.
+- [00:43:53,000 - 00:43:57,000] So it must be that M G is fixed along here.
+- [00:43:57,000 - 00:43:59,000] M G is fixed along here.
+- [00:43:59,000 - 00:44:03,000] It has to equal M naught G naught at this point.
+- [00:44:03,000 - 00:44:07,000] And so I can tell you immediately what this curve is.
+- [00:44:07,000 - 00:44:09,000] Can anybody tell me?
+- [00:44:09,000 - 00:44:10,000] It's a hyperbola.
+- [00:44:10,000 - 00:44:12,000] It's a hyperbola.
+- [00:44:12,000 - 00:44:18,000] And it's the hyperbola M G is equal to M naught G naught.
+- [00:44:19,000 - 00:44:24,000] It's a hyperbola.
+- [00:44:24,000 - 00:44:28,000] The product of M and G is fixed.
+- [00:44:28,000 - 00:44:30,000] And it's fixed so that at this point over here,
+- [00:44:30,000 - 00:44:33,000] it has to equal M naught G naught.
+- [00:44:33,000 - 00:44:35,000] So this is what we found.
+- [00:44:35,000 - 00:44:36,000] What we find,
+- [00:44:36,000 - 00:44:39,000] what would be called in statistical mechanics,
+- [00:44:39,000 - 00:44:42,000] we found the isentropic line,
+- [00:44:42,000 - 00:44:47,000] the line in the parameter space where the entropy is fixed,
+- [00:44:47,000 - 00:44:49,000] or the adiabatic space,
+- [00:44:49,000 - 00:44:50,000] the adiabat.
+- [00:44:50,000 - 00:44:52,000] It's sometimes called the adiabat,
+- [00:44:52,000 - 00:44:57,000] the line along which entropy is fixed.
+- [00:44:57,000 - 00:45:00,000] All right, that's the first part of the count.
+- [00:45:00,000 - 00:45:07,000] Now the second part is to know where we go from black hole to string.
+- [00:45:07,000 - 00:45:12,000] Where does this black hole suddenly change its character
+- [00:45:12,000 - 00:45:16,000] and turn into a ball of string
+- [00:45:16,000 - 00:45:18,000] that we can analyze
+- [00:45:18,000 - 00:45:22,000] using string theory and not have to worry about gravity?
+- [00:45:22,000 - 00:45:24,000] And I'll tell you where it happens.
+- [00:45:24,000 - 00:45:28,000] It happens, imagine,
+- [00:45:28,000 - 00:45:31,000] it happens at the point
+- [00:45:31,000 - 00:45:35,000] where the Schwarzschild radius of the object
+- [00:45:35,000 - 00:45:38,000] gets smaller than the string length scale.
+- [00:45:38,000 - 00:45:40,000] Here's the idea.
+- [00:45:40,000 - 00:45:45,000] As you start decreasing the coupling constant,
+- [00:45:45,000 - 00:45:47,000] the compactified string
+- [00:45:47,000 - 00:45:51,000] that's rammed onto this small black hole
+- [00:45:51,000 - 00:45:53,000] starts to expand.
+- [00:45:53,000 - 00:45:56,000] It starts to expand.
+- [00:45:56,000 - 00:45:58,000] It starts to expand and expand,
+- [00:45:58,000 - 00:46:01,000] and eventually it gets to the point
+- [00:46:01,000 - 00:46:07,000] where these curly loops of string
+- [00:46:07,000 - 00:46:11,000] are no smaller
+- [00:46:11,000 - 00:46:14,000] than the Schwarzschild radius of the black hole.
+- [00:46:14,000 - 00:46:15,000] At that point,
+- [00:46:15,000 - 00:46:18,000] the black hole has no more meaning
+- [00:46:18,000 - 00:46:20,000] than just a ball of string.
+- [00:46:20,000 - 00:46:24,000] To say the Schwarzschild radius is smaller than the string scale
+- [00:46:24,000 - 00:46:26,000] wouldn't mean anything.
+- [00:46:26,000 - 00:46:29,000] It's also the point at which the,
+- [00:46:29,000 - 00:46:32,000] at which gravity is not strong enough
+- [00:46:32,000 - 00:46:35,000] to hold the string down onto the horizon.
+- [00:46:35,000 - 00:46:37,000] But it happens at the point
+- [00:46:37,000 - 00:46:39,000] where the wiggles of string
+- [00:46:39,000 - 00:46:43,000] are about as big as the Schwarzschild radius would be
+- [00:46:43,000 - 00:46:46,000] if it did remain a black hole.
+- [00:46:46,000 - 00:46:48,000] In other words, the crossover happens,
+- [00:46:48,000 - 00:46:51,000] the transition between the two of them happens,
+- [00:46:51,000 - 00:46:53,000] I'll write it over here,
+- [00:46:53,000 - 00:46:56,000] it happens when the Schwarzschild radius,
+- [00:46:56,000 - 00:47:00,000] mg,
+- [00:47:00,000 - 00:47:04,000] becomes equal to L-string.
+- [00:47:04,000 - 00:47:07,000] At that point,
+- [00:47:07,000 - 00:47:10,000] a black hole whose Schwarzschild radius
+- [00:47:10,000 - 00:47:12,000] is smaller than the string length scale
+- [00:47:12,000 - 00:47:14,000] is not a proper black hole.
+- [00:47:14,000 - 00:47:16,000] It is turned into a string.
+- [00:47:16,000 - 00:47:18,000] Once that happens,
+- [00:47:18,000 - 00:47:20,000] we use string theory.
+- [00:47:20,000 - 00:47:22,000] Okay, let's see where this is.
+- [00:47:22,000 - 00:47:24,000] Let's see if we can figure out
+- [00:47:24,000 - 00:47:27,000] where this is on this diagram,
+- [00:47:27,000 - 00:47:29,000] what it looks like.
+- [00:47:29,000 - 00:47:31,000] It's also a curve.
+- [00:47:31,000 - 00:47:33,000] It's also a curve.
+- [00:47:33,000 - 00:47:34,000] Why is it a curve?
+- [00:47:34,000 - 00:47:36,000] Because it's the curve M.
+- [00:47:36,000 - 00:47:41,000] Now, big G is little g squared
+- [00:47:41,000 - 00:47:47,000] L-string squared
+- [00:47:47,000 - 00:47:50,000] equals L-string.
+- [00:47:50,000 - 00:47:52,000] Again, we're keeping L-string fixed,
+- [00:47:52,000 - 00:47:55,000] so just think of it as a number.
+- [00:47:55,000 - 00:47:57,000] And it becomes the curve
+- [00:47:57,000 - 00:48:04,000] Mg squared equals 1 over L-string.
+- [00:48:04,000 - 00:48:06,000] I emphasize,
+- [00:48:06,000 - 00:48:08,000] the right-hand side is just a number,
+- [00:48:08,000 - 00:48:10,000] it's whatever we choose,
+- [00:48:10,000 - 00:48:12,000] the unit for L-string.
+- [00:48:12,000 - 00:48:16,000] The left-hand side is Mg squared.
+- [00:48:16,000 - 00:48:19,000] So when Mg squared,
+- [00:48:19,000 - 00:48:21,000] when g gets small enough
+- [00:48:21,000 - 00:48:23,000] that Mg squared is 1 over L-string,
+- [00:48:23,000 - 00:48:25,000] all of a sudden,
+- [00:48:25,000 - 00:48:27,000] it turns into a string.
+- [00:48:27,000 - 00:48:29,000] The black hole turns into a string.
+- [00:48:29,000 - 00:48:32,000] So there's another curve on here.
+- [00:48:32,000 - 00:48:35,000] This other curve,
+- [00:48:35,000 - 00:48:37,000] Mg squared equals 1 over L-string,
+- [00:48:37,000 - 00:48:39,000] it looks like this.
+- [00:48:40,000 - 00:48:44,000] Let's see,
+- [00:48:44,000 - 00:48:46,000] do I have it right?
+- [00:48:46,000 - 00:48:48,000] Yeah.
+- [00:48:48,000 - 00:48:55,000] Yeah, we could write it this way.
+- [00:48:55,000 - 00:48:58,000] When g is very large,
+- [00:48:58,000 - 00:49:02,000] this falls off like 1 over g-string squared.
+- [00:49:02,000 - 00:49:05,000] So, this falls off more rapidly.
+- [00:49:05,000 - 00:49:07,000] So let me remind you what these two curves are.
+- [00:49:07,000 - 00:49:09,000] One of them is just the curve
+- [00:49:09,000 - 00:49:13,000] of constant entropy for a black hole.
+- [00:49:13,000 - 00:49:17,000] The other is the transition point,
+- [00:49:17,000 - 00:49:19,000] or the transition curve,
+- [00:49:19,000 - 00:49:21,000] where when you go from the right side
+- [00:49:21,000 - 00:49:23,000] to the left side,
+- [00:49:23,000 - 00:49:27,000] you go from black hole to string.
+- [00:49:27,000 - 00:49:32,000] So if the coupling constant is small,
+- [00:49:32,000 - 00:49:33,000] and what does small mean?
+- [00:49:33,000 - 00:49:35,000] It depends on the mass.
+- [00:49:35,000 - 00:49:37,000] But if you're to the left of this red line,
+- [00:49:37,000 - 00:49:39,000] this lump of stuff,
+- [00:49:39,000 - 00:49:41,000] behaves like a string.
+- [00:49:41,000 - 00:49:42,000] If you're to the right of it,
+- [00:49:42,000 - 00:49:44,000] it behaves like a black hole.
+- [00:49:44,000 - 00:49:45,000] On the line,
+- [00:49:45,000 - 00:49:47,000] all along the line,
+- [00:49:47,000 - 00:49:49,000] that's where the entropy is constant.
+- [00:49:49,000 - 00:49:54,000] Okay, so now let's follow this black hole,
+- [00:49:54,000 - 00:49:56,000] and let's follow it right to the point
+- [00:49:56,000 - 00:50:00,000] where it turns into a string.
+- [00:50:00,000 - 00:50:02,000] And let's see if we can find out
+- [00:50:02,000 - 00:50:06,000] what the mass and coupling,
+- [00:50:06,000 - 00:50:07,000] in particular,
+- [00:50:07,000 - 00:50:09,000] what the mass and the coupling constant are,
+- [00:50:09,000 - 00:50:12,000] at that point where it turns into a string.
+- [00:50:12,000 - 00:50:14,000] Once it turns into a string,
+- [00:50:14,000 - 00:50:17,000] we can use string theory to compute its entropy.
+- [00:50:17,000 - 00:50:20,000] So far, all we know is that its entropy
+- [00:50:20,000 - 00:50:21,000] is a function of mg,
+- [00:50:21,000 - 00:50:24,000] but we don't know what function of mg.
+- [00:50:24,000 - 00:50:27,000] Alright, so let's follow the curve to here.
+- [00:50:27,000 - 00:50:29,000] There are two functions,
+- [00:50:29,000 - 00:50:30,000] there are two things.
+- [00:50:30,000 - 00:50:33,000] One of them, let's write down both equations.
+- [00:50:33,000 - 00:50:35,000] Let's write down the equations
+- [00:50:35,000 - 00:50:37,000] for the two curves
+- [00:50:37,000 - 00:50:38,000] which intersect
+- [00:50:38,000 - 00:50:40,000] at that point.
+- [00:50:40,000 - 00:50:47,000] One of them is mg equals m0 g0.
+- [00:50:47,000 - 00:50:49,000] And just to remind you again,
+- [00:50:49,000 - 00:50:52,000] m0 g0 is the target object
+- [00:50:52,000 - 00:50:54,000] that we're trying to understand.
+- [00:50:54,000 - 00:50:56,000] And we're playing a little game
+- [00:50:56,000 - 00:50:57,000] which is changing it,
+- [00:50:57,000 - 00:50:59,000] but let's see what we find.
+- [00:50:59,000 - 00:51:02,000] That's one equation for the black line.
+- [00:51:02,000 - 00:51:05,000] The equation for the red line,
+- [00:51:05,000 - 00:51:06,000] I erased it, damn it.
+- [00:51:06,000 - 00:51:07,000] What was it?
+- [00:51:07,000 - 00:51:10,000] m equals one over l.
+- [00:51:10,000 - 00:51:12,000] m squared, I think,
+- [00:51:12,000 - 00:51:14,000] is equal to one over l string.
+- [00:51:14,000 - 00:51:15,000] Yeah.
+- [00:51:15,000 - 00:51:16,000] Right.
+- [00:51:16,000 - 00:51:20,000] Let's solve these simultaneously.
+- [00:51:20,000 - 00:51:22,000] And I'm going to solve them simultaneously
+- [00:51:22,000 - 00:51:28,000] by squaring this one
+- [00:51:28,000 - 00:51:30,000] and now dividing one by the other
+- [00:51:30,000 - 00:51:34,000] so that I get rid of g.
+- [00:51:34,000 - 00:51:35,000] Okay?
+- [00:51:35,000 - 00:51:38,000] The point at which they cross,
+- [00:51:38,000 - 00:51:41,000] maybe I should have labeled this point
+- [00:51:41,000 - 00:51:44,000] and called it the starred point.
+- [00:51:44,000 - 00:51:47,000] And maybe we should have called this
+- [00:51:47,000 - 00:51:50,000] m star and g star,
+- [00:51:50,000 - 00:51:53,000] m star and g star.
+- [00:51:53,000 - 00:51:56,000] Namely, the values of m and g
+- [00:51:56,000 - 00:51:58,000] at the crossover point here.
+- [00:51:58,000 - 00:52:02,000] Okay, so now we just divide one by the other.
+- [00:52:02,000 - 00:52:04,000] The ratio of this one to this one,
+- [00:52:04,000 - 00:52:12,000] the ratio of this one here will be m star, right?
+- [00:52:12,000 - 00:52:14,000] And that's it.
+- [00:52:14,000 - 00:52:22,000] And that will equal m naught squared g naught squared
+- [00:52:22,000 - 00:52:25,000] divided by l string, right?
+- [00:52:25,000 - 00:52:27,000] Well, divided by one over l string.
+- [00:52:27,000 - 00:52:29,000] One over l.
+- [00:52:29,000 - 00:52:31,000] Divided by one over l string.
+- [00:52:31,000 - 00:52:32,000] For time being.
+- [00:52:32,000 - 00:52:33,000] All right.
+- [00:52:33,000 - 00:52:34,000] So, dividing, right.
+- [00:52:34,000 - 00:52:36,000] So, multiply by l string.
+- [00:52:36,000 - 00:52:37,000] Yeah.
+- [00:52:37,000 - 00:52:39,000] This one has to be ls over here.
+- [00:52:39,000 - 00:52:41,000] It better be because it's...
+- [00:52:41,000 - 00:52:42,000] No, no, no.
+- [00:52:42,000 - 00:52:44,000] It's on the other side, yeah.
+- [00:52:44,000 - 00:52:47,000] Let's see.
+- [00:52:47,000 - 00:52:50,000] You're dividing the equation by the other equation.
+- [00:52:50,000 - 00:52:51,000] Yeah.
+- [00:52:51,000 - 00:52:57,000] Divided by one over ls, which is like one to one.
+- [00:52:57,000 - 00:52:58,000] Ah, okay.
+- [00:52:58,000 - 00:53:00,000] One over ls, here it is, right?
+- [00:53:00,000 - 00:53:01,000] No, no, no.
+- [00:53:01,000 - 00:53:02,000] ls is on top.
+- [00:53:02,000 - 00:53:03,000] Yes.
+- [00:53:03,000 - 00:53:04,000] ls.
+- [00:53:04,000 - 00:53:05,000] Good.
+- [00:53:05,000 - 00:53:08,000] Now I think we have it right.
+- [00:53:08,000 - 00:53:09,000] Yeah?
+- [00:53:09,000 - 00:53:10,000] Okay.
+- [00:53:10,000 - 00:53:17,000] Let me multiply both sides of it by l string.
+- [00:53:17,000 - 00:53:27,000] And then we get m naught squared g naught squared l string squared
+- [00:53:27,000 - 00:53:30,000] is equal to m star.
+- [00:53:30,000 - 00:53:37,000] m star l string.
+- [00:53:37,000 - 00:53:41,000] What is g naught squared times l string squared?
+- [00:53:41,000 - 00:53:43,000] 2g.
+- [00:53:43,000 - 00:53:49,000] Capital G at this point, at the target point.
+- [00:53:49,000 - 00:53:57,000] It's capital G at the point where we were trying to investigate the object.
+- [00:53:57,000 - 00:53:58,000] So.
+- [00:53:58,000 - 00:54:06,000] We can write this equation as m naught squared times, let's just call it g naught.
+- [00:54:06,000 - 00:54:11,000] Whatever the Newton constant was at this point over here.
+- [00:54:11,000 - 00:54:14,000] And here is where we want to be.
+- [00:54:14,000 - 00:54:17,000] Moving on here was just a trick.
+- [00:54:17,000 - 00:54:25,000] But what we find is that it's m star, namely this point over here,
+- [00:54:25,000 - 00:54:33,000] times l string.
+- [00:54:33,000 - 00:54:34,000] What is this over here?
+- [00:54:34,000 - 00:54:36,000] m star, l string times m star?
+- [00:54:36,000 - 00:54:38,000] That's the entropy which doesn't change.
+- [00:54:38,000 - 00:54:41,000] That's the entropy which doesn't change.
+- [00:54:41,000 - 00:54:45,000] So this is, where's the equation?
+- [00:54:45,000 - 00:54:49,000] That's this equation over here.
+- [00:54:49,000 - 00:54:52,000] That's the entropy which doesn't change.
+- [00:54:52,000 - 00:54:54,000] It's the entropy at this point.
+- [00:54:54,000 - 00:54:59,000] But it's also the entropy over here.
+- [00:54:59,000 - 00:55:05,000] So in particular, it's the entropy of interest.
+- [00:55:05,000 - 00:55:11,000] So you see, here is the connection between the two sets of ideas.
+- [00:55:11,000 - 00:55:17,000] It's not that this object over here can be thought of as a string and you use string theory.
+- [00:55:17,000 - 00:55:20,000] You slowly change it until it becomes a string.
+- [00:55:20,000 - 00:55:24,000] And then you read off the entropy from the properties of the object.
+- [00:55:24,000 - 00:55:27,000] And then you read off the entropy from the properties of the string at this point.
+- [00:55:27,000 - 00:55:31,000] And that relates m-naught squared g-naught,
+- [00:55:31,000 - 00:55:41,000] which is the black hole formula over here someplace,
+- [00:55:41,000 - 00:55:49,000] relates the black hole formula at that point to the string formula at that point.
+- [00:55:49,000 - 00:55:50,000] All right.
+- [00:55:50,000 - 00:55:53,000] That was the origin of the connection between the two sets of ideas.
+- [00:55:53,000 - 00:56:00,000] That's the connection between understanding the entropies of black holes
+- [00:56:00,000 - 00:56:04,000] and relating it to the properties of strings.
+- [00:56:04,000 - 00:56:09,000] There's much more sophisticated versions of it.
+- [00:56:09,000 - 00:56:15,000] This version of it was not powerful enough to determine the numerical constant.
+- [00:56:15,000 - 00:56:20,000] The numerical constant of one quarter, this was much too crude for that.
+- [00:56:20,000 - 00:56:22,000] Why was it too crude?
+- [00:56:23,000 - 00:56:29,000] One of the reasons is there was a bit of floppiness in exactly where this transition happens.
+- [00:56:29,000 - 00:56:37,000] The transition between string and black hole is not a sharp, sudden transition.
+- [00:56:37,000 - 00:56:40,000] And even if it were a sharp, sudden transition,
+- [00:56:40,000 - 00:56:44,000] we don't have the power to predict exactly where it is.
+- [00:56:44,000 - 00:56:48,000] All we can do is give a rough estimate.
+- [00:56:48,000 - 00:56:52,000] So this technique was not powerful enough.
+- [00:56:53,000 - 00:56:57,000] It was not powerful enough to pin down the factor of one quarter.
+- [00:56:57,000 - 00:57:03,000] But what it was powerful enough was to get the same kinds of formulas
+- [00:57:03,000 - 00:57:08,000] for a wide, wide variety of different kinds of black hole objects,
+- [00:57:08,000 - 00:57:14,000] different dimensions of space, different things called black brains,
+- [00:57:14,000 - 00:57:18,000] things called black holes in all different dimensions,
+- [00:57:18,000 - 00:57:21,000] charged black holes, all the whole works.
+- [00:57:21,000 - 00:57:27,000] The same technique worked, but not good enough to get the numerical factor.
+- [00:57:27,000 - 00:57:33,000] The numerical factor was provided by a very mathematically sophisticated version,
+- [00:57:33,000 - 00:57:40,000] which had a great deal of symmetry and supersymmetry and other things that we're not going to do.
+- [00:57:40,000 - 00:57:45,000] It didn't add anything conceptually very new.
+- [00:57:45,000 - 00:57:50,000] It added the power of symmetry to make very precise computations.
+- [00:57:51,000 - 00:58:01,000] And the end result was that this factor of four was correctly identified.
+- [00:58:01,000 - 00:58:06,000] Okay, that's so much for strings and entropy.
+- [00:58:06,000 - 00:58:11,000] But just to summarize it, what does it all mean?
+- [00:58:11,000 - 00:58:15,000] It doesn't mean that string theory is correct.
+- [00:58:15,000 - 00:58:20,000] It means that a mathematically consistent description
+- [00:58:20,000 - 00:58:26,000] of gravity and quantum mechanics, which does contain black holes,
+- [00:58:26,000 - 00:58:32,000] has within its own framework an explanation of the entropy of black holes.
+- [00:58:32,000 - 00:58:36,000] Why do you need an explanation of entropy of black holes?
+- [00:58:36,000 - 00:58:41,000] Well, entropy, as I've told you time and again,
+- [00:58:41,000 - 00:58:47,000] is an indication of the existence of microscopic substructure,
+- [00:58:47,000 - 00:58:50,000] which your equations or your rough,
+- [00:58:50,000 - 00:58:54,000] coarse-grained description may not see.
+- [00:58:54,000 - 00:58:59,000] So the fact that black holes had entropy was evidence that there were some underlying
+- [00:58:59,000 - 00:59:03,000] small structures there describing whatever a black hole is,
+- [00:59:03,000 - 00:59:06,000] or whatever the horizon of a black hole is.
+- [00:59:06,000 - 00:59:13,000] And to get at it, string theory is one method.
+- [00:59:13,000 - 00:59:18,000] Oh, one other thing which is most interesting is that the power came out right here.
+- [00:59:18,000 - 00:59:24,000] It might have come out to be m cubed, el planck cubed.
+- [00:59:24,000 - 00:59:27,000] What would the interpretation of that have been?
+- [00:59:27,000 - 00:59:33,000] Notice, this is something, all right, this of course was the main point of this computation,
+- [00:59:33,000 - 00:59:38,000] that it gave the answer m squared, el planck squared.
+- [00:59:38,000 - 00:59:41,000] It did not give m cubed, el planck cubed.
+- [00:59:41,000 - 00:59:44,000] What would have been the interpretation of m cubed, el planck cubed?
+- [00:59:44,000 - 00:59:46,000] The volume.
+- [00:59:46,000 - 00:59:47,000] The volume.
+- [00:59:47,000 - 00:59:50,000] The entropy was proportional to the volume of the black hole.
+- [00:59:50,000 - 00:59:55,000] Right, that's what it seems like in natural life, where you look at that cup of coffee.
+- [00:59:55,000 - 00:59:59,000] Right, you look at the cup of coffee, the entropy is proportional to the volume.
+- [00:59:59,000 - 01:00:03,000] You look at the room, the entropy is proportional to the volume.
+- [01:00:03,000 - 01:00:07,000] You look at a black hole, the entropy is proportional to the area.
+- [01:00:07,000 - 01:00:11,000] And it was extremely puzzling.
+- [01:00:11,000 - 01:00:13,000] It still is puzzling.
+- [01:00:13,000 - 01:00:16,000] This derivation was not for the black hole.
+- [01:00:16,000 - 01:00:19,000] This derivation was not for the purpose of making you feel better.
+- [01:00:19,000 - 01:00:33,000] It was, it had a degree of historical value in convincing people that the entropy of black holes
+- [01:00:33,000 - 01:00:41,000] really did mean that there was a microscopic substructure to them that general relativity just missed.
+- [01:00:41,000 - 01:00:44,000] I think I probably discussed with you other,
+- [01:00:44,000 - 01:00:54,000] theories, which are macroscopic theories, which miss the substructure, or the microscopic structure.
+- [01:00:54,000 - 01:00:56,000] Just ordinary fluid dynamics.
+- [01:00:56,000 - 01:01:03,000] Fluid dynamics makes use of a set of variables which are averaged over many, many, many particles.
+- [01:01:03,000 - 01:01:09,000] The fluid flow, the fluid density, and things like that.
+- [01:01:09,000 - 01:01:11,000] The temperature of the fluid locally.
+- [01:01:11,000 - 01:01:12,000] And the flow of the fluid.
+- [01:01:12,000 - 01:01:13,000] And the flow of the fluid.
+- [01:01:13,000 - 01:01:22,000] And the fact that the fluid has entropy was an indication that it had some kind of additional small distance structure
+- [01:01:22,000 - 01:01:24,000] that was too small to see in the equations.
+- [01:01:24,000 - 01:01:25,000] Okay.
+- [01:01:25,000 - 01:01:30,000] I want to move on from that to the holographic principle.
+- [01:01:30,000 - 01:01:35,000] And we're going to do this very quickly.
+- [01:01:35,000 - 01:01:41,000] There's an enormous amount that came out of the holographic principle.
+- [01:01:41,000 - 01:01:46,000] Unexpectedly to me.
+- [01:01:46,000 - 01:01:48,000] But the principle itself is very simple.
+- [01:01:48,000 - 01:01:53,000] It's very simple, unexpected, but again, simple.
+- [01:01:53,000 - 01:01:56,000] Doesn't even require integrals.
+- [01:01:56,000 - 01:01:58,000] And it goes like this.
+- [01:01:58,000 - 01:02:03,000] The question now is not what is the entropy of a system.
+- [01:02:03,000 - 01:02:08,000] The question is what is the maximum entropy that a system can have.
+- [01:02:08,000 - 01:02:09,000] The maximum.
+- [01:02:09,000 - 01:02:10,000] The notion of maximum entropy.
+- [01:02:10,000 - 01:02:12,000] The notion of maximum entropy.
+- [01:02:12,000 - 01:02:16,000] Now, for many systems, maximum entropy is infinite.
+- [01:02:16,000 - 01:02:20,000] For many mathematical systems that we think about in mathematical physics,
+- [01:02:20,000 - 01:02:23,000] you can have arbitrary amounts of entropy.
+- [01:02:23,000 - 01:02:29,000] But let's simplify, or let's concentrate on a class of systems.
+- [01:02:29,000 - 01:02:33,000] There are a class of systems which can be described,
+- [01:02:33,000 - 01:02:38,000] I suppose you would describe them as systems that are built out of qubits.
+- [01:02:38,000 - 01:02:40,000] A qubit is a yes-no description
+- [01:02:40,000 - 01:02:42,000] It's a bit.
+- [01:02:42,000 - 01:02:45,000] It's a bit in the sense of the bits in your computer,
+- [01:02:45,000 - 01:02:47,000] except q stands for quantum.
+- [01:02:47,000 - 01:02:48,000] Quantum bits.
+- [01:02:48,000 - 01:02:51,000] But the q is not the important thing here.
+- [01:02:51,000 - 01:03:00,000] We could take this room and we could subdivide it into cells,
+- [01:03:00,000 - 01:03:03,000] make a cubic lattice out of it.
+- [01:03:03,000 - 01:03:09,000] Let's simplify the discussion and suppose everything in the room was made out of one kind of atom.
+- [01:03:09,000 - 01:03:11,000] This, of course, is a false statement.
+- [01:03:11,000 - 01:03:14,000] We're made out of lots of different kinds of atoms.
+- [01:03:14,000 - 01:03:25,000] But let's simplify it and say we're all made up out of meat-onium atoms.
+- [01:03:30,000 - 01:03:32,000] That's too hard to say.
+- [01:03:32,000 - 01:03:33,000] We're made out of meat.
+- [01:03:33,000 - 01:03:35,000] We're made out of meat-onium atoms.
+- [01:03:35,000 - 01:03:37,000] And even the air is made out of meat.
+- [01:03:37,000 - 01:03:41,000] And even the air is made out of meat-onium.
+- [01:03:41,000 - 01:03:43,000] You know what I mean.
+- [01:03:43,000 - 01:03:50,000] And what we're going to do is subdivide the room into a large number of cells,
+- [01:03:50,000 - 01:03:55,000] each cell being about as big as an atom.
+- [01:03:55,000 - 01:04:00,000] The only question that we can ask about a cell is,
+- [01:04:00,000 - 01:04:04,000] is there an atom in it or not?
+- [01:04:04,000 - 01:04:07,000] If there's an atom in it, we can paint it black.
+- [01:04:07,000 - 01:04:10,000] If there's not an atom in it, we leave it white.
+- [01:04:13,000 - 01:04:17,000] We can make up a lot of different kinds of configurations out of this.
+- [01:04:17,000 - 01:04:22,000] We can make up configurations that look like a bunch of people sitting here.
+- [01:04:22,000 - 01:04:27,000] We need to extend it so that we have a few more elements, of course, to do that.
+- [01:04:27,000 - 01:04:35,000] But with this very simple model, we can have a room which is complicated enough to have us sitting here,
+- [01:04:35,000 - 01:04:40,000] and in which the only question that you ask about a cell is,
+- [01:04:40,000 - 01:04:43,000] is it filled or is it not filled?
+- [01:04:43,000 - 01:04:51,000] The number of configurations that you can make is clearly 2 to the number of cells.
+- [01:04:51,000 - 01:04:57,000] And the number of cells is the volume divided by the volume of a cell.
+- [01:04:57,000 - 01:05:03,000] In this case, the volume of a cell would be the smallest volume that would be appropriate to the physics problem.
+- [01:05:03,000 - 01:05:05,000] In this case, the volume of a cell would be the smallest volume that would be appropriate to the physics problem.
+- [01:05:05,000 - 01:05:06,000] In this case, the volume of a cell would be the smallest volume that would be appropriate to the physics problem.
+- [01:05:06,000 - 01:05:08,000] And in this case, the volume of a cell would be the smallest volume that would be appropriate to the physics problem.
+- [01:05:08,000 - 01:05:10,000] In that case, the number of cells that would be larger than the number of cells that we could make out each cell for is 2.
+- [01:05:10,000 - 01:05:12,000] In that case, the number of cells that would be larger than the number of cells that we could make out each cell for is 2.
+- [01:05:13,000 - 01:05:14,000] And let's look at a simple problem.
+- [01:05:14,000 - 01:05:15,000] In this case, the physics problem would be putting atoms in or not putting atoms in.
+- [01:05:15,000 - 01:05:16,000] And so we could put in the volume of an atom here.
+- [01:05:17,000 - 01:05:18,000] Two to the volume over the volume of an atom.
+- [01:05:19,000 - 01:05:22,000] That's the number of different ways of populating this room with atoms.
+- [01:05:22,000 - 01:05:25,000] And the entropy is just the logarithm of this.
+- [01:05:26,000 - 01:05:28,000] The entropy is the logarithm of this,
+- [01:05:28,000 - 01:05:34,440] Entropy is the logarithm of this, so the logarithm of the natural logarithm is the usual definition.
+- [01:05:35,080 - 01:05:41,940] So the logarithm of this thing here is V divided by VA logarithm of 2.
+- [01:05:46,620 - 01:05:48,220] Now, I take it back.
+- [01:05:48,340 - 01:05:51,000] That is not the entropy of this room.
+- [01:05:51,300 - 01:05:53,020] That's the maximum entropy.
+- [01:05:54,400 - 01:05:56,380] There are no more states than that.
+- [01:05:56,380 - 01:06:01,700] Now, the entropy of this room is certainly nothing like the maximum entropy of this room.
+- [01:06:02,180 - 01:06:07,280] The maximum entropy of this room would be a configuration of the room which was completely chaotic.
+- [01:06:08,760 - 01:06:12,100] And if we put that much entropy into the room, it would be very hot.
+- [01:06:12,900 - 01:06:16,000] We are a configuration of relatively low entropy.
+- [01:06:16,520 - 01:06:20,680] This is the maximum entropy that could be in this room in this situation.
+- [01:06:20,680 - 01:06:22,300] There can't be any more.
+- [01:06:23,000 - 01:06:26,360] And we would write that as S maximum.
+- [01:06:27,200 - 01:06:29,600] There are two things to notice about it.
+- [01:06:30,420 - 01:06:33,040] One of them is that it's proportional to the volume.
+- [01:06:33,600 - 01:06:35,980] That may or may not be a deep fact.
+- [01:06:36,560 - 01:06:43,280] The other thing is that it's proportional to the number of basic decisions.
+- [01:06:44,000 - 01:06:46,420] Let's call it the number of degrees of freedom.
+- [01:06:46,760 - 01:06:55,460] A degree of freedom not now meaning a thing like a coordinate or something, but a yes-no binary question.
+- [01:06:56,380 - 01:07:00,380] It's proportional to the number of degrees of freedom.
+- [01:07:02,180 - 01:07:06,900] And, of course, for this room, the number of degrees of freedom being proportional to the volume,
+- [01:07:06,900 - 01:07:08,900] it's also proportional to the volume.
+- [01:07:09,900 - 01:07:15,900] We want to ask whether this is really a very general feature of nature,
+- [01:07:15,900 - 01:07:19,400] that the maximum entropy is proportional to the volume.
+- [01:07:19,400 - 01:07:24,480] I will take it that the maximum entropy is always proportional
+- [01:07:24,480 - 01:07:26,200] to the number of degrees of freedom.
+- [01:07:26,200 - 01:07:32,200] That's too deep to fool around with.
+- [01:07:32,200 - 01:07:37,600] I mean, we could fool around with it, but that's a very, very deep idea
+- [01:07:37,600 - 01:07:41,600] that the entropy counts the number of yes-no questions.
+- [01:07:43,600 - 01:07:48,000] We're going to ask whether it's always the case that it's proportional to the volume.
+- [01:07:48,000 - 01:07:53,000] And in particular, in a case that includes gravity.
+- [01:07:53,000 - 01:07:55,080] So here was the argument that was put forward.
+- [01:07:55,080 - 01:07:56,020] I'm going to go back to the first slide.
+- [01:07:56,020 - 01:08:03,020] I think I put it forward 15 years ago for what the maximum entropy of a region of space is.
+- [01:08:03,020 - 01:08:06,020] Here's a region of space.
+- [01:08:06,020 - 01:08:10,020] Let's take it to be a sphere for simplicity.
+- [01:08:10,020 - 01:08:14,020] It can be populated with all sorts of stuff.
+- [01:08:14,020 - 01:08:23,020] Atoms or photons, elements.
+- [01:08:23,020 - 01:08:25,020] They may or may not form cookies.
+- [01:08:26,020 - 01:08:30,020] Cookie, that's a little bit.
+- [01:08:30,020 - 01:08:41,020] It's hard to tell the difference between my cookies and planets, but yeah, there's a cookie.
+- [01:08:41,020 - 01:08:49,020] And the question is, how many configurations are there?
+- [01:08:49,020 - 01:08:52,020] What's the maximum number of distinct states?
+- [01:08:52,020 - 01:08:53,020] Here's the argument.
+- [01:08:53,020 - 01:08:54,020] The argument is, how many configurations are there?
+- [01:08:54,020 - 01:08:56,020] Here's the argument.
+- [01:08:56,020 - 01:08:59,020] The argument was really, really simple.
+- [01:08:59,020 - 01:09:08,020] Suppose there's an entropy in there, S, and a certain amount of energy altogether.
+- [01:09:08,020 - 01:09:13,020] Let's call it M.
+- [01:09:13,020 - 01:09:15,020] This is the amount of entropy that's in there.
+- [01:09:15,020 - 01:09:16,020] It's not the maximum entropy.
+- [01:09:16,020 - 01:09:19,020] It is the entropy that's in there, and it's the mass, M.
+- [01:09:19,020 - 01:09:21,020] Now, I think we're entitled to assume that the mass, M, is the maximum entropy.
+- [01:09:21,020 - 01:09:32,020] I think we're entitled to assume that the mass, M, is smaller than the mass of a black hole whose horizon would be just that big.
+- [01:09:32,020 - 01:09:40,020] If there was more mass in there, then the horizon would be bigger than this and would overflow the region.
+- [01:09:40,020 - 01:09:50,020] So we're asking how much entropy can be in stuff which doesn't overflow the boundary of this region.
+- [01:09:50,020 - 01:10:02,020] And so we're entitled to assume, then, that the mass must be less than the mass of a black hole whose horizon would just fill the region.
+- [01:10:02,020 - 01:10:10,020] Otherwise, as I said, if its mass were bigger, it would overflow the region, would have to overflow the region.
+- [01:10:10,020 - 01:10:15,020] Now imagine that somebody created a shell.
+- [01:10:15,020 - 01:10:19,020] It doesn't matter what the shell is made out of.
+- [01:10:19,020 - 01:10:23,020] It could come in from infinity.
+- [01:10:23,020 - 01:10:24,020] It could be made of light.
+- [01:10:24,020 - 01:10:26,020] It could be made of photons.
+- [01:10:26,020 - 01:10:28,020] It could be made of Swiss cheese.
+- [01:10:28,020 - 01:10:30,020] It doesn't matter.
+- [01:10:30,020 - 01:10:32,020] And that shell comes in.
+- [01:10:32,020 - 01:10:37,020] It happens to have precisely enough mass.
+- [01:10:37,020 - 01:10:48,020] It has precisely enough mass that it, together with the mass that's in there, happens to be the mass of a black hole which just fills that region.
+- [01:10:48,020 - 01:10:53,020] We're assuming the mass is less than the mass of that black hole.
+- [01:10:53,020 - 01:11:05,020] Let's take the red shell to have just the mass necessary to create so that the sum together will form a black hole.
+- [01:11:05,020 - 01:11:14,020] And now imagine either that it's by its own right heavy enough to fall in or we give it enough of a push to make it fall in.
+- [01:11:14,020 - 01:11:16,020] And it falls in.
+- [01:11:16,020 - 01:11:27,020] It falls in so that it crosses this region.
+- [01:11:27,020 - 01:11:42,020] Everybody who does general relativity will agree that at the point where it crosses the region such that this is just big enough so that the whole thing is a black hole, that it will form a black hole.
+- [01:11:42,020 - 01:11:44,020] When you pull this in, it will form a black hole.
+- [01:11:44,020 - 01:11:45,020] How big will it be?
+- [01:11:45,020 - 01:11:52,020] The black hole will be exactly as big as this region.
+- [01:11:52,020 - 01:11:54,020] You've engineered it that way.
+- [01:11:54,020 - 01:11:56,020] It's no miracle.
+- [01:11:56,020 - 01:12:07,020] You've just put enough mass in that red shell so that it together with the mass in here is just enough to make a black hole that big.
+- [01:12:07,020 - 01:12:11,020] What is the entropy of the final configuration?
+- [01:12:11,020 - 01:12:13,020] The entropy of the final configuration is just the entropy of the black hole that's in there.
+- [01:12:13,020 - 01:12:20,020] So we can write that, let's call this S initial.
+- [01:12:20,020 - 01:12:35,020] S final is the area divided by 4G, the area of this region.
+- [01:12:35,020 - 01:12:40,020] The one thing that we can say by virtue of the second law of thermodynamics is that the final entropy is the area of the black hole.
+- [01:12:40,020 - 01:12:41,020] So we can write that.
+- [01:12:41,020 - 01:12:45,020] The final entropy is bigger than the initial entropy.
+- [01:12:45,020 - 01:12:47,020] So we've proved the theorem.
+- [01:12:47,020 - 01:12:49,020] With almost no work, we proved the theorem.
+- [01:12:49,020 - 01:13:01,020] And the theorem says that the entropy in a region of space cannot be bigger than the entropy of a black hole which would just barely fill the region of space.
+- [01:13:01,020 - 01:13:10,020] It cannot because you could always create a black hole and thereby create an entropy, a final entropy,
+- [01:13:10,020 - 01:13:13,020] which would be the area over 4G.
+- [01:13:13,020 - 01:13:18,020] We've proven that way that the maximum entropy, S max,
+- [01:13:18,020 - 01:13:22,020] the same object we were talking about over here,
+- [01:13:22,020 - 01:13:28,020] is equal to the area divided by 4G.
+- [01:13:28,020 - 01:13:36,020] This is another way of saying that the number of degrees of freedom of a region of space,
+- [01:13:36,020 - 01:13:39,020] that everything that can be described in a region of space,
+- [01:13:39,020 - 01:13:47,020] is no bigger than the area of the bounding surface of that region measured in Planck units.
+- [01:13:47,020 - 01:13:50,020] That's called the holographic principle.
+- [01:13:50,020 - 01:13:57,020] It is sometimes, with very, very good reason,
+- [01:13:57,020 - 01:14:01,020] stated a little bit differently.
+- [01:14:01,020 - 01:14:08,020] It's stated in saying that any region of space can be described by a collection of degrees of freedom.
+- [01:14:08,020 - 01:14:11,020] Any region of space can be described by a collection of degrees of freedom,
+- [01:14:11,020 - 01:14:16,020] which are one per Planck area on the boundary of the region.
+- [01:14:16,020 - 01:14:18,020] It's called the holographic principle.
+- [01:14:18,020 - 01:14:19,020] It was a complete surprise.
+- [01:14:19,020 - 01:14:29,020] But it's now an official part of standard physics.
+- [01:14:29,020 - 01:14:32,020] I'm not going to do much with it.
+- [01:14:32,020 - 01:14:34,020] I'm not going to show you how it's used,
+- [01:14:34,020 - 01:14:37,020] what its applications have been.
+- [01:14:38,020 - 01:14:40,020] That would just take us too far afield.
+- [01:14:40,020 - 01:14:46,020] It has had very interesting applications.
+- [01:14:46,020 - 01:14:54,020] But what's most interesting about it is how different it is than people imagined.
+- [01:14:54,020 - 01:14:56,020] Just to say it again,
+- [01:14:56,020 - 01:14:59,020] you would think if you can vary something over here,
+- [01:14:59,020 - 01:15:01,020] and you can vary something else over here,
+- [01:15:01,020 - 01:15:03,020] and you can vary something else over here,
+- [01:15:03,020 - 01:15:06,020] that because of locality,
+- [01:15:06,020 - 01:15:09,020] that you can make any combination of variations,
+- [01:15:09,020 - 01:15:14,020] and you would think the number of variations that you can make is proportional to the volume.
+- [01:15:14,020 - 01:15:21,020] The area of a region measured in Planck units is vastly, vastly smaller.
+- [01:15:21,020 - 01:15:24,020] This is not a small difference.
+- [01:15:24,020 - 01:15:34,020] The ratio between the number of Planck cells on the boundary
+- [01:15:34,020 - 01:15:41,020] and the number of Planck cells in the volume of the room is a huge ratio.
+- [01:15:41,020 - 01:15:43,020] So it's a...
+- [01:15:43,020 - 01:15:46,020] Okay, it is what it is.
+- [01:15:46,020 - 01:15:48,020] Can I ask about this?
+- [01:15:48,020 - 01:15:49,020] If you have a...
+- [01:15:49,020 - 01:15:51,020] Ignoring expansion of the universe,
+- [01:15:51,020 - 01:15:56,020] if you just have a roughly uniform density of a very large universe,
+- [01:15:56,020 - 01:15:58,020] what happens then?
+- [01:15:58,020 - 01:16:00,020] We're going to do that.
+- [01:16:00,020 - 01:16:02,020] Yeah, we're going to do that.
+- [01:16:02,020 - 01:16:03,020] Is there a connection between the...
+- [01:16:03,020 - 01:16:07,020] Is there a connection between this limit on the number of degrees of freedom
+- [01:16:07,020 - 01:16:11,020] and the uncertainty principle?
+- [01:16:11,020 - 01:16:12,020] Well...
+- [01:16:23,020 - 01:16:24,020] Yeah.
+- [01:18:03,020 - 01:18:05,020] I mean, we're going to do that.
+- [01:18:05,020 - 01:18:06,020] We're going to do that.
+- [01:18:06,020 - 01:18:08,020] So, let's go back to the question of cosmology.
+- [01:18:08,020 - 01:18:14,020] That means certain kinds of solutions of Einstein's field equations applied to cosmology.
+- [01:18:14,020 - 01:18:16,020] We're not going to do those equations.
+- [01:18:16,020 - 01:18:19,020] I'm going to just tell you what the solutions are.
+- [01:18:19,020 - 01:18:22,020] We're going to talk about solutions of Einstein's equations,
+- [01:18:22,020 - 01:18:23,020] but we're not going to try to write...
+- [01:18:23,020 - 01:18:25,020] We're not even going to write the equations down.
+- [01:18:25,020 - 01:18:31,020] We're going to write the solutions down.
+- [01:18:31,020 - 01:18:36,020] So, basic concept of modern cosmology,
+- [01:18:36,020 - 01:18:40,020] namely the metric of an expanding universe.
+- [01:18:40,020 - 01:18:45,020] Now, there are various versions of expanding universes.
+- [01:18:45,020 - 01:18:50,020] In particular, they're characterized by the topology of space.
+- [01:18:50,020 - 01:18:53,020] Not space-time, but space.
+- [01:18:53,020 - 01:18:58,020] Space could be closed and bounded like a sphere,
+- [01:18:58,020 - 01:18:59,020] like the surface of a sphere,
+- [01:18:59,020 - 01:19:01,020] not the surface of a two-dimensional sphere,
+- [01:19:01,020 - 01:19:04,020] but the surface of a three-dimensional sphere.
+- [01:19:04,020 - 01:19:07,020] It could be hyperbolic,
+- [01:19:07,020 - 01:19:11,020] which is a kind of space which is infinite and negatively curved,
+- [01:19:11,020 - 01:19:13,020] quite the opposite of a sphere.
+- [01:19:13,020 - 01:19:15,020] But we're not going to do either of those tonight.
+- [01:19:15,020 - 01:19:20,020] We're going to assume that space is just Euclidean space.
+- [01:19:20,020 - 01:19:24,020] Now, if space is just ordinary Euclidean space,
+- [01:19:24,020 - 01:19:27,020] why are we talking about cosmology?
+- [01:19:27,020 - 01:19:28,020] Why aren't we just talking about
+- [01:19:28,020 - 01:19:29,020] ordinary Euclidean space?
+- [01:19:29,020 - 01:19:32,020] Well, we want to be talking about space-time.
+- [01:19:32,020 - 01:19:34,020] We want to be talking about space-time,
+- [01:19:34,020 - 01:19:37,020] and the space-time we're going to talk about,
+- [01:19:37,020 - 01:19:45,020] what's the space-time analog of Euclidean space?
+- [01:19:45,020 - 01:19:46,020] You know what it's called?
+- [01:19:46,020 - 01:19:47,020] Minkowski space.
+- [01:19:47,020 - 01:19:49,020] Minkowski space, right.
+- [01:19:49,020 - 01:19:52,020] We're not going to be talking about Minkowski space.
+- [01:19:52,020 - 01:19:54,020] We're going to be talking about a space
+- [01:19:54,020 - 01:19:57,020] which is more complicated, an expanding space.
+- [01:19:57,020 - 01:19:58,020] But if you want to think about it,
+- [01:19:58,020 - 01:20:04,020] you know, the usual picture for thinking about
+- [01:20:04,020 - 01:20:09,020] an expanding closed space is to go down one dimension,
+- [01:20:09,020 - 01:20:12,020] go down one dimension, view space as two-dimensional,
+- [01:20:12,020 - 01:20:16,020] and then think of it as a balloon blowing up,
+- [01:20:16,020 - 01:20:22,020] as a balloon blowing up with on the balloon little drawings,
+- [01:20:22,020 - 01:20:24,020] and those little drawings are galaxies,
+- [01:20:24,020 - 01:20:26,020] and as the balloon expands,
+- [01:20:26,020 - 01:20:27,020] the galaxies separate from each other.
+- [01:20:27,020 - 01:20:30,020] I did once try to show that to a class
+- [01:20:30,020 - 01:20:33,020] by getting a big balloon,
+- [01:20:33,020 - 01:20:36,020] it was one of these big, big things,
+- [01:20:36,020 - 01:20:38,020] and blow it up and blow it up,
+- [01:20:38,020 - 01:20:41,020] but before I did, I had marked it with this stuff,
+- [01:20:41,020 - 01:20:43,020] and then blew it up,
+- [01:20:43,020 - 01:20:46,020] which this was a bad mistake because it eats through rubber.
+- [01:20:46,020 - 01:20:48,020] Boom!
+- [01:20:48,020 - 01:20:50,020] We had a big bang in the room.
+- [01:20:53,020 - 01:20:56,020] Now, that's not so much about the space,
+- [01:20:56,020 - 01:21:01,020] that's not such a good idea for describing cosmology
+- [01:21:01,020 - 01:21:03,020] for one simple reason.
+- [01:21:03,020 - 01:21:07,020] The rubber molecules get thinned out,
+- [01:21:07,020 - 01:21:10,020] and so the properties of space,
+- [01:21:10,020 - 01:21:13,020] of a local patch of space,
+- [01:21:13,020 - 01:21:16,020] look like they're getting thinner and thinner.
+- [01:21:16,020 - 01:21:18,020] I mean, one of the consequences of that
+- [01:21:18,020 - 01:21:20,020] is the separation between the molecules
+- [01:21:20,020 - 01:21:25,020] eventually exceeds the radius of the molecular forces,
+- [01:21:25,020 - 01:21:27,020] and that, of course, is when the balloon breaks,
+- [01:21:27,020 - 01:21:31,020] not because I painted it with that stuff,
+- [01:21:31,020 - 01:21:33,020] but because the separation between molecules
+- [01:21:33,020 - 01:21:36,020] exceeds the forces, the attractive forces.
+- [01:21:36,020 - 01:21:39,020] So you have to add a little bit.
+- [01:21:39,020 - 01:21:42,020] You have to imagine you have a reservoir
+- [01:21:42,020 - 01:21:44,020] of rubber molecules,
+- [01:21:44,020 - 01:21:47,020] and as you blow up the balloon
+- [01:21:47,020 - 01:21:49,020] and increase its size,
+- [01:21:49,020 - 01:21:52,020] every time a space forms
+- [01:21:52,020 - 01:21:54,020] where the distance between molecules
+- [01:21:54,020 - 01:21:57,020] begins to exceed or get close
+- [01:21:57,020 - 01:21:59,020] to the distance characteristic
+- [01:21:59,020 - 01:22:02,020] of the molecular forces,
+- [01:22:02,020 - 01:22:04,020] add another molecule in.
+- [01:22:04,020 - 01:22:05,020] Add it out of your pocket.
+- [01:22:05,020 - 01:22:06,020] Keep doing it.
+- [01:22:06,020 - 01:22:08,020] And then, of course, you can make the balloon
+- [01:22:08,020 - 01:22:11,020] keep growing and growing and growing.
+- [01:22:11,020 - 01:22:15,020] So all of cosmology has that aspect to it
+- [01:22:15,020 - 01:22:20,020] that it's not that space is just expanding,
+- [01:22:20,020 - 01:22:23,020] but in a certain sense, it's being replenished.
+- [01:22:23,020 - 01:22:25,020] The sense in which it's being replenished
+- [01:22:25,020 - 01:22:28,020] is that the properties of a local region of space
+- [01:22:28,020 - 01:22:31,020] don't change as the space gets bigger and bigger.
+- [01:22:31,020 - 01:22:33,020] Space doesn't get thinned out,
+- [01:22:33,020 - 01:22:35,020] whatever the devil that would mean.
+- [01:22:35,020 - 01:22:37,020] I'm not sure what it would mean.
+- [01:22:40,020 - 01:22:41,020] Good.
+- [01:22:41,020 - 01:22:44,020] But we're not going to be doing closed and bounded space.
+- [01:22:44,020 - 01:22:47,020] If you wanted to do the kind of space we're talking about,
+- [01:22:47,020 - 01:22:52,020] what we want to imagine is an infinite flat sheet of rubber.
+- [01:22:52,020 - 01:22:57,020] Well, an infinite flat sheet might be a little bit too extreme.
+- [01:22:57,020 - 01:23:00,020] Let's just make it a very big flat sheet.
+- [01:23:00,020 - 01:23:04,020] We could imagine four people at the corners of the sheet,
+- [01:23:04,020 - 01:23:06,020] and they're pulling it out and causing it
+- [01:23:06,020 - 01:23:09,020] to uniformly expand with time.
+- [01:23:09,020 - 01:23:13,020] So the flat sheet grows.
+- [01:23:13,020 - 01:23:17,020] The separation between the molecules increases with time,
+- [01:23:17,020 - 01:23:21,020] and we replenish the molecules as it expands.
+- [01:23:21,020 - 01:23:26,020] The galaxies which are drawn on this surface separate
+- [01:23:26,020 - 01:23:29,020] because the geometry is growing,
+- [01:23:29,020 - 01:23:31,020] and it's time-dependent.
+- [01:23:31,020 - 01:23:35,020] We could say the distances between things is time-dependent
+- [01:23:35,020 - 01:23:40,020] because the space itself is stretching.
+- [01:23:40,020 - 01:23:43,020] All right, now, those words are nice words.
+- [01:23:43,020 - 01:23:45,020] Do they have mathematical meaning?
+- [01:23:45,020 - 01:23:47,020] Yes, they do have mathematical meaning.
+- [01:23:47,020 - 01:23:50,020] The mathematical meaning is through the metric.
+- [01:23:50,020 - 01:23:51,020] Through the metric.
+- [01:23:51,020 - 01:23:52,020] Through the metric of space,
+- [01:23:52,020 - 01:23:54,020] or the metric of space-time.
+- [01:23:54,020 - 01:24:04,020] So I'm going to write down a metric for you.
+- [01:24:04,020 - 01:24:07,020] Minus dt squared.
+- [01:24:07,020 - 01:24:12,020] This is ds squared equals minus dt squared.
+- [01:24:12,020 - 01:24:14,020] Now, if I were just writing Minkowski space,
+- [01:24:14,020 - 01:24:18,020] I would write plus dx squared.
+- [01:24:18,020 - 01:24:20,020] And dx squared here stands for dx squared
+- [01:24:20,020 - 01:24:21,020] plus dv squared,
+- [01:24:21,020 - 01:24:26,020] which I'm not going to write down in general.
+- [01:24:26,020 - 01:24:29,020] It would be minus dt squared plus dx squared.
+- [01:24:29,020 - 01:24:31,020] If you wanted to put some speeds of light in,
+- [01:24:31,020 - 01:24:34,020] you would put the speed of light in c squared,
+- [01:24:34,020 - 01:24:37,020] dt squared plus dx squared.
+- [01:24:37,020 - 01:24:39,020] But I'm not going to put in the speed of light.
+- [01:24:39,020 - 01:24:42,020] This would be the thing you would normally put in.
+- [01:24:42,020 - 01:24:45,020] But if space were expanding,
+- [01:24:45,020 - 01:24:49,020] you would put multiplying the space component of the metric.
+- [01:24:49,020 - 01:24:52,020] Let's call it dx i dx i.
+- [01:24:52,020 - 01:24:56,020] This stands for dx squared plus dy squared plus dz squared.
+- [01:24:56,020 - 01:24:59,020] We'll put what's called a scale factor,
+- [01:24:59,020 - 01:25:05,020] a, of t squared.
+- [01:25:05,020 - 01:25:08,020] You put a function there of time.
+- [01:25:08,020 - 01:25:14,020] Now, what's the distance between a pair of points
+- [01:25:14,020 - 01:25:18,020] separated by delta x,
+- [01:25:19,020 - 01:25:23,020] separated by distance delta x?
+- [01:25:23,020 - 01:25:28,020] What is the distance between them?
+- [01:25:28,020 - 01:25:30,020] Not separated by distance,
+- [01:25:30,020 - 01:25:34,020] separated by coordinate interval delta x.
+- [01:25:34,020 - 01:25:38,020] The distance between two such points is not just,
+- [01:25:38,020 - 01:25:40,020] or the square of the distance.
+- [01:25:40,020 - 01:25:43,020] Let's take the square of the distance between the two points.
+- [01:25:43,020 - 01:25:45,020] It's not delta x squared.
+- [01:25:45,020 - 01:25:48,020] It's delta x squared times a squared.
+- [01:25:48,020 - 01:25:51,020] The distance between neighboring points
+- [01:25:51,020 - 01:25:54,020] is a squared times dx squared.
+- [01:25:54,020 - 01:25:57,020] If it happens to be a fairly large interval,
+- [01:25:57,020 - 01:26:00,020] it'll be delta x, not dx.
+- [01:26:00,020 - 01:26:03,020] But the actual distance between the two points,
+- [01:26:03,020 - 01:26:07,020] let's call it d between point one and point two.
+- [01:26:07,020 - 01:26:11,020] Here's two points, one and point two.
+- [01:26:11,020 - 01:26:16,020] Each one characterized by a definite location on the x plane.
+- [01:26:16,020 - 01:26:18,020] Here's the x plane.
+- [01:26:18,020 - 01:26:21,020] x, y, whatever.
+- [01:26:21,020 - 01:26:24,020] Here's two points,
+- [01:26:24,020 - 01:26:28,020] and they're separated by a coordinate distance.
+- [01:26:28,020 - 01:26:31,020] Let's put them along the x axis.
+- [01:26:31,020 - 01:26:32,020] Delta x.
+- [01:26:32,020 - 01:26:36,020] How far are they really in proper distance?
+- [01:26:36,020 - 01:26:38,020] That's what the metric tells you.
+- [01:26:38,020 - 01:26:40,020] That's what metrics are for.
+- [01:26:40,020 - 01:26:47,020] And the answer is that the d is going to be delta x times a of t.
+- [01:26:48,020 - 01:27:07,300] In other words, if the two points are fixed in the plane, in the coordinate plane, and
+- [01:27:07,300 - 01:27:13,180] the plane is being blown up by this process of putting in more molecules, the two points
+- [01:27:13,180 - 01:27:19,240] will separate, and the distance between them will be whatever the delta x was times a of
+- [01:27:19,240 - 01:27:28,640] t. That much is, that's what a metric means. So this is not good old Minkowski space where
+- [01:27:28,640 - 01:27:35,140] the distance between two fixed points in coordinate space stays fixed. It's some kind of expanding
+- [01:27:35,140 - 01:27:40,920] version of space. Let's talk about the velocity between those two points. The velocity between
+- [01:27:40,920 - 01:27:42,680] those two points.
+- [01:27:42,680 - 01:27:47,240] Now holding the x's fixed, alright, so the two points in the plane are fixed, they don't
+- [01:27:47,240 - 01:27:57,240] change. What's the velocity between the two points? V12. Well that's just the time derivative
+- [01:27:57,240 - 01:28:04,640] of the distance between them, right? That's the time derivative. What's the time derivative
+- [01:28:04,640 - 01:28:11,000] of the distance between them? Well the x's are being kept fixed. So delta x, the difference
+- [01:28:11,000 - 01:28:12,500] of the x's are fixed.
+- [01:28:12,500 - 01:28:17,580] That's not time dependent. The thing that's time dependent is a. In case I haven't said
+- [01:28:17,580 - 01:28:24,100] it, a is called the scale factor. It's the scale factor which is time dependent. That's
+- [01:28:24,100 - 01:28:31,180] the thing we differentiate, and so the velocity is delta x times, let's call it a dot. Dot
+- [01:28:31,180 - 01:28:41,680] standing for time derivative. Now let's consider the relationship between the distance between
+- [01:28:41,680 - 01:28:42,500] the points.
+- [01:28:42,500 - 01:28:49,500] So the velocity between the points is given by the distance between the two points, but
+- [01:28:53,700 - 01:29:00,700] not quite. The velocity has a dot, the distance has a, and so there must be an a dot over
+- [01:29:02,240 - 01:29:09,240] a. A dot of t over a. The velocity has an a dot, the distance has an a, but otherwise
+- [01:29:10,780 - 01:29:12,380] they're the same.
+- [01:29:12,380 - 01:29:20,620] So velocity is distance times a dot over a. Now a dot over a has a name. It's called
+- [01:29:20,620 - 01:29:31,260] the Hubble constant. It's called h. Velocity equals distance times Hubble constant. Why
+- [01:29:31,260 - 01:29:40,060] do we call it a constant? Not a of a, a of t. If a is a function of time, and a dot can
+- [01:29:40,060 - 01:29:41,620] be a function of time. In general, the rate of time is the rate of the distance, and that's
+- [01:29:41,620 - 01:29:45,560] a constant. In general, the ratio can be a function of time. Why do we call, what do
+- [01:29:45,560 - 01:29:51,180] we mean when we say that the Hubble constant is a constant? We don't mean that it's a constant
+- [01:29:51,180 - 01:29:56,340] with respect to time. We mean it's a constant that don't, doesn't depend on the pair of
+- [01:29:56,340 - 01:30:03,340] points that you chose. For any pair of points at a given, at a given instant of time, the
+- [01:30:04,600 - 01:30:10,860] relation between velocity and distance between them is common to all pairs of points. And,
+- [01:30:10,860 - 01:30:17,180] a ratio between velocity and distance is given by a dot over a, which doesn't depend
+- [01:30:17,180 - 01:30:21,920] on position, but does depend on time. So the Hubble constant is kind of a little bit of
+- [01:30:21,920 - 01:30:31,500] a misnomer. It's certainly not constant with respect to time in general, but it is independent
+- [01:30:31,500 - 01:30:37,480] of the pair of points that you're talking about. This, of course, is Hubble's law, Hubble's
+- [01:30:37,480 - 01:30:39,800] law of expansion, velocity.
+- [01:30:40,860 - 01:30:47,860] It's amazing that that wasn't discovered earlier by a theorist in particular who was
+- [01:30:48,580 - 01:30:55,580] just thinking about this. And it wound up getting discovered by looking through telescopes.
+- [01:30:55,900 - 01:31:02,900] In fact, I'm not even sure it wasn't discovered by somebody else. Somebody may correct me.
+- [01:31:03,460 - 01:31:09,180] I may wind up being corrected that it was discovered by somebody else, but I don't know.
+- [01:31:09,180 - 01:31:10,620] Okay, so that's Hubble's law.
+- [01:31:10,860 - 01:31:18,580] You derived that using infinitesimals, dt, and etc.?
+- [01:31:18,580 - 01:31:20,280] Yeah, I just differentiated.
+- [01:31:20,280 - 01:31:28,300] But if you're talking about distance between galaxies, then you have to ask whose t is it?
+- [01:31:29,220 - 01:31:31,380] Well, all right, there is a...
+- [01:31:31,380 - 01:31:40,580] Right. In particular, if you're looking at very, very distant galaxies, you're looking at a very, very distant galaxy.
+- [01:31:40,580 - 01:31:40,840] Right. In particular, if you're looking at very, very distant galaxies, you're looking at a very, very distant galaxy.
+- [01:31:40,860 - 01:31:42,780] Very distant galaxies, when you look back at them,
+- [01:31:42,780 - 01:31:48,920] you're looking back at them at a time which is much earlier than your local time.
+- [01:31:49,800 - 01:31:55,420] And the question is then, should you use the Hubble non-constant then or now?
+- [01:31:55,940 - 01:31:58,700] Well, the answer is a combination of both.
+- [01:31:59,240 - 01:32:04,100] But when, but um...
+- [01:32:10,060 - 01:32:10,760] This equation is the...
+- [01:32:10,760 - 01:32:10,820] Beautiful.
+- [01:32:10,820 - 01:32:10,840] ...okay, I've got to get up.
+- [01:32:10,840 - 01:32:13,080] is at an instant of time.
+- [01:32:13,080 - 01:32:16,160] It does not correspond to what you see when you look back.
+- [01:32:16,160 - 01:32:18,080] Let's talk about it.
+- [01:32:18,080 - 01:32:20,440] Since you raised it, let's talk about it.
+- [01:32:20,440 - 01:32:22,360] Let's draw a space-time diagram.
+- [01:32:22,360 - 01:32:23,260] Here's time.
+- [01:32:23,260 - 01:32:25,400] Here's space.
+- [01:32:25,400 - 01:32:28,420] Now, here's the two points, and they're
+- [01:32:28,420 - 01:32:31,580] maintaining the same coordinate positions.
+- [01:32:31,580 - 01:32:35,080] Nevertheless, the space is expanding between them.
+- [01:32:35,080 - 01:32:37,480] At a fixed instant of time, they're
+- [01:32:37,480 - 01:32:42,340] separating with a velocity which is related to the distance
+- [01:32:42,340 - 01:32:46,360] by the Hubble constant at that instant of time.
+- [01:32:46,360 - 01:32:49,720] But that's not what they see when they look at each other.
+- [01:32:49,720 - 01:32:57,280] What they see when they look at each other is they look back,
+- [01:32:57,280 - 01:33:01,720] and they see one another at an earlier time.
+- [01:33:01,720 - 01:33:06,700] So this fellow over here sees this one moving away from him,
+- [01:33:06,700 - 01:33:07,460] not with the velocity.
+- [01:33:07,460 - 01:33:09,580] And the velocity that he has at the same instant of time,
+- [01:33:09,580 - 01:33:12,460] but at the velocity that he had at an earlier time.
+- [01:33:12,460 - 01:33:15,380] And so you have to use a more complicated formula
+- [01:33:15,380 - 01:33:18,220] if you want to answer the question of what somebody sees.
+- [01:33:18,220 - 01:33:21,680] But this is what is true at an instant of time.
+- [01:33:21,680 - 01:33:25,160] At an instant of time, this is true.
+- [01:33:25,160 - 01:33:31,700] Now, the fact that it's true may not
+- [01:33:31,700 - 01:33:35,520] be as interesting as what you can actually detect
+- [01:33:35,520 - 01:33:36,680] by looking back.
+- [01:33:36,680 - 01:33:37,400] But nevertheless.
+- [01:33:37,460 - 01:33:39,880] This is the correct formula.
+- [01:33:39,880 - 01:33:40,380] OK.
+- [01:33:40,380 - 01:33:44,140] Now, can the Hubble constant be constant?
+- [01:33:44,140 - 01:33:47,960] Is it something that is capable of really just being a number
+- [01:33:47,960 - 01:33:49,380] and not changing with time?
+- [01:33:49,380 - 01:33:50,840] Let's ask what it says.
+- [01:33:50,840 - 01:33:51,300] Oh, no.
+- [01:33:51,300 - 01:33:54,000] Before we do, let's do something else.
+- [01:33:54,000 - 01:33:55,160] Let's do something else.
+- [01:33:55,160 - 01:33:59,420] If this is true, that at any given instant of time,
+- [01:33:59,420 - 01:34:02,440] at any given instant of time, that the velocity is
+- [01:34:02,440 - 01:34:04,680] the distance times the Hubble constant,
+- [01:34:04,680 - 01:34:07,320] and space is infinite in every direction, and so
+- [01:34:07,320 - 01:34:12,200] forth, then there is a distance scale which is large enough
+- [01:34:12,200 - 01:34:15,360] that things are moving away from you with the speed of light.
+- [01:34:15,360 - 01:34:17,440] In fact, there's a distance which is large enough
+- [01:34:17,440 - 01:34:20,060] that they're moving away from you with 10 times the speed
+- [01:34:20,060 - 01:34:22,080] of light.
+- [01:34:22,080 - 01:34:24,940] This is not a mistake.
+- [01:34:24,940 - 01:34:27,940] This is a true statement that in cosmology,
+- [01:34:27,940 - 01:34:31,460] in an expanding universe like this, two points,
+- [01:34:31,460 - 01:34:35,240] two material points, can be moving away from each other
+- [01:34:35,240 - 01:34:37,300] with greater than the speed of light.
+- [01:34:37,320 - 01:34:41,440] They can't pass each other with greater than the speed of light.
+- [01:34:41,440 - 01:34:44,780] If something goes by you, it can't go by you faster
+- [01:34:44,780 - 01:34:46,320] than the speed of light.
+- [01:34:46,320 - 01:34:50,500] But two things sufficiently far apart can.
+- [01:34:50,500 - 01:34:55,500] And the relationship then between the Hubble constant
+- [01:34:55,500 - 01:34:57,580] and the distance scale in order that you
+- [01:34:57,580 - 01:34:59,820] are at the speed of light, you would just
+- [01:34:59,820 - 01:35:02,000] get by putting in c here.
+- [01:35:02,000 - 01:35:04,840] c equals distance times h.
+- [01:35:04,840 - 01:35:07,320] And what it tells you, c meaning the speed of light.
+- [01:35:07,320 - 01:35:10,140] Not some arbitrary constant.
+- [01:35:10,140 - 01:35:16,240] Let's set the speed of light to 1, as we usually do.
+- [01:35:16,240 - 01:35:21,440] And then it would say, at a distance equal to 1
+- [01:35:21,440 - 01:35:26,320] over the Hubble constant at that instant of time,
+- [01:35:26,320 - 01:35:30,260] things, in fact, are moving away from you at the speed of light.
+- [01:35:30,260 - 01:35:35,480] Now, in most instances, most cosmologies,
+- [01:35:35,480 - 01:35:37,200] I don't mean most cosmologies that we use
+- [01:35:37,200 - 01:35:39,080] today, I mean in most cosmologies that
+- [01:35:39,080 - 01:35:43,320] were studied in the past, the Hubble constant
+- [01:35:43,320 - 01:35:46,220] decreased with time.
+- [01:35:46,220 - 01:35:48,500] The Hubble constant decreased with time.
+- [01:35:48,500 - 01:35:50,040] As time went on, the Hubble constant
+- [01:35:50,040 - 01:35:54,720] got smaller and smaller, which meant that the distance out
+- [01:35:54,720 - 01:35:57,160] to where things are moving with the speed of light relative
+- [01:35:57,160 - 01:36:00,620] to you gets larger and larger with time.
+- [01:36:00,620 - 01:36:04,780] You might think, if there's a galaxy out there which
+- [01:36:04,780 - 01:36:07,060] is moving away from you with the speed of light,
+- [01:36:07,060 - 01:36:10,680] or a little more, that you can never see it.
+- [01:36:10,680 - 01:36:12,860] But if the Hubble constant is decreasing,
+- [01:36:12,860 - 01:36:16,280] you wait a little while, and you find out
+- [01:36:16,280 - 01:36:21,860] that the distance to which you can see is larger.
+- [01:36:21,860 - 01:36:23,900] In other words, the distance to where things are moving
+- [01:36:23,900 - 01:36:26,740] with the speed of light is larger.
+- [01:36:26,740 - 01:36:33,180] And so in most cosmologies, older cosmologies,
+- [01:36:33,180 - 01:36:36,860] it was the case that there was no way
+- [01:36:36,860 - 01:36:40,580] that there was no bound on what you could eventually see.
+- [01:36:40,580 - 01:36:42,920] The Hubble constant would get smaller and smaller and smaller,
+- [01:36:42,920 - 01:36:45,740] so the distance out to where the things were moving
+- [01:36:45,740 - 01:36:48,080] with the speed of light would get larger and larger,
+- [01:36:48,080 - 01:36:51,180] and you would eventually see them.
+- [01:36:51,180 - 01:36:53,380] Modern cosmology, that's not the case.
+- [01:36:53,380 - 01:36:57,480] Modern cosmology, the Hubble constant,
+- [01:36:57,480 - 01:37:01,360] or the ultimate Hubble constant, the ultimate Hubble constant,
+- [01:37:01,360 - 01:37:04,660] meaning ultimate in the future, appears
+- [01:37:04,660 - 01:37:06,420] as if it's becoming constant.
+- [01:37:06,420 - 01:37:06,860] Truly constant.
+- [01:37:06,860 - 01:37:09,820] Constant with time.
+- [01:37:09,820 - 01:37:11,200] That's an observational fact.
+- [01:37:15,500 - 01:37:17,560] I'm not going to tell you how we're not getting
+- [01:37:17,560 - 01:37:19,600] into observational cosmology here.
+- [01:37:22,100 - 01:37:24,580] But there is good evidence that we live, very strong evidence,
+- [01:37:24,580 - 01:37:28,480] that we live in a universe where the Hubble constant is
+- [01:37:28,480 - 01:37:31,720] tending to a constant, a true constant.
+- [01:37:31,720 - 01:37:34,300] So let's investigate the consequences
+- [01:37:34,300 - 01:37:36,420] of a universe in which the Hubble
+- [01:37:36,420 - 01:37:39,980] constant is constant and ask what it's like.
+- [01:37:42,500 - 01:37:46,760] If it is the case that the Hubble constant is a constant,
+- [01:37:46,760 - 01:37:50,220] then there is some universal distance out
+- [01:37:50,220 - 01:37:53,180] to which, when you look out that distance,
+- [01:37:53,180 - 01:37:55,760] things will be moving relative to you with the speed of light.
+- [01:37:55,760 - 01:37:59,100] And that distance won't change with time.
+- [01:37:59,100 - 01:38:01,900] So let's investigate that possibility.
+- [01:38:01,900 - 01:38:02,800] What does it say?
+- [01:38:02,800 - 01:38:04,460] What does it mathematically say?
+- [01:38:04,460 - 01:38:06,420] We're just going to spend a couple of minutes out of time.
+- [01:38:06,420 - 01:38:08,960] We'll talk about it tonight and then continue next time.
+- [01:38:08,960 - 01:38:13,240] What it says, the Hubble constant is a dot over a.
+- [01:38:13,240 - 01:38:17,660] a dot of t over a of t equals h.
+- [01:38:17,660 - 01:38:20,180] And that's constant now.
+- [01:38:20,180 - 01:38:23,360] Now h is just a numerical constant.
+- [01:38:23,360 - 01:38:24,260] It has some units.
+- [01:38:24,260 - 01:38:25,540] What are its units?
+- [01:38:25,540 - 01:38:26,420] One over time.
+- [01:38:26,420 - 01:38:28,960] One over time, right?
+- [01:38:28,960 - 01:38:30,400] Right.
+- [01:38:30,400 - 01:38:32,740] So when you specify the Hubble constant,
+- [01:38:32,740 - 01:38:34,500] you are specifying a time scale.
+- [01:38:34,500 - 01:38:35,000] Right.
+- [01:38:35,000 - 01:38:35,500] Right.
+- [01:38:35,500 - 01:38:36,000] Right.
+- [01:38:36,000 - 01:38:36,420] Right.
+- [01:38:36,420 - 01:38:38,960] In our universe, the relevant time scale
+- [01:38:38,960 - 01:38:43,460] is about 15 billion years.
+- [01:38:43,460 - 01:38:47,220] So the Hubble constant is a very small number.
+- [01:38:47,220 - 01:38:48,960] But nevertheless, it appears to be constant.
+- [01:38:48,960 - 01:38:50,720] Let's take it to be constant.
+- [01:38:50,720 - 01:38:52,540] That says, let's rewrite this equation.
+- [01:38:52,540 - 01:38:58,660] It says dA by dt is equal to h times a.
+- [01:38:58,660 - 01:39:01,420] Another way of saying that is that the rate of change
+- [01:39:01,420 - 01:39:04,480] of something is proportional to the thing itself.
+- [01:39:04,480 - 01:39:06,000] And what is the solution of an equation like that?
+- [01:39:06,000 - 01:39:07,200] Exponential.
+- [01:39:07,200 - 01:39:08,920] Exponential.
+- [01:39:08,920 - 01:39:10,320] Exponential.
+- [01:39:10,320 - 01:39:16,040] A equals A at some fixed time.
+- [01:39:16,040 - 01:39:17,540] Doesn't matter what time.
+- [01:39:17,540 - 01:39:19,280] It's not even important.
+- [01:39:19,280 - 01:39:20,740] Times e to the ht.
+- [01:39:23,300 - 01:39:26,780] The scale factor increases exponentially.
+- [01:39:26,780 - 01:39:31,240] The distance between pairs of points increases exponentially.
+- [01:39:31,240 - 01:39:33,440] And that's called an inflating universe.
+- [01:39:33,440 - 01:39:34,080] So that's called.
+- [01:39:34,080 - 01:39:34,580] . .
+- [01:39:34,580 - 01:39:35,080] . .
+- [01:39:35,080 - 01:39:35,580] . . .
+- [01:39:35,580 - 01:39:36,080] . . .
+- [01:39:36,080 - 01:39:36,580] . . .
+- [01:39:36,580 - 01:39:37,820] A space with this property.
+- [01:39:37,820 - 01:39:45,120] A space with this property with A being of the form e to the 2ht.
+- [01:39:45,120 - 01:39:46,180] Why did I put a 2 there?
+- [01:39:46,180 - 01:39:50,260] .
+- [01:39:50,260 - 01:39:51,100] It's squared.
+- [01:39:51,100 - 01:39:52,460] It is squared.
+- [01:39:52,460 - 01:39:54,140] A is e to the ht.
+- [01:39:54,140 - 01:39:56,420] A squared is e to the 2ht.
+- [01:39:56,420 - 01:39:58,260] This space has a name.
+- [01:39:58,260 - 01:39:59,920] It's called a de Sitter space.
+- [01:39:59,920 - 01:40:05,380] De Sitter space, through the mathematical astronomer,
+- [01:40:05,380 - 01:40:08,060] physicist, who first discovered it.
+- [01:40:08,060 - 01:40:08,960] De Sitter.
+- [01:40:08,960 - 01:40:11,240] Willem, Wilhelm De Sitter?
+- [01:40:11,240 - 01:40:25,140] Deutchman.
+- [01:40:25,140 - 01:40:26,360] Small d,
+- [01:40:26,360 - 01:40:30,240] small e, space, Sitter.
+- [01:40:30,240 - 01:40:30,780] . .
+- [01:40:30,780 - 01:40:31,540] Exponentially expanding.
+- [01:40:31,540 - 01:40:33,120] Exponentially expanding.
+- [01:40:33,120 - 01:40:33,980] Exponentially expanding.
+- [01:40:33,980 - 01:40:35,220] Exponentially expanding.
+- [01:40:35,220 - 01:40:44,700] All right, I think we're going to stop now.
+- [01:40:44,700 - 01:40:48,980] What I'm going to show you next time is that the sitter spaces,
+- [01:40:49,100 - 01:40:51,700] spaces with this property, have event horizons.
+- [01:40:52,420 - 01:40:56,920] Event horizons which are in many respects similar to black hole horizons,
+- [01:40:58,080 - 01:41:01,080] but they're almost like inside-out horizons.
+- [01:41:01,080 - 01:41:05,340] When you think about a black hole, being outside the black hole
+- [01:41:05,340 - 01:41:10,920] and looking at the horizon, you see a region where things on the inside
+- [01:41:10,920 - 01:41:14,060] are moving away from you faster than the speed of light, roughly.
+- [01:41:14,500 - 01:41:15,700] That's why they can't get out.
+- [01:41:17,100 - 01:41:20,240] The horizon of the sitter space is quite the opposite.
+- [01:41:20,500 - 01:41:21,620] It's exactly the opposite.
+- [01:41:22,180 - 01:41:25,260] A region out there at a large enough distance
+- [01:41:25,260 - 01:41:28,600] where things are moving away from you with the speed of light,
+- [01:41:28,860 - 01:41:30,900] you're kind of on the inside of it,
+- [01:41:31,080 - 01:41:34,240] and things are moving away from you with the speed of light,
+- [01:41:35,240 - 01:41:39,340] forever and ever, and you will never catch up with them.
+- [01:41:40,280 - 01:41:42,920] Passing through that horizon out there,
+- [01:41:43,000 - 01:41:44,660] where things are moving with the speed of light,
+- [01:41:45,260 - 01:41:50,800] that's very similar to passing into the horizon of a black hole.
+- [01:41:51,540 - 01:41:53,860] The only difference is, as far as we know,
+- [01:41:54,240 - 01:41:57,600] the sitter space does not evaporate like a black hole does.
+- [01:41:59,940 - 01:42:01,060] So we'll talk about this.
+- [01:42:01,080 - 01:42:02,880] The sitter space, we'll talk about its horizon,
+- [01:42:03,820 - 01:42:07,680] and we'll talk about why it creates a lot of confusion
+- [01:42:07,680 - 01:42:10,660] and interest in modern cosmology.
+- [01:42:12,500 - 01:42:15,820] For more, please visit us at stanford.edu.
