@@ -1,0 +1,1968 @@
+# Transcript
+
+Source: supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/149 - Supersymmetry & Grand Unification： Lecture 5 [HbGrH1ES8Ok].mp4
+
+- [00:00:00,000 - 00:00:06,480] Stanford University.
+- [00:00:06,480 - 00:00:11,200] All right, let's move on to supersymmetry.
+- [00:00:11,200 - 00:00:14,960] Now, I have struggled to
+- [00:00:14,960 - 00:00:18,720] find a way to explain supersymmetry.
+- [00:00:18,720 - 00:00:23,760] And I took it as a challenge.
+- [00:00:23,760 - 00:00:26,700] My own opinion from looking through my
+- [00:00:26,700 - 00:00:29,640] notes right now is that I have
+- [00:00:29,640 - 00:00:33,980] failed that challenge.
+- [00:00:33,980 - 00:00:37,880] But I can only do my best.
+- [00:00:37,880 - 00:00:40,990] Supersymmetry is probably the most
+- [00:00:40,990 - 00:00:44,100] abstract construction in all of physics.
+- [00:00:44,100 - 00:00:51,180] It is incredibly abstract.
+- [00:00:51,180 - 00:00:58,519] Using among other things, these bizarre Grassman numbers,
+- [00:00:58,519 - 00:00:59,519] which aren't numbers at all.
+- [00:00:59,519 - 00:00:59,620] I'm not going to go into that.
+- [00:00:59,640 - 00:01:03,330] But which are objects which do
+- [00:01:03,330 - 00:01:07,020] some things that numbers can't do.
+- [00:01:07,020 - 00:01:11,120] On the other hand, supersymmetry is full of them.
+- [00:01:11,120 - 00:01:13,640] And we need to understand them a little bit.
+- [00:01:13,640 - 00:01:15,680] So I told you about Grassman numbers last time.
+- [00:01:15,680 - 00:01:18,060] Let me just review very quickly.
+- [00:01:18,060 - 00:01:21,280] And then I want to tell you about supersymmetry itself.
+- [00:01:21,280 - 00:01:24,990] Supersymmetry is a form of symmetry,
+- [00:01:24,990 - 00:01:28,700] similar in some respects to other symmetries.
+- [00:01:28,700 - 00:01:29,520] Other symmetries might be
+- [00:01:29,520 - 00:01:32,900] rotation symmetry, translation symmetry,
+- [00:01:32,900 - 00:01:36,280] the symmetries of spacetime.
+- [00:01:36,280 - 00:01:38,810] Supersymmetry is a symmetry of spacetime,
+- [00:01:38,810 - 00:01:41,340] but a very, very bizarre one.
+- [00:01:41,340 - 00:01:45,150] And in order to make it a supersymmetry
+- [00:01:45,150 - 00:01:48,960] of spacetime, one has to expand the notion of
+- [00:01:48,960 - 00:01:51,480] four-dimensional spacetime to something
+- [00:01:51,480 - 00:01:54,000] radically new, really strangely new.
+- [00:01:54,000 - 00:01:56,199] It's that strange newness of this new kind
+- [00:01:56,199 - 00:01:58,399] of symmetry that I want to talk about today.
+- [00:01:58,399 - 00:01:59,399] Okay.
+- [00:01:59,400 - 00:02:02,020] Let's talk about Grassman numbers.
+- [00:02:02,020 - 00:02:07,580] Grassman numbers are mathematical constructions.
+- [00:02:07,580 - 00:02:09,380] They can be represented by matrices,
+- [00:02:09,380 - 00:02:11,180] but it doesn't help very much.
+- [00:02:11,180 - 00:02:12,520] All right.
+- [00:02:12,520 - 00:02:16,550] So I will indicate them sometimes by
+- [00:02:16,550 - 00:02:20,580] epsilon, sometimes by theta, usually by Greek numbers.
+- [00:02:20,580 - 00:02:24,080] And there may be several of them in a problem.
+- [00:02:24,080 - 00:02:26,160] So let's label them epsilon sub i.
+- [00:02:26,160 - 00:02:27,200] Sometimes, when there's an even number, there's a problem.
+- [00:02:27,200 - 00:02:27,520] So let's label them epsilon sub i.
+- [00:02:27,520 - 00:02:28,080] Sometimes, when there's an even number, there's a problem.
+- [00:02:28,080 - 00:02:29,240] Sometimes, when there's an even number, there's a problem.
+- [00:02:29,240 - 00:02:30,940] They are small number, and everyone means Mario.
+- [00:02:30,940 - 00:02:32,290] We say, like in a ray
+- [00:02:32,290 - 00:02:33,640] of dawn, they're something the balance.
+- [00:02:33,640 - 00:02:35,800] They're something that is equal to Не.
+- [00:02:35,800 - 00:02:38,120] And so we can change these numbers.
+- [00:02:38,120 - 00:02:40,040] We can bring them together, but it's
+- [00:02:40,040 - 00:02:41,960] not essential that we put them down.
+- [00:02:41,960 - 00:02:43,820] Then we can put them down again and again.
+- [00:02:43,820 - 00:02:46,330] Everywhere on this here picture you are won't
+- [00:02:46,330 - 00:02:48,840] go through that newness of this new amarition.
+- [00:02:48,840 - 00:02:51,390] Next month, then, we're going to have a game
+- [00:02:51,390 - 00:02:53,940] I'd like to encourage you to warm up slowly
+- [00:02:53,940 - 00:02:55,960] to each of the things that we're talking about.
+- [00:02:55,960 - 00:02:57,340] One way to do this is to
+- [00:02:57,340 - 00:02:58,720] pop some of this mäp també, neветė and
+- [00:02:58,720 - 00:03:01,840] right? If there's an even number of
+- [00:03:01,840 - 00:03:04,960] them, it's often the case that you'll group
+- [00:03:04,960 - 00:03:07,480] them in pairs and make complex
+- [00:03:07,480 - 00:03:10,000] combinations out of them. So for example,
+- [00:03:10,000 - 00:03:12,490] if there were only two in your
+- [00:03:12,490 - 00:03:14,980] problem, if there were only two Grassman numbers,
+- [00:03:14,980 - 00:03:18,210] you could call them epsilon 1 and
+- [00:03:18,210 - 00:03:21,440] epsilon 2, or you could call them epsilon
+- [00:03:21,440 - 00:03:24,700] and epsilon bar. In my notation
+- [00:03:24,700 - 00:03:27,960] tonight, the bar stands for complex conjugate.
+- [00:03:27,960 - 00:03:30,770] That's a common notation for complex conjugate,
+- [00:03:30,770 - 00:03:33,580] is to put a bar on top of
+- [00:03:33,580 - 00:03:38,870] things, similar to star. Alright? So
+- [00:03:38,870 - 00:03:44,160] there are these Grassman numbers, comma, not
+- [00:03:44,160 - 00:03:46,390] times, there are these Grassman numbers
+- [00:03:46,390 - 00:03:48,620] which have the odd property that they
+- [00:03:48,620 - 00:03:52,570] anti-commute. The square of any one of them
+- [00:03:52,570 - 00:03:56,520] is 0. It is not itself 0, but the
+- [00:03:56,520 - 00:03:57,920] square of any one of them is 0.
+- [00:03:57,960 - 00:04:01,380] And epsilon 1 times epsilon 2 is
+- [00:04:01,380 - 00:04:04,800] minus epsilon 2 times epsilon 1. We'll come
+- [00:04:04,800 - 00:04:07,440] back to that. In a Grassman
+- [00:04:07,440 - 00:04:10,080] algebra, there are first of all these
+- [00:04:10,080 - 00:04:13,120] anti-commuting Grassman numbers, and we'll
+- [00:04:13,120 - 00:04:16,160] call those things odd. They
+- [00:04:16,160 - 00:04:19,839] certainly are odd, but they're odd in
+- [00:04:19,839 - 00:04:23,520] the sense which is mathematical also, odd
+- [00:04:23,520 - 00:04:24,760] versus even.
+- [00:04:24,760 - 00:04:27,880] The other kind of numbers in such a
+- [00:04:27,960 - 00:04:31,520] set up are ordinary numbers. Let's just
+- [00:04:31,520 - 00:04:35,080] call them n for number. These are not
+- [00:04:35,080 - 00:04:38,719] Grassman numbers, they're numbers like 7, 3, minus
+- [00:04:38,719 - 00:04:42,359] 4, x plus i, y, and they can be
+- [00:04:42,359 - 00:04:47,519] complex, and they're ordinary numbers, n,
+- [00:04:47,519 - 00:04:52,679] and those are called even. Even elements
+- [00:04:52,679 - 00:04:55,109] of the Grassman algebra and odd elements
+- [00:04:55,109 - 00:04:57,539] of the Grassman algebra. The rule is,
+- [00:04:57,540 - 00:05:01,530] an odd times an odd, in other words
+- [00:05:01,530 - 00:05:05,520] the product of two Grassman numbers, is an
+- [00:05:05,520 - 00:05:10,080] even element. That means it commutes with
+- [00:05:10,080 - 00:05:14,640] other things. An odd times an even, what
+- [00:05:14,640 - 00:05:16,620] did I say? Did I say odd times odd is
+- [00:05:16,620 - 00:05:18,600] even? I hope I did. Odd times odd is even,
+- [00:05:18,600 - 00:05:22,500] odd times even is odd,
+- [00:05:22,500 - 00:05:26,400] and even times even is even.
+- [00:05:26,400 - 00:05:27,400] Okay.
+- [00:05:27,400 - 00:05:27,500] Okay.
+- [00:05:27,500 - 00:05:27,540] Okay.
+- [00:05:27,540 - 00:05:30,660] So for example, what that
+- [00:05:30,660 - 00:05:33,780] means, odd Grassman numbers always anticommute.
+- [00:05:33,780 - 00:05:36,670] Epsilon with epsilon, these don't have to be
+- [00:05:36,670 - 00:05:39,560] the same, they could be epsilon i with
+- [00:05:39,560 - 00:05:44,300] epsilon j, they anticommute. This means epsilon i,
+- [00:05:44,300 - 00:05:49,040] epsilon j, plus epsilon j, epsilon i is
+- [00:05:49,040 - 00:05:53,270] equal to zero. It also means that every
+- [00:05:53,270 - 00:05:57,500] epsilon squared is equal to zero, because the anticommutator
+- [00:05:57,500 - 00:06:02,330] of something with itself is just its square. Alright,
+- [00:06:02,330 - 00:06:07,160] so these are the odd elements. The even elements
+- [00:06:07,160 - 00:06:12,420] commute, let's say n m for two numbers equals
+- [00:06:12,420 - 00:06:17,680] zero. This means n times m equals m times n.
+- [00:06:17,680 - 00:06:22,520] And the convention is that even
+- [00:06:22,520 - 00:06:27,360] elements and odd elements also commute.
+- [00:06:27,500 - 00:06:32,330] So epsilon times n is n times epsilon.
+- [00:06:32,330 - 00:06:37,160] The only anticommuters are a pair of epsilons.
+- [00:06:37,160 - 00:06:41,160] Okay. So that's the oddness
+- [00:06:41,160 - 00:06:45,160] and evenness of Grassman numbers. Yeah.
+- [00:06:45,160 - 00:06:47,660] Are you making a distinction between Grassman algebra
+- [00:06:47,660 - 00:06:50,160] and numbers, or is it one and the same?
+- [00:06:50,160 - 00:06:53,760] Well, the elements of the Grassman algebra are the Grassman
+- [00:06:53,760 - 00:06:57,360] numbers. Right. So I'm only making the numbers equal to zero.
+- [00:06:57,360 - 00:07:02,360] I'm making the distinction between, you know, yeah. The
+- [00:07:02,360 - 00:07:07,360] things which you act on are the Grassman numbers.
+- [00:07:07,360 - 00:07:12,360] The rules are the algebra. Okay. Now,
+- [00:07:12,360 - 00:07:17,360] there's Grassman algebra, which we've stated over here.
+- [00:07:17,360 - 00:07:21,360] There are, there's the theory of functions of Grassman
+- [00:07:21,360 - 00:07:25,360] variables. Okay. What is a function of a Grassman variable?
+- [00:07:27,360 - 00:07:32,360] Let's say a function of one Grassman variable. Well, one way
+- [00:07:32,360 - 00:07:37,360] to express that function is as a power series in epsilon.
+- [00:07:37,360 - 00:07:41,860] So it'll be some a, which is independent of epsilon. Incidentally,
+- [00:07:41,860 - 00:07:46,360] a could either be a Grassman number or a non-Grassman number,
+- [00:07:46,360 - 00:07:49,860] but it doesn't depend on epsilon. We're thinking
+- [00:07:49,860 - 00:07:53,360] about functions of a particular Grassman element, epsilon.
+- [00:07:53,360 - 00:07:55,360] a plus b times epsilon.
+- [00:07:55,360 - 00:07:57,360] a plus b times epsilon.
+- [00:07:57,360 - 00:08:00,360] But nothing after that, because
+- [00:08:00,360 - 00:08:03,360] epsilon squared is equal to zero.
+- [00:08:03,360 - 00:08:05,860] Now, if there's more than one Grassman variable,
+- [00:08:05,860 - 00:08:08,360] you might have a function of several of them.
+- [00:08:08,360 - 00:08:12,360] Let's say two of them. Either epsilon one
+- [00:08:12,360 - 00:08:16,360] and epsilon two or epsilon and epsilon bar.
+- [00:08:16,360 - 00:08:20,860] In that case, you would have function of epsilon one and
+- [00:08:20,860 - 00:08:25,360] epsilon two would begin with something which is independent of the epsilons.
+- [00:08:25,360 - 00:08:27,360] Then,
+- [00:08:27,360 - 00:08:31,360] there could be, let's call it b
+- [00:08:31,360 - 00:08:35,360] one epsilon one plus b two epsilon two,
+- [00:08:35,360 - 00:08:43,360] and then some c epsilon one epsilon two.
+- [00:08:43,360 - 00:08:46,360] Nothing after that.
+- [00:08:46,360 - 00:08:48,860] Why not? Because if you multiply it by
+- [00:08:48,860 - 00:08:51,360] another one of the epsilons, you get zero again.
+- [00:08:51,360 - 00:08:54,360] That's if there are only two epsilons in the problem.
+- [00:08:54,360 - 00:08:55,860] You could also write this in terms
+- [00:08:55,860 - 00:08:57,360] of, if you made a complex equation,
+- [00:08:57,360 - 00:09:00,360] if you made a complex combination epsilon and epsilon bar,
+- [00:09:00,360 - 00:09:02,860] you could write this in the form
+- [00:09:02,860 - 00:09:05,360] a plus, I guess we can call it,
+- [00:09:05,360 - 00:09:12,860] b bar times epsilon plus epsilon bar
+- [00:09:12,860 - 00:09:20,360] times another b plus c epsilon bar epsilon.
+- [00:09:20,360 - 00:09:23,360] It doesn't matter whether you use
+- [00:09:23,360 - 00:09:26,360] the complex combinations or the real combinations.
+- [00:09:26,360 - 00:09:30,360] Either way, the sum terminates after c because
+- [00:09:30,360 - 00:09:34,360] another factor of epsilon will set it to zero.
+- [00:09:34,360 - 00:09:37,360] That's if there are only two epsilons in the problem.
+- [00:09:37,360 - 00:09:39,860] If there are more, depending on
+- [00:09:39,860 - 00:09:42,360] the number of epsilon variables there are,
+- [00:09:42,360 - 00:09:45,360] the series will stop after some number of terms,
+- [00:09:45,360 - 00:09:48,360] after you've used them all up, so to speak.
+- [00:09:48,360 - 00:09:54,360] So, there aren't very many functions.
+- [00:09:54,360 - 00:10:01,360] Usually, when you write a function of Grassman variables,
+- [00:10:01,360 - 00:10:04,360] you assume that all the
+- [00:10:04,360 - 00:10:07,360] terms are either odd or even.
+- [00:10:07,360 - 00:10:10,860] For example, if f is
+- [00:10:10,860 - 00:10:14,360] an even function, a commuting function,
+- [00:10:14,360 - 00:10:17,860] then a would be even, b would have to
+- [00:10:17,860 - 00:10:21,360] be odd so that b times epsilon is even,
+- [00:10:21,360 - 00:10:23,360] this b would be odd,
+- [00:10:23,360 - 00:10:25,360] and c would be even.
+- [00:10:25,360 - 00:10:28,360] The other possibility is that f itself
+- [00:10:28,360 - 00:10:31,360] is an odd element of the Grassman algebra,
+- [00:10:31,360 - 00:10:34,360] then a would have to be an odd element,
+- [00:10:34,360 - 00:10:37,360] b would be even, and c would be odd.
+- [00:10:37,360 - 00:10:39,860] So you can have functions which are
+- [00:10:39,860 - 00:10:42,360] either, but nevertheless, no matter what they are,
+- [00:10:42,360 - 00:10:45,360] if they're functions of a
+- [00:10:45,360 - 00:10:48,360] finite number of Grassman variables,
+- [00:10:48,360 - 00:10:51,360] the number of functions is not very big.
+- [00:10:51,360 - 00:10:53,360] They're polynomials and they end at some point.
+- [00:10:53,360 - 00:10:58,360] Okay, that's the algebra of Grassman variables.
+- [00:10:58,360 - 00:11:01,360] And the functional analysis of them.
+- [00:11:01,360 - 00:11:03,360] Well, forget the functional analysis,
+- [00:11:03,360 - 00:11:05,360] just the functions of them.
+- [00:11:05,360 - 00:11:06,360] Yeah.
+- [00:11:06,360 - 00:11:09,360] Can they be used in trigonometric functions as well?
+- [00:11:09,360 - 00:11:12,360] Well, you could write the sine of epsilon,
+- [00:11:12,360 - 00:11:16,360] but the sine function is just an expansion in powers,
+- [00:11:16,360 - 00:11:18,360] and so it would just end at
+- [00:11:18,360 - 00:11:20,360] the first, the sine of epsilon is epsilon.
+- [00:11:20,360 - 00:11:22,360] Yeah.
+- [00:11:22,360 - 00:11:24,360] There's just not enough structure
+- [00:11:24,360 - 00:11:26,360] there to make interesting functions
+- [00:11:26,360 - 00:11:28,360] other than a couple of polynomials.
+- [00:11:28,360 - 00:11:32,360] Now, there's even a calculus of Grassman variables,
+- [00:11:32,360 - 00:11:36,360] both differential and integral.
+- [00:11:36,360 - 00:11:43,360] The notion of a indefinite integral doesn't really exist.
+- [00:11:43,360 - 00:11:45,860] The notion of a definite, well, yeah,
+- [00:11:45,860 - 00:11:48,360] the notion of a definite integral exists,
+- [00:11:48,360 - 00:11:51,360] or just the integral of a function of epsilon.
+- [00:11:51,360 - 00:11:53,360] Maybe I'll go through it the next time.
+- [00:11:53,360 - 00:11:55,360] I don't think I'll go through
+- [00:11:55,360 - 00:11:57,360] it tonight, the integral calculus of,
+- [00:11:57,360 - 00:12:00,360] but it's very easy to remember.
+- [00:12:00,360 - 00:12:04,360] Derivatives and integrals are exactly the same thing.
+- [00:12:04,360 - 00:12:05,360] They don't differ.
+- [00:12:05,360 - 00:12:07,360] But we'll come to, I won't do integrals tonight.
+- [00:12:07,360 - 00:12:09,860] I'll just tell you about
+- [00:12:09,860 - 00:12:12,360] the differential calculus of Grassman variables.
+- [00:12:12,360 - 00:12:14,860] The derivative with respect to theta,
+- [00:12:14,860 - 00:12:17,360] sorry, theta is a Grassman variable now.
+- [00:12:17,360 - 00:12:19,360] Let theta be a Grassman variable.
+- [00:12:21,360 - 00:12:22,860] I don't know why I started
+- [00:12:22,860 - 00:12:24,360] calling it theta instead of epsilon.
+- [00:12:24,360 - 00:12:26,360] Yes, I actually do know why,
+- [00:12:26,360 - 00:12:28,360] but for the moment, no difference.
+- [00:12:28,360 - 00:12:31,360] Derivative with respect to a Grassman variable of
+- [00:12:31,360 - 00:12:34,360] a function of a Grassman variable is very simple.
+- [00:12:34,360 - 00:12:36,860] First of all, if the function
+- [00:12:36,860 - 00:12:39,360] doesn't depend at all on theta,
+- [00:12:39,360 - 00:12:43,860] for example, if it only consists of
+- [00:12:43,860 - 00:12:48,360] a constant, then the answer is zero.
+- [00:12:48,360 - 00:12:50,360] Derivative with respect to theta,
+- [00:12:51,360 - 00:13:04,360] of a plus b, let's say theta times b,
+- [00:13:04,360 - 00:13:07,360] that's just equal to b.
+- [00:13:07,360 - 00:13:10,360] Just exactly as if you were
+- [00:13:10,360 - 00:13:13,360] just differentiating with respect to theta.
+- [00:13:13,360 - 00:13:15,360] Now you do have to be a little bit careful.
+- [00:13:15,360 - 00:13:17,860] Let's suppose that this function here
+- [00:13:17,860 - 00:13:20,360] was an odd, an even element,
+- [00:13:21,360 - 00:13:23,360] of the Grassman algebra.
+- [00:13:23,360 - 00:13:26,360] That means a is an even element.
+- [00:13:26,360 - 00:13:28,360] Okay, no big deal.
+- [00:13:28,360 - 00:13:32,360] But it also means that b is an odd element.
+- [00:13:32,360 - 00:13:34,860] That means you have to distinguish
+- [00:13:34,860 - 00:13:37,360] between b theta and theta b.
+- [00:13:37,360 - 00:13:40,360] They're different, and they're opposite in sign.
+- [00:13:40,360 - 00:13:42,860] So if b is an odd element,
+- [00:13:42,860 - 00:13:45,360] b theta and theta b are different.
+- [00:13:45,360 - 00:13:50,360] If you want to differentiate with respect to theta,
+- [00:13:50,360 - 00:13:53,360] first bring the theta dependence to the left,
+- [00:13:53,360 - 00:13:58,360] and then hit it, and the derivative just gives b.
+- [00:13:58,360 - 00:14:00,860] That's just one of the rules
+- [00:14:00,860 - 00:14:03,360] of fiddling around with these Grassman numbers.
+- [00:14:03,360 - 00:14:05,860] So there isn't much to
+- [00:14:05,860 - 00:14:08,360] the calculus of Grassman variables either.
+- [00:14:08,360 - 00:14:09,860] Of course, you can ask me,
+- [00:14:09,860 - 00:14:11,360] what if you have a function of,
+- [00:14:11,360 - 00:14:14,360] let's take the derivative with respect to theta.
+- [00:14:19,360 - 00:14:24,360] of a function, now this is a complex theta,
+- [00:14:24,360 - 00:14:27,860] of a function which is an a
+- [00:14:27,860 - 00:14:31,360] plus b theta plus, let's call it b,
+- [00:14:31,360 - 00:14:37,860] plus b bar, b bar theta, b
+- [00:14:37,860 - 00:14:44,360] theta bar, b plus c theta bar theta.
+- [00:14:44,360 - 00:14:46,360] This is the generic situation if
+- [00:14:46,360 - 00:14:48,360] you have two thetas in the problem,
+- [00:14:48,360 - 00:14:53,360] and I've arbitrarily organized them into two complex pairs.
+- [00:14:53,360 - 00:14:55,360] You could use theta one and theta two also.
+- [00:14:55,360 - 00:14:58,360] Let's see what this is.
+- [00:14:58,360 - 00:15:01,360] The derivative with respect to theta of a is zero,
+- [00:15:01,360 - 00:15:04,360] so that's the first term, plus,
+- [00:15:04,360 - 00:15:07,360] now we have to be careful, is
+- [00:15:07,360 - 00:15:10,360] this an odd or an even function here?
+- [00:15:10,360 - 00:15:11,860] So let's say it's an
+- [00:15:11,860 - 00:15:13,360] even function, just to be specific.
+- [00:15:13,360 - 00:15:16,360] a is even. What is b?
+- [00:15:16,360 - 00:15:17,360] Odd, is that right? Odd.
+- [00:15:17,360 - 00:15:19,360] Odd.
+- [00:15:19,360 - 00:15:21,360] So that means when I hit it with respect to,
+- [00:15:21,360 - 00:15:23,360] derivative with respect to theta, I had
+- [00:15:23,360 - 00:15:25,360] better bring the theta to the left.
+- [00:15:25,360 - 00:15:28,360] What happens when I bring the theta to the left?
+- [00:15:28,360 - 00:15:29,360] Minus.
+- [00:15:29,360 - 00:15:34,360] So the next one would be minus b bar.
+- [00:15:34,360 - 00:15:36,360] Now, the derivative of theta, of
+- [00:15:36,360 - 00:15:38,360] theta bar with respect to theta,
+- [00:15:38,360 - 00:15:42,360] that's zero, theta bar was a different variable than theta.
+- [00:15:42,360 - 00:15:43,860] We could use theta one
+- [00:15:43,860 - 00:15:45,360] and theta two, it doesn't matter,
+- [00:15:45,360 - 00:15:47,860] but the derivative of one variable with
+- [00:15:47,860 - 00:15:50,360] respect to another variable is just zero,
+- [00:15:50,360 - 00:15:53,360] so we get zero from here.
+- [00:15:53,360 - 00:15:55,360] Now, what about the derivative with
+- [00:15:55,360 - 00:15:57,360] respect to theta of this term here?
+- [00:15:57,360 - 00:16:00,360] Same.
+- [00:16:00,360 - 00:16:03,360] We're going to get plus c.
+- [00:16:03,360 - 00:16:05,360] Are we going to get
+- [00:16:05,360 - 00:16:07,360] theta bar or minus theta bar?
+- [00:16:07,360 - 00:16:09,360] Minus theta bar.
+- [00:16:09,360 - 00:16:10,860] Minus theta bar because in order
+- [00:16:10,860 - 00:16:12,360] to hit it with the derivative,
+- [00:16:12,360 - 00:16:15,360] we first have to bring the c through.
+- [00:16:15,360 - 00:16:18,360] We bring the c through to the other side.
+- [00:16:18,360 - 00:16:19,360] Okay?
+- [00:16:19,360 - 00:16:21,860] And that costs us a sign,
+- [00:16:21,860 - 00:16:24,360] so that's minus c theta bar.
+- [00:16:24,360 - 00:16:28,360] That's an example of a derivative,
+- [00:16:28,360 - 00:16:33,360] a derivative operation on Grassman variables.
+- [00:16:33,360 - 00:16:35,860] The only thing you ever have
+- [00:16:35,860 - 00:16:38,360] to remember is to reorder things
+- [00:16:38,360 - 00:16:40,360] so that when you differentiate,
+- [00:16:40,360 - 00:16:42,860] you're always differentiating something that's
+- [00:16:42,860 - 00:16:45,360] right next to the derivative.
+- [00:16:45,360 - 00:16:46,360] Okay.
+- [00:16:46,360 - 00:16:49,360] Let me prove a little theorem, which is important.
+- [00:16:49,360 - 00:16:54,360] You have minus signs on both terms.
+- [00:16:54,360 - 00:16:57,360] Yeah, that's because I had, uh, yeah.
+- [00:16:57,360 - 00:16:59,360] Yes?
+- [00:17:01,360 - 00:17:03,360] Both of these, yes.
+- [00:17:03,360 - 00:17:05,859] That's because you had to bring the
+- [00:17:05,859 - 00:17:08,359] theta through an odd element over here,
+- [00:17:08,359 - 00:17:10,359] gave you a minus sign,
+- [00:17:10,359 - 00:17:11,859] and you had to bring the
+- [00:17:11,859 - 00:17:13,359] theta through theta bar over here.
+- [00:17:13,359 - 00:17:14,359] Oh, sorry!
+- [00:17:14,359 - 00:17:16,359] I made a mistake.
+- [00:17:16,359 - 00:17:18,359] No, no, no, right.
+- [00:17:18,359 - 00:17:19,359] What did I say?
+- [00:17:19,359 - 00:17:21,359] Um, yeah, no, that's right.
+- [00:17:21,359 - 00:17:22,359] That's right.
+- [00:17:22,359 - 00:17:23,359] Hmm?
+- [00:17:23,359 - 00:17:26,359] Yeah, if the whole thing is an even element,
+- [00:17:26,359 - 00:17:29,360] then c must be even.
+- [00:17:29,360 - 00:17:31,360] All right.
+- [00:17:31,360 - 00:17:33,360] Now, the whole thing could be an odd element.
+- [00:17:33,360 - 00:17:37,360] Let's suppose the whole thing, the whole function here,
+- [00:17:37,360 - 00:17:39,360] was an odd element.
+- [00:17:39,360 - 00:17:42,360] In that case, in that case,
+- [00:17:42,360 - 00:17:43,360] a,
+- [00:17:44,360 - 00:17:47,360] would be odd,
+- [00:17:49,360 - 00:17:52,360] b bar would be even,
+- [00:17:53,360 - 00:17:55,360] b would be even,
+- [00:17:55,360 - 00:17:57,360] and c would be odd.
+- [00:17:57,360 - 00:17:59,360] Let's see what we get.
+- [00:17:59,360 - 00:18:03,360] The differenti- again, differentiating a gives us nothing,
+- [00:18:03,360 - 00:18:04,860] but now, we can bring
+- [00:18:04,860 - 00:18:06,360] the theta past the b bar
+- [00:18:06,360 - 00:18:09,360] because the b bar is an even element,
+- [00:18:09,360 - 00:18:10,360] and then differentiate it.
+- [00:18:10,360 - 00:18:13,360] So this time we will get plus b bar,
+- [00:18:13,360 - 00:18:15,360] not minus,
+- [00:18:15,360 - 00:18:17,360] and over here,
+- [00:18:17,360 - 00:18:20,360] we have to bring theta through two odd elements
+- [00:18:20,360 - 00:18:22,360] to get it to the left.
+- [00:18:22,360 - 00:18:24,360] That will not cost us a sign.
+- [00:18:24,360 - 00:18:27,360] Each time we bring it through, we get a sign,
+- [00:18:27,360 - 00:18:29,360] but we bring it through two odd elements,
+- [00:18:29,360 - 00:18:30,360] no more signs,
+- [00:18:30,360 - 00:18:34,360] so that's also plus c theta bar.
+- [00:18:36,360 - 00:18:37,860] All right, so you just
+- [00:18:37,860 - 00:18:39,360] have to do the bookkeeping carefully.
+- [00:18:39,360 - 00:18:44,360] It's amazing that these things are useful.
+- [00:18:48,360 - 00:18:50,360] Let me give you another little theorem, yeah.
+- [00:18:50,360 - 00:18:52,360] You could just as easily have
+- [00:18:52,360 - 00:18:54,360] written a function c theta theta bar,
+- [00:18:54,360 - 00:18:55,360] couldn't you?
+- [00:18:55,360 - 00:18:57,360] Yeah, you could just write a function c theta.
+- [00:18:57,360 - 00:19:01,360] Then the signs of the derivatives of c would change.
+- [00:19:01,360 - 00:19:04,360] Sorry, let's just write a function c theta theta bar.
+- [00:19:04,360 - 00:19:05,360] Now, what's your point?
+- [00:19:05,360 - 00:19:07,360] The point is that then the sign,
+- [00:19:07,360 - 00:19:09,360] that if you had an even function,
+- [00:19:09,360 - 00:19:11,360] it would be plus c theta,
+- [00:19:11,360 - 00:19:14,360] and the odd function would be minus c theta bar.
+- [00:19:14,360 - 00:19:15,360] Theta bar.
+- [00:19:15,360 - 00:19:16,360] Theta bar.
+- [00:19:16,360 - 00:19:17,360] Yeah.
+- [00:19:17,360 - 00:19:18,860] So what is the significance of
+- [00:19:18,860 - 00:19:20,360] the way that it turns out
+- [00:19:20,360 - 00:19:23,360] if we just easily reverse the terms?
+- [00:19:23,360 - 00:19:26,360] C could be an odd function.
+- [00:19:26,360 - 00:19:28,360] What is the significance?
+- [00:19:28,360 - 00:19:29,860] What's the significance of it just
+- [00:19:29,860 - 00:19:31,360] turning out to be an odd function?
+- [00:19:31,360 - 00:19:35,360] It's a bookkeeping device for keeping track of fermions,
+- [00:19:35,360 - 00:19:37,360] is what it is.
+- [00:19:37,360 - 00:19:38,360] There's no significance.
+- [00:19:38,360 - 00:19:39,360] Are there any?
+- [00:19:39,360 - 00:19:40,360] No, there's no significance.
+- [00:19:40,360 - 00:19:41,860] I think it's more relative than the significance
+- [00:19:41,860 - 00:19:43,360] we will attach to it as we go on.
+- [00:19:43,360 - 00:19:45,360] I think you would change the sign of c.
+- [00:19:45,360 - 00:19:46,360] In which case?
+- [00:19:46,360 - 00:19:48,360] If c is odd?
+- [00:19:48,360 - 00:19:50,360] He wants to write the function
+- [00:19:50,360 - 00:19:52,360] of theta and theta bar reversed,
+- [00:19:52,360 - 00:19:54,360] so you just change the sign of c.
+- [00:19:54,360 - 00:19:55,360] Oh, yeah.
+- [00:19:55,360 - 00:19:56,360] Sorry?
+- [00:19:56,360 - 00:19:58,360] I already have c.
+- [00:19:58,360 - 00:20:01,360] If I change the order of theta and theta bar,
+- [00:20:01,360 - 00:20:07,360] then I should write minus c theta theta bar.
+- [00:20:07,360 - 00:20:14,360] c theta bar theta is minus c theta theta bar.
+- [00:20:14,360 - 00:20:16,860] So if you reverse the order,
+- [00:20:16,860 - 00:20:19,360] then you just define the constant.
+- [00:20:19,360 - 00:20:20,360] It's a rule.
+- [00:20:20,360 - 00:20:23,360] It's a mathematical rule, a new kind of number.
+- [00:20:23,360 - 00:20:24,860] A new kind of number, when
+- [00:20:24,860 - 00:20:26,360] you switch two of the odd elements,
+- [00:20:26,360 - 00:20:28,360] you change the sign.
+- [00:20:28,360 - 00:20:30,360] If c is also an odd
+- [00:20:30,360 - 00:20:32,360] element, then you bring something past c,
+- [00:20:32,360 - 00:20:34,360] you also change the sign.
+- [00:20:34,360 - 00:20:35,360] But when you change the
+- [00:20:35,360 - 00:20:36,360] sign, you don't change its parity.
+- [00:20:36,360 - 00:20:38,360] You don't change odd to even.
+- [00:20:38,360 - 00:20:39,360] That's right.
+- [00:20:39,360 - 00:20:40,360] That's right.
+- [00:20:40,360 - 00:20:41,360] That's right.
+- [00:20:41,360 - 00:20:44,360] Any of these manipulations do not change odd to even,
+- [00:20:44,360 - 00:20:47,360] but they can change the sign of the object.
+- [00:20:47,360 - 00:20:49,360] I'm confused about something.
+- [00:20:49,360 - 00:20:51,360] I think it's minor.
+- [00:20:51,360 - 00:20:56,360] So I'm thinking of our coefficients a, b, and c
+- [00:20:56,360 - 00:20:59,360] as drawn from the complex number field.
+- [00:20:59,360 - 00:21:01,360] They could be complex numbers,
+- [00:21:01,360 - 00:21:03,360] but they're not the same.
+- [00:21:03,360 - 00:21:05,360] They're not the same.
+- [00:21:05,360 - 00:21:06,360] They're not the same.
+- [00:21:06,360 - 00:21:07,360] They're not the same.
+- [00:21:07,360 - 00:21:08,360] They're not the same.
+- [00:21:08,360 - 00:21:09,360] But they're not the same.
+- [00:21:09,360 - 00:21:10,360] They're not the same.
+- [00:21:10,360 - 00:21:11,360] They're not the same.
+- [00:21:11,360 - 00:21:11,860] There are two different numbers,
+- [00:21:11,860 - 00:21:12,360] if they happen to be even.
+- [00:21:12,360 - 00:21:13,360] If they're even.
+- [00:21:13,360 - 00:21:14,360] If a is even, it could be a complex number,
+- [00:21:14,360 - 00:21:15,360] but it could also be something else.
+- [00:21:15,360 - 00:21:18,860] It could be the product of
+- [00:21:18,860 - 00:21:22,360] an even number of epsilons or thetas.
+- [00:21:22,360 - 00:21:23,860] But if we only have, so
+- [00:21:23,860 - 00:21:25,360] if we have two of them, though,
+- [00:21:25,360 - 00:21:32,360] then a product, then it will vanish of its thing.
+- [00:21:32,360 - 00:21:35,360] If we have two of which?
+- [00:21:35,360 - 00:21:38,860] If our grassland field has
+- [00:21:38,860 - 00:21:42,360] two, only two independent elements
+- [00:21:42,360 - 00:21:44,360] If there are only two elements
+- [00:21:44,360 - 00:21:47,360] Well, you always include the
+- [00:21:47,360 - 00:21:50,360] numbers along with the odd elements
+- [00:21:50,360 - 00:21:53,360] So typically we might have
+- [00:21:53,360 - 00:21:56,360] some finite number of odd elements
+- [00:21:56,360 - 00:22:00,360] but all either the complex or the real numbers
+- [00:22:00,360 - 00:22:02,360] Now, you can define more sophisticated things
+- [00:22:02,360 - 00:22:04,360] You can define things which only have
+- [00:22:04,360 - 00:22:06,360] a finite number of ordinary numbers also
+- [00:22:06,360 - 00:22:10,360] Just the integers modulo 5 or something like that
+- [00:22:10,360 - 00:22:13,360] that would also allow you to make Grassman algebras
+- [00:22:13,360 - 00:22:15,860] The ones we're really interested in
+- [00:22:15,860 - 00:22:18,360] are the ones that have complex numbers
+- [00:22:18,360 - 00:22:22,360] and some finite number of Grassman elements that we'll call
+- [00:22:22,360 - 00:22:24,360] from time to time I'll call them epsilon,
+- [00:22:24,360 - 00:22:26,360] from time to time I'll call them theta
+- [00:22:31,360 - 00:22:32,360] I'm sorry, with this
+- [00:22:32,360 - 00:22:36,360] The first case was the entire function was even
+- [00:22:36,360 - 00:22:39,360] and then the second case the entire function was odd
+- [00:22:39,360 - 00:22:40,360] I guess, I don't remember
+- [00:22:40,360 - 00:22:41,360] Okay
+- [00:22:41,360 - 00:22:42,360] Yeah
+- [00:22:42,360 - 00:22:46,360] The two derivatives are opposites of each other
+- [00:22:46,360 - 00:22:47,360] What's that?
+- [00:22:47,360 - 00:22:50,360] The first one was beta plus c4
+- [00:22:50,360 - 00:22:52,360] Negative
+- [00:22:52,360 - 00:22:53,360] Minus
+- [00:22:53,360 - 00:22:54,360] Minus
+- [00:22:54,360 - 00:22:58,360] And then the second version was the opposite of that
+- [00:22:58,360 - 00:23:00,360] You want to go through it again?
+- [00:23:00,360 - 00:23:01,360] No, no, no
+- [00:23:01,360 - 00:23:02,360] I'm saying is that...
+- [00:23:02,360 - 00:23:05,360] They're like symmetrical, these two answers
+- [00:23:05,360 - 00:23:09,360] Is that not a general characteristic of this stuff?
+- [00:23:09,360 - 00:23:10,360] Sometimes
+- [00:23:10,360 - 00:23:13,360] Sometimes, but the rules are simple
+- [00:23:13,360 - 00:23:15,360] Whenever a Grassman element
+- [00:23:15,360 - 00:23:17,360] goes past another Grassman element
+- [00:23:17,360 - 00:23:19,360] it changes the sign
+- [00:23:19,360 - 00:23:21,860] Now in fact, you can also think
+- [00:23:21,860 - 00:23:24,360] of derivative with respect to a theta
+- [00:23:24,360 - 00:23:26,360] as a kind of Grassman element
+- [00:23:26,360 - 00:23:31,360] But let me show you another interesting fact
+- [00:23:31,360 - 00:23:35,360] But let me start with
+- [00:23:35,360 - 00:23:39,360] ordinary functions of ordinary variables first
+- [00:23:39,360 - 00:23:42,360] Let's take just a function of a single variable
+- [00:23:42,360 - 00:23:46,360] And consider the differential operators
+- [00:23:46,360 - 00:23:49,360] derivative with respect to x
+- [00:23:49,360 - 00:23:52,360] and multiplication by x
+- [00:23:52,360 - 00:23:56,360] Those are two operators and they have the following property
+- [00:23:56,360 - 00:23:58,360] The product...
+- [00:23:58,360 - 00:23:59,360] Which way is it?
+- [00:23:59,360 - 00:24:00,360] Uh...
+- [00:24:00,360 - 00:24:02,360] Yeah
+- [00:24:02,360 - 00:24:08,360] Let's...
+- [00:24:08,360 - 00:24:13,360] d by dx times x minus x d by dx
+- [00:24:13,360 - 00:24:17,360] Have you ever seen this thing before?
+- [00:24:17,360 - 00:24:20,360] It's the commutator of x with d by d...
+- [00:24:20,360 - 00:24:23,360] Or of d by dx with x
+- [00:24:23,360 - 00:24:24,360] Okay
+- [00:24:24,360 - 00:24:25,360] You know where it occurs?
+- [00:24:25,360 - 00:24:26,360] It occurs in quantum mechanics
+- [00:24:26,360 - 00:24:29,360] It occurs in quantum mechanics because the momentum
+- [00:24:29,360 - 00:24:32,360] of a particle is represented by an operator
+- [00:24:32,360 - 00:24:35,360] which is minus i d by dx
+- [00:24:35,360 - 00:24:36,360] Alright
+- [00:24:36,360 - 00:24:39,360] What is this commutator?
+- [00:24:39,360 - 00:24:42,360] d by dx times x minus x d by dx
+- [00:24:42,360 - 00:24:43,360] Well, you all know how to
+- [00:24:43,360 - 00:24:44,360] do it, but I'll do it anyway
+- [00:24:44,360 - 00:24:47,360] You take it and you apply it to a function
+- [00:24:47,360 - 00:24:48,360] any function
+- [00:24:48,360 - 00:24:50,360] and you see what you get
+- [00:24:50,360 - 00:24:53,360] Alright, so let's begin with the first term
+- [00:24:53,360 - 00:24:57,360] The first term gives us derivative with respect to x
+- [00:24:57,360 - 00:25:00,360] of x times f of x
+- [00:25:00,360 - 00:25:02,360] And that's the sum of two terms
+- [00:25:02,360 - 00:25:05,360] The first term, the derivative hits x and gives one
+- [00:25:05,360 - 00:25:08,360] So this just gives f of x
+- [00:25:08,360 - 00:25:11,360] And the other term, the derivative hits f
+- [00:25:11,360 - 00:25:13,860] So it's plus x times, let's
+- [00:25:13,860 - 00:25:16,360] call it f prime of x
+- [00:25:16,360 - 00:25:19,360] where prime indicates derivative
+- [00:25:19,360 - 00:25:22,360] The derivative can hit x and leave f
+- [00:25:22,360 - 00:25:27,360] or it can hit f and leave x
+- [00:25:27,360 - 00:25:29,360] Now what about in the opposite order?
+- [00:25:29,360 - 00:25:32,360] In the opposite order we have x times derivative
+- [00:25:32,360 - 00:25:38,360] with respect to x times f of x
+- [00:25:38,360 - 00:25:42,360] That's just x times f prime
+- [00:25:42,360 - 00:25:43,860] Now the x is on the
+- [00:25:43,860 - 00:25:45,360] left, the derivative hits f of x
+- [00:25:45,360 - 00:25:53,360] and that's just x times f prime
+- [00:25:53,360 - 00:25:56,360] So, the difference between these
+- [00:25:56,360 - 00:25:59,360] is just the difference between this and this
+- [00:25:59,360 - 00:26:03,360] The x times f primes cancel
+- [00:26:03,360 - 00:26:05,360] and what we find out is that
+- [00:26:05,360 - 00:26:07,360] this is just equal to f of x
+- [00:26:14,360 - 00:26:18,360] That all can be rewritten in a simple package
+- [00:26:18,360 - 00:26:21,360] The commutator of derivative with respect to x
+- [00:26:21,360 - 00:26:25,360] with x is just one
+- [00:26:26,360 - 00:26:28,360] Why one?
+- [00:26:28,360 - 00:26:30,360] Because it does nothing
+- [00:26:30,360 - 00:26:31,860] It just acts on a function
+- [00:26:31,860 - 00:26:33,360] and gives back the same function
+- [00:26:33,360 - 00:26:35,860] So this is a simple
+- [00:26:35,860 - 00:26:38,360] theorem about the commutator of derivatives
+- [00:26:38,360 - 00:26:41,360] with multiplication by f of x
+- [00:26:41,360 - 00:26:45,360] What about derivatives with respect to Grassman variables?
+- [00:26:49,360 - 00:26:52,360] You might guess, and you would be right
+- [00:26:52,360 - 00:26:55,360] that exactly the same thing is true
+- [00:26:56,360 - 00:27:03,360] except for one thing, what is it?
+- [00:27:03,360 - 00:27:10,360] Anti-commutator
+- [00:27:10,360 - 00:27:12,360] Let's check that out
+- [00:27:12,360 - 00:27:16,360] Let's just check it out
+- [00:27:16,360 - 00:27:20,360] for the function a plus b theta
+- [00:27:20,360 - 00:27:22,360] I'll work it for the even case,
+- [00:27:22,360 - 00:27:24,360] you can work it out for yourself
+- [00:27:24,360 - 00:27:24,860] I'll work it for the even case,
+- [00:27:24,860 - 00:27:25,360] you can work it out for yourself
+- [00:27:25,360 - 00:27:27,360] I'll work it out for the odd case
+- [00:27:27,360 - 00:27:30,360] where a is an even element
+- [00:27:30,360 - 00:27:33,360] and b is an odd element
+- [00:27:33,360 - 00:27:35,360] That's the case I'll do
+- [00:27:35,360 - 00:27:44,360] Let's first hit it with theta d by d theta
+- [00:27:44,360 - 00:27:46,360] and then we'll have to
+- [00:27:46,360 - 00:27:48,360] hit it with the opposite order
+- [00:27:48,360 - 00:27:49,860] Alright, now d by d theta
+- [00:27:49,860 - 00:27:51,360] when it hits a gives what?
+- [00:27:51,360 - 00:27:53,360] Zero
+- [00:27:53,360 - 00:27:54,360] Zero
+- [00:27:54,360 - 00:27:58,360] How about d by d theta times b theta?
+- [00:27:58,360 - 00:28:00,360] b is an odd element so we'd have
+- [00:28:00,360 - 00:28:02,360] to bring this around to the other side
+- [00:28:02,360 - 00:28:05,360] This will give us
+- [00:28:05,360 - 00:28:09,360] Forget this for a moment, this will
+- [00:28:09,360 - 00:28:13,360] just give us minus b theta, right?
+- [00:28:16,360 - 00:28:18,360] Sorry, just minus b
+- [00:28:18,360 - 00:28:20,360] Minus b
+- [00:28:20,360 - 00:28:22,360] Minus b
+- [00:28:22,360 - 00:28:25,360] But then we're going to hit it with theta again
+- [00:28:25,360 - 00:28:30,360] Okay, so it's minus b theta
+- [00:28:30,360 - 00:28:33,360] Theta on the left
+- [00:28:33,360 - 00:28:37,360] But this is also equal to b theta
+- [00:28:37,360 - 00:28:39,360] b is an odd element
+- [00:28:39,360 - 00:28:42,360] I could have done this, yeah okay it's fine
+- [00:28:42,360 - 00:28:48,360] It just gives me back b theta, right?
+- [00:28:48,360 - 00:28:50,360] Everybody see what I did?
+- [00:28:50,360 - 00:28:52,360] Okay, good
+- [00:28:52,360 - 00:28:56,360] So that's the first thing, we can erase all this
+- [00:28:56,360 - 00:29:00,360] Now what about the opposite order?
+- [00:29:00,360 - 00:29:08,360] d by d theta theta times a plus b theta
+- [00:29:08,360 - 00:29:14,360] Theta times a just gives us theta times a
+- [00:29:14,360 - 00:29:17,360] But what about theta times b times theta?
+- [00:29:17,360 - 00:29:19,360] That's zero
+- [00:29:19,360 - 00:29:20,360] I could bring the theta through here
+- [00:29:20,360 - 00:29:22,360] And then I would have the product of two thetas
+- [00:29:22,360 - 00:29:24,360] And the product of two thetas is zero
+- [00:29:24,360 - 00:29:28,360] So this is just equal
+- [00:29:28,360 - 00:29:31,360] To the derivative with respect to theta
+- [00:29:31,360 - 00:29:35,360] Of theta times a, right?
+- [00:29:35,360 - 00:29:37,360] Which is?
+- [00:29:37,360 - 00:29:40,360] a
+- [00:29:43,360 - 00:29:46,360] So now supposing I add these
+- [00:29:46,360 - 00:29:48,360] I add these
+- [00:29:48,360 - 00:29:50,360] Then I get the anticomponent
+- [00:29:50,360 - 00:29:53,360] So I have a product commutator
+- [00:29:53,360 - 00:29:57,360] Of theta with d by d theta
+- [00:29:57,360 - 00:30:01,360] Acting on an arbitrary function
+- [00:30:01,360 - 00:30:03,360] a plus b theta
+- [00:30:03,360 - 00:30:08,360] Gives back a plus b theta
+- [00:30:08,360 - 00:30:10,360] Here's a, here's b theta
+- [00:30:10,360 - 00:30:13,360] So this is one
+- [00:30:13,360 - 00:30:15,360] So for Grassman derivatives
+- [00:30:15,360 - 00:30:18,360] With respect to Grassman variables
+- [00:30:18,360 - 00:30:20,360] Theta, the anticomponent
+- [00:30:20,360 - 00:30:22,360] Is the commutator of theta
+- [00:30:22,360 - 00:30:24,360] With d by d theta is one
+- [00:30:24,360 - 00:30:26,360] Whereas for ordinary numbers
+- [00:30:26,360 - 00:30:28,360] Or ordinary functions of ordinary variables
+- [00:30:28,360 - 00:30:31,360] It's the commutator of a derivative
+- [00:30:31,360 - 00:30:33,360] With respect to a coordinate
+- [00:30:33,360 - 00:30:37,360] Is equal to one
+- [00:30:37,360 - 00:30:41,360] So I showed you this for a variety of reasons
+- [00:30:41,360 - 00:30:43,360] But one of them was just to show you
+- [00:30:43,360 - 00:30:46,360] How to manipulate these objects
+- [00:30:46,360 - 00:30:48,360] And as I said, the only rule
+- [00:30:48,360 - 00:30:49,360] That you have to keep track of
+- [00:30:49,360 - 00:30:50,360] Is that you pass one odd element
+- [00:30:50,360 - 00:30:52,360] Past another one to change the sign
+- [00:30:52,360 - 00:30:55,360] Otherwise
+- [00:30:55,360 - 00:30:57,360] It's just like ordinary algebra
+- [00:30:57,360 - 00:31:00,360] Much simpler because there's only a few functions
+- [00:31:00,360 - 00:31:02,360] And not very many rules
+- [00:31:02,360 - 00:31:03,360] Just because there isn't very much
+- [00:31:03,360 - 00:31:05,360] To have rules about
+- [00:31:05,360 - 00:31:07,360] Question
+- [00:31:07,360 - 00:31:11,360] You discussed odd and even functions
+- [00:31:11,360 - 00:31:13,360] Are there mixed functions where you have
+- [00:31:13,360 - 00:31:15,360] You can invent mixed functions
+- [00:31:15,360 - 00:31:17,360] But you really
+- [00:31:17,360 - 00:31:19,360] They're really not
+- [00:31:19,360 - 00:31:23,360] Normally you don't allow mixed functions
+- [00:31:23,360 - 00:31:27,360] An expression should either be odd or even
+- [00:31:27,360 - 00:31:30,360] You can investigate and start playing yourself
+- [00:31:30,360 - 00:31:32,360] With what happens if you have mixed functions
+- [00:31:32,360 - 00:31:35,360] But normally
+- [00:31:35,360 - 00:31:38,360] An object is either real
+- [00:31:38,360 - 00:31:41,360] Sorry, is either odd or even
+- [00:31:41,360 - 00:31:45,360] I'm just wondering if
+- [00:31:45,360 - 00:31:47,360] That f of x that you've got there
+- [00:31:47,360 - 00:31:49,360] I'm sorry, is that odd?
+- [00:31:49,360 - 00:31:51,360] No, no, no, this is just ordinary functions
+- [00:31:51,360 - 00:31:53,360] Ordinary functions, even functions
+- [00:31:53,360 - 00:31:56,360] I was just reminding you of something here
+- [00:31:56,360 - 00:31:58,360] This is kind of the
+- [00:31:58,360 - 00:32:00,360] commutator of x with p, right?
+- [00:32:00,360 - 00:32:01,360] This could be p
+- [00:32:01,360 - 00:32:04,360] Or if we multiplied it by minus i
+- [00:32:04,360 - 00:32:07,360] Then this would be the commutator of x with p
+- [00:32:07,360 - 00:32:10,360] Is equal to i
+- [00:32:13,360 - 00:32:15,360] Leaving out h bar, yeah
+- [00:32:15,360 - 00:32:16,360] So we talked about
+- [00:32:16,360 - 00:32:18,360] Graphic numbers with like one or two
+- [00:32:18,360 - 00:32:19,360] Multiple components, right?
+- [00:32:19,360 - 00:32:20,360] Is there a limit?
+- [00:32:20,360 - 00:32:21,360] Is there a what?
+- [00:32:21,360 - 00:32:22,360] Is there a limit to it?
+- [00:32:22,360 - 00:32:23,360] A limit to what?
+- [00:32:23,360 - 00:32:24,360] How many you can have?
+- [00:32:24,360 - 00:32:25,360] How many you can have?
+- [00:32:25,360 - 00:32:26,360] Oh, you can have any number
+- [00:32:26,360 - 00:32:27,360] You can have any number
+- [00:32:27,360 - 00:32:28,360] But
+- [00:32:28,360 - 00:32:29,360] Algebra just gets more complex
+- [00:32:29,360 - 00:32:31,360] You can have any number of them
+- [00:32:31,360 - 00:32:32,360] Right
+- [00:32:36,360 - 00:32:39,360] Alright, so that is what a
+- [00:32:41,360 - 00:32:42,360] What a
+- [00:32:42,360 - 00:32:43,360] Grassman
+- [00:32:43,360 - 00:32:46,360] Algebra, Grassman calculus
+- [00:32:46,360 - 00:32:48,360] The only thing that I didn't tell you
+- [00:32:48,360 - 00:32:49,360] As I said
+- [00:32:49,360 - 00:32:51,360] Was how integrals work
+- [00:32:51,360 - 00:32:53,360] I'm going to tell you right now
+- [00:32:53,360 - 00:32:55,360] Maybe I'll work this out for you
+- [00:32:55,360 - 00:32:57,360] But not right now
+- [00:32:57,360 - 00:32:59,360] The integral d theta
+- [00:32:59,360 - 00:33:01,360] Of a function of theta
+- [00:33:01,360 - 00:33:03,360] Is the same thing
+- [00:33:03,360 - 00:33:05,360] As the derivative with respect to theta
+- [00:33:05,360 - 00:33:07,360] As f of theta
+- [00:33:07,360 - 00:33:09,360] I won't tell you why right now
+- [00:33:09,360 - 00:33:12,360] If we, if it happens that we need derivatives
+- [00:33:12,360 - 00:33:14,360] I will show you why it's true
+- [00:33:14,360 - 00:33:16,360] Okay
+- [00:33:18,360 - 00:33:21,360] It's the only rule that
+- [00:33:21,360 - 00:33:24,360] allows you to integrate by parts
+- [00:33:24,360 - 00:33:26,860] If you insist that the
+- [00:33:26,860 - 00:33:29,360] integration by parts formula be true
+- [00:33:29,360 - 00:33:32,360] Then it's, then it's necessarily true that
+- [00:33:32,360 - 00:33:35,360] derivatives and integrals are the same thing
+- [00:33:35,360 - 00:33:38,360] So that makes calculus very, very easy
+- [00:33:41,360 - 00:33:43,860] Alright, now let's review for a
+- [00:33:43,860 - 00:33:46,360] few seconds or a couple of minutes
+- [00:33:46,360 - 00:33:48,360] The idea of symmetry groups
+- [00:33:48,360 - 00:33:53,360] And then we're going to come to supersymmetry
+- [00:33:56,360 - 00:33:57,360] Symmetry groups
+- [00:33:57,360 - 00:33:59,360] Alright, so let's just very quickly review
+- [00:33:59,360 - 00:34:01,360] We have some group elements
+- [00:34:01,360 - 00:34:03,360] I'm interested in continuous groups now
+- [00:34:03,360 - 00:34:06,360] And let's call the group elements G
+- [00:34:06,360 - 00:34:09,359] G sub i, this is the i-th group element
+- [00:34:09,359 - 00:34:11,359] I could, and
+- [00:34:12,359 - 00:34:16,359] I here just indexes whatever you want to index
+- [00:34:16,359 - 00:34:18,359] And as I showed you last time
+- [00:34:18,360 - 00:34:21,360] The whole structure of the group
+- [00:34:21,360 - 00:34:27,360] Is encoded in the algebra of commutators
+- [00:34:27,360 - 00:34:29,360] The Lie algebra, it's called the Lie algebra
+- [00:34:29,360 - 00:34:31,360] The Lie algebra of commutators
+- [00:34:31,360 - 00:34:34,360] Of the, these G's are, oh sorry
+- [00:34:34,360 - 00:34:36,360] These G's are not the group elements
+- [00:34:36,360 - 00:34:39,360] These G's are the generators of the group
+- [00:34:39,360 - 00:34:43,360] The generators of the group, the infinitesimal elements
+- [00:34:43,360 - 00:34:45,860] Unitary group for an element
+- [00:34:45,860 - 00:34:48,360] very close to the group element
+- [00:34:48,360 - 00:34:52,360] Close to the identity is one plus i
+- [00:34:52,360 - 00:34:54,360] Times a small number
+- [00:34:54,360 - 00:34:57,360] This epsilon is not at the moment a Grassman number
+- [00:34:57,360 - 00:34:59,360] Times G
+- [00:35:00,360 - 00:35:03,360] And there are a collection of independent
+- [00:35:03,360 - 00:35:05,360] Linearly independent generators
+- [00:35:05,360 - 00:35:07,360] In the case of the rotation group
+- [00:35:07,360 - 00:35:09,860] Those generators are just the
+- [00:35:09,860 - 00:35:12,360] angular components of the angular momentum
+- [00:35:12,360 - 00:35:14,360] The different components of the angular momentum
+- [00:35:14,360 - 00:35:16,360] The L's, Lx, Ly, and Lz
+- [00:35:16,360 - 00:35:18,360] For more complicated groups
+- [00:35:18,360 - 00:35:20,360] There are more generators
+- [00:35:20,360 - 00:35:22,360] But there's a collection of generators
+- [00:35:22,360 - 00:35:26,360] And the important thing about the generators
+- [00:35:26,360 - 00:35:29,360] Is the commutators of them
+- [00:35:29,360 - 00:35:32,360] That tells you
+- [00:35:32,360 - 00:35:35,360] It's basically an infinitesimal version
+- [00:35:35,360 - 00:35:40,360] Of the table of multiplication of group elements
+- [00:35:40,360 - 00:35:43,360] G i, G j
+- [00:35:43,360 - 00:35:45,360] The commutator of two group elements
+- [00:35:45,360 - 00:35:47,360] What does it have to do with?
+- [00:35:47,360 - 00:35:50,360] It has to do with group operations
+- [00:35:50,360 - 00:35:53,360] About different axes, so to speak
+- [00:35:53,360 - 00:35:55,360] And then undoing them
+- [00:35:55,360 - 00:35:57,360] What you get left over with
+- [00:35:57,360 - 00:35:58,360] We talked about that
+- [00:35:58,360 - 00:36:00,360] Alright, the general rule is that
+- [00:36:00,360 - 00:36:02,360] The commutator of two group elements
+- [00:36:02,360 - 00:36:05,360] Or two group generators
+- [00:36:05,360 - 00:36:07,360] Is another generator
+- [00:36:07,360 - 00:36:08,360] In the standard formula
+- [00:36:08,360 - 00:36:11,360] There's always an i here
+- [00:36:11,360 - 00:36:14,360] And then there's a set of constants
+- [00:36:14,360 - 00:36:16,360] Let's call them C
+- [00:36:16,360 - 00:36:18,360] I, J, K
+- [00:36:18,360 - 00:36:24,360] Times an element G, K
+- [00:36:24,360 - 00:36:28,360] That the commutator of the i-th and j-th element
+- [00:36:28,360 - 00:36:30,360] This is summed over K, of course
+- [00:36:30,360 - 00:36:32,360] Repeated indices
+- [00:36:32,360 - 00:36:37,360] That the commutator of one generator with another
+- [00:36:37,360 - 00:36:40,360] Is a linear combination of generators
+- [00:36:40,360 - 00:36:45,360] That's the structure of all continuous groups
+- [00:36:45,360 - 00:36:47,360] And these constants here
+- [00:36:47,360 - 00:36:49,360] They're just numbers
+- [00:36:49,360 - 00:36:51,360] They have some symmetry properties
+- [00:36:51,360 - 00:36:53,360] They're called the structure constants of the group
+- [00:36:53,360 - 00:36:56,360] What are they for the rotation group?
+- [00:36:56,360 - 00:36:58,360] Anybody remember?
+- [00:36:58,360 - 00:37:00,360] The permutation symbol
+- [00:37:00,360 - 00:37:01,360] Yeah, the permutation symbol
+- [00:37:01,360 - 00:37:03,360] Epsilon i, J, K, for example
+- [00:37:03,360 - 00:37:06,360] But in general, they're just a set of
+- [00:37:06,360 - 00:37:08,360] They have some symmetry properties
+- [00:37:08,360 - 00:37:10,360] For example, the left-hand side
+- [00:37:10,360 - 00:37:12,360] The commutator is always anti-symmetric
+- [00:37:12,360 - 00:37:13,360] Under i and j
+- [00:37:13,360 - 00:37:14,360] G i, J
+- [00:37:14,360 - 00:37:17,360] G i, commutator G, J
+- [00:37:17,360 - 00:37:19,360] Changes sign when you flip them
+- [00:37:19,360 - 00:37:22,360] So it's anti-symmetric under interchange of i and j
+- [00:37:22,360 - 00:37:26,360] And in fact, you could discover by a few manipulations
+- [00:37:26,360 - 00:37:27,860] That it's anti-symmetric under interchange
+- [00:37:27,860 - 00:37:29,360] of any two of them
+- [00:37:29,360 - 00:37:30,360] But that's not important
+- [00:37:30,360 - 00:37:33,360] The important thing is that the algebra closes
+- [00:37:33,360 - 00:37:37,360] That means that the commutators of generators
+- [00:37:37,360 - 00:37:40,360] Give back generators again
+- [00:37:40,360 - 00:37:43,360] That's fundamental to the character of
+- [00:37:43,360 - 00:37:45,360] What a group is
+- [00:37:45,360 - 00:37:47,360] Now, the G's typically
+- [00:37:47,360 - 00:37:50,360] For sensible symmetry groups
+- [00:37:50,360 - 00:37:53,360] Are always Hermitian operators
+- [00:37:53,360 - 00:37:56,360] They're Hermitian matrices
+- [00:37:56,360 - 00:37:58,360] That means they have real eigenvalues
+- [00:37:58,360 - 00:38:00,360] That does not prevent you
+- [00:38:00,360 - 00:38:05,360] From putting them together into complex combinations
+- [00:38:05,360 - 00:38:07,360] Let me give you an example of
+- [00:38:07,360 - 00:38:09,360] one that we've studied in the past
+- [00:38:09,360 - 00:38:13,360] Take the angular momentum components, L and V
+- [00:38:13,360 - 00:38:18,360] Lx, Ly, and Lz
+- [00:38:18,360 - 00:38:20,360] Those represent angular momentum
+- [00:38:20,360 - 00:38:22,360] They're observable quantities
+- [00:38:22,360 - 00:38:24,360] They're conserved in the real world
+- [00:38:24,360 - 00:38:27,360] And of course they're Hermitian
+- [00:38:27,360 - 00:38:29,360] Because observable quantities are Hermitian
+- [00:38:29,360 - 00:38:32,360] That does not prevent you from putting together
+- [00:38:32,360 - 00:38:36,360] Combinations like Lx plus or minus Ily
+- [00:38:36,360 - 00:38:40,360] Do you remember what these things were?
+- [00:38:40,360 - 00:38:43,360] Raising and lowering operators
+- [00:38:43,360 - 00:38:45,360] What did they do?
+- [00:38:45,360 - 00:38:49,360] They acted on state vectors
+- [00:38:49,360 - 00:38:51,360] With a given value of Lz
+- [00:38:51,360 - 00:38:55,360] We called it m
+- [00:38:55,360 - 00:39:05,360] And it either raised or lowered m by one unit
+- [00:39:05,360 - 00:39:08,360] So I just point out to you that
+- [00:39:08,360 - 00:39:11,360] It's often the case that we combine them together
+- [00:39:11,360 - 00:39:13,360] In complex combinations
+- [00:39:13,360 - 00:39:19,360] For various algebraic purposes that are useful to us
+- [00:39:19,360 - 00:39:20,360] Alright
+- [00:39:20,360 - 00:39:23,360] In putting them together into complex combinations
+- [00:39:23,360 - 00:39:25,860] That doesn't change the fact
+- [00:39:25,860 - 00:39:28,360] that the original objects were Hermitian
+- [00:39:28,360 - 00:39:30,360] Okay
+- [00:39:30,360 - 00:39:35,360] One last point before we get to supersymmetry
+- [00:39:35,360 - 00:39:39,360] Is that when you have a real symmetry
+- [00:39:39,360 - 00:39:40,360] Real symmetry
+- [00:39:41,360 - 00:39:44,360] Of a physical system
+- [00:39:44,360 - 00:39:47,360] It also implies something about the connection
+- [00:39:47,360 - 00:39:50,360] Between the generators and the Hamiltonian
+- [00:39:50,360 - 00:39:52,360] In particular
+- [00:39:52,360 - 00:39:54,360] It says
+- [00:39:54,360 - 00:39:56,860] That the Hamiltonian of the
+- [00:39:56,860 - 00:39:59,360] system commutes with the generators
+- [00:39:59,360 - 00:40:04,360] Commutator H with the generators is equal to zero
+- [00:40:06,360 - 00:40:08,360] That's another way of saying
+- [00:40:08,360 - 00:40:11,360] That when the generator acts on a state
+- [00:40:11,360 - 00:40:14,360] It doesn't change the energy
+- [00:40:14,360 - 00:40:16,360] I think we proved that last time
+- [00:40:16,360 - 00:40:19,360] That when you have a symmetry
+- [00:40:19,360 - 00:40:21,360] It means that the generators
+- [00:40:21,360 - 00:40:22,360] When they act on a state
+- [00:40:22,360 - 00:40:24,360] Do not change its energy
+- [00:40:24,360 - 00:40:26,360] That's another way of saying
+- [00:40:26,360 - 00:40:28,360] That G commutes with H
+- [00:40:28,360 - 00:40:31,360] And it also says something else
+- [00:40:31,360 - 00:40:33,360] It says that the time derivative
+- [00:40:33,360 - 00:40:36,360] Of the generator is zero
+- [00:40:36,360 - 00:40:39,360] As a quantum mechanical equation of motion
+- [00:40:39,360 - 00:40:41,360] It says that G is a conservative equation
+- [00:40:41,360 - 00:40:42,360] Of the quantity
+- [00:40:42,360 - 00:40:43,360] So I put those things together
+- [00:40:43,360 - 00:40:45,360] I'm just reminding you of them
+- [00:40:45,360 - 00:40:48,360] Because we're going to play that game now
+- [00:40:48,360 - 00:40:50,360] With generators
+- [00:40:50,360 - 00:40:53,360] All the ordinary things of physics
+- [00:40:54,360 - 00:40:57,360] Always represent physical quantities
+- [00:40:57,360 - 00:41:00,360] Which are even elements
+- [00:41:00,360 - 00:41:02,360] Of a Grassman algebra
+- [00:41:02,360 - 00:41:03,360] Anything you measure
+- [00:41:03,360 - 00:41:04,360] When you measure it
+- [00:41:04,360 - 00:41:05,360] You get a number
+- [00:41:05,360 - 00:41:07,360] The number is a number
+- [00:41:07,360 - 00:41:10,360] It's not an odd element of a Grassman algebra
+- [00:41:10,360 - 00:41:12,360] And so all the
+- [00:41:12,360 - 00:41:14,360] Fermion fields are odd
+- [00:41:14,360 - 00:41:16,360] But you never measure
+- [00:41:16,360 - 00:41:18,360] Fermion fields by themselves
+- [00:41:18,360 - 00:41:20,360] You can't measure the field of a Fermion
+- [00:41:20,360 - 00:41:22,360] You can only measure
+- [00:41:22,360 - 00:41:24,360] The square of the field of a Fermion
+- [00:41:24,360 - 00:41:26,360] Or something like that
+- [00:41:26,360 - 00:41:28,360] The things you measure in nature
+- [00:41:28,360 - 00:41:30,360] Are things which you should think of
+- [00:41:30,360 - 00:41:32,360] As even elements
+- [00:41:32,360 - 00:41:34,360] If there's any reason at all
+- [00:41:34,360 - 00:41:36,360] To be thinking about a Grassman algebra
+- [00:41:36,360 - 00:41:38,360] If there's any reason
+- [00:41:38,360 - 00:41:39,360] And you can't measure it
+- [00:41:39,360 - 00:41:41,360] For any reason
+- [00:41:41,360 - 00:41:43,360] The symmetry elements
+- [00:41:43,360 - 00:41:45,360] Rotation symmetries
+- [00:41:45,360 - 00:41:47,360] All the normal symmetries of nature
+- [00:41:47,360 - 00:41:49,360] Involve commutators
+- [00:41:49,360 - 00:41:51,360] Involve commutators
+- [00:41:51,360 - 00:41:53,360] And not the
+- [00:41:53,360 - 00:41:55,360] And not anti-commutators
+- [00:41:59,360 - 00:42:01,360] Supersymmetry is a symmetry
+- [00:42:01,360 - 00:42:03,360] Where the generators
+- [00:42:03,360 - 00:42:06,360] Are odd elements of a Grassman algebra
+- [00:42:06,360 - 00:42:08,360] Which means everything you would say
+- [00:42:08,360 - 00:42:10,360] About ordinary symmetries
+- [00:42:10,360 - 00:42:12,360] You say exactly the same thing
+- [00:42:12,360 - 00:42:14,360] Except you put anti-commutators there
+- [00:42:14,360 - 00:42:16,360] Alright, so I'm going to give you
+- [00:42:16,360 - 00:42:18,360] Now an example
+- [00:42:28,360 - 00:42:30,360] Let's invent two generators
+- [00:42:30,360 - 00:42:32,360] G
+- [00:42:32,360 - 00:42:34,360] Sorry, Q
+- [00:42:34,360 - 00:42:36,360] Q and Q dagger
+- [00:42:36,360 - 00:42:38,360] Or Q bar
+- [00:42:38,360 - 00:42:39,360] And you can't say that
+- [00:42:39,360 - 00:42:41,360] It's a complex conjugate
+- [00:42:41,360 - 00:42:43,360] That's a complex conjugate
+- [00:42:43,360 - 00:42:45,360] It's a complex conjugate
+- [00:42:45,360 - 00:42:46,360] As I said
+- [00:42:46,360 - 00:42:48,360] It's sometimes profitable
+- [00:42:48,360 - 00:42:50,360] To combine the generators of groups
+- [00:42:50,360 - 00:42:52,360] Into complex combinations
+- [00:42:52,360 - 00:42:54,360] Supersymmetry is nicely expressed
+- [00:42:54,360 - 00:42:58,360] In terms of complex combinations
+- [00:42:58,360 - 00:43:01,360] These are intended to be odd elements
+- [00:43:01,360 - 00:43:02,360] Alright
+- [00:43:02,360 - 00:43:04,360] Odd elements means
+- [00:43:04,360 - 00:43:06,360] That the anti-commutator of Q with itself
+- [00:43:06,360 - 00:43:07,360] Is zero
+- [00:43:07,360 - 00:43:09,360] The anti-commutator of Q with Q bar
+- [00:43:09,360 - 00:43:10,360] Might be something else
+- [00:43:10,360 - 00:43:11,360] Just in the same way
+- [00:43:11,360 - 00:43:13,360] That when you have any other kind of group
+- [00:43:13,360 - 00:43:15,360] When you commute two generators
+- [00:43:15,360 - 00:43:17,360] You get a third generator
+- [00:43:17,360 - 00:43:19,360] You may find out
+- [00:43:19,360 - 00:43:21,360] That when you anti-commute Q with Q bar
+- [00:43:21,360 - 00:43:23,360] You get something else
+- [00:43:23,360 - 00:43:25,360] Would it be an even or an odd element
+- [00:43:25,360 - 00:43:27,360] Of the algebra
+- [00:43:27,360 - 00:43:29,360] Even
+- [00:43:29,360 - 00:43:30,360] Alright
+- [00:43:30,360 - 00:43:32,360] So, if you have a group
+- [00:43:32,360 - 00:43:34,360] That's a group
+- [00:43:34,360 - 00:43:35,360] That's a group
+- [00:43:35,360 - 00:43:37,360] That's a group that's even
+- [00:43:37,360 - 00:43:38,360] Alright
+- [00:43:38,360 - 00:43:39,360] So let's
+- [00:43:39,360 - 00:43:41,360] I'm going to construct for you an example
+- [00:43:41,360 - 00:43:43,360] It's constructed out of fermion fields
+- [00:43:43,360 - 00:43:45,360] Or basically something simpler than that
+- [00:43:45,360 - 00:43:47,360] I think we may have even talked about it
+- [00:43:47,360 - 00:43:49,360] But I'm going to go through the details of it
+- [00:43:49,360 - 00:43:52,360] Because it is the basic
+- [00:43:52,360 - 00:43:54,360] The basic supersymmetry
+- [00:43:54,360 - 00:44:00,360] The most primitive version of the supersymmetry
+- [00:44:00,360 - 00:44:02,360] Is the most primitive version
+- [00:44:02,360 - 00:44:04,360] It's related
+- [00:44:04,360 - 00:44:06,360] To the real supersymmetry
+- [00:44:06,360 - 00:44:09,360] The same way that quantum field theory
+- [00:44:09,360 - 00:44:12,360] Is related to the harmonic oscillator
+- [00:44:12,360 - 00:44:14,360] That's how primitive it is
+- [00:44:14,360 - 00:44:15,360] But
+- [00:44:15,360 - 00:44:17,360] If you know all about harmonic oscillators
+- [00:44:17,360 - 00:44:19,360] You know a lot about quantum field theory
+- [00:44:19,360 - 00:44:20,360] Because quantum field theory
+- [00:44:20,360 - 00:44:23,360] Is just a collection of harmonic oscillators
+- [00:44:23,360 - 00:44:24,360] Same thing here
+- [00:44:24,360 - 00:44:25,360] Very similar
+- [00:44:25,360 - 00:44:27,360] But now we have to introduce
+- [00:44:27,360 - 00:44:31,360] Two kinds of creation and annihilation operators
+- [00:44:31,360 - 00:44:33,360] We can think of them as odd and even
+- [00:44:33,360 - 00:44:37,360] The even ones are just harmonic oscillator
+- [00:44:37,360 - 00:44:39,360] Creation and annihilation operators
+- [00:44:39,360 - 00:44:41,360] A plus or A minus
+- [00:44:41,360 - 00:44:42,860] And I'll just remind you what
+- [00:44:42,860 - 00:44:44,360] the algebra of these things is
+- [00:44:44,360 - 00:44:48,360] The commutator of A plus with A plus
+- [00:44:48,360 - 00:44:51,860] Is the same as the commutator
+- [00:44:51,860 - 00:44:55,360] of A minus with A minus
+- [00:44:55,360 - 00:44:58,360] Is equal to zero
+- [00:44:58,360 - 00:45:02,360] And the commutator of A minus with A plus
+- [00:45:02,360 - 00:45:04,360] Is equal to one
+- [00:45:04,360 - 00:45:09,360] That's the algebra of creation and annihilation operators
+- [00:45:09,360 - 00:45:13,360] And all these are perfectly conventional
+- [00:45:13,360 - 00:45:17,360] Harmonic oscillator raising and lowering operators
+- [00:45:17,360 - 00:45:20,360] Now we'll also introduce a collection of
+- [00:45:20,360 - 00:45:24,360] Fermionic creation and annihilation operators
+- [00:45:24,360 - 00:45:27,360] Same exact rules
+- [00:45:27,360 - 00:45:30,360] Except anti-commutator
+- [00:45:32,360 - 00:45:36,360] Commutator of two creation operators
+- [00:45:36,360 - 00:45:40,360] Is equal to the commutator of two annihilation operators
+- [00:45:40,360 - 00:45:42,360] Anti-commutator, excuse me
+- [00:45:46,360 - 00:45:48,360] Is equal to zero
+- [00:45:48,360 - 00:45:51,360] And the anti-commutator
+- [00:45:51,360 - 00:45:55,360] Of a creation operator
+- [00:45:55,360 - 00:45:58,360] With an annihilation operator for fermions
+- [00:45:58,360 - 00:46:00,360] Is again equal to one
+- [00:46:02,360 - 00:46:04,860] Incidentally, this says that C
+- [00:46:04,860 - 00:46:07,360] plus squared is equal to zero
+- [00:46:07,360 - 00:46:08,860] And this says that C
+- [00:46:08,860 - 00:46:10,360] minus squared is equal to zero
+- [00:46:10,360 - 00:46:12,360] Only one creation operator for fermion
+- [00:46:12,360 - 00:46:15,360] And only one creation operator for a boson
+- [00:46:15,360 - 00:46:16,360] Okay
+- [00:46:16,360 - 00:46:18,360] So we're not talking about anything
+- [00:46:18,360 - 00:46:20,360] as complicated as a quantum field
+- [00:46:20,360 - 00:46:22,360] We could just be talking about
+- [00:46:22,360 - 00:46:25,360] A fermion or a boson at rest
+- [00:46:25,360 - 00:46:28,360] It's either there or it's not there
+- [00:46:28,360 - 00:46:30,360] Or if it's a boson, there are one of them
+- [00:46:30,360 - 00:46:32,360] Or two of them or three of them
+- [00:46:32,360 - 00:46:34,360] We're not worried about its motion
+- [00:46:34,360 - 00:46:35,360] Just a question
+- [00:46:35,360 - 00:46:37,360] A boson at rest
+- [00:46:37,360 - 00:46:39,360] How many of them are there
+- [00:46:39,360 - 00:46:40,360] That's controlled by the
+- [00:46:40,360 - 00:46:42,360] And we can create and annihilate them
+- [00:46:42,360 - 00:46:44,360] Or a fermion at rest
+- [00:46:44,360 - 00:46:46,360] Not worried about their momentum
+- [00:46:46,360 - 00:46:48,360] Okay
+- [00:46:48,360 - 00:46:51,360] Now I will construct for you
+- [00:46:51,360 - 00:46:54,360] The
+- [00:46:54,360 - 00:46:58,360] Generators of a supergroup
+- [00:46:58,360 - 00:47:00,360] Or of a supersymmetry
+- [00:47:00,360 - 00:47:02,360] Let's suppose these particles
+- [00:47:02,360 - 00:47:04,360] Have a mass m
+- [00:47:04,360 - 00:47:06,360] Let's suppose they have a mass m
+- [00:47:06,360 - 00:47:10,360] And the energy
+- [00:47:10,360 - 00:47:12,360] Is just the sum of all
+- [00:47:12,360 - 00:47:14,360] the masses of all the particles
+- [00:47:14,360 - 00:47:16,360] Mc squared
+- [00:47:16,360 - 00:47:18,360] If we're interested in the energy
+- [00:47:18,360 - 00:47:20,360] It's just the total number of fermions
+- [00:47:20,360 - 00:47:22,360] Times the mass of a fermion
+- [00:47:22,360 - 00:47:24,360] Plus the total number of bosons
+- [00:47:24,360 - 00:47:26,360] Times the mass of a boson
+- [00:47:26,360 - 00:47:28,360] If the mass of the fermions and the bosons
+- [00:47:28,360 - 00:47:30,360] Happens to be the same
+- [00:47:30,360 - 00:47:32,360] Then the total number of particles
+- [00:47:32,360 - 00:47:34,360] Fermions or bosons
+- [00:47:34,360 - 00:47:36,360] Times the mass of the particle
+- [00:47:36,360 - 00:47:38,360] So let's call the mass of the particle m
+- [00:47:38,360 - 00:47:40,360] And let's write
+- [00:47:40,360 - 00:47:42,360] Q is equal to square root of m
+- [00:47:42,360 - 00:47:44,360] That's a convention of course
+- [00:47:44,360 - 00:47:46,360] Putting a square root of m there is a convention
+- [00:47:46,360 - 00:47:48,360] Times the creation operator
+- [00:47:48,360 - 00:47:50,360] Of a boson
+- [00:47:50,360 - 00:47:52,360] Times the annihilation operator
+- [00:47:52,360 - 00:47:54,360] Of a fermion
+- [00:47:56,360 - 00:47:58,360] So what does it do
+- [00:47:58,360 - 00:48:00,360] We talked about this last time
+- [00:48:00,360 - 00:48:02,360] Let me just remind you
+- [00:48:02,360 - 00:48:04,360] It removes a fermion if there's one there
+- [00:48:04,360 - 00:48:06,360] And it replaces it by a boson
+- [00:48:06,360 - 00:48:08,360] So it's a thing which takes a fermion
+- [00:48:08,360 - 00:48:10,360] And makes a boson out of it
+- [00:48:10,360 - 00:48:12,360] Likewise for this one
+- [00:48:12,360 - 00:48:14,360] Except not quite likewise
+- [00:48:14,360 - 00:48:16,360] Square root of m
+- [00:48:16,360 - 00:48:18,360] Times a minus c plus
+- [00:48:18,360 - 00:48:20,360] Oh I forgot to write down something
+- [00:48:20,360 - 00:48:22,360] We didn't discuss the
+- [00:48:22,360 - 00:48:24,360] Commutators of the a's with the c's
+- [00:48:24,360 - 00:48:26,360] The a's are even
+- [00:48:26,360 - 00:48:28,360] The c's are odd
+- [00:48:28,360 - 00:48:30,360] And the a's are even
+- [00:48:30,360 - 00:48:32,360] The rule is any a
+- [00:48:32,360 - 00:48:34,360] Whether plus or minus
+- [00:48:34,360 - 00:48:36,360] Commutes
+- [00:48:36,360 - 00:48:38,360] With any c
+- [00:48:40,360 - 00:48:42,360] They all commute
+- [00:48:42,360 - 00:48:44,360] Among themselves
+- [00:48:44,360 - 00:48:46,360] Alright so that means in particular
+- [00:48:46,360 - 00:48:48,360] That it doesn't matter which order
+- [00:48:48,360 - 00:48:50,360] You can take this odd element
+- [00:48:50,360 - 00:48:52,360] The c's are odd elements
+- [00:48:52,360 - 00:48:54,360] And bring it past the even elements
+- [00:48:54,360 - 00:48:56,360] Doesn't matter
+- [00:48:56,360 - 00:48:58,360] Likewise here
+- [00:48:58,360 - 00:49:00,360] These are the generators
+- [00:49:00,360 - 00:49:02,360] Of the supersymmetry
+- [00:49:02,360 - 00:49:04,360] Algebra
+- [00:49:04,360 - 00:49:06,360] Alright what do we want to do
+- [00:49:06,360 - 00:49:08,360] I would like to know what the
+- [00:49:08,360 - 00:49:10,360] Anti-commutator of
+- [00:49:10,360 - 00:49:12,360] Q with q bar is
+- [00:49:12,360 - 00:49:14,360] That's the analog of knowing
+- [00:49:14,360 - 00:49:16,360] What the commutators are
+- [00:49:16,360 - 00:49:18,360] For group elements
+- [00:49:18,360 - 00:49:20,360] They tell you the structure of the group
+- [00:49:20,360 - 00:49:22,360] So let's see if we can figure out the analog
+- [00:49:22,360 - 00:49:24,360] Here for
+- [00:49:24,360 - 00:49:26,360] These supersymmetry
+- [00:49:26,360 - 00:49:28,360] Operations
+- [00:49:28,360 - 00:49:30,360] And as I said
+- [00:49:30,360 - 00:49:32,360] What they do
+- [00:49:32,360 - 00:49:34,360] They don't rotate things in space
+- [00:49:34,360 - 00:49:36,360] They don't translate things in space
+- [00:49:36,360 - 00:49:38,360] They simply take a fermion
+- [00:49:38,360 - 00:49:40,360] And replace it by a boson
+- [00:49:40,360 - 00:49:42,360] Or vice versa
+- [00:49:42,360 - 00:49:44,360] But let's work out the anti-commutator
+- [00:49:44,360 - 00:49:46,360] Let's work out the mathematics of them
+- [00:49:46,360 - 00:49:48,360] It's fun
+- [00:49:48,360 - 00:49:50,360] It's not very hard
+- [00:49:50,360 - 00:49:52,360] Okay anti-commutator
+- [00:49:52,360 - 00:49:54,360] It's not hard
+- [00:49:54,360 - 00:49:56,360] But if I try doing it in real time
+- [00:49:56,360 - 00:49:58,360] I will surely make mistakes
+- [00:49:58,360 - 00:50:00,360] I'm a bit puzzled
+- [00:50:00,360 - 00:50:02,360] So I will use my notes
+- [00:50:02,360 - 00:50:04,360] Okay anti-commutator of
+- [00:50:04,360 - 00:50:06,360] Q with q dagger
+- [00:50:06,360 - 00:50:08,360] What is that
+- [00:50:08,360 - 00:50:10,360] Well first of all
+- [00:50:10,360 - 00:50:12,360] It has an m in front of it
+- [00:50:12,360 - 00:50:14,360] Q times a q dagger
+- [00:50:14,360 - 00:50:16,360] Will have an m
+- [00:50:16,360 - 00:50:18,360] Q and q bar
+- [00:50:18,360 - 00:50:20,360] Q dagger and q bar
+- [00:50:20,360 - 00:50:22,360] Are the same thing
+- [00:50:22,360 - 00:50:24,360] No difference
+- [00:50:24,360 - 00:50:26,360] Q and q bar
+- [00:50:26,360 - 00:50:28,360] That will have m
+- [00:50:28,360 - 00:50:30,360] And q and q
+- [00:50:30,360 - 00:50:32,360] I can't do this
+- [00:50:32,360 - 00:50:34,360] But I can do
+- [00:50:34,360 - 00:50:36,360] If I do this
+- [00:50:36,360 - 00:50:38,360] It's going to be
+- [00:50:38,360 - 00:50:40,360] A plus c minus
+- [00:50:40,360 - 00:50:42,360] That's q
+- [00:50:42,360 - 00:50:44,360] And then q bar
+- [00:50:44,360 - 00:50:46,360] Q bar should be
+- [00:50:46,360 - 00:50:48,360] A minus c plus
+- [00:50:48,360 - 00:50:50,360] That's q times q bar
+- [00:50:50,360 - 00:50:52,360] But now I have to add
+- [00:50:52,360 - 00:50:54,360] Q bar times q
+- [00:50:54,360 - 00:50:56,360] In the opposite order
+- [00:50:56,360 - 00:50:58,360] So I will add here
+- [00:50:58,360 - 00:51:04,800] order, a minus c plus times a plus
+- [00:51:04,800 - 00:51:11,240] c minus. Whoops, that's it. That's the anti-commutator,
+- [00:51:11,240 - 00:51:14,210] this times this plus the opposite order. Okay, let's
+- [00:51:14,210 - 00:51:17,180] work on it a little bit. It's not very
+- [00:51:17,180 - 00:51:21,050] hard. First of all, you can take the a's
+- [00:51:21,050 - 00:51:24,920] past the c's, right? You can pass an odd element,
+- [00:51:24,920 - 00:51:27,080] an even element right past an odd element,
+- [00:51:27,080 - 00:51:29,240] it costs you nothing. So we can write this
+- [00:51:29,240 - 00:51:33,410] as m, I just want to put all the a's
+- [00:51:33,410 - 00:51:37,580] together and all the c's together, a plus a minus times
+- [00:51:37,580 - 00:51:45,170] c minus c plus. And then over here, it's plus
+- [00:51:45,170 - 00:51:52,760] a minus a plus c plus c minus. Okay, so far,
+- [00:51:52,760 - 00:51:54,320] nothing very interesting about it.
+- [00:51:54,320 - 00:51:54,820] But now let me show you how to do it.
+- [00:51:54,920 - 00:51:58,640] Let me add and subtract something. Now here's
+- [00:51:58,640 - 00:52:02,360] where I've got to do it carefully. Let's add
+- [00:52:02,360 - 00:52:09,870] inside the bracket, inside the bracket, plus, let's
+- [00:52:09,870 - 00:52:17,380] get it right, a plus a minus c plus
+- [00:52:17,380 - 00:52:19,590] c minus. But now I've added it, I'm not
+- [00:52:19,590 - 00:52:21,800] allowed to just go around adding things, I've got
+- [00:52:21,800 - 00:52:23,320] to subtract it.
+- [00:52:23,320 - 00:52:24,320] So
+- [00:52:24,320 - 00:52:24,970] just like last time, I'm going to divide the
+- [00:52:24,970 - 00:52:25,620] gap between those two, so now I'm sorry, I'm
+- [00:52:25,620 - 00:52:25,860] talking about the two not just the
+- [00:52:25,860 - 00:52:26,100] two I used to have on the table.
+- [00:52:26,100 - 00:52:27,000] I'm 제가
+- [00:52:27,000 - 00:52:27,780] going to subtract also its area
+- [00:52:27,780 - 00:52:28,560] in between the tag Lady key.
+- [00:52:28,560 - 00:52:29,560] So
+- [00:52:29,560 - 00:52:30,930] I just want to put all theive here in the
+- [00:52:30,930 - 00:52:32,300] bracket, and if I'm Natureаю R, so I'm going to
+- [00:52:32,300 - 00:52:34,360] call this first theier, enter whatever that is, enter
+- [00:52:34,360 - 00:52:36,420] it in anal to the end of the bracket.
+- [00:52:36,420 - 00:52:37,580] I'm going to add win over to this here.
+- [00:52:37,580 - 00:52:41,210] And then talking of loop during the reformation,
+- [00:52:41,210 - 00:52:44,840] once again I'm going to raise the dash, I'm
+- [00:52:44,840 - 00:52:47,740] going to curl, and then out marking here.
+- [00:52:47,740 - 00:52:48,740] Let's say it's R.
+- [00:52:48,740 - 00:52:50,030] Sometimes when I collapse putting your caps
+- [00:52:50,030 - 00:52:51,320] in with my favorites, it sehr Customs, and
+- [00:52:51,320 - 00:52:52,320] today we go with R.
+- [00:52:52,320 - 00:52:53,560] If you can go with that, that makes sense.
+- [00:52:53,560 - 00:52:54,560] But what is that?
+- [00:52:58,160 - 00:53:01,260] So, the c plus c mi- the c minus
+- [00:53:01,260 - 00:53:04,360] c plus and the c plus c minus add together,
+- [00:53:04,759 - 00:53:08,560] making 1, and this thing first of all contains m,
+- [00:53:09,660 - 00:53:13,360] times, it looks like it's got twice,
+- [00:53:14,560 - 00:53:16,759] a plus a minus, right?
+- [00:53:17,360 - 00:53:18,960] Agreed? That's the first term.
+- [00:53:19,360 - 00:53:20,560] Now what about this term?
+- [00:53:20,560 - 00:53:22,860] This term has c plus c
+- [00:53:22,860 - 00:53:25,160] minus and c plus c minus again,
+- [00:53:26,160 - 00:53:29,010] but it has a minus a
+- [00:53:29,010 - 00:53:31,860] plus minus a plus a minus.
+- [00:53:32,360 - 00:53:34,210] So what does it have? It has
+- [00:53:34,210 - 00:53:36,060] the commutator of a minus with a plus.
+- [00:53:36,060 - 00:53:36,660] What is that?
+- [00:53:38,759 - 00:53:41,609] So, this comes down and
+- [00:53:41,609 - 00:53:44,460] adds plus c plus c minus,
+- [00:53:44,960 - 00:53:47,759] all times twice m.
+- [00:53:47,759 - 00:53:49,860] Somehow I,
+- [00:53:50,560 - 00:53:51,360] hmm?
+- [00:53:53,160 - 00:53:54,759] Say it again. Oh no, no 2.
+- [00:53:55,259 - 00:53:56,360] There's no 2, is there?
+- [00:53:56,960 - 00:53:58,860] No, where did I get? No 2.
+- [00:53:59,360 - 00:54:00,160] No 2.
+- [00:54:03,259 - 00:54:03,960] No 2.
+- [00:54:04,660 - 00:54:05,259] No 2.
+- [00:54:06,360 - 00:54:07,860] Good, because I hated that 2.
+- [00:54:10,759 - 00:54:12,860] Okay, what is a plus a minus
+- [00:54:13,759 - 00:54:15,960] in harmonic oscillator language?
+- [00:54:17,960 - 00:54:19,960] It's the number of bosons.
+- [00:54:20,560 - 00:54:22,560] What is c plus c minus?
+- [00:54:24,560 - 00:54:26,360] It's the number of fermions.
+- [00:54:26,960 - 00:54:29,010] So, we can write that
+- [00:54:29,010 - 00:54:31,060] this is equal to the mass
+- [00:54:32,160 - 00:54:32,660] of,
+- [00:54:33,860 - 00:54:36,560] times the number of bosons,
+- [00:54:37,060 - 00:54:39,860] plus the number of fermions.
+- [00:54:40,360 - 00:54:42,910] Now notice I have assumed that the mass
+- [00:54:42,910 - 00:54:45,460] of the fermions and the bosons is the same.
+- [00:54:46,360 - 00:54:47,259] I've assumed that.
+- [00:54:48,560 - 00:54:49,460] We'll explore a little what
+- [00:54:49,460 - 00:54:50,360] would happen if I did that.
+- [00:54:50,360 - 00:54:51,360] If I didn't assume that,
+- [00:54:51,860 - 00:54:53,360] all right, then I wouldn't have gotten,
+- [00:54:53,860 - 00:54:56,360] I would have gotten whatever I got here.
+- [00:54:57,360 - 00:54:58,860] What is this expression here?
+- [00:54:59,860 - 00:55:01,360] We're talking about part of,
+- [00:55:01,360 - 00:55:04,360] we're not thinking about the motion of particles.
+- [00:55:04,360 - 00:55:06,360] We're talking about particles at rest.
+- [00:55:07,360 - 00:55:08,860] For a particle at rest, its
+- [00:55:08,860 - 00:55:10,360] mass is equal to its energy.
+- [00:55:11,360 - 00:55:11,860] All right?
+- [00:55:12,360 - 00:55:14,360] So, this is the mass of a
+- [00:55:14,360 - 00:55:16,360] particle times the total number of particles.
+- [00:55:16,360 - 00:55:18,360] It's the total energy of the system,
+- [00:55:18,360 - 00:55:20,160] and we can either call it the energy,
+- [00:55:20,160 - 00:55:21,660] or the Hamiltonian.
+- [00:55:23,660 - 00:55:25,660] So, here's what we've discovered.
+- [00:55:26,160 - 00:55:32,660] We've discovered that the anticommutator of Q with Q bar,
+- [00:55:33,160 - 00:55:34,660] for this simple system,
+- [00:55:35,660 - 00:55:36,660] is the Hamiltonian.
+- [00:55:38,660 - 00:55:39,660] Now,
+- [00:55:40,660 - 00:55:43,660] first of all, the Hamiltonian is an even element.
+- [00:55:43,660 - 00:55:46,660] Is the Hamiltonian a generator of a symmetry group?
+- [00:55:46,660 - 00:55:50,160] Yes.
+- [00:55:50,160 - 00:55:53,160] It's the generator of time translations.
+- [00:55:53,160 - 00:55:56,160] Time translations are a symmetry of systems
+- [00:55:56,160 - 00:55:59,660] with time translation invariance.
+- [00:56:00,160 - 00:56:04,160] And the Hamiltonian is the generator of time translations.
+- [00:56:05,160 - 00:56:06,160] All right, let's finish up,
+- [00:56:06,160 - 00:56:07,160] let's finish up the group.
+- [00:56:08,160 - 00:56:09,160] We have to find out,
+- [00:56:10,160 - 00:56:11,660] we know, what we've discovered
+- [00:56:12,160 - 00:56:14,160] is that the Qs by themselves
+- [00:56:14,660 - 00:56:15,660] are not enough
+- [00:56:15,660 - 00:56:16,160] to form
+- [00:56:16,160 - 00:56:17,160] a closed algebra.
+- [00:56:17,160 - 00:56:18,660] are not enough to form a closed algebra.
+- [00:56:19,660 - 00:56:20,160] When you,
+- [00:56:20,160 - 00:56:22,660] when you anticommute the Qs with themselves,
+- [00:56:22,660 - 00:56:25,160] you get back the energy, or the Hamiltonian.
+- [00:56:25,660 - 00:56:27,410] What happens if you anticommute
+- [00:56:27,410 - 00:56:29,160] a Q with a Q, incidentally?
+- [00:56:32,160 - 00:56:33,660] That's just Q squared.
+- [00:56:34,660 - 00:56:35,660] That's just Q squared.
+- [00:56:35,660 - 00:56:37,160] Where is Q? Go up to the top.
+- [00:56:37,660 - 00:56:41,160] Q squared will have a C, two C minuses.
+- [00:56:42,160 - 00:56:43,160] Two C minuses.
+- [00:56:43,960 - 00:56:45,660] Q squared will have A plus,
+- [00:56:45,660 - 00:56:46,160] A plus,
+- [00:56:46,160 - 00:56:46,660] C minus,
+- [00:56:46,660 - 00:56:47,160] C minus.
+- [00:56:47,160 - 00:56:50,160] But C minus squared is zero.
+- [00:56:51,160 - 00:56:55,660] So the anticommutator of Q with itself is zero.
+- [00:56:57,660 - 00:57:03,660] The anticommutator of Q dagger with itself is zero.
+- [00:57:03,660 - 00:57:06,160] Zero is okay on the right hand
+- [00:57:06,160 - 00:57:08,660] side of a commutation relation for a group.
+- [00:57:09,160 - 00:57:09,660] All right.
+- [00:57:09,660 - 00:57:10,660] What about,
+- [00:57:11,660 - 00:57:12,160] what's missing?
+- [00:57:12,160 - 00:57:13,160] What haven't I,
+- [00:57:13,660 - 00:57:14,660] which pieces of the algebra,
+- [00:57:14,660 - 00:57:16,660] haven't I considered?
+- [00:57:18,160 - 00:57:19,160] H with Q, right?
+- [00:57:19,160 - 00:57:20,160] We've,
+- [00:57:20,160 - 00:57:21,160] by comm,
+- [00:57:21,160 - 00:57:22,660] anticommuting Q with Q,
+- [00:57:22,660 - 00:57:26,160] we found out that it's got to contain the Hamiltonian.
+- [00:57:26,660 - 00:57:28,160] Now this is very odd,
+- [00:57:29,160 - 00:57:31,160] that the symmetry group
+- [00:57:31,660 - 00:57:34,160] not only contains these operations,
+- [00:57:34,160 - 00:57:36,160] which take fermions to bosons,
+- [00:57:36,660 - 00:57:39,160] but it also contains the Hamiltonian,
+- [00:57:39,160 - 00:57:41,160] which means time translations.
+- [00:57:42,660 - 00:57:43,660] Very interesting.
+- [00:57:43,660 - 00:57:46,160] Okay, what about Q with H?
+- [00:57:50,160 - 00:57:52,660] I'm not going to do it on the blackboard.
+- [00:57:52,660 - 00:57:53,910] I'm going to leave it for
+- [00:57:53,910 - 00:57:55,160] you as an exercise to do.
+- [00:57:55,660 - 00:57:57,160] All you have to do, here's H,
+- [00:57:57,660 - 00:57:58,660] commute it with Q,
+- [00:57:58,660 - 00:58:00,160] but I'll just show you an
+- [00:58:00,160 - 00:58:01,660] easy way to think about the answer.
+- [00:58:03,660 - 00:58:05,160] Q with H is zero.
+- [00:58:05,660 - 00:58:07,660] Anticommutator of Q with H is zero.
+- [00:58:07,660 - 00:58:11,160] Not because it's an odd or,
+- [00:58:11,160 - 00:58:12,660] sorry, not anticommutator.
+- [00:58:12,660 - 00:58:13,160] You don't,
+- [00:58:13,160 - 00:58:16,660] you don't anticommute odd with even.
+- [00:58:17,160 - 00:58:18,660] You commute odd with even.
+- [00:58:19,660 - 00:58:21,660] A commutator of Q with H.
+- [00:58:24,660 - 00:58:25,160] Happens,
+- [00:58:25,160 - 00:58:26,160] Which is even?
+- [00:58:26,660 - 00:58:27,160] Hmm?
+- [00:58:27,160 - 00:58:28,160] Which is even? H?
+- [00:58:28,160 - 00:58:29,160] H is even.
+- [00:58:29,160 - 00:58:31,160] H is even. H is the energy.
+- [00:58:32,160 - 00:58:33,160] You wouldn't,
+- [00:58:33,160 - 00:58:36,160] you wouldn't like a system whose energy was a,
+- [00:58:36,660 - 00:58:37,660] Grassman variable.
+- [00:58:38,160 - 00:58:39,660] No, not good.
+- [00:58:40,160 - 00:58:42,160] Okay, happens that this is zero.
+- [00:58:42,160 - 00:58:43,660] Now it would not be zero,
+- [00:58:43,660 - 00:58:45,660] I'm going to show you why in a moment.
+- [00:58:45,660 - 00:58:49,160] It would not be zero if the masses of
+- [00:58:49,160 - 00:58:52,660] the bosons and the fermions were not the same.
+- [00:58:53,660 - 00:58:54,660] So let me show you how,
+- [00:58:54,660 - 00:58:57,160] how you can see that it's zero if,
+- [00:58:57,160 - 00:58:58,660] and actually only if,
+- [00:58:58,660 - 00:59:00,160] the mass of the boson is the
+- [00:59:00,160 - 00:59:01,660] same as the mass of the fermion.
+- [00:59:02,160 - 00:59:02,660] This is,
+- [00:59:02,660 - 00:59:05,660] we've done this sort of manipulation many times.
+- [00:59:06,160 - 00:59:09,160] You take QH minus HQ,
+- [00:59:10,160 - 00:59:11,160] and you act on any statement,
+- [00:59:11,160 - 00:59:14,160] on any state which has a definite energy,
+- [00:59:15,160 - 00:59:17,160] any state which has a definite energy.
+- [00:59:18,660 - 00:59:19,160] Okay?
+- [00:59:19,160 - 00:59:19,660] Whatever.
+- [00:59:24,660 - 00:59:25,160] Okay.
+- [00:59:25,660 - 00:59:27,160] What does Q do?
+- [00:59:28,160 - 00:59:30,160] Q either removes,
+- [00:59:30,160 - 00:59:31,160] I can't remember,
+- [00:59:31,160 - 00:59:32,410] does Q remove a fermion
+- [00:59:32,410 - 00:59:33,660] and replace it by a boson?
+- [00:59:33,660 - 00:59:34,660] Or the other way?
+- [00:59:35,160 - 00:59:36,160] Whatever it does,
+- [00:59:36,660 - 00:59:40,660] it takes one particle out and puts another particle in,
+- [00:59:41,160 - 00:59:43,660] of exactly the same mass,
+- [00:59:43,660 - 00:59:45,160] if the masses are equal.
+- [00:59:45,660 - 00:59:47,160] Assume for the moment,
+- [00:59:47,660 - 00:59:49,160] that the masses of the
+- [00:59:49,160 - 00:59:50,660] bosons and the fermions are equal.
+- [00:59:50,660 - 00:59:54,160] Then what's the energy of the state that you get,
+- [00:59:54,160 - 00:59:55,910] when you act with Q
+- [00:59:55,910 - 00:59:57,660] on a state of definite energy?
+- [00:59:59,660 - 01:00:00,660] Same energy,
+- [01:00:00,660 - 01:00:02,160] because you've just taken one particle
+- [01:00:02,160 - 01:00:03,660] out and put another one back in,
+- [01:00:04,160 - 01:00:06,160] but a particle of the same mass.
+- [01:00:06,660 - 01:00:07,160] Okay?
+- [01:00:07,660 - 01:00:08,160] So,
+- [01:00:08,660 - 01:00:09,660] this must equal,
+- [01:00:09,660 - 01:00:12,660] H acts on QE,
+- [01:00:12,660 - 01:00:15,660] that just gives me E minus E,
+- [01:00:16,160 - 01:00:17,660] times QE.
+- [01:00:19,660 - 01:00:20,160] Why?
+- [01:00:20,160 - 01:00:23,660] Because Q times E is an eigenvector of the energy.
+- [01:00:24,160 - 01:00:25,160] On the other hand,
+- [01:00:25,160 - 01:00:27,660] what about QH on E?
+- [01:00:27,660 - 01:00:28,660] What does it do?
+- [01:00:29,160 - 01:00:31,160] Well, H acts on E,
+- [01:00:31,160 - 01:00:32,660] to give just E.
+- [01:00:33,160 - 01:00:34,660] In other words, it just gives us,
+- [01:00:35,160 - 01:00:38,660] Q times E times E.
+- [01:00:39,660 - 01:00:41,660] These are the same.
+- [01:00:42,660 - 01:00:43,660] Cancels.
+- [01:00:46,160 - 01:00:47,160] That's always true.
+- [01:00:47,160 - 01:00:49,160] Anytime you have an operator,
+- [01:00:49,160 - 01:00:52,660] which acts and doesn't change the energy of a state,
+- [01:00:52,660 - 01:00:55,160] it always commutes with the Hamiltonian.
+- [01:00:56,160 - 01:00:57,660] Things which commute with the Hamiltonian,
+- [01:00:57,660 - 01:01:00,160] are things which, when you act on states,
+- [01:01:00,160 - 01:01:01,660] don't change the energy.
+- [01:01:02,160 - 01:01:03,160] This object,
+- [01:01:03,160 - 01:01:04,910] as long as the bosons and
+- [01:01:04,910 - 01:01:06,660] the fermions have the same mass,
+- [01:01:07,660 - 01:01:09,160] then Q does not,
+- [01:01:09,660 - 01:01:11,160] change the energy of the state.
+- [01:01:12,160 - 01:01:13,660] And if that's the case,
+- [01:01:13,660 - 01:01:16,160] then Q commutes with the Hamiltonian.
+- [01:01:16,660 - 01:01:19,660] What if the two particles didn't have the same mass?
+- [01:01:20,160 - 01:01:21,660] No, then it just wouldn't commute.
+- [01:01:22,660 - 01:01:24,160] And you wouldn't,
+- [01:01:24,160 - 01:01:26,660] you wouldn't have a nice closed algebra here.
+- [01:01:26,660 - 01:01:28,160] You'd get something else on the other hand,
+- [01:01:28,160 - 01:01:29,160] on the other side here,
+- [01:01:30,160 - 01:01:31,160] which would,
+- [01:01:31,660 - 01:01:32,660] eventually,
+- [01:01:33,660 - 01:01:34,660] make a mess out of it.
+- [01:01:37,160 - 01:01:38,660] Can we go back just a moment?
+- [01:01:38,660 - 01:01:39,160] Yeah.
+- [01:01:39,160 - 01:01:40,660] Before you erase that?
+- [01:01:43,160 - 01:01:44,160] Too late, but go ahead.
+- [01:01:44,160 - 01:01:44,660] I'll, I'll,
+- [01:01:44,660 - 01:01:45,660] if you ask the question,
+- [01:01:46,160 - 01:01:47,160] we'll, yeah.
+- [01:01:47,660 - 01:01:48,660] You want me to put it back?
+- [01:01:49,660 - 01:01:50,160] Okay.
+- [01:01:51,160 - 01:01:51,660] That, that,
+- [01:01:51,660 - 01:01:53,160] that thing referred to the,
+- [01:01:53,660 - 01:01:54,660] fact that,
+- [01:01:54,660 - 01:01:55,660] you, you made,
+- [01:01:56,160 - 01:01:59,160] you started off assuming E was an eigenvector of H.
+- [01:01:59,660 - 01:02:00,160] Yeah.
+- [01:02:00,160 - 01:02:01,660] And you said that Q,
+- [01:02:01,660 - 01:02:02,160] that,
+- [01:02:02,160 - 01:02:03,160] because of that,
+- [01:02:03,160 - 01:02:04,910] Q is also an eigenvector
+- [01:02:04,910 - 01:02:06,660] of H with the same energy.
+- [01:02:06,660 - 01:02:07,160] Right, right.
+- [01:02:07,160 - 01:02:08,160] Same energy, okay.
+- [01:02:08,160 - 01:02:08,660] That's the,
+- [01:02:08,660 - 01:02:10,160] that's the point I'd like to
+- [01:02:10,160 - 01:02:11,660] just do it again and then-
+- [01:02:11,660 - 01:02:12,160] All right.
+- [01:02:12,160 - 01:02:15,160] I, I think I wasn't very complete about the argument.
+- [01:02:15,160 - 01:02:16,160] Let's do it again.
+- [01:02:16,160 - 01:02:18,160] QH minus HQ,
+- [01:02:19,160 - 01:02:22,160] acting on any eigenvector of the energy.
+- [01:02:22,660 - 01:02:23,160] Okay?
+- [01:02:23,160 - 01:02:25,160] Any eigenvector of the energy.
+- [01:02:26,160 - 01:02:27,160] Okay?
+- [01:02:28,160 - 01:02:31,160] Why does Q on E have the same energy?
+- [01:02:31,660 - 01:02:33,910] It's the same energy because it
+- [01:02:33,910 - 01:02:36,160] replaces a particle with one energy.
+- [01:02:36,160 - 01:02:37,660] With exactly the same-
+- [01:02:37,660 - 01:02:38,660] Same, same energy.
+- [01:02:38,660 - 01:02:39,160] Right.
+- [01:02:39,660 - 01:02:40,160] Okay?
+- [01:02:40,160 - 01:02:41,660] It's also, so that's-
+- [01:02:41,660 - 01:02:44,660] So Q times E is an eigenvector of H.
+- [01:02:46,160 - 01:02:48,660] Because the energy-
+- [01:02:49,660 - 01:02:51,160] Because it has the same energy.
+- [01:02:51,160 - 01:02:55,160] And must, must stay, okay, and, and, and it's-
+- [01:02:56,160 - 01:02:57,910] If E is an eigenvector of the
+- [01:02:57,910 - 01:02:59,660] energy, it means it has a definite energy.
+- [01:03:00,160 - 01:03:00,660] Right.
+- [01:03:00,660 - 01:03:01,660] It's an eigen-
+- [01:03:01,660 - 01:03:04,160] Now Q times E has exactly the same energy.
+- [01:03:04,160 - 01:03:05,660] Can't have an indefinite energy.
+- [01:03:05,660 - 01:03:07,160] Can't have an indefinite energy.
+- [01:03:07,160 - 01:03:07,660] All right?
+- [01:03:07,660 - 01:03:11,660] So it's an eigenvector of H with the eigenvalue E.
+- [01:03:12,160 - 01:03:14,910] And so we can write that H over
+- [01:03:14,910 - 01:03:17,660] here can just be replaced by E times QE.
+- [01:03:18,660 - 01:03:19,660] Okay?
+- [01:03:19,660 - 01:03:23,160] Over here, this time it's even easier.
+- [01:03:23,160 - 01:03:26,660] H acts on E to give E times E, right?
+- [01:03:27,160 - 01:03:28,660] And it'll give us the same thing.
+- [01:03:28,660 - 01:03:33,160] It'll give us QE times E.
+- [01:03:33,660 - 01:03:34,660] Right.
+- [01:03:34,660 - 01:03:35,660] Well, I think that the simpler
+- [01:03:35,660 - 01:03:36,660] way to do it is to-
+- [01:03:36,660 - 01:03:38,660] The simpler way, asimple-
+- [01:03:38,660 - 01:03:40,660] Or the way I thought of it when you put-
+- [01:03:40,660 - 01:03:44,160] When you said it the first time was that
+- [01:03:44,160 - 01:03:47,660] once you decide that, that you have an eigen-
+- [01:03:47,660 - 01:03:51,410] Another eigenvector of the same eigenvalue, you
+- [01:03:51,410 - 01:03:55,160] can replace the operator with the eigenvalue.
+- [01:03:55,160 - 01:03:56,160] Exactly.
+- [01:03:56,160 - 01:03:57,160] And eigenvalue-
+- [01:03:57,160 - 01:03:58,160] Yeah.
+- [01:03:58,160 - 01:03:59,160] I mean, scalars-
+- [01:03:59,160 - 01:04:00,160] Absolutely.
+- [01:04:00,160 - 01:04:01,160] That's right.
+- [01:04:01,160 - 01:04:02,160] That's right.
+- [01:04:02,160 - 01:04:05,160] I just was being a little bit pedantic.
+- [01:04:05,160 - 01:04:06,160] Uh.
+- [01:04:06,660 - 01:04:07,660] But you see-
+- [01:04:07,660 - 01:04:10,160] And of course, E is just a number,
+- [01:04:10,160 - 01:04:12,660] so it can go past Q, that doesn't matter.
+- [01:04:13,160 - 01:04:14,660] And this is equal to zero.
+- [01:04:14,660 - 01:04:17,160] Now, there's one other element of the argument here
+- [01:04:17,160 - 01:04:19,660] which I didn't make, which I will make now.
+- [01:04:19,660 - 01:04:23,160] This is true for every eigenvector of the energy.
+- [01:04:24,160 - 01:04:28,410] And if the eigenvectors of the energy are
+- [01:04:28,410 - 01:04:32,660] a complete basis of states, then if something-
+- [01:04:32,660 - 01:04:34,660] If an object-
+- [01:04:34,660 - 01:04:38,660] Let's just call it K, K for object.
+- [01:04:38,660 - 01:04:43,160] If it acts on a complete set of states, every state in a complete
+- [01:04:43,160 - 01:04:47,660] set of states to give zero, there's only one conclusion, K is equal to zero.
+- [01:04:47,660 - 01:04:50,160] So anything which gives zero on
+- [01:04:50,160 - 01:04:52,660] a complete set of states gives zero.
+- [01:04:52,660 - 01:04:58,160] So if the eigenvectors of the energy are complete, which they normally are,
+- [01:04:58,160 - 01:05:03,660] then it follows that commutator of Q with H must be equal to zero.
+- [01:05:03,660 - 01:05:09,660] That also says that Q is a conserved quantity.
+- [01:05:11,660 - 01:05:14,660] It says that Q is a conserved quantity,
+- [01:05:14,660 - 01:05:17,660] but it's an odd element of the algebra.
+- [01:05:17,660 - 01:05:20,660] It has an odd number of fermions in it.
+- [01:05:20,660 - 01:05:22,160] It's a new thing, it's
+- [01:05:22,160 - 01:05:23,660] a thing we haven't seen before.
+- [01:05:23,660 - 01:05:28,160] And what was also true that we haven't seen before is
+- [01:05:28,160 - 01:05:32,660] a group of symmetries which takes one kind of particle to another
+- [01:05:32,660 - 01:05:33,660] when it's a set of states.
+- [01:05:33,660 - 01:05:39,660] And when you commute them, you get something which, in
+- [01:05:39,660 - 01:05:45,660] this case the Hamiltonian, has to do with symmetries of spacetime.
+- [01:05:45,660 - 01:05:47,660] Okay? Symmetries of spacetime.
+- [01:05:47,660 - 01:05:53,660] It mixes up internal symmetries which change particles one into
+- [01:05:53,660 - 01:05:59,660] another with the energy which is the generator of time translations.
+- [01:05:59,660 - 01:06:02,660] So this is something entirely new that-
+- [01:06:02,660 - 01:06:08,660] Well, of course it's not entirely new. It goes back to
+- [01:06:08,660 - 01:06:14,660] 1972 or 73 or something like that, but it is rather unusual.
+- [01:06:14,660 - 01:06:16,660] That's called a supersymmetry.
+- [01:06:16,660 - 01:06:19,160] Now there's another way to think
+- [01:06:19,160 - 01:06:21,660] about it which is even more exotic.
+- [01:06:21,660 - 01:06:23,660] And the more exotic-
+- [01:06:23,660 - 01:06:27,660] This is fairly exotic, but it gets more exotic.
+- [01:06:27,660 - 01:06:30,660] The more exotic way is to say that-
+- [01:06:30,660 - 01:06:35,660] That there are new dimensions of spacetime.
+- [01:06:35,660 - 01:06:38,160] Now in the simple example we're doing
+- [01:06:38,160 - 01:06:40,660] here, there is no space, there's only time.
+- [01:06:40,660 - 01:06:44,660] There's only the energy, there's no position where
+- [01:06:44,660 - 01:06:48,660] we put the particles, there's no translation symmetry.
+- [01:06:48,660 - 01:06:50,660] There is time. Why is there time?
+- [01:06:50,660 - 01:06:52,660] Well, if there's energy, there's time.
+- [01:06:52,660 - 01:06:55,160] Let me just remind you what the
+- [01:06:55,160 - 01:06:57,660] connection between the Hamiltonian and time is.
+- [01:06:57,660 - 01:06:59,660] What is the connection between Hamiltonian and time?
+- [01:06:59,660 - 01:07:01,660] The relation between Hamiltonian and time.
+- [01:07:01,660 - 01:07:07,660] The partial t, the derivative of it.
+- [01:07:07,660 - 01:07:13,660] Yeah.
+- [01:07:13,660 - 01:07:20,660] We can write it in two ways.
+- [01:07:20,660 - 01:07:23,660] We can write that the
+- [01:07:23,660 - 01:07:26,660] time derivative of a state vector,
+- [01:07:26,660 - 01:07:29,660] I think it's i times the time derivative,
+- [01:07:29,660 - 01:07:33,660] is the Hamiltonian times psi.
+- [01:07:33,660 - 01:07:36,660] In fact, that's one of the definitions of the Hamiltonian.
+- [01:07:36,660 - 01:07:38,660] It's the thing which you act
+- [01:07:38,660 - 01:07:40,660] on a state to shift the time.
+- [01:07:40,660 - 01:07:43,660] Another way to write the same thing,
+- [01:07:43,660 - 01:07:46,660] this is in the form of an
+- [01:07:46,660 - 01:07:49,660] infinitesimal shift or a differential shift of time,
+- [01:07:49,660 - 01:07:52,160] but if you want to shift
+- [01:07:52,160 - 01:07:54,660] the time by a non-differential amount,
+- [01:07:54,660 - 01:07:58,660] you write that e to the minus i h-
+- [01:07:58,660 - 01:08:03,660] now let's shift the time by an amount delta.
+- [01:08:03,660 - 01:08:04,660] Delta.
+- [01:08:04,660 - 01:08:05,660] I'm not going to call it
+- [01:08:05,660 - 01:08:06,660] t, I'm going to call it delta
+- [01:08:06,660 - 01:08:08,160] because later on I'm going to
+- [01:08:08,160 - 01:08:09,660] want it to be a small amount.
+- [01:08:09,660 - 01:08:14,660] That's e on psi is equal to psi
+- [01:08:14,660 - 01:08:19,660] at time t is equal to psi at what?
+- [01:08:19,660 - 01:08:24,660] t plus delta.
+- [01:08:24,660 - 01:08:28,660] The relationship between these two is just to expand
+- [01:08:28,660 - 01:08:34,660] is just to shift by amount delta by differentiating
+- [01:08:34,660 - 01:08:37,160] and if you expand out this e
+- [01:08:37,160 - 01:08:39,660] to the minus i h-t for small delta,
+- [01:08:39,660 - 01:08:41,660] you'll get something proportional to h.
+- [01:08:41,660 - 01:08:43,660] So these are really the same statement.
+- [01:08:43,660 - 01:08:45,660] That whenever you have a Hamiltonian,
+- [01:08:45,660 - 01:08:50,660] you have a rule for updating state vectors,
+- [01:08:50,660 - 01:08:53,660] translating them in time.
+- [01:08:53,660 - 01:08:55,660] So this is odd.
+- [01:08:55,660 - 01:08:58,660] It says that the anticommutator of two of these solutions,
+- [01:08:58,660 - 01:09:00,660] the supersymmetry generators,
+- [01:09:00,660 - 01:09:04,660] amounts to a small translation in time.
+- [01:09:04,660 - 01:09:09,660] It's mixing up space-time with identity of particles,
+- [01:09:09,660 - 01:09:12,660] operations which mix one particle to another.
+- [01:09:12,660 - 01:09:16,660] We've seen operations that mix one particle with another.
+- [01:09:16,660 - 01:09:24,660] For example, the symmetries of color or isospin.
+- [01:09:24,660 - 01:09:28,660] They mix protons with neutrons, for example.
+- [01:09:28,660 - 01:09:33,660] Isospin symmetry takes a proton into a neutron.
+- [01:09:33,660 - 01:09:35,660] Color symmetries take red quarks
+- [01:09:35,660 - 01:09:37,660] to blue quarks and so forth.
+- [01:09:37,660 - 01:09:39,660] But nothing you ever do with them,
+- [01:09:39,660 - 01:09:41,660] no combination of those symmetries
+- [01:09:41,660 - 01:09:43,660] ever shift time or shift space.
+- [01:09:43,660 - 01:09:45,660] They have nothing to do with space and time.
+- [01:09:45,660 - 01:09:48,660] They just shifted red to blue to green
+- [01:09:48,660 - 01:09:51,660] or up quarks to down quarks,
+- [01:09:51,660 - 01:09:54,660] but never anything to do with space-time.
+- [01:09:54,660 - 01:09:57,660] Here we're finding some kind of very unusual symmetry,
+- [01:09:57,660 - 01:10:02,660] which when you anticommute two cues,
+- [01:10:02,660 - 01:10:06,660] you get a small shift of time.
+- [01:10:06,660 - 01:10:11,660] There is a way to think about this
+- [01:10:11,660 - 01:10:16,660] where the supersymmetry generators are shifts,
+- [01:10:16,660 - 01:10:19,660] just like the Hamiltonian itself,
+- [01:10:19,660 - 01:10:22,660] are shifts of coordinates,
+- [01:10:22,660 - 01:10:24,660] but not ordinary coordinates.
+- [01:10:24,660 - 01:10:26,660] What kind of coordinates would you guess?
+- [01:10:27,660 - 01:10:33,660] Grassman coordinates.
+- [01:10:33,660 - 01:10:37,660] So one way of thinking about supersymmetry
+- [01:10:37,660 - 01:10:41,660] is to increase the number of coordinates of space-time.
+- [01:10:41,660 - 01:10:43,660] Now in this example, there's only time,
+- [01:10:43,660 - 01:10:45,660] so space-time is just time.
+- [01:10:45,660 - 01:10:47,660] I'm going through in detail
+- [01:10:47,660 - 01:10:51,660] a very, very simple supersymmetry example
+- [01:10:51,660 - 01:10:54,660] just to show you how it works.
+- [01:10:54,660 - 01:10:56,660] But let's...
+- [01:10:57,660 - 01:11:00,660] go a little further.
+- [01:11:05,660 - 01:11:08,660] Let's suppose we have some function.
+- [01:11:08,660 - 01:11:11,660] It could be the wave function of something
+- [01:11:11,660 - 01:11:14,660] or it could be a field operator of some kind.
+- [01:11:14,660 - 01:11:16,660] Let's call it psi.
+- [01:11:17,660 - 01:11:20,660] If it were just psi of x,
+- [01:11:20,660 - 01:11:22,160] I would say it was
+- [01:11:22,160 - 01:11:23,660] the wave function of a particle
+- [01:11:23,660 - 01:11:25,660] as a function of its position.
+- [01:11:25,660 - 01:11:26,660] All right?
+- [01:11:26,660 - 01:11:28,660] But I'm not going to have psi of x.
+- [01:11:28,660 - 01:11:34,660] I'm going to have psi of theta and theta bar.
+- [01:11:34,660 - 01:11:37,160] And of course, it's also going
+- [01:11:37,160 - 01:11:39,660] to be a function of time.
+- [01:11:39,660 - 01:11:41,160] We could also put x in
+- [01:11:41,160 - 01:11:42,660] here, but we won't for now.
+- [01:11:42,660 - 01:11:44,660] This is the wave function
+- [01:11:44,660 - 01:11:48,660] to find some kind of strange super particle
+- [01:11:48,660 - 01:11:53,660] located at Grassman coordinates theta and theta bar.
+- [01:11:53,660 - 01:11:55,160] Now of course, that's the most
+- [01:11:55,160 - 01:11:56,660] bizarre thing you've ever heard of.
+- [01:11:56,660 - 01:12:02,660] And it's very strange.
+- [01:12:04,660 - 01:12:06,660] Let's imagine some symmetries.
+- [01:12:06,660 - 01:12:08,660] The first symmetry is going
+- [01:12:08,660 - 01:12:10,660] to be good old time translation.
+- [01:12:10,660 - 01:12:15,660] Good old t goes to t plus...
+- [01:12:15,660 - 01:12:17,660] I don't know, delta.
+- [01:12:18,660 - 01:12:20,660] What's the general...
+- [01:12:20,660 - 01:12:24,660] And of course, what happens to psi
+- [01:12:24,660 - 01:12:26,660] when you shift t a little bit?
+- [01:12:26,660 - 01:12:29,660] In other words, what's the change in psi
+- [01:12:29,660 - 01:12:31,660] when you shift t a little bit?
+- [01:12:31,660 - 01:12:36,660] Well, psi of theta theta bar and t
+- [01:12:36,660 - 01:12:42,660] goes to psi of theta theta bar t
+- [01:12:42,660 - 01:12:46,660] plus the derivative of psi
+- [01:12:46,660 - 01:12:49,660] with respect to t times delta.
+- [01:12:49,660 - 01:12:50,660] Right?
+- [01:12:50,660 - 01:12:53,660] You shift t a little bit.
+- [01:12:53,660 - 01:12:56,660] That differentiates it and multiplies it
+- [01:12:56,660 - 01:12:57,660] by delta.
+- [01:12:57,660 - 01:12:58,660] All right?
+- [01:12:58,660 - 01:12:59,660] Ordinary stuff.
+- [01:12:59,660 - 01:13:00,660] This is still theta and theta bar.
+- [01:13:00,660 - 01:13:04,660] You've done nothing to theta and theta bar.
+- [01:13:04,660 - 01:13:06,660] And if you like, you can remember
+- [01:13:06,660 - 01:13:09,660] that the derivative of psi with respect to t
+- [01:13:09,660 - 01:13:15,660] is related to the Hamiltonian acting on psi
+- [01:13:15,660 - 01:13:17,660] with an i, with an i.
+- [01:13:17,660 - 01:13:19,660] So this has to do then,
+- [01:13:19,660 - 01:13:21,660] if I multiply and divide by i,
+- [01:13:21,660 - 01:13:23,660] I can write this as the
+- [01:13:23,660 - 01:13:25,660] operation of the Hamiltonian on psi.
+- [01:13:25,660 - 01:13:26,660] All right.
+- [01:13:26,660 - 01:13:29,160] This, of course, is a symmetry
+- [01:13:29,160 - 01:13:31,660] of any good quantum mechanical system
+- [01:13:31,660 - 01:13:33,660] time translation invariance.
+- [01:13:33,660 - 01:13:37,660] And I haven't done anything except tell you
+- [01:13:37,660 - 01:13:40,160] what a shift of time
+- [01:13:40,160 - 01:13:42,660] does to a function of time.
+- [01:13:42,660 - 01:13:45,660] But now there are other symmetries.
+- [01:13:45,660 - 01:13:50,660] If these were x's and not theta's,
+- [01:13:50,660 - 01:13:54,660] you might have space translation symmetry.
+- [01:13:54,660 - 01:13:56,660] They would be associated with derivatives of psi
+- [01:13:56,660 - 01:13:58,660] with respect to space.
+- [01:13:58,660 - 01:14:01,660] The question comes up, is there any kind of symmetry
+- [01:14:01,660 - 01:14:04,660] which has to do with shifting the theta's?
+- [01:14:04,660 - 01:14:08,160] Is there any notion, any
+- [01:14:08,160 - 01:14:11,660] kind of possible mathematical notion
+- [01:14:11,660 - 01:14:14,660] of a function, which is
+- [01:14:14,660 - 01:14:17,660] a function of time and theta's,
+- [01:14:17,660 - 01:14:20,660] but where a shift of theta
+- [01:14:20,660 - 01:14:23,660] has some nice interesting mathematical meaning?
+- [01:14:23,660 - 01:14:27,660] So we're going to invent symmetries
+- [01:14:27,660 - 01:14:35,660] where theta goes to theta plus epsilon.
+- [01:14:35,660 - 01:14:40,660] Now theta is an odd variable of a Grassman algebra.
+- [01:14:40,660 - 01:14:41,660] So is epsilon.
+- [01:14:41,660 - 01:14:45,660] Otherwise you wouldn't be allowed to do this.
+- [01:14:45,660 - 01:14:49,660] We might also allow theta bar to do something.
+- [01:14:49,660 - 01:14:51,160] For a moment let's just
+- [01:14:51,160 - 01:14:52,660] leave theta bar out of it.
+- [01:14:53,660 - 01:14:56,660] And also at the same time,
+- [01:14:56,660 - 01:14:59,660] at the same time that we shift theta,
+- [01:14:59,660 - 01:15:02,660] we're going to shift t a little bit.
+- [01:15:02,660 - 01:15:10,660] T is going to go to t plus what?
+- [01:15:10,660 - 01:15:18,660] I theta bar times epsilon.
+- [01:15:18,660 - 01:15:22,660] Now that is a very weird thing to write down.
+- [01:15:23,660 - 01:15:28,660] At least this is an even element.
+- [01:15:28,660 - 01:15:31,660] Theta and epsilon are both odd elements.
+- [01:15:31,660 - 01:15:33,660] At least this is an even
+- [01:15:33,660 - 01:15:35,660] element and time is an even element.
+- [01:15:35,660 - 01:15:38,660] But what on earth can this mean?
+- [01:15:38,660 - 01:15:40,660] It's a very odd thing to write down,
+- [01:15:40,660 - 01:15:42,660] but let's pursue it a little bit.
+- [01:15:42,660 - 01:15:45,160] Let's see if we can find out
+- [01:15:45,160 - 01:15:47,660] what the generator is which does that.
+- [01:15:47,660 - 01:15:51,660] What happens to psi
+- [01:15:51,660 - 01:15:54,660] when you shift theta a little bit?
+- [01:15:54,660 - 01:15:56,660] Shift, I'm not going to shift theta bar,
+- [01:15:56,660 - 01:15:58,660] I'm going to keep it simple.
+- [01:15:58,660 - 01:16:00,160] Just shift theta a little bit
+- [01:16:00,160 - 01:16:01,660] and shift time by the same amount.
+- [01:16:01,660 - 01:16:03,660] What happens to psi?
+- [01:16:03,660 - 01:16:08,160] Psi goes to psi plus the
+- [01:16:08,160 - 01:16:12,660] amount that you shift theta by,
+- [01:16:12,660 - 01:16:14,660] let's call it epsilon,
+- [01:16:14,660 - 01:16:18,660] times the derivative of psi with respect to theta.
+- [01:16:18,660 - 01:16:20,660] That's just the formula when you shift,
+- [01:16:20,660 - 01:16:23,660] an argument of a function by a small amount,
+- [01:16:23,660 - 01:16:27,660] you differentiate with respect to the argument
+- [01:16:27,660 - 01:16:30,660] and multiply by the amount that you shift.
+- [01:16:30,660 - 01:16:33,660] And then we're also shifting time,
+- [01:16:33,660 - 01:16:35,660] and we're shifting time by this amount here,
+- [01:16:35,660 - 01:16:37,660] so let's write it down.
+- [01:16:37,660 - 01:16:39,660] It will give us, I think it's
+- [01:16:39,660 - 01:16:41,660] a minus if I kept track carefully
+- [01:16:41,660 - 01:16:43,660] of all the odd and even elements.
+- [01:16:43,660 - 01:16:49,660] Epsilon, theta bar,
+- [01:16:49,660 - 01:16:53,660] d psi by dt.
+- [01:16:53,660 - 01:16:55,660] Now what have I done here?
+- [01:16:55,660 - 01:16:58,660] I've said I've shifted time a little bit,
+- [01:16:58,660 - 01:17:02,160] so that means psi must shift
+- [01:17:02,160 - 01:17:05,660] because of the shift of time.
+- [01:17:05,660 - 01:17:07,660] How much does it shift?
+- [01:17:07,660 - 01:17:10,160] It shifts by d psi dt times
+- [01:17:10,160 - 01:17:12,660] the amount that I shifted the time.
+- [01:17:12,660 - 01:17:14,160] I think there should be an
+- [01:17:14,160 - 01:17:15,660] i here if I'm not mistaken.
+- [01:17:19,660 - 01:17:23,660] This doesn't make any real sense, obviously,
+- [01:17:23,660 - 01:17:26,660] in any kind of normal mathematics,
+- [01:17:26,660 - 01:17:30,660] but we're following our nose and seeing what we get.
+- [01:17:30,660 - 01:17:32,660] Here's what psi is.
+- [01:17:32,660 - 01:17:34,660] Here's how psi shifts.
+- [01:17:34,660 - 01:17:37,660] Let's factor epsilon out of it.
+- [01:17:37,660 - 01:17:39,660] Let's factor epsilon out of it.
+- [01:17:39,660 - 01:17:41,660] Here's what we get.
+- [01:17:41,660 - 01:17:46,660] If we were just shifting time,
+- [01:17:46,660 - 01:17:49,660] we would call the coefficient,
+- [01:17:49,660 - 01:17:50,660] here, of the small shift,
+- [01:17:50,660 - 01:17:54,660] we would call it the Hamiltonian acting on psi.
+- [01:17:54,660 - 01:17:56,660] All right?
+- [01:17:56,660 - 01:17:57,660] Let's factor psi out of this
+- [01:17:57,660 - 01:18:01,660] and think of this as an operation acting on psi.
+- [01:18:01,660 - 01:18:05,660] It's an operation acting on psi.
+- [01:18:05,660 - 01:18:07,660] Let's give it a name.
+- [01:18:07,660 - 01:18:09,660] Let's give this operation a name.
+- [01:18:09,660 - 01:18:11,660] Differentiating with respect to theta,
+- [01:18:11,660 - 01:18:13,660] that means shifting this abstract,
+- [01:18:13,660 - 01:18:18,660] this very, very abstract additional coordinate
+- [01:18:18,660 - 01:18:21,660] and at the same time shifting time
+- [01:18:21,660 - 01:18:24,660] by an amount proportional to theta bar.
+- [01:18:24,660 - 01:18:26,660] Let's give that operation a name.
+- [01:18:26,660 - 01:18:28,660] It's a generator of something.
+- [01:18:28,660 - 01:18:29,660] It's a generator.
+- [01:18:29,660 - 01:18:31,660] It's an infinitesimal generator of something.
+- [01:18:31,660 - 01:18:35,660] Anybody got a suggestion what I should call it?
+- [01:18:35,660 - 01:18:39,660] How about q?
+- [01:18:39,660 - 01:18:41,660] It's an odd element because it's
+- [01:18:41,660 - 01:18:43,660] a derivative with respect to theta
+- [01:18:43,660 - 01:18:47,660] and it's got a theta bar here.
+- [01:18:47,660 - 01:18:54,660] Let's call it q.
+- [01:18:54,660 - 01:18:56,660] q bar, as I said,
+- [01:18:56,660 - 01:18:58,660] I think there's an i here.
+- [01:18:58,660 - 01:19:00,660] q bar is its complex conjugate.
+- [01:19:00,660 - 01:19:03,660] It has derivative with respect to theta bar.
+- [01:19:03,660 - 01:19:06,160] It has a theta here and
+- [01:19:06,160 - 01:19:08,660] probably a change of sign of i.
+- [01:19:08,660 - 01:19:10,160] So in the same way,
+- [01:19:10,160 - 01:19:11,660] you can invent a q bar,
+- [01:19:11,660 - 01:19:15,660] which is just its complex conjugate.
+- [01:19:15,660 - 01:19:17,660] And guess what happens
+- [01:19:17,660 - 01:19:20,660] when you take q and q bar and anticommute them?
+- [01:19:20,660 - 01:19:22,660] Can you guess what happens?
+- [01:19:22,660 - 01:19:26,660] Let's write it out.
+- [01:19:26,660 - 01:19:30,660] Let's take q and q bar and anticommute them.
+- [01:19:30,660 - 01:19:41,660] So we have the anticommutator of d by d theta.
+- [01:19:41,660 - 01:19:42,660] Is it minus?
+- [01:19:42,660 - 01:19:46,660] I think it's minus i theta bar d by dt.
+- [01:19:46,660 - 01:19:54,660] The anticommutator of that with d by d theta bar,
+- [01:19:54,660 - 01:19:56,160] I'm not going to try
+- [01:19:56,160 - 01:19:57,660] to be careful about the signs.
+- [01:19:57,660 - 01:19:59,660] I'll screw them up.
+- [01:19:59,660 - 01:20:01,660] Let's just guess.
+- [01:20:01,660 - 01:20:08,660] i theta d by dt.
+- [01:20:08,660 - 01:20:11,660] Let's see if we can figure out what we get.
+- [01:20:11,660 - 01:20:14,660] The anticommutator of d derivative with respect to theta
+- [01:20:14,660 - 01:20:16,660] and derivative with respect to theta bar.
+- [01:20:16,660 - 01:20:19,160] I didn't tell you what
+- [01:20:19,160 - 01:20:21,660] that was, but can you guess?
+- [01:20:21,660 - 01:20:26,660] Anticommutator of two derivatives of theta
+- [01:20:26,660 - 01:20:28,660] is very much like the
+- [01:20:28,660 - 01:20:30,660] commutator of two ordinary derivatives.
+- [01:20:30,660 - 01:20:32,660] It's zero.
+- [01:20:32,660 - 01:20:35,660] Commutator of ordinary derivatives is zero.
+- [01:20:35,660 - 01:20:39,660] Commutator of two different derivatives with respect to
+- [01:20:39,660 - 01:20:42,660] Grassman variables is also zero.
+- [01:20:42,660 - 01:20:47,660] So this term here gives us zero.
+- [01:20:47,660 - 01:20:55,660] What's the anticommutator of theta bar with theta?
+- [01:20:55,660 - 01:20:57,660] It's also zero.
+- [01:20:57,660 - 01:21:00,160] Anticommutator of any odd element with
+- [01:21:00,160 - 01:21:02,660] any odd element is also zero.
+- [01:21:02,660 - 01:21:05,660] And the derivative with respect to theta, the t here,
+- [01:21:05,660 - 01:21:07,660] that just goes through for the ride.
+- [01:21:07,660 - 01:21:09,660] It doesn't change anything.
+- [01:21:09,660 - 01:21:10,660] So the anticommutator of this
+- [01:21:10,660 - 01:21:11,660] one with this one is zero.
+- [01:21:11,660 - 01:21:18,660] But what about the anticommutator of this with this?
+- [01:21:18,660 - 01:21:21,660] It contains the anticommutator of
+- [01:21:21,660 - 01:21:24,660] d by d theta with theta.
+- [01:21:24,660 - 01:21:26,660] What is that?
+- [01:21:29,660 - 01:21:32,660] No, no, just d by d theta with theta.
+- [01:21:32,660 - 01:21:34,660] We worked that out.
+- [01:21:36,066 - 01:21:37,366] 哇
+- [01:21:37,378 - 01:21:40,618] One. One. All right?
+- [01:21:40,918 - 01:21:43,318] What about the anti-commutator of theta bar?
+- [01:21:43,958 - 01:21:45,998] Well, this is theta with theta here,
+- [01:21:46,518 - 01:21:48,498] and then there is theta
+- [01:21:48,498 - 01:21:50,478] bar with d by d theta.
+- [01:21:51,378 - 01:21:53,558] Both of them give one.
+- [01:21:53,718 - 01:21:54,878] What's the net result?
+- [01:21:56,078 - 01:21:59,558] The net result is d by
+- [01:21:59,558 - 01:22:03,038] d, is i d by dt.
+- [01:22:03,838 - 01:22:05,398] It's i d by dt.
+- [01:22:05,398 - 01:22:07,358] The full anti-commutator here,
+- [01:22:07,538 - 01:22:08,928] it looks to me like there's a
+- [01:22:08,928 - 01:22:10,318] factor of two that I screwed up.
+- [01:22:10,798 - 01:22:12,638] Somewhere in here I should have a factor of two.
+- [01:22:12,758 - 01:22:13,178] I don't know where.
+- [01:22:14,018 - 01:22:15,298] Probably in the definition.
+- [01:22:16,178 - 01:22:18,037] Probably the definition of this should be
+- [01:22:18,037 - 01:22:19,897] a half of q or twice q.
+- [01:22:20,118 - 01:22:20,718] Not important.
+- [01:22:21,578 - 01:22:26,578] The anti-commutator of this with this is just minus i,
+- [01:22:26,617 - 01:22:28,718] I think it's minus i, d by dt.
+- [01:22:29,778 - 01:22:31,558] What is minus i d by dt?
+- [01:22:32,598 - 01:22:33,078] H.
+- [01:22:34,078 - 01:22:34,558] So,
+- [01:22:34,558 - 01:22:40,198] here's a representation of q and q bar,
+- [01:22:40,958 - 01:22:43,838] not in terms of creation and annihilation operators,
+- [01:22:43,838 - 01:22:49,358] but as operations in a fictitious new kind of space-time
+- [01:22:49,358 - 01:22:52,538] that involves anti-commuting coordinates.
+- [01:22:53,938 - 01:22:59,118] It's the generators of a symmetry transformation
+- [01:22:59,118 - 01:23:04,538] which shifts time by a very peculiar amount,
+- [01:23:04,558 - 01:23:07,458] theta bar times epsilon,
+- [01:23:08,298 - 01:23:10,778] while you shift theta by amount epsilon.
+- [01:23:11,598 - 01:23:14,258] The upshot of this is there's a symmetry structure.
+- [01:23:14,358 - 01:23:16,078] There's a geometric structure here.
+- [01:23:16,158 - 01:23:18,718] There's a generalized kind of geometric structure
+- [01:23:18,718 - 01:23:21,718] involving spaces which contain not only
+- [01:23:21,718 - 01:23:24,718] ordinary coordinates like x and t,
+- [01:23:25,278 - 01:23:27,878] but which contain these Grassman coordinates,
+- [01:23:28,338 - 01:23:31,358] which are very hard to get your head around.
+- [01:23:32,238 - 01:23:33,478] But motion,
+- [01:23:33,718 - 01:23:34,538] moving around,
+- [01:23:34,558 - 01:23:35,438] in this space,
+- [01:23:35,438 - 01:23:37,438] first of all entails moving
+- [01:23:37,438 - 01:23:39,438] around in the x's and t's.
+- [01:23:39,998 - 01:23:41,958] The generators of those transformations
+- [01:23:41,958 - 01:23:43,918] are just momentum and energy,
+- [01:23:43,918 - 01:23:45,118] just as you would expect,
+- [01:23:45,718 - 01:23:48,538] but also transformations which move
+- [01:23:48,538 - 01:23:51,358] you around in this theta space.
+- [01:23:53,058 - 01:23:56,158] And those transformations are the supersymmetry generators.
+- [01:23:56,558 - 01:23:58,158] That's called superspace.
+- [01:23:58,918 - 01:24:00,858] The symmetries are called supersymmetry,
+- [01:24:00,858 - 01:24:01,938] and the space,
+- [01:24:02,398 - 01:24:04,338] this generalized space where you think about,
+- [01:24:04,338 - 01:24:08,098] fields and functions and so forth,
+- [01:24:12,578 - 01:24:13,578] in this way,
+- [01:24:15,098 - 01:24:16,418] is called superspace.
+- [01:24:16,418 - 01:24:18,578] Now, I'm going to stop here because
+- [01:24:18,578 - 01:24:20,738] I think I've probably flooded you with information.
+- [01:24:20,738 - 01:24:21,738] No.
+- [01:24:21,738 - 01:24:22,738] I'm sorry, Brian.
+- [01:24:22,738 - 01:24:26,738] You finished the conclusion of that thing is equal to,
+- [01:24:26,738 - 01:24:29,738] you said it a lot, but I didn't-
+- [01:24:29,738 - 01:24:31,238] It's a factor of two.
+- [01:24:31,238 - 01:24:32,238] It's two and minus.
+- [01:24:32,238 - 01:24:33,238] It's i d by dt.
+- [01:24:33,238 - 01:24:34,238] Okay.
+- [01:24:34,338 - 01:24:35,338] It's a factor of two.
+- [01:24:35,338 - 01:24:36,338] All right.
+- [01:24:36,338 - 01:24:41,338] It comes from commuting d by d theta with theta,
+- [01:24:41,338 - 01:24:44,338] and getting the i d by dt from here,
+- [01:24:44,338 - 01:24:46,338] and then anti-commuting theta bar
+- [01:24:46,338 - 01:24:48,338] with d by d theta bar,
+- [01:24:48,338 - 01:24:50,338] which gives you another one times d by dt.
+- [01:24:50,338 - 01:24:51,338] Okay.
+- [01:24:51,338 - 01:24:55,338] Does it use somewhere that epsilon is small?
+- [01:24:55,338 - 01:24:56,338] I would see where-
+- [01:24:56,338 - 01:24:59,338] Well, epsilon is an anti-commuting parameter.
+- [01:24:59,338 - 01:25:00,338] Its square is zero.
+- [01:25:00,338 - 01:25:03,338] So anything to second order in epsilon is always zero.
+- [01:25:03,338 - 01:25:04,338] Okay.
+- [01:25:04,338 - 01:25:05,338] Right.
+- [01:25:05,338 - 01:25:06,838] So you always get to
+- [01:25:06,838 - 01:25:08,338] think of anti-commuting things as small.
+- [01:25:08,338 - 01:25:09,338] Right.
+- [01:25:09,338 - 01:25:10,338] Right.
+- [01:25:10,338 - 01:25:12,338] That's a good question, but it's an-
+- [01:25:12,338 - 01:25:13,338] All right.
+- [01:25:13,338 - 01:25:14,838] I'm going to stop here because
+- [01:25:14,838 - 01:25:16,338] this is a lot of information,
+- [01:25:16,338 - 01:25:20,338] but the upshot of it, as I said, is supersymmetry,
+- [01:25:20,338 - 01:25:22,838] first of all, is a
+- [01:25:22,838 - 01:25:25,338] symmetry which takes fermions to bosons.
+- [01:25:25,338 - 01:25:27,338] It can be represented rather
+- [01:25:27,338 - 01:25:29,338] simply just in terms of operations,
+- [01:25:29,338 - 01:25:31,338] which replace fermions with bosons,
+- [01:25:31,338 - 01:25:33,338] but exactly the same algebra,
+- [01:25:33,338 - 01:25:35,338] exactly the same al-
+- [01:25:35,338 - 01:25:40,338] Oh, the unusual thing here is that the
+- [01:25:40,338 - 01:25:45,338] operations close only if you include the Hamiltonian.
+- [01:25:45,338 - 01:25:49,338] That's telling you that somehow the symmetry operations contain
+- [01:25:49,338 - 01:25:53,338] not just the mixing up of fermions and bosons,
+- [01:25:53,338 - 01:25:55,838] but when you do it once and then
+- [01:25:55,838 - 01:25:58,338] you do it twice and you anti-commute them,
+- [01:25:58,338 - 01:26:00,338] you get a translation in time.
+- [01:26:00,338 - 01:26:02,338] That's made completely manifest here,
+- [01:26:02,338 - 01:26:04,338] by saying there's extra dimensions.
+- [01:26:04,338 - 01:26:06,338] The extra dimensions
+- [01:26:06,338 - 01:26:08,338] include these anti-commuting dimensions,
+- [01:26:08,338 - 01:26:11,838] and the supersymmetry generators are sort
+- [01:26:11,838 - 01:26:15,338] of translations in the theta space,
+- [01:26:15,338 - 01:26:18,338] together with certain translations in time.
+- [01:26:18,338 - 01:26:21,338] So it's a rather marvelous structure.
+- [01:26:21,338 - 01:26:23,838] It gets even more marvelous when
+- [01:26:23,838 - 01:26:26,338] you make curved space out of it,
+- [01:26:26,338 - 01:26:28,338] curved super space,
+- [01:26:28,338 - 01:26:32,338] and when you make curved super space general relations,
+- [01:26:32,338 - 01:26:34,338] you get a relatively more spectacular structure.
+- [01:26:34,338 - 01:26:35,338] It's called super relativity,
+- [01:26:35,338 - 01:26:37,338] which is called super gravity.
+- [01:26:37,338 - 01:26:40,338] It's a rather spectacular structure.
+- [01:26:40,338 - 01:26:41,338] And as I said,
+- [01:26:41,338 - 01:26:45,838] it's somehow an extremely
+- [01:26:45,838 - 01:26:50,338] deep generalization of ordinary space-time.
+- [01:26:50,338 - 01:26:56,338] Whether it will turn up an experiment is another question.
+- [01:26:56,338 - 01:26:58,338] I think we'll quit for now,
+- [01:26:58,338 - 01:27:00,338] because we're going to go on,
+- [01:27:00,338 - 01:27:01,838] but we're going to go on
+- [01:27:01,838 - 01:27:03,338] and spend a little more time
+- [01:27:03,338 - 01:27:07,338] on the mathematics of supersymmetry.
+- [01:27:07,338 - 01:27:09,338] But for the time being,
+- [01:27:09,338 - 01:27:11,338] I think that's probably enough.
+- [01:27:30,338 - 01:27:33,338] Well, in one sense,
+- [01:27:33,338 - 01:27:35,838] it's just a bookkeeping device for
+- [01:27:35,838 - 01:27:38,338] keeping track of fermions and bosons.
+- [01:27:38,338 - 01:27:40,338] In another sense,
+- [01:27:40,338 - 01:27:43,338] it seems to be much deeper than that.
+- [01:27:43,338 - 01:27:48,338] For more, please visit us at stanford.edu.
