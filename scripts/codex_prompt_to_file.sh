@@ -106,7 +106,10 @@ else
   cmd+=(-)
 fi
 
+set +e
 "${cmd[@]}" < "$prompt_file" > "$jsonl_file"
+status=$?
+set -e
 
 if [[ -n "$session_file" && ! -s "$session_file" ]]; then
   new_session_id="$(extract_session_id "$jsonl_file")"
@@ -119,3 +122,4 @@ elif [[ -n "${session_id:-}" ]]; then
 fi
 
 cat "$jsonl_file"
+exit "$status"

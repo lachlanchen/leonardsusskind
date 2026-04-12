@@ -101,6 +101,7 @@ fi
 
 if [[ -n "$session_file" && -s "$session_file" ]]; then
   session_id="$(tr -d '[:space:]' < "$session_file")"
+  set +e
   cat "$prompt_file" | codex exec resume \
     --json \
     --model "$model" \
@@ -109,7 +110,10 @@ if [[ -n "$session_file" && -s "$session_file" ]]; then
     --skip-git-repo-check \
     "$session_id" \
     - > "$jsonl_file"
+  status=$?
+  set -e
 else
+  set +e
   cat "$prompt_file" | codex exec \
     --json \
     --model "$model" \
@@ -118,6 +122,8 @@ else
     -C "$repo_path" \
     --skip-git-repo-check \
     - > "$jsonl_file"
+  status=$?
+  set -e
 
   if [[ -n "$session_file" && ! -s "$session_file" ]]; then
     new_session_id="$(extract_session_id "$jsonl_file")"
@@ -133,3 +139,4 @@ if [[ -n "${session_id:-}" ]]; then
 fi
 
 cat "$jsonl_file"
+exit "${status:-0}"
