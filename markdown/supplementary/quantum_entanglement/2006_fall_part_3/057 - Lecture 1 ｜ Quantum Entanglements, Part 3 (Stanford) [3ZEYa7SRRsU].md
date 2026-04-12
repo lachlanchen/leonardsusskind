@@ -1,0 +1,2466 @@
+# Transcript
+
+Source: supplementary/quantum_entanglement/2006_fall_part_3/057 - Lecture 1 ｜ Quantum Entanglements, Part 3 (Stanford) [3ZEYa7SRRsU].mp4
+
+- [00:00:00,000 - 00:00:10,520] This program is brought to you by Stanford University.
+- [00:00:10,520 - 00:00:13,240] Please visit us at stanford.edu.
+- [00:00:15,920 - 00:00:16,560] Relativity.
+- [00:00:18,560 - 00:00:21,480] Relativity means special relativity, mostly.
+- [00:00:22,560 - 00:00:24,500] And then at the end,
+- [00:00:24,500 - 00:00:26,440] a little bit of general relativity.
+- [00:00:26,440 - 00:00:30,050] But general relativity done with some, not
+- [00:00:30,050 - 00:00:33,660] rigor so much as, well, conceptual rigor,
+- [00:00:34,260 - 00:00:35,840] if not mathematical rigor.
+- [00:00:36,360 - 00:00:37,760] Now before I go ahead, let
+- [00:00:37,760 - 00:00:39,160] me just tell you one thing.
+- [00:00:39,200 - 00:00:40,460] I'm going to be gone for two weeks.
+- [00:00:41,220 - 00:00:42,240] I have to be in Israel.
+- [00:00:42,240 - 00:00:48,150] I have to give some lectures to the,
+- [00:00:48,150 - 00:00:54,060] I don't know, to somebody, some organization of philosophers.
+- [00:00:55,460 - 00:00:56,240] And so I will.
+- [00:00:56,440 - 00:00:58,199] I will be gone for two weeks.
+- [00:00:59,080 - 00:01:00,560] That means, I think, does anybody
+- [00:01:00,560 - 00:01:02,040] have a calendar in their head?
+- [00:01:02,620 - 00:01:04,189] I'm coming back on the 24th, but
+- [00:01:04,189 - 00:01:05,759] I don't know what date that is.
+- [00:01:06,560 - 00:01:08,259] Yeah, yeah, yeah, yeah.
+- [00:01:08,360 - 00:01:09,259] But we will continue.
+- [00:01:09,259 - 00:01:13,789] We will get ten full classes, even if
+- [00:01:13,789 - 00:01:18,320] we have to go into June a little bit.
+- [00:01:18,440 - 00:01:21,730] We'll get ten full classes, but I
+- [00:01:21,730 - 00:01:25,020] will necessarily have to stagger them a bit.
+- [00:01:25,020 - 00:01:25,240] Yeah.
+- [00:01:25,600 - 00:01:28,880] How about the lecture?
+- [00:01:29,740 - 00:01:31,380] Oh, yes.
+- [00:01:34,000 - 00:01:35,399] That's also on Monday, isn't it?
+- [00:01:35,460 - 00:01:35,619] Yes.
+- [00:01:35,920 - 00:01:36,100] Yep.
+- [00:01:36,880 - 00:01:38,539] So you're gone the next two weeks?
+- [00:01:39,259 - 00:01:41,440] Yeah, I'll be gone for the next two weeks.
+- [00:01:41,660 - 00:01:43,160] And then the one after that is for Monday.
+- [00:01:43,160 - 00:01:46,300] Well, you know, if there's enough, if there's flexibility,
+- [00:01:46,300 - 00:01:49,440] if there's flexibility about the day of the week,
+- [00:01:50,060 - 00:01:52,019] we could just, when a
+- [00:01:52,019 - 00:01:53,979] thing like that happens, say, well,
+- [00:01:54,060 - 00:01:55,000] we will meet on Monday.
+- [00:01:55,020 - 00:01:57,839] On Wednesday instead of on Monday or something like that.
+- [00:01:59,780 - 00:02:02,379] I know some people arrange their schedule
+- [00:02:02,379 - 00:02:04,979] one way or another, and it doesn't fit.
+- [00:02:07,060 - 00:02:11,450] But we will have one class before
+- [00:02:11,450 - 00:02:15,840] the Hofstadter lecture, and then we can decide.
+- [00:02:16,060 - 00:02:16,800] I think so.
+- [00:02:17,000 - 00:02:17,740] I think it's this one.
+- [00:02:17,980 - 00:02:19,220] No, no, I think it's another one.
+- [00:02:19,800 - 00:02:20,600] I think the 20th.
+- [00:02:20,740 - 00:02:22,640] Oh, wait, wait, wait, wait, wait.
+- [00:02:23,040 - 00:02:23,480] Well.
+- [00:02:25,020 - 00:02:26,760] If nothing else, the Hofstadter
+- [00:02:26,760 - 00:02:28,500] lecture, I think, begins at 8.
+- [00:02:28,560 - 00:02:30,280] Oh, there's a problem there.
+- [00:02:31,240 - 00:02:33,220] I may have to be available.
+- [00:02:35,140 - 00:02:37,120] Well, one way or another.
+- [00:02:41,660 - 00:02:42,780] I'll be gone the next two
+- [00:02:42,780 - 00:02:43,900] Mondays, and then I'll be back.
+- [00:02:45,160 - 00:02:47,450] Let's assume we will meet here
+- [00:02:47,450 - 00:02:49,740] on the Monday after I get back.
+- [00:02:50,360 - 00:02:51,400] That's the 30th.
+- [00:02:51,420 - 00:02:51,900] That's the 30th.
+- [00:02:51,900 - 00:02:52,620] That's the Hofstadter lecture.
+- [00:02:52,620 - 00:02:53,300] That's the 30th.
+- [00:02:53,320 - 00:02:54,420] That's the Hofstadter lecture.
+- [00:02:55,020 - 00:02:56,220] I will be here.
+- [00:02:56,780 - 00:02:56,900] Okay?
+- [00:02:57,160 - 00:02:59,620] Now, I am also the host for
+- [00:02:59,620 - 00:03:02,080] the Hofstadter lecture, so this is going to—
+- [00:03:02,080 - 00:03:03,560] So, you know, what it'll probably mean
+- [00:03:03,560 - 00:03:05,040] is we'll go to the Hofstadter lecture,
+- [00:03:05,540 - 00:03:07,920] but I'm not going to count that
+- [00:03:07,920 - 00:03:10,300] as a regular class if we do that.
+- [00:03:10,860 - 00:03:11,380] And we'll see.
+- [00:03:11,500 - 00:03:14,050] At that time, we'll see if we can
+- [00:03:14,050 - 00:03:16,600] figure out a time to—some way to make adjustments.
+- [00:03:18,140 - 00:03:21,210] I'd just make one suggestion on that, is that
+- [00:03:21,210 - 00:03:24,280] in the past, when that kind of a conflict came,
+- [00:03:24,360 - 00:03:24,860] you just—
+- [00:03:25,020 - 00:03:26,980] Maybe start a class at 6 instead of 7.
+- [00:03:27,380 - 00:03:28,400] We never did that, did we?
+- [00:03:28,840 - 00:03:29,320] Yeah, we did.
+- [00:03:29,580 - 00:03:29,840] Did we?
+- [00:03:30,000 - 00:03:30,400] Yeah, we did.
+- [00:03:30,480 - 00:03:31,060] We can do that.
+- [00:03:31,560 - 00:03:33,600] Oh, you mean specifically for the—
+- [00:03:33,600 - 00:03:33,760] Yeah.
+- [00:03:33,900 - 00:03:35,480] Yeah, we could do that.
+- [00:03:35,980 - 00:03:36,220] Okay.
+- [00:03:36,580 - 00:03:37,500] Good, good, good.
+- [00:03:37,580 - 00:03:38,960] Let's do that.
+- [00:03:39,060 - 00:03:39,220] Yeah.
+- [00:03:39,480 - 00:03:39,700] Yeah.
+- [00:03:39,800 - 00:03:40,100] All right.
+- [00:03:40,100 - 00:03:44,290] So, let's assume that on the week after
+- [00:03:44,290 - 00:03:48,480] I return, that we meet here—the Monday after
+- [00:03:48,480 - 00:03:50,280] we return, we meet here at 6.
+- [00:03:50,460 - 00:03:51,420] Does that work for everybody?
+- [00:03:52,680 - 00:03:53,300] Okay, good.
+- [00:03:53,540 - 00:03:54,140] The 30th?
+- [00:03:54,380 - 00:03:54,860] The 30th.
+- [00:03:54,860 - 00:03:55,700] I think it's the 30th, yeah.
+- [00:03:56,700 - 00:03:57,060] Yeah.
+- [00:03:57,640 - 00:04:00,590] But then I would like to find maybe some
+- [00:04:00,590 - 00:04:03,540] ways of—I'm always in the situation where I have
+- [00:04:03,540 - 00:04:04,580] to be someplace else.
+- [00:04:04,820 - 00:04:07,180] I have to be two places at
+- [00:04:07,180 - 00:04:09,540] the same time, and it's hard to do.
+- [00:04:10,100 - 00:04:12,440] So, if we can somehow
+- [00:04:12,440 - 00:04:14,780] juggle times, that does help me.
+- [00:04:14,780 - 00:04:15,220] Yeah.
+- [00:04:15,220 - 00:04:15,740] Yeah.
+- [00:04:17,740 - 00:04:18,180] Yeah.
+- [00:04:18,180 - 00:04:20,160] You're just a little uncertain about where you're going.
+- [00:04:20,160 - 00:04:21,440] Yeah, I'm more than a
+- [00:04:21,440 - 00:04:22,720] little uncertain most of the time.
+- [00:04:23,260 - 00:04:23,780] All right.
+- [00:04:23,800 - 00:04:24,780] When you were talking about—
+- [00:04:24,780 - 00:04:26,960] Next term, you gave me a summer before—
+- [00:04:26,960 - 00:04:27,539] No, no, no.
+- [00:04:27,659 - 00:04:28,179] No, no.
+- [00:04:28,239 - 00:04:33,039] Summer, I won't teach.
+- [00:04:33,460 - 00:04:33,520] Hmm?
+- [00:04:33,900 - 00:04:35,020] You're somewhere else.
+- [00:04:35,520 - 00:04:38,280] No, I'm actually usually here, but no.
+- [00:04:38,700 - 00:04:41,760] I need to stop and do nothing for the summer.
+- [00:04:42,280 - 00:04:43,479] I need to think about things.
+- [00:04:45,179 - 00:04:45,880] All right.
+- [00:04:46,500 - 00:04:49,910] Let's do—let's begin with special relativity, and
+- [00:04:49,910 - 00:04:53,320] let's really do the mathematics of special
+- [00:04:53,320 - 00:04:54,559] relativity carefully.
+- [00:04:54,780 - 00:04:55,200] Okay.
+- [00:04:56,780 - 00:04:57,640] Let's work it out.
+- [00:04:59,099 - 00:05:03,820] Work out the details of energy, momentum.
+- [00:05:03,820 - 00:05:07,640] Well, first we're going to work out the
+- [00:05:07,640 - 00:05:11,460] details of space and time and space-time, the details
+- [00:05:11,460 - 00:05:14,969] and the symmetries, Lorentz transformations, what
+- [00:05:14,969 - 00:05:18,479] it means for things to be synchronous
+- [00:05:18,479 - 00:05:20,529] and so forth to work these things
+- [00:05:20,529 - 00:05:22,580] out with some care and some precision.
+- [00:05:23,059 - 00:05:23,559] Okay.
+- [00:05:23,559 - 00:05:24,059] Okay.
+- [00:05:24,059 - 00:05:24,460] Okay.
+- [00:05:24,460 - 00:05:24,760] Okay.
+- [00:05:24,760 - 00:05:28,560] move on to, we could call that kinematics.
+- [00:05:28,560 - 00:05:32,800] Kinematics, space and time, how things move,
+- [00:05:32,800 - 00:05:34,460] but not why they move.
+- [00:05:34,460 - 00:05:36,440] Then comes the question why things move,
+- [00:05:36,440 - 00:05:38,719] and why things move is because of forces.
+- [00:05:39,680 - 00:05:42,920] And forces, of course, are the subject of dynamics.
+- [00:05:42,920 - 00:05:44,140] And so we will study
+- [00:05:44,140 - 00:05:45,360] a little bit about the dynamics
+- [00:05:45,360 - 00:05:49,460] of special relativity, energy, momentum, force,
+- [00:05:49,460 - 00:05:51,840] the analog of Newton's equations,
+- [00:05:51,840 - 00:05:53,680] not Newton's gravitational equations,
+- [00:05:53,680 - 00:05:57,860] but Newton's equations of motion for special relativity.
+- [00:05:58,760 - 00:06:00,600] E equals MC squared and
+- [00:06:00,600 - 00:06:02,440] all that stuff, what it means.
+- [00:06:02,440 - 00:06:04,360] And I think that should probably take us
+- [00:06:04,360 - 00:06:07,620] about five lectures, five or six or something like that.
+- [00:06:07,620 - 00:06:11,120] Then I would move on to some general relativity.
+- [00:06:11,120 - 00:06:13,200] The general relativity that we'll do
+- [00:06:13,200 - 00:06:17,120] will not be incorrect, it will be absolutely correct,
+- [00:06:17,120 - 00:06:19,250] but what I will teach less
+- [00:06:19,250 - 00:06:21,380] of is the Einstein field equations
+- [00:06:21,380 - 00:06:23,680] and more of what happens
+- [00:06:23,680 - 00:06:25,960] to particles and objects when they're
+- [00:06:25,960 - 00:06:28,660] in a given gravitational field.
+- [00:06:28,660 - 00:06:30,460] All right, so what is a gravitational field?
+- [00:06:30,460 - 00:06:34,740] Curvature of space time and that kind of thing,
+- [00:06:34,740 - 00:06:38,240] without trying to get into the harder,
+- [00:06:38,240 - 00:06:40,900] much more difficult subject of solving
+- [00:06:40,900 - 00:06:43,440] Einstein's field equations, that's hard.
+- [00:06:43,440 - 00:06:45,300] It's hard for me anyway.
+- [00:06:45,300 - 00:06:49,100] So that's what we'll do this quarter.
+- [00:06:49,100 - 00:06:52,760] Basic relativity, special and a bit of general.
+- [00:06:53,680 - 00:06:55,920] We'll probably get to the point
+- [00:06:55,920 - 00:07:00,460] where we can talk about black holes a little bit.
+- [00:07:00,460 - 00:07:02,700] Maybe also get to the point where we can talk
+- [00:07:02,700 - 00:07:05,320] about expansion of the universe.
+- [00:07:05,320 - 00:07:09,600] Some of the interesting things that flow out
+- [00:07:09,600 - 00:07:13,840] of the general theory of relativity.
+- [00:07:15,100 - 00:07:18,620] All right, now let's begin.
+- [00:07:18,620 - 00:07:22,280] First of all, what do we mean by relativity?
+- [00:07:23,020 - 00:07:23,660] Special.
+- [00:07:23,680 - 00:07:26,200] Well, what do we mean by relativity in general?
+- [00:07:26,200 - 00:07:29,720] What we mean by relativity is the idea that,
+- [00:07:29,720 - 00:07:31,440] of course, all of you know,
+- [00:07:31,440 - 00:07:37,920] that the laws of physics are independent
+- [00:07:37,920 - 00:07:41,960] of the frame of reference in which you study them.
+- [00:07:41,960 - 00:07:45,320] Frame of reference, simply for our purposes here,
+- [00:07:45,320 - 00:07:51,580] means a state of motion of a set of coordinates.
+- [00:07:51,580 - 00:07:52,280] If you like, the way
+- [00:07:52,280 - 00:07:52,980] to think about it is to,
+- [00:07:52,980 - 00:07:57,380] imagine space being filled up with a lattice,
+- [00:07:57,380 - 00:08:01,000] an imaginary lattice of meter sticks,
+- [00:08:01,000 - 00:08:03,500] so that every point in
+- [00:08:03,500 - 00:08:06,000] space is labeled by a X,
+- [00:08:07,400 - 00:08:10,940] a Y, and a Z, a set of meter sticks,
+- [00:08:10,940 - 00:08:15,100] and at each vertex of the lattice, a clock.
+- [00:08:16,080 - 00:08:18,500] And the clock measures time.
+- [00:08:18,500 - 00:08:22,320] Now, in Newtonian physics, in Newtonian physics,
+- [00:08:22,320 - 00:08:27,320] Newton imagined that time was very, very universal.
+- [00:08:28,420 - 00:08:30,560] He imagined God's time.
+- [00:08:30,560 - 00:08:34,220] God's time was the same for everybody.
+- [00:08:34,220 - 00:08:36,659] There was no question of what the time was
+- [00:08:36,659 - 00:08:38,080] on a particular clock.
+- [00:08:38,080 - 00:08:40,059] Clocks were synchronized.
+- [00:08:40,059 - 00:08:41,580] It didn't matter how they moved.
+- [00:08:41,580 - 00:08:43,419] It didn't matter how you move.
+- [00:08:43,419 - 00:08:45,560] It didn't matter how you move with your watch
+- [00:08:45,560 - 00:08:47,280] or without your watch.
+- [00:08:47,280 - 00:08:51,720] Everybody would agree at every instant, at every place,
+- [00:08:51,720 - 00:08:55,960] in the world, on what the time is, T.
+- [00:08:55,960 - 00:08:59,360] That, of course, had to be given up
+- [00:08:59,360 - 00:09:03,200] when Einstein moved to special relativity.
+- [00:09:03,200 - 00:09:06,720] But the idea of relativity was already there
+- [00:09:06,720 - 00:09:09,560] before Einstein, long before Einstein.
+- [00:09:09,560 - 00:09:11,700] It basically goes back to Galileo.
+- [00:09:11,700 - 00:09:15,560] So, let me just remind you what Galilean relativity is,
+- [00:09:15,560 - 00:09:17,620] how and why it failed.
+- [00:09:19,140 - 00:09:19,820] The way I like to think about relativity,
+- [00:09:19,820 - 00:09:20,820] The way I like to think about relativity,
+- [00:09:20,820 - 00:09:20,840] The way I like to think about relativity,
+- [00:09:20,840 - 00:09:20,940] The way I like to think about relativity,
+- [00:09:20,940 - 00:09:21,020] The way I like to think about relativity,
+- [00:09:21,020 - 00:09:22,520] The way I like to think about relativity,
+- [00:09:22,520 - 00:09:23,480] is I like to imagine,
+- [00:09:23,480 - 00:09:27,220] I always like to have a picture in my head
+- [00:09:27,220 - 00:09:32,220] that I can think about intuitively.
+- [00:09:32,220 - 00:09:34,300] And the picture that I have in my head
+- [00:09:34,300 - 00:09:36,740] is the same one that Einstein thought about,
+- [00:09:36,740 - 00:09:38,699] moving along in a railroad train
+- [00:09:40,560 - 00:09:45,560] in a railroad which is extremely well made,
+- [00:09:46,439 - 00:09:50,240] so well made that the tracks are perfectly smooth,
+- [00:09:50,240 - 00:09:52,440] so smooth that the train doesn't rattle,
+- [00:09:52,440 - 00:09:53,480] it doesn't shake,
+- [00:09:53,480 - 00:09:58,780] and it just moves with absolute uniform velocity.
+- [00:09:58,780 - 00:10:01,040] Now, what are the laws of physics?
+- [00:10:01,040 - 00:10:04,420] Well, my favorite description of the laws of physics
+- [00:10:04,420 - 00:10:07,660] in this train is what I like to imagine
+- [00:10:07,660 - 00:10:09,520] the laws of juggling.
+- [00:10:09,520 - 00:10:13,200] Juggling is good physics, incidentally.
+- [00:10:13,200 - 00:10:14,220] To be a good juggler,
+- [00:10:14,220 - 00:10:15,620] you have to have a
+- [00:10:15,620 - 00:10:17,020] very, very good sense of timing.
+- [00:10:17,020 - 00:10:19,100] You have to have a good sense of gravity.
+- [00:10:19,100 - 00:10:20,080] You have to have a good sense of alignment.
+- [00:10:20,080 - 00:10:20,120] You have to have a good sense of alignment.
+- [00:10:20,120 - 00:10:20,200] You have to have a good sense of alignment.
+- [00:10:20,200 - 00:10:20,240] You have to have a good sense of alignment.
+- [00:10:20,240 - 00:10:22,000] There's a lot of different aspects of physics.
+- [00:10:22,000 - 00:10:25,220] Of course, you may not consciously be using those,
+- [00:10:25,220 - 00:10:27,020] but at least unconsciously,
+- [00:10:27,020 - 00:10:29,220] all kinds of physics comes into juggling.
+- [00:10:30,320 - 00:10:32,400] So there are some rules.
+- [00:10:32,400 - 00:10:33,820] You throw the ball up,
+- [00:10:33,820 - 00:10:35,120] and you wait a certain amount of time,
+- [00:10:35,120 - 00:10:36,420] and you catch it, and you transfer it,
+- [00:10:36,420 - 00:10:37,380] and you do whatever it
+- [00:10:37,380 - 00:10:38,340] is that you're supposed to do,
+- [00:10:38,340 - 00:10:41,800] and you call all of those the laws of physics
+- [00:10:41,800 - 00:10:43,140] or the laws of juggling.
+- [00:10:43,140 - 00:10:47,480] Now, it's a fact of nature that in this train,
+- [00:10:47,480 - 00:10:50,200] which is moving with absolute uniform velocity,
+- [00:10:50,200 - 00:10:52,960] relative to a stalled train,
+- [00:10:52,960 - 00:10:55,040] a train that happens to be at rest
+- [00:10:55,040 - 00:10:57,280] on the surface of the Earth, for example,
+- [00:10:57,280 - 00:10:58,960] imagine the surface of the Earth,
+- [00:10:58,960 - 00:11:01,840] one train moving, one train standing still,
+- [00:11:01,840 - 00:11:05,440] the laws of juggling are exactly the same.
+- [00:11:05,440 - 00:11:08,480] This, in fact, before Galileo,
+- [00:11:08,480 - 00:11:10,100] this was something of a surprise.
+- [00:11:10,100 - 00:11:11,180] In fact, not a surprise.
+- [00:11:11,180 - 00:11:13,780] People didn't understand that.
+- [00:11:13,780 - 00:11:15,240] They actually imagined, of course,
+- [00:11:15,240 - 00:11:17,160] they didn't have trains to think about,
+- [00:11:17,160 - 00:11:19,360] but if you would have told them about trains,
+- [00:11:19,360 - 00:11:22,560] and moving along with a train,
+- [00:11:22,560 - 00:11:28,040] the average scientist probably would have thought
+- [00:11:28,040 - 00:11:29,660] that when you throw a ball
+- [00:11:29,660 - 00:11:31,280] in the air in the train,
+- [00:11:31,280 - 00:11:34,040] you probably have to compensate
+- [00:11:34,040 - 00:11:36,720] for the motion of the train by,
+- [00:11:36,720 - 00:11:38,240] if the train is moving that way,
+- [00:11:38,240 - 00:11:39,560] you probably have to move
+- [00:11:39,560 - 00:11:40,880] your arm over to the right
+- [00:11:40,880 - 00:11:42,880] in order to catch the ball,
+- [00:11:42,880 - 00:11:46,580] because the train moving will lead to
+- [00:11:46,580 - 00:11:48,600] moving out from under the thrown ball.
+- [00:11:48,600 - 00:11:49,120] Of course, this is wrong.
+- [00:11:49,120 - 00:11:53,440] The laws of juggling are the same
+- [00:11:53,440 - 00:11:55,740] in the stationary train and the moving train,
+- [00:11:55,740 - 00:12:01,060] identical, exactly the same.
+- [00:12:01,060 - 00:12:05,720] And that was something that Galileo realized.
+- [00:12:05,720 - 00:12:08,240] Galileo was the first to realize it,
+- [00:12:08,240 - 00:12:12,060] and Newton spelled it out in great detail
+- [00:12:12,060 - 00:12:14,020] in his laws of motion.
+- [00:12:14,020 - 00:12:16,320] So let's begin with Galilean relativity.
+- [00:12:16,320 - 00:12:17,320] Let's begin with Galilean relativity.
+- [00:12:17,320 - 00:12:18,320] Let's begin with Galilean relativity.
+- [00:12:19,120 - 00:12:21,820] Like all theories of relativity,
+- [00:12:21,820 - 00:12:25,320] it's a theory of transformations,
+- [00:12:25,320 - 00:12:28,420] transformations of coordinates,
+- [00:12:28,420 - 00:12:30,680] and transformations of phenomena
+- [00:12:30,680 - 00:12:33,220] from one frame of reference to another.
+- [00:12:33,220 - 00:12:36,520] Again, a frame of reference means, as I said,
+- [00:12:36,520 - 00:12:39,360] a lattice of meter sticks with clocks
+- [00:12:39,360 - 00:12:40,720] which have been synchronized,
+- [00:12:40,720 - 00:12:43,320] and we'll have to discuss what we mean by synchronized,
+- [00:12:43,320 - 00:12:45,380] but clocks which have been synchronized
+- [00:12:45,380 - 00:12:47,740] at each corner of the lattice,
+- [00:12:47,740 - 00:12:49,100] and now we can imagine having
+- [00:12:49,120 - 00:12:50,520] two such lattices.
+- [00:12:50,520 - 00:12:53,760] One is moving relative to the other.
+- [00:12:53,760 - 00:12:56,240] One is moving relative to the other.
+- [00:12:56,240 - 00:12:58,320] In each frame of reference,
+- [00:12:58,320 - 00:12:59,820] the clocks have been synchronized
+- [00:12:59,820 - 00:13:01,800] in the appropriate way,
+- [00:13:01,800 - 00:13:05,900] and so we have to transform information
+- [00:13:05,900 - 00:13:09,480] from one frame of reference to another.
+- [00:13:09,480 - 00:13:10,480] Various kinds of information,
+- [00:13:10,480 - 00:13:12,400] what is the energy of an object,
+- [00:13:12,400 - 00:13:16,000] what is the temperature of an object,
+- [00:13:16,000 - 00:13:18,320] I don't know, any number of different kinds of quantities,
+- [00:13:18,320 - 00:13:20,120] we could ask, if you know
+- [00:13:20,120 - 00:13:21,920] it in one frame of reference,
+- [00:13:21,920 - 00:13:24,560] what is it in the other frame of reference?
+- [00:13:24,560 - 00:13:27,400] Now the simplest set of quantities
+- [00:13:27,400 - 00:13:30,360] has to do with location,
+- [00:13:30,360 - 00:13:33,760] location in space and location in time,
+- [00:13:33,760 - 00:13:36,040] the things which are recorded
+- [00:13:36,040 - 00:13:41,040] by the meter sticks and the clocks.
+- [00:13:41,140 - 00:13:43,510] So how do we transform from
+- [00:13:43,510 - 00:13:45,880] one frame of reference to another?
+- [00:13:45,880 - 00:13:47,640] Here we have a frame of reference
+- [00:13:47,640 - 00:13:49,880] that is a relative to the other.
+- [00:13:49,880 - 00:13:52,880] Let's first of all draw a frame of reference.
+- [00:13:52,880 - 00:13:53,880] The first thing to do
+- [00:13:53,880 - 00:13:54,880] when you start a relativity problem
+- [00:13:54,880 - 00:13:56,640] is to draw a picture,
+- [00:13:56,640 - 00:13:59,760] and the picture is a picture of space-time.
+- [00:13:59,760 - 00:14:03,760] Time vertically, as always,
+- [00:14:03,760 - 00:14:06,400] and space horizontally,
+- [00:14:06,400 - 00:14:09,520] and at least in the beginning,
+- [00:14:09,520 - 00:14:12,340] we're mainly going to be interested in problems
+- [00:14:12,340 - 00:14:15,640] involving motion along one particular axis,
+- [00:14:15,640 - 00:14:17,240] so let's call it the x-axis.
+- [00:14:17,240 - 00:14:20,000] The y and z directions for the moment
+- [00:14:20,000 - 00:14:21,800] will be rather passive.
+- [00:14:21,800 - 00:14:24,040] They won't play any great role for a while.
+- [00:14:24,040 - 00:14:25,800] They'll come into things.
+- [00:14:25,800 - 00:14:29,480] And so every point in space and time,
+- [00:14:30,900 - 00:14:34,380] or every point on the blackboard,
+- [00:14:34,380 - 00:14:36,630] stands for a place in
+- [00:14:36,630 - 00:14:38,880] space and a time in time.
+- [00:14:40,300 - 00:14:42,500] So it's called space-time, naturally enough.
+- [00:14:43,400 - 00:14:46,540] Okay, now let's, and if you,
+- [00:14:46,540 - 00:14:50,040] if I wanted to draw the meter sticks,
+- [00:14:50,040 - 00:14:52,860] let's just imagine drawing the meter sticks.
+- [00:14:52,860 - 00:14:54,780] One, here's the origin.
+- [00:14:54,780 - 00:14:56,500] Here's the origin right here.
+- [00:14:56,500 - 00:14:58,040] Time equals zero here.
+- [00:14:58,040 - 00:15:00,260] The clocks have been all adjusted,
+- [00:15:00,260 - 00:15:02,140] so the time is equal to zero
+- [00:15:02,140 - 00:15:04,339] all along the horizontal axis.
+- [00:15:05,319 - 00:15:08,740] And as we flow up,
+- [00:15:08,740 - 00:15:12,079] the clocks tick off time, seconds, years,
+- [00:15:12,079 - 00:15:13,760] whatever it happens to be.
+- [00:15:13,760 - 00:15:14,929] All right, now, if we move
+- [00:15:14,929 - 00:15:16,099] down the line a little bit,
+- [00:15:16,100 - 00:15:19,000] we come to the end of the first meter stick.
+- [00:15:19,000 - 00:15:21,280] So here's the end of the first meter stick.
+- [00:15:21,280 - 00:15:25,180] Its trajectory is a trajectory in space-time.
+- [00:15:25,180 - 00:15:27,760] The second meter stick is over here.
+- [00:15:27,760 - 00:15:30,000] The third meter stick is over here.
+- [00:15:30,000 - 00:15:31,500] And the sequence of meter sticks
+- [00:15:31,500 - 00:15:34,920] laid out along the horizontal axis,
+- [00:15:34,920 - 00:15:37,420] as time goes on, define
+- [00:15:37,420 - 00:15:39,920] a series of stripes like this,
+- [00:15:40,320 - 00:15:45,320] which represents locations in space, if you like.
+- [00:15:45,420 - 00:15:46,100] This is x-axis.
+- [00:15:46,100 - 00:15:48,160] So x equals zero, x equals one.
+- [00:15:48,160 - 00:15:50,160] Needless to say, we can also go backward
+- [00:15:50,160 - 00:15:51,930] to x equals minus one, x
+- [00:15:51,930 - 00:15:53,700] equals minus two, and so forth.
+- [00:15:55,340 - 00:15:57,920] There's no reason to stop at x equals zero.
+- [00:15:57,920 - 00:16:00,000] x equals one, x equals two, x equals three,
+- [00:16:00,000 - 00:16:01,400] x equals four, and so forth.
+- [00:16:02,480 - 00:16:04,940] Now, the clocks tick.
+- [00:16:04,940 - 00:16:08,260] And so a clock which reads,
+- [00:16:08,260 - 00:16:10,340] there is no time that we call zero, is there?
+- [00:16:10,340 - 00:16:12,960] We never hear of talking about time zero.
+- [00:16:12,960 - 00:16:14,960] I mean, you know, an ordinary clock.
+- [00:16:14,960 - 00:16:15,420] Time zero is usually what we call zero.
+- [00:16:15,420 - 00:16:19,240] Zero is usually what we call 12 midnight, I guess.
+- [00:16:19,240 - 00:16:22,380] But anyway, let's use the term time t equals zero.
+- [00:16:22,380 - 00:16:24,699] T equals zero is over here.
+- [00:16:24,699 - 00:16:27,520] T equals one, one what?
+- [00:16:27,520 - 00:16:30,380] One second or whatever.
+- [00:16:30,380 - 00:16:35,380] Two seconds, three seconds, four seconds, five seconds.
+- [00:16:35,479 - 00:16:38,400] And now if we draw some horizontal lines,
+- [00:16:38,400 - 00:16:42,540] those represent lines of constant time.
+- [00:16:42,540 - 00:16:44,740] So the whole world is a circle.
+- [00:16:44,740 - 00:16:49,020] So the whole world, space and time, becomes a lattice.
+- [00:16:49,020 - 00:16:51,860] Not a real lattice, an imaginary lattice.
+- [00:16:51,860 - 00:16:53,290] And you can make that
+- [00:16:53,290 - 00:16:54,720] lattice as fine as you like.
+- [00:16:54,720 - 00:16:55,800] It doesn't have to be meters.
+- [00:16:55,800 - 00:17:00,140] It could be centimeters or microns or
+- [00:17:00,140 - 00:17:04,060] Planck lengths or if smaller than that makes any sense.
+- [00:17:05,140 - 00:17:09,200] We can make it as fine as we like.
+- [00:17:09,200 - 00:17:10,910] And in that way, every point
+- [00:17:10,910 - 00:17:12,619] in space time represents a precise time.
+- [00:17:12,619 - 00:17:13,420] And that's why we call it the Planck Line.
+- [00:17:13,420 - 00:17:13,859] And that's why we call it the Planck Line.
+- [00:17:13,859 - 00:17:14,359] And that's why we call it the Planck Line.
+- [00:17:14,359 - 00:17:14,720] And that's why we call it the Planck Line.
+- [00:17:14,740 - 00:17:16,720] It's the same time and a
+- [00:17:16,720 - 00:17:18,700] precise place according to this lattice.
+- [00:17:18,700 - 00:17:22,099] All right, now that's your reference frame.
+- [00:17:22,099 - 00:17:24,459] You are the people in the
+- [00:17:24,459 - 00:17:26,819] station or in the broke-down train,
+- [00:17:26,819 - 00:17:28,600] which isn't moving.
+- [00:17:28,600 - 00:17:29,140] All right?
+- [00:17:29,140 - 00:17:31,630] You're sitting there waiting at rest
+- [00:17:31,630 - 00:17:34,120] at the surface of the Earth.
+- [00:17:34,120 - 00:17:36,770] But my train is moving, and
+- [00:17:36,770 - 00:17:39,420] my train is moving with velocity v.
+- [00:17:39,420 - 00:17:40,040] All right?
+- [00:17:40,040 - 00:17:41,890] I'm in the caboose of
+- [00:17:41,890 - 00:17:43,740] the train at the tail end.
+- [00:17:43,740 - 00:17:44,620] And let's say.
+- [00:17:44,620 - 00:17:50,210] at time t equals zero, the caboose is right over
+- [00:17:50,210 - 00:17:55,800] here, but as time moves on, as time moves ahead,
+- [00:17:56,899 - 00:17:58,849] my train moves forward. I'll assume it
+- [00:17:58,849 - 00:18:00,800] moves forward. It could also move backward,
+- [00:18:01,459 - 00:18:03,429] and so the tail end
+- [00:18:03,429 - 00:18:05,399] of the caboose looks like that.
+- [00:18:05,400 - 00:18:10,610] My, the next car might look like
+- [00:18:10,610 - 00:18:15,820] this. I'm imagining now cars one meter long,
+- [00:18:15,820 - 00:18:22,280] and so my series of constant position coordinates
+- [00:18:22,280 - 00:18:28,740] are tilted relative to yours in a space-time plot
+- [00:18:28,740 - 00:18:32,060] like this. All right, now we're not going to,
+- [00:18:32,060 - 00:18:35,380] we're not up to Einstein yet. We're doing Galileo.
+- [00:18:35,400 - 00:18:39,540] And Newton. Galileo and Newton could ask
+- [00:18:39,540 - 00:18:43,680] the question, if you people in the station
+- [00:18:43,680 - 00:18:47,080] give a certain set of coordinates, let's
+- [00:18:47,080 - 00:18:50,480] say x and t, to an event,
+- [00:18:51,600 - 00:18:55,110] here's an event right over here, an event means
+- [00:18:55,110 - 00:18:58,620] a point of space-time, if you label the point of
+- [00:18:58,620 - 00:19:02,000] space-time x and t in what we'll
+- [00:19:02,000 - 00:19:05,380] call the stationary reference frame, what are the
+- [00:19:05,380 - 00:19:08,460] coordinates that I assign to it in my
+- [00:19:08,460 - 00:19:11,540] moving reference frame? Well, if Galileo were here,
+- [00:19:11,540 - 00:19:15,580] he would look at this and say, look, time is
+- [00:19:15,580 - 00:19:19,620] time. I believe, like Newton will believe in a few years,
+- [00:19:20,180 - 00:19:24,300] that time is universal. Everybody agrees about time,
+- [00:19:24,300 - 00:19:28,420] and in fact he could sort of check that.
+- [00:19:28,420 - 00:19:31,220] There weren't very good watches at that time, but
+- [00:19:31,220 - 00:19:34,020] he could check it with a pendulum or something
+- [00:19:34,020 - 00:19:34,080] like that, and he could take a look at it and
+- [00:19:34,080 - 00:19:34,140] say, well, it's not that good. It's just that it's not
+- [00:19:34,140 - 00:19:34,180] the same as the time t equals zero. And so, he
+- [00:19:34,180 - 00:19:34,220] would think that he's just going to have to go back
+- [00:19:34,220 - 00:19:34,240] and look at the time t, and he would say, well,
+- [00:19:34,240 - 00:19:34,260] it's not that good. He's just going to have to go back
+- [00:19:34,260 - 00:19:34,300] to the time t, and he would say, well, it's not that
+- [00:19:34,300 - 00:19:34,340] good. It's just that he's just going to have to go back
+- [00:19:34,340 - 00:19:36,540] that. And he could take the pendulum, and if he
+- [00:19:36,540 - 00:19:38,740] was careful, he could put the pendulum on a moving
+- [00:19:38,740 - 00:19:41,240] train. There were no trains, there were no
+- [00:19:41,240 - 00:19:43,740] watches, but he could imagine taking his pendulum
+- [00:19:43,740 - 00:19:47,349] and moving it along and bringing it back and
+- [00:19:47,349 - 00:19:50,959] checking it against the pendulum at rest. And if
+- [00:19:50,959 - 00:19:54,059] he did it well and he did it carefully, he
+- [00:19:54,059 - 00:19:57,159] would find that the two pendulums agreed. The way the
+- [00:19:57,159 - 00:20:00,169] pendulums move would not in any way influence how
+- [00:20:00,169 - 00:20:03,179] rapidly they tick off. And of course, that's true
+- [00:20:03,179 - 00:20:04,300] for the pendulum.
+- [00:20:04,340 - 00:20:07,840] But it's not that easy to know the pendulums
+- [00:20:07,840 - 00:20:11,340] until the pendulums stop moving too fast. So, Galileo,
+- [00:20:11,340 - 00:20:16,340] first of all, would have said, t prime, that's
+- [00:20:16,340 - 00:20:21,340] the time in my frame of reference, the moving reference
+- [00:20:21,340 - 00:20:27,600] frame, is the same as your time. But, my
+- [00:20:27,600 - 00:20:33,860] coordinate, x prime, what does my coordinate mean? Let's take
+- [00:20:33,860 - 00:20:34,340] this point over here.
+- [00:20:34,340 - 00:20:41,840] The coordinate, the x coordinate that I assigned to this point over here, is the distance not to your origin
+- [00:20:41,840 - 00:20:49,340] of coordinates, not to your origin of space, but to my origin of space. My origin of space is over here.
+- [00:20:49,340 - 00:20:56,340] So, I will assign a smaller x, x prime will be smaller than
+- [00:20:56,340 - 00:21:03,340] x, and what it will be will be x, your x, minus x prime.
+- [00:21:04,340 - 00:21:08,340] The amount that you move, or sorry, the amount that I move
+- [00:21:08,340 - 00:21:12,340] in time t, and that's going to be minus the velocity times t.
+- [00:21:12,340 - 00:21:18,840] So, t prime equals t, x prime is equal to x minus
+- [00:21:18,840 - 00:21:25,340] vt, where v is the relative velocity of the two frames of reference.
+- [00:21:25,340 - 00:21:30,340] We can go back and forth.
+- [00:21:30,340 - 00:21:31,340] We can solve, we can solve this equation.
+- [00:21:31,340 - 00:21:32,340] We can solve this equation.
+- [00:21:32,340 - 00:21:33,340] We can solve this equation.
+- [00:21:33,340 - 00:21:34,340] We can solve this equation.
+- [00:21:34,340 - 00:21:36,340] This gives me the primed
+- [00:21:36,340 - 00:21:38,340] coordinates in terms of the unprimed.
+- [00:21:38,340 - 00:21:45,340] I could solve this and rewrite it as t
+- [00:21:45,340 - 00:21:52,340] equals t prime, x equals x prime plus v.
+- [00:21:52,340 - 00:21:57,840] Now, I would, if I just used the second equation, I would write plus vt,
+- [00:21:57,840 - 00:22:03,340] but since t is the same as t prime, I'll just write vt prime here.
+- [00:22:03,340 - 00:22:09,840] The top equation would be how the moving, would be how the
+- [00:22:09,840 - 00:22:16,340] stationary observer converts his information into the information of a moving observer.
+- [00:22:16,340 - 00:22:21,340] And the inverse equation would be how you go back.
+- [00:22:22,434 - 00:22:23,490] はい
+- [00:22:23,490 - 00:22:29,050] This is the basic mathematics of Galilean relativity.
+- [00:22:29,050 - 00:22:31,370] Let's check some things. First of
+- [00:22:31,370 - 00:22:33,690] all, what kind of things are invariant?
+- [00:22:33,690 - 00:22:36,850] The idea of invariance is very important.
+- [00:22:36,850 - 00:22:38,990] The idea of invariant
+- [00:22:38,990 - 00:22:43,250] or an invariant
+- [00:22:43,250 - 00:22:47,750] invariant is both an adjective and a noun.
+- [00:22:47,750 - 00:22:51,890] Equations can be invariant.
+- [00:22:51,890 - 00:22:56,430] An invariant means a thing which everybody agrees about,
+- [00:22:56,430 - 00:22:58,930] a quantity that everybody agrees about.
+- [00:22:58,930 - 00:23:00,770] Alright, so let me give you an
+- [00:23:00,770 - 00:23:02,610] example of a quantity that everybody agrees about,
+- [00:23:02,610 - 00:23:05,110] everybody meaning these two observers,
+- [00:23:05,110 - 00:23:07,320] or any other ones that
+- [00:23:07,320 - 00:23:09,530] we also throw in. Yeah, question.
+- [00:23:09,530 - 00:23:12,290] You were saying about the pendulum, how you can check
+- [00:23:12,290 - 00:23:15,089] Yes.
+- [00:23:15,089 - 00:23:18,610] Well, I was, I was, uh...
+- [00:23:18,610 - 00:23:19,990] Yeah.
+- [00:23:19,990 - 00:23:21,089] Yeah.
+- [00:23:21,090 - 00:23:23,090] How does he know that
+- [00:23:23,090 - 00:23:25,090] when he moves the pendulum away,
+- [00:23:25,090 - 00:23:28,010] that he's speeding it up
+- [00:23:28,010 - 00:23:30,930] and then it's kind of, uh,
+- [00:23:30,930 - 00:23:35,090] it's decelerated and going fast?
+- [00:23:35,090 - 00:23:37,090] How does he know that that is...
+- [00:23:37,090 - 00:23:39,490] Of course, the answer is he doesn't.
+- [00:23:39,490 - 00:23:42,990] But if you do it with an ordinary watch,
+- [00:23:42,990 - 00:23:44,360] with a good, no, I mean,
+- [00:23:44,360 - 00:23:45,730] how Galileo would have known it,
+- [00:23:45,730 - 00:23:48,410] I think Galileo just guessed it.
+- [00:23:48,410 - 00:23:49,750] How you would do it is
+- [00:23:49,750 - 00:23:51,090] you would take your high quality,
+- [00:23:51,090 - 00:23:56,090] Rolex watch, and you would just go and do it.
+- [00:23:56,090 - 00:23:58,260] One person would stay in his seat, and
+- [00:23:58,260 - 00:24:00,430] the other person would march around the room
+- [00:24:00,430 - 00:24:02,309] a few hundred times and then
+- [00:24:02,309 - 00:24:04,189] come back and check their watches.
+- [00:24:04,189 - 00:24:07,689] Now, the answer, of course,
+- [00:24:07,689 - 00:24:11,189] that we know, because of hindsight,
+- [00:24:11,189 - 00:24:13,689] and because we're living in the 21st
+- [00:24:13,689 - 00:24:16,189] century, and Einstein was a hundred years ago,
+- [00:24:16,189 - 00:24:18,639] is there will be a tiny
+- [00:24:18,639 - 00:24:21,090] discrepancy, but that discrepancy is so small,
+- [00:24:21,090 - 00:24:27,090] that for ordinary purposes, for ordinary daily experience,
+- [00:24:27,090 - 00:24:29,590] we would simply say the rate
+- [00:24:29,590 - 00:24:32,090] at which clocks tick off time
+- [00:24:32,090 - 00:24:34,090] doesn't depend on their motion.
+- [00:24:34,090 - 00:24:36,090] And that's an experimental fact.
+- [00:24:36,090 - 00:24:38,590] Experimental fact in the sense that if
+- [00:24:38,590 - 00:24:41,090] we actually did it with ordinary clocks,
+- [00:24:41,090 - 00:24:43,090] it would work.
+- [00:24:43,090 - 00:24:45,090] It would work to very high precision.
+- [00:24:45,090 - 00:24:48,090] Of course, at some level, it fails,
+- [00:24:48,090 - 00:24:51,090] but that's what special relativity is about.
+- [00:24:51,090 - 00:24:54,090] I guess ignoring the special relativity thing,
+- [00:24:54,090 - 00:24:56,090] I guess I have a problem that you're
+- [00:24:56,090 - 00:24:58,090] bringing the clock back to the same spot.
+- [00:24:58,090 - 00:24:59,090] Yeah.
+- [00:24:59,090 - 00:25:02,090] And that's you're biasing whatever...
+- [00:25:02,090 - 00:25:03,590] Oh, you think it might have sped
+- [00:25:03,590 - 00:25:05,090] up as you went one way and...
+- [00:25:05,090 - 00:25:07,090] Come back, is it?
+- [00:25:07,090 - 00:25:09,090] Yeah, well, that might have happened.
+- [00:25:09,090 - 00:25:11,590] That would mean that there was basically
+- [00:25:11,590 - 00:25:14,090] a difference between left motion and right motion.
+- [00:25:14,090 - 00:25:15,590] So we could try the
+- [00:25:15,590 - 00:25:17,090] same experiment going the other way.
+- [00:25:17,090 - 00:25:18,590] Well, maybe the same thing
+- [00:25:18,590 - 00:25:20,090] would happen, but then we could...
+- [00:25:20,090 - 00:25:21,590] If east and west, we
+- [00:25:21,590 - 00:25:23,090] would try it north and south.
+- [00:25:23,090 - 00:25:25,590] We might also take my watch and go around
+- [00:25:25,590 - 00:25:28,090] you in circles for a long period of time
+- [00:25:28,090 - 00:25:30,090] and do all kinds of experiments.
+- [00:25:30,090 - 00:25:33,090] Or just go one direction and use a telescope.
+- [00:25:33,090 - 00:25:35,090] Use what we...
+- [00:25:35,090 - 00:25:36,090] All kinds of...
+- [00:25:36,090 - 00:25:37,590] There are all kinds of ways we
+- [00:25:37,590 - 00:25:39,090] would try all sorts of obvious things,
+- [00:25:39,090 - 00:25:41,090] and they all work.
+- [00:25:41,090 - 00:25:43,090] And they all work, right.
+- [00:25:43,090 - 00:25:45,090] You don't need a telescope.
+- [00:25:45,090 - 00:25:47,090] You use a telephone to
+- [00:25:47,090 - 00:25:49,090] communicate the information back and forth.
+- [00:25:50,090 - 00:25:53,590] Send light signals back and forth
+- [00:25:53,590 - 00:25:57,090] to check our watches and so forth.
+- [00:25:57,090 - 00:25:59,090] And it would work very well.
+- [00:25:59,090 - 00:26:01,090] It would work very well until
+- [00:26:01,090 - 00:26:03,090] we start to move too fast.
+- [00:26:03,090 - 00:26:05,090] Then it breaks down.
+- [00:26:05,090 - 00:26:07,090] But the point is that Galilean
+- [00:26:07,090 - 00:26:09,090] relativity was based on a guess.
+- [00:26:09,090 - 00:26:12,090] It was frankly based on a guess.
+- [00:26:12,090 - 00:26:14,090] And the mathematical translation of
+- [00:26:14,090 - 00:26:16,090] the guess is these equations.
+- [00:26:16,090 - 00:26:19,090] Now, there are some obvious invariants.
+- [00:26:20,090 - 00:26:24,090] For example, here's something that's invariant.
+- [00:26:24,090 - 00:26:27,090] At an instant of time, look
+- [00:26:27,090 - 00:26:30,090] at the distance between two events.
+- [00:26:30,090 - 00:26:34,090] Two events which are synchronous or simultaneous.
+- [00:26:34,090 - 00:26:38,090] Simultaneous being used to mean at the same time.
+- [00:26:38,090 - 00:26:42,090] Take two events at the same time.
+- [00:26:42,090 - 00:26:48,090] The distance between them will be invariant.
+- [00:26:48,090 - 00:26:50,090] Why is that?
+- [00:26:50,090 - 00:26:52,090] Let's take the two events.
+- [00:26:52,090 - 00:26:54,090] Let's take the two events.
+- [00:26:54,090 - 00:26:58,090] Let's call them x1 at time t1 and
+- [00:26:58,090 - 00:27:02,090] x2 at also at the same time t.
+- [00:27:02,090 - 00:27:04,090] Let's not even bother labeling the time.
+- [00:27:04,090 - 00:27:07,090] At the same time.
+- [00:27:07,090 - 00:27:10,090] These are two events at the same time.
+- [00:27:10,090 - 00:27:15,090] And the distance between them is simply x2 minus x1.
+- [00:27:15,090 - 00:27:18,090] And that we can call distance.
+- [00:27:18,090 - 00:27:20,090] What about the primed coordinates?
+- [00:27:20,090 - 00:27:24,090] The primed coordinates are x prime
+- [00:27:24,090 - 00:27:28,090] 1 is equal to x1 minus vt.
+- [00:27:28,090 - 00:27:34,090] x prime 2 is x2 minus vt.
+- [00:27:34,090 - 00:27:39,090] Notice that the actual coordinates are not invariant.
+- [00:27:39,090 - 00:27:43,090] They don't assign the same values of x.
+- [00:27:43,090 - 00:27:45,090] But they do assign the same
+- [00:27:45,090 - 00:27:47,090] values if we now subtract these two.
+- [00:27:47,090 - 00:27:49,090] Or subtract them, the bottom one,
+- [00:27:49,090 - 00:27:51,090] the top one from the bottom one.
+- [00:27:51,090 - 00:27:55,090] Then x prime 2 minus x prime
+- [00:27:55,090 - 00:27:59,090] 1 is equal to x2 minus x1.
+- [00:27:59,090 - 00:28:03,090] And then the vt's cancel.
+- [00:28:03,090 - 00:28:06,590] So the separation between two points
+- [00:28:06,590 - 00:28:10,090] at the same instant of time.
+- [00:28:10,090 - 00:28:12,090] I emphasize at the same instant of time.
+- [00:28:12,090 - 00:28:13,590] Because it wouldn't be true if we
+- [00:28:13,590 - 00:28:15,090] did it at different instants of time.
+- [00:28:15,090 - 00:28:16,090] Yeah.
+- [00:28:16,090 - 00:28:18,090] The t's on the right are not
+- [00:28:18,090 - 00:28:20,090] the same as the t's on the left.
+- [00:28:20,090 - 00:28:23,090] Yeah, they are.
+- [00:28:23,090 - 00:28:26,090] With an event at x1 t
+- [00:28:26,090 - 00:28:29,090] and another event at x2 t.
+- [00:28:29,090 - 00:28:31,090] This is t over here.
+- [00:28:31,090 - 00:28:32,090] Okay, got it.
+- [00:28:32,090 - 00:28:33,090] Got it, okay.
+- [00:28:33,090 - 00:28:34,090] This is t.
+- [00:28:34,090 - 00:28:37,090] Here's x2.
+- [00:28:37,090 - 00:28:40,090] Here's x1.
+- [00:28:40,090 - 00:28:45,090] The separation between the two points is an invariant.
+- [00:28:45,090 - 00:28:48,090] That's the language we would use.
+- [00:28:48,090 - 00:28:52,090] Let's imagine that we have a particle trajectory.
+- [00:28:52,090 - 00:28:58,090] A particle trajectory means an x of t.
+- [00:28:58,090 - 00:29:00,590] x as a function of t
+- [00:29:00,590 - 00:29:03,090] would be a trajectory of some particle.
+- [00:29:03,090 - 00:29:04,090] I'll put it over here.
+- [00:29:04,090 - 00:29:06,590] Trajectory of some particle is an
+- [00:29:06,590 - 00:29:09,090] x at each function of time.
+- [00:29:09,090 - 00:29:12,090] First of all, is the position invariant?
+- [00:29:12,090 - 00:29:13,090] No.
+- [00:29:13,090 - 00:29:15,090] x and x prime are not the same thing.
+- [00:29:15,090 - 00:29:21,590] But we can write x prime of t
+- [00:29:21,590 - 00:29:28,090] is equal to x of t minus vt.
+- [00:29:28,090 - 00:29:32,090] All right, so if I know the trajectory x
+- [00:29:32,090 - 00:29:36,090] of t, not v of t, but v times t.
+- [00:29:36,090 - 00:29:39,590] If I know the trajectory of a particle, or if
+- [00:29:39,590 - 00:29:43,090] you know the trajectory of a particle x of t,
+- [00:29:43,090 - 00:29:45,090] you can communicate it to me.
+- [00:29:45,090 - 00:29:48,090] And the communication will be in the form
+- [00:29:48,090 - 00:29:51,090] of telling me what x prime of t is.
+- [00:29:51,090 - 00:29:53,590] What I will see is an x prime of
+- [00:29:53,590 - 00:29:56,090] t, which will be your x of t minus vt.
+- [00:29:56,090 - 00:29:58,090] All right, so the coordinate of
+- [00:29:58,090 - 00:30:00,090] the particle itself is not invariant.
+- [00:30:00,090 - 00:30:02,090] What about the velocity?
+- [00:30:02,090 - 00:30:06,090] The velocity is just the time derivative of the position.
+- [00:30:06,090 - 00:30:09,090] All right, so the velocity, which would just
+- [00:30:09,090 - 00:30:12,090] be, let's call it dx prime by dt.
+- [00:30:12,090 - 00:30:14,090] That's equal to dx by dt.
+- [00:30:14,090 - 00:30:20,090] That's equal to dx by dt minus v.
+- [00:30:20,090 - 00:30:24,090] So no, velocities are not invariant.
+- [00:30:24,090 - 00:30:28,090] What you see is the velocity.
+- [00:30:28,090 - 00:30:32,090] I see the velocity being diminished.
+- [00:30:32,090 - 00:30:34,090] v could of course be negative.
+- [00:30:34,090 - 00:30:39,090] I mean, there's nothing intrinsic about the sign of v.
+- [00:30:39,090 - 00:30:41,090] But I see a velocity
+- [00:30:41,090 - 00:30:43,090] which is shifted by amount v.
+- [00:30:43,090 - 00:30:45,090] That's obvious, of course.
+- [00:30:45,090 - 00:30:46,090] I'm moving along.
+- [00:30:46,090 - 00:30:48,090] You shoot an arrow.
+- [00:30:48,090 - 00:30:51,090] I see the arrow going slower than
+- [00:30:51,090 - 00:30:54,090] you see the arrow going for obvious reasons.
+- [00:30:54,090 - 00:30:57,090] What about acceleration?
+- [00:30:57,090 - 00:31:01,590] So, first of all, position and velocity are
+- [00:31:01,590 - 00:31:06,090] not relativistic invariants in Galileo's theory of relativity.
+- [00:31:06,090 - 00:31:10,090] But let's differentiate again to get the acceleration.
+- [00:31:10,090 - 00:31:12,090] dx prime.
+- [00:31:13,090 - 00:31:14,090] Well, let's see.
+- [00:31:14,090 - 00:31:16,090] By, let's put it here.
+- [00:31:16,090 - 00:31:20,090] d second x prime by dt squared.
+- [00:31:20,090 - 00:31:26,590] That's the acceleration that I see is equal to the
+- [00:31:26,590 - 00:31:33,090] acceleration that you see minus the time derivative of v.
+- [00:31:33,090 - 00:31:35,090] But v is a constant.
+- [00:31:35,090 - 00:31:38,090] I am assuming that the relative velocity
+- [00:31:38,090 - 00:31:41,090] between the two frames of reference is constant.
+- [00:31:41,090 - 00:31:44,590] That's equivalent to saying that
+- [00:31:44,590 - 00:31:48,090] these tilted lines are straight lines.
+- [00:31:48,090 - 00:31:51,590] So, the acceleration, the difference
+- [00:31:51,590 - 00:31:55,090] v doesn't make any difference.
+- [00:31:55,090 - 00:31:58,090] The time derivative of a constant is zero.
+- [00:31:58,090 - 00:32:03,090] And so acceleration is an invariant.
+- [00:32:03,090 - 00:32:06,090] The acceleration that I see of an object.
+- [00:32:06,090 - 00:32:08,090] Not my acceleration.
+- [00:32:08,090 - 00:32:09,090] I'm not accelerating.
+- [00:32:09,090 - 00:32:10,090] I'm in the caboose of the train.
+- [00:32:10,090 - 00:32:12,090] I'm moving along with uniform velocity.
+- [00:32:12,090 - 00:32:14,090] But I see objects moving back
+- [00:32:14,090 - 00:32:16,090] and forth in front of me.
+- [00:32:16,090 - 00:32:17,090] Moving to the left.
+- [00:32:17,090 - 00:32:18,090] Moving to the right.
+- [00:32:18,090 - 00:32:22,090] Sometimes they accelerate.
+- [00:32:22,090 - 00:32:24,090] You see the same objects.
+- [00:32:24,090 - 00:32:26,090] You also see them accelerate.
+- [00:32:26,090 - 00:32:29,090] And we will agree about the acceleration.
+- [00:32:29,090 - 00:32:32,090] So, acceleration is an invariant.
+- [00:32:32,090 - 00:32:35,590] Now, I shouldn't, I'm not sure
+- [00:32:35,590 - 00:32:39,090] which is cause and effect here, really.
+- [00:32:39,090 - 00:32:43,090] But let's say it this way.
+- [00:32:43,090 - 00:32:48,590] The fact that acceleration is itself an invariant is a strong
+- [00:32:48,590 - 00:32:54,090] suggestion that the laws of physics should be in terms of acceleration.
+- [00:32:54,090 - 00:32:55,090] Not velocity.
+- [00:32:55,090 - 00:32:57,090] Not position.
+- [00:32:57,090 - 00:33:02,090] But the law of physics, the laws of motion, if they are to be
+- [00:33:02,090 - 00:33:07,090] invariant, if they are to be invariant, the laws of physics should involve acceleration.
+- [00:33:07,090 - 00:33:10,090] Since we all agree on the acceleration.
+- [00:33:10,090 - 00:33:13,090] Well, of course, that's exactly
+- [00:33:13,090 - 00:33:16,090] what F equals M A says.
+- [00:33:16,090 - 00:33:20,090] Force is equal to mass times acceleration.
+- [00:33:20,090 - 00:33:23,090] Acceleration, we all agree about acceleration.
+- [00:33:23,090 - 00:33:27,090] Well, let's analyze this a little more closely.
+- [00:33:27,090 - 00:33:29,590] Supposing we're talking about two objects
+- [00:33:29,590 - 00:33:32,090] which exert forces on each other.
+- [00:33:32,090 - 00:33:34,090] And for the moment, everything is
+- [00:33:34,090 - 00:33:36,090] taking place along the X axis.
+- [00:33:36,090 - 00:33:42,090] We usually imagine, correctly for most cases, that the force
+- [00:33:42,090 - 00:33:48,090] between two objects only depends on the distance between them.
+- [00:33:48,090 - 00:33:49,090] Alright?
+- [00:33:49,090 - 00:33:51,090] Only depends on the distance between them.
+- [00:33:51,090 - 00:33:55,590] The force between two objects, gravitational force, electrostatic
+- [00:33:55,590 - 00:34:00,090] force, only depends on the distance between them.
+- [00:34:00,090 - 00:34:02,090] The coordinates of the
+- [00:34:02,090 - 00:34:04,090] particles themselves are not invariant.
+- [00:34:04,090 - 00:34:05,090] But the distance between them is invariant.
+- [00:34:05,090 - 00:34:12,090] That's what we, well, where did we write it?
+- [00:34:12,090 - 00:34:15,090] Up on the top here.
+- [00:34:15,090 - 00:34:18,090] Everybody agrees about the distance.
+- [00:34:18,090 - 00:34:21,090] So the distance is an invariant.
+- [00:34:21,090 - 00:34:24,590] And if the force only depends on the distance, it
+- [00:34:24,590 - 00:34:28,090] says that the force between two objects is an invariant.
+- [00:34:28,090 - 00:34:31,090] Meaning to say that everybody agrees about it.
+- [00:34:31,090 - 00:34:32,590] So if you, in your frame, were
+- [00:34:32,590 - 00:34:34,090] to measure the force between two objects,
+- [00:34:34,090 - 00:34:36,090] which are moving somehow,
+- [00:34:36,090 - 00:34:38,590] and I, in my frame,
+- [00:34:38,590 - 00:34:41,090] whizzing by it, measure the force,
+- [00:34:41,090 - 00:34:44,090] according to Newton and Galileo, and everybody
+- [00:34:44,090 - 00:34:47,090] who came after them, up to Einstein,
+- [00:34:47,090 - 00:34:51,590] force is an invariant because the
+- [00:34:51,590 - 00:34:56,090] distance between two objects is invariant.
+- [00:34:56,090 - 00:35:02,090] That leaves only one more symbol in this equation, mass,
+- [00:35:02,090 - 00:35:06,090] in order for Newton's theory to make any sense,
+- [00:35:06,090 - 00:35:10,090] it was necessary that mass is an invariant.
+- [00:35:10,090 - 00:35:12,590] If all the terms in the equation
+- [00:35:12,590 - 00:35:15,090] are invariant, then so must be the mass.
+- [00:35:15,090 - 00:35:19,590] And so, according to Newton, every object has
+- [00:35:19,590 - 00:35:24,090] a mass, and everybody agrees about that mass.
+- [00:35:24,090 - 00:35:28,090] There's no discrepancy because some object is moving.
+- [00:35:28,090 - 00:35:31,090] About a one kilogram object is a one kilogram object.
+- [00:35:32,090 - 00:35:37,090] Even if it's moving past you on a railroad train.
+- [00:35:37,090 - 00:35:40,090] So, Newton's law of motion
+- [00:35:40,090 - 00:35:43,090] is invariant, here's the language,
+- [00:35:43,090 - 00:35:47,090] Newton's law of motion is
+- [00:35:47,090 - 00:35:51,090] invariant under Galilean coordinate transformations.
+- [00:35:51,090 - 00:35:54,590] There's a Galilean coordinate transformation, and Newton's
+- [00:35:54,590 - 00:35:58,090] laws of motion are invariant under it.
+- [00:35:58,090 - 00:35:59,590] The idea of relativity is that
+- [00:35:59,590 - 00:36:01,090] all the laws of motion are invariant.
+- [00:36:01,090 - 00:36:05,090] All the laws of nature, whatever they happen to be,
+- [00:36:05,090 - 00:36:11,590] are invariant under the appropriate
+- [00:36:11,590 - 00:36:18,090] analog of the Galilean transformation.
+- [00:36:18,090 - 00:36:25,090] Now, the problem is that that clashed with electromagnetism.
+- [00:36:25,090 - 00:36:27,590] At the moment, we
+- [00:36:27,590 - 00:36:30,090] haven't learned anything about electromagnetism,
+- [00:36:30,090 - 00:36:32,590] but you all know that
+- [00:36:32,590 - 00:36:35,090] electromagnetic waves are called light,
+- [00:36:35,090 - 00:36:40,090] and that light moves with a certain velocity.
+- [00:36:40,090 - 00:36:44,090] Maxwell's equations predict what that velocity is,
+- [00:36:44,090 - 00:36:48,090] and if you think of Maxwell's equations as
+- [00:36:48,090 - 00:36:52,090] laws of physics that everybody should agree on,
+- [00:36:52,090 - 00:36:55,090] then the speed of light
+- [00:36:55,090 - 00:36:58,090] must be the same for everybody.
+- [00:36:58,090 - 00:37:00,090] That's really all there was to it.
+- [00:37:00,090 - 00:37:03,090] Einstein really used no more than that.
+- [00:37:03,090 - 00:37:05,090] Of course, he was guessing.
+- [00:37:05,090 - 00:37:07,090] He was guessing that Maxwell's equations
+- [00:37:07,090 - 00:37:09,090] were the same in every reference frame.
+- [00:37:09,090 - 00:37:12,090] In other words, he was guessing that Maxwell's equations,
+- [00:37:12,090 - 00:37:17,090] which were laws of nature, which were so compelling
+- [00:37:17,090 - 00:37:18,590] that they would have to be
+- [00:37:18,590 - 00:37:20,090] the same in every reference frame.
+- [00:37:20,090 - 00:37:23,090] And that, of course, led to a big problem.
+- [00:37:23,090 - 00:37:26,090] It led to the problem of the speed of light,
+- [00:37:26,090 - 00:37:28,590] that if Maxwell's equations are
+- [00:37:28,590 - 00:37:31,090] the same in all reference frames,
+- [00:37:31,090 - 00:37:33,090] then the speed of light is
+- [00:37:33,090 - 00:37:35,090] the same in all reference frames.
+- [00:37:35,090 - 00:37:37,090] But how can the speed of light
+- [00:37:37,090 - 00:37:39,090] be the same in all reference frames
+- [00:37:39,090 - 00:37:41,090] if one frame is moving relative to the other?
+- [00:37:41,090 - 00:37:42,090] We could work it out.
+- [00:37:42,090 - 00:37:47,090] We could work it out using Galilean relativity.
+- [00:37:47,090 - 00:37:49,090] Let's take a light ray.
+- [00:37:49,090 - 00:37:51,590] A light ray, a little blip, a
+- [00:37:51,590 - 00:37:54,090] little blip of a light ray moving along.
+- [00:37:54,090 - 00:37:56,090] It moves along with x.
+- [00:37:56,090 - 00:37:59,090] x equals c times t.
+- [00:37:59,090 - 00:38:01,090] That's what the, where c is the speed of light.
+- [00:38:01,090 - 00:38:02,090] Okay?
+- [00:38:02,090 - 00:38:07,090] That's what Maxwell's equations said.
+- [00:38:07,090 - 00:38:12,090] Well, Galileo would then have had to say,
+- [00:38:12,090 - 00:38:15,090] let's ask how that light ray appears to move
+- [00:38:15,090 - 00:38:19,090] from the point of view of the moving reference frame.
+- [00:38:19,090 - 00:38:23,090] And that would be x prime,
+- [00:38:23,090 - 00:38:26,090] which is equal to x minus vt,
+- [00:38:26,090 - 00:38:30,090] so far this is just
+- [00:38:30,090 - 00:38:34,090] the Galilean representation of the transformation.
+- [00:38:34,090 - 00:38:38,090] That is equal to ct,
+- [00:38:38,090 - 00:38:42,090] x is equal to ct, minus vt.
+- [00:38:42,090 - 00:38:44,090] And he would have just said,
+- [00:38:44,090 - 00:38:49,090] well, that's the same thing as saying c minus vt.
+- [00:38:49,090 - 00:38:54,090] So Galileo would have had no choice but to say,
+- [00:38:54,090 - 00:38:56,090] in the moving reference frame,
+- [00:38:56,090 - 00:39:00,090] the speed of light differs from the speed of light
+- [00:39:00,090 - 00:39:02,090] in the stationary reference frame
+- [00:39:02,090 - 00:39:04,090] by the relative velocity.
+- [00:39:04,090 - 00:39:06,090] Okay?
+- [00:39:06,090 - 00:39:10,090] That, of course, made good intuitive sense.
+- [00:39:10,090 - 00:39:12,090] It is the way sound would work.
+- [00:39:12,090 - 00:39:15,090] It is the way water waves would work.
+- [00:39:15,090 - 00:39:17,090] If water waves move,
+- [00:39:17,090 - 00:39:20,090] what's a typical velocity of a water wave?
+- [00:39:20,090 - 00:39:21,090] I don't know.
+- [00:39:21,090 - 00:39:24,090] A couple of meters a second or something like that?
+- [00:39:24,090 - 00:39:25,090] How much?
+- [00:39:25,090 - 00:39:27,090] A few for small ones.
+- [00:39:27,090 - 00:39:28,089] Yeah, yeah.
+- [00:39:28,089 - 00:39:30,089] Meters per second.
+- [00:39:30,089 - 00:39:32,089] Let's say one meter per second.
+- [00:39:32,089 - 00:39:34,089] But I'm flying over at
+- [00:39:34,089 - 00:39:36,089] a half a meter per second,
+- [00:39:36,089 - 00:39:37,089] when I'm flying over the wave,
+- [00:39:37,089 - 00:39:38,589] then I see the wave moving
+- [00:39:38,589 - 00:39:40,089] at a half a meter per second.
+- [00:39:40,089 - 00:39:42,089] So it's completely unreasonable
+- [00:39:42,089 - 00:39:46,089] to expect that water waves
+- [00:39:46,089 - 00:39:48,089] have a universal velocity
+- [00:39:48,089 - 00:39:50,089] that all observers see.
+- [00:39:50,089 - 00:39:52,090] Now most physicists, of course,
+- [00:39:52,090 - 00:39:53,590] at the turn of the, or
+- [00:39:53,590 - 00:39:55,090] at the end of the 19th century,
+- [00:39:55,090 - 00:39:58,090] simply came to the conclusion
+- [00:39:58,090 - 00:40:01,090] that, well,
+- [00:40:01,090 - 00:40:03,090] in the 1850s, 1860s,
+- [00:40:03,090 - 00:40:05,090] when Maxwell was active,
+- [00:40:05,090 - 00:40:07,090] simply came to the conclusion
+- [00:40:07,090 - 00:40:09,090] that some frames of reference
+- [00:40:09,090 - 00:40:12,090] are better than other frames of reference.
+- [00:40:12,090 - 00:40:14,090] That there is no relativity.
+- [00:40:14,090 - 00:40:18,090] That there exists a frame of reference,
+- [00:40:18,090 - 00:40:22,090] God's frame of reference.
+- [00:40:22,090 - 00:40:24,090] Don't tell the ombudsman I said that.
+- [00:40:25,090 - 00:40:30,090] Or do tell the ombudsman.
+- [00:40:30,090 - 00:40:32,090] God's frame of reference
+- [00:40:32,090 - 00:40:35,090] where Maxwell's equations are correct.
+- [00:40:35,090 - 00:40:37,090] In other frames of reference,
+- [00:40:37,090 - 00:40:39,090] Maxwell's equations must be somewhat different,
+- [00:40:39,090 - 00:40:41,090] because in other frames of reference,
+- [00:40:41,090 - 00:40:44,090] obviously light moves with a different velocity.
+- [00:40:44,090 - 00:40:47,090] And so, as you well know,
+- [00:40:47,090 - 00:40:50,090] various physicists tried to study
+- [00:40:50,090 - 00:40:53,090] the dependence of the velocity of light
+- [00:40:53,090 - 00:40:55,090] on the state of motion of water.
+- [00:40:55,090 - 00:40:57,090] They found no dependence.
+- [00:40:57,090 - 00:40:59,090] We won't go through the various experiments.
+- [00:40:59,090 - 00:41:01,090] Several different kinds of experiments
+- [00:41:01,090 - 00:41:03,090] to try to detect the fact
+- [00:41:03,090 - 00:41:05,090] that a moving observer
+- [00:41:05,090 - 00:41:07,090] would see a speed of light
+- [00:41:07,090 - 00:41:09,090] which would depend on the state of motion.
+- [00:41:09,090 - 00:41:11,090] And as you know,
+- [00:41:11,090 - 00:41:13,090] no such effect was ever discovered.
+- [00:41:13,090 - 00:41:15,090] The result being
+- [00:41:15,090 - 00:41:17,090] that physicists had no choice
+- [00:41:17,090 - 00:41:19,090] but to go and review
+- [00:41:19,090 - 00:41:21,090] the motion of the water.
+- [00:41:21,090 - 00:41:23,090] And so,
+- [00:41:23,090 - 00:41:25,090] they were not going to go to space,
+- [00:41:25,090 - 00:41:27,090] but to go and review
+- [00:41:27,090 - 00:41:29,090] the basic ideas that went into this definition.
+- [00:41:29,090 - 00:41:31,090] Now, Einstein himself claimed
+- [00:41:31,090 - 00:41:33,090] he never even knew about the experiments.
+- [00:41:33,090 - 00:41:35,090] I'm inclined to believe him.
+- [00:41:35,090 - 00:41:37,090] I mean, you know,
+- [00:41:37,090 - 00:41:39,090] they didn't call Einstein Einstein for nothing.
+- [00:41:39,090 - 00:41:41,090] I mean, he...
+- [00:41:45,090 - 00:41:47,090] So, I think we give him credit.
+- [00:41:49,090 - 00:41:51,090] He said when he was 16 years old,
+- [00:41:51,090 - 00:41:53,090] he thought about moving along with a light wave.
+- [00:41:53,090 - 00:41:55,090] The light wave didn't
+- [00:41:55,090 - 00:41:57,090] oscillate, didn't move, didn't do anything,
+- [00:41:57,090 - 00:41:59,090] just looked frozen.
+- [00:41:59,090 - 00:42:01,090] And he somehow knew enough to know
+- [00:42:01,090 - 00:42:03,090] that Maxwell's equations
+- [00:42:03,090 - 00:42:05,090] were inconsistent with that.
+- [00:42:05,090 - 00:42:07,090] And his choice
+- [00:42:07,090 - 00:42:09,090] was to believe that Maxwell's equations
+- [00:42:09,090 - 00:42:11,090] were basic laws of nature.
+- [00:42:11,090 - 00:42:13,090] Basic laws of nature
+- [00:42:13,090 - 00:42:15,090] which should be the same in every reference frame.
+- [00:42:15,090 - 00:42:17,090] So,
+- [00:42:17,090 - 00:42:19,090] something was wrong,
+- [00:42:19,090 - 00:42:21,090] and he had to go back to some very, very
+- [00:42:21,090 - 00:42:23,090] first principles.
+- [00:42:23,090 - 00:42:25,090] In fact, the very first principles
+- [00:42:25,090 - 00:42:27,090] which this
+- [00:42:27,090 - 00:42:29,090] lattice
+- [00:42:29,090 - 00:42:31,090] represents.
+- [00:42:31,090 - 00:42:33,090] The idea of
+- [00:42:33,090 - 00:42:35,090] coordinates, the idea of
+- [00:42:35,090 - 00:42:37,090] times, the distinct
+- [00:42:37,090 - 00:42:39,090] times and so forth, and went back
+- [00:42:39,090 - 00:42:41,090] and said, let me begin
+- [00:42:41,090 - 00:42:43,090] all over again with
+- [00:42:43,090 - 00:42:45,090] one assumption, well, two assumptions.
+- [00:42:45,090 - 00:42:47,090] The first assumption
+- [00:42:47,090 - 00:42:49,090] is the principle of relativity.
+- [00:42:49,090 - 00:42:51,090] Namely,
+- [00:42:51,090 - 00:42:53,090] that in every frame of reference the laws
+- [00:42:53,090 - 00:42:55,090] of physics are identical.
+- [00:42:55,090 - 00:42:57,090] The second assumption
+- [00:42:57,090 - 00:42:59,090] is that in every frame of
+- [00:42:59,090 - 00:43:01,090] reference the speed of light is
+- [00:43:01,090 - 00:43:03,090] always the same. Let me take
+- [00:43:03,090 - 00:43:05,090] those as postulates
+- [00:43:05,090 - 00:43:07,090] and see what I can derive.
+- [00:43:07,090 - 00:43:09,090] The first thing he derived
+- [00:43:11,090 - 00:43:13,090] was something
+- [00:43:13,090 - 00:43:15,090] that is implicit in this
+- [00:43:15,090 - 00:43:17,090] diagram, which
+- [00:43:17,090 - 00:43:19,090] I partly spelled out, partly didn't spell
+- [00:43:19,090 - 00:43:21,090] out, but let me spell it out now.
+- [00:43:21,090 - 00:43:23,090] That if
+- [00:43:23,090 - 00:43:25,090] two events
+- [00:43:25,090 - 00:43:27,090] are simultaneous
+- [00:43:27,090 - 00:43:29,090] as seen in one reference frame,
+- [00:43:29,090 - 00:43:31,090] they will be simultaneous
+- [00:43:31,090 - 00:43:33,090] in every reference frame.
+- [00:43:33,090 - 00:43:35,090] It's exactly the statement that T prime
+- [00:43:35,090 - 00:43:37,090] equals T. If two
+- [00:43:37,090 - 00:43:39,090] events occur at the same time in
+- [00:43:39,090 - 00:43:41,090] one reference frame, they occur
+- [00:43:41,090 - 00:43:43,090] at the same time in any
+- [00:43:43,090 - 00:43:45,090] reference frame.
+- [00:43:45,090 - 00:43:47,090] Einstein realized very quickly
+- [00:43:47,090 - 00:43:49,090] that he could not maintain that.
+- [00:43:49,090 - 00:43:51,090] And here's roughly the way he thought about it.
+- [00:43:51,090 - 00:43:53,090] He said, let's go
+- [00:43:53,090 - 00:43:55,090] way back to the beginning
+- [00:43:55,090 - 00:43:57,090] and even start
+- [00:43:57,090 - 00:43:59,090] with the whole idea of synchronizing
+- [00:43:59,090 - 00:44:01,090] clocks.
+- [00:44:01,090 - 00:44:03,090] We can lay out our meter sticks.
+- [00:44:03,090 - 00:44:04,090] It's clear enough what we can
+- [00:44:04,090 - 00:44:05,090] do. We can lay out our
+- [00:44:05,090 - 00:44:07,090] meter sticks.
+- [00:44:07,090 - 00:44:09,090] We lay out our meter sticks on the ground.
+- [00:44:09,090 - 00:44:11,090] But now you have your clock, you have
+- [00:44:11,090 - 00:44:13,090] your clock, you have your clock, you have your clock
+- [00:44:13,090 - 00:44:15,090] over there. And you want to
+- [00:44:15,090 - 00:44:17,090] synchronize your clocks. Make sure they all read
+- [00:44:17,090 - 00:44:19,090] the same at the same instant of time.
+- [00:44:19,090 - 00:44:21,090] What does that mean?
+- [00:44:21,090 - 00:44:23,090] Well, there's various ways you could
+- [00:44:23,090 - 00:44:25,090] try to check whether your clocks were
+- [00:44:25,090 - 00:44:27,090] synchronized. But Einstein
+- [00:44:27,090 - 00:44:29,090] decided to use light.
+- [00:44:29,090 - 00:44:31,090] He wanted to use light
+- [00:44:31,090 - 00:44:33,090] for the obvious reason that
+- [00:44:33,090 - 00:44:35,090] his basic postulate
+- [00:44:35,090 - 00:44:37,090] was about light.
+- [00:44:37,090 - 00:44:39,090] So he wanted to use light
+- [00:44:39,090 - 00:44:41,090] to synchronize clocks.
+- [00:44:41,090 - 00:44:43,090] So here's the way he
+- [00:44:43,090 - 00:44:45,090] synchronized clocks. He said, let's see.
+- [00:44:45,090 - 00:44:47,090] Put somebody in the middle.
+- [00:44:47,090 - 00:44:49,090] Now what does the middle mean? Let's take you
+- [00:44:49,090 - 00:44:51,090] and you. You're the two endpoints.
+- [00:44:51,090 - 00:44:53,090] What does it mean to say somebody in the middle?
+- [00:44:53,090 - 00:44:55,090] Well, you can measure with
+- [00:44:55,090 - 00:44:57,090] meter sticks the person in the middle
+- [00:44:57,090 - 00:44:59,090] and adjust with the meter sticks
+- [00:44:59,090 - 00:45:01,090] until that person in the middle
+- [00:45:01,090 - 00:45:03,090] is exactly halfway between you.
+- [00:45:05,090 - 00:45:07,090] Now, at
+- [00:45:07,090 - 00:45:09,090] exactly noon
+- [00:45:09,090 - 00:45:11,090] you're going to emit a flash bulb.
+- [00:45:11,090 - 00:45:13,090] You're going to light up a flash bulb
+- [00:45:13,090 - 00:45:15,090] and the light
+- [00:45:15,090 - 00:45:17,090] signal is going to go, well it can go
+- [00:45:17,090 - 00:45:19,090] out all around you, but in particular it's going
+- [00:45:19,090 - 00:45:21,090] to go from your position
+- [00:45:21,090 - 00:45:23,090] out in that direction.
+- [00:45:23,090 - 00:45:25,090] You'll do exactly the same thing.
+- [00:45:25,090 - 00:45:27,090] When your clock is also at time
+- [00:45:27,090 - 00:45:29,090] t equals zero
+- [00:45:29,090 - 00:45:31,090] t equals zero? Did I say zero?
+- [00:45:31,090 - 00:45:33,090] Or noon? Whatever.
+- [00:45:33,090 - 00:45:35,090] At noon, you will also
+- [00:45:35,090 - 00:45:37,090] send out a flash signal.
+- [00:45:37,090 - 00:45:39,090] If the person who is in the middle
+- [00:45:39,090 - 00:45:41,090] sees the flashes
+- [00:45:41,090 - 00:45:43,090] simultaneously,
+- [00:45:43,090 - 00:45:44,090] in other words, if the
+- [00:45:44,090 - 00:45:45,090] left flash and the right flash
+- [00:45:45,090 - 00:45:47,090] go right by him simultaneously,
+- [00:45:47,090 - 00:45:49,090] then we will agree
+- [00:45:49,090 - 00:45:51,090] that your clocks are synchronized.
+- [00:45:51,090 - 00:45:53,090] If he sees your light,
+- [00:45:53,090 - 00:45:55,090] your flash, before
+- [00:45:55,090 - 00:45:57,090] your flash, then he says
+- [00:45:57,090 - 00:45:59,090] you better readjust your clock a little bit,
+- [00:45:59,090 - 00:46:01,090] go back, try it again,
+- [00:46:01,090 - 00:46:03,090] set your clock back a little bit,
+- [00:46:03,090 - 00:46:05,090] and keep doing it until
+- [00:46:05,090 - 00:46:07,090] the person in the middle
+- [00:46:07,090 - 00:46:09,090] sees the
+- [00:46:09,090 - 00:46:11,090] flashes of light instantaneously
+- [00:46:11,090 - 00:46:13,090] the same. Now, everybody
+- [00:46:13,090 - 00:46:15,090] in the room does the same thing with respect to
+- [00:46:15,090 - 00:46:17,090] everybody else until
+- [00:46:17,090 - 00:46:19,090] everybody's clocks are synchronized
+- [00:46:19,090 - 00:46:21,090] by the same
+- [00:46:21,090 - 00:46:23,090] by exactly the same definition.
+- [00:46:23,090 - 00:46:25,090] That somebody halfway between them
+- [00:46:27,090 - 00:46:29,090] will see flashes of light
+- [00:46:29,090 - 00:46:31,090] emitted
+- [00:46:31,090 - 00:46:33,090] at the same time
+- [00:46:33,090 - 00:46:35,090] will see those flashes
+- [00:46:35,090 - 00:46:37,090] of light at the same time.
+- [00:46:37,090 - 00:46:39,090] Okay, then Einstein realized
+- [00:46:39,090 - 00:46:41,090] there's a problem. That much
+- [00:46:41,090 - 00:46:43,090] is okay. That much is okay.
+- [00:46:43,090 - 00:46:45,090] We can synchronize all of your clocks.
+- [00:46:45,090 - 00:46:47,090] But now, what about me moving
+- [00:46:47,090 - 00:46:49,090] past you?
+- [00:46:49,090 - 00:46:51,090] Or, you know, let's
+- [00:46:51,090 - 00:46:53,090] have me moving past you,
+- [00:46:53,090 - 00:46:55,090] and
+- [00:46:55,090 - 00:46:57,090] let's see how this should work.
+- [00:46:57,090 - 00:46:59,090] I have my
+- [00:46:59,090 - 00:47:01,090] coordinate frame laid out,
+- [00:47:01,090 - 00:47:03,090] and
+- [00:47:05,090 - 00:47:07,090] I move past you,
+- [00:47:07,090 - 00:47:09,090] I look at your light ray,
+- [00:47:11,090 - 00:47:13,090] I look at your light ray,
+- [00:47:13,090 - 00:47:15,090] but because I'm moving,
+- [00:47:15,090 - 00:47:17,090] by the time your light
+- [00:47:17,090 - 00:47:19,090] ray gets to me,
+- [00:47:19,090 - 00:47:21,090] it has had to go further
+- [00:47:21,090 - 00:47:23,090] than your light ray did. So it's quite obvious
+- [00:47:23,090 - 00:47:25,090] that I'm going to see your light ray before
+- [00:47:25,090 - 00:47:27,090] I see your light ray, even if you emitted
+- [00:47:27,090 - 00:47:29,090] them at exactly the same time.
+- [00:47:29,090 - 00:47:31,090] Even if you emitted them at exactly the
+- [00:47:31,090 - 00:47:33,090] same time, according to all
+- [00:47:33,090 - 00:47:35,090] of your reckoning, I,
+- [00:47:35,090 - 00:47:37,090] who happen to be moving
+- [00:47:37,090 - 00:47:39,090] this way, will
+- [00:47:39,090 - 00:47:41,090] reckon your light ray
+- [00:47:41,090 - 00:47:43,090] as being emitted
+- [00:47:43,090 - 00:47:45,090] later, because
+- [00:47:45,090 - 00:47:47,090] I see it later, because
+- [00:47:47,090 - 00:47:49,090] it has a greater distance to go.
+- [00:47:49,090 - 00:47:51,090] So Einstein realized that the
+- [00:47:51,090 - 00:47:53,090] idea of simultaneity
+- [00:47:53,090 - 00:47:55,090] was a relative idea,
+- [00:47:55,090 - 00:47:57,090] that if everybody synchronizes
+- [00:47:57,090 - 00:47:59,090] their clocks by the means of
+- [00:47:59,090 - 00:48:01,090] light, by means of light,
+- [00:48:01,090 - 00:48:03,090] there will be a discrepancy
+- [00:48:03,090 - 00:48:05,090] in what, in different frames
+- [00:48:05,090 - 00:48:07,090] of reference, is counted
+- [00:48:07,090 - 00:48:09,090] as simultaneous.
+- [00:48:09,090 - 00:48:11,090] I want to work
+- [00:48:11,090 - 00:48:13,090] that out. I want to work that out in detail,
+- [00:48:13,090 - 00:48:15,090] just using light,
+- [00:48:15,090 - 00:48:17,090] how
+- [00:48:17,090 - 00:48:19,090] does simultaneity
+- [00:48:19,090 - 00:48:21,090] break down?
+- [00:48:21,090 - 00:48:23,090] Another way to ask it is if
+- [00:48:23,090 - 00:48:25,090] these two points are
+- [00:48:25,090 - 00:48:27,090] counted in the stationary reference
+- [00:48:27,090 - 00:48:29,090] frame as having the same time,
+- [00:48:29,090 - 00:48:31,090] which two points in the
+- [00:48:31,090 - 00:48:33,090] moving reference frame
+- [00:48:33,090 - 00:48:35,090] will be said to have exactly the
+- [00:48:35,090 - 00:48:37,090] same time? That's something I want to work
+- [00:48:37,090 - 00:48:39,090] out next. We'll take five minutes and work
+- [00:48:39,090 - 00:48:41,090] that out in detail, and that'll give
+- [00:48:41,090 - 00:48:43,090] us the Lorentz transformations.
+- [00:48:43,090 - 00:48:45,090] Lorentz transformations which
+- [00:48:45,090 - 00:48:47,090] implicitly
+- [00:48:47,090 - 00:48:49,090] have in them that simultaneity
+- [00:48:49,090 - 00:48:51,090] is a relative concept.
+- [00:48:51,090 - 00:48:53,090] So that will be our next
+- [00:48:53,090 - 00:48:55,090] challenge, to replace
+- [00:48:55,090 - 00:48:57,090] this equation
+- [00:48:57,090 - 00:48:59,090] by one that's consistent
+- [00:48:59,090 - 00:49:01,090] with the idea that light travels
+- [00:49:01,090 - 00:49:03,090] with the same velocity in all frames.
+- [00:49:03,090 - 00:49:05,090] What if I synchronize
+- [00:49:05,090 - 00:49:07,090] the clocks using sound?
+- [00:49:07,090 - 00:49:09,090] Using what? Sound.
+- [00:49:09,090 - 00:49:11,090] Suppose I just yell it, have two people yell.
+- [00:49:11,090 - 00:49:13,090] Then you will find
+- [00:49:13,090 - 00:49:15,090] then you will find
+- [00:49:15,090 - 00:49:17,090] that the law that says
+- [00:49:17,090 - 00:49:19,090] that the speed of sound is
+- [00:49:19,090 - 00:49:21,090] what is it, about a thousand feet per
+- [00:49:21,090 - 00:49:23,090] second, that that's
+- [00:49:23,090 - 00:49:25,090] not a law at all, and
+- [00:49:25,090 - 00:49:27,090] that moving observers
+- [00:49:27,090 - 00:49:29,090] do detect different velocities
+- [00:49:29,090 - 00:49:31,090] of sound.
+- [00:49:31,090 - 00:49:33,090] If you do it
+- [00:49:33,090 - 00:49:35,090] at rest, in a frame of reference
+- [00:49:35,090 - 00:49:37,090] where the air is at rest,
+- [00:49:37,090 - 00:49:39,090] that's a perfectly good way to
+- [00:49:39,090 - 00:49:41,090] synchronize clocks.
+- [00:49:41,090 - 00:49:43,090] But then
+- [00:49:43,090 - 00:49:45,090] somebody moving
+- [00:49:47,090 - 00:49:49,090] you'll do all these things,
+- [00:49:49,090 - 00:49:51,090] and you'll discover in the end that it's
+- [00:49:51,090 - 00:49:53,090] not consistent to say that the speed
+- [00:49:53,090 - 00:49:55,090] of sound is the same in every reference frame.
+- [00:49:57,090 - 00:49:59,090] What we're going to be using, we're going to use
+- [00:49:59,090 - 00:50:01,090] the idea that light is the same,
+- [00:50:01,090 - 00:50:03,090] there's nothing wrong with synchronizing clocks that way.
+- [00:50:03,090 - 00:50:05,090] Nothing at all.
+- [00:50:07,090 - 00:50:09,090] You wouldn't want to do it though,
+- [00:50:09,090 - 00:50:11,090] you wouldn't want to synchronize
+- [00:50:11,090 - 00:50:13,090] clocks on a moving train
+- [00:50:13,090 - 00:50:15,090] if
+- [00:50:15,090 - 00:50:17,090] the train was an open
+- [00:50:17,090 - 00:50:19,090] air train, and the
+- [00:50:19,090 - 00:50:21,090] and you get
+- [00:50:21,090 - 00:50:23,090] the point. If it was an open air train
+- [00:50:23,090 - 00:50:25,090] and the atmosphere
+- [00:50:25,090 - 00:50:27,090] was at rest, and you
+- [00:50:27,090 - 00:50:29,090] were moving through the atmosphere,
+- [00:50:29,090 - 00:50:31,090] that would be a bad way to synchronize
+- [00:50:31,090 - 00:50:33,090] your clocks.
+- [00:50:33,090 - 00:50:35,090] Hmm?
+- [00:50:35,090 - 00:50:37,090] Yeah, yeah.
+- [00:50:37,090 - 00:50:39,090] Yeah, exactly.
+- [00:50:39,090 - 00:50:41,090] Exactly. So,
+- [00:50:41,090 - 00:50:43,090] Einstein said he doesn't care, he is going
+- [00:50:43,090 - 00:50:45,090] to simply assume the speed of
+- [00:50:45,090 - 00:50:47,090] light is the same and see where it takes him.
+- [00:50:47,090 - 00:50:49,090] See where it leads.
+- [00:50:49,090 - 00:50:51,090] Does it lead to something consistent?
+- [00:50:51,090 - 00:50:53,090] Alright, so as I said, his first
+- [00:50:53,090 - 00:50:55,090] observation was there's something wrong with
+- [00:50:55,090 - 00:50:57,090] the idea that
+- [00:50:57,090 - 00:50:59,090] simultaneity is universal.
+- [00:50:59,090 - 00:51:01,090] Or that the simultaneity
+- [00:51:01,090 - 00:51:03,090] of two events is an
+- [00:51:03,090 - 00:51:05,090] invariant. So here's how
+- [00:51:05,090 - 00:51:07,090] he began. Here's, I actually don't
+- [00:51:07,090 - 00:51:09,090] know how he began, this is the way I begin.
+- [00:51:09,090 - 00:51:11,090] Um,
+- [00:51:11,090 - 00:51:13,090] it's been too long since I've read
+- [00:51:13,090 - 00:51:15,090] his paper. Let's, again we
+- [00:51:15,090 - 00:51:17,090] begin with a drawing.
+- [00:51:17,090 - 00:51:21,090] And now we have
+- [00:51:21,090 - 00:51:23,090] two,
+- [00:51:23,090 - 00:51:25,090] this is the rest frame,
+- [00:51:25,090 - 00:51:27,090] and we have
+- [00:51:27,090 - 00:51:29,090] two
+- [00:51:29,090 - 00:51:31,090] points
+- [00:51:31,090 - 00:51:33,090] laid out a distance L
+- [00:51:33,090 - 00:51:35,090] apart. This distance
+- [00:51:35,090 - 00:51:37,090] is L, and this distance
+- [00:51:37,090 - 00:51:39,090] is L. L stands for length now.
+- [00:51:39,090 - 00:51:41,090] It could be one meter, but
+- [00:51:41,090 - 00:51:43,090] let's keep it general.
+- [00:51:43,090 - 00:51:45,090] Distance L is measured off,
+- [00:51:45,090 - 00:51:47,090] another distance L is measured off,
+- [00:51:47,090 - 00:51:49,090] and here
+- [00:51:49,090 - 00:51:51,090] are the
+- [00:51:51,090 - 00:51:53,090] trajectories of
+- [00:51:53,090 - 00:51:55,090] the points which correspond
+- [00:51:55,090 - 00:51:57,090] to, uh, to being
+- [00:51:57,090 - 00:51:59,090] L units apart.
+- [00:51:59,090 - 00:52:01,090] This could be your seat,
+- [00:52:01,090 - 00:52:03,090] and that could be your seat.
+- [00:52:03,090 - 00:52:05,090] And the one in the middle, since it's
+- [00:52:05,090 - 00:52:07,090] equally distant between the two of them,
+- [00:52:07,090 - 00:52:09,090] is the person who happens to be vacant
+- [00:52:09,090 - 00:52:10,090] but is sitting in the
+- [00:52:10,090 - 00:52:11,090] middle between the two of you.
+- [00:52:13,090 - 00:52:15,090] Okay, so that's the first setup now.
+- [00:52:15,090 - 00:52:17,090] Now,
+- [00:52:17,090 - 00:52:19,090] if the clocks are synchronized,
+- [00:52:19,090 - 00:52:21,090] what does that mean exactly?
+- [00:52:21,090 - 00:52:23,090] It means that
+- [00:52:23,090 - 00:52:25,090] if at time t equals zero,
+- [00:52:27,090 - 00:52:29,090] both observers at the two ends
+- [00:52:29,090 - 00:52:31,090] here send out a light
+- [00:52:31,090 - 00:52:33,090] signal, the light signal,
+- [00:52:33,090 - 00:52:35,090] the light signals will
+- [00:52:35,090 - 00:52:37,090] intersect
+- [00:52:41,090 - 00:52:43,090] at the same place, like this.
+- [00:52:43,090 - 00:52:45,090] Oops,
+- [00:52:45,090 - 00:52:47,090] I missed.
+- [00:52:47,090 - 00:52:49,090] That a light signal from this side,
+- [00:52:49,090 - 00:52:51,090] if it's sent out at the same
+- [00:52:51,090 - 00:52:53,090] instant, in other words,
+- [00:52:53,090 - 00:52:55,090] synchronous in this frame of reference,
+- [00:52:55,090 - 00:52:57,090] with a light signal
+- [00:52:57,090 - 00:52:59,090] that's sent out from this instant,
+- [00:52:59,090 - 00:53:01,090] that the two light signals will cross
+- [00:53:01,090 - 00:53:03,090] the intermediate observer here at exactly
+- [00:53:03,090 - 00:53:05,090] the same time.
+- [00:53:05,090 - 00:53:07,090] Now, light moves, of course, very fast.
+- [00:53:07,090 - 00:53:09,090] That means
+- [00:53:09,090 - 00:53:11,090] that this drawing is
+- [00:53:11,090 - 00:53:13,090] a bit, um,
+- [00:53:13,090 - 00:53:15,090] well, that's a little
+- [00:53:15,090 - 00:53:17,090] funny, because light moving
+- [00:53:17,090 - 00:53:19,090] so fast, it would mean that light rays
+- [00:53:19,090 - 00:53:21,090] are practically horizontal.
+- [00:53:21,090 - 00:53:23,090] They move an enormous distance
+- [00:53:23,090 - 00:53:25,090] in a short amount of time.
+- [00:53:25,090 - 00:53:27,090] But we can fix that. We can fix that
+- [00:53:27,090 - 00:53:29,090] by working in units in which the
+- [00:53:29,090 - 00:53:31,090] speed of light is equal to one.
+- [00:53:31,090 - 00:53:33,090] Let's do that. Later on,
+- [00:53:33,090 - 00:53:35,090] we'll put back the speed of
+- [00:53:35,090 - 00:53:37,090] light, but for the moment,
+- [00:53:37,090 - 00:53:39,090] let's set the speed of light equal to one.
+- [00:53:39,090 - 00:53:41,090] How do you do that?
+- [00:53:41,090 - 00:53:43,090] You work in units
+- [00:53:43,090 - 00:53:45,090] of space, which are
+- [00:53:45,090 - 00:53:47,090] adjusted the right way,
+- [00:53:47,090 - 00:53:49,090] so that in one second of time,
+- [00:53:49,090 - 00:53:51,090] light goes
+- [00:53:51,090 - 00:53:53,090] one unit of distance.
+- [00:53:53,090 - 00:53:55,090] A light second.
+- [00:53:55,090 - 00:53:57,090] Or years in light years,
+- [00:53:57,090 - 00:53:59,090] or whatever
+- [00:53:59,090 - 00:54:01,090] you like.
+- [00:54:01,090 - 00:54:03,090] And so the vertical axis and the horizontal
+- [00:54:03,090 - 00:54:05,090] axis here
+- [00:54:05,090 - 00:54:07,090] are measured in
+- [00:54:07,090 - 00:54:08,090] units in which the speed
+- [00:54:08,090 - 00:54:09,090] of light is equal to one.
+- [00:54:09,090 - 00:54:11,090] If the speed of light is equal
+- [00:54:11,090 - 00:54:13,090] to one, then a light ray
+- [00:54:13,090 - 00:54:15,090] satisfies x
+- [00:54:15,090 - 00:54:17,090] equals t,
+- [00:54:17,090 - 00:54:19,090] not ct,
+- [00:54:19,090 - 00:54:21,090] but just t,
+- [00:54:21,090 - 00:54:23,090] and that would be a 45 degree line.
+- [00:54:23,090 - 00:54:25,090] That's a light ray moving to the right.
+- [00:54:25,090 - 00:54:27,090] A light ray moving to the right
+- [00:54:27,090 - 00:54:29,090] satisfies
+- [00:54:29,090 - 00:54:31,090] a light ray
+- [00:54:31,090 - 00:54:33,090] moving to the right from the origin over
+- [00:54:33,090 - 00:54:35,090] here, satisfies
+- [00:54:35,090 - 00:54:37,090] x equals t.
+- [00:54:37,090 - 00:54:39,090] What if it's a light ray moving to the right
+- [00:54:39,090 - 00:54:41,090] from some other position?
+- [00:54:41,090 - 00:54:43,090] Well, then it satisfies
+- [00:54:43,090 - 00:54:45,090] x
+- [00:54:45,090 - 00:54:47,090] equals t plus
+- [00:54:47,090 - 00:54:49,090] some constant,
+- [00:54:49,090 - 00:54:51,090] namely the offset.
+- [00:54:51,090 - 00:54:53,090] So if it's a light ray, any light ray
+- [00:54:53,090 - 00:54:55,090] moving to the right
+- [00:54:55,090 - 00:54:57,090] satisfies x equals t
+- [00:54:57,090 - 00:54:59,090] plus something.
+- [00:54:59,090 - 00:55:01,090] c equals what?
+- [00:55:01,090 - 00:55:03,090] d.
+- [00:55:03,090 - 00:55:05,090] Thank you.
+- [00:55:05,090 - 00:55:07,090] d. And what about a light ray
+- [00:55:07,090 - 00:55:09,090] moving to the left?
+- [00:55:09,090 - 00:55:11,090] That's x
+- [00:55:11,090 - 00:55:13,090] equals minus t,
+- [00:55:13,090 - 00:55:15,090] or minus
+- [00:55:15,090 - 00:55:17,090] t plus some other constant,
+- [00:55:17,090 - 00:55:19,090] plus d prime, I don't know.
+- [00:55:19,090 - 00:55:21,090] So these are
+- [00:55:21,090 - 00:55:23,090] the motions of light rays,
+- [00:55:23,090 - 00:55:25,090] and they correspond to 45
+- [00:55:25,090 - 00:55:27,090] degree angles.
+- [00:55:27,090 - 00:55:29,090] 45 degree angles, a slope of
+- [00:55:29,090 - 00:55:31,090] one. A slope of one
+- [00:55:31,090 - 00:55:33,090] corresponds to a velocity
+- [00:55:33,090 - 00:55:35,090] of the speed of light.
+- [00:55:35,090 - 00:55:37,090] Things moving slower than the speed of light
+- [00:55:37,090 - 00:55:39,090] move
+- [00:55:39,090 - 00:55:41,090] more toward the vertical.
+- [00:55:41,090 - 00:55:43,090] If it made sense to think about
+- [00:55:43,090 - 00:55:45,090] things moving faster than the speed of light,
+- [00:55:45,090 - 00:55:47,090] which it doesn't, they would be moving
+- [00:55:47,090 - 00:55:49,090] on trajectories which were more horizontal.
+- [00:55:49,090 - 00:55:51,090] So,
+- [00:55:51,090 - 00:55:53,090] these two
+- [00:55:53,090 - 00:55:55,090] clocks are
+- [00:55:55,090 - 00:55:57,090] synchronized
+- [00:55:57,090 - 00:55:59,090] because
+- [00:55:59,090 - 00:56:01,090] if at the same instant of time,
+- [00:56:01,090 - 00:56:03,090] or another way of saying it,
+- [00:56:03,090 - 00:56:05,090] is these two points here
+- [00:56:05,090 - 00:56:07,090] must be at the same instant of time
+- [00:56:07,090 - 00:56:09,090] in this reference frame,
+- [00:56:09,090 - 00:56:11,090] in this stationary reference frame,
+- [00:56:11,090 - 00:56:13,090] because the light rays
+- [00:56:13,090 - 00:56:15,090] will intersect the intermediate
+- [00:56:15,090 - 00:56:17,090] observer here right at the same
+- [00:56:17,090 - 00:56:19,090] instant of time. Now let's draw
+- [00:56:19,090 - 00:56:21,090] in a second observer.
+- [00:56:21,090 - 00:56:23,090] A second observer, in other words,
+- [00:56:23,090 - 00:56:25,090] a second reference frame,
+- [00:56:25,090 - 00:56:27,090] and the second reference frame is moving
+- [00:56:29,090 - 00:56:31,090] supposed to be
+- [00:56:31,090 - 00:56:33,090] a straight line, and it's moving
+- [00:56:33,090 - 00:56:35,090] with a motion
+- [00:56:35,090 - 00:56:37,090] x equals vt.
+- [00:56:37,090 - 00:56:39,090] v is
+- [00:56:39,090 - 00:56:41,090] now the velocity of the moving
+- [00:56:41,090 - 00:56:43,090] observer, and this curve here
+- [00:56:43,090 - 00:56:45,090] is now x equals vt.
+- [00:56:45,090 - 00:56:47,090] So, from your perspective,
+- [00:56:47,090 - 00:56:49,090] I'm moving along
+- [00:56:49,090 - 00:56:51,090] with velocity v.
+- [00:56:51,090 - 00:56:53,090] So you watch me, and you say
+- [00:56:53,090 - 00:56:55,090] at each instant of time,
+- [00:56:55,090 - 00:56:57,090] my position moves,
+- [00:56:57,090 - 00:56:59,090] and it moves with a velocity v.
+- [00:56:59,090 - 00:57:01,090] This is incidentally
+- [00:57:01,090 - 00:57:03,090] the definition of velocity.
+- [00:57:03,090 - 00:57:05,090] This is the definition of the velocity
+- [00:57:05,090 - 00:57:07,090] that you see me
+- [00:57:07,090 - 00:57:09,090] move with.
+- [00:57:09,090 - 00:57:11,090] So,
+- [00:57:11,090 - 00:57:13,090] this is moving along like here.
+- [00:57:13,090 - 00:57:15,090] Let's draw
+- [00:57:15,090 - 00:57:17,090] in some more lines.
+- [00:57:17,090 - 00:57:19,090] Here's the, here's
+- [00:57:19,090 - 00:57:21,090] a second,
+- [00:57:21,090 - 00:57:23,090] I want to draw this good and parallel
+- [00:57:23,090 - 00:57:25,090] to the first.
+- [00:57:31,090 - 00:57:33,090] Does that look parallel?
+- [00:57:33,090 - 00:57:35,090] Close enough. This one's also pretty
+- [00:57:35,090 - 00:57:37,090] parallel.
+- [00:57:37,090 - 00:57:39,090] Like that.
+- [00:57:39,090 - 00:57:41,090] Okay.
+- [00:57:41,090 - 00:57:43,090] What do we
+- [00:57:43,090 - 00:57:45,090] want to do next?
+- [00:57:45,090 - 00:57:47,090] Ah.
+- [00:57:47,090 - 00:57:49,090] Okay.
+- [00:57:49,090 - 00:57:51,090] Now let's look at the moving frame of reference.
+- [00:57:51,090 - 00:57:53,090] Again,
+- [00:57:53,090 - 00:57:55,090] this guy is
+- [00:57:55,090 - 00:57:57,090] halfway between these two.
+- [00:57:57,090 - 00:57:59,090] He started out over here
+- [00:57:59,090 - 00:58:01,090] halfway between these two.
+- [00:58:01,090 - 00:58:03,090] They're moving with uniform velocity.
+- [00:58:03,090 - 00:58:05,090] He stays halfway between these two.
+- [00:58:05,090 - 00:58:07,090] But, notice
+- [00:58:07,090 - 00:58:09,090] that at his location,
+- [00:58:09,090 - 00:58:11,090] the two light rays
+- [00:58:11,090 - 00:58:13,090] are moving
+- [00:58:13,090 - 00:58:15,090] at the same time.
+- [00:58:15,090 - 00:58:17,090] The two light rays
+- [00:58:17,090 - 00:58:19,090] do not arrive
+- [00:58:19,090 - 00:58:21,090] at his position at the same time.
+- [00:58:21,090 - 00:58:23,090] At his location,
+- [00:58:23,090 - 00:58:25,090] one of the light rays arrives
+- [00:58:25,090 - 00:58:27,090] much later than the other one.
+- [00:58:27,090 - 00:58:29,090] So, according to this moving observer,
+- [00:58:29,090 - 00:58:31,090] he must conclude
+- [00:58:31,090 - 00:58:33,090] that these two points
+- [00:58:33,090 - 00:58:35,090] were not synchronous.
+- [00:58:35,090 - 00:58:37,090] The light rays emitted from here and here
+- [00:58:37,090 - 00:58:39,090] could not have been synchronous
+- [00:58:39,090 - 00:58:41,090] from his point of view,
+- [00:58:41,090 - 00:58:43,090] because from his point of view,
+- [00:58:43,090 - 00:58:45,090] they should have arrived
+- [00:58:45,090 - 00:58:47,090] at the intermediate position
+- [00:58:47,090 - 00:58:49,090] at the same time.
+- [00:58:49,090 - 00:58:51,090] In fact, he can reverse the logic.
+- [00:58:51,090 - 00:58:53,090] He can say,
+- [00:58:53,090 - 00:58:57,090] where along this light ray
+- [00:58:57,090 - 00:58:59,090] does it correspond
+- [00:58:59,090 - 00:59:01,090] Let's see.
+- [00:59:01,090 - 00:59:03,090] How to say this right?
+- [00:59:03,090 - 00:59:05,090] Yeah.
+- [00:59:05,090 - 00:59:07,090] Let's forget this light ray
+- [00:59:07,090 - 00:59:09,090] for a minute.
+- [00:59:09,090 - 00:59:11,090] And let's follow this one
+- [00:59:11,090 - 00:59:13,090] until it actually hits
+- [00:59:13,090 - 00:59:15,090] the light ray.
+- [00:59:15,090 - 00:59:17,090] The observer.
+- [00:59:17,090 - 00:59:19,090] This is the person in the middle.
+- [00:59:19,090 - 00:59:21,090] Where would a light ray
+- [00:59:21,090 - 00:59:23,090] have to come from
+- [00:59:23,090 - 00:59:25,090] along this trajectory
+- [00:59:25,090 - 00:59:27,090] in order
+- [00:59:27,090 - 00:59:29,090] that the guy in the middle here
+- [00:59:29,090 - 00:59:31,090] would conclude that the two light rays
+- [00:59:31,090 - 00:59:33,090] were emitted simultaneously?
+- [00:59:33,090 - 00:59:35,090] It's easy.
+- [00:59:35,090 - 00:59:37,090] Just trace a backward light ray,
+- [00:59:37,090 - 00:59:39,090] also at 45 degrees,
+- [00:59:39,090 - 00:59:41,090] to that point.
+- [00:59:41,090 - 00:59:43,090] Trace a light ray
+- [00:59:43,090 - 00:59:45,090] backward along 45 degrees
+- [00:59:45,090 - 00:59:47,090] to a point over here.
+- [00:59:47,090 - 00:59:49,090] And now in the moving frame
+- [00:59:49,090 - 00:59:51,090] of reference,
+- [00:59:51,090 - 00:59:53,090] if a light ray is emitted over here,
+- [00:59:53,090 - 00:59:55,090] and a light ray is emitted over here,
+- [00:59:55,090 - 00:59:57,090] this is a bit of an exaggeration.
+- [00:59:57,090 - 00:59:59,090] I think this line is too shallow.
+- [00:59:59,090 - 01:00:01,090] Let's go back a little more.
+- [01:00:01,090 - 01:00:03,090] It hit exactly the same place.
+- [01:00:09,090 - 01:00:11,090] Yeah.
+- [01:00:11,090 - 01:00:13,090] Um.
+- [01:00:13,090 - 01:00:15,090] If a light ray
+- [01:00:15,090 - 01:00:17,090] were emitted from here
+- [01:00:17,090 - 01:00:19,090] to the left,
+- [01:00:19,090 - 01:00:21,090] and a light ray were emitted from here
+- [01:00:21,090 - 01:00:23,090] to the right,
+- [01:00:23,090 - 01:00:25,090] they would hit the central observer over here
+- [01:00:25,090 - 01:00:27,090] at exactly the same time.
+- [01:00:27,090 - 01:00:29,090] So the moving observer
+- [01:00:29,090 - 01:00:31,090] will conclude that this point
+- [01:00:31,090 - 01:00:33,090] and this point are synchronous.
+- [01:00:33,090 - 01:00:35,090] Whereas the stationary observer
+- [01:00:35,090 - 01:00:37,090] concludes
+- [01:00:37,090 - 01:00:39,090] that this point and this point
+- [01:00:39,090 - 01:00:41,090] are synchronous.
+- [01:00:41,090 - 01:00:43,090] It's obvious from the beginning
+- [01:00:43,090 - 01:00:44,090] that it will not be
+- [01:00:44,090 - 01:00:45,090] the same in the two frames.
+- [01:00:45,090 - 01:00:47,090] But can we do it quantitatively?
+- [01:00:47,090 - 01:00:49,090] Can we really figure out quantitatively
+- [01:00:49,090 - 01:00:51,090] exactly where this point lies?
+- [01:00:53,090 - 01:00:55,090] And can we figure out all the points
+- [01:00:55,090 - 01:00:57,090] that the moving observer
+- [01:00:57,090 - 01:00:59,090] will call synchronous
+- [01:00:59,090 - 01:01:01,090] with the origin over here?
+- [01:01:01,090 - 01:01:03,090] And that's not too hard.
+- [01:01:03,090 - 01:01:05,090] It just requires a little bit of
+- [01:01:05,090 - 01:01:07,090] simple algebra.
+- [01:01:07,090 - 01:01:09,090] So a little bit of geometry and algebra.
+- [01:01:09,090 - 01:01:11,090] Let's work it out.
+- [01:01:11,090 - 01:01:13,090] The first thing to do
+- [01:01:13,090 - 01:01:15,090] is to make some simple equations
+- [01:01:15,090 - 01:01:17,090] for all the lines
+- [01:01:17,090 - 01:01:19,090] that are drawn here.
+- [01:01:19,090 - 01:01:21,090] We need some simple
+- [01:01:21,090 - 01:01:23,090] We want to be quantitative.
+- [01:01:23,090 - 01:01:25,090] I want to write some equations
+- [01:01:25,090 - 01:01:27,090] for the various lines.
+- [01:01:27,090 - 01:01:29,090] This line is x equal vt.
+- [01:01:29,090 - 01:01:31,090] What is this line over here?
+- [01:01:31,090 - 01:01:33,090] This line is x
+- [01:01:33,090 - 01:01:35,090] Let's write it in.
+- [01:01:35,090 - 01:01:37,090] x equals vt
+- [01:01:37,090 - 01:01:39,090] plus l.
+- [01:01:39,090 - 01:01:41,090] Why?
+- [01:01:41,090 - 01:01:43,090] Because it's shifted over by distance l.
+- [01:01:43,090 - 01:01:45,090] So for
+- [01:01:45,090 - 01:01:47,090] its x
+- [01:01:47,090 - 01:01:49,090] is vt plus l.
+- [01:01:49,090 - 01:01:51,090] This is x means
+- [01:01:51,090 - 01:01:53,090] from the stationary reference frame.
+- [01:01:53,090 - 01:01:55,090] The stationary reference frame
+- [01:01:55,090 - 01:01:57,090] sees the black lines
+- [01:01:57,090 - 01:01:59,090] shifted up
+- [01:01:59,090 - 01:02:01,090] by distance l.
+- [01:02:01,090 - 01:02:03,090] So it's x equals vt plus l.
+- [01:02:03,090 - 01:02:05,090] What about this one?
+- [01:02:05,090 - 01:02:07,090] vt plus 2l.
+- [01:02:09,090 - 01:02:11,090] That's x equals vt plus 2l.
+- [01:02:11,090 - 01:02:13,090] We want to locate this point.
+- [01:02:13,090 - 01:02:15,090] The object is to locate this point
+- [01:02:15,090 - 01:02:17,090] right over here.
+- [01:02:17,090 - 01:02:19,090] Why?
+- [01:02:19,090 - 01:02:21,090] Because it's the one that the moving observer says
+- [01:02:21,090 - 01:02:23,090] is synchronous with the origin.
+- [01:02:23,090 - 01:02:25,090] So we'd like to find out where it is.
+- [01:02:25,090 - 01:02:27,090] What's the equation for this line?
+- [01:02:28,034 - 01:02:28,962] 謝謝
+- [01:02:28,962 - 01:02:32,762] x equals t
+- [01:02:32,762 - 01:02:34,982] that equation is x equals t
+- [01:02:34,982 - 01:02:37,462] let's first locate this point
+- [01:02:37,462 - 01:02:40,022] this point is at the intersection
+- [01:02:40,022 - 01:02:41,872] of two lines that we know
+- [01:02:41,872 - 01:02:43,722] one of them is x equals t
+- [01:02:43,722 - 01:02:46,182] and the other is x equals vt plus l
+- [01:02:46,182 - 01:02:48,142] let's write those two equations
+- [01:02:48,142 - 01:02:51,542] and find out where those two lines intersect
+- [01:02:51,542 - 01:02:54,582] so one of them is just x equals t
+- [01:02:54,582 - 01:02:57,642] and the other one is x equals vt
+- [01:02:57,642 - 01:02:59,522] plus l
+- [01:02:59,522 - 01:03:00,721] alright that's easy
+- [01:03:00,721 - 01:03:03,142] wherever you see x put t
+- [01:03:03,142 - 01:03:05,362] and we get t
+- [01:03:05,362 - 01:03:07,582] equals vt
+- [01:03:07,582 - 01:03:08,902] plus l
+- [01:03:08,902 - 01:03:10,002] or
+- [01:03:10,002 - 01:03:12,162] one minus v
+- [01:03:12,162 - 01:03:13,682] times t
+- [01:03:13,682 - 01:03:16,762] equals l
+- [01:03:16,762 - 01:03:18,402] one more step
+- [01:03:18,402 - 01:03:19,782] t
+- [01:03:19,782 - 01:03:22,622] equals l divided by one minus
+- [01:03:22,622 - 01:03:25,462] v do i have that right
+- [01:03:25,462 - 01:03:27,362] let's check it
+- [01:03:27,362 - 01:03:31,862] yes
+- [01:03:31,862 - 01:03:34,902] that's this point right over here
+- [01:03:34,902 - 01:03:39,182] it occurs in the rest frame at a time
+- [01:03:39,182 - 01:03:41,472] which is v which is l divided by one
+- [01:03:41,472 - 01:03:43,762] minus v what about x what about the x of
+- [01:03:43,762 - 01:03:45,922] that point
+- [01:03:45,922 - 01:03:47,382] that's equal to t
+- [01:03:47,382 - 01:03:50,122] all along this line
+- [01:03:50,122 - 01:03:52,522] the same thing
+- [01:03:52,522 - 01:03:55,842] x equals l over one minus v
+- [01:03:57,362 - 01:04:00,862] that's this point over here
+- [01:04:00,862 - 01:04:04,362] let's call it point capital a
+- [01:04:04,362 - 01:04:07,362] this is point capital a
+- [01:04:07,362 - 01:04:11,362] now now that we know where point capital a is
+- [01:04:11,362 - 01:04:15,362] let's see if we can trace a line backward
+- [01:04:15,362 - 01:04:17,362] until it hits here and
+- [01:04:17,362 - 01:04:19,362] figure out where this point is
+- [01:04:19,362 - 01:04:22,362] that's our goal to find out where this point is
+- [01:04:22,362 - 01:04:23,862] all right what about this line
+- [01:04:23,862 - 01:04:25,362] what do we know about this line
+- [01:04:25,362 - 01:04:27,082] we know about this line
+- [01:04:27,082 - 01:04:30,082] that it's a backward going light ray
+- [01:04:30,082 - 01:04:32,582] so it's of the form x
+- [01:04:32,582 - 01:04:35,082] minus t is equal to a constant
+- [01:04:35,082 - 01:04:39,082] oh sorry x equals minus t plus a constant
+- [01:04:39,082 - 01:04:42,082] the backward going light ray
+- [01:04:42,082 - 01:04:46,082] is x equals minus t plus something
+- [01:04:46,082 - 01:04:48,582] let me just give that something i don't want to
+- [01:04:48,582 - 01:04:51,082] call it d prime i'm going to call it b
+- [01:04:51,082 - 01:04:53,082] or another way to write it
+- [01:04:53,082 - 01:04:55,082] is that x plus t
+- [01:04:55,082 - 01:04:57,082] equals b
+- [01:04:57,082 - 01:04:59,082] we don't know what b is yet
+- [01:04:59,082 - 01:05:00,082] how am i going to find b
+- [01:05:00,082 - 01:05:02,082] this is x plus t equals b
+- [01:05:02,082 - 01:05:04,082] how will i find b
+- [01:05:04,082 - 01:05:06,082] anybody got an idea
+- [01:05:06,082 - 01:05:11,082] yeah it's the same it's twice x
+- [01:05:11,082 - 01:05:14,082] in point a
+- [01:05:14,082 - 01:05:16,082] right
+- [01:05:16,082 - 01:05:18,082] what we do is we use the
+- [01:05:18,082 - 01:05:20,082] fact that this line goes through this point
+- [01:05:20,082 - 01:05:27,082] this line goes through this point
+- [01:05:27,082 - 01:05:30,082] at this point x and t are equal
+- [01:05:30,082 - 01:05:32,082] and what are they equal to
+- [01:05:32,082 - 01:05:37,082] they're equal to l over one minus v
+- [01:05:37,082 - 01:05:39,082] so at this point over here
+- [01:05:39,082 - 01:05:43,082] x plus t is just twice l
+- [01:05:43,082 - 01:05:45,082] divided by one minus v
+- [01:05:45,082 - 01:05:47,082] and that's equal to b
+- [01:05:47,082 - 01:05:48,082] so we found b
+- [01:05:48,082 - 01:05:51,082] we found out what the
+- [01:05:51,082 - 01:05:53,082] this b is
+- [01:05:53,082 - 01:05:55,082] that goes into this equation
+- [01:05:55,082 - 01:05:57,082] for this backward moving light ray over here
+- [01:05:57,082 - 01:05:59,082] alright let's write it down
+- [01:05:59,082 - 01:06:03,082] x plus t
+- [01:06:03,082 - 01:06:06,082] is equal to two l
+- [01:06:06,082 - 01:06:09,082] divided by one minus v
+- [01:06:09,082 - 01:06:11,082] so now i know
+- [01:06:11,082 - 01:06:13,082] this line
+- [01:06:13,082 - 01:06:16,082] but i want to find its intersection
+- [01:06:16,082 - 01:06:17,082] with this one
+- [01:06:17,082 - 01:06:21,082] so i'll write right underneath this equation
+- [01:06:21,082 - 01:06:24,082] i'll write the equation for this line
+- [01:06:24,082 - 01:06:27,082] that's x equals v plus two l
+- [01:06:28,834 - 01:06:30,834] ありがとうございました
+- [01:06:31,682 - 01:06:36,332] Alright, I now have two equations that
+- [01:06:36,332 - 01:06:40,982] tell me where the intersection point is.
+- [01:06:41,982 - 01:06:43,342] Let's see, should we solve them?
+- [01:06:45,122 - 01:06:46,442] A little bit of a nuisance
+- [01:06:46,442 - 01:06:47,762] to solve them, but let's do it.
+- [01:06:50,662 - 01:06:52,182] Okay, no, it's not hard at all.
+- [01:06:54,922 - 01:06:57,002] Let's subtract the two equations.
+- [01:06:57,002 - 01:06:58,702] That will get rid of x for us.
+- [01:06:58,702 - 01:07:00,462] If I subtract the two equations,
+- [01:07:00,462 - 01:07:02,222] that will get rid of x.
+- [01:07:02,542 - 01:07:06,062] That will give me, on the left here, t.
+- [01:07:08,382 - 01:07:11,721] And on the right-hand side, I will
+- [01:07:11,721 - 01:07:15,061] have equals 2l over 1 minus v,
+- [01:07:18,302 - 01:07:24,362] minus, looks like we're doing this right,
+- [01:07:26,282 - 01:07:28,002] minus vt.
+- [01:07:28,702 - 01:07:31,462] Minus 2l?
+- [01:07:32,842 - 01:07:34,102] Oh, no, plus 2l.
+- [01:07:34,582 - 01:07:36,322] No, minus 2l.
+- [01:07:41,542 - 01:07:42,342] Minus 2l.
+- [01:07:43,922 - 01:07:45,882] All right, let's move all the
+- [01:07:45,882 - 01:07:47,842] t stuff over to the left.
+- [01:07:47,842 - 01:07:53,842] That gives us t times 1 minus v equals...
+- [01:07:54,822 - 01:07:56,842] 1 plus v.
+- [01:07:57,102 - 01:07:58,342] Equals 2l.
+- [01:07:58,702 - 01:08:00,521] Both these terms have 2l in them.
+- [01:08:01,081 - 01:08:02,431] And then one of them
+- [01:08:02,431 - 01:08:03,782] has 1 over 1 minus v.
+- [01:08:04,562 - 01:08:06,622] And the other one just has minus 1.
+- [01:08:10,062 - 01:08:10,622] All right.
+- [01:08:11,282 - 01:08:14,002] 2l is common to both of them.
+- [01:08:14,221 - 01:08:14,802] It's out here.
+- [01:08:15,422 - 01:08:17,751] And it's just l over, sorry, it's
+- [01:08:17,751 - 01:08:20,081] just 1 over 1 minus v minus 1.
+- [01:08:20,982 - 01:08:23,702] Okay, what's 1 over 1 minus v minus 1?
+- [01:08:25,742 - 01:08:27,102] It's just v over 1.
+- [01:08:27,341 - 01:08:28,682] Just v over 1 minus v.
+- [01:08:28,702 - 01:08:29,542] 1 over 1 minus v.
+- [01:08:29,542 - 01:08:29,581] Yeah.
+- [01:08:29,581 - 01:08:30,421] Right.
+- [01:08:30,421 - 01:08:30,742] Yeah.
+- [01:08:30,742 - 01:08:34,021] 1 over 1 minus v minus
+- [01:08:34,021 - 01:08:37,301] 1 minus v over 1 minus v.
+- [01:08:37,761 - 01:08:39,421] If 1 minus 1 cancels,
+- [01:08:39,421 - 01:08:41,082] v over 1 minus v, right?
+- [01:08:41,321 - 01:08:43,482] v over 1 minus v.
+- [01:08:45,761 - 01:08:50,022] And finally, I have now located what t is.
+- [01:08:50,022 - 01:08:58,682] t is 2l times v divided by 1 minus v.
+- [01:08:58,682 - 01:09:00,381] 1 minus v times 1 plus v.
+- [01:09:03,261 - 01:09:05,261] 1 minus v times 1 plus
+- [01:09:05,261 - 01:09:07,261] v is just 1 minus v squared.
+- [01:09:07,881 - 01:09:11,261] So, first of all, I found t is
+- [01:09:11,261 - 01:09:14,642] equal to 2l v over 1 minus v squared.
+- [01:09:16,881 - 01:09:19,402] That's the time of this point over here.
+- [01:09:21,242 - 01:09:21,801] t.
+- [01:09:22,522 - 01:09:24,301] What about its x?
+- [01:09:25,062 - 01:09:26,402] Well, that's easy to find.
+- [01:09:26,402 - 01:09:28,042] We can find it from two ways.
+- [01:09:28,682 - 01:09:31,062] We can either find it by plugging into
+- [01:09:31,062 - 01:09:33,442] this line or by plugging into this line.
+- [01:09:35,261 - 01:09:37,062] Which one is simpler?
+- [01:09:37,162 - 01:09:37,582] Let's see.
+- [01:09:38,341 - 01:09:39,932] It looks to me like it's
+- [01:09:39,932 - 01:09:41,522] easier to plug into this one.
+- [01:09:42,782 - 01:09:43,022] Okay.
+- [01:09:43,362 - 01:09:44,742] So, let's plug into this one.
+- [01:09:44,742 - 01:09:51,702] That says that x is equal to 2l divided by 1
+- [01:09:51,702 - 01:09:58,662] minus v minus t minus 2l v over 1 minus v squared.
+- [01:09:58,682 - 01:10:02,682] Anybody do that in their head?
+- [01:10:02,682 - 01:10:03,182] No.
+- [01:10:03,182 - 01:10:03,682] No.
+- [01:10:03,682 - 01:10:06,882] 2l v plus 2l v unit.
+- [01:10:06,882 - 01:10:08,282] 2l v times 2l.
+- [01:10:08,282 - 01:10:09,522] I think we better do it.
+- [01:10:10,022 - 01:10:12,622] We better multiply top and bottom by 1
+- [01:10:12,622 - 01:10:15,222] plus v so that we have the same denominator.
+- [01:10:16,222 - 01:10:18,182] So, let's multiply by 1
+- [01:10:18,182 - 01:10:20,142] plus, well, let's do it separately.
+- [01:10:21,342 - 01:10:24,722] 2l times 1 plus v
+- [01:10:24,722 - 01:10:28,102] divided by 1 minus v squared.
+- [01:10:28,682 - 01:10:32,182] Minus 2l v.
+- [01:10:32,182 - 01:10:35,432] It looks like to me like it's
+- [01:10:35,432 - 01:10:38,682] just 2l divided by 1 minus v squared.
+- [01:10:38,682 - 01:10:40,182] Alright.
+- [01:10:40,182 - 01:10:48,682] So, it's x equals 2l over 1 minus v squared.
+- [01:10:48,682 - 01:10:51,182] Now, I'm actually not so
+- [01:10:51,182 - 01:10:53,682] interested in either t or x.
+- [01:10:53,682 - 01:10:56,682] What I'm interested in is the slope of this line.
+- [01:10:56,682 - 01:10:58,162] I'm interested in the slope of this line.
+- [01:10:58,162 - 01:10:58,662] I'm interested in the slope of this line.
+- [01:10:58,662 - 01:11:01,182] I'm interested in the slope of this line,
+- [01:11:01,182 - 01:11:03,702] which is the ratio of t to x.
+- [01:11:05,382 - 01:11:08,162] I'm actually interested in what this line is.
+- [01:11:08,382 - 01:11:10,082] I'm interested in this curve here.
+- [01:11:10,722 - 01:11:14,992] This curve has the form x equals something times
+- [01:11:14,992 - 01:11:19,262] t, but we can read off what it is now.
+- [01:11:19,482 - 01:11:21,082] It's just the ratio of x to t.
+- [01:11:21,182 - 01:11:22,662] What's the ratio of x to t?
+- [01:11:23,182 - 01:11:25,422] The ratio of x to t is just v.
+- [01:11:26,722 - 01:11:27,622] It's just v.
+- [01:11:27,622 - 01:11:31,342] So, this curve is t equals vx.
+- [01:11:32,322 - 01:11:33,542] Let's check that.
+- [01:11:33,762 - 01:11:35,122] t equals vx.
+- [01:11:35,582 - 01:11:35,862] Yes.
+- [01:11:36,282 - 01:11:37,922] t has an extra factor
+- [01:11:37,922 - 01:11:39,562] of v in it from x.
+- [01:11:40,042 - 01:11:42,002] t equals v times x.
+- [01:11:44,341 - 01:11:45,982] Well, that's kind of interesting.
+- [01:11:47,522 - 01:11:51,732] We did this whole big construction, and what
+- [01:11:51,732 - 01:11:55,942] we found out is that what the moving observer
+- [01:11:55,942 - 01:11:57,341] calls c.
+- [01:11:57,622 - 01:12:00,972] And, if it's synchronous, the
+- [01:12:00,972 - 01:12:04,322] stationary observer calls t equals vx.
+- [01:12:04,322 - 01:12:08,622] We can erase everything else.
+- [01:12:08,622 - 01:12:10,122] Let's just keep track.
+- [01:12:10,122 - 01:12:12,182] Here's the moving observer.
+- [01:12:12,182 - 01:12:16,382] He moves with x equals vt.
+- [01:12:16,382 - 01:12:20,782] That's his time axis.
+- [01:12:20,782 - 01:12:22,382] x equals vt.
+- [01:12:22,382 - 01:12:26,322] But the x axis is t equals vx.
+- [01:12:26,322 - 01:12:27,322] Okay.
+- [01:12:27,322 - 01:12:29,982] All these points along here are at the same
+- [01:12:29,982 - 01:12:32,642] position from the point of view of the moving
+- [01:12:32,642 - 01:12:33,962] observer.
+- [01:12:33,962 - 01:12:36,552] All these points along here are at the same
+- [01:12:36,552 - 01:12:39,142] time from the point of view of the moving
+- [01:12:39,142 - 01:12:40,642] observer.
+- [01:12:40,642 - 01:12:42,722] All these points are synchronous from the
+- [01:12:42,722 - 01:12:44,802] moving observer's point of view, not from
+- [01:12:44,802 - 01:12:46,322] the stationary point of view.
+- [01:12:46,322 - 01:12:49,422] And, look, one of them says x equals vt.
+- [01:12:49,422 - 01:12:51,922] The other says t equals vx.
+- [01:12:51,922 - 01:12:55,322] Very symmetrically related to each other.
+- [01:12:55,322 - 01:12:56,721] Very symmetrically related.
+- [01:12:56,722 - 01:12:59,542] Let's just abstract from the whole thing
+- [01:12:59,542 - 01:13:02,362] now what we've learned, because we've set
+- [01:13:02,362 - 01:13:04,462] c equal to 1.
+- [01:13:04,462 - 01:13:06,142] Okay?
+- [01:13:06,142 - 01:13:08,282] So let's actually put some units into it.
+- [01:13:08,282 - 01:13:10,802] Let's get the units right.
+- [01:13:10,802 - 01:13:15,042] When you do a thing like you set c equal
+- [01:13:15,042 - 01:13:19,282] to 1, then of course lengths and times have exactly
+- [01:13:19,282 - 01:13:23,362] the same units, and velocities are dimensionless.
+- [01:13:23,362 - 01:13:24,362] Okay?
+- [01:13:24,362 - 01:13:25,362] Okay.
+- [01:13:25,362 - 01:13:26,362] Okay.
+- [01:13:26,362 - 01:13:28,662] So if you have a velocity of 1
+- [01:13:28,662 - 01:13:30,962] over time, if c is 1, velocities are dimensionless.
+- [01:13:30,962 - 01:13:33,182] But let's try to get some dimensions
+- [01:13:33,182 - 01:13:35,402] back into it and restore some correct dimensions
+- [01:13:35,402 - 01:13:36,402] to it.
+- [01:13:36,402 - 01:13:39,122] All we have to do is multiply by the appropriate
+- [01:13:39,122 - 01:13:41,842] powers of the speed of light in order to get
+- [01:13:41,842 - 01:13:44,522] the dimensions to be consistent.
+- [01:13:44,522 - 01:13:46,742] This is already consistent.
+- [01:13:46,742 - 01:13:49,492] X is equal to a velocity, which
+- [01:13:49,492 - 01:13:52,242] is a length over time, times a time.
+- [01:13:52,242 - 01:13:53,522] But this one does not look consistent.
+- [01:13:53,522 - 01:13:54,692] What do we have to do
+- [01:13:54,692 - 01:13:55,862] to it to make it consistent?
+- [01:13:56,362 - 01:13:58,812] The answer is, I think, divide it
+- [01:13:58,812 - 01:14:01,262] by the square of the speed of light.
+- [01:14:01,262 - 01:14:03,332] When the speed of light is set equal
+- [01:14:03,332 - 01:14:05,402] to 1, this curve is t equals vx.
+- [01:14:05,402 - 01:14:08,502] There's a unique way to restore the c's so
+- [01:14:08,502 - 01:14:11,602] that you get the same answer when c is equal
+- [01:14:11,602 - 01:14:15,502] to 1, but so that dimensions are restored.
+- [01:14:15,502 - 01:14:17,282] Let's check the dimensions.
+- [01:14:17,282 - 01:14:18,282] This is a time.
+- [01:14:18,282 - 01:14:20,402] We have a time.
+- [01:14:20,402 - 01:14:21,402] Equals.
+- [01:14:21,402 - 01:14:24,402] Now a velocity is a length over a time.
+- [01:14:24,402 - 01:14:26,242] An x is a length.
+- [01:14:26,242 - 01:14:29,622] And in the denominator, we have
+- [01:14:29,622 - 01:14:33,002] a length squared over a time squared.
+- [01:14:33,002 - 01:14:34,002] So let's see.
+- [01:14:34,002 - 01:14:37,482] That is, in fact, dimensionally correct.
+- [01:14:37,482 - 01:14:38,482] Yeah.
+- [01:14:38,482 - 01:14:40,672] A c in the denominator, a c
+- [01:14:40,672 - 01:14:42,862] squared in the denominator, restores the dimensions.
+- [01:14:42,862 - 01:14:44,962] So if we include the speed
+- [01:14:44,962 - 01:14:47,062] of light, that would be the formula.
+- [01:14:47,062 - 01:14:49,102] In fact, including the speed
+- [01:14:49,102 - 01:14:51,142] of light, you see something interesting.
+- [01:14:51,142 - 01:14:53,692] You see that when the speed of light is
+- [01:14:53,692 - 01:14:56,242] very, very large, the slope of this line is very
+- [01:14:56,242 - 01:14:58,242] very small.
+- [01:14:58,242 - 01:15:00,622] t equals v times x
+- [01:15:00,622 - 01:15:03,002] divided by an enormously big number.
+- [01:15:03,002 - 01:15:04,542] All right.
+- [01:15:04,542 - 01:15:07,422] Speed of light squared in metric units
+- [01:15:07,422 - 01:15:10,302] is 10 to the 17th or something.
+- [01:15:10,302 - 01:15:13,442] So this is an enormously big number downstairs.
+- [01:15:13,442 - 01:15:15,592] And that says that this
+- [01:15:15,592 - 01:15:17,742] is a very, very shallow line.
+- [01:15:17,742 - 01:15:21,872] So shallow that for most practical purposes,
+- [01:15:21,872 - 01:15:26,002] simultaneity really is the same in all reference
+- [01:15:26,002 - 01:15:27,002] systems.
+- [01:15:27,002 - 01:15:30,002] But when things are moving with anything like
+- [01:15:30,002 - 01:15:33,002] the speed of light, we have to account for
+- [01:15:33,002 - 01:15:35,142] these discrepancies.
+- [01:15:35,142 - 01:15:39,122] And so but if we set the speed of light
+- [01:15:39,122 - 01:15:43,102] equal to 1, then the diagram has a lovely symmetry.
+- [01:15:43,102 - 01:15:46,482] The slope of this line relative to the horizontal
+- [01:15:46,482 - 01:15:49,862] is the same as the slope of this line relative
+- [01:15:49,862 - 01:15:52,402] to the vertical.
+- [01:15:52,402 - 01:15:53,702] So let's redraw it.
+- [01:15:53,702 - 01:15:56,002] Let's just abstract out of it.
+- [01:15:56,002 - 01:15:59,662] We have your coordinates x and t.
+- [01:15:59,662 - 01:16:07,802] And we have my coordinates t prime and x prime.
+- [01:16:07,802 - 01:16:11,142] A light signal, let's put a light signal in there.
+- [01:16:11,142 - 01:16:13,252] A light signal moving to
+- [01:16:13,252 - 01:16:15,362] the right is at 45 degrees.
+- [01:16:15,362 - 01:16:18,132] And a light signal moving to
+- [01:16:18,132 - 01:16:20,902] the left is at 135 degrees.
+- [01:16:20,902 - 01:16:24,002] So you see what's happened.
+- [01:16:24,002 - 01:16:26,002] The...
+- [01:16:26,002 - 01:16:29,422] The new coordinates are sort of
+- [01:16:29,422 - 01:16:32,842] symmetric relative to the light ray here.
+- [01:16:32,842 - 01:16:36,692] But the surface, which is the surface
+- [01:16:36,692 - 01:16:40,542] of simultaneity, let's give it a name.
+- [01:16:40,542 - 01:16:42,352] This is the surface of
+- [01:16:42,352 - 01:16:44,162] simultaneity in the moving reference frame.
+- [01:16:44,162 - 01:16:48,222] The set of points that the moving observer says
+- [01:16:48,222 - 01:16:52,282] are all at the same time are tilted relative
+- [01:16:52,282 - 01:16:55,322] to the surface of simultaneity in the rest frame.
+- [01:16:55,322 - 01:16:55,482] And they're tilted.
+- [01:16:55,482 - 01:16:55,642] It's not a good thing.
+- [01:16:55,642 - 01:16:55,662] It's not a good thing.
+- [01:16:55,662 - 01:17:00,432] They're tilted exactly the same way that
+- [01:17:00,432 - 01:17:05,202] the axis, that the time axis is tilted.
+- [01:17:05,202 - 01:17:07,842] So it's a very simple construction.
+- [01:17:07,842 - 01:17:14,382] Now, from this construction, we can make some guesses.
+- [01:17:14,382 - 01:17:15,182] Not guesses.
+- [01:17:15,182 - 01:17:17,912] We can actually derive the
+- [01:17:17,912 - 01:17:20,642] form of the Lorentz transformations.
+- [01:17:20,642 - 01:17:25,302] Let's work out the Lorentz transformations.
+- [01:17:25,302 - 01:17:30,742] We know a good deal about the relation
+- [01:17:30,742 - 01:17:36,182] between xt and x prime and t prime.
+- [01:17:36,922 - 01:17:38,602] We know a good deal, but we don't know everything.
+- [01:17:38,902 - 01:17:40,662] So we need some more input.
+- [01:17:42,342 - 01:17:44,062] Let's go back to Galileo.
+- [01:17:44,722 - 01:17:48,782] Galileo said x prime is equal to x minus vt.
+- [01:17:48,782 - 01:17:48,882] vt.
+- [01:17:52,342 - 01:17:53,782] All this says...
+- [01:17:54,662 - 01:17:54,782] All this...
+- [01:17:54,782 - 01:17:58,642] All this says is that when x is
+- [01:17:58,642 - 01:18:02,502] equal to vt, x prime is equal to 0.
+- [01:18:02,502 - 01:18:03,642] But that should be true.
+- [01:18:03,642 - 01:18:06,062] That should continue to be true.
+- [01:18:06,062 - 01:18:10,142] It should continue to be true that
+- [01:18:10,142 - 01:18:14,222] as far as you're concerned, my position satisfies
+- [01:18:14,222 - 01:18:16,102] x equals vt.
+- [01:18:16,102 - 01:18:18,892] So when x is equal to vt,
+- [01:18:18,892 - 01:18:21,682] you're talking about my origin of coordinates.
+- [01:18:21,682 - 01:18:23,022] So it must still be true.
+- [01:18:23,022 - 01:18:24,242] Not that x prime is equal to x minus vt.
+- [01:18:24,242 - 01:18:27,021] But that when x is equal
+- [01:18:27,021 - 01:18:29,801] to vt, x prime must be 0.
+- [01:18:29,801 - 01:18:32,681] My center of coordinates is
+- [01:18:32,681 - 01:18:35,562] what you call x equals vt.
+- [01:18:35,881 - 01:18:37,401] That continues to be true.
+- [01:18:38,001 - 01:18:39,981] That's just a statement that
+- [01:18:39,981 - 01:18:41,962] this line is x equals vt.
+- [01:18:43,242 - 01:18:44,941] And this line, of course,
+- [01:18:44,941 - 01:18:46,641] is also x prime equals 0.
+- [01:18:47,362 - 01:18:49,222] It's also x prime equals 0.
+- [01:18:49,881 - 01:18:51,451] It's the center of coordinates
+- [01:18:51,451 - 01:18:53,021] of the moving primed observer.
+- [01:18:53,022 - 01:18:57,972] So this equation may be wrong, but it must
+- [01:18:57,972 - 01:19:02,922] be correct that when x equals vt, x prime is
+- [01:19:02,922 - 01:19:04,142] equal to 0.
+- [01:19:04,142 - 01:19:06,702] How could this be wrong but still be true that
+- [01:19:06,702 - 01:19:09,262] when x is equal to vt, x prime is equal
+- [01:19:09,262 - 01:19:10,262] to 0?
+- [01:19:10,262 - 01:19:12,522] There's only one way.
+- [01:19:12,522 - 01:19:14,482] That there could be some factor in here.
+- [01:19:14,482 - 01:19:16,742] Let's call it f.
+- [01:19:16,742 - 01:19:20,262] And that factor could depend on velocity.
+- [01:19:20,262 - 01:19:21,182] That's a possibility.
+- [01:19:21,182 - 01:19:22,602] This is still clear.
+- [01:19:22,602 - 01:19:22,902] It's still possible.
+- [01:19:22,902 - 01:19:22,982] It's still possible.
+- [01:19:22,982 - 01:19:23,002] It's still possible.
+- [01:19:23,002 - 01:19:23,022] It's still possible.
+- [01:19:23,022 - 01:19:24,912] It's still consistent with the statement that when
+- [01:19:24,912 - 01:19:26,802] x is equal to vt, x prime is equal
+- [01:19:26,802 - 01:19:27,222] to 0.
+- [01:19:27,622 - 01:19:29,492] But it's not quite the same as saying
+- [01:19:29,492 - 01:19:31,362] x prime is equal to x minus vt.
+- [01:19:31,442 - 01:19:33,432] It's a little different than what Galileo
+- [01:19:33,432 - 01:19:35,422] would have written, depending on what f of
+- [01:19:35,422 - 01:19:36,122] v is here.
+- [01:19:37,762 - 01:19:42,972] So this is about all you can do
+- [01:19:42,972 - 01:19:48,182] with the equation, with Galileo's first equation, that still
+- [01:19:48,182 - 01:19:49,962] allows x prime to be 0
+- [01:19:49,962 - 01:19:51,742] when x is equal to vt.
+- [01:19:51,742 - 01:19:52,742] To have some numerical...
+- [01:19:53,022 - 01:19:54,022] So you can have a numerical multiple there.
+- [01:19:54,022 - 01:19:54,522] And that numerical multiple could,
+- [01:19:54,522 - 01:19:55,022] in principle, depend on the velocity.
+- [01:19:55,022 - 01:20:02,272] And as I said, all this is telling us here
+- [01:20:02,272 - 01:20:09,522] is that x equals vt is the same as x prime
+- [01:20:09,522 - 01:20:12,302] equals 0.
+- [01:20:12,302 - 01:20:15,542] Now let's look at this second curve.
+- [01:20:15,542 - 01:20:19,722] The second curve over here is t prime equals 0.
+- [01:20:19,722 - 01:20:22,182] Why is it t prime equals 0?
+- [01:20:22,182 - 01:20:22,902] Because all along the line, there's a constant.
+- [01:20:22,902 - 01:20:25,662] All along this curve here, the primed observer,
+- [01:20:25,662 - 01:20:28,422] the moving observer, says that the time is
+- [01:20:28,422 - 01:20:29,422] the same.
+- [01:20:29,422 - 01:20:30,422] All right?
+- [01:20:30,422 - 01:20:34,092] If we just choose it at this point to be
+- [01:20:34,092 - 01:20:37,762] 0 here, then t prime is equal to 0 all along
+- [01:20:37,762 - 01:20:39,342] this curve.
+- [01:20:39,342 - 01:20:44,282] So what it says, whatever the equation for t
+- [01:20:44,282 - 01:20:49,222] prime is, it must have the form t minus
+- [01:20:49,222 - 01:20:50,222] vx.
+- [01:20:52,902 - 01:21:01,022] And, see, when t equals vx we're still good right?
+- [01:21:01,022 - 01:21:02,222] Nothing bad.
+- [01:21:02,222 - 01:21:03,202] All right?
+- [01:21:03,202 - 01:21:05,992] If we explain that, what we do
+- [01:21:05,992 - 01:21:08,782] is that t is equal to vt.
+- [01:21:08,782 - 01:21:11,382] To have a normal vector, that's what we do.
+- [01:21:11,382 - 01:21:13,822] So we simply dried up all the balancЕТhe solarي
+- [01:21:13,822 - 01:21:15,622] But here we have the Kayla Fisher.
+- [01:21:15,622 - 01:21:16,862] And finally, every night that we work our
+- [01:21:16,862 - 01:21:18,102] way up even real high income indexes actions are
+- [01:21:18,102 - 01:21:18,862] like the kier portableinking effect.
+- [01:21:18,862 - 01:21:20,002] So if we living under a loop with 0 and
+- [01:21:20,002 - 01:21:21,142] we're going to us and we're going to move, we're
+- [01:21:21,142 - 01:21:21,802] going to be prepared for a very difficult, but then
+- [01:21:21,802 - 01:21:22,332] And I'm going to explain one of the
+- [01:21:22,332 - 01:21:22,862] things about taking the Caraway Ecosyаль following one and
+- [01:21:22,902 - 01:21:24,072] And this is the axis
+- [01:21:24,072 - 01:21:25,242] T prime is equal to zero.
+- [01:21:26,442 - 01:21:27,982] So Einstein wrote this down.
+- [01:21:29,202 - 01:21:31,282] But one more step.
+- [01:21:31,662 - 01:21:33,592] This is not quite enough because we don't
+- [01:21:33,592 - 01:21:35,522] know what this F and this G are.
+- [01:21:35,522 - 01:21:36,902] They could be anything.
+- [01:21:37,942 - 01:21:38,862] They could be anything.
+- [01:21:39,362 - 01:21:41,692] These two equations here tell us
+- [01:21:41,692 - 01:21:44,022] about the tilt of these axes,
+- [01:21:44,582 - 01:21:46,882] but they don't tell us what F and G are.
+- [01:21:47,122 - 01:21:48,242] We need one more step.
+- [01:21:49,042 - 01:21:50,542] I'll tell you what the one more step is.
+- [01:21:50,542 - 01:21:56,422] The one more step is that whatever the
+- [01:21:56,422 - 01:22:02,302] equations that you use to convey to me information
+- [01:22:02,302 - 01:22:06,092] should be essentially exactly the same as the equations
+- [01:22:06,092 - 01:22:09,882] I would use to convey information back to you,
+- [01:22:10,002 - 01:22:13,302] with one exception, the sign of the velocity.
+- [01:22:14,582 - 01:22:15,682] The sign of the velocity.
+- [01:22:16,082 - 01:22:17,262] In other words,
+- [01:22:17,662 - 01:22:20,202] in other words,
+- [01:22:20,362 - 01:22:20,522] in other words,
+- [01:22:20,542 - 01:22:21,992] if we were to solve
+- [01:22:21,992 - 01:22:23,442] these equations for X and T,
+- [01:22:24,462 - 01:22:26,762] in terms of X prime and T prime,
+- [01:22:27,122 - 01:22:30,182] the equations should have exactly the same form,
+- [01:22:30,742 - 01:22:33,342] except the sign of the velocity should change.
+- [01:22:33,902 - 01:22:34,942] So let's do that.
+- [01:22:35,042 - 01:22:40,522] Let's solve these equations for X and T,
+- [01:22:40,722 - 01:22:42,422] in terms of X prime and T prime.
+- [01:22:42,502 - 01:22:43,802] This is the inverse relation.
+- [01:22:44,462 - 01:22:46,882] If this is what the moving coordinates are,
+- [01:22:46,922 - 01:22:48,642] in terms of the stationary coordinates,
+- [01:22:49,502 - 01:22:50,362] then if we solve it,
+- [01:22:50,362 - 01:22:52,362] for X and T,
+- [01:22:52,362 - 01:22:54,362] we'll know what the stationary coordinates
+- [01:22:54,362 - 01:22:56,362] are in terms of the moving coordinates.
+- [01:22:56,362 - 01:23:00,362] And the pattern should be essentially exactly the same.
+- [01:23:00,362 - 01:23:03,362] If you see me moving with velocity V,
+- [01:23:03,362 - 01:23:05,362] then I see you moving in
+- [01:23:05,362 - 01:23:07,362] the opposite direction with velocity V,
+- [01:23:07,362 - 01:23:09,862] and the only difference in the relationship
+- [01:23:09,862 - 01:23:12,362] would be the sign of the velocity.
+- [01:23:12,362 - 01:23:15,362] Alright, so I'm going to solve these equations.
+- [01:23:15,362 - 01:23:16,362] Let's see, this is a nuisance.
+- [01:23:16,362 - 01:23:19,362] It's very straightforward, but let's do it anyway.
+- [01:23:20,362 - 01:23:30,362] Ah, no, let's prove something first.
+- [01:23:30,362 - 01:23:32,362] Let's first prove that F and
+- [01:23:32,362 - 01:23:34,362] G have to be the same.
+- [01:23:35,362 - 01:23:37,361] Why do F and G have to be the same?
+- [01:23:38,361 - 01:23:40,861] That is the statement that everybody
+- [01:23:40,861 - 01:23:43,361] agrees about the speed of light.
+- [01:23:44,361 - 01:23:46,861] In other words, if one observer
+- [01:23:46,861 - 01:23:49,361] calls this line X equals T,
+- [01:23:50,362 - 01:23:52,862] the other observer must call
+- [01:23:52,862 - 01:23:55,362] it X prime equals T prime.
+- [01:23:55,362 - 01:23:58,362] If one observer says the speed of light is one,
+- [01:23:58,362 - 01:24:00,362] that means X equals T,
+- [01:24:00,362 - 01:24:02,862] the other observer must also say
+- [01:24:02,862 - 01:24:05,362] that the speed of light is one.
+- [01:24:05,362 - 01:24:08,362] That was Einstein's basic principle that we
+- [01:24:08,362 - 01:24:11,362] all agree about the speed of light.
+- [01:24:12,362 - 01:24:15,362] If a light ray satisfies X equals T,
+- [01:24:15,362 - 01:24:18,362] it must also satisfy X prime equals T prime.
+- [01:24:18,362 - 01:24:21,362] Let's see if we can see what that says.
+- [01:24:21,362 - 01:24:26,362] If X equals T along a light ray,
+- [01:24:26,362 - 01:24:31,362] then X prime here is just equal to
+- [01:24:31,362 - 01:24:36,362] T times 1 minus V over F of V.
+- [01:24:36,362 - 01:24:39,362] I've just used that X is equal to T.
+- [01:24:39,362 - 01:24:43,362] On the other hand, T prime is equal to
+- [01:24:43,362 - 01:24:47,362] T times 1 minus V over G of V.
+- [01:24:48,362 - 01:24:51,362] I've again just used that X is
+- [01:24:51,362 - 01:24:54,362] equal to T along a light ray.
+- [01:24:54,362 - 01:24:56,362] So along the light ray,
+- [01:24:56,362 - 01:24:58,362] X prime is given by this,
+- [01:24:58,362 - 01:25:00,362] T prime is given by this,
+- [01:25:00,362 - 01:25:02,862] but it must also be true
+- [01:25:02,862 - 01:25:05,362] that X prime must equal T prime.
+- [01:25:05,362 - 01:25:07,362] Otherwise, the speed of light would not
+- [01:25:07,362 - 01:25:09,362] be the same in the two frames.
+- [01:25:09,362 - 01:25:13,362] Well, if X prime must be equal to T prime,
+- [01:25:13,362 - 01:25:14,862] it means F and G
+- [01:25:14,862 - 01:25:16,362] have to be the same function.
+- [01:25:16,362 - 01:25:17,362] No change.
+- [01:25:18,362 - 01:25:20,362] No choice about it.
+- [01:25:20,362 - 01:25:23,362] So Einstein's assumption that the speed of
+- [01:25:23,362 - 01:25:26,362] light is the same in all reference frames
+- [01:25:26,362 - 01:25:30,362] required that F and G are the same.
+- [01:25:33,362 - 01:25:36,362] So we've learned a little more.
+- [01:25:38,362 - 01:25:43,362] Again, we've used the idea of simultaneity
+- [01:25:43,362 - 01:25:47,362] as being defined by light rays
+- [01:25:47,362 - 01:25:49,362] coming from the left and the right
+- [01:25:49,362 - 01:25:51,362] and hooking up at the same instant
+- [01:25:51,362 - 01:25:53,362] of time for the observer halfway in between.
+- [01:25:53,362 - 01:25:57,362] That told us what this curve was.
+- [01:25:57,362 - 01:26:00,362] And now we've used the statement that the speed
+- [01:26:00,362 - 01:26:03,362] of light is the same in all reference frames.
+- [01:26:03,362 - 01:26:06,362] In other words, if X equals T along here,
+- [01:26:06,362 - 01:26:09,362] then X prime must equal T prime,
+- [01:26:09,362 - 01:26:10,862] and that tells us that this
+- [01:26:10,862 - 01:26:12,362] function is the same as this function.
+- [01:26:12,362 - 01:26:15,362] Not quite everything we need to know.
+- [01:26:15,362 - 01:26:17,362] We still don't know what F is.
+- [01:26:17,362 - 01:26:20,362] G F of E in the denominator.
+- [01:26:20,362 - 01:26:25,362] F of V in the denominator. Good.
+- [01:26:25,362 - 01:26:28,362] And F is just some unknown function of V
+- [01:26:28,362 - 01:26:30,362] that maybe we'll find some reason
+- [01:26:30,362 - 01:26:32,362] to set equal to something particular.
+- [01:26:32,362 - 01:26:34,362] There must be some rule
+- [01:26:34,362 - 01:26:36,362] which tells us what it is.
+- [01:26:36,362 - 01:26:39,862] Alright, let's now solve for X and T
+- [01:26:39,862 - 01:26:43,362] in terms of X prime and T prime.
+- [01:26:43,362 - 01:26:46,362] Let's just solve these relationships.
+- [01:26:46,362 - 01:26:53,362] Uh, okay, let's just, let's do it.
+- [01:26:53,362 - 01:26:56,362] Let me multiply this by F of V.
+- [01:26:56,362 - 01:26:59,862] F of V times X prime
+- [01:26:59,862 - 01:27:03,362] is equal to X minus V T.
+- [01:27:03,362 - 01:27:07,362] And F of V times T prime
+- [01:27:07,362 - 01:27:11,362] is equal to T minus V X.
+- [01:27:13,362 - 01:27:17,862] Alright, let's see, what's, uh, what
+- [01:27:17,862 - 01:27:22,362] should we do with these two?
+- [01:27:22,362 - 01:27:24,362] I want to solve for X
+- [01:27:24,362 - 01:27:26,362] in terms of the prime variables.
+- [01:27:26,362 - 01:27:27,862] So let's solve for X
+- [01:27:27,862 - 01:27:29,362] in terms of the prime variables.
+- [01:27:29,362 - 01:27:31,862] And the best way to do that
+- [01:27:31,862 - 01:27:34,362] is to divide this equation by V.
+- [01:27:34,362 - 01:27:38,862] Uh, let's see, uh, V, no,
+- [01:27:38,862 - 01:27:43,362] let's multiply this equation by V here.
+- [01:27:43,362 - 01:27:48,362] Why did I do that?
+- [01:27:48,362 - 01:27:50,362] I did that so that if I just
+- [01:27:50,362 - 01:27:52,362] subtract them, I'll get rid of the V T,
+- [01:27:52,362 - 01:27:54,362] and I'll have an equation for X.
+- [01:27:54,362 - 01:27:56,362] Okay, let's see what it says.
+- [01:27:56,362 - 01:28:00,362] Um, just, uh, add them, add them.
+- [01:28:00,362 - 01:28:02,362] So I get X times 1
+- [01:28:02,362 - 01:28:04,362] minus V squared on the right.
+- [01:28:04,362 - 01:28:07,362] The V T's cancel.
+- [01:28:07,362 - 01:28:11,362] And that's equal to, um,
+- [01:28:11,362 - 01:28:12,362] um,
+- [01:28:12,362 - 01:28:19,362] F of V X prime plus
+- [01:28:19,362 - 01:28:26,362] V F of V T prime.
+- [01:28:26,362 - 01:28:30,362] Let's, let me just, uh, write that a little nicer.
+- [01:28:30,362 - 01:28:37,362] F of V times, I think it was just, um,
+- [01:28:37,362 - 01:28:40,362] X prime plus V T.
+- [01:28:40,362 - 01:28:41,362] X prime plus V T.
+- [01:28:41,362 - 01:28:42,362] X prime plus V T.
+- [01:28:42,362 - 01:28:46,362] X prime plus V T prime.
+- [01:28:46,362 - 01:28:54,362] And now divide it by 1 minus V squared.
+- [01:28:54,362 - 01:28:57,362] That's the equation for X.
+- [01:28:57,362 - 01:29:01,362] There's another equation for T, which is very similar.
+- [01:29:01,362 - 01:29:04,362] The equation for T looks very similar.
+- [01:29:04,362 - 01:29:06,862] It looks like F of V
+- [01:29:06,862 - 01:29:09,362] divided by 1 minus V squared
+- [01:29:09,362 - 01:29:11,362] times
+- [01:29:11,362 - 01:29:15,362] T prime plus V X prime.
+- [01:29:15,362 - 01:29:20,362] That's the inverse relationship.
+- [01:29:20,362 - 01:29:22,862] If you go from X to T, X
+- [01:29:22,862 - 01:29:25,362] to X prime through one set of equations,
+- [01:29:25,362 - 01:29:29,362] then the way that you go back is with the,
+- [01:29:29,362 - 01:29:31,362] this set of equations.
+- [01:29:31,362 - 01:29:34,362] Well, you would expect if there is
+- [01:29:34,362 - 01:29:37,362] nice symmetry between the two frames of reference,
+- [01:29:37,362 - 01:29:38,862] that the two sets of equations
+- [01:29:38,862 - 01:29:40,362] should look very parallel to each other.
+- [01:29:40,362 - 01:29:43,362] In fact, X and T should be
+- [01:29:43,362 - 01:29:46,362] related to X prime and T prime
+- [01:29:46,362 - 01:29:48,862] in exactly the same way that X prime
+- [01:29:48,862 - 01:29:51,362] and T prime are related to X and T,
+- [01:29:51,362 - 01:29:53,362] with one exception.
+- [01:29:53,362 - 01:29:55,862] With the exception that the sign
+- [01:29:55,862 - 01:29:58,362] of the velocity should be opposite.
+- [01:29:58,362 - 01:30:01,362] Well, that doesn't look so bad.
+- [01:30:01,362 - 01:30:03,862] Here we have X prime is
+- [01:30:03,862 - 01:30:06,362] X minus V T times something.
+- [01:30:06,362 - 01:30:07,862] Here we have X is equal
+- [01:30:07,862 - 01:30:09,362] to X prime plus V T prime.
+- [01:30:09,362 - 01:30:12,362] Plus V T prime times something.
+- [01:30:12,362 - 01:30:15,362] If the somethings were the same,
+- [01:30:15,362 - 01:30:17,862] if F of V over 1 minus V
+- [01:30:17,862 - 01:30:20,362] squared were the same as 1 over V,
+- [01:30:20,362 - 01:30:23,362] the relationship would be completely reciprocal.
+- [01:30:23,362 - 01:30:26,362] The relationship would be completely reciprocal.
+- [01:30:26,362 - 01:30:28,362] Same here.
+- [01:30:28,362 - 01:30:32,362] The relation between the primed and unprimed variables,
+- [01:30:32,362 - 01:30:34,362] when you invert it,
+- [01:30:34,362 - 01:30:37,362] simply involves changing the sign of the velocity
+- [01:30:37,362 - 01:30:39,362] from T minus V X
+- [01:30:39,362 - 01:30:42,362] to T prime plus V X.
+- [01:30:42,362 - 01:30:45,362] That would be true if
+- [01:30:45,362 - 01:30:49,362] F of V divided by 1 minus V squared
+- [01:30:49,362 - 01:30:56,362] is the same as 1 over F of V.
+- [01:30:56,362 - 01:30:57,862] So far I haven't told
+- [01:30:57,862 - 01:30:59,362] you what F of V is.
+- [01:30:59,362 - 01:31:01,362] Now I'm telling you.
+- [01:31:01,362 - 01:31:04,362] It's the thing which satisfies this equation.
+- [01:31:04,362 - 01:31:06,362] Or another way to write it
+- [01:31:06,362 - 01:31:08,362] is that F of V
+- [01:31:08,362 - 01:31:10,862] is equal to the square
+- [01:31:10,862 - 01:31:13,362] root of 1 minus V squared.
+- [01:31:13,362 - 01:31:16,362] Multiply by F of V on both sides.
+- [01:31:16,362 - 01:31:18,362] That squares this.
+- [01:31:18,362 - 01:31:21,362] Multiply by 1 minus V squared.
+- [01:31:21,362 - 01:31:23,362] 1 minus V squared.
+- [01:31:23,362 - 01:31:25,362] And take the square root.
+- [01:31:29,362 - 01:31:31,362] What was this? What did I do?
+- [01:31:31,362 - 01:31:34,362] What I did was simply to make sure
+- [01:31:34,362 - 01:31:36,362] that the relation between
+- [01:31:36,362 - 01:31:39,362] the primed and the unprimed coordinates
+- [01:31:39,362 - 01:31:41,362] were reciprocal.
+- [01:31:41,362 - 01:31:44,362] That if the unprimed observer
+- [01:31:44,362 - 01:31:47,362] tells the primed observer
+- [01:31:47,362 - 01:31:50,362] that his coordinates are related,
+- [01:31:50,362 - 01:31:53,362] that the coordinates are related in a certain way,
+- [01:31:53,362 - 01:31:55,362] the inverse relationship
+- [01:31:55,362 - 01:31:57,362] should be of exactly the same form,
+- [01:31:57,362 - 01:32:01,362] except with the velocity having the opposite sign.
+- [01:32:01,362 - 01:32:02,862] All that says is if you
+- [01:32:02,862 - 01:32:04,362] see me move with velocity V,
+- [01:32:04,362 - 01:32:07,362] I see you move with velocity minus V.
+- [01:32:10,362 - 01:32:13,362] So now we have the complete set of relationships
+- [01:32:13,362 - 01:32:17,362] between the coordinates of a point of space-time
+- [01:32:17,362 - 01:32:21,362] in one frame and the coordinates in another frame.
+- [01:32:21,362 - 01:32:23,362] And here they are.
+- [01:32:23,362 - 01:32:26,362] X prime is equal to X minus VT
+- [01:32:26,362 - 01:32:29,362] divided by square root of 1 minus V squared.
+- [01:32:29,362 - 01:32:32,362] And T prime is equal to
+- [01:32:32,362 - 01:32:34,362] T minus VX.
+- [01:32:34,362 - 01:32:37,362] Over square root of 1 minus V squared.
+- [01:32:37,362 - 01:32:39,362] We can solve them.
+- [01:32:39,362 - 01:32:41,362] I just did it,
+- [01:32:41,362 - 01:32:43,362] but let me write down what the solution is.
+- [01:32:43,362 - 01:32:45,362] I'm solving it meaning to relate,
+- [01:32:45,362 - 01:32:47,362] to write the equations for T and X
+- [01:32:47,362 - 01:32:49,362] instead of X prime and T prime.
+- [01:32:49,362 - 01:32:51,362] The inverse relations are
+- [01:32:51,362 - 01:32:56,362] X is equal to X prime plus VT prime
+- [01:32:56,362 - 01:33:00,362] divided by square root of 1 minus V squared.
+- [01:33:00,362 - 01:33:02,362] And T is equal to T prime plus VT prime.
+- [01:33:02,362 - 01:33:04,362] And T is equal to T prime plus VT prime.
+- [01:33:04,362 - 01:33:06,362] And T is equal to T prime plus VT prime.
+- [01:33:06,362 - 01:33:07,362] And T is equal to
+- [01:33:07,362 - 01:33:08,362] T prime plus V X prime
+- [01:33:08,362 - 01:33:11,362] over square root of 1 minus V squared.
+- [01:33:11,362 - 01:33:13,362] Why does 1 have a plus V
+- [01:33:13,362 - 01:33:15,362] and the other have a minus V?
+- [01:33:15,362 - 01:33:17,362] For exactly the reasons that I said.
+- [01:33:17,362 - 01:33:20,362] One velocity is the opposite of the other.
+- [01:33:20,362 - 01:33:22,362] You see me with one velocity,
+- [01:33:22,362 - 01:33:25,362] I see you with the other velocity.
+- [01:33:26,362 - 01:33:28,362] These are the relationships
+- [01:33:28,362 - 01:33:32,362] between the coordinates of two reference frames
+- [01:33:32,362 - 01:33:36,802] to ensure that everybody see the same velocity of light
+- [01:33:36,802 - 01:33:41,382] that light has the same velocity to everybody
+- [01:33:41,382 - 01:33:43,352] and that the relationships
+- [01:33:43,352 - 01:33:45,322] between coordinates are reciprocal
+- [01:33:45,322 - 01:33:47,462] you know what I mean by reciprocal?
+- [01:33:47,462 - 01:33:49,872] that they have the same form no matter which
+- [01:33:49,872 - 01:33:52,282] way you go from one side to the other
+- [01:33:52,282 - 01:33:53,482] and they're quite unique
+- [01:33:53,482 - 01:33:55,242] that's uh...
+- [01:33:55,242 - 01:33:57,142] that's it and the new
+- [01:33:57,142 - 01:33:59,042] thing here the new bizarre thing
+- [01:33:59,042 - 01:34:02,362] is that time is not just time
+- [01:34:02,362 - 01:34:04,982] that what's synchronous in one frame of
+- [01:34:04,982 - 01:34:07,602] reference in other words t equals a constant
+- [01:34:07,602 - 01:34:11,482] is not the same as t prime equals a constant
+- [01:34:11,482 - 01:34:14,412] that's the new thing that synchronicity is
+- [01:34:14,412 - 01:34:17,342] not the same in both reference frames
+- [01:34:17,342 - 01:34:20,092] now I've left out the speed of light by
+- [01:34:20,092 - 01:34:22,842] now I should put back the speed of light
+- [01:34:22,842 - 01:34:25,122] c not equal to one
+- [01:34:25,122 - 01:34:29,922] and all we have to do then is to um...
+- [01:34:29,922 - 01:34:30,782] put c in
+- [01:34:30,782 - 01:34:32,362] to make the equations have dimensionality
+- [01:34:32,362 - 01:34:34,302] and dimensional consistency
+- [01:34:34,302 - 01:34:37,362] x and vt have the same dimensions
+- [01:34:37,362 - 01:34:38,922] and in fact they have
+- [01:34:38,922 - 01:34:40,482] the same dimensions as x prime
+- [01:34:40,482 - 01:34:41,722] x prime
+- [01:34:41,722 - 01:34:46,222] x and vt all have the same dimensions
+- [01:34:46,222 - 01:34:48,762] well the only thing that's out of kilter here
+- [01:34:48,762 - 01:34:50,642] is that velocity does not
+- [01:34:50,642 - 01:34:52,522] have the same dimensions as one
+- [01:34:52,522 - 01:34:54,642] you cannot subtract the thing with one set
+- [01:34:54,642 - 01:34:56,762] of dimensions from a thing with another set of
+- [01:34:56,762 - 01:34:57,802] dimensions
+- [01:34:57,802 - 01:35:01,162] one has no dimensions it's dimensionless
+- [01:35:01,162 - 01:35:02,362] velocity is length over time
+- [01:35:02,362 - 01:35:05,772] all we have to do to fix
+- [01:35:05,772 - 01:35:09,182] this is divide v squared by c squared
+- [01:35:09,182 - 01:35:18,182] one minus v squared over c squared
+- [01:35:19,722 - 01:35:21,882] if c is set equal to one
+- [01:35:21,882 - 01:35:23,862] then it just reproduces the original answer
+- [01:35:23,862 - 01:35:26,602] if c is not equal to one it's dimensionally consistent
+- [01:35:26,602 - 01:35:28,842] what about this equation here though
+- [01:35:28,842 - 01:35:31,402] this one is a little bit tougher
+- [01:35:31,402 - 01:35:32,122] ah...
+- [01:35:32,122 - 01:35:34,802] T and Vx do not have the same units.
+- [01:35:35,482 - 01:35:38,072] T prime and T have the same units,
+- [01:35:38,072 - 01:35:40,662] but Vx does not have the units of time.
+- [01:35:41,122 - 01:35:43,972] We have to divide this by the square of the speed
+- [01:35:43,972 - 01:35:46,822] of light, c squared, and again put c squared down here.
+- [01:35:48,202 - 01:35:51,522] So it's T minus V over c squared x,
+- [01:35:52,842 - 01:35:56,702] divided by square root of 1
+- [01:35:56,702 - 01:36:00,562] minus V squared over c squared.
+- [01:36:02,122 - 01:36:03,462] Now it's interesting to look at it.
+- [01:36:04,022 - 01:36:06,722] What happens when the speed of light gets huge?
+- [01:36:07,682 - 01:36:10,922] The speed of light in ordinary units is huge.
+- [01:36:11,362 - 01:36:15,302] That means that this is negligible in the usual situations.
+- [01:36:16,082 - 01:36:18,822] Usual situations where the speed of light is 10 to the
+- [01:36:18,822 - 01:36:21,562] 8th, or 3 times 10 to the 8th meters per second,
+- [01:36:22,222 - 01:36:25,192] the square of the speed of light is
+- [01:36:25,192 - 01:36:28,162] 3 times 3 is 9, 10 to the 17th.
+- [01:36:28,402 - 01:36:30,682] This is a huge number in the denominator.
+- [01:36:30,682 - 01:36:35,082] So for almost all circumstances, this is negligible.
+- [01:36:37,382 - 01:36:42,142] Also, V squared over c squared is also negligible.
+- [01:36:42,742 - 01:36:44,812] The velocity of an ordinary object is
+- [01:36:44,812 - 01:36:46,882] very much smaller than the speed of light.
+- [01:36:48,402 - 01:36:50,952] So this practically reads T prime
+- [01:36:50,952 - 01:36:53,502] is equal to T, Galileo's equation.
+- [01:36:54,302 - 01:36:56,652] It only begins to fail when the
+- [01:36:56,652 - 01:36:59,002] velocity gets up near the speed of light.
+- [01:36:59,082 - 01:36:59,872] So only when the speed of
+- [01:36:59,872 - 01:37:00,662] light is near the speed of light,
+- [01:37:00,682 - 01:37:02,332] the relative velocities of the observers
+- [01:37:02,332 - 01:37:03,982] are near the speed of light,
+- [01:37:04,442 - 01:37:06,492] does this differ appreciably from
+- [01:37:06,492 - 01:37:08,542] Galileo's T prime equals T.
+- [01:37:09,302 - 01:37:10,482] Same thing here.
+- [01:37:11,122 - 01:37:13,092] When the velocity is much smaller
+- [01:37:13,092 - 01:37:15,062] than c, you can ignore this.
+- [01:37:15,542 - 01:37:17,202] And it's just good old x
+- [01:37:17,202 - 01:37:18,862] prime is equal to x minus VT.
+- [01:37:19,722 - 01:37:22,562] It's only when velocities are near the speed of light
+- [01:37:22,562 - 01:37:27,462] that the corrections from relativity become important.
+- [01:37:30,662 - 01:37:33,882] But they're especially important for light, which
+- [01:37:33,882 - 01:37:37,102] does move with the speed of light.
+- [01:37:38,842 - 01:37:41,102] Yeah, let's see if we can see from these equations,
+- [01:37:42,202 - 01:37:43,282] just directly,
+- [01:37:44,662 - 01:37:47,462] that a light ray moves with
+- [01:37:47,462 - 01:37:50,262] the same velocity in either reference frame.
+- [01:37:51,042 - 01:37:52,122] Well, we already did it,
+- [01:37:52,122 - 01:37:53,202] but let's just do it again.
+- [01:37:57,642 - 01:37:58,922] Yeah, let's do it again.
+- [01:37:58,922 - 01:37:59,262] Yeah.
+- [01:38:00,662 - 01:38:05,052] If x is equal to T, a light
+- [01:38:05,052 - 01:38:09,442] ray, a light ray satisfies x equals T.
+- [01:38:10,322 - 01:38:14,622] If x equals T, this just
+- [01:38:14,622 - 01:38:18,922] becomes 1 minus V times T
+- [01:38:18,922 - 01:38:21,312] divided by square root of 1
+- [01:38:21,312 - 01:38:23,702] minus V squared over c squared.
+- [01:38:24,282 - 01:38:25,502] That's x prime.
+- [01:38:27,322 - 01:38:28,842] What about T prime?
+- [01:38:28,842 - 01:38:30,222] T prime.
+- [01:38:30,662 - 01:38:35,502] Again, x is equal to T.
+- [01:38:36,022 - 01:38:38,952] T prime is T minus,
+- [01:38:38,952 - 01:38:41,882] I think I'm making a mistake.
+- [01:38:42,642 - 01:38:44,822] I can't both have x equal T and
+- [01:38:44,822 - 01:38:47,002] have the speed of light not equal to 1.
+- [01:38:47,542 - 01:38:49,542] I think I want x equals cT here.
+- [01:38:50,642 - 01:38:52,362] Yeah, x equals cT.
+- [01:38:52,362 - 01:38:53,842] So this is c minus V.
+- [01:38:56,622 - 01:38:58,632] c minus VT over the square root
+- [01:38:58,632 - 01:39:00,642] of 1 minus V squared over c.
+- [01:39:00,662 - 01:39:01,162] c squared.
+- [01:39:02,042 - 01:39:03,542] And this is T prime.
+- [01:39:06,842 - 01:39:10,672] T prime is equal to T minus V
+- [01:39:10,672 - 01:39:14,502] over c squared times x, which is cT.
+- [01:39:14,722 - 01:39:19,222] So that's cT divided by square root,
+- [01:39:20,062 - 01:39:23,912] which is equal to T times 1
+- [01:39:23,912 - 01:39:27,762] minus V over c divided by square root.
+- [01:39:27,762 - 01:39:30,222] All right, so x prime.
+- [01:39:30,662 - 01:39:31,522] Is this.
+- [01:39:32,282 - 01:39:33,562] T prime is this.
+- [01:39:34,082 - 01:39:36,082] What is x prime over T prime?
+- [01:39:37,502 - 01:39:38,802] Oh God, I hope it works out.
+- [01:39:44,282 - 01:39:45,442] No, it should be c.
+- [01:39:46,042 - 01:39:46,842] It should be c.
+- [01:39:47,382 - 01:39:49,382] Let's multiply and divide by c here.
+- [01:39:50,962 - 01:39:52,602] c minus V over c.
+- [01:39:53,182 - 01:39:54,482] Okay, yeah, it is.
+- [01:39:54,802 - 01:39:56,302] c minus V times T over
+- [01:39:56,302 - 01:39:57,802] square root of 1 minus V squared.
+- [01:39:58,782 - 01:40:00,602] But we have an extra factor of c.
+- [01:40:00,662 - 01:40:02,162] It's going to be downstairs.
+- [01:40:02,162 - 01:40:07,142] So c prime or x prime is equal
+- [01:40:07,142 - 01:40:12,122] to cT prime whenever x is equal to cT.
+- [01:40:14,182 - 01:40:14,682] Magic.
+- [01:40:15,502 - 01:40:18,052] The speed of light is the same
+- [01:40:18,052 - 01:40:20,602] in all reference frames with this transformation.
+- [01:40:21,842 - 01:40:22,342] Um.
+- [01:40:25,182 - 01:40:30,442] The end product here is the important thing.
+- [01:40:30,662 - 01:40:31,662] You can now test this out.
+- [01:40:31,662 - 01:40:32,662] Oh, what about, okay.
+- [01:40:32,662 - 01:40:33,162] If x equals cT, we've just proved
+- [01:40:33,162 - 01:40:33,662] that x prime is equal to cT prime.
+- [01:40:33,662 - 01:40:34,162] A little exercise is to show
+- [01:40:34,162 - 01:40:34,662] that if x equals minus cT,
+- [01:40:34,662 - 01:40:35,662] that's going to be minus cT.
+- [01:40:35,662 - 01:40:43,841] So I'm going to use a little bit of a
+- [01:40:43,841 - 01:40:47,262] little bit of a
+- [01:40:47,262 - 01:40:50,122] little bit of a
+- [01:40:50,122 - 01:40:53,042] little bit of a
+- [01:40:53,042 - 01:40:55,162] little bit of a
+- [01:40:55,162 - 01:40:56,182] little bit of a
+- [01:40:56,182 - 01:40:57,282] little bit of a
+- [01:40:57,282 - 01:40:58,282] little bit of a
+- [01:40:58,282 - 01:40:59,282] little bit of a
+- [01:40:59,481 - 01:41:01,521] little bit of a little decrease here,
+- [01:41:01,521 - 01:41:03,782] it's a less than b,
+- [01:41:03,782 - 01:41:05,282] this is C prime.
+- [01:41:05,282 - 01:41:07,341] The best recent added to the다una Difference Project
+- [01:41:07,341 - 01:41:07,931] into what gives us minus it alive C polize
+- [01:41:07,931 - 01:41:08,521] that x prime is equal to minus cT prime.
+- [01:41:08,521 - 01:41:09,542] If z equals minus cT,
+- [01:41:09,542 - 01:41:11,011] that's a light ray going in the other direction
+- [01:41:11,011 - 01:41:12,481] that x prime is equal to minus cT prime.
+- [01:41:12,481 - 01:41:13,682] That's something else you can check from this.
+- [01:41:13,682 - 01:41:15,622] It's also true.
+- [01:41:15,622 - 01:41:17,981] So that means a light ray going in either direction,
+- [01:41:17,981 - 01:41:19,481] we'll move with the speed of
+- [01:41:19,481 - 01:41:20,981] light in either of the two frames.
+- [01:41:21,381 - 01:41:21,941] Okay.
+- [01:41:24,182 - 01:41:26,302] What's special about these transformations,
+- [01:41:26,901 - 01:41:27,901] namely,
+- [01:41:28,021 - 01:41:28,882] that light moves.
+- [01:41:28,882 - 01:41:31,251] moves with the same velocity in
+- [01:41:31,251 - 01:41:33,621] either frame and the relationship between the
+- [01:41:33,621 - 01:41:36,081] two sets of coordinates is reciprocal
+- [01:41:36,081 - 01:41:38,541] has exactly the same form except with
+- [01:41:38,541 - 01:41:40,801] the velocity having changed sign that's
+- [01:41:40,801 - 01:41:43,061] what's special about them and these of
+- [01:41:43,061 - 01:41:44,881] course are the Lorentz transformations these
+- [01:41:44,881 - 01:41:46,702] were not the way that Lorentz
+- [01:41:46,702 - 01:41:51,262] derived them in fact I don't even
+- [01:41:51,262 - 01:41:55,822] know that Lorentz did derive them so that's
+- [01:41:55,822 - 01:41:57,921] special relativity or at least the
+- [01:41:57,921 - 01:42:00,021] portion of special relativity that has
+- [01:42:00,021 - 01:42:04,791] to do with the XT coordinates I
+- [01:42:04,791 - 01:42:09,561] think we're about finished now what I was
+- [01:42:09,561 - 01:42:11,781] going to do which we will do next
+- [01:42:11,781 - 01:42:14,001] time is to derive the contraction of lengths
+- [01:42:14,001 - 01:42:17,451] the dilation of time and
+- [01:42:17,451 - 01:42:20,902] some various special relativity effects
+- [01:42:20,902 - 01:42:25,041] dilation of time being the most interesting one
+- [01:42:25,041 - 01:42:25,802] and then we'll go on to the next slide
+- [01:42:25,822 - 01:42:27,651] and then move on to more
+- [01:42:27,651 - 01:42:29,481] about the kinematics of special relativity what
+- [01:42:29,481 - 01:42:34,011] proper time is what momentum is what
+- [01:42:34,011 - 01:42:38,541] energy is and so forth any questions
+- [01:42:38,541 - 01:42:42,941] thus far about what we've done up to now
+- [01:42:42,941 - 01:42:48,941] 6 o'clock yeah any questions about the physics though
+- [01:42:48,941 - 01:42:52,941] yeah
+- [01:42:55,822 - 01:42:59,981] the Oprahörung all
+- [01:42:59,981 - 01:43:06,981] yeah
+- [01:43:08,202 - 01:43:11,202] with house
+- [01:43:15,342 - 01:43:24,242] they can go
+- [01:43:24,242 - 01:43:25,142] Fast dishes
+- [01:43:25,142 - 01:43:27,422] guy over here let's talk about somebody
+- [01:43:27,422 - 01:43:29,702] else who happens to pass through this
+- [01:43:29,702 - 01:43:32,642] point over here he's moving but he sees
+- [01:43:32,642 - 01:43:35,582] the two flashes of light at the same
+- [01:43:35,582 - 01:43:38,252] instant of time right that's what
+- [01:43:38,252 - 01:43:40,922] you're talking about but he's not midway
+- [01:43:40,922 - 01:43:44,652] between the two observers he doesn't
+- [01:43:44,652 - 01:43:48,382] satisfy the criterion that he's midway
+- [01:43:48,382 - 01:43:54,171] between the two observers yeah right right
+- [01:43:54,171 - 01:43:59,961] so there's no reason for him over
+- [01:43:59,961 - 01:44:02,361] here to say these two flashes were at
+- [01:44:02,361 - 01:44:04,762] the same instant he sees the light get
+- [01:44:04,762 - 01:44:07,712] to him at the same instant but he's
+- [01:44:07,712 - 01:44:10,662] not midway between them so he again he will
+- [01:44:10,662 - 01:44:12,942] not call this point simultaneously this
+- [01:44:12,942 - 01:44:15,222] is the point which is midway between
+- [01:44:15,222 - 01:44:18,262] them and this is the test point for deciding
+- [01:44:18,262 - 01:44:18,362] something
+- [01:44:18,382 - 01:44:22,892] simultaneity from the moving frame
+- [01:44:22,892 - 01:44:27,402] right right right right because after
+- [01:44:27,402 - 01:44:31,292] all this one is further away from him
+- [01:44:31,292 - 01:44:35,182] than that one right good this is a nice
+- [01:44:35,182 - 01:44:37,601] this is a nice construction to go through
+- [01:44:37,601 - 01:44:40,021] it's not very hard all you do is
+- [01:44:40,021 - 01:44:42,811] you take X equals T which is the
+- [01:44:42,811 - 01:44:45,601] light ray you say it passes through the point
+- [01:44:45,601 - 01:44:48,262] X equals V T plus L
+- [01:44:48,262 - 01:44:48,312] and you add the light ray and you add
+- [01:44:48,312 - 01:44:48,362] the light ray and you add the light ray
+- [01:44:48,362 - 01:44:48,372] and you add the light ray and you add
+- [01:44:48,372 - 01:44:48,382] the light ray and you add the light ray
+- [01:44:48,382 - 01:44:50,911] and then work your way backward with
+- [01:44:50,911 - 01:44:53,441] a backward light moving like a backward
+- [01:44:53,441 - 01:44:56,031] light ray until it hits the point X equals
+- [01:44:56,031 - 01:44:58,621] V T plus 2 L and that tells you
+- [01:44:58,621 - 01:45:01,391] exactly where this point is it tells
+- [01:45:01,391 - 01:45:04,162] you what counts as simultaneous in the
+- [01:45:04,162 - 01:45:06,801] moving reference frame that's the key or
+- [01:45:06,801 - 01:45:09,441] at least that's half the key that's half
+- [01:45:09,441 - 01:45:12,531] the key to the Lorentz transformation the
+- [01:45:12,531 - 01:45:15,621] other half is the statement that the
+- [01:45:15,621 - 01:45:16,941] relationships between the two frames should
+- [01:45:16,941 - 01:45:18,262] be simultaneous so this is a nice
+- [01:45:18,262 - 01:45:22,922] and interesting picture and at this moment you can see
+- [01:45:22,922 - 01:45:26,902] just a little something there
+- [01:45:27,602 - 01:45:31,362] ok so I saw the average winter
+- [01:45:31,362 - 01:45:34,582] it was not
+- [01:45:37,682 - 01:45:39,922] x
+- [01:45:41,042 - 01:45:44,142] and
+- [01:45:47,642 - 01:45:48,142] we'll
+- [01:45:48,142 - 01:45:48,242] move on to the next appreciated formula
+- [01:45:48,242 - 01:45:53,382] The preceding program is copyrighted by Stanford University.
+- [01:45:53,882 - 01:45:56,382] Please visit us at stanford.edu.
