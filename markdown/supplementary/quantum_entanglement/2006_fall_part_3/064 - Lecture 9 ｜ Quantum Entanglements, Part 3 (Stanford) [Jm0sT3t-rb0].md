@@ -1,0 +1,2969 @@
+# Transcript
+
+Source: supplementary/quantum_entanglement/2006_fall_part_3/064 - Lecture 9 ｜ Quantum Entanglements, Part 3 (Stanford) [Jm0sT3t-rb0].mp4
+
+- [00:00:00,000 - 00:00:10,520] This program is brought to you by Stanford University.
+- [00:00:10,520 - 00:00:13,240] Please visit us at stanford.edu.
+- [00:00:15,680 - 00:00:22,280] The basic kinematics, the kinematics of the Hubble law,
+- [00:00:22,280 - 00:00:26,320] kinematics of the expanding universe,
+- [00:00:26,320 - 00:00:36,380] made one assumption which is motivated mostly by observation
+- [00:00:36,380 - 00:00:41,240] that the universe is spatially flat.
+- [00:00:41,240 - 00:00:44,120] Spatially flat means that space
+- [00:00:44,120 - 00:00:47,000] at a given instant of time
+- [00:00:47,000 - 00:00:50,820] is just ordinary Euclidean three-dimensional space.
+- [00:00:54,640 - 00:00:56,320] But the space-time ratio is not the same.
+- [00:00:56,320 - 00:01:01,840] Time itself is not ordinary Euclidean...
+- [00:01:01,840 - 00:01:04,050] I shouldn't say Euclidean,
+- [00:01:04,050 - 00:01:06,260] it's not ordinary Minkowski space.
+- [00:01:06,260 - 00:01:09,280] Minkowski space, let's just compare the two.
+- [00:01:09,280 - 00:01:11,670] Minkowski space, just to remind you,
+- [00:01:11,670 - 00:01:14,060] is the space of special relativity,
+- [00:01:14,060 - 00:01:16,280] space-time of special relativity.
+- [00:01:16,280 - 00:01:23,560] And it has a metric or a proper time element
+- [00:01:23,560 - 00:01:24,100] that's given by the sum
+- [00:01:24,100 - 00:01:24,640] of four and three-dimensions of time,
+- [00:01:24,640 - 00:01:25,430] which is a very important
+- [00:01:25,430 - 00:01:26,220] element in the world of space-time.
+- [00:01:26,220 - 00:01:26,260] It's a very important element in the world of space-time.
+- [00:01:26,260 - 00:01:26,300] So that's what we're talking about here.
+- [00:01:26,300 - 00:01:28,300] terms or the difference of four terms
+- [00:01:28,300 - 00:01:30,300] dt squared
+- [00:01:30,300 - 00:01:32,300] minus dx squared
+- [00:01:32,300 - 00:01:34,300] and I'm going to put this in a bracket
+- [00:01:34,300 - 00:01:36,300] minus dx squared plus dy squared
+- [00:01:36,300 - 00:01:38,300] plus dz squared
+- [00:01:40,300 - 00:01:42,300] Now this is the
+- [00:01:42,300 - 00:01:44,300] term in the bracket
+- [00:01:44,300 - 00:01:46,300] is a dead giveaway of course that space
+- [00:01:46,300 - 00:01:48,300] is flat, it's just good old
+- [00:01:48,300 - 00:01:50,300] Cartesian ordinary
+- [00:01:52,300 - 00:01:54,300] Euclidean space
+- [00:01:54,300 - 00:01:56,300] where the size
+- [00:01:56,300 - 00:01:58,300] of a line element dxdydz
+- [00:01:58,300 - 00:02:00,300] is just given by
+- [00:02:00,300 - 00:02:02,300] Pythagoras' formula
+- [00:02:02,300 - 00:02:04,300] three dimensional Pythagoras' formula
+- [00:02:04,300 - 00:02:06,300] the new element
+- [00:02:06,300 - 00:02:08,300] in
+- [00:02:08,300 - 00:02:10,300] cosmology
+- [00:02:10,300 - 00:02:12,300] and now when I say the new element in cosmology
+- [00:02:12,300 - 00:02:14,300] first of all I should say
+- [00:02:14,300 - 00:02:16,300] the new element in the general theory of relativity
+- [00:02:16,300 - 00:02:18,300] is that the coefficients
+- [00:02:18,300 - 00:02:20,300] here
+- [00:02:20,300 - 00:02:22,300] which are
+- [00:02:22,300 - 00:02:24,300] simply in this case one
+- [00:02:24,300 - 00:02:26,300] minus one minus one minus one
+- [00:02:26,300 - 00:02:28,300] first of all there are more of them
+- [00:02:28,300 - 00:02:30,300] there can be things like dxdy
+- [00:02:30,300 - 00:02:32,300] and dydt and so forth
+- [00:02:32,300 - 00:02:34,300] but the coefficients
+- [00:02:34,300 - 00:02:36,300] can depend on position
+- [00:02:36,300 - 00:02:38,300] in space time
+- [00:02:38,300 - 00:02:40,300] that means that the coefficients
+- [00:02:40,300 - 00:02:42,300] are fields
+- [00:02:42,300 - 00:02:44,300] and basically they are
+- [00:02:44,300 - 00:02:46,300] the generalization of Newton's
+- [00:02:46,300 - 00:02:48,300] gravity
+- [00:02:48,300 - 00:02:50,300] well Newton didn't think in terms of fields
+- [00:02:50,300 - 00:02:52,300] but we can think in terms of fields
+- [00:02:52,300 - 00:02:54,300] that the generalization of
+- [00:02:54,300 - 00:02:56,300] Newtonian fields of gravity
+- [00:02:56,300 - 00:02:58,300] the coefficient functions
+- [00:02:58,300 - 00:03:00,300] which go there
+- [00:03:00,300 - 00:03:02,300] now
+- [00:03:02,300 - 00:03:04,300] observationally
+- [00:03:04,300 - 00:03:06,300] cosmology
+- [00:03:06,300 - 00:03:08,300] appears
+- [00:03:08,300 - 00:03:10,300] the universe that we can see
+- [00:03:10,300 - 00:03:12,300] through telescopes
+- [00:03:12,300 - 00:03:14,300] appears to be on the whole
+- [00:03:16,300 - 00:03:18,300] I'll call it featureless
+- [00:03:18,300 - 00:03:20,300] of course it has features
+- [00:03:20,300 - 00:03:22,300] the features of galaxies, planets, stars
+- [00:03:22,300 - 00:03:24,300] clusters, superclusters
+- [00:03:24,300 - 00:03:26,300] but that's all small potatoes
+- [00:03:26,300 - 00:03:28,300] that's all small stuff
+- [00:03:28,300 - 00:03:30,300] on the scale of billions
+- [00:03:30,300 - 00:03:32,300] of light years
+- [00:03:32,300 - 00:03:34,300] certainly on the scale of billions
+- [00:03:34,300 - 00:03:36,300] of light years
+- [00:03:36,300 - 00:03:38,300] on the scale of several hundred
+- [00:03:38,300 - 00:03:40,300] million light years
+- [00:03:40,300 - 00:03:42,300] the universe is very featureless
+- [00:03:42,300 - 00:03:44,300] just
+- [00:03:44,300 - 00:03:46,300] the same everywhere
+- [00:03:46,300 - 00:03:48,300] homogeneous is the word
+- [00:03:48,300 - 00:03:50,300] homogeneous
+- [00:03:50,300 - 00:03:52,300] it's isotropic
+- [00:03:52,300 - 00:03:54,300] it means it looks the same in every direction
+- [00:03:54,300 - 00:03:56,300] on such a large scale
+- [00:03:56,300 - 00:03:58,300] and
+- [00:03:58,300 - 00:04:00,300] this is
+- [00:04:00,300 - 00:04:02,300] somewhat of a
+- [00:04:02,300 - 00:04:04,300] slightly larger surprise
+- [00:04:04,300 - 00:04:06,300] to cosmologists
+- [00:04:06,300 - 00:04:08,300] incidentally the isotropy
+- [00:04:08,300 - 00:04:10,300] and the homogeneity
+- [00:04:10,300 - 00:04:12,300] has been with us
+- [00:04:12,300 - 00:04:14,300] since the very beginning
+- [00:04:14,300 - 00:04:16,300] of cosmology
+- [00:04:16,300 - 00:04:18,300] the very beginning of cosmology
+- [00:04:18,300 - 00:04:20,300] meaning post-Hubble cosmology
+- [00:04:20,300 - 00:04:22,300] from 1910
+- [00:04:22,300 - 00:04:24,300] to 1912
+- [00:04:24,300 - 00:04:26,300] 1930s or 1940s
+- [00:04:26,300 - 00:04:28,300] or whenever
+- [00:04:28,300 - 00:04:30,300] cosmology
+- [00:04:30,300 - 00:04:32,300] modern cosmology started
+- [00:04:32,300 - 00:04:34,300] it was always assumed
+- [00:04:34,300 - 00:04:36,300] that space was homogeneous
+- [00:04:36,300 - 00:04:38,300] not space-time
+- [00:04:38,300 - 00:04:40,300] but space is homogeneous
+- [00:04:40,300 - 00:04:42,300] and isotropic
+- [00:04:42,300 - 00:04:44,300] and that was given a name
+- [00:04:44,300 - 00:04:46,300] it was called the cosmological principle
+- [00:04:46,300 - 00:04:48,300] and once it's a principle
+- [00:04:48,300 - 00:04:50,300] it has to be right
+- [00:04:50,300 - 00:04:52,300] and so therefore
+- [00:04:52,300 - 00:04:54,300] it's not only a principle
+- [00:04:54,300 - 00:04:56,300] we proved it
+- [00:04:56,300 - 00:04:58,300] we proved it by calling it a principle
+- [00:04:58,300 - 00:05:00,300] of course it's
+- [00:05:00,300 - 00:05:04,300] of course it's never been mathematically proved
+- [00:05:04,300 - 00:05:06,300] or never argued
+- [00:05:06,300 - 00:05:08,300] from any basic theoretical
+- [00:05:08,300 - 00:05:10,300] underlying principle
+- [00:05:10,300 - 00:05:12,300] there is none
+- [00:05:12,300 - 00:05:14,300] but remarkably
+- [00:05:14,300 - 00:05:16,300] the more that we look out into space
+- [00:05:16,300 - 00:05:18,300] the more we see that the principle
+- [00:05:18,300 - 00:05:20,300] looks to be very very accurate
+- [00:05:20,300 - 00:05:22,300] on the large enough scales
+- [00:05:22,300 - 00:05:24,300] so
+- [00:05:24,300 - 00:05:26,300] we can see that
+- [00:05:26,300 - 00:05:28,300] there is a very large
+- [00:05:28,300 - 00:05:30,300] homogeneity
+- [00:05:30,300 - 00:05:32,300] and one additional fact
+- [00:05:32,300 - 00:05:34,300] space looks flat
+- [00:05:34,300 - 00:05:36,300] space looks flat
+- [00:05:36,300 - 00:05:38,300] which means
+- [00:05:38,300 - 00:05:40,300] that we were not so far off
+- [00:05:40,300 - 00:05:42,300] by writing the x squared plus the y squared
+- [00:05:42,300 - 00:05:44,300] plus the z squared
+- [00:05:44,300 - 00:05:46,300] but while it looks flat
+- [00:05:46,300 - 00:05:48,300] it also is expanding
+- [00:05:48,300 - 00:05:50,300] so the picture you should have
+- [00:05:50,300 - 00:05:52,300] roughly in the back of your head
+- [00:05:52,300 - 00:05:54,300] is a
+- [00:05:54,300 - 00:05:56,300] and the flat sheet of rubber
+- [00:05:56,300 - 00:05:58,300] is being stretched at a certain rate
+- [00:05:58,300 - 00:06:00,300] but it's
+- [00:06:00,300 - 00:06:02,300] infinite, it's flat
+- [00:06:02,300 - 00:06:03,300] now of course we don't
+- [00:06:03,300 - 00:06:04,300] know the universe is really infinite
+- [00:06:04,300 - 00:06:06,300] how well do we know
+- [00:06:06,300 - 00:06:08,300] that the universe is either infinite
+- [00:06:08,300 - 00:06:10,300] or flat, if it's perfectly flat
+- [00:06:10,300 - 00:06:12,300] of course it's got to be infinite
+- [00:06:12,300 - 00:06:14,300] if it goes on and on forever
+- [00:06:14,300 - 00:06:16,300] if it's perfectly flat
+- [00:06:16,300 - 00:06:18,300] unless there's some sort of walls out there
+- [00:06:18,300 - 00:06:20,300] nobody thinks there's walls out there
+- [00:06:20,300 - 00:06:22,300] it will go on and on forever and ever
+- [00:06:24,300 - 00:06:26,300] so a flat universe
+- [00:06:26,300 - 00:06:28,300] is also likely to be
+- [00:06:28,300 - 00:06:30,300] an infinite universe
+- [00:06:30,300 - 00:06:32,300] but of course we don't really know
+- [00:06:32,300 - 00:06:34,300] that the universe is either infinite
+- [00:06:34,300 - 00:06:36,300] or perfectly flat
+- [00:06:36,300 - 00:06:38,300] we know it to the same degree
+- [00:06:38,300 - 00:06:40,300] that if we go out
+- [00:06:40,300 - 00:06:42,300] in the backyard or out in the football field
+- [00:06:42,300 - 00:06:44,300] and measure
+- [00:06:44,300 - 00:06:46,300] survey the geometry of the
+- [00:06:46,300 - 00:06:48,300] football field
+- [00:06:48,300 - 00:06:50,300] we could drive stakes into the football field
+- [00:06:50,300 - 00:06:52,300] stretch
+- [00:06:52,300 - 00:06:54,300] the
+- [00:06:54,300 - 00:06:56,300] strings between the stakes
+- [00:06:56,300 - 00:06:58,300] by stretching the strings
+- [00:06:58,300 - 00:07:00,300] between the stakes as tightly
+- [00:07:00,300 - 00:07:02,300] as possible we construct
+- [00:07:02,300 - 00:07:04,300] straight lines
+- [00:07:04,300 - 00:07:06,300] we can put several stakes in
+- [00:07:06,300 - 00:07:08,300] and create triangles and measure
+- [00:07:08,300 - 00:07:10,300] the angles of the triangles
+- [00:07:10,300 - 00:07:12,300] and what we find of course to a very high
+- [00:07:12,300 - 00:07:14,300] precision is that triangles
+- [00:07:14,300 - 00:07:16,300] behave just like triangles in flat space
+- [00:07:16,300 - 00:07:18,300] namely the sum of the angles
+- [00:07:18,300 - 00:07:20,300] adds up to 180 degrees
+- [00:07:20,300 - 00:07:22,300] what do we learn from that
+- [00:07:22,300 - 00:07:24,300] we learn that if the earth is curved
+- [00:07:24,300 - 00:07:26,300] the curvature is small
+- [00:07:28,300 - 00:07:30,300] which is another way of saying
+- [00:07:30,300 - 00:07:32,300] that if the earth is a finite
+- [00:07:32,300 - 00:07:34,300] sphere it's a big sphere
+- [00:07:34,300 - 00:07:36,300] much much bigger than the field
+- [00:07:36,300 - 00:07:38,300] not the
+- [00:07:38,300 - 00:07:39,300] when I use the word field
+- [00:07:39,300 - 00:07:40,300] now I'm not talking about gravitational
+- [00:07:40,300 - 00:07:42,300] field I'm talking about the field
+- [00:07:42,300 - 00:07:44,300] that we surveyed
+- [00:07:44,300 - 00:07:46,300] it's precisely
+- [00:07:46,300 - 00:07:48,300] the same in cosmology
+- [00:07:48,300 - 00:07:50,300] astronomers do a
+- [00:07:50,300 - 00:07:52,300] kind of cosmic surveying
+- [00:07:52,300 - 00:07:54,300] measuring triangles
+- [00:07:54,300 - 00:07:56,300] a thing in the sky over there
+- [00:07:56,300 - 00:07:58,300] a thing in the sky over there
+- [00:07:58,300 - 00:08:00,300] that gives you an angle
+- [00:08:00,300 - 00:08:02,300] you may have some reason to believe that you know
+- [00:08:02,300 - 00:08:04,300] the distances involved
+- [00:08:04,300 - 00:08:06,300] both to the objects
+- [00:08:06,300 - 00:08:08,300] and also between the objects
+- [00:08:08,300 - 00:08:09,300] assuming you do have some
+- [00:08:09,300 - 00:08:10,300] good reason to believe those things
+- [00:08:10,300 - 00:08:12,300] you are measuring
+- [00:08:12,300 - 00:08:14,300] the properties of triangles
+- [00:08:14,300 - 00:08:16,300] and
+- [00:08:16,300 - 00:08:18,300] remarkably
+- [00:08:18,300 - 00:08:20,300] those triangles
+- [00:08:20,300 - 00:08:22,300] of course I'm simplifying the story a little bit
+- [00:08:22,300 - 00:08:24,300] what you really measure
+- [00:08:24,300 - 00:08:26,300] is a little bit less direct than that
+- [00:08:26,300 - 00:08:28,300] but that will be
+- [00:08:28,300 - 00:08:30,300] it effectively comes to that
+- [00:08:30,300 - 00:08:32,299] we measure triangles
+- [00:08:32,299 - 00:08:34,299] and we find the triangles behave
+- [00:08:34,299 - 00:08:36,299] like Euclidean
+- [00:08:36,299 - 00:08:38,299] flat triangles
+- [00:08:38,299 - 00:08:40,299] in ordinary Euclidean space
+- [00:08:40,299 - 00:08:42,299] so apparently
+- [00:08:42,299 - 00:08:44,300] to a high precision
+- [00:08:44,300 - 00:08:46,300] space itself is flat
+- [00:08:46,300 - 00:08:48,300] but it's expanding
+- [00:08:48,300 - 00:08:50,300] to make it expanding
+- [00:08:50,300 - 00:08:52,300] all we have to do
+- [00:08:52,300 - 00:08:54,300] is put into this equation
+- [00:08:54,300 - 00:08:56,300] dt squared
+- [00:08:56,300 - 00:08:58,300] just good old time
+- [00:08:58,300 - 00:09:00,300] minus
+- [00:09:00,300 - 00:09:02,300] a scale factor
+- [00:09:02,300 - 00:09:04,300] a of t squared
+- [00:09:04,300 - 00:09:06,300] that's squared
+- [00:09:06,300 - 00:09:08,300] because everything in the equation is squared
+- [00:09:08,300 - 00:09:10,300] the units
+- [00:09:10,300 - 00:09:12,300] let's
+- [00:09:12,300 - 00:09:14,300] as always
+- [00:09:14,300 - 00:09:15,300] we'll take the speed of
+- [00:09:15,300 - 00:09:16,300] light to be equal to one
+- [00:09:16,300 - 00:09:18,300] and in that case
+- [00:09:18,300 - 00:09:19,300] the units of time and the
+- [00:09:19,300 - 00:09:20,300] units of space are the same
+- [00:09:20,300 - 00:09:22,300] ah
+- [00:09:22,300 - 00:09:24,300] ah
+- [00:09:24,300 - 00:09:26,300] the units
+- [00:09:26,300 - 00:09:28,300] in this equation
+- [00:09:28,300 - 00:09:30,300] are the squares of lengths
+- [00:09:30,300 - 00:09:32,300] and so
+- [00:09:32,300 - 00:09:34,300] if we take a to be a length
+- [00:09:34,300 - 00:09:36,300] namely
+- [00:09:36,300 - 00:09:38,300] the distance between
+- [00:09:38,300 - 00:09:40,300] two particular points
+- [00:09:40,300 - 00:09:42,300] as the points separate
+- [00:09:42,300 - 00:09:44,300] and go apart
+- [00:09:44,300 - 00:09:46,300] then we should also think of the x's
+- [00:09:46,300 - 00:09:48,300] as not having any dimensions
+- [00:09:48,300 - 00:09:50,300] there's two ways to think about it
+- [00:09:50,300 - 00:09:52,300] you can either think that a has no dimensions
+- [00:09:52,300 - 00:09:54,300] and the x's have dimensions of length
+- [00:09:54,300 - 00:09:56,300] ah
+- [00:09:56,300 - 00:09:58,300] the more conventional way to think about it
+- [00:09:58,300 - 00:10:00,300] is the x's here
+- [00:10:00,300 - 00:10:02,300] have no dimensions
+- [00:10:02,300 - 00:10:04,300] they're simply labels of points
+- [00:10:04,300 - 00:10:06,300] and when you say that the
+- [00:10:06,300 - 00:10:08,300] distance between two points
+- [00:10:08,300 - 00:10:10,300] or the separation between two points
+- [00:10:10,300 - 00:10:12,300] is delta x
+- [00:10:12,300 - 00:10:14,300] equals let's say five
+- [00:10:14,300 - 00:10:16,300] that's not a statement
+- [00:10:16,300 - 00:10:18,300] about how far apart they are
+- [00:10:18,300 - 00:10:20,300] that's just a statement
+- [00:10:20,300 - 00:10:22,300] of
+- [00:10:22,300 - 00:10:24,300] well here's the way to think about it
+- [00:10:24,300 - 00:10:26,300] again think about the expanding rubber sheet
+- [00:10:26,300 - 00:10:28,300] we draw coordinates
+- [00:10:28,300 - 00:10:30,300] in the expanding rubber sheet
+- [00:10:30,300 - 00:10:32,300] and those coordinates
+- [00:10:32,300 - 00:10:34,300] stretch and expand out
+- [00:10:34,300 - 00:10:36,300] with the expansion
+- [00:10:36,300 - 00:10:38,300] so that going from
+- [00:10:38,300 - 00:10:40,300] x equals let's put it over here
+- [00:10:40,300 - 00:10:42,300] zero to x equals one
+- [00:10:42,300 - 00:10:44,300] over here
+- [00:10:44,300 - 00:10:46,300] corresponds to different actual
+- [00:10:46,300 - 00:10:48,300] physical separations
+- [00:10:48,300 - 00:10:50,300] at different times
+- [00:10:50,300 - 00:10:52,300] at an early time
+- [00:10:52,300 - 00:10:54,300] the actual physical separation
+- [00:10:54,300 - 00:10:56,300] in meters
+- [00:10:56,300 - 00:10:58,300] between zero and one
+- [00:10:58,300 - 00:11:00,300] might be some tiny tiny distance
+- [00:11:00,300 - 00:11:02,300] late late in the universe
+- [00:11:02,300 - 00:11:04,300] after the universe has expanded
+- [00:11:04,300 - 00:11:06,300] many many times
+- [00:11:06,300 - 00:11:08,300] the distance between zero and one
+- [00:11:08,300 - 00:11:10,300] may be very large
+- [00:11:10,300 - 00:11:12,300] that distance is characterized by
+- [00:11:12,300 - 00:11:14,300] a of t
+- [00:11:14,300 - 00:11:16,300] so the actual distance between points
+- [00:11:16,300 - 00:11:18,300] if delta x were five
+- [00:11:18,300 - 00:11:20,300] would be a times delta x
+- [00:11:20,300 - 00:11:22,300] or five a
+- [00:11:22,300 - 00:11:24,300] and a
+- [00:11:24,300 - 00:11:26,300] since it varies with time
+- [00:11:26,300 - 00:11:28,300] it must have some dynamics
+- [00:11:28,300 - 00:11:30,300] there must be some equations
+- [00:11:30,300 - 00:11:32,300] governing it
+- [00:11:32,300 - 00:11:34,300] there must be some equations
+- [00:11:34,300 - 00:11:36,300] governing how a of t
+- [00:11:36,300 - 00:11:38,300] expands with time
+- [00:11:38,300 - 00:11:40,300] so
+- [00:11:40,300 - 00:11:42,300] that's our goal
+- [00:11:42,300 - 00:11:44,300] this morning
+- [00:11:46,300 - 00:11:48,300] that's our goal this evening
+- [00:11:48,300 - 00:11:50,300] to work out some of the equations
+- [00:11:50,300 - 00:11:52,300] governing a
+- [00:11:52,300 - 00:11:54,300] now
+- [00:11:54,300 - 00:11:56,300] I should tell you right now
+- [00:11:56,300 - 00:11:58,300] the general theory of relativity
+- [00:11:58,300 - 00:12:00,300] allows curved space
+- [00:12:00,300 - 00:12:02,300] when I say space
+- [00:12:02,300 - 00:12:04,300] I don't mean space time
+- [00:12:04,300 - 00:12:06,300] I mean space
+- [00:12:06,300 - 00:12:08,300] it allows space to be curved
+- [00:12:08,300 - 00:12:10,300] and as long as it's homogeneous
+- [00:12:10,300 - 00:12:12,300] which means the same everywheres
+- [00:12:12,300 - 00:12:14,300] there are three kinds of spaces
+- [00:12:14,300 - 00:12:16,300] which are homogeneous
+- [00:12:16,300 - 00:12:18,300] any one of which
+- [00:12:18,300 - 00:12:20,300] could be
+- [00:12:20,300 - 00:12:22,300] the right of the right
+- [00:12:22,300 - 00:12:24,300] or the wrong of the right
+- [00:12:24,300 - 00:12:26,300] and I have the right thing to write down here
+- [00:12:26,300 - 00:12:28,300] as I said observationally
+- [00:12:28,300 - 00:12:30,300] we're in luck
+- [00:12:30,300 - 00:12:32,300] it looks like space is flat
+- [00:12:32,300 - 00:12:34,300] so we don't have to write anything very complicated
+- [00:12:34,300 - 00:12:36,300] the other two possibilities
+- [00:12:36,300 - 00:12:38,300] are
+- [00:12:38,300 - 00:12:40,300] that space is round
+- [00:12:40,300 - 00:12:42,300] like the surface of the earth
+- [00:12:42,300 - 00:12:44,300] it's a sphere
+- [00:12:44,300 - 00:12:46,300] but of course it's not a two dimensional sphere
+- [00:12:46,300 - 00:12:48,300] it's a three dimensional sphere
+- [00:12:48,300 - 00:12:50,300] a sphere, ordinary sphere
+- [00:12:50,300 - 00:12:52,300] incidentally let's get something about terminology
+- [00:12:52,300 - 00:12:54,300] when one talks about
+- [00:12:54,300 - 00:12:56,300] the earth
+- [00:12:56,300 - 00:12:58,300] the whole earth, the body of the earth
+- [00:12:58,300 - 00:13:00,300] the bulk of the earth, the rocks in the inside
+- [00:13:00,300 - 00:13:02,300] the mathematical term is a ball
+- [00:13:02,300 - 00:13:04,300] a ball means
+- [00:13:04,300 - 00:13:06,300] the solid earth
+- [00:13:06,300 - 00:13:08,300] the term sphere
+- [00:13:08,300 - 00:13:10,300] refers to the boundary
+- [00:13:10,300 - 00:13:12,300] refers to the surface of the earth
+- [00:13:12,300 - 00:13:14,300] so a sphere
+- [00:13:14,300 - 00:13:16,300] is a two dimensional surface
+- [00:13:16,300 - 00:13:18,300] ok
+- [00:13:22,300 - 00:13:24,300] let's
+- [00:13:24,300 - 00:13:26,300] let's just talk about
+- [00:13:26,300 - 00:13:28,300] a little bit what a sphere means
+- [00:13:28,300 - 00:13:30,300] first a circle
+- [00:13:30,300 - 00:13:32,300] a circle you can just think of
+- [00:13:32,300 - 00:13:34,300] as the locus of points
+- [00:13:34,300 - 00:13:36,300] x squared plus y squared
+- [00:13:36,300 - 00:13:38,300] equals some kind of
+- [00:13:38,300 - 00:13:40,300] radius squared
+- [00:13:40,300 - 00:13:42,300] if r is one
+- [00:13:42,300 - 00:13:44,300] then it's a unit circle
+- [00:13:44,300 - 00:13:46,300] so this locus of points
+- [00:13:46,300 - 00:13:48,300] which satisfy x squared plus y squared
+- [00:13:48,300 - 00:13:50,300] equals r squared
+- [00:13:50,300 - 00:13:52,300] is just a circle
+- [00:13:52,300 - 00:13:54,300] and a circle is a one dimensional space
+- [00:13:54,300 - 00:13:56,300] and mathematicians
+- [00:13:56,300 - 00:13:58,300] would call it a one sphere
+- [00:13:58,300 - 00:14:00,300] a one sphere
+- [00:14:00,300 - 00:14:02,300] because it's one dimensional
+- [00:14:02,300 - 00:14:04,300] what would you call the interior?
+- [00:14:04,300 - 00:14:06,300] two ball
+- [00:14:06,300 - 00:14:08,300] two ball
+- [00:14:08,300 - 00:14:10,300] or a disc
+- [00:14:10,300 - 00:14:12,300] the special case of two dimensions
+- [00:14:12,300 - 00:14:14,300] it has a special name of its own
+- [00:14:14,300 - 00:14:16,300] it's called a disc
+- [00:14:16,300 - 00:14:18,300] but if we wanted to use the generalized
+- [00:14:18,300 - 00:14:20,300] mathematical terminology
+- [00:14:20,300 - 00:14:22,300] we would call it a ball
+- [00:14:22,300 - 00:14:24,300] a two dimensional ball
+- [00:14:24,300 - 00:14:26,300] is of course a circle
+- [00:14:26,300 - 00:14:28,300] and it's a one sphere
+- [00:14:28,300 - 00:14:30,300] alright so if we add a
+- [00:14:30,300 - 00:14:32,300] z squared to this
+- [00:14:32,300 - 00:14:34,300] then
+- [00:14:34,300 - 00:14:36,300] we get
+- [00:14:36,300 - 00:14:38,300] a two sphere
+- [00:14:38,300 - 00:14:40,300] surface of the earth
+- [00:14:40,300 - 00:14:42,300] or something like that
+- [00:14:42,300 - 00:14:44,300] that's pretty easy to visualize
+- [00:14:44,300 - 00:14:46,300] I can see
+- [00:14:46,300 - 00:14:48,300] the surface of a sphere
+- [00:14:48,300 - 00:14:50,300] in my head
+- [00:14:50,300 - 00:14:52,300] I cannot seem to free myself
+- [00:14:52,300 - 00:14:54,300] of the fact that
+- [00:14:54,300 - 00:14:56,300] I'm in the third dimension
+- [00:14:56,300 - 00:14:58,300] I cannot seem to see that sphere
+- [00:14:58,300 - 00:15:00,300] without also seeing
+- [00:15:00,300 - 00:15:02,300] what's outside the sphere
+- [00:15:02,300 - 00:15:04,300] and what's inside the sphere
+- [00:15:04,300 - 00:15:06,300] but I know that mathematically
+- [00:15:06,300 - 00:15:08,300] the surface of the sphere
+- [00:15:08,300 - 00:15:10,300] without regard to what's inside
+- [00:15:10,300 - 00:15:12,300] or outside
+- [00:15:12,300 - 00:15:14,300] is a mathematical space
+- [00:15:14,300 - 00:15:16,300] that can stand by its own
+- [00:15:16,300 - 00:15:18,300] and does not have to be embedded
+- [00:15:18,300 - 00:15:20,300] in three dimensions
+- [00:15:20,300 - 00:15:22,300] the reason we have such a damn hard time
+- [00:15:22,300 - 00:15:24,300] seeing two dimensional space
+- [00:15:24,300 - 00:15:26,300] without the inside and the outside
+- [00:15:26,300 - 00:15:28,300] is evolutionary
+- [00:15:28,300 - 00:15:30,300] we have been built and constructed
+- [00:15:30,300 - 00:15:32,300] to recognize three dimensional space
+- [00:15:32,300 - 00:15:34,300] and we have not been built and constructed
+- [00:15:34,300 - 00:15:36,300] to be able to see directly
+- [00:15:36,300 - 00:15:38,300] two dimensional space
+- [00:15:38,300 - 00:15:40,300] without it being embedded
+- [00:15:40,300 - 00:15:42,300] in the third dimension
+- [00:15:42,300 - 00:15:44,300] but then we come to something
+- [00:15:44,300 - 00:15:46,300] even worse
+- [00:15:46,300 - 00:15:48,300] we come
+- [00:15:48,300 - 00:15:50,300] this is a two sphere now
+- [00:15:50,300 - 00:15:52,300] the surface is a two sphere
+- [00:15:52,300 - 00:15:54,300] and the interior is a two sphere
+- [00:15:54,300 - 00:15:56,300] and the interior is a three dimensional space
+- [00:15:56,300 - 00:15:58,300] the ball
+- [00:15:58,300 - 00:16:00,300] or the three dimensional ball
+- [00:16:00,300 - 00:16:02,300] but then it gets worse
+- [00:16:02,300 - 00:16:04,300] we can add another coordinate here
+- [00:16:06,300 - 00:16:08,300] now
+- [00:16:08,300 - 00:16:10,300] I can't even draw it for you
+- [00:16:10,300 - 00:16:12,300] I can't draw it for you
+- [00:16:12,300 - 00:16:14,300] but I can tell you
+- [00:16:14,300 - 00:16:16,300] that what is this
+- [00:16:16,300 - 00:16:18,300] this is the locus of all points
+- [00:16:18,300 - 00:16:20,300] which whose four dimensional distance
+- [00:16:20,300 - 00:16:22,300] from the origin
+- [00:16:22,300 - 00:16:24,300] is fixed at r squared
+- [00:16:24,300 - 00:16:26,300] if I could draw it
+- [00:16:26,300 - 00:16:28,300] I would but I can't
+- [00:16:28,300 - 00:16:30,300] because I have to be able to picture four dimensions
+- [00:16:30,300 - 00:16:32,300] just in order to be able to see
+- [00:16:32,300 - 00:16:34,300] the three dimensional sphere
+- [00:16:34,300 - 00:16:36,300] this is a three dimensional sphere
+- [00:16:36,300 - 00:16:38,300] just as
+- [00:16:38,300 - 00:16:40,300] when I just had
+- [00:16:40,300 - 00:16:42,300] three coordinates
+- [00:16:42,300 - 00:16:44,300] I was thinking about the three directions
+- [00:16:44,300 - 00:16:46,300] in which you would embed
+- [00:16:46,300 - 00:16:48,300] the two dimensional sphere
+- [00:16:48,300 - 00:16:50,300] the two dimensional sphere
+- [00:16:50,300 - 00:16:52,300] is one lower dimension
+- [00:16:52,300 - 00:16:54,300] than the number of coordinates
+- [00:16:54,300 - 00:16:56,300] if I add another coordinate
+- [00:16:56,300 - 00:16:58,300] then I construct
+- [00:16:58,300 - 00:17:00,300] a three sphere
+- [00:17:00,300 - 00:17:02,300] the interior of which
+- [00:17:02,300 - 00:17:04,300] is a four dimensional ball
+- [00:17:04,300 - 00:17:06,300] but forget the interior
+- [00:17:06,300 - 00:17:08,300] forget the exterior
+- [00:17:10,300 - 00:17:12,300] one possible
+- [00:17:12,300 - 00:17:14,300] kind of geometry that we could live in
+- [00:17:14,300 - 00:17:16,300] is
+- [00:17:16,300 - 00:17:18,300] the three dimensional sphere
+- [00:17:18,300 - 00:17:20,300] the three sphere
+- [00:17:20,300 - 00:17:22,300] now you can see from the two sphere
+- [00:17:22,300 - 00:17:24,300] that every point on the
+- [00:17:24,300 - 00:17:26,300] two sphere is the same as every other point
+- [00:17:26,300 - 00:17:28,300] of course the real earth
+- [00:17:28,300 - 00:17:30,300] the north pole is different than the equator
+- [00:17:30,300 - 00:17:32,300] but
+- [00:17:32,300 - 00:17:34,300] just as a geometry
+- [00:17:34,300 - 00:17:36,300] as a geometric construction
+- [00:17:36,300 - 00:17:38,300] a sphere
+- [00:17:38,300 - 00:17:40,300] is really quite homogeneous
+- [00:17:40,300 - 00:17:42,300] every point is like every other point
+- [00:17:42,300 - 00:17:44,300] and so
+- [00:17:44,300 - 00:17:46,300] homogeneity does not force
+- [00:17:46,300 - 00:17:48,300] space to be flat
+- [00:17:48,300 - 00:17:50,300] it allows
+- [00:17:50,300 - 00:17:52,300] for example a sphere
+- [00:17:52,300 - 00:17:54,300] moreover if you are on a point
+- [00:17:54,300 - 00:17:56,300] on the sphere
+- [00:17:56,300 - 00:17:58,300] and you look in different directions
+- [00:17:58,300 - 00:18:00,300] everything looks the same
+- [00:18:00,300 - 00:18:02,300] and so a sphere is not only homogeneous
+- [00:18:02,300 - 00:18:04,300] it's isotropic
+- [00:18:04,300 - 00:18:06,300] a person on the sphere
+- [00:18:06,300 - 00:18:08,300] and we could invent a cosmology
+- [00:18:08,300 - 00:18:10,300] in fact
+- [00:18:10,300 - 00:18:12,300] it is
+- [00:18:12,300 - 00:18:14,300] was always the most popular
+- [00:18:14,300 - 00:18:16,300] cosmology until
+- [00:18:16,300 - 00:18:18,300] experiments sort of said
+- [00:18:18,300 - 00:18:20,300] well maybe it's not right
+- [00:18:20,300 - 00:18:22,300] which was to replace
+- [00:18:22,300 - 00:18:24,300] the flat plane here
+- [00:18:24,300 - 00:18:26,300] by the sphere
+- [00:18:26,300 - 00:18:28,300] I won't write down the metric of a sphere
+- [00:18:28,300 - 00:18:30,300] it's not important
+- [00:18:30,300 - 00:18:32,300] but just think about the sphere as a space
+- [00:18:32,300 - 00:18:34,300] and if I multiply it by a of t
+- [00:18:34,300 - 00:18:36,300] then as a
+- [00:18:36,300 - 00:18:38,300] grows or shrinks
+- [00:18:38,300 - 00:18:40,300] it corresponds to a shrinking or expanding
+- [00:18:40,300 - 00:18:42,300] sphere
+- [00:18:42,300 - 00:18:44,300] it does not
+- [00:18:44,300 - 00:18:46,300] make sense
+- [00:18:46,300 - 00:18:48,300] to ask
+- [00:18:48,300 - 00:18:50,300] well if we think about the
+- [00:18:50,300 - 00:18:52,300] big bang
+- [00:18:52,300 - 00:18:54,300] as a time
+- [00:18:54,300 - 00:18:56,300] and the sphere was very small
+- [00:18:56,300 - 00:18:57,300] now remember we are not
+- [00:18:57,300 - 00:18:58,300] talking about a two dimensional sphere
+- [00:18:58,300 - 00:19:00,300] we are talking about a three dimensional sphere
+- [00:19:00,300 - 00:19:01,300] but nevertheless the best I
+- [00:19:01,300 - 00:19:02,300] can do in terms of drawing
+- [00:19:02,300 - 00:19:04,300] is to draw a two dimensional sphere
+- [00:19:04,300 - 00:19:06,300] if we start with it very very small
+- [00:19:06,300 - 00:19:08,300] then all the particles
+- [00:19:08,300 - 00:19:10,300] that were in it
+- [00:19:14,300 - 00:19:16,300] are squeezed together obviously
+- [00:19:16,300 - 00:19:18,300] they are in no sense
+- [00:19:18,300 - 00:19:20,300] at a special place on the sphere
+- [00:19:20,300 - 00:19:22,300] it's not that
+- [00:19:22,300 - 00:19:24,300] all the particles were in some place
+- [00:19:24,300 - 00:19:26,300] out of that place out into space
+- [00:19:26,300 - 00:19:28,300] they were on the sphere
+- [00:19:28,300 - 00:19:30,300] the sphere was very small
+- [00:19:30,300 - 00:19:32,300] and so the particles
+- [00:19:32,300 - 00:19:34,300] whatever they were
+- [00:19:34,300 - 00:19:36,300] whether they are galaxies or electrons
+- [00:19:36,300 - 00:19:38,300] they were all very very close together
+- [00:19:38,300 - 00:19:40,300] squished into some very small space
+- [00:19:40,300 - 00:19:42,300] how small
+- [00:19:42,300 - 00:19:44,300] we don't know
+- [00:19:44,300 - 00:19:46,300] how far we can trace things back
+- [00:19:46,300 - 00:19:48,300] but we can probably trace things back
+- [00:19:48,300 - 00:19:50,300] to the point where the
+- [00:19:50,300 - 00:19:52,300] observed universe
+- [00:19:52,300 - 00:19:54,300] was no longer
+- [00:19:54,300 - 00:19:56,300] no bigger than a cranberry or something
+- [00:19:56,300 - 00:19:58,300] so we can trace it back
+- [00:19:58,300 - 00:20:00,300] a long ways
+- [00:20:00,300 - 00:20:02,300] and that's as far as we can go
+- [00:20:02,300 - 00:20:04,300] with observation
+- [00:20:04,300 - 00:20:06,300] so we start with a space
+- [00:20:06,300 - 00:20:08,300] which might be
+- [00:20:08,300 - 00:20:10,300] as big as a cranberry
+- [00:20:10,300 - 00:20:12,300] filled with
+- [00:20:12,300 - 00:20:14,300] some large large number of particles
+- [00:20:14,300 - 00:20:16,300] and then
+- [00:20:16,300 - 00:20:18,300] start it expanding
+- [00:20:18,300 - 00:20:20,300] the particles spread out
+- [00:20:20,300 - 00:20:22,300] the further apart they are
+- [00:20:22,300 - 00:20:24,300] the faster
+- [00:20:24,300 - 00:20:26,300] they move
+- [00:20:26,300 - 00:20:28,300] because there are more
+- [00:20:28,300 - 00:20:30,300] little segments in between
+- [00:20:30,300 - 00:20:32,300] further apart
+- [00:20:32,300 - 00:20:34,300] in fact if they weren't moving
+- [00:20:34,300 - 00:20:36,300] relative to each other faster
+- [00:20:36,300 - 00:20:38,300] they couldn't have gotten further apart
+- [00:20:38,300 - 00:20:40,300] so the further apart they are
+- [00:20:40,300 - 00:20:42,300] the faster they move
+- [00:20:42,300 - 00:20:44,300] that's
+- [00:20:44,300 - 00:20:46,300] closed
+- [00:20:46,300 - 00:20:48,300] finite
+- [00:20:48,300 - 00:20:50,300] spherical universe
+- [00:20:50,300 - 00:20:52,300] that was originally the most popular
+- [00:20:52,300 - 00:20:54,300] and our universe may be like this
+- [00:20:54,300 - 00:20:56,300] but
+- [00:20:56,300 - 00:20:58,300] if it is
+- [00:20:58,300 - 00:21:00,300] the sphere is so big
+- [00:21:00,300 - 00:21:02,300] that like the earth
+- [00:21:02,300 - 00:21:04,300] we can't see its curvature
+- [00:21:04,300 - 00:21:06,300] by small scale surveying
+- [00:21:06,300 - 00:21:08,300] and when I say small scale
+- [00:21:08,300 - 00:21:10,300] 10 billion light years
+- [00:21:10,300 - 00:21:12,300] is apparently a small scale
+- [00:21:12,300 - 00:21:14,300] because we don't see any curvature
+- [00:21:14,300 - 00:21:16,300] so
+- [00:21:16,300 - 00:21:18,300] we might as well then
+- [00:21:18,300 - 00:21:20,300] replace the sphere
+- [00:21:20,300 - 00:21:22,300] by the flat plane
+- [00:21:22,300 - 00:21:24,300] the three dimensional plane
+- [00:21:24,300 - 00:21:26,300] in the space
+- [00:21:26,300 - 00:21:28,300] but the picture is the same
+- [00:21:28,300 - 00:21:30,300] we have
+- [00:21:30,300 - 00:21:32,300] roughly the same
+- [00:21:32,300 - 00:21:33,300] we have a plane with
+- [00:21:33,300 - 00:21:34,300] a lot of particles in it
+- [00:21:34,300 - 00:21:35,300] if you like you can think
+- [00:21:35,300 - 00:21:36,300] of it as part of a
+- [00:21:36,300 - 00:21:38,300] gigantic sphere
+- [00:21:38,300 - 00:21:40,300] but it's being stretched apart
+- [00:21:40,300 - 00:21:42,300] it's being spread apart
+- [00:21:48,300 - 00:21:50,300] and as it spreads apart
+- [00:21:50,300 - 00:21:52,300] the points which are embedded in it
+- [00:21:52,300 - 00:21:54,300] are also spreading apart
+- [00:21:54,300 - 00:21:56,300] and they're spreading apart
+- [00:21:56,300 - 00:21:58,300] at a rate which is proportional
+- [00:21:58,300 - 00:22:00,300] to the distance between them
+- [00:22:00,300 - 00:22:02,300] that's the Hubble law
+- [00:22:02,300 - 00:22:04,300] now we can take this space
+- [00:22:04,300 - 00:22:06,300] and we can draw coordinates on it
+- [00:22:18,300 - 00:22:20,300] the coordinates move
+- [00:22:20,300 - 00:22:22,300] as the space expands
+- [00:22:22,300 - 00:22:24,300] when I say they move
+- [00:22:24,300 - 00:22:26,300] is that as the space expands
+- [00:22:26,300 - 00:22:28,300] the coordinates separations
+- [00:22:28,300 - 00:22:30,300] between neighboring points
+- [00:22:30,300 - 00:22:32,300] expand with it
+- [00:22:32,300 - 00:22:34,300] coordinates like that
+- [00:22:34,300 - 00:22:36,300] which expand with the expanding space
+- [00:22:36,300 - 00:22:38,300] are called co-moving
+- [00:22:38,300 - 00:22:40,300] co-moving coordinates
+- [00:22:40,300 - 00:22:42,300] are coordinates embedded in space
+- [00:22:42,300 - 00:22:44,300] which expand with it
+- [00:22:44,300 - 00:22:46,300] in those coordinates
+- [00:22:46,300 - 00:22:48,300] every galaxy
+- [00:22:48,300 - 00:22:50,300] is at a fixed place
+- [00:22:50,300 - 00:22:52,300] it's at a fixed place
+- [00:22:52,300 - 00:22:54,300] because
+- [00:22:54,300 - 00:22:56,300] that's of course an approximation
+- [00:22:56,300 - 00:22:58,300] that's an approximation
+- [00:22:58,300 - 00:23:00,300] it's an idealization
+- [00:23:00,300 - 00:23:02,300] but on a big enough scale
+- [00:23:02,300 - 00:23:04,300] it's pretty much true
+- [00:23:04,300 - 00:23:06,300] if it's not true of individual galaxies
+- [00:23:06,300 - 00:23:08,300] it is true of superclusters
+- [00:23:08,300 - 00:23:10,300] and as the universe expands
+- [00:23:10,300 - 00:23:12,300] the location
+- [00:23:12,300 - 00:23:14,300] in the coordinate mesh here
+- [00:23:14,300 - 00:23:16,300] of any given galaxy
+- [00:23:16,300 - 00:23:18,300] stays fixed
+- [00:23:18,300 - 00:23:20,300] but the separation
+- [00:23:20,300 - 00:23:22,300] between them increases
+- [00:23:22,300 - 00:23:24,300] because of
+- [00:23:24,300 - 00:23:26,300] the scale factor
+- [00:23:26,300 - 00:23:28,300] so if you like
+- [00:23:28,300 - 00:23:30,300] the scale factor
+- [00:23:30,300 - 00:23:32,300] when you rule these coordinates
+- [00:23:32,300 - 00:23:34,300] and you call this x equals 0
+- [00:23:34,300 - 00:23:36,300] and x equals 1
+- [00:23:36,300 - 00:23:38,300] then the scale factor
+- [00:23:38,300 - 00:23:40,300] is just a physical distance
+- [00:23:40,300 - 00:23:42,300] between x equals 0
+- [00:23:42,300 - 00:23:44,300] and x equals 1
+- [00:23:44,300 - 00:23:46,300] this distance between x equals 1
+- [00:23:46,300 - 00:23:48,300] and x equals 2
+- [00:23:48,300 - 00:23:50,300] is twice as big
+- [00:23:50,300 - 00:23:52,300] and so that's
+- [00:23:52,300 - 00:23:54,300] we can write that
+- [00:23:54,300 - 00:23:56,300] distance between points
+- [00:23:56,300 - 00:23:58,300] is equal to a times
+- [00:23:58,300 - 00:24:00,300] let's call it delta x
+- [00:24:00,300 - 00:24:02,300] now I showed you
+- [00:24:02,300 - 00:24:03,300] the last time but I
+- [00:24:03,300 - 00:24:04,300] want to go through it again
+- [00:24:04,300 - 00:24:06,300] because it is important
+- [00:24:06,300 - 00:24:08,300] the Hubble law
+- [00:24:08,300 - 00:24:10,300] deriving the Hubble law
+- [00:24:10,300 - 00:24:12,300] this is the physical
+- [00:24:12,300 - 00:24:14,300] distance between two points
+- [00:24:14,300 - 00:24:16,300] and this delta x could be measured
+- [00:24:16,300 - 00:24:18,300] along any axis of course
+- [00:24:18,300 - 00:24:19,300] but if I happen to
+- [00:24:19,300 - 00:24:20,300] measure it along the x axis
+- [00:24:20,300 - 00:24:22,300] let's do it along the x axis
+- [00:24:22,300 - 00:24:24,300] this is delta x here
+- [00:24:24,300 - 00:24:26,300] and just for simplicity
+- [00:24:26,300 - 00:24:28,300] let's
+- [00:24:28,300 - 00:24:30,300] let's keep along the x axis
+- [00:24:30,300 - 00:24:32,300] the galaxies
+- [00:24:32,300 - 00:24:34,300] don't move
+- [00:24:34,300 - 00:24:36,300] in the coordinates
+- [00:24:36,300 - 00:24:38,300] x
+- [00:24:38,300 - 00:24:40,300] that means if I time
+- [00:24:40,300 - 00:24:42,300] differentiate, if I take two galaxies
+- [00:24:42,300 - 00:24:44,300] and delta x
+- [00:24:44,300 - 00:24:46,300] is now the separation between the two galaxies
+- [00:24:46,300 - 00:24:48,300] delta x does not
+- [00:24:48,300 - 00:24:50,300] change with time
+- [00:24:50,300 - 00:24:52,300] supposing I want to time differentiate
+- [00:24:52,300 - 00:24:54,300] this, if I
+- [00:24:54,300 - 00:24:56,300] question?
+- [00:24:56,300 - 00:24:58,300] if I time differentiate it
+- [00:24:58,300 - 00:25:00,300] the left hand side becomes the velocity
+- [00:25:00,300 - 00:25:02,300] between the two galaxies
+- [00:25:02,300 - 00:25:03,300] so on the left that's
+- [00:25:03,300 - 00:25:04,300] the time derivative of the distance
+- [00:25:04,300 - 00:25:06,300] on the left we have
+- [00:25:06,300 - 00:25:08,300] the velocity
+- [00:25:08,300 - 00:25:10,300] on the right we have
+- [00:25:10,300 - 00:25:12,300] the time derivative of
+- [00:25:12,300 - 00:25:14,300] the scale factor
+- [00:25:14,300 - 00:25:16,300] again time derivative being represented
+- [00:25:16,300 - 00:25:18,300] by a dot times delta x
+- [00:25:22,300 - 00:25:24,300] that's the velocity
+- [00:25:24,300 - 00:25:26,300] now let me divide that
+- [00:25:26,300 - 00:25:28,300] and multiply it
+- [00:25:28,300 - 00:25:30,300] by a
+- [00:25:34,300 - 00:25:36,300] why did I do that?
+- [00:25:36,300 - 00:25:37,300] because I wanted to get
+- [00:25:37,300 - 00:25:38,300] rid of delta x by itself
+- [00:25:38,300 - 00:25:40,300] and replace it by something
+- [00:25:40,300 - 00:25:42,300] more physically
+- [00:25:42,300 - 00:25:44,300] measurable like a real distance
+- [00:25:44,300 - 00:25:46,300] so I multiplied
+- [00:25:46,300 - 00:25:48,300] and divided by a in order that
+- [00:25:48,300 - 00:25:50,300] delta x here could be replaced
+- [00:25:50,300 - 00:25:52,300] by d and what do I get?
+- [00:25:52,300 - 00:25:54,300] I get that the velocity
+- [00:25:54,300 - 00:25:56,300] is a dot over a
+- [00:25:56,300 - 00:25:58,300] times the distance
+- [00:25:58,300 - 00:26:00,300] between points
+- [00:26:02,300 - 00:26:04,300] now a dot over a
+- [00:26:04,300 - 00:26:06,300] may depend on time
+- [00:26:06,300 - 00:26:08,300] the scale factor depends on time
+- [00:26:08,300 - 00:26:10,300] so does its time derivative
+- [00:26:10,300 - 00:26:12,300] but it doesn't depend on where you are
+- [00:26:12,300 - 00:26:14,300] so
+- [00:26:14,300 - 00:26:16,300] this equation which tells us velocity
+- [00:26:16,300 - 00:26:18,300] in terms of distance
+- [00:26:18,300 - 00:26:20,300] and in terms of a quantity
+- [00:26:20,300 - 00:26:22,300] which doesn't depend on where you are
+- [00:26:22,300 - 00:26:24,300] is Hubble's law
+- [00:26:24,300 - 00:26:26,300] velocity is equal to
+- [00:26:26,300 - 00:26:28,300] Hubble constant which isn't really a constant
+- [00:26:28,300 - 00:26:30,300] times distance
+- [00:26:30,300 - 00:26:32,300] but now we know
+- [00:26:32,300 - 00:26:34,300] what the meaning of the Hubble constant is
+- [00:26:34,300 - 00:26:36,300] the Hubble constant
+- [00:26:36,300 - 00:26:38,300] is the ratio
+- [00:26:38,300 - 00:26:40,300] a dot over a
+- [00:26:40,300 - 00:26:42,300] so
+- [00:26:42,300 - 00:26:44,300] what we measure
+- [00:26:44,300 - 00:26:46,300] when we measure the Hubble constant
+- [00:26:46,300 - 00:26:48,300] when we look out
+- [00:26:48,300 - 00:26:50,300] measure the velocity of galaxies
+- [00:26:50,300 - 00:26:52,300] divide it
+- [00:26:52,300 - 00:26:54,300] and multiply it
+- [00:26:54,300 - 00:26:56,300] by the distance to a galaxy
+- [00:26:56,300 - 00:26:58,300] we always get the same number incidentally
+- [00:26:58,300 - 00:27:00,300] if we look out at galaxies in that direction
+- [00:27:00,300 - 00:27:02,300] at 100 light years
+- [00:27:02,300 - 00:27:04,300] or
+- [00:27:04,300 - 00:27:06,300] no we have to look out
+- [00:27:06,300 - 00:27:08,300] sorry 100 million light years
+- [00:27:08,300 - 00:27:10,300] we look at some galaxies out there
+- [00:27:10,300 - 00:27:12,300] we compute a Hubble constant
+- [00:27:12,300 - 00:27:14,300] by dividing
+- [00:27:14,300 - 00:27:16,300] its velocity by its distance
+- [00:27:16,300 - 00:27:18,300] we look out at another one in that direction
+- [00:27:18,300 - 00:27:20,300] which is 600 million light years away
+- [00:27:20,300 - 00:27:22,300] we divide
+- [00:27:22,300 - 00:27:24,300] the velocity by the distance
+- [00:27:24,300 - 00:27:26,300] by the same Hubble constant
+- [00:27:26,300 - 00:27:28,300] so
+- [00:27:28,300 - 00:27:30,300] excuse me
+- [00:27:30,300 - 00:27:32,300] yeah
+- [00:27:32,300 - 00:27:34,300] yeah
+- [00:27:34,300 - 00:27:36,300] hmm
+- [00:27:36,300 - 00:27:38,300] yes
+- [00:27:38,300 - 00:27:40,300] you're entirely right
+- [00:27:40,300 - 00:27:42,300] we have to worry about that
+- [00:27:42,300 - 00:27:44,300] but
+- [00:27:44,300 - 00:27:46,300] only if we look at
+- [00:27:46,300 - 00:27:48,300] exceedingly large distances
+- [00:27:48,300 - 00:27:50,300] and the reason is
+- [00:27:50,300 - 00:27:52,300] the Hubble constant itself a dot over a
+- [00:27:52,300 - 00:27:54,300] varies on a time scale
+- [00:27:54,300 - 00:27:56,300] roughly the age of the universe
+- [00:27:56,300 - 00:27:58,300] alright so that means
+- [00:27:58,300 - 00:28:00,300] if we're looking out to distances which are small
+- [00:28:00,300 - 00:28:02,300] by comparison over the age of the universe
+- [00:28:02,300 - 00:28:04,300] otherwise we have to
+- [00:28:04,300 - 00:28:06,300] take it into account
+- [00:28:06,300 - 00:28:08,300] to take it into account
+- [00:28:08,300 - 00:28:10,300] to take the variation into account
+- [00:28:10,300 - 00:28:12,300] we have to know how it varies
+- [00:28:12,300 - 00:28:14,300] how a and a dot
+- [00:28:14,300 - 00:28:16,300] varies for that reason
+- [00:28:16,300 - 00:28:18,300] we have to have well not only for that
+- [00:28:18,300 - 00:28:20,300] reason but for many reasons
+- [00:28:20,300 - 00:28:22,300] we would like to know the equations
+- [00:28:22,300 - 00:28:24,300] which determine how a varies on a dot
+- [00:28:24,300 - 00:28:26,300] varies with time
+- [00:28:26,300 - 00:28:28,300] so that's what we're going to work out tonight
+- [00:28:28,300 - 00:28:30,300] oh
+- [00:28:30,300 - 00:28:32,300] there was one more
+- [00:28:32,300 - 00:28:34,300] geometry
+- [00:28:34,300 - 00:28:36,300] one more mathematical
+- [00:28:36,300 - 00:28:38,300] yeah
+- [00:28:38,300 - 00:28:40,300] does the scale factor affect the propagation
+- [00:28:40,300 - 00:28:42,300] does it perceive light
+- [00:28:42,300 - 00:28:44,300] or gravity at a great distance
+- [00:28:44,300 - 00:28:46,300] between
+- [00:28:46,300 - 00:28:48,300] the two galaxies
+- [00:28:48,300 - 00:28:50,300] mmhmm
+- [00:28:50,300 - 00:28:52,300] alright
+- [00:28:52,300 - 00:28:54,300] so let's ask
+- [00:28:54,300 - 00:28:56,300] what are the rules for light propagation
+- [00:28:56,300 - 00:28:58,300] the rules for light
+- [00:28:58,300 - 00:29:00,300] propagation
+- [00:29:06,300 - 00:29:08,300] is that along a light ray
+- [00:29:08,300 - 00:29:10,300] d tau is equal to zero
+- [00:29:10,300 - 00:29:12,300] let's just remember why
+- [00:29:12,300 - 00:29:14,300] let's just draw
+- [00:29:14,300 - 00:29:16,300] good old special relativity
+- [00:29:16,300 - 00:29:18,300] again
+- [00:29:18,300 - 00:29:20,300] this is a light cone
+- [00:29:20,300 - 00:29:22,300] the trajectory of a light ray
+- [00:29:22,300 - 00:29:24,300] and
+- [00:29:24,300 - 00:29:26,300] along that trajectory
+- [00:29:26,300 - 00:29:28,300] dx
+- [00:29:28,300 - 00:29:30,300] is equal to dt
+- [00:29:30,300 - 00:29:32,300] that's why it's at 45 degrees
+- [00:29:32,300 - 00:29:34,300] of course only
+- [00:29:34,300 - 00:29:36,300] when the speed of light is set equal to one
+- [00:29:36,300 - 00:29:38,300] again always the speed of light
+- [00:29:38,300 - 00:29:40,300] is one along here
+- [00:29:40,300 - 00:29:42,300] dx is equal to minus dt
+- [00:29:42,300 - 00:29:44,300] but along both
+- [00:29:44,300 - 00:29:46,300] branches dt squared
+- [00:29:46,300 - 00:29:48,300] is equal to dx squared
+- [00:29:48,300 - 00:29:50,300] or dt squared minus dx squared
+- [00:29:50,300 - 00:29:52,300] is equal to zero
+- [00:29:52,300 - 00:29:54,300] that's another way of saying
+- [00:29:54,300 - 00:29:56,300] that the proper time
+- [00:29:56,300 - 00:29:58,300] along a light ray
+- [00:29:58,300 - 00:30:00,300] is always zero
+- [00:30:00,300 - 00:30:02,300] one way of thinking about a light ray
+- [00:30:02,300 - 00:30:04,300] is that it's a trajectory
+- [00:30:04,300 - 00:30:06,300] of zero proper time
+- [00:30:06,300 - 00:30:08,300] mmhmm
+- [00:30:08,300 - 00:30:10,300] that rule
+- [00:30:10,300 - 00:30:12,300] extends into the general theory of relativity
+- [00:30:12,300 - 00:30:14,300] d tau is equal to zero
+- [00:30:14,300 - 00:30:16,300] so let's see what it says
+- [00:30:16,300 - 00:30:18,300] imagine a light ray moving along x
+- [00:30:18,300 - 00:30:20,300] y and z are not changing
+- [00:30:20,300 - 00:30:22,300] it's just moving along x
+- [00:30:22,300 - 00:30:24,300] we can forget y and z
+- [00:30:24,300 - 00:30:26,300] so what we have is that
+- [00:30:26,300 - 00:30:28,300] dt is equal to a of t
+- [00:30:28,300 - 00:30:30,300] times dx
+- [00:30:30,300 - 00:30:32,300] what I've done is just written
+- [00:30:34,300 - 00:30:36,300] I wanted to make this whole thing zero
+- [00:30:36,300 - 00:30:38,300] so
+- [00:30:38,300 - 00:30:40,300] dy and dz are equal to zero
+- [00:30:40,300 - 00:30:42,300] by assumption
+- [00:30:42,300 - 00:30:44,300] light ray going along the x axis
+- [00:30:44,300 - 00:30:46,300] and that means dt squared must equal
+- [00:30:46,300 - 00:30:48,300] a squared dx squared
+- [00:30:48,300 - 00:30:50,300] for motion along the positive axis
+- [00:30:50,300 - 00:30:52,300] that would just say
+- [00:30:52,300 - 00:30:54,300] dt is equal to a of t times dx
+- [00:30:54,300 - 00:30:56,300] now we could
+- [00:30:56,300 - 00:30:58,300] work out
+- [00:30:58,300 - 00:31:00,300] a kind of velocity of light
+- [00:31:00,300 - 00:31:02,300] not the
+- [00:31:02,300 - 00:31:04,300] ordinary velocity of light
+- [00:31:04,300 - 00:31:06,300] but we could ask how
+- [00:31:06,300 - 00:31:08,300] large a distance delta x
+- [00:31:08,300 - 00:31:10,300] now delta x is not a true distance
+- [00:31:10,300 - 00:31:12,300] remember it's just a label
+- [00:31:14,300 - 00:31:16,300] but we could ask this light ray
+- [00:31:16,300 - 00:31:18,300] what is the amount
+- [00:31:18,300 - 00:31:20,300] of delta x or dx
+- [00:31:20,300 - 00:31:22,300] in a given time dt
+- [00:31:22,300 - 00:31:24,300] and that's easy we just divide by dt
+- [00:31:24,300 - 00:31:26,300] and we find that dx by dt
+- [00:31:26,300 - 00:31:28,300] is not a constant
+- [00:31:28,300 - 00:31:30,300] but it's one over a of t
+- [00:31:30,300 - 00:31:32,300] so
+- [00:31:32,300 - 00:31:34,300] in these coordinates
+- [00:31:34,300 - 00:31:36,300] light seems to slow down
+- [00:31:36,300 - 00:31:38,300] as the universe expands
+- [00:31:38,300 - 00:31:40,300] it's not really slowing down
+- [00:31:40,300 - 00:31:42,300] it's just that
+- [00:31:42,300 - 00:31:44,300] a given dx
+- [00:31:44,300 - 00:31:46,300] corresponds to a bigger
+- [00:31:46,300 - 00:31:48,300] and bigger distance
+- [00:31:48,300 - 00:31:50,300] as time goes on
+- [00:31:50,300 - 00:31:52,300] so in order for light
+- [00:31:52,300 - 00:31:54,300] to have a uniform velocity
+- [00:31:54,300 - 00:31:56,300] since
+- [00:31:56,300 - 00:31:58,300] dx gets to be
+- [00:31:58,300 - 00:32:00,300] well
+- [00:32:00,300 - 00:32:02,300] since distance
+- [00:32:02,300 - 00:32:04,300] true physical distance
+- [00:32:04,300 - 00:32:06,300] for a given dx
+- [00:32:06,300 - 00:32:08,300] grows with a
+- [00:32:08,300 - 00:32:10,300] this is just a statement
+- [00:32:10,300 - 00:32:12,300] that the true
+- [00:32:12,300 - 00:32:14,300] ordinary conventional velocity
+- [00:32:14,300 - 00:32:16,300] of light is uniform
+- [00:32:16,300 - 00:32:18,300] but if expressed in terms of
+- [00:32:18,300 - 00:32:20,300] dx and dt
+- [00:32:20,300 - 00:32:22,300] the light ray seems to slow down
+- [00:32:22,300 - 00:32:24,300] alright
+- [00:32:24,300 - 00:32:26,300] what would be equivalent then
+- [00:32:26,300 - 00:32:28,300] an equivalent statement
+- [00:32:28,300 - 00:32:30,300] would be
+- [00:32:30,300 - 00:32:32,300] to Hubble's law
+- [00:32:32,300 - 00:32:34,300] would be that
+- [00:32:34,300 - 00:32:36,300] light gets slower the further you look away
+- [00:32:36,300 - 00:32:38,300] from us
+- [00:32:38,300 - 00:32:40,300] light goes slower
+- [00:32:40,300 - 00:32:42,300] it's either that or the universe is expanding
+- [00:32:42,300 - 00:32:44,300] or equivalent
+- [00:32:44,300 - 00:32:46,300] you could probably find a way
+- [00:32:46,300 - 00:32:48,300] to
+- [00:32:48,300 - 00:32:50,300] twist it
+- [00:32:50,300 - 00:32:52,300] into the statement that light appears to go
+- [00:32:52,300 - 00:32:54,300] slower and slower as you move further and further
+- [00:32:54,300 - 00:32:56,300] away
+- [00:32:56,300 - 00:32:58,300] but you'd have to do some
+- [00:32:58,300 - 00:33:00,300] all kinds of funny things to lengths
+- [00:33:00,300 - 00:33:01,300] and it's probably not the
+- [00:33:01,300 - 00:33:02,300] best way to think about it
+- [00:33:02,300 - 00:33:04,300] but I'm sure you could
+- [00:33:04,300 - 00:33:06,300] is there any evidence
+- [00:33:06,300 - 00:33:08,300] from the spectral lines
+- [00:33:08,300 - 00:33:10,300] from the long distance
+- [00:33:10,300 - 00:33:12,300] that at the smaller levels
+- [00:33:12,300 - 00:33:14,300] light is going
+- [00:33:14,300 - 00:33:16,300] at a regular speed of light
+- [00:33:16,300 - 00:33:18,300] yeah
+- [00:33:18,300 - 00:33:19,300] well what do you mean
+- [00:33:19,300 - 00:33:20,300] by the regular speed of light
+- [00:33:20,300 - 00:33:22,300] how could it be
+- [00:33:22,300 - 00:33:24,300] what would an irregular speed of light mean
+- [00:33:24,300 - 00:33:26,300] if light isn't going as fast as light
+- [00:33:26,300 - 00:33:28,300] well we know that
+- [00:33:28,300 - 00:33:30,300] on the whole the spectra
+- [00:33:30,300 - 00:33:32,300] from the galaxies is redshifted
+- [00:33:32,300 - 00:33:34,300] is there any
+- [00:33:34,300 - 00:33:36,300] microscopic evidence
+- [00:33:36,300 - 00:33:38,300] from the individual atoms in the galaxies
+- [00:33:38,300 - 00:33:40,300] that it isn't
+- [00:33:40,300 - 00:33:42,300] redshifted
+- [00:33:42,300 - 00:33:44,300] there's a lot of evidence
+- [00:33:44,300 - 00:33:46,300] that the dimensionless constants of nature
+- [00:33:46,300 - 00:33:48,300] are the same everywhere
+- [00:33:52,300 - 00:33:54,300] say it again
+- [00:33:54,300 - 00:33:56,300] it always has been
+- [00:33:56,300 - 00:33:58,300] yeah it always has been
+- [00:33:58,300 - 00:34:00,300] what would you mean
+- [00:34:00,300 - 00:34:02,300] by the dimensionless speed of light
+- [00:34:06,300 - 00:34:08,300] let's try to think of some
+- [00:34:08,300 - 00:34:10,300] of some
+- [00:34:12,300 - 00:34:14,300] physical unit of time
+- [00:34:14,300 - 00:34:16,300] my timex watch
+- [00:34:16,300 - 00:34:18,300] is not the one I want to use
+- [00:34:18,300 - 00:34:20,300] the time that it takes
+- [00:34:20,300 - 00:34:22,300] to an electron in the inner orbit
+- [00:34:22,300 - 00:34:24,300] in the first excited orbit
+- [00:34:24,300 - 00:34:26,300] to go around the hydrogen atom
+- [00:34:26,300 - 00:34:28,300] that's a good unit of time
+- [00:34:28,300 - 00:34:30,300] let that be my unit of time
+- [00:34:30,300 - 00:34:32,300] how about a unit of space
+- [00:34:32,300 - 00:34:34,300] oh well
+- [00:34:34,300 - 00:34:36,300] a unit of space could be
+- [00:34:36,300 - 00:34:38,300] the size of an atom
+- [00:34:38,300 - 00:34:40,300] I could ask
+- [00:34:40,300 - 00:34:42,300] how long does it take
+- [00:34:42,300 - 00:34:44,300] for light
+- [00:34:44,300 - 00:34:46,300] or
+- [00:34:46,300 - 00:34:48,300] how many revolutions
+- [00:34:48,300 - 00:34:50,300] of the electron
+- [00:34:50,300 - 00:34:52,300] does it take
+- [00:34:52,300 - 00:34:54,300] in order for light to cross
+- [00:34:54,300 - 00:34:56,300] the atom
+- [00:34:56,300 - 00:34:58,300] that appears to be the same
+- [00:34:58,300 - 00:35:00,300] everywhere in the universe
+- [00:35:00,300 - 00:35:02,300] the time that it would take
+- [00:35:02,300 - 00:35:04,300] light to travel across an atom
+- [00:35:04,300 - 00:35:06,300] where time is measured
+- [00:35:06,300 - 00:35:08,300] in some physical unit
+- [00:35:08,300 - 00:35:10,300] we don't have to use
+- [00:35:10,300 - 00:35:12,300] we could use
+- [00:35:12,300 - 00:35:14,300] some mixed units
+- [00:35:14,300 - 00:35:16,300] for example
+- [00:35:16,300 - 00:35:18,300] instead of using
+- [00:35:18,300 - 00:35:20,300] the orbit of an electron
+- [00:35:20,300 - 00:35:22,300] we could use
+- [00:35:22,300 - 00:35:24,300] some vibrational frequency of a nuclear
+- [00:35:24,300 - 00:35:26,300] take some particular nucleus
+- [00:35:26,300 - 00:35:28,300] and look at some particular vibrational frequency
+- [00:35:28,300 - 00:35:30,300] and the time for one oscillation
+- [00:35:30,300 - 00:35:32,300] we could use that
+- [00:35:32,300 - 00:35:34,300] as a unit of time
+- [00:35:34,300 - 00:35:36,300] and then we could ask
+- [00:35:36,300 - 00:35:38,300] how long does it take
+- [00:35:38,300 - 00:35:40,300] in that unit of time
+- [00:35:40,300 - 00:35:42,300] for light to cross an atom
+- [00:35:42,300 - 00:35:44,300] that is some relationship
+- [00:35:44,300 - 00:35:46,300] between scales and nuclei
+- [00:35:46,300 - 00:35:48,300] and scales and atoms
+- [00:35:48,300 - 00:35:50,300] and it's a non-trivial fact
+- [00:35:50,300 - 00:35:52,300] that that seems to be the same
+- [00:35:52,300 - 00:35:54,300] every place in the universe
+- [00:35:54,300 - 00:35:56,300] of course the argument is indirect
+- [00:35:56,300 - 00:35:58,300] but that seems to be a good
+- [00:35:58,300 - 00:36:00,300] a good assumption
+- [00:36:00,300 - 00:36:02,300] that's what it means to say
+- [00:36:02,300 - 00:36:04,300] that light travels with the same speed
+- [00:36:04,300 - 00:36:06,300] everywhere
+- [00:36:06,300 - 00:36:08,300] it's hard to imagine what it would mean
+- [00:36:08,300 - 00:36:10,300] for light to not travel with the speed of light
+- [00:36:10,300 - 00:36:12,300] but
+- [00:36:12,300 - 00:36:14,300] when the universe was
+- [00:36:14,300 - 00:36:16,300] the size of a cranberry
+- [00:36:16,300 - 00:36:18,300] light actually would have been able
+- [00:36:18,300 - 00:36:20,300] to traverse across that
+- [00:36:20,300 - 00:36:22,300] very rapidly
+- [00:36:22,300 - 00:36:24,300] hmm
+- [00:36:24,300 - 00:36:26,300] right
+- [00:36:26,300 - 00:36:28,300] right
+- [00:36:36,300 - 00:36:38,300] we'll take one light cranberry
+- [00:36:38,300 - 00:36:40,300] no no
+- [00:36:40,300 - 00:36:42,300] that's not quite right
+- [00:36:42,300 - 00:36:44,300] it's upside down
+- [00:36:44,300 - 00:36:46,300] it should be a unit of time
+- [00:36:46,300 - 00:36:48,300] called a light cranberry
+- [00:36:52,300 - 00:36:54,300] okay
+- [00:36:54,300 - 00:36:56,300] alright that's the basic setup
+- [00:36:56,300 - 00:36:58,300] now as I said
+- [00:36:58,300 - 00:37:00,300] oh I didn't say
+- [00:37:00,300 - 00:37:02,300] there is one other mathematical
+- [00:37:02,300 - 00:37:04,300] geometry
+- [00:37:04,300 - 00:37:06,300] that has the property that it's the same
+- [00:37:06,300 - 00:37:08,300] everywhere
+- [00:37:08,300 - 00:37:10,300] in two dimensions it's
+- [00:37:10,300 - 00:37:12,300] the negatively curved
+- [00:37:12,300 - 00:37:14,300] the sphere is a positively curved geometry
+- [00:37:14,300 - 00:37:16,300] what does it mean to say
+- [00:37:16,300 - 00:37:18,300] it's positively curved
+- [00:37:18,300 - 00:37:20,300] it's a statement about triangles
+- [00:37:20,300 - 00:37:22,300] if you
+- [00:37:22,300 - 00:37:24,300] take a triangle and a sphere
+- [00:37:24,300 - 00:37:26,300] it's pretty apparent that the angles sort of bow out
+- [00:37:26,300 - 00:37:28,300] and so the sum of the angles on a sphere
+- [00:37:28,300 - 00:37:30,300] is always greater than 180 degrees
+- [00:37:30,300 - 00:37:32,300] in fact you can make a triangle
+- [00:37:32,300 - 00:37:34,300] with three
+- [00:37:34,300 - 00:37:36,300] with three ninety degree sides to it
+- [00:37:36,300 - 00:37:38,300] three ninety degree angles very easily
+- [00:37:38,300 - 00:37:40,300] so the sum of the angles is always greater
+- [00:37:40,300 - 00:37:42,300] than zero
+- [00:37:42,300 - 00:37:44,300] um
+- [00:37:44,300 - 00:37:46,300] that's called a positively curved space
+- [00:37:46,300 - 00:37:48,300] and it's sort of
+- [00:37:48,300 - 00:37:50,300] a positive curve
+- [00:37:50,300 - 00:37:52,300] and it's sort of
+- [00:37:52,300 - 00:37:54,300] a positive curve
+- [00:37:54,300 - 00:37:56,300] and it's true both in the two dimensional
+- [00:37:56,300 - 00:37:58,300] sphere and the three dimensional sphere
+- [00:37:58,300 - 00:38:00,300] the four dimensional sphere
+- [00:38:00,300 - 00:38:02,300] if you make triangles
+- [00:38:02,300 - 00:38:04,300] the sums of the angles are greater than zero
+- [00:38:04,300 - 00:38:06,300] alright
+- [00:38:06,300 - 00:38:08,300] are greater than 180 degrees
+- [00:38:08,300 - 00:38:10,300] and that's called positive curvature
+- [00:38:10,300 - 00:38:12,300] there is also the negatively curved geometry
+- [00:38:12,300 - 00:38:14,300] and it's
+- [00:38:14,300 - 00:38:16,300] harder to draw
+- [00:38:16,300 - 00:38:18,300] it's a saddle surface
+- [00:38:18,300 - 00:38:20,300] I'm not going to work out its mathematical
+- [00:38:20,300 - 00:38:22,300] properties today
+- [00:38:22,300 - 00:38:24,300] but
+- [00:38:24,300 - 00:38:26,300] it can be
+- [00:38:26,300 - 00:38:28,300] it stands on its own terms
+- [00:38:28,300 - 00:38:30,300] as a geometry without having
+- [00:38:30,300 - 00:38:32,300] to embed it in space
+- [00:38:32,300 - 00:38:33,300] but if I embed it in
+- [00:38:33,300 - 00:38:34,300] space so that you can see it
+- [00:38:34,300 - 00:38:36,300] it would look like a saddle surface
+- [00:38:44,300 - 00:38:46,300] it may not look to you
+- [00:38:46,300 - 00:38:48,300] like every point is the same as every other point
+- [00:38:48,300 - 00:38:50,300] but
+- [00:38:50,300 - 00:38:52,300] the mathematics of the saddle surface
+- [00:38:52,300 - 00:38:54,300] is such that
+- [00:38:54,300 - 00:38:56,300] it has uniform curvature everywhere
+- [00:38:56,300 - 00:38:58,300] and it's negatively curved
+- [00:38:58,300 - 00:39:00,300] the meaning of that is if you draw triangles
+- [00:39:00,300 - 00:39:02,300] in it
+- [00:39:02,300 - 00:39:04,300] the triangles are sort of pinched in
+- [00:39:04,300 - 00:39:06,300] and they have a sum of angles
+- [00:39:06,300 - 00:39:08,300] less than 180 degrees
+- [00:39:08,300 - 00:39:10,300] this is also uniform, isotropic
+- [00:39:10,300 - 00:39:12,300] homogeneous
+- [00:39:12,300 - 00:39:14,300] and either any of these
+- [00:39:14,300 - 00:39:16,300] three geometries
+- [00:39:16,300 - 00:39:18,300] is a candidate for an isotropic
+- [00:39:18,300 - 00:39:20,300] homogeneous cosmology
+- [00:39:20,300 - 00:39:22,300] as I said
+- [00:39:22,300 - 00:39:24,300] experimentally or observationally
+- [00:39:24,300 - 00:39:26,300] at least on the scales
+- [00:39:26,300 - 00:39:28,300] that we're familiar with
+- [00:39:28,300 - 00:39:30,300] it looks flat
+- [00:39:30,300 - 00:39:32,300] okay now let's come
+- [00:39:32,300 - 00:39:34,300] to the equations
+- [00:39:34,300 - 00:39:36,300] governing the expansion
+- [00:39:36,300 - 00:39:38,300] of the universe
+- [00:39:46,300 - 00:39:47,300] we started it last time
+- [00:39:47,300 - 00:39:48,300] but let's get back to it
+- [00:39:48,300 - 00:39:54,300] let's call this point over here us
+- [00:39:54,300 - 00:39:56,300] that's us
+- [00:39:56,300 - 00:39:58,300] and let's draw a sphere around us
+- [00:39:58,300 - 00:40:00,300] it's a big sphere
+- [00:40:00,300 - 00:40:02,300] so that it contains many many many galaxies
+- [00:40:02,300 - 00:40:04,300] and clusters and super clusters
+- [00:40:04,300 - 00:40:06,300] and so forth
+- [00:40:06,300 - 00:40:08,300] and let's look at some
+- [00:40:08,300 - 00:40:10,300] galaxy over here
+- [00:40:10,300 - 00:40:12,300] it's moving away from us
+- [00:40:12,300 - 00:40:14,300] we know that
+- [00:40:14,300 - 00:40:16,300] but it's moving away from us
+- [00:40:16,300 - 00:40:18,300] we know that
+- [00:40:18,300 - 00:40:20,300] let's write down
+- [00:40:20,300 - 00:40:22,300] well first of all
+- [00:40:22,300 - 00:40:24,300] first fact
+- [00:40:24,300 - 00:40:26,300] and this is a fact really
+- [00:40:26,300 - 00:40:28,300] if space is flat
+- [00:40:28,300 - 00:40:30,300] even if it's not flat
+- [00:40:30,300 - 00:40:32,300] it's close to being a fact
+- [00:40:32,300 - 00:40:34,300] it's a fact of Newtonian gravitational theory
+- [00:40:34,300 - 00:40:36,300] it follows from Newton's
+- [00:40:36,300 - 00:40:38,300] gravitational law
+- [00:40:38,300 - 00:40:40,300] and from Newton's equations
+- [00:40:40,300 - 00:40:42,300] it's a miracle
+- [00:40:42,300 - 00:40:44,300] it's what made it possible for Newton
+- [00:40:44,300 - 00:40:46,300] to compute things about gravity
+- [00:40:46,300 - 00:40:48,300] is that if you have
+- [00:40:48,300 - 00:40:50,300] a sphere like this
+- [00:40:50,300 - 00:40:52,300] and if everything is distributed
+- [00:40:52,300 - 00:40:54,300] spherically symmetrically
+- [00:40:54,300 - 00:40:56,300] in other words
+- [00:40:56,300 - 00:40:58,300] if everything is isotropic
+- [00:40:58,300 - 00:41:00,300] relative to the point us
+- [00:41:00,300 - 00:41:02,300] as much mass here
+- [00:41:02,300 - 00:41:04,300] is here is here is here is here
+- [00:41:04,300 - 00:41:06,300] so that everything has nice spherical symmetry
+- [00:41:06,300 - 00:41:08,300] then
+- [00:41:08,300 - 00:41:10,300] it's a theorem
+- [00:41:10,300 - 00:41:12,300] it's a theorem about the inverse square law
+- [00:41:12,300 - 00:41:14,300] that the force
+- [00:41:14,300 - 00:41:16,300] on a particle over here
+- [00:41:16,300 - 00:41:18,300] the assumption is
+- [00:41:18,300 - 00:41:20,300] that we are working with coordinates
+- [00:41:20,300 - 00:41:22,300] in which we are at rest
+- [00:41:22,300 - 00:41:24,300] we will just arbitrarily
+- [00:41:24,300 - 00:41:26,300] use a coordinate system
+- [00:41:26,300 - 00:41:28,300] a frame of reference
+- [00:41:28,300 - 00:41:30,300] where we are at rest
+- [00:41:30,300 - 00:41:32,300] and velocities mean relative to us
+- [00:41:32,300 - 00:41:34,300] accelerations mean relative to us
+- [00:41:34,300 - 00:41:36,300] velocities, accelerations
+- [00:41:36,300 - 00:41:38,300] motion now means relative to us
+- [00:41:38,300 - 00:41:40,300] then it's a fact of Newtonian physics
+- [00:41:40,300 - 00:41:42,300] that the only
+- [00:41:42,300 - 00:41:44,300] the only net force
+- [00:41:44,300 - 00:41:46,300] on this point here
+- [00:41:46,300 - 00:41:48,300] is the force
+- [00:41:48,300 - 00:41:50,300] on this point here
+- [00:41:50,300 - 00:41:52,300] only comes from things inside the sphere
+- [00:41:52,300 - 00:41:54,300] and things outside the sphere
+- [00:41:54,300 - 00:41:56,300] the forces just cancel
+- [00:41:58,300 - 00:42:00,300] this is maybe well known to you
+- [00:42:00,300 - 00:42:02,300] in electrostatics
+- [00:42:02,300 - 00:42:04,300] that if you have a
+- [00:42:04,300 - 00:42:06,300] hollow region
+- [00:42:06,300 - 00:42:08,300] and charge
+- [00:42:08,300 - 00:42:10,300] some charge distribution on the outside
+- [00:42:10,300 - 00:42:12,300] as long as it's spherically symmetric
+- [00:42:12,300 - 00:42:14,300] then there's no force
+- [00:42:14,300 - 00:42:16,300] on any particle on the inside of that sphere
+- [00:42:16,300 - 00:42:18,300] it's only
+- [00:42:18,300 - 00:42:20,300] the charges on the interior
+- [00:42:20,300 - 00:42:22,300] within
+- [00:42:22,300 - 00:42:24,300] which exert forces
+- [00:42:24,300 - 00:42:26,300] net force on a particle
+- [00:42:26,300 - 00:42:28,300] so all of the force on that particle
+- [00:42:28,300 - 00:42:30,300] comes from masses
+- [00:42:30,300 - 00:42:32,300] in the interior here
+- [00:42:32,300 - 00:42:34,300] ok
+- [00:42:34,300 - 00:42:36,300] that's one statement
+- [00:42:36,300 - 00:42:38,300] the next statement is that the gravitational
+- [00:42:38,300 - 00:42:40,300] force of a
+- [00:42:40,300 - 00:42:42,300] spherically symmetric distribution of matter
+- [00:42:42,300 - 00:42:44,300] is very
+- [00:42:44,300 - 00:42:46,300] simple
+- [00:42:46,300 - 00:42:48,300] a very spherically symmetric
+- [00:42:48,300 - 00:42:50,300] distribution of matter
+- [00:42:50,300 - 00:42:52,300] on the inside
+- [00:42:52,300 - 00:42:54,300] is very simple
+- [00:42:54,300 - 00:42:56,300] and it's just to take the total
+- [00:42:56,300 - 00:42:58,300] matter on the inside
+- [00:42:58,300 - 00:43:00,300] and think of it as being concentrated at a point
+- [00:43:00,300 - 00:43:02,300] so the motion
+- [00:43:02,300 - 00:43:04,300] of this galaxy relative to us
+- [00:43:04,300 - 00:43:06,300] is exactly
+- [00:43:06,300 - 00:43:08,300] the same as if
+- [00:43:08,300 - 00:43:10,300] all of the mass
+- [00:43:10,300 - 00:43:11,300] as if you ignore all the
+- [00:43:11,300 - 00:43:12,300] mass on the outside of the shell
+- [00:43:12,300 - 00:43:14,300] and take all the
+- [00:43:14,300 - 00:43:16,300] mass on the inside of the shell
+- [00:43:16,300 - 00:43:18,300] and place it right at that point
+- [00:43:18,300 - 00:43:20,300] now
+- [00:43:20,300 - 00:43:22,300] that makes it very easy
+- [00:43:22,300 - 00:43:24,300] to compute
+- [00:43:24,300 - 00:43:26,300] or at least to see what's going on
+- [00:43:26,300 - 00:43:28,300] with this particle
+- [00:43:28,300 - 00:43:30,300] with this particle over here
+- [00:43:30,300 - 00:43:32,300] it behaves exactly as a particle
+- [00:43:32,300 - 00:43:34,300] in a gravitational field
+- [00:43:34,300 - 00:43:36,300] where all of the mass is at the center
+- [00:43:36,300 - 00:43:38,300] and
+- [00:43:38,300 - 00:43:40,300] concentrated at the center
+- [00:43:40,300 - 00:43:42,300] this is the key thing
+- [00:43:42,300 - 00:43:44,300] that made it possible for Newton
+- [00:43:44,300 - 00:43:46,300] to do a lot of things with gravity
+- [00:43:46,300 - 00:43:48,300] and it's a thing
+- [00:43:48,300 - 00:43:50,300] which allows us to
+- [00:43:50,300 - 00:43:52,300] compute
+- [00:43:52,300 - 00:43:54,300] the properties of cosmology
+- [00:43:54,300 - 00:43:56,300] okay, let's put us
+- [00:43:56,300 - 00:43:58,300] at x equals zero
+- [00:43:58,300 - 00:44:00,300] and let's call this point
+- [00:44:00,300 - 00:44:02,300] just x
+- [00:44:02,300 - 00:44:04,300] I'm going to keep it on the x axis
+- [00:44:04,300 - 00:44:05,300] but of course it doesn't have
+- [00:44:05,300 - 00:44:06,300] to be on the x axis
+- [00:44:06,300 - 00:44:08,300] first of all let's write down
+- [00:44:08,300 - 00:44:10,300] some equations
+- [00:44:10,300 - 00:44:12,300] what is the distance out
+- [00:44:12,300 - 00:44:14,300] to that point
+- [00:44:14,300 - 00:44:16,300] let's call it r
+- [00:44:16,300 - 00:44:18,300] now r stands for a radius
+- [00:44:18,300 - 00:44:20,300] r actually means physical distance
+- [00:44:20,300 - 00:44:22,300] let's say measured in meters
+- [00:44:22,300 - 00:44:24,300] to the point x
+- [00:44:24,300 - 00:44:26,300] well
+- [00:44:26,300 - 00:44:28,300] the answer is
+- [00:44:28,300 - 00:44:30,300] it's x times the Hubble constant
+- [00:44:30,300 - 00:44:32,300] no
+- [00:44:32,300 - 00:44:34,300] x times the scale factor
+- [00:44:34,300 - 00:44:36,300] not the Hubble constant
+- [00:44:36,300 - 00:44:38,300] x times the scale factor
+- [00:44:38,300 - 00:44:40,300] remember the relationship
+- [00:44:40,300 - 00:44:42,300] between actual physical distances
+- [00:44:42,300 - 00:44:44,300] and scale factor
+- [00:44:44,300 - 00:44:46,300] is that you multiply
+- [00:44:46,300 - 00:44:48,300] the coordinate distance
+- [00:44:48,300 - 00:44:50,300] by the scale factor
+- [00:44:50,300 - 00:44:52,300] to get the actual physical distance
+- [00:44:52,300 - 00:44:54,300] so the actual distance
+- [00:44:54,300 - 00:44:56,300] to this object over here
+- [00:44:56,300 - 00:44:58,300] r
+- [00:44:58,300 - 00:45:00,300] is equal
+- [00:45:00,300 - 00:45:02,300] to x times the scale factor
+- [00:45:02,300 - 00:45:04,300] and it's the scale factor
+- [00:45:04,300 - 00:45:06,300] which changes with time
+- [00:45:06,300 - 00:45:08,300] particle moves
+- [00:45:08,300 - 00:45:10,300] because the scale factor moves away from us
+- [00:45:10,300 - 00:45:12,300] because the scale factor changes with time
+- [00:45:12,300 - 00:45:14,300] what is its velocity
+- [00:45:14,300 - 00:45:16,300] the velocity of the thing
+- [00:45:16,300 - 00:45:18,300] moving away from us
+- [00:45:18,300 - 00:45:20,300] is equal to
+- [00:45:20,300 - 00:45:22,300] x times a dot
+- [00:45:22,300 - 00:45:24,300] now let's remember now
+- [00:45:24,300 - 00:45:26,300] that we can pretend
+- [00:45:26,300 - 00:45:28,300] we can pretend that this is an equivalent problem
+- [00:45:28,300 - 00:45:30,300] of a
+- [00:45:30,300 - 00:45:32,300] projectile
+- [00:45:32,300 - 00:45:34,300] moving away from us
+- [00:45:34,300 - 00:45:36,300] under the influence
+- [00:45:36,300 - 00:45:38,300] of gravitating mass point
+- [00:45:38,300 - 00:45:40,300] at the center
+- [00:45:40,300 - 00:45:42,300] what is the energy
+- [00:45:42,300 - 00:45:44,300] of that
+- [00:45:44,300 - 00:45:46,300] point moving away
+- [00:45:46,300 - 00:45:48,300] what would the energy be
+- [00:45:48,300 - 00:45:50,300] if all mass
+- [00:45:50,300 - 00:45:52,300] were concentrated at the center
+- [00:45:52,300 - 00:45:54,300] and we could ignore all the mass on the outside
+- [00:45:54,300 - 00:45:56,300] well there are two terms in the energy
+- [00:45:56,300 - 00:45:58,300] potential and kinetic
+- [00:45:58,300 - 00:46:00,300] the potential energy
+- [00:46:00,300 - 00:46:02,300] oh let's go
+- [00:46:02,300 - 00:46:04,300] let's call the mass
+- [00:46:04,300 - 00:46:06,300] of this particle over here
+- [00:46:06,300 - 00:46:08,300] little m
+- [00:46:08,300 - 00:46:10,300] the mass of everything inside this shell
+- [00:46:10,300 - 00:46:12,300] we'll worry about in a little while
+- [00:46:12,300 - 00:46:14,300] in fact we'll call it big M
+- [00:46:14,300 - 00:46:16,300] big M is the mass of everything inside the shell
+- [00:46:16,300 - 00:46:18,300] little m is the mass of the distant galaxy
+- [00:46:18,300 - 00:46:20,300] that we're following
+- [00:46:20,300 - 00:46:22,300] alright what's the energy
+- [00:46:22,300 - 00:46:24,300] of that distant galaxy
+- [00:46:24,300 - 00:46:26,300] it's its kinetic energy
+- [00:46:26,300 - 00:46:28,300] one half mv squared
+- [00:46:30,300 - 00:46:32,300] plus
+- [00:46:32,300 - 00:46:34,300] the gravitational potential energy
+- [00:46:34,300 - 00:46:36,300] so the one new
+- [00:46:36,300 - 00:46:38,300] thing you have to know
+- [00:46:38,300 - 00:46:40,300] is the potential energy of an object
+- [00:46:40,300 - 00:46:42,300] in a gravitational field
+- [00:46:42,300 - 00:46:44,300] anybody not know it
+- [00:46:44,300 - 00:46:46,300] some people
+- [00:46:46,300 - 00:46:48,300] have seen
+- [00:46:48,300 - 00:46:50,300] gm1m2 over r
+- [00:46:50,300 - 00:46:52,300] gm1m2 over r
+- [00:46:52,300 - 00:46:54,300] right, product of the masses
+- [00:46:54,300 - 00:46:56,300] right, so then there's potential energy
+- [00:46:56,300 - 00:46:58,300] what's the sign
+- [00:46:58,300 - 00:47:00,300] negative
+- [00:47:00,300 - 00:47:02,300] negative because it's an attraction
+- [00:47:02,300 - 00:47:04,300] so when the part of
+- [00:47:04,300 - 00:47:06,300] gets pulled closer and closer
+- [00:47:06,300 - 00:47:08,300] and closer
+- [00:47:08,300 - 00:47:10,300] of course it gets more energetic
+- [00:47:10,300 - 00:47:12,300] but the energy goes down
+- [00:47:12,300 - 00:47:14,300] not up
+- [00:47:14,300 - 00:47:16,300] because things tend to be pulled in direction
+- [00:47:16,300 - 00:47:18,300] of decreasing energy
+- [00:47:18,300 - 00:47:20,300] so there's another term
+- [00:47:20,300 - 00:47:22,300] and the other term is minus
+- [00:47:22,300 - 00:47:24,300] Newton's constant
+- [00:47:24,300 - 00:47:26,300] the product of the masses
+- [00:47:26,300 - 00:47:28,300] now which masses
+- [00:47:28,300 - 00:47:30,300] the mass of the projectile
+- [00:47:30,300 - 00:47:32,300] and the mass that's concentrated
+- [00:47:32,300 - 00:47:34,300] at the center
+- [00:47:34,300 - 00:47:36,300] in our imaginary
+- [00:47:36,300 - 00:47:38,300] in our imaginary
+- [00:47:38,300 - 00:47:40,300] simplification
+- [00:47:40,300 - 00:47:42,300] that's all the mass inside the sphere
+- [00:47:42,300 - 00:47:44,300] divided by r
+- [00:47:44,300 - 00:47:46,300] that's all
+- [00:47:46,300 - 00:47:48,300] that's the energy
+- [00:47:48,300 - 00:47:50,300] and here's what I know
+- [00:47:50,300 - 00:47:52,300] I know that that energy is constant
+- [00:47:52,300 - 00:47:54,300] it doesn't vary with time
+- [00:47:54,300 - 00:47:56,300] that's what I know
+- [00:47:56,300 - 00:47:58,300] that it doesn't vary with time
+- [00:47:58,300 - 00:48:00,300] it could be positive
+- [00:48:00,300 - 00:48:02,300] there's a positive kinetic energy
+- [00:48:02,300 - 00:48:04,300] it could be negative
+- [00:48:04,300 - 00:48:06,300] if gm over r is bigger
+- [00:48:06,300 - 00:48:08,300] than mv2
+- [00:48:08,300 - 00:48:10,300] one half mv2
+- [00:48:10,300 - 00:48:12,300] then the energy is negative
+- [00:48:12,300 - 00:48:14,300] whatever it is though
+- [00:48:14,300 - 00:48:16,300] it is not allowed to change with time
+- [00:48:16,300 - 00:48:18,300] constant
+- [00:48:18,300 - 00:48:20,300] that would be the property
+- [00:48:20,300 - 00:48:22,300] of a projectile moving away from us
+- [00:48:22,300 - 00:48:24,300] I'm going to study the one special case
+- [00:48:24,300 - 00:48:26,300] which corresponds to zero energy over here
+- [00:48:26,300 - 00:48:28,300] later on I'll come back
+- [00:48:28,300 - 00:48:30,300] and tell you what the connection
+- [00:48:30,300 - 00:48:32,300] between the energy on the right hand side is
+- [00:48:32,300 - 00:48:34,300] and the geometry of space time
+- [00:48:34,300 - 00:48:36,300] but just for simplicity
+- [00:48:36,300 - 00:48:38,300] let's take the total energy
+- [00:48:38,300 - 00:48:40,300] gravitational plus
+- [00:48:40,300 - 00:48:42,300] kinetic energy
+- [00:48:42,300 - 00:48:44,300] and the energy
+- [00:48:44,300 - 00:48:46,300] that's going to be
+- [00:48:46,300 - 00:48:48,300] is going to be
+- [00:48:48,300 - 00:48:50,300] zero
+- [00:48:50,300 - 00:48:51,300] is it make sense to
+- [00:48:51,300 - 00:48:52,300] think that the energy is zero?
+- [00:48:52,300 - 00:48:54,300] yeah, it's a positive term
+- [00:48:54,300 - 00:48:56,300] and a negative term
+- [00:48:56,300 - 00:48:58,300] you can make it zero
+- [00:48:58,300 - 00:49:00,300] what does making it zero mean
+- [00:49:00,300 - 00:49:02,300] for a projectile when you shoot it up?
+- [00:49:02,300 - 00:49:04,300] it means it's at the escape velocity
+- [00:49:04,300 - 00:49:06,300] it means it's at the escape velocity
+- [00:49:06,300 - 00:49:08,300] it means it's exactly
+- [00:49:08,300 - 00:49:10,300] at the escape velocity
+- [00:49:10,300 - 00:49:12,300] if the energy is positive
+- [00:49:12,300 - 00:49:14,300] then it's beyond the escape velocity
+- [00:49:14,300 - 00:49:16,300] if it's negative
+- [00:49:16,300 - 00:49:18,300] then it falls back down
+- [00:49:18,300 - 00:49:20,300] so we'll come back to that
+- [00:49:20,300 - 00:49:22,300] three cases
+- [00:49:22,300 - 00:49:24,300] the energy could be positive, it could be zero
+- [00:49:24,300 - 00:49:26,300] it could be negative
+- [00:49:26,300 - 00:49:28,300] I'm going to take the simplest case
+- [00:49:28,300 - 00:49:30,300] and then we can come back and talk about
+- [00:49:30,300 - 00:49:32,300] the other two cases
+- [00:49:32,300 - 00:49:34,300] the simplest case is that the total energy
+- [00:49:34,300 - 00:49:36,300] is zero
+- [00:49:36,300 - 00:49:38,300] it corresponds to things being
+- [00:49:38,300 - 00:49:40,300] shot out at exactly
+- [00:49:40,300 - 00:49:42,300] the escape velocity
+- [00:49:42,300 - 00:49:44,300] it's the simplest cosmology
+- [00:49:44,300 - 00:49:46,300] yeah?
+- [00:49:46,300 - 00:49:48,300] so capital M varies with time
+- [00:49:48,300 - 00:49:50,300] oh no, no no no no no no
+- [00:49:50,300 - 00:49:52,300] capital M does not vary with time
+- [00:49:52,300 - 00:49:54,300] it's all the particles that are in here
+- [00:49:54,300 - 00:49:56,300] but remember
+- [00:49:56,300 - 00:49:58,300] that they all move together
+- [00:49:58,300 - 00:50:00,300] so as that sphere expands
+- [00:50:00,300 - 00:50:02,300] the same number of particles
+- [00:50:02,300 - 00:50:04,300] that's an extremely good point
+- [00:50:04,300 - 00:50:06,300] or extremely good question
+- [00:50:06,300 - 00:50:08,300] it was a lousy statement
+- [00:50:08,300 - 00:50:10,300] it was a very good question
+- [00:50:10,300 - 00:50:12,300] the same number of particles
+- [00:50:12,300 - 00:50:14,300] is always in that sphere
+- [00:50:14,300 - 00:50:16,300] so it doesn't change with time
+- [00:50:16,300 - 00:50:18,300] now let's write it in terms of
+- [00:50:18,300 - 00:50:20,300] the density of matter in the universe
+- [00:50:20,300 - 00:50:22,300] the density of matter in the universe
+- [00:50:22,300 - 00:50:24,300] is the mass per unit volume
+- [00:50:24,300 - 00:50:26,300] that does change with time
+- [00:50:26,300 - 00:50:28,300] as the universe evolves
+- [00:50:28,300 - 00:50:30,300] the material in the universe
+- [00:50:30,300 - 00:50:32,300] gets thinner and thinner
+- [00:50:32,300 - 00:50:34,300] this means per real volume
+- [00:50:34,300 - 00:50:36,300] real genuine volume
+- [00:50:36,300 - 00:50:38,300] measured in cubic meters
+- [00:50:38,300 - 00:50:40,300] so the amount of mass
+- [00:50:40,300 - 00:50:42,300] in a cubic meter
+- [00:50:42,300 - 00:50:44,300] that cubic meter stays fixed
+- [00:50:44,300 - 00:50:46,300] and the mass in the universe
+- [00:50:46,300 - 00:50:48,300] stays fixed
+- [00:50:48,300 - 00:50:50,300] the cubic meter is just a cubic meter
+- [00:50:50,300 - 00:50:52,300] the material moves out of it
+- [00:50:52,300 - 00:50:54,300] and the mass and the density
+- [00:50:54,300 - 00:50:56,300] does go down
+- [00:50:56,300 - 00:50:58,300] the total mass stays fixed
+- [00:50:58,300 - 00:51:00,300] the density decreases
+- [00:51:00,300 - 00:51:02,300] the density decreases
+- [00:51:02,300 - 00:51:04,300] the volume increases
+- [00:51:04,300 - 00:51:06,300] so this is the
+- [00:51:06,300 - 00:51:08,300] this is the
+- [00:51:08,300 - 00:51:10,300] mass per unit volume
+- [00:51:10,300 - 00:51:12,300] what is the
+- [00:51:12,300 - 00:51:14,300] total mass
+- [00:51:14,300 - 00:51:16,300] inside that shell
+- [00:51:16,300 - 00:51:18,300] the total mass inside that shell
+- [00:51:18,300 - 00:51:20,300] is the density
+- [00:51:20,300 - 00:51:22,300] rho is a standard notation
+- [00:51:22,300 - 00:51:24,300] for density
+- [00:51:24,300 - 00:51:26,300] is density times volume
+- [00:51:26,300 - 00:51:28,300] volume
+- [00:51:28,300 - 00:51:30,300] what's the volume of a sphere
+- [00:51:30,300 - 00:51:32,300] anybody know
+- [00:51:32,300 - 00:51:34,300] four thirds pi r cubed
+- [00:51:34,300 - 00:51:36,300] so four thirds
+- [00:51:36,300 - 00:51:38,300] pi
+- [00:51:38,300 - 00:51:40,300] rho r cubed
+- [00:51:40,300 - 00:51:42,300] that's m
+- [00:51:44,300 - 00:51:46,300] keeping in mind
+- [00:51:46,300 - 00:51:48,300] that rho
+- [00:51:48,300 - 00:51:50,300] is depends on time
+- [00:51:50,300 - 00:51:52,300] we'll discuss later
+- [00:51:52,300 - 00:51:54,300] how it depends on time
+- [00:51:54,300 - 00:51:56,300] but basically it depends on time
+- [00:51:56,300 - 00:51:58,300] just because the volume of the sphere increases
+- [00:51:58,300 - 00:52:00,300] and the mass doesn't increase
+- [00:52:00,300 - 00:52:02,300] so if the volume increases
+- [00:52:02,300 - 00:52:04,300] and the mass doesn't increase
+- [00:52:04,300 - 00:52:06,300] rho depends on time
+- [00:52:06,300 - 00:52:08,300] that's the total mass in there
+- [00:52:08,300 - 00:52:10,300] so now we can write down
+- [00:52:10,300 - 00:52:12,300] oh let's do this in steps first of all
+- [00:52:12,300 - 00:52:14,300] this is
+- [00:52:14,300 - 00:52:16,300] the formula for the mass inside the ball
+- [00:52:16,300 - 00:52:18,300] in the ball
+- [00:52:18,300 - 00:52:20,300] notice if I have zero on the right hand side
+- [00:52:20,300 - 00:52:22,300] and this is one of the reasons
+- [00:52:22,300 - 00:52:23,300] that I'm taking the case
+- [00:52:23,300 - 00:52:24,300] zero on the right hand side
+- [00:52:24,300 - 00:52:26,300] because it makes it a little bit easier
+- [00:52:26,300 - 00:52:28,300] we can divide
+- [00:52:28,300 - 00:52:30,300] by the mass of the projectile
+- [00:52:30,300 - 00:52:32,300] so let's do that
+- [00:52:32,300 - 00:52:34,300] let's just divide it out
+- [00:52:34,300 - 00:52:36,300] doesn't make any difference
+- [00:52:36,300 - 00:52:38,300] it doesn't matter
+- [00:52:38,300 - 00:52:40,300] if the mass of the projectile
+- [00:52:40,300 - 00:52:42,300] is equal to the volume
+- [00:52:42,300 - 00:52:44,300] it doesn't matter
+- [00:52:44,300 - 00:52:46,300] if that
+- [00:52:46,300 - 00:52:48,300] is a galaxy
+- [00:52:48,300 - 00:52:50,300] a star, a pebble
+- [00:52:50,300 - 00:52:52,300] we've just divided out
+- [00:52:52,300 - 00:52:54,300] its mass
+- [00:52:54,300 - 00:52:56,300] it's gotten out of the equation
+- [00:52:56,300 - 00:52:58,300] ok
+- [00:52:58,300 - 00:53:00,300] setting the difference of two things to zero
+- [00:53:00,300 - 00:53:01,300] is the same thing as
+- [00:53:01,300 - 00:53:02,300] setting them equal to each other
+- [00:53:02,300 - 00:53:04,300] so let's just do it this way
+- [00:53:08,300 - 00:53:10,300] and now let's plug in for the mass
+- [00:53:10,300 - 00:53:12,300] let's plug in
+- [00:53:12,300 - 00:53:14,300] for the mass of the projectile
+- [00:53:14,300 - 00:53:16,300] and we have zero
+- [00:53:16,300 - 00:53:18,300] so I don't think I want to
+- [00:53:18,300 - 00:53:20,300] mess up that equation any further
+- [00:53:20,300 - 00:53:22,300] let's leave it up there
+- [00:53:22,300 - 00:53:24,300] and work on it down here
+- [00:53:24,300 - 00:53:26,300] ok so let's just substitute now
+- [00:53:26,300 - 00:53:28,300] the equation in the box
+- [00:53:28,300 - 00:53:30,300] for capital M
+- [00:53:30,300 - 00:53:32,300] that says
+- [00:53:32,300 - 00:53:34,300] that one
+- [00:53:34,300 - 00:53:36,300] is equal to zero
+- [00:53:36,300 - 00:53:38,300] and that's the mass of the projectile
+- [00:53:38,300 - 00:53:40,300] and that's the mass of the projectile
+- [00:53:40,300 - 00:53:42,300] and that's the mass of the projectile
+- [00:53:42,300 - 00:53:44,300] one half
+- [00:53:44,300 - 00:53:46,300] the square of the velocity
+- [00:53:46,300 - 00:53:48,300] ok
+- [00:53:50,300 - 00:53:52,300] of the outgoing projectile
+- [00:53:52,300 - 00:53:54,300] is G
+- [00:53:54,300 - 00:53:56,300] over R
+- [00:53:56,300 - 00:53:58,300] and now let's put it in
+- [00:53:58,300 - 00:54:00,300] 4 pi over 3
+- [00:54:00,300 - 00:54:02,300] rho
+- [00:54:02,300 - 00:54:04,300] R cubed
+- [00:54:04,300 - 00:54:06,300] R cubed
+- [00:54:10,300 - 00:54:12,300] G is Newton's constant
+- [00:54:12,300 - 00:54:14,300] it came from the right hand side of the
+- [00:54:14,300 - 00:54:16,300] energy equation
+- [00:54:16,300 - 00:54:18,300] the R is also from the energy
+- [00:54:18,300 - 00:54:20,300] and then the rest of this
+- [00:54:20,300 - 00:54:22,300] is just the mass inside the shell
+- [00:54:22,300 - 00:54:24,300] of radius R
+- [00:54:28,300 - 00:54:30,300] ok
+- [00:54:30,300 - 00:54:32,300] now let's use Hubble's law
+- [00:54:32,300 - 00:54:34,300] Hubble's law
+- [00:54:34,300 - 00:54:36,300] says
+- [00:54:36,300 - 00:54:38,300] that the velocity
+- [00:54:38,300 - 00:54:40,300] is equal to the
+- [00:54:40,300 - 00:54:42,300] Hubble constant
+- [00:54:42,300 - 00:54:44,300] times the distance
+- [00:54:44,300 - 00:54:46,300] ok
+- [00:54:46,300 - 00:54:48,300] it can also be written in another way
+- [00:54:48,300 - 00:54:50,300] it can also be written in another way
+- [00:54:50,300 - 00:54:52,300] and I'm going to do it this way
+- [00:54:52,300 - 00:54:54,300] I'm going to write the velocity
+- [00:54:54,300 - 00:54:56,300] is equal to A dot over A
+- [00:54:56,300 - 00:54:58,300] times the distance
+- [00:54:58,300 - 00:55:00,300] because the Hubble constant is just the ratio
+- [00:55:00,300 - 00:55:02,300] A dot over A
+- [00:55:02,300 - 00:55:04,300] ok let's put it in the box
+- [00:55:04,300 - 00:55:06,300] plug that in and see what we get
+- [00:55:06,300 - 00:55:08,300] I guess I can continue
+- [00:55:08,300 - 00:55:10,300] to call it the Hubble constant
+- [00:55:10,300 - 00:55:12,300] we have one half
+- [00:55:12,300 - 00:55:14,300] the Hubble constant squared
+- [00:55:14,300 - 00:55:16,300] times the
+- [00:55:16,300 - 00:55:18,300] distance squared
+- [00:55:18,300 - 00:55:20,300] and the left hand side
+- [00:55:20,300 - 00:55:22,300] is proportional to the distance
+- [00:55:22,300 - 00:55:24,300] to that outgoing galaxy
+- [00:55:24,300 - 00:55:26,300] squared, why?
+- [00:55:26,300 - 00:55:28,300] because of Hubble's law
+- [00:55:28,300 - 00:55:30,300] now H of course depends
+- [00:55:30,300 - 00:55:32,300] on time, but
+- [00:55:32,300 - 00:55:34,300] we can use it in this equation
+- [00:55:34,300 - 00:55:36,300] and that's equal to G
+- [00:55:36,300 - 00:55:38,300] well let's take out the constants
+- [00:55:38,300 - 00:55:40,300] first
+- [00:55:40,300 - 00:55:42,300] four thirds pi
+- [00:55:42,300 - 00:55:44,300] the density of
+- [00:55:44,300 - 00:55:46,300] matter
+- [00:55:46,300 - 00:55:48,300] four thirds pi G
+- [00:55:48,300 - 00:55:50,300] density of matter
+- [00:55:50,300 - 00:55:52,300] four thirds pi G
+- [00:55:52,300 - 00:55:54,300] density of matter
+- [00:55:54,300 - 00:55:56,300] R cubed over R
+- [00:55:56,300 - 00:55:58,300] that's R squared
+- [00:56:04,300 - 00:56:06,300] oh that's kind of nice
+- [00:56:06,300 - 00:56:08,300] we have R squared
+- [00:56:08,300 - 00:56:10,300] on both sides of the equation
+- [00:56:10,300 - 00:56:12,300] that means
+- [00:56:12,300 - 00:56:14,300] we can cancel it out
+- [00:56:20,300 - 00:56:22,300] that's kind of interesting
+- [00:56:22,300 - 00:56:24,300] because what it tells us
+- [00:56:24,300 - 00:56:26,300] it had to cancel out
+- [00:56:26,300 - 00:56:28,300] I'll tell you why
+- [00:56:28,300 - 00:56:30,300] because the Hubble constant
+- [00:56:30,300 - 00:56:32,300] if we have some way of calculating it
+- [00:56:32,300 - 00:56:34,300] we can't cancel it out
+- [00:56:34,300 - 00:56:36,300] which we do now
+- [00:56:36,300 - 00:56:38,300] the Hubble constant can't depend on how far away
+- [00:56:38,300 - 00:56:40,300] the galaxy that we're studying is
+- [00:56:40,300 - 00:56:42,300] it's supposed to be the same
+- [00:56:42,300 - 00:56:44,300] for all the galaxies
+- [00:56:44,300 - 00:56:46,300] so it better work out that the equations
+- [00:56:46,300 - 00:56:48,300] if they're going to tell us
+- [00:56:48,300 - 00:56:50,300] what the Hubble constant is
+- [00:56:50,300 - 00:56:52,300] in terms of other things
+- [00:56:52,300 - 00:56:54,300] it had better not depend on how far away
+- [00:56:54,300 - 00:56:56,300] the galaxy that we're studying is
+- [00:56:56,300 - 00:56:58,300] and it doesn't
+- [00:56:58,300 - 00:57:00,300] we could have let
+- [00:57:00,300 - 00:57:02,300] we could have
+- [00:57:02,300 - 00:57:04,300] that's us, we could have used this galaxy
+- [00:57:04,300 - 00:57:06,300] we could have used this galaxy
+- [00:57:06,300 - 00:57:08,300] they would all give us the same formula
+- [00:57:08,300 - 00:57:10,300] for the Hubble constant
+- [00:57:10,300 - 00:57:12,300] and what does it say?
+- [00:57:12,300 - 00:57:14,300] it says that the Hubble constant
+- [00:57:14,300 - 00:57:16,300] is in some way
+- [00:57:16,300 - 00:57:18,300] not some way
+- [00:57:18,300 - 00:57:20,300] the square of the Hubble constant
+- [00:57:20,300 - 00:57:22,300] let's write it in the traditional way
+- [00:57:22,300 - 00:57:24,300] the square of the Hubble constant
+- [00:57:24,300 - 00:57:26,300] is 8 pi over 3
+- [00:57:26,300 - 00:57:28,300] Newton's constant
+- [00:57:28,300 - 00:57:30,300] times the density of matter
+- [00:57:30,300 - 00:57:32,300] in the universe
+- [00:57:32,300 - 00:57:34,300] times the density of mass in the universe
+- [00:57:34,300 - 00:57:38,300] it blows in a function of position
+- [00:57:38,300 - 00:57:40,300] it's not
+- [00:57:40,300 - 00:57:42,300] it's not
+- [00:57:48,300 - 00:57:50,300] on large enough scales
+- [00:57:50,300 - 00:57:52,300] the density of material
+- [00:57:52,300 - 00:57:54,300] in the universe is constant
+- [00:57:54,300 - 00:57:56,300] it's a function of time
+- [00:57:56,300 - 00:57:58,300] it's a function of time
+- [00:57:58,300 - 00:58:00,300] and so is the Hubble constant
+- [00:58:00,300 - 00:58:02,300] we could write it that's right
+- [00:58:02,300 - 00:58:04,300] we could write this another way
+- [00:58:04,300 - 00:58:06,300] we could write it as
+- [00:58:06,300 - 00:58:08,300] a dot over a
+- [00:58:08,300 - 00:58:10,300] squared
+- [00:58:10,300 - 00:58:12,300] is 8 pi g over 3
+- [00:58:12,300 - 00:58:14,300] times rho of t
+- [00:58:18,300 - 00:58:20,300] you have to assume that
+- [00:58:20,300 - 00:58:22,300] that v was the escape
+- [00:58:22,300 - 00:58:24,300] loss of the universe
+- [00:58:24,300 - 00:58:26,300] or equivalently
+- [00:58:26,300 - 00:58:28,300] that the energy was zero
+- [00:58:28,300 - 00:58:30,300] is there evidence that that's true?
+- [00:58:30,300 - 00:58:32,300] yeah
+- [00:58:34,300 - 00:58:36,300] I'm going to tell you
+- [00:58:36,300 - 00:58:38,300] what the evidence is
+- [00:58:38,300 - 00:58:40,300] well
+- [00:58:40,300 - 00:58:42,300] there's one simple piece
+- [00:58:42,300 - 00:58:44,300] of evidence
+- [00:58:44,300 - 00:58:46,300] we can measure the Hubble constant
+- [00:58:46,300 - 00:58:48,300] and we can measure
+- [00:58:48,300 - 00:58:50,300] the density of matter
+- [00:58:50,300 - 00:58:52,300] in the universe
+- [00:58:58,300 - 00:59:00,300] I'm not going to tell you
+- [00:59:00,300 - 00:59:02,300] whether they're the same or not
+- [00:59:02,300 - 00:59:06,300] that's because I haven't told you
+- [00:59:06,300 - 00:59:08,300] about dark energy yet
+- [00:59:08,300 - 00:59:10,300] or dark
+- [00:59:10,300 - 00:59:12,300] let's put
+- [00:59:12,300 - 00:59:14,300] ok let's
+- [00:59:14,300 - 00:59:16,300] you know but
+- [00:59:16,300 - 00:59:18,300] when all forms of mass
+- [00:59:18,300 - 00:59:20,300] are accounted for
+- [00:59:20,300 - 00:59:22,300] remember first of all
+- [00:59:22,300 - 00:59:24,300] you hear the term dark energy all the time
+- [00:59:24,300 - 00:59:26,300] energy and mass are the same thing
+- [00:59:26,300 - 00:59:28,300] E equals mc squared
+- [00:59:32,300 - 00:59:34,300] c is just a conversion factor
+- [00:59:34,300 - 00:59:36,300] from energy to mass
+- [00:59:36,300 - 00:59:38,300] so when I speak of mass
+- [00:59:38,300 - 00:59:40,300] I could also be speaking of energy
+- [00:59:40,300 - 00:59:42,300] in units in which the speed of light is one
+- [00:59:42,300 - 00:59:44,300] rho can be taken to be
+- [00:59:44,300 - 00:59:46,300] energy density
+- [00:59:46,300 - 00:59:48,300] energy density, mass density, same thing
+- [00:59:48,300 - 00:59:50,300] and there are a variety
+- [00:59:50,300 - 00:59:52,300] of different kinds of energy in the universe
+- [00:59:52,300 - 00:59:54,300] different kinds of mass
+- [00:59:54,300 - 00:59:56,300] different kinds of energy
+- [00:59:56,300 - 00:59:58,300] there's the masses of stars
+- [00:59:58,300 - 01:00:00,300] there's
+- [01:00:00,300 - 01:00:02,300] intergalactic dust
+- [01:00:02,300 - 01:00:04,300] there's something called dark matter
+- [01:00:04,300 - 01:00:06,300] and on top of everything else
+- [01:00:06,300 - 01:00:08,300] there's vacuum energy
+- [01:00:08,300 - 01:00:10,300] when all of it is added up
+- [01:00:10,300 - 01:00:12,300] the answer is yes
+- [01:00:12,300 - 01:00:14,300] these two equations look like they balance
+- [01:00:14,300 - 01:00:16,300] to about one percent
+- [01:00:16,300 - 01:00:18,300] so
+- [01:00:28,300 - 01:00:30,300] we could keep
+- [01:00:30,300 - 01:00:32,300] the other term that I threw away
+- [01:00:32,300 - 01:00:34,300] constant energy here
+- [01:00:34,300 - 01:00:36,300] we could keep it
+- [01:00:36,300 - 01:00:38,300] and I will tell you eventually what it does
+- [01:00:38,300 - 01:00:40,300] what it does
+- [01:00:40,300 - 01:00:42,300] okay
+- [01:00:42,300 - 01:00:44,300] so yeah
+- [01:00:44,300 - 01:00:46,300] you can
+- [01:00:46,300 - 01:00:48,300] first play the game of finding all the energy
+- [01:00:48,300 - 01:00:50,300] in the universe, everything we know about
+- [01:00:50,300 - 01:00:52,300] putting it on the right hand side
+- [01:00:52,300 - 01:00:54,300] measuring Hubble's constant
+- [01:00:54,300 - 01:00:56,300] and after many decades
+- [01:00:56,300 - 01:00:58,300] and finding this kind of energy
+- [01:00:58,300 - 01:01:00,300] and that kind of energy
+- [01:01:00,300 - 01:01:02,300] and so forth
+- [01:01:02,300 - 01:01:04,300] and it looks good
+- [01:01:04,300 - 01:01:06,300] okay
+- [01:01:10,300 - 01:01:12,300] however
+- [01:01:12,300 - 01:01:14,300] it does not mean
+- [01:01:14,300 - 01:01:16,300] that the universe is at the escape velocity
+- [01:01:16,300 - 01:01:18,300] because I have made
+- [01:01:18,300 - 01:01:20,300] we're going to make
+- [01:01:20,300 - 01:01:22,300] some
+- [01:01:22,300 - 01:01:23,300] I'm going to show you
+- [01:01:23,300 - 01:01:24,300] some assumptions that came into that
+- [01:01:24,300 - 01:01:26,300] now how does rho
+- [01:01:26,300 - 01:01:28,300] depend on time
+- [01:01:28,300 - 01:01:30,300] that's the big one
+- [01:01:30,300 - 01:01:32,300] how does rho depend on time
+- [01:01:32,300 - 01:01:34,300] I'm just going to do a quick
+- [01:01:34,300 - 01:01:36,300] I'm going to go through this
+- [01:01:36,300 - 01:01:38,300] rho
+- [01:01:38,300 - 01:01:40,300] rho
+- [01:01:40,300 - 01:01:42,300] rho
+- [01:01:42,300 - 01:01:44,300] rho
+- [01:01:44,300 - 01:01:46,300] rho
+- [01:01:46,300 - 01:01:48,300] rho
+- [01:01:48,300 - 01:01:50,300] rho
+- [01:01:50,300 - 01:01:52,300] rho
+- [01:01:52,300 - 01:01:54,300] rho
+- [01:01:54,300 - 01:01:56,300] rho
+- [01:01:56,300 - 01:01:58,300] rho
+- [01:01:58,300 - 01:02:00,300] rho
+- [01:02:00,300 - 01:02:03,800] There are various kinds of situations. Let's
+- [01:02:03,800 - 01:02:07,300] take the first situation, the simplest situation.
+- [01:02:07,300 - 01:02:10,300] The box is filled with particles.
+- [01:02:10,300 - 01:02:13,300] The particles aren't moving very fast.
+- [01:02:13,300 - 01:02:15,800] They're more or less at rest. They're
+- [01:02:15,800 - 01:02:18,300] what we call galaxies or what else.
+- [01:02:18,300 - 01:02:22,300] They're at rest relative to the coordinates x.
+- [01:02:30,300 - 01:02:38,300] So we have a given box.
+- [01:02:38,300 - 01:02:41,800] It's delta x on this side, delta y on
+- [01:02:41,800 - 01:02:45,300] this side, and delta z in the other direction.
+- [01:02:45,300 - 01:02:48,300] And we're following the box as it expands.
+- [01:02:48,300 - 01:02:51,300] It has a certain number of particles in it.
+- [01:02:51,300 - 01:02:54,300] And let's say that number of particles stays fixed.
+- [01:02:54,300 - 01:02:59,300] Each particle has a mass, and they're not moving
+- [01:02:59,300 - 01:03:00,300] relative to the coordinates x.
+- [01:03:00,300 - 01:03:04,300] Then what's the energy in there?
+- [01:03:04,300 - 01:03:06,800] The energy is just the total mass, which
+- [01:03:06,800 - 01:03:09,300] is the number of particles, which stays fixed,
+- [01:03:09,300 - 01:03:11,300] divided by the volume.
+- [01:03:11,300 - 01:03:13,300] But what is the volume?
+- [01:03:13,300 - 01:03:18,300] The volume is the size of
+- [01:03:18,300 - 01:03:23,300] the box delta x times a cubed.
+- [01:03:23,300 - 01:03:29,300] So whatever is in that box,
+- [01:03:29,300 - 01:03:31,800] the density gets diluted by the
+- [01:03:31,800 - 01:03:34,300] fact that a grows with time.
+- [01:03:34,300 - 01:03:36,300] This is just the statement that
+- [01:03:36,300 - 01:03:38,300] the box gets bigger and bigger.
+- [01:03:38,300 - 01:03:40,300] A given amount of mass in
+- [01:03:40,300 - 01:03:42,300] a box that gets bigger and bigger,
+- [01:03:42,300 - 01:03:45,300] the density will get smaller and smaller.
+- [01:03:45,300 - 01:03:47,800] And it will get smaller and smaller
+- [01:03:47,800 - 01:03:50,300] according to 1 divided by a cubed.
+- [01:03:50,300 - 01:03:52,800] So we can say that the
+- [01:03:52,800 - 01:03:55,300] density of mass in the universe
+- [01:03:55,300 - 01:03:58,300] is some constant divided by a cubed.
+- [01:03:58,300 - 01:04:07,300] What is the constant here?
+- [01:04:07,300 - 01:04:11,300] Well, there's one simple way to specify the constant.
+- [01:04:11,300 - 01:04:14,300] The simple way to specify the constant is to say,
+- [01:04:14,300 - 01:04:17,300] what is the density of mass today?
+- [01:04:17,300 - 01:04:20,300] On the left-hand side, I could
+- [01:04:20,300 - 01:04:23,300] put the density of mass today.
+- [01:04:23,300 - 01:04:25,300] On the right-hand side, I
+- [01:04:25,300 - 01:04:27,300] could put the scale factor today.
+- [01:04:28,300 - 01:04:37,300] Now I can multiply it.
+- [01:04:37,300 - 01:04:39,300] Let's see, what do we want to do with it?
+- [01:04:39,300 - 01:04:43,300] Alright, that's a correct equation.
+- [01:04:43,300 - 01:04:45,300] Now, how about at any time?
+- [01:04:45,300 - 01:04:48,300] Let's write the same equation except at any time.
+- [01:04:48,300 - 01:04:51,800] Rho of t is equal to
+- [01:04:51,800 - 01:04:55,300] c divided by a cubed of t.
+- [01:04:55,300 - 01:04:57,300] And let's divide these two equations.
+- [01:04:57,300 - 01:05:00,300] This one by this one.
+- [01:05:00,300 - 01:05:06,300] That tells us that rho at any time t
+- [01:05:06,300 - 01:05:11,300] divided by rho today,
+- [01:05:11,300 - 01:05:14,300] that's this divided by this,
+- [01:05:14,300 - 01:05:18,300] is the ratio, the c's cancel out,
+- [01:05:18,300 - 01:05:24,300] and it's just the ratio
+- [01:05:24,300 - 01:05:26,300] a cubed today,
+- [01:05:27,300 - 01:05:36,300] divided by a cubed of t.
+- [01:05:36,300 - 01:05:39,300] Rho of t divided by rho today
+- [01:05:39,300 - 01:05:43,300] is a cubed today divided by a cubed of t.
+- [01:05:43,300 - 01:05:45,800] And that's because rho in each case
+- [01:05:45,800 - 01:05:48,300] is proportional to one over a cubed.
+- [01:05:48,300 - 01:05:51,300] Okay, so just dividing these two equations.
+- [01:05:51,300 - 01:05:54,300] And now we can write that at any time,
+- [01:05:54,300 - 01:05:56,300] the density of matter,
+- [01:05:56,300 - 01:05:58,300] the density rho,
+- [01:05:58,300 - 01:06:01,300] is just whatever it is today
+- [01:06:04,300 - 01:06:09,300] times the ratio of the scale factor today
+- [01:06:09,300 - 01:06:12,300] and the scale factor at an arbitrary time.
+- [01:06:12,300 - 01:06:14,300] See?
+- [01:06:19,300 - 01:06:21,300] The scale factor today is going
+- [01:06:21,300 - 01:06:23,300] to drop out of all the equations.
+- [01:06:23,300 - 01:06:24,800] But basically the thing that it tells
+- [01:06:24,800 - 01:06:26,300] us is that the density of matter,
+- [01:06:26,300 - 01:06:28,300] the density of material,
+- [01:06:28,300 - 01:06:31,300] decreases like one over a cubed.
+- [01:06:31,300 - 01:06:34,300] We can now try to put that into here.
+- [01:06:34,300 - 01:06:36,300] We have on the left hand side
+- [01:06:36,300 - 01:06:39,300] something involving the time derivative of a,
+- [01:06:39,300 - 01:06:41,300] a itself,
+- [01:06:41,300 - 01:06:43,300] and this unknown rho of t.
+- [01:06:43,300 - 01:06:47,300] But now we know something about rho of t.
+- [01:06:47,300 - 01:06:49,300] We know,
+- [01:06:49,300 - 01:06:51,300] let's write it out again,
+- [01:06:51,300 - 01:06:54,300] a dot divided by a squared
+- [01:06:54,300 - 01:06:57,300] is equal to eight pi g over three.
+- [01:06:57,300 - 01:06:59,300] And now,
+- [01:06:59,300 - 01:07:02,300] rho today, which we measure,
+- [01:07:02,300 - 01:07:04,300] anybody know what the density of material,
+- [01:07:04,300 - 01:07:07,300] the density of mass in the universe is roughly?
+- [01:07:07,300 - 01:07:09,800] It seems like you have to
+- [01:07:09,800 - 01:07:12,300] guess how many neutrinos there are.
+- [01:07:12,300 - 01:07:15,300] Yeah, yeah, but that's negligible, the neutrino density.
+- [01:07:15,300 - 01:07:19,300] One atom per cubic meter.
+- [01:07:19,300 - 01:07:21,300] One atom per cubic meter.
+- [01:07:21,300 - 01:07:22,300] No.
+- [01:07:22,300 - 01:07:24,300] No.
+- [01:07:24,300 - 01:07:26,300] Well that's not all of it,
+- [01:07:26,300 - 01:07:28,800] because it leaves out the
+- [01:07:28,800 - 01:07:31,300] dark matter and the dark energy.
+- [01:07:31,300 - 01:07:35,300] And if you include it all, it's about fifty atoms.
+- [01:07:35,300 - 01:07:36,300] But,
+- [01:07:36,300 - 01:07:39,300] it's of that order of magnitude,
+- [01:07:39,300 - 01:07:41,300] and it's something that in principle,
+- [01:07:41,300 - 01:07:45,300] we could, in principle we could measure it directly.
+- [01:07:45,300 - 01:07:47,300] In principle.
+- [01:07:47,300 - 01:07:50,300] Direct measure of all the energy around.
+- [01:07:50,300 - 01:07:52,300] So,
+- [01:07:52,300 - 01:07:54,300] what are we doing?
+- [01:07:54,300 - 01:07:56,300] We have rho today,
+- [01:07:56,300 - 01:07:59,300] we have a cubed today,
+- [01:08:02,300 - 01:08:05,300] divided by a cubed of t.
+- [01:08:06,300 - 01:08:07,300] Now,
+- [01:08:07,300 - 01:08:10,300] eight pi g three rho today,
+- [01:08:10,300 - 01:08:12,300] and even a cubed today,
+- [01:08:12,300 - 01:08:14,300] are constants.
+- [01:08:14,300 - 01:08:17,300] That is to say they don't vary with time.
+- [01:08:17,300 - 01:08:19,300] Rho, of course rho varies,
+- [01:08:19,300 - 01:08:21,300] but rho today is just rho today.
+- [01:08:21,300 - 01:08:23,300] It's just a number that we measure.
+- [01:08:23,300 - 01:08:24,300] What about a today?
+- [01:08:24,300 - 01:08:26,300] It is just whatever a is today.
+- [01:08:26,300 - 01:08:27,300] Okay?
+- [01:08:27,300 - 01:08:28,300] So,
+- [01:08:28,300 - 01:08:30,300] it's just frozen,
+- [01:08:30,300 - 01:08:31,300] it doesn't change with time.
+- [01:08:31,300 - 01:08:33,300] The only things which change in time,
+- [01:08:33,300 - 01:08:35,300] are,
+- [01:08:35,300 - 01:08:36,300] a,
+- [01:08:36,300 - 01:08:37,300] a dot,
+- [01:08:37,300 - 01:08:39,300] and a cubed over here.
+- [01:08:39,300 - 01:08:41,300] So altogether we have an
+- [01:08:41,300 - 01:08:43,300] equation which looks something like this.
+- [01:08:43,300 - 01:08:45,300] a dot over a,
+- [01:08:45,300 - 01:08:47,300] squared,
+- [01:08:47,300 - 01:08:49,300] is equal to some big constant,
+- [01:08:49,300 - 01:08:51,300] let's just call that constant c,
+- [01:08:51,300 - 01:08:54,300] it contains eight pi g three rho today,
+- [01:08:54,300 - 01:08:55,300] a cubed today,
+- [01:08:55,300 - 01:08:58,300] all those things which don't change with time,
+- [01:08:58,300 - 01:09:01,300] divided by a cubed.
+- [01:09:01,300 - 01:09:05,300] This is a differential equation,
+- [01:09:05,300 - 01:09:08,300] that in principle will tell
+- [01:09:08,300 - 01:09:11,300] us how a varies with time.
+- [01:09:11,300 - 01:09:12,300] I'm going to solve it for you.
+- [01:09:12,300 - 01:09:14,300] Well, let's just solve it.
+- [01:09:14,300 - 01:09:17,300] We'll solve it, it's easy to solve.
+- [01:09:17,300 - 01:09:22,300] The first thing,
+- [01:09:22,300 - 01:09:28,300] let's just multiply on both sides by a squared,
+- [01:09:28,300 - 01:09:30,300] to get the a squared out
+- [01:09:30,300 - 01:09:32,300] of the denominator on both sides.
+- [01:09:32,300 - 01:09:33,300] So, let's do that.
+- [01:09:33,300 - 01:09:35,300] We have a dot squared,
+- [01:09:35,300 - 01:09:36,300] let's put it over here,
+- [01:09:36,300 - 01:09:40,300] a dot squared is equal to c,
+- [01:09:40,300 - 01:09:43,300] I think it's just divided by a.
+- [01:09:43,300 - 01:09:44,300] Alright?
+- [01:09:44,300 - 01:09:47,300] I've multiplied on both sides by a squared.
+- [01:09:47,300 - 01:09:54,300] We can take the square root.
+- [01:09:54,300 - 01:09:58,300] The square root of a constant is just another constant,
+- [01:09:58,300 - 01:09:59,800] and what it says is
+- [01:09:59,800 - 01:10:01,300] that the time derivative of a
+- [01:10:01,300 - 01:10:04,300] is proportional to one over the square root of a.
+- [01:10:04,300 - 01:10:08,300] Let's try,
+- [01:10:08,300 - 01:10:10,300] rather than to solve it
+- [01:10:10,300 - 01:10:12,300] by doing integrals and so forth,
+- [01:10:12,300 - 01:10:15,300] let's just try to solve it by saying
+- [01:10:15,300 - 01:10:16,300] a
+- [01:10:16,300 - 01:10:20,300] is some power of the time.
+- [01:10:24,300 - 01:10:27,300] Some power, some coefficient,
+- [01:10:27,300 - 01:10:29,300] some coefficient, another constant,
+- [01:10:29,300 - 01:10:31,300] give me another name for a constant.
+- [01:10:31,300 - 01:10:33,300] k.
+- [01:10:33,300 - 01:10:35,300] k times t to the p.
+- [01:10:39,300 - 01:10:41,300] What is a dot?
+- [01:10:42,300 - 01:10:44,300] A dot
+- [01:10:44,300 - 01:10:46,300] equals kp,
+- [01:10:46,300 - 01:10:53,300] t to the p minus one, right?
+- [01:10:53,300 - 01:10:55,300] And,
+- [01:10:55,300 - 01:10:57,300] on the right hand side,
+- [01:10:57,300 - 01:10:59,300] we have the square root of this constant,
+- [01:10:59,300 - 01:11:00,800] and now we have one divided
+- [01:11:00,800 - 01:11:02,300] by the square root of a,
+- [01:11:02,300 - 01:11:09,300] which is a to the minus one half.
+- [01:11:09,300 - 01:11:11,300] There are two things that I don't know.
+- [01:11:11,300 - 01:11:13,300] I don't know the constant k,
+- [01:11:13,300 - 01:11:15,300] and I don't know the power t.
+- [01:11:15,300 - 01:11:18,300] But now I look at this equation here,
+- [01:11:18,300 - 01:11:20,300] and there's only,
+- [01:11:20,300 - 01:11:21,300] sorry, this is,
+- [01:11:21,300 - 01:11:22,300] did I make a mistake here?
+- [01:11:22,300 - 01:11:24,300] Not,
+- [01:11:24,300 - 01:11:25,300] sorry,
+- [01:11:25,300 - 01:11:27,300] let's do this right, sorry.
+- [01:11:27,300 - 01:11:28,300] Mistake.
+- [01:11:28,300 - 01:11:30,300] Let's put down,
+- [01:11:30,300 - 01:11:32,300] it is a to the minus one half,
+- [01:11:32,300 - 01:11:34,300] but a to the minus one half
+- [01:11:34,300 - 01:11:36,300] is k to the minus one half,
+- [01:11:36,300 - 01:11:39,300] t to the minus p over two.
+- [01:11:39,300 - 01:11:41,300] a to the one half
+- [01:11:41,300 - 01:11:43,300] is k to the one half,
+- [01:11:43,300 - 01:11:44,300] p to the one half.
+- [01:11:44,300 - 01:11:48,300] p to the, sorry, t to the p over two.
+- [01:11:48,300 - 01:11:49,300] All right?
+- [01:11:49,300 - 01:11:50,300] So I just plugged in,
+- [01:11:50,300 - 01:11:52,300] for a to the minus one half,
+- [01:11:52,300 - 01:11:54,300] k to the minus one half,
+- [01:11:54,300 - 01:11:56,300] and t to the minus p over two.
+- [01:11:56,300 - 01:11:58,300] For this equation to make sense,
+- [01:11:58,300 - 01:12:00,300] two things have to match.
+- [01:12:00,300 - 01:12:03,300] The powers of t have to match.
+- [01:12:03,300 - 01:12:05,300] That would just tell us that the
+- [01:12:05,300 - 01:12:07,300] left hand side and the right hand side
+- [01:12:07,300 - 01:12:10,300] vary the same way with time,
+- [01:12:10,300 - 01:12:13,300] and the coefficients have to be the same.
+- [01:12:14,300 - 01:12:17,800] That'll be enough to determine
+- [01:12:17,800 - 01:12:21,300] both the power and the coefficient.
+- [01:12:21,300 - 01:12:23,300] So let's determine the power.
+- [01:12:23,300 - 01:12:27,300] The power says that p minus one
+- [01:12:27,300 - 01:12:32,300] equals minus p over two.
+- [01:12:32,300 - 01:12:34,800] I'm just equating p minus
+- [01:12:34,800 - 01:12:37,300] one to minus p over two,
+- [01:12:37,300 - 01:12:38,800] to make sure that the left
+- [01:12:38,800 - 01:12:40,300] hand side and the right hand side
+- [01:12:40,300 - 01:12:43,300] vary the same way with time.
+- [01:12:43,300 - 01:12:45,300] So what does that give?
+- [01:12:45,300 - 01:12:48,300] That gives p is equal to one,
+- [01:12:48,300 - 01:12:52,300] let's get all the p's over to the left side,
+- [01:12:52,300 - 01:12:55,300] so that's three p over two
+- [01:12:55,300 - 01:12:57,300] is equal to one,
+- [01:12:57,300 - 01:13:01,300] or p equals two thirds.
+- [01:13:03,300 - 01:13:05,300] All right, what does that tell us?
+- [01:13:05,300 - 01:13:10,300] That tells us that the universe expands
+- [01:13:10,300 - 01:13:12,300] like p to the two thirds.
+- [01:13:12,300 - 01:13:15,300] t to the two thirds.
+- [01:13:15,300 - 01:13:18,300] t to the two thirds
+- [01:13:18,300 - 01:13:21,300] is not as fast as just t.
+- [01:13:21,300 - 01:13:23,300] t to the two thirds
+- [01:13:23,300 - 01:13:25,300] increases more slowly than t itself.
+- [01:13:25,300 - 01:13:28,300] It's bigger than t square root of t.
+- [01:13:28,300 - 01:13:30,300] What it is is just what it is.
+- [01:13:30,300 - 01:13:33,300] a grows like t to the two thirds.
+- [01:13:33,300 - 01:13:36,300] So it just gets bigger and bigger and bigger
+- [01:13:36,300 - 01:13:39,300] in this manner here.
+- [01:13:39,300 - 01:13:41,300] Okay, now we know what p is.
+- [01:13:41,300 - 01:13:43,300] p is two thirds.
+- [01:13:43,300 - 01:13:45,300] We can look at the constants,
+- [01:13:45,300 - 01:13:47,300] the coefficients.
+- [01:13:47,300 - 01:13:49,300] So that says, let's put it over here,
+- [01:13:49,300 - 01:13:57,300] kp, and p is two thirds,
+- [01:13:57,300 - 01:14:00,300] two thirds k
+- [01:14:00,300 - 01:14:03,300] is equal
+- [01:14:03,300 - 01:14:05,300] to the square root of c,
+- [01:14:05,300 - 01:14:07,300] I've forgotten what c is by now,
+- [01:14:07,300 - 01:14:09,300] times k to the one half.
+- [01:14:09,300 - 01:14:12,300] So now we have,
+- [01:14:12,300 - 01:14:14,300] we can divide by k to the one half,
+- [01:14:14,300 - 01:14:18,300] we have k to the one half,
+- [01:14:18,300 - 01:14:21,300] and we have
+- [01:14:21,300 - 01:14:26,300] k equals c times nine over four.
+- [01:14:29,300 - 01:14:30,300] What was c?
+- [01:14:30,300 - 01:14:33,300] Anybody remember what c is by this time?
+- [01:14:36,300 - 01:14:37,300] Yeah.
+- [01:14:39,300 - 01:14:42,300] Okay, let's try to see what it says.
+- [01:14:45,300 - 01:14:47,300] Let's come over to here and,
+- [01:14:47,300 - 01:14:48,300] I don't know what it says,
+- [01:14:48,300 - 01:14:50,300] we're going to find out.
+- [01:14:50,300 - 01:14:54,300] Let's see what it says.
+- [01:14:54,300 - 01:14:57,300] Okay, so we have k equals nine fourths c.
+- [01:14:57,300 - 01:15:01,300] k equals nine fourths,
+- [01:15:01,300 - 01:15:03,300] which is not so interesting,
+- [01:15:03,300 - 01:15:04,300] but what is c now?
+- [01:15:04,300 - 01:15:05,300] I've forgotten.
+- [01:15:05,300 - 01:15:07,300] Can somebody remind me?
+- [01:15:07,300 - 01:15:08,300] Where is it?
+- [01:15:09,300 - 01:15:11,300] Again, start over.
+- [01:15:11,300 - 01:15:12,300] What is it?
+- [01:15:12,300 - 01:15:14,300] Eight pi,
+- [01:15:14,300 - 01:15:17,300] g over three,
+- [01:15:17,300 - 01:15:21,300] rho today,
+- [01:15:21,300 - 01:15:27,300] a cubed today.
+- [01:15:27,300 - 01:15:31,300] Whew, what is this going to say?
+- [01:15:31,300 - 01:15:36,300] And now, k times t to the two thirds,
+- [01:15:36,300 - 01:15:44,300] t to the two thirds equals k.
+- [01:15:49,300 - 01:15:51,300] Something's wrong with this equation.
+- [01:15:54,300 - 01:15:55,300] t to the two thirds.
+- [01:15:55,300 - 01:15:56,300] I don't know what's wrong with it.
+- [01:15:56,300 - 01:15:57,300] There's something wrong with it.
+- [01:16:00,300 - 01:16:03,300] Um, oh.
+- [01:16:05,300 - 01:16:09,300] No, it looks right.
+- [01:16:09,300 - 01:16:10,300] It looks right.
+- [01:16:10,300 - 01:16:12,300] But the main thing here is
+- [01:16:12,300 - 01:16:14,300] we've determined how the universe expands.
+- [01:16:14,300 - 01:16:16,800] It expands with a scale factor that
+- [01:16:16,800 - 01:16:19,300] increases as the two thirds power of time,
+- [01:16:19,300 - 01:16:23,300] a to the two thirds.
+- [01:16:23,300 - 01:16:27,300] a equals t to the two thirds.
+- [01:16:27,300 - 01:16:30,300] With some known coefficient.
+- [01:16:30,300 - 01:16:33,300] Um, I'm, did I do something wrong?
+- [01:16:33,300 - 01:16:35,800] Was there some, this, I don't
+- [01:16:35,800 - 01:16:38,300] like the look of this equation.
+- [01:16:38,300 - 01:16:42,800] Um, we should have the same power
+- [01:16:42,800 - 01:16:47,300] of a on both sides of this equation.
+- [01:16:52,300 - 01:16:53,300] Well, you got it wrong.
+- [01:16:54,300 - 01:16:55,300] How'd you do that?
+- [01:17:00,300 - 01:17:02,300] Well, let's, let's do it a different way.
+- [01:17:02,300 - 01:17:04,300] Let's do it a different way.
+- [01:17:04,300 - 01:17:08,300] We had that a dot, a dot over a
+- [01:17:08,300 - 01:17:12,300] was proportional to some constant divided by a, I think.
+- [01:17:12,300 - 01:17:15,300] Is that right?
+- [01:17:16,300 - 01:17:18,300] Hm?
+- [01:17:19,300 - 01:17:20,300] Square root of a.
+- [01:17:21,300 - 01:17:23,300] Square root of a.
+- [01:17:23,300 - 01:17:26,300] So, let's multiply by, um, let's
+- [01:17:26,300 - 01:17:29,300] multiply by a to the one half.
+- [01:17:29,300 - 01:17:32,300] Multiplying by a to the one half here,
+- [01:17:32,300 - 01:17:34,300] would give us a dot,
+- [01:17:34,300 - 01:17:36,300] alright, so that would give us,
+- [01:17:36,300 - 01:17:38,300] no, no, let's not do that.
+- [01:17:40,300 - 01:17:42,300] a to the one half, what is it?
+- [01:17:44,300 - 01:17:46,300] It was c over a cubed.
+- [01:17:50,300 - 01:17:52,300] I've lost track.
+- [01:17:52,300 - 01:17:54,300] I've lost track, um, oh, oh, here it is.
+- [01:17:54,300 - 01:17:58,300] a dot, yeah, yeah, yeah, a dot over a squared.
+- [01:17:58,300 - 01:18:00,300] a dot over a squared.
+- [01:18:00,300 - 01:18:02,800] So, we first multiplied by a squared, get
+- [01:18:02,800 - 01:18:05,300] rid of the a squares in the denominator.
+- [01:18:05,300 - 01:18:08,300] That gave us a dot squared, that's what
+- [01:18:08,300 - 01:18:11,300] I meant to write down, is c over a.
+- [01:18:11,300 - 01:18:13,300] Now I think I have it right?
+- [01:18:14,300 - 01:18:17,300] Alright, and this is d a
+- [01:18:17,300 - 01:18:20,300] and d a by d t squared.
+- [01:18:20,300 - 01:18:23,800] Let's multiply it by a, and now
+- [01:18:23,800 - 01:18:27,300] take the square root of both sides.
+- [01:18:27,300 - 01:18:28,800] Square root of both sides
+- [01:18:28,800 - 01:18:30,300] gives us square root of a,
+- [01:18:30,300 - 01:18:36,300] d a d t equals a constant, alright?
+- [01:18:36,300 - 01:18:39,300] Square root of a constant is just another constant.
+- [01:18:39,300 - 01:18:47,300] Now let's multiply by d t.
+- [01:18:47,300 - 01:18:52,300] And integrate, what's the integral of constant times d t?
+- [01:18:52,300 - 01:18:59,300] Constant times t, c times t, constant.
+- [01:18:59,300 - 01:19:03,300] What's the integral of a to the one half?
+- [01:19:03,300 - 01:19:07,300] a to the three halves.
+- [01:19:07,300 - 01:19:10,300] So a to the three halves is proportional to t,
+- [01:19:10,300 - 01:19:12,800] and t is, and a is
+- [01:19:12,800 - 01:19:15,300] proportional to t to the two thirds.
+- [01:19:15,300 - 01:19:16,300] Okay?
+- [01:19:16,300 - 01:19:18,300] So two thirds is right.
+- [01:19:18,300 - 01:19:22,800] So this is an example of how nothing
+- [01:19:22,800 - 01:19:27,300] more than Newton's equations is enough to tell you
+- [01:19:27,300 - 01:19:32,300] the expansion properties of the universe.
+- [01:19:32,300 - 01:19:36,300] And it just continues to expand.
+- [01:19:36,300 - 01:19:40,300] It's interesting to ask what happens to the Hubble constant.
+- [01:19:40,300 - 01:19:46,300] What will happen to the Hubble constant with time?
+- [01:19:46,300 - 01:19:50,300] We know that a is some constant,
+- [01:19:50,300 - 01:19:52,300] all of these constants are different,
+- [01:19:52,300 - 01:19:53,800] but we know that it's a
+- [01:19:53,800 - 01:19:55,300] constant, times t to the two thirds.
+- [01:19:55,300 - 01:19:58,300] What about a dot?
+- [01:19:58,300 - 01:20:03,300] a dot is two over three c, times t
+- [01:20:03,300 - 01:20:08,300] to the two thirds to the minus one third.
+- [01:20:08,300 - 01:20:10,300] Just differentiating t to the two thirds,
+- [01:20:10,300 - 01:20:12,300] you get t to the minus one third,
+- [01:20:12,300 - 01:20:15,300] or two thirds times t to the minus one third.
+- [01:20:15,300 - 01:20:19,300] Now take a dot over a, that's the Hubble constant.
+- [01:20:19,300 - 01:20:22,300] The Hubble constant is a dot over a,
+- [01:20:22,300 - 01:20:24,300] so that's two thirds,
+- [01:20:25,300 - 01:20:29,300] c, t to the minus one third,
+- [01:20:29,300 - 01:20:35,300] divided by c, t to the two thirds.
+- [01:20:35,300 - 01:20:37,300] c's cancel,
+- [01:20:37,300 - 01:20:40,300] and you find that the Hubble
+- [01:20:40,300 - 01:20:43,300] constant is two thirds over t.
+- [01:20:43,300 - 01:20:45,800] That tells us how the
+- [01:20:45,800 - 01:20:48,300] Hubble constant will change with time.
+- [01:20:48,300 - 01:20:49,300] Alright?
+- [01:20:49,300 - 01:20:51,300] So this answers the question,
+- [01:20:51,300 - 01:20:54,300] at least with the assumptions that we've made,
+- [01:20:54,300 - 01:20:56,800] this answers the question of how
+- [01:20:56,800 - 01:20:59,300] the Hubble constant varies with time.
+- [01:20:59,300 - 01:21:02,300] If this is the way things really work,
+- [01:21:02,300 - 01:21:05,300] and we do look back into the past,
+- [01:21:05,300 - 01:21:07,800] then we should account for the
+- [01:21:07,800 - 01:21:10,300] fact that the Hubble constant increases,
+- [01:21:10,300 - 01:21:12,300] like one over t.
+- [01:21:12,300 - 01:21:14,300] Alright? So this would give us,
+- [01:21:14,300 - 01:21:18,300] we now have a detailed prediction
+- [01:21:18,300 - 01:21:20,300] for what we should see very far away.
+- [01:21:20,300 - 01:21:22,300] We should see things moving away
+- [01:21:22,300 - 01:21:24,300] from us with the Hubble law,
+- [01:21:24,300 - 01:21:27,300] but the Hubble law changes with time,
+- [01:21:27,300 - 01:21:29,300] so the further away we are,
+- [01:21:29,300 - 01:21:31,300] the bigger the Hubble constant should look to us,
+- [01:21:31,300 - 01:21:33,300] according to this formula.
+- [01:21:33,300 - 01:21:36,300] And that's a pretty good
+- [01:21:36,300 - 01:21:39,300] representation of what actually happens.
+- [01:21:42,300 - 01:21:45,300] To go beyond this,
+- [01:21:45,300 - 01:21:47,300] we have to know something
+- [01:21:47,300 - 01:21:49,300] about the general theory of relativity.
+- [01:21:49,300 - 01:21:53,300] And that's beyond the level of what we're doing.
+- [01:21:53,300 - 01:21:55,300] So I'm going to tell you facts.
+- [01:21:57,300 - 01:22:01,300] We discussed the fact that there are three geometries
+- [01:22:01,300 - 01:22:06,300] that can describe homogeneous isotropic universes.
+- [01:22:06,300 - 01:22:09,300] We can call them positively curved, zero curved,
+- [01:22:09,300 - 01:22:12,300] that's this case that we've been doing,
+- [01:22:12,300 - 01:22:15,300] and negatively curved.
+- [01:22:15,300 - 01:22:19,300] There are also three possible values for the total energy,
+- [01:22:19,300 - 01:22:22,300] positive, zero, and negative.
+- [01:22:23,300 - 01:22:25,300] These go together.
+- [01:22:25,300 - 01:22:27,300] The three possible values of the energy,
+- [01:22:27,300 - 01:22:29,300] or the three possible signs for the energy,
+- [01:22:29,300 - 01:22:31,300] plus, zero, and minus,
+- [01:22:31,300 - 01:22:33,300] are in one-to-one correspondence,
+- [01:22:33,300 - 01:22:35,300] and this only follows from Einstein's equations.
+- [01:22:35,300 - 01:22:39,300] This you cannot derive just using Newton.
+- [01:22:45,300 - 01:22:47,300] Positive total energy
+- [01:22:47,300 - 01:22:50,300] is the energy that is beyond the escape velocity.
+- [01:22:50,300 - 01:22:52,300] First of all, it means that
+- [01:22:52,300 - 01:22:54,300] the universe is beyond the escape velocity,
+- [01:22:54,300 - 01:22:57,300] and it will continue to escape,
+- [01:22:57,300 - 01:23:00,300] it will continue to go out.
+- [01:23:00,300 - 01:23:03,300] Positive total energy
+- [01:23:03,300 - 01:23:07,300] means negative curvature.
+- [01:23:09,300 - 01:23:11,300] So such a cosmology would not
+- [01:23:11,300 - 01:23:13,300] only be eternal into the future,
+- [01:23:13,300 - 01:23:16,300] but it would also be eternally infinite in space.
+- [01:23:17,300 - 01:23:20,300] Negative curved space goes on and on forever,
+- [01:23:20,300 - 01:23:22,300] but it wouldn't be flat space,
+- [01:23:22,300 - 01:23:24,300] it would be negatively curved space.
+- [01:23:24,300 - 01:23:27,300] Zero total energy, that's the case we did,
+- [01:23:31,300 - 01:23:35,300] that corresponds to zero curvature, flat.
+- [01:23:35,300 - 01:23:38,300] And negative energy,
+- [01:23:41,300 - 01:23:45,300] that corresponds to positive curved universe,
+- [01:23:45,300 - 01:23:47,300] like a sphere.
+- [01:23:47,300 - 01:23:49,300] But positive energy,
+- [01:23:49,300 - 01:23:52,300] sorry, this is negative energy,
+- [01:23:52,300 - 01:23:54,300] negative energy also means that
+- [01:23:54,300 - 01:23:56,300] you're below the escape velocity.
+- [01:23:58,300 - 01:24:01,300] Negative energy means you're below the escape velocity.
+- [01:24:01,300 - 01:24:03,300] The implication of that
+- [01:24:03,300 - 01:24:06,300] is that the universe will go out and expand,
+- [01:24:06,300 - 01:24:09,300] and then turn around and re-collapse.
+- [01:24:09,300 - 01:24:10,800] All we have to do is
+- [01:24:10,800 - 01:24:12,300] focus on that one particle out there
+- [01:24:12,300 - 01:24:14,300] that we were studying.
+- [01:24:15,300 - 01:24:16,300] One,
+- [01:24:17,300 - 01:24:20,300] galaxy that we focused on,
+- [01:24:23,300 - 01:24:25,300] all that mass in there.
+- [01:24:27,300 - 01:24:30,300] If the velocity is above the escape velocity,
+- [01:24:30,300 - 01:24:33,300] escape velocity for all the mass that's in here,
+- [01:24:33,300 - 01:24:35,300] concentrated at a point,
+- [01:24:35,300 - 01:24:38,300] if the escape velocity, if we're above the escape velocity,
+- [01:24:38,300 - 01:24:40,300] that means the energy is positive,
+- [01:24:40,300 - 01:24:43,300] and it means the universe will continue to expand forever.
+- [01:24:44,300 - 01:24:46,300] If we're below the escape velocity,
+- [01:24:46,300 - 01:24:48,300] and that's the case where the total energy is negative,
+- [01:24:48,300 - 01:24:50,800] then every single galaxy will
+- [01:24:50,800 - 01:24:53,300] turn around and fall back in.
+- [01:24:54,300 - 01:24:57,300] At least according to the assumptions we've made.
+- [01:24:58,300 - 01:24:59,300] Now,
+- [01:25:01,300 - 01:25:04,300] there's a number of things wrong
+- [01:25:05,300 - 01:25:07,300] with what we did.
+- [01:25:07,300 - 01:25:09,300] The most important
+- [01:25:10,300 - 01:25:12,300] is that we have assumed
+- [01:25:12,300 - 01:25:15,300] a model
+- [01:25:15,300 - 01:25:17,300] for the energy density and
+- [01:25:17,300 - 01:25:19,300] the way it varies with time.
+- [01:25:19,300 - 01:25:21,300] We said in a given volume
+- [01:25:21,300 - 01:25:23,300] there's a fixed amount of mass,
+- [01:25:24,300 - 01:25:27,300] and that mass will simply
+- [01:25:27,300 - 01:25:30,300] stay the same as the volume increases,
+- [01:25:30,300 - 01:25:32,300] and that was the origin
+- [01:25:32,300 - 01:25:34,300] of the statement that the density,
+- [01:25:34,300 - 01:25:36,300] do we have it here?
+- [01:25:36,300 - 01:25:38,300] That the density goes like one over a cubed.
+- [01:25:38,300 - 01:25:40,300] The volume increases,
+- [01:25:40,300 - 01:25:43,300] the amount of mass inside stays the same.
+- [01:25:44,300 - 01:25:46,300] Is that necessary?
+- [01:25:46,300 - 01:25:49,300] Well, there are lots of examples where that's not true.
+- [01:25:49,300 - 01:25:51,300] Let's take the following case.
+- [01:25:51,300 - 01:25:53,300] Supposing instead of galaxies,
+- [01:25:53,300 - 01:25:55,300] or bowling balls,
+- [01:25:55,300 - 01:25:59,300] or even protons or neutrons,
+- [01:25:59,300 - 01:26:01,300] supposing what's in this box
+- [01:26:02,300 - 01:26:04,300] is photons.
+- [01:26:04,300 - 01:26:08,300] Photons of all different kinds of wavelengths.
+- [01:26:08,300 - 01:26:09,300] Okay?
+- [01:26:10,300 - 01:26:11,300] Mass is energy.
+- [01:26:11,300 - 01:26:13,300] So what we're interested in is
+- [01:26:13,300 - 01:26:15,300] the amount of energy in this box
+- [01:26:15,300 - 01:26:17,300] as it expands.
+- [01:26:19,300 - 01:26:21,800] What's the connection between the energy of
+- [01:26:21,800 - 01:26:24,300] a photon and its wavelength, first of all?
+- [01:26:25,300 - 01:26:26,300] E equals h nu.
+- [01:26:27,300 - 01:26:30,300] So the energy of each individual photon
+- [01:26:31,300 - 01:26:33,300] is h times its frequency.
+- [01:26:34,300 - 01:26:36,300] We can write that in terms of the wavelength.
+- [01:26:38,300 - 01:26:39,300] Frequency over wavelength.
+- [01:26:40,300 - 01:26:41,300] Frequency over wavelength.
+- [01:26:41,300 - 01:26:43,300] So the bigger the wavelength,
+- [01:26:43,300 - 01:26:45,300] the smaller the energy of a photon.
+- [01:26:45,300 - 01:26:48,300] Now, what happens to, if we have a box,
+- [01:26:48,300 - 01:26:50,300] and we expand the box,
+- [01:26:50,300 - 01:26:53,300] what happens to a photon of a given wavelength?
+- [01:26:53,300 - 01:26:55,300] Well, the answer is it just
+- [01:26:55,300 - 01:26:57,300] stretches out to match the box.
+- [01:26:57,300 - 01:27:00,300] So the wavelength of the photon will get bigger
+- [01:27:00,300 - 01:27:02,300] as the box increases.
+- [01:27:02,300 - 01:27:03,800] The number of photons in
+- [01:27:03,800 - 01:27:05,300] the box will stay the same.
+- [01:27:05,300 - 01:27:06,300] The number of photons in
+- [01:27:06,300 - 01:27:07,300] the box will stay the same.
+- [01:27:07,300 - 01:27:08,300] And the number of photons in
+- [01:27:08,300 - 01:27:09,300] the box will stay the same.
+- [01:27:09,300 - 01:27:10,300] The average number of photons in
+- [01:27:10,300 - 01:27:11,300] a box will stay the same.
+- [01:27:11,300 - 01:27:13,300] If the box gets bigger,
+- [01:27:13,300 - 01:27:15,300] then the wavelength will get bigger
+- [01:27:15,300 - 01:27:17,300] and the energy will decrease.
+- [01:27:17,300 - 01:27:19,300] So we have a box then,
+- [01:27:19,300 - 01:27:22,300] not with a bunch of particles with fixed energy,
+- [01:27:22,300 - 01:27:24,300] but a bunch of particles
+- [01:27:24,300 - 01:27:26,300] whose individual energies are decreasing.
+- [01:27:26,300 - 01:27:28,300] Why does the wavelength get bigger?
+- [01:27:28,300 - 01:27:30,300] It stretches with the box.
+- [01:27:30,300 - 01:27:32,300] It's the same phenomenon
+- [01:27:32,300 - 01:27:34,300] that happens in the case of a photon.
+- [01:27:34,300 - 01:27:36,300] It stretches with the box.
+- [01:27:36,300 - 01:27:38,300] It's the same phenomenon
+- [01:27:38,300 - 01:27:42,300] that happens if you have a guitar string.
+- [01:27:42,300 - 01:27:47,300] And there's your guitar string between two posts.
+- [01:27:47,300 - 01:27:53,300] You put your finger down over here
+- [01:27:53,300 - 01:27:56,300] so that the effective guitar string
+- [01:27:56,300 - 01:27:59,300] is only this long.
+- [01:27:59,300 - 01:28:01,300] You pluck it,
+- [01:28:01,300 - 01:28:03,300] and then you move your finger.
+- [01:28:03,300 - 01:28:05,300] What happens?
+- [01:28:05,300 - 01:28:07,300] You hear the tone go from
+- [01:28:08,300 - 01:28:11,300] the tone associated with this length of string
+- [01:28:11,300 - 01:28:14,300] to the tone associated with this length of string.
+- [01:28:14,300 - 01:28:16,300] What happens
+- [01:28:16,300 - 01:28:18,300] is that
+- [01:28:18,300 - 01:28:20,300] the wave you started with
+- [01:28:20,300 - 01:28:22,300] just gets stretched out.
+- [01:28:22,300 - 01:28:24,300] So
+- [01:28:26,300 - 01:28:29,300] you can test this theory if you own a guitar.
+- [01:28:32,300 - 01:28:35,300] If you play the guitar, you'll know this very well.
+- [01:28:38,300 - 01:28:41,300] So if the container that
+- [01:28:41,300 - 01:28:44,300] a bunch of photons are in
+- [01:28:44,300 - 01:28:46,300] increases in size,
+- [01:28:46,300 - 01:28:52,300] then the energy of each photon goes down.
+- [01:28:52,300 - 01:28:54,300] And if the energy of each photon goes down,
+- [01:28:54,300 - 01:28:57,300] that means that the energy density in there
+- [01:28:57,300 - 01:29:00,300] decreases even faster than it would
+- [01:29:00,300 - 01:29:04,300] if each photon stayed with the same amount of energy.
+- [01:29:04,300 - 01:29:06,300] If it stayed with the same amount of energy,
+- [01:29:06,300 - 01:29:10,300] that's the situation where the density
+- [01:29:10,300 - 01:29:13,300] is c over a cubed.
+- [01:29:13,300 - 01:29:15,300] What happens with a box of photons
+- [01:29:15,300 - 01:29:17,300] is it goes as c
+- [01:29:17,300 - 01:29:19,300] over a to the fourth power.
+- [01:29:19,300 - 01:29:22,300] It decreases more rapidly as the box...
+- [01:29:22,300 - 01:29:24,300] That's easy to derive.
+- [01:29:24,300 - 01:29:27,300] You just say that each photon,
+- [01:29:27,300 - 01:29:29,300] instead of having a fixed energy,
+- [01:29:29,300 - 01:29:31,300] has an energy that goes like one over a
+- [01:29:31,300 - 01:29:33,300] as the universe expands.
+- [01:29:33,300 - 01:29:35,300] And so you get the same formula,
+- [01:29:35,300 - 01:29:38,300] except an extra power of a in the denominator.
+- [01:29:38,300 - 01:29:41,300] You go right back to over here,
+- [01:29:41,300 - 01:29:43,800] and instead of saying that rho
+- [01:29:43,800 - 01:29:46,300] goes like one over a cubed,
+- [01:29:46,300 - 01:29:47,800] you say that rho goes like
+- [01:29:47,800 - 01:29:49,300] one over a to the fourth.
+- [01:29:49,300 - 01:29:52,300] And redo the entire analysis,
+- [01:29:52,300 - 01:29:55,300] and then you get a different answer.
+- [01:29:55,300 - 01:29:59,300] You don't get a to the two-thirds,
+- [01:30:01,300 - 01:30:03,300] you get
+- [01:30:03,300 - 01:30:05,300] a to the one-half.
+- [01:30:05,300 - 01:30:13,300] In other words, the universe expands a little more slowly.
+- [01:30:13,300 - 01:30:17,300] A little more slowly than it would.
+- [01:30:17,300 - 01:30:20,300] A to the two-thirds expands a little faster
+- [01:30:20,300 - 01:30:22,300] than a to the two-thirds.
+- [01:30:22,300 - 01:30:24,300] Is that right? Yeah.
+- [01:30:24,300 - 01:30:26,300] Sorry, t to the two-thirds.
+- [01:30:26,300 - 01:30:27,800] t to the one-half is a
+- [01:30:27,800 - 01:30:29,300] little slower than t to the...
+- [01:30:33,300 - 01:30:34,300] Yeah, that's right.
+- [01:30:35,300 - 01:30:39,300] Now, there's a...
+- [01:30:41,300 - 01:30:44,300] Okay, so the answer depends
+- [01:30:44,300 - 01:30:47,300] on the nature of the energy.
+- [01:30:47,300 - 01:30:50,300] Very, very early in the universe,
+- [01:30:50,300 - 01:30:53,300] the universe was filled with hot photons.
+- [01:30:53,300 - 01:30:56,300] Most of the energy was in the form of photons.
+- [01:30:56,300 - 01:30:58,300] Notice, if it's...
+- [01:30:58,300 - 01:30:59,800] Of course, if it's true
+- [01:30:59,800 - 01:31:01,300] that as you expand the box,
+- [01:31:01,300 - 01:31:03,300] the energy of each photon decreases,
+- [01:31:03,300 - 01:31:06,300] it's also true that if you squeeze the box,
+- [01:31:06,300 - 01:31:09,300] the energy of each photon increases.
+- [01:31:09,300 - 01:31:11,300] If you take a box with a bunch of photons,
+- [01:31:11,300 - 01:31:13,300] low-energy photons,
+- [01:31:13,300 - 01:31:15,300] very low-energy photons, let's say,
+- [01:31:15,300 - 01:31:17,300] and a bunch of protons,
+- [01:31:19,300 - 01:31:23,300] then the protons and neutrons and electrons and so forth,
+- [01:31:23,300 - 01:31:24,300] atoms,
+- [01:31:24,300 - 01:31:27,300] then the atoms will ordinarily be
+- [01:31:27,300 - 01:31:30,300] most of the mass in there.
+- [01:31:30,300 - 01:31:32,300] But then you start squeezing the box,
+- [01:31:32,300 - 01:31:36,300] the atoms, each atom stays the same mass,
+- [01:31:36,300 - 01:31:40,300] but each photon, you increase the energy of it.
+- [01:31:40,300 - 01:31:43,300] So eventually, when you squeeze it enough,
+- [01:31:43,300 - 01:31:45,800] the photons will become the dominant
+- [01:31:45,800 - 01:31:48,300] form of energy in the universe.
+- [01:31:48,300 - 01:31:50,300] This is going back in time.
+- [01:31:50,300 - 01:31:53,300] Squeezing the universe means going back in time.
+- [01:31:53,300 - 01:31:55,300] Sometime in the past,
+- [01:31:55,300 - 01:31:57,800] when the universe was about a thousand
+- [01:31:57,800 - 01:32:00,300] times smaller in radius than it is now,
+- [01:32:00,300 - 01:32:03,300] when the scale factor was about a thousand times smaller,
+- [01:32:03,300 - 01:32:09,300] the dominant form of energy was not particles,
+- [01:32:09,300 - 01:32:11,300] ordinary particles, but photons.
+- [01:32:11,300 - 01:32:14,300] At that time, the universe was
+- [01:32:14,300 - 01:32:17,300] expanding like t to the one-half,
+- [01:32:17,300 - 01:32:19,300] not t to the three-halves.
+- [01:32:19,300 - 01:32:23,300] Incidentally, by now, we have good evidence for this.
+- [01:32:23,300 - 01:32:25,300] We have good evidence for essentially all of this.
+- [01:32:25,300 - 01:32:29,300] So before the time,
+- [01:32:29,300 - 01:32:32,300] there's a time, there's a crossover time,
+- [01:32:32,300 - 01:32:36,300] when the universe became dominated by ordinary matter,
+- [01:32:36,300 - 01:32:39,300] and before that, it was dominated by radiation.
+- [01:32:39,300 - 01:32:44,300] Okay, so this is called the radiation-dominated universe.
+- [01:32:44,300 - 01:32:49,300] t to the two-thirds is called the matter-dominated universe.
+- [01:32:51,300 - 01:32:55,300] There's one other example,
+- [01:32:55,300 - 01:32:57,300] which is extremely important,
+- [01:32:57,300 - 01:32:59,300] and it's the energy of the universe.
+- [01:32:59,300 - 01:33:01,300] The energy of the vacuum.
+- [01:33:01,300 - 01:33:02,300] Now, I'm not going to tell you
+- [01:33:02,300 - 01:33:03,300] much about the energy of the vacuum.
+- [01:33:03,300 - 01:33:06,300] I'm going to tell you only one thing about it.
+- [01:33:06,300 - 01:33:09,300] The thing which is true of vacuum energy,
+- [01:33:09,300 - 01:33:13,300] and there is vacuum energy in quantum field theory,
+- [01:33:13,300 - 01:33:15,300] it's a component of the energy
+- [01:33:15,300 - 01:33:19,300] which does not dilute when you expand the universe.
+- [01:33:19,300 - 01:33:21,300] Whatever the vacuum energy is,
+- [01:33:21,300 - 01:33:23,300] it's a property of empty space,
+- [01:33:23,300 - 01:33:26,300] and no matter how big the universe gets,
+- [01:33:26,300 - 01:33:29,300] the vacuum energy density stays the same.
+- [01:33:29,300 - 01:33:33,300] For our purposes, that defines vacuum energy.
+- [01:33:33,300 - 01:33:37,300] A component of the energy that just doesn't go down
+- [01:33:37,300 - 01:33:40,300] as the universe expands.
+- [01:33:40,300 - 01:33:43,300] Let's just see what it would do.
+- [01:33:43,300 - 01:33:46,300] Supposing there was a component of the energy
+- [01:33:46,300 - 01:33:51,300] which just didn't refuse to decrease.
+- [01:33:51,300 - 01:33:54,300] Let's just call it constant.
+- [01:33:54,300 - 01:33:56,300] It's the vacuum energy.
+- [01:33:56,300 - 01:33:58,300] In fact, it's about 70%
+- [01:33:58,300 - 01:34:01,300] of all of the energy in the universe.
+- [01:34:01,300 - 01:34:04,300] So it really is the dominant thing today.
+- [01:34:04,300 - 01:34:06,300] It doesn't go down.
+- [01:34:06,300 - 01:34:08,300] It's also true that as you go backward in time,
+- [01:34:08,300 - 01:34:10,300] it doesn't go up.
+- [01:34:10,300 - 01:34:12,300] If you take all the other forms of energy
+- [01:34:12,300 - 01:34:14,300] and you squeeze it into a smaller volume,
+- [01:34:14,300 - 01:34:16,300] the energy goes up.
+- [01:34:16,300 - 01:34:17,800] So in the past, the
+- [01:34:17,800 - 01:34:19,300] vacuum energy was not so important.
+- [01:34:19,300 - 01:34:20,800] In the future, as all
+- [01:34:20,800 - 01:34:22,300] the other terms in the energy
+- [01:34:22,300 - 01:34:25,300] get smaller and smaller and smaller,
+- [01:34:25,300 - 01:34:27,300] 1 over a cubed, 1 over a fourth,
+- [01:34:27,300 - 01:34:31,300] the vacuum energy will become the most important component.
+- [01:34:31,300 - 01:34:33,300] It's already the most important component
+- [01:34:33,300 - 01:34:36,300] by a factor of two more.
+- [01:34:36,300 - 01:34:39,300] 70% is vacuum energy.
+- [01:34:39,300 - 01:34:41,300] Let's solve this equation.
+- [01:34:41,300 - 01:34:43,300] What does it say?
+- [01:34:43,300 - 01:34:46,300] It says dA by dt,
+- [01:34:48,300 - 01:34:51,300] 1 over a, I'm taking the square root of it,
+- [01:34:51,300 - 01:34:55,300] is the square root of 8 pi g over 3.
+- [01:34:55,300 - 01:34:57,300] That's a constant.
+- [01:34:57,300 - 01:35:01,300] Times rho to the one half.
+- [01:35:01,300 - 01:35:03,300] That's also a constant.
+- [01:35:03,300 - 01:35:06,300] Everything on the right hand side is a constant.
+- [01:35:08,300 - 01:35:10,300] I'll multiply the equation by A.
+- [01:35:12,300 - 01:35:16,300] This says that the time derivative of A
+- [01:35:16,300 - 01:35:19,300] is proportional to a constant times A.
+- [01:35:19,300 - 01:35:21,300] What's the solution of that?
+- [01:35:21,300 - 01:35:24,300] Exponential.
+- [01:35:24,300 - 01:35:27,300] The time derivative is a constant.
+- [01:35:27,300 - 01:35:29,300] Times the thing itself.
+- [01:35:29,300 - 01:35:31,300] Okay?
+- [01:35:31,300 - 01:35:34,300] The solution of this
+- [01:35:34,300 - 01:35:36,300] is exponential
+- [01:35:36,300 - 01:35:40,300] of square root of all this stuff
+- [01:35:40,300 - 01:35:42,300] times t.
+- [01:35:42,300 - 01:35:45,300] All the stuff being the stuff in here.
+- [01:35:45,300 - 01:35:49,300] So this is an exponentially expanding universe.
+- [01:35:49,300 - 01:35:53,300] A universe which is dominated by vacuum energy
+- [01:35:53,300 - 01:35:55,300] expands exponentially.
+- [01:35:57,300 - 01:36:00,300] How long does it take for it to double?
+- [01:36:00,300 - 01:36:02,800] Well, it looks like with the
+- [01:36:02,800 - 01:36:05,300] present value of the vacuum energy,
+- [01:36:05,300 - 01:36:08,300] it takes about 10 billion years for it to double.
+- [01:36:08,300 - 01:36:13,300] So it looks like we're heading off into a world
+- [01:36:13,300 - 01:36:16,300] where the universe will simply be doubling
+- [01:36:16,300 - 01:36:19,300] roughly every 10 or 12 billion years.
+- [01:36:19,300 - 01:36:22,300] Why that's true?
+- [01:36:22,300 - 01:36:24,300] We don't know.
+- [01:36:24,300 - 01:36:25,300] But it's an empirical fact.
+- [01:36:25,300 - 01:36:28,300] It appears to be an empirical fact
+- [01:36:28,300 - 01:36:31,300] that there's a component of the vacuum energy
+- [01:36:31,300 - 01:36:32,300] which is constant,
+- [01:36:32,300 - 01:36:34,300] which doesn't dilute as you expand,
+- [01:36:34,300 - 01:36:36,300] and which causes the universe
+- [01:36:36,300 - 01:36:38,300] to exponentially increase.
+- [01:36:42,300 - 01:36:44,300] And in fact,
+- [01:36:44,300 - 01:36:46,300] when we look out into the universe,
+- [01:36:46,300 - 01:36:48,300] it does appear to be exponentially increasing.
+- [01:36:48,300 - 01:36:50,300] If you look far enough away,
+- [01:36:50,300 - 01:36:52,300] very, very large distances,
+- [01:36:52,300 - 01:36:55,300] it looks like the universe is exponentially expanding.
+- [01:36:55,300 - 01:36:58,300] So that's...
+- [01:36:58,300 - 01:37:00,300] I've told you
+- [01:37:00,300 - 01:37:02,300] a small fraction
+- [01:37:02,300 - 01:37:05,300] of everything there is to know about cosmology,
+- [01:37:05,300 - 01:37:07,300] but I've told you
+- [01:37:07,300 - 01:37:09,300] really the main tools
+- [01:37:09,300 - 01:37:11,300] and the main facts about it.
+- [01:37:14,300 - 01:37:16,300] Any questions?
+- [01:37:16,300 - 01:37:17,300] Yeah?
+- [01:37:17,300 - 01:37:19,300] The vacuum energy in some sense
+- [01:37:19,300 - 01:37:21,300] corresponds to dark energy,
+- [01:37:21,300 - 01:37:23,300] but they're not the same thing.
+- [01:37:23,300 - 01:37:24,300] Yeah, same thing.
+- [01:37:24,300 - 01:37:25,300] Same thing.
+- [01:37:25,300 - 01:37:26,300] Absolutely.
+- [01:37:26,300 - 01:37:28,300] The second thing is,
+- [01:37:28,300 - 01:37:31,300] we define the co-booming coordinates.
+- [01:37:31,300 - 01:37:32,300] How do the photons know
+- [01:37:32,300 - 01:37:33,300] that we've defined the coordinates
+- [01:37:33,300 - 01:37:34,300] to be increasing
+- [01:37:34,300 - 01:37:35,300] in order to decrease their energy?
+- [01:37:35,300 - 01:37:40,300] Yeah.
+- [01:37:40,300 - 01:37:42,300] I think the best way to think about it
+- [01:37:42,300 - 01:37:46,300] is in terms of this rubber sheet picture.
+- [01:37:46,300 - 01:37:47,300] Space is like a rubber sheet
+- [01:37:47,300 - 01:37:50,300] in general relativity.
+- [01:37:50,300 - 01:37:53,300] And the photons, of course,
+- [01:37:53,300 - 01:37:54,300] don't know that we defined anything.
+- [01:37:54,300 - 01:37:56,300] At all.
+- [01:37:56,300 - 01:37:58,300] But they can tell
+- [01:37:58,300 - 01:37:59,300] that a region of space
+- [01:37:59,300 - 01:38:01,300] has doubled in size.
+- [01:38:01,300 - 01:38:04,300] They can tell that one wavelength,
+- [01:38:04,300 - 01:38:06,300] a region of size one wavelength,
+- [01:38:06,300 - 01:38:08,300] in a certain amount of time,
+- [01:38:08,300 - 01:38:10,300] may have doubled in size
+- [01:38:10,300 - 01:38:12,300] or done whatever it does.
+- [01:38:12,300 - 01:38:13,300] That's really all they can tell.
+- [01:38:13,300 - 01:38:15,300] They can tell the stretching of space.
+- [01:38:15,300 - 01:38:17,300] Well, they don't even know anything
+- [01:38:17,300 - 01:38:18,300] about the galaxies.
+- [01:38:18,300 - 01:38:20,300] They know that space is separating.
+- [01:38:20,300 - 01:38:22,300] But, yeah, I mean, you can...
+- [01:38:22,300 - 01:38:23,300] You can...
+- [01:38:23,300 - 01:38:26,300] Remember that those photons...
+- [01:38:26,300 - 01:38:28,300] Another way to think about it
+- [01:38:28,300 - 01:38:33,300] is through the Doppler shift.
+- [01:38:33,300 - 01:38:36,300] Let's see.
+- [01:38:36,300 - 01:38:38,300] If...
+- [01:38:38,300 - 01:38:40,300] Yeah.
+- [01:38:40,300 - 01:38:42,300] Where...
+- [01:38:42,300 - 01:38:44,300] Good.
+- [01:38:44,300 - 01:38:45,300] Where did the photons come from
+- [01:38:45,300 - 01:38:46,300] in the universe?
+- [01:38:46,300 - 01:38:48,300] They came...
+- [01:38:48,300 - 01:38:51,300] Yeah, let's...
+- [01:38:53,300 - 01:38:59,300] Let's draw a picture of the universe
+- [01:38:59,300 - 01:39:04,300] from our own perspective.
+- [01:39:04,300 - 01:39:06,300] We're sitting at the center,
+- [01:39:06,300 - 01:39:08,300] and we're looking out around us,
+- [01:39:08,300 - 01:39:12,300] and we see shells of different radius,
+- [01:39:12,300 - 01:39:13,300] let's say.
+- [01:39:13,300 - 01:39:14,300] There's...
+- [01:39:14,300 - 01:39:16,300] The solar system is like that.
+- [01:39:16,300 - 01:39:18,300] There's the galaxy that surrounds us,
+- [01:39:18,300 - 01:39:20,300] which is like that.
+- [01:39:20,300 - 01:39:22,300] There's distances out to the Coma supercluster,
+- [01:39:22,300 - 01:39:24,300] which is out there.
+- [01:39:24,300 - 01:39:26,300] And if we go out far enough,
+- [01:39:26,300 - 01:39:28,300] we come to a place called
+- [01:39:28,300 - 01:39:30,300] the surface of last scattering.
+- [01:39:30,300 - 01:39:32,300] Now, as you look deeper and deeper
+- [01:39:32,300 - 01:39:33,300] into the universe,
+- [01:39:33,300 - 01:39:35,300] the material was more and more squeezed.
+- [01:39:35,300 - 01:39:37,300] And because it was squeezed,
+- [01:39:37,300 - 01:39:39,300] it was hotter.
+- [01:39:39,300 - 01:39:41,300] So as you look out,
+- [01:39:41,300 - 01:39:43,300] you not only see earlier times,
+- [01:39:43,300 - 01:39:45,300] but as you look far enough out,
+- [01:39:45,300 - 01:39:47,300] the material out here
+- [01:39:47,300 - 01:39:49,300] was dense enough
+- [01:39:49,300 - 01:39:51,300] and hotter than the surface.
+- [01:39:51,300 - 01:39:53,300] And hot enough
+- [01:39:53,300 - 01:39:54,300] that it was opaque.
+- [01:39:54,300 - 01:39:56,300] It was as opaque as the sun.
+- [01:39:56,300 - 01:39:58,300] Somewhere out here,
+- [01:39:58,300 - 01:40:00,300] it was as hot as the sun.
+- [01:40:01,300 - 01:40:04,300] And you simply can't see through the sun.
+- [01:40:04,300 - 01:40:06,300] The sun is opaque.
+- [01:40:06,300 - 01:40:09,300] It's opaque because it's full of
+- [01:40:09,300 - 01:40:12,300] unmatched electrons and protons,
+- [01:40:12,300 - 01:40:13,300] free electrons.
+- [01:40:13,300 - 01:40:14,300] It's a plasma.
+- [01:40:14,300 - 01:40:16,300] Light can't move through a plasma.
+- [01:40:16,300 - 01:40:20,300] Well, far enough into the early universe,
+- [01:40:21,300 - 01:40:23,300] the universe was a plasma.
+- [01:40:23,300 - 01:40:25,300] But when we look back,
+- [01:40:25,300 - 01:40:26,300] we look back in time,
+- [01:40:26,300 - 01:40:28,300] and eventually we see back
+- [01:40:28,300 - 01:40:29,300] to the time when it was a plasma.
+- [01:40:29,300 - 01:40:31,300] That's called the surface of last scattering,
+- [01:40:31,300 - 01:40:33,300] when we look back.
+- [01:40:33,300 - 01:40:35,300] So there's some sphere around us
+- [01:40:35,300 - 01:40:40,300] that looks as hot as the sun.
+- [01:40:40,300 - 01:40:43,300] But it's also moving away from us
+- [01:40:43,300 - 01:40:46,300] with almost the speed of light.
+- [01:40:46,300 - 01:40:49,300] Why? Because of Hubble's law.
+- [01:40:49,300 - 01:40:54,300] So today, if we were to plug in the numbers,
+- [01:40:54,300 - 01:40:56,300] or we were just to look back
+- [01:40:56,300 - 01:40:58,300] and use what we know here,
+- [01:40:58,300 - 01:41:02,300] we would discover that that surface of last scattering
+- [01:41:02,300 - 01:41:04,300] is moving away from us,
+- [01:41:04,300 - 01:41:06,300] or was moving away from us,
+- [01:41:06,300 - 01:41:08,300] of course we're looking back in time,
+- [01:41:08,300 - 01:41:10,300] but it's receding away from us
+- [01:41:10,300 - 01:41:12,300] with almost the speed of light.
+- [01:41:12,300 - 01:41:16,300] That means that a photon that comes from there
+- [01:41:16,300 - 01:41:18,300] is Doppler shifted.
+- [01:41:18,300 - 01:41:20,300] And it's Doppler shifted a lot.
+- [01:41:20,300 - 01:41:22,300] It's Doppler shifted a lot
+- [01:41:22,300 - 01:41:24,300] because this surface is moving away
+- [01:41:24,300 - 01:41:26,300] very, very rapidly.
+- [01:41:26,300 - 01:41:28,300] Okay, now, what about,
+- [01:41:28,300 - 01:41:31,300] and once you know that it's Doppler shifted,
+- [01:41:31,300 - 01:41:34,300] you know something about the wavelengths.
+- [01:41:34,300 - 01:41:36,300] The wavelengths of the radiation
+- [01:41:36,300 - 01:41:38,300] that are coming from this hot surface
+- [01:41:38,300 - 01:41:40,300] are about the same as the wavelengths
+- [01:41:40,300 - 01:41:43,300] of the light coming from the sun.
+- [01:41:43,300 - 01:41:45,300] They're Doppler shifted,
+- [01:41:45,300 - 01:41:47,300] and when they're Doppler shifted,
+- [01:41:47,300 - 01:41:49,300] they're elongated,
+- [01:41:49,300 - 01:41:52,300] and we see them being roughly a thousand times
+- [01:41:52,300 - 01:41:55,300] longer wavelength than the photons of the sun,
+- [01:41:55,300 - 01:41:58,300] and a thousand times less energetic.
+- [01:41:58,300 - 01:42:01,300] Okay, so we see long wavelength photons here
+- [01:42:01,300 - 01:42:03,300] because they've been Doppler shifted.
+- [01:42:03,300 - 01:42:05,300] Now let's go back into the past
+- [01:42:05,300 - 01:42:08,300] and ask what the same picture would have looked like
+- [01:42:08,300 - 01:42:10,300] much, much earlier,
+- [01:42:10,300 - 01:42:12,300] much, much earlier the surface of last scattering
+- [01:42:12,300 - 01:42:14,300] would have been closer in to us.
+- [01:42:14,300 - 01:42:16,300] If we could go back in time
+- [01:42:16,300 - 01:42:18,300] and ask our ancient ancestors
+- [01:42:18,300 - 01:42:21,300] four or five billion years ago,
+- [01:42:21,300 - 01:42:23,300] what did the universe look like?
+- [01:42:23,300 - 01:42:25,300] They would say the same picture,
+- [01:42:25,300 - 01:42:26,300] except that they would say
+- [01:42:26,300 - 01:42:28,300] the surface of last scattering was closer
+- [01:42:28,300 - 01:42:31,300] and moving more slowly,
+- [01:42:31,300 - 01:42:33,300] moving more slowly.
+- [01:42:33,300 - 01:42:37,300] So they would see less of a redshift,
+- [01:42:37,300 - 01:42:40,300] less of a redshift, right.
+- [01:42:40,300 - 01:42:42,300] They would see less Doppler shift
+- [01:42:42,300 - 01:42:44,300] because they would see the surface of last scattering
+- [01:42:44,300 - 01:42:46,300] moving away from them.
+- [01:42:46,300 - 01:42:49,300] Somewhat more slowly.
+- [01:42:49,300 - 01:42:51,300] Right.
+- [01:42:51,300 - 01:42:53,300] In fact, if you go way, way back,
+- [01:42:53,300 - 01:42:57,300] the surface of last scattering was very near
+- [01:42:57,300 - 01:42:59,300] and hardly moving at all.
+- [01:42:59,300 - 01:43:01,300] Hardly moving at all,
+- [01:43:01,300 - 01:43:03,300] and as time went on it receded and sped up
+- [01:43:03,300 - 01:43:05,300] and sped up and sped up.
+- [01:43:05,300 - 01:43:06,300] Okay.
+- [01:43:06,300 - 01:43:10,300] So the photons, if we went back in time
+- [01:43:10,300 - 01:43:12,300] several billion years,
+- [01:43:12,300 - 01:43:15,300] the photons that we see coming from the surface
+- [01:43:15,300 - 01:43:17,300] of last scattering would have been
+- [01:43:17,300 - 01:43:20,300] shorter wavelengths.
+- [01:43:20,300 - 01:43:22,300] So as time goes on,
+- [01:43:22,300 - 01:43:24,300] the photons that we see that make up
+- [01:43:24,300 - 01:43:27,300] the microwave background, for example,
+- [01:43:27,300 - 01:43:29,300] as time goes on, the photons
+- [01:43:29,300 - 01:43:31,300] that we actually see right here
+- [01:43:31,300 - 01:43:34,300] have longer and longer wavelength
+- [01:43:34,300 - 01:43:36,300] because they originated from a place
+- [01:43:36,300 - 01:43:38,300] which was moving progressively faster
+- [01:43:38,300 - 01:43:40,300] and faster away from us.
+- [01:43:40,300 - 01:43:42,300] So that's another way to think about it.
+- [01:43:42,300 - 01:43:43,300] Both ways are correct.
+- [01:43:43,300 - 01:43:45,300] You can either think that the universe was expanding
+- [01:43:45,300 - 01:43:47,300] and each wave got stretched out,
+- [01:43:47,300 - 01:43:50,300] and so that's why we see longer wavelengths with time,
+- [01:43:50,300 - 01:43:53,300] or you can imagine that the same kind of waves
+- [01:43:53,300 - 01:43:57,300] were emitted from the surface of last scattering,
+- [01:43:57,300 - 01:43:59,300] but by the time they reach us,
+- [01:43:59,300 - 01:44:02,300] they've been more redshifted
+- [01:44:02,300 - 01:44:05,300] the later we get to look at them.
+- [01:44:05,300 - 01:44:06,300] Yeah.
+- [01:44:06,300 - 01:44:09,300] Here's what I don't understand about this.
+- [01:44:09,300 - 01:44:11,300] It's the conservation of energy thing.
+- [01:44:11,300 - 01:44:15,300] You have a photon of H nu submitted.
+- [01:44:15,300 - 01:44:16,300] Mm-hmm.
+- [01:44:16,300 - 01:44:17,300] All right.
+- [01:44:17,300 - 01:44:18,300] The time it arrives at us,
+- [01:44:18,300 - 01:44:20,300] it's redshifted a lot.
+- [01:44:20,300 - 01:44:22,300] It has now less energy.
+- [01:44:22,300 - 01:44:26,300] What has happened to the energy of that little photon?
+- [01:44:26,300 - 01:44:29,300] Okay, so let's go back.
+- [01:44:29,300 - 01:44:35,300] The basic equation that we wrote for cosmology
+- [01:44:35,300 - 01:44:41,300] was nothing but energy conservation.
+- [01:44:41,300 - 01:44:44,300] With this equation, you can't violate energy conservation,
+- [01:44:44,300 - 01:44:45,800] but you have to remember
+- [01:44:45,800 - 01:44:47,300] there are two kinds of energies.
+- [01:44:47,300 - 01:44:50,300] By the time we go through it,
+- [01:44:50,300 - 01:44:52,800] this term over here has morphed
+- [01:44:52,800 - 01:44:55,300] into A dot over A squared,
+- [01:44:55,300 - 01:44:58,300] the expansion of the universe.
+- [01:44:58,300 - 01:45:00,300] The other term over here is
+- [01:45:00,300 - 01:45:02,300] just the energy density of the universe.
+- [01:45:02,300 - 01:45:06,300] This is energy conservation,
+- [01:45:06,300 - 01:45:07,800] and it says there's two
+- [01:45:07,800 - 01:45:09,300] kinds of energy in the world.
+- [01:45:09,300 - 01:45:10,300] One is the energy of expansion.
+- [01:45:10,300 - 01:45:12,300] It's a kind of kinetic energy of expansion,
+- [01:45:12,300 - 01:45:13,300] and the other is just a usual energy.
+- [01:45:13,300 - 01:45:15,800] And the other is just the
+- [01:45:15,800 - 01:45:18,300] usual things that we call energy.
+- [01:45:18,300 - 01:45:20,300] Neither one by themselves is conserved.
+- [01:45:20,300 - 01:45:22,300] They're just not conserved.
+- [01:45:22,300 - 01:45:23,300] They're not conserved.
+- [01:45:23,300 - 01:45:26,300] I'll explain it in another way in a moment.
+- [01:45:26,300 - 01:45:28,300] But they're not conserved by themselves.
+- [01:45:28,300 - 01:45:30,300] Only the combination of them is conserved,
+- [01:45:30,300 - 01:45:32,300] and that's the equations we used.
+- [01:45:32,300 - 01:45:35,300] So in time, as the energy,
+- [01:45:35,300 - 01:45:39,300] let's say in photons, goes down,
+- [01:45:39,300 - 01:45:42,300] the total energy in photons goes down,
+- [01:45:42,300 - 01:45:49,300] it gets transferred into the kinetic energy of expansion.
+- [01:45:49,300 - 01:45:52,300] Is there a coupling mechanism here?
+- [01:45:52,300 - 01:45:55,300] Yes.
+- [01:45:55,300 - 01:45:56,300] Yes.
+- [01:45:56,300 - 01:45:57,800] Well, you can think of
+- [01:45:57,800 - 01:45:59,300] it as a kind of pressure.
+- [01:45:59,300 - 01:46:05,300] What happens to energy conservation,
+- [01:46:05,300 - 01:46:07,300] supposing you really did have a box,
+- [01:46:07,300 - 01:46:10,300] and let's imagine this is a box,
+- [01:46:10,300 - 01:46:12,300] and let's imagine this is a box,
+- [01:46:12,300 - 01:46:15,300] with movable walls.
+- [01:46:15,300 - 01:46:18,300] The walls can expand.
+- [01:46:18,300 - 01:46:20,300] Let's even make it more realistic.
+- [01:46:20,300 - 01:46:24,300] It's not a box, it's a cylinder with a piston.
+- [01:46:24,300 - 01:46:26,300] Okay?
+- [01:46:26,300 - 01:46:28,300] There's the piston.
+- [01:46:28,300 - 01:46:30,300] Piston can go in, it can go out.
+- [01:46:30,300 - 01:46:33,300] And we have a lot of photons in here.
+- [01:46:37,300 - 01:46:39,300] What happens to that box?
+- [01:46:39,300 - 01:46:42,300] That box expands because of the pressure of the photons
+- [01:46:42,300 - 01:46:43,300] in the piston.
+- [01:46:43,300 - 01:46:44,300] Okay?
+- [01:46:44,300 - 01:46:45,300] What happens to each photon?
+- [01:46:45,300 - 01:46:48,300] Each photon decreases its energy
+- [01:46:48,300 - 01:46:50,300] because its wavelength gets longer.
+- [01:46:50,300 - 01:46:52,300] Where does that energy go?
+- [01:46:52,300 - 01:46:54,300] It goes into the kinetic energy of the piston.
+- [01:46:54,300 - 01:46:56,300] Okay?
+- [01:46:56,300 - 01:46:58,300] That's where it goes.
+- [01:46:58,300 - 01:47:00,300] It goes into the kinetic...
+- [01:47:00,300 - 01:47:01,300] Or it might go into friction,
+- [01:47:01,300 - 01:47:03,300] but let's, you know, let's idealize it.
+- [01:47:03,300 - 01:47:05,300] No friction, it goes into
+- [01:47:05,300 - 01:47:07,300] the kinetic energy of the piston.
+- [01:47:07,300 - 01:47:09,300] So what's going on here?
+- [01:47:09,300 - 01:47:11,300] The energy, the decrease of the energy
+- [01:47:11,300 - 01:47:14,300] of the photons is being transferred
+- [01:47:14,300 - 01:47:17,300] to kinetic energy of expansion.
+- [01:47:17,300 - 01:47:19,300] It's a very similar thing to this.
+- [01:47:19,300 - 01:47:23,300] And...
+- [01:47:27,300 - 01:47:30,300] Energy is funny in the general theory of relativity.
+- [01:47:30,300 - 01:47:35,300] It's conserved, but it's also exactly zero.
+- [01:47:35,300 - 01:47:37,800] In this case here, we
+- [01:47:37,800 - 01:47:40,300] just manifestly made it exactly zero.
+- [01:47:41,300 - 01:47:47,300] The rules for energy in the general theory of relativity
+- [01:47:47,300 - 01:47:49,300] are peculiar.
+- [01:47:49,300 - 01:47:51,800] Either you take into account
+- [01:47:51,800 - 01:47:54,300] all the energies that are around,
+- [01:47:54,300 - 01:47:57,300] including the energy of expansion,
+- [01:47:57,300 - 01:48:00,300] in which case it's conserved but zero,
+- [01:48:00,300 - 01:48:03,300] or you forget this expanding energy
+- [01:48:03,300 - 01:48:05,300] and just energy isn't conserved.
+- [01:48:05,300 - 01:48:07,300] It just isn't conserved
+- [01:48:07,300 - 01:48:10,300] in the general theory of relativity.
+- [01:48:11,300 - 01:48:13,300] So, if you put in a row,
+- [01:48:13,300 - 01:48:15,300] whatever the time difference a row is,
+- [01:48:15,300 - 01:48:17,300] it's going to drop the 80
+- [01:48:17,300 - 01:48:19,300] to have some force on the time difference.
+- [01:48:19,300 - 01:48:21,300] So, this is what you're saying.
+- [01:48:21,300 - 01:48:22,800] You're putting a row in there
+- [01:48:22,800 - 01:48:24,300] that has some behavior in time.
+- [01:48:24,300 - 01:48:25,300] Yep.
+- [01:48:25,300 - 01:48:26,300] So...
+- [01:48:26,300 - 01:48:30,300] Well, even if row is constant with time,
+- [01:48:30,300 - 01:48:32,300] because the universe...
+- [01:48:32,300 - 01:48:33,300] People always ask,
+- [01:48:33,300 - 01:48:34,300] where does all the energy come from?
+- [01:48:34,300 - 01:48:36,300] If you have vacuum energy and the universe expands,
+- [01:48:36,300 - 01:48:39,300] if you have a constant energy density
+- [01:48:39,300 - 01:48:41,300] and the universe expands rapidly,
+- [01:48:41,300 - 01:48:43,300] energy of the vacuum is increasing.
+- [01:48:43,300 - 01:48:45,300] And that component is increasing.
+- [01:48:45,300 - 01:48:47,300] Where is it going?
+- [01:48:47,300 - 01:48:50,300] It's going into the expansion here.
+- [01:48:50,300 - 01:48:53,300] And it drives the expansion even more rapidly
+- [01:48:53,300 - 01:48:56,300] than the other forms of energy.
+- [01:48:56,300 - 01:49:00,300] So, in thinking about energy conservation
+- [01:49:00,300 - 01:49:02,300] and general relativity,
+- [01:49:02,300 - 01:49:04,300] you must worry about this term.
+- [01:49:04,300 - 01:49:06,300] And this term is very important.
+- [01:49:06,300 - 01:49:08,300] It's the expansion of the universe.
+- [01:49:08,300 - 01:49:09,300] And it simply cancels.
+- [01:49:09,300 - 01:49:11,300] Changes in this cancel the expansion.
+- [01:49:11,300 - 01:49:14,300] There's changes in that.
+- [01:49:14,300 - 01:49:15,300] Yeah.
+- [01:49:15,300 - 01:49:17,300] In the first expression for the metric
+- [01:49:17,300 - 01:49:19,300] that we started from,
+- [01:49:19,300 - 01:49:21,300] the scale factor...
+- [01:49:21,300 - 01:49:23,300] What was the reasoning that the scale factor
+- [01:49:23,300 - 01:49:27,300] multiplies the space part but not the time part?
+- [01:49:27,300 - 01:49:29,300] Well, we could have had it multiply the time part.
+- [01:49:29,300 - 01:49:31,300] It would make no difference.
+- [01:49:31,300 - 01:49:34,300] I'll show you why.
+- [01:49:34,300 - 01:49:37,300] Um...
+- [01:49:37,300 - 01:49:39,300] Yeah.
+- [01:49:39,300 - 01:49:41,300] That's definition.
+- [01:49:41,300 - 01:49:46,300] Okay.
+- [01:49:46,300 - 01:49:51,300] Okay, let's suppose it also multiplied the time part.
+- [01:49:51,300 - 01:49:54,300] So we have A of t times...
+- [01:49:54,300 - 01:49:56,800] Let's just write simply d
+- [01:49:56,800 - 01:49:59,300] t squared minus d x squared.
+- [01:49:59,300 - 01:50:02,300] Okay?
+- [01:50:02,300 - 01:50:07,300] All right, this is A squared.
+- [01:50:07,300 - 01:50:10,300] This is just a redefinition of what we call time.
+- [01:50:10,300 - 01:50:14,300] Let's invent a new quantity, new time,
+- [01:50:14,300 - 01:50:18,300] which is such that d t,
+- [01:50:18,300 - 01:50:20,300] a new time,
+- [01:50:20,300 - 01:50:23,300] which is equal to A of t d t.
+- [01:50:26,300 - 01:50:28,300] We can integrate both sides of this equation
+- [01:50:28,300 - 01:50:29,800] and we can find out what big
+- [01:50:29,800 - 01:50:31,300] T is in terms of little t.
+- [01:50:31,300 - 01:50:36,300] Then, A squared times little d t squared
+- [01:50:36,300 - 01:50:39,300] is the same as just big d t squared.
+- [01:50:40,300 - 01:50:41,800] So you can always get rid
+- [01:50:41,800 - 01:50:43,300] of an A of t squared
+- [01:50:43,300 - 01:50:45,300] in front of a d t squared
+- [01:50:45,300 - 01:50:47,300] by a change of definition of time.
+- [01:50:47,300 - 01:50:49,300] Now, that's done, but that won't get rid of it
+- [01:50:49,300 - 01:50:52,300] multiplying the d x squared.
+- [01:50:52,300 - 01:50:57,300] So we'll still have minus A of little t,
+- [01:50:57,300 - 01:50:59,300] but we can also think of it as,
+- [01:50:59,300 - 01:51:01,300] in terms of big T, d x squared.
+- [01:51:01,300 - 01:51:02,800] So the issue of whether A
+- [01:51:02,800 - 01:51:04,300] of t multiplies d t squared
+- [01:51:04,300 - 01:51:06,300] is a question of definition.
+- [01:51:06,300 - 01:51:08,300] Um...
+- [01:51:08,300 - 01:51:14,300] So basically there's no difference between the two forms,
+- [01:51:14,300 - 01:51:17,300] although you do have to change the definition of time
+- [01:51:17,300 - 01:51:19,300] to go back and forth between them.
+- [01:51:19,300 - 01:51:21,300] So...
+- [01:51:21,300 - 01:51:23,300] Uh...yeah.
+- [01:51:23,300 - 01:51:25,300] If the universe was curved,
+- [01:51:25,300 - 01:51:28,300] would we expect to see galaxies coming towards us
+- [01:51:28,300 - 01:51:30,300] at a higher velocity?
+- [01:51:30,300 - 01:51:32,300] Uh...
+- [01:51:32,300 - 01:51:34,300] That depends on whether...
+- [01:51:34,300 - 01:51:37,300] That depends on the magnitude of the vacuum energy.
+- [01:51:37,300 - 01:51:40,300] Let's suppose there was no vacuum energy.
+- [01:51:40,300 - 01:51:41,300] Okay?
+- [01:51:41,300 - 01:51:44,300] If the universe were positively curved...
+- [01:51:44,300 - 01:51:48,300] The question is analogous to the following question.
+- [01:51:48,300 - 01:51:50,300] Supposing we shoot a rocket out
+- [01:51:50,300 - 01:51:55,300] with less energy or less velocity than the escape velocity,
+- [01:51:55,300 - 01:51:57,300] and we look at it through a telescope.
+- [01:51:57,300 - 01:51:58,800] Do we see it moving out
+- [01:51:58,800 - 01:52:00,300] or do we see it moving in?
+- [01:52:00,300 - 01:52:01,300] Well, I don't know.
+- [01:52:01,300 - 01:52:02,300] I mean, it could be moving
+- [01:52:02,300 - 01:52:03,300] out or it could be moving in.
+- [01:52:03,300 - 01:52:04,800] The one thing we know for
+- [01:52:04,800 - 01:52:06,300] sure is if we wait long enough,
+- [01:52:06,300 - 01:52:08,300] it'll be coming in.
+- [01:52:08,300 - 01:52:11,300] We could have caught it while it was going out.
+- [01:52:11,300 - 01:52:13,300] Uh...but...
+- [01:52:13,300 - 01:52:16,300] And we catch the universe as it's expanding.
+- [01:52:16,300 - 01:52:18,300] There's no doubt of that.
+- [01:52:18,300 - 01:52:20,300] The issue is not whether it's expanding now or not,
+- [01:52:20,300 - 01:52:22,300] or what we see when we look out.
+- [01:52:22,300 - 01:52:23,800] The issue is if we
+- [01:52:23,800 - 01:52:25,300] wait long enough into the future,
+- [01:52:25,300 - 01:52:26,800] will everything turn around and
+- [01:52:26,800 - 01:52:28,300] crash back on top of us?
+- [01:52:28,300 - 01:52:32,300] And if there was no vacuum energy...
+- [01:52:32,300 - 01:52:34,300] If there were no vacuum energy,
+- [01:52:34,300 - 01:52:35,300] then the answer would be,
+- [01:52:35,300 - 01:52:38,300] if the universe were positively curved,
+- [01:52:38,300 - 01:52:41,300] it would collapse back on itself.
+- [01:52:41,300 - 01:52:43,300] Uh...the vacuum energy,
+- [01:52:43,300 - 01:52:45,300] if it's large enough, will prevent that.
+- [01:52:45,300 - 01:52:48,300] And it certainly does look large enough.
+- [01:52:48,300 - 01:52:50,300] So it looks like our future,
+- [01:52:50,300 - 01:52:52,300] independently of whether we're curved
+- [01:52:52,300 - 01:52:53,800] or whether we're positively
+- [01:52:53,800 - 01:52:55,300] curved, negatively curved, or flat,
+- [01:52:55,300 - 01:52:58,300] it looks like our future is one in which
+- [01:52:58,300 - 01:53:01,300] the universe will simply exponentially expand.
+- [01:53:01,300 - 01:53:03,300] Now, that's not such a good thing either.
+- [01:53:03,300 - 01:53:04,300] If it exponentially...
+- [01:53:04,300 - 01:53:07,300] It's not a good future in any case.
+- [01:53:07,300 - 01:53:11,300] If it exponentially expands,
+- [01:53:11,300 - 01:53:14,300] eventually all the stars will burn out,
+- [01:53:14,300 - 01:53:16,300] everything will cool down,
+- [01:53:16,300 - 01:53:18,300] everything will dilute,
+- [01:53:18,300 - 01:53:21,300] all ordinary forms of energy will exponentially dilute,
+- [01:53:21,300 - 01:53:24,300] because if the universe is exponentially expanding,
+- [01:53:24,300 - 01:53:27,300] its volume is exponentially expanding,
+- [01:53:27,300 - 01:53:29,300] all the energy densities of all the other kinds,
+- [01:53:29,300 - 01:53:31,300] other than the vacuum energy,
+- [01:53:31,300 - 01:53:32,300] will expand.
+- [01:53:32,300 - 01:53:34,300] All the energy densities of all the other kinds,
+- [01:53:34,300 - 01:53:36,300] other than the vacuum energy density,
+- [01:53:36,300 - 01:53:38,300] will also exponentially dilute,
+- [01:53:38,300 - 01:53:40,300] and will just be in
+- [01:53:40,300 - 01:53:42,300] a universe with nothing in it,
+- [01:53:42,300 - 01:53:46,300] or with thinner and thinner energy density.
+- [01:53:46,300 - 01:53:50,300] So there is no good end to this story.
+- [01:53:50,300 - 01:53:54,300] Also, a great distance away from us,
+- [01:53:54,300 - 01:53:57,300] will there be an increased amount of photons,
+- [01:53:57,300 - 01:54:00,300] because in the early universe,
+- [01:54:00,300 - 01:54:03,300] it was dominated by photons,
+- [01:54:03,300 - 01:54:06,300] and the universe expands.
+- [01:54:06,300 - 01:54:12,300] Since the photons move faster than, say, the mass,
+- [01:54:12,300 - 01:54:14,300] the matter that was in there,
+- [01:54:14,300 - 01:54:16,300] what do you expect?
+- [01:54:16,300 - 01:54:19,300] As you look back into the past,
+- [01:54:19,300 - 01:54:25,300] the ratio of photons to ordinary particles,
+- [01:54:25,300 - 01:54:29,300] well, let's see how to say it.
+- [01:54:29,300 - 01:54:31,800] I would say more than
+- [01:54:31,800 - 01:54:34,300] saying that the number of photons
+- [01:54:34,300 - 01:54:38,300] doesn't get larger than the number of...
+- [01:54:38,300 - 01:54:40,300] It's already true in our universe
+- [01:54:40,300 - 01:54:42,300] that the number of photons is much, much larger
+- [01:54:42,300 - 01:54:44,300] than the number of atoms.
+- [01:54:44,300 - 01:54:47,300] Ten to the tenth times larger.
+- [01:54:47,300 - 01:54:49,300] So we are dominated by photons.
+- [01:54:49,300 - 01:54:51,300] I don't mean the photons from light bulbs,
+- [01:54:51,300 - 01:54:53,300] I don't mean the photons from the sun,
+- [01:54:53,300 - 01:54:55,300] I don't mean the photons from stars,
+- [01:54:55,300 - 01:54:58,300] I mean the microwave background from the Big Bang.
+- [01:54:59,300 - 01:55:04,300] We are certainly dominated by photons.
+- [01:55:04,300 - 01:55:06,300] Now as you go back in time,
+- [01:55:06,300 - 01:55:11,300] the ratio of photons to protons stays about the same.
+- [01:55:11,300 - 01:55:14,300] But the photons get more and more energetic
+- [01:55:14,300 - 01:55:16,300] and the protons don't.
+- [01:55:16,300 - 01:55:19,300] So as far as energy goes,
+- [01:55:19,300 - 01:55:21,300] as you go back into the past,
+- [01:55:21,300 - 01:55:24,300] the energy will be dominated by the photons.
+- [01:55:24,300 - 01:55:27,300] The number of photons will stay the same,
+- [01:55:27,300 - 01:55:28,300] but their energy will increase
+- [01:55:28,300 - 01:55:30,300] as you go back into the past.
+- [01:55:30,300 - 01:55:32,300] The number of protons will stay the same,
+- [01:55:32,300 - 01:55:34,300] but their energy won't increase,
+- [01:55:34,300 - 01:55:39,300] or at least not as fast.
+- [01:55:39,300 - 01:55:41,300] Good. Okay.
+- [01:55:41,300 - 01:55:44,300] I'm tired. Let's go home.
+- [01:55:44,300 - 01:55:46,300] And this is the last class.
+- [01:55:58,300 - 01:56:02,300] The preceding program is copyrighted by Stanford University.
+- [01:56:02,300 - 01:56:05,300] Please visit us at stanford.edu.
