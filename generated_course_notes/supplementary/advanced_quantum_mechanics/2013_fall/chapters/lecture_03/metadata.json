@@ -8,51 +8,51 @@
   "assets": [
     {
       "name": "lecture_03_frame_01.png",
-      "timestamp_seconds": 0.0,
-      "timestamp_hhmmss": "00:00:00.000",
-      "source_candidate": "lecture_03_candidate_01_000000000.png",
-      "recommended_use": "figure",
-      "rationale": "Fallback selection without successful image-review parse."
-    },
-    {
-      "name": "lecture_03_frame_02.png",
-      "timestamp_seconds": 5.08,
-      "timestamp_hhmmss": "00:00:05.080",
-      "source_candidate": "lecture_03_candidate_02_000005080.png",
-      "recommended_use": "figure",
-      "rationale": "Fallback selection without successful image-review parse."
-    },
-    {
-      "name": "lecture_03_frame_03.png",
-      "timestamp_seconds": 14.08,
-      "timestamp_hhmmss": "00:00:14.080",
-      "source_candidate": "lecture_03_candidate_03_000014080.png",
-      "recommended_use": "figure",
-      "rationale": "Fallback selection without successful image-review parse."
-    },
-    {
-      "name": "lecture_03_frame_04.png",
-      "timestamp_seconds": 23.08,
-      "timestamp_hhmmss": "00:00:23.080",
-      "source_candidate": "lecture_03_candidate_04_000023080.png",
-      "recommended_use": "figure",
-      "rationale": "Fallback selection without successful image-review parse."
-    },
-    {
-      "name": "lecture_03_frame_05.png",
       "timestamp_seconds": 2135.6,
       "timestamp_hhmmss": "00:35:35.600",
       "source_candidate": "lecture_03_candidate_05_003535600.png",
       "recommended_use": "figure",
-      "rationale": "Fallback selection without successful image-review parse."
+      "rationale": "Contains the key angular-momentum counting result: 2L+1 states and M ranges for each L."
+    },
+    {
+      "name": "lecture_03_frame_02.png",
+      "timestamp_seconds": 2171.6,
+      "timestamp_hhmmss": "00:36:11.600",
+      "source_candidate": "lecture_03_candidate_09_003611600.png",
+      "recommended_use": "figure",
+      "rationale": "Shows the degeneracy statement tied to [H, L]=0, useful for linking symmetry to equal-energy magnetic sublevels."
+    },
+    {
+      "name": "lecture_03_frame_03.png",
+      "timestamp_seconds": 2805.37,
+      "timestamp_hhmmss": "00:46:45.370",
+      "source_candidate": "lecture_03_candidate_10_004645370.png",
+      "recommended_use": "figure",
+      "rationale": "Shows the centrifugal-barrier discussion for forbidden origin access and the special l=0 case; useful board reference for radial effective potential."
+    },
+    {
+      "name": "lecture_03_frame_04.png",
+      "timestamp_seconds": 3251.49,
+      "timestamp_hhmmss": "00:54:11.490",
+      "source_candidate": "lecture_03_candidate_16_005411490.png",
+      "recommended_use": "figure",
+      "rationale": "Captures the substitution of L^2 by l(l+1) and its appearance in the 1/r^2 term of the radial equation."
+    },
+    {
+      "name": "lecture_03_frame_05.png",
+      "timestamp_seconds": 3743.93,
+      "timestamp_hhmmss": "01:02:23.930",
+      "source_candidate": "lecture_03_candidate_24_010223930.png",
+      "recommended_use": "figure",
+      "rationale": "Contains the angular-momentum-based energy-level organization sketch with separate radial equations per l."
     },
     {
       "name": "lecture_03_frame_06.png",
-      "timestamp_seconds": 2144.6,
-      "timestamp_hhmmss": "00:35:44.600",
-      "source_candidate": "lecture_03_candidate_06_003544600.png",
+      "timestamp_seconds": 4534.35,
+      "timestamp_hhmmss": "01:15:34.350",
+      "source_candidate": "lecture_03_candidate_27_011534350.png",
       "recommended_use": "figure",
-      "rationale": "Fallback selection without successful image-review parse."
+      "rationale": "Shows the original Schr\u00f6dinger operator form and decomposition p^2 = p_x^2+p_y^2+p_z^2 before angular separation."
     }
   ]
 }
