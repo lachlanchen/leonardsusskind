@@ -1,0 +1,2199 @@
+# Transcript
+
+Source: supplementary/quantum_entanglement/2006_fall_part_1/048 - Lecture 1 ｜ Quantum Entanglements, Part 1 (Stanford) [0Eeuqh9QfNI].webm
+
+- [00:00:07,440 - 00:00:10,440] This program is brought to you by Stanford University.
+- [00:00:10,440 - 00:00:13,200] Please visit us at stanford.edu.
+- [00:00:15,480 - 00:00:18,400] I almost always begin with the same sermon.
+- [00:00:23,600 - 00:00:25,340] About, especially when teaching
+- [00:00:25,340 - 00:00:27,080] about quantum mechanics or relativity.
+- [00:00:27,080 - 00:00:30,639] The sermon is always the same.
+- [00:00:30,639 - 00:00:35,609] It's the fact that we as animals have
+- [00:00:35,609 - 00:00:40,580] inherited through the process of evolution certain intuitive
+- [00:00:40,580 - 00:00:46,220] ways of thinking about the physical world.
+- [00:00:46,220 - 00:00:49,760] And if you don't believe it, you
+- [00:00:49,760 - 00:00:53,300] think that maybe ordinary animals are not physicists,
+- [00:00:53,300 - 00:00:56,680] you watch a lion chasing an antelope.
+- [00:00:57,080 - 00:00:59,700] And you notice that that lion, the
+- [00:00:59,700 - 00:01:02,320] minute that the antelope, that the relative velocity
+- [00:01:02,320 - 00:01:05,480] between the antelope and the lion
+- [00:01:05,480 - 00:01:08,640] changes sign, the lion just stops dead.
+- [00:01:08,640 - 00:01:11,760] Somehow he did some calculation, or she, it's
+- [00:01:11,760 - 00:01:14,880] usually a she, the lion, did some calculation,
+- [00:01:14,880 - 00:01:18,670] some physics calculation involving some
+- [00:01:18,670 - 00:01:22,460] very complicated concepts of velocity, direction,
+- [00:01:22,460 - 00:01:26,460] all kinds of complicated computations like that.
+- [00:01:27,080 - 00:01:29,169] And most of the million years, they're
+- [00:01:29,169 - 00:01:31,259] speaking about the human body in the future.
+- [00:01:31,259 - 00:01:32,400] Have you ever heard?
+- [00:01:33,960 - 00:01:45,580] How butchering a
+- [00:01:47,580 - 00:01:50,100] animal,
+- [00:01:50,100 - 00:01:53,440] because they talk about other things.
+- [00:01:53,440 - 00:01:54,860] Most interesting ones are the overall change.
+- [00:01:54,860 - 00:01:56,300] Where is the displacement?
+- [00:01:56,300 - 00:01:58,250] did he have components? Did
+- [00:01:58,250 - 00:02:00,200] he know about sines and cosines?
+- [00:02:00,200 - 00:02:04,200] Yes, somehow he did know about sines and cosines
+- [00:02:04,200 - 00:02:07,160] These are things which were inherited
+- [00:02:07,160 - 00:02:10,060] biological in origin
+- [00:02:10,060 - 00:02:14,740] and they are the basis of our intuitions about physics
+- [00:02:14,740 - 00:02:19,500] our intuitive picture of the world
+- [00:02:19,500 - 00:02:21,750] Much of physics has to do with
+- [00:02:21,750 - 00:02:24,000] those things, in fact, all of modern physics
+- [00:02:24,000 - 00:02:26,079] everything in modern physics
+- [00:02:26,080 - 00:02:28,480] has to do with those things
+- [00:02:28,480 - 00:02:30,900] which are beyond the intuitions
+- [00:02:30,900 - 00:02:33,320] that we were able to get
+- [00:02:33,320 - 00:02:36,680] from the ordinary world
+- [00:02:36,680 - 00:02:38,520] has to do with
+- [00:02:38,520 - 00:02:41,440] with ranges of parameters which are
+- [00:02:41,440 - 00:02:44,360] way outside the range of parameters
+- [00:02:44,360 - 00:02:47,580] that humans or animals ever experienced
+- [00:02:47,580 - 00:02:50,280] For example, it's not too surprising that
+- [00:02:50,280 - 00:02:52,980] human beings didn't know how to deal
+- [00:02:52,980 - 00:02:56,060] with velocities approaching the speed of light
+- [00:02:56,080 - 00:02:58,740] that they got the wrong
+- [00:02:58,740 - 00:03:01,400] ideas about how to add velocities
+- [00:03:01,400 - 00:03:06,160] when nobody in 1900 had ever, probably had never moved
+- [00:03:06,160 - 00:03:10,920] faster than 50 or 60 or 100 miles an hour
+- [00:03:10,920 - 00:03:15,080] Well, they probably did when they were falling off cliffs
+- [00:03:15,080 - 00:03:17,080] but they didn't live to talk about it
+- [00:03:17,080 - 00:03:20,080] maybe they got up to 200 miles an hour, maybe
+- [00:03:20,080 - 00:03:22,980] but nobody ever had experienced anything like
+- [00:03:22,980 - 00:03:25,880] the velocities approaching the speed of light
+- [00:03:26,080 - 00:03:29,580] and so it was not surprising that their intuitions
+- [00:03:29,580 - 00:03:31,730] that their way of thinking
+- [00:03:31,730 - 00:03:33,880] about adding velocities and so forth
+- [00:03:33,880 - 00:03:35,880] the theory of relativity
+- [00:03:35,880 - 00:03:39,400] was, and how you synchronize clocks, all that stuff
+- [00:03:39,400 - 00:03:41,400] all that good stuff that Einstein did
+- [00:03:41,400 - 00:03:44,360] that it was outside the framework
+- [00:03:44,360 - 00:03:47,320] of their ability to think about
+- [00:03:47,320 - 00:03:52,320] through intuitive pictures, through intuitive mathematics
+- [00:03:52,320 - 00:03:55,520] They had to invent new mathematics
+- [00:03:55,520 - 00:03:58,020] The new mathematics was abstract
+- [00:03:58,020 - 00:04:01,020] meaning to say you couldn't visualize it
+- [00:04:01,020 - 00:04:04,020] four-dimensional space-time
+- [00:04:04,020 - 00:04:07,020] I can't visualize four dimensions
+- [00:04:07,020 - 00:04:10,020] I've learned tricks to visualize it
+- [00:04:10,020 - 00:04:14,020] So physicists to some extent rewire themselves
+- [00:04:14,020 - 00:04:16,019] or people who learn physics
+- [00:04:16,019 - 00:04:18,519] do a process of rewiring themselves
+- [00:04:18,519 - 00:04:21,019] to some extent to develop intuitions
+- [00:04:21,019 - 00:04:23,019] to be able to deal
+- [00:04:23,019 - 00:04:25,020] with these new ranges of parameters
+- [00:04:25,520 - 00:04:30,520] but still, they're foreign, they're alien, they're peculiar
+- [00:04:30,520 - 00:04:32,520] even to me
+- [00:04:32,520 - 00:04:36,520] Quantum mechanics deals with a range of phenomena
+- [00:04:36,520 - 00:04:42,520] which is also outside the experience of ordinary humans
+- [00:04:42,520 - 00:04:45,020] for which evolution simply didn't
+- [00:04:45,020 - 00:04:47,520] provide you the means to visualize
+- [00:04:47,520 - 00:04:49,770] Evolution did not provide you
+- [00:04:49,770 - 00:04:52,020] the means to visualize an electron
+- [00:04:52,020 - 00:04:54,020] to visualize the motion of an electron
+- [00:04:54,020 - 00:04:57,020] to visualize the uncertainty principle
+- [00:04:57,020 - 00:04:59,020] When you think of a particle moving
+- [00:04:59,020 - 00:05:01,020] What is a particle?
+- [00:05:01,020 - 00:05:03,020] A particle is a thing with a position
+- [00:05:03,020 - 00:05:06,020] At every instant of time it has a position
+- [00:05:06,020 - 00:05:08,020] If at every instant of time it
+- [00:05:08,020 - 00:05:10,020] has a position, it has a trajectory
+- [00:05:10,020 - 00:05:13,020] If it has a trajectory, you
+- [00:05:13,020 - 00:05:16,020] can calculate the velocity along that trajectory
+- [00:05:16,020 - 00:05:18,020] just by knowing the separation between
+- [00:05:18,020 - 00:05:20,020] points and what the time interval is
+- [00:05:20,020 - 00:05:22,020] you can calculate the velocity
+- [00:05:22,020 - 00:05:24,020] and that's the intuitive way of doing it
+- [00:05:24,020 - 00:05:27,020] The intuitive picture of a particle
+- [00:05:27,020 - 00:05:29,020] and where does it come from?
+- [00:05:29,020 - 00:05:31,520] It comes from thinking about
+- [00:05:31,520 - 00:05:34,020] rocks, throwing rocks, shooting arrows
+- [00:05:34,020 - 00:05:37,020] all kinds of things that human beings normally do
+- [00:05:37,020 - 00:05:41,020] So we never developed the need
+- [00:05:41,020 - 00:05:43,020] It would have been very bizarre
+- [00:05:43,020 - 00:05:45,020] if our brains had been wired
+- [00:05:45,020 - 00:05:47,020] to understand the uncertainty principle
+- [00:05:47,020 - 00:05:51,020] Why would Darwin have given us the...
+- [00:05:51,020 - 00:05:52,020] Incidentally
+- [00:05:52,020 - 00:05:54,520] If you prefer to think of
+- [00:05:54,520 - 00:05:57,020] the intelligent designer, go right ahead
+- [00:05:57,020 - 00:06:00,020] I prefer to think about Darwin
+- [00:06:00,020 - 00:06:02,020] But why would either of
+- [00:06:02,020 - 00:06:04,020] Darwin's ideas or the intelligent designer
+- [00:06:04,020 - 00:06:06,520] have provided us with the
+- [00:06:06,520 - 00:06:09,020] ability to understand the uncertainty principle
+- [00:06:09,020 - 00:06:11,020] when it's never anything that's
+- [00:06:11,020 - 00:06:13,020] part of our ordinary experience?
+- [00:06:13,020 - 00:06:15,020] The answer is it didn't
+- [00:06:15,020 - 00:06:18,020] And so quantum mechanics for that
+- [00:06:18,020 - 00:06:21,020] reason appears extremely weird to us
+- [00:06:22,020 - 00:06:26,020] Physicists, as I said, rewired themselves
+- [00:06:26,020 - 00:06:30,020] and developed ways of thinking about it which are intuitive
+- [00:06:30,020 - 00:06:35,020] But still, quantum mechanics is much, much more unintuitive
+- [00:06:35,020 - 00:06:38,020] incidentally, than the special theory of relativity
+- [00:06:38,020 - 00:06:42,020] And what we're going to try to do here
+- [00:06:42,020 - 00:06:46,020] is expose some of the weirdness of quantum mechanics
+- [00:06:46,020 - 00:06:49,020] The weirdness of the logic of quantum mechanics
+- [00:06:49,020 - 00:06:53,020] The weirdness of how quantum information works
+- [00:06:56,020 - 00:06:58,020] This is not a class
+- [00:06:58,020 - 00:07:01,020] A conventional class in quantum mechanics
+- [00:07:01,020 - 00:07:03,520] A conventional class in quantum mechanics would
+- [00:07:03,520 - 00:07:06,020] stress such things as the Schrodinger equation
+- [00:07:06,020 - 00:07:08,020] and waves
+- [00:07:08,020 - 00:07:12,020] and how particles sometimes behave like waves and so forth
+- [00:07:12,020 - 00:07:13,520] We may or may not
+- [00:07:13,520 - 00:07:15,020] get to a bit of that
+- [00:07:15,020 - 00:07:17,020] But that's not the important subject
+- [00:07:17,020 - 00:07:19,020] that we're going to concentrate on
+- [00:07:19,020 - 00:07:22,020] What we're going to concentrate on
+- [00:07:22,020 - 00:07:25,020] is the basic logic of quantum mechanics
+- [00:07:25,020 - 00:07:29,020] The basic logic of quantum information theory
+- [00:07:29,020 - 00:07:32,020] Physics is information
+- [00:07:32,020 - 00:07:34,020] When you say something about
+- [00:07:34,020 - 00:07:36,020] a physical system, you're saying something...
+- [00:07:36,020 - 00:07:38,020] You're giving some information about it
+- [00:07:38,020 - 00:07:40,020] You give the information in various forms
+- [00:07:40,020 - 00:07:43,020] Usually in the form of numbers
+- [00:07:43,020 - 00:07:46,020] In classical physics, you often give...
+- [00:07:46,020 - 00:07:48,020] I will give you some examples, but...
+- [00:07:48,020 - 00:07:53,539] you usually give it in the form of real numbers
+- [00:07:53,539 - 00:07:57,400] the position, the velocity, a set of real numbers
+- [00:07:57,400 - 00:08:00,830] in quantum mechanics, sometimes you use
+- [00:08:00,830 - 00:08:04,260] real numbers, but very, very often
+- [00:08:04,260 - 00:08:07,219] you give discrete information
+- [00:08:07,219 - 00:08:12,740] discrete information such as yes or no
+- [00:08:12,740 - 00:08:14,960] or up or down
+- [00:08:14,960 - 00:08:17,299] or male or female
+- [00:08:17,300 - 00:08:20,860] well that's probably not such a good example
+- [00:08:20,860 - 00:08:23,740] the difference is between, yeah that's probably not
+- [00:08:23,740 - 00:08:26,580] I think I'll withdraw that, heads or tails
+- [00:08:26,580 - 00:08:29,580] heads or tails, do I have a coin?
+- [00:08:29,580 - 00:08:32,799] no
+- [00:08:32,799 - 00:08:34,960] a Gedanken coin
+- [00:08:34,960 - 00:08:38,740] thought coin, head, tail, head, tail
+- [00:08:38,740 - 00:08:41,679] when I flip the coin
+- [00:08:41,679 - 00:08:43,620] head, that's a piece of information
+- [00:08:43,620 - 00:08:45,120] it could be tail
+- [00:08:45,120 - 00:08:47,300] it's a two valued system
+- [00:08:47,300 - 00:08:49,300] either yes or no
+- [00:08:49,300 - 00:08:51,300] up or down, heads or tails
+- [00:08:51,300 - 00:08:53,300] or sometimes
+- [00:08:53,300 - 00:08:57,300] they're logically all the same of course
+- [00:08:57,300 - 00:08:58,800] they're logically all the same, whether
+- [00:08:58,800 - 00:09:00,300] we're talking about heads or tails
+- [00:09:00,300 - 00:09:02,300] up or down
+- [00:09:02,300 - 00:09:05,300] or whatever it is, they're logically the same
+- [00:09:05,300 - 00:09:08,300] and they're simply decisions which
+- [00:09:08,300 - 00:09:11,300] have two possible, or questions
+- [00:09:11,300 - 00:09:14,300] which have two possible answers
+- [00:09:14,300 - 00:09:17,300] and a bit of information
+- [00:09:17,300 - 00:09:21,300] which has two possible answers is called a bit
+- [00:09:21,300 - 00:09:23,300] it's called a bit
+- [00:09:23,300 - 00:09:27,300] and it can either be a classical bit
+- [00:09:27,300 - 00:09:29,300] or a quantum bit
+- [00:09:29,300 - 00:09:33,300] all real bits in nature are quantum bits
+- [00:09:33,300 - 00:09:35,300] obviously since nature is made out of quantum mechanics
+- [00:09:35,300 - 00:09:37,300] but sometimes the quantum aspects
+- [00:09:37,300 - 00:09:39,300] of it don't manifest themselves
+- [00:09:39,300 - 00:09:41,300] in an ordinary computer
+- [00:09:41,300 - 00:09:45,300] the quantum aspects of the bit
+- [00:09:45,300 - 00:09:48,300] don't really manifest themselves for
+- [00:09:48,300 - 00:09:51,300] reasons that we'll come to
+- [00:09:51,300 - 00:09:54,300] and it's just called a classical bit
+- [00:09:54,300 - 00:09:55,300] a classical bit of information
+- [00:09:55,300 - 00:09:57,300] this head, the coin flip
+- [00:09:57,300 - 00:09:59,300] yes or no
+- [00:09:59,300 - 00:10:01,300] the quantum bit
+- [00:10:01,300 - 00:10:04,300] is the quantum analog
+- [00:10:04,300 - 00:10:07,300] of the flipped coin
+- [00:10:07,300 - 00:10:09,300] the yes or no type question
+- [00:10:09,300 - 00:10:12,300] but it is much, much more subtle
+- [00:10:12,300 - 00:10:13,300] and the first thing we're
+- [00:10:13,300 - 00:10:14,300] going to want to explore is
+- [00:10:14,300 - 00:10:17,300] what is a quantum bit
+- [00:10:17,300 - 00:10:20,300] now, but before we do that
+- [00:10:20,300 - 00:10:23,300] let's talk about classical bits
+- [00:10:23,300 - 00:10:27,300] classical bits can be described
+- [00:10:27,300 - 00:10:30,300] either by writing down a zero
+- [00:10:30,300 - 00:10:32,300] or a one
+- [00:10:32,300 - 00:10:35,300] these are, we could also use one and minus one
+- [00:10:35,300 - 00:10:37,300] or we could use five and fifteen
+- [00:10:37,300 - 00:10:38,300] doesn't matter
+- [00:10:38,300 - 00:10:42,300] but zero and one is a convenient notation
+- [00:10:42,300 - 00:10:46,300] of the two possible values
+- [00:10:46,300 - 00:10:48,300] zero could stand for heads
+- [00:10:48,300 - 00:10:51,300] one could stand for tails and so forth
+- [00:10:51,300 - 00:10:54,300] so we're thinking about this
+- [00:10:54,300 - 00:10:56,300] we're thinking about some physical system
+- [00:10:56,300 - 00:10:58,300] when we're thinking about information
+- [00:10:58,300 - 00:11:00,300] we're thinking about a physical system
+- [00:11:00,300 - 00:11:02,300] such as a coin
+- [00:11:02,300 - 00:11:05,300] and this is the information contained in that coin
+- [00:11:05,300 - 00:11:07,300] either a zero or a one
+- [00:11:07,300 - 00:11:09,300] there's a notation
+- [00:11:09,300 - 00:11:11,300] this seems like a ridiculous and redundant notation
+- [00:11:11,300 - 00:11:14,300] its importance will only become clear
+- [00:11:14,300 - 00:11:17,300] when we start to think about quantum bits
+- [00:11:17,300 - 00:11:20,300] but we're going to use the Dirac notation
+- [00:11:20,300 - 00:11:23,300] the Dirac notation
+- [00:11:23,300 - 00:11:27,300] describes the state of a bit
+- [00:11:27,300 - 00:11:30,300] not whether it's California or Oregon
+- [00:11:30,300 - 00:11:32,300] but the configuration of the bit
+- [00:11:32,300 - 00:11:34,300] and it's usually labeled
+- [00:11:34,300 - 00:11:37,300] with a notation zero
+- [00:11:37,300 - 00:11:40,300] or one
+- [00:11:40,300 - 00:11:43,300] or whatever other information
+- [00:11:43,300 - 00:11:46,300] whatever other way you decide to think about the bit
+- [00:11:46,300 - 00:11:48,300] these are the two states
+- [00:11:48,300 - 00:11:50,300] that a bit can have
+- [00:11:50,300 - 00:11:52,300] either a zero or one
+- [00:11:52,300 - 00:11:53,300] and it's represented
+- [00:11:53,300 - 00:11:56,300] I don't know if I drew that well
+- [00:11:56,300 - 00:11:58,300] let's draw it again
+- [00:12:00,300 - 00:12:02,300] zero
+- [00:12:03,300 - 00:12:05,300] or one
+- [00:12:05,300 - 00:12:08,300] these are the two states of a bit
+- [00:12:08,300 - 00:12:09,300] all of this extra junk here
+- [00:12:09,300 - 00:12:10,300] is excess
+- [00:12:10,300 - 00:12:11,300] you don't need it
+- [00:12:11,300 - 00:12:12,300] it doesn't tell you anything
+- [00:12:12,300 - 00:12:15,300] it just says that you're putting it inside a bracket
+- [00:12:15,300 - 00:12:16,300] incidentally
+- [00:12:16,300 - 00:12:20,300] this pointy bracketed object over here
+- [00:12:20,300 - 00:12:23,300] the thing that contains the information on the inside
+- [00:12:23,300 - 00:12:28,300] is called a ket
+- [00:12:28,300 - 00:12:29,300] it's called a ket
+- [00:12:29,300 - 00:12:32,300] because it's the second half of something
+- [00:12:32,300 - 00:12:36,300] which we will later learn is a bra ket
+- [00:12:36,300 - 00:12:38,300] or a bracket
+- [00:12:39,300 - 00:12:42,300] there's another half
+- [00:12:42,300 - 00:12:45,300] that we haven't exposed yet
+- [00:12:45,300 - 00:12:48,300] now what about multi bits
+- [00:12:48,300 - 00:12:49,300] supposing you have more than one bit
+- [00:12:49,300 - 00:12:51,300] and we're talking now classical physics
+- [00:12:51,300 - 00:12:55,300] so far we're not talking about anything quantum mechanical
+- [00:12:59,300 - 00:13:01,300] supposing we have several coins
+- [00:13:01,300 - 00:13:03,300] and I line them up
+- [00:13:03,300 - 00:13:05,300] I label them so we know which one is which
+- [00:13:05,300 - 00:13:08,300] in fact just in order to not confuse coins
+- [00:13:08,300 - 00:13:10,300] let's make sure they're different coins
+- [00:13:10,300 - 00:13:14,300] penny, nickel, dime, quarter, half dollar, silver dollar
+- [00:13:14,300 - 00:13:16,300] so we have a bunch of coins
+- [00:13:16,300 - 00:13:18,300] we can't confuse them
+- [00:13:18,300 - 00:13:21,300] and we can lay out some information
+- [00:13:21,300 - 00:13:26,300] by saying head, tail, tail, head, head, tail
+- [00:13:26,300 - 00:13:31,300] that would be some information about a collection of bits
+- [00:13:31,300 - 00:13:33,300] how would you label that?
+- [00:13:33,300 - 00:13:34,800] well you would label it with
+- [00:13:34,800 - 00:13:36,300] a string of zeros and ones
+- [00:13:36,300 - 00:13:38,300] so for example
+- [00:13:38,300 - 00:13:43,300] let's take zero always to stand for head
+- [00:13:43,300 - 00:13:45,300] it's easy to remember
+- [00:13:45,300 - 00:13:48,300] zero stands for head
+- [00:13:48,300 - 00:13:52,300] and one stands for tail for obvious reasons
+- [00:13:52,300 - 00:13:56,300] right, so my string of coins
+- [00:13:56,300 - 00:13:59,300] head, head, tail, head, tail, head
+- [00:13:59,300 - 00:14:02,300] I would label zero for head
+- [00:14:02,300 - 00:14:04,300] zero for another head
+- [00:14:04,300 - 00:14:07,300] one, zero, one, one for example
+- [00:14:07,300 - 00:14:10,300] that's a configuration of one,
+- [00:14:10,300 - 00:14:13,300] two, three, four, five, six coins
+- [00:14:13,300 - 00:14:14,300] alright
+- [00:14:14,300 - 00:14:17,300] let's say it was six coins
+- [00:14:17,300 - 00:14:21,300] that's a configuration of a multi-bit system
+- [00:14:21,300 - 00:14:24,300] in this case six bits
+- [00:14:24,300 - 00:14:26,300] again
+- [00:14:26,300 - 00:14:30,300] for reasons that add absolutely nothing to this description
+- [00:14:30,300 - 00:14:33,300] we're going to stick it inside a ket
+- [00:14:33,300 - 00:14:34,800] stick it inside a ket which
+- [00:14:34,800 - 00:14:36,300] is just a kind of notation
+- [00:14:37,300 - 00:14:38,800] it might be a good idea
+- [00:14:38,800 - 00:14:40,300] to put some commas between these
+- [00:14:40,300 - 00:14:41,800] but maybe not, maybe it's just
+- [00:14:41,800 - 00:14:43,300] best to leave it that way
+- [00:14:43,300 - 00:14:46,300] that's a specification
+- [00:14:46,300 - 00:14:49,300] it could be the specification of
+- [00:14:49,300 - 00:14:52,300] the bits of information inside a computer
+- [00:14:52,300 - 00:14:54,300] it could be just a series
+- [00:14:54,300 - 00:14:56,300] of heads or tails or so forth
+- [00:14:56,300 - 00:14:59,300] but before we do anything else with this
+- [00:14:59,300 - 00:15:02,300] let's ask a very simple question
+- [00:15:02,300 - 00:15:06,300] how many possible configurations
+- [00:15:06,300 - 00:15:09,300] how many possible states are there
+- [00:15:09,300 - 00:15:12,300] of, well let's start with one bit
+- [00:15:12,300 - 00:15:14,300] if there's only one bit
+- [00:15:14,300 - 00:15:17,300] then there are only two states
+- [00:15:17,300 - 00:15:20,300] what if there are two bits
+- [00:15:20,300 - 00:15:23,300] well then you can have up, up
+- [00:15:23,300 - 00:15:27,300] up, down, down, up, down, down
+- [00:15:27,300 - 00:15:30,300] four, two times two
+- [00:15:30,300 - 00:15:33,300] so for two bits we have two squared
+- [00:15:33,300 - 00:15:35,300] what if we have a hundred bits?
+- [00:15:36,300 - 00:15:39,300] the answer is
+- [00:15:39,300 - 00:15:41,300] two to the one hundredth power
+- [00:15:41,300 - 00:15:44,300] two times two times two times two a hundred times
+- [00:15:44,300 - 00:15:47,300] so if you have an in-bit system
+- [00:15:47,300 - 00:15:51,300] the number of possible classical configurations
+- [00:15:51,300 - 00:15:53,300] is just two to the n
+- [00:15:53,300 - 00:15:57,300] let's write that down, let's put a notation in
+- [00:15:57,300 - 00:16:00,300] let's write the number of states
+- [00:16:00,300 - 00:16:04,300] the number of states, n sub s
+- [00:16:04,300 - 00:16:06,300] the number of states
+- [00:16:06,300 - 00:16:10,300] of a system of little n bits
+- [00:16:10,300 - 00:16:15,300] is two to the n
+- [00:16:15,300 - 00:16:17,300] let's suppose we
+- [00:16:17,300 - 00:16:20,300] oh let's invert that first of all
+- [00:16:20,300 - 00:16:22,300] let's invert, little n is what?
+- [00:16:22,300 - 00:16:24,300] little n is the number of bits
+- [00:16:24,300 - 00:16:27,300] big N is the number of states
+- [00:16:27,300 - 00:16:30,300] little n is the number of bits
+- [00:16:30,300 - 00:16:33,300] so if the number of bits
+- [00:16:33,300 - 00:16:35,300] is four
+- [00:16:35,300 - 00:16:37,300] then the number of states is two to the four
+- [00:16:37,300 - 00:16:39,300] which is sixteen and so forth
+- [00:16:39,300 - 00:16:41,300] we can invert this
+- [00:16:41,300 - 00:16:42,300] and we can write
+- [00:16:42,300 - 00:16:45,300] if we knew the number of states of a system
+- [00:16:47,300 - 00:16:51,300] then we can take the logarithm of this equation
+- [00:16:52,300 - 00:16:56,300] log to the base two is particularly convenient
+- [00:16:56,300 - 00:16:59,300] if we take the log to the base two
+- [00:16:59,300 - 00:17:01,300] of the number of states
+- [00:17:01,300 - 00:17:04,300] which is equal to the number of bits
+- [00:17:08,300 - 00:17:10,300] you can generalize this
+- [00:17:10,300 - 00:17:14,300] not every system has as its number of states
+- [00:17:14,300 - 00:17:16,300] two to a power
+- [00:17:16,300 - 00:17:19,300] supposing I have a state, a system
+- [00:17:19,300 - 00:17:23,300] a die
+- [00:17:23,300 - 00:17:25,300] you know, the things you use in Las Vegas
+- [00:17:25,300 - 00:17:27,300] to throw away your money with
+- [00:17:29,300 - 00:17:31,300] it's got six
+- [00:17:31,300 - 00:17:33,300] possibilities, one through six
+- [00:17:33,300 - 00:17:36,300] that is not two to any particular power
+- [00:17:36,300 - 00:17:38,300] it's just six
+- [00:17:38,300 - 00:17:42,300] but we can still generalize this definition
+- [00:17:42,300 - 00:17:46,300] of the number of bits of information
+- [00:17:46,300 - 00:17:51,300] in fact, the number of bits of information
+- [00:17:51,300 - 00:17:53,300] that a system can contain
+- [00:17:53,300 - 00:17:56,300] is by definition
+- [00:17:56,300 - 00:17:59,300] the logarithm to the base two
+- [00:18:01,300 - 00:18:04,300] of the number of states
+- [00:18:04,300 - 00:18:06,300] which for the die
+- [00:18:06,300 - 00:18:08,300] would be log
+- [00:18:08,300 - 00:18:10,300] to the base two
+- [00:18:10,300 - 00:18:12,300] of six
+- [00:18:12,300 - 00:18:15,300] what is log to the base two of six?
+- [00:18:15,300 - 00:18:17,300] is it an integer?
+- [00:18:17,300 - 00:18:20,300] no, it's some stupid irrational number
+- [00:18:20,300 - 00:18:21,300] I don't even know, what is
+- [00:18:21,300 - 00:18:22,300] it, how big is it about
+- [00:18:22,300 - 00:18:25,300] two to the two to the two is four
+- [00:18:25,300 - 00:18:27,300] two to the three is eight
+- [00:18:27,300 - 00:18:28,800] two to the two point five
+- [00:18:28,800 - 00:18:30,300] three seven nine eight six fourteen
+- [00:18:30,300 - 00:18:31,300] or whatever
+- [00:18:31,300 - 00:18:32,300] so
+- [00:18:32,300 - 00:18:35,300] the amount of information
+- [00:18:35,300 - 00:18:38,300] which is always the logarithm
+- [00:18:38,300 - 00:18:39,800] of the number of states does
+- [00:18:39,800 - 00:18:41,300] not have to be an integer
+- [00:18:41,300 - 00:18:44,300] but we're going to be considering systems
+- [00:18:44,300 - 00:18:47,300] which are made up out of
+- [00:18:47,300 - 00:18:49,300] some number
+- [00:18:49,300 - 00:18:52,300] of bits, each of which has two states
+- [00:18:52,300 - 00:18:53,800] so for the simplicity we're
+- [00:18:53,800 - 00:18:55,300] going to be talking about systems
+- [00:18:55,300 - 00:18:58,300] the number of states is always two to a power
+- [00:18:58,300 - 00:19:00,300] that's just for simplicity
+- [00:19:00,300 - 00:19:02,300] there's nothing special about it
+- [00:19:02,300 - 00:19:06,300] but almost every system can be represented that way
+- [00:19:06,300 - 00:19:09,300] or approximately represented that way
+- [00:19:09,300 - 00:19:11,300] let me give you an example
+- [00:19:11,300 - 00:19:13,300] supposing we have
+- [00:19:13,300 - 00:19:16,300] some question
+- [00:19:16,300 - 00:19:18,300] of physics
+- [00:19:18,300 - 00:19:20,300] which has as its answer
+- [00:19:20,300 - 00:19:22,300] a real number
+- [00:19:22,300 - 00:19:24,300] but we're only interested in that
+- [00:19:24,300 - 00:19:26,300] real number to a certain approximation
+- [00:19:26,300 - 00:19:29,300] the temperature, the temperature in the room
+- [00:19:29,300 - 00:19:32,300] I'm interested in the temperature in the room to
+- [00:19:32,300 - 00:19:35,300] to a certain number of significant figures
+- [00:19:35,300 - 00:19:38,300] I can represent the temperature
+- [00:19:38,300 - 00:19:40,300] or any other number for that matter
+- [00:19:40,300 - 00:19:44,300] by writing it as a number in base two
+- [00:19:44,300 - 00:19:47,300] what's the temperature in this room incidentally
+- [00:19:47,300 - 00:19:51,300] it's about three hundred degrees
+- [00:19:51,300 - 00:19:54,300] from absolute zero
+- [00:19:54,300 - 00:19:55,300] so it's three hundred
+- [00:19:55,300 - 00:19:57,300] I can write three hundred
+- [00:19:57,300 - 00:19:59,300] not as three hundred
+- [00:19:59,300 - 00:20:02,300] which is, what does three hundred mean
+- [00:20:02,300 - 00:20:04,300] three hundred, you know what it means
+- [00:20:04,300 - 00:20:06,300] it means three times ten to the two
+- [00:20:06,300 - 00:20:08,300] plus nothing times ten to the one
+- [00:20:08,300 - 00:20:10,300] plus zero times ten to the zero
+- [00:20:10,300 - 00:20:12,300] but we write it to things in base two
+- [00:20:12,300 - 00:20:13,300] I don't know what three
+- [00:20:13,300 - 00:20:14,300] hundred looks like in base two
+- [00:20:14,300 - 00:20:16,300] somebody can figure it out
+- [00:20:16,300 - 00:20:20,300] base two, everybody know arithmetic in base two?
+- [00:20:20,300 - 00:20:23,300] anybody not know arithmetic in base two?
+- [00:20:23,300 - 00:20:26,300] okay, so everybody knows arithmetic in base two
+- [00:20:26,300 - 00:20:28,300] we write out any number that we like
+- [00:20:29,300 - 00:20:32,300] as a series of zeros and ones
+- [00:20:32,300 - 00:20:41,300] one, zero, zero, one, zero, one, zero, zero, one
+- [00:20:41,300 - 00:20:43,300] that's some number to the
+- [00:20:43,300 - 00:20:48,300] some particular integer, it's an integer
+- [00:20:48,300 - 00:20:51,300] so if I'm interested in the temperature
+- [00:20:51,300 - 00:20:54,300] and I'm not interested in
+- [00:20:54,300 - 00:20:57,300] being too careful to define fractions
+- [00:20:57,300 - 00:20:58,300] I want to know whether it's seventy two degrees
+- [00:20:58,300 - 00:21:00,300] or seventy three degrees
+- [00:21:00,300 - 00:21:01,800] I don't care about seventy
+- [00:21:01,800 - 00:21:03,300] two point four oh six nine
+- [00:21:03,300 - 00:21:05,300] I can write it as an integer
+- [00:21:05,300 - 00:21:07,300] and that integer
+- [00:21:07,300 - 00:21:09,300] can be represented
+- [00:21:09,300 - 00:21:11,300] as a sum of bits
+- [00:21:11,300 - 00:21:12,800] not a sum of bits,
+- [00:21:12,800 - 00:21:14,300] but as a collection of bits
+- [00:21:14,300 - 00:21:18,300] every number, every single number
+- [00:21:18,300 - 00:21:21,300] if you're willing to truncate
+- [00:21:21,300 - 00:21:24,300] the number of decimal places
+- [00:21:24,300 - 00:21:26,300] approximate that number
+- [00:21:26,300 - 00:21:28,300] and say I'm interested in that number
+- [00:21:28,300 - 00:21:31,300] only to thirty five decimal places or whatever
+- [00:21:31,300 - 00:21:34,300] or to thirty five places to base two
+- [00:21:34,300 - 00:21:36,300] that number simply is
+- [00:21:36,300 - 00:21:39,300] both is represented by
+- [00:21:39,300 - 00:21:43,300] and represents a collection of bits
+- [00:21:43,300 - 00:21:45,300] so any time, and incidentally
+- [00:21:45,300 - 00:21:47,800] if you want to have a
+- [00:21:47,800 - 00:21:50,300] finer grain description of the temperature
+- [00:21:50,300 - 00:21:53,300] than integers in centigrade
+- [00:21:53,300 - 00:21:57,300] you just use a more refined notion of degree
+- [00:21:57,300 - 00:22:00,300] you go down to ask how many degrees is it
+- [00:22:00,300 - 00:22:02,300] but not in centigrade units
+- [00:22:02,300 - 00:22:04,300] but in units of ten
+- [00:22:04,300 - 00:22:06,300] to the minus a hundredth centigrade
+- [00:22:06,300 - 00:22:09,300] again, you can give it as an integer
+- [00:22:09,300 - 00:22:13,300] and integers can always be represented
+- [00:22:13,300 - 00:22:16,300] as sequences of zeros and ones
+- [00:22:16,300 - 00:22:19,300] so almost any information in physics
+- [00:22:19,300 - 00:22:23,300] can be represented in terms of bits
+- [00:22:23,300 - 00:22:25,300] in particular
+- [00:22:25,300 - 00:22:27,300] the measurement of
+- [00:22:27,300 - 00:22:30,300] quantities
+- [00:22:30,300 - 00:22:33,300] such as temperature for example
+- [00:22:33,300 - 00:22:35,300] let me give you another example
+- [00:22:35,300 - 00:22:38,300] this is a more complicated example of the same thing
+- [00:22:38,300 - 00:22:41,300] supposing I'm interested in a field
+- [00:22:41,300 - 00:22:45,300] a field means a thing which can vary throughout space
+- [00:22:45,300 - 00:22:47,300] alright
+- [00:22:47,300 - 00:22:49,300] well the temperature can vary throughout space
+- [00:22:49,300 - 00:22:51,300] the temperature is a field
+- [00:22:51,300 - 00:22:53,300] it varies throughout space
+- [00:22:53,300 - 00:22:55,300] it's not one of the more interesting fields
+- [00:22:55,300 - 00:22:57,300] from the point of view of fundamental
+- [00:22:57,300 - 00:23:00,300] fundamental particle physics or anything
+- [00:23:00,300 - 00:23:02,300] but that certainly is a field
+- [00:23:02,300 - 00:23:04,300] it varies from place to place
+- [00:23:04,300 - 00:23:06,300] and how can we represent that
+- [00:23:06,300 - 00:23:09,300] can we represent that in terms of bits
+- [00:23:09,300 - 00:23:13,300] yes if we're willing to tolerate certain approximations
+- [00:23:13,300 - 00:23:14,800] and we're always willing to
+- [00:23:14,800 - 00:23:16,300] tolerate some degree of approximation
+- [00:23:16,300 - 00:23:18,300] what we do
+- [00:23:18,300 - 00:23:21,300] is we break up the room
+- [00:23:21,300 - 00:23:24,300] into a lot of little tiny cells
+- [00:23:24,300 - 00:23:26,300] I won't try to draw three-dimensional lines
+- [00:23:26,300 - 00:23:28,300] I'm going to try to draw a three-dimensional room
+- [00:23:28,300 - 00:23:30,300] in my notes I drew a three-dimensional room
+- [00:23:30,300 - 00:23:31,800] it took me about a half an
+- [00:23:31,800 - 00:23:33,300] hour to put in all the lines
+- [00:23:33,300 - 00:23:38,300] just a two-dimensional room
+- [00:23:38,300 - 00:23:40,300] and here's what we do
+- [00:23:40,300 - 00:23:44,300] we first of all order the cells
+- [00:23:44,300 - 00:23:48,300] we make the cells small enough
+- [00:23:48,300 - 00:23:51,300] so that the temperature doesn't vary very much
+- [00:23:51,300 - 00:23:53,300] from cell to cell
+- [00:23:53,300 - 00:23:55,300] so we might fill this room with several billion cells
+- [00:23:56,300 - 00:23:58,300] label the cells
+- [00:23:58,300 - 00:24:00,300] this is the first cell
+- [00:24:00,300 - 00:24:02,300] two, one, two, three, four, five, six
+- [00:24:02,300 - 00:24:04,300] I don't know, up to a thousand
+- [00:24:04,300 - 00:24:05,800] thousand and one, thousand and two,
+- [00:24:05,800 - 00:24:07,300] thousand and three, thousand and four
+- [00:24:07,300 - 00:24:10,300] and we can label all of the cells
+- [00:24:10,300 - 00:24:12,300] and list them
+- [00:24:12,300 - 00:24:14,300] once we've listed them
+- [00:24:14,300 - 00:24:18,300] we can write the temperature of the first cell
+- [00:24:18,300 - 00:24:20,300] there's the temperature of the first cell
+- [00:24:20,300 - 00:24:22,300] I'm putting a little comma in
+- [00:24:22,300 - 00:24:24,300] just to distinguish between cells
+- [00:24:24,300 - 00:24:26,300] then we can write the temperature of the second cell
+- [00:24:26,300 - 00:24:28,300] and the temperature of the next cell
+- [00:24:28,300 - 00:24:30,300] zero, zero, one, one, two, three,
+- [00:24:30,300 - 00:24:32,300] four, five, six, seven, eight, nine
+- [00:24:32,300 - 00:24:36,300] I've kept nine decimal places in the basis
+- [00:24:36,300 - 00:24:38,300] in arithmetic in base two
+- [00:24:38,300 - 00:24:44,300] one, one, zero, one, however, until I'm finished
+- [00:24:44,300 - 00:24:46,300] then I go to the next cell
+- [00:24:46,300 - 00:24:48,300] do the same thing
+- [00:24:48,300 - 00:24:51,300] temperature there is one, one, zero, one, zero, zero
+- [00:24:51,300 - 00:24:53,300] and so forth
+- [00:24:53,300 - 00:24:55,300] eventually all I have
+- [00:24:55,300 - 00:24:57,300] is a list of zeros and ones
+- [00:24:57,300 - 00:25:00,300] this long list of zeros and ones
+- [00:25:00,300 - 00:25:02,300] if somebody knows how to use it
+- [00:25:02,300 - 00:25:05,300] is equivalent to knowing the temperature
+- [00:25:05,300 - 00:25:08,300] at every point in the room
+- [00:25:08,300 - 00:25:12,300] the same is true of the electric field
+- [00:25:12,300 - 00:25:14,300] the magnetic field
+- [00:25:14,300 - 00:25:17,300] anything which varies from place to place
+- [00:25:17,300 - 00:25:19,300] so
+- [00:25:19,300 - 00:25:22,300] almost everything that I can think of in physics
+- [00:25:22,300 - 00:25:24,300] can be represented
+- [00:25:24,300 - 00:25:26,300] in terms of bits
+- [00:25:26,300 - 00:25:29,300] so if you know everything about how bits work
+- [00:25:29,300 - 00:25:33,300] you basically know everything about how physics works
+- [00:25:33,300 - 00:25:34,300] of course
+- [00:25:34,300 - 00:25:37,300] you may not know what the rules are
+- [00:25:37,300 - 00:25:40,300] for manipulating these things
+- [00:25:40,300 - 00:25:42,300] but this is the basic
+- [00:25:42,300 - 00:25:44,300] setup of physics
+- [00:25:44,300 - 00:25:46,300] information
+- [00:25:46,300 - 00:25:49,300] in the form of a series of questions
+- [00:25:49,300 - 00:25:52,300] each of which can be answered yes or no
+- [00:25:52,300 - 00:25:54,300] now of course
+- [00:25:54,300 - 00:25:57,300] you may want to refine your description
+- [00:25:57,300 - 00:25:59,300] to refine your description
+- [00:25:59,300 - 00:26:00,800] you may want to add
+- [00:26:00,800 - 00:26:02,300] more decimal places to the temperature
+- [00:26:02,300 - 00:26:04,300] to the specification of temperature
+- [00:26:04,300 - 00:26:07,300] and you might want to
+- [00:26:07,300 - 00:26:11,300] make your lattice finer
+- [00:26:11,300 - 00:26:14,300] that's just making a better approximation
+- [00:26:14,300 - 00:26:17,300] so the right thing to say is that most
+- [00:26:17,300 - 00:26:19,300] physical systems that we know about
+- [00:26:19,300 - 00:26:21,300] as far as I know all physical systems
+- [00:26:21,300 - 00:26:23,300] can be represented
+- [00:26:23,300 - 00:26:25,300] at least approximately
+- [00:26:25,300 - 00:26:28,300] and perhaps to always increasing approximation
+- [00:26:28,300 - 00:26:30,300] by a series of bits
+- [00:26:30,300 - 00:26:33,300] that's why we get to use computers to do physics
+- [00:26:33,300 - 00:26:36,300] if this weren't true we couldn't use a computer
+- [00:26:36,300 - 00:26:37,300] we couldn't use a digital computer
+- [00:26:37,300 - 00:26:38,300] in any case to do physics
+- [00:26:38,300 - 00:26:41,300] we'd have to use analog computers or something
+- [00:26:41,300 - 00:26:43,300] okay so that's
+- [00:26:43,300 - 00:26:45,300] let me give you another example
+- [00:26:45,300 - 00:26:48,300] another example of how you might
+- [00:26:48,300 - 00:26:51,300] use bits to represent another
+- [00:26:51,300 - 00:26:52,300] these are all so far classic
+- [00:26:52,300 - 00:26:54,300] systems as I said
+- [00:26:54,300 - 00:26:56,300] I don't want to redraw the lattice
+- [00:26:56,300 - 00:26:57,300] but I do want to get
+- [00:26:57,300 - 00:26:58,300] rid of this top row here
+- [00:26:58,300 - 00:27:00,300] since I've already mutilated it
+- [00:27:00,300 - 00:27:02,300] here's a lattice
+- [00:27:02,300 - 00:27:06,300] and what I'm interested in is the motion of particles
+- [00:27:06,300 - 00:27:10,300] this lattice is just an artificial imposed lattice
+- [00:27:10,300 - 00:27:12,300] that I've imposed on the room here
+- [00:27:12,300 - 00:27:16,300] just so that I've divided the room into mathematical cells
+- [00:27:16,300 - 00:27:19,300] and what I'm interested in is the motion of particles
+- [00:27:19,300 - 00:27:21,300] moving around in this room
+- [00:27:22,300 - 00:27:24,300] at any given instant
+- [00:27:24,300 - 00:27:27,300] I can ask the question
+- [00:27:27,300 - 00:27:29,300] let's take a very simple case
+- [00:27:29,300 - 00:27:30,300] let's take the case
+- [00:27:30,300 - 00:27:32,300] where a particle
+- [00:27:32,300 - 00:27:34,300] where you can't squeeze more than one particle
+- [00:27:34,300 - 00:27:36,300] into one of these cells
+- [00:27:36,300 - 00:27:37,300] we can imagine that
+- [00:27:37,300 - 00:27:40,300] the cells are about as big as a particle
+- [00:27:40,300 - 00:27:43,300] in which case you can't squeeze in more than one
+- [00:27:43,300 - 00:27:45,300] then every cell either has a particle
+- [00:27:45,300 - 00:27:47,300] or it doesn't have a particle
+- [00:27:47,300 - 00:27:48,800] we can label the cells
+- [00:27:48,800 - 00:27:50,300] that have particles with an x
+- [00:27:50,300 - 00:27:52,300] we can
+- [00:27:52,300 - 00:27:54,300] label the cells that don't have a particle
+- [00:27:54,300 - 00:27:55,300] with nothing
+- [00:27:55,300 - 00:27:56,300] or better yet
+- [00:27:56,300 - 00:27:59,300] we can label the cells that have a particle
+- [00:27:59,300 - 00:28:01,300] with a one
+- [00:28:01,300 - 00:28:04,300] and the ones that have no particle with a zero
+- [00:28:04,300 - 00:28:06,300] in that case
+- [00:28:06,300 - 00:28:09,300] this becomes a specification
+- [00:28:09,300 - 00:28:11,300] of where the particles are
+- [00:28:11,300 - 00:28:12,300] in the lattice
+- [00:28:12,300 - 00:28:14,300] it's no longer the temperature
+- [00:28:14,300 - 00:28:17,300] but the same long sequence
+- [00:28:17,300 - 00:28:19,300] of zeros and ones
+- [00:28:19,300 - 00:28:21,300] now the number of zeros and ones
+- [00:28:21,300 - 00:28:23,300] would just be equal to the
+- [00:28:23,300 - 00:28:25,300] number of cells in the lattice
+- [00:28:25,300 - 00:28:27,300] what would this number mean?
+- [00:28:27,300 - 00:28:29,300] it would mean that in the first cell
+- [00:28:29,300 - 00:28:31,300] there's a particle
+- [00:28:31,300 - 00:28:33,300] in the second cell there's no particle
+- [00:28:33,300 - 00:28:34,300] in the third cell there's no particle
+- [00:28:34,300 - 00:28:36,300] in the fourth cell there's a particle
+- [00:28:36,300 - 00:28:38,300] in the fifth cell no particle
+- [00:28:38,300 - 00:28:40,300] in the sixth cell particle
+- [00:28:40,300 - 00:28:42,300] and so forth and so on
+- [00:28:42,300 - 00:28:45,300] and so given such a string of numbers
+- [00:28:45,300 - 00:28:48,300] you are given a specification
+- [00:28:48,300 - 00:28:50,300] of where the particles are in this room
+- [00:28:51,300 - 00:28:55,300] in that way
+- [00:28:55,300 - 00:28:57,300] again
+- [00:28:57,300 - 00:28:59,300] motion of particles
+- [00:28:59,300 - 00:29:01,300] motion of fields
+- [00:29:01,300 - 00:29:03,300] temperature
+- [00:29:03,300 - 00:29:05,300] just about anything in physics
+- [00:29:05,300 - 00:29:07,300] can be represented in terms of bits
+- [00:29:07,300 - 00:29:09,300] any questions?
+- [00:29:09,300 - 00:29:11,300] right, a bit is by definition
+- [00:29:11,300 - 00:29:13,300] a question about a system
+- [00:29:13,300 - 00:29:15,300] which has only two possible answers
+- [00:29:15,300 - 00:29:17,300] which you can always take to be yes or no
+- [00:29:17,300 - 00:29:19,300] used to be a game
+- [00:29:19,300 - 00:29:20,300] 20 questions
+- [00:29:20,300 - 00:29:21,300] didn't you?
+- [00:29:21,300 - 00:29:23,300] I think it's a bit
+- [00:29:23,300 - 00:29:26,300] where somebody would think of a category
+- [00:29:28,300 - 00:29:31,300] and then you would stand there and ask
+- [00:29:31,300 - 00:29:33,300] yes no questions
+- [00:29:33,300 - 00:29:35,300] until you tried to figure out what the category
+- [00:29:35,300 - 00:29:37,300] what the category was
+- [00:29:39,300 - 00:29:41,300] so that was
+- [00:29:41,300 - 00:29:42,300] using the idea of bits
+- [00:29:42,300 - 00:29:43,300] yes question
+- [00:29:43,300 - 00:29:45,300] oh I just arbitrarily said supposing
+- [00:29:45,300 - 00:29:47,300] we are interested in the temperature
+- [00:29:47,300 - 00:29:49,300] to a certain degree of accuracy
+- [00:29:49,300 - 00:29:50,300] right
+- [00:29:50,300 - 00:29:53,300] so I'm interested in the temperature to accuracy
+- [00:29:53,300 - 00:29:55,300] but now I'm not speaking about temperature
+- [00:29:55,300 - 00:29:57,300] I'm just giving another example
+- [00:29:57,300 - 00:30:00,300] these are just examples intended to show you
+- [00:30:00,300 - 00:30:02,300] something which is more or less clear
+- [00:30:02,300 - 00:30:04,300] otherwise we could not use computers to
+- [00:30:04,300 - 00:30:08,300] to simulate physical problems
+- [00:30:08,300 - 00:30:10,300] classical physical problems
+- [00:30:10,300 - 00:30:11,300] yes
+- [00:30:11,300 - 00:30:12,300] right
+- [00:30:12,300 - 00:30:13,300] but you need
+- [00:30:13,300 - 00:30:15,300] for the general real number
+- [00:30:15,300 - 00:30:17,300] you need an infinite number of bits
+- [00:30:17,300 - 00:30:18,300] right
+- [00:30:18,300 - 00:30:19,300] any rational number
+- [00:30:19,300 - 00:30:23,300] can be represented by a finite number of bits
+- [00:30:23,300 - 00:30:25,300] and the rule
+- [00:30:25,300 - 00:30:26,300] well
+- [00:30:26,300 - 00:30:27,300] that's not quite true
+- [00:30:27,300 - 00:30:28,300] you have to
+- [00:30:28,300 - 00:30:30,300] you have to remember to repeat them but
+- [00:30:30,300 - 00:30:33,300] if it's rational it's going to repeat after some point
+- [00:30:33,300 - 00:30:34,300] yeah if it's rational it's
+- [00:30:34,300 - 00:30:35,300] going to repeat after some point
+- [00:30:35,300 - 00:30:36,300] right
+- [00:30:36,300 - 00:30:38,300] so
+- [00:30:38,300 - 00:30:40,300] but if it's an irrational number then
+- [00:30:40,300 - 00:30:42,300] you need an infinite string of bits
+- [00:30:42,300 - 00:30:46,300] but in general we will allow infinite strings of bits
+- [00:30:46,300 - 00:30:48,300] although not in a genuine computer
+- [00:30:48,300 - 00:30:53,300] well so far remember we're doing classical physics
+- [00:30:53,300 - 00:30:56,300] all right so far no quantum mechanics
+- [00:30:56,300 - 00:30:58,300] so I will come
+- [00:30:58,300 - 00:31:00,300] let's see where
+- [00:31:00,300 - 00:31:02,300] yes we were going to
+- [00:31:02,300 - 00:31:04,300] come to that very very shortly
+- [00:31:04,300 - 00:31:07,300] well let me tell you how very quickly
+- [00:31:12,300 - 00:31:14,300] an electron
+- [00:31:14,300 - 00:31:17,300] first of all we're not talking about motion yet
+- [00:31:17,300 - 00:31:20,300] we're talking about configuration
+- [00:31:20,300 - 00:31:22,300] configuration means
+- [00:31:22,300 - 00:31:23,800] the state of a system
+- [00:31:23,800 - 00:31:25,300] at a given instant of time
+- [00:31:25,300 - 00:31:26,300] okay
+- [00:31:26,300 - 00:31:27,300] so
+- [00:31:27,300 - 00:31:29,300] the presence of an electron
+- [00:31:29,300 - 00:31:31,300] at a given instant of time
+- [00:31:31,300 - 00:31:33,300] let's suppose the nucleus is
+- [00:31:33,300 - 00:31:35,300] known to be right over here
+- [00:31:35,300 - 00:31:37,300] and we're not going to ask about the nucleus
+- [00:31:37,300 - 00:31:39,300] the nucleus just sits there
+- [00:31:39,300 - 00:31:41,300] it's a lump on the
+- [00:31:41,300 - 00:31:43,300] all right so
+- [00:31:43,300 - 00:31:45,300] we could say at instant number one
+- [00:31:45,300 - 00:31:47,300] we're going to have a state of the system
+- [00:31:47,300 - 00:31:48,300] and as 32
+- [00:31:48,300 - 00:31:49,300] what's the youtubers
+- [00:31:49,300 - 00:31:50,300] an electron
+- [00:31:50,300 - 00:31:51,300] right
+- [00:31:51,300 - 00:31:52,300] and an electron
+- [00:31:52,300 - 00:31:53,300] relative to the project
+- [00:31:53,300 - 00:31:54,300] is known to be
+- [00:31:54,300 - 00:31:55,300] not
+- [00:31:55,300 - 00:31:56,300] level
+- [00:31:56,300 - 00:32:06,360] in a
+- [00:32:06,379 - 00:32:13,120] poly
+- [00:32:13,220 - 00:32:14,300] progressively
+- [00:32:14,300 - 00:32:15,300] like
+- [00:32:15,300 - 00:32:16,300] ization
+- [00:32:16,300 - 00:32:19,280] Starting with this configuration, we move, and
+- [00:32:19,280 - 00:32:22,260] let's use this symbol here to indicate
+- [00:32:22,260 - 00:32:26,160] that at the next, we could, we've broken
+- [00:32:26,160 - 00:32:30,060] up space into a lot of little individual cells.
+- [00:32:30,060 - 00:32:31,849] We could also break up time, I
+- [00:32:31,849 - 00:32:33,639] thought I had my watch but I don't.
+- [00:32:33,639 - 00:32:38,359] We could also break up our watch into
+- [00:32:38,359 - 00:32:43,080] a digital watch which digitizes time, just again as
+- [00:32:43,080 - 00:32:46,109] either a convenience or an approximation, and
+- [00:32:46,109 - 00:32:49,139] we could say if at digital time number
+- [00:32:49,139 - 00:32:54,269] one the electron was, or the system was
+- [00:32:54,269 - 00:32:59,399] described by one electron located at this location,
+- [00:32:59,399 - 00:33:01,960] then what happens next?
+- [00:33:01,960 - 00:33:06,960] Next it moves to some new configuration.
+- [00:33:06,960 - 00:33:09,890] In this case it might move over one
+- [00:33:09,890 - 00:33:12,820] place, one, two, three, four, five, six, it moves
+- [00:33:12,820 - 00:33:13,080] over to the other.
+- [00:33:13,080 - 00:33:17,580] One to the sixth place, one, two,
+- [00:33:17,580 - 00:33:22,080] three, four, five, six, and so forth.
+- [00:33:22,080 - 00:33:26,330] So the motion of a system is described
+- [00:33:26,330 - 00:33:30,580] by a rule of updating, of updating information,
+- [00:33:30,580 - 00:33:33,260] how you update it from one instant to the next.
+- [00:33:33,260 - 00:33:36,699] Alright, so physics basically consists of two,
+- [00:33:36,699 - 00:33:40,139] a physical system consists of two things.
+- [00:33:40,139 - 00:33:42,820] It consists of a collection.
+- [00:33:42,820 - 00:33:47,320] It consists of a collection of possible states
+- [00:33:47,320 - 00:33:51,820] which can be labeled by a collection of bits,
+- [00:33:51,820 - 00:33:55,820] and it consists of a time evolution which
+- [00:33:55,820 - 00:33:59,820] is an updating which tells you how to take
+- [00:33:59,820 - 00:34:03,820] one collection of bits and replace it by
+- [00:34:03,820 - 00:34:07,820] another collection of bits at a slightly later instant
+- [00:34:07,820 - 00:34:08,819] of time.
+- [00:34:08,819 - 00:34:09,819] I don't know if that answers the question.
+- [00:34:09,819 - 00:34:10,319] To actually work out an orbital
+- [00:34:10,319 - 00:34:10,819] motion, it's a little bit more complicated.
+- [00:34:10,819 - 00:34:11,819] It's a little bit more complicated.
+- [00:34:11,819 - 00:34:12,819] It's a little bit more complicated.
+- [00:34:12,820 - 00:34:13,820] It's a little bit more complicated.
+- [00:34:13,820 - 00:34:14,929] But the motion orbiting around here gets
+- [00:34:14,929 - 00:34:16,040] confusing because when you jump from one
+- [00:34:16,040 - 00:34:19,239] layer to the next, if this is one and this
+- [00:34:19,239 - 00:34:22,440] is a hundred, then a hundred and one is over
+- [00:34:22,440 - 00:34:24,300] here.
+- [00:34:24,300 - 00:34:25,980] So you don't jump from a
+- [00:34:25,980 - 00:34:27,659] hundred to a hundred and one.
+- [00:34:27,659 - 00:34:29,790] You might jump from a hundred to
+- [00:34:29,790 - 00:34:31,920] over here, which would be two hundred.
+- [00:34:31,920 - 00:34:36,380] So it can be complicated, the updating procedure.
+- [00:34:36,380 - 00:34:39,080] It can look complicated, but nevertheless,
+- [00:34:39,080 - 00:34:41,780] it's an updating procedure that just updates
+- [00:34:41,780 - 00:34:42,780] your...
+- [00:34:42,820 - 00:34:48,159] your state of knowledge at each instant of time.
+- [00:34:48,159 - 00:34:49,159] That's classical physics.
+- [00:34:49,159 - 00:34:50,909] Now there are some rules, and
+- [00:34:50,909 - 00:34:52,659] we're going to come to them.
+- [00:34:52,659 - 00:34:57,540] But before we do, let's define the space of states.
+- [00:34:57,540 - 00:34:58,540] This is...
+- [00:34:58,540 - 00:35:00,660] And I want to emphasize,
+- [00:35:00,660 - 00:35:02,780] we are still doing classical physics.
+- [00:35:02,780 - 00:35:06,200] There is nothing quantum mechanical even
+- [00:35:06,200 - 00:35:09,620] though we're talking about discretizing systems and
+- [00:35:09,620 - 00:35:12,300] making out of them systems of individual bits.
+- [00:35:12,300 - 00:35:12,800] It's just a matter of time.
+- [00:35:12,820 - 00:35:16,000] So far, we are dealing with
+- [00:35:16,000 - 00:35:19,180] what should be called classical bits.
+- [00:35:19,180 - 00:35:20,690] C bits, I think they're
+- [00:35:20,690 - 00:35:22,200] called, as opposed to Q bits.
+- [00:35:22,200 - 00:35:24,460] Q bit is a quantum bit.
+- [00:35:24,460 - 00:35:27,000] These are classical bits so far.
+- [00:35:27,000 - 00:35:27,620] Okay.
+- [00:35:27,620 - 00:35:32,170] So let's take all of the configurations
+- [00:35:32,170 - 00:35:36,720] and just abstractly, in a purely abstract way,
+- [00:35:36,720 - 00:35:38,460] we take all of the configurations.
+- [00:35:38,460 - 00:35:39,460] Incidentally, what are they?
+- [00:35:39,460 - 00:35:40,860] This is about 10 by 10.
+- [00:35:40,860 - 00:35:42,660] This is roughly a 10 by 10 lattice.
+- [00:35:42,660 - 00:35:48,319] This 10 by 10 lattice has 100 sites.
+- [00:35:48,319 - 00:35:50,660] How many states does it have?
+- [00:35:50,660 - 00:35:52,299] I'm not talking about one particle now.
+- [00:35:52,299 - 00:35:54,279] I'm talking about any number of
+- [00:35:54,279 - 00:35:56,259] particles can be on this lattice.
+- [00:35:56,259 - 00:35:58,839] How many different configurations are there?
+- [00:35:58,839 - 00:36:02,740] Two to the hundred.
+- [00:36:02,740 - 00:36:07,879] A very, very, very big number.
+- [00:36:07,879 - 00:36:09,500] Two to the hundredth power.
+- [00:36:09,500 - 00:36:12,500] That's how many different ways we can...
+- [00:36:12,500 - 00:36:16,340] Arrange zeros and ones on this lattice
+- [00:36:16,340 - 00:36:20,180] or specify whether there's particles in various
+- [00:36:20,180 - 00:36:21,180] positions.
+- [00:36:21,180 - 00:36:24,700] A very large number of possible states.
+- [00:36:24,700 - 00:36:27,740] But let's just abstractly think about all
+- [00:36:27,740 - 00:36:30,780] these states and just draw them as points.
+- [00:36:30,780 - 00:36:32,540] If there are 10 to the hundred, I have
+- [00:36:32,540 - 00:36:34,300] to draw 10 to the hundred points, which I'm not
+- [00:36:34,300 - 00:36:38,320] about to do.
+- [00:36:38,320 - 00:36:39,840] These are the various states.
+- [00:36:39,840 - 00:36:42,160] These are not the lattice points.
+- [00:36:42,160 - 00:36:44,500] These are the various states.
+- [00:36:44,500 - 00:36:47,310] For example, for one bit, if I had only
+- [00:36:47,310 - 00:36:50,120] one bit, then the space of states would consist
+- [00:36:50,120 - 00:36:53,719] of only two points, up and down,
+- [00:36:53,719 - 00:36:57,319] and I would just draw two points.
+- [00:36:57,319 - 00:37:01,119] This would be the space of
+- [00:37:01,119 - 00:37:04,920] states of a simple one-bit system.
+- [00:37:04,920 - 00:37:09,839] Now let's ask...
+- [00:37:09,839 - 00:37:11,040] What are the possible laws?
+- [00:37:11,040 - 00:37:12,040] What are the possible laws?
+- [00:37:12,040 - 00:37:13,520] The laws of motion because we're ah sevent
+- [00:37:13,520 - 00:37:15,000] percent of the time that some states are
+- [00:37:15,000 - 00:37:16,000] a set, some states are a set.
+- [00:37:16,000 - 00:37:17,000] It's the laws are, it's a law.
+- [00:37:17,000 - 00:37:18,000] We've been talking about laws all the time.
+- [00:37:18,000 - 00:37:19,000] We've been talking about mottoing.
+- [00:37:19,000 - 00:37:20,000] Here's one motto.
+- [00:37:20,000 - 00:37:21,000] For instance, if I say!
+- [00:37:21,000 - 00:37:22,000] Oh, yes!
+- [00:37:22,000 - 00:37:22,500] you know that there is
+- [00:37:22,500 - 00:37:23,000] at one point a set action!
+- [00:37:23,000 - 00:37:24,000] You might be talking about one way or the other.
+- [00:37:24,000 - 00:37:24,500] So, that's what that components are for
+- [00:37:24,500 - 00:37:25,000] that, boost, power, power, crust, incompetence to
+- [00:37:25,000 - 00:37:25,500] increase, change, we talk about moved with
+- [00:37:25,500 - 00:37:26,000] putting the first, the second, the final.
+- [00:37:26,000 - 00:37:29,940] Another one
+- [00:37:29,940 - 00:37:30,200] Pivotal
+- [00:37:30,200 - 00:37:32,739] In the beginning, when we were depending
+- [00:37:32,739 - 00:37:35,279] on the thinking, which is very simple –you
+- [00:37:35,279 - 00:37:36,100] meaniny?
+- [00:37:36,100 - 00:37:39,820] This is the muzzle.
+- [00:37:39,820 - 00:37:40,380] This red portion.
+- [00:37:40,380 - 00:37:40,920] A muzzle.
+- [00:37:40,920 - 00:37:41,300] This red part.
+- [00:37:41,300 - 00:37:44,800] moment. This could stand for heads, this could
+- [00:37:44,800 - 00:37:48,300] stand for tails. If we start with heads, if
+- [00:37:49,860 - 00:37:53,360] I had a coin we would do it.
+- [00:37:53,360 - 00:37:56,860] Here's heads and tails. Heads, tails. One possibility is
+- [00:38:01,260 - 00:38:04,160] very simple. If you start with heads, it
+- [00:38:04,160 - 00:38:07,060] stays heads. Nothing happens. If you start with
+- [00:38:07,060 - 00:38:09,610] tails, it stays tails. Nothing happens. That's a
+- [00:38:09,610 - 00:38:12,160] law of updating. It's not a very interesting
+- [00:38:12,160 - 00:38:15,390] law of updating. How would you draw that?
+- [00:38:15,390 - 00:38:18,620] Well, here's how we'll draw it. Heads goes
+- [00:38:18,620 - 00:38:22,120] to heads. We'll make an arrow. If we start
+- [00:38:22,120 - 00:38:25,620] with heads, it stays heads. If we start with
+- [00:38:26,299 - 00:38:29,799] tails, it stays tails. So we draw an arrow
+- [00:38:29,799 - 00:38:33,299] from what you start with to what you end with.
+- [00:38:35,340 - 00:38:37,040] What's another possible law of updating?
+- [00:38:37,040 - 00:38:38,040] It's a law of updating.
+- [00:38:38,040 - 00:38:41,540] Here's a law of updating. If it's tails,
+- [00:38:41,540 - 00:38:45,040] it becomes heads. Then it becomes tails. Then
+- [00:38:46,920 - 00:38:49,530] it becomes heads. Then it becomes tails. That's
+- [00:38:49,530 - 00:38:52,140] a little more, not very much, but a little
+- [00:38:52,140 - 00:38:55,580] more interesting, a slightly more interesting
+- [00:38:55,580 - 00:38:59,020] system. It just flip-flops back and forth.
+- [00:38:59,020 - 00:39:02,520] How would we draw that? We would
+- [00:39:02,520 - 00:39:06,020] draw that again. Heads, tails, heads, tails, tails,
+- [00:39:07,040 - 00:39:09,140] tails. If you start with heads, you go to
+- [00:39:09,140 - 00:39:11,240] tails. If you start with tails, you go to
+- [00:39:11,240 - 00:39:12,940] heads.
+- [00:39:12,940 - 00:39:16,440] So the law of updating in this case
+- [00:39:16,440 - 00:39:19,940] is just described by such a diagram, basically. A
+- [00:39:23,900 - 00:39:26,589] diagram which tells you if you start at a
+- [00:39:26,589 - 00:39:29,279] given state, what it will be in the next instant
+- [00:39:29,279 - 00:39:32,779] of time. Is that clear? So this is one
+- [00:39:32,779 - 00:39:36,279] way of describing the laws of physics. Write down
+- [00:39:37,040 - 00:39:40,080] all the states. Keep in mind what they
+- [00:39:40,080 - 00:39:43,120] stand for, of course. Remember that in this case,
+- [00:39:43,120 - 00:39:46,280] one stands for heads, one stands for tails,
+- [00:39:46,280 - 00:39:49,440] or whatever it happens to stand for. If it's
+- [00:39:49,440 - 00:39:52,120] male, female, this could be an interesting
+- [00:39:52,120 - 00:39:54,800] case of... That would be an interesting...
+- [00:39:54,800 - 00:39:58,060] This would be a very interesting law of motion
+- [00:39:58,060 - 00:40:01,320] in that case. I don't think I want to... I
+- [00:40:01,320 - 00:40:03,410] don't think I want to explore that any
+- [00:40:03,410 - 00:40:05,500] further. If this were my undergraduate class, I would
+- [00:40:05,500 - 00:40:06,900] never have brought that up.
+- [00:40:06,900 - 00:40:10,330] This is more likely... This is the more
+- [00:40:10,330 - 00:40:13,760] likely law of updating for sexuality. Female, male.
+- [00:40:22,080 - 00:40:25,070] So you see, simple laws sometimes apply.
+- [00:40:25,070 - 00:40:28,060] Sometimes they're a little more complicated. Can you
+- [00:40:28,060 - 00:40:31,560] think of an interesting system that flip-flops
+- [00:40:31,560 - 00:40:35,060] like this? Offhand, I can't think of anything.
+- [00:40:36,020 - 00:40:36,450] It's obvious that it applies. It's a little
+- [00:40:36,450 - 00:40:36,880] bit more complicated. It's a little bit more
+- [00:40:36,880 - 00:40:37,880] complicated. It applies to a lot
+- [00:40:37,880 - 00:40:38,880] of things, but offhand, I can't...
+- [00:40:38,880 - 00:40:41,540] No, no, no. Right, right, right, right. But
+- [00:40:41,540 - 00:40:44,200] this is... Yes. But if you just have... You're
+- [00:40:44,200 - 00:40:46,580] not intervening. I don't want you to intervene. This
+- [00:40:46,580 - 00:40:48,960] is the system by itself. If you had some
+- [00:40:48,960 - 00:40:50,610] peculiar light switch by itself, it went back
+- [00:40:50,610 - 00:40:52,260] and forth and back and forth and back and
+- [00:40:52,260 - 00:40:57,260] forth in a regular way, but that's...
+- [00:40:57,260 - 00:41:02,260] Day and night. Day and night. You know, this is...
+- [00:41:02,260 - 00:41:05,260] Which?
+- [00:41:06,880 - 00:41:10,380] Well, there's a lot of states to the
+- [00:41:10,380 - 00:41:13,880] pendulum in between, but yes, you've got the idea.
+- [00:41:14,200 - 00:41:16,700] It's hard to think of a simple example, but I
+- [00:41:16,700 - 00:41:19,200] bet by the time we all go home and we came
+- [00:41:19,200 - 00:41:21,250] back next week, every one of us would have
+- [00:41:21,250 - 00:41:23,300] an example of a... We could call this the
+- [00:41:23,300 - 00:41:26,800] flip-flop. This is the flip-flop motion. This
+- [00:41:26,800 - 00:41:30,300] is the un-motion. Well, we can extend this.
+- [00:41:30,300 - 00:41:33,800] If we know what the space of configurations
+- [00:41:33,800 - 00:41:37,300] is and we lay them all out, either abstractly
+- [00:41:37,300 - 00:41:39,800] in our mind or actually just write them
+- [00:41:39,800 - 00:41:42,300] on the blackboard, then the motion of the system
+- [00:41:42,300 - 00:41:45,800] can be represented by a series of arrows, where
+- [00:41:45,800 - 00:41:49,300] I'm not going to be able to see the
+- [00:41:53,300 - 00:41:55,800] motion of the system. I'm going to be able
+- [00:41:55,800 - 00:41:58,300] to see the motion of the system. I'm going
+- [00:42:00,300 - 00:42:03,800] to be getting tired, but...
+- [00:42:03,800 - 00:42:07,300] And so forth and so on.
+- [00:42:10,300 - 00:42:15,300] You only need two to the hundred.
+- [00:42:15,300 - 00:42:18,800] Yeah. I don't know. Let's do the possible...
+- [00:42:18,800 - 00:42:22,300] Let's think of some possible motions of a
+- [00:42:26,620 - 00:42:27,620] two-bit system.
+- [00:42:27,620 - 00:42:28,620] Okay.
+- [00:42:28,620 - 00:42:29,620] Okay.
+- [00:42:29,620 - 00:42:33,120] So, this system simply has four states. That's
+- [00:42:33,120 - 00:42:36,620] all we have to know. It has four states.
+- [00:42:38,620 - 00:42:42,120] Well, here's one possible motion. If we start
+- [00:42:42,120 - 00:42:45,620] with this configuration, we move to that configuration.
+- [00:42:54,620 - 00:42:56,280] If we start with this configuration, we move
+- [00:42:56,280 - 00:42:57,940] to that configuration, and so forth. If we
+- [00:42:57,940 - 00:43:00,940] watch what actually happened with time, the
+- [00:43:00,940 - 00:43:03,940] system would move from one configuration to
+- [00:43:03,940 - 00:43:06,940] the next around a closed loop. Now, the closed
+- [00:43:06,940 - 00:43:09,940] loop is not necessarily a closed loop in space.
+- [00:43:09,940 - 00:43:14,440] It's a closed loop in the logical
+- [00:43:14,440 - 00:43:18,940] space of possibilities here, logical space of configurations.
+- [00:43:18,940 - 00:43:21,440] That's one possible thing that
+- [00:43:21,440 - 00:43:23,940] can... Here's another one. Perfectly good.
+- [00:43:27,940 - 00:43:37,440] What this is, is it's a pair of systems,
+- [00:43:37,440 - 00:43:46,940] a pair of... It's a pair of systems, which
+- [00:43:46,940 - 00:43:51,440] are separately undergoing flip-flops. Each one
+- [00:43:51,440 - 00:43:55,940] undergoing flip-flops. This one is flipping,
+- [00:43:55,940 - 00:43:56,940] and flopping.
+- [00:43:56,940 - 00:43:59,440] This one is simultaneously flipping and flopping. If
+- [00:43:59,440 - 00:44:01,940] we start over here, let's see what that
+- [00:44:01,940 - 00:44:04,440] stands for. That stands, for example, for
+- [00:44:04,440 - 00:44:06,940] both heads. It could stand for both heads.
+- [00:44:06,940 - 00:44:09,440] Then we go to both tails. Then we go to
+- [00:44:09,440 - 00:44:11,940] both heads, then we go to both tails. Or we could
+- [00:44:11,940 - 00:44:15,940] start with one head, one tail. And do this.
+- [00:44:15,940 - 00:44:19,940] That's what this is. This is a pair of systems
+- [00:44:19,940 - 00:44:23,940] flipping and flopping. There are other possibilities.
+- [00:44:26,940 - 00:44:32,940] So there are different laws of motion that
+- [00:44:32,940 - 00:44:38,940] the system, whatever it happens to be, could
+- [00:44:38,940 - 00:44:41,440] have. So when you specify a system, you not
+- [00:44:41,440 - 00:44:43,940] only have to specify what the states of the
+- [00:44:43,940 - 00:44:47,440] system are, but you'll have to specify how it
+- [00:44:47,440 - 00:44:50,940] moves. And how it moves is a rule for jumping
+- [00:44:50,940 - 00:44:52,940] from one configuration to the next.
+- [00:44:52,940 - 00:44:53,940] Now, let me give you
+- [00:44:53,940 - 00:44:54,940] an example of a logically-prone system.
+- [00:44:54,940 - 00:44:55,940] Okay.
+- [00:44:55,940 - 00:44:59,440] It's a logically perfectly sensible rule, but
+- [00:44:59,440 - 00:45:02,940] which is defective from the physics point
+- [00:45:02,940 - 00:45:06,940] of view. It never happens in physics.
+- [00:45:06,940 - 00:45:11,440] We can do it, I think, well, let's do
+- [00:45:11,440 - 00:45:15,940] it with four states. Let's see how this works.
+- [00:45:15,940 - 00:45:19,940] Yeah, here it is. If you start here, you
+- [00:45:19,940 - 00:45:23,940] go here. If you go here, start here, you go
+- [00:45:23,940 - 00:45:24,940] here.
+- [00:45:25,940 - 00:45:31,940] One, here's a second round, two, here's a second.
+- [00:45:31,940 - 00:45:33,940] Two, here's a third.
+- [00:45:33,940 - 00:45:37,900] Excuse me one moment. For some odd reason,
+- [00:45:37,900 - 00:45:41,860] in my notes, instead of a diamond shape, I've
+- [00:45:41,860 - 00:45:44,900] drawn a square. Let me go
+- [00:45:44,900 - 00:45:47,940] back. There's my four states. Okay?
+- [00:45:47,940 - 00:45:52,940] If you start here, you go here.
+- [00:45:52,940 - 00:45:54,940] If you start here, you go here.
+- [00:45:56,580 - 00:45:59,140] If you're over here, you go over here
+- [00:45:59,140 - 00:46:01,700] and if you're over here, you go over here.
+- [00:46:04,160 - 00:46:05,740] Alright so now we can
+- [00:46:05,740 - 00:46:07,320] say what happens wherever you start.
+- [00:46:07,320 - 00:46:10,220] If you start over here, you jump to here, you jump to
+- [00:46:10,220 - 00:46:13,120] here, you jump to here, you jump to here, you jump to here,
+- [00:46:13,120 - 00:46:14,840] you go here you go here you go here
+- [00:46:14,840 - 00:46:16,560] you go here you go here notice you never
+- [00:46:16,560 - 00:46:21,200] come back to here with this particular law.
+- [00:46:21,200 - 00:46:25,170] There's something different about this law
+- [00:46:25,170 - 00:46:29,140] than there is about the other examples.
+- [00:46:29,140 - 00:46:32,259] And all the other examples...
+- [00:46:32,259 - 00:46:34,299] Well can anybody spot what's wrong with this?
+- [00:46:34,299 - 00:46:36,609] Well not what's wrong with
+- [00:46:36,609 - 00:46:38,919] it, but what's different about it.
+- [00:46:38,919 - 00:46:41,339] Well it doesn't consist of loops.
+- [00:46:41,339 - 00:46:44,060] This is true.
+- [00:46:44,060 - 00:46:48,200] You can't figure out necessarily where you came from.
+- [00:46:48,200 - 00:46:51,120] You may be able to tell where you go
+- [00:46:51,120 - 00:46:54,040] next, but you can't always tell where you came from.
+- [00:46:54,040 - 00:46:56,919] For example, if you find yourself over here, you
+- [00:46:56,919 - 00:46:59,799] don't know if you came from here or whether
+- [00:46:59,799 - 00:47:03,299] you came from here.
+- [00:47:03,299 - 00:47:05,919] If you're over here, you
+- [00:47:05,919 - 00:47:08,540] have lost a piece of information.
+- [00:47:08,540 - 00:47:12,540] This is a motion which loses information.
+- [00:47:12,540 - 00:47:15,250] It loses information in the sense that
+- [00:47:15,250 - 00:47:17,960] you can't tell where you came from.
+- [00:47:17,960 - 00:47:21,400] There's no way to reconstruct the
+- [00:47:21,400 - 00:47:24,840] past, but you can reconstruct the future.
+- [00:47:24,840 - 00:47:26,880] Or construct the future.
+- [00:47:26,880 - 00:47:30,200] Wherever you are, you're told where to go next.
+- [00:47:30,200 - 00:47:32,070] But wherever you are, you
+- [00:47:32,070 - 00:47:33,940] don't know how to get back.
+- [00:47:33,940 - 00:47:35,930] If you're over here, well you know you
+- [00:47:35,930 - 00:47:37,920] came from here, but then you don't know whether
+- [00:47:37,920 - 00:47:40,980] to go back here or to go back here.
+- [00:47:40,980 - 00:47:47,140] So this is what is called an irreversible history.
+- [00:47:47,140 - 00:47:47,800] It's a history of...
+- [00:47:47,960 - 00:47:53,680] Or a law which loses information.
+- [00:47:53,680 - 00:47:55,760] And at the fundamental level of physics,
+- [00:47:55,760 - 00:47:57,840] the fundamental level where you're really keeping
+- [00:47:57,840 - 00:48:02,190] track of everything, not where you're coarse-graining
+- [00:48:02,190 - 00:48:06,540] or not looking carefully, but where you're
+- [00:48:06,540 - 00:48:09,900] carefully looking at every degree of freedom
+- [00:48:09,900 - 00:48:13,260] of a system, classical physics never allows
+- [00:48:13,260 - 00:48:16,200] the loss of information like this.
+- [00:48:16,200 - 00:48:17,200] There is a unique...
+- [00:48:17,960 - 00:48:21,980] Future point wherever you are, and there
+- [00:48:21,980 - 00:48:26,000] is a unique past point wherever you are.
+- [00:48:26,000 - 00:48:29,580] That is one of the laws...
+- [00:48:29,580 - 00:48:33,600] It's not necessarily a law of logic.
+- [00:48:33,600 - 00:48:36,140] It is something which is true of all
+- [00:48:36,140 - 00:48:38,680] physical systems, that they are reversible in that
+- [00:48:38,680 - 00:48:39,680] sense.
+- [00:48:39,680 - 00:48:40,680] Yeah.
+- [00:48:40,680 - 00:48:41,680] Let's say I change state twice.
+- [00:48:41,680 - 00:48:42,680] All right?
+- [00:48:42,680 - 00:48:44,680] And I'm over here.
+- [00:48:44,680 - 00:48:46,640] 1, 2 or 1, 2.
+- [00:48:47,960 - 00:48:51,200] I don't know if I came from here or here.
+- [00:48:51,200 - 00:48:54,100] All right.
+- [00:48:54,100 - 00:48:58,240] We could give this property a name.
+- [00:48:58,240 - 00:49:01,020] We give it the uniqueness of the future
+- [00:49:01,020 - 00:49:03,800] point and the uniqueness of the past point.
+- [00:49:03,800 - 00:49:05,120] We could invent a name for it.
+- [00:49:05,120 - 00:49:08,120] We could call it unique-tarity.
+- [00:49:08,120 - 00:49:14,960] Do you know what the quantum version of unique-tarity is?
+- [00:49:14,960 - 00:49:15,960] No.
+- [00:49:15,960 - 00:49:16,960] No.
+- [00:49:16,960 - 00:49:17,960] No.
+- [00:49:17,960 - 00:49:18,960] No.
+- [00:49:18,960 - 00:49:19,960] It has a name.
+- [00:49:19,960 - 00:49:21,480] It's called unitarity.
+- [00:49:21,480 - 00:49:24,100] Unitarity is a name I just made up.
+- [00:49:24,100 - 00:49:28,270] Unitarity is the quantum equivalent which
+- [00:49:28,270 - 00:49:32,440] tells you that you can always reconstruct
+- [00:49:32,440 - 00:49:34,600] the past from the future.
+- [00:49:34,600 - 00:49:38,690] The state of a quantum system, you can
+- [00:49:38,690 - 00:49:42,780] either run forward uniquely or run backward uniquely,
+- [00:49:42,780 - 00:49:44,100] and you'll come to some unique point in time.
+- [00:49:44,100 - 00:49:45,100] It's aathletic.
+- [00:49:45,100 - 00:49:46,100] It's a very unique state.
+- [00:49:46,100 - 00:49:47,100] It exists.
+- [00:49:47,100 - 00:49:51,600] to some unique previous state or future
+- [00:49:51,600 - 00:49:56,100] state, and that's called unitarity in quantum mechanics.
+- [00:49:56,100 - 00:49:57,330] But we haven't done quantum
+- [00:49:57,330 - 00:49:58,560] mechanics. Nothing's quantum mechanical yet.
+- [00:49:58,560 - 00:50:01,660] Is that time symmetry?
+- [00:50:01,660 - 00:50:05,100] It's a kind of time reversal symmetry. It's
+- [00:50:05,100 - 00:50:08,540] actually not a time reversal. Okay, so it's
+- [00:50:08,540 - 00:50:15,140] not a time reversal symmetry exactly. It's
+- [00:50:15,140 - 00:50:21,740] a time reversibility, I would say. This diagram
+- [00:50:21,740 - 00:50:24,570] has a sense of orientation to it. If I
+- [00:50:24,570 - 00:50:27,400] start something over here, it goes around this way.
+- [00:50:27,400 - 00:50:29,700] It definitely does not go around this way unless
+- [00:50:29,700 - 00:50:32,000] I reverse it, unless I look at it backward
+- [00:50:32,000 - 00:50:35,270] in time. So it's not precisely what you
+- [00:50:35,270 - 00:50:38,540] would call time reversal symmetry. A time reversal
+- [00:50:38,540 - 00:50:40,700] symmetry means that you could either go
+- [00:50:40,700 - 00:50:42,860] in going into the future you could go
+- [00:50:42,860 - 00:50:44,569] either way but in this case you only
+- [00:50:44,569 - 00:50:46,279] go one way but it's it's it's the
+- [00:50:46,279 - 00:50:49,939] reversibility of the laws that that you can
+- [00:50:49,939 - 00:50:53,600] find a reverse law given a law you
+- [00:50:53,600 - 00:50:56,090] can find a reverse law which will
+- [00:50:56,090 - 00:50:58,580] take you in the backward direction I think
+- [00:50:58,580 - 00:51:00,800] that's I think that's right yes yes well
+- [00:51:00,800 - 00:51:03,020] two arrows coming away from a point says
+- [00:51:03,020 - 00:51:05,870] I don't know which way to go oh boy do I
+- [00:51:05,870 - 00:51:08,720] go that way or do I go that way so it's
+- [00:51:08,720 - 00:51:13,400] it's it's clear that that's not a law
+- [00:51:13,400 - 00:51:18,080] of motion okay no branching ratios oh well
+- [00:51:18,080 - 00:51:19,880] let's we're doing at the moment
+- [00:51:19,880 - 00:51:21,680] we're doing quantum mechanics so I mean
+- [00:51:21,680 - 00:51:25,110] classical mechanics so it gets
+- [00:51:25,110 - 00:51:28,540] more complicated with branching ratios and
+- [00:51:28,540 - 00:51:30,750] was it classical mechanics is
+- [00:51:30,750 - 00:51:32,960] less fundamental in quantum mechanics
+- [00:51:32,960 - 00:51:33,000] always is.
+- [00:51:33,020 - 00:51:35,830] all real systems are quantum mechanical
+- [00:51:35,830 - 00:51:38,640] the question why some of them suppress
+- [00:51:38,640 - 00:51:40,900] the quantum mechanics and you don't see
+- [00:51:40,900 - 00:51:43,160] it is a question which we'll try to
+- [00:51:43,160 - 00:51:45,890] answer as we go along but we might
+- [00:51:45,890 - 00:51:48,620] ask it at the quantum level and at the
+- [00:51:48,620 - 00:51:50,780] quantum level I think we can give
+- [00:51:50,780 - 00:51:52,940] a better answer but ultimately at the end
+- [00:51:52,940 - 00:51:57,950] of the day it seems to be
+- [00:51:57,950 - 00:52:02,960] a law that that they basically says that
+- [00:52:02,960 - 00:52:06,800] forward in time and backward in time
+- [00:52:06,800 - 00:52:10,640] are are I won't say equivalent to each
+- [00:52:10,640 - 00:52:13,340] other but that there's no preferred
+- [00:52:13,340 - 00:52:16,040] really preferred sense in which forward
+- [00:52:16,040 - 00:52:17,640] in time is different than backward in
+- [00:52:17,640 - 00:52:19,240] time even though it feels like there is
+- [00:52:19,240 - 00:52:24,620] this this this is this is the question
+- [00:52:24,620 - 00:52:30,000] that took 20 years to answer and the
+- [00:52:30,000 - 00:52:31,120] answer is in my opinion no it is not possible to answer that question
+- [00:52:31,120 - 00:52:32,240] but I'm going to ask you a question that's not possible to answer in time.
+- [00:52:32,960 - 00:52:37,180] but it was one of the great questions
+- [00:52:37,180 - 00:52:41,400] of physics that took a long time to answer
+- [00:52:41,400 - 00:52:43,490] and I'm not going to get into it now
+- [00:52:43,490 - 00:52:45,580] but it might be an interesting thing for us
+- [00:52:45,580 - 00:52:48,480] to explore toward the end after
+- [00:52:48,480 - 00:52:51,380] we've talked about quantum mechanics we we
+- [00:52:51,380 - 00:52:52,970] have to talk about quantum mechanics
+- [00:52:52,970 - 00:52:54,560] before that makes sense that question
+- [00:52:54,560 - 00:52:57,710] yeah I think they're all Newtonian in
+- [00:52:57,710 - 00:53:00,860] a sense in the sense Newtonian to me
+- [00:53:00,860 - 00:53:01,880] simply means that there's a difference between
+- [00:53:01,880 - 00:53:02,900] the two and the other and that's
+- [00:53:02,900 - 00:53:05,830] a definite state for a system
+- [00:53:05,830 - 00:53:08,760] that evolves with time according to a
+- [00:53:08,760 - 00:53:11,830] definite law of deterministic
+- [00:53:11,830 - 00:53:14,900] deterministic that's that that's the
+- [00:53:14,900 - 00:53:17,430] right word yeah but I think you
+- [00:53:17,430 - 00:53:19,960] can think of more complicated situations you
+- [00:53:19,960 - 00:53:22,230] just could start drawing some diagrams
+- [00:53:22,230 - 00:53:24,500] yourself and and see what makes sense
+- [00:53:24,500 - 00:53:27,020] what what's reversible what's not reversible
+- [00:53:27,020 - 00:53:29,540] and but yes you're right that
+- [00:53:29,540 - 00:53:32,860] is true it loses the information as to where
+- [00:53:32,900 - 00:53:37,950] you came from the system yep we mean
+- [00:53:37,950 - 00:53:43,000] it's not a part of the system the
+- [00:53:43,000 - 00:53:44,430] system started here it went to here it went
+- [00:53:44,430 - 00:53:45,860] to here it went to here it went there
+- [00:53:45,860 - 00:53:51,280] anymore you won't find that point ever
+- [00:53:51,280 - 00:53:56,700] again right right but the main point is
+- [00:53:56,700 - 00:53:58,840] you've lost the distinction between the
+- [00:53:58,840 - 00:54:00,980] two possible starting points whereas in
+- [00:54:00,980 - 00:54:01,880] all the other situations you have a
+- [00:54:01,880 - 00:54:02,780] different starting point and you have the
+- [00:54:02,780 - 00:54:02,830] point that's going to be the starting point
+- [00:54:02,830 - 00:54:02,880] and you have the point that's going to be
+- [00:54:02,880 - 00:54:06,230] different starting point and you have
+- [00:54:06,230 - 00:54:09,580] the point that's going to be
+- [00:54:09,600 - 00:54:12,540] happening all the time all the time
+- [00:54:12,540 - 00:54:12,740] but for that particular reason of predicted
+- [00:54:12,740 - 00:54:14,840] if you know where you are and you
+- [00:54:14,840 - 00:54:16,940] know how many steps you made you can say
+- [00:54:16,940 - 00:54:19,250] where you were well I think I think
+- [00:54:19,250 - 00:54:21,560] for a long long time mr. Stephen Hawking
+- [00:54:21,560 - 00:54:24,040] thought that this is the way black holes
+- [00:54:24,040 - 00:54:26,520] work so not so clear I'm not so
+- [00:54:26,520 - 00:54:29,040] clear okay yeah yeah good good so let's let's
+- [00:54:29,040 - 00:54:31,560] talk about that um if I take a a
+- [00:54:31,560 - 00:54:32,200] I don't know what's a good example but if you taking a bunch of molecules in a bath if you taken a half of a
+- [00:54:32,200 - 00:54:32,840] Allison like a whole lot of mi Schedule removing water what tells you mijn in th bravery method but I don't know how you fell so
+- [00:54:32,880 - 00:54:35,630] Let's take the molecules in this room, and
+- [00:54:35,630 - 00:54:38,380] I start them all out in a certain configuration,
+- [00:54:38,380 - 00:54:40,430] very definite configuration. I put them all up
+- [00:54:40,430 - 00:54:42,480] in the left-hand corner of the room there,
+- [00:54:42,480 - 00:54:45,080] and I let them go. After a while, the
+- [00:54:45,080 - 00:54:47,680] room will be full of air, just like it is.
+- [00:54:47,680 - 00:54:49,430] If I put them up in that corner
+- [00:54:49,430 - 00:54:51,180] of the room over there and let them go,
+- [00:54:51,180 - 00:54:53,680] after a while, same thing. Put it up
+- [00:54:53,680 - 00:54:56,180] in that corner, after a while, same thing.
+- [00:54:56,180 - 00:54:58,980] So it looks like we've lost
+- [00:54:58,980 - 00:55:01,780] information. But in fact, that's not true.
+- [00:55:01,780 - 00:55:04,530] If we followed every single molecule,
+- [00:55:04,530 - 00:55:07,280] and we followed it in infinite detail,
+- [00:55:07,280 - 00:55:12,280] with infinite precision, which we don't do, of course,
+- [00:55:12,280 - 00:55:16,080] then we could reconstruct, by running everything backwards,
+- [00:55:16,080 - 00:55:18,180] we can reconstruct the fact that the molecules
+- [00:55:18,180 - 00:55:20,280] may have come from that corner of the room.
+- [00:55:20,280 - 00:55:25,680] It's prohibitively impossible to do in practice,
+- [00:55:25,680 - 00:55:27,730] but in principle, following every
+- [00:55:27,730 - 00:55:29,780] single detail of every molecule.
+- [00:55:29,780 - 00:55:31,680] Now, what really happens in the real world,
+- [00:55:31,680 - 00:55:34,680] is we lose information because we
+- [00:55:34,680 - 00:55:37,680] lose the ability to follow the details.
+- [00:55:37,680 - 00:55:41,180] Not because the information gets lost, but because
+- [00:55:41,180 - 00:55:44,680] we lose the ability to follow the information.
+- [00:55:44,680 - 00:55:46,680] That's where the second law comes,
+- [00:55:46,680 - 00:55:49,180] when you start losing the
+- [00:55:49,180 - 00:55:51,680] ability to distinguish different states.
+- [00:55:51,680 - 00:55:53,680] So we don't distinguish
+- [00:55:53,680 - 00:55:55,680] whether, in our coarse-grained picture,
+- [00:55:55,680 - 00:55:58,180] we don't distinguish the different
+- [00:55:58,180 - 00:56:00,680] detail, the level of molecular detail,
+- [00:56:00,680 - 00:56:01,680] and we don't distinguish the level of the molecular detail,
+- [00:56:01,680 - 00:56:03,680] and so it looks like
+- [00:56:03,680 - 00:56:05,680] different configurations become the same configuration,
+- [00:56:05,680 - 00:56:07,680] but that's only because we
+- [00:56:07,680 - 00:56:09,680] simply don't look carefully enough.
+- [00:56:09,680 - 00:56:11,680] It's because we're lazy.
+- [00:56:11,680 - 00:56:13,680] Do you need an infinite number of bits to...
+- [00:56:13,680 - 00:56:16,180] Ah, ah, ah. You mean
+- [00:56:16,180 - 00:56:18,680] in the real room, like this.
+- [00:56:18,680 - 00:56:22,680] No, because of quantum mechanics.
+- [00:56:22,680 - 00:56:26,680] Because of quantum mechanics, no.
+- [00:56:26,680 - 00:56:28,680] But if it were not for
+- [00:56:28,680 - 00:56:30,680] quantum mechanics, yes, you would need
+- [00:56:30,680 - 00:56:32,680] an infinite number of bits.
+- [00:56:32,680 - 00:56:34,680] Now, what does that mean?
+- [00:56:34,680 - 00:56:36,680] That means that you have to
+- [00:56:36,680 - 00:56:38,680] specify a bunch of real numbers,
+- [00:56:38,680 - 00:56:42,680] precisely, with infinite, with tremendous precision.
+- [00:56:42,680 - 00:56:44,680] You have to precisely prescribe
+- [00:56:44,680 - 00:56:46,680] the locations and also the velocities,
+- [00:56:46,680 - 00:56:50,680] but in particular the locations of every single molecule,
+- [00:56:50,680 - 00:56:53,680] with a tremendous amount of precision.
+- [00:56:53,680 - 00:56:56,180] And the longer that you want to track
+- [00:56:56,180 - 00:56:58,680] the system, the more precision that you need.
+- [00:56:58,680 - 00:57:01,680] So ultimately, to track a system for a long time,
+- [00:57:01,680 - 00:57:05,680] you need to specify with infinite precision
+- [00:57:05,680 - 00:57:09,680] the exact positions of every point, of every molecule.
+- [00:57:09,680 - 00:57:11,680] That means you have to
+- [00:57:11,680 - 00:57:13,680] give a set of real numbers.
+- [00:57:13,680 - 00:57:15,680] A set of real numbers involves, as
+- [00:57:15,680 - 00:57:17,680] you say, an infinite number of bits.
+- [00:57:17,680 - 00:57:19,680] So the answer is for a
+- [00:57:19,680 - 00:57:21,680] collection of real particles moving around
+- [00:57:21,680 - 00:57:26,680] that you really try to follow classically,
+- [00:57:26,680 - 00:57:27,680] depending on how long you want to track them,
+- [00:57:27,680 - 00:57:29,680] depending on how long you want to follow it,
+- [00:57:29,680 - 00:57:32,680] you would need more and more bits to describe it.
+- [00:57:32,680 - 00:57:34,680] Oh, yes, yes, yes, that's right.
+- [00:57:34,680 - 00:57:40,680] If the room were really sealed, let's idealize this room
+- [00:57:40,680 - 00:57:42,180] so that nothing can get
+- [00:57:42,180 - 00:57:43,680] into or out of the room,
+- [00:57:43,680 - 00:57:46,180] all particles bounce off, reflect
+- [00:57:46,180 - 00:57:48,680] off the walls of the room,
+- [00:57:48,680 - 00:57:51,680] so that it's an entirely sealed up room,
+- [00:57:51,680 - 00:57:54,180] then the room can be
+- [00:57:54,180 - 00:57:56,680] described discretely, because of quantum mechanics,
+- [00:57:56,680 - 00:57:58,680] at least up to some energy.
+- [00:57:58,680 - 00:58:01,680] If we know that the energy isn't arbitrarily high,
+- [00:58:01,680 - 00:58:04,680] then we can describe it
+- [00:58:04,680 - 00:58:07,680] by a discrete collection of variables
+- [00:58:07,680 - 00:58:09,680] that has no exit.
+- [00:58:09,680 - 00:58:12,680] So let's say...
+- [00:58:12,680 - 00:58:14,680] Yeah, so we could...
+- [00:58:14,680 - 00:58:16,680] So to make such a thing,
+- [00:58:16,680 - 00:58:18,680] we could just reverse all the arrows.
+- [00:58:18,680 - 00:58:22,680] Here is an example.
+- [00:58:22,680 - 00:58:24,180] It doesn't actually have no exit,
+- [00:58:24,180 - 00:58:25,680] it just makes it back to itself.
+- [00:58:25,680 - 00:58:27,680] No, this one has no exit.
+- [00:58:27,680 - 00:58:29,680] No, it just exits to itself.
+- [00:58:29,680 - 00:58:31,180] Well, then if I want it to
+- [00:58:31,180 - 00:58:32,680] exit to itself, I have to do this.
+- [00:58:32,680 - 00:58:34,680] Yes, that's what I'm just saying.
+- [00:58:34,680 - 00:58:36,680] We could do that, but as
+- [00:58:36,680 - 00:58:38,680] I drew it, it had no exit.
+- [00:58:38,680 - 00:58:40,680] Huh?
+- [00:58:40,680 - 00:58:43,680] But let's think about what it means.
+- [00:58:43,680 - 00:58:46,680] Let's...
+- [00:58:46,680 - 00:58:49,680] I'm not too interested in what here.
+- [00:58:49,680 - 00:58:52,680] The question is what happens when you're over here.
+- [00:58:52,680 - 00:58:53,680] All right?
+- [00:58:53,680 - 00:58:55,680] When you're over here, you have two ways
+- [00:58:55,680 - 00:58:57,680] to go, and you don't know which way to go,
+- [00:58:57,680 - 00:59:00,680] so it's not deterministic.
+- [00:59:00,680 - 00:59:02,180] It doesn't know whether to
+- [00:59:02,180 - 00:59:03,680] go this way or this way.
+- [00:59:03,680 - 00:59:05,180] It might go half the times
+- [00:59:05,180 - 00:59:06,680] this way, half the times this way.
+- [00:59:06,680 - 00:59:09,680] You might need some statistical rule.
+- [00:59:09,680 - 00:59:11,180] 50% of the time or 30%
+- [00:59:11,180 - 00:59:12,680] of the time it goes this way,
+- [00:59:13,680 - 00:59:17,680] Sorry, 70% of the time with random statistics.
+- [00:59:17,680 - 00:59:20,680] That would be non-deterministic.
+- [00:59:20,680 - 00:59:23,680] So it seems that the real laws of nature
+- [00:59:23,680 - 00:59:25,680] are both deterministic
+- [00:59:25,680 - 00:59:28,680] and backward in time.
+- [00:59:28,680 - 00:59:31,680] That's the implication of not having loose ends
+- [00:59:31,680 - 00:59:33,680] floating around like this.
+- [00:59:33,680 - 00:59:36,680] That they're deterministic either way,
+- [00:59:36,680 - 00:59:38,680] so that wherever you are,
+- [00:59:38,680 - 00:59:40,680] you can either trace forward uniquely
+- [00:59:40,680 - 00:59:42,680] or backward uniquely.
+- [00:59:42,680 - 00:59:48,680] And that is all of classical physics in a nutshell.
+- [00:59:48,680 - 00:59:52,680] You're now taking a complete course in classical physics.
+- [00:59:52,680 - 00:59:55,680] There's nothing that the world can't do
+- [00:59:55,680 - 00:59:57,680] and that does not fit that pattern
+- [00:59:57,680 - 01:00:01,680] at least to an arbitrarily high degree of approximation.
+- [01:00:01,680 - 01:00:06,680] Let's take a seven-minute break.
+- [01:00:06,680 - 01:00:08,680] Well, I was going to jump to quantum mechanics,
+- [01:00:08,680 - 01:00:11,680] but before I do,
+- [01:00:11,680 - 01:00:13,680] I want to do a little bit of mathematics,
+- [01:00:13,680 - 01:00:16,680] elementary mathematics.
+- [01:00:16,680 - 01:00:19,680] Most of you know it,
+- [01:00:19,680 - 01:00:22,680] but nevertheless, let's lay it out.
+- [01:00:22,680 - 01:00:24,680] Matrices and vectors.
+- [01:00:25,680 - 01:00:27,180] I'm going to give you a little
+- [01:00:27,180 - 01:00:28,680] bit of a tour of the world.
+- [01:00:28,680 - 01:00:30,680] I'm going to, at the moment,
+- [01:00:30,680 - 01:00:36,680] I'm not going to mathematically define a vector
+- [01:00:36,680 - 01:00:39,680] in any sort of sensible, you know,
+- [01:00:39,680 - 01:00:43,680] even approximately rigorous way or abstract way.
+- [01:00:43,680 - 01:00:46,680] I'm just going to tell you.
+- [01:00:46,680 - 01:00:49,680] A vector is a sequence of numbers,
+- [01:00:49,680 - 01:00:52,680] a finite number of numbers,
+- [01:00:52,680 - 01:00:54,680] and it's a vector.
+- [01:00:54,680 - 01:00:58,680] It's called a finite sequence of numbers.
+- [01:00:58,680 - 01:01:03,680] And you can represent it in a variety of ways,
+- [01:01:03,680 - 01:01:06,180] but I'll give you two ways
+- [01:01:06,180 - 01:01:08,680] to represent a sequence of numbers.
+- [01:01:08,680 - 01:01:12,680] The first way is to write them one after another.
+- [01:01:12,680 - 01:01:14,680] Let's just give them names.
+- [01:01:14,680 - 01:01:16,680] I don't want to call them...
+- [01:01:16,680 - 01:01:18,680] My numbers now, I...
+- [01:01:18,680 - 01:01:20,680] At the moment, I mean real numbers
+- [01:01:20,680 - 01:01:23,680] as opposed to complex numbers.
+- [01:01:23,680 - 01:01:25,680] I don't mean zeros and ones.
+- [01:01:25,680 - 01:01:30,680] I mean arbitrary sets of real numbers.
+- [01:01:30,680 - 01:01:32,680] They could be zeros and ones.
+- [01:01:32,680 - 01:01:34,680] Zeros and ones are fine,
+- [01:01:34,680 - 01:01:36,680] but just general numbers.
+- [01:01:36,680 - 01:01:37,680] So I just lay them out.
+- [01:01:37,680 - 01:01:40,680] What should we call them?
+- [01:01:40,680 - 01:01:42,680] Components.
+- [01:01:42,680 - 01:01:43,680] Hmm?
+- [01:01:43,680 - 01:01:44,680] Components.
+- [01:01:44,680 - 01:01:46,680] Yeah, they're called components,
+- [01:01:46,680 - 01:01:48,680] but I want a letter for them.
+- [01:01:48,680 - 01:01:50,680] A? A?
+- [01:01:50,680 - 01:01:51,680] A is good.
+- [01:01:51,680 - 01:01:52,680] A is good.
+- [01:01:53,680 - 01:01:59,680] A1, A2, A3, A4,
+- [01:01:59,680 - 01:02:02,680] and just put something around them
+- [01:02:02,680 - 01:02:05,680] to surround them so that we know.
+- [01:02:05,680 - 01:02:09,680] This would be a four-dimensional vector.
+- [01:02:09,680 - 01:02:11,680] Why four-dimensional?
+- [01:02:11,680 - 01:02:13,680] Because it has four components.
+- [01:02:13,680 - 01:02:16,680] Don't try to visualize vectors now.
+- [01:02:16,680 - 01:02:19,680] There's no value at all for our present purposes
+- [01:02:19,680 - 01:02:21,680] in trying to visualize these as pointing in space
+- [01:02:21,680 - 01:02:23,680] or anything like that.
+- [01:02:23,680 - 01:02:25,680] They're just lists of numbers.
+- [01:02:25,680 - 01:02:26,680] Okay?
+- [01:02:26,680 - 01:02:27,680] Lists of...
+- [01:02:27,680 - 01:02:29,680] That's one way.
+- [01:02:29,680 - 01:02:30,680] Okay?
+- [01:02:30,680 - 01:02:31,680] There's another way that we can list
+- [01:02:31,680 - 01:02:33,680] the same set of numbers.
+- [01:02:35,680 - 01:02:37,680] Put them in a column.
+- [01:02:37,680 - 01:02:41,680] A1, A2, A3, A4.
+- [01:02:43,680 - 01:02:44,680] Same information in them.
+- [01:02:44,680 - 01:02:46,680] I mean, I'm not talking about information
+- [01:02:46,680 - 01:02:49,680] in the abstract sense that I used before.
+- [01:02:49,680 - 01:02:50,680] Same thing.
+- [01:02:50,680 - 01:02:52,680] Sometimes it's useful to write it this way.
+- [01:02:52,680 - 01:02:54,680] Sometimes it's useful to write it that way.
+- [01:02:54,680 - 01:02:56,680] You'll find out as we move along.
+- [01:02:56,680 - 01:02:57,680] When it's written in this form,
+- [01:02:57,680 - 01:02:59,680] it's called a row vector.
+- [01:02:59,680 - 01:03:00,680] When it's written in this form,
+- [01:03:00,680 - 01:03:02,680] it's called a column vector.
+- [01:03:02,680 - 01:03:05,680] What we're actually talking about now is notations,
+- [01:03:05,680 - 01:03:09,680] neat notations for doing certain
+- [01:03:09,680 - 01:03:14,680] arithmetical operations involving collections of numbers.
+- [01:03:14,680 - 01:03:17,680] But isn't one of those the dagger of the other?
+- [01:03:17,680 - 01:03:19,680] When we get the complex numbers,
+- [01:03:19,680 - 01:03:21,680] we will then use complex numbers.
+- [01:03:21,680 - 01:03:24,680] Use complex conjugate notation, yes.
+- [01:03:24,680 - 01:03:27,680] But for the moment, let them just be real numbers.
+- [01:03:27,680 - 01:03:28,680] Okay?
+- [01:03:28,680 - 01:03:34,680] Now, there's another concept now called a matrix.
+- [01:03:34,680 - 01:03:37,680] And think of a matrix as the following way.
+- [01:03:37,680 - 01:03:41,680] A matrix is a thing which acts on a vector
+- [01:03:41,680 - 01:03:43,680] to give another vector.
+- [01:03:43,680 - 01:03:44,680] All right?
+- [01:03:44,680 - 01:03:46,680] So it's a kind of machine.
+- [01:03:46,680 - 01:03:48,680] You put the vector into the machine
+- [01:03:48,680 - 01:03:50,680] and out pops another vector.
+- [01:03:50,680 - 01:03:52,680] According to a particular rule.
+- [01:03:52,680 - 01:03:53,680] Oh, sorry.
+- [01:03:53,680 - 01:03:55,680] Before we do that, before we do that,
+- [01:03:55,680 - 01:03:59,680] let's imagine a particular column vector
+- [01:03:59,680 - 01:04:03,680] and another different row vector.
+- [01:04:03,680 - 01:04:06,680] Different row vector has different entries.
+- [01:04:06,680 - 01:04:08,680] Not the same set of numerical entries,
+- [01:04:08,680 - 01:04:11,680] but a different set of numerical entries.
+- [01:04:11,680 - 01:04:13,680] So let's call them B.
+- [01:04:13,680 - 01:04:19,680] B1, B2, B3, B4.
+- [01:04:19,680 - 01:04:26,680] These could be 6.01, 5.97, 3.04,
+- [01:04:26,680 - 01:04:30,680] and A1 could be 7.8, A2.
+- [01:04:30,680 - 01:04:32,680] None of them, they could be the same
+- [01:04:32,680 - 01:04:34,680] or they might not be the same,
+- [01:04:34,680 - 01:04:36,680] the A's and the B's.
+- [01:04:36,680 - 01:04:38,680] This is some particular row vector
+- [01:04:38,680 - 01:04:40,680] and some particular column vector.
+- [01:04:40,680 - 01:04:42,680] There's a notion of multiplying
+- [01:04:42,680 - 01:04:45,680] a row vector by a column vector.
+- [01:04:45,680 - 01:04:47,680] And the notion of multiplying a row vector
+- [01:04:47,680 - 01:04:49,680] by a column vector is as simple as this.
+- [01:04:49,680 - 01:04:52,680] It's a following simple operation.
+- [01:04:52,680 - 01:04:54,680] You take the first entry,
+- [01:04:54,680 - 01:04:56,680] oh, incidentally,
+- [01:04:56,680 - 01:04:59,680] the dimensionality of the row vector
+- [01:04:59,680 - 01:05:01,680] and the dimensionality of the column vector
+- [01:05:01,680 - 01:05:02,680] should be the same.
+- [01:05:02,680 - 01:05:04,680] That means that they should have
+- [01:05:04,680 - 01:05:06,680] the same number of entries.
+- [01:05:06,680 - 01:05:07,680] Not necessarily four.
+- [01:05:07,680 - 01:05:10,680] It could be five, six, seven.
+- [01:05:10,680 - 01:05:12,680] In which case they would be
+- [01:05:12,680 - 01:05:14,680] five-dimensional vector spaces,
+- [01:05:14,680 - 01:05:16,680] six-dimensional vector spaces.
+- [01:05:16,680 - 01:05:18,680] This extends to any number
+- [01:05:18,680 - 01:05:21,680] of entries into the columns and rows.
+- [01:05:21,680 - 01:05:23,680] But the rows and the columns should have
+- [01:05:23,680 - 01:05:25,680] the same number of entries.
+- [01:05:25,680 - 01:05:26,680] Alright.
+- [01:05:26,680 - 01:05:28,680] There's the notion of the product
+- [01:05:28,680 - 01:05:30,680] of a row vector and a column vector.
+- [01:05:30,680 - 01:05:33,680] It's called the inner product.
+- [01:05:33,680 - 01:05:36,680] And it's very simply constructed.
+- [01:05:36,680 - 01:05:38,680] You take the first entry of the row
+- [01:05:38,680 - 01:05:41,680] and multiply it by the first entry of the column.
+- [01:05:41,680 - 01:05:44,680] You add to that the second entry
+- [01:05:44,680 - 01:05:46,680] times the second entry
+- [01:05:46,680 - 01:05:47,680] plus the third entry
+- [01:05:47,680 - 01:05:48,680] times the third entry
+- [01:05:48,680 - 01:05:49,680] plus the fourth entry
+- [01:05:49,680 - 01:05:50,680] times the fourth entry.
+- [01:05:50,680 - 01:05:53,680] So the product of these two,
+- [01:05:53,680 - 01:05:57,680] which you could just write as B next to A,
+- [01:05:57,680 - 01:05:59,680] that product, the inner product,
+- [01:05:59,680 - 01:06:04,680] is B1A1 plus B2A2
+- [01:06:04,680 - 01:06:12,680] plus B3A3 plus B4A4.
+- [01:06:12,680 - 01:06:13,680] It's a number.
+- [01:06:13,680 - 01:06:14,680] It's not itself.
+- [01:06:14,680 - 01:06:16,680] The product of these two vectors,
+- [01:06:16,680 - 01:06:18,680] the inner product,
+- [01:06:18,680 - 01:06:20,680] is not another vector.
+- [01:06:20,680 - 01:06:22,680] It's not a matrix.
+- [01:06:22,680 - 01:06:24,680] It is just a number.
+- [01:06:24,680 - 01:06:26,680] The numerical value is just gotten
+- [01:06:26,680 - 01:06:30,680] by adding up the column,
+- [01:06:30,680 - 01:06:32,680] sorry, the row times the column
+- [01:06:32,680 - 01:06:34,680] in just this form.
+- [01:06:34,680 - 01:06:38,680] B1A1 plus B2A2 plus B3A3
+- [01:06:38,680 - 01:06:39,680] plus B4A4.
+- [01:06:39,680 - 01:06:41,680] Is that clear?
+- [01:06:41,680 - 01:06:43,680] Don't ask me why.
+- [01:06:43,680 - 01:06:44,680] That's definition.
+- [01:06:44,680 - 01:06:45,680] Is this what you call
+- [01:06:45,680 - 01:06:47,680] the dot product?
+- [01:06:47,680 - 01:06:48,680] Yeah.
+- [01:06:48,680 - 01:06:49,680] Yeah.
+- [01:06:49,680 - 01:06:51,680] If we were talking about ordinary vectors in space,
+- [01:06:51,680 - 01:06:53,680] it would be the dot product.
+- [01:06:53,680 - 01:06:54,680] Yeah.
+- [01:06:54,680 - 01:06:55,680] Yeah.
+- [01:06:55,680 - 01:06:56,680] More abstractly,
+- [01:06:56,680 - 01:06:57,680] for abstract vector spaces,
+- [01:06:57,680 - 01:07:00,680] it's called the inner product.
+- [01:07:00,680 - 01:07:03,680] But yes, it is the same as the dot product
+- [01:07:03,680 - 01:07:06,680] for three-dimensional ordinary vectors in space
+- [01:07:06,680 - 01:07:08,680] where these would be the components of the vector.
+- [01:07:08,680 - 01:07:10,680] Yeah.
+- [01:07:10,680 - 01:07:11,680] Okay.
+- [01:07:11,680 - 01:07:14,680] Now there's the concept of a matrix.
+- [01:07:15,680 - 01:07:18,680] And a matrix, as I said,
+- [01:07:18,680 - 01:07:23,680] is an operation that you can do on a vector
+- [01:07:23,680 - 01:07:25,680] to give a new vector.
+- [01:07:25,680 - 01:07:26,680] All right?
+- [01:07:26,680 - 01:07:29,680] But it's not any old operation.
+- [01:07:29,680 - 01:07:32,680] There are particular family of operations
+- [01:07:32,680 - 01:07:34,680] that are characterized by matrices.
+- [01:07:34,680 - 01:07:37,680] A matrix is represented
+- [01:07:37,680 - 01:07:43,680] by a square array of numbers.
+- [01:07:43,680 - 01:07:45,680] Let's call the answer,
+- [01:07:45,680 - 01:07:47,680] entries M.
+- [01:07:47,680 - 01:07:48,680] All right?
+- [01:07:48,680 - 01:07:49,680] So in the first place,
+- [01:07:49,680 - 01:07:50,680] we put M11
+- [01:07:50,680 - 01:07:52,680] to indicate that it's in the first row
+- [01:07:52,680 - 01:07:54,680] and the first column.
+- [01:07:54,680 - 01:07:57,680] Then M12.
+- [01:07:57,680 - 01:07:59,680] Then M13.
+- [01:07:59,680 - 01:08:02,680] Then M14.
+- [01:08:02,680 - 01:08:04,680] Okay?
+- [01:08:04,680 - 01:08:06,680] M...
+- [01:08:06,680 - 01:08:08,680] What should I call this one?
+- [01:08:09,680 - 01:08:11,680] It's in the second row
+- [01:08:11,680 - 01:08:13,680] of the first column.
+- [01:08:13,680 - 01:08:15,680] This is in the second row,
+- [01:08:15,680 - 01:08:17,680] second column.
+- [01:08:17,680 - 01:08:19,680] Second row, third column.
+- [01:08:23,680 - 01:08:25,680] Next one.
+- [01:08:25,680 - 01:08:27,680] M31.
+- [01:08:27,680 - 01:08:29,680] M32.
+- [01:08:29,680 - 01:08:31,680] M33.
+- [01:08:31,680 - 01:08:34,680] M34.
+- [01:08:34,680 - 01:08:37,680] And M41.
+- [01:08:37,680 - 01:08:39,680] M42.
+- [01:08:39,680 - 01:08:41,680] M43.
+- [01:08:41,680 - 01:08:43,680] M44.
+- [01:08:43,680 - 01:08:44,680] Now, as I said,
+- [01:08:44,680 - 01:08:47,680] I've chosen four dimensions
+- [01:08:47,680 - 01:08:49,680] just arbitrarily.
+- [01:08:49,680 - 01:08:51,680] Four is about as many as,
+- [01:08:51,680 - 01:08:52,680] as big as I want to handle
+- [01:08:52,680 - 01:08:54,680] on the backboard.
+- [01:08:54,680 - 01:08:55,680] And it's big enough to be
+- [01:08:55,680 - 01:08:56,680] a little abstract
+- [01:08:56,680 - 01:09:01,680] so that it's general enough
+- [01:09:01,680 - 01:09:04,680] to see what's going on.
+- [01:09:04,680 - 01:09:05,680] All right.
+- [01:09:05,680 - 01:09:06,680] That's what a matrix is.
+- [01:09:06,680 - 01:09:07,680] That's all it is.
+- [01:09:07,680 - 01:09:08,680] Now, you can think of it,
+- [01:09:08,680 - 01:09:09,680] you can think of it,
+- [01:09:09,680 - 01:09:11,680] you can think of each column
+- [01:09:11,680 - 01:09:13,680] as a column vector
+- [01:09:13,680 - 01:09:15,680] whose components are labeled
+- [01:09:15,680 - 01:09:17,680] by the first entry here.
+- [01:09:17,680 - 01:09:19,680] Okay?
+- [01:09:19,680 - 01:09:21,680] Each one of these can be thought of
+- [01:09:21,680 - 01:09:22,680] as a column vector
+- [01:09:22,680 - 01:09:24,680] where the first entry
+- [01:09:24,680 - 01:09:28,680] labels the column entry.
+- [01:09:28,680 - 01:09:29,680] Or you can think of it
+- [01:09:29,680 - 01:09:32,680] as a collection of row vectors
+- [01:09:32,680 - 01:09:34,680] where it's the second entry
+- [01:09:34,680 - 01:09:37,680] which labels the component.
+- [01:09:37,680 - 01:09:38,680] Either way,
+- [01:09:38,680 - 01:09:39,680] you can think of it both ways
+- [01:09:39,680 - 01:09:40,680] at the same time.
+- [01:09:40,680 - 01:09:42,680] A collection of column vectors,
+- [01:09:42,680 - 01:09:44,680] or a collection of row vectors.
+- [01:09:44,680 - 01:09:46,680] But all together,
+- [01:09:46,680 - 01:09:48,680] it forms a matrix.
+- [01:09:48,680 - 01:09:52,680] Now, matrices can multiply vectors.
+- [01:09:52,680 - 01:09:54,680] So let's put a vector over here.
+- [01:09:54,680 - 01:09:56,680] A1, A2,
+- [01:09:56,680 - 01:10:00,680] I should line them up more carefully.
+- [01:10:00,680 - 01:10:06,680] A1, A2, A3, A4.
+- [01:10:06,680 - 01:10:10,680] And when you have a matrix,
+- [01:10:10,680 - 01:10:11,680] you can think of it as,
+- [01:10:11,680 - 01:10:12,680] let's say,
+- [01:10:12,680 - 01:10:14,680] a column vector.
+- [01:10:14,680 - 01:10:15,680] And when you,
+- [01:10:15,680 - 01:10:16,680] I don't know,
+- [01:10:16,680 - 01:10:17,680] I've done a reasonable job
+- [01:10:17,680 - 01:10:19,680] of keeping rows and columns
+- [01:10:19,680 - 01:10:22,680] underneath and next to each other.
+- [01:10:22,680 - 01:10:23,680] But if you like,
+- [01:10:23,680 - 01:10:25,680] draw some imaginary lines
+- [01:10:25,680 - 01:10:28,680] to separate them into rows and columns.
+- [01:10:28,680 - 01:10:30,680] All right, this matrix
+- [01:10:30,680 - 01:10:33,680] acts on this vector
+- [01:10:33,680 - 01:10:35,680] to give a new vector.
+- [01:10:35,680 - 01:10:36,680] What is the new vector?
+- [01:10:36,680 - 01:10:38,680] And here's the rule.
+- [01:10:38,680 - 01:10:40,680] I've made the vector wide,
+- [01:10:40,680 - 01:10:41,680] which is going to be
+- [01:10:41,680 - 01:10:43,680] a fairly complicated expression.
+- [01:10:43,680 - 01:10:45,680] But it is just another vector.
+- [01:10:45,680 - 01:10:46,680] It's another single,
+- [01:10:46,680 - 01:10:47,680] it's another column.
+- [01:10:47,680 - 01:10:48,680] It's a column
+- [01:10:48,680 - 01:10:50,680] which I've had to draw wide
+- [01:10:50,680 - 01:10:51,680] in order to be able to fit in
+- [01:10:51,680 - 01:10:53,680] everything I want to write down.
+- [01:10:53,680 - 01:10:54,680] Here's what you do.
+- [01:10:54,680 - 01:10:57,680] If you want to find the first entry
+- [01:10:57,680 - 01:10:59,680] into this column,
+- [01:10:59,680 - 01:11:01,680] sorry, into this row,
+- [01:11:01,680 - 01:11:03,680] into this row,
+- [01:11:03,680 - 01:11:06,680] you take the first row
+- [01:11:06,680 - 01:11:09,680] and you multiply it by the column.
+- [01:11:10,680 - 01:11:12,680] And you get the inner product
+- [01:11:12,680 - 01:11:14,680] of the first row with a column here.
+- [01:11:14,680 - 01:11:16,680] So what is that?
+- [01:11:16,680 - 01:11:18,680] That's M11 times A1
+- [01:11:18,680 - 01:11:21,680] plus M12 times A2
+- [01:11:21,680 - 01:11:24,680] plus M13 times A3
+- [01:11:24,680 - 01:11:27,680] plus M14 times A4.
+- [01:11:27,680 - 01:11:29,680] In other words, you take all of this
+- [01:11:29,680 - 01:11:31,680] and you multiply it by this
+- [01:11:31,680 - 01:11:33,680] according to the inner product rule.
+- [01:11:33,680 - 01:11:37,680] And that gives you the first row.
+- [01:11:37,680 - 01:11:39,680] M11, A1
+- [01:11:39,680 - 01:11:41,680] plus M12, A2
+- [01:11:41,680 - 01:11:44,680] plus M13, A3
+- [01:11:44,680 - 01:11:48,680] plus M14, A4.
+- [01:11:48,680 - 01:11:51,680] Now you want the second entry
+- [01:11:51,680 - 01:11:54,680] into this new vector over here.
+- [01:11:54,680 - 01:11:56,680] Done exactly the same way,
+- [01:11:56,680 - 01:11:58,680] except you go to the second row.
+- [01:11:58,680 - 01:12:00,680] And you take the second row
+- [01:12:00,680 - 01:12:03,680] and multiply it by the column.
+- [01:12:03,680 - 01:12:05,680] That's going to give you M...
+- [01:12:05,680 - 01:12:07,680] I'm only going to do two of these.
+- [01:12:07,680 - 01:12:08,680] The rest you can do yourself.
+- [01:12:08,680 - 01:12:13,680] M21
+- [01:12:13,680 - 01:12:16,680] M21, again times A1
+- [01:12:16,680 - 01:12:22,680] plus M22 times A2
+- [01:12:22,680 - 01:12:27,680] plus M23, A3
+- [01:12:27,680 - 01:12:32,680] plus M24 times A4.
+- [01:12:32,680 - 01:12:35,680] And the other two entries you can figure out.
+- [01:12:35,680 - 01:12:38,680] You get them by multiplying the next row
+- [01:12:38,680 - 01:12:39,680] by the column,
+- [01:12:39,680 - 01:12:42,680] and finally the third row by the column.
+- [01:12:42,680 - 01:12:45,680] That gives you a new vector.
+- [01:12:45,680 - 01:12:49,680] It's a way of processing a vector
+- [01:12:49,680 - 01:12:51,680] to produce a new vector.
+- [01:12:51,680 - 01:12:53,680] I will give you some examples
+- [01:12:53,680 - 01:12:56,680] as we go along.
+- [01:12:56,680 - 01:13:00,680] It's a rule of multiplication
+- [01:13:00,680 - 01:13:02,680] which is very useful.
+- [01:13:02,680 - 01:13:05,680] The reason it's defined is because it's useful.
+- [01:13:05,680 - 01:13:06,680] And we're going to see
+- [01:13:06,680 - 01:13:07,680] how it's useful by using it.
+- [01:13:08,680 - 01:13:12,680] Let me give you an example
+- [01:13:12,680 - 01:13:17,680] of how a matrix...
+- [01:13:17,680 - 01:13:25,680] how the idea of a matrix
+- [01:13:25,680 - 01:13:30,680] can represent the time evolution
+- [01:13:30,680 - 01:13:33,680] of the configuration of a system.
+- [01:13:33,680 - 01:13:37,680] Supposing, again, we have our configuration.
+- [01:13:38,680 - 01:13:42,680] Let's take a look at the configuration space.
+- [01:13:42,680 - 01:13:44,680] Let's label them.
+- [01:13:44,680 - 01:13:47,680] Let's label them.
+- [01:13:47,680 - 01:13:48,680] The first configuration,
+- [01:13:48,680 - 01:13:49,680] the second configuration,
+- [01:13:49,680 - 01:13:50,680] the third configuration,
+- [01:13:50,680 - 01:13:53,680] the fourth and the fifth configuration.
+- [01:13:53,680 - 01:13:55,680] These are not points of space.
+- [01:13:55,680 - 01:13:58,680] These are configurations of a system
+- [01:13:58,680 - 01:14:01,680] which has five distinct states.
+- [01:14:01,680 - 01:14:04,680] And let's take a very, very simple
+- [01:14:04,680 - 01:14:06,680] law of evolution.
+- [01:14:06,680 - 01:14:07,680] The first one,
+- [01:14:07,680 - 01:14:09,680] you start here,
+- [01:14:09,680 - 01:14:10,680] you go to here.
+- [01:14:10,680 - 01:14:11,680] If you start here,
+- [01:14:11,680 - 01:14:13,680] you go to here.
+- [01:14:13,680 - 01:14:14,680] If you start here,
+- [01:14:14,680 - 01:14:15,680] you go to here.
+- [01:14:15,680 - 01:14:16,680] If you start here,
+- [01:14:16,680 - 01:14:17,680] you go here.
+- [01:14:17,680 - 01:14:19,680] And what do I do if I'm here?
+- [01:14:19,680 - 01:14:21,680] Go back.
+- [01:14:21,680 - 01:14:22,680] No, no, that one,
+- [01:14:22,680 - 01:14:24,680] that's no good.
+- [01:14:24,680 - 01:14:27,680] That's disallowed, I think.
+- [01:14:27,680 - 01:14:30,680] Is that disallowed?
+- [01:14:30,680 - 01:14:35,680] I think that's disallowed.
+- [01:14:35,680 - 01:14:36,680] I think that's disallowed.
+- [01:14:36,680 - 01:14:39,860] that's disallowed? Yeah, that's disallowed
+- [01:14:39,860 - 01:14:42,700] because
+- [01:14:42,700 - 01:14:45,980] if you find this... yeah, that's not reversible
+- [01:14:45,980 - 01:14:47,680] that's not reversible
+- [01:14:47,680 - 01:14:51,180] that's not what I wanted to hear. What I
+- [01:14:51,180 - 01:14:54,680] wanted to hear is that you go back to here
+- [01:14:54,720 - 01:14:57,000] so this is just a
+- [01:14:57,000 - 01:14:59,660] one goes to two, two goes to three, three goes
+- [01:14:59,660 - 01:15:02,320] to four, four goes to five, five goes back to one
+- [01:15:02,320 - 01:15:05,160] it's a cycle
+- [01:15:05,160 - 01:15:08,980] here's another way to represent the same thing
+- [01:15:08,980 - 01:15:10,300] we can
+- [01:15:10,300 - 01:15:12,780] represent the state of the system
+- [01:15:12,780 - 01:15:15,300] by a column vector
+- [01:15:15,300 - 01:15:16,920] and the column vector
+- [01:15:16,920 - 01:15:20,620] we simply insert a one someplace
+- [01:15:20,620 - 01:15:23,500] if I want to represent the first state over here
+- [01:15:23,500 - 01:15:24,760] I put a one
+- [01:15:24,760 - 01:15:27,040] and then a bunch of zeros
+- [01:15:27,040 - 01:15:29,660] one, two, three, four, five
+- [01:15:29,660 - 01:15:32,380] one, two, three, four, five
+- [01:15:32,380 - 01:15:34,980] this simply represents
+- [01:15:34,980 - 01:15:37,440] the first state
+- [01:15:37,440 - 01:15:38,879] what about the second state?
+- [01:15:38,879 - 01:15:43,019] the second state I'll represent by zero
+- [01:15:43,019 - 01:15:43,940] one
+- [01:15:43,940 - 01:15:45,480] zero zero zero
+- [01:15:45,480 - 01:15:46,919] the third state
+- [01:15:46,919 - 01:15:48,099] by
+- [01:15:48,099 - 01:15:49,580] zero
+- [01:15:49,580 - 01:15:50,900] one
+- [01:15:50,900 - 01:15:52,480] and so forth
+- [01:15:52,480 - 01:15:56,160] so the states of the system can be represented
+- [01:15:56,160 - 01:15:58,640] by a column, but a particular kind
+- [01:15:58,640 - 01:16:01,120] of column, a column with all zeros
+- [01:16:01,120 - 01:16:03,240] and a one someplace
+- [01:16:03,240 - 01:16:04,620] where is the one?
+- [01:16:04,620 - 01:16:07,180] namely whichever state you're focusing on
+- [01:16:07,180 - 01:16:09,780] if you're focusing on the fifth state
+- [01:16:09,780 - 01:16:12,400] put the one in the fifth entry here
+- [01:16:13,080 - 01:16:13,720] now
+- [01:16:13,720 - 01:16:15,780] what is this rule of evolution
+- [01:16:15,780 - 01:16:17,419] the rule of evolution says that
+- [01:16:17,419 - 01:16:19,059] if you have a one someplace
+- [01:16:19,559 - 01:16:22,900] then the next instant of time the one moves down
+- [01:16:23,840 - 01:16:25,420] so if you start here
+- [01:16:25,420 - 01:16:27,640] the one moves down to here
+- [01:16:27,640 - 01:16:30,320] and the next instant it moves down to here
+- [01:16:30,320 - 01:16:32,519] next instant it moves down to here
+- [01:16:32,519 - 01:16:33,419] next instant it moves down to
+- [01:16:33,419 - 01:16:34,320] here, then where does it go?
+- [01:16:34,320 - 01:16:39,330] go? Up to the top. Right. So there's
+- [01:16:39,330 - 01:16:44,340] a procedure that you do on this column to
+- [01:16:44,340 - 01:16:47,699] tell you where the system goes in the
+- [01:16:47,699 - 01:16:51,059] next instant of time. That process can be
+- [01:16:51,059 - 01:16:53,809] represented by a matrix. So let me
+- [01:16:53,809 - 01:16:56,559] show you the matrix that represents that. The
+- [01:16:56,559 - 01:16:59,899] matrix is an operation on a vector which
+- [01:16:59,899 - 01:17:03,240] you can think of in this case as the
+- [01:17:03,240 - 01:17:07,439] updating operation. The operation which updates
+- [01:17:07,439 - 01:17:11,639] the vector. So here it is, let's
+- [01:17:11,639 - 01:17:17,089] see we put 0 1 0 0. This is
+- [01:17:17,089 - 01:17:22,540] five-dimensional so I need five. 0 0 1 0 0
+- [01:17:22,540 - 01:17:27,690] 0 0 0 1 0 0 0.
+- [01:17:27,690 - 01:17:32,840] I'm sorry, I'm gonna make this four-dimensional.
+- [01:17:32,840 - 01:17:33,029] I'mma call it, I'm just gonna call it,
+- [01:17:33,029 - 01:17:33,219] I'm just gonna call it zero zero zero. Now
+- [01:17:33,220 - 01:17:36,540] I'm getting sick of it, I don't like five dimensions.
+- [01:17:36,540 - 01:17:41,540] Five is too many for me.
+- [01:17:44,400 - 01:17:48,460] One, zero, zero, zero.
+- [01:17:48,460 - 01:17:50,420] Let's try it out.
+- [01:17:50,420 - 01:17:54,000] Let's try it out on this vector right over here.
+- [01:17:54,000 - 01:17:56,420] This represents the third state.
+- [01:17:56,420 - 01:17:59,700] What happens if we act with this matrix
+- [01:17:59,700 - 01:18:02,980] on the third state? Let's just try it out.
+- [01:18:02,980 - 01:18:05,480] Let's see what we get.
+- [01:18:05,480 - 01:18:08,799] Well, the first entry, up on the top,
+- [01:18:08,799 - 01:18:11,320] is gotten by taking the top vector
+- [01:18:11,320 - 01:18:13,740] and multiplying by the column.
+- [01:18:13,740 - 01:18:17,240] Zero times zero, plus one times zero,
+- [01:18:17,240 - 01:18:20,740] plus zero times one, plus zero times zero.
+- [01:18:21,459 - 01:18:22,879] What's the answer?
+- [01:18:22,879 - 01:18:26,820] Zero.
+- [01:18:26,820 - 01:18:32,820] Next place, zero times zero, zero times zero, one time...
+- [01:18:32,980 - 01:18:34,259] One time...
+- [01:18:34,259 - 01:18:36,379] Whoops, whoops, whoops!
+- [01:18:36,379 - 01:18:38,219] I did it better.
+- [01:18:38,219 - 01:18:39,080] Okay.
+- [01:18:39,080 - 01:18:46,080] Instead of going down, it's gonna go up.
+- [01:18:50,160 - 01:18:51,059] It's okay.
+- [01:18:51,059 - 01:18:53,759] Up and down, we just turn the whole thing over.
+- [01:18:53,759 - 01:18:54,740] Would you prefer...
+- [01:18:54,740 - 01:18:56,480] Let's just...
+- [01:18:56,480 - 01:18:58,219] Let's get it right.
+- [01:18:58,219 - 01:18:59,480] Let's get it right.
+- [01:18:59,480 - 01:19:01,459] Zero, zero, zero, zero.
+- [01:19:01,459 - 01:19:02,459] One time.
+- [01:19:02,980 - 01:19:03,980] Zero.
+- [01:19:03,980 - 01:19:04,980] Where did I have it before?
+- [01:19:04,980 - 01:19:05,980] I had it over here?
+- [01:19:05,980 - 01:19:06,980] Yeah.
+- [01:19:06,980 - 01:19:07,980] Yeah.
+- [01:19:07,980 - 01:19:20,980] One, one, one, one, and then up here?
+- [01:19:20,980 - 01:19:23,980] One.
+- [01:19:23,980 - 01:19:28,160] Okay.
+- [01:19:28,160 - 01:19:29,839] So let's start over again.
+- [01:19:29,839 - 01:19:31,299] What's up on the top?
+- [01:19:31,299 - 01:19:32,139] Zero times zero.
+- [01:19:32,139 - 01:19:32,980] Zero times zero.
+- [01:19:32,980 - 01:19:34,519] Zero times one.
+- [01:19:34,519 - 01:19:36,099] One, one times zero.
+- [01:19:36,099 - 01:19:36,980] We're still okay.
+- [01:19:36,980 - 01:19:37,839] Zero.
+- [01:19:47,980 - 01:19:48,259] Next one.
+- [01:19:50,980 - 01:19:52,469] 7, 7, 8, 9, 10, 11,
+- [01:19:52,469 - 01:19:53,959] 12, 13, 14, 15, 16, and 19.
+- [01:19:59,440 - 01:20:01,980] 1, 0, one, zero.
+- [01:20:01,980 - 01:20:07,480] But now in the last place, I have 0 times 0,
+- [01:20:07,480 - 01:20:12,980] 0 times 0, 1 times 1, and 0 times 0, so 1.
+- [01:20:16,639 - 01:20:19,280] The column has moved down one step.
+- [01:20:19,839 - 01:20:21,799] Now you can check for yourself. Here's your homework.
+- [01:20:21,800 - 01:20:26,930] Check that any place that you put this 1, it will
+- [01:20:26,930 - 01:20:32,060] move down by one step until it gets to the bottom.
+- [01:20:32,740 - 01:20:33,740] And then it will recycle
+- [01:20:33,740 - 01:20:34,740] and go up to the top.
+- [01:20:37,100 - 01:20:38,780] So that's a little thing to check.
+- [01:20:39,260 - 01:20:42,000] In fact, you can put in any numbers here.
+- [01:20:44,280 - 01:20:47,630] Only 0s and 1s may make sense, but we
+- [01:20:47,630 - 01:20:50,980] could put in any number, A, B, C, D.
+- [01:20:50,980 - 01:20:51,100] Okay.
+- [01:20:51,560 - 01:20:51,740] Okay.
+- [01:20:51,740 - 01:20:51,760] Okay.
+- [01:20:51,760 - 01:20:51,780] Okay.
+- [01:20:51,780 - 01:20:51,800] Okay.
+- [01:20:51,800 - 01:20:56,040] And what will come out over here is everybody will move down a
+- [01:20:56,040 - 01:21:00,280] step, A, B, C, but then D will move up to the top.
+- [01:21:00,920 - 01:21:04,900] So if you put a 1 in any one of the places,
+- [01:21:04,900 - 01:21:08,880] it will slide down one unit and then reappear at the top.
+- [01:21:08,880 - 01:21:15,010] The point is that the evolution of systems can
+- [01:21:15,010 - 01:21:21,140] be represented by matrices, matrices of a particular kind,
+- [01:21:21,140 - 01:21:24,660] and a bunch of, in classical physics, in this
+- [01:21:24,660 - 01:21:28,180] kind of classical physics, there are always just 1s here.
+- [01:21:28,920 - 01:21:31,230] Quantum mechanics is more complicated and
+- [01:21:31,230 - 01:21:33,540] more difficult, but in classical physics,
+- [01:21:33,540 - 01:21:38,870] but sprinklings of 0s and 1s so as to
+- [01:21:38,870 - 01:21:44,200] make the, each state shift into the next one.
+- [01:21:44,960 - 01:21:45,000] Okay.
+- [01:21:46,020 - 01:21:48,570] That's an example of the
+- [01:21:48,570 - 01:21:51,120] use of matrices in classical physics.
+- [01:21:51,120 - 01:21:55,120] So far, no quantum mechanics, just pure classical physics.
+- [01:21:55,120 - 01:21:59,920] There is an interesting, well, all right,
+- [01:21:59,920 - 01:22:04,720] this will do for the time being.
+- [01:22:04,720 - 01:22:06,360] We'll come back to it.
+- [01:22:07,160 - 01:22:11,480] So that's an example of
+- [01:22:11,480 - 01:22:15,800] matrix algebra, matrices multiplying vectors.
+- [01:22:16,400 - 01:22:18,740] What about matrices multiplying matrices?
+- [01:22:19,880 - 01:22:20,880] Why might we want to do that?
+- [01:22:20,880 - 01:22:22,980] Why might we want to multiply matrices by matrices?
+- [01:22:23,780 - 01:22:25,380] Well, here's the idea.
+- [01:22:25,900 - 01:22:29,660] Supposing we wanted to upgrade or update a second time.
+- [01:22:30,840 - 01:22:35,530] To update a second time, what we would do would be
+- [01:22:35,530 - 01:22:40,220] to apply the same matrix to the resultant that we got.
+- [01:22:40,460 - 01:22:42,720] In other words, let's write it this way.
+- [01:22:43,380 - 01:22:45,160] Let's write it abstractly.
+- [01:22:45,160 - 01:22:47,980] We have a matrix M,
+- [01:22:47,980 - 01:22:50,800] which we multiply by a vector.
+- [01:22:50,880 - 01:22:53,380] We multiply by a vector V
+- [01:22:53,380 - 01:22:55,880] to get a new vector V prime.
+- [01:22:55,880 - 01:22:56,880] Okay.
+- [01:22:56,880 - 01:23:00,630] That's just abstract notation for writing a matrix
+- [01:23:00,630 - 01:23:04,380] and a vector and getting a new vector.
+- [01:23:04,380 - 01:23:08,380] That's updating the vector V to a new vector.
+- [01:23:08,380 - 01:23:09,640] Let's update it again.
+- [01:23:09,640 - 01:23:11,760] Let's go one more interval of time.
+- [01:23:11,760 - 01:23:12,760] How do we do that?
+- [01:23:12,760 - 01:23:15,800] Well, what we do is we write
+- [01:23:15,800 - 01:23:18,840] M times V prime equals V double prime.
+- [01:23:18,840 - 01:23:19,840] Okay.
+- [01:23:19,840 - 01:23:20,840] Okay.
+- [01:23:20,880 - 01:23:23,880] So, we would do the same updating trick,
+- [01:23:23,880 - 01:23:26,880] except now update V prime instead of V.
+- [01:23:26,880 - 01:23:28,880] And we would get V double prime.
+- [01:23:28,880 - 01:23:30,880] V double prime being the state of
+- [01:23:30,880 - 01:23:32,880] the system after two units of time.
+- [01:23:32,880 - 01:23:35,380] But we could also write that by
+- [01:23:35,380 - 01:23:37,880] realizing that V prime is M times V.
+- [01:23:37,880 - 01:23:41,380] We could write this as M times M
+- [01:23:41,380 - 01:23:44,880] times V is equal to V double prime.
+- [01:23:44,880 - 01:23:48,880] This just means we apply the matrix twice.
+- [01:23:48,880 - 01:23:49,880] Okay.
+- [01:23:49,880 - 01:23:53,880] We can also think of it as squaring
+- [01:23:53,880 - 01:23:57,880] the matrix M and then multiplying it by V.
+- [01:23:57,880 - 01:23:59,880] So, how do you square a matrix?
+- [01:23:59,880 - 01:24:03,880] Or how do you multiply one matrix by another matrix?
+- [01:24:03,880 - 01:24:05,380] This is what you would do
+- [01:24:05,380 - 01:24:06,880] if you would want to update twice.
+- [01:24:06,880 - 01:24:09,380] Once with one matrix and then once
+- [01:24:09,380 - 01:24:11,880] with another matrix or the same matrix.
+- [01:24:11,880 - 01:24:13,880] How do you multiply matrices?
+- [01:24:13,880 - 01:24:18,880] And the answer is basically the same kind of rule.
+- [01:24:18,880 - 01:24:21,880] I will do it now for 2 by 2 matrices
+- [01:24:21,880 - 01:24:24,880] because it's getting too complicated even for 4 by 4 matrices.
+- [01:24:24,880 - 01:24:28,880] For a 2 by 2 matrix,
+- [01:24:28,880 - 01:24:32,880] we have M11, M12, M21, M22.
+- [01:24:32,880 - 01:24:37,880] Let's call it some other matrix N.
+- [01:24:37,880 - 01:24:44,880] N11, N12, N21, N22.
+- [01:24:44,880 - 01:24:45,880] The result of multiplying a
+- [01:24:45,880 - 01:24:46,880] matrix by a matrix is this.
+- [01:24:46,880 - 01:24:50,880] Multiplying a matrix by a matrix is another matrix.
+- [01:24:50,880 - 01:24:52,880] It's another matrix.
+- [01:24:52,880 - 01:24:56,880] And we do it in a very similar manner.
+- [01:24:56,880 - 01:25:01,880] Supposing we want the entry here.
+- [01:25:01,880 - 01:25:05,880] We get the entry by taking the first
+- [01:25:05,880 - 01:25:09,880] row and multiplying it by the first column.
+- [01:25:09,880 - 01:25:14,880] M11 times N11 plus M12 times N21.
+- [01:25:14,880 - 01:25:16,880] Same kind of inner product.
+- [01:25:16,880 - 01:25:18,880] And we put it over here.
+- [01:25:18,880 - 01:25:22,880] Now supposing we want the next entry.
+- [01:25:22,880 - 01:25:25,880] For the next entry, we take the first row because
+- [01:25:25,880 - 01:25:28,880] after all we're interested in the first row up here.
+- [01:25:28,880 - 01:25:32,880] We take the first row but multiply
+- [01:25:32,880 - 01:25:36,880] it by the second column over here.
+- [01:25:36,880 - 01:25:40,380] So what would be over here would
+- [01:25:40,380 - 01:25:43,880] be M11 times N12 plus M12 times N22.
+- [01:25:43,880 - 01:25:46,880] I'm not going to write it all out.
+- [01:25:46,880 - 01:25:49,880] Now we can move down to the bottom.
+- [01:25:49,880 - 01:25:56,880] The bottom, if we wanted this entry, we would take
+- [01:25:56,880 - 01:26:03,880] the bottom row and multiply it by the first column.
+- [01:26:03,880 - 01:26:07,880] If we want the last entry over here, we would
+- [01:26:07,880 - 01:26:11,880] take the bottom row and multiply it by the last column.
+- [01:26:13,880 - 01:26:17,880] So we multiply matrices by the same kind
+- [01:26:17,880 - 01:26:21,880] of pattern that we multiplied matrices times vectors.
+- [01:26:21,880 - 01:26:24,880] We can simply think of it as multiplying
+- [01:26:24,880 - 01:26:27,880] this matrix by this vector, putting it over here.
+- [01:26:27,880 - 01:26:31,880] Multiply this matrix by this vector, put it over here.
+- [01:26:31,880 - 01:26:36,880] So there's a notion of multiplying matrices.
+- [01:26:36,880 - 01:26:39,380] And what multiplying matrices does is
+- [01:26:39,380 - 01:26:41,880] it gives you a new matrix
+- [01:26:41,880 - 01:26:42,880] which updates you to the next matrix.
+- [01:26:42,880 - 01:26:45,880] Which updates you not by one interval of
+- [01:26:45,880 - 01:26:48,880] time, but updates you by two intervals of time.
+- [01:26:48,880 - 01:26:54,880] If you wanted to short circuit the problem of updating,
+- [01:26:54,880 - 01:26:57,380] and you wanted to update the state
+- [01:26:57,380 - 01:26:59,880] of a system five units of time,
+- [01:26:59,880 - 01:27:02,380] what you would do is
+- [01:27:02,380 - 01:27:04,880] multiply the matrix together five times.
+- [01:27:04,880 - 01:27:07,880] You do it in sequence.
+- [01:27:07,880 - 01:27:10,880] First, the first, times the next.
+- [01:27:10,880 - 01:27:11,880] The result times the next one.
+- [01:27:11,880 - 01:27:12,880] Times the result.
+- [01:27:12,880 - 01:27:13,880] Times the next one.
+- [01:27:13,880 - 01:27:19,880] And you can work out what the matrix is,
+- [01:27:19,880 - 01:27:21,380] which would take you from the state
+- [01:27:21,380 - 01:27:22,880] of a system at an instant of time
+- [01:27:22,880 - 01:27:25,880] to a state of the system five instants later.
+- [01:27:25,880 - 01:27:30,880] So matrix multiplication, multiplying matrices by matrices,
+- [01:27:30,880 - 01:27:37,880] is also an important concept.
+- [01:27:37,880 - 01:27:41,880] One last example of matrix algebra.
+- [01:27:41,880 - 01:27:49,880] Involves row vectors.
+- [01:27:49,880 - 01:27:53,880] Supposing you have a row vector,
+- [01:27:53,880 - 01:28:01,880] and you want to multiply it by a matrix.
+- [01:28:01,880 - 01:28:06,880] The rule is you write the row matrix first,
+- [01:28:06,880 - 01:28:10,880] B1, B2, B3, B4,
+- [01:28:10,880 - 01:28:13,880] and then you write the matrix.
+- [01:28:13,880 - 01:28:18,880] M11, M12, M13, and so forth.
+- [01:28:18,880 - 01:28:25,380] M14, dot dot dot, dot dot
+- [01:28:25,380 - 01:28:31,880] dot dot, dot dot dot dot.
+- [01:28:31,880 - 01:28:34,880] You're tired of writing Ms.
+- [01:28:34,880 - 01:28:36,880] Well, what's the result going to be?
+- [01:28:36,880 - 01:28:38,880] The result is going to be,
+- [01:28:38,880 - 01:28:41,880] a row vector.
+- [01:28:41,880 - 01:28:45,880] And here's the way you get
+- [01:28:45,880 - 01:28:49,880] the entries of the row vector.
+- [01:28:49,880 - 01:28:52,880] The first entry of the row vector,
+- [01:28:52,880 - 01:28:59,880] you get by taking the original row vector,
+- [01:28:59,880 - 01:29:04,880] and multiplying it by the first column vector over here.
+- [01:29:04,880 - 01:29:06,880] That product,
+- [01:29:06,880 - 01:29:08,880] that product,
+- [01:29:08,880 - 01:29:10,880] is the first entry.
+- [01:29:10,880 - 01:29:13,880] Then you take the original row,
+- [01:29:13,880 - 01:29:16,880] and multiply it by the second column.
+- [01:29:16,880 - 01:29:19,880] That gives you the second entry.
+- [01:29:19,880 - 01:29:21,880] Then you take the original row,
+- [01:29:21,880 - 01:29:24,880] and you multiply it by the third column.
+- [01:29:24,880 - 01:29:26,380] That gives you the third
+- [01:29:26,380 - 01:29:27,880] entry over here, and so forth.
+- [01:29:27,880 - 01:29:29,880] You see the pattern, it's
+- [01:29:29,880 - 01:29:31,880] always multiplying rows by columns,
+- [01:29:31,880 - 01:29:34,880] and putting them, putting the result in the right place,
+- [01:29:34,880 - 01:29:35,880] in the right row and column.
+- [01:29:35,880 - 01:29:37,880] In this case,
+- [01:29:37,880 - 01:29:40,880] a row vector times a matrix is another row vector.
+- [01:29:40,880 - 01:29:44,880] A row, a matrix times a column vector is another,
+- [01:29:44,880 - 01:29:45,880] here it is,
+- [01:29:45,880 - 01:29:52,880] a matrix times a column vector is another column vector.
+- [01:29:52,880 - 01:29:56,880] And a matrix times a matrix is another matrix.
+- [01:29:56,880 - 01:29:59,880] Um, get familiar with that.
+- [01:29:59,880 - 01:30:01,880] Work out some examples.
+- [01:30:01,880 - 01:30:03,880] Work out some examples of your own devising,
+- [01:30:03,880 - 01:30:04,880] just put some numbers in,
+- [01:30:04,880 - 01:30:09,880] multiply row vectors times matrices,
+- [01:30:09,880 - 01:30:11,880] matrices times column vectors,
+- [01:30:11,880 - 01:30:14,880] and matrices times matrices,
+- [01:30:14,880 - 01:30:16,880] and get the experience of
+- [01:30:16,880 - 01:30:18,880] working out how these things work.
+- [01:30:18,880 - 01:30:19,880] Do it for two by two,
+- [01:30:19,880 - 01:30:21,880] for three by three matrices,
+- [01:30:21,880 - 01:30:23,880] and you'll get familiar with it,
+- [01:30:23,880 - 01:30:25,380] because we will use it
+- [01:30:25,380 - 01:30:26,880] over and over and over again.
+- [01:30:26,880 - 01:30:30,880] In fact, that's the primary mathematical operation
+- [01:30:30,880 - 01:30:31,880] of quantum mechanics,
+- [01:30:31,880 - 01:30:34,880] is multiplying rows and columns,
+- [01:30:34,880 - 01:30:36,880] and columns times matrices.
+- [01:30:36,880 - 01:30:38,880] If you know how to do that,
+- [01:30:38,880 - 01:30:39,880] and you're familiar with it,
+- [01:30:39,880 - 01:30:41,880] and you can read off the answers easily,
+- [01:30:41,880 - 01:30:43,880] you've got all of the
+- [01:30:43,880 - 01:30:45,880] basic mathematics of quantum mechanics.
+- [01:30:45,880 - 01:30:47,880] It would help to have a little bit of,
+- [01:30:47,880 - 01:30:48,880] uh,
+- [01:30:48,880 - 01:30:49,880] uh,
+- [01:30:49,880 - 01:30:50,880] calculus to go with it,
+- [01:30:50,880 - 01:30:52,880] but, uh,
+- [01:30:52,880 - 01:30:56,880] the basic new thing is matrix multiplication,
+- [01:30:56,880 - 01:30:58,880] and column vectors and row vectors.
+- [01:30:58,880 - 01:30:59,880] So please,
+- [01:30:59,880 - 01:31:00,880] uh,
+- [01:31:00,880 - 01:31:01,880] practice with it a little bit.
+- [01:31:01,880 - 01:31:02,880] I should have made up
+- [01:31:02,880 - 01:31:03,880] some examples for you to do,
+- [01:31:03,880 - 01:31:04,880] but, um,
+- [01:31:04,880 - 01:31:05,880] you can make up your own.
+- [01:31:05,880 - 01:31:08,880] They're very straightforward.
+- [01:31:08,880 - 01:31:09,880] Okay, uh,
+- [01:31:09,880 - 01:31:10,880] uh,
+- [01:31:10,880 - 01:31:11,880] we're getting close to nine o'clock.
+- [01:31:11,880 - 01:31:13,880] Are there any questions?
+- [01:31:13,880 - 01:31:16,880] Next time we're going to start talking about qubits,
+- [01:31:16,880 - 01:31:17,880] quantum bits,
+- [01:31:17,880 - 01:31:22,880] and how quantum bits are very different than classical bits.
+- [01:31:22,880 - 01:31:23,880] Question?
+- [01:31:23,880 - 01:31:24,880] Yes?
+- [01:31:24,880 - 01:31:25,880] What's your name?
+- [01:31:25,880 - 01:31:26,880] My name?
+- [01:31:26,880 - 01:31:33,880] Leonard Susskind.
+- [01:31:33,880 - 01:31:38,880] Or Susskind.
+- [01:31:38,880 - 01:31:39,880] You, uh,
+- [01:31:39,880 - 01:31:40,880] if you like,
+- [01:31:40,880 - 01:31:41,880] uh,
+- [01:31:41,880 - 01:31:42,880] you know,
+- [01:31:42,880 - 01:31:43,880] polishing the apple for the professor,
+- [01:31:43,880 - 01:31:44,880] you can call me Leonardo.
+- [01:31:44,880 - 01:31:45,880] I like that very much.
+- [01:31:50,880 - 01:31:51,880] Well, you mean,
+- [01:31:51,880 - 01:31:52,880] say it the other way.
+- [01:31:52,880 - 01:31:55,880] What restriction does reversibility place on him?
+- [01:31:55,880 - 01:31:56,880] Oh, yeah.
+- [01:31:56,880 - 01:31:57,880] Yeah.
+- [01:31:57,880 - 01:31:58,880] That it have an inverse.
+- [01:31:58,880 - 01:31:59,880] Okay.
+- [01:31:59,880 - 01:32:00,880] Right.
+- [01:32:00,880 - 01:32:01,880] Well, that's the...
+- [01:32:01,880 - 01:32:02,880] Yeah, yeah, yeah, yeah, yeah.
+- [01:32:02,880 - 01:32:03,880] But I mean in a more,
+- [01:32:03,880 - 01:32:04,880] if, if I were,
+- [01:32:04,880 - 01:32:05,880] uh,
+- [01:32:05,880 - 01:32:10,880] in a more abstract sense,
+- [01:32:10,880 - 01:32:12,880] the answer is that it should have an inverse.
+- [01:32:12,880 - 01:32:15,880] That the matrix should have an inverse.
+- [01:32:15,880 - 01:32:16,880] The inverse, of course,
+- [01:32:16,880 - 01:32:17,880] is the thing that takes you back.
+- [01:32:19,880 - 01:32:21,880] Not all matrices have inverses.
+- [01:32:23,880 - 01:32:24,880] So,
+- [01:32:24,880 - 01:32:25,880] uh,
+- [01:32:25,880 - 01:32:26,880] uh,
+- [01:32:26,880 - 01:32:27,880] and you want,
+- [01:32:27,880 - 01:32:28,880] you know what an inverse is.
+- [01:32:28,880 - 01:32:29,880] Yeah.
+- [01:32:29,880 - 01:32:30,880] Okay.
+- [01:32:30,880 - 01:32:31,880] Good.
+- [01:32:31,880 - 01:32:32,880] And I will,
+- [01:32:32,880 - 01:32:33,880] we'll,
+- [01:32:33,880 - 01:32:34,880] we'll,
+- [01:32:34,880 - 01:32:35,880] if you don't,
+- [01:32:35,880 - 01:32:36,880] we'll come to it.
+- [01:32:36,880 - 01:32:37,880] Any other question?
+- [01:32:37,880 - 01:32:38,880] Yes.
+- [01:32:38,880 - 01:32:39,880] That, that is a good question.
+- [01:32:39,880 - 01:32:40,880] Yeah.
+- [01:32:40,880 - 01:32:41,880] Uh,
+- [01:32:41,880 - 01:32:42,880] the final exam is buying me lunch.
+- [01:32:43,880 - 01:32:44,880] Right.
+- [01:32:44,880 - 01:32:49,880] That's a lot of lunches out there, boy.
+- [01:32:49,880 - 01:32:51,880] Every,
+- [01:32:51,880 - 01:32:52,880] look,
+- [01:32:52,880 - 01:32:55,880] nobody asks me about grading the class.
+- [01:32:55,880 - 01:32:56,880] Nobody,
+- [01:32:56,880 - 01:32:57,880] I mean,
+- [01:32:57,880 - 01:32:58,880] a lot of you have been here before,
+- [01:32:58,880 - 01:32:59,880] so you know my policies.
+- [01:32:59,880 - 01:33:04,880] My policies are you're here to learn physics.
+- [01:33:04,880 - 01:33:06,880] There is nobody here who is,
+- [01:33:06,880 - 01:33:07,880] uh,
+- [01:33:07,880 - 01:33:08,880] uh,
+- [01:33:08,880 - 01:33:09,880] here for a degree or,
+- [01:33:09,880 - 01:33:10,880] uh,
+- [01:33:10,880 - 01:33:11,880] if you are,
+- [01:33:11,880 - 01:33:12,880] then I'll,
+- [01:33:12,880 - 01:33:14,380] I'll be glad to give you
+- [01:33:14,380 - 01:33:15,880] a numerical grade if you need one.
+- [01:33:15,880 - 01:33:16,880] In fact,
+- [01:33:16,880 - 01:33:18,880] everybody needs a numerical grade.
+- [01:33:18,880 - 01:33:21,380] I know that there's an enormous difference in
+- [01:33:21,380 - 01:33:23,880] the level of preparation of different people here.
+- [01:33:23,880 - 01:33:24,880] Uh,
+- [01:33:24,880 - 01:33:26,880] and to compare,
+- [01:33:26,880 - 01:33:30,380] to compare you in an exam setting wouldn't make
+- [01:33:30,380 - 01:33:33,880] sense because I do know that there's an enormous difference.
+- [01:33:33,880 - 01:33:36,880] I know that everybody here is here because you want to be here
+- [01:33:36,880 - 01:33:39,880] and you want to learn physics and not because you have to be here.
+- [01:33:39,880 - 01:33:40,880] Uh,
+- [01:33:40,880 - 01:33:41,880] so,
+- [01:33:41,880 - 01:33:42,880] uh,
+- [01:33:42,880 - 01:33:43,880] my policy is,
+- [01:33:43,880 - 01:33:44,880] uh,
+- [01:33:44,880 - 01:33:47,380] to either not grade the course at all or if
+- [01:33:47,380 - 01:33:49,880] somebody needs a grade in order for some particular purpose,
+- [01:33:49,880 - 01:33:50,880] uh,
+- [01:33:50,880 - 01:33:51,880] to,
+- [01:33:51,880 - 01:33:52,880] uh,
+- [01:33:52,880 - 01:33:53,880] to give a D minus.
+- [01:33:53,880 - 01:33:54,880] Lowest possible grade.
+- [01:33:55,880 - 01:33:57,880] Lowest possible passing grade.
+- [01:33:59,880 - 01:34:00,880] All right.
+- [01:34:00,880 - 01:34:01,880] So,
+- [01:34:01,880 - 01:34:02,880] it is,
+- [01:34:02,880 - 01:34:03,880] it's,
+- [01:34:03,880 - 01:34:05,880] I didn't tell you what it's for yet.
+- [01:34:05,880 - 01:34:06,880] I gave you,
+- [01:34:06,880 - 01:34:07,880] that's right,
+- [01:34:07,880 - 01:34:10,880] I gave you an example of how you can use
+- [01:34:10,880 - 01:34:13,880] it to implement the idea of updating a vector from one,
+- [01:34:13,880 - 01:34:14,880] uh,
+- [01:34:14,880 - 01:34:15,880] from one instrument to another.
+- [01:34:15,880 - 01:34:18,880] It's one example and,
+- [01:34:18,880 - 01:34:21,880] but I haven't told you yet why we're doing this.
+- [01:34:21,880 - 01:34:22,880] I
+- [01:34:22,880 - 01:34:23,880] often spend,
+- [01:34:23,880 - 01:34:26,380] I often spend an hour
+- [01:34:26,380 - 01:34:28,880] talking about qualitative aspects of physics.
+- [01:34:28,880 - 01:34:31,880] In this case it was how
+- [01:34:31,880 - 01:34:34,880] do you abstractly think about deterministic physics,
+- [01:34:34,880 - 01:34:35,880] uh,
+- [01:34:35,880 - 01:34:37,880] abstractly in terms of bits and so forth,
+- [01:34:37,880 - 01:34:38,880] and then spend,
+- [01:34:38,880 - 01:34:39,880] uh,
+- [01:34:39,880 - 01:34:40,880] some time doing some,
+- [01:34:40,880 - 01:34:41,880] uh,
+- [01:34:41,880 - 01:34:43,880] mathematics which really I won't tell you
+- [01:34:43,880 - 01:34:45,880] what it's for until the next time.
+- [01:34:45,880 - 01:34:48,380] But I want to make sure since I'm going
+- [01:34:48,380 - 01:34:50,880] to start doing some quantum mechanics the next time,
+- [01:34:50,880 - 01:34:55,380] I want to make sure that everybody will recognize the little
+- [01:34:55,380 - 01:34:59,880] algebraic little bit of manipulations that we'll do and have the,
+- [01:34:59,880 - 01:35:00,880] have the,
+- [01:35:00,880 - 01:35:01,880] uh,
+- [01:35:01,880 - 01:35:02,880] the mathematics for the next time.
+- [01:35:02,880 - 01:35:04,880] So it's really for the next time that,
+- [01:35:04,880 - 01:35:05,880] uh,
+- [01:35:05,880 - 01:35:06,880] that I set this up.
+- [01:35:06,880 - 01:35:07,880] Yeah?
+- [01:35:07,880 - 01:35:08,880] Do you promise to tell us next time what?
+- [01:35:11,880 - 01:35:12,880] I think,
+- [01:35:12,880 - 01:35:13,880] I think you will see.
+- [01:35:14,880 - 01:35:15,880] I think it will be clear.
+- [01:35:15,880 - 01:35:16,880] I think it will be clear.
+- [01:35:16,880 - 01:35:17,880] Uh,
+- [01:35:17,880 - 01:35:18,880] right.
+- [01:35:18,880 - 01:35:19,880] Uh,
+- [01:35:19,880 - 01:35:20,880] right.
+- [01:35:20,880 - 01:35:21,880] I think it will be clear.
+- [01:35:21,880 - 01:35:22,880] Yes,
+- [01:35:22,880 - 01:35:23,880] I do promise to tell you why.
+- [01:35:23,880 - 01:35:24,880] Yeah.
+- [01:35:24,880 - 01:35:25,880] Do you have a problem with that?
+- [01:35:25,880 - 01:35:26,880] No.
+- [01:35:26,880 - 01:35:27,880] Sure.
+- [01:35:27,880 - 01:35:28,880] Is that quantum junkies,
+- [01:35:28,880 - 01:35:29,880] uh,
+- [01:35:29,880 - 01:35:30,880] is that what it's called?
+- [01:35:30,880 - 01:35:31,880] That,
+- [01:35:31,880 - 01:35:32,880] that,
+- [01:35:32,880 - 01:35:33,880] that,
+- [01:35:33,880 - 01:35:34,771] that,
