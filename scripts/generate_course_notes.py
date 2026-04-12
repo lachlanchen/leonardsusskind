@@ -1093,7 +1093,7 @@ def ensure_common_preamble(course_root: Path, template_path: Path) -> None:
 def write_lecture_wrapper(lecture: LectureInfo, lecture_dir: Path) -> None:
     wrapper = f"""\\documentclass[11pt,oneside]{{book}}
 \\input{{../../common_preamble.tex}}
-\\graphicspath{{{{../../figures/}}}}
+\\graphicspath{{{{../../figures/}}{{../../assets/}}}}
 \\begin{{document}}
 \\frontmatter
 \\title{{{lecture.course_title}: {lecture.lecture_title}}}
@@ -1112,7 +1112,7 @@ def write_lecture_wrapper(lecture: LectureInfo, lecture_dir: Path) -> None:
 
 
 def write_course_book(course_root: Path, lecture_entries: list[LectureInfo]) -> None:
-    graphics_path = "\\graphicspath{{figures/}}\n"
+    graphics_path = "\\graphicspath{{figures/}{assets/}}\n"
     title_course = lecture_entries[0].course_title if lecture_entries else "Generated Course Notes"
     descriptor = lecture_entries[0].course_descriptor if lecture_entries else ""
     inputs = "\n".join(
