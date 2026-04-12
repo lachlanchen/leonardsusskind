@@ -1,0 +1,1640 @@
+# Transcript
+
+Source: supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory/109 - Lecture 5 ｜ Topics in String Theory [EJrgKI8aXgQ].mkv
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:06,400 - 00:00:12,960] Today what we're going to do, oh you had homework, right?
+- [00:00:12,960 - 00:00:15,640] You had homework to build a black hole and bring it in, right?
+- [00:00:15,640 - 00:00:18,000] Did you build one?
+- [00:00:18,000 - 00:00:20,800] Show and tell?
+- [00:00:20,800 - 00:00:22,520] No, okay.
+- [00:00:22,520 - 00:00:25,040] All right.
+- [00:00:25,040 - 00:00:32,040] I tried that, and of course, she is, by going to Mr. Google,
+- [00:00:32,040 - 00:00:38,760] she pointed me to Wolfram's website, which has the calculation.
+- [00:00:38,760 - 00:00:39,720] Calculation of what?
+- [00:00:39,720 - 00:00:46,080] The radius of a black hole that had the mass of,
+- [00:00:46,080 - 00:00:49,280] or had the temperature of three degrees.
+- [00:00:49,280 - 00:00:49,780] Oh.
+- [00:00:53,360 - 00:00:53,860] Okay.
+- [00:00:55,040 - 00:00:57,560] The difference was that they put
+- [00:00:57,560 - 00:00:59,840] the constant in the denominator.
+- [00:00:59,840 - 00:01:04,240] Yeah, it doesn't matter.
+- [00:01:04,240 - 00:01:07,920] Suppose you didn't know the answer.
+- [00:01:07,920 - 00:01:10,720] Let's try to estimate it.
+- [00:01:10,720 - 00:01:12,840] Did we do this last time?
+- [00:01:12,840 - 00:01:13,680] All right.
+- [00:01:13,680 - 00:01:17,240] We want a black hole whose temperature is in three degrees.
+- [00:01:17,240 - 00:01:18,920] Why three degrees?
+- [00:01:18,920 - 00:01:23,360] Well, three degrees is the temperature of empty space,
+- [00:01:23,360 - 00:01:24,560] due to the fact that it's a black hole.
+- [00:01:24,560 - 00:01:28,880] Due to the cosmic background radiation.
+- [00:01:28,880 - 00:01:34,360] So if we had a black hole, which was three degrees,
+- [00:01:34,360 - 00:01:37,680] it would be in equilibrium with its surroundings.
+- [00:01:37,680 - 00:01:39,880] Now, would that be particularly interesting?
+- [00:01:39,880 - 00:01:43,160] No, because if it got a little bit hotter by accident,
+- [00:01:43,160 - 00:01:45,800] you know, then it would just proceed to get yet hotter.
+- [00:01:45,800 - 00:01:48,480] If it got a little bit cooler by accident,
+- [00:01:48,480 - 00:01:51,680] by emitting too many photons, it would suddenly get cooler.
+- [00:01:51,680 - 00:01:53,080] So there's no real equilibrium.
+- [00:01:53,080 - 00:01:53,880] But nevertheless, just to, just to make sure, I'm not going to go into too much detail.
+- [00:01:53,880 - 00:01:56,280] Just to try out some numbers.
+- [00:01:56,280 - 00:01:58,400] A three degree black hole.
+- [00:01:58,400 - 00:02:02,840] Three degrees Kelvin black hole.
+- [00:02:02,840 - 00:02:03,400] All right.
+- [00:02:03,400 - 00:02:09,920] Does anybody know the wavelength of light, which is about three degrees?
+- [00:02:09,920 - 00:02:11,800] If you know it, tell me.
+- [00:02:11,800 - 00:02:18,320] Otherwise, I will have to work it out.
+- [00:02:18,320 - 00:02:19,440] It's about a centimeter?
+- [00:02:19,440 - 00:02:20,680] No, it's bigger.
+- [00:02:20,680 - 00:02:21,360] It's longer.
+- [00:02:21,360 - 00:02:22,360] Isn't it nearer?
+- [00:02:22,360 - 00:02:23,680] It's not 21 centimeters.
+- [00:02:23,880 - 00:02:24,800] Oh, no, no, no, no.
+- [00:02:24,800 - 00:02:26,120] It's not 21 centimeters.
+- [00:02:26,120 - 00:02:27,880] I thought it was longer.
+- [00:02:27,880 - 00:02:29,000] It's microwave.
+- [00:02:29,000 - 00:02:30,880] Yeah, it's microwave.
+- [00:02:30,880 - 00:02:32,800] Microwave background.
+- [00:02:32,800 - 00:02:34,760] OK, so what is it if it's a?
+- [00:02:34,760 - 00:02:36,880] 10 meters.
+- [00:02:36,880 - 00:02:39,800] Oh, no, it's not 10 meters.
+- [00:02:39,800 - 00:02:42,000] No, no, no, no, no, no, no, no, no.
+- [00:02:42,000 - 00:02:43,280] 10 meters.
+- [00:02:43,280 - 00:02:43,780] No, no.
+- [00:02:43,780 - 00:02:51,280] Microwaves are usually from one millimeter to, I don't know, one centimeter.
+- [00:02:51,280 - 00:02:51,780] Yeah.
+- [00:02:51,780 - 00:02:53,040] But it's certainly harder.
+- [00:02:53,040 - 00:02:53,540] Of course.
+- [00:02:53,880 - 00:02:55,260] It's in the order of centimeters.
+- [00:02:55,260 - 00:02:56,880] Yeah, it's in the order of centimeters.
+- [00:02:56,880 - 00:02:59,480] So let's just say a centimeter, OK?
+- [00:02:59,480 - 00:03:00,200] Let's say.
+- [00:03:00,200 - 00:03:03,060] It's kind of a microwave oven.
+- [00:03:03,060 - 00:03:05,480] Yeah, it's got to fit in a microwave oven.
+- [00:03:05,480 - 00:03:06,640] That's right.
+- [00:03:06,640 - 00:03:08,220] That's right.
+- [00:03:08,220 - 00:03:08,760] Good point.
+- [00:03:08,760 - 00:03:10,120] So it's got to be less than a foot.
+- [00:03:10,120 - 00:03:12,600] Less than a bread box.
+- [00:03:12,600 - 00:03:13,100] Hm?
+- [00:03:13,100 - 00:03:15,200] Less than a bread box.
+- [00:03:15,200 - 00:03:18,500] Yeah, but it's order a centimeter or so.
+- [00:03:18,500 - 00:03:23,200] OK, now, here's a fact, if you haven't noticed it already.
+- [00:03:23,880 - 00:03:25,220] I'm sorry.
+- [00:03:25,220 - 00:03:36,760] OK, so the wavelength of light at the temperature of the black hole
+- [00:03:36,760 - 00:03:43,640] is about the same size as the radius of the black hole.
+- [00:03:43,640 - 00:03:48,080] There aren't too many parameters around that you can shuffle around.
+- [00:03:48,080 - 00:03:48,960] And the radius, the wavelength of light emitted by a black hole of size, right, is equal to the wavelength.
+- [00:03:48,960 - 00:03:50,160] So it's a whole lot of energy.
+- [00:03:50,160 - 00:03:51,160] So if you do that, and you take the wavelength of light, the wave length, and the radius,
+- [00:03:51,160 - 00:03:52,160] of the black hole, you know, is about the same size as the radius of the black hole.
+- [00:03:52,160 - 00:03:52,760] Right.
+- [00:03:52,760 - 00:03:53,160] Yeah.
+- [00:03:53,160 - 00:04:03,820] hole of size r, that wavelength is about r. So we can read off from that what the radius
+- [00:04:03,820 - 00:04:12,320] of a black hole which emits one centimeter light is, and the answer is a centimeter.
+- [00:04:12,320 - 00:04:19,720] So we now know its Schwarzschild radius. Now, what was the question again? How big was it
+- [00:04:19,720 - 00:04:28,320] or how massive? How massive. Okay, so let's go with how massive. If it's one centimeter,
+- [00:04:28,320 - 00:04:34,900] how many centimeters are there in a kilometer? A thousand times a hundred. A hundred thousand,
+- [00:04:34,900 - 00:04:42,520] right? So there's ten to the five centimeters in a kilometer, and a solar mass black hole
+- [00:04:42,520 - 00:04:46,700] is about a kilometer big. I don't know, maybe it's two kilometers, maybe it's a little bit
+- [00:04:46,700 - 00:04:49,220] bigger, but it's a few kilometers big.
+- [00:04:49,720 - 00:04:58,840] So the thing we're thinking about is a hundred thousand times smaller in radius. How about
+- [00:04:58,840 - 00:05:07,000] in mass? The mass and the radius are proportional to each other, 2mg. So it's a hundred thousand
+- [00:05:07,000 - 00:05:18,340] times lighter than the sun. About how massive is a hundred thousand times lighter than the
+- [00:05:18,340 - 00:05:19,340] sun?
+- [00:05:19,340 - 00:05:19,380] Okay.
+- [00:05:19,720 - 00:05:30,320] It's about the earth. It's roughly order of magnitude, the earth, the mass of the earth.
+- [00:05:30,320 - 00:05:42,300] So if the mass of the earth were compressed to a black hole, it would be roughly a centimeter.
+- [00:05:42,300 - 00:05:49,720] That's but why, why did, why did that come up? I can't remember now. Somebody asked about
+- [00:05:49,720 - 00:05:53,240] it. Does that agree with what Wolfram says?
+- [00:05:53,240 - 00:06:00,320] I put the numbers in and got about moon mass.
+- [00:06:00,320 - 00:06:09,400] Moon mass. Sounds a little small to me. Moon sounds a little bit small, but, but the point
+- [00:06:09,400 - 00:06:15,600] is it's not a thing that you're going to hold in your pocket. Right. Okay. That's, it's
+- [00:06:15,600 - 00:06:16,440] pretty heavy. I'm surprised it's moon mass. I would have spent, I would have spent a hundred
+- [00:06:16,440 - 00:06:17,440] million dollars on it.
+- [00:06:17,440 - 00:06:18,440] I would have spent a hundred thousand dollars on it. I would have spent a hundred thousand
+- [00:06:18,440 - 00:06:19,440] dollars on it. I would have spent a hundred thousand dollars on it. I would have spent a hundred thousand
+- [00:06:19,440 - 00:06:20,260] dollars on it. Probably a hundred thousand dollars on it.
+- [00:06:20,260 - 00:06:21,460] I would have spent a hundred thousand dollars on it, but no, no, I would have spent a hundred
+- [00:06:21,460 - 00:06:24,440] thousand dollars in it if I had a toward line. But okay. Well, that's, that's not important.
+- [00:06:24,440 - 00:06:25,440] Back to what?
+- [00:06:25,440 - 00:06:31,340] No, no, no, the, the moon is about a quarter, a quarter of the radius of the earth.
+- [00:06:31,340 - 00:06:35,160] Let the gravity of it up to 160.
+- [00:06:35,160 - 00:06:39,220] That doesn't, I don, no. Okay. Let's, let's not get into it. Let's not get into it. We
+- [00:06:39,220 - 00:06:44,640] want to build ourselves a black hole. Now we have some moving parts or some working
+- [00:06:44,640 - 00:06:48,200] parts and let me remind you what the working parts are.
+- [00:06:48,200 - 00:06:49,440] Right.
+- [00:06:49,440 - 00:06:58,000] The first two working parts are the Penrose diagrams for flat space and for a Schwarzschild black hole.
+- [00:06:58,000 - 00:07:01,000] So let's draw them.
+- [00:07:01,000 - 00:07:03,200] We don't want to do any real calculation.
+- [00:07:03,200 - 00:07:04,680] Calculation is too hard.
+- [00:07:04,680 - 00:07:10,800] We want to draw pictures and get the basic mathematical facts from the pictures.
+- [00:07:10,800 - 00:07:14,280] All right, so let's start with flat space.
+- [00:07:14,280 - 00:07:18,640] First of all, over here, just to remind you what a Penrose diagram looks like,
+- [00:07:18,640 - 00:07:21,440] I'll draw a flat space over here.
+- [00:07:21,440 - 00:07:23,360] There's time.
+- [00:07:23,360 - 00:07:29,400] Now, the other coordinate in the problem is not going to be x, it's going to be radial distance.
+- [00:07:29,400 - 00:07:31,400] So it never goes negative.
+- [00:07:31,400 - 00:07:34,360] Radius is never negative.
+- [00:07:34,360 - 00:07:36,560] Radius goes this way.
+- [00:07:36,560 - 00:07:39,440] I seem to have made it a little bit negative over here.
+- [00:07:39,440 - 00:07:41,000] It goes that way.
+- [00:07:41,000 - 00:07:48,600] And at every point, at t and r, there are also the angular directions.
+- [00:07:48,600 - 00:07:48,640] Okay.
+- [00:07:48,640 - 00:07:50,480] So here are my coordinates.
+- [00:07:50,480 - 00:07:52,960] My coordinates are polar coordinates centered at me.
+- [00:07:52,960 - 00:07:53,760] I'm right over here.
+- [00:07:53,760 - 00:07:56,400] I also have a clock, so I'm moving vertically.
+- [00:07:56,400 - 00:07:59,320] My clock is ticking off time.
+- [00:07:59,320 - 00:08:04,560] And at different distances from me, that corresponds to different r.
+- [00:08:04,560 - 00:08:09,960] But at every r, there's a sphere of points.
+- [00:08:09,960 - 00:08:14,280] So an object could be at any point on that sphere, but we're going to suppress that sphere.
+- [00:08:14,280 - 00:08:15,680] We're not going to draw it.
+- [00:08:15,680 - 00:08:18,120] We're just going to draw r and t.
+- [00:08:18,120 - 00:08:18,480] Light ray.
+- [00:08:18,480 - 00:08:25,320] Light rays that move toward the origin come in along 45 degree axis.
+- [00:08:25,320 - 00:08:30,960] Light rays that move out from the origin go out at 45 degrees and so forth.
+- [00:08:30,960 - 00:08:31,320] All right.
+- [00:08:31,320 - 00:08:35,760] The Penrose diagram that goes with this is just gotten by smushing it.
+- [00:08:35,760 - 00:08:38,920] Smushing is a mathematical operation.
+- [00:08:38,920 - 00:08:41,640] Look it up in Wolfram.
+- [00:08:41,640 - 00:08:44,400] Look Wolfram smushing.
+- [00:08:44,400 - 00:08:44,680] All right.
+- [00:08:44,680 - 00:08:48,320] We smush it this way and that way.
+- [00:08:48,480 - 00:08:52,520] And then we get it on a finite plane.
+- [00:08:52,520 - 00:09:01,320] And when we do so, and there's more than one way to do it incidentally, but they all look the same.
+- [00:09:01,320 - 00:09:10,320] There's more than one functional form that you can use for the coordinate transformations, but they all look very much the same.
+- [00:09:10,320 - 00:09:16,520] The point over here, that's sort of the origin of both space and time.
+- [00:09:16,520 - 00:09:17,360] There's nothing special about that.
+- [00:09:17,360 - 00:09:17,640] There's nothing special about that.
+- [00:09:17,640 - 00:09:21,840] There's nothing special about this point versus this point versus this point.
+- [00:09:21,840 - 00:09:23,880] They're just a different time.
+- [00:09:23,880 - 00:09:30,040] But let's pick a origin of time and put it right over here.
+- [00:09:30,040 - 00:09:32,800] This is time equals infinity.
+- [00:09:32,800 - 00:09:46,480] And it corresponds to the location, the squished, the scrunched location of all the people at different radii who just stand still.
+- [00:09:46,480 - 00:09:46,800] All right.
+- [00:09:46,800 - 00:09:46,960] All right.
+- [00:09:46,960 - 00:09:47,280] All right.
+- [00:09:47,280 - 00:09:47,320] All right.
+- [00:09:47,320 - 00:09:47,600] All right.
+- [00:09:47,600 - 00:09:47,640] All right.
+- [00:09:47,640 - 00:09:47,880] All right.
+- [00:09:47,880 - 00:09:52,640] If they just stand still, they just wind up vertically up at t equals infinity.
+- [00:09:52,640 - 00:10:02,840] But on this figure, they all wind up at what looks like a point.
+- [00:10:02,840 - 00:10:04,520] But of course, that point is not a point.
+- [00:10:04,520 - 00:10:08,120] It's just the fact that we've squished everything.
+- [00:10:08,120 - 00:10:11,920] Squished.
+- [00:10:11,920 - 00:10:14,360] These are all the...
+- [00:10:14,360 - 00:10:17,480] And they get denser and denser as you go out here.
+- [00:10:17,480 - 00:10:22,720] Because after all, there is an infinite distance out to infinity.
+- [00:10:22,720 - 00:10:26,720] And that's all being plotted on this Penrose diagram.
+- [00:10:26,720 - 00:10:39,560] So the vertical lines, which become kind of hyperbolas, not necessarily exactly hyperbolas, but looking hyperbolic-ish, they accumulate, meaning to say they get closer and closer over here and here.
+- [00:10:39,560 - 00:10:41,800] And that's the vertical lines.
+- [00:10:41,800 - 00:10:45,440] The horizontal lines, which are the lines of constant time.
+- [00:10:45,440 - 00:10:47,440] They get closer and closer over here and here.
+- [00:10:47,440 - 00:10:52,160] Well, the one at t equals zero, that's pretty obvious.
+- [00:10:52,160 - 00:10:56,680] It starts here and it goes out to infinity.
+- [00:10:56,680 - 00:11:00,200] The one at t equals one also goes out to infinity.
+- [00:11:00,200 - 00:11:03,360] It looks like that.
+- [00:11:03,360 - 00:11:07,520] These are not necessarily, in fact, they're not straight lines as a rule.
+- [00:11:07,520 - 00:11:15,600] And again, they get closer and closer and closer and closer as you get up toward the
+- [00:11:15,600 - 00:11:16,600] infinite time.
+- [00:11:16,600 - 00:11:17,400] Same thing.
+- [00:11:17,400 - 00:11:32,160] It's a bit of a
+- [00:11:32,160 - 00:11:33,160] .
+- [00:11:33,160 - 00:11:34,160] So it's not necessarily.
+- [00:11:34,160 - 00:11:35,160] I don't know exactly what the answer is.
+- [00:11:35,160 - 00:11:36,160] But, you know, the only thing that really matters is that it's not a straight line.
+- [00:11:36,160 - 00:11:37,160] It's a vertical line.
+- [00:11:37,160 - 00:11:38,160] It's a long line.
+- [00:11:38,160 - 00:11:39,160] It's a vertical line.
+- [00:11:39,160 - 00:11:40,160] So it's not a straight line, either.
+- [00:11:40,160 - 00:11:41,160] So the reason why I'm saying that is because, the reason why I'm saying that is because, you know, the leg, that's the same thing.
+- [00:11:41,160 - 00:11:42,160] We have the lower part of the diagram, which I won't draw.
+- [00:11:42,160 - 00:11:43,160] Right.
+- [00:11:43,160 - 00:11:44,160] If you've drawn it correctly, then light rays move on 45-degree lines.
+- [00:11:44,160 - 00:11:45,160] As I said, it's partly just definition of the way you draw it.
+- [00:11:45,160 - 00:11:46,120] And as somebody pointed out last time, had I drawn it accurately, a light ray would then move.
+- [00:11:46,120 - 00:11:48,120] and just put another one in.
+- [00:11:51,780 - 00:11:53,780] That's better.
+- [00:11:54,920 - 00:11:58,120] And so forth. That's a light ray from the origin out.
+- [00:11:58,120 - 00:12:02,780] A light ray from out back to the origin is that way.
+- [00:12:02,780 - 00:12:06,080] You can have light rays that started later
+- [00:12:06,080 - 00:12:09,080] and hit the origin later and then go back out.
+- [00:12:10,240 - 00:12:11,320] That's fine.
+- [00:12:11,320 - 00:12:14,960] They're all pretty much the same except one is later than the other.
+- [00:12:14,960 - 00:12:18,960] You can also imagine light rays which don't hit the origin.
+- [00:12:18,960 - 00:12:20,960] So again, I'm the origin.
+- [00:12:20,960 - 00:12:25,960] You flash your laser at me and it goes by me at a meter.
+- [00:12:26,960 - 00:12:29,960] From the point of view of radial distance,
+- [00:12:29,960 - 00:12:32,960] it comes in from a long distance away
+- [00:12:32,960 - 00:12:35,960] and it sure looks like it's aimed toward me.
+- [00:12:35,960 - 00:12:38,960] So it's hard to tell that it isn't the radial light wave.
+- [00:12:38,960 - 00:12:42,960] But then as it gets closer, instead of getting into r equals zero,
+- [00:12:42,960 - 00:12:44,960] it gets a certain minimum distance in
+- [00:12:44,960 - 00:12:46,960] and then it goes back out.
+- [00:12:46,960 - 00:12:48,960] So a light ray that misses the origin
+- [00:12:48,960 - 00:12:50,960] is another one that misses the origin.
+- [00:12:50,960 - 00:12:52,960] I'll draw this one bold and bold.
+- [00:12:52,960 - 00:12:57,960] Comes in pretty much the same and then goes back out.
+- [00:12:57,960 - 00:13:00,960] I didn't draw it with any great accuracy,
+- [00:13:00,960 - 00:13:02,960] but you get the idea.
+- [00:13:02,960 - 00:13:06,960] They all look the same incidentally far away.
+- [00:13:06,960 - 00:13:11,960] Every light ray, no matter how much it misses me by,
+- [00:13:11,960 - 00:13:14,960] if it's far enough away, it looks like it's aimed toward me.
+- [00:13:14,960 - 00:13:17,960] Okay, that's flat space.
+- [00:13:17,960 - 00:13:21,960] That's half of, that's one of the moving parts
+- [00:13:21,960 - 00:13:24,960] or one of the tinker toy elements that we'll put together
+- [00:13:24,960 - 00:13:26,960] to build our black hole.
+- [00:13:26,960 - 00:13:29,960] And when I say build a black hole now,
+- [00:13:29,960 - 00:13:32,960] I mean at least mathematically or in imagination,
+- [00:13:32,960 - 00:13:34,960] create a black hole,
+- [00:13:34,960 - 00:13:38,960] as opposed to just take the mathematical structure and examine it.
+- [00:13:38,960 - 00:13:41,960] How would you go about creating one
+- [00:13:41,960 - 00:13:44,960] in the laboratory?
+- [00:13:44,960 - 00:13:47,960] Well, we need a pretty big laboratory, but...
+- [00:13:47,960 - 00:13:52,960] All right, the next thing was the Penrose diagram
+- [00:13:52,960 - 00:13:54,960] for the Schwarzschild black hole.
+- [00:13:54,960 - 00:13:58,960] I drew it for you last time and I'll redraw it now.
+- [00:13:58,960 - 00:14:01,960] It is a little bit odd.
+- [00:14:01,960 - 00:14:03,960] Here's the way you draw it.
+- [00:14:03,960 - 00:14:06,960] You begin by drawing a square but on the diagonal.
+- [00:14:06,960 - 00:14:10,960] You know, a diamond, a square diamond, like that.
+- [00:14:10,960 - 00:14:16,960] Then you draw another square diamond next to it of the same size.
+- [00:14:16,960 - 00:14:18,960] And then from the top of this diamond,
+- [00:14:18,960 - 00:14:21,960] you draw a wiggly line to the top of this diamond.
+- [00:14:21,960 - 00:14:23,960] And from the bottom of this diamond,
+- [00:14:23,960 - 00:14:25,960] you draw a wiggly line to the bottom of that diamond.
+- [00:14:25,960 - 00:14:30,960] The wiggly lines are the singularity,
+- [00:14:30,960 - 00:14:33,960] future singularity,
+- [00:14:33,960 - 00:14:36,960] let's call it singularity plus,
+- [00:14:36,960 - 00:14:39,960] singularity minus,
+- [00:14:40,960 - 00:14:43,960] and it becomes the minimum total.
+- [00:14:44,960 - 00:14:52,960] So here's that.
+- [00:14:52,960 - 00:14:56,960] To these 가장 large numbers in the white area in here,
+- [00:14:56,960 - 00:14:58,960] I just want to experiment.
+- [00:14:59,960 - 00:15:02,960] People outside the black hole…
+- [00:15:02,960 - 00:15:04,960] They're over here.
+- [00:15:04,960 - 00:15:07,960] This side, we're going to find out doesn't really mean anything,
+- [00:15:07,960 - 00:15:08,960] So don't...
+- [00:15:08,960 - 00:15:14,460] like flat space. If the black hole were a million miles away and we're far away
+- [00:15:14,460 - 00:15:19,780] from it, it ought to look like good old flat space. So it ought to look like what flat
+- [00:15:19,780 - 00:15:24,840] space looks like out beyond a certain distance here. Well, that's not too hard
+- [00:15:24,840 - 00:15:32,000] to imagine. Here's r equals infinity. That matches this point over here. Here's t
+- [00:15:32,000 - 00:15:39,160] equals infinity. Here's t equals minus infinity. Light rays come in from here.
+- [00:15:39,160 - 00:15:45,820] Light rays go out here. Lines of constant r, and that can mean either
+- [00:15:45,820 - 00:15:51,160] Schwarzschild r or rho, it doesn't matter. Proper distance. Oh, here is r
+- [00:15:51,160 - 00:15:59,520] equals 2mg right here. If you come in along a line like that, you get to r
+- [00:15:59,520 - 00:16:01,760] equals 2mg right over there. Let me draw that line.
+- [00:16:01,760 - 00:16:01,980] It's a different line.
+- [00:16:02,000 - 00:16:14,700] It's a different color. This is the line t equals 0. And t equals 0 starts far away
+- [00:16:14,700 - 00:16:26,520] and comes in to the horizon right at r equals 2mg. So that's r equals 2mg.
+- [00:16:27,800 - 00:16:31,980] Here's a later time. Here's a later time.
+- [00:16:32,000 - 00:16:40,180] And so forth. Earlier time, earlier time. Now, this is r equals 2mg. How about r
+- [00:16:40,180 - 00:16:46,680] equals 3mg? In other words, farther out from the horizon. That's going to look
+- [00:16:46,680 - 00:16:53,520] something like this. r equals, I don't know, 6mg. I'm not sure exactly where it
+- [00:16:53,520 - 00:16:59,980] would be, but on this diagram, there's r equals 6mg. r equals 100mg, far from the
+- [00:16:59,980 - 00:17:01,400] black hole. That's out here.
+- [00:17:02,000 - 00:17:11,940] And so forth and so on. So as you can see, this figure and this figure look pretty similar
+- [00:17:11,940 - 00:17:18,820] as long as you're far away from the black hole. But this figure looks quite different
+- [00:17:18,820 - 00:17:27,380] than this one does near r equals 0. Here's r equals 0. Light rays bounce off it. There's
+- [00:17:27,380 - 00:17:31,760] no r equals 0 that light rays bounce off here. Instead, a light ray bounces off here. And
+- [00:17:31,760 - 00:17:42,760] a light ray will just move right through the horizon and hit the singularity. So near
+- [00:17:42,760 - 00:17:49,400] the black hole, they're different. Far from the black hole, they're similar. Once you're
+- [00:17:49,400 - 00:17:57,040] in here, as we've talked about before, you cannot escape. You're doomed. You'll hit the
+- [00:17:57,040 - 00:17:59,040] singularity.
+- [00:17:59,040 - 00:18:01,040] Okay.
+- [00:18:01,760 - 00:18:07,940] I'm going to give you one more ingredient that goes in. It's a theorem. I called it
+- [00:18:07,940 - 00:18:14,060] Burkhoff's theorem. It is called Burkhoff's theorem. And Burkhoff's theorem is a generalization
+- [00:18:14,060 - 00:18:19,080] of Newton's theorem. So let me remind you about Newton's theorem now because we're going
+- [00:18:19,080 - 00:18:27,560] to put these elements together in a minute. Newton's theorem, let me first express it
+- [00:18:27,560 - 00:18:31,560] in a general way. If you have a spherically similar, or rather, a spherically similar,
+- [00:18:31,560 - 00:18:33,560] isometric distribution of mass
+- [00:18:34,380 - 00:18:37,340] In other words, it's isotropic the same in every direction
+- [00:18:38,560 - 00:18:40,560] Here it is
+- [00:18:40,680 - 00:18:42,680] It doesn't have to be a shell
+- [00:18:43,800 - 00:18:45,800] It could be a lump
+- [00:18:46,180 - 00:18:52,900] It could be a shell. It could be a solid sphere with uniform density like the Earth
+- [00:18:52,900 - 00:18:57,680] well, the Earth is not quite uniform density or it could be a sphere like
+- [00:18:57,680 - 00:19:05,540] Like Jupiter with varying density more dense in the center till you get out to the outer boundary where it has almost no density
+- [00:19:06,540 - 00:19:09,140] It doesn't even have to come to an end
+- [00:19:09,940 - 00:19:12,740] It just it's just a spherically symmetric distribution
+- [00:19:13,620 - 00:19:15,620] then what Newton's theorem says
+- [00:19:17,280 - 00:19:23,000] And the analog of will discuss in a moment what Newton's theorem says is if you take any sphere
+- [00:19:25,020 - 00:19:27,020] That the gravitational force
+- [00:19:27,680 - 00:19:32,940] of a test mass of a point at that distance on that sphere is
+- [00:19:34,000 - 00:19:36,000] exactly the same as the
+- [00:19:36,440 - 00:19:40,780] Gravitational field of the same amount of mass not the total amount of mass
+- [00:19:41,280 - 00:19:47,020] But the mass contained within that sphere as if it were located right at the center
+- [00:19:47,720 - 00:19:50,040] so the force on this particle here is
+- [00:19:50,740 - 00:19:57,520] as if the entire mass inside the sphere were concentrated at the center and the mass
+- [00:19:57,680 - 00:20:02,140] Outside the sphere has no effect on the gravitational force on that particle at all
+- [00:20:03,320 - 00:20:05,320] That's Newton's theorem
+- [00:20:06,060 - 00:20:07,680] Okay
+- [00:20:07,680 - 00:20:12,120] The special case of it, which I'll be interested in oh, and yeah, all right, so
+- [00:20:14,680 - 00:20:16,060] What about
+- [00:20:16,060 - 00:20:17,740] Let's go slowly
+- [00:20:17,740 - 00:20:23,880] Supposing the mass distribution terminates at some radius so that out beyond that radius there is no mass
+- [00:20:24,960 - 00:20:27,680] then the theorem says that if you're out beyond that
+- [00:20:27,680 - 00:20:30,440] mass the entire mass of object
+- [00:20:31,560 - 00:20:36,120] Gravitates as far as you're concerned exactly as if the entire mass were at the center
+- [00:20:37,920 - 00:20:41,200] Now let's take the case of a show let's apply that to a shell
+- [00:20:43,060 - 00:20:46,560] Let's apply that to a shell now the blue line is a shell of mass
+- [00:20:48,300 - 00:20:50,300] blue circle
+- [00:20:50,520 - 00:20:52,520] or the blue sphere if I
+- [00:20:53,100 - 00:20:55,300] want to be accurate is a
+- [00:20:56,120 - 00:20:57,120] symmetric shell of mass
+- [00:20:57,120 - 00:20:58,360] if
+- [00:20:58,360 - 00:21:00,360] We wanted to think really mathematically
+- [00:21:01,000 - 00:21:05,900] With too much precision no doubt we would imagine that it was an infinitely thin shell, but we don't have to do that
+- [00:21:05,900 - 00:21:07,900] All right, it has a certain mass M
+- [00:21:07,900 - 00:21:11,720] and the gravitational field of a particle on the inside well
+- [00:21:12,840 - 00:21:14,840] How do we find it?
+- [00:21:14,840 - 00:21:17,000] We take that point we put it on a sphere
+- [00:21:18,360 - 00:21:22,360] And we say that the gravitational field of a particle on the inside
+- [00:21:23,360 - 00:21:24,800] is
+- [00:21:24,800 - 00:21:26,800] a sphere of mass M
+- [00:21:26,800 - 00:21:31,200] and the gravitational force on that point is exactly the same as the gravitational mass of all
+- [00:21:31,820 - 00:21:36,660] gravitational force of all the mass inside the sphere, but there is no mass inside the sphere
+- [00:21:37,400 - 00:21:43,380] So the gravitational field of gravitational force on something inside the sphere is zero
+- [00:21:44,780 - 00:21:49,680] The interior of the sphere is exactly the same as if there had been no shell of mass there at all
+- [00:21:50,140 - 00:21:52,140] And what about outside the sphere?
+- [00:21:52,880 - 00:21:55,920] outside the sphere it behaves exactly as if
+- [00:21:56,800 - 00:22:00,140] The same amount of mass was concentrated at the center
+- [00:22:01,640 - 00:22:06,240] Okay, now let's take burkhoff's version of this theorem
+- [00:22:08,720 - 00:22:10,720] B I are
+- [00:22:12,000 - 00:22:17,260] K o F F K H o F F burkhoff
+- [00:22:21,740 - 00:22:24,840] Burkhoff's theorem says very similar thing it says
+- [00:22:24,840 - 00:22:26,720] We'll take the case of a shell of mass
+- [00:22:26,800 - 00:22:31,560] But it doesn't really have to be a shell you can say very similar things for any mass distribution
+- [00:22:31,560 - 00:22:37,440] But for the special case of a shell it says that the metric tensor
+- [00:22:37,920 - 00:22:43,620] Metric tensor is the gravitational field or better yet the geometry the space-time geometry
+- [00:22:44,620 - 00:22:52,520] Inside the shell is exactly the same as if nothing was there in other words. It's just good old flat space-time
+- [00:22:53,100 - 00:22:55,100] Minkowski space-time
+- [00:22:55,120 - 00:22:56,720] the simplest thing with no
+- [00:22:56,720 - 00:23:01,300] curvature no black hole just empty flat space and
+- [00:23:02,820 - 00:23:09,900] Outside the shell of mass M the metric is exactly the same as if there were a black hole
+- [00:23:11,900 - 00:23:14,220] Near the center here of mass M
+- [00:23:16,080 - 00:23:19,840] So if it's a big shell, let's take for example
+- [00:23:21,660 - 00:23:23,660] The mass of the earth
+- [00:23:23,660 - 00:23:25,660] I'm not going to make a black hole out of it
+- [00:23:25,660 - 00:23:28,600] Just take the mass of the black hole sorry the mass of the earth and leave it as the mass of the earth
+- [00:23:28,600 - 00:23:39,640] The only thing I'm going to do with it is smooth it out so that it's perfectly symmetric perfectly symmetric sphere
+- [00:23:40,500 - 00:23:44,860] Then it says that if you're outside the surface of the earth
+- [00:23:45,760 - 00:23:47,760] the geometry is
+- [00:23:48,520 - 00:23:53,200] Exactly the same as the Schwarzschild metric corresponding to exactly the same mass
+- [00:23:53,660 - 00:24:02,340] In other words it behaves exactly the same way or the gravitational field that you would feel the gravitational field that you would feel
+- [00:24:02,840 - 00:24:06,640] Would be the same as that little one centimeter nugget
+- [00:24:07,640 - 00:24:10,000] That formed the black hole of the same mass
+- [00:24:10,840 - 00:24:13,240] Okay, so that's the that's Burckhoff's theorem
+- [00:24:14,320 - 00:24:20,980] Now we want to put together we want that we're going to create ourselves a black hole and this is the simplest of all ways
+- [00:24:21,220 - 00:24:23,220] to create a black hole and
+- [00:24:24,000 - 00:24:28,040] It's the simplest of all ways to create a black hole what you imagine
+- [00:24:31,400 - 00:24:37,360] You try to do this at Livermore, but I don't think it would work Livermore. You know they have these lasers that
+- [00:24:48,840 - 00:24:52,340] And they shoot them off all simultaneously and
+- [00:24:52,340 - 00:24:58,580] and radiation, a shell of radiation comes in and hits something and squeezes it.
+- [00:24:58,680 - 00:25:00,880] I have no idea whether it'll ever work or not.
+- [00:25:00,960 - 00:25:02,740] I really don't know to do what they want to do.
+- [00:25:03,240 - 00:25:08,280] But if you imagined a much more symmetric field of lasers here
+- [00:25:08,280 - 00:25:13,720] where you really fill this thing up and made it a very, very smooth shell of lasers
+- [00:25:13,720 - 00:25:17,180] and then did your flash thing with the lasers,
+- [00:25:17,180 - 00:25:20,840] it would create a shell of light coming in.
+- [00:25:20,840 - 00:25:27,100] All right, so we would begin then, let's undraw the lasers
+- [00:25:27,100 - 00:25:30,220] and only draw the sphere of light coming in.
+- [00:25:36,680 - 00:25:44,380] So a sphere of light is coming in with the velocity c.
+- [00:25:47,420 - 00:25:49,900] It's propagating in with the velocity c.
+- [00:25:50,180 - 00:25:50,740] Light.
+- [00:25:50,740 - 00:25:50,760] Light.
+- [00:25:50,840 - 00:25:51,340] Light has energy.
+- [00:25:52,620 - 00:25:54,820] How much energy does this light wave have?
+- [00:25:55,120 - 00:25:56,020] Whatever it has.
+- [00:25:56,120 - 00:25:57,020] Let's call it E.
+- [00:25:57,540 - 00:26:02,320] In fact, from the outside, we would say it has mass.
+- [00:26:02,460 - 00:26:04,240] E equals mc squared.
+- [00:26:04,480 - 00:26:07,140] So whatever the energy of it is, divide it by c squared,
+- [00:26:07,240 - 00:26:11,440] and that's the mass of this object as seen from, let's say, far away.
+- [00:26:12,240 - 00:26:14,200] Let's not distinguish energy and mass.
+- [00:26:14,680 - 00:26:15,720] E equals m.
+- [00:26:15,720 - 00:26:18,480] All right, so this object now,
+- [00:26:18,480 - 00:26:25,160] is a collapsing shell of mass,
+- [00:26:25,160 - 00:26:27,340] collapsing with the speed of light,
+- [00:26:28,660 - 00:26:31,620] and Burkhoff's theorem, or Newton's theorem,
+- [00:26:31,820 - 00:26:33,700] Burkhoff's theorem, applies to it.
+- [00:26:34,600 - 00:26:35,420] What does it say?
+- [00:26:36,060 - 00:26:38,040] It says, oh, incidentally, what I did,
+- [00:26:38,080 - 00:26:40,140] I should have told you when we were talking about
+- [00:26:40,140 - 00:26:41,560] Newton's theorem and Burkhoff's theorem,
+- [00:26:41,960 - 00:26:44,660] it doesn't matter whether the mass is moving.
+- [00:26:44,660 - 00:26:46,800] As long as it stays spherically symmetric,
+- [00:26:47,760 - 00:26:48,360] the theorem is still moving.
+- [00:26:48,360 - 00:26:49,000] The theorem is still correct.
+- [00:26:49,640 - 00:26:51,140] So here the mass is moving inward,
+- [00:26:51,820 - 00:26:54,340] and what we can say is on the interior of the shell,
+- [00:26:54,400 - 00:26:55,980] at any given time, of course,
+- [00:26:56,080 - 00:26:59,680] what may have been the interior of the shell at 1 o'clock
+- [00:26:59,680 - 00:27:02,720] may be the exterior of the shell at 2 o'clock,
+- [00:27:03,300 - 00:27:06,580] but take the interior of the shell at any time,
+- [00:27:06,740 - 00:27:09,040] the interior of the shell at any time,
+- [00:27:09,620 - 00:27:12,860] the geometry, the metric, the gravitational field,
+- [00:27:13,260 - 00:27:16,340] is just empty space, as if nothing was there.
+- [00:27:16,840 - 00:27:18,160] On the outside,
+- [00:27:18,360 - 00:27:19,640] what do you have?
+- [00:27:19,640 - 00:27:23,480] The Schwarzschild metric, the good old black hole metric.
+- [00:27:23,480 - 00:27:26,040] So you're piecing them together.
+- [00:27:26,040 - 00:27:28,980] We're imagining taking a region of space with nothing in it
+- [00:27:28,980 - 00:27:32,180] and sewing it together with a region of space on the outside,
+- [00:27:32,180 - 00:27:36,680] and the seam, the place where they're sewed together,
+- [00:27:36,680 - 00:27:39,420] is the mass distribution.
+- [00:27:39,420 - 00:27:43,620] Let's try to draw a Penrose diagram for that.
+- [00:27:43,620 - 00:27:47,280] Let's start with empty flat space.
+- [00:27:48,360 - 00:27:54,760] Let's begin our drawing with empty flat space.
+- [00:27:54,760 - 00:27:55,560] We don't need this.
+- [00:27:57,560 - 00:27:59,120] Empty flat space.
+- [00:28:03,780 - 00:28:05,840] And into that empty flat space,
+- [00:28:06,300 - 00:28:07,920] we're going to throw a shell of light.
+- [00:28:18,360 - 00:28:24,000] So we begin by drawing empty flat space.
+- [00:28:24,000 - 00:28:25,600] Here it is over here.
+- [00:28:25,600 - 00:28:27,680] It's just I'm going to get rid of some of the lines.
+- [00:28:27,680 - 00:28:29,680] We don't need all those lines on it.
+- [00:28:29,680 - 00:28:32,680] So here's our empty flat universe.
+- [00:28:36,280 - 00:28:37,640] Just a triangle.
+- [00:28:38,640 - 00:28:40,640] Now, from far away,
+- [00:28:41,640 - 00:28:44,640] we're going to throw in this shell of light.
+- [00:28:44,640 - 00:28:46,840] Instead of throwing it in from Livermore,
+- [00:28:46,840 - 00:28:48,140] let's throw it in from here.
+- [00:28:48,360 - 00:28:49,800] It's an infinity.
+- [00:28:49,800 - 00:28:52,300] So the light comes in from very, very far away
+- [00:28:52,300 - 00:28:53,440] along a thin shell.
+- [00:28:54,840 - 00:28:56,200] And that, what does that look like?
+- [00:28:56,200 - 00:28:57,640] That looks something like this.
+- [00:28:57,640 - 00:29:00,060] The red line here is going to be
+- [00:29:00,060 - 00:29:04,000] the trajectory of the light ray,
+- [00:29:04,000 - 00:29:06,020] or the light shell.
+- [00:29:06,020 - 00:29:08,000] Remember, each point in the diagram
+- [00:29:08,000 - 00:29:11,000] is really a two-dimensional sphere.
+- [00:29:12,180 - 00:29:14,040] So every point on this diagram
+- [00:29:14,040 - 00:29:16,160] represents a two-dimensional surface,
+- [00:29:16,160 - 00:29:17,440] and every point along the light ray,
+- [00:29:17,440 - 00:29:18,020] represents a two-dimensional sphere.
+- [00:29:18,360 - 00:29:25,360] ray here really represents a shell of light. So at this point the shell is very big, it's
+- [00:29:25,360 - 00:29:31,840] far away, and it's moving toward smaller and smaller r, and when it gets to the center,
+- [00:29:31,840 - 00:29:37,960] the shell has shrunk to a point. That's a lot of energy that we've put into a small
+- [00:29:37,960 - 00:29:45,140] volume. Whatever the energy is, if we squeeze it into a nothing volume, we've created a
+- [00:29:45,140 - 00:29:50,420] huge energy density, we've created a lot of energy within a small volume, you might think
+- [00:29:50,420 - 00:29:59,260] we make a black hole. Okay. And you'd be right. Okay. Let's begin, let's take the first half
+- [00:29:59,260 - 00:30:08,440] of Berkhoff's theorem. It says inside the shell space-time is perfectly flat. Where
+- [00:30:08,440 - 00:30:12,520] is inside the shell? Let's imagine drawing one of these
+- [00:30:12,520 - 00:30:13,520] ...
+- [00:30:13,520 - 00:30:14,520] ...
+- [00:30:14,520 - 00:30:16,020] See? ...
+- [00:30:16,020 - 00:30:22,520] Surfaces... along the surfaces, radius is increasing. Where's the inside of the shell?
+- [00:30:22,520 - 00:30:26,640] ...
+- [00:30:26,640 - 00:30:31,420] This is not the inside of the shell, that's the outside of the shell. Right? Here's the
+- [00:30:31,420 - 00:30:38,940] inside of the shell, from here to here. All right. Let me draw all
+- [00:30:38,940 - 00:30:44,520] of the places which correspond to the interior of the shell. That's all of this.
+- [00:30:44,520 - 00:30:48,520] All of that is the interior of the shell.
+- [00:30:48,520 - 00:30:51,520] The interior of the shell,
+- [00:30:51,520 - 00:30:54,520] Burkhoff tells us, is just flat spacetime.
+- [00:30:54,520 - 00:30:58,520] This diagram here was all flat spacetime.
+- [00:30:58,520 - 00:31:02,520] It means I got the picture right inside the shell.
+- [00:31:02,520 - 00:31:07,520] Just by drawing flat spacetime inside the shell, I got it right.
+- [00:31:07,520 - 00:31:10,520] Outside the shell, I don't have it right.
+- [00:31:10,520 - 00:31:13,520] What does Burkhoff's theorem tell me outside the shell?
+- [00:31:13,520 - 00:31:18,520] It says outside the shell here, the metric should be the metric of the black hole.
+- [00:31:18,520 - 00:31:21,520] So let's draw the black hole metric.
+- [00:31:21,520 - 00:31:24,520] Let's draw the black hole metric.
+- [00:31:24,520 - 00:31:29,520] Well, here it is again, but I'm going to simplify it.
+- [00:31:42,520 - 00:31:43,520] Now, again,
+- [00:31:43,520 - 00:31:47,520] we're throwing in a light ray from infinity.
+- [00:31:47,520 - 00:31:53,520] It starts out here, and it comes in,
+- [00:31:53,520 - 00:31:57,520] and boom, that's the singularity.
+- [00:31:57,520 - 00:32:02,520] Where now is inside the shell, and where is outside the shell?
+- [00:32:02,520 - 00:32:05,520] Inside the shell is to the lower left.
+- [00:32:05,520 - 00:32:08,520] Outside the shell is to the upper right.
+- [00:32:08,520 - 00:32:12,520] So where did I get the metric right on this diagram?
+- [00:32:13,520 - 00:32:15,520] Outside.
+- [00:32:15,520 - 00:32:17,520] All right?
+- [00:32:17,520 - 00:32:19,520] Out here.
+- [00:32:21,520 - 00:32:24,520] That's what it should look like outside the shell.
+- [00:32:24,520 - 00:32:26,520] And this, that's wrong.
+- [00:32:26,520 - 00:32:28,520] Also, this is wrong.
+- [00:32:28,520 - 00:32:30,520] So let's erase it.
+- [00:32:32,520 - 00:32:34,520] This part was wrong.
+- [00:32:36,520 - 00:32:39,520] Burkhoff tells us that's the wrong thing for here.
+- [00:32:39,520 - 00:32:42,520] And this part is wrong.
+- [00:32:42,520 - 00:32:44,520] Notice that among other things,
+- [00:32:44,520 - 00:32:47,520] I'm throwing away all this problematic region
+- [00:32:47,520 - 00:32:50,520] with another universe on the left,
+- [00:32:50,520 - 00:32:53,520] a white hole in the singularity in the past,
+- [00:32:53,520 - 00:32:56,520] and I'm left with only this.
+- [00:32:56,520 - 00:32:59,520] That's the portion of the black hole metric
+- [00:32:59,520 - 00:33:04,520] outside of the black hole.
+- [00:33:04,520 - 00:33:07,520] So here's the light ray, and it intersects.
+- [00:33:07,520 - 00:33:10,520] It hits the singularity right over here.
+- [00:33:10,520 - 00:33:11,520] Here's the light ray.
+- [00:33:11,520 - 00:33:15,520] It comes in and gets to r equals 0 right over there.
+- [00:33:15,520 - 00:33:18,520] These two points must be the same point,
+- [00:33:18,520 - 00:33:21,520] the end of the light ray trajectory.
+- [00:33:21,520 - 00:33:22,520] All right?
+- [00:33:22,520 - 00:33:26,520] Now what I want to do is I want to imagine taking this
+- [00:33:26,520 - 00:33:29,520] and simply pasting it on top of this,
+- [00:33:29,520 - 00:33:32,520] pasting the two together.
+- [00:33:32,520 - 00:33:35,520] And here's what it looks like.
+- [00:33:41,520 - 00:33:46,520] Out here, that's the Schwarzschild metric.
+- [00:33:46,520 - 00:33:49,520] I've erased the rest of it, but here it is.
+- [00:33:49,520 - 00:33:55,520] It's everything above this red line.
+- [00:33:55,520 - 00:33:57,520] That's what goes here.
+- [00:33:57,520 - 00:34:03,520] Everything below the red line, that's here.
+- [00:34:03,520 - 00:34:05,520] That's the simplest black.
+- [00:34:05,520 - 00:34:08,520] That's the simplest formation of a black hole.
+- [00:34:08,520 - 00:34:09,520] And the reason that I spent some time at it was to show you,
+- [00:34:09,520 - 00:34:15,520] among other things, what happens to these crazy regions,
+- [00:34:15,520 - 00:34:20,520] the other half of the wormhole, beyond the wormhole,
+- [00:34:20,520 - 00:34:22,520] and what happened to the white hole.
+- [00:34:22,520 - 00:34:24,520] The white hole's not there.
+- [00:34:24,520 - 00:34:26,520] The wormhole's not there.
+- [00:34:26,520 - 00:34:29,520] But there is a singularity there.
+- [00:34:29,520 - 00:34:31,520] The singularity is there.
+- [00:34:31,520 - 00:34:33,520] Okay?
+- [00:34:33,520 - 00:34:35,520] Okay, having established what...
+- [00:34:35,520 - 00:34:37,520] Any questions up for now?
+- [00:34:39,520 - 00:34:41,520] It seems like one of the...
+- [00:34:41,520 - 00:34:43,520] This is the horizon, and the other is...
+- [00:34:43,520 - 00:34:47,520] Well, so far we haven't even talked about the true horizon of this geometry yet.
+- [00:34:47,520 - 00:34:48,520] We're going to do that in a minute.
+- [00:34:48,520 - 00:34:49,520] But go ahead.
+- [00:34:49,520 - 00:34:50,520] Ask the question anyway.
+- [00:34:50,520 - 00:34:53,520] I'm asking about that point where you pasted them together on the upper left,
+- [00:34:53,520 - 00:34:57,520] or maybe not.
+- [00:34:57,520 - 00:35:03,520] On the interior space one, we had an r equal 0.
+- [00:35:03,520 - 00:35:04,520] That was right over here.
+- [00:35:04,520 - 00:35:08,520] Yeah, but on the exterior one, we had only the horizon, right?
+- [00:35:08,520 - 00:35:09,520] No, no.
+- [00:35:09,520 - 00:35:12,520] At the singularity, r is equal to 0.
+- [00:35:12,520 - 00:35:13,520] Right.
+- [00:35:13,520 - 00:35:14,520] Good.
+- [00:35:14,520 - 00:35:17,520] That's a worthwhile point now.
+- [00:35:17,520 - 00:35:20,520] If you remember, if you go back to the Schwarzschild metric,
+- [00:35:20,520 - 00:35:25,520] the singularity was exactly where that little two sphere shrunk to 0,
+- [00:35:25,520 - 00:35:27,520] where r went to 0.
+- [00:35:27,520 - 00:35:28,520] Okay?
+- [00:35:28,520 - 00:35:33,520] So in fact, you're matching r equals 0 along here with r equals 0 along here.
+- [00:35:33,520 - 00:35:35,520] And they do match.
+- [00:35:35,520 - 00:35:37,520] Okay.
+- [00:35:37,520 - 00:35:39,520] That's the construction of a black hole.
+- [00:35:39,520 - 00:35:40,520] That's the way you would do it.
+- [00:35:40,520 - 00:35:43,520] This is the kind of black hole you would get.
+- [00:35:43,520 - 00:35:48,520] So let's now ask, where is the horizon?
+- [00:35:48,520 - 00:35:50,520] Where is the horizon of this black hole?
+- [00:35:50,520 - 00:35:54,520] The definition of the horizon now is not r equals 2mg.
+- [00:35:54,520 - 00:35:58,520] That was a temporary definition of the horizon.
+- [00:35:58,520 - 00:36:04,520] The horizon is the surface which separates the region.
+- [00:36:04,520 - 00:36:07,520] Let me say this clearly.
+- [00:36:07,520 - 00:36:13,520] There are those places where it's possible to send a message out to infinity.
+- [00:36:13,520 - 00:36:17,520] In other words, to send a light ray out to infinity.
+- [00:36:17,520 - 00:36:23,520] If you have enough fuel in your engine, you have a chance of escaping from those regions.
+- [00:36:23,520 - 00:36:27,520] But in particular, light rays can escape from certain regions,
+- [00:36:27,520 - 00:36:31,520] and from other regions they cannot escape.
+- [00:36:31,520 - 00:36:36,520] The definition of the horizon is the surface which separates those two regions.
+- [00:36:36,520 - 00:36:38,520] Period.
+- [00:36:38,520 - 00:36:44,520] It's the surface and space and time which separates those two regions.
+- [00:36:44,520 - 00:36:48,520] That from which you can escape the singularity, and from that which you can't.
+- [00:36:48,520 - 00:36:51,520] Well, it's very easy to see where that is.
+- [00:36:51,520 - 00:36:56,520] You just draw a light cone back to here.
+- [00:36:56,520 - 00:37:01,520] If you're over here, can you get out?
+- [00:37:01,520 - 00:37:03,520] No.
+- [00:37:03,520 - 00:37:06,520] You'll wind up at best over here.
+- [00:37:06,520 - 00:37:10,520] What about if you're out here? Can you get out?
+- [00:37:10,520 - 00:37:13,520] Sure. You can send a light ray out.
+- [00:37:13,520 - 00:37:20,520] Anywhere to the lower right of the green line, a light ray can get out.
+- [00:37:20,520 - 00:37:23,520] Now, a light ray can also get in.
+- [00:37:23,520 - 00:37:25,520] You can also throw a light ray in.
+- [00:37:25,520 - 00:37:30,520] That's just to say, from the outside, you can throw things into the black hole.
+- [00:37:30,520 - 00:37:34,520] You cannot, from the inside, throw things out of the black hole.
+- [00:37:34,520 - 00:37:42,520] So the green line here is the separator that separates the places where you can escape from those where you can't escape.
+- [00:37:42,520 - 00:37:44,520] Now, notice something curious.
+- [00:37:44,520 - 00:37:49,520] Below the red line here, it's just empty, flat space.
+- [00:37:49,520 - 00:37:53,520] There was nothing there.
+- [00:37:53,520 - 00:37:56,520] It was just good old empty black space.
+- [00:37:56,520 - 00:37:59,520] Flat space.
+- [00:37:59,520 - 00:38:03,520] The signal of the incoming light.
+- [00:38:04,520 - 00:38:07,520] This light shell hadn't even gotten there yet.
+- [00:38:07,520 - 00:38:10,520] And yet there is a horizon there.
+- [00:38:10,520 - 00:38:12,520] What's going on?
+- [00:38:12,520 - 00:38:16,520] Well, just think about somebody who happens to be over here.
+- [00:38:16,520 - 00:38:21,520] He doesn't know anything at all about this light shell which is going to come in.
+- [00:38:21,520 - 00:38:26,520] The light shell, he receives no message that this light shell is coming in.
+- [00:38:26,520 - 00:38:29,520] The light shell originated over here.
+- [00:38:29,520 - 00:38:32,520] A signal cannot get to him. Knows nothing about it.
+- [00:38:32,520 - 00:38:34,520] The light shell is coming in.
+- [00:38:34,520 - 00:38:36,520] But he doesn't know it.
+- [00:38:36,520 - 00:38:38,520] Has no knowledge of it at all.
+- [00:38:38,520 - 00:38:46,520] Nevertheless, the fact that that light shell is coming in means he's trapped.
+- [00:38:46,520 - 00:38:48,520] He cannot escape to infinity.
+- [00:38:48,520 - 00:38:51,520] That light shell is going to get him.
+- [00:38:51,520 - 00:38:53,520] You can see why.
+- [00:38:53,520 - 00:38:55,520] I don't have to...
+- [00:38:55,520 - 00:38:56,520] Words...
+- [00:38:56,520 - 00:38:59,520] A picture is worth a thousand words here.
+- [00:38:59,520 - 00:39:02,520] He's behind this line.
+- [00:39:02,520 - 00:39:03,520] He cannot get out of that line without exceeding the surface.
+- [00:39:03,520 - 00:39:06,520] He's behind this line without exceeding the speed of light.
+- [00:39:06,520 - 00:39:08,520] So he's going to hit the singularity.
+- [00:39:08,520 - 00:39:11,520] Even though there has...
+- [00:39:11,520 - 00:39:13,520] Nothing has happened there yet.
+- [00:39:13,520 - 00:39:16,520] The geometry is flat space.
+- [00:39:16,520 - 00:39:18,520] And yet the horizon is over here.
+- [00:39:18,520 - 00:39:25,520] The horizon forms before the light shell gets there.
+- [00:39:25,520 - 00:39:28,520] Does anything really happen there?
+- [00:39:28,520 - 00:39:29,520] Can anybody see anything?
+- [00:39:29,520 - 00:39:31,520] Somebody moving over here.
+- [00:39:31,520 - 00:39:32,520] Do they see something happening? No.
+- [00:39:33,520 - 00:39:35,520] Nothing special happens over there.
+- [00:39:35,520 - 00:39:40,520] But whether they like it or not, they're doomed by the time they get past that light shell.
+- [00:39:40,520 - 00:39:42,520] I'll give you an example.
+- [00:39:42,520 - 00:39:48,520] I've used the example many times of a drain hole as a black hole.
+- [00:39:48,520 - 00:39:51,520] The drain hole...
+- [00:39:51,520 - 00:39:58,520] A lake, a big, big lake with a drain hole in the center where the water is being sucked out so fast
+- [00:39:58,520 - 00:40:01,520] that at some distance away,
+- [00:40:01,520 - 00:40:02,520] the...
+- [00:40:03,520 - 00:40:07,520] The drain hole is draining away water so fast
+- [00:40:07,520 - 00:40:11,520] that a rower who is trying to out-row the current
+- [00:40:11,520 - 00:40:15,520] can't out-row it because the velocity inward is too fast.
+- [00:40:15,520 - 00:40:16,520] Okay.
+- [00:40:16,520 - 00:40:18,520] So now imagine
+- [00:40:18,520 - 00:40:21,520] that the drain hole is shut off.
+- [00:40:21,520 - 00:40:25,520] You've plugged up the drain hole.
+- [00:40:27,520 - 00:40:30,520] You're sitting a couple of meters away from where the drain hole is.
+- [00:40:30,520 - 00:40:32,520] Nothing is happening.
+- [00:40:32,520 - 00:40:34,520] The water isn't moving.
+- [00:40:34,520 - 00:40:36,520] You're perfectly happy.
+- [00:40:36,520 - 00:40:42,520] If it stayed like that forever, you would have no trouble rowing away.
+- [00:40:42,520 - 00:40:46,520] But now, unbeknownst to you, somebody pulls the plug from underneath,
+- [00:40:46,520 - 00:40:51,520] and all of a sudden, the water starts rushing toward the center.
+- [00:40:51,520 - 00:40:58,520] You are doomed whether or not you felt anything going on.
+- [00:40:58,520 - 00:41:00,520] You're doomed because all of a sudden,
+- [00:41:00,520 - 00:41:05,520] the velocity of the water is such that you can't out-row it.
+- [00:41:05,520 - 00:41:08,520] So there's an example of...
+- [00:41:08,520 - 00:41:12,520] You're past the point of no return,
+- [00:41:12,520 - 00:41:16,520] even though there's no flow of the water at that point.
+- [00:41:16,520 - 00:41:18,520] Same is true here.
+- [00:41:18,520 - 00:41:24,520] Pulling the plug is analogous to this light sheet coming in.
+- [00:41:24,520 - 00:41:28,520] Once the light sheet...
+- [00:41:28,520 - 00:41:30,520] Well, the light sheet comes in.
+- [00:41:30,520 - 00:41:35,520] Anybody who happens to be in here is trapped.
+- [00:41:39,520 - 00:41:40,520] What happens to the horizon?
+- [00:41:40,520 - 00:41:44,520] Let's think about the horizon a little further.
+- [00:41:44,520 - 00:41:45,520] Here's the horizon.
+- [00:41:45,520 - 00:41:48,520] And remember, at each point on this diagram,
+- [00:41:48,520 - 00:41:51,520] there is a two-dimensional sphere.
+- [00:41:51,520 - 00:41:55,520] So each point along here represents a two-dimensional sphere.
+- [00:41:55,520 - 00:41:58,520] What's the size of the sphere over here?
+- [00:41:58,520 - 00:42:00,520] Zero.
+- [00:42:00,520 - 00:42:01,520] Zero.
+- [00:42:01,520 - 00:42:02,520] All right.
+- [00:42:02,520 - 00:42:05,520] So we start over here with a zero-size sphere.
+- [00:42:05,520 - 00:42:07,520] There it is.
+- [00:42:07,520 - 00:42:12,520] Now we move out a little bit along the horizon.
+- [00:42:12,520 - 00:42:14,520] How big is the horizon over here?
+- [00:42:14,520 - 00:42:17,520] Well, it's slightly bigger.
+- [00:42:17,520 - 00:42:21,520] The horizon has grown, even though nothing's happened.
+- [00:42:21,520 - 00:42:23,520] Nothing has been going on in here.
+- [00:42:23,520 - 00:42:27,520] And the horizon keeps growing up until this point here,
+- [00:42:27,520 - 00:42:29,520] when...
+- [00:42:29,520 - 00:42:32,520] How big is it at this point?
+- [00:42:32,520 - 00:42:34,520] 2 mg.
+- [00:42:34,520 - 00:42:37,520] 2 mg, where the mass...
+- [00:42:37,520 - 00:42:41,520] Remember, we've just taken a black hole geometry
+- [00:42:41,520 - 00:42:44,520] and sort of welded it on over here.
+- [00:42:44,520 - 00:42:47,520] And the black hole geometry on this side
+- [00:42:47,520 - 00:42:50,520] had a horizon whose size was 2 mg.
+- [00:42:50,520 - 00:42:55,520] So it just grows until it becomes of size 2 mg.
+- [00:42:55,520 - 00:42:56,520] And then it just stays that way.
+- [00:42:57,520 - 00:43:00,520] Unless somebody throws in some more stuff.
+- [00:43:00,520 - 00:43:02,520] If somebody throws in some more stuff,
+- [00:43:02,520 - 00:43:04,520] the horizon will grow.
+- [00:43:04,520 - 00:43:05,520] Okay?
+- [00:43:05,520 - 00:43:10,520] So that's a picture of the creation of a black hole
+- [00:43:10,520 - 00:43:12,520] from an incoming light...
+- [00:43:12,520 - 00:43:13,520] Yeah?
+- [00:43:13,520 - 00:43:17,520] So you're saying the reason that the plug gets pulled out of the drain
+- [00:43:17,520 - 00:43:20,520] is because of the sphere's light getting smaller and smaller?
+- [00:43:20,520 - 00:43:21,520] Mm-hmm.
+- [00:43:21,520 - 00:43:23,520] Concentration.
+- [00:43:23,520 - 00:43:24,520] Right.
+- [00:43:24,520 - 00:43:26,520] But I only used that example to show you
+- [00:43:26,520 - 00:43:29,520] that even though nothing has happened yet,
+- [00:43:29,520 - 00:43:34,520] you could nevertheless be beyond the point of no return.
+- [00:43:34,520 - 00:43:42,520] Or you could be like on the edge of Niagara Falls
+- [00:43:42,520 - 00:43:44,520] at a time when Niagara Falls was so frozen up
+- [00:43:44,520 - 00:43:46,520] that it wasn't moving at all,
+- [00:43:46,520 - 00:43:48,520] and you think you're perfectly safe.
+- [00:43:48,520 - 00:43:49,520] There is no point of no return.
+- [00:43:49,520 - 00:43:51,520] The water's not moving.
+- [00:43:51,520 - 00:43:53,520] And then all of a sudden the ice gives way
+- [00:43:53,520 - 00:43:54,520] and the water starts going.
+- [00:43:54,520 - 00:43:55,520] You're doomed.
+- [00:43:55,520 - 00:43:58,520] It doesn't matter that nothing seemed to be happening.
+- [00:43:58,520 - 00:44:00,520] Same kind of thing.
+- [00:44:00,520 - 00:44:01,520] Okay.
+- [00:44:01,520 - 00:44:03,520] Shall we take a break?
+- [00:44:03,520 - 00:44:08,520] I was wondering about the fellow that gets trapped in there,
+- [00:44:08,520 - 00:44:10,520] not knowing it's coming.
+- [00:44:10,520 - 00:44:11,520] Over here.
+- [00:44:11,520 - 00:44:12,520] Right here.
+- [00:44:12,520 - 00:44:13,520] In an earlier class,
+- [00:44:13,520 - 00:44:16,520] you said that all the masses of the world...
+- [00:44:16,520 - 00:44:18,520] I'm wondering if he gets...
+- [00:44:18,520 - 00:44:21,520] Is he on the outside of the horizon
+- [00:44:21,520 - 00:44:23,520] from the point of view of a distant observer?
+- [00:44:23,520 - 00:44:24,520] Everything that falls on the horizon,
+- [00:44:24,520 - 00:44:25,520] everything that falls on the horizon...
+- [00:44:25,520 - 00:44:26,520] No, no.
+- [00:44:26,520 - 00:44:28,520] The distant observer can't see him.
+- [00:44:28,520 - 00:44:30,520] The distant observer's out here, can't see him.
+- [00:44:30,520 - 00:44:33,520] So does he go right into the center?
+- [00:44:33,520 - 00:44:36,520] So what is the status of something that's inside?
+- [00:44:36,520 - 00:44:37,520] There he is.
+- [00:44:37,520 - 00:44:38,520] Right.
+- [00:44:38,520 - 00:44:41,520] What can happen to him?
+- [00:44:41,520 - 00:44:43,520] You hit the singularity.
+- [00:44:43,520 - 00:44:44,520] You can't avoid it.
+- [00:44:44,520 - 00:44:45,520] Okay, thanks.
+- [00:44:45,520 - 00:44:50,520] So anything that's trapped into the warming horizon
+- [00:44:50,520 - 00:44:52,520] goes to the singularity,
+- [00:44:52,520 - 00:44:54,520] and stuff that falls in...
+- [00:44:54,520 - 00:44:59,520] Subsequently appears to be stuck on the horizon forever somehow.
+- [00:44:59,520 - 00:45:02,520] Well, okay, so he got in here somehow, didn't he?
+- [00:45:02,520 - 00:45:03,520] I mean...
+- [00:45:03,520 - 00:45:04,520] He was trapped.
+- [00:45:04,520 - 00:45:05,520] Well, he was trapped,
+- [00:45:05,520 - 00:45:11,520] but he didn't begin existence over here.
+- [00:45:11,520 - 00:45:13,520] He may have come from here, huh?
+- [00:45:13,520 - 00:45:15,520] There's particles.
+- [00:45:15,520 - 00:45:18,520] There's particles.
+- [00:45:18,520 - 00:45:19,520] Maybe he was...
+- [00:45:19,520 - 00:45:22,520] Maybe his mother was over here,
+- [00:45:22,520 - 00:45:24,520] and his grandfather was over here,
+- [00:45:24,520 - 00:45:26,520] and so forth and so on.
+- [00:45:26,520 - 00:45:30,520] Or maybe he just accidentally collected...
+- [00:45:30,520 - 00:45:35,520] He came to existence as a funny fluctuation of a bunch of molecules.
+- [00:45:35,520 - 00:45:38,520] But those molecules were there before atoms or something was there.
+- [00:45:38,520 - 00:45:41,520] The energy was there beforehand.
+- [00:45:41,520 - 00:45:44,520] So the energy came in here, and there he is.
+- [00:45:44,520 - 00:45:50,520] And yes, somebody looking back can see his grandfather,
+- [00:45:50,520 - 00:45:52,520] or his father, or whoever it is,
+- [00:45:52,520 - 00:45:53,520] or his...
+- [00:45:53,520 - 00:45:55,520] his particles,
+- [00:45:55,520 - 00:45:57,520] but can't see him.
+- [00:45:57,520 - 00:45:59,520] In fact, what he sees
+- [00:45:59,520 - 00:46:03,520] is he sees these particles just collecting on this horizon,
+- [00:46:03,520 - 00:46:08,520] which is peculiar because in some sense the black hole hasn't even formed yet.
+- [00:46:08,520 - 00:46:10,520] Look at that. This is weird.
+- [00:46:10,520 - 00:46:12,520] No, this is really weird.
+- [00:46:12,520 - 00:46:16,520] The observer up here looks back,
+- [00:46:16,520 - 00:46:20,520] and he sees grandfather falling in,
+- [00:46:20,520 - 00:46:22,520] and then there he is.
+- [00:46:22,520 - 00:46:24,520] He's born over here.
+- [00:46:24,520 - 00:46:26,520] He looks back,
+- [00:46:26,520 - 00:46:28,520] and what does he see?
+- [00:46:28,520 - 00:46:32,520] He sees grandfather getting closer and closer and closer
+- [00:46:32,520 - 00:46:35,520] to something which doesn't exist yet.
+- [00:46:35,520 - 00:46:37,520] But can't get... but never sees him go past it.
+- [00:46:37,520 - 00:46:40,520] Well, no, it goes through that point very close to the horizon
+- [00:46:40,520 - 00:46:42,520] intersected at the rest.
+- [00:46:42,520 - 00:46:43,520] So, I mean...
+- [00:46:43,520 - 00:46:44,520] What?
+- [00:46:44,520 - 00:46:46,520] It's a space-time diagram. It goes through...
+- [00:46:46,520 - 00:46:50,520] We're asking what somebody on the outside sees.
+- [00:46:50,520 - 00:46:51,520] We're asking... or measures.
+- [00:46:51,520 - 00:46:53,520] No, but that sight line,
+- [00:46:53,520 - 00:46:55,520] looking back at where that photon has come from,
+- [00:46:55,520 - 00:46:57,520] it goes through the red line.
+- [00:46:57,520 - 00:46:59,520] It goes through the red line, yes.
+- [00:46:59,520 - 00:47:04,520] So it's actually close to where it formed.
+- [00:47:04,520 - 00:47:08,520] The person out here knows that a black hole formed.
+- [00:47:08,520 - 00:47:10,520] He knows a black hole formed.
+- [00:47:10,520 - 00:47:15,520] He sees the light coming from...
+- [00:47:15,520 - 00:47:18,520] He has no problem knowing that a black hole formed.
+- [00:47:18,520 - 00:47:21,520] He can look back, and he can see the shell coming in.
+- [00:47:21,520 - 00:47:25,520] So the person out here knows that the black hole has formed.
+- [00:47:25,520 - 00:47:30,520] The odd thing is that he sees this person over here
+- [00:47:30,520 - 00:47:33,520] getting trapped onto the horizon
+- [00:47:33,520 - 00:47:36,520] even before the shell got in.
+- [00:47:38,520 - 00:47:41,520] Looks back, looks through the shell.
+- [00:47:41,520 - 00:47:43,520] It's just light. He can see through light.
+- [00:47:43,520 - 00:47:47,520] He looks back through the shell and sees...
+- [00:47:47,520 - 00:47:49,520] So, so, that continues the idea that everything...
+- [00:47:49,520 - 00:47:50,520] So, so, that continues the idea that everything...
+- [00:47:50,520 - 00:47:51,520] So, so, that continues the idea that everything...
+- [00:47:51,520 - 00:47:53,520] from an outside observer will see
+- [00:47:53,520 - 00:47:55,520] any mass that's in there
+- [00:47:55,520 - 00:47:58,520] will be somehow smushed onto that horizon.
+- [00:47:58,520 - 00:47:59,520] Right.
+- [00:47:59,520 - 00:48:00,520] Always.
+- [00:48:00,520 - 00:48:03,520] Right. Forever and ever and ever.
+- [00:48:03,520 - 00:48:06,520] Or until the black hole evaporates.
+- [00:48:06,520 - 00:48:08,520] Right.
+- [00:48:08,520 - 00:48:11,520] All right, now we're going to come to
+- [00:48:11,520 - 00:48:17,520] the really bizarre questions that
+- [00:48:17,520 - 00:48:19,520] have to do with the combination of...
+- [00:48:19,520 - 00:48:24,520] black holes, gravity, and quantum mechanics,
+- [00:48:24,520 - 00:48:27,520] and information, and all that kind of thing.
+- [00:48:34,520 - 00:48:36,520] Let's draw a picture of the horizon now
+- [00:48:36,520 - 00:48:38,520] as a different picture.
+- [00:48:44,520 - 00:48:46,520] The horizon is just a surface.
+- [00:48:49,520 - 00:48:52,520] Here it is.
+- [00:48:52,520 - 00:48:56,520] We're going to fall downward now.
+- [00:48:56,520 - 00:48:57,520] Here's the horizon.
+- [00:48:57,520 - 00:48:59,520] It's really a great big sphere.
+- [00:48:59,520 - 00:49:02,520] But just like the surface of the Earth is a big sphere,
+- [00:49:02,520 - 00:49:05,520] let's take the flat Earth approximation,
+- [00:49:05,520 - 00:49:07,520] or the flat horizon approximation,
+- [00:49:07,520 - 00:49:11,520] and just think of the horizon being over here.
+- [00:49:15,520 - 00:49:17,520] Things fall down in this direction,
+- [00:49:17,520 - 00:49:18,520] toward the horizon.
+- [00:49:18,520 - 00:49:23,520] And let's talk about the properties
+- [00:49:23,520 - 00:49:26,520] of the region near the horizon,
+- [00:49:26,520 - 00:49:29,520] and what happens to things as they fall
+- [00:49:29,520 - 00:49:34,520] to the horizon, through the horizon, whatever.
+- [00:49:34,520 - 00:49:37,520] Let's talk about what happens to them.
+- [00:49:37,520 - 00:49:41,520] Now, one of the things we discovered earlier on
+- [00:49:41,520 - 00:49:44,520] was that black holes have temperature.
+- [00:49:44,520 - 00:49:46,520] Black holes have temperature.
+- [00:49:46,520 - 00:49:47,520] We eat them.
+- [00:49:47,520 - 00:49:50,520] We even discussed the temperature.
+- [00:49:50,520 - 00:49:53,520] I think we even calculated, or roughly calculated it.
+- [00:49:55,520 - 00:49:57,520] They have entropy.
+- [00:49:57,520 - 00:50:00,520] The entropy is proportional to the horizon area.
+- [00:50:00,520 - 00:50:05,520] So it's almost as though the entropy was carried by things
+- [00:50:05,520 - 00:50:08,520] which were sort of wallpapered onto the horizon.
+- [00:50:08,520 - 00:50:10,520] Maybe not so surprising,
+- [00:50:10,520 - 00:50:13,520] since from outside, everything does look,
+- [00:50:13,520 - 00:50:15,520] everything that fell in does look like it's sort of
+- [00:50:15,520 - 00:50:17,520] plastered onto the horizon.
+- [00:50:17,520 - 00:50:22,520] So maybe it's not all that surprising
+- [00:50:22,520 - 00:50:24,520] that the entropy of the black hole
+- [00:50:24,520 - 00:50:25,520] is proportional to the area.
+- [00:50:25,520 - 00:50:28,520] We discovered that if we tried to throw in more bits,
+- [00:50:28,520 - 00:50:30,520] it made the black hole bigger.
+- [00:50:30,520 - 00:50:33,520] Every bit increased the area by one Planck unit,
+- [00:50:33,520 - 00:50:35,520] the area of the horizon.
+- [00:50:35,520 - 00:50:37,520] And we went through that.
+- [00:50:37,520 - 00:50:39,520] That's a quantum phenomenon.
+- [00:50:39,520 - 00:50:41,520] It involves H-bar.
+- [00:50:41,520 - 00:50:45,520] So there was entropy, and there was also temperature.
+- [00:50:45,520 - 00:50:47,520] Anybody remember what the temperature,
+- [00:50:47,520 - 00:50:50,520] the Hawking temperature of a black hole is?
+- [00:50:52,520 - 00:50:55,520] Let's get rid of some of these pictures over here
+- [00:50:55,520 - 00:50:58,520] and go back to...
+- [00:51:06,520 - 00:51:09,520] Hawking temperature of a black hole.
+- [00:51:09,520 - 00:51:11,520] Let's call it TH.
+- [00:51:11,520 - 00:51:13,520] It's a temperature of a black hole.
+- [00:51:13,520 - 00:51:14,520] It's called a T-H.
+- [00:51:14,520 - 00:51:16,520] Let's call it TH.
+- [00:51:16,520 - 00:51:18,520] Remember what it was?
+- [00:51:18,520 - 00:51:20,520] You're going to look in your notes.
+- [00:51:20,520 - 00:51:21,520] You're going to cheat.
+- [00:51:21,520 - 00:51:27,520] H-bar C-cubed over 8 pi Mg.
+- [00:51:27,520 - 00:51:30,520] H-bar, is it C-cubed?
+- [00:51:30,520 - 00:51:32,520] I think it's C-cubed.
+- [00:51:32,520 - 00:51:33,520] Yeah, C-cubed.
+- [00:51:33,520 - 00:51:41,520] C-cubed over 8 pi Mg,
+- [00:51:41,520 - 00:51:43,520] which we could also write in terms of, you know,
+- [00:51:43,520 - 00:51:45,520] the Schwarzschild radius.
+- [00:51:45,520 - 00:51:49,520] 2 Mg divided by C-squared is the Schwarzschild radius.
+- [00:51:49,520 - 00:51:53,520] So this is also equal, I think, to H-C over,
+- [00:51:53,520 - 00:51:58,520] looks to me like 4 pi R.
+- [00:51:58,520 - 00:52:00,520] Do I have that right?
+- [00:52:04,520 - 00:52:08,520] 2 Mg divided by C-squared is the Schwarzschild radius.
+- [00:52:08,520 - 00:52:10,520] So this is also equal, I think, to H-C over,
+- [00:52:10,520 - 00:52:14,520] which is 2 Mg.
+- [00:52:14,520 - 00:52:15,520] I'm slow.
+- [00:52:15,520 - 00:52:18,520] I have to put a 2 here and then divide by 2.
+- [00:52:18,520 - 00:52:20,520] Yeah.
+- [00:52:20,520 - 00:52:21,520] Yeah.
+- [00:52:21,520 - 00:52:25,520] But in particular, in units in which H-bar and C are equal to 1,
+- [00:52:25,520 - 00:52:28,520] which are natural units for us,
+- [00:52:28,520 - 00:52:31,520] the temperature of the black hole is proportional to 1
+- [00:52:31,520 - 00:52:34,520] over the radius of the horizon.
+- [00:52:34,520 - 00:52:38,520] And the radius of the horizon of a big black hole is big.
+- [00:52:38,520 - 00:52:40,520] And so black holes are cold.
+- [00:52:40,520 - 00:52:41,520] They're cold.
+- [00:52:41,520 - 00:52:43,520] Now what exactly does this temperature mean?
+- [00:52:43,520 - 00:52:47,520] Can temperature depend on position?
+- [00:52:53,520 - 00:52:56,520] In some sense, yes, and in some sense, no.
+- [00:52:56,520 - 00:53:00,520] What is the sense in which the temperature can depend on position?
+- [00:53:00,520 - 00:53:02,520] I can tell you right now, the temperature in New York City
+- [00:53:02,520 - 00:53:04,520] is not the same as the temperature here.
+- [00:53:04,520 - 00:53:05,520] OK.
+- [00:53:05,520 - 00:53:09,520] But you said the temperature can't depend on position, right?
+- [00:53:09,520 - 00:53:10,520] Somebody says not.
+- [00:53:10,520 - 00:53:11,520] Explain yourself.
+- [00:53:11,520 - 00:53:14,520] Well, in empty space, it doesn't matter where you are,
+- [00:53:14,520 - 00:53:16,520] the temperature's the same.
+- [00:53:16,520 - 00:53:17,520] That's true.
+- [00:53:17,520 - 00:53:20,520] In empty space, in truly empty space, the temperature is zero.
+- [00:53:20,520 - 00:53:25,520] In thermal equilibrium, temperature is really only accurately defined
+- [00:53:25,520 - 00:53:28,520] with infinite precision in equilibrium.
+- [00:53:28,520 - 00:53:32,520] Temperature is a thing that has to do with thermal equilibrium.
+- [00:53:32,520 - 00:53:36,520] Thermal equilibrium is what happens when everything gets equilibrated.
+- [00:53:36,520 - 00:53:39,520] In other words, when all the variations in temperature
+- [00:53:39,520 - 00:53:46,520] when the heat flows in such a way as to increase the entropy
+- [00:53:46,520 - 00:53:50,520] to the maximum amount, and then temperature in thermal equilibrium
+- [00:53:50,520 - 00:53:53,520] is exactly constant.
+- [00:53:53,520 - 00:53:58,520] Now, this is a true statement, but one has to understand
+- [00:53:58,520 - 00:54:03,520] in a gravitational field exactly what it means.
+- [00:54:03,520 - 00:54:07,520] It does not mean that the temperature is constant.
+- [00:54:07,520 - 00:54:08,520] It's not.
+- [00:54:08,520 - 00:54:12,520] It does not mean, here's a gravitational field,
+- [00:54:12,520 - 00:54:15,520] it does not mean in thermal equilibrium,
+- [00:54:15,520 - 00:54:20,520] it does not mean that if you took an ordinary standard thermometer
+- [00:54:20,520 - 00:54:28,520] and lowered it down or raised it up, that the temperature would be the same.
+- [00:54:28,520 - 00:54:30,520] Here's why.
+- [00:54:30,520 - 00:54:31,520] Temperature, what does temperature measure?
+- [00:54:31,520 - 00:54:33,520] Roughly speaking, very roughly speaking,
+- [00:54:33,520 - 00:54:37,520] it measures the kinetic energy of particles, right?
+- [00:54:37,520 - 00:54:42,520] Now, supposing we had that the surface of the Earth
+- [00:54:42,520 - 00:54:45,520] was being heated from underneath, here's some flames,
+- [00:54:45,520 - 00:54:49,520] these are green flames heating the surface of the Earth from underneath,
+- [00:54:49,520 - 00:54:51,520] making the surface of the Earth hot,
+- [00:54:51,520 - 00:54:58,520] and it was ejecting thermal molecules into the atmosphere.
+- [00:54:58,520 - 00:55:03,520] In fact, those molecules were the atmosphere.
+- [00:55:03,520 - 00:55:06,520] Let's go to an extreme situation where the molecules,
+- [00:55:06,520 - 00:55:12,520] where the molecules are so rare that they don't bang into each other,
+- [00:55:12,520 - 00:55:14,520] the mean free path between them is very large,
+- [00:55:14,520 - 00:55:18,520] or the molecules are so weakly interacting
+- [00:55:18,520 - 00:55:21,520] that basically what happens when a molecule gets ejected
+- [00:55:21,520 - 00:55:23,520] is it falls back down.
+- [00:55:23,520 - 00:55:28,520] So, above the surface of the Earth there are molecules,
+- [00:55:32,520 - 00:55:34,520] gravitation is pulling them back down,
+- [00:55:34,520 - 00:55:37,520] they jump up depending on their kinetic energy,
+- [00:55:37,520 - 00:55:39,520] in other words, they jump up by an amount
+- [00:55:39,520 - 00:55:42,520] which depends on the thermal fluctuations
+- [00:55:42,520 - 00:55:44,520] that they might have gotten hit with.
+- [00:55:44,520 - 00:55:46,520] The hot surface here is bombarded,
+- [00:55:46,520 - 00:55:50,520] it's vibrating, shaking, doing whatever has the fluctuating,
+- [00:55:50,520 - 00:55:52,520] and it'll kick a molecule up,
+- [00:55:52,520 - 00:55:54,520] and the molecule will fall back down.
+- [00:55:54,520 - 00:55:55,520] Okay?
+- [00:55:55,520 - 00:55:59,520] Do you expect the kinetic energy of the molecules to be the same
+- [00:55:59,520 - 00:56:01,520] no matter how high you are?
+- [00:56:01,520 - 00:56:02,520] No.
+- [00:56:02,520 - 00:56:03,520] Why not?
+- [00:56:04,520 - 00:56:09,520] Because they lose kinetic energy when they rise up.
+- [00:56:09,520 - 00:56:13,520] Supposing you wanted to know,
+- [00:56:13,520 - 00:56:19,520] so here's an example where even though in some very technical sense,
+- [00:56:19,520 - 00:56:22,520] which I'm not going to try to describe for you exactly,
+- [00:56:22,520 - 00:56:24,520] the temperature is the same everywhere,
+- [00:56:24,520 - 00:56:26,520] there is a sense in which that is true,
+- [00:56:26,520 - 00:56:30,520] but for our practical purposes where what we mean by temperature
+- [00:56:30,520 - 00:56:33,520] is that which is measured by a thermometer,
+- [00:56:34,520 - 00:56:36,520] and what is measured by thermometer?
+- [00:56:36,520 - 00:56:40,520] The kinetic energy of the particles that are hitting the thermometer,
+- [00:56:40,520 - 00:56:45,520] the temperature would be higher down low than it would be up high.
+- [00:56:45,520 - 00:56:47,520] Okay?
+- [00:56:47,520 - 00:56:51,520] So, or the kinetic energy of the particles would be higher down low.
+- [00:56:51,520 - 00:56:56,520] The same would be true incidentally if these were not molecules,
+- [00:56:56,520 - 00:56:59,520] but we were radiating photons.
+- [00:56:59,520 - 00:57:02,520] Photons would also get radiated,
+- [00:57:02,520 - 00:57:07,520] and photons are also subject to gravitational forces.
+- [00:57:07,520 - 00:57:12,520] Photons which are radiated will also fall back down.
+- [00:57:12,520 - 00:57:15,520] In fact, as they rise, they lose energy,
+- [00:57:15,520 - 00:57:17,520] as they fall, they gain energy.
+- [00:57:17,520 - 00:57:19,520] So it's the same with photons.
+- [00:57:19,520 - 00:57:21,520] Photons are no different.
+- [00:57:21,520 - 00:57:28,520] Alright, now let's suppose you were very, very far away.
+- [00:57:28,520 - 00:57:30,520] You didn't want to get too close to this thing,
+- [00:57:30,520 - 00:57:32,520] but you wanted to know what the temperature was,
+- [00:57:32,520 - 00:57:34,520] what the temperature was down below.
+- [00:57:34,520 - 00:57:35,520] What would you do?
+- [00:57:35,520 - 00:57:37,520] Well, you'd measure the temperature high up,
+- [00:57:37,520 - 00:57:42,520] and you'd say, well, it's half a degree temperature high up here,
+- [00:57:42,520 - 00:57:48,520] but you could extrapolate down and say if the typical kinetic energy
+- [00:57:48,520 - 00:57:54,520] of a particle or a photon that you see up 100 miles from the surface
+- [00:57:54,520 - 00:57:56,520] is such and such,
+- [00:57:56,520 - 00:58:00,520] then you could just use some straightforward extrapolation
+- [00:58:00,520 - 00:58:05,520] to figure out what the temperature is down near the horizon,
+- [00:58:05,520 - 00:58:12,520] or horizon, or near the surface of the Earth in this case.
+- [00:58:12,520 - 00:58:15,520] Now, what is the Hawking temperature?
+- [00:58:15,520 - 00:58:20,520] The Hawking temperature is the temperature seen by a thermometer
+- [00:58:20,520 - 00:58:22,520] far from the black hole.
+- [00:58:22,520 - 00:58:26,520] It's the actual temperature that a thermometer would register
+- [00:58:26,520 - 00:58:29,520] if it were very far from the black hole.
+- [00:58:29,520 - 00:58:34,520] And it's registering the presence of photons,
+- [00:58:34,520 - 00:58:38,520] thermal photons, black-body thermal photons,
+- [00:58:38,520 - 00:58:42,520] which somehow were ejected from the black hole
+- [00:58:42,520 - 00:58:46,520] and which were out there as a kind of atmosphere far from the black hole,
+- [00:58:46,520 - 00:58:50,520] which were exciting the thermometer far away.
+- [00:58:50,520 - 00:58:53,520] And the temperature is pretty cold.
+- [00:58:53,520 - 00:58:58,520] But in the same way, you can extrapolate downward
+- [00:58:58,520 - 00:59:03,520] and ask what the temperature must have been close to the surface of the black hole.
+- [00:59:03,520 - 00:59:07,520] There actually is a formula for doing it.
+- [00:59:07,520 - 00:59:10,520] I think it's a little bit too late now.
+- [00:59:10,520 - 00:59:12,520] Maybe we can go through it another time.
+- [00:59:12,520 - 00:59:17,520] How you actually calculate the variation of the actual measured temperature
+- [00:59:17,520 - 00:59:20,520] in a gravitational field.
+- [00:59:20,520 - 00:59:23,520] But I'm going to tell you the answer.
+- [00:59:23,520 - 00:59:27,520] The answer, first of all, is that very far away,
+- [00:59:27,520 - 00:59:30,520] the temperature is the Hawking temperature.
+- [00:59:30,520 - 00:59:31,520] Where is it?
+- [00:59:31,520 - 00:59:32,520] Here it is, right over here.
+- [00:59:32,520 - 00:59:34,520] As you get closer and closer to the black hole,
+- [00:59:34,520 - 00:59:37,520] the temperature rises.
+- [00:59:37,520 - 00:59:40,520] And as you get very close to the black hole,
+- [00:59:40,520 - 00:59:45,520] as you get close to the horizon,
+- [00:59:45,520 - 00:59:48,520] we won't call this the Hawking temperature.
+- [00:59:48,520 - 00:59:51,520] It's kind of the extrapolated Hawking temperature,
+- [00:59:51,520 - 00:59:53,520] which you would extrapolate into.
+- [00:59:53,520 - 00:59:56,520] Let's give it a name, T of rho.
+- [00:59:57,520 - 01:00:02,520] The temperature measured at a proper distance rho from the horizon,
+- [01:00:02,520 - 01:00:08,520] it is one over two pi rho.
+- [01:00:08,520 - 01:00:11,520] One divided by two pi rho.
+- [01:00:11,520 - 01:00:16,520] The closer you are, the higher the temperature.
+- [01:00:16,520 - 01:00:25,520] Now, in fact, the horizon is a very difficult place to escape from.
+- [01:00:25,520 - 01:00:26,520] In fact, if you're behind the horizon,
+- [01:00:26,520 - 01:00:28,520] you can't escape at all.
+- [01:00:28,520 - 01:00:30,520] If you're right at the horizon,
+- [01:00:30,520 - 01:00:32,520] or very close to the horizon,
+- [01:00:32,520 - 01:00:35,520] it's extremely difficult to get away,
+- [01:00:35,520 - 01:00:38,520] which is another way of saying you lose a lot of energy.
+- [01:00:38,520 - 01:00:41,520] A photon loses a lot of energy
+- [01:00:41,520 - 01:00:45,520] when it tries to escape from very close to the horizon.
+- [01:00:45,520 - 01:00:49,520] So, if you see a finite temperature,
+- [01:00:49,520 - 01:00:51,520] a distance above the horizon,
+- [01:00:51,520 - 01:00:53,520] then extremely close to the horizon,
+- [01:00:53,520 - 01:00:55,520] the kinetic energy must have been very large.
+- [01:00:56,520 - 01:00:58,520] That's what's going on here.
+- [01:00:58,520 - 01:01:02,520] The actual temperature of the photons,
+- [01:01:02,520 - 01:01:04,520] or of a thermometer,
+- [01:01:04,520 - 01:01:05,520] that would be lowered on a cable,
+- [01:01:05,520 - 01:01:06,520] here's our experiment.
+- [01:01:06,520 - 01:01:11,520] We're going to lower a thermometer on a cable.
+- [01:01:11,520 - 01:01:13,520] It's going to be a tiny, tiny thermometer,
+- [01:01:13,520 - 01:01:14,520] because for one reason or another,
+- [01:01:14,520 - 01:01:16,520] we have to use tiny thermometers,
+- [01:01:16,520 - 01:01:18,520] but we'll lower a tiny thermometer on a cable.
+- [01:01:18,520 - 01:01:22,520] The cable will send back a signal
+- [01:01:22,520 - 01:01:25,520] telling us what the temperature recorded on the thermometer is.
+- [01:01:25,520 - 01:01:27,520] And as you lower it down,
+- [01:01:27,520 - 01:01:29,520] you'll find the temperature goes up.
+- [01:01:29,520 - 01:01:32,520] It goes up and up and up and up.
+- [01:01:40,520 - 01:01:43,520] Well, if you really believed this,
+- [01:01:43,520 - 01:01:47,520] then you would say that the temperature close to the horizon
+- [01:01:47,520 - 01:01:49,520] was very, very hot.
+- [01:01:49,520 - 01:01:52,520] Now, we have a funny situation now.
+- [01:01:55,520 - 01:01:58,520] Let's suppose we take an atom
+- [01:01:58,520 - 01:02:02,520] and we lower it down closer and closer to the horizon.
+- [01:02:02,520 - 01:02:07,520] What happens to that atom as it gets close to the horizon?
+- [01:02:11,520 - 01:02:14,520] Forget general relativity.
+- [01:02:14,520 - 01:02:17,520] Now, it's just moving into a very hot region.
+- [01:02:17,520 - 01:02:19,520] What happens to it?
+- [01:02:19,520 - 01:02:22,520] It becomes excited.
+- [01:02:22,520 - 01:02:24,520] But it's getting hot.
+- [01:02:24,520 - 01:02:27,520] It's getting really, really hot.
+- [01:02:27,520 - 01:02:29,520] It gets ionized.
+- [01:02:32,520 - 01:02:35,520] It's getting really, really hot.
+- [01:02:35,520 - 01:02:39,520] The nucleus gets torn to pieces by the high temperature.
+- [01:02:39,520 - 01:02:42,520] The quarks get liberated.
+- [01:02:42,520 - 01:02:44,520] It's defeated.
+- [01:02:44,520 - 01:02:46,520] It's defeated. Yeah, right.
+- [01:02:46,520 - 01:02:48,520] Well, yeah.
+- [01:02:48,520 - 01:02:50,520] Right.
+- [01:02:50,520 - 01:02:52,520] Yeah, that's right.
+- [01:02:52,520 - 01:02:53,520] I mean, you know, right.
+- [01:02:53,520 - 01:02:57,520] If we put a cable around you and lowered you down
+- [01:02:57,520 - 01:03:00,520] and put your feet to the surface of the black hole,
+- [01:03:00,520 - 01:03:02,520] you would get a hot foot.
+- [01:03:02,520 - 01:03:04,520] Right.
+- [01:03:04,520 - 01:03:06,520] That's what this picture says.
+- [01:03:06,520 - 01:03:07,520] And how do you get away from it?
+- [01:03:07,520 - 01:03:09,520] You've done a calculation.
+- [01:03:09,520 - 01:03:11,520] You've done a legitimate calculation.
+- [01:03:11,520 - 01:03:13,520] And this is a legitimate calculation.
+- [01:03:13,520 - 01:03:15,520] I mean, the calculation is correct.
+- [01:03:15,520 - 01:03:19,520] And by now, it's been tested over and over again.
+- [01:03:19,520 - 01:03:22,520] If you do lower something down on a cable,
+- [01:03:22,520 - 01:03:27,520] and then pull it back up,
+- [01:03:27,520 - 01:03:33,520] it will give all of the evidence of having been in a very, very hot region.
+- [01:03:33,520 - 01:03:38,520] So this is not to be questioned.
+- [01:03:38,520 - 01:03:44,520] But there's something a little funny about this,
+- [01:03:44,520 - 01:03:48,520] because from this point of view and from this picture over here,
+- [01:03:48,520 - 01:03:50,520] the horizon is nothing very special.
+- [01:03:50,520 - 01:03:51,520] It's just a green line that I've drawn.
+- [01:03:51,520 - 01:03:53,520] It's just a green line that I drew there,
+- [01:03:53,520 - 01:03:57,520] but there was nothing there.
+- [01:03:57,520 - 01:04:01,520] It was just a mathematical line that I drew
+- [01:04:01,520 - 01:04:05,520] to separate the region from which you can send a signal out to a signal
+- [01:04:05,520 - 01:04:07,520] where you can't send a signal out.
+- [01:04:07,520 - 01:04:09,520] But on the other hand,
+- [01:04:09,520 - 01:04:11,520] nothing special was going on in this horizon over here.
+- [01:04:11,520 - 01:04:14,520] The curvature didn't get large.
+- [01:04:14,520 - 01:04:17,520] The metric near the horizon was close to flat space.
+- [01:04:17,520 - 01:04:19,520] We've already established that.
+- [01:04:19,520 - 01:04:21,520] And so there's nothing very dramatic going on.
+- [01:04:21,520 - 01:04:28,520] And so you might expect that if you dropped something through the horizon,
+- [01:04:28,520 - 01:04:33,520] and now think about it in the frame of reference of the falling object,
+- [01:04:33,520 - 01:04:39,520] the falling object doesn't say it took an infinite amount of time to go through.
+- [01:04:39,520 - 01:04:42,520] Here's the falling object going through the horizon.
+- [01:04:42,520 - 01:04:45,520] The clock ticks off seconds.
+- [01:04:45,520 - 01:04:49,520] It took exactly seven seconds to go from here to here
+- [01:04:49,520 - 01:04:51,520] in the frame of reference of the falling object.
+- [01:04:51,520 - 01:04:53,520] The object says, I fell through,
+- [01:04:53,520 - 01:04:58,520] or I fell past the point where I originally calculated there was a horizon.
+- [01:04:58,520 - 01:05:01,520] He doesn't say, bump, I just felt the horizon.
+- [01:05:01,520 - 01:05:05,520] But when it was outside the black hole,
+- [01:05:05,520 - 01:05:08,520] he made a calculation of where the horizon was,
+- [01:05:08,520 - 01:05:11,520] estimated how long it would take him to fall through it,
+- [01:05:11,520 - 01:05:13,520] fell through it, nothing happened.
+- [01:05:13,520 - 01:05:18,520] So from the point of view of somebody who falls through the horizon,
+- [01:05:19,520 - 01:05:21,520] nothing happens at that point.
+- [01:05:21,520 - 01:05:23,520] It sounds contradictory.
+- [01:05:23,520 - 01:05:27,520] Either he does get burned up or he doesn't get burned up.
+- [01:05:27,520 - 01:05:32,520] And if he doesn't get burned up, how did he avoid the consequences of this very, very high temperature?
+- [01:05:32,520 - 01:05:35,520] Or it could be an atom.
+- [01:05:35,520 - 01:05:37,520] Does the atom get ionized?
+- [01:05:37,520 - 01:05:41,520] And if it does get ionized, do its particles get spread over the entire horizon
+- [01:05:41,520 - 01:05:44,520] by the extremely high heat,
+- [01:05:44,520 - 01:05:47,520] which causes things to diffuse?
+- [01:05:47,520 - 01:05:49,520] Or does it fall through here?
+- [01:05:49,520 - 01:05:50,520] There's got to be an answer.
+- [01:05:50,520 - 01:05:51,520] It's one or the other.
+- [01:05:51,520 - 01:05:53,520] It can't be both, right?
+- [01:05:55,520 - 01:06:03,520] So I think one way of trying to get at this
+- [01:06:03,520 - 01:06:08,520] is to think, to try to think as much as possible
+- [01:06:08,520 - 01:06:12,520] in what I would call an Einsteinian kind of way,
+- [01:06:12,520 - 01:06:15,520] or maybe it's a Heisenbergian kind of way,
+- [01:06:15,520 - 01:06:19,520] to try to be operational about it.
+- [01:06:19,520 - 01:06:23,520] To try to say, look,
+- [01:06:23,520 - 01:06:28,520] let's see if we can prove or disprove
+- [01:06:28,520 - 01:06:32,520] this or that by doing an experiment.
+- [01:06:32,520 - 01:06:37,520] Now here's the kind of experiment that you might try to think about.
+- [01:06:37,520 - 01:06:43,520] The temperature of this atom here increases as it falls down.
+- [01:06:43,520 - 01:06:48,520] In fact, it gets very hot before it passes through the horizon.
+- [01:06:49,520 - 01:06:53,520] It doesn't have to go through the horizon to get good and hot.
+- [01:06:53,520 - 01:06:57,520] How hot does it have to get to ionize a hydrogen atom?
+- [01:06:57,520 - 01:07:00,520] 13 volts.
+- [01:07:00,520 - 01:07:03,520] 13 electron volts, right.
+- [01:07:03,520 - 01:07:05,520] How hot is that?
+- [01:07:05,520 - 01:07:06,520] 3,000.
+- [01:07:06,520 - 01:07:08,520] 3,000 degrees, something like that?
+- [01:07:08,520 - 01:07:10,520] Yeah, a few thousand degrees.
+- [01:07:10,520 - 01:07:13,520] So at some point it reaches 3,000 degrees.
+- [01:07:13,520 - 01:07:14,520] It's outside the horizon.
+- [01:07:14,520 - 01:07:17,520] At that point, if all makes sense,
+- [01:07:17,520 - 01:07:21,520] then it should get ionized.
+- [01:07:21,520 - 01:07:25,520] And that's before it fell through.
+- [01:07:25,520 - 01:07:28,520] Therefore, it ought to be able to send the signal back out,
+- [01:07:28,520 - 01:07:32,520] or somebody stationed over here ought to be able to send the signal back out
+- [01:07:32,520 - 01:07:36,520] and said the atom either did or didn't get ionized.
+- [01:07:36,520 - 01:07:40,520] From one point of view, the atom ought to be able to say,
+- [01:07:40,520 - 01:07:42,520] nothing's happening to me.
+- [01:07:42,520 - 01:07:44,520] I'm falling freely through the horizon.
+- [01:07:44,520 - 01:07:47,520] I'm within a certain distance of the horizon.
+- [01:07:47,520 - 01:07:50,520] You told me the temperature was going to be 3,000 degrees,
+- [01:07:50,520 - 01:07:52,520] but I don't feel a darn thing,
+- [01:07:52,520 - 01:07:55,520] and I'm going to send out the message to you and tell you.
+- [01:07:55,520 - 01:07:57,520] From the other point of view,
+- [01:07:57,520 - 01:08:00,520] you've done a mathematical calculation which says that the temperature gets hot.
+- [01:08:00,520 - 01:08:02,520] You've got a conflict, a real conflict.
+- [01:08:02,520 - 01:08:08,520] So let's see if we can turn it into an experimental conflict.
+- [01:08:08,520 - 01:08:15,520] In fact, before we do, I want to remind you of the Heisenberg uncertainty principle.
+- [01:08:15,520 - 01:08:16,520] Okay.
+- [01:08:17,520 - 01:08:23,520] And the reason is the logic that goes on here
+- [01:08:23,520 - 01:08:27,520] and that is important in understanding this better
+- [01:08:27,520 - 01:08:34,520] is very close to the logic that Heisenberg used.
+- [01:08:34,520 - 01:08:36,520] What did Heisenberg say?
+- [01:08:36,520 - 01:08:41,520] He said you can't measure both the position and velocity of a particle.
+- [01:08:41,520 - 01:08:45,520] In fact, in some sense, it can't have both a position and a velocity.
+- [01:08:45,520 - 01:08:47,520] It has one or the other.
+- [01:08:47,520 - 01:08:49,520] Or you can measure one or the other.
+- [01:08:49,520 - 01:08:55,520] If having a certain property means that that property can be measured,
+- [01:08:55,520 - 01:08:58,520] then it has one or the other and not both.
+- [01:08:58,520 - 01:08:59,520] And that seems contradictory.
+- [01:08:59,520 - 01:09:01,520] Why does it seem contradictory?
+- [01:09:01,520 - 01:09:07,520] If it makes sense to talk about the position of a particle at any time,
+- [01:09:07,520 - 01:09:13,520] then it makes sense to talk about the sequence of positions of a particle.
+- [01:09:13,520 - 01:09:17,520] If it makes sense to talk about the sequence of positions of a particle,
+- [01:09:17,520 - 01:09:19,520] then it has a trajectory,
+- [01:09:19,520 - 01:09:25,520] and that trajectory can be used to extrapolate and find the velocity for the particle.
+- [01:09:25,520 - 01:09:30,520] So if it's really true that the particle has a position at every instant,
+- [01:09:30,520 - 01:09:33,520] then how can it not have a velocity at every instant?
+- [01:09:33,520 - 01:09:38,520] Heisenberg said, alright, I don't care what you say about whether it does or doesn't.
+- [01:09:38,520 - 01:09:42,520] Let's ask if we can really measure both simultaneously.
+- [01:09:42,520 - 01:09:46,520] And I just want to very quickly remind you of the logic here.
+- [01:09:46,520 - 01:09:51,520] So supposing you have a particle, an electron,
+- [01:09:51,520 - 01:09:56,520] and you want to measure its position to high precision.
+- [01:09:56,520 - 01:09:58,520] You want to measure its position to high precision.
+- [01:09:58,520 - 01:10:00,520] How do you do it?
+- [01:10:00,520 - 01:10:01,520] You hit it with a photon.
+- [01:10:01,520 - 01:10:03,520] You create an image of it on a screen.
+- [01:10:03,520 - 01:10:10,520] And in order to have the resolving power to see the location of that electron
+- [01:10:10,520 - 01:10:13,520] to within a resolution delta x,
+- [01:10:13,520 - 01:10:15,520] you have to have a photon.
+- [01:10:15,520 - 01:10:18,520] You have to hit it with a photon, or a light wave,
+- [01:10:18,520 - 01:10:27,520] whose wavelength is no larger,
+- [01:10:27,520 - 01:10:32,520] is less than or equal to delta x.
+- [01:10:32,520 - 01:10:36,520] But then, if the wavelength is less than delta x,
+- [01:10:36,520 - 01:10:39,520] that says that the momentum is larger of the photon,
+- [01:10:39,520 - 01:10:45,520] is going to be larger or equal to Planck's constant over delta x.
+- [01:10:45,520 - 01:10:51,520] Is that the Planck's constant with the cross or without the cross?
+- [01:10:51,520 - 01:10:53,520] It doesn't matter.
+- [01:10:53,520 - 01:10:58,520] That means that this particle is going to get bombarded by a photon
+- [01:10:58,520 - 01:11:00,520] in order to measure it.
+- [01:11:00,520 - 01:11:04,520] You might have said, look, I believe that particle is standing still.
+- [01:11:04,520 - 01:11:09,520] I've created that particle in such a way that it's standing absolutely still.
+- [01:11:09,520 - 01:11:13,520] And I want to confirm that it's standing absolutely still.
+- [01:11:13,520 - 01:11:18,520] I want to confirm that it's standing absolutely still at the origin.
+- [01:11:18,520 - 01:11:23,520] So what I will do is measure its position very quickly,
+- [01:11:23,520 - 01:11:27,520] and then instantaneously afterwards measure its velocity
+- [01:11:27,520 - 01:11:31,520] and try to check that it was both at the origin and at rest.
+- [01:11:31,520 - 01:11:32,520] Well, you know the story.
+- [01:11:32,520 - 01:11:34,520] I mean, the story is extremely well known.
+- [01:11:34,520 - 01:11:36,520] I'm just reminding you of it.
+- [01:11:36,520 - 01:11:42,520] That if you have to hit it with a particle of momentum p,
+- [01:11:42,520 - 01:11:43,520] it's going to get hit.
+- [01:11:43,520 - 01:11:44,520] It's going to recoil.
+- [01:11:44,520 - 01:11:49,520] The particle is going to go off in some direction with a momentum more or less of order p.
+- [01:11:49,520 - 01:11:50,520] In what direction?
+- [01:11:50,520 - 01:11:54,520] Well, that direction is somewhat random.
+- [01:11:54,520 - 01:11:59,520] And so if you try to measure the velocity afterwards,
+- [01:11:59,520 - 01:12:02,520] it will not be what you thought it was in the first place.
+- [01:12:02,520 - 01:12:07,520] In other words, the experiment creates exactly the condition
+- [01:12:07,520 - 01:12:12,520] that it was designed to show wasn't the case.
+- [01:12:12,520 - 01:12:20,520] The experiment was designed to show that the velocity was zero, let us say.
+- [01:12:20,520 - 01:12:25,520] And just the experiment itself created the condition
+- [01:12:25,520 - 01:12:32,520] which was the opposite of what it was designed to confirm.
+- [01:12:32,520 - 01:12:33,520] That's the Heisenberg logic.
+- [01:12:33,520 - 01:12:36,520] It's deeply, of course, connected with quantum mechanics.
+- [01:12:36,520 - 01:12:39,520] H-bar appears in it.
+- [01:12:39,520 - 01:12:41,520] In classical electrodynamics,
+- [01:12:41,520 - 01:12:46,520] you can make an image with an arbitrarily small amount of,
+- [01:12:46,520 - 01:12:51,520] an arbitrarily low intensity electromagnetic wave.
+- [01:12:51,520 - 01:12:54,520] You don't have to have one whole quantum.
+- [01:12:54,520 - 01:12:59,520] In quantum mechanics, you can't subdivide the energy less than a quantum.
+- [01:12:59,520 - 01:13:02,520] So if you want to do the experiment, you're stuck.
+- [01:13:02,520 - 01:13:06,520] You're going to give that electron a kick.
+- [01:13:06,520 - 01:13:09,520] Okay, let's now analyze.
+- [01:13:09,520 - 01:13:11,520] Let's be Heisenberg.
+- [01:13:11,520 - 01:13:13,520] And analyze the question,
+- [01:13:13,520 - 01:13:18,520] what happens when an atom falls onto the horizon?
+- [01:13:18,520 - 01:13:25,520] Does it or does it not get ionized?
+- [01:13:25,520 - 01:13:29,520] Does it or does it not get really mutilated
+- [01:13:29,520 - 01:13:34,520] by the high temperatures above a certain line here?
+- [01:13:34,520 - 01:13:36,520] Sorry, below a certain line.
+- [01:13:36,520 - 01:13:39,520] Below a certain line, here's the line rho,
+- [01:13:39,520 - 01:13:41,520] at a distance rho,
+- [01:13:41,520 - 01:13:48,520] where the temperature T is 1 over 2 pi rho.
+- [01:13:48,520 - 01:13:50,520] Now, what we're interested in
+- [01:13:50,520 - 01:13:55,520] is when the atom falls below the line
+- [01:13:55,520 - 01:13:59,520] where the temperature has exceeded the ionization temperature.
+- [01:13:59,520 - 01:14:03,520] We're not interested in what happens when the atom is above the region
+- [01:14:03,520 - 01:14:05,520] where it's nice and cold.
+- [01:14:05,520 - 01:14:08,520] We're interested in what happens to the atom
+- [01:14:08,520 - 01:14:10,520] when it gets within,
+- [01:14:10,520 - 01:14:14,520] within the region where the temperature is of order,
+- [01:14:14,520 - 01:14:17,520] the ionization temperature.
+- [01:14:17,520 - 01:14:19,520] Once it gets down that low,
+- [01:14:19,520 - 01:14:22,520] it's in this huge gravitational field,
+- [01:14:22,520 - 01:14:25,520] it fell from above.
+- [01:14:25,520 - 01:14:28,520] The huge gravitational field near the black hole
+- [01:14:28,520 - 01:14:30,520] has accelerated it.
+- [01:14:30,520 - 01:14:32,520] And it's accelerated it by that point
+- [01:14:32,520 - 01:14:34,520] up to close to speed of light in,
+- [01:14:34,520 - 01:14:36,520] in just because,
+- [01:14:36,520 - 01:14:39,520] just because the gravitational field is so intense near the horizon,
+- [01:14:39,520 - 01:14:41,520] so hard to get away.
+- [01:14:41,520 - 01:14:43,520] Big gravitational field.
+- [01:14:43,520 - 01:14:45,520] This thing is falling downward now
+- [01:14:45,520 - 01:14:47,520] with close to the speed of light.
+- [01:14:47,520 - 01:14:49,520] How much time
+- [01:14:49,520 - 01:14:51,520] does it have
+- [01:14:51,520 - 01:14:54,520] before it actually falls through the horizon?
+- [01:14:54,520 - 01:14:56,520] Once it's through the horizon,
+- [01:14:56,520 - 01:14:57,520] it,
+- [01:14:57,520 - 01:14:59,520] you cannot find anything out about it
+- [01:14:59,520 - 01:15:01,520] once it's through the horizon.
+- [01:15:01,520 - 01:15:03,520] Alright, so how much time does it have
+- [01:15:03,520 - 01:15:05,520] to fall that distance?
+- [01:15:05,520 - 01:15:07,520] Well, the answer is, what is it, rho over c?
+- [01:15:07,520 - 01:15:08,520] If this distance is rho over c,
+- [01:15:08,520 - 01:15:11,520] if this distance is rho,
+- [01:15:11,520 - 01:15:14,520] the time that it has is rho over c,
+- [01:15:14,520 - 01:15:17,520] which is proportional to,
+- [01:15:17,520 - 01:15:20,520] proportional to one over the temperature,
+- [01:15:20,520 - 01:15:22,520] one over the ionization temperature.
+- [01:15:22,520 - 01:15:24,520] The higher the ionization temperature,
+- [01:15:24,520 - 01:15:26,520] the shorter the amount of time
+- [01:15:26,520 - 01:15:30,520] that the particle has in that region.
+- [01:15:30,520 - 01:15:33,520] Okay, now how are we going to do an experiment
+- [01:15:33,520 - 01:15:36,520] from the outside to determine whether the,
+- [01:15:36,520 - 01:15:38,520] before it falls through,
+- [01:15:38,520 - 01:15:40,520] it's too late.
+- [01:15:40,520 - 01:15:42,520] Once it falls through the horizon, too late.
+- [01:15:42,520 - 01:15:44,520] Can't get any information out.
+- [01:15:44,520 - 01:15:46,520] We want to find out during this period,
+- [01:15:46,520 - 01:15:47,520] this short period of time here,
+- [01:15:47,520 - 01:15:50,520] while it's falling in the high temperature region,
+- [01:15:50,520 - 01:15:52,520] we want to try to find out if it,
+- [01:15:52,520 - 01:15:54,520] if it was ionized.
+- [01:15:54,520 - 01:15:56,520] How do we find out if it's ionized?
+- [01:15:56,520 - 01:15:58,520] Well, we shine some light on it.
+- [01:15:58,520 - 01:16:01,520] Here might be a source of light over here.
+- [01:16:01,520 - 01:16:04,520] That light is going to illuminate it,
+- [01:16:04,520 - 01:16:06,520] bounce off,
+- [01:16:06,520 - 01:16:08,520] and create an image.
+- [01:16:08,520 - 01:16:10,520] The image over here is either going to be
+- [01:16:10,520 - 01:16:14,520] an atom un-ionized,
+- [01:16:14,520 - 01:16:16,520] or it's going to be an atom splattered all over the place.
+- [01:16:16,520 - 01:16:18,520] One or the other, we don't know which.
+- [01:16:18,520 - 01:16:21,520] Okay, we have a very short amount of time
+- [01:16:21,520 - 01:16:23,520] to do the experiment.
+- [01:16:23,520 - 01:16:25,520] Namely, the amount of time that it takes
+- [01:16:25,520 - 01:16:28,520] to fall from the region where the temperature
+- [01:16:28,520 - 01:16:30,520] first got hot enough to ionize it,
+- [01:16:30,520 - 01:16:32,520] until it falls through the horizon.
+- [01:16:32,520 - 01:16:34,520] That's a short amount of time.
+- [01:16:34,520 - 01:16:36,520] That means, what does it mean in terms of,
+- [01:16:36,520 - 01:16:38,520] um, of resolution?
+- [01:16:38,520 - 01:16:40,520] Resolution power.
+- [01:16:40,520 - 01:16:43,520] Another way to say it is we have a small distance
+- [01:16:43,520 - 01:16:45,520] that we have to resolve.
+- [01:16:45,520 - 01:16:48,520] We have to see that atom within a small distance.
+- [01:16:48,520 - 01:16:50,520] That small distance is rho.
+- [01:16:50,520 - 01:16:52,520] What does it mean?
+- [01:16:52,520 - 01:16:55,520] Well, it means that that photon had had a,
+- [01:16:55,520 - 01:16:57,520] had better have a wavelength
+- [01:16:57,520 - 01:17:00,520] which is smaller than the distance rho.
+- [01:17:00,520 - 01:17:01,520] Right?
+- [01:17:01,520 - 01:17:03,520] So lambda
+- [01:17:03,520 - 01:17:07,520] has to be smaller than rho.
+- [01:17:07,520 - 01:17:09,520] And that says that the energy
+- [01:17:09,520 - 01:17:13,520] of that photon has to be larger.
+- [01:17:13,520 - 01:17:15,520] I'm going to, let's see,
+- [01:17:15,520 - 01:17:18,520] h bar
+- [01:17:18,520 - 01:17:21,520] over lambda times c
+- [01:17:21,520 - 01:17:24,520] divided by c.
+- [01:17:24,520 - 01:17:26,520] Let's see, e is p times c.
+- [01:17:26,520 - 01:17:30,520] This is p c.
+- [01:17:30,520 - 01:17:31,520] Right?
+- [01:17:31,520 - 01:17:33,520] Or h h.
+- [01:17:33,520 - 01:17:36,520] But actually you have a rho over c.
+- [01:17:37,520 - 01:17:42,520] The energy has to be larger than this.
+- [01:17:42,520 - 01:17:44,520] The smaller the wavelength,
+- [01:17:44,520 - 01:17:45,520] the larger the energy.
+- [01:17:45,520 - 01:17:47,520] And lambda is of order rho.
+- [01:17:47,520 - 01:17:50,520] So the energy has to be larger than this.
+- [01:17:50,520 - 01:17:52,520] Okay?
+- [01:17:52,520 - 01:17:57,520] Well, this is essentially exactly the energy
+- [01:17:57,520 - 01:18:00,520] that corresponds to this temperature.
+- [01:18:00,520 - 01:18:01,520] One over rho.
+- [01:18:01,520 - 01:18:03,520] We didn't put in the h bars and c's here.
+- [01:18:03,520 - 01:18:05,520] One over rho.
+- [01:18:05,520 - 01:18:06,520] One over rho.
+- [01:18:06,520 - 01:18:07,520] Same thing here.
+- [01:18:07,520 - 01:18:08,520] In other words,
+- [01:18:08,520 - 01:18:09,520] you have to hit the particle,
+- [01:18:09,520 - 01:18:11,520] you have to hit the atom
+- [01:18:11,520 - 01:18:15,520] with a photon
+- [01:18:15,520 - 01:18:17,520] which is energetic enough to ionize it.
+- [01:18:17,520 - 01:18:19,520] In order to see it in that period,
+- [01:18:19,520 - 01:18:20,520] you have to hit it with a photon
+- [01:18:20,520 - 01:18:23,520] which is energetic enough to ionize it.
+- [01:18:23,520 - 01:18:24,520] In other words,
+- [01:18:24,520 - 01:18:28,520] you have to create exactly the conditions
+- [01:18:28,520 - 01:18:31,520] which the experiment was designed to show
+- [01:18:31,520 - 01:18:33,520] do not happen.
+- [01:18:33,520 - 01:18:36,520] The experiment will ionize the,
+- [01:18:36,520 - 01:18:38,520] the atom.
+- [01:18:38,520 - 01:18:40,520] And there is no way to check
+- [01:18:40,520 - 01:18:42,520] whether it was the experiment that ionized the atom.
+- [01:18:42,520 - 01:18:45,520] You try to do it again after the experiment
+- [01:18:45,520 - 01:18:47,520] and see if it's still ionized.
+- [01:18:47,520 - 01:18:48,520] Yes, it will be still ionized.
+- [01:18:48,520 - 01:18:50,520] Any experiment that you do
+- [01:18:50,520 - 01:18:52,520] which is designed to prove
+- [01:18:52,520 - 01:18:55,520] that the atom wasn't ionized
+- [01:18:55,520 - 01:18:57,520] will ionize the atom.
+- [01:18:57,520 - 01:19:00,520] And ionize the atom in an uncontrolled way.
+- [01:19:00,520 - 01:19:02,520] In a way that you can't go back
+- [01:19:02,520 - 01:19:05,520] and check that the atom was not ionized.
+- [01:19:05,520 - 01:19:07,520] So, yeah.
+- [01:19:07,520 - 01:19:09,520] Wouldn't that high energy ionize it
+- [01:19:09,520 - 01:19:12,520] even in the frame of the falling object?
+- [01:19:12,520 - 01:19:14,520] Wouldn't it get hot?
+- [01:19:14,520 - 01:19:15,520] Yes.
+- [01:19:15,520 - 01:19:17,520] In the frame of the falling object?
+- [01:19:17,520 - 01:19:18,520] Yes.
+- [01:19:18,520 - 01:19:19,520] It just stops.
+- [01:19:19,520 - 01:19:20,520] Yes.
+- [01:19:20,520 - 01:19:23,520] That atom gets whacked.
+- [01:19:23,520 - 01:19:25,520] That atom doesn't like what happened.
+- [01:19:25,520 - 01:19:27,520] And if somebody out here
+- [01:19:27,520 - 01:19:29,520] were to monitor you
+- [01:19:29,520 - 01:19:32,520] and see whether you can fall through the horizon or not,
+- [01:19:32,520 - 01:19:35,520] if they did an experiment to check
+- [01:19:35,520 - 01:19:37,520] they would evaporate you.
+- [01:19:37,520 - 01:19:39,520] But if I'm just falling through...
+- [01:19:39,520 - 01:19:40,520] But if you're falling through
+- [01:19:40,520 - 01:19:42,520] and nobody does the experiment,
+- [01:19:42,520 - 01:19:43,520] you're fine.
+- [01:19:43,520 - 01:19:44,520] If I'm falling through
+- [01:19:44,520 - 01:19:46,520] and somebody does do an experiment...
+- [01:19:46,520 - 01:19:48,520] Then you're in trouble.
+- [01:19:48,520 - 01:19:50,520] Then you're in trouble.
+- [01:19:50,520 - 01:19:51,520] Don't do that.
+- [01:19:51,520 - 01:19:54,520] But couldn't you measure far away from the black hole
+- [01:19:54,520 - 01:19:56,520] and look for gradients
+- [01:19:56,520 - 01:19:58,520] and from that extrapolate?
+- [01:19:58,520 - 01:20:01,520] No, you'd have exactly the same problem.
+- [01:20:01,520 - 01:20:04,520] If you try to check that the temperature
+- [01:20:04,520 - 01:20:09,520] is rising,
+- [01:20:09,520 - 01:20:10,520] what are you going to check?
+- [01:20:10,520 - 01:20:12,520] What are you going to check about it?
+- [01:20:12,520 - 01:20:15,520] Let's say you just drop a thermometer down.
+- [01:20:15,520 - 01:20:19,520] You drop a thermometer, let the thermometer freely fall,
+- [01:20:19,520 - 01:20:21,520] and you want to find out if the thermometer
+- [01:20:21,520 - 01:20:23,520] has gone up a little bit.
+- [01:20:23,520 - 01:20:25,520] How do you find out?
+- [01:20:25,520 - 01:20:27,520] You can't ask the thermometer.
+- [01:20:27,520 - 01:20:29,520] The thermometer's falling down.
+- [01:20:29,520 - 01:20:32,520] You've got to get some radiation back from the thermometer.
+- [01:20:32,520 - 01:20:34,520] So you'll have to hit it.
+- [01:20:34,520 - 01:20:37,520] Hit it with some radiation in order to...
+- [01:20:37,520 - 01:20:38,520] You have to look at it.
+- [01:20:38,520 - 01:20:39,520] You have to look at the thermometer.
+- [01:20:39,520 - 01:20:42,520] How does it record while it's going down?
+- [01:20:42,520 - 01:20:45,520] Well, something has to interact with the thermometer.
+- [01:20:45,520 - 01:20:47,520] And what you'll always find, inevitably...
+- [01:20:47,520 - 01:20:51,520] When you pull it back up after it has recorded its descent...
+- [01:20:51,520 - 01:20:54,520] Oh, then it will show that it was hot.
+- [01:20:54,520 - 01:20:56,520] Then it will show that it was hot.
+- [01:20:56,520 - 01:21:00,520] Just the acceleration of turning it around will make it hot.
+- [01:21:00,520 - 01:21:02,520] No, but it records the time,
+- [01:21:02,520 - 01:21:04,520] so during the freefall period,
+- [01:21:04,520 - 01:21:06,520] it will look at that period.
+- [01:21:06,520 - 01:21:08,520] As long as you can be getting information back,
+- [01:21:08,520 - 01:21:11,520] that information will be coming back in the form of quanta,
+- [01:21:11,520 - 01:21:15,520] and those quanta will either have been emitted by the object
+- [01:21:15,520 - 01:21:17,520] or have been interacted with the object.
+- [01:21:17,520 - 01:21:20,520] There's no way you can get information
+- [01:21:20,520 - 01:21:24,520] without getting quanta back from the object.
+- [01:21:24,520 - 01:21:27,520] Either the object radiated those quanta,
+- [01:21:27,520 - 01:21:29,520] and therefore recoiled,
+- [01:21:29,520 - 01:21:31,520] or you hit it with quanta,
+- [01:21:31,520 - 01:21:33,520] which is no way to do it without influencing the object.
+- [01:21:33,520 - 01:21:38,520] And the amount of influence is always, always exactly
+- [01:21:38,520 - 01:21:43,520] what the temperature at that point would have done.
+- [01:21:43,520 - 01:21:45,520] So it's a sort of catch-22.
+- [01:21:45,520 - 01:21:49,520] You cannot do the experiment without causing the thing you were trying to show...
+- [01:21:49,520 - 01:21:51,520] Yes, Kevin.
+- [01:21:51,520 - 01:21:55,520] So the high energy of the photon there is to resolve a small distance.
+- [01:21:55,520 - 01:21:57,520] Yeah.
+- [01:21:57,520 - 01:21:59,520] Or a small time.
+- [01:21:59,520 - 01:22:02,520] Does that end up being the same thing as saying that to get that...
+- [01:22:02,520 - 01:22:05,520] to get that reflected observation back out of the black hole
+- [01:22:05,520 - 01:22:08,520] takes a tremendous amount of energy because you're getting it...
+- [01:22:08,520 - 01:22:11,520] Strictly you're not trying to get it out of the black hole.
+- [01:22:11,520 - 01:22:13,520] It hasn't fallen into the black hole yet. Yes.
+- [01:22:13,520 - 01:22:16,520] Out of the region near the horizon takes a huge amount of energy to get...
+- [01:22:16,520 - 01:22:19,520] Does that really end up being the same thing?
+- [01:22:19,520 - 01:22:21,520] Yeah. Yeah.
+- [01:22:21,520 - 01:22:23,520] Yeah, it does. It does.
+- [01:22:23,520 - 01:22:25,520] At the end of the day, it does.
+- [01:22:25,520 - 01:22:27,520] Uh...
+- [01:22:27,520 - 01:22:29,520] Right.
+- [01:22:29,520 - 01:22:30,520] Yeah.
+- [01:22:30,520 - 01:22:31,520] Photon?
+- [01:22:31,520 - 01:22:37,520] That photon did not have to be a high energy photon by the time it got out.
+- [01:22:37,520 - 01:22:41,520] Because in traveling out, it will lose some energy.
+- [01:22:41,520 - 01:22:45,520] But it did have to be a high energy photon in the region in here.
+- [01:22:45,520 - 01:22:48,520] And this atom doesn't care what the photon energy was out here.
+- [01:22:48,520 - 01:22:51,520] It wants to know what the energy that was... what it was hit with.
+- [01:22:51,520 - 01:22:56,520] So the way to look at it is if it's going to admit the measurement or the information itself,
+- [01:22:56,520 - 01:22:59,520] it has to admit it at such a high energy...
+- [01:22:59,520 - 01:23:00,520] Absolutely.
+- [01:23:00,520 - 01:23:01,520] Right.
+- [01:23:01,520 - 01:23:02,520] Yeah.
+- [01:23:02,520 - 01:23:04,520] It doesn't have to be an external photon hitting it.
+- [01:23:04,520 - 01:23:08,520] It could be something that it naturally emitted.
+- [01:23:08,520 - 01:23:10,520] But that's right.
+- [01:23:10,520 - 01:23:17,520] It seems that the atom falling into the black hole has a preferred direction, namely the horizon.
+- [01:23:17,520 - 01:23:22,520] And typically, we don't call temperature directed kinetically, kinetic energy.
+- [01:23:22,520 - 01:23:25,520] You throw a baseball, you don't call it hot.
+- [01:23:25,520 - 01:23:28,520] You just say it has kinetic energy, right?
+- [01:23:28,520 - 01:23:33,520] Well, it's not the kinetic energy of the object which is falling in.
+- [01:23:33,520 - 01:23:35,520] The object is falling in.
+- [01:23:35,520 - 01:23:37,520] Its kinetic energy is in temperature.
+- [01:23:37,520 - 01:23:42,520] But it's interacting with an environment which is getting hotter and hotter.
+- [01:23:42,520 - 01:23:46,520] It's the environment that it's interacting with which is very hot.
+- [01:23:46,520 - 01:23:48,520] The radiation from the black hole.
+- [01:23:48,520 - 01:23:50,520] It's the radiation from the black hole.
+- [01:23:50,520 - 01:23:56,520] Could you share with a magnetic field if the ion is... the atom is ionized?
+- [01:23:56,520 - 01:23:57,520] What's that?
+- [01:23:57,520 - 01:23:58,520] The ionization.
+- [01:23:58,520 - 01:24:01,520] Can you check the magnetic field?
+- [01:24:04,520 - 01:24:05,520] If you...
+- [01:24:05,520 - 01:24:07,520] Look.
+- [01:24:07,520 - 01:24:09,520] You could do an experiment.
+- [01:24:09,520 - 01:24:15,520] You could imagine an experiment in a laboratory that's falling with the atom.
+- [01:24:15,520 - 01:24:18,520] It could be magnetic fields, whatever's in there.
+- [01:24:18,520 - 01:24:22,520] And that experiment, as you fall into the atom, could be doing the experiment.
+- [01:24:22,520 - 01:24:26,520] The problem is getting the information back out of the black hole.
+- [01:24:26,520 - 01:24:27,520] Right.
+- [01:24:27,520 - 01:24:28,520] Right.
+- [01:24:28,520 - 01:24:35,520] So, whatever happens in that laboratory, you have to interact with the laboratory with something external
+- [01:24:35,520 - 01:24:38,520] and then get the information back out.
+- [01:24:38,520 - 01:24:47,520] And it will always be the case that the energy of the photons that are necessary to get that energy,
+- [01:24:47,520 - 01:24:56,520] that information back out, are the same or at least as big as the energy of the environmental photons
+- [01:24:56,520 - 01:24:57,520] in the thermal bath.
+- [01:24:57,520 - 01:25:06,520] So, if I have a transmitter in the thermometer, by the time I get close to the event horizon,
+- [01:25:06,520 - 01:25:13,520] that temperature, the amount of energy I have to generate to send the signal out would evaporate
+- [01:25:13,520 - 01:25:14,520] at any rate.
+- [01:25:14,520 - 01:25:15,520] Exactly.
+- [01:25:15,520 - 01:25:17,520] Isn't that distance really very small?
+- [01:25:17,520 - 01:25:18,520] Very small.
+- [01:25:18,520 - 01:25:19,520] Very small.
+- [01:25:19,520 - 01:25:20,520] I have leisure to do this.
+- [01:25:20,520 - 01:25:21,520] No.
+- [01:25:21,520 - 01:25:22,520] That's the point.
+- [01:25:22,520 - 01:25:23,520] You don't.
+- [01:25:23,520 - 01:25:24,520] You're...
+- [01:25:24,520 - 01:25:28,520] The distance over which the temperature is high is very small.
+- [01:25:28,520 - 01:25:29,520] All right.
+- [01:25:29,520 - 01:25:35,520] So, you can either think that you have to have a photon of high spatial resolution or high time resolution.
+- [01:25:35,520 - 01:25:40,520] Either way, you'll either say the photon has a high momentum or it has a high energy.
+- [01:25:40,520 - 01:25:41,520] Yes.
+- [01:25:41,520 - 01:25:48,520] This is all equivalent to the usual Heisenberg Uncertain Principle for Time and Energy, right?
+- [01:25:48,520 - 01:25:49,520] Well, that's what we've used.
+- [01:25:49,520 - 01:25:50,520] Yes.
+- [01:25:50,520 - 01:25:51,520] Yes.
+- [01:25:51,520 - 01:25:52,520] Yes.
+- [01:25:52,520 - 01:25:53,520] Yes.
+- [01:25:53,520 - 01:25:54,520] Yes.
+- [01:25:54,520 - 01:26:00,180] So, this puzzle about what goes on at the surface of a black hole, whether it does or
+- [01:26:00,180 - 01:26:07,940] doesn't get hot, gets all mixed up with these questions of quantum uncertainties and so
+- [01:26:07,940 - 01:26:12,020] forth, and that's the result.
+- [01:26:12,020 - 01:26:16,900] There's no way to answer the question other than to do the experiment, and when you do
+- [01:26:16,900 - 01:26:21,520] the experiment, the experiment will do exactly what you were trying to show didn't happen.
+- [01:26:21,520 - 01:26:22,520] Yes.
+- [01:26:22,520 - 01:26:23,520] Yes.
+- [01:26:23,520 - 01:26:24,520] That's right.
+- [01:26:24,520 - 01:26:25,520] Yes.
+- [01:26:25,520 - 01:26:26,520] Okay.
+- [01:26:26,520 - 01:26:27,520] Do you have a high enough resolution to catch it in that window?
+- [01:26:27,520 - 01:26:28,520] Is it possible to use a lower resolution, lower energy, and do it a bunch of times and
+- [01:26:28,520 - 01:26:29,520] hopefully you'll just catch it right away?
+- [01:26:29,520 - 01:26:30,520] Well, you only get one shot at each particle falling through the horizon.
+- [01:26:30,520 - 01:26:31,520] Is the probability just too ridiculous to even?
+- [01:26:31,520 - 01:26:48,460] You say, supposing I did the same experiment over and over with many, many atoms and use
+- [01:26:48,460 - 01:26:49,460] a low resolution.
+- [01:26:49,460 - 01:26:50,460] I don't know.
+- [01:26:50,460 - 01:26:51,460] I never thought about that.
+- [01:26:51,460 - 01:26:52,460] I'm just saying.
+- [01:26:52,460 - 01:26:53,460] I don't know.
+- [01:26:53,460 - 01:26:54,460] I'm not sure I thought about that one.
+- [01:26:54,460 - 01:26:59,220] You try to use less energetic photons.
+- [01:26:59,220 - 01:27:01,740] Of course, each one, it's a good question.
+- [01:27:01,740 - 01:27:04,460] It's a sensible question, and it ought to be answered.
+- [01:27:04,460 - 01:27:11,460] You have to have enough energy to get something to come out.
+- [01:27:11,460 - 01:27:12,460] Right.
+- [01:27:12,460 - 01:27:14,460] Same problem you have with trying to . . .
+- [01:27:14,460 - 01:27:15,460] Right, but you don't have to do . . .
+- [01:27:15,460 - 01:27:16,460] You have to have enough energy to pick it out.
+- [01:27:16,460 - 01:27:17,460] There's not going to be any lupus.
+- [01:27:17,460 - 01:27:18,460] It's just a little bit of a problem.
+- [01:27:18,460 - 01:27:19,460] It's just a little bit of a problem.
+- [01:27:19,460 - 01:27:20,460] It's just a little bit of a problem.
+- [01:27:20,460 - 01:27:21,460] It's just a little bit of a problem.
+- [01:27:21,460 - 01:27:22,460] It's just a little bit of a problem.
+- [01:27:22,460 - 01:27:23,460] I don't know.
+- [01:27:23,460 - 01:27:24,460] So you're just saying . . .
+- [01:27:24,460 - 01:27:25,460] I don't know.
+- [01:27:25,460 - 01:27:26,460] I'm going to go to the uncertainty principle.
+- [01:27:26,460 - 01:27:27,460] Right.
+- [01:27:27,460 - 01:27:38,460] You can't beat the uncertainty principle by what you're trying to do.
+- [01:27:38,460 - 01:27:46,460] Are we saying we can predict that the person falling in won't feel the temperature?
+- [01:27:46,460 - 01:27:47,460] No.
+- [01:27:47,460 - 01:27:48,460] No.
+- [01:27:48,460 - 01:27:49,460] We can only say that . . .
+- [01:27:49,460 - 01:27:50,460] Okay.
+- [01:27:50,460 - 01:27:51,460] Okay.
+- [01:27:52,460 - 01:28:00,920] I think the experiment will in itself cause the conditions that I was trying to prove
+- [01:28:00,920 - 01:28:01,920] didn't happen.
+- [01:28:01,920 - 01:28:05,340] That's all we can do from this kind of analysis.
+- [01:28:05,340 - 01:28:15,760] In other words, if somebody comes and says, look, I'm convinced that somebody who falls
+- [01:28:15,760 - 01:28:20,460] through the horizon, nothing happens to them.
+- [01:28:20,460 - 01:28:24,960] then my answer will be, yes, can you do an experiment that shows that?
+- [01:28:24,960 - 01:28:29,220] And the answer will be no, you cannot do an experiment that shows that.
+- [01:28:29,220 - 01:28:36,140] That's all this is designed to show, that at a level of operational, experimental physics,
+- [01:28:36,140 - 01:28:45,780] it would be impossible to confirm that the atom did not experience a high temperature.
+- [01:28:45,780 - 01:28:54,220] And we'll come back, we'll look at a couple of more gedanken experiments and try to see what they say.
+- [01:28:54,220 - 01:29:02,220] Of course, there's no way to say what happens if no experiment is done.
+- [01:29:02,220 - 01:29:08,540] You know, it's very much like the two-slit experiment, where if you don't do an experiment,
+- [01:29:08,540 - 01:29:11,540] there's no meaning to the question of which slit you went through.
+- [01:29:11,540 - 01:29:15,740] So if you don't do an experiment, there's no answer to the question.
+- [01:29:15,740 - 01:29:15,760] So if you don't do an experiment, there's no meaning to the question of which slit you went through.
+- [01:29:15,760 - 01:29:17,400] Like shredding your cat.
+- [01:29:17,400 - 01:29:19,220] Yeah.
+- [01:29:19,220 - 01:29:26,320] Okay, let's call it a night, and I'll see you next week.
+- [01:29:26,320 - 01:29:30,260] For more, please visit us at stanford.edu.
