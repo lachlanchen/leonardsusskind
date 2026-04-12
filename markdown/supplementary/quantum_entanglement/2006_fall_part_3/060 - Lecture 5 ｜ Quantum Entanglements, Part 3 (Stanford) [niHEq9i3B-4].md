@@ -1,0 +1,2693 @@
+# Transcript
+
+Source: supplementary/quantum_entanglement/2006_fall_part_3/060 - Lecture 5 ｜ Quantum Entanglements, Part 3 (Stanford) [niHEq9i3B-4].mp4
+
+- [00:00:00,000 - 00:00:10,040] This program is brought to you by Stanford University.
+- [00:00:10,040 - 00:00:12,960] Please visit us at stanford.edu.
+- [00:00:12,960 - 00:00:18,658] What about the complexity of the black hole?
+- [00:00:18,658 - 00:00:19,558] ありがとうございました
+- [00:00:19,586 - 00:00:23,766] completely this collision.
+- [00:00:23,766 - 00:00:25,766] What about the complexity of it?
+- [00:00:25,766 - 00:00:28,396] In other words, it's not a stable black
+- [00:00:28,396 - 00:00:31,026] hole, it must be something that's changing shape
+- [00:00:31,026 - 00:00:33,026] and things like that.
+- [00:00:33,026 - 00:00:39,086] Yeah, yeah, that's right.
+- [00:00:39,086 - 00:00:41,266] Here's the picture.
+- [00:00:41,266 - 00:00:44,106] You have a fifth dimension, and think of
+- [00:00:44,106 - 00:00:46,946] the fifth dimension as existing between a floor
+- [00:00:46,946 - 00:00:50,845] and a ceiling.
+- [00:00:50,845 - 00:00:55,286] Ceiling, floor.
+- [00:00:55,286 - 00:01:00,796] There's a gravitational field that
+- [00:01:00,796 - 00:01:06,306] pulls everything down to the floor.
+- [00:01:06,306 - 00:01:09,376] There are particles or strings or whatever they
+- [00:01:09,376 - 00:01:12,446] are, which can live in this five dimensional
+- [00:01:12,446 - 00:01:13,446] world.
+- [00:01:13,446 - 00:01:16,546] Let's think of them as little strings.
+- [00:01:16,546 - 00:01:20,786] And they tend to fall, fall to the bottom here.
+- [00:01:20,786 - 00:01:22,786] When they fall to the bottom, they're hadrons.
+- [00:01:22,786 - 00:01:26,186] They're protons, neutrons, mesons, and so forth.
+- [00:01:26,186 - 00:01:28,496] If they get stuck up at the top, and
+- [00:01:28,496 - 00:01:30,806] they can stick to the ceiling, they can stick to
+- [00:01:30,806 - 00:01:31,806] the ceiling.
+- [00:01:31,806 - 00:01:36,856] If they're stuck up at the top, they
+- [00:01:36,856 - 00:01:41,906] are gravitons, photons, more elementary particles, not hadrons.
+- [00:01:41,906 - 00:01:44,506] Hadrons are big, fat, composite objects.
+- [00:01:44,506 - 00:01:45,506] Okay.
+- [00:01:45,506 - 00:01:46,486] Okay.
+- [00:01:46,486 - 00:01:47,486] Okay.
+- [00:01:47,486 - 00:01:48,486] Okay.
+- [00:01:48,486 - 00:01:52,836] When you collide two hadrons, that's like
+- [00:01:52,836 - 00:01:57,186] colliding two particles that are on the floor.
+- [00:01:57,186 - 00:02:00,006] They collide.
+- [00:02:00,006 - 00:02:02,206] They make a big splash of energy.
+- [00:02:02,206 - 00:02:06,066] And the big splash of energy is
+- [00:02:06,066 - 00:02:09,925] apparently nicely described, well described, by saying
+- [00:02:09,925 - 00:02:11,566] that a black hole forms.
+- [00:02:11,566 - 00:02:15,026] A black hole is just a big puddle of energy.
+- [00:02:15,026 - 00:02:16,486] A big puddle of energy.
+- [00:02:16,486 - 00:02:17,486] Let's call it an edge.
+- [00:02:17,486 - 00:02:18,486] All right.
+- [00:02:18,486 - 00:02:19,246] What is a puddle of energy?
+- [00:02:19,246 - 00:02:19,746] Well, the edge is the, the amount of
+- [00:02:19,746 - 00:02:20,246] energy that is falling on a black hole.
+- [00:02:20,246 - 00:02:21,266] These black holes are called attractive holes.
+- [00:02:21,266 - 00:02:22,266] They've got, they're called, I'll tell you, a lump.
+- [00:02:22,266 - 00:02:23,266] A lump with an edge.
+- [00:02:23,266 - 00:02:24,266] The edge is the horizon.
+- [00:02:24,266 - 00:02:27,606] And, like all black holes, they have temperature.
+- [00:02:27,606 - 00:02:28,606] They have entropy.
+- [00:02:28,606 - 00:02:32,186] They have all the thermodynamic properties of black holes.
+- [00:02:32,186 - 00:02:34,276] And this object is a kind of
+- [00:02:34,276 - 00:02:36,366] black hole that's sitting down on the floor.
+- [00:02:36,366 - 00:02:39,896] It's not the kind of black holes, four dimensional
+- [00:02:39,896 - 00:02:43,426] black holes, black holes that we think of as
+- [00:02:43,426 - 00:02:44,486] astronomical black holes.
+- [00:02:44,486 - 00:02:44,986] It's not the kind of black holes
+- [00:02:44,986 - 00:02:45,486] that we think of as astronomical black holes.
+- [00:02:45,486 - 00:02:48,486] or the kind of black holes that we would make
+- [00:02:48,486 - 00:02:51,486] by scattering particles at enormous energies above the Planck scale
+- [00:02:51,846 - 00:02:54,986] Those kind of black holes also have horizons
+- [00:02:54,986 - 00:02:58,186] They're very similar, except they are
+- [00:02:59,546 - 00:03:01,666] droplets hanging from the ceiling.
+- [00:03:01,666 - 00:03:03,786] Actually, they hang this way
+- [00:03:05,066 - 00:03:08,206] Hanging from the ceiling, attached to the ceiling
+- [00:03:08,206 - 00:03:10,186] and they are stuck to the
+- [00:03:10,186 - 00:03:12,166] ceiling. The ceiling is a sticky ceiling
+- [00:03:12,166 - 00:03:15,766] But otherwise, they're the same kind of thing
+- [00:03:15,766 - 00:03:18,566] They're the same kind of thing in five dimensions
+- [00:03:18,566 - 00:03:21,366] that correspond to black holes, that correspond to horizons
+- [00:03:21,366 - 00:03:25,186] and they correspond to all the things that
+- [00:03:25,186 - 00:03:29,006] Stephen Hawking and others have studied over the years
+- [00:03:29,006 - 00:03:33,486] Now, if an enormously high energy collision happens
+- [00:03:33,486 - 00:03:35,886] an enormous lump of energy, remember what
+- [00:03:35,886 - 00:03:38,286] happens to particles which are very high energy
+- [00:03:38,286 - 00:03:42,166] They get collapsed like thin pancakes by Lorentz contraction
+- [00:03:42,166 - 00:03:45,766] So what happens is two pancakes
+- [00:03:45,766 - 00:03:49,166] moving in this direction, in this direction
+- [00:03:49,166 - 00:03:51,166] They're thin, they're like pancakes
+- [00:03:51,166 - 00:03:55,486] So they, I don't know how to draw it exactly
+- [00:03:55,486 - 00:03:59,986] Whatever they are, they're thin in this direction
+- [00:03:59,986 - 00:04:01,986] and they come in and they collide
+- [00:04:01,986 - 00:04:05,486] They collide with an enormous amount of energy and
+- [00:04:05,486 - 00:04:08,986] they make a great big puddle of energy like that
+- [00:04:08,986 - 00:04:12,146] But that puddle of energy is more or less
+- [00:04:12,166 - 00:04:15,666] like a lump of viscous
+- [00:04:15,666 - 00:04:19,166] fluid, not so viscous, rather unviscous
+- [00:04:19,166 - 00:04:21,166] A lump of fluid that's
+- [00:04:21,166 - 00:04:23,166] been deposited in this gravitational field
+- [00:04:23,166 - 00:04:25,166] and the gravitational field pulls
+- [00:04:25,166 - 00:04:27,166] it down and spreads it out
+- [00:04:27,166 - 00:04:31,166] and spreads it out until it comes to
+- [00:04:31,166 - 00:04:35,166] some equilibrium like a puddle on the ground
+- [00:04:39,166 - 00:04:41,166] and it would stay that way except for one thing
+- [00:04:41,166 - 00:04:41,666] and the one thing that would
+- [00:04:41,666 - 00:04:42,166] stay that way except for one thing
+- [00:04:42,166 - 00:04:44,166] is Hawking radiation
+- [00:04:44,166 - 00:04:46,666] Hawking radiation starts causing radiation
+- [00:04:46,666 - 00:04:49,166] to come out of this thing
+- [00:04:49,166 - 00:04:51,166] And what is that radiation?
+- [00:04:51,166 - 00:04:54,166] That radiation is the ordinary particles that we see
+- [00:04:54,166 - 00:04:58,166] the protons, neutrons, mesons and so forth
+- [00:04:58,166 - 00:05:01,166] that we see coming out of this thing
+- [00:05:01,166 - 00:05:03,666] Remember when he showed us some
+- [00:05:03,666 - 00:05:06,166] of the pictures of the events
+- [00:05:06,166 - 00:05:08,166] There was this 7,000 particles coming
+- [00:05:08,166 - 00:05:10,166] out of a little dot here
+- [00:05:10,166 - 00:05:11,166] Those 7,000 particles
+- [00:05:11,166 - 00:05:13,166] are
+- [00:05:13,166 - 00:05:18,166] In this picture, they're essentially the Hawking radiation
+- [00:05:18,166 - 00:05:20,166] that's boiled off the outer
+- [00:05:20,166 - 00:05:22,166] parts of this black hole here
+- [00:05:22,166 - 00:05:25,666] As I said, whether you should really
+- [00:05:25,666 - 00:05:29,166] think of it as a fifth dimension
+- [00:05:29,166 - 00:05:32,666] and real honest to goodness black hole sitting
+- [00:05:32,666 - 00:05:36,166] on the floor of the fifth dimension here
+- [00:05:36,166 - 00:05:37,666] or whether you should just think
+- [00:05:37,666 - 00:05:39,166] of it as a mathematical analogy
+- [00:05:39,166 - 00:05:42,166] at this point, I would say is up to you
+- [00:05:42,166 - 00:05:45,666] I think in time, we will
+- [00:05:45,666 - 00:05:49,166] understand better the connection between these ideas
+- [00:05:49,166 - 00:05:52,166] and real gravity
+- [00:05:52,166 - 00:05:53,666] My own guess is they will
+- [00:05:53,666 - 00:05:55,166] be connected in a deep way
+- [00:05:55,166 - 00:06:02,166] and that we will learn to understand this picture
+- [00:06:02,166 - 00:06:05,166] as part of a bigger thing
+- [00:06:05,166 - 00:06:07,166] part of, will it be string theory?
+- [00:06:07,166 - 00:06:08,166] Will it be quantum gravity?
+- [00:06:08,166 - 00:06:12,166] Will it be something that we haven't seen yet?
+- [00:06:12,166 - 00:06:15,166] But yeah, I think the fifth dimension is quite real
+- [00:06:15,166 - 00:06:19,166] What does it mean to be real?
+- [00:06:19,166 - 00:06:21,166] It means it fits together with
+- [00:06:21,166 - 00:06:23,166] the other dimensions in a mathematical structure
+- [00:06:23,166 - 00:06:32,166] that makes the laws of physics look simple
+- [00:06:32,166 - 00:06:36,166] dividing this into real space and real energy
+- [00:06:36,166 - 00:06:38,166] and then dividing this into
+- [00:06:38,166 - 00:06:40,166] real space and a fictitious space
+- [00:06:40,166 - 00:06:43,166] and treating the fictitious space completely different
+- [00:06:43,166 - 00:06:46,166] seems to make the equations more complicated
+- [00:06:46,166 - 00:06:48,666] than if you think of, if you really
+- [00:06:48,666 - 00:06:51,166] literally think of this as a fifth dimension
+- [00:06:51,166 - 00:06:54,166] But this five dimensional structure here
+- [00:06:54,166 - 00:06:57,166] really is nothing but quantum chromodynamics
+- [00:06:57,166 - 00:07:00,166] QCD, the theory of quarks and gluons
+- [00:07:00,166 - 00:07:02,166] So, as I say, at the
+- [00:07:02,166 - 00:07:04,166] moment it's kind of up to you
+- [00:07:04,166 - 00:07:05,666] whether you want to think
+- [00:07:05,666 - 00:07:07,166] of it as having any reality
+- [00:07:07,166 - 00:07:08,666] or whether you just want to
+- [00:07:08,666 - 00:07:10,166] think of it as a mathematical analogy
+- [00:07:10,166 - 00:07:13,166] that allows you to do difficult problems easily
+- [00:07:13,166 - 00:07:15,166] So that fifth dimension is a spatial dimension?
+- [00:07:15,166 - 00:07:16,166] Yeah
+- [00:07:16,166 - 00:07:17,166] Space like?
+- [00:07:17,166 - 00:07:18,166] Yeah
+- [00:07:18,166 - 00:07:19,666] That line that you've got drawn there, so
+- [00:07:19,666 - 00:07:21,166] that's actually extending out into the space dimension?
+- [00:07:21,166 - 00:07:22,166] Say it again, which line?
+- [00:07:22,166 - 00:07:23,166] I've got many lines
+- [00:07:23,166 - 00:07:24,166] This one?
+- [00:07:24,166 - 00:07:25,166] Yeah
+- [00:07:25,166 - 00:07:26,166] That's in a spatial dimension,
+- [00:07:26,166 - 00:07:27,166] yeah, these are space dimensions
+- [00:07:27,166 - 00:07:28,166] Everything's space here
+- [00:07:28,166 - 00:07:31,166] That would correspond to a horizon located in that space
+- [00:07:31,166 - 00:07:33,166] Well, this would correspond to a horizon
+- [00:07:33,166 - 00:07:34,166] Yeah
+- [00:07:34,166 - 00:07:38,166] What you're saying right now though is experimentally
+- [00:07:38,166 - 00:07:40,166] there's really not, what they deserve is not
+- [00:07:40,166 - 00:07:42,166] It also explains, this is sort of
+- [00:07:42,166 - 00:07:44,166] the idea that you've got a big fireball
+- [00:07:44,166 - 00:07:50,166] of random particles being created by energy, thermal energy
+- [00:07:50,166 - 00:07:51,166] Yeah
+- [00:07:51,166 - 00:07:54,166] Well, yes, the details of it, you
+- [00:07:54,166 - 00:07:57,166] know, the devil is in the details
+- [00:07:57,166 - 00:08:00,166] This prediction about the viscosity
+- [00:08:00,166 - 00:08:03,166] was a stunner, nobody expected that
+- [00:08:03,166 - 00:08:06,666] So that was purely, the only explanation of
+- [00:08:06,666 - 00:08:10,166] that, or the only quantitative explanation of it
+- [00:08:10,166 - 00:08:13,166] comes from the parallel with black holes
+- [00:08:13,166 - 00:08:18,166] That was a stunner, that was not expected
+- [00:08:18,166 - 00:08:20,166] There are other interesting things,
+- [00:08:20,166 - 00:08:22,166] other interesting kind of experiments
+- [00:08:22,166 - 00:08:25,666] The way particles move through this plasma,
+- [00:08:25,666 - 00:08:29,166] the details of it may be better described
+- [00:08:29,166 - 00:08:30,666] by thinking of it as a black
+- [00:08:30,666 - 00:08:32,166] hole than thinking of it as a...
+- [00:08:32,166 - 00:08:38,166] Well, thinking of it in terms of quantum chromodynamics
+- [00:08:38,166 - 00:08:41,166] and doing quantum chromodynamics correctly
+- [00:08:41,166 - 00:08:43,166] and calculating it honestly if
+- [00:08:43,166 - 00:08:45,166] we knew how to do that
+- [00:08:45,166 - 00:08:48,166] should give us the same answers
+- [00:08:48,166 - 00:08:51,166] It's not that this theory is replacing an older theory
+- [00:08:51,166 - 00:08:55,165] It's believed to be a mathematically equivalent description
+- [00:08:55,165 - 00:08:58,165] but one that's useful in contexts
+- [00:08:58,165 - 00:09:01,165] where we simply can't calculate quantum chromodynamics
+- [00:09:01,165 - 00:09:02,165] In fact, we can't
+- [00:09:02,166 - 00:09:04,166] We've never been able to
+- [00:09:04,166 - 00:09:06,166] calculate quantum chromodynamics very effectively
+- [00:09:06,166 - 00:09:09,166] except in some very, very special situations
+- [00:09:09,166 - 00:09:10,666] But the PCD doesn't have gravity or
+- [00:09:10,666 - 00:09:12,166] nor does it have horizons in it
+- [00:09:12,166 - 00:09:14,166] No, that's right
+- [00:09:14,166 - 00:09:17,166] So there's some new thing there
+- [00:09:17,166 - 00:09:19,666] Well, in its five-dimensional incarnation it does
+- [00:09:19,666 - 00:09:22,166] have gravity and it does have horizons
+- [00:09:22,166 - 00:09:24,666] In its four-dimensional version, this is just
+- [00:09:24,666 - 00:09:27,166] a hot fireball of quarks and gluons
+- [00:09:27,166 - 00:09:29,166] without gravity
+- [00:09:29,166 - 00:09:31,166] That's what I'm asking, but there is...
+- [00:09:32,166 - 00:09:34,166] There's the viscosity, there's something that hardly...
+- [00:09:34,166 - 00:09:35,166] Right
+- [00:09:35,166 - 00:09:38,666] The viscosity can always be described in
+- [00:09:38,666 - 00:09:42,166] principle by understanding hot quarks and gluons
+- [00:09:44,166 - 00:09:46,666] But when I say in principle,
+- [00:09:46,666 - 00:09:49,166] nobody has learned how to do that
+- [00:09:49,166 - 00:09:51,166] Quantum field theory is a difficult subject
+- [00:09:51,166 - 00:09:54,166] Nobody knows how to calculate those sorts of things
+- [00:09:54,166 - 00:09:56,166] The equivalence with gravity...
+- [00:09:56,166 - 00:09:59,166] Gravity, of course, is also hard
+- [00:09:59,166 - 00:10:01,166] But some things are easy
+- [00:10:01,166 - 00:10:03,666] And as it happens, calculating the
+- [00:10:03,666 - 00:10:06,166] viscosity of a horizon is easy
+- [00:10:13,166 - 00:10:16,166] Are we going to be able to figure out why they
+- [00:10:16,166 - 00:10:19,166] collide the beams instead of running the beam into a still?
+- [00:10:19,166 - 00:10:20,166] What? Say it again?
+- [00:10:20,166 - 00:10:22,666] Are we going to be able to understand why they collide
+- [00:10:22,666 - 00:10:25,166] the beams instead of running the beams into a still target?
+- [00:10:25,166 - 00:10:27,166] Oh, yeah, no, that's easy
+- [00:10:27,166 - 00:10:29,166] That's easy
+- [00:10:29,166 - 00:10:30,166] Is that Knight's lecture?
+- [00:10:30,166 - 00:10:31,166] What's that?
+- [00:10:31,166 - 00:10:33,166] Is that in Knight's lecture?
+- [00:10:33,166 - 00:10:39,166] Well, I didn't include it in Knight's lecture
+- [00:10:39,166 - 00:10:41,166] It very well could have been
+- [00:10:41,166 - 00:10:43,166] But let me tell you the answer
+- [00:10:43,166 - 00:10:45,166] If...
+- [00:10:45,166 - 00:10:47,166] Alright
+- [00:10:47,166 - 00:10:50,166] There's something called center of mass energy
+- [00:10:50,166 - 00:10:53,166] which is the energy of the system when
+- [00:10:53,166 - 00:10:56,166] it's viewed from the center of mass frame
+- [00:10:56,166 - 00:10:58,166] In other words, when the two particles are colliding
+- [00:10:58,166 - 00:11:01,166] with equal and opposite momentum
+- [00:11:01,166 - 00:11:05,166] the center of mass energy is called E
+- [00:11:05,166 - 00:11:09,166] naturally
+- [00:11:09,166 - 00:11:10,166] Okay
+- [00:11:10,166 - 00:11:13,166] And...
+- [00:11:13,166 - 00:11:18,166] That's equal, roughly speaking
+- [00:11:18,166 - 00:11:21,166] in units in which C is equal to 1
+- [00:11:21,166 - 00:11:24,166] It's just equal... these are very relativistic particles
+- [00:11:24,166 - 00:11:25,666] Relativistic particles have an energy
+- [00:11:25,666 - 00:11:27,166] which is equal to their momentum
+- [00:11:27,166 - 00:11:30,166] And so it's just equal to twice the momentum
+- [00:11:30,166 - 00:11:35,166] Twice the momentum of these particles
+- [00:11:35,166 - 00:11:38,166] In fact...
+- [00:11:38,166 - 00:11:40,166] And that can be very large
+- [00:11:40,166 - 00:11:45,166] On the other hand, if you slam...
+- [00:11:45,166 - 00:11:47,166] the fast particle
+- [00:11:47,166 - 00:11:50,166] into a standing still particle
+- [00:11:50,166 - 00:11:51,666] And you ask, what's the
+- [00:11:51,666 - 00:11:53,166] center of mass energy of that?
+- [00:11:53,166 - 00:11:54,666] In other words, what would be the energy if
+- [00:11:54,666 - 00:11:56,166] you went to the center of mass of this?
+- [00:11:56,166 - 00:12:00,166] The energy would be much smaller
+- [00:12:00,166 - 00:12:02,166] Much, much smaller
+- [00:12:02,166 - 00:12:04,166] It wouldn't be twice the momentum
+- [00:12:04,166 - 00:12:07,166] It would be something like the square root
+- [00:12:07,166 - 00:12:09,166] of the mass of this particle
+- [00:12:09,166 - 00:12:12,166] times the momentum of the fast particle here
+- [00:12:12,166 - 00:12:15,166] That's much, much smaller
+- [00:12:15,166 - 00:12:19,166] The...
+- [00:12:19,166 - 00:12:21,166] This is much smaller than
+- [00:12:21,166 - 00:12:23,166] this if the momentum is large
+- [00:12:23,166 - 00:12:25,166] So the point is that
+- [00:12:25,166 - 00:12:30,166] you lose an enormous amount of effective energy
+- [00:12:30,166 - 00:12:32,166] by letting this particle stand still
+- [00:12:32,166 - 00:12:33,666] If you can accelerate it to the
+- [00:12:33,666 - 00:12:35,166] same speed that the other one is moving
+- [00:12:35,166 - 00:12:38,166] that doesn't give you twice the energy in effect
+- [00:12:38,166 - 00:12:41,166] It gives you the square of the energy, basically
+- [00:12:41,166 - 00:12:43,666] So it's a much more energetic
+- [00:12:43,666 - 00:12:46,166] collision to have them collide head on
+- [00:12:46,166 - 00:12:51,166] We could... we will be able to do that
+- [00:12:51,166 - 00:12:53,166] We'll be in a position to do this in detail
+- [00:12:53,166 - 00:12:55,166] But not now
+- [00:12:55,166 - 00:12:58,166] But that's the reason, energy
+- [00:12:58,166 - 00:13:00,666] Is there a reason why a
+- [00:13:00,666 - 00:13:03,166] cyclotron has to be so large?
+- [00:13:03,166 - 00:13:08,166] Is that a fundamental reason or is it just...
+- [00:13:08,166 - 00:13:11,166] It can't make a mass answer?
+- [00:13:11,166 - 00:13:13,666] Well, you know, electric and magnetic
+- [00:13:13,666 - 00:13:16,166] fields can only be so big
+- [00:13:16,166 - 00:13:21,166] before they can't be supported by steel and concrete
+- [00:13:21,166 - 00:13:24,166] and the other things that hold the accelerator together
+- [00:13:25,166 - 00:13:31,166] You can only create magnetic fields which are
+- [00:13:31,166 - 00:13:34,166] you know, 10 tesla or something like that
+- [00:13:34,166 - 00:13:36,666] and it's the magnetic fields
+- [00:13:36,666 - 00:13:39,166] that are accelerating the particles
+- [00:13:39,166 - 00:13:41,166] and so you can't accelerate a particle
+- [00:13:41,166 - 00:13:43,166] simply, it's not a matter of in principle
+- [00:13:43,166 - 00:13:46,166] it's a matter of strength of materials
+- [00:13:46,166 - 00:13:48,166] all sorts of engineering things
+- [00:13:48,166 - 00:13:52,166] and ability to create huge magnetic fields
+- [00:13:52,166 - 00:13:54,166] that limit the ability to accelerate particles
+- [00:13:54,166 - 00:13:56,166] over short distances of space
+- [00:13:56,166 - 00:13:58,166] You simply can't create big enough fields
+- [00:13:58,166 - 00:14:01,166] to accelerate a particle to a relativistic energy
+- [00:14:01,166 - 00:14:04,166] a proton to a highly relativistic energy
+- [00:14:04,166 - 00:14:06,166] over a meter
+- [00:14:06,166 - 00:14:08,166] The more you want to accelerate it
+- [00:14:08,166 - 00:14:09,166] the more room you need
+- [00:14:09,166 - 00:14:11,166] because all the acceleration is
+- [00:14:11,166 - 00:14:12,166] is as it moves along
+- [00:14:12,166 - 00:14:13,166] you give it a push, you give it a push
+- [00:14:13,166 - 00:14:15,166] you give it a push, you give it a push
+- [00:14:15,166 - 00:14:18,166] and so you gotta give it a lot of pushes
+- [00:14:18,166 - 00:14:20,166] and that's all it is
+- [00:14:20,166 - 00:14:22,166] I mean, basically the energy of the accelerator
+- [00:14:22,166 - 00:14:24,166] is proportional to its length
+- [00:14:24,166 - 00:14:26,166] because it just accelerates
+- [00:14:26,166 - 00:14:30,166] with a more or less uniform energy per meter
+- [00:14:30,166 - 00:14:31,666] So they can't make it
+- [00:14:31,666 - 00:14:33,166] where it circulates a few times
+- [00:14:33,166 - 00:14:38,166] but the cyclotron is smaller?
+- [00:14:38,166 - 00:14:40,166] Oh, well then I think
+- [00:14:40,166 - 00:14:42,166] you would simply run into the
+- [00:14:42,166 - 00:14:43,166] I mean, it's not a cyclotron
+- [00:14:43,166 - 00:14:45,166] I think you simply can't create
+- [00:14:45,166 - 00:14:47,166] big enough magnetic fields
+- [00:14:47,166 - 00:14:48,166] lasting long enough
+- [00:14:48,166 - 00:14:51,166] No, there's another very important point
+- [00:14:51,166 - 00:14:53,166] The other very important point
+- [00:14:53,166 - 00:14:55,166] has to do with energy loss
+- [00:14:55,166 - 00:14:58,166] When you accelerate a particle
+- [00:14:58,166 - 00:14:59,166] a charged particle
+- [00:14:59,166 - 00:15:02,166] First of all, you can only accelerate charged particles
+- [00:15:02,166 - 00:15:04,166] You can't accelerate neutral particles
+- [00:15:04,166 - 00:15:08,166] Now charged particles, when they move in circles, accelerate
+- [00:15:08,166 - 00:15:12,166] and the smaller the circle
+- [00:15:12,166 - 00:15:14,166] for a given velocity
+- [00:15:14,166 - 00:15:16,166] the bigger the acceleration
+- [00:15:16,166 - 00:15:18,166] So a particle moving in a tight little circle
+- [00:15:18,166 - 00:15:20,166] is highly accelerated
+- [00:15:20,166 - 00:15:22,166] Acceleration means radiation
+- [00:15:22,166 - 00:15:25,166] and radiation means energy loss
+- [00:15:25,166 - 00:15:29,166] So there's a very, very important technological point here
+- [00:15:29,166 - 00:15:32,166] that if the circle is too small
+- [00:15:32,166 - 00:15:35,166] it will simply lose energy
+- [00:15:35,166 - 00:15:37,166] at a rate which is as big as
+- [00:15:37,166 - 00:15:39,166] you're dumping the energy in
+- [00:15:39,166 - 00:15:42,166] You're limited in the size of the accelerator
+- [00:15:42,166 - 00:15:44,166] by not wanting it to
+- [00:15:44,166 - 00:15:46,166] lose energy by radiation too fast
+- [00:15:46,166 - 00:15:48,166] A straight accelerator doesn't
+- [00:15:48,166 - 00:15:51,166] A particle moving in a straight line
+- [00:15:51,166 - 00:15:53,166] with uniform velocity
+- [00:15:53,166 - 00:15:56,166] doesn't accelerate and doesn't radiate
+- [00:15:56,166 - 00:15:57,166] So if you give it a
+- [00:15:57,166 - 00:15:58,166] push, a push, a push, a push
+- [00:15:58,166 - 00:16:01,166] Well, there's a little bit of acceleration, alright
+- [00:16:01,166 - 00:16:03,166] which causes it to radiate
+- [00:16:03,166 - 00:16:06,166] but making it turn around in a circle
+- [00:16:06,166 - 00:16:08,166] really causes big problems
+- [00:16:08,166 - 00:16:11,166] Those problems can sometimes be advantages
+- [00:16:11,166 - 00:16:13,166] For example, up at SLAC
+- [00:16:13,166 - 00:16:15,166] they run electrons in circles
+- [00:16:15,166 - 00:16:17,166] and they take off the synchrotron radiation
+- [00:16:17,166 - 00:16:18,166] the radiation that comes off
+- [00:16:18,166 - 00:16:20,166] and they use it for other purposes
+- [00:16:20,166 - 00:16:21,666] But if your point is
+- [00:16:21,666 - 00:16:23,166] to get a lot of energy
+- [00:16:23,166 - 00:16:25,166] into your charged particles
+- [00:16:25,166 - 00:16:26,666] you want to accelerate them in
+- [00:16:26,666 - 00:16:28,166] as straight a line as possible
+- [00:16:28,166 - 00:16:32,166] because in that way you eliminate
+- [00:16:32,166 - 00:16:35,166] the tendency of the particles to radiate away their energy
+- [00:16:35,166 - 00:16:38,166] It seems to me that the
+- [00:16:38,166 - 00:16:41,166] straight line in SLAC is electrons
+- [00:16:41,166 - 00:16:43,166] and the circular ones are patrons
+- [00:16:43,166 - 00:16:44,166] Yeah
+- [00:16:44,166 - 00:16:45,166] Is there a reason?
+- [00:16:45,166 - 00:16:47,166] Yeah, yeah, yeah
+- [00:16:47,166 - 00:16:49,166] Um
+- [00:16:49,166 - 00:16:54,166] Electrons are much lighter than protons
+- [00:16:54,166 - 00:16:56,166] So to get a given amount of
+- [00:16:56,166 - 00:16:58,166] It's energy that's important
+- [00:16:58,166 - 00:17:00,166] You want to dump energy into a small volume
+- [00:17:00,166 - 00:17:02,166] and see what comes out
+- [00:17:02,166 - 00:17:03,166] Okay
+- [00:17:03,166 - 00:17:08,165] Now, electrons are very much lighter than protons
+- [00:17:08,165 - 00:17:09,665] So in principle you've got to
+- [00:17:09,665 - 00:17:11,165] get them up to a larger velocity
+- [00:17:11,165 - 00:17:13,165] for the same energy
+- [00:17:13,165 - 00:17:17,165] You've got to get them up to a larger velocity
+- [00:17:17,165 - 00:17:19,165] and in getting them up to a larger velocity
+- [00:17:19,165 - 00:17:22,165] that also means for a given circle
+- [00:17:22,165 - 00:17:24,165] a larger acceleration
+- [00:17:24,165 - 00:17:27,165] So if you were to accelerate electrons
+- [00:17:27,165 - 00:17:29,165] in the Hadron Collider
+- [00:17:29,165 - 00:17:30,165] they would be subject
+- [00:17:30,165 - 00:17:32,165] and try to get them up to the same energy
+- [00:17:32,165 - 00:17:34,165] they would have a much larger acceleration
+- [00:17:34,165 - 00:17:36,165] and a much larger energy loss
+- [00:17:36,165 - 00:17:38,165] So again, it's energy loss
+- [00:17:38,165 - 00:17:39,665] The light particle needs to go
+- [00:17:39,665 - 00:17:41,165] faster to have the same energy
+- [00:17:41,165 - 00:17:44,165] Faster means more acceleration when it goes in a circle
+- [00:17:44,165 - 00:17:46,165] Acceleration means
+- [00:17:46,165 - 00:17:47,165] What about the other way?
+- [00:17:47,165 - 00:17:52,166] Why not hadrons in the linear accelerator?
+- [00:17:52,166 - 00:17:54,166] Well, one
+- [00:17:54,166 - 00:17:59,166] You could do hadrons in the linear accelerator
+- [00:18:04,166 - 00:18:07,166] Why not hadrons in the linear accelerator?
+- [00:18:07,166 - 00:18:11,166] You get to accelerate it many, many times
+- [00:18:11,166 - 00:18:13,166] as it goes around in the circle
+- [00:18:13,166 - 00:18:16,166] Going around in the circle and accelerating it
+- [00:18:16,166 - 00:18:19,166] is equivalent to having an enormously big accelerator
+- [00:18:19,166 - 00:18:20,666] You get to push it and push it
+- [00:18:20,666 - 00:18:22,166] and push it and push it and push it
+- [00:18:22,166 - 00:18:24,166] So yeah, you could do it in the linear accelerator
+- [00:18:24,166 - 00:18:25,666] but you'd have to make the
+- [00:18:25,666 - 00:18:27,166] linear accelerator very, very much bigger
+- [00:18:33,166 - 00:18:35,166] You want a good long length to do it in
+- [00:18:35,166 - 00:18:37,166] but you don't want too much radiation
+- [00:18:37,166 - 00:18:39,166] For hadrons
+- [00:18:39,166 - 00:18:42,166] the compromise is to have a big circle
+- [00:18:42,166 - 00:18:45,166] and to keep accelerating along its route
+- [00:18:45,166 - 00:18:49,166] until it's limited by the radiation
+- [00:18:49,166 - 00:18:51,166] But it will be limited by the radiation
+- [00:18:51,166 - 00:18:53,666] at the same velocity that the
+- [00:18:53,666 - 00:18:56,166] electrons would be limited by their
+- [00:18:56,166 - 00:18:58,666] Same velocity, but that means
+- [00:18:58,666 - 00:19:01,166] much more energy for the protons
+- [00:19:04,166 - 00:19:05,166] Okay
+- [00:19:07,166 - 00:19:09,166] Let's
+- [00:19:11,166 - 00:19:14,166] Let's get back to the special theory of relativity
+- [00:19:15,166 - 00:19:18,166] And just for fun, let's do one puzzle
+- [00:19:18,166 - 00:19:21,166] All problems in special relativity
+- [00:19:21,166 - 00:19:23,166] All puzzles in special relativity
+- [00:19:23,166 - 00:19:25,166] are usually the same
+- [00:19:25,166 - 00:19:28,166] They have to do with one basic flawed concept
+- [00:19:28,166 - 00:19:33,166] that we carry around as evolutionary baggage
+- [00:19:34,166 - 00:19:38,166] and confuses us every time we have some relativity problem
+- [00:19:38,166 - 00:19:41,166] The thing to do is to draw a good diagram
+- [00:19:41,166 - 00:19:44,166] and to remember in detail what
+- [00:19:44,166 - 00:19:47,166] what that diagram is telling us
+- [00:19:47,166 - 00:19:49,166] Here's the puzzle, it's a famous puzzle
+- [00:19:52,166 - 00:19:54,166] It's usually phrased in terms of a
+- [00:19:54,166 - 00:19:56,166] limousine trying to get into a garage
+- [00:19:56,166 - 00:19:59,166] You have a garage a certain size
+- [00:19:59,166 - 00:20:02,166] Let's say 12 feet in length
+- [00:20:02,166 - 00:20:03,166] 12, 13 feet in length
+- [00:20:03,166 - 00:20:05,166] I don't know how long my garage is
+- [00:20:05,166 - 00:20:06,166] Probably longer than that
+- [00:20:06,166 - 00:20:08,666] But just big enough that an
+- [00:20:08,666 - 00:20:11,166] ordinary car can fit into it
+- [00:20:11,166 - 00:20:13,166] And a stretch limousine
+- [00:20:14,166 - 00:20:15,166] Wants to get into it
+- [00:20:15,166 - 00:20:16,166] I don't know how...
+- [00:20:16,166 - 00:20:17,166] I'm not...
+- [00:20:18,166 - 00:20:20,166] Looks like it's going this way
+- [00:20:22,166 - 00:20:25,166] And the stretch limousine is 20 feet long
+- [00:20:26,166 - 00:20:28,166] Wants to get into the garage
+- [00:20:28,166 - 00:20:30,166] So the driver says, okay, I
+- [00:20:30,166 - 00:20:32,166] know the special theory of relativity
+- [00:20:32,166 - 00:20:34,166] I'll speed up my car
+- [00:20:34,166 - 00:20:37,166] And whoever's watching from the rest frame will watch this
+- [00:20:37,166 - 00:20:40,166] Somebody watching from the rest frame will watch this
+- [00:20:40,166 - 00:20:43,166] And according to his calculations
+- [00:20:43,166 - 00:20:46,166] My car will be Lorentz contracted
+- [00:20:46,166 - 00:20:49,166] In the frame of reference of the garage
+- [00:20:49,166 - 00:20:51,166] It'll be Lorentz contracted
+- [00:20:51,166 - 00:20:52,666] And if I can Lorentz contract it
+- [00:20:52,666 - 00:20:54,166] enough by making it move fast enough
+- [00:20:54,166 - 00:20:57,166] I can get it into the garage
+- [00:20:59,166 - 00:21:00,666] Getting it into the garage means
+- [00:21:00,666 - 00:21:02,166] the front end and the back end
+- [00:21:02,166 - 00:21:06,166] Are both within the garage simultaneously
+- [00:21:07,166 - 00:21:09,166] On the other hand
+- [00:21:09,166 - 00:21:11,166] The other view of it is
+- [00:21:11,166 - 00:21:13,166] That the car is standing here
+- [00:21:13,166 - 00:21:17,166] And the garage is moving toward the car
+- [00:21:17,166 - 00:21:19,166] And so from a frame of reference
+- [00:21:19,166 - 00:21:21,166] in which the car is standing still
+- [00:21:21,166 - 00:21:25,166] The garage looks Lorentz contracted
+- [00:21:25,166 - 00:21:26,666] And therefore is much smaller
+- [00:21:26,666 - 00:21:28,166] than the size of the limo
+- [00:21:28,166 - 00:21:29,666] And it's quite clear that the
+- [00:21:29,666 - 00:21:31,166] limo can't get into the garage
+- [00:21:31,166 - 00:21:32,166] So we have a puzzle
+- [00:21:32,166 - 00:21:34,166] We have a paradox
+- [00:21:34,166 - 00:21:36,166] Can the limousine get in or
+- [00:21:36,166 - 00:21:38,166] can't the limousine get into the garage?
+- [00:21:38,166 - 00:21:41,166] Now as I said, what it means
+- [00:21:41,166 - 00:21:44,166] For the limousine to be in the garage
+- [00:21:44,166 - 00:21:47,166] Is that the front end and the back end
+- [00:21:47,166 - 00:21:50,166] Are simultaneously inside the garage
+- [00:21:50,166 - 00:21:54,166] And the nasty concept that we've inherited
+- [00:21:54,166 - 00:21:57,166] And we have a difficult time getting rid of
+- [00:21:57,166 - 00:21:59,166] Is the concept of simultaneity
+- [00:21:59,166 - 00:22:02,166] What it means for the two ends of
+- [00:22:02,166 - 00:22:05,166] the car to be simultaneously inside the garage
+- [00:22:05,166 - 00:22:07,166] That's the rub
+- [00:22:07,166 - 00:22:11,166] That simultaneity is not the same in all reference forms
+- [00:22:11,166 - 00:22:13,166] But it's the same in all reference frames
+- [00:22:13,166 - 00:22:17,166] So the thing to do to understand this particular problem
+- [00:22:17,166 - 00:22:19,166] Well first of all
+- [00:22:19,166 - 00:22:20,666] We ought to open the door to
+- [00:22:20,666 - 00:22:22,166] the garage to let the car in
+- [00:22:22,166 - 00:22:24,166] So I'm going to open the door
+- [00:22:24,166 - 00:22:27,166] But just for safety sake
+- [00:22:27,166 - 00:22:30,166] I'm also going to open the back door
+- [00:22:33,166 - 00:22:35,166] And we'll simply ask
+- [00:22:35,166 - 00:22:37,666] Can the car ever, is the car
+- [00:22:37,666 - 00:22:40,166] ever simultaneously all of it inside the garage?
+- [00:22:40,166 - 00:22:42,166] We won't worry about what happens
+- [00:22:42,166 - 00:22:44,166] If it gets in the garage
+- [00:22:44,166 - 00:22:46,166] We won't worry too much about what happens
+- [00:22:46,166 - 00:22:49,166] When it's decelerated by the back wall of the garage
+- [00:22:49,166 - 00:22:50,666] And the way to avoid that is
+- [00:22:50,666 - 00:22:52,166] we will simply open up the back door
+- [00:22:52,166 - 00:22:54,166] I don't want to kill a driver
+- [00:22:54,166 - 00:22:56,166] I would
+- [00:22:56,166 - 00:22:57,666] I do wish I had
+- [00:22:57,666 - 00:22:59,166] a better piece of chalk though
+- [00:22:59,166 - 00:23:01,166] Okay
+- [00:23:01,166 - 00:23:03,166] So how do we analyze this?
+- [00:23:03,166 - 00:23:04,666] As always, the first thing to
+- [00:23:04,666 - 00:23:06,166] do is to draw yourself a picture
+- [00:23:06,166 - 00:23:08,166] Ah, that's a good one
+- [00:23:10,166 - 00:23:12,166] Draw yourself a picture and get
+- [00:23:12,166 - 00:23:14,166] everything laid out on the picture
+- [00:23:14,166 - 00:23:16,166] Vertical axis is time
+- [00:23:16,166 - 00:23:17,666] This is all a problem
+- [00:23:17,666 - 00:23:19,166] that takes place in one dimension
+- [00:23:19,166 - 00:23:21,166] One dimension of space
+- [00:23:21,166 - 00:23:22,666] So we don't have to worry
+- [00:23:22,666 - 00:23:24,166] very much about Y and Z
+- [00:23:24,166 - 00:23:28,166] Pretty much X is all we have to worry about
+- [00:23:28,166 - 00:23:32,166] Ah, as the first thing we draw into this diagram
+- [00:23:32,166 - 00:23:35,166] Is the light cone, the trajectory of light rays
+- [00:23:35,166 - 00:23:37,166] This just orients us
+- [00:23:37,166 - 00:23:39,166] It orients us and um
+- [00:23:40,166 - 00:23:43,166] It orients us what very very fast means
+- [00:23:43,166 - 00:23:45,166] The speed of light
+- [00:23:45,166 - 00:23:47,166] Alright, so we draw in
+- [00:23:47,166 - 00:23:50,166] Light like trajectories like this
+- [00:23:50,166 - 00:23:51,166] Okay
+- [00:23:51,166 - 00:23:53,166] Then we begin to
+- [00:23:53,166 - 00:23:55,166] Ah
+- [00:23:55,166 - 00:23:57,166] Then the next thing is
+- [00:23:57,166 - 00:23:59,166] to put in our two observers
+- [00:23:59,166 - 00:24:02,166] One observer is the observer at rest
+- [00:24:02,166 - 00:24:04,166] And his coordinates X and T
+- [00:24:04,166 - 00:24:06,166] just look like what's drawn there
+- [00:24:06,166 - 00:24:09,166] The second observer is moving relative to the first
+- [00:24:09,166 - 00:24:11,166] So the velocity
+- [00:24:11,166 - 00:24:14,166] And so his axis
+- [00:24:14,166 - 00:24:15,166] Looks like this
+- [00:24:15,166 - 00:24:17,166] This could be called T prime
+- [00:24:17,166 - 00:24:19,166] Let's put in a little bit of bigger angle
+- [00:24:19,166 - 00:24:21,166] The bigger the angle the faster he's moving
+- [00:24:21,166 - 00:24:24,166] And I want to exaggerate the motion
+- [00:24:24,166 - 00:24:27,166] So let's put him way out here
+- [00:24:27,166 - 00:24:29,166] Moving with something like half the speed of light
+- [00:24:29,166 - 00:24:31,166] Or something like that
+- [00:24:31,166 - 00:24:34,166] And we also have to remember
+- [00:24:34,166 - 00:24:36,166] That the X axis, the new
+- [00:24:36,166 - 00:24:38,166] X axis, the X prime axis
+- [00:24:38,166 - 00:24:43,166] Is tilted relative to the X axis
+- [00:24:43,166 - 00:24:47,166] Meaning that what the new observer calls simultaneous
+- [00:24:47,166 - 00:24:50,166] Is different than what the old observer calls simultaneous
+- [00:24:50,166 - 00:24:52,666] The old observer calls everything
+- [00:24:52,666 - 00:24:55,166] on the horizontal axis simultaneous
+- [00:24:55,166 - 00:24:58,166] Meaning to say that it happens at the same time
+- [00:24:58,166 - 00:25:02,166] The new observer, the moving observer calls everything along
+- [00:25:08,166 - 00:25:14,166] Now, it wasn't very well drawn
+- [00:25:14,166 - 00:25:16,166] One more try
+- [00:25:20,166 - 00:25:22,166] I was told when you draw pictures like this
+- [00:25:22,166 - 00:25:24,166] And you want to make straight lines
+- [00:25:24,166 - 00:25:26,166] Take your eye off the chalk
+- [00:25:26,166 - 00:25:29,166] And only look at the end point
+- [00:25:29,166 - 00:25:31,166] But it never works
+- [00:25:31,166 - 00:25:33,166] Look at the end point
+- [00:25:34,166 - 00:25:36,166] It's just a nil
+- [00:25:36,166 - 00:25:37,166] Nothing
+- [00:25:37,166 - 00:25:39,166] Yeah, it's bent over here too much.
+- [00:25:39,166 - 00:25:41,166] A little acceleration.
+- [00:25:41,166 - 00:25:43,166] No, it's not acceleration.
+- [00:25:43,166 - 00:25:45,166] No, no, it's not, this is
+- [00:25:45,166 - 00:25:47,166] not a moving thing, this is...
+- [00:25:47,166 - 00:25:49,166] This is kind of work. Yeah.
+- [00:25:49,166 - 00:25:51,166] Okay.
+- [00:25:51,166 - 00:25:53,166] Yeah, they are.
+- [00:25:53,166 - 00:25:55,166] They are.
+- [00:25:57,166 - 00:25:59,166] Yes, they are equal.
+- [00:25:59,166 - 00:26:03,166] In coordinates in which the speed of light is one.
+- [00:26:03,166 - 00:26:05,166] You don't want to try to draw this
+- [00:26:05,166 - 00:26:08,166] in the coordinates in which the speed
+- [00:26:08,166 - 00:26:11,166] of light is 186,000 miles per second
+- [00:26:11,166 - 00:26:13,166] because then this is practically horizontal
+- [00:26:13,166 - 00:26:15,166] and you won't be able to see anything.
+- [00:26:15,166 - 00:26:17,166] Alright, so in coordinates in which
+- [00:26:17,166 - 00:26:19,166] the speed of light is one,
+- [00:26:19,166 - 00:26:21,166] the picture looks like this.
+- [00:26:21,166 - 00:26:23,166] Now let's draw in the garage.
+- [00:26:23,166 - 00:26:25,166] First of all, there is...
+- [00:26:25,166 - 00:26:27,166] I don't know what they're called.
+- [00:26:27,166 - 00:26:29,166] Let's call it the front end.
+- [00:26:29,166 - 00:26:31,166] This is the front end of the garage
+- [00:26:31,166 - 00:26:33,166] and the back end of the garage.
+- [00:26:33,166 - 00:26:35,166] Alright, the front end of the garage
+- [00:26:35,166 - 00:26:37,166] is still in our frame of reference
+- [00:26:37,166 - 00:26:39,166] and that means it looks like a vertical line.
+- [00:26:43,166 - 00:26:44,166] The same is true of
+- [00:26:44,166 - 00:26:45,166] the back end of the garage.
+- [00:26:45,166 - 00:26:47,166] It's also a vertical...
+- [00:26:47,166 - 00:26:49,166] This end here.
+- [00:26:49,166 - 00:26:51,166] It's also a vertical line and it looks like this.
+- [00:26:51,166 - 00:26:53,166] Whoops.
+- [00:26:55,166 - 00:26:57,166] So the region in here
+- [00:26:57,166 - 00:26:59,166] between the two red lines
+- [00:26:59,166 - 00:27:01,166] Let's just dot it in red.
+- [00:27:03,166 - 00:27:05,166] Maybe I shouldn't.
+- [00:27:05,166 - 00:27:07,166] The region between the two red lines
+- [00:27:07,166 - 00:27:09,166] is the interior of the garage.
+- [00:27:09,166 - 00:27:11,166] Now what about the limousine?
+- [00:27:11,166 - 00:27:13,166] The limousine is moving
+- [00:27:13,166 - 00:27:15,166] and it's moving
+- [00:27:15,166 - 00:27:17,166] with velocity of the other frame of reference.
+- [00:27:17,166 - 00:27:19,166] The other frame of reference
+- [00:27:19,166 - 00:27:21,166] is the frame of reference of the limousine.
+- [00:27:21,166 - 00:27:23,166] Here's the back end of the limousine.
+- [00:27:23,166 - 00:27:25,166] The back end of the limousine over here
+- [00:27:25,166 - 00:27:27,166] moves and at this point
+- [00:27:27,166 - 00:27:29,166] let's draw it in green.
+- [00:27:29,166 - 00:27:31,166] The back end of the limousine is here.
+- [00:27:31,166 - 00:27:33,166] The front end of the limousine is over here.
+- [00:27:33,166 - 00:27:35,166] I won't draw it in yet.
+- [00:27:35,166 - 00:27:37,166] Okay.
+- [00:27:43,166 - 00:27:44,166] Okay, I will draw in
+- [00:27:44,166 - 00:27:45,166] the front end of the limousine.
+- [00:27:45,166 - 00:27:47,166] The front end of the limousine
+- [00:27:47,166 - 00:27:49,166] I'm going to put
+- [00:27:49,166 - 00:27:51,166] let's see, about
+- [00:27:51,166 - 00:27:53,166] over here.
+- [00:28:01,166 - 00:28:03,166] There's the front end of the limousine
+- [00:28:03,166 - 00:28:05,166] moving with the same speed, of course,
+- [00:28:05,166 - 00:28:07,166] as the back end.
+- [00:28:07,166 - 00:28:09,166] There it is.
+- [00:28:09,166 - 00:28:11,166] Now, I've opened the back end here,
+- [00:28:11,166 - 00:28:13,166] the back door,
+- [00:28:13,166 - 00:28:15,166] so the limousine goes right through.
+- [00:28:15,166 - 00:28:17,166] It doesn't smash into the back wall.
+- [00:28:17,166 - 00:28:19,166] It just goes through.
+- [00:28:19,166 - 00:28:21,166] And our question is,
+- [00:28:21,166 - 00:28:23,166] is there any instant of time
+- [00:28:23,166 - 00:28:25,166] at which the entire limousine,
+- [00:28:25,166 - 00:28:27,166] in other words, the distance
+- [00:28:27,166 - 00:28:29,166] from the back green to the front green
+- [00:28:29,166 - 00:28:30,166] or from the rear end
+- [00:28:30,166 - 00:28:31,166] of the car to the front,
+- [00:28:31,166 - 00:28:33,166] the portion of the limousine
+- [00:28:33,166 - 00:28:35,166] to the front end,
+- [00:28:35,166 - 00:28:37,166] is there any time at which it's all together
+- [00:28:37,166 - 00:28:39,166] simultaneously inside the red?
+- [00:28:39,166 - 00:28:41,166] Now, we have to decide
+- [00:28:41,166 - 00:28:43,166] what we mean by simultaneously.
+- [00:28:43,166 - 00:28:45,166] If we mean simultaneously
+- [00:28:45,166 - 00:28:47,166] from the point of view of the
+- [00:28:47,166 - 00:28:49,166] stationary observer,
+- [00:28:49,166 - 00:28:51,166] that's asking the question,
+- [00:28:51,166 - 00:28:53,166] is there any horizontal line that you can draw here
+- [00:28:53,166 - 00:28:55,166] in which
+- [00:28:55,166 - 00:28:57,166] both the back end
+- [00:28:57,166 - 00:28:59,166] and the front end
+- [00:28:59,166 - 00:29:01,166] will both appear inside the garage?
+- [00:29:01,166 - 00:29:03,166] And yes, there are.
+- [00:29:03,166 - 00:29:05,166] Here the back end goes in over here.
+- [00:29:05,166 - 00:29:07,166] The front end is still inside.
+- [00:29:09,166 - 00:29:11,166] Right over here, the front end,
+- [00:29:11,166 - 00:29:13,166] here's where the front end went into the garage.
+- [00:29:13,166 - 00:29:15,166] The front end crossed
+- [00:29:15,166 - 00:29:17,166] the beginning of the garage
+- [00:29:17,166 - 00:29:19,166] over here, and
+- [00:29:19,166 - 00:29:21,166] the front end went out the rear door
+- [00:29:21,166 - 00:29:23,166] over here.
+- [00:29:23,166 - 00:29:25,166] The back end went into the
+- [00:29:25,166 - 00:29:27,166] garage over here, and comes out
+- [00:29:27,166 - 00:29:29,166] over here.
+- [00:29:29,166 - 00:29:31,166] Okay? So,
+- [00:29:31,166 - 00:29:33,166] here's a time right over here
+- [00:29:33,166 - 00:29:35,166] when the back end is just getting in
+- [00:29:35,166 - 00:29:37,166] and the front end has not yet
+- [00:29:37,166 - 00:29:39,166] gone outside the garage.
+- [00:29:39,166 - 00:29:41,166] So yes, there is
+- [00:29:41,166 - 00:29:43,166] an instant of time
+- [00:29:43,166 - 00:29:45,166] when the entire car is inside the garage.
+- [00:29:45,166 - 00:29:47,166] But that's from the perspective
+- [00:29:47,166 - 00:29:49,166] of the stationary observer.
+- [00:29:49,166 - 00:29:51,166] What about
+- [00:29:51,166 - 00:29:53,166] the moving observer?
+- [00:29:53,166 - 00:29:55,166] For the moving observer, lines like this
+- [00:29:55,166 - 00:29:57,166] are simultaneous.
+- [00:29:57,166 - 00:29:59,166] If I were to take this point
+- [00:29:59,166 - 00:30:01,166] and draw
+- [00:30:01,166 - 00:30:03,166] the appropriate line, it would look like
+- [00:30:03,166 - 00:30:05,166] that.
+- [00:30:05,166 - 00:30:07,166] From the moving observer's
+- [00:30:07,166 - 00:30:09,166] point of view, this point and that point
+- [00:30:09,166 - 00:30:11,166] are simultaneous.
+- [00:30:11,166 - 00:30:13,166] Notice that this
+- [00:30:13,166 - 00:30:15,166] point and this point are not both
+- [00:30:15,166 - 00:30:17,166] inside the garage.
+- [00:30:17,166 - 00:30:19,166] By the time the back end gets in,
+- [00:30:19,166 - 00:30:21,166] the front end is out.
+- [00:30:21,166 - 00:30:23,166] So from the point
+- [00:30:23,166 - 00:30:25,166] of view of the moving observer,
+- [00:30:25,166 - 00:30:27,166] no, the whole car never was
+- [00:30:27,166 - 00:30:29,166] inside the garage. There's no paradox,
+- [00:30:29,166 - 00:30:31,166] there's no contradiction,
+- [00:30:31,166 - 00:30:33,166] the contradiction or the apparent paradox
+- [00:30:33,166 - 00:30:35,166] is simply by
+- [00:30:35,166 - 00:30:37,166] is simply due to
+- [00:30:37,166 - 00:30:39,166] not distinguishing what we mean
+- [00:30:39,166 - 00:30:41,166] by simultaneous
+- [00:30:41,166 - 00:30:43,166] in the two frames of reference.
+- [00:30:43,166 - 00:30:45,166] The different, yeah.
+- [00:30:45,166 - 00:30:47,166] The two green lines
+- [00:30:47,166 - 00:30:49,166] and the segment
+- [00:30:49,166 - 00:30:51,166] of the x-axis between the two green lines
+- [00:30:51,166 - 00:30:53,166] and the line
+- [00:30:53,166 - 00:30:55,166] that represents
+- [00:30:55,166 - 00:30:57,166] the vehicle being in the garage.
+- [00:30:57,166 - 00:30:59,166] Yeah, that forms a parallelogram, right?
+- [00:31:01,166 - 00:31:03,166] You mean with this?
+- [00:31:03,166 - 00:31:05,166] Yes. So no matter how fast
+- [00:31:05,166 - 00:31:07,166] or how slow you go,
+- [00:31:07,166 - 00:31:09,166] that black line is the same length
+- [00:31:09,166 - 00:31:11,166] as the vehicle along the way.
+- [00:31:11,166 - 00:31:13,166] Well, that line
+- [00:31:13,166 - 00:31:15,166] has a length which is the Lorentz
+- [00:31:15,166 - 00:31:17,166] contracted length of the limousine.
+- [00:31:19,166 - 00:31:21,166] This is the Lorentz contracted length
+- [00:31:21,166 - 00:31:23,166] of the limousine.
+- [00:31:23,166 - 00:31:25,166] It's the Lorentz contracted length
+- [00:31:25,166 - 00:31:27,166] because it's the length of the limousine
+- [00:31:27,166 - 00:31:29,166] as seen from the stationary
+- [00:31:29,166 - 00:31:31,166] reference frame.
+- [00:31:31,166 - 00:31:33,166] If I were to calculate the proper distance
+- [00:31:33,166 - 00:31:35,166] from here to here,
+- [00:31:35,166 - 00:31:37,166] that would represent the length
+- [00:31:37,166 - 00:31:39,166] of the limousine in the limousine's reference frame.
+- [00:31:39,166 - 00:31:41,166] Yeah.
+- [00:31:41,166 - 00:31:43,166] Good.
+- [00:31:43,166 - 00:31:45,166] Alright,
+- [00:31:45,166 - 00:31:47,166] that's a little puzzle
+- [00:31:47,166 - 00:31:49,166] that's sort of illustrative
+- [00:31:49,166 - 00:31:51,166] of a large number
+- [00:31:51,166 - 00:31:53,166] of puzzles in relativity theory
+- [00:31:53,166 - 00:31:55,166] and usually the answer
+- [00:31:55,166 - 00:31:57,166] is to remind yourself
+- [00:31:57,166 - 00:31:59,166] that simultaneity is a
+- [00:31:59,166 - 00:32:01,166] relative concept.
+- [00:32:01,166 - 00:32:03,166] And almost always when you analyze
+- [00:32:03,166 - 00:32:05,166] the experiment
+- [00:32:05,166 - 00:32:07,166] for these kind of puzzles,
+- [00:32:07,166 - 00:32:09,166] there's a hidden use of the word simultaneous
+- [00:32:09,166 - 00:32:11,166] and that's
+- [00:32:11,166 - 00:32:13,166] where the
+- [00:32:13,166 - 00:32:15,166] paradox comes in.
+- [00:32:15,166 - 00:32:17,166] Okay.
+- [00:32:17,166 - 00:32:19,166] Now we want to get back to Lorentz
+- [00:32:19,166 - 00:32:21,166] transformations, to the mathematics
+- [00:32:21,166 - 00:32:23,166] of Lorentz transformations.
+- [00:32:23,166 - 00:32:25,166] And
+- [00:32:25,166 - 00:32:27,166] to some, we want to move on
+- [00:32:27,166 - 00:32:29,166] and
+- [00:32:29,166 - 00:32:31,166] understand the laws of physics.
+- [00:32:31,166 - 00:32:33,166] As they are described
+- [00:32:33,166 - 00:32:35,166] in relativity theory.
+- [00:32:35,166 - 00:32:37,166] The same laws
+- [00:32:37,166 - 00:32:39,166] that are for example Newton's laws of force,
+- [00:32:39,166 - 00:32:41,166] Newton's laws of motion,
+- [00:32:41,166 - 00:32:43,166] and so forth. What happens to them
+- [00:32:43,166 - 00:32:45,166] when we move on to relativity?
+- [00:32:45,166 - 00:32:47,166] And we need some
+- [00:32:47,166 - 00:32:49,166] mathematics. Most of the mathematics
+- [00:32:49,166 - 00:32:51,166] is notation, not much more
+- [00:32:51,166 - 00:32:53,166] than notation. First of all,
+- [00:32:53,166 - 00:32:55,166] we have four coordinates.
+- [00:32:55,166 - 00:32:57,166] X, Y, and Z.
+- [00:32:57,166 - 00:32:59,166] And the fourth coordinate, T.
+- [00:32:59,166 - 00:33:01,166] It's a
+- [00:33:01,166 - 00:33:03,166] convenient notation
+- [00:33:03,166 - 00:33:05,166] to lump them all together.
+- [00:33:07,166 - 00:33:09,166] T,
+- [00:33:09,166 - 00:33:11,166] X, Y,
+- [00:33:11,166 - 00:33:13,166] and Z.
+- [00:33:13,166 - 00:33:15,166] In fact, I usually put T at the end.
+- [00:33:21,166 - 00:33:23,166] And call them all
+- [00:33:23,166 - 00:33:25,166] by the name X,
+- [00:33:25,166 - 00:33:27,166] X1, X2,
+- [00:33:27,166 - 00:33:29,166] X3, and X0.
+- [00:33:29,166 - 00:33:31,166] Y0 instead of 4.
+- [00:33:31,166 - 00:33:33,166] I don't know.
+- [00:33:33,166 - 00:33:35,166] That's a standard notation.
+- [00:33:35,166 - 00:33:37,166] Maybe I should have put the X0 at the beginning,
+- [00:33:37,166 - 00:33:39,166] but throughout my notes, I seem to have
+- [00:33:39,166 - 00:33:41,166] put the X0 at the
+- [00:33:41,166 - 00:33:43,166] end of the line.
+- [00:33:43,166 - 00:33:45,166] X0, X1,
+- [00:33:45,166 - 00:33:47,166] X2,
+- [00:33:47,166 - 00:33:49,166] X3.
+- [00:33:49,166 - 00:33:51,166] Those correspond to X, Y, Z, and T.
+- [00:33:51,166 - 00:33:53,166] So the odd man out here
+- [00:33:53,166 - 00:33:55,166] is X0. It's the one that is
+- [00:33:55,166 - 00:33:57,166] time. The other three are
+- [00:33:57,166 - 00:33:59,166] spatial axes.
+- [00:33:59,166 - 00:34:01,166] All together, we also
+- [00:34:01,166 - 00:34:03,166] lump them all together and call them
+- [00:34:03,166 - 00:34:05,166] X mu.
+- [00:34:05,166 - 00:34:07,166] Mu,
+- [00:34:07,166 - 00:34:09,166] the Greek letter mu,
+- [00:34:09,166 - 00:34:11,166] coming from the rear end of the alphabet,
+- [00:34:11,166 - 00:34:13,166] represents
+- [00:34:13,166 - 00:34:15,166] the indices
+- [00:34:15,166 - 00:34:17,166] 1, 2, 3, and 4.
+- [00:34:17,166 - 00:34:19,166] Mu can go from, not 1, 2, 3, and 4,
+- [00:34:19,166 - 00:34:21,166] 1, 2, 3, and 0.
+- [00:34:21,166 - 00:34:23,166] X...
+- [00:34:23,166 - 00:34:25,166] So are you setting C equal to 1?
+- [00:34:25,166 - 00:34:27,166] Yeah, we're setting C equal to 1.
+- [00:34:27,166 - 00:34:29,166] Yeah. We are setting C equal
+- [00:34:29,166 - 00:34:31,166] to 1. And when it's
+- [00:34:31,166 - 00:34:33,166] interesting to do so, I'll put the C's
+- [00:34:33,166 - 00:34:35,166] back.
+- [00:34:35,166 - 00:34:37,166] Only when it's interesting to do so. For example,
+- [00:34:37,166 - 00:34:39,166] when we take non-relativistic limits of
+- [00:34:39,166 - 00:34:41,166] situations, and we want to see how things behave
+- [00:34:41,166 - 00:34:43,166] for slowly moving
+- [00:34:43,166 - 00:34:45,166] objects in a more conventional
+- [00:34:45,166 - 00:34:47,166] situation, then it's
+- [00:34:47,166 - 00:34:49,166] convenient to put the C's back in to see
+- [00:34:49,166 - 00:34:51,166] how we approach the
+- [00:34:51,166 - 00:34:53,166] ordinary physics.
+- [00:34:53,166 - 00:34:55,166] And that would be Ct or X to the
+- [00:34:55,166 - 00:34:57,166] bottom? Yeah, that would be Ct.
+- [00:34:57,166 - 00:34:59,166] Right. That would be Ct.
+- [00:34:59,166 - 00:35:01,166] Yeah, exactly.
+- [00:35:01,166 - 00:35:03,166] Okay.
+- [00:35:03,166 - 00:35:05,166] Exactly. Now, there's
+- [00:35:05,166 - 00:35:07,166] another symbol,
+- [00:35:07,166 - 00:35:09,166] which is
+- [00:35:09,166 - 00:35:11,166] X with a lower
+- [00:35:11,166 - 00:35:13,166] mu.
+- [00:35:13,166 - 00:35:15,166] Mu, in this
+- [00:35:15,166 - 00:35:17,166] expression, goes upstairs.
+- [00:35:17,166 - 00:35:19,166] These are incidentally
+- [00:35:19,166 - 00:35:21,166] called, let's see, these are called
+- [00:35:21,166 - 00:35:23,166] contravariant indices? I always forget which
+- [00:35:23,166 - 00:35:25,166] one is which. When they're upstairs,
+- [00:35:25,166 - 00:35:27,166] they're called...
+- [00:35:27,166 - 00:35:29,166] Hmm?
+- [00:35:29,166 - 00:35:31,166] Co is low,
+- [00:35:31,166 - 00:35:33,166] and contra is high.
+- [00:35:33,166 - 00:35:35,166] Okay. Physicists call it
+- [00:35:35,166 - 00:35:37,166] upstairs and downstairs. We never use that
+- [00:35:37,166 - 00:35:39,166] language. We talk about upstairs and downstairs.
+- [00:35:39,166 - 00:35:41,166] I will...
+- [00:35:41,166 - 00:35:43,166] Okay,
+- [00:35:43,166 - 00:35:45,166] this, again, which is it?
+- [00:35:45,166 - 00:35:47,166] Co is low. Co is low, okay.
+- [00:35:47,166 - 00:35:49,166] So these are the covariant
+- [00:35:49,166 - 00:35:51,166] components. These are components of
+- [00:35:51,166 - 00:35:53,166] an object, of a vector.
+- [00:35:53,166 - 00:35:55,166] We'll see. But
+- [00:35:55,166 - 00:35:56,166] there are two ways to
+- [00:35:56,166 - 00:35:57,166] describe this. This is just two
+- [00:35:57,166 - 00:35:59,166] different descriptions of the same thing.
+- [00:35:59,166 - 00:36:01,166] And the difference in the description
+- [00:36:03,166 - 00:36:05,166] is that in the
+- [00:36:05,166 - 00:36:07,166] covariant components of the
+- [00:36:07,166 - 00:36:09,166] same vector, you write
+- [00:36:09,166 - 00:36:11,166] them as
+- [00:36:11,166 - 00:36:13,166] minus X,
+- [00:36:13,166 - 00:36:15,166] minus Y, minus
+- [00:36:15,166 - 00:36:17,166] Z, and T.
+- [00:36:17,166 - 00:36:19,166] In other words,
+- [00:36:19,166 - 00:36:21,166] you take the same object,
+- [00:36:23,166 - 00:36:25,166] and you just consider
+- [00:36:25,166 - 00:36:27,166] the space
+- [00:36:27,166 - 00:36:29,166] components
+- [00:36:29,166 - 00:36:31,166] made negative.
+- [00:36:31,166 - 00:36:33,166] If I give you a point,
+- [00:36:33,166 - 00:36:35,166] X, Y,
+- [00:36:35,166 - 00:36:37,166] Z, T,
+- [00:36:37,166 - 00:36:39,166] and tell you those
+- [00:36:39,166 - 00:36:41,166] are the positions of a certain
+- [00:36:41,166 - 00:36:43,166] point, and then ask you, what
+- [00:36:43,166 - 00:36:45,166] are the covariant indices
+- [00:36:45,166 - 00:36:47,166] of that point? What are the covariant
+- [00:36:47,166 - 00:36:49,166] descriptions of that point, instead of the contravariant?
+- [00:36:49,166 - 00:36:51,166] You just multiply
+- [00:36:51,166 - 00:36:53,166] the space components by minus one.
+- [00:36:53,166 - 00:36:55,166] That's its definition.
+- [00:36:55,166 - 00:36:57,166] You simply change the
+- [00:36:57,166 - 00:36:59,166] sign of the first three components.
+- [00:36:59,166 - 00:37:01,166] Why do you do that?
+- [00:37:01,166 - 00:37:03,166] You do this only for a neat notation.
+- [00:37:03,166 - 00:37:05,166] And I'll show you what the neat notation is.
+- [00:37:05,166 - 00:37:07,166] Should these be supersubscripts?
+- [00:37:07,166 - 00:37:09,166] These are subscript?
+- [00:37:09,166 - 00:37:11,166] This is subscript?
+- [00:37:11,166 - 00:37:13,166] Oh,
+- [00:37:13,166 - 00:37:15,166] no, no, no.
+- [00:37:15,166 - 00:37:17,166] Okay, then we can write that this is
+- [00:37:17,166 - 00:37:19,166] equal,
+- [00:37:19,166 - 00:37:21,166] this is X1,
+- [00:37:21,166 - 00:37:23,166] this is equal to X1,
+- [00:37:23,166 - 00:37:25,166] X2, X3,
+- [00:37:25,166 - 00:37:27,166] X0.
+- [00:37:27,166 - 00:37:29,166] So,
+- [00:37:29,166 - 00:37:31,166] X1 with a lower
+- [00:37:31,166 - 00:37:33,166] index is minus
+- [00:37:33,166 - 00:37:35,166] the X1 with the upper
+- [00:37:35,166 - 00:37:37,166] index.
+- [00:37:37,166 - 00:37:39,166] There's nothing fancy
+- [00:37:39,166 - 00:37:41,166] going on here.
+- [00:37:41,166 - 00:37:43,166] You just take the first three entries
+- [00:37:43,166 - 00:37:45,166] and change their sign.
+- [00:37:45,166 - 00:37:47,166] And that gives you a new object,
+- [00:37:47,166 - 00:37:49,166] which is called
+- [00:37:49,166 - 00:37:51,166] X sub mu.
+- [00:37:51,166 - 00:37:53,166] So, for example,
+- [00:37:53,166 - 00:37:55,166] if I pick the point
+- [00:37:55,166 - 00:37:57,166] X equals 3,
+- [00:37:57,166 - 00:37:59,166] Y equals 2,
+- [00:37:59,166 - 00:38:01,166] Z equals 4,
+- [00:38:01,166 - 00:38:03,166] and T equals 10,
+- [00:38:03,166 - 00:38:05,166] then
+- [00:38:05,166 - 00:38:07,166] the standard
+- [00:38:07,166 - 00:38:09,166] expression here
+- [00:38:09,166 - 00:38:11,166] would just be 3,
+- [00:38:13,166 - 00:38:15,166] That would be
+- [00:38:15,166 - 00:38:17,166] X mu.
+- [00:38:17,166 - 00:38:19,166] X mu would equal
+- [00:38:21,166 - 00:38:23,166] But,
+- [00:38:27,166 - 00:38:29,166] this would be minus 3, minus 2,
+- [00:38:29,166 - 00:38:31,166] minus 4, and 10.
+- [00:38:31,166 - 00:38:33,166] That's not a different point.
+- [00:38:33,166 - 00:38:35,166] It's the same point,
+- [00:38:35,166 - 00:38:37,166] but it's just a different notation
+- [00:38:37,166 - 00:38:39,166] for the same point.
+- [00:38:39,166 - 00:38:41,166] It's the same point,
+- [00:38:41,166 - 00:38:43,166] just a different notation for it.
+- [00:38:43,166 - 00:38:45,166] Just remember,
+- [00:38:45,166 - 00:38:47,166] when you see an object with covariant indices
+- [00:38:47,166 - 00:38:49,166] like this, remember,
+- [00:38:49,166 - 00:38:50,166] if you want to know
+- [00:38:50,166 - 00:38:51,166] exactly where it is in space-time,
+- [00:38:51,166 - 00:38:53,166] change the sign of these coordinates here.
+- [00:38:53,166 - 00:38:55,166] Why do you do this?
+- [00:38:55,166 - 00:38:57,166] Well, I'll tell you,
+- [00:38:57,166 - 00:38:59,166] it makes a nice notation.
+- [00:38:59,166 - 00:39:01,166] It makes a notation
+- [00:39:01,166 - 00:39:03,166] which systematically
+- [00:39:03,166 - 00:39:05,166] makes elegant
+- [00:39:05,166 - 00:39:07,166] and pretty equations,
+- [00:39:07,166 - 00:39:09,166] and helps you keep track of various
+- [00:39:09,166 - 00:39:11,166] minus signs that occur in relativity.
+- [00:39:13,166 - 00:39:15,166] Okay, let's
+- [00:39:15,166 - 00:39:17,166] consider the following object.
+- [00:39:17,166 - 00:39:19,166] Summation over mu,
+- [00:39:19,166 - 00:39:21,166] now summation over mu means you sum over
+- [00:39:21,166 - 00:39:23,166] 1, 2, 3, and 0
+- [00:39:23,166 - 00:39:25,166] of
+- [00:39:25,166 - 00:39:27,166] X mu
+- [00:39:27,166 - 00:39:29,166] X mu. What is this object?
+- [00:39:29,166 - 00:39:31,166] Alright.
+- [00:39:31,166 - 00:39:33,166] Summation over mu means
+- [00:39:33,166 - 00:39:35,166] X1, X1.
+- [00:39:35,166 - 00:39:37,166] But what is that?
+- [00:39:37,166 - 00:39:39,166] What is X1, X1?
+- [00:39:39,166 - 00:39:41,166] X1 with a lower index
+- [00:39:41,166 - 00:39:43,166] is just the same as
+- [00:39:43,166 - 00:39:45,166] X1 with the upper index,
+- [00:39:45,166 - 00:39:47,166] except you change the sign.
+- [00:39:47,166 - 00:39:49,166] So this is minus
+- [00:39:49,166 - 00:39:51,166] X1 squared, which is just
+- [00:39:51,166 - 00:39:53,166] minus X squared.
+- [00:39:53,166 - 00:39:55,166] What about
+- [00:39:55,166 - 00:39:57,166] X2, X2?
+- [00:39:57,166 - 00:39:59,166] X2, X2.
+- [00:39:59,166 - 00:40:01,166] X2, X2.
+- [00:40:01,166 - 00:40:03,166] X2 is Y. Remember that
+- [00:40:03,166 - 00:40:05,166] X2 is Y.
+- [00:40:05,166 - 00:40:07,166] Okay. So
+- [00:40:09,166 - 00:40:11,166] in the lower index
+- [00:40:11,166 - 00:40:13,166] representation,
+- [00:40:13,166 - 00:40:15,166] we change the sign, and this
+- [00:40:15,166 - 00:40:17,166] becomes minus Y squared.
+- [00:40:19,166 - 00:40:21,166] And then for Z it's the same thing.
+- [00:40:21,166 - 00:40:23,166] Minus Z squared,
+- [00:40:23,166 - 00:40:25,166] but then plus T squared.
+- [00:40:25,166 - 00:40:27,166] Why plus T squared?
+- [00:40:27,166 - 00:40:29,166] Because
+- [00:40:29,166 - 00:40:31,166] the lower
+- [00:40:31,166 - 00:40:33,166] index and the upper index
+- [00:40:33,166 - 00:40:35,166] correspond to exactly the same
+- [00:40:35,166 - 00:40:37,166] sign for the time component.
+- [00:40:39,166 - 00:40:41,166] So this just reads
+- [00:40:41,166 - 00:40:43,166] X1, X1 with a
+- [00:40:43,166 - 00:40:45,166] lower index and an upper index, but that's
+- [00:40:45,166 - 00:40:47,166] minus X squared. Plus
+- [00:40:47,166 - 00:40:49,166] X2 lower, X2 upper.
+- [00:40:49,166 - 00:40:51,166] This isn't squared. It's X2 upper.
+- [00:40:51,166 - 00:40:53,166] That's minus Y squared.
+- [00:40:53,166 - 00:40:55,166] Next one is minus
+- [00:40:55,166 - 00:40:57,166] Z squared, and then plus T squared.
+- [00:40:57,166 - 00:40:59,166] But that's exactly the opposite,
+- [00:40:59,166 - 00:41:01,166] that's exactly the object
+- [00:41:01,166 - 00:41:03,166] that we called the proper
+- [00:41:03,166 - 00:41:05,166] distance from the origin,
+- [00:41:05,166 - 00:41:07,166] or the proper time,
+- [00:41:07,166 - 00:41:09,166] from the origin to the point
+- [00:41:09,166 - 00:41:11,166] XYZT.
+- [00:41:13,166 - 00:41:15,166] So we now have a notation,
+- [00:41:15,166 - 00:41:17,166] a notational trick.
+- [00:41:17,166 - 00:41:19,166] So far you don't see what the trick is, but
+- [00:41:19,166 - 00:41:21,166] you'll find out that the trick is quite
+- [00:41:21,166 - 00:41:23,166] useful. That we can
+- [00:41:23,166 - 00:41:25,166] write the proper distance
+- [00:41:25,166 - 00:41:27,166] from the origin to a point
+- [00:41:27,166 - 00:41:29,166] in just the form summation over
+- [00:41:29,166 - 00:41:31,166] mu, X mu, X mu, with
+- [00:41:31,166 - 00:41:33,166] one index upper and one index lower.
+- [00:41:35,166 - 00:41:37,166] Now, over
+- [00:41:37,166 - 00:41:39,166] and over and over
+- [00:41:39,166 - 00:41:41,166] again, in relativity
+- [00:41:41,166 - 00:41:43,166] theory, you'd be doing sums
+- [00:41:43,166 - 00:41:45,166] like this, where you sum over
+- [00:41:45,166 - 00:41:47,166] the first direction, the second direction,
+- [00:41:47,166 - 00:41:49,166] the third direction, the fourth direction,
+- [00:41:49,166 - 00:41:51,166] with the first three of
+- [00:41:51,166 - 00:41:53,166] them having the opposite sign from
+- [00:41:53,166 - 00:41:55,166] the last one. That happens
+- [00:41:55,166 - 00:41:57,166] over and over again,
+- [00:41:57,166 - 00:41:59,166] in fact it happens over and over so
+- [00:41:59,166 - 00:42:01,166] many times that Einstein got sick
+- [00:42:01,166 - 00:42:03,166] of writing the summation sign
+- [00:42:03,166 - 00:42:05,166] here, and he just left it out.
+- [00:42:05,166 - 00:42:07,166] He said,
+- [00:42:07,166 - 00:42:09,166] rule, whenever you
+- [00:42:09,166 - 00:42:11,166] see an expression
+- [00:42:11,166 - 00:42:13,166] like this, with an upper index and
+- [00:42:13,166 - 00:42:15,166] a lower index, and the upper index and the
+- [00:42:15,166 - 00:42:17,166] lower index are the same,
+- [00:42:17,166 - 00:42:19,166] it means sum over the
+- [00:42:19,166 - 00:42:21,166] indices. It's called the Einstein
+- [00:42:21,166 - 00:42:23,166] summation convention.
+- [00:42:25,166 - 00:42:27,166] It was probably not Einstein's most
+- [00:42:27,166 - 00:42:29,166] brilliant accomplishment, but
+- [00:42:29,166 - 00:42:31,166] it was pretty damn smart.
+- [00:42:31,166 - 00:42:33,166] Uh,
+- [00:42:33,166 - 00:42:35,166] so,
+- [00:42:35,166 - 00:42:37,166] X mu, X mu,
+- [00:42:37,166 - 00:42:39,166] this kind of
+- [00:42:39,166 - 00:42:41,166] expression, where an index
+- [00:42:41,166 - 00:42:43,166] will be repeated
+- [00:42:43,166 - 00:42:45,166] once lower and once upper,
+- [00:42:45,166 - 00:42:47,166] and only if it's once
+- [00:42:47,166 - 00:42:49,166] upper and once lower, then
+- [00:42:49,166 - 00:42:51,166] you remember to sum over
+- [00:42:51,166 - 00:42:53,166] the index, and what do you get?
+- [00:42:53,166 - 00:42:55,166] You get the proper distance
+- [00:42:55,166 - 00:42:57,166] or the proper time from
+- [00:42:57,166 - 00:42:59,166] the origin to the point
+- [00:43:01,166 - 00:43:03,166] So this is a neat notation.
+- [00:43:03,166 - 00:43:05,166] What is it for?
+- [00:43:05,166 - 00:43:07,166] It's a notation for the combination
+- [00:43:07,166 - 00:43:09,166] t squared minus x squared minus
+- [00:43:09,166 - 00:43:11,166] y squared minus z squared.
+- [00:43:11,166 - 00:43:13,166] That's all it is.
+- [00:43:17,166 - 00:43:19,166] And tau is the standard symbol for proper time?
+- [00:43:19,166 - 00:43:21,166] And tau is the standard symbol for proper time.
+- [00:43:21,166 - 00:43:23,166] Sometimes
+- [00:43:23,166 - 00:43:25,166] called s.
+- [00:43:25,166 - 00:43:27,166] But, yes, tau is the
+- [00:43:27,166 - 00:43:29,166] standard, is a standard symbol
+- [00:43:29,166 - 00:43:31,166] for proper time.
+- [00:43:31,166 - 00:43:33,166] Okay.
+- [00:43:33,166 - 00:43:35,166] Alright, we'll use that over
+- [00:43:35,166 - 00:43:37,166] and over. It gets tiresome to write
+- [00:43:37,166 - 00:43:39,166] down x squared minus, uh,
+- [00:43:39,166 - 00:43:41,166] t squared minus x squared minus y squared
+- [00:43:41,166 - 00:43:43,166] minus z squared.
+- [00:43:43,166 - 00:43:45,166] Um,
+- [00:43:45,166 - 00:43:47,166] and so, this is the
+- [00:43:47,166 - 00:43:49,166] notation that we'll use.
+- [00:43:53,166 - 00:43:55,166] That's one
+- [00:43:55,166 - 00:43:57,166] piece of mathematical notation.
+- [00:43:57,166 - 00:43:59,166] I won't call it mathematics. It's just notation
+- [00:43:59,166 - 00:44:01,166] that, uh,
+- [00:44:01,166 - 00:44:03,166] that is very, very convenient when studying
+- [00:44:03,166 - 00:44:05,166] relativity. In fact, it would be very
+- [00:44:05,166 - 00:44:07,166] difficult to write the equations of relativity
+- [00:44:07,166 - 00:44:09,166] without this, uh, without this notational
+- [00:44:09,166 - 00:44:11,166] device.
+- [00:44:11,166 - 00:44:13,166] Okay, next, let's
+- [00:44:13,166 - 00:44:15,166] talk about transformation
+- [00:44:15,166 - 00:44:17,166] laws in general. In fact, let's talk about
+- [00:44:17,166 - 00:44:19,166] not Lorentz transformations.
+- [00:44:19,166 - 00:44:21,166] Lorentz transformations
+- [00:44:21,166 - 00:44:23,166] are things
+- [00:44:23,166 - 00:44:25,166] which mix time and space
+- [00:44:25,166 - 00:44:27,166] together. For example,
+- [00:44:27,166 - 00:44:29,166] if you consider a, uh, two,
+- [00:44:29,166 - 00:44:31,166] um, observers which are moving relative
+- [00:44:31,166 - 00:44:33,166] to each other along the x-axis,
+- [00:44:33,166 - 00:44:35,166] then we have Lorentz transformations
+- [00:44:35,166 - 00:44:37,166] which mix x and t,
+- [00:44:37,166 - 00:44:39,166] leave y and z alone.
+- [00:44:39,166 - 00:44:41,166] Those are Lorentz transformations.
+- [00:44:41,166 - 00:44:43,166] Uh, and the
+- [00:44:43,166 - 00:44:45,166] principle of relativity
+- [00:44:45,166 - 00:44:47,166] is a principle of symmetry
+- [00:44:47,166 - 00:44:49,166] that says the equations of our theory
+- [00:44:49,166 - 00:44:51,166] should be symmetric, should not change
+- [00:44:51,166 - 00:44:53,166] when we make a Lorentz transformation.
+- [00:44:53,166 - 00:44:55,166] Well, there are other symmetries
+- [00:44:55,166 - 00:44:57,166] that are more familiar.
+- [00:44:57,166 - 00:44:59,166] The simplest of which is
+- [00:44:59,166 - 00:45:01,166] just rotation of coordinates in space.
+- [00:45:01,166 - 00:45:03,166] Ordinary spatial rota- coordinate
+- [00:45:03,166 - 00:45:05,166] rotations.
+- [00:45:05,166 - 00:45:07,166] Uh, in fact,
+- [00:45:07,166 - 00:45:09,166] if we combine the two
+- [00:45:09,166 - 00:45:11,166] together, Lorentz transformations
+- [00:45:11,166 - 00:45:13,166] and spatial rotations,
+- [00:45:13,166 - 00:45:15,166] we get a large
+- [00:45:15,166 - 00:45:17,166] number of transformations
+- [00:45:17,166 - 00:45:19,166] which represents basically the
+- [00:45:19,166 - 00:45:21,166] entire set of symmetries of
+- [00:45:21,166 - 00:45:23,166] relativistic physics, almost
+- [00:45:23,166 - 00:45:25,166] the entire set. But here's the point.
+- [00:45:25,166 - 00:45:27,166] Here's- let's
+- [00:45:27,166 - 00:45:29,166] draw in one more axis.
+- [00:45:29,166 - 00:45:31,166] Here's x,
+- [00:45:31,166 - 00:45:33,166] here's t, and let's
+- [00:45:33,166 - 00:45:35,166] draw in y. Z is
+- [00:45:35,166 - 00:45:37,166] somewhere in the fourth
+- [00:45:37,166 - 00:45:39,166] dimension. We can't see it, but
+- [00:45:39,166 - 00:45:41,166] it's also there. Now,
+- [00:45:41,166 - 00:45:43,166] I've taught you how to do Lorentz transformations
+- [00:45:43,166 - 00:45:45,166] along the x-axis. In other words,
+- [00:45:45,166 - 00:45:47,166] I've taught you how to compare
+- [00:45:47,166 - 00:45:49,166] the coordinates of
+- [00:45:49,166 - 00:45:51,166] a moving observer who's moving
+- [00:45:51,166 - 00:45:53,166] along the x-axis with the
+- [00:45:53,166 - 00:45:55,166] coordinates of the stationary observer.
+- [00:45:55,166 - 00:45:57,166] Alright? I don't think it would be too
+- [00:45:57,166 - 00:45:59,166] hard- oh, and remember what it does.
+- [00:45:59,166 - 00:46:01,166] It mixes x and t
+- [00:46:01,166 - 00:46:03,166] together, but leaves y alone.
+- [00:46:03,166 - 00:46:05,166] Alright?
+- [00:46:05,166 - 00:46:07,166] It leaves y alone, it does not transform
+- [00:46:07,166 - 00:46:09,166] the coordinate perpendicular to the
+- [00:46:09,166 - 00:46:11,166] motion, to the relative motion.
+- [00:46:11,166 - 00:46:13,166] So, everybody
+- [00:46:13,166 - 00:46:15,166] agrees about y, but they
+- [00:46:15,166 - 00:46:17,166] disagree about t and x,
+- [00:46:17,166 - 00:46:19,166] but nevertheless they transform
+- [00:46:19,166 - 00:46:21,166] into each other in the Lorentz transformations.
+- [00:46:21,166 - 00:46:23,166] Now, I think you
+- [00:46:23,166 - 00:46:25,166] could probably figure out if instead
+- [00:46:25,166 - 00:46:27,166] of thinking of two observables
+- [00:46:27,166 - 00:46:29,166] moving relative to each other along the
+- [00:46:29,166 - 00:46:31,166] x-axis, suppose we had
+- [00:46:31,166 - 00:46:33,166] the second observer moving along the y-axis.
+- [00:46:33,166 - 00:46:35,166] I think you could probably
+- [00:46:35,166 - 00:46:37,166] figure out how to do the transformations.
+- [00:46:37,166 - 00:46:39,166] Instead of writing
+- [00:46:39,166 - 00:46:41,166] things like x prime
+- [00:46:41,166 - 00:46:43,166] is equal to x minus vt
+- [00:46:43,166 - 00:46:45,166] over square root of 1 minus v squared,
+- [00:46:45,166 - 00:46:47,166] t prime equals
+- [00:46:47,166 - 00:46:49,166] t minus
+- [00:46:49,166 - 00:46:51,166] vx over
+- [00:46:51,166 - 00:46:53,166] square root of 1 minus v squared,
+- [00:46:53,166 - 00:46:55,166] and y prime
+- [00:46:55,166 - 00:46:57,166] equals y, and also z prime
+- [00:46:57,166 - 00:46:59,166] equals z,
+- [00:46:59,166 - 00:47:01,166] all you would really have to do
+- [00:47:01,166 - 00:47:03,166] is interchange x and y,
+- [00:47:03,166 - 00:47:05,166] and write that
+- [00:47:05,166 - 00:47:07,166] y prime is equal to y minus
+- [00:47:07,166 - 00:47:09,166] vt, t prime
+- [00:47:09,166 - 00:47:11,166] is t minus
+- [00:47:11,166 - 00:47:13,166] vy, but x prime
+- [00:47:13,166 - 00:47:15,166] is equal to x.
+- [00:47:15,166 - 00:47:17,166] That wouldn't be very hard, you just
+- [00:47:17,166 - 00:47:19,166] realize
+- [00:47:19,166 - 00:47:21,166] that what you originally
+- [00:47:21,166 - 00:47:23,166] called the x-axis has now become
+- [00:47:23,166 - 00:47:25,166] the y-axis,
+- [00:47:25,166 - 00:47:27,166] and simply make that replacement.
+- [00:47:27,166 - 00:47:29,166] But supposing you wanted to do a
+- [00:47:29,166 - 00:47:31,166] Lorentz transformation, in other words,
+- [00:47:31,166 - 00:47:33,166] you wanted to consider an observer who
+- [00:47:33,166 - 00:47:35,166] was moving along some funny axis,
+- [00:47:35,166 - 00:47:37,166] neither x nor y,
+- [00:47:37,166 - 00:47:39,166] but along some funny angle,
+- [00:47:39,166 - 00:47:41,166] then the thing to do
+- [00:47:41,166 - 00:47:43,166] would be, before you make
+- [00:47:43,166 - 00:47:45,166] the Lorentz transformation, do
+- [00:47:45,166 - 00:47:47,166] a rotation of coordinates in space.
+- [00:47:47,166 - 00:47:49,166] Find
+- [00:47:49,166 - 00:47:51,166] a new
+- [00:47:51,166 - 00:47:53,166] coordinate, x prime,
+- [00:47:53,166 - 00:47:55,166] and a new coordinate, y prime,
+- [00:47:55,166 - 00:47:57,166] which are just
+- [00:47:57,166 - 00:47:59,166] rotated in space,
+- [00:47:59,166 - 00:48:01,166] and then do your Lorentz
+- [00:48:01,166 - 00:48:03,166] transformation along the new
+- [00:48:03,166 - 00:48:05,166] primed axes.
+- [00:48:07,166 - 00:48:09,166] By compounding together
+- [00:48:09,166 - 00:48:11,166] rotations of space
+- [00:48:11,166 - 00:48:13,166] with Lorentz transformations
+- [00:48:13,166 - 00:48:15,166] along one axis,
+- [00:48:15,166 - 00:48:17,166] you can construct
+- [00:48:17,166 - 00:48:19,166] all of the possible
+- [00:48:19,166 - 00:48:21,166] frames of reference
+- [00:48:21,166 - 00:48:23,166] moving relative to each other
+- [00:48:23,166 - 00:48:25,166] with uniform velocity.
+- [00:48:25,166 - 00:48:27,166] If they're
+- [00:48:27,166 - 00:48:29,166] moving along some,
+- [00:48:29,166 - 00:48:31,166] not along one of the original axes,
+- [00:48:31,166 - 00:48:33,166] all you do is rotate coordinates
+- [00:48:33,166 - 00:48:35,166] from the, rotate spatial coordinates
+- [00:48:35,166 - 00:48:37,166] until you have your axis,
+- [00:48:37,166 - 00:48:39,166] until you have your axis of motion
+- [00:48:39,166 - 00:48:41,166] aligned with one of the new axes,
+- [00:48:41,166 - 00:48:43,166] and then do the Lorentz transformation
+- [00:48:43,166 - 00:48:45,166] along there.
+- [00:48:45,166 - 00:48:47,166] Okay?
+- [00:48:47,166 - 00:48:49,166] So, the other thing then
+- [00:48:49,166 - 00:48:51,166] that we have to know
+- [00:48:51,166 - 00:48:53,166] is how to transform coordinates
+- [00:48:53,166 - 00:48:55,166] under rotations of space.
+- [00:48:55,166 - 00:48:57,166] So, if you're
+- [00:48:57,166 - 00:48:59,166] doing a
+- [00:48:59,166 - 00:49:01,166] Lorentz transformation,
+- [00:49:01,166 - 00:49:03,166] you're going to have to
+- [00:49:03,166 - 00:49:05,166] rotate coordinates
+- [00:49:05,166 - 00:49:07,166] along the new axes.
+- [00:49:07,166 - 00:49:09,166] Now, this is something that has
+- [00:49:09,166 - 00:49:11,166] nothing to do with Einstein.
+- [00:49:11,166 - 00:49:13,166] It goes back probably to Euclid.
+- [00:49:13,166 - 00:49:15,166] I don't know who was the first one
+- [00:49:15,166 - 00:49:17,166] who figured out how to rotate coordinates.
+- [00:49:17,166 - 00:49:19,166] I don't know if Euclid used
+- [00:49:19,166 - 00:49:21,166] coordinates and vectors,
+- [00:49:21,166 - 00:49:23,166] and so I don't think he did,
+- [00:49:23,166 - 00:49:25,166] but who does that go back to?
+- [00:49:25,166 - 00:49:27,166] Descartes?
+- [00:49:27,166 - 00:49:29,166] Yeah, so,
+- [00:49:29,166 - 00:49:31,166] but in any case,
+- [00:49:31,166 - 00:49:33,166] it goes way, way back
+- [00:49:33,166 - 00:49:35,166] past Einstein,
+- [00:49:35,166 - 00:49:37,166] just rotations of coordinates.
+- [00:49:37,166 - 00:49:39,166] Every rotation in space
+- [00:49:39,166 - 00:49:41,166] has an axis.
+- [00:49:41,166 - 00:49:43,166] We can pick our axis,
+- [00:49:43,166 - 00:49:45,166] let's pick the z-axis
+- [00:49:45,166 - 00:49:47,166] to rotate around.
+- [00:49:47,166 - 00:49:49,166] If we pick the z-axis
+- [00:49:49,166 - 00:49:51,166] to rotate around,
+- [00:49:51,166 - 00:49:53,166] then only x and y transform.
+- [00:49:53,166 - 00:49:55,166] Z stays the same,
+- [00:49:55,166 - 00:49:57,166] so we're rotating about the z-axis
+- [00:49:57,166 - 00:49:59,166] I don't know where z is,
+- [00:49:59,166 - 00:50:01,166] z is vertical,
+- [00:50:01,166 - 00:50:03,166] and we're rotating about that axis,
+- [00:50:03,166 - 00:50:04,166] and so x and y
+- [00:50:04,166 - 00:50:05,166] get mixed up with each other.
+- [00:50:05,166 - 00:50:07,166] Let's just write down,
+- [00:50:07,166 - 00:50:09,166] I'm not going to prove,
+- [00:50:09,166 - 00:50:11,166] it takes a little bit of trigonometry
+- [00:50:11,166 - 00:50:13,166] to figure out what the transformations are.
+- [00:50:13,166 - 00:50:15,166] Let's draw the xy plane
+- [00:50:15,166 - 00:50:17,166] this way,
+- [00:50:17,166 - 00:50:19,166] here's x, here's y,
+- [00:50:19,166 - 00:50:21,166] here's x prime,
+- [00:50:21,166 - 00:50:23,166] here's y prime,
+- [00:50:23,166 - 00:50:25,166] the angle of rotation is theta,
+- [00:50:25,166 - 00:50:27,166] and here's y prime,
+- [00:50:27,166 - 00:50:29,166] and here's some vector
+- [00:50:29,166 - 00:50:31,166] with coordinates x, y.
+- [00:50:33,166 - 00:50:35,166] The question is,
+- [00:50:35,166 - 00:50:37,166] and coordinates x, y means that
+- [00:50:37,166 - 00:50:39,166] if you drop a perpendicular
+- [00:50:39,166 - 00:50:41,166] to the x-axis,
+- [00:50:41,166 - 00:50:43,166] it'll intersect at point x,
+- [00:50:43,166 - 00:50:45,166] and if you drop a perpendicular
+- [00:50:45,166 - 00:50:47,166] to the y-axis,
+- [00:50:47,166 - 00:50:49,166] it will give you y.
+- [00:50:49,166 - 00:50:51,166] Now, you want the primed coordinates,
+- [00:50:51,166 - 00:50:53,166] the primed coordinates
+- [00:50:53,166 - 00:50:55,166] after rotation,
+- [00:50:55,166 - 00:50:57,166] you do the same thing,
+- [00:50:57,166 - 00:50:59,166] you drop a perpendicular
+- [00:50:59,166 - 00:51:01,166] to the x-axis,
+- [00:51:01,166 - 00:51:03,166] you drop a perpendicular
+- [00:51:03,166 - 00:51:05,166] to the y-axis,
+- [00:51:05,166 - 00:51:07,166] and you look at the coordinates
+- [00:51:07,166 - 00:51:09,166] in the x- and y-axis.
+- [00:51:09,166 - 00:51:11,166] So that's the geometry,
+- [00:51:11,166 - 00:51:13,166] that's the geometry of the
+- [00:51:13,166 - 00:51:15,166] coordinate transformation
+- [00:51:15,166 - 00:51:17,166] from x and y
+- [00:51:17,166 - 00:51:19,166] to x- and y-prime,
+- [00:51:19,166 - 00:51:21,166] it's just a matter of dropping
+- [00:51:21,166 - 00:51:23,166] perpendicular to the appropriate axes.
+- [00:51:23,166 - 00:51:25,166] I'm going to give you the formula
+- [00:51:25,166 - 00:51:27,166] for y,
+- [00:51:27,166 - 00:51:29,166] it depends on the angle of theta,
+- [00:51:29,166 - 00:51:31,166] and you can check this,
+- [00:51:31,166 - 00:51:33,166] it's a little bit of trigonometry,
+- [00:51:33,166 - 00:51:35,166] elementary trigonometry.
+- [00:51:35,166 - 00:51:37,166] x-prime is equal to
+- [00:51:37,166 - 00:51:39,166] x-cosine theta
+- [00:51:39,166 - 00:51:41,166] plus y sine of theta,
+- [00:51:41,166 - 00:51:43,166] and y-prime
+- [00:51:43,166 - 00:51:45,166] is equal to
+- [00:51:45,166 - 00:51:47,166] minus x sine theta
+- [00:51:47,166 - 00:51:49,166] plus y cosine theta.
+- [00:51:53,166 - 00:51:55,166] You'll see that
+- [00:51:55,166 - 00:51:57,166] you can check that, for example,
+- [00:51:57,166 - 00:51:59,166] when theta is zero degrees,
+- [00:51:59,166 - 00:52:01,166] what does it say when theta is zero degrees?
+- [00:52:01,166 - 00:52:03,166] Sine of theta is zero,
+- [00:52:03,166 - 00:52:05,166] cosine of theta is one,
+- [00:52:05,166 - 00:52:07,166] so it says x-prime is equal to x,
+- [00:52:07,166 - 00:52:09,166] and it says y-prime is equal to y.
+- [00:52:09,166 - 00:52:11,166] That's good, a rotation by zero degrees
+- [00:52:11,166 - 00:52:13,166] is no rotation at all.
+- [00:52:13,166 - 00:52:15,166] Now try a rotation by 90 degrees
+- [00:52:15,166 - 00:52:17,166] and you'll see that it also works,
+- [00:52:17,166 - 00:52:19,166] and that's the general rotation
+- [00:52:19,166 - 00:52:21,166] of coordinates.
+- [00:52:21,166 - 00:52:23,166] Now,
+- [00:52:23,166 - 00:52:25,166] this transformation,
+- [00:52:25,166 - 00:52:27,166] which is left invariant
+- [00:52:27,166 - 00:52:29,166] by this transformation,
+- [00:52:29,166 - 00:52:31,166] is the distance to the point x,y.
+- [00:52:31,166 - 00:52:33,166] By left invariant,
+- [00:52:33,166 - 00:52:35,166] I mean
+- [00:52:35,166 - 00:52:37,166] that the distance,
+- [00:52:37,166 - 00:52:39,166] the square of the distance
+- [00:52:39,166 - 00:52:41,166] to the point x,y,
+- [00:52:41,166 - 00:52:43,166] what is that?
+- [00:52:43,166 - 00:52:45,166] The square of the distance
+- [00:52:45,166 - 00:52:47,166] is x-squared plus y-squared.
+- [00:52:47,166 - 00:52:49,166] If you move the point
+- [00:52:49,166 - 00:52:51,166] out of the plane,
+- [00:52:51,166 - 00:52:53,166] you might also add in z-squared.
+- [00:52:53,166 - 00:52:55,166] Oh, let's add in z.
+- [00:52:55,166 - 00:52:57,166] z-prime is equal to z.
+- [00:52:57,166 - 00:52:59,166] You're rotating
+- [00:52:59,166 - 00:53:01,166] about the z-axis,
+- [00:53:01,166 - 00:53:03,166] and so nothing happens to z.
+- [00:53:03,166 - 00:53:05,166] Alright,
+- [00:53:05,166 - 00:53:07,166] what this transformation leaves invariant
+- [00:53:07,166 - 00:53:09,166] is x-squared plus y-squared
+- [00:53:09,166 - 00:53:11,166] plus z-squared.
+- [00:53:11,166 - 00:53:13,166] Let's start with x-squared plus y-squared.
+- [00:53:13,166 - 00:53:15,166] Let's forget z for the moment.
+- [00:53:15,166 - 00:53:17,166] That means
+- [00:53:17,166 - 00:53:19,166] that after you've made
+- [00:53:19,166 - 00:53:21,166] the transformation,
+- [00:53:21,166 - 00:53:23,166] x-squared plus y-squared is the same thing
+- [00:53:23,166 - 00:53:25,166] as x-prime squared plus y-squared.
+- [00:53:25,166 - 00:53:27,166] Well,
+- [00:53:27,166 - 00:53:29,166] geometrically the reason is
+- [00:53:29,166 - 00:53:31,166] because it doesn't matter
+- [00:53:31,166 - 00:53:33,166] whether you calculate the distance
+- [00:53:33,166 - 00:53:35,166] by referring to the original coordinates
+- [00:53:35,166 - 00:53:37,166] or the rotating coordinates.
+- [00:53:37,166 - 00:53:39,166] The distance must be the same.
+- [00:53:39,166 - 00:53:41,166] Distance is what you measure with a tape measure,
+- [00:53:41,166 - 00:53:43,166] and the tape measure
+- [00:53:43,166 - 00:53:45,166] doesn't know what your
+- [00:53:45,166 - 00:53:47,166] where your coordinates are,
+- [00:53:47,166 - 00:53:49,166] so the answer has to be the same.
+- [00:53:49,166 - 00:53:51,166] x-squared plus y-squared must be equal to
+- [00:53:51,166 - 00:53:53,166] x-prime squared plus y-prime squared,
+- [00:53:53,166 - 00:53:55,166] but you can check that.
+- [00:53:55,166 - 00:53:57,166] For example,
+- [00:53:57,166 - 00:53:59,166] x-prime squared is
+- [00:53:59,166 - 00:54:01,166] let me just call cosine theta c
+- [00:54:01,166 - 00:54:03,166] and cosine theta s
+- [00:54:03,166 - 00:54:05,166] so I don't have to write so much.
+- [00:54:05,166 - 00:54:07,166] x-prime squared.
+- [00:54:07,166 - 00:54:09,166] What's x-prime squared?
+- [00:54:09,166 - 00:54:11,166] That's x-squared c-squared
+- [00:54:11,166 - 00:54:13,166] plus y-squared s-squared
+- [00:54:13,166 - 00:54:15,166] plus
+- [00:54:15,166 - 00:54:17,166] twice xy
+- [00:54:17,166 - 00:54:19,166] c-s.
+- [00:54:19,166 - 00:54:21,166] x-squared c-squared
+- [00:54:21,166 - 00:54:23,166] plus y-squared s-squared
+- [00:54:23,166 - 00:54:25,166] plus twice the cross term.
+- [00:54:25,166 - 00:54:27,166] That's x-prime squared.
+- [00:54:27,166 - 00:54:29,166] What about y-prime squared?
+- [00:54:29,166 - 00:54:31,166] That's
+- [00:54:31,166 - 00:54:33,166] y-prime squared is
+- [00:54:33,166 - 00:54:35,166] x-squared
+- [00:54:35,166 - 00:54:37,166] s-squared
+- [00:54:37,166 - 00:54:39,166] from here
+- [00:54:39,166 - 00:54:41,166] plus y-squared c-squared
+- [00:54:41,166 - 00:54:43,166] from the second term
+- [00:54:43,166 - 00:54:45,166] and then minus
+- [00:54:45,166 - 00:54:47,166] because there's a minus sign here
+- [00:54:47,166 - 00:54:49,166] minus 2xy c-s.
+- [00:54:51,166 - 00:54:53,166] Now add them together.
+- [00:54:53,166 - 00:54:55,166] Alright?
+- [00:54:55,166 - 00:54:57,166] On the left hand side you just get
+- [00:54:57,166 - 00:54:59,166] x-prime squared plus y-prime squared
+- [00:54:59,166 - 00:55:01,166] but on the right hand side
+- [00:55:01,166 - 00:55:03,166] you get x-squared
+- [00:55:03,166 - 00:55:05,166] times cosine squared
+- [00:55:05,166 - 00:55:07,166] plus sine squared.
+- [00:55:07,166 - 00:55:09,166] Cosine squared plus sine squared is one, right?
+- [00:55:09,166 - 00:55:11,166] So that's just x-squared.
+- [00:55:13,166 - 00:55:15,166] y-squared you also have
+- [00:55:15,166 - 00:55:17,166] s-squared plus c-squared
+- [00:55:17,166 - 00:55:19,166] so that's just y-squared.
+- [00:55:19,166 - 00:55:21,166] And the cross term here
+- [00:55:21,166 - 00:55:23,166] just cancels.
+- [00:55:23,166 - 00:55:25,166] So if you add 2xy c-s
+- [00:55:25,166 - 00:55:27,166] and minus 2xy c-s
+- [00:55:27,166 - 00:55:29,166] this goes away.
+- [00:55:29,166 - 00:55:31,166] Alright, so we're only proving
+- [00:55:31,166 - 00:55:33,166] what's obvious anyway
+- [00:55:33,166 - 00:55:35,166] that the expression for the distance
+- [00:55:35,166 - 00:55:37,166] doesn't depend exactly on how you orient the axes.
+- [00:55:37,166 - 00:55:39,166] It's always just x-squared plus y-squared.
+- [00:55:39,166 - 00:55:41,166] If we added in
+- [00:55:41,166 - 00:55:43,166] z-prime equals z
+- [00:55:43,166 - 00:55:45,166] since z is
+- [00:55:45,166 - 00:55:47,166] equal to the same as z-prime
+- [00:55:47,166 - 00:55:49,166] we could also say
+- [00:55:49,166 - 00:55:51,166] that the distance in three dimensions
+- [00:55:51,166 - 00:55:53,166] is unjustified.
+- [00:55:53,166 - 00:55:55,166] Z is unchanged.
+- [00:55:55,166 - 00:55:57,166] Z is the same as z-prime
+- [00:55:57,166 - 00:55:59,166] so there's nothing new there.
+- [00:55:59,166 - 00:56:01,166] The rotations
+- [00:56:01,166 - 00:56:03,166] mathematically
+- [00:56:03,166 - 00:56:05,166] are transformations
+- [00:56:05,166 - 00:56:07,166] on the components
+- [00:56:07,166 - 00:56:09,166] which preserve the length
+- [00:56:09,166 - 00:56:11,166] which keep the length unchanged.
+- [00:56:11,166 - 00:56:13,166] That's the mathematical
+- [00:56:13,166 - 00:56:15,166] definition of the rotations.
+- [00:56:15,166 - 00:56:17,166] Alright, now
+- [00:56:17,166 - 00:56:19,166] there's another way to write
+- [00:56:19,166 - 00:56:21,166] such a transformation.
+- [00:56:21,166 - 00:56:23,166] I wonder, people seem to be walking in.
+- [00:56:23,166 - 00:56:25,166] I'm going to use the...
+- [00:56:31,166 - 00:56:33,166] Is this 200 or is this 201?
+- [00:56:33,166 - 00:56:35,166] Yeah, it's 201.
+- [00:56:35,166 - 00:56:37,166] Yeah.
+- [00:56:37,166 - 00:56:39,166] Okay, so
+- [00:56:39,166 - 00:56:41,166] that's the
+- [00:56:41,166 - 00:56:43,166] idea of rotations.
+- [00:56:43,166 - 00:56:45,166] If you combine the rotations
+- [00:56:45,166 - 00:56:47,166] with Lorentz transformations
+- [00:56:47,166 - 00:56:49,166] in other words, after having
+- [00:56:49,166 - 00:56:51,166] made the transformation to x-prime
+- [00:56:51,166 - 00:56:53,166] and y-prime
+- [00:56:53,166 - 00:56:55,166] and also t-prime
+- [00:56:55,166 - 00:56:57,166] is equal to t
+- [00:56:57,166 - 00:56:59,166] if you like, if you want to
+- [00:56:59,166 - 00:57:01,166] think about the full four dimensions
+- [00:57:01,166 - 00:57:03,166] then
+- [00:57:03,166 - 00:57:05,166] you can go and do
+- [00:57:05,166 - 00:57:07,166] a new Lorentz transformation
+- [00:57:07,166 - 00:57:09,166] along the x-prime, t-prime
+- [00:57:09,166 - 00:57:11,166] axis and in that way
+- [00:57:11,166 - 00:57:13,166] build an observer who is moving
+- [00:57:13,166 - 00:57:15,166] along the new x-prime axis
+- [00:57:15,166 - 00:57:17,166] rather than the old
+- [00:57:17,166 - 00:57:19,166] x-axis.
+- [00:57:19,166 - 00:57:21,166] So
+- [00:57:21,166 - 00:57:23,166] combining rotations
+- [00:57:23,166 - 00:57:25,166] and Lorentz transformations
+- [00:57:25,166 - 00:57:27,166] basically gives you a wide class
+- [00:57:27,166 - 00:57:29,166] of different transformations
+- [00:57:29,166 - 00:57:31,166] which correspond to the rotations
+- [00:57:31,166 - 00:57:33,166] of all kinds and
+- [00:57:33,166 - 00:57:35,166] Lorentz transformations along
+- [00:57:35,166 - 00:57:37,166] all the possible axes
+- [00:57:37,166 - 00:57:39,166] that you could
+- [00:57:39,166 - 00:57:41,166] do them along.
+- [00:57:43,166 - 00:57:45,166] Alright, now, more notation.
+- [00:57:45,166 - 00:57:47,166] More notation.
+- [00:57:49,166 - 00:57:51,166] Notation is boring, but once
+- [00:57:51,166 - 00:57:53,166] you get it, you've got it and
+- [00:57:53,166 - 00:57:55,166] it makes
+- [00:57:55,166 - 00:57:57,166] equations
+- [00:57:57,166 - 00:57:59,166] much easier,
+- [00:57:59,166 - 00:58:01,166] simpler, and easy to manipulate.
+- [00:58:03,166 - 00:58:05,166] Everybody here know a little bit
+- [00:58:05,166 - 00:58:07,166] of linear algebra?
+- [00:58:07,166 - 00:58:09,166] That's the wrong question.
+- [00:58:09,166 - 00:58:11,166] Does anybody here not know a little bit of
+- [00:58:11,166 - 00:58:13,166] linear algebra?
+- [00:58:13,166 - 00:58:15,166] Everybody knows linear algebra. Good.
+- [00:58:15,166 - 00:58:17,166] We don't need to, we don't need to
+- [00:58:17,166 - 00:58:19,166] Okay, good.
+- [00:58:19,166 - 00:58:21,166] That's excellent. Alright, now there are two ways
+- [00:58:21,166 - 00:58:23,166] that we could write this
+- [00:58:23,166 - 00:58:25,166] these equations like this. Let's just take
+- [00:58:25,166 - 00:58:27,166] this one here. We could write it
+- [00:58:27,166 - 00:58:29,166] in a matrix form, x-prime
+- [00:58:29,166 - 00:58:31,166] y-prime is equal to some
+- [00:58:31,166 - 00:58:33,166] matrix times xy.
+- [00:58:33,166 - 00:58:35,166] The matrix
+- [00:58:35,166 - 00:58:37,166] would in fact just be
+- [00:58:37,166 - 00:58:39,166] cosine theta
+- [00:58:39,166 - 00:58:41,166] sine theta
+- [00:58:41,166 - 00:58:43,166] minus sine theta
+- [00:58:43,166 - 00:58:45,166] cosine theta.
+- [00:58:47,166 - 00:58:49,166] We could also write it in
+- [00:58:49,166 - 00:58:51,166] another form. We could write
+- [00:58:51,166 - 00:58:53,166] x, and we could also
+- [00:58:53,166 - 00:58:55,166] put here, we also put here z-prime
+- [00:58:55,166 - 00:58:57,166] z-prime z
+- [00:58:57,166 - 00:58:59,166] and then the matrix
+- [00:58:59,166 - 00:59:01,166] would be
+- [00:59:03,166 - 00:59:05,166] a three by three matrix
+- [00:59:05,166 - 00:59:07,166] zero zero one
+- [00:59:09,166 - 00:59:11,166] The matrix would then act
+- [00:59:11,166 - 00:59:13,166] among the xy components
+- [00:59:13,166 - 00:59:15,166] here to mix them up, leaving
+- [00:59:15,166 - 00:59:17,166] z out of the picture altogether
+- [00:59:17,166 - 00:59:19,166] and then it would act on z to give
+- [00:59:19,166 - 00:59:21,166] z-prime, which would just be z equals
+- [00:59:21,166 - 00:59:23,166] z-prime. So
+- [00:59:23,166 - 00:59:25,166] every such transformation has a matrix
+- [00:59:25,166 - 00:59:27,166] associated with it
+- [00:59:29,166 - 00:59:31,166] And there's another way to write
+- [00:59:31,166 - 00:59:33,166] this. We could also write this in another
+- [00:59:33,166 - 00:59:35,166] form
+- [00:59:35,166 - 00:59:37,166] x
+- [00:59:37,166 - 00:59:39,166] i-prime
+- [00:59:39,166 - 00:59:41,166] Now
+- [00:59:41,166 - 00:59:43,166] i is only going from one to three
+- [00:59:43,166 - 00:59:45,166] So far I haven't
+- [00:59:45,166 - 00:59:47,166] mixed in time.
+- [00:59:47,166 - 00:59:49,166] x-prime i, i could be
+- [00:59:49,166 - 00:59:51,166] one, two, or three
+- [00:59:51,166 - 00:59:53,166] representing x, y, or z
+- [00:59:53,166 - 00:59:55,166] is equal to
+- [00:59:55,166 - 00:59:57,166] m ij
+- [00:59:57,166 - 00:59:59,166] xj
+- [00:59:59,166 - 01:00:01,166] xj
+- [01:00:01,166 - 01:00:03,166] xj
+- [01:00:03,166 - 01:00:05,166] Where m ij just represents the
+- [01:00:05,166 - 01:00:07,166] components of the matrix
+- [01:00:07,166 - 01:00:09,166] This is the same expression
+- [01:00:09,166 - 01:00:11,166] multiplying
+- [01:00:11,166 - 01:00:13,166] and summing over j
+- [01:00:13,166 - 01:00:15,166] As always, when we see repeated
+- [01:00:15,166 - 01:00:17,166] index, we sum over j
+- [01:00:17,166 - 01:00:19,166] In this case, since it's only
+- [01:00:19,166 - 01:00:21,166] got to do with space and no time
+- [01:00:21,166 - 01:00:23,166] no difference, well, I'm not
+- [01:00:23,166 - 01:00:25,166] going to worry about upstairs and downstairs
+- [01:00:25,166 - 01:00:27,166] indices. It's only when time comes into it
+- [01:00:27,166 - 01:00:29,166] that we worry about that
+- [01:00:29,166 - 01:00:31,166] This is a way of writing
+- [01:00:31,166 - 01:00:33,166] a vector is equal to a matrix times
+- [01:00:33,166 - 01:00:35,166] a vector, and we can write
+- [01:00:35,166 - 01:00:37,166] it this way here
+- [01:00:37,166 - 01:00:39,166] Both exactly the same expression
+- [01:00:39,166 - 01:00:41,166] Okay, any question about
+- [01:00:41,166 - 01:00:43,166] that? Because if you know this
+- [01:00:43,166 - 01:00:45,166] then we can move on to
+- [01:00:45,166 - 01:00:47,166] Lorentz transformations
+- [01:00:47,166 - 01:00:49,166] Lorentz transformations
+- [01:00:49,166 - 01:00:51,166] also have a similar form
+- [01:00:51,166 - 01:00:53,166] They're also
+- [01:00:53,166 - 01:00:55,166] matrices multiplied
+- [01:00:55,166 - 01:00:57,166] by components
+- [01:00:57,166 - 01:00:59,166] So let's work that out in detail
+- [01:00:59,166 - 01:01:01,166] Let's work out
+- [01:01:01,166 - 01:01:03,166] the matrix associated
+- [01:01:03,166 - 01:01:05,166] This is the matrix associated with a certain
+- [01:01:05,166 - 01:01:07,166] rotation. This isn't the most
+- [01:01:07,166 - 01:01:09,166] general rotation. This is the most
+- [01:01:09,166 - 01:01:11,166] general rotation about the z-axis
+- [01:01:11,166 - 01:01:13,166] We could rotate about some other
+- [01:01:13,166 - 01:01:15,166] axis and it gets more complicated
+- [01:01:15,166 - 01:01:17,166] but this is typical
+- [01:01:17,166 - 01:01:19,166] of a rotation matrix
+- [01:01:19,166 - 01:01:21,166] Good. Let's write
+- [01:01:21,166 - 01:01:23,166] a Lorentz transformation
+- [01:01:23,166 - 01:01:25,166] x prime
+- [01:01:25,166 - 01:01:27,166] is equal to x
+- [01:01:27,166 - 01:01:29,166] minus vt over square
+- [01:01:29,166 - 01:01:31,166] root of 1 minus v squared
+- [01:01:31,166 - 01:01:33,166] y prime
+- [01:01:33,166 - 01:01:35,166] is equal to y
+- [01:01:35,166 - 01:01:37,166] z prime
+- [01:01:37,166 - 01:01:39,166] is equal to z
+- [01:01:39,166 - 01:01:41,166] and t prime
+- [01:01:41,166 - 01:01:43,166] is equal to t minus vx
+- [01:01:43,166 - 01:01:45,166] divided by square
+- [01:01:45,166 - 01:01:47,166] root of 1 minus v squared
+- [01:01:47,166 - 01:01:49,166] This is just a good old Lorentz
+- [01:01:49,166 - 01:01:51,166] transformation except with
+- [01:01:51,166 - 01:01:53,166] y and z doing nothing
+- [01:01:53,166 - 01:01:55,166] staying the same
+- [01:01:55,166 - 01:01:57,166] We can also write this
+- [01:01:57,166 - 01:01:59,166] in terms of a
+- [01:01:59,166 - 01:02:01,166] 4 by 4 matrix
+- [01:02:01,166 - 01:02:03,166] The 4 by 4 matrix
+- [01:02:05,166 - 01:02:07,166] equation
+- [01:02:09,166 - 01:02:11,166] Here's our matrix
+- [01:02:13,166 - 01:02:15,166] Okay, x
+- [01:02:15,166 - 01:02:17,166] Let's put, let's label the
+- [01:02:17,166 - 01:02:19,166] entries x, y
+- [01:02:19,166 - 01:02:21,166] z
+- [01:02:21,166 - 01:02:23,166] t
+- [01:02:23,166 - 01:02:25,166] x1, x2, x3, x0
+- [01:02:25,166 - 01:02:27,166] x, y, z, t
+- [01:02:27,166 - 01:02:29,166] x, y, z, t
+- [01:02:29,166 - 01:02:31,166] x, y, z, t
+- [01:02:35,166 - 01:02:37,166] Let's see what our entries are
+- [01:02:37,166 - 01:02:39,166] The coefficient in x prime
+- [01:02:39,166 - 01:02:41,166] the coefficient multiplying x
+- [01:02:41,166 - 01:02:43,166] is 1 over square root
+- [01:02:43,166 - 01:02:45,166] of 1 minus v squared
+- [01:02:45,166 - 01:02:47,166] The coefficient multiplying
+- [01:02:47,166 - 01:02:49,166] y is 0
+- [01:02:49,166 - 01:02:51,166] 0 and
+- [01:02:51,166 - 01:02:53,166] and uh
+- [01:02:53,166 - 01:02:55,166] minus v
+- [01:02:55,166 - 01:02:57,166] minus v
+- [01:02:57,166 - 01:02:59,166] minus v
+- [01:02:59,166 - 01:03:01,166] over square root of
+- [01:03:01,166 - 01:03:03,166] 1 minus v squared
+- [01:03:03,166 - 01:03:05,166] Let's see
+- [01:03:05,166 - 01:03:07,166] 0 of
+- [01:03:13,166 - 01:03:15,166] and
+- [01:03:15,166 - 01:03:17,166] minus v over square root of
+- [01:03:17,166 - 01:03:19,166] 1 minus v squared
+- [01:03:21,166 - 01:03:25,396] squared of 1 minus v squared. Okay, let's
+- [01:03:25,396 - 01:03:29,626] see what this does. I maintain that if I
+- [01:03:29,626 - 01:03:34,536] take the column vector x prime, y prime, z
+- [01:03:34,536 - 01:03:39,446] prime, t prime, and I set it equal to
+- [01:03:39,446 - 01:03:42,456] this matrix times the column x, y,
+- [01:03:42,456 - 01:03:45,466] z, t, that that really is a Lorentz
+- [01:03:45,466 - 01:03:48,256] transformation. Let's see, what does it say?
+- [01:03:48,256 - 01:03:51,046] It says that x prime is equal to,
+- [01:03:51,046 - 01:03:55,576] let's forget this, it's says that x prime is
+- [01:03:55,576 - 01:04:00,106] equal- do I have it wrong? No, I have it-
+- [01:04:03,586 - 01:04:07,696] Yeah, the fourth one here is 1. Okay,
+- [01:04:07,696 - 01:04:11,806] yeah, alright. So, this says that x prime is
+- [01:04:11,806 - 01:04:13,496] equal to x divided by square
+- [01:04:13,496 - 01:04:15,186] root of 1 minus v squared.
+- [01:04:15,186 - 01:04:15,316] Again, remember, we're going to rather fit
+- [01:04:15,316 - 01:04:15,446] the same method in all the equations, see?
+- [01:04:15,466 - 01:04:18,986] minus vt over square root of 1 minus v squared
+- [01:04:18,986 - 01:04:22,466] with nothing mixing in from y and z, that's correct.
+- [01:04:22,466 - 01:04:26,466] It also says that y prime is equal to y,
+- [01:04:26,466 - 01:04:28,706] z prime is equal to z,
+- [01:04:28,706 - 01:04:31,346] and t prime is minus
+- [01:04:31,346 - 01:04:33,406] v over square root of
+- [01:04:33,406 - 01:04:35,466] 1 minus v squared times x
+- [01:04:35,466 - 01:04:37,466] plus 1 over square root
+- [01:04:37,466 - 01:04:39,466] of 1 minus v squared t.
+- [01:04:39,466 - 01:04:42,226] That's the other, that's the last equation here.
+- [01:04:42,226 - 01:04:46,226] So once again, a Lorentz transformation
+- [01:04:46,226 - 01:04:49,026] can be written as a matrix
+- [01:04:49,026 - 01:04:51,826] multiplying the column x, y, z, t.
+- [01:04:51,826 - 01:04:55,426] A rotation can be written as a
+- [01:04:55,426 - 01:04:59,026] matrix multiplying the column x, y, z, t.
+- [01:04:59,026 - 01:05:00,926] We don't usually think of the rotations
+- [01:05:00,926 - 01:05:02,826] as having to do anything with t,
+- [01:05:02,826 - 01:05:05,526] but we just think of
+- [01:05:05,526 - 01:05:08,226] a rotation as a spatial rotation,
+- [01:05:08,226 - 01:05:09,726] but that just means that
+- [01:05:09,726 - 01:05:11,226] t prime is equal to t
+- [01:05:11,226 - 01:05:12,226] when we do a rotation.
+- [01:05:12,226 - 01:05:14,726] So we have 4 by
+- [01:05:14,726 - 01:05:17,226] 4 matrices which correspond to rotations,
+- [01:05:17,226 - 01:05:19,226] we can call them R,
+- [01:05:19,226 - 01:05:21,226] and we have 4 by 4
+- [01:05:21,226 - 01:05:23,226] matrices which correspond to Lorentz transformations,
+- [01:05:23,226 - 01:05:25,226] we can call them L.
+- [01:05:25,226 - 01:05:29,226] What if we want to do a transformation,
+- [01:05:29,226 - 01:05:33,226] a Lorentz transformation along some other axis?
+- [01:05:33,226 - 01:05:38,226] What we do is we first use the rotation matrix
+- [01:05:38,226 - 01:05:40,226] to rotate axes,
+- [01:05:40,226 - 01:05:42,226] and then we use the rotation matrix to rotate axes,
+- [01:05:42,226 - 01:05:45,226] and then we use the Lorentz transformation matrix
+- [01:05:45,226 - 01:05:49,226] to boost or to give us some velocity
+- [01:05:49,226 - 01:05:52,226] along the new x prime axis.
+- [01:05:52,226 - 01:05:54,226] In other words, what it comes down to
+- [01:05:54,226 - 01:05:58,226] is you multiply rotation matrices by Lorentz matrices,
+- [01:05:58,226 - 01:06:00,226] you first rotate,
+- [01:06:00,226 - 01:06:01,226] you first rotate,
+- [01:06:01,226 - 01:06:04,226] and then you Lorentz transform.
+- [01:06:04,226 - 01:06:07,226] You multiply the matrices together
+- [01:06:07,226 - 01:06:10,226] to find what the action would be
+- [01:06:10,226 - 01:06:13,226] if you were to do a Lorentz transformation
+- [01:06:13,226 - 01:06:16,226] along some other angle.
+- [01:06:16,226 - 01:06:21,226] Let me work out one useful application
+- [01:06:21,226 - 01:06:26,226] of matrix multiplication.
+- [01:06:26,226 - 01:06:31,226] Not mixing rotations into the game now.
+- [01:06:31,226 - 01:06:33,226] We're not going to do much with rotations of space
+- [01:06:33,226 - 01:06:36,226] and Lorentz transformations simultaneously.
+- [01:06:36,226 - 01:06:39,226] It's enough to know that our laws of physics
+- [01:06:39,226 - 01:06:41,226] are invariant under rotations
+- [01:06:41,226 - 01:06:44,226] and Lorentz transformations along one single axis.
+- [01:06:44,226 - 01:06:46,226] Because if they're invariant under rotations
+- [01:06:46,226 - 01:06:49,226] and Lorentz transformations along an axis,
+- [01:06:49,226 - 01:06:52,226] then they will be invariant under Lorentz transformation
+- [01:06:52,226 - 01:06:54,226] along any axis.
+- [01:06:54,226 - 01:07:01,226] So, symmetry under rotation,
+- [01:07:01,226 - 01:07:02,226] well, that's easy.
+- [01:07:02,226 - 01:07:04,226] We all know how to think about that.
+- [01:07:04,226 - 01:07:06,226] It's symmetry under Lorentz transformations
+- [01:07:06,226 - 01:07:08,226] that we're interested in.
+- [01:07:09,226 - 01:07:13,226] What I want to work out using matrix multiplication
+- [01:07:13,226 - 01:07:17,226] is the compounding of velocities.
+- [01:07:17,226 - 01:07:22,226] If I am moving relative to u with velocity v,
+- [01:07:22,226 - 01:07:25,226] and there's a third observer
+- [01:07:25,226 - 01:07:30,226] who is moving relative to me with velocity u,
+- [01:07:30,226 - 01:07:33,226] v, that's me relative to u,
+- [01:07:33,226 - 01:07:35,226] u, that's him relative to me.
+- [01:07:35,226 - 01:07:37,226] Got that? v relative to me.
+- [01:07:37,226 - 01:07:41,226] v, me relative to u, u, him relative to me.
+- [01:07:41,226 - 01:07:43,226] Is that clear?
+- [01:07:47,226 - 01:07:49,226] I think you got it.
+- [01:07:49,226 - 01:07:55,226] Then, what's the transformation between him and you?
+- [01:07:55,226 - 01:07:59,226] What's the velocity that you will
+- [01:07:59,226 - 01:08:03,226] see him move with relative to you?
+- [01:08:03,226 - 01:08:05,226] Get me out of the picture. Eliminate me.
+- [01:08:05,226 - 01:08:07,226] Okay.
+- [01:08:07,226 - 01:08:09,226] That velocity we'll call w,
+- [01:08:09,226 - 01:08:10,726] but the trick is to find
+- [01:08:10,726 - 01:08:12,226] w in terms of v and u.
+- [01:08:12,226 - 01:08:15,226] Now, in old-fashioned pre-relativistic physics,
+- [01:08:15,226 - 01:08:20,225] the answer was his velocity is v plus u.
+- [01:08:20,225 - 01:08:22,225] I'm moving with velocity v,
+- [01:08:22,225 - 01:08:25,225] he's moving relative to me with velocity u.
+- [01:08:25,225 - 01:08:29,225] The natural expectation in ordinary Newtonian physics
+- [01:08:29,225 - 01:08:31,225] would be that him relative to
+- [01:08:31,225 - 01:08:33,225] u is velocity v plus u.
+- [01:08:33,225 - 01:08:34,225] So, let's do that.
+- [01:08:35,225 - 01:08:38,225] So, this is the formula for pre-relativistic physics,
+- [01:08:38,225 - 01:08:40,225] pre-Einstein physics.
+- [01:08:40,225 - 01:08:45,225] w is equal to v plus u.
+- [01:08:45,225 - 01:08:48,225] It can't be the right thing.
+- [01:08:48,225 - 01:08:50,725] We know that in relativity theory it's
+- [01:08:50,725 - 01:08:53,225] impossible to exceed the speed of light.
+- [01:08:53,225 - 01:08:56,225] And if I can move with three-quarters
+- [01:08:56,225 - 01:08:59,225] of the speed of light relative to u,
+- [01:08:59,225 - 01:09:01,225] and he can move with three-quarters of
+- [01:09:01,225 - 01:09:03,225] the speed of light relative to me,
+- [01:09:03,225 - 01:09:04,225] if we use this formula,
+- [01:09:04,225 - 01:09:06,725] he is going to be moving relative to u
+- [01:09:06,725 - 01:09:09,225] with one and a half times the speed of light.
+- [01:09:09,225 - 01:09:11,225] So, something's wrong. This can't be right.
+- [01:09:11,225 - 01:09:13,225] To figure it out correctly,
+- [01:09:13,225 - 01:09:15,225] all we need to do
+- [01:09:15,225 - 01:09:17,225] is to compound two Lorentz transformations,
+- [01:09:17,225 - 01:09:20,225] one with velocity v and one with velocity u.
+- [01:09:20,225 - 01:09:23,225] And that corresponds to matrix multiplication.
+- [01:09:23,225 - 01:09:25,225] Let's just...
+- [01:09:25,225 - 01:09:28,225] We don't need y and z in here.
+- [01:09:28,225 - 01:09:33,225] Let's write down the matrix for the transformation between
+- [01:09:33,225 - 01:09:35,225] you and me.
+- [01:09:35,225 - 01:09:37,225] Okay, that's just one over...
+- [01:09:37,225 - 01:09:38,225] Let's see, what is it?
+- [01:09:38,225 - 01:09:41,225] It's one over square root one minus v squared,
+- [01:09:41,225 - 01:09:44,225] v over square root one minus v squared,
+- [01:09:44,225 - 01:09:48,225] v over square root minus.
+- [01:09:48,225 - 01:09:51,225] Minus v over square root one minus v squared,
+- [01:09:51,225 - 01:09:54,225] one over square root one minus v squared.
+- [01:09:54,225 - 01:09:59,226] I just threw away the...
+- [01:09:59,226 - 01:10:03,226] everything but the x-t part of this transformation.
+- [01:10:03,226 - 01:10:10,226] That's the matrix that takes us, let us say,
+- [01:10:10,226 - 01:10:16,226] from your coordinates to my coordinates.
+- [01:10:20,226 - 01:10:23,226] Now, there's a second transformation
+- [01:10:23,226 - 01:10:27,226] which takes from my coordinates to his coordinates.
+- [01:10:27,226 - 01:10:31,226] And that transformation has the form...
+- [01:10:31,226 - 01:10:33,226] Let's call it x double-point.
+- [01:10:33,226 - 01:10:35,226] That's his coordinates.
+- [01:10:35,226 - 01:10:37,726] And that's equal to one over
+- [01:10:37,726 - 01:10:40,226] one minus u squared square root,
+- [01:10:40,226 - 01:10:44,226] minus u over square root of one minus u squared,
+- [01:10:44,226 - 01:10:47,226] u over square root of one minus u squared,
+- [01:10:47,226 - 01:10:49,226] minus sine.
+- [01:10:49,226 - 01:10:51,226] And then one over square
+- [01:10:51,226 - 01:10:53,226] root of one minus u squared.
+- [01:10:53,226 - 01:10:57,226] That's the transformation of the matrix.
+- [01:10:57,226 - 01:10:59,226] And then, let's just...
+- [01:10:59,226 - 01:11:01,226] Let's just...
+- [01:11:01,226 - 01:11:10,226] That's the transformation times x prime t prime.
+- [01:11:10,226 - 01:11:14,226] So this takes us from me to him,
+- [01:11:14,226 - 01:11:17,226] and this takes us from you to me.
+- [01:11:17,226 - 01:11:21,226] What is the transformation which takes you to him?
+- [01:11:21,226 - 01:11:23,726] All we have to do is
+- [01:11:23,726 - 01:11:26,226] plug in for x prime here,
+- [01:11:26,226 - 01:11:29,226] this matrix times x t.
+- [01:11:29,226 - 01:11:32,226] And so we see that x double prime,
+- [01:11:32,226 - 01:11:34,226] p double prime,
+- [01:11:34,226 - 01:11:36,226] is equal...
+- [01:11:59,226 - 01:12:19,226] We have to multiply these two matrices together
+- [01:12:19,226 - 01:12:24,226] to find the transformation between you and him.
+- [01:12:24,226 - 01:12:26,226] Okay, this is not so hard to do.
+- [01:12:26,226 - 01:12:28,226] Let's actually multiply the transformations.
+- [01:12:29,226 - 01:12:30,226] Let's do it.
+- [01:12:30,226 - 01:12:33,226] Let's spend five minutes doing it.
+- [01:12:33,226 - 01:12:38,226] Let's see.
+- [01:12:38,226 - 01:12:41,226] We have this times this minus this times this.
+- [01:12:41,226 - 01:12:44,226] That's going to be one plus uv, I think,
+- [01:12:44,226 - 01:12:46,226] in the corner over here.
+- [01:12:46,226 - 01:12:48,226] One plus uv, if I'm not mistaken.
+- [01:12:48,226 - 01:12:52,226] Does that look right?
+- [01:12:52,226 - 01:12:57,226] One times one minus plus u times v.
+- [01:12:57,226 - 01:12:58,226] Yeah.
+- [01:12:58,226 - 01:12:59,226] Right?
+- [01:12:59,226 - 01:13:01,226] What about the next corner over here?
+- [01:13:01,226 - 01:13:07,226] That's one times minus v and minus u...
+- [01:13:07,226 - 01:13:09,226] Say it again.
+- [01:13:09,226 - 01:13:11,226] Minus v minus u.
+- [01:13:11,226 - 01:13:12,226] I think it's minus v minus u.
+- [01:13:12,226 - 01:13:13,226] Is that right?
+- [01:13:13,226 - 01:13:17,226] I think it's minus v minus u.
+- [01:13:17,226 - 01:13:21,226] I think it's also minus v minus u down here.
+- [01:13:21,226 - 01:13:26,226] And I think it's one plus uv over here.
+- [01:13:26,226 - 01:13:27,226] Okay.
+- [01:13:27,226 - 01:13:31,226] Now, the question is, does this have the form...
+- [01:13:31,226 - 01:13:34,226] Does this have the form...
+- [01:13:34,226 - 01:13:37,226] Does this have the form...
+- [01:13:37,226 - 01:13:39,226] Does this have the form...
+- [01:13:39,226 - 01:13:41,226] Does this have the form...
+- [01:13:41,226 - 01:13:45,226] Well, what form do we want it to have?
+- [01:13:45,226 - 01:13:51,226] Let's see.
+- [01:13:51,226 - 01:13:55,226] One over one minus w squared square root.
+- [01:13:55,226 - 01:14:00,226] W over square root of one minus w squared.
+- [01:14:00,226 - 01:14:02,226] Minus w over the square
+- [01:14:02,226 - 01:14:04,226] root of one minus w squared.
+- [01:14:04,226 - 01:14:06,226] One over.
+- [01:14:06,226 - 01:14:09,226] In other words, does it actually itself have the form
+- [01:14:09,226 - 01:14:11,226] of a Lorentz transformation?
+- [01:14:11,226 - 01:14:15,226] And if so, what is the w?
+- [01:14:15,226 - 01:14:16,226] Okay.
+- [01:14:16,226 - 01:14:18,226] The answer is yes, it does
+- [01:14:18,226 - 01:14:20,226] have the form of a Lorentz transformation.
+- [01:14:20,226 - 01:14:22,226] But I'm not going to work the whole...
+- [01:14:22,226 - 01:14:24,226] I'm not going to prove that
+- [01:14:24,226 - 01:14:26,226] this whole matrix here has this form.
+- [01:14:26,226 - 01:14:29,226] What I'm going to do instead is just show
+- [01:14:29,226 - 01:14:32,226] you how to pick off the value of w.
+- [01:14:32,226 - 01:14:35,226] The value of w is easy to pick off.
+- [01:14:35,226 - 01:14:36,226] You know what it is?
+- [01:14:36,226 - 01:14:41,226] It's just the ratio of this to this.
+- [01:14:41,226 - 01:14:44,226] The value of w.
+- [01:14:44,226 - 01:14:48,226] If this truly has the form of a Lorentz transformation,
+- [01:14:48,226 - 01:14:51,226] then it's easy to pick off the value of w.
+- [01:14:51,226 - 01:14:53,726] It's just the ratio of the component
+- [01:14:53,726 - 01:14:56,226] over here to the component over here,
+- [01:14:56,226 - 01:14:58,226] with a minus sign.
+- [01:14:58,226 - 01:14:59,226] Right?
+- [01:14:59,226 - 01:15:03,226] Minus the ratio of this to this is just w.
+- [01:15:03,226 - 01:15:06,726] So if all I want to do is
+- [01:15:06,726 - 01:15:10,226] pick off the velocity of the compound transformation,
+- [01:15:10,226 - 01:15:12,726] and not bother trying to prove that
+- [01:15:12,726 - 01:15:15,226] it actually has this form, which it does,
+- [01:15:15,226 - 01:15:17,226] all we have to do is look at
+- [01:15:17,226 - 01:15:19,226] the ratio of this component to this component.
+- [01:15:19,226 - 01:15:22,226] And that must be w.
+- [01:15:22,226 - 01:15:24,226] So, we can read it off.
+- [01:15:24,226 - 01:15:30,226] w is equal to u plus
+- [01:15:30,226 - 01:15:36,226] v divided by 1 plus uv.
+- [01:15:36,226 - 01:15:37,226] That's it.
+- [01:15:37,226 - 01:15:38,226] That's all we have to
+- [01:15:38,226 - 01:15:39,226] do to figure out what the...
+- [01:15:39,226 - 01:15:41,726] to figure out what the relative
+- [01:15:41,726 - 01:15:44,226] velocity between u and him is.
+- [01:15:44,226 - 01:15:46,226] Compound the transformation.
+- [01:15:46,226 - 01:15:48,726] Go back later and prove
+- [01:15:48,726 - 01:15:51,226] that this really has this form.
+- [01:15:51,226 - 01:15:53,726] But if all we want to do is
+- [01:15:53,726 - 01:15:56,226] figure out the velocity of him relative to u,
+- [01:15:56,226 - 01:15:58,226] or to u,
+- [01:15:58,226 - 01:16:01,226] all we have to do is work out what
+- [01:16:01,226 - 01:16:04,226] the ratio of this component to this component is.
+- [01:16:04,226 - 01:16:05,226] Minus v minus...
+- [01:16:05,226 - 01:16:08,226] Or v plus u divided by 1 plus uv.
+- [01:16:08,226 - 01:16:10,226] That's the velocity w.
+- [01:16:10,226 - 01:16:15,226] Now, we could put some...
+- [01:16:15,226 - 01:16:19,226] We could put some speeds of light into this.
+- [01:16:19,226 - 01:16:24,226] The units of u and v are velocity.
+- [01:16:24,226 - 01:16:26,226] And the units of w
+- [01:16:26,226 - 01:16:28,226] are also supposed to be velocity.
+- [01:16:28,226 - 01:16:30,226] So that looks pretty good.
+- [01:16:30,226 - 01:16:33,226] The only thing wrong with it is you
+- [01:16:33,226 - 01:16:36,226] can't add uv, which has velocity squared, to 1,
+- [01:16:36,226 - 01:16:38,226] unless you first divide it
+- [01:16:38,226 - 01:16:40,226] by the speed of light squared.
+- [01:16:40,226 - 01:16:42,726] So including the speed of light,
+- [01:16:42,726 - 01:16:45,226] w is equal to u plus v.
+- [01:16:45,226 - 01:16:47,226] That's what Newton would have said.
+- [01:16:47,226 - 01:16:50,226] He would have said just u plus v.
+- [01:16:50,226 - 01:16:52,226] But Einstein comes in and throws
+- [01:16:52,226 - 01:16:54,226] this thing into the denominator here.
+- [01:16:54,226 - 01:16:56,226] Throws this thing into the denominator.
+- [01:16:56,226 - 01:16:57,726] If both u and v are
+- [01:16:57,726 - 01:16:59,226] positive, imagine u and v are positive.
+- [01:16:59,226 - 01:17:00,226] We're all...
+- [01:17:00,226 - 01:17:03,226] I'm going down the x-axis with positive velocity.
+- [01:17:03,226 - 01:17:05,226] He's going down relative to me with the positive velocity.
+- [01:17:05,226 - 01:17:10,226] Then 1 plus uv is bigger than 1,
+- [01:17:10,226 - 01:17:15,226] and w will be less than u plus v.
+- [01:17:15,226 - 01:17:17,726] In fact, this formula will never
+- [01:17:17,726 - 01:17:20,226] get bigger than the speed of light.
+- [01:17:20,226 - 01:17:24,226] In fact, let's see what it does do if...
+- [01:17:24,226 - 01:17:26,226] Let's take a crazy limit.
+- [01:17:26,226 - 01:17:27,226] Let's see.
+- [01:17:27,226 - 01:17:30,226] Let's take a crazy limit in which u and
+- [01:17:30,226 - 01:17:33,226] v are both very close to the speed of light.
+- [01:17:33,226 - 01:17:34,226] Okay?
+- [01:17:34,226 - 01:17:36,226] They're very, very close to the speed of light.
+- [01:17:36,226 - 01:17:38,226] Essentially equal to the speed of light.
+- [01:17:38,226 - 01:17:40,226] Then what does w come out to be?
+- [01:17:40,226 - 01:17:44,226] Well, the top becomes just twice the speed of light.
+- [01:17:44,226 - 01:17:46,226] And the bottom...
+- [01:17:46,226 - 01:17:47,226] That's bad.
+- [01:17:47,226 - 01:17:49,226] Twice the speed of light.
+- [01:17:49,226 - 01:17:51,226] But the bottom, u and v, are
+- [01:17:51,226 - 01:17:53,226] both equal to the speed of light.
+- [01:17:53,226 - 01:17:55,226] So uv over c squared is 1.
+- [01:17:55,226 - 01:17:57,226] 1 plus 1 is 2.
+- [01:17:57,226 - 01:18:02,226] It hasn't gotten bigger than the speed of light.
+- [01:18:02,226 - 01:18:03,226] Okay?
+- [01:18:04,226 - 01:18:08,226] Even if you're compounding two velocities, each of
+- [01:18:08,226 - 01:18:12,226] which is exceedingly close to the speed of light,
+- [01:18:12,226 - 01:18:13,726] so close that I can say
+- [01:18:13,726 - 01:18:15,226] it is the speed of light,
+- [01:18:15,226 - 01:18:16,726] I add them up, I get something which
+- [01:18:16,726 - 01:18:18,226] is no bigger than the speed of light.
+- [01:18:18,226 - 01:18:22,226] In fact, which is just the speed of light.
+- [01:18:22,226 - 01:18:24,726] It's not hard to prove that this expression
+- [01:18:24,726 - 01:18:27,226] never gets bigger than the speed of light,
+- [01:18:27,226 - 01:18:29,226] as long as u and v are
+- [01:18:29,226 - 01:18:31,226] not bigger than the speed of light.
+- [01:18:31,226 - 01:18:32,726] As long as u and v are
+- [01:18:32,726 - 01:18:34,226] not bigger than the speed of light,
+- [01:18:34,226 - 01:18:38,226] the composite here, the composite velocity cannot be.
+- [01:18:38,226 - 01:18:45,226] And that's easy to prove.
+- [01:18:45,226 - 01:18:47,726] But it's more or less clear, since I've gone to the
+- [01:18:47,726 - 01:18:50,226] absolute limit where u and v are as big as possible,
+- [01:18:50,226 - 01:18:51,726] and I still haven't gotten
+- [01:18:51,726 - 01:18:53,226] bigger than the speed of light,
+- [01:18:53,226 - 01:18:57,226] it's pretty clear that I can't exceed the speed
+- [01:18:57,226 - 01:19:01,226] of light by compounding any number of Lorentz transformations.
+- [01:19:01,226 - 01:19:02,726] The result will always come out
+- [01:19:02,726 - 01:19:04,226] less than the speed of light.
+- [01:19:04,226 - 01:19:08,226] So this is an exercise in matrix multiplication,
+- [01:19:08,226 - 01:19:14,226] which is the neat tool
+- [01:19:14,226 - 01:19:20,226] for this particular kind of operation.
+- [01:19:20,226 - 01:19:23,726] Alright, I next want to come
+- [01:19:23,726 - 01:19:27,226] to the concept of velocity in relativity.
+- [01:19:27,226 - 01:19:29,226] Before we even talk about
+- [01:19:29,226 - 01:19:31,226] velocity, let's talk about four vectors.
+- [01:19:31,226 - 01:19:33,226] It's evident.
+- [01:19:34,226 - 01:19:37,726] That the coordinates of a point can
+- [01:19:37,726 - 01:19:41,226] be thought of as the components of vectors.
+- [01:19:45,226 - 01:19:48,726] x, y, and z are the components
+- [01:19:48,726 - 01:19:52,226] of a displacement vector from the origin,
+- [01:19:52,226 - 01:19:55,226] but x, y, z, and t can be
+- [01:19:55,226 - 01:19:58,226] thought of as the components of a four-dimensional vector,
+- [01:19:58,226 - 01:20:01,226] including time.
+- [01:20:04,226 - 01:20:08,226] Whose components are these objects x, mu?
+- [01:20:08,226 - 01:20:11,226] x, mu are the components of a four-vector.
+- [01:20:11,226 - 01:20:13,226] A four-vector is one which
+- [01:20:13,226 - 01:20:15,226] includes not just three spatial components,
+- [01:20:15,226 - 01:20:18,226] but a time component also.
+- [01:20:18,226 - 01:20:21,226] We can have more general objects, just as
+- [01:20:21,226 - 01:20:24,226] we can have all kinds of vectors in space,
+- [01:20:24,226 - 01:20:27,226] velocity vectors, acceleration vectors, electric
+- [01:20:27,226 - 01:20:30,226] field vectors, all kinds of vectors,
+- [01:20:30,226 - 01:20:32,226] not only x, mu itself.
+- [01:20:32,226 - 01:20:34,726] We can have a general
+- [01:20:34,726 - 01:20:37,226] concept of a vector, v, mu.
+- [01:20:37,226 - 01:20:40,726] A vector is a thing which
+- [01:20:40,726 - 01:20:44,226] transforms under Lorentz transformations and rotations
+- [01:20:44,226 - 01:20:47,226] the same way that x, mu transforms.
+- [01:20:47,226 - 01:20:51,226] It has four components, and if you want
+- [01:20:51,226 - 01:20:55,226] to know how its value in any coordinate system,
+- [01:20:55,226 - 01:20:57,226] you simply transform it from
+- [01:20:57,226 - 01:20:59,226] coordinate system to coordinate system,
+- [01:20:59,226 - 01:21:01,226] using the same Lorentz transformation.
+- [01:21:02,226 - 01:21:04,226] So, you can have a linear
+- [01:21:04,226 - 01:21:06,226] transformation that you coordinate transform x with.
+- [01:21:06,226 - 01:21:08,226] I won't bother writing that down,
+- [01:21:08,226 - 01:21:12,226] but if you write down the Lorentz transformation for x's,
+- [01:21:12,226 - 01:21:17,226] and simply substitute in the, instead of x's, v's,
+- [01:21:17,226 - 01:21:21,226] that is the way four vectors transform.
+- [01:21:21,226 - 01:21:23,226] There are other four vectors.
+- [01:21:23,226 - 01:21:30,226] Oh, before we talk about how four vectors transform,
+- [01:21:30,226 - 01:21:31,226] this is some,
+- [01:21:31,226 - 01:21:34,226] let's also talk about the contravariant,
+- [01:21:34,226 - 01:21:38,226] no, covariant, this is the contravariant form of the vector,
+- [01:21:38,226 - 01:21:46,226] and consists of four, v1, v2, v3, v4.
+- [01:21:46,226 - 01:21:49,226] There is also the covariant form for the vector,
+- [01:21:49,226 - 01:21:52,226] which is just a notational device,
+- [01:21:52,226 - 01:21:55,226] exactly the same things, v4,
+- [01:21:55,226 - 01:21:59,226] except the three space components have minus signs.
+- [01:22:01,226 - 01:22:11,226] You simply change the sign of the space component,
+- [01:22:11,226 - 01:22:18,226] and that's equal to v1, v2, v3, v0.
+- [01:22:18,226 - 01:22:20,226] Not four, naught.
+- [01:22:20,226 - 01:22:23,226] Not four, naught.
+- [01:22:23,226 - 01:22:26,226] Sometimes I'll write four instead of naught.
+- [01:22:26,226 - 01:22:29,226] Um,
+- [01:22:29,226 - 01:22:32,226] the,
+- [01:22:32,226 - 01:22:39,226] just as there's a concept of proper distance
+- [01:22:39,226 - 01:22:41,226] of a vector x,
+- [01:22:41,226 - 01:22:43,726] there's the concept of the
+- [01:22:43,726 - 01:22:46,226] proper length of any vector v,
+- [01:22:46,226 - 01:22:52,226] and that is just given by v mu, v mu,
+- [01:22:52,226 - 01:22:55,226] is the length of v squared.
+- [01:22:55,226 - 01:22:57,226] We can just call it v squared.
+- [01:22:57,226 - 01:22:58,226] It's analogous to x squared,
+- [01:22:58,226 - 01:23:01,226] and it's analogous to x mu, x mu,
+- [01:23:01,226 - 01:23:03,226] is equal to tau squared,
+- [01:23:03,226 - 01:23:06,226] where tau would be the proper distance from one end
+- [01:23:06,226 - 01:23:08,226] to the other end of the vector.
+- [01:23:08,226 - 01:23:10,226] Here, it's just a general notation
+- [01:23:10,226 - 01:23:13,226] representing a new concept.
+- [01:23:13,226 - 01:23:14,226] It's a new concept.
+- [01:23:14,226 - 01:23:16,226] You can't ask me why this is the definition.
+- [01:23:16,226 - 01:23:18,726] This is the definition of
+- [01:23:18,726 - 01:23:21,226] the length of a four vector.
+- [01:23:21,226 - 01:23:23,226] What does it mean?
+- [01:23:23,226 - 01:23:26,226] It means v naught squared minus v1 squared
+- [01:23:26,226 - 01:23:28,226] minus v2 squared minus v3 squared.
+- [01:23:28,226 - 01:23:31,226] Exactly like ordinary vectors,
+- [01:23:31,226 - 01:23:33,226] except with this extra minus sign,
+- [01:23:33,226 - 01:23:35,226] v naught squared minus v1 squared
+- [01:23:35,226 - 01:23:37,226] minus v2 squared minus v3 squared
+- [01:23:37,226 - 01:23:42,226] is called the proper length of a vector v,
+- [01:23:42,226 - 01:23:44,226] and it can be written in this form,
+- [01:23:44,226 - 01:23:46,226] with a lower index and an upper index,
+- [01:23:46,226 - 01:23:49,226] implicitly summed over.
+- [01:23:49,226 - 01:23:50,226] That's a useful,
+- [01:23:50,226 - 01:23:52,226] in fact, you can even go a little bit further.
+- [01:23:52,226 - 01:23:55,226] You can say, supposing you have two vectors,
+- [01:23:55,226 - 01:23:56,226] v and w,
+- [01:23:56,226 - 01:24:03,226] then you can invent the product of the two vectors,
+- [01:24:03,226 - 01:24:05,226] and think of that as analogous
+- [01:24:05,226 - 01:24:08,226] to the dot product of two vectors.
+- [01:24:08,226 - 01:24:09,226] I don't know what to call it.
+- [01:24:09,226 - 01:24:12,226] This is what it's called, w mu v mu.
+- [01:24:12,226 - 01:24:14,226] But you can think of it as being analogous
+- [01:24:14,226 - 01:24:17,226] to the dot product of two vectors
+- [01:24:17,226 - 01:24:19,226] in ordinary space.
+- [01:24:19,226 - 01:24:21,226] w times v,
+- [01:24:21,226 - 01:24:24,226] it represents a kind of product of the two vectors,
+- [01:24:24,226 - 01:24:25,226] and the important point is,
+- [01:24:25,226 - 01:24:28,226] that this quantity is invariant.
+- [01:24:28,226 - 01:24:30,226] If you change frames of reference,
+- [01:24:30,226 - 01:24:33,226] that changes the components of both w and v,
+- [01:24:33,226 - 01:24:37,226] but it does not change w mu v mu.
+- [01:24:37,226 - 01:24:40,226] So quantities like that are invariant,
+- [01:24:40,226 - 01:24:43,226] they don't change under Lorentz transformations,
+- [01:24:43,226 - 01:24:46,226] and they don't depend on what
+- [01:24:46,226 - 01:24:49,226] family of coordinate axes you use.
+- [01:24:49,226 - 01:24:52,226] Okay, that's the idea of a four vector,
+- [01:24:52,226 - 01:24:54,226] but let me come to a particular four vector.
+- [01:24:54,226 - 01:24:56,726] The particular four vector is the
+- [01:24:56,726 - 01:24:59,226] velocity four vector of a particle.
+- [01:25:03,226 - 01:25:05,726] Obviously we want to talk
+- [01:25:05,726 - 01:25:08,226] about things like velocity and acceleration.
+- [01:25:08,226 - 01:25:13,226] In Newtonian physics, velocity is a vector.
+- [01:25:13,226 - 01:25:17,226] But it's a three vector, three components.
+- [01:25:17,226 - 01:25:19,226] It doesn't have a fourth component.
+- [01:25:19,226 - 01:25:21,226] In relativity theory,
+- [01:25:21,226 - 01:25:23,226] anything that has three components
+- [01:25:23,226 - 01:25:25,226] will have a fourth component.
+- [01:25:25,226 - 01:25:30,226] And velocity is a quantity which has four components.
+- [01:25:30,226 - 01:25:32,226] What are those four components?
+- [01:25:32,226 - 01:25:37,226] Well, let's start with the space components of velocity.
+- [01:25:37,226 - 01:25:40,226] Here's what I usually mean by velocity.
+- [01:25:40,226 - 01:25:43,226] dx dt, that's the x component of velocity.
+- [01:25:43,226 - 01:25:47,226] Let's call that vt.
+- [01:25:47,226 - 01:25:52,226] And there's dy dt.
+- [01:25:52,226 - 01:25:55,226] Sorry, this is vx.
+- [01:25:55,226 - 01:26:00,226] This is vy, and likewise for vz.
+- [01:26:00,226 - 01:26:03,226] This is the ordinary concept of velocity,
+- [01:26:03,226 - 01:26:05,226] the time rate of change
+- [01:26:05,226 - 01:26:07,226] of the position of a particle.
+- [01:26:07,226 - 01:26:12,226] But what would be the time component of the velocity?
+- [01:26:12,226 - 01:26:16,226] dt dt? That's just one.
+- [01:26:16,226 - 01:26:19,226] That doesn't make sense.
+- [01:26:19,226 - 01:26:21,226] We have an object which really doesn't have four components.
+- [01:26:22,226 - 01:26:25,226] One of the components here is just completely trivial.
+- [01:26:25,226 - 01:26:28,726] This can't be what a good
+- [01:26:28,726 - 01:26:32,226] relativist would think of as the velocity.
+- [01:26:32,226 - 01:26:34,726] So let me explain to you the way
+- [01:26:34,726 - 01:26:37,226] relativity theory views the velocity of a particle.
+- [01:26:46,226 - 01:26:49,226] I mean, this is a perfectly good definition of velocity.
+- [01:26:49,226 - 01:26:52,226] It's just not a thing
+- [01:26:52,226 - 01:26:55,226] which transforms nicely under Lorentz transformations.
+- [01:26:55,226 - 01:26:58,726] It doesn't have a nice way
+- [01:26:58,726 - 01:27:02,226] of transforming when you transform the coordinates.
+- [01:27:02,226 - 01:27:04,726] Here's the definition of velocity that
+- [01:27:04,726 - 01:27:07,226] turns out to be more useful.
+- [01:27:07,226 - 01:27:10,226] You start with your coordinates.
+- [01:27:10,226 - 01:27:12,226] We're working with particular coordinates x
+- [01:27:12,226 - 01:27:14,226] and t, and y and z.
+- [01:27:14,226 - 01:27:17,226] t, x.
+- [01:27:17,226 - 01:27:20,226] Every point of spacetime is labeled with
+- [01:27:20,226 - 01:27:23,226] a set of coordinates x and t.
+- [01:27:23,226 - 01:27:26,226] x, y, z, and t.
+- [01:27:26,226 - 01:27:30,226] Now, a particle moves through here,
+- [01:27:30,226 - 01:27:32,226] and along the trajectory, along
+- [01:27:32,226 - 01:27:34,226] the world line of the particle,
+- [01:27:34,226 - 01:27:35,726] it could also be moving in y and
+- [01:27:35,726 - 01:27:37,226] z, it could be moving out of the blackboard,
+- [01:27:37,226 - 01:27:40,226] but along the trajectory of the particle,
+- [01:27:40,226 - 01:27:45,226] the little displacement is called dx, dx mu.
+- [01:27:47,226 - 01:27:50,726] dx mu can represent the
+- [01:27:50,726 - 01:27:54,226] displacement along the x-axis, the y-axis,
+- [01:27:54,226 - 01:27:56,226] but it can also represent
+- [01:27:56,226 - 01:27:58,226] the displacement along the time axis.
+- [01:27:58,226 - 01:28:00,726] So dx naught represents the
+- [01:28:00,726 - 01:28:03,226] displacement along the time axis,
+- [01:28:03,226 - 01:28:07,226] dx represents the displacement along the x-axis,
+- [01:28:07,226 - 01:28:11,226] and dy and dz similarly represent little displacements.
+- [01:28:11,226 - 01:28:13,226] So we have four of them.
+- [01:28:13,226 - 01:28:16,226] From here to here, there are four little differences.
+- [01:28:17,226 - 01:28:28,346] So as I'm more and more
+- [01:28:28,346 - 01:28:40,066] discussing the
+- [01:28:40,066 - 01:28:45,226] pictured
+- [01:28:45,226 - 01:28:47,226] wambs
+- [01:28:47,226 - 01:28:50,046] ask how much has my x displacement, how much
+- [01:28:50,046 - 01:28:52,866] have I moved in x in a given amount
+- [01:28:52,866 - 01:28:55,506] of proper time, how much have I moved in
+- [01:28:55,506 - 01:28:58,146] y in a given amount of proper time, how
+- [01:28:58,146 - 01:29:00,966] much have I moved in z in a
+- [01:29:00,966 - 01:29:03,786] given amount of proper time. Now proper time is
+- [01:29:03,786 - 01:29:06,906] invariant. It doesn't change from
+- [01:29:06,906 - 01:29:10,026] coordinate frame to coordinate frame. So
+- [01:29:10,026 - 01:29:15,256] if we divide dx mu by d tau, where
+- [01:29:15,256 - 01:29:20,486] d tau is the proper time from here to here,
+- [01:29:20,486 - 01:29:24,636] that is a four vector which will transform
+- [01:29:24,636 - 01:29:28,786] the same way as x does. X mu, or
+- [01:29:28,786 - 01:29:31,375] little differences in x mu,
+- [01:29:31,375 - 01:29:33,965] transform with Lorentz transformations, conventional
+- [01:29:33,965 - 01:29:36,665] Lorentz transformations. Dividing by dt
+- [01:29:36,665 - 01:29:39,366] doesn't change that because dt doesn't
+- [01:29:39,366 - 01:29:39,986] change.
+- [01:29:40,026 - 01:29:43,176] under a Lorentz transformation. So dx dt
+- [01:29:43,176 - 01:29:46,326] becomes a four vector. It's got four
+- [01:29:46,326 - 01:29:48,926] components. And let's see if we can
+- [01:29:48,926 - 01:29:51,526] see what those four components are in terms
+- [01:29:51,526 - 01:29:55,245] of the old-fashioned velocity, the old-fashioned
+- [01:29:55,245 - 01:29:58,965] velocity vx, vy, and vt sorry
+- [01:29:58,965 - 01:30:04,566] vx, vy, and vz was vz. Vz, dt.
+- [01:30:04,566 - 01:30:07,216] Let's see if we can relate these
+- [01:30:07,216 - 01:30:09,866] things to the old-fashioned kind of velocities
+- [01:30:09,866 - 01:30:09,875] kannst du das sehen wie dielate las linkz Powers
+- [01:30:09,875 - 01:30:09,885] profit limit und Aur noi werden die Masn mode.
+- [01:30:09,885 - 01:30:09,915] Testing To LAnahme aus bei MAX
+- [01:30:09,915 - 01:30:09,946] история mit dem authent Maskilleurs beim疫er juegos.
+- [01:30:09,946 - 01:30:09,975] circumstances. Verwenden wir alder� hindsight und
+- [01:30:09,975 - 01:30:10,005] des ZWs from den Merkrollen in den
+- [01:30:10,006 - 01:30:14,306] Incidentally, this is called u super mu.
+- [01:30:15,806 - 01:30:17,606] It's called the proper velocity.
+- [01:30:19,566 - 01:30:22,566] By proper here, it means the time that's
+- [01:30:22,566 - 01:30:25,566] being used to differentiate with is the proper time.
+- [01:30:26,726 - 01:30:26,946] Okay.
+- [01:30:28,326 - 01:30:29,136] All right, let's see if we
+- [01:30:29,136 - 01:30:29,946] can figure out what it is.
+- [01:30:30,506 - 01:30:32,986] Let's write, let's just take, let's
+- [01:30:32,986 - 01:30:35,466] take, for example, dx by d tau.
+- [01:30:35,466 - 01:30:39,286] That's equal to dx by
+- [01:30:39,286 - 01:30:43,106] dt times dt by d tau.
+- [01:30:44,966 - 01:30:49,036] Likewise for y, dy by d tau is dy
+- [01:30:49,036 - 01:30:53,106] by dt times dt by d tau, and so forth.
+- [01:30:54,466 - 01:30:57,366] In fact, we can even write down that dt
+- [01:30:57,366 - 01:31:00,266] by d tau, sorry, yes, dt by d tau,
+- [01:31:00,386 - 01:31:02,786] that's the fourth component of the velocity vector.
+- [01:31:03,886 - 01:31:05,446] That's just dt by d tau.
+- [01:31:05,466 - 01:31:08,946] So if I knew what dt by d tau
+- [01:31:08,946 - 01:31:12,426] was, I would know how to go back and forth
+- [01:31:12,426 - 01:31:17,066] between old-fashioned kind of velocity, dx dt,
+- [01:31:17,066 - 01:31:21,706] and this new kind of relativistic velocity, u.
+- [01:31:23,226 - 01:31:23,446] Okay.
+- [01:31:24,026 - 01:31:26,406] Let's figure out what dt by d tau is.
+- [01:31:26,606 - 01:31:27,526] It's not very difficult.
+- [01:31:27,526 - 01:31:27,646] It's not very difficult.
+- [01:31:30,846 - 01:31:33,146] First of all, let's write that
+- [01:31:33,146 - 01:31:35,446] d tau squared is equal to,
+- [01:31:35,466 - 01:31:38,646] dt squared minus dx squared
+- [01:31:38,646 - 01:31:41,826] minus dy squared minus dz squared.
+- [01:31:43,626 - 01:31:46,516] That's just the definition of
+- [01:31:46,516 - 01:31:49,406] a small proper time interval here.
+- [01:31:50,286 - 01:31:52,116] It has a dx, it has a dy,
+- [01:31:52,116 - 01:31:53,946] it has a dz, and it has a dt.
+- [01:31:54,766 - 01:31:58,226] And the proper length of that little vector is dt
+- [01:31:58,226 - 01:32:01,686] squared minus dx squared minus dy squared minus dz squared.
+- [01:32:02,426 - 01:32:02,646] Okay.
+- [01:32:02,646 - 01:32:04,866] Now, let's divide this.
+- [01:32:05,466 - 01:32:07,306] By dt squared.
+- [01:32:07,306 - 01:32:07,386] Okay.
+- [01:32:07,386 - 01:32:34,966] Well, this is just 1 minus.
+- [01:32:34,966 - 01:32:35,246] Now, what's the value of dt?
+- [01:32:35,246 - 01:32:35,286] Well, this is just 1 minus.
+- [01:32:35,286 - 01:32:35,326] Well, this is just 1 minus.
+- [01:32:35,326 - 01:32:36,046] Now, what is this?
+- [01:32:36,605 - 01:32:40,225] This is dx dt squared.
+- [01:32:40,746 - 01:32:42,145] That's vx squared.
+- [01:32:43,386 - 01:32:44,966] This is vy squared.
+- [01:32:46,086 - 01:32:47,866] And this is minus vz squared.
+- [01:32:50,986 - 01:32:53,946] But what's vx squared plus vy squared plus vz squared?
+- [01:32:54,986 - 01:32:57,846] That's just the magnitude of the velocity of the particle.
+- [01:32:58,926 - 01:33:01,725] And that's the magnitude of the ordinary velocity.
+- [01:33:02,126 - 01:33:04,626] That's the magnitude of the ordinary velocity.
+- [01:33:04,626 - 01:33:08,426] And so this is just 1 minus v squared, where
+- [01:33:08,426 - 01:33:12,226] this v here represents the full velocity of the particle.
+- [01:33:12,226 - 01:33:15,426] That's equal to d tau by dt squared.
+- [01:33:15,426 - 01:33:18,506] Or better yet, d tau by dt is equal
+- [01:33:18,506 - 01:33:21,586] to the square root of 1 minus v squared.
+- [01:33:21,586 - 01:33:23,796] That's great, because I now know
+- [01:33:23,796 - 01:33:26,006] what dt by d tau is.
+- [01:33:26,006 - 01:33:27,846] It's just 1 over this.
+- [01:33:27,846 - 01:33:30,916] So dt by d tau is equal to 1
+- [01:33:30,916 - 01:33:33,986] divided by square root of 1 minus v squared.
+- [01:33:33,986 - 01:33:34,605] That's great.
+- [01:33:34,626 - 01:33:35,246] So dt by d tau is equal to 1
+- [01:33:35,246 - 01:33:35,866] divided by square root of 1 minus v squared.
+- [01:33:35,866 - 01:33:44,226] That tells us that, let's write down the equations now.
+- [01:33:47,226 - 01:33:52,246] Ux is equal to dx by dt, that's vx, times dt
+- [01:33:52,246 - 01:33:57,266] by d tau, that's square root of 1 minus v squared.
+- [01:33:58,146 - 01:34:00,406] Likewise, with uy and uz.
+- [01:34:02,406 - 01:34:04,446] Vy divided by square root of 1 minus v squared.
+- [01:34:04,446 - 01:34:04,605] Vx divided by square root of 1 minus v squared.
+- [01:34:04,626 - 01:34:09,206] And ux is equal to vz over
+- [01:34:09,206 - 01:34:13,786] square root of 1 minus v squared.
+- [01:34:13,786 - 01:34:16,786] What about the fourth component?
+- [01:34:16,786 - 01:34:21,886] The fourth component is just dt by d tau.
+- [01:34:21,886 - 01:34:25,006] dt by d tau, dx by d tau, dy by d
+- [01:34:25,006 - 01:34:28,126] tau, dt by d tau, and finally dt by d tau.
+- [01:34:28,126 - 01:34:31,276] That is just u0, which is equal to 1
+- [01:34:31,276 - 01:34:34,426] divided by square root of 1 minus v squared.
+- [01:34:34,426 - 01:34:34,506] That's vx.
+- [01:34:34,506 - 01:34:34,605] That's vx.
+- [01:34:34,666 - 01:34:36,166] And ux is equal to 1 divided
+- [01:34:36,166 - 01:34:37,666] by square root of 1 minus v squared.
+- [01:34:37,666 - 01:34:40,906] So here are the four components of
+- [01:34:40,906 - 01:34:44,146] the velocity, of the relativistic velocity vector,
+- [01:34:44,726 - 01:34:46,966] in terms of the ordinary velocities.
+- [01:34:48,406 - 01:34:50,936] Notice that if the velocity, this really should
+- [01:34:50,936 - 01:34:53,466] be, as always, a c squared down here.
+- [01:34:55,026 - 01:34:56,826] v squared over c squared.
+- [01:34:57,826 - 01:35:00,056] And notice that if the velocity is
+- [01:35:00,056 - 01:35:02,286] small by comparison with the speed of light,
+- [01:35:03,726 - 01:35:04,586] then the thing in the,
+- [01:35:04,606 - 01:35:07,826] denominator is just 1. ux is the same as
+- [01:35:07,826 - 01:35:11,046] vx, uy is the same as vy, uz is the
+- [01:35:11,046 - 01:35:13,326] same as vz, as long as the
+- [01:35:13,326 - 01:35:15,606] velocity is small by the comparison with the
+- [01:35:15,606 - 01:35:19,916] speed of light. And u0 is just 1, just
+- [01:35:19,916 - 01:35:24,226] 1 dt by dt. That's if the velocity is slow.
+- [01:35:24,226 - 01:35:26,976] But when the velocity gets fast,
+- [01:35:26,976 - 01:35:29,726] there's appreciable differences between u and v.
+- [01:35:29,726 - 01:35:33,526] In fact, u is typically, let's see, 1
+- [01:35:33,526 - 01:35:37,326] minus v squared, so this is bigger than 1.
+- [01:35:37,326 - 01:35:40,616] Now, u is typically less than v. Is
+- [01:35:40,616 - 01:35:43,906] that right? No, u is typically bigger than v.
+- [01:35:43,906 - 01:35:47,756] Yeah, u is bigger than v.
+- [01:35:47,756 - 01:35:51,606] u is typically bigger than v.
+- [01:35:51,606 - 01:35:55,606] 1 minus v squared, yeah, u is bigger
+- [01:35:55,606 - 01:35:59,606] than v. And in particular, u0 is nowhere's
+- [01:35:59,606 - 01:36:03,086] near 1. It gets huge. Okay? This
+- [01:36:03,086 - 01:36:06,566] is the concept of the relativistic four vector
+- [01:36:06,566 - 01:36:11,186] of velocity of a moving particle. It's a
+- [01:36:11,186 - 01:36:15,806] four vector. It transforms, if you know it
+- [01:36:15,806 - 01:36:17,936] in one frame of reference, you can
+- [01:36:17,936 - 01:36:20,066] compute it in any other frame of
+- [01:36:20,066 - 01:36:24,306] reference just by transforming it the same way
+- [01:36:24,306 - 01:36:28,546] as x, y, z, and t transform. And
+- [01:36:28,546 - 01:36:29,546] that's the concept.
+- [01:36:29,606 - 01:36:32,886] And that makes it much easier to work
+- [01:36:32,886 - 01:36:36,166] with than the ordinary velocity, which has a very
+- [01:36:36,166 - 01:36:39,446] complicated transformation property.
+- [01:36:39,446 - 01:36:45,756] Now I'm going to stop soon, but let me
+- [01:36:45,756 - 01:36:52,066] just tell you another way of thinking about this
+- [01:36:52,066 - 01:36:54,956] four vector of velocity. It has an
+- [01:36:54,956 - 01:36:57,846] analog in ordinary Euclidean geometry. Anybody know
+- [01:36:57,846 - 01:36:58,846] what it is?
+- [01:36:58,846 - 01:36:59,366] Yes.
+- [01:36:59,606 - 01:37:07,046] It's the tangent vector to a curve. If you
+- [01:37:07,046 - 01:37:14,486] have a world line, then this notion of four
+- [01:37:14,486 - 01:37:17,846] velocity is basically, here it is, is
+- [01:37:17,846 - 01:37:21,206] basically the tangent vector to the trajectory along
+- [01:37:21,206 - 01:37:23,826] the trajectory. But let me show you
+- [01:37:23,826 - 01:37:26,446] about tangent vectors in ordinary geometry, not
+- [01:37:26,446 - 01:37:27,646] relativistic geometry.
+- [01:37:27,646 - 01:37:28,646] Okay.
+- [01:37:29,606 - 01:37:34,016] Imagine you have some curve in
+- [01:37:34,016 - 01:37:38,426] space. Two dimensional space, three dimensional space,
+- [01:37:38,426 - 01:37:40,936] it doesn't matter much. And I want to
+- [01:37:40,936 - 01:37:43,446] construct the components of the tangent vector. The
+- [01:37:43,446 - 01:37:48,356] tangent vector means a vector along the curve
+- [01:37:48,356 - 01:37:53,266] of unit length. A vector, a unit vector, which
+- [01:37:53,266 - 01:37:56,336] is tangent to the curve at this
+- [01:37:56,336 - 01:37:59,406] point here. Well, the little differential displacement
+- [01:37:59,406 - 01:38:03,266] here, dx, now I'm talking only about
+- [01:38:03,266 - 01:38:07,126] ordinary space, is obviously pointing along the tangent
+- [01:38:07,126 - 01:38:09,766] vector. It's just this little vector over here,
+- [01:38:09,766 - 01:38:12,406] from here to here, dx. It points along
+- [01:38:12,406 - 01:38:15,746] the tangent vector, but it's not a unit vector,
+- [01:38:15,746 - 01:38:19,086] it's a very small vector. What do we want
+- [01:38:19,086 - 01:38:21,816] to do to make a unit vector? And I'll tell
+- [01:38:21,816 - 01:38:24,546] you what we want to do. We divide dx by the
+- [01:38:24,546 - 01:38:26,976] distance along the curve. In other words,
+- [01:38:26,976 - 01:38:29,406] we just divide the distance along the curve.
+- [01:38:29,406 - 01:38:33,136] We take this little differential displacement, that gives
+- [01:38:33,136 - 01:38:36,866] us dx, dy, and dz, and we divide
+- [01:38:36,866 - 01:38:40,576] it by the distance along there. What is
+- [01:38:40,576 - 01:38:44,286] the distance along there? It's ds squared is equal
+- [01:38:44,286 - 01:38:48,936] to dx squared plus dy squared plus dz
+- [01:38:48,936 - 01:38:53,586] squared. And we simply define the tangent vector to
+- [01:38:53,586 - 01:38:58,526] be dx by ds, dx dy by ds.
+- [01:38:59,406 - 01:39:03,996] And dz by ds. This is for ordinary
+- [01:39:03,996 - 01:39:08,586] geometry, no time, just ordinary space. We define the
+- [01:39:08,586 - 01:39:12,385] tangent vector. Incidentally, can you see why
+- [01:39:12,385 - 01:39:16,185] this tangent vector is a unit vector?
+- [01:39:16,185 - 01:39:18,795] It's because the sums of the squares of each
+- [01:39:18,795 - 01:39:21,406] component are equal to 1. Why is that? Because
+- [01:39:21,406 - 01:39:25,036] ds squared is dx squared plus dy squared plus
+- [01:39:25,036 - 01:39:28,666] dz squared. So if I square up the components,
+- [01:39:29,406 - 01:39:34,355] and add them together, dx squared plus dy
+- [01:39:34,355 - 01:39:39,305] squared plus dz squared is ds squared. And
+- [01:39:39,305 - 01:39:42,375] so this is a unit vector. And it's
+- [01:39:42,375 - 01:39:45,446] just gotten by taking the little differential displacement
+- [01:39:45,446 - 01:39:48,456] along the curve and dividing it by
+- [01:39:48,456 - 01:39:51,466] the small distance along that differential displacement.
+- [01:39:51,466 - 01:39:54,825] And then letting it shrink to zero, ordinary
+- [01:39:54,825 - 01:39:58,185] calculus. This is the same idea here. Instead
+- [01:39:58,186 - 01:40:01,596] of dividing by the ordinary distance, you
+- [01:40:01,596 - 01:40:05,006] divide by the proper time between the points.
+- [01:40:05,006 - 01:40:07,986] You have a little dx, and you divide by
+- [01:40:07,986 - 01:40:10,966] the proper time. So this is the analog. This is
+- [01:40:10,966 - 01:40:15,526] the relativistic analog of the tangent vector
+- [01:40:15,526 - 01:40:20,086] along the world line of a particle.
+- [01:40:20,086 - 01:40:23,896] As I said, it's space components, if the
+- [01:40:23,896 - 01:40:27,706] particle is moving slow, it's space components are
+- [01:40:27,706 - 01:40:27,896] the ordinary distance. And so the tangent
+- [01:40:27,896 - 01:40:28,086] vector is the analog of the tangent vector.
+- [01:40:28,086 - 01:40:30,686] It's the ordinary velocity. And its time
+- [01:40:30,686 - 01:40:33,286] coordinate is just 1. If the particle is
+- [01:40:33,286 - 01:40:36,786] moving fast, then these are
+- [01:40:36,786 - 01:40:40,286] appreciably different than their non-relativistic analogs.
+- [01:40:40,286 - 01:40:41,286] Yeah?
+- [01:40:41,286 - 01:40:46,786] If c equals 1, proper time
+- [01:40:46,786 - 01:40:52,286] and proper distance are the same?
+- [01:40:52,286 - 01:40:53,286] Say it again?
+- [01:40:53,286 - 01:40:54,286] If c equals 1, proper time
+- [01:40:54,286 - 01:40:55,286] and proper distance are the same?
+- [01:40:55,286 - 01:40:55,786] Well, proper time is usually
+- [01:40:55,786 - 01:40:56,286] something measured along a timeline.
+- [01:40:56,286 - 01:40:56,786] So if c equals 1, proper
+- [01:40:56,786 - 01:40:57,286] time and proper distance are the same?
+- [01:40:57,286 - 01:40:57,536] Well, proper time is usually
+- [01:40:57,536 - 01:40:57,786] something measured along a timeline.
+- [01:40:58,086 - 01:41:00,286] And so, if c equals 1, and this is
+- [01:41:00,286 - 01:41:02,486] something that's not the same trajectory, then, if c
+- [01:41:02,486 - 01:41:06,836] is equal to 1, apart from
+- [01:41:06,836 - 01:41:11,186] the funny minus sign that's appeared, yes.
+- [01:41:11,186 - 01:41:13,606] You can't, by taking c equal to 1, you
+- [01:41:13,606 - 01:41:16,026] can't get rid of a minus sign in the formula.
+- [01:41:16,026 - 01:41:17,556] So I'm not sure what you mean by
+- [01:41:17,556 - 01:41:19,086] saying is proper time the same as proper distance.
+- [01:41:19,086 - 01:41:22,086] Proper distance, and they seem to be using an interchange.
+- [01:41:22,086 - 01:41:26,086] Oh, I'm sorry. You mean, in...
+- [01:41:26,086 - 01:41:27,386] Here, I was simply talking about ordinary distance.
+- [01:41:27,386 - 01:41:29,696] about ordinary Euclidean geometry. Distance
+- [01:41:29,696 - 01:41:32,006] is distance. There's no question
+- [01:41:32,006 - 01:41:34,196] of proper time because time doesn't even
+- [01:41:34,196 - 01:41:36,386] come into it, okay? Proper distance and
+- [01:41:36,386 - 01:41:39,686] I've called that s, okay? In
+- [01:41:39,686 - 01:41:42,986] relativity, the analog along here, along the
+- [01:41:42,986 - 01:41:45,146] trajectory, is d tau, and I would call
+- [01:41:45,146 - 01:41:47,306] it proper time. Here I would just call it
+- [01:41:47,306 - 01:41:50,486] distance. Here I would call it proper time.
+- [01:41:50,486 - 01:41:53,666] You could call it proper distance if you
+- [01:41:53,666 - 01:41:57,916] like, but it doesn't add very much.
+- [01:41:57,916 - 01:42:02,166] It's just the distance measured by a tape
+- [01:42:02,166 - 01:42:05,026] measure along the curve, right? Here
+- [01:42:05,026 - 01:42:07,886] it's also just distance, but distance measured
+- [01:42:07,886 - 01:42:12,146] by a clock along the curve. Yeah.
+- [01:42:12,146 - 01:42:16,406] So it's basically the same concept, the tangent
+- [01:42:16,406 - 01:42:18,726] vector, the velocity vector. Now, of
+- [01:42:18,726 - 01:42:21,046] course, you can differentiate the velocity
+- [01:42:21,046 - 01:42:23,645] vector with respect to proper time.
+- [01:42:23,666 - 01:42:25,466] So you can differentiate the velocity
+- [01:42:25,466 - 01:42:27,266] vector with respect to proper time along
+- [01:42:27,266 - 01:42:29,576] the curve, and that gives you the
+- [01:42:29,576 - 01:42:31,886] proper acceleration vector. Why would we be
+- [01:42:31,886 - 01:42:34,346] interested in the proper acceleration
+- [01:42:34,346 - 01:42:36,806] vector? Because the analog of Newton's
+- [01:42:36,806 - 01:42:39,746] equations, f equals ma, becomes
+- [01:42:39,746 - 01:42:42,686] a statement about proper acceleration. But
+- [01:42:42,686 - 01:42:45,266] proper acceleration is not the second derivative
+- [01:42:45,266 - 01:42:47,846] of x with respect to t, but
+- [01:42:47,846 - 01:42:50,426] the second derivative of x with respect
+- [01:42:50,426 - 01:42:53,006] to distance, or with respect to proper
+- [01:42:53,006 - 01:42:53,666] time along the curve.
+- [01:42:53,666 - 01:42:57,166] So we want to understand how Newton's
+- [01:42:57,166 - 01:43:00,666] equations change. We want to understand proper velocity,
+- [01:43:00,666 - 01:43:03,546] proper acceleration. Another example, let's see, I
+- [01:43:03,546 - 01:43:06,426] think we could, shall I stop here,
+- [01:43:06,426 - 01:43:09,426] or should I go another five, another ten minutes?
+- [01:43:09,426 - 01:43:13,496] All right, we'll go another ten minutes
+- [01:43:13,496 - 01:43:17,566] and just illustrate the concept of momentum.
+- [01:43:17,566 - 01:43:20,286] Momentum is an important concept in mechanics.
+- [01:43:20,286 - 01:43:23,006] We haven't gotten to mechanics yet, but as
+- [01:43:23,006 - 01:43:26,866] you might imagine, we will have a
+- [01:43:26,866 - 01:43:30,726] relativistic concept of momentum. Momentum is a vector
+- [01:43:30,726 - 01:43:33,226] in ordinary physics. In relativistic physics,
+- [01:43:33,226 - 01:43:35,726] it's part of a four vector.
+- [01:43:36,386 - 01:43:40,436] Okay, so let's go through
+- [01:43:40,436 - 01:43:44,486] that. In ordinary Newtonian mechanics, mv
+- [01:43:44,486 - 01:43:46,386] is equal to the momentum p. We could put some indices
+- [01:43:46,386 - 01:43:48,286] on here, the x component of velocity, y component, v, entire
+- [01:43:48,286 - 01:43:48,856] moment. The function and the type simplement
+- [01:43:48,856 - 01:43:49,426] of torque and current are stronger than the
+- [01:43:49,426 - 01:43:49,926] pneu develops. So if M was 50%
+- [01:43:49,926 - 01:43:50,426] more powerful, 100% more replaceable, the non- experimentation
+- [01:43:50,426 - 01:43:51,116] would have taken along much more sledged close to
+- [01:43:51,116 - 01:43:51,806] the table and, so on. And you look at the
+- [01:43:51,806 - 01:43:51,966] meaning of my species. Well, the other
+- [01:43:51,966 - 01:43:52,126] thing about this complicado is that the absolute中
+- [01:43:52,126 - 01:43:52,466] motion values theolo الب souvenirs are specialized
+- [01:43:52,466 - 01:43:52,806] by adding with the grouping, stat, table, and
+- [01:43:52,806 - 01:43:55,086] y component of velocity, or we could just
+- [01:43:55,086 - 01:43:57,366] put a little vector index here to tell us
+- [01:43:57,366 - 01:43:59,766] that we're talking about vectors. So
+- [01:43:59,766 - 01:44:02,166] momentum and velocity are vectors, mass
+- [01:44:02,166 - 01:44:05,096] is just a number. Incidentally, in
+- [01:44:05,096 - 01:44:08,026] the modern terminology, one doesn't speak
+- [01:44:08,026 - 01:44:11,226] about mass changing with velocity. Mass
+- [01:44:11,226 - 01:44:14,426] is simply a characteristic of a particle
+- [01:44:14,426 - 01:44:17,366] that it's what used to be called rest
+- [01:44:17,366 - 01:44:20,306] mass. When one speaks of mass, it's a
+- [01:44:20,306 - 01:44:23,226] number that's attached to the particle, it
+- [01:44:23,226 - 01:44:26,146] is what used to be called mass when
+- [01:44:26,146 - 01:44:28,696] the particle is at rest, and we'll see
+- [01:44:28,696 - 01:44:31,246] what it's connected to. But just think of
+- [01:44:31,246 - 01:44:34,156] mass as something associated with a particle
+- [01:44:34,156 - 01:44:37,066] and not with its velocity. So if
+- [01:44:37,066 - 01:44:39,756] you look up the mass of an electron
+- [01:44:39,756 - 01:44:42,446] in a table of masses of particles, it won't
+- [01:44:42,446 - 01:44:44,646] tell you the mass as a function of
+- [01:44:44,646 - 01:44:46,846] velocity, it will just tell you the mass
+- [01:44:46,846 - 01:44:50,126] of an electron is blah blah blah blah blah kilograms,
+- [01:44:50,306 - 01:44:53,806] and it doesn't change with velocity, it's
+- [01:44:53,806 - 01:44:57,306] simply the number that's attached to the electron.
+- [01:44:57,306 - 01:45:03,056] Okay, the analog of momentum, in fact
+- [01:45:03,056 - 01:45:08,806] the momentum, of a particle in relativistic theory
+- [01:45:08,806 - 01:45:13,306] is not gotten by multiplying the mass by the
+- [01:45:13,306 - 01:45:17,806] ordinary velocity, but rather the mass by the relativistic velocity.
+- [01:45:17,806 - 01:45:24,306] So, the right definition in relativity theory is that p mu
+- [01:45:24,306 - 01:45:30,806] with four components is equal to the mass times u mu.
+- [01:45:30,806 - 01:45:35,056] That's four components. Momentum in
+- [01:45:35,056 - 01:45:39,306] non-relativistic physics only had three components,
+- [01:45:39,306 - 01:45:42,306] but it's interesting to ask what the fourth component is.
+- [01:45:42,306 - 01:45:45,306] I'll tell you next time how you use the momentum.
+- [01:45:45,306 - 01:45:47,306] You use the momentum
+- [01:45:47,306 - 01:45:49,306] because it's conserved.
+- [01:45:49,306 - 01:45:52,056] If you want to know what happens to particles when
+- [01:45:52,056 - 01:45:54,806] they collide or particles when they decay and so forth,
+- [01:45:54,806 - 01:45:57,806] the basic tool is conservation of momentum.
+- [01:45:57,806 - 01:46:00,806] But not conservation of three components of
+- [01:46:00,806 - 01:46:03,806] momentum, but conservation of all four components.
+- [01:46:03,806 - 01:46:06,806] So, we ought to find out
+- [01:46:06,806 - 01:46:09,806] what the fourth component of momentum is.
+- [01:46:09,806 - 01:46:11,806] What about the first three components?
+- [01:46:11,806 - 01:46:13,806] p x, let's say.
+- [01:46:13,806 - 01:46:15,806] That's m times u x,
+- [01:46:15,806 - 01:46:16,806] which is
+- [01:46:16,806 - 01:46:17,306] m
+- [01:46:17,306 - 01:46:19,306] times v x
+- [01:46:19,306 - 01:46:21,306] divided by square root of 1
+- [01:46:21,306 - 01:46:23,306] minus v squared over c squared.
+- [01:46:23,306 - 01:46:24,306] Okay.
+- [01:46:24,306 - 01:46:27,306] If v is small,
+- [01:46:27,306 - 01:46:29,306] 1 minus v squared over
+- [01:46:29,306 - 01:46:31,306] c squared is basically just 1,
+- [01:46:31,306 - 01:46:34,306] and so, for small velocity,
+- [01:46:34,306 - 01:46:36,306] the momentum is just mv.
+- [01:46:36,306 - 01:46:37,306] Alright?
+- [01:46:37,306 - 01:46:39,306] As the velocity gets bigger and bigger,
+- [01:46:39,306 - 01:46:42,806] the momentum starts changing and
+- [01:46:42,806 - 01:46:46,306] deviating away from just mv.
+- [01:46:46,306 - 01:46:46,806] In fact, it gets bigger than just mv.
+- [01:46:46,806 - 01:46:51,806] But for small velocities, it's just a good old momentum.
+- [01:46:51,806 - 01:46:53,806] What about the time component?
+- [01:46:53,806 - 01:46:55,806] This is something new.
+- [01:46:55,806 - 01:46:56,806] Or is it?
+- [01:46:56,806 - 01:47:01,806] What about the time component, or equivalently p zero?
+- [01:47:01,806 - 01:47:03,806] What is it?
+- [01:47:03,806 - 01:47:04,806] Alright.
+- [01:47:04,806 - 01:47:06,806] It's energy.
+- [01:47:06,806 - 01:47:08,806] Energy is also conserved.
+- [01:47:08,806 - 01:47:12,806] And the fourth component of the momentum vector is energy.
+- [01:47:12,806 - 01:47:14,806] Let's see if we can see why that's true.
+- [01:47:14,806 - 01:47:17,806] First of all,
+- [01:47:17,806 - 01:47:20,806] it's m
+- [01:47:20,806 - 01:47:23,806] divided by the square root of 1 minus v squared.
+- [01:47:23,806 - 01:47:27,806] And let's put in the speeds of light now.
+- [01:47:27,806 - 01:47:28,806] Now, I lied to you a little bit.
+- [01:47:28,806 - 01:47:32,806] I said that pt is energy.
+- [01:47:32,806 - 01:47:33,806] It's not quite true.
+- [01:47:33,806 - 01:47:37,306] You have to multiply it by the
+- [01:47:37,306 - 01:47:40,806] speed of light squared to get energy.
+- [01:47:40,806 - 01:47:42,806] The main point is that it's conserved.
+- [01:47:42,806 - 01:47:44,306] Whether or not you multiply it,
+- [01:47:44,306 - 01:47:46,306] multiply it by the speed of
+- [01:47:46,306 - 01:47:48,306] light squared is a matter of convention
+- [01:47:48,306 - 01:47:50,806] and a matter of making it
+- [01:47:50,806 - 01:47:53,306] consistent with older choices of units.
+- [01:47:53,306 - 01:47:55,306] Energy has certain units.
+- [01:47:55,306 - 01:47:58,306] What are the units of energy?
+- [01:47:58,306 - 01:48:02,306] The units of energy are mass times velocity squared.
+- [01:48:02,306 - 01:48:04,306] Where did I get that from?
+- [01:48:04,306 - 01:48:07,306] 1 half mv squared is the kinetic
+- [01:48:07,306 - 01:48:10,306] energy of a particle in ordinary relativistic physics.
+- [01:48:10,306 - 01:48:13,306] So if pt has anything to do with energy,
+- [01:48:13,306 - 01:48:16,806] then you better multiply it by c
+- [01:48:16,806 - 01:48:20,306] squared in order to have units of energy.
+- [01:48:20,306 - 01:48:23,306] But apart from units, it's just pt.
+- [01:48:23,306 - 01:48:26,806] Apart from putting in the appropriate powers of c to give
+- [01:48:26,806 - 01:48:30,306] it the units that we're familiar with when we talk about energy,
+- [01:48:30,306 - 01:48:33,306] pt is the energy.
+- [01:48:33,306 - 01:48:34,306] Let's see. Let's go a little bit further.
+- [01:48:34,306 - 01:48:37,306] Let's work this out and see that it's energy.
+- [01:48:37,306 - 01:48:39,806] See that it's related
+- [01:48:39,806 - 01:48:42,306] to nonrelativistic energy, kinetic energy.
+- [01:48:42,306 - 01:48:43,306] All right.
+- [01:48:43,306 - 01:48:46,806] First of all, this is mc squared
+- [01:48:46,806 - 01:48:50,306] times 1 minus v squared over c squared
+- [01:48:50,306 - 01:48:54,306] to the minus 1 half power.
+- [01:48:54,306 - 01:48:58,306] Because it's in the denominator, it's to a negative power,
+- [01:48:58,306 - 01:49:00,306] and because it's a square
+- [01:49:00,306 - 01:49:02,306] root, it's the power of half.
+- [01:49:02,306 - 01:49:05,306] Okay.
+- [01:49:05,306 - 01:49:09,306] Now, I want to work this out for small velocities,
+- [01:49:09,306 - 01:49:12,306] for velocities very much smaller than the speed of light.
+- [01:49:12,306 - 01:49:16,306] To do that, we use the binomial theorem.
+- [01:49:16,306 - 01:49:19,306] The binomial theorem says,
+- [01:49:19,306 - 01:49:21,806] the main thing for our purposes
+- [01:49:21,806 - 01:49:24,306] is that what the binomial theorem says
+- [01:49:24,306 - 01:49:26,806] is that 1 minus a
+- [01:49:26,806 - 01:49:29,306] small number, let's call it epsilon,
+- [01:49:29,306 - 01:49:32,806] to any power p is approximately
+- [01:49:32,806 - 01:49:36,306] equal to 1 minus p epsilon.
+- [01:49:39,306 - 01:49:41,306] That's the binomial theorem.
+- [01:49:41,306 - 01:49:47,306] You can, for example, there are higher orders in epsilon,
+- [01:49:47,306 - 01:49:48,806] plus things of order
+- [01:49:48,806 - 01:49:50,306] epsilon squared, epsilon cubed, whatever,
+- [01:49:50,306 - 01:49:52,306] higher orders in epsilon.
+- [01:49:52,306 - 01:49:56,806] But for example, 1 minus epsilon squared
+- [01:49:56,806 - 01:50:01,306] is 1 minus 2 epsilon plus epsilon squared.
+- [01:50:01,306 - 01:50:02,306] Epsilon squared is very, very small.
+- [01:50:02,306 - 01:50:04,306] We're not interested in it.
+- [01:50:04,306 - 01:50:08,306] What about 1 minus epsilon cubed?
+- [01:50:08,306 - 01:50:11,806] That's 1 minus 3 epsilon plus
+- [01:50:11,806 - 01:50:15,306] things which are order epsilon squared.
+- [01:50:15,306 - 01:50:17,806] If epsilon squared is very small,
+- [01:50:17,806 - 01:50:20,306] then 1 minus epsilon to a power
+- [01:50:20,306 - 01:50:22,306] is just 1 minus the
+- [01:50:22,306 - 01:50:24,306] power, 1 minus p times epsilon.
+- [01:50:24,306 - 01:50:28,806] That's what the binomial theorem tells us
+- [01:50:28,806 - 01:50:33,306] about general powers of 1 minus epsilon.
+- [01:50:33,306 - 01:50:34,306] All right.
+- [01:50:34,306 - 01:50:37,306] Now, v squared over c squared is small.
+- [01:50:38,306 - 01:50:40,306] For a slowly moving particle, v squared
+- [01:50:40,306 - 01:50:42,306] over c squared is truly very small
+- [01:50:42,306 - 01:50:44,306] for ordinary velocities.
+- [01:50:44,306 - 01:50:46,306] And so I can apply this rule.
+- [01:50:46,306 - 01:50:52,306] And it says that this is mc squared times 1.
+- [01:50:52,306 - 01:50:54,306] Now, we have a minus from here,
+- [01:50:54,306 - 01:50:56,306] but we have another minus from here,
+- [01:50:56,306 - 01:50:59,306] and it comes out to be plus
+- [01:50:59,306 - 01:51:02,306] 1 half v squared over c squared
+- [01:51:02,306 - 01:51:04,806] plus additional things which are very, very
+- [01:51:04,806 - 01:51:07,306] much smaller than v squared over c squared.
+- [01:51:08,306 - 01:51:10,306] The next one will be order
+- [01:51:10,306 - 01:51:12,306] v fourth over c to the fourth.
+- [01:51:12,306 - 01:51:16,306] That's impossibly small for any ordinary velocity.
+- [01:51:16,306 - 01:51:19,806] And so this is basically a
+- [01:51:19,806 - 01:51:23,306] good approximation for slowly moving objects.
+- [01:51:23,306 - 01:51:25,306] mc squared times 1 plus 1
+- [01:51:25,306 - 01:51:27,306] half v squared over c squared.
+- [01:51:27,306 - 01:51:30,306] And now the rest is familiar.
+- [01:51:30,306 - 01:51:32,306] It's mc squared.
+- [01:51:32,306 - 01:51:36,306] You've seen that before.
+- [01:51:36,306 - 01:51:38,306] But that's only the energy of the energy.
+- [01:51:38,306 - 01:51:40,306] If the object is at rest.
+- [01:51:40,306 - 01:51:43,306] If it's moving, there's another
+- [01:51:43,306 - 01:51:46,306] term which is 1 half m.
+- [01:51:46,306 - 01:51:49,306] The c squares cancel v squared.
+- [01:51:49,306 - 01:51:51,806] This is the ordinary Newtonian
+- [01:51:51,806 - 01:51:54,306] kinetic energy of a moving particle.
+- [01:51:54,306 - 01:51:57,306] And you add that to the constant mc squared.
+- [01:51:57,306 - 01:52:01,306] That's what the fourth component of momentum is.
+- [01:52:01,306 - 01:52:05,306] Or at least for slowly moving nonrelativistic particles,
+- [01:52:05,306 - 01:52:08,306] the fourth component of momentum is a constant
+- [01:52:08,306 - 01:52:13,306] which is characteristic of the particle mc squared
+- [01:52:13,306 - 01:52:18,306] plus the ordinary Newtonian kinetic energy.
+- [01:52:23,306 - 01:52:26,306] Adding in a constant to the energy of a particle
+- [01:52:26,306 - 01:52:30,306] if a particle is not allowed to change its mass
+- [01:52:30,306 - 01:52:34,306] and in Newtonian physics, particles never change their mass.
+- [01:52:34,306 - 01:52:38,306] If a particle cannot change its mass,
+- [01:52:38,306 - 01:52:41,306] and you have any number of particles,
+- [01:52:41,306 - 01:52:44,306] then all of this adds up to some constant.
+- [01:52:44,306 - 01:52:46,306] And an additional constant in
+- [01:52:46,306 - 01:52:48,306] the energy doesn't make any difference.
+- [01:52:48,306 - 01:52:49,806] So the important term in the
+- [01:52:49,806 - 01:52:51,306] energy when particles are moving slowly
+- [01:52:51,306 - 01:52:53,306] is this 1 half mv squared.
+- [01:52:53,306 - 01:52:54,806] That's the term in the
+- [01:52:54,806 - 01:52:56,306] energy which depends on the velocity.
+- [01:52:56,306 - 01:52:58,306] It's what we call kinetic energy.
+- [01:52:58,306 - 01:53:02,806] So that's the four vector
+- [01:53:02,806 - 01:53:07,306] of momentum includes momentum and energy.
+- [01:53:07,306 - 01:53:10,306] The conservation of the four vector of momentum
+- [01:53:10,306 - 01:53:13,306] is the conservation of momentum and energy.
+- [01:53:13,306 - 01:53:15,306] They go together.
+- [01:53:15,306 - 01:53:17,806] Even more, when you Lorentz
+- [01:53:17,806 - 01:53:20,306] transform from one frame to another,
+- [01:53:20,306 - 01:53:23,306] momentum and energy get mixed up with each other
+- [01:53:23,306 - 01:53:26,306] because they're components of a four vector.
+- [01:53:26,306 - 01:53:30,806] So what is energy in one frame becomes
+- [01:53:30,806 - 01:53:35,306] a combination of energy and momentum in another frame.
+- [01:53:35,306 - 01:53:40,306] But in every frame, the momentum is conserved.
+- [01:53:40,306 - 01:53:41,306] That's the important thing.
+- [01:53:41,306 - 01:53:44,306] Momentum is conserved in every reference frame,
+- [01:53:44,306 - 01:53:48,306] which means all four components, energy and momentum,
+- [01:53:48,306 - 01:53:50,806] of an isolated system are the
+- [01:53:50,806 - 01:53:53,306] same before and after a collision.
+- [01:53:53,306 - 01:53:57,306] We'll work out some examples and use it next time.
+- [01:53:57,306 - 01:54:02,306] And then I want to go on to Newton's equations,
+- [01:54:02,306 - 01:54:05,306] the concept of acceleration.
+- [01:54:05,306 - 01:54:08,306] But then, wave equations.
+- [01:54:08,306 - 01:54:09,806] Wave equations because we're going to
+- [01:54:09,806 - 01:54:11,306] want to study electricity and magnetism.
+- [01:54:11,306 - 01:54:12,306] We're going to study light.
+- [01:54:12,306 - 01:54:15,306] We're going to study light, light waves, and so forth.
+- [01:54:15,306 - 01:54:18,306] And so we'll want to
+- [01:54:18,306 - 01:54:21,306] understand how waves fit into relativity
+- [01:54:21,306 - 01:54:23,306] and how particle motion fits into relativity.
+- [01:54:23,306 - 01:54:27,306] Particle motion, what's the analog of F equals mA.
+- [01:54:27,306 - 01:54:29,306] Okay, that'll be next time.
+- [01:54:29,306 - 01:54:32,306] Any questions now?
+- [01:54:32,306 - 01:54:34,306] We had a long night tonight, didn't we?
+- [01:54:35,306 - 01:54:37,306] Anyway, thanks for joining us.
+- [01:54:37,306 - 01:54:38,306] I'm Michael Johnson.
+- [01:54:38,306 - 01:54:39,306] I'll see you next time.
+- [01:54:39,306 - 01:54:42,306] The preceding program is copyrighted by Stanford University.
+- [01:54:42,306 - 01:54:45,306] Please visit us at stanford.edu.
