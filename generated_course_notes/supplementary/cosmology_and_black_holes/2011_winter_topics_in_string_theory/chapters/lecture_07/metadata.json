@@ -7,32 +7,18 @@
   "lecture_title": "Lecture 7 : Topics in String Theory",
   "assets": [
     {
-      "name": "lecture_07_figure_01.png",
-      "timestamp_seconds": 6.4,
-      "timestamp_hhmmss": "00:00:06.400",
-      "source_candidate": "lecture_07_window_01_candidate_04_000006400.png",
-      "recommended_use": "screenshot_only",
-      "rationale": "None of the candidate frames are useful for lecture-note visuals. This subtitle window contains only the opening Stanford branding sequence: exterior campus shots followed by a title card, with no blackboard mathematics, diagrams, or lecture-room layout to preserve. Candidate 04 is the most finished and legible of the set, but it should still be rejected for the notes.",
-      "subtitle_excerpt": "Stanford University",
-      "segment_start_seconds": 0.0,
-      "segment_start_hhmmss": "00:00:00.000",
-      "segment_end_seconds": 7.0,
-      "segment_end_hhmmss": "00:00:07.000",
-      "caption_hint": "Stanford University title card"
-    },
-    {
       "name": "lecture_07_figure_02.png",
       "timestamp_seconds": 207.9,
       "timestamp_hhmmss": "00:03:27.900",
       "source_candidate": "lecture_07_window_03_candidate_03_000327900.png",
       "recommended_use": "screenshot_plus_equation",
-      "rationale": "",
+      "rationale": "Candidate 03 is the clearest and most useful frame for notes. It preserves the board layout at the moment Susskind begins the dimensional argument: the natural-units convention is visible at the top, the standalone symbol E has already been written, and the lecturer has moved enough to leave the key writing legible. Candidate 02 is similar but more occluded, while candidate 04 loses the board content that matters.",
       "subtitle_excerpt": "It's the fact that energy, which is the same as mass, all you need to do is to write an equation.",
       "segment_start_seconds": 204.0,
       "segment_start_hhmmss": "00:03:24.000",
       "segment_end_seconds": 210.0,
       "segment_end_hhmmss": "00:03:30.000",
-      "caption_hint": "It's the fact that energy, which is the same as mass, all you need to do is to write an equation."
+      "caption_hint": "Natural-units setup for the energy relation"
     },
     {
       "name": "lecture_07_figure_03.png",
@@ -40,27 +26,27 @@
       "timestamp_hhmmss": "00:18:14.480",
       "source_candidate": "lecture_07_window_04_candidate_01_001814480.png",
       "recommended_use": "screenshot_plus_tikz",
-      "rationale": "Candidate 01 is the best frame because it preserves the full rough board sketch most clearly at the moment in question. The grid-like drawing is the main note-worthy content in this window, and here it is more complete and less occluded than in candidate 02, while candidate 03 shifts the diagram farther to the edge. Candidate 04 no longer shows the same sketch as the main content.",
+      "rationale": "Candidate 01 is the best frame because it preserves the full rough board sketch most clearly at the moment in question. The grid-like drawing is the main note-worthy content in this window, and here it is more complete and less occluded than in candidate 02, while candidate 03 shifts the diagram farther toward the edge. Candidate 04 no longer shows the same sketch as the main content.",
       "subtitle_excerpt": "is essentially equal to the potential energy.",
       "segment_start_seconds": 1094.0,
       "segment_start_hhmmss": "00:18:14.000",
       "segment_end_seconds": 1098.0,
       "segment_end_hhmmss": "00:18:18.000",
-      "caption_hint": "Rough lattice sketch on the board"
+      "caption_hint": "Rough lattice sketch for the string random walk"
     },
     {
       "name": "lecture_07_figure_04.png",
-      "timestamp_seconds": 1322.85,
-      "timestamp_hhmmss": "00:22:02.850",
-      "source_candidate": "lecture_07_window_05_candidate_03_002202850.png",
+      "timestamp_seconds": 1317.8,
+      "timestamp_hhmmss": "00:21:57.800",
+      "source_candidate": "lecture_07_window_05_candidate_01_002157800.png",
       "recommended_use": "screenshot_plus_equation",
-      "rationale": "",
+      "rationale": "Candidate 01 is the best frame in this window because it preserves the comparison-relevant board state most clearly: the string-side scale relation and entropy formula are both visible together, and the board still reads as a coherent equation column just as Susskind announces the comparison with black hole physics. Candidate 02 shifts attention to a more local relation and residual lattice sketch, candidate 03 is semantically mismatched with boxed loop cartoons, and candidate 04 is more occluded and less clean as a documentary equation frame.",
       "subtitle_excerpt": "Now I want to compare some of these equations with black hole physics.",
       "segment_start_seconds": 1317.0,
       "segment_start_hhmmss": "00:21:57.000",
       "segment_end_seconds": 1326.0,
       "segment_end_hhmmss": "00:22:06.000",
-      "caption_hint": "Now I want to compare some of these equations with black hole physics."
+      "caption_hint": "String-side equations before the black-hole comparison"
     }
   ]
 }
