@@ -4,13 +4,22 @@
 
 # Leonard Susskind Lecture Notes Repository
 
+[![Archive](https://img.shields.io/badge/archive-active-16a34a?style=flat-square)](#)
+[![Subtitles](https://img.shields.io/badge/subtitles-.srt-2563eb?style=flat-square)](#-canonical-paths)
+[![Transcripts](https://img.shields.io/badge/transcripts-markdown-0f766e?style=flat-square)](#-canonical-paths)
+[![Generated Notes](https://img.shields.io/badge/generated_notes-LaTeX-f97316?style=flat-square)](#-canonical-paths)
+[![PDF Outputs](https://img.shields.io/badge/outputs-PDF-a855f7?style=flat-square)](#-canonical-paths)
+[![Theoretical Minimum](https://img.shields.io/badge/focus-Theoretical%20Minimum-f59e0b?style=flat-square)](#)
+
 This repository is a physics-study archive centered on Leonard Susskind lectures, the broader *Theoretical Minimum* ecosystem, and transcript-derived companion notes.
 
 It is not only a PDF dump. The repository is organized so that lecture videos, subtitles, Markdown transcripts, generated TeX notes, compiled PDFs, and hand-maintained course folders all live in one place with stable paths.
 
 If any material should not be mirrored here, open an issue or contact the maintainer and it can be reviewed or removed.
 
-## What This Repo Provides
+> 📘 This repo provides full lecture transcriptions, subtitle files, generated TeX note workflows, and published course PDFs in one organized archive.
+
+## ✨ What This Repo Provides
 
 - Existing hand-maintained course PDFs and LaTeX material in `core_*` and `supplemental_*` folders.
 - A paired transcription layer for the lecture archive:
@@ -22,9 +31,15 @@ If any material should not be mirrored here, open an issue or contact the mainta
 
 English is the canonical README. Translations live in `i18n/` and may lag behind the English file.
 
-## Canonical Paths
+## 🎬 Source Playlist
 
-| Layer | Canonical path | What it contains |
+The main transcript and subtitle archive in this repository is derived from this YouTube playlist:
+
+- <https://www.youtube.com/playlist?list=PLERGeJGfknBTR_nXt5QL88xJF5LhDZBnG>
+
+## 🗂️ Canonical Paths
+
+| 📚 Layer | 📍 Canonical path | 🧾 What it contains |
 |---|---|---|
 | Hand-maintained course folders | `core_*`, `supplemental_*` | Existing PDFs, READMEs, and selected LaTeX sources |
 | Subtitles | `subtitles/<track>/<subject>/<run>/` | Lecture `.srt` files |
@@ -33,20 +48,21 @@ English is the canonical README. Translations live in `i18n/` and may lag behind
 | Generated lecture PDFs | `generated_course_notes/<track>/<subject>/<run>/chapters/lecture_XX/lecture.pdf` | One compiled PDF per lecture |
 | Generated merged course PDFs | `generated_course_notes/<track>/<subject>/<run>/course.pdf` | One compiled PDF for the full course run |
 | Canonical published Advanced Quantum PDFs | `supplemental_advanced_quantum/course.pdf` and `supplemental_advanced_quantum/lecture_*.pdf` | Reader-facing published artifacts for that track |
+| Legacy chapter-10 cosmology build artifacts | `core_cosmology/cosmology_ch10/artifacts/` | PDF and LaTeX build outputs for the older chapter-10 subproject |
 | Companion note import | `theoretical_minimum_companion_notes/` | Imported TeX companion notes derived from `weka511/tm` |
 | Theoretical Minimum submodule | `the_theoretical_minimum/` | Separate submodule checkout for related material |
 | Templates | `template/kaobook/`, `template/tuftle/` | Reusable LaTeX scaffolding |
 
-## Root Course Folders
+## 🧭 Root Course Folders
 
-| Group | Folders |
+| 🏷️ Group | 📂 Folders |
 |---|---|
 | Core | `core_classical`, `core_quantum`, `core_special_relativity`, `core_general_relativity`, `core_cosmology`, `core_statistical_mechanics` |
 | Supplemental | `supplemental_advanced_quantum`, `supplemental_cosmology_and_black_holes`, `supplemental_higgs_boson`, `supplemental_particle_physics_1`, `supplemental_particle_physics_2`, `supplemental_particle_physics_3`, `supplemental_quantum_entanglement`, `supplemental_relativity`, `supplemental_string_theory` |
 
-## How To Use The Repo
+## 🚀 How To Use The Repo
 
-### Read published notes
+### 📖 Read published notes
 
 Open the PDFs in the relevant course folder, for example:
 
@@ -55,14 +71,14 @@ Open the PDFs in the relevant course folder, for example:
 - `core_statistical_mechanics/lesson_1.pdf`
 - `supplemental_advanced_quantum/course.pdf`
 
-### Read transcripts directly
+### 📝 Read transcripts directly
 
 For the same lecture archive, use:
 
 - `subtitles/.../*.srt` for subtitle-style reading and timestamp fidelity
 - `markdown/.../*.md` for text review, searching, and note generation
 
-### Work on transcript-derived notes
+### 🧪 Work on transcript-derived notes
 
 The generated-note tree lives under:
 
@@ -74,13 +90,13 @@ Typical generated outputs include:
 - lecture PDF in `chapters/lecture_XX/lecture.pdf`
 - merged course PDF in `course.pdf`
 
-### Work on imported companion notes
+### 📚 Work on imported companion notes
 
 ```bash
 ./theoretical_minimum_companion_notes/build_all.sh
 ```
 
-## Collaboration
+## 🤝 Collaboration
 
 Collaborations are welcome, especially if you want to improve the mathematical quality and reach of Leonard Susskind-related study material.
 
@@ -105,30 +121,9 @@ High-value contribution areas:
 
 If you contribute, prefer focused commits and mention the exact folders, transcripts, or course runs you changed.
 
-## Build Notes
+> 🛠️ If you care about physics communication, TeX quality, transcript correctness, or preserving Susskind-related teaching material, this repository is meant to be collaboratively improved.
 
-There is no single root build system. Build from the specific folder you are working in.
-
-Examples:
-
-```bash
-cd template/kaobook
-pdflatex main
-makeindex main.idx -s StyleInd.ist
-biber main
-pdflatex main
-pdflatex main
-```
-
-```bash
-cd core_cosmology/cosmology_ch10
-pdflatex cosmology_ch10.tex
-bibtex cosmology_ch10
-pdflatex cosmology_ch10.tex
-pdflatex cosmology_ch10.tex
-```
-
-## Acknowledgements
+## 🙏 Acknowledgements
 
 - Leonard Susskind for the original lecture content.
 - Simon Crase for the companion-note repository imported into `theoretical_minimum_companion_notes/`.
@@ -137,6 +132,12 @@ pdflatex cosmology_ch10.tex
   - <https://www.lapasserelle.com/general_relativity/>
   - <https://www.lapasserelle.com/cosmology/>
   - <https://www.lapasserelle.com/statistical_mechanics/>
+
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
 
 ## License
 

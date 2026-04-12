@@ -9,7 +9,7 @@ There is no root `Makefile` or package manager workflow; build from the specific
 ```bash
 git submodule update --init --recursive
 cd template/kaobook && pdflatex main && makeindex main.idx -s StyleInd.ist && biber main && pdflatex main && pdflatex main
-cd core_cosmology/cosmology_ch10 && pdflatex cosmology_ch10.tex && bibtex cosmology_ch10 && pdflatex cosmology_ch10.tex && pdflatex cosmology_ch10.tex
+cd core_cosmology/cosmology_ch10 && mkdir -p artifacts && pdflatex -output-directory=artifacts cosmology_ch10.tex && bibtex artifacts/cosmology_ch10 && pdflatex -output-directory=artifacts cosmology_ch10.tex && pdflatex -output-directory=artifacts cosmology_ch10.tex
 ```
 
 Use `bibtex` or `biber` according to the target document. If a file uses indexes or glossaries, rerun `makeindex` or the relevant glossary step before the final LaTeX passes.
