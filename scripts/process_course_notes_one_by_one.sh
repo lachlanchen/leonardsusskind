@@ -27,6 +27,8 @@ repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 source_root="/home/lachlan/ProjectsLFS/YoutubeDownloader/downloads/PLERGeJGfknBTR_nXt5QL88xJF5LhDZBnG"
 model="${NOTE_MODEL:-gpt-5.3-codex-spark}"
 reasoning="${NOTE_REASONING:-xhigh}"
+shared_session_file="${NOTE_CODEX_SESSION_FILE:-$repo_root/.lecture-notes-work/codex_sessions/susskind-notes.session_id}"
+shared_session_doc="${NOTE_CODEX_SESSION_DOC_FILE:-$repo_root/.lecture-notes-work/codex_sessions/susskind-notes.session.md}"
 course=""
 max_lectures=0
 allow_partial_course=0
@@ -78,6 +80,17 @@ case "$reasoning" in
 esac
 
 cd "$repo_root"
+mkdir -p "$(dirname "$shared_session_file")"
+export CODEX_SHARED_SESSION_FILE="$shared_session_file"
+export CODEX_SHARED_SESSION_DOC_FILE="$shared_session_doc"
+export CODEX_COMMIT_MODEL="${CODEX_COMMIT_MODEL:-$model}"
+export NOTE_TMUX_SESSION_NAME="${NOTE_TMUX_SESSION_NAME:-susskind-notes}"
+
+echo "Using shared Codex session file: $CODEX_SHARED_SESSION_FILE"
+echo "Documenting shared Codex session at: $CODEX_SHARED_SESSION_DOC_FILE"
+if [[ -s "$CODEX_SHARED_SESSION_FILE" ]]; then
+  echo "Reusing Codex session id: $(tr -d '[:space:]' < "$CODEX_SHARED_SESSION_FILE")"
+fi
 
 processed=0
 while true; do
