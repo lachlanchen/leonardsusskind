@@ -1,0 +1,34 @@
+{
+  "course_rel": "supplementary/advanced_quantum_mechanics/2013_fall",
+  "transcript_rel": "supplementary/advanced_quantum_mechanics/2013_fall/190 - Advanced Quantum Mechanics Lecture 6 [D36VXLx0hOc].md",
+  "video_rel": "supplementary/advanced_quantum_mechanics/2013_fall/190 - Advanced Quantum Mechanics Lecture 6 [D36VXLx0hOc].mkv",
+  "lecture_number": 6,
+  "lecture_slug": "lecture_06",
+  "lecture_title": "Advanced Quantum Mechanics Lecture 6",
+  "assets": [
+    {
+      "name": "lecture_06_frame_01.png",
+      "timestamp_seconds": 1178.862,
+      "timestamp_hhmmss": "00:19:38.862",
+      "source_candidate": "lecture_06_candidate_05_001938862.png",
+      "recommended_use": "figure",
+      "rationale": "Clear board shot of the operator-algebra step a^\\dagger|n\\rangle = c_n|n+1\\rangle, legible enough to support the derivation."
+    },
+    {
+      "name": "lecture_06_frame_02.png",
+      "timestamp_seconds": 2411.562,
+      "timestamp_hhmmss": "00:40:11.562",
+      "source_candidate": "lecture_06_candidate_07_004011562.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Best available reference for the many-mode occupation-number ket and square-root coefficient, though the writing is partially cropped."
+    },
+    {
+      "name": "lecture_06_frame_03.png",
+      "timestamp_seconds": 4231.346,
+      "timestamp_hhmmss": "01:10:31.346",
+      "source_candidate": "lecture_06_candidate_10_011031346.png",
+      "recommended_use": "figure",
+      "rationale": "Stable, readable board diagram of the boxed basis functions with multiple \\psi_n(x) curves and labels."
+    }
+  ]
+}
