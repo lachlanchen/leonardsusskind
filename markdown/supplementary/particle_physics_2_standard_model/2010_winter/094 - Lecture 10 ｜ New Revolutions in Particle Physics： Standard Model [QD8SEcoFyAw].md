@@ -1,0 +1,2182 @@
+# Transcript
+
+Source: supplementary/particle_physics_2_standard_model/2010_winter/094 - Lecture 10 ｜ New Revolutions in Particle Physics： Standard Model [QD8SEcoFyAw].mkv
+
+- [00:00:00,000 - 00:00:07,000] Stanford University.
+- [00:00:07,000 - 00:00:10,000] Yeah, all right. So let's just for a
+- [00:00:10,000 - 00:00:13,000] moment stop and say what we'll do next time.
+- [00:00:13,000 - 00:00:16,500] I'm not sure whether tonight I will get to one
+- [00:00:16,500 - 00:00:20,000] of the key puzzles, which is called the gauge hierarchy.
+- [00:00:20,000 - 00:00:24,000] We may. I had planned it in my notes, and we
+- [00:00:24,000 - 00:00:28,000] may get to it, especially since I'm getting rid of the review.
+- [00:00:28,000 - 00:00:33,000] But next quarter, I want to study some of
+- [00:00:33,000 - 00:00:38,000] these paradoxes, not paradoxes, but difficulties of the theory,
+- [00:00:38,000 - 00:00:44,500] and how things like supersymmetry relate to them, how supersymmetry may
+- [00:00:44,500 - 00:00:51,000] or may not solve some of these puzzling features of the theory.
+- [00:00:51,000 - 00:00:54,500] How unification, what unification? Right now we have SU
+- [00:00:54,500 - 00:00:58,000] , we have SU and we have U .
+- [00:00:58,000 - 00:01:00,000] I'm talking now about the
+- [00:01:00,000 - 00:01:02,000] forces weak, electromagnetic, and strong.
+- [00:01:02,000 - 00:01:07,000] Do these somehow sit in some bigger structure?
+- [00:01:07,000 - 00:01:10,000] Is there a group, for example, which contains
+- [00:01:10,000 - 00:01:13,000] the subgroups SU , SU and U ?
+- [00:01:13,000 - 00:01:15,500] I haven't told you what a
+- [00:01:15,500 - 00:01:18,000] subgroup is, but you can imagine.
+- [00:01:18,000 - 00:01:21,000] Is there a bigger structure, a bigger mathematical
+- [00:01:21,000 - 00:01:24,000] structure that contains SU , SU and U ?
+- [00:01:24,000 - 00:01:28,000] Yes. There's a subgroup, there's a group called SU .
+- [00:01:28,000 - 00:01:34,000] And there's a lot of interesting evidence that this whole structure that
+- [00:01:34,000 - 00:01:40,000] I've described so far fits very, very neatly into an SU structure,
+- [00:01:40,000 - 00:01:42,500] in which quarks and leptons are
+- [00:01:42,500 - 00:01:45,000] all part of the same multiplets.
+- [00:01:45,000 - 00:01:49,500] We'll talk about that. Supersymmetry, unification,
+- [00:01:49,500 - 00:01:54,000] and the various puzzles that arise.
+- [00:01:54,000 - 00:01:55,500] And I will tell you a little
+- [00:01:55,500 - 00:01:57,000] bit about what I mean by that.
+- [00:01:58,000 - 00:02:00,500] I'll tell you a little bit about
+- [00:02:00,500 - 00:02:03,000] what LHC is cooked up to discover.
+- [00:02:03,000 - 00:02:06,500] All right? Now, if one thing that LHC was cooked
+- [00:02:06,500 - 00:02:10,000] up originally to discover was, of course, the Higgs boson.
+- [00:02:10,000 - 00:02:13,000] The Higgs boson, discovering the Higgs boson
+- [00:02:13,000 - 00:02:16,000] is not just discovering the Higgs boson.
+- [00:02:16,000 - 00:02:18,500] For example, it's more than just
+- [00:02:18,500 - 00:02:21,000] discovering the existence of a particle.
+- [00:02:21,000 - 00:02:24,000] It also involves a whole
+- [00:02:24,000 - 00:02:27,000] bunch of properties of this particle,
+- [00:02:27,000 - 00:02:29,000] which are all related to the
+- [00:02:29,000 - 00:02:31,000] fact that it is a Higgs boson.
+- [00:02:31,000 - 00:02:38,000] For example, I told you, I think it was last time, how the
+- [00:02:38,000 - 00:02:45,000] Higgs boson and the Higgs phenomena is related to the masses of fermions.
+- [00:02:45,000 - 00:02:48,000] We looked at the Dirac equation. Instead of looking at the Dirac
+- [00:02:48,000 - 00:02:51,000] equation, we might have looked at the Lagrangian for the Dirac equation.
+- [00:02:51,000 - 00:02:53,000] I don't know if we ever wrote
+- [00:02:53,000 - 00:02:55,000] down the Lagrangian for the Dirac equation.
+- [00:02:55,000 - 00:02:57,000] I don't think we did. Let
+- [00:02:57,000 - 00:02:59,000] me write it down for you.
+- [00:02:59,000 - 00:03:01,500] Yeah, we did the Klein-Gordon. Let me
+- [00:03:01,500 - 00:03:04,000] write it down for you. It's very easy.
+- [00:03:04,000 - 00:03:07,000] We first write down the Dirac equation.
+- [00:03:07,000 - 00:03:16,000] Derivative with respect to x mu of,
+- [00:03:16,000 - 00:03:19,500] no, derivative with respect to time of psi,
+- [00:03:19,500 - 00:03:23,000] what was it, minus or plus, I don't remember,
+- [00:03:23,000 - 00:03:24,000] plus,
+- [00:03:25,000 - 00:03:29,500] derivative with respect to x sub i, where
+- [00:03:29,500 - 00:03:34,000] x sub i means x, y, or z,
+- [00:03:34,000 - 00:03:38,000] times alpha i, psi, we can
+- [00:03:38,000 - 00:03:42,000] put the alpha i out here,
+- [00:03:42,000 - 00:03:44,500] and we set that equal to what?
+- [00:03:44,500 - 00:03:47,000] Beta times the mass, right, times psi.
+- [00:03:47,000 - 00:03:50,000] That was the Dirac equation. Let me
+- [00:03:50,000 - 00:03:53,000] move everything over to the left-hand side.
+- [00:03:55,000 - 00:04:00,000] Did I ever tell you my greatest mathematical discovery?
+- [00:04:00,000 - 00:04:02,000] You don't need the equal sign.
+- [00:04:02,000 - 00:04:04,000] Right.
+- [00:04:04,000 - 00:04:06,000] Right.
+- [00:04:08,000 - 00:04:10,000] You made that discovery too. How old were you?
+- [00:04:10,000 - 00:04:11,000] No, you told me.
+- [00:04:11,000 - 00:04:13,000] Oh, I told you. Okay.
+- [00:04:13,000 - 00:04:17,500] Okay, this is the Dirac equation. Now supposing I want
+- [00:04:17,500 - 00:04:22,000] to derive this Dirac equation by variation with respect to something.
+- [00:04:22,000 - 00:04:24,000] In particular, it happens to be psi star.
+- [00:04:25,000 - 00:04:29,500] It's a very easy way of constructing a Lagrangian
+- [00:04:29,500 - 00:04:34,000] such that when you vary with respect to psi star,
+- [00:04:34,000 - 00:04:36,000] it's the Dirac equation which falls out.
+- [00:04:36,000 - 00:04:38,500] All you have to do is
+- [00:04:38,500 - 00:04:41,000] multiply the Dirac equation by psi star.
+- [00:04:41,000 - 00:04:44,000] Psi dagger of psi star.
+- [00:04:44,000 - 00:04:47,000] Now it's not zero. It's still zero.
+- [00:04:47,000 - 00:04:51,000] But now it is not the Dirac equation.
+- [00:04:51,000 - 00:04:54,000] It's the Lagrangian for the Dirac field.
+- [00:04:54,000 - 00:04:56,000] All right.
+- [00:04:56,000 - 00:04:57,000] What does it have in it?
+- [00:04:57,000 - 00:04:59,000] It has terms.
+- [00:04:59,000 - 00:05:02,000] Psi dagger, derivatives of psi.
+- [00:05:02,000 - 00:05:05,000] Those are the kinds of things which
+- [00:05:05,000 - 00:05:08,000] move a particle from one point to another.
+- [00:05:08,000 - 00:05:12,000] Remember in the Klein-Gordon equation, the kinetic term was associated
+- [00:05:12,000 - 00:05:16,000] with the hopping of the particle from one point to another.
+- [00:05:16,000 - 00:05:19,000] And that's what these terms are.
+- [00:05:19,000 - 00:05:22,000] It absorbs a particle
+- [00:05:22,000 - 00:05:24,000] and moves it to another.
+- [00:05:24,000 - 00:05:26,000] It moves it to a new point of spacetime.
+- [00:05:26,000 - 00:05:28,000] That's what the derivatives do.
+- [00:05:28,000 - 00:05:30,000] They move it to a new point of spacetime.
+- [00:05:30,000 - 00:05:31,500] At the same time, they jiggle
+- [00:05:31,500 - 00:05:33,000] its spin in a certain way.
+- [00:05:33,000 - 00:05:36,000] That's what these kinetic things are.
+- [00:05:36,000 - 00:05:39,500] And the mass term is just
+- [00:05:39,500 - 00:05:43,000] a term which takes a particle,
+- [00:05:43,000 - 00:05:45,500] absorbs it, and emits it from a
+- [00:05:45,500 - 00:05:48,000] point of space with no derivatives at all.
+- [00:05:48,000 - 00:05:50,000] It just absorbs it and
+- [00:05:50,000 - 00:05:52,000] emits it from the same spot.
+- [00:05:52,000 - 00:05:56,000] That's the Lagrangian for the Dirac equation.
+- [00:05:59,000 - 00:06:01,000] Do you need a gamma-naught
+- [00:06:01,000 - 00:06:03,000] in there after the psi dagger?
+- [00:06:06,000 - 00:06:07,000] Psi-R?
+- [00:06:07,000 - 00:06:08,000] No.
+- [00:06:08,000 - 00:06:09,000] No.
+- [00:06:09,000 - 00:06:10,000] Okay.
+- [00:06:10,000 - 00:06:11,000] All right.
+- [00:06:11,000 - 00:06:12,000] So you asked me.
+- [00:06:12,000 - 00:06:14,000] I hadn't used that language, but
+- [00:06:14,000 - 00:06:16,000] I will now use that language now.
+- [00:06:16,000 - 00:06:17,000] Good.
+- [00:06:18,000 - 00:06:19,000] Just for those who are
+- [00:06:19,000 - 00:06:20,000] curious about the more covariant language,
+- [00:06:20,000 - 00:06:21,000] I'll give you a couple of examples.
+- [00:06:21,000 - 00:06:22,000] This is a very simple one.
+- [00:06:22,000 - 00:06:24,000] This is a very simple covariant language.
+- [00:06:24,000 - 00:06:26,500] If you take psi dagger
+- [00:06:26,500 - 00:06:29,000] and you multiply it by beta,
+- [00:06:29,000 - 00:06:33,000] that gives you something that's called psi bar.
+- [00:06:33,000 - 00:06:36,000] If you want to get back from
+- [00:06:36,000 - 00:06:39,000] psi bar to psi, you multiply by beta.
+- [00:06:39,000 - 00:06:40,000] Why?
+- [00:06:40,000 - 00:06:42,000] Because beta squared is equal to 1.
+- [00:06:42,000 - 00:06:43,000] All right.
+- [00:06:43,000 - 00:06:44,000] So you can write this.
+- [00:06:44,000 - 00:06:48,000] You can rewrite this in the following way.
+- [00:06:48,000 - 00:06:50,000] You write it as psi bar over beta squared.
+- [00:06:50,000 - 00:06:53,000] You write it as psi bar beta.
+- [00:06:53,000 - 00:06:55,000] That's just psi dagger.
+- [00:06:55,000 - 00:06:58,000] d by dt.
+- [00:06:58,000 - 00:07:00,000] And then over here, what will we have?
+- [00:07:00,000 - 00:07:06,000] Then we will have plus psi bar beta alpha
+- [00:07:06,000 - 00:07:12,000] sub i derivative with respect to x sub i psi.
+- [00:07:12,000 - 00:07:15,000] And then what about this one over here?
+- [00:07:15,000 - 00:07:16,000] Sorry.
+- [00:07:16,000 - 00:07:17,000] Let's put the...
+- [00:07:17,000 - 00:07:18,000] Yeah.
+- [00:07:18,000 - 00:07:19,000] This one is going to be
+- [00:07:19,000 - 00:07:22,000] plus beta beta m psi.
+- [00:07:22,000 - 00:07:23,000] What will that be?
+- [00:07:23,000 - 00:07:25,000] Beta squared.
+- [00:07:25,000 - 00:07:26,000] No, no.
+- [00:07:26,000 - 00:07:30,000] Well, it's just psi bar m psi.
+- [00:07:30,000 - 00:07:40,000] m psi bar m plus m psi bar psi.
+- [00:07:40,000 - 00:07:43,500] Now, if I change the name of
+- [00:07:43,500 - 00:07:47,000] these symbols, we can call beta gamma naught.
+- [00:07:47,000 - 00:07:48,000] Why naught?
+- [00:07:48,000 - 00:07:50,000] Because it's connected with...
+- [00:07:50,000 - 00:07:52,000] naught usually refers to time.
+- [00:07:52,000 - 00:07:55,500] The four coordinates of space-time are the zero
+- [00:07:55,500 - 00:07:59,000] component for time and 1, 2, 3 for space.
+- [00:07:59,000 - 00:08:01,000] So this one is usually called gamma naught.
+- [00:08:01,000 - 00:08:03,000] Beta is sometimes called...
+- [00:08:03,000 - 00:08:06,000] In fact, most frequently in modern
+- [00:08:06,000 - 00:08:09,000] physics, the alpha-beta notation is mostly abandoned.
+- [00:08:09,000 - 00:08:11,000] And you use gamma.
+- [00:08:11,000 - 00:08:17,000] So this becomes psi bar gamma naught dt psi.
+- [00:08:17,000 - 00:08:20,000] And this one, now we're going to change the name.
+- [00:08:20,000 - 00:08:24,000] Beta times alpha, just the product beta times
+- [00:08:24,000 - 00:08:28,000] alpha i, we're going to call gamma i.
+- [00:08:28,000 - 00:08:34,500] Psi bar gamma i di
+- [00:08:34,500 - 00:08:41,000] psi plus m psi bar psi.
+- [00:08:41,000 - 00:08:43,000] That's the Lagrangian.
+- [00:08:43,000 - 00:08:46,000] And now it has a very, very neat form.
+- [00:08:46,000 - 00:08:49,000] You can think of gamma naught d by
+- [00:08:49,000 - 00:08:52,000] dt as being gamma naught d by dx naught.
+- [00:08:52,000 - 00:08:55,000] This is gamma i d by dx i.
+- [00:08:55,000 - 00:08:58,500] It looks like a nice covariant sort
+- [00:08:58,500 - 00:09:02,000] of four-vector product of gamma matrices times derivatives.
+- [00:09:02,000 - 00:09:04,000] In other words, you can write
+- [00:09:04,000 - 00:09:06,000] the whole thing in the form...
+- [00:09:06,000 - 00:09:08,000] psi bar...
+- [00:09:10,000 - 00:09:14,000] gamma mu d by dx mu.
+- [00:09:14,000 - 00:09:15,000] Let's just call it d by d mu.
+- [00:09:15,000 - 00:09:19,500] So now mu goes from
+- [00:09:19,500 - 00:09:24,000] one to four plus m psi.
+- [00:09:24,000 - 00:09:27,500] Okay, that's much more elegant than
+- [00:09:27,500 - 00:09:31,000] the original form that Dirac wrote down.
+- [00:09:31,000 - 00:09:33,000] These are also...
+- [00:09:33,000 - 00:09:36,000] The alphas and betas are called Dirac matrices.
+- [00:09:36,000 - 00:09:38,000] The gammas are also called Dirac matrices.
+- [00:09:38,000 - 00:09:39,000] Yeah?
+- [00:09:39,000 - 00:09:41,000] You said the psi on the far
+- [00:09:41,000 - 00:09:43,000] left here was psi bar and you didn't...
+- [00:09:43,000 - 00:09:44,000] Right.
+- [00:09:45,000 - 00:09:46,000] Right.
+- [00:09:46,000 - 00:09:47,000] Psi bar.
+- [00:09:47,000 - 00:09:48,000] Right.
+- [00:09:48,000 - 00:09:49,000] All right.
+- [00:09:49,000 - 00:09:50,000] All right.
+- [00:09:50,000 - 00:09:52,000] But all you have to remember, though,
+- [00:09:52,000 - 00:09:54,000] is that psi bar is not psi dagger.
+- [00:09:54,000 - 00:09:57,000] It's psi dagger with an extra gamma naught.
+- [00:09:57,000 - 00:09:58,000] All right.
+- [00:09:58,000 - 00:10:02,000] But this is the elegant form for the equation.
+- [00:10:02,000 - 00:10:07,000] In fact, psi bar psi happens to be a scalar.
+- [00:10:07,000 - 00:10:12,000] And psi bar gamma psi is a four-vector.
+- [00:10:12,000 - 00:10:14,000] It has an index mu.
+- [00:10:14,000 - 00:10:16,500] So this is a more elegant way
+- [00:10:16,500 - 00:10:19,000] to present the Dirac equation, the Dirac-Lagrangian.
+- [00:10:19,000 - 00:10:26,000] The Dirac equation is just setting this equal to zero.
+- [00:10:26,000 - 00:10:28,000] Okay?
+- [00:10:28,000 - 00:10:33,000] The Dirac-Lagrangian looks like this.
+- [00:10:33,000 - 00:10:38,000] Now, from this point of view, let's just examine...
+- [00:10:38,000 - 00:10:40,000] Well, let's examine the various terms.
+- [00:10:40,000 - 00:10:42,000] You know there's a fifth Dirac matrix.
+- [00:10:42,000 - 00:10:43,000] Anybody know what it's called?
+- [00:10:43,000 - 00:10:44,000] Gamma 5.
+- [00:10:44,000 - 00:10:45,000] Gamma 5.
+- [00:10:45,000 - 00:10:46,000] What's missing?
+- [00:10:46,000 - 00:10:47,000] Gamma 4.
+- [00:10:47,000 - 00:10:48,000] Gamma 4.
+- [00:10:48,000 - 00:10:49,000] There's no gamma 4.
+- [00:10:49,000 - 00:10:50,000] In fact, it's just a glitch.
+- [00:10:50,000 - 00:10:51,000] There's another...
+- [00:10:51,000 - 00:10:56,500] There's one more gamma matrix which is called
+- [00:10:56,500 - 00:11:02,000] gamma 5, which happens to be the product of
+- [00:11:02,000 - 00:11:07,000] gamma naught, gamma 1, gamma 2, gamma 3.
+- [00:11:07,000 - 00:11:09,000] It's called gamma 5.
+- [00:11:09,000 - 00:11:11,000] It happens to be one more matrix.
+- [00:11:11,000 - 00:11:12,000] Okay.
+- [00:11:12,000 - 00:11:17,000] And in fact, the eigenvectors of gamma 5...
+- [00:11:17,000 - 00:11:20,000] Gamma 5 squared is also equal to 1.
+- [00:11:20,000 - 00:11:24,000] It has two eigenvalues, plus 1 and minus 1.
+- [00:11:24,000 - 00:11:27,000] And the two eigenvectors or the two
+- [00:11:27,000 - 00:11:30,000] eigenvalues correspond to the left-handedness and the
+- [00:11:30,000 - 00:11:34,000] right-handedness of the particles.
+- [00:11:34,000 - 00:11:37,000] Gamma 5 is called helicity.
+- [00:11:37,000 - 00:11:40,000] Chirality, excuse me, chirality.
+- [00:11:40,000 - 00:11:41,000] Handedness.
+- [00:11:41,000 - 00:11:44,000] Chiral for hand, you know, like...
+- [00:11:44,000 - 00:11:47,000] What was the Greek word for hand?
+- [00:11:47,000 - 00:11:53,000] Chiron, chiros, something with a chir, c-h-i-r.
+- [00:11:53,000 - 00:11:55,000] Chirality.
+- [00:11:55,000 - 00:11:57,500] Yeah, gamma 5 is called chirality, and
+- [00:11:57,500 - 00:12:00,000] it can be plus or minus 1.
+- [00:12:00,000 - 00:12:04,000] And it corresponds to the handedness of the two particles.
+- [00:12:04,000 - 00:12:07,000] Now, if you work it out, if you work
+- [00:12:07,000 - 00:12:10,000] out the various things, you'll find that the handedness
+- [00:12:10,000 - 00:12:11,500] of the particles is equal
+- [00:12:11,500 - 00:12:13,000] to the handedness of the particles.
+- [00:12:13,000 - 00:12:16,500] You'll find that this term here does
+- [00:12:16,500 - 00:12:20,000] not couple the left-handed and the right-handed components
+- [00:12:20,000 - 00:12:21,000] of psi.
+- [00:12:21,000 - 00:12:23,500] The left-handed and right-handed components of
+- [00:12:23,500 - 00:12:26,000] psi mean the things with eigenvalue plus
+- [00:12:26,000 - 00:12:29,000] 1 and minus 1 for gamma 5.
+- [00:12:29,000 - 00:12:33,000] But just think of them as electrons or
+- [00:12:33,000 - 00:12:37,000] particles with a right-handed helicity or a left-handed
+- [00:12:37,000 - 00:12:38,000] helicity.
+- [00:12:38,000 - 00:12:40,500] Sorry, these four here do
+- [00:12:40,500 - 00:12:43,000] not multiply left-handed times right-handed.
+- [00:12:43,000 - 00:12:45,000] It just happens they don't.
+- [00:12:45,000 - 00:12:49,000] You can work that out by yourselves.
+- [00:12:49,000 - 00:12:51,000] This one does.
+- [00:12:51,000 - 00:12:57,000] Psi bar times psi happens to be...
+- [00:12:57,000 - 00:13:00,000] It happens to be...
+- [00:13:00,000 - 00:13:04,000] Let's write it this way.
+- [00:13:04,000 - 00:13:06,000] It happens to be...
+- [00:13:06,000 - 00:13:10,500] Psi dagger left, psi right
+- [00:13:10,500 - 00:13:15,000] plus psi dagger right, psi left.
+- [00:13:15,000 - 00:13:17,000] That's what it is.
+- [00:13:17,000 - 00:13:20,000] So the mass term here mixes
+- [00:13:20,000 - 00:13:23,000] up the left-handed and the right-handed particles.
+- [00:13:23,000 - 00:13:27,000] That's what a mass is, a Dirac mass is.
+- [00:13:27,000 - 00:13:29,000] It's a term in the Lagrangian.
+- [00:13:29,000 - 00:13:32,500] It seems weird that it should
+- [00:13:32,500 - 00:13:36,000] have anything to do with inertia.
+- [00:13:36,000 - 00:13:39,000] It's a term which causes a left-handed fermion
+- [00:13:39,000 - 00:13:42,000] to flip to a right-handed fermion, to flip
+- [00:13:42,000 - 00:13:45,000] to a left-handed fermion, and so forth.
+- [00:13:45,000 - 00:13:48,000] And that's what's over here.
+- [00:13:48,000 - 00:13:51,000] The other terms don't do that.
+- [00:13:51,000 - 00:13:56,000] So that means a massless fermion has a definite chirality.
+- [00:13:56,000 - 00:13:58,000] The mass term flips the chirality
+- [00:13:58,000 - 00:14:00,000] back and forth and back and forth.
+- [00:14:00,000 - 00:14:03,000] Yeah.
+- [00:14:03,000 - 00:14:04,000] All right.
+- [00:14:04,000 - 00:14:05,000] Then we talked about...
+- [00:14:05,000 - 00:14:08,000] Then we talked about a
+- [00:14:08,000 - 00:14:11,000] class of interactions, the weak interactions.
+- [00:14:11,000 - 00:14:14,500] Let's put in particular focus on the
+- [00:14:14,500 - 00:14:18,000] Z, the emission and absorption of Z bosons.
+- [00:14:18,000 - 00:14:20,000] That is purely left-handed.
+- [00:14:20,000 - 00:14:25,000] For some odd reason, for some odd reason,
+- [00:14:25,000 - 00:14:30,000] the Z boson only is emitted by left-handed particles,
+- [00:14:30,000 - 00:14:32,000] not by right-handed particles.
+- [00:14:32,000 - 00:14:34,000] This is not true of the photon.
+- [00:14:34,000 - 00:14:36,000] This is only true of the Z boson.
+- [00:14:36,000 - 00:14:38,000] Sorry, the W boson.
+- [00:14:38,000 - 00:14:40,000] The Z boson is a little more kinky.
+- [00:14:40,000 - 00:14:47,000] It has asymmetric couplings to left-handed and right-handed.
+- [00:14:47,000 - 00:14:49,000] But let's focus on the Ws.
+- [00:14:49,000 - 00:14:55,000] They couple through only the left-handed degrees of freedom.
+- [00:14:55,000 - 00:14:58,500] So that means that in effect, with respect
+- [00:14:58,500 - 00:15:02,000] to the charges, with respect to the transformation properties,
+- [00:15:02,000 - 00:15:03,000] under the SU . . .
+- [00:15:03,000 - 00:15:06,500] The SU that's connected with the W,
+- [00:15:06,500 - 00:15:10,000] the emission of W bosons, the left-handed fermion
+- [00:15:10,000 - 00:15:14,000] is charged and the right-handed fermion is uncharged.
+- [00:15:14,000 - 00:15:17,380] You're not allowed to put in a Lagrangian
+- [00:15:17,380 - 00:15:20,760] something like this, which would take a charged
+- [00:15:20,760 - 00:15:22,500] particle to an uncharged particle.
+- [00:15:22,500 - 00:15:25,330] It would mean a process in which a
+- [00:15:25,330 - 00:15:28,160] charged particle would come in and get absorbed and
+- [00:15:28,160 - 00:15:32,000] uncharged particle go out, violates charge conservation.
+- [00:15:32,000 - 00:15:37,500] So this would not be a legal term in
+- [00:15:37,500 - 00:15:43,000] a Lagrangian that had a gauge symmetry which only coupled
+- [00:15:43,000 - 00:15:45,000] to left-handed particles.
+- [00:15:45,000 - 00:15:46,500] All right, then the question is how
+- [00:15:46,500 - 00:15:48,000] do you get a mass for fermions?
+- [00:15:48,000 - 00:15:51,000] We know that electrons and quarks, they all have masses.
+- [00:15:51,000 - 00:15:53,000] There's something wrong.
+- [00:15:53,000 - 00:15:57,000] Ah, here's where the Higgs boson comes into play.
+- [00:15:57,000 - 00:16:01,000] The Higgs boson also plays the role of a charge-to-farm.
+- [00:16:02,000 - 00:16:05,500] It's a very charged object with
+- [00:16:05,500 - 00:16:09,000] respect to the SU of weak interactions.
+- [00:16:09,000 - 00:16:12,000] In fact, it's a doublet.
+- [00:16:12,000 - 00:16:14,500] Just like the electron and neutrino are
+- [00:16:14,500 - 00:16:17,000] doublets, the Higgs boson is also a doublet.
+- [00:16:17,000 - 00:16:18,500] I didn't emphasize that, and
+- [00:16:18,500 - 00:16:20,000] I'm not going to emphasize it.
+- [00:16:20,000 - 00:16:22,000] I've sort of skirted around it.
+- [00:16:22,000 - 00:16:28,000] The Higgs boson also transforms under SU . . .
+- [00:16:28,000 - 00:16:29,500] And, roughly speaking, the way to make
+- [00:16:29,500 - 00:16:31,000] this into a legitimate form of a charge-to-farm
+- [00:16:31,000 - 00:16:39,000] is to multiply by the appropriate Higgs boson field here.
+- [00:16:39,000 - 00:16:44,500] The Higgs boson, if you like, carries a
+- [00:16:44,500 - 00:16:50,000] weak charge, which is either the same or opposite,
+- [00:16:50,000 - 00:16:53,000] depending on which component we're talking about, as
+- [00:16:53,000 - 00:16:56,000] the weak charge of, let's say, the electron,
+- [00:16:56,000 - 00:16:58,000] if we're talking about electrons here.
+- [00:16:58,000 - 00:16:59,000] The right-handed particle has no
+- [00:16:59,000 - 00:17:00,000] charge with respect to the SU.
+- [00:17:00,000 - 00:17:06,000] So what we have to do is put
+- [00:17:06,000 - 00:17:12,000] a Higgs boson here and a Higgs dagger here.
+- [00:17:12,000 - 00:17:15,000] This means the emission of a Higgs boson and
+- [00:17:15,000 - 00:17:18,000] the emission of an anti-Higgs boson, if you like,
+- [00:17:18,000 - 00:17:23,500] with the Higgs boson carrying off the charge of
+- [00:17:23,500 - 00:17:29,000] the left-handed particle when it became the right-handed particle.
+- [00:17:29,000 - 00:17:33,000] So we introduce into the Lagrangian
+- [00:17:33,000 - 00:17:37,000] something which takes a left-handed fermion,
+- [00:17:37,000 - 00:17:40,000] emits a right-handed fermion, but also
+- [00:17:40,000 - 00:17:43,000] allows a Higgs boson to be emitted
+- [00:17:43,000 - 00:17:46,500] in such a way that the weak charge of
+- [00:17:46,500 - 00:17:50,000] the electron or the quark or whatever it is
+- [00:17:50,000 - 00:17:52,500] escapes in the form of
+- [00:17:52,500 - 00:17:55,000] the Higgs boson, the Higgs doublet.
+- [00:17:55,000 - 00:17:57,000] And that would be the end of the story,
+- [00:17:57,000 - 00:17:58,000] except for the spontaneous.
+- [00:17:59,000 - 00:18:01,000] simultaneous symmetry breaking,
+- [00:18:01,000 - 00:18:03,000] which has to do with the
+- [00:18:03,000 - 00:18:05,000] Higgs field getting an expectation value.
+- [00:18:05,000 - 00:18:07,000] The Higgs field,
+- [00:18:07,000 - 00:18:08,500] well, I think we called
+- [00:18:08,500 - 00:18:10,000] it phi last time, didn't we?
+- [00:18:10,000 - 00:18:13,000] I think we called it phi.
+- [00:18:13,000 - 00:18:16,000] Let's just continue to call it phi.
+- [00:18:16,000 - 00:18:20,000] And we made a phi particle here.
+- [00:18:20,000 - 00:18:22,000] That would be the end of the story,
+- [00:18:22,000 - 00:18:25,000] except that for whatever reasons,
+- [00:18:25,000 - 00:18:27,000] nature has chosen
+- [00:18:27,000 - 00:18:30,000] the energetics of the Higgs field,
+- [00:18:30,000 - 00:18:31,000] this phi here,
+- [00:18:31,000 - 00:18:35,000] to have one of these Mexican hat potential energies.
+- [00:18:35,000 - 00:18:37,000] Why did it do that?
+- [00:18:37,000 - 00:18:38,000] Why did nature do that?
+- [00:18:38,000 - 00:18:40,000] We don't know.
+- [00:18:40,000 - 00:18:42,000] Okay, but we're very lucky that it did.
+- [00:18:42,000 - 00:18:45,000] Otherwise, chemistry would go to hell.
+- [00:18:45,000 - 00:18:50,000] And things would be very, very unpleasant.
+- [00:18:50,000 - 00:18:55,000] But with one of these upside-down Mexican hat potentials,
+- [00:18:55,000 - 00:18:58,000] that means that phi
+- [00:18:58,000 - 00:19:01,000] is equal to a number,
+- [00:19:01,000 - 00:19:03,000] just the magnitude of the Higgs field here,
+- [00:19:03,000 - 00:19:05,000] which we called F,
+- [00:19:05,000 - 00:19:07,000] plus a fluctuation,
+- [00:19:07,000 - 00:19:09,000] a fluctuation away from that value.
+- [00:19:09,000 - 00:19:11,500] And that fluctuation is what
+- [00:19:11,500 - 00:19:14,000] we actually call the Higgs field.
+- [00:19:14,000 - 00:19:15,000] All right.
+- [00:19:15,000 - 00:19:17,000] So let's go back now.
+- [00:19:17,000 - 00:19:19,000] What happens to this term,
+- [00:19:19,000 - 00:19:21,000] what happens to these terms in the Lagrangian?
+- [00:19:21,000 - 00:19:24,000] They break up into two pieces.
+- [00:19:24,000 - 00:19:26,000] Not these two pieces,
+- [00:19:26,000 - 00:19:28,000] but these two pieces.
+- [00:19:31,000 - 00:19:33,000] One of them is...
+- [00:19:33,000 - 00:19:35,000] Oh, I left out one thing.
+- [00:19:35,000 - 00:19:37,000] What did I leave out of this expression?
+- [00:19:39,000 - 00:19:41,000] A numerical number.
+- [00:19:41,000 - 00:19:42,000] G.
+- [00:19:42,000 - 00:19:44,000] The Yukawa coupling.
+- [00:19:44,000 - 00:19:46,000] Let's call it G sub Y.
+- [00:19:46,000 - 00:19:50,000] And there's a different G sub Y for each fermion.
+- [00:19:51,000 - 00:19:53,000] These two should be the same.
+- [00:19:54,000 - 00:19:55,000] All right.
+- [00:19:55,000 - 00:19:56,000] G sub Y is just a number,
+- [00:19:56,000 - 00:19:57,000] a pure number,
+- [00:19:57,000 - 00:19:59,000] carries no dimensions.
+- [00:19:59,000 - 00:20:02,000] They're called Yukawa couplings.
+- [00:20:02,000 - 00:20:07,000] And where they came from,
+- [00:20:07,000 - 00:20:08,000] I don't know,
+- [00:20:08,000 - 00:20:11,000] somebody wiser than me put them into the Lagrangian.
+- [00:20:11,000 - 00:20:12,000] Okay.
+- [00:20:12,000 - 00:20:14,000] So here they are.
+- [00:20:14,000 - 00:20:15,000] All right.
+- [00:20:15,000 - 00:20:17,500] Now let's use the fact that
+- [00:20:17,500 - 00:20:20,000] phi is equal to a non-fluctuating part,
+- [00:20:20,000 - 00:20:22,000] which we call F for the non-fluctuating part.
+- [00:20:22,000 - 00:20:23,000] We call it F.
+- [00:20:23,000 - 00:20:25,000] Don't...
+- [00:20:25,000 - 00:20:27,000] And for the fluctuating part,
+- [00:20:27,000 - 00:20:28,000] we call it H,
+- [00:20:28,000 - 00:20:29,000] the Higgs boson.
+- [00:20:29,000 - 00:20:31,000] That's not my notation.
+- [00:20:31,000 - 00:20:33,000] That's a standard notation.
+- [00:20:33,000 - 00:20:38,000] So this becomes GYF
+- [00:20:38,000 - 00:20:43,000] times psi dagger left psi right
+- [00:20:43,000 - 00:20:49,000] plus psi dagger right psi left
+- [00:20:49,000 - 00:20:53,000] plus GY Higgs field,
+- [00:20:53,000 - 00:20:57,000] times the same thing.
+- [00:20:57,000 - 00:20:59,000] Same thing.
+- [00:20:59,000 - 00:21:01,000] Okay.
+- [00:21:01,000 - 00:21:07,000] Now we have a prediction for what the number F...
+- [00:21:07,000 - 00:21:09,000] Where did that come from?
+- [00:21:09,000 - 00:21:11,000] The number F we obtained,
+- [00:21:11,000 - 00:21:13,500] that same number F went into the
+- [00:21:13,500 - 00:21:16,000] mass of the Z and W bosons.
+- [00:21:16,000 - 00:21:19,000] The shift of the Higgs field also determined
+- [00:21:19,000 - 00:21:22,000] the mass of the Z and W bosons.
+- [00:21:22,000 - 00:21:23,000] Okay.
+- [00:21:23,000 - 00:21:24,500] Once you've measured the mass
+- [00:21:24,500 - 00:21:26,000] of the Z and W bosons,
+- [00:21:26,000 - 00:21:28,000] and this was done a long, long time ago,
+- [00:21:28,000 - 00:21:29,000] they were measured,
+- [00:21:29,000 - 00:21:30,000] the masses are measured,
+- [00:21:30,000 - 00:21:33,000] about of order 100 GeV,
+- [00:21:33,000 - 00:21:35,000] 90 GeV, something like that.
+- [00:21:35,000 - 00:21:39,000] So that told us what F was.
+- [00:21:39,000 - 00:21:42,000] That told us what the number F was.
+- [00:21:42,000 - 00:21:45,000] F is a number of
+- [00:21:45,000 - 00:21:48,000] about really 200 GeV for F.
+- [00:21:48,000 - 00:21:49,000] Okay.
+- [00:21:49,000 - 00:21:50,000] So that's a number...
+- [00:21:50,000 - 00:21:52,000] It has units of mass, incidentally.
+- [00:21:52,000 - 00:21:54,000] It has units of mass.
+- [00:21:54,000 - 00:21:57,000] 200 GeV.
+- [00:21:57,000 - 00:21:58,000] Ah.
+- [00:21:58,000 - 00:22:01,000] Once we know that from Z and W physics,
+- [00:22:01,000 - 00:22:03,000] then from the masses of the fermions,
+- [00:22:03,000 - 00:22:07,000] we can read off what these Yukawa couplings are.
+- [00:22:07,000 - 00:22:09,000] Once we know, for example,
+- [00:22:09,000 - 00:22:11,000] the electron Yukawa coupling is
+- [00:22:11,000 - 00:22:13,000] some very, very small number.
+- [00:22:13,000 - 00:22:14,000] Why?
+- [00:22:14,000 - 00:22:15,500] Because the electron is much
+- [00:22:15,500 - 00:22:17,000] lighter than the Z and W.
+- [00:22:17,000 - 00:22:20,000] The Yukawa coupling for the top quark,
+- [00:22:20,000 - 00:22:21,000] that's large.
+- [00:22:21,000 - 00:22:22,000] Why?
+- [00:22:22,000 - 00:22:24,000] Because the top quark is so heavy.
+- [00:22:24,000 - 00:22:26,000] So the masses of the quarks
+- [00:22:26,000 - 00:22:30,000] wind up being these Yukawa couplings times F.
+- [00:22:30,000 - 00:22:32,000] And so far we've really gotten
+- [00:22:32,000 - 00:22:34,000] out no more than we put in.
+- [00:22:34,000 - 00:22:37,000] We've gotten out no more than we put in.
+- [00:22:37,000 - 00:22:39,000] We got F from the masses of...
+- [00:22:39,000 - 00:22:40,000] Well, a little bit more,
+- [00:22:40,000 - 00:22:45,000] but basically the masses of the Z-W system.
+- [00:22:45,000 - 00:22:47,000] We got F,
+- [00:22:47,000 - 00:22:50,000] and then from the masses of the fermions,
+- [00:22:50,000 - 00:22:53,000] we got the Yukawa couplings.
+- [00:22:53,000 - 00:22:54,000] All right.
+- [00:22:54,000 - 00:22:55,000] So if that's all there was,
+- [00:22:55,000 - 00:22:56,000] we would have put in
+- [00:22:56,000 - 00:22:57,000] as much as we got out.
+- [00:22:57,000 - 00:23:00,000] But now we also have something else.
+- [00:23:00,000 - 00:23:03,000] We have G-Y Higgs times things like...
+- [00:23:03,000 - 00:23:06,000] Let's just call them psi dagger psi.
+- [00:23:06,000 - 00:23:10,000] These are terms in Lagrangian
+- [00:23:10,000 - 00:23:12,000] which take a fermion...
+- [00:23:12,000 - 00:23:14,000] This could be an electron,
+- [00:23:14,000 - 00:23:16,000] it could be a whatever it happens to be,
+- [00:23:16,000 - 00:23:19,000] which take a fermion, absorb it,
+- [00:23:19,000 - 00:23:22,000] and re-emit it, plus a Higgs boson.
+- [00:23:22,000 - 00:23:26,000] So these are then processes where,
+- [00:23:26,000 - 00:23:29,000] let's say, electron, or it could be muon,
+- [00:23:29,000 - 00:23:30,500] or it could be tau,
+- [00:23:30,500 - 00:23:32,000] or it could be some quark...
+- [00:23:40,000 - 00:23:42,000] emits a Higgs boson.
+- [00:23:46,000 - 00:23:49,000] Or it could be a Higgs boson,
+- [00:23:49,000 - 00:23:51,000] coming along,
+- [00:23:51,000 - 00:23:54,000] and decaying into an electron and a positron.
+- [00:23:54,000 - 00:23:57,000] Same diagram.
+- [00:23:57,000 - 00:23:58,000] Okay?
+- [00:23:58,000 - 00:24:01,000] So once the Higgs boson materializes
+- [00:24:01,000 - 00:24:04,000] as a particle in the laboratory,
+- [00:24:04,000 - 00:24:08,000] we should know what the various decay rates are
+- [00:24:08,000 - 00:24:11,000] for it to decay to the different kinds of electron,
+- [00:24:11,000 - 00:24:16,000] positron, muon, anti-muon, or whatever.
+- [00:24:16,000 - 00:24:19,000] We'll know all of the interactions between the Higgs bosons,
+- [00:24:19,000 - 00:24:21,000] and the fermions,
+- [00:24:21,000 - 00:24:23,000] and be able to predict all their decay rates,
+- [00:24:23,000 - 00:24:25,000] all the Higgs boson decay rates.
+- [00:24:25,000 - 00:24:29,000] Obviously, it'll prefer to decay to heavier particles,
+- [00:24:29,000 - 00:24:31,000] as long as there's enough energy,
+- [00:24:31,000 - 00:24:33,000] because these Yukawa couplings are larger.
+- [00:24:33,000 - 00:24:35,000] Yukawa couplings are the coupling constant
+- [00:24:35,000 - 00:24:40,000] for the Higgs to break up into its constituents,
+- [00:24:40,000 - 00:24:42,000] into its decay products.
+- [00:24:42,000 - 00:24:45,000] So at the moment, I mean,
+- [00:24:45,000 - 00:24:48,000] Higgsology is a pure theory.
+- [00:24:49,000 - 00:24:54,000] In the sense that it's predicted by the theory.
+- [00:24:54,000 - 00:24:56,000] There seems to be no other
+- [00:24:56,000 - 00:24:58,000] way to make it mathematically consistent,
+- [00:24:58,000 - 00:25:00,000] but neither the Higgs,
+- [00:25:00,000 - 00:25:03,000] nor the direct couplings to these particles,
+- [00:25:03,000 - 00:25:05,000] and so forth, have been detected.
+- [00:25:05,000 - 00:25:06,000] That will happen.
+- [00:25:06,000 - 00:25:09,000] Well, I hope it will happen.
+- [00:25:09,000 - 00:25:12,000] And so there's a lot of predictive power.
+- [00:25:12,000 - 00:25:14,000] The theory also already has
+- [00:25:14,000 - 00:25:16,000] an enormous amount of predictive power.
+- [00:25:16,000 - 00:25:18,000] Predictive power in the interactions
+- [00:25:18,000 - 00:25:20,000] between the Z's and the W's,
+- [00:25:20,000 - 00:25:23,000] which are experimentally detected.
+- [00:25:23,000 - 00:25:25,000] The interaction of the Z's and the W's,
+- [00:25:25,000 - 00:25:27,000] not only with respect to the fermions,
+- [00:25:27,000 - 00:25:30,000] but with respect to each other.
+- [00:25:30,000 - 00:25:32,000] Z's, no.
+- [00:25:32,000 - 00:25:35,000] How would you actually predict the decay time?
+- [00:25:35,000 - 00:25:38,000] I don't mean going through all the nitty-gritty details,
+- [00:25:38,000 - 00:25:39,500] but I mean, sort of,
+- [00:25:39,500 - 00:25:41,000] how would you set it up
+- [00:25:41,000 - 00:25:45,000] to actually make that prediction?
+- [00:25:45,000 - 00:25:47,000] Well, you can't really define it that way,
+- [00:25:47,000 - 00:25:48,500] but you can think of
+- [00:25:48,500 - 00:25:50,000] it as an elementary quantum mechanics.
+- [00:25:50,000 - 00:25:54,000] You calculate a Feynman diagram.
+- [00:25:54,000 - 00:26:00,000] You calculate a Feynman diagram.
+- [00:26:00,000 - 00:26:04,000] You can just think of it as elementary quantum mechanics.
+- [00:26:04,000 - 00:26:06,000] This gives you a term in the Hamiltonian,
+- [00:26:06,000 - 00:26:09,000] which takes the Higgs boson to a pair of particles,
+- [00:26:09,000 - 00:26:11,000] and it just gives you the transition amplitude,
+- [00:26:11,000 - 00:26:13,000] which you square.
+- [00:26:13,000 - 00:26:14,000] And once you've squared it,
+- [00:26:14,000 - 00:26:15,500] you integrate it or sum
+- [00:26:15,500 - 00:26:17,000] it over all the final states.
+- [00:26:17,000 - 00:26:20,000] And that's the decay rate.
+- [00:26:20,000 - 00:26:23,500] It's a standard calculation that
+- [00:26:23,500 - 00:26:27,000] is basically a Feynman diagram.
+- [00:26:27,000 - 00:26:30,000] If you like, this gives you the amplitude.
+- [00:26:30,000 - 00:26:34,000] You square the amplitude to get the decay rate.
+- [00:26:34,000 - 00:26:36,000] Squaring the amplitude, you can just do
+- [00:26:36,000 - 00:26:39,000] by putting this right on top of itself like that.
+- [00:26:39,000 - 00:26:42,000] Here the amplitude is squared.
+- [00:26:42,000 - 00:26:44,000] And that becomes a Feynman diagram.
+- [00:26:44,000 - 00:26:47,000] You calculate the Feynman diagram by Feynman's rules.
+- [00:26:47,000 - 00:26:48,500] One of the things that comes
+- [00:26:48,500 - 00:26:50,000] out of it is the decay rate.
+- [00:26:50,000 - 00:26:56,000] But this is more than we're going to do here.
+- [00:26:56,000 - 00:27:01,000] That's what we have to do.
+- [00:27:01,000 - 00:27:04,000] So it's a very, very definite calculation
+- [00:27:04,000 - 00:27:09,000] within standard quantum field theory.
+- [00:27:09,000 - 00:27:11,000] And it's the kind of calculation
+- [00:27:11,000 - 00:27:13,000] we've been doing since the 1930s.
+- [00:27:13,000 - 00:27:16,000] So it's quite well known.
+- [00:27:17,000 - 00:27:18,500] The only things that you have
+- [00:27:18,500 - 00:27:20,000] to put in, which are new,
+- [00:27:20,000 - 00:27:22,000] are the values of these coupling constants,
+- [00:27:22,000 - 00:27:26,000] masses of particles, and so forth.
+- [00:27:26,000 - 00:27:31,000] Okay, so that was the masses of fermions,
+- [00:27:31,000 - 00:27:35,000] the masses of the Z and W bosons,
+- [00:27:35,000 - 00:27:39,000] all of them being proportional to this constant F.
+- [00:27:39,000 - 00:27:45,000] Why don't we talk about the Higgs itself?
+- [00:27:45,000 - 00:27:47,000] Why don't we talk about
+- [00:27:47,000 - 00:27:49,000] the dynamics of the Higgs boson?
+- [00:27:58,000 - 00:28:04,000] The dynamics is really all contained
+- [00:28:04,000 - 00:28:08,000] in this Mexican hat potential.
+- [00:28:08,000 - 00:28:10,000] The minimum of the Mexican hat potential
+- [00:28:10,000 - 00:28:12,000] tells you how much the field is shifted,
+- [00:28:12,000 - 00:28:14,000] and it tells you what F is.
+- [00:28:15,000 - 00:28:19,000] You can make up different potentials that have this shape.
+- [00:28:19,000 - 00:28:23,500] There's a favorite one which
+- [00:28:23,500 - 00:28:28,000] actually has some important theoretical significance.
+- [00:28:28,000 - 00:28:31,000] And it goes as follows.
+- [00:28:31,000 - 00:28:34,000] Let's go to the origin over here.
+- [00:28:34,000 - 00:28:36,500] At the origin, the Higgs potential
+- [00:28:36,500 - 00:28:39,000] is a sort of upside-down parabola.
+- [00:28:39,000 - 00:28:42,000] Let's forget what it does far from the origin.
+- [00:28:42,000 - 00:28:44,000] Let's just concentrate on near the origin.
+- [00:28:44,000 - 00:28:48,000] An upside-down parabola means something like minus,
+- [00:28:48,000 - 00:28:53,000] let's call it mu squared, phi squared.
+- [00:28:53,000 - 00:28:58,000] And it's traditional to put a 2 in here.
+- [00:28:58,000 - 00:29:01,000] It's just traditional.
+- [00:29:01,000 - 00:29:04,000] Minus because it's an upside-down parabola.
+- [00:29:04,000 - 00:29:07,000] Remember, if it was plus mu squared, phi squared,
+- [00:29:07,000 - 00:29:10,000] what would you call this term?
+- [00:29:10,000 - 00:29:11,500] You would call this term
+- [00:29:11,500 - 00:29:13,000] the mass of the Higgs boson.
+- [00:29:13,000 - 00:29:16,000] You would call mu the mass of the Higgs boson.
+- [00:29:16,000 - 00:29:18,000] Or you would really call mu squared the
+- [00:29:18,000 - 00:29:20,000] square of the mass of the Higgs boson.
+- [00:29:20,000 - 00:29:24,000] Making it negative is a little bit weird.
+- [00:29:24,000 - 00:29:26,000] It's as if there was an
+- [00:29:26,000 - 00:29:28,000] imaginary mass for the Higgs boson.
+- [00:29:28,000 - 00:29:30,000] But don't worry, there's nothing wrong with this.
+- [00:29:30,000 - 00:29:31,500] It's perfectly okay to have
+- [00:29:31,500 - 00:29:33,000] a potential which is upside-down.
+- [00:29:33,000 - 00:29:37,000] The only thing which is unusual about it
+- [00:29:37,000 - 00:29:39,500] is putting the field at the
+- [00:29:39,500 - 00:29:42,000] origin is not a stable position.
+- [00:29:43,000 - 00:29:46,000] It tends to roll off and roll down the hill.
+- [00:29:46,000 - 00:29:49,000] Whereas if the mass term was positive,
+- [00:29:49,000 - 00:29:53,000] it would oscillate about the central position here.
+- [00:29:53,000 - 00:29:57,000] So the field does not oscillate about the top
+- [00:29:57,000 - 00:30:00,000] because of this minus phi squared.
+- [00:30:00,000 - 00:30:02,000] Now, if all you have is minus phi squared,
+- [00:30:02,000 - 00:30:05,000] it would just go down and down and down,
+- [00:30:05,000 - 00:30:08,000] and the field would just run away to infinity.
+- [00:30:08,000 - 00:30:10,000] There would be no ground state to the system.
+- [00:30:10,000 - 00:30:12,000] There would be no vacuum.
+- [00:30:12,000 - 00:30:14,000] If the vacuum is the state of lowest energy,
+- [00:30:14,000 - 00:30:16,000] there would be no state of lowest energy.
+- [00:30:16,000 - 00:30:18,000] So we've got to put in something
+- [00:30:18,000 - 00:30:21,000] to keep it from running away to infinity.
+- [00:30:21,000 - 00:30:24,000] We better put in something to turn it up.
+- [00:30:24,000 - 00:30:29,000] The simplest thing to turn it up is plus lambda,
+- [00:30:29,000 - 00:30:31,000] where lambda is just a number,
+- [00:30:31,000 - 00:30:33,000] a pure number,
+- [00:30:33,000 - 00:30:38,000] times phi to the fourth.
+- [00:30:38,000 - 00:30:40,000] Why do I want to put in phi?
+- [00:30:40,000 - 00:30:41,000] Why not the phi cubed,
+- [00:30:41,000 - 00:30:43,000] or phi to the fifth?
+- [00:30:43,000 - 00:30:45,000] Why not odd powers?
+- [00:30:45,000 - 00:30:47,000] Because we want to keep it symmetric on both sides.
+- [00:30:47,000 - 00:30:50,000] This was an important aspect of this potential,
+- [00:30:50,000 - 00:30:54,000] was to keep it nice and symmetric.
+- [00:30:54,000 - 00:30:57,000] So phi to the fourth is symmetric.
+- [00:30:57,000 - 00:31:00,000] Phi cubed is not.
+- [00:31:00,000 - 00:31:02,000] This is the next thing you can put in.
+- [00:31:02,000 - 00:31:03,500] You can put in all sorts
+- [00:31:03,500 - 00:31:05,000] of things to higher powers here.
+- [00:31:05,000 - 00:31:07,000] They're not so important.
+- [00:31:07,000 - 00:31:09,000] The most important one is phi to the fourth
+- [00:31:09,000 - 00:31:11,000] and expanding the potential and the mass.
+- [00:31:11,000 - 00:31:13,000] So it's just a number.
+- [00:31:13,000 - 00:31:15,000] It's not a power series.
+- [00:31:15,000 - 00:31:17,000] You can put in more,
+- [00:31:17,000 - 00:31:19,000] but this is the most important thing.
+- [00:31:19,000 - 00:31:20,500] And in fact, it's also traditional
+- [00:31:20,500 - 00:31:22,000] to put a four over here.
+- [00:31:22,000 - 00:31:24,000] You'll see why in a moment.
+- [00:31:24,000 - 00:31:26,000] A two over here and a four over here.
+- [00:31:26,000 - 00:31:28,000] What is this number?
+- [00:31:28,000 - 00:31:31,000] This number is called a quartic coupling constant.
+- [00:31:31,000 - 00:31:34,000] Quartic because it has phi to the fourth.
+- [00:31:34,000 - 00:31:36,000] It is dimensionless.
+- [00:31:36,000 - 00:31:39,000] It's a pure number.
+- [00:31:39,000 - 00:31:42,000] And what we know about that pure number,
+- [00:31:42,000 - 00:31:45,000] not from direct experimental evidence,
+- [00:31:45,000 - 00:31:48,000] but from a lot of indirect evidence,
+- [00:31:48,000 - 00:31:50,000] and what we know about that number
+- [00:31:50,000 - 00:31:54,000] from somewhat indirect properties of weak interactions,
+- [00:31:54,000 - 00:31:57,000] is that it's small,
+- [00:31:57,000 - 00:32:00,000] but not absurdly small.
+- [00:32:00,000 - 00:32:02,000] Probably about 1%,
+- [00:32:02,000 - 00:32:04,000] probably about
+- [00:32:04,000 - 00:32:07,000] 1.01 or something like that.
+- [00:32:07,000 - 00:32:08,000] So it's a number.
+- [00:32:08,000 - 00:32:10,000] It's not 10 to the minus 20.
+- [00:32:10,000 - 00:32:11,000] It's not 10 to the
+- [00:32:11,000 - 00:32:12,000] minus 15 or anything like that.
+- [00:32:12,000 - 00:32:13,500] So just think of it as a
+- [00:32:13,500 - 00:32:15,000] number for the moment of order one.
+- [00:32:15,000 - 00:32:17,000] It's also dimensionless.
+- [00:32:17,000 - 00:32:19,000] Mu is not dimensionless.
+- [00:32:19,000 - 00:32:22,000] It has units of a mass.
+- [00:32:22,000 - 00:32:25,000] Okay, now let's try to find out what f is.
+- [00:32:25,000 - 00:32:27,000] f is dimensionless.
+- [00:32:27,000 - 00:32:29,000] So if you look at the equation,
+- [00:32:29,000 - 00:32:30,500] you can see that the
+- [00:32:30,500 - 00:32:32,000] number of units of a mass
+- [00:32:32,000 - 00:32:34,000] is not dimensionless.
+- [00:32:34,000 - 00:32:36,000] It's not dimensionless.
+- [00:32:36,000 - 00:32:38,000] It's not dimensionless.
+- [00:32:38,000 - 00:32:40,000] So what we're going to do is
+- [00:32:40,000 - 00:32:42,000] we're going to take the position at the minimum here.
+- [00:32:42,000 - 00:32:44,000] All we have to do is
+- [00:32:44,000 - 00:32:46,000] minimize this with respect to phi.
+- [00:32:46,000 - 00:32:47,500] We cooked it up so
+- [00:32:47,500 - 00:32:49,000] that it would have a minimum.
+- [00:32:49,000 - 00:32:52,000] A rapidly falling quadratic term,
+- [00:32:52,000 - 00:32:54,000] and then taken over by,
+- [00:32:54,000 - 00:32:56,000] incidentally, near the origin,
+- [00:32:56,000 - 00:32:58,000] this is smaller than this, right?
+- [00:32:58,000 - 00:32:59,500] Phi to the fourth is smaller
+- [00:32:59,500 - 00:33:01,000] than phi squared near the origin.
+- [00:33:01,000 - 00:33:04,000] So this has not got much effect near the origin.
+- [00:33:04,000 - 00:33:06,000] It picks up steam
+- [00:33:06,000 - 00:33:08,000] and eventually becomes much bigger than phi squared.
+- [00:33:08,000 - 00:33:10,000] So we're going to go to large phi.
+- [00:33:10,000 - 00:33:11,000] So that turns it back up.
+- [00:33:11,000 - 00:33:12,000] That's the logic.
+- [00:33:12,000 - 00:33:15,000] Okay, let's just find the minimum of phi.
+- [00:33:15,000 - 00:33:17,000] Sorry, the minimum of v
+- [00:33:20,000 - 00:33:21,000] with respect to phi,
+- [00:33:21,000 - 00:33:22,500] and that will tell us
+- [00:33:22,500 - 00:33:24,000] how much the field gets shifted.
+- [00:33:24,000 - 00:33:26,000] All right, that's easy.
+- [00:33:26,000 - 00:33:28,000] We just differentiate with respect to phi.
+- [00:33:28,000 - 00:33:31,000] The derivative of phi squared is 2 phi.
+- [00:33:31,000 - 00:33:32,000] That eats up this 2 down here.
+- [00:33:32,000 - 00:33:34,000] That's why I put the 2 down there.
+- [00:33:34,000 - 00:33:36,000] Minus mu squared phi.
+- [00:33:36,000 - 00:33:38,000] This is the derivative of
+- [00:33:38,000 - 00:33:40,000] v with respect to phi,
+- [00:33:40,000 - 00:33:43,000] plus lambda,
+- [00:33:43,000 - 00:33:45,000] which is a number of order of magnitude 1,
+- [00:33:45,000 - 00:33:48,000] phi cubed.
+- [00:33:48,000 - 00:33:50,000] I also put the 4 down here
+- [00:33:50,000 - 00:33:53,000] so it would kill the 4 when I differentiated
+- [00:33:53,000 - 00:33:55,000] with respect to phi to the fourth.
+- [00:33:55,000 - 00:33:57,000] And we set that equal to 0.
+- [00:34:02,000 - 00:34:06,000] All right, now we can divide by phi.
+- [00:34:06,000 - 00:34:09,000] We divide by phi.
+- [00:34:09,000 - 00:34:11,000] Make this phi squared.
+- [00:34:13,000 - 00:34:15,000] And what do we get?
+- [00:34:15,000 - 00:34:17,000] We get phi squared
+- [00:34:17,000 - 00:34:19,000] is equal to mu squared
+- [00:34:19,000 - 00:34:21,000] over lambda.
+- [00:34:21,000 - 00:34:25,000] Again, lambda is an ordinary number.
+- [00:34:25,000 - 00:34:29,000] Don't think of it as very big or very small.
+- [00:34:29,000 - 00:34:33,000] This is the value of phi at the minimum.
+- [00:34:33,000 - 00:34:35,000] It's also called f.
+- [00:34:36,000 - 00:34:39,000] It's also the shift of the field, f.
+- [00:34:39,000 - 00:34:43,000] And so f squared
+- [00:34:43,000 - 00:34:47,000] becomes mu squared over lambda.
+- [00:34:47,000 - 00:34:49,000] Again, I emphasize,
+- [00:34:49,000 - 00:34:52,000] lambda is not the interesting number here.
+- [00:34:52,000 - 00:34:55,000] It's the common garden variety number
+- [00:34:55,000 - 00:34:58,000] like 1 or a tenth or a hundredth
+- [00:34:58,000 - 00:35:00,000] or something like that.
+- [00:35:00,000 - 00:35:02,000] It's not very big, that's for sure.
+- [00:35:02,000 - 00:35:04,000] Okay.
+- [00:35:04,000 - 00:35:08,000] So, f is controlled by mu.
+- [00:35:08,000 - 00:35:12,000] f is also approximately the mass
+- [00:35:12,000 - 00:35:15,000] of the z and the w boson.
+- [00:35:15,000 - 00:35:18,000] It's also the thing which comes into the mass
+- [00:35:18,000 - 00:35:20,000] of the fermions.
+- [00:35:20,000 - 00:35:22,000] Where are they?
+- [00:35:22,000 - 00:35:25,000] All of the particles have masses proportional to f.
+- [00:35:25,000 - 00:35:28,000] Let's take the square root of this.
+- [00:35:31,000 - 00:35:33,000] So it's mu or f or mu.
+- [00:35:33,000 - 00:35:36,000] Which is the controlling factor
+- [00:35:36,000 - 00:35:39,000] which controls all of these masses.
+- [00:35:39,000 - 00:35:40,000] All of them.
+- [00:35:40,000 - 00:35:41,500] All the masses of all
+- [00:35:41,500 - 00:35:43,000] the particles that we know about.
+- [00:35:43,000 - 00:35:46,000] Okay, that raises an interesting question.
+- [00:35:47,000 - 00:35:51,000] Why are all of the particles that we know about
+- [00:35:51,000 - 00:35:55,000] controlled by the same phenomenon,
+- [00:35:55,000 - 00:35:57,000] namely f?
+- [00:35:57,000 - 00:36:00,000] Why aren't there particles which have masses
+- [00:36:00,000 - 00:36:03,000] without spontaneous symmetry breaking?
+- [00:36:03,000 - 00:36:06,000] We can certainly make up a theory of such particles.
+- [00:36:06,000 - 00:36:09,000] For example, just make up a particle
+- [00:36:09,000 - 00:36:12,000] whose left-handed and right-handed components
+- [00:36:12,000 - 00:36:15,000] both have weak charge.
+- [00:36:15,000 - 00:36:16,500] Then we have no reason
+- [00:36:16,500 - 00:36:18,000] to put this phi in there.
+- [00:36:18,000 - 00:36:20,000] We wouldn't put the phi in there.
+- [00:36:20,000 - 00:36:21,500] And you could put any mass
+- [00:36:21,500 - 00:36:23,000] that you like in front of it.
+- [00:36:23,000 - 00:36:25,000] And it's perfectly symmetric.
+- [00:36:25,000 - 00:36:27,000] So, if there was a particle
+- [00:36:27,000 - 00:36:30,000] which was
+- [00:36:30,000 - 00:36:33,000] whose left- and right-handed
+- [00:36:33,000 - 00:36:36,000] components both interacted with the weak interactions
+- [00:36:36,000 - 00:36:38,000] the same way,
+- [00:36:38,000 - 00:36:40,000] they could have a mass
+- [00:36:40,000 - 00:36:42,000] which was not proportional to f.
+- [00:36:42,000 - 00:36:44,000] All kinds of other particles could all
+- [00:36:44,000 - 00:36:47,000] particles that don't have any weak interactions at all,
+- [00:36:47,000 - 00:36:49,000] if there were such particles,
+- [00:36:49,000 - 00:36:54,000] could have masses which are not controlled by f.
+- [00:36:54,000 - 00:36:57,000] The general thinking which we'll come to,
+- [00:36:57,000 - 00:37:00,000] and I'll explain why this is the general thinking,
+- [00:37:00,000 - 00:37:03,000] is that the natural mass scale for particle physics
+- [00:37:03,000 - 00:37:05,000] is enormous.
+- [00:37:05,000 - 00:37:07,000] Much, much higher
+- [00:37:07,000 - 00:37:11,000] than the masses of any of the ordinary elementary particles.
+- [00:37:11,000 - 00:37:15,000] It's thought that only this one number, f,
+- [00:37:15,000 - 00:37:18,000] is the unusual number in physics,
+- [00:37:18,000 - 00:37:21,000] the very, very small mass scale,
+- [00:37:21,000 - 00:37:24,000] whose origins are at present unknown.
+- [00:37:24,000 - 00:37:27,000] But what is thought, and I'll explain as we,
+- [00:37:27,000 - 00:37:29,000] well, this quarter, next quarter,
+- [00:37:29,000 - 00:37:32,000] various points,
+- [00:37:33,000 - 00:37:38,000] the idea that really the only mass parameter,
+- [00:37:38,000 - 00:37:42,000] the only small mass parameter in nature,
+- [00:37:42,000 - 00:37:45,000] is this f here.
+- [00:37:45,000 - 00:37:47,000] And those particles,
+- [00:37:47,000 - 00:37:52,000] which by necessity have to have masses proportional to f,
+- [00:37:52,000 - 00:37:53,000] why?
+- [00:37:53,000 - 00:37:56,000] Because it's in the nature of their mathematics
+- [00:37:56,000 - 00:37:58,000] that they would have to be massless
+- [00:37:58,000 - 00:38:01,000] if there was no shift of f.
+- [00:38:01,000 - 00:38:02,000] Only those particles
+- [00:38:02,000 - 00:38:06,000] are light enough to have been detected at present.
+- [00:38:06,000 - 00:38:07,000] That's the belief,
+- [00:38:07,000 - 00:38:09,000] that's a very widespread belief,
+- [00:38:09,000 - 00:38:11,000] that there's a good reason
+- [00:38:11,000 - 00:38:14,000] why all the particles have masses proportional to f,
+- [00:38:14,000 - 00:38:16,000] because any that don't
+- [00:38:16,000 - 00:38:20,000] probably have masses which are much, much larger.
+- [00:38:20,000 - 00:38:24,000] But still we have to explain the smallness of f.
+- [00:38:24,000 - 00:38:28,000] Small compared to what?
+- [00:38:28,000 - 00:38:31,000] Well, that's an interesting question.
+- [00:38:31,000 - 00:38:33,000] Small compared with what?
+- [00:38:33,000 - 00:38:35,000] What is the natural mass scale
+- [00:38:35,000 - 00:38:38,000] for elementary particle physics?
+- [00:38:38,000 - 00:38:43,000] So that's where I think we want to go next.
+- [00:38:43,000 - 00:38:44,000] Plank mass?
+- [00:38:44,000 - 00:38:45,000] Hm?
+- [00:38:45,000 - 00:38:46,000] Plank mass?
+- [00:38:46,000 - 00:38:48,000] That's one possible mass, yes.
+- [00:38:48,000 - 00:38:49,000] Yes.
+- [00:38:49,000 - 00:38:50,000] All right, let's see.
+- [00:38:50,000 - 00:38:51,000] I think it,
+- [00:38:51,000 - 00:38:52,000] we'll take a break in two minutes,
+- [00:38:52,000 - 00:38:54,000] but yes, one possible mass,
+- [00:38:54,000 - 00:38:56,000] which we'll talk about in a few minutes
+- [00:38:56,000 - 00:38:57,000] after the break,
+- [00:38:57,000 - 00:38:59,000] is the Planck mass.
+- [00:38:59,000 - 00:39:01,000] Another is the so-called unification mass,
+- [00:39:01,000 - 00:39:05,000] which I'll show you what it is.
+- [00:39:05,000 - 00:39:08,000] These masses are typically
+- [00:39:08,000 - 00:39:12,000] 16 or 17 orders of magnitude,
+- [00:39:12,000 - 00:39:14,000] well, let me see,
+- [00:39:14,000 - 00:39:18,000] 15 orders of magnitude heavier
+- [00:39:18,000 - 00:39:21,000] than the mass, than the, than f.
+- [00:39:21,000 - 00:39:23,000] 15 orders of magnitude heavier
+- [00:39:23,000 - 00:39:27,000] than the z or w boson, for example.
+- [00:39:27,000 - 00:39:29,000] So what we're left with then
+- [00:39:29,000 - 00:39:30,000] is a puzzle.
+- [00:39:30,000 - 00:39:34,000] Why is this f quantity so small?
+- [00:39:34,000 - 00:39:35,000] Once we can understand
+- [00:39:35,000 - 00:39:38,000] why the f quantity is so small,
+- [00:39:38,000 - 00:39:40,000] it drags down the masses
+- [00:39:40,000 - 00:39:42,000] of all the other particles,
+- [00:39:42,000 - 00:39:44,000] it drags them down simply because
+- [00:39:44,000 - 00:39:46,000] they cannot have mass
+- [00:39:46,000 - 00:39:48,000] other than proportional to f.
+- [00:39:48,000 - 00:39:50,000] They would naturally be massless
+- [00:39:50,000 - 00:39:53,000] in a world without spontaneous symmetry breaking.
+- [00:39:53,000 - 00:39:54,000] So, yeah?
+- [00:39:54,000 - 00:39:56,000] Would you say that again
+- [00:39:56,000 - 00:39:58,000] about the 15 orders of magnitude?
+- [00:39:58,000 - 00:39:59,000] Yeah, the natural, all right,
+- [00:39:59,000 - 00:40:04,000] f is a number of about 100 GeV.
+- [00:40:04,000 - 00:40:06,000] All right, that's, sounds like a lot of,
+- [00:40:06,000 - 00:40:08,000] sounds like a big mass, all right?
+- [00:40:08,000 - 00:40:10,000] The other mass scales which come
+- [00:40:10,000 - 00:40:12,000] into particle physics, which we know about,
+- [00:40:12,000 - 00:40:15,000] the other possibly much more fundamental
+- [00:40:15,000 - 00:40:18,000] mass scales are much, much heavier than that.
+- [00:40:18,000 - 00:40:21,000] 15 orders of magnitude heavier than that.
+- [00:40:21,000 - 00:40:23,000] And what particles correspond to that?
+- [00:40:23,000 - 00:40:25,000] None that we've ever discovered, obviously.
+- [00:40:25,000 - 00:40:27,000] You're right, many, but we predict.
+- [00:40:27,000 - 00:40:29,000] Yeah, well, yes, of course,
+- [00:40:29,000 - 00:40:31,000] we know what particles we predicted,
+- [00:40:31,000 - 00:40:33,000] but why did we predict them 15 orders
+- [00:40:33,000 - 00:40:35,000] of magnitude higher?
+- [00:40:35,000 - 00:40:37,000] In other words, when I say that there are
+- [00:40:37,000 - 00:40:39,000] other mass scales that we know about,
+- [00:40:39,000 - 00:40:41,000] we know about them from something.
+- [00:40:41,000 - 00:40:43,000] So the question is, where do we know about them
+- [00:40:43,000 - 00:40:45,000] if we've never seen, if we've never seen them,
+- [00:40:45,000 - 00:40:47,000] if we've never seen particles of those masses?
+- [00:40:47,000 - 00:40:50,000] And we'll talk about that after the break.
+- [00:40:50,000 - 00:40:56,000] I gather that in these very, very low temperature
+- [00:40:56,000 - 00:40:58,000] condensed matter boson kinds of things,
+- [00:40:58,000 - 00:41:01,000] there's all sorts of analogs to particle physics.
+- [00:41:01,000 - 00:41:04,000] But aside from that, is there any common,
+- [00:41:04,000 - 00:41:07,000] in solid state physics, or any common example
+- [00:41:07,000 - 00:41:09,000] that Higgs-like mechanisms?
+- [00:41:09,000 - 00:41:11,000] Yes, yes. All right.
+- [00:41:11,000 - 00:41:14,000] So you asked about Bose condensates.
+- [00:41:14,000 - 00:41:17,000] So a Bose condensation, or more precisely,
+- [00:41:17,000 - 00:41:22,000] superfluidity, which is similar to a Bose condensation,
+- [00:41:22,000 - 00:41:27,000] it's a condensation of helium atoms, okay?
+- [00:41:27,000 - 00:41:31,000] Helium atoms, helium atoms, of course,
+- [00:41:31,000 - 00:41:33,000] not elementary particles, okay?
+- [00:41:33,000 - 00:41:37,000] But on some scale, they are elementary particles.
+- [00:41:37,000 - 00:41:42,000] If you're interested in scales of water molecular size,
+- [00:41:42,000 - 00:41:46,000] a helium nucleus is an elementary particle,
+- [00:41:46,000 - 00:41:50,000] and it can be described by a field, okay?
+- [00:41:50,000 - 00:41:53,000] That field naturally in ordinary vacuum
+- [00:41:53,000 - 00:41:56,000] has a value zero, just corresponding
+- [00:41:56,000 - 00:41:59,000] to no helium atoms present, okay?
+- [00:41:59,000 - 00:42:01,000] Spontaneous symmetry breaking can happen,
+- [00:42:01,000 - 00:42:06,000] which can shift the value of the helium field.
+- [00:42:06,000 - 00:42:09,000] When that happens, in the same way that F
+- [00:42:09,000 - 00:42:12,000] is a shift of the Higgs field,
+- [00:42:12,000 - 00:42:15,000] when that happens, it's, roughly speaking,
+- [00:42:15,000 - 00:42:17,000] called a Bose condensation.
+- [00:42:17,000 - 00:42:19,000] When the Bose condensation happens,
+- [00:42:19,000 - 00:42:23,000] it spontaneously breaks a certain symmetry,
+- [00:42:23,000 - 00:42:26,000] and it's called, and it creates superfluidity.
+- [00:42:26,000 - 00:42:32,000] But if the helium atom were charged,
+- [00:42:32,000 - 00:42:34,000] if the helium, not the helium nucleus,
+- [00:42:34,000 - 00:42:38,000] the helium atom, if the helium atom were charged,
+- [00:42:38,000 - 00:42:41,000] it would behave like the Higgs boson
+- [00:42:41,000 - 00:42:44,000] and make a mass for the photon.
+- [00:42:44,000 - 00:42:46,000] Now, does that ever happen?
+- [00:42:46,000 - 00:42:48,000] Anything like it ever happen?
+- [00:42:48,000 - 00:42:50,000] Yes, it does.
+- [00:42:50,000 - 00:42:54,000] In a superconductor, electrons can pair up
+- [00:42:54,000 - 00:42:57,000] and bind together in the superconductor,
+- [00:42:57,000 - 00:42:59,000] very weakly bound pairs,
+- [00:42:59,000 - 00:43:02,000] and those pairs of electrons have charge two.
+- [00:43:02,000 - 00:43:04,000] They're not helium atoms.
+- [00:43:04,000 - 00:43:06,000] They're not neutral here in the atoms.
+- [00:43:06,000 - 00:43:08,000] They're called Cooper pairs,
+- [00:43:08,000 - 00:43:10,000] and they're bound configurations of electron,
+- [00:43:10,000 - 00:43:13,000] not electron and positron, but electron and electron.
+- [00:43:13,000 - 00:43:15,000] But they're separated?
+- [00:43:15,000 - 00:43:17,000] The Cooper pairs, aren't they separated?
+- [00:43:17,000 - 00:43:19,000] They're separated, they're not very far
+- [00:43:19,000 - 00:43:21,000] separated in space.
+- [00:43:21,000 - 00:43:22,000] They're separated at the opposite ends
+- [00:43:22,000 - 00:43:24,000] of the Fermi surface.
+- [00:43:24,000 - 00:43:26,000] Right.
+- [00:43:26,000 - 00:43:29,000] No, think of them as particles.
+- [00:43:29,000 - 00:43:32,000] First approximation, think of them as particles.
+- [00:43:32,000 - 00:43:34,000] They're charged particles,
+- [00:43:34,000 - 00:43:37,000] and then they condense.
+- [00:43:37,000 - 00:43:39,000] They condense, which means the field
+- [00:43:39,000 - 00:43:42,000] for this pair of particles gets shifted.
+- [00:43:42,000 - 00:43:45,000] You can think of that field as really just being
+- [00:43:45,000 - 00:43:47,000] the product of the electron field with itself,
+- [00:43:47,000 - 00:43:49,000] describing two electrons,
+- [00:43:49,000 - 00:43:50,000] or you can think of it as a new object
+- [00:43:50,000 - 00:43:52,000] which carries charge two.
+- [00:43:52,000 - 00:43:54,000] When that field gets shifted,
+- [00:43:54,000 - 00:43:58,000] it creates a condensate of Cooper pairs.
+- [00:43:58,000 - 00:44:00,000] It creates a kind of super fluidity
+- [00:44:00,000 - 00:44:02,000] for the Cooper pairs,
+- [00:44:02,000 - 00:44:05,000] but it's now a super fluid of charged particles.
+- [00:44:05,000 - 00:44:07,000] It becomes the Higgs phenomena.
+- [00:44:07,000 - 00:44:09,000] It's of course a superconductor,
+- [00:44:09,000 - 00:44:13,000] and the superconductor in essentially
+- [00:44:13,000 - 00:44:17,000] every possible way behaves like the Higgs phenomenon.
+- [00:44:17,000 - 00:44:18,000] The photon gets mass.
+- [00:44:18,000 - 00:44:20,000] Now it's a tiny, tiny mass
+- [00:44:20,000 - 00:44:22,000] because the scales are so terribly different,
+- [00:44:22,000 - 00:44:24,000] but the,
+- [00:44:24,000 - 00:44:27,000] the Compton wavelength of the,
+- [00:44:27,000 - 00:44:30,000] of the photon becomes finite,
+- [00:44:30,000 - 00:44:33,000] and it behaves very, very much like this,
+- [00:44:33,000 - 00:44:37,000] like this spontaneously shifted Higgs field.
+- [00:44:37,000 - 00:44:40,000] In fact, the phenomena was first discovered
+- [00:44:40,000 - 00:44:44,000] in the context of superconductors,
+- [00:44:44,000 - 00:44:48,000] and it was rediscovered entirely independently
+- [00:44:48,000 - 00:44:50,000] by,
+- [00:44:50,000 - 00:44:53,000] by Higgs and other people.
+- [00:44:53,000 - 00:44:55,000] Okay, let's take a little break.
+- [00:44:58,000 - 00:45:05,000] When you begin at the primordial description
+- [00:45:05,000 - 00:45:07,000] of elementary particles,
+- [00:45:07,000 - 00:45:09,000] you begin with the Lagrangian,
+- [00:45:09,000 - 00:45:12,000] and in the Lagrangian there are a collection of parameters
+- [00:45:12,000 - 00:45:14,000] such as masses of particles,
+- [00:45:14,000 - 00:45:16,000] charges of particles,
+- [00:45:16,000 - 00:45:19,000] and they're sort of the input.
+- [00:45:19,000 - 00:45:21,000] On the other hand,
+- [00:45:21,000 - 00:45:22,000] they're very rarely,
+- [00:45:22,000 - 00:45:23,000] if ever,
+- [00:45:23,000 - 00:45:25,000] the actual measured quantities.
+- [00:45:25,000 - 00:45:28,000] The measured quantities that you actually measure
+- [00:45:28,000 - 00:45:31,000] are usually the product
+- [00:45:31,000 - 00:45:34,000] of all kinds of interactions and things
+- [00:45:34,000 - 00:45:36,000] that take place
+- [00:45:36,000 - 00:45:40,000] between the high frequency modes of a system
+- [00:45:40,000 - 00:45:42,000] and the low frequency modes of the system,
+- [00:45:42,000 - 00:45:47,000] which renormalize or change the values of the parameters
+- [00:45:47,000 - 00:45:51,000] that you associate with experimental observations.
+- [00:45:51,000 - 00:45:54,000] An example is electric charge.
+- [00:45:54,000 - 00:45:56,000] So let's talk about that a little bit
+- [00:45:56,000 - 00:45:58,000] and how charge gets renormalized.
+- [00:45:58,000 - 00:46:00,000] I'm not going to do any calculations.
+- [00:46:00,000 - 00:46:02,000] Calculations, you'll have to go and get a book
+- [00:46:02,000 - 00:46:04,000] and try to follow it.
+- [00:46:04,000 - 00:46:06,000] But the phenomena,
+- [00:46:06,000 - 00:46:10,000] the phenomena is a fairly simple one
+- [00:46:10,000 - 00:46:12,000] that's well known.
+- [00:46:12,000 - 00:46:14,000] It occurs in condensed matter physics.
+- [00:46:14,000 - 00:46:17,000] In fact, it just occurs in classical
+- [00:46:17,000 - 00:46:19,000] electrical physics.
+- [00:46:19,000 - 00:46:22,000] Electricity and magnetism
+- [00:46:22,000 - 00:46:27,000] associated with electric,
+- [00:46:27,000 - 00:46:29,000] what's it called?
+- [00:46:29,000 - 00:46:31,000] Dielectric, thank you.
+- [00:46:31,000 - 00:46:34,000] With dielectric materials
+- [00:46:34,000 - 00:46:37,000] and conductors.
+- [00:46:37,000 - 00:46:42,000] The actual observable charge,
+- [00:46:42,000 - 00:46:45,000] normally observed charge of an object,
+- [00:46:45,000 - 00:46:48,000] is defined by the Coulomb law.
+- [00:46:48,000 - 00:46:52,000] But the Coulomb law at large separation,
+- [00:46:52,000 - 00:46:55,000] the asymptotic force between two charges
+- [00:46:55,000 - 00:46:57,000] when they're far apart,
+- [00:46:57,000 - 00:47:00,000] and that force, as you well know,
+- [00:47:00,000 - 00:47:03,000] is the product of the charges.
+- [00:47:03,000 - 00:47:05,000] Let's call it E1, E2.
+- [00:47:05,000 - 00:47:07,000] Let's take them to be equal charges.
+- [00:47:07,000 - 00:47:09,000] And in particular, let's suppose they have
+- [00:47:09,000 - 00:47:11,000] charge of the electron, just to be simple.
+- [00:47:11,000 - 00:47:14,000] Then it's just E squared
+- [00:47:14,000 - 00:47:16,000] divided by R squared,
+- [00:47:16,000 - 00:47:17,000] or in the potential energy,
+- [00:47:17,000 - 00:47:20,000] just E squared divided by R.
+- [00:47:20,000 - 00:47:23,000] So you take two charges far apart
+- [00:47:23,000 - 00:47:24,000] and you measure the charge,
+- [00:47:24,000 - 00:47:26,000] you measure the force between them.
+- [00:47:26,000 - 00:47:29,000] At any given distance,
+- [00:47:29,000 - 00:47:32,000] it will not be precisely given by this formula,
+- [00:47:32,000 - 00:47:35,000] but if you asymptotically separate them,
+- [00:47:35,000 - 00:47:36,000] then you'll find asymptotically,
+- [00:47:36,000 - 00:47:38,000] with respect to R,
+- [00:47:38,000 - 00:47:39,000] the force between them,
+- [00:47:39,000 - 00:47:41,000] or the potential energy between them,
+- [00:47:41,000 - 00:47:43,000] goes like E squared over R.
+- [00:47:43,000 - 00:47:47,000] Attractive for opposite charges,
+- [00:47:47,000 - 00:47:50,000] repulsive for like charges.
+- [00:47:50,000 - 00:47:53,000] And that defines, if you like,
+- [00:47:53,000 - 00:47:55,000] the charge of a particle.
+- [00:47:55,000 - 00:47:59,000] Coulomb law at spatially very large separations.
+- [00:47:59,000 - 00:48:05,000] Now, if in a material you do this,
+- [00:48:05,000 - 00:48:07,000] you take charges in a material,
+- [00:48:07,000 - 00:48:09,000] or even just the air,
+- [00:48:09,000 - 00:48:11,000] and you separate them
+- [00:48:11,000 - 00:48:13,000] and see what the force law is,
+- [00:48:13,000 - 00:48:16,000] you'll find that it's not exactly given
+- [00:48:16,000 - 00:48:19,000] by the formula in which you go
+- [00:48:19,000 - 00:48:21,000] to the particle physics table,
+- [00:48:21,000 - 00:48:24,000] the particle physics table of particle properties,
+- [00:48:24,000 - 00:48:28,000] read off the electric charge of the system.
+- [00:48:28,000 - 00:48:31,000] Typically, you won't read off the electric charge
+- [00:48:31,000 - 00:48:34,000] of an ordinary chunk of material,
+- [00:48:34,000 - 00:48:36,000] but you might happen to know how many electrons,
+- [00:48:36,000 - 00:48:41,000] or how many excess protons or electrons are in it.
+- [00:48:41,000 - 00:48:43,000] So you might know its charge
+- [00:48:43,000 - 00:48:45,000] in units of the charge of the electron,
+- [00:48:45,000 - 00:48:47,000] you take them apart,
+- [00:48:47,000 - 00:48:49,000] and you discover, no,
+- [00:48:49,000 - 00:48:51,000] the force is always a little bit less than that.
+- [00:48:51,000 - 00:48:53,000] Always a little bit less than that.
+- [00:48:53,000 - 00:48:56,000] Unless you're in absolute vacuum.
+- [00:48:56,000 - 00:48:59,000] In absolute vacuum, completely empty space,
+- [00:48:59,000 - 00:49:01,000] by definition,
+- [00:49:01,000 - 00:49:05,000] the electric charge is what you measure
+- [00:49:05,000 - 00:49:08,000] by measuring the force at a large distance.
+- [00:49:08,000 - 00:49:11,000] Now what is it that happens in a material?
+- [00:49:11,000 - 00:49:14,000] Let's begin with a conductor.
+- [00:49:14,000 - 00:49:17,000] With an electric conductor,
+- [00:49:17,000 - 00:49:21,000] what happens to a charge that's put into the conductor?
+- [00:49:21,000 - 00:49:24,000] Well, the charge creates some electric field.
+- [00:49:24,000 - 00:49:26,000] For example, suppose it's a plus charge,
+- [00:49:26,000 - 00:49:29,000] it creates an outward electric field,
+- [00:49:29,000 - 00:49:32,000] the electric field creates a current,
+- [00:49:32,000 - 00:49:35,000] the current starts charges moving,
+- [00:49:35,000 - 00:49:38,000] and until the charge is completely discharged,
+- [00:49:38,000 - 00:49:40,000] until it's completely discharged,
+- [00:49:40,000 - 00:49:43,000] in other words, until the charge has gone out
+- [00:49:43,000 - 00:49:46,000] to the boundary of the conductor,
+- [00:49:46,000 - 00:49:50,000] the flow of charge doesn't stop.
+- [00:49:50,000 - 00:49:55,000] So the charge flows until the charged object,
+- [00:49:55,000 - 00:49:58,000] let's draw the charged object over here,
+- [00:49:58,000 - 00:50:00,000] there it is,
+- [00:50:00,000 - 00:50:03,000] charge flows away from it,
+- [00:50:03,000 - 00:50:05,000] collects on the boundary,
+- [00:50:05,000 - 00:50:08,000] but let's put the boundary off on Alpha Centauri someplace,
+- [00:50:08,000 - 00:50:11,000] and of course, an opposite charge,
+- [00:50:11,000 - 00:50:13,000] so if this is plus,
+- [00:50:13,000 - 00:50:16,000] an opposite charge cloud is found around it,
+- [00:50:16,000 - 00:50:19,000] it completely discharges it,
+- [00:50:19,000 - 00:50:24,000] so that outside there's no electric field at all,
+- [00:50:24,000 - 00:50:27,000] and no more reason for the charges to flow.
+- [00:50:27,000 - 00:50:29,500] Now these charges are of
+- [00:50:29,500 - 00:50:32,000] course bound to the positive charge,
+- [00:50:32,000 - 00:50:33,000] they're bound to it,
+- [00:50:33,000 - 00:50:36,000] and the whole thing forms a neutral structure.
+- [00:50:36,000 - 00:50:39,000] If you take another negative charge over here,
+- [00:50:39,000 - 00:50:42,000] exactly the opposite thing will happen to it,
+- [00:50:42,000 - 00:50:45,000] it will create some plus charge around it,
+- [00:50:45,000 - 00:50:47,000] same deal,
+- [00:50:47,000 - 00:50:50,000] the charges will flow until it's completely neutralized,
+- [00:50:50,000 - 00:50:52,000] and then you take these two charges,
+- [00:50:52,000 - 00:50:55,000] you thought you had two charges to begin with,
+- [00:50:55,000 - 00:50:57,000] you evaluate or measure the
+- [00:50:57,000 - 00:50:59,000] force between them at large distances,
+- [00:50:59,000 - 00:51:02,000] and you find out that there is none.
+- [00:51:02,000 - 00:51:08,000] So, the charge that you put in to begin with
+- [00:51:08,000 - 00:51:09,500] is not the experimental charge
+- [00:51:09,500 - 00:51:11,000] at the end of the day,
+- [00:51:11,000 - 00:51:13,500] the experimental charge at the end of the
+- [00:51:13,500 - 00:51:16,000] day in this case is just plain zero.
+- [00:51:16,000 - 00:51:20,000] Now what happens is you start moving the two charges,
+- [00:51:20,000 - 00:51:22,000] let's suppose they're really small,
+- [00:51:22,000 - 00:51:25,000] and you start moving them closer and closer together.
+- [00:51:25,000 - 00:51:28,000] Is this screening?
+- [00:51:28,000 - 00:51:30,000] Screening.
+- [00:51:30,000 - 00:51:32,000] This is device screening.
+- [00:51:35,000 - 00:51:37,000] Supposing these charges are really small,
+- [00:51:37,000 - 00:51:38,500] in particular they're smaller than
+- [00:51:38,500 - 00:51:40,000] the clouds around them that form.
+- [00:51:40,000 - 00:51:42,500] The clouds around them are controlled by
+- [00:51:42,500 - 00:51:45,000] various properties of the metal and so forth,
+- [00:51:45,000 - 00:51:47,000] and the electrons moving in the metal,
+- [00:51:47,000 - 00:51:50,000] and we imagine making these charges even smaller.
+- [00:51:50,000 - 00:51:52,000] We bring them really close together.
+- [00:51:52,000 - 00:51:55,000] We bring them so close together that
+- [00:51:55,000 - 00:51:58,000] the screening cloud can't get between them.
+- [00:51:58,000 - 00:52:02,000] Typically there's a scale for the screening cloud.
+- [00:52:02,000 - 00:52:05,500] It's controlled by the dynamics
+- [00:52:05,500 - 00:52:09,000] of the electrons in the system,
+- [00:52:09,000 - 00:52:15,000] and the particles making up the screening cloud
+- [00:52:15,000 - 00:52:18,000] typically have a certain distance between them,
+- [00:52:18,000 - 00:52:22,000] and that distance controls the size of the screening cloud.
+- [00:52:22,000 - 00:52:23,500] When you bring these two
+- [00:52:23,500 - 00:52:25,000] particles closer than the screening cloud,
+- [00:52:25,000 - 00:52:27,000] they're no longer screened.
+- [00:52:27,000 - 00:52:31,000] They actually feel each other's raw basic charge,
+- [00:52:31,000 - 00:52:34,000] and you see that there's a Coulomb force between them,
+- [00:52:34,000 - 00:52:37,000] which is the usual E squared over R.
+- [00:52:37,000 - 00:52:38,000] Okay?
+- [00:52:38,000 - 00:52:40,000] So you could say then
+- [00:52:40,000 - 00:52:42,000] that the charge of the electron,
+- [00:52:42,000 - 00:52:45,000] or the charge of the particle in this case,
+- [00:52:45,000 - 00:52:49,000] is really a function of distance.
+- [00:52:49,000 - 00:52:51,000] In the case of the conductor,
+- [00:52:51,000 - 00:52:55,000] E of R is zero at very large R.
+- [00:52:55,000 - 00:52:57,500] It's whatever the ordinary charge of
+- [00:52:57,500 - 00:53:00,000] the particle is at very small r,
+- [00:53:00,000 - 00:53:02,000] and the force law, instead of
+- [00:53:02,000 - 00:53:04,000] being just plain E squared over R,
+- [00:53:04,000 - 00:53:07,000] has E squared of R divided by R squared.
+- [00:53:08,000 - 00:53:10,000] This is just a definition of
+- [00:53:10,000 - 00:53:12,000] E squared of R, if you like.
+- [00:53:12,000 - 00:53:13,500] I don't put anything new into it
+- [00:53:13,500 - 00:53:15,000] by calling it E squared of R,
+- [00:53:15,000 - 00:53:19,000] but it does have a nice sound to it.
+- [00:53:19,000 - 00:53:21,000] It's called the running charge.
+- [00:53:21,000 - 00:53:25,000] Running is a function of distance between them.
+- [00:53:25,000 - 00:53:28,000] Okay, now what happens if you
+- [00:53:28,000 - 00:53:31,000] have something less extreme than a conductor?
+- [00:53:31,000 - 00:53:33,000] For example, a dielectric.
+- [00:53:33,000 - 00:53:36,000] A dielectric, if you like, has electrons
+- [00:53:36,000 - 00:53:38,000] which are bound together.
+- [00:53:38,000 - 00:53:40,000] Electrons are bound to the atoms.
+- [00:53:40,000 - 00:53:42,000] Electrons are bound to the atoms,
+- [00:53:42,000 - 00:53:44,000] but they're free to shift a little bit.
+- [00:53:44,000 - 00:53:46,000] If you like, you can almost think
+- [00:53:46,000 - 00:53:48,000] of the electrons as being on springs,
+- [00:53:48,000 - 00:53:50,000] where the one end of the
+- [00:53:50,000 - 00:53:52,000] spring the electron is attached to,
+- [00:53:52,000 - 00:53:57,000] the other end of the spring the ion,
+- [00:53:57,000 - 00:54:01,000] the positively charged ion is attached.
+- [00:54:01,000 - 00:54:05,000] And ordinarily, the electron moves symmetrically,
+- [00:54:05,000 - 00:54:06,000] vibrates symmetrically.
+- [00:54:06,000 - 00:54:08,000] Of course, this is not really a good picture
+- [00:54:08,000 - 00:54:11,000] of an atom, but it's good enough for our purposes.
+- [00:54:11,000 - 00:54:14,000] The electron oscillates and vibrates back and forth
+- [00:54:14,000 - 00:54:16,000] symmetrically about the atom.
+- [00:54:16,000 - 00:54:18,500] So on the average, the dipole
+- [00:54:18,500 - 00:54:21,000] moment of the atom is zero.
+- [00:54:21,000 - 00:54:24,000] But now you put the atom into an electric field,
+- [00:54:24,000 - 00:54:26,500] and what happens is the
+- [00:54:26,500 - 00:54:29,000] electron cloud shifts a little bit.
+- [00:54:29,000 - 00:54:36,000] It shifts a little bit, leaving a dipole left over.
+- [00:54:36,000 - 00:54:38,000] The current doesn't flow.
+- [00:54:38,000 - 00:54:40,000] The charge just shifts a little bit
+- [00:54:40,000 - 00:54:44,000] because they're bound to the atoms.
+- [00:54:44,000 - 00:54:48,500] Okay, so now what happens if
+- [00:54:48,500 - 00:54:53,000] you put a charge into a dielectric?
+- [00:54:53,000 - 00:54:55,000] Well, a very similar phenomenon happens.
+- [00:54:55,000 - 00:55:00,000] Let's suppose we put a minus charge in over here.
+- [00:55:00,000 - 00:55:05,000] All the ions are heavy.
+- [00:55:05,000 - 00:55:07,000] They don't move very much.
+- [00:55:07,000 - 00:55:08,500] But the electrons which are
+- [00:55:08,500 - 00:55:10,000] bound to them by the springs
+- [00:55:10,000 - 00:55:15,000] move out away from the central atom.
+- [00:55:15,000 - 00:55:16,000] What does that leave?
+- [00:55:16,000 - 00:55:18,000] That leaves a little bit of plus charge here.
+- [00:55:18,000 - 00:55:23,000] But it doesn't completely screen the charge.
+- [00:55:23,000 - 00:55:27,000] It screens some fraction of the charge.
+- [00:55:27,000 - 00:55:28,500] So that if you look very,
+- [00:55:28,500 - 00:55:30,000] very far away from the charged particle,
+- [00:55:30,000 - 00:55:34,000] you'll find that the field,
+- [00:55:34,000 - 00:55:37,000] the electric field is diminished by a certain fraction,
+- [00:55:37,000 - 00:55:40,000] but it doesn't go to zero very far away.
+- [00:55:40,000 - 00:55:44,000] The fraction is controlled by the dielectric constant.
+- [00:55:44,000 - 00:55:48,000] The dielectric constant will tell you what the screening is.
+- [00:55:48,000 - 00:55:51,000] So again, you'll find that a large separation,
+- [00:55:51,000 - 00:55:53,000] this plus charge and this minus charge,
+- [00:55:53,000 - 00:55:55,000] don't satisfy the expected Coulomb
+- [00:55:55,000 - 00:55:57,000] law that you might have expected
+- [00:55:57,000 - 00:55:59,000] from the actual, let's call it
+- [00:55:59,000 - 00:56:01,000] the bare charge of these particles,
+- [00:56:01,000 - 00:56:04,000] but it's diminished by this,
+- [00:56:04,000 - 00:56:06,000] by this effect.
+- [00:56:06,000 - 00:56:09,000] It's diminished, the Coulomb law is correct,
+- [00:56:09,000 - 00:56:12,000] but with a diminished value of the charge.
+- [00:56:12,000 - 00:56:14,000] So in this case, you would also have an
+- [00:56:14,000 - 00:56:16,000] E squared of R or an E of R.
+- [00:56:16,000 - 00:56:19,000] Again, if you bring the charges very close together
+- [00:56:19,000 - 00:56:22,000] so that they're within the screening cloud,
+- [00:56:22,000 - 00:56:25,000] then you feel the full strength of the bare charge.
+- [00:56:25,000 - 00:56:29,000] So again, E squared is a function of R.
+- [00:56:29,000 - 00:56:32,000] In this case, it wouldn't go to zero and infinity.
+- [00:56:32,000 - 00:56:34,000] It would just go to some constant,
+- [00:56:34,000 - 00:56:37,000] a fraction of the original charge.
+- [00:56:37,000 - 00:56:40,000] Again, the concept of a running charge.
+- [00:56:40,000 - 00:56:42,000] All right, now, exactly this phenomenon,
+- [00:56:42,000 - 00:56:44,000] it really is exactly this phenomenon,
+- [00:56:44,000 - 00:56:46,000] happens in quantum field theory.
+- [00:56:46,000 - 00:56:49,000] The origin of it is the pairs,
+- [00:56:49,000 - 00:56:51,000] let's take quantum electrodynamics.
+- [00:56:51,000 - 00:56:53,000] In quantum electrodynamics,
+- [00:56:53,000 - 00:56:59,000] the vacuum is full of electron-positron pairs.
+- [00:56:59,000 - 00:57:02,000] There are Feynman diagrams
+- [00:57:02,000 - 00:57:05,000] where electrons, positrons are created by photons,
+- [00:57:05,000 - 00:57:11,000] even just electron-positron loops with no photons,
+- [00:57:11,000 - 00:57:14,000] and they inhabit the vacuum, if you like.
+- [00:57:14,000 - 00:57:16,000] The other way you can think about it
+- [00:57:16,000 - 00:57:18,000] is you can think about it
+- [00:57:18,000 - 00:57:20,000] in terms of Dirac's negative energy C.
+- [00:57:20,000 - 00:57:23,000] The vacuum is filled with this negative energy C.
+- [00:57:23,000 - 00:57:25,500] Or you can imagine that there
+- [00:57:25,500 - 00:57:28,000] are electron-positron pairs in the vacuum.
+- [00:57:28,000 - 00:57:31,000] What happens when an electric field comes along?
+- [00:57:31,000 - 00:57:34,000] The electric field will shift the positrons one way
+- [00:57:34,000 - 00:57:37,000] and shift the electrons the other way,
+- [00:57:37,000 - 00:57:40,000] so that every little virtual pair,
+- [00:57:40,000 - 00:57:43,000] electron-positron pair, will become polarized.
+- [00:57:43,000 - 00:57:45,500] Polarized in exactly the same way that
+- [00:57:45,500 - 00:57:48,000] atoms become polarized by an electric field.
+- [00:57:48,000 - 00:57:50,000] The plus charge is shifting one way,
+- [00:57:50,000 - 00:57:52,000] the minus charge is shifting the other way.
+- [00:57:52,000 - 00:57:53,500] That's what happens in the vacuum
+- [00:57:53,500 - 00:57:55,000] when you put an electric field on.
+- [00:57:55,000 - 00:58:00,000] Okay, that's step number one.
+- [00:58:00,000 - 00:58:01,000] Step number two.
+- [00:58:01,000 - 00:58:04,500] Of course, you put in what you thought
+- [00:58:04,500 - 00:58:08,000] was an original bare charge of magnitude E.
+- [00:58:08,000 - 00:58:11,000] The charges in the vacuum rearrange a little bit.
+- [00:58:11,000 - 00:58:14,000] The vacuum is basically a dielectric.
+- [00:58:14,000 - 00:58:15,000] It's basically a dielectric.
+- [00:58:15,000 - 00:58:17,000] The charges shift a little bit,
+- [00:58:17,000 - 00:58:20,000] and in such a way that negative charges
+- [00:58:20,000 - 00:58:23,000] are screened by a little bit of positive charge
+- [00:58:23,000 - 00:58:25,000] from these virtual pairs,
+- [00:58:25,000 - 00:58:27,500] and positive charges are screened by
+- [00:58:27,500 - 00:58:30,000] a little bit of negative charge.
+- [00:58:31,000 - 00:58:33,500] The upshot is the charge
+- [00:58:33,500 - 00:58:36,000] that's felt at a large distance
+- [00:58:36,000 - 00:58:39,000] is not the same as the numerical value
+- [00:58:39,000 - 00:58:42,000] of the charge that you put into the Lagrangian,
+- [00:58:42,000 - 00:58:46,000] which is usually called the bare electric charge.
+- [00:58:46,000 - 00:58:49,000] But again, you start moving the
+- [00:58:49,000 - 00:58:52,000] electrons closer and closer to each other,
+- [00:58:52,000 - 00:58:55,500] and at some point they get closer
+- [00:58:55,500 - 00:58:59,000] than the size of the screening cloud.
+- [00:58:59,000 - 00:59:02,000] But there's one difference in this case.
+- [00:59:02,000 - 00:59:08,000] In this case, there is no set distance
+- [00:59:08,000 - 00:59:14,000] that the electron positrons tend to be separated by.
+- [00:59:14,000 - 00:59:17,500] The right statement is that the separation between
+- [00:59:17,500 - 00:59:21,000] the electron positron pairs depends on their energy.
+- [00:59:21,000 - 00:59:24,500] The higher the energy of the
+- [00:59:24,500 - 00:59:28,000] virtual pair, the closer they will be.
+- [00:59:28,000 - 00:59:31,000] So there will be electron
+- [00:59:31,000 - 00:59:34,000] positron pairs which form relatively big,
+- [00:59:34,000 - 00:59:37,000] let's call them atoms, they're not atoms,
+- [00:59:37,000 - 00:59:40,000] but let's call them atomic neutral systems.
+- [00:59:40,000 - 00:59:42,000] There will be ones of
+- [00:59:42,000 - 00:59:44,000] higher virtual energy which are smaller,
+- [00:59:44,000 - 00:59:47,000] ones of yet higher virtual energy which are even smaller,
+- [00:59:47,000 - 00:59:51,000] ones which are higher energy which are even smaller.
+- [00:59:51,000 - 00:59:54,000] Okay, so what happens when you put the charge in?
+- [00:59:54,000 - 00:59:57,000] And bring another charge closer and closer to it?
+- [00:59:57,000 - 01:00:00,000] And bring another charge closer and closer and closer.
+- [01:00:00,000 - 01:00:05,500] At first, you will bring them close enough that they'll
+- [01:00:05,500 - 01:00:11,000] be within the distance of the low energy virtual pairs.
+- [01:00:11,000 - 01:00:14,000] The low energy virtual pairs will no
+- [01:00:14,000 - 01:00:17,000] longer be able to screen the charge,
+- [01:00:17,000 - 01:00:20,000] and so the charge will look a little bit smaller, sorry,
+- [01:00:20,000 - 01:00:23,000] a little bit bigger than it would when they were far apart.
+- [01:00:23,000 - 01:00:24,500] Why? When they were far
+- [01:00:24,500 - 01:00:26,000] apart, they were completely screened,
+- [01:00:26,000 - 01:00:28,000] not completely screened, but they were
+- [01:00:28,000 - 01:00:30,000] screened by all possible virtual pairs.
+- [01:00:30,000 - 01:00:32,000] You bring them a little bit
+- [01:00:32,000 - 01:00:34,000] closer, the low energy virtual pairs,
+- [01:00:34,000 - 01:00:37,500] which had a large separation between them,
+- [01:00:37,500 - 01:00:41,000] you bring the charges closer than that,
+- [01:00:41,000 - 01:00:42,500] and the low energy virtual pairs
+- [01:00:42,500 - 01:00:44,000] are no longer important in screening.
+- [01:00:44,000 - 01:00:46,000] But the higher energy virtual
+- [01:00:46,000 - 01:00:48,000] pairs are still doing some screening.
+- [01:00:48,000 - 01:00:53,000] You bring them a little closer,
+- [01:00:53,000 - 01:00:55,000] the higher energy pairs are still doing some screening.
+- [01:00:56,000 - 01:00:58,000] The higher energy virtual pairs fall out
+- [01:00:58,000 - 01:01:00,000] of the equation because they're too far apart,
+- [01:01:00,000 - 01:01:02,000] and yet higher energy ones are still there.
+- [01:01:02,000 - 01:01:06,500] The effect is that that E squared of R is
+- [01:01:06,500 - 01:01:11,000] a function which keeps changing and changing and changing with R.
+- [01:01:11,000 - 01:01:16,000] It doesn't stop changing at some particular small distance.
+- [01:01:16,000 - 01:01:19,000] The closer and closer you bring the electron
+- [01:01:19,000 - 01:01:22,000] together, the larger the charge will appear to be.
+- [01:01:22,000 - 01:01:24,000] So if you were to plot,
+- [01:01:24,000 - 01:01:26,000] the virtue of the fact that there are
+- [01:01:26,000 - 01:01:28,000] pairs of every possible energy in the vacuum.
+- [01:01:28,000 - 01:01:36,000] So if you were to plot the electric charge
+- [01:01:36,000 - 01:01:43,000] as a function of radial separation,
+- [01:01:43,000 - 01:01:48,000] let's plot it as a function of inverse radial separation.
+- [01:01:48,000 - 01:01:51,000] Inverse radial separation is like energy.
+- [01:01:51,000 - 01:01:54,000] The closer things are together, the higher their energy.
+- [01:01:54,000 - 01:02:01,000] So let's plot it as a function of inverse separation,
+- [01:02:01,000 - 01:02:03,500] one over R, which is also
+- [01:02:03,500 - 01:02:06,000] related to energy or momentum or whatever.
+- [01:02:06,000 - 01:02:13,000] Then the electric charge that you'll see will increase.
+- [01:02:13,000 - 01:02:16,000] It'll increase very slowly, in fact.
+- [01:02:16,000 - 01:02:18,000] It's a very slow logarithmic increase.
+- [01:02:18,000 - 01:02:20,000] It doesn't increase rapidly.
+- [01:02:20,000 - 01:02:23,000] That's why it's very hard to see in an experiment.
+- [01:02:24,000 - 01:02:26,500] It's a logarithmic gradual increase of
+- [01:02:26,500 - 01:02:29,000] the size of an electric charge
+- [01:02:29,000 - 01:02:33,000] as you study smaller and smaller distance phenomenon.
+- [01:02:33,000 - 01:02:35,000] It's also true, for example,
+- [01:02:35,000 - 01:02:38,000] electric charge comes into
+- [01:02:38,000 - 01:02:41,000] calculations of scattering of electrons.
+- [01:02:41,000 - 01:02:45,000] If you scatter electrons at a low energy,
+- [01:02:45,000 - 01:02:48,000] they only get within a certain distance of each other.
+- [01:02:48,000 - 01:02:51,000] The higher the energy you scatter them,
+- [01:02:51,000 - 01:02:53,000] the closer those electrons can get to each other
+- [01:02:53,000 - 01:02:56,000] by virtue of the uncertainty principle.
+- [01:02:56,000 - 01:02:59,000] And when you do the calculation,
+- [01:02:59,000 - 01:03:02,000] you have to put in the running charge.
+- [01:03:02,000 - 01:03:06,000] If you scatter electrons at enormously high energy,
+- [01:03:06,000 - 01:03:08,500] they behave as if they had
+- [01:03:08,500 - 01:03:11,000] a larger charge than at smaller distances.
+- [01:03:11,000 - 01:03:17,000] So that brings us to the idea of running charge.
+- [01:03:17,000 - 01:03:20,000] What is the fundamental charge?
+- [01:03:20,000 - 01:03:22,000] What is the most fundamental value of the charge?
+- [01:03:22,000 - 01:03:24,000] Is it one of the long distances?
+- [01:03:24,000 - 01:03:27,000] No, that's the one that's controlled by
+- [01:03:27,000 - 01:03:30,000] all of this complicated screening taking place.
+- [01:03:30,000 - 01:03:33,000] As you get the smaller and smaller distances,
+- [01:03:33,000 - 01:03:37,000] you sort of peel away the screening cloud.
+- [01:03:37,000 - 01:03:39,000] As you get the smaller and smaller distances,
+- [01:03:39,000 - 01:03:43,000] you peel away more and more of the screening cloud.
+- [01:03:43,000 - 01:03:45,000] So it's really at the smallest distances
+- [01:03:45,000 - 01:03:49,000] where the basic parameter that you put into the Lagrangian,
+- [01:03:49,000 - 01:03:51,000] the bear charge,
+- [01:03:51,000 - 01:03:54,000] manifests itself.
+- [01:03:54,000 - 01:03:57,000] How small is small where
+- [01:03:57,000 - 01:04:00,000] you start seeing a significant effect?
+- [01:04:00,000 - 01:04:05,000] Well, you start seeing a measurable effect,
+- [01:04:05,000 - 01:04:08,000] but a high precision measurable effect,
+- [01:04:08,000 - 01:04:10,500] at a few times at about
+- [01:04:10,500 - 01:04:13,000] the Compton wavelength of the electron.
+- [01:04:13,000 - 01:04:15,000] So what's that, 10 to the minus 11th?
+- [01:04:15,000 - 01:04:19,000] Compton wavelength of the electron.
+- [01:04:19,000 - 01:04:22,000] The electron is half an MeV,
+- [01:04:22,000 - 01:04:27,000] so that's about 10 to the minus 11th centimeters.
+- [01:04:27,000 - 01:04:29,000] About 10 to the minus 11th centimeters.
+- [01:04:29,000 - 01:04:33,000] You start to see the running of the charge.
+- [01:04:33,000 - 01:04:40,000] But this thing continues to . . .
+- [01:04:40,000 - 01:04:42,000] Well, it would keep going on
+- [01:04:42,000 - 01:04:44,000] if the physics didn't change somehow,
+- [01:04:44,000 - 01:04:46,000] at very small distances.
+- [01:04:46,000 - 01:04:47,000] We don't know what the physics
+- [01:04:47,000 - 01:04:48,000] is at very, very small distances.
+- [01:04:49,000 - 01:04:53,000] Well, sort of implying that the small one is there,
+- [01:04:53,000 - 01:04:55,000] there we don't know what happens, actually.
+- [01:04:55,000 - 01:04:56,000] At very small distances.
+- [01:04:56,000 - 01:04:58,000] Right, that's right.
+- [01:04:58,000 - 01:04:58,500] We don't know what happens
+- [01:04:58,500 - 01:04:59,000] at very small . . .
+- [01:04:59,000 - 01:05:01,000] So we can only extrapolate a certain . . .
+- [01:05:01,000 - 01:05:03,000] Yeah.
+- [01:05:03,000 - 01:05:06,000] So for gluons, it's kind of the opposite thing?
+- [01:05:06,000 - 01:05:07,000] There's some . . .
+- [01:05:07,000 - 01:05:09,000] It does. It does.
+- [01:05:09,000 - 01:05:10,000] How come?
+- [01:05:10,000 - 01:05:13,000] Well, that's a more complicated phenomenon.
+- [01:05:13,000 - 01:05:15,000] A more complicated phenomenon that's
+- [01:05:15,000 - 01:05:17,000] closely connected with the fact
+- [01:05:17,000 - 01:05:20,000] that gluons interact with gluons.
+- [01:05:20,000 - 01:05:22,500] And because gluons interact with gluons
+- [01:05:22,500 - 01:05:25,000] in a very nonlinear kind of way,
+- [01:05:25,000 - 01:05:28,000] the effect is actually the opposite.
+- [01:05:28,000 - 01:05:31,000] How do you determine the bare electric charge?
+- [01:05:31,000 - 01:05:34,000] You go to infinitely small distances,
+- [01:05:34,000 - 01:05:35,500] and you measure at
+- [01:05:35,500 - 01:05:37,000] infinitely small distances the interaction,
+- [01:05:37,000 - 01:05:39,000] and that's the bare electric charge.
+- [01:05:39,000 - 01:05:40,000] But you'll never get to infinitely
+- [01:05:40,000 - 01:05:41,000] small distances because . . .
+- [01:05:41,000 - 01:05:43,000] But it asymptotically approaches something.
+- [01:05:43,000 - 01:05:44,000] No, it doesn't asymptotically.
+- [01:05:44,000 - 01:05:46,000] It just keeps growing and growing and growing.
+- [01:05:47,000 - 01:05:49,000] Yeah, logarithmic function is unbounded.
+- [01:05:49,000 - 01:05:50,000] Right.
+- [01:05:50,000 - 01:05:51,000] Right.
+- [01:05:51,000 - 01:05:52,000] Right.
+- [01:05:52,000 - 01:05:55,000] So it keeps growing until something happens
+- [01:05:55,000 - 01:05:59,000] that was not taken into account by these calculations.
+- [01:05:59,000 - 01:06:01,000] What could it be?
+- [01:06:01,000 - 01:06:04,000] Our smallest distance in the world, the Planck distance,
+- [01:06:04,000 - 01:06:06,000] something else happens,
+- [01:06:06,000 - 01:06:09,500] and from experimental physics, we
+- [01:06:09,500 - 01:06:13,000] don't know what terminates this.
+- [01:06:13,000 - 01:06:16,000] We certainly believe it's terminated at the Planck length.
+- [01:06:16,000 - 01:06:20,000] This physics certainly doesn't make sense at Planck length.
+- [01:06:20,000 - 01:06:22,000] But there has to be a particular
+- [01:06:22,000 - 01:06:24,000] length to be saying that's bare electric charge.
+- [01:06:24,000 - 01:06:30,000] So let's call it Planck length.
+- [01:06:30,000 - 01:06:31,000] That's the second one.
+- [01:06:31,000 - 01:06:32,000] Okay.
+- [01:06:32,000 - 01:06:33,000] That's a great idea.
+- [01:06:33,000 - 01:06:35,000] But you see, you can compensate.
+- [01:06:35,000 - 01:06:37,000] You can change that length,
+- [01:06:37,000 - 01:06:39,500] and if you also at the same
+- [01:06:39,500 - 01:06:42,000] time change what you called the bare charge,
+- [01:06:42,000 - 01:06:44,000] it would compensate.
+- [01:06:44,000 - 01:06:45,000] Right.
+- [01:06:45,000 - 01:06:48,000] So at any given level, you could terminate it,
+- [01:06:48,000 - 01:06:53,000] call that charge the bare charge at that length,
+- [01:06:53,000 - 01:06:55,000] or change the length scale
+- [01:06:55,000 - 01:06:57,000] if you appropriately and judiciously change
+- [01:06:57,000 - 01:06:59,000] the value of the bare charge
+- [01:06:59,000 - 01:07:01,500] where it comes out at the
+- [01:07:01,500 - 01:07:04,000] low energy end, won't know about it.
+- [01:07:04,000 - 01:07:05,000] Right.
+- [01:07:05,000 - 01:07:08,000] So that's the phenomena of renormalization,
+- [01:07:08,000 - 01:07:09,500] changing things in such a
+- [01:07:09,500 - 01:07:11,000] way as to keep the physics,
+- [01:07:11,000 - 01:07:14,000] the experimentally known physics, fixed.
+- [01:07:15,000 - 01:07:18,000] Is that what you're zooming in and attenuating?
+- [01:07:18,000 - 01:07:22,000] We're zooming in and looking at closer and closer distances.
+- [01:07:22,000 - 01:07:24,000] Now, of course, we don't do that experimentally.
+- [01:07:24,000 - 01:07:26,000] So we do that in our mind,
+- [01:07:26,000 - 01:07:28,000] and we ask how do we have to
+- [01:07:28,000 - 01:07:30,000] change the physics at smaller and smaller distances
+- [01:07:30,000 - 01:07:34,000] to keep it fixed at experimentally accessible distances?
+- [01:07:34,000 - 01:07:36,500] How do we have to change the electric
+- [01:07:36,500 - 01:07:39,000] charge as we go to smaller and smaller distances
+- [01:07:39,000 - 01:07:41,500] in order to keep the
+- [01:07:41,500 - 01:07:44,000] physics fixed at any given wavelength?
+- [01:07:44,000 - 01:07:46,500] So what this is telling us is
+- [01:07:46,500 - 01:07:49,000] that as we go to smaller and smaller,
+- [01:07:49,000 - 01:07:52,000] more and more refined description,
+- [01:07:52,000 - 01:07:54,000] more and more fine-grained description,
+- [01:07:54,000 - 01:07:57,500] the value of the electric charge that we have
+- [01:07:57,500 - 01:08:01,000] to put into the bare description has to grow.
+- [01:08:01,000 - 01:08:03,000] Now, as I said, that will change at some point
+- [01:08:03,000 - 01:08:05,500] where the physics of quantum
+- [01:08:05,500 - 01:08:08,000] electrodynamics gives way to something else.
+- [01:08:08,000 - 01:08:09,000] Okay.
+- [01:08:09,000 - 01:08:12,000] So that's the electric charge.
+- [01:08:12,000 - 01:08:13,000] Let's go.
+- [01:08:14,000 - 01:08:18,000] Does the same phenomena happen with gravity?
+- [01:08:18,000 - 01:08:20,000] The equations are somewhat similar.
+- [01:08:20,000 - 01:08:21,000] We'll talk about it.
+- [01:08:21,000 - 01:08:23,500] It's quite a different phenomenon, but
+- [01:08:23,500 - 01:08:26,000] we'll come to it perhaps today.
+- [01:08:26,000 - 01:08:28,000] I don't know if we'll come to it today, maybe.
+- [01:08:28,000 - 01:08:32,000] Okay, now let's talk about the strong interactions.
+- [01:08:32,000 - 01:08:35,000] The strong interactions, things are more complicated.
+- [01:08:35,000 - 01:08:37,500] Let me remind you of what we
+- [01:08:37,500 - 01:08:40,000] learned about the force law between quarks.
+- [01:08:44,000 - 01:08:48,500] The force law between quarks does
+- [01:08:48,500 - 01:08:53,000] not behave like E squared over R.
+- [01:08:53,000 - 01:08:56,500] What happens is some new phenomena where
+- [01:08:56,500 - 01:09:00,000] the flux lines that come out of quarks,
+- [01:09:00,000 - 01:09:03,000] these are not the electromagnetic flux lines,
+- [01:09:03,000 - 01:09:05,500] these are the flux lines of
+- [01:09:05,500 - 01:09:08,000] QCD, they're called chromoelectric flux lines,
+- [01:09:08,000 - 01:09:10,000] attract each other.
+- [01:09:10,000 - 01:09:11,500] They attract each other in a
+- [01:09:11,500 - 01:09:13,000] way that does not happen in electrodynamics.
+- [01:09:13,000 - 01:09:17,000] It's the self-interaction between gluons.
+- [01:09:17,000 - 01:09:22,000] And that has the effect of turning
+- [01:09:22,000 - 01:09:27,000] the Coulomb field into long tube-like structures,
+- [01:09:27,000 - 01:09:30,000] which are sort of squeezed by
+- [01:09:30,000 - 01:09:33,000] the vacuum into these long tube-like structures.
+- [01:09:33,000 - 01:09:37,000] The effect of this is as you separate quarks,
+- [01:09:37,000 - 01:09:40,000] the energy grows linearly
+- [01:09:40,000 - 01:09:43,000] with the separation between quarks.
+- [01:09:43,000 - 01:09:49,000] You create this Turkish taffy gooey stuff in between them,
+- [01:09:49,000 - 01:09:52,500] and the energy of it grows simply as
+- [01:09:52,500 - 01:09:56,000] the length of the gooey thing between them.
+- [01:09:56,000 - 01:10:01,000] That means that the force law, the energy grows linearly.
+- [01:10:01,000 - 01:10:03,000] What does the force...
+- [01:10:03,000 - 01:10:05,000] All right, so let's write that down.
+- [01:10:05,000 - 01:10:11,000] Instead of the energy growing like E squared over R,
+- [01:10:11,000 - 01:10:15,000] it just grows linearly with R.
+- [01:10:15,000 - 01:10:17,000] So this is the wrong formula.
+- [01:10:17,000 - 01:10:20,000] We should have put here perhaps E
+- [01:10:20,000 - 01:10:23,000] squared or something like E squared times R.
+- [01:10:23,000 - 01:10:27,000] Let's not call it something times R.
+- [01:10:27,000 - 01:10:29,000] Well, we can either say
+- [01:10:29,000 - 01:10:31,000] we had completely the wrong theory,
+- [01:10:31,000 - 01:10:34,000] or we can say that E
+- [01:10:34,000 - 01:10:37,000] squared is growing like R squared.
+- [01:10:37,000 - 01:10:41,000] We can say the picture from electrodynamics,
+- [01:10:41,000 - 01:10:44,000] where charges are screened.
+- [01:10:44,000 - 01:10:47,000] Simply the opposite happens,
+- [01:10:47,000 - 01:10:50,000] that E squared grows with separation.
+- [01:10:50,000 - 01:10:52,000] Something happens in this nonlinear effect here,
+- [01:10:52,000 - 01:10:54,000] which is quite the opposite,
+- [01:10:54,000 - 01:10:57,000] and so E squared grows with separation.
+- [01:10:57,000 - 01:10:59,000] Incidentally, at very small distances,
+- [01:10:59,000 - 01:11:03,000] again, distances which are so small,
+- [01:11:03,000 - 01:11:06,000] smaller than the size of these flux tubes,
+- [01:11:06,000 - 01:11:09,000] it reverts back to E squared over R.
+- [01:11:09,000 - 01:11:10,000] Okay.
+- [01:11:10,000 - 01:11:13,000] So it reverts back to the good old Coulomb law.
+- [01:11:13,000 - 01:11:15,500] But another way of saying it
+- [01:11:15,500 - 01:11:18,000] is that instead of E squared
+- [01:11:18,000 - 01:11:22,000] as a function of distance getting larger with distance,
+- [01:11:22,000 - 01:11:25,000] it actually gets smaller with distance.
+- [01:11:25,000 - 01:11:27,000] E squared is getting smaller...
+- [01:11:27,000 - 01:11:29,000] No, sorry.
+- [01:11:29,000 - 01:11:32,000] With inverse distance.
+- [01:11:32,000 - 01:11:34,000] It's getting smaller with inverse distance.
+- [01:11:34,000 - 01:11:38,000] Larger with distance, smaller with inverse distance.
+- [01:11:38,000 - 01:11:42,000] So therefore, if I plot
+- [01:11:42,000 - 01:11:46,000] the quantum chromodynamics coupling constant,
+- [01:11:46,000 - 01:11:51,000] it will fall as a function of inverse R,
+- [01:11:51,000 - 01:11:53,000] like that.
+- [01:11:53,000 - 01:11:57,000] What about the one for the weak interactions?
+- [01:11:57,000 - 01:12:00,000] Well, the weak interactions are sort of in between.
+- [01:12:00,000 - 01:12:03,000] They're sort of in between.
+- [01:12:03,000 - 01:12:06,000] They have similarities with both.
+- [01:12:06,000 - 01:12:07,000] They're in between.
+- [01:12:08,000 - 01:12:09,000] They go like that.
+- [01:12:09,000 - 01:12:13,000] Well, maybe not as fast.
+- [01:12:13,000 - 01:12:17,000] It's an interesting and quite remarkable fact
+- [01:12:17,000 - 01:12:24,000] that if you actually take the standard model
+- [01:12:24,000 - 01:12:26,000] and you work out how the charges...
+- [01:12:26,000 - 01:12:28,000] First of all, you need to
+- [01:12:28,000 - 01:12:30,000] know what the various coupling constants are
+- [01:12:30,000 - 01:12:32,000] in the laboratory.
+- [01:12:32,000 - 01:12:34,000] Those are the ones that control physics
+- [01:12:34,000 - 01:12:37,000] at whatever scales you've done your experiment.
+- [01:12:38,000 - 01:12:40,000] You've got 100 GeV or whatever,
+- [01:12:40,000 - 01:12:43,000] and you put in their values,
+- [01:12:43,000 - 01:12:47,000] and then you run them using just the standard model,
+- [01:12:47,000 - 01:12:50,000] the polarization of the vacuum
+- [01:12:50,000 - 01:12:52,000] and all the properties from the standard model.
+- [01:12:52,000 - 01:12:57,000] These three numbers more or less come together
+- [01:12:57,000 - 01:13:00,000] at a common point.
+- [01:13:00,000 - 01:13:03,000] They more or less come together at a common point.
+- [01:13:03,000 - 01:13:05,000] Now, in a more...
+- [01:13:05,000 - 01:13:08,000] Well, in the supersymmetric version
+- [01:13:08,000 - 01:13:09,500] of the theory, which we will
+- [01:13:09,500 - 01:13:11,000] talk about next time a little bit,
+- [01:13:11,000 - 01:13:13,000] next quarter,
+- [01:13:13,000 - 01:13:15,000] they come together with rather high precision,
+- [01:13:15,000 - 01:13:17,000] about 1%.
+- [01:13:17,000 - 01:13:19,000] About 1%.
+- [01:13:19,000 - 01:13:21,000] They come together at about 1%.
+- [01:13:21,000 - 01:13:24,000] That looks like there's something happening
+- [01:13:24,000 - 01:13:28,000] at some energy which is unifying these forces.
+- [01:13:28,000 - 01:13:32,000] Their coupling constants seem to be the same
+- [01:13:32,000 - 01:13:34,000] at some high energy here
+- [01:13:34,000 - 01:13:37,000] if you just extrapolate these curves.
+- [01:13:37,000 - 01:13:39,000] The curves are calculable.
+- [01:13:39,000 - 01:13:41,000] Of course, you have to assume
+- [01:13:41,000 - 01:13:43,000] that no new physics comes in.
+- [01:13:43,000 - 01:13:45,000] That no new physics comes in,
+- [01:13:45,000 - 01:13:47,000] or if new physics comes in,
+- [01:13:47,000 - 01:13:49,000] you have to take it into account.
+- [01:13:49,000 - 01:13:53,000] New physics might shift these curves a little bit.
+- [01:13:53,000 - 01:13:56,000] In the supersymmetric version of the theory,
+- [01:13:56,000 - 01:14:00,000] these three numbers come together very nicely
+- [01:14:00,000 - 01:14:02,000] to about 1%
+- [01:14:02,000 - 01:14:06,000] at an energy of about 10 to the 16th GeV.
+- [01:14:06,000 - 01:14:08,000] Why is that energy so high?
+- [01:14:08,000 - 01:14:11,000] It's because these curves vary logarithmically.
+- [01:14:11,000 - 01:14:13,000] They vary slowly.
+- [01:14:13,000 - 01:14:17,000] When things vary slowly, they vary slowly.
+- [01:14:17,000 - 01:14:24,000] And so it takes a long range of scales
+- [01:14:24,000 - 01:14:26,000] before they come together.
+- [01:14:26,000 - 01:14:27,500] And they come together at
+- [01:14:27,500 - 01:14:29,000] about 10 to the 16th GeV.
+- [01:14:29,000 - 01:14:31,000] 10 to the 14th times larger
+- [01:14:31,000 - 01:14:33,000] than the mass of the W.
+- [01:14:33,000 - 01:14:36,000] So it's some huge energy.
+- [01:14:36,000 - 01:14:39,000] It looks from these curves
+- [01:14:39,000 - 01:14:43,000] that some kind of unification is taking place there.
+- [01:14:43,000 - 01:14:45,000] Now, is this good enough to...
+- [01:14:45,000 - 01:14:47,000] Is this...
+- [01:14:47,000 - 01:14:51,000] It's a relatively high precision agreement
+- [01:14:51,000 - 01:14:53,000] in the supersymmetric theory.
+- [01:14:53,000 - 01:14:55,000] In the non-supersymmetric theory,
+- [01:14:55,000 - 01:14:57,000] it's not such high precision agreement.
+- [01:14:57,000 - 01:15:00,000] But it's tantalizing, and it's interesting
+- [01:15:00,000 - 01:15:05,000] that this is the tendency for things.
+- [01:15:05,000 - 01:15:06,000] All right.
+- [01:15:06,000 - 01:15:07,000] If this is correct,
+- [01:15:07,000 - 01:15:12,000] you might guess that the fundamental length scale
+- [01:15:12,000 - 01:15:15,000] of particle physics of the standard model
+- [01:15:15,000 - 01:15:18,000] is up at this 10 to the 15th GeV.
+- [01:15:18,000 - 01:15:21,000] It's where the input seems to be simplest.
+- [01:15:21,000 - 01:15:23,000] Simplest in that the three coupling constants
+- [01:15:23,000 - 01:15:25,000] seem to be the same.
+- [01:15:25,000 - 01:15:28,000] We'll talk about what that means mathematically.
+- [01:15:28,000 - 01:15:29,000] It has a very deep...
+- [01:15:29,000 - 01:15:32,000] It could have a very deep mathematical meaning.
+- [01:15:32,000 - 01:15:33,000] But for the moment,
+- [01:15:33,000 - 01:15:34,000] it's just an observation
+- [01:15:34,000 - 01:15:35,000] about numbers,
+- [01:15:35,000 - 01:15:37,000] that they come together
+- [01:15:37,000 - 01:15:39,000] at a particular energy.
+- [01:15:39,000 - 01:15:42,000] Now, that energy also happens to be the place,
+- [01:15:42,000 - 01:15:44,000] if you were to plot the strength
+- [01:15:44,000 - 01:15:47,000] of gravitational forces.
+- [01:15:47,000 - 01:15:50,000] Gravitational forces are very weak
+- [01:15:50,000 - 01:15:51,000] at large distances,
+- [01:15:51,000 - 01:15:53,000] but I'm going to show you why in a moment.
+- [01:15:53,000 - 01:15:55,000] They get stronger and stronger and stronger
+- [01:15:55,000 - 01:15:57,000] at small distances,
+- [01:15:57,000 - 01:15:59,000] not only because of the usual
+- [01:15:59,000 - 01:16:01,000] 1 over r squared in the force,
+- [01:16:01,000 - 01:16:03,000] but above and beyond that,
+- [01:16:03,000 - 01:16:05,000] the forces of gravitation
+- [01:16:05,000 - 01:16:07,000] become stronger and stronger.
+- [01:16:07,000 - 01:16:09,000] And if you were to lay on top of that,
+- [01:16:09,000 - 01:16:12,000] let's see,
+- [01:16:12,000 - 01:16:14,000] the forces of gravitation
+- [01:16:14,000 - 01:16:18,000] would become strong at small distances.
+- [01:16:18,000 - 01:16:21,000] So that would mean gravitational forces,
+- [01:16:21,000 - 01:16:25,000] which are credibly weak at long distances,
+- [01:16:25,000 - 01:16:29,000] would do something like that.
+- [01:16:29,000 - 01:16:32,000] And they don't quite all cross at the same place,
+- [01:16:32,000 - 01:16:35,000] but they cross within a factor,
+- [01:16:35,000 - 01:16:37,000] remember these are logarithmic curves,
+- [01:16:37,000 - 01:16:39,000] they cross within a couple of orders
+- [01:16:39,000 - 01:16:41,000] of magnitude of each other.
+- [01:16:41,000 - 01:16:44,000] The gravitational, the weak,
+- [01:16:44,000 - 01:16:45,000] the electromagnetic,
+- [01:16:45,000 - 01:16:47,000] and the strong interaction
+- [01:16:47,000 - 01:16:51,000] cross all within a couple of decades
+- [01:16:51,000 - 01:16:53,000] of energy of each other,
+- [01:16:53,000 - 01:16:55,000] or a couple of decades of length scale,
+- [01:16:55,000 - 01:16:57,000] at about somewhere between
+- [01:16:57,000 - 01:17:00,000] 10 to the 16th, 17th, 18th,
+- [01:17:00,000 - 01:17:01,000] GEV.
+- [01:17:02,000 - 01:17:05,000] So what all this means,
+- [01:17:05,000 - 01:17:07,000] especially the gravitational side of it,
+- [01:17:07,000 - 01:17:09,000] we don't know,
+- [01:17:09,000 - 01:17:11,000] but if there is a unification scale,
+- [01:17:11,000 - 01:17:13,000] and if this really does correspond to some unity
+- [01:17:13,000 - 01:17:15,000] between the three forces,
+- [01:17:15,000 - 01:17:17,000] it looks like it happens at a scale
+- [01:17:17,000 - 01:17:19,000] which is not too different
+- [01:17:19,000 - 01:17:21,000] than the Planck scale.
+- [01:17:21,000 - 01:17:23,000] The Planck scale is the scale
+- [01:17:23,000 - 01:17:25,000] where gravity would become comparable
+- [01:17:25,000 - 01:17:27,000] to the other forces.
+- [01:17:27,000 - 01:17:30,000] So let's talk a little bit about
+- [01:17:30,000 - 01:17:31,000] gravitational forces,
+- [01:17:31,000 - 01:17:34,000] and why I say that gravity gets stronger
+- [01:17:34,000 - 01:17:36,000] at small distances.
+- [01:17:41,000 - 01:17:42,000] Ordinarily,
+- [01:17:42,000 - 01:17:44,000] now we're going to talk about what happens
+- [01:17:44,000 - 01:17:45,000] to gravitational forces
+- [01:17:45,000 - 01:17:47,000] as you vary the distance scale.
+- [01:17:50,000 - 01:17:53,000] And the only point here is that
+- [01:17:53,000 - 01:17:55,000] when you understand how gravity
+- [01:17:55,000 - 01:17:57,000] depends on length scale,
+- [01:17:57,000 - 01:17:59,000] you find out that gravity sort of falls
+- [01:17:59,000 - 01:18:01,000] on the same scale
+- [01:18:01,000 - 01:18:03,000] as the other forces.
+- [01:18:03,000 - 01:18:05,000] So we have a little bit of a
+- [01:18:05,000 - 01:18:07,000] ballpark with the other forces
+- [01:18:07,000 - 01:18:09,000] at scales which are very small.
+- [01:18:09,000 - 01:18:11,000] Gravity is really no weaker
+- [01:18:11,000 - 01:18:13,000] than these other forces.
+- [01:18:13,000 - 01:18:15,000] Okay, so to understand this,
+- [01:18:15,000 - 01:18:17,000] we first have to erase the blackboard
+- [01:18:17,000 - 01:18:19,000] a little bit.
+- [01:18:31,000 - 01:18:38,000] We're used to thinking that
+- [01:18:38,000 - 01:18:41,000] the force law of gravity is
+- [01:18:41,000 - 01:18:42,000] one over r squared,
+- [01:18:42,000 - 01:18:45,000] or Coulomb.
+- [01:18:45,000 - 01:18:46,000] You'd be surprised if I told you
+- [01:18:46,000 - 01:18:49,000] it's really one over r cubed
+- [01:18:49,000 - 01:18:52,000] at very small distances.
+- [01:18:52,000 - 01:18:54,000] You wouldn't be surprised.
+- [01:18:55,266 - 01:18:55,536] بدي
+- [01:18:55,536 - 01:18:55,806] ودن
+- [01:18:57,058 - 01:18:59,058] I thought I heard something like that.
+- [01:18:59,058 - 01:19:00,058] Yeah, you said something.
+- [01:19:00,058 - 01:19:02,558] Okay, so let's go through why it's
+- [01:19:02,558 - 01:19:05,058] 1 over r cubed at very small distances.
+- [01:19:05,058 - 01:19:06,058] The reason is we write
+- [01:19:06,058 - 01:19:07,058] down, what do we write down?
+- [01:19:07,058 - 01:19:11,058] We write force, let's work with force this time.
+- [01:19:11,058 - 01:19:12,558] We worked with energy before. It
+- [01:19:12,558 - 01:19:14,058] doesn't matter which we work with.
+- [01:19:14,058 - 01:19:20,558] Force is equal to m, m, two
+- [01:19:20,558 - 01:19:27,058] particles, masses, r squared, and Newton's constant, right?
+- [01:19:27,058 - 01:19:29,058] That's the force between two particles.
+- [01:19:29,058 - 01:19:32,058] All right, now this is a non-relativistic formula.
+- [01:19:32,058 - 01:19:36,058] This is the formula for particles at rest.
+- [01:19:36,058 - 01:19:38,558] When particles have a high energy,
+- [01:19:38,558 - 01:19:41,058] or when objects have a high energy,
+- [01:19:41,058 - 01:19:46,058] it's energy that gravitates and not mass, not rest mass.
+- [01:19:46,058 - 01:19:48,558] A moving object will gravitate
+- [01:19:48,558 - 01:19:51,058] more than an object at rest.
+- [01:19:51,058 - 01:19:54,058] If you take a box full of high energy particles,
+- [01:19:54,058 - 01:19:55,558] those high energy particles will gravitate
+- [01:19:55,558 - 01:19:57,058] more than an object at rest.
+- [01:19:57,058 - 01:19:59,058] They will gravitate more than they would if
+- [01:19:59,058 - 01:20:01,058] they were brought to rest within the box.
+- [01:20:01,058 - 01:20:06,058] So the right formula, or a more correct formula,
+- [01:20:06,058 - 01:20:14,058] a more correct formula is to put here,
+- [01:20:14,058 - 01:20:16,558] use E equals mc squared,
+- [01:20:16,558 - 01:20:19,058] or m, m, not m squared,
+- [01:20:19,058 - 01:20:21,058] E equals mc squared, or better
+- [01:20:21,058 - 01:20:23,058] yet, m equals E over c squared,
+- [01:20:23,058 - 01:20:27,058] and put in here energy of particles,
+- [01:20:27,058 - 01:20:33,058] E over c fourth, I believe, right? Over c fourth.
+- [01:20:33,058 - 01:20:35,058] All right, so this is
+- [01:20:35,058 - 01:20:37,058] a formula which is more accurate
+- [01:20:37,058 - 01:20:40,058] when the particles are relativistic.
+- [01:20:40,058 - 01:20:42,058] Okay, now let's go to quantum mechanics,
+- [01:20:42,058 - 01:20:47,058] and imagine bringing two particles very close together,
+- [01:20:47,058 - 01:20:52,058] much closer together than their Compton wavelengths.
+- [01:20:52,058 - 01:20:55,058] Because of the uncertainty principle,
+- [01:20:55,058 - 01:20:57,058] if we've brought them close together,
+- [01:20:57,058 - 01:21:01,058] that means that their momentum is extremely uncertain.
+- [01:21:01,058 - 01:21:04,058] To say that their momentum is extremely uncertain,
+- [01:21:04,058 - 01:21:07,058] you can say that their momentum is very large.
+- [01:21:07,058 - 01:21:09,558] Roughly speaking, if you brought them to
+- [01:21:09,558 - 01:21:12,058] within a distance r of each other,
+- [01:21:12,058 - 01:21:17,058] the momentum of them must be at least of order,
+- [01:21:17,058 - 01:21:23,058] what is it, h bar over r, right?
+- [01:21:23,058 - 01:21:25,058] Okay?
+- [01:21:25,058 - 01:21:29,058] Now, what about the energy of these particles?
+- [01:21:29,058 - 01:21:32,058] The energy of these particles, you might think,
+- [01:21:32,058 - 01:21:33,558] well, the energy of a
+- [01:21:33,558 - 01:21:35,058] particle at rest is mc squared.
+- [01:21:39,058 - 01:21:41,058] If it has a little bit of velocity,
+- [01:21:41,058 - 01:21:44,058] you add plus one half mv squared.
+- [01:21:44,058 - 01:21:49,058] Sorry, one mv squared over two.
+- [01:21:49,058 - 01:21:53,058] But what happens when the momentum gets really large
+- [01:21:53,058 - 01:21:55,058] when r gets very small,
+- [01:21:55,058 - 01:21:59,058] these particles become highly relativistic.
+- [01:21:59,058 - 01:22:01,058] Why?
+- [01:22:01,058 - 01:22:04,058] Their momentum gets much larger than any pre-assigned number
+- [01:22:04,058 - 01:22:06,058] when they get very, very close together.
+- [01:22:06,058 - 01:22:09,058] What's the energy of a particle,
+- [01:22:09,058 - 01:22:12,058] a relativistic particle with momentum p?
+- [01:22:12,058 - 01:22:14,058] Relativistic means it's moving with
+- [01:22:14,058 - 01:22:16,058] almost the speed of light.
+- [01:22:16,058 - 01:22:18,058] Anybody remember?
+- [01:22:18,058 - 01:22:20,058] What is it?
+- [01:22:20,058 - 01:22:23,058] No, that's non-relativistic completely.
+- [01:22:23,058 - 01:22:24,058] No, no.
+- [01:22:25,058 - 01:22:32,058] No, the energy is p times the speed of light.
+- [01:22:32,058 - 01:22:33,058] Right.
+- [01:22:33,058 - 01:22:35,058] p times the speed of light.
+- [01:22:35,058 - 01:22:36,058] Okay?
+- [01:22:36,058 - 01:22:40,058] So, we can now say
+- [01:22:40,058 - 01:22:44,058] p is h bar over r.
+- [01:22:44,058 - 01:22:47,558] And now we can plug
+- [01:22:47,558 - 01:22:51,058] this into the force between particles.
+- [01:22:51,058 - 01:22:53,058] Okay, so what is it?
+- [01:22:53,058 - 01:22:58,058] So, p is equal to h bar squared.
+- [01:22:58,058 - 01:23:02,058] Let's just, the particles come close together.
+- [01:23:02,058 - 01:23:05,058] Let's assume they both have about the same energy,
+- [01:23:05,058 - 01:23:07,058] which is a good assumption.
+- [01:23:07,058 - 01:23:14,058] So, that's h bar squared c squared over r squared.
+- [01:23:14,058 - 01:23:18,058] That's just e squared here, e one times e two.
+- [01:23:18,058 - 01:23:20,058] That's this factor here.
+- [01:23:20,058 - 01:23:23,058] Then there's a c to the fourth in the denominator.
+- [01:23:23,058 - 01:23:29,058] From here, there's a g and another r squared.
+- [01:23:29,058 - 01:23:31,058] So, r to the fourth.
+- [01:23:36,058 - 01:23:38,058] Did I get it right?
+- [01:23:38,058 - 01:23:39,058] Yeah.
+- [01:23:39,058 - 01:23:40,058] Right.
+- [01:23:40,058 - 01:23:42,058] How about c squared?
+- [01:23:44,058 - 01:23:45,058] The c squared is canceled.
+- [01:23:45,058 - 01:23:46,058] Yeah.
+- [01:23:46,058 - 01:23:48,058] Well, they don't cancel.
+- [01:23:48,058 - 01:23:49,058] C squared.
+- [01:23:53,058 - 01:23:54,558] When I said the force
+- [01:23:54,558 - 01:23:56,058] law was one over r cubed,
+- [01:23:56,058 - 01:23:59,058] I meant the energy, not the force.
+- [01:23:59,058 - 01:24:02,058] The force is one over r to the fourth.
+- [01:24:02,058 - 01:24:07,058] So, when you bring particles really close together,
+- [01:24:07,058 - 01:24:11,058] squeeze them by whatever means,
+- [01:24:11,058 - 01:24:15,058] either an accelerator accelerates them to very high energy
+- [01:24:15,058 - 01:24:17,058] so they can get very, very close together,
+- [01:24:17,058 - 01:24:19,058] or you put them in a box and squeeze them.
+- [01:24:19,058 - 01:24:20,558] Well, no box is going to
+- [01:24:20,558 - 01:24:22,058] hold particles that are that high.
+- [01:24:22,058 - 01:24:25,058] There are other particles that are that relativistic.
+- [01:24:25,058 - 01:24:27,058] But somehow or another, when
+- [01:24:27,058 - 01:24:29,058] the particles get that close together,
+- [01:24:29,058 - 01:24:35,058] the force law is quite different than Coulomb.
+- [01:24:35,058 - 01:24:37,058] It's one over r to the fourth.
+- [01:24:37,058 - 01:24:41,058] Okay, now let's ask the following question.
+- [01:24:41,058 - 01:24:42,058] Yeah.
+- [01:24:42,058 - 01:24:44,058] Well, we're talking gravitational force here,
+- [01:24:44,058 - 01:24:46,058] so it's an attractive force.
+- [01:24:46,058 - 01:24:47,058] It's an attractive force.
+- [01:24:47,058 - 01:24:48,058] Right.
+- [01:24:48,058 - 01:24:51,058] And it is much more potent
+- [01:24:51,058 - 01:24:54,058] at small distances than it is at large distances.
+- [01:24:54,058 - 01:24:57,058] One over r to the fourth is much, much bigger
+- [01:24:57,058 - 01:25:02,058] than one over r squared.
+- [01:25:02,058 - 01:25:04,058] This is because the relativistic speedup
+- [01:25:04,058 - 01:25:05,558] causes the mass to increase
+- [01:25:05,558 - 01:25:07,058] but not the charge to increase.
+- [01:25:07,058 - 01:25:11,058] Right, right, right, exactly, exactly so.
+- [01:25:11,058 - 01:25:13,058] Exactly so.
+- [01:25:13,058 - 01:25:17,058] Okay, now let's ask at what length scale r
+- [01:25:17,058 - 01:25:20,058] is the gravitational force
+- [01:25:20,058 - 01:25:23,058] approximately the same order of magnitude
+- [01:25:23,058 - 01:25:25,058] as the electromagnetic force.
+- [01:25:25,058 - 01:25:27,058] Let's do a little, let's,
+- [01:25:27,058 - 01:25:29,058] there's the electric charge,
+- [01:25:29,058 - 01:25:32,058] the electron's electric charge is a pure number.
+- [01:25:32,058 - 01:25:34,058] It happens to be fairly small.
+- [01:25:34,058 - 01:25:37,058] Let's forget, but not ridiculously small.
+- [01:25:37,058 - 01:25:40,058] It's a fairly small number of something like a tenth
+- [01:25:40,058 - 01:25:44,058] or something like that in natural units.
+- [01:25:44,058 - 01:25:49,058] So for the first round,
+- [01:25:49,058 - 01:25:52,058] we could just set the electric charge of an electron
+- [01:25:52,058 - 01:25:54,058] equal to one for simplicity.
+- [01:25:54,058 - 01:25:57,058] And then we could ask at what length scale
+- [01:25:57,058 - 01:26:01,058] is the force, the gravitational force
+- [01:26:01,058 - 01:26:04,058] between a pair of particles
+- [01:26:04,058 - 01:26:07,058] the same as the electromagnetic force,
+- [01:26:07,058 - 01:26:10,058] let's say a pair of electrons.
+- [01:26:10,058 - 01:26:11,058] Does that ever happen?
+- [01:26:11,058 - 01:26:13,058] At ordinary scales,
+- [01:26:13,058 - 01:26:18,058] electric forces are vastly larger than gravitational forces,
+- [01:26:18,058 - 01:26:20,058] electric forces.
+- [01:26:20,058 - 01:26:22,058] As you bring them closer together,
+- [01:26:22,058 - 01:26:24,058] because the gravitational forces increase
+- [01:26:24,058 - 01:26:26,058] like one over r to the fourth,
+- [01:26:26,058 - 01:26:29,058] eventually the gravitational force will cross
+- [01:26:29,058 - 01:26:33,058] the electrostatic force,
+- [01:26:33,058 - 01:26:36,058] and at smaller distances will become even more important,
+- [01:26:36,058 - 01:26:37,058] even larger.
+- [01:26:37,058 - 01:26:39,058] So let's see where that happens.
+- [01:26:39,058 - 01:26:41,058] To find out where that happens,
+- [01:26:41,058 - 01:26:43,058] we should set this equal
+- [01:26:43,058 - 01:26:45,058] to e squared
+- [01:26:45,058 - 01:26:47,058] over r squared.
+- [01:26:48,058 - 01:26:52,058] For simplicity for the moment,
+- [01:26:52,058 - 01:26:55,058] let's just set the electric charge equal to one.
+- [01:26:55,058 - 01:26:56,058] It's not equal to one,
+- [01:26:56,058 - 01:26:58,058] it's about a tenth or something,
+- [01:26:58,058 - 01:27:00,058] about, it's smaller than one.
+- [01:27:00,058 - 01:27:02,058] G or e?
+- [01:27:02,058 - 01:27:03,058] G or e?
+- [01:27:03,058 - 01:27:05,058] G or e?
+- [01:27:05,058 - 01:27:06,058] You just erased a g.
+- [01:27:06,058 - 01:27:08,058] Oh, sorry, I didn't mean to erase g.
+- [01:27:08,058 - 01:27:10,058] I didn't do that.
+- [01:27:10,058 - 01:27:12,058] E.
+- [01:27:12,058 - 01:27:15,058] Let's simplify and put a one here,
+- [01:27:15,058 - 01:27:16,058] which is not too long.
+- [01:27:16,058 - 01:27:17,058] E squared is really something like
+- [01:27:17,058 - 01:27:19,058] about a tenth.
+- [01:27:19,058 - 01:27:20,058] But it's not too bad,
+- [01:27:20,058 - 01:27:21,058] it's approximately right.
+- [01:27:21,058 - 01:27:23,058] Now we can read off from this
+- [01:27:23,058 - 01:27:25,058] at what scale these two kinds of forces
+- [01:27:25,058 - 01:27:27,058] become equal to each other.
+- [01:27:27,058 - 01:27:29,058] Just multiply by r to the fourth.
+- [01:27:33,058 - 01:27:37,058] This becomes r squared here.
+- [01:27:37,058 - 01:27:39,058] Now take the square root of it.
+- [01:27:39,058 - 01:27:41,058] Wait, did I...
+- [01:27:44,058 - 01:27:45,058] Something wrong.
+- [01:27:47,058 - 01:27:49,058] You had r fourth,
+- [01:27:49,058 - 01:27:51,058] it would be r squared now.
+- [01:27:51,058 - 01:27:53,058] It's r squared, yeah.
+- [01:27:53,058 - 01:27:55,058] Okay.
+- [01:27:55,058 - 01:27:57,058] I think I made a mistake.
+- [01:27:57,058 - 01:27:59,058] I still think I made a mistake.
+- [01:27:59,058 - 01:28:01,058] Hmm?
+- [01:28:01,058 - 01:28:04,058] No, but it's not right.
+- [01:28:04,058 - 01:28:06,058] Wait, um...
+- [01:28:06,058 - 01:28:08,058] You don't know the answer.
+- [01:28:08,058 - 01:28:15,058] H bar c over c squared r to the fourth
+- [01:28:15,058 - 01:28:16,058] is one over r squared.
+- [01:28:16,058 - 01:28:19,058] Right.
+- [01:28:19,058 - 01:28:25,058] So I have h bar g over c...
+- [01:28:25,058 - 01:28:30,058] h bar g over c...
+- [01:28:30,058 - 01:28:33,058] is equal to r.
+- [01:28:33,058 - 01:28:38,058] It's r squared, not r to the fourth.
+- [01:28:38,058 - 01:28:41,058] It was an r...
+- [01:28:41,058 - 01:28:43,058] It was an r to the fourth here, right?
+- [01:28:43,058 - 01:28:44,058] Yes.
+- [01:28:44,058 - 01:28:44,558] And then there was a one
+- [01:28:44,558 - 01:28:45,058] over r squared r to the fourth.
+- [01:28:45,058 - 01:28:48,058] So I got an r squared here.
+- [01:28:48,058 - 01:28:50,058] So I got an r squared here, right?
+- [01:28:50,058 - 01:28:51,058] Right.
+- [01:28:51,058 - 01:28:52,058] Right?
+- [01:28:52,058 - 01:28:55,058] I think it was doing r, right?
+- [01:28:55,058 - 01:28:56,058] Hmm?
+- [01:28:56,058 - 01:28:59,058] What you read out sounded like you were
+- [01:28:59,058 - 01:29:02,058] just doing the square root on both sides.
+- [01:29:02,058 - 01:29:03,058] What am I going to get?
+- [01:29:03,058 - 01:29:06,058] I'm going to get h bar over c...
+- [01:29:06,058 - 01:29:08,058] squared root of g.
+- [01:29:08,058 - 01:29:10,058] h bar over c squared root of g, right?
+- [01:29:10,058 - 01:29:11,058] Yeah.
+- [01:29:11,058 - 01:29:12,058] It's equal to r.
+- [01:29:12,058 - 01:29:13,058] r.
+- [01:29:13,058 - 01:29:16,558] Which is the square root of
+- [01:29:16,558 - 01:29:20,058] h bar squared g over c squared.
+- [01:29:20,058 - 01:29:24,058] c squared.
+- [01:29:24,058 - 01:29:25,058] No, c squared.
+- [01:29:25,058 - 01:29:28,058] Is that dimensionally correct?
+- [01:29:28,058 - 01:29:29,058] Must be.
+- [01:29:29,058 - 01:29:32,058] Well, you took out electric charge and...
+- [01:29:32,058 - 01:29:34,058] No, no, electric charge is dimensionless.
+- [01:29:34,058 - 01:29:37,058] Oh, wait a second, wait a second, wait a second.
+- [01:29:37,058 - 01:29:40,058] Yeah.
+- [01:29:40,058 - 01:29:41,058] Hold on.
+- [01:29:41,058 - 01:29:42,058] I think I lost something.
+- [01:29:42,058 - 01:29:44,058] I think I lost some dimensions.
+- [01:29:44,058 - 01:29:45,058] This is energy.
+- [01:29:45,058 - 01:29:46,058] This is...
+- [01:29:46,058 - 01:29:47,558] All right, let's work, let's
+- [01:29:47,558 - 01:29:49,058] do it in terms of energy.
+- [01:29:49,058 - 01:29:53,058] It's r cubed in terms of energy.
+- [01:29:53,058 - 01:29:56,058] And I want to set that
+- [01:29:56,058 - 01:29:59,058] equal to e squared over r.
+- [01:29:59,058 - 01:30:01,558] But this is not dimensionally
+- [01:30:01,558 - 01:30:04,058] consistent if r is dimensionless.
+- [01:30:04,058 - 01:30:09,058] So I need some h bars and c's in there.
+- [01:30:09,058 - 01:30:10,058] Um...
+- [01:30:10,058 - 01:30:11,058] They're charged.
+- [01:30:11,058 - 01:30:12,058] They're charged.
+- [01:30:12,058 - 01:30:13,058] Hmm?
+- [01:30:13,058 - 01:30:15,058] You need to get rid of the charge, don't you?
+- [01:30:15,058 - 01:30:17,058] Well, I want the charge to be dimensionless because
+- [01:30:17,058 - 01:30:19,058] I happen to know its value in dimensionless units.
+- [01:30:19,058 - 01:30:20,058] It's about a tenth.
+- [01:30:20,058 - 01:30:22,058] It's close to one.
+- [01:30:22,058 - 01:30:25,058] So, uh, so we have to put some correct...
+- [01:30:25,058 - 01:30:29,058] This has units of energy, right?
+- [01:30:29,058 - 01:30:30,058] If I...
+- [01:30:30,058 - 01:30:33,058] So, so we have one over r.
+- [01:30:33,058 - 01:30:35,058] One over r.
+- [01:30:35,058 - 01:30:38,058] And if I put an...
+- [01:30:38,058 - 01:30:40,058] This is not correct yet.
+- [01:30:40,058 - 01:30:41,058] It's not correct.
+- [01:30:41,058 - 01:30:43,058] It's dimensionally consistent.
+- [01:30:43,058 - 01:30:45,058] If I put an h bar
+- [01:30:45,058 - 01:30:47,058] here, then this would be momentum.
+- [01:30:47,058 - 01:30:50,058] If I put a c
+- [01:30:50,058 - 01:30:53,058] there, it is now dimensionally consistent.
+- [01:30:53,058 - 01:30:54,058] All right?
+- [01:30:54,058 - 01:30:57,058] c h bar over r has units of
+- [01:30:57,058 - 01:31:00,058] energy, and now this electric charge here is dimensionless.
+- [01:31:00,058 - 01:31:02,058] And that's the one which is,
+- [01:31:02,058 - 01:31:04,058] um, uh, which is about a tenth.
+- [01:31:04,058 - 01:31:06,058] Close to one.
+- [01:31:06,058 - 01:31:08,058] Okay, so I made a mistake.
+- [01:31:08,058 - 01:31:10,058] I thought I made a mistake.
+- [01:31:10,058 - 01:31:11,058] I should have...
+- [01:31:11,058 - 01:31:14,058] Uh-oh, I erased it.
+- [01:31:14,058 - 01:31:15,058] It's lost.
+- [01:31:15,058 - 01:31:16,058] It's gone.
+- [01:31:16,058 - 01:31:17,058] It's okay.
+- [01:31:17,058 - 01:31:18,058] You're...
+- [01:31:18,058 - 01:31:19,058] You have h.
+- [01:31:19,058 - 01:31:20,058] You have your c square.
+- [01:31:20,058 - 01:31:21,058] Right.
+- [01:31:21,058 - 01:31:22,058] h, h square g.
+- [01:31:22,058 - 01:31:23,058] You have c after...
+- [01:31:23,058 - 01:31:24,058] And then...
+- [01:31:24,058 - 01:31:25,058] All right.
+- [01:31:25,058 - 01:31:26,058] I...
+- [01:31:26,058 - 01:31:27,058] I...
+- [01:31:27,058 - 01:31:28,058] I...
+- [01:31:28,058 - 01:31:29,058] Back to the course.
+- [01:31:29,058 - 01:31:30,058] All right.
+- [01:31:30,058 - 01:31:31,058] Exchange everything.
+- [01:31:31,058 - 01:31:32,058] I...
+- [01:31:32,058 - 01:31:33,058] I...
+- [01:31:33,058 - 01:31:34,058] I...
+- [01:31:34,058 - 01:31:35,058] I...
+- [01:31:35,058 - 01:31:36,058] I...
+- [01:31:36,058 - 01:31:37,058] I...
+- [01:31:37,058 - 01:31:38,058] I...
+- [01:31:38,058 - 01:31:39,058] I...
+- [01:31:39,058 - 01:31:41,058] I think it's right now?
+- [01:31:41,058 - 01:31:42,058] Yes.
+- [01:31:42,058 - 01:31:43,058] Okay, now multiply it by r...
+- [01:31:43,058 - 01:31:44,058] r cubed...
+- [01:31:44,058 - 01:31:46,058] And we get r squared up here.
+- [01:31:46,058 - 01:31:47,058] Now we...
+- [01:31:47,058 - 01:31:48,058] Now we get a c down...
+- [01:31:48,058 - 01:31:49,058] c cubed down here.
+- [01:31:49,058 - 01:31:50,058] And remove an h bar.
+- [01:31:50,058 - 01:31:52,058] And I get r now is equal to the
+- [01:31:52,058 - 01:31:54,058] square root of g h bar over c cubed.
+- [01:31:54,058 - 01:31:55,058] I think I like that better.
+- [01:31:55,058 - 01:31:56,058] Nice.
+- [01:31:56,058 - 01:31:57,058] Thank you.
+- [01:31:57,058 - 01:31:58,058] Alright.
+- [01:31:58,058 - 01:31:59,058] Now I can see the...
+- [01:31:59,058 - 01:32:00,058] Here.
+- [01:32:00,058 - 01:32:01,058] Thank you.
+- [01:32:01,058 - 01:32:02,058] Yep.
+- [01:32:02,058 - 01:32:03,058] So, uh, so, this thing, right here...
+- [01:32:03,058 - 01:32:04,058] Yeah.
+- [01:32:04,058 - 01:32:05,058] Oh, I'm not sure what I mean by that.
+- [01:32:05,058 - 01:32:06,058] Now I'm not sure what I mean by that.
+- [01:32:06,058 - 01:32:07,058] A constant...
+- [01:32:07,058 - 01:32:08,058] What?
+- [01:32:08,058 - 01:32:12,198] All right, what is that length?
+- [01:32:13,818 - 01:32:14,998] That's the Planck length.
+- [01:32:16,218 - 01:32:17,338] That's the Planck length.
+- [01:32:17,338 - 01:32:22,218] So the Planck length is the place where, because of
+- [01:32:22,218 - 01:32:27,098] this growth of energy with squeezing, with diminishing the wavelength,
+- [01:32:27,798 - 01:32:30,878] because of that, the gravitational force
+- [01:32:30,878 - 01:32:33,958] increases and becomes comparable or even bigger.
+- [01:32:33,958 - 01:32:38,118] A few factors of 10 bigger than
+- [01:32:38,118 - 01:32:42,278] the electromagnetic force at the Planck length.
+- [01:32:43,078 - 01:32:51,058] So the electromagnetic force, the weak force, the strong force, and the gravitational force
+- [01:32:51,058 - 01:32:59,038] all grow or all become more or less comparable somewhere near the Planck scale.
+- [01:32:59,877 - 01:33:01,518] This is thought to be deep.
+- [01:33:01,518 - 01:33:03,918] This is thought to be something.
+- [01:33:03,958 - 01:33:04,517] This is thought to be something important.
+- [01:33:05,238 - 01:33:09,008] If it is as important as it sounds, then the
+- [01:33:09,008 - 01:33:12,778] puzzle becomes not why is the Planck length so small,
+- [01:33:13,298 - 01:33:16,358] or why is the Planck mass so large, or why
+- [01:33:16,358 - 01:33:19,418] is that 10 to the 19th such a big number?
+- [01:33:19,877 - 01:33:22,657] It is why that F
+- [01:33:22,657 - 01:33:25,438] is so small in natural units.
+- [01:33:26,698 - 01:33:30,018] How does it happen that that F, which controls
+- [01:33:30,018 - 01:33:33,338] the masses and the energy scales of all weak electromagnetic,
+- [01:33:33,338 - 01:33:33,938] all the orbitals,
+- [01:33:33,958 - 01:33:34,958] all the ordinary interactions,
+- [01:33:34,958 - 01:33:37,958] in particular, controls the mass of the
+- [01:33:37,958 - 01:33:40,958] Z, the W, the quarks, the electron.
+- [01:33:40,958 - 01:33:42,958] Why is it so small?
+- [01:33:42,958 - 01:33:48,458] That's one number, which is some 15 orders of magnitude smaller
+- [01:33:48,458 - 01:33:53,958] than any fundamental length scale, as far as we can tell.
+- [01:33:53,958 - 01:33:55,958] And it's just that one number which is very small.
+- [01:33:55,958 - 01:33:59,458] Once that one number is explained, why it is so small, all
+- [01:33:59,458 - 01:34:02,958] the masses of all the elementary particles that we know about follow.
+- [01:34:02,958 - 01:34:03,398] And that's the Planck length.
+- [01:34:03,398 - 01:34:06,898] All the others, for all we know, could be
+- [01:34:06,898 - 01:34:10,398] up at the Planck mass, at the natural scale.
+- [01:34:10,398 - 01:34:12,398] They have no reason to be light.
+- [01:34:12,398 - 01:34:15,398] Their masses did not have to
+- [01:34:15,398 - 01:34:18,398] be proportional to this symmetry breaking scale.
+- [01:34:18,398 - 01:34:21,398] So that's kind of where we are,
+- [01:34:21,398 - 01:34:24,398] puzzled about why this F is so small.
+- [01:34:24,398 - 01:34:29,398] Now, we'll go more deeply into this next quarter.
+- [01:34:29,398 - 01:34:31,398] It's not only that it's small.
+- [01:34:31,398 - 01:34:32,398] It's also very, very finely tuned.
+- [01:34:32,398 - 01:34:39,398] And, oh, we'll come back to it.
+- [01:34:39,398 - 01:34:41,398] So if you could somehow calculate F,
+- [01:34:41,398 - 01:34:43,398] then you could calculate the other masses.
+- [01:34:43,398 - 01:34:46,898] If you could calculate F, you could, but any
+- [01:34:46,898 - 01:34:50,398] ordinary calculation of F will give a huge number.
+- [01:34:50,398 - 01:34:52,398] Why?
+- [01:34:52,398 - 01:34:55,898] Because it'll come out to be proportional to the
+- [01:34:55,898 - 01:34:59,398] fundamental scale, unless there's some incredible conspiracy that, so.
+- [01:34:59,398 - 01:35:01,398] Yeah, you can calculate it in all sorts of theories.
+- [01:35:01,398 - 01:35:03,398] And it'll come out huge.
+- [01:35:03,398 - 01:35:07,398] I'm trying to visualize the Planck length in terms
+- [01:35:07,398 - 01:35:11,398] of the screening distance when we get so close.
+- [01:35:11,398 - 01:35:12,898] In gravitational physics, it's not
+- [01:35:12,898 - 01:35:14,398] helpful to think about a screen.
+- [01:35:14,398 - 01:35:15,398] Oh, OK.
+- [01:35:15,398 - 01:35:16,398] Yeah, that's right.
+- [01:35:16,398 - 01:35:17,398] That's just .
+- [01:35:17,398 - 01:35:20,398] Yeah, it's just not useful to think about a screen.
+- [01:35:20,398 - 01:35:22,398] If you had higher orders of the feet.
+- [01:35:22,398 - 01:35:24,398] Higher orders of what?
+- [01:35:24,398 - 01:35:26,398] Of the Higgs field, of feet.
+- [01:35:26,398 - 01:35:29,398] And you can say feet of the sixth, et cetera.
+- [01:35:29,398 - 01:35:30,398] P.
+- [01:35:30,398 - 01:35:31,398] What's P?
+- [01:35:31,398 - 01:35:32,398] Phi.
+- [01:35:32,398 - 01:35:33,398] Phi.
+- [01:35:33,398 - 01:35:34,398] Phi, yeah, Phi.
+- [01:35:34,398 - 01:35:35,398] Phi, for fun.
+- [01:35:35,398 - 01:35:37,398] Each of those appear on a
+- [01:35:37,398 - 01:35:39,398] logarithm, is that what you're saying?
+- [01:35:39,398 - 01:35:41,398] Well, there are real reasons why not.
+- [01:35:41,398 - 01:35:44,398] You wouldn't want to put in Phi fifth there, because
+- [01:35:44,398 - 01:35:47,398] that would break the symmetry between plus Phi and minus Phi.
+- [01:35:47,398 - 01:35:49,398] You could put Phi sixth there.
+- [01:35:49,398 - 01:35:52,398] But there are...
+- [01:35:52,398 - 01:35:55,398] Those are annihilation and creation operators, those Phis?
+- [01:35:55,398 - 01:35:56,398] Yeah.
+- [01:35:56,398 - 01:35:59,398] That represents four Higgs particles coming together?
+- [01:35:59,398 - 01:36:00,398] Absolutely.
+- [01:36:00,398 - 01:36:01,398] OK, so that's another...
+- [01:36:01,398 - 01:36:02,398] Right.
+- [01:36:02,398 - 01:36:04,398] Once you know these numbers, you can
+- [01:36:04,398 - 01:36:06,398] predict something about the scattering of Higgs bosons.
+- [01:36:06,398 - 01:36:08,398] Two Higgs bosons go to two Higgs bosons.
+- [01:36:08,398 - 01:36:09,398] Right.
+- [01:36:09,398 - 01:36:11,898] Is the Lagrangian a polynomial
+- [01:36:11,898 - 01:36:14,398] in all the field variables then?
+- [01:36:14,398 - 01:36:17,398] OK, so that's pretty restrictive, isn't it?
+- [01:36:17,398 - 01:36:18,398] Well, it's not...
+- [01:36:18,398 - 01:36:20,398] It's more restrictive than you think.
+- [01:36:20,398 - 01:36:23,398] Beyond Phi to the fourth becomes what is called non-renormalizable,
+- [01:36:23,398 - 01:36:26,398] which is a bad thing to have in a theory.
+- [01:36:26,398 - 01:36:27,398] So...
+- [01:36:27,398 - 01:36:28,398] Yeah.
+- [01:36:28,398 - 01:36:31,398] We can talk about why Phi
+- [01:36:31,398 - 01:36:34,398] fourth is the natural exponent of this.
+- [01:36:34,398 - 01:36:37,398] The Lagrangian is polynomial in all the field
+- [01:36:37,398 - 01:36:40,398] values and there's never any exponent above four.
+- [01:36:40,398 - 01:36:41,398] Right.
+- [01:36:41,398 - 01:36:42,398] Except when there is.
+- [01:36:44,398 - 01:36:53,398] Have you left out any terms like self-interaction or...
+- [01:36:53,398 - 01:36:55,398] Well, self-interactions are what goes into
+- [01:36:55,398 - 01:36:57,398] the running of these coupling constants.
+- [01:36:58,398 - 01:37:03,398] For example, the self-interactions between gluons are what gave
+- [01:37:03,398 - 01:37:08,398] you the opposite effect from what happens in electrodynamics.
+- [01:37:08,398 - 01:37:14,898] Self-interaction between flux lines pulls them together into a sort of cable
+- [01:37:14,898 - 01:37:21,398] and the upshot is that the running electric charge changes quite differently.
+- [01:37:21,398 - 01:37:23,898] And the other thing I thought of
+- [01:37:23,898 - 01:37:26,398] was cross-terms between interact... between kinds of interactions.
+- [01:37:26,398 - 01:37:27,398] Well, there are such things.
+- [01:37:27,398 - 01:37:29,398] They come in in higher orders
+- [01:37:29,398 - 01:37:31,398] and you have to calculate them.
+- [01:37:31,398 - 01:37:33,898] But fortunately for us, all of
+- [01:37:33,898 - 01:37:36,398] the coupling constants are quite small.
+- [01:37:36,398 - 01:37:40,398] So the higher order cross-terms are
+- [01:37:40,398 - 01:37:44,398] smaller than the things that they're determining.
+- [01:37:44,398 - 01:37:46,398] What exactly did you mean when
+- [01:37:46,398 - 01:37:48,398] you said F is finely tuned?
+- [01:37:48,398 - 01:37:50,398] I didn't come to it.
+- [01:37:50,398 - 01:37:52,398] We'll discuss it.
+- [01:37:52,398 - 01:37:53,398] I'll tell you.
+- [01:37:53,398 - 01:37:54,398] Not now.
+- [01:37:54,398 - 01:37:55,398] But I guess that's...
+- [01:37:55,398 - 01:37:56,398] It's important.
+- [01:37:56,398 - 01:38:00,898] Since we've talked about renormalization in groups, can you
+- [01:38:00,898 - 01:38:05,398] say something about what the renormalization in groups is?
+- [01:38:05,398 - 01:38:08,398] Not tonight, but at some point.
+- [01:38:08,398 - 01:38:10,398] Okay.
+- [01:38:15,398 - 01:38:19,398] For more, please visit us at stanford.edu.
