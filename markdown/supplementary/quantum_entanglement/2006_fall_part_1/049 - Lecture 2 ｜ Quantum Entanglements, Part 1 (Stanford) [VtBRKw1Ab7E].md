@@ -1,0 +1,2675 @@
+# Transcript
+
+Source: supplementary/quantum_entanglement/2006_fall_part_1/049 - Lecture 2 ｜ Quantum Entanglements, Part 1 (Stanford) [VtBRKw1Ab7E].mp4
+
+- [00:00:00,000 - 00:00:10,520] This program is brought to you by Stanford University.
+- [00:00:10,520 - 00:00:13,200] Please visit us at stanford.edu.
+- [00:00:15,200 - 00:00:20,000] I want to start talking about quantum mechanics now.
+- [00:00:20,000 - 00:00:21,640] We haven't talked about quantum mechanics.
+- [00:00:21,640 - 00:00:25,060] We've talked about classical physics in a
+- [00:00:25,060 - 00:00:28,480] world where what we can call the state
+- [00:00:28,480 - 00:00:31,640] space, the space of states, is discrete.
+- [00:00:31,640 - 00:00:35,600] We've talked about hopping around from one
+- [00:00:35,600 - 00:00:39,560] state to another and how information is counted
+- [00:00:39,560 - 00:00:44,630] in bits, how with time you can jump
+- [00:00:44,630 - 00:00:49,700] from one state to another, and so forth.
+- [00:00:49,700 - 00:00:52,450] That's all classical physics, or
+- [00:00:52,450 - 00:00:55,200] it's physics based on classical logic.
+- [00:00:55,200 - 00:00:57,720] Classical logic means that the space state...
+- [00:00:58,480 - 00:01:00,499] is a Boolean space, so that
+- [00:01:00,499 - 00:01:02,519] everybody know what a Boolean space is.
+- [00:01:02,519 - 00:01:05,159] If not, all it means is a bunch of
+- [00:01:05,159 - 00:01:07,800] points in some space, and that each point represents
+- [00:01:07,800 - 00:01:10,540] a state, and all of the logic
+- [00:01:10,540 - 00:01:13,280] is classical logic, classical logic that Aristotle would
+- [00:01:13,280 - 00:01:16,360] have understood, that Newton would have understood,
+- [00:01:16,360 - 00:01:19,440] and so forth, whereas quantum mechanics makes
+- [00:01:19,440 - 00:01:22,540] use of an entirely new kind of logic,
+- [00:01:22,540 - 00:01:25,640] which is in a very basic way different.
+- [00:01:25,640 - 00:01:26,640] To illustrate...
+- [00:01:26,640 - 00:01:27,640] I'm sorry.
+- [00:01:27,640 - 00:01:28,440] I'm sorry.
+- [00:01:28,480 - 00:01:30,640] To illustrate it, I'd like to start with
+- [00:01:30,640 - 00:01:32,800] the basic idea, first of all, of a single
+- [00:01:32,800 - 00:01:36,140] quantum bit, a qubit.
+- [00:01:36,140 - 00:01:39,480] We talked about the classical bit,
+- [00:01:39,480 - 00:01:42,820] which is just the heads-tails type distinction.
+- [00:01:42,820 - 00:01:45,840] Here we can...
+- [00:01:45,840 - 00:01:49,680] I have my prop already.
+- [00:01:49,680 - 00:01:52,500] This end is different than this end.
+- [00:01:52,500 - 00:01:54,480] If I point it up, that's one state.
+- [00:01:54,480 - 00:01:58,100] If I point it down, that's another state.
+- [00:01:58,100 - 00:01:58,480] That's the two states.
+- [00:01:58,480 - 00:01:59,880] That's the two-state system, and
+- [00:01:59,880 - 00:02:01,280] that's all there is to it.
+- [00:02:01,280 - 00:02:02,280] Nothing in between.
+- [00:02:02,280 - 00:02:05,140] Assume nothing in between.
+- [00:02:05,140 - 00:02:09,020] That's the basic classical bit, either
+- [00:02:09,020 - 00:02:12,900] up or down, with nothing in between.
+- [00:02:12,900 - 00:02:15,240] And of course, you can have many bits.
+- [00:02:15,240 - 00:02:19,800] Ooh, that's fun.
+- [00:02:19,800 - 00:02:22,400] You can have many bits, two
+- [00:02:22,400 - 00:02:25,000] bits, three bits, four bits, whatever.
+- [00:02:25,000 - 00:02:26,640] And pretty much all of physics...
+- [00:02:26,640 - 00:02:27,640] Anything in physics...
+- [00:02:27,640 - 00:02:31,140] Anything in physics can be represented or
+- [00:02:31,140 - 00:02:34,640] at least approximated by a system of classical
+- [00:02:34,640 - 00:02:37,399] bits, anything in classical physics.
+- [00:02:37,399 - 00:02:39,319] Quantum physics, the concept of
+- [00:02:39,319 - 00:02:41,239] a bit is very, very different.
+- [00:02:41,239 - 00:02:44,200] The concept of a bit of information.
+- [00:02:44,200 - 00:02:48,239] And that's what we want to talk about today.
+- [00:02:48,239 - 00:02:53,640] The basic, simplest example is the spin of an electron.
+- [00:02:53,640 - 00:02:55,540] Now, we don't have to know
+- [00:02:55,540 - 00:02:57,440] very much about what spin means.
+- [00:02:57,440 - 00:03:01,160] Whether it's spinning or not, this is not very important.
+- [00:03:01,160 - 00:03:03,869] What is important is that every
+- [00:03:03,869 - 00:03:06,579] electron has associated with it a vector.
+- [00:03:06,579 - 00:03:08,909] Now we're going to get into big trouble because
+- [00:03:08,909 - 00:03:11,240] there are two things that I'm going to wind
+- [00:03:11,240 - 00:03:13,579] up calling vectors.
+- [00:03:13,579 - 00:03:15,979] One of them is abstract vector spaces, which
+- [00:03:15,979 - 00:03:18,380] we're going to come to in a little while.
+- [00:03:18,380 - 00:03:22,040] And the other is vectors in ordinary space.
+- [00:03:22,040 - 00:03:23,260] A vector...
+- [00:03:23,260 - 00:03:24,900] This I took with me just
+- [00:03:24,900 - 00:03:26,540] to illustrate the idea of a vector.
+- [00:03:26,540 - 00:03:27,320] You know what a vector is.
+- [00:03:27,320 - 00:03:27,360] It's a vector.
+- [00:03:27,360 - 00:03:27,420] It's a vector.
+- [00:03:27,420 - 00:03:27,440] It's a vector.
+- [00:03:27,440 - 00:03:29,120] It's an object in ordinary space.
+- [00:03:29,120 - 00:03:31,960] It's an object with a length and a direction.
+- [00:03:31,960 - 00:03:34,180] And I put a nail in the end here to
+- [00:03:34,180 - 00:03:36,400] indicate the arrow so that you'll know which way it's
+- [00:03:36,400 - 00:03:37,000] pointing.
+- [00:03:37,000 - 00:03:37,980] It's not pointing at me.
+- [00:03:37,980 - 00:03:40,660] It's pointing up in the corner of the room there.
+- [00:03:40,660 - 00:03:43,700] That's your naive elementary physics concept of
+- [00:03:43,700 - 00:03:46,740] a vector, a thing in ordinary space that
+- [00:03:46,740 - 00:03:48,260] has a direction.
+- [00:03:48,260 - 00:03:50,579] Of course, it also has components.
+- [00:03:50,579 - 00:03:53,239] For example, this vector here has
+- [00:03:53,239 - 00:03:55,900] a component in the horizontal direction.
+- [00:03:55,900 - 00:03:57,360] It has a component in the vertical direction.
+- [00:03:57,360 - 00:04:03,480] But altogether, it's pointing in this other direction.
+- [00:04:03,480 - 00:04:06,700] So that's one concept of a vector, a
+- [00:04:06,700 - 00:04:09,920] pointer in space with a length and a direction.
+- [00:04:09,920 - 00:04:13,660] Now there's another thing we're going to
+- [00:04:13,660 - 00:04:17,399] call vectors, which is a more abstract concept.
+- [00:04:17,399 - 00:04:20,300] And it's not necessarily, in general, will
+- [00:04:20,300 - 00:04:23,200] not be referring to things in space.
+- [00:04:23,200 - 00:04:24,640] It's an abstract mathematics.
+- [00:04:24,640 - 00:04:27,280] I just wish there was a different word for it.
+- [00:04:27,280 - 00:04:29,719] We're going to be talking about vector spaces.
+- [00:04:29,719 - 00:04:31,999] I think sometimes when I teach quantum mechanics, I make
+- [00:04:31,999 - 00:04:34,280] up a new word for one or the other of
+- [00:04:34,280 - 00:04:35,280] them.
+- [00:04:35,280 - 00:04:36,859] Call it a schmecter or something.
+- [00:04:36,859 - 00:04:39,320] I don't know.
+- [00:04:39,320 - 00:04:41,559] But it never really works.
+- [00:04:41,559 - 00:04:45,049] So we have to keep in mind that when
+- [00:04:45,049 - 00:04:48,539] I use the word vector, sometimes maybe I should
+- [00:04:48,539 - 00:04:49,539] just make a new word.
+- [00:04:49,539 - 00:04:53,000] Some people say arrow for the old guy.
+- [00:04:53,000 - 00:04:54,580] Yeah.
+- [00:04:54,580 - 00:04:55,400] That's a good idea.
+- [00:04:55,400 - 00:04:56,400] Let's just call this vector.
+- [00:04:56,400 - 00:04:57,119] Let's just call this vector.
+- [00:04:57,280 - 00:04:58,919] Let's just call this an arrow.
+- [00:04:58,919 - 00:05:00,659] You know how long I will last
+- [00:05:00,659 - 00:05:02,400] before I start calling it a vector?
+- [00:05:02,400 - 00:05:04,280] Not very long.
+- [00:05:04,280 - 00:05:07,780] Right.
+- [00:05:07,780 - 00:05:15,900] Now the spin of an electron is an arrow.
+- [00:05:15,900 - 00:05:18,119] I was going to say vector.
+- [00:05:18,119 - 00:05:19,119] I can't help it.
+- [00:05:19,119 - 00:05:20,119] No, I cannot.
+- [00:05:20,119 - 00:05:21,119] I can't do it.
+- [00:05:21,119 - 00:05:22,119] I'm going to call it a vector.
+- [00:05:22,119 - 00:05:23,119] I'm going to call it a vector.
+- [00:05:23,119 - 00:05:24,580] I can't help myself.
+- [00:05:24,580 - 00:05:25,580] Let's call it a spatial vector.
+- [00:05:25,580 - 00:05:26,760] How about a spatial vector?
+- [00:05:26,760 - 00:05:29,580] A spatial vector means one in ordinary space.
+- [00:05:29,580 - 00:05:32,510] So if my fist is the electron over
+- [00:05:32,510 - 00:05:35,440] here, the electron has attached to it a mathematical
+- [00:05:35,440 - 00:05:36,440] vector.
+- [00:05:36,440 - 00:05:37,940] It's not a rod like this,
+- [00:05:37,940 - 00:05:39,440] but it's a sense of directionality.
+- [00:05:39,440 - 00:05:42,480] Really what it is is a direction of twist.
+- [00:05:42,480 - 00:05:47,370] But just think of it as every electron has
+- [00:05:47,370 - 00:05:52,260] attached to it a vector which can point, you
+- [00:05:52,260 - 00:05:54,700] might think, in any direction in space.
+- [00:05:54,700 - 00:05:55,290] In fact, in some sense,
+- [00:05:55,290 - 00:05:55,880] it can point in any direction.
+- [00:05:55,880 - 00:05:55,920] It can point in any direction.
+- [00:05:55,920 - 00:05:56,400] It can point in any direction.
+- [00:05:56,400 - 00:05:56,599] It can point in any direction.
+- [00:05:56,600 - 00:05:57,600] It can point in any direction in space.
+- [00:05:57,600 - 00:06:00,220] And in fact, that vector can
+- [00:06:00,220 - 00:06:02,840] also be thought of as a magnet.
+- [00:06:02,840 - 00:06:05,060] It can be thought of as a bar
+- [00:06:05,060 - 00:06:07,280] magnet with a north pole and a south pole.
+- [00:06:07,280 - 00:06:09,360] So here's the north pole with a nail.
+- [00:06:09,360 - 00:06:11,560] The south pole is over here.
+- [00:06:11,560 - 00:06:15,520] Every electron is a little magnet.
+- [00:06:15,520 - 00:06:18,450] And the amount, the strength of the magnet,
+- [00:06:18,450 - 00:06:21,380] which is measured in some units, which I forget
+- [00:06:21,380 - 00:06:23,810] what they're called, strength of
+- [00:06:23,810 - 00:06:26,240] magnet units, is some particular number.
+- [00:06:26,240 - 00:06:30,490] So that means all electrons, their space
+- [00:06:30,490 - 00:06:34,740] vectors that go with them, it's called the
+- [00:06:34,740 - 00:06:36,460] magnetic moment.
+- [00:06:36,460 - 00:06:39,880] The magnetic moments are all the same length.
+- [00:06:39,880 - 00:06:41,780] They may point in different directions,
+- [00:06:41,780 - 00:06:43,680] but they're all the same length.
+- [00:06:43,680 - 00:06:48,660] And we can simply imagine that they are objects
+- [00:06:48,660 - 00:06:53,640] all of the same length, or a common length,
+- [00:06:53,640 - 00:06:55,880] but different directions.
+- [00:06:56,240 - 00:07:00,480] Now, let's talk about ordinary classical magnets.
+- [00:07:00,480 - 00:07:03,410] And I want to talk about the concept
+- [00:07:03,410 - 00:07:06,340] of preparing a state and detecting a state.
+- [00:07:06,340 - 00:07:09,980] We're still thinking very classically for the moment.
+- [00:07:09,980 - 00:07:12,030] Everything I explained here
+- [00:07:12,030 - 00:07:14,080] was completely with classical logic.
+- [00:07:14,080 - 00:07:17,360] So here's our electron.
+- [00:07:17,360 - 00:07:20,740] And it has attached to it an arrow
+- [00:07:20,740 - 00:07:24,120] with a north pole and a south pole.
+- [00:07:24,120 - 00:07:25,880] And let's say I want to prepare.
+- [00:07:25,880 - 00:07:30,400] Let's say I want to prepare that
+- [00:07:30,400 - 00:07:34,920] electron in a configuration where its magnetic moment,
+- [00:07:34,920 - 00:07:37,800] its little vector, is pointing this north
+- [00:07:37,800 - 00:07:40,680] there that doesn't stand for its direction.
+- [00:07:40,680 - 00:07:43,600] It stands for the north pole of the magnet.
+- [00:07:43,600 - 00:07:45,790] I want to have the north pole, I
+- [00:07:45,790 - 00:07:47,980] want the magnet to be pointed vertically upward.
+- [00:07:47,980 - 00:07:49,340] I want to prepare it that way.
+- [00:07:49,340 - 00:07:50,120] How do I do it?
+- [00:07:50,120 - 00:07:50,620] OK.
+- [00:07:50,620 - 00:07:52,389] What you do is you
+- [00:07:52,389 - 00:07:54,159] simply create a large magnetic moment.
+- [00:07:54,159 - 00:07:54,920] And you're going to do that.
+- [00:07:54,920 - 00:07:55,420] And you're going to do that.
+- [00:07:55,420 - 00:07:55,880] And you're going to do that.
+- [00:07:55,880 - 00:07:56,380] And you're going to do that.
+- [00:07:56,380 - 00:07:59,960] So let's say you create a magnetic field.
+- [00:07:59,960 - 00:08:03,760] For example, you put a, you create a magnet.
+- [00:08:03,760 - 00:08:06,300] This is not a very good pen.
+- [00:08:06,300 - 00:08:08,380] You create a magnet.
+- [00:08:08,380 - 00:08:11,440] You can do it as an electromagnet if you like.
+- [00:08:11,440 - 00:08:15,540] Turn on some current to make an electromagnet with
+- [00:08:15,540 - 00:08:19,640] a north pole over here, a south pole over here.
+- [00:08:19,640 - 00:08:22,530] And the electron is supposed
+- [00:08:22,530 - 00:08:25,420] to be in the magnetic field.
+- [00:08:25,420 - 00:08:27,920] What will happen to that little bar magnet?
+- [00:08:27,920 - 00:08:29,870] Well, what actually will happen to the little
+- [00:08:29,870 - 00:08:31,820] bar magnet, if you know anything about how
+- [00:08:31,820 - 00:08:36,460] bar magnets move in magnetic fields, is it will precess.
+- [00:08:36,460 - 00:08:39,240] It will not just jump up into
+- [00:08:39,240 - 00:08:42,020] a right position, not unless there's some friction.
+- [00:08:42,020 - 00:08:44,740] Instead what it will do is it
+- [00:08:44,740 - 00:08:47,460] will precess like this around the magnetic field.
+- [00:08:47,460 - 00:08:49,530] Everything imagine is in a vacuum, so
+- [00:08:49,530 - 00:08:51,600] there's no friction or anything like that.
+- [00:08:51,600 - 00:08:53,920] The electron will precess around like this.
+- [00:08:53,920 - 00:08:56,780] That's what a little bar magnet would do.
+- [00:08:56,780 - 00:08:58,730] But sooner or later it will
+- [00:08:58,730 - 00:09:00,680] get rid of that precessional energy.
+- [00:09:00,680 - 00:09:04,479] Anybody know how it gets rid of the precessional energy?
+- [00:09:04,479 - 00:09:06,939] It radiates some radiation.
+- [00:09:06,939 - 00:09:11,309] It radiates a little bit of electromagnetic
+- [00:09:11,309 - 00:09:15,680] radiation, or a lot, depending on the circumstances,
+- [00:09:15,680 - 00:09:18,480] on the size of the magnetic field and so forth.
+- [00:09:18,480 - 00:09:21,190] It will radiate away its energy
+- [00:09:21,190 - 00:09:23,900] and come into the best energetic field.
+- [00:09:23,900 - 00:09:26,120] Magnetic configuration, which is pointing straight up,
+- [00:09:26,120 - 00:09:28,340] where the north pole of the magnet
+- [00:09:28,340 - 00:09:31,050] is pointing toward the south pole, where the
+- [00:09:31,050 - 00:09:33,760] north pole of the electron is pointing toward
+- [00:09:33,760 - 00:09:38,640] the south pole of the
+- [00:09:38,640 - 00:09:43,520] magnet, only which part I've drawn.
+- [00:09:43,520 - 00:09:45,520] So that's the preparation.
+- [00:09:45,520 - 00:09:48,590] If we do it with a very, very
+- [00:09:48,590 - 00:09:51,660] big magnetic field, it will radiate that energy quickly,
+- [00:09:51,660 - 00:09:53,819] and very quickly come to equilibrium.
+- [00:09:53,820 - 00:09:55,800] And then it will radiate to equilibrium with
+- [00:09:55,800 - 00:09:57,780] the north pole of the electron pointing vertically
+- [00:09:57,780 - 00:09:58,780] upward.
+- [00:09:58,780 - 00:10:00,720] If you like, if we don't want to get,
+- [00:10:00,720 - 00:10:02,660] I was going to use the word entangled, but embroiled
+- [00:10:02,660 - 00:10:05,250] with the question of where the electron is,
+- [00:10:05,250 - 00:10:07,840] just imagine in your head that I hold the
+- [00:10:07,840 - 00:10:11,120] electron absolutely fixed in position, so that
+- [00:10:11,120 - 00:10:14,400] the only thing that can do anything interesting
+- [00:10:14,400 - 00:10:17,860] is the direction of the magnetic field.
+- [00:10:17,860 - 00:10:18,860] Okay.
+- [00:10:18,860 - 00:10:21,260] So after a small amount
+- [00:10:21,260 - 00:10:23,660] of time, that electron will be...
+- [00:10:23,820 - 00:10:27,660] Pointing in the up direction.
+- [00:10:27,660 - 00:10:31,630] We could, if we liked, we could prepare
+- [00:10:31,630 - 00:10:35,600] the electron in a different configuration by rotating
+- [00:10:35,600 - 00:10:39,350] the magnetic poles to something like
+- [00:10:39,350 - 00:10:43,100] this, south-north, we could prepare the electron
+- [00:10:43,100 - 00:10:49,780] initially so that it's pointing in that direction.
+- [00:10:49,780 - 00:10:50,860] So we start with an electron pointing in some direction.
+- [00:10:50,860 - 00:10:51,360] And then we can start to
+- [00:10:51,360 - 00:10:51,860] prepare the electron in a different direction.
+- [00:10:51,860 - 00:10:52,860] So we start with an electron pointing in some direction.
+- [00:10:52,860 - 00:10:53,700] Okay.
+- [00:10:53,820 - 00:10:59,230] Now we want to measure, we want to do a
+- [00:10:59,230 - 00:11:04,640] measurement to find out which direction, this is a second
+- [00:11:04,640 - 00:11:07,900] kind of experiment, it's the detection.
+- [00:11:07,900 - 00:11:10,070] What first was the preparation, and then we
+- [00:11:10,070 - 00:11:12,240] do some things to the electron, whatever it
+- [00:11:12,240 - 00:11:15,150] is, and next we want to find out,
+- [00:11:15,150 - 00:11:18,060] we want to detect which direction the electron is
+- [00:11:18,060 - 00:11:19,360] pointing in.
+- [00:11:19,360 - 00:11:23,060] Is it pointing in that direction?
+- [00:11:23,060 - 00:11:26,300] Is it pointing in some other direction?
+- [00:11:26,300 - 00:11:28,579] Mainly we could ask what's its
+- [00:11:28,579 - 00:11:30,859] angle relative to the magnetic field.
+- [00:11:30,859 - 00:11:33,249] And to answer that question, we do exactly the
+- [00:11:33,249 - 00:11:35,640] same thing that we did to detect it, to
+- [00:11:35,640 - 00:11:37,339] prepare the electron.
+- [00:11:37,339 - 00:11:40,579] We stick it into the large magnetic field
+- [00:11:40,579 - 00:11:43,819] and wait for it to radiate some radiation.
+- [00:11:43,819 - 00:11:45,040] Alright.
+- [00:11:45,040 - 00:11:48,050] Now if this, if all of physics were
+- [00:11:48,050 - 00:11:51,060] classical, and this were really a perfectly classical
+- [00:11:51,060 - 00:11:52,060] setup.
+- [00:11:52,060 - 00:11:53,060] Well...
+- [00:11:53,060 - 00:11:57,720] If we had a classical compass here
+- [00:11:57,720 - 00:12:02,380] instead of a quantum mechanical electron, then the,
+- [00:12:02,380 - 00:12:04,919] again, the electron would eventually point its
+- [00:12:04,919 - 00:12:07,459] way itself up, but one measure of the
+- [00:12:07,459 - 00:12:12,099] angle would be how much radiation it emitted.
+- [00:12:12,099 - 00:12:15,919] For example, if it was almost perfectly upward
+- [00:12:15,919 - 00:12:19,739] to begin with, if it were almost perfectly
+- [00:12:19,739 - 00:12:20,300] upward, then it only has a little bit of radiation.
+- [00:12:20,300 - 00:12:20,739] It's not going to radiate much.
+- [00:12:20,739 - 00:12:21,180] It's going to radiate a little bit.
+- [00:12:21,180 - 00:12:21,680] It's going to radiate a little bit.
+- [00:12:21,680 - 00:12:22,180] It's going to radiate a little bit.
+- [00:12:22,180 - 00:12:22,680] It's going to radiate a little bit.
+- [00:12:22,680 - 00:12:23,020] It's going to radiate a little bit.
+- [00:12:23,020 - 00:12:25,640] It's going to radiate a little bit of extra energy.
+- [00:12:25,640 - 00:12:27,660] Perfectly upward has the minimum energy.
+- [00:12:27,660 - 00:12:30,520] When the North Pole is pointing toward the South Pole.
+- [00:12:30,520 - 00:12:35,860] That's the minimum energy of that little pointer here.
+- [00:12:35,860 - 00:12:37,060] Rotate it away a little bit.
+- [00:12:37,060 - 00:12:39,700] You give it a little bit of magnetic energy,
+- [00:12:39,700 - 00:12:42,340] and of course, after you've put it into the,
+- [00:12:42,340 - 00:12:45,000] after you've let it come to rest again, it
+- [00:12:45,000 - 00:12:47,660] does so by giving off that little bit of energy.
+- [00:12:47,660 - 00:12:48,560] Alright.
+- [00:12:48,560 - 00:12:51,540] If you were to go to a more extreme situation.
+- [00:12:51,540 - 00:12:52,640] Where you point it the other way.
+- [00:12:52,640 - 00:12:57,310] If you pointed the electron in some horizontally,
+- [00:12:57,310 - 00:13:01,980] then by the time it got vertical, it would
+- [00:13:01,980 - 00:13:04,300] emit even more energy.
+- [00:13:04,300 - 00:13:06,840] Finally, if you pointed it straight down,
+- [00:13:06,840 - 00:13:09,380] it would emit the maximum amount of energy
+- [00:13:09,380 - 00:13:14,720] in the form of radiation.
+- [00:13:14,720 - 00:13:17,540] And so you could measure at least the
+- [00:13:17,540 - 00:13:20,360] angle relative to the magnetic field by measuring
+- [00:13:20,360 - 00:13:22,260] how much radiation comes out.
+- [00:13:22,640 - 00:13:24,100] Alright.
+- [00:13:24,100 - 00:13:27,760] And the answer would be a nice
+- [00:13:27,760 - 00:13:31,420] continuous function of the angle of the electron.
+- [00:13:31,420 - 00:13:33,929] So that when the, so when the
+- [00:13:33,929 - 00:13:36,439] electron was pointing up, no energy comes out.
+- [00:13:36,439 - 00:13:44,400] This is angle horizontally.
+- [00:13:44,400 - 00:13:46,520] Energy emitted if the angle is
+- [00:13:46,520 - 00:13:48,640] zero, that's when it's pointing straight up.
+- [00:13:48,640 - 00:13:50,400] No energy.
+- [00:13:50,400 - 00:13:51,640] If the angle is downward.
+- [00:13:51,640 - 00:13:52,640] Right.
+- [00:13:52,640 - 00:13:54,430] So you would measure the maximum energy, and then
+- [00:13:54,430 - 00:13:56,220] as you turn it over all the ways, back
+- [00:13:56,220 - 00:13:58,980] to zero energy and so forth.
+- [00:13:58,980 - 00:14:02,270] So you would measure then, the same way
+- [00:14:02,270 - 00:14:05,560] that you prepare, you measure the spin, the spin
+- [00:14:05,560 - 00:14:09,580] direction of the electron by letting it emit a photon.
+- [00:14:09,580 - 00:14:12,520] By letting it emit some radiation, excuse me.
+- [00:14:12,520 - 00:14:15,060] And counting up the amount of the radiation.
+- [00:14:15,060 - 00:14:17,130] Now I've told you completely the
+- [00:14:17,130 - 00:14:19,200] wrong story for a real electron.
+- [00:14:19,200 - 00:14:21,040] This is not the way it works.
+- [00:14:21,040 - 00:14:22,000] This is not the way it works for any electron.
+- [00:14:22,000 - 00:14:22,439] Alright.
+- [00:14:22,440 - 00:14:22,940] So you would measure the maximum energy, and
+- [00:14:22,940 - 00:14:23,440] then as you turn it over all the ways,
+- [00:14:23,440 - 00:14:24,440] this is what happens.
+- [00:14:24,440 - 00:14:25,440] This is the way it works for a genuine electron.
+- [00:14:25,440 - 00:14:27,410] Something else happens, and I'll
+- [00:14:27,410 - 00:14:29,380] tell you now what it is.
+- [00:14:29,380 - 00:14:30,380] And it's very weird.
+- [00:14:30,380 - 00:14:34,270] It really does illustrate the
+- [00:14:34,270 - 00:14:38,160] weirdness of the quantum world.
+- [00:14:38,160 - 00:14:41,920] First of all, no matter which way you create
+- [00:14:41,920 - 00:14:45,680] the electron in here, I won't even try to
+- [00:14:45,680 - 00:14:47,820] give a classical picture.
+- [00:14:47,820 - 00:14:49,810] If I try to give a
+- [00:14:49,810 - 00:14:51,800] classical picture, I will prejudice the story.
+- [00:14:51,800 - 00:14:53,800] You do something to the electron,
+- [00:14:53,800 - 00:14:55,800] and you put it over here.
+- [00:14:55,800 - 00:14:58,850] Whatever you do to the electron, one thing
+- [00:14:58,850 - 00:15:01,900] you could do to the electron is initially
+- [00:15:01,900 - 00:15:05,740] prepare it in some funny angle.
+- [00:15:05,740 - 00:15:09,240] But whatever you do to the electron, you put
+- [00:15:09,240 - 00:15:12,740] it over here, you turn on the magnetic field,
+- [00:15:12,740 - 00:15:15,240] and one of two things happens.
+- [00:15:15,240 - 00:15:17,719] Only two things can happen.
+- [00:15:17,719 - 00:15:19,800] One is it emits no photon.
+- [00:15:19,800 - 00:15:20,800] Okay.
+- [00:15:20,800 - 00:15:21,800] Okay.
+- [00:15:21,800 - 00:15:25,439] No electromagnetic radiation.
+- [00:15:25,439 - 00:15:29,079] The other is that it emits one quantum,
+- [00:15:29,079 - 00:15:32,719] one photon of electromagnetic radiation of a very
+- [00:15:32,719 - 00:15:35,040] particular frequency.
+- [00:15:35,040 - 00:15:40,189] It's the particular frequency that corresponds to
+- [00:15:40,189 - 00:15:45,339] the energy of jumping from down to up.
+- [00:15:45,339 - 00:15:48,569] Whatever that energy is, you can emit a
+- [00:15:48,569 - 00:15:51,800] photon of just exactly that energy, and no other
+- [00:15:51,800 - 00:15:52,800] energy.
+- [00:15:52,800 - 00:15:53,800] Okay.
+- [00:15:53,800 - 00:15:57,350] So there seems to be, it's almost as
+- [00:15:57,350 - 00:16:00,900] if the electron had only two possible configurations.
+- [00:16:00,900 - 00:16:03,140] You jumble it up, you don't know what you've done
+- [00:16:03,140 - 00:16:05,380] to it, you stick it in here, and it seems
+- [00:16:05,380 - 00:16:07,740] there's only two things that can happen.
+- [00:16:07,740 - 00:16:10,950] One is that it behaves as if it were
+- [00:16:10,950 - 00:16:14,160] pointing up, in which case it gives off no photon.
+- [00:16:14,160 - 00:16:14,799] The other is that it behaves
+- [00:16:14,799 - 00:16:15,439] as if it were pointing downward.
+- [00:16:15,439 - 00:16:16,439] Okay.
+- [00:16:16,439 - 00:16:17,439] Okay.
+- [00:16:17,439 - 00:16:17,939] So it's almost as if the
+- [00:16:17,939 - 00:16:18,439] electron had only two possible configurations.
+- [00:16:18,439 - 00:16:18,939] The other is that it behaves
+- [00:16:18,939 - 00:16:19,439] as if it were pointing downward.
+- [00:16:19,439 - 00:16:20,439] Okay.
+- [00:16:20,439 - 00:16:21,439] Okay.
+- [00:16:21,800 - 00:16:22,300] So it's almost as if it were pointing
+- [00:16:22,300 - 00:16:22,800] up, in which case it gives off no photon.
+- [00:16:22,800 - 00:16:25,079] And gives off the photon.
+- [00:16:25,079 - 00:16:26,629] And those are the only two
+- [00:16:26,629 - 00:16:28,180] things that happen, that can happen.
+- [00:16:28,180 - 00:16:29,339] Alright.
+- [00:16:29,339 - 00:16:33,560] But depending on, now that seems a little weird.
+- [00:16:33,560 - 00:16:34,620] Why?
+- [00:16:34,620 - 00:16:38,150] Because supposing you prepared the electron by
+- [00:16:38,150 - 00:16:41,680] putting it into a magnetic field that would
+- [00:16:41,680 - 00:16:45,699] have the effect of freezing it into a direction,
+- [00:16:45,699 - 00:16:49,719] let's say at 45 degrees, or even better, at
+- [00:16:49,719 - 00:16:50,800] 90 degrees relative.
+- [00:16:50,800 - 00:16:51,800] In other words, 90 degrees.
+- [00:16:51,800 - 00:16:52,800] In other words, horizontal.
+- [00:16:52,800 - 00:16:57,110] Then we would think to ourselves, well that
+- [00:16:57,110 - 00:17:01,420] electron is now pointing in some other direction.
+- [00:17:01,420 - 00:17:04,430] Now when I stick it into the vertical
+- [00:17:04,430 - 00:17:07,440] field, you would think that the response would be
+- [00:17:07,440 - 00:17:09,829] something different than if it
+- [00:17:09,829 - 00:17:12,220] were just plain up or down.
+- [00:17:12,220 - 00:17:13,220] But no.
+- [00:17:13,220 - 00:17:17,300] The response is always just one of two responses.
+- [00:17:17,300 - 00:17:19,720] Either it does give off a photon or it doesn't.
+- [00:17:19,720 - 00:17:21,359] And always of the same energy.
+- [00:17:21,800 - 00:17:24,300] So it seems that in some sense,
+- [00:17:24,300 - 00:17:26,800] there are only two states for the electron.
+- [00:17:26,800 - 00:17:30,680] Either it's pointing up or it's pointing down.
+- [00:17:30,680 - 00:17:31,820] But wait a minute.
+- [00:17:31,820 - 00:17:34,630] What about if you put the electron into
+- [00:17:34,630 - 00:17:37,440] a magnetic field pointing in yet a different
+- [00:17:37,440 - 00:17:39,139] direction?
+- [00:17:39,139 - 00:17:41,419] Then you're going to find that there are
+- [00:17:41,419 - 00:17:43,700] only two states for the electron, either pointing
+- [00:17:43,700 - 00:17:47,560] this way or pointing that way.
+- [00:17:47,560 - 00:17:48,560] Something's very confusing.
+- [00:17:48,560 - 00:17:50,800] How many states does the electron actually have?
+- [00:17:50,800 - 00:17:53,760] Is it only up or down?
+- [00:17:53,760 - 00:17:56,419] Or can you make it point in some other direction?
+- [00:17:56,419 - 00:17:58,459] And if you do make it point in some
+- [00:17:58,459 - 00:18:00,500] other direction, how come when you stick it into
+- [00:18:00,500 - 00:18:04,380] the up-down detector here, the detector that
+- [00:18:04,380 - 00:18:08,260] detects the direction in the up-down direction,
+- [00:18:08,260 - 00:18:09,879] that you only get two possibilities?
+- [00:18:09,879 - 00:18:12,219] How come there isn't a
+- [00:18:12,219 - 00:18:14,560] continuum of possibilities in between?
+- [00:18:14,560 - 00:18:17,219] That's the puzzle, or that's one of the
+- [00:18:17,219 - 00:18:19,879] puzzles of quantum mechanics, that it behaves as if
+- [00:18:19,879 - 00:18:20,680] there are only two states.
+- [00:18:20,680 - 00:18:22,680] There are only two states, up
+- [00:18:22,680 - 00:18:24,680] or down, when you measure it.
+- [00:18:24,680 - 00:18:28,350] But you can nevertheless prepare that electron
+- [00:18:28,350 - 00:18:32,020] pointing in any direction by using a magnetic
+- [00:18:32,020 - 00:18:34,060] field in the appropriate direction.
+- [00:18:34,060 - 00:18:38,690] Now, the one thing, though, that is true
+- [00:18:38,690 - 00:18:43,320] is if you started with the electron pointing
+- [00:18:43,320 - 00:18:46,800] upward, let's suppose we created the electron
+- [00:18:46,800 - 00:18:50,280] pointing upward by putting it in this very
+- [00:18:50,280 - 00:18:50,680] strong position.
+- [00:18:50,680 - 00:18:51,680] So, let's say we have a strong magnetic field.
+- [00:18:51,680 - 00:18:54,180] We'll shut off the magnetic field for
+- [00:18:54,180 - 00:18:56,680] a while, and then turn it back on.
+- [00:18:56,680 - 00:18:59,200] The answer is, we will get no photon.
+- [00:18:59,200 - 00:19:01,680] The electron is pointing up.
+- [00:19:01,680 - 00:19:05,960] Supposing we first create the electron in
+- [00:19:05,960 - 00:19:10,240] some other direction, pointing along the 45-degree
+- [00:19:10,240 - 00:19:15,860] axis here, and then we do the vertical experiment.
+- [00:19:15,860 - 00:19:18,880] We turn on the vertical magnetic field.
+- [00:19:18,880 - 00:19:19,320] We will either discover the electron pointing
+- [00:19:19,320 - 00:19:19,760] in the opposite direction, or we will either
+- [00:19:19,760 - 00:19:20,280] discover the electron pointing in the opposite direction.
+- [00:19:20,280 - 00:19:22,610] We will either discover that it's up
+- [00:19:22,610 - 00:19:24,940] or down, but with a probability distribution.
+- [00:19:24,940 - 00:19:29,399] It will not be definitely up or definitely down.
+- [00:19:29,399 - 00:19:32,789] We can do this experiment repeatedly, over
+- [00:19:32,789 - 00:19:36,180] and over and over, many, many times identically.
+- [00:19:36,180 - 00:19:38,879] Sometimes we will find a photon emitted.
+- [00:19:38,879 - 00:19:41,800] Sometimes we won't.
+- [00:19:41,800 - 00:19:45,050] The more the electron was initially
+- [00:19:45,050 - 00:19:48,300] pointing vertically upward, the less the probability
+- [00:19:48,300 - 00:19:49,280] is that we will emit that single photon.
+- [00:19:49,280 - 00:19:49,579] So, we'll have to make sure that we're
+- [00:19:49,579 - 00:19:49,879] not going to get any more than one electron.
+- [00:19:49,879 - 00:19:50,069] So, we'll have to make sure that we're
+- [00:19:50,069 - 00:19:50,260] not going to get any more than one electron.
+- [00:19:50,280 - 00:19:53,530] The maximum probability for emitting that photon
+- [00:19:53,530 - 00:19:56,780] will be if we were originally pointing
+- [00:19:56,780 - 00:19:58,220] down.
+- [00:19:58,220 - 00:20:01,230] Somewhere in between, the probability will be
+- [00:20:01,230 - 00:20:04,240] half for a photon to be emitted.
+- [00:20:04,240 - 00:20:08,140] In fact, that's exactly the case if
+- [00:20:08,140 - 00:20:12,040] the original electron were prepared horizontally, by a
+- [00:20:12,040 - 00:20:15,400] horizontal setup, and then put into the vertical
+- [00:20:15,400 - 00:20:18,760] field, there will be a probability of a half
+- [00:20:18,760 - 00:20:19,879] that it emits the photon.
+- [00:20:19,880 - 00:20:23,420] And a half that it doesn't emit the photon.
+- [00:20:23,420 - 00:20:26,440] So, there's something extraordinary going on here.
+- [00:20:26,440 - 00:20:32,840] In some sense, it seems there are only two configurations.
+- [00:20:32,840 - 00:20:34,900] Every time you measure that electron, you
+- [00:20:34,900 - 00:20:36,960] will either find it's up or it's down.
+- [00:20:36,960 - 00:20:37,460] Nothing else.
+- [00:20:37,460 - 00:20:39,260] Nothing in between.
+- [00:20:39,260 - 00:20:42,310] But there are situations where it will
+- [00:20:42,310 - 00:20:45,360] be probabilistically, if you do the same thing
+- [00:20:45,360 - 00:20:47,180] many, many times, you'll
+- [00:20:47,180 - 00:20:49,000] find there's a probability distribution.
+- [00:20:49,000 - 00:20:49,410] And it's that probability distribution
+- [00:20:49,410 - 00:20:49,820] that will determine the probability distribution.
+- [00:20:49,820 - 00:20:52,940] And it's that probability distribution which has
+- [00:20:52,940 - 00:20:56,060] some memory of which way you originally
+- [00:20:56,060 - 00:20:57,540] created the photon.
+- [00:20:57,540 - 00:21:00,220] So a quantum bit is a confusing thing.
+- [00:21:00,220 - 00:21:01,890] It looks like it has only two states, up or
+- [00:21:01,890 - 00:21:03,560] down, but then you can make it point in some
+- [00:21:03,560 - 00:21:07,310] other direction, so that it
+- [00:21:07,310 - 00:21:11,060] looks like there's other states possible.
+- [00:21:11,060 - 00:21:14,520] Again, when you measure it, you find only two possibilities.
+- [00:21:14,520 - 00:21:17,419] It's a confusing entity, a quantum bit.
+- [00:21:17,419 - 00:21:18,419] So, what's the probability?
+- [00:21:18,419 - 00:21:19,419] Well, it's a quantum bit.
+- [00:21:19,420 - 00:21:21,020] It's a quantum bit.
+- [00:21:21,020 - 00:21:22,020] Any questions so far?
+- [00:21:22,020 - 00:21:23,020] Yeah?
+- [00:21:23,020 - 00:21:24,020] This magnet is a large size.
+- [00:21:24,020 - 00:21:25,020] Say it again?
+- [00:21:25,020 - 00:21:29,020] This magnet is a large size.
+- [00:21:29,020 - 00:21:32,020] Not the magnet that's attached to an electron, is it?
+- [00:21:32,020 - 00:21:33,020] Right.
+- [00:21:33,020 - 00:21:37,020] The magnet that creates the field.
+- [00:21:37,020 - 00:21:38,020] Oh, yeah.
+- [00:21:38,020 - 00:21:39,020] The magnet that creates the field.
+- [00:21:39,020 - 00:21:40,020] Is a large object.
+- [00:21:40,020 - 00:21:41,020] Yeah.
+- [00:21:41,020 - 00:21:44,520] If one would try to test and create a
+- [00:21:44,520 - 00:21:48,020] field to interact with, would it be possible to
+- [00:21:49,420 - 00:21:52,020] do it with small objects, like other electrons?
+- [00:21:52,020 - 00:21:53,020] Oh.
+- [00:21:53,020 - 00:21:54,020] Like, what would it be?
+- [00:21:54,020 - 00:21:57,100] That's when we're going to start
+- [00:21:57,100 - 00:22:00,180] to talk about entanglement between electrons.
+- [00:22:00,180 - 00:22:02,300] But let's do it one at a time,
+- [00:22:02,300 - 00:22:04,420] and then we'll come to the two-electron system.
+- [00:22:04,420 - 00:22:06,520] The two-electron system is the one
+- [00:22:06,520 - 00:22:08,620] that's really interesting, because that's where entanglement
+- [00:22:08,620 - 00:22:09,920] starts to happen.
+- [00:22:09,920 - 00:22:14,580] So let's not try that one yet.
+- [00:22:14,580 - 00:22:15,580] Little steps for little feet.
+- [00:22:15,580 - 00:22:16,580] Yeah, question.
+- [00:22:16,580 - 00:22:17,580] Yes.
+- [00:22:17,580 - 00:22:18,580] To get this probability distribution, you have to do this.
+- [00:22:18,580 - 00:22:19,420] Yeah.
+- [00:22:19,420 - 00:22:22,420] Do you have to do the whole experiment
+- [00:22:22,420 - 00:22:25,420] over and over again, prepare it, and then measure?
+- [00:22:25,420 - 00:22:26,420] If you want to get it experimentally.
+- [00:22:26,420 - 00:22:27,420] Or can you prepare it
+- [00:22:27,420 - 00:22:28,420] once, and then turn it back?
+- [00:22:28,420 - 00:22:31,420] Well, there's no way that with one
+- [00:22:31,420 - 00:22:34,420] experiment that you can accumulate a probability distribution.
+- [00:22:34,420 - 00:22:37,420] But can you prepare it once?
+- [00:22:37,420 - 00:22:38,420] Prepare it this way.
+- [00:22:38,420 - 00:22:41,920] Measure, turn the field off, measure
+- [00:22:41,920 - 00:22:45,420] again, turn the field off, measure again.
+- [00:22:45,420 - 00:22:46,420] Or do you have to
+- [00:22:46,420 - 00:22:47,420] prepare it each time in between?
+- [00:22:47,420 - 00:22:47,920] No, you have to prepare
+- [00:22:47,920 - 00:22:48,420] it again each time in between.
+- [00:22:48,420 - 00:22:49,420] Okay.
+- [00:22:49,420 - 00:22:50,420] Right.
+- [00:22:50,420 - 00:22:51,420] Yes, yes, yes.
+- [00:22:51,420 - 00:22:52,420] You can prepare a lot of electrons at once.
+- [00:22:52,420 - 00:22:53,420] But I think the question goes something like this.
+- [00:22:53,420 - 00:22:54,420] Supposing you prepared it this way, and then measured it.
+- [00:22:54,420 - 00:22:54,920] And then measure the same one
+- [00:22:54,920 - 00:22:55,420] again, and then measure the same one.
+- [00:22:55,420 - 00:22:56,420] No.
+- [00:22:56,420 - 00:22:56,920] Once you discovered this was up the first
+- [00:22:56,920 - 00:22:57,420] time, it will be up every time afterwards.
+- [00:22:57,420 - 00:22:57,920] And so what you'll discover in the
+- [00:22:57,920 - 00:22:58,420] second experiment, the third experiment, the fourth
+- [00:22:58,420 - 00:22:59,420] experiment, no photon.
+- [00:22:59,420 - 00:22:59,920] So what you'll discover will be
+- [00:22:59,920 - 00:23:00,420] that it's still up until then.
+- [00:23:00,420 - 00:23:00,920] So you just have to do the same
+- [00:23:00,920 - 00:23:01,420] thing over and over again, and then measure.
+- [00:23:01,420 - 00:23:02,420] Really nice.
+- [00:23:02,420 - 00:23:02,920] You have to do the same
+- [00:23:02,920 - 00:23:03,420] thing about all the other ones.
+- [00:23:03,420 - 00:23:03,920] And then you've just got to measure
+- [00:23:03,920 - 00:23:04,420] this way again and then measure it.
+- [00:23:04,420 - 00:23:05,420] Or maybe measure it once.
+- [00:23:05,420 - 00:23:06,420] No.
+- [00:23:06,420 - 00:23:09,540] Once you discovered this was up the first
+- [00:23:09,540 - 00:23:12,660] time, it will be up every time afterwards
+- [00:23:12,660 - 00:23:15,900] And so what you will discover in the
+- [00:23:15,900 - 00:23:19,140] second experiment, the third experiment, fourth experiment, no photon
+- [00:23:19,140 - 00:23:22,420] So once the experiment has fixed
+- [00:23:22,420 - 00:23:25,700] it to be up, that's it
+- [00:23:25,700 - 00:23:30,340] It has no memory anymore of this
+- [00:23:30,340 - 00:23:32,060] On the other hand, as... yeah?
+- [00:23:32,060 - 00:23:35,099] Preparing means waiting to see what happens and
+- [00:23:35,099 - 00:23:38,139] then when it's... if it emits, you assume that's...
+- [00:23:38,139 - 00:23:39,340] Right, right
+- [00:23:39,340 - 00:23:41,300] So you're just doing that again
+- [00:23:41,300 - 00:23:44,260] That's what I'm calling... that's one way of...
+- [00:23:44,260 - 00:23:46,380] That's one way of preparing an
+- [00:23:46,380 - 00:23:48,500] electron, yeah, it's the usual way, yeah
+- [00:23:48,500 - 00:23:50,319] You're talking about an electron by
+- [00:23:50,319 - 00:23:52,139] itself, not an electron in an atom
+- [00:23:52,139 - 00:23:53,579] I'm talking about an electron by
+- [00:23:53,579 - 00:23:55,020] itself, not in an atom, yeah
+- [00:23:55,020 - 00:23:58,260] Well, I'm talking about an electron perhaps which
+- [00:23:58,260 - 00:24:01,500] is in some potential which nails its position down
+- [00:24:01,500 - 00:24:02,040] So that it wouldn't...
+- [00:24:02,040 - 00:24:04,120] We don't have to worry about it moving
+- [00:24:04,120 - 00:24:06,300] We're just concentrating now purely
+- [00:24:06,300 - 00:24:08,480] on the spin of the electron
+- [00:24:08,480 - 00:24:12,179] So imagine driving a nail through the heart
+- [00:24:12,179 - 00:24:15,879] of the electron and nailing it to the blackboard
+- [00:24:15,879 - 00:24:18,280] It still has the ability for its spin to move
+- [00:24:18,280 - 00:24:23,200] Is the magnetic field of one electron constant?
+- [00:24:23,200 - 00:24:24,920] Is the electron field... say it again
+- [00:24:24,920 - 00:24:28,639] The magnetic field constant for one electron
+- [00:24:28,639 - 00:24:29,680] Is it...
+- [00:24:29,680 - 00:24:31,240] Constant in time
+- [00:24:31,240 - 00:24:31,960] Oh, constant...
+- [00:24:31,960 - 00:24:34,440] Well, okay, so here's what we're imagining
+- [00:24:34,440 - 00:24:36,120] Imagine I want to do an experiment
+- [00:24:36,120 - 00:24:40,200] So I take an electron which is there originally
+- [00:24:40,200 - 00:24:41,840] I don't know how I got
+- [00:24:41,840 - 00:24:43,480] it there, any way I like
+- [00:24:43,480 - 00:24:46,400] Without the magnetic field being there
+- [00:24:46,400 - 00:24:48,560] Now I want to measure that electron
+- [00:24:48,560 - 00:24:51,340] So I very quickly turn
+- [00:24:51,340 - 00:24:54,120] on a very large magnetic field
+- [00:24:54,120 - 00:24:55,240] How do you do that?
+- [00:24:55,240 - 00:24:57,140] If it's an electromagnet, it's
+- [00:24:57,140 - 00:24:59,040] very easy, you flip a switch
+- [00:24:59,040 - 00:25:01,840] And all of a sudden there's a large electric field...
+- [00:25:01,840 - 00:25:04,879] Sorry, magnetic field pointing upward
+- [00:25:04,879 - 00:25:06,879] And if that electric...
+- [00:25:06,879 - 00:25:09,159] If that magnetic field is large enough
+- [00:25:09,159 - 00:25:13,000] It will very quickly cause the electron to radiate
+- [00:25:13,000 - 00:25:15,740] Okay, so I would say, no, we want to be
+- [00:25:15,740 - 00:25:18,480] thinking about turning on the field to do the measurement
+- [00:25:18,480 - 00:25:21,760] Or to do the preparation
+- [00:25:21,760 - 00:25:22,439] Yeah
+- [00:25:22,439 - 00:25:24,759] In the single-electron series, is
+- [00:25:24,759 - 00:25:27,080] it possible to prepare facing south
+- [00:25:27,080 - 00:25:30,720] And then put it into the magnetic field system?
+- [00:25:30,720 - 00:25:31,679] Put it on the switch and then...
+- [00:25:31,680 - 00:25:34,520] The outcome is facing north
+- [00:25:34,520 - 00:25:35,640] That's right
+- [00:25:35,640 - 00:25:37,160] If you start...
+- [00:25:37,160 - 00:25:40,040] If you start turning over the whole device
+- [00:25:40,040 - 00:25:46,200] You start with south in the bottom
+- [00:25:46,200 - 00:25:47,400] Where south belongs
+- [00:25:47,400 - 00:25:50,360] And north in the top where north belongs
+- [00:25:50,360 - 00:25:53,760] Then the electron will point down eventually
+- [00:25:53,760 - 00:25:55,680] Now you remove the magnetic field
+- [00:25:55,680 - 00:25:57,720] Okay, you remove the magnetic field
+- [00:25:57,720 - 00:25:59,400] Or suddenly reverse...
+- [00:25:59,400 - 00:26:01,600] Just turn off the magnet
+- [00:26:01,680 - 00:26:04,200] And reverse the polarity
+- [00:26:04,200 - 00:26:05,700] You can do that by
+- [00:26:05,700 - 00:26:07,200] reversing the current in the electromagnet
+- [00:26:07,200 - 00:26:09,440] So that suddenly the south pole is on
+- [00:26:09,440 - 00:26:11,680] top and the north pole is on the bottom
+- [00:26:11,680 - 00:26:16,320] The electron was down
+- [00:26:16,320 - 00:26:18,420] In a very short amount of time,
+- [00:26:18,420 - 00:26:20,520] it'll flip up and give off a photon
+- [00:26:20,520 - 00:26:22,520] Was that the question?
+- [00:26:22,520 - 00:26:24,640] The probability of that is one?
+- [00:26:24,640 - 00:26:25,960] And then...
+- [00:26:25,960 - 00:26:28,840] The probability of that is one, yeah
+- [00:26:28,840 - 00:26:30,180] The probability that it will
+- [00:26:30,180 - 00:26:31,520] give off... Yes, in that circumstance...
+- [00:26:31,680 - 00:26:33,860] The probability that it will
+- [00:26:33,860 - 00:26:36,040] give off a photon is one
+- [00:26:36,040 - 00:26:39,440] If on the other hand, this weren't perfectly aligned
+- [00:26:39,440 - 00:26:41,800] And you were at some cattywampus angle
+- [00:26:41,800 - 00:26:44,760] Then the probability would be less than one
+- [00:26:44,760 - 00:26:46,540] And it's those probabilities
+- [00:26:46,540 - 00:26:48,320] which constitute the experimental...
+- [00:26:48,320 - 00:26:49,040] Yeah
+- [00:26:49,040 - 00:26:52,040] So it must put energy into the electron in order
+- [00:26:52,040 - 00:26:55,040] for it to keep emitting in all these experiments, right?
+- [00:26:55,040 - 00:26:57,520] So somehow it must get like charged up or...
+- [00:26:57,520 - 00:26:58,960] No, it doesn't get electrically charged
+- [00:26:58,960 - 00:27:00,800] It has electric charge
+- [00:27:00,800 - 00:27:01,240] Turning...
+- [00:27:01,240 - 00:27:03,320] Now, turning on...
+- [00:27:03,320 - 00:27:10,280] Turning on the electric current going through these magnets
+- [00:27:10,280 - 00:27:12,560] You'll have to do a little more...
+- [00:27:12,560 - 00:27:15,580] You'll have to put a little more energy
+- [00:27:15,580 - 00:27:18,600] into the magnet because the electron is there
+- [00:27:18,600 - 00:27:20,720] In other words, originally...
+- [00:27:20,720 - 00:27:23,960] The energy comes from the energy that
+- [00:27:23,960 - 00:27:27,200] you used to turn on the magnetic field
+- [00:27:27,200 - 00:27:28,960] One more
+- [00:27:28,960 - 00:27:31,200] In the case of the electron, actually...
+- [00:27:31,240 - 00:27:32,320] What's the importance of 29?
+- [00:27:32,320 - 00:27:34,380] So, the longer you turn this
+- [00:27:34,380 - 00:27:36,440] magnet, the faster it emits a photon
+- [00:27:36,440 - 00:27:37,780] Are we supposed to assume that's
+- [00:27:37,780 - 00:27:39,120] instantaneous or what happens in that transition?
+- [00:27:39,120 - 00:27:40,600] Well, the point...
+- [00:27:40,600 - 00:27:41,320] Yeah, I mean, that's...
+- [00:27:41,320 - 00:27:43,600] The language is probably wrong
+- [00:27:43,600 - 00:27:45,520] Here's what I can tell you
+- [00:27:45,520 - 00:27:49,280] If you make the magnetic field sufficiently large
+- [00:27:49,280 - 00:27:55,680] The electron will very quickly emit in a photon
+- [00:27:55,680 - 00:27:57,960] Now, the correct answer in general...
+- [00:27:57,960 - 00:27:59,080] Is that the photon will be emitted at
+- [00:27:59,080 - 00:28:00,200] a more or less random time in the planet
+- [00:28:00,200 - 00:28:00,560] One more interesting thing, if you
+- [00:28:00,560 - 00:28:00,920] try and go for it for real...
+- [00:28:01,240 - 00:28:06,240] in the same way that a radioactive atom will decay
+- [00:28:06,240 - 00:28:08,240] It decays with a half-life
+- [00:28:08,240 - 00:28:10,240] It decays with a half-life
+- [00:28:10,240 - 00:28:12,740] So if you put the electron into
+- [00:28:12,740 - 00:28:15,240] the magnetic field in the wrong direction
+- [00:28:15,240 - 00:28:19,240] it will, with a certain half-life, decay
+- [00:28:19,240 - 00:28:21,740] Decay means give off a photon
+- [00:28:21,740 - 00:28:24,240] and write itself in the other direction
+- [00:28:24,240 - 00:28:27,240] But if you make the magnetic field large enough
+- [00:28:27,240 - 00:28:29,240] that half-life will be very short
+- [00:28:29,240 - 00:28:32,240] and so it will very suddenly flip
+- [00:28:32,240 - 00:28:33,240] Okay?
+- [00:28:33,240 - 00:28:34,740] No, but I'm talking not about
+- [00:28:34,740 - 00:28:36,240] when it gives off the electron
+- [00:28:36,240 - 00:28:38,240] but when it gives off the photon
+- [00:28:38,240 - 00:28:40,740] but during the transition,
+- [00:28:40,740 - 00:28:43,240] when it's transitioning from the...
+- [00:28:43,240 - 00:28:46,240] One of the things we've learned in quantum mechanics
+- [00:28:46,240 - 00:28:48,740] is to ask questions only if
+- [00:28:48,740 - 00:28:51,240] we know how to make the measurement
+- [00:28:51,240 - 00:28:55,240] If you can tell me in detail how to measure
+- [00:28:55,240 - 00:28:59,240] when the electron emits its photon
+- [00:28:59,240 - 00:29:01,240] then we can try to answer it
+- [00:29:01,240 - 00:29:04,240] I would say that's one of these questions
+- [00:29:04,240 - 00:29:06,240] that you're not supposed to answer
+- [00:29:06,240 - 00:29:09,240] There's a thing called the energy-time uncertainty principle
+- [00:29:09,240 - 00:29:11,240] And if you know the energy of the electron
+- [00:29:11,240 - 00:29:13,240] you're uncertain about the time
+- [00:29:13,240 - 00:29:16,240] But let's come to uncertainty principles later
+- [00:29:16,240 - 00:29:17,240] It's a good question
+- [00:29:17,240 - 00:29:19,240] But if you have like a million electrons
+- [00:29:19,240 - 00:29:21,240] you can measure the intensity of the light
+- [00:29:21,240 - 00:29:22,740] Yes, you can measure the
+- [00:29:22,740 - 00:29:24,240] intensity of the light given off
+- [00:29:24,240 - 00:29:25,740] but any given photon would
+- [00:29:25,740 - 00:29:27,240] be emitted at a random time
+- [00:29:27,240 - 00:29:29,240] Well, if you know how many electrons there are
+- [00:29:29,240 - 00:29:31,240] and what the intensity of the light was
+- [00:29:31,240 - 00:29:33,240] you can sort of count the books
+- [00:29:33,240 - 00:29:35,240] Yes, but you can't say when any given photon
+- [00:29:35,240 - 00:29:38,240] or when any given electron decayed
+- [00:29:38,240 - 00:29:40,240] Right
+- [00:29:40,240 - 00:29:41,240] Right
+- [00:29:41,240 - 00:29:44,240] Okay, let's...
+- [00:29:44,240 - 00:29:46,240] Well, what you've got to know is that
+- [00:29:46,240 - 00:29:48,240] the more energy you put into the system
+- [00:29:48,240 - 00:29:51,240] the more quickly it will lift the dead
+- [00:29:51,240 - 00:29:53,240] The bigger you make the magnetic field
+- [00:29:53,240 - 00:29:54,740] the more energy you put
+- [00:29:54,740 - 00:29:56,240] in, the more quickly it will...
+- [00:29:56,240 - 00:29:58,240] Right, absolutely
+- [00:29:58,240 - 00:29:59,240] Absolutely
+- [00:29:59,240 - 00:30:02,240] More quickly in the sense of a smaller half-life
+- [00:30:02,240 - 00:30:04,240] Right
+- [00:30:04,240 - 00:30:08,240] Okay, so first of all we're dealing with a theory
+- [00:30:08,240 - 00:30:12,240] that only has prob... that has a probabilistic description
+- [00:30:12,240 - 00:30:17,240] And we will see ultimately
+- [00:30:17,240 - 00:30:19,240] that there is really prob...
+- [00:30:19,240 - 00:30:22,240] There's probably no way around the fact
+- [00:30:22,240 - 00:30:25,240] that the description has to be probabilistic
+- [00:30:25,240 - 00:30:27,240] at least at some level
+- [00:30:28,240 - 00:30:33,240] The mathematics of the state space
+- [00:30:33,240 - 00:30:35,240] of the concept of a state
+- [00:30:35,240 - 00:30:38,240] The state is different in quantum mechanics
+- [00:30:38,240 - 00:30:40,240] It's clearly different
+- [00:30:40,240 - 00:30:43,240] If this were... clearly different
+- [00:30:43,240 - 00:30:45,240] It's a system with only two states
+- [00:30:45,240 - 00:30:46,240] you think
+- [00:30:46,240 - 00:30:48,240] But then again it seems to be
+- [00:30:48,240 - 00:30:50,240] able to be oriented in any direction
+- [00:30:50,240 - 00:30:56,240] The mathematics of quantum mechanics
+- [00:30:56,240 - 00:30:58,240] and the states are...
+- [00:30:58,240 - 00:31:01,240] And in particular the states of a quantum bit
+- [00:31:01,240 - 00:31:04,240] are not the mathematics of a set of two points
+- [00:31:04,240 - 00:31:06,240] They're not the Boolean mathematics
+- [00:31:06,240 - 00:31:08,240] of a set of two points
+- [00:31:08,240 - 00:31:11,240] The thing which describes...
+- [00:31:11,240 - 00:31:14,240] The mathematics describes a quantum state
+- [00:31:14,240 - 00:31:16,240] is a vector space
+- [00:31:16,240 - 00:31:20,240] Now I use vector in a different sense
+- [00:31:20,240 - 00:31:23,240] It is no longer an arrow in ordinary space
+- [00:31:23,240 - 00:31:25,240] It is a mathematical abstract...
+- [00:31:26,240 - 00:31:28,240] vector space
+- [00:31:28,240 - 00:31:30,240] whose character you'll come to understand
+- [00:31:30,240 - 00:31:32,240] if you persist and...
+- [00:31:32,240 - 00:31:34,240] and persist at it a little bit
+- [00:31:34,240 - 00:31:37,240] you will begin to understand
+- [00:31:37,240 - 00:31:39,240] what this vector space is
+- [00:31:39,240 - 00:31:44,240] and how it characterizes the possible configurations
+- [00:31:44,240 - 00:31:46,240] or the possible states of an electron
+- [00:31:46,240 - 00:31:49,240] and how it can be consistent with this fact here
+- [00:31:49,240 - 00:31:51,240] Okay
+- [00:31:51,240 - 00:31:54,240] I'm going to spend a little bit of time now
+- [00:31:54,240 - 00:31:56,240] just doing some abstract mathematics
+- [00:31:56,240 - 00:31:58,240] and then we'll seek to interpret it
+- [00:31:58,240 - 00:32:00,240] and to interpret the state of the electron
+- [00:32:00,240 - 00:32:01,740] I'm going to tell you
+- [00:32:01,740 - 00:32:03,240] what a linear vector space is
+- [00:32:03,240 - 00:32:05,240] what a vector space is
+- [00:32:05,240 - 00:32:08,240] A vector space is a collection of objects
+- [00:32:08,240 - 00:32:12,240] and here are the rules for an abstract vector space
+- [00:32:12,240 - 00:32:15,240] As I said, do not confuse this
+- [00:32:15,240 - 00:32:18,240] with the pointer that...
+- [00:32:18,240 - 00:32:21,240] that is a vector in ordinary space
+- [00:32:21,240 - 00:32:24,240] This is just an abstract, complete, abstract
+- [00:32:24,240 - 00:32:25,240] mathematical abstract
+- [00:32:25,240 - 00:32:28,240] an abstract, completely abstract concept
+- [00:32:31,240 - 00:32:33,240] First of all, a vector is an object
+- [00:32:33,240 - 00:32:35,240] and we'll label it
+- [00:32:35,240 - 00:32:37,240] like that
+- [00:32:38,240 - 00:32:40,240] It's an object with a set of rules
+- [00:32:40,240 - 00:32:42,240] It's a collection of objects
+- [00:32:42,240 - 00:32:44,240] It's a collection of objects
+- [00:32:45,240 - 00:32:46,240] with a rule
+- [00:32:46,240 - 00:32:48,240] First of all, a rule
+- [00:32:48,240 - 00:32:50,240] that any vector
+- [00:32:50,240 - 00:32:52,240] can be multiplied
+- [00:32:52,240 - 00:32:54,240] by a constant
+- [00:32:54,240 - 00:32:56,240] to get a new vector
+- [00:32:58,240 - 00:33:00,240] This gives a new vector
+- [00:33:00,240 - 00:33:01,240] We could call it...
+- [00:33:01,240 - 00:33:03,240] Let's call it A prime
+- [00:33:03,240 - 00:33:06,240] So there's a concept of multiplication by a constant
+- [00:33:06,240 - 00:33:08,240] Now, first of all, let me tell you
+- [00:33:08,240 - 00:33:10,240] that the constants we're going to be talking about
+- [00:33:10,240 - 00:33:12,240] are complex numbers, not real numbers
+- [00:33:12,240 - 00:33:14,240] Anybody here not familiar with
+- [00:33:14,240 - 00:33:16,240] the concept of a complex number?
+- [00:33:16,240 - 00:33:21,240] If so, raise your hand and be humiliated
+- [00:33:24,240 - 00:33:30,240] Okay
+- [00:33:30,240 - 00:33:31,240] All right, now
+- [00:33:31,240 - 00:33:33,240] If you really don't know what a complex number...
+- [00:33:33,240 - 00:33:34,740] It may be that you
+- [00:33:34,740 - 00:33:36,240] know it, but by another word
+- [00:33:36,240 - 00:33:39,240] Now, if you really don't know about complex numbers
+- [00:33:39,240 - 00:33:40,240] look them up
+- [00:33:40,240 - 00:33:42,240] because you're going to need them
+- [00:33:42,240 - 00:33:43,240] All right, a complex...
+- [00:33:43,240 - 00:33:46,240] Remember this number i
+- [00:33:46,240 - 00:33:49,240] i is the square root of minus one
+- [00:33:49,240 - 00:33:52,240] Now, minus one has no number that's...
+- [00:33:52,240 - 00:33:54,240] that's... that's... that's... who's...
+- [00:33:54,240 - 00:33:57,240] There's no number, ordinary number
+- [00:33:57,240 - 00:33:59,240] whose square...
+- [00:33:59,240 - 00:34:02,240] whose square is minus one
+- [00:34:02,240 - 00:34:04,240] So there is no square root of minus one
+- [00:34:04,240 - 00:34:07,240] Any number times itself is always positive, right?
+- [00:34:07,240 - 00:34:09,239] Three times three is nine
+- [00:34:09,239 - 00:34:12,239] Minus three times minus three is also nine
+- [00:34:12,239 - 00:34:15,239] But mathematicians many, many, many years ago
+- [00:34:15,239 - 00:34:20,239] invented the abstract idea of an imaginary number
+- [00:34:20,239 - 00:34:22,239] They called it imaginary
+- [00:34:22,239 - 00:34:24,239] and said
+- [00:34:24,239 - 00:34:27,739] Let it be that i
+- [00:34:27,739 - 00:34:31,239] squared is equal to minus one
+- [00:34:31,239 - 00:34:34,239] Invent a new number
+- [00:34:34,239 - 00:34:37,239] Okay, we know how to use those numbers
+- [00:34:37,239 - 00:34:40,239] I'm not going to...
+- [00:34:40,239 - 00:34:44,239] I'm not going to spend any time at it
+- [00:34:44,239 - 00:34:46,239] Whoever raised their hand
+- [00:34:46,239 - 00:34:47,739] Are they familiar with i equals
+- [00:34:47,739 - 00:34:49,239] the square root of minus one?
+- [00:34:49,239 - 00:34:50,239] Yes
+- [00:34:50,239 - 00:34:51,239] Yes
+- [00:34:51,239 - 00:34:52,239] All right
+- [00:34:52,239 - 00:34:53,239] Now
+- [00:34:53,239 - 00:34:55,239] Let's look at complex numbers
+- [00:34:55,239 - 00:34:58,240] Complex numbers are what happens if you take two...
+- [00:34:58,240 - 00:35:01,240] two real numbers, ordinary numbers
+- [00:35:01,240 - 00:35:02,240] Let's call it
+- [00:35:02,240 - 00:35:04,240] a and b
+- [00:35:04,240 - 00:35:05,240] different a
+- [00:35:05,240 - 00:35:08,240] plus i b
+- [00:35:08,240 - 00:35:09,240] In other words
+- [00:35:09,240 - 00:35:11,240] If you add a real number
+- [00:35:11,240 - 00:35:13,240] to an imaginary number
+- [00:35:13,240 - 00:35:15,240] you get a complex number
+- [00:35:15,240 - 00:35:18,240] That's the whole definition of a complex number
+- [00:35:18,240 - 00:35:21,240] You can multiply complex numbers
+- [00:35:21,240 - 00:35:22,240] So you have to remember
+- [00:35:22,240 - 00:35:24,240] You use the ordinary rules of arithmetic
+- [00:35:24,240 - 00:35:25,740] except you have to remember
+- [00:35:25,740 - 00:35:27,240] that i squared is minus one
+- [00:35:27,240 - 00:35:29,240] So for example
+- [00:35:29,240 - 00:35:30,240] If you're going to...
+- [00:35:30,240 - 00:35:32,240] Well, as an exercise you can square this
+- [00:35:32,240 - 00:35:34,240] What's the square of a plus i b?
+- [00:35:34,240 - 00:35:35,240] I won't tell you
+- [00:35:35,240 - 00:35:37,240] You can work it out
+- [00:35:37,240 - 00:35:38,240] All right
+- [00:35:38,240 - 00:35:40,240] So that's a complex number
+- [00:35:40,240 - 00:35:41,240] Often character
+- [00:35:41,240 - 00:35:42,240] Often written as z
+- [00:35:42,240 - 00:35:43,240] Sometimes z
+- [00:35:43,240 - 00:35:45,240] You can use any letter that you like
+- [00:35:45,240 - 00:35:47,740] But it's a complex number with both
+- [00:35:47,740 - 00:35:50,240] a real part and an imaginary part
+- [00:35:50,240 - 00:35:54,240] Another concept is the complex conjugate
+- [00:35:54,240 - 00:35:55,240] This is very important
+- [00:35:55,240 - 00:35:56,240] You'll need it
+- [00:35:56,240 - 00:35:58,240] All right
+- [00:35:59,240 - 00:36:00,240] And it's very simple
+- [00:36:00,240 - 00:36:03,240] It's a minus i b
+- [00:36:03,240 - 00:36:06,240] is the complex conjugate of z
+- [00:36:06,240 - 00:36:08,240] So if you take a real...
+- [00:36:08,240 - 00:36:10,240] If you take a complex number
+- [00:36:10,240 - 00:36:13,240] and you change the sign of the imaginary part
+- [00:36:13,240 - 00:36:16,240] That's called the complex conjugate of the number
+- [00:36:16,240 - 00:36:18,240] The complex conjugate of the complex conjugate
+- [00:36:18,240 - 00:36:20,240] gives you back the original number
+- [00:36:20,240 - 00:36:24,240] These are important mathematical concepts
+- [00:36:24,240 - 00:36:26,240] They're very elementary
+- [00:36:26,240 - 00:36:28,240] Let me give you an example
+- [00:36:28,240 - 00:36:33,240] Supposing you multiply z star by z
+- [00:36:33,240 - 00:36:34,240] What is that?
+- [00:36:34,240 - 00:36:36,240] That's...
+- [00:36:36,240 - 00:36:38,240] Or z times z star
+- [00:36:38,240 - 00:36:39,240] It doesn't matter
+- [00:36:39,240 - 00:36:40,240] Either way
+- [00:36:40,240 - 00:36:45,240] It's a plus i b times a minus i b
+- [00:36:45,240 - 00:36:47,240] Let's see what we get
+- [00:36:47,240 - 00:36:49,240] Just ordinary multiplication
+- [00:36:49,240 - 00:36:51,240] We open up the brackets here
+- [00:36:51,240 - 00:36:53,240] We get a times a
+- [00:36:53,240 - 00:36:55,240] Which is a squared
+- [00:36:55,240 - 00:36:59,240] We get a times i b with a minus sign
+- [00:36:59,240 - 00:37:01,240] Minus i a b
+- [00:37:01,240 - 00:37:03,240] Plus i a b
+- [00:37:03,240 - 00:37:05,240] From this one times this one
+- [00:37:05,240 - 00:37:08,240] And then
+- [00:37:08,240 - 00:37:11,240] What about i b times i b?
+- [00:37:11,240 - 00:37:13,240] What does i b times i b give?
+- [00:37:13,240 - 00:37:15,240] Minus b squared
+- [00:37:15,240 - 00:37:17,240] But there's a minus sign here already
+- [00:37:17,240 - 00:37:19,240] So it's minus i b times i b
+- [00:37:19,240 - 00:37:21,240] i times i times b
+- [00:37:21,240 - 00:37:23,240] And so that gives plus b squared
+- [00:37:23,240 - 00:37:27,240] All together we get a squared plus b squared
+- [00:37:27,240 - 00:37:29,240] These pieces cancel
+- [00:37:29,240 - 00:37:32,240] So that's an example of using
+- [00:37:32,240 - 00:37:34,240] I mean that's an example
+- [00:37:34,240 - 00:37:35,240] We're not using it for anything
+- [00:37:35,240 - 00:37:37,240] It's just an example of a definition
+- [00:37:37,240 - 00:37:41,240] And then using the definition of complex arithmetic
+- [00:37:41,240 - 00:37:43,240] To calculate what z star z is
+- [00:37:43,240 - 00:37:46,240] Notice that z star z is always real
+- [00:37:46,240 - 00:37:47,240] And it's always positive
+- [00:37:47,240 - 00:37:49,240] It's always real and positive
+- [00:37:49,240 - 00:37:51,240] a squared, a and b are real numbers
+- [00:37:51,240 - 00:37:54,240] a squared and b squared are both positive
+- [00:37:54,240 - 00:37:57,240] So z star z is
+- [00:37:57,240 - 00:38:00,240] a real number and it's positive
+- [00:38:00,240 - 00:38:02,740] It's thought of more or less
+- [00:38:02,740 - 00:38:05,240] as the magnitude of the complex number
+- [00:38:05,240 - 00:38:07,240] Alright, so first of all
+- [00:38:07,240 - 00:38:08,740] For the kind of vector spaces
+- [00:38:08,740 - 00:38:10,240] we're going to be thinking about
+- [00:38:10,240 - 00:38:13,240] They're called complex vector spaces
+- [00:38:13,240 - 00:38:17,240] And one of the rules of one of the operations
+- [00:38:17,240 - 00:38:20,240] That exists in the complex vector space
+- [00:38:20,240 - 00:38:23,240] Is multiplication by a complex number
+- [00:38:23,240 - 00:38:26,240] Now, a complex number includes real numbers incidentally
+- [00:38:26,240 - 00:38:28,240] So you can, c could be two
+- [00:38:28,240 - 00:38:30,240] Or it could be i
+- [00:38:30,240 - 00:38:32,240] Or it could be two plus i
+- [00:38:32,240 - 00:38:34,240] Or anything like that
+- [00:38:34,240 - 00:38:36,240] There's a notion, if there's a vector
+- [00:38:36,240 - 00:38:38,240] You may multiply it by a constant
+- [00:38:38,240 - 00:38:40,240] And you get a new vector
+- [00:38:40,240 - 00:38:42,240] That's the first operation
+- [00:38:42,240 - 00:38:44,240] And there's only one other
+- [00:38:44,240 - 00:38:46,240] operation that's of interest to us
+- [00:38:46,240 - 00:38:48,240] It's adding vectors
+- [00:38:48,240 - 00:38:51,240] There's a rule for adding vectors
+- [00:38:51,240 - 00:38:54,240] Or assume there's a rule for adding vectors
+- [00:38:54,240 - 00:38:58,240] So if I have two vectors, a and b
+- [00:38:58,240 - 00:39:04,240] I can construct a vector called a plus b
+- [00:39:04,240 - 00:39:06,240] And that's some new vector
+- [00:39:06,240 - 00:39:08,240] Which I guess we can call c
+- [00:39:08,240 - 00:39:10,240] But c is a different c than appears here
+- [00:39:10,240 - 00:39:12,240] This c stood for constant
+- [00:39:12,240 - 00:39:15,240] This c just stands for a new vector
+- [00:39:15,240 - 00:39:17,240] Which is a plus b
+- [00:39:17,240 - 00:39:19,240] So every pair of vectors, you can add them
+- [00:39:19,240 - 00:39:21,240] And I'm going to show you
+- [00:39:21,240 - 00:39:25,240] I'm going to show you some less abstract examples
+- [00:39:25,240 - 00:39:28,240] But, first of all
+- [00:39:28,240 - 00:39:31,240] The simplest example of a vector space like this
+- [00:39:31,240 - 00:39:34,240] Is just the complex numbers themselves
+- [00:39:34,240 - 00:39:37,240] The ordinary complex numbers
+- [00:39:37,240 - 00:39:40,240] Allow you to multiply any
+- [00:39:40,240 - 00:39:43,240] complex number by another complex number
+- [00:39:43,240 - 00:39:45,240] And particularly a complex number
+- [00:39:45,240 - 00:39:49,240] A particular, a constant, particular complex number
+- [00:39:49,240 - 00:39:52,240] And it allows you to add complex numbers
+- [00:39:52,240 - 00:39:55,240] So just complex numbers by themselves are a vector space
+- [00:39:55,240 - 00:39:57,240] A complex vector space
+- [00:39:57,240 - 00:39:59,240] That's the simplest example
+- [00:39:59,240 - 00:40:02,240] But, let me show you another example
+- [00:40:02,240 - 00:40:03,740] And the other example is
+- [00:40:03,740 - 00:40:05,240] something we talked about last time
+- [00:40:05,240 - 00:40:07,240] Which we called column vectors
+- [00:40:07,240 - 00:40:14,240] Just represent an abstract quantity
+- [00:40:14,240 - 00:40:16,240] By a set of components
+- [00:40:23,240 - 00:40:27,240] All the components are themselves complex numbers
+- [00:40:28,240 - 00:40:31,240] So, for every vector
+- [00:40:31,240 - 00:40:33,240] Really what that vector is standing for
+- [00:40:33,240 - 00:40:36,240] I write equal signs, I probably shouldn't write equals
+- [00:40:36,240 - 00:40:41,240] Mathematicians would have a stroke if I wrote equals there
+- [00:40:41,240 - 00:40:44,240] But, let's do that
+- [00:40:44,240 - 00:40:45,240] So, the first one is
+- [00:40:45,240 - 00:40:50,240] The first one is represented by a column vector
+- [00:40:50,240 - 00:40:53,240] The column vector has entries
+- [00:40:53,240 - 00:40:55,240] And it's just a table of numbers
+- [00:40:55,240 - 00:40:57,240] But, it's a table of complex numbers
+- [00:40:57,240 - 00:40:58,240] Right?
+- [00:40:58,240 - 00:41:00,240] It's a table of complex numbers
+- [00:41:00,240 - 00:41:03,240] Supposing you want to multiply that column vector here
+- [00:41:03,240 - 00:41:04,240] By a constant
+- [00:41:04,240 - 00:41:06,240] The rule is very simple
+- [00:41:06,240 - 00:41:09,240] Multiply every entry by that constant
+- [00:41:09,240 - 00:41:11,240] So, let's say that column A
+- [00:41:11,240 - 00:41:13,240] Is represented by
+- [00:41:13,240 - 00:41:18,240] C A1, C A2, C A3
+- [00:41:18,240 - 00:41:22,240] We just multiply all the components by the same number
+- [00:41:22,240 - 00:41:25,240] That's multiplication by a constant
+- [00:41:25,240 - 00:41:27,240] How do we add two vectors together?
+- [00:41:27,240 - 00:41:30,240] Let's suppose we have two vectors, A and B
+- [00:41:30,240 - 00:41:33,240] A is represented by the column
+- [00:41:33,240 - 00:41:36,240] Whose entries are A1, A2, A3
+- [00:41:36,240 - 00:41:36,740] A is represented by the column
+- [00:41:36,740 - 00:41:37,240] whose entries are A1, A2, A3
+- [00:41:37,240 - 00:41:37,740] A is represented by the column
+- [00:41:37,740 - 00:41:38,240] whose entries are A1, A2, A3
+- [00:41:38,240 - 00:41:42,240] B is represented by B1, B2, B3
+- [00:41:42,240 - 00:41:43,240] Where these are
+- [00:41:43,240 - 00:41:45,240] A's and B's are just numbers
+- [00:41:45,240 - 00:41:48,240] And when we add them
+- [00:41:48,240 - 00:41:50,240] We just get a third column vector
+- [00:41:50,240 - 00:41:53,240] Whose entries are A1 plus B1
+- [00:41:53,240 - 00:41:55,240] A2 plus B2
+- [00:41:55,240 - 00:41:58,240] A3 plus B3
+- [00:41:58,240 - 00:42:04,240] So, column vectors are an example of a vector space
+- [00:42:04,240 - 00:42:06,240] And they are the basic example
+- [00:42:06,240 - 00:42:08,240] That we will use over and over again
+- [00:42:08,240 - 00:42:12,240] As I said, mathematicians would have a stroke
+- [00:42:12,240 - 00:42:15,240] If I called the columns vectors
+- [00:42:15,240 - 00:42:18,240] They would say the columns represent vectors
+- [00:42:18,240 - 00:42:20,240] And you would call these the components
+- [00:42:20,240 - 00:42:23,240] Or a set of components of a vector
+- [00:42:23,240 - 00:42:29,240] Okay, that's the idea of an abstract vector space
+- [00:42:29,240 - 00:42:31,740] The very strange thing is that
+- [00:42:31,740 - 00:42:34,240] the states of a quantum system
+- [00:42:34,240 - 00:42:36,240] In particular, a quantum bit
+- [00:42:36,240 - 00:42:37,240] Oh, incidentally
+- [00:42:37,240 - 00:42:39,240] You're not restricted to three
+- [00:42:39,240 - 00:42:41,240] This is a particular case
+- [00:42:41,240 - 00:42:44,240] This is a three-dimensional vector space
+- [00:42:44,240 - 00:42:47,240] We could have a two-dimensional vector space
+- [00:42:47,240 - 00:42:48,740] That's actually going to be more
+- [00:42:48,740 - 00:42:50,240] interesting to us for the moment
+- [00:42:50,240 - 00:42:53,240] A two-dimensional vector space just has two entries
+- [00:42:53,240 - 00:42:56,240] That's the next simplest thing, if you like
+- [00:42:56,240 - 00:42:58,240] To the numbers
+- [00:42:58,240 - 00:42:59,740] The next simplest vector space
+- [00:42:59,740 - 00:43:01,240] is a two-dimensional vector space
+- [00:43:01,240 - 00:43:03,240] Then there's a three-dimensional vector space
+- [00:43:03,240 - 00:43:05,240] And a four-dimensional vector space
+- [00:43:05,240 - 00:43:06,240] And so forth
+- [00:43:06,240 - 00:43:09,240] And they all make sense
+- [00:43:09,240 - 00:43:11,240] Okay
+- [00:43:11,240 - 00:43:12,240] That's
+- [00:43:12,240 - 00:43:14,240] And you'll get used to this
+- [00:43:14,240 - 00:43:16,240] Sooner or later you'll start thinking
+- [00:43:16,240 - 00:43:18,240] in terms of abstract vector spaces
+- [00:43:18,240 - 00:43:20,240] If you pursue this subject
+- [00:43:20,240 - 00:43:22,740] There's no way to learn
+- [00:43:22,740 - 00:43:25,240] quantum mechanics honestly and correctly
+- [00:43:25,240 - 00:43:28,240] Without going through this mathematics
+- [00:43:28,240 - 00:43:30,240] So it's absolutely essential
+- [00:43:30,240 - 00:43:32,240] Now
+- [00:43:32,240 - 00:43:36,240] If we were talking about the simplest vector space
+- [00:43:36,240 - 00:43:38,240] Just complex numbers
+- [00:43:38,240 - 00:43:42,240] Then every complex number has its complex conjugate
+- [00:43:42,240 - 00:43:44,240] That means
+- [00:43:44,240 - 00:43:48,240] That there is a second vector space
+- [00:43:48,240 - 00:43:52,240] Which is the space of the complex conjugate numbers
+- [00:43:52,240 - 00:43:56,240] That the concept of complex conjugation
+- [00:43:56,240 - 00:43:58,240] Is an important concept
+- [00:43:58,240 - 00:44:00,240] And it also exists
+- [00:44:00,240 - 00:44:02,240] For other vector spaces
+- [00:44:02,240 - 00:44:05,240] All you have to do basically
+- [00:44:05,240 - 00:44:09,240] Is write the complex conjugate of the entries
+- [00:44:09,240 - 00:44:11,240] But
+- [00:44:11,240 - 00:44:12,240] A rule
+- [00:44:12,240 - 00:44:15,240] When you're writing the complex conjugate of a vector
+- [00:44:15,240 - 00:44:17,240] I want to write the
+- [00:44:17,240 - 00:44:19,240] complex conjugate of the vector A
+- [00:44:19,240 - 00:44:22,240] You draw it the other way
+- [00:44:22,240 - 00:44:23,240] This way
+- [00:44:23,240 - 00:44:26,240] That stands for the complex conjugate
+- [00:44:26,240 - 00:44:29,240] Of the vector A
+- [00:44:29,240 - 00:44:32,240] And furthermore
+- [00:44:32,240 - 00:44:34,240] You represent it
+- [00:44:34,240 - 00:44:36,240] By a row vector
+- [00:44:36,240 - 00:44:38,240] The components of the row vector
+- [00:44:38,240 - 00:44:41,240] Are the complex conjugates
+- [00:44:41,240 - 00:44:43,240] A1 star
+- [00:44:43,240 - 00:44:45,240] A2 star
+- [00:44:45,240 - 00:44:48,240] So whenever you see a row vector
+- [00:44:48,240 - 00:44:49,240] Always think of it
+- [00:44:49,240 - 00:44:52,240] As the complex conjugate
+- [00:44:52,240 - 00:44:54,240] Of the corresponding
+- [00:44:54,240 - 00:44:56,240] Of the corresponding
+- [00:44:56,240 - 00:44:58,240] Column vector
+- [00:44:58,240 - 00:45:00,240] If I tell you there's
+- [00:45:00,240 - 00:45:02,240] A row vector A
+- [00:45:02,240 - 00:45:04,240] Which is in correspondence
+- [00:45:04,240 - 00:45:06,240] With a column vector A
+- [00:45:06,240 - 00:45:10,240] Always remember that there's a complex conjugation operation
+- [00:45:10,240 - 00:45:12,240] Okay
+- [00:45:12,240 - 00:45:16,240] This is the basic idea of a complex vector space
+- [00:45:16,240 - 00:45:19,240] Written out in components
+- [00:45:21,240 - 00:45:23,240] Everybody happy with that?
+- [00:45:23,240 - 00:45:24,240] Anybody?
+- [00:45:24,240 - 00:45:27,240] There's no asterisk at the A
+- [00:45:27,240 - 00:45:28,240] In that
+- [00:45:28,240 - 00:45:29,240] No
+- [00:45:29,240 - 00:45:30,240] Usually
+- [00:45:30,240 - 00:45:31,240] That's right
+- [00:45:31,240 - 00:45:32,240] That's right
+- [00:45:32,240 - 00:45:34,240] The notation does not
+- [00:45:34,240 - 00:45:37,240] Put a star over here
+- [00:45:37,240 - 00:45:39,240] But you remember
+- [00:45:39,240 - 00:45:41,240] That the star is implicit
+- [00:45:41,240 - 00:45:45,240] In turning the symbol backward
+- [00:45:45,240 - 00:45:47,240] Now I'll remind you
+- [00:45:47,240 - 00:45:49,240] This symbol is called a ket
+- [00:45:49,240 - 00:45:51,240] No this symbol is called a bra
+- [00:45:51,240 - 00:45:53,240] This symbol is called a ket
+- [00:45:53,240 - 00:45:54,240] Do I have it right?
+- [00:45:54,240 - 00:45:55,240] I don't
+- [00:45:55,240 - 00:45:56,240] I never
+- [00:45:56,240 - 00:45:57,240] One of them's a bra
+- [00:45:57,240 - 00:45:58,240] One of them's a ket
+- [00:45:58,240 - 00:46:00,240] But it doesn't matter
+- [00:46:00,240 - 00:46:03,240] It's completely symmetric between the two
+- [00:46:03,240 - 00:46:05,240] Remember that the complex conjugate of a complex conjugate
+- [00:46:05,240 - 00:46:07,240] Is the original thing
+- [00:46:07,240 - 00:46:08,240] So that's
+- [00:46:08,240 - 00:46:09,240] That's
+- [00:46:09,240 - 00:46:11,240] The notion of a complex vector space
+- [00:46:11,240 - 00:46:13,240] And finally
+- [00:46:13,240 - 00:46:14,240] Not finally
+- [00:46:14,240 - 00:46:15,240] But
+- [00:46:15,240 - 00:46:17,240] We want to put the pieces together
+- [00:46:17,240 - 00:46:19,240] You can multiply
+- [00:46:19,240 - 00:46:21,240] Two vectors
+- [00:46:21,240 - 00:46:22,240] The product
+- [00:46:22,240 - 00:46:23,240] Is called
+- [00:46:23,240 - 00:46:24,240] We've discussed this before
+- [00:46:24,240 - 00:46:25,240] I realize
+- [00:46:25,240 - 00:46:26,240] I'm not getting senile
+- [00:46:26,240 - 00:46:27,240] I know I've talked about this before
+- [00:46:27,240 - 00:46:28,240] But we need
+- [00:46:28,240 - 00:46:29,240] We really need to do it right now
+- [00:46:29,240 - 00:46:31,240] There's the concept of the inner product
+- [00:46:31,240 - 00:46:32,240] Of the inner product
+- [00:46:32,240 - 00:46:34,240] Of the inner product of two vectors
+- [00:46:34,240 - 00:46:36,240] The inner product of two vectors
+- [00:46:36,240 - 00:46:38,240] The easiest way for me to describe it
+- [00:46:38,240 - 00:46:40,240] Is in terms of components
+- [00:46:40,240 - 00:46:42,240] I don't want to spend a lot of time
+- [00:46:42,240 - 00:46:44,240] Giving you the most abstract definition
+- [00:46:44,240 - 00:46:47,240] Are there any mathematicians in the audience?
+- [00:46:47,240 - 00:46:49,240] Plug your ears
+- [00:46:49,240 - 00:46:50,240] Just plug them up
+- [00:46:50,240 - 00:46:51,240] And
+- [00:46:51,240 - 00:46:54,240] Right
+- [00:46:54,240 - 00:46:56,240] Alright
+- [00:46:56,240 - 00:46:57,240] The
+- [00:46:57,240 - 00:46:59,240] Actually
+- [00:46:59,240 - 00:47:00,240] I'm going to
+- [00:47:00,240 - 00:47:01,240] I'm going to
+- [00:47:01,240 - 00:47:05,240] Actually mathematicians also use components
+- [00:47:05,240 - 00:47:06,240] But
+- [00:47:06,240 - 00:47:08,240] I think
+- [00:47:08,240 - 00:47:10,240] Anyway
+- [00:47:10,240 - 00:47:11,240] The next
+- [00:47:11,240 - 00:47:12,240] Concept
+- [00:47:12,240 - 00:47:15,240] Is the concept of the product of two vectors
+- [00:47:15,240 - 00:47:16,240] But it's always
+- [00:47:16,240 - 00:47:19,240] It's the inner product of the two vectors
+- [00:47:19,240 - 00:47:21,240] And the concept is
+- [00:47:21,240 - 00:47:22,240] Really
+- [00:47:22,240 - 00:47:24,240] The product of a vector
+- [00:47:24,240 - 00:47:27,240] With the complex conjugate of another vector
+- [00:47:27,240 - 00:47:29,240] It's very much
+- [00:47:29,240 - 00:47:30,240] Like
+- [00:47:30,240 - 00:47:32,240] Multiplying a complex number
+- [00:47:32,240 - 00:47:33,240] By the complex
+- [00:47:33,240 - 00:47:34,240] By the complex number
+- [00:47:34,240 - 00:47:36,240] By the complex conjugate of another number
+- [00:47:36,240 - 00:47:37,240] Could be the same number
+- [00:47:37,240 - 00:47:38,240] Could be another number
+- [00:47:38,240 - 00:47:40,240] So I'm going to give you the rule
+- [00:47:40,240 - 00:47:41,240] The rule I'm going to tell you
+- [00:47:41,240 - 00:47:42,240] In terms of components
+- [00:47:42,240 - 00:47:43,240] Okay
+- [00:47:43,240 - 00:47:44,240] Here's the rule
+- [00:47:44,240 - 00:47:45,240] If I want
+- [00:47:45,240 - 00:47:46,240] The inner product
+- [00:47:46,240 - 00:47:48,240] Between the vector b
+- [00:47:48,240 - 00:47:49,240] And the vector a
+- [00:47:49,240 - 00:47:51,240] And it's written like that
+- [00:47:51,240 - 00:47:52,240] It's got a bra ket
+- [00:47:52,240 - 00:47:53,240] That's a bracket
+- [00:47:53,240 - 00:47:54,240] Okay
+- [00:47:54,240 - 00:47:56,240] That's where the term bra ket came from
+- [00:47:56,240 - 00:47:58,240] And it's written like that
+- [00:47:58,240 - 00:47:59,240] It's got a bra ket
+- [00:47:59,240 - 00:48:01,240] That's where the term ket came from
+- [00:48:01,240 - 00:48:02,240] Half a bracket is a bra
+- [00:48:02,240 - 00:48:05,240] The other half of the vector is a ket
+- [00:48:05,240 - 00:48:07,240] And again I forget which one is which
+- [00:48:07,240 - 00:48:08,240] This is the ket right?
+- [00:48:08,240 - 00:48:09,240] Correct
+- [00:48:09,240 - 00:48:10,240] Yeah that's the ket
+- [00:48:10,240 - 00:48:11,240] This one's the bra
+- [00:48:11,240 - 00:48:12,240] Okay good
+- [00:48:12,240 - 00:48:13,240] Good
+- [00:48:13,240 - 00:48:16,240] The rule is
+- [00:48:16,240 - 00:48:18,240] You take the two vectors
+- [00:48:18,240 - 00:48:20,240] The b vector
+- [00:48:20,240 - 00:48:22,240] Is a row vector
+- [00:48:22,240 - 00:48:24,240] And you write b1 star
+- [00:48:24,240 - 00:48:26,240] b2 star
+- [00:48:26,240 - 00:48:28,240] That's the representation of the b vector
+- [00:48:28,240 - 00:48:30,240] And the representation of the a vector
+- [00:48:30,240 - 00:48:31,240] Is a1 a2
+- [00:48:31,240 - 00:48:33,240] You do not star it
+- [00:48:33,240 - 00:48:35,240] And the inner product between them
+- [00:48:35,240 - 00:48:37,240] This product is gotten
+- [00:48:37,240 - 00:48:39,240] By multiplying the first component
+- [00:48:39,240 - 00:48:41,240] Of b
+- [00:48:41,240 - 00:48:44,240] With the first component of a
+- [00:48:44,240 - 00:48:47,240] b1 star a1
+- [00:48:47,240 - 00:48:51,240] Plus b2 star a2
+- [00:48:51,240 - 00:48:53,240] First row with first
+- [00:48:53,240 - 00:48:54,240] Sorry
+- [00:48:54,240 - 00:48:56,240] First entry here
+- [00:48:56,240 - 00:48:57,240] With first entry here
+- [00:48:57,240 - 00:48:58,240] With first entry here
+- [00:48:58,240 - 00:48:59,240] Plus second entry here
+- [00:48:59,240 - 00:49:01,240] Second entry here
+- [00:49:01,240 - 00:49:02,240] Supposing for example
+- [00:49:02,240 - 00:49:05,240] Okay everybody
+- [00:49:05,240 - 00:49:08,240] That's the basic concept of the inner product
+- [00:49:08,240 - 00:49:11,240] It's just like multiplying two numbers together
+- [00:49:11,240 - 00:49:12,240] Except we get a term
+- [00:49:12,240 - 00:49:14,240] For each entry
+- [00:49:14,240 - 00:49:16,240] The one entry and the two entry
+- [00:49:16,240 - 00:49:18,240] For example
+- [00:49:18,240 - 00:49:19,240] If we take the inner
+- [00:49:19,240 - 00:49:20,240] product of a vector with itself
+- [00:49:20,240 - 00:49:23,240] Let's take a with a
+- [00:49:23,240 - 00:49:25,240] The inner product of a vector with itself
+- [00:49:25,240 - 00:49:27,240] Has the form a1 a2
+- [00:49:27,240 - 00:49:29,240] A1 star a1
+- [00:49:29,240 - 00:49:33,240] Plus a2 star a2
+- [00:49:33,240 - 00:49:37,240] Notice one thing about this
+- [00:49:37,240 - 00:49:40,240] A number times its complex conjugate is
+- [00:49:40,240 - 00:49:42,240] First of all positive
+- [00:49:42,240 - 00:49:43,240] And second of all real
+- [00:49:43,240 - 00:49:46,240] Well it couldn't hardly be positive if it weren't real
+- [00:49:46,240 - 00:49:48,240] It's a positive number
+- [00:49:48,240 - 00:49:49,240] So the sum
+- [00:49:49,240 - 00:49:50,240] So the inner product
+- [00:49:50,240 - 00:49:52,240] Of a complex vector with itself
+- [00:49:52,240 - 00:49:55,240] Is always a real positive number
+- [00:49:55,240 - 00:49:57,240] It can be thought of
+- [00:49:57,240 - 00:49:59,240] As a kind of size of a vector
+- [00:49:59,240 - 00:50:02,240] It's actually the square of the size of a vector
+- [00:50:02,240 - 00:50:03,240] If you like
+- [00:50:03,240 - 00:50:04,240] You can think of it as the
+- [00:50:04,240 - 00:50:05,240] square of the size of a vector
+- [00:50:05,240 - 00:50:07,240] The length of the vector
+- [00:50:07,240 - 00:50:11,240] It measures the magnitude of the vector
+- [00:50:11,240 - 00:50:14,240] So this operation
+- [00:50:14,240 - 00:50:17,240] Of inner product
+- [00:50:17,240 - 00:50:20,240] Is absolutely essential as we'll see
+- [00:50:20,240 - 00:50:22,240] To the interpretation
+- [00:50:22,240 - 00:50:29,240] And it's complex vectors like this
+- [00:50:29,240 - 00:50:34,240] Which represent the states of a quantum bit
+- [00:50:34,240 - 00:50:36,240] Let me just digress
+- [00:50:36,240 - 00:50:39,240] Let me stop doing mathematics for a minute
+- [00:50:39,240 - 00:50:42,240] And talk about the quantum bit again
+- [00:50:42,240 - 00:50:45,240] The quantum bit
+- [00:50:45,240 - 00:50:48,240] Could be pointing straight up
+- [00:50:48,240 - 00:50:51,240] We could invent a symbol
+- [00:50:51,240 - 00:50:53,240] For the state
+- [00:50:53,240 - 00:50:55,240] For the configuration
+- [00:50:55,240 - 00:50:57,240] Of the electron pointing up
+- [00:50:57,240 - 00:50:59,240] Let's call it
+- [00:50:59,240 - 00:51:02,240] We could either call it up
+- [00:51:02,240 - 00:51:05,240] Or we could call it
+- [00:51:05,240 - 00:51:07,240] A little vector up
+- [00:51:07,240 - 00:51:09,240] Or we could just call it plus
+- [00:51:09,240 - 00:51:11,240] I think I'll just call it plus
+- [00:51:11,240 - 00:51:13,240] To indicate that it's pointing upward
+- [00:51:13,240 - 00:51:19,240] Or we can have an electron which is pointing down
+- [00:51:19,240 - 00:51:20,240] Now remember
+- [00:51:20,240 - 00:51:22,240] When we go to measure the electron
+- [00:51:22,240 - 00:51:24,240] We either find that it's up or down
+- [00:51:24,240 - 00:51:26,240] And nothing in between
+- [00:51:26,240 - 00:51:28,240] And that we can identify
+- [00:51:28,240 - 00:51:31,240] With the vector minus
+- [00:51:31,240 - 00:51:33,240] Just an abstract notation
+- [00:51:33,240 - 00:51:36,240] This stands for the state of an electron pointing up
+- [00:51:36,240 - 00:51:39,240] This stands for the state of an electron pointing down
+- [00:51:39,240 - 00:51:42,240] Now in classical physics
+- [00:51:42,240 - 00:51:45,240] We would never under any circumstances
+- [00:51:45,240 - 00:51:49,240] Think of adding these two vectors
+- [00:51:49,240 - 00:51:51,240] Or multiplying them by numbers
+- [00:51:51,240 - 00:51:52,240] We would just say
+- [00:51:52,240 - 00:51:53,240] This means electron up
+- [00:51:53,240 - 00:51:55,240] This means electron down
+- [00:51:55,240 - 00:51:57,240] In quantum physics
+- [00:51:57,240 - 00:52:00,240] The general state of an electron
+- [00:52:00,240 - 00:52:03,240] Or an electron spin
+- [00:52:03,240 - 00:52:06,240] Is a vector in a vector space
+- [00:52:06,240 - 00:52:09,240] Which we could write
+- [00:52:09,240 - 00:52:11,240] A plus
+- [00:52:11,240 - 00:52:13,240] Times plus
+- [00:52:13,240 - 00:52:15,240] Plus A minus
+- [00:52:15,240 - 00:52:17,240] Times minus
+- [00:52:17,240 - 00:52:18,240] In other words
+- [00:52:18,240 - 00:52:20,240] It's a two dimensional vector space
+- [00:52:20,240 - 00:52:22,240] We could also represent it
+- [00:52:22,240 - 00:52:24,240] By A plus
+- [00:52:24,240 - 00:52:26,240] A minus
+- [00:52:29,240 - 00:52:32,240] And here's the rule
+- [00:52:32,240 - 00:52:34,240] The rule
+- [00:52:34,240 - 00:52:36,240] So there are some coefficients
+- [00:52:36,240 - 00:52:38,240] That we can add them together with
+- [00:52:38,240 - 00:52:40,240] And here's the meaning of those coefficients
+- [00:52:40,240 - 00:52:43,240] Or at least the partial meaning of those coefficients
+- [00:52:46,240 - 00:52:48,240] A plus star
+- [00:52:48,240 - 00:52:49,240] A plus
+- [00:52:49,240 - 00:52:51,240] Is the probability
+- [00:52:51,240 - 00:52:55,240] That we find the electron up
+- [00:52:55,240 - 00:52:59,240] Remember it's positive
+- [00:52:59,240 - 00:53:00,240] It's positive
+- [00:53:00,240 - 00:53:01,240] And it's real
+- [00:53:01,240 - 00:53:03,240] A star times A
+- [00:53:03,240 - 00:53:05,240] Is positive and it's real
+- [00:53:05,240 - 00:53:07,240] And it's the magnitude
+- [00:53:07,240 - 00:53:08,240] Of the
+- [00:53:08,240 - 00:53:09,240] Or it's the square of the magnitude
+- [00:53:09,240 - 00:53:11,240] Of the coefficient
+- [00:53:11,240 - 00:53:13,240] Of the up configuration
+- [00:53:13,240 - 00:53:16,240] And then there's the down configuration
+- [00:53:16,240 - 00:53:18,240] The probability of finding the electron down
+- [00:53:18,240 - 00:53:20,240] Is A minus
+- [00:53:20,240 - 00:53:22,240] Times A star minus
+- [00:53:22,240 - 00:53:25,240] That's the probability to find it down
+- [00:53:27,240 - 00:53:28,240] That's the interpretation
+- [00:53:28,240 - 00:53:30,240] Or that's part of the interpretation
+- [00:53:30,240 - 00:53:32,240] Just to give you some orientation
+- [00:53:32,240 - 00:53:34,240] Where we're going
+- [00:53:34,240 - 00:53:35,240] The quantum state
+- [00:53:35,240 - 00:53:36,240] Of that electron
+- [00:53:36,240 - 00:53:38,240] Which when we measure it
+- [00:53:38,240 - 00:53:40,240] We find with a probabilistic distribution
+- [00:53:40,240 - 00:53:42,240] Is either up or down
+- [00:53:42,240 - 00:53:44,240] And nothing in between
+- [00:53:44,240 - 00:53:46,240] That's represented by saying the electron
+- [00:53:46,240 - 00:53:47,240] When it's pointing in some function
+- [00:53:47,240 - 00:53:49,240] When it's pointing in some funny angle
+- [00:53:49,240 - 00:53:52,240] Is given by a complex vector
+- [00:53:52,240 - 00:53:54,240] Complex vector space
+- [00:53:54,240 - 00:53:57,240] Which can either be represented abstractly like this
+- [00:53:57,240 - 00:54:00,240] It can be represented concretely
+- [00:54:00,240 - 00:54:02,240] As a column vector
+- [00:54:02,240 - 00:54:04,240] And
+- [00:54:04,240 - 00:54:07,240] The square or magnitude
+- [00:54:07,240 - 00:54:10,240] Of the square of the entries here
+- [00:54:10,240 - 00:54:12,240] Are simply the probabilities
+- [00:54:12,240 - 00:54:14,240] To find it up or down
+- [00:54:14,240 - 00:54:17,240] Now presumably probabilities add to one
+- [00:54:17,240 - 00:54:21,240] So one of the rules about quantum mechanics
+- [00:54:21,240 - 00:54:24,240] Is that the vectors that represent
+- [00:54:24,240 - 00:54:26,240] That we have a vector space of some kind
+- [00:54:26,240 - 00:54:28,240] An abstract vector space
+- [00:54:28,240 - 00:54:31,240] But the vectors which actually represent
+- [00:54:31,240 - 00:54:33,240] The physical states of a system
+- [00:54:33,240 - 00:54:37,240] Are
+- [00:54:37,240 - 00:54:40,240] The word is normalized
+- [00:54:40,240 - 00:54:42,240] Normalized means
+- [00:54:42,240 - 00:54:45,240] That the sum of the probabilities is one
+- [00:54:45,240 - 00:54:47,240] So A plus star
+- [00:54:47,240 - 00:54:49,240] A plus
+- [00:54:49,240 - 00:54:51,240] Plus A minus star
+- [00:54:51,240 - 00:54:53,240] A minus
+- [00:54:53,240 - 00:54:55,240] Should be set equal to one
+- [00:54:55,240 - 00:54:57,240] This is like considering
+- [00:54:57,240 - 00:54:59,240] Only vectors of unit length
+- [00:55:01,240 - 00:55:03,240] That doesn't mean
+- [00:55:03,240 - 00:55:04,240] That in the vector space itself
+- [00:55:04,240 - 00:55:05,240] There aren't other vectors
+- [00:55:05,240 - 00:55:07,240] Of other magnitude
+- [00:55:07,240 - 00:55:08,240] There are
+- [00:55:08,240 - 00:55:11,240] But the physical states of a quantum system
+- [00:55:11,240 - 00:55:13,240] Have to be normalized
+- [00:55:13,240 - 00:55:15,240] Which is the same thing as setting the sums
+- [00:55:15,240 - 00:55:17,240] Of the probabilities to one
+- [00:55:17,240 - 00:55:20,240] So normalized vectors in a vector space
+- [00:55:20,240 - 00:55:23,240] Represent the states of a quantum system
+- [00:55:23,240 - 00:55:26,240] Now that's a very abstract concept
+- [00:55:26,240 - 00:55:30,240] Why do we get driven to such very abstract concepts?
+- [00:55:30,240 - 00:55:32,240] Why can't we visualize this the same way
+- [00:55:32,240 - 00:55:34,240] We visualize classical physics?
+- [00:55:34,240 - 00:55:36,240] Well it's because
+- [00:55:36,240 - 00:55:37,240] We don't have the wiring
+- [00:55:37,240 - 00:55:39,240] And we have to rewire ourselves
+- [00:55:39,240 - 00:55:41,240] And we have to rewire ourselves
+- [00:55:41,240 - 00:55:42,240] To learn to think about
+- [00:55:42,240 - 00:55:43,240] the quantum states of a system
+- [00:55:43,240 - 00:55:45,240] Being an abstract vector space
+- [00:55:45,240 - 00:55:47,240] Once you get this idea
+- [00:55:47,240 - 00:55:49,240] Of an abstract vector space
+- [00:55:49,240 - 00:55:51,240] And how
+- [00:55:51,240 - 00:55:54,240] It fits together with the states of a system
+- [00:55:54,240 - 00:55:55,240] Then you're flying
+- [00:55:55,240 - 00:55:58,240] And you can understand all of quantum mechanics
+- [00:55:58,240 - 00:56:01,240] So any questions about this?
+- [00:56:01,240 - 00:56:02,240] The entries
+- [00:56:02,240 - 00:56:04,240] The coefficients
+- [00:56:06,240 - 00:56:09,240] Or equivalently the components of the vector
+- [00:56:09,240 - 00:56:10,240] When you square them
+- [00:56:10,240 - 00:56:11,240] Or better yet
+- [00:56:11,240 - 00:56:14,240] When you multiply them by their own complex conjugate
+- [00:56:14,240 - 00:56:16,240] Give you the probabilities
+- [00:56:16,240 - 00:56:18,240] For the two possibilities
+- [00:56:18,240 - 00:56:19,240] Yeah
+- [00:56:19,240 - 00:56:22,240] So the expression of a quantum represents a quantum state
+- [00:56:22,240 - 00:56:24,240] That represents a quantum state if a star a
+- [00:56:24,240 - 00:56:26,240] If a
+- [00:56:26,240 - 00:56:28,240] In fact we can say it this way
+- [00:56:28,240 - 00:56:31,240] The inner product of a with itself
+- [00:56:31,240 - 00:56:35,240] That's given by a plus star a plus
+- [00:56:35,240 - 00:56:38,240] Plus a minus star a minus
+- [00:56:38,240 - 00:56:40,240] That should be one
+- [00:56:40,240 - 00:56:43,240] So legitimate quantum states
+- [00:56:43,240 - 00:56:46,240] Should have inner product with themselves
+- [00:56:46,240 - 00:56:47,240] Which is equal to one
+- [00:56:47,240 - 00:56:48,240] And that's just a statement
+- [00:56:48,240 - 00:56:51,240] That's just a statement that the sums of the probabilities
+- [00:56:51,240 - 00:56:54,240] Of all the probabilities should add up to one
+- [00:56:54,240 - 00:56:56,240] Where is your
+- [00:56:56,240 - 00:56:57,740] Or what looks like a column
+- [00:56:57,740 - 00:56:59,240] vector a plus and a minus
+- [00:56:59,240 - 00:57:02,240] Oh plus and minus are now just to indicate
+- [00:57:02,240 - 00:57:04,240] That one of them corresponds to spin up
+- [00:57:04,240 - 00:57:06,240] And the other corresponds to spin down
+- [00:57:06,240 - 00:57:07,240] And we could have called them
+- [00:57:07,240 - 00:57:09,240] We could have given them different names
+- [00:57:09,240 - 00:57:12,240] I could have called them a up and a down
+- [00:57:12,240 - 00:57:13,740] Or I could have called
+- [00:57:13,740 - 00:57:15,240] them a one and a two
+- [00:57:15,240 - 00:57:17,740] So they don't have any relationship with
+- [00:57:17,740 - 00:57:20,240] the ket plus and the ket minus
+- [00:57:20,240 - 00:57:22,240] They do have
+- [00:57:22,240 - 00:57:23,240] They do have
+- [00:57:23,240 - 00:57:24,740] They are the coefficients of the
+- [00:57:24,740 - 00:57:26,240] ket plus and the ket minus
+- [00:57:26,240 - 00:57:30,240] Okay so let's go back a step
+- [00:57:30,240 - 00:57:32,240] What about the ket plus
+- [00:57:32,240 - 00:57:34,240] How should we represent that
+- [00:57:34,240 - 00:57:37,240] Well in a good basis it's one zero
+- [00:57:37,240 - 00:57:39,240] In some basis let's
+- [00:57:39,240 - 00:57:41,240] At the moment I don't want to discuss the
+- [00:57:41,240 - 00:57:44,240] The ambiguity in basis vectors
+- [00:57:44,240 - 00:57:45,240] We'll come to that
+- [00:57:45,240 - 00:57:47,240] But for the moment we have a basis
+- [00:57:47,240 - 00:57:50,240] Don't worry if you don't know what I'm talking about
+- [00:57:50,240 - 00:57:55,240] This vector will be represented by one zero
+- [00:57:55,240 - 00:57:57,240] Okay
+- [00:57:57,240 - 00:58:01,240] It'll be represented by a one in the upper place
+- [00:58:01,240 - 00:58:03,240] And a zero in the lower place
+- [00:58:03,240 - 00:58:06,240] What about the minus ket
+- [00:58:06,240 - 00:58:08,240] The minus ket is represented
+- [00:58:08,240 - 00:58:10,240] by a zero and a one
+- [00:58:11,240 - 00:58:13,240] Okay
+- [00:58:13,240 - 00:58:18,240] This is just some arbitrary correspondence
+- [00:58:18,240 - 00:58:20,240] Okay
+- [00:58:20,240 - 00:58:24,240] Now then if I multiply this by a plus
+- [00:58:24,240 - 00:58:27,240] The numerical constant a plus
+- [00:58:27,240 - 00:58:30,240] Then we have to multiply this by a plus
+- [00:58:30,240 - 00:58:33,240] We don't have to multiply zero by a plus
+- [00:58:33,240 - 00:58:35,240] Because zero times anything is zero
+- [00:58:35,240 - 00:58:38,240] If we multiply this by a minus
+- [00:58:38,240 - 00:58:41,240] Then this becomes a minus here
+- [00:58:41,240 - 00:58:44,240] And if we add them together
+- [00:58:44,240 - 00:58:47,240] A plus times the plus ket
+- [00:58:47,240 - 00:58:50,240] Plus a minus times the minus ket
+- [00:58:50,240 - 00:58:52,240] We just add these together
+- [00:58:52,240 - 00:58:54,240] And we get
+- [00:58:54,240 - 00:58:56,240] Adding them
+- [00:58:56,240 - 00:59:00,240] Gives us a plus a minus
+- [00:59:00,240 - 00:59:01,240] Okay
+- [00:59:01,240 - 00:59:04,240] Does that answer the question that was asked
+- [00:59:04,240 - 00:59:06,240] Yeah
+- [00:59:06,240 - 00:59:07,240] Okay
+- [00:59:07,240 - 00:59:09,240] So yes we certainly
+- [00:59:09,240 - 00:59:11,240] The plus and minus ket
+- [00:59:11,240 - 00:59:14,240] Is represented by a plus and a minus
+- [00:59:14,240 - 00:59:16,240] And the minus ket is represented by a plus
+- [00:59:16,240 - 00:59:18,240] So we can use this notation
+- [00:59:18,240 - 00:59:19,240] Instead of one and two
+- [00:59:19,240 - 00:59:21,240] Here I used one and two
+- [00:59:21,240 - 00:59:22,240] They're just labels
+- [00:59:22,240 - 00:59:23,240] They're just labels
+- [00:59:23,240 - 00:59:24,240] One and two is just a label
+- [00:59:24,240 - 00:59:25,240] To label the two entries
+- [00:59:25,240 - 00:59:27,240] I could have used up and down
+- [00:59:27,240 - 00:59:29,240] I could have used Joe and Pete
+- [00:59:29,240 - 00:59:31,240] I could have used anything I want
+- [00:59:31,240 - 00:59:32,240] To label them
+- [00:59:32,240 - 00:59:35,240] Here I'm using plus and minus
+- [00:59:35,240 - 00:59:37,240] The two possibilities
+- [00:59:37,240 - 00:59:39,240] For the orientation of the electron
+- [00:59:39,240 - 00:59:40,240] Of the electron or of the quantum bit
+- [00:59:40,240 - 00:59:41,240] Plus and minus
+- [00:59:41,240 - 00:59:42,240] Good
+- [00:59:42,240 - 00:59:43,240] Okay
+- [00:59:43,240 - 00:59:48,240] So now we have a
+- [00:59:48,240 - 00:59:51,240] A basic concept of a vector space
+- [00:59:51,240 - 00:59:52,240] The inner product
+- [00:59:52,240 - 00:59:54,240] Question
+- [00:59:54,240 - 00:59:57,240] Does minus ket plus make sense
+- [00:59:57,240 - 00:59:59,240] Say it again louder
+- [00:59:59,240 - 01:00:00,240] Sorry
+- [01:00:00,240 - 01:00:01,240] Say it louder I couldn't hear you
+- [01:00:01,240 - 01:00:06,240] Does minus ket plus make sense
+- [01:00:06,240 - 01:00:07,240] The minus ket
+- [01:00:07,240 - 01:00:09,240] Minus one minus plus
+- [01:00:09,240 - 01:00:10,740] No the minus ket is not
+- [01:00:10,740 - 01:00:12,240] minus one times the plus ket
+- [01:00:12,240 - 01:00:14,240] No no no no no no
+- [01:00:14,240 - 01:00:16,240] I know that it also makes sense
+- [01:00:16,240 - 01:00:18,740] I know that they're different
+- [01:00:18,740 - 01:00:21,240] but does that also make sense
+- [01:00:21,240 - 01:00:23,240] Oh yes
+- [01:00:23,240 - 01:00:26,240] You're asking whether
+- [01:00:26,240 - 01:00:29,240] The
+- [01:00:29,240 - 01:00:31,240] Whether this object makes sense
+- [01:00:31,240 - 01:00:33,240] Yes
+- [01:00:33,240 - 01:00:34,740] You're allowed to take any vector
+- [01:00:34,740 - 01:00:36,240] and multiply it by any complex number
+- [01:00:36,240 - 01:00:38,240] In particular a complex number is minus one
+- [01:00:38,240 - 01:00:42,240] In fact
+- [01:00:42,240 - 01:00:45,240] But your interpretation was that
+- [01:00:45,240 - 01:00:47,240] But this is not
+- [01:00:47,240 - 01:00:52,240] It is not the same as minus
+- [01:00:52,240 - 01:00:53,240] Right
+- [01:00:53,240 - 01:00:55,240] This has a
+- [01:00:55,240 - 01:00:57,240] Okay let's make that clear
+- [01:00:57,240 - 01:00:58,740] The minus here does not mean
+- [01:00:58,740 - 01:01:00,240] that it's minus the plus vector
+- [01:01:00,240 - 01:01:02,240] It's just a label
+- [01:01:02,240 - 01:01:06,240] No more than A2
+- [01:01:06,240 - 01:01:08,240] No more than A3
+- [01:01:08,240 - 01:01:11,240] A2 means twice A1
+- [01:01:11,240 - 01:01:12,240] Yeah
+- [01:01:12,240 - 01:01:15,240] You said the probability of this
+- [01:01:15,240 - 01:01:18,240] thing in a state is the
+- [01:01:18,240 - 01:01:21,240] The A plus dot plus
+- [01:01:21,240 - 01:01:23,240] A plus right
+- [01:01:23,240 - 01:01:28,240] So minus plus ket and ket both represent states
+- [01:01:28,240 - 01:01:33,240] where you have probability one in the plus states
+- [01:01:33,240 - 01:01:35,240] Yes that's correct
+- [01:01:35,240 - 01:01:36,240] That's correct
+- [01:01:36,240 - 01:01:37,240] Oh no
+- [01:01:37,240 - 01:01:40,240] The minus ket is probability one in the minus state
+- [01:01:40,240 - 01:01:41,240] Wait wait
+- [01:01:41,240 - 01:01:47,240] This ket here has probability one in the plus state
+- [01:01:47,240 - 01:01:49,240] So if we don't minus
+- [01:01:49,240 - 01:01:51,240] sign we also have probably one
+- [01:01:51,240 - 01:01:53,240] Which one which one there
+- [01:01:53,240 - 01:01:55,240] If we remove the minus we also have
+- [01:01:55,240 - 01:01:56,240] That's right
+- [01:01:56,240 - 01:01:57,240] That's right
+- [01:01:57,240 - 01:01:58,240] Both of these
+- [01:01:58,240 - 01:02:01,740] That's right absolutely absolutely we're going to come to
+- [01:02:01,740 - 01:02:05,240] that very good very good very good very good
+- [01:02:05,240 - 01:02:07,240] You're pointing out something that I was
+- [01:02:07,240 - 01:02:09,240] about to come to in a moment
+- [01:02:09,240 - 01:02:12,240] I'll tell it to you right now
+- [01:02:12,240 - 01:02:15,240] Well okay if I multiply it
+- [01:02:15,240 - 01:02:18,240] by any complex number of magnitude one
+- [01:02:18,240 - 01:02:22,240] That's right that's correct that's correct
+- [01:02:22,240 - 01:02:25,740] So physically we would not
+- [01:02:25,740 - 01:02:29,240] distinguish this state from this state
+- [01:02:29,240 - 01:02:31,740] I won't write equals because in
+- [01:02:31,740 - 01:02:34,240] the mathematical vector space they're not equal
+- [01:02:34,240 - 01:02:38,240] But they represent the same physics
+- [01:02:38,240 - 01:02:43,240] However however when I add them A plus
+- [01:02:43,240 - 01:02:48,240] and minus A minus are not the same
+- [01:02:48,240 - 01:02:51,240] That is a different state alright that is
+- [01:02:51,240 - 01:02:54,240] a different state with a minus sign here
+- [01:02:54,240 - 01:02:56,240] But we'll come to that we'll come to that it
+- [01:02:56,240 - 01:02:58,240] was something I was going to talk about but not yet
+- [01:02:58,240 - 01:03:00,240] I want you to digest just the idea that the
+- [01:03:00,240 - 01:03:02,240] components of the state of the equation are not the same
+- [01:03:02,240 - 01:03:06,240] Components of these abstract vectors
+- [01:03:06,240 - 01:03:10,240] when squared correspond to probabilities
+- [01:03:10,240 - 01:03:14,240] Does it make physical sense to change the minus
+- [01:03:14,240 - 01:03:18,240] ket to a bra and multiply those two together
+- [01:03:18,240 - 01:03:19,240] Yes
+- [01:03:19,240 - 01:03:24,740] So let's let's tell me I think you're asking
+- [01:03:24,740 - 01:03:30,240] whether it makes sense to take the ket vector plus
+- [01:03:30,240 - 01:03:32,240] And consider
+- [01:03:32,240 - 01:03:34,740] What I'll call its conjugate
+- [01:03:34,740 - 01:03:37,240] which is the bra vector plus
+- [01:03:37,240 - 01:03:42,240] In this case the there's no change because the
+- [01:03:42,240 - 01:03:45,240] Well except that you were writing as a row
+- [01:03:45,240 - 01:03:47,240] Right
+- [01:03:48,240 - 01:03:50,240] What about the inner product
+- [01:03:50,240 - 01:03:51,240] The components don't change
+- [01:03:51,240 - 01:03:53,240] The components don't change
+- [01:03:53,240 - 01:03:56,240] That's right in this case in this case right
+- [01:03:56,240 - 01:03:58,240] Because one is a real number
+- [01:03:58,240 - 01:04:00,240] we don't have the complex conjugated
+- [01:04:00,240 - 01:04:01,240] Okay so here's a
+- [01:04:01,240 - 01:04:03,240] Little exercise
+- [01:04:03,240 - 01:04:07,240] What's the inner product of the plus vector with itself
+- [01:04:07,240 - 01:04:08,240] One
+- [01:04:08,240 - 01:04:17,240] One because it's just multiplying one zero times one zero
+- [01:04:17,240 - 01:04:21,240] One times one is one
+- [01:04:21,240 - 01:04:23,240] So this is one
+- [01:04:23,240 - 01:04:29,240] What about minus minus
+- [01:04:29,240 - 01:04:31,240] Also equal to one
+- [01:04:31,240 - 01:04:33,240] What about
+- [01:04:33,240 - 01:04:36,240] The inner product of
+- [01:04:36,240 - 01:04:45,240] Plus with minus
+- [01:04:45,240 - 01:04:47,240] Let's just check that for those who don't
+- [01:04:47,240 - 01:04:49,240] see it so quickly let's just check it
+- [01:04:49,240 - 01:04:52,240] The plus
+- [01:04:52,240 - 01:04:54,240] Bra
+- [01:04:54,240 - 01:04:57,240] Is one zero
+- [01:04:57,240 - 01:04:59,240] The minus ket
+- [01:04:59,240 - 01:05:01,240] Is zero one
+- [01:05:01,240 - 01:05:04,740] All right so when we multiply them together we get
+- [01:05:04,740 - 01:05:08,240] one times zero plus zero times one which is altogether zero
+- [01:05:08,240 - 01:05:09,240] All right
+- [01:05:09,240 - 01:05:12,240] What about minus plus
+- [01:05:12,240 - 01:05:15,240] Also zero
+- [01:05:15,240 - 01:05:17,740] What's the word for two
+- [01:05:17,740 - 01:05:20,240] vectors whose inner product is zero
+- [01:05:20,240 - 01:05:22,240] Orthogonal
+- [01:05:22,240 - 01:05:24,240] Orthogonal
+- [01:05:24,240 - 01:05:26,240] They're
+- [01:05:26,240 - 01:05:28,240] Called orthogonal vectors
+- [01:05:28,240 - 01:05:31,240] So the two vectors representing the two distinct
+- [01:05:31,240 - 01:05:34,240] states of the electron one up and one down
+- [01:05:34,240 - 01:05:37,240] Are two orthogonal vectors
+- [01:05:37,240 - 01:05:40,240] In a
+- [01:05:40,240 - 01:05:43,240] Linear vector space of states
+- [01:05:43,240 - 01:05:45,240] Linear vector space of states
+- [01:05:45,240 - 01:05:47,240] Okay that's the basic setup
+- [01:05:47,240 - 01:05:49,240] Uh
+- [01:05:49,240 - 01:05:52,240] And the coefficients that appear there
+- [01:05:52,240 - 01:05:54,240] Their squared magnitudes
+- [01:05:54,240 - 01:05:56,240] Are the probabilities of the constant homeostasis
+- [01:05:56,240 - 01:05:59,740] for the two configurations, the
+- [01:05:59,740 - 01:06:03,240] probability for up and for down.
+- [01:06:03,240 - 01:06:09,359] Now, as you can see, there are more
+- [01:06:09,359 - 01:06:15,479] possible physical states than just up and down.
+- [01:06:15,479 - 01:06:18,419] There are all the linear combinations.
+- [01:06:18,419 - 01:06:20,829] It's the linear combinations of them
+- [01:06:20,829 - 01:06:23,240] that correspond to the electron point
+- [01:06:23,240 - 01:06:26,680] having been prepared in different directions.
+- [01:06:26,680 - 01:06:29,749] So in other words, an arbitrary combination like this,
+- [01:06:29,749 - 01:06:32,819] with an A plus and an A minus there,
+- [01:06:32,819 - 01:06:36,059] when this is not 1 and 0 or 0
+- [01:06:36,059 - 01:06:39,299] and 1, correspond when you consider all the possible complex
+- [01:06:39,299 - 01:06:42,009] numbers to the different directions that
+- [01:06:42,009 - 01:06:44,720] you might have prepared the electron.
+- [01:06:44,720 - 01:06:48,980] But still, all there is is up and
+- [01:06:48,980 - 01:06:53,240] down and the probabilities for up and down.
+- [01:06:53,240 - 01:06:55,440] So a state, for example,
+- [01:06:55,440 - 01:06:57,640] let me give you an example.
+- [01:06:57,640 - 01:07:08,060] A vector, let's write 1 in both slots.
+- [01:07:08,060 - 01:07:08,839] That's not allowed.
+- [01:07:08,839 - 01:07:13,479] Why isn't that allowed?
+- [01:07:13,479 - 01:07:16,020] Probability doesn't add to 1.
+- [01:07:16,020 - 01:07:18,419] So the probability would add to 2 here.
+- [01:07:18,419 - 01:07:20,040] 1 squared plus 1 squared is 2.
+- [01:07:20,040 - 01:07:21,819] We have to divide it by square root of 2.
+- [01:07:23,240 - 01:07:26,740] Now each of the probabilities is a
+- [01:07:26,740 - 01:07:30,240] half, and they add up to 1.
+- [01:07:30,240 - 01:07:33,240] What about parentheses or something?
+- [01:07:33,240 - 01:07:34,240] Parentheses where?
+- [01:07:34,240 - 01:07:37,740] What doesn't make sense inside of a cat.
+- [01:07:37,740 - 01:07:38,740] You're right.
+- [01:07:38,740 - 01:07:51,479] I meant to write the column.
+- [01:07:51,479 - 01:07:52,640] That's a state.
+- [01:07:52,640 - 01:07:56,140] So you have an equal probability, namely
+- [01:07:56,140 - 01:07:59,640] probability a half to find the electron up,
+- [01:07:59,640 - 01:08:01,640] and now this one has probability
+- [01:08:01,640 - 01:08:03,640] a half to find the electron down.
+- [01:08:03,640 - 01:08:07,640] There are more states than just up and down.
+- [01:08:07,640 - 01:08:11,140] And in fact, this one corresponds to what
+- [01:08:11,140 - 01:08:14,640] you would create if you created the electron
+- [01:08:14,640 - 01:08:16,639] pointing in the horizontal direction.
+- [01:08:16,639 - 01:08:18,639] If with a magnetic field in
+- [01:08:18,639 - 01:08:20,639] the horizontal direction, you froze the electron.
+- [01:08:20,639 - 01:08:21,639] Let's take a break.
+- [01:08:21,640 - 01:08:23,640] If you put the electron into place
+- [01:08:23,640 - 01:08:25,640] with a magnetic field in the horizontal direction,
+- [01:08:25,640 - 01:08:28,640] in the horizontal plane, one of
+- [01:08:28,640 - 01:08:31,640] the possibilities would be this state here,
+- [01:08:31,640 - 01:08:34,640] which would have half a probability of being
+- [01:08:34,640 - 01:08:37,640] up and half a probability of being down.
+- [01:08:37,640 - 01:08:40,640] Half the probability of up and half the
+- [01:08:40,640 - 01:08:43,640] probability of being down actually corresponds to some
+- [01:08:43,640 - 01:08:46,640] configuration where the electron is
+- [01:08:46,640 - 01:08:49,640] lying somewhere in the horizontal plane.
+- [01:08:49,640 - 01:08:53,140] So we have plenty of vectors around with
+- [01:08:53,140 - 01:08:56,640] all kinds of complex numbers out of which we
+- [01:08:56,640 - 01:08:59,640] can build, and we'll see that we can do
+- [01:08:59,640 - 01:09:02,640] this, we can build the space of electrons which
+- [01:09:02,640 - 01:09:05,140] in some sense are pointing in any direction,
+- [01:09:05,140 - 01:09:07,640] but whenever we measure them, all we get is
+- [01:09:07,640 - 01:09:09,640] up or down with probabilities
+- [01:09:09,640 - 01:09:11,640] that are governed by these coefficients.
+- [01:09:11,640 - 01:09:14,640] Let's take a break for seven
+- [01:09:14,640 - 01:09:17,640] minutes, seven minutes and thirty seconds.
+- [01:09:17,640 - 01:09:18,640] All right.
+- [01:09:18,640 - 01:09:21,640] Now more than one person is probably a
+- [01:09:21,640 - 01:09:24,640] little bit confused about the two notions of vectors.
+- [01:09:24,640 - 01:09:28,640] One is having to do with directionality in
+- [01:09:28,640 - 01:09:32,640] ordinary space, and one having to do with
+- [01:09:32,640 - 01:09:38,640] this abstract concept and this notion of components
+- [01:09:38,640 - 01:09:44,640] of vectors labeling up state and down state.
+- [01:09:44,640 - 01:09:46,640] The question is what's the connection between
+- [01:09:46,640 - 01:09:48,640] the notion of directionality in the horizontal
+- [01:09:48,640 - 01:09:51,640] plane space and these vectors here.
+- [01:09:51,640 - 01:09:54,140] Now what I want to say first
+- [01:09:54,140 - 01:09:56,640] of all is they are not simply related.
+- [01:09:56,640 - 01:09:59,640] They are related but not simply related.
+- [01:09:59,640 - 01:10:03,140] For example, how many components does
+- [01:10:03,140 - 01:10:06,640] a vector have, an ordinary vector?
+- [01:10:06,640 - 01:10:08,640] Three.
+- [01:10:08,640 - 01:10:10,640] And they're real numbers, right?
+- [01:10:10,640 - 01:10:11,640] X, Y, and Z.
+- [01:10:11,640 - 01:10:13,640] They're all real numbers.
+- [01:10:13,640 - 01:10:15,640] These vectors have two
+- [01:10:15,640 - 01:10:17,640] components and they're complex numbers.
+- [01:10:18,640 - 01:10:21,640] That means how many real numbers does
+- [01:10:21,640 - 01:10:24,640] it take to describe one of them?
+- [01:10:24,640 - 01:10:26,640] Four.
+- [01:10:26,640 - 01:10:27,640] Four.
+- [01:10:27,640 - 01:10:28,640] All right.
+- [01:10:28,640 - 01:10:30,640] So they're not the same thing.
+- [01:10:30,640 - 01:10:32,640] But there must be some connection.
+- [01:10:32,640 - 01:10:39,640] We're not going to do that connection just yet.
+- [01:10:39,640 - 01:10:41,640] But we will come to it.
+- [01:10:48,640 - 01:10:52,140] Next concept, which we already went into a
+- [01:10:52,140 - 01:10:55,640] little last time, is the concept of a matrix.
+- [01:10:55,640 - 01:10:56,640] Question.
+- [01:10:56,640 - 01:11:01,140] How do you know what vector
+- [01:11:01,140 - 01:11:05,640] space describes other deeper quantum galaxies?
+- [01:11:05,640 - 01:11:06,640] Okay.
+- [01:11:06,640 - 01:11:09,640] It's an experimental question, in a sense.
+- [01:11:09,640 - 01:11:12,140] From the fact that there are only two possible
+- [01:11:12,140 - 01:11:14,640] answers to the way that when you do this experiment
+- [01:11:14,640 - 01:11:15,640] on the electron, you either get that
+- [01:11:15,640 - 01:11:16,640] it's up or down and nothing in between.
+- [01:11:16,640 - 01:11:17,640] Okay.
+- [01:11:17,640 - 01:11:21,140] That tells you that there are two possibilities
+- [01:11:21,140 - 01:11:24,640] and it tells you that you should be dealing
+- [01:11:24,640 - 01:11:26,640] with a two-dimensional vector space.
+- [01:11:26,640 - 01:11:29,140] All two-dimensional complex vector
+- [01:11:29,140 - 01:11:31,640] spaces are mathematically the same.
+- [01:11:31,640 - 01:11:33,640] So they're all the same.
+- [01:11:33,640 - 01:11:36,140] A two-dimensional complex vector space
+- [01:11:36,140 - 01:11:38,640] is a two-dimensional complex vector space.
+- [01:11:38,640 - 01:11:41,640] There's not more than one of them mathematically.
+- [01:11:41,640 - 01:11:42,640] So...
+- [01:11:42,640 - 01:11:43,640] So...
+- [01:11:43,640 - 01:11:44,640] So...
+- [01:11:44,640 - 01:11:45,640] So...
+- [01:11:45,640 - 01:11:46,640] So...
+- [01:11:46,640 - 01:11:49,640] So you count up the number of possibilities.
+- [01:11:49,640 - 01:11:51,640] Somebody asked me before if I had to spin
+- [01:11:51,640 - 01:11:53,640] one particle instead of a spin a half particle,
+- [01:11:53,640 - 01:11:56,140] which is what an electron is,
+- [01:11:56,140 - 01:11:58,640] how many components would there be?
+- [01:11:58,640 - 01:12:00,640] Then there would be three.
+- [01:12:00,640 - 01:12:02,640] But it's an experimental question.
+- [01:12:02,640 - 01:12:04,640] How many possibilities are there?
+- [01:12:04,640 - 01:12:06,640] How many states are there?
+- [01:12:06,640 - 01:12:09,640] How many distinct possibilities are there?
+- [01:12:09,640 - 01:12:11,640] And in the case of the electron spin, in
+- [01:12:11,640 - 01:12:13,640] the case of the spin of the electron, there are
+- [01:12:13,640 - 01:12:14,640] two possibilities.
+- [01:12:14,640 - 01:12:17,640] One is that the electron is a two-dimensional vector space.
+- [01:12:17,640 - 01:12:19,640] And so it's a two-dimensional vector space.
+- [01:12:19,640 - 01:12:20,640] And they're all the same.
+- [01:12:20,640 - 01:12:23,140] There's no distinction between
+- [01:12:23,140 - 01:12:25,640] different two-dimensional vector spaces.
+- [01:12:25,640 - 01:12:29,140] Other than the fact that we
+- [01:12:29,140 - 01:12:32,640] could consider real or complex vector spaces.
+- [01:12:32,640 - 01:12:33,640] Okay.
+- [01:12:33,640 - 01:12:38,140] Let's move on to the concept, to the
+- [01:12:38,140 - 01:12:42,640] abstract concept of a linear operator or the concrete
+- [01:12:42,640 - 01:12:46,640] of a matrix.
+- [01:12:46,640 - 01:12:53,640] Let me tell you where we're going.
+- [01:12:53,640 - 01:12:55,640] We've talked about states, but we haven't
+- [01:12:55,640 - 01:12:57,640] talked about the things that you actually
+- [01:12:57,640 - 01:12:58,640] measure.
+- [01:12:58,640 - 01:13:01,140] The things that you measure or that
+- [01:13:01,140 - 01:13:03,640] you can measure are called the observables.
+- [01:13:03,640 - 01:13:07,140] The observables of a system are the things
+- [01:13:07,140 - 01:13:10,640] that you can measure and get answers for.
+- [01:13:10,640 - 01:13:12,640] Position of an electron is an observable.
+- [01:13:12,640 - 01:13:16,640] But we're not doing anything as complicated as that.
+- [01:13:16,640 - 01:13:21,140] If we were to label the up and the down
+- [01:13:21,140 - 01:13:25,640] state as plus and minus, we could invent an observable
+- [01:13:25,640 - 01:13:27,640] which would have two possible values.
+- [01:13:27,640 - 01:13:31,640] It could either be plus, plus one or minus one.
+- [01:13:31,640 - 01:13:33,640] And it would be an observable that we could measure.
+- [01:13:33,640 - 01:13:35,140] If the electron's up, we will
+- [01:13:35,140 - 01:13:36,640] assign it the number plus one.
+- [01:13:36,640 - 01:13:39,640] If it's down, we'll assign it the number minus one.
+- [01:13:39,640 - 01:13:41,640] Also called an observable.
+- [01:13:41,640 - 01:13:45,640] Anything that we can measure that has a numerical value.
+- [01:13:45,640 - 01:13:47,640] Numerical value means a real number.
+- [01:13:47,640 - 01:13:50,640] Anything that we can measure that when
+- [01:13:50,640 - 01:13:53,640] the measurement is recorded, it gives rise to
+- [01:13:53,640 - 01:13:57,640] a number, a numerical number, is called an observable.
+- [01:13:57,640 - 01:14:02,140] So as I said, in the case of the
+- [01:14:02,140 - 01:14:06,640] electron spin, if we measure the, whether it's up or
+- [01:14:06,640 - 01:14:08,640] down, we could assign up the number
+- [01:14:08,640 - 01:14:10,640] plus one and down the number minus one.
+- [01:14:11,640 - 01:14:15,140] And in that way have an observable
+- [01:14:15,140 - 01:14:18,640] which, whose numerical value when we measure it
+- [01:14:18,640 - 01:14:23,640] is either plus one or minus one.
+- [01:14:23,640 - 01:14:25,640] Let me talk about, before
+- [01:14:25,640 - 01:14:27,640] talking about observables and quantum mechanics,
+- [01:14:27,640 - 01:14:31,140] let's talk about observables for a
+- [01:14:31,140 - 01:14:34,640] minute in classical mechanics, in classical theory.
+- [01:14:34,640 - 01:14:39,640] In classical theory, the states of a system,
+- [01:14:41,640 - 01:14:47,140] are just a set of
+- [01:14:47,140 - 01:14:52,640] states which we represented by points.
+- [01:14:52,640 - 01:14:53,640] How many do we have?
+- [01:14:53,640 - 01:14:54,640] One, two, three, four, five, six.
+- [01:14:54,640 - 01:14:57,640] These could be the six possibilities for
+- [01:14:57,640 - 01:15:00,640] throwing a dice, a die, a single die.
+- [01:15:00,640 - 01:15:04,640] The one, two, three, four, five, six. This is it.
+- [01:15:04,640 - 01:15:08,640] And we could assign
+- [01:15:08,640 - 01:15:10,640] some numbers to each one of these states.
+- [01:15:11,640 - 01:15:14,640] So we could call, we could label
+- [01:15:14,640 - 01:15:17,640] this one one, two, three, four, five, six.
+- [01:15:17,640 - 01:15:19,140] We throw the die and we
+- [01:15:19,140 - 01:15:20,640] look at it. That's the measurement.
+- [01:15:20,640 - 01:15:22,140] We throw the die and we look
+- [01:15:22,140 - 01:15:23,640] at it and we get an answer.
+- [01:15:23,640 - 01:15:25,640] The answer is either one,
+- [01:15:25,640 - 01:15:27,640] two, three, four, five, or six.
+- [01:15:27,640 - 01:15:31,640] That measurement is the measurement of an observable,
+- [01:15:31,640 - 01:15:36,640] and it's an observable which has six possible answers.
+- [01:15:36,640 - 01:15:40,640] There are other observables that we could concoct.
+- [01:15:41,640 - 01:15:44,640] For example, we could concoct
+- [01:15:44,640 - 01:15:47,640] an observable which is zero everywheres,
+- [01:15:47,640 - 01:15:49,640] except at one value.
+- [01:15:49,640 - 01:15:53,640] One, zero, zero, zero, zero.
+- [01:15:53,640 - 01:15:55,640] Zero.
+- [01:15:55,640 - 01:15:59,640] Now, this means that if we flip the die,
+- [01:15:59,640 - 01:16:01,640] and we get a one,
+- [01:16:01,640 - 01:16:05,640] we assign the number one to the observable.
+- [01:16:05,640 - 01:16:07,640] If we get any other number, we
+- [01:16:07,640 - 01:16:09,640] assign the value zero to the observable.
+- [01:16:09,640 - 01:16:10,640] So there are many different ways to do this.
+- [01:16:10,640 - 01:16:13,640] So there are many observables that you can make,
+- [01:16:13,640 - 01:16:16,640] and basically they correspond to
+- [01:16:16,640 - 01:16:19,640] any functions of these points.
+- [01:16:19,640 - 01:16:22,140] Any functions of these points
+- [01:16:22,140 - 01:16:24,640] assign any function to the points.
+- [01:16:24,640 - 01:16:27,140] Function of points means assign any numbers
+- [01:16:27,140 - 01:16:29,640] you like to these points, real numbers.
+- [01:16:29,640 - 01:16:32,640] And then when you flip the die,
+- [01:16:32,640 - 01:16:34,640] and you see what comes up,
+- [01:16:34,640 - 01:16:36,640] you say the value of the
+- [01:16:36,640 - 01:16:38,640] observable is whatever the numerical value
+- [01:16:38,640 - 01:16:42,640] of that observable was when you flipped the die.
+- [01:16:42,640 - 01:16:46,640] There are many, many observables that you can think about
+- [01:16:46,640 - 01:16:50,640] in this simple system.
+- [01:16:50,640 - 01:16:53,640] But they're all rather trivial.
+- [01:16:53,640 - 01:16:59,640] I mean, they just correspond to
+- [01:16:59,640 - 01:17:02,640] the basic question of whether the die
+- [01:17:02,640 - 01:17:05,640] is one, two, three, four, five, or six.
+- [01:17:08,640 - 01:17:10,640] Interesting just not because...
+- [01:17:10,640 - 01:17:16,640] Yes, it is interesting to define the observable
+- [01:17:16,640 - 01:17:23,640] as a function of which state we're talking about.
+- [01:17:23,640 - 01:17:25,640] F sub n.
+- [01:17:25,640 - 01:17:29,640] n here represents which of these states we're talking about,
+- [01:17:29,640 - 01:17:32,140] and f is a function which could
+- [01:17:32,140 - 01:17:34,640] be any number for each of these states.
+- [01:17:34,640 - 01:17:36,640] That's called an observable.
+- [01:17:36,640 - 01:17:38,640] When you flip a die,
+- [01:17:38,640 - 01:17:40,640] you look at what you get,
+- [01:17:40,640 - 01:17:43,640] and you assign the number f to the particular state.
+- [01:17:43,640 - 01:17:46,640] F sub 1, f sub 2, through f sub 6.
+- [01:17:46,640 - 01:17:48,640] That's called an observable.
+- [01:17:48,640 - 01:17:51,140] And it's a sort of overkill
+- [01:17:51,140 - 01:17:53,640] concept in this classical situation here,
+- [01:17:53,640 - 01:17:55,640] but let's continue.
+- [01:17:55,640 - 01:17:58,640] Now, let us suppose that for one reason or another,
+- [01:17:58,640 - 01:18:00,640] in classical physics,
+- [01:18:00,640 - 01:18:04,640] we haven't been very careful in doing our classical physics,
+- [01:18:04,640 - 01:18:06,640] measurements and so forth,
+- [01:18:06,640 - 01:18:08,640] and we don't know exactly
+- [01:18:08,640 - 01:18:10,640] what state the system is in.
+- [01:18:10,640 - 01:18:13,640] All we know is some probabilities.
+- [01:18:13,640 - 01:18:15,640] For example, we may have a loaded die,
+- [01:18:15,640 - 01:18:18,640] a loaded die which is an unfair die,
+- [01:18:18,640 - 01:18:21,640] like the kind dirty gamblers use,
+- [01:18:21,640 - 01:18:23,640] and you flip it,
+- [01:18:23,640 - 01:18:25,640] and it lands on the table.
+- [01:18:25,640 - 01:18:28,640] There may be a probability distribution
+- [01:18:28,640 - 01:18:31,140] for different values of the one,
+- [01:18:31,140 - 01:18:33,640] two, three, four, five, or six.
+- [01:18:33,640 - 01:18:36,640] Let's label that p sub n also.
+- [01:18:36,640 - 01:18:39,640] That's the probability,
+- [01:18:39,640 - 01:18:41,640] the a priori probability, let's say,
+- [01:18:41,640 - 01:18:43,640] that when you flip the die,
+- [01:18:43,640 - 01:18:48,640] you get the nth state.
+- [01:18:48,640 - 01:18:51,640] Then, what is the average
+- [01:18:51,640 - 01:18:54,640] if you flip the die many, many times,
+- [01:18:54,640 - 01:18:59,640] and each time you measure f,
+- [01:18:59,640 - 01:19:01,640] you flip it many, many times,
+- [01:19:01,640 - 01:19:03,640] you measure f,
+- [01:19:03,640 - 01:19:06,640] what is the average value of f, f sub n?
+- [01:19:06,640 - 01:19:13,640] There are many, many, many identical experiments.
+- [01:19:13,640 - 01:19:16,640] The answer, anybody know?
+- [01:19:22,640 - 01:19:28,640] Well, the answer for the average value of f,
+- [01:19:28,640 - 01:19:30,640] we're assuming, of course,
+- [01:19:30,640 - 01:19:33,640] that the sum of the p sub n's is one.
+- [01:19:33,640 - 01:19:35,640] In other words, the sum of the probabilities of one.
+- [01:19:35,640 - 01:19:38,640] The average value of f is
+- [01:19:38,640 - 01:19:41,640] the sum over all the possibilities
+- [01:19:41,640 - 01:19:46,640] of the probability for the nth configuration
+- [01:19:46,640 - 01:19:49,140] times the value that the
+- [01:19:49,140 - 01:19:51,640] function has in the nth configuration.
+- [01:19:51,640 - 01:19:53,140] So what you do is
+- [01:19:53,140 - 01:19:54,640] you add up all the configurations
+- [01:19:54,640 - 01:19:57,640] weighted according to their probability.
+- [01:19:57,640 - 01:19:59,640] Weight them according to their probability.
+- [01:19:59,640 - 01:20:01,640] For example,
+- [01:20:01,640 - 01:20:04,640] if all the probabilities are equal,
+- [01:20:04,640 - 01:20:07,640] then you just add up the f sub n's.
+- [01:20:07,640 - 01:20:09,640] If they're all equal, incidentally,
+- [01:20:09,640 - 01:20:11,640] they're not one, they're one over n,
+- [01:20:11,640 - 01:20:13,640] because they're one over the number,
+- [01:20:13,640 - 01:20:15,640] one over six in this case.
+- [01:20:15,640 - 01:20:19,640] But this is the average over many, many,
+- [01:20:19,640 - 01:20:23,640] let's take an example.
+- [01:20:23,640 - 01:20:26,640] Let's do a coin, a simple coin,
+- [01:20:26,640 - 01:20:28,640] up or down, heads or tails.
+- [01:20:28,640 - 01:20:31,640] Let's say there's the probability for heads,
+- [01:20:31,640 - 01:20:33,640] and we're going to call heads plus.
+- [01:20:33,640 - 01:20:36,640] There's the probability for heads, which is p plus.
+- [01:20:36,640 - 01:20:39,640] There's the probability for tails, which is p minus.
+- [01:20:39,640 - 01:20:42,640] If we have heads,
+- [01:20:42,640 - 01:20:44,640] we assign the number plus one.
+- [01:20:44,640 - 01:20:48,640] If we have tails, we assign the number minus one.
+- [01:20:48,640 - 01:20:51,640] What is the probability for that observable,
+- [01:20:51,640 - 01:20:54,640] which is either plus one or minus one?
+- [01:20:54,640 - 01:20:58,640] It's p plus,
+- [01:20:58,640 - 01:21:00,640] the probability for plus,
+- [01:21:00,640 - 01:21:02,640] minus the probability for minus.
+- [01:21:03,640 - 01:21:07,640] Because every time you get a minus,
+- [01:21:07,640 - 01:21:10,640] you give it a value minus one.
+- [01:21:10,640 - 01:21:12,640] In other words, every time you get a tail,
+- [01:21:12,640 - 01:21:14,640] you give it a minus one.
+- [01:21:14,640 - 01:21:16,640] Every time you get a head,
+- [01:21:16,640 - 01:21:18,640] you give it a plus one.
+- [01:21:18,640 - 01:21:21,640] The average is p plus minus p minus.
+- [01:21:21,640 - 01:21:24,640] The difference between the probability of head and tail
+- [01:21:24,640 - 01:21:27,640] is the average of the headsness or the tailsness.
+- [01:21:27,640 - 01:21:31,640] So this basic formula here,
+- [01:21:31,640 - 01:21:34,640] which is just the most elementary
+- [01:21:34,640 - 01:21:38,640] formula of probability of the notion of an average,
+- [01:21:38,640 - 01:21:41,640] that you average over all the possibilities,
+- [01:21:41,640 - 01:21:43,640] weighing it with the value
+- [01:21:43,640 - 01:21:45,640] of the quantity of the observable,
+- [01:21:45,640 - 01:21:47,640] whose average you're taking,
+- [01:21:47,640 - 01:21:50,640] and you weigh it according to the probability
+- [01:21:50,640 - 01:21:52,640] of that particular configuration.
+- [01:21:52,640 - 01:21:54,640] And that's the average value
+- [01:21:54,640 - 01:21:57,140] of an experiment which consists
+- [01:21:57,140 - 01:21:59,640] of many, many repeated experiments.
+- [01:22:01,640 - 01:22:04,640] What's that?
+- [01:22:04,640 - 01:22:06,640] Expected value, sometimes called the expected value,
+- [01:22:06,640 - 01:22:08,640] sometimes called the expectation value,
+- [01:22:08,640 - 01:22:10,640] sometimes called the average value.
+- [01:22:10,640 - 01:22:15,640] And that's what we're going to be interested in.
+- [01:22:15,640 - 01:22:18,640] We're going to be interested in the average values
+- [01:22:18,640 - 01:22:20,640] of things that we can measure,
+- [01:22:20,640 - 01:22:23,640] the average values of observables.
+- [01:22:23,640 - 01:22:26,640] Now, what I haven't told you
+- [01:22:26,640 - 01:22:29,640] is how you represent observables in quantum mechanics.
+- [01:22:29,640 - 01:22:31,640] And the representation of observables
+- [01:22:31,640 - 01:22:35,640] in quantum mechanics is more intricate and complicated
+- [01:22:35,640 - 01:22:39,640] than just saying we assign to each state
+- [01:22:39,640 - 01:22:41,640] a numerical value that we call
+- [01:22:41,640 - 01:22:44,640] the observable value in that state.
+- [01:22:44,640 - 01:22:46,640] It's a more complicated concept
+- [01:22:46,640 - 01:22:48,640] and a more tricky concept,
+- [01:22:48,640 - 01:22:50,640] the notion of an observable,
+- [01:22:50,640 - 01:22:52,640] or measurable,
+- [01:22:52,640 - 01:22:55,640] measurable quantity.
+- [01:22:55,640 - 01:22:58,640] And it's related, not related, but is,
+- [01:22:58,640 - 01:23:00,640] well, related, related to
+- [01:23:00,640 - 01:23:05,640] the concept of a linear operator
+- [01:23:05,640 - 01:23:07,640] or a matrix.
+- [01:23:07,640 - 01:23:10,640] For our purposes, they're the same thing.
+- [01:23:10,640 - 01:23:13,640] Again, the mathematicians will object to me saying
+- [01:23:13,640 - 01:23:15,640] a matrix is a linear operator.
+- [01:23:15,640 - 01:23:17,640] I don't know, do you object?
+- [01:23:17,640 - 01:23:19,140] Anybody object to my saying
+- [01:23:19,140 - 01:23:20,640] a matrix is a linear operator?
+- [01:23:20,640 - 01:23:23,640] There is a question over there.
+- [01:23:23,640 - 01:23:24,640] What?
+- [01:23:24,640 - 01:23:26,640] Somebody had the same thing.
+- [01:23:26,640 - 01:23:29,640] Can I just, in this example,
+- [01:23:30,640 - 01:23:34,640] if f of plus is one
+- [01:23:34,640 - 01:23:36,640] and f of minus is minus one,
+- [01:23:36,640 - 01:23:39,640] the expectation value, though, is zero?
+- [01:23:39,640 - 01:23:41,640] If the probabilities are equal.
+- [01:23:41,640 - 01:23:42,640] Yeah, yeah.
+- [01:23:42,640 - 01:23:44,640] Let's say the probability is equal.
+- [01:23:44,640 - 01:23:46,640] My point is that it's,
+- [01:23:46,640 - 01:23:49,640] the expectation value ends up being
+- [01:23:49,640 - 01:23:51,640] a number that is,
+- [01:23:51,640 - 01:23:54,640] that the underlying system is never in that state.
+- [01:23:54,640 - 01:23:55,640] Oh, that's true.
+- [01:23:55,640 - 01:23:57,640] Yeah, yeah, yeah, right.
+- [01:23:57,640 - 01:23:59,640] That's why people don't like calling it
+- [01:23:59,640 - 01:24:02,640] the expected value because
+- [01:24:02,640 - 01:24:04,640] it is the,
+- [01:24:04,640 - 01:24:08,640] it is a value which is very definitely not expected.
+- [01:24:08,640 - 01:24:09,640] So I,
+- [01:24:09,640 - 01:24:12,640] everybody used to call it the expectation value.
+- [01:24:12,640 - 01:24:14,640] Now, that's a little,
+- [01:24:14,640 - 01:24:16,640] that's a little weaker than saying the expected value.
+- [01:24:16,640 - 01:24:18,640] Then my friend Murray Gelman started calling it
+- [01:24:18,640 - 01:24:20,640] the expected value.
+- [01:24:20,640 - 01:24:22,640] Well, it ain't, as you point out,
+- [01:24:22,640 - 01:24:23,640] the expected value.
+- [01:24:23,640 - 01:24:26,640] It's worse than that because you have to divide by,
+- [01:24:26,640 - 01:24:28,640] you really have to divide by n.
+- [01:24:28,640 - 01:24:29,640] That's a problem.
+- [01:24:29,640 - 01:24:31,140] No, no, the sums of
+- [01:24:31,140 - 01:24:32,640] the p's add up to one.
+- [01:24:32,640 - 01:24:36,640] Assuming the sums of the p's add up to one.
+- [01:24:36,640 - 01:24:37,640] Okay.
+- [01:24:37,640 - 01:24:40,640] But when you think of it as dividing by
+- [01:24:40,640 - 01:24:43,640] the overall sample size.
+- [01:24:43,640 - 01:24:44,640] Yeah.
+- [01:24:44,640 - 01:24:45,640] In this case it's one.
+- [01:24:45,640 - 01:24:46,640] Yeah, that's what it means.
+- [01:24:46,640 - 01:24:48,640] The p is a half and a half.
+- [01:24:48,640 - 01:24:50,640] That means that you end up with the typical person
+- [01:24:50,640 - 01:24:53,640] having two and a half kids or whatever.
+- [01:24:53,640 - 01:24:54,640] No.
+- [01:24:54,640 - 01:24:55,640] That would be shortening.
+- [01:24:55,640 - 01:24:56,640] Right, so it's not the,
+- [01:24:56,640 - 01:24:58,640] it's not really the expected.
+- [01:24:58,640 - 01:25:01,640] You know, you have to guess how many kids
+- [01:25:01,640 - 01:25:02,640] you're gonna have.
+- [01:25:02,640 - 01:25:04,640] You probably wouldn't guess two and a half.
+- [01:25:04,640 - 01:25:07,640] No, no, no, no, no, no, no, no, no.
+- [01:25:07,640 - 01:25:08,640] It's a payoff.
+- [01:25:08,640 - 01:25:10,640] In the gambling you can actually line up with zero.
+- [01:25:10,640 - 01:25:12,640] I mean, it's a, so it's a value you get.
+- [01:25:12,640 - 01:25:14,640] It just doesn't correspond to the point.
+- [01:25:14,640 - 01:25:16,640] Right.
+- [01:25:16,640 - 01:25:17,640] But it is the average value.
+- [01:25:17,640 - 01:25:20,640] It's by definition the average value.
+- [01:25:20,640 - 01:25:21,640] Okay.
+- [01:25:21,640 - 01:25:22,640] So that's right.
+- [01:25:22,640 - 01:25:25,640] So if, I'm glad you pointed that out,
+- [01:25:25,640 - 01:25:26,640] that if p plus and
+- [01:25:26,640 - 01:25:27,640] p minus were both a half,
+- [01:25:27,640 - 01:25:30,640] then the average value would be zero,
+- [01:25:30,640 - 01:25:32,640] but zero is not a possible answer.
+- [01:25:32,640 - 01:25:36,640] So the average value is not the expected value.
+- [01:25:36,640 - 01:25:39,640] There is no expected value in this case.
+- [01:25:39,640 - 01:25:42,640] But it tells you something.
+- [01:25:42,640 - 01:25:45,640] If you get something at zero in your average value,
+- [01:25:45,640 - 01:25:47,140] it tells you that there's a
+- [01:25:47,140 - 01:25:48,640] lot of divergence in the simple state.
+- [01:25:48,640 - 01:25:49,640] Say it again?
+- [01:25:49,640 - 01:25:52,640] It tells you that there's a lot of divergence.
+- [01:25:52,640 - 01:25:54,640] Divergence?
+- [01:25:54,640 - 01:25:55,640] There's a lot of,
+- [01:25:55,640 - 01:25:56,640] there's a lot of divergence.
+- [01:25:56,640 - 01:26:01,640] The variance is too wide, huh?
+- [01:26:01,640 - 01:26:06,640] Well, if I take a coin and I flip it,
+- [01:26:06,640 - 01:26:08,640] a fair coin and I flip it,
+- [01:26:08,640 - 01:26:11,640] I think I will get half the
+- [01:26:11,640 - 01:26:14,640] times heads and half the times tails.
+- [01:26:14,640 - 01:26:15,640] You said something about,
+- [01:26:15,640 - 01:26:17,640] did you say something about temperature?
+- [01:26:17,640 - 01:26:18,640] Variance.
+- [01:26:18,640 - 01:26:19,640] Variance.
+- [01:26:19,640 - 01:26:20,640] I mean, in the case of coin tossing,
+- [01:26:20,640 - 01:26:23,640] of course it tells you that it's a 50-50% chance.
+- [01:26:23,640 - 01:26:24,640] Yeah.
+- [01:26:24,640 - 01:26:25,640] Yeah, it tells you,
+- [01:26:25,640 - 01:26:28,640] it tells you you're basically completely ignorant.
+- [01:26:28,640 - 01:26:31,640] If you're completely ignorant, there's a 50-50 chance.
+- [01:26:31,640 - 01:26:33,640] And if you do the experiment
+- [01:26:33,640 - 01:26:35,640] over and over with a fair coin
+- [01:26:35,640 - 01:26:37,640] and you average the result,
+- [01:26:37,640 - 01:26:40,640] the average had better be zero because it can't be,
+- [01:26:40,640 - 01:26:42,640] it can't be positive and it can't
+- [01:26:42,640 - 01:26:44,640] be negative because it's an equal balance.
+- [01:26:44,640 - 01:26:46,640] On the other hand,
+- [01:26:46,640 - 01:26:48,640] if you have an unfair coin,
+- [01:26:48,640 - 01:26:50,640] let's say three quarters of
+- [01:26:50,640 - 01:26:52,640] the time it comes up heads
+- [01:26:52,640 - 01:26:55,640] and one quarter of the times it comes up tails,
+- [01:26:55,640 - 01:26:56,640] then the average is what?
+- [01:26:56,640 - 01:26:58,640] It's three quarters minus one quarter,
+- [01:26:58,640 - 01:27:00,640] which is a half.
+- [01:27:00,640 - 01:27:01,640] All right?
+- [01:27:01,640 - 01:27:03,640] So if you have this unfair coin,
+- [01:27:03,640 - 01:27:05,640] which three quarters of the time comes up heads,
+- [01:27:05,640 - 01:27:07,640] one quarter comes up tails,
+- [01:27:07,640 - 01:27:10,640] then the average is a half.
+- [01:27:10,640 - 01:27:11,640] All right?
+- [01:27:11,640 - 01:27:13,640] Again, doesn't mean that you can measure a half.
+- [01:27:13,640 - 01:27:17,640] It just means that that's the average value.
+- [01:27:17,640 - 01:27:18,640] Okay?
+- [01:27:18,640 - 01:27:21,640] Average values are important.
+- [01:27:21,640 - 01:27:23,640] Let me give you one observable,
+- [01:27:23,640 - 01:27:24,640] one kind of observable,
+- [01:27:24,640 - 01:27:26,640] which is special.
+- [01:27:26,640 - 01:27:29,640] Supposing I take this special class of observables,
+- [01:27:29,640 - 01:27:33,640] which is one at one state,
+- [01:27:33,640 - 01:27:36,640] f is one for one state over here
+- [01:27:36,640 - 01:27:39,640] and zero for all the others.
+- [01:27:39,640 - 01:27:44,640] What's the average value of it?
+- [01:27:44,640 - 01:27:47,640] Just the probability.
+- [01:27:47,640 - 01:27:48,640] Right.
+- [01:27:48,640 - 01:27:49,640] Just the probability.
+- [01:27:49,640 - 01:27:53,640] So if I had an observable,
+- [01:27:53,640 - 01:27:54,640] which I invented,
+- [01:27:54,640 - 01:27:56,640] which was one at one
+- [01:27:56,640 - 01:27:58,640] place and zero every place else,
+- [01:27:58,640 - 01:28:01,640] then there would be only one term in the sum,
+- [01:28:01,640 - 01:28:03,640] because f is zero for all the others,
+- [01:28:03,640 - 01:28:06,640] and for the one case where it's not zero,
+- [01:28:06,640 - 01:28:08,640] we just get p.
+- [01:28:08,640 - 01:28:14,640] So if you knew the rules for calculating averages,
+- [01:28:14,640 - 01:28:17,640] you would also know the rules for calculating,
+- [01:28:17,640 - 01:28:19,640] for all possible observables,
+- [01:28:19,640 - 01:28:21,140] you would also immediately know
+- [01:28:21,140 - 01:28:22,640] the rules for calculating probabilities.
+- [01:28:23,640 - 01:28:24,640] Now the way to say it is,
+- [01:28:24,640 - 01:28:27,140] if you know how to calculate
+- [01:28:27,140 - 01:28:29,640] the average value of any observable,
+- [01:28:29,640 - 01:28:34,640] you can reconstruct from it the probability distribution,
+- [01:28:34,640 - 01:28:37,640] the probabilities for that observable,
+- [01:28:37,640 - 01:28:42,640] probabilities for the different possibilities.
+- [01:28:42,640 - 01:28:46,640] So that raises the question now,
+- [01:28:46,640 - 01:28:52,640] what is the mathematical representation of observables?
+- [01:28:53,640 - 01:28:56,640] And that is matrices.
+- [01:28:56,640 - 01:28:58,640] Matrices or linear operators.
+- [01:28:58,640 - 01:29:04,640] So let's talk again a little bit about matrices and,
+- [01:29:04,640 - 01:29:10,640] where am I?
+- [01:29:10,640 - 01:29:15,640] I don't know where I am.
+- [01:29:15,640 - 01:29:17,640] Let's talk about observables,
+- [01:29:17,640 - 01:29:22,640] or let's talk about matrices first.
+- [01:29:22,640 - 01:29:26,140] A matrix is a thing that
+- [01:29:26,140 - 01:29:29,640] you can multiply a vector with,
+- [01:29:29,640 - 01:29:32,640] or act on a vector with.
+- [01:29:32,640 - 01:29:35,640] It does something to a vector.
+- [01:29:35,640 - 01:29:37,640] It's an operation on a vector.
+- [01:29:37,640 - 01:29:39,640] But it's not just any old operation on the vector.
+- [01:29:39,640 - 01:29:41,640] It's a linear operation.
+- [01:29:41,640 - 01:29:43,640] I'm not going to explain that,
+- [01:29:43,640 - 01:29:46,640] because we won't need to explain it.
+- [01:29:46,640 - 01:29:49,640] But whatever it is,
+- [01:29:49,640 - 01:29:50,640] call it M,
+- [01:29:50,640 - 01:29:52,640] M for matrix,
+- [01:29:52,640 - 01:29:55,640] and in the abstract notation,
+- [01:29:55,640 - 01:29:58,640] it's a thing,
+- [01:29:58,640 - 01:30:00,640] it's an object,
+- [01:30:00,640 - 01:30:03,640] which you multiply a vector by,
+- [01:30:03,640 - 01:30:06,640] and you get a new vector.
+- [01:30:06,640 - 01:30:09,640] For example, one simple example is
+- [01:30:09,640 - 01:30:12,640] just multiplying by a complex number.
+- [01:30:12,640 - 01:30:15,640] Multiplying by a complex number is a operator.
+- [01:30:15,640 - 01:30:17,640] It's a very simple operator.
+- [01:30:17,640 - 01:30:19,640] You just multiply the vector,
+- [01:30:19,640 - 01:30:21,640] and you get the number 2.
+- [01:30:21,640 - 01:30:23,640] The number 2 just takes
+- [01:30:23,640 - 01:30:25,640] every vector and doubles its size.
+- [01:30:25,640 - 01:30:27,640] Okay?
+- [01:30:27,640 - 01:30:31,640] But the general operators that we're going to consider
+- [01:30:31,640 - 01:30:35,640] are ones which are represented by matrices.
+- [01:30:35,640 - 01:30:38,640] So if we have our vector A,
+- [01:30:38,640 - 01:30:43,640] which we represent by a column vector,
+- [01:30:43,640 - 01:30:46,640] and I'm only going to write two-dimensional column vectors,
+- [01:30:46,640 - 01:30:49,640] but you'll immediately deduce what to do
+- [01:30:49,640 - 01:30:50,640] if you have a few more in your mind.
+- [01:30:51,640 - 01:30:53,640] So let's do a few more entries here.
+- [01:30:53,640 - 01:30:55,640] We can multiply it by a matrix,
+- [01:30:55,640 - 01:30:59,640] and a matrix is a square array of numbers,
+- [01:30:59,640 - 01:31:06,640] M11, M12, M21, M22.
+- [01:31:06,640 - 01:31:10,640] And in general, these numbers are all complex numbers.
+- [01:31:10,640 - 01:31:13,640] In general, they're all complex numbers.
+- [01:31:13,640 - 01:31:16,640] The A's and the M's in a complex vector space
+- [01:31:16,640 - 01:31:19,640] can all be complex numbers.
+- [01:31:19,640 - 01:31:21,640] And the rule for matrix multiplication,
+- [01:31:21,640 - 01:31:24,640] which I showed us last time,
+- [01:31:24,640 - 01:31:27,640] for multiplying a matrix by a vector,
+- [01:31:27,640 - 01:31:30,640] is just,
+- [01:31:30,640 - 01:31:31,640] if you want the top entry,
+- [01:31:31,640 - 01:31:33,640] which you can think of as the top row,
+- [01:31:33,640 - 01:31:36,640] you take the top row,
+- [01:31:36,640 - 01:31:39,640] and you multiply it by the vector.
+- [01:31:39,640 - 01:31:41,140] You take the inner product of
+- [01:31:41,140 - 01:31:42,640] the top row with the vector,
+- [01:31:42,640 - 01:31:48,640] which will be M11A1
+- [01:31:48,640 - 01:31:50,640] plus M12A2,
+- [01:31:51,640 - 01:31:53,640] and then down here,
+- [01:31:53,640 - 01:31:59,640] M21A1 plus M22A2.
+- [01:31:59,640 - 01:32:01,640] So it's another vector.
+- [01:32:01,640 - 01:32:03,640] I had to draw it pretty wide
+- [01:32:03,640 - 01:32:05,640] because I was adding some numbers here,
+- [01:32:05,640 - 01:32:06,640] but it's just a vector.
+- [01:32:06,640 - 01:32:08,640] It's a column vector with one column,
+- [01:32:08,640 - 01:32:11,640] and it's constructed by taking this row
+- [01:32:11,640 - 01:32:12,640] times the column,
+- [01:32:12,640 - 01:32:14,640] and this row times the column,
+- [01:32:14,640 - 01:32:16,640] and those are the two entries.
+- [01:32:21,640 - 01:32:22,640] That's it.
+- [01:32:22,640 - 01:32:24,640] That's all that matrices are.
+- [01:32:24,640 - 01:32:26,640] Let me give you a couple of examples,
+- [01:32:26,640 - 01:32:28,640] a couple of simple examples
+- [01:32:28,640 - 01:32:31,640] from a very ordinary vector space.
+- [01:32:31,640 - 01:32:33,640] A very ordinary vector space
+- [01:32:33,640 - 01:32:36,640] is just the pointers or the arrows
+- [01:32:36,640 - 01:32:38,640] that you can draw on the blackboard.
+- [01:32:38,640 - 01:32:41,640] You can multiply a vector by,
+- [01:32:41,640 - 01:32:43,640] in this case, a real number.
+- [01:32:43,640 - 01:32:45,640] You can double it, you can triple it,
+- [01:32:45,640 - 01:32:47,640] you can multiply it by minus one,
+- [01:32:47,640 - 01:32:49,640] and you can add two vectors.
+- [01:32:49,640 - 01:32:51,640] So vectors that you draw on the blackboard
+- [01:32:51,640 - 01:32:53,640] are a vector space.
+- [01:32:53,640 - 01:32:54,640] Let me give you, and they have,
+- [01:32:54,640 - 01:32:55,640] what are their components?
+- [01:32:55,640 - 01:32:57,640] Their components are the x component,
+- [01:32:57,640 - 01:33:01,640] here's x, here's y,
+- [01:33:01,640 - 01:33:03,640] and the vector has an x component
+- [01:33:03,640 - 01:33:06,640] and a y component.
+- [01:33:06,640 - 01:33:08,640] So we represent this vector
+- [01:33:08,640 - 01:33:11,640] by its x component and its y component,
+- [01:33:11,640 - 01:33:13,640] and we could write it in the form
+- [01:33:13,640 - 01:33:15,640] x component of vector,
+- [01:33:15,640 - 01:33:17,640] y component of the vector.
+- [01:33:17,640 - 01:33:18,640] Of course, now I'm only doing
+- [01:33:18,640 - 01:33:19,640] two dimensions,
+- [01:33:19,640 - 01:33:20,640] so I'm going to do
+- [01:33:20,640 - 01:33:22,640] a two-dimensional space.
+- [01:33:22,640 - 01:33:24,640] These would be real numbers
+- [01:33:24,640 - 01:33:25,640] on the blackboard.
+- [01:33:25,640 - 01:33:27,640] They wouldn't be complex numbers,
+- [01:33:27,640 - 01:33:30,640] and this would be a two-real-dimensional vector space.
+- [01:33:30,640 - 01:33:32,640] Now, let's think about some operations.
+- [01:33:32,640 - 01:33:34,640] The first interesting operation,
+- [01:33:34,640 - 01:33:36,640] which is the most easy,
+- [01:33:36,640 - 01:33:38,640] is to stretch the vector space.
+- [01:33:38,640 - 01:33:42,640] For example, multiply every vector by two.
+- [01:33:42,640 - 01:33:43,640] Okay?
+- [01:33:43,640 - 01:33:45,640] Multiply every vector by two
+- [01:33:45,640 - 01:33:48,640] will sort of magnify the whole space
+- [01:33:48,640 - 01:33:49,640] by a factor of two.
+- [01:33:49,640 - 01:33:51,640] Any vector will get stretched out
+- [01:33:51,640 - 01:33:53,640] to twice its original length.
+- [01:33:53,640 - 01:33:55,640] That's all that happens.
+- [01:33:55,640 - 01:33:57,640] Here's the matrix
+- [01:33:57,640 - 01:34:00,640] that represents that operation.
+- [01:34:00,640 - 01:34:04,640] It's just the diagonal matrix 2, 2.
+- [01:34:04,640 - 01:34:07,640] Diagonal means that its entries
+- [01:34:07,640 - 01:34:10,640] are along the diagonal.
+- [01:34:10,640 - 01:34:13,640] There are two diagonals in the matrix.
+- [01:34:13,640 - 01:34:14,640] This is called the principal diagonal,
+- [01:34:14,640 - 01:34:15,640] I think, if I remember.
+- [01:34:15,640 - 01:34:16,640] The other one is called
+- [01:34:16,640 - 01:34:17,640] the unprincipled diagonal.
+- [01:34:17,640 - 01:34:18,640] I don't know what it's called.
+- [01:34:19,640 - 01:34:20,640] I don't know.
+- [01:34:20,640 - 01:34:21,640] What?
+- [01:34:21,640 - 01:34:22,640] Degenerate.
+- [01:34:22,640 - 01:34:27,640] The good diagonal and the bad diagonal.
+- [01:34:27,640 - 01:34:30,640] This one is the bad diagonal.
+- [01:34:30,640 - 01:34:31,640] All right.
+- [01:34:31,640 - 01:34:33,640] Let's just calculate what we get.
+- [01:34:33,640 - 01:34:34,640] All right.
+- [01:34:34,640 - 01:34:35,640] In the upper entry,
+- [01:34:35,640 - 01:34:38,640] we get 2 times vx plus 0.
+- [01:34:38,640 - 01:34:41,640] So the upper entry just becomes 2vx.
+- [01:34:41,640 - 01:34:42,640] The lower entry,
+- [01:34:42,640 - 01:34:44,640] we get 2 times vy.
+- [01:34:44,640 - 01:34:46,640] So, as advertised,
+- [01:34:46,640 - 01:34:48,640] this is the operator,
+- [01:34:48,640 - 01:34:50,640] which simply doubles the length of every vector.
+- [01:34:50,640 - 01:34:51,640] All right.
+- [01:34:51,640 - 01:34:52,640] Very easy.
+- [01:34:52,640 - 01:34:54,640] Here's a more,
+- [01:34:54,640 - 01:34:58,640] almost a similar thing.
+- [01:34:58,640 - 01:35:00,640] But supposing I just wanted to
+- [01:35:00,640 - 01:35:02,640] double the y component.
+- [01:35:02,640 - 01:35:04,640] What would that do to the vector space?
+- [01:35:04,640 - 01:35:06,640] It would take every vector
+- [01:35:06,640 - 01:35:08,640] and stretch out its y component
+- [01:35:08,640 - 01:35:09,640] by a factor of 2
+- [01:35:09,640 - 01:35:11,640] without stretching out its x component.
+- [01:35:11,640 - 01:35:14,640] So it would be a stretch in the y direction
+- [01:35:14,640 - 01:35:16,640] by a factor of 2,
+- [01:35:16,640 - 01:35:18,640] but no stretch in the y direction
+- [01:35:18,640 - 01:35:20,640] but in the x direction.
+- [01:35:20,640 - 01:35:22,640] How would we represent that?
+- [01:35:22,640 - 01:35:23,640] Okay.
+- [01:35:23,640 - 01:35:26,640] Again, a diagonal with a 1 here
+- [01:35:26,640 - 01:35:28,640] in the x place, in the xx,
+- [01:35:28,640 - 01:35:31,640] and the yy place, the factor 2.
+- [01:35:31,640 - 01:35:33,640] Let's check it.
+- [01:35:33,640 - 01:35:36,640] 1 times vx gives us vx.
+- [01:35:36,640 - 01:35:39,640] 2 times vy gives us twice vy.
+- [01:35:39,640 - 01:35:41,640] So that's a stretching of the vector space
+- [01:35:41,640 - 01:35:44,640] in the y direction.
+- [01:35:44,640 - 01:35:46,640] Likewise, we could put the 2 here,
+- [01:35:46,640 - 01:35:47,640] and the 1 here.
+- [01:35:47,640 - 01:35:49,640] And the 1 here,
+- [01:35:49,640 - 01:35:51,640] that would be a stretching of the vector space
+- [01:35:51,640 - 01:35:54,640] which stretches it out in this direction.
+- [01:35:54,640 - 01:35:56,640] One or two more.
+- [01:35:56,640 - 01:35:58,640] These are very easy examples.
+- [01:35:58,640 - 01:36:02,640] So far, they've only involved diagonal matrices.
+- [01:36:02,640 - 01:36:04,640] Let me give you another one.
+- [01:36:04,640 - 01:36:08,640] The matrix which corresponds to
+- [01:36:08,640 - 01:36:12,640] rotating every vector by 90 degrees.
+- [01:36:12,640 - 01:36:14,640] Take any vector
+- [01:36:14,640 - 01:36:16,640] and rotate it by 90 degrees.
+- [01:36:16,640 - 01:36:18,640] In other words, this is the operation
+- [01:36:18,640 - 01:36:21,640] which rotates the plane by 90 degrees.
+- [01:36:21,640 - 01:36:22,640] I'll tell you what it is,
+- [01:36:22,640 - 01:36:24,640] and then we'll check and
+- [01:36:24,640 - 01:36:26,640] see if we can see why.
+- [01:36:26,640 - 01:36:29,640] It's off-diagonal.
+- [01:36:29,640 - 01:36:32,640] Or...
+- [01:36:35,640 - 01:36:40,640] 1 minus 1, excuse me.
+- [01:36:40,640 - 01:36:42,640] Oh, let's do this one first.
+- [01:36:42,640 - 01:36:44,640] Let's do what this is.
+- [01:36:44,640 - 01:36:45,640] Before I do the rotation,
+- [01:36:45,640 - 01:36:46,640] let's do this.
+- [01:36:46,640 - 01:36:48,640] Let's see what this does.
+- [01:36:48,640 - 01:36:51,640] This takes 0 times vx,
+- [01:36:51,640 - 01:36:53,640] 1 times vy.
+- [01:36:53,640 - 01:36:58,640] It interchanges vy and vx.
+- [01:36:58,640 - 01:37:00,640] It interchanges vy and vx.
+- [01:37:00,640 - 01:37:05,640] Anybody see geometrically what that corresponds to?
+- [01:37:05,640 - 01:37:06,640] A reflection.
+- [01:37:06,640 - 01:37:08,640] It's a reflection of the vector space
+- [01:37:08,640 - 01:37:10,640] about this diagonal.
+- [01:37:10,640 - 01:37:12,640] Takes every vector
+- [01:37:12,640 - 01:37:14,640] and reflects it about that diagonal.
+- [01:37:15,640 - 01:37:19,640] Just flips it about that diagonal.
+- [01:37:19,640 - 01:37:23,640] That's this matrix.
+- [01:37:23,640 - 01:37:24,640] Here's another matrix
+- [01:37:24,640 - 01:37:29,640] where you put a minus 1 down here.
+- [01:37:29,640 - 01:37:30,640] What does this give?
+- [01:37:30,640 - 01:37:35,640] This gives vy minus vx.
+- [01:37:35,640 - 01:37:38,640] vy minus vx.
+- [01:37:38,640 - 01:37:41,640] It interchanges the x and y,
+- [01:37:41,640 - 01:37:43,140] but then throws in a
+- [01:37:43,140 - 01:37:44,640] minus sign for one of them.
+- [01:37:45,640 - 01:37:47,640] That is an operation.
+- [01:37:47,640 - 01:37:49,640] I'm going to leave it to you to prove
+- [01:37:49,640 - 01:37:51,640] because we don't have time,
+- [01:37:51,640 - 01:37:53,640] but I'm going to tell you what this does.
+- [01:37:53,640 - 01:37:57,640] It rotates the vector space by 90 degrees.
+- [01:37:57,640 - 01:38:00,640] Oh, does it go the other way?
+- [01:38:00,640 - 01:38:06,640] It's an easy way to see all this.
+- [01:38:06,640 - 01:38:08,640] Well, you know it.
+- [01:38:08,640 - 01:38:10,640] It's going to rotate the other direction.
+- [01:38:10,640 - 01:38:11,640] It negated it, so...
+- [01:38:11,640 - 01:38:12,640] Yeah.
+- [01:38:12,640 - 01:38:13,640] You negated the...
+- [01:38:13,640 - 01:38:14,640] Yeah.
+- [01:38:14,640 - 01:38:16,640] The y component.
+- [01:38:16,640 - 01:38:20,640] It rotates every vector by 90 degrees.
+- [01:38:20,640 - 01:38:21,640] Just the y component.
+- [01:38:21,640 - 01:38:22,640] What's that?
+- [01:38:22,640 - 01:38:24,640] Rotating it around the x axis.
+- [01:38:24,640 - 01:38:26,640] The y component.
+- [01:38:26,640 - 01:38:29,640] The x component is going into minus...
+- [01:38:29,640 - 01:38:30,640] Right.
+- [01:38:30,640 - 01:38:31,640] So where's the x?
+- [01:38:31,640 - 01:38:32,640] The vector pointing in the x direction
+- [01:38:32,640 - 01:38:35,640] is going into minus the vector pointing in the y.
+- [01:38:35,640 - 01:38:36,640] So which way is it?
+- [01:38:36,640 - 01:38:37,640] So what's it doing?
+- [01:38:37,640 - 01:38:38,640] It's rotating by 90 degrees.
+- [01:38:38,640 - 01:38:39,640] No, but 180 degrees.
+- [01:38:39,640 - 01:38:40,640] Clockwise.
+- [01:38:40,640 - 01:38:41,640] Oh, clock...
+- [01:38:41,640 - 01:38:42,640] Rotating clockwise.
+- [01:38:42,640 - 01:38:43,640] Yeah.
+- [01:38:43,640 - 01:38:44,640] That's what I drew here.
+- [01:38:44,640 - 01:38:45,640] Yeah.
+- [01:38:45,640 - 01:38:46,640] Yeah.
+- [01:38:46,640 - 01:38:47,640] Yeah.
+- [01:38:47,640 - 01:38:48,640] It rotates the vector by 90 degrees.
+- [01:38:48,640 - 01:38:51,140] So you see, what matrices correspond
+- [01:38:51,140 - 01:38:53,640] to is they correspond to a...
+- [01:38:53,640 - 01:38:57,640] Transformations of the vector space.
+- [01:38:57,640 - 01:39:03,640] Stretchings, rotations, more complicated kinds of things.
+- [01:39:03,640 - 01:39:05,640] Another example would be a shear.
+- [01:39:05,640 - 01:39:06,640] A shear...
+- [01:39:06,640 - 01:39:09,140] This is interesting to try to work out
+- [01:39:09,140 - 01:39:11,640] the matrix that corresponds to a shear motion.
+- [01:39:11,640 - 01:39:12,640] Let me tell you what a shear motion is.
+- [01:39:12,640 - 01:39:13,640] A shear motion ish.
+- [01:39:13,640 - 01:39:14,640] What a shear motion ish.
+- [01:39:14,640 - 01:39:19,640] A shear motion takes every...
+- [01:39:19,640 - 01:39:22,640] Well, it...
+- [01:39:22,640 - 01:39:23,640] Oh, boy.
+- [01:39:23,640 - 01:39:25,640] Slides stuff this way.
+- [01:39:25,640 - 01:39:26,640] Okay?
+- [01:39:26,640 - 01:39:30,640] So it slides you to the right by
+- [01:39:30,640 - 01:39:34,640] an amount proportional to how high you are.
+- [01:39:34,640 - 01:39:37,640] It takes every point and shifts it to the
+- [01:39:37,640 - 01:39:40,640] right by an amount proportional to how high you are.
+- [01:39:40,640 - 01:39:41,640] Okay?
+- [01:39:41,640 - 01:39:45,700] to how high you are. There's a
+- [01:39:45,700 - 01:39:49,760] matrix that describes that motion. Deforms the plane,
+- [01:39:50,340 - 01:39:52,410] tilts this axis over, is what it does. I'm
+- [01:39:52,410 - 01:39:54,480] not going to write that one out. I'll see
+- [01:39:54,480 - 01:39:57,090] if you can find it the next time I'll
+- [01:39:57,090 - 01:39:59,700] tell you what the answer is for a shear motion.
+- [01:40:00,400 - 01:40:03,660] But in general, matrices correspond to
+- [01:40:03,660 - 01:40:06,920] transformations, special transformations. Not all transformations
+- [01:40:06,920 - 01:40:10,060] are represented as matrices. These are
+- [01:40:10,060 - 01:40:13,200] the linear transformations, to be specific. But
+- [01:40:13,200 - 01:40:16,060] these are the ones we're going to be interested
+- [01:40:16,060 - 01:40:18,920] in. And we're going to be interested in a
+- [01:40:18,920 - 01:40:22,740] special class of them. Now this is very abstract,
+- [01:40:22,740 - 01:40:26,560] and for the moment you will not see why. This
+- [01:40:26,560 - 01:40:29,290] is just definition. But I've got to give
+- [01:40:29,290 - 01:40:32,020] you some mathematics and then intersperse it with
+- [01:40:32,020 - 01:40:34,460] some physics. I'm going to give you the mathematics
+- [01:40:34,460 - 01:40:36,900] today, and next time I'm going to show you
+- [01:40:36,900 - 01:40:41,099] what the point is. There's a notion of
+- [01:40:41,099 - 01:40:45,299] a Hermitian matrix. The notion of a Hermitian matrix
+- [01:40:45,299 - 01:40:53,639] corresponds to the notion of a real number.
+- [01:40:53,639 - 01:41:01,980] It's a kind of concept of reality versus imaginary,
+- [01:41:01,980 - 01:41:05,540] but it doesn't mean that the entries are all real.
+- [01:41:06,900 - 01:41:11,519] What it means, is that if you take an
+- [01:41:11,519 - 01:41:16,139] element of the matrix, Mij. That's some element of
+- [01:41:16,139 - 01:41:17,789] the matrix. It could be some big matrix, I
+- [01:41:17,789 - 01:41:19,440] don't know how big it is, and it's somewhere
+- [01:41:19,440 - 01:41:27,430] over here. And then there's Mji. Mji is
+- [01:41:27,430 - 01:41:35,420] the reflected matrix element. If this is M12,
+- [01:41:35,420 - 01:41:36,879] it would be over here.
+- [01:41:36,900 - 01:41:38,639] then M21 would be over here.
+- [01:41:39,519 - 01:41:41,339] M35 might be over here.
+- [01:41:41,480 - 01:41:43,080] M53 would be over here.
+- [01:41:43,920 - 01:41:46,460] So interchanging rows and columns
+- [01:41:46,460 - 01:41:48,509] is a kind of reflection of
+- [01:41:48,509 - 01:41:50,559] the matrix about the diagonal here.
+- [01:41:51,120 - 01:41:55,160] A Hermitian matrix is one that, if you reflect it,
+- [01:41:55,940 - 01:41:57,160] complex conjugates.
+- [01:41:57,160 - 01:42:04,160] In other words, Mij is equal to Mji star.
+- [01:42:04,160 - 01:42:07,800] If this matrix was just a number,
+- [01:42:08,460 - 01:42:10,059] let's just take a case of numbers.
+- [01:42:10,840 - 01:42:12,019] And I tell you I have a number
+- [01:42:12,019 - 01:42:14,800] which is equal to its own complex conjugate.
+- [01:42:15,380 - 01:42:16,720] What does that tell you about the number?
+- [01:42:17,320 - 01:42:18,300] That it's real.
+- [01:42:19,040 - 01:42:20,860] That it has no imaginary part.
+- [01:42:22,720 - 01:42:27,680] Now, for a matrix, that's not what it says.
+- [01:42:27,780 - 01:42:29,840] It doesn't say that the entries are real,
+- [01:42:30,480 - 01:42:32,440] but it's a kind of reality property.
+- [01:42:32,440 - 01:42:34,099] Let me give you some examples
+- [01:42:34,100 - 01:42:34,680] of matrices.
+- [01:42:35,820 - 01:42:38,080] One which is Hermitian.
+- [01:42:39,180 - 01:42:40,760] Does everybody know how to spell Hermitian?
+- [01:42:41,640 - 01:42:45,320] H-E-R-M-I-T-I-A-N
+- [01:42:45,320 - 01:42:46,960] A-E-S-H-U-N
+- [01:42:46,960 - 01:42:55,220] Hermitian.
+- [01:42:56,400 - 01:42:59,900] H-E-R-M-I-T-I-A-N
+- [01:42:59,900 - 01:43:00,500] Hermitian.
+- [01:43:00,500 - 01:43:01,060] Okay.
+- [01:43:01,220 - 01:43:02,900] Some people respond to it.
+- [01:43:04,100 - 01:43:05,780] Would you mind writing it up for us?
+- [01:43:05,860 - 01:43:06,060] Yeah.
+- [01:43:06,340 - 01:43:07,260] No, I wouldn't mind.
+- [01:43:07,260 - 01:43:07,540] I don't know.
+- [01:43:18,720 - 01:43:20,070] When you say some people write it
+- [01:43:20,070 - 01:43:21,420] with an E, it's kind of weird.
+- [01:43:21,580 - 01:43:22,160] E-A-N.
+- [01:43:22,860 - 01:43:23,520] E-A-N?
+- [01:43:24,480 - 01:43:25,940] In England, of course.
+- [01:43:26,280 - 01:43:27,060] It's a real place.
+- [01:43:29,620 - 01:43:30,100] What?
+- [01:43:31,100 - 01:43:32,440] Hermite ends with E.
+- [01:43:33,180 - 01:43:34,080] Hermite ends with E.
+- [01:43:34,100 - 01:43:34,440] Yeah.
+- [01:43:35,180 - 01:43:36,500] Hermite is a kind of little bug.
+- [01:43:36,660 - 01:43:36,900] It eats.
+- [01:43:40,720 - 01:43:41,980] That might be polynomial.
+- [01:43:42,840 - 01:43:43,320] Yeah.
+- [01:43:43,640 - 01:43:43,980] Right.
+- [01:43:44,040 - 01:43:44,340] That's right.
+- [01:43:44,360 - 01:43:45,160] It eats polynomials.
+- [01:43:50,880 - 01:43:51,360] Okay.
+- [01:43:52,440 - 01:43:53,970] In other words, when you flip
+- [01:43:53,970 - 01:43:55,500] it, you get the complex conjugate.
+- [01:43:55,820 - 01:43:56,600] Here's some examples.
+- [01:43:56,720 - 01:43:57,140] Oh, oh.
+- [01:43:57,300 - 01:43:57,980] That says one thing.
+- [01:43:58,720 - 01:44:00,860] It says the diagonal elements are real.
+- [01:44:01,800 - 01:44:02,900] Because M11.
+- [01:44:02,900 - 01:44:03,580] What does it say?
+- [01:44:03,700 - 01:44:03,880] It says,
+- [01:44:04,100 - 01:44:05,920] M11 is M star 11.
+- [01:44:06,580 - 01:44:08,380] If you flip the rows and columns
+- [01:44:08,380 - 01:44:10,180] on the diagonal, you get the same answer.
+- [01:44:10,480 - 01:44:12,920] For example, I equals 1, J equals 1.
+- [01:44:13,820 - 01:44:15,800] M11 equals M11 star.
+- [01:44:16,820 - 01:44:18,190] So first of all, it
+- [01:44:18,190 - 01:44:19,560] says the diagonal elements are real.
+- [01:44:20,780 - 01:44:21,820] Real numbers here.
+- [01:44:24,660 - 01:44:25,660] Seven and three.
+- [01:44:30,180 - 01:44:32,110] But then it says that
+- [01:44:32,110 - 01:44:34,040] the off-diagonal elements are complex conjugates.
+- [01:44:34,100 - 01:44:37,580] So here's a matrix, for example, that is not Hermitian.
+- [01:44:38,460 - 01:44:40,300] Four and two.
+- [01:44:41,780 - 01:44:43,740] That's not Hermitian because two is
+- [01:44:43,740 - 01:44:45,700] not the complex conjugate of four.
+- [01:44:46,640 - 01:44:46,840] All right?
+- [01:44:47,920 - 01:44:49,240] This is Hermitian.
+- [01:44:51,280 - 01:44:53,480] Four is the complex conjugate of four.
+- [01:44:54,800 - 01:44:56,720] So if a matrix is real
+- [01:44:56,720 - 01:44:58,640] and it's Hermitian, it's also symmetric.
+- [01:44:59,820 - 01:45:01,760] But here's another one which is Hermitian.
+- [01:45:01,760 - 01:45:01,820] Hermitian.
+- [01:45:02,780 - 01:45:03,960] Four plus I.
+- [01:45:04,100 - 01:45:05,200] And four minus I.
+- [01:45:06,080 - 01:45:07,770] Four plus I is the
+- [01:45:07,770 - 01:45:09,460] complex conjugate of four minus I.
+- [01:45:11,180 - 01:45:14,960] So this is the notion of a Hermitian matrix.
+- [01:45:15,900 - 01:45:17,700] And now I'm going to tell you
+- [01:45:17,700 - 01:45:19,500] that we're going to find next time,
+- [01:45:19,540 - 01:45:21,540] or we're going to postulate next time,
+- [01:45:21,540 - 01:45:25,520] that Hermitian matrices are
+- [01:45:25,520 - 01:45:29,500] the quantum version of observables.
+- [01:45:30,220 - 01:45:32,600] The classical version of observables,
+- [01:45:33,160 - 01:45:33,880] functions,
+- [01:45:34,100 - 01:45:37,280] of the state points.
+- [01:45:38,140 - 01:45:41,260] The quantum version of an observable,
+- [01:45:41,640 - 01:45:42,880] a Hermitian operator,
+- [01:45:43,100 - 01:45:45,860] which means a Hermitian matrix for the moment.
+- [01:45:47,760 - 01:45:48,740] That's where we're going.
+- [01:45:48,820 - 01:45:48,880] Yeah?
+- [01:45:49,860 - 01:45:51,970] What you'd like to do is you'd
+- [01:45:51,970 - 01:45:54,080] like to kick this vector with that matrix
+- [01:45:54,080 - 01:45:59,100] and it's the state of the electron system.
+- [01:45:59,860 - 01:46:02,820] And, well, some of the probabilities is one.
+- [01:46:03,420 - 01:46:03,480] Some?
+- [01:46:03,480 - 01:46:04,060] Is this?
+- [01:46:04,100 - 01:46:06,980] It's not so that we can kick it or...
+- [01:46:06,980 - 01:46:08,420] This is...
+- [01:46:08,420 - 01:46:08,620] No.
+- [01:46:08,900 - 01:46:10,580] When you kick an electron,
+- [01:46:10,740 - 01:46:12,580] you want to kick it with a unitary operator,
+- [01:46:12,700 - 01:46:13,880] not with a Hermitian operator.
+- [01:46:14,600 - 01:46:15,120] What's that?
+- [01:46:15,740 - 01:46:16,320] You come to it.
+- [01:46:16,540 - 01:46:16,740] Okay.
+- [01:46:18,480 - 01:46:19,340] I'll tell you this.
+- [01:46:19,340 - 01:46:21,180] What a unitary operator is,
+- [01:46:21,240 - 01:46:23,300] is one which doesn't change the length of any vector,
+- [01:46:23,880 - 01:46:25,460] which is what I think what you were asking about.
+- [01:46:25,520 - 01:46:26,140] Yeah, one of the vectors.
+- [01:46:26,140 - 01:46:26,360] Right.
+- [01:46:26,860 - 01:46:27,040] Right.
+- [01:46:27,400 - 01:46:29,700] A Hermitian operator does not have that property in general.
+- [01:46:30,580 - 01:46:32,090] So a unitary matrix is
+- [01:46:32,090 - 01:46:33,600] one which doesn't change the length,
+- [01:46:33,600 - 01:46:35,720] and it's the result of an operation
+- [01:46:35,720 - 01:46:37,840] that you actually do to the electron.
+- [01:46:37,980 - 01:46:38,780] You kick it, you hit
+- [01:46:38,780 - 01:46:39,580] it, you do something to it.
+- [01:46:41,440 - 01:46:43,220] I'll tell you very quickly now.
+- [01:46:43,640 - 01:46:46,340] Well, no, I won't bother telling you
+- [01:46:46,340 - 01:46:47,780] because we'll get into it next time.
+- [01:46:48,700 - 01:46:52,540] Matrices, or more generally, linear operators,
+- [01:46:53,380 - 01:46:56,780] are the basic quantum concept of the observable,
+- [01:46:56,880 - 01:46:57,940] the thing that you can measure.
+- [01:46:59,480 - 01:47:02,040] And we're going to then discuss
+- [01:47:02,040 - 01:47:03,340] what kind of...
+- [01:47:03,600 - 01:47:07,840] What kind of matrices correspond to the z component,
+- [01:47:08,060 - 01:47:10,060] the up-down component of the spin?
+- [01:47:10,400 - 01:47:13,180] What kind correspond to the x component of the spin?
+- [01:47:13,280 - 01:47:15,120] What kind correspond to the y component?
+- [01:47:15,760 - 01:47:18,440] What kind of observable, what kind of matrix
+- [01:47:18,440 - 01:47:20,680] corresponds to the component of the spin
+- [01:47:20,680 - 01:47:22,260] along some arbitrary direction?
+- [01:47:23,020 - 01:47:24,180] And so we're going to see then
+- [01:47:24,180 - 01:47:26,560] that there's a connection between
+- [01:47:26,560 - 01:47:29,300] these vectors, matrices, and so forth,
+- [01:47:29,360 - 01:47:31,000] and real directions of space,
+- [01:47:31,000 - 01:47:32,400] but that's going to take some time.
+- [01:47:32,400 - 01:47:33,400] It'll take some space,
+- [01:47:33,600 - 01:47:34,440] and we're going to go through some,
+- [01:47:34,440 - 01:47:35,260] a little more pieces.
+- [01:47:35,260 - 01:47:36,760] Without all of this,
+- [01:47:36,760 - 01:47:39,500] there's no way that you can understand honestly
+- [01:47:39,500 - 01:47:40,800] what entanglement is,
+- [01:47:40,800 - 01:47:43,100] what Bell's inequalities mean,
+- [01:47:43,100 - 01:47:47,440] what the basic setup of quantum mechanics is.
+- [01:47:47,440 - 01:47:48,840] So it's more...
+- [01:47:48,840 - 01:47:50,980] If I had my way,
+- [01:47:50,980 - 01:47:52,680] I would love to be able to teach this
+- [01:47:52,680 - 01:47:53,880] without all this mathematics,
+- [01:47:53,880 - 01:47:54,480] but I can't.
+- [01:47:54,480 - 01:47:55,020] There's no way.
+- [01:47:55,600 - 01:47:57,240] So you want it honestly,
+- [01:47:57,440 - 01:47:58,480] you want it correctly,
+- [01:47:58,680 - 01:48:00,800] you want the basic ingredients
+- [01:48:00,800 - 01:48:02,020] that go into quantum mechanics.
+- [01:48:02,460 - 01:48:03,540] We have to go through,
+- [01:48:03,540 - 01:48:06,040] we have to go through this bit of mathematics.
+- [01:48:06,040 - 01:48:07,540] Once we're through it,
+- [01:48:07,540 - 01:48:10,780] our mission operators, vectors, and so forth,
+- [01:48:10,780 - 01:48:12,580] then the rest is kind of smooth sailing.
+- [01:48:12,580 - 01:48:15,980] It's relatively easy stuff,
+- [01:48:15,980 - 01:48:19,160] but so far we've had to spend more time
+- [01:48:19,160 - 01:48:21,540] on mathematics than I might have liked.
+- [01:48:21,540 - 01:48:22,040] Good.
+- [01:48:22,040 - 01:48:22,540] Okay.
+- [01:48:30,540 - 01:48:32,740] The preceding program is copyrighted
+- [01:48:32,740 - 01:48:34,120] by Stanford University.
+- [01:48:34,519 - 01:48:37,240] Please visit us at stanford.edu.

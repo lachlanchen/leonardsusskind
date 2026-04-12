@@ -1,0 +1,10684 @@
+1
+00:00:00,000 --> 00:00:10,520
+This program is brought to you by Stanford University.
+
+2
+00:00:10,520 --> 00:00:13,200
+Please visit us at stanford.edu.
+
+3
+00:00:15,200 --> 00:00:20,000
+I want to start talking about quantum mechanics now.
+
+4
+00:00:20,000 --> 00:00:21,640
+We haven't talked about quantum mechanics.
+
+5
+00:00:21,640 --> 00:00:25,060
+We've talked about classical physics in a
+
+6
+00:00:25,060 --> 00:00:28,480
+world where what we can call the state
+
+7
+00:00:28,480 --> 00:00:31,640
+space, the space of states, is discrete.
+
+8
+00:00:31,640 --> 00:00:35,600
+We've talked about hopping around from one
+
+9
+00:00:35,600 --> 00:00:39,560
+state to another and how information is counted
+
+10
+00:00:39,560 --> 00:00:44,630
+in bits, how with time you can jump
+
+11
+00:00:44,630 --> 00:00:49,700
+from one state to another, and so forth.
+
+12
+00:00:49,700 --> 00:00:52,450
+That's all classical physics, or
+
+13
+00:00:52,450 --> 00:00:55,200
+it's physics based on classical logic.
+
+14
+00:00:55,200 --> 00:00:57,720
+Classical logic means that the space state...
+
+15
+00:00:58,480 --> 00:01:00,499
+is a Boolean space, so that
+
+16
+00:01:00,499 --> 00:01:02,519
+everybody know what a Boolean space is.
+
+17
+00:01:02,519 --> 00:01:05,159
+If not, all it means is a bunch of
+
+18
+00:01:05,159 --> 00:01:07,800
+points in some space, and that each point represents
+
+19
+00:01:07,800 --> 00:01:10,540
+a state, and all of the logic
+
+20
+00:01:10,540 --> 00:01:13,280
+is classical logic, classical logic that Aristotle would
+
+21
+00:01:13,280 --> 00:01:16,360
+have understood, that Newton would have understood,
+
+22
+00:01:16,360 --> 00:01:19,440
+and so forth, whereas quantum mechanics makes
+
+23
+00:01:19,440 --> 00:01:22,540
+use of an entirely new kind of logic,
+
+24
+00:01:22,540 --> 00:01:25,640
+which is in a very basic way different.
+
+25
+00:01:25,640 --> 00:01:26,640
+To illustrate...
+
+26
+00:01:26,640 --> 00:01:27,640
+I'm sorry.
+
+27
+00:01:27,640 --> 00:01:28,440
+I'm sorry.
+
+28
+00:01:28,480 --> 00:01:30,640
+To illustrate it, I'd like to start with
+
+29
+00:01:30,640 --> 00:01:32,800
+the basic idea, first of all, of a single
+
+30
+00:01:32,800 --> 00:01:36,140
+quantum bit, a qubit.
+
+31
+00:01:36,140 --> 00:01:39,480
+We talked about the classical bit,
+
+32
+00:01:39,480 --> 00:01:42,820
+which is just the heads-tails type distinction.
+
+33
+00:01:42,820 --> 00:01:45,840
+Here we can...
+
+34
+00:01:45,840 --> 00:01:49,680
+I have my prop already.
+
+35
+00:01:49,680 --> 00:01:52,500
+This end is different than this end.
+
+36
+00:01:52,500 --> 00:01:54,480
+If I point it up, that's one state.
+
+37
+00:01:54,480 --> 00:01:58,100
+If I point it down, that's another state.
+
+38
+00:01:58,100 --> 00:01:58,480
+That's the two states.
+
+39
+00:01:58,480 --> 00:01:59,880
+That's the two-state system, and
+
+40
+00:01:59,880 --> 00:02:01,280
+that's all there is to it.
+
+41
+00:02:01,280 --> 00:02:02,280
+Nothing in between.
+
+42
+00:02:02,280 --> 00:02:05,140
+Assume nothing in between.
+
+43
+00:02:05,140 --> 00:02:09,020
+That's the basic classical bit, either
+
+44
+00:02:09,020 --> 00:02:12,900
+up or down, with nothing in between.
+
+45
+00:02:12,900 --> 00:02:15,240
+And of course, you can have many bits.
+
+46
+00:02:15,240 --> 00:02:19,800
+Ooh, that's fun.
+
+47
+00:02:19,800 --> 00:02:22,400
+You can have many bits, two
+
+48
+00:02:22,400 --> 00:02:25,000
+bits, three bits, four bits, whatever.
+
+49
+00:02:25,000 --> 00:02:26,640
+And pretty much all of physics...
+
+50
+00:02:26,640 --> 00:02:27,640
+Anything in physics...
+
+51
+00:02:27,640 --> 00:02:31,140
+Anything in physics can be represented or
+
+52
+00:02:31,140 --> 00:02:34,640
+at least approximated by a system of classical
+
+53
+00:02:34,640 --> 00:02:37,399
+bits, anything in classical physics.
+
+54
+00:02:37,399 --> 00:02:39,319
+Quantum physics, the concept of
+
+55
+00:02:39,319 --> 00:02:41,239
+a bit is very, very different.
+
+56
+00:02:41,239 --> 00:02:44,200
+The concept of a bit of information.
+
+57
+00:02:44,200 --> 00:02:48,239
+And that's what we want to talk about today.
+
+58
+00:02:48,239 --> 00:02:53,640
+The basic, simplest example is the spin of an electron.
+
+59
+00:02:53,640 --> 00:02:55,540
+Now, we don't have to know
+
+60
+00:02:55,540 --> 00:02:57,440
+very much about what spin means.
+
+61
+00:02:57,440 --> 00:03:01,160
+Whether it's spinning or not, this is not very important.
+
+62
+00:03:01,160 --> 00:03:03,869
+What is important is that every
+
+63
+00:03:03,869 --> 00:03:06,579
+electron has associated with it a vector.
+
+64
+00:03:06,579 --> 00:03:08,909
+Now we're going to get into big trouble because
+
+65
+00:03:08,909 --> 00:03:11,240
+there are two things that I'm going to wind
+
+66
+00:03:11,240 --> 00:03:13,579
+up calling vectors.
+
+67
+00:03:13,579 --> 00:03:15,979
+One of them is abstract vector spaces, which
+
+68
+00:03:15,979 --> 00:03:18,380
+we're going to come to in a little while.
+
+69
+00:03:18,380 --> 00:03:22,040
+And the other is vectors in ordinary space.
+
+70
+00:03:22,040 --> 00:03:23,260
+A vector...
+
+71
+00:03:23,260 --> 00:03:24,900
+This I took with me just
+
+72
+00:03:24,900 --> 00:03:26,540
+to illustrate the idea of a vector.
+
+73
+00:03:26,540 --> 00:03:27,320
+You know what a vector is.
+
+74
+00:03:27,320 --> 00:03:27,360
+It's a vector.
+
+75
+00:03:27,360 --> 00:03:27,420
+It's a vector.
+
+76
+00:03:27,420 --> 00:03:27,440
+It's a vector.
+
+77
+00:03:27,440 --> 00:03:29,120
+It's an object in ordinary space.
+
+78
+00:03:29,120 --> 00:03:31,960
+It's an object with a length and a direction.
+
+79
+00:03:31,960 --> 00:03:34,180
+And I put a nail in the end here to
+
+80
+00:03:34,180 --> 00:03:36,400
+indicate the arrow so that you'll know which way it's
+
+81
+00:03:36,400 --> 00:03:37,000
+pointing.
+
+82
+00:03:37,000 --> 00:03:37,980
+It's not pointing at me.
+
+83
+00:03:37,980 --> 00:03:40,660
+It's pointing up in the corner of the room there.
+
+84
+00:03:40,660 --> 00:03:43,700
+That's your naive elementary physics concept of
+
+85
+00:03:43,700 --> 00:03:46,740
+a vector, a thing in ordinary space that
+
+86
+00:03:46,740 --> 00:03:48,260
+has a direction.
+
+87
+00:03:48,260 --> 00:03:50,579
+Of course, it also has components.
+
+88
+00:03:50,579 --> 00:03:53,239
+For example, this vector here has
+
+89
+00:03:53,239 --> 00:03:55,900
+a component in the horizontal direction.
+
+90
+00:03:55,900 --> 00:03:57,360
+It has a component in the vertical direction.
+
+91
+00:03:57,360 --> 00:04:03,480
+But altogether, it's pointing in this other direction.
+
+92
+00:04:03,480 --> 00:04:06,700
+So that's one concept of a vector, a
+
+93
+00:04:06,700 --> 00:04:09,920
+pointer in space with a length and a direction.
+
+94
+00:04:09,920 --> 00:04:13,660
+Now there's another thing we're going to
+
+95
+00:04:13,660 --> 00:04:17,399
+call vectors, which is a more abstract concept.
+
+96
+00:04:17,399 --> 00:04:20,300
+And it's not necessarily, in general, will
+
+97
+00:04:20,300 --> 00:04:23,200
+not be referring to things in space.
+
+98
+00:04:23,200 --> 00:04:24,640
+It's an abstract mathematics.
+
+99
+00:04:24,640 --> 00:04:27,280
+I just wish there was a different word for it.
+
+100
+00:04:27,280 --> 00:04:29,719
+We're going to be talking about vector spaces.
+
+101
+00:04:29,719 --> 00:04:31,999
+I think sometimes when I teach quantum mechanics, I make
+
+102
+00:04:31,999 --> 00:04:34,280
+up a new word for one or the other of
+
+103
+00:04:34,280 --> 00:04:35,280
+them.
+
+104
+00:04:35,280 --> 00:04:36,859
+Call it a schmecter or something.
+
+105
+00:04:36,859 --> 00:04:39,320
+I don't know.
+
+106
+00:04:39,320 --> 00:04:41,559
+But it never really works.
+
+107
+00:04:41,559 --> 00:04:45,049
+So we have to keep in mind that when
+
+108
+00:04:45,049 --> 00:04:48,539
+I use the word vector, sometimes maybe I should
+
+109
+00:04:48,539 --> 00:04:49,539
+just make a new word.
+
+110
+00:04:49,539 --> 00:04:53,000
+Some people say arrow for the old guy.
+
+111
+00:04:53,000 --> 00:04:54,580
+Yeah.
+
+112
+00:04:54,580 --> 00:04:55,400
+That's a good idea.
+
+113
+00:04:55,400 --> 00:04:56,400
+Let's just call this vector.
+
+114
+00:04:56,400 --> 00:04:57,119
+Let's just call this vector.
+
+115
+00:04:57,280 --> 00:04:58,919
+Let's just call this an arrow.
+
+116
+00:04:58,919 --> 00:05:00,659
+You know how long I will last
+
+117
+00:05:00,659 --> 00:05:02,400
+before I start calling it a vector?
+
+118
+00:05:02,400 --> 00:05:04,280
+Not very long.
+
+119
+00:05:04,280 --> 00:05:07,780
+Right.
+
+120
+00:05:07,780 --> 00:05:15,900
+Now the spin of an electron is an arrow.
+
+121
+00:05:15,900 --> 00:05:18,119
+I was going to say vector.
+
+122
+00:05:18,119 --> 00:05:19,119
+I can't help it.
+
+123
+00:05:19,119 --> 00:05:20,119
+No, I cannot.
+
+124
+00:05:20,119 --> 00:05:21,119
+I can't do it.
+
+125
+00:05:21,119 --> 00:05:22,119
+I'm going to call it a vector.
+
+126
+00:05:22,119 --> 00:05:23,119
+I'm going to call it a vector.
+
+127
+00:05:23,119 --> 00:05:24,580
+I can't help myself.
+
+128
+00:05:24,580 --> 00:05:25,580
+Let's call it a spatial vector.
+
+129
+00:05:25,580 --> 00:05:26,760
+How about a spatial vector?
+
+130
+00:05:26,760 --> 00:05:29,580
+A spatial vector means one in ordinary space.
+
+131
+00:05:29,580 --> 00:05:32,510
+So if my fist is the electron over
+
+132
+00:05:32,510 --> 00:05:35,440
+here, the electron has attached to it a mathematical
+
+133
+00:05:35,440 --> 00:05:36,440
+vector.
+
+134
+00:05:36,440 --> 00:05:37,940
+It's not a rod like this,
+
+135
+00:05:37,940 --> 00:05:39,440
+but it's a sense of directionality.
+
+136
+00:05:39,440 --> 00:05:42,480
+Really what it is is a direction of twist.
+
+137
+00:05:42,480 --> 00:05:47,370
+But just think of it as every electron has
+
+138
+00:05:47,370 --> 00:05:52,260
+attached to it a vector which can point, you
+
+139
+00:05:52,260 --> 00:05:54,700
+might think, in any direction in space.
+
+140
+00:05:54,700 --> 00:05:55,290
+In fact, in some sense,
+
+141
+00:05:55,290 --> 00:05:55,880
+it can point in any direction.
+
+142
+00:05:55,880 --> 00:05:55,920
+It can point in any direction.
+
+143
+00:05:55,920 --> 00:05:56,400
+It can point in any direction.
+
+144
+00:05:56,400 --> 00:05:56,599
+It can point in any direction.
+
+145
+00:05:56,600 --> 00:05:57,600
+It can point in any direction in space.
+
+146
+00:05:57,600 --> 00:06:00,220
+And in fact, that vector can
+
+147
+00:06:00,220 --> 00:06:02,840
+also be thought of as a magnet.
+
+148
+00:06:02,840 --> 00:06:05,060
+It can be thought of as a bar
+
+149
+00:06:05,060 --> 00:06:07,280
+magnet with a north pole and a south pole.
+
+150
+00:06:07,280 --> 00:06:09,360
+So here's the north pole with a nail.
+
+151
+00:06:09,360 --> 00:06:11,560
+The south pole is over here.
+
+152
+00:06:11,560 --> 00:06:15,520
+Every electron is a little magnet.
+
+153
+00:06:15,520 --> 00:06:18,450
+And the amount, the strength of the magnet,
+
+154
+00:06:18,450 --> 00:06:21,380
+which is measured in some units, which I forget
+
+155
+00:06:21,380 --> 00:06:23,810
+what they're called, strength of
+
+156
+00:06:23,810 --> 00:06:26,240
+magnet units, is some particular number.
+
+157
+00:06:26,240 --> 00:06:30,490
+So that means all electrons, their space
+
+158
+00:06:30,490 --> 00:06:34,740
+vectors that go with them, it's called the
+
+159
+00:06:34,740 --> 00:06:36,460
+magnetic moment.
+
+160
+00:06:36,460 --> 00:06:39,880
+The magnetic moments are all the same length.
+
+161
+00:06:39,880 --> 00:06:41,780
+They may point in different directions,
+
+162
+00:06:41,780 --> 00:06:43,680
+but they're all the same length.
+
+163
+00:06:43,680 --> 00:06:48,660
+And we can simply imagine that they are objects
+
+164
+00:06:48,660 --> 00:06:53,640
+all of the same length, or a common length,
+
+165
+00:06:53,640 --> 00:06:55,880
+but different directions.
+
+166
+00:06:56,240 --> 00:07:00,480
+Now, let's talk about ordinary classical magnets.
+
+167
+00:07:00,480 --> 00:07:03,410
+And I want to talk about the concept
+
+168
+00:07:03,410 --> 00:07:06,340
+of preparing a state and detecting a state.
+
+169
+00:07:06,340 --> 00:07:09,980
+We're still thinking very classically for the moment.
+
+170
+00:07:09,980 --> 00:07:12,030
+Everything I explained here
+
+171
+00:07:12,030 --> 00:07:14,080
+was completely with classical logic.
+
+172
+00:07:14,080 --> 00:07:17,360
+So here's our electron.
+
+173
+00:07:17,360 --> 00:07:20,740
+And it has attached to it an arrow
+
+174
+00:07:20,740 --> 00:07:24,120
+with a north pole and a south pole.
+
+175
+00:07:24,120 --> 00:07:25,880
+And let's say I want to prepare.
+
+176
+00:07:25,880 --> 00:07:30,400
+Let's say I want to prepare that
+
+177
+00:07:30,400 --> 00:07:34,920
+electron in a configuration where its magnetic moment,
+
+178
+00:07:34,920 --> 00:07:37,800
+its little vector, is pointing this north
+
+179
+00:07:37,800 --> 00:07:40,680
+there that doesn't stand for its direction.
+
+180
+00:07:40,680 --> 00:07:43,600
+It stands for the north pole of the magnet.
+
+181
+00:07:43,600 --> 00:07:45,790
+I want to have the north pole, I
+
+182
+00:07:45,790 --> 00:07:47,980
+want the magnet to be pointed vertically upward.
+
+183
+00:07:47,980 --> 00:07:49,340
+I want to prepare it that way.
+
+184
+00:07:49,340 --> 00:07:50,120
+How do I do it?
+
+185
+00:07:50,120 --> 00:07:50,620
+OK.
+
+186
+00:07:50,620 --> 00:07:52,389
+What you do is you
+
+187
+00:07:52,389 --> 00:07:54,159
+simply create a large magnetic moment.
+
+188
+00:07:54,159 --> 00:07:54,920
+And you're going to do that.
+
+189
+00:07:54,920 --> 00:07:55,420
+And you're going to do that.
+
+190
+00:07:55,420 --> 00:07:55,880
+And you're going to do that.
+
+191
+00:07:55,880 --> 00:07:56,380
+And you're going to do that.
+
+192
+00:07:56,380 --> 00:07:59,960
+So let's say you create a magnetic field.
+
+193
+00:07:59,960 --> 00:08:03,760
+For example, you put a, you create a magnet.
+
+194
+00:08:03,760 --> 00:08:06,300
+This is not a very good pen.
+
+195
+00:08:06,300 --> 00:08:08,380
+You create a magnet.
+
+196
+00:08:08,380 --> 00:08:11,440
+You can do it as an electromagnet if you like.
+
+197
+00:08:11,440 --> 00:08:15,540
+Turn on some current to make an electromagnet with
+
+198
+00:08:15,540 --> 00:08:19,640
+a north pole over here, a south pole over here.
+
+199
+00:08:19,640 --> 00:08:22,530
+And the electron is supposed
+
+200
+00:08:22,530 --> 00:08:25,420
+to be in the magnetic field.
+
+201
+00:08:25,420 --> 00:08:27,920
+What will happen to that little bar magnet?
+
+202
+00:08:27,920 --> 00:08:29,870
+Well, what actually will happen to the little
+
+203
+00:08:29,870 --> 00:08:31,820
+bar magnet, if you know anything about how
+
+204
+00:08:31,820 --> 00:08:36,460
+bar magnets move in magnetic fields, is it will precess.
+
+205
+00:08:36,460 --> 00:08:39,240
+It will not just jump up into
+
+206
+00:08:39,240 --> 00:08:42,020
+a right position, not unless there's some friction.
+
+207
+00:08:42,020 --> 00:08:44,740
+Instead what it will do is it
+
+208
+00:08:44,740 --> 00:08:47,460
+will precess like this around the magnetic field.
+
+209
+00:08:47,460 --> 00:08:49,530
+Everything imagine is in a vacuum, so
+
+210
+00:08:49,530 --> 00:08:51,600
+there's no friction or anything like that.
+
+211
+00:08:51,600 --> 00:08:53,920
+The electron will precess around like this.
+
+212
+00:08:53,920 --> 00:08:56,780
+That's what a little bar magnet would do.
+
+213
+00:08:56,780 --> 00:08:58,730
+But sooner or later it will
+
+214
+00:08:58,730 --> 00:09:00,680
+get rid of that precessional energy.
+
+215
+00:09:00,680 --> 00:09:04,479
+Anybody know how it gets rid of the precessional energy?
+
+216
+00:09:04,479 --> 00:09:06,939
+It radiates some radiation.
+
+217
+00:09:06,939 --> 00:09:11,309
+It radiates a little bit of electromagnetic
+
+218
+00:09:11,309 --> 00:09:15,680
+radiation, or a lot, depending on the circumstances,
+
+219
+00:09:15,680 --> 00:09:18,480
+on the size of the magnetic field and so forth.
+
+220
+00:09:18,480 --> 00:09:21,190
+It will radiate away its energy
+
+221
+00:09:21,190 --> 00:09:23,900
+and come into the best energetic field.
+
+222
+00:09:23,900 --> 00:09:26,120
+Magnetic configuration, which is pointing straight up,
+
+223
+00:09:26,120 --> 00:09:28,340
+where the north pole of the magnet
+
+224
+00:09:28,340 --> 00:09:31,050
+is pointing toward the south pole, where the
+
+225
+00:09:31,050 --> 00:09:33,760
+north pole of the electron is pointing toward
+
+226
+00:09:33,760 --> 00:09:38,640
+the south pole of the
+
+227
+00:09:38,640 --> 00:09:43,520
+magnet, only which part I've drawn.
+
+228
+00:09:43,520 --> 00:09:45,520
+So that's the preparation.
+
+229
+00:09:45,520 --> 00:09:48,590
+If we do it with a very, very
+
+230
+00:09:48,590 --> 00:09:51,660
+big magnetic field, it will radiate that energy quickly,
+
+231
+00:09:51,660 --> 00:09:53,819
+and very quickly come to equilibrium.
+
+232
+00:09:53,820 --> 00:09:55,800
+And then it will radiate to equilibrium with
+
+233
+00:09:55,800 --> 00:09:57,780
+the north pole of the electron pointing vertically
+
+234
+00:09:57,780 --> 00:09:58,780
+upward.
+
+235
+00:09:58,780 --> 00:10:00,720
+If you like, if we don't want to get,
+
+236
+00:10:00,720 --> 00:10:02,660
+I was going to use the word entangled, but embroiled
+
+237
+00:10:02,660 --> 00:10:05,250
+with the question of where the electron is,
+
+238
+00:10:05,250 --> 00:10:07,840
+just imagine in your head that I hold the
+
+239
+00:10:07,840 --> 00:10:11,120
+electron absolutely fixed in position, so that
+
+240
+00:10:11,120 --> 00:10:14,400
+the only thing that can do anything interesting
+
+241
+00:10:14,400 --> 00:10:17,860
+is the direction of the magnetic field.
+
+242
+00:10:17,860 --> 00:10:18,860
+Okay.
+
+243
+00:10:18,860 --> 00:10:21,260
+So after a small amount
+
+244
+00:10:21,260 --> 00:10:23,660
+of time, that electron will be...
+
+245
+00:10:23,820 --> 00:10:27,660
+Pointing in the up direction.
+
+246
+00:10:27,660 --> 00:10:31,630
+We could, if we liked, we could prepare
+
+247
+00:10:31,630 --> 00:10:35,600
+the electron in a different configuration by rotating
+
+248
+00:10:35,600 --> 00:10:39,350
+the magnetic poles to something like
+
+249
+00:10:39,350 --> 00:10:43,100
+this, south-north, we could prepare the electron
+
+250
+00:10:43,100 --> 00:10:49,780
+initially so that it's pointing in that direction.
+
+251
+00:10:49,780 --> 00:10:50,860
+So we start with an electron pointing in some direction.
+
+252
+00:10:50,860 --> 00:10:51,360
+And then we can start to
+
+253
+00:10:51,360 --> 00:10:51,860
+prepare the electron in a different direction.
+
+254
+00:10:51,860 --> 00:10:52,860
+So we start with an electron pointing in some direction.
+
+255
+00:10:52,860 --> 00:10:53,700
+Okay.
+
+256
+00:10:53,820 --> 00:10:59,230
+Now we want to measure, we want to do a
+
+257
+00:10:59,230 --> 00:11:04,640
+measurement to find out which direction, this is a second
+
+258
+00:11:04,640 --> 00:11:07,900
+kind of experiment, it's the detection.
+
+259
+00:11:07,900 --> 00:11:10,070
+What first was the preparation, and then we
+
+260
+00:11:10,070 --> 00:11:12,240
+do some things to the electron, whatever it
+
+261
+00:11:12,240 --> 00:11:15,150
+is, and next we want to find out,
+
+262
+00:11:15,150 --> 00:11:18,060
+we want to detect which direction the electron is
+
+263
+00:11:18,060 --> 00:11:19,360
+pointing in.
+
+264
+00:11:19,360 --> 00:11:23,060
+Is it pointing in that direction?
+
+265
+00:11:23,060 --> 00:11:26,300
+Is it pointing in some other direction?
+
+266
+00:11:26,300 --> 00:11:28,579
+Mainly we could ask what's its
+
+267
+00:11:28,579 --> 00:11:30,859
+angle relative to the magnetic field.
+
+268
+00:11:30,859 --> 00:11:33,249
+And to answer that question, we do exactly the
+
+269
+00:11:33,249 --> 00:11:35,640
+same thing that we did to detect it, to
+
+270
+00:11:35,640 --> 00:11:37,339
+prepare the electron.
+
+271
+00:11:37,339 --> 00:11:40,579
+We stick it into the large magnetic field
+
+272
+00:11:40,579 --> 00:11:43,819
+and wait for it to radiate some radiation.
+
+273
+00:11:43,819 --> 00:11:45,040
+Alright.
+
+274
+00:11:45,040 --> 00:11:48,050
+Now if this, if all of physics were
+
+275
+00:11:48,050 --> 00:11:51,060
+classical, and this were really a perfectly classical
+
+276
+00:11:51,060 --> 00:11:52,060
+setup.
+
+277
+00:11:52,060 --> 00:11:53,060
+Well...
+
+278
+00:11:53,060 --> 00:11:57,720
+If we had a classical compass here
+
+279
+00:11:57,720 --> 00:12:02,380
+instead of a quantum mechanical electron, then the,
+
+280
+00:12:02,380 --> 00:12:04,919
+again, the electron would eventually point its
+
+281
+00:12:04,919 --> 00:12:07,459
+way itself up, but one measure of the
+
+282
+00:12:07,459 --> 00:12:12,099
+angle would be how much radiation it emitted.
+
+283
+00:12:12,099 --> 00:12:15,919
+For example, if it was almost perfectly upward
+
+284
+00:12:15,919 --> 00:12:19,739
+to begin with, if it were almost perfectly
+
+285
+00:12:19,739 --> 00:12:20,300
+upward, then it only has a little bit of radiation.
+
+286
+00:12:20,300 --> 00:12:20,739
+It's not going to radiate much.
+
+287
+00:12:20,739 --> 00:12:21,180
+It's going to radiate a little bit.
+
+288
+00:12:21,180 --> 00:12:21,680
+It's going to radiate a little bit.
+
+289
+00:12:21,680 --> 00:12:22,180
+It's going to radiate a little bit.
+
+290
+00:12:22,180 --> 00:12:22,680
+It's going to radiate a little bit.
+
+291
+00:12:22,680 --> 00:12:23,020
+It's going to radiate a little bit.
+
+292
+00:12:23,020 --> 00:12:25,640
+It's going to radiate a little bit of extra energy.
+
+293
+00:12:25,640 --> 00:12:27,660
+Perfectly upward has the minimum energy.
+
+294
+00:12:27,660 --> 00:12:30,520
+When the North Pole is pointing toward the South Pole.
+
+295
+00:12:30,520 --> 00:12:35,860
+That's the minimum energy of that little pointer here.
+
+296
+00:12:35,860 --> 00:12:37,060
+Rotate it away a little bit.
+
+297
+00:12:37,060 --> 00:12:39,700
+You give it a little bit of magnetic energy,
+
+298
+00:12:39,700 --> 00:12:42,340
+and of course, after you've put it into the,
+
+299
+00:12:42,340 --> 00:12:45,000
+after you've let it come to rest again, it
+
+300
+00:12:45,000 --> 00:12:47,660
+does so by giving off that little bit of energy.
+
+301
+00:12:47,660 --> 00:12:48,560
+Alright.
+
+302
+00:12:48,560 --> 00:12:51,540
+If you were to go to a more extreme situation.
+
+303
+00:12:51,540 --> 00:12:52,640
+Where you point it the other way.
+
+304
+00:12:52,640 --> 00:12:57,310
+If you pointed the electron in some horizontally,
+
+305
+00:12:57,310 --> 00:13:01,980
+then by the time it got vertical, it would
+
+306
+00:13:01,980 --> 00:13:04,300
+emit even more energy.
+
+307
+00:13:04,300 --> 00:13:06,840
+Finally, if you pointed it straight down,
+
+308
+00:13:06,840 --> 00:13:09,380
+it would emit the maximum amount of energy
+
+309
+00:13:09,380 --> 00:13:14,720
+in the form of radiation.
+
+310
+00:13:14,720 --> 00:13:17,540
+And so you could measure at least the
+
+311
+00:13:17,540 --> 00:13:20,360
+angle relative to the magnetic field by measuring
+
+312
+00:13:20,360 --> 00:13:22,260
+how much radiation comes out.
+
+313
+00:13:22,640 --> 00:13:24,100
+Alright.
+
+314
+00:13:24,100 --> 00:13:27,760
+And the answer would be a nice
+
+315
+00:13:27,760 --> 00:13:31,420
+continuous function of the angle of the electron.
+
+316
+00:13:31,420 --> 00:13:33,929
+So that when the, so when the
+
+317
+00:13:33,929 --> 00:13:36,439
+electron was pointing up, no energy comes out.
+
+318
+00:13:36,439 --> 00:13:44,400
+This is angle horizontally.
+
+319
+00:13:44,400 --> 00:13:46,520
+Energy emitted if the angle is
+
+320
+00:13:46,520 --> 00:13:48,640
+zero, that's when it's pointing straight up.
+
+321
+00:13:48,640 --> 00:13:50,400
+No energy.
+
+322
+00:13:50,400 --> 00:13:51,640
+If the angle is downward.
+
+323
+00:13:51,640 --> 00:13:52,640
+Right.
+
+324
+00:13:52,640 --> 00:13:54,430
+So you would measure the maximum energy, and then
+
+325
+00:13:54,430 --> 00:13:56,220
+as you turn it over all the ways, back
+
+326
+00:13:56,220 --> 00:13:58,980
+to zero energy and so forth.
+
+327
+00:13:58,980 --> 00:14:02,270
+So you would measure then, the same way
+
+328
+00:14:02,270 --> 00:14:05,560
+that you prepare, you measure the spin, the spin
+
+329
+00:14:05,560 --> 00:14:09,580
+direction of the electron by letting it emit a photon.
+
+330
+00:14:09,580 --> 00:14:12,520
+By letting it emit some radiation, excuse me.
+
+331
+00:14:12,520 --> 00:14:15,060
+And counting up the amount of the radiation.
+
+332
+00:14:15,060 --> 00:14:17,130
+Now I've told you completely the
+
+333
+00:14:17,130 --> 00:14:19,200
+wrong story for a real electron.
+
+334
+00:14:19,200 --> 00:14:21,040
+This is not the way it works.
+
+335
+00:14:21,040 --> 00:14:22,000
+This is not the way it works for any electron.
+
+336
+00:14:22,000 --> 00:14:22,439
+Alright.
+
+337
+00:14:22,440 --> 00:14:22,940
+So you would measure the maximum energy, and
+
+338
+00:14:22,940 --> 00:14:23,440
+then as you turn it over all the ways,
+
+339
+00:14:23,440 --> 00:14:24,440
+this is what happens.
+
+340
+00:14:24,440 --> 00:14:25,440
+This is the way it works for a genuine electron.
+
+341
+00:14:25,440 --> 00:14:27,410
+Something else happens, and I'll
+
+342
+00:14:27,410 --> 00:14:29,380
+tell you now what it is.
+
+343
+00:14:29,380 --> 00:14:30,380
+And it's very weird.
+
+344
+00:14:30,380 --> 00:14:34,270
+It really does illustrate the
+
+345
+00:14:34,270 --> 00:14:38,160
+weirdness of the quantum world.
+
+346
+00:14:38,160 --> 00:14:41,920
+First of all, no matter which way you create
+
+347
+00:14:41,920 --> 00:14:45,680
+the electron in here, I won't even try to
+
+348
+00:14:45,680 --> 00:14:47,820
+give a classical picture.
+
+349
+00:14:47,820 --> 00:14:49,810
+If I try to give a
+
+350
+00:14:49,810 --> 00:14:51,800
+classical picture, I will prejudice the story.
+
+351
+00:14:51,800 --> 00:14:53,800
+You do something to the electron,
+
+352
+00:14:53,800 --> 00:14:55,800
+and you put it over here.
+
+353
+00:14:55,800 --> 00:14:58,850
+Whatever you do to the electron, one thing
+
+354
+00:14:58,850 --> 00:15:01,900
+you could do to the electron is initially
+
+355
+00:15:01,900 --> 00:15:05,740
+prepare it in some funny angle.
+
+356
+00:15:05,740 --> 00:15:09,240
+But whatever you do to the electron, you put
+
+357
+00:15:09,240 --> 00:15:12,740
+it over here, you turn on the magnetic field,
+
+358
+00:15:12,740 --> 00:15:15,240
+and one of two things happens.
+
+359
+00:15:15,240 --> 00:15:17,719
+Only two things can happen.
+
+360
+00:15:17,719 --> 00:15:19,800
+One is it emits no photon.
+
+361
+00:15:19,800 --> 00:15:20,800
+Okay.
+
+362
+00:15:20,800 --> 00:15:21,800
+Okay.
+
+363
+00:15:21,800 --> 00:15:25,439
+No electromagnetic radiation.
+
+364
+00:15:25,439 --> 00:15:29,079
+The other is that it emits one quantum,
+
+365
+00:15:29,079 --> 00:15:32,719
+one photon of electromagnetic radiation of a very
+
+366
+00:15:32,719 --> 00:15:35,040
+particular frequency.
+
+367
+00:15:35,040 --> 00:15:40,189
+It's the particular frequency that corresponds to
+
+368
+00:15:40,189 --> 00:15:45,339
+the energy of jumping from down to up.
+
+369
+00:15:45,339 --> 00:15:48,569
+Whatever that energy is, you can emit a
+
+370
+00:15:48,569 --> 00:15:51,800
+photon of just exactly that energy, and no other
+
+371
+00:15:51,800 --> 00:15:52,800
+energy.
+
+372
+00:15:52,800 --> 00:15:53,800
+Okay.
+
+373
+00:15:53,800 --> 00:15:57,350
+So there seems to be, it's almost as
+
+374
+00:15:57,350 --> 00:16:00,900
+if the electron had only two possible configurations.
+
+375
+00:16:00,900 --> 00:16:03,140
+You jumble it up, you don't know what you've done
+
+376
+00:16:03,140 --> 00:16:05,380
+to it, you stick it in here, and it seems
+
+377
+00:16:05,380 --> 00:16:07,740
+there's only two things that can happen.
+
+378
+00:16:07,740 --> 00:16:10,950
+One is that it behaves as if it were
+
+379
+00:16:10,950 --> 00:16:14,160
+pointing up, in which case it gives off no photon.
+
+380
+00:16:14,160 --> 00:16:14,799
+The other is that it behaves
+
+381
+00:16:14,799 --> 00:16:15,439
+as if it were pointing downward.
+
+382
+00:16:15,439 --> 00:16:16,439
+Okay.
+
+383
+00:16:16,439 --> 00:16:17,439
+Okay.
+
+384
+00:16:17,439 --> 00:16:17,939
+So it's almost as if the
+
+385
+00:16:17,939 --> 00:16:18,439
+electron had only two possible configurations.
+
+386
+00:16:18,439 --> 00:16:18,939
+The other is that it behaves
+
+387
+00:16:18,939 --> 00:16:19,439
+as if it were pointing downward.
+
+388
+00:16:19,439 --> 00:16:20,439
+Okay.
+
+389
+00:16:20,439 --> 00:16:21,439
+Okay.
+
+390
+00:16:21,800 --> 00:16:22,300
+So it's almost as if it were pointing
+
+391
+00:16:22,300 --> 00:16:22,800
+up, in which case it gives off no photon.
+
+392
+00:16:22,800 --> 00:16:25,079
+And gives off the photon.
+
+393
+00:16:25,079 --> 00:16:26,629
+And those are the only two
+
+394
+00:16:26,629 --> 00:16:28,180
+things that happen, that can happen.
+
+395
+00:16:28,180 --> 00:16:29,339
+Alright.
+
+396
+00:16:29,339 --> 00:16:33,560
+But depending on, now that seems a little weird.
+
+397
+00:16:33,560 --> 00:16:34,620
+Why?
+
+398
+00:16:34,620 --> 00:16:38,150
+Because supposing you prepared the electron by
+
+399
+00:16:38,150 --> 00:16:41,680
+putting it into a magnetic field that would
+
+400
+00:16:41,680 --> 00:16:45,699
+have the effect of freezing it into a direction,
+
+401
+00:16:45,699 --> 00:16:49,719
+let's say at 45 degrees, or even better, at
+
+402
+00:16:49,719 --> 00:16:50,800
+90 degrees relative.
+
+403
+00:16:50,800 --> 00:16:51,800
+In other words, 90 degrees.
+
+404
+00:16:51,800 --> 00:16:52,800
+In other words, horizontal.
+
+405
+00:16:52,800 --> 00:16:57,110
+Then we would think to ourselves, well that
+
+406
+00:16:57,110 --> 00:17:01,420
+electron is now pointing in some other direction.
+
+407
+00:17:01,420 --> 00:17:04,430
+Now when I stick it into the vertical
+
+408
+00:17:04,430 --> 00:17:07,440
+field, you would think that the response would be
+
+409
+00:17:07,440 --> 00:17:09,829
+something different than if it
+
+410
+00:17:09,829 --> 00:17:12,220
+were just plain up or down.
+
+411
+00:17:12,220 --> 00:17:13,220
+But no.
+
+412
+00:17:13,220 --> 00:17:17,300
+The response is always just one of two responses.
+
+413
+00:17:17,300 --> 00:17:19,720
+Either it does give off a photon or it doesn't.
+
+414
+00:17:19,720 --> 00:17:21,359
+And always of the same energy.
+
+415
+00:17:21,800 --> 00:17:24,300
+So it seems that in some sense,
+
+416
+00:17:24,300 --> 00:17:26,800
+there are only two states for the electron.
+
+417
+00:17:26,800 --> 00:17:30,680
+Either it's pointing up or it's pointing down.
+
+418
+00:17:30,680 --> 00:17:31,820
+But wait a minute.
+
+419
+00:17:31,820 --> 00:17:34,630
+What about if you put the electron into
+
+420
+00:17:34,630 --> 00:17:37,440
+a magnetic field pointing in yet a different
+
+421
+00:17:37,440 --> 00:17:39,139
+direction?
+
+422
+00:17:39,139 --> 00:17:41,419
+Then you're going to find that there are
+
+423
+00:17:41,419 --> 00:17:43,700
+only two states for the electron, either pointing
+
+424
+00:17:43,700 --> 00:17:47,560
+this way or pointing that way.
+
+425
+00:17:47,560 --> 00:17:48,560
+Something's very confusing.
+
+426
+00:17:48,560 --> 00:17:50,800
+How many states does the electron actually have?
+
+427
+00:17:50,800 --> 00:17:53,760
+Is it only up or down?
+
+428
+00:17:53,760 --> 00:17:56,419
+Or can you make it point in some other direction?
+
+429
+00:17:56,419 --> 00:17:58,459
+And if you do make it point in some
+
+430
+00:17:58,459 --> 00:18:00,500
+other direction, how come when you stick it into
+
+431
+00:18:00,500 --> 00:18:04,380
+the up-down detector here, the detector that
+
+432
+00:18:04,380 --> 00:18:08,260
+detects the direction in the up-down direction,
+
+433
+00:18:08,260 --> 00:18:09,879
+that you only get two possibilities?
+
+434
+00:18:09,879 --> 00:18:12,219
+How come there isn't a
+
+435
+00:18:12,219 --> 00:18:14,560
+continuum of possibilities in between?
+
+436
+00:18:14,560 --> 00:18:17,219
+That's the puzzle, or that's one of the
+
+437
+00:18:17,219 --> 00:18:19,879
+puzzles of quantum mechanics, that it behaves as if
+
+438
+00:18:19,879 --> 00:18:20,680
+there are only two states.
+
+439
+00:18:20,680 --> 00:18:22,680
+There are only two states, up
+
+440
+00:18:22,680 --> 00:18:24,680
+or down, when you measure it.
+
+441
+00:18:24,680 --> 00:18:28,350
+But you can nevertheless prepare that electron
+
+442
+00:18:28,350 --> 00:18:32,020
+pointing in any direction by using a magnetic
+
+443
+00:18:32,020 --> 00:18:34,060
+field in the appropriate direction.
+
+444
+00:18:34,060 --> 00:18:38,690
+Now, the one thing, though, that is true
+
+445
+00:18:38,690 --> 00:18:43,320
+is if you started with the electron pointing
+
+446
+00:18:43,320 --> 00:18:46,800
+upward, let's suppose we created the electron
+
+447
+00:18:46,800 --> 00:18:50,280
+pointing upward by putting it in this very
+
+448
+00:18:50,280 --> 00:18:50,680
+strong position.
+
+449
+00:18:50,680 --> 00:18:51,680
+So, let's say we have a strong magnetic field.
+
+450
+00:18:51,680 --> 00:18:54,180
+We'll shut off the magnetic field for
+
+451
+00:18:54,180 --> 00:18:56,680
+a while, and then turn it back on.
+
+452
+00:18:56,680 --> 00:18:59,200
+The answer is, we will get no photon.
+
+453
+00:18:59,200 --> 00:19:01,680
+The electron is pointing up.
+
+454
+00:19:01,680 --> 00:19:05,960
+Supposing we first create the electron in
+
+455
+00:19:05,960 --> 00:19:10,240
+some other direction, pointing along the 45-degree
+
+456
+00:19:10,240 --> 00:19:15,860
+axis here, and then we do the vertical experiment.
+
+457
+00:19:15,860 --> 00:19:18,880
+We turn on the vertical magnetic field.
+
+458
+00:19:18,880 --> 00:19:19,320
+We will either discover the electron pointing
+
+459
+00:19:19,320 --> 00:19:19,760
+in the opposite direction, or we will either
+
+460
+00:19:19,760 --> 00:19:20,280
+discover the electron pointing in the opposite direction.
+
+461
+00:19:20,280 --> 00:19:22,610
+We will either discover that it's up
+
+462
+00:19:22,610 --> 00:19:24,940
+or down, but with a probability distribution.
+
+463
+00:19:24,940 --> 00:19:29,399
+It will not be definitely up or definitely down.
+
+464
+00:19:29,399 --> 00:19:32,789
+We can do this experiment repeatedly, over
+
+465
+00:19:32,789 --> 00:19:36,180
+and over and over, many, many times identically.
+
+466
+00:19:36,180 --> 00:19:38,879
+Sometimes we will find a photon emitted.
+
+467
+00:19:38,879 --> 00:19:41,800
+Sometimes we won't.
+
+468
+00:19:41,800 --> 00:19:45,050
+The more the electron was initially
+
+469
+00:19:45,050 --> 00:19:48,300
+pointing vertically upward, the less the probability
+
+470
+00:19:48,300 --> 00:19:49,280
+is that we will emit that single photon.
+
+471
+00:19:49,280 --> 00:19:49,579
+So, we'll have to make sure that we're
+
+472
+00:19:49,579 --> 00:19:49,879
+not going to get any more than one electron.
+
+473
+00:19:49,879 --> 00:19:50,069
+So, we'll have to make sure that we're
+
+474
+00:19:50,069 --> 00:19:50,260
+not going to get any more than one electron.
+
+475
+00:19:50,280 --> 00:19:53,530
+The maximum probability for emitting that photon
+
+476
+00:19:53,530 --> 00:19:56,780
+will be if we were originally pointing
+
+477
+00:19:56,780 --> 00:19:58,220
+down.
+
+478
+00:19:58,220 --> 00:20:01,230
+Somewhere in between, the probability will be
+
+479
+00:20:01,230 --> 00:20:04,240
+half for a photon to be emitted.
+
+480
+00:20:04,240 --> 00:20:08,140
+In fact, that's exactly the case if
+
+481
+00:20:08,140 --> 00:20:12,040
+the original electron were prepared horizontally, by a
+
+482
+00:20:12,040 --> 00:20:15,400
+horizontal setup, and then put into the vertical
+
+483
+00:20:15,400 --> 00:20:18,760
+field, there will be a probability of a half
+
+484
+00:20:18,760 --> 00:20:19,879
+that it emits the photon.
+
+485
+00:20:19,880 --> 00:20:23,420
+And a half that it doesn't emit the photon.
+
+486
+00:20:23,420 --> 00:20:26,440
+So, there's something extraordinary going on here.
+
+487
+00:20:26,440 --> 00:20:32,840
+In some sense, it seems there are only two configurations.
+
+488
+00:20:32,840 --> 00:20:34,900
+Every time you measure that electron, you
+
+489
+00:20:34,900 --> 00:20:36,960
+will either find it's up or it's down.
+
+490
+00:20:36,960 --> 00:20:37,460
+Nothing else.
+
+491
+00:20:37,460 --> 00:20:39,260
+Nothing in between.
+
+492
+00:20:39,260 --> 00:20:42,310
+But there are situations where it will
+
+493
+00:20:42,310 --> 00:20:45,360
+be probabilistically, if you do the same thing
+
+494
+00:20:45,360 --> 00:20:47,180
+many, many times, you'll
+
+495
+00:20:47,180 --> 00:20:49,000
+find there's a probability distribution.
+
+496
+00:20:49,000 --> 00:20:49,410
+And it's that probability distribution
+
+497
+00:20:49,410 --> 00:20:49,820
+that will determine the probability distribution.
+
+498
+00:20:49,820 --> 00:20:52,940
+And it's that probability distribution which has
+
+499
+00:20:52,940 --> 00:20:56,060
+some memory of which way you originally
+
+500
+00:20:56,060 --> 00:20:57,540
+created the photon.
+
+501
+00:20:57,540 --> 00:21:00,220
+So a quantum bit is a confusing thing.
+
+502
+00:21:00,220 --> 00:21:01,890
+It looks like it has only two states, up or
+
+503
+00:21:01,890 --> 00:21:03,560
+down, but then you can make it point in some
+
+504
+00:21:03,560 --> 00:21:07,310
+other direction, so that it
+
+505
+00:21:07,310 --> 00:21:11,060
+looks like there's other states possible.
+
+506
+00:21:11,060 --> 00:21:14,520
+Again, when you measure it, you find only two possibilities.
+
+507
+00:21:14,520 --> 00:21:17,419
+It's a confusing entity, a quantum bit.
+
+508
+00:21:17,419 --> 00:21:18,419
+So, what's the probability?
+
+509
+00:21:18,419 --> 00:21:19,419
+Well, it's a quantum bit.
+
+510
+00:21:19,420 --> 00:21:21,020
+It's a quantum bit.
+
+511
+00:21:21,020 --> 00:21:22,020
+Any questions so far?
+
+512
+00:21:22,020 --> 00:21:23,020
+Yeah?
+
+513
+00:21:23,020 --> 00:21:24,020
+This magnet is a large size.
+
+514
+00:21:24,020 --> 00:21:25,020
+Say it again?
+
+515
+00:21:25,020 --> 00:21:29,020
+This magnet is a large size.
+
+516
+00:21:29,020 --> 00:21:32,020
+Not the magnet that's attached to an electron, is it?
+
+517
+00:21:32,020 --> 00:21:33,020
+Right.
+
+518
+00:21:33,020 --> 00:21:37,020
+The magnet that creates the field.
+
+519
+00:21:37,020 --> 00:21:38,020
+Oh, yeah.
+
+520
+00:21:38,020 --> 00:21:39,020
+The magnet that creates the field.
+
+521
+00:21:39,020 --> 00:21:40,020
+Is a large object.
+
+522
+00:21:40,020 --> 00:21:41,020
+Yeah.
+
+523
+00:21:41,020 --> 00:21:44,520
+If one would try to test and create a
+
+524
+00:21:44,520 --> 00:21:48,020
+field to interact with, would it be possible to
+
+525
+00:21:49,420 --> 00:21:52,020
+do it with small objects, like other electrons?
+
+526
+00:21:52,020 --> 00:21:53,020
+Oh.
+
+527
+00:21:53,020 --> 00:21:54,020
+Like, what would it be?
+
+528
+00:21:54,020 --> 00:21:57,100
+That's when we're going to start
+
+529
+00:21:57,100 --> 00:22:00,180
+to talk about entanglement between electrons.
+
+530
+00:22:00,180 --> 00:22:02,300
+But let's do it one at a time,
+
+531
+00:22:02,300 --> 00:22:04,420
+and then we'll come to the two-electron system.
+
+532
+00:22:04,420 --> 00:22:06,520
+The two-electron system is the one
+
+533
+00:22:06,520 --> 00:22:08,620
+that's really interesting, because that's where entanglement
+
+534
+00:22:08,620 --> 00:22:09,920
+starts to happen.
+
+535
+00:22:09,920 --> 00:22:14,580
+So let's not try that one yet.
+
+536
+00:22:14,580 --> 00:22:15,580
+Little steps for little feet.
+
+537
+00:22:15,580 --> 00:22:16,580
+Yeah, question.
+
+538
+00:22:16,580 --> 00:22:17,580
+Yes.
+
+539
+00:22:17,580 --> 00:22:18,580
+To get this probability distribution, you have to do this.
+
+540
+00:22:18,580 --> 00:22:19,420
+Yeah.
+
+541
+00:22:19,420 --> 00:22:22,420
+Do you have to do the whole experiment
+
+542
+00:22:22,420 --> 00:22:25,420
+over and over again, prepare it, and then measure?
+
+543
+00:22:25,420 --> 00:22:26,420
+If you want to get it experimentally.
+
+544
+00:22:26,420 --> 00:22:27,420
+Or can you prepare it
+
+545
+00:22:27,420 --> 00:22:28,420
+once, and then turn it back?
+
+546
+00:22:28,420 --> 00:22:31,420
+Well, there's no way that with one
+
+547
+00:22:31,420 --> 00:22:34,420
+experiment that you can accumulate a probability distribution.
+
+548
+00:22:34,420 --> 00:22:37,420
+But can you prepare it once?
+
+549
+00:22:37,420 --> 00:22:38,420
+Prepare it this way.
+
+550
+00:22:38,420 --> 00:22:41,920
+Measure, turn the field off, measure
+
+551
+00:22:41,920 --> 00:22:45,420
+again, turn the field off, measure again.
+
+552
+00:22:45,420 --> 00:22:46,420
+Or do you have to
+
+553
+00:22:46,420 --> 00:22:47,420
+prepare it each time in between?
+
+554
+00:22:47,420 --> 00:22:47,920
+No, you have to prepare
+
+555
+00:22:47,920 --> 00:22:48,420
+it again each time in between.
+
+556
+00:22:48,420 --> 00:22:49,420
+Okay.
+
+557
+00:22:49,420 --> 00:22:50,420
+Right.
+
+558
+00:22:50,420 --> 00:22:51,420
+Yes, yes, yes.
+
+559
+00:22:51,420 --> 00:22:52,420
+You can prepare a lot of electrons at once.
+
+560
+00:22:52,420 --> 00:22:53,420
+But I think the question goes something like this.
+
+561
+00:22:53,420 --> 00:22:54,420
+Supposing you prepared it this way, and then measured it.
+
+562
+00:22:54,420 --> 00:22:54,920
+And then measure the same one
+
+563
+00:22:54,920 --> 00:22:55,420
+again, and then measure the same one.
+
+564
+00:22:55,420 --> 00:22:56,420
+No.
+
+565
+00:22:56,420 --> 00:22:56,920
+Once you discovered this was up the first
+
+566
+00:22:56,920 --> 00:22:57,420
+time, it will be up every time afterwards.
+
+567
+00:22:57,420 --> 00:22:57,920
+And so what you'll discover in the
+
+568
+00:22:57,920 --> 00:22:58,420
+second experiment, the third experiment, the fourth
+
+569
+00:22:58,420 --> 00:22:59,420
+experiment, no photon.
+
+570
+00:22:59,420 --> 00:22:59,920
+So what you'll discover will be
+
+571
+00:22:59,920 --> 00:23:00,420
+that it's still up until then.
+
+572
+00:23:00,420 --> 00:23:00,920
+So you just have to do the same
+
+573
+00:23:00,920 --> 00:23:01,420
+thing over and over again, and then measure.
+
+574
+00:23:01,420 --> 00:23:02,420
+Really nice.
+
+575
+00:23:02,420 --> 00:23:02,920
+You have to do the same
+
+576
+00:23:02,920 --> 00:23:03,420
+thing about all the other ones.
+
+577
+00:23:03,420 --> 00:23:03,920
+And then you've just got to measure
+
+578
+00:23:03,920 --> 00:23:04,420
+this way again and then measure it.
+
+579
+00:23:04,420 --> 00:23:05,420
+Or maybe measure it once.
+
+580
+00:23:05,420 --> 00:23:06,420
+No.
+
+581
+00:23:06,420 --> 00:23:09,540
+Once you discovered this was up the first
+
+582
+00:23:09,540 --> 00:23:12,660
+time, it will be up every time afterwards
+
+583
+00:23:12,660 --> 00:23:15,900
+And so what you will discover in the
+
+584
+00:23:15,900 --> 00:23:19,140
+second experiment, the third experiment, fourth experiment, no photon
+
+585
+00:23:19,140 --> 00:23:22,420
+So once the experiment has fixed
+
+586
+00:23:22,420 --> 00:23:25,700
+it to be up, that's it
+
+587
+00:23:25,700 --> 00:23:30,340
+It has no memory anymore of this
+
+588
+00:23:30,340 --> 00:23:32,060
+On the other hand, as... yeah?
+
+589
+00:23:32,060 --> 00:23:35,099
+Preparing means waiting to see what happens and
+
+590
+00:23:35,099 --> 00:23:38,139
+then when it's... if it emits, you assume that's...
+
+591
+00:23:38,139 --> 00:23:39,340
+Right, right
+
+592
+00:23:39,340 --> 00:23:41,300
+So you're just doing that again
+
+593
+00:23:41,300 --> 00:23:44,260
+That's what I'm calling... that's one way of...
+
+594
+00:23:44,260 --> 00:23:46,380
+That's one way of preparing an
+
+595
+00:23:46,380 --> 00:23:48,500
+electron, yeah, it's the usual way, yeah
+
+596
+00:23:48,500 --> 00:23:50,319
+You're talking about an electron by
+
+597
+00:23:50,319 --> 00:23:52,139
+itself, not an electron in an atom
+
+598
+00:23:52,139 --> 00:23:53,579
+I'm talking about an electron by
+
+599
+00:23:53,579 --> 00:23:55,020
+itself, not in an atom, yeah
+
+600
+00:23:55,020 --> 00:23:58,260
+Well, I'm talking about an electron perhaps which
+
+601
+00:23:58,260 --> 00:24:01,500
+is in some potential which nails its position down
+
+602
+00:24:01,500 --> 00:24:02,040
+So that it wouldn't...
+
+603
+00:24:02,040 --> 00:24:04,120
+We don't have to worry about it moving
+
+604
+00:24:04,120 --> 00:24:06,300
+We're just concentrating now purely
+
+605
+00:24:06,300 --> 00:24:08,480
+on the spin of the electron
+
+606
+00:24:08,480 --> 00:24:12,179
+So imagine driving a nail through the heart
+
+607
+00:24:12,179 --> 00:24:15,879
+of the electron and nailing it to the blackboard
+
+608
+00:24:15,879 --> 00:24:18,280
+It still has the ability for its spin to move
+
+609
+00:24:18,280 --> 00:24:23,200
+Is the magnetic field of one electron constant?
+
+610
+00:24:23,200 --> 00:24:24,920
+Is the electron field... say it again
+
+611
+00:24:24,920 --> 00:24:28,639
+The magnetic field constant for one electron
+
+612
+00:24:28,639 --> 00:24:29,680
+Is it...
+
+613
+00:24:29,680 --> 00:24:31,240
+Constant in time
+
+614
+00:24:31,240 --> 00:24:31,960
+Oh, constant...
+
+615
+00:24:31,960 --> 00:24:34,440
+Well, okay, so here's what we're imagining
+
+616
+00:24:34,440 --> 00:24:36,120
+Imagine I want to do an experiment
+
+617
+00:24:36,120 --> 00:24:40,200
+So I take an electron which is there originally
+
+618
+00:24:40,200 --> 00:24:41,840
+I don't know how I got
+
+619
+00:24:41,840 --> 00:24:43,480
+it there, any way I like
+
+620
+00:24:43,480 --> 00:24:46,400
+Without the magnetic field being there
+
+621
+00:24:46,400 --> 00:24:48,560
+Now I want to measure that electron
+
+622
+00:24:48,560 --> 00:24:51,340
+So I very quickly turn
+
+623
+00:24:51,340 --> 00:24:54,120
+on a very large magnetic field
+
+624
+00:24:54,120 --> 00:24:55,240
+How do you do that?
+
+625
+00:24:55,240 --> 00:24:57,140
+If it's an electromagnet, it's
+
+626
+00:24:57,140 --> 00:24:59,040
+very easy, you flip a switch
+
+627
+00:24:59,040 --> 00:25:01,840
+And all of a sudden there's a large electric field...
+
+628
+00:25:01,840 --> 00:25:04,879
+Sorry, magnetic field pointing upward
+
+629
+00:25:04,879 --> 00:25:06,879
+And if that electric...
+
+630
+00:25:06,879 --> 00:25:09,159
+If that magnetic field is large enough
+
+631
+00:25:09,159 --> 00:25:13,000
+It will very quickly cause the electron to radiate
+
+632
+00:25:13,000 --> 00:25:15,740
+Okay, so I would say, no, we want to be
+
+633
+00:25:15,740 --> 00:25:18,480
+thinking about turning on the field to do the measurement
+
+634
+00:25:18,480 --> 00:25:21,760
+Or to do the preparation
+
+635
+00:25:21,760 --> 00:25:22,439
+Yeah
+
+636
+00:25:22,439 --> 00:25:24,759
+In the single-electron series, is
+
+637
+00:25:24,759 --> 00:25:27,080
+it possible to prepare facing south
+
+638
+00:25:27,080 --> 00:25:30,720
+And then put it into the magnetic field system?
+
+639
+00:25:30,720 --> 00:25:31,679
+Put it on the switch and then...
+
+640
+00:25:31,680 --> 00:25:34,520
+The outcome is facing north
+
+641
+00:25:34,520 --> 00:25:35,640
+That's right
+
+642
+00:25:35,640 --> 00:25:37,160
+If you start...
+
+643
+00:25:37,160 --> 00:25:40,040
+If you start turning over the whole device
+
+644
+00:25:40,040 --> 00:25:46,200
+You start with south in the bottom
+
+645
+00:25:46,200 --> 00:25:47,400
+Where south belongs
+
+646
+00:25:47,400 --> 00:25:50,360
+And north in the top where north belongs
+
+647
+00:25:50,360 --> 00:25:53,760
+Then the electron will point down eventually
+
+648
+00:25:53,760 --> 00:25:55,680
+Now you remove the magnetic field
+
+649
+00:25:55,680 --> 00:25:57,720
+Okay, you remove the magnetic field
+
+650
+00:25:57,720 --> 00:25:59,400
+Or suddenly reverse...
+
+651
+00:25:59,400 --> 00:26:01,600
+Just turn off the magnet
+
+652
+00:26:01,680 --> 00:26:04,200
+And reverse the polarity
+
+653
+00:26:04,200 --> 00:26:05,700
+You can do that by
+
+654
+00:26:05,700 --> 00:26:07,200
+reversing the current in the electromagnet
+
+655
+00:26:07,200 --> 00:26:09,440
+So that suddenly the south pole is on
+
+656
+00:26:09,440 --> 00:26:11,680
+top and the north pole is on the bottom
+
+657
+00:26:11,680 --> 00:26:16,320
+The electron was down
+
+658
+00:26:16,320 --> 00:26:18,420
+In a very short amount of time,
+
+659
+00:26:18,420 --> 00:26:20,520
+it'll flip up and give off a photon
+
+660
+00:26:20,520 --> 00:26:22,520
+Was that the question?
+
+661
+00:26:22,520 --> 00:26:24,640
+The probability of that is one?
+
+662
+00:26:24,640 --> 00:26:25,960
+And then...
+
+663
+00:26:25,960 --> 00:26:28,840
+The probability of that is one, yeah
+
+664
+00:26:28,840 --> 00:26:30,180
+The probability that it will
+
+665
+00:26:30,180 --> 00:26:31,520
+give off... Yes, in that circumstance...
+
+666
+00:26:31,680 --> 00:26:33,860
+The probability that it will
+
+667
+00:26:33,860 --> 00:26:36,040
+give off a photon is one
+
+668
+00:26:36,040 --> 00:26:39,440
+If on the other hand, this weren't perfectly aligned
+
+669
+00:26:39,440 --> 00:26:41,800
+And you were at some cattywampus angle
+
+670
+00:26:41,800 --> 00:26:44,760
+Then the probability would be less than one
+
+671
+00:26:44,760 --> 00:26:46,540
+And it's those probabilities
+
+672
+00:26:46,540 --> 00:26:48,320
+which constitute the experimental...
+
+673
+00:26:48,320 --> 00:26:49,040
+Yeah
+
+674
+00:26:49,040 --> 00:26:52,040
+So it must put energy into the electron in order
+
+675
+00:26:52,040 --> 00:26:55,040
+for it to keep emitting in all these experiments, right?
+
+676
+00:26:55,040 --> 00:26:57,520
+So somehow it must get like charged up or...
+
+677
+00:26:57,520 --> 00:26:58,960
+No, it doesn't get electrically charged
+
+678
+00:26:58,960 --> 00:27:00,800
+It has electric charge
+
+679
+00:27:00,800 --> 00:27:01,240
+Turning...
+
+680
+00:27:01,240 --> 00:27:03,320
+Now, turning on...
+
+681
+00:27:03,320 --> 00:27:10,280
+Turning on the electric current going through these magnets
+
+682
+00:27:10,280 --> 00:27:12,560
+You'll have to do a little more...
+
+683
+00:27:12,560 --> 00:27:15,580
+You'll have to put a little more energy
+
+684
+00:27:15,580 --> 00:27:18,600
+into the magnet because the electron is there
+
+685
+00:27:18,600 --> 00:27:20,720
+In other words, originally...
+
+686
+00:27:20,720 --> 00:27:23,960
+The energy comes from the energy that
+
+687
+00:27:23,960 --> 00:27:27,200
+you used to turn on the magnetic field
+
+688
+00:27:27,200 --> 00:27:28,960
+One more
+
+689
+00:27:28,960 --> 00:27:31,200
+In the case of the electron, actually...
+
+690
+00:27:31,240 --> 00:27:32,320
+What's the importance of 29?
+
+691
+00:27:32,320 --> 00:27:34,380
+So, the longer you turn this
+
+692
+00:27:34,380 --> 00:27:36,440
+magnet, the faster it emits a photon
+
+693
+00:27:36,440 --> 00:27:37,780
+Are we supposed to assume that's
+
+694
+00:27:37,780 --> 00:27:39,120
+instantaneous or what happens in that transition?
+
+695
+00:27:39,120 --> 00:27:40,600
+Well, the point...
+
+696
+00:27:40,600 --> 00:27:41,320
+Yeah, I mean, that's...
+
+697
+00:27:41,320 --> 00:27:43,600
+The language is probably wrong
+
+698
+00:27:43,600 --> 00:27:45,520
+Here's what I can tell you
+
+699
+00:27:45,520 --> 00:27:49,280
+If you make the magnetic field sufficiently large
+
+700
+00:27:49,280 --> 00:27:55,680
+The electron will very quickly emit in a photon
+
+701
+00:27:55,680 --> 00:27:57,960
+Now, the correct answer in general...
+
+702
+00:27:57,960 --> 00:27:59,080
+Is that the photon will be emitted at
+
+703
+00:27:59,080 --> 00:28:00,200
+a more or less random time in the planet
+
+704
+00:28:00,200 --> 00:28:00,560
+One more interesting thing, if you
+
+705
+00:28:00,560 --> 00:28:00,920
+try and go for it for real...
+
+706
+00:28:01,240 --> 00:28:06,240
+in the same way that a radioactive atom will decay
+
+707
+00:28:06,240 --> 00:28:08,240
+It decays with a half-life
+
+708
+00:28:08,240 --> 00:28:10,240
+It decays with a half-life
+
+709
+00:28:10,240 --> 00:28:12,740
+So if you put the electron into
+
+710
+00:28:12,740 --> 00:28:15,240
+the magnetic field in the wrong direction
+
+711
+00:28:15,240 --> 00:28:19,240
+it will, with a certain half-life, decay
+
+712
+00:28:19,240 --> 00:28:21,740
+Decay means give off a photon
+
+713
+00:28:21,740 --> 00:28:24,240
+and write itself in the other direction
+
+714
+00:28:24,240 --> 00:28:27,240
+But if you make the magnetic field large enough
+
+715
+00:28:27,240 --> 00:28:29,240
+that half-life will be very short
+
+716
+00:28:29,240 --> 00:28:32,240
+and so it will very suddenly flip
+
+717
+00:28:32,240 --> 00:28:33,240
+Okay?
+
+718
+00:28:33,240 --> 00:28:34,740
+No, but I'm talking not about
+
+719
+00:28:34,740 --> 00:28:36,240
+when it gives off the electron
+
+720
+00:28:36,240 --> 00:28:38,240
+but when it gives off the photon
+
+721
+00:28:38,240 --> 00:28:40,740
+but during the transition,
+
+722
+00:28:40,740 --> 00:28:43,240
+when it's transitioning from the...
+
+723
+00:28:43,240 --> 00:28:46,240
+One of the things we've learned in quantum mechanics
+
+724
+00:28:46,240 --> 00:28:48,740
+is to ask questions only if
+
+725
+00:28:48,740 --> 00:28:51,240
+we know how to make the measurement
+
+726
+00:28:51,240 --> 00:28:55,240
+If you can tell me in detail how to measure
+
+727
+00:28:55,240 --> 00:28:59,240
+when the electron emits its photon
+
+728
+00:28:59,240 --> 00:29:01,240
+then we can try to answer it
+
+729
+00:29:01,240 --> 00:29:04,240
+I would say that's one of these questions
+
+730
+00:29:04,240 --> 00:29:06,240
+that you're not supposed to answer
+
+731
+00:29:06,240 --> 00:29:09,240
+There's a thing called the energy-time uncertainty principle
+
+732
+00:29:09,240 --> 00:29:11,240
+And if you know the energy of the electron
+
+733
+00:29:11,240 --> 00:29:13,240
+you're uncertain about the time
+
+734
+00:29:13,240 --> 00:29:16,240
+But let's come to uncertainty principles later
+
+735
+00:29:16,240 --> 00:29:17,240
+It's a good question
+
+736
+00:29:17,240 --> 00:29:19,240
+But if you have like a million electrons
+
+737
+00:29:19,240 --> 00:29:21,240
+you can measure the intensity of the light
+
+738
+00:29:21,240 --> 00:29:22,740
+Yes, you can measure the
+
+739
+00:29:22,740 --> 00:29:24,240
+intensity of the light given off
+
+740
+00:29:24,240 --> 00:29:25,740
+but any given photon would
+
+741
+00:29:25,740 --> 00:29:27,240
+be emitted at a random time
+
+742
+00:29:27,240 --> 00:29:29,240
+Well, if you know how many electrons there are
+
+743
+00:29:29,240 --> 00:29:31,240
+and what the intensity of the light was
+
+744
+00:29:31,240 --> 00:29:33,240
+you can sort of count the books
+
+745
+00:29:33,240 --> 00:29:35,240
+Yes, but you can't say when any given photon
+
+746
+00:29:35,240 --> 00:29:38,240
+or when any given electron decayed
+
+747
+00:29:38,240 --> 00:29:40,240
+Right
+
+748
+00:29:40,240 --> 00:29:41,240
+Right
+
+749
+00:29:41,240 --> 00:29:44,240
+Okay, let's...
+
+750
+00:29:44,240 --> 00:29:46,240
+Well, what you've got to know is that
+
+751
+00:29:46,240 --> 00:29:48,240
+the more energy you put into the system
+
+752
+00:29:48,240 --> 00:29:51,240
+the more quickly it will lift the dead
+
+753
+00:29:51,240 --> 00:29:53,240
+The bigger you make the magnetic field
+
+754
+00:29:53,240 --> 00:29:54,740
+the more energy you put
+
+755
+00:29:54,740 --> 00:29:56,240
+in, the more quickly it will...
+
+756
+00:29:56,240 --> 00:29:58,240
+Right, absolutely
+
+757
+00:29:58,240 --> 00:29:59,240
+Absolutely
+
+758
+00:29:59,240 --> 00:30:02,240
+More quickly in the sense of a smaller half-life
+
+759
+00:30:02,240 --> 00:30:04,240
+Right
+
+760
+00:30:04,240 --> 00:30:08,240
+Okay, so first of all we're dealing with a theory
+
+761
+00:30:08,240 --> 00:30:12,240
+that only has prob... that has a probabilistic description
+
+762
+00:30:12,240 --> 00:30:17,240
+And we will see ultimately
+
+763
+00:30:17,240 --> 00:30:19,240
+that there is really prob...
+
+764
+00:30:19,240 --> 00:30:22,240
+There's probably no way around the fact
+
+765
+00:30:22,240 --> 00:30:25,240
+that the description has to be probabilistic
+
+766
+00:30:25,240 --> 00:30:27,240
+at least at some level
+
+767
+00:30:28,240 --> 00:30:33,240
+The mathematics of the state space
+
+768
+00:30:33,240 --> 00:30:35,240
+of the concept of a state
+
+769
+00:30:35,240 --> 00:30:38,240
+The state is different in quantum mechanics
+
+770
+00:30:38,240 --> 00:30:40,240
+It's clearly different
+
+771
+00:30:40,240 --> 00:30:43,240
+If this were... clearly different
+
+772
+00:30:43,240 --> 00:30:45,240
+It's a system with only two states
+
+773
+00:30:45,240 --> 00:30:46,240
+you think
+
+774
+00:30:46,240 --> 00:30:48,240
+But then again it seems to be
+
+775
+00:30:48,240 --> 00:30:50,240
+able to be oriented in any direction
+
+776
+00:30:50,240 --> 00:30:56,240
+The mathematics of quantum mechanics
+
+777
+00:30:56,240 --> 00:30:58,240
+and the states are...
+
+778
+00:30:58,240 --> 00:31:01,240
+And in particular the states of a quantum bit
+
+779
+00:31:01,240 --> 00:31:04,240
+are not the mathematics of a set of two points
+
+780
+00:31:04,240 --> 00:31:06,240
+They're not the Boolean mathematics
+
+781
+00:31:06,240 --> 00:31:08,240
+of a set of two points
+
+782
+00:31:08,240 --> 00:31:11,240
+The thing which describes...
+
+783
+00:31:11,240 --> 00:31:14,240
+The mathematics describes a quantum state
+
+784
+00:31:14,240 --> 00:31:16,240
+is a vector space
+
+785
+00:31:16,240 --> 00:31:20,240
+Now I use vector in a different sense
+
+786
+00:31:20,240 --> 00:31:23,240
+It is no longer an arrow in ordinary space
+
+787
+00:31:23,240 --> 00:31:25,240
+It is a mathematical abstract...
+
+788
+00:31:26,240 --> 00:31:28,240
+vector space
+
+789
+00:31:28,240 --> 00:31:30,240
+whose character you'll come to understand
+
+790
+00:31:30,240 --> 00:31:32,240
+if you persist and...
+
+791
+00:31:32,240 --> 00:31:34,240
+and persist at it a little bit
+
+792
+00:31:34,240 --> 00:31:37,240
+you will begin to understand
+
+793
+00:31:37,240 --> 00:31:39,240
+what this vector space is
+
+794
+00:31:39,240 --> 00:31:44,240
+and how it characterizes the possible configurations
+
+795
+00:31:44,240 --> 00:31:46,240
+or the possible states of an electron
+
+796
+00:31:46,240 --> 00:31:49,240
+and how it can be consistent with this fact here
+
+797
+00:31:49,240 --> 00:31:51,240
+Okay
+
+798
+00:31:51,240 --> 00:31:54,240
+I'm going to spend a little bit of time now
+
+799
+00:31:54,240 --> 00:31:56,240
+just doing some abstract mathematics
+
+800
+00:31:56,240 --> 00:31:58,240
+and then we'll seek to interpret it
+
+801
+00:31:58,240 --> 00:32:00,240
+and to interpret the state of the electron
+
+802
+00:32:00,240 --> 00:32:01,740
+I'm going to tell you
+
+803
+00:32:01,740 --> 00:32:03,240
+what a linear vector space is
+
+804
+00:32:03,240 --> 00:32:05,240
+what a vector space is
+
+805
+00:32:05,240 --> 00:32:08,240
+A vector space is a collection of objects
+
+806
+00:32:08,240 --> 00:32:12,240
+and here are the rules for an abstract vector space
+
+807
+00:32:12,240 --> 00:32:15,240
+As I said, do not confuse this
+
+808
+00:32:15,240 --> 00:32:18,240
+with the pointer that...
+
+809
+00:32:18,240 --> 00:32:21,240
+that is a vector in ordinary space
+
+810
+00:32:21,240 --> 00:32:24,240
+This is just an abstract, complete, abstract
+
+811
+00:32:24,240 --> 00:32:25,240
+mathematical abstract
+
+812
+00:32:25,240 --> 00:32:28,240
+an abstract, completely abstract concept
+
+813
+00:32:31,240 --> 00:32:33,240
+First of all, a vector is an object
+
+814
+00:32:33,240 --> 00:32:35,240
+and we'll label it
+
+815
+00:32:35,240 --> 00:32:37,240
+like that
+
+816
+00:32:38,240 --> 00:32:40,240
+It's an object with a set of rules
+
+817
+00:32:40,240 --> 00:32:42,240
+It's a collection of objects
+
+818
+00:32:42,240 --> 00:32:44,240
+It's a collection of objects
+
+819
+00:32:45,240 --> 00:32:46,240
+with a rule
+
+820
+00:32:46,240 --> 00:32:48,240
+First of all, a rule
+
+821
+00:32:48,240 --> 00:32:50,240
+that any vector
+
+822
+00:32:50,240 --> 00:32:52,240
+can be multiplied
+
+823
+00:32:52,240 --> 00:32:54,240
+by a constant
+
+824
+00:32:54,240 --> 00:32:56,240
+to get a new vector
+
+825
+00:32:58,240 --> 00:33:00,240
+This gives a new vector
+
+826
+00:33:00,240 --> 00:33:01,240
+We could call it...
+
+827
+00:33:01,240 --> 00:33:03,240
+Let's call it A prime
+
+828
+00:33:03,240 --> 00:33:06,240
+So there's a concept of multiplication by a constant
+
+829
+00:33:06,240 --> 00:33:08,240
+Now, first of all, let me tell you
+
+830
+00:33:08,240 --> 00:33:10,240
+that the constants we're going to be talking about
+
+831
+00:33:10,240 --> 00:33:12,240
+are complex numbers, not real numbers
+
+832
+00:33:12,240 --> 00:33:14,240
+Anybody here not familiar with
+
+833
+00:33:14,240 --> 00:33:16,240
+the concept of a complex number?
+
+834
+00:33:16,240 --> 00:33:21,240
+If so, raise your hand and be humiliated
+
+835
+00:33:24,240 --> 00:33:30,240
+Okay
+
+836
+00:33:30,240 --> 00:33:31,240
+All right, now
+
+837
+00:33:31,240 --> 00:33:33,240
+If you really don't know what a complex number...
+
+838
+00:33:33,240 --> 00:33:34,740
+It may be that you
+
+839
+00:33:34,740 --> 00:33:36,240
+know it, but by another word
+
+840
+00:33:36,240 --> 00:33:39,240
+Now, if you really don't know about complex numbers
+
+841
+00:33:39,240 --> 00:33:40,240
+look them up
+
+842
+00:33:40,240 --> 00:33:42,240
+because you're going to need them
+
+843
+00:33:42,240 --> 00:33:43,240
+All right, a complex...
+
+844
+00:33:43,240 --> 00:33:46,240
+Remember this number i
+
+845
+00:33:46,240 --> 00:33:49,240
+i is the square root of minus one
+
+846
+00:33:49,240 --> 00:33:52,240
+Now, minus one has no number that's...
+
+847
+00:33:52,240 --> 00:33:54,240
+that's... that's... that's... who's...
+
+848
+00:33:54,240 --> 00:33:57,240
+There's no number, ordinary number
+
+849
+00:33:57,240 --> 00:33:59,240
+whose square...
+
+850
+00:33:59,240 --> 00:34:02,240
+whose square is minus one
+
+851
+00:34:02,240 --> 00:34:04,240
+So there is no square root of minus one
+
+852
+00:34:04,240 --> 00:34:07,240
+Any number times itself is always positive, right?
+
+853
+00:34:07,240 --> 00:34:09,239
+Three times three is nine
+
+854
+00:34:09,239 --> 00:34:12,239
+Minus three times minus three is also nine
+
+855
+00:34:12,239 --> 00:34:15,239
+But mathematicians many, many, many years ago
+
+856
+00:34:15,239 --> 00:34:20,239
+invented the abstract idea of an imaginary number
+
+857
+00:34:20,239 --> 00:34:22,239
+They called it imaginary
+
+858
+00:34:22,239 --> 00:34:24,239
+and said
+
+859
+00:34:24,239 --> 00:34:27,739
+Let it be that i
+
+860
+00:34:27,739 --> 00:34:31,239
+squared is equal to minus one
+
+861
+00:34:31,239 --> 00:34:34,239
+Invent a new number
+
+862
+00:34:34,239 --> 00:34:37,239
+Okay, we know how to use those numbers
+
+863
+00:34:37,239 --> 00:34:40,239
+I'm not going to...
+
+864
+00:34:40,239 --> 00:34:44,239
+I'm not going to spend any time at it
+
+865
+00:34:44,239 --> 00:34:46,239
+Whoever raised their hand
+
+866
+00:34:46,239 --> 00:34:47,739
+Are they familiar with i equals
+
+867
+00:34:47,739 --> 00:34:49,239
+the square root of minus one?
+
+868
+00:34:49,239 --> 00:34:50,239
+Yes
+
+869
+00:34:50,239 --> 00:34:51,239
+Yes
+
+870
+00:34:51,239 --> 00:34:52,239
+All right
+
+871
+00:34:52,239 --> 00:34:53,239
+Now
+
+872
+00:34:53,239 --> 00:34:55,239
+Let's look at complex numbers
+
+873
+00:34:55,239 --> 00:34:58,240
+Complex numbers are what happens if you take two...
+
+874
+00:34:58,240 --> 00:35:01,240
+two real numbers, ordinary numbers
+
+875
+00:35:01,240 --> 00:35:02,240
+Let's call it
+
+876
+00:35:02,240 --> 00:35:04,240
+a and b
+
+877
+00:35:04,240 --> 00:35:05,240
+different a
+
+878
+00:35:05,240 --> 00:35:08,240
+plus i b
+
+879
+00:35:08,240 --> 00:35:09,240
+In other words
+
+880
+00:35:09,240 --> 00:35:11,240
+If you add a real number
+
+881
+00:35:11,240 --> 00:35:13,240
+to an imaginary number
+
+882
+00:35:13,240 --> 00:35:15,240
+you get a complex number
+
+883
+00:35:15,240 --> 00:35:18,240
+That's the whole definition of a complex number
+
+884
+00:35:18,240 --> 00:35:21,240
+You can multiply complex numbers
+
+885
+00:35:21,240 --> 00:35:22,240
+So you have to remember
+
+886
+00:35:22,240 --> 00:35:24,240
+You use the ordinary rules of arithmetic
+
+887
+00:35:24,240 --> 00:35:25,740
+except you have to remember
+
+888
+00:35:25,740 --> 00:35:27,240
+that i squared is minus one
+
+889
+00:35:27,240 --> 00:35:29,240
+So for example
+
+890
+00:35:29,240 --> 00:35:30,240
+If you're going to...
+
+891
+00:35:30,240 --> 00:35:32,240
+Well, as an exercise you can square this
+
+892
+00:35:32,240 --> 00:35:34,240
+What's the square of a plus i b?
+
+893
+00:35:34,240 --> 00:35:35,240
+I won't tell you
+
+894
+00:35:35,240 --> 00:35:37,240
+You can work it out
+
+895
+00:35:37,240 --> 00:35:38,240
+All right
+
+896
+00:35:38,240 --> 00:35:40,240
+So that's a complex number
+
+897
+00:35:40,240 --> 00:35:41,240
+Often character
+
+898
+00:35:41,240 --> 00:35:42,240
+Often written as z
+
+899
+00:35:42,240 --> 00:35:43,240
+Sometimes z
+
+900
+00:35:43,240 --> 00:35:45,240
+You can use any letter that you like
+
+901
+00:35:45,240 --> 00:35:47,740
+But it's a complex number with both
+
+902
+00:35:47,740 --> 00:35:50,240
+a real part and an imaginary part
+
+903
+00:35:50,240 --> 00:35:54,240
+Another concept is the complex conjugate
+
+904
+00:35:54,240 --> 00:35:55,240
+This is very important
+
+905
+00:35:55,240 --> 00:35:56,240
+You'll need it
+
+906
+00:35:56,240 --> 00:35:58,240
+All right
+
+907
+00:35:59,240 --> 00:36:00,240
+And it's very simple
+
+908
+00:36:00,240 --> 00:36:03,240
+It's a minus i b
+
+909
+00:36:03,240 --> 00:36:06,240
+is the complex conjugate of z
+
+910
+00:36:06,240 --> 00:36:08,240
+So if you take a real...
+
+911
+00:36:08,240 --> 00:36:10,240
+If you take a complex number
+
+912
+00:36:10,240 --> 00:36:13,240
+and you change the sign of the imaginary part
+
+913
+00:36:13,240 --> 00:36:16,240
+That's called the complex conjugate of the number
+
+914
+00:36:16,240 --> 00:36:18,240
+The complex conjugate of the complex conjugate
+
+915
+00:36:18,240 --> 00:36:20,240
+gives you back the original number
+
+916
+00:36:20,240 --> 00:36:24,240
+These are important mathematical concepts
+
+917
+00:36:24,240 --> 00:36:26,240
+They're very elementary
+
+918
+00:36:26,240 --> 00:36:28,240
+Let me give you an example
+
+919
+00:36:28,240 --> 00:36:33,240
+Supposing you multiply z star by z
+
+920
+00:36:33,240 --> 00:36:34,240
+What is that?
+
+921
+00:36:34,240 --> 00:36:36,240
+That's...
+
+922
+00:36:36,240 --> 00:36:38,240
+Or z times z star
+
+923
+00:36:38,240 --> 00:36:39,240
+It doesn't matter
+
+924
+00:36:39,240 --> 00:36:40,240
+Either way
+
+925
+00:36:40,240 --> 00:36:45,240
+It's a plus i b times a minus i b
+
+926
+00:36:45,240 --> 00:36:47,240
+Let's see what we get
+
+927
+00:36:47,240 --> 00:36:49,240
+Just ordinary multiplication
+
+928
+00:36:49,240 --> 00:36:51,240
+We open up the brackets here
+
+929
+00:36:51,240 --> 00:36:53,240
+We get a times a
+
+930
+00:36:53,240 --> 00:36:55,240
+Which is a squared
+
+931
+00:36:55,240 --> 00:36:59,240
+We get a times i b with a minus sign
+
+932
+00:36:59,240 --> 00:37:01,240
+Minus i a b
+
+933
+00:37:01,240 --> 00:37:03,240
+Plus i a b
+
+934
+00:37:03,240 --> 00:37:05,240
+From this one times this one
+
+935
+00:37:05,240 --> 00:37:08,240
+And then
+
+936
+00:37:08,240 --> 00:37:11,240
+What about i b times i b?
+
+937
+00:37:11,240 --> 00:37:13,240
+What does i b times i b give?
+
+938
+00:37:13,240 --> 00:37:15,240
+Minus b squared
+
+939
+00:37:15,240 --> 00:37:17,240
+But there's a minus sign here already
+
+940
+00:37:17,240 --> 00:37:19,240
+So it's minus i b times i b
+
+941
+00:37:19,240 --> 00:37:21,240
+i times i times b
+
+942
+00:37:21,240 --> 00:37:23,240
+And so that gives plus b squared
+
+943
+00:37:23,240 --> 00:37:27,240
+All together we get a squared plus b squared
+
+944
+00:37:27,240 --> 00:37:29,240
+These pieces cancel
+
+945
+00:37:29,240 --> 00:37:32,240
+So that's an example of using
+
+946
+00:37:32,240 --> 00:37:34,240
+I mean that's an example
+
+947
+00:37:34,240 --> 00:37:35,240
+We're not using it for anything
+
+948
+00:37:35,240 --> 00:37:37,240
+It's just an example of a definition
+
+949
+00:37:37,240 --> 00:37:41,240
+And then using the definition of complex arithmetic
+
+950
+00:37:41,240 --> 00:37:43,240
+To calculate what z star z is
+
+951
+00:37:43,240 --> 00:37:46,240
+Notice that z star z is always real
+
+952
+00:37:46,240 --> 00:37:47,240
+And it's always positive
+
+953
+00:37:47,240 --> 00:37:49,240
+It's always real and positive
+
+954
+00:37:49,240 --> 00:37:51,240
+a squared, a and b are real numbers
+
+955
+00:37:51,240 --> 00:37:54,240
+a squared and b squared are both positive
+
+956
+00:37:54,240 --> 00:37:57,240
+So z star z is
+
+957
+00:37:57,240 --> 00:38:00,240
+a real number and it's positive
+
+958
+00:38:00,240 --> 00:38:02,740
+It's thought of more or less
+
+959
+00:38:02,740 --> 00:38:05,240
+as the magnitude of the complex number
+
+960
+00:38:05,240 --> 00:38:07,240
+Alright, so first of all
+
+961
+00:38:07,240 --> 00:38:08,740
+For the kind of vector spaces
+
+962
+00:38:08,740 --> 00:38:10,240
+we're going to be thinking about
+
+963
+00:38:10,240 --> 00:38:13,240
+They're called complex vector spaces
+
+964
+00:38:13,240 --> 00:38:17,240
+And one of the rules of one of the operations
+
+965
+00:38:17,240 --> 00:38:20,240
+That exists in the complex vector space
+
+966
+00:38:20,240 --> 00:38:23,240
+Is multiplication by a complex number
+
+967
+00:38:23,240 --> 00:38:26,240
+Now, a complex number includes real numbers incidentally
+
+968
+00:38:26,240 --> 00:38:28,240
+So you can, c could be two
+
+969
+00:38:28,240 --> 00:38:30,240
+Or it could be i
+
+970
+00:38:30,240 --> 00:38:32,240
+Or it could be two plus i
+
+971
+00:38:32,240 --> 00:38:34,240
+Or anything like that
+
+972
+00:38:34,240 --> 00:38:36,240
+There's a notion, if there's a vector
+
+973
+00:38:36,240 --> 00:38:38,240
+You may multiply it by a constant
+
+974
+00:38:38,240 --> 00:38:40,240
+And you get a new vector
+
+975
+00:38:40,240 --> 00:38:42,240
+That's the first operation
+
+976
+00:38:42,240 --> 00:38:44,240
+And there's only one other
+
+977
+00:38:44,240 --> 00:38:46,240
+operation that's of interest to us
+
+978
+00:38:46,240 --> 00:38:48,240
+It's adding vectors
+
+979
+00:38:48,240 --> 00:38:51,240
+There's a rule for adding vectors
+
+980
+00:38:51,240 --> 00:38:54,240
+Or assume there's a rule for adding vectors
+
+981
+00:38:54,240 --> 00:38:58,240
+So if I have two vectors, a and b
+
+982
+00:38:58,240 --> 00:39:04,240
+I can construct a vector called a plus b
+
+983
+00:39:04,240 --> 00:39:06,240
+And that's some new vector
+
+984
+00:39:06,240 --> 00:39:08,240
+Which I guess we can call c
+
+985
+00:39:08,240 --> 00:39:10,240
+But c is a different c than appears here
+
+986
+00:39:10,240 --> 00:39:12,240
+This c stood for constant
+
+987
+00:39:12,240 --> 00:39:15,240
+This c just stands for a new vector
+
+988
+00:39:15,240 --> 00:39:17,240
+Which is a plus b
+
+989
+00:39:17,240 --> 00:39:19,240
+So every pair of vectors, you can add them
+
+990
+00:39:19,240 --> 00:39:21,240
+And I'm going to show you
+
+991
+00:39:21,240 --> 00:39:25,240
+I'm going to show you some less abstract examples
+
+992
+00:39:25,240 --> 00:39:28,240
+But, first of all
+
+993
+00:39:28,240 --> 00:39:31,240
+The simplest example of a vector space like this
+
+994
+00:39:31,240 --> 00:39:34,240
+Is just the complex numbers themselves
+
+995
+00:39:34,240 --> 00:39:37,240
+The ordinary complex numbers
+
+996
+00:39:37,240 --> 00:39:40,240
+Allow you to multiply any
+
+997
+00:39:40,240 --> 00:39:43,240
+complex number by another complex number
+
+998
+00:39:43,240 --> 00:39:45,240
+And particularly a complex number
+
+999
+00:39:45,240 --> 00:39:49,240
+A particular, a constant, particular complex number
+
+1000
+00:39:49,240 --> 00:39:52,240
+And it allows you to add complex numbers
+
+1001
+00:39:52,240 --> 00:39:55,240
+So just complex numbers by themselves are a vector space
+
+1002
+00:39:55,240 --> 00:39:57,240
+A complex vector space
+
+1003
+00:39:57,240 --> 00:39:59,240
+That's the simplest example
+
+1004
+00:39:59,240 --> 00:40:02,240
+But, let me show you another example
+
+1005
+00:40:02,240 --> 00:40:03,740
+And the other example is
+
+1006
+00:40:03,740 --> 00:40:05,240
+something we talked about last time
+
+1007
+00:40:05,240 --> 00:40:07,240
+Which we called column vectors
+
+1008
+00:40:07,240 --> 00:40:14,240
+Just represent an abstract quantity
+
+1009
+00:40:14,240 --> 00:40:16,240
+By a set of components
+
+1010
+00:40:23,240 --> 00:40:27,240
+All the components are themselves complex numbers
+
+1011
+00:40:28,240 --> 00:40:31,240
+So, for every vector
+
+1012
+00:40:31,240 --> 00:40:33,240
+Really what that vector is standing for
+
+1013
+00:40:33,240 --> 00:40:36,240
+I write equal signs, I probably shouldn't write equals
+
+1014
+00:40:36,240 --> 00:40:41,240
+Mathematicians would have a stroke if I wrote equals there
+
+1015
+00:40:41,240 --> 00:40:44,240
+But, let's do that
+
+1016
+00:40:44,240 --> 00:40:45,240
+So, the first one is
+
+1017
+00:40:45,240 --> 00:40:50,240
+The first one is represented by a column vector
+
+1018
+00:40:50,240 --> 00:40:53,240
+The column vector has entries
+
+1019
+00:40:53,240 --> 00:40:55,240
+And it's just a table of numbers
+
+1020
+00:40:55,240 --> 00:40:57,240
+But, it's a table of complex numbers
+
+1021
+00:40:57,240 --> 00:40:58,240
+Right?
+
+1022
+00:40:58,240 --> 00:41:00,240
+It's a table of complex numbers
+
+1023
+00:41:00,240 --> 00:41:03,240
+Supposing you want to multiply that column vector here
+
+1024
+00:41:03,240 --> 00:41:04,240
+By a constant
+
+1025
+00:41:04,240 --> 00:41:06,240
+The rule is very simple
+
+1026
+00:41:06,240 --> 00:41:09,240
+Multiply every entry by that constant
+
+1027
+00:41:09,240 --> 00:41:11,240
+So, let's say that column A
+
+1028
+00:41:11,240 --> 00:41:13,240
+Is represented by
+
+1029
+00:41:13,240 --> 00:41:18,240
+C A1, C A2, C A3
+
+1030
+00:41:18,240 --> 00:41:22,240
+We just multiply all the components by the same number
+
+1031
+00:41:22,240 --> 00:41:25,240
+That's multiplication by a constant
+
+1032
+00:41:25,240 --> 00:41:27,240
+How do we add two vectors together?
+
+1033
+00:41:27,240 --> 00:41:30,240
+Let's suppose we have two vectors, A and B
+
+1034
+00:41:30,240 --> 00:41:33,240
+A is represented by the column
+
+1035
+00:41:33,240 --> 00:41:36,240
+Whose entries are A1, A2, A3
+
+1036
+00:41:36,240 --> 00:41:36,740
+A is represented by the column
+
+1037
+00:41:36,740 --> 00:41:37,240
+whose entries are A1, A2, A3
+
+1038
+00:41:37,240 --> 00:41:37,740
+A is represented by the column
+
+1039
+00:41:37,740 --> 00:41:38,240
+whose entries are A1, A2, A3
+
+1040
+00:41:38,240 --> 00:41:42,240
+B is represented by B1, B2, B3
+
+1041
+00:41:42,240 --> 00:41:43,240
+Where these are
+
+1042
+00:41:43,240 --> 00:41:45,240
+A's and B's are just numbers
+
+1043
+00:41:45,240 --> 00:41:48,240
+And when we add them
+
+1044
+00:41:48,240 --> 00:41:50,240
+We just get a third column vector
+
+1045
+00:41:50,240 --> 00:41:53,240
+Whose entries are A1 plus B1
+
+1046
+00:41:53,240 --> 00:41:55,240
+A2 plus B2
+
+1047
+00:41:55,240 --> 00:41:58,240
+A3 plus B3
+
+1048
+00:41:58,240 --> 00:42:04,240
+So, column vectors are an example of a vector space
+
+1049
+00:42:04,240 --> 00:42:06,240
+And they are the basic example
+
+1050
+00:42:06,240 --> 00:42:08,240
+That we will use over and over again
+
+1051
+00:42:08,240 --> 00:42:12,240
+As I said, mathematicians would have a stroke
+
+1052
+00:42:12,240 --> 00:42:15,240
+If I called the columns vectors
+
+1053
+00:42:15,240 --> 00:42:18,240
+They would say the columns represent vectors
+
+1054
+00:42:18,240 --> 00:42:20,240
+And you would call these the components
+
+1055
+00:42:20,240 --> 00:42:23,240
+Or a set of components of a vector
+
+1056
+00:42:23,240 --> 00:42:29,240
+Okay, that's the idea of an abstract vector space
+
+1057
+00:42:29,240 --> 00:42:31,740
+The very strange thing is that
+
+1058
+00:42:31,740 --> 00:42:34,240
+the states of a quantum system
+
+1059
+00:42:34,240 --> 00:42:36,240
+In particular, a quantum bit
+
+1060
+00:42:36,240 --> 00:42:37,240
+Oh, incidentally
+
+1061
+00:42:37,240 --> 00:42:39,240
+You're not restricted to three
+
+1062
+00:42:39,240 --> 00:42:41,240
+This is a particular case
+
+1063
+00:42:41,240 --> 00:42:44,240
+This is a three-dimensional vector space
+
+1064
+00:42:44,240 --> 00:42:47,240
+We could have a two-dimensional vector space
+
+1065
+00:42:47,240 --> 00:42:48,740
+That's actually going to be more
+
+1066
+00:42:48,740 --> 00:42:50,240
+interesting to us for the moment
+
+1067
+00:42:50,240 --> 00:42:53,240
+A two-dimensional vector space just has two entries
+
+1068
+00:42:53,240 --> 00:42:56,240
+That's the next simplest thing, if you like
+
+1069
+00:42:56,240 --> 00:42:58,240
+To the numbers
+
+1070
+00:42:58,240 --> 00:42:59,740
+The next simplest vector space
+
+1071
+00:42:59,740 --> 00:43:01,240
+is a two-dimensional vector space
+
+1072
+00:43:01,240 --> 00:43:03,240
+Then there's a three-dimensional vector space
+
+1073
+00:43:03,240 --> 00:43:05,240
+And a four-dimensional vector space
+
+1074
+00:43:05,240 --> 00:43:06,240
+And so forth
+
+1075
+00:43:06,240 --> 00:43:09,240
+And they all make sense
+
+1076
+00:43:09,240 --> 00:43:11,240
+Okay
+
+1077
+00:43:11,240 --> 00:43:12,240
+That's
+
+1078
+00:43:12,240 --> 00:43:14,240
+And you'll get used to this
+
+1079
+00:43:14,240 --> 00:43:16,240
+Sooner or later you'll start thinking
+
+1080
+00:43:16,240 --> 00:43:18,240
+in terms of abstract vector spaces
+
+1081
+00:43:18,240 --> 00:43:20,240
+If you pursue this subject
+
+1082
+00:43:20,240 --> 00:43:22,740
+There's no way to learn
+
+1083
+00:43:22,740 --> 00:43:25,240
+quantum mechanics honestly and correctly
+
+1084
+00:43:25,240 --> 00:43:28,240
+Without going through this mathematics
+
+1085
+00:43:28,240 --> 00:43:30,240
+So it's absolutely essential
+
+1086
+00:43:30,240 --> 00:43:32,240
+Now
+
+1087
+00:43:32,240 --> 00:43:36,240
+If we were talking about the simplest vector space
+
+1088
+00:43:36,240 --> 00:43:38,240
+Just complex numbers
+
+1089
+00:43:38,240 --> 00:43:42,240
+Then every complex number has its complex conjugate
+
+1090
+00:43:42,240 --> 00:43:44,240
+That means
+
+1091
+00:43:44,240 --> 00:43:48,240
+That there is a second vector space
+
+1092
+00:43:48,240 --> 00:43:52,240
+Which is the space of the complex conjugate numbers
+
+1093
+00:43:52,240 --> 00:43:56,240
+That the concept of complex conjugation
+
+1094
+00:43:56,240 --> 00:43:58,240
+Is an important concept
+
+1095
+00:43:58,240 --> 00:44:00,240
+And it also exists
+
+1096
+00:44:00,240 --> 00:44:02,240
+For other vector spaces
+
+1097
+00:44:02,240 --> 00:44:05,240
+All you have to do basically
+
+1098
+00:44:05,240 --> 00:44:09,240
+Is write the complex conjugate of the entries
+
+1099
+00:44:09,240 --> 00:44:11,240
+But
+
+1100
+00:44:11,240 --> 00:44:12,240
+A rule
+
+1101
+00:44:12,240 --> 00:44:15,240
+When you're writing the complex conjugate of a vector
+
+1102
+00:44:15,240 --> 00:44:17,240
+I want to write the
+
+1103
+00:44:17,240 --> 00:44:19,240
+complex conjugate of the vector A
+
+1104
+00:44:19,240 --> 00:44:22,240
+You draw it the other way
+
+1105
+00:44:22,240 --> 00:44:23,240
+This way
+
+1106
+00:44:23,240 --> 00:44:26,240
+That stands for the complex conjugate
+
+1107
+00:44:26,240 --> 00:44:29,240
+Of the vector A
+
+1108
+00:44:29,240 --> 00:44:32,240
+And furthermore
+
+1109
+00:44:32,240 --> 00:44:34,240
+You represent it
+
+1110
+00:44:34,240 --> 00:44:36,240
+By a row vector
+
+1111
+00:44:36,240 --> 00:44:38,240
+The components of the row vector
+
+1112
+00:44:38,240 --> 00:44:41,240
+Are the complex conjugates
+
+1113
+00:44:41,240 --> 00:44:43,240
+A1 star
+
+1114
+00:44:43,240 --> 00:44:45,240
+A2 star
+
+1115
+00:44:45,240 --> 00:44:48,240
+So whenever you see a row vector
+
+1116
+00:44:48,240 --> 00:44:49,240
+Always think of it
+
+1117
+00:44:49,240 --> 00:44:52,240
+As the complex conjugate
+
+1118
+00:44:52,240 --> 00:44:54,240
+Of the corresponding
+
+1119
+00:44:54,240 --> 00:44:56,240
+Of the corresponding
+
+1120
+00:44:56,240 --> 00:44:58,240
+Column vector
+
+1121
+00:44:58,240 --> 00:45:00,240
+If I tell you there's
+
+1122
+00:45:00,240 --> 00:45:02,240
+A row vector A
+
+1123
+00:45:02,240 --> 00:45:04,240
+Which is in correspondence
+
+1124
+00:45:04,240 --> 00:45:06,240
+With a column vector A
+
+1125
+00:45:06,240 --> 00:45:10,240
+Always remember that there's a complex conjugation operation
+
+1126
+00:45:10,240 --> 00:45:12,240
+Okay
+
+1127
+00:45:12,240 --> 00:45:16,240
+This is the basic idea of a complex vector space
+
+1128
+00:45:16,240 --> 00:45:19,240
+Written out in components
+
+1129
+00:45:21,240 --> 00:45:23,240
+Everybody happy with that?
+
+1130
+00:45:23,240 --> 00:45:24,240
+Anybody?
+
+1131
+00:45:24,240 --> 00:45:27,240
+There's no asterisk at the A
+
+1132
+00:45:27,240 --> 00:45:28,240
+In that
+
+1133
+00:45:28,240 --> 00:45:29,240
+No
+
+1134
+00:45:29,240 --> 00:45:30,240
+Usually
+
+1135
+00:45:30,240 --> 00:45:31,240
+That's right
+
+1136
+00:45:31,240 --> 00:45:32,240
+That's right
+
+1137
+00:45:32,240 --> 00:45:34,240
+The notation does not
+
+1138
+00:45:34,240 --> 00:45:37,240
+Put a star over here
+
+1139
+00:45:37,240 --> 00:45:39,240
+But you remember
+
+1140
+00:45:39,240 --> 00:45:41,240
+That the star is implicit
+
+1141
+00:45:41,240 --> 00:45:45,240
+In turning the symbol backward
+
+1142
+00:45:45,240 --> 00:45:47,240
+Now I'll remind you
+
+1143
+00:45:47,240 --> 00:45:49,240
+This symbol is called a ket
+
+1144
+00:45:49,240 --> 00:45:51,240
+No this symbol is called a bra
+
+1145
+00:45:51,240 --> 00:45:53,240
+This symbol is called a ket
+
+1146
+00:45:53,240 --> 00:45:54,240
+Do I have it right?
+
+1147
+00:45:54,240 --> 00:45:55,240
+I don't
+
+1148
+00:45:55,240 --> 00:45:56,240
+I never
+
+1149
+00:45:56,240 --> 00:45:57,240
+One of them's a bra
+
+1150
+00:45:57,240 --> 00:45:58,240
+One of them's a ket
+
+1151
+00:45:58,240 --> 00:46:00,240
+But it doesn't matter
+
+1152
+00:46:00,240 --> 00:46:03,240
+It's completely symmetric between the two
+
+1153
+00:46:03,240 --> 00:46:05,240
+Remember that the complex conjugate of a complex conjugate
+
+1154
+00:46:05,240 --> 00:46:07,240
+Is the original thing
+
+1155
+00:46:07,240 --> 00:46:08,240
+So that's
+
+1156
+00:46:08,240 --> 00:46:09,240
+That's
+
+1157
+00:46:09,240 --> 00:46:11,240
+The notion of a complex vector space
+
+1158
+00:46:11,240 --> 00:46:13,240
+And finally
+
+1159
+00:46:13,240 --> 00:46:14,240
+Not finally
+
+1160
+00:46:14,240 --> 00:46:15,240
+But
+
+1161
+00:46:15,240 --> 00:46:17,240
+We want to put the pieces together
+
+1162
+00:46:17,240 --> 00:46:19,240
+You can multiply
+
+1163
+00:46:19,240 --> 00:46:21,240
+Two vectors
+
+1164
+00:46:21,240 --> 00:46:22,240
+The product
+
+1165
+00:46:22,240 --> 00:46:23,240
+Is called
+
+1166
+00:46:23,240 --> 00:46:24,240
+We've discussed this before
+
+1167
+00:46:24,240 --> 00:46:25,240
+I realize
+
+1168
+00:46:25,240 --> 00:46:26,240
+I'm not getting senile
+
+1169
+00:46:26,240 --> 00:46:27,240
+I know I've talked about this before
+
+1170
+00:46:27,240 --> 00:46:28,240
+But we need
+
+1171
+00:46:28,240 --> 00:46:29,240
+We really need to do it right now
+
+1172
+00:46:29,240 --> 00:46:31,240
+There's the concept of the inner product
+
+1173
+00:46:31,240 --> 00:46:32,240
+Of the inner product
+
+1174
+00:46:32,240 --> 00:46:34,240
+Of the inner product of two vectors
+
+1175
+00:46:34,240 --> 00:46:36,240
+The inner product of two vectors
+
+1176
+00:46:36,240 --> 00:46:38,240
+The easiest way for me to describe it
+
+1177
+00:46:38,240 --> 00:46:40,240
+Is in terms of components
+
+1178
+00:46:40,240 --> 00:46:42,240
+I don't want to spend a lot of time
+
+1179
+00:46:42,240 --> 00:46:44,240
+Giving you the most abstract definition
+
+1180
+00:46:44,240 --> 00:46:47,240
+Are there any mathematicians in the audience?
+
+1181
+00:46:47,240 --> 00:46:49,240
+Plug your ears
+
+1182
+00:46:49,240 --> 00:46:50,240
+Just plug them up
+
+1183
+00:46:50,240 --> 00:46:51,240
+And
+
+1184
+00:46:51,240 --> 00:46:54,240
+Right
+
+1185
+00:46:54,240 --> 00:46:56,240
+Alright
+
+1186
+00:46:56,240 --> 00:46:57,240
+The
+
+1187
+00:46:57,240 --> 00:46:59,240
+Actually
+
+1188
+00:46:59,240 --> 00:47:00,240
+I'm going to
+
+1189
+00:47:00,240 --> 00:47:01,240
+I'm going to
+
+1190
+00:47:01,240 --> 00:47:05,240
+Actually mathematicians also use components
+
+1191
+00:47:05,240 --> 00:47:06,240
+But
+
+1192
+00:47:06,240 --> 00:47:08,240
+I think
+
+1193
+00:47:08,240 --> 00:47:10,240
+Anyway
+
+1194
+00:47:10,240 --> 00:47:11,240
+The next
+
+1195
+00:47:11,240 --> 00:47:12,240
+Concept
+
+1196
+00:47:12,240 --> 00:47:15,240
+Is the concept of the product of two vectors
+
+1197
+00:47:15,240 --> 00:47:16,240
+But it's always
+
+1198
+00:47:16,240 --> 00:47:19,240
+It's the inner product of the two vectors
+
+1199
+00:47:19,240 --> 00:47:21,240
+And the concept is
+
+1200
+00:47:21,240 --> 00:47:22,240
+Really
+
+1201
+00:47:22,240 --> 00:47:24,240
+The product of a vector
+
+1202
+00:47:24,240 --> 00:47:27,240
+With the complex conjugate of another vector
+
+1203
+00:47:27,240 --> 00:47:29,240
+It's very much
+
+1204
+00:47:29,240 --> 00:47:30,240
+Like
+
+1205
+00:47:30,240 --> 00:47:32,240
+Multiplying a complex number
+
+1206
+00:47:32,240 --> 00:47:33,240
+By the complex
+
+1207
+00:47:33,240 --> 00:47:34,240
+By the complex number
+
+1208
+00:47:34,240 --> 00:47:36,240
+By the complex conjugate of another number
+
+1209
+00:47:36,240 --> 00:47:37,240
+Could be the same number
+
+1210
+00:47:37,240 --> 00:47:38,240
+Could be another number
+
+1211
+00:47:38,240 --> 00:47:40,240
+So I'm going to give you the rule
+
+1212
+00:47:40,240 --> 00:47:41,240
+The rule I'm going to tell you
+
+1213
+00:47:41,240 --> 00:47:42,240
+In terms of components
+
+1214
+00:47:42,240 --> 00:47:43,240
+Okay
+
+1215
+00:47:43,240 --> 00:47:44,240
+Here's the rule
+
+1216
+00:47:44,240 --> 00:47:45,240
+If I want
+
+1217
+00:47:45,240 --> 00:47:46,240
+The inner product
+
+1218
+00:47:46,240 --> 00:47:48,240
+Between the vector b
+
+1219
+00:47:48,240 --> 00:47:49,240
+And the vector a
+
+1220
+00:47:49,240 --> 00:47:51,240
+And it's written like that
+
+1221
+00:47:51,240 --> 00:47:52,240
+It's got a bra ket
+
+1222
+00:47:52,240 --> 00:47:53,240
+That's a bracket
+
+1223
+00:47:53,240 --> 00:47:54,240
+Okay
+
+1224
+00:47:54,240 --> 00:47:56,240
+That's where the term bra ket came from
+
+1225
+00:47:56,240 --> 00:47:58,240
+And it's written like that
+
+1226
+00:47:58,240 --> 00:47:59,240
+It's got a bra ket
+
+1227
+00:47:59,240 --> 00:48:01,240
+That's where the term ket came from
+
+1228
+00:48:01,240 --> 00:48:02,240
+Half a bracket is a bra
+
+1229
+00:48:02,240 --> 00:48:05,240
+The other half of the vector is a ket
+
+1230
+00:48:05,240 --> 00:48:07,240
+And again I forget which one is which
+
+1231
+00:48:07,240 --> 00:48:08,240
+This is the ket right?
+
+1232
+00:48:08,240 --> 00:48:09,240
+Correct
+
+1233
+00:48:09,240 --> 00:48:10,240
+Yeah that's the ket
+
+1234
+00:48:10,240 --> 00:48:11,240
+This one's the bra
+
+1235
+00:48:11,240 --> 00:48:12,240
+Okay good
+
+1236
+00:48:12,240 --> 00:48:13,240
+Good
+
+1237
+00:48:13,240 --> 00:48:16,240
+The rule is
+
+1238
+00:48:16,240 --> 00:48:18,240
+You take the two vectors
+
+1239
+00:48:18,240 --> 00:48:20,240
+The b vector
+
+1240
+00:48:20,240 --> 00:48:22,240
+Is a row vector
+
+1241
+00:48:22,240 --> 00:48:24,240
+And you write b1 star
+
+1242
+00:48:24,240 --> 00:48:26,240
+b2 star
+
+1243
+00:48:26,240 --> 00:48:28,240
+That's the representation of the b vector
+
+1244
+00:48:28,240 --> 00:48:30,240
+And the representation of the a vector
+
+1245
+00:48:30,240 --> 00:48:31,240
+Is a1 a2
+
+1246
+00:48:31,240 --> 00:48:33,240
+You do not star it
+
+1247
+00:48:33,240 --> 00:48:35,240
+And the inner product between them
+
+1248
+00:48:35,240 --> 00:48:37,240
+This product is gotten
+
+1249
+00:48:37,240 --> 00:48:39,240
+By multiplying the first component
+
+1250
+00:48:39,240 --> 00:48:41,240
+Of b
+
+1251
+00:48:41,240 --> 00:48:44,240
+With the first component of a
+
+1252
+00:48:44,240 --> 00:48:47,240
+b1 star a1
+
+1253
+00:48:47,240 --> 00:48:51,240
+Plus b2 star a2
+
+1254
+00:48:51,240 --> 00:48:53,240
+First row with first
+
+1255
+00:48:53,240 --> 00:48:54,240
+Sorry
+
+1256
+00:48:54,240 --> 00:48:56,240
+First entry here
+
+1257
+00:48:56,240 --> 00:48:57,240
+With first entry here
+
+1258
+00:48:57,240 --> 00:48:58,240
+With first entry here
+
+1259
+00:48:58,240 --> 00:48:59,240
+Plus second entry here
+
+1260
+00:48:59,240 --> 00:49:01,240
+Second entry here
+
+1261
+00:49:01,240 --> 00:49:02,240
+Supposing for example
+
+1262
+00:49:02,240 --> 00:49:05,240
+Okay everybody
+
+1263
+00:49:05,240 --> 00:49:08,240
+That's the basic concept of the inner product
+
+1264
+00:49:08,240 --> 00:49:11,240
+It's just like multiplying two numbers together
+
+1265
+00:49:11,240 --> 00:49:12,240
+Except we get a term
+
+1266
+00:49:12,240 --> 00:49:14,240
+For each entry
+
+1267
+00:49:14,240 --> 00:49:16,240
+The one entry and the two entry
+
+1268
+00:49:16,240 --> 00:49:18,240
+For example
+
+1269
+00:49:18,240 --> 00:49:19,240
+If we take the inner
+
+1270
+00:49:19,240 --> 00:49:20,240
+product of a vector with itself
+
+1271
+00:49:20,240 --> 00:49:23,240
+Let's take a with a
+
+1272
+00:49:23,240 --> 00:49:25,240
+The inner product of a vector with itself
+
+1273
+00:49:25,240 --> 00:49:27,240
+Has the form a1 a2
+
+1274
+00:49:27,240 --> 00:49:29,240
+A1 star a1
+
+1275
+00:49:29,240 --> 00:49:33,240
+Plus a2 star a2
+
+1276
+00:49:33,240 --> 00:49:37,240
+Notice one thing about this
+
+1277
+00:49:37,240 --> 00:49:40,240
+A number times its complex conjugate is
+
+1278
+00:49:40,240 --> 00:49:42,240
+First of all positive
+
+1279
+00:49:42,240 --> 00:49:43,240
+And second of all real
+
+1280
+00:49:43,240 --> 00:49:46,240
+Well it couldn't hardly be positive if it weren't real
+
+1281
+00:49:46,240 --> 00:49:48,240
+It's a positive number
+
+1282
+00:49:48,240 --> 00:49:49,240
+So the sum
+
+1283
+00:49:49,240 --> 00:49:50,240
+So the inner product
+
+1284
+00:49:50,240 --> 00:49:52,240
+Of a complex vector with itself
+
+1285
+00:49:52,240 --> 00:49:55,240
+Is always a real positive number
+
+1286
+00:49:55,240 --> 00:49:57,240
+It can be thought of
+
+1287
+00:49:57,240 --> 00:49:59,240
+As a kind of size of a vector
+
+1288
+00:49:59,240 --> 00:50:02,240
+It's actually the square of the size of a vector
+
+1289
+00:50:02,240 --> 00:50:03,240
+If you like
+
+1290
+00:50:03,240 --> 00:50:04,240
+You can think of it as the
+
+1291
+00:50:04,240 --> 00:50:05,240
+square of the size of a vector
+
+1292
+00:50:05,240 --> 00:50:07,240
+The length of the vector
+
+1293
+00:50:07,240 --> 00:50:11,240
+It measures the magnitude of the vector
+
+1294
+00:50:11,240 --> 00:50:14,240
+So this operation
+
+1295
+00:50:14,240 --> 00:50:17,240
+Of inner product
+
+1296
+00:50:17,240 --> 00:50:20,240
+Is absolutely essential as we'll see
+
+1297
+00:50:20,240 --> 00:50:22,240
+To the interpretation
+
+1298
+00:50:22,240 --> 00:50:29,240
+And it's complex vectors like this
+
+1299
+00:50:29,240 --> 00:50:34,240
+Which represent the states of a quantum bit
+
+1300
+00:50:34,240 --> 00:50:36,240
+Let me just digress
+
+1301
+00:50:36,240 --> 00:50:39,240
+Let me stop doing mathematics for a minute
+
+1302
+00:50:39,240 --> 00:50:42,240
+And talk about the quantum bit again
+
+1303
+00:50:42,240 --> 00:50:45,240
+The quantum bit
+
+1304
+00:50:45,240 --> 00:50:48,240
+Could be pointing straight up
+
+1305
+00:50:48,240 --> 00:50:51,240
+We could invent a symbol
+
+1306
+00:50:51,240 --> 00:50:53,240
+For the state
+
+1307
+00:50:53,240 --> 00:50:55,240
+For the configuration
+
+1308
+00:50:55,240 --> 00:50:57,240
+Of the electron pointing up
+
+1309
+00:50:57,240 --> 00:50:59,240
+Let's call it
+
+1310
+00:50:59,240 --> 00:51:02,240
+We could either call it up
+
+1311
+00:51:02,240 --> 00:51:05,240
+Or we could call it
+
+1312
+00:51:05,240 --> 00:51:07,240
+A little vector up
+
+1313
+00:51:07,240 --> 00:51:09,240
+Or we could just call it plus
+
+1314
+00:51:09,240 --> 00:51:11,240
+I think I'll just call it plus
+
+1315
+00:51:11,240 --> 00:51:13,240
+To indicate that it's pointing upward
+
+1316
+00:51:13,240 --> 00:51:19,240
+Or we can have an electron which is pointing down
+
+1317
+00:51:19,240 --> 00:51:20,240
+Now remember
+
+1318
+00:51:20,240 --> 00:51:22,240
+When we go to measure the electron
+
+1319
+00:51:22,240 --> 00:51:24,240
+We either find that it's up or down
+
+1320
+00:51:24,240 --> 00:51:26,240
+And nothing in between
+
+1321
+00:51:26,240 --> 00:51:28,240
+And that we can identify
+
+1322
+00:51:28,240 --> 00:51:31,240
+With the vector minus
+
+1323
+00:51:31,240 --> 00:51:33,240
+Just an abstract notation
+
+1324
+00:51:33,240 --> 00:51:36,240
+This stands for the state of an electron pointing up
+
+1325
+00:51:36,240 --> 00:51:39,240
+This stands for the state of an electron pointing down
+
+1326
+00:51:39,240 --> 00:51:42,240
+Now in classical physics
+
+1327
+00:51:42,240 --> 00:51:45,240
+We would never under any circumstances
+
+1328
+00:51:45,240 --> 00:51:49,240
+Think of adding these two vectors
+
+1329
+00:51:49,240 --> 00:51:51,240
+Or multiplying them by numbers
+
+1330
+00:51:51,240 --> 00:51:52,240
+We would just say
+
+1331
+00:51:52,240 --> 00:51:53,240
+This means electron up
+
+1332
+00:51:53,240 --> 00:51:55,240
+This means electron down
+
+1333
+00:51:55,240 --> 00:51:57,240
+In quantum physics
+
+1334
+00:51:57,240 --> 00:52:00,240
+The general state of an electron
+
+1335
+00:52:00,240 --> 00:52:03,240
+Or an electron spin
+
+1336
+00:52:03,240 --> 00:52:06,240
+Is a vector in a vector space
+
+1337
+00:52:06,240 --> 00:52:09,240
+Which we could write
+
+1338
+00:52:09,240 --> 00:52:11,240
+A plus
+
+1339
+00:52:11,240 --> 00:52:13,240
+Times plus
+
+1340
+00:52:13,240 --> 00:52:15,240
+Plus A minus
+
+1341
+00:52:15,240 --> 00:52:17,240
+Times minus
+
+1342
+00:52:17,240 --> 00:52:18,240
+In other words
+
+1343
+00:52:18,240 --> 00:52:20,240
+It's a two dimensional vector space
+
+1344
+00:52:20,240 --> 00:52:22,240
+We could also represent it
+
+1345
+00:52:22,240 --> 00:52:24,240
+By A plus
+
+1346
+00:52:24,240 --> 00:52:26,240
+A minus
+
+1347
+00:52:29,240 --> 00:52:32,240
+And here's the rule
+
+1348
+00:52:32,240 --> 00:52:34,240
+The rule
+
+1349
+00:52:34,240 --> 00:52:36,240
+So there are some coefficients
+
+1350
+00:52:36,240 --> 00:52:38,240
+That we can add them together with
+
+1351
+00:52:38,240 --> 00:52:40,240
+And here's the meaning of those coefficients
+
+1352
+00:52:40,240 --> 00:52:43,240
+Or at least the partial meaning of those coefficients
+
+1353
+00:52:46,240 --> 00:52:48,240
+A plus star
+
+1354
+00:52:48,240 --> 00:52:49,240
+A plus
+
+1355
+00:52:49,240 --> 00:52:51,240
+Is the probability
+
+1356
+00:52:51,240 --> 00:52:55,240
+That we find the electron up
+
+1357
+00:52:55,240 --> 00:52:59,240
+Remember it's positive
+
+1358
+00:52:59,240 --> 00:53:00,240
+It's positive
+
+1359
+00:53:00,240 --> 00:53:01,240
+And it's real
+
+1360
+00:53:01,240 --> 00:53:03,240
+A star times A
+
+1361
+00:53:03,240 --> 00:53:05,240
+Is positive and it's real
+
+1362
+00:53:05,240 --> 00:53:07,240
+And it's the magnitude
+
+1363
+00:53:07,240 --> 00:53:08,240
+Of the
+
+1364
+00:53:08,240 --> 00:53:09,240
+Or it's the square of the magnitude
+
+1365
+00:53:09,240 --> 00:53:11,240
+Of the coefficient
+
+1366
+00:53:11,240 --> 00:53:13,240
+Of the up configuration
+
+1367
+00:53:13,240 --> 00:53:16,240
+And then there's the down configuration
+
+1368
+00:53:16,240 --> 00:53:18,240
+The probability of finding the electron down
+
+1369
+00:53:18,240 --> 00:53:20,240
+Is A minus
+
+1370
+00:53:20,240 --> 00:53:22,240
+Times A star minus
+
+1371
+00:53:22,240 --> 00:53:25,240
+That's the probability to find it down
+
+1372
+00:53:27,240 --> 00:53:28,240
+That's the interpretation
+
+1373
+00:53:28,240 --> 00:53:30,240
+Or that's part of the interpretation
+
+1374
+00:53:30,240 --> 00:53:32,240
+Just to give you some orientation
+
+1375
+00:53:32,240 --> 00:53:34,240
+Where we're going
+
+1376
+00:53:34,240 --> 00:53:35,240
+The quantum state
+
+1377
+00:53:35,240 --> 00:53:36,240
+Of that electron
+
+1378
+00:53:36,240 --> 00:53:38,240
+Which when we measure it
+
+1379
+00:53:38,240 --> 00:53:40,240
+We find with a probabilistic distribution
+
+1380
+00:53:40,240 --> 00:53:42,240
+Is either up or down
+
+1381
+00:53:42,240 --> 00:53:44,240
+And nothing in between
+
+1382
+00:53:44,240 --> 00:53:46,240
+That's represented by saying the electron
+
+1383
+00:53:46,240 --> 00:53:47,240
+When it's pointing in some function
+
+1384
+00:53:47,240 --> 00:53:49,240
+When it's pointing in some funny angle
+
+1385
+00:53:49,240 --> 00:53:52,240
+Is given by a complex vector
+
+1386
+00:53:52,240 --> 00:53:54,240
+Complex vector space
+
+1387
+00:53:54,240 --> 00:53:57,240
+Which can either be represented abstractly like this
+
+1388
+00:53:57,240 --> 00:54:00,240
+It can be represented concretely
+
+1389
+00:54:00,240 --> 00:54:02,240
+As a column vector
+
+1390
+00:54:02,240 --> 00:54:04,240
+And
+
+1391
+00:54:04,240 --> 00:54:07,240
+The square or magnitude
+
+1392
+00:54:07,240 --> 00:54:10,240
+Of the square of the entries here
+
+1393
+00:54:10,240 --> 00:54:12,240
+Are simply the probabilities
+
+1394
+00:54:12,240 --> 00:54:14,240
+To find it up or down
+
+1395
+00:54:14,240 --> 00:54:17,240
+Now presumably probabilities add to one
+
+1396
+00:54:17,240 --> 00:54:21,240
+So one of the rules about quantum mechanics
+
+1397
+00:54:21,240 --> 00:54:24,240
+Is that the vectors that represent
+
+1398
+00:54:24,240 --> 00:54:26,240
+That we have a vector space of some kind
+
+1399
+00:54:26,240 --> 00:54:28,240
+An abstract vector space
+
+1400
+00:54:28,240 --> 00:54:31,240
+But the vectors which actually represent
+
+1401
+00:54:31,240 --> 00:54:33,240
+The physical states of a system
+
+1402
+00:54:33,240 --> 00:54:37,240
+Are
+
+1403
+00:54:37,240 --> 00:54:40,240
+The word is normalized
+
+1404
+00:54:40,240 --> 00:54:42,240
+Normalized means
+
+1405
+00:54:42,240 --> 00:54:45,240
+That the sum of the probabilities is one
+
+1406
+00:54:45,240 --> 00:54:47,240
+So A plus star
+
+1407
+00:54:47,240 --> 00:54:49,240
+A plus
+
+1408
+00:54:49,240 --> 00:54:51,240
+Plus A minus star
+
+1409
+00:54:51,240 --> 00:54:53,240
+A minus
+
+1410
+00:54:53,240 --> 00:54:55,240
+Should be set equal to one
+
+1411
+00:54:55,240 --> 00:54:57,240
+This is like considering
+
+1412
+00:54:57,240 --> 00:54:59,240
+Only vectors of unit length
+
+1413
+00:55:01,240 --> 00:55:03,240
+That doesn't mean
+
+1414
+00:55:03,240 --> 00:55:04,240
+That in the vector space itself
+
+1415
+00:55:04,240 --> 00:55:05,240
+There aren't other vectors
+
+1416
+00:55:05,240 --> 00:55:07,240
+Of other magnitude
+
+1417
+00:55:07,240 --> 00:55:08,240
+There are
+
+1418
+00:55:08,240 --> 00:55:11,240
+But the physical states of a quantum system
+
+1419
+00:55:11,240 --> 00:55:13,240
+Have to be normalized
+
+1420
+00:55:13,240 --> 00:55:15,240
+Which is the same thing as setting the sums
+
+1421
+00:55:15,240 --> 00:55:17,240
+Of the probabilities to one
+
+1422
+00:55:17,240 --> 00:55:20,240
+So normalized vectors in a vector space
+
+1423
+00:55:20,240 --> 00:55:23,240
+Represent the states of a quantum system
+
+1424
+00:55:23,240 --> 00:55:26,240
+Now that's a very abstract concept
+
+1425
+00:55:26,240 --> 00:55:30,240
+Why do we get driven to such very abstract concepts?
+
+1426
+00:55:30,240 --> 00:55:32,240
+Why can't we visualize this the same way
+
+1427
+00:55:32,240 --> 00:55:34,240
+We visualize classical physics?
+
+1428
+00:55:34,240 --> 00:55:36,240
+Well it's because
+
+1429
+00:55:36,240 --> 00:55:37,240
+We don't have the wiring
+
+1430
+00:55:37,240 --> 00:55:39,240
+And we have to rewire ourselves
+
+1431
+00:55:39,240 --> 00:55:41,240
+And we have to rewire ourselves
+
+1432
+00:55:41,240 --> 00:55:42,240
+To learn to think about
+
+1433
+00:55:42,240 --> 00:55:43,240
+the quantum states of a system
+
+1434
+00:55:43,240 --> 00:55:45,240
+Being an abstract vector space
+
+1435
+00:55:45,240 --> 00:55:47,240
+Once you get this idea
+
+1436
+00:55:47,240 --> 00:55:49,240
+Of an abstract vector space
+
+1437
+00:55:49,240 --> 00:55:51,240
+And how
+
+1438
+00:55:51,240 --> 00:55:54,240
+It fits together with the states of a system
+
+1439
+00:55:54,240 --> 00:55:55,240
+Then you're flying
+
+1440
+00:55:55,240 --> 00:55:58,240
+And you can understand all of quantum mechanics
+
+1441
+00:55:58,240 --> 00:56:01,240
+So any questions about this?
+
+1442
+00:56:01,240 --> 00:56:02,240
+The entries
+
+1443
+00:56:02,240 --> 00:56:04,240
+The coefficients
+
+1444
+00:56:06,240 --> 00:56:09,240
+Or equivalently the components of the vector
+
+1445
+00:56:09,240 --> 00:56:10,240
+When you square them
+
+1446
+00:56:10,240 --> 00:56:11,240
+Or better yet
+
+1447
+00:56:11,240 --> 00:56:14,240
+When you multiply them by their own complex conjugate
+
+1448
+00:56:14,240 --> 00:56:16,240
+Give you the probabilities
+
+1449
+00:56:16,240 --> 00:56:18,240
+For the two possibilities
+
+1450
+00:56:18,240 --> 00:56:19,240
+Yeah
+
+1451
+00:56:19,240 --> 00:56:22,240
+So the expression of a quantum represents a quantum state
+
+1452
+00:56:22,240 --> 00:56:24,240
+That represents a quantum state if a star a
+
+1453
+00:56:24,240 --> 00:56:26,240
+If a
+
+1454
+00:56:26,240 --> 00:56:28,240
+In fact we can say it this way
+
+1455
+00:56:28,240 --> 00:56:31,240
+The inner product of a with itself
+
+1456
+00:56:31,240 --> 00:56:35,240
+That's given by a plus star a plus
+
+1457
+00:56:35,240 --> 00:56:38,240
+Plus a minus star a minus
+
+1458
+00:56:38,240 --> 00:56:40,240
+That should be one
+
+1459
+00:56:40,240 --> 00:56:43,240
+So legitimate quantum states
+
+1460
+00:56:43,240 --> 00:56:46,240
+Should have inner product with themselves
+
+1461
+00:56:46,240 --> 00:56:47,240
+Which is equal to one
+
+1462
+00:56:47,240 --> 00:56:48,240
+And that's just a statement
+
+1463
+00:56:48,240 --> 00:56:51,240
+That's just a statement that the sums of the probabilities
+
+1464
+00:56:51,240 --> 00:56:54,240
+Of all the probabilities should add up to one
+
+1465
+00:56:54,240 --> 00:56:56,240
+Where is your
+
+1466
+00:56:56,240 --> 00:56:57,740
+Or what looks like a column
+
+1467
+00:56:57,740 --> 00:56:59,240
+vector a plus and a minus
+
+1468
+00:56:59,240 --> 00:57:02,240
+Oh plus and minus are now just to indicate
+
+1469
+00:57:02,240 --> 00:57:04,240
+That one of them corresponds to spin up
+
+1470
+00:57:04,240 --> 00:57:06,240
+And the other corresponds to spin down
+
+1471
+00:57:06,240 --> 00:57:07,240
+And we could have called them
+
+1472
+00:57:07,240 --> 00:57:09,240
+We could have given them different names
+
+1473
+00:57:09,240 --> 00:57:12,240
+I could have called them a up and a down
+
+1474
+00:57:12,240 --> 00:57:13,740
+Or I could have called
+
+1475
+00:57:13,740 --> 00:57:15,240
+them a one and a two
+
+1476
+00:57:15,240 --> 00:57:17,740
+So they don't have any relationship with
+
+1477
+00:57:17,740 --> 00:57:20,240
+the ket plus and the ket minus
+
+1478
+00:57:20,240 --> 00:57:22,240
+They do have
+
+1479
+00:57:22,240 --> 00:57:23,240
+They do have
+
+1480
+00:57:23,240 --> 00:57:24,740
+They are the coefficients of the
+
+1481
+00:57:24,740 --> 00:57:26,240
+ket plus and the ket minus
+
+1482
+00:57:26,240 --> 00:57:30,240
+Okay so let's go back a step
+
+1483
+00:57:30,240 --> 00:57:32,240
+What about the ket plus
+
+1484
+00:57:32,240 --> 00:57:34,240
+How should we represent that
+
+1485
+00:57:34,240 --> 00:57:37,240
+Well in a good basis it's one zero
+
+1486
+00:57:37,240 --> 00:57:39,240
+In some basis let's
+
+1487
+00:57:39,240 --> 00:57:41,240
+At the moment I don't want to discuss the
+
+1488
+00:57:41,240 --> 00:57:44,240
+The ambiguity in basis vectors
+
+1489
+00:57:44,240 --> 00:57:45,240
+We'll come to that
+
+1490
+00:57:45,240 --> 00:57:47,240
+But for the moment we have a basis
+
+1491
+00:57:47,240 --> 00:57:50,240
+Don't worry if you don't know what I'm talking about
+
+1492
+00:57:50,240 --> 00:57:55,240
+This vector will be represented by one zero
+
+1493
+00:57:55,240 --> 00:57:57,240
+Okay
+
+1494
+00:57:57,240 --> 00:58:01,240
+It'll be represented by a one in the upper place
+
+1495
+00:58:01,240 --> 00:58:03,240
+And a zero in the lower place
+
+1496
+00:58:03,240 --> 00:58:06,240
+What about the minus ket
+
+1497
+00:58:06,240 --> 00:58:08,240
+The minus ket is represented
+
+1498
+00:58:08,240 --> 00:58:10,240
+by a zero and a one
+
+1499
+00:58:11,240 --> 00:58:13,240
+Okay
+
+1500
+00:58:13,240 --> 00:58:18,240
+This is just some arbitrary correspondence
+
+1501
+00:58:18,240 --> 00:58:20,240
+Okay
+
+1502
+00:58:20,240 --> 00:58:24,240
+Now then if I multiply this by a plus
+
+1503
+00:58:24,240 --> 00:58:27,240
+The numerical constant a plus
+
+1504
+00:58:27,240 --> 00:58:30,240
+Then we have to multiply this by a plus
+
+1505
+00:58:30,240 --> 00:58:33,240
+We don't have to multiply zero by a plus
+
+1506
+00:58:33,240 --> 00:58:35,240
+Because zero times anything is zero
+
+1507
+00:58:35,240 --> 00:58:38,240
+If we multiply this by a minus
+
+1508
+00:58:38,240 --> 00:58:41,240
+Then this becomes a minus here
+
+1509
+00:58:41,240 --> 00:58:44,240
+And if we add them together
+
+1510
+00:58:44,240 --> 00:58:47,240
+A plus times the plus ket
+
+1511
+00:58:47,240 --> 00:58:50,240
+Plus a minus times the minus ket
+
+1512
+00:58:50,240 --> 00:58:52,240
+We just add these together
+
+1513
+00:58:52,240 --> 00:58:54,240
+And we get
+
+1514
+00:58:54,240 --> 00:58:56,240
+Adding them
+
+1515
+00:58:56,240 --> 00:59:00,240
+Gives us a plus a minus
+
+1516
+00:59:00,240 --> 00:59:01,240
+Okay
+
+1517
+00:59:01,240 --> 00:59:04,240
+Does that answer the question that was asked
+
+1518
+00:59:04,240 --> 00:59:06,240
+Yeah
+
+1519
+00:59:06,240 --> 00:59:07,240
+Okay
+
+1520
+00:59:07,240 --> 00:59:09,240
+So yes we certainly
+
+1521
+00:59:09,240 --> 00:59:11,240
+The plus and minus ket
+
+1522
+00:59:11,240 --> 00:59:14,240
+Is represented by a plus and a minus
+
+1523
+00:59:14,240 --> 00:59:16,240
+And the minus ket is represented by a plus
+
+1524
+00:59:16,240 --> 00:59:18,240
+So we can use this notation
+
+1525
+00:59:18,240 --> 00:59:19,240
+Instead of one and two
+
+1526
+00:59:19,240 --> 00:59:21,240
+Here I used one and two
+
+1527
+00:59:21,240 --> 00:59:22,240
+They're just labels
+
+1528
+00:59:22,240 --> 00:59:23,240
+They're just labels
+
+1529
+00:59:23,240 --> 00:59:24,240
+One and two is just a label
+
+1530
+00:59:24,240 --> 00:59:25,240
+To label the two entries
+
+1531
+00:59:25,240 --> 00:59:27,240
+I could have used up and down
+
+1532
+00:59:27,240 --> 00:59:29,240
+I could have used Joe and Pete
+
+1533
+00:59:29,240 --> 00:59:31,240
+I could have used anything I want
+
+1534
+00:59:31,240 --> 00:59:32,240
+To label them
+
+1535
+00:59:32,240 --> 00:59:35,240
+Here I'm using plus and minus
+
+1536
+00:59:35,240 --> 00:59:37,240
+The two possibilities
+
+1537
+00:59:37,240 --> 00:59:39,240
+For the orientation of the electron
+
+1538
+00:59:39,240 --> 00:59:40,240
+Of the electron or of the quantum bit
+
+1539
+00:59:40,240 --> 00:59:41,240
+Plus and minus
+
+1540
+00:59:41,240 --> 00:59:42,240
+Good
+
+1541
+00:59:42,240 --> 00:59:43,240
+Okay
+
+1542
+00:59:43,240 --> 00:59:48,240
+So now we have a
+
+1543
+00:59:48,240 --> 00:59:51,240
+A basic concept of a vector space
+
+1544
+00:59:51,240 --> 00:59:52,240
+The inner product
+
+1545
+00:59:52,240 --> 00:59:54,240
+Question
+
+1546
+00:59:54,240 --> 00:59:57,240
+Does minus ket plus make sense
+
+1547
+00:59:57,240 --> 00:59:59,240
+Say it again louder
+
+1548
+00:59:59,240 --> 01:00:00,240
+Sorry
+
+1549
+01:00:00,240 --> 01:00:01,240
+Say it louder I couldn't hear you
+
+1550
+01:00:01,240 --> 01:00:06,240
+Does minus ket plus make sense
+
+1551
+01:00:06,240 --> 01:00:07,240
+The minus ket
+
+1552
+01:00:07,240 --> 01:00:09,240
+Minus one minus plus
+
+1553
+01:00:09,240 --> 01:00:10,740
+No the minus ket is not
+
+1554
+01:00:10,740 --> 01:00:12,240
+minus one times the plus ket
+
+1555
+01:00:12,240 --> 01:00:14,240
+No no no no no no
+
+1556
+01:00:14,240 --> 01:00:16,240
+I know that it also makes sense
+
+1557
+01:00:16,240 --> 01:00:18,740
+I know that they're different
+
+1558
+01:00:18,740 --> 01:00:21,240
+but does that also make sense
+
+1559
+01:00:21,240 --> 01:00:23,240
+Oh yes
+
+1560
+01:00:23,240 --> 01:00:26,240
+You're asking whether
+
+1561
+01:00:26,240 --> 01:00:29,240
+The
+
+1562
+01:00:29,240 --> 01:00:31,240
+Whether this object makes sense
+
+1563
+01:00:31,240 --> 01:00:33,240
+Yes
+
+1564
+01:00:33,240 --> 01:00:34,740
+You're allowed to take any vector
+
+1565
+01:00:34,740 --> 01:00:36,240
+and multiply it by any complex number
+
+1566
+01:00:36,240 --> 01:00:38,240
+In particular a complex number is minus one
+
+1567
+01:00:38,240 --> 01:00:42,240
+In fact
+
+1568
+01:00:42,240 --> 01:00:45,240
+But your interpretation was that
+
+1569
+01:00:45,240 --> 01:00:47,240
+But this is not
+
+1570
+01:00:47,240 --> 01:00:52,240
+It is not the same as minus
+
+1571
+01:00:52,240 --> 01:00:53,240
+Right
+
+1572
+01:00:53,240 --> 01:00:55,240
+This has a
+
+1573
+01:00:55,240 --> 01:00:57,240
+Okay let's make that clear
+
+1574
+01:00:57,240 --> 01:00:58,740
+The minus here does not mean
+
+1575
+01:00:58,740 --> 01:01:00,240
+that it's minus the plus vector
+
+1576
+01:01:00,240 --> 01:01:02,240
+It's just a label
+
+1577
+01:01:02,240 --> 01:01:06,240
+No more than A2
+
+1578
+01:01:06,240 --> 01:01:08,240
+No more than A3
+
+1579
+01:01:08,240 --> 01:01:11,240
+A2 means twice A1
+
+1580
+01:01:11,240 --> 01:01:12,240
+Yeah
+
+1581
+01:01:12,240 --> 01:01:15,240
+You said the probability of this
+
+1582
+01:01:15,240 --> 01:01:18,240
+thing in a state is the
+
+1583
+01:01:18,240 --> 01:01:21,240
+The A plus dot plus
+
+1584
+01:01:21,240 --> 01:01:23,240
+A plus right
+
+1585
+01:01:23,240 --> 01:01:28,240
+So minus plus ket and ket both represent states
+
+1586
+01:01:28,240 --> 01:01:33,240
+where you have probability one in the plus states
+
+1587
+01:01:33,240 --> 01:01:35,240
+Yes that's correct
+
+1588
+01:01:35,240 --> 01:01:36,240
+That's correct
+
+1589
+01:01:36,240 --> 01:01:37,240
+Oh no
+
+1590
+01:01:37,240 --> 01:01:40,240
+The minus ket is probability one in the minus state
+
+1591
+01:01:40,240 --> 01:01:41,240
+Wait wait
+
+1592
+01:01:41,240 --> 01:01:47,240
+This ket here has probability one in the plus state
+
+1593
+01:01:47,240 --> 01:01:49,240
+So if we don't minus
+
+1594
+01:01:49,240 --> 01:01:51,240
+sign we also have probably one
+
+1595
+01:01:51,240 --> 01:01:53,240
+Which one which one there
+
+1596
+01:01:53,240 --> 01:01:55,240
+If we remove the minus we also have
+
+1597
+01:01:55,240 --> 01:01:56,240
+That's right
+
+1598
+01:01:56,240 --> 01:01:57,240
+That's right
+
+1599
+01:01:57,240 --> 01:01:58,240
+Both of these
+
+1600
+01:01:58,240 --> 01:02:01,740
+That's right absolutely absolutely we're going to come to
+
+1601
+01:02:01,740 --> 01:02:05,240
+that very good very good very good very good
+
+1602
+01:02:05,240 --> 01:02:07,240
+You're pointing out something that I was
+
+1603
+01:02:07,240 --> 01:02:09,240
+about to come to in a moment
+
+1604
+01:02:09,240 --> 01:02:12,240
+I'll tell it to you right now
+
+1605
+01:02:12,240 --> 01:02:15,240
+Well okay if I multiply it
+
+1606
+01:02:15,240 --> 01:02:18,240
+by any complex number of magnitude one
+
+1607
+01:02:18,240 --> 01:02:22,240
+That's right that's correct that's correct
+
+1608
+01:02:22,240 --> 01:02:25,740
+So physically we would not
+
+1609
+01:02:25,740 --> 01:02:29,240
+distinguish this state from this state
+
+1610
+01:02:29,240 --> 01:02:31,740
+I won't write equals because in
+
+1611
+01:02:31,740 --> 01:02:34,240
+the mathematical vector space they're not equal
+
+1612
+01:02:34,240 --> 01:02:38,240
+But they represent the same physics
+
+1613
+01:02:38,240 --> 01:02:43,240
+However however when I add them A plus
+
+1614
+01:02:43,240 --> 01:02:48,240
+and minus A minus are not the same
+
+1615
+01:02:48,240 --> 01:02:51,240
+That is a different state alright that is
+
+1616
+01:02:51,240 --> 01:02:54,240
+a different state with a minus sign here
+
+1617
+01:02:54,240 --> 01:02:56,240
+But we'll come to that we'll come to that it
+
+1618
+01:02:56,240 --> 01:02:58,240
+was something I was going to talk about but not yet
+
+1619
+01:02:58,240 --> 01:03:00,240
+I want you to digest just the idea that the
+
+1620
+01:03:00,240 --> 01:03:02,240
+components of the state of the equation are not the same
+
+1621
+01:03:02,240 --> 01:03:06,240
+Components of these abstract vectors
+
+1622
+01:03:06,240 --> 01:03:10,240
+when squared correspond to probabilities
+
+1623
+01:03:10,240 --> 01:03:14,240
+Does it make physical sense to change the minus
+
+1624
+01:03:14,240 --> 01:03:18,240
+ket to a bra and multiply those two together
+
+1625
+01:03:18,240 --> 01:03:19,240
+Yes
+
+1626
+01:03:19,240 --> 01:03:24,740
+So let's let's tell me I think you're asking
+
+1627
+01:03:24,740 --> 01:03:30,240
+whether it makes sense to take the ket vector plus
+
+1628
+01:03:30,240 --> 01:03:32,240
+And consider
+
+1629
+01:03:32,240 --> 01:03:34,740
+What I'll call its conjugate
+
+1630
+01:03:34,740 --> 01:03:37,240
+which is the bra vector plus
+
+1631
+01:03:37,240 --> 01:03:42,240
+In this case the there's no change because the
+
+1632
+01:03:42,240 --> 01:03:45,240
+Well except that you were writing as a row
+
+1633
+01:03:45,240 --> 01:03:47,240
+Right
+
+1634
+01:03:48,240 --> 01:03:50,240
+What about the inner product
+
+1635
+01:03:50,240 --> 01:03:51,240
+The components don't change
+
+1636
+01:03:51,240 --> 01:03:53,240
+The components don't change
+
+1637
+01:03:53,240 --> 01:03:56,240
+That's right in this case in this case right
+
+1638
+01:03:56,240 --> 01:03:58,240
+Because one is a real number
+
+1639
+01:03:58,240 --> 01:04:00,240
+we don't have the complex conjugated
+
+1640
+01:04:00,240 --> 01:04:01,240
+Okay so here's a
+
+1641
+01:04:01,240 --> 01:04:03,240
+Little exercise
+
+1642
+01:04:03,240 --> 01:04:07,240
+What's the inner product of the plus vector with itself
+
+1643
+01:04:07,240 --> 01:04:08,240
+One
+
+1644
+01:04:08,240 --> 01:04:17,240
+One because it's just multiplying one zero times one zero
+
+1645
+01:04:17,240 --> 01:04:21,240
+One times one is one
+
+1646
+01:04:21,240 --> 01:04:23,240
+So this is one
+
+1647
+01:04:23,240 --> 01:04:29,240
+What about minus minus
+
+1648
+01:04:29,240 --> 01:04:31,240
+Also equal to one
+
+1649
+01:04:31,240 --> 01:04:33,240
+What about
+
+1650
+01:04:33,240 --> 01:04:36,240
+The inner product of
+
+1651
+01:04:36,240 --> 01:04:45,240
+Plus with minus
+
+1652
+01:04:45,240 --> 01:04:47,240
+Let's just check that for those who don't
+
+1653
+01:04:47,240 --> 01:04:49,240
+see it so quickly let's just check it
+
+1654
+01:04:49,240 --> 01:04:52,240
+The plus
+
+1655
+01:04:52,240 --> 01:04:54,240
+Bra
+
+1656
+01:04:54,240 --> 01:04:57,240
+Is one zero
+
+1657
+01:04:57,240 --> 01:04:59,240
+The minus ket
+
+1658
+01:04:59,240 --> 01:05:01,240
+Is zero one
+
+1659
+01:05:01,240 --> 01:05:04,740
+All right so when we multiply them together we get
+
+1660
+01:05:04,740 --> 01:05:08,240
+one times zero plus zero times one which is altogether zero
+
+1661
+01:05:08,240 --> 01:05:09,240
+All right
+
+1662
+01:05:09,240 --> 01:05:12,240
+What about minus plus
+
+1663
+01:05:12,240 --> 01:05:15,240
+Also zero
+
+1664
+01:05:15,240 --> 01:05:17,740
+What's the word for two
+
+1665
+01:05:17,740 --> 01:05:20,240
+vectors whose inner product is zero
+
+1666
+01:05:20,240 --> 01:05:22,240
+Orthogonal
+
+1667
+01:05:22,240 --> 01:05:24,240
+Orthogonal
+
+1668
+01:05:24,240 --> 01:05:26,240
+They're
+
+1669
+01:05:26,240 --> 01:05:28,240
+Called orthogonal vectors
+
+1670
+01:05:28,240 --> 01:05:31,240
+So the two vectors representing the two distinct
+
+1671
+01:05:31,240 --> 01:05:34,240
+states of the electron one up and one down
+
+1672
+01:05:34,240 --> 01:05:37,240
+Are two orthogonal vectors
+
+1673
+01:05:37,240 --> 01:05:40,240
+In a
+
+1674
+01:05:40,240 --> 01:05:43,240
+Linear vector space of states
+
+1675
+01:05:43,240 --> 01:05:45,240
+Linear vector space of states
+
+1676
+01:05:45,240 --> 01:05:47,240
+Okay that's the basic setup
+
+1677
+01:05:47,240 --> 01:05:49,240
+Uh
+
+1678
+01:05:49,240 --> 01:05:52,240
+And the coefficients that appear there
+
+1679
+01:05:52,240 --> 01:05:54,240
+Their squared magnitudes
+
+1680
+01:05:54,240 --> 01:05:56,240
+Are the probabilities of the constant homeostasis
+
+1681
+01:05:56,240 --> 01:05:59,740
+for the two configurations, the
+
+1682
+01:05:59,740 --> 01:06:03,240
+probability for up and for down.
+
+1683
+01:06:03,240 --> 01:06:09,359
+Now, as you can see, there are more
+
+1684
+01:06:09,359 --> 01:06:15,479
+possible physical states than just up and down.
+
+1685
+01:06:15,479 --> 01:06:18,419
+There are all the linear combinations.
+
+1686
+01:06:18,419 --> 01:06:20,829
+It's the linear combinations of them
+
+1687
+01:06:20,829 --> 01:06:23,240
+that correspond to the electron point
+
+1688
+01:06:23,240 --> 01:06:26,680
+having been prepared in different directions.
+
+1689
+01:06:26,680 --> 01:06:29,749
+So in other words, an arbitrary combination like this,
+
+1690
+01:06:29,749 --> 01:06:32,819
+with an A plus and an A minus there,
+
+1691
+01:06:32,819 --> 01:06:36,059
+when this is not 1 and 0 or 0
+
+1692
+01:06:36,059 --> 01:06:39,299
+and 1, correspond when you consider all the possible complex
+
+1693
+01:06:39,299 --> 01:06:42,009
+numbers to the different directions that
+
+1694
+01:06:42,009 --> 01:06:44,720
+you might have prepared the electron.
+
+1695
+01:06:44,720 --> 01:06:48,980
+But still, all there is is up and
+
+1696
+01:06:48,980 --> 01:06:53,240
+down and the probabilities for up and down.
+
+1697
+01:06:53,240 --> 01:06:55,440
+So a state, for example,
+
+1698
+01:06:55,440 --> 01:06:57,640
+let me give you an example.
+
+1699
+01:06:57,640 --> 01:07:08,060
+A vector, let's write 1 in both slots.
+
+1700
+01:07:08,060 --> 01:07:08,839
+That's not allowed.
+
+1701
+01:07:08,839 --> 01:07:13,479
+Why isn't that allowed?
+
+1702
+01:07:13,479 --> 01:07:16,020
+Probability doesn't add to 1.
+
+1703
+01:07:16,020 --> 01:07:18,419
+So the probability would add to 2 here.
+
+1704
+01:07:18,419 --> 01:07:20,040
+1 squared plus 1 squared is 2.
+
+1705
+01:07:20,040 --> 01:07:21,819
+We have to divide it by square root of 2.
+
+1706
+01:07:23,240 --> 01:07:26,740
+Now each of the probabilities is a
+
+1707
+01:07:26,740 --> 01:07:30,240
+half, and they add up to 1.
+
+1708
+01:07:30,240 --> 01:07:33,240
+What about parentheses or something?
+
+1709
+01:07:33,240 --> 01:07:34,240
+Parentheses where?
+
+1710
+01:07:34,240 --> 01:07:37,740
+What doesn't make sense inside of a cat.
+
+1711
+01:07:37,740 --> 01:07:38,740
+You're right.
+
+1712
+01:07:38,740 --> 01:07:51,479
+I meant to write the column.
+
+1713
+01:07:51,479 --> 01:07:52,640
+That's a state.
+
+1714
+01:07:52,640 --> 01:07:56,140
+So you have an equal probability, namely
+
+1715
+01:07:56,140 --> 01:07:59,640
+probability a half to find the electron up,
+
+1716
+01:07:59,640 --> 01:08:01,640
+and now this one has probability
+
+1717
+01:08:01,640 --> 01:08:03,640
+a half to find the electron down.
+
+1718
+01:08:03,640 --> 01:08:07,640
+There are more states than just up and down.
+
+1719
+01:08:07,640 --> 01:08:11,140
+And in fact, this one corresponds to what
+
+1720
+01:08:11,140 --> 01:08:14,640
+you would create if you created the electron
+
+1721
+01:08:14,640 --> 01:08:16,639
+pointing in the horizontal direction.
+
+1722
+01:08:16,639 --> 01:08:18,639
+If with a magnetic field in
+
+1723
+01:08:18,639 --> 01:08:20,639
+the horizontal direction, you froze the electron.
+
+1724
+01:08:20,639 --> 01:08:21,639
+Let's take a break.
+
+1725
+01:08:21,640 --> 01:08:23,640
+If you put the electron into place
+
+1726
+01:08:23,640 --> 01:08:25,640
+with a magnetic field in the horizontal direction,
+
+1727
+01:08:25,640 --> 01:08:28,640
+in the horizontal plane, one of
+
+1728
+01:08:28,640 --> 01:08:31,640
+the possibilities would be this state here,
+
+1729
+01:08:31,640 --> 01:08:34,640
+which would have half a probability of being
+
+1730
+01:08:34,640 --> 01:08:37,640
+up and half a probability of being down.
+
+1731
+01:08:37,640 --> 01:08:40,640
+Half the probability of up and half the
+
+1732
+01:08:40,640 --> 01:08:43,640
+probability of being down actually corresponds to some
+
+1733
+01:08:43,640 --> 01:08:46,640
+configuration where the electron is
+
+1734
+01:08:46,640 --> 01:08:49,640
+lying somewhere in the horizontal plane.
+
+1735
+01:08:49,640 --> 01:08:53,140
+So we have plenty of vectors around with
+
+1736
+01:08:53,140 --> 01:08:56,640
+all kinds of complex numbers out of which we
+
+1737
+01:08:56,640 --> 01:08:59,640
+can build, and we'll see that we can do
+
+1738
+01:08:59,640 --> 01:09:02,640
+this, we can build the space of electrons which
+
+1739
+01:09:02,640 --> 01:09:05,140
+in some sense are pointing in any direction,
+
+1740
+01:09:05,140 --> 01:09:07,640
+but whenever we measure them, all we get is
+
+1741
+01:09:07,640 --> 01:09:09,640
+up or down with probabilities
+
+1742
+01:09:09,640 --> 01:09:11,640
+that are governed by these coefficients.
+
+1743
+01:09:11,640 --> 01:09:14,640
+Let's take a break for seven
+
+1744
+01:09:14,640 --> 01:09:17,640
+minutes, seven minutes and thirty seconds.
+
+1745
+01:09:17,640 --> 01:09:18,640
+All right.
+
+1746
+01:09:18,640 --> 01:09:21,640
+Now more than one person is probably a
+
+1747
+01:09:21,640 --> 01:09:24,640
+little bit confused about the two notions of vectors.
+
+1748
+01:09:24,640 --> 01:09:28,640
+One is having to do with directionality in
+
+1749
+01:09:28,640 --> 01:09:32,640
+ordinary space, and one having to do with
+
+1750
+01:09:32,640 --> 01:09:38,640
+this abstract concept and this notion of components
+
+1751
+01:09:38,640 --> 01:09:44,640
+of vectors labeling up state and down state.
+
+1752
+01:09:44,640 --> 01:09:46,640
+The question is what's the connection between
+
+1753
+01:09:46,640 --> 01:09:48,640
+the notion of directionality in the horizontal
+
+1754
+01:09:48,640 --> 01:09:51,640
+plane space and these vectors here.
+
+1755
+01:09:51,640 --> 01:09:54,140
+Now what I want to say first
+
+1756
+01:09:54,140 --> 01:09:56,640
+of all is they are not simply related.
+
+1757
+01:09:56,640 --> 01:09:59,640
+They are related but not simply related.
+
+1758
+01:09:59,640 --> 01:10:03,140
+For example, how many components does
+
+1759
+01:10:03,140 --> 01:10:06,640
+a vector have, an ordinary vector?
+
+1760
+01:10:06,640 --> 01:10:08,640
+Three.
+
+1761
+01:10:08,640 --> 01:10:10,640
+And they're real numbers, right?
+
+1762
+01:10:10,640 --> 01:10:11,640
+X, Y, and Z.
+
+1763
+01:10:11,640 --> 01:10:13,640
+They're all real numbers.
+
+1764
+01:10:13,640 --> 01:10:15,640
+These vectors have two
+
+1765
+01:10:15,640 --> 01:10:17,640
+components and they're complex numbers.
+
+1766
+01:10:18,640 --> 01:10:21,640
+That means how many real numbers does
+
+1767
+01:10:21,640 --> 01:10:24,640
+it take to describe one of them?
+
+1768
+01:10:24,640 --> 01:10:26,640
+Four.
+
+1769
+01:10:26,640 --> 01:10:27,640
+Four.
+
+1770
+01:10:27,640 --> 01:10:28,640
+All right.
+
+1771
+01:10:28,640 --> 01:10:30,640
+So they're not the same thing.
+
+1772
+01:10:30,640 --> 01:10:32,640
+But there must be some connection.
+
+1773
+01:10:32,640 --> 01:10:39,640
+We're not going to do that connection just yet.
+
+1774
+01:10:39,640 --> 01:10:41,640
+But we will come to it.
+
+1775
+01:10:48,640 --> 01:10:52,140
+Next concept, which we already went into a
+
+1776
+01:10:52,140 --> 01:10:55,640
+little last time, is the concept of a matrix.
+
+1777
+01:10:55,640 --> 01:10:56,640
+Question.
+
+1778
+01:10:56,640 --> 01:11:01,140
+How do you know what vector
+
+1779
+01:11:01,140 --> 01:11:05,640
+space describes other deeper quantum galaxies?
+
+1780
+01:11:05,640 --> 01:11:06,640
+Okay.
+
+1781
+01:11:06,640 --> 01:11:09,640
+It's an experimental question, in a sense.
+
+1782
+01:11:09,640 --> 01:11:12,140
+From the fact that there are only two possible
+
+1783
+01:11:12,140 --> 01:11:14,640
+answers to the way that when you do this experiment
+
+1784
+01:11:14,640 --> 01:11:15,640
+on the electron, you either get that
+
+1785
+01:11:15,640 --> 01:11:16,640
+it's up or down and nothing in between.
+
+1786
+01:11:16,640 --> 01:11:17,640
+Okay.
+
+1787
+01:11:17,640 --> 01:11:21,140
+That tells you that there are two possibilities
+
+1788
+01:11:21,140 --> 01:11:24,640
+and it tells you that you should be dealing
+
+1789
+01:11:24,640 --> 01:11:26,640
+with a two-dimensional vector space.
+
+1790
+01:11:26,640 --> 01:11:29,140
+All two-dimensional complex vector
+
+1791
+01:11:29,140 --> 01:11:31,640
+spaces are mathematically the same.
+
+1792
+01:11:31,640 --> 01:11:33,640
+So they're all the same.
+
+1793
+01:11:33,640 --> 01:11:36,140
+A two-dimensional complex vector space
+
+1794
+01:11:36,140 --> 01:11:38,640
+is a two-dimensional complex vector space.
+
+1795
+01:11:38,640 --> 01:11:41,640
+There's not more than one of them mathematically.
+
+1796
+01:11:41,640 --> 01:11:42,640
+So...
+
+1797
+01:11:42,640 --> 01:11:43,640
+So...
+
+1798
+01:11:43,640 --> 01:11:44,640
+So...
+
+1799
+01:11:44,640 --> 01:11:45,640
+So...
+
+1800
+01:11:45,640 --> 01:11:46,640
+So...
+
+1801
+01:11:46,640 --> 01:11:49,640
+So you count up the number of possibilities.
+
+1802
+01:11:49,640 --> 01:11:51,640
+Somebody asked me before if I had to spin
+
+1803
+01:11:51,640 --> 01:11:53,640
+one particle instead of a spin a half particle,
+
+1804
+01:11:53,640 --> 01:11:56,140
+which is what an electron is,
+
+1805
+01:11:56,140 --> 01:11:58,640
+how many components would there be?
+
+1806
+01:11:58,640 --> 01:12:00,640
+Then there would be three.
+
+1807
+01:12:00,640 --> 01:12:02,640
+But it's an experimental question.
+
+1808
+01:12:02,640 --> 01:12:04,640
+How many possibilities are there?
+
+1809
+01:12:04,640 --> 01:12:06,640
+How many states are there?
+
+1810
+01:12:06,640 --> 01:12:09,640
+How many distinct possibilities are there?
+
+1811
+01:12:09,640 --> 01:12:11,640
+And in the case of the electron spin, in
+
+1812
+01:12:11,640 --> 01:12:13,640
+the case of the spin of the electron, there are
+
+1813
+01:12:13,640 --> 01:12:14,640
+two possibilities.
+
+1814
+01:12:14,640 --> 01:12:17,640
+One is that the electron is a two-dimensional vector space.
+
+1815
+01:12:17,640 --> 01:12:19,640
+And so it's a two-dimensional vector space.
+
+1816
+01:12:19,640 --> 01:12:20,640
+And they're all the same.
+
+1817
+01:12:20,640 --> 01:12:23,140
+There's no distinction between
+
+1818
+01:12:23,140 --> 01:12:25,640
+different two-dimensional vector spaces.
+
+1819
+01:12:25,640 --> 01:12:29,140
+Other than the fact that we
+
+1820
+01:12:29,140 --> 01:12:32,640
+could consider real or complex vector spaces.
+
+1821
+01:12:32,640 --> 01:12:33,640
+Okay.
+
+1822
+01:12:33,640 --> 01:12:38,140
+Let's move on to the concept, to the
+
+1823
+01:12:38,140 --> 01:12:42,640
+abstract concept of a linear operator or the concrete
+
+1824
+01:12:42,640 --> 01:12:46,640
+of a matrix.
+
+1825
+01:12:46,640 --> 01:12:53,640
+Let me tell you where we're going.
+
+1826
+01:12:53,640 --> 01:12:55,640
+We've talked about states, but we haven't
+
+1827
+01:12:55,640 --> 01:12:57,640
+talked about the things that you actually
+
+1828
+01:12:57,640 --> 01:12:58,640
+measure.
+
+1829
+01:12:58,640 --> 01:13:01,140
+The things that you measure or that
+
+1830
+01:13:01,140 --> 01:13:03,640
+you can measure are called the observables.
+
+1831
+01:13:03,640 --> 01:13:07,140
+The observables of a system are the things
+
+1832
+01:13:07,140 --> 01:13:10,640
+that you can measure and get answers for.
+
+1833
+01:13:10,640 --> 01:13:12,640
+Position of an electron is an observable.
+
+1834
+01:13:12,640 --> 01:13:16,640
+But we're not doing anything as complicated as that.
+
+1835
+01:13:16,640 --> 01:13:21,140
+If we were to label the up and the down
+
+1836
+01:13:21,140 --> 01:13:25,640
+state as plus and minus, we could invent an observable
+
+1837
+01:13:25,640 --> 01:13:27,640
+which would have two possible values.
+
+1838
+01:13:27,640 --> 01:13:31,640
+It could either be plus, plus one or minus one.
+
+1839
+01:13:31,640 --> 01:13:33,640
+And it would be an observable that we could measure.
+
+1840
+01:13:33,640 --> 01:13:35,140
+If the electron's up, we will
+
+1841
+01:13:35,140 --> 01:13:36,640
+assign it the number plus one.
+
+1842
+01:13:36,640 --> 01:13:39,640
+If it's down, we'll assign it the number minus one.
+
+1843
+01:13:39,640 --> 01:13:41,640
+Also called an observable.
+
+1844
+01:13:41,640 --> 01:13:45,640
+Anything that we can measure that has a numerical value.
+
+1845
+01:13:45,640 --> 01:13:47,640
+Numerical value means a real number.
+
+1846
+01:13:47,640 --> 01:13:50,640
+Anything that we can measure that when
+
+1847
+01:13:50,640 --> 01:13:53,640
+the measurement is recorded, it gives rise to
+
+1848
+01:13:53,640 --> 01:13:57,640
+a number, a numerical number, is called an observable.
+
+1849
+01:13:57,640 --> 01:14:02,140
+So as I said, in the case of the
+
+1850
+01:14:02,140 --> 01:14:06,640
+electron spin, if we measure the, whether it's up or
+
+1851
+01:14:06,640 --> 01:14:08,640
+down, we could assign up the number
+
+1852
+01:14:08,640 --> 01:14:10,640
+plus one and down the number minus one.
+
+1853
+01:14:11,640 --> 01:14:15,140
+And in that way have an observable
+
+1854
+01:14:15,140 --> 01:14:18,640
+which, whose numerical value when we measure it
+
+1855
+01:14:18,640 --> 01:14:23,640
+is either plus one or minus one.
+
+1856
+01:14:23,640 --> 01:14:25,640
+Let me talk about, before
+
+1857
+01:14:25,640 --> 01:14:27,640
+talking about observables and quantum mechanics,
+
+1858
+01:14:27,640 --> 01:14:31,140
+let's talk about observables for a
+
+1859
+01:14:31,140 --> 01:14:34,640
+minute in classical mechanics, in classical theory.
+
+1860
+01:14:34,640 --> 01:14:39,640
+In classical theory, the states of a system,
+
+1861
+01:14:41,640 --> 01:14:47,140
+are just a set of
+
+1862
+01:14:47,140 --> 01:14:52,640
+states which we represented by points.
+
+1863
+01:14:52,640 --> 01:14:53,640
+How many do we have?
+
+1864
+01:14:53,640 --> 01:14:54,640
+One, two, three, four, five, six.
+
+1865
+01:14:54,640 --> 01:14:57,640
+These could be the six possibilities for
+
+1866
+01:14:57,640 --> 01:15:00,640
+throwing a dice, a die, a single die.
+
+1867
+01:15:00,640 --> 01:15:04,640
+The one, two, three, four, five, six. This is it.
+
+1868
+01:15:04,640 --> 01:15:08,640
+And we could assign
+
+1869
+01:15:08,640 --> 01:15:10,640
+some numbers to each one of these states.
+
+1870
+01:15:11,640 --> 01:15:14,640
+So we could call, we could label
+
+1871
+01:15:14,640 --> 01:15:17,640
+this one one, two, three, four, five, six.
+
+1872
+01:15:17,640 --> 01:15:19,140
+We throw the die and we
+
+1873
+01:15:19,140 --> 01:15:20,640
+look at it. That's the measurement.
+
+1874
+01:15:20,640 --> 01:15:22,140
+We throw the die and we look
+
+1875
+01:15:22,140 --> 01:15:23,640
+at it and we get an answer.
+
+1876
+01:15:23,640 --> 01:15:25,640
+The answer is either one,
+
+1877
+01:15:25,640 --> 01:15:27,640
+two, three, four, five, or six.
+
+1878
+01:15:27,640 --> 01:15:31,640
+That measurement is the measurement of an observable,
+
+1879
+01:15:31,640 --> 01:15:36,640
+and it's an observable which has six possible answers.
+
+1880
+01:15:36,640 --> 01:15:40,640
+There are other observables that we could concoct.
+
+1881
+01:15:41,640 --> 01:15:44,640
+For example, we could concoct
+
+1882
+01:15:44,640 --> 01:15:47,640
+an observable which is zero everywheres,
+
+1883
+01:15:47,640 --> 01:15:49,640
+except at one value.
+
+1884
+01:15:49,640 --> 01:15:53,640
+One, zero, zero, zero, zero.
+
+1885
+01:15:53,640 --> 01:15:55,640
+Zero.
+
+1886
+01:15:55,640 --> 01:15:59,640
+Now, this means that if we flip the die,
+
+1887
+01:15:59,640 --> 01:16:01,640
+and we get a one,
+
+1888
+01:16:01,640 --> 01:16:05,640
+we assign the number one to the observable.
+
+1889
+01:16:05,640 --> 01:16:07,640
+If we get any other number, we
+
+1890
+01:16:07,640 --> 01:16:09,640
+assign the value zero to the observable.
+
+1891
+01:16:09,640 --> 01:16:10,640
+So there are many different ways to do this.
+
+1892
+01:16:10,640 --> 01:16:13,640
+So there are many observables that you can make,
+
+1893
+01:16:13,640 --> 01:16:16,640
+and basically they correspond to
+
+1894
+01:16:16,640 --> 01:16:19,640
+any functions of these points.
+
+1895
+01:16:19,640 --> 01:16:22,140
+Any functions of these points
+
+1896
+01:16:22,140 --> 01:16:24,640
+assign any function to the points.
+
+1897
+01:16:24,640 --> 01:16:27,140
+Function of points means assign any numbers
+
+1898
+01:16:27,140 --> 01:16:29,640
+you like to these points, real numbers.
+
+1899
+01:16:29,640 --> 01:16:32,640
+And then when you flip the die,
+
+1900
+01:16:32,640 --> 01:16:34,640
+and you see what comes up,
+
+1901
+01:16:34,640 --> 01:16:36,640
+you say the value of the
+
+1902
+01:16:36,640 --> 01:16:38,640
+observable is whatever the numerical value
+
+1903
+01:16:38,640 --> 01:16:42,640
+of that observable was when you flipped the die.
+
+1904
+01:16:42,640 --> 01:16:46,640
+There are many, many observables that you can think about
+
+1905
+01:16:46,640 --> 01:16:50,640
+in this simple system.
+
+1906
+01:16:50,640 --> 01:16:53,640
+But they're all rather trivial.
+
+1907
+01:16:53,640 --> 01:16:59,640
+I mean, they just correspond to
+
+1908
+01:16:59,640 --> 01:17:02,640
+the basic question of whether the die
+
+1909
+01:17:02,640 --> 01:17:05,640
+is one, two, three, four, five, or six.
+
+1910
+01:17:08,640 --> 01:17:10,640
+Interesting just not because...
+
+1911
+01:17:10,640 --> 01:17:16,640
+Yes, it is interesting to define the observable
+
+1912
+01:17:16,640 --> 01:17:23,640
+as a function of which state we're talking about.
+
+1913
+01:17:23,640 --> 01:17:25,640
+F sub n.
+
+1914
+01:17:25,640 --> 01:17:29,640
+n here represents which of these states we're talking about,
+
+1915
+01:17:29,640 --> 01:17:32,140
+and f is a function which could
+
+1916
+01:17:32,140 --> 01:17:34,640
+be any number for each of these states.
+
+1917
+01:17:34,640 --> 01:17:36,640
+That's called an observable.
+
+1918
+01:17:36,640 --> 01:17:38,640
+When you flip a die,
+
+1919
+01:17:38,640 --> 01:17:40,640
+you look at what you get,
+
+1920
+01:17:40,640 --> 01:17:43,640
+and you assign the number f to the particular state.
+
+1921
+01:17:43,640 --> 01:17:46,640
+F sub 1, f sub 2, through f sub 6.
+
+1922
+01:17:46,640 --> 01:17:48,640
+That's called an observable.
+
+1923
+01:17:48,640 --> 01:17:51,140
+And it's a sort of overkill
+
+1924
+01:17:51,140 --> 01:17:53,640
+concept in this classical situation here,
+
+1925
+01:17:53,640 --> 01:17:55,640
+but let's continue.
+
+1926
+01:17:55,640 --> 01:17:58,640
+Now, let us suppose that for one reason or another,
+
+1927
+01:17:58,640 --> 01:18:00,640
+in classical physics,
+
+1928
+01:18:00,640 --> 01:18:04,640
+we haven't been very careful in doing our classical physics,
+
+1929
+01:18:04,640 --> 01:18:06,640
+measurements and so forth,
+
+1930
+01:18:06,640 --> 01:18:08,640
+and we don't know exactly
+
+1931
+01:18:08,640 --> 01:18:10,640
+what state the system is in.
+
+1932
+01:18:10,640 --> 01:18:13,640
+All we know is some probabilities.
+
+1933
+01:18:13,640 --> 01:18:15,640
+For example, we may have a loaded die,
+
+1934
+01:18:15,640 --> 01:18:18,640
+a loaded die which is an unfair die,
+
+1935
+01:18:18,640 --> 01:18:21,640
+like the kind dirty gamblers use,
+
+1936
+01:18:21,640 --> 01:18:23,640
+and you flip it,
+
+1937
+01:18:23,640 --> 01:18:25,640
+and it lands on the table.
+
+1938
+01:18:25,640 --> 01:18:28,640
+There may be a probability distribution
+
+1939
+01:18:28,640 --> 01:18:31,140
+for different values of the one,
+
+1940
+01:18:31,140 --> 01:18:33,640
+two, three, four, five, or six.
+
+1941
+01:18:33,640 --> 01:18:36,640
+Let's label that p sub n also.
+
+1942
+01:18:36,640 --> 01:18:39,640
+That's the probability,
+
+1943
+01:18:39,640 --> 01:18:41,640
+the a priori probability, let's say,
+
+1944
+01:18:41,640 --> 01:18:43,640
+that when you flip the die,
+
+1945
+01:18:43,640 --> 01:18:48,640
+you get the nth state.
+
+1946
+01:18:48,640 --> 01:18:51,640
+Then, what is the average
+
+1947
+01:18:51,640 --> 01:18:54,640
+if you flip the die many, many times,
+
+1948
+01:18:54,640 --> 01:18:59,640
+and each time you measure f,
+
+1949
+01:18:59,640 --> 01:19:01,640
+you flip it many, many times,
+
+1950
+01:19:01,640 --> 01:19:03,640
+you measure f,
+
+1951
+01:19:03,640 --> 01:19:06,640
+what is the average value of f, f sub n?
+
+1952
+01:19:06,640 --> 01:19:13,640
+There are many, many, many identical experiments.
+
+1953
+01:19:13,640 --> 01:19:16,640
+The answer, anybody know?
+
+1954
+01:19:22,640 --> 01:19:28,640
+Well, the answer for the average value of f,
+
+1955
+01:19:28,640 --> 01:19:30,640
+we're assuming, of course,
+
+1956
+01:19:30,640 --> 01:19:33,640
+that the sum of the p sub n's is one.
+
+1957
+01:19:33,640 --> 01:19:35,640
+In other words, the sum of the probabilities of one.
+
+1958
+01:19:35,640 --> 01:19:38,640
+The average value of f is
+
+1959
+01:19:38,640 --> 01:19:41,640
+the sum over all the possibilities
+
+1960
+01:19:41,640 --> 01:19:46,640
+of the probability for the nth configuration
+
+1961
+01:19:46,640 --> 01:19:49,140
+times the value that the
+
+1962
+01:19:49,140 --> 01:19:51,640
+function has in the nth configuration.
+
+1963
+01:19:51,640 --> 01:19:53,140
+So what you do is
+
+1964
+01:19:53,140 --> 01:19:54,640
+you add up all the configurations
+
+1965
+01:19:54,640 --> 01:19:57,640
+weighted according to their probability.
+
+1966
+01:19:57,640 --> 01:19:59,640
+Weight them according to their probability.
+
+1967
+01:19:59,640 --> 01:20:01,640
+For example,
+
+1968
+01:20:01,640 --> 01:20:04,640
+if all the probabilities are equal,
+
+1969
+01:20:04,640 --> 01:20:07,640
+then you just add up the f sub n's.
+
+1970
+01:20:07,640 --> 01:20:09,640
+If they're all equal, incidentally,
+
+1971
+01:20:09,640 --> 01:20:11,640
+they're not one, they're one over n,
+
+1972
+01:20:11,640 --> 01:20:13,640
+because they're one over the number,
+
+1973
+01:20:13,640 --> 01:20:15,640
+one over six in this case.
+
+1974
+01:20:15,640 --> 01:20:19,640
+But this is the average over many, many,
+
+1975
+01:20:19,640 --> 01:20:23,640
+let's take an example.
+
+1976
+01:20:23,640 --> 01:20:26,640
+Let's do a coin, a simple coin,
+
+1977
+01:20:26,640 --> 01:20:28,640
+up or down, heads or tails.
+
+1978
+01:20:28,640 --> 01:20:31,640
+Let's say there's the probability for heads,
+
+1979
+01:20:31,640 --> 01:20:33,640
+and we're going to call heads plus.
+
+1980
+01:20:33,640 --> 01:20:36,640
+There's the probability for heads, which is p plus.
+
+1981
+01:20:36,640 --> 01:20:39,640
+There's the probability for tails, which is p minus.
+
+1982
+01:20:39,640 --> 01:20:42,640
+If we have heads,
+
+1983
+01:20:42,640 --> 01:20:44,640
+we assign the number plus one.
+
+1984
+01:20:44,640 --> 01:20:48,640
+If we have tails, we assign the number minus one.
+
+1985
+01:20:48,640 --> 01:20:51,640
+What is the probability for that observable,
+
+1986
+01:20:51,640 --> 01:20:54,640
+which is either plus one or minus one?
+
+1987
+01:20:54,640 --> 01:20:58,640
+It's p plus,
+
+1988
+01:20:58,640 --> 01:21:00,640
+the probability for plus,
+
+1989
+01:21:00,640 --> 01:21:02,640
+minus the probability for minus.
+
+1990
+01:21:03,640 --> 01:21:07,640
+Because every time you get a minus,
+
+1991
+01:21:07,640 --> 01:21:10,640
+you give it a value minus one.
+
+1992
+01:21:10,640 --> 01:21:12,640
+In other words, every time you get a tail,
+
+1993
+01:21:12,640 --> 01:21:14,640
+you give it a minus one.
+
+1994
+01:21:14,640 --> 01:21:16,640
+Every time you get a head,
+
+1995
+01:21:16,640 --> 01:21:18,640
+you give it a plus one.
+
+1996
+01:21:18,640 --> 01:21:21,640
+The average is p plus minus p minus.
+
+1997
+01:21:21,640 --> 01:21:24,640
+The difference between the probability of head and tail
+
+1998
+01:21:24,640 --> 01:21:27,640
+is the average of the headsness or the tailsness.
+
+1999
+01:21:27,640 --> 01:21:31,640
+So this basic formula here,
+
+2000
+01:21:31,640 --> 01:21:34,640
+which is just the most elementary
+
+2001
+01:21:34,640 --> 01:21:38,640
+formula of probability of the notion of an average,
+
+2002
+01:21:38,640 --> 01:21:41,640
+that you average over all the possibilities,
+
+2003
+01:21:41,640 --> 01:21:43,640
+weighing it with the value
+
+2004
+01:21:43,640 --> 01:21:45,640
+of the quantity of the observable,
+
+2005
+01:21:45,640 --> 01:21:47,640
+whose average you're taking,
+
+2006
+01:21:47,640 --> 01:21:50,640
+and you weigh it according to the probability
+
+2007
+01:21:50,640 --> 01:21:52,640
+of that particular configuration.
+
+2008
+01:21:52,640 --> 01:21:54,640
+And that's the average value
+
+2009
+01:21:54,640 --> 01:21:57,140
+of an experiment which consists
+
+2010
+01:21:57,140 --> 01:21:59,640
+of many, many repeated experiments.
+
+2011
+01:22:01,640 --> 01:22:04,640
+What's that?
+
+2012
+01:22:04,640 --> 01:22:06,640
+Expected value, sometimes called the expected value,
+
+2013
+01:22:06,640 --> 01:22:08,640
+sometimes called the expectation value,
+
+2014
+01:22:08,640 --> 01:22:10,640
+sometimes called the average value.
+
+2015
+01:22:10,640 --> 01:22:15,640
+And that's what we're going to be interested in.
+
+2016
+01:22:15,640 --> 01:22:18,640
+We're going to be interested in the average values
+
+2017
+01:22:18,640 --> 01:22:20,640
+of things that we can measure,
+
+2018
+01:22:20,640 --> 01:22:23,640
+the average values of observables.
+
+2019
+01:22:23,640 --> 01:22:26,640
+Now, what I haven't told you
+
+2020
+01:22:26,640 --> 01:22:29,640
+is how you represent observables in quantum mechanics.
+
+2021
+01:22:29,640 --> 01:22:31,640
+And the representation of observables
+
+2022
+01:22:31,640 --> 01:22:35,640
+in quantum mechanics is more intricate and complicated
+
+2023
+01:22:35,640 --> 01:22:39,640
+than just saying we assign to each state
+
+2024
+01:22:39,640 --> 01:22:41,640
+a numerical value that we call
+
+2025
+01:22:41,640 --> 01:22:44,640
+the observable value in that state.
+
+2026
+01:22:44,640 --> 01:22:46,640
+It's a more complicated concept
+
+2027
+01:22:46,640 --> 01:22:48,640
+and a more tricky concept,
+
+2028
+01:22:48,640 --> 01:22:50,640
+the notion of an observable,
+
+2029
+01:22:50,640 --> 01:22:52,640
+or measurable,
+
+2030
+01:22:52,640 --> 01:22:55,640
+measurable quantity.
+
+2031
+01:22:55,640 --> 01:22:58,640
+And it's related, not related, but is,
+
+2032
+01:22:58,640 --> 01:23:00,640
+well, related, related to
+
+2033
+01:23:00,640 --> 01:23:05,640
+the concept of a linear operator
+
+2034
+01:23:05,640 --> 01:23:07,640
+or a matrix.
+
+2035
+01:23:07,640 --> 01:23:10,640
+For our purposes, they're the same thing.
+
+2036
+01:23:10,640 --> 01:23:13,640
+Again, the mathematicians will object to me saying
+
+2037
+01:23:13,640 --> 01:23:15,640
+a matrix is a linear operator.
+
+2038
+01:23:15,640 --> 01:23:17,640
+I don't know, do you object?
+
+2039
+01:23:17,640 --> 01:23:19,140
+Anybody object to my saying
+
+2040
+01:23:19,140 --> 01:23:20,640
+a matrix is a linear operator?
+
+2041
+01:23:20,640 --> 01:23:23,640
+There is a question over there.
+
+2042
+01:23:23,640 --> 01:23:24,640
+What?
+
+2043
+01:23:24,640 --> 01:23:26,640
+Somebody had the same thing.
+
+2044
+01:23:26,640 --> 01:23:29,640
+Can I just, in this example,
+
+2045
+01:23:30,640 --> 01:23:34,640
+if f of plus is one
+
+2046
+01:23:34,640 --> 01:23:36,640
+and f of minus is minus one,
+
+2047
+01:23:36,640 --> 01:23:39,640
+the expectation value, though, is zero?
+
+2048
+01:23:39,640 --> 01:23:41,640
+If the probabilities are equal.
+
+2049
+01:23:41,640 --> 01:23:42,640
+Yeah, yeah.
+
+2050
+01:23:42,640 --> 01:23:44,640
+Let's say the probability is equal.
+
+2051
+01:23:44,640 --> 01:23:46,640
+My point is that it's,
+
+2052
+01:23:46,640 --> 01:23:49,640
+the expectation value ends up being
+
+2053
+01:23:49,640 --> 01:23:51,640
+a number that is,
+
+2054
+01:23:51,640 --> 01:23:54,640
+that the underlying system is never in that state.
+
+2055
+01:23:54,640 --> 01:23:55,640
+Oh, that's true.
+
+2056
+01:23:55,640 --> 01:23:57,640
+Yeah, yeah, yeah, right.
+
+2057
+01:23:57,640 --> 01:23:59,640
+That's why people don't like calling it
+
+2058
+01:23:59,640 --> 01:24:02,640
+the expected value because
+
+2059
+01:24:02,640 --> 01:24:04,640
+it is the,
+
+2060
+01:24:04,640 --> 01:24:08,640
+it is a value which is very definitely not expected.
+
+2061
+01:24:08,640 --> 01:24:09,640
+So I,
+
+2062
+01:24:09,640 --> 01:24:12,640
+everybody used to call it the expectation value.
+
+2063
+01:24:12,640 --> 01:24:14,640
+Now, that's a little,
+
+2064
+01:24:14,640 --> 01:24:16,640
+that's a little weaker than saying the expected value.
+
+2065
+01:24:16,640 --> 01:24:18,640
+Then my friend Murray Gelman started calling it
+
+2066
+01:24:18,640 --> 01:24:20,640
+the expected value.
+
+2067
+01:24:20,640 --> 01:24:22,640
+Well, it ain't, as you point out,
+
+2068
+01:24:22,640 --> 01:24:23,640
+the expected value.
+
+2069
+01:24:23,640 --> 01:24:26,640
+It's worse than that because you have to divide by,
+
+2070
+01:24:26,640 --> 01:24:28,640
+you really have to divide by n.
+
+2071
+01:24:28,640 --> 01:24:29,640
+That's a problem.
+
+2072
+01:24:29,640 --> 01:24:31,140
+No, no, the sums of
+
+2073
+01:24:31,140 --> 01:24:32,640
+the p's add up to one.
+
+2074
+01:24:32,640 --> 01:24:36,640
+Assuming the sums of the p's add up to one.
+
+2075
+01:24:36,640 --> 01:24:37,640
+Okay.
+
+2076
+01:24:37,640 --> 01:24:40,640
+But when you think of it as dividing by
+
+2077
+01:24:40,640 --> 01:24:43,640
+the overall sample size.
+
+2078
+01:24:43,640 --> 01:24:44,640
+Yeah.
+
+2079
+01:24:44,640 --> 01:24:45,640
+In this case it's one.
+
+2080
+01:24:45,640 --> 01:24:46,640
+Yeah, that's what it means.
+
+2081
+01:24:46,640 --> 01:24:48,640
+The p is a half and a half.
+
+2082
+01:24:48,640 --> 01:24:50,640
+That means that you end up with the typical person
+
+2083
+01:24:50,640 --> 01:24:53,640
+having two and a half kids or whatever.
+
+2084
+01:24:53,640 --> 01:24:54,640
+No.
+
+2085
+01:24:54,640 --> 01:24:55,640
+That would be shortening.
+
+2086
+01:24:55,640 --> 01:24:56,640
+Right, so it's not the,
+
+2087
+01:24:56,640 --> 01:24:58,640
+it's not really the expected.
+
+2088
+01:24:58,640 --> 01:25:01,640
+You know, you have to guess how many kids
+
+2089
+01:25:01,640 --> 01:25:02,640
+you're gonna have.
+
+2090
+01:25:02,640 --> 01:25:04,640
+You probably wouldn't guess two and a half.
+
+2091
+01:25:04,640 --> 01:25:07,640
+No, no, no, no, no, no, no, no, no.
+
+2092
+01:25:07,640 --> 01:25:08,640
+It's a payoff.
+
+2093
+01:25:08,640 --> 01:25:10,640
+In the gambling you can actually line up with zero.
+
+2094
+01:25:10,640 --> 01:25:12,640
+I mean, it's a, so it's a value you get.
+
+2095
+01:25:12,640 --> 01:25:14,640
+It just doesn't correspond to the point.
+
+2096
+01:25:14,640 --> 01:25:16,640
+Right.
+
+2097
+01:25:16,640 --> 01:25:17,640
+But it is the average value.
+
+2098
+01:25:17,640 --> 01:25:20,640
+It's by definition the average value.
+
+2099
+01:25:20,640 --> 01:25:21,640
+Okay.
+
+2100
+01:25:21,640 --> 01:25:22,640
+So that's right.
+
+2101
+01:25:22,640 --> 01:25:25,640
+So if, I'm glad you pointed that out,
+
+2102
+01:25:25,640 --> 01:25:26,640
+that if p plus and
+
+2103
+01:25:26,640 --> 01:25:27,640
+p minus were both a half,
+
+2104
+01:25:27,640 --> 01:25:30,640
+then the average value would be zero,
+
+2105
+01:25:30,640 --> 01:25:32,640
+but zero is not a possible answer.
+
+2106
+01:25:32,640 --> 01:25:36,640
+So the average value is not the expected value.
+
+2107
+01:25:36,640 --> 01:25:39,640
+There is no expected value in this case.
+
+2108
+01:25:39,640 --> 01:25:42,640
+But it tells you something.
+
+2109
+01:25:42,640 --> 01:25:45,640
+If you get something at zero in your average value,
+
+2110
+01:25:45,640 --> 01:25:47,140
+it tells you that there's a
+
+2111
+01:25:47,140 --> 01:25:48,640
+lot of divergence in the simple state.
+
+2112
+01:25:48,640 --> 01:25:49,640
+Say it again?
+
+2113
+01:25:49,640 --> 01:25:52,640
+It tells you that there's a lot of divergence.
+
+2114
+01:25:52,640 --> 01:25:54,640
+Divergence?
+
+2115
+01:25:54,640 --> 01:25:55,640
+There's a lot of,
+
+2116
+01:25:55,640 --> 01:25:56,640
+there's a lot of divergence.
+
+2117
+01:25:56,640 --> 01:26:01,640
+The variance is too wide, huh?
+
+2118
+01:26:01,640 --> 01:26:06,640
+Well, if I take a coin and I flip it,
+
+2119
+01:26:06,640 --> 01:26:08,640
+a fair coin and I flip it,
+
+2120
+01:26:08,640 --> 01:26:11,640
+I think I will get half the
+
+2121
+01:26:11,640 --> 01:26:14,640
+times heads and half the times tails.
+
+2122
+01:26:14,640 --> 01:26:15,640
+You said something about,
+
+2123
+01:26:15,640 --> 01:26:17,640
+did you say something about temperature?
+
+2124
+01:26:17,640 --> 01:26:18,640
+Variance.
+
+2125
+01:26:18,640 --> 01:26:19,640
+Variance.
+
+2126
+01:26:19,640 --> 01:26:20,640
+I mean, in the case of coin tossing,
+
+2127
+01:26:20,640 --> 01:26:23,640
+of course it tells you that it's a 50-50% chance.
+
+2128
+01:26:23,640 --> 01:26:24,640
+Yeah.
+
+2129
+01:26:24,640 --> 01:26:25,640
+Yeah, it tells you,
+
+2130
+01:26:25,640 --> 01:26:28,640
+it tells you you're basically completely ignorant.
+
+2131
+01:26:28,640 --> 01:26:31,640
+If you're completely ignorant, there's a 50-50 chance.
+
+2132
+01:26:31,640 --> 01:26:33,640
+And if you do the experiment
+
+2133
+01:26:33,640 --> 01:26:35,640
+over and over with a fair coin
+
+2134
+01:26:35,640 --> 01:26:37,640
+and you average the result,
+
+2135
+01:26:37,640 --> 01:26:40,640
+the average had better be zero because it can't be,
+
+2136
+01:26:40,640 --> 01:26:42,640
+it can't be positive and it can't
+
+2137
+01:26:42,640 --> 01:26:44,640
+be negative because it's an equal balance.
+
+2138
+01:26:44,640 --> 01:26:46,640
+On the other hand,
+
+2139
+01:26:46,640 --> 01:26:48,640
+if you have an unfair coin,
+
+2140
+01:26:48,640 --> 01:26:50,640
+let's say three quarters of
+
+2141
+01:26:50,640 --> 01:26:52,640
+the time it comes up heads
+
+2142
+01:26:52,640 --> 01:26:55,640
+and one quarter of the times it comes up tails,
+
+2143
+01:26:55,640 --> 01:26:56,640
+then the average is what?
+
+2144
+01:26:56,640 --> 01:26:58,640
+It's three quarters minus one quarter,
+
+2145
+01:26:58,640 --> 01:27:00,640
+which is a half.
+
+2146
+01:27:00,640 --> 01:27:01,640
+All right?
+
+2147
+01:27:01,640 --> 01:27:03,640
+So if you have this unfair coin,
+
+2148
+01:27:03,640 --> 01:27:05,640
+which three quarters of the time comes up heads,
+
+2149
+01:27:05,640 --> 01:27:07,640
+one quarter comes up tails,
+
+2150
+01:27:07,640 --> 01:27:10,640
+then the average is a half.
+
+2151
+01:27:10,640 --> 01:27:11,640
+All right?
+
+2152
+01:27:11,640 --> 01:27:13,640
+Again, doesn't mean that you can measure a half.
+
+2153
+01:27:13,640 --> 01:27:17,640
+It just means that that's the average value.
+
+2154
+01:27:17,640 --> 01:27:18,640
+Okay?
+
+2155
+01:27:18,640 --> 01:27:21,640
+Average values are important.
+
+2156
+01:27:21,640 --> 01:27:23,640
+Let me give you one observable,
+
+2157
+01:27:23,640 --> 01:27:24,640
+one kind of observable,
+
+2158
+01:27:24,640 --> 01:27:26,640
+which is special.
+
+2159
+01:27:26,640 --> 01:27:29,640
+Supposing I take this special class of observables,
+
+2160
+01:27:29,640 --> 01:27:33,640
+which is one at one state,
+
+2161
+01:27:33,640 --> 01:27:36,640
+f is one for one state over here
+
+2162
+01:27:36,640 --> 01:27:39,640
+and zero for all the others.
+
+2163
+01:27:39,640 --> 01:27:44,640
+What's the average value of it?
+
+2164
+01:27:44,640 --> 01:27:47,640
+Just the probability.
+
+2165
+01:27:47,640 --> 01:27:48,640
+Right.
+
+2166
+01:27:48,640 --> 01:27:49,640
+Just the probability.
+
+2167
+01:27:49,640 --> 01:27:53,640
+So if I had an observable,
+
+2168
+01:27:53,640 --> 01:27:54,640
+which I invented,
+
+2169
+01:27:54,640 --> 01:27:56,640
+which was one at one
+
+2170
+01:27:56,640 --> 01:27:58,640
+place and zero every place else,
+
+2171
+01:27:58,640 --> 01:28:01,640
+then there would be only one term in the sum,
+
+2172
+01:28:01,640 --> 01:28:03,640
+because f is zero for all the others,
+
+2173
+01:28:03,640 --> 01:28:06,640
+and for the one case where it's not zero,
+
+2174
+01:28:06,640 --> 01:28:08,640
+we just get p.
+
+2175
+01:28:08,640 --> 01:28:14,640
+So if you knew the rules for calculating averages,
+
+2176
+01:28:14,640 --> 01:28:17,640
+you would also know the rules for calculating,
+
+2177
+01:28:17,640 --> 01:28:19,640
+for all possible observables,
+
+2178
+01:28:19,640 --> 01:28:21,140
+you would also immediately know
+
+2179
+01:28:21,140 --> 01:28:22,640
+the rules for calculating probabilities.
+
+2180
+01:28:23,640 --> 01:28:24,640
+Now the way to say it is,
+
+2181
+01:28:24,640 --> 01:28:27,140
+if you know how to calculate
+
+2182
+01:28:27,140 --> 01:28:29,640
+the average value of any observable,
+
+2183
+01:28:29,640 --> 01:28:34,640
+you can reconstruct from it the probability distribution,
+
+2184
+01:28:34,640 --> 01:28:37,640
+the probabilities for that observable,
+
+2185
+01:28:37,640 --> 01:28:42,640
+probabilities for the different possibilities.
+
+2186
+01:28:42,640 --> 01:28:46,640
+So that raises the question now,
+
+2187
+01:28:46,640 --> 01:28:52,640
+what is the mathematical representation of observables?
+
+2188
+01:28:53,640 --> 01:28:56,640
+And that is matrices.
+
+2189
+01:28:56,640 --> 01:28:58,640
+Matrices or linear operators.
+
+2190
+01:28:58,640 --> 01:29:04,640
+So let's talk again a little bit about matrices and,
+
+2191
+01:29:04,640 --> 01:29:10,640
+where am I?
+
+2192
+01:29:10,640 --> 01:29:15,640
+I don't know where I am.
+
+2193
+01:29:15,640 --> 01:29:17,640
+Let's talk about observables,
+
+2194
+01:29:17,640 --> 01:29:22,640
+or let's talk about matrices first.
+
+2195
+01:29:22,640 --> 01:29:26,140
+A matrix is a thing that
+
+2196
+01:29:26,140 --> 01:29:29,640
+you can multiply a vector with,
+
+2197
+01:29:29,640 --> 01:29:32,640
+or act on a vector with.
+
+2198
+01:29:32,640 --> 01:29:35,640
+It does something to a vector.
+
+2199
+01:29:35,640 --> 01:29:37,640
+It's an operation on a vector.
+
+2200
+01:29:37,640 --> 01:29:39,640
+But it's not just any old operation on the vector.
+
+2201
+01:29:39,640 --> 01:29:41,640
+It's a linear operation.
+
+2202
+01:29:41,640 --> 01:29:43,640
+I'm not going to explain that,
+
+2203
+01:29:43,640 --> 01:29:46,640
+because we won't need to explain it.
+
+2204
+01:29:46,640 --> 01:29:49,640
+But whatever it is,
+
+2205
+01:29:49,640 --> 01:29:50,640
+call it M,
+
+2206
+01:29:50,640 --> 01:29:52,640
+M for matrix,
+
+2207
+01:29:52,640 --> 01:29:55,640
+and in the abstract notation,
+
+2208
+01:29:55,640 --> 01:29:58,640
+it's a thing,
+
+2209
+01:29:58,640 --> 01:30:00,640
+it's an object,
+
+2210
+01:30:00,640 --> 01:30:03,640
+which you multiply a vector by,
+
+2211
+01:30:03,640 --> 01:30:06,640
+and you get a new vector.
+
+2212
+01:30:06,640 --> 01:30:09,640
+For example, one simple example is
+
+2213
+01:30:09,640 --> 01:30:12,640
+just multiplying by a complex number.
+
+2214
+01:30:12,640 --> 01:30:15,640
+Multiplying by a complex number is a operator.
+
+2215
+01:30:15,640 --> 01:30:17,640
+It's a very simple operator.
+
+2216
+01:30:17,640 --> 01:30:19,640
+You just multiply the vector,
+
+2217
+01:30:19,640 --> 01:30:21,640
+and you get the number 2.
+
+2218
+01:30:21,640 --> 01:30:23,640
+The number 2 just takes
+
+2219
+01:30:23,640 --> 01:30:25,640
+every vector and doubles its size.
+
+2220
+01:30:25,640 --> 01:30:27,640
+Okay?
+
+2221
+01:30:27,640 --> 01:30:31,640
+But the general operators that we're going to consider
+
+2222
+01:30:31,640 --> 01:30:35,640
+are ones which are represented by matrices.
+
+2223
+01:30:35,640 --> 01:30:38,640
+So if we have our vector A,
+
+2224
+01:30:38,640 --> 01:30:43,640
+which we represent by a column vector,
+
+2225
+01:30:43,640 --> 01:30:46,640
+and I'm only going to write two-dimensional column vectors,
+
+2226
+01:30:46,640 --> 01:30:49,640
+but you'll immediately deduce what to do
+
+2227
+01:30:49,640 --> 01:30:50,640
+if you have a few more in your mind.
+
+2228
+01:30:51,640 --> 01:30:53,640
+So let's do a few more entries here.
+
+2229
+01:30:53,640 --> 01:30:55,640
+We can multiply it by a matrix,
+
+2230
+01:30:55,640 --> 01:30:59,640
+and a matrix is a square array of numbers,
+
+2231
+01:30:59,640 --> 01:31:06,640
+M11, M12, M21, M22.
+
+2232
+01:31:06,640 --> 01:31:10,640
+And in general, these numbers are all complex numbers.
+
+2233
+01:31:10,640 --> 01:31:13,640
+In general, they're all complex numbers.
+
+2234
+01:31:13,640 --> 01:31:16,640
+The A's and the M's in a complex vector space
+
+2235
+01:31:16,640 --> 01:31:19,640
+can all be complex numbers.
+
+2236
+01:31:19,640 --> 01:31:21,640
+And the rule for matrix multiplication,
+
+2237
+01:31:21,640 --> 01:31:24,640
+which I showed us last time,
+
+2238
+01:31:24,640 --> 01:31:27,640
+for multiplying a matrix by a vector,
+
+2239
+01:31:27,640 --> 01:31:30,640
+is just,
+
+2240
+01:31:30,640 --> 01:31:31,640
+if you want the top entry,
+
+2241
+01:31:31,640 --> 01:31:33,640
+which you can think of as the top row,
+
+2242
+01:31:33,640 --> 01:31:36,640
+you take the top row,
+
+2243
+01:31:36,640 --> 01:31:39,640
+and you multiply it by the vector.
+
+2244
+01:31:39,640 --> 01:31:41,140
+You take the inner product of
+
+2245
+01:31:41,140 --> 01:31:42,640
+the top row with the vector,
+
+2246
+01:31:42,640 --> 01:31:48,640
+which will be M11A1
+
+2247
+01:31:48,640 --> 01:31:50,640
+plus M12A2,
+
+2248
+01:31:51,640 --> 01:31:53,640
+and then down here,
+
+2249
+01:31:53,640 --> 01:31:59,640
+M21A1 plus M22A2.
+
+2250
+01:31:59,640 --> 01:32:01,640
+So it's another vector.
+
+2251
+01:32:01,640 --> 01:32:03,640
+I had to draw it pretty wide
+
+2252
+01:32:03,640 --> 01:32:05,640
+because I was adding some numbers here,
+
+2253
+01:32:05,640 --> 01:32:06,640
+but it's just a vector.
+
+2254
+01:32:06,640 --> 01:32:08,640
+It's a column vector with one column,
+
+2255
+01:32:08,640 --> 01:32:11,640
+and it's constructed by taking this row
+
+2256
+01:32:11,640 --> 01:32:12,640
+times the column,
+
+2257
+01:32:12,640 --> 01:32:14,640
+and this row times the column,
+
+2258
+01:32:14,640 --> 01:32:16,640
+and those are the two entries.
+
+2259
+01:32:21,640 --> 01:32:22,640
+That's it.
+
+2260
+01:32:22,640 --> 01:32:24,640
+That's all that matrices are.
+
+2261
+01:32:24,640 --> 01:32:26,640
+Let me give you a couple of examples,
+
+2262
+01:32:26,640 --> 01:32:28,640
+a couple of simple examples
+
+2263
+01:32:28,640 --> 01:32:31,640
+from a very ordinary vector space.
+
+2264
+01:32:31,640 --> 01:32:33,640
+A very ordinary vector space
+
+2265
+01:32:33,640 --> 01:32:36,640
+is just the pointers or the arrows
+
+2266
+01:32:36,640 --> 01:32:38,640
+that you can draw on the blackboard.
+
+2267
+01:32:38,640 --> 01:32:41,640
+You can multiply a vector by,
+
+2268
+01:32:41,640 --> 01:32:43,640
+in this case, a real number.
+
+2269
+01:32:43,640 --> 01:32:45,640
+You can double it, you can triple it,
+
+2270
+01:32:45,640 --> 01:32:47,640
+you can multiply it by minus one,
+
+2271
+01:32:47,640 --> 01:32:49,640
+and you can add two vectors.
+
+2272
+01:32:49,640 --> 01:32:51,640
+So vectors that you draw on the blackboard
+
+2273
+01:32:51,640 --> 01:32:53,640
+are a vector space.
+
+2274
+01:32:53,640 --> 01:32:54,640
+Let me give you, and they have,
+
+2275
+01:32:54,640 --> 01:32:55,640
+what are their components?
+
+2276
+01:32:55,640 --> 01:32:57,640
+Their components are the x component,
+
+2277
+01:32:57,640 --> 01:33:01,640
+here's x, here's y,
+
+2278
+01:33:01,640 --> 01:33:03,640
+and the vector has an x component
+
+2279
+01:33:03,640 --> 01:33:06,640
+and a y component.
+
+2280
+01:33:06,640 --> 01:33:08,640
+So we represent this vector
+
+2281
+01:33:08,640 --> 01:33:11,640
+by its x component and its y component,
+
+2282
+01:33:11,640 --> 01:33:13,640
+and we could write it in the form
+
+2283
+01:33:13,640 --> 01:33:15,640
+x component of vector,
+
+2284
+01:33:15,640 --> 01:33:17,640
+y component of the vector.
+
+2285
+01:33:17,640 --> 01:33:18,640
+Of course, now I'm only doing
+
+2286
+01:33:18,640 --> 01:33:19,640
+two dimensions,
+
+2287
+01:33:19,640 --> 01:33:20,640
+so I'm going to do
+
+2288
+01:33:20,640 --> 01:33:22,640
+a two-dimensional space.
+
+2289
+01:33:22,640 --> 01:33:24,640
+These would be real numbers
+
+2290
+01:33:24,640 --> 01:33:25,640
+on the blackboard.
+
+2291
+01:33:25,640 --> 01:33:27,640
+They wouldn't be complex numbers,
+
+2292
+01:33:27,640 --> 01:33:30,640
+and this would be a two-real-dimensional vector space.
+
+2293
+01:33:30,640 --> 01:33:32,640
+Now, let's think about some operations.
+
+2294
+01:33:32,640 --> 01:33:34,640
+The first interesting operation,
+
+2295
+01:33:34,640 --> 01:33:36,640
+which is the most easy,
+
+2296
+01:33:36,640 --> 01:33:38,640
+is to stretch the vector space.
+
+2297
+01:33:38,640 --> 01:33:42,640
+For example, multiply every vector by two.
+
+2298
+01:33:42,640 --> 01:33:43,640
+Okay?
+
+2299
+01:33:43,640 --> 01:33:45,640
+Multiply every vector by two
+
+2300
+01:33:45,640 --> 01:33:48,640
+will sort of magnify the whole space
+
+2301
+01:33:48,640 --> 01:33:49,640
+by a factor of two.
+
+2302
+01:33:49,640 --> 01:33:51,640
+Any vector will get stretched out
+
+2303
+01:33:51,640 --> 01:33:53,640
+to twice its original length.
+
+2304
+01:33:53,640 --> 01:33:55,640
+That's all that happens.
+
+2305
+01:33:55,640 --> 01:33:57,640
+Here's the matrix
+
+2306
+01:33:57,640 --> 01:34:00,640
+that represents that operation.
+
+2307
+01:34:00,640 --> 01:34:04,640
+It's just the diagonal matrix 2, 2.
+
+2308
+01:34:04,640 --> 01:34:07,640
+Diagonal means that its entries
+
+2309
+01:34:07,640 --> 01:34:10,640
+are along the diagonal.
+
+2310
+01:34:10,640 --> 01:34:13,640
+There are two diagonals in the matrix.
+
+2311
+01:34:13,640 --> 01:34:14,640
+This is called the principal diagonal,
+
+2312
+01:34:14,640 --> 01:34:15,640
+I think, if I remember.
+
+2313
+01:34:15,640 --> 01:34:16,640
+The other one is called
+
+2314
+01:34:16,640 --> 01:34:17,640
+the unprincipled diagonal.
+
+2315
+01:34:17,640 --> 01:34:18,640
+I don't know what it's called.
+
+2316
+01:34:19,640 --> 01:34:20,640
+I don't know.
+
+2317
+01:34:20,640 --> 01:34:21,640
+What?
+
+2318
+01:34:21,640 --> 01:34:22,640
+Degenerate.
+
+2319
+01:34:22,640 --> 01:34:27,640
+The good diagonal and the bad diagonal.
+
+2320
+01:34:27,640 --> 01:34:30,640
+This one is the bad diagonal.
+
+2321
+01:34:30,640 --> 01:34:31,640
+All right.
+
+2322
+01:34:31,640 --> 01:34:33,640
+Let's just calculate what we get.
+
+2323
+01:34:33,640 --> 01:34:34,640
+All right.
+
+2324
+01:34:34,640 --> 01:34:35,640
+In the upper entry,
+
+2325
+01:34:35,640 --> 01:34:38,640
+we get 2 times vx plus 0.
+
+2326
+01:34:38,640 --> 01:34:41,640
+So the upper entry just becomes 2vx.
+
+2327
+01:34:41,640 --> 01:34:42,640
+The lower entry,
+
+2328
+01:34:42,640 --> 01:34:44,640
+we get 2 times vy.
+
+2329
+01:34:44,640 --> 01:34:46,640
+So, as advertised,
+
+2330
+01:34:46,640 --> 01:34:48,640
+this is the operator,
+
+2331
+01:34:48,640 --> 01:34:50,640
+which simply doubles the length of every vector.
+
+2332
+01:34:50,640 --> 01:34:51,640
+All right.
+
+2333
+01:34:51,640 --> 01:34:52,640
+Very easy.
+
+2334
+01:34:52,640 --> 01:34:54,640
+Here's a more,
+
+2335
+01:34:54,640 --> 01:34:58,640
+almost a similar thing.
+
+2336
+01:34:58,640 --> 01:35:00,640
+But supposing I just wanted to
+
+2337
+01:35:00,640 --> 01:35:02,640
+double the y component.
+
+2338
+01:35:02,640 --> 01:35:04,640
+What would that do to the vector space?
+
+2339
+01:35:04,640 --> 01:35:06,640
+It would take every vector
+
+2340
+01:35:06,640 --> 01:35:08,640
+and stretch out its y component
+
+2341
+01:35:08,640 --> 01:35:09,640
+by a factor of 2
+
+2342
+01:35:09,640 --> 01:35:11,640
+without stretching out its x component.
+
+2343
+01:35:11,640 --> 01:35:14,640
+So it would be a stretch in the y direction
+
+2344
+01:35:14,640 --> 01:35:16,640
+by a factor of 2,
+
+2345
+01:35:16,640 --> 01:35:18,640
+but no stretch in the y direction
+
+2346
+01:35:18,640 --> 01:35:20,640
+but in the x direction.
+
+2347
+01:35:20,640 --> 01:35:22,640
+How would we represent that?
+
+2348
+01:35:22,640 --> 01:35:23,640
+Okay.
+
+2349
+01:35:23,640 --> 01:35:26,640
+Again, a diagonal with a 1 here
+
+2350
+01:35:26,640 --> 01:35:28,640
+in the x place, in the xx,
+
+2351
+01:35:28,640 --> 01:35:31,640
+and the yy place, the factor 2.
+
+2352
+01:35:31,640 --> 01:35:33,640
+Let's check it.
+
+2353
+01:35:33,640 --> 01:35:36,640
+1 times vx gives us vx.
+
+2354
+01:35:36,640 --> 01:35:39,640
+2 times vy gives us twice vy.
+
+2355
+01:35:39,640 --> 01:35:41,640
+So that's a stretching of the vector space
+
+2356
+01:35:41,640 --> 01:35:44,640
+in the y direction.
+
+2357
+01:35:44,640 --> 01:35:46,640
+Likewise, we could put the 2 here,
+
+2358
+01:35:46,640 --> 01:35:47,640
+and the 1 here.
+
+2359
+01:35:47,640 --> 01:35:49,640
+And the 1 here,
+
+2360
+01:35:49,640 --> 01:35:51,640
+that would be a stretching of the vector space
+
+2361
+01:35:51,640 --> 01:35:54,640
+which stretches it out in this direction.
+
+2362
+01:35:54,640 --> 01:35:56,640
+One or two more.
+
+2363
+01:35:56,640 --> 01:35:58,640
+These are very easy examples.
+
+2364
+01:35:58,640 --> 01:36:02,640
+So far, they've only involved diagonal matrices.
+
+2365
+01:36:02,640 --> 01:36:04,640
+Let me give you another one.
+
+2366
+01:36:04,640 --> 01:36:08,640
+The matrix which corresponds to
+
+2367
+01:36:08,640 --> 01:36:12,640
+rotating every vector by 90 degrees.
+
+2368
+01:36:12,640 --> 01:36:14,640
+Take any vector
+
+2369
+01:36:14,640 --> 01:36:16,640
+and rotate it by 90 degrees.
+
+2370
+01:36:16,640 --> 01:36:18,640
+In other words, this is the operation
+
+2371
+01:36:18,640 --> 01:36:21,640
+which rotates the plane by 90 degrees.
+
+2372
+01:36:21,640 --> 01:36:22,640
+I'll tell you what it is,
+
+2373
+01:36:22,640 --> 01:36:24,640
+and then we'll check and
+
+2374
+01:36:24,640 --> 01:36:26,640
+see if we can see why.
+
+2375
+01:36:26,640 --> 01:36:29,640
+It's off-diagonal.
+
+2376
+01:36:29,640 --> 01:36:32,640
+Or...
+
+2377
+01:36:35,640 --> 01:36:40,640
+1 minus 1, excuse me.
+
+2378
+01:36:40,640 --> 01:36:42,640
+Oh, let's do this one first.
+
+2379
+01:36:42,640 --> 01:36:44,640
+Let's do what this is.
+
+2380
+01:36:44,640 --> 01:36:45,640
+Before I do the rotation,
+
+2381
+01:36:45,640 --> 01:36:46,640
+let's do this.
+
+2382
+01:36:46,640 --> 01:36:48,640
+Let's see what this does.
+
+2383
+01:36:48,640 --> 01:36:51,640
+This takes 0 times vx,
+
+2384
+01:36:51,640 --> 01:36:53,640
+1 times vy.
+
+2385
+01:36:53,640 --> 01:36:58,640
+It interchanges vy and vx.
+
+2386
+01:36:58,640 --> 01:37:00,640
+It interchanges vy and vx.
+
+2387
+01:37:00,640 --> 01:37:05,640
+Anybody see geometrically what that corresponds to?
+
+2388
+01:37:05,640 --> 01:37:06,640
+A reflection.
+
+2389
+01:37:06,640 --> 01:37:08,640
+It's a reflection of the vector space
+
+2390
+01:37:08,640 --> 01:37:10,640
+about this diagonal.
+
+2391
+01:37:10,640 --> 01:37:12,640
+Takes every vector
+
+2392
+01:37:12,640 --> 01:37:14,640
+and reflects it about that diagonal.
+
+2393
+01:37:15,640 --> 01:37:19,640
+Just flips it about that diagonal.
+
+2394
+01:37:19,640 --> 01:37:23,640
+That's this matrix.
+
+2395
+01:37:23,640 --> 01:37:24,640
+Here's another matrix
+
+2396
+01:37:24,640 --> 01:37:29,640
+where you put a minus 1 down here.
+
+2397
+01:37:29,640 --> 01:37:30,640
+What does this give?
+
+2398
+01:37:30,640 --> 01:37:35,640
+This gives vy minus vx.
+
+2399
+01:37:35,640 --> 01:37:38,640
+vy minus vx.
+
+2400
+01:37:38,640 --> 01:37:41,640
+It interchanges the x and y,
+
+2401
+01:37:41,640 --> 01:37:43,140
+but then throws in a
+
+2402
+01:37:43,140 --> 01:37:44,640
+minus sign for one of them.
+
+2403
+01:37:45,640 --> 01:37:47,640
+That is an operation.
+
+2404
+01:37:47,640 --> 01:37:49,640
+I'm going to leave it to you to prove
+
+2405
+01:37:49,640 --> 01:37:51,640
+because we don't have time,
+
+2406
+01:37:51,640 --> 01:37:53,640
+but I'm going to tell you what this does.
+
+2407
+01:37:53,640 --> 01:37:57,640
+It rotates the vector space by 90 degrees.
+
+2408
+01:37:57,640 --> 01:38:00,640
+Oh, does it go the other way?
+
+2409
+01:38:00,640 --> 01:38:06,640
+It's an easy way to see all this.
+
+2410
+01:38:06,640 --> 01:38:08,640
+Well, you know it.
+
+2411
+01:38:08,640 --> 01:38:10,640
+It's going to rotate the other direction.
+
+2412
+01:38:10,640 --> 01:38:11,640
+It negated it, so...
+
+2413
+01:38:11,640 --> 01:38:12,640
+Yeah.
+
+2414
+01:38:12,640 --> 01:38:13,640
+You negated the...
+
+2415
+01:38:13,640 --> 01:38:14,640
+Yeah.
+
+2416
+01:38:14,640 --> 01:38:16,640
+The y component.
+
+2417
+01:38:16,640 --> 01:38:20,640
+It rotates every vector by 90 degrees.
+
+2418
+01:38:20,640 --> 01:38:21,640
+Just the y component.
+
+2419
+01:38:21,640 --> 01:38:22,640
+What's that?
+
+2420
+01:38:22,640 --> 01:38:24,640
+Rotating it around the x axis.
+
+2421
+01:38:24,640 --> 01:38:26,640
+The y component.
+
+2422
+01:38:26,640 --> 01:38:29,640
+The x component is going into minus...
+
+2423
+01:38:29,640 --> 01:38:30,640
+Right.
+
+2424
+01:38:30,640 --> 01:38:31,640
+So where's the x?
+
+2425
+01:38:31,640 --> 01:38:32,640
+The vector pointing in the x direction
+
+2426
+01:38:32,640 --> 01:38:35,640
+is going into minus the vector pointing in the y.
+
+2427
+01:38:35,640 --> 01:38:36,640
+So which way is it?
+
+2428
+01:38:36,640 --> 01:38:37,640
+So what's it doing?
+
+2429
+01:38:37,640 --> 01:38:38,640
+It's rotating by 90 degrees.
+
+2430
+01:38:38,640 --> 01:38:39,640
+No, but 180 degrees.
+
+2431
+01:38:39,640 --> 01:38:40,640
+Clockwise.
+
+2432
+01:38:40,640 --> 01:38:41,640
+Oh, clock...
+
+2433
+01:38:41,640 --> 01:38:42,640
+Rotating clockwise.
+
+2434
+01:38:42,640 --> 01:38:43,640
+Yeah.
+
+2435
+01:38:43,640 --> 01:38:44,640
+That's what I drew here.
+
+2436
+01:38:44,640 --> 01:38:45,640
+Yeah.
+
+2437
+01:38:45,640 --> 01:38:46,640
+Yeah.
+
+2438
+01:38:46,640 --> 01:38:47,640
+Yeah.
+
+2439
+01:38:47,640 --> 01:38:48,640
+It rotates the vector by 90 degrees.
+
+2440
+01:38:48,640 --> 01:38:51,140
+So you see, what matrices correspond
+
+2441
+01:38:51,140 --> 01:38:53,640
+to is they correspond to a...
+
+2442
+01:38:53,640 --> 01:38:57,640
+Transformations of the vector space.
+
+2443
+01:38:57,640 --> 01:39:03,640
+Stretchings, rotations, more complicated kinds of things.
+
+2444
+01:39:03,640 --> 01:39:05,640
+Another example would be a shear.
+
+2445
+01:39:05,640 --> 01:39:06,640
+A shear...
+
+2446
+01:39:06,640 --> 01:39:09,140
+This is interesting to try to work out
+
+2447
+01:39:09,140 --> 01:39:11,640
+the matrix that corresponds to a shear motion.
+
+2448
+01:39:11,640 --> 01:39:12,640
+Let me tell you what a shear motion is.
+
+2449
+01:39:12,640 --> 01:39:13,640
+A shear motion ish.
+
+2450
+01:39:13,640 --> 01:39:14,640
+What a shear motion ish.
+
+2451
+01:39:14,640 --> 01:39:19,640
+A shear motion takes every...
+
+2452
+01:39:19,640 --> 01:39:22,640
+Well, it...
+
+2453
+01:39:22,640 --> 01:39:23,640
+Oh, boy.
+
+2454
+01:39:23,640 --> 01:39:25,640
+Slides stuff this way.
+
+2455
+01:39:25,640 --> 01:39:26,640
+Okay?
+
+2456
+01:39:26,640 --> 01:39:30,640
+So it slides you to the right by
+
+2457
+01:39:30,640 --> 01:39:34,640
+an amount proportional to how high you are.
+
+2458
+01:39:34,640 --> 01:39:37,640
+It takes every point and shifts it to the
+
+2459
+01:39:37,640 --> 01:39:40,640
+right by an amount proportional to how high you are.
+
+2460
+01:39:40,640 --> 01:39:41,640
+Okay?
+
+2461
+01:39:41,640 --> 01:39:45,700
+to how high you are. There's a
+
+2462
+01:39:45,700 --> 01:39:49,760
+matrix that describes that motion. Deforms the plane,
+
+2463
+01:39:50,340 --> 01:39:52,410
+tilts this axis over, is what it does. I'm
+
+2464
+01:39:52,410 --> 01:39:54,480
+not going to write that one out. I'll see
+
+2465
+01:39:54,480 --> 01:39:57,090
+if you can find it the next time I'll
+
+2466
+01:39:57,090 --> 01:39:59,700
+tell you what the answer is for a shear motion.
+
+2467
+01:40:00,400 --> 01:40:03,660
+But in general, matrices correspond to
+
+2468
+01:40:03,660 --> 01:40:06,920
+transformations, special transformations. Not all transformations
+
+2469
+01:40:06,920 --> 01:40:10,060
+are represented as matrices. These are
+
+2470
+01:40:10,060 --> 01:40:13,200
+the linear transformations, to be specific. But
+
+2471
+01:40:13,200 --> 01:40:16,060
+these are the ones we're going to be interested
+
+2472
+01:40:16,060 --> 01:40:18,920
+in. And we're going to be interested in a
+
+2473
+01:40:18,920 --> 01:40:22,740
+special class of them. Now this is very abstract,
+
+2474
+01:40:22,740 --> 01:40:26,560
+and for the moment you will not see why. This
+
+2475
+01:40:26,560 --> 01:40:29,290
+is just definition. But I've got to give
+
+2476
+01:40:29,290 --> 01:40:32,020
+you some mathematics and then intersperse it with
+
+2477
+01:40:32,020 --> 01:40:34,460
+some physics. I'm going to give you the mathematics
+
+2478
+01:40:34,460 --> 01:40:36,900
+today, and next time I'm going to show you
+
+2479
+01:40:36,900 --> 01:40:41,099
+what the point is. There's a notion of
+
+2480
+01:40:41,099 --> 01:40:45,299
+a Hermitian matrix. The notion of a Hermitian matrix
+
+2481
+01:40:45,299 --> 01:40:53,639
+corresponds to the notion of a real number.
+
+2482
+01:40:53,639 --> 01:41:01,980
+It's a kind of concept of reality versus imaginary,
+
+2483
+01:41:01,980 --> 01:41:05,540
+but it doesn't mean that the entries are all real.
+
+2484
+01:41:06,900 --> 01:41:11,519
+What it means, is that if you take an
+
+2485
+01:41:11,519 --> 01:41:16,139
+element of the matrix, Mij. That's some element of
+
+2486
+01:41:16,139 --> 01:41:17,789
+the matrix. It could be some big matrix, I
+
+2487
+01:41:17,789 --> 01:41:19,440
+don't know how big it is, and it's somewhere
+
+2488
+01:41:19,440 --> 01:41:27,430
+over here. And then there's Mji. Mji is
+
+2489
+01:41:27,430 --> 01:41:35,420
+the reflected matrix element. If this is M12,
+
+2490
+01:41:35,420 --> 01:41:36,879
+it would be over here.
+
+2491
+01:41:36,900 --> 01:41:38,639
+then M21 would be over here.
+
+2492
+01:41:39,519 --> 01:41:41,339
+M35 might be over here.
+
+2493
+01:41:41,480 --> 01:41:43,080
+M53 would be over here.
+
+2494
+01:41:43,920 --> 01:41:46,460
+So interchanging rows and columns
+
+2495
+01:41:46,460 --> 01:41:48,509
+is a kind of reflection of
+
+2496
+01:41:48,509 --> 01:41:50,559
+the matrix about the diagonal here.
+
+2497
+01:41:51,120 --> 01:41:55,160
+A Hermitian matrix is one that, if you reflect it,
+
+2498
+01:41:55,940 --> 01:41:57,160
+complex conjugates.
+
+2499
+01:41:57,160 --> 01:42:04,160
+In other words, Mij is equal to Mji star.
+
+2500
+01:42:04,160 --> 01:42:07,800
+If this matrix was just a number,
+
+2501
+01:42:08,460 --> 01:42:10,059
+let's just take a case of numbers.
+
+2502
+01:42:10,840 --> 01:42:12,019
+And I tell you I have a number
+
+2503
+01:42:12,019 --> 01:42:14,800
+which is equal to its own complex conjugate.
+
+2504
+01:42:15,380 --> 01:42:16,720
+What does that tell you about the number?
+
+2505
+01:42:17,320 --> 01:42:18,300
+That it's real.
+
+2506
+01:42:19,040 --> 01:42:20,860
+That it has no imaginary part.
+
+2507
+01:42:22,720 --> 01:42:27,680
+Now, for a matrix, that's not what it says.
+
+2508
+01:42:27,780 --> 01:42:29,840
+It doesn't say that the entries are real,
+
+2509
+01:42:30,480 --> 01:42:32,440
+but it's a kind of reality property.
+
+2510
+01:42:32,440 --> 01:42:34,099
+Let me give you some examples
+
+2511
+01:42:34,100 --> 01:42:34,680
+of matrices.
+
+2512
+01:42:35,820 --> 01:42:38,080
+One which is Hermitian.
+
+2513
+01:42:39,180 --> 01:42:40,760
+Does everybody know how to spell Hermitian?
+
+2514
+01:42:41,640 --> 01:42:45,320
+H-E-R-M-I-T-I-A-N
+
+2515
+01:42:45,320 --> 01:42:46,960
+A-E-S-H-U-N
+
+2516
+01:42:46,960 --> 01:42:55,220
+Hermitian.
+
+2517
+01:42:56,400 --> 01:42:59,900
+H-E-R-M-I-T-I-A-N
+
+2518
+01:42:59,900 --> 01:43:00,500
+Hermitian.
+
+2519
+01:43:00,500 --> 01:43:01,060
+Okay.
+
+2520
+01:43:01,220 --> 01:43:02,900
+Some people respond to it.
+
+2521
+01:43:04,100 --> 01:43:05,780
+Would you mind writing it up for us?
+
+2522
+01:43:05,860 --> 01:43:06,060
+Yeah.
+
+2523
+01:43:06,340 --> 01:43:07,260
+No, I wouldn't mind.
+
+2524
+01:43:07,260 --> 01:43:07,540
+I don't know.
+
+2525
+01:43:18,720 --> 01:43:20,070
+When you say some people write it
+
+2526
+01:43:20,070 --> 01:43:21,420
+with an E, it's kind of weird.
+
+2527
+01:43:21,580 --> 01:43:22,160
+E-A-N.
+
+2528
+01:43:22,860 --> 01:43:23,520
+E-A-N?
+
+2529
+01:43:24,480 --> 01:43:25,940
+In England, of course.
+
+2530
+01:43:26,280 --> 01:43:27,060
+It's a real place.
+
+2531
+01:43:29,620 --> 01:43:30,100
+What?
+
+2532
+01:43:31,100 --> 01:43:32,440
+Hermite ends with E.
+
+2533
+01:43:33,180 --> 01:43:34,080
+Hermite ends with E.
+
+2534
+01:43:34,100 --> 01:43:34,440
+Yeah.
+
+2535
+01:43:35,180 --> 01:43:36,500
+Hermite is a kind of little bug.
+
+2536
+01:43:36,660 --> 01:43:36,900
+It eats.
+
+2537
+01:43:40,720 --> 01:43:41,980
+That might be polynomial.
+
+2538
+01:43:42,840 --> 01:43:43,320
+Yeah.
+
+2539
+01:43:43,640 --> 01:43:43,980
+Right.
+
+2540
+01:43:44,040 --> 01:43:44,340
+That's right.
+
+2541
+01:43:44,360 --> 01:43:45,160
+It eats polynomials.
+
+2542
+01:43:50,880 --> 01:43:51,360
+Okay.
+
+2543
+01:43:52,440 --> 01:43:53,970
+In other words, when you flip
+
+2544
+01:43:53,970 --> 01:43:55,500
+it, you get the complex conjugate.
+
+2545
+01:43:55,820 --> 01:43:56,600
+Here's some examples.
+
+2546
+01:43:56,720 --> 01:43:57,140
+Oh, oh.
+
+2547
+01:43:57,300 --> 01:43:57,980
+That says one thing.
+
+2548
+01:43:58,720 --> 01:44:00,860
+It says the diagonal elements are real.
+
+2549
+01:44:01,800 --> 01:44:02,900
+Because M11.
+
+2550
+01:44:02,900 --> 01:44:03,580
+What does it say?
+
+2551
+01:44:03,700 --> 01:44:03,880
+It says,
+
+2552
+01:44:04,100 --> 01:44:05,920
+M11 is M star 11.
+
+2553
+01:44:06,580 --> 01:44:08,380
+If you flip the rows and columns
+
+2554
+01:44:08,380 --> 01:44:10,180
+on the diagonal, you get the same answer.
+
+2555
+01:44:10,480 --> 01:44:12,920
+For example, I equals 1, J equals 1.
+
+2556
+01:44:13,820 --> 01:44:15,800
+M11 equals M11 star.
+
+2557
+01:44:16,820 --> 01:44:18,190
+So first of all, it
+
+2558
+01:44:18,190 --> 01:44:19,560
+says the diagonal elements are real.
+
+2559
+01:44:20,780 --> 01:44:21,820
+Real numbers here.
+
+2560
+01:44:24,660 --> 01:44:25,660
+Seven and three.
+
+2561
+01:44:30,180 --> 01:44:32,110
+But then it says that
+
+2562
+01:44:32,110 --> 01:44:34,040
+the off-diagonal elements are complex conjugates.
+
+2563
+01:44:34,100 --> 01:44:37,580
+So here's a matrix, for example, that is not Hermitian.
+
+2564
+01:44:38,460 --> 01:44:40,300
+Four and two.
+
+2565
+01:44:41,780 --> 01:44:43,740
+That's not Hermitian because two is
+
+2566
+01:44:43,740 --> 01:44:45,700
+not the complex conjugate of four.
+
+2567
+01:44:46,640 --> 01:44:46,840
+All right?
+
+2568
+01:44:47,920 --> 01:44:49,240
+This is Hermitian.
+
+2569
+01:44:51,280 --> 01:44:53,480
+Four is the complex conjugate of four.
+
+2570
+01:44:54,800 --> 01:44:56,720
+So if a matrix is real
+
+2571
+01:44:56,720 --> 01:44:58,640
+and it's Hermitian, it's also symmetric.
+
+2572
+01:44:59,820 --> 01:45:01,760
+But here's another one which is Hermitian.
+
+2573
+01:45:01,760 --> 01:45:01,820
+Hermitian.
+
+2574
+01:45:02,780 --> 01:45:03,960
+Four plus I.
+
+2575
+01:45:04,100 --> 01:45:05,200
+And four minus I.
+
+2576
+01:45:06,080 --> 01:45:07,770
+Four plus I is the
+
+2577
+01:45:07,770 --> 01:45:09,460
+complex conjugate of four minus I.
+
+2578
+01:45:11,180 --> 01:45:14,960
+So this is the notion of a Hermitian matrix.
+
+2579
+01:45:15,900 --> 01:45:17,700
+And now I'm going to tell you
+
+2580
+01:45:17,700 --> 01:45:19,500
+that we're going to find next time,
+
+2581
+01:45:19,540 --> 01:45:21,540
+or we're going to postulate next time,
+
+2582
+01:45:21,540 --> 01:45:25,520
+that Hermitian matrices are
+
+2583
+01:45:25,520 --> 01:45:29,500
+the quantum version of observables.
+
+2584
+01:45:30,220 --> 01:45:32,600
+The classical version of observables,
+
+2585
+01:45:33,160 --> 01:45:33,880
+functions,
+
+2586
+01:45:34,100 --> 01:45:37,280
+of the state points.
+
+2587
+01:45:38,140 --> 01:45:41,260
+The quantum version of an observable,
+
+2588
+01:45:41,640 --> 01:45:42,880
+a Hermitian operator,
+
+2589
+01:45:43,100 --> 01:45:45,860
+which means a Hermitian matrix for the moment.
+
+2590
+01:45:47,760 --> 01:45:48,740
+That's where we're going.
+
+2591
+01:45:48,820 --> 01:45:48,880
+Yeah?
+
+2592
+01:45:49,860 --> 01:45:51,970
+What you'd like to do is you'd
+
+2593
+01:45:51,970 --> 01:45:54,080
+like to kick this vector with that matrix
+
+2594
+01:45:54,080 --> 01:45:59,100
+and it's the state of the electron system.
+
+2595
+01:45:59,860 --> 01:46:02,820
+And, well, some of the probabilities is one.
+
+2596
+01:46:03,420 --> 01:46:03,480
+Some?
+
+2597
+01:46:03,480 --> 01:46:04,060
+Is this?
+
+2598
+01:46:04,100 --> 01:46:06,980
+It's not so that we can kick it or...
+
+2599
+01:46:06,980 --> 01:46:08,420
+This is...
+
+2600
+01:46:08,420 --> 01:46:08,620
+No.
+
+2601
+01:46:08,900 --> 01:46:10,580
+When you kick an electron,
+
+2602
+01:46:10,740 --> 01:46:12,580
+you want to kick it with a unitary operator,
+
+2603
+01:46:12,700 --> 01:46:13,880
+not with a Hermitian operator.
+
+2604
+01:46:14,600 --> 01:46:15,120
+What's that?
+
+2605
+01:46:15,740 --> 01:46:16,320
+You come to it.
+
+2606
+01:46:16,540 --> 01:46:16,740
+Okay.
+
+2607
+01:46:18,480 --> 01:46:19,340
+I'll tell you this.
+
+2608
+01:46:19,340 --> 01:46:21,180
+What a unitary operator is,
+
+2609
+01:46:21,240 --> 01:46:23,300
+is one which doesn't change the length of any vector,
+
+2610
+01:46:23,880 --> 01:46:25,460
+which is what I think what you were asking about.
+
+2611
+01:46:25,520 --> 01:46:26,140
+Yeah, one of the vectors.
+
+2612
+01:46:26,140 --> 01:46:26,360
+Right.
+
+2613
+01:46:26,860 --> 01:46:27,040
+Right.
+
+2614
+01:46:27,400 --> 01:46:29,700
+A Hermitian operator does not have that property in general.
+
+2615
+01:46:30,580 --> 01:46:32,090
+So a unitary matrix is
+
+2616
+01:46:32,090 --> 01:46:33,600
+one which doesn't change the length,
+
+2617
+01:46:33,600 --> 01:46:35,720
+and it's the result of an operation
+
+2618
+01:46:35,720 --> 01:46:37,840
+that you actually do to the electron.
+
+2619
+01:46:37,980 --> 01:46:38,780
+You kick it, you hit
+
+2620
+01:46:38,780 --> 01:46:39,580
+it, you do something to it.
+
+2621
+01:46:41,440 --> 01:46:43,220
+I'll tell you very quickly now.
+
+2622
+01:46:43,640 --> 01:46:46,340
+Well, no, I won't bother telling you
+
+2623
+01:46:46,340 --> 01:46:47,780
+because we'll get into it next time.
+
+2624
+01:46:48,700 --> 01:46:52,540
+Matrices, or more generally, linear operators,
+
+2625
+01:46:53,380 --> 01:46:56,780
+are the basic quantum concept of the observable,
+
+2626
+01:46:56,880 --> 01:46:57,940
+the thing that you can measure.
+
+2627
+01:46:59,480 --> 01:47:02,040
+And we're going to then discuss
+
+2628
+01:47:02,040 --> 01:47:03,340
+what kind of...
+
+2629
+01:47:03,600 --> 01:47:07,840
+What kind of matrices correspond to the z component,
+
+2630
+01:47:08,060 --> 01:47:10,060
+the up-down component of the spin?
+
+2631
+01:47:10,400 --> 01:47:13,180
+What kind correspond to the x component of the spin?
+
+2632
+01:47:13,280 --> 01:47:15,120
+What kind correspond to the y component?
+
+2633
+01:47:15,760 --> 01:47:18,440
+What kind of observable, what kind of matrix
+
+2634
+01:47:18,440 --> 01:47:20,680
+corresponds to the component of the spin
+
+2635
+01:47:20,680 --> 01:47:22,260
+along some arbitrary direction?
+
+2636
+01:47:23,020 --> 01:47:24,180
+And so we're going to see then
+
+2637
+01:47:24,180 --> 01:47:26,560
+that there's a connection between
+
+2638
+01:47:26,560 --> 01:47:29,300
+these vectors, matrices, and so forth,
+
+2639
+01:47:29,360 --> 01:47:31,000
+and real directions of space,
+
+2640
+01:47:31,000 --> 01:47:32,400
+but that's going to take some time.
+
+2641
+01:47:32,400 --> 01:47:33,400
+It'll take some space,
+
+2642
+01:47:33,600 --> 01:47:34,440
+and we're going to go through some,
+
+2643
+01:47:34,440 --> 01:47:35,260
+a little more pieces.
+
+2644
+01:47:35,260 --> 01:47:36,760
+Without all of this,
+
+2645
+01:47:36,760 --> 01:47:39,500
+there's no way that you can understand honestly
+
+2646
+01:47:39,500 --> 01:47:40,800
+what entanglement is,
+
+2647
+01:47:40,800 --> 01:47:43,100
+what Bell's inequalities mean,
+
+2648
+01:47:43,100 --> 01:47:47,440
+what the basic setup of quantum mechanics is.
+
+2649
+01:47:47,440 --> 01:47:48,840
+So it's more...
+
+2650
+01:47:48,840 --> 01:47:50,980
+If I had my way,
+
+2651
+01:47:50,980 --> 01:47:52,680
+I would love to be able to teach this
+
+2652
+01:47:52,680 --> 01:47:53,880
+without all this mathematics,
+
+2653
+01:47:53,880 --> 01:47:54,480
+but I can't.
+
+2654
+01:47:54,480 --> 01:47:55,020
+There's no way.
+
+2655
+01:47:55,600 --> 01:47:57,240
+So you want it honestly,
+
+2656
+01:47:57,440 --> 01:47:58,480
+you want it correctly,
+
+2657
+01:47:58,680 --> 01:48:00,800
+you want the basic ingredients
+
+2658
+01:48:00,800 --> 01:48:02,020
+that go into quantum mechanics.
+
+2659
+01:48:02,460 --> 01:48:03,540
+We have to go through,
+
+2660
+01:48:03,540 --> 01:48:06,040
+we have to go through this bit of mathematics.
+
+2661
+01:48:06,040 --> 01:48:07,540
+Once we're through it,
+
+2662
+01:48:07,540 --> 01:48:10,780
+our mission operators, vectors, and so forth,
+
+2663
+01:48:10,780 --> 01:48:12,580
+then the rest is kind of smooth sailing.
+
+2664
+01:48:12,580 --> 01:48:15,980
+It's relatively easy stuff,
+
+2665
+01:48:15,980 --> 01:48:19,160
+but so far we've had to spend more time
+
+2666
+01:48:19,160 --> 01:48:21,540
+on mathematics than I might have liked.
+
+2667
+01:48:21,540 --> 01:48:22,040
+Good.
+
+2668
+01:48:22,040 --> 01:48:22,540
+Okay.
+
+2669
+01:48:30,540 --> 01:48:32,740
+The preceding program is copyrighted
+
+2670
+01:48:32,740 --> 01:48:34,120
+by Stanford University.
+
+2671
+01:48:34,519 --> 01:48:37,240
+Please visit us at stanford.edu.
+
