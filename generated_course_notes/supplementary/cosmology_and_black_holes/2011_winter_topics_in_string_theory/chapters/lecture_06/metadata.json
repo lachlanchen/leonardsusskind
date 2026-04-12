@@ -1,0 +1,52 @@
+{
+  "course_rel": "supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory",
+  "transcript_rel": "supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory/110 - Lecture 6 \uff5c Topics in String Theory [5p4PvLUHH88].md",
+  "video_rel": "supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory/110 - Lecture 6 \uff5c Topics in String Theory [5p4PvLUHH88].mkv",
+  "lecture_number": 6,
+  "lecture_slug": "lecture_06",
+  "lecture_title": "Lecture 6 : Topics in String Theory",
+  "assets": [
+    {
+      "name": "lecture_06_figure_03.png",
+      "timestamp_seconds": 650.72,
+      "timestamp_hhmmss": "00:10:50.720",
+      "source_candidate": "lecture_06_window_03_candidate_04_001050720.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 04 is the most useful frame because the diagram is the most developed: both matter lines are visible and the exchanged wavy line has been drawn clearly between them. Earlier candidates capture only the start of the construction, while this frame gives the most complete and note-worthy version of the board content in the subtitle window.",
+      "subtitle_excerpt": "We draw a Feynman diagram, and a photon is exchanged.",
+      "segment_start_seconds": 646.32,
+      "segment_start_hhmmss": "00:10:46.320",
+      "segment_end_seconds": 651.32,
+      "segment_end_hhmmss": "00:10:51.320",
+      "caption_hint": "photon exchange Feynman sketch"
+    },
+    {
+      "name": "lecture_06_figure_04.png",
+      "timestamp_seconds": 2637.72,
+      "timestamp_hhmmss": "00:43:57.720",
+      "source_candidate": "lecture_06_window_05_candidate_04_004357720.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 04 is the strongest frame because it contains the most finished and legible board layout for this subtitle window: the circular black-hole-like region is fully drawn, the horizontal arrow is in place, and the lecturer does not significantly occlude the main diagram. Earlier candidates show only partial equations or less complete board context.",
+      "subtitle_excerpt": "It's on the horizon, or near the horizon of the black hole.",
+      "segment_start_seconds": 2632.32,
+      "segment_start_hhmmss": "00:43:52.320",
+      "segment_end_seconds": 2638.32,
+      "segment_end_hhmmss": "00:43:58.320",
+      "caption_hint": "near-horizon schematic"
+    },
+    {
+      "name": "lecture_06_figure_05.png",
+      "timestamp_seconds": 2853.02,
+      "timestamp_hhmmss": "00:47:33.020",
+      "source_candidate": "lecture_06_window_06_candidate_01_004733020.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 is the best frame because it preserves the key equations that support the transition from black hole to string description: the black-hole entropy, the string entropy, and the start of the Schwarzschild-radius relation being written below. Later candidates move toward a schematic loop picture, but this frame carries the strongest mathematical payload for note writing.",
+      "subtitle_excerpt": "The Schwarzschild radius will are approximately equal to the string length scale. If the Schwarzschild black hole radius is smaller than these little loops of string, it doesn't mean anything anymore to say it's a black hole. It just becomes a string.",
+      "segment_start_seconds": 2852.22,
+      "segment_start_hhmmss": "00:47:32.220",
+      "segment_end_seconds": 2864.82,
+      "segment_end_hhmmss": "00:47:44.820",
+      "caption_hint": "black-hole and string entropy comparison"
+    }
+  ]
+}
