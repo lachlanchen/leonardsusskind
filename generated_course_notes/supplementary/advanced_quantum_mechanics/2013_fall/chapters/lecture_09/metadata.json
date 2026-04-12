@@ -1,0 +1,42 @@
+{
+  "course_rel": "supplementary/advanced_quantum_mechanics/2013_fall",
+  "transcript_rel": "supplementary/advanced_quantum_mechanics/2013_fall/193 - Advanced Quantum Mechanics Lecture 9 [7a1hon7NJ1M].md",
+  "video_rel": "supplementary/advanced_quantum_mechanics/2013_fall/193 - Advanced Quantum Mechanics Lecture 9 [7a1hon7NJ1M].mp4",
+  "lecture_number": 9,
+  "lecture_slug": "lecture_09",
+  "lecture_title": "Advanced Quantum Mechanics Lecture 9",
+  "assets": [
+    {
+      "name": "lecture_09_frame_01.png",
+      "timestamp_seconds": 167.12,
+      "timestamp_hhmmss": "00:02:47.120",
+      "source_candidate": "lecture_09_candidate_05_000247120.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Best of the early Hamiltonian-board near-duplicates; the kinetic piece and the added potential term V(x)\\psi^\\dagger(x)\\psi(x) are the most legible."
+    },
+    {
+      "name": "lecture_09_frame_02.png",
+      "timestamp_seconds": 2136.12,
+      "timestamp_hhmmss": "00:35:36.120",
+      "source_candidate": "lecture_09_candidate_06_003536120.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Most useful mid-lecture board layout for the short-range interaction discussion, with both the contact-interaction sketch and supporting equations visible."
+    },
+    {
+      "name": "lecture_09_frame_03.png",
+      "timestamp_seconds": 5160.12,
+      "timestamp_hhmmss": "01:26:00.120",
+      "source_candidate": "lecture_09_candidate_10_012600120.png",
+      "recommended_use": "figure",
+      "rationale": "Clearest centered shot of the two-component equation with H=\\alpha p and the matrix form of the spatial derivative term."
+    },
+    {
+      "name": "lecture_09_frame_04.png",
+      "timestamp_seconds": 5522.12,
+      "timestamp_hhmmss": "01:32:02.120",
+      "source_candidate": "lecture_09_candidate_12_013202120.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Useful reference for the operator-algebra conditions \\alpha^2=1, \\beta^2=1, and the anticommutation relation, even though the frame is partially obstructed."
+    }
+  ]
+}
