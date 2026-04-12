@@ -1,0 +1,2377 @@
+# Transcript
+
+Source: supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/150 - Supersymmetry & Grand Unification： Lecture 6 [FU5SKmVTxIw].mp4
+
+- [00:00:00,000 - 00:00:07,000] Stanford University
+- [00:00:07,000 - 00:00:09,500] Yeah, we're going to come
+- [00:00:09,500 - 00:00:12,000] back to the supersymmetry business.
+- [00:00:12,000 - 00:00:15,000] Boy, this is very abstract stuff, and I really
+- [00:00:15,000 - 00:00:18,000] am surprised that anybody returned after the last time.
+- [00:00:18,000 - 00:00:22,000] But we're going to keep going,
+- [00:00:22,000 - 00:00:26,000] and we'll see who gives up first.
+- [00:00:26,000 - 00:00:29,000] Okay, yeah?
+- [00:00:29,000 - 00:00:33,000] I asked about the Casimir effect last time.
+- [00:00:33,000 - 00:00:38,000] Does everybody know what the Casimir effect is?
+- [00:00:38,000 - 00:00:46,000] Well, it's an effect of quantum field theory.
+- [00:00:46,000 - 00:00:50,000] It can be described in a number of ways.
+- [00:00:50,000 - 00:00:56,000] But it's just if you take two reflecting surfaces,
+- [00:00:56,000 - 00:01:01,000] hold them a certain distance apart,
+- [00:01:01,000 - 00:01:07,000] then there are effects of quantum field theory.
+- [00:01:07,000 - 00:01:11,000] Roughly speaking, you can say that
+- [00:01:11,000 - 00:01:15,000] let's not have the conducting plates there.
+- [00:01:15,000 - 00:01:20,000] Then there's a vacuum energy, and the vacuum energy
+- [00:01:20,000 - 00:01:25,000] can be thought of as coming from virtual production
+- [00:01:25,000 - 00:01:26,000] of pairs of particles.
+- [00:01:26,000 - 00:01:28,000] It's one way to think about it.
+- [00:01:28,000 - 00:01:30,500] You can also think of it
+- [00:01:30,500 - 00:01:33,000] as the zero-point energy of oscillators,
+- [00:01:33,000 - 00:01:35,000] harmonic oscillators that are
+- [00:01:35,000 - 00:01:37,000] associated with the quantum fields.
+- [00:01:37,000 - 00:01:40,000] Same thing.
+- [00:01:40,000 - 00:01:45,000] And in empty space, purely empty space,
+- [00:01:45,000 - 00:01:49,500] there's a certain amount of energy that's
+- [00:01:49,500 - 00:01:54,000] present as a consequence of these virtual processes.
+- [00:01:54,000 - 00:01:54,500] Now, the virtual processes also
+- [00:01:54,500 - 00:01:55,000] have a certain amount of energy.
+- [00:01:55,000 - 00:01:57,500] And the virtual processes also take place
+- [00:01:57,500 - 00:02:00,000] in the presence of these conducting plates.
+- [00:02:00,000 - 00:02:04,000] But the conducting plates kind of interrupt these processes.
+- [00:02:04,000 - 00:02:08,000] For example, roughly speaking, virtual loops,
+- [00:02:08,000 - 00:02:12,500] which would have been present
+- [00:02:12,500 - 00:02:17,000] in the vicinity of these plates,
+- [00:02:17,000 - 00:02:19,000] had the plates not been present,
+- [00:02:19,000 - 00:02:22,000] are going to get affected by these reflecting plates.
+- [00:02:22,000 - 00:02:23,000] For example,
+- [00:02:23,000 - 00:02:26,500] if there's a reflecting pair of
+- [00:02:26,500 - 00:02:30,000] plates and the loop here of photons,
+- [00:02:30,000 - 00:02:34,000] the photons, roughly speaking, will reflect off the plates.
+- [00:02:34,000 - 00:02:40,000] So the virtual processes will be kind of interrupted
+- [00:02:40,000 - 00:02:43,000] by the presence of these plates in
+- [00:02:43,000 - 00:02:46,000] ways that would not have been there
+- [00:02:46,000 - 00:02:48,000] if the plates had not been there.
+- [00:02:48,000 - 00:02:49,000] That's all.
+- [00:02:49,000 - 00:02:50,500] There is an effect of
+- [00:02:50,500 - 00:02:52,000] the plates on the virtual processes.
+- [00:02:52,000 - 00:02:55,500] The virtual photons in the vacuum get
+- [00:02:55,500 - 00:02:59,000] reflected off the reflecting surfaces and so forth.
+- [00:02:59,000 - 00:03:05,000] And that modifies the value of the energy density,
+- [00:03:05,000 - 00:03:08,000] the vacuum energy density between the plates.
+- [00:03:08,000 - 00:03:12,000] Also somewhat on the outsides of the plates.
+- [00:03:12,000 - 00:03:16,000] If you take the plates far apart,
+- [00:03:16,000 - 00:03:19,000] very, very far apart,
+- [00:03:19,000 - 00:03:21,000] then it's true that each plate by itself
+- [00:03:21,000 - 00:03:27,000] still does some interrupting of the vacuum diagrams
+- [00:03:27,000 - 00:03:29,000] and modifies the energy.
+- [00:03:29,000 - 00:03:31,500] But it modifies the energy in a way
+- [00:03:31,500 - 00:03:34,000] which depends on the distance between the plates.
+- [00:03:34,000 - 00:03:36,000] Far away you get one answer.
+- [00:03:36,000 - 00:03:38,000] As you bring them together,
+- [00:03:38,000 - 00:03:40,000] more complicated things can happen.
+- [00:03:40,000 - 00:03:42,000] Photons can bounce back,
+- [00:03:42,000 - 00:03:45,000] virtual photons can bounce back and forth between them.
+- [00:03:45,000 - 00:03:48,000] And the result is that the vacuum energy,
+- [00:03:48,000 - 00:03:50,000] or the zero-point energy,
+- [00:03:50,000 - 00:03:52,500] becomes a function of the
+- [00:03:52,500 - 00:03:55,000] distance between the reflecting plates.
+- [00:03:55,000 - 00:03:58,000] When energy is a function of distance,
+- [00:03:58,000 - 00:04:02,000] that is an indication that there's a force.
+- [00:04:02,000 - 00:04:05,000] You can think of the energy
+- [00:04:05,000 - 00:04:11,000] as a function of the distance between the plates,
+- [00:04:11,000 - 00:04:13,000] and you can think of it as potential energy.
+- [00:04:13,000 - 00:04:15,000] The derivative of that potential
+- [00:04:15,000 - 00:04:17,000] energy with respect to distance
+- [00:04:17,000 - 00:04:19,000] is a form of force.
+- [00:04:20,000 - 00:04:23,000] So there's a quantum field-theoretic origin of force
+- [00:04:23,000 - 00:04:25,000] between reflecting plates,
+- [00:04:25,000 - 00:04:30,000] which disappears rather rapidly as you separate the plates.
+- [00:04:30,000 - 00:04:32,000] I think it goes as one
+- [00:04:32,000 - 00:04:34,000] over the distance to the sixth power,
+- [00:04:34,000 - 00:04:35,000] if I remember?
+- [00:04:35,000 - 00:04:36,000] Fourth power?
+- [00:04:36,000 - 00:04:37,000] Fourth power.
+- [00:04:37,000 - 00:04:39,000] So much faster than...
+- [00:04:39,000 - 00:04:42,000] The force goes as a fourth power or the energy?
+- [00:04:42,000 - 00:04:45,000] I can't remember.
+- [00:04:45,000 - 00:04:47,500] Yeah, you can work it out
+- [00:04:47,500 - 00:04:50,000] just on dimensional grounds, in fact.
+- [00:04:50,000 - 00:04:52,000] But I won't do that right now.
+- [00:04:52,000 - 00:04:58,000] And that creates a force between the plates,
+- [00:04:58,000 - 00:05:00,000] which is typically attractive.
+- [00:05:00,000 - 00:05:03,000] So that's a detail that you have to work out.
+- [00:05:03,000 - 00:05:05,000] The force is attractive.
+- [00:05:05,000 - 00:05:07,000] In fact, if these were fermion loops here,
+- [00:05:07,000 - 00:05:10,000] the force would probably have the opposite sign, I think.
+- [00:05:10,000 - 00:05:13,000] So this is regard...
+- [00:05:13,000 - 00:05:15,000] And this force can be measured.
+- [00:05:15,000 - 00:05:16,000] It actually is measured.
+- [00:05:16,000 - 00:05:17,000] It's difficult to measure.
+- [00:05:17,000 - 00:05:18,000] It's a very small force,
+- [00:05:18,000 - 00:05:20,000] and it falls off rapidly,
+- [00:05:20,000 - 00:05:23,000] and it's difficult with separation.
+- [00:05:23,000 - 00:05:27,000] But it's often taken to be a confirmation
+- [00:05:27,000 - 00:05:30,000] of the idea of vacuum energy.
+- [00:05:30,000 - 00:05:32,000] It is to some extent,
+- [00:05:32,000 - 00:05:34,000] but on the other hand,
+- [00:05:34,000 - 00:05:36,000] you can also just think of it
+- [00:05:36,000 - 00:05:38,000] as a force between the plates
+- [00:05:38,000 - 00:05:40,000] when they get close together.
+- [00:05:40,000 - 00:05:43,000] Anyway, you asked me about the Casimir effect.
+- [00:05:43,000 - 00:05:45,000] The question is,
+- [00:05:45,000 - 00:05:48,000] what other confirmation is there of the vacuum energy?
+- [00:05:48,000 - 00:05:50,000] Because that is such a small effect,
+- [00:05:50,000 - 00:05:52,000] and it's not a big deal.
+- [00:05:52,000 - 00:05:54,000] So what is the vacuum energy?
+- [00:05:54,000 - 00:05:58,000] Well, there's all kinds of processes
+- [00:05:58,000 - 00:06:06,000] and detailed high-precision behaviors
+- [00:06:06,000 - 00:06:09,000] of atoms and so forth,
+- [00:06:09,000 - 00:06:11,000] atomic spectra and so forth,
+- [00:06:11,000 - 00:06:14,000] which are sensitive to these vacuum loops.
+- [00:06:14,000 - 00:06:17,000] Yeah, so they're indirect measurements.
+- [00:06:17,000 - 00:06:18,000] The direct measurement,
+- [00:06:18,000 - 00:06:20,000] what do you really mean
+- [00:06:20,000 - 00:06:22,000] by vacuum energy?
+- [00:06:22,000 - 00:06:25,000] What do you really mean by energy?
+- [00:06:25,000 - 00:06:27,000] Energy is mass,
+- [00:06:27,000 - 00:06:29,000] E equals mc squared.
+- [00:06:29,000 - 00:06:32,000] Mass is the source of gravity.
+- [00:06:32,000 - 00:06:37,000] The basic thing that mass and energy do
+- [00:06:37,000 - 00:06:39,000] at a very fundamental level
+- [00:06:39,000 - 00:06:42,000] is that they gravitate.
+- [00:06:42,000 - 00:06:44,000] So the question is,
+- [00:06:44,000 - 00:06:47,000] would this energy that's stored
+- [00:06:47,000 - 00:06:49,000] between these two plates here
+- [00:06:49,000 - 00:06:55,000] modify both the mass of these plates,
+- [00:06:55,000 - 00:06:58,000] and would it affect the gravitation
+- [00:06:58,000 - 00:07:01,000] of some other object out here?
+- [00:07:01,000 - 00:07:04,000] And that, of course, is much too hard to measure.
+- [00:07:04,000 - 00:07:07,000] That's way, way beyond the ability to measure.
+- [00:07:07,000 - 00:07:10,000] But the vacuum energy that's present
+- [00:07:10,000 - 00:07:13,000] just in empty space gravitates,
+- [00:07:13,000 - 00:07:16,000] and the effect of that gravitation
+- [00:07:16,000 - 00:07:18,000] is the accelerated expansion
+- [00:07:18,000 - 00:07:20,000] of the universe.
+- [00:07:20,000 - 00:07:22,000] So really when people talk about vacuum energy
+- [00:07:22,000 - 00:07:25,000] and real, real honest evidence for it,
+- [00:07:25,000 - 00:07:27,000] the only real evidence for it
+- [00:07:27,000 - 00:07:30,000] is the accelerated expansion of the universe.
+- [00:07:30,000 - 00:07:34,000] So that's, I would put it that way.
+- [00:07:34,000 - 00:07:37,000] There's other ways to think about
+- [00:07:37,000 - 00:07:40,000] the force between these plates here
+- [00:07:40,000 - 00:07:42,000] than thinking about vacuum energy.
+- [00:07:42,000 - 00:07:43,000] You can just think about it
+- [00:07:43,000 - 00:07:45,000] as the force between plates.
+- [00:07:45,000 - 00:07:47,000] Yeah.
+- [00:07:48,000 - 00:07:52,000] How can the Casimir force ever be positive?
+- [00:07:52,000 - 00:07:54,000] How can it be repulsive?
+- [00:07:56,000 - 00:07:58,000] How can the...
+- [00:08:00,000 - 00:08:02,000] I think it depends on the kind of particle
+- [00:08:02,000 - 00:08:05,000] that's, I think if there are,
+- [00:08:05,000 - 00:08:09,000] I believe that if there were fermions
+- [00:08:09,000 - 00:08:11,000] which were mediating the force,
+- [00:08:11,000 - 00:08:14,000] that it would be positive and not negative.
+- [00:08:14,000 - 00:08:16,000] I think that's true.
+- [00:08:16,000 - 00:08:18,000] I have to check that, but I think so.
+- [00:08:18,000 - 00:08:19,000] I don't know.
+- [00:08:19,000 - 00:08:24,000] Do you have any idea why the popular articles
+- [00:08:24,000 - 00:08:26,000] about vacuum energy
+- [00:08:26,000 - 00:08:28,000] all call it mysterious
+- [00:08:28,000 - 00:08:34,000] and seem to say it's an unknown?
+- [00:08:34,000 - 00:08:35,000] Do physicists...
+- [00:08:35,000 - 00:08:37,000] Look, I've explained this over and over again.
+- [00:08:40,000 - 00:08:42,000] All quantum field theories predict
+- [00:08:42,000 - 00:08:44,000] the existence of vacuum energy.
+- [00:08:46,000 - 00:08:47,000] Is that mysterious?
+- [00:08:48,000 - 00:08:50,000] Well, okay.
+- [00:08:50,000 - 00:08:53,000] It's something that's very, very well established
+- [00:08:53,000 - 00:08:55,000] in quantum field theory
+- [00:08:55,000 - 00:08:57,000] that there is a zero point energy
+- [00:08:57,000 - 00:08:58,000] for every quantum field.
+- [00:08:58,000 - 00:09:00,000] It's called vacuum energy.
+- [00:09:00,000 - 00:09:01,000] It's really there.
+- [00:09:01,000 - 00:09:03,000] Here's a measurement of it.
+- [00:09:03,000 - 00:09:05,000] In that sense, it's not mysterious.
+- [00:09:05,000 - 00:09:06,000] It's a mathematical consequence
+- [00:09:06,000 - 00:09:08,000] of quantum field theory.
+- [00:09:08,000 - 00:09:10,000] The really mysterious thing
+- [00:09:10,000 - 00:09:12,000] is not that there is vacuum energy
+- [00:09:12,000 - 00:09:14,000] or dark energy or whatever you want to call it.
+- [00:09:14,000 - 00:09:16,000] The really mysterious thing
+- [00:09:16,000 - 00:09:18,000] is that there's so little of it.
+- [00:09:18,000 - 00:09:20,000] That's the really mysterious thing.
+- [00:09:20,000 - 00:09:22,000] Why is there so little of it?
+- [00:09:22,000 - 00:09:23,000] I understand that.
+- [00:09:23,000 - 00:09:26,000] But then they say this mysterious thing
+- [00:09:26,000 - 00:09:27,000] about vacuum energy
+- [00:09:27,000 - 00:09:29,000] like nobody knows what it is.
+- [00:09:31,000 - 00:09:32,000] What can I do?
+- [00:09:33,000 - 00:09:35,000] I just wanted to be reassured
+- [00:09:35,000 - 00:09:38,000] that that's the right response to that,
+- [00:09:38,000 - 00:09:41,000] to those sentences when I read them.
+- [00:09:41,000 - 00:09:42,000] Right.
+- [00:09:42,000 - 00:09:46,000] As I say, the mysterious thing is its absence,
+- [00:09:46,000 - 00:09:47,000] not its presence.
+- [00:09:48,000 - 00:09:51,000] And, okay, look,
+- [00:09:51,000 - 00:09:54,000] because it is such a feeble thing,
+- [00:09:54,000 - 00:09:59,000] because it is so small,
+- [00:09:59,000 - 00:10:01,000] for many, many years,
+- [00:10:01,000 - 00:10:03,000] physicists, including Einstein,
+- [00:10:03,000 - 00:10:06,000] thought it must be exactly zero.
+- [00:10:06,000 - 00:10:08,000] They convinced themselves
+- [00:10:08,000 - 00:10:11,000] that there must be an explanation
+- [00:10:11,000 - 00:10:14,000] of the fact that it's exactly zero.
+- [00:10:14,000 - 00:10:16,000] There was no argument.
+- [00:10:16,000 - 00:10:17,000] There was never an argument
+- [00:10:17,000 - 00:10:19,000] about why there shouldn't be vacuum energy
+- [00:10:19,000 - 00:10:20,000] that gravitates.
+- [00:10:20,000 - 00:10:25,000] But since it seemed to be absent,
+- [00:10:25,000 - 00:10:27,000] the conclusion,
+- [00:10:27,000 - 00:10:28,000] it seemed to be absent
+- [00:10:28,000 - 00:10:30,000] to rather high precision,
+- [00:10:30,000 - 00:10:32,000] the psychology was,
+- [00:10:32,000 - 00:10:37,000] well, it must really not be there at all,
+- [00:10:37,000 - 00:10:39,000] since it's so much smaller
+- [00:10:39,000 - 00:10:41,000] than is expected
+- [00:10:41,000 - 00:10:45,000] on the basis of just quantum field theory
+- [00:10:45,000 - 00:10:46,000] plus a little bit of,
+- [00:10:46,000 - 00:10:49,000] of dimensional analysis.
+- [00:10:49,000 - 00:10:51,000] Since it's hundreds of orders of magnitude
+- [00:10:51,000 - 00:10:53,000] smaller than what you would expect,
+- [00:10:53,000 - 00:10:56,000] there must be some principle of physics
+- [00:10:56,000 - 00:10:59,000] which says that it's not there.
+- [00:10:59,000 - 00:11:01,000] The right theory of nature,
+- [00:11:01,000 - 00:11:02,000] as we all know,
+- [00:11:02,000 - 00:11:04,000] is string theory.
+- [00:11:04,000 - 00:11:06,000] Therefore, there must be
+- [00:11:06,000 - 00:11:08,000] a principle of string theory
+- [00:11:08,000 - 00:11:11,000] which says that there is no vacuum energy,
+- [00:11:11,000 - 00:11:14,000] and that must be the explanation.
+- [00:11:14,000 - 00:11:16,000] Now that we have an explanation,
+- [00:11:16,000 - 00:11:19,000] it is an extremely mysterious fact
+- [00:11:19,000 - 00:11:23,000] that when the next round of experiments
+- [00:11:23,000 - 00:11:25,000] were done to probe the existence
+- [00:11:25,000 - 00:11:29,000] of vacuum energy a little more precisely,
+- [00:11:29,000 - 00:11:32,000] it turned out that it was there.
+- [00:11:32,000 - 00:11:33,000] All right?
+- [00:11:33,000 - 00:11:37,000] So it was an entirely a psychological
+- [00:11:37,000 - 00:11:39,000] mysteriousness.
+- [00:11:39,000 - 00:11:41,000] We convinced ourselves that there must be
+- [00:11:41,000 - 00:11:43,000] an explanation of its absence,
+- [00:11:43,000 - 00:11:45,000] and then when it wasn't absent,
+- [00:11:45,000 - 00:11:46,000] everybody said,
+- [00:11:46,000 - 00:11:47,000] wow, oh my goodness,
+- [00:11:47,000 - 00:11:48,000] that's mysterious.
+- [00:11:48,000 - 00:11:49,000] Well, it is mysterious,
+- [00:11:49,000 - 00:11:52,000] but what's mysterious is the fact
+- [00:11:52,000 - 00:11:54,000] that it's so absent.
+- [00:11:54,000 - 00:11:57,000] So, um,
+- [00:11:57,000 - 00:11:59,000] but what it is,
+- [00:11:59,000 - 00:12:03,000] it's surely some form of vacuum energy
+- [00:12:03,000 - 00:12:05,000] that, yeah.
+- [00:12:05,000 - 00:12:07,000] I have a super simple question.
+- [00:12:07,000 - 00:12:08,000] Yeah.
+- [00:12:08,000 - 00:12:10,000] So, with bosons,
+- [00:12:10,000 - 00:12:12,000] I can have a large population of them
+- [00:12:12,000 - 00:12:13,000] in the same state.
+- [00:12:13,000 - 00:12:14,000] Uh-huh.
+- [00:12:14,000 - 00:12:16,000] So, suppose I have,
+- [00:12:16,000 - 00:12:18,000] in our small example,
+- [00:12:18,000 - 00:12:20,000] a set of bosons in the same state.
+- [00:12:20,000 - 00:12:21,000] Right.
+- [00:12:21,000 - 00:12:22,000] And I apply the symmetry transform.
+- [00:12:22,000 - 00:12:24,000] Now I've got a bunch of fermions.
+- [00:12:24,000 - 00:12:26,000] Mm-hmm.
+- [00:12:26,000 - 00:12:27,000] Mm-hmm.
+- [00:12:27,000 - 00:12:28,000] Right?
+- [00:12:28,000 - 00:12:29,000] No.
+- [00:12:29,000 - 00:12:30,000] Not that way.
+- [00:12:30,000 - 00:12:31,000] No.
+- [00:12:31,000 - 00:12:32,000] No.
+- [00:12:32,000 - 00:12:33,000] What the symmetry,
+- [00:12:33,000 - 00:12:34,000] okay.
+- [00:12:34,000 - 00:12:36,000] It's exactly this fact.
+- [00:12:36,000 - 00:12:37,000] All right.
+- [00:12:37,000 - 00:12:40,000] The symmetry transformation is generated by
+- [00:12:40,000 - 00:12:43,000] or induced by these operators Q.
+- [00:12:43,000 - 00:12:44,000] Okay?
+- [00:12:44,000 - 00:12:45,000] So,
+- [00:12:45,000 - 00:12:47,000] they're analogous to some extent
+- [00:12:47,000 - 00:12:49,000] like other generators,
+- [00:12:49,000 - 00:12:50,000] other symmetry generators,
+- [00:12:50,000 - 00:12:52,000] let's say angular momentum.
+- [00:12:52,000 - 00:12:54,000] But there's one thing,
+- [00:12:54,000 - 00:12:55,000] what do they do?
+- [00:12:55,000 - 00:12:58,000] An angular momentum generator just
+- [00:12:58,000 - 00:13:02,000] rotates by an infinitesimal angle.
+- [00:13:02,000 - 00:13:03,000] Um,
+- [00:13:03,000 - 00:13:06,000] what a supersymmetry generator does
+- [00:13:06,000 - 00:13:09,000] is it doesn't turn a system of bosons
+- [00:13:09,000 - 00:13:12,000] into a system of fermions.
+- [00:13:12,000 - 00:13:13,000] It removes one,
+- [00:13:13,000 - 00:13:15,000] removes one boson
+- [00:13:15,000 - 00:13:18,000] and replaces it by one fermion.
+- [00:13:18,000 - 00:13:21,000] So if I had a thousand bosons,
+- [00:13:21,000 - 00:13:23,000] the supersymmetry operation,
+- [00:13:23,000 - 00:13:25,000] the super generator,
+- [00:13:25,000 - 00:13:27,000] the generator of the symmetry,
+- [00:13:27,000 - 00:13:30,000] would take one boson
+- [00:13:30,000 - 00:13:32,000] and replace it by a fermion
+- [00:13:32,000 - 00:13:33,000] or one fermion
+- [00:13:33,000 - 00:13:35,000] and replace it by a boson.
+- [00:13:35,000 - 00:13:37,000] It wouldn't take all of the fermions
+- [00:13:37,000 - 00:13:39,000] and replace them by all of bosons
+- [00:13:39,000 - 00:13:40,000] or vice versa.
+- [00:13:40,000 - 00:13:41,000] Now,
+- [00:13:41,000 - 00:13:42,000] you say,
+- [00:13:42,000 - 00:13:44,000] why can't I act multiple times
+- [00:13:44,000 - 00:13:46,000] with this Q
+- [00:13:46,000 - 00:13:48,000] and take large numbers of fermions
+- [00:13:48,000 - 00:13:50,000] and replace them by bosons?
+- [00:13:50,000 - 00:13:52,000] The answer is
+- [00:13:52,000 - 00:13:55,000] that Q squared is equal to zero.
+- [00:13:55,000 - 00:13:58,000] That's the character of these fermionic,
+- [00:13:58,000 - 00:14:00,000] of these
+- [00:14:00,000 - 00:14:03,000] Grassmannian variables
+- [00:14:03,000 - 00:14:05,000] that they have the property
+- [00:14:05,000 - 00:14:07,000] that when you act twice with them,
+- [00:14:07,000 - 00:14:09,000] you just get nothing.
+- [00:14:09,000 - 00:14:10,000] So,
+- [00:14:10,000 - 00:14:11,000] um,
+- [00:14:11,000 - 00:14:13,000] compare it
+- [00:14:13,000 - 00:14:16,000] with the generators of rotation.
+- [00:14:16,000 - 00:14:20,000] You make a small rotation of space
+- [00:14:20,000 - 00:14:24,000] and that changes everything a little bit.
+- [00:14:24,000 - 00:14:27,000] But then you can compound that rotation
+- [00:14:27,000 - 00:14:29,000] many times
+- [00:14:29,000 - 00:14:30,000] by rotating a little bit,
+- [00:14:30,000 - 00:14:31,000] rotating a little bit,
+- [00:14:31,000 - 00:14:32,000] rotating a little bit,
+- [00:14:32,000 - 00:14:33,000] rotating a little bit
+- [00:14:33,000 - 00:14:35,000] and turn everything around.
+- [00:14:35,000 - 00:14:39,000] You can't do that with these fermionic generators.
+- [00:14:39,000 - 00:14:42,000] You operate with Q,
+- [00:14:42,000 - 00:14:44,000] you replace a fermion by a boson.
+- [00:14:44,000 - 00:14:45,000] You operate again with Q
+- [00:14:45,000 - 00:14:47,000] and you get nothing.
+- [00:14:47,000 - 00:14:48,000] So,
+- [00:14:48,000 - 00:14:51,000] the way to think about it is
+- [00:14:51,000 - 00:14:52,000] what Q does
+- [00:14:52,000 - 00:14:55,000] is not to replace all fermions by bosons,
+- [00:14:55,000 - 00:14:57,000] but to remove one fermion
+- [00:14:57,000 - 00:14:58,000] and replace it by a boson
+- [00:14:58,000 - 00:15:00,000] or vice versa.
+- [00:15:00,000 - 00:15:01,000] So it changes you
+- [00:15:01,000 - 00:15:03,000] by one unit of fermion.
+- [00:15:06,000 - 00:15:08,000] As far as the motivation for supersymmetry,
+- [00:15:08,000 - 00:15:10,000] is there motivation other than
+- [00:15:10,000 - 00:15:12,000] getting rid of the vacuum energy?
+- [00:15:12,000 - 00:15:14,000] A little bit, yeah.
+- [00:15:14,000 - 00:15:18,000] Alright, so let's talk about that now.
+- [00:15:20,000 - 00:15:21,000] What are,
+- [00:15:21,000 - 00:15:23,000] there are three things
+- [00:15:23,000 - 00:15:26,000] that supersymmetry does for you,
+- [00:15:27,000 - 00:15:29,000] all of which
+- [00:15:29,000 - 00:15:31,000] sound quite significant
+- [00:15:31,000 - 00:15:33,000] and may be quite important
+- [00:15:33,000 - 00:15:35,000] or they might just not be.
+- [00:15:35,000 - 00:15:36,000] And the answer is,
+- [00:15:36,000 - 00:15:37,000] at the moment,
+- [00:15:38,000 - 00:15:39,000] we don't know.
+- [00:15:39,000 - 00:15:40,000] By supersymmetry,
+- [00:15:40,000 - 00:15:42,000] I mean supersymmetry
+- [00:15:42,000 - 00:15:43,000] measurable
+- [00:15:43,000 - 00:15:47,000] within the next decade
+- [00:15:47,000 - 00:15:50,000] at the machines that are now being built,
+- [00:15:50,000 - 00:15:52,000] LHC in particular.
+- [00:15:54,000 - 00:15:56,000] The first thing they do for you
+- [00:15:57,000 - 00:15:59,000] is to control these
+- [00:15:59,000 - 00:16:03,000] enormously big numbers which occur
+- [00:16:03,000 - 00:16:06,000] and which force you into thinking about
+- [00:16:06,000 - 00:16:08,000] extreme finite numbers,
+- [00:16:08,000 - 00:16:10,000] fine tunings of variables,
+- [00:16:10,000 - 00:16:11,000] in particular,
+- [00:16:11,000 - 00:16:13,000] the Higgs mass itself.
+- [00:16:13,000 - 00:16:14,000] The Higgs mass,
+- [00:16:14,000 - 00:16:15,000] as we've talked about,
+- [00:16:15,000 - 00:16:17,000] would naturally,
+- [00:16:17,000 - 00:16:20,000] if there was no funny thing going on,
+- [00:16:23,000 - 00:16:24,000] would naturally get shifted up
+- [00:16:24,000 - 00:16:26,000] to some very large mass,
+- [00:16:29,000 - 00:16:31,000] and the only way to control that
+- [00:16:33,000 - 00:16:34,000] is either,
+- [00:16:34,000 - 00:16:38,000] yes, I agree,
+- [00:16:38,000 - 00:16:45,000] is either by extreme fine tuning of the parameters
+- [00:16:45,000 - 00:16:47,000] or by the symmetry
+- [00:16:47,000 - 00:16:50,000] which replaces fermions by bosons.
+- [00:16:50,000 - 00:16:54,000] So that's the first fact
+- [00:16:54,000 - 00:16:56,000] that it controls
+- [00:16:59,000 - 00:17:01,000] the,
+- [00:17:01,000 - 00:17:03,000] let's just call them divergent,
+- [00:17:04,000 - 00:17:07,000] by the self energies,
+- [00:17:07,000 - 00:17:13,000] self energy of self mass of the Higgs
+- [00:17:16,000 - 00:17:18,000] and prevents the entire,
+- [00:17:18,000 - 00:17:19,000] remember,
+- [00:17:19,000 - 00:17:21,000] all of the masses of the particles
+- [00:17:21,000 - 00:17:22,000] are responses
+- [00:17:22,000 - 00:17:25,000] to this Higgs phenomena
+- [00:17:25,000 - 00:17:28,000] and if the Higgs particle got dragged up
+- [00:17:28,000 - 00:17:29,000] to some very, very high energy
+- [00:17:29,000 - 00:17:31,000] by these divergent Feynman diagrams,
+- [00:17:31,000 - 00:17:33,000] everything would get pulled with it.
+- [00:17:34,000 - 00:17:37,720] and all of the masses of all the ordinary particles
+- [00:17:37,720 - 00:17:41,440] would be way, way up at some enormously high energy,
+- [00:17:41,940 - 00:17:44,300] presumably something like the Planck scale.
+- [00:17:45,520 - 00:17:46,960] So that's the first thing.
+- [00:17:48,580 - 00:17:53,300] It creates the cancellations which control this.
+- [00:17:53,960 - 00:17:55,160] We've talked about that.
+- [00:17:55,160 - 00:18:02,980] Second thing, it gives you candidates for stable
+- [00:18:02,980 - 00:18:10,800] particles which may be important, stable new particles.
+- [00:18:10,940 - 00:18:15,050] It gives you candidates for new kinds of particles which
+- [00:18:15,050 - 00:18:19,160] could play various roles in physics, in particular dark matter.
+- [00:18:20,140 - 00:18:22,130] Dark matter is not dark energy.
+- [00:18:22,130 - 00:18:24,120] Dark matter is believed to be particles.
+- [00:18:24,120 - 00:18:26,159] And it's believed to be particles
+- [00:18:26,159 - 00:18:28,199] which have not been detected yet.
+- [00:18:29,360 - 00:18:33,519] Saying they've not been detected yet probably means they're
+- [00:18:33,519 - 00:18:37,679] very heavy, at least by the scale of current experiments.
+- [00:18:41,879 - 00:18:44,209] Supersymmetric particles, when they
+- [00:18:44,209 - 00:18:46,540] decay, will always decay.
+- [00:18:46,760 - 00:18:48,719] There are particles, the ordinary
+- [00:18:48,719 - 00:18:50,679] particles, and there are their partners.
+- [00:18:53,399 - 00:18:54,040] Particles...
+- [00:18:54,040 - 00:18:54,080] Particles...
+- [00:18:54,120 - 00:18:55,600] and partners.
+- [00:18:58,800 - 00:19:00,910] If an ordinary particle is a
+- [00:19:00,910 - 00:19:03,020] fermion, its partner is a boson.
+- [00:19:03,100 - 00:19:04,730] If an ordinary particle is a
+- [00:19:04,730 - 00:19:06,360] boson, then its partner is a fermion.
+- [00:19:07,060 - 00:19:08,700] So you actually separate the
+- [00:19:08,700 - 00:19:10,340] world into two kinds of particles,
+- [00:19:11,300 - 00:19:13,609] those which you ordinarily think of
+- [00:19:13,609 - 00:19:15,919] and those which are their superpartners.
+- [00:19:16,760 - 00:19:20,280] Now whenever a superpartner decays...
+- [00:19:20,280 - 00:19:22,879] Here's a superpartner. It's an eno of some sort.
+- [00:19:23,320 - 00:19:24,040] A Higgs eno.
+- [00:19:24,040 - 00:19:25,399] Or an eno.
+- [00:19:25,820 - 00:19:26,740] A Higgs eno.
+- [00:19:26,960 - 00:19:27,780] Or a glueno.
+- [00:19:28,080 - 00:19:28,940] Or a photeno.
+- [00:19:29,560 - 00:19:31,260] One of the supersymmetric particles
+- [00:19:31,260 - 00:19:32,960] which have not been detected yet.
+- [00:19:33,560 - 00:19:36,719] Whenever it decays, it gives off
+- [00:19:36,719 - 00:19:39,879] an ordinary particle plus another supersymmetric partner.
+- [00:19:40,879 - 00:19:42,780] Supersymmetric partners don't go away.
+- [00:19:43,520 - 00:19:45,980] That means there's always going to be...
+- [00:19:45,980 - 00:19:48,660] If you start with a partner,
+- [00:19:48,660 - 00:19:51,340] you'll wind up with a partner.
+- [00:19:52,560 - 00:19:54,020] You can't get rid of them.
+- [00:19:54,040 - 00:19:55,540] You can't get rid of them.
+- [00:19:56,940 - 00:20:01,720] There's always one of minimum energy which is stable.
+- [00:20:03,159 - 00:20:06,199] The one of minimum energy which is stable
+- [00:20:06,199 - 00:20:09,240] is usually called the LSP, the lightest superpartner.
+- [00:20:09,780 - 00:20:11,260] And it can't decay easily.
+- [00:20:11,700 - 00:20:12,520] It can't decay...
+- [00:20:12,520 - 00:20:14,329] Well, in principle, perhaps it
+- [00:20:14,329 - 00:20:16,139] can decay, but that's another story.
+- [00:20:16,300 - 00:20:17,899] Supergravity, all sorts of complexity.
+- [00:20:18,899 - 00:20:23,040] But the simple story is that the lightest superpartner
+- [00:20:23,040 - 00:20:24,540] will not decay.
+- [00:20:25,220 - 00:20:26,910] Now, whatever dark matter particles are,
+- [00:20:26,910 - 00:20:28,600] they're believed to be rather heavy.
+- [00:20:30,040 - 00:20:32,659] Maybe a TEV, something like that.
+- [00:20:33,639 - 00:20:36,100] Why don't they decay to ordinary particles?
+- [00:20:36,280 - 00:20:37,560] Something must prevent them
+- [00:20:37,560 - 00:20:38,840] from decaying to ordinary particles.
+- [00:20:38,960 - 00:20:40,260] How do we know they don't decay?
+- [00:20:40,760 - 00:20:43,360] Because they've been around for about 10 billion years.
+- [00:20:43,440 - 00:20:44,200] That's how we know.
+- [00:20:44,820 - 00:20:46,960] That doesn't mean they'll never decay.
+- [00:20:47,260 - 00:20:49,790] But it sure means that they don't decay
+- [00:20:49,790 - 00:20:52,320] at the rate that you might have expected.
+- [00:20:53,040 - 00:20:54,659] They've been around for a long enough time to decay.
+- [00:20:55,300 - 00:20:56,820] Maybe they don't disco, or in fact, they can.
+- [00:20:58,340 - 00:20:59,020] People buy...
+- [00:21:00,379 - 00:21:01,320] Easy money.
+- [00:21:02,600 - 00:21:03,500] Probably anything.
+- [00:21:04,080 - 00:21:04,840] They don't exist...
+- [00:21:06,260 - 00:21:08,040] because telephonicядstoury is basically dark matter 코든
+- [00:21:12,780 - 00:21:14,520] and if people fast,
+- [00:21:15,000 - 00:21:16,800] if you study человек��
+- [00:21:17,420 - 00:21:18,659] or more historically,
+- [00:21:19,139 - 00:21:19,740] iue-
+- [00:21:20,659 - 00:21:21,820] 밝 Đâyound
+- [00:21:22,300 - 00:21:27,820] know and the rough orders of magnitude
+- [00:21:27,820 - 00:21:33,340] of the masses of these particles their
+- [00:21:33,340 - 00:21:35,560] properties and so forth seem to
+- [00:21:35,560 - 00:21:37,780] be good respectable candidates for dark matter
+- [00:21:37,780 - 00:21:41,469] so that's the second fact another way to
+- [00:21:41,469 - 00:21:45,159] say it is look we already know that
+- [00:21:45,159 - 00:21:47,389] there are particles that have not
+- [00:21:47,389 - 00:21:49,620] yet been discovered in nature by discovered
+- [00:21:49,620 - 00:21:51,600] I mean discovered in the laboratory
+- [00:21:51,600 - 00:21:53,580] or even discovered in cosmic rays or
+- [00:21:53,580 - 00:21:55,710] anything like that the graviton
+- [00:21:55,710 - 00:21:57,840] is one of them but that's
+- [00:21:57,840 - 00:22:00,539] we're not thinking about that there's
+- [00:22:00,539 - 00:22:03,239] the dark matter particles so whatever
+- [00:22:03,239 - 00:22:06,479] the dark matter particles are they do
+- [00:22:06,479 - 00:22:09,719] require another we use the word sector
+- [00:22:09,719 - 00:22:13,079] another another sector of particle
+- [00:22:13,079 - 00:22:16,439] physics they're very weakly coupled to
+- [00:22:16,439 - 00:22:17,879] our kind of matter we
+- [00:22:17,879 - 00:22:19,320] know that otherwise if they were
+- [00:22:19,320 - 00:22:19,460] strong enough to be strong enough to be
+- [00:22:19,460 - 00:22:19,600] strong enough to be strong enough to be
+- [00:22:19,600 - 00:22:21,909] strongly coupled what would happen if
+- [00:22:21,909 - 00:22:24,219] when they banged into a nucleus they
+- [00:22:24,219 - 00:22:28,049] would be slowed down by or
+- [00:22:28,049 - 00:22:31,879] let's suppose they were electrically charged
+- [00:22:31,879 - 00:22:35,539] electrically charged and not tremendously
+- [00:22:35,539 - 00:22:39,199] heavy what would happen to
+- [00:22:39,199 - 00:22:42,509] them to the dark matter in the galaxy
+- [00:22:42,509 - 00:22:45,820] the answer is it would scatter off the
+- [00:22:45,820 - 00:22:49,300] ordinary matter and in scattering off the ordinary
+- [00:22:49,300 - 00:22:52,390] matter the enormously large halo which is
+- [00:22:52,390 - 00:22:55,480] much bigger than the galaxy the large
+- [00:22:55,480 - 00:22:58,150] halo of dark matter would get scattered
+- [00:22:58,150 - 00:23:00,820] and when it gets scattered it would lose
+- [00:23:00,820 - 00:23:04,239] energy and fall in and basically coincide
+- [00:23:04,239 - 00:23:07,659] and be at the same place as the
+- [00:23:07,659 - 00:23:09,849] ordinary matter so whatever it is this
+- [00:23:09,849 - 00:23:12,040] dark matter it whizzes back and forth
+- [00:23:12,040 - 00:23:13,530] through the ordinary matter through the
+- [00:23:13,530 - 00:23:15,020] plane of the galaxy through all
+- [00:23:15,020 - 00:23:17,110] ordinary stuff without interacting
+- [00:23:17,110 - 00:23:19,200] with it much super symmetry
+- [00:23:19,200 - 00:23:22,470] provides good candidates for this kind of
+- [00:23:22,470 - 00:23:25,740] thing so that's another reason not to
+- [00:23:25,740 - 00:23:30,130] believe it but to think this is
+- [00:23:30,130 - 00:23:34,520] a interesting direction to explore and the
+- [00:23:34,520 - 00:23:37,870] last reason is extremely interesting we've
+- [00:23:37,870 - 00:23:41,220] talked about it a little bit we've
+- [00:23:41,220 - 00:23:44,340] talked about renormalization of coupling constants
+- [00:23:44,340 - 00:23:47,460] I told you for example that
+- [00:23:47,460 - 00:23:48,900] electric charge
+- [00:23:48,900 - 00:23:52,740] of an electron at small distances is
+- [00:23:52,740 - 00:23:56,580] larger than the electric charge at large
+- [00:23:56,580 - 00:24:00,020] distances this is this phenomenon of
+- [00:24:00,020 - 00:24:03,460] screening it's also the phenomenon of
+- [00:24:03,460 - 00:24:06,540] renormalization renormalization changes the
+- [00:24:06,540 - 00:24:09,620] input parameters to the output
+- [00:24:09,620 - 00:24:12,380] parameters the input parameters generally
+- [00:24:12,380 - 00:24:15,140] govern physics at very small
+- [00:24:15,140 - 00:24:18,900] distances or equivalently very high energy
+- [00:24:18,900 - 00:24:22,740] and the output parameters govern physics
+- [00:24:22,740 - 00:24:26,580] at lower more accessible energy in its
+- [00:24:26,580 - 00:24:29,010] not the same so in particular
+- [00:24:29,010 - 00:24:31,440] there are other coupling constant such as
+- [00:24:31,440 - 00:24:34,070] the electric charge fine structure constant
+- [00:24:34,070 - 00:24:36,700] are which is just a square of
+- [00:24:36,700 - 00:24:38,460] the electric charge of the electron and some units
+- [00:24:38,460 - 00:24:42,520] it's a dimensionless quantity and if you were to plot
+- [00:24:42,520 - 00:24:46,580] the electric charges I'm not familiar with this and if you'reertoplot
+- [00:24:46,580 - 00:24:47,340] electric charge of the electron in some units it's a dimensionless quantity and if you were to
+- [00:24:47,340 - 00:24:48,100] plot the electric charge of an fue нов declare sigma an electric charge that would expand Nanohom вариант
+- [00:24:48,100 - 00:24:52,600] charge, let's call it alpha, the fine
+- [00:24:52,600 - 00:24:57,100] structure constant, it would have the property that
+- [00:24:57,100 - 00:25:02,190] as a function of energy or one over
+- [00:25:02,190 - 00:25:07,280] wavelength, smaller and smaller distances or larger and
+- [00:25:07,280 - 00:25:11,400] larger energy, then the fine
+- [00:25:11,400 - 00:25:15,520] structure constant would increase somehow.
+- [00:25:15,520 - 00:25:21,200] The fine structure constant would increase.
+- [00:25:21,200 - 00:25:26,840] It's usual to plot the inverse, the inverse
+- [00:25:26,840 - 00:25:32,480] alpha to the minus one, because in various
+- [00:25:32,480 - 00:25:36,290] approximations the inverse is a nice straight
+- [00:25:36,290 - 00:25:40,100] line and it would decrease, the inverse coupling
+- [00:25:40,100 - 00:25:42,760] constant would decrease at high energies.
+- [00:25:42,760 - 00:25:45,060] That is exactly this phenomena.
+- [00:25:45,060 - 00:25:48,479] That the point electron surrounds itself with
+- [00:25:48,479 - 00:25:51,899] opposite charge and that opposite charge sort
+- [00:25:51,899 - 00:25:57,120] of lowers the charge at large distances and so forth.
+- [00:25:57,120 - 00:25:58,560] There are other coupling constants.
+- [00:25:58,560 - 00:26:00,729] The two other important coupling constants
+- [00:26:00,729 - 00:26:02,899] are the coupling constants of the electroweak
+- [00:26:02,899 - 00:26:05,540] theory.
+- [00:26:05,540 - 00:26:09,359] The alpha here is the coupling constant
+- [00:26:09,359 - 00:26:13,179] that's associated with the emission of a photon.
+- [00:26:13,179 - 00:26:15,040] That's the electric charge.
+- [00:26:15,040 - 00:26:16,040] The photon.
+- [00:26:16,040 - 00:26:17,040] Alpha.
+- [00:26:17,040 - 00:26:18,040] All right?
+- [00:26:18,040 - 00:26:20,639] There is the emission, for example, of a W boson.
+- [00:26:20,639 - 00:26:26,489] The W boson is governed by another
+- [00:26:26,489 - 00:26:32,340] coupling constant, which is the SU coupling constant
+- [00:26:32,340 - 00:26:35,960] of the electroweak theory.
+- [00:26:35,960 - 00:26:39,640] And if you calculate it, if you calculate
+- [00:26:39,640 - 00:26:43,320] it using the rules of quantum field theory,
+- [00:26:43,320 - 00:26:44,159] number one.
+- [00:26:44,159 - 00:26:45,040] And number two.
+- [00:26:45,040 - 00:26:46,040] Let me show you some experiment…
+- [00:26:46,040 - 00:26:49,000] Incidentally, experimental data tells you what the
+- [00:26:49,000 - 00:26:51,960] value of these constants is at low
+- [00:26:51,960 - 00:26:52,960] energy.
+- [00:26:52,960 - 00:26:56,020] At some value low energy.
+- [00:26:56,020 - 00:27:00,460] 10 GeV or some appropriate energy.
+- [00:27:00,460 - 00:27:03,899] These constants are determined by experiment.
+- [00:27:03,899 - 00:27:05,180] All right?
+- [00:27:05,180 - 00:27:09,700] The electroweak coupling constant is a little bit larger.
+- [00:27:09,700 - 00:27:13,720] That means its inverse is a little bit smaller.
+- [00:27:13,720 - 00:27:14,720] And…
+- [00:27:14,720 - 00:27:18,760] also has a kind of screening phenomenon associated with it,
+- [00:27:19,900 - 00:27:22,480] and it also varies more or less, the
+- [00:27:22,480 - 00:27:25,060] inverse of it also varies more or less linearly,
+- [00:27:25,420 - 00:27:28,620] and they happen to cross at a certain point.
+- [00:27:28,720 - 00:27:31,560] Now, when I say when they cross, nobody
+- [00:27:31,560 - 00:27:34,400] has ever measured physics at such a high energy.
+- [00:27:35,280 - 00:27:37,890] These trajectories, not trajectories, these
+- [00:27:37,890 - 00:27:40,500] curves are very, very shallow.
+- [00:27:40,500 - 00:27:43,500] They vary appreciably only over
+- [00:27:43,500 - 00:27:46,500] very, very large scales of energy.
+- [00:27:47,780 - 00:27:50,560] The coupling constants only vary logarithmically.
+- [00:27:50,680 - 00:27:51,700] They vary very slowly.
+- [00:27:52,720 - 00:27:55,080] And so if you were to
+- [00:27:55,080 - 00:27:57,440] plot the known electroweak coupling constant
+- [00:27:57,440 - 00:27:59,760] except follow its renormalization as a
+- [00:27:59,760 - 00:28:02,080] function of smaller and smaller distances
+- [00:28:02,080 - 00:28:03,830] or higher and higher energies,
+- [00:28:03,830 - 00:28:05,580] you would find that they cross.
+- [00:28:06,420 - 00:28:07,580] And where do they cross?
+- [00:28:07,580 - 00:28:10,460] They cross up at some very high energy.
+- [00:28:10,500 - 00:28:14,450] Roughly somewhere in the neighborhood of about 10
+- [00:28:14,450 - 00:28:18,400] to the 15th, 10 to the 16th GeV.
+- [00:28:19,240 - 00:28:21,940] All right, that's 10 to the 15th or 10
+- [00:28:21,940 - 00:28:24,640] to the 16th times the mass of a proton,
+- [00:28:25,240 - 00:28:31,440] way, way, way beyond any experiment that is likely
+- [00:28:31,440 - 00:28:37,640] to happen in the next million years, I would say.
+- [00:28:38,040 - 00:28:38,940] Well, I don't know.
+- [00:28:39,380 - 00:28:40,480] That's an approach.
+- [00:28:41,080 - 00:28:42,280] All right, now there's one
+- [00:28:42,280 - 00:28:43,480] more coupling constant which is interesting.
+- [00:28:44,260 - 00:28:47,780] And it's the coupling constant for emitting a gluon.
+- [00:28:48,080 - 00:28:49,820] This is electroweak.
+- [00:28:54,280 - 00:28:55,790] I don't know, that coupling constant, just,
+- [00:28:55,790 - 00:28:57,300] I don't know what to call it.
+- [00:28:57,360 - 00:28:59,200] Call it alpha electroweak.
+- [00:29:00,900 - 00:29:02,660] All right, there's one more coupling constant,
+- [00:29:02,660 - 00:29:04,750] and that's the coupling constant for
+- [00:29:04,750 - 00:29:06,840] a quark to emit a gluon.
+- [00:29:06,840 - 00:29:10,629] That's a much bigger coupling constant,
+- [00:29:10,629 - 00:29:14,419] which means its inverse is smaller.
+- [00:29:14,419 - 00:29:19,749] But it has the odd property, because of the
+- [00:29:19,749 - 00:29:25,080] properties of quantum with the nonlinear properties of quantum chromodynamics,
+- [00:29:25,639 - 00:29:27,619] that this screening phenomena
+- [00:29:27,619 - 00:29:29,600] happens in the opposite direction.
+- [00:29:30,720 - 00:29:33,179] Instead, roughly speaking, this is
+- [00:29:33,179 - 00:29:35,639] a metaphor for the real thing,
+- [00:29:36,220 - 00:29:36,319] but roughly speaking, this is
+- [00:29:36,319 - 00:29:36,419] a metaphor for the real thing.
+- [00:29:36,420 - 00:29:42,120] But roughly speaking, a bit of color, a color charge,
+- [00:29:42,480 - 00:29:45,740] creates around it a color charge of the same sign.
+- [00:29:46,840 - 00:29:50,300] And that increases its charge at large distances,
+- [00:29:50,640 - 00:29:52,880] decreases its charge at small distances.
+- [00:29:53,560 - 00:29:55,400] That's called asymptotic freedom.
+- [00:29:56,000 - 00:29:59,580] That at small distances, the
+- [00:29:59,580 - 00:30:03,160] quantum chromodynamics coupling constant gets smaller,
+- [00:30:03,400 - 00:30:05,800] not bigger, as the opposite behavior from,
+- [00:30:05,800 - 00:30:07,800] from electrical forces.
+- [00:30:07,800 - 00:30:10,430] And that means that this coupling
+- [00:30:10,430 - 00:30:13,060] constant, the inverse coupling constant increases.
+- [00:30:15,220 - 00:30:17,510] Now, we haven't talked very much, maybe we'll
+- [00:30:17,510 - 00:30:19,800] get to it a little bit, about unified theories.
+- [00:30:20,500 - 00:30:24,740] Unified theories attempt to put into one
+- [00:30:24,740 - 00:30:28,980] basic framework all three of these interactions.
+- [00:30:29,680 - 00:30:31,770] To think of the photon, the W
+- [00:30:31,770 - 00:30:33,860] bosons, the Z bosons, and the gluon.
+- [00:30:33,860 - 00:30:34,879] And that's a very important thing.
+- [00:30:34,879 - 00:30:34,960] And that's a very important thing.
+- [00:30:34,960 - 00:30:35,020] And that's a very important thing.
+- [00:30:35,020 - 00:30:35,100] And that's a very important thing.
+- [00:30:35,100 - 00:30:35,159] And that's a very important thing.
+- [00:30:35,159 - 00:30:35,180] And that's a very important thing.
+- [00:30:35,180 - 00:30:37,140] But it has to penetration.
+- [00:30:37,140 - 00:30:37,860] There are two possible virtuos.
+- [00:30:37,880 - 00:30:38,820] They are the v dangerous ones.
+- [00:30:38,820 - 00:30:39,280] Andוס one,
+- [00:30:39,320 - 00:30:39,940] and this is v oui in the Bergman equation.
+- [00:30:39,980 - 00:30:41,300] Is positive vibration is silence.
+- [00:30:41,340 - 00:30:42,660] 22nant escape signals.
+- [00:30:42,920 - 00:31:04,440] But the 2 are calledנ
+- [00:31:04,500 - 00:31:04,780] nt,
+- [00:31:04,840 - 00:31:05,000] and hustle reins,
+- [00:31:05,000 - 00:31:05,100] and the gluten Johnrones,
+- [00:31:05,100 - 00:31:05,140] workingработ dealing and working on
+- [00:31:05,140 - 00:31:05,180] unity2na g Entsk Bravo 95 onlyыв
+- [00:31:05,180 - 00:31:08,060] breaking splits these three coupling constants.
+- [00:31:08,060 - 00:31:10,940] Alright, so if you follow the
+- [00:31:10,940 - 00:31:14,660] strong coupling constant, it also tracks
+- [00:31:14,660 - 00:31:18,380] and it crosses the other two someplace.
+- [00:31:18,380 - 00:31:23,200] If you take just the standard model,
+- [00:31:23,200 - 00:31:28,020] the unmodified standard model, and you take
+- [00:31:28,020 - 00:31:32,050] these three coupling constants, they have a
+- [00:31:32,050 - 00:31:36,080] tendency to more or less cross each
+- [00:31:36,080 - 00:31:38,979] other at more or less the same point,
+- [00:31:38,979 - 00:31:41,879] but I think less is a better description
+- [00:31:41,879 - 00:31:44,989] than more. They miss each other
+- [00:31:44,989 - 00:31:48,100] by a pretty significant margin, even though
+- [00:31:48,100 - 00:31:51,650] the tendency is for them to sort
+- [00:31:51,650 - 00:31:55,200] of point in a tempting way, an attempting
+- [00:31:55,200 - 00:31:57,740] way to point toward the same value over here.
+- [00:31:57,740 - 00:31:58,020] Okay.
+- [00:31:58,020 - 00:32:00,990] So that leads to the speculation
+- [00:32:00,990 - 00:32:03,960] that really there is one primordial coupling
+- [00:32:03,960 - 00:32:07,440] constant, spontaneous symmetry breaking, which
+- [00:32:07,440 - 00:32:10,920] is the symmetry which relates
+- [00:32:10,920 - 00:32:13,870] these three phenomena, is spontaneously broken,
+- [00:32:13,870 - 00:32:16,820] causes them to split, but up at
+- [00:32:16,820 - 00:32:20,250] some very high energies, perhaps they
+- [00:32:20,250 - 00:32:23,680] come together and form a single coherent
+- [00:32:23,680 - 00:32:25,840] unified theory. That's the hope. That's
+- [00:32:25,840 - 00:32:28,000] an idea. That's a very tempting idea.
+- [00:32:28,000 - 00:32:32,230] There is some substance to it. But
+- [00:32:32,230 - 00:32:36,460] the problem is, what you'd really like
+- [00:32:36,460 - 00:32:39,560] is these three coupling constants to join at
+- [00:32:39,560 - 00:32:42,660] a point. You'd like at some very high
+- [00:32:42,660 - 00:32:44,780] energy these three coupling constants to
+- [00:32:44,780 - 00:32:46,900] come together and tell you that there
+- [00:32:46,900 - 00:32:50,250] really is a single phenomena at
+- [00:32:50,250 - 00:32:53,600] extremely small distances, which is unadulterated
+- [00:32:53,600 - 00:32:55,780] by this spontaneous symmetry breaking. Spontaneous
+- [00:32:55,780 - 00:32:57,960] symmetry breaking always is a contiguous
+- [00:32:57,960 - 00:33:00,530] has the effect of influencing physics more
+- [00:33:00,530 - 00:33:03,100] at low energies than at high energies.
+- [00:33:03,100 - 00:33:05,200] That's a common denominator
+- [00:33:05,200 - 00:33:07,300] for spontaneous symmetry breaking.
+- [00:33:07,300 - 00:33:09,430] It tends to affect physics at
+- [00:33:09,430 - 00:33:11,560] low energies more than at high energies.
+- [00:33:11,560 - 00:33:14,860] So the hope was that these coupling constants
+- [00:33:14,860 - 00:33:18,160] would come together at some point, but they don't.
+- [00:33:18,160 - 00:33:23,960] When supersymmetry is added into the brew,
+- [00:33:23,960 - 00:33:29,760] then the Feynman diagrams, which define the
+- [00:33:29,760 - 00:33:34,480] way that these constants vary, is somewhat modified.
+- [00:33:34,480 - 00:33:35,680] What is it modified by?
+- [00:33:35,680 - 00:33:37,730] It's modified—let me show you a kind
+- [00:33:37,730 - 00:33:39,780] of Feynman diagram that, among other things,
+- [00:33:39,780 - 00:33:42,720] affects the electric charge.
+- [00:33:42,720 - 00:33:45,060] The electric charge is, for
+- [00:33:45,060 - 00:33:47,400] example, affected by electron-positron loops.
+- [00:33:47,400 - 00:33:48,160] Okay?
+- [00:33:48,160 - 00:33:49,580] Like that.
+- [00:33:49,580 - 00:33:52,560] Electron-positron loops inside a photon.
+- [00:33:52,560 - 00:33:53,360] Here's a photon.
+- [00:33:53,360 - 00:33:56,340] Here's a photon.
+- [00:33:56,340 - 00:33:58,020] This could be a photon
+- [00:33:58,020 - 00:33:59,700] exchanged between two charged particles.
+- [00:33:59,700 - 00:34:03,960] This could be a proton and another proton.
+- [00:34:03,960 - 00:34:06,840] The repulsive force between two protons.
+- [00:34:06,840 - 00:34:08,999] If you bring the protons very close together—
+- [00:34:08,999 - 00:34:11,159] protons are not a good example because protons
+- [00:34:11,159 - 00:34:13,440] have a size of their own.
+- [00:34:13,440 - 00:34:15,799] So let's take a very
+- [00:34:15,799 - 00:34:18,159] small electron, a pair of electrons.
+- [00:34:18,159 - 00:34:21,520] And you look at the force between the electrons.
+- [00:34:21,520 - 00:34:24,730] If the distance between the electrons is large enough
+- [00:34:24,730 - 00:34:27,940] to allow this kind of loop to be present,
+- [00:34:27,940 - 00:34:30,530] then it affects the electric charge,
+- [00:34:30,530 - 00:34:33,120] makes it smaller—sorry, yeah, makes it smaller
+- [00:34:33,120 - 00:34:36,479] than it would be if you
+- [00:34:36,479 - 00:34:39,839] brought the electrons very close together.
+- [00:34:39,839 - 00:34:42,319] When the electrons are very close together,
+- [00:34:42,319 - 00:34:44,799] there's no room between them for this kind
+- [00:34:44,799 - 00:34:46,639] of virtual loop to take place.
+- [00:34:46,639 - 00:34:47,500] And just—basically, there's no room.
+- [00:34:47,500 - 00:34:48,000] Okay?
+- [00:34:48,000 - 00:34:48,040] Okay.
+- [00:34:48,040 - 00:34:48,139] Okay.
+- [00:34:48,139 - 00:34:49,819] And that's why the single
+- [00:34:49,819 - 00:34:51,500] Feynman diagram by itself is present.
+- [00:34:51,500 - 00:34:52,299] All right?
+- [00:34:52,299 - 00:34:55,769] So the source of the variation in these
+- [00:34:55,769 - 00:34:59,240] couplings—the variation in the couplings is called running.
+- [00:34:59,240 - 00:35:02,859] The couplings are running coupling constants.
+- [00:35:02,859 - 00:35:06,940] The source of the variation is Feynman diagrams.
+- [00:35:06,940 - 00:35:09,899] When you add superpartners into the
+- [00:35:09,899 - 00:35:12,859] brew, you generate new Feynman diagrams.
+- [00:35:12,859 - 00:35:15,419] For example, the Feynman diagram that I just
+- [00:35:15,419 - 00:35:17,980] drew, which has an electron and a positive
+- [00:35:17,980 - 00:35:21,600] positron in it could be replaced by
+- [00:35:21,600 - 00:35:25,220] a similar Feynman diagram in which the superpartner
+- [00:35:25,220 - 00:35:29,430] of the electron goes around in a loop. The
+- [00:35:29,430 - 00:35:33,640] net upshot is that the way these curves vary
+- [00:35:33,640 - 00:35:38,690] is affected by supersymmetry. Now, it's a striking
+- [00:35:38,690 - 00:35:43,740] fact that if you were to take every
+- [00:35:43,740 - 00:35:47,819] ordinary particle and add to it a
+- [00:35:47,819 - 00:35:51,899] superpartner with the same properties except the opposite
+- [00:35:51,899 - 00:35:56,959] fermion boson-ness of the particle, guess what?
+- [00:35:56,959 - 00:36:02,020] Then these three curves cross at a point.
+- [00:36:02,020 - 00:36:04,669] And they cross at a point to a very good
+- [00:36:04,669 - 00:36:07,319] accuracy of about 1%. Now, when I say they cross at
+- [00:36:07,319 - 00:36:10,299] a point, as I said, nobody has ever measured
+- [00:36:10,299 - 00:36:13,279] anything up here. What you do is you measure
+- [00:36:13,279 - 00:36:13,720] down here.
+- [00:36:13,720 - 00:36:16,710] You measure down here. You measure down here.
+- [00:36:16,710 - 00:36:19,700] You take the theory, whatever the theory is.
+- [00:36:19,700 - 00:36:22,870] You start calculating Feynman diagrams, and
+- [00:36:22,870 - 00:36:26,040] you extrapolate. The extrapolation of the
+- [00:36:26,040 - 00:36:30,380] coupling constants is to within the accuracy
+- [00:36:30,380 - 00:36:34,720] of the calculations to about 1%, the three
+- [00:36:34,720 - 00:36:37,720] coupling constants cross at a point. There's
+- [00:36:37,720 - 00:36:40,720] no trick in making the two coupling constants
+- [00:36:40,720 - 00:36:43,259] cross at a point. All right? That's not a trick.
+- [00:36:43,260 - 00:36:47,940] OK? The fact that that energy is way
+- [00:36:47,940 - 00:36:52,620] up high, that's interesting. But to make three coupling
+- [00:36:52,620 - 00:36:56,020] constants or three things cross at a point,
+- [00:36:56,020 - 00:36:59,420] that either requires luck. In this case, I
+- [00:36:59,420 - 00:37:02,960] would say bad luck if it's just luck, because
+- [00:37:02,960 - 00:37:06,500] we don't want to be misled by luck. So it
+- [00:37:06,500 - 00:37:08,880] either requires an accident of about one part and
+- [00:37:08,880 - 00:37:11,260] 10 to the 2. Or it really requires a couple
+- [00:37:11,260 - 00:37:11,760] of things. So it's either a coincidence, or
+- [00:37:11,760 - 00:37:12,260] it's a coincidence. And that's the way it's
+- [00:37:12,260 - 00:37:12,760] going to be. And that's the way it's going to
+- [00:37:12,760 - 00:37:13,260] be. And that's the way it's going to be. And
+- [00:37:13,260 - 00:37:13,760] that's the way it's going to be. And that's
+- [00:37:13,760 - 00:37:14,260] the way it's going to be. And again if you
+- [00:37:14,260 - 00:37:14,760] want to interpret that pain neck by
+- [00:37:14,760 - 00:37:15,260] thinking that there's a kind of probability advantage
+- [00:37:15,260 - 00:37:16,260] over the prediction value of grabbed collapse ...
+- [00:37:16,260 - 00:37:18,760] ... you can do both
+- [00:37:18,760 - 00:37:21,260] by advice on the interesting point.
+- [00:37:21,260 - 00:37:23,000] If you look and make your path close,
+- [00:37:23,000 - 00:37:24,740] as you go, over theatta, which off the middle
+- [00:37:24,740 - 00:37:26,050] here, or over this one here, the red
+- [00:37:26,050 - 00:37:27,360] dot and the green dot are surprised data. They
+- [00:37:27,360 - 00:37:29,870] want to be more useable on them. But
+- [00:37:29,870 - 00:37:32,380] at the same time, they don't think that they're
+- [00:37:32,380 - 00:37:33,600] going to be the z wield of the clock.
+- [00:37:40,020 - 00:37:41,260] How about either?
+- [00:37:41,260 - 00:37:42,180] Mr. I.
+- [00:37:42,180 - 00:37:42,760] OK, you are welcome.
+- [00:37:42,760 - 00:37:43,260] Less and less.
+- [00:37:43,260 - 00:37:45,820] nobody's ever measured them, so to say
+- [00:37:45,820 - 00:37:48,380] what they do, do, and don't do
+- [00:37:48,380 - 00:37:51,620] is a matter of theoretical argument.
+- [00:37:52,340 - 00:37:55,010] But the theoretical argument would be that
+- [00:37:55,010 - 00:37:57,680] once you get to high enough energy
+- [00:37:57,680 - 00:38:00,240] that the effect of the
+- [00:38:00,240 - 00:38:02,800] spontaneous symmetry breaking is gone,
+- [00:38:03,400 - 00:38:05,450] then it's believed that these would
+- [00:38:05,450 - 00:38:07,500] just join into a single coupling constant.
+- [00:38:07,680 - 00:38:07,760] Yeah?
+- [00:38:09,560 - 00:38:12,260] The extrapolation you talked about adding the supersymmetry,
+- [00:38:12,260 - 00:38:14,320] was that using exact supersymmetry?
+- [00:38:14,840 - 00:38:15,540] So the masses...
+- [00:38:15,540 - 00:38:17,660] No, no, no, it is not.
+- [00:38:18,960 - 00:38:19,600] Right.
+- [00:38:21,720 - 00:38:25,520] Okay, let me answer the question the following way.
+- [00:38:26,480 - 00:38:29,160] If the superpartners were split,
+- [00:38:30,080 - 00:38:33,580] in other words, the superpartners were exceedingly heavy,
+- [00:38:34,820 - 00:38:39,820] so heavy that their contribution to these loops
+- [00:38:39,820 - 00:38:41,820] would not become important until...
+- [00:38:41,820 - 00:38:42,220] Very, very...
+- [00:38:42,260 - 00:38:44,640] Very, very high energy, then they would miss each other.
+- [00:38:45,640 - 00:38:49,240] You have to assume that the supersymmetric particles
+- [00:38:49,240 - 00:38:50,920] are not too heavy for
+- [00:38:50,920 - 00:38:52,600] this to be the right picture.
+- [00:38:53,420 - 00:38:54,800] How not too heavy?
+- [00:38:55,420 - 00:38:58,160] Not too far from the experimental range.
+- [00:38:59,300 - 00:39:01,780] Now, this all sounds like a marvelous accident,
+- [00:39:01,920 - 00:39:04,660] the sort of things that people cook
+- [00:39:04,660 - 00:39:07,400] up to get funding for big accelerators,
+- [00:39:08,020 - 00:39:12,240] but in this case, these calculations are quite serious,
+- [00:39:12,260 - 00:39:13,080] quite honest,
+- [00:39:13,740 - 00:39:17,680] and it really does look like with the superpartners,
+- [00:39:17,820 - 00:39:19,580] there's a chance this is called unification,
+- [00:39:20,280 - 00:39:22,080] if these coupling constants come together.
+- [00:39:22,080 - 00:39:24,080] This is the third...
+- [00:39:24,720 - 00:39:29,080] Let's call it higher precision...
+- [00:39:30,760 - 00:39:33,980] Precision.
+- [00:39:34,080 - 00:39:34,840] How do you spell precision?
+- [00:39:35,100 - 00:39:35,540] Like that?
+- [00:39:36,680 - 00:39:38,560] Higher precision unification.
+- [00:39:38,560 - 00:39:38,760] Unification.
+- [00:39:42,260 - 00:39:44,080] All right, so that's the other thing that's at stake.
+- [00:39:44,720 - 00:39:47,010] One last point is that if
+- [00:39:47,010 - 00:39:49,300] you were also to plot on this
+- [00:39:49,300 - 00:39:51,420] the gravitational coupling constant,
+- [00:39:52,640 - 00:39:56,680] the gravitational coupling constant gets...
+- [00:39:56,680 - 00:39:59,560] How would the gravitational coupling constant look?
+- [00:40:00,080 - 00:40:01,840] The gravitational coupling constant,
+- [00:40:01,980 - 00:40:04,040] which corresponds to the gravitational force,
+- [00:40:04,140 - 00:40:07,320] let's say, between a pair of electrons at low energies,
+- [00:40:07,320 - 00:40:11,060] that coupling constant is incredibly small, right?
+- [00:40:11,180 - 00:40:11,320] The gravitational force...
+- [00:40:11,320 - 00:40:12,240] The gravitational force...
+- [00:40:12,240 - 00:40:13,700] The gravitational force between two electrons
+- [00:40:13,700 - 00:40:15,799] at a distance of an atomic diameter,
+- [00:40:16,100 - 00:40:17,839] or even a nuclear diameter,
+- [00:40:18,000 - 00:40:23,740] or even any reasonable range,
+- [00:40:24,040 - 00:40:27,299] that gravitational force is far, far smaller
+- [00:40:27,299 - 00:40:29,540] than the electromagnetic force.
+- [00:40:29,939 - 00:40:32,819] That means if I plotted the gravitational constant on here,
+- [00:40:33,359 - 00:40:35,720] it would be way up here somewhere at low energy,
+- [00:40:36,399 - 00:40:40,580] but the gravitational interactions increase
+- [00:40:40,580 - 00:40:41,720] rather...
+- [00:40:42,240 - 00:40:43,299] rapidly with energy.
+- [00:40:43,439 - 00:40:47,080] Do you know why the gravity increases with energy?
+- [00:40:48,459 - 00:40:49,000] Right.
+- [00:40:49,640 - 00:40:50,020] Right.
+- [00:40:50,200 - 00:40:52,959] The more energy you have, the more gravity you have.
+- [00:40:53,560 - 00:40:53,779] All right?
+- [00:40:54,339 - 00:40:54,799] That...
+- [00:40:54,799 - 00:40:58,740] There is no tendency for electromagnetism to do that.
+- [00:40:59,500 - 00:41:01,040] If you have more energy, that
+- [00:41:01,040 - 00:41:02,580] doesn't mean you have more charge.
+- [00:41:03,580 - 00:41:07,299] The charge of the electron might...
+- [00:41:07,299 - 00:41:09,599] This effect here might be considered a
+- [00:41:09,599 - 00:41:11,899] little bit of a variation of the charge,
+- [00:41:12,240 - 00:41:14,240] with energy or distance,
+- [00:41:14,799 - 00:41:17,299] but just in an ordinary sense,
+- [00:41:17,899 - 00:41:19,899] electric charge is not energy,
+- [00:41:20,379 - 00:41:22,979] but gravitational charge is energy.
+- [00:41:23,439 - 00:41:25,680] Therefore, the effect of gravity,
+- [00:41:26,680 - 00:41:29,540] the analogous effect of gravity on particles,
+- [00:41:30,040 - 00:41:32,839] would be something which gets stronger with energy,
+- [00:41:33,180 - 00:41:35,439] and therefore the inverse of gravity,
+- [00:41:35,600 - 00:41:37,439] of the gravitational coupling constant,
+- [00:41:37,979 - 00:41:38,680] would fall.
+- [00:41:40,240 - 00:41:41,879] And in fact, you can also plot
+- [00:41:41,880 - 00:41:44,880] where it would cross these three lines,
+- [00:41:44,880 - 00:41:47,880] and that's not terribly far away.
+- [00:41:50,140 - 00:41:52,640] Actually, it actually crosses fairly
+- [00:41:52,640 - 00:41:55,140] close to this point over here.
+- [00:41:56,580 - 00:42:01,580] And so it's another indication of a common scale
+- [00:42:01,580 - 00:42:06,580] that might be governing the various forces of physics.
+- [00:42:06,580 - 00:42:08,580] A more or less common scale,
+- [00:42:08,580 - 00:42:10,580] but these three really do cross,
+- [00:42:10,580 - 00:42:11,480] and they're very similar.
+- [00:42:11,480 - 00:42:12,980] And they're very similar to each other.
+- [00:42:12,980 - 00:42:14,980] Gravitational forces are a little bit different.
+- [00:42:14,980 - 00:42:16,980] You don't quite know how to compare it.
+- [00:42:17,480 - 00:42:19,480] You don't quite know how to
+- [00:42:19,480 - 00:42:21,480] compare gravity with these three other forces.
+- [00:42:21,480 - 00:42:22,980] So to argue one way or another
+- [00:42:22,980 - 00:42:24,480] whether it crosses at the same point,
+- [00:42:24,480 - 00:42:25,980] that's a little bit dicey.
+- [00:42:25,980 - 00:42:27,980] But the three gauge interactions,
+- [00:42:27,980 - 00:42:29,480] the three...
+- [00:42:33,480 - 00:42:35,480] These really are very similar to each other.
+- [00:42:35,480 - 00:42:35,980] Yeah?
+- [00:42:35,980 - 00:42:36,980] Is there a force...
+- [00:42:36,980 - 00:42:38,980] Regarding the super partners, is there...
+- [00:42:38,980 - 00:42:40,480] Do they fall within these super partners?
+- [00:42:40,480 - 00:42:42,480] Do they fall within these three gauge...
+- [00:42:42,480 - 00:42:44,480] Yeah, they have the same interactions.
+- [00:42:44,480 - 00:42:47,480] They have electric charges.
+- [00:42:47,480 - 00:42:51,480] So the partner of the electron is called this electron.
+- [00:42:51,480 - 00:42:53,480] S for scalar.
+- [00:42:53,480 - 00:42:55,480] S stands for scalar.
+- [00:42:55,480 - 00:42:56,980] And it has exactly the
+- [00:42:56,980 - 00:42:58,480] same electric charge as the electron.
+- [00:42:58,480 - 00:43:01,480] Different mass, but the same electric charge.
+- [00:43:01,480 - 00:43:04,480] The partners of a quark,
+- [00:43:04,480 - 00:43:07,480] squarks, so-called squarks,
+- [00:43:07,480 - 00:43:10,480] have the same charges as the quark,
+- [00:43:10,480 - 00:43:11,480] the corresponding quark,
+- [00:43:11,480 - 00:43:14,480] and also the same color quantum numbers.
+- [00:43:14,480 - 00:43:16,980] So squarks interact with the same
+- [00:43:16,980 - 00:43:19,480] kind of color forces as quarks,
+- [00:43:19,480 - 00:43:20,480] and so forth.
+- [00:43:20,480 - 00:43:21,480] Yeah.
+- [00:43:21,480 - 00:43:23,480] So no, these...
+- [00:43:23,480 - 00:43:26,480] They do not define new interactions.
+- [00:43:26,480 - 00:43:27,480] Yeah?
+- [00:43:27,480 - 00:43:30,480] If the NHC would determine...
+- [00:43:30,480 - 00:43:31,480] What would the discovery super partner,
+- [00:43:31,480 - 00:43:34,480] would that be definitive for supersymmetry?
+- [00:43:34,480 - 00:43:35,480] Oh yeah.
+- [00:43:35,480 - 00:43:37,480] Yeah, no, I mean the...
+- [00:43:37,480 - 00:43:40,480] The restrictions of supersymmetry are very, very tight.
+- [00:43:40,480 - 00:43:42,480] They're very, very tight.
+- [00:43:42,480 - 00:43:46,480] They tell you detailed relationships between
+- [00:43:46,480 - 00:43:49,480] interaction strengths.
+- [00:43:49,480 - 00:43:52,480] Supersymmetry gives you a lot of detail
+- [00:43:52,480 - 00:43:56,480] in the particle spectrum and in the particle interactions.
+- [00:43:56,480 - 00:44:03,480] And those details would be pretty clear.
+- [00:44:03,480 - 00:44:07,480] The only issue is whether the supersymmetry,
+- [00:44:07,480 - 00:44:09,480] the supersymmetric particles,
+- [00:44:09,480 - 00:44:12,480] whether their masses are low enough
+- [00:44:12,480 - 00:44:15,480] to be detectable at the LHC.
+- [00:44:15,480 - 00:44:17,480] If you make them too heavy,
+- [00:44:17,480 - 00:44:19,480] this picture doesn't work.
+- [00:44:19,480 - 00:44:20,480] All right?
+- [00:44:20,480 - 00:44:23,480] But you might be out of luck.
+- [00:44:23,480 - 00:44:27,480] It could be that the supersymmetry really is there,
+- [00:44:27,480 - 00:44:29,480] and just by bad luck,
+- [00:44:29,480 - 00:44:30,980] it happens to set in that
+- [00:44:30,980 - 00:44:32,480] the particles are a factor of two,
+- [00:44:32,480 - 00:44:35,480] too heavy to be detected at the LHC.
+- [00:44:35,480 - 00:44:36,480] That would be awful.
+- [00:44:36,480 - 00:44:38,480] It would mean, you know,
+- [00:44:38,480 - 00:44:40,480] we wouldn't know what to say.
+- [00:44:40,480 - 00:44:44,480] So, on the other hand,
+- [00:44:44,480 - 00:44:46,480] if you make the particles,
+- [00:44:46,480 - 00:44:49,480] the superpartners too heavy,
+- [00:44:49,480 - 00:44:52,480] then this control of the divergent self energies
+- [00:44:52,480 - 00:44:54,480] doesn't work very well.
+- [00:44:54,480 - 00:44:58,480] And the Higgs particle gets pulled up to higher energy.
+- [00:44:58,480 - 00:45:00,480] You need the cancellation.
+- [00:45:00,480 - 00:45:01,480] In order to have the cancellation,
+- [00:45:01,480 - 00:45:04,480] you must have not too big a discrepancy
+- [00:45:04,480 - 00:45:07,480] between the masses of the particles and the superpartners.
+- [00:45:07,480 - 00:45:09,980] So, if you try to
+- [00:45:09,980 - 00:45:12,480] say that the superparticles are there,
+- [00:45:12,480 - 00:45:15,480] but they're at a hundred times
+- [00:45:15,480 - 00:45:18,480] the mass that could be detected at the LHC,
+- [00:45:18,480 - 00:45:21,480] a number of these things will just go wrong.
+- [00:45:21,480 - 00:45:24,480] The dark matter particles will be at the wrong energy,
+- [00:45:24,480 - 00:45:25,480] wrong mass.
+- [00:45:25,480 - 00:45:27,980] This higher precision unification won't
+- [00:45:27,980 - 00:45:30,480] work out nearly as well.
+- [00:45:30,480 - 00:45:32,980] And this control of the
+- [00:45:32,980 - 00:45:35,480] divergent self energy of the Higgs
+- [00:45:35,480 - 00:45:36,480] will not work.
+- [00:45:37,480 - 00:45:39,480] It won't fail.
+- [00:45:39,480 - 00:45:41,480] It won't be as bad as it would be
+- [00:45:41,480 - 00:45:43,480] if there were no superpartners,
+- [00:45:43,480 - 00:45:45,480] but it will still fail.
+- [00:45:45,480 - 00:45:46,980] So, if supersymmetry is going
+- [00:45:46,980 - 00:45:48,480] to do something good for us
+- [00:45:48,480 - 00:45:53,480] in these three domains of experience,
+- [00:45:53,480 - 00:45:55,480] in these three domains here,
+- [00:45:55,480 - 00:45:59,480] it had better be not too far
+- [00:45:59,480 - 00:46:02,480] from the experimentally accessible range.
+- [00:46:02,480 - 00:46:05,480] That's what has had,
+- [00:46:05,480 - 00:46:07,480] you know, ideas come and go.
+- [00:46:07,480 - 00:46:09,480] They don't last very long
+- [00:46:09,480 - 00:46:11,480] when they don't do something really good.
+- [00:46:11,480 - 00:46:13,480] This idea of supersymmetry has
+- [00:46:13,480 - 00:46:15,480] been around for a long time
+- [00:46:15,480 - 00:46:17,480] and it hasn't gone away.
+- [00:46:17,480 - 00:46:19,480] That's no proof that it's correct,
+- [00:46:19,480 - 00:46:20,980] but it is some evidence
+- [00:46:20,980 - 00:46:22,480] that there's something rather attractive
+- [00:46:22,480 - 00:46:25,480] and compelling.
+- [00:46:25,480 - 00:46:26,480] Compelling, not in the sense
+- [00:46:26,480 - 00:46:27,480] that it has to be true,
+- [00:46:27,480 - 00:46:29,480] but it has to be tested.
+- [00:46:29,480 - 00:46:30,480] It has to be tested.
+- [00:46:30,480 - 00:46:32,480] That's what's, yeah.
+- [00:46:32,480 - 00:46:36,480] Is there any connection between
+- [00:46:36,480 - 00:46:40,480] more or less standard assumptions about cosmology
+- [00:46:40,480 - 00:46:43,480] and the amount of dark matter
+- [00:46:43,480 - 00:46:46,480] or the size of the dark matter particles
+- [00:46:46,480 - 00:46:47,480] or anything of that sort?
+- [00:46:47,480 - 00:46:51,480] Is there any way to relate the two?
+- [00:46:51,480 - 00:46:53,480] Well, I'm not sure exactly what you're asking,
+- [00:46:53,480 - 00:46:54,980] but the existence of dark matter
+- [00:46:54,980 - 00:46:56,480] has a lot of effects on...
+- [00:46:56,480 - 00:46:58,480] Do cosmological assumptions tell you something
+- [00:46:58,480 - 00:47:01,480] about the ratio of helium and hydrogen
+- [00:47:01,480 - 00:47:02,480] and stuff like that?
+- [00:47:02,480 - 00:47:03,980] It might be they tell you
+- [00:47:03,980 - 00:47:05,480] something about dark matter as well.
+- [00:47:06,480 - 00:47:09,480] I'll tell you what the problem is.
+- [00:47:09,480 - 00:47:12,480] The problem is without a more
+- [00:47:12,480 - 00:47:15,480] or less specific theory of dark matter,
+- [00:47:15,480 - 00:47:18,980] all you really know is the
+- [00:47:18,980 - 00:47:22,480] mass density of the dark matter.
+- [00:47:22,480 - 00:47:25,480] Okay, the mass density of the dark matter.
+- [00:47:25,480 - 00:47:29,480] And that mass density per cubic something or other
+- [00:47:29,480 - 00:47:32,480] could be three or four heavy particles
+- [00:47:32,480 - 00:47:35,480] or 10 to the 15th very light particles
+- [00:47:35,480 - 00:47:37,480] and you can't tell.
+- [00:47:37,480 - 00:47:40,480] Yeah, it could be...
+- [00:47:40,480 - 00:47:47,480] It could be a boson condensate of extremely light particles.
+- [00:47:47,480 - 00:47:49,480] In fact, that's one theory of it
+- [00:47:49,480 - 00:47:52,480] that's called the axion theory of dark matter.
+- [00:47:52,480 - 00:47:56,480] And it could be just a very, very large number
+- [00:47:56,480 - 00:47:59,480] per unit volume of very, very light particles.
+- [00:47:59,480 - 00:48:02,480] They better be bosons, otherwise you can't squeeze
+- [00:48:02,480 - 00:48:04,480] that many of them into a small volume.
+- [00:48:05,480 - 00:48:08,480] And or they could be heavier particles.
+- [00:48:08,480 - 00:48:11,480] So without some kind of theoretical prejudices,
+- [00:48:11,480 - 00:48:14,480] you can't tell what their mass is
+- [00:48:14,480 - 00:48:17,480] and you can't tell very much about them
+- [00:48:17,480 - 00:48:21,480] other than that they have to be there
+- [00:48:21,480 - 00:48:22,980] in order to control the
+- [00:48:22,980 - 00:48:24,480] motion of galaxies and so forth,
+- [00:48:24,480 - 00:48:26,480] rotation curves of galaxies and so forth.
+- [00:48:26,480 - 00:48:29,480] Other than their gravitational effect,
+- [00:48:29,480 - 00:48:33,480] we don't have a completely compelling
+- [00:48:33,480 - 00:48:36,480] set of arguments about their properties.
+- [00:48:36,480 - 00:48:41,480] Nevertheless, with some assumptions,
+- [00:48:41,480 - 00:48:44,480] with some assumptions fairly...
+- [00:48:44,480 - 00:48:47,480] somewhat robust assumptions,
+- [00:48:47,480 - 00:48:50,480] the class of theories
+- [00:48:50,480 - 00:48:53,480] falls into two interesting possibilities.
+- [00:48:53,480 - 00:48:56,480] One is particles of a mass of about a TeV
+- [00:48:56,480 - 00:48:59,480] and the other is extremely light particles
+- [00:48:59,480 - 00:49:01,480] that form a boson condensate.
+- [00:49:01,480 - 00:49:02,480] And both of them can work.
+- [00:49:02,480 - 00:49:04,480] Both ideas seem feasible.
+- [00:49:04,480 - 00:49:07,480] And furthermore, anything in between will also work,
+- [00:49:07,480 - 00:49:11,480] but there's no theory of stuff in between.
+- [00:49:11,480 - 00:49:13,480] I was just thinking in the beginning
+- [00:49:13,480 - 00:49:15,480] maybe they were only super particles
+- [00:49:15,480 - 00:49:18,480] and then they all kind of decayed.
+- [00:49:18,480 - 00:49:24,480] Well, you'd have to have some reason to believe that.
+- [00:49:24,480 - 00:49:27,480] I don't know what the very beginning was,
+- [00:49:27,480 - 00:49:30,480] but there was a point in time
+- [00:49:30,480 - 00:49:33,480] when the universe was a lot hotter than it is.
+- [00:49:33,480 - 00:49:37,480] In fact, in which the thermal energy scales
+- [00:49:37,480 - 00:49:41,480] were, let's say, way up here somewheres.
+- [00:49:41,480 - 00:49:44,480] In that situation, it would be thermal equilibrium
+- [00:49:44,480 - 00:49:47,480] which would dictate how many of each kind of particles
+- [00:49:47,480 - 00:49:48,480] there would be.
+- [00:49:48,480 - 00:49:51,480] And more or less, you would find
+- [00:49:51,480 - 00:49:55,480] a proximity quality between the various kinds of particles.
+- [00:49:55,480 - 00:49:57,480] In fact, just about all the particles
+- [00:49:57,480 - 00:49:59,480] would pretty much have the same abundance.
+- [00:50:00,480 - 00:50:04,480] Bosons, fermions, more or less all about the same.
+- [00:50:04,480 - 00:50:08,480] And so at some time in the past,
+- [00:50:08,480 - 00:50:12,480] particles and antiparticles, bosons and fermions,
+- [00:50:12,480 - 00:50:15,480] all more or less equally abundant
+- [00:50:15,480 - 00:50:19,480] and pretty much determined by the thermal equilibrium
+- [00:50:19,480 - 00:50:20,480] that takes place.
+- [00:50:20,480 - 00:50:22,480] If there were too many ordinary particles
+- [00:50:22,480 - 00:50:24,480] and not enough super particles,
+- [00:50:24,480 - 00:50:28,480] then the collisions of ordinary particles
+- [00:50:28,480 - 00:50:30,480] would produce super particles.
+- [00:50:30,480 - 00:50:33,480] If it produced too many super particles
+- [00:50:33,480 - 00:50:35,480] so that the abundance favored super particles
+- [00:50:35,480 - 00:50:37,480] and collisions between super particles
+- [00:50:37,480 - 00:50:39,480] would create ordinary particles,
+- [00:50:39,480 - 00:50:41,480] in thermal equilibrium,
+- [00:50:41,480 - 00:50:44,480] there would be some kind of balance between them.
+- [00:50:44,480 - 00:50:49,480] So the expectation was,
+- [00:50:49,480 - 00:50:51,480] I don't know what was going
+- [00:50:51,480 - 00:50:53,480] on at the very, very beginning,
+- [00:50:53,480 - 00:50:57,480] but if we trace back as far as we can,
+- [00:50:57,480 - 00:51:00,480] it looks more like there was
+- [00:51:00,480 - 00:51:04,480] an equal abundance of these various kinds of things.
+- [00:51:04,480 - 00:51:05,480] Yeah.
+- [00:51:05,480 - 00:51:07,480] So the LSP,
+- [00:51:07,480 - 00:51:11,480] which ordinary particle would that be the partner of?
+- [00:51:11,480 - 00:51:14,480] It would have to be non-interactive, right?
+- [00:51:14,480 - 00:51:16,480] Yeah, very likely a neutral,
+- [00:51:16,480 - 00:51:18,480] almost certainly a neutral particle.
+- [00:51:18,480 - 00:51:19,480] Why?
+- [00:51:19,480 - 00:51:22,480] Well, for one reason is that
+- [00:51:22,480 - 00:51:25,480] a charged particle is likely to be some,
+- [00:51:25,480 - 00:51:28,480] or a colored particle is likely to be somewhat heavier
+- [00:51:28,480 - 00:51:29,480] than its neutral,
+- [00:51:29,480 - 00:51:32,480] than a neutral version of it.
+- [00:51:32,480 - 00:51:33,480] Why?
+- [00:51:33,480 - 00:51:36,480] Because of electrostatic or color forces,
+- [00:51:36,480 - 00:51:39,480] color energy densities.
+- [00:51:39,480 - 00:51:41,480] So the expectation would be
+- [00:51:41,480 - 00:51:43,480] that it would be a neutral particle,
+- [00:51:43,480 - 00:51:46,480] but in various versions of the theory,
+- [00:51:46,480 - 00:51:48,480] it could be different things.
+- [00:51:48,480 - 00:51:51,480] It could be the partner of the photon,
+- [00:51:51,480 - 00:51:53,480] it could be the partner of the Higgs boson,
+- [00:51:53,480 - 00:51:55,480] it could be the partner of the graviton,
+- [00:51:55,480 - 00:51:57,480] which is called the gravitino.
+- [00:51:57,480 - 00:52:03,480] And various different possibilities.
+- [00:52:03,480 - 00:52:05,480] I don't think there's any definitive idea
+- [00:52:05,480 - 00:52:09,480] of what the lightest superpartner is.
+- [00:52:09,480 - 00:52:13,480] What's the difference between the Higgs divergence
+- [00:52:13,480 - 00:52:15,480] and the vacuum energy divergence?
+- [00:52:15,480 - 00:52:17,480] Yeah, well, it is different.
+- [00:52:17,480 - 00:52:20,480] It is different.
+- [00:52:20,480 - 00:52:22,480] The vacuum energy divergence is just
+- [00:52:22,480 - 00:52:24,480] the energy of empty space.
+- [00:52:24,480 - 00:52:26,480] And in terms of Feynman diagram,
+- [00:52:26,480 - 00:52:33,480] in terms of Feynman diagrams,
+- [00:52:33,480 - 00:52:36,480] in terms of Feynman diagrams,
+- [00:52:36,480 - 00:52:39,480] it's just diagrams of virtual particles
+- [00:52:39,480 - 00:52:41,480] which sort of populate empty space.
+- [00:52:41,480 - 00:52:43,480] Complicated Feynman diagrams,
+- [00:52:43,480 - 00:52:46,480] all sorts of Feynman diagrams can take place,
+- [00:52:46,480 - 00:52:51,480] but they're in otherwise completely empty space,
+- [00:52:51,480 - 00:52:54,480] and they contribute energy to the vacuum.
+- [00:52:54,480 - 00:52:56,480] The self-energy of a particle
+- [00:52:56,480 - 00:52:58,480] in particular the Higgs particle,
+- [00:52:58,480 - 00:53:01,480] is a class of diagrams
+- [00:53:01,480 - 00:53:03,480] in which the presence of the...
+- [00:53:03,480 - 00:53:05,480] Basically you can say it this way,
+- [00:53:05,480 - 00:53:07,480] the presence of the Higgs particle
+- [00:53:07,480 - 00:53:09,480] or any other particle
+- [00:53:09,480 - 00:53:13,480] provides a kind of impurity in the vacuum.
+- [00:53:13,480 - 00:53:15,480] It's...
+- [00:53:15,480 - 00:53:17,480] That's what a particle is.
+- [00:53:17,480 - 00:53:19,480] It's an impurity in the vacuum.
+- [00:53:19,480 - 00:53:22,480] The impurity has an effect
+- [00:53:22,480 - 00:53:25,480] on these vacuum diagrams.
+- [00:53:25,480 - 00:53:27,480] Its presence modifies them
+- [00:53:27,480 - 00:53:30,480] in a way which is not too different
+- [00:53:30,480 - 00:53:33,480] than the plates of the Casimir effect.
+- [00:53:33,480 - 00:53:36,480] But you can summarize it by saying
+- [00:53:36,480 - 00:53:38,480] the important Feynman diagrams
+- [00:53:38,480 - 00:53:41,480] for renormalizing or shifting the mass of a particle
+- [00:53:41,480 - 00:53:43,480] are just diagrams which are connected
+- [00:53:43,480 - 00:53:46,480] to that particle like that.
+- [00:53:46,480 - 00:53:49,480] So the Feynman diagrams
+- [00:53:49,480 - 00:53:51,480] which are sensitive to the presence
+- [00:53:51,480 - 00:53:53,480] of the Higgs particle
+- [00:53:53,480 - 00:53:55,480] give a mass to...
+- [00:53:55,480 - 00:53:57,480] or shift the mass of the Higgs particle
+- [00:53:57,480 - 00:53:58,480] and that's...
+- [00:53:58,480 - 00:54:00,480] It is in a sense
+- [00:54:00,480 - 00:54:02,480] the same kind of phenomena
+- [00:54:02,480 - 00:54:05,480] except it is...
+- [00:54:05,480 - 00:54:07,480] What shall we say?
+- [00:54:07,480 - 00:54:10,480] Modified by the presence of the Higgs particle itself
+- [00:54:10,480 - 00:54:13,480] and therefore shifts the mass of the Higgs particle
+- [00:54:16,480 - 00:54:18,480] whereas the vacuum diagrams
+- [00:54:18,480 - 00:54:20,480] are just shifting the mass
+- [00:54:20,480 - 00:54:22,480] or the energy density of the empty space.
+- [00:54:23,480 - 00:54:25,480] There is one thing,
+- [00:54:25,480 - 00:54:27,480] there is an interesting fact
+- [00:54:27,480 - 00:54:29,480] which we haven't explored cosmology
+- [00:54:29,480 - 00:54:31,480] at least for a number of quarters
+- [00:54:31,480 - 00:54:35,480] but there is one feature
+- [00:54:35,480 - 00:54:37,480] of this vacuum energy
+- [00:54:37,480 - 00:54:39,480] which is what distinguishes it
+- [00:54:39,480 - 00:54:41,480] and makes it rather special.
+- [00:54:41,480 - 00:54:45,480] Let's talk first about ordinary energy
+- [00:54:45,480 - 00:54:47,480] stored in the form of particles,
+- [00:54:47,480 - 00:54:49,480] lots of particles.
+- [00:54:49,480 - 00:54:51,480] They could be dark matter particles,
+- [00:54:51,480 - 00:54:53,480] they could be any kind of particles.
+- [00:54:53,480 - 00:54:55,480] Eventually at some point
+- [00:54:55,480 - 00:54:57,480] as the universe expands
+- [00:54:57,480 - 00:54:59,480] these particles separate enough
+- [00:54:59,480 - 00:55:01,480] that they are not in violent interaction
+- [00:55:01,480 - 00:55:03,480] with each other.
+- [00:55:03,480 - 00:55:05,480] They are just more or less sitting there
+- [00:55:05,480 - 00:55:07,480] and as the universe expands
+- [00:55:07,480 - 00:55:09,480] they separate.
+- [00:55:09,480 - 00:55:11,480] And as they separate
+- [00:55:11,480 - 00:55:13,480] the energy density decreases.
+- [00:55:13,480 - 00:55:15,480] The energy density decreases
+- [00:55:15,480 - 00:55:17,480] because the volume of space increases
+- [00:55:17,480 - 00:55:19,480] the number of particles doesn't increase
+- [00:55:19,480 - 00:55:21,480] and the result is
+- [00:55:21,480 - 00:55:23,480] that the energy density of the vacuum
+- [00:55:23,480 - 00:55:25,480] sorry, the energy density of space
+- [00:55:25,480 - 00:55:27,480] due to ordinary particles
+- [00:55:27,480 - 00:55:33,480] decreases as the universe expands.
+- [00:55:33,480 - 00:55:35,480] It works differently for photons
+- [00:55:35,480 - 00:55:37,480] than for particles with mass.
+- [00:55:37,480 - 00:55:39,480] The reason is the following.
+- [00:55:39,480 - 00:55:41,480] The particles with mass
+- [00:55:41,480 - 00:55:43,480] due to the expansion of the universe
+- [00:55:43,480 - 00:55:45,480] eventually come to rest
+- [00:55:45,480 - 00:55:47,480] relative to each other.
+- [00:55:47,480 - 00:55:49,480] No, they don't come to rest
+- [00:55:49,480 - 00:55:51,480] relative to each other.
+- [00:55:51,480 - 00:55:53,480] They just participate in the overall
+- [00:55:53,480 - 00:55:55,480] expansion.
+- [00:55:55,480 - 00:55:59,480] But think of them as roughly being at rest
+- [00:55:59,480 - 00:56:01,480] in a local frame over here.
+- [00:56:01,480 - 00:56:03,480] Their energy is just mc squared.
+- [00:56:03,480 - 00:56:05,480] Or their mass is just
+- [00:56:05,480 - 00:56:07,480] their mass is just their mass
+- [00:56:07,480 - 00:56:09,480] and the way you find the energy density
+- [00:56:09,480 - 00:56:11,480] or the mass in a certain region
+- [00:56:11,480 - 00:56:13,480] is just to add up all the particles
+- [00:56:13,480 - 00:56:15,480] and give each one a mass m.
+- [00:56:15,480 - 00:56:17,480] Okay?
+- [00:56:17,480 - 00:56:19,480] That's the way you would calculate
+- [00:56:19,480 - 00:56:21,480] the energy of just ordinary particles.
+- [00:56:21,480 - 00:56:23,480] You just take all the particles
+- [00:56:23,480 - 00:56:25,480] and then divide it by that volume
+- [00:56:25,480 - 00:56:27,480] that's the energy density
+- [00:56:27,480 - 00:56:29,480] and then as the volume expands
+- [00:56:29,480 - 00:56:31,480] the particles just move out
+- [00:56:31,480 - 00:56:33,480] with the expanding volume
+- [00:56:33,480 - 00:56:35,480] they just participate in the expansion
+- [00:56:35,480 - 00:56:37,480] and the energy density decreases
+- [00:56:37,480 - 00:56:39,480] but the total amount of energy
+- [00:56:39,480 - 00:56:41,480] in a volume like this stays fixed.
+- [00:56:41,480 - 00:56:43,480] Okay?
+- [00:56:43,480 - 00:56:45,480] Another example would be
+- [00:56:45,480 - 00:56:47,480] a volume of space with photons in it.
+- [00:56:49,480 - 00:56:51,480] Photons in it.
+- [00:56:51,480 - 00:56:53,480] You can think
+- [00:56:53,480 - 00:56:55,480] qualitatively of just having
+- [00:56:55,480 - 00:56:57,480] a cavity with photons in it.
+- [00:56:57,480 - 00:56:59,480] Of course in reality the photons
+- [00:56:59,480 - 00:57:01,480] pass out through the walls of this region
+- [00:57:01,480 - 00:57:03,480] freely. There are no real walls.
+- [00:57:03,480 - 00:57:05,480] But for every photon that passes out
+- [00:57:05,480 - 00:57:07,480] there's also likely to be another one
+- [00:57:07,480 - 00:57:09,480] coming in.
+- [00:57:09,480 - 00:57:11,480] So you can imagine a region of space
+- [00:57:11,480 - 00:57:13,480] an expanding region of space
+- [00:57:13,480 - 00:57:15,480] an expanding region of space
+- [00:57:15,480 - 00:57:17,480] where the number of photons
+- [00:57:17,480 - 00:57:19,480] stays fixed.
+- [00:57:19,480 - 00:57:21,480] But each photon
+- [00:57:21,480 - 00:57:23,480] each wave of space
+- [00:57:23,480 - 00:57:25,480] each wave in here gets stretched
+- [00:57:25,480 - 00:57:27,480] by the expansion
+- [00:57:27,480 - 00:57:29,480] its wavelength gets stretched
+- [00:57:29,480 - 00:57:31,480] and so as its wavelength gets stretched
+- [00:57:31,480 - 00:57:33,480] the corresponding energy
+- [00:57:33,480 - 00:57:35,480] of each photon decreases.
+- [00:57:35,480 - 00:57:37,480] So that means
+- [00:57:37,480 - 00:57:39,480] relative to the massive particles
+- [00:57:39,480 - 00:57:41,480] this is called just
+- [00:57:41,480 - 00:57:43,480] non-relativistic massive particles
+- [00:57:43,480 - 00:57:45,480] the energy density
+- [00:57:45,480 - 00:57:47,480] stored in radiation
+- [00:57:47,480 - 00:57:49,480] will decrease faster
+- [00:57:49,480 - 00:57:51,480] as the universe expands
+- [00:57:51,480 - 00:57:53,480] than the energy density
+- [00:57:53,480 - 00:57:55,480] stored in ordinary particles.
+- [00:57:55,480 - 00:57:57,480] This is why today
+- [00:57:57,480 - 00:57:59,480] the energy density in radiation
+- [00:57:59,480 - 00:58:01,480] black body radiation
+- [00:58:01,480 - 00:58:03,480] is vastly smaller
+- [00:58:03,480 - 00:58:05,480] than the energy density in protons
+- [00:58:05,480 - 00:58:07,480] nuclei
+- [00:58:07,480 - 00:58:09,480] and electrons and so forth
+- [00:58:09,480 - 00:58:11,480] because the expansion
+- [00:58:11,480 - 00:58:13,480] has stretched the photons
+- [00:58:13,480 - 00:58:15,480] but it hasn't changed the mass of the particles here.
+- [00:58:15,480 - 00:58:17,480] If you go back into the past
+- [00:58:17,480 - 00:58:19,480] at one point the energy densities
+- [00:58:19,480 - 00:58:21,480] are about the same.
+- [00:58:21,480 - 00:58:23,480] There's
+- [00:58:23,480 - 00:58:25,480] I'm trying to figure out
+- [00:58:25,480 - 00:58:27,480] exactly how to ask the question
+- [00:58:27,480 - 00:58:29,480] but basically when you look at a particle
+- [00:58:29,480 - 00:58:31,480] as having a wave function
+- [00:58:31,480 - 00:58:33,480] associated with it
+- [00:58:33,480 - 00:58:35,480] then how can it be considered
+- [00:58:35,480 - 00:58:37,480] a particle and not a wave?
+- [00:58:37,480 - 00:58:39,480] Let's not try to
+- [00:58:39,480 - 00:58:41,480] get into the subtleties of quantum mechanics
+- [00:58:41,480 - 00:58:43,480] and let's just say
+- [00:58:43,480 - 00:58:45,480] that we're talking about more or less
+- [00:58:45,480 - 00:58:47,480] classical radiation in this region.
+- [00:58:47,480 - 00:58:49,480] When classical radiation
+- [00:58:49,480 - 00:58:51,480] is stretched
+- [00:58:51,480 - 00:58:53,480] the energy density decreases
+- [00:58:53,480 - 00:58:55,480] in a certain way.
+- [00:58:55,480 - 00:58:57,480] Now, what about vacuum energy?
+- [00:58:57,480 - 00:58:59,480] Vacuum energy is just
+- [00:58:59,480 - 00:59:01,480] the energy of empty space.
+- [00:59:01,480 - 00:59:03,480] It has the property
+- [00:59:03,480 - 00:59:05,480] that as the universe expands
+- [00:59:05,480 - 00:59:07,480] the vacuum energy density
+- [00:59:07,480 - 00:59:09,480] simply doesn't change.
+- [00:59:09,480 - 00:59:11,480] It just stays there.
+- [00:59:11,480 - 00:59:13,480] It stays at the same energy density
+- [00:59:13,480 - 00:59:15,480] it doesn't dilute
+- [00:59:15,480 - 00:59:17,480] as the universe expands.
+- [00:59:21,480 - 00:59:23,480] It's just empty space.
+- [00:59:23,480 - 00:59:25,480] Empty space is empty space.
+- [00:59:25,480 - 00:59:27,480] Well, that's a caricature
+- [00:59:27,480 - 00:59:29,480] of an argument.
+- [00:59:29,480 - 00:59:31,480] But the point is that is the special
+- [00:59:31,480 - 00:59:33,480] property of vacuum energy
+- [00:59:33,480 - 00:59:35,480] that it doesn't dilute as the universe expands.
+- [00:59:35,480 - 00:59:37,480] Now, it may be
+- [00:59:37,480 - 00:59:39,480] that at some time
+- [00:59:39,480 - 00:59:41,480] in the early universe
+- [00:59:41,480 - 00:59:43,480] and it was true, it is true
+- [00:59:43,480 - 00:59:45,480] that in the early universe
+- [00:59:45,480 - 00:59:47,480] the vacuum energy density
+- [00:59:47,480 - 00:59:49,480] was much, much smaller
+- [00:59:49,480 - 00:59:51,480] than the energy density
+- [00:59:51,480 - 00:59:53,480] in radiation
+- [00:59:53,480 - 00:59:55,480] or in particles.
+- [00:59:55,480 - 00:59:57,480] It was much, much smaller
+- [00:59:57,480 - 00:59:59,480] and it was not very important.
+- [00:59:59,480 - 01:00:01,480] But as the universe expanded
+- [01:00:01,480 - 01:00:03,480] the ordinary sources of energy
+- [01:00:03,480 - 01:00:05,480] diluted
+- [01:00:05,480 - 01:00:07,480] but this and this diluted
+- [01:00:09,480 - 01:00:11,480] this, being radiation
+- [01:00:11,480 - 01:00:13,480] became smaller than this
+- [01:00:13,480 - 01:00:15,480] being ordinary non-relativistic particles
+- [01:00:15,480 - 01:00:17,480] but the vacuum energy
+- [01:00:17,480 - 01:00:19,480] did not dilute.
+- [01:00:19,480 - 01:00:21,480] And that means that at some point
+- [01:00:21,480 - 01:00:23,480] the vacuum energy density
+- [01:00:23,480 - 01:00:25,480] will become more important
+- [01:00:25,480 - 01:00:27,480] larger than
+- [01:00:27,480 - 01:00:29,480] either of these two sources of energy.
+- [01:00:29,480 - 01:00:31,480] Well, that has already happened.
+- [01:00:31,480 - 01:00:33,480] It's already happened
+- [01:00:33,480 - 01:00:35,480] that
+- [01:00:35,480 - 01:00:37,480] the energy density
+- [01:00:37,480 - 01:00:39,480] of the vacuum energy density
+- [01:00:39,480 - 01:00:41,480] is about three times larger
+- [01:00:41,480 - 01:00:43,480] than
+- [01:00:43,480 - 01:00:45,480] it's about 70%
+- [01:00:45,480 - 01:00:47,480] of the energy density
+- [01:00:47,480 - 01:00:49,480] of the universe today.
+- [01:00:49,480 - 01:00:51,480] So at some time in the past
+- [01:00:51,480 - 01:00:53,480] maybe, I don't know, roughly
+- [01:00:53,480 - 01:00:55,480] eight billion years ago
+- [01:00:55,480 - 01:00:57,480] I'm not sure exactly when it was
+- [01:00:57,480 - 01:00:59,480] you have to do a little calculation
+- [01:00:59,480 - 01:01:01,480] seven, six billion years ago
+- [01:01:01,480 - 01:01:03,480] there was a crossover
+- [01:01:03,480 - 01:01:05,480] where the other forms of energy
+- [01:01:05,480 - 01:01:07,480] earlier on were more important
+- [01:01:07,480 - 01:01:09,480] the density was larger
+- [01:01:09,480 - 01:01:11,480] they controlled the behavior of the universe
+- [01:01:11,480 - 01:01:13,480] and then as it expanded
+- [01:01:13,480 - 01:01:15,480] this diluted and diluted
+- [01:01:15,480 - 01:01:17,480] until about some X number of billion years ago
+- [01:01:17,480 - 01:01:19,480] the vacuum energy became more important
+- [01:01:19,480 - 01:01:21,480] and today it's more important
+- [01:01:21,480 - 01:01:23,480] by about a factor of three or four
+- [01:01:23,480 - 01:01:25,480] or something like that
+- [01:01:27,480 - 01:01:29,480] so 30% versus 70%
+- [01:01:31,480 - 01:01:33,480] 70% being vacuum energy
+- [01:01:33,480 - 01:01:35,480] How did we get into this?
+- [01:01:35,480 - 01:01:37,480] Well, we were talking about
+- [01:01:37,480 - 01:01:39,480] the various Feynman diagrams
+- [01:01:39,480 - 01:01:41,480] for vacuum energy
+- [01:01:41,480 - 01:01:43,480] and the Higgs phenomenon
+- [01:01:43,480 - 01:01:45,480] Alright, we got off on a tangent
+- [01:01:45,480 - 01:01:47,480] Any other questions
+- [01:01:47,480 - 01:01:49,480] about supersymmetry? About anything?
+- [01:01:49,480 - 01:01:51,480] Yeah
+- [01:01:51,480 - 01:01:53,480] Is there a constant
+- [01:01:53,480 - 01:01:55,480] net energy density
+- [01:01:55,480 - 01:01:57,480] as we go through that process
+- [01:01:57,480 - 01:01:59,480] of increasing the
+- [01:01:59,480 - 01:02:01,480] energy density of the vacuum?
+- [01:02:02,434 - 01:02:04,434] 以上であります。
+- [01:02:04,674 - 01:02:07,414] Okay, I think you're asking me about
+- [01:02:07,414 - 01:02:10,154] the role of energy conservation in cosmology.
+- [01:02:11,054 - 01:02:11,354] Okay.
+- [01:02:12,534 - 01:02:15,114] The answer is a bizarre answer.
+- [01:02:15,414 - 01:02:17,334] The answer is energy is exactly conserved
+- [01:02:17,334 - 01:02:19,254] and it's always exactly equal to zero.
+- [01:02:20,354 - 01:02:22,254] There are various forms of energy.
+- [01:02:23,074 - 01:02:26,184] One of the forms, there are this form
+- [01:02:26,184 - 01:02:29,294] of energy, that form of energy, vacuum energy,
+- [01:02:29,634 - 01:02:31,934] but there's also another kind of energy and
+- [01:02:31,934 - 01:02:34,234] it's kind of the kinetic energy of expansion.
+- [01:02:34,674 - 01:02:36,774] It's just an energy that's
+- [01:02:36,774 - 01:02:38,874] associated with the expansion of space.
+- [01:02:39,834 - 01:02:43,774] The energy density associated with the expansion of space,
+- [01:02:43,934 - 01:02:45,824] according to the general theory
+- [01:02:45,824 - 01:02:47,714] of relativity, happens to be negative.
+- [01:02:48,834 - 01:02:54,634] It happens to be, if we define the radius,
+- [01:02:54,754 - 01:02:56,914] let's say the radius of the universe
+- [01:02:56,914 - 01:02:59,074] at any given time, call it A.
+- [01:02:59,254 - 01:03:00,894] It's called a scale factor.
+- [01:03:01,734 - 01:03:04,534] There's an energy density stored,
+- [01:03:04,674 - 01:03:07,614] just in the fact that the universe is expanding.
+- [01:03:07,614 - 01:03:09,034] It's a kind of kinetic energy.
+- [01:03:09,034 - 01:03:11,234] A dot means the time derivative of A.
+- [01:03:11,714 - 01:03:13,014] And it's a kind of kinetic energy.
+- [01:03:13,014 - 01:03:18,294] It's proportional to the square of the expansion velocity.
+- [01:03:18,614 - 01:03:19,974] And it happens to be negative.
+- [01:03:22,094 - 01:03:23,314] That's one source of energy.
+- [01:03:23,314 - 01:03:24,554] And then there are all
+- [01:03:24,554 - 01:03:25,794] the other terms in the energy.
+- [01:03:26,034 - 01:03:29,294] This, this, that, something called curvature energy.
+- [01:03:29,914 - 01:03:32,194] And they all have to add up to zero.
+- [01:03:33,194 - 01:03:34,574] That's the rule of general relativity.
+- [01:03:34,674 - 01:03:38,254] General relativity insists that the total energy
+- [01:03:38,254 - 01:03:44,194] of a cosmological universe should all add up to zero.
+- [01:03:46,234 - 01:03:49,124] So the answer is that
+- [01:03:49,124 - 01:03:52,014] all the other forms of energy
+- [01:03:52,014 - 01:03:54,394] may or may not decrease.
+- [01:03:54,634 - 01:03:56,194] If there was no vacuum energy,
+- [01:03:56,794 - 01:03:59,414] then these energy densities would decrease,
+- [01:03:59,414 - 01:04:03,414] but it would be compensated for by a negative increase
+- [01:04:04,254 - 01:04:04,414] in...
+- [01:04:04,674 - 01:04:08,334] There's actually some A dot over A squared,
+- [01:04:08,334 - 01:04:09,294] some whatever.
+- [01:04:10,134 - 01:04:13,614] So energy conservation in general relativity
+- [01:04:13,614 - 01:04:14,734] is very peculiar.
+- [01:04:15,653 - 01:04:19,734] It's not simple conservation.
+- [01:04:20,114 - 01:04:21,374] Or if you try to
+- [01:04:21,374 - 01:04:22,634] force it to be simple conservation,
+- [01:04:23,274 - 01:04:25,154] then the answer is the energy is always zero,
+- [01:04:25,574 - 01:04:28,774] being compensated for by some kinetic energy of expansion.
+- [01:04:31,034 - 01:04:33,234] The sum of the energies must be zero,
+- [01:04:33,234 - 01:04:34,234] or it turns out that...
+- [01:04:34,674 - 01:04:36,114] No, no, it must be zero.
+- [01:04:36,354 - 01:04:38,774] It's a consistency condition of...
+- [01:04:38,774 - 01:04:41,314] It's one of the equations of motion of general relativity.
+- [01:04:42,314 - 01:04:43,994] It's not a coincidence that the universe
+- [01:04:43,994 - 01:04:44,724] can be right or wrong
+- [01:04:44,724 - 01:04:45,454] if you can open and close.
+- [01:04:46,154 - 01:04:47,634] Oh, no, that's a different issue.
+- [01:04:47,854 - 01:04:48,814] That's a different issue.
+- [01:04:49,494 - 01:04:51,014] Whether it be open, closed,
+- [01:04:51,014 - 01:04:52,534] or on the boundary between them,
+- [01:04:53,214 - 01:04:54,234] this...
+- [01:04:54,234 - 01:04:57,674] There are various forms of energy, including...
+- [01:04:57,674 - 01:04:58,574] I see, okay, yeah.
+- [01:04:58,754 - 01:05:01,214] No, your question is...
+- [01:05:01,214 - 01:05:03,674] All right, so what are the forms...
+- [01:05:04,674 - 01:05:05,974] Do we really want to do this now?
+- [01:05:06,014 - 01:05:07,654] I'm happy to do it, but...
+- [01:05:07,654 - 01:05:09,234] Okay, all right.
+- [01:05:10,254 - 01:05:10,574] All right.
+- [01:05:11,754 - 01:05:12,194] Yeah.
+- [01:05:12,914 - 01:05:15,974] This is Einstein's time-time component
+- [01:05:15,974 - 01:05:17,714] of the Einstein equations.
+- [01:05:18,714 - 01:05:19,654] All right, what does it say?
+- [01:05:19,654 - 01:05:23,654] On the left-hand side is geometry,
+- [01:05:24,454 - 01:05:25,654] and there are two terms associated
+- [01:05:26,194 - 01:05:27,694] with the geometry of space,
+- [01:05:27,874 - 01:05:29,774] geometry of space-time.
+- [01:05:30,134 - 01:05:33,114] One involves the time derivative
+- [01:05:33,114 - 01:05:34,654] of the...
+- [01:05:34,674 - 01:05:35,814] the expansion factor.
+- [01:05:36,194 - 01:05:36,754] This is just...
+- [01:05:36,754 - 01:05:37,914] If you like, just think about it
+- [01:05:37,914 - 01:05:39,734] as the radius of an expanding universe.
+- [01:05:40,514 - 01:05:43,294] a dot over a squared.
+- [01:05:44,574 - 01:05:47,174] Why it's a dot over a squared,
+- [01:05:47,534 - 01:05:50,014] that's not of any particular significance.
+- [01:05:50,254 - 01:05:51,654] You can multiply the whole equation
+- [01:05:51,654 - 01:05:53,074] by any power of a you like.
+- [01:05:53,134 - 01:05:54,234] It's traditionally expressed
+- [01:05:54,234 - 01:05:55,574] in terms of this quantity here.
+- [01:05:56,474 - 01:05:58,734] That's one term on the left-hand side.
+- [01:05:59,294 - 01:06:00,334] Let me just remind you.
+- [01:06:00,334 - 01:06:02,634] The Einstein equations are of the form
+- [01:06:02,634 - 01:06:03,754] something geometric,
+- [01:06:04,674 - 01:06:20,674] this
+- [01:06:21,214 - 01:06:21,614] penguin.
+- [01:06:21,693 - 01:06:22,633] Sure, it's important to know
+- [01:06:22,633 - 01:06:24,974] that there are also these zodiacal 함자들
+- [01:06:25,013 - 01:06:25,714] in ?
+- [01:06:26,193 - 01:06:26,414] Of course.
+- [01:06:27,634 - 01:06:28,514] So any means ofвин Cyander
+- [01:06:28,514 - 01:06:29,474] in the case of Google too.
+- [01:06:29,474 - 01:06:30,074] Because you don't have any
+- [01:06:30,134 - 01:06:30,574] plus or minus pane auditors.
+- [01:06:30,574 - 01:06:30,914] It's only synonyms.
+- [01:06:31,914 - 01:06:32,734] But it's a vector.
+- [01:06:33,374 - 01:06:37,594] the energy momentum tensor on the right hand side.
+- [01:06:37,594 - 01:06:44,694] Translated into equations, one of the equations has the
+- [01:06:44,694 - 01:06:51,794] form of something involving a dot over a squared.
+- [01:06:51,794 - 01:06:54,794] There's another term involving the geometry.
+- [01:06:54,794 - 01:06:57,193] It depends on whether the
+- [01:06:57,193 - 01:06:59,593] universe is open, closed, or flat.
+- [01:06:59,594 - 01:07:03,714] Open, closed, or flat. And it
+- [01:07:03,714 - 01:07:07,834] has the form of minus, well,
+- [01:07:07,834 - 01:07:10,354] depending on open or closed, it's
+- [01:07:10,354 - 01:07:12,874] either plus or minus or zero, flat.
+- [01:07:12,874 - 01:07:17,114] And it's something involving one over a squared.
+- [01:07:17,114 - 01:07:19,634] That's the left hand side. It depends
+- [01:07:19,634 - 01:07:22,154] on the rate of expansion of the geometry,
+- [01:07:22,154 - 01:07:25,874] and it depends on the nature of space, whether
+- [01:07:25,874 - 01:07:29,594] it be positively curved or negatively curved or flat.
+- [01:07:29,594 - 01:07:31,594] So that's what's on the left hand side.
+- [01:07:31,594 - 01:07:34,714] On the right hand side is the energy density,
+- [01:07:34,714 - 01:07:37,834] the ordinary energy density, and we just call that rho.
+- [01:07:37,834 - 01:07:42,334] The ordinary energy density means it
+- [01:07:42,334 - 01:07:46,834] contains particles, non-relativistic particles, usually called matter.
+- [01:07:46,834 - 01:07:50,834] It contains radiation.
+- [01:07:54,834 - 01:07:58,834] And it contains vacuum.
+- [01:07:59,594 - 01:08:00,834] Energy.
+- [01:08:00,834 - 01:08:05,834] And the matter energy is ordinary matter and dark matter.
+- [01:08:08,834 - 01:08:12,834] That's the form of the cosmological equations of motion.
+- [01:08:12,834 - 01:08:16,834] But another way of writing them is just to
+- [01:08:16,834 - 01:08:20,834] put all of this on one side of the equation.
+- [01:08:20,834 - 01:08:24,834] This is the magic of the equal sign equals zero.
+- [01:08:24,834 - 01:08:28,834] Put everything on one side of the equation.
+- [01:08:29,594 - 01:08:33,594] And then it reads that something is equal to zero.
+- [01:08:33,594 - 01:08:35,594] What is that something?
+- [01:08:35,594 - 01:08:38,594] That something is actually the
+- [01:08:38,594 - 01:08:41,594] total Hamiltonian of general relativity.
+- [01:08:41,594 - 01:08:49,594] It's the energy in the sense of the canonical Hamiltonian,
+- [01:08:49,594 - 01:08:53,594] the strict definition of energy from Noether's theorem,
+- [01:08:53,594 - 01:08:55,594] from the theorems connecting
+- [01:08:55,594 - 01:08:57,594] symmetries and conserved quantities.
+- [01:08:57,594 - 01:08:58,214] So, yes, there's a conserved quantity,
+- [01:08:58,214 - 01:08:58,834] but there's also a conserved quantity.
+- [01:08:58,834 - 01:09:01,834] We can call it energy,
+- [01:09:01,834 - 01:09:04,834] but it contains this expansion stuff,
+- [01:09:04,834 - 01:09:07,334] it contains stuff about the curvature of space, and
+- [01:09:07,334 - 01:09:09,834] the whole thing has to add up to zero.
+- [01:09:09,834 - 01:09:10,834] That's the rules.
+- [01:09:10,834 - 01:09:12,834] That's the rules of the game.
+- [01:09:12,834 - 01:09:15,334] Other than that, there is no
+- [01:09:15,334 - 01:09:17,834] notion of energy conservation in cosmology.
+- [01:09:17,834 - 01:09:21,834] No other notion of energy conservation.
+- [01:09:21,834 - 01:09:24,334] So, following a volume of space, this part
+- [01:09:24,334 - 01:09:26,834] of the energy can either decrease, or decrease.
+- [01:09:26,834 - 01:09:30,334] Whatever it does, it will be
+- [01:09:30,334 - 01:09:33,834] compensated for by this side over here.
+- [01:09:33,834 - 01:09:37,834] Yeah?
+- [01:09:37,834 - 01:09:38,834] Going back to...
+- [01:09:38,834 - 01:09:40,834] We're not getting to supersymmetry, but that's okay.
+- [01:09:40,834 - 01:09:44,834] I want to ask something about Braston numbers.
+- [01:09:44,834 - 01:09:45,834] Braston numbers, okay.
+- [01:09:45,834 - 01:09:50,834] Yes.
+- [01:09:50,834 - 01:09:53,834] Do they show up in Lagrangians of the theory?
+- [01:09:53,834 - 01:09:54,834] Yes.
+- [01:09:54,834 - 01:09:56,834] They show up in two ways.
+- [01:09:56,834 - 01:09:59,834] First of all, fermion fields...
+- [01:09:59,834 - 01:10:02,334] Boson fields, their values, the
+- [01:10:02,334 - 01:10:04,834] values that they take on ordinary...
+- [01:10:04,834 - 01:10:07,834] The boson fields are ordinary numbers.
+- [01:10:07,834 - 01:10:13,834] The electric and magnetic fields are ordinary numbers.
+- [01:10:13,834 - 01:10:16,834] Fermion fields are Grassman numbers.
+- [01:10:16,834 - 01:10:19,834] They anti-commute among themselves.
+- [01:10:19,834 - 01:10:21,834] So, first of all, they show up in
+- [01:10:21,834 - 01:10:23,834] the Lagrangian in the form of the fermion fields,
+- [01:10:23,834 - 01:10:25,334] but they show up in another way, which
+- [01:10:25,334 - 01:10:26,834] is what I was going to get to today.
+- [01:10:26,834 - 01:10:30,834] We may decide to postpone it till the
+- [01:10:30,834 - 01:10:34,834] next time, since it looks like it's getting late.
+- [01:10:34,834 - 01:10:39,834] But the other way they show up
+- [01:10:39,834 - 01:10:44,834] is either really deep or very trivial.
+- [01:10:44,834 - 01:10:46,834] And I think it's hard to say which.
+- [01:10:46,834 - 01:10:48,834] I think it's very deep.
+- [01:10:48,834 - 01:10:52,834] It appears that in a supersymmetric theory,
+- [01:10:52,834 - 01:10:56,834] that there are additional dimensions of space.
+- [01:10:56,834 - 01:11:00,834] Now, those additional dimensions of space...
+- [01:11:00,834 - 01:11:07,834] We have time, x-naught, and we have x-one-two-three.
+- [01:11:07,834 - 01:11:09,834] And those are the ordinary dimensions
+- [01:11:09,834 - 01:11:11,834] of space, and that's all there is.
+- [01:11:11,834 - 01:11:13,834] But in supersymmetric theories, there
+- [01:11:13,834 - 01:11:15,834] are additional directions of space,
+- [01:11:15,834 - 01:11:17,834] not space-time, but space,
+- [01:11:17,834 - 01:11:21,834] and those other directions are Grassman variables, theta.
+- [01:11:21,834 - 01:11:23,834] How many of them are there?
+- [01:11:23,834 - 01:11:25,834] We'll get to that.
+- [01:11:25,834 - 01:11:31,834] Basically, two complex, or four real Grassman variables.
+- [01:11:31,834 - 01:11:33,834] We can call them theta-alpha, too.
+- [01:11:33,834 - 01:11:35,834] Think of them as complex,
+- [01:11:35,834 - 01:11:37,834] but complex simply means two real,
+- [01:11:37,834 - 01:11:39,834] four of them altogether.
+- [01:11:39,834 - 01:11:43,834] And it is as if supersymmetric
+- [01:11:43,834 - 01:11:47,834] theories are theories which, if you like,
+- [01:11:47,834 - 01:11:51,834] live in a space-time which is composed of,
+- [01:11:51,834 - 01:11:56,834] of both ordinary coordinates and Grassman coordinates.
+- [01:11:56,834 - 01:12:01,834] Now, this is extremely odd, very, very abstract.
+- [01:12:01,834 - 01:12:04,834] But at least one thing you can say.
+- [01:12:04,834 - 01:12:07,834] The Grassman coordinates are small.
+- [01:12:07,834 - 01:12:10,834] They don't correspond to big, extended directions of space.
+- [01:12:10,834 - 01:12:12,834] You can't move around in those.
+- [01:12:12,834 - 01:12:14,834] And why do I say they're small?
+- [01:12:14,834 - 01:12:18,834] They're small because theta-squared is equal to zero.
+- [01:12:18,834 - 01:12:19,834] Okay?
+- [01:12:19,834 - 01:12:21,834] So like any really, really small number,
+- [01:12:21,834 - 01:12:24,834] its square can be taken to be zero.
+- [01:12:24,834 - 01:12:28,834] So Grassman coordinates are small,
+- [01:12:28,834 - 01:12:31,334] but nevertheless, they are important
+- [01:12:31,334 - 01:12:33,834] to the structure of the theory.
+- [01:12:33,834 - 01:12:36,834] And then the way a supersymmetric theory is set up
+- [01:12:36,834 - 01:12:38,834] is by defining a Lagrange density,
+- [01:12:38,834 - 01:12:40,834] and we'll talk about this a little bit.
+- [01:12:40,834 - 01:12:41,834] I was going to go
+- [01:12:41,834 - 01:12:42,834] into this a little bit tonight,
+- [01:12:42,834 - 01:12:44,834] but it's getting a little too late.
+- [01:12:44,834 - 01:12:48,834] But it's a Lagrange density which,
+- [01:12:48,834 - 01:12:49,834] oh, first of all,
+- [01:12:49,834 - 01:12:52,834] no, before we get to the Lagrange density,
+- [01:12:52,834 - 01:12:55,834] let's talk about fields.
+- [01:12:55,834 - 01:13:01,834] Fields ordinarily are functions of the x's.
+- [01:13:01,834 - 01:13:04,834] Let's call them phi of x.
+- [01:13:04,834 - 01:13:07,834] That's normally the way we think about fields.
+- [01:13:07,834 - 01:13:09,834] But in a supersymmetric theory,
+- [01:13:09,834 - 01:13:15,834] the fields are functions of x and the thetas.
+- [01:13:15,834 - 01:13:16,834] So it's as if, indeed,
+- [01:13:16,834 - 01:13:18,834] there were additional dimensions of space,
+- [01:13:18,834 - 01:13:20,834] and fields can depend on
+- [01:13:20,834 - 01:13:22,834] both the x's and the thetas.
+- [01:13:22,834 - 01:13:27,834] Now, the theta dependence is very limited.
+- [01:13:27,834 - 01:13:29,834] Why is it limited?
+- [01:13:29,834 - 01:13:30,834] Imagine expanding.
+- [01:13:30,834 - 01:13:34,834] Let's suppose that this phi was an ordinary number,
+- [01:13:34,834 - 01:13:37,834] as opposed to a Grassman number.
+- [01:13:37,834 - 01:13:41,834] Then you would write that this ordinary number,
+- [01:13:41,834 - 01:13:45,834] phi of x and theta,
+- [01:13:45,834 - 01:13:48,834] let's make this a capital phi,
+- [01:13:48,834 - 01:13:50,834] it's called a superfield.
+- [01:13:50,834 - 01:13:52,834] It's called a superfield because it,
+- [01:13:52,834 - 01:13:53,834] not because,
+- [01:13:53,834 - 01:13:55,834] but it's called a superfield,
+- [01:13:55,834 - 01:13:58,834] and it depends on position,
+- [01:13:58,834 - 01:14:00,834] ordinary position, space and time,
+- [01:14:00,834 - 01:14:02,834] and these Grassman variables.
+- [01:14:02,834 - 01:14:03,834] All right, now,
+- [01:14:03,834 - 01:14:08,834] you can take any function of Grassman variables
+- [01:14:08,834 - 01:14:13,834] and expand it in powers of the Grassman variables.
+- [01:14:13,834 - 01:14:15,834] Let's suppose, for example,
+- [01:14:15,834 - 01:14:18,834] there are four distinct thetas.
+- [01:14:18,834 - 01:14:21,834] This is correct for an ordinary supersymmetric theory.
+- [01:14:21,834 - 01:14:23,834] We'll understand why, but not right now.
+- [01:14:23,834 - 01:14:24,834] There are four thetas,
+- [01:14:24,834 - 01:14:27,834] theta one, theta two, theta three, and theta four.
+- [01:14:27,834 - 01:14:30,834] They can be combined into two complex thetas,
+- [01:14:30,834 - 01:14:32,834] but let's just take them as four thetas.
+- [01:14:32,834 - 01:14:36,834] Then phi of x and theta can be expanded.
+- [01:14:36,834 - 01:14:40,834] Phi, let's call it little phi now,
+- [01:14:40,834 - 01:14:44,834] phi of x,
+- [01:14:44,834 - 01:14:46,834] which is independent of theta,
+- [01:14:46,834 - 01:14:48,834] it's a power series expansion in the theta,
+- [01:14:48,834 - 01:14:55,834] plus, let's call it theta alpha,
+- [01:14:55,834 - 01:14:58,834] psi alpha,
+- [01:14:58,834 - 01:15:00,834] alpha is just some index
+- [01:15:00,834 - 01:15:03,834] which labels the various Grassman numbers in the problem,
+- [01:15:03,834 - 01:15:05,834] four of them in this case,
+- [01:15:05,834 - 01:15:07,834] these,
+- [01:15:07,834 - 01:15:09,834] then there might be something proportional
+- [01:15:09,834 - 01:15:12,834] to theta alpha, theta beta,
+- [01:15:12,834 - 01:15:14,834] times, I don't know,
+- [01:15:14,834 - 01:15:16,834] give me a name of another field,
+- [01:15:16,834 - 01:15:18,834] uh,
+- [01:15:18,834 - 01:15:21,834] sine z,
+- [01:15:21,834 - 01:15:24,834] z alpha beta,
+- [01:15:24,834 - 01:15:26,834] this is also a function of x,
+- [01:15:26,834 - 01:15:28,834] this is also a function of x,
+- [01:15:28,834 - 01:15:31,334] and so it goes until you
+- [01:15:31,334 - 01:15:33,834] get to four powers of theta.
+- [01:15:33,834 - 01:15:36,834] All four thetas had better be different.
+- [01:15:36,834 - 01:15:38,834] They also have to be different here
+- [01:15:38,834 - 01:15:41,834] because any theta squared is zero.
+- [01:15:41,834 - 01:15:43,834] So you can have theta one times theta two,
+- [01:15:43,834 - 01:15:45,834] but you can't have theta one squared.
+- [01:15:45,834 - 01:15:46,834] Not allowed.
+- [01:15:46,834 - 01:15:47,834] And eventually you get to theta one,
+- [01:15:47,834 - 01:15:48,834] theta two,
+- [01:15:48,834 - 01:15:49,834] theta three,
+- [01:15:49,834 - 01:15:50,834] theta four,
+- [01:15:50,834 - 01:15:52,834] times some other thing,
+- [01:15:52,834 - 01:15:53,834] I don't know,
+- [01:15:53,834 - 01:15:54,834] we need to give it a name,
+- [01:15:54,834 - 01:15:57,834] d of x.
+- [01:15:57,834 - 01:15:59,834] And then there is no more than that.
+- [01:15:59,834 - 01:16:01,834] There is no more than that.
+- [01:16:01,834 - 01:16:03,834] Another way of saying it
+- [01:16:03,834 - 01:16:05,834] is that the super field
+- [01:16:05,834 - 01:16:09,834] is composed of several ordinary fields.
+- [01:16:09,834 - 01:16:12,834] A boson field, phi of x,
+- [01:16:12,834 - 01:16:15,834] a fermion field, psi,
+- [01:16:15,834 - 01:16:17,834] why do I say it's a fermion field?
+- [01:16:17,834 - 01:16:20,834] Well, because it has to be a Grassmann number.
+- [01:16:20,834 - 01:16:22,834] Grassmann number times Grassmann number
+- [01:16:22,834 - 01:16:23,834] is an ordinary number.
+- [01:16:23,834 - 01:16:26,834] And then another boson type field.
+- [01:16:26,834 - 01:16:28,834] And then, and so it goes,
+- [01:16:28,834 - 01:16:31,834] a finite number of them,
+- [01:16:31,834 - 01:16:33,834] a finite multiplet,
+- [01:16:33,834 - 01:16:35,834] a finite multiplet of fields
+- [01:16:35,834 - 01:16:41,834] associated with different particles.
+- [01:16:41,834 - 01:16:43,834] And so you can either think of it
+- [01:16:43,834 - 01:16:45,834] as a collection of ordinary fields,
+- [01:16:45,834 - 01:16:47,834] or you can group them together
+- [01:16:47,834 - 01:16:49,834] and do the bookkeeping by saying
+- [01:16:49,834 - 01:16:51,834] there's an additional family of
+- [01:16:51,834 - 01:16:53,834] Grassmann coordinates,
+- [01:16:53,834 - 01:16:55,834] and the field can be expanded
+- [01:16:55,834 - 01:16:57,834] in those Grassmann coordinates.
+- [01:16:57,834 - 01:16:59,834] So it's a kind of bookkeeping.
+- [01:16:59,834 - 01:17:02,834] Once you have the idea of a super field,
+- [01:17:02,834 - 01:17:05,834] you can then write a Lagrangian,
+- [01:17:05,834 - 01:17:08,834] a Lagrange density,
+- [01:17:08,834 - 01:17:13,834] which depends on the x's and the theta's,
+- [01:17:13,834 - 01:17:15,834] and it's built up,
+- [01:17:15,834 - 01:17:18,834] out of these super fields,
+- [01:17:18,834 - 01:17:19,834] products of them,
+- [01:17:19,834 - 01:17:21,834] functions of them,
+- [01:17:21,834 - 01:17:25,834] various kinds of derivatives of them.
+- [01:17:25,834 - 01:17:27,834] I won't bother writing down
+- [01:17:27,834 - 01:17:29,834] a specific Lagrangian,
+- [01:17:29,834 - 01:17:32,834] but it's built out of the super fields.
+- [01:17:32,834 - 01:17:34,834] And that Lagrangian,
+- [01:17:34,834 - 01:17:35,834] the Lagrangian density,
+- [01:17:35,834 - 01:17:39,834] depends on x and theta.
+- [01:17:39,834 - 01:17:42,834] And the important question is always,
+- [01:17:42,834 - 01:17:43,834] when you have a Lagrangian,
+- [01:17:43,834 - 01:17:45,834] what do you do with a Lagrangian?
+- [01:17:45,834 - 01:17:48,834] You integrate it to find an action.
+- [01:17:48,834 - 01:17:50,834] And then in classical physics,
+- [01:17:50,834 - 01:17:53,834] it's either the principle of least action,
+- [01:17:53,834 - 01:17:55,834] or you use the Lagrangian
+- [01:17:55,834 - 01:17:57,834] in Feynman's path integral formulation
+- [01:17:57,834 - 01:17:59,834] of quantum mechanics.
+- [01:17:59,834 - 01:18:02,834] The important thing is the action.
+- [01:18:02,834 - 01:18:04,834] The action ordinarily
+- [01:18:04,834 - 01:18:07,834] is an integral of the Lagrange density
+- [01:18:07,834 - 01:18:11,834] over the four dimensions of space,
+- [01:18:11,834 - 01:18:13,834] but now it also becomes
+- [01:18:13,834 - 01:18:15,834] an integration of the Lagrange density.
+- [01:18:15,834 - 01:18:19,834] And then over the various thetas.
+- [01:18:22,834 - 01:18:26,834] That is the structure of supersymmetric theories
+- [01:18:26,834 - 01:18:28,834] that everything is exactly as if
+- [01:18:28,834 - 01:18:32,834] there were some additional directions of space,
+- [01:18:32,834 - 01:18:36,834] and the action of the theory
+- [01:18:36,834 - 01:18:39,834] becomes an integral not only over ordinary space,
+- [01:18:39,834 - 01:18:42,834] but also over the thetas.
+- [01:18:42,834 - 01:18:44,834] Now that raises a question.
+- [01:18:44,834 - 01:18:47,834] What the devil do we mean by the integral
+- [01:18:47,834 - 01:18:50,834] over Grassman variables?
+- [01:18:50,834 - 01:18:53,834] What do we mean by taking a function
+- [01:18:53,834 - 01:18:55,834] of Grassman variables
+- [01:18:55,834 - 01:18:57,834] and integrating it over theta?
+- [01:18:57,834 - 01:19:02,834] That's obviously an as yet undefined concept.
+- [01:19:02,834 - 01:19:05,834] I think we did define the arithmetic
+- [01:19:05,834 - 01:19:08,833] of Grassman variables.
+- [01:19:08,833 - 01:19:11,833] You can add them, you can multiply them,
+- [01:19:11,833 - 01:19:13,833] you can do usual arithmetic operations.
+- [01:19:14,834 - 01:19:16,834] Don't try dividing by them.
+- [01:19:16,834 - 01:19:18,834] That gets a little dicey.
+- [01:19:18,834 - 01:19:21,834] But adding and multiplying is an okay thing to do.
+- [01:19:21,834 - 01:19:25,834] You can do the differential calculus.
+- [01:19:25,834 - 01:19:28,834] The differential calculus is very simple.
+- [01:19:28,834 - 01:19:31,834] If you want to differentiate with respect to a theta,
+- [01:19:31,834 - 01:19:34,834] you do more or less the obvious thing.
+- [01:19:34,834 - 01:19:36,834] If you want to differentiate with respect to theta one,
+- [01:19:36,834 - 01:19:39,834] you just find out where theta one appears in here.
+- [01:19:39,834 - 01:19:40,834] Here it is.
+- [01:19:40,834 - 01:19:41,834] It could appear here.
+- [01:19:41,834 - 01:19:43,834] And you're just differentiating with respect to theta one.
+- [01:19:43,834 - 01:19:45,834] You're just differentiating with respect to it.
+- [01:19:45,834 - 01:19:48,834] It just differentiates exactly the way
+- [01:19:48,834 - 01:19:51,834] you would ordinarily differentiate.
+- [01:19:51,834 - 01:19:55,834] You don't have to worry about higher powers of theta.
+- [01:19:55,834 - 01:19:58,834] A given theta can only appear to a linear order
+- [01:19:58,834 - 01:19:59,834] and no higher.
+- [01:19:59,834 - 01:20:03,834] So the table of derivatives is very, very simple.
+- [01:20:03,834 - 01:20:06,834] The derivative of a constant is zero.
+- [01:20:06,834 - 01:20:09,834] The derivative of something proportional to theta
+- [01:20:09,834 - 01:20:11,834] is just a proportionality factor.
+- [01:20:11,834 - 01:20:12,834] And that's it.
+- [01:20:12,834 - 01:20:14,834] It's a simple table of derivatives.
+- [01:20:14,834 - 01:20:19,334] The question is what do we
+- [01:20:19,334 - 01:20:23,834] mean by the integral over thetas
+- [01:20:23,834 - 01:20:26,834] of Grassmann variables.
+- [01:20:26,834 - 01:20:33,834] And I'm going to tell you now the justification
+- [01:20:33,834 - 01:20:37,834] for the rules of integration is that they're useful.
+- [01:20:37,834 - 01:20:40,834] That they're useful in various contexts.
+- [01:20:40,834 - 01:20:42,834] It's completely abstract.
+- [01:20:42,834 - 01:20:46,834] An integral is not in any sense a sum.
+- [01:20:46,834 - 01:20:49,834] The integrals over Grassmann variables are analogous
+- [01:20:49,834 - 01:20:51,834] to definite integrals.
+- [01:20:51,834 - 01:20:53,834] They're not indefinite integrals.
+- [01:20:53,834 - 01:20:55,834] They're thought of as definite integrals.
+- [01:20:55,834 - 01:20:58,834] So when you integrate over theta here,
+- [01:20:58,834 - 01:21:00,834] you're doing a definite integral
+- [01:21:00,834 - 01:21:02,834] over the entire theta space.
+- [01:21:02,834 - 01:21:06,834] I won't bother writing from minus infinity to infinity
+- [01:21:06,834 - 01:21:08,834] because theta is a tiny
+- [01:21:08,834 - 01:21:10,834] variable which doesn't vary very much.
+- [01:21:10,834 - 01:21:12,834] But here's a little bit of a reference.
+- [01:21:12,834 - 01:21:15,334] It's the, there's no sense,
+- [01:21:15,334 - 01:21:17,834] no analog of an indefinite integral.
+- [01:21:17,834 - 01:21:19,834] There's only the analog, yeah.
+- [01:21:19,834 - 01:21:21,834] By saying there's no indefinite integral,
+- [01:21:21,834 - 01:21:23,834] are you getting away from saying that the integral
+- [01:21:23,834 - 01:21:25,834] is the opposite of the derivative?
+- [01:21:25,834 - 01:21:28,834] Very much you are getting away from that
+- [01:21:28,834 - 01:21:30,834] because as it turns out, the integral and the derivative
+- [01:21:30,834 - 01:21:32,834] are exactly the same thing.
+- [01:21:32,834 - 01:21:34,834] Right.
+- [01:21:34,834 - 01:21:39,834] With the d4x, we're reading over all of space-time.
+- [01:21:39,834 - 01:21:40,834] Yeah.
+- [01:21:40,834 - 01:21:41,834] So that's also a definite integral.
+- [01:21:41,834 - 01:21:43,834] It is also a definite integral, yes.
+- [01:21:43,834 - 01:21:45,834] Yes.
+- [01:21:45,834 - 01:21:46,834] Yes.
+- [01:21:46,834 - 01:21:48,834] So I'm just going to tell you,
+- [01:21:48,834 - 01:21:52,834] for the purposes of knowing exactly what's written here,
+- [01:21:52,834 - 01:21:55,834] I'm going to tell you
+- [01:21:55,834 - 01:21:58,834] what the table of integrals is
+- [01:21:58,834 - 01:22:02,834] for a, for Grassman integration.
+- [01:22:02,834 - 01:22:10,834] And then we can start to talk a little bit
+- [01:22:10,834 - 01:22:14,834] about supersymmetric theories and how you construct them.
+- [01:22:14,834 - 01:22:15,834] How you construct them,
+- [01:22:15,834 - 01:22:18,834] but the main point of supersymmetric theories
+- [01:22:18,834 - 01:22:21,834] is that they, whatever they do,
+- [01:22:21,834 - 01:22:26,834] they preserve the symmetry between bosons and fermions.
+- [01:22:26,834 - 01:22:30,834] They ensure the delicate cancellations.
+- [01:22:30,834 - 01:22:32,834] If you construct them properly,
+- [01:22:32,834 - 01:22:36,834] they can be complicated, interacting field theories,
+- [01:22:36,834 - 01:22:39,834] but they will always preserve in the same way
+- [01:22:39,834 - 01:22:45,834] that if you construct ordinary field theories carefully,
+- [01:22:45,834 - 01:22:48,834] they will preserve Lorentz invariance.
+- [01:22:48,834 - 01:22:50,834] They will preserve rotation invariance.
+- [01:22:50,834 - 01:22:53,834] They will preserve the various invariances
+- [01:22:53,834 - 01:22:55,834] that you built into the Lagrangian.
+- [01:22:55,834 - 01:22:57,834] In the same way,
+- [01:22:57,834 - 01:23:00,334] by being careful to at
+- [01:23:00,334 - 01:23:02,834] every step preserve the supersymmetry,
+- [01:23:02,834 - 01:23:06,834] you can ensure that at the end of the day
+- [01:23:06,834 - 01:23:08,834] that these delicate cancellations,
+- [01:23:08,834 - 01:23:11,834] or Feynman diagrams and things like that,
+- [01:23:11,834 - 01:23:17,834] are preserved and don't get ruined by interactions,
+- [01:23:17,834 - 01:23:21,834] by all the various complexities in the theory.
+- [01:23:21,834 - 01:23:23,834] That's the point of it.
+- [01:23:23,834 - 01:23:25,834] So the point of it is
+- [01:23:25,834 - 01:23:27,834] to set up a kind of calculus
+- [01:23:27,834 - 01:23:30,834] of how to construct supersymmetric theories.
+- [01:23:30,834 - 01:23:31,834] That's what we're doing.
+- [01:23:31,834 - 01:23:33,834] We're attempting to build a calculus
+- [01:23:33,834 - 01:23:36,834] which is analogous to the tensor calculus
+- [01:23:36,834 - 01:23:37,834] of a,
+- [01:23:37,834 - 01:23:39,834] of relativity,
+- [01:23:39,834 - 01:23:41,834] which ensures that at every stage
+- [01:23:41,834 - 01:23:44,834] we preserve the invariances on the rotation,
+- [01:23:44,834 - 01:23:47,834] on the Lorentz transformation and so forth.
+- [01:23:47,834 - 01:23:49,834] We're talking now about preserving
+- [01:23:49,834 - 01:23:52,834] the invariances under supersymmetry.
+- [01:23:52,834 - 01:23:54,834] Okay, so we have to know
+- [01:23:54,834 - 01:23:57,834] how to do Grassmann integrals.
+- [01:23:57,834 - 01:23:59,834] And I'm not going to spend a lot of time.
+- [01:23:59,834 - 01:24:02,834] I'm just going to tell you
+- [01:24:02,834 - 01:24:04,834] what the rules are.
+- [01:24:04,834 - 01:24:06,834] The rules are mostly justified
+- [01:24:06,834 - 01:24:08,834] by their usefulness,
+- [01:24:08,834 - 01:24:10,834] but I'll tell you some of the,
+- [01:24:10,834 - 01:24:12,834] the rule is pretty unique.
+- [01:24:12,834 - 01:24:15,834] Pretty unique follows from a couple,
+- [01:24:15,834 - 01:24:18,834] a small number of assumptions.
+- [01:24:18,834 - 01:24:21,834] The first assumption is linearity.
+- [01:24:21,834 - 01:24:24,834] Let's just talk about the integral of a one coordinate.
+- [01:24:24,834 - 01:24:26,834] Supposing there's only one Grassmann coordinate,
+- [01:24:26,834 - 01:24:29,834] and I want to consider an integral
+- [01:24:29,834 - 01:24:33,834] of some function of theta, d theta.
+- [01:24:33,834 - 01:24:36,834] All right, the first rule is linearity.
+- [01:24:36,834 - 01:24:39,834] Linearity says that if you have a,
+- [01:24:39,834 - 01:24:42,834] and a and b can be ordinary numbers,
+- [01:24:42,834 - 01:24:48,834] a times, let's call it f of theta, d theta,
+- [01:24:48,834 - 01:24:53,834] sorry, a f of theta plus
+- [01:24:53,834 - 01:24:58,834] b g of theta, d theta.
+- [01:24:58,834 - 01:25:00,834] Very simply, the answer,
+- [01:25:00,834 - 01:25:02,834] and a's are just ordinary numbers
+- [01:25:02,834 - 01:25:04,834] for our purposes now.
+- [01:25:04,834 - 01:25:06,834] That's just equal to a, d theta,
+- [01:25:06,834 - 01:25:10,834] times the integral of f of theta, d theta,
+- [01:25:10,834 - 01:25:14,834] plus b times the integral of g of theta,
+- [01:25:14,834 - 01:25:17,834] sorry, g of theta, d theta.
+- [01:25:17,834 - 01:25:18,834] That's simple enough.
+- [01:25:18,834 - 01:25:22,834] Just the usual linear rules of calculus.
+- [01:25:22,834 - 01:25:26,834] And the only other rule that you really need
+- [01:25:26,834 - 01:25:29,834] is that the integral,
+- [01:25:29,834 - 01:25:31,834] all right, let's go back to ordinary functions
+- [01:25:31,834 - 01:25:33,834] for a minute.
+- [01:25:33,834 - 01:25:36,834] What is the integral with respect to a function?
+- [01:25:36,834 - 01:25:38,834] Well, the integral is an ordinary coordinate,
+- [01:25:38,834 - 01:25:41,834] let's call it the dx,
+- [01:25:41,834 - 01:25:50,834] of the derivative of a function with respect to x.
+- [01:25:50,834 - 01:25:52,834] Let's make an assumption,
+- [01:25:52,834 - 01:25:54,834] let's assume that the function f,
+- [01:25:54,834 - 01:25:56,834] integral, definite integral,
+- [01:25:56,834 - 01:25:58,834] from minus infinity to infinity,
+- [01:25:58,834 - 01:26:00,834] and let's add one assumption
+- [01:26:00,834 - 01:26:03,834] that the functions that will be interesting to us
+- [01:26:03,834 - 01:26:06,834] are ones which go to zero very, very far away.
+- [01:26:06,834 - 01:26:09,834] For most purposes in space-time,
+- [01:26:09,834 - 01:26:12,834] we're interested in concentrated regions
+- [01:26:12,834 - 01:26:14,834] of energy and momentum and so forth.
+- [01:26:14,834 - 01:26:16,834] So for most purposes,
+- [01:26:16,834 - 01:26:18,834] we're interested in functions which are,
+- [01:26:18,834 - 01:26:20,834] vanish far away, large x,
+- [01:26:20,834 - 01:26:22,834] large positive and negative x.
+- [01:26:22,834 - 01:26:24,834] So what is such an integral?
+- [01:26:24,834 - 01:26:25,834] Zero.
+- [01:26:25,834 - 01:26:26,834] Right.
+- [01:26:26,834 - 01:26:29,834] That's just the rule for integration by parts,
+- [01:26:29,834 - 01:26:30,834] if you like,
+- [01:26:30,834 - 01:26:32,834] so that the integral of a derivative,
+- [01:26:32,834 - 01:26:34,834] the definite integral over all space,
+- [01:26:34,834 - 01:26:36,834] is equal to zero.
+- [01:26:36,834 - 01:26:39,834] That's a rather important formula
+- [01:26:39,834 - 01:26:41,834] that recurs over and over again,
+- [01:26:41,834 - 01:26:43,834] we use it left and right all over the place.
+- [01:26:43,834 - 01:26:46,834] Let's ensure that it's correct for,
+- [01:26:46,834 - 01:26:49,834] for Grassman functions.
+- [01:26:49,834 - 01:26:52,834] Derivative d by d theta
+- [01:26:52,834 - 01:26:54,834] of f of theta
+- [01:26:54,834 - 01:26:56,834] is equal to zero,
+- [01:26:56,834 - 01:27:02,834] d theta, sorry, d theta,
+- [01:27:02,834 - 01:27:03,834] equals zero.
+- [01:27:03,834 - 01:27:05,834] That pretty much determines
+- [01:27:05,834 - 01:27:12,834] the table of integrals.
+- [01:27:12,834 - 01:27:14,834] For example,
+- [01:27:14,834 - 01:27:20,834] supposing we take for f of theta
+- [01:27:20,834 - 01:27:21,834] some constant,
+- [01:27:21,834 - 01:27:24,834] let f of theta equal any,
+- [01:27:24,834 - 01:27:26,834] let it just be theta,
+- [01:27:26,834 - 01:27:29,834] let it just be theta.
+- [01:27:29,834 - 01:27:31,834] Let f of theta be equal to theta,
+- [01:27:31,834 - 01:27:34,834] then what's df by d theta?
+- [01:27:35,834 - 01:27:37,834] One.
+- [01:27:37,834 - 01:27:39,834] Just differentiating f of theta
+- [01:27:39,834 - 01:27:42,834] with respect to theta just gives one,
+- [01:27:42,834 - 01:27:46,834] so it follows that the integral of one,
+- [01:27:46,834 - 01:27:48,834] which is just one,
+- [01:27:48,834 - 01:27:51,834] d theta is equal to zero.
+- [01:27:51,834 - 01:27:54,834] So the definite integral of theta
+- [01:27:54,834 - 01:27:56,834] over all theta,
+- [01:27:56,834 - 01:27:58,834] whatever that means,
+- [01:27:58,834 - 01:28:02,834] is by definition now equal to zero.
+- [01:28:02,834 - 01:28:03,834] Okay?
+- [01:28:03,834 - 01:28:04,834] The only,
+- [01:28:04,834 - 01:28:07,834] the next thing in the integral,
+- [01:28:07,834 - 01:28:10,834] the next thing we could have is
+- [01:28:10,834 - 01:28:14,834] f of theta could be proportional to,
+- [01:28:14,834 - 01:28:19,834] sorry,
+- [01:28:19,834 - 01:28:23,834] yeah, the next integral that we could study
+- [01:28:23,834 - 01:28:25,834] is the integral,
+- [01:28:25,834 - 01:28:28,834] let's put it over here,
+- [01:28:28,834 - 01:28:32,834] integral theta d theta.
+- [01:28:32,834 - 01:28:33,834] Okay?
+- [01:28:34,834 - 01:28:37,834] What about theta squared d theta?
+- [01:28:37,834 - 01:28:40,834] Theta squared is zero,
+- [01:28:40,834 - 01:28:41,834] so we don't have to
+- [01:28:41,834 - 01:28:42,834] worry about theta squared d theta.
+- [01:28:42,834 - 01:28:44,834] Theta cubed d theta,
+- [01:28:44,834 - 01:28:46,334] this is the only other
+- [01:28:46,334 - 01:28:47,834] thing we have to worry about.
+- [01:28:47,834 - 01:28:50,834] What is the integral of theta d theta?
+- [01:28:50,834 - 01:28:51,834] Okay?
+- [01:28:51,834 - 01:28:53,834] This is not a Grassman number,
+- [01:28:53,834 - 01:28:55,834] because it's got two Grassman numbers,
+- [01:28:55,834 - 01:28:58,834] d theta is counted as a Grassman number.
+- [01:28:58,834 - 01:29:01,834] This is an ordinary number.
+- [01:29:01,834 - 01:29:02,834] In fact,
+- [01:29:02,834 - 01:29:05,834] you need a rule here.
+- [01:29:05,834 - 01:29:06,834] The rule doesn't matter.
+- [01:29:06,834 - 01:29:07,834] It's a convention.
+- [01:29:07,834 - 01:29:08,834] It's a convention,
+- [01:29:08,834 - 01:29:10,834] but it's a convention that
+- [01:29:10,834 - 01:29:13,834] this is equal to one.
+- [01:29:13,834 - 01:29:14,834] And that's it.
+- [01:29:14,834 - 01:29:16,834] That's the whole table of integrals
+- [01:29:16,834 - 01:29:21,834] of functions of one Grassman variable.
+- [01:29:21,834 - 01:29:24,834] All right, so now we can write
+- [01:29:24,834 - 01:29:26,834] the integral d theta
+- [01:29:26,834 - 01:29:28,834] of any function of theta,
+- [01:29:28,834 - 01:29:30,834] and any function of theta
+- [01:29:30,834 - 01:29:32,834] can be written as something like this.
+- [01:29:32,834 - 01:29:33,834] So,
+- [01:29:33,834 - 01:29:35,834] we can write this as
+- [01:29:35,834 - 01:29:37,834] a plus b theta,
+- [01:29:37,834 - 01:29:39,834] and that's all there is.
+- [01:29:39,834 - 01:29:41,834] Nothing beyond that.
+- [01:29:41,834 - 01:29:44,834] The integral of theta times a,
+- [01:29:44,834 - 01:29:46,834] well, the integral of theta is equal to zero,
+- [01:29:46,834 - 01:29:48,834] so that gives you zero.
+- [01:29:48,834 - 01:29:50,834] And the integral of theta d theta,
+- [01:29:50,834 - 01:29:53,834] that's one.
+- [01:29:53,834 - 01:29:56,834] I should put the d theta over here.
+- [01:29:56,834 - 01:29:59,834] The integral of theta d theta is one by assumption,
+- [01:29:59,834 - 01:30:01,834] and so the answer is just b.
+- [01:30:02,834 - 01:30:05,834] Interesting, yeah.
+- [01:30:05,834 - 01:30:07,834] Is there an f of theta
+- [01:30:07,834 - 01:30:09,834] such that d f d theta is equal to theta?
+- [01:30:09,834 - 01:30:10,834] No.
+- [01:30:10,834 - 01:30:13,834] No.
+- [01:30:13,834 - 01:30:15,834] Because it would have to be theta squared, right?
+- [01:30:15,834 - 01:30:17,834] Yeah, but there is no theta squared.
+- [01:30:17,834 - 01:30:18,834] Right?
+- [01:30:18,834 - 01:30:19,834] So we can't,
+- [01:30:19,834 - 01:30:22,834] if there was such a function,
+- [01:30:22,834 - 01:30:23,834] we would immediately conclude
+- [01:30:23,834 - 01:30:24,834] this has to be zero.
+- [01:30:24,834 - 01:30:26,834] Right.
+- [01:30:26,834 - 01:30:27,834] This is part of the story
+- [01:30:27,834 - 01:30:30,834] that you can't divide by a theta,
+- [01:30:30,834 - 01:30:31,834] but, all right,
+- [01:30:31,834 - 01:30:33,834] so here's an example.
+- [01:30:33,834 - 01:30:35,834] The integral d theta
+- [01:30:35,834 - 01:30:37,834] of a function of theta
+- [01:30:37,834 - 01:30:40,834] is the last term in the expansion.
+- [01:30:40,834 - 01:30:41,834] In this case,
+- [01:30:41,834 - 01:30:43,834] it's the term in the expansion
+- [01:30:43,834 - 01:30:45,834] with one theta.
+- [01:30:45,834 - 01:30:47,834] That's the integral of b.
+- [01:30:47,834 - 01:30:49,834] Notice it's the same as the derivative.
+- [01:30:49,834 - 01:30:51,834] It's the same as the derivative.
+- [01:30:51,834 - 01:30:54,834] But that's the integral of a one theta
+- [01:30:54,834 - 01:30:56,834] of an arbitrary function of theta.
+- [01:30:56,834 - 01:30:59,834] An arbitrary function of theta has two terms,
+- [01:30:59,834 - 01:31:01,834] and it's just the coefficient of theta.
+- [01:31:01,834 - 01:31:03,834] It's the coefficient of the last term.
+- [01:31:03,834 - 01:31:05,834] That's the definition of the integral d theta.
+- [01:31:05,834 - 01:31:06,834] It's pretty simple.
+- [01:31:06,834 - 01:31:09,834] It's amazing that it has any use.
+- [01:31:09,834 - 01:31:12,834] What if there were two thetas?
+- [01:31:12,834 - 01:31:15,834] Let's suppose there are two thetas.
+- [01:31:15,834 - 01:31:17,834] Well, I'll tell you what the rules are.
+- [01:31:17,834 - 01:31:19,834] You can work them out
+- [01:31:19,834 - 01:31:21,834] by the same kind of argument,
+- [01:31:21,834 - 01:31:23,834] exactly the same argument.
+- [01:31:23,834 - 01:31:25,834] In fact, you can repeat the argument
+- [01:31:25,834 - 01:31:29,834] pretty much exactly the way it is.
+- [01:31:29,834 - 01:31:32,834] You can add two thetas
+- [01:31:32,834 - 01:31:34,834] or a complex theta,
+- [01:31:34,834 - 01:31:36,834] which has a real and imaginary part.
+- [01:31:36,834 - 01:31:38,834] Let's do it that way.
+- [01:31:38,834 - 01:31:40,834] A theta and a theta bar.
+- [01:31:40,834 - 01:31:42,834] Theta bar means the complex conjugate.
+- [01:31:42,834 - 01:31:44,334] You can also think of it
+- [01:31:44,334 - 01:31:45,834] as theta one and theta two.
+- [01:31:45,834 - 01:31:47,834] It doesn't matter.
+- [01:31:47,834 - 01:31:52,834] The general function of theta and theta bar
+- [01:31:52,834 - 01:31:54,834] consists of several terms.
+- [01:31:54,834 - 01:31:56,834] It consists of an a,
+- [01:31:56,834 - 01:31:58,834] which is independent of theta.
+- [01:31:58,834 - 01:32:02,834] It consists of, let's call it,
+- [01:32:02,834 - 01:32:05,834] theta bar psi,
+- [01:32:05,834 - 01:32:08,834] where psi is a Grassman number.
+- [01:32:08,834 - 01:32:10,834] Let's suppose a is not a Grassman number
+- [01:32:10,834 - 01:32:12,834] and f is not a Grassman number.
+- [01:32:12,834 - 01:32:14,834] And then there's another term,
+- [01:32:14,834 - 01:32:18,834] which is some psi bar times theta.
+- [01:32:18,834 - 01:32:21,834] In other words, things linear in the two thetas.
+- [01:32:21,834 - 01:32:26,834] And then the last term is,
+- [01:32:26,834 - 01:32:28,834] I don't know what to call it, b.
+- [01:32:28,834 - 01:32:32,834] Theta bar theta.
+- [01:32:32,834 - 01:32:34,834] The quadratic term.
+- [01:32:34,834 - 01:32:36,834] If there are only two thetas,
+- [01:32:36,834 - 01:32:39,834] then there's nothing beyond the quadratic term.
+- [01:32:39,834 - 01:32:41,834] Theta squared is equal to zero.
+- [01:32:41,834 - 01:32:44,834] Theta bar squared is equal to zero.
+- [01:32:44,834 - 01:32:47,834] Theta bar theta is not equal to zero.
+- [01:32:47,834 - 01:32:49,334] But theta bar theta bar
+- [01:32:49,334 - 01:32:50,834] times theta is equal to zero.
+- [01:32:50,834 - 01:32:51,834] So that's it.
+- [01:32:51,834 - 01:32:55,834] That's the most general function of two Grassman variables.
+- [01:32:55,834 - 01:32:57,334] As I said, you could write it
+- [01:32:57,334 - 01:32:58,834] in terms of theta one and theta two.
+- [01:32:58,834 - 01:33:00,834] It doesn't matter.
+- [01:33:00,834 - 01:33:05,834] There are altogether four terms.
+- [01:33:05,834 - 01:33:07,834] Okay, the integral.
+- [01:33:07,834 - 01:33:09,834] Here's the table of integrals.
+- [01:33:09,834 - 01:33:12,834] The integral, the theta, the theta bar,
+- [01:33:12,834 - 01:33:17,834] definite integral over both thetas,
+- [01:33:17,834 - 01:33:20,834] that's equal to zero.
+- [01:33:20,834 - 01:33:24,834] Just like the integral, the theta is equal to zero.
+- [01:33:24,834 - 01:33:27,834] The integral of theta,
+- [01:33:27,834 - 01:33:30,834] the theta, the theta bar.
+- [01:33:30,834 - 01:33:34,834] Care to guess what that is?
+- [01:33:34,834 - 01:33:35,834] Zero.
+- [01:33:35,834 - 01:33:36,834] Why?
+- [01:33:36,834 - 01:33:38,834] Because it contains an integral theta, the theta.
+- [01:33:38,834 - 01:33:40,834] Just forget this for a moment
+- [01:33:40,834 - 01:33:42,834] and concentrate on the first factor here.
+- [01:33:42,834 - 01:33:43,834] Theta, the theta.
+- [01:33:43,834 - 01:33:45,834] That's also equal to zero.
+- [01:33:45,834 - 01:33:49,834] Likewise, the integral theta bar,
+- [01:33:49,834 - 01:33:52,834] the theta, the theta bar,
+- [01:33:52,834 - 01:33:54,834] that's also equal to zero.
+- [01:33:54,834 - 01:33:57,834] The only non-zero integral
+- [01:33:57,834 - 01:34:01,834] is the integral theta bar theta,
+- [01:34:01,834 - 01:34:04,834] the theta bar, the theta.
+- [01:34:04,834 - 01:34:05,834] Do I have it right?
+- [01:34:05,834 - 01:34:06,834] Let me see.
+- [01:34:06,834 - 01:34:09,834] I think it's the theta, the theta bar.
+- [01:34:09,834 - 01:34:11,834] Remember, when you switch signs,
+- [01:34:11,834 - 01:34:13,834] when you switch orders, things, yeah.
+- [01:34:13,834 - 01:34:15,834] All right, you look at this,
+- [01:34:15,834 - 01:34:17,834] and you say, look, first of all,
+- [01:34:17,834 - 01:34:19,834] I see the integral theta, the theta.
+- [01:34:19,834 - 01:34:23,834] That was one.
+- [01:34:23,834 - 01:34:25,834] All right, so we do that integral first,
+- [01:34:25,834 - 01:34:26,834] and we call that one,
+- [01:34:26,834 - 01:34:28,834] and then we're left with the integral theta bar,
+- [01:34:28,834 - 01:34:29,834] the theta bar.
+- [01:34:29,834 - 01:34:32,834] By analogous reasoning, it's also one,
+- [01:34:32,834 - 01:34:35,834] so this is equal to one.
+- [01:34:35,834 - 01:34:38,834] That's the whole table of integrals,
+- [01:34:38,834 - 01:34:42,834] of integrals of arbitrary functions of two thetas.
+- [01:34:42,834 - 01:34:45,834] All right, now supposing we integrate
+- [01:34:45,834 - 01:34:47,834] function of theta and theta bar.
+- [01:34:47,834 - 01:34:50,834] In other words, we integrate not this,
+- [01:34:50,834 - 01:34:54,834] but just some general function,
+- [01:34:54,834 - 01:34:56,834] f of theta and theta bar.
+- [01:34:56,834 - 01:34:59,834] I think the reason you gave
+- [01:34:59,834 - 01:35:02,834] on the linear terms was backwards.
+- [01:35:02,834 - 01:35:07,834] I think that theta d theta will give you one.
+- [01:35:07,834 - 01:35:13,834] It's the d theta bar which gives you,
+- [01:35:13,834 - 01:35:17,834] integrating one will give you zero.
+- [01:35:17,834 - 01:35:20,834] Integrating one gives you zero, yeah.
+- [01:35:20,834 - 01:35:21,834] Right.
+- [01:35:21,834 - 01:35:23,834] So that's the reason why that will be zero,
+- [01:35:23,834 - 01:35:25,834] because it's integrating one.
+- [01:35:25,834 - 01:35:28,834] With respect to the other variables.
+- [01:35:28,834 - 01:35:30,834] Theta d theta d theta bar,
+- [01:35:30,834 - 01:35:31,834] the d theta bar is
+- [01:35:31,834 - 01:35:32,834] the part that makes the bottom.
+- [01:35:32,834 - 01:35:33,834] Yes, yes, yes.
+- [01:35:33,834 - 01:35:34,834] Did I say it backward?
+- [01:35:34,834 - 01:35:35,834] I think I might have said it.
+- [01:35:35,834 - 01:35:36,834] Yeah, I think you're right.
+- [01:35:36,834 - 01:35:37,834] I think I did say it backward.
+- [01:35:37,834 - 01:35:39,834] Right, yes.
+- [01:35:39,834 - 01:35:40,834] You're right.
+- [01:35:40,834 - 01:35:41,834] Okay.
+- [01:35:41,834 - 01:35:43,334] All right, so what's the
+- [01:35:43,334 - 01:35:44,834] upshot of an integral like this,
+- [01:35:44,834 - 01:35:46,834] with f being of this form?
+- [01:35:46,834 - 01:35:49,834] Well, the only term that contributes
+- [01:35:49,834 - 01:35:52,834] is the term with a theta bar theta here.
+- [01:35:52,834 - 01:35:54,834] Everything else gives zero.
+- [01:35:54,834 - 01:35:59,834] So the answer is just b.
+- [01:35:59,834 - 01:36:05,834] The integral of a function of Grassman variables
+- [01:36:05,834 - 01:36:10,834] is always the coefficient of the last term.
+- [01:36:10,834 - 01:36:11,834] That's it.
+- [01:36:11,834 - 01:36:17,833] That's the whole theory of Grassman integration.
+- [01:36:17,833 - 01:36:19,833] You simply find the coefficient of
+- [01:36:19,833 - 01:36:21,833] the last term in the expansion,
+- [01:36:21,833 - 01:36:23,833] and that's the integral.
+- [01:36:23,833 - 01:36:26,833] It sounds very, very trivial.
+- [01:36:26,833 - 01:36:28,833] It really does sound trivial,
+- [01:36:28,833 - 01:36:30,833] and yet its power is enormous.
+- [01:36:30,833 - 01:36:32,833] We'll do some examples.
+- [01:36:32,833 - 01:36:33,833] Yeah?
+- [01:36:33,833 - 01:36:34,833] I forgot.
+- [01:36:34,833 - 01:36:37,833] If we interchange theta bar and theta...
+- [01:36:37,833 - 01:36:38,833] It changes sign.
+- [01:36:38,833 - 01:36:40,833] It changes sign, but doesn't...
+- [01:36:40,833 - 01:36:42,833] Yeah, so you have to be careful about the integrals.
+- [01:36:42,833 - 01:36:47,333] For example, theta bar theta
+- [01:36:47,333 - 01:36:51,833] times d theta bar d theta
+- [01:36:51,833 - 01:36:53,833] is equal to minus one.
+- [01:36:53,833 - 01:36:55,833] Why do I say that?
+- [01:36:55,833 - 01:37:02,834] Because if we interchange these, d theta bar,
+- [01:37:02,834 - 01:37:05,834] then of course I would say it was plus one.
+- [01:37:05,834 - 01:37:07,334] And now we look at
+- [01:37:07,334 - 01:37:08,834] it, and in the sandwich here,
+- [01:37:08,834 - 01:37:11,834] between the theta bar and the d theta bar,
+- [01:37:11,834 - 01:37:13,334] we see something which we've
+- [01:37:13,334 - 01:37:14,834] already said was equal to one.
+- [01:37:14,834 - 01:37:16,334] We pull that out, and then we
+- [01:37:16,334 - 01:37:17,834] have the theta bar d theta bar.
+- [01:37:17,834 - 01:37:19,834] That's equal to one.
+- [01:37:19,834 - 01:37:21,834] So you have to be careful.
+- [01:37:21,834 - 01:37:26,834] This whole subject of supersymmetry divided physics
+- [01:37:26,834 - 01:37:28,834] into two groups of people.
+- [01:37:28,834 - 01:37:31,834] There were those who were able to follow it
+- [01:37:31,834 - 01:37:34,834] and those who weren't able to follow it.
+- [01:37:34,834 - 01:37:36,834] The ones who were not able to follow it
+- [01:37:36,834 - 01:37:38,334] were probably the most
+- [01:37:38,334 - 01:37:39,834] distinguished physicists in the world,
+- [01:37:39,834 - 01:37:42,834] Richard Feynman, Sidney Coleman.
+- [01:37:42,834 - 01:37:44,834] I would include myself among that camp,
+- [01:37:44,834 - 01:37:46,834] but not because I was distinguished,
+- [01:37:46,834 - 01:37:49,834] just because I was unable to follow it.
+- [01:37:49,834 - 01:37:51,834] And the people who were able to follow it
+- [01:37:51,834 - 01:37:54,834] were people who were good at keeping track of signs.
+- [01:37:57,834 - 01:37:59,834] I go berserk trying to keep
+- [01:37:59,834 - 01:38:01,834] track of the signs in supersymmetry,
+- [01:38:01,834 - 01:38:04,834] and I have no intuition for it.
+- [01:38:04,834 - 01:38:06,834] None of an intuition.
+- [01:38:06,834 - 01:38:08,834] I have no...
+- [01:38:08,834 - 01:38:10,834] It's just pure torture.
+- [01:38:10,834 - 01:38:12,834] It's a form of torture.
+- [01:38:12,834 - 01:38:14,834] Okay, never mind.
+- [01:38:14,834 - 01:38:16,834] Yeah.
+- [01:38:16,834 - 01:38:19,834] So here's the rules.
+- [01:38:19,834 - 01:38:22,834] We build supersymmetric Lagrangians
+- [01:38:22,834 - 01:38:25,834] out of superfields according to some rules.
+- [01:38:25,834 - 01:38:27,834] I haven't told you the rules yet,
+- [01:38:27,834 - 01:38:29,834] but according to some rules
+- [01:38:29,834 - 01:38:32,834] which preserve the supersymmetry,
+- [01:38:32,834 - 01:38:35,834] we need a concept of derivatives and so forth,
+- [01:38:35,834 - 01:38:37,834] which is a useful concept of derivatives
+- [01:38:37,834 - 01:38:40,834] for doing these things.
+- [01:38:40,834 - 01:38:42,834] And then we integrate the action
+- [01:38:42,834 - 01:38:46,834] over x and over theta.
+- [01:38:46,834 - 01:38:47,834] But integrating over theta always means that,
+- [01:38:47,834 - 01:38:50,834] just pulling out the last
+- [01:38:50,834 - 01:38:53,834] term in the expansion of L,
+- [01:38:53,834 - 01:38:55,834] which seems totally trivial,
+- [01:38:55,834 - 01:38:58,834] and yet it has this enormous power
+- [01:38:58,834 - 01:39:06,834] to be able to control and keep exact relationships
+- [01:39:06,834 - 01:39:08,834] between particle masses,
+- [01:39:08,834 - 01:39:11,834] exact relationships between coupling constants,
+- [01:39:11,834 - 01:39:15,834] and the avoidance of all of these divergent quantities
+- [01:39:15,834 - 01:39:17,834] which occur.
+- [01:39:17,834 - 01:39:18,834] All right.
+- [01:39:18,834 - 01:39:23,834] I think I had intended to go through
+- [01:39:23,834 - 01:39:25,834] a couple of real examples
+- [01:39:25,834 - 01:39:28,834] of constructing supersymmetric theories
+- [01:39:28,834 - 01:39:31,834] and show you how they work,
+- [01:39:31,834 - 01:39:34,834] starting with the very simplest
+- [01:39:34,834 - 01:39:38,834] in just one-dimensional space,
+- [01:39:38,834 - 01:39:40,834] or one-dimensional time,
+- [01:39:40,834 - 01:39:43,834] but I think I'll save that for next time.
+- [01:39:47,834 - 01:39:49,834] Yeah.
+- [01:39:49,834 - 01:39:51,834] And as I said,
+- [01:39:51,834 - 01:39:55,834] the subject is very, very abstract.
+- [01:39:55,834 - 01:40:00,834] And the abstraction is not what bothered people like myself.
+- [01:40:00,834 - 01:40:04,834] It was the simultaneous abstractness of it
+- [01:40:04,834 - 01:40:06,834] and also the concreteness
+- [01:40:06,834 - 01:40:08,834] of needing to keep track of signs.
+- [01:40:10,834 - 01:40:13,834] That was just too much.
+- [01:40:13,834 - 01:40:15,834] Anyway,
+- [01:40:15,834 - 01:40:17,834] by now I've learned the subject
+- [01:40:17,834 - 01:40:18,834] pretty well,
+- [01:40:18,834 - 01:40:20,834] but it took about 30 years.
+- [01:40:21,834 - 01:40:22,834] No.
+- [01:40:22,834 - 01:40:24,834] What's that?
+- [01:40:25,834 - 01:40:26,834] Yes, yes, yes.
+- [01:40:26,834 - 01:40:28,834] We celebrate Memorial Day
+- [01:40:28,834 - 01:40:32,834] by having a sad lecture.
+- [01:40:34,834 - 01:40:36,834] When is Memorial Day?
+- [01:40:37,834 - 01:40:39,834] Well, yeah.
+- [01:40:39,834 - 01:40:43,834] We will continue on until the end.
+- [01:40:44,834 - 01:40:46,834] I will not be away anymore.
+- [01:40:46,834 - 01:40:49,834] The boss of the program says I can't go away,
+- [01:40:49,834 - 01:40:52,834] so I will be here.
+- [01:40:52,834 - 01:40:54,834] What's the last day of class?
+- [01:40:54,834 - 01:40:55,834] I don't know.
+- [01:40:55,834 - 01:40:58,834] I have to...
+- [01:40:58,834 - 01:41:00,834] We'll find out before then.
+- [01:41:02,834 - 01:41:04,834] Does anybody know what the last day of class is?
+- [01:41:04,834 - 01:41:06,834] Oh, this is lecture six.
+- [01:41:06,834 - 01:41:07,834] Yeah.
+- [01:41:07,834 - 01:41:08,834] This is lecture six,
+- [01:41:08,834 - 01:41:10,834] so we have four more lectures.
+- [01:41:10,834 - 01:41:11,834] The last day of class is
+- [01:41:11,834 - 01:41:12,834] when you say you won't be here.
+- [01:41:12,834 - 01:41:13,834] Right.
+- [01:41:13,834 - 01:41:14,834] Yeah, yeah, yeah.
+- [01:41:14,834 - 01:41:15,834] But the boss is telling me,
+- [01:41:15,834 - 01:41:16,834] the boss has told me
+- [01:41:16,834 - 01:41:18,834] that I have to announce it in advance.
+- [01:41:18,834 - 01:41:19,834] Interjected.
+- [01:41:19,834 - 01:41:22,834] But Grassman numbers come prior to the use of...
+- [01:41:22,834 - 01:41:23,834] the ideas of...
+- [01:41:23,834 - 01:41:24,834] Zerzi.
+- [01:41:24,834 - 01:41:26,834] Their use or where they developed concurrently.
+- [01:41:26,834 - 01:41:27,834] Wait, say it again.
+- [01:41:27,834 - 01:41:28,834] The Grassman numbers,
+- [01:41:28,834 - 01:41:29,834] were they developed concurrently
+- [01:41:29,834 - 01:41:31,834] with the development of this physics,
+- [01:41:31,834 - 01:41:32,834] or were they...
+- [01:41:32,834 - 01:41:33,834] No, no, they proceeded.
+- [01:41:33,834 - 01:41:34,834] They're older than...
+- [01:41:34,834 - 01:41:37,834] Yeah, I believe they're 19th century.
+- [01:41:37,834 - 01:41:40,834] I think Grassman was a 19th century mathematician.
+- [01:41:40,834 - 01:41:42,834] They have a lot to do with differential forms.
+- [01:41:42,834 - 01:41:43,834] No.
+- [01:41:43,834 - 01:41:44,834] No.
+- [01:41:44,834 - 01:41:45,834] No, no, no.
+- [01:41:45,834 - 01:41:46,834] And...
+- [01:41:46,834 - 01:41:47,834] And the last day of class is June 7th.
+- [01:41:47,834 - 01:41:48,834] It's what?
+- [01:41:48,834 - 01:41:49,834] June 7th.
+- [01:41:49,834 - 01:41:50,834] Okay.
+- [01:41:50,834 - 01:41:51,834] June 7th.
+- [01:41:51,834 - 01:41:52,834] Right.
+- [01:41:52,834 - 01:41:53,834] Well, yeah, that's right.
+- [01:41:53,834 - 01:41:55,834] And it will be the last day,
+- [01:41:55,834 - 01:41:58,834] because I will not be here on June 12th.
+- [01:41:58,834 - 01:41:59,834] Okay.
+- [01:41:59,834 - 01:42:00,834] Okay.
+- [01:42:00,834 - 01:42:02,834] Is everybody following the supersymmetry
+- [01:42:02,834 - 01:42:05,834] and very happy with all of this abstraction?
+- [01:42:06,834 - 01:42:07,834] Okay.
+- [01:42:07,834 - 01:42:09,834] As long as you are, I am.
+- [01:42:11,834 - 01:42:13,834] For more, please visit us at
+- [01:42:13,834 - 01:42:14,834] www.mcconford.edu.
