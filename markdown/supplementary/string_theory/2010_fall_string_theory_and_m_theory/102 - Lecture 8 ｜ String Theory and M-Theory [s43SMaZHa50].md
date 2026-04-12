@@ -1,0 +1,2321 @@
+# Transcript
+
+Source: supplementary/string_theory/2010_fall_string_theory_and_m_theory/102 - Lecture 8 ｜ String Theory and M-Theory [s43SMaZHa50].mkv
+
+- [00:00:00,000 - 00:00:07,000] Stanford University
+- [00:00:07,000 - 00:00:12,000] Let's talk more about conformal mappings.
+- [00:00:12,000 - 00:00:16,000] These are very interesting in their own right.
+- [00:00:16,000 - 00:00:19,000] They are widely applicable to
+- [00:00:19,000 - 00:00:22,000] all kinds of mathematical physics problems.
+- [00:00:22,000 - 00:00:26,500] The most direct is electrostatic
+- [00:00:26,500 - 00:00:31,000] problems, electrostatic problems in two dimensions.
+- [00:00:31,000 - 00:00:34,500] There are problems in theoretical physics which are
+- [00:00:34,500 - 00:00:38,000] mathematically equivalent to the electrostatic problem in two dimensions.
+- [00:00:38,000 - 00:00:42,500] When I say incidentally the electrostatic problem in two dimensions, I
+- [00:00:42,500 - 00:00:47,000] don't mean that you have particles, charges moving in two dimensions
+- [00:00:47,000 - 00:00:49,500] which interact with each
+- [00:00:49,500 - 00:00:52,000] other with three-dimensional Coulomb forces.
+- [00:00:52,000 - 00:00:56,000] I mean particles which move around, electric charges which
+- [00:00:56,000 - 00:01:00,000] interact with each other with mathematical two-dimensional Coulomb forces.
+- [00:01:00,000 - 00:01:02,500] Does anybody know what the Coulomb
+- [00:01:02,500 - 00:01:05,000] force between particles is in two dimensions?
+- [00:01:05,000 - 00:01:06,000] One over r?
+- [00:01:06,000 - 00:01:08,000] One over r, not one over r squared.
+- [00:01:08,000 - 00:01:12,000] How about the potential energy between a pair of particles?
+- [00:01:12,000 - 00:01:14,000] You'd have to integrate that.
+- [00:01:14,000 - 00:01:15,000] Logarithm.
+- [00:01:15,000 - 00:01:19,000] Logarithm because the derivative of logarithm is one over r.
+- [00:01:19,000 - 00:01:22,000] So in a world, a literal world,
+- [00:01:22,000 - 00:01:26,500] where the lines of flux can't escape out into the
+- [00:01:26,500 - 00:01:31,000] third dimension, which are really forced to lie in the plane,
+- [00:01:31,000 - 00:01:36,500] in such a world electrostatic problems would have Coulomb forces
+- [00:01:36,500 - 00:01:42,000] which were one over r instead of one over r squared,
+- [00:01:42,000 - 00:01:46,500] and the equations of electrostatics would be two-dimensional
+- [00:01:46,500 - 00:01:51,000] versions of the corresponding equations in three dimensions.
+- [00:01:51,000 - 00:01:54,000] What are the equations of electrostatics?
+- [00:01:54,000 - 00:01:56,000] Let's just write them down
+- [00:01:56,000 - 00:01:58,000] on the blackboard for a moment.
+- [00:01:58,000 - 00:02:02,000] What do you describe an electrostatics problem by?
+- [00:02:02,000 - 00:02:06,000] You describe it of course by an electric field.
+- [00:02:06,000 - 00:02:07,500] But there's something simpler than
+- [00:02:07,500 - 00:02:09,000] the electric field. What is it?
+- [00:02:09,000 - 00:02:14,000] Electric field is a vector. What's simpler than a vector?
+- [00:02:14,000 - 00:02:16,000] Charges.
+- [00:02:16,000 - 00:02:18,000] Well, charges, but a scalar.
+- [00:02:18,000 - 00:02:19,000] A scalar.
+- [00:02:19,000 - 00:02:21,000] The electrostatic potential,
+- [00:02:21,000 - 00:02:24,500] the electrostatic potential, which is
+- [00:02:24,500 - 00:02:28,000] sometimes, it goes under different names,
+- [00:02:28,000 - 00:02:30,000] but let's call it phi.
+- [00:02:30,000 - 00:02:35,000] What's the connection between phi and the electric field?
+- [00:02:35,000 - 00:02:39,000] The gradient of phi is the electric field.
+- [00:02:39,000 - 00:02:44,000] Alright, so the gradient of phi is the electric field.
+- [00:02:44,000 - 00:02:47,000] And what's the equation for
+- [00:02:47,000 - 00:02:50,000] the electric field in electrostatics?
+- [00:02:51,000 - 00:02:58,000] Divergence of the electric field is?
+- [00:02:58,000 - 00:02:59,000] The charge density.
+- [00:02:59,000 - 00:03:01,000] The charge density, right.
+- [00:03:01,000 - 00:03:03,000] Charge density on the right-hand side,
+- [00:03:03,000 - 00:03:05,000] or rho.
+- [00:03:05,000 - 00:03:10,000] And we can rewrite that in terms of phi
+- [00:03:10,000 - 00:03:12,000] by writing that it's, I'll write
+- [00:03:12,000 - 00:03:14,000] this out in detail in a moment,
+- [00:03:14,000 - 00:03:18,000] del squared phi equals rho.
+- [00:03:18,000 - 00:03:20,000] Del dot phi is e.
+- [00:03:20,000 - 00:03:22,000] Del dot e equals rho.
+- [00:03:22,000 - 00:03:23,000] So del squared phi.
+- [00:03:23,000 - 00:03:25,000] And what does del squared phi mean?
+- [00:03:25,000 - 00:03:28,000] If we're in a two-dimensional world,
+- [00:03:28,000 - 00:03:30,000] literally a two-dimensional world,
+- [00:03:30,000 - 00:03:36,000] let's say with coordinates little x and little y,
+- [00:03:36,000 - 00:03:38,000] then what is del squared?
+- [00:03:38,000 - 00:03:40,500] Del squared is the second derivative
+- [00:03:40,500 - 00:03:43,000] of phi with respect to x squared,
+- [00:03:43,000 - 00:03:45,500] plus the second derivative of
+- [00:03:45,500 - 00:03:48,000] phi with respect to y squared.
+- [00:03:48,000 - 00:03:51,000] And that on the right-hand side is rho.
+- [00:03:51,000 - 00:03:53,000] If there's charge density, it's not zero,
+- [00:03:53,000 - 00:03:56,000] but in places where there is no charge density,
+- [00:03:56,000 - 00:03:58,000] in places where there is
+- [00:03:58,000 - 00:04:00,000] no charge density, it's just zero.
+- [00:04:00,000 - 00:04:03,000] You remember last time, I think it was last time,
+- [00:04:03,000 - 00:04:09,000] we talked about this equation and its invariances.
+- [00:04:09,000 - 00:04:11,000] Conformal invariance.
+- [00:04:11,000 - 00:04:14,000] This equation,
+- [00:04:14,000 - 00:04:17,000] this equation is invariant or unchanged
+- [00:04:17,000 - 00:04:21,000] by any change in the x, y coordinates,
+- [00:04:21,000 - 00:04:24,000] any transformation to new coordinates,
+- [00:04:24,000 - 00:04:26,000] x, y coordinates,
+- [00:04:26,000 - 00:04:29,000] such that that transformation is conformal.
+- [00:04:29,000 - 00:04:32,000] Conformal means?
+- [00:04:32,000 - 00:04:34,000] Angle-preserving.
+- [00:04:34,000 - 00:04:38,000] In other words, that when you make a transformation,
+- [00:04:38,000 - 00:04:41,000] when you, the angles,
+- [00:04:41,000 - 00:04:43,000] well, let's just say the
+- [00:04:43,000 - 00:04:45,000] angles in the new coordinate system
+- [00:04:45,000 - 00:04:47,000] are perpendicular,
+- [00:04:47,000 - 00:04:51,000] and that angles in new coordinates are exactly the same.
+- [00:04:51,000 - 00:04:53,000] Angles between curves in new coordinates
+- [00:04:53,000 - 00:04:56,000] are the same as between the old coordinates.
+- [00:04:56,000 - 00:04:58,000] Conformal mappings.
+- [00:04:58,000 - 00:05:00,000] Those are conformal mappings,
+- [00:05:00,000 - 00:05:03,000] and they are the kind of mappings that cartographers use
+- [00:05:03,000 - 00:05:06,000] in order to preserve the shapes
+- [00:05:06,000 - 00:05:09,000] and the angles on a map,
+- [00:05:09,000 - 00:05:11,500] although they cannot in general
+- [00:05:11,500 - 00:05:14,000] preserve the sizes of things.
+- [00:05:14,000 - 00:05:17,000] Okay, so that's an example of a,
+- [00:05:17,000 - 00:05:20,000] of a place where conformal mappings occur.
+- [00:05:20,000 - 00:05:21,000] Other places?
+- [00:05:21,000 - 00:05:23,000] Fluid flow in two dimensions.
+- [00:05:23,000 - 00:05:25,000] These are also equations of fluid flow.
+- [00:05:25,000 - 00:05:27,000] All kinds of problems,
+- [00:05:27,000 - 00:05:29,000] at least approximately,
+- [00:05:29,000 - 00:05:35,000] are described by Laplace's equation.
+- [00:05:35,000 - 00:05:39,000] When the Laplacian is zero, you have a standing wave?
+- [00:05:39,000 - 00:05:41,000] No, no, this is not wave equations.
+- [00:05:41,000 - 00:05:43,000] These are not wave equations because
+- [00:05:43,000 - 00:05:45,000] they have a plus sign there.
+- [00:05:45,000 - 00:05:49,000] These are electrostatic equations,
+- [00:05:49,000 - 00:05:52,000] and they don't describe wave motion.
+- [00:05:52,000 - 00:05:54,000] You have to add, if you want waves,
+- [00:05:54,000 - 00:05:56,000] you've got to add in the T dependence.
+- [00:05:56,000 - 00:05:58,500] So there's a reason
+- [00:05:58,500 - 00:06:01,000] why we call electrostatics electrostatics.
+- [00:06:01,000 - 00:06:06,000] Because nothing is moving, right, including the waves.
+- [00:06:06,000 - 00:06:08,500] Can you have, is there
+- [00:06:08,500 - 00:06:11,000] a curl in two dimensions also?
+- [00:06:11,000 - 00:06:13,000] There is a curl in two dimensions.
+- [00:06:13,000 - 00:06:15,000] It's a good question.
+- [00:06:15,000 - 00:06:17,000] Let's come back to it when,
+- [00:06:17,000 - 00:06:19,000] well, yes, there is a curl in two dimensions.
+- [00:06:19,000 - 00:06:21,000] The curl in two dimensions is
+- [00:06:21,000 - 00:06:23,000] if you have a field like E,
+- [00:06:23,000 - 00:06:26,000] which has two components,
+- [00:06:26,000 - 00:06:29,000] let's say E sub x and E sub y,
+- [00:06:29,000 - 00:06:32,000] the curl only has one component.
+- [00:06:32,000 - 00:06:37,000] In a two-dimensional world, the curl has one component,
+- [00:06:37,000 - 00:06:39,000] and it is derivative of
+- [00:06:39,000 - 00:06:41,000] E x with respect to y
+- [00:06:41,000 - 00:06:45,000] minus the derivative of E y with respect to x.
+- [00:06:45,000 - 00:06:47,000] That's the component of the curl.
+- [00:06:47,000 - 00:06:48,500] You could think of it
+- [00:06:48,500 - 00:06:50,000] as the component of the curl
+- [00:06:50,000 - 00:06:53,000] in the direction perpendicular to the blackboard.
+- [00:06:53,000 - 00:06:55,000] But, you know, you can be in two-dimensional worlds
+- [00:06:55,000 - 00:06:58,000] where there is no direction perpendicular to the blackboard.
+- [00:06:58,000 - 00:07:00,000] So just think of it as the curl.
+- [00:07:00,000 - 00:07:03,000] The curl becomes a one-component object
+- [00:07:03,000 - 00:07:10,000] in kind of scalar in two dimensions.
+- [00:07:10,000 - 00:07:11,500] It's only in three dimensions
+- [00:07:11,500 - 00:07:13,000] that the curl is a vector.
+- [00:07:13,000 - 00:07:14,000] In higher dimensions, it's a vector.
+- [00:07:14,000 - 00:07:17,000] In higher dimensions, it's something else.
+- [00:07:17,000 - 00:07:20,000] It's a two-form.
+- [00:07:20,000 - 00:07:25,000] Okay, let's talk a little bit more about conformal mappings.
+- [00:07:25,000 - 00:07:27,000] As I said, they are very interesting.
+- [00:07:27,000 - 00:07:30,000] What they allow you to do, incidentally,
+- [00:07:30,000 - 00:07:33,000] is from the solution of a problem,
+- [00:07:33,000 - 00:07:36,000] an electrostatics problem, for example,
+- [00:07:36,000 - 00:07:41,000] on some kind of space,
+- [00:07:41,000 - 00:07:44,000] some sort of space perhaps with boundaries,
+- [00:07:44,000 - 00:07:49,000] with some boundary conditions,
+- [00:07:49,000 - 00:07:55,000] you can derive an infinite number of other solutions
+- [00:07:55,000 - 00:07:58,000] with problems with other boundary conditions
+- [00:07:58,000 - 00:08:01,000] just by mapping the surface
+- [00:08:01,000 - 00:08:04,000] and taking the solution with you
+- [00:08:04,000 - 00:08:05,500] and mapping the solution to
+- [00:08:05,500 - 00:08:07,000] a new solution by conformal mapping.
+- [00:08:07,000 - 00:08:10,000] So, as I say, there's all sorts of applications
+- [00:08:10,000 - 00:08:13,000] of conformal mapping to electrostatics problems.
+- [00:08:14,000 - 00:08:15,500] We're going to come back
+- [00:08:15,500 - 00:08:17,000] to electrostatics tonight at some point,
+- [00:08:17,000 - 00:08:21,000] but let's talk more about conformal mappings.
+- [00:08:21,000 - 00:08:25,000] A conformal mapping is a mapping of the plane,
+- [00:08:25,000 - 00:08:29,000] the xy plane, or the plane to itself.
+- [00:08:29,000 - 00:08:35,000] So here's a Cartesian plane described by x and y,
+- [00:08:35,000 - 00:08:38,000] and let's use a complex coordinate,
+- [00:08:38,000 - 00:08:42,000] z equals x plus iy.
+- [00:08:42,000 - 00:08:43,000] Okay.
+- [00:08:44,000 - 00:08:48,000] So this is our usual complex plane,
+- [00:08:48,000 - 00:08:52,000] or our usual complex notation representing the plane.
+- [00:08:52,000 - 00:08:53,500] Now, we want to do a
+- [00:08:53,500 - 00:08:55,000] mapping of the plane to itself,
+- [00:08:55,000 - 00:08:58,000] or a coordinate transformation of the plane.
+- [00:08:58,000 - 00:09:01,000] Here's the w plane over here.
+- [00:09:01,000 - 00:09:05,000] w is equal to u plus iv.
+- [00:09:05,000 - 00:09:09,000] This is u and this is v.
+- [00:09:09,000 - 00:09:11,000] Incidentally, for obvious reasons,
+- [00:09:11,000 - 00:09:13,000] x is called the real part of z,
+- [00:09:13,000 - 00:09:15,000] and z is called the imaginary part,
+- [00:09:15,000 - 00:09:17,000] likewise for u and v.
+- [00:09:17,000 - 00:09:20,000] And a mapping from the
+- [00:09:20,000 - 00:09:23,000] x plane to the w plane
+- [00:09:23,000 - 00:09:25,000] is just a rule given
+- [00:09:25,000 - 00:09:27,000] any point in x and y
+- [00:09:27,000 - 00:09:31,000] assigned to it a unique,
+- [00:09:31,000 - 00:09:34,000] and let's assume the mappings are one to one,
+- [00:09:34,000 - 00:09:36,000] in other words, for every point on the x plane,
+- [00:09:36,000 - 00:09:40,000] there is a unique point on the w plane,
+- [00:09:40,000 - 00:09:42,000] and likewise,
+- [00:09:42,000 - 00:09:44,000] for each point in the w plane,
+- [00:09:44,000 - 00:09:46,000] there is a unique point in the x plane.
+- [00:09:46,000 - 00:09:48,000] That means any point,
+- [00:09:48,000 - 00:09:50,000] Hm?
+- [00:09:50,000 - 00:09:52,000] Did I say it wrong?
+- [00:09:52,000 - 00:09:53,000] No, no, you know what I meant.
+- [00:09:53,000 - 00:09:54,000] For any point on the w plane,
+- [00:09:54,000 - 00:09:56,000] there's a unique point on the z plane,
+- [00:09:56,000 - 00:09:58,000] and for any point on the z plane,
+- [00:09:58,000 - 00:10:00,000] there's a unique point on the .
+- [00:10:00,000 - 00:10:03,000] Okay.
+- [00:10:03,000 - 00:10:06,000] This means you can take any point
+- [00:10:06,000 - 00:10:10,000] and represent it either by coordinates x and y,
+- [00:10:10,000 - 00:10:13,000] or by coordinates u and v,
+- [00:10:13,000 - 00:10:16,000] and in that sense it's just a coordinate transformation.
+- [00:10:16,000 - 00:10:20,000] U and v are functions of x and y,
+- [00:10:20,000 - 00:10:22,000] or you can say that
+- [00:10:22,000 - 00:10:24,000] w is a function of z.
+- [00:10:24,000 - 00:10:26,000] So let's think of it, and vice versa,
+- [00:10:26,000 - 00:10:28,500] but for today I'm going to think
+- [00:10:28,500 - 00:10:31,000] of w as a function of z.
+- [00:10:31,000 - 00:10:34,000] Given a point z on the complex plane,
+- [00:10:34,000 - 00:10:38,000] it uniquely picks out a point w.
+- [00:10:38,000 - 00:10:40,000] These are complex functions,
+- [00:10:40,000 - 00:10:43,000] both the argument of a function z,
+- [00:10:43,000 - 00:10:44,000] and the function itself w,
+- [00:10:44,000 - 00:10:46,000] are complex numbers.
+- [00:10:46,000 - 00:10:47,000] Alright.
+- [00:10:47,000 - 00:10:54,000] Now there is a calculus of complex functions like this,
+- [00:10:54,000 - 00:10:56,000] called complex variable theory,
+- [00:10:56,000 - 00:11:00,000] and let's just spend a few moments on it.
+- [00:11:00,000 - 00:11:03,000] There's both an integral and a differential calculus,
+- [00:11:03,000 - 00:11:08,000] but we're going to concentrate on the differential calculus.
+- [00:11:08,000 - 00:11:10,000] Given a function w,
+- [00:11:10,000 - 00:11:15,000] we can try to define a derivative,
+- [00:11:15,000 - 00:11:16,000] w of z.
+- [00:11:16,000 - 00:11:18,000] We can try to define a unique derivative,
+- [00:11:18,000 - 00:11:22,000] and here's the way we would do it.
+- [00:11:22,000 - 00:11:25,000] Start at a point z,
+- [00:11:25,000 - 00:11:27,000] and at every point z,
+- [00:11:27,000 - 00:11:33,000] that corresponds to some point over here, w.
+- [00:11:33,000 - 00:11:35,000] Let's move the point z a little bit,
+- [00:11:35,000 - 00:11:38,000] to z plus delta z.
+- [00:11:38,000 - 00:11:39,000] Here's z,
+- [00:11:40,000 - 00:11:48,000] and move the point to z plus delta z.
+- [00:11:48,000 - 00:11:49,000] When you do so,
+- [00:11:49,000 - 00:11:57,000] w will move to w plus delta w.
+- [00:11:57,000 - 00:11:59,000] Here's w,
+- [00:11:59,000 - 00:12:04,000] here's w plus delta w.
+- [00:12:04,000 - 00:12:09,000] What is the derivative of w with respect to z,
+- [00:12:09,000 - 00:12:11,000] at the point z?
+- [00:12:11,000 - 00:12:13,000] Well, the answer is obvious.
+- [00:12:13,000 - 00:12:17,000] It is delta w,
+- [00:12:17,000 - 00:12:19,000] divided by delta z,
+- [00:12:19,000 - 00:12:23,000] in the limit that delta z goes to zero.
+- [00:12:23,000 - 00:12:25,000] Usual logic of what a derivative is,
+- [00:12:25,000 - 00:12:27,000] it's the difference between
+- [00:12:27,000 - 00:12:29,000] the function at neighboring points,
+- [00:12:29,000 - 00:12:31,000] divided by the difference between
+- [00:12:31,000 - 00:12:33,000] the coordinates at neighboring points.
+- [00:12:33,000 - 00:12:35,000] There's only one problem,
+- [00:12:35,000 - 00:12:37,000] something new.
+- [00:12:37,000 - 00:12:41,000] You can approach the point z
+- [00:12:41,000 - 00:12:44,000] from any direction,
+- [00:12:44,000 - 00:12:47,000] and it's not at all clear that in general,
+- [00:12:47,000 - 00:12:50,000] even if the function is nice and continuous,
+- [00:12:50,000 - 00:12:53,000] and has all sorts of good continuity properties,
+- [00:12:53,000 - 00:12:57,000] it's not obvious that when you calculate the ratio,
+- [00:12:57,000 - 00:12:59,000] delta w by delta z,
+- [00:12:59,000 - 00:13:02,000] and then shrink the size of this,
+- [00:13:02,000 - 00:13:04,000] that the answer will be independent
+- [00:13:04,000 - 00:13:06,000] of which direction you're coming in from.
+- [00:13:07,000 - 00:13:08,000] You might get one answer
+- [00:13:08,000 - 00:13:09,000] if you come in from here,
+- [00:13:09,000 - 00:13:10,000] you might get another answer
+- [00:13:10,000 - 00:13:11,000] if you come in from here,
+- [00:13:11,000 - 00:13:12,500] you might get another answer
+- [00:13:12,500 - 00:13:14,000] if you come in from here.
+- [00:13:14,000 - 00:13:16,000] So the question then is,
+- [00:13:16,000 - 00:13:18,000] what is the condition?
+- [00:13:18,000 - 00:13:21,000] If you want to have a nice mathematical framework
+- [00:13:21,000 - 00:13:23,000] for complex functions,
+- [00:13:23,000 - 00:13:25,000] and you want to have
+- [00:13:25,000 - 00:13:27,000] the notion of a unique derivative,
+- [00:13:27,000 - 00:13:30,000] maybe there is no good definition of the derivative,
+- [00:13:30,000 - 00:13:33,000] but let's see what the conditions are
+- [00:13:33,000 - 00:13:36,000] that the derivative,
+- [00:13:36,000 - 00:13:39,000] the limit of delta w over delta z,
+- [00:13:39,000 - 00:13:41,000] exists and is independent of
+- [00:13:41,000 - 00:13:43,000] which direction you come in from.
+- [00:13:43,000 - 00:13:46,000] Now I'm going to show you a sufficient condition,
+- [00:13:46,000 - 00:13:49,000] you can go home and prove it's a necessary condition,
+- [00:13:49,000 - 00:13:52,000] it is a necessary condition,
+- [00:13:52,000 - 00:13:54,000] and it's almost as easy to
+- [00:13:54,000 - 00:13:56,000] prove as what we will do,
+- [00:13:56,000 - 00:13:59,000] but I'll leave it to you for homework.
+- [00:13:59,000 - 00:14:02,000] To prove, what I'm going to do
+- [00:14:02,000 - 00:14:05,000] is work out the necessary condition
+- [00:14:06,000 - 00:14:08,000] by asking that the ratio,
+- [00:14:08,000 - 00:14:10,000] delta w over delta z,
+- [00:14:10,000 - 00:14:13,000] is the same if you come in from the x-axis
+- [00:14:13,000 - 00:14:15,000] along the x-axis,
+- [00:14:15,000 - 00:14:17,000] or if you come in along the y-axis.
+- [00:14:17,000 - 00:14:20,000] In other words, if your delta z
+- [00:14:20,000 - 00:14:23,000] is along the x-axis or along the y-axis,
+- [00:14:23,000 - 00:14:25,000] that you get the same answer.
+- [00:14:25,000 - 00:14:27,000] It is then not hard to prove
+- [00:14:27,000 - 00:14:29,000] that if that's satisfied,
+- [00:14:29,000 - 00:14:31,000] that no matter what direction you come in from,
+- [00:14:31,000 - 00:14:33,000] you get the same answer.
+- [00:14:33,000 - 00:14:34,000] So I'll do the simple thing,
+- [00:14:34,000 - 00:14:35,000] you can do the slightly more complicated thing,
+- [00:14:35,000 - 00:14:37,000] it's only a little bit of algebra,
+- [00:14:37,000 - 00:14:39,000] but I don't like doing
+- [00:14:39,000 - 00:14:41,000] too much algebra on the blackboard.
+- [00:14:41,000 - 00:14:45,000] Okay, let's calculate
+- [00:14:45,000 - 00:14:50,000] delta w by delta z.
+- [00:14:50,000 - 00:14:54,000] Now first of all, what is delta w?
+- [00:14:54,000 - 00:14:57,000] w is u plus iv.
+- [00:14:57,000 - 00:15:00,000] Why don't we, let's not be babies,
+- [00:15:00,000 - 00:15:03,000] let's call it dw by dz.
+- [00:15:05,000 - 00:15:11,000] Whenever I teach pre-meds,
+- [00:15:11,000 - 00:15:13,000] I'm not allowed to use calculus.
+- [00:15:13,000 - 00:15:15,000] And so every time there's a derivative,
+- [00:15:15,000 - 00:15:19,000] we call it delta w by delta z or whatever,
+- [00:15:19,000 - 00:15:21,000] and then we're not officially using calculus,
+- [00:15:21,000 - 00:15:23,000] and that's illegal.
+- [00:15:23,000 - 00:15:25,000] But then I secretly tell them,
+- [00:15:25,000 - 00:15:27,000] you realize that's a derivative,
+- [00:15:27,000 - 00:15:31,000] and they say, yeah, yeah, we know.
+- [00:15:31,000 - 00:15:33,000] But I'm always afraid if I use it
+- [00:15:33,000 - 00:15:35,000] that they'll tell ombudsmen that I'm using calculus,
+- [00:15:35,000 - 00:15:37,000] and I'm not going to use calculus in class.
+- [00:15:37,000 - 00:15:39,000] Okay, so the change in w
+- [00:15:39,000 - 00:15:41,000] divided by the change of z,
+- [00:15:41,000 - 00:15:44,000] and what of course is that?
+- [00:15:44,000 - 00:15:47,000] That's equal to the derivative of,
+- [00:15:47,000 - 00:15:50,000] or the change, the small change in u
+- [00:15:50,000 - 00:15:54,000] plus the small i times the small change in v
+- [00:15:54,000 - 00:15:57,000] as you go from here to here.
+- [00:15:57,000 - 00:16:01,000] Derivative of the differential of u plus iv
+- [00:16:01,000 - 00:16:03,000] divided by the differential of x plus i.
+- [00:16:03,000 - 00:16:05,000] Okay.
+- [00:16:05,000 - 00:16:08,000] dy.
+- [00:16:08,000 - 00:16:10,000] Okay, that's very straightforward.
+- [00:16:10,000 - 00:16:12,000] Now let's calculate it if
+- [00:16:12,000 - 00:16:14,000] I come in along the x-axis.
+- [00:16:14,000 - 00:16:17,000] If I come in along the x-axis,
+- [00:16:17,000 - 00:16:20,000] then dy is equal to zero.
+- [00:16:20,000 - 00:16:21,000] Okay?
+- [00:16:21,000 - 00:16:23,000] dy is equal to zero if
+- [00:16:23,000 - 00:16:25,000] I come in along the x-axis,
+- [00:16:25,000 - 00:16:28,000] and so this must equal,
+- [00:16:28,000 - 00:16:31,000] coming in along the x-axis,
+- [00:16:31,000 - 00:16:33,000] it must equal du by dx plus i d.
+- [00:16:33,000 - 00:16:34,000] Okay?
+- [00:16:34,000 - 00:16:37,000] So I'm going to calculate the derivative of u
+- [00:16:37,000 - 00:16:39,000] plus i dv by dx.
+- [00:16:39,000 - 00:16:42,000] Since we're keeping y fixed and not varying y,
+- [00:16:42,000 - 00:16:45,000] this is the same as the partial derivative of u
+- [00:16:45,000 - 00:16:47,000] with respect to x
+- [00:16:47,000 - 00:16:50,000] plus i times the partial derivative of v
+- [00:16:50,000 - 00:16:52,000] with respect to x.
+- [00:16:52,000 - 00:16:53,000] Oops.
+- [00:16:53,000 - 00:16:56,000] With respect to x.
+- [00:16:56,000 - 00:16:58,000] Okay, is that clear?
+- [00:16:58,000 - 00:17:00,000] Good.
+- [00:17:00,000 - 00:17:02,000] Now let's come in along the y-axis.
+- [00:17:02,000 - 00:17:04,000] dx is equal to zero.
+- [00:17:04,000 - 00:17:06,000] dy is not zero.
+- [00:17:06,000 - 00:17:08,000] And the partial derivatives are
+- [00:17:08,000 - 00:17:10,000] partial derivatives with respect to y.
+- [00:17:10,000 - 00:17:13,000] So let's see what that has to equal.
+- [00:17:13,000 - 00:17:16,000] If, under the presumption,
+- [00:17:16,000 - 00:17:18,500] that dw by dz doesn't depend
+- [00:17:18,500 - 00:17:21,000] on which direction you come in from.
+- [00:17:21,000 - 00:17:23,000] Okay, so let's see what we have to have.
+- [00:17:23,000 - 00:17:25,000] Then we have to have
+- [00:17:25,000 - 00:17:27,000] 1 over i.
+- [00:17:27,000 - 00:17:29,000] The 1 over i comes from the i.
+- [00:17:29,000 - 00:17:30,000] dx is going to be zero.
+- [00:17:30,000 - 00:17:31,000] There's a 1 over i from the 1 over i.
+- [00:17:31,000 - 00:17:34,000] multiplying dy.
+- [00:17:34,000 - 00:17:37,000] And then we'll have partial
+- [00:17:37,000 - 00:17:40,000] of u with respect to y.
+- [00:17:40,000 - 00:17:43,000] And then i over i
+- [00:17:43,000 - 00:17:47,500] will just give you derivative
+- [00:17:47,500 - 00:17:52,000] of v with respect to y.
+- [00:17:52,000 - 00:17:54,000] u and v are real.
+- [00:17:54,000 - 00:17:56,000] I neglected to say so.
+- [00:17:56,000 - 00:17:58,000] It may have been obvious.
+- [00:17:58,000 - 00:18:00,000] u and v are real.
+- [00:18:00,000 - 00:18:02,000] It's w which is complex.
+- [00:18:02,000 - 00:18:04,000] x and y are real.
+- [00:18:04,000 - 00:18:06,000] z is complex.
+- [00:18:06,000 - 00:18:09,000] It's at least a necessary condition.
+- [00:18:09,000 - 00:18:11,000] It happens to be sufficient also.
+- [00:18:11,000 - 00:18:14,000] But it's at least a necessary condition
+- [00:18:14,000 - 00:18:17,000] that this expression equals this expression.
+- [00:18:17,000 - 00:18:19,000] Necessary for what?
+- [00:18:19,000 - 00:18:21,000] Necessary that the derivative
+- [00:18:21,000 - 00:18:24,000] not depend on which direction you're coming in from.
+- [00:18:24,000 - 00:18:25,000] Okay?
+- [00:18:25,000 - 00:18:28,000] Now, so let's take the real and imaginary part.
+- [00:18:28,000 - 00:18:29,000] Whenever you have an equation,
+- [00:18:29,000 - 00:18:32,000] that involves real and imaginary parts,
+- [00:18:32,000 - 00:18:34,000] it really stands for two equations.
+- [00:18:34,000 - 00:18:38,000] Equating the real part and equating the imaginary part.
+- [00:18:38,000 - 00:18:40,000] So, let's start with the real part.
+- [00:18:40,000 - 00:18:41,000] Here's a real part.
+- [00:18:41,000 - 00:18:44,000] That's got to equal this.
+- [00:18:44,000 - 00:18:53,000] du by dx must equal bv by dy.
+- [00:18:53,000 - 00:18:54,000] And what about the other one?
+- [00:18:54,000 - 00:18:57,000] The other one says,
+- [00:18:57,000 - 00:18:58,000] let's see,
+- [00:18:58,000 - 00:18:59,000] that's the real part.
+- [00:18:59,000 - 00:19:01,000] Here's the imaginary part.
+- [00:19:01,000 - 00:19:02,000] Let's put it over here.
+- [00:19:02,000 - 00:19:12,000] idv by dx equals 1 over i du by dy.
+- [00:19:12,000 - 00:19:14,000] idv by dx has to be
+- [00:19:14,000 - 00:19:16,000] 1 over i du by dy.
+- [00:19:16,000 - 00:19:19,000] That's equating the imaginary parts.
+- [00:19:19,000 - 00:19:23,000] Let's multiply both sides by i
+- [00:19:23,000 - 00:19:27,000] and use the fact that i squared is minus 1.
+- [00:19:28,000 - 00:19:31,000] So we get two equations.
+- [00:19:31,000 - 00:19:32,000] There are two,
+- [00:19:32,000 - 00:19:33,000] they're not the same incidentally,
+- [00:19:33,000 - 00:19:34,000] look at them.
+- [00:19:34,000 - 00:19:38,000] One says du by dx equals dv by dy.
+- [00:19:38,000 - 00:19:41,500] And the other says du
+- [00:19:41,500 - 00:19:45,000] by dy equals dv by dx.
+- [00:19:45,000 - 00:19:48,000] No, minus dv by dx.
+- [00:19:48,000 - 00:19:50,000] One of them has a minus sign,
+- [00:19:50,000 - 00:19:52,000] the other doesn't.
+- [00:19:58,000 - 00:20:01,000] If these equations are not true,
+- [00:20:01,000 - 00:20:03,500] then the derivative doesn't exist
+- [00:20:03,500 - 00:20:06,000] in a meaningful and unique way.
+- [00:20:06,000 - 00:20:08,000] If they are both true,
+- [00:20:08,000 - 00:20:13,000] then the function w of z has a derivative,
+- [00:20:13,000 - 00:20:15,000] and the derivative is well defined,
+- [00:20:15,000 - 00:20:17,000] and the function is called analytic.
+- [00:20:17,000 - 00:20:19,000] Just a name.
+- [00:20:19,000 - 00:20:20,000] When a function,
+- [00:20:20,000 - 00:20:22,000] on a complex function of a complex variable,
+- [00:20:22,000 - 00:20:25,000] has a unique derivative from every direction,
+- [00:20:25,000 - 00:20:27,000] it's called analytic at that point.
+- [00:20:27,000 - 00:20:32,000] If it's analytic everywhere,
+- [00:20:32,000 - 00:20:34,000] then it's called entire.
+- [00:20:34,000 - 00:20:35,000] All sorts of names,
+- [00:20:35,000 - 00:20:36,000] meromorphic, holomorphic,
+- [00:20:36,000 - 00:20:38,000] I never understood what they meant.
+- [00:20:38,000 - 00:20:40,000] Holomorphic is analytic.
+- [00:20:40,000 - 00:20:42,000] No, meromorphic allows poles and...
+- [00:20:42,000 - 00:20:44,000] Holomorphic is the same as analytic.
+- [00:20:44,000 - 00:20:46,000] Yeah, holomorphic is the same as analytic.
+- [00:20:46,000 - 00:20:47,000] I think that's right,
+- [00:20:47,000 - 00:20:49,000] I don't remember.
+- [00:20:49,000 - 00:20:52,000] There's fancy names for everything.
+- [00:20:52,000 - 00:20:54,000] I've learned recently that a mapping
+- [00:20:54,000 - 00:20:56,000] which takes a point to a point
+- [00:20:56,000 - 00:20:58,000] is called a bijection or something.
+- [00:20:58,000 - 00:21:01,000] That's right.
+- [00:21:01,000 - 00:21:04,000] Well, we do diffeomorphisms and all that.
+- [00:21:04,000 - 00:21:05,000] Yeah, yeah, yeah,
+- [00:21:05,000 - 00:21:14,000] these coordinate transformations of diffeomorphisms.
+- [00:21:14,000 - 00:21:18,000] Right, but all they are is coordinate transformations.
+- [00:21:18,000 - 00:21:20,000] Nice smooth ones.
+- [00:21:20,000 - 00:21:24,000] Okay, so we have now the necessary and sufficient conditions
+- [00:21:24,000 - 00:21:26,000] for a function to be analytic,
+- [00:21:26,000 - 00:21:28,000] every place where these are satisfied.
+- [00:21:28,000 - 00:21:30,000] Let's look at these equations a little more,
+- [00:21:30,000 - 00:21:32,000] just for fun,
+- [00:21:32,000 - 00:21:34,000] see what they say.
+- [00:21:38,000 - 00:21:41,000] They're coupled equations for u and v.
+- [00:21:41,000 - 00:21:42,500] Can we uncouple them and
+- [00:21:42,500 - 00:21:44,000] write an equation just for u
+- [00:21:44,000 - 00:21:46,000] and an equation just for v?
+- [00:21:46,000 - 00:21:47,000] Yes, we can.
+- [00:21:47,000 - 00:21:49,000] Here's the trick.
+- [00:21:49,000 - 00:21:53,000] Let's differentiate this equation with respect to x.
+- [00:21:53,000 - 00:21:56,000] That gives us d second u,
+- [00:21:56,000 - 00:21:58,000] by dx squared,
+- [00:21:58,000 - 00:22:00,000] the second partial derivative with respect to x,
+- [00:22:00,000 - 00:22:03,000] and that's equal to dv,
+- [00:22:03,000 - 00:22:06,000] that's equal to the second derivative of v
+- [00:22:06,000 - 00:22:08,000] with respect to x,
+- [00:22:08,000 - 00:22:10,000] with respect to y.
+- [00:22:10,000 - 00:22:13,000] The mixed partial derivative with respect to x and y.
+- [00:22:13,000 - 00:22:17,000] Let's differentiate this one with respect to y.
+- [00:22:17,000 - 00:22:19,000] That's d second u,
+- [00:22:19,000 - 00:22:22,000] by dy squared.
+- [00:22:22,000 - 00:22:25,000] That's equal to minus
+- [00:22:25,000 - 00:22:27,000] d second v,
+- [00:22:27,000 - 00:22:29,000] by dx by dy.
+- [00:22:32,000 - 00:22:34,000] That's the same as that except for a minus sign,
+- [00:22:34,000 - 00:22:37,000] so it follows that we can eliminate it,
+- [00:22:37,000 - 00:22:43,000] and one equation is d second u,
+- [00:22:43,000 - 00:22:46,000] by dx squared,
+- [00:22:46,000 - 00:22:49,000] minus, sorry,
+- [00:22:49,000 - 00:22:52,000] this is u.
+- [00:22:52,000 - 00:22:54,000] Yeah, no, no, we just, we have to,
+- [00:22:55,000 - 00:22:57,000] just add them.
+- [00:22:57,000 - 00:23:06,000] Add them and the right hand side will go away.
+- [00:23:06,000 - 00:23:09,000] Well, that's a familiar equation.
+- [00:23:09,000 - 00:23:14,000] That's just Laplace's equation in two dimensions.
+- [00:23:14,000 - 00:23:18,000] So, a necessary condition.
+- [00:23:18,000 - 00:23:21,000] Well, something looks a little like your curl equation, too.
+- [00:23:21,000 - 00:23:23,000] It does.
+- [00:23:23,000 - 00:23:24,000] So it's something, sort of, curl-ish.
+- [00:23:24,000 - 00:23:26,000] Well, that's,
+- [00:23:26,000 - 00:23:27,000] this one,
+- [00:23:27,000 - 00:23:29,000] yeah, that sort of is it,
+- [00:23:29,000 - 00:23:32,000] is it, is it the derivative is curl-free,
+- [00:23:32,000 - 00:23:33,000] in some sense.
+- [00:23:33,000 - 00:23:34,000] Yeah.
+- [00:23:34,000 - 00:23:36,000] One of them is curl and the other is divergence,
+- [00:23:36,000 - 00:23:39,000] depending on which way you define the components.
+- [00:23:39,000 - 00:23:44,000] Uh,
+- [00:23:44,000 - 00:23:45,500] yeah, if you think of u
+- [00:23:45,500 - 00:23:47,000] and v as components of a vector,
+- [00:23:47,000 - 00:23:49,000] actually you have to think of u and minus v
+- [00:23:49,000 - 00:23:51,000] as the components of a vector,
+- [00:23:51,000 - 00:23:52,000] then what it says is
+- [00:23:52,000 - 00:23:53,000] that the curl and the divergence,
+- [00:23:53,000 - 00:23:57,000] and the divergence of the vector vanishes.
+- [00:23:57,000 - 00:23:59,000] Okay, so that's this equation,
+- [00:23:59,000 - 00:24:01,000] and if you do exactly the same thing,
+- [00:24:01,000 - 00:24:03,000] we differentiate this one now,
+- [00:24:03,000 - 00:24:04,000] instead of with respect to x,
+- [00:24:04,000 - 00:24:07,000] we differentiate it with respect to y,
+- [00:24:07,000 - 00:24:10,000] and differentiate this one with respect to x,
+- [00:24:10,000 - 00:24:14,000] what we get is exactly the same equation for v,
+- [00:24:14,000 - 00:24:17,000] d second v by dx squared,
+- [00:24:17,000 - 00:24:20,000] plus d second v by dy squared,
+- [00:24:20,000 - 00:24:22,000] equals zero.
+- [00:24:22,000 - 00:24:25,000] So first of all, an analytic function,
+- [00:24:25,000 - 00:24:26,000] w of z,
+- [00:24:26,000 - 00:24:32,000] contains two real solutions of the Laplace equation.
+- [00:24:32,000 - 00:24:34,000] That's interesting to know.
+- [00:24:34,000 - 00:24:35,000] Every analytic function,
+- [00:24:35,000 - 00:24:38,000] every function which has a derivative,
+- [00:24:38,000 - 00:24:40,000] and incidentally,
+- [00:24:40,000 - 00:24:43,000] most of the simple functions that you write down,
+- [00:24:43,000 - 00:24:45,000] I'll give you some examples as we go along,
+- [00:24:45,000 - 00:24:47,000] most of the simple functions that
+- [00:24:47,000 - 00:24:49,000] you would be likely to write down,
+- [00:24:49,000 - 00:24:50,000] are analytic.
+- [00:24:50,000 - 00:24:52,000] So in this way,
+- [00:24:52,000 - 00:24:55,000] you can generate a large family
+- [00:24:55,000 - 00:24:58,000] of solutions of the Laplace equation.
+- [00:24:58,000 - 00:25:01,000] Now it's not sufficient to have
+- [00:25:01,000 - 00:25:04,000] two solutions of the Laplace equation.
+- [00:25:04,000 - 00:25:06,000] Two solutions of the Laplace equation
+- [00:25:06,000 - 00:25:09,000] are just two solutions of the Laplace equation.
+- [00:25:09,000 - 00:25:12,000] These equations link them together.
+- [00:25:12,000 - 00:25:14,000] So in fact,
+- [00:25:14,000 - 00:25:19,000] it's not every pair of Laplace functions
+- [00:25:19,000 - 00:25:21,000] define an analytic function.
+- [00:25:21,000 - 00:25:23,000] Really, it's just one of them,
+- [00:25:23,000 - 00:25:25,000] and you can deduce the other one by a trick,
+- [00:25:25,000 - 00:25:27,000] but we don't need to go there.
+- [00:25:27,000 - 00:25:30,000] Okay, so that's something about...
+- [00:25:36,000 - 00:25:39,000] These equations have a name, incidentally.
+- [00:25:39,000 - 00:25:41,000] They were first, to my knowledge,
+- [00:25:41,000 - 00:25:44,000] they were first discovered by the mathematician Cauchy,
+- [00:25:44,000 - 00:25:45,000] and they're called...
+- [00:25:45,000 - 00:25:47,000] Oh, Cauchy and Riemann.
+- [00:25:47,000 - 00:25:48,000] I don't know who discovered them first,
+- [00:25:48,000 - 00:25:49,000] Cauchy and Riemann,
+- [00:25:49,000 - 00:25:51,000] and they're called the Cauchy-Riemann equations.
+- [00:25:51,000 - 00:25:54,000] Hmm?
+- [00:25:54,000 - 00:25:57,000] Yeah, Cauchy was first, but sort of...
+- [00:25:57,000 - 00:25:59,000] But Riemann was more famous.
+- [00:25:59,000 - 00:26:01,000] Popularized by Riemann.
+- [00:26:04,000 - 00:26:06,000] Cauchy-Riemann.
+- [00:26:09,000 - 00:26:10,000] Well, isn't that often how it goes?
+- [00:26:10,000 - 00:26:11,000] Yeah.
+- [00:26:11,000 - 00:26:12,000] You know, somebody's...
+- [00:26:12,000 - 00:26:14,000] Usually the first guy doesn't get any credit,
+- [00:26:14,000 - 00:26:17,000] but in this case,
+- [00:26:17,000 - 00:26:19,000] Cauchy was a rather famous mathematician,
+- [00:26:19,000 - 00:26:20,000] and...
+- [00:26:20,000 - 00:26:22,000] But not as famous as Riemann.
+- [00:26:22,000 - 00:26:24,000] So physicists never heard of him.
+- [00:26:24,000 - 00:26:26,000] Except in this context.
+- [00:26:26,000 - 00:26:27,000] Yeah.
+- [00:26:27,000 - 00:26:29,000] In math, he's got many other...
+- [00:26:29,000 - 00:26:30,000] Oh, yeah, yeah, yeah.
+- [00:26:30,000 - 00:26:32,000] Yeah, but not as much as Riemann.
+- [00:26:33,000 - 00:26:35,000] I don't think.
+- [00:26:36,000 - 00:26:38,000] Tell me something else that Cauchy did.
+- [00:26:38,000 - 00:26:39,000] Cauchy sequences.
+- [00:26:39,000 - 00:26:40,000] Oh, yeah.
+- [00:26:40,000 - 00:26:42,000] I've heard of that.
+- [00:26:42,000 - 00:26:44,000] He made calculus rigorous.
+- [00:26:44,000 - 00:26:45,000] What's that?
+- [00:26:45,000 - 00:26:47,000] Made calculus rigorous.
+- [00:26:47,000 - 00:26:49,000] That you don't get credit for.
+- [00:26:50,000 - 00:26:51,000] Okay.
+- [00:26:51,000 - 00:26:57,000] Okay, the Cauchy-Riemann equations
+- [00:26:57,000 - 00:27:05,000] are related to Laplace's equation in this way.
+- [00:27:05,000 - 00:27:09,000] Now I want to prove that these mappings are conformal.
+- [00:27:09,000 - 00:27:11,000] That was the whole point here.
+- [00:27:11,000 - 00:27:15,000] That conformal mappings are the same
+- [00:27:15,000 - 00:27:18,000] as these analytic functions.
+- [00:27:18,000 - 00:27:21,000] These are not mappings or coordinate transformations
+- [00:27:21,000 - 00:27:23,000] generated by analytic functions.
+- [00:27:23,000 - 00:27:25,000] They are the same thing.
+- [00:27:25,000 - 00:27:26,000] But let's just prove...
+- [00:27:26,000 - 00:27:28,000] Let's see how we prove that.
+- [00:27:34,000 - 00:27:38,000] Yeah, let's just remind ourselves one or two...
+- [00:27:38,000 - 00:27:43,000] One small point about complex numbers.
+- [00:27:48,000 - 00:27:51,000] Let's suppose we have a complex number.
+- [00:27:51,000 - 00:27:53,000] Let's...
+- [00:27:53,000 - 00:27:55,000] I'll call it Z.
+- [00:27:55,000 - 00:27:57,000] I'll call it ScribZ here.
+- [00:27:57,000 - 00:28:00,000] It's meant to be a small complex number,
+- [00:28:00,000 - 00:28:02,000] but it doesn't need to be small.
+- [00:28:02,000 - 00:28:04,000] But a small complex number.
+- [00:28:05,000 - 00:28:08,000] But it doesn't need to be small for this purpose.
+- [00:28:08,000 - 00:28:11,000] It can be represented as X plus IY,
+- [00:28:11,000 - 00:28:13,000] but it can also be represented as another way
+- [00:28:13,000 - 00:28:17,000] in polar coordinates as a radius,
+- [00:28:17,000 - 00:28:21,000] let's call it rho times E
+- [00:28:21,000 - 00:28:25,000] to the I times an angle.
+- [00:28:25,000 - 00:28:29,000] That's another form of a complex number.
+- [00:28:29,000 - 00:28:33,000] Now supposing we have two complex numbers.
+- [00:28:33,000 - 00:28:34,000] Let's call this delta Z,
+- [00:28:34,000 - 00:28:36,000] because I really do mean it
+- [00:28:36,000 - 00:28:38,000] to be a small little displacement.
+- [00:28:38,000 - 00:28:40,000] Let's suppose I have another one.
+- [00:28:40,000 - 00:28:43,000] Let's call it capital delta Z.
+- [00:28:43,000 - 00:28:46,000] Each one of these are intended to be
+- [00:28:46,000 - 00:28:48,000] small displacements,
+- [00:28:48,000 - 00:28:51,000] but for the moment they're just complex numbers.
+- [00:28:51,000 - 00:28:54,000] And this one is called rho
+- [00:28:54,000 - 00:28:57,000] prime E to the I theta prime.
+- [00:28:57,000 - 00:29:00,000] Think about the ratio of these two.
+- [00:29:00,000 - 00:29:02,000] The ratio of these two,
+- [00:29:02,000 - 00:29:06,000] delta Z over delta Z,
+- [00:29:06,000 - 00:29:10,000] first of all has rho over rho prime.
+- [00:29:10,000 - 00:29:12,500] We could make it simple and set
+- [00:29:12,500 - 00:29:15,000] rho and rho prime to be equal,
+- [00:29:15,000 - 00:29:16,500] and that's because rho and rho
+- [00:29:16,500 - 00:29:18,000] prime are not the issue here.
+- [00:29:18,000 - 00:29:21,000] What I'm interested in is these angles.
+- [00:29:21,000 - 00:29:23,000] What do I get for the angle?
+- [00:29:23,000 - 00:29:29,000] I get E to the I theta minus theta prime.
+- [00:29:29,000 - 00:29:32,500] The important thing here is that
+- [00:29:32,500 - 00:29:36,000] the angle associated with a ratio
+- [00:29:36,000 - 00:29:39,000] is the difference of angles.
+- [00:29:39,000 - 00:29:42,000] If I have a ratio of two complex numbers,
+- [00:29:42,000 - 00:29:44,000] the angular part of it
+- [00:29:44,000 - 00:29:46,000] is the difference of the angles.
+- [00:29:46,000 - 00:29:48,000] Keep that in mind.
+- [00:29:48,000 - 00:29:51,000] Now what we're going to do
+- [00:29:51,000 - 00:29:55,000] is go back to the Z and W planes.
+- [00:29:55,000 - 00:29:57,000] Here's the Z plane.
+- [00:29:57,000 - 00:29:59,000] Here's the W plane.
+- [00:29:59,000 - 00:30:03,000] And let's take,
+- [00:30:03,000 - 00:30:05,000] starting at that point,
+- [00:30:05,000 - 00:30:08,000] let's construct two little intervals.
+- [00:30:08,000 - 00:30:11,000] One of them I'll call delta Z.
+- [00:30:11,000 - 00:30:13,000] It's the same as this over here.
+- [00:30:14,000 - 00:30:16,500] Incidentally, my script Zs and my
+- [00:30:16,500 - 00:30:19,000] square Zs are the same variable.
+- [00:30:19,000 - 00:30:24,000] Delta Z and delta Z.
+- [00:30:24,000 - 00:30:27,000] We construct two of them here.
+- [00:30:27,000 - 00:30:29,000] There's an angle between them,
+- [00:30:29,000 - 00:30:33,500] which is the difference of the
+- [00:30:33,500 - 00:30:38,000] angles of the two variables themselves,
+- [00:30:38,000 - 00:30:41,000] or the two little intervals themselves.
+- [00:30:41,000 - 00:30:42,000] Now,
+- [00:30:42,000 - 00:30:44,000] I can map every point on this
+- [00:30:44,000 - 00:30:46,000] plane to a point on this plane.
+- [00:30:46,000 - 00:30:47,000] In particular,
+- [00:30:47,000 - 00:30:50,000] this point here goes to here.
+- [00:30:50,000 - 00:30:53,000] The endpoints also get transformed.
+- [00:30:53,000 - 00:30:56,000] So little delta Z gets mapped
+- [00:30:56,000 - 00:30:59,000] to little delta W.
+- [00:30:59,000 - 00:31:01,000] You take the two endpoints,
+- [00:31:01,000 - 00:31:03,000] and you map them to here,
+- [00:31:03,000 - 00:31:06,000] and that defines a little delta W.
+- [00:31:06,000 - 00:31:10,000] Same likewise with little delta Z.
+- [00:31:12,000 - 00:31:17,000] Okay?
+- [00:31:17,000 - 00:31:20,000] Sorry, delta big Z.
+- [00:31:20,000 - 00:31:21,000] W.
+- [00:31:21,000 - 00:31:24,000] Delta W.
+- [00:31:24,000 - 00:31:26,000] Good.
+- [00:31:26,000 - 00:31:27,000] Now what do we know,
+- [00:31:27,000 - 00:31:29,000] assuming it's an analytic mapping?
+- [00:31:29,000 - 00:31:31,500] In other words, assuming that
+- [00:31:31,500 - 00:31:34,000] the Cauchy-Riemann equations are satisfied,
+- [00:31:34,000 - 00:31:40,000] assuming that the function W is an analytic function.
+- [00:31:40,000 - 00:31:41,000] What we know,
+- [00:31:41,000 - 00:31:43,000] is that the derivative is well defined,
+- [00:31:43,000 - 00:31:46,000] and doesn't matter which direction you come in along.
+- [00:31:46,000 - 00:31:48,000] What is the derivative if I
+- [00:31:48,000 - 00:31:50,000] come in along the delta direction?
+- [00:31:50,000 - 00:31:52,000] If I come in along the delta direction,
+- [00:31:52,000 - 00:31:58,000] it's just delta W over delta Z, right?
+- [00:31:58,000 - 00:32:01,500] That's the derivative if I come
+- [00:32:01,500 - 00:32:05,000] in delta W divided by delta Z.
+- [00:32:05,000 - 00:32:09,000] But supposing I come along this direction here,
+- [00:32:09,000 - 00:32:10,000] then what is the derivative?
+- [00:32:11,000 - 00:32:13,000] Big delta W.
+- [00:32:13,000 - 00:32:22,000] Big delta W over big delta Z.
+- [00:32:22,000 - 00:32:25,000] Now if W is really an analytic function,
+- [00:32:25,000 - 00:32:27,500] it means that this ratio doesn't depend
+- [00:32:27,500 - 00:32:30,000] on which direction you come in along.
+- [00:32:30,000 - 00:32:35,000] So it says that these two are equal.
+- [00:32:35,000 - 00:32:38,000] The derivative is calculated along the delta axis,
+- [00:32:38,000 - 00:32:40,000] or the little delta axis,
+- [00:32:40,000 - 00:32:42,000] so the big delta axis should be the same,
+- [00:32:42,000 - 00:32:44,000] if they're analytic functions.
+- [00:32:44,000 - 00:32:46,000] We can rewrite this.
+- [00:32:46,000 - 00:32:52,000] Let's multiply this by big delta Z,
+- [00:32:52,000 - 00:32:55,000] and divide it by big delta W.
+- [00:32:55,000 - 00:32:57,000] Sorry, little delta W.
+- [00:32:57,000 - 00:32:59,000] We can write this in another way.
+- [00:32:59,000 - 00:33:05,000] It's big delta Z divided by little delta Z,
+- [00:33:05,000 - 00:33:07,000] multiplied,
+- [00:33:07,000 - 00:33:10,000] now I'm going to divide by this one,
+- [00:33:10,000 - 00:33:17,000] is equal to big delta W over little delta W.
+- [00:33:17,000 - 00:33:21,000] Everybody see what I did?
+- [00:33:21,000 - 00:33:23,000] I put this one upstairs,
+- [00:33:23,000 - 00:33:24,000] and this one downstairs.
+- [00:33:24,000 - 00:33:25,000] That's all.
+- [00:33:25,000 - 00:33:27,000] But now what does this say?
+- [00:33:27,000 - 00:33:30,000] This says the ratio of big
+- [00:33:30,000 - 00:33:33,000] delta Z to little delta Z
+- [00:33:33,000 - 00:33:35,500] is the same as the ratio of
+- [00:33:35,500 - 00:33:38,000] big delta W to little delta W.
+- [00:33:38,000 - 00:33:43,000] What does that say about the angles here?
+- [00:33:43,000 - 00:33:46,000] Let's call that angle theta,
+- [00:33:46,000 - 00:33:51,000] and this angle over here.
+- [00:33:51,000 - 00:33:54,000] The angle associated with the ratio
+- [00:33:54,000 - 00:33:56,000] is the difference of angles,
+- [00:33:56,000 - 00:34:01,000] which just means the angle associated with the number,
+- [00:34:01,000 - 00:34:03,000] where is it?
+- [00:34:03,000 - 00:34:05,000] delta Z over little delta Z
+- [00:34:05,000 - 00:34:07,000] is just the angle between them.
+- [00:34:08,000 - 00:34:10,000] The angle associated with big
+- [00:34:10,000 - 00:34:12,000] delta W over little delta W
+- [00:34:12,000 - 00:34:14,000] is the angle between here.
+- [00:34:14,000 - 00:34:15,000] What does this tell us?
+- [00:34:15,000 - 00:34:19,000] This tells us the angles are equal.
+- [00:34:19,000 - 00:34:22,000] In other words, the mapping is a conformal mapping.
+- [00:34:22,000 - 00:34:25,000] Every angle on here,
+- [00:34:25,000 - 00:34:26,000] when you make the mapping,
+- [00:34:26,000 - 00:34:29,000] maps to the same angle on here.
+- [00:34:29,000 - 00:34:31,000] It doesn't say it doesn't reorient.
+- [00:34:31,000 - 00:34:33,000] It says the angle between curves,
+- [00:34:33,000 - 00:34:37,000] take any curve, map it to here,
+- [00:34:37,000 - 00:34:38,500] and the angle that they
+- [00:34:38,500 - 00:34:40,000] intersect that will be the same.
+- [00:34:40,000 - 00:34:44,000] That's the defining property of a conformal mapping.
+- [00:34:44,000 - 00:34:47,000] So the coordinate changes that
+- [00:34:47,000 - 00:34:50,000] are associated with analytic functions
+- [00:34:50,000 - 00:34:52,000] are exactly the coordinate transformations
+- [00:34:52,000 - 00:34:56,000] which are the invariances of Laplace equation,
+- [00:34:56,000 - 00:34:58,000] or the coordinate transformation that
+- [00:34:58,000 - 00:35:00,000] the Laplace equation doesn't change
+- [00:35:00,000 - 00:35:03,000] when you do those coordinate transformations.
+- [00:35:03,000 - 00:35:06,000] That's why in string theory, analytic functions,
+- [00:35:06,000 - 00:35:09,000] or coordinate, or conformal mappings,
+- [00:35:09,000 - 00:35:12,000] are so important.
+- [00:35:12,000 - 00:35:14,500] Because they're the invariance of the
+- [00:35:14,500 - 00:35:17,000] equations of motion of the string.
+- [00:35:19,000 - 00:35:21,000] Okay, let's do a couple of examples.
+- [00:35:21,000 - 00:35:24,000] I'm going to show you two interesting examples.
+- [00:35:27,000 - 00:35:30,000] Well, let's first check a couple of simple functions
+- [00:35:30,000 - 00:35:32,000] and see if it's really true that...
+- [00:35:34,000 - 00:35:36,000] Let's take Z equals XZ.
+- [00:35:36,000 - 00:35:39,000] W equals Z squared.
+- [00:35:39,000 - 00:35:41,000] That's a really easy one.
+- [00:35:41,000 - 00:35:46,000] W equals Z squared.
+- [00:35:46,000 - 00:35:49,000] Let's check if it's analytic.
+- [00:35:49,000 - 00:35:51,000] Okay.
+- [00:35:51,000 - 00:35:55,000] Z is X plus IY.
+- [00:35:55,000 - 00:35:57,500] X plus IY squared is equal
+- [00:35:57,500 - 00:36:00,000] to X squared minus Y squared
+- [00:36:00,000 - 00:36:03,000] plus twice IXY.
+- [00:36:03,000 - 00:36:05,000] And this must be equal to U plus IV.
+- [00:36:06,000 - 00:36:09,000] W is equal to Z squared.
+- [00:36:09,000 - 00:36:12,000] All right, so first of all, what is U?
+- [00:36:12,000 - 00:36:16,000] U is equal to X squared minus Y squared.
+- [00:36:16,000 - 00:36:18,000] The real part of this side is the
+- [00:36:18,000 - 00:36:20,000] same as the real part of this side.
+- [00:36:20,000 - 00:36:23,000] So that's X squared minus Y squared.
+- [00:36:23,000 - 00:36:26,000] What about V?
+- [00:36:30,000 - 00:36:32,000] Just two X, Y.
+- [00:36:32,000 - 00:36:35,000] U equals... there's a square missing in V.
+- [00:36:35,000 - 00:36:37,000] Yeah.
+- [00:36:37,000 - 00:36:38,000] Good.
+- [00:36:38,000 - 00:36:40,000] Right? That's what you meant, right?
+- [00:36:41,000 - 00:36:45,000] Okay, let's check whether these satisfy Laplace's equations.
+- [00:36:45,000 - 00:36:47,500] Laplace's equations say that the second derivative
+- [00:36:47,500 - 00:36:50,000] of U with respect to X squared...
+- [00:36:50,000 - 00:36:52,000] What is that?
+- [00:36:52,000 - 00:36:54,500] The second derivative of U
+- [00:36:54,500 - 00:36:57,000] with respect to X squared is?
+- [00:36:57,000 - 00:36:58,000] Two.
+- [00:36:58,000 - 00:37:00,000] Second derivative.
+- [00:37:00,000 - 00:37:01,000] Two.
+- [00:37:01,000 - 00:37:03,000] Second derivative of U with respect to Y squared?
+- [00:37:03,000 - 00:37:04,000] Minus two.
+- [00:37:04,000 - 00:37:05,000] Minus two.
+- [00:37:05,000 - 00:37:09,000] So second of U with respect to X
+- [00:37:09,000 - 00:37:13,000] squared plus second derivative of Y squared is zero.
+- [00:37:13,000 - 00:37:14,000] Okay.
+- [00:37:14,000 - 00:37:17,000] What about second derivative of
+- [00:37:17,000 - 00:37:20,000] U with respect to X squared?
+- [00:37:20,000 - 00:37:22,000] Zero.
+- [00:37:22,000 - 00:37:24,500] If you differentiate it once, you get Y,
+- [00:37:24,500 - 00:37:27,000] and then you can't differentiate it with X again.
+- [00:37:27,000 - 00:37:29,000] Likewise, second derivative...
+- [00:37:29,000 - 00:37:33,000] This one also is a good solution of Laplace's equation.
+- [00:37:33,000 - 00:37:36,500] All right, now, that proves that every function that
+- [00:37:36,500 - 00:37:40,000] you'd ever be likely to write down is analytic.
+- [00:37:45,000 - 00:37:48,000] Let's write one down, which is not analytic.
+- [00:37:48,000 - 00:37:49,000] Okay?
+- [00:37:49,000 - 00:37:50,000] One over Z.
+- [00:37:50,000 - 00:37:51,000] Hmm?
+- [00:37:51,000 - 00:37:52,000] One over Z.
+- [00:37:52,000 - 00:37:54,500] Well, that only fails to be analytic at
+- [00:37:54,500 - 00:37:57,000] one lousy point, so let's not worry about that.
+- [00:37:57,000 - 00:38:01,000] No, let's make a really bad one.
+- [00:38:01,000 - 00:38:03,000] First of all, W equals Z.
+- [00:38:03,000 - 00:38:04,000] That's very analytic.
+- [00:38:04,000 - 00:38:07,000] That's a very simple one.
+- [00:38:07,000 - 00:38:12,000] But what about W equals complex conjugate of Z?
+- [00:38:12,000 - 00:38:14,000] W equals complex conjugate.
+- [00:38:14,000 - 00:38:16,000] Remember what a complex conjugate is?
+- [00:38:16,000 - 00:38:19,000] You reverse the sign of the I.
+- [00:38:19,000 - 00:38:24,000] This would say that W is equal to X minus IY,
+- [00:38:24,000 - 00:38:29,000] or U is equal to X, and V is equal to Z.
+- [00:38:29,000 - 00:38:35,000] I will leave it to you to
+- [00:38:35,000 - 00:38:41,000] prove that the Cauchy-Riemann equations don't work.
+- [00:38:41,000 - 00:38:42,000] I'm not going to do it.
+- [00:38:42,000 - 00:38:43,000] You do it.
+- [00:38:43,000 - 00:38:46,000] You get a wrong sign.
+- [00:38:46,000 - 00:38:49,000] You can see you couldn't possibly get
+- [00:38:49,000 - 00:38:52,000] the right sign for both plus and minus.
+- [00:38:52,000 - 00:38:54,500] One of them would say U equals X, V equals Y,
+- [00:38:54,500 - 00:38:57,000] and the other says V equals X, V equals minus Y.
+- [00:38:57,000 - 00:38:58,000] Can't both satisfy the complex.
+- [00:38:58,000 - 00:39:00,000] I'll leave it to you.
+- [00:39:00,000 - 00:39:02,000] I don't want to do it now.
+- [00:39:02,000 - 00:39:04,000] That's because I can't
+- [00:39:04,000 - 00:39:06,000] remember the Cauchy-Riemann equations.
+- [00:39:06,000 - 00:39:08,000] Oh, there they are.
+- [00:39:08,000 - 00:39:09,500] The U by the X
+- [00:39:09,500 - 00:39:11,000] equals the V by the Y.
+- [00:39:11,000 - 00:39:14,000] Nah, the minus sign gets in the way.
+- [00:39:14,000 - 00:39:15,000] Right?
+- [00:39:15,000 - 00:39:17,000] So the answer is no.
+- [00:39:17,000 - 00:39:19,000] Okay.
+- [00:39:19,000 - 00:39:23,000] But analytic functions are written
+- [00:39:23,000 - 00:39:27,000] without ever having a function.
+- [00:39:27,000 - 00:39:31,000] Without ever invoking the complex conjugate.
+- [00:39:31,000 - 00:39:38,000] Complex conjugates are not analytic functions.
+- [00:39:38,000 - 00:39:42,000] W equals Z, W equals Z squared, W equals Z
+- [00:39:42,000 - 00:39:46,000] cubed, W equals Z to any power is an analytic function.
+- [00:39:46,000 - 00:39:49,000] Let's do another one for fun.
+- [00:39:49,000 - 00:39:51,000] Let's do W equals log...
+- [00:39:51,000 - 00:39:52,000] Oh, let's, let's...
+- [00:39:52,000 - 00:39:53,000] No, let's do...
+- [00:39:53,000 - 00:39:55,000] Um...
+- [00:39:57,000 - 00:40:04,000] Yeah, let me see what I was going to do.
+- [00:40:04,000 - 00:40:10,000] Yeah.
+- [00:40:10,000 - 00:40:11,000] W equals...
+- [00:40:11,000 - 00:40:12,000] No.
+- [00:40:12,000 - 00:40:15,000] Z equals...
+- [00:40:15,000 - 00:40:16,000] Z equals E to the W.
+- [00:40:16,000 - 00:40:22,000] Let's do W equals E to the Z.
+- [00:40:22,000 - 00:40:23,000] That's a more complicated thing.
+- [00:40:23,000 - 00:40:26,000] Let's just check it and see that it's really analytic.
+- [00:40:27,000 - 00:40:29,000] You could also do logarithm.
+- [00:40:29,000 - 00:40:31,000] We don't have to do both logarithm and exponential.
+- [00:40:31,000 - 00:40:33,000] Why is that?
+- [00:40:33,000 - 00:40:36,000] Because it's the inverse of the other.
+- [00:40:36,000 - 00:40:38,000] What is the inverse of the other?
+- [00:40:38,000 - 00:40:41,500] Um, if we come back, how do we know that if
+- [00:40:41,500 - 00:40:45,000] a function is analytic, that the inverse of it is analytic?
+- [00:40:45,000 - 00:40:47,000] The angles match.
+- [00:40:47,000 - 00:40:49,000] The angles have to match.
+- [00:40:49,000 - 00:40:51,000] Going one way, they have to match the other way.
+- [00:40:51,000 - 00:40:52,500] If the angles are preserved one way,
+- [00:40:52,500 - 00:40:54,000] they have to be preserved in their terms.
+- [00:40:54,000 - 00:40:56,000] Exactly.
+- [00:40:56,000 - 00:40:57,500] So if they're going one way, they
+- [00:40:57,500 - 00:40:59,000] have to be equal going the other way.
+- [00:40:59,000 - 00:41:03,000] So, uh...
+- [00:41:03,000 - 00:41:06,500] It's also true that derivatives of inverse functions are
+- [00:41:06,500 - 00:41:10,000] just one over the derivatives of the functions themselves.
+- [00:41:10,000 - 00:41:12,000] And so if they're independent of which
+- [00:41:12,000 - 00:41:14,000] way you come in, it's still true.
+- [00:41:14,000 - 00:41:16,000] Okay, but let's try W equals...
+- [00:41:16,000 - 00:41:20,000] Just to learn the experiment around and
+- [00:41:20,000 - 00:41:24,000] to unrust your use of complex numbers.
+- [00:41:24,000 - 00:41:25,000] All right.
+- [00:41:25,000 - 00:41:26,000] So what is E to the z?
+- [00:41:26,000 - 00:41:29,000] E to the z is u plus iv, right?
+- [00:41:29,000 - 00:41:31,000] What is E to the z?
+- [00:41:31,000 - 00:41:33,500] E to the z is
+- [00:41:33,500 - 00:41:36,000] e to the x plus iy.
+- [00:41:36,000 - 00:41:37,000] All right.
+- [00:41:37,000 - 00:41:39,500] E to the x plus iy is the
+- [00:41:39,500 - 00:41:42,000] same as e to the x, which is real.
+- [00:41:42,000 - 00:41:44,000] E to the x is real.
+- [00:41:44,000 - 00:41:46,000] And what about e to the iy?
+- [00:41:46,000 - 00:41:49,000] Is there another way to write e to the iy?
+- [00:41:49,000 - 00:41:51,000] Cosine of y.
+- [00:41:51,000 - 00:41:53,000] Cosine of y plus i sine of y.
+- [00:41:55,000 - 00:42:02,000] Cosine of y plus i sine of y.
+- [00:42:02,000 - 00:42:04,000] Okay, so can you read off u from this?
+- [00:42:04,000 - 00:42:05,000] u is equal to...
+- [00:42:05,000 - 00:42:08,000] Let's put it up here.
+- [00:42:08,000 - 00:42:12,000] u is equal to e
+- [00:42:12,000 - 00:42:16,000] to the x times cosine y.
+- [00:42:16,000 - 00:42:18,500] And v is equal to e
+- [00:42:18,500 - 00:42:21,000] to the x times sine of y.
+- [00:42:25,000 - 00:42:33,000] So we check the Cauchy-Riemann equations?
+- [00:42:33,000 - 00:42:35,000] Let's check them.
+- [00:42:35,000 - 00:42:40,000] The u by dx, what is the u by dx?
+- [00:42:40,000 - 00:42:42,500] What happens when you differentiate e
+- [00:42:42,500 - 00:42:45,000] to the x with respect to x?
+- [00:42:45,000 - 00:42:47,000] You get u again.
+- [00:42:47,000 - 00:42:50,000] So the u by dx is the same thing.
+- [00:42:50,000 - 00:42:52,000] The u by dx is equal
+- [00:42:52,000 - 00:42:54,000] to e to the x cosine y.
+- [00:42:54,000 - 00:43:01,000] What about dv by dy?
+- [00:43:01,000 - 00:43:04,500] All right, what do we get when
+- [00:43:04,500 - 00:43:08,000] we differentiate this with respect to y?
+- [00:43:08,000 - 00:43:12,000] Derivative of sine is cosine.
+- [00:43:12,000 - 00:43:15,000] Okay, so this is again equal
+- [00:43:15,000 - 00:43:18,000] to e to the x cosine y.
+- [00:43:18,000 - 00:43:20,500] Yep, so the first Cauchy-Riemann equation is
+- [00:43:20,500 - 00:43:23,000] correct, and you can check the other one.
+- [00:43:23,000 - 00:43:25,000] It's also correct.
+- [00:43:25,000 - 00:43:27,500] All right, so we check that e
+- [00:43:27,500 - 00:43:30,000] to the z is a good analytic function.
+- [00:43:30,000 - 00:43:34,000] Sums of analytic functions are analytic.
+- [00:43:34,000 - 00:43:38,000] Ratios of analytic functions are analytic,
+- [00:43:38,000 - 00:43:42,000] except at points where the denominator vanishes.
+- [00:43:42,000 - 00:43:47,000] At points where the denominator vanishes, something is infinite,
+- [00:43:47,000 - 00:43:52,000] and those are nasty points where everything breaks down.
+- [00:43:52,000 - 00:43:55,500] Okay, let's take, I took
+- [00:43:55,500 - 00:43:59,000] w equals e to the z.
+- [00:43:59,000 - 00:44:07,000] Let's take w equals logarithm of z.
+- [00:44:07,000 - 00:44:09,000] That's the inverse function.
+- [00:44:09,000 - 00:44:16,000] w equals logarithm of z.
+- [00:44:16,000 - 00:44:17,500] And let's see if we
+- [00:44:17,500 - 00:44:19,000] can see how this mapping works.
+- [00:44:19,000 - 00:44:21,000] This is an important mapping in string theory.
+- [00:44:21,000 - 00:44:23,000] w equals logarithm of z.
+- [00:44:23,000 - 00:44:25,000] Let's see if we can see how it works.
+- [00:44:25,000 - 00:44:27,000] In particular, I'm going to apply
+- [00:44:27,000 - 00:44:29,000] this mapping to the half plane.
+- [00:44:29,000 - 00:44:31,500] The half plane now means, take
+- [00:44:31,500 - 00:44:34,000] the half plane, which has a boundary.
+- [00:44:34,000 - 00:44:38,000] It's the half plane to the right.
+- [00:44:38,000 - 00:44:41,000] I'm not going to, let's not mark it.
+- [00:44:41,000 - 00:44:44,000] We're interested in the half plane to the right here.
+- [00:44:44,000 - 00:44:48,000] Here's the origin.
+- [00:44:48,000 - 00:44:50,000] And let's see if we can see.
+- [00:44:50,000 - 00:44:52,000] When we do the mapping, where
+- [00:44:52,000 - 00:44:54,000] the points of the half plane go.
+- [00:44:54,000 - 00:44:56,000] Here's the w plane.
+- [00:44:56,000 - 00:45:00,000] This is the z plane.
+- [00:45:00,000 - 00:45:04,000] And here's the w plane.
+- [00:45:04,000 - 00:45:08,000] Okay.
+- [00:45:08,000 - 00:45:09,500] First of all, what about
+- [00:45:09,500 - 00:45:11,000] the origin of the z plane?
+- [00:45:11,000 - 00:45:14,000] What happens to the origin of the z plane?
+- [00:45:14,000 - 00:45:16,500] The origin of the z
+- [00:45:16,500 - 00:45:19,000] plane goes to logarithm of zero.
+- [00:45:19,000 - 00:45:21,000] Where is logarithm of zero?
+- [00:45:21,000 - 00:45:25,000] Logarithm of zero is of course not a number.
+- [00:45:25,000 - 00:45:27,000] But we can take logarithm
+- [00:45:27,000 - 00:45:29,000] of a tiny, tiny, tiny number.
+- [00:45:29,000 - 00:45:31,000] And the logarithm of a tiny
+- [00:45:31,000 - 00:45:33,000] number is a very negative number.
+- [00:45:33,000 - 00:45:36,500] So this point out here maps to some place
+- [00:45:36,500 - 00:45:40,000] out at infinity, way off to the left here.
+- [00:45:40,000 - 00:45:43,000] Let's not try to figure out exactly where
+- [00:45:43,000 - 00:45:46,000] it goes, because it doesn't go anywhere really.
+- [00:45:46,000 - 00:45:48,000] It goes out to minus infinity.
+- [00:45:49,000 - 00:45:55,000] What about logarithm of plus infinity?
+- [00:45:55,000 - 00:45:58,000] That's way out here.
+- [00:45:58,000 - 00:46:01,000] But that's not very illuminating.
+- [00:46:01,000 - 00:46:04,000] Let's take this plane and
+- [00:46:04,000 - 00:46:07,000] write it in the other form.
+- [00:46:07,000 - 00:46:12,000] z is equal to r e to the i theta.
+- [00:46:12,000 - 00:46:15,000] Then what is this half line down here?
+- [00:46:15,000 - 00:46:18,000] That's the line theta equals what?
+- [00:46:19,000 - 00:46:24,000] Theta equals minus pi over 2.
+- [00:46:24,000 - 00:46:30,000] Here is theta equals plus pi over 2.
+- [00:46:30,000 - 00:46:32,000] Here is r e to the i theta.
+- [00:46:32,000 - 00:46:35,500] What is the logarithm of
+- [00:46:35,500 - 00:46:39,000] r e to the i theta?
+- [00:46:39,000 - 00:46:43,000] The logarithm of r e to the i theta is log
+- [00:46:43,000 - 00:46:47,000] of r log of z is equal to log of z.
+- [00:46:47,000 - 00:46:48,000] That's the logarithm of r e to the i theta.
+- [00:46:49,000 - 00:46:58,000] That's the logarithm of r plus i theta.
+- [00:46:58,000 - 00:47:00,000] So where does a general point go?
+- [00:47:00,000 - 00:47:04,000] It goes to some real number plus i theta.
+- [00:47:04,000 - 00:47:06,000] And what does theta go between?
+- [00:47:06,000 - 00:47:08,000] Theta goes from minus pi over
+- [00:47:08,000 - 00:47:10,000] 2 to plus pi over 2.
+- [00:47:10,000 - 00:47:14,000] Here is minus pi over 2.
+- [00:47:14,000 - 00:47:17,000] Theta equals minus i theta.
+- [00:47:17,000 - 00:47:24,000] Minus i pi over 2.
+- [00:47:24,000 - 00:47:27,500] And the upper end here goes
+- [00:47:27,500 - 00:47:31,000] to plus i pi over 2.
+- [00:47:35,000 - 00:47:38,500] An infinite line, in other words, this infinite
+- [00:47:38,500 - 00:47:42,000] line here gets mapped to this infinite line.
+- [00:47:42,000 - 00:47:45,000] And this infinite, the infinite half line.
+- [00:47:45,000 - 00:47:48,000] The other infinite half line gets mapped down to here.
+- [00:47:48,000 - 00:47:50,000] The origin being way out here.
+- [00:47:50,000 - 00:47:56,500] So what we've done is we've taken this whole space and we've kind
+- [00:47:56,500 - 00:48:03,000] of bent the axes and squashed the whole space on a narrow ribbon.
+- [00:48:03,000 - 00:48:06,000] The ribbon between minus i pi over
+- [00:48:06,000 - 00:48:09,000] 2 and plus i pi over 2.
+- [00:48:09,000 - 00:48:11,000] We could draw some curves to see
+- [00:48:11,000 - 00:48:13,000] if we can see what's going on.
+- [00:48:13,000 - 00:48:14,000] We could first draw some curves.
+- [00:48:14,000 - 00:48:17,000] We could first draw some straight lines like this.
+- [00:48:17,000 - 00:48:20,000] Straight lines coming out of the origin here.
+- [00:48:20,000 - 00:48:22,000] They have to go to the origin.
+- [00:48:22,000 - 00:48:24,000] They also have to go out to infinity.
+- [00:48:24,000 - 00:48:28,000] And those lines map to straight lines like this.
+- [00:48:32,000 - 00:48:35,000] It just bands at constant angle.
+- [00:48:35,000 - 00:48:38,000] At constant angle.
+- [00:48:38,000 - 00:48:39,000] Okay.
+- [00:48:39,000 - 00:48:43,000] Next, what about the radial circles which look like this?
+- [00:48:43,000 - 00:48:45,000] Where do they go?
+- [00:48:45,000 - 00:48:47,000] Vertical lines.
+- [00:48:47,000 - 00:48:49,000] Vertical lines.
+- [00:48:54,000 - 00:48:56,500] Why is this strip description interesting from
+- [00:48:56,500 - 00:48:59,000] the point of view of string theory?
+- [00:48:59,000 - 00:49:04,000] This was the way I described the world sheet of a
+- [00:49:04,000 - 00:49:09,000] string in terms of a coordinate, what do we call it, sigma?
+- [00:49:09,000 - 00:49:10,500] Sigma which went from minus pi
+- [00:49:10,500 - 00:49:12,000] over 2 to pi over 2.
+- [00:49:13,000 - 00:49:19,000] That was, if you like, the parameter along the string.
+- [00:49:19,000 - 00:49:24,000] And the other direction was the time direction.
+- [00:49:24,000 - 00:49:29,000] This was the world sheet of a string where the string went from minus
+- [00:49:29,000 - 00:49:34,000] pi over 2 to pi over 2 in the coordinates and swept out time.
+- [00:49:34,000 - 00:49:35,000] Uniformly.
+- [00:49:35,000 - 00:49:38,000] Everything was translationally invariant in time.
+- [00:49:38,000 - 00:49:40,000] No special time.
+- [00:49:40,000 - 00:49:42,000] And you can see from this picture here.
+- [00:49:42,000 - 00:49:45,000] That everything has a nice symmetry along this axis.
+- [00:49:48,000 - 00:49:50,500] How does the symmetry along this axis,
+- [00:49:50,500 - 00:49:53,000] let's say we push everything to the left.
+- [00:49:53,000 - 00:49:55,000] What happens here?
+- [00:49:57,000 - 00:49:59,000] On the z plane.
+- [00:49:59,000 - 00:50:00,500] Let's take the w plane
+- [00:50:00,500 - 00:50:02,000] and shift everything to the left.
+- [00:50:02,000 - 00:50:03,000] What happens?
+- [00:50:03,000 - 00:50:05,000] It shrinks.
+- [00:50:05,000 - 00:50:08,000] It shrinks by a uniform factor.
+- [00:50:08,000 - 00:50:09,500] If you push to the left a
+- [00:50:09,500 - 00:50:11,000] certain amount, it shrinks by a uniform factor.
+- [00:50:11,000 - 00:50:13,000] If you push to the right, it expands.
+- [00:50:13,000 - 00:50:15,000] So these are called dilations.
+- [00:50:15,000 - 00:50:18,000] Dilations are transformations which expand and contract.
+- [00:50:18,000 - 00:50:22,000] They transform into the time translations.
+- [00:50:22,000 - 00:50:23,000] Curious.
+- [00:50:23,000 - 00:50:24,000] All right.
+- [00:50:24,000 - 00:50:26,000] This is one mapping which is of interest.
+- [00:50:26,000 - 00:50:29,000] This means that the string world sheet could be
+- [00:50:29,000 - 00:50:32,000] described as living on a half plane like that.
+- [00:50:32,000 - 00:50:37,000] With the incoming string coming in at that point.
+- [00:50:37,000 - 00:50:38,000] Right?
+- [00:50:38,000 - 00:50:39,000] And then the string world sheet.
+- [00:50:39,000 - 00:50:41,000] Coming in at that point.
+- [00:50:41,000 - 00:50:42,000] Right?
+- [00:50:42,000 - 00:50:44,000] They're being injected in right there.
+- [00:50:44,000 - 00:50:49,000] The incoming string at a time in the remote past can be
+- [00:50:49,000 - 00:50:54,000] thought of as being injected onto the world sheet right at this point.
+- [00:50:54,000 - 00:50:56,000] Let's do another mapping.
+- [00:50:58,000 - 00:51:00,000] I have a quick question for you.
+- [00:51:00,000 - 00:51:02,000] So you let r equal to b1.
+- [00:51:02,000 - 00:51:03,000] Is that it?
+- [00:51:03,000 - 00:51:04,000] No, no, no.
+- [00:51:04,000 - 00:51:05,000] No.
+- [00:51:05,000 - 00:51:06,000] No.
+- [00:51:06,000 - 00:51:07,000] No.
+- [00:51:07,000 - 00:51:08,000] No.
+- [00:51:08,000 - 00:51:09,000] No.
+- [00:51:09,000 - 00:51:10,000] I was asking if you could say that the
+- [00:51:10,000 - 00:51:11,000] r equal to b1 is some particular line here.
+- [00:51:11,000 - 00:51:15,000] These lines are lines of constant r.
+- [00:51:15,000 - 00:51:17,000] Right.
+- [00:51:17,000 - 00:51:20,000] r equal to 1 is right at the center here.
+- [00:51:20,000 - 00:51:22,000] No, I did not.
+- [00:51:22,000 - 00:51:23,000] Yeah.
+- [00:51:23,000 - 00:51:24,000] R is those circles.
+- [00:51:24,000 - 00:51:25,000] Hmm?
+- [00:51:25,000 - 00:51:26,000] R is those circles that you.
+- [00:51:26,000 - 00:51:27,000] Yeah.
+- [00:51:27,000 - 00:51:28,000] R of the various circles here.
+- [00:51:28,000 - 00:51:30,000] This is r equal to 0, r
+- [00:51:30,000 - 00:51:32,000] equals 1, r equals 2, r equals 3.
+- [00:51:32,000 - 00:51:33,000] Sorry.
+- [00:51:33,000 - 00:51:34,000] R is not 0 over here.
+- [00:51:34,000 - 00:51:35,000] But r is 0 out there.
+- [00:51:35,000 - 00:51:36,000] If I can clarify something.
+- [00:51:36,000 - 00:51:40,400] If I can clarify, you say that the left one is like polar coordinates, but
+- [00:51:40,400 - 00:51:44,800] on the right it's not polar coordinates, it's the old x, y, left, right coordinates
+- [00:51:44,800 - 00:51:47,800] Yeah, but it's a mapping from one to the
+- [00:51:47,800 - 00:51:50,800] other, it's a mapping from one to the other
+- [00:51:50,800 - 00:51:55,270] and the one thing you can be sure of is that angles
+- [00:51:55,270 - 00:51:59,740] on here, when they map to here, they cross at the same angle
+- [00:51:59,740 - 00:52:05,740] That means, among other things, that if the Laplace equation for
+- [00:52:05,740 - 00:52:11,740] x, x now being x of the x coordinate of the string
+- [00:52:11,740 - 00:52:16,420] if the Laplace equation is satisfied for a field, for a
+- [00:52:16,420 - 00:52:21,100] degree of freedom living on here, it's also satisfied on here
+- [00:52:21,100 - 00:52:25,500] So that's the symmetry of string theory
+- [00:52:25,500 - 00:52:29,580] You can stretch, deform
+- [00:52:29,740 - 00:52:33,660] the coordinate space to fit whatever particular
+- [00:52:33,660 - 00:52:37,580] reason you may want for redrawing it
+- [00:52:37,580 - 00:52:39,580] Here's another form
+- [00:52:43,580 - 00:52:47,580] Another mapping of the half plane
+- [00:52:51,580 - 00:52:54,580] Oh, before I do that,
+- [00:52:54,580 - 00:52:57,580] let me tell you what happens
+- [00:52:57,580 - 00:52:59,580] if you map the whole of the Laplace equation
+- [00:52:59,740 - 00:53:03,580] if you map the whole plane by the same transformation
+- [00:53:03,580 - 00:53:08,580] If you map the whole plane from the same transformation,
+- [00:53:08,580 - 00:53:13,580] the angle goes from minus pi over 2 to what?
+- [00:53:13,580 - 00:53:19,580] Minus pi over 2 plus 2 pi
+- [00:53:19,580 - 00:53:23,580] We could also let it go, let's see, we
+- [00:53:23,580 - 00:53:27,580] could also let it go from, let's, yeah, okay
+- [00:53:27,580 - 00:53:28,580] It goes from minus pi
+- [00:53:28,580 - 00:53:29,580] over 2 to pi over 2
+- [00:53:29,580 - 00:53:31,500] So it's from minus pi over 2
+- [00:53:31,500 - 00:53:33,420] to pi over 2 plus 2 pi
+- [00:53:33,420 - 00:53:37,420] 2 pi is, add 2 pi
+- [00:53:37,420 - 00:53:41,420] And it becomes a fatter strip
+- [00:53:41,420 - 00:53:44,420] but there's something new, what's new, what's
+- [00:53:44,420 - 00:53:47,420] different about this strip than the original strip?
+- [00:53:47,420 - 00:53:48,220] is it wraps around?
+- [00:53:48,540 - 00:53:50,140] Yeah
+- [00:53:50,140 - 00:53:52,780] When you go all the ways around the
+- [00:53:52,780 - 00:53:55,420] angular direction you come back to the same point
+- [00:53:55,420 - 00:53:57,580] that means starting here
+- [00:53:57,580 - 00:53:59,580] when you go all the ways around
+- [00:53:59,580 - 00:54:02,080] you come back to the same thing.
+- [00:54:02,860 - 00:54:04,420] In other words, what happens
+- [00:54:04,420 - 00:54:05,980] if you map the whole plane,
+- [00:54:06,640 - 00:54:07,279] what do you get?
+- [00:54:08,500 - 00:54:09,060] Cylinder.
+- [00:54:10,279 - 00:54:11,680] Cylinder, not a torus,
+- [00:54:12,140 - 00:54:14,759] because this end is not identified with this end,
+- [00:54:15,299 - 00:54:17,380] but the top is identified with the bottom,
+- [00:54:17,560 - 00:54:18,360] you get a cylinder.
+- [00:54:23,200 - 00:54:24,920] Yeah, it's a cylinder.
+- [00:54:24,920 - 00:54:26,240] An infinite cylinder.
+- [00:54:26,240 - 00:54:30,560] This is the space that you would use
+- [00:54:30,560 - 00:54:33,100] to describe an open string with two ends.
+- [00:54:33,919 - 00:54:34,640] How about this one?
+- [00:54:35,919 - 00:54:36,859] Closed string.
+- [00:54:37,899 - 00:54:38,060] Right.
+- [00:54:39,060 - 00:54:41,899] So it's natural to think of, well,
+- [00:54:42,959 - 00:54:47,020] open strings you can describe on the half plane,
+- [00:54:47,640 - 00:54:49,660] closed strings on the whole plane,
+- [00:54:50,040 - 00:54:51,359] with no boundaries.
+- [00:54:52,640 - 00:54:54,359] That's a, that's...
+- [00:54:55,720 - 00:54:56,220] Yeah.
+- [00:54:56,439 - 00:54:58,439] Useful mathematical fact.
+- [00:54:59,439 - 00:55:01,839] Now let's come to another mapping.
+- [00:55:04,439 - 00:55:07,140] Let's take the, let's forget this W plane,
+- [00:55:08,140 - 00:55:09,839] and map to another W plane.
+- [00:55:10,939 - 00:55:11,640] Different mapping.
+- [00:55:12,939 - 00:55:15,740] We're starting again with the same Z plane.
+- [00:55:20,240 - 00:55:22,740] X, Y, and so forth.
+- [00:55:26,240 - 00:55:30,140] How about this one?
+- [00:55:30,140 - 00:55:36,439] W equals Z plus 1 over Z minus 1.
+- [00:55:36,439 - 00:55:43,140] Let's see if we can see where it goes.
+- [00:55:43,140 - 00:55:43,339] Oops.
+- [00:55:43,339 - 00:55:46,439] Oops.
+- [00:55:46,439 - 00:55:47,299] Oops.
+- [00:55:47,299 - 00:55:48,500] Oops.
+- [00:55:48,500 - 00:55:49,399] Oops.
+- [00:55:49,399 - 00:55:51,339] Oops.
+- [00:55:51,339 - 00:55:53,439] Oops.
+- [00:55:53,439 - 00:55:55,439] Oops.
+- [00:55:55,439 - 00:55:55,540] Oops.
+- [00:55:55,540 - 00:55:57,040] Oops.
+- [00:55:57,040 - 00:55:57,800] Is that what I want?
+- [00:55:57,800 - 00:55:58,140] Yes.
+- [00:55:58,140 - 00:55:58,520] Yes.
+- [00:55:58,520 - 00:55:58,720] Yes.
+- [00:55:58,720 - 00:55:58,840] Yes.
+- [00:55:58,840 - 00:55:58,940] Yes.
+- [00:55:58,940 - 00:56:00,340] Yes.
+- [00:56:00,340 - 00:56:00,779] Let's see.
+- [00:56:00,779 - 00:56:03,259] Well do I want Z equals
+- [00:56:03,259 - 00:56:05,740] W plus 1 over W minus 1,
+- [00:56:05,740 - 00:56:07,279] one or the other?
+- [00:56:07,279 - 00:56:09,500] Well let's try it.
+- [00:56:09,500 - 00:56:13,640] Let's see if we can see what it does.
+- [00:56:13,640 - 00:56:14,740] Z equals 0.
+- [00:56:14,740 - 00:56:19,040] Where does Z equal 0 go?
+- [00:56:19,040 - 00:56:20,940] Well, let's try it.
+- [00:56:20,940 - 00:56:22,740] Let's see if we can see what it does.
+- [00:56:22,740 - 00:56:23,740] We have a problem here.
+- [00:56:23,740 - 00:56:24,740] We have a problem here.
+- [00:56:24,740 - 00:56:29,660] where does z equals zero go? Minus one, right? When
+- [00:56:29,660 - 00:56:34,580] z is equal to w, I'm sorry, when z is
+- [00:56:34,580 - 00:56:39,140] equal to zero, w goes to minus one. Here's
+- [00:56:39,140 - 00:56:43,700] the w plane, w goes to minus one. How
+- [00:56:43,700 - 00:56:50,299] about when z is equal to, ah, when
+- [00:56:50,299 - 00:56:56,899] z is equal to infinity, way out here.
+- [00:56:56,899 - 00:56:59,489] W goes to one. When z
+- [00:56:59,489 - 00:57:02,080] is equal to infinity, or in other
+- [00:57:02,080 - 00:57:04,979] words when z is very, very
+- [00:57:04,979 - 00:57:07,879] large. It goes to plus one.
+- [00:57:07,879 - 00:57:09,879] It goes to plus one.
+- [00:57:13,700 - 00:57:18,110] How about when z is pure imaginary
+- [00:57:18,110 - 00:57:22,520] up here? When it's pure imaginary, in other
+- [00:57:22,520 - 00:57:25,449] words when it lies on the boundary of
+- [00:57:25,449 - 00:57:28,379] the half plane, where does it go? That
+- [00:57:28,379 - 00:57:31,779] means that z is equal to some real
+- [00:57:31,779 - 00:57:35,180] number times i, r times i. What happens
+- [00:57:35,180 - 00:57:39,430] to w? w becomes one
+- [00:57:39,430 - 00:57:43,680] plus ir over one plus i.
+- [00:57:43,680 - 00:57:43,690] W becomes one plus ir over one plus i.
+- [00:57:43,690 - 00:57:43,700] W becomes one plus ir over one plus i.
+- [00:57:43,700 - 00:57:47,670] W becomes one minus ir, I think with a
+- [00:57:47,670 - 00:57:51,640] minus sign. How about one plus ir over one minus
+- [00:57:51,640 - 00:57:55,560] ir? Anything special about that? Magnitude one,
+- [00:57:55,560 - 00:57:59,480] right? Magnitude one. The sums of the
+- [00:57:59,480 - 00:58:03,119] squares of the real and imaginary parts are the
+- [00:58:03,119 - 00:58:06,759] same. So the ratio of these two has magnitude
+- [00:58:06,759 - 00:58:10,219] one. So where is this upper half
+- [00:58:10,219 - 00:58:13,680] line here? It lies on the unit circle.
+- [00:58:13,680 - 00:58:20,670] It lies on the unit circle because it has magnitude one. How
+- [00:58:20,670 - 00:58:27,660] about the lower half line here? It also lies on the unit circle.
+- [00:58:27,660 - 00:58:32,200] So when x varies over the entire half plane
+- [00:58:32,200 - 00:58:36,740] here, not x, but when z varies over the entire
+- [00:58:36,740 - 00:58:43,660] half plane, w varies over the unit disc.
+- [00:58:43,660 - 00:58:48,339] This is called a disc, over the unit disc.
+- [00:58:48,339 - 00:58:52,719] What is this useful for? Well, in
+- [00:58:52,719 - 00:58:57,100] practice it is useful for solving Laplace's equation
+- [00:58:57,100 - 00:59:00,760] in various contexts. You put in various charges,
+- [00:59:00,760 - 00:59:04,420] for example, in various places, and you want
+- [00:59:04,420 - 00:59:08,129] to calculate the electric field. If you can
+- [00:59:08,129 - 00:59:11,839] do it in this geometry, then you can transform
+- [00:59:11,839 - 00:59:13,640] the same problem to this geometry.
+- [00:59:13,640 - 00:59:17,320] And solve a whole slew of problems. So one
+- [00:59:17,320 - 00:59:21,000] of the things it's good for is mapping back
+- [00:59:21,000 - 00:59:24,270] and forth electrostatics problems. And it
+- [00:59:24,270 - 00:59:27,540] is used that way quite frequently.
+- [00:59:27,540 - 00:59:29,590] Let's see, let's do one other thing before
+- [00:59:29,590 - 00:59:31,640] we finish. Not before we finish, but before
+- [00:59:31,640 - 00:59:35,739] we finish with this. We started with these
+- [00:59:35,739 - 00:59:39,839] circles and these lines here. What do they
+- [00:59:39,839 - 00:59:41,679] look like on the unit disc
+- [00:59:41,679 - 00:59:43,520] here? Well, they look roughly like this.
+- [00:59:43,640 - 00:59:49,979] The radial lines start at one end and go
+- [00:59:49,979 - 00:59:56,319] out to infinity, but infinity was over here. So
+- [00:59:56,319 - 01:00:00,549] the radial lines look like this. They
+- [01:00:00,549 - 01:00:04,779] are actually circles. They are actually circles.
+- [01:00:04,779 - 01:00:09,400] Circles of different radii.
+- [01:00:09,400 - 01:00:11,640] And the lines of constant radius here...
+- [01:00:11,640 - 01:00:12,640] 1 over 0 in the radial line.
+- [01:00:12,640 - 01:00:13,140] So there is an infinite number. The radius
+- [01:00:13,140 - 01:00:13,640] looks like this. And this is always one of
+- [01:00:13,640 - 01:00:16,420] they look like this
+- [01:00:16,420 - 01:00:19,990] and they bunch up as you
+- [01:00:19,990 - 01:00:23,560] get closer and closer to the
+- [01:00:23,560 - 01:00:33,839] do you remember the transformations on the ribbon here?
+- [01:00:34,220 - 01:00:36,620] there were transformations on the ribbon which moved
+- [01:00:36,620 - 01:00:39,480] which translated the ribbon back and forth in this direction
+- [01:00:39,480 - 01:00:43,660] they corresponded to dilatations or dilations
+- [01:00:43,660 - 01:00:46,840] expansions and contractions here
+- [01:00:46,840 - 01:00:51,240] they correspond to some complicated kind of motions here
+- [01:00:51,240 - 01:00:55,430] when you said that those
+- [01:00:55,430 - 01:00:59,620] arcs that you drew are circles
+- [01:00:59,620 - 01:01:03,320] are there circles in the arcs in the circle?
+- [01:01:04,400 - 01:01:06,960] they're circles but their centers are in various places
+- [01:01:06,960 - 01:01:08,210] this one is not a
+- [01:01:08,210 - 01:01:09,460] circle clearly, it's a straight line
+- [01:01:09,460 - 01:01:11,120] but it's the limit of a circle
+- [01:01:11,120 - 01:01:12,910] this one is a circle
+- [01:01:12,910 - 01:01:14,700] with a center way down here
+- [01:01:14,700 - 01:01:17,360] this one has its center somewhere here
+- [01:01:17,360 - 01:01:19,480] this one has its center somewhere here
+- [01:01:19,480 - 01:01:20,540] and of course this one
+- [01:01:20,540 - 01:01:21,600] has its center right over here
+- [01:01:21,600 - 01:01:26,700] would cartographers like that transformation?
+- [01:01:27,800 - 01:01:28,700] it kind of looks like
+- [01:01:28,700 - 01:01:31,640] well of course that's not a sphere, it's a disk
+- [01:01:31,640 - 01:01:33,560] don't confuse it with a sphere
+- [01:01:33,560 - 01:01:35,370] now, if you did the
+- [01:01:35,370 - 01:01:37,180] same thing with the full plane
+- [01:01:37,180 - 01:01:38,680] you would get a sphere
+- [01:01:39,460 - 01:01:43,460] but that's, I didn't want to do that now
+- [01:01:45,460 - 01:01:47,460] it's the optical illusion anyway
+- [01:01:47,460 - 01:01:50,460] those are circles in a sphere
+- [01:01:50,460 - 01:01:51,960] yeah it looks like a sphere but
+- [01:01:51,960 - 01:01:53,460] it's not intended to be a sphere
+- [01:01:53,460 - 01:01:55,460] it's just intended to be a mapping
+- [01:01:55,460 - 01:01:59,460] from the plane to the disk
+- [01:01:59,460 - 01:02:03,460] alright so we have now
+- [01:02:03,460 - 01:02:07,460] another representation of the same picture
+- [01:02:07,460 - 01:02:08,460] question
+- [01:02:08,460 - 01:02:09,460] where does the left half go?
+- [01:02:09,460 - 01:02:12,960] the left half plane goes
+- [01:02:12,960 - 01:02:16,460] to the outside of the disk
+- [01:02:16,460 - 01:02:19,460] left half plane, right half plane is here
+- [01:02:19,460 - 01:02:21,460] that's the inside of the disk
+- [01:02:21,460 - 01:02:23,460] the left half plane goes
+- [01:02:23,460 - 01:02:25,460] to the outside of the disk
+- [01:02:25,460 - 01:02:26,960] it didn't disappear, it just went
+- [01:02:26,960 - 01:02:28,460] to the outside of the disk
+- [01:02:30,460 - 01:02:32,460] I don't know who asked the question
+- [01:02:32,460 - 01:02:34,460] it's a sphere because
+- [01:02:34,460 - 01:02:37,460] when you take the limits, things go around
+- [01:02:37,460 - 01:02:39,460] and they fold up, right?
+- [01:02:39,460 - 01:02:41,460] you mean when you take the full plane
+- [01:02:41,460 - 01:02:43,460] the full plane, it's a little bit complicated
+- [01:02:43,460 - 01:02:46,460] it's a stereographic mapping of a sphere
+- [01:02:46,460 - 01:02:48,460] I think there's a single point
+- [01:02:48,460 - 01:02:50,460] at infinity and there's a mapping directly
+- [01:02:50,460 - 01:02:52,460] yeah
+- [01:02:52,460 - 01:02:55,460] and it can be mapped stereographically
+- [01:02:55,460 - 01:02:59,460] which was the radius?
+- [01:02:59,460 - 01:03:02,460] the radius on the left, the spokes going out,
+- [01:03:02,460 - 01:03:05,460] which set occurs when they go through the line?
+- [01:03:05,460 - 01:03:06,460] the spokes going out here, they begin
+- [01:03:06,460 - 01:03:07,460] at the left side of the disk, right?
+- [01:03:07,460 - 01:03:10,460] they begin at this point
+- [01:03:10,460 - 01:03:12,460] this point is that point
+- [01:03:14,460 - 01:03:17,460] infinity, let's see, z equals infinity,
+- [01:03:17,460 - 01:03:20,460] that's w equals 1, that's over here
+- [01:03:20,460 - 01:03:24,460] so every one of these lines, let's take the one which is first
+- [01:03:24,460 - 01:03:28,460] of all completely symmetric between the upper half plane and the lower half plane
+- [01:03:28,460 - 01:03:30,460] that's the x-axis
+- [01:03:30,460 - 01:03:33,460] the x-axis, that's just this line
+- [01:03:33,460 - 01:03:42,460] the radial lines above the x-axis are like that
+- [01:03:42,460 - 01:03:47,460] radial lines below the x-axis are like that
+- [01:03:47,460 - 01:03:53,460] then there's the circles on here
+- [01:03:53,460 - 01:03:57,960] here's a circle, every one of these circles sort
+- [01:03:57,960 - 01:04:02,460] of surrounds this point here, sort of, half surrounds it
+- [01:04:02,460 - 01:04:08,460] they start, well let's see, they start on the boundary
+- [01:04:08,460 - 01:04:10,960] they surround this point and
+- [01:04:10,960 - 01:04:13,460] they come back to the boundary
+- [01:04:13,460 - 01:04:16,460] so they start on the boundary of the
+- [01:04:16,460 - 01:04:19,460] disk, they go around and they come back
+- [01:04:19,460 - 01:04:22,460] but as you move out
+- [01:04:24,460 - 01:04:26,460] they go like that
+- [01:04:29,460 - 01:04:30,460] they sort of get turned a little bit inside out as
+- [01:04:30,460 - 01:04:31,460] you go from here to here so they go like that
+- [01:04:32,460 - 01:04:34,460] their curvature is in the opposite direction
+- [01:04:34,460 - 01:04:36,460] Are they circles too?
+- [01:04:36,460 - 01:04:39,460] Yeah, yeah, they are also circles
+- [01:04:39,460 - 01:04:42,460] It's an interesting fact, under these mappings, well
+- [01:04:42,460 - 01:04:45,460] under this mapping, under this kind of mapping
+- [01:04:45,460 - 01:04:48,460] this is called a linear fractional mapping
+- [01:04:48,460 - 01:04:52,460] it's a fraction made out of two linear functions
+- [01:04:52,460 - 01:04:56,460] under linear fractional mappings, the collection of circles and
+- [01:04:56,460 - 01:05:00,460] lines transform into a collection of circles and lines
+- [01:05:00,460 - 01:05:02,460] so here's a line
+- [01:05:02,460 - 01:05:05,460] it transformed to a circle
+- [01:05:05,460 - 01:05:08,460] here's a line
+- [01:05:08,460 - 01:05:11,460] it transformed to a certain circle
+- [01:05:11,460 - 01:05:14,960] circles and lines transform, the collection of
+- [01:05:14,960 - 01:05:18,460] circles plus lines transform to circles plus lines
+- [01:05:18,460 - 01:05:20,460] not under every conformal mapping
+- [01:05:20,460 - 01:05:22,460] under linear fractional transformations, and
+- [01:05:22,460 - 01:05:24,460] that's what these are called
+- [01:05:24,460 - 01:05:26,960] sometimes called Mebius transformations and they
+- [01:05:26,960 - 01:05:29,460] have nothing to do with Mebius strips
+- [01:05:29,460 - 01:05:31,460] at least I don't think they do
+- [01:05:31,460 - 01:05:33,460] same Mebius though
+- [01:05:33,460 - 01:05:34,460] okay
+- [01:05:34,460 - 01:05:37,460] let's take a break for five minutes or so
+- [01:05:37,460 - 01:05:40,460] What about that point at halfway infinity?
+- [01:05:40,460 - 01:05:42,460] The point where?
+- [01:05:42,460 - 01:05:45,460] The point at halfway infinity is a straight line
+- [01:05:45,460 - 01:05:46,460] The point at halfway infinity,
+- [01:05:46,460 - 01:05:47,460] what is a half way infinity?
+- [01:05:47,460 - 01:05:49,460] It's on the basketball
+- [01:05:49,460 - 01:05:51,460] What is halfway infinity?
+- [01:05:51,460 - 01:05:53,460] Isn't that straight line in the
+- [01:05:53,460 - 01:05:55,460] vertical line in the middle there?
+- [01:05:55,460 - 01:05:56,460] That one, yeah
+- [01:05:56,460 - 01:05:57,460] That one, yeah
+- [01:05:57,460 - 01:05:59,460] That's some particular radius
+- [01:05:59,460 - 01:06:00,460] probably radius one
+- [01:06:00,460 - 01:06:02,460] I'm not sure
+- [01:06:02,460 - 01:06:08,460] It goes through the origin
+- [01:06:08,460 - 01:06:10,460] Yeah
+- [01:06:10,460 - 01:06:14,460] It passes through the origin on the w plane
+- [01:06:14,460 - 01:06:17,460] So where is the origin on the w plane?
+- [01:06:17,460 - 01:06:20,460] It's the thing whose logarithm is zero
+- [01:06:20,460 - 01:06:22,460] One
+- [01:06:22,460 - 01:06:24,460] Right
+- [01:06:24,460 - 01:06:29,460] Now I'm going to try to give you a
+- [01:06:29,460 - 01:06:36,460] fairly complete definition of what string theory is
+- [01:06:36,460 - 01:06:39,460] We've set up a lot of the mathematics
+- [01:06:39,460 - 01:06:45,460] The problem of course is proving
+- [01:06:45,460 - 01:06:48,460] that these things work in detail
+- [01:06:48,460 - 01:06:52,460] and that of course is where the real
+- [01:06:52,460 - 01:06:55,460] difficult stuff comes in
+- [01:06:55,460 - 01:06:57,460] but um
+- [01:06:57,460 - 01:07:00,460] Let's go back
+- [01:07:00,460 - 01:07:02,960] You may recall that we talked a
+- [01:07:02,960 - 01:07:05,460] little bit about what scattering amplitudes look like
+- [01:07:05,460 - 01:07:08,460] and how you derive them in string theory
+- [01:07:08,460 - 01:07:11,460] We started with a simple example
+- [01:07:11,460 - 01:07:13,460] where two particles collided, came
+- [01:07:13,460 - 01:07:15,460] in and two particles went out
+- [01:07:15,460 - 01:07:19,460] We said okay, let's just take
+- [01:07:19,460 - 01:07:22,460] the world sheet of the whole process
+- [01:07:22,460 - 01:07:25,460] and we're going to take the whole process
+- [01:07:25,460 - 01:07:26,960] and we're going to make the
+- [01:07:26,960 - 01:07:28,460] world sheet of the whole process
+- [01:07:28,460 - 01:07:31,460] to be an infinite strip like this
+- [01:07:31,460 - 01:07:34,460] but since two particles are coming in
+- [01:07:34,460 - 01:07:38,460] let's slit it down the middle like that
+- [01:07:38,460 - 01:07:40,460] Two particles are going to go out
+- [01:07:40,460 - 01:07:43,460] Time goes from left to right
+- [01:07:43,460 - 01:07:45,460] Two strings come in
+- [01:07:45,460 - 01:07:49,460] Two strings go out
+- [01:07:49,460 - 01:07:51,460] So here's the two initial strings
+- [01:07:51,460 - 01:07:52,960] I don't want to draw on
+- [01:07:52,960 - 01:07:54,460] this, at least not with black
+- [01:07:54,460 - 01:07:57,460] Here's the incoming string and it propagates
+- [01:07:57,460 - 01:08:00,460] Here's the other incoming string and it propagates
+- [01:08:00,460 - 01:08:03,460] The two strings join
+- [01:08:03,460 - 01:08:06,460] form a single string
+- [01:08:06,460 - 01:08:09,460] There it is in here
+- [01:08:09,460 - 01:08:12,460] And then after a period of time
+- [01:08:12,460 - 01:08:14,460] How much time?
+- [01:08:14,460 - 01:08:16,460] The answer is you integrate over the time
+- [01:08:16,460 - 01:08:18,460] As in quantum mechanics you
+- [01:08:18,460 - 01:08:20,460] always integrate over all possible paths
+- [01:08:20,460 - 01:08:22,460] from beginning to end
+- [01:08:22,460 - 01:08:24,460] In other words you just
+- [01:08:24,460 - 01:08:28,460] sum up the amplitudes for all possible histories
+- [01:08:28,460 - 01:08:29,960] and then the end what
+- [01:08:29,960 - 01:08:31,460] goes out is two strings again
+- [01:08:37,460 - 01:08:39,460] What do you calculate?
+- [01:08:39,460 - 01:08:41,460] I'll remind you what you calculate
+- [01:08:41,460 - 01:08:44,460] Well, we talked about it in several different versions
+- [01:08:44,460 - 01:08:47,460] But in one version you think of a path integral
+- [01:08:47,460 - 01:08:49,460] In the path integral
+- [01:08:49,460 - 01:08:51,460] the degrees of freedom
+- [01:08:51,460 - 01:08:53,460] are the coordinate positions
+- [01:08:53,460 - 01:08:57,460] We could define a sigma variable and a tau variable
+- [01:08:57,460 - 01:09:00,460] or two coordinates on this
+- [01:09:00,460 - 01:09:04,460] two coordinates on this world sheet
+- [01:09:04,460 - 01:09:08,460] But the degrees of freedom are the space-time positions
+- [01:09:08,460 - 01:09:11,460] the space-time coordinates
+- [01:09:11,460 - 01:09:13,460] of a point on the world sheet
+- [01:09:13,460 - 01:09:15,460] So what are they?
+- [01:09:15,460 - 01:09:17,460] They're x mu
+- [01:09:17,460 - 01:09:20,460] where mu goes from one or from zero
+- [01:09:20,460 - 01:09:22,460] zero being time
+- [01:09:22,460 - 01:09:26,460] What's the last one?
+- [01:09:26,460 - 01:09:29,460] 25 if it's in 26 dimensions
+- [01:09:29,460 - 01:09:32,460] 9 if it's in 10 dimensions
+- [01:09:32,460 - 01:09:35,460] But whatever the collection of coordinates are
+- [01:09:35,460 - 01:09:38,460] that describe the location of a point on the string
+- [01:09:38,460 - 01:09:42,460] And we call that x mu of
+- [01:09:42,460 - 01:09:44,460] sigma and tau let's say
+- [01:09:44,460 - 01:09:46,460] Sigma and tau could be the
+- [01:09:46,460 - 01:09:48,460] two coordinates on this world sheet
+- [01:09:48,460 - 01:09:49,960] They're of course the same as
+- [01:09:49,960 - 01:09:51,460] these little x's and y's here
+- [01:09:52,460 - 01:09:56,460] They're the coordinates in a two-dimensional space
+- [01:09:56,460 - 01:09:59,460] And those coordinates, the sigma and tau are
+- [01:09:59,460 - 01:10:03,460] The x's are coordinates in real space-time
+- [01:10:03,460 - 01:10:05,460] The sigma and taus are just labels
+- [01:10:05,460 - 01:10:08,460] which label points on the world sheet
+- [01:10:08,460 - 01:10:11,460] The x's are their real space-time location
+- [01:10:11,460 - 01:10:14,460] And if I know the space-time location
+- [01:10:14,460 - 01:10:16,460] of every point on the world sheet
+- [01:10:16,460 - 01:10:18,460] then I know how the world
+- [01:10:18,460 - 01:10:20,460] sheet is spread out over space
+- [01:10:20,460 - 01:10:21,460] What do you do?
+- [01:10:21,460 - 01:10:24,460] We calculate a certain path integral
+- [01:10:24,460 - 01:10:28,460] And the path integral that we calculate
+- [01:10:28,460 - 01:10:33,460] is e to the minus
+- [01:10:33,460 - 01:10:35,460] the action
+- [01:10:35,460 - 01:10:37,460] We did a little trick
+- [01:10:37,460 - 01:10:39,460] I'm just reminding you now of a trick
+- [01:10:39,460 - 01:10:40,960] We did a little trick of
+- [01:10:40,960 - 01:10:42,460] letting tau go to i tau
+- [01:10:42,460 - 01:10:45,460] in order to get rid of various factors of i
+- [01:10:45,460 - 01:10:46,960] We talked about it, I'm not
+- [01:10:46,960 - 01:10:48,460] going to do it over again
+- [01:10:48,460 - 01:10:49,460] And there was an action
+- [01:10:49,460 - 01:10:50,460] The action was the integral of
+- [01:10:50,460 - 01:10:53,460] the integral over d sigma and d tau
+- [01:10:53,460 - 01:10:56,460] of what?
+- [01:10:56,460 - 01:11:01,460] It was the x mu d tau squared
+- [01:11:01,460 - 01:11:05,460] minus the x mu d sigma squared
+- [01:11:05,460 - 01:11:08,460] plus the x mu d sigma squared
+- [01:11:14,460 - 01:11:16,460] What exactly does this mean?
+- [01:11:16,460 - 01:11:18,460] The x mu by d tau squared means
+- [01:11:18,460 - 01:11:21,460] the sum of 26 terms
+- [01:11:21,460 - 01:11:23,460] The x1 by d tau squared
+- [01:11:23,460 - 01:11:24,460] The x2 by d tau squared
+- [01:11:24,460 - 01:11:26,460] The x3 up to the last one
+- [01:11:26,460 - 01:11:28,460] That's what these things mean
+- [01:11:28,460 - 01:11:33,460] This is the exponential of the action
+- [01:11:33,460 - 01:11:35,460] And what do we do with it?
+- [01:11:35,460 - 01:11:39,460] We integrate it
+- [01:11:39,460 - 01:11:42,460] Path integral over all possible ways
+- [01:11:42,460 - 01:11:44,460] of filling up the surface
+- [01:11:44,460 - 01:11:47,460] It's often written delta x of sigma and tau
+- [01:11:48,460 - 01:11:52,460] This means path integral
+- [01:11:52,460 - 01:11:55,460] And it means integrate it or sum it up
+- [01:11:55,460 - 01:11:59,460] over all possible configurations of the world sheet
+- [01:11:59,460 - 01:12:03,460] in space-time, the way the world sheet fills up space-time
+- [01:12:03,460 - 01:12:06,460] But how does this formula here
+- [01:12:06,460 - 01:12:09,460] First of all, how does this formula know about
+- [01:12:09,460 - 01:12:12,460] the momenta of the incoming particles?
+- [01:12:12,460 - 01:12:15,460] The momenta of the incoming particles
+- [01:12:15,460 - 01:12:18,460] we have to add in by hand
+- [01:12:18,460 - 01:12:21,460] And it's inconvenient in this picture
+- [01:12:21,460 - 01:12:22,460] to say how we do it
+- [01:12:22,460 - 01:12:24,460] I'm going to tell you in another picture
+- [01:12:24,460 - 01:12:26,460] exactly how we do it
+- [01:12:26,460 - 01:12:28,460] But for the moment, let's just suppose
+- [01:12:28,460 - 01:12:31,460] somehow we have put in the momenta
+- [01:12:31,460 - 01:12:34,460] of the incoming and outgoing particles
+- [01:12:34,460 - 01:12:37,460] that's somehow embedded in this calculation
+- [01:12:37,460 - 01:12:39,460] And we integrate over all x's
+- [01:12:39,460 - 01:12:41,460] Now, there's one more thing
+- [01:12:41,460 - 01:12:44,460] What about the time interval between here and here?
+- [01:12:46,460 - 01:12:48,460] We integrate over it
+- [01:12:48,460 - 01:12:50,460] And we have to do it in a way
+- [01:12:50,460 - 01:12:52,460] that's not going to be a problem
+- [01:12:52,460 - 01:12:54,460] So what we're doing in effect
+- [01:12:54,460 - 01:12:57,460] is summing up all possible ways
+- [01:12:57,460 - 01:12:59,460] all possible histories
+- [01:12:59,460 - 01:13:01,460] of these two particles
+- [01:13:01,460 - 01:13:03,460] oscillating, then forming a single particle
+- [01:13:03,460 - 01:13:05,460] and then forming two particles again
+- [01:13:05,460 - 01:13:07,460] All possible histories
+- [01:13:07,460 - 01:13:10,460] All possible ways that the world sheet fluctuates
+- [01:13:10,460 - 01:13:12,460] That's this integral over here
+- [01:13:12,460 - 01:13:14,460] It's an integral of the action
+- [01:13:14,460 - 01:13:16,460] And it's a complicated thing
+- [01:13:16,460 - 01:13:21,460] And we haven't even yet put in the rule
+- [01:13:21,460 - 01:13:22,460] I'm going to tell you what the rule is
+- [01:13:22,460 - 01:13:25,460] for the external particles in a moment
+- [01:13:25,460 - 01:13:27,460] But before we do it
+- [01:13:27,460 - 01:13:28,460] What did we call this?
+- [01:13:28,460 - 01:13:31,460] We had a name for this picture
+- [01:13:31,460 - 01:13:33,460] What was it?
+- [01:13:33,460 - 01:13:34,460] Oh, the sports band-aid
+- [01:13:34,460 - 01:13:36,460] Yeah, yeah, the sports band-aid, right
+- [01:13:36,460 - 01:13:38,460] Butterfly bandage or whatever it's called
+- [01:13:38,460 - 01:13:39,460] Right
+- [01:13:39,460 - 01:13:43,460] Well, now we can make use of our freedom
+- [01:13:43,460 - 01:13:46,460] to map this picture to other
+- [01:13:46,460 - 01:13:50,460] sets of coordinates
+- [01:13:50,460 - 01:13:52,460] for the world sheet
+- [01:13:52,460 - 01:13:54,460] Conformal mappings
+- [01:13:54,460 - 01:13:56,460] Conformal mappings is a very wide
+- [01:13:56,460 - 01:13:58,460] variety of analytic functions
+- [01:13:58,460 - 01:14:01,460] And in fact the variety is so large
+- [01:14:01,460 - 01:14:03,460] that you can basically map
+- [01:14:03,460 - 01:14:05,460] This thing has one boundary
+- [01:14:05,460 - 01:14:07,460] The boundary goes from here to here
+- [01:14:07,460 - 01:14:09,460] Now, out at infinity here
+- [01:14:09,460 - 01:14:11,460] What goes on at infinity is subtle
+- [01:14:11,460 - 01:14:14,460] But let's jump to this boundary
+- [01:14:14,460 - 01:14:15,460] It goes all the ways around
+- [01:14:15,460 - 01:14:17,460] Just like the sports bandage
+- [01:14:17,460 - 01:14:18,460] It goes around once
+- [01:14:18,460 - 01:14:20,460] It has one boundary
+- [01:14:20,460 - 01:14:22,460] Apart from the fact that little pieces
+- [01:14:22,460 - 01:14:24,460] of the boundary are off at infinity
+- [01:14:24,460 - 01:14:25,460] We'll worry about that later
+- [01:14:25,460 - 01:14:28,460] You can map anything with one boundary like that
+- [01:14:28,460 - 01:14:30,460] to anything else with one boundary
+- [01:14:30,460 - 01:14:32,460] by a conformal mapping
+- [01:14:32,460 - 01:14:35,460] In particular, if you so choose
+- [01:14:35,460 - 01:14:36,460] Just for symmetry
+- [01:14:36,460 - 01:14:39,460] You can map this whole world sheet
+- [01:14:39,460 - 01:14:41,460] to a circle or to a disk
+- [01:14:41,460 - 01:14:43,460] Exactly the same disk
+- [01:14:43,460 - 01:14:45,460] I showed you how to map this
+- [01:14:45,460 - 01:14:46,960] I showed you how to map
+- [01:14:46,960 - 01:14:48,460] a single strip to a disk
+- [01:14:48,460 - 01:14:50,460] I didn't show you how to
+- [01:14:50,460 - 01:14:52,460] map the sports bandaid to a disk
+- [01:14:52,460 - 01:14:54,460] It's a little more complicated
+- [01:14:54,460 - 01:14:56,460] I once figured it out many years ago
+- [01:14:56,460 - 01:14:59,460] I worked out the mapping in detail
+- [01:14:59,460 - 01:15:02,460] I don't remember it
+- [01:15:02,460 - 01:15:08,460] But you can map it to a disk
+- [01:15:08,460 - 01:15:12,460] And then where are the incoming particles?
+- [01:15:12,460 - 01:15:15,460] Those are points on the boundary
+- [01:15:15,460 - 01:15:20,460] The outgoing particles are also points on the boundary
+- [01:15:20,460 - 01:15:24,460] Let's draw some lines to just indicate how this looks
+- [01:15:24,460 - 01:15:28,460] So if you draw some vertical lines here
+- [01:15:28,460 - 01:15:30,460] Some vertical lines here
+- [01:15:30,460 - 01:15:32,460] They will look like this
+- [01:15:35,460 - 01:15:38,460] Notice that these vertical lines over here
+- [01:15:38,460 - 01:15:40,460] Surround the point at infinity here
+- [01:15:40,460 - 01:15:42,460] That's this one
+- [01:15:42,460 - 01:15:44,460] And then all of a sudden
+- [01:15:44,460 - 01:15:48,460] They come together like that
+- [01:15:48,460 - 01:15:50,460] That's this point
+- [01:15:50,460 - 01:15:52,460] Then they go like this
+- [01:16:04,460 - 01:16:07,460] That's what the mapping from here to here looks like
+- [01:16:07,460 - 01:16:10,460] The horizontal lines
+- [01:16:10,460 - 01:16:12,460] I don't know, they go...
+- [01:16:12,460 - 01:16:15,460] They're a little more complicated
+- [01:16:15,460 - 01:16:17,460] That's what it looks like
+- [01:16:17,460 - 01:16:20,460] The point is, you can do exact...
+- [01:16:20,460 - 01:16:22,460] You don't need to know where these lines are, incidentally
+- [01:16:22,460 - 01:16:24,460] You can forget where they are
+- [01:16:24,460 - 01:16:26,460] They don't play any special role
+- [01:16:31,460 - 01:16:33,460] The point where they split and join
+- [01:16:33,460 - 01:16:35,460] In this diagram here
+- [01:16:35,460 - 01:16:38,460] Is determined by the position
+- [01:16:38,460 - 01:16:40,460] The positions of these ends
+- [01:16:40,460 - 01:16:43,460] The positions of these external points here
+- [01:16:43,460 - 01:16:45,460] As you move them around
+- [01:16:45,460 - 01:16:47,460] These points move
+- [01:16:47,460 - 01:16:49,460] Closer and farther apart
+- [01:16:49,460 - 01:16:52,460] When you move these points together this way
+- [01:16:52,460 - 01:16:55,460] These points get very far apart
+- [01:16:55,460 - 01:16:58,460] When you move them together horizontally
+- [01:16:58,460 - 01:17:00,460] These points move together
+- [01:17:00,460 - 01:17:02,460] So the same picture
+- [01:17:02,460 - 01:17:04,460] The same physics
+- [01:17:04,460 - 01:17:06,460] Different pictures
+- [01:17:06,460 - 01:17:08,460] What do you do here?
+- [01:17:08,460 - 01:17:10,460] You do exactly the same thing
+- [01:17:10,460 - 01:17:13,460] You take the x by the tau squared
+- [01:17:13,460 - 01:17:15,460] You can now call it...
+- [01:17:15,460 - 01:17:16,960] You can now call these coordinates
+- [01:17:16,960 - 01:17:18,460] by different names if you like
+- [01:17:18,460 - 01:17:19,460] You can call them x
+- [01:17:19,460 - 01:17:20,460] and y or u and v
+- [01:17:20,460 - 01:17:21,460] Doesn't matter
+- [01:17:21,460 - 01:17:23,460] The tau and sigma coordinates
+- [01:17:23,460 - 01:17:27,460] You calculate exactly the same quantity
+- [01:17:27,460 - 01:17:29,460] Integrate it over here
+- [01:17:31,460 - 01:17:34,460] But now I can tell you what you do
+- [01:17:34,460 - 01:17:36,460] With the external particles
+- [01:17:36,460 - 01:17:39,460] You have a rule for each external particle
+- [01:17:40,460 - 01:17:45,460] One more factor in the integrand
+- [01:17:45,460 - 01:17:47,460] Anybody know what that factor is?
+- [01:17:47,460 - 01:17:51,460] It's the thing which injects momentum
+- [01:17:51,460 - 01:17:55,460] Delta function of what?
+- [01:17:55,460 - 01:17:57,460] Okay
+- [01:17:57,460 - 01:18:01,460] X's are integration variables
+- [01:18:01,460 - 01:18:04,460] K's are the momenta
+- [01:18:04,460 - 01:18:09,460] K1, K2, K3, K4
+- [01:18:10,460 - 01:18:13,460] These are the momenta coming in and going out
+- [01:18:13,460 - 01:18:16,460] You put in for each external particle
+- [01:18:16,460 - 01:18:18,460] Each particle coming in
+- [01:18:18,460 - 01:18:21,460] You put in a factor into the integrand here
+- [01:18:21,460 - 01:18:24,460] Of
+- [01:18:24,460 - 01:18:31,460] E to the i k x
+- [01:18:31,460 - 01:18:34,460] At the position
+- [01:18:34,460 - 01:18:37,460] Let's call this point z
+- [01:18:37,460 - 01:18:39,460] Approximately
+- [01:18:39,460 - 01:18:43,460] A product for each external particle
+- [01:18:43,460 - 01:18:45,460] One more thing goes in
+- [01:18:45,460 - 01:18:48,460] It's a factor of E to the i k x
+- [01:18:48,460 - 01:18:50,460] Where k is the momentum of
+- [01:18:50,460 - 01:18:52,460] the particular particle that's coming in
+- [01:18:52,460 - 01:18:53,460] So you have an E
+- [01:18:53,460 - 01:18:54,460] to the i k x one
+- [01:18:54,460 - 01:18:56,460] And they're on the boundary
+- [01:18:56,460 - 01:18:58,960] It corresponds to particles being
+- [01:18:58,960 - 01:19:01,460] injected into the diagram like that
+- [01:19:06,460 - 01:19:08,460] That rule
+- [01:19:08,460 - 01:19:10,460] Comes from quantum mechanics
+- [01:19:10,460 - 01:19:11,460] It comes from
+- [01:19:11,460 - 01:19:14,460] Well we can discuss this rule another time
+- [01:19:14,460 - 01:19:17,460] I wanted to lay out the whole set of rules
+- [01:19:17,460 - 01:19:19,460] You do a path integral
+- [01:19:19,460 - 01:19:22,460] Over all possible embeddings
+- [01:19:22,460 - 01:19:25,460] Of the world sheet into space time
+- [01:19:25,460 - 01:19:27,960] All possible ways that this world
+- [01:19:27,960 - 01:19:30,460] sheet can be embedded in space time
+- [01:19:30,460 - 01:19:32,460] E to an action
+- [01:19:32,460 - 01:19:34,460] And for each external particle
+- [01:19:34,460 - 01:19:36,460] An E to the i k x
+- [01:19:36,460 - 01:19:39,460] Where the x
+- [01:19:39,460 - 01:19:41,460] Is at the point
+- [01:19:41,460 - 01:19:43,460] Where the insertion of that particle happened
+- [01:19:43,460 - 01:19:45,460] On the world sheet here
+- [01:19:45,460 - 01:19:48,460] Z here corresponds to the coordinates of this point
+- [01:19:48,460 - 01:19:50,460] On the plane here
+- [01:19:50,460 - 01:19:52,460] One last thing
+- [01:19:52,460 - 01:19:54,460] After you're finished
+- [01:19:54,460 - 01:19:56,460] You have to integrate
+- [01:19:56,460 - 01:19:58,460] Over the positions of these insertions
+- [01:19:58,460 - 01:20:00,460] That's it
+- [01:20:00,460 - 01:20:02,460] That's the whole story
+- [01:20:02,460 - 01:20:04,460] That is what string theory is
+- [01:20:04,460 - 01:20:05,460] This is open string
+- [01:20:05,460 - 01:20:08,460] This is open string theory
+- [01:20:08,460 - 01:20:10,460] That's the whole set of rules
+- [01:20:10,460 - 01:20:12,460] A path integral
+- [01:20:12,460 - 01:20:16,460] A path integral over all world sheets
+- [01:20:16,460 - 01:20:20,460] All embeddings
+- [01:20:20,460 - 01:20:22,460] You can describe it on a disc
+- [01:20:22,460 - 01:20:24,460] You can describe it on a sports bandage
+- [01:20:24,460 - 01:20:26,460] You can describe it however you like
+- [01:20:26,460 - 01:20:30,460] What did you get after you finished all this integration?
+- [01:20:30,460 - 01:20:32,460] The scattering amplitude
+- [01:20:32,460 - 01:20:34,460] The scattering amplitude
+- [01:20:34,460 - 01:20:39,460] The particle of momentum k1, k2
+- [01:20:39,460 - 01:20:41,460] To become k3 and k4
+- [01:20:41,460 - 01:20:42,460] But if those are fixed
+- [01:20:42,460 - 01:20:44,460] How come we integrated over them?
+- [01:20:44,460 - 01:20:46,460] The momenta or the positions?
+- [01:20:46,460 - 01:20:47,460] The momenta
+- [01:20:47,460 - 01:20:48,460] The momenta
+- [01:20:48,460 - 01:20:49,460] No, we didn't integrate over the momenta
+- [01:20:49,460 - 01:20:53,460] We integrate over the locations on the disc here
+- [01:20:54,460 - 01:20:56,460] Of those
+- [01:20:56,460 - 01:20:58,460] Of the insertions
+- [01:20:58,460 - 01:21:01,460] Okay, so those don't represent the actual values
+- [01:21:01,460 - 01:21:03,460] They just represent where they are
+- [01:21:03,460 - 01:21:08,460] They replace the integration over the separation
+- [01:21:08,460 - 01:21:11,460] Right, okay, so those are fixed
+- [01:21:11,460 - 01:21:13,460] Those are not fixed
+- [01:21:13,460 - 01:21:16,460] No, I mean the k1, 2, 3, 4 are
+- [01:21:16,460 - 01:21:17,460] The k's are fixed
+- [01:21:17,460 - 01:21:18,960] The k's are the momenta of
+- [01:21:18,960 - 01:21:20,460] the particles coming in and going out
+- [01:21:20,460 - 01:21:23,460] So we get basically the scattering amplitude
+- [01:21:23,460 - 01:21:29,460] Scattering amplitude for a particle of momentum 1 and 2
+- [01:21:29,460 - 01:21:31,460] To become a particle of
+- [01:21:31,460 - 01:21:33,460] momentum minus k3 and minus k4
+- [01:21:33,460 - 01:21:37,460] Remember, all momenta are carried
+- [01:21:37,460 - 01:21:40,460] Is that product multiplied by the whole integral?
+- [01:21:40,460 - 01:21:41,460] It's inside the integration
+- [01:21:41,460 - 01:21:42,460] Inside the integration
+- [01:21:42,460 - 01:21:43,460] Inside the integration
+- [01:21:43,460 - 01:21:45,460] Is that, you call that the action?
+- [01:21:45,460 - 01:21:46,460] This is the action
+- [01:21:46,460 - 01:21:48,460] And that's part of the action?
+- [01:21:48,460 - 01:21:51,460] This is, no, these are called vertex operators
+- [01:21:51,460 - 01:21:55,460] Vertex operators mean they just bring some
+- [01:21:55,460 - 01:21:58,460] They just deposit momentum into the
+- [01:21:59,460 - 01:22:01,460] Into the diagram
+- [01:22:03,460 - 01:22:06,460] They inject the flow of momentum into the diagram
+- [01:22:06,460 - 01:22:07,460] We'll work that out another time
+- [01:22:07,460 - 01:22:08,460] and see where this comes from
+- [01:22:08,460 - 01:22:11,460] The question is, do they go inside the upper integral?
+- [01:22:11,460 - 01:22:13,460] Yeah, they go inside the integrals
+- [01:22:13,460 - 01:22:16,460] Not inside this integral
+- [01:22:16,460 - 01:22:18,460] No, not inside that integral
+- [01:22:19,460 - 01:22:20,960] No, we could write it out,
+- [01:22:20,960 - 01:22:22,460] let's write it out more clearly
+- [01:22:24,460 - 01:22:28,460] Integral over all possible
+- [01:22:29,460 - 01:22:30,460] Well, let's see
+- [01:22:30,460 - 01:22:33,460] Integral, path integral
+- [01:22:33,460 - 01:22:34,960] Let's just call it path integral,
+- [01:22:34,960 - 01:22:36,460] let's not put any d's there
+- [01:22:36,460 - 01:22:39,460] e to the minus the action
+- [01:22:39,460 - 01:22:42,460] e to the minus the action
+- [01:22:45,460 - 01:22:49,460] This is the action for a particular configuration
+- [01:22:49,460 - 01:22:50,460] And here it is
+- [01:22:50,460 - 01:22:52,460] This is the action
+- [01:22:52,460 - 01:22:55,460] Times, for each external particle
+- [01:22:55,460 - 01:22:59,460] A factor e to the i k
+- [01:22:59,460 - 01:23:03,460] x of z1
+- [01:23:03,460 - 01:23:06,460] Let's say zi, ki
+- [01:23:06,460 - 01:23:08,460] A factor for each one
+- [01:23:08,460 - 01:23:09,460] k1
+- [01:23:09,460 - 01:23:11,460] z1
+- [01:23:11,460 - 01:23:13,460] Yeah, let me not put it for a moment
+- [01:23:13,460 - 01:23:15,460] e to the i k2
+- [01:23:15,460 - 01:23:17,460] x of z2
+- [01:23:17,460 - 01:23:18,460] dot dot dot
+- [01:23:18,460 - 01:23:20,460] For each external particle
+- [01:23:21,460 - 01:23:24,460] Where z's are the positions
+- [01:23:24,460 - 01:23:28,460] On the disk where the momentum is injected
+- [01:23:29,460 - 01:23:31,460] This is path integrated
+- [01:23:31,460 - 01:23:32,460] And then
+- [01:23:32,460 - 01:23:35,460] Integrated over the locations
+- [01:23:35,460 - 01:23:38,460] Where the momenta are injected
+- [01:23:40,460 - 01:23:42,460] So you integrate over everything, yeah
+- [01:23:42,460 - 01:23:45,460] And use the i k x
+- [01:23:45,460 - 01:23:49,460] Even though we've already done the wick rotation
+- [01:23:49,460 - 01:23:50,460] Yeah
+- [01:23:50,460 - 01:23:52,460] Still e to the i k x
+- [01:23:52,460 - 01:23:53,460] Right
+- [01:23:53,460 - 01:23:55,460] That i is a different i
+- [01:23:58,460 - 01:24:01,460] You should really write k mu x mu
+- [01:24:02,460 - 01:24:05,460] k mu x mu
+- [01:24:05,460 - 01:24:06,460] Okay
+- [01:24:06,460 - 01:24:08,460] There's a k mu
+- [01:24:08,460 - 01:24:10,460] For each component of momentum
+- [01:24:10,460 - 01:24:11,460] And an x mu
+- [01:24:11,460 - 01:24:13,460] There are 26 x's
+- [01:24:13,460 - 01:24:14,460] There are 26 k's
+- [01:24:14,460 - 01:24:15,460] And that's it
+- [01:24:15,460 - 01:24:17,460] That's the whole structure of string theory
+- [01:24:17,460 - 01:24:19,460] Question
+- [01:24:19,460 - 01:24:20,460] In
+- [01:24:20,460 - 01:24:21,460] Where do you
+- [01:24:21,460 - 01:24:22,460] Okay
+- [01:24:22,460 - 01:24:24,460] The momentum is a vector
+- [01:24:24,460 - 01:24:25,460] K mu
+- [01:24:25,460 - 01:24:27,460] That's why there's a mu there
+- [01:24:27,460 - 01:24:28,460] Okay
+- [01:24:28,460 - 01:24:29,460] And the direction
+- [01:24:29,460 - 01:24:30,460] Is the vector
+- [01:24:30,460 - 01:24:31,460] Okay
+- [01:24:31,460 - 01:24:32,460] And then the direction
+- [01:24:32,460 - 01:24:34,460] Is related to the x sub z's
+- [01:24:34,460 - 01:24:35,460] No no
+- [01:24:35,460 - 01:24:36,460] The direction of the momentum is
+- [01:24:36,460 - 01:24:38,460] Here are the components of the momenta
+- [01:24:38,460 - 01:24:40,460] Here are the components of the momenta
+- [01:24:41,460 - 01:24:43,460] The x's which appear here
+- [01:24:43,460 - 01:24:44,460] Get integrated over
+- [01:24:44,460 - 01:24:46,460] They're part of this path integral here
+- [01:24:46,460 - 01:24:48,460] Integral delta x
+- [01:24:48,460 - 01:24:50,460] They're part of the path integral
+- [01:24:50,460 - 01:24:51,460] Not part of the action
+- [01:24:51,460 - 01:24:52,460] Yeah
+- [01:24:52,460 - 01:24:53,460] They could be
+- [01:24:53,460 - 01:24:54,460] Since they're in the exponent
+- [01:24:54,460 - 01:24:56,460] You could consider them to be part of the action
+- [01:24:56,460 - 01:24:57,460] If you liked
+- [01:24:58,460 - 01:24:59,460] Right
+- [01:24:59,460 - 01:25:00,460] You can just put them into the action
+- [01:25:00,460 - 01:25:01,460] But
+- [01:25:01,460 - 01:25:02,460] You add them
+- [01:25:02,460 - 01:25:03,460] You add them
+- [01:25:03,460 - 01:25:04,460] You add them in
+- [01:25:04,460 - 01:25:07,460] A k x for each external particle
+- [01:25:07,460 - 01:25:08,460] So how does this
+- [01:25:08,460 - 01:25:09,460] When you have the bandage
+- [01:25:09,460 - 01:25:10,460] You know the legs can be either swayed or closed
+- [01:25:10,460 - 01:25:11,460] Does that relate to the x's
+- [01:25:11,460 - 01:25:12,460] How that's
+- [01:25:12,460 - 01:25:13,460] The shape
+- [01:25:13,460 - 01:25:14,460] The shape of the bandage
+- [01:25:14,460 - 01:25:15,460] How
+- [01:25:15,460 - 01:25:16,460] The angle of the two legs
+- [01:25:16,460 - 01:25:17,460] The angle
+- [01:25:17,460 - 01:25:18,460] No no no no no
+- [01:25:18,460 - 01:25:19,460] In this drawing
+- [01:25:19,460 - 01:25:20,460] You just draw them
+- [01:25:20,460 - 01:25:21,460] Horizontal
+- [01:25:21,460 - 01:25:22,460] You can draw it any way you want
+- [01:25:22,460 - 01:25:23,460] But
+- [01:25:23,460 - 01:25:24,460] You can draw it any way you want
+- [01:25:24,460 - 01:25:25,460] But
+- [01:25:25,460 - 01:25:26,460] You can draw it any way you want
+- [01:25:26,460 - 01:25:27,460] But
+- [01:25:27,460 - 01:25:28,460] You can draw it any way you want
+- [01:25:28,460 - 01:25:29,460] But
+- [01:25:29,460 - 01:25:30,460] You can draw it any way you want
+- [01:25:30,460 - 01:25:32,460] But
+- [01:25:32,460 - 01:25:33,460] You can draw it any way you want
+- [01:25:33,460 - 01:25:34,460] But
+- [01:25:34,460 - 01:25:35,460] You can draw it any way you want
+- [01:25:35,460 - 01:25:36,460] But
+- [01:25:36,460 - 01:25:37,460] You can draw it any way you want
+- [01:25:37,460 - 01:25:38,460] Right
+- [01:25:38,460 - 01:25:39,460] It's not in real space
+- [01:25:39,460 - 01:25:40,460] Right
+- [01:25:40,460 - 01:25:41,460] It's not in real space
+- [01:25:41,460 - 01:25:42,460] It's just a parameter space
+- [01:25:42,460 - 01:25:43,460] That all
+- [01:25:43,460 - 01:25:44,460] Right
+- [01:25:44,460 - 01:25:45,460] Okay
+- [01:25:45,460 - 01:25:46,460] The amazing thing
+- [01:25:46,460 - 01:25:47,460] Is
+- [01:25:47,460 - 01:25:48,460] That you can do the integrals
+- [01:25:49,460 - 01:25:50,460] Everything can be
+- [01:25:50,460 - 01:25:51,460] Everything can be done
+- [01:25:52,460 - 01:25:53,460] These are what are called Gaussian integrals
+- [01:25:54,460 - 01:25:55,460] Everything is quadratic
+- [01:25:55,460 - 01:25:56,460] In the exponent
+- [01:25:56,460 - 01:25:57,460] All the integrals
+- [01:25:57,460 - 01:25:58,460] Can be done
+- [01:25:59,460 - 01:26:00,460] That's the good news
+- [01:26:00,460 - 01:26:04,520] infinity
+- [01:26:04,520 - 01:26:06,190] but not if you're in the right number
+- [01:26:06,190 - 01:26:07,860] of dimensions. Now I am not going to tell
+- [01:26:07,860 - 01:26:10,120] you about the wrong number of dimensions
+- [01:26:10,120 - 01:26:11,760] I'm going to tell you what the answer
+- [01:26:11,760 - 01:26:13,400] is like in the right number of dimensions
+- [01:26:13,400 - 01:26:15,980] and it's incredibly simple
+- [01:26:15,980 - 01:26:20,080] it's the solution of an electrostatics problem
+- [01:26:20,080 - 01:26:22,700] it's the solution of an electrostatics problem
+- [01:26:22,700 - 01:26:26,100] you take every one of these x's
+- [01:26:26,100 - 01:26:27,380] and think of it
+- [01:26:27,380 - 01:26:30,080] as an electrostatic potential
+- [01:26:30,080 - 01:26:32,430] there are twenty six of them or ten
+- [01:26:32,430 - 01:26:34,780] of them or however many of them there are
+- [01:26:34,780 - 01:26:35,800] think of them
+- [01:26:35,800 - 01:26:39,200] as separate electrostatics problems
+- [01:26:39,200 - 01:26:41,600] it's a world now where there are
+- [01:26:41,600 - 01:26:44,000] twenty six different kinds of electric charge
+- [01:26:44,000 - 01:26:46,980] twenty six different kinds of electric field
+- [01:26:46,980 - 01:26:52,320] and twenty six different kinds of electrostatic potentials
+- [01:26:52,320 - 01:26:55,320] the electrostatic potentials are these x's
+- [01:26:55,320 - 01:26:57,840] x1, x2, x3, x4
+- [01:26:57,840 - 01:27:00,080] what do you think the charges corresponding to them are?
+- [01:27:00,080 - 01:27:07,080] can you guess?
+- [01:27:07,080 - 01:27:09,960] the components of the momenta
+- [01:27:09,960 - 01:27:13,960] twenty six components of the momenta
+- [01:27:13,960 - 01:27:15,740] are like twenty six
+- [01:27:15,740 - 01:27:17,800] kinds of charges
+- [01:27:17,800 - 01:27:20,320] each one being the source of
+- [01:27:20,320 - 01:27:22,840] its own electrostatic field, the electrostatic field
+- [01:27:22,840 - 01:27:25,519] being called x
+- [01:27:25,519 - 01:27:28,640] okay here's the calculation that you do
+- [01:27:28,640 - 01:27:29,880] and it is really...
+- [01:27:30,080 - 01:27:33,540] easy
+- [01:27:33,540 - 01:27:35,680] it is
+- [01:27:35,680 - 01:27:37,820] obtained by doing these integrals
+- [01:27:37,820 - 01:27:41,320] the integrals
+- [01:27:41,320 - 01:27:41,760] twenty six
+- [01:27:41,760 - 01:27:44,380] not twenty six charges
+- [01:27:44,380 - 01:27:48,920] twenty six different kinds of charge
+- [01:27:48,920 - 01:27:53,000] twenty-six different independent kinds of charge
+- [01:27:53,000 - 01:27:53,780] each
+- [01:27:53,780 - 01:27:58,320] creating its own electrostatic field
+- [01:27:58,320 - 01:27:58,419] here's what you do we have x2 and x3 a series of carbons and those
+- [01:27:58,419 - 01:27:58,519] kinds of negative sign claro here's what you do all right here's what you do
+- [01:27:58,519 - 01:27:59,120] here's what you do cioè a submissions of beta quantываютなんだ
+- [01:27:59,120 - 01:27:59,600] energy terrestris
+- [01:27:59,600 - 01:27:59,640] energy terrestris
+- [01:27:59,720 - 01:27:59,920] in the Какhtub???
+- [01:28:00,000 - 01:28:00,040] defined by addition progressive sigh
+- [01:28:00,040 - 01:28:00,059] through the klap tend to a carbon carbon atom.....
+- [01:28:00,080 - 01:28:05,870] take a disk, this disk is, think of it
+- [01:28:05,870 - 01:28:11,660] as a world in two dimensions, on this disk
+- [01:28:11,660 - 01:28:20,660] you have, let's see, I get confused, the
+- [01:28:20,660 - 01:28:29,660] x, um, the x, yeah, the boundary conditions
+- [01:28:29,660 - 01:28:31,980] are that the electric, that the components
+- [01:28:31,980 - 01:28:34,300] of the electric field perpendicular to the
+- [01:28:34,300 - 01:28:37,580] surface of the disk vanish, it's not so
+- [01:28:37,580 - 01:28:40,860] important, the boundary conditions, you have a disk,
+- [01:28:40,860 - 01:28:46,380] a world with these 26 different kinds of
+- [01:28:46,380 - 01:28:51,900] electricity, on the boundary you put charges, little charges
+- [01:28:51,900 - 01:28:55,470] on the boundary, at each boundary point
+- [01:28:55,470 - 01:28:59,040] there are 26 charges to put on.
+- [01:28:59,040 - 01:28:59,540] Okay.
+- [01:28:59,540 - 01:29:02,660] The charges themselves are the components
+- [01:29:02,660 - 01:29:05,780] of the electrostatic potential, are the components
+- [01:29:05,780 - 01:29:09,440] of the momentum. So if this particle comes
+- [01:29:09,440 - 01:29:13,100] in with 26 components of k, those 26 components
+- [01:29:13,100 - 01:29:17,440] of k become the 26 charges that you put
+- [01:29:17,440 - 01:29:21,780] at that point, another 26 charges at that point,
+- [01:29:21,780 - 01:29:25,070] another 26 charges at that point, and another
+- [01:29:25,070 - 01:29:28,360] 26 charges at that point. This is a straightforward
+- [01:29:28,360 - 01:29:29,420] electrostatics problem.
+- [01:29:29,540 - 01:29:33,260] 26 of them, but it's easy to do 26 of them
+- [01:29:33,260 - 01:29:36,980] as it is to do one of them, well, in principle.
+- [01:29:36,980 - 01:29:39,290] If you can do an electrostatics problem with
+- [01:29:39,290 - 01:29:41,600] one kind of electric charge, you can do the
+- [01:29:41,600 - 01:29:45,010] same electrostatics problem 26 times over
+- [01:29:45,010 - 01:29:48,420] with different values of the charge here.
+- [01:29:48,420 - 01:29:52,200] Alright, so fixing the values of the charge
+- [01:29:52,200 - 01:29:55,980] and fixing these points, what do you calculate?
+- [01:29:55,980 - 01:29:58,700] You calculate the electrostatic potential inside.
+- [01:29:58,700 - 01:29:59,200] Okay.
+- [01:29:59,540 - 01:30:02,090] From that you can calculate the electric
+- [01:30:02,090 - 01:30:04,640] field, and once you know the electric field
+- [01:30:04,640 - 01:30:08,290] you can calculate the electrostatic energy.
+- [01:30:08,290 - 01:30:11,940] You calculate the electrostatic energy of
+- [01:30:11,940 - 01:30:16,950] such a configuration, that's this whole
+- [01:30:16,950 - 01:30:21,960] integral there, the electrostatic energy, and then
+- [01:30:21,960 - 01:30:25,070] you integrate it over the points. You
+- [01:30:25,070 - 01:30:28,180] move the points around, you integrate over them,
+- [01:30:28,180 - 01:30:29,380] and that is the scattering.
+- [01:30:29,380 - 01:30:29,480] Okay.
+- [01:30:29,480 - 01:30:34,550] And that's the scattering amplitude for the 26 dimensional particles to
+- [01:30:34,550 - 01:30:39,620] scatter from one set of momenta to another set of momenta.
+- [01:30:39,620 - 01:30:43,709] So in fact, the final upshot is very easy. It's
+- [01:30:43,709 - 01:30:47,799] just an electrostatics problem with 26 different kinds of charges.
+- [01:30:47,799 - 01:30:53,160] You calculate the electrostatic energy in here.
+- [01:30:53,160 - 01:30:55,480] Is that one energy or 26 energy?
+- [01:30:55,480 - 01:30:57,400] 26. There are 26 and you add them up.
+- [01:30:57,400 - 01:30:59,320] That's right. There are 26 different kinds of charges.
+- [01:30:59,320 - 01:31:01,040] 26 distinct...
+- [01:31:01,040 - 01:31:02,559] You have 26 potentials.
+- [01:31:02,559 - 01:31:06,420] 26 potentials, 26 electric fields.
+- [01:31:06,420 - 01:31:09,139] And you end up ultimately with one energy, right?
+- [01:31:09,139 - 01:31:12,559] One energy. One energy.
+- [01:31:12,559 - 01:31:14,769] And there's no cross terms between the
+- [01:31:14,769 - 01:31:16,980] 26. The 26 are just operating orthogonally.
+- [01:31:16,980 - 01:31:22,220] There are no cross terms between them. You take that electrostatic
+- [01:31:22,220 - 01:31:27,460] energy, you exponentiate it, e to the minus the electrostatic energy.
+- [01:31:27,460 - 01:31:29,160] The whole answer depends on the energy.
+- [01:31:29,160 - 01:31:33,099] The whole answer depends on the positions of the charges.
+- [01:31:33,099 - 01:31:37,580] And you integrate it over the positions of the charges.
+- [01:31:37,580 - 01:31:40,580] You calculate the 26 electrostatic energies
+- [01:31:40,580 - 01:31:43,580] for the 26 different kinds of charges.
+- [01:31:43,580 - 01:31:47,430] How do you do that? You calculate the electric field, you square
+- [01:31:47,430 - 01:31:51,280] the electric field, or you can just calculate the electrostatic energies if you're...
+- [01:31:51,280 - 01:31:55,080] And you exponentiate it, you integrate it over the
+- [01:31:55,080 - 01:31:58,880] positions, and that gives you the scattering amplitude for...
+- [01:31:58,880 - 01:32:03,460] Particles whose components of momenta are the same as the
+- [01:32:03,460 - 01:32:08,040] values of the charges that you put on these points.
+- [01:32:08,040 - 01:32:10,140] That's the whole upshot of it. Yeah?
+- [01:32:10,140 - 01:32:13,130] The angular parameter of this disk
+- [01:32:13,130 - 01:32:16,120] has no relation to scattering angle, right?
+- [01:32:16,120 - 01:32:18,930] No. No. No, it has more of
+- [01:32:18,930 - 01:32:21,740] a relationship to the time intervals in here.
+- [01:32:21,740 - 01:32:22,380] Yeah.
+- [01:32:22,380 - 01:32:24,700] Yeah. There are various parameters,
+- [01:32:24,700 - 01:32:27,020] but you integrate over them.
+- [01:32:27,020 - 01:32:28,240] You integrate over them.
+- [01:32:28,880 - 01:32:32,880] And that's the string theory scattering amplitude.
+- [01:32:32,880 - 01:32:35,880] It's a fairly simple prescription.
+- [01:32:35,880 - 01:32:38,630] Could you say this does
+- [01:32:38,630 - 01:32:41,380] not work if it's not 26?
+- [01:32:41,380 - 01:32:43,380] It doesn't.
+- [01:32:43,380 - 01:32:45,380] You get a bunch of infinities from
+- [01:32:45,380 - 01:32:47,380] the path integral which just don't go away.
+- [01:32:47,380 - 01:32:51,880] This is the final answer when it works.
+- [01:32:51,880 - 01:32:54,380] When it doesn't work, it's just infinite.
+- [01:32:54,380 - 01:32:57,380] And 26 and 10.
+- [01:32:57,380 - 01:32:58,880] So I'm... I'm sorry.
+- [01:32:58,880 - 01:33:00,880] I'm sort of short-circuiting it by
+- [01:33:00,880 - 01:33:02,880] telling you what the answer is.
+- [01:33:02,880 - 01:33:07,880] It's a very beautiful and simple final answer.
+- [01:33:07,880 - 01:33:12,380] But once you know that this is the procedure, there's
+- [01:33:12,380 - 01:33:16,880] nothing to prevent you from putting lots more particles in.
+- [01:33:16,880 - 01:33:21,880] You do have to integrate over their locations on here, but basically
+- [01:33:21,880 - 01:33:26,880] that's the answer for the scattering of any number of incoming particles.
+- [01:33:26,880 - 01:33:27,880] The amplitude.
+- [01:33:27,880 - 01:33:28,880] The thing that's coming in.
+- [01:33:28,880 - 01:33:30,880] The thing that you square.
+- [01:33:30,880 - 01:33:34,380] The amplitude for any number of incoming
+- [01:33:34,380 - 01:33:37,880] particles to any number of outgoing particles.
+- [01:33:37,880 - 01:33:38,880] Yeah?
+- [01:33:38,880 - 01:33:43,880] We have three long dimensions and these small ones.
+- [01:33:43,880 - 01:33:45,880] Does the fact that you convert them to this...
+- [01:33:45,880 - 01:33:46,880] Whoa.
+- [01:33:46,880 - 01:33:47,880] Three long dimensions.
+- [01:33:47,880 - 01:33:49,880] Well, we haven't talked about compactification yet.
+- [01:33:49,880 - 01:33:52,880] We have not.
+- [01:33:52,880 - 01:33:56,880] That'll be the next discussion.
+- [01:33:56,880 - 01:33:57,880] Yeah?
+- [01:33:57,880 - 01:34:00,880] You're talking about the connection to the potential again.
+- [01:34:00,880 - 01:34:04,880] It's because of the coordinates satisfying the Laplace?
+- [01:34:04,880 - 01:34:06,380] Yes, it's because the
+- [01:34:06,380 - 01:34:07,880] coordinates satisfy the Laplace equation.
+- [01:34:07,880 - 01:34:09,880] And...
+- [01:34:09,880 - 01:34:12,880] It connects you to the static potential solution.
+- [01:34:12,880 - 01:34:13,880] That's right.
+- [01:34:13,880 - 01:34:15,880] The coordinates satisfy...
+- [01:34:15,880 - 01:34:18,880] Well, yes, they satisfy the Laplace equation.
+- [01:34:18,880 - 01:34:21,380] And the Laplace equation is
+- [01:34:21,380 - 01:34:23,880] the basic equation for electrostatics.
+- [01:34:23,880 - 01:34:25,880] We didn't have to call it electrostatics.
+- [01:34:25,880 - 01:34:28,880] We just said Laplace equation
+- [01:34:28,880 - 01:34:31,880] with some delta function sources here.
+- [01:34:31,880 - 01:34:32,880] But it...
+- [01:34:32,880 - 01:34:35,380] The mathematics is the same
+- [01:34:35,380 - 01:34:37,880] as calculating an electrostatics problem.
+- [01:34:37,880 - 01:34:41,380] You have four degrees of freedom for each
+- [01:34:41,380 - 01:34:44,880] of those four points around the disk, right?
+- [01:34:44,880 - 01:34:46,880] Each angle has an angle.
+- [01:34:46,880 - 01:34:47,880] And then you have...
+- [01:34:47,880 - 01:34:48,880] Yeah.
+- [01:34:48,880 - 01:34:51,880] It's actually simpler than that.
+- [01:34:51,880 - 01:34:53,880] You can use the conformal freedom.
+- [01:34:53,880 - 01:34:57,380] The freedom to reconformally map things to arbitrarily
+- [01:34:57,380 - 01:35:00,880] fix the location of any three of them.
+- [01:35:00,880 - 01:35:03,880] In other words, you should integrate over all of them.
+- [01:35:03,880 - 01:35:07,380] But for any given configuration, you
+- [01:35:07,380 - 01:35:10,880] can always find the conformal mapping,
+- [01:35:10,880 - 01:35:12,880] which will bring this point to here,
+- [01:35:12,880 - 01:35:14,880] this point to here, this point to here.
+- [01:35:14,880 - 01:35:16,880] And then it's only the fourth point.
+- [01:35:16,880 - 01:35:19,880] For the case of two in and two out, it's only the
+- [01:35:19,880 - 01:35:22,880] location of the fourth point which gets integrated from here to here.
+- [01:35:22,880 - 01:35:24,880] That's a technical point.
+- [01:35:24,880 - 01:35:28,880] Place the two points inside the band.
+- [01:35:28,880 - 01:35:30,880] These two points, yeah.
+- [01:35:30,880 - 01:35:32,880] The integral over these two...
+- [01:35:32,880 - 01:35:33,880] Freedom there, right?
+- [01:35:33,880 - 01:35:34,880] No, no, no.
+- [01:35:34,880 - 01:35:36,380] There's really only one integration, which
+- [01:35:36,380 - 01:35:37,880] is the time between these two.
+- [01:35:37,880 - 01:35:42,880] They don't have to exactly break apart in the same...
+- [01:35:42,880 - 01:35:44,880] Ah, that's a good point.
+- [01:35:44,880 - 01:35:48,880] They could break apart at different points, like that.
+- [01:35:48,880 - 01:35:51,880] But you can always find the conformal mapping.
+- [01:35:51,880 - 01:35:54,380] You can always find the conformal
+- [01:35:54,380 - 01:35:56,880] mapping, which will pull them back together.
+- [01:35:56,880 - 01:35:58,880] So you have that freedom.
+- [01:35:58,880 - 01:36:00,880] You have that freedom to pull them back together.
+- [01:36:00,880 - 01:36:04,380] So when you add more points, how does the
+- [01:36:04,380 - 01:36:07,880] number of points map to the number of parameters?
+- [01:36:07,880 - 01:36:08,880] Well, the answer...
+- [01:36:08,880 - 01:36:10,880] Okay, the answer is that
+- [01:36:10,880 - 01:36:12,880] you have a conformal invariance freedom,
+- [01:36:12,880 - 01:36:15,880] a freedom of conformal mapping that allows
+- [01:36:15,880 - 01:36:18,880] you to choose any arbitrary three points
+- [01:36:18,880 - 01:36:20,880] and put them wherever you like.
+- [01:36:20,880 - 01:36:22,880] You fix them, put the first one here,
+- [01:36:22,880 - 01:36:24,880] the second one here, the third one here,
+- [01:36:24,880 - 01:36:27,880] and then all the other ones get integrated over.
+- [01:36:27,880 - 01:36:31,380] So the answer is you have
+- [01:36:31,380 - 01:36:34,880] n minus 3 integrations to do.
+- [01:36:34,880 - 01:36:35,880] Yeah.
+- [01:36:35,880 - 01:36:37,880] n minus 3 integrations to do.
+- [01:36:37,880 - 01:36:41,880] How does this procedure relate to n-theory?
+- [01:36:41,880 - 01:36:42,880] To what?
+- [01:36:42,880 - 01:36:43,880] To n-theory.
+- [01:36:43,880 - 01:36:44,880] Doesn't yet.
+- [01:36:44,880 - 01:36:45,880] Doesn't yet.
+- [01:36:45,880 - 01:36:46,880] Not yet.
+- [01:36:46,880 - 01:36:47,880] Not yet.
+- [01:36:47,880 - 01:36:48,880] We'll hopefully come to it.
+- [01:36:48,880 - 01:36:49,880] The other diagram that you had were the...
+- [01:36:49,880 - 01:36:53,880] You had the Swiggy line going vertical.
+- [01:36:53,880 - 01:36:55,880] In other words, you had the two particles coming in.
+- [01:36:55,880 - 01:36:57,880] That would correspond to if
+- [01:36:57,880 - 01:36:59,880] those two points were actually...
+- [01:36:59,880 - 01:37:02,880] If you had a negative...
+- [01:37:02,880 - 01:37:06,380] You want to study it if you use
+- [01:37:06,380 - 01:37:09,880] a coordinates in which it looks like this.
+- [01:37:09,880 - 01:37:11,880] And then the other one goes...
+- [01:37:11,880 - 01:37:13,880] Reaches all of it.
+- [01:37:13,880 - 01:37:15,880] The top one goes further to the left.
+- [01:37:15,880 - 01:37:16,880] Yeah.
+- [01:37:16,880 - 01:37:18,880] Then the integration...
+- [01:37:18,880 - 01:37:19,880] You can pick one of these.
+- [01:37:19,880 - 01:37:21,880] You can hold one of them fixed.
+- [01:37:21,880 - 01:37:24,880] The other one has to go all the ways to...
+- [01:37:24,880 - 01:37:27,880] From plus infinity to minus infinity.
+- [01:37:27,880 - 01:37:30,880] I was just comparing to the path...
+- [01:37:30,880 - 01:37:32,880] The two paths that you
+- [01:37:32,880 - 01:37:34,880] had that you said were equivalent.
+- [01:37:34,880 - 01:37:37,880] That would be equivalent to, say, the top break...
+- [01:37:37,880 - 01:37:40,380] The point at the top break being to
+- [01:37:40,380 - 01:37:42,880] the left of the point at the bottom break.
+- [01:37:42,880 - 01:37:43,880] Yeah.
+- [01:37:43,880 - 01:37:44,880] Yeah.
+- [01:37:44,880 - 01:37:45,880] That's the...
+- [01:37:45,880 - 01:37:46,880] That's the...
+- [01:37:46,880 - 01:37:47,880] That's the...
+- [01:37:47,880 - 01:37:48,880] That's the...
+- [01:37:48,880 - 01:37:49,880] That's the...
+- [01:37:49,880 - 01:37:50,880] That's the...
+- [01:37:50,880 - 01:37:51,880] Yep.
+- [01:37:51,880 - 01:37:52,880] You do have to do that.
+- [01:37:52,880 - 01:37:53,880] You have to integrate over.
+- [01:37:53,880 - 01:37:55,880] But in the special case where you have
+- [01:37:55,880 - 01:37:57,880] them at exactly the same height, the integral terminates
+- [01:37:57,880 - 01:37:58,880] when they touch.
+- [01:37:58,880 - 01:37:59,880] And it's the same integral.
+- [01:37:59,880 - 01:38:01,880] The amazing thing is it's the same integral.
+- [01:38:01,880 - 01:38:04,880] And in fact, it's the same integral as integrating
+- [01:38:04,880 - 01:38:07,880] over the points on the boundary of a disk.
+- [01:38:07,880 - 01:38:11,380] So, this is a sort of nice, uniform,
+- [01:38:11,380 - 01:38:14,880] symmetric picture in which all the particles are on
+- [01:38:14,880 - 01:38:15,880] the same footing.
+- [01:38:15,880 - 01:38:16,880] And you can pull...
+- [01:38:16,880 - 01:38:19,880] And you can pull it and you can, you know,
+- [01:38:19,880 - 01:38:22,880] pull it out and push it in in various ways
+- [01:38:22,880 - 01:38:25,880] to make it look like different kinds of processes.
+- [01:38:25,880 - 01:38:26,880] But...
+- [01:38:26,880 - 01:38:28,880] It's nice.
+- [01:38:28,880 - 01:38:30,880] Yeah.
+- [01:38:30,880 - 01:38:34,880] So, this is open string theory.
+- [01:38:34,880 - 01:38:37,380] Open string theory, the particles
+- [01:38:37,380 - 01:38:39,880] are injected on the boundaries.
+- [01:38:39,880 - 01:38:40,880] The boundaries...
+- [01:38:40,880 - 01:38:43,880] And these are the edges of the strings.
+- [01:38:43,880 - 01:38:44,880] The endpoints of the strings.
+- [01:38:44,880 - 01:38:45,880] That's what the boundaries are.
+- [01:38:45,880 - 01:38:47,880] That's what the boundaries are.
+- [01:38:47,880 - 01:38:50,380] We'll talk about closed string
+- [01:38:50,380 - 01:38:52,880] theory a little bit next time.
+- [01:38:52,880 - 01:38:55,380] So, you can see the mathematics of
+- [01:38:55,380 - 01:38:57,880] it at this level is fairly simple.
+- [01:39:01,880 - 01:39:02,880] It is.
+- [01:39:02,880 - 01:39:04,880] I mean, it's just electrostatics.
+- [01:39:04,880 - 01:39:06,880] Is this...
+- [01:39:06,880 - 01:39:09,380] When you say this is
+- [01:39:09,380 - 01:39:11,880] basically string theory, is this model...
+- [01:39:11,880 - 01:39:14,880] I mean, this matches up with experimental results?
+- [01:39:14,880 - 01:39:18,380] So, when using this formalism, you match
+- [01:39:18,380 - 01:39:21,880] what you get when you run experiments?
+- [01:39:21,880 - 01:39:23,880] Which experiment are you thinking of?
+- [01:39:23,880 - 01:39:25,880] Colliding particles.
+- [01:39:25,880 - 01:39:31,880] It's a reasonable description of hadrons.
+- [01:39:31,880 - 01:39:33,880] Nobody has the vaguest idea what
+- [01:39:33,880 - 01:39:35,880] happens when you collide gravitons together.
+- [01:39:35,880 - 01:39:37,880] So, I mean, we have a good idea.
+- [01:39:37,880 - 01:39:39,880] We have lots of idea.
+- [01:39:39,880 - 01:39:41,880] But the details of it can...
+- [01:39:41,880 - 01:39:42,880] You know, way beyond us.
+- [01:39:42,880 - 01:39:44,880] And there is a zillion versions of this.
+- [01:39:44,880 - 01:39:45,880] Don't get...
+- [01:39:45,880 - 01:39:46,880] This is...
+- [01:39:46,880 - 01:39:51,880] I have described one simple version of a string theory.
+- [01:39:51,880 - 01:39:53,880] There's a zillion versions.
+- [01:39:53,880 - 01:39:56,380] And the zillion versions are connected with
+- [01:39:56,380 - 01:39:58,880] the way the extra dimensions are compactified.
+- [01:39:58,880 - 01:40:00,880] We haven't talked about that.
+- [01:40:00,880 - 01:40:03,880] No, this doesn't agree at all with the experiment.
+- [01:40:03,880 - 01:40:05,880] It has 26 dimensions of space.
+- [01:40:05,880 - 01:40:07,880] How could it compare with the experiment?
+- [01:40:07,880 - 01:40:09,880] It's terrible.
+- [01:40:09,880 - 01:40:10,880] You're talking about the other end.
+- [01:40:10,880 - 01:40:11,880] When you talk about the scalar...
+- [01:40:11,880 - 01:40:13,380] When you talk about the scattering
+- [01:40:13,380 - 01:40:14,880] amplitudes, you're talking about something that is...
+- [01:40:14,880 - 01:40:18,880] They're not things that you can measure in any experiment.
+- [01:40:18,880 - 01:40:20,880] What I'm trying to figure out
+- [01:40:20,880 - 01:40:22,880] is you're calculating a scattering amplitude.
+- [01:40:22,880 - 01:40:23,880] Right.
+- [01:40:23,880 - 01:40:25,880] And you're asking whether it agrees with experiment.
+- [01:40:25,880 - 01:40:28,880] The first thing you would discover if you
+- [01:40:28,880 - 01:40:31,880] took these scattering amplitudes and compared them with experiment
+- [01:40:31,880 - 01:40:36,880] is the number of dimensions was radically wrong.
+- [01:40:36,880 - 01:40:39,880] Immediately.
+- [01:40:39,880 - 01:40:40,880] You can't even get started with it.
+- [01:40:40,880 - 01:40:44,380] We have a lot more to do before
+- [01:40:44,380 - 01:40:47,880] we can make a sensible theory out of this.
+- [01:40:47,880 - 01:40:51,880] Details, details.
+- [01:40:51,880 - 01:40:52,880] What could be worse?
+- [01:40:52,880 - 01:40:56,880] The number of dimensions of space is...
+- [01:40:56,880 - 01:40:58,880] 25 of them instead of 3.
+- [01:40:58,880 - 01:41:04,880] It's off by not even an integer.
+- [01:41:04,880 - 01:41:06,880] Oh, it's better in superstring theory.
+- [01:41:06,880 - 01:41:08,380] There the number of dimensions is 9
+- [01:41:08,380 - 01:41:09,880] and it's only 3 times too large.
+- [01:41:10,880 - 01:41:12,380] I just wanted to get
+- [01:41:12,380 - 01:41:13,880] clear that this was pure mathematics.
+- [01:41:13,880 - 01:41:14,880] At the moment.
+- [01:41:14,880 - 01:41:17,380] So does that mean that eventually we'll come
+- [01:41:17,380 - 01:41:19,880] around to a point where you will compactify
+- [01:41:19,880 - 01:41:22,380] these things and then get reasonable numbers
+- [01:41:22,380 - 01:41:24,880] that we see somewhere on the solstice?
+- [01:41:24,880 - 01:41:27,880] Yeah, but the real complexity and
+- [01:41:27,880 - 01:41:30,880] enormous difficulty of this subject, the mathematical
+- [01:41:30,880 - 01:41:34,380] sophistication of it is in the
+- [01:41:34,380 - 01:41:37,880] compactifications and it is really hard.
+- [01:41:37,880 - 01:41:39,880] That's where the difficulties are.
+- [01:41:39,880 - 01:41:43,380] And I can show you some simple examples
+- [01:41:43,380 - 01:41:46,880] of compactification and I can show you how they
+- [01:41:46,880 - 01:41:49,880] lead to information about particles and
+- [01:41:49,880 - 01:41:52,880] about gauge groups and things like that.
+- [01:41:52,880 - 01:41:55,880] But to do the real thing is far, far,
+- [01:41:55,880 - 01:41:58,880] not only beyond me, but it's far, far beyond the
+- [01:41:58,880 - 01:41:59,880] subject.
+- [01:41:59,880 - 01:42:03,880] I mean, nobody knows how to put these
+- [01:42:03,880 - 01:42:07,880] things together to make realistic theories of particles.
+- [01:42:07,880 - 01:42:11,380] So, let's say that we're, this is a machine
+- [01:42:11,380 - 01:42:14,880] for making lots and lots and lots of different
+- [01:42:14,880 - 01:42:15,880] models.
+- [01:42:15,880 - 01:42:19,880] The number of models or the number of constructions that
+- [01:42:19,880 - 01:42:23,880] can be made are in the 10 to the thousands.
+- [01:42:23,880 - 01:42:28,880] So, this is very much a work in progress.
+- [01:42:28,880 - 01:42:32,880] But on the other hand, there is
+- [01:42:32,880 - 01:42:36,880] a very, very definite mathematical subject of constructing
+- [01:42:36,880 - 01:42:37,880] a model.
+- [01:42:37,880 - 01:42:41,380] They are highly rigorous and they
+- [01:42:41,380 - 01:42:44,880] produce an enormous wealth of mathematical information
+- [01:42:44,880 - 01:42:48,880] about gravity, about mathematics.
+- [01:42:48,880 - 01:42:52,880] But there's no question that it has not
+- [01:42:52,880 - 01:42:56,880] succeeded in giving a theory of elementary particles,
+- [01:42:56,880 - 01:42:59,380] or better yet, it has succeeded in giving
+- [01:42:59,380 - 01:43:01,880] about 10 to the 500 theories of elementary
+- [01:43:01,880 - 01:43:02,880] particles.
+- [01:43:03,880 - 01:43:04,880] Which is, you know, that's a lot.
+- [01:43:04,880 - 01:43:05,880] Yeah.
+- [01:43:05,880 - 01:43:10,020] And it's, you know, it may be like that.
+- [01:43:10,020 - 01:43:12,020] I think it's like that.
+- [01:43:12,020 - 01:43:14,120] But we will find out.
+- [01:43:14,120 - 01:43:16,410] This is, you know, I
+- [01:43:16,410 - 01:43:18,700] am not proselytizing for this theory.
+- [01:43:18,700 - 01:43:19,700] I'm simply telling you what it is.
+- [01:43:19,700 - 01:43:22,200] Is there a brief description for how it
+- [01:43:22,200 - 01:43:24,700] came about with 26 dimensions in this model?
+- [01:43:24,700 - 01:43:29,380] Yeah, I thought, yeah, there's a brief description.
+- [01:43:29,380 - 01:43:31,680] And unless, we talked about it, we talked about
+- [01:43:31,680 - 01:43:33,980] 1 plus 2 plus 3 plus 4 equals minus
+- [01:43:33,980 - 01:43:34,980] a 12th.
+- [01:43:34,980 - 01:43:39,219] And 12 times 2 is 24.
+- [01:43:39,219 - 01:43:43,120] And 24th plus 2 is 26.
+- [01:43:43,120 - 01:43:45,120] Remember that?
+- [01:43:46,120 - 01:43:51,120] Are these k's quantized in any sense?
+- [01:43:51,120 - 01:43:52,120] Are they what?
+- [01:43:52,120 - 01:43:55,120] Are they quantized or are they considered continuous values?
+- [01:43:55,120 - 01:43:56,120] Which?
+- [01:43:56,120 - 01:43:57,120] The k, the momenta?
+- [01:43:57,120 - 01:43:58,120] Which things?
+- [01:43:58,120 - 01:43:59,620] When you look at the electrostatics, do
+- [01:43:59,620 - 01:44:01,120] you assume that there's a quantization or do
+- [01:44:01,120 - 01:44:02,120] you assume that it's continuous value?
+- [01:44:02,120 - 01:44:03,120] No.
+- [01:44:03,120 - 01:44:04,120] No.
+- [01:44:04,120 - 01:44:07,050] The only thing that's quantized is the sums
+- [01:44:07,050 - 01:44:09,980] of the squares of the momenta, which is the
+- [01:44:09,980 - 01:44:12,180] mass squared of the particle.
+- [01:44:12,180 - 01:44:13,180] Yeah.
+- [01:44:13,180 - 01:44:14,180] Yeah.
+- [01:44:14,180 - 01:44:15,180] No.
+- [01:44:15,180 - 01:44:16,360] Momenta is not quantized.
+- [01:44:16,360 - 01:44:18,360] Most definitely not.
+- [01:44:18,360 - 01:44:19,360] Okay.
+- [01:44:19,360 - 01:44:20,360] Good.
+- [01:44:20,360 - 01:44:24,360] For more, please visit us at stanford.edu.
