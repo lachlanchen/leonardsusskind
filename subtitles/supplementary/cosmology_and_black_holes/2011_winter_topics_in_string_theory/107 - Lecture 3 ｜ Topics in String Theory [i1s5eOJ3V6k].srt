@@ -1,0 +1,7435 @@
+1
+00:00:00,000 --> 00:00:07,000
+Stanford University
+
+2
+00:00:07,000 --> 00:00:21,000
+I think I mentioned last time that the horizon of a black hole is not a place where anything very dangerous is happening,
+
+3
+00:00:21,000 --> 00:00:26,000
+a place where anything very traumatic would happen to somebody who fell in.
+
+4
+00:00:26,000 --> 00:00:34,000
+In fact, if you take a big black hole, now how big? Let's say really big.
+
+5
+00:00:34,000 --> 00:00:36,000
+Really big black hole.
+
+6
+00:00:39,000 --> 00:00:42,000
+What would you find if you fell through the horizon of the black hole?
+
+7
+00:00:42,000 --> 00:00:45,000
+The answer is you would find nothing there.
+
+8
+00:00:45,000 --> 00:00:52,000
+It would look exactly like flat space or almost exactly like flat space if the horizon was big enough.
+
+9
+00:00:52,000 --> 00:00:55,000
+And it would just look like empty space.
+
+10
+00:00:56,000 --> 00:01:06,000
+Well, that's a little odd because the mathematics that we wrote down looks like it does have something striking going on at the horizon.
+
+11
+00:01:06,000 --> 00:01:08,000
+And tonight I want to resolve that.
+
+12
+00:01:08,000 --> 00:01:10,000
+There's a little bit of mathematics.
+
+13
+00:01:10,000 --> 00:01:17,000
+The mathematics is about at the edge of what I do in this class.
+
+14
+00:01:17,000 --> 00:01:25,000
+It's not terribly hard, but we're going to follow through and unravel
+
+15
+00:01:25,000 --> 00:01:30,000
+what happens very, what the horizon of the black hole is really like.
+
+16
+00:01:30,000 --> 00:01:32,000
+What's going on there?
+
+17
+00:01:32,000 --> 00:01:36,000
+All right, so let's write down the metric of the black hole.
+
+18
+00:01:46,000 --> 00:01:53,000
+That's the beginning always for the starting point for black holes is to write down a metric.
+
+19
+00:01:53,000 --> 00:01:58,000
+I usually write d tau squared where tau stands for proper time.
+
+20
+00:01:58,000 --> 00:02:00,000
+I'm going to use the other convention.
+
+21
+00:02:00,000 --> 00:02:09,000
+The other convention is just to change the sign of the whole thing and call it proper distance.
+
+22
+00:02:09,000 --> 00:02:12,000
+I'll explain in a moment.
+
+23
+00:02:12,000 --> 00:02:19,000
+Proper distance squared is just the negative of the proper time between two points.
+
+24
+00:02:19,000 --> 00:02:22,000
+I'm just doing that partly for variety,
+
+25
+00:02:22,000 --> 00:02:28,000
+partly because it will keep me sane because I know all of these formulas in this form.
+
+26
+00:02:28,000 --> 00:02:34,000
+Remember that what we wrote for d tau squared was just something involving dt squared, right?
+
+27
+00:02:34,000 --> 00:02:35,000
+dt squared.
+
+28
+00:02:35,000 --> 00:02:43,000
+In flat space, in fact, it was just dt squared minus dx squared plus dy squared plus dz squared.
+
+29
+00:02:43,000 --> 00:02:46,000
+That was d tau squared.
+
+30
+00:02:46,000 --> 00:02:50,000
+Notice that it's positive if dt is bigger than d tau.
+
+31
+00:02:50,000 --> 00:02:52,000
+So if we're along a trajectory,
+
+32
+00:02:52,000 --> 00:02:57,000
+the time difference is bigger than the space difference.
+
+33
+00:02:57,000 --> 00:03:02,000
+For example, if the object was standing perfectly still in space,
+
+34
+00:03:02,000 --> 00:03:05,000
+then dx would be absolutely zero.
+
+35
+00:03:05,000 --> 00:03:11,000
+We've defined the proper time, d tau squared, so that it would be positive,
+
+36
+00:03:11,000 --> 00:03:14,000
+so that the square of it would be positive.
+
+37
+00:03:14,000 --> 00:03:17,000
+But supposing we were studying a space-like distance,
+
+38
+00:03:17,000 --> 00:03:20,000
+the distance between two points at a fixed time.
+
+39
+00:03:20,000 --> 00:03:26,000
+Then, with the original definition, this would be negative.
+
+40
+00:03:26,000 --> 00:03:28,000
+And when we took the square root of it,
+
+41
+00:03:28,000 --> 00:03:32,000
+we would say that the distance between these two points is imaginary.
+
+42
+00:03:32,000 --> 00:03:35,000
+Well, we're going to get stuck one way or another.
+
+43
+00:03:35,000 --> 00:03:45,000
+If we define the invariant distance so that the square of it is positive for time-like things,
+
+44
+00:03:45,000 --> 00:03:49,000
+then it's going to be negative for space-like things and vice versa.
+
+45
+00:03:49,000 --> 00:03:53,000
+So what people do is to use two different conventions.
+
+46
+00:03:53,000 --> 00:03:57,000
+Just whenever you don't like your convention, you change the sign.
+
+47
+00:03:57,000 --> 00:03:59,000
+Well, now's the time that I don't like my convention,
+
+48
+00:03:59,000 --> 00:04:03,000
+so I'm going to change the sign and define ds squared.
+
+49
+00:04:03,000 --> 00:04:05,000
+What does s stand for?
+
+50
+00:04:05,000 --> 00:04:10,000
+Spatial distance rather than time distance.
+
+51
+00:04:10,000 --> 00:04:17,000
+But it's just the negative of the proper time, or the square of the proper time.
+
+52
+00:04:17,000 --> 00:04:18,000
+All right, it's not a big deal.
+
+53
+00:04:18,000 --> 00:04:25,000
+But let's write down the metric of a Schwarzschild black hole in this notation.
+
+54
+00:04:25,000 --> 00:04:33,000
+It's 1 minus 2mg over r.
+
+55
+00:04:33,000 --> 00:04:36,000
+Sorry, what am I doing here?
+
+56
+00:04:36,000 --> 00:04:39,000
+ds squared has a minus and then a plus.
+
+57
+00:04:39,000 --> 00:04:42,000
+We change the sign from the proper time.
+
+58
+00:04:42,000 --> 00:04:46,000
+That's the spatial interval, the opposite.
+
+59
+00:04:46,000 --> 00:04:47,000
+A minus here.
+
+60
+00:04:47,000 --> 00:04:50,000
+dt squared.
+
+61
+00:04:50,000 --> 00:04:53,000
+And then, you remember what goes here?
+
+62
+00:04:53,000 --> 00:04:59,000
+1 over 1 minus 2mg over r.
+
+63
+00:04:59,000 --> 00:05:02,000
+dr squared.
+
+64
+00:05:02,000 --> 00:05:06,000
+And then another piece here, which I'm going to ignore.
+
+65
+00:05:06,000 --> 00:05:09,000
+This had to do with the angles on the sky.
+
+66
+00:05:09,000 --> 00:05:12,000
+It was r squared times something I think I called the omega squared.
+
+67
+00:05:12,000 --> 00:05:14,000
+But let's ignore it for now.
+
+68
+00:05:14,000 --> 00:05:17,000
+Let's not worry about angular distance on the sky.
+
+69
+00:05:17,000 --> 00:05:21,000
+Let's just worry about time and radial distance.
+
+70
+00:05:21,000 --> 00:05:25,000
+All right, so this plus a bit more here.
+
+71
+00:05:25,000 --> 00:05:31,000
+When you're far from the black hole, that means when r is large, large compared.
+
+72
+00:05:31,000 --> 00:05:33,000
+What's 2mg called?
+
+73
+00:05:33,000 --> 00:05:35,000
+It's the Schwarzschild radius.
+
+74
+00:05:35,000 --> 00:05:38,000
+It's the Schwarzschild radius of the black hole.
+
+75
+00:05:38,000 --> 00:05:44,000
+2mg, if I were to put in speeds of light, it would be 2mg over c squared.
+
+76
+00:05:44,000 --> 00:05:47,000
+Right now, c is equal to 1.
+
+77
+00:05:47,000 --> 00:05:49,000
+2mg is the Schwarzschild radius.
+
+78
+00:05:49,000 --> 00:05:56,000
+And if you're far away from the black hole, r being much bigger than the Schwarzschild radius,
+
+79
+00:05:56,000 --> 00:05:58,000
+then this is negligible.
+
+80
+00:05:58,000 --> 00:06:05,000
+This is negligible, and it's just dt squared minus dt squared plus dr squared.
+
+81
+00:06:05,000 --> 00:06:08,000
+Exactly as it would be in flat space.
+
+82
+00:06:08,000 --> 00:06:09,000
+Plus a bit more.
+
+83
+00:06:09,000 --> 00:06:12,000
+All right, as you get close to the black hole,
+
+84
+00:06:12,000 --> 00:06:17,000
+you get to the point where r is approximately 2mg.
+
+85
+00:06:17,000 --> 00:06:22,000
+In other words, a distance more or less the same as the Schwarzschild radius.
+
+86
+00:06:22,000 --> 00:06:26,000
+And then something rather dramatic happens to these coefficients.
+
+87
+00:06:26,000 --> 00:06:29,000
+This one becomes zero.
+
+88
+00:06:29,000 --> 00:06:33,000
+And this one, in the denominator, it gets to be zero,
+
+89
+00:06:33,000 --> 00:06:36,000
+but a zero in the denominator means something's infinite.
+
+90
+00:06:36,000 --> 00:06:40,000
+Sure sounds like something unusual is happening.
+
+91
+00:06:40,000 --> 00:06:41,000
+All right.
+
+92
+00:06:41,000 --> 00:06:42,000
+Let me...
+
+93
+00:06:42,000 --> 00:06:45,000
+show you exactly what's happening there.
+
+94
+00:06:45,000 --> 00:06:47,000
+And it's a great big nothing.
+
+95
+00:06:47,000 --> 00:06:49,000
+Nothing is happening there.
+
+96
+00:06:49,000 --> 00:06:53,000
+It's an artifact of the choice of coordinates.
+
+97
+00:06:53,000 --> 00:06:55,000
+So I'm going to show you some examples.
+
+98
+00:06:55,000 --> 00:07:01,000
+And then we'll work out in detail what's happening at the horizon of the black hole.
+
+99
+00:07:04,000 --> 00:07:07,000
+Over here, I want to discuss coordinates.
+
+100
+00:07:07,000 --> 00:07:11,000
+And for the moment now, I'm only talking about ordinary Cartesian coordinates,
+
+101
+00:07:11,000 --> 00:07:14,000
+on the plane, on the blackboard.
+
+102
+00:07:14,000 --> 00:07:18,000
+Let's call them y and x.
+
+103
+00:07:18,000 --> 00:07:23,000
+Later on, the vertical axis will become the time axis,
+
+104
+00:07:23,000 --> 00:07:27,000
+but for now, the vertical axis is just the y axis.
+
+105
+00:07:27,000 --> 00:07:29,000
+All right.
+
+106
+00:07:29,000 --> 00:07:32,000
+Now, what's the metric of the xy plane?
+
+107
+00:07:32,000 --> 00:07:33,000
+That's pretty easy.
+
+108
+00:07:33,000 --> 00:07:39,000
+That's just ds squared is equal to dx squared plus dy squared.
+
+109
+00:07:39,000 --> 00:07:40,000
+And...
+
+110
+00:07:40,000 --> 00:07:45,000
+nothing takes place especially interesting at the origin,
+
+111
+00:07:45,000 --> 00:07:47,000
+or any place else.
+
+112
+00:07:47,000 --> 00:07:50,000
+Now let's go to polar coordinates.
+
+113
+00:07:50,000 --> 00:07:54,000
+Polar coordinates means we characterize a point
+
+114
+00:07:54,000 --> 00:07:56,000
+by a distance,
+
+115
+00:07:56,000 --> 00:08:00,000
+which I won't call r, because I don't want to confuse it with this r over here.
+
+116
+00:08:00,000 --> 00:08:02,000
+It's a different thing.
+
+117
+00:08:02,000 --> 00:08:04,000
+Let's call it rho,
+
+118
+00:08:04,000 --> 00:08:06,000
+the Greek letter rho,
+
+119
+00:08:06,000 --> 00:08:08,000
+which is sort of like r.
+
+120
+00:08:08,000 --> 00:08:09,000
+And...
+
+121
+00:08:09,000 --> 00:08:12,000
+and what's the other variable?
+
+122
+00:08:12,000 --> 00:08:13,000
+Theta.
+
+123
+00:08:13,000 --> 00:08:14,000
+Angle.
+
+124
+00:08:18,000 --> 00:08:19,000
+Okay.
+
+125
+00:08:19,000 --> 00:08:21,000
+First of all,
+
+126
+00:08:21,000 --> 00:08:26,000
+what is x in terms of rho and theta?
+
+127
+00:08:26,000 --> 00:08:29,000
+We'll just drop a perpendicular.
+
+128
+00:08:29,000 --> 00:08:33,000
+x is equal to rho
+
+129
+00:08:33,000 --> 00:08:36,000
+times cosine of theta, right?
+
+130
+00:08:36,000 --> 00:08:38,000
+That's the definition of cosine.
+
+131
+00:08:38,000 --> 00:08:42,000
+And y is rho sine theta.
+
+132
+00:08:42,000 --> 00:08:44,000
+Everybody agree?
+
+133
+00:08:44,000 --> 00:08:45,000
+Okay, good.
+
+134
+00:08:45,000 --> 00:08:49,000
+Now what about the metric in terms of rho and theta?
+
+135
+00:08:49,000 --> 00:08:52,000
+Supposing we start at this point over here,
+
+136
+00:08:52,000 --> 00:08:55,000
+and we make a little excursion over to here,
+
+137
+00:08:55,000 --> 00:08:58,000
+a little differential displacement.
+
+138
+00:08:58,000 --> 00:09:03,000
+And that little differential displacement corresponds to changing r a certain amount.
+
+139
+00:09:03,000 --> 00:09:06,000
+Let's take the red...
+
+140
+00:09:06,000 --> 00:09:11,000
+the red line here is dr.
+
+141
+00:09:11,000 --> 00:09:13,000
+That's dr.
+
+142
+00:09:13,000 --> 00:09:15,000
+And the other red line here,
+
+143
+00:09:15,000 --> 00:09:18,000
+how long is that?
+
+144
+00:09:18,000 --> 00:09:21,000
+This distance here is just dr.
+
+145
+00:09:21,000 --> 00:09:25,000
+But what about the distance perpendicular to it?
+
+146
+00:09:25,000 --> 00:09:27,000
+Is it d theta?
+
+147
+00:09:27,000 --> 00:09:28,000
+Rho d theta.
+
+148
+00:09:28,000 --> 00:09:30,000
+Rho d theta.
+
+149
+00:09:30,000 --> 00:09:31,000
+Rho d theta.
+
+150
+00:09:31,000 --> 00:09:34,000
+The further away you are,
+
+151
+00:09:34,000 --> 00:09:37,000
+the bigger a given d theta corresponds to.
+
+152
+00:09:37,000 --> 00:09:39,000
+So that's rho d theta.
+
+153
+00:09:39,000 --> 00:09:41,000
+So now, can you write down what the metric is?
+
+154
+00:09:41,000 --> 00:09:43,000
+Sure you can.
+
+155
+00:09:46,000 --> 00:09:49,000
+ds squared
+
+156
+00:09:49,000 --> 00:09:53,000
+is equal to dr squared.
+
+157
+00:09:53,000 --> 00:09:54,000
+d rho squared.
+
+158
+00:09:54,000 --> 00:09:56,000
+Sorry, this is d rho.
+
+159
+00:09:56,000 --> 00:09:58,000
+d rho, not dr.
+
+160
+00:09:58,000 --> 00:10:01,000
+I told you we save r for over there.
+
+161
+00:10:01,000 --> 00:10:03,000
+d rho, d rho squared,
+
+162
+00:10:04,000 --> 00:10:09,000
+plus rho squared d theta squared.
+
+163
+00:10:09,000 --> 00:10:14,000
+That's the metric in polar coordinates.
+
+164
+00:10:14,000 --> 00:10:17,000
+Notice it has a funny property.
+
+165
+00:10:17,000 --> 00:10:20,000
+The funny property, nothing gets infinite in this metric,
+
+166
+00:10:20,000 --> 00:10:22,000
+but notice there's a funny property
+
+167
+00:10:22,000 --> 00:10:28,000
+that the coefficient of the d theta becomes zero at rho equals zero.
+
+168
+00:10:28,000 --> 00:10:32,000
+That means moving in theta, you don't get anywhere.
+
+169
+00:10:32,000 --> 00:10:33,000
+You don't move.
+
+170
+00:10:33,000 --> 00:10:35,000
+Even if you move in theta.
+
+171
+00:10:35,000 --> 00:10:36,000
+Well, why not?
+
+172
+00:10:36,000 --> 00:10:38,000
+Well, because you're just not moving very much
+
+173
+00:10:38,000 --> 00:10:42,000
+when you move around theta at the origin.
+
+174
+00:10:42,000 --> 00:10:44,000
+Here's a situation also.
+
+175
+00:10:44,000 --> 00:10:46,000
+This becomes zero,
+
+176
+00:10:46,000 --> 00:10:49,000
+and it looks like when t changes,
+
+177
+00:10:49,000 --> 00:10:52,000
+nothing is happening if this is zero.
+
+178
+00:10:52,000 --> 00:10:54,000
+We'll see as we go along
+
+179
+00:10:54,000 --> 00:10:58,000
+that they're very, very similar kinds of things.
+
+180
+00:10:58,000 --> 00:11:01,000
+Okay, everybody understand that?
+
+181
+00:11:01,000 --> 00:11:03,000
+It's just good old polar coordinates.
+
+182
+00:11:03,000 --> 00:11:07,000
+But now let's go to Minkowski space,
+
+183
+00:11:07,000 --> 00:11:11,000
+the space-time of special relativity.
+
+184
+00:11:11,000 --> 00:11:15,000
+Instead of using y for the vertical axis,
+
+185
+00:11:15,000 --> 00:11:19,000
+we will now use, let's call it capital T.
+
+186
+00:11:19,000 --> 00:11:22,000
+I'm not going to call it small t.
+
+187
+00:11:22,000 --> 00:11:25,000
+I'm going to call it capital T.
+
+188
+00:11:25,000 --> 00:11:29,000
+And the horizontal axis I will call x again.
+
+189
+00:11:29,000 --> 00:11:32,000
+All right, so t is replacing y now.
+
+190
+00:11:32,000 --> 00:11:34,000
+And what's the metric now?
+
+191
+00:11:34,000 --> 00:11:38,000
+The metric now is ds squared
+
+192
+00:11:38,000 --> 00:11:42,000
+is equal to minus dt squared
+
+193
+00:11:42,000 --> 00:11:45,000
+plus dx squared.
+
+194
+00:11:45,000 --> 00:11:46,000
+This is just two-dimensional now.
+
+195
+00:11:46,000 --> 00:11:48,000
+We don't need the other dimensions for this argument
+
+196
+00:11:48,000 --> 00:11:50,000
+to explain what's happening here.
+
+197
+00:11:50,000 --> 00:11:54,000
+Just minus dt squared plus dx squared.
+
+198
+00:11:54,000 --> 00:11:57,000
+The minus is there for special relativity.
+
+199
+00:11:57,000 --> 00:11:58,000
+Okay?
+
+200
+00:11:58,000 --> 00:12:01,000
+So that's our metric.
+
+201
+00:12:01,000 --> 00:12:03,000
+It looks sort of like this,
+
+202
+00:12:03,000 --> 00:12:06,000
+but only a sign change.
+
+203
+00:12:06,000 --> 00:12:11,000
+All right, I'm going to now introduce
+
+204
+00:12:11,000 --> 00:12:13,000
+polar coordinates,
+
+205
+00:12:13,000 --> 00:12:16,000
+but they're called hyperbolic polar coordinates.
+
+206
+00:12:16,000 --> 00:12:18,000
+Let's just draw in here the light cones.
+
+207
+00:12:18,000 --> 00:12:21,000
+These are the light cones that light rays move along
+
+208
+00:12:21,000 --> 00:12:23,000
+that go through the origin.
+
+209
+00:12:23,000 --> 00:12:25,000
+We're going to introduce, again,
+
+210
+00:12:25,000 --> 00:12:28,000
+a radial line.
+
+211
+00:12:28,000 --> 00:12:30,000
+We're going to introduce a radial variable,
+
+212
+00:12:30,000 --> 00:12:31,000
+or a rho,
+
+213
+00:12:31,000 --> 00:12:33,000
+which measures distance from the origin,
+
+214
+00:12:33,000 --> 00:12:35,000
+but not ordinary distance,
+
+215
+00:12:35,000 --> 00:12:40,000
+proper distance from the origin,
+
+216
+00:12:40,000 --> 00:12:43,000
+and a time variable that I'm going to call omega.
+
+217
+00:12:43,000 --> 00:12:45,000
+Here's the relationship.
+
+218
+00:12:45,000 --> 00:12:49,000
+Here's the definitions.
+
+219
+00:12:49,000 --> 00:12:52,000
+x, all right, go up to the top there.
+
+220
+00:12:52,000 --> 00:12:55,000
+x equals rho cosine theta.
+
+221
+00:12:55,000 --> 00:12:58,000
+We're going to replace that by x equals rho.
+
+222
+00:12:58,000 --> 00:13:00,000
+That's not cosine theta,
+
+223
+00:13:00,000 --> 00:13:01,000
+but not theta.
+
+224
+00:13:01,000 --> 00:13:04,000
+We'll call it omega.
+
+225
+00:13:04,000 --> 00:13:08,000
+That's a standard terminology for a hyperbolic angle.
+
+226
+00:13:08,000 --> 00:13:10,000
+I'm going to tell you more about hyperbolic angles
+
+227
+00:13:10,000 --> 00:13:12,000
+as we go along, if you've forgotten,
+
+228
+00:13:12,000 --> 00:13:15,000
+but let's just write down the equations on the blackboard.
+
+229
+00:13:15,000 --> 00:13:16,000
+But this isn't right.
+
+230
+00:13:16,000 --> 00:13:17,000
+I left out something.
+
+231
+00:13:17,000 --> 00:13:18,000
+What did I leave out?
+
+232
+00:13:18,000 --> 00:13:21,000
+Rho.
+
+233
+00:13:21,000 --> 00:13:24,000
+Completely parallel to what I've written up there.
+
+234
+00:13:24,000 --> 00:13:28,000
+And t is equal to rho times the hyperbolic sine,
+
+235
+00:13:28,000 --> 00:13:31,000
+of omega.
+
+236
+00:13:31,000 --> 00:13:34,000
+All right, now, what are hyperbolic sine and cosine?
+
+237
+00:13:34,000 --> 00:13:36,000
+Well, whatever they are,
+
+238
+00:13:36,000 --> 00:13:39,000
+let's come back to cosine and sine.
+
+239
+00:13:39,000 --> 00:13:44,000
+Cosine squared plus sine squared equals one.
+
+240
+00:13:44,000 --> 00:13:49,000
+That's a statement of basically Pythagorean theorem,
+
+241
+00:13:49,000 --> 00:13:52,000
+that this side squared plus that side squared is that side,
+
+242
+00:13:52,000 --> 00:13:55,000
+is the hypotenuse squared for a unit triangle.
+
+243
+00:13:55,000 --> 00:13:57,000
+How about for these hyperbolic guys?
+
+244
+00:13:57,000 --> 00:13:59,000
+What's the equation for them?
+
+245
+00:13:59,000 --> 00:14:03,000
+Cos squared minus sin squared.
+
+246
+00:14:03,000 --> 00:14:11,000
+Cos squared omega minus sin squared omega equals one.
+
+247
+00:14:11,000 --> 00:14:12,000
+All right, that's one thing.
+
+248
+00:14:12,000 --> 00:14:18,000
+And let me tell you what cos and sin mean.
+
+249
+00:14:18,000 --> 00:14:20,000
+From the diagram up above,
+
+250
+00:14:20,000 --> 00:14:24,000
+we can think of this by first drawing a circle,
+
+251
+00:14:24,000 --> 00:14:26,000
+by first drawing a unit circle,
+
+252
+00:14:26,000 --> 00:14:28,000
+draw a unit circle,
+
+253
+00:14:28,000 --> 00:14:32,000
+draw the angle theta,
+
+254
+00:14:32,000 --> 00:14:38,000
+and then x is given in terms of cosine.
+
+255
+00:14:38,000 --> 00:14:41,000
+For unit circle, it's just x is equal to cosine,
+
+256
+00:14:41,000 --> 00:14:43,000
+y is equal to sine.
+
+257
+00:14:43,000 --> 00:14:46,000
+We do the same thing, except not with a circle,
+
+258
+00:14:46,000 --> 00:14:48,000
+but with a hyperbola.
+
+259
+00:14:48,000 --> 00:14:50,000
+We take the hyperbola,
+
+260
+00:14:50,000 --> 00:14:53,000
+let's, okay, let's raise this up.
+
+261
+00:14:53,000 --> 00:14:55,000
+Let's take the hyperbola,
+
+262
+00:14:55,000 --> 00:14:58,000
+not x squared plus y squared equals one,
+
+263
+00:14:58,000 --> 00:15:03,000
+but x squared minus t squared equals one.
+
+264
+00:15:03,000 --> 00:15:08,000
+So take the hyperbola, x squared minus t squared equals one.
+
+265
+00:15:08,000 --> 00:15:10,000
+That looks like this.
+
+266
+00:15:10,000 --> 00:15:13,000
+That's a hyperbola that looks like this.
+
+267
+00:15:13,000 --> 00:15:17,000
+And now take a point on that unit hyperbola, any point,
+
+268
+00:15:21,000 --> 00:15:24,000
+and draw the same kind of right triangle
+
+269
+00:15:24,000 --> 00:15:28,000
+that we drew for the circle.
+
+270
+00:15:28,000 --> 00:15:31,000
+Take a point, drop the perpendicular,
+
+271
+00:15:31,000 --> 00:15:33,000
+drop the perpendicular.
+
+272
+00:15:33,000 --> 00:15:36,000
+This side here
+
+273
+00:15:36,000 --> 00:15:41,000
+is hyperbolic sine of the angle,
+
+274
+00:15:41,000 --> 00:15:45,000
+and this side here is hyperbolic cosine.
+
+275
+00:15:48,000 --> 00:15:51,000
+So everything is exactly the same,
+
+276
+00:15:51,000 --> 00:15:53,000
+except for a sine change,
+
+277
+00:15:53,000 --> 00:15:56,000
+and that sine change manifests itself in a sine change
+
+278
+00:15:56,000 --> 00:16:00,000
+in the relation between cosines and sines.
+
+279
+00:16:00,000 --> 00:16:04,000
+Okay, now,
+
+280
+00:16:04,000 --> 00:16:07,000
+we have x equals rho cosh omega,
+
+281
+00:16:07,000 --> 00:16:09,000
+t equals rho sinh omega,
+
+282
+00:16:09,000 --> 00:16:13,000
+almost the same as the equation for x and y up there.
+
+283
+00:16:13,000 --> 00:16:16,000
+Let's guess what the metric looks like.
+
+284
+00:16:16,000 --> 00:16:19,000
+Here it is, ds squared,
+
+285
+00:16:19,000 --> 00:16:23,000
+which is just,
+
+286
+00:16:23,000 --> 00:16:25,000
+where is it?
+
+287
+00:16:25,000 --> 00:16:27,000
+Did I write it?
+
+288
+00:16:27,000 --> 00:16:29,000
+Here it is.
+
+289
+00:16:29,000 --> 00:16:32,000
+ds squared is minus dt squared plus dx squared,
+
+290
+00:16:32,000 --> 00:16:33,000
+is,
+
+291
+00:16:33,000 --> 00:16:35,000
+it's easy to work out,
+
+292
+00:16:35,000 --> 00:16:38,000
+is equal to rho squared,
+
+293
+00:16:40,000 --> 00:16:42,000
+d omega squared,
+
+294
+00:16:42,000 --> 00:16:45,000
+with a minus sign,
+
+295
+00:16:45,000 --> 00:16:48,000
+and with a plus sign, d rho squared.
+
+296
+00:16:48,000 --> 00:16:50,000
+Let's just compare it.
+
+297
+00:16:50,000 --> 00:16:52,000
+Go up to the metric over here.
+
+298
+00:16:52,000 --> 00:16:54,000
+ds squared is rho squared plus rho squared,
+
+299
+00:16:54,000 --> 00:16:57,000
+d rho squared plus rho squared d theta squared.
+
+300
+00:16:57,000 --> 00:16:59,000
+d rho squared, same thing,
+
+301
+00:16:59,000 --> 00:17:02,000
+and instead of rho squared d theta squared,
+
+302
+00:17:02,000 --> 00:17:04,000
+we have a minus sign,
+
+303
+00:17:04,000 --> 00:17:06,000
+rho squared d omega squared.
+
+304
+00:17:06,000 --> 00:17:09,000
+Omega is like theta.
+
+305
+00:17:09,000 --> 00:17:12,000
+But there is a big difference between omega and theta.
+
+306
+00:17:12,000 --> 00:17:15,000
+Theta is a periodic variable,
+
+307
+00:17:15,000 --> 00:17:17,000
+it goes around on a circle.
+
+308
+00:17:17,000 --> 00:17:20,000
+It goes from zero to two pi,
+
+309
+00:17:20,000 --> 00:17:23,000
+and it never gets bigger than two pi.
+
+310
+00:17:23,000 --> 00:17:26,000
+Then of course it jumps back to zero again.
+
+311
+00:17:26,000 --> 00:17:31,000
+Omega goes from minus infinity way down here,
+
+312
+00:17:31,000 --> 00:17:34,000
+goes up to here, becomes zero at this point,
+
+313
+00:17:34,000 --> 00:17:37,000
+and then goes up to plus infinity.
+
+314
+00:17:37,000 --> 00:17:40,000
+So hyperbolic angles, unlike ordinary angles,
+
+315
+00:17:40,000 --> 00:17:43,000
+go from minus infinity to infinity.
+
+316
+00:17:43,000 --> 00:17:45,000
+And of course you can see that.
+
+317
+00:17:45,000 --> 00:17:46,000
+What happens,
+
+318
+00:17:46,000 --> 00:17:49,000
+what happens when omega gets very large?
+
+319
+00:17:49,000 --> 00:17:50,000
+Let's think about for a moment,
+
+320
+00:17:50,000 --> 00:17:53,000
+what happens when omega gets very, very large?
+
+321
+00:17:53,000 --> 00:17:58,000
+What happens to hyperbolic cosine of omega?
+
+322
+00:17:58,000 --> 00:18:00,000
+It's very easy, just look at this picture,
+
+323
+00:18:00,000 --> 00:18:02,000
+it gets big.
+
+324
+00:18:02,000 --> 00:18:05,000
+In fact it gets big exponentially fast with omega.
+
+325
+00:18:05,000 --> 00:18:08,000
+So this gets very big.
+
+326
+00:18:08,000 --> 00:18:10,000
+What about sinh?
+
+327
+00:18:10,000 --> 00:18:13,000
+Sinh is another way of talking about hyperbolic sine.
+
+328
+00:18:13,000 --> 00:18:14,000
+What happens to it?
+
+329
+00:18:14,000 --> 00:18:15,000
+Does it get big or small?
+
+330
+00:18:16,000 --> 00:18:18,000
+No, it's big.
+
+331
+00:18:18,000 --> 00:18:19,000
+Yeah, how do I know?
+
+332
+00:18:19,000 --> 00:18:21,000
+If this gets very big,
+
+333
+00:18:21,000 --> 00:18:27,000
+and the difference between cosh and sinh is only a tiny number one,
+
+334
+00:18:27,000 --> 00:18:30,000
+then sinh better get as big as cosh,
+
+335
+00:18:30,000 --> 00:18:32,000
+apart from the difference one.
+
+336
+00:18:32,000 --> 00:18:34,000
+So if cosh is a hundred billion,
+
+337
+00:18:34,000 --> 00:18:39,000
+then sinh also has to be a hundred billion minus a little tiny bit.
+
+338
+00:18:39,000 --> 00:18:42,000
+So when omega gets large,
+
+339
+00:18:42,000 --> 00:18:45,000
+cosh and sinh become very close to being equal to each other.
+
+340
+00:18:45,000 --> 00:18:52,000
+That means when you go way out at large hyperbolic angle,
+
+341
+00:18:52,000 --> 00:18:55,000
+you're way out here,
+
+342
+00:18:55,000 --> 00:18:57,000
+way up on this light cone here,
+
+343
+00:18:57,000 --> 00:19:01,000
+where t and x are almost equal to each other,
+
+344
+00:19:01,000 --> 00:19:04,000
+way out here on this hyperboloid.
+
+345
+00:19:04,000 --> 00:19:08,000
+So way out in this hyperboloid is where omega gets large.
+
+346
+00:19:08,000 --> 00:19:11,000
+Omega goes to infinity way out on the hyperbola,
+
+347
+00:19:11,000 --> 00:19:14,000
+and way down here it goes to minus infinity.
+
+348
+00:19:14,000 --> 00:19:19,000
+We're going to see that omega is a kind of time variable.
+
+349
+00:19:19,000 --> 00:19:20,000
+If it wasn't clear already,
+
+350
+00:19:20,000 --> 00:19:23,000
+we're going to see that omega is a kind of time variable
+
+351
+00:19:23,000 --> 00:19:29,000
+that keeps time, but it keeps time in this angular kind of way.
+
+352
+00:19:29,000 --> 00:19:32,000
+Move along these hyperboloids,
+
+353
+00:19:32,000 --> 00:19:35,000
+or hyperbolas,
+
+354
+00:19:35,000 --> 00:19:37,000
+omega is a kind of time,
+
+355
+00:19:37,000 --> 00:19:41,000
+rho is a kind of distance,
+
+356
+00:19:41,000 --> 00:19:43,000
+and that's the metric.
+
+357
+00:19:43,000 --> 00:19:45,000
+The square root of the square is minus rho squared,
+
+358
+00:19:45,000 --> 00:19:46,000
+the omega squared plus the,
+
+359
+00:19:46,000 --> 00:19:48,000
+we haven't worked this out,
+
+360
+00:19:48,000 --> 00:19:53,000
+but it follows in a very similar manner to the way that it did up there.
+
+361
+00:19:53,000 --> 00:19:55,000
+Okay, so here's something.
+
+362
+00:19:55,000 --> 00:19:56,000
+Let's keep this in mind.
+
+363
+00:19:56,000 --> 00:19:58,000
+I want you to remember this formula.
+
+364
+00:19:58,000 --> 00:20:00,000
+In fact, I'm not even going to trust you to remember it.
+
+365
+00:20:00,000 --> 00:20:02,000
+We're going to leave it on the blackboard.
+
+366
+00:20:02,000 --> 00:20:06,000
+And we're going to come back to the Schwarzschild metric.
+
+367
+00:20:06,000 --> 00:20:09,000
+Let's come back to the Schwarzschild metric.
+
+368
+00:20:09,000 --> 00:20:11,000
+Oh, let me just say it.
+
+369
+00:20:11,000 --> 00:20:12,000
+Now,
+
+370
+00:20:13,000 --> 00:20:15,000
+the Schwarzschild metric,
+
+371
+00:20:15,000 --> 00:20:17,000
+with this peculiar rho dependence here,
+
+372
+00:20:17,000 --> 00:20:18,000
+what space is it?
+
+373
+00:20:18,000 --> 00:20:20,000
+What space-time is it?
+
+374
+00:20:20,000 --> 00:20:23,000
+It's just flat Minkowski space
+
+375
+00:20:23,000 --> 00:20:27,000
+with nothing going on special anywheres on it.
+
+376
+00:20:27,000 --> 00:20:32,000
+It's just we've chosen to write it in polar coordinates
+
+377
+00:20:32,000 --> 00:20:36,000
+where the coordinate system has something funny going on at the origin,
+
+378
+00:20:36,000 --> 00:20:39,000
+but there's nothing funny physically going on there.
+
+379
+00:20:39,000 --> 00:20:42,000
+It's just a coordinate gimmick.
+
+380
+00:20:43,000 --> 00:20:50,000
+Okay, what we want to show now is that this metric close to the horizon
+
+381
+00:20:50,000 --> 00:20:52,000
+is basically like this.
+
+382
+00:20:52,000 --> 00:20:54,000
+It takes a couple of steps.
+
+383
+00:20:54,000 --> 00:20:57,000
+I wish I could do this all in one quick step,
+
+384
+00:20:57,000 --> 00:21:00,000
+but it takes a couple of steps, but they're not hard.
+
+385
+00:21:00,000 --> 00:21:05,000
+They're just on the edge of what I like doing on the blackboard.
+
+386
+00:21:05,000 --> 00:21:12,000
+Okay, let's rewrite the metric once.
+
+387
+00:21:12,000 --> 00:21:14,000
+Let's multiply.
+
+388
+00:21:14,000 --> 00:21:21,000
+Let's write this as r minus 2mg over r.
+
+389
+00:21:21,000 --> 00:21:29,000
+I've just written 1 as r over r, dt squared, minus,
+
+390
+00:21:29,000 --> 00:21:40,000
+and this is plus r over r minus 2mg times dr squared.
+
+391
+00:21:42,000 --> 00:21:47,000
+This coefficient and this one are inverse to each other.
+
+392
+00:21:47,000 --> 00:21:48,000
+I've done nothing.
+
+393
+00:21:48,000 --> 00:21:53,000
+I've simply rewritten it in a form which is a little neater.
+
+394
+00:21:53,000 --> 00:22:00,000
+Okay, now what I'm interested in is the black hole very near the horizon.
+
+395
+00:22:00,000 --> 00:22:09,000
+In other words, r very close to 2mg.
+
+396
+00:22:09,000 --> 00:22:11,000
+What we want to do is we want to zoom in.
+
+397
+00:22:12,000 --> 00:22:18,000
+We want to zoom in on r equals 2mg and sort of expand out
+
+398
+00:22:18,000 --> 00:22:23,000
+and see what's going on there by making some approximations,
+
+399
+00:22:23,000 --> 00:22:30,000
+but approximations which are highly accurate right at r equals 2mg.
+
+400
+00:22:30,000 --> 00:22:36,000
+And the basic approximation we're going to make is in the denominator here,
+
+401
+00:22:36,000 --> 00:22:38,000
+we're not going to be moving much.
+
+402
+00:22:38,000 --> 00:22:41,000
+Let's suppose here is r equals 2mg.
+
+403
+00:22:41,000 --> 00:22:42,000
+This is r.
+
+404
+00:22:42,000 --> 00:22:44,000
+Here is 2mg.
+
+405
+00:22:44,000 --> 00:22:51,000
+We're going to only be moving a little bit just to explore the very, very neighborhood of this point.
+
+406
+00:22:51,000 --> 00:22:56,000
+So we're going to make little excursions away from this point,
+
+407
+00:22:56,000 --> 00:23:00,000
+but r is not going to change much.
+
+408
+00:23:00,000 --> 00:23:07,000
+So I'm going to replace r by 2mg.
+
+409
+00:23:07,000 --> 00:23:11,000
+Should I do the same over here?
+
+410
+00:23:11,000 --> 00:23:16,000
+That's not a good idea because notice what happens when you move r a little bit near here.
+
+411
+00:23:16,000 --> 00:23:19,000
+This thing can change sign, so we better keep it the way it is.
+
+412
+00:23:19,000 --> 00:23:21,000
+Better not fool around with it.
+
+413
+00:23:21,000 --> 00:23:29,000
+The 2mg, the denominator here, that doesn't do anything very interesting as you move r a little bit.
+
+414
+00:23:29,000 --> 00:23:37,000
+If 2mg is a kilometer and you move a centimeter, 2mg only changes a tiny bit,
+
+415
+00:23:37,000 --> 00:23:39,000
+a kilometer plus or minus a centimeter.
+
+416
+00:23:39,000 --> 00:23:44,000
+But r minus 2mg, it flips sign.
+
+417
+00:23:44,000 --> 00:23:47,000
+That's dangerous, so let's keep this just the way it is.
+
+418
+00:23:47,000 --> 00:23:52,000
+Likewise here, I've just turned this thing over and put it here.
+
+419
+00:23:52,000 --> 00:23:57,000
+So that's the first step to make a little bit of an approximation.
+
+420
+00:23:57,000 --> 00:24:00,000
+That's the first step.
+
+421
+00:24:00,000 --> 00:24:02,000
+I haven't done much.
+
+422
+00:24:02,000 --> 00:24:08,000
+Now, the next step is to look at this over here and say,
+
+423
+00:24:08,000 --> 00:24:11,000
+this is just d rho squared over here.
+
+424
+00:24:11,000 --> 00:24:13,000
+I'm going to do a trick.
+
+425
+00:24:13,000 --> 00:24:16,000
+I'm going to change variables.
+
+426
+00:24:16,000 --> 00:24:23,000
+I'm going to change coordinates from r to a new coordinate, which I'll call rho,
+
+427
+00:24:23,000 --> 00:24:28,000
+in such a way that this whole thing here, and we'll see how to do this in a moment,
+
+428
+00:24:28,000 --> 00:24:34,000
+in such a way that this whole thing here is just called d rho squared.
+
+429
+00:24:34,000 --> 00:24:35,000
+Now, how can I do that?
+
+430
+00:24:35,000 --> 00:24:37,000
+How can I say that r minus 2mg,
+
+431
+00:24:37,000 --> 00:24:39,000
+whatever it is here,
+
+432
+00:24:39,000 --> 00:24:43,000
+oh, sorry, this should be 2mg here, right?
+
+433
+00:24:43,000 --> 00:24:45,000
+2mg.
+
+434
+00:24:45,000 --> 00:24:51,000
+2mg in the numerator.
+
+435
+00:24:51,000 --> 00:24:52,000
+How can I do that?
+
+436
+00:24:52,000 --> 00:24:54,000
+Well, I haven't told you what rho is yet.
+
+437
+00:24:54,000 --> 00:24:57,000
+So until I tell you what rho is, there's no contradiction.
+
+438
+00:24:57,000 --> 00:25:02,000
+It just may be that rho is related to r in such a way that this makes sense.
+
+439
+00:25:02,000 --> 00:25:06,000
+So let's see if we can figure out what the relationship between rho and r is.
+
+440
+00:25:06,000 --> 00:25:07,000
+That's the first step.
+
+441
+00:25:07,000 --> 00:25:10,000
+We're just dealing with this term here.
+
+442
+00:25:10,000 --> 00:25:16,000
+Well, it says that d rho squared must be the same, which is another word for equals,
+
+443
+00:25:16,000 --> 00:25:26,000
+equals 2mg over r minus 2mg, dr squared.
+
+444
+00:25:26,000 --> 00:25:29,000
+Let me take the square root of both sides.
+
+445
+00:25:29,000 --> 00:25:34,000
+Square root, square root, square root.
+
+446
+00:25:34,000 --> 00:25:36,000
+This is an equation that determines the relationship between rho and r.
+
+447
+00:25:36,000 --> 00:25:38,000
+That determines rho in terms of r.
+
+448
+00:25:38,000 --> 00:25:42,000
+How do I find rho in terms of r from an equation like this?
+
+449
+00:25:42,000 --> 00:25:46,000
+You integrate both sides of the equation.
+
+450
+00:25:46,000 --> 00:25:47,000
+All right?
+
+451
+00:25:47,000 --> 00:25:52,000
+So what do you get on the left-hand side if you integrate the left-hand side?
+
+452
+00:25:52,000 --> 00:25:54,000
+Rho.
+
+453
+00:25:59,000 --> 00:26:01,000
+What do we get on the right-hand side?
+
+454
+00:26:01,000 --> 00:26:03,000
+That's a little harder, huh?
+
+455
+00:26:03,000 --> 00:26:05,000
+Not too much harder.
+
+456
+00:26:05,000 --> 00:26:12,000
+Let's take out the factor 2mg.
+
+457
+00:26:12,000 --> 00:26:20,000
+And now this becomes dr over square root of r minus 2mg.
+
+458
+00:26:20,000 --> 00:26:23,000
+This piece is not the, that's just a constant.
+
+459
+00:26:23,000 --> 00:26:25,000
+Anybody smart enough to do that integral?
+
+460
+00:26:25,000 --> 00:26:28,000
+It takes me about 10 minutes.
+
+461
+00:26:28,000 --> 00:26:30,000
+I'm going to wait for somebody else to do it.
+
+462
+00:26:30,000 --> 00:26:33,000
+2 times r squared of r minus 2mg.
+
+463
+00:26:33,000 --> 00:26:34,000
+2?
+
+464
+00:26:34,000 --> 00:26:36,000
+I think I heard you say it right.
+
+465
+00:26:36,000 --> 00:26:37,000
+Yeah.
+
+466
+00:26:37,000 --> 00:26:39,000
+2 times square root of r minus 2mg.
+
+467
+00:26:39,000 --> 00:26:40,000
+2?
+
+468
+00:26:40,000 --> 00:26:51,000
+This integral over here is 2 times r squared of r minus 2mg.
+
+469
+00:26:51,000 --> 00:26:55,000
+That's the integral of this.
+
+470
+00:26:55,000 --> 00:26:59,000
+So let's write the correct equation.
+
+471
+00:26:59,000 --> 00:27:02,000
+Rho is equal to square root of 2mg.
+
+472
+00:27:02,000 --> 00:27:09,000
+Square root of 2mg times another factor of 2.
+
+473
+00:27:09,000 --> 00:27:12,000
+That makes this 8.
+
+474
+00:27:12,000 --> 00:27:20,000
+Times square root of r minus 2mg.
+
+475
+00:27:20,000 --> 00:27:26,000
+Okay, if you don't believe it, differentiate rho with respect to r and check.
+
+476
+00:27:26,000 --> 00:27:30,000
+This is the same equation as saying that the rho by dr is equal to 2mg.
+
+477
+00:27:30,000 --> 00:27:34,000
+This is equal to 2mg over r minus 2mg.
+
+478
+00:27:34,000 --> 00:27:36,000
+Here's the solution.
+
+479
+00:27:36,000 --> 00:27:41,000
+Differentiate with respect to r and reproduce that.
+
+480
+00:27:41,000 --> 00:27:43,000
+That's an exercise for you.
+
+481
+00:27:43,000 --> 00:27:51,000
+Alright, so now we found what rho has to be in order that we can take this whole mess here and just write drho squared.
+
+482
+00:27:51,000 --> 00:27:52,000
+Isn't that nice?
+
+483
+00:27:52,000 --> 00:27:58,000
+We now don't have to worry about any factors multiplying this.
+
+484
+00:27:58,000 --> 00:28:04,000
+But it may be getting a little complicated because we're going to want to rewrite everything in terms of rho.
+
+485
+00:28:04,000 --> 00:28:06,000
+We're changing variables.
+
+486
+00:28:06,000 --> 00:28:11,000
+And here, r appears nice and simply, right?
+
+487
+00:28:11,000 --> 00:28:13,000
+Well, it's not so bad.
+
+488
+00:28:13,000 --> 00:28:14,000
+Look at this.
+
+489
+00:28:14,000 --> 00:28:23,000
+r minus 2mg times something is equal to rho squared.
+
+490
+00:28:23,000 --> 00:28:24,000
+Square this equation.
+
+491
+00:28:24,000 --> 00:28:26,000
+Let's square it.
+
+492
+00:28:28,000 --> 00:28:30,000
+Let's see, maybe I should write it over.
+
+493
+00:28:30,000 --> 00:28:31,000
+Yeah.
+
+494
+00:28:31,000 --> 00:28:45,000
+Rho squared is equal to 8mg times r minus 2mg.
+
+495
+00:28:45,000 --> 00:28:47,000
+Holy smoke, I now know what r minus 2mg is.
+
+496
+00:28:47,000 --> 00:28:49,000
+It's just rho squared over 8mg.
+
+497
+00:28:49,000 --> 00:28:55,000
+That wasn't so bad.
+
+498
+00:28:55,000 --> 00:28:57,000
+And now we can write the metric.
+
+499
+00:28:58,000 --> 00:29:02,000
+r minus 2mg, let's even go a little further.
+
+500
+00:29:02,000 --> 00:29:06,000
+Let's divide by another 2mg here because that's what we're going to need.
+
+501
+00:29:06,000 --> 00:29:10,000
+And we're going to get 16m squared g squared.
+
+502
+00:29:10,000 --> 00:29:13,000
+16m squared g squared.
+
+503
+00:29:13,000 --> 00:29:17,000
+As I said, a little bit tedious but not too bad.
+
+504
+00:29:17,000 --> 00:29:19,000
+Okay, so let's see what we have here.
+
+505
+00:29:19,000 --> 00:29:26,000
+We have rho minus rho squared dt squared divided by 16m squared g squared.
+
+506
+00:29:26,000 --> 00:29:30,000
+Plus this.
+
+507
+00:29:30,000 --> 00:29:32,000
+Well, take a look at this.
+
+508
+00:29:32,000 --> 00:29:38,000
+First look at this and then look at this.
+
+509
+00:29:38,000 --> 00:29:40,000
+They're not the same.
+
+510
+00:29:40,000 --> 00:29:42,000
+But they're fairly close.
+
+511
+00:29:42,000 --> 00:29:50,000
+You have a d rho squared and you have a rho squared times a dt squared.
+
+512
+00:29:50,000 --> 00:29:54,000
+So you have a rho squared times a dt squared.
+
+513
+00:29:54,000 --> 00:30:01,000
+But you have this nuisance 16m squared g squared downstairs, right?
+
+514
+00:30:01,000 --> 00:30:06,000
+That doesn't appear over here.
+
+515
+00:30:06,000 --> 00:30:08,000
+Well, it's really easy to get rid of it.
+
+516
+00:30:08,000 --> 00:30:10,000
+How do you do it?
+
+517
+00:30:10,000 --> 00:30:12,000
+Put it in omega.
+
+518
+00:30:12,000 --> 00:30:13,000
+Yeah.
+
+519
+00:30:13,000 --> 00:30:18,000
+We say that we've changed the r variable to rho.
+
+520
+00:30:18,000 --> 00:30:22,000
+Now we're going to change the t variable to omega.
+
+521
+00:30:22,000 --> 00:30:23,000
+I don't think we need what's in the box.
+
+522
+00:30:23,000 --> 00:30:28,000
+I don't think we need what's in the bottom here.
+
+523
+00:30:28,000 --> 00:30:32,000
+We've done all of that.
+
+524
+00:30:32,000 --> 00:30:41,000
+Now just say that t over 4mg, call that omega.
+
+525
+00:30:41,000 --> 00:30:49,000
+dt squared over 16m squared g squared is d omega squared.
+
+526
+00:30:49,000 --> 00:30:53,000
+It's just a change of variables by rescaling the time
+
+527
+00:30:53,000 --> 00:30:55,000
+factor 4mg.
+
+528
+00:30:55,000 --> 00:30:56,000
+And what do we get then?
+
+529
+00:30:56,000 --> 00:31:07,000
+We get that this is equal to minus rho squared d omega squared plus d rho squared.
+
+530
+00:31:07,000 --> 00:31:14,000
+In other words, we get exactly flat space in hyperbolic polar coordinates.
+
+531
+00:31:14,000 --> 00:31:22,000
+Now, it wasn't exact because we did make a slight approximation,
+
+532
+00:31:22,000 --> 00:31:29,000
+but it's an approximation which was essentially exact at r equals 2mg.
+
+533
+00:31:29,000 --> 00:31:35,000
+We replaced an r by a 2mg here and an r by a 2mg here.
+
+534
+00:31:35,000 --> 00:31:42,000
+But that's okay because we're only moving r by a tiny amount away from 2mg.
+
+535
+00:31:42,000 --> 00:31:43,000
+So what have we seen?
+
+536
+00:31:43,000 --> 00:31:51,000
+We've seen that to a high approximation, the region near the horizon, near r equals 2mg,
+
+537
+00:31:51,000 --> 00:31:53,000
+has a metric.
+
+538
+00:31:53,000 --> 00:31:55,000
+Where is it?
+
+539
+00:31:55,000 --> 00:32:00,000
+Well, it has a metric which is just the metric of flat space.
+
+540
+00:32:00,000 --> 00:32:05,000
+This is good enough to tell us that there's nothing fancy going on at the horizon,
+
+541
+00:32:05,000 --> 00:32:10,000
+nothing traumatic, no forces become infinite,
+
+542
+00:32:10,000 --> 00:32:18,000
+nothing traumatic happens to somebody who finds himself there.
+
+543
+00:32:18,000 --> 00:32:20,000
+It's just a change of coordinates.
+
+544
+00:32:21,000 --> 00:32:22,000
+And there's a c squared.
+
+545
+00:32:22,000 --> 00:32:24,000
+A c squared is a lot of work.
+
+546
+00:32:24,000 --> 00:32:30,000
+Can I just question about the rho and d rho?
+
+547
+00:32:30,000 --> 00:32:35,000
+If you put the equation back on the board,
+
+548
+00:32:35,000 --> 00:32:42,000
+you expect that if, first of all, d rho is going to integrate,
+
+549
+00:32:42,000 --> 00:32:45,000
+rho won't have radical changes.
+
+550
+00:32:45,000 --> 00:32:51,000
+But if r is slightly larger,
+
+551
+00:32:51,000 --> 00:32:55,000
+then the Schwarzschild radius is positive.
+
+552
+00:32:55,000 --> 00:32:57,000
+If it's equal, rho is zero.
+
+553
+00:32:57,000 --> 00:33:00,000
+And if it's negative, rho is i.
+
+554
+00:33:00,000 --> 00:33:03,000
+It's an imaginary number.
+
+555
+00:33:03,000 --> 00:33:06,000
+So it's like an odd integral.
+
+556
+00:33:06,000 --> 00:33:08,000
+Does that have any effect?
+
+557
+00:33:08,000 --> 00:33:11,000
+Well, we just reproduced what's here.
+
+558
+00:33:11,000 --> 00:33:13,000
+Same thing, same, same.
+
+559
+00:33:13,000 --> 00:33:15,000
+In the coefficient coordinates,
+
+560
+00:33:15,000 --> 00:33:17,000
+but just manifested in a slightly different way.
+
+561
+00:33:17,000 --> 00:33:18,000
+Is that correct?
+
+562
+00:33:18,000 --> 00:33:19,000
+Mm-hmm.
+
+563
+00:33:19,000 --> 00:33:20,000
+Okay.
+
+564
+00:33:20,000 --> 00:33:21,000
+Okay.
+
+565
+00:33:21,000 --> 00:33:27,000
+Let's remind ourselves what these coordinates look like.
+
+566
+00:33:27,000 --> 00:33:31,000
+They're drawn over here, but let me redraw them.
+
+567
+00:33:31,000 --> 00:33:34,000
+They're simply Minkowski space.
+
+568
+00:33:34,000 --> 00:33:39,000
+A light cone, an origin,
+
+569
+00:33:39,000 --> 00:33:43,000
+a hyperbolic angle that measures time,
+
+570
+00:33:43,000 --> 00:33:46,000
+so to speak, along there.
+
+571
+00:33:46,000 --> 00:33:49,000
+And, but really, when we put it all together,
+
+572
+00:33:50,000 --> 00:33:55,000
+it's just flat space and some funny coordinates.
+
+573
+00:33:55,000 --> 00:33:58,000
+What's this point right over here
+
+574
+00:33:58,000 --> 00:34:01,000
+in terms of r?
+
+575
+00:34:01,000 --> 00:34:08,000
+That point is, of course, rho equals zero.
+
+576
+00:34:08,000 --> 00:34:11,000
+That point is, of course, rho equals zero.
+
+577
+00:34:11,000 --> 00:34:14,000
+But what is rho equals zero?
+
+578
+00:34:14,000 --> 00:34:18,000
+Rho equals zero is r equals 2mg.
+
+579
+00:34:18,000 --> 00:34:23,000
+So you can imagine somebody coming in from far away,
+
+580
+00:34:23,000 --> 00:34:25,000
+is far away from the black hole,
+
+581
+00:34:25,000 --> 00:34:28,000
+moving in, moving in, moving in, moving in,
+
+582
+00:34:28,000 --> 00:34:29,000
+and getting to that point,
+
+583
+00:34:29,000 --> 00:34:33,000
+and that point is the horizon of the black hole.
+
+584
+00:34:33,000 --> 00:34:41,000
+That's where the horizon is, right at that point.
+
+585
+00:34:41,000 --> 00:34:46,000
+Now we can start to understand a little better
+
+586
+00:34:46,000 --> 00:34:49,000
+what it looks like.
+
+587
+00:34:49,000 --> 00:34:51,000
+It's a little weird.
+
+588
+00:34:51,000 --> 00:34:55,000
+We start with a black hole, which looks like a,
+
+589
+00:34:55,000 --> 00:34:57,000
+well, what does it look like?
+
+590
+00:34:57,000 --> 00:35:00,000
+Far from the black hole, it looks just like flat space.
+
+591
+00:35:00,000 --> 00:35:03,000
+Close to the horizon, it also looks like flat space,
+
+592
+00:35:03,000 --> 00:35:07,000
+but in a very, very different way.
+
+593
+00:35:07,000 --> 00:35:12,000
+The time up there becomes the hyperbolic angle times 4mg.
+
+594
+00:35:12,000 --> 00:35:14,000
+So it's a rather odd transformation.
+
+595
+00:35:14,000 --> 00:35:15,000
+But the main point here is that nothing special is going to happen.
+
+596
+00:35:16,000 --> 00:35:19,000
+Nothing special is going on at this horizon over here.
+
+597
+00:35:19,000 --> 00:35:22,000
+Okay, any questions about this?
+
+598
+00:35:22,000 --> 00:35:25,000
+That's always outside the horizon?
+
+599
+00:35:25,000 --> 00:35:30,000
+Okay, let's talk about where the horizon is now.
+
+600
+00:35:30,000 --> 00:35:34,000
+Somebody who is outside the horizon is at an r,
+
+601
+00:35:34,000 --> 00:35:38,000
+which is larger than 2mg.
+
+602
+00:35:38,000 --> 00:35:41,000
+What does that mean in terms of rho?
+
+603
+00:35:41,000 --> 00:35:45,000
+It means at a positive value of rho squared.
+
+604
+00:35:45,000 --> 00:35:51,000
+It means out here.
+
+605
+00:35:51,000 --> 00:35:57,000
+Remember, the hyperbolas are lines of constant rho.
+
+606
+00:35:57,000 --> 00:36:00,000
+Here's rho equals one value.
+
+607
+00:36:00,000 --> 00:36:02,000
+Here's rho equals another value.
+
+608
+00:36:02,000 --> 00:36:05,000
+Here's a bigger value of rho and so forth.
+
+609
+00:36:05,000 --> 00:36:12,000
+Outside the black hole is to the right of this pair of lines.
+
+610
+00:36:12,000 --> 00:36:14,000
+Okay, that's outside the black hole.
+
+611
+00:36:15,000 --> 00:36:19,000
+If you're outside the black hole, let's suppose over here,
+
+612
+00:36:19,000 --> 00:36:23,000
+and you want to send a message,
+
+613
+00:36:23,000 --> 00:36:28,000
+which will continue to move outward,
+
+614
+00:36:28,000 --> 00:36:30,000
+you can send a message out,
+
+615
+00:36:30,000 --> 00:36:38,000
+and that message will eventually pass any one of these hyperbolas.
+
+616
+00:36:38,000 --> 00:36:41,000
+That message, a light ray.
+
+617
+00:36:41,000 --> 00:36:43,000
+You send the light ray out,
+
+618
+00:36:43,000 --> 00:36:46,000
+and that light ray will cross any one of these hyperbolas.
+
+619
+00:36:46,000 --> 00:36:52,000
+So if we imagine a person stationed at each one of these hyperbolas,
+
+620
+00:36:52,000 --> 00:36:55,000
+that means stationed at a value of r.
+
+621
+00:36:55,000 --> 00:36:59,000
+At each value of r, we have another guy.
+
+622
+00:36:59,000 --> 00:37:01,000
+They're standing still,
+
+623
+00:37:01,000 --> 00:37:04,000
+which means they're on a fixed r trajectory,
+
+624
+00:37:04,000 --> 00:37:07,000
+which means a fixed rho trajectory.
+
+625
+00:37:07,000 --> 00:37:10,000
+Somebody in here sends a message.
+
+626
+00:37:10,000 --> 00:37:12,000
+Can they get a message to somebody far out?
+
+627
+00:37:12,000 --> 00:37:15,000
+Yes, they can get a message to anybody,
+
+628
+00:37:15,000 --> 00:37:17,000
+no matter how far out,
+
+629
+00:37:17,000 --> 00:37:21,000
+because this message will eventually cross every one of these hyperbolas.
+
+630
+00:37:21,000 --> 00:37:26,000
+Is one hyperbola a particular proper time or a particular distance?
+
+631
+00:37:26,000 --> 00:37:28,000
+Is one hyperbola...
+
+632
+00:37:28,000 --> 00:37:31,000
+One hyperbola is a given proper distance from the horizon.
+
+633
+00:37:31,000 --> 00:37:33,000
+Distance from the horizon?
+
+634
+00:37:33,000 --> 00:37:35,000
+Distance, distance, r.
+
+635
+00:37:35,000 --> 00:37:38,000
+Yeah, yeah, right.
+
+636
+00:37:38,000 --> 00:37:41,000
+Each hyperbola is a given distance from...
+
+637
+00:37:41,000 --> 00:37:42,000
+Right.
+
+638
+00:37:42,000 --> 00:37:47,000
+Remember, there's a coordinate transformation between r and rho.
+
+639
+00:37:47,000 --> 00:37:48,000
+Where is it?
+
+640
+00:37:48,000 --> 00:37:52,000
+We had it written down somewhere.
+
+641
+00:37:52,000 --> 00:37:54,000
+Here it is.
+
+642
+00:37:54,000 --> 00:37:57,000
+Let's get it back again.
+
+643
+00:38:01,000 --> 00:38:03,000
+Oh, I...
+
+644
+00:38:06,000 --> 00:38:09,000
+I lost something, but...
+
+645
+00:38:09,000 --> 00:38:11,000
+It's got a square.
+
+646
+00:38:11,000 --> 00:38:15,000
+Square root, and then another square root of 8mg.
+
+647
+00:38:15,000 --> 00:38:17,000
+Yeah.
+
+648
+00:38:17,000 --> 00:38:19,000
+Okay.
+
+649
+00:38:19,000 --> 00:38:22,000
+As long as r is bigger than 2mg,
+
+650
+00:38:22,000 --> 00:38:24,000
+the square root is positive.
+
+651
+00:38:24,000 --> 00:38:25,000
+If the square root is positive,
+
+652
+00:38:25,000 --> 00:38:27,000
+rho squared is positive,
+
+653
+00:38:27,000 --> 00:38:30,000
+and for each value of rho,
+
+654
+00:38:30,000 --> 00:38:32,000
+there's one value of r,
+
+655
+00:38:32,000 --> 00:38:33,000
+and for each value of r,
+
+656
+00:38:33,000 --> 00:38:35,000
+you can define one value of rho.
+
+657
+00:38:35,000 --> 00:38:38,000
+Let's not worry about negative values for the square root.
+
+658
+00:38:38,000 --> 00:38:41,000
+Each value of rho comes with a value of r,
+
+659
+00:38:41,000 --> 00:38:46,000
+so a given value of r is on one of these hyperboloids,
+
+660
+00:38:46,000 --> 00:38:49,000
+on one of these rho lines.
+
+661
+00:38:49,000 --> 00:38:55,000
+Okay, so that's the facts for outside the black hole.
+
+662
+00:38:55,000 --> 00:38:57,000
+If somebody is stationed outside the black hole,
+
+663
+00:38:57,000 --> 00:38:59,000
+they can send a message to anybody else,
+
+664
+00:38:59,000 --> 00:39:03,000
+no matter how far out they are.
+
+665
+00:39:03,000 --> 00:39:05,000
+Isn't that just rho?
+
+666
+00:39:05,000 --> 00:39:06,000
+Yeah.
+
+667
+00:39:06,000 --> 00:39:07,000
+Yeah.
+
+668
+00:39:07,000 --> 00:39:09,000
+Rho.
+
+669
+00:39:09,000 --> 00:39:10,000
+Thank you.
+
+670
+00:39:11,000 --> 00:39:14,000
+No obstruction,
+
+671
+00:39:14,000 --> 00:39:16,000
+if you're outside the horizon,
+
+672
+00:39:16,000 --> 00:39:19,000
+to communicating with anybody else.
+
+673
+00:39:19,000 --> 00:39:21,000
+I have a question.
+
+674
+00:39:21,000 --> 00:39:22,000
+Yeah.
+
+675
+00:39:22,000 --> 00:39:27,000
+I don't understand where the third on the top left panel,
+
+676
+00:39:27,000 --> 00:39:31,000
+I don't understand where the third equation came from the second.
+
+677
+00:39:31,000 --> 00:39:32,000
+Well, now quote your act.
+
+678
+00:39:32,000 --> 00:39:34,000
+That was not a question.
+
+679
+00:39:34,000 --> 00:39:36,000
+But now you let me.
+
+680
+00:39:36,000 --> 00:39:38,000
+What?
+
+681
+00:39:38,000 --> 00:39:40,000
+Stayed again with me.
+
+682
+00:39:40,000 --> 00:39:43,000
+Stayed again with you, stayed again.
+
+683
+00:39:43,000 --> 00:39:47,000
+Seems like the third equation doesn't follow from the second.
+
+684
+00:39:47,000 --> 00:39:50,000
+Third equation, one, two, three.
+
+685
+00:39:50,000 --> 00:39:52,000
+Here, from here to here?
+
+686
+00:39:52,000 --> 00:39:54,000
+Yeah, that's where the first term is.
+
+687
+00:39:54,000 --> 00:39:56,000
+He's got the comment on the right hand side.
+
+688
+00:39:56,000 --> 00:39:59,000
+Oh, r very close to two energies.
+
+689
+00:39:59,000 --> 00:40:00,000
+Oh, okay.
+
+690
+00:40:00,000 --> 00:40:04,000
+If I put r here, then does it follow?
+
+691
+00:40:04,000 --> 00:40:05,000
+Okay.
+
+692
+00:40:05,000 --> 00:40:08,000
+Yeah.
+
+693
+00:40:08,000 --> 00:40:11,000
+As I said, this was the approximation that we made,
+
+694
+00:40:11,000 --> 00:40:13,000
+which is an accurate approximation,
+
+695
+00:40:13,000 --> 00:40:18,000
+and is more and more accurate as r becomes closer and closer to mg.
+
+696
+00:40:18,000 --> 00:40:21,000
+Okay.
+
+697
+00:40:21,000 --> 00:40:24,000
+Where are we?
+
+698
+00:40:24,000 --> 00:40:26,000
+Yeah.
+
+699
+00:40:26,000 --> 00:40:29,000
+All right, now what about if you're over here?
+
+700
+00:40:29,000 --> 00:40:33,000
+Can you send the message out to here?
+
+701
+00:40:33,000 --> 00:40:37,000
+Remember, light moves on 45 degree trajectories.
+
+702
+00:40:37,000 --> 00:40:42,000
+Light moves on light cones.
+
+703
+00:40:42,000 --> 00:40:46,000
+If somebody is over here, can they send a message out to the outside?
+
+704
+00:40:46,000 --> 00:40:50,000
+The outside meaning anywhere out beyond this light cone?
+
+705
+00:40:50,000 --> 00:40:53,000
+No, they can't.
+
+706
+00:40:53,000 --> 00:41:02,000
+So the world sort of divides into the place where you can send a message out beyond this light cone,
+
+707
+00:41:02,000 --> 00:41:07,000
+or where you can send messages out to people at positive values,
+
+708
+00:41:07,000 --> 00:41:11,000
+values of r, and those places where you can't.
+
+709
+00:41:11,000 --> 00:41:14,000
+That's the definition of a horizon.
+
+710
+00:41:14,000 --> 00:41:24,000
+In fact, this whole light-like line is the horizon.
+
+711
+00:41:24,000 --> 00:41:34,000
+If you fall through here, here's, let's now imagine two friends.
+
+712
+00:41:34,000 --> 00:41:36,000
+Alice and Bob.
+
+713
+00:41:36,000 --> 00:41:37,000
+All right.
+
+714
+00:41:37,000 --> 00:41:41,000
+Bob insists on staying outside the black hole.
+
+715
+00:41:41,000 --> 00:41:44,000
+And he's going to stay at a fixed distance from the black hole.
+
+716
+00:41:44,000 --> 00:41:45,000
+So there he is.
+
+717
+00:41:45,000 --> 00:41:51,000
+He's going along on his trajectory.
+
+718
+00:41:51,000 --> 00:41:58,000
+And Alice decides to fall past that point.
+
+719
+00:41:58,000 --> 00:42:04,000
+Once Alice passes this point over here, she can no longer send a message to Bob.
+
+720
+00:42:04,000 --> 00:42:06,000
+Bob can't see her.
+
+721
+00:42:06,000 --> 00:42:09,000
+If he can't get a light ray from her, he can't see her.
+
+722
+00:42:09,000 --> 00:42:12,000
+He can't get a message from her.
+
+723
+00:42:12,000 --> 00:42:15,000
+Can Alice see Bob?
+
+724
+00:42:15,000 --> 00:42:17,000
+Yeah, no problem.
+
+725
+00:42:17,000 --> 00:42:18,000
+Here's Alice over here.
+
+726
+00:42:18,000 --> 00:42:20,000
+Oops.
+
+727
+00:42:20,000 --> 00:42:24,000
+Alice looks back on her light cone and sees Bob.
+
+728
+00:42:24,000 --> 00:42:26,000
+So there's an asymmetry.
+
+729
+00:42:26,000 --> 00:42:30,000
+Alice can see Bob, but Bob can't see Alice.
+
+730
+00:42:30,000 --> 00:42:35,000
+Alice is past the horizon of the black hole.
+
+731
+00:42:35,000 --> 00:42:38,000
+But does anything happen at that point?
+
+732
+00:42:38,000 --> 00:42:39,000
+No.
+
+733
+00:42:39,000 --> 00:42:41,000
+Nothing special at this point.
+
+734
+00:42:41,000 --> 00:42:44,000
+This was just good old flat space.
+
+735
+00:42:44,000 --> 00:42:47,000
+And nothing special happened.
+
+736
+00:42:47,000 --> 00:42:48,000
+Yeah.
+
+737
+00:42:48,000 --> 00:42:54,000
+That's because the photons are going from Bob toward Alice so that she can see him.
+
+738
+00:42:54,000 --> 00:42:55,000
+Yeah.
+
+739
+00:42:55,000 --> 00:43:03,000
+But if she jumps through the horizon, is in hip deep, does she see her own feet?
+
+740
+00:43:03,000 --> 00:43:06,000
+Does she see her own feet?
+
+741
+00:43:06,000 --> 00:43:07,000
+As she passes through.
+
+742
+00:43:07,000 --> 00:43:08,000
+Yeah.
+
+743
+00:43:08,000 --> 00:43:12,000
+Well, if she's outside and her feet pass...
+
+744
+00:43:12,000 --> 00:43:14,000
+Yeah.
+
+745
+00:43:14,000 --> 00:43:18,000
+Yeah, she can't see her own feet while she's outside.
+
+746
+00:43:18,000 --> 00:43:20,000
+But how long does she stay outside?
+
+747
+00:43:20,000 --> 00:43:22,000
+Not very long.
+
+748
+00:43:22,000 --> 00:43:27,000
+As a matter of fact, you can't see your feet right at this instant.
+
+749
+00:43:27,000 --> 00:43:32,000
+You can only see your feet after there's time for light to get to your eye from your feet.
+
+750
+00:43:32,000 --> 00:43:36,000
+By that time, Alice's eye is through the horizon.
+
+751
+00:43:36,000 --> 00:43:41,000
+But there's a continuous view of her feet as she falls through.
+
+752
+00:43:41,000 --> 00:43:43,000
+There's like a little blip where...
+
+753
+00:43:43,000 --> 00:43:45,000
+No, no, no, nothing at all.
+
+754
+00:43:45,000 --> 00:43:46,000
+Nothing at all.
+
+755
+00:43:46,000 --> 00:43:47,000
+She's just...
+
+756
+00:43:47,000 --> 00:43:50,000
+She's doing what she always does.
+
+757
+00:43:50,000 --> 00:43:53,000
+This is not a special place.
+
+758
+00:43:53,000 --> 00:44:01,000
+Now, should her head, after her feet pass through the horizon, should her head decide,
+
+759
+00:44:01,000 --> 00:44:08,000
+oh no, I am not going to pass through the horizon, then her head will never see her feet.
+
+760
+00:44:08,000 --> 00:44:13,000
+That's if she's stationary.
+
+761
+00:44:13,000 --> 00:44:20,000
+That's if she is going to move along one of these trajectories and her feet move into here.
+
+762
+00:44:20,000 --> 00:44:22,000
+We don't want...
+
+763
+00:44:22,000 --> 00:44:23,000
+This is not a good thing.
+
+764
+00:44:23,000 --> 00:44:25,000
+This is not a good thing.
+
+765
+00:44:25,000 --> 00:44:27,000
+Well, she goes first with the black hole.
+
+766
+00:44:27,000 --> 00:44:28,000
+Well, all right.
+
+767
+00:44:28,000 --> 00:44:30,000
+Then her feet, yeah.
+
+768
+00:44:30,000 --> 00:44:43,000
+So, as long as you don't do anything violent, what you see when you fall into the black hole is what you would have seen if you hadn't fallen into a black hole.
+
+769
+00:44:43,000 --> 00:44:54,000
+What somebody sees of you, if that somebody is stationary with respect to the r-coordinates, that's a different story.
+
+770
+00:44:54,000 --> 00:44:58,000
+So, let's see what a person...
+
+771
+00:44:58,000 --> 00:44:59,000
+Stationary.
+
+772
+00:44:59,000 --> 00:45:00,000
+Let's put it this way.
+
+773
+00:45:00,000 --> 00:45:05,000
+Let's put them on one of these trajectories.
+
+774
+00:45:05,000 --> 00:45:11,000
+Is there anything unusual about one of these trajectories?
+
+775
+00:45:11,000 --> 00:45:14,000
+Existence.
+
+776
+00:45:14,000 --> 00:45:17,000
+Doesn't have a heart.
+
+777
+00:45:17,000 --> 00:45:19,000
+Zero.
+
+778
+00:45:19,000 --> 00:45:21,000
+They're curved.
+
+779
+00:45:21,000 --> 00:45:23,000
+What does it mean that they're curved?
+
+780
+00:45:23,000 --> 00:45:25,000
+That they're accelerating.
+
+781
+00:45:25,000 --> 00:45:27,000
+That they're accelerating.
+
+782
+00:45:27,000 --> 00:45:29,000
+They're accelerating.
+
+783
+00:45:29,000 --> 00:45:40,000
+So, it's not a surprise that to stay out of the black hole, somebody has to accelerate.
+
+784
+00:45:40,000 --> 00:45:42,000
+Are you accelerating now?
+
+785
+00:45:42,000 --> 00:45:43,000
+Yes.
+
+786
+00:45:43,000 --> 00:45:44,000
+Yep.
+
+787
+00:45:44,000 --> 00:45:49,000
+At least relative, you're accelerating relative to a freely falling frame.
+
+788
+00:45:49,000 --> 00:45:51,000
+If you stop the satellite, point.
+
+789
+00:45:51,000 --> 00:45:52,000
+Right.
+
+790
+00:45:52,000 --> 00:45:53,000
+Exactly.
+
+791
+00:45:53,000 --> 00:45:54,000
+All right.
+
+792
+00:45:54,000 --> 00:45:59,000
+To stay out of the black hole, it's true that Bob has to accelerate.
+
+793
+00:45:59,000 --> 00:46:01,000
+Maybe he has to have a rocket.
+
+794
+00:46:01,000 --> 00:46:07,000
+If I didn't have the floor here to support me, I would have to have a jet pack to keep from falling down, right?
+
+795
+00:46:07,000 --> 00:46:08,000
+Okay.
+
+796
+00:46:08,000 --> 00:46:11,000
+So, nothing terribly unusual.
+
+797
+00:46:11,000 --> 00:46:16,000
+The further away you get, the less intense the acceleration has to be.
+
+798
+00:46:16,000 --> 00:46:20,000
+But it is true that Bob has to accelerate to stay outside.
+
+799
+00:46:20,000 --> 00:46:22,000
+He lets go of Alice.
+
+800
+00:46:22,000 --> 00:46:26,000
+He lets go of Alice, and Alice falls into the black hole.
+
+801
+00:46:26,000 --> 00:46:28,000
+He's got the jet pack.
+
+802
+00:46:28,000 --> 00:46:32,000
+He lets go of her hand, and she falls in, let's say over here.
+
+803
+00:46:32,000 --> 00:46:37,000
+She doesn't accelerate, so she moves on a straight line.
+
+804
+00:46:37,000 --> 00:46:39,000
+So, there is an asymmetry.
+
+805
+00:46:39,000 --> 00:46:45,000
+There's a basic physical asymmetry that Bob has the jet pack on, Alice doesn't,
+
+806
+00:46:45,000 --> 00:46:49,000
+and Alice falls behind in the horizon over here.
+
+807
+00:46:49,000 --> 00:46:52,000
+She can continue to see Bob.
+
+808
+00:46:52,000 --> 00:46:54,000
+Nothing special happens.
+
+809
+00:46:54,000 --> 00:46:57,000
+Bob loses track of her, cannot see her.
+
+810
+00:46:57,000 --> 00:46:59,000
+So, let's see what Bob can see.
+
+811
+00:46:59,000 --> 00:47:00,000
+Here's Bob.
+
+812
+00:47:00,000 --> 00:47:03,000
+What Bob can see is light coming to him.
+
+813
+00:47:03,000 --> 00:47:07,000
+Light comes to him along these light cones.
+
+814
+00:47:07,000 --> 00:47:11,000
+So, when he's over here, he sees Alice over here.
+
+815
+00:47:11,000 --> 00:47:14,000
+Alice is waving to him over here.
+
+816
+00:47:14,000 --> 00:47:18,000
+You go a little bit further, he sees Alice over here.
+
+817
+00:47:19,000 --> 00:47:24,000
+Go a little bit further, he sees Alice over here.
+
+818
+00:47:24,000 --> 00:47:33,000
+What happens asymptotically as he looks back from his position at increasing omega?
+
+819
+00:47:33,000 --> 00:47:38,000
+His omega is getting larger and larger and larger, and he's looking back.
+
+820
+00:47:38,000 --> 00:47:41,000
+Does he ever see Alice fall through the black hole horizon?
+
+821
+00:47:41,000 --> 00:47:42,000
+No.
+
+822
+00:47:42,000 --> 00:47:48,000
+Ultimately, asymptotically, when Bob looks from the arbitrary future,
+
+823
+00:47:48,000 --> 00:47:53,000
+he simply sees Alice getting closer and closer and closer to the horizon,
+
+824
+00:47:53,000 --> 00:47:55,000
+but never crossing it.
+
+825
+00:47:55,000 --> 00:48:02,000
+So, from Bob's perspective, Alice does not cross the horizon.
+
+826
+00:48:02,000 --> 00:48:06,000
+She just gets closer and closer and closer to the horizon,
+
+827
+00:48:06,000 --> 00:48:09,000
+sort of getting pancaked onto it, if you like.
+
+828
+00:48:09,000 --> 00:48:12,000
+It's not just her nose that gets flattened to the horizon.
+
+829
+00:48:12,000 --> 00:48:14,000
+The back of her head does, too.
+
+830
+00:48:14,000 --> 00:48:16,000
+Here's her nose.
+
+831
+00:48:16,000 --> 00:48:17,000
+Here's the back of her head.
+
+832
+00:48:17,000 --> 00:48:18,000
+Here's the back of her head.
+
+833
+00:48:18,000 --> 00:48:19,000
+Here's the back of her head.
+
+834
+00:48:19,000 --> 00:48:21,000
+Following her in.
+
+835
+00:48:21,000 --> 00:48:28,000
+And they both, he looks back and he sees them both extremely close to the horizon.
+
+836
+00:48:28,000 --> 00:48:31,000
+So he sees asymptotically they get closer and closer,
+
+837
+00:48:31,000 --> 00:48:35,000
+but never quite falling through that horizon here.
+
+838
+00:48:35,000 --> 00:48:37,000
+What about Alice?
+
+839
+00:48:37,000 --> 00:48:41,000
+Does she say, does she find any obstruction at this point?
+
+840
+00:48:41,000 --> 00:48:42,000
+No.
+
+841
+00:48:42,000 --> 00:48:44,000
+No obstruction at all.
+
+842
+00:48:44,000 --> 00:48:46,000
+She just sails through happily.
+
+843
+00:48:46,000 --> 00:48:47,000
+Nothing happens to her.
+
+844
+00:48:48,000 --> 00:48:51,000
+So there's already just at this level,
+
+845
+00:48:51,000 --> 00:48:53,000
+not even from black holes,
+
+846
+00:48:53,000 --> 00:48:59,000
+just thinking about accelerated observers who stay outside of this trajectory,
+
+847
+00:48:59,000 --> 00:49:01,000
+outside of this light cone here,
+
+848
+00:49:01,000 --> 00:49:03,000
+there's already a bit of a tension.
+
+849
+00:49:03,000 --> 00:49:11,000
+An observer who moves on a trajectory like this on a hyperbola
+
+850
+00:49:11,000 --> 00:49:16,000
+has a set of observations that include among them,
+
+851
+00:49:16,000 --> 00:49:20,000
+that Alice falls toward the horizon,
+
+852
+00:49:20,000 --> 00:49:23,000
+but never sees her go through the horizon.
+
+853
+00:49:23,000 --> 00:49:24,000
+Yes?
+
+854
+00:49:24,000 --> 00:49:27,000
+Eventually he'll see her at one Planck length.
+
+855
+00:49:27,000 --> 00:49:28,000
+Indeed.
+
+856
+00:49:28,000 --> 00:49:29,000
+And what happens after that?
+
+857
+00:49:29,000 --> 00:49:31,000
+Well, then we have to worry about quantum mechanics.
+
+858
+00:49:31,000 --> 00:49:33,000
+Remember, Planck length has H bar in it.
+
+859
+00:49:33,000 --> 00:49:38,000
+And we cannot answer that question without some quantum mechanics.
+
+860
+00:49:38,000 --> 00:49:42,000
+Now, we've already done a little bit of quantum mechanics about black holes.
+
+861
+00:49:42,000 --> 00:49:44,000
+They're very elementary.
+
+862
+00:49:44,000 --> 00:49:50,000
+We derived the entropy and some other things about the black hole
+
+863
+00:49:50,000 --> 00:49:55,000
+by saying we fill it up with photons.
+
+864
+00:49:55,000 --> 00:49:59,000
+If you remember what we did, there was an H in the formula.
+
+865
+00:49:59,000 --> 00:50:03,000
+So we've already started to think about the quantum mechanics of black holes,
+
+866
+00:50:03,000 --> 00:50:06,000
+but from a different perspective.
+
+867
+00:50:06,000 --> 00:50:10,000
+If you look at rho as a function of R,
+
+868
+00:50:10,000 --> 00:50:12,000
+take a big R and R gets smaller,
+
+869
+00:50:12,000 --> 00:50:18,000
+it'll go along the x horizon until it hits that crossing point
+
+870
+00:50:18,000 --> 00:50:21,000
+when R equals the square root of the square root of the square root.
+
+871
+00:50:21,000 --> 00:50:23,000
+Let's draw the difference here.
+
+872
+00:50:23,000 --> 00:50:26,000
+Let's draw first R equals, little r, little r here equals one.
+
+873
+00:50:26,000 --> 00:50:28,000
+Here's R equals one.
+
+874
+00:50:28,000 --> 00:50:30,000
+That could be one kilometer.
+
+875
+00:50:30,000 --> 00:50:32,000
+Everywhere's along there.
+
+876
+00:50:32,000 --> 00:50:36,000
+Now let's draw, sorry, this is big R, little r, excuse me,
+
+877
+00:50:36,000 --> 00:50:40,000
+little r, one kilometer from the horizon.
+
+878
+00:50:40,000 --> 00:50:42,000
+So R is 1.
+
+879
+00:50:42,000 --> 00:50:44,000
+It's bigger than 2mg.
+
+880
+00:50:44,000 --> 00:50:46,000
+2mg plus a kilometer.
+
+881
+00:50:46,000 --> 00:50:48,000
+2mg plus a kilometer.
+
+882
+00:50:48,000 --> 00:50:53,000
+Here's 2mg plus half a kilometer.
+
+883
+00:50:53,000 --> 00:50:57,000
+Here's 2mg plus a quarter of a kilometer.
+
+884
+00:50:57,000 --> 00:51:02,000
+Here's 2mg plus an eighth of a kilometer.
+
+885
+00:51:02,000 --> 00:51:06,000
+Right on here.
+
+886
+00:51:06,000 --> 00:51:09,000
+Oh, then it's in here somewheres, but we don't want it to go there yet.
+
+887
+00:51:09,000 --> 00:51:11,000
+For the moment, we don't want to go there.
+
+888
+00:51:12,000 --> 00:51:17,000
+The integral, it basically takes the right angle at the crossing point.
+
+889
+00:51:17,000 --> 00:51:18,000
+Yeah, that's right.
+
+890
+00:51:18,000 --> 00:51:23,000
+Does that mean it's not, you can't take a derivative at the right angles?
+
+891
+00:51:23,000 --> 00:51:26,000
+Well, something singular happens at that point, but it's not,
+
+892
+00:51:26,000 --> 00:51:30,000
+the main thing is it's not a physical phenomenon that takes place.
+
+893
+00:51:30,000 --> 00:51:32,000
+It's a change of coordinates.
+
+894
+00:51:32,000 --> 00:51:35,000
+It's a funny glitch in the coordinates, and we'll come to it.
+
+895
+00:51:35,000 --> 00:51:39,000
+We'll talk about what's behind here and how you think about it in coordinates,
+
+896
+00:51:39,000 --> 00:51:41,000
+but for the time being,
+
+897
+00:51:41,000 --> 00:51:45,000
+we have everything we want just by drawing these pictures.
+
+898
+00:51:45,000 --> 00:51:50,000
+Is omega a proper time in the accelerated reference?
+
+899
+00:51:50,000 --> 00:51:52,000
+Almost.
+
+900
+00:51:52,000 --> 00:51:54,000
+Almost.
+
+901
+00:51:54,000 --> 00:51:58,000
+What is a proper time is rho times omega.
+
+902
+00:51:58,000 --> 00:52:02,000
+Okay, remember the metric for, where is it?
+
+903
+00:52:02,000 --> 00:52:08,000
+The metric for omega is rho squared d omega squared, right?
+
+904
+00:52:08,000 --> 00:52:11,000
+So that means rho along one of these trajectories.
+
+905
+00:52:11,000 --> 00:52:13,000
+Fixed rho.
+
+906
+00:52:13,000 --> 00:52:18,000
+For fixed rho, rho times d omega is proper time along there.
+
+907
+00:52:18,000 --> 00:52:20,000
+Okay.
+
+908
+00:52:20,000 --> 00:52:24,000
+So it's almost, it's proper time but with the rho scaled out.
+
+909
+00:52:24,000 --> 00:52:28,000
+It's the same thing as talking about circles.
+
+910
+00:52:28,000 --> 00:52:31,000
+Is angular proper distance along a circle?
+
+911
+00:52:31,000 --> 00:52:32,000
+Well, not quite.
+
+912
+00:52:32,000 --> 00:52:39,000
+It's proper distance except you have to multiply by the radius to make the proper distance.
+
+913
+00:52:39,000 --> 00:52:40,000
+Okay.
+
+914
+00:52:41,000 --> 00:52:46,000
+All right, that's the properties of a black hole horizon,
+
+915
+00:52:46,000 --> 00:52:51,000
+and the bottom line is that the properties of a black hole horizon are boring.
+
+916
+00:52:51,000 --> 00:52:56,000
+Well, they're boring to somebody who falls through,
+
+917
+00:52:56,000 --> 00:53:00,000
+but they're kind of interesting to somebody who stays outside.
+
+918
+00:53:00,000 --> 00:53:04,000
+Somebody who stays outside sees their friend do some weird things.
+
+919
+00:53:04,000 --> 00:53:08,000
+Sees them slow down, sees them get flattened against this horizon,
+
+920
+00:53:08,000 --> 00:53:10,000
+and so there's a kind of tension there.
+
+921
+00:53:10,000 --> 00:53:13,000
+There's a kind of tension there, but so far no paradox,
+
+922
+00:53:13,000 --> 00:53:18,000
+just a tension in the description of things.
+
+923
+00:53:18,000 --> 00:53:20,000
+You know, at this point you could ask,
+
+924
+00:53:20,000 --> 00:53:24,000
+well, does Alice really fall through or doesn't she really fall through?
+
+925
+00:53:24,000 --> 00:53:26,000
+Well, what's the answer?
+
+926
+00:53:26,000 --> 00:53:28,000
+The answer is it's a question of point of view.
+
+927
+00:53:28,000 --> 00:53:31,000
+I mean, from Bob's point of view, no, she doesn't.
+
+928
+00:53:31,000 --> 00:53:32,000
+From Alice's point of view, she doesn't.
+
+929
+00:53:32,000 --> 00:53:33,000
+I have a suggestion.
+
+930
+00:53:33,000 --> 00:53:35,000
+Yeah.
+
+931
+00:53:35,000 --> 00:53:39,000
+The answer is that Bob can only see finitely far into Alice's future.
+
+932
+00:53:40,000 --> 00:53:41,000
+Why is that?
+
+933
+00:53:41,000 --> 00:53:43,000
+Oh, finitely far into Alice's future.
+
+934
+00:53:43,000 --> 00:53:44,000
+That's correct.
+
+935
+00:53:44,000 --> 00:53:46,000
+That's what Alice would say.
+
+936
+00:53:46,000 --> 00:53:49,000
+Bob says, I see her forever and ever.
+
+937
+00:53:49,000 --> 00:53:53,000
+She just gets slower and slower and duller and duller.
+
+938
+00:53:53,000 --> 00:53:57,000
+No, but I mean, we make this unconscious adjustment to see our feet
+
+939
+00:53:57,000 --> 00:54:00,000
+as in being a common part of their eyes,
+
+940
+00:54:00,000 --> 00:54:04,000
+so we have the same unconscious, you know, kind of...
+
+941
+00:54:04,000 --> 00:54:06,000
+To get unconscious, the question of...
+
+942
+00:54:06,000 --> 00:54:09,000
+Physics is a question of measurement and observation.
+
+943
+00:54:09,000 --> 00:54:10,000
+Right.
+
+944
+00:54:10,000 --> 00:54:18,000
+So Bob's future doesn't have sight lines into Alice's entire future from her point of view.
+
+945
+00:54:18,000 --> 00:54:28,000
+Bob will simply say, what I see is Alice approaching the horizon asymptotically and never passing it.
+
+946
+00:54:28,000 --> 00:54:30,000
+That's what he'll say.
+
+947
+00:54:30,000 --> 00:54:33,000
+You can tell him a story, well, Alice really fell through, blah, blah, blah.
+
+948
+00:54:33,000 --> 00:54:34,000
+He will still...
+
+949
+00:54:34,000 --> 00:54:36,000
+He won't see her age.
+
+950
+00:54:36,000 --> 00:54:38,000
+He won't see her age.
+
+951
+00:54:38,000 --> 00:54:40,000
+He won't see her age.
+
+952
+00:54:40,000 --> 00:54:41,000
+She...
+
+953
+00:54:41,000 --> 00:54:42,000
+No, she just...
+
+954
+00:54:42,000 --> 00:54:44,000
+Everything slows down.
+
+955
+00:54:44,000 --> 00:54:47,000
+Everything slows down and she...
+
+956
+00:54:48,000 --> 00:54:53,000
+But it's not a profitable question to ask, does this or that really happen?
+
+957
+00:54:53,000 --> 00:54:59,000
+It is a profitable question to ask what observations and what measurements
+
+958
+00:54:59,000 --> 00:55:06,000
+and correlation of data Bob will do as a physicist or as whatever he is,
+
+959
+00:55:06,000 --> 00:55:07,000
+and we could ask, what is he doing?
+
+960
+00:55:07,000 --> 00:55:13,000
+And we could ask what kind of things Alice detects and observes.
+
+961
+00:55:13,000 --> 00:55:15,000
+And that's all we can do.
+
+962
+00:55:15,000 --> 00:55:20,000
+Alice sees Bob like zipping away and accelerating.
+
+963
+00:55:20,000 --> 00:55:21,000
+She's sitting there.
+
+964
+00:55:21,000 --> 00:55:22,000
+Yeah, that's right.
+
+965
+00:55:22,000 --> 00:55:23,000
+Alice sees Bob.
+
+966
+00:55:23,000 --> 00:55:24,000
+Alice sees Bob's way.
+
+967
+00:55:24,000 --> 00:55:25,000
+Right.
+
+968
+00:55:25,000 --> 00:55:34,000
+Could you say the part again about that this isn't specific to black holes, which is any horizon?
+
+969
+00:55:34,000 --> 00:55:35,000
+I think you said something that this isn't specific to black holes, this phenomenon.
+
+970
+00:55:35,000 --> 00:55:40,000
+Well, right.
+
+971
+00:55:40,000 --> 00:55:45,000
+This particular phenomenon would be just for a uniformly accelerated observer.
+
+972
+00:55:45,000 --> 00:55:54,000
+If we had an observer riding on a rocket that had enough fuel to allow it to accelerate indefinitely,
+
+973
+00:55:54,000 --> 00:56:03,000
+moving away, then that observer on that rocket would say, for all practical purposes,
+
+974
+00:56:03,000 --> 00:56:08,000
+there was an end to the world, could not see beyond it, and could see nothing fall through it.
+
+975
+00:56:08,000 --> 00:56:10,000
+So he would say there is a horizon.
+
+976
+00:56:10,000 --> 00:56:17,000
+It's called an acceleration horizon, but it's not physically different than the black hole horizon.
+
+977
+00:56:17,000 --> 00:56:21,000
+All right.
+
+978
+00:56:21,000 --> 00:56:23,000
+Remember what Einstein taught us.
+
+979
+00:56:23,000 --> 00:56:26,000
+He said if you want to understand gravity, first understand acceleration.
+
+980
+00:56:26,000 --> 00:56:31,000
+If you want to understand how phenomena happen in a gravitational field,
+
+981
+00:56:31,000 --> 00:56:33,000
+first understand how they happen in the atmosphere.
+
+982
+00:56:33,000 --> 00:56:38,000
+And then, if you want to understand how things happen in a uniformly accelerated frame of reference,
+
+983
+00:56:38,000 --> 00:56:43,000
+well, what we've learned is that in a uniformly accelerated frame of reference,
+
+984
+00:56:43,000 --> 00:56:49,000
+and that's what this is, the sequence of lines here, there is an acceleration horizon.
+
+985
+00:56:49,000 --> 00:56:57,000
+So Einstein could have invented the idea of a horizon before there was any notion of a black hole.
+
+986
+00:56:57,000 --> 00:57:01,000
+And then if he was smart enough, if he was as smart as Einstein,
+
+987
+00:57:01,000 --> 00:57:08,000
+well, this probably means that there's some gravitational context in which these horizons show up.
+
+988
+00:57:08,000 --> 00:57:16,000
+Einstein, incidentally, did not believe in black holes.
+
+989
+00:57:16,000 --> 00:57:20,000
+He thought they violated something.
+
+990
+00:57:20,000 --> 00:57:29,000
+Okay. Now I want to turn back,
+
+991
+00:57:29,000 --> 00:57:31,000
+before we do a little bit of a talk,
+
+992
+00:57:31,000 --> 00:57:32,000
+we'll take a break,
+
+993
+00:57:32,000 --> 00:57:36,000
+but I want to turn back to the discussion that we started last time
+
+994
+00:57:36,000 --> 00:57:41,000
+about temperature, entropy a little bit,
+
+995
+00:57:41,000 --> 00:57:45,000
+and the thermodynamic properties of black holes that they have
+
+996
+00:57:45,000 --> 00:57:47,000
+because they do have a temperature.
+
+997
+00:57:47,000 --> 00:57:59,000
+And so we'll do that after a seven-minute break.
+
+998
+00:57:59,000 --> 00:58:00,000
+Let's see.
+
+999
+00:58:00,000 --> 00:58:01,000
+I'm going to go away with one blackboard.
+
+1000
+00:58:01,000 --> 00:58:03,000
+We'll see.
+
+1001
+00:58:03,000 --> 00:58:07,000
+Let me put on my thermodynamic hat now.
+
+1002
+00:58:07,000 --> 00:58:12,000
+Heat.
+
+1003
+00:58:12,000 --> 00:58:17,000
+What we did last time is we imagined building up the black hole
+
+1004
+00:58:17,000 --> 00:58:19,000
+by dropping little drops in,
+
+1005
+00:58:19,000 --> 00:58:22,000
+the same way we would drop drops into the bathtub,
+
+1006
+00:58:22,000 --> 00:58:24,000
+and fill it up,
+
+1007
+00:58:24,000 --> 00:58:28,000
+and try to see how many drops it takes to fill it to a certain level.
+
+1008
+00:58:28,000 --> 00:58:31,000
+In the black hole case, it was how many bits,
+
+1009
+00:58:31,000 --> 00:58:35,000
+or how many photons, each carrying one bit of information,
+
+1010
+00:58:35,000 --> 00:58:40,000
+do we have to put in to create a black hole of a given size.
+
+1011
+00:58:40,000 --> 00:58:44,000
+And what we discovered is that each bit that we drop in
+
+1012
+00:58:44,000 --> 00:58:49,000
+increases the area of the horizon by one Planck length.
+
+1013
+00:58:49,000 --> 00:58:54,000
+When I say one, take one with a grain of salt.
+
+1014
+00:58:54,000 --> 00:58:56,000
+We didn't do the real calculation,
+
+1015
+00:58:56,000 --> 00:58:59,000
+which gives a factor of a quarter.
+
+1016
+00:58:59,000 --> 00:59:00,000
+Why a factor of a quarter?
+
+1017
+00:59:00,000 --> 00:59:02,000
+Well, what it probably means,
+
+1018
+00:59:02,000 --> 00:59:04,000
+or what it does mean,
+
+1019
+00:59:04,000 --> 00:59:08,000
+is that whoever invented the idea of the Planck length,
+
+1020
+00:59:08,000 --> 00:59:10,000
+and it was Planck,
+
+1021
+00:59:10,000 --> 00:59:12,000
+simply got it wrong by a factor of four.
+
+1022
+00:59:12,000 --> 00:59:15,000
+He should have defined it to be four times as big,
+
+1023
+00:59:15,000 --> 00:59:16,000
+or one fourth, I forget,
+
+1024
+00:59:16,000 --> 00:59:22,000
+but then we wouldn't have this nuisance four hanging around.
+
+1025
+00:59:22,000 --> 00:59:24,000
+After all, it was purely a historical thing,
+
+1026
+00:59:24,000 --> 00:59:26,000
+and it was a historical thing,
+
+1027
+00:59:26,000 --> 00:59:31,000
+and Planck knew nothing whatever about black holes, horizons, information,
+
+1028
+00:59:31,000 --> 00:59:33,000
+black holes, and so forth.
+
+1029
+00:59:33,000 --> 00:59:35,000
+So he just did some dimensional analysis and said,
+
+1030
+00:59:35,000 --> 00:59:37,000
+here's a length.
+
+1031
+00:59:37,000 --> 00:59:39,000
+If he would have defined it as four times or two times different,
+
+1032
+00:59:39,000 --> 00:59:42,000
+then the four wouldn't have been there.
+
+1033
+00:59:42,000 --> 00:59:43,000
+Okay.
+
+1034
+00:59:47,000 --> 00:59:52,000
+One of the things we did was to calculate the change in energy
+
+1035
+00:59:52,000 --> 00:59:54,000
+if we drop in one bit.
+
+1036
+00:59:54,000 --> 00:59:56,000
+Again, remember what a bit means?
+
+1037
+00:59:56,000 --> 00:59:59,000
+A bit means a photon whose wavelength is comparable
+
+1038
+00:59:59,000 --> 01:00:02,000
+to the hole size of a black hole.
+
+1039
+01:00:02,000 --> 01:00:05,000
+How much does the energy change?
+
+1040
+01:00:05,000 --> 01:00:07,000
+Now, I also told you last time
+
+1041
+01:00:07,000 --> 01:00:10,000
+that the definition of temperature,
+
+1042
+01:00:10,000 --> 01:00:12,000
+let's just go back a step,
+
+1043
+01:00:12,000 --> 01:00:14,000
+temperature seems like a naive,
+
+1044
+01:00:14,000 --> 01:00:19,000
+naive meaning to say an easily understood concept.
+
+1045
+01:00:22,000 --> 01:00:25,000
+You feel it with your fingers on the table here.
+
+1046
+01:00:25,000 --> 01:00:28,000
+You measure it with thermometers.
+
+1047
+01:00:28,000 --> 01:00:30,000
+We all know what it means.
+
+1048
+01:00:30,000 --> 01:00:32,000
+But in fact, it's an extremely subtle
+
+1049
+01:00:32,000 --> 01:00:35,000
+and somewhat derived concept.
+
+1050
+01:00:36,000 --> 01:00:40,000
+Entropy is an extremely confusing thing.
+
+1051
+01:00:40,000 --> 01:00:43,000
+When people go to learn thermodynamics for the first time,
+
+1052
+01:00:43,000 --> 01:00:44,000
+entropy is thrown at them.
+
+1053
+01:00:44,000 --> 01:00:46,000
+They say, what the hell is that?
+
+1054
+01:00:46,000 --> 01:00:49,000
+In fact, entropy is very, very basic,
+
+1055
+01:00:49,000 --> 01:00:51,000
+and in some sense, simple.
+
+1056
+01:00:52,000 --> 01:00:54,000
+Energy and entropy are really the basis
+
+1057
+01:00:54,000 --> 01:00:58,000
+for thermodynamics or for statistical mechanics.
+
+1058
+01:00:58,000 --> 01:01:00,000
+Temperature is a derived concept.
+
+1059
+01:01:00,000 --> 01:01:02,000
+What is entropy?
+
+1060
+01:01:02,000 --> 01:01:04,000
+Well, whatever it is, it comes in bits.
+
+1061
+01:01:04,000 --> 01:01:05,000
+It has to do with information.
+
+1062
+01:01:05,000 --> 01:01:08,000
+It has to do with yes-no questions.
+
+1063
+01:01:08,000 --> 01:01:13,000
+Energy, let's suppose we all knew what energy was,
+
+1064
+01:01:13,000 --> 01:01:18,000
+which I suspect most of us have some idea.
+
+1065
+01:01:18,000 --> 01:01:21,000
+So we have entropy and energy.
+
+1066
+01:01:21,000 --> 01:01:23,000
+The definition of temperature
+
+1067
+01:01:23,000 --> 01:01:29,000
+is simply the energy that's liberated,
+
+1068
+01:01:29,000 --> 01:01:32,000
+the energy change in a system
+
+1069
+01:01:32,000 --> 01:01:35,000
+when you add one bit of information to it,
+
+1070
+01:01:35,000 --> 01:01:38,000
+the minimum change of energy when you add one bit.
+
+1071
+01:01:38,000 --> 01:01:40,000
+I say minimum.
+
+1072
+01:01:40,000 --> 01:01:44,000
+The nice analog is the computer.
+
+1073
+01:01:44,000 --> 01:01:47,000
+You want to erase a bit of information from your computer.
+
+1074
+01:01:47,000 --> 01:01:49,000
+That bit of information has to go someplace.
+
+1075
+01:01:49,000 --> 01:01:50,000
+It can't disappear.
+
+1076
+01:01:50,000 --> 01:01:52,000
+It goes out into the atmosphere,
+
+1077
+01:01:53,000 --> 01:01:58,000
+and it doesn't necessarily add a certain amount of energy to the atmosphere.
+
+1078
+01:01:58,000 --> 01:02:02,000
+Of course, if you are sloppy in erasing the bit,
+
+1079
+01:02:02,000 --> 01:02:06,000
+you know, you do it with a sledgehammer,
+
+1080
+01:02:06,000 --> 01:02:10,000
+you can add a lot more energy to the atmosphere than that.
+
+1081
+01:02:10,000 --> 01:02:12,000
+But if you're very careful,
+
+1082
+01:02:12,000 --> 01:02:15,000
+of course, you'll also be adding more bits of information,
+
+1083
+01:02:15,000 --> 01:02:19,000
+but if you're very careful to just erase that bit in a minimal way,
+
+1084
+01:02:19,000 --> 01:02:22,000
+then the minimum energy that you have to add
+
+1085
+01:02:22,000 --> 01:02:26,000
+to the atmosphere in that case is called the temperature.
+
+1086
+01:02:26,000 --> 01:02:33,000
+The energy necessary to change the entropy by one unit.
+
+1087
+01:02:33,000 --> 01:02:36,000
+Okay, so you keep that definition in the back of your head
+
+1088
+01:02:36,000 --> 01:02:38,000
+of what temperature is.
+
+1089
+01:02:38,000 --> 01:02:40,000
+It's energy needed to change,
+
+1090
+01:02:40,000 --> 01:02:45,000
+or energy liberated when you add one bit to a system.
+
+1091
+01:02:45,000 --> 01:02:47,000
+Okay, let's go back now,
+
+1092
+01:02:47,000 --> 01:02:50,000
+and say here we have our black hole.
+
+1093
+01:02:50,000 --> 01:02:52,000
+We're going to throw in
+
+1094
+01:02:52,000 --> 01:02:56,000
+a photon whose wavelength is comparable to the size of the black hole.
+
+1095
+01:02:58,000 --> 01:03:01,000
+And let's calculate the change in energy.
+
+1096
+01:03:01,000 --> 01:03:06,000
+Well, all we have to know is how much energy one photon of a wavelength,
+
+1097
+01:03:06,000 --> 01:03:07,000
+here's the wavelength,
+
+1098
+01:03:07,000 --> 01:03:09,000
+the wavelength is comparable to the Schwarzschild radius,
+
+1099
+01:03:09,000 --> 01:03:12,000
+let's call it R.
+
+1100
+01:03:12,000 --> 01:03:17,000
+It's equal to twice the mass times G.
+
+1101
+01:03:17,000 --> 01:03:19,000
+That's also the wavelength of the photon.
+
+1102
+01:03:19,000 --> 01:03:21,000
+Looks to me like my wavelength is a little bit long.
+
+1103
+01:03:21,000 --> 01:03:23,000
+Let's shorten it up a little bit.
+
+1104
+01:03:26,000 --> 01:03:28,000
+Something like that.
+
+1105
+01:03:28,000 --> 01:03:34,000
+Alright, so what's the energy of a photon of wavelength lambda?
+
+1106
+01:03:34,000 --> 01:03:37,000
+Lambda is the usual definition of the wavelength,
+
+1107
+01:03:37,000 --> 01:03:39,000
+usual symbol for it.
+
+1108
+01:03:39,000 --> 01:03:41,000
+What's the energy of it?
+
+1109
+01:03:41,000 --> 01:03:46,000
+The energy of it is Planck's constant divided by lambda,
+
+1110
+01:03:46,000 --> 01:03:48,000
+and now there's a speed of light,
+
+1111
+01:03:48,000 --> 01:03:49,000
+and the speed of light is in the numerator.
+
+1112
+01:03:49,000 --> 01:03:51,000
+For the moment, I'm going to keep the constant.
+
+1113
+01:03:51,000 --> 01:03:54,000
+Later on today, tonight, we're going to throw away the constants,
+
+1114
+01:03:54,000 --> 01:03:56,000
+or not throw them away,
+
+1115
+01:03:56,000 --> 01:03:59,000
+but we'll work in units in which they're equal to one.
+
+1116
+01:03:59,000 --> 01:04:01,000
+I'll just...
+
+1117
+01:04:01,000 --> 01:04:04,000
+I get bored carrying them around,
+
+1118
+01:04:04,000 --> 01:04:06,000
+but let's keep them for the time being.
+
+1119
+01:04:06,000 --> 01:04:09,000
+Alright, H times C divided by lambda.
+
+1120
+01:04:09,000 --> 01:04:11,000
+Let's just check if it makes sense.
+
+1121
+01:04:11,000 --> 01:04:16,000
+The energy of a photon when Planck's constant is,
+
+1122
+01:04:16,000 --> 01:04:19,000
+goes to zero, gets smaller and smaller.
+
+1123
+01:04:19,000 --> 01:04:20,000
+That makes sense.
+
+1124
+01:04:21,000 --> 01:04:24,000
+A single photon has a tiny bit of energy.
+
+1125
+01:04:24,000 --> 01:04:26,000
+Why does it have a tiny bit of energy?
+
+1126
+01:04:26,000 --> 01:04:28,000
+Because Planck's constant is so small.
+
+1127
+01:04:28,000 --> 01:04:32,000
+It's also true that as the wavelength gets long,
+
+1128
+01:04:32,000 --> 01:04:34,000
+the energy of a photon goes down.
+
+1129
+01:04:34,000 --> 01:04:37,000
+Long wavelength photons have low energy,
+
+1130
+01:04:37,000 --> 01:04:40,000
+short wavelength photons have high energy.
+
+1131
+01:04:40,000 --> 01:04:43,000
+And the speed of light, you can just check that it's really got to be there.
+
+1132
+01:04:43,000 --> 01:04:46,000
+Okay, that's the energy that you add
+
+1133
+01:04:46,000 --> 01:04:50,000
+when you add one photon which carries one bit.
+
+1134
+01:04:51,000 --> 01:04:56,000
+Well, the energy to add one bit,
+
+1135
+01:04:56,000 --> 01:04:57,000
+that's the temperature.
+
+1136
+01:04:57,000 --> 01:05:00,000
+So this must be the temperature of the black hole.
+
+1137
+01:05:00,000 --> 01:05:02,000
+And it is.
+
+1138
+01:05:02,000 --> 01:05:04,000
+When I say it's the temperature,
+
+1139
+01:05:04,000 --> 01:05:07,000
+I mean within a factor of maybe there's twos and pies,
+
+1140
+01:05:07,000 --> 01:05:13,000
+because we're not keeping track of detailed numerical constants.
+
+1141
+01:05:13,000 --> 01:05:18,000
+I'll tell you the numerical constants later if you want.
+
+1142
+01:05:18,000 --> 01:05:20,000
+The temperature is
+
+1143
+01:05:20,000 --> 01:05:23,000
+hc over lambda.
+
+1144
+01:05:23,000 --> 01:05:25,000
+Oh, since I'm keeping track, for the moment,
+
+1145
+01:05:25,000 --> 01:05:27,000
+for the moment since I'm keeping track of constants,
+
+1146
+01:05:27,000 --> 01:05:29,000
+I've left something out of here.
+
+1147
+01:05:29,000 --> 01:05:31,000
+c squared.
+
+1148
+01:05:31,000 --> 01:05:34,000
+Speed of light squared, yeah.
+
+1149
+01:05:34,000 --> 01:05:36,000
+Alright, so that's the temperature.
+
+1150
+01:05:36,000 --> 01:05:40,000
+But remember that lambda is supposed to be chosen
+
+1151
+01:05:40,000 --> 01:05:42,000
+equal to the size of the black hole.
+
+1152
+01:05:42,000 --> 01:05:44,000
+So let's put that in.
+
+1153
+01:05:44,000 --> 01:05:48,000
+Either r or hc over lambda.
+
+1154
+01:05:48,000 --> 01:05:55,000
+hc over twice mg
+
+1155
+01:05:55,000 --> 01:05:58,000
+and another c squared in the numerator.
+
+1156
+01:05:58,000 --> 01:06:02,000
+So Planck's constant times c cubed.
+
+1157
+01:06:02,000 --> 01:06:04,000
+And we can't trust this factor of two.
+
+1158
+01:06:04,000 --> 01:06:06,000
+The factor of two is not trustworthy.
+
+1159
+01:06:06,000 --> 01:06:08,000
+I'll tell you what the right answer is in a minute.
+
+1160
+01:06:08,000 --> 01:06:12,000
+hc cubed divided by the mass times g.
+
+1161
+01:06:12,000 --> 01:06:14,000
+Notice one curious thing.
+
+1162
+01:06:14,000 --> 01:06:17,000
+That as the mass gets bigger and bigger,
+
+1163
+01:06:18,000 --> 01:06:21,000
+it's not going to be equal to the mass times g.
+
+1164
+01:06:21,000 --> 01:06:23,000
+Oh, several things.
+
+1165
+01:06:23,000 --> 01:06:25,000
+First thing.
+
+1166
+01:06:25,000 --> 01:06:27,000
+h appears there.
+
+1167
+01:06:27,000 --> 01:06:30,000
+That means that the temperature of the black hole
+
+1168
+01:06:30,000 --> 01:06:32,000
+is a quantum effect.
+
+1169
+01:06:32,000 --> 01:06:37,000
+It would be zero if h bar of Planck's constant was zero.
+
+1170
+01:06:37,000 --> 01:06:40,000
+So it's a thing which only happens
+
+1171
+01:06:40,000 --> 01:06:43,000
+because Planck's constant is not zero.
+
+1172
+01:06:43,000 --> 01:06:45,000
+It's another way of saying
+
+1173
+01:06:45,000 --> 01:06:47,000
+it's there because of quantum mechanics.
+
+1174
+01:06:47,000 --> 01:06:52,000
+c cubed, well, it's there for dimensional reasons.
+
+1175
+01:06:52,000 --> 01:06:55,000
+The mass is in the denominator.
+
+1176
+01:06:55,000 --> 01:06:57,000
+That's interesting.
+
+1177
+01:06:57,000 --> 01:06:59,000
+The bigger the mass of the black hole,
+
+1178
+01:06:59,000 --> 01:07:01,000
+the colder it is.
+
+1179
+01:07:01,000 --> 01:07:04,000
+Now that's a little bit odd for the following reason.
+
+1180
+01:07:04,000 --> 01:07:06,000
+Mass is energy.
+
+1181
+01:07:06,000 --> 01:07:08,000
+E equals mc squared.
+
+1182
+01:07:08,000 --> 01:07:11,000
+So energy and mass are the same thing.
+
+1183
+01:07:11,000 --> 01:07:12,000
+You're used to the idea
+
+1184
+01:07:12,000 --> 01:07:16,000
+when you add energy to something, it gets hotter.
+
+1185
+01:07:16,000 --> 01:07:21,000
+A black hole gets cooler when you add energy to it.
+
+1186
+01:07:21,000 --> 01:07:24,000
+The bigger its mass, the cooler it is.
+
+1187
+01:07:24,000 --> 01:07:26,000
+That's got an odd consequence.
+
+1188
+01:07:26,000 --> 01:07:28,000
+We'll come to that odd consequence in a moment,
+
+1189
+01:07:28,000 --> 01:07:30,000
+but let's just keep track of it.
+
+1190
+01:07:30,000 --> 01:07:32,000
+This is the temperature of the black hole.
+
+1191
+01:07:32,000 --> 01:07:35,000
+I'll give you the right formula now.
+
+1192
+01:07:35,000 --> 01:07:37,000
+If I write it in terms of h bar,
+
+1193
+01:07:37,000 --> 01:07:41,000
+then I know the answer, and it's 8 pi.
+
+1194
+01:07:41,000 --> 01:07:44,000
+That's the actual correct answer.
+
+1195
+01:07:44,000 --> 01:07:46,000
+h bar times c cubed,
+
+1196
+01:07:46,000 --> 01:07:50,000
+divided by 8 pi times mass times Newton's constant.
+
+1197
+01:07:52,000 --> 01:07:54,000
+Okay, first question.
+
+1198
+01:07:54,000 --> 01:07:58,000
+How hot is a real solar mass black hole?
+
+1199
+01:07:58,000 --> 01:08:01,000
+So for that we would stick in a mass,
+
+1200
+01:08:01,000 --> 01:08:04,000
+what's the mass of a solar mass?
+
+1201
+01:08:04,000 --> 01:08:07,000
+10 to the 30th kilograms or something.
+
+1202
+01:08:07,000 --> 01:08:09,000
+There's a big number downstairs.
+
+1203
+01:08:09,000 --> 01:08:11,000
+g is a small number.
+
+1204
+01:08:11,000 --> 01:08:14,000
+c cubed is huge, and h bar is teeny, teeny, teeny.
+
+1205
+01:08:14,000 --> 01:08:16,000
+So some people might say,
+
+1206
+01:08:16,000 --> 01:08:20,000
+well, there's some competition of big numbers and small numbers.
+
+1207
+01:08:20,000 --> 01:08:24,000
+But the final answer is that this is a small number.
+
+1208
+01:08:24,000 --> 01:08:26,000
+But not that small.
+
+1209
+01:08:26,000 --> 01:08:28,000
+Well, it's small.
+
+1210
+01:08:28,000 --> 01:08:30,000
+This is about, for a solar mass black hole,
+
+1211
+01:08:30,000 --> 01:08:33,000
+for a black hole of stellar mass,
+
+1212
+01:08:33,000 --> 01:08:38,000
+this is about 10 to the minus 8 Kelvin.
+
+1213
+01:08:38,000 --> 01:08:40,000
+So it's colder than anything.
+
+1214
+01:08:40,000 --> 01:08:44,000
+Let's see, is it colder than anything in the...
+
+1215
+01:08:44,000 --> 01:08:46,000
+People talk about getting down to nano-Kelvins
+
+1216
+01:08:46,000 --> 01:08:49,000
+for some reasons or other, so...
+
+1217
+01:08:49,000 --> 01:08:53,000
+Maybe things in laboratories are actually colder than this.
+
+1218
+01:08:53,000 --> 01:08:55,000
+But this is damn cold.
+
+1219
+01:08:55,000 --> 01:08:56,000
+Okay?
+
+1220
+01:08:56,000 --> 01:09:02,000
+It's so cold that it's much, much colder than empty space.
+
+1221
+01:09:02,000 --> 01:09:06,000
+Even in the remotest regions of the universe
+
+1222
+01:09:06,000 --> 01:09:10,000
+where they're far, far from any stars or anything else,
+
+1223
+01:09:10,000 --> 01:09:13,000
+we know that the temperature of empty space,
+
+1224
+01:09:13,000 --> 01:09:17,000
+to the extent that empty space, that space is empty,
+
+1225
+01:09:17,000 --> 01:09:21,000
+ordinary empty space, is about 3 degrees Kelvin.
+
+1226
+01:09:21,000 --> 01:09:24,000
+That's the microwave background.
+
+1227
+01:09:24,000 --> 01:09:26,000
+And so the black hole is...
+
+1228
+01:09:26,000 --> 01:09:32,000
+This black hole is colder than anything in empty space.
+
+1229
+01:09:32,000 --> 01:09:35,000
+That means even if you had such a black hole,
+
+1230
+01:09:35,000 --> 01:09:38,000
+which there was nothing else around to fall into it,
+
+1231
+01:09:38,000 --> 01:09:42,000
+even if you managed to create a black hole
+
+1232
+01:09:42,000 --> 01:09:46,000
+in otherwise completely empty space,
+
+1233
+01:09:46,000 --> 01:09:50,000
+the empty space around it would be hotter than it is.
+
+1234
+01:09:50,000 --> 01:09:55,000
+What happens when you take a cold object and put it in a hot bath?
+
+1235
+01:09:56,000 --> 01:10:03,000
+Heat flows from the warm region to the cold region.
+
+1236
+01:10:03,000 --> 01:10:07,000
+Another way of saying it is the black hole simply swallows up
+
+1237
+01:10:07,000 --> 01:10:09,000
+the microwave radiation.
+
+1238
+01:10:09,000 --> 01:10:11,000
+It just sucks it in.
+
+1239
+01:10:11,000 --> 01:10:14,000
+But you can also just think of it as the flow of heat
+
+1240
+01:10:14,000 --> 01:10:16,000
+from warm to cold.
+
+1241
+01:10:16,000 --> 01:10:19,000
+Okay, what happens now?
+
+1242
+01:10:19,000 --> 01:10:23,000
+What happens if I'm in outer space and I'm cold,
+
+1243
+01:10:23,000 --> 01:10:28,000
+but somebody brings a heater and warms me up?
+
+1244
+01:10:28,000 --> 01:10:31,000
+I get warmer, right, if I absorb some heat.
+
+1245
+01:10:31,000 --> 01:10:34,000
+Now let's think about what happens to the black hole.
+
+1246
+01:10:34,000 --> 01:10:38,000
+The black hole absorbs some heat from its surroundings.
+
+1247
+01:10:38,000 --> 01:10:39,000
+What happens to its mass if it absorbs some heat?
+
+1248
+01:10:39,000 --> 01:10:40,000
+It is absorbed.
+
+1249
+01:10:40,000 --> 01:10:42,000
+It increases.
+
+1250
+01:10:42,000 --> 01:10:46,000
+Its energy increases, but then what happens to its temperature?
+
+1251
+01:10:46,000 --> 01:10:47,000
+It goes down.
+
+1252
+01:10:47,000 --> 01:10:49,000
+It gets even colder.
+
+1253
+01:10:49,000 --> 01:10:50,000
+It gets even colder.
+
+1254
+01:10:50,000 --> 01:10:52,000
+What happens when it gets even colder?
+
+1255
+01:10:52,000 --> 01:10:57,000
+It even becomes more efficient at absorbing heat.
+
+1256
+01:10:57,000 --> 01:11:00,000
+But it absorbs heat and it gets colder.
+
+1257
+01:11:00,000 --> 01:11:01,000
+Catch 22.
+
+1258
+01:11:01,000 --> 01:11:04,000
+The more it absorbs heat, the colder it gets.
+
+1259
+01:11:04,000 --> 01:11:07,000
+But let's imagine that we had a black hole,
+
+1260
+01:11:07,000 --> 01:11:08,000
+I don't know where it came from,
+
+1261
+01:11:08,000 --> 01:11:09,000
+which happens to be a little bit colder than it is.
+
+1262
+01:11:09,000 --> 01:11:16,000
+It happens to be a little bit warmer than the surroundings.
+
+1263
+01:11:16,000 --> 01:11:18,000
+Which way does the heat go?
+
+1264
+01:11:18,000 --> 01:11:22,000
+Heat goes from the black hole into the atmosphere.
+
+1265
+01:11:22,000 --> 01:11:25,000
+The black hole loses mass.
+
+1266
+01:11:25,000 --> 01:11:28,000
+What happens when it loses mass?
+
+1267
+01:11:28,000 --> 01:11:31,000
+It gets hotter.
+
+1268
+01:11:31,000 --> 01:11:34,000
+So it's a runaway situation.
+
+1269
+01:11:34,000 --> 01:11:37,000
+If a black hole is cooler than its environment,
+
+1270
+01:11:37,000 --> 01:11:40,000
+it will absorb energy and get colder.
+
+1271
+01:11:40,000 --> 01:11:43,000
+If the black hole is warmer than its environment,
+
+1272
+01:11:43,000 --> 01:11:46,000
+it will give off energy and get hotter.
+
+1273
+01:11:46,000 --> 01:11:48,000
+It will just run away.
+
+1274
+01:11:48,000 --> 01:11:52,000
+As it's running away, of course, and getting hotter,
+
+1275
+01:11:52,000 --> 01:11:54,000
+its mass is getting smaller and smaller.
+
+1276
+01:11:54,000 --> 01:11:56,000
+Sort of an explosive situation.
+
+1277
+01:11:56,000 --> 01:11:58,000
+Its mass gets smaller and smaller.
+
+1278
+01:11:58,000 --> 01:11:59,000
+It gets hotter and hotter.
+
+1279
+01:11:59,000 --> 01:12:02,000
+And eventually gets so hot that it just explodes.
+
+1280
+01:12:02,000 --> 01:12:06,000
+If it runs in that direction.
+
+1281
+01:12:07,000 --> 01:12:14,000
+So a black hole in thermal equilibrium with its environment
+
+1282
+01:12:14,000 --> 01:12:16,000
+is unstable.
+
+1283
+01:12:16,000 --> 01:12:21,000
+Even if it had exactly the same temperature as its environment,
+
+1284
+01:12:21,000 --> 01:12:23,000
+a fluctuation could happen.
+
+1285
+01:12:23,000 --> 01:12:26,000
+By accident, just by random fluctuation,
+
+1286
+01:12:26,000 --> 01:12:29,000
+it might absorb a little bit of extra energy.
+
+1287
+01:12:29,000 --> 01:12:32,000
+If it did so, it would get colder.
+
+1288
+01:12:32,000 --> 01:12:35,000
+If it got colder, it would be more of an absorber.
+
+1289
+01:12:35,000 --> 01:12:36,000
+And it would run away.
+
+1290
+01:12:36,000 --> 01:12:40,000
+Or it might accidentally give off a little extra energy,
+
+1291
+01:12:40,000 --> 01:12:44,000
+in which case it would get hotter and then give off yet more.
+
+1292
+01:12:44,000 --> 01:12:48,000
+So in that sense, black holes are unstable.
+
+1293
+01:12:48,000 --> 01:12:50,000
+You might think that means they're unphysical.
+
+1294
+01:12:50,000 --> 01:12:54,000
+There are other systems in nature which have this property.
+
+1295
+01:12:54,000 --> 01:12:59,000
+In fact, any system that's held together by gravity, a star,
+
+1296
+01:12:59,000 --> 01:13:04,000
+stars, when they, what happens to a star when it gives off energy?
+
+1297
+01:13:04,000 --> 01:13:05,000
+Yes.
+
+1298
+01:13:05,000 --> 01:13:07,000
+It shrinks.
+
+1299
+01:13:07,000 --> 01:13:10,000
+It shrinks. That's right. It collapses.
+
+1300
+01:13:10,000 --> 01:13:13,000
+When it gives off energy, it thinks it ought to cool.
+
+1301
+01:13:13,000 --> 01:13:15,000
+It says, I'm going to cool.
+
+1302
+01:13:15,000 --> 01:13:20,000
+Because it thinks it's going to cool, it thinks it has less pressure.
+
+1303
+01:13:20,000 --> 01:13:23,000
+The stars don't think, but I need a, you know.
+
+1304
+01:13:23,000 --> 01:13:26,000
+So less pressure to hold the stuff out.
+
+1305
+01:13:26,000 --> 01:13:29,000
+Because it has less pressure, stuff starts to fall in.
+
+1306
+01:13:29,000 --> 01:13:32,000
+What happens when it falls in?
+
+1307
+01:13:32,000 --> 01:13:35,000
+Roughly speaking, you can just imagine that the gas
+
+1308
+01:13:35,000 --> 01:13:37,000
+and stuff in that star is getting squeezed.
+
+1309
+01:13:37,000 --> 01:13:39,000
+What happens when you squeeze it?
+
+1310
+01:13:39,000 --> 01:13:40,000
+It gets hotter.
+
+1311
+01:13:40,000 --> 01:13:41,000
+Yeah.
+
+1312
+01:13:41,000 --> 01:13:44,000
+So a star is an example of a system held together by gravity,
+
+1313
+01:13:44,000 --> 01:13:49,000
+which when it gives off energy, gets hotter.
+
+1314
+01:13:49,000 --> 01:13:52,000
+A star in thermal equilibrium with its environment,
+
+1315
+01:13:52,000 --> 01:13:55,000
+now thermal equilibrium with its environment would mean that
+
+1316
+01:13:55,000 --> 01:13:58,000
+the environment would have to have the temperature of the star.
+
+1317
+01:13:58,000 --> 01:14:01,000
+So we're not talking about the real universe,
+
+1318
+01:14:01,000 --> 01:14:04,000
+but if we had a star and we tried to put it in the thermal equilibrium
+
+1319
+01:14:04,000 --> 01:14:06,000
+with its environment, it would do the same thing.
+
+1320
+01:14:06,000 --> 01:14:08,000
+It would also run away.
+
+1321
+01:14:08,000 --> 01:14:10,000
+So you say that was negative specific heat?
+
+1322
+01:14:10,000 --> 01:14:11,000
+Yeah.
+
+1323
+01:14:11,000 --> 01:14:13,000
+Negative specific heat.
+
+1324
+01:14:13,000 --> 01:14:14,000
+Right.
+
+1325
+01:14:14,000 --> 01:14:15,000
+Exactly.
+
+1326
+01:14:15,000 --> 01:14:17,000
+Negative specific heat is unstable.
+
+1327
+01:14:17,000 --> 01:14:20,000
+But, I mean, it doesn't mean black holes don't exist.
+
+1328
+01:14:20,000 --> 01:14:24,000
+It means in particular in the real world,
+
+1329
+01:14:24,000 --> 01:14:28,000
+they'll simply be absorbers, which will slowly absorb radiation.
+
+1330
+01:14:28,000 --> 01:14:32,000
+Eventually, the universe will expand and cool,
+
+1331
+01:14:32,000 --> 01:14:34,000
+and the temperature will go down.
+
+1332
+01:14:34,000 --> 01:14:37,000
+But down below the temperature of the black hole,
+
+1333
+01:14:37,000 --> 01:14:40,000
+in which case the black hole will start to give off energy,
+
+1334
+01:14:40,000 --> 01:14:42,000
+and it will evaporate.
+
+1335
+01:14:42,000 --> 01:14:45,000
+Okay, so let's talk about evaporation.
+
+1336
+01:14:45,000 --> 01:14:49,000
+Well, yeah.
+
+1337
+01:14:49,000 --> 01:14:51,000
+They have temperature, and because they have temperature,
+
+1338
+01:14:51,000 --> 01:14:53,000
+they're black bodies.
+
+1339
+01:14:53,000 --> 01:14:56,000
+Black bodies not in the sense that they are completely dark,
+
+1340
+01:14:56,000 --> 01:15:00,000
+but in the sense that they give off thermal radiation.
+
+1341
+01:15:00,000 --> 01:15:03,000
+I'm going to go through the derivate,
+
+1342
+01:15:03,000 --> 01:15:05,000
+well, just a very simple derivation,
+
+1343
+01:15:05,000 --> 01:15:08,000
+of the rate at which black holes evaporate,
+
+1344
+01:15:08,000 --> 01:15:11,000
+the rate at which they lose their energy.
+
+1345
+01:15:11,000 --> 01:15:14,000
+But I'm going to do it in units,
+
+1346
+01:15:14,000 --> 01:15:17,000
+since I really don't want to try to remember
+
+1347
+01:15:17,000 --> 01:15:22,000
+all the places where C, H bar, G come into this.
+
+1348
+01:15:22,000 --> 01:15:25,000
+We'll work in units where everything is one.
+
+1349
+01:15:25,000 --> 01:15:29,000
+And then we'll convert back to sensible units.
+
+1350
+01:15:29,000 --> 01:15:31,000
+Now, like I always like to say,
+
+1351
+01:15:31,000 --> 01:15:32,000
+if I were,
+
+1352
+01:15:33,000 --> 01:15:34,000
+on a desert island,
+
+1353
+01:15:34,000 --> 01:15:35,000
+and I didn't have a physics book,
+
+1354
+01:15:35,000 --> 01:15:37,000
+and I didn't have a computer or anything else,
+
+1355
+01:15:37,000 --> 01:15:39,000
+what units would I work in?
+
+1356
+01:15:39,000 --> 01:15:40,000
+They would be Planck units,
+
+1357
+01:15:40,000 --> 01:15:42,000
+because those are the only units
+
+1358
+01:15:42,000 --> 01:15:45,000
+that I really remember things in.
+
+1359
+01:15:45,000 --> 01:15:49,000
+It's helpful to have some rough idea
+
+1360
+01:15:49,000 --> 01:15:53,000
+of how big things are in Planck units.
+
+1361
+01:15:53,000 --> 01:15:57,000
+And I'm going to go through the derivation
+
+1362
+01:15:57,000 --> 01:16:00,000
+of the luminosity of a black hole in Planck units.
+
+1363
+01:16:00,000 --> 01:16:03,000
+As I said, the only reason is everything is one.
+
+1364
+01:16:03,000 --> 01:16:06,000
+So you never have to worry where the constants go.
+
+1365
+01:16:06,000 --> 01:16:09,000
+Let's remember what Planck units are.
+
+1366
+01:16:09,000 --> 01:16:14,000
+They are units in which the speed of light,
+
+1367
+01:16:14,000 --> 01:16:17,000
+Planck's constant, and Newton's constant,
+
+1368
+01:16:17,000 --> 01:16:20,000
+are all equal to one.
+
+1369
+01:16:20,000 --> 01:16:24,000
+C equals H bar equals G equals one.
+
+1370
+01:16:24,000 --> 01:16:27,000
+In those units, the unit of length,
+
+1371
+01:16:27,000 --> 01:16:30,000
+the Planck length,
+
+1372
+01:16:30,000 --> 01:16:32,000
+is about 10 to the minus 35 Newton.
+
+1373
+01:16:33,000 --> 01:16:44,000
+The Planck time is about 10 to the minus 42, 43 seconds.
+
+1374
+01:16:44,000 --> 01:16:48,000
+And the Planck mass,
+
+1375
+01:16:48,000 --> 01:16:50,000
+length, time, and mass,
+
+1376
+01:16:50,000 --> 01:16:52,000
+that's a complete set of units,
+
+1377
+01:16:52,000 --> 01:17:02,000
+and the Planck mass is about 10 to the minus eighth kilograms.
+
+1378
+01:17:02,000 --> 01:17:05,000
+The Planck mass is not a particularly unusual mass.
+
+1379
+01:17:05,000 --> 01:17:07,000
+10 to the minus eighth kilograms
+
+1380
+01:17:07,000 --> 01:17:09,000
+is about the mass of a dust mote.
+
+1381
+01:17:09,000 --> 01:17:11,000
+You can see it with the naked eye.
+
+1382
+01:17:11,000 --> 01:17:15,000
+So it's a rather ordinary mass.
+
+1383
+01:17:15,000 --> 01:17:17,000
+The Planck time is incredibly short,
+
+1384
+01:17:17,000 --> 01:17:19,000
+and the Planck length is incredibly small.
+
+1385
+01:17:19,000 --> 01:17:22,000
+In fact, the Planck time is nothing but the time
+
+1386
+01:17:22,000 --> 01:17:24,000
+that it would take for a light ray
+
+1387
+01:17:24,000 --> 01:17:27,000
+to cross the Planck distance.
+
+1388
+01:17:27,000 --> 01:17:29,000
+So they're not really independent.
+
+1389
+01:17:29,000 --> 01:17:31,000
+If you take the Planck distance,
+
+1390
+01:17:31,000 --> 01:17:34,000
+and ask how long it would take a light to go across it,
+
+1391
+01:17:34,000 --> 01:17:36,000
+it's the Planck time.
+
+1392
+01:17:36,000 --> 01:17:38,000
+Alright, let's work in those units.
+
+1393
+01:17:38,000 --> 01:17:39,000
+Good.
+
+1394
+01:17:39,000 --> 01:17:43,000
+Now, a black hole has temperature.
+
+1395
+01:17:43,000 --> 01:17:46,000
+Because it has temperature, it radiates.
+
+1396
+01:17:46,000 --> 01:17:48,000
+Anything that has temperature,
+
+1397
+01:17:48,000 --> 01:17:51,000
+in particular, if it's put into a vacuum,
+
+1398
+01:17:51,000 --> 01:17:53,000
+will radiate black body radiation.
+
+1399
+01:17:53,000 --> 01:17:56,000
+Black body radiation is simply thermal radiation.
+
+1400
+01:17:56,000 --> 01:17:58,000
+Electromagnetic radiation, and incidentally,
+
+1401
+01:17:58,000 --> 01:18:00,000
+it will also radiate gravitational radiation.
+
+1402
+01:18:01,000 --> 01:18:04,000
+But the theories are absolutely parallel.
+
+1403
+01:18:04,000 --> 01:18:09,000
+Alright, let's talk about the formula
+
+1404
+01:18:09,000 --> 01:18:12,000
+for the luminosity of a warm body.
+
+1405
+01:18:12,000 --> 01:18:16,000
+The luminosity is the rate at which it loses energy.
+
+1406
+01:18:16,000 --> 01:18:18,000
+So we can write it as minus,
+
+1407
+01:18:18,000 --> 01:18:22,000
+only because the object is losing energy,
+
+1408
+01:18:22,000 --> 01:18:26,000
+we can write it as minus the rate of change
+
+1409
+01:18:26,000 --> 01:18:29,000
+of the energy of the object,
+
+1410
+01:18:29,000 --> 01:18:31,000
+some object,
+
+1411
+01:18:31,000 --> 01:18:36,000
+the e d t is the rate of change of its energy,
+
+1412
+01:18:36,000 --> 01:18:39,000
+it's losing energy, so d e by d t is negative,
+
+1413
+01:18:39,000 --> 01:18:42,000
+and minus d e by d t is positive.
+
+1414
+01:18:45,000 --> 01:18:46,000
+Alright, what is that?
+
+1415
+01:18:46,000 --> 01:18:51,000
+First of all, it's proportional to the area of the object.
+
+1416
+01:18:51,000 --> 01:18:54,000
+When an object radiates, it radiates from the surface.
+
+1417
+01:18:54,000 --> 01:18:58,000
+The bigger the area, the faster it will radiate.
+
+1418
+01:18:58,000 --> 01:19:00,000
+So the area of the object appears here,
+
+1419
+01:19:00,000 --> 01:19:03,000
+area,
+
+1420
+01:19:03,000 --> 01:19:07,000
+and this will become the area of the horizon of the black hole.
+
+1421
+01:19:07,000 --> 01:19:10,000
+Black holes radiate from the horizon.
+
+1422
+01:19:10,000 --> 01:19:13,000
+And then, it depends on the temperature.
+
+1423
+01:19:13,000 --> 01:19:15,000
+Obviously, the hotter the temperature,
+
+1424
+01:19:15,000 --> 01:19:17,000
+the faster it radiates.
+
+1425
+01:19:17,000 --> 01:19:21,000
+Anybody know what formula to put here for the temperature?
+
+1426
+01:19:21,000 --> 01:19:23,000
+T to the fourth, famous formula,
+
+1427
+01:19:23,000 --> 01:19:26,000
+Stefan Boltzmann formula.
+
+1428
+01:19:26,000 --> 01:19:28,000
+Temperature to the fourth power.
+
+1429
+01:19:28,000 --> 01:19:31,000
+You can derive that from dimensional considerations,
+
+1430
+01:19:31,000 --> 01:19:33,000
+it's just a dimensional formula.
+
+1431
+01:19:33,000 --> 01:19:36,000
+And what about the coefficient which appears here?
+
+1432
+01:19:36,000 --> 01:19:38,000
+Order of magnitude.
+
+1433
+01:19:38,000 --> 01:19:42,000
+It's one, because all of the parameters are one.
+
+1434
+01:19:42,000 --> 01:19:44,000
+So what else could it be?
+
+1435
+01:19:44,000 --> 01:19:46,000
+Right, so in Planck units,
+
+1436
+01:19:46,000 --> 01:19:51,000
+in Planck units, this is the rate at which
+
+1437
+01:19:51,000 --> 01:19:55,000
+the black hole or anything else would lose energy.
+
+1438
+01:19:55,000 --> 01:19:57,000
+Now, energy is mass, e equals m c squared.
+
+1439
+01:19:57,000 --> 01:19:59,000
+But c is one.
+
+1440
+01:19:59,000 --> 01:20:01,000
+So, e is m.
+
+1441
+01:20:01,000 --> 01:20:07,000
+E is m, and we can write this as the rate of change of the loss of mass.
+
+1442
+01:20:07,000 --> 01:20:11,000
+Rate of change of the mass of the...
+
+1443
+01:20:11,000 --> 01:20:17,000
+Loss of mass per unit time is the area times the temperature to the fourth.
+
+1444
+01:20:17,000 --> 01:20:19,000
+What is the area?
+
+1445
+01:20:19,000 --> 01:20:24,000
+Well, the area is proportional to the Schwarzschild radius squared.
+
+1446
+01:20:24,000 --> 01:20:26,000
+Let's put that in there.
+
+1447
+01:20:26,000 --> 01:20:30,000
+There's some four pi, but by now we don't care about those things.
+
+1448
+01:20:30,000 --> 01:20:34,000
+Four pi times r Schwarzschild squared.
+
+1449
+01:20:34,000 --> 01:20:36,000
+And what about the temperature?
+
+1450
+01:20:36,000 --> 01:20:40,000
+We seem to have lost the formula for the temperature.
+
+1451
+01:20:40,000 --> 01:20:43,000
+Go back in your notes and see if you can find the temperature.
+
+1452
+01:20:43,000 --> 01:20:47,000
+We've got all these units, h bar...
+
+1453
+01:20:47,000 --> 01:20:48,000
+Well, h bar is one.
+
+1454
+01:20:48,000 --> 01:20:49,000
+C is one.
+
+1455
+01:20:49,000 --> 01:20:51,000
+h pi over m g.
+
+1456
+01:20:51,000 --> 01:20:53,000
+Under, divided by h pi over m g.
+
+1457
+01:20:53,000 --> 01:20:54,000
+But what's m g?
+
+1458
+01:20:54,000 --> 01:20:55,000
+But what's m g?
+
+1459
+01:20:55,000 --> 01:20:56,000
+r.
+
+1460
+01:20:56,000 --> 01:20:57,000
+r.
+
+1461
+01:20:57,000 --> 01:20:59,000
+Right.
+
+1462
+01:20:59,000 --> 01:21:01,000
+Let me just remind you.
+
+1463
+01:21:01,000 --> 01:21:09,000
+The temperature we found was h over lambda times c.
+
+1464
+01:21:09,000 --> 01:21:13,000
+This was the energy added when we added one bit.
+
+1465
+01:21:13,000 --> 01:21:16,000
+h and c are one.
+
+1466
+01:21:16,000 --> 01:21:18,000
+And so the temperature is just one over lambda,
+
+1467
+01:21:18,000 --> 01:21:22,000
+but lambda was supposed to be the radius of the black hole.
+
+1468
+01:21:22,000 --> 01:21:25,000
+So the temperature is just one over the radius of the black hole.
+
+1469
+01:21:25,000 --> 01:21:28,000
+So that's one over the radius of the Schwarzschild radius.
+
+1470
+01:21:28,000 --> 01:21:29,000
+All right?
+
+1471
+01:21:29,000 --> 01:21:32,000
+So temperature to the fourth, that's one over radius to the fourth.
+
+1472
+01:21:32,000 --> 01:21:37,000
+And this whole thing just becomes over radius to the fourth.
+
+1473
+01:21:37,000 --> 01:21:46,000
+Or the rate of change of mass with time is equal to one over r squared.
+
+1474
+01:21:46,000 --> 01:21:48,000
+Oh, but r is m, isn't it?
+
+1475
+01:21:48,000 --> 01:21:49,000
+Yeah.
+
+1476
+01:21:49,000 --> 01:21:50,000
+Yeah.
+
+1477
+01:21:50,000 --> 01:21:52,000
+Because r is 2m g and g is one.
+
+1478
+01:21:52,000 --> 01:21:53,000
+And two is one.
+
+1479
+01:21:53,000 --> 01:21:57,000
+Right.
+
+1480
+01:21:57,000 --> 01:22:03,000
+So this is also just one over m squared.
+
+1481
+01:22:03,000 --> 01:22:05,000
+OK, just remember, wherever you see r,
+
+1482
+01:22:05,000 --> 01:22:09,000
+you can put m because they're proportional to each other.
+
+1483
+01:22:09,000 --> 01:22:10,000
+m is energy.
+
+1484
+01:22:10,000 --> 01:22:13,000
+This is the time rate of change of energy.
+
+1485
+01:22:13,000 --> 01:22:20,000
+And area one over r to the fourth is temperature to the fourth.
+
+1486
+01:22:20,000 --> 01:22:21,000
+OK, so that's all we did.
+
+1487
+01:22:21,000 --> 01:22:23,000
+That's what this formula says.
+
+1488
+01:22:23,000 --> 01:22:34,000
+OK, let's multiply it by m squared.
+
+1489
+01:22:34,000 --> 01:22:36,000
+Minus m squared dm.
+
+1490
+01:22:36,000 --> 01:22:42,000
+What is m squared dm?
+
+1491
+01:22:42,000 --> 01:22:44,000
+Or dm squared dm by dt.
+
+1492
+01:22:44,000 --> 01:22:46,000
+m squared dm by dt.
+
+1493
+01:22:46,000 --> 01:22:47,000
+dm cubed?
+
+1494
+01:22:47,000 --> 01:22:49,000
+Yeah.
+
+1495
+01:22:49,000 --> 01:22:51,000
+Apart from a factor of three.
+
+1496
+01:22:51,000 --> 01:22:52,000
+m squared times dm by dt.
+
+1497
+01:22:52,000 --> 01:22:59,000
+m squared times dm by dt is just equal.
+
+1498
+01:22:59,000 --> 01:23:01,000
+Oh, what was on the right hand side of this?
+
+1499
+01:23:01,000 --> 01:23:02,000
+There's an equation.
+
+1500
+01:23:02,000 --> 01:23:03,000
+What happened to the right hand?
+
+1501
+01:23:03,000 --> 01:23:04,000
+It's one, right?
+
+1502
+01:23:04,000 --> 01:23:05,000
+One.
+
+1503
+01:23:05,000 --> 01:23:07,000
+One, yeah.
+
+1504
+01:23:07,000 --> 01:23:09,000
+All right, so another way to write this,
+
+1505
+01:23:09,000 --> 01:23:11,000
+apart from a factor of three,
+
+1506
+01:23:11,000 --> 01:23:17,000
+is the time rate of change of the mass cubed of the black hole
+
+1507
+01:23:17,000 --> 01:23:20,000
+is equal to one.
+
+1508
+01:23:20,000 --> 01:23:29,000
+So how long does it take for the black hole to lose all of its mass?
+
+1509
+01:23:29,000 --> 01:23:33,000
+It has a uniform rate at which it loses mass cubed.
+
+1510
+01:23:33,000 --> 01:23:42,000
+So its mass cubed is diminishing one unit of it per unit time.
+
+1511
+01:23:42,000 --> 01:23:47,000
+How long does it take for all that mass that you start with to disappear?
+
+1512
+01:23:47,000 --> 01:23:48,000
+Right.
+
+1513
+01:23:48,000 --> 01:23:49,000
+m cubed.
+
+1514
+01:23:49,000 --> 01:23:51,000
+m cubed.
+
+1515
+01:23:51,000 --> 01:23:54,000
+Another way you could write this is the change in mass cubed
+
+1516
+01:23:54,000 --> 01:23:56,000
+divided by the change in time is one,
+
+1517
+01:23:56,000 --> 01:24:01,000
+and therefore the total time that it takes to lose all of the mass
+
+1518
+01:24:01,000 --> 01:24:04,000
+is just m cubed.
+
+1519
+01:24:04,000 --> 01:24:07,000
+So m cubed,
+
+1520
+01:24:07,000 --> 01:24:09,000
+that's how long it takes,
+
+1521
+01:24:09,000 --> 01:24:11,000
+that's the evaporation time.
+
+1522
+01:24:19,000 --> 01:24:20,000
+How long is it?
+
+1523
+01:24:20,000 --> 01:24:34,000
+All right, let's plug in some numbers.
+
+1524
+01:24:34,000 --> 01:24:36,000
+Solar mass black hole.
+
+1525
+01:24:36,000 --> 01:24:39,000
+What's the solar mass?
+
+1526
+01:24:39,000 --> 01:24:42,000
+10 to the 30th kilograms?
+
+1527
+01:24:42,000 --> 01:24:44,000
+We have to work in Planck units.
+
+1528
+01:24:44,000 --> 01:24:45,000
+We did this in Planck units.
+
+1529
+01:24:45,000 --> 01:24:46,000
+Let's do it in Planck units.
+
+1530
+01:24:46,000 --> 01:24:47,000
+So the solar mass is 10 to the 30th kilograms.
+
+1531
+01:24:47,000 --> 01:24:49,000
+How many Planck masses is that?
+
+1532
+01:24:49,000 --> 01:24:50,000
+10 to the 30th.
+
+1533
+01:24:50,000 --> 01:24:54,000
+10 to the 38th, because the Planck mass is 10 to the minus 8th kilograms.
+
+1534
+01:24:54,000 --> 01:25:00,000
+So 10 to the 38th Planck masses is the mass of the sun.
+
+1535
+01:25:00,000 --> 01:25:01,000
+Mass of the sun.
+
+1536
+01:25:01,000 --> 01:25:03,000
+That symbol stands for sun.
+
+1537
+01:25:03,000 --> 01:25:04,000
+Okay.
+
+1538
+01:25:04,000 --> 01:25:07,000
+All right, what's the evaporation time?
+
+1539
+01:25:07,000 --> 01:25:10,000
+Well, it's m cubed, so it's m cubed.
+
+1540
+01:25:10,000 --> 01:25:13,000
+So m cubed is the mass of the sun.
+
+1541
+01:25:13,000 --> 01:25:15,000
+So m cubed is the mass of the sun.
+
+1542
+01:25:15,000 --> 01:25:16,000
+So m cubed is the mass of the sun.
+
+1543
+01:25:16,000 --> 01:25:17,000
+It's m cubed.
+
+1544
+01:25:17,000 --> 01:25:20,000
+So that's 10 to the, how much, what's 38 times 3?
+
+1545
+01:25:20,000 --> 01:25:22,000
+114?
+
+1546
+01:25:22,000 --> 01:25:23,000
+Yeah.
+
+1547
+01:25:23,000 --> 01:25:27,000
+So m cubed is 10 to the 114.
+
+1548
+01:25:27,000 --> 01:25:32,000
+But 10 to the 114 what?
+
+1549
+01:25:32,000 --> 01:25:33,000
+Planck times.
+
+1550
+01:25:33,000 --> 01:25:36,000
+Planck times, times t Planck.
+
+1551
+01:25:36,000 --> 01:25:40,000
+A Planck time is 10 to the minus 43 seconds.
+
+1552
+01:25:40,000 --> 01:25:42,000
+So how many seconds does this correspond to?
+
+1553
+01:25:42,000 --> 01:25:44,000
+10 to the, 10 to the 71.
+
+1554
+01:25:44,000 --> 01:25:45,000
+10 to the 71.
+
+1555
+01:25:45,000 --> 01:25:57,560
+71. 10 to the 71 seconds. How many years is that? One year is 3 times 10 to the 7th seconds.
+
+1556
+01:25:57,560 --> 01:26:06,840
+So divide by 10 to the 7th, 10 to the 60, 10 to the 64 years. What's the present age
+
+1557
+01:26:06,840 --> 01:26:17,280
+of the universe? 10 to the 10th years. Right, so this is 10 to the 54th universe ages.
+
+1558
+01:26:17,280 --> 01:26:23,280
+Black holes evaporate very, very slowly. The reason, of course, is they're very, very cold,
+
+1559
+01:26:23,280 --> 01:26:30,920
+and you get T to the 4th in them. So even after the universe cools to the point where
+
+1560
+01:26:30,920 --> 01:26:36,280
+the black hole will evaporate, it's still evaporating very slowly.
+
+1561
+01:26:36,280 --> 01:26:36,780
+Okay?
+
+1562
+01:26:36,780 --> 01:26:43,660
+Alright, let's take a smaller black hole. How about a black hole of mountain mass?
+
+1563
+01:26:43,660 --> 01:26:46,060
+Anybody have an estimate for a mountain?
+
+1564
+01:26:46,060 --> 01:26:54,140
+10 to the 10th.
+
+1565
+01:26:54,140 --> 01:26:57,580
+10 to the 10th.
+
+1566
+01:26:57,580 --> 01:26:57,980
+I don't know.
+
+1567
+01:26:57,980 --> 01:27:00,220
+100 cubic kilometers?
+
+1568
+01:27:00,220 --> 01:27:06,220
+100 cubic kilometers. Alright, so how many kilograms is that?
+
+1569
+01:27:06,220 --> 01:27:06,720
+2.
+
+1570
+01:27:06,720 --> 01:27:06,740
+2.
+
+1571
+01:27:06,740 --> 01:27:06,760
+2.
+
+1572
+01:27:06,760 --> 01:27:06,780
+2.
+
+1573
+01:27:06,780 --> 01:27:07,100
+2.
+
+1574
+01:27:07,100 --> 01:27:07,220
+2.
+
+1575
+01:27:07,220 --> 01:27:07,320
+2.
+
+1576
+01:27:07,320 --> 01:27:07,680
+2.
+
+1577
+01:27:07,680 --> 01:27:07,760
+2.
+
+1578
+01:27:07,760 --> 01:27:08,280
+2.
+
+1579
+01:27:08,280 --> 01:27:08,340
+2.
+
+1580
+01:27:08,340 --> 01:27:09,140
+2.
+
+1581
+01:27:09,140 --> 01:27:12,140
+2.
+
+1582
+01:27:12,140 --> 01:27:12,220
+2.
+
+1583
+01:27:12,220 --> 01:27:12,280
+2.
+
+1584
+01:27:12,280 --> 01:27:12,480
+2.
+
+1585
+01:27:12,480 --> 01:27:12,580
+2.
+
+1586
+01:27:12,580 --> 01:27:13,980
+2.
+
+1587
+01:27:13,980 --> 01:27:14,180
+2.
+
+1588
+01:27:14,180 --> 01:27:14,340
+2.
+
+1589
+01:27:14,340 --> 01:27:14,420
+2.
+
+1590
+01:27:14,420 --> 01:27:14,580
+2.
+
+1591
+01:27:14,580 --> 01:27:14,640
+2.
+
+1592
+01:27:14,640 --> 01:27:14,720
+1.
+
+1593
+01:27:14,720 --> 01:27:15,260
+1.
+
+1594
+01:27:15,260 --> 01:27:15,580
+2.
+
+1595
+01:27:15,580 --> 01:27:15,780
+2.
+
+1596
+01:27:15,780 --> 01:27:15,920
+1.
+
+1597
+01:27:15,920 --> 01:27:15,980
+2.
+
+1598
+01:27:15,980 --> 01:27:16,080
+1.
+
+1599
+01:27:16,080 --> 01:27:16,140
+2.
+
+1600
+01:27:16,140 --> 01:27:16,480
+2.
+
+1601
+01:27:16,480 --> 01:27:16,540
+1.
+
+1602
+01:27:16,540 --> 01:27:16,680
+2.
+
+1603
+01:27:16,680 --> 01:27:16,900
+2.
+
+1604
+01:27:16,900 --> 01:27:16,960
+2.
+
+1605
+01:27:16,960 --> 01:27:16,980
+2.
+
+1606
+01:27:16,980 --> 01:27:17,040
+2.
+
+1607
+01:27:17,040 --> 01:27:17,120
+2.
+
+1608
+01:27:17,120 --> 01:27:17,280
+2.
+
+1609
+01:27:17,280 --> 01:27:17,300
+2.
+
+1610
+01:27:17,300 --> 01:27:17,620
+2.
+
+1611
+01:27:17,620 --> 01:27:22,120
+Well, let's see, 10 times 10 times 1, that's the 100 cubic square cubic kilometers.
+
+1612
+01:27:22,120 --> 01:27:29,940
+So cubic kilometers tend to the, what, 6 cubic meters times 100 10 to 7, 10 to 7.
+
+1613
+01:27:29,940 --> 01:27:31,080
+10 to 7 is what?
+
+1614
+01:27:31,080 --> 01:27:37,540
+cubic meters times kilograms, we say the density is three, so four, so it would be four times that.
+
+1615
+01:27:37,940 --> 01:27:39,400
+Ten times, ten to the eighth.
+
+1616
+01:27:39,520 --> 01:27:40,920
+You're saying a cubic?
+
+1617
+01:27:42,320 --> 01:27:45,280
+Density is three times that of water, four times that of water.
+
+1618
+01:27:45,460 --> 01:27:47,800
+Yeah, okay, but you have how many cubic meters?
+
+1619
+01:27:48,360 --> 01:27:49,220
+Ten to the seventh.
+
+1620
+01:27:49,660 --> 01:27:57,860
+Ten to the seventh, but you have to multiply by ten to the three because a cubic meter is about a thousand kilograms.
+
+1621
+01:27:58,620 --> 01:27:59,020
+No.
+
+1622
+01:28:00,320 --> 01:28:00,720
+Yeah.
+
+1623
+01:28:01,080 --> 01:28:01,320
+Yeah.
+
+1624
+01:28:01,440 --> 01:28:02,080
+Yeah, that's water.
+
+1625
+01:28:02,220 --> 01:28:03,040
+So ten to the tenth.
+
+1626
+01:28:03,100 --> 01:28:03,980
+Yeah, so ten to the tenth.
+
+1627
+01:28:04,460 --> 01:28:06,360
+Let's say ten to the tenth kilograms.
+
+1628
+01:28:06,360 --> 01:28:12,500
+Ten to the tenth kilograms is how many plunks?
+
+1629
+01:28:13,780 --> 01:28:15,020
+Ten to the eighteenth.
+
+1630
+01:28:15,760 --> 01:28:19,440
+Ten to the eighteenth, now three times eighteen?
+
+1631
+01:28:20,860 --> 01:28:21,640
+Fifty to the eighteenth.
+
+1632
+01:28:21,980 --> 01:28:23,320
+Ten to the fifty-four.
+
+1633
+01:28:25,940 --> 01:28:30,280
+That's ten to the fifty-four plunk times.
+
+1634
+01:28:31,080 --> 01:28:34,340
+And now we take out forty-three.
+
+1635
+01:28:34,340 --> 01:28:36,060
+That was a ten to the eleventh seconds?
+
+1636
+01:28:36,060 --> 01:28:36,560
+Yeah.
+
+1637
+01:28:36,560 --> 01:28:39,140
+Ten to the eleventh seconds, a lot shorter.
+
+1638
+01:28:41,240 --> 01:28:42,960
+What's ten to the eleventh seconds?
+
+1639
+01:28:42,960 --> 01:28:45,440
+Ten to the seventh.
+
+1640
+01:28:45,440 --> 01:28:46,640
+Ten to the four years.
+
+1641
+01:28:46,640 --> 01:28:49,640
+All right, not terribly long.
+
+1642
+01:28:50,460 --> 01:28:52,020
+That's still a pretty big black hole.
+
+1643
+01:28:54,020 --> 01:29:00,300
+A black hole of a few kilograms.
+
+1644
+01:29:00,300 --> 01:29:02,920
+Well, a few kilograms, the lifetime is very short.
+
+1645
+01:29:02,920 --> 01:29:04,460
+It just goes really fast, bang.
+
+1646
+01:29:05,200 --> 01:29:07,700
+And you can work that out.
+
+1647
+01:29:07,760 --> 01:29:08,700
+I don't want to work it out now.
+
+1648
+01:29:09,480 --> 01:29:11,860
+Okay, that's the luminosity of a black hole.
+
+1649
+01:29:14,860 --> 01:29:19,040
+Wouldn't the size of the kilogram worth of black hole be really small?
+
+1650
+01:29:20,260 --> 01:29:21,700
+Yeah, probably about a kilogram.
+
+1651
+01:29:21,900 --> 01:29:22,320
+All right, good.
+
+1652
+01:29:23,000 --> 01:29:23,240
+Good.
+
+1653
+01:29:24,040 --> 01:29:26,720
+The radius is proportional to the mass, right?
+
+1654
+01:29:27,360 --> 01:29:27,680
+Okay.
+
+1655
+01:29:27,680 --> 01:29:27,740
+Okay.
+
+1656
+01:29:28,340 --> 01:29:29,680
+The mass of the...
+
+1657
+01:29:30,300 --> 01:29:38,500
+Sun is ten to the thirtieth, and it corresponds to one or two kilometers.
+
+1658
+01:29:40,000 --> 01:29:44,440
+So that means one kilogram would be ten to the minus thirtieth kilometers.
+
+1659
+01:29:46,560 --> 01:29:48,680
+That's pretty small, right?
+
+1660
+01:29:49,400 --> 01:29:51,820
+It's not as small as the Planck length, but it's pretty small.
+
+1661
+01:29:52,420 --> 01:29:53,320
+Yeah, it's getting there.
+
+1662
+01:29:53,660 --> 01:29:53,920
+Right.
+
+1663
+01:29:53,920 --> 01:29:56,480
+But all of these assume an ambient temperature of zero.
+
+1664
+01:29:57,240 --> 01:30:00,240
+Yeah, well, once, of course, not all of these.
+
+1665
+01:30:00,300 --> 01:30:04,160
+Some of these would be...
+
+1666
+01:30:04,160 --> 01:30:05,060
+No, I think, let's see.
+
+1667
+01:30:08,900 --> 01:30:09,880
+Yeah, I think so.
+
+1668
+01:30:09,880 --> 01:30:10,400
+Yeah.
+
+1669
+01:30:12,420 --> 01:30:13,140
+That's right.
+
+1670
+01:30:13,500 --> 01:30:17,340
+Well, only if the ambient temperature is cooler than they are.
+
+1671
+01:30:17,800 --> 01:30:18,360
+Right.
+
+1672
+01:30:19,420 --> 01:30:21,200
+Right, so that's an interesting question.
+
+1673
+01:30:21,360 --> 01:30:28,720
+What mass would the black hole have a temperature which is three degrees of background radiation?
+
+1674
+01:30:28,820 --> 01:30:29,980
+I'll leave that for you to figure out.
+
+1675
+01:30:30,300 --> 01:30:33,200
+I'll work that out.
+
+1676
+01:30:33,980 --> 01:30:35,620
+What's the size of a black hole?
+
+1677
+01:30:35,620 --> 01:30:42,040
+Size, meaning radius, and mass of a black hole which is three degrees.
+
+1678
+01:30:46,100 --> 01:30:48,860
+Okay, I think we've done a bit today.
+
+1679
+01:30:52,480 --> 01:30:53,080
+Yeah.
+
+1680
+01:30:53,340 --> 01:30:57,020
+Now, what's the mechanism for these photons coming out of it?
+
+1681
+01:30:57,260 --> 01:31:00,020
+Well, before we can answer that, we have to answer,
+
+1682
+01:31:00,020 --> 01:31:02,480
+what's the mechanism for the entropy?
+
+1683
+01:31:04,840 --> 01:31:09,180
+In a certain sense, we're not so much guessing.
+
+1684
+01:31:09,420 --> 01:31:12,120
+Most of this is based on very definite calculation,
+
+1685
+01:31:12,980 --> 01:31:19,680
+but it's the kind of theoretical work where you put some principles together
+
+1686
+01:31:19,680 --> 01:31:24,900
+and you say, if you believe all the principles, then this is what has to be.
+
+1687
+01:31:24,900 --> 01:31:24,960
+Okay.
+
+1688
+01:31:25,780 --> 01:31:28,900
+The conclusion of it is that there are some hidden...
+
+1689
+01:31:30,020 --> 01:31:36,640
+small, numerous degrees of freedom that are not apparent in the standard theory of black holes,
+
+1690
+01:31:36,640 --> 01:31:38,640
+or in the standard theory of gravity.
+
+1691
+01:31:39,940 --> 01:31:43,740
+The understanding of it now is that the standard theory of gravity
+
+1692
+01:31:43,740 --> 01:31:47,060
+is in a certain sense like fluid dynamics.
+
+1693
+01:31:47,620 --> 01:31:52,780
+Fluid dynamics describes a smooth flow of a uniform fluid.
+
+1694
+01:31:52,780 --> 01:31:56,780
+It can also describe more turbulent flows and so forth,
+
+1695
+01:31:56,780 --> 01:31:58,820
+but it does not take into account the atomic structure of the atom.
+
+1696
+01:31:58,820 --> 01:31:59,220
+Okay.
+
+1697
+01:31:59,220 --> 01:31:59,520
+Okay.
+
+1698
+01:31:59,520 --> 01:31:59,760
+Okay.
+
+1699
+01:31:59,760 --> 01:32:02,280
+The atomic structure of fluids.
+
+1700
+01:32:03,720 --> 01:32:06,560
+There are of course circumstances where fluids might...
+
+1701
+01:32:06,560 --> 01:32:09,080
+the atomic structure might become important,
+
+1702
+01:32:09,080 --> 01:32:15,180
+but ordinary fluid flow, the equations of it are effective equations
+
+1703
+01:32:15,180 --> 01:32:19,320
+which don't take into account the microscopic structure.
+
+1704
+01:32:19,760 --> 01:32:25,160
+You do put entropy into the flow, but you don't ask where that entropy came from.
+
+1705
+01:32:25,320 --> 01:32:28,220
+But just the fact that there is entropy to a fluid tells you
+
+1706
+01:32:28,220 --> 01:32:29,620
+there's a hidden microscopic structure.
+
+1707
+01:32:29,620 --> 01:32:29,760
+Okay.
+
+1708
+01:32:29,760 --> 01:32:35,840
+It's a clue. It's a hint that there's something there besides just the smooth flow.
+
+1709
+01:32:35,840 --> 01:32:38,040
+There's something underlying it at smaller distances.
+
+1710
+01:32:38,440 --> 01:32:40,480
+There are hidden numerous degrees of freedom.
+
+1711
+01:32:41,640 --> 01:32:48,080
+So as things stand today, well, as things stood at some point,
+
+1712
+01:32:48,160 --> 01:32:49,940
+I think we understand a little more now,
+
+1713
+01:32:50,760 --> 01:32:57,560
+but we could say the theory that we've talked about up till now
+
+1714
+01:32:57,560 --> 01:33:01,600
+is a strong hint that there's more to the theory of gravity.
+
+1715
+01:33:02,040 --> 01:33:03,800
+There's a microstructure to it.
+
+1716
+01:33:04,060 --> 01:33:07,780
+There's more to the theory of black holes than just Einstein's theory.
+
+1717
+01:33:07,900 --> 01:33:10,060
+There's something smaller, more numerous,
+
+1718
+01:33:10,240 --> 01:33:13,540
+that we're not keeping track of in ordinary general relativity.
+
+1719
+01:33:14,540 --> 01:33:16,660
+And in that sense, it's a hint.
+
+1720
+01:33:16,740 --> 01:33:18,260
+It's a hint of something yet to come.
+
+1721
+01:33:19,040 --> 01:33:24,080
+We know a little more about it by now, but let's wait.
+
+1722
+01:33:24,180 --> 01:33:24,560
+Let's wait.
+
+1723
+01:33:24,700 --> 01:33:27,200
+We'll talk about what the hidden structures might be.
+
+1724
+01:33:27,560 --> 01:33:31,140
+Is saying that the black hole gives off energy,
+
+1725
+01:33:31,380 --> 01:33:33,820
+is that the same as saying the black hole is giving off information?
+
+1726
+01:33:34,340 --> 01:33:34,500
+Yeah.
+
+1727
+01:33:35,020 --> 01:33:40,340
+And so if the black hole grows, sucking in information,
+
+1728
+01:33:40,880 --> 01:33:43,700
+and then it shrinks again, giving out information,
+
+1729
+01:33:43,700 --> 01:33:44,600
+Just got to get it back.
+
+1730
+01:33:44,760 --> 01:33:46,740
+so you get back all the same information
+
+1731
+01:33:46,740 --> 01:33:49,040
+that went into the black hole in the first place.
+
+1732
+01:33:51,120 --> 01:33:53,420
+But you've got to reconcile that
+
+1733
+01:33:53,420 --> 01:33:57,540
+with the figure that we drew here,
+
+1734
+01:33:57,560 --> 01:34:00,260
+that says things fall through the horizon.
+
+1735
+01:34:00,260 --> 01:34:02,000
+How the devil do they get back out?
+
+1736
+01:34:02,000 --> 01:34:04,000
+Yeah, that's what I'm trying to do.
+
+1737
+01:34:07,300 --> 01:34:09,300
+Tell me about it when you get it.
+
+1738
+01:34:13,300 --> 01:34:19,060
+That conservation of information, is that a real fundamental principle?
+
+1739
+01:34:19,060 --> 01:34:21,060
+That is the most fundamental.
+
+1740
+01:34:21,060 --> 01:34:23,060
+It's so fundamental that people tend to forget about it.
+
+1741
+01:34:23,480 --> 01:34:25,480
+Without it,
+
+1742
+01:34:27,560 --> 01:34:31,000
+the rules, all of the rules of physics would make no sense.
+
+1743
+01:34:31,000 --> 01:34:33,000
+For example, the rules that say that
+
+1744
+01:34:33,820 --> 01:34:35,620
+invariance is of various kinds.
+
+1745
+01:34:35,620 --> 01:34:38,860
+Time translation and variance leads to energy conservation.
+
+1746
+01:34:39,340 --> 01:34:41,340
+It does, only
+
+1747
+01:34:42,680 --> 01:34:43,700
+if you have the rule.
+
+1748
+01:34:43,700 --> 01:34:44,700
+I'll give you an example.
+
+1749
+01:34:44,700 --> 01:34:46,700
+I'll give you an example right now.
+
+1750
+01:34:47,120 --> 01:34:48,120
+Here's an eraser.
+
+1751
+01:34:48,660 --> 01:34:50,120
+I slide the eraser along here.
+
+1752
+01:34:50,120 --> 01:34:53,380
+Now let's forget the microscopic heat and everything else.
+
+1753
+01:34:53,380 --> 01:34:55,380
+Let's suppose we lived in a world
+
+1754
+01:34:55,860 --> 01:34:57,300
+where erasers really
+
+1755
+01:34:57,300 --> 01:35:00,800
+came to rest because they satisfied equations of motion
+
+1756
+01:35:01,300 --> 01:35:05,080
+that made them come to rest, rather than the dirty physics of
+
+1757
+01:35:07,420 --> 01:35:08,860
+friction and so forth.
+
+1758
+01:35:08,860 --> 01:35:11,420
+The real fundamental laws of motion
+
+1759
+01:35:12,220 --> 01:35:14,220
+made erasers come to rest.
+
+1760
+01:35:15,880 --> 01:35:20,320
+Well, first thing is, there would not be information conservation.
+
+1761
+01:35:20,320 --> 01:35:20,820
+Why?
+
+1762
+01:35:20,820 --> 01:35:24,100
+Because every eraser comes to rest, no matter how it started.
+
+1763
+01:35:24,100 --> 01:35:26,060
+So it simply forgets how it started.
+
+1764
+01:35:26,060 --> 01:35:27,060
+It comes to rest, and so it...
+
+1765
+01:35:27,300 --> 01:35:29,300
+loses the information about where it started.
+
+1766
+01:35:29,300 --> 01:35:31,300
+How about energy conservation?
+
+1767
+01:35:33,380 --> 01:35:35,380
+There's no energy to be conserved.
+
+1768
+01:35:35,380 --> 01:35:36,380
+It just comes to rest.
+
+1769
+01:35:36,380 --> 01:35:38,380
+How about momentum conservation?
+
+1770
+01:35:38,380 --> 01:35:40,380
+No momentum conservation.
+
+1771
+01:35:46,260 --> 01:35:48,260
+So
+
+1772
+01:35:49,780 --> 01:35:55,820
+What is wrong with laws of physics which just have erasers come to rest?
+
+1773
+01:35:55,820 --> 01:36:02,820
+They violate some of the basic principles of classical mechanics and quantum mechanics.
+
+1774
+01:36:02,820 --> 01:36:07,820
+But in the end, what they're violating is information conservation.
+
+1775
+01:36:07,820 --> 01:36:12,820
+So ideas of energy conservation, momentum conservation, all the conservation...
+
+1776
+01:36:12,820 --> 01:36:13,820
+Oh, let me say one more thing.
+
+1777
+01:36:13,820 --> 01:36:14,820
+Yeah, come back.
+
+1778
+01:36:14,820 --> 01:36:16,820
+This eraser comes to rest.
+
+1779
+01:36:16,820 --> 01:36:18,820
+It violates momentum conservation.
+
+1780
+01:36:18,820 --> 01:36:20,820
+Does this violate translation invariance?
+
+1781
+01:36:20,820 --> 01:36:22,820
+The tabletop?
+
+1782
+01:36:22,820 --> 01:36:23,900
+Imagine the tabletop were uniform in when our world was changing.
+
+1783
+01:36:23,900 --> 01:36:24,900
+Imagine the tabletop were uniform in when our world was changing.
+
+1784
+01:36:24,900 --> 01:36:26,900
+It was uniform and went on forever and ever.
+
+1785
+01:36:26,900 --> 01:36:30,900
+And the laws of physics were that erasers come to rest.
+
+1786
+01:36:30,900 --> 01:36:33,900
+It doesn't violate translation invariance.
+
+1787
+01:36:33,900 --> 01:36:43,900
+So the statement that momentum conservation follows from translation invariance is apparently not true here.
+
+1788
+01:36:43,900 --> 01:36:45,900
+You need something else.
+
+1789
+01:36:45,900 --> 01:36:48,900
+The other thing that you need is information conservation.
+
+1790
+01:36:48,900 --> 01:36:52,900
+Information conservation plus invariance leads to momentum conservation.
+
+1791
+01:36:52,900 --> 01:36:53,900
+So, yeah.
+
+1792
+01:36:53,900 --> 01:37:00,900
+It's not only fundamental, it's probably the most single fundamental idea in physics.
+
+1793
+01:37:00,900 --> 01:37:04,900
+Is it more fundamental than causality or the same?
+
+1794
+01:37:04,900 --> 01:37:06,900
+Well, no, it's not the same.
+
+1795
+01:37:06,900 --> 01:37:12,900
+Is it more fundamental than causality?
+
+1796
+01:37:12,900 --> 01:37:14,900
+No, it's probably at the same level, though.
+
+1797
+01:37:14,900 --> 01:37:20,900
+It's one of these meta-principles without which you couldn't even begin.
+
+1798
+01:37:20,900 --> 01:37:21,900
+Of course, what do you mean?
+
+1799
+01:37:21,900 --> 01:37:24,900
+What do you mean by causality exactly?
+
+1800
+01:37:24,900 --> 01:37:26,900
+You mean that the...
+
+1801
+01:37:26,900 --> 01:37:28,900
+Can't go back in time?
+
+1802
+01:37:28,900 --> 01:37:29,900
+Yeah, yeah.
+
+1803
+01:37:29,900 --> 01:37:33,900
+It's a similar kind of principle that...
+
+1804
+01:37:33,900 --> 01:37:35,900
+That could be entropic.
+
+1805
+01:37:35,900 --> 01:37:36,900
+Could be?
+
+1806
+01:37:36,900 --> 01:37:38,900
+Anything could be.
+
+1807
+01:37:38,900 --> 01:37:47,900
+In your lecture on classical mechanics some years ago, you gave Hamilton's formulation of classical mechanics.
+
+1808
+01:37:47,900 --> 01:37:50,900
+And in that, I recall you saying, I saw it on television,
+
+1809
+01:37:50,900 --> 01:37:56,900
+that the state space maintains a uniform area.
+
+1810
+01:37:56,900 --> 01:37:58,900
+Yeah, that's the principle...
+
+1811
+01:37:58,900 --> 01:37:59,900
+Yeah.
+
+1812
+01:37:59,900 --> 01:38:02,900
+Okay, in classical mechanics, yes, that's called Leaville's theorem.
+
+1813
+01:38:02,900 --> 01:38:03,900
+That's right.
+
+1814
+01:38:03,900 --> 01:38:10,900
+And information conservation in classical mechanics is a statement that the phase space volume doesn't change.
+
+1815
+01:38:10,900 --> 01:38:13,900
+That you can't shrink the phase space volume or anything like that.
+
+1816
+01:38:13,900 --> 01:38:14,900
+Yeah.
+
+1817
+01:38:14,900 --> 01:38:17,900
+In quantum mechanics, it's called unitarity.
+
+1818
+01:38:17,900 --> 01:38:19,900
+And unitarity is a principle that
+
+1819
+01:38:19,900 --> 01:38:26,900
+orthogonal states stay orthogonal with time, which means that distinctions are always preserved.
+
+1820
+01:38:26,900 --> 01:38:30,900
+And it's deeply connected with energy conservation.
+
+1821
+01:38:30,900 --> 01:38:33,900
+Yes?
+
+1822
+01:38:33,900 --> 01:38:39,900
+Yeah, if looking at this from an information theoretic perspective,
+
+1823
+01:38:39,900 --> 01:38:48,900
+if you look at the entropy functional, it operates from probability, not microstates.
+
+1824
+01:38:48,900 --> 01:38:52,900
+No, it operates on probabilities for microstates.
+
+1825
+01:38:52,900 --> 01:38:55,900
+Yes, but not the microstates themselves.
+
+1826
+01:38:55,900 --> 01:39:07,900
+In other words, when the entropy is maximized, wouldn't that indicate the most probable distribution?
+
+1827
+01:39:07,900 --> 01:39:08,900
+Okay.
+
+1828
+01:39:08,900 --> 01:39:10,900
+And again, if...
+
+1829
+01:39:10,900 --> 01:39:12,900
+That's thermal equilibrium, yeah.
+
+1830
+01:39:12,900 --> 01:39:14,900
+Thermal equilibrium...
+
+1831
+01:39:14,900 --> 01:39:17,900
+For information theory, even if it's not thermal equilibrium...
+
+1832
+01:39:17,900 --> 01:39:24,900
+It'll define the PDF.
+
+1833
+01:39:24,900 --> 01:39:25,900
+Okay?
+
+1834
+01:39:25,900 --> 01:39:31,900
+That's the definition, going back to Shatner's paper in 48.
+
+1835
+01:39:31,900 --> 01:39:34,900
+Again, you're dealing with probabilities of microstates.
+
+1836
+01:39:34,900 --> 01:39:43,900
+And the entropy being maximized will indicate the expected value of that...
+
+1837
+01:39:43,900 --> 01:39:45,900
+The maximum value of the PDF.
+
+1838
+01:39:45,900 --> 01:39:46,900
+PDF plus PDF.
+
+1839
+01:39:46,900 --> 01:39:52,900
+The entropy equals a probability distribution, okay?
+
+1840
+01:39:52,900 --> 01:39:54,900
+It equals something.
+
+1841
+01:39:54,900 --> 01:39:56,900
+It defines one.
+
+1842
+01:39:56,900 --> 01:39:59,900
+If you look at the functional...
+
+1843
+01:39:59,900 --> 01:40:00,900
+Okay.
+
+1844
+01:40:00,900 --> 01:40:01,900
+Yes.
+
+1845
+01:40:01,900 --> 01:40:03,900
+No, the entropy doesn't define a probability distribution.
+
+1846
+01:40:03,900 --> 01:40:07,900
+The probability distribution defines an entropy.
+
+1847
+01:40:07,900 --> 01:40:12,900
+Ah, that's interesting because in information theory, it's flipped.
+
+1848
+01:40:12,900 --> 01:40:13,900
+No.
+
+1849
+01:40:13,900 --> 01:40:15,900
+Entropy is minus...
+
+1850
+01:40:15,900 --> 01:40:23,900
+Minus the sum over all configurations of the probability of the ith configuration times the logarithm of the ith configuration.
+
+1851
+01:40:23,900 --> 01:40:28,900
+This is one number, and one number can't determine p's.
+
+1852
+01:40:28,900 --> 01:40:30,900
+P's determine s.
+
+1853
+01:40:30,900 --> 01:40:34,900
+S is given in terms of the p's.
+
+1854
+01:40:34,900 --> 01:40:37,900
+But this is taking us far afield.
+
+1855
+01:40:37,900 --> 01:40:39,900
+This is taking us off...
+
+1856
+01:40:39,900 --> 01:40:40,900
+Yeah.
+
+1857
+01:40:40,900 --> 01:40:41,900
+Uh-huh.
+
+1858
+01:40:41,900 --> 01:40:43,900
+Okay.
+
+1859
+01:40:43,900 --> 01:40:49,900
+For more, please visit us at stanford.edu.
