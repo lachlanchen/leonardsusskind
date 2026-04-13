@@ -1,0 +1,330 @@
+\chapter{From Angular Momentum to Spin}
+
+What we are formally going to study is angular momentum, but what we are really after is spin. The lecture begins that way, and the notes should begin that way too. We first enter through familiar rotation, through vectors, axes, and the right-hand rule, and only then let the quantum-mechanical structure take over. The striking point is that a small amount of abstract algebra, handled in the right order, produces the whole basic architecture of spin: discrete multiplets, integer and half-integer families, and the distinction between bosons and fermions. These notes follow Leonard Susskind's lecture, with curation by LazyingArt LLC.
+
+\section{From Ordinary Rotation to Spin}
+
+We begin where the lecture begins: with ordinary angular momentum, before spin has yet been isolated. Angular momentum is a vector quantity. It points along the axis of rotation, but that statement alone does not tell us which way along the axis it points. For that we adopt the right-hand rule. One curls the fingers in the sense of rotation, and the thumb gives the direction of the angular-momentum vector. This is not something to be proved; it is part of the definition.
+
+A composite object can carry angular momentum in more than one way. It may carry orbital angular momentum simply because its center of mass moves around a chosen axis. That is not yet the phenomenon we are after. What we want is the angular momentum that remains when we go to the rest frame of the center of mass. In that frame the total ordinary momentum is zero. If there is still angular momentum left over, that remainder is what we call spin.
+
+The lecture makes this concrete before it becomes formal. A single particle moving on a circular orbit has angular momentum because it has momentum and a distance from the origin. But if we imagine two particles at opposite ends of a diameter, moving with the same sense of rotation, then the center of mass can be at rest while the total angular momentum is not zero. This is the first simple picture of spin: zero total momentum, nonzero total angular momentum.
+
+At this point the lecture introduces the first real tension. If angular momentum is quantized, then one cannot continuously interpolate between a non-rotating object and a rotating one. So if we begin with an object in a state of zero angular momentum and then excite it to the first rotational state, should we think of that as the same object now rotating, or as a different object? Susskind treats that partly as a question of language. The sharper physical question is the energy cost of the first nonzero rotational excitation.
+
+That is the point at which the lecture turns to the electron. Forget its known intrinsic spin for a moment. Ask instead whether one could take some tiny object, perhaps even a pointlike one, and ``set it into rotation.'' If the gap to the next rotational state is small, we would be inclined to recognize the result as the same object with a little extra angular momentum. If the gap is enormous, we would be inclined to say that we are no longer talking about the same familiar object. This is the route by which the lecture motivates the idea that the spin of an elementary particle is a fixed label.
+
+There is one more physical point before the algebra begins. Rotational invariance tells us that if an object has a given angular momentum, then there is nothing special about the axis along which that angular momentum points. The direction may be changed without changing the identity of the object. What is fixed is not the direction, but the total amount of spin.
+
+\subsection{Question \& Answer}
+
+Why does a smaller object cost more energy to spin?
+
+The answer is classical, and precisely because it is classical it provides the right intuition before the quantum step. The moment of inertia of a body of mass \(M\) and size \(R\) is of order
+\begin{equation}
+I\sim MR^2,
+\end{equation}
+up to shape-dependent numerical factors. The rotational kinetic energy is then of order
+\begin{equation}
+E_{\mathrm{rot}}\sim \frac{L^2}{2I}.
+\end{equation}
+So if the mass is held fixed while the size is made smaller, the moment of inertia becomes smaller, and because \(I\) sits in the denominator the same angular momentum costs more energy.
+
+Quantum mechanics adds one decisive ingredient: the angular momentum comes in discrete steps. For a very small object the first allowed nonzero rotational excitation may therefore cost an enormous amount of energy. That is the physical reason the lecture treats the intrinsic spin of an electron as a fixed property. One does not ordinarily speak of electrons with many different total spin magnitudes; the next such excitation would already be a radically different object.
+
+\section{Classical Angular Momentum As a Cross Product}
+
+Only now does the lecture pivot to mathematics. It does so in stages. First consider a single particle orbiting a center. For simplicity we take a circular orbit. The angular momentum is momentum times distance from the origin, with a sign determined by the sense of rotation. If we reverse the sense of motion, we reverse the sign.
+
+Then the lecture makes the crucial observation that this is still orbital angular momentum. The particle carries it because it is moving through space. To make something like spin out of ordinary mechanics, we need at least a composite system. If two particles sit at opposite points of an orbit and rotate together, the center of mass can be at rest while the total angular momentum is still nonzero. Spin enters, in classical language, as angular momentum remaining in the center-of-mass frame.
+
+Now the notation becomes more refined. Let \(\vec r\) denote the position vector of the particle relative to an origin, and \(\vec p\) its momentum. The angular momentum must be a vector built from these two vectors. The lecture asks, in effect: what rule combines two vectors to produce a new vector? The answer is the cross product, and with the standard convention we write
+\begin{equation}
+\vec L=\vec r\times \vec p.
+\end{equation}
+On the board the formula is washed out, but the transcript and the geometry support this standard reconstruction.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_02.png}
+\par
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-0.6,0) -- (4.8,0) node[right] {$x$};
+\draw[->] (0,-0.6) -- (0,3.8) node[above] {$y$};
+\fill (0,0) circle (1.3pt);
+\coordinate (P) at (3.2,2.3);
+\draw[->,thick] (0,0) -- (P) node[midway, above left] {$\vec r$};
+\draw[dashed] (P) -- (3.2,0);
+\draw[dashed] (P) -- (0,2.3);
+\draw[->,thick] (P) -- ++(-1.0,1.25) node[above] {$\vec p$};
+\end{tikzpicture}
+\caption{Angular momentum from position and momentum vectors. The screenshot preserves the board layout of the transition from vector geometry to the angular-momentum formula; the sketch below gives a clean reconstruction.}
+\end{figure}
+
+Resolving the cross product into components gives
+\begin{equation}
+L_x=yp_z-zp_y,\qquad
+L_y=zp_x-xp_z,\qquad
+L_z=xp_y-yp_x.
+\end{equation}
+The lecture does not present these as dead formulas to memorize. It gives a practical rule. One remembers one component, for example
+\[
+L_x=yp_z-zp_y,
+\]
+and then cycles \(x\to y\to z\to x\) to generate the others. The point of the cycling rule is not only convenience; it keeps track of the signs.
+
+For a many-particle system, the angular momentum is obtained by vector addition over constituents. That remains true in the center-of-mass frame. Thus the same classical formula that describes orbital angular momentum for a single particle also underlies the construction of spin for a composite system: total momentum zero, total angular momentum nonzero.
+
+\section{Operators And The Angular-Momentum Algebra}
+
+The lecture now says, in effect: enough classical preparation; let us do the quantum mechanics. Observable quantities are represented by operators. For present purposes we do not need to know the detailed representation of the position and momentum operators. We need only their commutation relations. The stable canonical relations are
+\begin{equation}
+[x_i,x_j]=0,\qquad [p_i,p_j]=0,\qquad [x_i,p_j]=i\hbar\,\delta_{ij}.
+\end{equation}
+The transcript briefly stumbles around the coordinate commutators, but the lecture immediately proceeds with these standard postulates, and these are the relations that support everything that follows.
+
+The physical interpretation is the familiar one. If two operators commute, they can be simultaneously measured. If they do not commute, they cannot be simultaneously specified with arbitrary precision. The lecture uses that point not merely as a reminder from elementary quantum mechanics, but as a bridge: once we know the commutators of \(x_i\) and \(p_j\), we can derive the commutators of the components of angular momentum.
+
+It is also worth pausing where the lecture pauses. Angular momentum has the same units as Planck's constant. Indeed it is distance times momentum, and the uncertainty principle already tells us that \(\Delta x\,\Delta p\) is measured in units of \(\hbar\). So the later quantization of angular momentum in units of \(\hbar\) is not some alien fact dropped from the sky; it is already encoded in the dimensions of the problem.
+
+\paragraph{A worked commutator.}
+
+The lecture explicitly computes \([L_x,L_y]\). Using
+\[
+L_x=yp_z-zp_y,\qquad L_y=zp_x-xp_z,
+\]
+we write
+\begin{align}
+[L_x,L_y]
+&=[yp_z-zp_y,\;zp_x-xp_z] \\
+&=[yp_z,\;zp_x]+[-zp_y,\;-xp_z].
+\end{align}
+The omitted cross terms contribute nothing because their factors can be pushed through each other freely. That is very much the lecture's way of thinking about commutators: where is the obstruction to pushing one operator past another?
+
+In the first surviving term the only obstruction is \(p_z\) passing through \(z\):
+\begin{equation}
+[yp_z,\;zp_x]=y[p_z,z]p_x=-i\hbar\,yp_x.
+\end{equation}
+In the second surviving term the only obstruction is \(z\) passing through \(p_z\):
+\begin{equation}
+[-zp_y,\;-xp_z]=[zp_y,\;xp_z]=x[z,p_z]p_y=i\hbar\,xp_y.
+\end{equation}
+Adding the two pieces gives
+\begin{equation}
+[L_x,L_y]=i\hbar(xp_y-yp_x)=i\hbar L_z.
+\end{equation}
+By cyclic permutation one then finds
+\begin{equation}
+[L_x,L_y]=i\hbar L_z,\qquad
+[L_y,L_z]=i\hbar L_x,\qquad
+[L_z,L_x]=i\hbar L_y.
+\end{equation}
+In compact form,
+\begin{equation}
+[L_i,L_j]=i\hbar\,\epsilon_{ijk}L_k.
+\end{equation}
+
+This is the point where the lecture insists on a recap. The algebra closes on the \(L_i\) themselves. We no longer need to carry \(x_i\) and \(p_j\) explicitly. The angular-momentum algebra has become an abstract structure, and it is rotationally invariant: if we choose any other orthogonal axes, the commutators have the same form. Moreover, because total angular momentum for a composite system is obtained by adding constituent angular momenta, the same commutation relations hold for spin angular momentum in the center-of-mass frame.
+
+\section{Ladder Operators And The Quantization Axis}
+
+Now the lecture says, quite explicitly, that the magic is beginning. We choose a working axis, not because nature prefers it, but because the algebra forces us to focus on one component at a time. Since the different components of angular momentum do not commute, at most one component can be simultaneously specified. We choose the \(z\)-axis as the quantization axis.
+
+The new operators are
+\begin{equation}
+L_\pm=L_x\pm iL_y.
+\end{equation}
+On the board Susskind temporarily sets \(\hbar=1\), simply to keep the algebra manageable in real time. We restore \(\hbar\) in the final formulas. If
+\begin{equation}
+L_z\lvert m\rangle=m\hbar\,\lvert m\rangle,
+\end{equation}
+then we adopt the standard commutator convention
+\begin{equation}
+[L_z,L_\pm]=\pm \hbar L_\pm.
+\end{equation}
+The lecture often writes the reversed-order form
+\[
+[L_\pm,L_z]=\mp \hbar L_\pm,
+\]
+which is equivalent and worth noting so that the signs do not become mysterious.
+
+The reason for introducing \(L_\pm\) is that they move us through the spectrum of \(L_z\). Take a state \(\lvert m\rangle\) of definite \(L_z\). Then
+\begin{align}
+L_z\bigl(L_+\lvert m\rangle\bigr)
+&=\bigl(L_+L_z+[L_z,L_+]\bigr)\lvert m\rangle \\
+&=\bigl(L_+L_z+\hbar L_+\bigr)\lvert m\rangle \\
+&=(m+1)\hbar\,\bigl(L_+\lvert m\rangle\bigr).
+\end{align}
+So \(L_+\lvert m\rangle\) is either zero or an eigenstate of \(L_z\) with eigenvalue \((m+1)\hbar\). Likewise,
+\begin{equation}
+L_-\lvert m\rangle\propto \lvert m-1\rangle.
+\end{equation}
+This is the step the lecture wants us to feel as genuine payoff. The algebra has started to produce physics. The allowed \(m\)-values come in unit steps.
+
+We also see why one component at a time is built into the subject. We cannot sharply specify \(L_x\), \(L_y\), and \(L_z\) simultaneously. The best we can do is choose one component, usually \(L_z\), and ask about its possible values inside a multiplet.
+
+\subsection{Question \& Answer}
+
+If the ladder always raises or lowers by one step, how can the spectrum ever stop?
+
+The proof that \(L_+\) raises the \(L_z\) eigenvalue says only that if \(L_+\lvert m\rangle\) is nonzero, then it lands at \(m+1\). It does not say that the state must survive forever under repeated raising. But for a fixed particle the total spin is not supposed to grow without bound. That would change the character of the object itself.
+
+So the only possible resolution is the same one familiar from the harmonic oscillator. At some point the raising operator must annihilate the state. There must be a highest-weight state such that
+\begin{equation}
+L_+\lvert m_{\max}\rangle=0.
+\end{equation}
+This is not a side remark. It is the condition that makes a finite spin multiplet possible.
+
+\section{Finite Multiplets, Highest Weight, And \(L^2\)}
+
+Once the highest-weight condition is admitted, the spectrum becomes tightly constrained. Repeated action of \(L_-\) takes us downward in unit steps, and rotational invariance says that if an angular momentum can point maximally upward, then it can also point maximally downward with the same magnitude. So
+\begin{equation}
+m_{\min}=-m_{\max}.
+\end{equation}
+The allowed values are therefore
+\begin{equation}
+m=-m_{\max},-m_{\max}+1,\dots,m_{\max},
+\end{equation}
+and the number of states in the multiplet is
+\begin{equation}
+2m_{\max}+1.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_07_figure_03.png}
+\par
+\begin{tikzpicture}[scale=1.0]
+\draw[thick] (1.8,-2.3) -- (1.8,2.3);
+\draw (1.55,1.15) -- (2.05,1.15);
+\draw (1.55,0) -- (2.05,0);
+\draw (1.55,-1.15) -- (2.05,-1.15);
+\draw (1.62,1.9) -- (1.98,1.9);
+\draw (1.62,-1.9) -- (1.98,-1.9);
+\node[right] at (2.15,1.15) {$m=1$};
+\node[right] at (2.15,0) {$m=0$};
+\node[right] at (2.15,-1.15) {$m=-1$};
+\node[left] at (1.1,1.9) {$L_+\lvert m_{\max}\rangle=0$};
+\end{tikzpicture}
+\caption{Highest-weight condition and the \(m\)-level ladder. The board preserves the two-part logic of the argument: the cutoff condition at left and the discrete \(m\)-spectrum at right.}
+\end{figure}
+
+The board visibly shows the central \(m=1,0,-1\) pattern, but the transcript makes clear that the argument is general. From symmetry and unit spacing, the multiplets fall into two families. In the first family, \(m=0\) is present, and the entire ladder consists of integers. In the second family, \(m=0\) is absent, and the entire ladder consists of half-integers:
+\[
+m=\pm\frac12,\ \pm\frac32,\ \dots,\ \pm m_{\max}.
+\]
+Only after this structure is clear do we introduce the standard notation
+\begin{equation}
+s:=m_{\max}.
+\end{equation}
+The particle is then said to have spin \(s\). Thus spin \(0,1,2,\dots\) belongs to the integer family, while spin \(\tfrac12,\tfrac32,\dots\) belongs to the half-integer family.
+
+The lecture now turns to the magnitude of the angular momentum. If the top state is ``pointing straight up,'' one might naively expect \(L^2=s^2\hbar^2\). But that cannot be quite right. If \(L_z\) is sharp, then \(L_x\) and \(L_y\) cannot both be sharp and zero, because the components do not commute. There must be an extra quantum correction.
+
+The board derivation at this point is hesitant about signs, so it is better to preserve the lecture's intent in the canonical standard form:
+\begin{equation}
+L^2=L_x^2+L_y^2+L_z^2=L_-L_+ + L_z^2 + \hbar L_z.
+\end{equation}
+On the blackboard, where \(\hbar=1\), this appears as
+\[
+L^2=L_-L_+ + L_z^2 + L_z.
+\]
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_07_figure_04.png}
+\caption{\(L^2\) on the highest-weight state. The board records the structure of the calculation, while the text writes the final identity in cautious standard form with \(\hbar\) restored.}
+\end{figure}
+
+Now act on the highest-weight state:
+\begin{align}
+L^2\lvert s,s\rangle
+&=\bigl(L_-L_+ + L_z^2 + \hbar L_z\bigr)\lvert s,s\rangle \\
+&=L_-L_+\lvert s,s\rangle + s^2\hbar^2\lvert s,s\rangle + s\hbar^2\lvert s,s\rangle.
+\end{align}
+But \(L_+\lvert s,s\rangle=0\), so the first term vanishes. Therefore
+\begin{equation}
+L^2\lvert s,s\rangle=s(s+1)\hbar^2\,\lvert s,s\rangle.
+\end{equation}
+The extra \(+\,s\) is the quantum correction. Classically one would expect only \(s^2\).
+
+The lecture then stresses another key fact:
+\begin{equation}
+[L^2,L_i]=0,\qquad i=x,y,z.
+\end{equation}
+So we may simultaneously specify \(L^2\) and one component, say \(L_z\), even though we cannot simultaneously specify two different components. For a particle of fixed spin \(s\), the basis vectors of spin space are therefore
+\[
+\lvert s,m\rangle,\qquad m=-s,-s+1,\dots,s.
+\]
+The algebra is not acting on ordinary position space here. It is deducing the structure of spin space itself. Every state in the ladder has the same \(L^2\) eigenvalue \(s(s+1)\hbar^2\); what changes from one state to the next is only the chosen component \(m\).
+
+\section{Spin-\(\tfrac12\) States And The Meaning Of Orientation}
+
+The next question in the lecture is exactly the right one to ask at this point. If a spin-\(\tfrac12\) particle has only the two \(z\)-axis values \(+\hbar/2\) and \(-\hbar/2\), what has happened to all the directions in between? This is where quantum mechanics stops being merely a bookkeeping device and becomes conceptually sharp.
+
+For spin \(\tfrac12\), let
+\[
+\lvert+\rangle=\left\lvert \frac12,\frac12\right\rangle,\qquad
+\lvert-\rangle=\left\lvert \frac12,-\frac12\right\rangle.
+\]
+These are the two basis states of definite \(L_z\). A general spin state is
+\begin{equation}
+\lvert\psi\rangle=\alpha\lvert+\rangle+\beta\lvert-\rangle,
+\qquad
+|\alpha|^2+|\beta|^2=1.
+\end{equation}
+The probabilities for measuring \(+\hbar/2\) and \(-\hbar/2\) along the \(z\)-axis are \(|\alpha|^2\) and \(|\beta|^2\). If we multiply both coefficients by the same phase \(e^{i\theta}\), nothing physical changes. So the state depends on two independent real parameters: four from the two complex numbers, minus one normalization condition, minus one unphysical overall phase.
+
+That parameter count is not accidental. Two real parameters are exactly what one needs to describe an orientation in space.
+
+\subsection{Question \& Answer}
+
+If measurements along \(z\) give only discrete values, what becomes of directions between up and down?
+
+They return as superpositions. A definite spatial orientation need not be an eigenstate of \(L_z\). The lecture gives the simplest examples informally, and in normalized form they are
+\begin{equation}
+\lvert x,+\rangle=\frac{\lvert+\rangle+\lvert-\rangle}{\sqrt2},
+\qquad
+\lvert y,+\rangle=\frac{\lvert+\rangle+i\lvert-\rangle}{\sqrt2}.
+\end{equation}
+These are not new eigenvalues of \(L_z\). They are new states.
+
+Take \(\lvert x,+\rangle\). If we measure \(L_z\), we obtain \(+\hbar/2\) and \(-\hbar/2\) with equal probability \(1/2\). Therefore
+\begin{equation}
+\langle L_z\rangle
+=
+\frac12\left(\frac{\hbar}{2}\right)
++
+\frac12\left(-\frac{\hbar}{2}\right)
+=0.
+\end{equation}
+So the actual outcomes remain discrete, but the average behaves as though the spin had been rotated into the \(x\)-direction. This is exactly the lecture's point: the measured values stay quantized, while the expectation values carry the classical-looking geometry.
+
+One may say it this way. To point the spin along an arbitrary axis means to prepare a state for which measurement along that axis gives a definite result. With respect to the \(z\)-axis, that same state will generally be a superposition and will yield a distribution of outcomes. The directions in between have not disappeared; they are encoded in the amplitudes \(\alpha\) and \(\beta\).
+
+The lecture briefly flags the next related notion, helicity, for particles in motion. But that belongs to a later discussion. Here the essential lesson is already complete: superposition restores continuous orientation at the level of states, even though any chosen component has discrete eigenvalues.
+
+\section{Spin Statistics, Composites, And Pauli}
+
+The lecture now broadens the discussion. Spin is not only a property of multiplets; it is tied to one of the central structural facts of particle physics. There is a theorem of relativistic quantum mechanics, not proved here, that correlates spin with statistics. Integer-spin particles are bosons. Half-integer-spin particles are fermions.
+
+From that theorem the lecture immediately passes to composites. Two half-integer spins add to an integer. More generally, an even number of fermionic constituents gives a bosonic composite, while an odd number gives a fermionic composite. The examples in the lecture are deliberately concrete:
+\begin{itemize}
+\item ordinary hydrogen, made from a proton and an electron, is bosonic as a whole;
+\item the deuteron, made from a proton and a neutron, is bosonic;
+\item deuterium, which adds an electron to that bosonic nucleus, is fermionic;
+\item positronium, made from an electron and a positron, is bosonic.
+\end{itemize}
+The lecture also remarks that particles and antiparticles have the same spin.
+
+It then turns to the Pauli exclusion principle and insists on a correction that matters. Pauli did not say that two electrons cannot share the same orbital motion. He said that two electrons cannot share the same full quantum state. So two electrons may occupy the same orbital state provided their spin states are different. In the simple atomic language of the lecture, one may be spin up and the other spin down relative to the chosen axis. The exclusion principle acts on the whole state, not merely on the orbital part.
+
+This is why the late atomic detour still belongs here. In spectroscopic notation, \(S\), \(P\), \(D\), \(F\) correspond to orbital angular momenta \(l=0,1,2,3\). The same counting rule that gives \(2s+1\) spin states gives \(2l+1\) orbital states: one for \(l=0\), three for \(l=1\), five for \(l=2\), and so on. The angular-momentum machinery developed for spin reappears immediately in atomic structure.
+
+The later examples of helium, superfluidity, superconductivity, and higher spins are best read as illustrations rather than as part of the central derivation. Helium is invoked as a familiar bosonic system whose constituents come in even-numbered fermionic pairs. Higher spins are mentioned only briefly: spin \(0\), spin \(1\), and spin \(2\) occur in elementary-particle physics in the usual way, while higher spins arise naturally for composite objects and only conjecturally for some speculative elementary states.
+
+The lecture ends, deliberately, with a paradox left open. If two fermions can combine into a boson, how can two such bosonic composites occupy the same state when the fermionic constituents, taken individually, cannot? That question is not resolved here. It is explicitly deferred, and it should remain deferred in the notes as well.
+
+\section{Summary}
+
+The lecture begins by naming angular momentum but is really after spin from the start. We first separate orbital motion from spin by going to the center-of-mass frame, then use the energy cost of rotational excitation to explain why the spin of an elementary particle behaves as a fixed label. From there the mathematics unfolds in the order the lecture wants: \(\vec L=\vec r\times\vec p\), the angular-momentum commutators, the ladder operators, the highest-weight condition, the finite multiplet, and finally the invariant value \(L^2=s(s+1)\hbar^2\). For spin \(\tfrac12\), superposition explains what becomes of directions between up and down: the measurement outcomes stay discrete, while the expectation values recover the classical geometry of orientation. The final payoff is the spin-statistics connection and Pauli exclusion, with the lecture's closing composite-boson paradox left open as a forward pointer.
