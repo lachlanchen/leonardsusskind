@@ -1,0 +1,52 @@
+{
+  "course_rel": "supplementary/particle_physics_2_standard_model/2010_winter",
+  "transcript_rel": "supplementary/particle_physics_2_standard_model/2010_winter/089 - Lecture 5 \uff5c New Revolutions in Particle Physics\uff1a Standard Model [3g6RtyGjX3o].md",
+  "video_rel": "supplementary/particle_physics_2_standard_model/2010_winter/089 - Lecture 5 \uff5c New Revolutions in Particle Physics\uff1a Standard Model [3g6RtyGjX3o].mp4",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Lecture 5 : New Revolutions in Particle Physics\uff1a Standard Model",
+  "assets": [
+    {
+      "name": "lecture_05_figure_02.png",
+      "timestamp_seconds": 213.59,
+      "timestamp_hhmmss": "00:03:33.590",
+      "source_candidate": "lecture_05_window_03_candidate_04_000333590.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the clearest and most complete of the set. The lecturer\u2019s hand has moved away, so the board writing is least occluded and the main equation for the vector potential is most legible. It is the most useful frame for pairing with a cleaned typeset equation in the notes.",
+      "subtitle_excerpt": "also derivatives, also derivatives of the vector potential.",
+      "segment_start_seconds": 209.85,
+      "segment_start_hhmmss": "00:03:29.850",
+      "segment_end_seconds": 214.1,
+      "segment_end_hhmmss": "00:03:34.100",
+      "caption_hint": "Four-vector potential on the board"
+    },
+    {
+      "name": "lecture_05_figure_03.png",
+      "timestamp_seconds": 1127.08,
+      "timestamp_hhmmss": "00:18:47.080",
+      "source_candidate": "lecture_05_window_05_candidate_04_001847080.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the most useful for notes because the lecturer has stepped away and the board writing is fully visible with minimal occlusion. It clearly preserves the main point of the subtitle window: the original matrix action and the corresponding complex-conjugate matrix acting on the conjugate quantity.",
+      "subtitle_excerpt": "you should use the complex conjugate matrix.",
+      "segment_start_seconds": 1120.68,
+      "segment_start_hhmmss": "00:18:40.680",
+      "segment_end_seconds": 1127.68,
+      "segment_end_hhmmss": "00:18:47.680",
+      "caption_hint": "Complex-conjugate matrix acting on the conjugate field"
+    },
+    {
+      "name": "lecture_05_figure_04.png",
+      "timestamp_seconds": 5126.97,
+      "timestamp_hhmmss": "01:25:26.970",
+      "source_candidate": "lecture_05_window_06_candidate_02_012526970.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame gives the clearest and most complete view of the decay sketch while keeping the key labels legible. The pion line, the intermediate W, and the two outgoing branches are all visible, and the lecturer\u2019s hand is less obstructive here than in the later frames where it sits directly on the vertex.",
+      "subtitle_excerpt": "If the energy of the intermediate state doesn't",
+      "segment_start_seconds": 5125.64,
+      "segment_start_hhmmss": "01:25:25.640",
+      "segment_end_seconds": 5129.14,
+      "segment_end_hhmmss": "01:25:29.140",
+      "caption_hint": "Pion decay through a W boson"
+    }
+  ]
+}
