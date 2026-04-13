@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/quantum_entanglement/2006_fall_part_1",
+  "transcript_rel": "supplementary/quantum_entanglement/2006_fall_part_1/052 - Lecture 5 \uff5c Quantum Entanglements, Part 1 (Stanford) [XlLsTaJn9AQ].md",
+  "video_rel": "supplementary/quantum_entanglement/2006_fall_part_1/052 - Lecture 5 \uff5c Quantum Entanglements, Part 1 (Stanford) [XlLsTaJn9AQ].mp4",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Lecture 5 : Quantum Entanglements, Part 1 (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_05_figure_02.png",
+      "timestamp_seconds": 161.091,
+      "timestamp_hhmmss": "00:02:41.091",
+      "source_candidate": "lecture_05_window_02_candidate_04_000241091.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the most useful frame because the first line of the action table is the most developed here: the left-hand operator label and the ket are already legible, and the equation has progressed furthest toward the stated result. The earlier frames are sharper in places but show a less finished line.",
+      "subtitle_excerpt": "First of all, sigma one on up equals down.",
+      "segment_start_seconds": 157.799,
+      "segment_start_hhmmss": "00:02:37.799",
+      "segment_end_seconds": 161.54,
+      "segment_end_hhmmss": "00:02:41.540",
+      "caption_hint": "First Pauli action on the up state"
+    },
+    {
+      "name": "lecture_05_figure_03.png",
+      "timestamp_seconds": 294.03,
+      "timestamp_hhmmss": "00:04:54.030",
+      "source_candidate": "lecture_05_window_03_candidate_02_000454030.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This later frame is slightly more useful because the local board layout is a bit more developed: it retains the normalized two-spin superposition at upper left, the small spin sketches across the top, and the lower line being written toward the zero-expectation statement. Although the lecturer occludes part of the center, this is still the most complete record of the moment.",
+      "subtitle_excerpt": "spin of sigma i is equal to zero.",
+      "segment_start_seconds": 293.7,
+      "segment_start_hhmmss": "00:04:53.700",
+      "segment_end_seconds": 294.16,
+      "segment_end_hhmmss": "00:04:54.160",
+      "caption_hint": "Vanishing one-spin expectation value"
+    },
+    {
+      "name": "lecture_05_figure_04.png",
+      "timestamp_seconds": 2993.04,
+      "timestamp_hhmmss": "00:49:53.040",
+      "source_candidate": "lecture_05_window_05_candidate_04_004953040.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the best frame because it preserves the full right-hand geometric sketch while slightly reducing the writing-motion occlusion on the left. The board layout is most useful here: algebraic projection notation on the left and a coordinate-style vector diagram on the right, which together support note writing better than the earlier, more mid-stroke frames.",
+      "subtitle_excerpt": "This is projection onto sigma-3 equals one.",
+      "segment_start_seconds": 2989.52,
+      "segment_start_hhmmss": "00:49:49.520",
+      "segment_end_seconds": 2993.52,
+      "segment_end_hhmmss": "00:49:53.520",
+      "caption_hint": "Projection onto the \\(\\sigma_3=1\\) component"
+    },
+    {
+      "name": "lecture_05_figure_05.png",
+      "timestamp_seconds": 3100.92,
+      "timestamp_hhmmss": "00:51:40.920",
+      "source_candidate": "lecture_05_window_06_candidate_04_005140920.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the strongest frame because the left-hand projection formulas are already in place and remain readable, while the right-hand expression for the operator itself is the most developed of the four candidates. It gives the clearest snapshot of both the action of the projector and the move toward its explicit matrix form.",
+      "subtitle_excerpt": "The projection operator onto sigma-3 equals plus one.",
+      "segment_start_seconds": 3094.52,
+      "segment_start_hhmmss": "00:51:34.520",
+      "segment_end_seconds": 3101.52,
+      "segment_end_hhmmss": "00:51:41.520",
+      "caption_hint": "Projection onto the \\(\\sigma_3=+1\\) subspace"
+    }
+  ]
+}
