@@ -1,137 +1,131 @@
 # Math Bank
 ## Core Equations
-- \(\lambda = \text{wavelength}\) [transcript-backed]
-- \(f=\frac{1}{T}\) [visible]
-- \(\frac{\lambda}{T}=v\) [transcript-backed]
-- \(\frac{\lambda}{T}=c\) for light [transcript-backed]
-- \(\lambda f=c\) [visible]
-- \(f=\frac{c}{\lambda}\) [visible]
+- \(\lambda = \text{wavelength}\) [standard reconstruction]
+- \(f = \frac{1}{T}\) [visible]
+- \(v = \frac{\lambda}{T}\) [standard reconstruction]
+- \(\lambda f = c\) for light [visible]
+- \(f = \frac{c}{\lambda}\) [visible]
 - \(\omega = 2\pi f\) [transcript-backed]
-- \(\frac{\omega}{2\pi}=f\) [visible]
-- \(\omega=\frac{2\pi c}{\lambda}\) [visible]
-- \(E_\gamma=\hbar\omega\) [transcript-backed]
-- \(E_{\text{beam}}=N\hbar\omega\) for \(N\) identical photons [transcript-backed]
-- \(E_{\mathrm{rest}}=mc^2\) [transcript-backed]
-- \(E=m\) when \(c=1\) and the particle is massive and at rest [visible]
-- \(E_\gamma=\omega\) when \(\hbar=1\) [transcript-backed]
-- \(\vec p = m\vec v\) in the nonrelativistic limit [transcript-backed]
-- \(p=\frac{E}{c}\) for a collimated light beam [transcript-backed]
-- \(E=cp\) for light [transcript-backed]
-- \(p_\gamma=\frac{\hbar\omega}{c}\) [transcript-backed]
-- \(\omega\lambda = 2\pi c\) [transcript-backed]
-- \(p_\gamma=\frac{h}{\lambda}\) [standard reconstruction]
+- \(\frac{\omega}{2\pi} = f\) [visible]
+- \(\omega = \frac{2\pi c}{\lambda}\) [visible]
+- \(\omega \lambda = 2\pi c\) [transcript-backed]
+- \(E_\gamma = \hbar \omega\) [transcript-backed]
+- \(E_{\text{beam}} = n\,\hbar \omega\) for a monochromatic beam with \(n\in\mathbb{Z}_{\ge 0}\) photons [transcript-backed]
+- \(E_{\text{rest}} = mc^2\) [transcript-backed]
+- \(E_{\text{annihilation}} = 2m_e c^2\) for electron-positron annihilation at rest [transcript-backed]
+- \(c=1\) and \(\hbar=1\) in natural units [transcript-backed]
+- \(E=m\) for a massive object at rest when \(c=1\) [visible]
+- \(E_\gamma = \omega\) when \(\hbar=1\) [transcript-backed]
+- \(\mathbf{p}=m\mathbf{v}\) in the nonrelativistic limit [transcript-backed]
+- \(p_{\text{light}} = \frac{E}{c}\) for the magnitude of momentum of a collimated light beam [transcript-backed]
+- \(p_\gamma = \frac{\hbar \omega}{c}\) [transcript-backed]
+- \(p_\gamma = \frac{2\pi\hbar}{\lambda}\) [transcript-backed]
+- \(p_\gamma = \frac{h}{\lambda}\) [transcript-backed]
+- \(F = G\frac{m_1 m_2}{r^2}\) [transcript-backed]
 
 ## Definitions And Objects
-- Particle: discrete, indivisible unit in the opening atomist sense.
-- Field: function on space; lecture examples are density, electric field, magnetic field.
-- \(\lambda\): wavelength, the spatial length of one full cycle.
-- \(T\): period, the time for one cycle to pass a fixed point.
-- \(f\): frequency in cycles per second.
-- \(\omega\): angular frequency in radians per second.
-- \(\alpha\) radiation: helium nuclei, i.e. two protons and two neutrons bound together.
-- \(\beta\) radiation: electrons.
-- \(\gamma\) radiation: photons, i.e. high-energy light.
-- Photon: indivisible quantum of light; carries energy and momentum but has no rest mass.
-- Mass in the lecture’s modern usage: rest mass.
+- Particle: a discrete, indivisible unit in the loose lecture-opening sense.
+- Field: a function on space; examples given are density, electric field, magnetic field.
+- \(\alpha\), \(\beta\), \(\gamma\) radiation:
+  \(\beta\) = electrons,
+  \(\alpha\) = helium nuclei,
+  \(\gamma\) = photons.
+- Wavelength \(\lambda\): spatial length of one full cycle of a wave.
+- Period \(T\): time for one full cycle to pass a fixed observer.
+- Frequency \(f\): cycles per unit time; \(f=1/T\).
+- Angular frequency \(\omega\): frequency measured in radians per second; preferred physics notation in the lecture.
+- Photon: discrete indivisible quantum of light.
+- Mass \(m\): use modern convention; this means what older language called rest mass.
 - Rest energy: energy of a massive object in a frame where the object has no net motion.
-- Momentum: conserved vector quantity pointing along the direction of motion.
-- Natural units used later in the lecture: \(c=1\), \(\hbar=1\), but \(G\) is not set to \(1\) for ordinary particle-physics discussion.
-- Wave pattern in quantum mechanics: probability pattern for discrete detection events.
+- Momentum \(\mathbf{p}\): vector quantity pointing along the direction of motion.
+- For light, use \(p\) for the magnitude of momentum when discussing a collimated beam.
+- Natural units: unit convention in which \(c=1\), often also \(\hbar=1\).
 
 ## Derivation Steps
-Dalton mass argument
-1. Compare equal numbers of molecules of different substances.
-2. Observe that the masses come close to integer multiples of the hydrogen case.
-3. Infer that matter is built from discrete units rather than continuously varying stuff.
-4. Reinterpret this modernly: atomic masses are dominated by proton and neutron counts, with electron mass a small correction.
-
-Wave speed from wavelength and period
-1. One full wavelength passes in one period.
-2. Distance traveled in that time is \(\lambda\).
-3. Time elapsed is \(T\).
-4. Therefore wave speed is \(v=\lambda/T\).
+Wave-speed relation
+1. Define one wavelength \(\lambda\) as one full spatial cycle.
+2. Define one period \(T\) as the time for one full cycle to pass a fixed point.
+3. In one period, the wave advances one wavelength.
+4. Therefore speed is distance over time: \(v=\lambda/T\).
 5. For light, set \(v=c\).
 
 Frequency form of the wave relation
-1. Define frequency by \(f=1/T\).
-2. Start from \(\lambda/T=c\) for light.
-3. Replace \(1/T\) by \(f\).
-4. Obtain \(\lambda f=c\).
-5. Rearranged form: \(f=c/\lambda\).
+1. Start from \(c=\lambda/T\).
+2. Define frequency by \(f=1/T\).
+3. Substitute \(1/T=f\).
+4. Obtain \(\lambda f = c\).
+5. Rearranged form used on the board: \(f=c/\lambda\).
 
 Angular-frequency form
 1. Define angular frequency by \(\omega=2\pi f\).
 2. Start from \(f=c/\lambda\).
 3. Substitute \(f=\omega/(2\pi)\).
 4. Get \(\omega/(2\pi)=c/\lambda\).
-5. Multiply through by \(2\pi\) to obtain \(\omega=2\pi c/\lambda\).
-6. Equivalent compact form: \(\omega\lambda=2\pi c\).
+5. Rearranged takeaway: \(\omega=2\pi c/\lambda\).
 
 Photon energy and wavelength
-1. For one photon, use \(E_\gamma=\hbar\omega\).
-2. Use \(\omega=2\pi c/\lambda\).
-3. Shorter \(\lambda\) implies larger \(\omega\).
-4. Larger \(\omega\) implies larger photon energy.
-5. Therefore short-wavelength photons are high-energy photons.
+1. For a photon, use \(E_\gamma=\hbar\omega\).
+2. From \(\omega=2\pi c/\lambda\), shorter \(\lambda\) means larger \(\omega\).
+3. Larger \(\omega\) means larger photon energy.
+4. Therefore short-wavelength photons are high-energy photons.
 
-Energy of a many-photon beam
-1. One photon of fixed frequency carries \(\hbar\omega\).
-2. A beam with \(N\) such photons carries \(N\hbar\omega\).
-3. Large total energy at long wavelength means many photons, not large energy per photon.
+Energy of a monochromatic beam
+1. One photon of frequency \(\omega\) carries energy \(\hbar\omega\).
+2. A beam with many photons of the same frequency carries a total energy that is an integer multiple of \(\hbar\omega\).
+3. This is the lecture’s “discreteness remnant” for a classical-looking light wave.
 
-Rest-energy statement
-1. Modern lecture usage takes “mass” to mean rest mass.
-2. \(E=mc^2\) applies to the energy of a massive object at rest.
-3. Heating a stationary box of gas adds internal energy.
-4. The box remains macroscopically at rest but its rest mass increases.
-5. Electron-positron annihilation gives an observational example: rest energy reappears as photon energy.
+Rest-energy meaning
+1. Replace old “rest mass” language by modern “mass.”
+2. Restrict \(E=mc^2\) to the energy of a massive object in its rest frame.
+3. Use the heated box example: adding internal energy while keeping the box at rest increases its mass.
+4. Use electron-positron annihilation at rest: initial rest energy \(2m_e c^2\) reappears as photon energy.
 
 Natural-units simplification
-1. Choose units so that \(c=1\).
-2. Then rest-energy relation simplifies from \(E=mc^2\) to \(E=m\).
-3. Choose units so that \(\hbar=1\).
-4. Then photon-energy relation simplifies from \(E_\gamma=\hbar\omega\) to \(E_\gamma=\omega\).
-5. Keep the two simplifications conceptually separate.
+1. Note that \(c\) depends on unit choice, so choose units with \(c=1\).
+2. Then \(E_{\text{rest}}=mc^2\) becomes \(E=m\).
+3. Choose units with \(\hbar=1\).
+4. Then \(E_\gamma=\hbar\omega\) becomes \(E_\gamma=\omega\).
+5. Keep the meanings distinct: \(E=m\) is for a massive object at rest; \(E=\omega\) is the photon-energy relation in those units.
 
-Light momentum
-1. For a collimated light beam, use \(p=E/c\).
-2. For one photon, substitute \(E_\gamma=\hbar\omega\).
-3. Obtain \(p_\gamma=\hbar\omega/c\).
+Photon momentum
+1. Start from the beam relation \(p=E/c\).
+2. For one photon, substitute \(E=\hbar\omega\).
+3. Get \(p_\gamma=\hbar\omega/c\).
 4. Use \(\omega=2\pi c/\lambda\).
-5. The \(c\) factors cancel, giving \(p_\gamma=2\pi\hbar/\lambda\).
+5. Cancel \(c\) to obtain \(p_\gamma=2\pi\hbar/\lambda\).
 6. Use \(h=2\pi\hbar\).
-7. Obtain \(p_\gamma=h/\lambda\).
+7. Conclude \(p_\gamma=h/\lambda\).
 
-Resolution and accelerator logic
-1. To resolve a structure, probe it with wavelength on the order of or shorter than its size.
-2. Shorter wavelength means larger momentum by \(p_\gamma=h/\lambda\).
-3. Shorter wavelength also means larger energy by \(E_\gamma=\hbar\omega\).
-4. Therefore smaller distance scales require higher-momentum, higher-energy probes.
-5. High-energy probes require larger accelerators or stronger accelerating structures.
+Resolution and accelerator scale
+1. Smaller objects require shorter probing wavelength.
+2. Shorter wavelength implies larger \(\omega\), hence larger \(E_\gamma\).
+3. Shorter wavelength also implies larger \(p_\gamma\).
+4. Therefore probing smaller structure requires higher-energy, higher-momentum particles.
+5. Hence larger accelerators are needed to reach smaller distance scales.
 
 ## Notation Choices
-- Use \(\lambda\) for wavelength exactly as introduced on the board.
-- Use \(T\) for period and \(f\) for frequency when following the lecture’s introductory wave discussion.
-- Use \(\omega\) as the preferred physicist’s frequency variable once the lecture pivots from elementary notation to standard practice.
-- Use \(c\) for the speed of light; use \(v\) only when stating the general wave-speed relation before specializing to light.
-- Use \(\hbar\) in \(E_\gamma=\hbar\omega\); switch to \(h\) only in the final momentum formula \(p_\gamma=h/\lambda\), where it removes the explicit \(2\pi\).
-- Use \(E_\gamma\) in the notes when disambiguating photon energy from rest energy.
-- Use \(E_{\mathrm{rest}}\) in polished notes if needed to clarify the lecture’s meaning of \(E=mc^2\).
-- Use \(p\) for momentum magnitude of a collimated light beam or photon; use \(\vec p\) only when emphasizing vector direction.
-- Use \(\alpha,\beta,\gamma\) as radiation labels, not as generic variables.
-- Treat “mass” as rest mass unless the notes explicitly say otherwise.
-- Write \(E=m\) only after declaring \(c=1\), and only for massive particles at rest.
-- Write \(E_\gamma=\omega\) only after declaring \(\hbar=1\), and only for photons.
-- Do not write \(E=m\) for photons.
-- Keep “gamma rays are photons” explicit; the lecture uses \(\gamma\) radiation as high-energy light, not a different species.
+- Use \(\lambda\) for wavelength throughout.
+- Use \(T\) for period.
+- Use \(f\) only when the lecture is explicitly speaking in cycles per second.
+- Prefer \(\omega\) in the polished notes once the lecture has introduced the physicists’ convention.
+- Typeset the canonical relation as \(\omega=2\pi f\), even though the board also shows \(\omega/(2\pi)=f\).
+- Use \(c\) for the speed of light; write \(c=1\) explicitly when switching to natural units.
+- Use \(\hbar\) as the default Planck constant in the lecture’s equations.
+- Introduce \(h\) only at the end of the photon-momentum derivation to write \(p=h/\lambda\).
+- Use \(m\) to mean modern mass, not “relativistic mass.”
+- When needed for clarity, write \(E_{\text{rest}}\) in the notes even if the lecture often just says \(E\).
+- Use \(\mathbf{p}\) when discussing momentum as a vector; use \(p\) for magnitudes in one-dimensional or collimated-beam contexts.
+- Keep \(\alpha,\beta,\gamma\) as radiation labels, not generic coefficients.
+- Avoid introducing extra formalism such as wavefunctions or operators in this chapter-stage bank.
 
 ## Uncertain Mathematics
-- The full board text \(\lambda=\text{wavelength}\) is only partly visible in the frame; the completion is secure from the transcript, not the image alone.
-- The board relation \(\omega/(2\pi)=f\) is less crisp than the lower equations; if only one form is used in the final notes, \(\omega=2\pi f\) is the safer transcript-backed statement.
-- The lower line beneath \(E=m\) in `lecture_01_figure_05.png` is not reliably legible; do not formalize it beyond noting that it looks like a dimensional mnemonic.
-- The spoken derivation of photon momentum briefly gets confused about the location of the \(2\pi\); keep the cleaned algebra but do not present the messy intermediate spoken steps as authoritative.
-- The transcripted numerical value and unit discussion for \(\hbar\) is garbled; any exact SI constant should be verified externally before inclusion.
-- The uncertainty principle is mentioned only qualitatively; do not assign an exact coefficient such as \(1/2\) unless sourced elsewhere.
-- The transcript around 01:32–01:33 is corrupted; do not infer any formula such as “\(E=m^2\)” from that passage.
-- The charge discussion near \(1/137\) is incomplete and convention-dependent; do not elevate it into a central equation for this chapter without later lecture support.
-- The wavelength-band ranges for radio, microwave, infrared, and visible are presented loosely and rhetorically, not as a precision spectrum table.
+- \(\lambda=\text{wavelength}\) is secure conceptually, but only partially visible on the board; the full equality is a standard completion.
+- The clean board support for \(f=\frac{1}{T}\), \(\lambda f=c\), and \(\omega=\frac{2\pi c}{\lambda}\) is strong; the upper board form \(\frac{\omega}{2\pi}=f\) is less crisp and should be treated as supporting evidence, not the preferred final form.
+- The lower handwritten line under \(E=m\) is not reliable enough to use as an independent displayed equation; at most it can be mentioned as a dimensional mnemonic behind \(E=mc^2\).
+- The lecture’s discussion of Dalton is qualitative; do not invent exact stoichiometric formulas or exact integer laws.
+- The lecture states the uncertainty principle only qualitatively. If it is mentioned later, use a cautious form like \(\Delta x\,\Delta p \gtrsim \hbar\), not a sharper normalized formula.
+- The transcripted numerical value of \(\hbar\) is garbled around the units discussion; do not rely on that passage for a precise constant table without separate verification.
+- The remark that the square of the electric charge is \(1/137\) is convention-dependent in modern notation; do not hard-code it as \(e^2=1/137\) without clarifying units and normalization.
+- \(E=m\) must not be presented as a universal equation. In this lecture it means rest energy of a massive object after setting \(c=1\).
+- \(E=\omega\) must not be merged with \(E=m\); it is the photon-energy relation after setting \(\hbar=1\).
+- The closing accelerator-size heuristic is only rough proportional reasoning, not a precise engineering formula.
