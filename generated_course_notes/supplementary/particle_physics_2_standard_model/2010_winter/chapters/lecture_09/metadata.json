@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/particle_physics_2_standard_model/2010_winter",
+  "transcript_rel": "supplementary/particle_physics_2_standard_model/2010_winter/093 - Lecture 9 \uff5c New Revolutions in Particle Physics\uff1a Standard Model [qzGY-BrCUgA].md",
+  "video_rel": "supplementary/particle_physics_2_standard_model/2010_winter/093 - Lecture 9 \uff5c New Revolutions in Particle Physics\uff1a Standard Model [qzGY-BrCUgA].mkv",
+  "lecture_number": 9,
+  "lecture_slug": "lecture_09",
+  "lecture_title": "Lecture 9 : New Revolutions in Particle Physics\uff1a Standard Model",
+  "assets": [
+    {
+      "name": "lecture_09_figure_02.png",
+      "timestamp_seconds": 159.122,
+      "timestamp_hhmmss": "00:02:39.122",
+      "source_candidate": "lecture_09_window_02_candidate_01_000239122.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 is the clearest and least occluded frame. It preserves the full board equation for the field strength together with the nearby `F^2` shorthand, while the lecturer is off to the right and not blocking any of the mathematical content. Later candidates add gesture or partial occlusion without revealing anything more complete.",
+      "subtitle_excerpt": "with a uniform shift of the vector potential",
+      "segment_start_seconds": 158.74,
+      "segment_start_hhmmss": "00:02:38.740",
+      "segment_end_seconds": 161.92,
+      "segment_end_hhmmss": "00:02:41.920",
+      "caption_hint": "field-strength definition on the board"
+    },
+    {
+      "name": "lecture_09_figure_03.png",
+      "timestamp_seconds": 402.94,
+      "timestamp_hhmmss": "00:06:42.940",
+      "source_candidate": "lecture_09_window_03_candidate_02_000642940.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 is the clearest and most complete frame. It preserves the full three-line board derivation with minimal occlusion, including the frozen-radius substitution `\\phi = f e^{i\\alpha}` and the resulting `D\\phi` expression. The lecturer has moved out of the way, so the equations are easier to read than in the other candidates, where the hand intrudes on the left or middle of the derivation.",
+      "subtitle_excerpt": "to compute the action, or the Lagrangian, for what?",
+      "segment_start_seconds": 401.04,
+      "segment_start_hhmmss": "00:06:41.040",
+      "segment_end_seconds": 406.04,
+      "segment_end_hhmmss": "00:06:46.040",
+      "caption_hint": "broken-phase covariant derivative"
+    },
+    {
+      "name": "lecture_09_figure_04.png",
+      "timestamp_seconds": 631.64,
+      "timestamp_hhmmss": "00:10:31.640",
+      "source_candidate": "lecture_09_window_04_candidate_03_001031640.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 03 is the strongest frame for note writing because it keeps the relevant board algebra visible while minimizing distraction from the lecturer. The upper derivation leading from the covariant derivative to the broken-phase combination is still readable, and the lower line isolates the key result `f^2 A^2`, with Susskind's finger explicitly marking the term. Candidate 01 includes more lecturer than needed, while 02 and 04 are slightly less balanced as board evidence.",
+      "subtitle_excerpt": "which is proportional to the square of the vector potential.",
+      "segment_start_seconds": 629.04,
+      "segment_start_hhmmss": "00:10:29.040",
+      "segment_end_seconds": 633.04,
+      "segment_end_hhmmss": "00:10:33.040",
+      "caption_hint": "effective vector-potential squared term"
+    },
+    {
+      "name": "lecture_09_figure_05.png",
+      "timestamp_seconds": 2430.8,
+      "timestamp_hhmmss": "00:40:30.800",
+      "source_candidate": "lecture_09_window_05_candidate_02_004030800.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 gives the clearest unobstructed view of the full three-line board derivation. The lecturer remains only at the far right edge, without covering the equations, and the writing is complete and stable. Candidate 04 adds a pointing gesture that slightly intrudes on the right-hand side, while the other frames do not improve the mathematical visibility.",
+      "subtitle_excerpt": "These equations cannot be symmetric",
+      "segment_start_seconds": 2430.04,
+      "segment_start_hhmmss": "00:40:30.040",
+      "segment_end_seconds": 2432.04,
+      "segment_end_hhmmss": "00:40:32.040",
+      "caption_hint": "coupled left-right fermion equations"
+    }
+  ]
+}
