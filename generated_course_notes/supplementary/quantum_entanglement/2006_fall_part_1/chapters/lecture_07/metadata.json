@@ -1,0 +1,80 @@
+{
+  "course_rel": "supplementary/quantum_entanglement/2006_fall_part_1",
+  "transcript_rel": "supplementary/quantum_entanglement/2006_fall_part_1/054 - Lecture 7 \uff5c Quantum Entanglements, Part 1 (Stanford) [F3viANPhfD0].md",
+  "video_rel": "supplementary/quantum_entanglement/2006_fall_part_1/054 - Lecture 7 \uff5c Quantum Entanglements, Part 1 (Stanford) [F3viANPhfD0].mp4",
+  "lecture_number": 7,
+  "lecture_slug": "lecture_07",
+  "lecture_title": "Lecture 7 : Quantum Entanglements, Part 1 (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_07_figure_02.png",
+      "timestamp_seconds": 339.67,
+      "timestamp_hhmmss": "00:05:39.670",
+      "source_candidate": "lecture_07_window_02_candidate_03_000539670.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 3 is the most useful note-taking frame: the left-board equation block is the most complete and stable, the key line with the summed amplitudes is clearly in view, and Susskind is pointing directly at the relevant \\(\\psi\\)-coefficient term. Candidate 1 is too partial, candidate 2 is more occluded by his gesture and paper, and candidate 4 begins a transition to new writing on the blank right board without improving the visibility of the existing mathematics.",
+      "subtitle_excerpt": "is psi M, and the probability that it gets there,",
+      "segment_start_seconds": 337.72,
+      "segment_start_hhmmss": "00:05:37.720",
+      "segment_end_seconds": 340.72,
+      "segment_end_hhmmss": "00:05:40.720",
+      "caption_hint": "Screen-basis amplitude expansion"
+    },
+    {
+      "name": "lecture_07_figure_03.png",
+      "timestamp_seconds": 561.24,
+      "timestamp_hhmmss": "00:09:21.240",
+      "source_candidate": "lecture_07_window_03_candidate_04_000921240.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 4 is the clearest and most useful frame for notes. The right-board mathematics is the most complete and legible here: the summed screen-state expansion is visible on the top line, and the lower line cleanly displays the four-term expansion of the probability, including the interference cross terms. Candidate 3 is close, but candidate 4 is slightly less occluded by Susskind and gives a steadier, tighter view of the finished equations.",
+      "subtitle_excerpt": "psi and phi to be equal, by symmetry,",
+      "segment_start_seconds": 557.72,
+      "segment_start_hhmmss": "00:09:17.720",
+      "segment_end_seconds": 561.72,
+      "segment_end_hhmmss": "00:09:21.720",
+      "caption_hint": "Interference probability expansion"
+    },
+    {
+      "name": "lecture_07_figure_04.png",
+      "timestamp_seconds": 1324.96,
+      "timestamp_hhmmss": "00:22:04.960",
+      "source_candidate": "lecture_07_window_04_candidate_01_002204960.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 1 is the only frame in this window that preserves a legible, note-worthy board equation. The central line clearly shows the projector-like decomposition at fixed screen position \\(m\\) into the two orthogonal record states, which is exactly the useful mathematical content for this moment. Candidate 2 is noticeably washed out, and candidates 3 and 4 have already drifted into a mostly blank-board transition with only fragmentary notation.",
+      "subtitle_excerpt": "psi M multiplies one ket vector",
+      "segment_start_seconds": 1324.72,
+      "segment_start_hhmmss": "00:22:04.720",
+      "segment_end_seconds": 1326.72,
+      "segment_end_hhmmss": "00:22:06.720",
+      "caption_hint": "Fixed-screen projector with spin labels"
+    },
+    {
+      "name": "lecture_07_figure_05.png",
+      "timestamp_seconds": 1634.03,
+      "timestamp_hhmmss": "00:27:14.030",
+      "source_candidate": "lecture_07_window_05_candidate_04_002714030.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 4 is the best frame because it most clearly captures the emerging board layout relevant to this moment: the upper-board geometric sketch is the most developed here, including the symmetric branch lines and marked point that go with the discussion of placing the spin in a symmetric situation. The earlier candidates preserve a little more of the older algebra, but they do not show the new geometric idea as clearly, which is the more note-worthy content in this subtitle window.",
+      "subtitle_excerpt": "spin is located in some symmetrical situation,",
+      "segment_start_seconds": 1631.17,
+      "segment_start_hhmmss": "00:27:11.170",
+      "segment_end_seconds": 1634.42,
+      "segment_end_hhmmss": "00:27:14.420",
+      "caption_hint": "Symmetric spin-placement sketch"
+    },
+    {
+      "name": "lecture_07_figure_06.png",
+      "timestamp_seconds": 5383.78,
+      "timestamp_hhmmss": "01:29:43.780",
+      "source_candidate": "lecture_07_window_06_candidate_01_012943780.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 1 is the clearest usable frame in this window. The right-board schematic is already in place and least obstructed here: a ket-state expression on the left feeds by an arrow into a large circled region, which is the visually important setup for the transition to talking about density matrices. The later candidates do not add new board content and slightly reduce clarity through posture and motion.",
+      "subtitle_excerpt": "the density matrix instead of state vectors.",
+      "segment_start_seconds": 5383.3,
+      "segment_start_hhmmss": "01:29:43.300",
+      "segment_end_seconds": 5387.3,
+      "segment_end_hhmmss": "01:29:47.300",
+      "caption_hint": "System-environment schematic"
+    }
+  ]
+}
