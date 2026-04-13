@@ -1,0 +1,52 @@
+{
+  "course_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring",
+  "transcript_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/149 - Supersymmetry & Grand Unification\uff1a Lecture 5 [HbGrH1ES8Ok].md",
+  "video_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/149 - Supersymmetry & Grand Unification\uff1a Lecture 5 [HbGrH1ES8Ok].mp4",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Supersymmetry & Grand Unification\uff1a Lecture 5",
+  "assets": [
+    {
+      "name": "lecture_05_figure_02.png",
+      "timestamp_seconds": 3346.3,
+      "timestamp_hhmmss": "00:55:46.300",
+      "source_candidate": "lecture_05_window_04_candidate_04_005546300.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest unobstructed view of the key board equation while keeping the surrounding whiteboard layout visible. The lecturer has dropped low enough that the top-left relation is fully legible, and the image is sharp enough to support a cautious equation reconstruction.",
+      "subtitle_excerpt": "Is the Hamiltonian a generator of a symmetry group?",
+      "segment_start_seconds": 3343.66,
+      "segment_start_hhmmss": "00:55:43.660",
+      "segment_end_seconds": 3346.66,
+      "segment_end_hhmmss": "00:55:46.660",
+      "caption_hint": "supersymmetry anticommutator relation"
+    },
+    {
+      "name": "lecture_05_figure_03.png",
+      "timestamp_seconds": 4046.3,
+      "timestamp_hhmmss": "01:07:26.300",
+      "source_candidate": "lecture_05_window_05_candidate_04_010726300.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame shows the expression at its most developed point in the window: the ket \\(|\\psi\\rangle\\) is already in place and the partial-derivative operator to its left is nearly complete. Although the lecturer\u2019s hand still overlaps part of the denominator, the mathematical intent is clearest here and is strongly supported by the subtitle context.",
+      "subtitle_excerpt": "time derivative of a state vector,",
+      "segment_start_seconds": 4043.66,
+      "segment_start_hhmmss": "01:07:23.660",
+      "segment_end_seconds": 4046.66,
+      "segment_end_hhmmss": "01:07:26.660",
+      "caption_hint": "time derivative acting on a state"
+    },
+    {
+      "name": "lecture_05_figure_04.png",
+      "timestamp_seconds": 4395.06,
+      "timestamp_hhmmss": "01:13:15.060",
+      "source_candidate": "lecture_05_window_06_candidate_04_011315060.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame shows the most complete and stable version of the board work in this subtitle window. The top-right time-shift notation and the first-order expansion line are both visible, and the lecturer\u2019s finger emphasizes the time-derivative term without seriously blocking the equation.",
+      "subtitle_excerpt": "is related to the Hamiltonian acting on psi",
+      "segment_start_seconds": 4389.66,
+      "segment_start_hhmmss": "01:13:09.660",
+      "segment_end_seconds": 4395.66,
+      "segment_end_hhmmss": "01:13:15.660",
+      "caption_hint": "time-translation expansion of the wavefunction"
+    }
+  ]
+}
