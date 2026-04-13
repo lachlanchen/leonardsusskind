@@ -1,0 +1,80 @@
+{
+  "course_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall",
+  "transcript_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall/082 - Lecture 8 \uff5c New Revolutions in Particle Physics\uff1a Basic Concepts [Xt09jVssi7k].md",
+  "video_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall/082 - Lecture 8 \uff5c New Revolutions in Particle Physics\uff1a Basic Concepts [Xt09jVssi7k].mkv",
+  "lecture_number": 8,
+  "lecture_slug": "lecture_08",
+  "lecture_title": "Lecture 8 : New Revolutions in Particle Physics\uff1a Basic Concepts",
+  "assets": [
+    {
+      "name": "lecture_08_figure_02.png",
+      "timestamp_seconds": 2097.3,
+      "timestamp_hhmmss": "00:34:57.300",
+      "source_candidate": "lecture_08_window_02_candidate_04_003457300.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and most complete frame in the window. The matrix eigenvalue equation is fully legible, the lecturer no longer blocks the board, and the right side also records the accompanying \u03c3_z eigenvalue label. Although the subtitle is asking about the minus-one case, this frame best preserves the board setup from which that next step proceeds.",
+      "subtitle_excerpt": "What about sigma-z equals minus one?",
+      "segment_start_seconds": 2093.78,
+      "segment_start_hhmmss": "00:34:53.780",
+      "segment_end_seconds": 2097.78,
+      "segment_end_hhmmss": "00:34:57.780",
+      "caption_hint": "Pauli-\u03c3_z eigenvalue equation"
+    },
+    {
+      "name": "lecture_08_figure_03.png",
+      "timestamp_seconds": 2382.54,
+      "timestamp_hhmmss": "00:39:42.540",
+      "source_candidate": "lecture_08_window_03_candidate_02_003942540.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest and most useful view of the board at the moment when the lower equation is being interpreted. The key matrix equation and the derived spinor equality are both legible, and the lecturer's hand indicates the lower component without blocking the central mathematics.",
+      "subtitle_excerpt": "In fact, the bottom equation says alpha equals beta,",
+      "segment_start_seconds": 2381.78,
+      "segment_start_hhmmss": "00:39:41.780",
+      "segment_end_seconds": 2383.78,
+      "segment_end_hhmmss": "00:39:43.780",
+      "caption_hint": "Sigma-x eigenvector condition"
+    },
+    {
+      "name": "lecture_08_figure_04.png",
+      "timestamp_seconds": 3612.92,
+      "timestamp_hhmmss": "01:00:12.920",
+      "source_candidate": "lecture_08_window_04_candidate_02_010012920.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the most balanced view of the board in this window. The left side preserves the \u03c3_y-style eigenvector calculation with the normalized spinor results, while the right side still shows the summary list of S_x, S_y, and S_z matrix forms. The lecturer does block part of the middle, but this candidate keeps the most useful mathematical layout legible at once.",
+      "subtitle_excerpt": "is psi one the probability that it's spin one?",
+      "segment_start_seconds": 3611.78,
+      "segment_start_hhmmss": "01:00:11.780",
+      "segment_end_seconds": 3614.78,
+      "segment_end_hhmmss": "01:00:14.780",
+      "caption_hint": "Spin-y eigenvectors and spin matrices"
+    },
+    {
+      "name": "lecture_08_figure_05.png",
+      "timestamp_seconds": 4643.34,
+      "timestamp_hhmmss": "01:17:23.340",
+      "source_candidate": "lecture_08_window_05_candidate_04_011723340.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the sharpest and most finished frame in the window. The lecturer has moved his hand away, the left-hand label alpha_i is clear, and the block-matrix layout divided by red guide lines is most complete here. It is the most useful documentary frame for notes reconstructing the relation between the Dirac alpha matrix and the Pauli matrix sigma_i.",
+      "subtitle_excerpt": "here, the corresponding Pauli matrix, sigma i",
+      "segment_start_seconds": 4639.38,
+      "segment_start_hhmmss": "01:17:19.380",
+      "segment_end_seconds": 4643.88,
+      "segment_end_hhmmss": "01:17:23.880",
+      "caption_hint": "Pauli matrix in block form"
+    },
+    {
+      "name": "lecture_08_figure_06.png",
+      "timestamp_seconds": 5018.4,
+      "timestamp_hhmmss": "01:23:38.400",
+      "source_candidate": "lecture_08_window_06_candidate_02_012338400.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest and most balanced view of the relevant board content. The boxed equation is fully legible, the identity matrix written above it is still visible, and the lecturer blocks only the far left edge of older material. It is the strongest documentary frame for the point that the momentum-zero case reduces to the rest-frame time-evolution equation.",
+      "subtitle_excerpt": "Particle with momentum equals zero means a particle at rest",
+      "segment_start_seconds": 5016.88,
+      "segment_start_hhmmss": "01:23:36.880",
+      "segment_end_seconds": 5020.88,
+      "segment_end_hhmmss": "01:23:40.880",
+      "caption_hint": "Rest-frame Dirac equation"
+    }
+  ]
+}
