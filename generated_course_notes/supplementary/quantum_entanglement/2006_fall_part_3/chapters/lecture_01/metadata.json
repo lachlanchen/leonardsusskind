@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/quantum_entanglement/2006_fall_part_3",
+  "transcript_rel": "supplementary/quantum_entanglement/2006_fall_part_3/057 - Lecture 1 \uff5c Quantum Entanglements, Part 3 (Stanford) [3ZEYa7SRRsU].md",
+  "video_rel": "supplementary/quantum_entanglement/2006_fall_part_3/057 - Lecture 1 \uff5c Quantum Entanglements, Part 3 (Stanford) [3ZEYa7SRRsU].mp4",
+  "lecture_number": 1,
+  "lecture_slug": "lecture_01",
+  "lecture_title": "Lecture 1 : Quantum Entanglements, Part 3 (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_01_figure_02.png",
+      "timestamp_seconds": 998.049,
+      "timestamp_hhmmss": "00:16:38.049",
+      "source_candidate": "lecture_01_window_03_candidate_04_001638049.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the clearest and most usable frame of the four. The lecturer has stepped back slightly, so the board layout is least occluded, and the diagram elements are most legible: a vertical axis labeled t, marked points along the axis, the lower baseline, and the tall light-colored line to the right. Since the moment is about drawing horizontal lines into an already established layout, this frame preserves the board structure best for later note writing.",
+      "subtitle_excerpt": "And now if we draw some horizontal lines,",
+      "segment_start_seconds": 995.479,
+      "segment_start_hhmmss": "00:16:35.479",
+      "segment_end_seconds": 998.4,
+      "segment_end_hhmmss": "00:16:38.400",
+      "caption_hint": "time axis with emerging line diagram"
+    },
+    {
+      "name": "lecture_01_figure_03.png",
+      "timestamp_seconds": 1317.24,
+      "timestamp_hhmmss": "00:21:57.240",
+      "source_candidate": "lecture_01_window_04_candidate_04_002157240.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame is the most useful because it preserves both the algebraic and geometric content at once. The upper equation is the clearest here, the lower board still shows the companion relations and axis layout, and the partial spacetime sketch at left is more complete than in the earlier frames. The lecturer is lower in the frame and does not block the key formulas as much as in the pointing shots.",
+      "subtitle_excerpt": "Now, I would, if I just used the second equation, I would write plus vt,",
+      "segment_start_seconds": 1312.34,
+      "segment_start_hhmmss": "00:21:52.340",
+      "segment_end_seconds": 1317.84,
+      "segment_end_hhmmss": "00:21:57.840",
+      "caption_hint": "Galilean shift with spacetime sketch"
+    },
+    {
+      "name": "lecture_01_figure_04.png",
+      "timestamp_seconds": 3753.606,
+      "timestamp_hhmmss": "01:02:33.606",
+      "source_candidate": "lecture_01_window_05_candidate_02_010233606.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame gives the most complete and legible view of the board at this moment. The lecturer has moved far enough aside that the central red diagram, the dashed red segment, the blue vertical lines, and the key label associated with the line x=t are all more visible than in the other candidates. The overall board geometry is clearer here than in the more occluded or more tightly cropped alternatives.",
+      "subtitle_excerpt": "that equation is x equals t",
+      "segment_start_seconds": 3752.762,
+      "segment_start_hhmmss": "01:02:32.762",
+      "segment_end_seconds": 3754.982,
+      "segment_end_hhmmss": "01:02:34.982",
+      "caption_hint": "spacetime sketch with x=t line"
+    },
+    {
+      "name": "lecture_01_figure_05.png",
+      "timestamp_seconds": 4540.634,
+      "timestamp_hhmmss": "01:15:40.634",
+      "source_candidate": "lecture_01_window_06_candidate_02_011540634.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame best captures the diagram's overall symmetry while keeping the board content comparatively unobstructed. The central apex, both red sloping segments, the lower baseline, the blue vertical guide lines, and the internal dashed segment are all visible together. The lecturer is present but blocks less of the crucial geometry than in the other candidates, making this the strongest frame for reconstructing the layout.",
+      "subtitle_excerpt": "equal to 1, then the diagram has a lovely symmetry.",
+      "segment_start_seconds": 4539.122,
+      "segment_start_hhmmss": "01:15:39.122",
+      "segment_end_seconds": 4543.102,
+      "segment_end_hhmmss": "01:15:43.102",
+      "caption_hint": "symmetric spacetime sketch"
+    }
+  ]
+}
