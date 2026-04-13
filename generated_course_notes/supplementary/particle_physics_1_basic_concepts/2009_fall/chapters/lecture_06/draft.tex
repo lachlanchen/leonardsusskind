@@ -1,0 +1,340 @@
+\chapter{Mass, the Dirac Sea, and the First Step toward Spin}
+
+These notes follow Leonard Susskind's sixth lecture in \emph{Particle Physics 1 Basic Concepts}. The aim is to keep the order of discovery intact: we return to the simplest Dirac equation on a line, confront its instability, repair it with the Dirac sea, restore left-right symmetry, and only then ask how a fermion can become massive. The chapter also keeps the lecture's later digression toward the Higgs mechanism and its closing preview of the \(3+1\)-dimensional Dirac equation. The lecture is due to Leonard Susskind; the present chapter is curated from the lecture record by LazyingArt LLC.
+
+\section{Recap: The One-Dimensional Dirac Equation and Its Dispersion}
+
+We begin where the lecture begins: not with a general relativistic spinor in three dimensions, but with the simplest possible Dirac-type equation on a line. It is already enough to show the characteristic Dirac features: first-order evolution, positive and negative energies, antiparticles, and eventually the coupling of two components.
+
+The elementary wave we keep in mind is
+\begin{equation}
+\psi(x,t)\sim e^{i(kx-\omega t)}.
+\end{equation}
+For such a wave, what matters first is the sign relation between \(k\) and \(\omega\). Susskind briefly misspeaks about whether the relevant ratio is \(k/\omega\) or \(\omega/k\), but the point survives the correction: if \(k\) and \(\omega\) have the same sign, the wave moves to the right; if they have opposite signs, it moves to the left. In this discussion we set \(c=1\), and once \(\hbar=1\) as well, \(\omega\) is the energy of a quantum.
+
+The simplest first-order equation is
+\begin{equation}
+\frac{\partial \psi}{\partial x}+\frac{\partial \psi}{\partial t}=0.
+\end{equation}
+If we insert the plane wave into it, we find
+\begin{align}
+\frac{\partial \psi}{\partial x}&=ik\psi, &
+\frac{\partial \psi}{\partial t}&=-\,i\omega\psi,
+\end{align}
+and therefore
+\begin{equation}
+ik-i\omega=0
+\qquad \Longrightarrow \qquad
+\omega=k.
+\end{equation}
+This is the right-moving branch. It is useful to rename the field accordingly:
+\begin{equation}
+\frac{\partial \psi_R}{\partial t}=-\,\frac{\partial \psi_R}{\partial x}.
+\end{equation}
+
+There is already a curious feature here. The graph \(\omega=k\) is a straight line through the origin, so for positive \(k\) we have positive energy, but for negative \(k\) we have negative energy. Both branches still correspond to motion to the right, because the sign of \(\omega/k\) is positive on both halves of the line. That is the first tension of the lecture: the equation is simple and consistent, but its spectrum is not yet physically acceptable.
+
+\section{Negative Energies, the Dirac Sea, and Left-Right Balance}
+
+The instability is immediate. If negative-energy electron states exist and are empty, then a positive-energy electron can keep lowering its energy by falling down the line of states and emitting photons. No electron would be stable, and in fact the vacuum itself would not be stable.
+
+Dirac's repair is to use the Pauli exclusion principle. Since the equation is a fermionic equation, we may declare that all negative-energy states are already filled. That fully occupied negative-energy sector is the Dirac sea, and the filled sea is taken to be the vacuum. Then a positive-energy electron has no room to keep falling indefinitely.
+
+Once the sea is filled, removing a negative-energy electron creates a hole. Relative to the vacuum, that hole has positive energy and, because one has removed a state of negative momentum, positive momentum as well. In this simplest theory both the particle and the hole move to the right. The theory already contains particles and antiparticles, but it is visibly asymmetric: all real excitations move in one direction, while the vacuum is full of negative-momentum states.
+
+That asymmetry is what motivates the next move. We introduce an independent left-moving field,
+\begin{equation}
+\frac{\partial \psi_L}{\partial t}=+\,\frac{\partial \psi_L}{\partial x}.
+\end{equation}
+If we again substitute \(e^{i(kx-\omega t)}\), we obtain
+\begin{equation}
+-\,i\omega\,\psi_L = +\,ik\,\psi_L
+\qquad \Longrightarrow \qquad
+\omega=-k.
+\end{equation}
+So \(\psi_L\) provides the mirror branch. It too has positive- and negative-energy sectors, and the negative-energy left-moving states must also be filled. Once both seas are filled, the vacuum is balanced between left and right.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why introduce holes and a filled sea at all? Why not simply alter the mathematics so that only positive energies remain?
+
+\paragraph{Answer.} The point is not merely to rename a sign. The first-order equation genuinely produces positive and negative energies. For bosons that would be disastrous, because there would be no exclusion principle to block an unlimited fall into lower states. For fermions the Pauli principle gives a physical stabilization mechanism: fill the negative-energy states. In modern language one may relabel a filled negative-energy state as an empty antiparticle state and then stop talking about negative energies. Susskind says exactly this in class: one may simply relabel. But the sea picture shows why the theory makes sense in the first place, and why the antiparticle appears.
+
+\section{Two Fields, One Spinor}
+
+Only after restoring left-right balance does the lecture pause for notation. This is important: the notation is not a new physical ingredient. It is a way of packaging two already existing equations.
+
+We place the two fields into a single column:
+\begin{equation}
+\Psi=\begin{pmatrix}\psi_R\\ \psi_L\end{pmatrix}.
+\end{equation}
+The matrix that distinguishes the upper and lower components is
+\begin{equation}
+\alpha=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+\end{equation}
+Then the two first-order equations may be written as one:
+\begin{equation}
+\frac{\partial \Psi}{\partial t}
+=
+-\,\alpha\,\frac{\partial \Psi}{\partial x}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_02.png}
+\caption{Spinor column vector and alpha matrix. The board records the purely notational step from two separate fields to one two-component object \(\Psi\).}
+\end{figure}
+
+\begin{remark}
+On a plane wave, \(i\partial_t\) returns \(\omega\) and \(-\,i\partial_x\) returns \(k\). In that sense the last equation may be summarized as
+\begin{equation}
+\omega=\alpha k.
+\end{equation}
+This is shorthand for operator action on plane waves, not an ordinary scalar identity.
+\end{remark}
+
+This compact notation is the doorway to the next question. Up to this point both branches are massless and move at the speed of light. Electrons, of course, are not massless. So the lecture now asks the real constructive question: how do we modify a first-order Dirac equation so that it describes a massive relativistic fermion?
+
+\section{How to Add Mass: The \texorpdfstring{\(\beta\)}{beta} Matrix and the Coupled Equation}
+
+For a massive relativistic particle, the energy-momentum relation is not \(\omega=\pm k\) but
+\begin{equation}
+\omega^2 = k^2 + m^2.
+\end{equation}
+From this one also reads off the group velocity,
+\begin{equation}
+v_g=\frac{d\omega}{dk}=\frac{k}{\sqrt{k^2+m^2}},
+\end{equation}
+so massive particles no longer move at the speed of light.
+
+The lecture insists on keeping the equation first order. The natural guess is therefore to correct the shorthand relation \(\omega=\alpha k\) by adding a term linear in the mass:
+\begin{equation}
+\omega=\alpha k+\beta m,
+\end{equation}
+where \(\beta\) is some as yet unknown object.
+
+The derivation is straightforward and worth doing explicitly.
+
+\begin{enumerate}
+\item Square the ansatz:
+\begin{equation}
+\omega^2
+=
+(\alpha k+\beta m)^2
+=
+\alpha^2k^2+\beta^2m^2+(\alpha\beta+\beta\alpha)km.
+\end{equation}
+
+\item Compare this with the desired relativistic relation \(k^2+m^2\).
+
+\item To reproduce the \(k^2\) term, we must require
+\begin{equation}
+\alpha^2=1.
+\end{equation}
+
+\item To reproduce the \(m^2\) term, we must also require
+\begin{equation}
+\beta^2=1.
+\end{equation}
+
+\item The mixed term \(km\) has no place in \(\omega^2=k^2+m^2\), so it must vanish:
+\begin{equation}
+\alpha\beta+\beta\alpha=0.
+\end{equation}
+\end{enumerate}
+
+At this point one sees why \(\alpha\) and \(\beta\) cannot be ordinary numbers. Numbers can easily square to \(1\), but two nonzero numbers cannot anticommute. Matrices can.
+
+A convenient choice is
+\begin{equation}
+\beta=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
+\end{equation}
+This matrix squares to the identity and anticommutes with \(\alpha\). It is not unique, and Susskind remarks that other equivalent choices are possible, possibly with phases, but this one is the cleanest for the present calculation.
+
+The corresponding Dirac equation may be written in compact form as
+\begin{equation}
+i\,\dot{\Psi}
+=
+-\,i\alpha\,\partial_x\Psi
++
+m\beta\Psi.
+\end{equation}
+Writing out the two components gives
+\begin{align}
+i\dot{\psi}_R &= -\,i\,\partial_x\psi_R + m\psi_L,\\
+i\dot{\psi}_L &= +\,i\,\partial_x\psi_L + m\psi_R.
+\end{align}
+
+This is the central payoff of the lecture. A mass term does not simply sit on one component by itself. It couples the two components. In the original massless discussion the upper and lower components were literally right-moving and left-moving waves. Now the mass mixes them. That is the striking Dirac insight Susskind pauses to emphasize: a massive fermion is obtained by coupling left and right pieces of a massless theory.
+
+\section{Particles at Rest and the Decoupled \texorpdfstring{\(\psi_\pm\)}{psi pm} Modes}
+
+The lecture slows down at this point and looks at the rest frame. This is exactly where the new equation becomes easiest to interpret.
+
+If the particle is at rest, then \(k=0\), so the wave has no spatial variation. The derivative term drops out and we are left with
+\begin{equation}
+i\,\frac{d\Psi}{dt}=m\beta\Psi.
+\end{equation}
+In components,
+\begin{align}
+i\dot{\psi}_R &= m\psi_L,\\
+i\dot{\psi}_L &= m\psi_R.
+\end{align}
+The two equations are still coupled, but now they can be decoupled by taking sums and differences. Define
+\begin{equation}
+\psi_+ = \psi_R+\psi_L,
+\qquad
+\psi_- = \psi_R-\psi_L.
+\end{equation}
+Adding the two equations gives
+\begin{equation}
+i\dot{\psi}_+ = m\psi_+,
+\end{equation}
+while subtracting them gives
+\begin{equation}
+i\dot{\psi}_- = -\,m\psi_-.
+\end{equation}
+Thus the allowed rest-frame frequencies are
+\begin{equation}
+\omega=+m
+\qquad \text{and} \qquad
+\omega=-m.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_06_figure_03.png}
+\caption{Decoupled \(\psi_\pm\) equations and \(\omega=\pm m\). The board layout makes the logic visible: first the differential equations, then the two allowed frequencies.}
+\end{figure}
+
+The positive-frequency combination \(\psi_+\) describes positive-energy particles at rest. The negative-frequency combination \(\psi_-\) describes negative-energy particles at rest; these must again be filled in the Dirac sea. So the massive theory keeps the familiar Dirac structure of positive and negative energies, but the positive-energy particle at rest is now a particular linear combination of the two components.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Does \(\psi_R+\psi_L\) create two particles, one left-moving and one right-moving?
+
+\paragraph{Answer.} No. A sum of field operators creates a superposed one-particle state, not a two-particle state. A product such as \(\psi_R\psi_L\) would create two particles. The operator \(\psi_R+\psi_L\) creates a single particle in a coherent quantum superposition of the two components. In the particular basis chosen here, the particle at rest has equal weight in the two components; one may insert a factor of \(1/\sqrt{2}\) if one wants a normalized convention, but that does not change the equation of motion.
+
+This is also the moment at which the old language begins to fail. Once the mass term is present, it becomes misleading to think of \(\psi_R\) and \(\psi_L\) as literal right-moving and left-moving waves. The massive rest state does not move either way. It is better now to think of them as the upper and lower components of the spinor, built from the same mathematical objects that had a direct left-right meaning only in the massless limit.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_04.png}
+\caption{Matrix layout for left- and right-moving components. The exact entries on the right side of the board are partly occluded, but the photograph is valuable as documentary evidence for the interpretive shift from literal movers to coupled spinor components.}
+\end{figure}
+
+One can now state the lecture's main conceptual point in a compact way: a massive fermion is a coherent object with both components present, and the mass term is the coupling that keeps those components talking to one another.
+
+\section{From a Bare Mass Term to the Higgs Field}
+
+A student then asks the question that changes the direction of the lecture for a while: how does this mass term relate to the statement that the Higgs field gives fermions their mass?
+
+Susskind's answer is local and economical. Replace the constant mass term by a coupling to a scalar field \(\phi(x)\):
+\begin{equation}
+m \longmapsto g\,\phi(x).
+\end{equation}
+Then the Dirac equation takes the same form as before, except that the coefficient multiplying the component-mixing term is no longer a constant but a field.
+
+If the vacuum had \(\phi=0\), then in empty space the coupling would vanish and the fermion would remain massless. But if the vacuum favors a nonzero constant value of \(\phi\), then that constant acts exactly like a mass:
+\begin{equation}
+m_{\mathrm{eff}} = g\langle \phi \rangle.
+\end{equation}
+So the Higgs mechanism does not replace the Dirac mass term with something unrelated; it supplies that term dynamically through a scalar field whose vacuum value is not zero.
+
+To explain why \(\langle \phi\rangle\) might be nonzero, the lecture turns to the potential energy \(V(\phi)\). The secure core of the argument is that the Higgs potential is symmetric under \(\phi\mapsto -\phi\),
+\begin{equation}
+V(\phi)=V(-\phi),
+\end{equation}
+but its minimum need not sit at \(\phi=0\). If the minimum were at the origin, the effective mass would vanish in the vacuum. If the minimum occurs at nonzero \(\phi\), then the vacuum itself generates the fermion mass.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_06_figure_05.png}
+\caption{Potential \(V(\phi)\) and candidate minima. The chalk sketch compares a centered minimum with a symmetry-breaking situation in which the vacuum sits at nonzero \(\phi\).}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\begin{scope}[shift={(-4.2,0)}]
+\draw[->] (-2.2,0) -- (2.2,0) node[right] {$\phi$};
+\draw[->] (0,-0.2) -- (0,2.7) node[above] {$V(\phi)$};
+\draw[smooth,domain=-1.8:1.8,samples=100] plot (\x,{0.42*(\x*\x)+0.25});
+\fill (0,0.25) circle (1.3pt);
+\node[below] at (0,0) {$0$};
+\node at (0,-0.8) {minimum at \(\phi=0\)};
+\end{scope}
+\begin{scope}[shift={(4.2,0)}]
+\draw[->] (-2.2,0) -- (2.2,0) node[right] {$\phi$};
+\draw[->] (0,-0.2) -- (0,2.7) node[above] {$V(\phi)$};
+\draw[smooth,domain=-1.75:1.75,samples=120] plot (\x,{0.22*((\x*\x-1.15)^2)+0.25});
+\fill (-1.07,0.25) circle (1.3pt);
+\fill (1.07,0.25) circle (1.3pt);
+\node[below] at (0,0) {$0$};
+\node at (0,-0.8) {minima at \(\phi\neq 0\)};
+\end{scope}
+\end{tikzpicture}
+\caption{A clean redraw of the two qualitative possibilities discussed in the Higgs digression. On the right, once the vacuum chooses one of the nonzero minima, the coupling \(g\phi\) behaves like a fermion mass term.}
+\end{figure}
+
+Small oscillations of the Higgs field around the chosen minimum are Higgs particles. The vacuum value of the field gives the fermion its mass; vibrations of the field are its quanta. In that sense the Higgs boson is not the mass itself, but the excitation of the field whose vacuum value generates the mass.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why not simply write a mass into the equation by hand and forget the Higgs field?
+
+\paragraph{Answer.} In this lecture the answer is only sketched, but the sketch is important. The point is symmetry. If the relevant symmetry were unbroken in the vacuum, many particles would have to be massless. A nonzero Higgs vacuum value breaks that symmetry in the vacuum and thereby permits masses. So the Higgs field is not decorative. It is the mechanism by which a symmetric theory can produce a world in which electrons, quarks, and the weak bosons are massive. Susskind also emphasizes that this is not yet the full story: why the Higgs potential has this shape, and why the Higgs particle itself is so light, are deeper questions postponed for later.
+
+\section{Preview of the \texorpdfstring{\(3+1\)}{3+1}-Dimensional Dirac Equation}
+
+Only after the Higgs digression does the lecture return to the route it had planned from the start. The pattern, Susskind says, is very similar in three spatial dimensions. The wave number becomes a wave vector with three components, and the first-order ansatz becomes
+\begin{equation}
+\omega=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3+\beta m.
+\end{equation}
+Here \(k_1,k_2,k_3\) are the momentum components in the \(x\), \(y\), and \(z\) directions.
+
+We again require
+\begin{equation}
+\omega^2 = k_1^2+k_2^2+k_3^2+m^2.
+\end{equation}
+Squaring the ansatz now forces a whole algebra of matrices. The clean relations are
+\begin{equation}
+\alpha_i^2=1,
+\qquad
+\beta^2=1,
+\qquad
+\alpha_i\alpha_j+\alpha_j\alpha_i=2\delta_{ij},
+\qquad
+\alpha_i\beta+\beta\alpha_i=0.
+\end{equation}
+The factor of \(2\) in the anticommutator is essential. Susskind corrects this point during the classroom discussion.
+
+At this stage there is a sharp structural difference from the one-dimensional case. Three \(2\times 2\) matrices with the right properties do exist: the Pauli matrices. But there is no fourth \(2\times 2\) matrix that anticommutes with all three and also squares to \(1\). Thus \(2\times 2\) matrices are no longer enough. The first working representation uses \(4\times 4\) matrices.
+
+A standard block form is
+\begin{equation}
+\beta=
+\begin{pmatrix}
+I & 0\\
+0 & -I
+\end{pmatrix},
+\qquad
+\alpha_i=
+\begin{pmatrix}
+0 & \sigma_i\\
+\sigma_i & 0
+\end{pmatrix},
+\end{equation}
+where \(I\) is the \(2\times 2\) identity and \(\sigma_i\) are the Pauli matrices. The corresponding Dirac equation is
+\begin{equation}
+i\partial_t\Psi
+=
+\left(-\,i\,\alpha_i\partial_i+\beta m\right)\Psi,
+\end{equation}
+with a four-component spinor \(\Psi\).
+
+Susskind is careful here about interpretation. The four components are not the components of a four-vector. They are components of a spinor. In the one-dimensional model the doubling had been associated with the two branches that we first called left and right. In \(3+1\) dimensions there is an additional doubling, and that new structure becomes spin. The lecture stops at precisely that threshold.
+
+\section{Summary}
+
+The lecture has a very clear arc. We begin with the simplest right-moving massless Dirac equation, discover its negative-energy problem, and stabilize it by filling the negative-energy states. That repair reveals a second discomfort, namely the asymmetry between left and right, and so we introduce an independent left-moving field. Only then do we compress the two fields into a spinor and ask the real question: how to add mass while keeping relativistic dispersion. The answer is that the mass term must couple the two components, and in the rest frame the positive-energy particle appears as a coherent superposition of them. The Higgs digression then shows how such a coupling can arise dynamically from a scalar field with nonzero vacuum value. Finally, the lecture reopens the broader Dirac program in \(3+1\) dimensions, where the required matrix algebra becomes richer and the next new ingredient is spin.
