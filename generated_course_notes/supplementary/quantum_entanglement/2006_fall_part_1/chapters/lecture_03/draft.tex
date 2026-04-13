@@ -1,0 +1,604 @@
+\chapter{Lecture 3: Quantum Entanglements, Part 1}
+
+We begin with a deliberate reset. Before entanglement proper, Susskind wants the elementary machinery under control: complex numbers, normalized states, observables as Hermitian matrices, eigenvalues and eigenvectors, and finally the probability rule for spin. The guiding idea is simple and severe: quantum mechanics is a calculus for probabilities. These companion notes follow Leonard Susskind's lecture closely, with curation by LazyingArt LLC, and keep the two-level spin system in view throughout.
+
+\section{Complex Numbers, Phases, and Conjugation}
+
+The lecture starts by clearing the runway. We are not doing complex analysis for its own sake; we are fixing the notation without which the rest of the subject becomes awkward.
+
+A complex number may be written in Cartesian or polar form:
+\begin{equation}
+z=x+iy=r(\cos\theta+i\sin\theta)=re^{i\theta}.
+\end{equation}
+Here
+\begin{equation}
+x=r\cos\theta,\qquad y=r\sin\theta.
+\end{equation}
+The special combination
+\begin{equation}
+e^{i\theta}=\cos\theta+i\sin\theta
+\end{equation}
+is useful because it behaves like an exponential:
+\begin{equation}
+e^{i\theta}e^{i\phi}=e^{i(\theta+\phi)}.
+\end{equation}
+In this one formula the angle-addition rules of trigonometry are compressed into a single algebraic statement.
+
+Complex conjugation reverses the sign of the imaginary part:
+\begin{equation}
+z^*=x-iy.
+\end{equation}
+Applied to a pure phase, it gives
+\begin{equation}
+(e^{i\theta})^*=e^{-i\theta},
+\end{equation}
+and therefore
+\begin{equation}
+e^{i\theta}e^{-i\theta}=1.
+\end{equation}
+More generally,
+\begin{equation}
+zz^*=x^2+y^2.
+\end{equation}
+So the numbers of the form \(e^{i\theta}\) lie on the unit circle:
+\begin{equation}
+|e^{i\theta}|^2=1.
+\end{equation}
+
+Susskind uses the informal phrase ``unitary numbers'' in passing, but mathematically the stable term is \emph{pure phase}. Every complex number is a positive real modulus times a pure phase. That is all we need from this opening review, but we will need it immediately.
+
+\section{States as Normalized Complex Vectors}
+
+The next pivot is sharp: quantum mechanics is introduced not as mysticism but as a calculational procedure for probabilities. What is being assigned probabilities are measurement outcomes, and the system itself is prepared in a \emph{state}. In the simplest case before us, the state space is two-dimensional.
+
+We write a general state as
+\begin{equation}
+|\psi\rangle=\alpha|u\rangle+\beta|d\rangle,
+\end{equation}
+where \(|u\rangle\) and \(|d\rangle\) form a basis and \(\alpha,\beta\) are complex numbers. In the standard column-vector representation,
+\begin{equation}
+|u\rangle=\begin{pmatrix}1\\0\end{pmatrix},
+\qquad
+|d\rangle=\begin{pmatrix}0\\1\end{pmatrix}.
+\end{equation}
+The coefficients determine the probabilities for the two possible outcomes:
+\begin{equation}
+P(u)=|\alpha|^2,\qquad P(d)=|\beta|^2.
+\end{equation}
+Because the total probability must be one, the state is normalized:
+\begin{equation}
+\langle \psi|\psi\rangle=|\alpha|^2+|\beta|^2=1.
+\end{equation}
+
+This is the first basic postulate for states: they are vectors in a complex vector space, and we normalize them. In the two-level system the basis vectors are orthonormal, but the pattern clearly extends. In a higher-dimensional state space the standard basis vectors are again columns with a single nonzero entry.
+
+The lecture pauses on a useful point. The probabilities \(|\alpha|^2\) and \(|\beta|^2\) do \emph{not} determine \(\alpha\) and \(\beta\) completely. Multiplying by a pure phase does not change the magnitude:
+\begin{equation}
+|e^{i\theta}\alpha|^2=|\alpha|^2.
+\end{equation}
+So there is more information in the amplitudes than bare probabilities. The lecture does not yet say what that extra information is for; it only marks that there is something more to be explained later.
+
+There is also a warning already on the table. These state vectors are not ordinary arrows in space. The vectors \(|u\rangle\) and \(|d\rangle\) are orthogonal in the space of states, not perpendicular pointers in ordinary three-dimensional space. That distinction will become essential.
+
+\section{Observables, Transpose, and Hermitian Matrices}
+
+Once states are in place, the next question is immediate: what represents the quantities we measure? The answer begins from a physical constraint. The outcomes of measurements are real numbers. Therefore the operators representing observables must form a special class of matrices.
+
+Before defining that class, Susskind introduces two auxiliary notions: transpose and Hermitian conjugation.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_03_figure_02.png}
+\caption{Matrix transpose and symmetry rule.}
+\end{figure}
+
+The transpose interchanges rows and columns:
+\begin{equation}
+(M^T)_{ij}=M_{ji}.
+\end{equation}
+A symmetric matrix is one that is unchanged by this operation:
+\begin{equation}
+M_{ij}=M_{ji}.
+\end{equation}
+Geometrically one may think of the transpose as reflection across the main diagonal.
+
+Hermitian conjugation is the matrix analogue of complex conjugation. One first transposes and then complex-conjugates:
+\begin{equation}
+M^\dagger=(M^T)^*.
+\end{equation}
+A Hermitian matrix is one equal to its own Hermitian conjugate:
+\begin{equation}
+M=M^\dagger.
+\end{equation}
+In components this means
+\begin{equation}
+M_{ij}=(M_{ji})^*.
+\end{equation}
+The transcript is noisy at exactly this point, but this is the clean condition the lecture is aiming at.
+
+It follows at once that the diagonal entries of a Hermitian matrix are real, while reflected off-diagonal entries are complex conjugates of one another. Rather than trust the blurred board example on the right of the frame, it is better to write the canonical \(2\times 2\) form:
+\begin{equation}
+M=\begin{pmatrix}
+a & z\\
+z^* & b
+\end{pmatrix},
+\qquad a,b \text{ real}.
+\end{equation}
+This is the matrix notion of ``reality'' relevant for observables.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} If observables are real, why are we using complex numbers at all?
+
+\paragraph{Answer.} The lecture refuses to answer this too early. Measurable results may always be represented by real numbers, and if one wished one could package collections of real numbers into complex notation. But that is not the right question. The real question is: why is quantum mechanics \emph{driven} to complex numbers? Susskind postpones the answer. It belongs to time evolution and reversibility, not to the static postulates we are organizing here. For the moment we keep the complex vector space in place and proceed.
+
+\section{Matrix Elements and Real Expectation Values}
+
+Now comes the first real payoff for the Hermitian definition. The lecture writes down a few elementary identities and then uses them to justify why Hermitian operators are natural candidates for observables.
+
+First, the inner product satisfies
+\begin{equation}
+\langle B|A\rangle=\langle A|B\rangle^*.
+\end{equation}
+Second, for any matrix \(M\),
+\begin{equation}
+\langle B|M|A\rangle=\bigl(\langle A|M^\dagger|B\rangle\bigr)^*.
+\end{equation}
+If \(M\) is Hermitian, so that \(M^\dagger=M\), this becomes
+\begin{equation}
+\langle B|M|A\rangle=\bigl(\langle A|M|B\rangle\bigr)^*.
+\end{equation}
+The quantity \(\langle B|M|A\rangle\) is the \(|B\rangle\)-\(|A\rangle\) matrix element of \(M\).
+
+\begin{proposition}
+If \(M\) is Hermitian, then the expectation value \(\langle A|M|A\rangle\) is real.
+\end{proposition}
+
+\begin{proof}
+Set \(B=A\) in the Hermitian matrix-element identity. Then
+\begin{equation}
+\langle A|M|A\rangle=\bigl(\langle A|M|A\rangle\bigr)^*.
+\end{equation}
+A number equal to its own complex conjugate is real. Therefore \(\langle A|M|A\rangle\in\mathbb{R}\).
+\end{proof}
+
+The lecture gives this object the standard name \emph{expectation value}. The name is not yet explained in probabilistic detail, but the mathematical point is already decisive: if an observable is supposed to yield real measurement outcomes, then its average value had better be real in every state. Hermitian matrices have exactly this property.
+
+\section{Eigenvalues and Eigenvectors from the Simplest Examples}
+
+The last major mathematical idea for the day is the idea of eigenvalues and eigenvectors. The lecture introduces it in the most concrete way possible.
+
+\begin{definition}
+A nonzero vector \(|a\rangle\) is an eigenvector of \(M\) with eigenvalue \(\lambda_a\) if
+\begin{equation}
+M|a\rangle=\lambda_a|a\rangle.
+\end{equation}
+\end{definition}
+
+\begin{proposition}
+If \(M\) is Hermitian and \(M|a\rangle=\lambda_a|a\rangle\), then \(\lambda_a\) is real.
+\end{proposition}
+
+\begin{proof}
+Multiply the eigenvalue equation on the left by \(\langle a|\):
+\begin{equation}
+\langle a|M|a\rangle=\lambda_a\langle a|a\rangle.
+\end{equation}
+The left-hand side is real because \(M\) is Hermitian. The factor \(\langle a|a\rangle\) is also real and positive for a nonzero vector. Therefore
+\begin{equation}
+\lambda_a=\frac{\langle a|M|a\rangle}{\langle a|a\rangle}
+\end{equation}
+is real.
+\end{proof}
+
+This is the first spectral fact we need, and the lecture immediately translates it into physics: if \(M\) represents an observable, then its eigenvalues are the possible values the measurement can return.
+
+To make the definition unavoidable, Susskind turns to diagonal matrices.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_03.png}
+\caption{Eigenvector equation with a diagonal matrix.}
+\end{figure}
+
+Take
+\begin{equation}
+M=\begin{pmatrix}
+m_{11} & 0\\
+0 & m_{22}
+\end{pmatrix}.
+\end{equation}
+Then
+\begin{equation}
+\begin{pmatrix}
+m_{11} & 0\\
+0 & m_{22}
+\end{pmatrix}
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
+=
+m_{11}
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}.
+\end{equation}
+So \(\begin{pmatrix}1\\0\end{pmatrix}\) is an eigenvector with eigenvalue \(m_{11}\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_04.png}
+\caption{Diagonal matrix acting on the lower basis vector.}
+\end{figure}
+
+Likewise,
+\begin{equation}
+\begin{pmatrix}
+m_{11} & 0\\
+0 & m_{22}
+\end{pmatrix}
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}
+=
+m_{22}
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}.
+\end{equation}
+So \(\begin{pmatrix}0\\1\end{pmatrix}\) is an eigenvector with eigenvalue \(m_{22}\).
+
+These examples are elementary, but the lecture leans on them because they carry the whole interpretation. Matrix times vector equals number times the same vector. The eigenvalue is the possible measurement value. The eigenvector is the state in which that value is obtained with certainty.
+
+\section{Pauli Matrices and the Two-Level Spin System}
+
+Now the lecture passes from abstract matrices to the observables of the two-level spin system. The three Pauli matrices are introduced as
+\begin{equation}
+\sigma_3=
+\begin{pmatrix}
+1&0\\
+0&-1
+\end{pmatrix},
+\qquad
+\sigma_1=
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix},
+\qquad
+\sigma_2=
+\begin{pmatrix}
+0&-i\\
+i&0
+\end{pmatrix}.
+\end{equation}
+
+For \(\sigma_3\), the eigenvectors are just the up and down basis states:
+\begin{equation}
+\sigma_3
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
+=
++
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix},
+\qquad
+\sigma_3
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}
+=
+-
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}.
+\end{equation}
+So the eigenvalues are \(+1\) and \(-1\), and the corresponding states are the familiar up and down states.
+
+For \(\sigma_1\), the board first shows the setup more clearly than the finished right-hand side, so we keep the screenshot and supply the clean completion beside it.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_05.png}
+\caption{Off-diagonal matrix acting on an equal-weight vector.}
+\end{figure}
+
+The normalized equal-weight vector
+\begin{equation}
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}
+\end{equation}
+satisfies
+\begin{equation}
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix}
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}
+=
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix},
+\end{equation}
+so it is an eigenvector of \(\sigma_1\) with eigenvalue \(+1\). The companion vector
+\begin{equation}
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+-1
+\end{pmatrix}
+\end{equation}
+satisfies
+\begin{equation}
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix}
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+-1
+\end{pmatrix}
+=
+-
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+-1
+\end{pmatrix}.
+\end{equation}
+
+The lecture is careful here about normalization. If a vector is an eigenvector, multiplying it by any nonzero scalar still leaves it an eigenvector. But once the vector is to represent a quantum state, we normalize it.
+
+For \(\sigma_2\), the eigenvectors are
+\begin{equation}
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+i
+\end{pmatrix},
+\qquad
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+-i
+\end{pmatrix},
+\end{equation}
+with eigenvalues \(+1\) and \(-1\), respectively.
+
+The lecture next emphasizes a common property of these operators:
+\begin{equation}
+\sigma_1^2=\sigma_2^2=\sigma_3^2=1,
+\end{equation}
+where \(1\) denotes the identity matrix. For example,
+\begin{equation}
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix}^2
+=
+\begin{pmatrix}
+1&0\\
+0&1
+\end{pmatrix}.
+\end{equation}
+Since the square of each operator is the identity, the square of each eigenvalue is \(1\). Therefore the only possible measured values are
+\begin{equation}
+\lambda=\pm 1.
+\end{equation}
+This is the first appearance of the peculiar quantum fact that the component of electron spin along an axis has only two possible outcomes.
+
+\section{Orthogonality, Probabilities, and Spin Along an Arbitrary Axis}
+
+After the examples comes the deeper theorem.
+
+\begin{theorem}
+If \(M\) is Hermitian and
+\begin{equation}
+M|A\rangle=\lambda_A|A\rangle,
+\qquad
+M|B\rangle=\lambda_B|B\rangle,
+\end{equation}
+with \(\lambda_A\neq \lambda_B\), then
+\begin{equation}
+\langle B|A\rangle=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Multiply the first eigenvalue equation on the left by \(\langle B|\):
+\begin{equation}
+\langle B|M|A\rangle=\lambda_A\langle B|A\rangle.
+\end{equation}
+Multiply the second on the left by \(\langle A|\):
+\begin{equation}
+\langle A|M|B\rangle=\lambda_B\langle A|B\rangle.
+\end{equation}
+Now complex-conjugate the second equation. Since \(M\) is Hermitian and the eigenvalues are real,
+\begin{equation}
+\langle B|M|A\rangle=\lambda_B\langle B|A\rangle.
+\end{equation}
+Comparing this with the first equation gives
+\begin{equation}
+(\lambda_A-\lambda_B)\langle B|A\rangle=0.
+\end{equation}
+If \(\lambda_A\neq\lambda_B\), the only possibility is \(\langle B|A\rangle=0\).
+\end{proof}
+
+The lecture pauses before the proof to say what the theorem means. States corresponding to different definite outcomes of the same observable are orthogonal. Orthogonality is therefore not just a geometric convenience; it encodes measurable distinguishability.
+
+The final postulate introduced in the lecture is the probability rule. Suppose the system is prepared in some normalized state \(|B\rangle\), and suppose \(|A\rangle\) is a normalized eigenvector of an observable \(M\) with eigenvalue \(\lambda_A\). Then
+\begin{equation}
+P(\lambda_A|B)=|\langle A|B\rangle|^2=\langle A|B\rangle\langle B|A\rangle.
+\end{equation}
+
+The lecture immediately works examples.
+
+First prepare the electron in the \(+1\) eigenstate of \(\sigma_3\):
+\begin{equation}
+|B\rangle=
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}.
+\end{equation}
+Now measure \(\sigma_1\). For the \(+1\) eigenvalue of \(\sigma_1\), take
+\begin{equation}
+|A\rangle=
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}.
+\end{equation}
+Then
+\begin{align}
+\langle A|B\rangle
+&=
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
+=
+\frac{1}{\sqrt{2}},\\
+P(\sigma_1=+1\,|\,\sigma_3=+1)
+&=
+\left|\langle A|B\rangle\right|^2
+=
+\frac{1}{2}.
+\end{align}
+If instead we take the \(-1\) eigenvector of \(\sigma_1\),
+\begin{equation}
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+-1
+\end{pmatrix},
+\end{equation}
+the absolute square is again \(1/2\). So a state polarized along the 3-axis gives equal probabilities for the two outcomes when we measure along the 1-axis.
+
+The same pattern persists when we compare \(\sigma_1\) and \(\sigma_2\). Prepare the system in the \(+1\) eigenstate of \(\sigma_1\):
+\begin{equation}
+|B\rangle=
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix},
+\end{equation}
+and choose the \(+1\) eigenstate of \(\sigma_2\):
+\begin{equation}
+|A\rangle=
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+i
+\end{pmatrix}.
+\end{equation}
+Then
+\begin{align}
+\langle A|B\rangle
+&=
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1 & -i
+\end{pmatrix}
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}
+=
+\frac{1}{2}-\frac{i}{2},\\
+P(\sigma_2=+1\,|\,\sigma_1=+1)
+&=
+\left|\frac{1}{2}-\frac{i}{2}\right|^2
+=
+\frac{1}{2}.
+\end{align}
+Again the outcome probabilities are one-half and one-half.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Is this just the cosine squared of an angle? And are perpendicular pointers the same thing as orthogonal states?
+
+\paragraph{Answer.} Only in a very limited sense. For ordinary real unit vectors in three-dimensional space, the dot product is the cosine of the angle between them. But here the inner product of two states is generally complex. That is why the probability is not the inner product itself but its absolute square. So the geometric analogy is only partial.
+
+The second issue is even more important. A spin direction in ordinary space is a \emph{pointer}. A state vector lives in Hilbert space. The state orthogonal to spin-up along a given axis is spin-down along that same axis, not spin-up along a perpendicular spatial axis. The lecture therefore repairs the vocabulary explicitly: \emph{perpendicular} is a word for ordinary-space pointers, while \emph{orthogonal} is a word for states.
+
+With that distinction made, the lecture turns to the component of spin along an arbitrary spatial direction. Let
+\begin{equation}
+\hat n=(n_1,n_2,n_3),
+\qquad
+n_1^2+n_2^2+n_3^2=1.
+\end{equation}
+Classically, the component of a pointer \(\sigma\) along \(\hat n\) is the dot product \(\sigma\cdot \hat n\). The quantum candidate is therefore
+\begin{equation}
+\sigma\cdot \hat n=n_1\sigma_1+n_2\sigma_2+n_3\sigma_3.
+\end{equation}
+Using the Pauli matrices, this becomes
+\begin{equation}
+\sigma\cdot \hat n=
+\begin{pmatrix}
+n_3 & n_1-in_2\\
+n_1+in_2 & -n_3
+\end{pmatrix}.
+\end{equation}
+It is immediately Hermitian, because the diagonal entries are real and the off-diagonal entries are complex conjugates of each other.
+
+To show that the possible measured values are still only \(\pm1\), the lecture uses the special algebra of the Pauli matrices:
+\begin{equation}
+\sigma_1\sigma_2+\sigma_2\sigma_1=0,
+\qquad
+\sigma_2\sigma_3+\sigma_3\sigma_2=0,
+\qquad
+\sigma_1\sigma_3+\sigma_3\sigma_1=0.
+\end{equation}
+Together with \(\sigma_i^2=1\), these imply
+\begin{align}
+(\sigma\cdot \hat n)^2
+&=
+(n_1\sigma_1+n_2\sigma_2+n_3\sigma_3)^2\\
+&=
+n_1^2\sigma_1^2+n_2^2\sigma_2^2+n_3^2\sigma_3^2 \notag\\
+&\quad
++n_1n_2(\sigma_1\sigma_2+\sigma_2\sigma_1)
++n_2n_3(\sigma_2\sigma_3+\sigma_3\sigma_2)
++n_1n_3(\sigma_1\sigma_3+\sigma_3\sigma_1) \notag\\
+&=
+(n_1^2+n_2^2+n_3^2)\,1\\
+&=1. \notag
+\end{align}
+Therefore any eigenvalue \(\lambda\) of \(\sigma\cdot \hat n\) must satisfy \(\lambda^2=1\), so
+\begin{equation}
+\lambda=\pm1.
+\end{equation}
+
+This is where the lecture stops: along every axis, the measurable values are still only \(+1\) and \(-1\). What changes from axis to axis are not the allowed outcomes but their probabilities.
+
+\section{Summary}
+
+The lecture has now assembled the basic language we need for the two-state quantum system. States are normalized vectors in a complex vector space. Observables are represented by Hermitian matrices, whose expectation values and eigenvalues are real. Eigenvectors with different eigenvalues are orthogonal, and the probability of obtaining a given measurement outcome is the absolute square of the corresponding inner product. For spin, the Pauli matrices provide the concrete realization, and even along an arbitrary spatial direction the possible outcomes remain only \(\pm1\). The rest of the subject will build on this small but rigid framework.
