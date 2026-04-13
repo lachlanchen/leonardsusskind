@@ -1,0 +1,80 @@
+{
+  "course_rel": "supplementary/quantum_entanglement/2006_fall_part_3",
+  "transcript_rel": "supplementary/quantum_entanglement/2006_fall_part_3/058 - Lectures 2 & 3 \uff5c Quantum Entanglements, Part 3 (Stanford) [3mfNey1Z53k].md",
+  "video_rel": "supplementary/quantum_entanglement/2006_fall_part_3/058 - Lectures 2 & 3 \uff5c Quantum Entanglements, Part 3 (Stanford) [3mfNey1Z53k].mp4",
+  "lecture_number": 58,
+  "lecture_slug": "lecture_58",
+  "lecture_title": "Lectures 2 & 3 : Quantum Entanglements, Part 3 (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_58_figure_01.png",
+      "timestamp_seconds": 6.838,
+      "timestamp_hhmmss": "00:00:06.838",
+      "source_candidate": "lecture_58_window_01_candidate_03_000006838.png",
+      "recommended_use": "screenshot_only",
+      "rationale": "All four candidates are opening title-card frames rather than lecture content. Candidate 03 is the clearest and most complete of the set, but it still shows only Stanford branding, not blackboard mathematics, diagrams, or board layout useful for note writing, so this subtitle window should be rejected.",
+      "subtitle_excerpt": "This program is brought to you by Stanford University.",
+      "segment_start_seconds": 0.0,
+      "segment_start_hhmmss": "00:00:00.000",
+      "segment_end_seconds": 10.52,
+      "segment_end_hhmmss": "00:00:10.520",
+      "caption_hint": "Stanford title card"
+    },
+    {
+      "name": "lecture_58_figure_02.png",
+      "timestamp_seconds": 349.69,
+      "timestamp_hhmmss": "00:05:49.690",
+      "source_candidate": "lecture_58_window_02_candidate_03_000549690.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "it's an anti-symmetric field tensor,",
+      "segment_start_seconds": 347.74,
+      "segment_start_hhmmss": "00:05:47.740",
+      "segment_end_seconds": 350.74,
+      "segment_end_hhmmss": "00:05:50.740",
+      "caption_hint": "it's an anti-symmetric field tensor,"
+    },
+    {
+      "name": "lecture_58_figure_03.png",
+      "timestamp_seconds": 1877.04,
+      "timestamp_hhmmss": "00:31:17.040",
+      "source_candidate": "lecture_58_window_03_candidate_03_003117040.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "An anti-symmetric matrix always",
+      "segment_start_seconds": 1875.74,
+      "segment_start_hhmmss": "00:31:15.740",
+      "segment_end_seconds": 1877.74,
+      "segment_end_hhmmss": "00:31:17.740",
+      "caption_hint": "An anti-symmetric matrix always"
+    },
+    {
+      "name": "lecture_58_figure_04.png",
+      "timestamp_seconds": 2823.37,
+      "timestamp_hhmmss": "00:47:03.370",
+      "source_candidate": "lecture_58_window_05_candidate_03_004703370.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "The wave equation is an equation with second derivatives.",
+      "segment_start_seconds": 2820.12,
+      "segment_start_hhmmss": "00:47:00.120",
+      "segment_end_seconds": 2825.12,
+      "segment_end_hhmmss": "00:47:05.120",
+      "caption_hint": "The wave equation is an equation with second derivatives."
+    },
+    {
+      "name": "lecture_58_figure_05.png",
+      "timestamp_seconds": 5603.320000000001,
+      "timestamp_hhmmss": "01:33:23.320",
+      "source_candidate": "lecture_58_window_06_candidate_03_013323320.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "anti-symmetric matrix",
+      "segment_start_seconds": 5602.02,
+      "segment_start_hhmmss": "01:33:22.020",
+      "segment_end_seconds": 5604.02,
+      "segment_end_hhmmss": "01:33:24.020",
+      "caption_hint": "anti-symmetric matrix"
+    }
+  ]
+}
