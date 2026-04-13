@@ -1,0 +1,52 @@
+{
+  "course_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring",
+  "transcript_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/150 - Supersymmetry & Grand Unification\uff1a Lecture 6 [FU5SKmVTxIw].md",
+  "video_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/150 - Supersymmetry & Grand Unification\uff1a Lecture 6 [FU5SKmVTxIw].mp4",
+  "lecture_number": 6,
+  "lecture_slug": "lecture_06",
+  "lecture_title": "Supersymmetry & Grand Unification\uff1a Lecture 6",
+  "assets": [
+    {
+      "name": "lecture_06_figure_03.png",
+      "timestamp_seconds": 3997.088,
+      "timestamp_hhmmss": "01:06:37.088",
+      "source_candidate": "lecture_06_window_03_candidate_04_010637088.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the cleanest and most complete combination of the board elements in this subtitle window. The heading 'Geometry = Energy' is fully legible, the Friedmann-like term is centered and unobstructed, and the partial circular sketch at the right edge remains visible without the lecturer blocking the board. Earlier candidates are either slightly less complete or more process-like.",
+      "subtitle_excerpt": "the energy momentum tensor on the right hand side.",
+      "segment_start_seconds": 3993.374,
+      "segment_start_hhmmss": "01:06:33.374",
+      "segment_end_seconds": 3997.594,
+      "segment_end_hhmmss": "01:06:37.594",
+      "caption_hint": "geometry equals energy"
+    },
+    {
+      "name": "lecture_06_figure_04.png",
+      "timestamp_seconds": 4126.794,
+      "timestamp_hhmmss": "01:08:46.794",
+      "source_candidate": "lecture_06_window_04_candidate_03_010846794.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the clearest unobstructed frame of the full board layout. The left-hand cosmological terms are fully visible, the energy-content terms and their handwritten annotations are as complete as they get in this window, and the upper-right circular sketch remains in frame without Susskind blocking any of the key content. Earlier and later candidates are partially occluded by the lecturer.",
+      "subtitle_excerpt": "It's the energy in the sense of the canonical Hamiltonian,",
+      "segment_start_seconds": 4121.594,
+      "segment_start_hhmmss": "01:08:41.594",
+      "segment_end_seconds": 4129.594,
+      "segment_end_hhmmss": "01:08:49.594",
+      "caption_hint": "Friedmann balance of geometry and energy"
+    },
+    {
+      "name": "lecture_06_figure_05.png",
+      "timestamp_seconds": 5191.594,
+      "timestamp_hhmmss": "01:26:31.594",
+      "source_candidate": "lecture_06_window_06_candidate_02_012631594.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest unobstructed view of the key board identity at the top center, while still retaining the surrounding setup lines on the left and the endpoint-style evaluation line below. The later frames are more occluded by Susskind\u2019s pointing hand, and the earlier frame is slightly less settled.",
+      "subtitle_excerpt": "so that the integral of a derivative,",
+      "segment_start_seconds": 5190.834,
+      "segment_start_hhmmss": "01:26:30.834",
+      "segment_end_seconds": 5192.834,
+      "segment_end_hhmmss": "01:26:32.834",
+      "caption_hint": "integral of a derivative"
+    }
+  ]
+}
