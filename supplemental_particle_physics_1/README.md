@@ -39,4 +39,4 @@ These top-level PDFs are the published artifacts for this folder.
 
 ## 🗂️ Legacy Items
 
-Older transcript text exports and legacy material such as `ch1/` are kept beside the new PDFs for reference, but the canonical published artifacts are `particle_physics_1_basic_concepts.pdf` and `lecture_*.pdf`.
+Older transcript text exports and legacy material such as `ch1/` may still exist in local workspaces for reference, but they are intentionally excluded from the published Git tree. The canonical published artifacts are `particle_physics_1_basic_concepts.pdf` and `lecture_*.pdf`.
