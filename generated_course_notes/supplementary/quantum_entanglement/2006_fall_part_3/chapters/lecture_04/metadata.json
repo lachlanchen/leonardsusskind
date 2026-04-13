@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/quantum_entanglement/2006_fall_part_3",
+  "transcript_rel": "supplementary/quantum_entanglement/2006_fall_part_3/059 - Lecture 4 \uff5c Quantum Entanglements, Part 3 (Stanford) [hmoLr5hHPN8].md",
+  "video_rel": "supplementary/quantum_entanglement/2006_fall_part_3/059 - Lecture 4 \uff5c Quantum Entanglements, Part 3 (Stanford) [hmoLr5hHPN8].mp4",
+  "lecture_number": 4,
+  "lecture_slug": "lecture_04",
+  "lecture_title": "Lecture 4 : Quantum Entanglements, Part 3 (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_04_figure_01.png",
+      "timestamp_seconds": 6.838,
+      "timestamp_hhmmss": "00:00:06.838",
+      "source_candidate": "lecture_04_window_01_candidate_03_000006838.png",
+      "recommended_use": "screenshot_only",
+      "rationale": "None of the candidates contain blackboard mathematics, diagrams, or lecture-board layout useful for note writing. Candidate 03 is the clearest and most complete of the title-card sequence, but it is still only Stanford branding, so this subtitle window should be rejected from the mathematical chapter.",
+      "subtitle_excerpt": "This program is brought to you by Stanford University.",
+      "segment_start_seconds": 0.0,
+      "segment_start_hhmmss": "00:00:00.000",
+      "segment_end_seconds": 10.52,
+      "segment_end_hhmmss": "00:00:10.520",
+      "caption_hint": "Stanford title card"
+    },
+    {
+      "name": "lecture_04_figure_02.png",
+      "timestamp_seconds": 186.097,
+      "timestamp_hhmmss": "00:03:06.097",
+      "source_candidate": "lecture_04_window_02_candidate_03_000306097.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "on the same graph, draw the t prime axis.",
+      "segment_start_seconds": 183.159,
+      "segment_start_hhmmss": "00:03:03.159",
+      "segment_end_seconds": 187.679,
+      "segment_end_hhmmss": "00:03:07.679",
+      "caption_hint": "on the same graph, draw the t prime axis."
+    },
+    {
+      "name": "lecture_04_figure_03.png",
+      "timestamp_seconds": 2898.0699999999997,
+      "timestamp_hhmmss": "00:48:18.070",
+      "source_candidate": "lecture_04_window_05_candidate_03_004818070.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "his trajectory is x equals vt,",
+      "segment_start_seconds": 2896.12,
+      "segment_start_hhmmss": "00:48:16.120",
+      "segment_end_seconds": 2899.12,
+      "segment_end_hhmmss": "00:48:19.120",
+      "caption_hint": "his trajectory is x equals vt,"
+    },
+    {
+      "name": "lecture_04_figure_04.png",
+      "timestamp_seconds": 4581.018,
+      "timestamp_hhmmss": "01:16:21.018",
+      "source_candidate": "lecture_04_window_06_candidate_01_011621018.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame preserves the most useful board content at the moment of discussion. The right-hand spacetime diagram is the clearest here, and the lecturer's lower posture leaves more of the diagram visible than in the later frames, where his upright stance blocks more of the board. The left side also retains partial algebraic work, but the main value of the frame is the diagrammatic layout.",
+      "subtitle_excerpt": "But the answer is definitely that they're asymmetric",
+      "segment_start_seconds": 4580.778,
+      "segment_start_hhmmss": "01:16:20.778",
+      "segment_end_seconds": 4582.778,
+      "segment_end_hhmmss": "01:16:22.778",
+      "caption_hint": "Asymmetric spacetime construction"
+    }
+  ]
+}
