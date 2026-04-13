@@ -1,0 +1,80 @@
+{
+  "course_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall",
+  "transcript_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall/076 - Lecture 2 \uff5c New Revolutions in Particle Physics\uff1a Basic Concepts [oT7bTr5YEO4].md",
+  "video_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall/076 - Lecture 2 \uff5c New Revolutions in Particle Physics\uff1a Basic Concepts [oT7bTr5YEO4].mkv",
+  "lecture_number": 2,
+  "lecture_slug": "lecture_02",
+  "lecture_title": "Lecture 2 : New Revolutions in Particle Physics\uff1a Basic Concepts",
+  "assets": [
+    {
+      "name": "lecture_02_figure_02.png",
+      "timestamp_seconds": 1298.62,
+      "timestamp_hhmmss": "00:21:38.620",
+      "source_candidate": "lecture_02_window_02_candidate_02_002138620.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and least occluded frame in the window. It preserves the board layout of the wave-frequency relations that are being used immediately in the photon-momentum discussion, and it is much sharper and more complete than the later candidates, where Susskind blocks the left-hand side of the developing momentum equation while erasing or writing.",
+      "subtitle_excerpt": "So, this is just the equation that the photon momentum.",
+      "segment_start_seconds": 1296.34,
+      "segment_start_hhmmss": "00:21:36.340",
+      "segment_end_seconds": 1302.34,
+      "segment_end_hhmmss": "00:21:42.340",
+      "caption_hint": "Wave relations used for photon momentum"
+    },
+    {
+      "name": "lecture_02_figure_03.png",
+      "timestamp_seconds": 1911.82,
+      "timestamp_hhmmss": "00:31:51.820",
+      "source_candidate": "lecture_02_window_03_candidate_01_003151820.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the best frame because the full board layout is visible, the definition of \\(\\lambda\\) as wavelength is clearly legible, and Susskind\u2019s gesture points directly at the left-column wave notation being discussed. The later candidates are similar, but this one most clearly captures the exact definitional moment while keeping the surrounding equations readable.",
+      "subtitle_excerpt": "Lambda equals a wavelength, that's a definition.",
+      "segment_start_seconds": 1911.34,
+      "segment_start_hhmmss": "00:31:51.340",
+      "segment_end_seconds": 1915.34,
+      "segment_end_hhmmss": "00:31:55.340",
+      "caption_hint": "Lambda defined as wavelength"
+    },
+    {
+      "name": "lecture_02_figure_04.png",
+      "timestamp_seconds": 2011.82,
+      "timestamp_hhmmss": "00:33:31.820",
+      "source_candidate": "lecture_02_window_04_candidate_01_003331820.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the best frame because the photon-momentum equation is fully written and clearly legible at the upper right, including the intermediate \\(hf/c\\) form and the final \\(h/\\lambda\\) form. The board is sharp, the equation is unobstructed, and the surrounding formulas on energy and momentum remain visible enough to preserve the derivational context.",
+      "subtitle_excerpt": "Momentum equals h divided by lambda is general.",
+      "segment_start_seconds": 2011.34,
+      "segment_start_hhmmss": "00:33:31.340",
+      "segment_end_seconds": 2015.34,
+      "segment_end_hhmmss": "00:33:35.340",
+      "caption_hint": "Photon momentum as h over lambda"
+    },
+    {
+      "name": "lecture_02_figure_05.png",
+      "timestamp_seconds": 2266.7,
+      "timestamp_hhmmss": "00:37:46.700",
+      "source_candidate": "lecture_02_window_05_candidate_01_003746700.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and most complete frame in the window. The nonrelativistic energy formula is fully legible, and the boxed lower relation is visible without being covered by Susskind\u2019s hand or body. Later candidates add gesture emphasis but introduce more occlusion, especially over the boxed equation and the right-hand momentum term.",
+      "subtitle_excerpt": "The basic ingredients are the equation for the energy...",
+      "segment_start_seconds": 2266.34,
+      "segment_start_hhmmss": "00:37:46.340",
+      "segment_end_seconds": 2269.34,
+      "segment_end_hhmmss": "00:37:49.340",
+      "caption_hint": "Energy formula leading to matter-wave frequency"
+    },
+    {
+      "name": "lecture_02_figure_06.png",
+      "timestamp_seconds": 3080.71,
+      "timestamp_hhmmss": "00:51:20.710",
+      "source_candidate": "lecture_02_window_06_candidate_01_005120710.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the best frame because the simple board sketch is most complete here: the full horizontal path is visible, the label \\(L\\) is clear, and the marked endpoint is unobstructed. The later candidates crop more of the line and add hand motion without improving the diagram itself.",
+      "subtitle_excerpt": "It doesn't have to be a legitimate geometric circle.",
+      "segment_start_seconds": 3080.379,
+      "segment_start_hhmmss": "00:51:20.379",
+      "segment_end_seconds": 3083.14,
+      "segment_end_hhmmss": "00:51:23.140",
+      "caption_hint": "Path length L as a schematic loop"
+    }
+  ]
+}
