@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/particle_physics_2_standard_model/2010_winter",
+  "transcript_rel": "supplementary/particle_physics_2_standard_model/2010_winter/091 - Lecture 7 \uff5c New Revolutions in Particle Physics\uff1a Standard Model [7cKvhkFhXDk].md",
+  "video_rel": "supplementary/particle_physics_2_standard_model/2010_winter/091 - Lecture 7 \uff5c New Revolutions in Particle Physics\uff1a Standard Model [7cKvhkFhXDk].mkv",
+  "lecture_number": 7,
+  "lecture_slug": "lecture_07",
+  "lecture_title": "Lecture 7 : New Revolutions in Particle Physics\uff1a Standard Model",
+  "assets": [
+    {
+      "name": "lecture_07_figure_02.png",
+      "timestamp_seconds": 2013.36,
+      "timestamp_hhmmss": "00:33:33.360",
+      "source_candidate": "lecture_07_window_03_candidate_01_003333360.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame is the clearest and least occluded of the set. It preserves the full coordinate sketch on the left board, the component decomposition formulas beneath it, and the separate \u03d5^* \u03d5 expression on the right board. Later frames bring more of the lecturer into the shot without adding new board content.",
+      "subtitle_excerpt": "A potential like that is symmetric,",
+      "segment_start_seconds": 2013.0,
+      "segment_start_hhmmss": "00:33:33.000",
+      "segment_end_seconds": 2016.0,
+      "segment_end_hhmmss": "00:33:36.000",
+      "caption_hint": "complex field components and symmetric potential"
+    },
+    {
+      "name": "lecture_07_figure_03.png",
+      "timestamp_seconds": 3400.3,
+      "timestamp_hhmmss": "00:56:40.300",
+      "source_candidate": "lecture_07_window_04_candidate_03_005640300.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame gives the cleanest unobstructed view of the board. The lecturer has moved far enough aside that the rewritten Lagrangian terms on the left, the boxed angular piece below, and the potential sketch on the right are all visible at once. Candidate 1 is partially blocked by the pointing hand, and candidate 4 reintroduces the lecturer into the frame without improving the board content.",
+      "subtitle_excerpt": "a Lagrangian derivative of rho squared",
+      "segment_start_seconds": 3399.0,
+      "segment_start_hhmmss": "00:56:39.000",
+      "segment_end_seconds": 3401.0,
+      "segment_end_hhmmss": "00:56:41.000",
+      "caption_hint": "polar-field Lagrangian and symmetry-breaking potential"
+    },
+    {
+      "name": "lecture_07_figure_04.png",
+      "timestamp_seconds": 3859.72,
+      "timestamp_hhmmss": "01:04:19.720",
+      "source_candidate": "lecture_07_window_05_candidate_01_010419720.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame preserves the red board sketch most clearly before the lecturer moves further into the center of the shot. The left endpoint, vertical marker, and the slowly varying red profile are all visible, while later candidates obscure more of the diagram with the lecturer's body.",
+      "subtitle_excerpt": "Spin waves are Goldstone Bosons of rotational symmetry.",
+      "segment_start_seconds": 3859.0,
+      "segment_start_hhmmss": "01:04:19.000",
+      "segment_end_seconds": 3865.0,
+      "segment_end_hhmmss": "01:04:25.000",
+      "caption_hint": "spin-wave schematic as Goldstone mode"
+    },
+    {
+      "name": "lecture_07_figure_05.png",
+      "timestamp_seconds": 5925.48,
+      "timestamp_hhmmss": "01:38:45.480",
+      "source_candidate": "lecture_07_window_06_candidate_01_013845480.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the most complete and readable mathematical layout. It keeps the right-hand board with the covariant-derivative definitions and the assembled Lagrangian terms essentially intact, while still preserving some of the left-hand phase-transformation work. The later candidates shift too far left or crop the right board more aggressively, which makes them less useful for note writing.",
+      "subtitle_excerpt": "And that vector potential field can also be assembled",
+      "segment_start_seconds": 5925.0,
+      "segment_start_hhmmss": "01:38:45.000",
+      "segment_end_seconds": 5929.0,
+      "segment_end_hhmmss": "01:38:49.000",
+      "caption_hint": "covariant derivative and gauge field terms"
+    }
+  ]
+}
