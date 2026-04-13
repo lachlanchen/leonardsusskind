@@ -1,375 +1,368 @@
 \chapter{New Revolutions in Particle Physics: Basic Concepts}
 
-These companion notes to Leonard Susskind's first lecture in \emph{Particle Physics 1: Basic Concepts}, curated by LazyingArt LLC, follow the lecture's deliberate order of motivation: first the oldest question, then the first evidence, then the first true experiments, and only after that the equations that begin to control the subject. We will therefore let the chapter unfold as the lecture unfolds. The point is not simply to list facts about particles, but to see how chemistry, radioactivity, wave optics, quantum mechanics, and relativity lock together into the working logic of particle physics.
+These notes follow Lecture 1 of Leonard Susskind's \emph{Particle Physics 1: Basic Concepts}. The story is told, as in the lecture, for logical force rather than strict chronology, and the curation of the lecture materials is due to LazyingArt LLC. The opening question is ancient and still governs the subject: is nature discrete, or is it continuous? From that question we are led, step by step, through chemistry, radioactivity, light as a classical wave, light as a quantum, relativity, natural units, and finally to the practical rule that drives particle physics: to see smaller things we need shorter wavelengths, and shorter wavelengths require larger momentum and energy.
 
-\section{Discrete Matter Or Continuous Fields}
+\section{Discreteness, Continuity, and the First Chemical Evidence}
 
-Particle physics begins here with an ancient question: is nature discrete, or is it continuous? The atomist answer says that matter is built from indivisible units. Susskind immediately modernizes the vocabulary: let us call such units particles. The opposite answer is that matter is not built from separate pieces at all, but is instead spread out continuously through space, a kind of smear.
+Particle physics is introduced here in the broadest possible way. We do not begin with a catalogue of particles. We begin with two rival pictures of matter.
 
-This is why the lecture starts by opposing particle language to field language. A field is something defined throughout space: a density field, an electric field, a magnetic field. Such quantities are not pictured as little pellets sitting at isolated points. They are extended, continuous descriptions. Particle language comes with words such as atoms, molecules, collisions, and beams. Continuum language comes with words such as density, field, and smooth distribution.
+The first picture says that matter comes in indivisible units. The ancient word was \emph{atom}; in the lecture Susskind immediately relaxes the language and says: let us just call such discrete units particles. The second picture says the opposite: matter is not built from localized lumps at all, but is continuously distributed, smeared out through space. In that language one speaks of fields, and the lecture is careful to say what a field is: a function on space. A density is a field. The electric field is a field. The magnetic field is a field. A field is not a little object sitting somewhere; it is something defined throughout a region of space.
 
-The first surprise of the lecture is that quantum mechanics will eventually prevent either side from winning outright. The discrete picture is not simply right, and the continuum picture is not simply wrong. In some sense, each is incomplete; in some sense, each survives.
+Already at the beginning we are warned not to expect a simple victory for one side. Quantum mechanics will eventually force us to say that the particle picture and the continuum picture are both right and both incomplete. But before that subtlety appears, we want evidence.
 
-\begin{remark}
-The lecture explicitly warns that the history is being organized logically rather than strictly chronologically. We should preserve that warning. The aim is not historical pedantry but conceptual sequence.
-\end{remark}
+The first serious evidence for discreteness enters through chemistry. Dalton noticed that the mass of a fixed number of molecules of a substance comes, to good approximation, in integer multiples of the mass of the same number of hydrogen molecules. The point is not exact arithmetic perfection. The point is that the ratios are near integers. Not three halves, not \(\pi\), but integers. That is just the sort of pattern one expects if matter is being built from some underlying units.
 
-There is also a pedagogical warning embedded in the opening. We are not going to rederive all of quantum mechanics, relativity, and electromagnetism from scratch. The lecture assumes enough of those subjects to move quickly, but it still tries to stage the basic facts in a self-contained way.
+From the modern point of view we can see what Dalton was really glimpsing. Ordinary matter is made from atoms, and the mass of an atom is concentrated overwhelmingly in protons and neutrons. Electrons are very light by comparison and contribute only a small correction. Protons and neutrons have nearly equal mass, and the nucleus of hydrogen contains just one proton. Therefore the mass of ordinary matter is, to first approximation, counted in units of proton-or-neutron mass, and Dalton's integral pattern becomes intelligible. The lecture does not overstate this: it is an approximation, not an exact law, but it is a very revealing approximation.
 
-\section{Chemistry, Atoms, And The First Evidence For Discreteness}
+By the end of nineteenth-century chemistry the elements themselves looked like the elementary building blocks. There were roughly a hundred kinds of atoms, and it was natural to think that the story stopped there. Then, as the lecture puts it, all hell broke loose.
 
-The first persuasive evidence for discreteness is presented as a chemical fact. Dalton compares equal numbers of molecules of different substances and finds that their masses are close to integer multiples of the hydrogen case. The hidden story about how one compares equal numbers of molecules is acknowledged in the lecture and then put aside; the point that matters for the present argument is the mass pattern itself.
+\section{Radioactivity and the First Particle Beam}
 
-In cleaned notation, the content may be summarized as
-\begin{equation}
-M_{\text{mole of }X} \approx n_X\, M_{\text{mole of hydrogen}},
-\qquad n_X \in \mathbb{Z}.
-\end{equation}
+The next step is radioactivity, and the lecture treats it as the first real particle-physics experiment. The story begins with a happy accident. A radioactive source affects a photographic plate as if some invisible radiation had struck it. Becquerel then tries to study that radiation more carefully. He buries the source in a block of lead, drills a narrow hole through the lead, and places a photographic plate some distance away. The hole collimates the emission, and what had been a vague effect becomes a narrow beam.
 
-The lecture insists on the character of this statement. The multiples are not arbitrary. They are not \(3/2\), not \(\pi\), not some irregular decimal accident. They are close to integers. This is what suggests building blocks.
-
-Susskind then immediately refuses suspense and translates Dalton into modern language. Ordinary matter is made of atoms, and atomic masses are dominated by protons and neutrons. Electrons matter chemically and electrically, but in the mass budget they are tiny corrections. At the level needed here we may write
-\begin{equation}
-M_{\text{atom}} \approx N_p m_p + N_n m_n,
-\end{equation}
-with \(m_p \approx m_n\), and with the electron contribution suppressed because it is so small.
-
-Hydrogen is special because its nucleus is just one proton. That is why hydrogen naturally serves as the unit against which Dalton's integer pattern is read. The lecture's point is not that Dalton had our modern nuclear model, but that his chemistry was already pointing toward matter as something assembled from discrete ingredients.
-
-At the end of this story, nineteenth-century chemistry had apparently finished the job. The elements had been identified, the periodic table had been organized, and atoms themselves looked like the elementary particles of nature. This is exactly why the next historical turn matters. If atoms had really been the end of the story, there would have been no particle physics in the modern sense.
-
-\section{Radioactivity As The First Particle-Physics Experiment}
-
-The lecture's next move is not to declare a theory, but to reconstruct an experiment. Radioactivity first appears as something that mysteriously ruins a photographic plate. A radioactive material placed nearby acts \emph{as if} it were emitting some kind of radiation. Becquerel then improves the setup. Put the material deep inside a lead block, give the radiation a narrow opening through which to escape, and place a plate at some distance. What appears is a sharp spot. Something is coming out in a collimated beam.
-
-That already has the shape of particle physics: a source, a collimator, a beam, and a detector.
-
-\begin{figure}[htbp]
+\begin{figure}[h]
 \centering
-\begin{tikzpicture}[scale=0.95,>=stealth]
-\draw[fill=gray!20] (0,0) rectangle (2.2,4.2);
-\draw[fill=white] (1.85,1.85) rectangle (2.2,2.15);
-\fill (0.9,1.2) circle (0.10);
-\node at (0.9,0.75) {\small source};
-\node at (1.1,4.5) {\small lead block};
+\begin{tikzpicture}[scale=0.95]
+\draw[fill=gray!20] (0,-1.7) rectangle (2.2,1.7);
+\draw[fill=white] (2.0,-0.14) rectangle (2.2,0.14);
+\draw[fill=black] (1.0,-1.1) circle (0.07);
+\node at (1.0,-1.45) {\small source};
 
-\draw[rounded corners] (2.8,0.5) rectangle (4.5,3.7);
-\node at (3.65,4.05) {\small magnetic field region};
+\draw[thick] (6.8,-2.0) -- (6.8,2.0);
+\node[above] at (6.8,2.0) {\small photographic plate};
 
-\draw[thick] (5.5,0.2) -- (5.5,4.0);
-\node[right] at (5.5,2.1) {\small photographic plate};
+\draw[fill=gray!15] (3.4,1.0) rectangle (4.3,1.6);
+\draw[fill=gray!15] (3.4,-1.6) rectangle (4.3,-1.0);
+\node at (3.85,1.3) {\small N};
+\node at (3.85,-1.3) {\small S};
 
-\draw[->,thick] (2.2,2.0) -- (5.2,2.0);
-\draw[->,thick] (2.2,2.0) .. controls (3.0,2.55) and (4.0,3.15) .. (5.2,3.35);
-\draw[->,thick] (2.2,2.0) .. controls (3.0,1.45) and (4.0,0.95) .. (5.2,0.75);
+\draw[thick,->] (2.2,0.0) -- (6.5,0.0);
+\draw[thick,->] (2.2,0.0) .. controls (4.0,0.12) and (5.2,0.45) .. (6.45,0.75);
+\draw[thick,->] (2.2,0.0) .. controls (4.0,-0.2) and (5.1,-0.95) .. (6.45,-1.45);
 
-\node at (4.65,2.25) {\small \(\gamma\)};
-\node at (4.75,3.15) {\small \(\alpha\)};
-\node at (4.75,0.95) {\small \(\beta\)};
+\node[right] at (6.8,0.75) {\small \(\alpha\)};
+\node[right] at (6.8,0.0) {\small \(\gamma\)};
+\node[right] at (6.8,-1.45) {\small \(\beta\)};
+
+\node at (1.1,1.95) {\small lead block};
+\node at (3.85,2.0) {\small magnetic field};
 \end{tikzpicture}
-\caption{Cautious reconstruction from the lecture transcript: a radioactive source inside lead produces a collimated beam, and a nearby magnetic field separates the beam into three components. The exact left-right convention depends on the chosen field direction; the lecture's decisive point is the existence of three distinct components.}
+\caption{A schematic version of Becquerel's collimated radioactive source. In the lecture this becomes the first particle beam, and a magnetic field separates the radiation into \(\alpha\), \(\beta\), and \(\gamma\) components.}
 \end{figure}
 
-Now the magnetic field is introduced. The single beam splits into three. One goes straight ahead, behaving as if it is neutral. One bends one way, behaving as if negatively charged. One bends the other way, behaving as if positively charged. The field does not merely perturb the beam; it classifies it.
+That is already a striking development: something is being emitted in a directed beam. Then a magnetic field is brought near the beam, and the beam separates into three branches. One branch goes straight through, as if the magnetic field were absent. The other two bend in opposite directions, as charged objects should in a magnetic field, and they do not bend equally strongly.
 
-At this point the lecture again removes suspense. The three components are
-\begin{itemize}
-\item \(\beta\) radiation: electrons;
-\item \(\alpha\) radiation: helium nuclei, made of two protons and two neutrons;
-\item \(\gamma\) radiation: photons.
-\end{itemize}
+From the modern point of view the identifications are
+\begin{equation}
+\beta\text{-radiation}=\text{electrons},\qquad
+\alpha\text{-radiation}=\text{helium nuclei},\qquad
+\gamma\text{-radiation}=\text{photons}.
+\end{equation}
+But the lecture does not move too quickly. Before telling us what these branches are, it pauses over what was actually learned. Whatever was coming out of the source behaved as if it came in distinguishable components, and if the source were dilute enough one could imagine the screen registering arrivals one at a time: blip, blip, blip. Alpha arrives in little bundles. Beta arrives in little bundles. Gamma too arrives in little bundles.
 
-The order of explanation matters. First comes the apparatus, then the beam, then the magnetic splitting, then the naming. The experiment teaches us what sort of distinctions nature is making before we are given the final identifications.
+At this stage \(\gamma\)-radiation is the real mystery. It is neutral, it reaches the screen one event at a time, and yet there is no familiar neutral particle available to explain it. The lecture uses exactly that unresolved tension to pivot into the next subject. Gamma, it turns out, is light. But once gamma is recognized as light, a deeper problem appears, because light already seemed to belong to the opposite camp.
 
-\subsection{Question \& Answer}
+\section{Light as a Classical Wave}
 
-\paragraph{Question.} Why does Susskind call this, in some sense, the first particle-physics experiment?
+Gamma radiation is announced to be light, or rather very high-energy light. But that statement does not immediately settle anything. It sharpens the problem. For light was the strong classical example of something continuous, something field-like, something that looked very much not like a particle.
 
-\paragraph{Answer.} Because the setup already contains the essential grammar of the subject. There is a source, a collimated beam, a field that probes the beam, and a detector that records separated outcomes. Moreover, if the source is sufficiently dilute, the detector would not simply glow; it would click or blotch one event at a time. The language of particles enters here through discrete detection.
+The lecture first secures the classical case before permitting any quantum rescue. Suppose electromagnetic radiation is emitted from a source. The source might be a macroscopic antenna; it might equally well be an atom, which in this context acts as a perfectly good microscopic antenna. If light were merely a spray of bullets, then a small hole in an obstruction should produce a small sharp spot on a screen. Instead one gets a fuzzier region. That is suggestive, but not decisive. One might still imagine particles being deflected by the edges of the opening.
 
-This last point is crucial in the lecture. One can imagine the plate acting like a counter. Instead of a continuous patch one would see blip, blip, blip. The radiation would then reveal itself not merely as a beam, but as something arriving in discrete little bundles.
+The decisive experiment uses two openings rather than one. If light were only particles, then two holes would simply give two smeared spots superimposed on one another. But that is not what happens. One sees alternating bright and dark bands. The bright bands come from constructive interference, where wave crests meet wave crests. The dark bands come from destructive interference, where a crest from one opening meets a trough from the other.
 
-The \(\gamma\) component is the bridge to the rest of the lecture. It is neutral, it arrives in discrete events, and eventually we will identify it with light. That identification does not change the subject; it forces the lecture to reopen the entire wave story under more severe pressure.
-
-\section{Why Light First Looked Like A Wave}
-
-Once \(\gamma\)-radiation has been identified with high-energy light, the lecture deliberately steps backward. Instead of rushing to photons, it rebuilds the classical case for light as a wave. This is one of the lecture's most important transitions: \(\gamma\)-rays are not a separate topic from light. They are the high-energy end of the same electromagnetic story.
-
-Classically, light is the strongest case for continuity. It is not first presented as a stream of bullets, but as a propagating disturbance of the electromagnetic field. When charges accelerate, electromagnetic waves are emitted. Maxwell's achievement is then to say what these waves are: an oscillating electric field together with an oscillating magnetic field, each perpendicular to the other, propagating through space.
-
-But the lecture does not start with Maxwell's equations. It starts with experiments that force the wave idea.
-
-\subsection{Question \& Answer}
-
-\paragraph{Question.} Does the spreading of light through a single aperture already prove that light is a wave?
-
-\paragraph{Answer.} No. This is a local conceptual obstacle that Susskind takes seriously. A beam passing through one hole produces a fuzzy spot rather than a perfectly sharp geometric image, but that alone is not decisive. One might still imagine particles being deflected by the edges of the hole. The single-aperture experiment suggests wave behavior, but it does not yet compel it.
-
-What compels it is the two-slit experiment. If light were only particles, we would expect two overlapping smears on the screen. Instead we find bright and dark bands: places where the contributions reinforce, and places where they cancel. This is the experimental signature of interference.
-
-\begin{figure}[htbp]
+\begin{figure}[h]
 \centering
-\begin{tikzpicture}[scale=0.95,>=stealth]
-\draw[->,thick] (-1.0,1.5) -- (0.6,1.5);
-\node[left] at (-1.0,1.5) {\small source};
+\begin{tikzpicture}[scale=0.9]
+\draw[->] (-0.3,1.4) -- (0.8,1.4);
+\draw[->] (-0.3,0.8) -- (0.8,0.8);
+\draw[thick] (1.3,0.2) -- (1.3,2.0);
+\draw[thick,white,line width=5pt] (1.3,1.0) -- (1.3,1.2);
+\draw[thick] (1.3,0.2) -- (1.3,2.0);
+\draw[thick] (4.8,0.2) -- (4.8,2.0);
+\draw[->] (1.35,1.1) .. controls (2.1,1.55) and (3.2,1.65) .. (4.65,1.45);
+\draw[->] (1.35,1.1) .. controls (2.1,1.05) and (3.2,0.95) .. (4.65,0.9);
+\draw[->] (1.35,1.1) .. controls (2.1,0.7) and (3.2,0.55) .. (4.65,0.55);
+\draw[dashed] (5.6,0.5) ellipse (0.55 and 0.9);
+\node at (2.95,2.35) {\small single aperture};
+\node at (5.6,1.7) {\small fuzzy spot};
 
-\draw[fill=gray!20] (1.0,0.0) rectangle (1.25,3.0);
-\draw[fill=white] (1.0,0.90) rectangle (1.25,1.20);
-\draw[fill=white] (1.0,1.80) rectangle (1.25,2.10);
-\node at (1.9,2.7) {\small two slits};
+\draw[->] (6.7,1.4) -- (7.8,1.4);
+\draw[->] (6.7,0.8) -- (7.8,0.8);
+\draw[thick] (8.3,0.2) -- (8.3,2.0);
+\draw[thick,white,line width=5pt] (8.3,0.75) -- (8.3,0.9);
+\draw[thick,white,line width=5pt] (8.3,1.3) -- (8.3,1.45);
+\draw[thick] (8.3,0.2) -- (8.3,2.0);
+\draw[thick] (11.8,0.2) -- (11.8,2.0);
 
-\draw[thick] (5.0,0.0) -- (5.0,3.0);
-\node[right] at (5.0,1.5) {\small screen};
+\draw[->] (8.35,0.82) .. controls (9.2,1.15) and (10.2,1.5) .. (11.65,1.6);
+\draw[->] (8.35,0.82) .. controls (9.2,0.95) and (10.2,1.05) .. (11.65,1.05);
+\draw[->] (8.35,0.82) .. controls (9.2,0.7) and (10.2,0.55) .. (11.65,0.45);
 
-\draw[->,thin] (1.25,1.05) -- (4.8,0.45);
-\draw[->,thin] (1.25,1.05) -- (4.8,1.50);
-\draw[->,thin] (1.25,1.05) -- (4.8,2.55);
-\draw[->,thin] (1.25,1.95) -- (4.8,0.45);
-\draw[->,thin] (1.25,1.95) -- (4.8,1.50);
-\draw[->,thin] (1.25,1.95) -- (4.8,2.55);
+\draw[->] (8.35,1.38) .. controls (9.2,1.55) and (10.2,1.6) .. (11.65,1.6);
+\draw[->] (8.35,1.38) .. controls (9.2,1.25) and (10.2,1.05) .. (11.65,1.05);
+\draw[->] (8.35,1.38) .. controls (9.2,0.95) and (10.2,0.75) .. (11.65,0.45);
 
-\fill (5.0,0.35) circle (0.05);
-\fill (5.0,0.75) circle (0.05);
-\fill (5.0,1.50) circle (0.07);
-\fill (5.0,2.25) circle (0.05);
-\fill (5.0,2.65) circle (0.05);
+\draw[line width=2pt] (11.8,1.72) -- (12.2,1.72);
+\draw[line width=0.4pt] (11.8,1.45) -- (12.2,1.45);
+\draw[line width=2pt] (11.8,1.18) -- (12.2,1.18);
+\draw[line width=0.4pt] (11.8,0.91) -- (12.2,0.91);
+\draw[line width=2pt] (11.8,0.64) -- (12.2,0.64);
+\draw[line width=0.4pt] (11.8,0.37) -- (12.2,0.37);
 
-\draw (4.92,1.00) -- (5.08,1.00);
-\draw (4.92,2.00) -- (5.08,2.00);
+\node at (9.95,2.35) {\small double aperture};
+\node at (12.6,1.05) {\small interference bands};
 \end{tikzpicture}
-\caption{Cautious reconstruction from the lecture transcript: the two-slit experiment produces alternating reinforcement and cancellation, not merely the sum of two ordinary particle images.}
+\caption{Single-aperture spreading and double-aperture interference. In the lecture the first effect is suggestive, while the second really nails the wave character of light.}
 \end{figure}
 
-Thus the lecture's rhythm is: first the one-slit experiment is made suggestive, then its insufficiency is acknowledged, and only then is the stronger two-slit evidence invoked. After that, Maxwell enters naturally. Light is a wave of electric and magnetic field, and because it is a wave, it exhibits interference.
+That is the experiment that really nails the wave theory. Maxwell then tells us what kind of wave light is. It is a wave of electric and magnetic field. If the wave propagates along some axis, the electric field oscillates transversely, the magnetic field oscillates transversely as well, and the two are perpendicular to one another.
 
-\section{Wave Kinematics: Wavelength, Period, Frequency, And Angular Frequency}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.95]
+\draw[->] (0,0) -- (7.2,0);
+\node[right] at (7.2,0) {\small propagation};
 
-Only after the wave picture has been firmly established does the lecture slow down and define the variables that describe wave motion. This delay is pedagogically important. The equations are not dropped into empty space; they answer questions created by the preceding discussion.
+\draw[smooth,thick] plot coordinates {(0,0) (0.6,0.55) (1.2,0.0) (1.8,-0.55) (2.4,0.0) (3.0,0.55) (3.6,0.0) (4.2,-0.55) (4.8,0.0) (5.4,0.55) (6.0,0.0)};
+\node[above] at (3.0,0.65) {\small electric field};
 
-\begin{figure}[htbp]
+\draw[smooth,dashed] plot coordinates {(0,1.2) (0.6,0.65) (1.2,1.2) (1.8,1.75) (2.4,1.2) (3.0,0.65) (3.6,1.2) (4.2,1.75) (4.8,1.2) (5.4,0.65) (6.0,1.2)};
+\node[above] at (5.2,1.85) {\small magnetic field};
+
+\draw[<->] (0.6,-0.9) -- (3.0,-0.9);
+\node[below] at (1.8,-0.9) {\small \(\lambda\)};
+\end{tikzpicture}
+\caption{A schematic electromagnetic wave. The lecture first secures light as a classical wave of electric and magnetic field before allowing the quantum puzzle to appear.}
+\end{figure}
+
+Once that classical picture is secure, the lecture pauses and deliberately slows down. Now we introduce notation. This is not a digression. It is preparation. The next equations will matter because photons will inherit them.
+
+\section{Wave Kinematics}
+
+The first quantity introduced is the wavelength. It is simply the spatial length of one full cycle of the wave. The board evidence for that moment is worth keeping, because the lecture begins a fresh little derivation there.
+
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.72\textwidth]{lecture_01_figure_02.png}
-\caption{Introducing \(\lambda\) as wavelength. The board shows only the beginning of the word after the equals sign; the lecture makes the intended reading explicit.}
+\caption{Introducing \(\lambda\) as wavelength. The board writing is only partially visible, but the transcript makes the intended notation clear.}
 \end{figure}
 
-The first variable is the wavelength \(\lambda\), the spatial length of one complete cycle. In the lecture the notation is introduced directly:
+So we write
 \begin{equation}
 \lambda = \text{wavelength}.
 \end{equation}
 
-The second variable is the period \(T\), the time required for one full cycle to pass a fixed observer. The lecture emphasizes the contrast: wavelength is a distance; period is a time.
-
-\subsection{Question \& Answer}
-
-\paragraph{Question.} What is the connection between wavelength and period?
-
-\paragraph{Answer.} This is exactly the way the lecture motivates the relation. In one period the wave advances by one wavelength. Therefore
+Next comes the temporal description. If we stand still and let the wave pass us, the time required for one full oscillation is the period, which we denote by \(T\). In one period the wave advances by one wavelength. Therefore its speed is distance divided by time:
 \begin{equation}
-v = \frac{\lambda}{T},
+v=\frac{\lambda}{T}.
 \end{equation}
-where \(v\) is the speed of the wave. For light, \(v=c\). For water waves or sound waves, the same formula holds with a different speed.
+For light the speed is \(c\), so
+\begin{equation}
+c=\frac{\lambda}{T}.
+\end{equation}
 
-It is then more convenient to use frequency rather than period. By definition,
+It is then convenient to replace the period by its inverse, the frequency:
 \begin{equation}
 f=\frac{1}{T}.
 \end{equation}
-
-Substituting this into the previous relation gives
-\begin{equation}
-\lambda f = v.
-\end{equation}
-For light we therefore obtain
+Substituting this into the previous equation gives the relation written on the board,
 \begin{equation}
 \lambda f = c.
 \end{equation}
 
-\begin{figure}[htbp]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.72\textwidth]{lecture_01_figure_03.png}
-\caption{Frequency and wavelength relations on the board. The lecture has already introduced the period, and here the board records the compact relations \(f=\frac{1}{T}\) and \(\lambda f=c\).}
+\includegraphics[width=0.68\textwidth]{lecture_01_figure_03.png}
+\caption{Frequency and wavelength relations on the board. The lecture has now moved from period to frequency and then to the light-wave relation \(\lambda f=c\).}
 \end{figure}
 
-This is the first place where the lecture's mathematics becomes a genuine spine. Long wavelength means low frequency; short wavelength means high frequency. The equation makes this precise:
-\begin{equation}
-f=\frac{c}{\lambda}.
-\end{equation}
-
-Now comes another notational shift. Physicists prefer not to speak in cycles per second when writing formulas. They use angular frequency \(\omega\), measured in radians per second. The relation is
+That still uses cycles per second. The lecture now shifts to the notation physicists prefer. Instead of counting full turns per second, we count radians per second and define the angular frequency
 \begin{equation}
 \omega = 2\pi f.
 \end{equation}
+The board also shows the equivalent rearrangement \(\omega/(2\pi)=f\). The mathematical reason for preferring \(\omega\) is modest but real: once one writes many wave formulas, the factors of \(2\pi\) are usually better controlled in terms of angular frequency than ordinary frequency.
 
-Substituting \(f=\omega/(2\pi)\) into \(f=c/\lambda\), we get
-\begin{align}
-\frac{\omega}{2\pi} &= \frac{c}{\lambda}, \\
-\omega &= \frac{2\pi c}{\lambda}.
-\end{align}
+Combining \(\omega=2\pi f\) with \(f=c/\lambda\) gives the key relation:
+\begin{equation}
+\omega=\frac{2\pi c}{\lambda}.
+\end{equation}
 Equivalently,
 \begin{equation}
 \omega\lambda = 2\pi c.
 \end{equation}
 
-\begin{figure}[htbp]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.72\textwidth]{lecture_01_figure_04.png}
-\caption{Fundamental wave-motion relations on the board. The upper conversion between \(f\) and \(\omega\) is only partly crisp in the frame, but the boxed lower relation \(\omega=\frac{2\pi c}{\lambda}\) is clear and is the lecture's emphasized takeaway.}
+\includegraphics[width=0.68\textwidth]{lecture_01_figure_04.png}
+\caption{The board sequence culminating in the boxed relation \(\omega=\frac{2\pi c}{\lambda}\). The boxed placement makes clear that this is the takeaway equation of the mini-derivation.}
 \end{figure}
 
+Let us keep the whole chain together:
+\begin{align}
+c &= \frac{\lambda}{T}, \nonumber\\
+f &= \frac{1}{T}, \nonumber\\
+\lambda f &= c, \nonumber\\
+f &= \frac{c}{\lambda}, \nonumber\\
+\omega &= 2\pi f, \nonumber\\
+\omega &= \frac{2\pi c}{\lambda}. \label{eq:wave-omega-lambda}
+\end{align}
+
+The lecture has now done exactly what it needed to do. It has built a small vocabulary of waves in the order required for the next transition. Once \(\lambda\), \(f\), and \(\omega\) are live variables, the quantum puzzle can be stated sharply.
+
+\section{Photons, Probabilities, and Energy}
+
+We are now ready for the conceptual obstacle around which the lecture turns.
+
 \subsection{Question \& Answer}
 
-\paragraph{Question.} Why does the lecture insist on \(\omega\) when \(f\) already seems simpler?
+\paragraph{Question.} If light is a wave, why does it arrive as isolated blips?
 
-\paragraph{Answer.} Susskind actually pauses over this question. The answer is not metaphysical. One writes formulas in both conventions and asks which version accumulates fewer stray factors of \(2\pi\). The lecture's answer is that the \(\omega\)-convention is typically cleaner in actual physics. Thus the notation shift is not cosmetic; it is meant to make later formulas more natural.
+\paragraph{Answer.} The lecture asks us to imagine attenuating a beam of light more and more. At ordinary intensity the screen shows a continuous blob, or, in a two-hole experiment, a continuous interference pattern. But if the beam is weakened enough, the character of what we see changes. The smooth illumination gives way to isolated events, little dots, little blips.
 
-At this stage the lecture has not yet said anything quantum mechanical. We have only the kinematics of waves. But this is the exact set of variables needed for the next transition.
+If we wait long enough, however, those separate arrivals build up the same pattern the classical wave would have produced. That is the crucial point. The arrivals are discrete, but the distribution of where they arrive is governed by the wave pattern. So the classical wave theory survives, not as a literal continuous smearing of substance, but as a rule for probabilities. The wave tells us how likely a photon is to appear in one place rather than another.
 
-\section{Photons And The Wave-Particle Puzzle}
+This is the first quantum-mechanical lesson of the lecture. The photon arrives as an indivisible event, but the pattern of arrivals is wave-like. And the lecture immediately broadens the point: electrons behave the same way. Send them one at a time through two holes, and they build up an interference pattern. Heavier objects do too. The lecture mentions alpha particles, then buckyballs, and even points toward the possibility of still larger objects. So the mysterious union of wave and particle is not a peculiarity of light. It is a basic feature of the quantum world.
 
-We now return to light, but not yet to all of quantum mechanics. The lecture reopens the question experimentally. Imagine shining light on a screen. At ordinary intensity we see a continuous illuminated patch, perhaps a blob, perhaps an interference pattern. Now place a semi-opaque filter in the beam and keep dimming it. At first the blob merely becomes dimmer. But eventually the character of the result changes. One no longer sees a continuous patch. One sees isolated events: discrete blips.
-
-This is not yet the whole story. If one waits long enough, the same blips accumulate into the same pattern that the bright beam had produced. If the bright beam gave a smooth interference pattern, the attenuated beam gives one-at-a-time events that slowly fill in that same interference pattern.
-
-This is the lecture's first real quantum paradox. Light was already established as a wave. Yet under attenuation it arrives in discrete acts of detection.
-
-\subsection{Question \& Answer}
-
-\paragraph{Question.} What, then, survives from the wave description once the detections become discrete?
-
-\paragraph{Answer.} The wave survives as a law of probabilities. The lecture states the point plainly: the individual hits are random, but the probability of a hit at a given location is governed by the same wave pattern that classical optics had already established. In that sense the wave theory becomes a theory of probabilities for particle-like events.
-
-This is why the lecture refuses to say simply that light is a wave or simply that light is a particle. It has manifestations of both. And the same is true more generally. Electrons, though obviously particles, form interference patterns when sent one at a time through a two-slit arrangement. Even much larger composite systems, such as buckyballs, do so as well. The lecture's point is therefore not that light is exceptional, but that wave-particle duality is general.
-
-Now we are ready for the first quantum equation of the lecture. A photon of angular frequency \(\omega\) carries energy
+Once that point is made, the lecture pivots to a quantitative question. What does a photon carry? The answer is energy, and the energy of one photon is
 \begin{equation}
 E_\gamma = \hbar\omega.
 \end{equation}
-
-This formula is immediately linked back to the wave kinematics. Since \(\omega=2\pi c/\lambda\), short wavelength means large \(\omega\), and therefore large energy per photon. The lecture insists on exactly this moral: a single short-wavelength photon carries much more energy than a single long-wavelength photon.
-
-At the same time, a low-frequency beam may still have a large total energy if it contains many photons. If a pulse contains \(N\) photons of the same frequency, then
+This equation now has real content because \(\omega\) has already been related to wavelength. Using \eqref{eq:wave-omega-lambda}, shorter wavelength means larger \(\omega\), and therefore larger photon energy:
 \begin{equation}
-E_{\text{beam}} = N\hbar\omega.
+\lambda \downarrow
+\qquad \Longrightarrow \qquad
+\omega \uparrow
+\qquad \Longrightarrow \qquad
+E_\gamma \uparrow.
 \end{equation}
 
-This is a point that the lecture motivates verbally and that the notes should keep visible. A radio beam can carry a huge total energy, but that does not mean an individual radio photon is energetic. It means there are many photons. The discreteness remains: the total energy comes in integer multiples of \(\hbar\omega\).
+The lecture then emphasizes the specifically quantum remnant of discreteness. A light beam of fixed frequency does not carry an arbitrary continuum of energy. If it contains \(n\) photons, each of frequency \(\omega\), then
+\begin{equation}
+E_{\text{beam}} = n\,\hbar\omega,
+\qquad
+n=0,1,2,\dots
+\end{equation}
+Thus a radio beam may carry a lot of total energy, but only because it contains many photons. Each individual radio photon has low energy. A gamma-ray photon, by contrast, has very short wavelength and therefore high energy even one at a time.
 
-We are now standing at the point where the lecture explicitly says that these equations will explain why particle physics needs large machines. But before that payoff can be extracted, one more reset is needed.
+This is where the lecture cashes out the quantum lesson in practical terms. If we want to see smaller structures, we need shorter wavelengths. But shorter wavelengths mean higher frequencies, and higher frequencies mean larger photon energies. So the road to smaller scales already leads us toward energetic probes.
 
-\section{Relativity, Natural Units, And Why High Energy Sees Small Distance}
+\section{Relativity, Natural Units, and the Return to Momentum}
 
-The lecture now says, in effect: we have been through waves and particles; let us come to another set of concepts. Particle physics is relativistic quantum mechanics. That is why the next move is not optional. We must bring in relativity.
+At this point the lecture explicitly says that it is not abandoning the previous line of thought. It is adding another one. Particle physics is relativistic quantum mechanics, so the next indispensable ingredient is relativity.
 
-The famous formula is
+The famous equation is
 \begin{equation}
 E_{\mathrm{rest}} = mc^2.
 \end{equation}
-But the lecture is very careful about what this means in modern language. Mass is not a velocity-dependent quantity. What older books called \emph{rest mass} is what modern particle physics simply calls mass. Thus \(m\) is an invariant property of the particle, while energy depends on the frame.
+But the lecture immediately cleans up the language. In modern usage, \emph{mass} means what older textbooks called \emph{rest mass}. We do not say that the mass of an electron increases when it moves. The energy changes with motion; the mass does not. So the equation above refers to the energy of a massive object in a frame in which the object as a whole is at rest.
 
-\subsection{Question \& Answer}
+The lecture gives two examples to make that concrete.
 
-\paragraph{Question.} What, exactly, is being asserted when we write \(E=mc^2\)?
-
-\paragraph{Answer.} In the lecture's modern usage, the equation refers to the energy of a massive object in a frame where that object has no net motion. That is why we have written \(E_{\mathrm{rest}}\). If the object is moving relative to us, its energy is different. The mass is the same; the energy is not.
-
-The lecture gives two examples. First, take a box of gas at rest. Heat it. The molecules inside move more violently, so the box has more internal energy even though the box as a whole remains at rest. Therefore its rest mass increases. Second, bring together an electron and a positron at rest. Their rest energy does not disappear; it reappears as photon energy. In schematic form,
+First, take a box of gas resting on a scale. Heat it. The molecules move more violently, so internal energy has been added, even though the box remains at rest as a whole. The point is that the rest mass of the box increases along with that internal energy. In differential form one may summarize the point as
 \begin{equation}
-2m_e c^2 = E_{\gamma,1}+E_{\gamma,2}.
+\Delta E_{\mathrm{rest}} = \Delta m\,c^2.
+\end{equation}
+The effect is tiny in ordinary situations, but the meaning is unmistakable: for a body at rest, mass and energy are the same physical content written in different units.
+
+Second, take an electron and a positron at rest and let them annihilate. Their rest energy must reappear as photon energy. The reaction is schematically
+\begin{equation}
+e^- + e^+ \to \gamma + \gamma,
+\end{equation}
+and the total energy released is
+\begin{equation}
+E_{\mathrm{annihilation}} = 2m_e c^2.
+\end{equation}
+The lecture even pauses over a student's question about mechanism. We may not yet know the detailed mechanism, but conservation of energy already forces the conclusion that if the pair disappears, its energy must show up elsewhere.
+
+The discussion then turns to units, and here the lecture becomes more philosophical. We have three basic kinds of units in ordinary mechanics: length, time, and mass. Because units are choices, one can use that freedom to simplify equations by setting certain conversion constants equal to one. In particle physics the two constants most naturally chosen are \(c\) and \(\hbar\):
+\begin{equation}
+c=1,
+\qquad
+\hbar=1.
 \end{equation}
 
-The conceptual lesson is that mass and energy, for a system at rest, are two unit systems attached to the same physical content.
-
-This is where the lecture pauses to discuss numerical values of \(c\) and \(\hbar\). The transcript becomes garbled in the details, but the main point is clear and worth preserving: the decimal values themselves are not sacred. They depend on the chosen units. That is exactly why natural units are useful.
-
-\subsection{Question \& Answer}
-
-\paragraph{Question.} Why do particle physicists so often set \(c=\hbar=1\)?
-
-\paragraph{Answer.} Because these are not merely convenient constants; they are universal ones. The speed of light constrains all motion. Planck's constant sets the quantum scale for all systems. They are not like the mass of the proton or the size of a particular atom, which are special only to particular objects. Since \(c\) and \(\hbar\) are universal, it is natural to absorb them into our units.
-
-Thus we often choose
+Why these two? The lecture's answer is that they are universal. The speed of light is a universal limiting speed; no object outruns it. Planck's constant is universal because quantum mechanics constrains every object by the same scale. The lecture phrases this in terms of the uncertainty principle: the product of position-uncertainty and momentum-uncertainty is bounded below by a number of order \(\hbar\). One may speak cautiously here and write
 \begin{equation}
-c=1, \qquad \hbar=1.
+\Delta x\,\Delta p \gtrsim \hbar,
 \end{equation}
+not as a new derivation in this chapter, but as the lecture's reason for calling \(\hbar\) universal.
 
-The lecture also explains why one does \emph{not} usually set \(G=1\) in ordinary particle-physics notes. One could, and in gravitation or quantum gravity one often does. But ordinary particle physics is overwhelmingly insensitive to gravity. The useful universal constants for this subject are \(c\) and \(\hbar\).
+There is also a third universal constant, \(G\), and if one sets \(c=\hbar=G=1\) one is led to Planck units. But the lecture is clear: ordinary particle physics is essentially insensitive to gravity, so it is not helpful here to normalize \(G\). That choice belongs more naturally to quantum gravity, cosmology, or black-hole physics.
 
-Once \(c=1\), the rest-energy relation simplifies to
-\begin{equation}
-E=m.
-\end{equation}
+With \(c=1\), the rest-energy relation becomes especially simple.
 
-\begin{figure}[htbp]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.72\textwidth]{lecture_01_figure_05.png}
-\caption{Rest-energy relation in natural units. The lecture is stressing the simplification \(E=m\) after choosing \(c=1\). The lower line on the board is not sufficiently legible to be promoted here beyond a dimensional mnemonic.}
+\caption{Board evidence for the natural-units form \(E=m\). The visible statement is the simplification of rest energy after setting \(c=1\); the lower handwritten line is too uncertain to use here as an independent equation.}
 \end{figure}
 
-Likewise, once \(\hbar=1\), the photon-energy formula becomes
+\subsection{Question \& Answer}
+
+\paragraph{Question.} What does \(E=m\) mean, and why is that not the same statement as the photon-energy equation?
+
+\paragraph{Answer.} Once we choose units with \(c=1\), the rest-energy equation becomes
 \begin{equation}
-E_\gamma=\omega.
+E_{\mathrm{rest}} = m.
 \end{equation}
+This is a simplification of the relation for a massive object in its rest frame. It does not mean that every form of energy is literally a mass, and it certainly does not mean that photons have rest mass.
 
-\begin{remark}
-These equations must not be flattened into one another. \(E_{\mathrm{rest}}=mc^2\) is a statement about a massive object at rest. \(E=m\) is the same statement only after setting \(c=1\). \(E_\gamma=\hbar\omega\), or \(E_\gamma=\omega\) after setting \(\hbar=1\), is the photon-energy formula. A photon has energy but no rest mass.
-\end{remark}
-
-The lecture then turns from energy to momentum. For nonrelativistic motion we have
+For photons the relevant equation is different. A photon cannot be brought to rest. Its energy is not rest energy. If we also choose units with \(\hbar=1\), then
 \begin{equation}
-\vec p = m\vec v.
+E_\gamma = \omega.
 \end{equation}
-That formula is familiar, but it is not the right one to use for light. A light beam has no rest mass, yet it does carry momentum. The lecture states the correct relation directly:
+The two formulas look parallel because natural units remove conversion constants from both of them, but their meanings are different. One is the rest energy of a massive particle. The other is the energy of a massless quantum of light.
+
+The lecture then returns to momentum, because momentum is the quantity that finally ties the wave formulas and the photon formulas back to the practical logic of experiments. For slow-moving bodies,
 \begin{equation}
-p=\frac{E}{c},
-\qquad\text{or equivalently}\qquad
-E=cp,
+\mathbf{p} = m\mathbf{v}.
 \end{equation}
-for a collimated beam of light.
+But that is not the appropriate formula for light. The lecture simply states the correct relation for a collimated light beam:
+\begin{equation}
+p = \frac{E}{c},
+\end{equation}
+where \(p\) is the magnitude of the beam momentum. This already explains a qualitative fact. Light clearly carries energy; it heats things. Its momentum is harder to notice because it is energy divided by the very large number \(c\). Ordinary light therefore gives only a tiny push unless the beam is intense.
 
-Here again the lecture passes through a short conceptual obstacle before moving on. The formula looks odd at first sight because momentum used to have a velocity upstairs and now seems to have one downstairs. The resolution is dimensional: energy has units of mass times velocity squared, so \(E/c\) has the same units as momentum.
-
-\paragraph{Worked derivation of photon momentum.}
-Now the lecture turns this into a short exercise. For one photon,
+Now the lecture does one final blackboard exercise. Take a single photon. Its momentum is its energy divided by \(c\), but its energy is \(\hbar\omega\). Therefore
 \begin{align}
-p_\gamma &= \frac{E_\gamma}{c} \\
-&= \frac{\hbar\omega}{c}.
+p_\gamma &= \frac{E_\gamma}{c} \nonumber\\
+&= \frac{\hbar\omega}{c}. \label{eq:photon-momentum-first}
 \end{align}
-Using the wave relation
-\begin{equation}
-\omega = \frac{2\pi c}{\lambda},
-\end{equation}
-we find
+Next use the wave relation \(\omega = 2\pi c/\lambda\). Substituting,
 \begin{align}
 p_\gamma
-&= \frac{\hbar}{c}\,\frac{2\pi c}{\lambda} \\
-&= \frac{2\pi\hbar}{\lambda} \\
-&= \frac{h}{\lambda}.
+&= \frac{\hbar}{c}\left(\frac{2\pi c}{\lambda}\right) \nonumber\\
+&= \frac{2\pi\hbar}{\lambda} \nonumber\\
+&= \frac{h}{\lambda}. \label{eq:debroglie-photon}
 \end{align}
 
-The lecture's spoken algebra gets momentarily tangled over where the \(2\pi\) sits, but the endpoint is standard and unambiguous:
-\begin{equation}
-p_\gamma = \frac{h}{\lambda}.
-\end{equation}
+That is the final closure. The wavelength is not merely a geometrical label for a wave. It is directly tied to momentum. Shorter wavelength means larger momentum. And since photon energy is also proportional to frequency, hence inversely related to wavelength, shorter wavelength means larger energy as well.
 
-This is the final mathematical bridge of the lecture. Shorter wavelength means larger momentum. Since shorter wavelength also means larger \(\omega\), it means larger energy as well. The microscope argument then becomes unavoidable. To resolve a small object, one must use radiation with wavelength comparable to or smaller than the object. That in turn requires high momentum and high energy.
-
-The lecture makes this vivid before making it general. Radio waves cannot resolve facial features because their wavelengths are too long. To see a hair, one needs wavelength on the scale of the hair's thickness. To see atomic structure, one needs wavelength on the scale of atomic size. Thus
+So we arrive at the central chain of the lecture:
 \begin{equation}
-\text{smaller target scale}
+\text{smaller structure}
 \;\Longrightarrow\;
 \text{shorter wavelength}
 \;\Longrightarrow\;
-\text{larger momentum and energy}.
+\text{larger momentum and energy}
+\;\Longrightarrow\;
+\text{larger accelerators}.
 \end{equation}
 
-This is the operational heart of particle physics. We build bigger accelerators because higher-energy particles have shorter wavelengths, and shorter wavelengths let us probe smaller structures. The lecture ends by observing that if there is a fundamental lower limit to this progression, it is plausibly near the Planck length; but that scale is still far beyond present machines.
+This is also where the lecture's practical questions enter. If the accelerating field per meter is limited, then to gain more beam energy we must build a longer accelerator, at least roughly linearly in the case of a linear machine. Very roughly speaking, improving the resolution forces us toward larger machines. One may then ask whether there is any limit to the descent to smaller and smaller distances. The lecture gives a cautious answer: perhaps near the Planck length something qualitatively new happens, but we are still enormously far from that scale.
+
+Cosmic rays do reach very high energies, higher than man-made accelerators, but the lecture explains why they are not a replacement for controlled experiments. A rare ultra-high-energy particle hitting a stationary target is not the same as a controlled high-flux collider. To do good experiments one needs enough particles, enough collisions, and enough control to learn something systematic.
+
+So the conclusion is not merely that short wavelength is useful. It is that the whole historical progress of particle physics has been governed by the drive toward shorter wavelength, higher momentum, higher energy, and smaller structure.
 
 \section{Summary}
 
-The lecture begins with a philosophical contrast and ends with an experimental program. Matter may be described in particle language or field language, but quantum mechanics forces both descriptions to survive in altered form. Dalton's chemistry supplies the first strong evidence for discreteness. Radioactivity supplies the first true particle-physics apparatus: source, beam, field, detector. Light then reopens the continuum side of the story, and wave optics forces us through diffraction, interference, and Maxwell's electromagnetic waves before quantum mechanics turns the wave pattern into a probability law for discrete detections.
+The lecture begins with the ancient opposition between discrete particles and continuous fields, and it refuses to throw either picture away too quickly. Dalton's chemistry provides the first real evidence that matter comes in discrete units. Radioactivity then breaks the complacent picture of the elements as ultimate building blocks and produces the first particle beam, already separated into \(\alpha\), \(\beta\), and \(\gamma\) components.
 
-Only after that preparation do the central formulas acquire their full weight:
-\[
-\lambda f=c, \qquad \omega=\frac{2\pi c}{\lambda}, \qquad E_\gamma=\hbar\omega,
-\qquad E_{\mathrm{rest}}=mc^2, \qquad p_\gamma=\frac{h}{\lambda}.
-\]
-Taken together, they explain the practical logic of the field. To see smaller things we need shorter wavelengths; shorter wavelengths mean larger momentum and energy; and larger energies demand larger machines. That is the lecture's first great unifying theme, and it is the theme on which the rest of the course is built.
+Gamma radiation leads us to light, but light is first rebuilt as a classical wave. Only after interference and Maxwell's electromagnetic picture are secure does the lecture introduce the wave variables \(\lambda\), \(T\), \(f\), and \(\omega\). Those variables are then carried into quantum mechanics, where photons arrive one at a time but are distributed according to wave-like probabilities, and where each photon carries energy \(E_\gamma=\hbar\omega\).
+
+Relativity then supplies the second half of the subject. The modern meaning of \(E=mc^2\) is clarified, natural units remove arbitrary conversion factors, and the final derivation
+\begin{equation}
+p_\gamma = \frac{h}{\lambda}
+\end{equation}
+closes the loop. Once that equation is in hand, the operational logic of particle physics is unavoidable: to probe smaller objects we need shorter wavelengths, and shorter wavelengths demand larger momentum and larger energy. That, in the lecture's sense, is the pattern that has governed particle physics for roughly a century.
