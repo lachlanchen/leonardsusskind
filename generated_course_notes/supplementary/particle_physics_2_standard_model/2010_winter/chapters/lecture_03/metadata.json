@@ -1,0 +1,52 @@
+{
+  "course_rel": "supplementary/particle_physics_2_standard_model/2010_winter",
+  "transcript_rel": "supplementary/particle_physics_2_standard_model/2010_winter/087 - Lecture 3 \uff5c New Revolutions in Particle Physics\uff1a Standard Model [DIEDkY2Y49s].md",
+  "video_rel": "supplementary/particle_physics_2_standard_model/2010_winter/087 - Lecture 3 \uff5c New Revolutions in Particle Physics\uff1a Standard Model [DIEDkY2Y49s].mkv",
+  "lecture_number": 3,
+  "lecture_slug": "lecture_03",
+  "lecture_title": "Lecture 3 : New Revolutions in Particle Physics\uff1a Standard Model",
+  "assets": [
+    {
+      "name": "lecture_03_figure_02.png",
+      "timestamp_seconds": 154.6,
+      "timestamp_hhmmss": "00:02:34.600",
+      "source_candidate": "lecture_03_window_02_candidate_03_000234600.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame is the cleanest and least occluded view of the board sketch. The three-axis layout, the radial arrow, and the visible labels are all present, while the lecturer's hand and body are out of the way. It is the most useful documentary frame for reconstructing the introductory unit-vector geometry.",
+      "subtitle_excerpt": "Unit vector is an arrow pointing to a unit sphere.",
+      "segment_start_seconds": 152.0,
+      "segment_start_hhmmss": "00:02:32.000",
+      "segment_end_seconds": 156.0,
+      "segment_end_hhmmss": "00:02:36.000",
+      "caption_hint": "unit vector direction sketch"
+    },
+    {
+      "name": "lecture_03_figure_03.png",
+      "timestamp_seconds": 461.4,
+      "timestamp_hhmmss": "00:07:41.400",
+      "source_candidate": "lecture_03_window_03_candidate_04_000741400.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and least occluded frame. The handwritten equation is fully visible, whereas the earlier candidates are blocked by Susskind's notes or hand. It is the best documentary frame for the lecture's transition to matrix-times-vector notation for a rotated vector.",
+      "subtitle_excerpt": "This is matrix times vector gives transformed vector.",
+      "segment_start_seconds": 457.0,
+      "segment_start_hhmmss": "00:07:37.000",
+      "segment_end_seconds": 462.0,
+      "segment_end_hhmmss": "00:07:42.000",
+      "caption_hint": "rotation matrix acting on a vector"
+    },
+    {
+      "name": "lecture_03_figure_04.png",
+      "timestamp_seconds": 1661.76,
+      "timestamp_hhmmss": "00:27:41.760",
+      "source_candidate": "lecture_03_window_05_candidate_04_002741760.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest and most complete view of the relevant board work. The key relations are fully visible, including the cleaned Hermitian-conjugate form, while earlier candidates are more occluded or show less-finished writing. It is the most useful frame for reconstructing the matrix-equation argument.",
+      "subtitle_excerpt": "Because this is a matrix equation.",
+      "segment_start_seconds": 1660.0,
+      "segment_start_hhmmss": "00:27:40.000",
+      "segment_end_seconds": 1662.0,
+      "segment_end_hhmmss": "00:27:42.000",
+      "caption_hint": "unitary condition for the matrix U"
+    }
+  ]
+}
