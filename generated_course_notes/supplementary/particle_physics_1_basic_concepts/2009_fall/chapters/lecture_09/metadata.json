@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall",
+  "transcript_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall/083 - Lecture 9 \uff5c New Revolutions in Particle Physics\uff1a Basic Concepts [D7yXoNAg3J8].md",
+  "video_rel": "supplementary/particle_physics_1_basic_concepts/2009_fall/083 - Lecture 9 \uff5c New Revolutions in Particle Physics\uff1a Basic Concepts [D7yXoNAg3J8].mkv",
+  "lecture_number": 9,
+  "lecture_slug": "lecture_09",
+  "lecture_title": "Lecture 9 : New Revolutions in Particle Physics\uff1a Basic Concepts",
+  "assets": [
+    {
+      "name": "lecture_09_figure_03.png",
+      "timestamp_seconds": 236.44,
+      "timestamp_hhmmss": "00:03:56.440",
+      "source_candidate": "lecture_09_window_03_candidate_01_000356440.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the best because the full board equation is already written and clearly legible, while the lecturer is pushed to the lower-left margin and does not materially block the notation. The later candidates are very similar, but this one gives the cleanest, most complete view of the formula with minimal occlusion.",
+      "subtitle_excerpt": "the Lagrangian to generate the field equations?",
+      "segment_start_seconds": 236.04,
+      "segment_start_hhmmss": "00:03:56.040",
+      "segment_end_seconds": 237.54,
+      "segment_end_hhmmss": "00:03:57.540",
+      "caption_hint": "Lagrangian as a function of fields and derivatives"
+    },
+    {
+      "name": "lecture_09_figure_04.png",
+      "timestamp_seconds": 503.37,
+      "timestamp_hhmmss": "00:08:23.370",
+      "source_candidate": "lecture_09_window_04_candidate_02_000823370.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the cleanest and least obstructed view of the mathematics. The right-hand side \\(\\partial \\mathcal{L}/\\partial \\phi\\) is clearly legible, and the line containing the potential term \\(-V(\\phi)\\) is visible without the lecturer's hand covering it. The other candidates add gesture emphasis, but they obscure the very term being discussed.",
+      "subtitle_excerpt": "the derivative of the Lagrangian with respect to phi.",
+      "segment_start_seconds": 502.04,
+      "segment_start_hhmmss": "00:08:22.040",
+      "segment_end_seconds": 505.54,
+      "segment_end_hhmmss": "00:08:25.540",
+      "caption_hint": "potential term in the field Lagrangian"
+    },
+    {
+      "name": "lecture_09_figure_05.png",
+      "timestamp_seconds": 1537.791,
+      "timestamp_hhmmss": "00:25:37.791",
+      "source_candidate": "lecture_09_window_05_candidate_04_002537791.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the strongest frame because it is a clean board-only view with no lecturer occlusion, and both the Dirac equation and the corresponding Lagrangian expression are fully settled on the board. The candidate frames are very similar, so the latest one is preferable as the most finished board state.",
+      "subtitle_excerpt": "That's the Lagrangian for the Dirac equation.",
+      "segment_start_seconds": 1535.82,
+      "segment_start_hhmmss": "00:25:35.820",
+      "segment_end_seconds": 1538.06,
+      "segment_end_hhmmss": "00:25:38.060",
+      "caption_hint": "Dirac Lagrangian on the board"
+    },
+    {
+      "name": "lecture_09_figure_06.png",
+      "timestamp_seconds": 3039.12,
+      "timestamp_hhmmss": "00:50:39.120",
+      "source_candidate": "lecture_09_window_06_candidate_04_005039120.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the best of the four because it preserves the widest useful slice of the board: the \\(\\Psi\\) and \\(\\Psi^{\\dagger}\\) lines are still visible on the left, and the wavy interaction sketch on the right is clearer than in the earlier frames. The lecturer is still present, but here he blocks less of the underlying layout than in the other candidates.",
+      "subtitle_excerpt": "What's the probability that its energy or its momentum,",
+      "segment_start_seconds": 3036.48,
+      "segment_start_hhmmss": "00:50:36.480",
+      "segment_end_seconds": 3039.48,
+      "segment_end_hhmmss": "00:50:39.480",
+      "caption_hint": "field-operator decomposition and interaction sketch"
+    }
+  ]
+}
