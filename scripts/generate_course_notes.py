@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import sys
 import time
+import unicodedata
 from collections import defaultdict
 from collections import Counter
 from dataclasses import dataclass
@@ -26,6 +27,18 @@ LECTURE_NUMBER_RE = re.compile(r"\bLecture\s+(\d+)\b", re.IGNORECASE)
 PREFIX_NUMBER_RE = re.compile(r"^(\d+)\s*-\s*")
 TEXTTT_RE = re.compile(r"\\texttt\{([^{}]*)\}")
 LATEX_SPECIAL_IN_TEXTTT_RE = re.compile(r"(?<!\\)([_%&#$])")
+LATEX_METADATA_ESCAPES = {
+    "\\": r"\textbackslash{}",
+    "&": r"\&",
+    "%": r"\%",
+    "$": r"\$",
+    "#": r"\#",
+    "_": r"\_",
+    "{": r"\{",
+    "}": r"\}",
+    "~": r"\textasciitilde{}",
+    "^": r"\textasciicircum{}",
+}
 
 KEYWORD_WEIGHTS = {
     "equation": 5,
@@ -1060,6 +1073,15 @@ def sanitize_texttt_literals(text: str) -> str:
     return TEXTTT_RE.sub(repl, text)
 
 
+def normalize_latex_metadata_text(text: str) -> str:
+    normalized = unicodedata.normalize("NFKC", text)
+    normalized = normalized.replace("\u00a0", " ").replace("\u2009", " ").replace("\u202f", " ")
+    normalized = normalized.replace("–", "-").replace("—", "-").replace("−", "-")
+    normalized = normalized.replace("“", '"').replace("”", '"').replace("‘", "'").replace("’", "'")
+    normalized = re.sub(r"\s+", " ", normalized).strip()
+    return "".join(LATEX_METADATA_ESCAPES.get(ch, ch) for ch in normalized)
+
+
 def apply_local_compile_fixes(content_path: Path, compile_log: str) -> bool:
     if not content_path.exists():
         return False
@@ -1135,12 +1157,14 @@ def ensure_common_preamble(course_root: Path, template_path: Path) -> None:
 
 
 def write_lecture_wrapper(lecture: LectureInfo, lecture_dir: Path) -> None:
+    title_course = normalize_latex_metadata_text(lecture.course_title)
+    title_lecture = normalize_latex_metadata_text(lecture.lecture_title)
     wrapper = f"""\\documentclass[11pt,oneside]{{book}}
 \\input{{../../common_preamble.tex}}
 \\graphicspath{{{{../../figures/}}{{../../assets/}}}}
 \\begin{{document}}
 \\frontmatter
-\\title{{{lecture.course_title}: {lecture.lecture_title}}}
+\\title{{{title_course}: {title_lecture}}}
 \\author{{Leonard Susskind}}
 \\date{{Transcript-derived notes curated by \\href{{https://lazying.art}}{{LazyingArt LLC}}}}
 \\maketitle
@@ -1157,8 +1181,10 @@ def write_lecture_wrapper(lecture: LectureInfo, lecture_dir: Path) -> None:
 
 def write_course_book(course_root: Path, lecture_entries: list[LectureInfo]) -> None:
     graphics_path = "\\graphicspath{{figures/}{assets/}}\n"
-    title_course = lecture_entries[0].course_title if lecture_entries else "Generated Course Notes"
-    descriptor = lecture_entries[0].course_descriptor if lecture_entries else ""
+    title_course = normalize_latex_metadata_text(
+        lecture_entries[0].course_title if lecture_entries else "Generated Course Notes"
+    )
+    descriptor = normalize_latex_metadata_text(lecture_entries[0].course_descriptor if lecture_entries else "")
     inputs = "\n".join(
         f"\\input{{chapters/{lecture.lecture_slug}/content.tex}}" for lecture in lecture_entries
     )
