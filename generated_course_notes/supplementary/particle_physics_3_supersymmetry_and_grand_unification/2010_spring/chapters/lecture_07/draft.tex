@@ -1,0 +1,291 @@
+\chapter{Lecture 7: Supersymmetry, Superfields, and Chirality in the One-Mode Toy Model}
+
+These companion notes follow Leonard Susskind's lecture, with curation by LazyingArt LLC. The lecture begins by stepping away from the full machinery of field theory and returning to the simplest supersymmetric toy system: one bosonic mode, one fermionic mode, both taken at rest. From there the story unfolds in the same order as on the board: first the oscillator, then the fermionic puzzle, then the supercharge algebra, then superspace, and finally the first systematic construction of supersymmetric Lagrangians. The lecture is mathematically serious, but it is also exploratory; where Susskind corrects a sign live, or stops before a calculation is cleanly finished, we keep that rhythm visible.
+
+\section{Bosons, Fermions, and the Zero-Momentum Toy System}
+
+We begin with the stripped-down system in which momentum is suppressed. The particles are either present or absent, and the natural variables are creation and annihilation operators. Susskind says this in the older \(+\) and \(-\) notation; we normalize it as
+\begin{equation}
+H = m\left(a^\dagger a + c^\dagger c\right).
+\end{equation}
+Here \(a^\dagger,a\) create and annihilate the bosonic quantum, while \(c^\dagger,c\) do the same for the fermion. At zero momentum this is the entire Hamiltonian: mass times bosonic occupation number plus mass times fermionic occupation number.
+
+The point of starting here is not merely to review notation. We want to see supersymmetry in its simplest form before we add space, derivatives, and interactions. In this toy system the boson and fermion already come paired with the same energy, and that pairing is what the later superspace formalism will be built to preserve.
+
+\section{The Bosonic Oscillator in Lagrangian Form}
+
+To pass from operator language to Lagrangian language, we trade the bosonic mode for a single coordinate \(\phi(t)\). In this one-dimensional setting the field theory is simply the mechanics of one harmonic oscillator.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_02.png}
+\caption{Bosonic oscillator Lagrangian from the one-mode field setup. The board still shows the pre-correction \(T+V\) sign.}
+\end{figure}
+
+On the board the mass term is first written with a plus sign, but Susskind immediately corrects himself: energy is \(T+V\), whereas the Lagrangian is \(T-V\). Thus the corrected bosonic Lagrangian is
+\begin{equation}
+L_b = \frac{1}{2}\dot{\phi}^{\,2} - \frac{1}{2}m^2\phi^2.
+\end{equation}
+The Euler--Lagrange equation is then straightforward:
+\begin{align}
+\frac{d}{dt}\left(\frac{\partial L_b}{\partial \dot\phi}\right) &= \frac{d}{dt}(\dot\phi) = \ddot\phi, \\
+\frac{\partial L_b}{\partial \phi} &= -m^2\phi.
+\end{align}
+So
+\begin{equation}
+\ddot\phi + m^2\phi = 0.
+\end{equation}
+This is the ordinary harmonic oscillator equation, and the frequency is \(m\), not \(m^2\). That is the first anchoring point of the lecture: before supersymmetry becomes geometric or algebraic, it is built over the familiar contrast between a second-order bosonic oscillator and a first-order fermionic one.
+
+\section{Grassmann Variables and the Fermionic Lagrangian}
+
+The fermionic story begins with a deliberate false start. Susskind asks us to consider a first-order Lagrangian of the form
+\begin{equation}
+L = \phi\,\dot\phi.
+\end{equation}
+For an ordinary commuting variable this is useless:
+\begin{equation}
+L = \phi\,\dot\phi = \frac{1}{2}\frac{d}{dt}\phi^2.
+\end{equation}
+The Euler--Lagrange equation says only \(\dot\phi=\dot\phi\); every differentiable trajectory satisfies it. A total time derivative can be discarded.
+
+The surprise is that the same-looking expression is no longer trivial once the variable is Grassmann-valued. Rename the fermionic variable \(\psi\). Then
+\begin{equation}
+L = \psi\,\dot\psi
+\end{equation}
+still gives
+\begin{equation}
+\frac{\partial L}{\partial \dot\psi} = \psi,
+\end{equation}
+but now differentiating with respect to \(\psi\) requires moving \(\psi\) past \(\dot\psi\), and that costs a minus sign:
+\begin{equation}
+\frac{\partial L}{\partial \psi} = -\,\dot\psi.
+\end{equation}
+Hence the Euler--Lagrange equation becomes
+\begin{equation}
+\dot\psi = -\,\dot\psi,
+\end{equation}
+so that
+\begin{equation}
+\dot\psi = 0.
+\end{equation}
+This is no longer trivial. It is too restrictive, but it has real content.
+
+\subsection{Question \& Answer}
+
+Why can a first-order term be trivial for bosons but dynamical for fermions?
+
+For commuting variables, \(L=\phi\dot\phi\) is a total derivative, and the Euler--Lagrange equation collapses to a tautology. For Grassmann variables, the same algebraic expression is not innocuous, because the variation must respect the anticommuting order. When we differentiate with respect to \(\psi\), we must reorder \(\psi\) and \(\dot\psi\), and that reordering produces the minus sign that turns a tautology into the equation \(\dot\psi=0\). The lecture lingers on this point because it is the first place where the Grassmann character of the variable does real dynamical work.
+
+A single fermionic variable is still too naive, because \(\psi^2=0\). Thus the restoring-force term cannot be \(m\psi^2\). The lecture repairs this by introducing two real Grassmann variables \(\psi_1,\psi_2\), or equivalently one complex fermion \(\psi\). In cleaned complex notation the intended structure is captured by
+\begin{equation}
+L_f \sim \frac{i}{2}\left(\dot\psi^\ast \psi + \dot\psi\,\psi^\ast\right) + m\,\psi^\ast\psi.
+\end{equation}
+The exact half-factors wobble on the board, and Susskind inserts the \(i\) late, but the structural point is clear: the fermionic kinetic term carries only one time derivative, while the mass term carries one power of \(m\), not \(m^2\). The resulting equation of motion is first order,
+\begin{equation}
+i\,\dot\psi = m\,\psi,
+\end{equation}
+and therefore oscillatory. In this simplified setting the fermionic dynamics is the one-dimensional shadow of the Dirac equation, just as the bosonic oscillator is the one-dimensional shadow of the Klein--Gordon story.
+
+At the level of the full toy model, then, the lecture has reconstructed a cleaned Lagrangian of the form
+\begin{equation}
+L \sim \frac{1}{2}\dot{\phi}^{\,2} - \frac{1}{2}m^2\phi^2
++ \frac{i}{2}\left(\dot\psi^\ast \psi + \dot\psi\,\psi^\ast\right)
++ m\,\psi^\ast\psi,
+\end{equation}
+with the warning that the exact normalization of the fermionic part is an editorial stabilization of the live blackboard discussion.
+
+\section{Supercharges and the Basic Supersymmetry Algebra}
+
+Once the bosonic and fermionic oscillators have been put on parallel footing, Susskind returns to supersymmetry itself. The supercharges are the operators that exchange one boson and one fermion without changing the energy:
+\begin{equation}
+Q^\dagger = \sqrt{2m}\,a^\dagger c,
+\qquad
+Q = \sqrt{2m}\,a\,c^\dagger.
+\end{equation}
+The factor \(\sqrt{2m}\) is a convention chosen so that the algebra takes its standard form. The anticommutator gives
+\begin{equation}
+\{Q,Q^\dagger\} = 2m\left(a^\dagger a + c^\dagger c\right) = 2H.
+\end{equation}
+The nilpotence is equally important:
+\begin{equation}
+Q^2 = 0,
+\qquad
+(Q^\dagger)^2 = 0,
+\end{equation}
+because every term would contain the square of a fermionic creation or annihilation operator. Finally,
+\begin{equation}
+[H,Q]=[H,Q^\dagger]=0.
+\end{equation}
+
+This last statement has two meanings at once. First, \(Q\) generates a symmetry: acting with it does not change the Hamiltonian. Second, \(Q\) is conserved. In Susskind's language, this is why the \(Q\)'s are called supercharges. They are not merely formal maps between bosonic and fermionic sectors; they are conserved quantities belonging to the same closed algebra as \(H\).
+
+\section{From Supercharge Algebra to Superspace Geometry}
+
+The lecture now pivots from algebra to geometry. The key heuristic is an old one: symmetry generators are represented by differential operators. The Hamiltonian itself is the generator of time translations,
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.50\textwidth]{lecture_07_figure_03.png}
+\caption{Hamiltonian as the generator of time translations.}
+\end{figure}
+\begin{equation}
+H = i\,\frac{\partial}{\partial t},
+\end{equation}
+while spatial momentum is
+\begin{equation}
+P = -\,i\,\frac{\partial}{\partial x}.
+\end{equation}
+So if \(Q\) and \(Q^\dagger\) are symmetry generators with fermionic character, perhaps they too should act as derivatives, but derivatives with respect to Grassmann coordinates rather than ordinary ones.
+
+This is the entry point to superspace. We enlarge the coordinate set from \(t\) to
+\begin{equation}
+(t,\theta,\bar\theta),
+\end{equation}
+where \(\theta\) is a Grassmann coordinate and \(\bar\theta\) its conjugate. The lecture is visibly uneasy about the signs here, so we choose one consistent convention and keep the caveat explicit:
+\begin{equation}
+q = \frac{\partial}{\partial \theta} + i\,\bar\theta\,\frac{\partial}{\partial t},
+\qquad
+\bar q = \frac{\partial}{\partial \bar\theta} + i\,\theta\,\frac{\partial}{\partial t}.
+\end{equation}
+With this choice,
+\begin{equation}
+\{q,\bar q\} = 2i\,\frac{\partial}{\partial t} = 2H.
+\end{equation}
+The supersymmetry variation of a superfield \(\Phi\) can then be written as
+\begin{equation}
+\delta\Phi = \left(\xi q + \bar\xi\,\bar q\right)\Phi,
+\end{equation}
+where \(\xi,\bar\xi\) are infinitesimal Grassmann parameters. In coordinate language this is a simultaneous shift
+\begin{equation}
+\theta \to \theta+\xi,
+\qquad
+\bar\theta \to \bar\theta+\bar\xi,
+\qquad
+t \to t + i\left(\xi\bar\theta+\bar\xi\theta\right),
+\end{equation}
+again in a cleaned convention. The important point is not any single sign, but the geometry: supersymmetry becomes a little motion in a space whose coordinates are partly ordinary and partly Grassmann.
+
+\section{Superfields, Superactions, and Powers of the Superfield}
+
+In one-dimensional superspace the most general bosonic superfield has a finite expansion because \(\theta^2=\bar\theta^2=0\):
+\begin{equation}
+\Phi(t,\theta,\bar\theta)
+=
+\phi(t)+\bar\theta\,\psi(t)+\bar\psi(t)\,\theta + D(t)\,\bar\theta\theta.
+\end{equation}
+Here \(D(t)\) is an auxiliary bosonic coefficient. On the board Susskind jokes that it may as well stand for ``dummy,'' because at this stage it is simply the last coefficient in the Grassmann expansion.
+
+To make dynamics we need an action. The superspace action is
+\begin{equation}
+S = \int dt\,d\theta\,d\bar\theta\,\Lambda,
+\end{equation}
+where \(\Lambda\) is a super-Lagrangian. Berezin integration simply picks out the highest Grassmann component:
+\begin{equation}
+\int d\theta\,d\bar\theta\,\Lambda = (\Lambda)_{\bar\theta\theta}.
+\end{equation}
+Thus the ordinary Lagrangian is the \(\bar\theta\theta\) coefficient of the super-Lagrangian.
+
+The first constructive exercise in the lecture is to square the superfield. This is where the board work matters, because Susskind deliberately multiplies the components term by term before collecting the surviving \(\bar\theta\theta\) part.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_07_figure_05.png}
+\caption{Product of superfields expanded in components. At this point in the lecture the safest cleaned interpretation is the square \(\Phi^2\).}
+\end{figure}
+
+In cleaned form the result is
+\begin{align}
+\Phi^2
+&=
+\left(\phi+\bar\theta\psi+\bar\psi\theta+D\,\bar\theta\theta\right)^2 \\
+&=
+\phi^2
++2\phi\,\bar\theta\psi
++2\phi\,\bar\psi\theta
++\left(2\phi D-2\bar\psi\psi\right)\bar\theta\theta.
+\end{align}
+The bars are kept on the left, in keeping with Susskind's own mnemonic. Berezin integration now extracts only the last term:
+\begin{equation}
+\int d\theta\,d\bar\theta\,\Phi^2
+=
+2\phi D - 2\bar\psi\psi.
+\end{equation}
+This is already a legitimate supersymmetric contribution to the ordinary Lagrangian. More generally, every power \(\Phi^n\) yields a candidate interaction term by the same rule: compute the superfield expression and keep only the \(\bar\theta\theta\) coefficient.
+
+But the lecture immediately stresses the limitation of this first example. The term above has no time derivatives. It is supersymmetric, but it is not yet the kinetic structure we want.
+
+\section{Derivative Subtleties and Chirality}
+
+The natural thought is to differentiate the superfield with respect to time. Susskind stops us there: a naive time derivative is not the right kind of object for the construction. We need derivatives that respect the supersymmetry algebra itself.
+
+\subsection{Question \& Answer}
+
+When is a constraint on a field compatible with the symmetry?
+
+The lecture answers this first in an ordinary geometric language. Suppose a field \(f(x,y)\) lives in the plane, and we impose the constraint
+\begin{equation}
+\frac{\partial f}{\partial y}=0.
+\end{equation}
+This means that \(f\) is really only a function of \(x\). But if the theory is rotationally invariant, this is not a sensible invariant restriction, because a rotation mixes \(x\) and \(y\). In operator language the problem is that the rotation generator \(L\) does not commute with \(\partial_y\); schematically,
+\begin{equation}
+[\partial_y,L] \sim \partial_x \neq 0.
+\end{equation}
+So the test is clear: a constraint is compatible with a symmetry only if the operator defining the constraint commutes with the symmetry generators. In the supersymmetric case, because the generators are fermionic, the relevant statement is anticommutation.
+
+To avoid colliding with the auxiliary coefficient \(D(t)\), we denote the covariant superspace derivatives by \(\mathcal D\) and \(\bar{\mathcal D}\):
+\begin{equation}
+\mathcal D = \frac{\partial}{\partial \theta} - i\,\bar\theta\,\frac{\partial}{\partial t},
+\qquad
+\bar{\mathcal D} = \frac{\partial}{\partial \bar\theta} - i\,\theta\,\frac{\partial}{\partial t}.
+\end{equation}
+These are chosen so that
+\begin{equation}
+\{\mathcal D,q\}=\{\mathcal D,\bar q\}=\{\bar{\mathcal D},q\}=\{\bar{\mathcal D},\bar q\}=0.
+\end{equation}
+That is exactly the superspace analog of compatibility with the symmetry.
+
+Now we can impose the chiral constraint
+\begin{equation}
+\bar{\mathcal D}\Phi = 0.
+\end{equation}
+Because \(\bar{\mathcal D}\) anticommutes with \(q\), a supersymmetry variation preserves chirality:
+\begin{equation}
+\bar{\mathcal D}(q\Phi) = -\,q(\bar{\mathcal D}\Phi)=0.
+\end{equation}
+So a chiral superfield remains chiral after a supersymmetry transformation.
+
+The lecture then solves this constraint by introducing the shifted time coordinate
+\begin{equation}
+\tau = t + i\,\bar\theta\theta.
+\end{equation}
+A superfield that depends only on \(\tau\) and \(\theta\), and not on \(\bar\theta\) separately, is automatically chiral:
+\begin{equation}
+\Phi(\tau,\theta)=\phi(\tau)+\bar\psi(\tau)\,\theta.
+\end{equation}
+Indeed, differentiating with respect to \(\bar\theta\) only acts through the \(\tau\)-dependence, and the resulting term is precisely canceled by the \(-i\theta\partial_t\) part of \(\bar{\mathcal D}\).
+
+Expanding back in \(t\), we find
+\begin{align}
+\phi(\tau)
+&=
+\phi\!\left(t+i\bar\theta\theta\right) \\
+&=
+\phi(t) + i\,\bar\theta\theta\,\dot\phi(t),
+\end{align}
+with no higher term because \((\bar\theta\theta)^2=0\). Therefore the chiral superfield takes the explicit form
+\begin{equation}
+\Phi(t,\theta,\bar\theta)
+=
+\phi(t)+\bar\psi(t)\,\theta+i\,\bar\theta\theta\,\dot\phi(t).
+\end{equation}
+This is one of the lecture's most important constructions. The superfield has been constrained in a way that is still compatible with supersymmetry, and the extra \(\bar\theta\theta\) piece is now tied to the time derivative of \(\phi\).
+
+\section{The Punchline and Summary}
+
+At this point the lecture turns toward the product of a chiral superfield with its complex conjugate, since that is the natural route to a kinetic super-Lagrangian. But here the live rhythm matters. Susskind begins to write the conjugate expression, hesitates over the ordering of \(\theta\) and \(\bar\theta\), no longer trusts the signs in his notes, and stops. The chapter should stop with him. We should not silently replace that honest stopping point by a polished derivation that the lecture itself never completes.
+
+What he does give, and what matters physically, is the punchline. If one constructs the super-Lagrangian correctly, then the resulting ordinary Lagrangian is supersymmetric in the strong sense that bosons and fermions are organized into matched multiplets. In the simple unbroken setting they come with the same mass, and this matching is powerful enough to enforce exact cancellation statements. The lecture emphasizes one especially important consequence: bosonic self-energy divergences are canceled by their fermionic partners, and these cancellations persist to all orders.
+
+The conceptual hierarchy is also part of the punchline. The Feynman rules are not the primary thing here. The primary thing is the enlarged space-time symmetry: the idea that the bosonic and fermionic components of a superfield are related by a motion in superspace. The whole apparatus of superfields, covariant derivatives, and chiral constraints is introduced because it gives a calculus for writing Lagrangians that preserve that symmetry at every step.
+
+So the lecture ends in a deliberately unfinished but clear place. We have gone from a one-mode boson--fermion system, to the supercharge algebra, to superspace, to superfields, to the first nontrivial invariant constructions, and finally to chirality. The next step would be to complete the chiral-conjugate product cleanly. Susskind refuses to fake that last step when he no longer trusts the signs, and the better notes should refuse it as well.
