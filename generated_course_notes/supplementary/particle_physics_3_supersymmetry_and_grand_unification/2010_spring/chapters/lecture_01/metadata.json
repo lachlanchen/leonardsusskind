@@ -1,0 +1,52 @@
+{
+  "course_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring",
+  "transcript_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/145 - Supersymmetry & Grand Unification\uff1a Lecture 1 [W6srShxBCrk].md",
+  "video_rel": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/145 - Supersymmetry & Grand Unification\uff1a Lecture 1 [W6srShxBCrk].mp4",
+  "lecture_number": 1,
+  "lecture_slug": "lecture_01",
+  "lecture_title": "Supersymmetry & Grand Unification\uff1a Lecture 1",
+  "assets": [
+    {
+      "name": "lecture_01_figure_02.png",
+      "timestamp_seconds": 979.9,
+      "timestamp_hhmmss": "00:16:19.900",
+      "source_candidate": "lecture_01_window_02_candidate_02_001619900.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 is the clearest and most settled frame in this window. The left-hand board expression is as complete as it gets across the four candidates, while Susskind's hands are lower and less motion-blurred than in candidates 01 and 03, and the frame feels slightly less occluded than candidate 04.",
+      "subtitle_excerpt": "equation for the lowest energy state.",
+      "segment_start_seconds": 979.14,
+      "segment_start_hhmmss": "00:16:19.140",
+      "segment_end_seconds": 981.14,
+      "segment_end_hhmmss": "00:16:21.140",
+      "caption_hint": "lowest-energy-state equation on the board"
+    },
+    {
+      "name": "lecture_01_figure_03.png",
+      "timestamp_seconds": 1568.54,
+      "timestamp_hhmmss": "00:26:08.540",
+      "source_candidate": "lecture_01_window_03_candidate_04_002608540.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the best frame because it captures the most finished board state in this subtitle window. The lower equation has advanced to the full action form with both the visible \\(d^4x\\) measure and the final \\(\\mathcal{L}\\), while the lecturer's hand has largely moved off the writing. It is the clearest single frame for documenting the transition from the local Lagrangian density to the action integral.",
+      "subtitle_excerpt": "and that's the integral d4x of the Lagrangian.",
+      "segment_start_seconds": 1563.14,
+      "segment_start_hhmmss": "00:26:03.140",
+      "segment_end_seconds": 1569.14,
+      "segment_end_hhmmss": "00:26:09.140",
+      "caption_hint": "action as the spacetime integral of the Lagrangian"
+    },
+    {
+      "name": "lecture_01_figure_04.png",
+      "timestamp_seconds": 5016.826,
+      "timestamp_hhmmss": "01:23:36.826",
+      "source_candidate": "lecture_01_window_05_candidate_02_012336826.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 02 is the strongest frame because it keeps both the left-hand mass term and the right-hand diagram sketches visible with the least interference from Susskind's hand and body. Candidate 01 has the pointing finger too close to the formula, while candidates 03 and 04 give up some clarity of the left-side equation as he moves away from it. This frame best captures the board layout at the moment he introduces the diagrammatic interpretation.",
+      "subtitle_excerpt": "So let me draw a Feynman diagram which does create,",
+      "segment_start_seconds": 5015.686,
+      "segment_start_hhmmss": "01:23:35.686",
+      "segment_end_seconds": 5018.686,
+      "segment_end_hhmmss": "01:23:38.686",
+      "caption_hint": "mass term with fermion-line sketches"
+    }
+  ]
+}
