@@ -1,0 +1,52 @@
+{
+  "course_rel": "supplementary/quantum_entanglement/2006_fall_part_3",
+  "transcript_rel": "supplementary/quantum_entanglement/2006_fall_part_3/060 - Lecture 5 \uff5c Quantum Entanglements, Part 3 (Stanford) [niHEq9i3B-4].md",
+  "video_rel": "supplementary/quantum_entanglement/2006_fall_part_3/060 - Lecture 5 \uff5c Quantum Entanglements, Part 3 (Stanford) [niHEq9i3B-4].mp4",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Lecture 5 : Quantum Entanglements, Part 3 (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_05_figure_03.png",
+      "timestamp_seconds": 3632.4660000000003,
+      "timestamp_hhmmss": "01:00:32.466",
+      "source_candidate": "lecture_05_window_04_candidate_03_010032466.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "a vector is equal to a matrix times",
+      "segment_start_seconds": 3631.166,
+      "segment_start_hhmmss": "01:00:31.166",
+      "segment_end_seconds": 3633.166,
+      "segment_end_hhmmss": "01:00:33.166",
+      "caption_hint": "a vector is equal to a matrix times"
+    },
+    {
+      "name": "lecture_05_figure_04.png",
+      "timestamp_seconds": 5839.123,
+      "timestamp_hhmmss": "01:37:19.123",
+      "source_candidate": "lecture_05_window_05_candidate_02_013719123.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 02 is the best balance of readable mathematics and visible trajectory layout. The main equation defining the tangent vector is clear, the chain-rule component relation below it is legible, and the large curved line at left is more complete than in the other frames. Later frames show the drawing still in progress, while earlier ones are slightly more occluded.",
+      "subtitle_excerpt": "basically the tangent vector to the trajectory along",
+      "segment_start_seconds": 5837.846,
+      "segment_start_hhmmss": "01:37:17.846",
+      "segment_end_seconds": 5841.206,
+      "segment_end_hhmmss": "01:37:21.206",
+      "caption_hint": "Four-velocity as tangent to the worldline"
+    },
+    {
+      "name": "lecture_05_figure_05.png",
+      "timestamp_seconds": 6157.159,
+      "timestamp_hhmmss": "01:42:37.159",
+      "source_candidate": "lecture_05_window_06_candidate_01_014237159.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 01 gives the clearest and least occluded view of the board sketch. The long curved trajectory is fully visible, including the small marking near its upper end, whereas later frames introduce more hand occlusion at the lower part of the curve without adding any new readable mathematics.",
+      "subtitle_excerpt": "equations, f equals ma, becomes",
+      "segment_start_seconds": 6156.806,
+      "segment_start_hhmmss": "01:42:36.806",
+      "segment_end_seconds": 6159.746,
+      "segment_end_hhmmss": "01:42:39.746",
+      "caption_hint": "Curved trajectory under force"
+    }
+  ]
+}
