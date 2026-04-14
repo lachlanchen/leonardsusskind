@@ -1,0 +1,377 @@
+\chapter{Liouville's Theorem and Magnetic Forces}
+
+This lecture unfolds in two deliberately different movements. First comes Liouville's theorem: not merely as a statement about Jacobians, but as the claim that Hamiltonian mechanics conserves information by preserving phase-space volume. Then, after that geometric point has been made and proved, Susskind turns in ``a completely different direction'' to the motion of a charged particle in a magnetic field, where the new ingredient is a force that depends on velocity and yet still belongs to the Lagrangian and Hamiltonian framework. These companion notes follow Leonard Susskind's lecture, with supporting transcript and frame curation prepared with LazyingArt LLC and Video2Book.
+
+\section{Liouville's Theorem as Information Conservation}
+
+Susskind begins by telling us why Liouville's theorem matters before he proves it. It lies at the heart of Hamiltonian classical mechanics, and in quantum mechanics its close analog is unitarity. In that sense it is not just a theorem about flows; it is a classical expression of information conservation.
+
+The first picture is almost combinatorial. A phase space is the space of possible configurations of a system. For a simple discrete system one can think of a finite collection of states; for a mechanical system one eventually wants canonical pairs \((q_i,p_i)\). But before any formulas are written, the point is this: the laws of motion define a rule that carries one phase-space point into another.
+
+Now imagine looking at that motion stroboscopically. At each flash the system has moved to a new point of phase space. If every point is populated by a system, then all those points drift as a flow. What cannot happen? One trajectory cannot split into two, for then the equations would fail to tell us what comes next. Two different trajectories cannot merge into one, for then the present would fail to tell us where the system came from. Each point has one arrow in and one arrow out. This is the primitive form of information conservation.
+
+Susskind then strengthens the picture. Let phase space be filled uniformly with a dust of points. Around each point imagine a tiny little volume. As the dust moves, those little volumes may change shape, but not their total size. The flow is incompressible. That is the intuitive content of Liouville's theorem before we have yet written down the proof.
+
+\section{Phase-Space Flow, Friction, and the Meaning of ``No Convergence''}
+
+At once the theorem seems threatened by ordinary experience. Friction appears to make many different initial states collapse to the same final state. A sliding object comes to rest. Dice may start in many different ways and end on the same visible face. Is this not convergence in phase space?
+
+The lecture insists that this is only an apparent contradiction. Friction is what we see after suppressing degrees of freedom. A table is not featureless; it has microscopic structure. If we ignore the molecular variables of the table, the air, and the internal motions of the bodies involved, then many different microscopic states may indeed look like the same macroscopic end state. But that is not fundamental contraction of the full phase space. It is contraction in a reduced description.
+
+Susskind makes the analogy with energy. A sliding block seems to lose kinetic energy, but a more careful observer would predict a tiny rise in the temperature of the table. The ``lost'' energy has gone into degrees of freedom that were ignored. Likewise, if a phase-space volume appears to shrink, the right conclusion is that the description was incomplete.
+
+This is why Liouville's theorem says more than mere existence and uniqueness of solutions to differential equations. A unique future for each initial condition is not yet enough. The additional content is geometric: the Hamiltonian flow preserves phase-space volume. The theorem is stronger than determinism alone.
+
+From here the lecture pivots naturally. We are not going to take Liouville's theorem as an empirical slogan. We are going to prove it, and we are going to prove it from Hamilton's equations.
+
+\section{From Fluid Incompressibility to Hamiltonian Incompressibility}
+
+Before returning to phase space, Susskind deliberately steps away from mechanics for a moment. Let us first understand incompressible flow in ordinary space.
+
+Take a one-dimensional line populated by points with uniform density. If the flow is incompressible, then the number of points entering a small interval must equal the number leaving it. If the velocity at one end were larger than at the other, the points would either clump up or thin out. Thus the local velocity field must satisfy
+\begin{equation}
+\frac{\partial v_x}{\partial x}=0.
+\end{equation}
+In one dimension incompressibility is therefore trivial: all points move together with the same instantaneous velocity.
+
+Two dimensions are more instructive. Consider a small rectangle of sides \(\Delta x\) and \(\Delta y\). Through the vertical sides the net flux is proportional to
+\[
+\left(\frac{\partial v_x}{\partial x}\right)\Delta x\,\Delta y,
+\]
+and through the horizontal sides it is proportional to
+\[
+\left(\frac{\partial v_y}{\partial y}\right)\Delta x\,\Delta y.
+\]
+For the density to remain unchanged, the total flux must vanish. Hence
+\begin{equation}
+\frac{\partial v_x}{\partial x}+\frac{\partial v_y}{\partial y}=0.
+\end{equation}
+In the more compact notation of vector calculus,
+\begin{equation}
+\nabla\cdot \mathbf v = 0.
+\end{equation}
+More generally, in any number of dimensions,
+\begin{equation}
+\sum_i \frac{\partial v_i}{\partial x_i}=0.
+\end{equation}
+
+Strictly speaking, if the density were not uniform, one would track the divergence of density times velocity. The lecture chooses a uniform dust precisely so that the essential idea can be seen without that extra layer of bookkeeping.
+
+Now let us come back to phase space. In Hamiltonian mechanics the coordinates are the canonical pairs \((q_i,p_i)\), and the local phase-space velocity is the collection of \((\dot q_i,\dot p_i)\). Hamilton's equations are
+\begin{equation}
+\dot p_i=-\frac{\partial H}{\partial q_i},
+\qquad
+\dot q_i=\frac{\partial H}{\partial p_i}.
+\end{equation}
+Therefore the divergence of the phase-space flow is
+\begin{equation}
+\sum_i\left(\frac{\partial \dot q_i}{\partial q_i}+\frac{\partial \dot p_i}{\partial p_i}\right).
+\end{equation}
+Substituting Hamilton's equations gives
+\begin{align}
+\sum_i\left(\frac{\partial \dot q_i}{\partial q_i}+\frac{\partial \dot p_i}{\partial p_i}\right)
+&=
+\sum_i\left(
+\frac{\partial}{\partial q_i}\frac{\partial H}{\partial p_i}
+-
+\frac{\partial}{\partial p_i}\frac{\partial H}{\partial q_i}
+\right) \\
+&=
+\sum_i\left(
+\frac{\partial^2 H}{\partial q_i\,\partial p_i}
+-
+\frac{\partial^2 H}{\partial p_i\,\partial q_i}
+\right)=0.
+\end{align}
+The mixed partial derivatives cancel pairwise. This is exactly the ``special way'' in which the lecture says the divergence vanishes.
+
+\begin{theorem}[Liouville's theorem]
+Hamiltonian flow preserves phase-space volume.
+\end{theorem}
+
+\begin{proof}
+The phase-space divergence is zero, so the Hamiltonian flow is incompressible. Therefore any region transported by the flow keeps its phase-space volume.
+\end{proof}
+
+This is the precise theorem toward which the whole opening picture was pointing. A phase-space region may be stretched, squeezed in one direction and expanded in another, but it cannot be squeezed into a smaller total volume. The lecture even pushes the continuity further: a connected region remains connected under the smooth flow. The shape may become wild, but the flow does not tear it apart.
+
+\section{Area, Not Distance, in Phase Space}
+
+Having proved Liouville's theorem, Susskind immediately warns us against a false conclusion. The theorem does not say that distances between phase-space points are preserved. What is preserved is phase-space volume. For one degree of freedom, that means area.
+
+To make this as concrete as possible he chooses the simplest mechanical system of all: a free particle moving on a line, with the mass set equal to \(1\). On the board the momentum is written as \(P_x\), and the screenshot below preserves that board moment; in the surrounding prose we return to the standard lowercase notation.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_07_figure_02.png}
+\caption{Free-particle Lagrangian and the definition of \(P_x\).}
+\end{figure}
+
+The cleaned reconstruction is
+\begin{equation}
+L=\frac{\dot x^2}{2},
+\qquad
+P_x=\frac{\partial L}{\partial \dot x}=\dot x.
+\end{equation}
+Now introduce a new coordinate
+\begin{equation}
+y=\alpha x,
+\qquad
+x=\frac{y}{\alpha},
+\qquad
+\dot x=\frac{\dot y}{\alpha}.
+\end{equation}
+This is not a new direction in space. It is merely a new description of the same physics, essentially a change of units. The Lagrangian becomes
+\begin{equation}
+L=\frac{\dot y^2}{2\alpha^2}.
+\end{equation}
+The momentum conjugate to \(y\) is therefore
+\begin{equation}
+p_y=\frac{\partial L}{\partial \dot y}
+=
+\frac{\dot y}{\alpha^2}
+=
+\frac{\dot x}{\alpha}
+=
+\frac{p_x}{\alpha}.
+\end{equation}
+So stretching the coordinate axis by a factor of \(\alpha\) shrinks the conjugate momentum axis by the same factor. Hence
+\begin{equation}
+\Delta y\,\Delta p_y
+=
+(\alpha\,\Delta x)\left(\frac{\Delta p_x}{\alpha}\right)
+=
+\Delta x\,\Delta p_x.
+\end{equation}
+
+This is one of the lecture's most important geometric lessons. The widths and heights of a little phase-space box depend on coordinates. The area does not. Time evolution itself is of this type: it is a canonical transformation, and canonical transformations preserve the phase-space area element.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} How can distances between phase-space points change while phase-space area stays fixed?
+
+\paragraph{Answer.} Because the flow is allowed to stretch in one direction while compressing in another. The lecture gives the vivid example of a square shearing into a parallelogram of the same area. Two nearby points may separate dramatically in one direction, while other separations shrink. Liouville's theorem is not a rigidity statement. It is an incompressibility statement.
+
+This is also why phase-space area becomes so important in quantum mechanics. The lecture emphasizes that Planck's constant is not a measure of \(\Delta x\) alone or \(\Delta p\) alone, but of area in phase space. That sharper meaning belongs to quantum mechanics, but the classical geometry is already fully visible here.
+
+\section{Chaos, Coarse-Graining, and Entropy}
+
+The next question comes almost inevitably: what about chaos? If a small region of phase space is evolved under a chaotic system, it may become stretched, folded, and filamented until it seems to spread everywhere. Does that not mean the occupied phase-space volume has grown?
+
+The lecture's answer is careful. At the exact, fine-grained level, the volume does not grow. The region becomes distorted, even grotesquely distorted, but it remains continuous and of the same total volume. If one looks closely enough, the complicated structure is still just the same region, transported by a smooth deterministic flow.
+
+What does change is our ability to follow it. In the lecture, probability is understood operationally: how much time does the system spend in one little region of phase space versus another? For a chaotic system this naturally leads to the invariant phase-space measure. In the one-degree-of-freedom case, where phase-space volume is area, the relative probability of finding the system in two small regions \(\Omega_1\) and \(\Omega_2\) is governed by
+\begin{equation}
+\frac{P(\Omega_1)}{P(\Omega_2)}
+=
+\frac{\mathrm{Area}(\Omega_1)}{\mathrm{Area}(\Omega_2)},
+\end{equation}
+provided probability is defined by long-time occupation.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} If chaotic motion spreads out, why does Liouville's theorem not fail?
+
+\paragraph{Answer.} Because the spreading is compensated by compression in other directions. A phase-space patch may stretch into long fibers and fold back on itself, but its exact volume remains unchanged. What grows is not the fine-grained volume, but the coarse-grained volume seen by an observer with finite resolution.
+
+This is where coarse-graining enters. Instead of following exact phase points, suppose we only distinguish finite cells or little spheres in phase space. Then a finely filamented region will eventually thread through many such cells, and the union of those cells may cover a much larger coarse-grained region than the initial patch did. In that effective sense the occupied phase-space volume grows.
+
+From this point the lecture moves directly to entropy. Entropy is tied not to the exact fine-grained volume, but to the detectable phase-space volume compatible with what we know. If our knowledge says only that the system lies somewhere in a certain coarse-grained region, then the entropy is a measure of that region; in the lecture's language it is, more precisely, the logarithm of that detectable volume. Information is not fundamentally destroyed. It becomes technologically inaccessible.
+
+\section{Why Magnetic Fields Are the Right Next Example}
+
+Only after finishing this geometric story does Susskind pivot sharply: ``completely different direction.'' The next example is a charged particle in an electromagnetic field. The reason is precise. Up to now the forces of the course have depended on position but not on velocity. A magnetic field introduces a genuinely new phenomenon: a velocity-dependent force.
+
+For a particle of charge \(q\), velocity \(\mathbf v\), and magnetic field \(\mathbf B\), the force is
+\begin{equation}
+\mathbf F=q\,\mathbf v\times \mathbf B.
+\end{equation}
+This is the prime example of a velocity-dependent force in fundamental mechanics. Friction also depends on velocity, but friction is of a different kind. It is an effective, dissipative force, not a basic one. Magnetic forces, by contrast, come from an action principle. They possess a Lagrangian formulation, a Hamiltonian formulation, and, for time-independent fields, a conserved energy.
+
+The price we pay is that the mechanics cannot be written directly in terms of \(\mathbf B\) alone. One introduces the vector potential \(\mathbf A\), defined by
+\begin{equation}
+\mathbf B=\nabla\times \mathbf A.
+\end{equation}
+The particular component formulas we shall need are
+\begin{equation}
+B_x=\frac{\partial A_z}{\partial y}-\frac{\partial A_y}{\partial z},
+\qquad
+B_y=\frac{\partial A_x}{\partial z}-\frac{\partial A_z}{\partial x},
+\qquad
+B_z=\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}.
+\end{equation}
+For the cross product itself, the \(z\)-component is
+\begin{equation}
+(\mathbf v\times \mathbf B)_z=v_xB_y-v_yB_x,
+\end{equation}
+and cyclic permutation gives the other components.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why can we not write the mechanics directly in terms of \(\mathbf B\) alone?
+
+\paragraph{Answer.} Because Newton's equation \(m\mathbf a=q\,\mathbf v\times\mathbf B\) is not yet a Lagrangian or Hamiltonian framework. To write an action, define canonical momentum, and construct a Hamiltonian, we need a field whose derivatives produce \(\mathbf B\). That field is the vector potential \(\mathbf A\). The equations of motion end up depending only on \(\mathbf B\), but the variational structure is written in terms of \(\mathbf A\).
+
+\section{Charged Particle in a Magnetic Field: Action, Momentum, and Energy}
+
+Now comes the constructive part of the lecture. The quickest way to see whether magnetic forces fit the formalism is to guess the action and check it.
+
+The free-particle term must still be there:
+\[
+\int \frac12 mv^2\,dt.
+\]
+The new term is as simple as possible: a line integral of the vector potential along the particle's path. Thus
+\begin{equation}
+S=\int \frac12 mv^2\,dt+q\int A_i\,dx_i.
+\end{equation}
+The board crop below captures the kinetic term and the beginning of the coupling term. The full line-integral structure is the cautious standard completion consistent with the lecture.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_03.png}
+\caption{Action guess with kinetic term and vector-potential coupling.}
+\end{figure}
+
+Since \(dx_i=\dot x_i\,dt\), the action can be written in the usual form
+\begin{equation}
+S=\int \left(\frac12 m\sum_i \dot x_i^2 + q\sum_i A_i\dot x_i\right)dt,
+\end{equation}
+so the Lagrangian is
+\begin{equation}
+L=\frac12 m\sum_i \dot x_i^2 + q\sum_i A_i\dot x_i.
+\end{equation}
+This is already the ``respectable'' Lagrangian form the lecture was looking for: it depends on positions through \(A_i(\mathbf x)\), and on velocities through \(\dot x_i\).
+
+The first new feature is the canonical momentum:
+\begin{equation}
+p_i=\frac{\partial L}{\partial \dot x_i}=m\dot x_i+qA_i.
+\end{equation}
+In components,
+\begin{equation}
+p_x=m\dot x+qA_x,
+\qquad
+p_y=m\dot y+qA_y,
+\qquad
+p_z=m\dot z+qA_z.
+\end{equation}
+The lecture pauses here because this is genuinely new. The mechanical momentum is \(m\dot x_i\); the canonical momentum differs from it by \(qA_i\).
+
+We now verify that the Euler--Lagrange equations reproduce the Lorentz force. Following the lecture, we compute the \(z\)-component explicitly. The Euler--Lagrange equation is
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial \dot z}=\frac{\partial L}{\partial z}.
+\end{equation}
+The left-hand side is
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial \dot z}
+=
+\frac{d}{dt}(m\dot z+qA_z)
+=
+m\ddot z+q\dot A_z.
+\end{equation}
+The right-hand side comes only from the \(A_i\)-dependence:
+\begin{equation}
+\frac{\partial L}{\partial z}
+=
+q\dot x\,\frac{\partial A_x}{\partial z}
++
+q\dot y\,\frac{\partial A_y}{\partial z}
++
+q\dot z\,\frac{\partial A_z}{\partial z}.
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_04.png}
+\caption{First term in \(\partial L/\partial z\) from the vector potential.}
+\end{figure}
+
+The screenshot certifies the first visible term on the right; the full three-term line is the standard reconstruction matching the transcript. Next we need the chain rule:
+\begin{equation}
+\dot A_z
+=
+\frac{\partial A_z}{\partial x}\dot x
++
+\frac{\partial A_z}{\partial y}\dot y
++
+\frac{\partial A_z}{\partial z}\dot z.
+\end{equation}
+Substituting into the Euler--Lagrange equation and cancelling the common
+\(q\dot z\,\partial A_z/\partial z\) term yields
+\begin{align}
+m\ddot z
+&=
+q\dot x\left(\frac{\partial A_x}{\partial z}-\frac{\partial A_z}{\partial x}\right)
++
+q\dot y\left(\frac{\partial A_y}{\partial z}-\frac{\partial A_z}{\partial y}\right) \\
+&=
+q(v_xB_y-v_yB_x)
+=
+q(\mathbf v\times \mathbf B)_z.
+\end{align}
+The \(x\)- and \(y\)-components follow by cycling the indices, so the guessed Lagrangian does indeed reproduce
+\begin{equation}
+m\mathbf a=q\,\mathbf v\times \mathbf B.
+\end{equation}
+
+At this point the lecture makes another useful remark. The vector potential is not unique; different choices of \(\mathbf A\) may give the same magnetic field. But the equations of motion depend only on \(\mathbf B\). So the Lagrangian formulation requires \(\mathbf A\), while the actual force law depends only on the curl.
+
+Now we turn to energy. Here the lecture assumes that the magnetic field is static, equivalently that \(\mathbf A\) has no explicit time dependence. Then the Hamiltonian is conserved. By definition,
+\begin{equation}
+H=\sum_i p_i\dot x_i-L.
+\end{equation}
+If we first express \(H\) in terms of velocities, the calculation is unexpectedly simple:
+\begin{align}
+H
+&=
+\sum_i (m\dot x_i+qA_i)\dot x_i
+-
+\left(\frac12 m\sum_i \dot x_i^2+q\sum_i A_i\dot x_i\right) \\
+&=
+\frac12 m\sum_i \dot x_i^2
+=
+\frac12 mv^2.
+\end{align}
+The \(qA_i\dot x_i\) terms cancel completely. This is exactly the lecture's punchline: magnetic fields do not contribute to the energy when that energy is expressed in terms of velocities.
+
+To use Hamilton's equations, however, we must rewrite the Hamiltonian in terms of canonical momenta. Solving
+\[
+p_i=m\dot x_i+qA_i
+\]
+for \(\dot x_i\) gives
+\begin{equation}
+\dot x_i=\frac{p_i-qA_i}{m}.
+\end{equation}
+Substituting this into the kinetic expression yields
+\begin{equation}
+H=\frac{1}{2m}\sum_i (p_i-qA_i)^2
+=
+\frac{1}{2m}\bigl(\mathbf p-q\mathbf A\bigr)^2.
+\end{equation}
+This is the Hamiltonian form appropriate for Hamilton's equations.
+
+A brief caveat, also raised in the lecture, is worth preserving. An accelerating charge can radiate, and then the field itself carries energy. Here we are working in the radiationless approximation, with an externally prescribed magnetic field. Within that approximation the above Hamiltonian is the correct conserved energy.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why does the magnetic field alter the canonical momentum but not the energy?
+
+\paragraph{Answer.} Because the canonical variables are not the same as the mechanical ones once the vector potential is present. The mechanical momentum is
+\begin{equation}
+\mathbf p_{\mathrm{mech}}=m\mathbf v=\mathbf p-q\mathbf A.
+\end{equation}
+So the magnetic field changes the momentum that appears in Hamilton's equations. But the energy depends on speed, and the magnetic force is perpendicular to the velocity. It bends the trajectory without changing the magnitude of \(\mathbf v\). That is why
+\begin{equation}
+H=\frac12 mv^2
+\end{equation}
+in velocity variables, even though in canonical variables
+\begin{equation}
+H=\frac{1}{2m}(\mathbf p-q\mathbf A)^2.
+\end{equation}
+
+The lecture ends by turning this into a final exercise: take the Hamiltonian above, compute Hamilton's equations, and verify that they reproduce the same Lorentz-force equations of motion. The same physics has now been written in Newtonian, Lagrangian, and Hamiltonian language.
+
+\section{Summary}
+
+Liouville's theorem says that Hamiltonian mechanics is an incompressible flow on phase space. It is the classical analog of unitarity and, in the lecture's language, a statement of information conservation. The flow may distort regions wildly, but it does not change their phase-space volume.
+
+From there the lecture moves naturally to the geometry of canonical area, to chaos and coarse-graining, and finally to a charged particle in a magnetic field. Magnetic forces are velocity dependent, but unlike friction they still come from an action principle. The price is that the canonical momentum differs from the mechanical momentum by \(q\mathbf A\). The reward is that the full machinery of Lagrangians and Hamiltonians still works, and the lecture closes by showing exactly how.
