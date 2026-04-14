@@ -1,0 +1,338 @@
+\chapter{String Theory and M-Theory}
+
+These notes follow Leonard Susskind's opening lecture on string theory, with curation by LazyingArt LLC. The lecture begins where string theory actually began: not with quantum gravity, but with hadron physics. We first follow an experimental pattern, then a scattering puzzle, then a geometric re-description, and only after that do we turn to the mathematics of strings. The order is essential. The lecture is not presenting a finished formalism and then sprinkling in some history; it is letting the need for the formalism emerge.
+
+\section{Hadrons, Towers, and Regge Trajectories}
+
+String theory entered physics through hadrons. In the late 1960s one did not yet speak in the settled modern language of quarks and gluons, but one did have spectroscopy. Protons, neutrons, mesons, and their excitations did not appear as isolated accidents. They came in families, and the families showed a remarkably simple pattern.
+
+The organizing device was the Chew--Frautschi plot: angular momentum vertically, mass squared horizontally. Susskind moves rather freely between angular momentum, spin, and the symbol \(L\); for the written notes it is cleaner to denote the vertical axis by \(J\). The experimental fact was that hadronic families lay approximately on straight lines,
+\begin{equation}
+J \propto M^2,
+\end{equation}
+and, more strikingly, different families had approximately the same slope. In this sense there was something like a universal Regge slope. One may summarize the observed quantization schematically as
+\begin{equation}
+\Delta J = 1
+\qquad \Longrightarrow \qquad
+\Delta M^2 \approx \text{constant}.
+\end{equation}
+For mesons the angular momenta are integers; for baryons they are half-integers. But in both cases the same broad phenomenon appears: higher and higher spin states, marching upward in nearly parallel lines on the \(J\) versus \(M^2\) plane.
+
+This is already a strong clue. One can spin up a basketball or an atom, but the resulting trajectory is not a straight line in \(M^2\), and in any case the thing eventually breaks apart or ionizes. The hadronic pattern is too simple, too linear, and too persistent. It tells us that hadrons are not point particles. They are composite objects that can be excited rotationally, and they must have a rather special kind of stretchability.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{lecture_01_figure_02.png}
+\caption{Regge trajectory and dual scattering sketches.}
+\end{figure}
+
+This is the first beat of the lecture. It is historical, but not decorative. The data are already suggesting the right sort of object: something extended, excitable, and apparently not eager to give out as the spin increases.
+
+\section{Meson Scattering and the Duality Tension}
+
+That was one observation. Then there was another. Susskind now pivots from spectroscopy to scattering, and he does it concretely: take pion--pion scattering. In conventional field-theoretic language, two pions may come together, form a \(\rho\)-like resonance, and then emerge again as two pions. But if that diagram exists, then the crossed diagram exists as well: the same ingredients also describe the exchange of a \(\rho\)-like state between the pions.
+
+So far there is no mystery. The mystery arrives when we remember that the \(\rho\) is not a single isolated particle. It sits on a whole Regge trajectory. Therefore in the annihilation channel one should not insert only the \(\rho\), but also the \(\rho'\), the \(\rho''\), and so on. Likewise in the exchange channel. The lecture never turns this into a detailed amplitude analysis, but the conceptual statement can be written schematically as
+\begin{equation}
+\mathcal{A}_{\pi\pi}(s,t)
+\sim
+\sum_n \mathcal{A}^{(s)}_{\rho_n}(s)
+\qquad\text{and}\qquad
+\mathcal{A}_{\pi\pi}(s,t)
+\sim
+\sum_n \mathcal{A}^{(t)}_{\rho_n}(t).
+\end{equation}
+The point is not that these are exact formulas in the lecture. The point is that when people numerically summed the known resonances in one channel, they seemed to be getting, approximately and already, what the other channel would have contributed.
+
+That is the duality tension. Ordinary quantum field theory says: if this diagram exists and that diagram exists, then we must add them. The hadronic data seemed instead to be saying that the sum over a full tower in one channel was already reproducing the other. Naively adding both looked like overcounting.
+
+The board itself makes this transition visible: the Regge plot and the two channel sketches are drawn as one conceptual cluster, as if the spectral regularity and the dual-channel puzzle were already different faces of the same thing.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[scale=0.82]
+\draw[->] (0,0) -- (4.4,0) node[right] {$m^2$};
+\draw[->] (0,0) -- (0,3.7) node[above] {$J$};
+\foreach \x/\y in {0.7/0.45,1.25/0.95,1.85/1.45,2.45/1.95,3.05/2.45}
+  \fill (\x,\y) circle (0.06);
+\draw (0.35,0.15) -- (3.35,2.75);
+\node at (2.2,3.15) {Regge};
+
+\draw[dashed] (5.8,2.8) -- (7.2,1.8);
+\draw[dashed] (5.8,0.8) -- (7.2,1.8);
+\draw[dashed] (8.4,1.8) -- (9.8,2.8);
+\draw[dashed] (8.4,1.8) -- (9.8,0.8);
+\draw (7.8,0.95) -- (7.65,1.10) -- (7.95,1.25) -- (7.65,1.40) -- (7.95,1.55) -- (7.65,1.70) -- (7.95,1.85) -- (7.65,2.00) -- (7.95,2.15) -- (7.65,2.30) -- (7.8,2.45);
+\node at (5.55,2.95) {$\pi$};
+\node at (5.55,0.65) {$\pi$};
+\node at (10.05,2.95) {$\pi$};
+\node at (10.05,0.65) {$\pi$};
+\node at (8.15,1.75) {$\rho,\rho',\ldots$};
+
+\draw[dashed] (11.7,2.8) -- (13.2,1.8);
+\draw[dashed] (11.7,0.8) -- (13.2,1.8);
+\draw[dashed] (14.4,1.8) -- (15.9,2.8);
+\draw[dashed] (14.4,1.8) -- (15.9,0.8);
+\draw (13.25,1.75) -- (13.45,1.90) -- (13.65,1.60) -- (13.85,1.90) -- (14.05,1.60) -- (14.25,1.90) -- (14.45,1.75);
+\draw[dashed] (12.1,2.65) .. controls (13.4,3.55) and (14.6,3.55) .. (15.4,2.55);
+\node at (11.45,2.95) {$\pi$};
+\node at (11.45,0.65) {$\pi$};
+\node at (16.15,2.95) {$\pi$};
+\node at (16.15,0.65) {$\pi$};
+\node at (13.85,2.20) {$\rho,\rho',\ldots$};
+\end{tikzpicture}
+\caption{A clean redraw of the board cluster: a Regge plot at left and the two channel pictures at right.}
+\end{figure}
+
+\section{From Quark Pictures to World-Sheets}
+
+At this point the lecture becomes exploratory in exactly the right way. Susskind does not say: here is the formal object and here is its theorem. He says, in effect, something is going on here, and the Feynman-diagram bookkeeping is no longer the right way to see it.
+
+The next move is to draw quark diagrams with a topological character. Imagine quark and antiquark lines running upward in time. If we view the whole history as a two-dimensional sheet, then one slice through the sheet looks like annihilation and recreation, while another slice looks like exchange. The two channel pictures are no longer two separate dynamical mechanisms; they are two ways of cutting one underlying history.
+
+This is where the jargon arrives:
+\begin{definition}
+A world sheet is the two-dimensional spacetime history traced by a string, just as a world line is the one-dimensional spacetime history traced by a point particle.
+\end{definition}
+The lecture is careful here. It does not claim that a full string theory has been derived. It claims something more primitive and, historically, more accurate: a two-dimensional object can naturally account for the duality between the channels.
+
+\subsection{Question \& Answer}
+
+Why think of a string-like bridge between the quark and antiquark rather than an ordinary exchanged particle?
+
+Because the object in question is not localized at a single intermediate point. If we take an instant of time, we do not see two endpoints and one exchanged quantum. We see a quark, an antiquark, and a whole bunch of stuff in between. Susskind explicitly leaves open whether that intervening stuff is truly continuous or only an approximation to continuity; quantum mechanics makes the distinction subtle. But whatever it is, it fills the interval between the endpoints. Moreover, the Regge trajectories showed no sign of ending. A shoelace with two golf balls at its ends eventually breaks when spun hard enough. The hadronic object, as far as the data then showed, did not. That is what made the one-dimensional extended picture feel more basic than ordinary particle exchange.
+
+Once one says this, the first hadronic clue returns in a new form. A hadron that is a string with two quarks attached to it is exactly the kind of object one can spin up, deform, and analyze energetically.
+
+\section{Flux Tubes, Stretchability, and the Historical Turn}
+
+The lecture now pauses the crude historical picture and reinterprets it in modern terms. Today we would say that the string between a quark and an antiquark is a flux tube of the gluon field. The most useful contrast is with electrodynamics. Between opposite electric charges the field lines spread out, so the field weakens as the charges are pulled apart. That is not a string.
+
+In QCD the nonlinearities of the gauge field change the story. The effective field lines do not simply spread; they are drawn into a tube. As the endpoints separate, the tube gets longer rather than thinner. One may think of the tube as made of gluonic structure. Then the key property is that the energy of stretching does not merely increase the distance between fixed constituents; it goes into creating more constituents in between, so that the density along the tube stays roughly fixed.
+
+This is why Susskind leans on the analogy with a rubber band whose number of molecules is \emph{not} fixed. A normal rubber band stretches by separating the same molecules further and further until it breaks. The hadronic string, in the lecture's modernized picture, stretches by producing more stuff in the gaps. That is why it can remain string-like over a long range of excitation.
+
+The same physical lesson appears in the superconductor analogy. A confined line of magnetic flux in a superconductor has approximately uniform field strength along its length. Uniform field strength means uniform energy density, and uniform energy density means energy proportional to length. We do not need the full superconducting construction here; the moral is enough. Field theory really does produce string-like objects with tension.
+
+Only after making this point does Susskind step back historically. The mathematics that grew out of these hadronic ideas did not, in its simplest form, become the final theory of hadrons. It kept producing, embarrassingly, a massless spin-two particle. What had looked like a nuisance in hadron physics would later be recognized as the graviton. So the mathematical theory born from hadron phenomenology turns out to look more like quantum gravity than like hadronic spectroscopy. But before one gets to that reinterpretation, one still needs the basic mechanics of the string itself, and for that the lecture turns sharply to kinematics.
+
+\section{Relativity Reorganized in the Infinite-Momentum Frame}
+
+Before talking about string mathematics, the lecture talks about relativity versus nonrelativistic kinematics. This is not a digression. It is the license for everything that follows.
+
+For a slow particle the energy is
+\begin{equation}
+E_{\mathrm{nr}}=\frac{p^2}{2m}+B,
+\end{equation}
+where \(B\) is an additive internal or binding term that does not depend on the state of motion. In relativity the exact energy is
+\begin{equation}
+E=\sqrt{p^2c^2+m^2c^4}.
+\end{equation}
+If \(p\ll mc\), then we can factor out the large term and expand:
+\begin{align}
+E
+&=
+mc^2\sqrt{1+\frac{p^2}{m^2c^2}}
+\\
+&\approx
+mc^2+\frac{p^2}{2m}.
+\end{align}
+This is the familiar nonrelativistic limit. But Susskind insists that it is only an approximation, and it is a good approximation only when all relevant particles are moving slowly, not merely the center of mass of the system.
+
+Now comes the other expansion, the one that matters for strings. Boost the entire system so that every constituent carries a very large positive momentum along the \(z\)-axis. From here on we set \(c=1\). Then
+\begin{equation}
+E_i=\sqrt{P_{zi}^2+p_{\perp i}^2+m_i^2},
+\qquad
+p_{\perp i}^2=p_{xi}^2+p_{yi}^2.
+\end{equation}
+The board notation shifts between \(P_3\) and \(P_z\); we standardize to \(P_z\). Since \(P_{zi}\) is large while \(p_{\perp i}\) and \(m_i\) remain fixed, we expand in powers of \(1/P_{zi}\):
+\begin{align}
+E_i
+&=
+P_{zi}\sqrt{1+\frac{p_{\perp i}^2+m_i^2}{P_{zi}^2}}
+\\
+&\approx
+P_{zi}+\frac{p_{\perp i}^2+m_i^2}{2P_{zi}}.
+\end{align}
+Summing over all constituents gives
+\begin{equation}
+E
+=
+\sum_i P_{zi}
++
+\sum_i\frac{p_{\perp i}^2}{2P_{zi}}
++
+\sum_i\frac{m_i^2}{2P_{zi}}.
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_01_figure_04.png}
+\caption{Large-\(P_z\) expansion of the relativistic energy.}
+\end{figure}
+
+The first term is just the total momentum down the \(z\)-axis. It is huge, but it is also conserved. As an additive constant in the energy it may be dropped without affecting the dynamics. The remaining expression can be read as a Hamiltonian:
+\begin{equation}
+H
+=
+\sum_i\left(
+\frac{p_{\perp i}^2}{2P_{zi}}
++
+\frac{m_i^2}{2P_{zi}}
+\right).
+\end{equation}
+The board then reinterprets the same formula as the generator of time evolution,
+\begin{equation}
+i\,\partial_t = H,
+\end{equation}
+with \(\hbar=1\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_01_figure_05.png}
+\caption{Hamiltonian form of the light-cone energy.}
+\end{figure}
+
+Now the lecture makes the crucial interpretation. In this transverse description the quantity in the denominator plays the role that mass usually plays in nonrelativistic mechanics. So \(P_z\) acts as transverse inertia. Meanwhile the term involving \(m_i^2\) is independent of the transverse state of motion, and so it plays the role of internal or binding energy. This is the exact structural reason that a relativistic system, viewed in the infinite-momentum frame, behaves nonrelativistically in the transverse plane.
+
+Susskind then adds the physical explanation. Because the Hamiltonian scales like \(1/P_z\), the evolution becomes slow when \(P_z\) is large. That is just time dilation. One is not denying relativistic physics; one is reorganizing it into a form that is calculable.
+
+\section{Open Strings as Masses and Springs}
+
+By what chutzpah do we now use nonrelativistic physics to describe a relativistic string? By the chutzpah just earned. In the infinite-momentum frame the transverse dynamics really are nonrelativistic, and that is enough to write down the simplest model.
+
+Take an open string. Introduce a coordinate \(\sigma\) along it, with
+\[
+0\leq \sigma \leq \pi.
+\]
+The choice of \(\pi\) is conventional; Susskind chooses it because later closed strings will naturally run from \(0\) to \(2\pi\).
+
+Start discretely. Think of the string as a chain of point masses joined by springs. If \(X_i(t)\) denotes the transverse position of the \(i\)-th mass point, then the energy is
+\begin{equation}
+E
+=
+\sum_i\left(
+\frac{\mu}{2}\dot X_i^2
++
+\frac{k}{2}(X_i-X_{i+1})^2
+\right).
+\end{equation}
+Here \(\dot X_i^2\) abbreviates the sum of the two transverse components, and the second term is simply Hooke's law.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_01_figure_06.png}
+\caption{Discrete string energy and continuum \(\sigma\)-derivative limit.}
+\end{figure}
+
+The lecture is careful about the continuum limit. As the beads become denser, the mass of each bead must go to zero so that the total mass remains finite. At the same time the spring constant must scale upward: stretching a tiny segment by a fixed amount is harder than stretching a long segment by the same amount. When the spacing goes to zero, the sum becomes an integral and the nearest-neighbor difference becomes a derivative:
+\begin{equation}
+\sum_i \longrightarrow \int_0^\pi d\sigma,
+\qquad
+X_i-X_{i+1}\longrightarrow \partial_\sigma X.
+\end{equation}
+Thus the continuum energy takes the form
+\begin{equation}
+E \sim \int_0^\pi d\sigma
+\left[
+\frac{1}{2}\dot X^2(\sigma,t)
++
+\left(\partial_\sigma X(\sigma,t)\right)^2
+\right].
+\end{equation}
+The exact coefficients are not fully fixed by the board, and Susskind explicitly says he has absorbed constants by convention. What matters is the structure: kinetic energy from \(\partial_t X\), potential energy from the stretching measured by \(\partial_\sigma X\).
+
+The lecture pauses here for a useful distinction. If we were writing the Lagrangian, the potential term would come with a minus sign. But Susskind wants the energy, the Hamiltonian, so the terms appear with plus signs. That is the object we will need when we ask what the internal motion of the string contributes to the observable particle.
+
+\section{Internal Energy as \(M^2\)}
+
+We now return to the key interpretive question. The string may vibrate and stretch, but as a whole it is still one object. We may call it a particle if we like. Its center of mass describes the overall motion of the particle, while the relative stretching and internal vibration describe its internal energy.
+
+What, then, does the Hamiltonian of the previous section correspond to? In ordinary rest-frame reasoning one would identify internal energy with mass. But the whole point of the infinite-momentum analysis was that in this frame internal energy enters as mass squared. Thus the string Hamiltonian should be read as contributing to \(M^2\), not to \(M\):
+\begin{equation}
+H_{\mathrm{int}} \propto M^2.
+\end{equation}
+Susskind is quite emphatic about this. It is not just an analogy; it is the precise way relativity reorganizes itself in the light-cone frame.
+
+This immediately explains why string excitations naturally come in evenly spaced units of \(M^2\). The string is a collection of coupled oscillators. We do not quantize it fully in this lecture, but the principle is already clear: oscillator energies are quantized in equal steps, so string excitations contribute equal steps to the internal Hamiltonian, hence to mass squared. This is exactly the kind of spacing the Regge trajectories seemed to demand.
+
+\subsection{Question \& Answer}
+
+Why does the same string look Hooke-like in one frame but tension-like in its rest frame?
+
+Because the Hooke-like energy is the effective internal energy of the boosted description, and that quantity maps to \(M^2\), not directly to the rest energy \(M\). The rest-frame string is recovered only after we translate the light-cone result back into ordinary relativistic language.
+
+Let us go through the argument the way the lecture does. Consider a uniformly stretched string of physical length \(L\). Along the parameter interval \(0\leq \sigma\leq \pi\) we then have, schematically,
+\begin{equation}
+\partial_\sigma X \sim \frac{L}{\pi}.
+\end{equation}
+Insert this into the stretching term:
+\begin{align}
+H_{\mathrm{stretch}}
+&\sim
+\int_0^\pi d\sigma\,\left(\partial_\sigma X\right)^2
+\\
+&\sim
+\int_0^\pi d\sigma\,\left(\frac{L}{\pi}\right)^2
+\\
+&=
+\pi\left(\frac{L}{\pi}\right)^2
+\propto L^2.
+\end{align}
+So in the effective nonrelativistic description the stretching energy behaves like Hooke's law:
+\begin{equation}
+H_{\mathrm{stretch}} \propto L^2.
+\end{equation}
+But this energy is to be identified with \(M^2\). Therefore
+\begin{equation}
+M^2\propto L^2,
+\qquad \text{so} \qquad
+M\propto L.
+\end{equation}
+In the rest frame the energy of the string is its mass, and so
+\begin{equation}
+E_{\text{rest}}=M=T\,L.
+\end{equation}
+Thus the rest-frame string is not an ordinary Hooke-law spring at all. It is a constant-tension object, precisely of the flux-tube type discussed earlier.
+
+Susskind is careful here: this is an indirect deduction. We are not claiming to know how an arbitrary ordinary rubber band would behave if it were driven relativistically. What we have done is use the frame in which the transverse dynamics become simple, derive the \(L^2\) behavior there, and then translate back. That is why the result is trustworthy even though the route is indirect.
+
+\subsection{After-Break Clarifications}
+
+After the break the lecture revisits the same point more slowly, because this is where the sleight of hand can be missed. The same relativistic formula
+\begin{equation}
+E=\sqrt{p^2+m^2}
+\end{equation}
+admits two different expansions.
+
+If \(p\) is small and \(m\) is large, then
+\begin{equation}
+E \approx m+\frac{p^2}{2m}.
+\end{equation}
+This is the ordinary rest-frame logic: internal energy is read as mass. If, on the other hand, \(p\) is very large, then
+\begin{equation}
+E \approx p+\frac{m^2}{2p}.
+\end{equation}
+After the conserved momentum term is removed, the remaining energy is proportional to \(m^2\). That is the whole conceptual switch. In one frame the relevant internal quantity is \(M\); in the boosted frame it is \(M^2\).
+
+The lecture also addresses a natural question about residual motion along the boost direction. In light-cone string theory one does not introduce independent longitudinal degrees of freedom in the same way one introduces the transverse ones. The description is transverse, and yet it remains Lorentz invariant. In the lecture this is presented as a remarkable fact rather than something to prove immediately, and that is the right level to preserve here.
+
+Finally, Susskind returns to the electron question. Why do hadrons show low-lying higher-spin excitations while electrons do not? The answer is the rotational estimate
+\begin{equation}
+E_{\mathrm{rot}} \sim \frac{L^2}{2I},
+\qquad
+I \sim M R^2.
+\end{equation}
+Since angular momentum comes in quanta, the first excited rotational state costs roughly
+\begin{equation}
+\Delta E \sim \frac{\hbar^2}{2I}.
+\end{equation}
+If the object is tiny, then \(R\) is tiny, hence \(I\) is tiny, and the excitation energy is enormous. Electrons are experimentally exceedingly small, so any such excitations would lie far beyond accessible collision energies. Hadrons are large on the scale of their own internal dynamics, so their moments of inertia are large enough that spinning them up by one unit costs only hadronic energies.
+
+This closes the loop back to the opening observation. The Regge plots were not merely classification devices. They were telling us that hadrons behave as extended objects with accessible rotational and vibrational excitations.
+
+\section{Summary}
+
+The lecture begins with hadron phenomenology and lets string theory emerge from it. Straight, parallel Regge trajectories suggest that hadrons are composite, stretchable objects rather than points. The duality puzzle in pion scattering then suggests that what field theory wants to count as separate channels may really be two slicings of one underlying two-dimensional history, a world sheet.
+
+From there the lecture pauses to reinterpret the old picture in modern QCD terms: a flux tube has constant energy per unit length, and so it behaves like a string with tension. Only then does the mathematical turn arrive. In the infinite-momentum frame a relativistic system becomes nonrelativistic in the transverse plane, with \(P_z\) playing the role of inertia and the internal term behaving like mass squared. That allows us to model an open string as masses and springs, pass to the continuum Hamiltonian built from \(\dot X^2\) and \((\partial_\sigma X)^2\), and then read that Hamiltonian as contributing to \(M^2\). The payoff is immediate: Hooke-law stretching in the light-cone description becomes linear-tension behavior in the rest frame, and string excitations naturally organize themselves in evenly spaced quanta of mass squared.
