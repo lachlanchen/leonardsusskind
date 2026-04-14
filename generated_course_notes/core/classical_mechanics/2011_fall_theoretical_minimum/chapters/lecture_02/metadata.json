@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_theoretical_minimum",
+  "transcript_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/115 - Classical Mechanics \uff5c Lecture 2 [mYDrufxpW9E].md",
+  "video_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/115 - Classical Mechanics \uff5c Lecture 2 [mYDrufxpW9E].webm",
+  "lecture_number": 2,
+  "lecture_slug": "lecture_02",
+  "lecture_title": "Classical Mechanics : Lecture 2",
+  "assets": [
+    {
+      "name": "lecture_02_figure_02.png",
+      "timestamp_seconds": 291.375,
+      "timestamp_hhmmss": "00:04:51.375",
+      "source_candidate": "lecture_02_window_02_candidate_03_000451375.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and most useful frame in the subtitle window. The central board equation is the most fully visible here, the lecturer blocks less of the writing than in the earlier frames, and the surrounding layout still preserves the nearby component work above. The later candidate is slightly closer to the spoken 'vector equation' moment, but the lecturer's hand obscures the key symbol while he is still writing, so this frame is better as documentary evidence for note writing.",
+      "subtitle_excerpt": "we can write this as a vector equation,",
+      "segment_start_seconds": 289.62,
+      "segment_start_hhmmss": "00:04:49.620",
+      "segment_end_seconds": 292.32,
+      "segment_end_hhmmss": "00:04:52.320",
+      "caption_hint": "vector form of momentum"
+    },
+    {
+      "name": "lecture_02_figure_03.png",
+      "timestamp_seconds": 1955.438,
+      "timestamp_hhmmss": "00:32:35.438",
+      "source_candidate": "lecture_02_window_03_candidate_03_003235438.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest usable view of the board at the moment the law is stated. The boxed equation is already finished, the lecturer is no longer pointing across and obscuring it as in the previous frame, and the surrounding layout still preserves the nearby momentum notation. The later frame shifts attention more toward the lecturer and crops the board slightly more, while the earlier one is less tightly aligned to the stated subtitle moment.",
+      "subtitle_excerpt": "F is equal to the time derivative of momentum,",
+      "segment_start_seconds": 1953.54,
+      "segment_start_hhmmss": "00:32:33.540",
+      "segment_end_seconds": 1956.46,
+      "segment_end_hhmmss": "00:32:36.460",
+      "caption_hint": "Newton's law in momentum form"
+    },
+    {
+      "name": "lecture_02_figure_04.png",
+      "timestamp_seconds": 2147.093,
+      "timestamp_hhmmss": "00:35:47.093",
+      "source_candidate": "lecture_02_window_04_candidate_04_003547093.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and most complete board state in the window. Both boxed first-order equations are visible together, the momentum line above remains legible, and the initial-condition line has developed enough to show the two required variables. The earlier frames are more obstructed by the lecturer's hand or marker and do not present the two-equation layout as cleanly.",
+      "subtitle_excerpt": "First order equations mean only first time derivatives,",
+      "segment_start_seconds": 2144.77,
+      "segment_start_hhmmss": "00:35:44.770",
+      "segment_end_seconds": 2147.41,
+      "segment_end_hhmmss": "00:35:47.410",
+      "caption_hint": "two first-order Newton equations"
+    },
+    {
+      "name": "lecture_02_figure_05.png",
+      "timestamp_seconds": 4852.27,
+      "timestamp_hhmmss": "01:20:52.270",
+      "source_candidate": "lecture_02_window_05_candidate_04_012052270.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the most useful frame in the window because it shows the fullest board state with the least important occlusion. The lecturer has moved enough to reveal the top energy equation, the intermediate derivative line, and the right-hand derivative notation, so the logic of the potential-energy step is easier to recover here than in the earlier candidates.",
+      "subtitle_excerpt": "to a derivative of a potential energy?",
+      "segment_start_seconds": 4850.51,
+      "segment_start_hhmmss": "01:20:50.510",
+      "segment_end_seconds": 4852.51,
+      "segment_end_hhmmss": "01:20:52.510",
+      "caption_hint": "energy derivative step"
+    },
+    {
+      "name": "lecture_02_figure_06.png",
+      "timestamp_seconds": 5342.473,
+      "timestamp_hhmmss": "01:29:02.473",
+      "source_candidate": "lecture_02_window_06_candidate_01_012902473.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame is the best balance of legibility and completeness. The boxed multidimensional force law is the clearest here, the one-dimensional relation remains visible above, and the contour-style sketch at the right is still intact. In the later frames the lecturer moves farther across the board and obscures more of the boxed equation or diagram.",
+      "subtitle_excerpt": "or derivatives of a quantity called the potential energy.",
+      "segment_start_seconds": 5342.07,
+      "segment_start_hhmmss": "01:29:02.070",
+      "segment_end_seconds": 5345.43,
+      "segment_end_hhmmss": "01:29:05.430",
+      "caption_hint": "force from potential energy"
+    }
+  ]
+}
