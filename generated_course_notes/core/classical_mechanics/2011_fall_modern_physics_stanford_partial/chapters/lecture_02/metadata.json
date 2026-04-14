@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial",
+  "transcript_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial/022 - Lecture 2 \uff5c Modern Physics\uff1a Classical Mechanics (Stanford) [h96SW0PfQcg].md",
+  "video_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial/022 - Lecture 2 \uff5c Modern Physics\uff1a Classical Mechanics (Stanford) [h96SW0PfQcg].webm",
+  "lecture_number": 2,
+  "lecture_slug": "lecture_02",
+  "lecture_title": "Lecture 2 : Modern Physics\uff1a Classical Mechanics (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_02_figure_02.png",
+      "timestamp_seconds": 1344.23,
+      "timestamp_hhmmss": "00:22:24.230",
+      "source_candidate": "lecture_02_window_02_candidate_04_002224230.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and least occluded frame in an almost static sequence. The lecturer has moved furthest out of the shot, the full board is visible, and the bottom line about the derivative of the potential energy is most legible, which makes this the most useful frame for equation recovery.",
+      "subtitle_excerpt": "derivative of potential energy.",
+      "segment_start_seconds": 1343.16,
+      "segment_start_hhmmss": "00:22:23.160",
+      "segment_end_seconds": 1344.6,
+      "segment_end_hhmmss": "00:22:24.600",
+      "caption_hint": "energy and time-derivative formulas"
+    },
+    {
+      "name": "lecture_02_figure_03.png",
+      "timestamp_seconds": 1441.475,
+      "timestamp_hhmmss": "00:24:01.475",
+      "source_candidate": "lecture_02_window_03_candidate_01_002401475.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the clearest overall view of the full board. The left-hand energy identities and the new right-hand combined derivative expression are both visible at once, and Susskind is not actively covering the crucial notation. Later frames introduce pointing or hand motion that partially obscures the right-hand formula.",
+      "subtitle_excerpt": "the derivative of potential energy.",
+      "segment_start_seconds": 1441.12,
+      "segment_start_hhmmss": "00:24:01.120",
+      "segment_end_seconds": 1444.08,
+      "segment_end_hhmmss": "00:24:04.080",
+      "caption_hint": "combined time derivative of energy"
+    },
+    {
+      "name": "lecture_02_figure_04.png",
+      "timestamp_seconds": 1628.086,
+      "timestamp_hhmmss": "00:27:08.086",
+      "source_candidate": "lecture_02_window_04_candidate_03_002708086.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the best balance of completeness and legibility. The already-written upper equation is clearly visible, and the lower line has progressed further than in the earlier frames without the new writing being as heavily occluded by Susskind's hand as in the latest frame.",
+      "subtitle_excerpt": "equal to the time derivative of the momentum of an object.",
+      "segment_start_seconds": 1624.31,
+      "segment_start_hhmmss": "00:27:04.310",
+      "segment_end_seconds": 1630.12,
+      "segment_end_hhmmss": "00:27:10.120",
+      "caption_hint": "force as time derivative of momentum"
+    },
+    {
+      "name": "lecture_02_figure_05.png",
+      "timestamp_seconds": 1740.664,
+      "timestamp_hhmmss": "00:29:00.664",
+      "source_candidate": "lecture_02_window_05_candidate_04_002900664.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest frame in the sequence: the three equations are fully written and unobstructed, and Susskind has stepped far enough aside that neither his hand nor marker covers the notation. Earlier frames are more dynamic but partially occlude the lowest equation.",
+      "subtitle_excerpt": "the time derivative of momentum is equal to zero?",
+      "segment_start_seconds": 1738.64,
+      "segment_start_hhmmss": "00:28:58.640",
+      "segment_end_seconds": 1740.94,
+      "segment_end_hhmmss": "00:29:00.940",
+      "caption_hint": "force as momentum derivative"
+    },
+    {
+      "name": "lecture_02_figure_06.png",
+      "timestamp_seconds": 1960.28,
+      "timestamp_hhmmss": "00:32:40.280",
+      "source_candidate": "lecture_02_window_06_candidate_04_003240280.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the most useful frame in a nearly continuous writing sequence. It preserves the left-hand force-and-momentum equations while also showing the central vector-force sketch in its most finished state. Although Susskind's hand still overlaps the middle, the overall board logic is clearer here than in the earlier, less developed candidates.",
+      "subtitle_excerpt": "We can make a vector equations",
+      "segment_start_seconds": 1959.24,
+      "segment_start_hhmmss": "00:32:39.240",
+      "segment_end_seconds": 1960.62,
+      "segment_end_hhmmss": "00:32:40.620",
+      "caption_hint": "vector force-equation sketch"
+    }
+  ]
+}
