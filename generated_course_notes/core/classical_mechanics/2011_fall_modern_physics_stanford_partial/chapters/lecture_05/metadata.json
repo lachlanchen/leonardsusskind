@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial",
+  "transcript_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial/025 - Lecture 5 \uff5c Modern Physics\uff1a Classical Mechanics (Stanford) [ZpRpI0D7P7Y].md",
+  "video_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial/025 - Lecture 5 \uff5c Modern Physics\uff1a Classical Mechanics (Stanford) [ZpRpI0D7P7Y].mp4",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Lecture 5 : Modern Physics\uff1a Classical Mechanics (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_05_figure_02.png",
+      "timestamp_seconds": 650.0945,
+      "timestamp_hhmmss": "00:10:50.094",
+      "source_candidate": "lecture_05_window_02_candidate_03_001050094.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "potential energy in the Lagrangian,",
+      "segment_start_seconds": 648.71,
+      "segment_start_hhmmss": "00:10:48.710",
+      "segment_end_seconds": 650.84,
+      "segment_end_hhmmss": "00:10:50.840",
+      "caption_hint": "potential energy in the Lagrangian,"
+    },
+    {
+      "name": "lecture_05_figure_03.png",
+      "timestamp_seconds": 829.162,
+      "timestamp_hhmmss": "00:13:49.162",
+      "source_candidate": "lecture_05_window_03_candidate_04_001349162.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame is the least occluded and most complete. The full Lagrangian line is visible without the lecturer's hand covering either term, while the earlier definitions of the kinetic and potential energies remain on the board above and the small pendulum sketch is still present at the upper left. It is the clearest witness for the statement that the Lagrangian is kinetic energy minus potential energy.",
+      "subtitle_excerpt": "The Lagrangian is kinetic energy minus potential energy.",
+      "segment_start_seconds": 826.68,
+      "segment_start_hhmmss": "00:13:46.680",
+      "segment_end_seconds": 829.5,
+      "segment_end_hhmmss": "00:13:49.500",
+      "caption_hint": "pendulum Lagrangian as T minus U"
+    },
+    {
+      "name": "lecture_05_figure_04.png",
+      "timestamp_seconds": 3167.957,
+      "timestamp_hhmmss": "00:52:47.957",
+      "source_candidate": "lecture_05_window_05_candidate_02_005247957.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest balance of completeness and emphasis. The kinetic term, potential term, full Lagrangian line, the cosine coupling term, the boxed result at the right, and the small symmetry shifts on the left are all visible at once, while the lecturer's hand points to the theta-dependent part without obscuring as much of the equation as in the neighboring candidates.",
+      "subtitle_excerpt": "The derivative of the Lagrangian with respect to theta.",
+      "segment_start_seconds": 3166.84,
+      "segment_start_hhmmss": "00:52:46.840",
+      "segment_end_seconds": 3169.78,
+      "segment_end_hhmmss": "00:52:49.780",
+      "caption_hint": "theta derivative in the two-angle Lagrangian"
+    },
+    {
+      "name": "lecture_05_figure_05.png",
+      "timestamp_seconds": 5225.037,
+      "timestamp_hhmmss": "01:27:05.037",
+      "source_candidate": "lecture_05_window_06_candidate_03_012705037.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the best compromise between board visibility and completed mathematics. The lecturer has stepped far enough aside that the canonical-momentum line, the Hamiltonian substitution, and the boxed final energy expression are all readable, without the extra hand occlusion present in the earlier candidates.",
+      "subtitle_excerpt": "we've dealt with the Lagrangian form of the equations.",
+      "segment_start_seconds": 5223.1,
+      "segment_start_hhmmss": "01:27:03.100",
+      "segment_end_seconds": 5226.08,
+      "segment_end_hhmmss": "01:27:06.080",
+      "caption_hint": "Hamiltonian for the harmonic oscillator"
+    }
+  ]
+}
