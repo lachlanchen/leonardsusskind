@@ -1,0 +1,38 @@
+{
+  "course_rel": "supplementary/quantum_entanglement/2006_fall_part_3",
+  "transcript_rel": "supplementary/quantum_entanglement/2006_fall_part_3/061 - Lecture 6 \uff5c Quantum Entanglements, Part 3 (Stanford) [YTGvPL2qbFI].md",
+  "video_rel": "supplementary/quantum_entanglement/2006_fall_part_3/061 - Lecture 6 \uff5c Quantum Entanglements, Part 3 (Stanford) [YTGvPL2qbFI].mp4",
+  "lecture_number": 6,
+  "lecture_slug": "lecture_06",
+  "lecture_title": "Lecture 6 : Quantum Entanglements, Part 3 (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_06_figure_03.png",
+      "timestamp_seconds": 1907.654,
+      "timestamp_hhmmss": "00:31:47.654",
+      "source_candidate": "lecture_06_window_03_candidate_04_003147654.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 best captures the transition described in the subtitle. It keeps the indexed transformation line clearly visible at the top while also showing the beginning of the column-vector form being written below. Earlier candidates preserve only the upper line before the lower matrix-style layout has started, so they are less useful for reconstructing the board progression.",
+      "subtitle_excerpt": "column vector x prime is equal to a matrix.",
+      "segment_start_seconds": 1904.099,
+      "segment_start_hhmmss": "00:31:44.099",
+      "segment_end_seconds": 1908.139,
+      "segment_end_hhmmss": "00:31:48.139",
+      "caption_hint": "Indexed and column-vector Lorentz form"
+    },
+    {
+      "name": "lecture_06_figure_05.png",
+      "timestamp_seconds": 5741.934,
+      "timestamp_hhmmss": "01:35:41.934",
+      "source_candidate": "lecture_06_window_05_candidate_02_013541934.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 02 gives the clearest and most complete view of the board. It preserves the rank notation on the left, the explanatory phrase about a second-rank tensor, and the parenthesized component grid on the right with less occlusion than candidate 01 and less cropping than candidates 03 and 04. It is the best single frame for reconstructing both the notation and the layout used to explain the ten independent components.",
+      "subtitle_excerpt": "Ten independent components determine a symmetric tensor.",
+      "segment_start_seconds": 5739.274,
+      "segment_start_hhmmss": "01:35:39.274",
+      "segment_end_seconds": 5746.274,
+      "segment_end_hhmmss": "01:35:46.274",
+      "caption_hint": "Rank-two tensor and symmetric-component grid"
+    }
+  ]
+}
