@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory",
+  "transcript_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory/103 - Lecture 9 \uff5c String Theory and M-Theory [Tsav_xnegTk].md",
+  "video_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory/103 - Lecture 9 \uff5c String Theory and M-Theory [Tsav_xnegTk].mkv",
+  "lecture_number": 9,
+  "lecture_slug": "lecture_09",
+  "lecture_title": "Lecture 9 : String Theory and M-Theory",
+  "assets": [
+    {
+      "name": "lecture_09_figure_02.png",
+      "timestamp_seconds": 497.246,
+      "timestamp_hhmmss": "00:08:17.246",
+      "source_candidate": "lecture_09_window_02_candidate_02_000817246.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame gives the cleanest and least occluded view of the board diagram. The large red circle is fully legible, the small marked point near the top is visible, and the label near the upper-left arc is unobstructed. The later frames introduce motion blur and hand occlusion as Susskind reaches toward the board, while the earlier frame is slightly less settled compositionally.",
+      "subtitle_excerpt": "its kinetic energy or its Lagrangian? As always,",
+      "segment_start_seconds": 496.11,
+      "segment_start_hhmmss": "00:08:16.110",
+      "segment_end_seconds": 499.1,
+      "segment_end_hhmmss": "00:08:19.100",
+      "caption_hint": "circular boundary with radius label"
+    },
+    {
+      "name": "lecture_09_figure_03.png",
+      "timestamp_seconds": 2441.78,
+      "timestamp_hhmmss": "00:40:41.780",
+      "source_candidate": "lecture_09_window_04_candidate_02_004041780.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest and most stable view of the board writing relevant to the spoken discussion of the metric tensor. The visible notation on the right board is legible, and Susskind is not obscuring it with a gesture. The later frames are more lecturer-dominant and slightly less settled, while the first frame is a bit more distracted by motion.",
+      "subtitle_excerpt": "a second-rank tensor, symmetric.",
+      "segment_start_seconds": 2439.88,
+      "segment_start_hhmmss": "00:40:39.880",
+      "segment_end_seconds": 2444.88,
+      "segment_end_hhmmss": "00:40:44.880",
+      "caption_hint": "metric tensor notation on the board"
+    },
+    {
+      "name": "lecture_09_figure_04.png",
+      "timestamp_seconds": 2835.4,
+      "timestamp_hhmmss": "00:47:15.400",
+      "source_candidate": "lecture_09_window_05_candidate_04_004715400.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the strongest frame because the full equation is visible, finished, and unobstructed. The earlier candidates still include Susskind writing or moving in front of the board, while this frame leaves the blackboard content clear and centered for direct note extraction.",
+      "subtitle_excerpt": "where t mu nu is the energy momentum tensor.",
+      "segment_start_seconds": 2831.88,
+      "segment_start_hhmmss": "00:47:11.880",
+      "segment_end_seconds": 2835.88,
+      "segment_end_hhmmss": "00:47:15.880",
+      "caption_hint": "Einstein tensor and stress tensor"
+    },
+    {
+      "name": "lecture_09_figure_05.png",
+      "timestamp_seconds": 5561.08,
+      "timestamp_hhmmss": "01:32:41.080",
+      "source_candidate": "lecture_09_window_06_candidate_04_013241080.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the best frame because it shows the most finished version of the equation at exactly the moment Susskind says energy equals the magnitude of the momentum. The absolute-value bars around P are present, making the statement visually complete, whereas the earlier candidates show only the unfinished form E = cP or the bars being added.",
+      "subtitle_excerpt": "Energy is equal to the magnitude of the momentum",
+      "segment_start_seconds": 5556.68,
+      "segment_start_hhmmss": "01:32:36.680",
+      "segment_end_seconds": 5561.68,
+      "segment_end_hhmmss": "01:32:41.680",
+      "caption_hint": "massless energy-momentum relation"
+    }
+  ]
+}
