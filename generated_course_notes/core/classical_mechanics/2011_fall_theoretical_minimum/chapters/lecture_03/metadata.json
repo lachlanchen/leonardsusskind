@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_theoretical_minimum",
+  "transcript_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/116 - Classical Mechanics \uff5c Lecture 3 [3apIZCpmdls].md",
+  "video_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/116 - Classical Mechanics \uff5c Lecture 3 [3apIZCpmdls].webm",
+  "lecture_number": 3,
+  "lecture_slug": "lecture_03",
+  "lecture_title": "Classical Mechanics : Lecture 3",
+  "assets": [
+    {
+      "name": "lecture_03_figure_02.png",
+      "timestamp_seconds": 171.26,
+      "timestamp_hhmmss": "00:02:51.260",
+      "source_candidate": "lecture_03_window_02_candidate_04_000251260.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame has the clearest, most stable view of the finished board equation while also preserving the empty board area where Susskind is about to sketch the potential graph. The writing is fully legible, the lecturer does not block the mathematics, and the frame captures the transition from the extremum condition to the forthcoming diagram better than the slightly earlier, more in-motion candidates.",
+      "subtitle_excerpt": "draw a graph of the potential,",
+      "segment_start_seconds": 170.42,
+      "segment_start_hhmmss": "00:02:50.420",
+      "segment_end_seconds": 171.4,
+      "segment_end_hhmmss": "00:02:51.400",
+      "caption_hint": "stationary point of the potential"
+    },
+    {
+      "name": "lecture_03_figure_03.png",
+      "timestamp_seconds": 1841.464,
+      "timestamp_hhmmss": "00:30:41.464",
+      "source_candidate": "lecture_03_window_03_candidate_02_003041464.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame gives the clearest and most complete view of the drawn potential-energy curve with the horizontal baseline still visible and only minimal occlusion from Susskind\u2019s pointing hand. The later candidates add a bit more gestural detail but obscure the middle of the diagram more heavily, while the first candidate is slightly less aligned to the explanatory moment. For note writing, this is the best balance of completeness, legibility, and relevance.",
+      "subtitle_excerpt": "The potential energy is also an integral.",
+      "segment_start_seconds": 1840.56,
+      "segment_start_hhmmss": "00:30:40.560",
+      "segment_end_seconds": 1842.94,
+      "segment_end_hhmmss": "00:30:42.940",
+      "caption_hint": "potential well sketch"
+    },
+    {
+      "name": "lecture_03_figure_04.png",
+      "timestamp_seconds": 2726.621,
+      "timestamp_hhmmss": "00:45:26.621",
+      "source_candidate": "lecture_03_window_04_candidate_04_004526621.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and least occluded frame of the set. The lecturer\u2019s hand has moved away enough to reveal the upper partial-derivative term on the board, and the surrounding layout still preserves the nearby lower derivative line. Earlier candidates are more tightly aligned to the pointing gesture but obscure the exact derivative notation more heavily.",
+      "subtitle_excerpt": "the derivative of the Lagrangian with respect to position",
+      "segment_start_seconds": 2724.72,
+      "segment_start_hhmmss": "00:45:24.720",
+      "segment_end_seconds": 2726.88,
+      "segment_end_hhmmss": "00:45:26.880",
+      "caption_hint": "Lagrangian derivative with respect to position"
+    },
+    {
+      "name": "lecture_03_figure_05.png",
+      "timestamp_seconds": 3472.844,
+      "timestamp_hhmmss": "00:57:52.844",
+      "source_candidate": "lecture_03_window_05_candidate_04_005752844.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest and most complete view of the board after the key relation has been written. The lecturer has moved far enough away that the full large Lagrangian expression is legible, and the surrounding kinetic-energy, potential-energy, and force-law context remains visible. Earlier candidates are more obstructed by his body or pointing hand.",
+      "subtitle_excerpt": "the Lagrangian is kinetic energy minus potential energy,",
+      "segment_start_seconds": 3469.06,
+      "segment_start_hhmmss": "00:57:49.060",
+      "segment_end_seconds": 3473.36,
+      "segment_end_hhmmss": "00:57:53.360",
+      "caption_hint": "Lagrangian as kinetic minus potential"
+    }
+  ]
+}
