@@ -1,0 +1,345 @@
+\chapter{Classical Mechanics and the Meaning of State}
+
+Classical mechanics enters this course with an unusually broad claim. Leonard Susskind begins by saying that it is the basis of all physics, not only because it describes ordinary moving objects, but because it provides the general architecture by which physical systems evolve. These companion notes follow that opening lecture closely and preserve a small amount of board evidence, with credit to LazyingArt LLC and Video2Book, when the geometry of the board helps stabilize the mathematical story. The strategy of the lecture is deliberate: before we study realistic particles and forces, we first strip the subject to its simplest logical core and ask what a law of evolution can mean.
+
+\section{Opening Motivation and the Stroboscopic Toy World}
+
+The lecture does not start with Newton's law. It starts with a simplification. Time, for the moment, will not be continuous. We imagine a stroboscopic world in which we look only at equally spaced beats, say one second apart. If \(q_n\) denotes the state of the system at the \(n\)-th beat, then the law of motion takes the schematic form
+\begin{equation}
+q_n \mapsto q_{n+1}.
+\end{equation}
+This is the first important reduction. Instead of worrying about smooth motion, we ask only: given the present state, what is the next one?
+
+The second simplification is to consider systems with only a very small number of configurations. Such systems are less realistic than anything in nature, but that is exactly why they are useful here. They let us separate the structure of the law from the complications of the world to which the law will later be applied.
+
+\section{Two States, One Law, and the Meaning of Phase Space}
+
+The first nontrivial example is a coin on a table. It has two possible configurations, heads and tails. The phase space is therefore
+\begin{equation}
+\Gamma=\{H,T\}.
+\end{equation}
+
+\begin{definition}
+The phase space of a system is the space of its possible states.
+\end{definition}
+
+\begin{definition}
+A state is a complete specification of the information needed to determine what happens next.
+\end{definition}
+
+At this stage the phase space is not ordinary space. It is simply the set of possibilities. The coin gives us two points in an abstract state space, one labelled \(H\) and one labelled \(T\).
+
+A useful limiting case helps fix the idea. If there were only one state, then the world would be completely trivial. Nothing could happen, because there would be nowhere else to go. With two states, by contrast, there is room for genuine laws of evolution.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} What exactly counts as a state?
+
+\paragraph{Answer.} A state is not just any description we happen to write down. It is exactly enough information to determine the next step. If the symbols \(H\) and \(T\) are enough, then those symbols are the states. If they are not enough, then the true state space must be larger. This operational definition is the thread that runs through the whole lecture.
+
+\section{Arrow Diagrams and the First Deterministic Laws}
+
+Once the two states are on the board, the lecture introduces its visual grammar. We represent the law by an arrow leading from the present state to the next one. The arrow is not decoration; it is the law of motion itself.
+
+The first law is the dull one:
+\begin{equation}
+H \mapsto H,\qquad T \mapsto T.
+\end{equation}
+If the system is in the state \(H\) now, it remains in the state \(H\) at the next beat. If it is in the state \(T\), it remains in the state \(T\).
+
+The second law is more interesting:
+\begin{equation}
+H \mapsto T,\qquad T \mapsto H.
+\end{equation}
+Now the system alternates forever,
+\begin{equation}
+H \mapsto T \mapsto H \mapsto T \mapsto \cdots .
+\end{equation}
+These are already deterministic laws in the strong classical sense: if we know the state at one instant, then we know the entire future sequence.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_01_figure_03.png}
+\caption{Susskind's board as the lecture passes from the trivial self-loop law to the alternating two-state law. The frame directly supports the self-loops and the arrow from \(H\) toward \(T\); the reverse arrow is fixed by the transcript.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\fill (-4,0) circle (1.2pt);
+\node at (-4,-0.35) {$H$};
+\draw[->] (-4,0.30) .. controls (-4.55,1.05) and (-3.45,1.05) .. (-4,0.30);
+
+\fill (-2,0) circle (1.2pt);
+\node at (-2,-0.35) {$T$};
+\draw[->] (-2,0.30) .. controls (-2.55,1.05) and (-1.45,1.05) .. (-2,0.30);
+
+\node at (-3,-1.10) {identity law};
+
+\fill (2,0) circle (1.2pt);
+\node at (2,-0.35) {$H$};
+
+\fill (4,0) circle (1.2pt);
+\node at (4,-0.35) {$T$};
+
+\draw[->] (2.10,0.10) .. controls (2.65,1.15) and (3.35,1.15) .. (3.90,0.10);
+\draw[->] (3.90,-0.10) .. controls (3.35,-1.15) and (2.65,-1.15) .. (2.10,-0.10);
+
+\node at (3,-1.45) {alternating law};
+\end{tikzpicture}
+\caption{Clean redraw of the two elementary laws on the two-state phase space.}
+\end{figure}
+
+What matters here is not the coin. What matters is that a classical law is being represented as motion in phase space. If we know where we are, we follow the arrow.
+
+\section{Allowed and Forbidden Laws in Finite State Spaces}
+
+Now the lecture pivots from examples to a criterion. It is no longer enough to draw some arrows. We must ask which arrow diagrams are actually allowed by classical physics.
+
+The first generalization is from two states to six. A die has six faces, so we may imagine six states labelled \(1,\dots,6\). One possible law is the six-cycle
+\begin{equation}
+1\mapsto2,\qquad
+2\mapsto3,\qquad
+3\mapsto4,\qquad
+4\mapsto5,\qquad
+5\mapsto6,\qquad
+6\mapsto1.
+\end{equation}
+Another acceptable law may break the six states into several disconnected cycles, for example
+\begin{equation}
+1\mapsto1,\qquad
+2\mapsto3,\qquad
+3\mapsto4,\qquad
+4\mapsto2,\qquad
+5\mapsto6,\qquad
+6\mapsto5.
+\end{equation}
+In both cases the rule is deterministic into the future. From each state there is exactly one way to go next.
+
+But classical physics, as the lecture insists, is not only deterministic into the future. It is also deterministic into the past. We must be able to reconstruct where the system came from.
+
+A forbidden example makes the issue plain:
+\[
+1\mapsto2,\qquad 2\mapsto3,\qquad 3\mapsto2.
+\]
+Here the future is unique, but the past is not. If we find ourselves at \(2\), we cannot tell whether we came from \(1\) or from \(3\). Reversing the arrows produces the opposite pathology: then the past is unique but the future is ambiguous.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\fill (-5,0) circle (1.2pt);
+\node at (-5,-0.35) {$1$};
+\fill (-4,1.2) circle (1.2pt);
+\node at (-4,1.60) {$2$};
+\fill (-3,0) circle (1.2pt);
+\node at (-3,-0.35) {$3$};
+
+\draw[->] (-4.86,0.16) -- (-4.14,1.04);
+\draw[->] (-3.86,1.04) -- (-3.14,0.16);
+\draw[->] (-3.14,0.28) -- (-3.86,1.08);
+
+\node at (-4,-1.10) {future unique, past ambiguous};
+
+\fill (2,0) circle (1.2pt);
+\node at (2,-0.35) {$1$};
+\fill (3,1.2) circle (1.2pt);
+\node at (3,1.60) {$2$};
+\fill (4,0) circle (1.2pt);
+\node at (4,-0.35) {$3$};
+
+\draw[->] (2.14,0.16) -- (2.86,1.04);
+\draw[->] (3.14,1.04) -- (3.86,0.16);
+\draw[->] (3.00,1.02) -- (2.15,0.08);
+
+\node at (3,-1.10) {past unique, future ambiguous};
+\end{tikzpicture}
+\caption{Two forbidden three-state laws. In the first the past is not unique; in the second the future is not unique.}
+\end{figure}
+
+\begin{proposition}
+On a finite phase space \(\Gamma\), an allowed classical law is a bijection
+\begin{equation}
+\sigma:\Gamma\to\Gamma,
+\end{equation}
+or equivalently a rule with exactly one incoming arrow and exactly one outgoing arrow at each state.
+\end{proposition}
+
+\begin{proof}
+If a state had two outgoing arrows, the future would not be unique. If it had no outgoing arrow, the system would have no next step. If a state had two incoming arrows, the past would not be unique. If it had no incoming arrow, the motion could not be traced backward through that state. Thus determinism into the future and determinism into the past together require one in-arrow and one out-arrow at every state. On a finite set that is precisely the condition that the update rule be bijective.
+\end{proof}
+
+This is the first real mathematical spine of the lecture. A classical finite-state law is a permutation of phase space.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why must an allowed classical law have one arrow in and one arrow out at every state?
+
+\paragraph{Answer.} Because classical evolution is being characterized here as unique both forward and backward in time. One out-arrow tells us where we go next. One in-arrow tells us where we came from. If either uniqueness fails, information has been lost, and the law no longer has the classical character Susskind is emphasizing.
+
+\section{Infinite State Spaces, Disconnected Components, and Conservation as Memory}
+
+The lecture then removes the assumption that phase space must be finite. Suppose the states are indexed by all integers,
+\[
+\ldots,-2,-1,0,1,2,\ldots,
+\]
+with the law
+\begin{equation}
+n\mapsto n+1.
+\end{equation}
+Each state still has one in-arrow and one out-arrow, but now the trajectory does not cycle through a finite list. It simply marches onward forever.
+
+This already tells us that the finite examples were not important because they were finite. What mattered was the structure of the map on phase space.
+
+The next step is subtler. Phase space may break up into disconnected pieces. One component may be an infinite chain, another a closed cycle, another a fixed point. If the system starts in one component, it never wanders into another. That fact can be rephrased as a conservation law.
+
+This is not yet the conservation of energy or momentum in its familiar form. It is a stripped-down model of the idea of conservation. We may assign a label \(C\) to each connected component, for example
+\begin{equation}
+C=+1 \quad \text{on one component},\qquad C=-1 \quad \text{on another},
+\end{equation}
+and then along the motion we have
+\begin{equation}
+C_{n+1}=C_n.
+\end{equation}
+The conserved quantity is simply a memory of where the system started. It never changes because the dynamics never mixes the disconnected parts of phase space.
+
+This is why the lecture identifies reversibility with information conservation. If we know the present state and can reconstruct both the future and the past, then no information about the trajectory has been lost. If two distinct histories collapse into the same present state, information has been destroyed.
+
+At about this point the lecture inserts a valuable warning. Suppose the next coin outcome depended on the previous two entries instead of only the present one. Then the labels \(H\) and \(T\) would not really be the states after all. The same warning is about to return in continuous form: if position alone does not determine what happens next, then position alone is not the state.
+
+\section{Continuous Motion and Why Position Alone Is Not Enough}
+
+Only after that discrete groundwork does Susskind turn to the real world. He asks for the continuous analogue of the coin question: if a particle moves along a line, is its position enough to determine what happens next?
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Is knowing the position of a particle enough to know what happens next?
+
+\paragraph{Answer.} No. We must also know how fast the particle is moving, and in which direction. Position alone is not a complete state. Velocity must be included.
+
+Thus the phase space of a particle on a line is not the line of positions alone. It is the two-dimensional space of pairs
+\begin{equation}
+(x,v),\qquad v=\dot{x}.
+\end{equation}
+The horizontal axis is position, the vertical axis is velocity. Positive velocity means motion to the right; negative velocity means motion to the left.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_01_figure_05.png}
+\caption{Susskind's board near the end of the lecture. The frame supports a local flow picture: a position line, a marked point \(x\), and small arrows indicating the next direction of motion.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw (-4,0) -- (4,0);
+\fill (3,0) circle (1.2pt);
+\node at (3.25,-0.35) {$x$};
+
+\draw[->] (-0.70,0.95) -- (-0.20,0.75);
+\draw[->] (-0.15,1.05) -- (0.35,0.85);
+\draw[->] (0.40,0.90) -- (0.85,0.72);
+\end{tikzpicture}
+\caption{A sparse redraw of the local flow sketch. The board frame supports this geometry; the fuller phase-space interpretation comes from the transcript.}
+\end{figure}
+
+The lecture then fills in the meaning of those arrows. If the velocity is zero, the position does not change at the next instant. If the velocity is positive, the next position lies to the right. If the positive velocity is larger, the motion to the right in a fixed time interval is larger. If the velocity is negative, the particle moves to the left.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=0.95]
+\draw[->] (-4.2,0) -- (4.4,0);
+\node at (4.65,0) {$x$};
+\draw[->] (0,-2.4) -- (0,2.5);
+\node at (0.30,2.25) {$v$};
+
+\fill (0,0) circle (1.2pt);
+\draw[->] (0.18,0.12) .. controls (0.52,0.38) and (0.52,-0.38) .. (0.18,-0.12);
+
+\fill (1.2,0.9) circle (1.2pt);
+\draw[->] (1.35,0.9) -- (2.05,0.9);
+
+\fill (-1.2,1.5) circle (1.2pt);
+\draw[->] (-1.05,1.5) -- (0.10,1.5);
+
+\fill (1.4,-0.9) circle (1.2pt);
+\draw[->] (1.25,-0.9) -- (0.55,-0.9);
+
+\fill (-1.3,-1.6) circle (1.2pt);
+\draw[->] (-1.45,-1.6) -- (-2.70,-1.6);
+\end{tikzpicture}
+\caption{Transcript-backed reconstruction of the phase-space picture for motion on a line. Above the \(x\)-axis the arrows point right; below it they point left; on the axis itself the next position is unchanged.}
+\end{figure}
+
+The point is no longer merely pictorial. A point in phase space now carries two pieces of information. This is the continuous counterpart of the earlier warning about the coin: whatever information is needed to determine the next step must be built into the definition of state.
+
+The lecture also pauses here over a practical qualification. Classical equations are deterministic in principle, but they are not infinitely predictive in practice. Initial conditions are given by real numbers, and real numbers are never known with infinite precision. Over short intervals the uncertainty may remain small; over longer intervals it may grow, sometimes violently, as in chaotic systems. But the conceptual structure remains the same: for any fixed interval of time, sufficiently precise initial data would, in principle, determine the motion over that interval.
+
+\section{First-Order Versus Second-Order Equations, and the Return to Two-Step Memory}
+
+The next step is to translate the phase-space lesson into the structure of differential equations. The selected board frames do not stabilize these formulas visually, so we write them in the standard notation used throughout the lecture.
+
+A first-order equation contains only first time derivatives. A second-order equation contains accelerations as well:
+\[
+\dot{x}=\frac{dx}{dt},\qquad \ddot{x}=\frac{d^2x}{dt^2}.
+\]
+
+To make the logical point as sharply as possible, Susskind first invents a fake law of motion:
+\begin{equation}
+F(x)=m\dot{x}.
+\end{equation}
+Assume that the force depends only on the position \(x\). Then if we know \(x\), we know \(F(x)\), and the equation immediately tells us \(\dot{x}\). Position alone would be enough to determine the next step.
+
+The lecture then differentiates once more:
+\begin{align}
+\frac{dF}{dt} &= m\ddot{x},\\
+\frac{dF}{dt} &= \frac{dF}{dx}\frac{dx}{dt}
+              = \frac{dF}{dx}\,\dot{x}.
+\end{align}
+Since \(\dot{x}\) was already known from the first-order equation, \(\ddot{x}\) is also determined. Repeating the same idea would determine higher derivatives as well. So a first-order law of this sort would require only one state variable.
+
+But Newton's law does not have that form. Newton's law is
+\begin{equation}
+F(x)=m\ddot{x}.
+\end{equation}
+Now if we know the position, we know the force and hence the acceleration. But there is still no equation that tells us the velocity. Therefore position alone does not specify the state. We must supply the velocity as additional information. That is why the phase space is two-dimensional.
+
+This is the same lesson we learned from the coin diagrams, now stated in the language of calculus: the order of the equation measures how much information a state must contain.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} What if the next state depends on the previous two configurations?
+
+\paragraph{Answer.} Then a single \(H\) or \(T\) is not a complete state. The state must be enlarged so that it includes both pieces of information. The law may still be deterministic and reversible, but only on the enlarged phase space.
+
+The lecture returns to the coin example precisely to sharpen this point. If the law depends on the last two entries, then the proper phase space is
+\begin{equation}
+\Gamma_2=\{HH,HT,TH,TT\}.
+\end{equation}
+A clean way to write such a law is to say that the next symbol is a function of the previous pair:
+\[
+(a,b)\mapsto (b,f(a,b)).
+\]
+One reversible completion consistent with the spirit of the classroom discussion is
+\[
+f(H,H)=H,\qquad f(H,T)=T,\qquad f(T,H)=T,\qquad f(T,T)=H,
+\]
+which induces the update rule
+\begin{equation}
+HH\mapsto HH,\qquad
+HT\mapsto TT,\qquad
+TT\mapsto TH,\qquad
+TH\mapsto HT.
+\end{equation}
+This is now a deterministic reversible law on four states. The difficulty was never that the law itself was impossible. The difficulty was that the original state space \(\{H,T\}\) was too small.
+
+Once that is clear, the higher-order moral follows immediately. If classical mechanics had required positions, velocities, and accelerations as independent initial data, then the equations of motion would have been third order in time and the phase space would have had to include
+\[
+(x,\dot{x},\ddot{x}).
+\]
+Experiment tells us that ordinary classical mechanics does not work that way. It stops at positions and velocities. For a single particle in three-dimensional space, the phase space therefore has six coordinates: three positions and three velocities.
+
+\section{Summary}
+
+The lecture begins with an intentionally oversized claim and then earns it by working downward to the simplest possible examples. We first learn to think of dynamics as motion in phase space; then we learn that a state is exactly the information needed to know what happens next; then we discover that classical evolution has the special structure of determinism both into the future and into the past.
+
+In the discrete toy world this structure appears as one in-arrow and one out-arrow at every point. In the continuous world it appears as the necessity of using \((x,v)\) rather than \(x\) alone, and in the equations of motion it reappears as the difference between a first-order law and Newton's actual second-order law. The lecture's unifying theme is already clear in the first hour: classical mechanics is the study of lawful evolution as conservation of information.
