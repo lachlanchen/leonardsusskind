@@ -1,13 +1,15 @@
-# Introduction
-The lecture notes of Professor Leonard Susskind. If this violates any copyrights, please contact me to delete this repository. 
+# Core Quantum Mechanics
 
-# Core courses
+This folder is reserved for root-level published PDFs for the core quantum mechanics material in this archive.
 
-## Classical Mechanics
-The textbook of this courses [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) had been published. 
+## Intended contents
 
-## Quantum Mechanics
-The textbook of this courses [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) had been published. 
+- merged course PDFs for finished core quantum mechanics note runs
+- lecture-by-lecture PDFs when they are published to the root
 
-## Special Relativity and Electrodynamics
-The textbook of this courses [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) had been published. 
+The transcript and subtitle source trees already live under:
+
+- `markdown/core/quantum_mechanics/`
+- `subtitles/core/quantum_mechanics/`
+
+Published PDFs should be added here once the generated core quantum mechanics course notes are complete.

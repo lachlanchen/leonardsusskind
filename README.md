@@ -111,7 +111,7 @@ For generated notes, each course folder usually contains:
 
 | 🏷️ Group | 📂 Folders |
 |---|---|
-| Core | `core_classical`, `core_quantum`, `core_special_relativity`, `core_general_relativity`, `core_cosmology`, `core_statistical_mechanics` |
+| Core | `core_classical_mechanics`, `core_quantum_mechanics`, `core_special_relativity`, `core_general_relativity`, `core_cosmology`, `core_statistical_mechanics` |
 | Supplemental | `supplemental_advanced_quantum`, `supplemental_cosmology_and_black_holes`, `supplemental_higgs_boson`, `supplemental_particle_physics_1`, `supplemental_particle_physics_2`, `supplemental_particle_physics_3`, `supplemental_quantum_entanglement`, `supplemental_relativity`, `supplemental_string_theory` |
 
 ## 🚀 How To Use The Repo

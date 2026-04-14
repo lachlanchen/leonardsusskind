@@ -95,9 +95,9 @@ i18n/
 │   ├── README.vi.md
 │   ├── README.zh-Hans.md
 │   └── README.zh-Hant.md
-├── core_classical/
+├── core_classical_mechanics/
 │   └── README.md
-├── core_quantum/
+├── core_quantum_mechanics/
 │   └── README.md
 ├── core_special_relativity/
 │   └── README.md

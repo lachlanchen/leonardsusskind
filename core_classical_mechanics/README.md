@@ -1,13 +1,16 @@
-# Introduction
-The lecture notes of Professor Leonard Susskind. If this violates any copyrights, please contact me to delete this repository. 
+# Core Classical Mechanics
 
-# Core courses
+This folder publishes root-level PDFs for the core classical mechanics material in this archive.
 
-## Classical Mechanics
-The textbook of this courses [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) had been published. 
+## Current published set
 
-## Quantum Mechanics
-The textbook of this courses [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) had been published. 
+- `classical_mechanics_stanford_partial.pdf`
+- `stanford_partial_lecture_01.pdf` through `stanford_partial_lecture_09.pdf`
 
-## Special Relativity and Electrodynamics
-The textbook of this courses [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) had been published. 
+This published run corresponds to the older Stanford `Modern Physics: Classical Mechanics` upload set, which appears in the playlist as a separate 9-lecture sequence.
+
+## Notes
+
+- This is not the main 10-lecture Theoretical Minimum run.
+- When the full `2011_fall_theoretical_minimum` notes finish, they should also be published here under their own distinct filenames.
+- Published PDFs in this folder are hard-linked from `generated_course_notes/`, so they should be refreshed again if the generated source PDFs are rebuilt later.
