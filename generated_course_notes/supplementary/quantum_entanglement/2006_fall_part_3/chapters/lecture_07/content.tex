@@ -1,0 +1,432 @@
+\chapter{Lecture 7: Charged Particles, Field Tensors, and the Relativistic Lorentz Force}
+
+These notes follow Leonard Susskind's lecture closely and are curated by LazyingArt LLC. The lecture begins with a problem already in motion: charged particles move in electric and magnetic fields, but can the Lorentz force law really be made consistent with relativity? The pressure is not merely to decorate an old equation with four-vectors. We must first understand what deserves to be called force, why the magnetic term is structurally different from the electric one, and how electric and magnetic fields can possibly remain parts of one law when different observers disagree about the particle's velocity. The discussion therefore unfolds in a deliberate order: first the left-hand side of the force law is stabilized, then the cross product is rebuilt as an antisymmetric tensor, and only after that do we move into spacetime notation.
+
+\section{From Newtonian Force to the Relativistic Problem}
+
+Susskind begins by recalling why the Newtonian equation
+\begin{equation}
+\mathbf F=m\mathbf a
+\end{equation}
+ever looked invariant in the first place. In Galileo's world, or Newton's world, all inertial observers agree on the acceleration of a particle, on its mass, and therefore on the force. But once the kinematics changes, it would be surprising if the old form of the law survived untouched. Relativity forces us to rethink the concept of force at a deeper level.
+
+There is another piece of motivation here which the lecture states very plainly. If the speed of light were infinite, there would be no magnetic force at all. Magnetic effects are already relativistic effects. That is one reason the magnetic term is the right place to look for structure. It also explains why one should not expect gravitation and electromagnetism to extend relativistically in the same way. At the nonrelativistic level, Newton's inverse-square law and Coulomb's inverse-square law look like close cousins. But relativity treats them very differently. Gravitation does not fit naturally into special relativity; electromagnetism does.
+
+Before rewriting the force law, Susskind cleans up the left-hand side. Because the mass is time independent, we may write
+\begin{equation}
+\mathbf F
+=
+m\frac{d\mathbf v}{dt}
+=
+\frac{d}{dt}(m\mathbf v)
+=
+\frac{d\mathbf p}{dt}.
+\end{equation}
+This is the more durable statement. Force is the time rate of change of momentum.
+
+Now the Lorentz force law can be written, in units where \(c=1\), as
+\begin{equation}
+\frac{d\mathbf p}{dt}
+=
+q\bigl(\mathbf E+\mathbf v\times\mathbf B\bigr).
+\end{equation}
+The lecture emphasizes that once \(c\) has been set equal to \(1\), the nonrelativistic limit is not \(c\to\infty\); it is the limit of small velocity. The electric term already looks like an ordinary vector contribution. The magnetic term is the troublesome one: it depends explicitly on the velocity, and so it carries the most obvious trace of relativity. That is why Susskind does not go to four-vectors immediately. He pauses and asks what the cross product really is.
+
+\section{Re-reading the Cross Product as an Antisymmetric Tensor}
+
+From this point on it is useful to follow the lecture's index conventions. Greek indices such as \(\mu,\nu\) will later run over spacetime components. For the moment we work only in ordinary space, and Latin indices \(m,n\) run over \(1,2,3\).
+
+Take two spatial vectors \(\mathbf A\) and \(\mathbf B\). From them we can build the rank-two tensor
+\begin{equation}
+T_{mn}=A_mB_n.
+\end{equation}
+In three dimensions this has nine components. It is just a matrix made from the components of the two vectors. As it stands, it has no special symmetry. But if we antisymmetrize it,
+\begin{equation}
+A_mB_n-A_nB_m,
+\end{equation}
+then all diagonal entries vanish, and the entries below the diagonal are the negatives of those above the diagonal. So the antisymmetric tensor has only three independent components.
+
+That counting is the whole point. The ordinary cross product also has three components, but three components by themselves do not guarantee that we are looking at a vector; in three dimensions an antisymmetric tensor also has three independent entries. The lecture therefore slows down here. The cross product is not to be thought of first as an arrow perpendicular to two other arrows. It is better to think of it as an antisymmetric tensor, which only in three dimensions may also be identified with a vector.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_07_figure_02.png}
+\caption{Cross product written in antisymmetric-tensor form}
+\end{figure}
+
+The board image preserves the stage on which this identification is being made. Susskind labels the upper-triangular entries by \(C_3\), \(C_2\), and \(C_1\), but the upper-right entry is only a temporary placement. The lecture then cycles the component formulas carefully and corrects the sign.
+
+The corrected component identities are
+\begin{align}
+C_3 &= A_1B_2-A_2B_1, \\
+C_1 &= A_2B_3-A_3B_2, \\
+C_2 &= A_3B_1-A_1B_3.
+\end{align}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_03.png}
+\caption{Corrected component formulas for the cross product}
+\end{figure}
+
+So the clean antisymmetric matrix associated with \(\mathbf C=\mathbf A\times\mathbf B\) is
+\begin{equation}
+\begin{pmatrix}
+0 & C_3 & -C_2 \\
+-C_3 & 0 & C_1 \\
+C_2 & -C_1 & 0
+\end{pmatrix}.
+\end{equation}
+
+This correction is worth keeping visible because the lecture itself does not glide over it. The board first suggests one sign, then the cyclic identities force the correction. That is part of the pedagogical rhythm.
+
+The geometry is also important. An antisymmetric tensor has two indices, so each component is naturally associated with a plane. The \(xy\)-component is identified with the \(z\)-component of the vector, the \(yz\)-component with the \(x\)-component, and so on. In three dimensions we may describe the same object either by the arrow sticking out of a plane or by the plane to which it is perpendicular. In higher dimensions the arrow language no longer survives, but the antisymmetric tensor does. That is why this reformulation is more than a trick: it is the version that generalizes.
+
+\section{The Magnetic Field in Tensor Language}
+
+Only after the cross product has been re-read this way does Susskind return to the magnetic field itself. The magnetic field \(\mathbf B\) may be represented as an ordinary vector, but it may also be represented as an antisymmetric tensor \(B_{mn}\). In the lecture's convention there is an extra minus sign between the tensor entries and the corresponding vector components:
+\begin{equation}
+B_{12}=-B_3,\qquad
+B_{13}=B_2,\qquad
+B_{23}=-B_1.
+\end{equation}
+So the magnetic tensor is
+\begin{equation}
+B_{mn}
+=
+\begin{pmatrix}
+0 & -B_3 & B_2 \\
+B_3 & 0 & -B_1 \\
+-B_2 & B_1 & 0
+\end{pmatrix}.
+\end{equation}
+
+\begin{remark}
+This sign convention is historical rather than inevitable. The invariant object is the antisymmetric tensor. The lecture is explicit that one could equally well have chosen the opposite sign and still been describing the same geometry, provided one kept the convention consistent.
+\end{remark}
+
+Now comes the payoff. Instead of treating \(\mathbf v\times\mathbf B\) as a three-dimensional cross product, we can write its components by contraction. The third component is
+\begin{equation}
+(\mathbf v\times\mathbf B)_3=v_1B_2-v_2B_1.
+\end{equation}
+Using the tensor entries, this becomes
+\begin{equation}
+(\mathbf v\times\mathbf B)_3
+=
+v_1 B_{13}+v_2 B_{23}+v_3 B_{33}.
+\end{equation}
+Since \(B_{33}=0\), this suggests the general pattern
+\begin{equation}
+(\mathbf v\times\mathbf B)_m=v_n B_{nm}.
+\end{equation}
+Thus the magnetic part of the Lorentz force becomes
+\begin{equation}
+F_m^{(\mathrm{mag})}=q\,v_n B_{nm}.
+\end{equation}
+
+This is a very small algebraic step, but it changes the style of the argument completely. The magnetic field is no longer being used as a vector that enters a special three-dimensional product. It is being used as an antisymmetric tensor acting on the velocity.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why does a magnetic field bend the motion without changing the speed?
+
+\paragraph{Answer.} The lecture does not answer this by appealing to the elementary geometric fact that \(\mathbf v\times\mathbf B\) is perpendicular to \(\mathbf v\), even though that fact is true. Instead it answers it in the tensor language just introduced, precisely because that language will survive the later move to four dimensions.
+
+\begin{proposition}
+In a pure magnetic field the square of the speed is constant:
+\begin{equation}
+\frac{d}{dt}(v_m v_m)=0.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Differentiate the square of the speed:
+\begin{equation}
+\frac{d}{dt}(v_m v_m)=2\,\dot v_m v_m.
+\end{equation}
+If the electric field vanishes, the acceleration is proportional to the magnetic force, so up to an overall constant,
+\begin{equation}
+\frac{d}{dt}(v_m v_m)
+\propto
+(\mathbf v\times\mathbf B)_m v_m
+=
+v_n B_{nm} v_m.
+\end{equation}
+Now \(B_{nm}\) is antisymmetric, while \(v_n v_m\) is symmetric in \(n\) and \(m\). Therefore the contraction vanishes:
+\begin{equation}
+v_n B_{nm} v_m=0.
+\end{equation}
+Hence
+\begin{equation}
+\frac{d}{dt}(v_m v_m)=0.
+\end{equation}
+\end{proof}
+
+This is exactly the sort of argument Susskind wants. One could have used a familiar theorem about three-dimensional cross products, but that would hide the mechanism. Here the mechanism is explicit: symmetry contracted with antisymmetry gives zero.
+
+There is also a small but important nuance in the lecture. The algebra above did not actually use the assumption that the magnetic field itself is time independent. What changes in practice when \(\mathbf B\) depends on time is that a time-dependent magnetic field produces an electric field, and the electric field can do work. So the real obstruction to constant speed is the appearance of \(\mathbf E\), not the loss of antisymmetry.
+
+\section{Why Electric and Magnetic Fields Must Mix Between Frames}
+
+At this stage the lecture cashes in the tensor detour and turns back to physics. If the same laws are to hold in every inertial frame, then electric and magnetic fields cannot remain separate under a change of frame. The lecture says that this is by now more or less obvious, and then immediately gives the cleanest example.
+
+Take a magnetic field along one axis and let a charged particle move along a second axis. The force then points along the third. It is the same three-axis picture that every student of the Lorentz force knows, but now it is used as a test of frame dependence.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (0,0) -- (3.5,0);
+\draw[->] (0,0) -- (-2.1,2.5);
+\draw[->] (0,0) -- (0,3.0);
+
+\node at (3.8,0) {$x$};
+\node at (-2.4,2.8) {$y$};
+\node at (0.3,3.3) {$z$};
+
+\draw[->, line width=1pt] (0,0) -- (2.5,0);
+\node at (1.35,-0.35) {$\mathbf v$};
+
+\draw[->, line width=1pt] (0,0) -- (-1.4,1.7);
+\node at (-1.0,1.1) {$\mathbf B$};
+
+\draw[->, line width=1pt] (0,0) -- (0,2.2);
+\node at (1.0,1.8) {$\mathbf F,\ \mathbf E'$};
+\end{tikzpicture}
+\caption{The lecture's three-axis thought experiment: the particle moves along one axis, the magnetic field points along a second, and the force appears along the third; in the co-moving frame that same force must come from an electric field}
+\end{figure}
+
+Let us call the particle's direction of motion the \(x\)-axis and the magnetic field direction the \(y\)-axis. Then \(\mathbf v\times\mathbf B\) points along the \(z\)-axis, so the particle accelerates along \(z\).
+
+Now introduce a second observer moving with the particle.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} If I move with the particle so that its velocity vanishes, where can the force come from?
+
+\paragraph{Answer.} In the co-moving frame the particle is instantaneously at rest, so the magnetic term \(q\,\mathbf v\times\mathbf B\) cannot contribute at that instant. But in the slow-velocity Newtonian limit the acceleration is an invariant quantity, so the second observer must still see the same acceleration. Therefore the force must be blamed on something else. If the Lorentz force law is to keep its form in every frame, there is only one candidate left: an electric field. Thus a frame which began with no electric field at all must, after the change of frame, contain an electric field pointing along the direction of the force.
+
+That is the lecture's cleanest physical motivation for unifying \(\mathbf E\) and \(\mathbf B\). The argument is not yet tensor algebra; it is consistency of description. One frame attributes the force to magnetism, the co-moving frame must attribute it to electricity, and so the two fields have to transform into one another.
+
+This is also the right moment to enlarge the framework. We now have six field components altogether, and we need a single spacetime object in which they fit naturally.
+
+\section{The Electromagnetic Field Tensor}
+
+The lecture now asks for an object with six independent components that can hold the three electric and three magnetic field components at once. Susskind says, somewhat theatrically, that the natural such object in four dimensions is an antisymmetric tensor, and then immediately corrects the literal overstatement: one could certainly write down six scalars, or a vector and two scalars, but those would miss the point. The natural geometrical object with six independent components is the antisymmetric tensor.
+
+To remain close to the blackboard, it is best to preserve the lecture's ordering of indices as \(1,2,3,0\) rather than the more common \(0,1,2,3\). In that ordering the electromagnetic field tensor is
+\begin{equation}
+F_{\mu\nu}
+=
+\begin{pmatrix}
+0 & -B_3 & B_2 & E_1 \\
+B_3 & 0 & -B_1 & E_2 \\
+-B_2 & B_1 & 0 & E_3 \\
+-E_1 & -E_2 & -E_3 & 0
+\end{pmatrix},
+\qquad
+\mu,\nu=(1,2,3,0).
+\end{equation}
+The \(3\times 3\) spatial block is exactly the magnetic tensor we have already written down. The entries involving one spatial index and the time index carry the electric field.
+
+\begin{remark}
+The lecture is relaxed about upstairs and downstairs positions when it is only the three spatial components that are being named. The essential content is the antisymmetric tensor itself. What matters is not to mix conventions carelessly once signs begin to enter.
+\end{remark}
+
+This is the first genuine spacetime object in the chapter. It is also the right object conceptually: since electric and magnetic fields mix under boosts, they must be components of one and the same tensor. The question that now replaces the old Newtonian question is clear: what four-vector force law can we build from \(F_{\mu\nu}\), the charge \(q\), and the motion of the particle?
+
+\section{Four-Velocity, Orthogonality, and the Covariant Force Law}
+
+The lecture answers by first recalling the kinematics. The four-velocity is defined by
+\begin{equation}
+u^\mu=\frac{dx^\mu}{d\tau},
+\end{equation}
+where \(\tau\) is proper time. In the lecture's ordering its components are
+\begin{equation}
+u^\mu=\gamma(v_x,v_y,v_z,1),
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\end{equation}
+The four-momentum is then
+\begin{equation}
+p^\mu = m u^\mu.
+\end{equation}
+Because \(x^\mu\) is a four-vector and \(\tau\) is an invariant, \(u^\mu\) is a four-vector; therefore \(p^\mu\) is a four-vector; therefore
+\begin{equation}
+\frac{dp^\mu}{d\tau}
+\end{equation}
+is the natural relativistic left-hand side. The Newtonian \(d\mathbf p/dt\) is replaced by a proper-time derivative because we are now working in spacetime.
+
+Before proposing any force law, Susskind proves a kinematic constraint. The four-velocity satisfies
+\begin{equation}
+u_\mu u^\mu = 1.
+\end{equation}
+Differentiate this along the world line:
+\begin{align}
+0
+&=
+\frac{d}{d\tau}(u_\mu u^\mu) \\
+&=
+\frac{du_\mu}{d\tau}u^\mu + u_\mu\frac{du^\mu}{d\tau} \\
+&=
+2\,u_\mu\frac{du^\mu}{d\tau}.
+\end{align}
+Since \(p^\mu=mu^\mu\), we may rewrite this as
+\begin{equation}
+f_\mu u^\mu = 0,
+\qquad
+f^\mu \equiv \frac{dp^\mu}{d\tau}.
+\end{equation}
+So the four-force must be orthogonal to the four-velocity.
+
+This is the exact four-dimensional analogue of the fact proved earlier for a magnetic field: the relevant force must contract to zero with the velocity. The lecture therefore uses exactly the same trick as before.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_05.png}
+\caption{Antisymmetric-tensor force ansatz and vanishing contraction}
+\end{figure}
+
+What is most secure in the board image is the contraction
+\begin{equation}
+F^{\mu\nu}u_\nu u_\mu=0.
+\end{equation}
+The left edge of the force ansatz is cropped, so the full equation is best written in the cautious standard form supported by the transcript:
+\begin{equation}
+f^\mu = q F^{\mu\nu}u_\nu.
+\end{equation}
+Then
+\begin{equation}
+f^\mu u_\mu
+=
+qF^{\mu\nu}u_\nu u_\mu
+=
+0,
+\end{equation}
+because \(F^{\mu\nu}\) is antisymmetric, while \(u_\nu u_\mu\) is symmetric.
+
+Now the lecture does something characteristic. It does not declare victory as soon as the formula looks covariant. It checks the low-velocity limit first. Writing out the \(x\)-component, and following the lecture's sign convention and relaxed treatment of purely spatial upper and lower indices, one finds
+\begin{equation}
+\frac{dp_x}{d\tau}
+=
+q\bigl(F_{xy}u_y+F_{xz}u_z+F_{x0}u_0\bigr)
+=
+q\bigl(E_xu_0+B_3u_y-B_2u_z\bigr).
+\end{equation}
+If the motion is slow, then \(d\tau\approx dt\), \(u_0\approx 1\), and \(u_i\approx v_i\). Therefore
+\begin{equation}
+\frac{dp_x}{dt}
+=
+q\bigl(E_x+v_yB_3-v_zB_2\bigr),
+\end{equation}
+which is exactly the \(x\)-component of
+\begin{equation}
+\frac{d\mathbf p}{dt}
+=
+q\bigl(\mathbf E+\mathbf v\times\mathbf B\bigr).
+\end{equation}
+So the covariant force law reproduces the ordinary Lorentz law in the nonrelativistic limit.
+
+At this point Susskind tightens the argument. The equation should not merely work when \(\gamma\approx 1\). The proper-time derivative and the four-velocity components themselves contain \(\gamma\):
+\begin{equation}
+\frac{dp^\mu}{d\tau}
+=
+\gamma\,\frac{dp^\mu}{dt},
+\qquad
+u_i=\gamma v_i,
+\qquad
+u_0=\gamma.
+\end{equation}
+The same factor \(\gamma\) therefore appears on both sides and cancels. What remains is again the ordinary-looking Lorentz force law,
+\begin{equation}
+\frac{d\mathbf p}{dt}
+=
+q\bigl(\mathbf E+\mathbf v\times\mathbf B\bigr),
+\end{equation}
+but now the momentum is not \(m\mathbf v\); it is
+\begin{equation}
+\mathbf p = m\gamma \mathbf v.
+\end{equation}
+That is where the relativity is hiding.
+
+The lecture then pauses over an audience question: is this mathematics or physics? The right answer is that it is both, but not in equal proportions. The mathematical part is the tensor algebra. The physical input is heavy. We assume that the same laws hold in every inertial frame, and we assume that the equations of motion are second-order rather than third- or fourth-order. Those are physical statements about how nature predicts the future, not mere formal conveniences.
+
+\section{Transformation Laws and the Wave-Equation Bridge}
+
+Once the covariant force law is in place, the lecture turns to the transformation law for the field tensor itself. Rather than writing down the full general tensor-transformation formula abstractly, Susskind shows how to think about it. First recall the coordinate transformation for a boost along the \(1\)-axis:
+\begin{equation}
+x_1'=\gamma(x_1-vx_0),
+\qquad
+x_0'=\gamma(x_0-vx_1),
+\qquad
+x_2'=x_2,
+\qquad
+x_3'=x_3.
+\end{equation}
+All vectors transform in this way. Therefore, if we know how a product of two vectors transforms, we know how a rank-two tensor transforms.
+
+The first example is the component parallel to the boost. Because an antisymmetric tensor has vanishing diagonal entries and satisfies \(F_{10}=-F_{01}\), the transformation collapses to
+\begin{equation}
+F'_{01}=F_{01}.
+\end{equation}
+So the component of the electric field parallel to the direction of motion is unchanged. That is the easy case.
+
+The more interesting case is transverse. For a boost along the \(1\)-axis the lecture works out the transformed \(02\)-component and finds, in the lecture's convention,
+\begin{equation}
+F'_{02}
+=
+\gamma\bigl(F_{02}-vF_{12}\bigr)
+=
+\gamma\bigl(E_2+vB_3\bigr).
+\end{equation}
+Thus
+\begin{equation}
+E_2'=\gamma(E_2+vB_3).
+\end{equation}
+The sign here belongs to the lecture's convention and should be read that way. The physical content is simple and important: a transverse electric field mixes with a magnetic field under a boost, and similarly the magnetic field components mix with electric ones. So if a field is purely magnetic in one frame, a moving observer generally sees both electric and magnetic fields.
+
+The later questions in the lecture sharpen this point. One cannot in general transform away a pure magnetic field merely by changing frame. If both \(\mathbf E\) and \(\mathbf B\) are present, transformed pieces may cancel. But if one begins with only a magnetic field, the transformed field still has a magnetic part.
+
+The lecture then pivots away from particle mechanics and toward fields. Let \(\phi(x)\) be a scalar field. Its derivative
+\begin{equation}
+\partial_\mu\phi=\frac{\partial\phi}{\partial x^\mu}
+\end{equation}
+forms the covariant components of a four-vector. This is one of the main closing lessons: derivatives of fields carry indices, and those indices matter. In the signature used throughout the lecture, raising the index changes the sign of the spatial components but leaves the time component alone:
+\begin{equation}
+\partial^\mu\phi
+=
+\left(
+-\frac{\partial\phi}{\partial x^1},
+-\frac{\partial\phi}{\partial x^2},
+-\frac{\partial\phi}{\partial x^3},
+\frac{\partial\phi}{\partial x^0}
+\right).
+\end{equation}
+More generally, every differentiation adds a lower index. If we differentiate a vector, we obtain a tensor; if we differentiate a tensor, we obtain an object with one more lower index.
+
+This is exactly the preparation needed for wave equations. The lecture wants the wave equation to be manifestly Lorentz invariant, so its left-hand side should be a scalar. The simplest possibility is therefore
+\begin{equation}
+\partial^\mu\partial_\mu\phi=0.
+\end{equation}
+Written out, it is
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-
+\frac{\partial^2\phi}{\partial x^2}
+-
+\frac{\partial^2\phi}{\partial y^2}
+-
+\frac{\partial^2\phi}{\partial z^2}
+=
+0.
+\end{equation}
+This is the lecture's bridge, not its destination. Susskind says very clearly that the goal is Maxwell's equations, but before we write them covariantly we must understand how derivatives of fields behave. The scalar wave equation is the simplest example of that structure.
+
+\section{Summary}
+
+The lecture begins by unsettling the Newtonian notion of force and ends by rebuilding it in a relativistic language. First we replace \(m\mathbf a\) by the more robust definition \(d\mathbf p/dt\). Then the magnetic term forces a detour: the cross product is re-read as an antisymmetric tensor, its three independent components are matched to a vector only after a careful correction of signs, and the same tensor language explains why a magnetic field bends motion without changing the speed. That detour is not ornamental. It prepares the central relativistic move.
+
+Once we notice that a particle deflected by a magnetic field in one frame must be deflected by an electric field in its co-moving frame, the six field components naturally assemble into the electromagnetic tensor \(F_{\mu\nu}\). Four-velocity and four-momentum then lead to the kinematic constraint \(f_\mu u^\mu=0\), and the simplest way to satisfy it is to build the force from an antisymmetric tensor:
+\begin{equation}
+f^\mu=qF^{\mu\nu}u_\nu.
+\end{equation}
+Its low-velocity limit reproduces the ordinary Lorentz force law, while the relativistic correction is carried by the momentum \(\mathbf p=m\gamma\mathbf v\). From there the lecture opens outward rather than concluding: boosts mix electric and magnetic fields, derivatives of scalar fields furnish covariant vectors, and the simplest Lorentz-invariant wave equation appears as the doorway to Maxwell's equations.
