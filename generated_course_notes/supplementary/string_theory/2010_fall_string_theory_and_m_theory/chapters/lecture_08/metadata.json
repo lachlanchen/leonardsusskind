@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory",
+  "transcript_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory/102 - Lecture 8 \uff5c String Theory and M-Theory [s43SMaZHa50].md",
+  "video_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory/102 - Lecture 8 \uff5c String Theory and M-Theory [s43SMaZHa50].mkv",
+  "lecture_number": 8,
+  "lecture_slug": "lecture_08",
+  "lecture_title": "Lecture 8 : String Theory and M-Theory",
+  "assets": [
+    {
+      "name": "lecture_08_figure_02.png",
+      "timestamp_seconds": 342.76,
+      "timestamp_hhmmss": "00:05:42.760",
+      "source_candidate": "lecture_08_window_03_candidate_04_000542760.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the strongest of the four because it reveals the largest and most complete portion of the left-hand blackboard column. The earlier frames are more cropped and show less of the lower material. Although Susskind still occupies the right side of the image, the visible equations on the left are readable enough to support note writing and later clean typesetting.",
+      "subtitle_excerpt": "These are not wave equations because",
+      "segment_start_seconds": 341.0,
+      "segment_start_hhmmss": "00:05:41.000",
+      "segment_end_seconds": 343.0,
+      "segment_end_hhmmss": "00:05:43.000",
+      "caption_hint": "electrostatic field equations on the board"
+    },
+    {
+      "name": "lecture_08_figure_03.png",
+      "timestamp_seconds": 2205.3,
+      "timestamp_hhmmss": "00:36:45.300",
+      "source_candidate": "lecture_08_window_04_candidate_01_003645300.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 is the best of the four because it shows the full equation stack most cleanly while keeping Susskind's hand out of the main writing. The later frames have the pointing finger closer to or partially overlapping the definitions of \\(u\\) and \\(v\\). This frame is sharp, complete, and directly useful for note writing.",
+      "subtitle_excerpt": "Laplace's equations say that the second derivative",
+      "segment_start_seconds": 2205.0,
+      "segment_start_hhmmss": "00:36:45.000",
+      "segment_end_seconds": 2207.5,
+      "segment_end_hhmmss": "00:36:47.500",
+      "caption_hint": "complex squaring map on the board"
+    },
+    {
+      "name": "lecture_08_figure_04.png",
+      "timestamp_seconds": 4253.1,
+      "timestamp_hhmmss": "01:10:53.100",
+      "source_candidate": "lecture_08_window_05_candidate_04_011053100.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 04 is the best choice because it preserves both kinds of note-relevant evidence present in this moment: the left-hand worldsheet sketch labeled by \\(X^\\mu(\\sigma,\\tau)\\), and the most developed version of the right-hand writing where the measure \\(d\\sigma\\,d\\tau\\) has become visible. The earlier frames catch the writing mid-formation and are less complete.",
+      "subtitle_excerpt": "the integral over d sigma and d tau",
+      "segment_start_seconds": 4250.46,
+      "segment_start_hhmmss": "01:10:50.460",
+      "segment_end_seconds": 4253.46,
+      "segment_end_hhmmss": "01:10:53.460",
+      "caption_hint": "worldsheet integral measure on the board"
+    },
+    {
+      "name": "lecture_08_figure_05.png",
+      "timestamp_seconds": 4923.82,
+      "timestamp_hhmmss": "01:22:03.820",
+      "source_candidate": "lecture_08_window_06_candidate_01_012203820.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 is the clearest and most useful frame. It shows the full board layout at this moment: the large Euclidean worldsheet weight across the top and, below it, the product of vertex-operator factors that Susskind is using to describe momentum injection. The later candidates are very similar, but this one is slightly sharper and keeps the writing least disturbed by his posture and shadow.",
+      "subtitle_excerpt": "They inject the flow of momentum into the diagram",
+      "segment_start_seconds": 4923.46,
+      "segment_start_hhmmss": "01:22:03.460",
+      "segment_end_seconds": 4926.46,
+      "segment_end_hhmmss": "01:22:06.460",
+      "caption_hint": "worldsheet weight with vertex insertions"
+    }
+  ]
+}
