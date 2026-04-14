@@ -1,0 +1,52 @@
+{
+  "course_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory",
+  "transcript_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory/104 - Lecture 10 \uff5c String Theory and M-Theory [L1_3Xp3rT3c].md",
+  "video_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory/104 - Lecture 10 \uff5c String Theory and M-Theory [L1_3Xp3rT3c].mkv",
+  "lecture_number": 10,
+  "lecture_slug": "lecture_10",
+  "lecture_title": "Lecture 10 : String Theory and M-Theory",
+  "assets": [
+    {
+      "name": "lecture_10_figure_03.png",
+      "timestamp_seconds": 1958.76,
+      "timestamp_hhmmss": "00:32:38.760",
+      "source_candidate": "lecture_10_window_03_candidate_04_003238760.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the cleanest and least occluded view of the board writing. Susskind has moved furthest out of the way, so both the upper and lower integral expressions are most legible, and the partial circular diagram at the right edge remains visible as supporting layout evidence.",
+      "subtitle_excerpt": "what's the integral of a derivative?",
+      "segment_start_seconds": 1957.0,
+      "segment_start_hhmmss": "00:32:37.000",
+      "segment_end_seconds": 1959.0,
+      "segment_end_hhmmss": "00:32:39.000",
+      "caption_hint": "integrals of worldsheet derivatives"
+    },
+    {
+      "name": "lecture_10_figure_04.png",
+      "timestamp_seconds": 2745.24,
+      "timestamp_hhmmss": "00:45:45.240",
+      "source_candidate": "lecture_10_window_05_candidate_01_004545240.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame preserves the most complete and legible board content in the window. It shows both the off-diagonal component mapping on the left and the separate g_{55} entry with the scalar symbol beneath it, while Susskind is not blocking the key notation as much as in the later candidates.",
+      "subtitle_excerpt": "The metric tensor in five",
+      "segment_start_seconds": 2745.0,
+      "segment_start_hhmmss": "00:45:45.000",
+      "segment_end_seconds": 2747.0,
+      "segment_end_hhmmss": "00:45:47.000",
+      "caption_hint": "five-dimensional metric components"
+    },
+    {
+      "name": "lecture_10_figure_05.png",
+      "timestamp_seconds": 4102.76,
+      "timestamp_hhmmss": "01:08:22.760",
+      "source_candidate": "lecture_10_window_06_candidate_04_010822760.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame preserves the full cylinder-style diagram on the left and the most finished state of the equation on the right. The derivative \\u2202x/\\u2202\\sigma is complete, and the equals sign has just been added, making it the best bridge between the visual setup and the boundary-condition statement in the subtitle.",
+      "subtitle_excerpt": "dx by d sigma equals 0",
+      "segment_start_seconds": 4101.0,
+      "segment_start_hhmmss": "01:08:21.000",
+      "segment_end_seconds": 4103.0,
+      "segment_end_hhmmss": "01:08:23.000",
+      "caption_hint": "cylinder sketch and sigma derivative"
+    }
+  ]
+}
