@@ -1,0 +1,52 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_theoretical_minimum",
+  "transcript_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/117 - Classical Mechanics \uff5c Lecture 4 [ojEwHlyty4Q].md",
+  "video_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/117 - Classical Mechanics \uff5c Lecture 4 [ojEwHlyty4Q].mkv",
+  "lecture_number": 4,
+  "lecture_slug": "lecture_04",
+  "lecture_title": "Classical Mechanics : Lecture 4",
+  "assets": [
+    {
+      "name": "lecture_04_figure_02.png",
+      "timestamp_seconds": 888.475,
+      "timestamp_hhmmss": "00:14:48.475",
+      "source_candidate": "lecture_04_window_03_candidate_02_001448475.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the clearest and most complete view of the board expression. The full kinetic-minus-potential form is visible and legible, with no pointing hand or body blocking the notation. The neighboring candidates are either partially occluded by Susskind or include a gesturing hand that distracts from the equation.",
+      "subtitle_excerpt": "the derivative of a Lagrangian with respect to the velocity",
+      "segment_start_seconds": 887.32,
+      "segment_start_hhmmss": "00:14:47.320",
+      "segment_end_seconds": 890.36,
+      "segment_end_hhmmss": "00:14:50.360",
+      "caption_hint": "one-dimensional Lagrangian"
+    },
+    {
+      "name": "lecture_04_figure_03.png",
+      "timestamp_seconds": 1136.299,
+      "timestamp_hhmmss": "00:18:56.299",
+      "source_candidate": "lecture_04_window_04_candidate_04_001856299.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the most finished and still legible board state within the window. It preserves the full two-coordinate Lagrangian at the top, including the potential dependence on q_1-q_2, and it also captures the lower momentum-derivative line after the equals sign has been added. The earlier candidates are slightly cleaner but less complete, while this one is more useful for reconstructing the derivation.",
+      "subtitle_excerpt": "is equal to the derivative of the Lagrangian minus,",
+      "segment_start_seconds": 1132.92,
+      "segment_start_hhmmss": "00:18:52.920",
+      "segment_end_seconds": 1136.76,
+      "segment_end_hhmmss": "00:18:56.760",
+      "caption_hint": "two-coordinate Lagrangian"
+    },
+    {
+      "name": "lecture_04_figure_04.png",
+      "timestamp_seconds": 1241.091,
+      "timestamp_hhmmss": "00:20:41.091",
+      "source_candidate": "lecture_04_window_05_candidate_03_002041091.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "so in calculating the derivative of the potential",
+      "segment_start_seconds": 1238.4,
+      "segment_start_hhmmss": "00:20:38.400",
+      "segment_end_seconds": 1242.54,
+      "segment_end_hhmmss": "00:20:42.540",
+      "caption_hint": "so in calculating the derivative of the potential"
+    }
+  ]
+}
