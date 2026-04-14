@@ -1,0 +1,387 @@
+\chapter{Charged Particles, Gauge Invariance, and Poisson Brackets}
+
+These companion notes follow Leonard Susskind's lecture closely, with the board rhythm documented by the preserved lecture frames curated by LazyingArt LLC and Video2Book. The lecture returns to a charged particle in an electromagnetic field for a precise reason: the Hamiltonian formulation is not intuitive here, canonical momentum behaves in a surprising way, and once an electric field is added one encounters the transverse drift known as the Hall effect. The real arc of the lecture is narrower than a general introduction to electromagnetism: we begin with the Lorentz force, discover that the action principle forces us to use potentials, confront the redundancy of that description through gauge invariance, and then exploit the formalism before turning suddenly, but intentionally, to Poisson brackets.
+
+\section{Why Revisit the Charged Particle?}
+
+We are not studying the dynamics of the electromagnetic field itself. The electric and magnetic fields are treated as given background fields, taken to be independent of time although they may vary from point to point in space. Within that fixed external environment, the charged particle is a particularly good example because the same physics can be viewed in several different languages, and the differences between those languages are unusually instructive.
+
+The lecture begins by stepping back and listing the forms of mechanics already on the table:
+\begin{enumerate}
+\item equations of motion,
+\item the principle of least action,
+\item the Lagrange equations,
+\item the Hamiltonian formulation.
+\end{enumerate}
+
+This is not mere review. The point is that differential equations by themselves are too thin. They tell us how coordinates change, but they do not automatically reveal the deeper structural features that physics cares about: energy, momentum, symmetry, phase-space flow, and eventually the bridge to quantum mechanics. The Hamiltonian form is the least intuitive of the four, but it is the one that will later talk most naturally to quantum mechanics and to the flow of information through phase space. The charged particle in a magnetic field is therefore the right place to see both the power and the strangeness of the formalism.
+
+\section{From Equations of Motion to the Planar Lorentz Force}
+
+For this lecture we restrict attention to motion in the plane of the board. The magnetic field points perpendicular to that plane, and the electric field, when we restore it, will lie in the plane. A nonrelativistic charged particle then obeys the Lorentz-force law
+\begin{equation}
+m\ddot{\mathbf x}=q\mathbf E+q\,\dot{\mathbf x}\times\mathbf B.
+\end{equation}
+In other unit systems one often sees an explicit factor of \(c\) in the magnetic term; the lecture suppresses it by a choice of units.
+
+If \(\mathbf B\) is perpendicular to the plane and \(\dot{\mathbf x}\) lies in the plane, then \(\dot{\mathbf x}\times\mathbf B\) again lies in the plane. So the whole motion can be studied in two dimensions without losing the essential structure.
+
+The magnetic term is velocity-dependent, but it is not a friction force. The cross product is perpendicular to the velocity, and therefore
+\begin{equation}
+\mathbf v\cdot(\mathbf v\times\mathbf B)=0.
+\end{equation}
+This is the compact statement behind the lecture's catch phrase: magnetic fields do no work. They bend the trajectory, but they do not change the speed, and so they do not change the kinetic energy.
+
+The electric force is more ordinary. In the static situation considered here it is conservative, and so it belongs to the familiar language of potential energy:
+\begin{equation}
+\mathbf F=-\nabla U.
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.56\textwidth]{lecture_08_figure_03.png}
+\caption{Conservative force written as a gradient.}
+\end{figure}
+
+This is the point at which the lecture imports a piece of ordinary mechanics into the electromagnetic story. The electric field behaves like the conservative forces we already know how to encode; the magnetic field does not.
+
+\section{Potentials and the Action}
+
+To move from \(F=ma\) to least action, one needs more structure. The electric field can be encoded by a scalar potential, but the magnetic field requires a vector potential. Because the magnetic field has zero divergence, one may write it locally as the curl of another vector:
+\begin{align}
+\mathbf B &= \nabla\times\mathbf A, &
+\mathbf E &= -\nabla V, &
+U &= qV.
+\end{align}
+The last equation simply says that \(V\) is potential energy per unit charge.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_08_figure_04.png}
+\caption{Vector potential, electric potential, and \(U=qV\).}
+\end{figure}
+
+The order matters. First the magnetic field is written as a curl, then the electric field as a gradient, and only then is the particle's potential energy identified as \(qV\). That is exactly the order in which the lecture prepares the action.
+
+For a particle moving in the \(x\)-\(y\) plane, the action is written as
+\begin{equation}
+S=\int \frac12 m(\dot x^2+\dot y^2)\,dt+q\int A_i\,dx_i-q\int V\,dt.
+\end{equation}
+The first term is the kinetic term. The last term is the familiar scalar-potential contribution. The middle term is the new one: the magnetic field enters through a line integral of the vector potential along the trajectory.
+
+At first sight \(A_i\,dx_i\) does not look like the integral of an ordinary Lagrangian, since it is written in terms of infinitesimal displacements rather than velocities. But that is easily repaired:
+\begin{equation}
+A_i\,dx_i=A_i\,\dot x_i\,dt,
+\end{equation}
+and therefore the same action can be rewritten as
+\begin{equation}
+S=\int \left[\frac12 m(\dot x^2+\dot y^2)+qA_i\dot x_i-qV\right]dt.
+\end{equation}
+Equivalently,
+\begin{equation}
+L=\frac12 m(\dot x^2+\dot y^2)+q\,\mathbf A\cdot\mathbf v-qV.
+\end{equation}
+
+The lecture pauses here to note a suggestive symmetry: the spatial pieces \(A_i\,dx_i\) and the temporal piece \(V\,dt\) are beginning to line up as though they were components of a single space-time object. He does not pursue relativity at this point, but the form of the action is already pointing in that direction.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_08_figure_05.png}
+\caption{Electromagnetic action arranged as a Lagrangian integral.}
+\end{figure}
+
+\subsection{Question \& Answer}
+
+Question. Why must the action use \(\mathbf A\) if the motion depends only on \(\mathbf B\)?
+
+Answer. This is the first real conceptual obstacle of the lecture. The Lorentz-force equation depends only on \(\mathbf E\) and \(\mathbf B\), and in particular the magnetic part depends only on \(\mathbf B\). Nevertheless, the action cannot be written directly in terms of \(\mathbf B\). To obtain a least-action formulation one must introduce the vector potential \(\mathbf A\).
+
+That would be contradictory if \(\mathbf A\) represented extra physical content. But it does not. The description is redundant:
+\begin{equation}
+\mathbf A\longrightarrow \mathbf A+\nabla\lambda
+\end{equation}
+does not change the magnetic field, because
+\begin{equation}
+\nabla\times(\nabla\lambda)=0.
+\end{equation}
+In the static setting of the lecture, the Lagrangian changes by
+\begin{equation}
+q\,\nabla\lambda\cdot\mathbf v
+=
+q\,\frac{d\lambda}{dt},
+\end{equation}
+which is a total time derivative. So the Lagrangian changes, but the Euler-Lagrange equations do not. That is the resolution: the action uses \(\mathbf A\), but only through a gauge-redundant description whose observable content collapses back to \(\mathbf B\).
+
+\section{Deriving the Lorentz Force and Exposing Canonical Momentum}
+
+The lecture does not leave the Lagrangian as a formal gesture. It checks the claim directly by deriving the Lorentz force back from it. Write
+\begin{equation}
+L=\frac12 m(\dot x^2+\dot y^2)+q(A_x\dot x+A_y\dot y)-qV(x,y).
+\end{equation}
+We concentrate on the \(x\)-component. The canonical momentum conjugate to \(x\) is
+\begin{equation}
+p_x=\frac{\partial L}{\partial \dot x}=m\dot x+qA_x.
+\end{equation}
+Already something unexpected has happened: canonical momentum is not just \(m\dot x\).
+
+Now apply the Euler-Lagrange equation:
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial \dot x}=\frac{\partial L}{\partial x}.
+\end{equation}
+The left-hand side is
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial \dot x}
+=
+m\ddot x+q\frac{dA_x}{dt},
+\end{equation}
+and because the fields are time-independent but spatially varying, the total derivative of \(A_x\) along the trajectory is
+\begin{equation}
+\frac{dA_x}{dt}
+=
+\frac{\partial A_x}{\partial x}\dot x
++
+\frac{\partial A_x}{\partial y}\dot y.
+\end{equation}
+On the other side,
+\begin{equation}
+\frac{\partial L}{\partial x}
+=
+q\frac{\partial A_x}{\partial x}\dot x
++
+q\frac{\partial A_y}{\partial x}\dot y
+-
+q\frac{\partial V}{\partial x}.
+\end{equation}
+Putting these together,
+\begin{align}
+m\ddot x
+&=
+q\left(\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right)\dot y
+-q\frac{\partial V}{\partial x} \\
+&= qB_z\,\dot y+qE_x.
+\end{align}
+Here we used
+\begin{equation}
+B_z=\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y},
+\qquad
+E_x=-\frac{\partial V}{\partial x}.
+\end{equation}
+This is exactly the \(x\)-component of the Lorentz-force law. The \(y\)-component works the same way.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_08_figure_06.png}
+\caption{Pointing to the \(\dot x\)-dependent term in the Lagrangian.}
+\end{figure}
+
+Now comes the surprise the lecture wanted to foreground from the beginning. Since
+\begin{equation}
+p_x=m\dot x+qA_x,
+\end{equation}
+canonical momentum depends explicitly on the vector potential and therefore changes under a gauge transformation. It is not gauge invariant, and in that sense it is not the directly measurable mechanical momentum. The formalism is telling us something stranger: the conserved canonical quantity in a magnetic field is not the naive momentum one would have expected.
+
+\section{Uniform Magnetic Field and the Meaning of the Conserved Momentum}
+
+To see what canonical momentum is really measuring, the lecture specializes to a uniform magnetic field pointing into the board. Then \(B_z=B\) is constant, and one may choose many different vector potentials that generate the same field. The lecture first writes several possibilities and then settles on the pair actually used in the later derivation:
+\begin{equation}
+A_x=By,\qquad A_y=0,
+\end{equation}
+and
+\begin{equation}
+A_x=0,\qquad A_y=-Bx.
+\end{equation}
+These are two gauges for the same magnetic field.
+
+Take the first gauge and, for the moment, turn off the electric field. Then
+\begin{equation}
+L=\frac12 m(\dot x^2+\dot y^2)+qBy\,\dot x.
+\end{equation}
+The canonical momenta are
+\begin{equation}
+p_x=m\dot x+qBy,
+\qquad
+p_y=m\dot y.
+\end{equation}
+Because the Lagrangian does not depend on \(x\), \(p_x\) is conserved. If we choose the particularly simple case \(p_x=0\), we immediately learn that
+\begin{equation}
+\dot x=-\frac{qB}{m}\,y.
+\end{equation}
+
+Now switch to the second gauge:
+\begin{equation}
+L=\frac12 m(\dot x^2+\dot y^2)-qBx\,\dot y,
+\end{equation}
+so
+\begin{equation}
+p_y=m\dot y-qBx.
+\end{equation}
+This time the Lagrangian does not depend on \(y\), so \(p_y\) is conserved. In the special case \(p_y=0\),
+\begin{equation}
+\dot y=\frac{qB}{m}\,x.
+\end{equation}
+
+The lecture is very explicit that this is an odd kind of logic. One uses one gauge to read off the \(x\)-equation and another gauge to read off the \(y\)-equation. That would be illegitimate if the gauges described different physics. But the motion itself is gauge-independent, so the two pieces of information may be combined.
+
+\subsection{Question \& Answer}
+
+Question. What is the conserved momentum actually measuring in a uniform magnetic field?
+
+Answer. If we combine the two gauge-invariant velocity relations,
+\begin{equation}
+\dot x=-\frac{qB}{m}\,y,
+\qquad
+\dot y=\frac{qB}{m}\,x,
+\end{equation}
+we recognize the structure of circular motion. Indeed, take the ansatz
+\begin{equation}
+x=r\cos(\omega t),
+\qquad
+y=r\sin(\omega t).
+\end{equation}
+Then
+\begin{equation}
+\dot x=-r\omega\sin(\omega t)=-\omega y,
+\qquad
+\dot y=r\omega\cos(\omega t)=\omega x.
+\end{equation}
+Comparing with the conserved-momentum equations gives the cyclotron frequency
+\begin{equation}
+\omega=-\frac{qB}{m},
+\end{equation}
+up to the sign convention fixed by the orientation of \(B\) and the sign of the charge.
+
+So far the circle is centered at the origin. But a uniform magnetic field does not single out the origin. We may shift the orbit to
+\begin{equation}
+x=x_0+r\cos(\omega t),
+\qquad
+y=y_0+r\sin(\omega t),
+\end{equation}
+without changing \(\dot x\) or \(\dot y\). Substituting into the conserved quantities and using \(\omega=-qB/m\), the time-dependent terms cancel and one finds
+\begin{equation}
+p_x=qB\,y_0,
+\qquad
+p_y=-qB\,x_0.
+\end{equation}
+This is the lecture's payoff. The conserved canonical momenta do not describe straight-line translation of the particle. They encode the fixed guiding-center coordinates of the circular orbit. Momentum conservation has been reinterpreted in a completely unfamiliar way: what remains fixed is the center about which the particle circles.
+
+\section{Electric Field, Drift, and the Hall Effect}
+
+Now the lecture restores the electric field and asks what changes. To produce a constant electric field in the \(+x\)-direction, we may choose
+\begin{equation}
+V(x)=-Ex,
+\end{equation}
+so that
+\begin{equation}
+\mathbf E=-\nabla V=E\,\hat{\mathbf x}.
+\end{equation}
+With the same magnetic field as before, the equations of motion become
+\begin{align}
+m\ddot x+qB\,\dot y &= qE, \\
+m\ddot y-qB\,\dot x &= 0.
+\end{align}
+The first equation is no longer a conservation law for \(p_x\); the electric field breaks the \(x\)-translation symmetry of the Lagrangian. But the lecture does not attack the full solution. Instead it asks for a particularly simple one.
+
+\subsection{Question \& Answer}
+
+Question. How can an electric force in the \(x\)-direction produce motion in the \(y\)-direction?
+
+Answer. Look for a solution with no acceleration:
+\begin{equation}
+\ddot x=\ddot y=0.
+\end{equation}
+Then the second equation gives
+\begin{equation}
+\dot x=0,
+\end{equation}
+and the first reduces to
+\begin{equation}
+qB\,\dot y=qE.
+\end{equation}
+So, for the chosen orientation,
+\begin{equation}
+\dot y=\frac{E}{B}.
+\end{equation}
+The distinguished drift is therefore perpendicular to the applied electric force. That is the surprise the lecture wants to preserve. We push in the \(x\)-direction, but the no-acceleration response is a steady drift in the \(y\)-direction.
+
+The magnitude of the drift is set by the ratio \(E/B\). Reversing the orientation of the magnetic field reverses the drift; with different sign conventions one writes the same physics with an overall minus sign. What remains invariant is the transverse character of the motion and the scale \(E/B\).
+
+This is the Hall effect in its simplest mechanical form. If a cloud of charges initially sits at rest in a plane under a uniform magnetic field, then turning on an electric field along \(x\) produces a sideways flow along \(y\). The lecture briefly remarks that the mathematics is close in spirit to gyroscopic precession: an applied influence in one direction leads to motion in the perpendicular direction.
+
+\section{Poisson Brackets as Another Form of Mechanics}
+
+At this point the lecture changes register. The charged particle has been described through equations of motion, least action, and the Lagrangian formalism; the Hamiltonian for the charged particle is left to a problem. Then, abruptly but intentionally, the discussion turns to another formulation of mechanics, one Susskind motivates almost entirely by its role in quantum mechanics: the Poisson bracket.
+
+Take standard Hamilton equations,
+\begin{equation}
+\dot q_i=\frac{\partial H}{\partial p_i},
+\qquad
+\dot p_i=-\frac{\partial H}{\partial q_i}.
+\end{equation}
+Let \(A(q_i,p_i)\) be any function on phase space, with no explicit time dependence. Its rate of change along a trajectory is
+\begin{align}
+\dot A
+&=
+\sum_i \frac{\partial A}{\partial q_i}\dot q_i
++
+\sum_i \frac{\partial A}{\partial p_i}\dot p_i \\
+&=
+\sum_i
+\left(
+\frac{\partial A}{\partial q_i}\frac{\partial H}{\partial p_i}
+-
+\frac{\partial A}{\partial p_i}\frac{\partial H}{\partial q_i}
+\right).
+\end{align}
+This motivates the definition
+\begin{equation}
+\{A,B\}
+=
+\sum_i
+\left(
+\frac{\partial A}{\partial q_i}\frac{\partial B}{\partial p_i}
+-
+\frac{\partial A}{\partial p_i}\frac{\partial B}{\partial q_i}
+\right),
+\end{equation}
+so that time evolution may be written compactly as
+\begin{equation}
+\dot A=\{A,H\}.
+\end{equation}
+
+A few basic brackets already determine the whole algebra:
+\begin{equation}
+\{q_i,p_j\}=\delta_{ij},
+\qquad
+\{q_i,q_j\}=0,
+\qquad
+\{p_i,p_j\}=0.
+\end{equation}
+The bracket is antisymmetric,
+\begin{equation}
+\{A,B\}=-\{B,A\},
+\end{equation}
+so \(\{p_i,q_j\}=-\delta_{ij}\).
+
+The lecture then builds the algebra outward. For a single pair \(Q,P\),
+\begin{equation}
+\{P,F\}=-\frac{\partial F}{\partial Q},
+\qquad
+\{Q,F\}=\frac{\partial F}{\partial P}.
+\end{equation}
+So taking Poisson brackets with \(P\) and \(Q\) acts, up to sign, like differentiation with respect to the conjugate variable.
+
+One also needs linearity:
+\begin{equation}
+\{\alpha A,B\}=\alpha\{A,B\},
+\qquad
+\{A+C,B\}=\{A,B\}+\{C,B\},
+\end{equation}
+and a product rule:
+\begin{equation}
+\{AB,C\}=A\{B,C\}+B\{A,C\}.
+\end{equation}
+With antisymmetry, the fundamental brackets, linearity, the product rule, and the rule \(\dot A=\{A,H\}\), classical mechanics is recast into a compact algebraic form. The lecture does not present this as a more intuitive formulation; quite the opposite. Its real force appears later, when the same algebraic skeleton reappears in quantum mechanics.
+
+\section{Summary}
+
+The lecture began with a charged particle in prescribed electromagnetic fields and used that example to move through several layers of mechanics. The Lorentz-force law is the starting point, but the passage to least action forces us to introduce the vector potential. That introduction brings redundancy, and gauge invariance is the statement that the redundancy does not alter the motion. Once the Lagrangian is in hand, canonical momentum emerges in a surprising form, and in a uniform magnetic field its conserved components turn out to locate the guiding center of the cyclotron orbit rather than the naive translational momentum. Restoring the electric field then produces the sideways Hall drift. Only after this entire story is in place does the lecture step back again and recast Hamiltonian mechanics in the language of Poisson brackets, preparing the road toward quantum mechanics.
