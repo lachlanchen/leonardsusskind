@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_theoretical_minimum",
+  "transcript_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/119 - Classical Mechanics \uff5c Lecture 6 [7SiW_x3cUBo].md",
+  "video_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/119 - Classical Mechanics \uff5c Lecture 6 [7SiW_x3cUBo].mkv",
+  "lecture_number": 6,
+  "lecture_slug": "lecture_06",
+  "lecture_title": "Classical Mechanics : Lecture 6",
+  "assets": [
+    {
+      "name": "lecture_06_figure_02.png",
+      "timestamp_seconds": 2750.904,
+      "timestamp_hhmmss": "00:45:50.904",
+      "source_candidate": "lecture_06_window_02_candidate_03_004550904.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the cleanest usable board state in the subtitle window. The main Lagrangian line and the lower momentum-form equation are both visible, and Susskind has moved out of the way enough that the mathematics is not blocked by his hand or arm. The neighboring candidates are either more occluded by pointing gestures or not meaningfully more complete.",
+      "subtitle_excerpt": "is just the derivative of the potential energy",
+      "segment_start_seconds": 2749.76,
+      "segment_start_hhmmss": "00:45:49.760",
+      "segment_end_seconds": 2751.52,
+      "segment_end_hhmmss": "00:45:51.520",
+      "caption_hint": "worked \\theta equation from the Lagrangian"
+    },
+    {
+      "name": "lecture_06_figure_03.png",
+      "timestamp_seconds": 4938.544,
+      "timestamp_hhmmss": "01:22:18.544",
+      "source_candidate": "lecture_06_window_03_candidate_02_012218544.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the best balance of legibility and completeness. The boxed pair of Hamilton equations is clearly visible, the Hamiltonian definition at the top is still readable, and Susskind\u2019s gesture helps indicate the first-order structure without blocking the key formulas as much as in the neighboring frames.",
+      "subtitle_excerpt": "The Hamiltonian equations are first order in time,",
+      "segment_start_seconds": 4937.29,
+      "segment_start_hhmmss": "01:22:17.290",
+      "segment_end_seconds": 4940.59,
+      "segment_end_hhmmss": "01:22:20.590",
+      "caption_hint": "boxed Hamilton equations"
+    },
+    {
+      "name": "lecture_06_figure_04.png",
+      "timestamp_seconds": 5967.861,
+      "timestamp_hhmmss": "01:39:27.861",
+      "source_candidate": "lecture_06_window_05_candidate_02_013927861.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame preserves the left-board diagram most clearly while keeping the surrounding formula context at the edges. The nested closed curves, crosshair axes, dotted points, and overdrawn trajectory are all legible, and Susskind is not leaning so far forward that he blocks the sketch. The later candidates obscure more of the board with his body, while the earlier one is slightly less settled.",
+      "subtitle_excerpt": "said Lagrangian's equations are second order equations",
+      "segment_start_seconds": 5966.9,
+      "segment_start_hhmmss": "01:39:26.900",
+      "segment_end_seconds": 5969.43,
+      "segment_end_hhmmss": "01:39:29.430",
+      "caption_hint": "phase-space sketch with nested trajectories"
+    },
+    {
+      "name": "lecture_06_figure_05.png",
+      "timestamp_seconds": 6130.266,
+      "timestamp_hhmmss": "01:42:10.266",
+      "source_candidate": "lecture_06_window_06_candidate_04_014210266.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the strongest frame in the window because it preserves the most useful combined board state: the phase-space orbit sketch on the left is less blocked than in the earlier candidates, while the right board still clearly shows the corresponding oscillator formulas. The frame is not perfectly unobstructed, but it is the best balance of diagram visibility, equation context, and overall lecture layout.",
+      "subtitle_excerpt": "The Hamiltonian equations,",
+      "segment_start_seconds": 6129.246,
+      "segment_start_hhmmss": "01:42:09.246",
+      "segment_end_seconds": 6130.586,
+      "segment_end_hhmmss": "01:42:10.586",
+      "caption_hint": "Hamiltonian oscillator flow and equations"
+    }
+  ]
+}
