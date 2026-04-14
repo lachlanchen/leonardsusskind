@@ -1,0 +1,66 @@
+{
+  "course_rel": "supplementary/quantum_entanglement/2006_fall_part_3",
+  "transcript_rel": "supplementary/quantum_entanglement/2006_fall_part_3/064 - Lecture 9 \uff5c Quantum Entanglements, Part 3 (Stanford) [Jm0sT3t-rb0].md",
+  "video_rel": "supplementary/quantum_entanglement/2006_fall_part_3/064 - Lecture 9 \uff5c Quantum Entanglements, Part 3 (Stanford) [Jm0sT3t-rb0].mp4",
+  "lecture_number": 9,
+  "lecture_slug": "lecture_09",
+  "lecture_title": "Lecture 9 : Quantum Entanglements, Part 3 (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_09_figure_02.png",
+      "timestamp_seconds": 2814.54,
+      "timestamp_hhmmss": "00:46:54.540",
+      "source_candidate": "lecture_09_window_02_candidate_01_004654540.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "All four frames are very similar, but candidate 01 is the clearest and least blurred. It preserves the left-column board layout best, with the starts of the lines beginning with \"R =\", \"V =\", and a lower \"1/2 m\" expression most cleanly visible before the lecturer shifts further into the writing.",
+      "subtitle_excerpt": "right, so then there's potential energy",
+      "segment_start_seconds": 2814.3,
+      "segment_start_hhmmss": "00:46:54.300",
+      "segment_end_seconds": 2816.3,
+      "segment_end_hhmmss": "00:46:56.300",
+      "caption_hint": "Potential-energy setup on the board"
+    },
+    {
+      "name": "lecture_09_figure_03.png",
+      "timestamp_seconds": 3256.06,
+      "timestamp_hhmmss": "00:54:16.060",
+      "source_candidate": "lecture_09_window_03_candidate_04_005416060.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the clearest and most useful frame for note writing. It preserves the equation in its most complete visible form, including the left-hand \\(\\tfrac{1}{2}v^2\\) term and the full right-hand enclosed-mass factor, while the pointing hand no longer blocks any of the key symbols.",
+      "subtitle_excerpt": "energy equation",
+      "segment_start_seconds": 3254.3,
+      "segment_start_hhmmss": "00:54:14.300",
+      "segment_end_seconds": 3256.3,
+      "segment_end_hhmmss": "00:54:16.300",
+      "caption_hint": "Energy equation with enclosed mass term"
+    },
+    {
+      "name": "lecture_09_figure_04.png",
+      "timestamp_seconds": 3887.94,
+      "timestamp_hhmmss": "01:04:47.940",
+      "source_candidate": "lecture_09_window_04_candidate_04_010447940.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the best frame because it is the least occluded and preserves the board layout most completely. The top density formula is fully visible, the middle relation with the present-day scale factor remains readable, and the lecturer has moved enough to expose the start of the next line rather than covering it with his hand.",
+      "subtitle_excerpt": "Let's write the same equation except at any time.",
+      "segment_start_seconds": 3885.3,
+      "segment_start_hhmmss": "01:04:45.300",
+      "segment_end_seconds": 3888.3,
+      "segment_end_hhmmss": "01:04:48.300",
+      "caption_hint": "Density scaling with the scale factor"
+    },
+    {
+      "name": "lecture_09_figure_05.png",
+      "timestamp_seconds": 6282.44,
+      "timestamp_hhmmss": "01:44:42.440",
+      "source_candidate": "lecture_09_window_06_candidate_02_014442440.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 is the best balance of legibility and completeness. It keeps the boxed energy equation clearly visible at the top, still preserves the lower line involving Hubble-scale notation and density, and Susskind has moved just enough that the board is less occluded than in candidate 01 while avoiding the tighter crop and partial cutoff of candidates 03 and 04.",
+      "subtitle_excerpt": "With this equation, you can't violate energy conservation,",
+      "segment_start_seconds": 6281.3,
+      "segment_start_hhmmss": "01:44:41.300",
+      "segment_end_seconds": 6284.3,
+      "segment_end_hhmmss": "01:44:44.300",
+      "caption_hint": "Boxed energy equation and Hubble-form relation"
+    }
+  ]
+}
