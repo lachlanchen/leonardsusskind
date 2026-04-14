@@ -1,0 +1,80 @@
+{
+  "course_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory",
+  "transcript_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory/100 - Lecture 6 \uff5c String Theory and M-Theory [qllX-dkGfYI].md",
+  "video_rel": "supplementary/string_theory/2010_fall_string_theory_and_m_theory/100 - Lecture 6 \uff5c String Theory and M-Theory [qllX-dkGfYI].mkv",
+  "lecture_number": 6,
+  "lecture_slug": "lecture_06",
+  "lecture_title": "Lecture 6 : String Theory and M-Theory",
+  "assets": [
+    {
+      "name": "lecture_06_figure_01.png",
+      "timestamp_seconds": 6.4,
+      "timestamp_hhmmss": "00:00:06.400",
+      "source_candidate": "lecture_06_window_01_candidate_04_000006400.png",
+      "recommended_use": "screenshot_only",
+      "rationale": "None of the candidates contain blackboard mathematics, diagrams, or lecture-room layout useful for note writing. They are introductory campus and title visuals only, so this subtitle window should be rejected from the chapter\u2019s visual evidence set.",
+      "subtitle_excerpt": "Stanford University.",
+      "segment_start_seconds": 0.0,
+      "segment_start_hhmmss": "00:00:00.000",
+      "segment_end_seconds": 7.0,
+      "segment_end_hhmmss": "00:00:07.000",
+      "caption_hint": "Stanford title card"
+    },
+    {
+      "name": "lecture_06_figure_02.png",
+      "timestamp_seconds": 189.76,
+      "timestamp_hhmmss": "00:03:09.760",
+      "source_candidate": "lecture_06_window_02_candidate_04_000309760.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame preserves the left-hand source-and-arrows diagram while also showing the most advanced state of the new notation being written at the top of the board. The equation is still too incomplete for exact transcription, but this candidate is the most complete and useful record of the board layout within the subtitle window.",
+      "subtitle_excerpt": "vector of energy and momentum is.",
+      "segment_start_seconds": 188.0,
+      "segment_start_hhmmss": "00:03:08.000",
+      "segment_end_seconds": 190.0,
+      "segment_end_hhmmss": "00:03:10.000",
+      "caption_hint": "Outgoing momentum-vector sketch"
+    },
+    {
+      "name": "lecture_06_figure_03.png",
+      "timestamp_seconds": 1850.545,
+      "timestamp_hhmmss": "00:30:50.545",
+      "source_candidate": "lecture_06_window_03_candidate_03_003050545.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "other variable, you draw a similar diagram.",
+      "segment_start_seconds": 1849.102,
+      "segment_start_hhmmss": "00:30:49.102",
+      "segment_end_seconds": 1851.322,
+      "segment_end_hhmmss": "00:30:51.322",
+      "caption_hint": "other variable, you draw a similar diagram."
+    },
+    {
+      "name": "lecture_06_figure_04.png",
+      "timestamp_seconds": 2827.742,
+      "timestamp_hhmmss": "00:47:07.742",
+      "source_candidate": "lecture_06_window_05_candidate_04_004707742.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame is the most complete and useful record of the board at this moment. The two long horizontal lines are already in place, the left endpoint markers are visible, and the lecturer is adding the endpoint label near the upper line, matching the subtitle about \u03c3=0 and \u03c3=\u03c0. Earlier candidates are less finished and capture less of the intended interval-labeling layout.",
+      "subtitle_excerpt": "at sigma equals zero, sigma equals pi.",
+      "segment_start_seconds": 2821.142,
+      "segment_start_hhmmss": "00:47:01.142",
+      "segment_end_seconds": 2828.342,
+      "segment_end_hhmmss": "00:47:08.342",
+      "caption_hint": "Open-string interval labeled by \u03c3"
+    },
+    {
+      "name": "lecture_06_figure_05.png",
+      "timestamp_seconds": 2942.962,
+      "timestamp_hhmmss": "00:49:02.962",
+      "source_candidate": "lecture_06_window_06_candidate_03_004902962.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "d sigma squared equals zero.",
+      "segment_start_seconds": 2941.142,
+      "segment_start_hhmmss": "00:49:01.142",
+      "segment_end_seconds": 2943.942,
+      "segment_end_hhmmss": "00:49:03.942",
+      "caption_hint": "d sigma squared equals zero."
+    }
+  ]
+}
