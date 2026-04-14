@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_theoretical_minimum",
+  "transcript_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/118 - Classical Mechanics \uff5c Lecture 5 [lW9GJ0aiaNc].md",
+  "video_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/118 - Classical Mechanics \uff5c Lecture 5 [lW9GJ0aiaNc].mkv",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Classical Mechanics : Lecture 5",
+  "assets": [
+    {
+      "name": "lecture_05_figure_02.png",
+      "timestamp_seconds": 4131.14065,
+      "timestamp_hhmmss": "01:08:51.141",
+      "source_candidate": "lecture_05_window_02_candidate_03_010851141.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "the potential and kinetic energy of the Lagrangian",
+      "segment_start_seconds": 4130.139,
+      "segment_start_hhmmss": "01:08:50.139",
+      "segment_end_seconds": 4131.68,
+      "segment_end_hhmmss": "01:08:51.680",
+      "caption_hint": "the potential and kinetic energy of the Lagrangian"
+    },
+    {
+      "name": "lecture_05_figure_03.png",
+      "timestamp_seconds": 5497.072,
+      "timestamp_hhmmss": "01:31:37.072",
+      "source_candidate": "lecture_05_window_03_candidate_04_013137072.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the most useful for note writing because it preserves the clearest finished board state within the subtitle window: the Lagrangian dependence on coordinates, velocities, and time is visible, the canonical-momentum definition is fully legible, and the lower line has advanced to the beginning of a \\dot P statement, which matches the spoken transition to the equations of motion. Although Susskind is visible at the left edge, he does not block the key notation.",
+      "subtitle_excerpt": "The Lagrangian equations of motion are that p dot for each i",
+      "segment_start_seconds": 5490.922,
+      "segment_start_hhmmss": "01:31:30.922",
+      "segment_end_seconds": 5497.672,
+      "segment_end_hhmmss": "01:31:37.672",
+      "caption_hint": "canonical momentum and start of \\dot p equation"
+    },
+    {
+      "name": "lecture_05_figure_04.png",
+      "timestamp_seconds": 5842.662,
+      "timestamp_hhmmss": "01:37:22.662",
+      "source_candidate": "lecture_05_window_04_candidate_04_013722662.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest usable presentation of the board relation in this subtitle window. The equation is fully legible, Susskind has shifted far enough right that the mathematics is not crowded, and the surrounding blank board preserves the local layout cleanly. The earlier candidates show essentially the same content but with a more central lecturer pose that makes the frame less board-focused.",
+      "subtitle_excerpt": "mechanics either using Lagrangian or the Hamiltonian.",
+      "segment_start_seconds": 5839.872,
+      "segment_start_hhmmss": "01:37:19.872",
+      "segment_end_seconds": 5843.042,
+      "segment_end_hhmmss": "01:37:23.042",
+      "caption_hint": "Hamiltonian time-derivative relation"
+    },
+    {
+      "name": "lecture_05_figure_05.png",
+      "timestamp_seconds": 6339.835,
+      "timestamp_hhmmss": "01:45:39.835",
+      "source_candidate": "lecture_05_window_05_candidate_04_014539835.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame preserves the richest and most settled board state in the subtitle window. The Hamiltonian relation on the right is clearly legible, the lower-right mechanical sketch with angle markings is visible enough to support a redraw, and the left board still retains part of the earlier formula layout. Susskind is no longer actively writing, so the content reads as a finished moment rather than a transition.",
+      "subtitle_excerpt": "Lagrangian first and then working out the equations of motion.",
+      "segment_start_seconds": 6336.852,
+      "segment_start_hhmmss": "01:45:36.852",
+      "segment_end_seconds": 6340.242,
+      "segment_end_hhmmss": "01:45:40.242",
+      "caption_hint": "Hamiltonian time dependence and pendulum sketch"
+    },
+    {
+      "name": "lecture_05_figure_06.png",
+      "timestamp_seconds": 6752.405,
+      "timestamp_hhmmss": "01:52:32.405",
+      "source_candidate": "lecture_05_window_06_candidate_03_015232405.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest frame in the window. The visible algebra is fully legible, the hand has moved low enough not to interfere with the equation line, and the board preserves both the remaining \\(-q^2/2\\) term on the left and the differentiated expression on the right. The other candidates are slightly more cluttered by the pointing hand or body edge.",
+      "subtitle_excerpt": "what's the derivative of Lagrangian with respect to q?",
+      "segment_start_seconds": 6750.962,
+      "segment_start_hhmmss": "01:52:30.962",
+      "segment_end_seconds": 6753.182,
+      "segment_end_hhmmss": "01:52:33.182",
+      "caption_hint": "derivative with respect to q step"
+    }
+  ]
+}
