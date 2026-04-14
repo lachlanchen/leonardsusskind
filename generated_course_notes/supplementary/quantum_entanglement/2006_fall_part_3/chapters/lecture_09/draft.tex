@@ -1,0 +1,329 @@
+\chapter{Flat Expanding Space and the Dynamics of the Scale Factor}
+
+These companion notes follow Leonard Susskind's lecture closely, with curation by LazyingArt LLC. The lecture begins with kinematics: homogeneous and isotropic space, observational flatness, and the appearance of a time-dependent scale factor. Only after that stage is secure do we turn to dynamics, first through Hubble's law, then through the behavior of light, and finally through a Newtonian derivation of the flat cosmological expansion law. The last part of the lecture asks what happens when the energy content is matter, radiation, or vacuum energy, and closes by returning to the conceptual puzzles that the equations raise.
+
+\section{Recap: Flat Expanding Space and the Scale Factor}
+
+Susskind begins by contrasting cosmology with ordinary Minkowski space. In special relativity the line element is
+\begin{equation}
+ds^2 = dt^2 - dx^2 - dy^2 - dz^2.
+\end{equation}
+The transcript is slightly noisy in this early stretch, but the intended point is clear: the spatial part is the ordinary Euclidean combination \(dx^2+dy^2+dz^2\), whereas cosmology allows the coefficients of the metric to depend on space-time position.
+
+On sufficiently large scales, however, observation tells us something extremely useful. The universe appears homogeneous, isotropic, and very nearly spatially flat. That means that at a fixed instant of time space looks like ordinary Euclidean three-space, but with one new element: the distances between co-moving points are allowed to change with time. In the flat case the metric therefore takes the form
+\begin{equation}
+ds^2 = dt^2 - a^2(t)\bigl(dx^2+dy^2+dz^2\bigr).
+\end{equation}
+
+The scale factor \(a(t)\) is the new dynamical object. One may think of space as a flat rubber sheet being stretched. The coordinates \(x,y,z\) are then not best thought of as rigid meter sticks laid down once and for all. They are labels attached to points of the sheet. The lecture briefly notes that one could choose conventions in which \(a\) is dimensionless and the coordinates carry dimensions of length, but the more natural convention here is the opposite: the coordinates are mere labels, while \(a(t)\) carries the scale of physical distance.
+
+That is the first payoff of the setup. If \(a(t)\) changes, then there must be equations governing \(a(t)\). The rest of the lecture is devoted to discovering what those equations look like and what they imply.
+
+\section{Co-Moving Coordinates, Physical Distance, and Hubble's Law}
+
+The next step is to slow down and insist on the difference between coordinate separation and true distance. In co-moving coordinates the galaxies do not move, at least in the large-scale idealization that the lecture adopts. Their coordinate labels stay fixed while the geometry stretches.
+
+If two galaxies have co-moving separation \(\Delta x\), then their physical distance is
+\begin{equation}
+d = a(t)\,\Delta x.
+\end{equation}
+This equation is not yet Hubble's law. It is the more primitive statement from which Hubble's law follows.
+
+Now differentiate with respect to time. Since the galaxies are fixed in co-moving coordinates, \(\Delta x\) does not change with time. Therefore
+\begin{equation}
+v = \frac{dd}{dt} = \dot a\,\Delta x.
+\end{equation}
+At this point Susskind pauses and performs a useful algebraic trick: multiply and divide by \(a\), so that the bare coordinate separation \(\Delta x\) gets replaced by the physical distance \(d\). Then
+\begin{equation}
+v = \frac{\dot a}{a}\,d.
+\end{equation}
+This is Hubble's law in its clean kinematical form. The Hubble parameter is
+\begin{equation}
+H(t)=\frac{\dot a}{a}.
+\end{equation}
+
+The lecture emphasizes that this quantity is called the Hubble constant even though, in principle, it varies with time. That matters if we look far enough away, because looking far away also means looking far back. For nearby cosmological distances, compared with the age of the universe, \(H(t)\) can be treated as nearly constant; for truly large distances one must know how \(a(t)\) evolves.
+
+\section{Light Propagation in the Expanding Metric}
+
+Before writing any dynamical equation for \(a(t)\), the lecture takes up a natural question: if the metric itself changes with time, what happens to light? This detour is essential. It clarifies how null motion works in co-moving coordinates and prevents a serious conceptual confusion.
+
+For a light ray the proper time vanishes, so \(d\tau=0\), equivalently \(ds^2=0\). Suppose the ray moves along the \(x\)-axis, with \(dy=dz=0\). Then the metric gives
+\begin{equation}
+0 = dt^2 - a^2(t)\,dx^2,
+\end{equation}
+and therefore, for motion in the positive \(x\)-direction,
+\begin{equation}
+dt = a(t)\,dx.
+\end{equation}
+Dividing by \(dt\), we find
+\begin{equation}
+\frac{dx}{dt} = \frac{1}{a(t)}.
+\end{equation}
+
+This is a very instructive formula. It says that in co-moving coordinates the coordinate speed of light is not constant. As the universe expands and \(a(t)\) grows, the quantity \(dx/dt\) becomes smaller.
+
+\subsection{Question \& Answer}
+
+Does light really slow down in an expanding universe?
+
+No. What slows down is only the rate at which the coordinate label \(x\) changes. The lecture is very explicit on this point. A fixed increment \(dx\) corresponds to a larger and larger physical distance as \(a(t)\) increases. So if we insist on measuring light's motion in terms of the co-moving label \(x\), it will appear to move more slowly. But that is a coordinate effect, not a local change in the physical speed of light.
+
+The lecture also remarks that there is strong evidence that the dimensionless constants of nature are the same everywhere. In that sense the local physics of atoms, clocks, and light propagation is not drifting from place to place. The strange behavior lies in the geometry and in our choice of coordinates, not in a literal failure of light to move with its usual speed.
+
+\section{Other Homogeneous Geometries and the Return to Flat Space}
+
+Only now does Susskind widen the geometric backdrop. Homogeneity and isotropy do not force space to be flat. They allow three possibilities:
+\begin{itemize}
+\item positively curved space, whose standard model is a three-sphere;
+\item zero curvature, the flat Euclidean case;
+\item negatively curved space, whose visual stand-in is a saddle-like geometry.
+\end{itemize}
+
+The lecture spends some time on spheres because they are the easiest curved spaces to discuss. The important point is not the embedding picture but the intrinsic geometry. On a positively curved space the sum of the angles of a triangle is greater than \(180^\circ\). On a negatively curved space it is less than \(180^\circ\). On flat space it is exactly \(180^\circ\). This is the same kind of triangle-surveying logic by which one concludes that a football field is approximately flat, or that the observable universe is approximately flat on the scales accessible to cosmological measurement.
+
+The lecture also insists on a conceptual correction that is worth preserving. If the universe were a closed spherical space, the Big Bang would still not mean that matter exploded outward into some external surrounding region. Rather, the entire space itself would once have been small, so all points in that space would have been close together.
+
+Having made that point, Susskind returns to the flat case. The observational evidence says that flat space is at least a very good approximation, and it is in that approximation that the main calculation becomes clean.
+
+\section{Newtonian Cosmology and the Flat Zero-Energy Equation}
+
+The lecture now shifts from geometry to dynamics by means of a striking Newtonian construction. Put us at the center, draw a sphere around us, and choose a distant galaxy on the boundary. Because the matter distribution is isotropic, the shell theorem tells us two things. First, matter outside the sphere exerts no net force on the chosen galaxy. Second, the matter inside the sphere acts gravitationally as though all of it were concentrated at the center.
+
+That turns cosmology into a projectile problem.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.56\textwidth]{lecture_09_figure_02.png}
+\caption{Radius, velocity, and energy setup on the board}
+\end{figure}
+
+The board image preserves the order in which the construction is made, although the right-hand sides are partly blocked. The transcript fixes the intended equations:
+\begin{equation}
+R = x\,a(t),
+\qquad
+v = x\,\dot a(t).
+\end{equation}
+Here \(x\) is the fixed co-moving coordinate of the chosen galaxy, \(R\) is its physical distance from us, and \(v\) is its recession speed.
+
+Now assign mass \(m\) to the chosen galaxy and let \(M\) be the total enclosed mass inside radius \(R\). The Newtonian energy is
+\begin{equation}
+E=\frac12 m v^2-\frac{GMm}{R}.
+\end{equation}
+Susskind chooses the simplest case first: zero total energy. This is the analogue of escape velocity in the ordinary projectile problem. In that case
+\begin{equation}
+\frac12 m v^2=\frac{GMm}{R}.
+\end{equation}
+Dividing by \(m\), we obtain
+\begin{equation}
+\frac12 v^2=\frac{GM}{R}.
+\end{equation}
+
+\subsection{Question \& Answer}
+
+Why does the enclosed mass \(M\) stay fixed while the density \(\rho\) changes?
+
+Because the sphere we are following is co-moving. The same galaxies remain inside it as the universe expands. The total enclosed mass therefore stays fixed. What changes is the physical volume of that sphere, so the mass per unit volume decreases. The lecture pauses over this point because it is exactly where one might otherwise confuse a conserved amount of matter with a time-dependent density.
+
+With that distinction in place, the enclosed mass is
+\begin{equation}
+M=\frac{4\pi}{3}\rho R^3.
+\end{equation}
+Substitute this into the zero-energy equation:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_09_figure_03.png}
+\caption{Energy equation with the enclosed mass term}
+\end{figure}
+
+\begin{equation}
+\frac12 v^2=\frac{G}{R}\left(\frac{4\pi}{3}\rho R^3\right).
+\end{equation}
+Now use Hubble's law in the form \(v=HR\). Then
+\begin{align}
+\frac12 H^2 R^2 &= \frac{G}{R}\left(\frac{4\pi}{3}\rho R^3\right),\\
+\frac12 H^2 R^2 &= \frac{4\pi G}{3}\rho\,R^2.
+\end{align}
+The factor of \(R^2\) cancels:
+\begin{equation}
+\frac12 H^2=\frac{4\pi G}{3}\rho.
+\end{equation}
+Equivalently,
+\begin{equation}
+H^2=\frac{8\pi G}{3}\rho,
+\qquad
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho(t).
+\end{equation}
+
+This cancellation is not an accident. It had to happen. The Hubble parameter is supposed to be the same for every galaxy, so the final equation cannot depend on which galaxy we chose to follow.
+
+\section{Density Dilution and the Matter-Dominated Solution}
+
+The equation for \(a(t)\) is still not closed. It contains \(\rho(t)\), so we must now determine how the density changes as the universe expands.
+
+Susskind does this with an expanding co-moving box. Let the sides of the box be \(\Delta x\), \(\Delta y\), \(\Delta z\) in co-moving coordinates. If the contents are ordinary nonrelativistic matter, then the number of particles in the box stays fixed as the box expands. The physical volume therefore grows like \(a^3\), and the density decreases accordingly.
+
+The board picture captures this shift from raw dilution to normalized density law:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.60\textwidth]{lecture_09_figure_04.png}
+\caption{Matter density scaling as the universe expands}
+\end{figure}
+
+In the simplest cubic notation used in the lecture, one writes
+\begin{equation}
+\rho=\frac{M}{(\Delta x\,a)^3}.
+\end{equation}
+Thus
+\begin{equation}
+\rho(t)=\frac{C}{a^3(t)}.
+\end{equation}
+A convenient normalization is
+\begin{equation}
+\rho_{\text{today}}=\frac{C}{a_{\text{today}}^3},
+\end{equation}
+and dividing the two equations gives
+\begin{equation}
+\frac{\rho(t)}{\rho_{\text{today}}}
+=
+\frac{a_{\text{today}}^3}{a^3(t)}.
+\end{equation}
+So the density of matter decreases like \(a^{-3}\).
+
+Now substitute this into the dynamical equation:
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{C}{a^3}.
+\end{equation}
+After multiplying by \(a^2\), we get
+\begin{equation}
+\dot a^2=\frac{C}{a}.
+\end{equation}
+This is the point in the lecture where Susskind tries a power-law ansatz, notices an algebraic slip, and then repairs the derivation on the fly. The clean route is as follows. Multiply by \(a\):
+\begin{equation}
+a\,\dot a^2 = C.
+\end{equation}
+Taking square roots,
+\begin{equation}
+\sqrt{a}\,\dot a = \sqrt{C}.
+\end{equation}
+Now separate variables:
+\begin{equation}
+\sqrt{a}\,da = \sqrt{C}\,dt.
+\end{equation}
+Integrating,
+\begin{equation}
+\frac{2}{3}a^{3/2} = \sqrt{C}\,t + \text{constant}.
+\end{equation}
+Ignoring the additive constant at this first-pass level, we obtain
+\begin{equation}
+a^{3/2}\propto t,
+\qquad
+a(t)\propto t^{2/3}.
+\end{equation}
+This is the matter-dominated universe.
+
+The Hubble parameter then follows immediately:
+\begin{equation}
+H(t)=\frac{\dot a}{a}=\frac{2}{3t}.
+\end{equation}
+So in this model the universe keeps expanding, but the Hubble parameter decreases like \(1/t\). Looking backward in time, \(H\) was larger; looking forward, it becomes smaller.
+
+\section{Radiation, Vacuum Energy, and the Final Energy Bookkeeping}
+
+At this stage the lecture makes its next conceptual pivot. The expansion law depends not only on the geometry but on the nature of the energy content.
+
+Suppose the co-moving box contains photons instead of nonrelativistic matter. The number of photons in the box remains fixed, but now each photon loses energy as the universe expands. The lecture uses the familiar relation
+\begin{equation}
+E=h\nu,
+\end{equation}
+together with \(\nu\propto 1/\lambda\), so that
+\begin{equation}
+E_\gamma \propto \frac{1}{\lambda}.
+\end{equation}
+If the box expands, the wavelengths stretch with it, so \(\lambda\propto a\). Therefore
+\begin{equation}
+E_\gamma \propto \frac{1}{a}.
+\end{equation}
+That adds one more factor of \(a^{-1}\) on top of the ordinary dilution by volume. Hence
+\begin{equation}
+\rho_{\mathrm{rad}}\propto a^{-4}.
+\end{equation}
+Running the same analysis again, one finds
+\begin{equation}
+a(t)\propto t^{1/2}.
+\end{equation}
+This is the radiation-dominated universe. The lecture emphasizes the physical meaning: if we go backward in time and squeeze the universe, the photon energies rise while the rest masses of atoms do not rise in the same way. Eventually radiation dominates.
+
+There is then one more, even more important, case. Vacuum energy does not dilute at all:
+\begin{equation}
+\rho_{\mathrm{vac}}=\text{const}.
+\end{equation}
+Insert this into the cosmological equation:
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho_{\mathrm{vac}}.
+\end{equation}
+Everything on the right-hand side is constant, so
+\begin{equation}
+\frac{\dot a}{a}=H,
+\end{equation}
+with \(H\) constant. Therefore
+\begin{equation}
+a(t)\propto e^{Ht}.
+\end{equation}
+A vacuum-dominated universe expands exponentially.
+
+The lecture also adds an important fact that does not come from the Newtonian derivation alone. According to Einstein's equations, the sign of the total energy corresponds to the sign of the spatial curvature:
+\begin{equation}
+E>0 \leftrightarrow \text{negative curvature},
+\qquad
+E=0 \leftrightarrow \text{flat space},
+\qquad
+E<0 \leftrightarrow \text{positive curvature}.
+\end{equation}
+This correspondence must be stated carefully. It is part of the relativistic theory, not something that Newtonian cosmology by itself proves.
+
+The closing board image is valuable because it preserves the lecture's pedagogical shift from the boxed Newtonian equation to the Hubble-density form:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_05.png}
+\caption{Boxed energy equation and its Hubble-form rewriting}
+\end{figure}
+
+The lower coefficient is best trusted from the derivation rather than from the board alone, but the visual juxtaposition matters. It is exactly the point at which the lecture reinterprets a particle-energy equation as a cosmological law.
+
+The question period then circles back to the physics of photons. There are two equivalent pictures in the lecture. One is that the wavelength is stretched directly by the expanding geometry. The other is that the radiation from the surface of last scattering is observed with a large Doppler redshift because that surface is receding rapidly from us. Both descriptions are meant to capture the same cosmological redshift.
+
+\subsection{Question \& Answer}
+
+Where does the energy of a redshifted photon go?
+
+Susskind's answer is that one should not expect the photon energy by itself to be conserved. The cosmological equation is a bookkeeping relation between matter-energy and the kinetic energy of expansion. As the energy stored in radiation decreases, the expansion term changes as well.
+
+The lecture gives a simple mechanical analogy. Imagine photons in a cylinder with a movable piston. As the photons bounce, they push the piston outward. Their wavelengths lengthen, so their individual energies decrease. That energy has not disappeared; it has gone into the motion of the piston. Cosmological expansion is not literally a piston, but it is the same kind of transfer. The energy lost by redshifting radiation is transferred into the kinetic energy of expansion.
+
+This is deliberately heuristic. The lecture does not try to state a precise global theorem about conserved energy in arbitrary curved space-times. It makes the narrower point that in cosmology the relevant bookkeeping must include the expansion itself.
+
+A final coordinate question also appears here. Why does the scale factor multiply the spatial part of the metric but not the time part? The answer is that a factor in front of \(dt^2\) can be removed by redefining the time coordinate. If one started with a metric of the schematic form
+\begin{equation}
+ds^2 = A^2(t)\,dt^2 - A^2(t)\,dx^2,
+\end{equation}
+then defining a new time variable by
+\begin{equation}
+dT = A(t)\,dt
+\end{equation}
+absorbs the factor multiplying \(dt^2\). The factor in front of the spatial piece remains physically significant. So the issue is partly one of convention in the time coordinate.
+
+The lecture ends with a remark about cosmic fate. Without vacuum energy, a positively curved universe would eventually turn around and recollapse. With sufficiently large vacuum energy, that need not happen. In the empirical picture described in the lecture, the future is instead one of continuing exponential expansion, with ordinary matter and radiation becoming thinner and thinner.
+
+\section{Summary}
+
+The logic of the lecture is tight. We begin with a homogeneous, isotropic, observationally flat universe and write the corresponding metric with a time-dependent scale factor. We then learn how co-moving coordinates differ from physical distance, derive Hubble's law, and clarify how light propagates in the expanding geometry.
+
+Only after that kinematical groundwork is in place do we turn to dynamics. A Newtonian shell-theorem argument leads, in the zero-energy flat case, to
+\[
+H^2=\frac{8\pi G}{3}\rho.
+\]
+That equation is not yet enough; one must still specify how \(\rho\) changes with expansion. For ordinary matter, \(\rho\propto a^{-3}\) and \(a(t)\propto t^{2/3}\). For radiation, \(\rho\propto a^{-4}\) and \(a(t)\propto t^{1/2}\). For vacuum energy, \(\rho\) is constant and the universe expands exponentially. The lecture then returns to the conceptual questions those formulas raise: redshift, last scattering, energy transfer, coordinate choice, and the relation between curvature and cosmic fate.
