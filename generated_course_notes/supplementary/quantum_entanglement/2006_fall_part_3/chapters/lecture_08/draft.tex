@@ -1,0 +1,263 @@
+\chapter{Lecture 8: A First Look at Curved Spacetime and Cosmology}
+
+This lecture begins with unfinished business from electrodynamics and ends with unfinished business in cosmology. The link is not accidental. We first relearn that symmetry is powerful but not sovereign: it constrains the form of a theory, but it does not uniquely determine the equations of motion. From there the lecture turns to geometry, to the interval between neighboring points, to the metric as a matrix of coefficients, and to the sharp distinction between awkward coordinates and genuine curvature. Only after that groundwork is in place do we arrive at the expanding cosmological metric, the scale factor, the Hubble law, and the motion of light in an expanding universe. These notes follow Leonard Susskind's lecture closely and are curated by LazyingArt LLC.
+
+\section{Why Maxwell's Equations Need More Than Relativity}
+
+We begin, unexpectedly but appropriately, with a question left over from the previous lecture. If we assume only Lorentz invariance, have we essentially derived Maxwell's equations? Susskind's answer is no. Lorentz invariance does a great deal of work, but not all of it. One also assumes that there really are electric and magnetic fields, that they fit together into a single relativistic structure, that the equations are linear, and that they do not involve arbitrarily high derivatives.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Can Maxwell's equations be derived from relativity alone?
+
+\paragraph{Answer.} No. Relativity constrains the theory, but it does not fix it uniquely. To arrive at Maxwell's equations one must add genuine physical input: linearity, the absence of wild higher-derivative terms, and empirical facts such as the transparent passage of one classical electromagnetic wave through another. The general lesson is broader than electrodynamics: symmetries constrain theories, but they do not determine them.
+
+The lecture then pauses over linearity, because this is the point at which superposition enters. The transcript becomes garbled for a short stretch, but the intended mathematical content is standard and is resumed clearly a moment later. If the equations are linear, then scalar multiples of solutions are again solutions, and more importantly the sum of two solutions is again a solution. Susskind illustrates this with the harmonic oscillator:
+\begin{align}
+m\ddot{x} &= -kx, \\
+m\ddot{x}_1 &= -k x_1, \qquad m\ddot{x}_2 = -k x_2.
+\end{align}
+Adding the two equations gives
+\begin{equation}
+m\ddot{(x_1+x_2)} = -k(x_1+x_2),
+\end{equation}
+so \(x_1+x_2\) is itself a solution.
+
+This is the algebraic heart of wave superposition. Two different waveforms may be added pointwise, and the sum still solves the same linear equation. That is why, in classical electrodynamics, two freely propagating electromagnetic waves simply pass through one another. If they influence one another at all, the influence comes indirectly, by acting on charges and then receiving new radiation from those charges.
+
+Once a nonlinear term is introduced, the superposition principle fails. Schematically, a quadratic correction of \(p x^2\)-type is enough:
+\begin{equation}
+p x_1^2 + p x_2^2 \neq p(x_1+x_2)^2.
+\end{equation}
+The point is not the detailed coefficient, but the structure. Quadratic terms do not recombine into the same functional form when equations are added. Then \(x_1+x_2\) is no longer guaranteed to solve the equation. In field theory language, this is the onset of direct self-interaction.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_02.png}
+\caption{Wave superposition sketches and linear second-derivative equations. The board layout is worth preserving: waveforms at left, linear equations at right. The cleaned oscillator equations above normalize the partially legible board writing to the standard form used in the lecture.}
+\end{figure}
+
+This opening exchange is not a detour. It prepares the lecture's geometric moral. Just as Lorentz invariance does not by itself force Maxwell's equations, geometry will constrain the form of spacetime physics without dictating every dynamical detail. With that, Susskind changes gears and turns to ``real spacetime.''
+
+\section{From the Minkowski Interval to General Coordinate Expressions}
+
+Special relativity can be summarized geometrically. Take a spacetime point \(x^\mu\), with \(\mu=0,1,2,3\), and a neighboring point \(x^\mu+dx^\mu\). The geometry is encoded in the interval between them:
+\begin{equation}
+ds^2 = dt^2 - dx^2 - dy^2 - dz^2
+      = dx^\mu dx_\mu
+      = \eta_{\mu\nu}\,dx^\mu dx^\nu,
+\end{equation}
+with
+\begin{equation}
+\eta_{\mu\nu} = \mathrm{diag}(1,-1,-1,-1).
+\end{equation}
+
+The components \(dx^\mu\) are not invariant. Different observers related by Lorentz transformations disagree about the decomposition into space and time. What they agree on is the interval itself, or for timelike separations the proper time. This invariance is the geometric core of special relativity. Lorentz transformations are precisely the coordinate transformations that preserve the form of the Minkowski interval.
+
+But one must not confuse the geometry with one especially simple coordinate system. Even in ordinary Euclidean geometry, the same flat plane can look different if we choose inconvenient coordinates. Susskind gives the concrete example of mixed units: if \(x\) is measured in centimeters and \(y\) in meters, while we insist on expressing distance in centimeters, then the interval is not \(dx^2+dy^2\), but rather
+\begin{equation}
+ds^2 = dx^2 + \left(\frac{dy}{100}\right)^2
+     = dx^2 + 10^{-4}dy^2.
+\end{equation}
+Nothing profound has happened to the plane. The funny coefficient reflects a funny convention.
+
+That is the first warning. A nontrivial coefficient in the interval does not by itself mean curvature. It may mean only that the coordinates are awkward.
+
+\section{The Metric as a Quadratic Form and as a Matrix}
+
+The next step is to loosen the coordinates further. Suppose the coordinate axes on a flat plane are not orthogonal. Then the Pythagorean expression \(dx^2+dy^2\) is no longer correct, even if the same units are used on both axes. The most general local quadratic expression takes the form
+\begin{equation}
+ds^2 = a\,dx^2 + b\,dy^2 + c\,dx\,dy.
+\end{equation}
+To make the symmetry explicit, one may split the mixed term between \(dx\,dy\) and \(dy\,dx\):
+\begin{equation}
+ds^2 = a_{11}\,dx^2 + a_{12}\,dx\,dy + a_{21}\,dy\,dx + a_{22}\,dy^2,
+\qquad a_{12}=a_{21}.
+\end{equation}
+The coefficients may then be displayed as a matrix,
+\begin{equation}
+g_{ij} =
+\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}.
+\end{equation}
+This is the pedagogical moment that matters: the matrix is called the metric.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_03.png}
+\caption{Quadratic form and metric matrix. The lecture slows down here for a reason: the board layout turns the interval into a coefficient matrix, and that matrix is the metric.}
+\end{figure}
+
+The metric packages the local rules of geometry. If we know the metric, we know how to compute the interval between neighboring points; in principle, that is enough to reconstruct the entire geometry. But the converse is not one-to-one. The same geometry can be represented by different metrics in different coordinate systems.
+
+There is also a second warning now. Even on a perfectly flat blackboard, the metric coefficients may fail to be constant if the coordinate mesh is marked nonuniformly or if the axes are chosen in a complicated way. Position dependence by itself is still not curvature. One may have a position-dependent metric on a flat space.
+
+\section{Flat But Complicated Coordinates, and Genuine Curvature}
+
+So what is curvature? Susskind begins by saying what it is not. If we bend a flat sheet of paper into a cylinder without stretching it, the intrinsic distances between neighboring points on the sheet do not change. A small creature confined to the sheet, unable to look off it, cannot tell whether the sheet has been bent in some higher-dimensional room. That is bending, not intrinsic curvature.
+
+Curvature appears when a surface cannot be flattened without stretching or compressing it. A hemisphere cut from a balloon is the standard example. To press it flat onto a plane, one must distort distances. The surface of a sphere is intrinsically curved in exactly this sense.
+
+Before going to the sphere, however, the lecture inserts one more crucial example: polar coordinates on the plane. In polar coordinates \((r,\theta)\), the interval between neighboring points is not \(dr^2+d\theta^2\). The angular piece is an arc length, and for a given \(d\theta\) that arc length grows in proportion to \(r\). Therefore
+\begin{equation}
+ds^2 = dr^2 + r^2\,d\theta^2.
+\end{equation}
+Here the metric coefficients vary with position. Nevertheless the plane is still flat, because one can return to Cartesian coordinates
+\begin{equation}
+x = r\cos\theta, \qquad y = r\sin\theta,
+\end{equation}
+and recover the ordinary Euclidean form \(ds^2=dx^2+dy^2\). The moral is now sharp: nonconstant coefficients do not prove curvature.
+
+The sphere is the decisive case. Let \(\theta\) be the polar angle measured from the north pole and \(\phi\) the azimuthal angle. On the unit sphere, a step \(d\theta\) along a meridian has length \(d\theta\). But a step \(d\phi\) along a parallel has length \(\sin\theta\,d\phi\). Thus, by the local differential right triangle,
+\begin{equation}
+ds^2 = d\theta^2 + \sin^2\theta\,d\phi^2.
+\end{equation}
+For a sphere of radius \(R\), every length scales by \(R\), so
+\begin{equation}
+ds^2 = R^2\left(d\theta^2 + \sin^2\theta\,d\phi^2\right).
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_08_figure_04.png}
+\caption{Sphere sketch and angular line element on the board. The line element is partially obstructed in the frame; the displayed formulas in the text normalize it to the canonical form stated in the lecture.}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[scale=1.1]
+\draw (0,0) circle (2.2);
+\coordinate (N) at (0,2.2);
+\coordinate (P) at (45:2.2);
+\fill (P) circle (1.6pt);
+\draw (0,0) -- (N);
+\draw (0,0) -- (P);
+\draw (0,1.0) arc (90:45:1.2);
+\node at (0.62,1.35) {$\theta$};
+\coordinate (Q) at ($(P)+(-0.35,0.35)$);
+\coordinate (R) at ($(P)+(0.72,0)$);
+\coordinate (S) at ($(Q)+(0.72,0)$);
+\draw[->] (P) -- (Q);
+\draw[->] (P) -- (R);
+\draw[dashed] (Q) -- (S) -- (R);
+\node[left] at ($(P)!0.5!(Q)$) {$d\theta$};
+\node[above] at ($(P)!0.5!(R)$) {$\sin\theta\,d\phi$};
+\node[below right] at (P) {$P$};
+\end{tikzpicture}
+\caption{Schematic local differential triangle on the unit sphere. The two orthogonal legs have lengths \(d\theta\) and \(\sin\theta\,d\phi\), leading to the spherical line element.}
+\end{figure}
+
+Now the criterion can be stated cleanly. A space is intrinsically curved when no coordinate system exists in which the metric coefficients are constant everywhere. On the plane, polar coordinates look complicated, but a change of coordinates flattens the metric out. On the sphere, no such global flattening is possible. Operationally, the inhabitants of the sphere discover this because sufficiently large triangles have angle sum greater than \(180^\circ\).
+
+Curvature is therefore the obstruction to finding globally constant metric coefficients.
+
+\section{From Curved Surfaces to Spacetime}
+
+Exactly the same distinction returns in spacetime. One may write flat spacetime in funny coordinates and thereby manufacture metric components that vary from point to point. That by itself is nothing new. Einstein's new ingredient is the stronger statement: spacetime itself can be intrinsically curved, so that no coordinate transformation removes the variation globally.
+
+The general line element is written as
+\begin{equation}
+ds^2 = g_{\mu\nu}(x)\,dx^\mu dx^\nu.
+\end{equation}
+If \(g_{\mu\nu}(x)\) is known, the local geometry is known. But the same geometry may be represented by different \(g_{\mu\nu}\)'s in different coordinates. Geometry determines physical distances and causal structure; it does not determine a unique coordinate expression.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_05.png}
+\caption{The transition from concrete coefficient matrices to tensor notation. The earlier \(2\times 2\) metric example remains on the board while the lecture moves to the general spacetime form \(ds^2=g_{\mu\nu}(x)\,dx^\mu dx^\nu\).}
+\end{figure}
+
+At this point the lecture narrows to cosmology. The spacetimes of interest are not arbitrary curved spacetimes, but large-scale cosmological spacetimes that are homogeneous in space and time dependent. Homogeneous does not mean flat. The sphere is homogeneous: every point is like every other point. But it is not flat. So homogeneity and flatness must be distinguished from the start.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} How can the universe be homogeneous and spatially flat if we plainly see structure, and if we cannot observe distant points ``all at once''?
+
+\paragraph{Answer.} The claim of homogeneity is a large-scale claim. Inside a star, inside a galaxy, or even on the scale of galaxy clusters, the universe is certainly not uniform. But on scales much larger than the intergalactic separation, matter distribution smooths out considerably. Likewise, spatial flatness is not a claim about what we directly inspect in a single instant. It is a claim inferred from collected signals and reconstructed geometry. One observes light from distant regions, correlates the data, and asks whether the large-scale spatial relations are consistent with Euclidean geometry. As in the case of the Earth, one may fail to detect curvature simply because the region explored is too small relative to the radius of curvature. Thus the cosmological principle is empirical and approximate, not logically mandatory.
+
+This distinction is essential. In what follows, ``flat'' will refer to space at a fixed cosmic time, not to the entire spacetime. The spacetime is time dependent, and that is where the nontrivial cosmological geometry enters.
+
+\section{The Expanding Metric, the Scale Factor, and Hubble's Law}
+
+Given large-scale homogeneity and spatial flatness, we may choose spatial coordinates \(x,y,z\) so that at each fixed time the spatial part of the metric is Cartesian up to a common scale factor. If we attach these coordinates to the large-scale galactic flow, then the coordinates are comoving labels: the label of a given galaxy does not change with time even though its physical distance from other galaxies does.
+
+The corresponding spacetime metric takes the form
+\begin{equation}
+d\tau^2 = dt^2 - a^2(t)\left(dx^2+dy^2+dz^2\right).
+\end{equation}
+The function \(a(t)\) is the scale factor. It does not depend on position in space, because of homogeneity, but it does depend on time. Susskind likes to think of \(x,y,z\) as mere labels, even dimensionless labels if we wish, with the dimensions of length carried by \(a(t)\). One could distribute dimensions differently, but this convention makes the physics transparent.
+
+There is an important geometric check here. If \(a(t)\) were actually constant in time, then it could be absorbed into a redefinition of the spatial units. The metric would then reduce to ordinary flat spacetime. The cosmological geometry is nontrivial precisely because \(a(t)\) varies with time.
+
+Take now two comoving galaxies lying along the \(x\)-axis, with fixed coordinate separation \(\Delta x\). Their physical separation is
+\begin{equation}
+d(t) = a(t)\,\Delta x.
+\end{equation}
+Differentiate with respect to time:
+\begin{align}
+v(t) &= \dot d(t)
+      = \dot a(t)\,\Delta x \\
+     &= \frac{\dot a(t)}{a(t)}\,d(t).
+\end{align}
+Thus the recession speed is proportional to the distance, with proportionality factor
+\begin{equation}
+H(t) = \frac{\dot a(t)}{a(t)}.
+\end{equation}
+This is the Hubble parameter. At any fixed moment of cosmic time it is the same for every pair of sufficiently separated comoving galaxies. That universality is just the large-scale expression of homogeneity.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} What is really expanding, and why do meter sticks, atoms, and galaxies not simply expand with the background?
+
+\paragraph{Answer.} On large scales, the comoving coordinate mesh expands with the cosmological flow, so the physical distance between widely separated galaxies grows like \(a(t)\). But small bound systems are different. A meter stick is held together by electromagnetic forces; a galaxy is held together by its own gravity. Those binding forces are strong enough, on their own scales, to resist the ambient expansion. This is why individual galaxies do not swell with the Hubble flow, and why nearby bound systems can even move toward one another.
+
+There is also a deeper point of principle. Only ratios of lengths are physically meaningful. One could choose a convention in which the distance between galaxies stays fixed and atomic scales shrink, and in that convention the universe would not be said to expand. The standard convention is the opposite one: microscopic standards are taken to be fixed, and the cosmological distance scale is said to grow. That convention is historically natural and physically useful, but it remains a convention.
+
+Finally, the scale factor is not a force. Motion is not maintained by force; motion persists by inertia. Gravity enters by changing the velocity, that is, by determining whether the expansion decelerates, halts, or eventually reverses.
+
+\section{Null Rays, Rough Age Estimates, and the Next Question}
+
+Once the metric is known, the first new dynamical-looking object to study is not matter, but light. A light ray follows a null line, so along its path
+\begin{equation}
+d\tau^2 = 0.
+\end{equation}
+If the light ray moves purely in the \(x\)-direction, the cosmological metric gives
+\begin{equation}
+0 = dt^2 - a^2(t)\,dx^2,
+\end{equation}
+and therefore
+\begin{equation}
+dt = a(t)\,dx,
+\qquad\text{or equivalently}\qquad
+dx = \frac{dt}{a(t)}.
+\end{equation}
+In these comoving coordinates the coordinate speed of light is
+\begin{equation}
+\frac{dx}{dt} = \frac{1}{a(t)}.
+\end{equation}
+
+This does not mean that light physically slows down. It means that the comoving coordinate \(x\) is only a label, and a fixed amount of \(dx\) corresponds to a larger physical distance when \(a(t)\) is larger. In late epochs, one unit of coordinate distance is physically huge, so the same light signal covers fewer coordinate units per unit time.
+
+The lecture then turns briefly to observation. The experimental machinery is not developed in detail, but the logical point is clear: before one can interpret luminosities, redshifts, and astronomical distances, one needs the geometric framework telling us what it is that is being measured. Geometry comes first, not because observation is unimportant, but because without geometry the observations cannot be read correctly.
+
+With the Hubble law in hand, one can make a crude backward extrapolation. Here Susskind catches and corrects himself in real time. The simple estimate is not obtained by assuming a literally constant Hubble parameter. Rather, it is obtained by pretending that the presently observed recession velocity of a galaxy had been constant as we run time backward. Then
+\begin{equation}
+t_{\mathrm{back}} \sim \frac{d}{v} = \frac{1}{H}.
+\end{equation}
+So \(H^{-1}\) gives a rough age scale for the universe. It is rough for exactly the reason emphasized in the lecture: the recession rate changes with time. In the older decelerating picture, gravity makes the backward collision time smaller than the uniform-velocity estimate, so \(H^{-1}\) somewhat overestimates the age. The lecture quotes an age of about \(13.5\) billion years as the refined result.
+
+The real question, however, is no longer kinematical. It is dynamical: how does \(a(t)\) actually evolve?
+
+\begin{proposition}
+For an inverse-square gravitational force and a spherically symmetric distribution of matter, the net force on a test galaxy at radius \(r\) depends only on the mass enclosed within radius \(r\). The matter outside that radius contributes zero net force, and the enclosed matter acts as if concentrated at the center.
+\end{proposition}
+
+This is Newton's shell theorem, and it is the bridge to the next lecture. If a galaxy has label \(x\), its physical distance is \(a(t)x\). To determine the time dependence of \(a(t)\), one may study the Newtonian motion of that galaxy under the gravitational pull of the homogeneous matter lying inside the sphere of radius \(a(t)x\). The complicated many-body cosmological problem collapses to the radial motion of something like a cannonball in a spherically symmetric gravitational field.
+
+That is exactly where the lecture stops. The dynamics of \(a(t)\) are not solved here. The closing questions about why very early light can now come from very large distances, and about the observable universe more generally, are raised but not resolved. They require a concrete form of \(a(t)\), and that computation is deferred to the next lecture.
+
+\section{Summary}
+
+The lecture proceeds in a very disciplined order. It begins by reminding us that symmetry alone does not determine physics, then reformulates special relativity in terms of the invariant interval, then turns the interval into a metric, and then works hard to separate mere coordinate awkwardness from genuine curvature. Only after that distinction is secure do homogeneity, spatial flatness, and the cosmological scale factor appear. From the metric \(d\tau^2 = dt^2-a^2(t)(dx^2+dy^2+dz^2)\) we immediately obtain the Hubble law and the null-ray equation, but not yet the dynamics of expansion. The open problem at the end of the lecture is the right one: determine \(a(t)\) from gravity, and then return to the large questions about early light, cosmic age, and the observable universe.
