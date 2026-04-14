@@ -1,0 +1,38 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial",
+  "transcript_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial/021 - Lecture 1 \uff5c Modern Physics\uff1a Classical Mechanics (Stanford) [pyX8kQ-JzHI].md",
+  "video_rel": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial/021 - Lecture 1 \uff5c Modern Physics\uff1a Classical Mechanics (Stanford) [pyX8kQ-JzHI].webm",
+  "lecture_number": 1,
+  "lecture_slug": "lecture_01",
+  "lecture_title": "Lecture 1 : Modern Physics\uff1a Classical Mechanics (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_01_figure_03.png",
+      "timestamp_seconds": 418.391,
+      "timestamp_hhmmss": "00:06:58.391",
+      "source_candidate": "lecture_01_window_03_candidate_04_000658391.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the most useful frame because the transition arrow being discussed is at its most finished state. It preserves the full board logic of the moment: the earlier loop diagrams on the left remain visible, while the new curved arrow from the right-hand H state toward T is nearly complete. Although Susskind's hand is still near the endpoint, the diagram is clearer and more informative than the earlier, less finished candidates.",
+      "subtitle_excerpt": "we draw an arrow from heads",
+      "segment_start_seconds": 416.64,
+      "segment_start_hhmmss": "00:06:56.640",
+      "segment_end_seconds": 418.63,
+      "segment_end_hhmmss": "00:06:58.630",
+      "caption_hint": "arrow from heads to tails"
+    },
+    {
+      "name": "lecture_01_figure_05.png",
+      "timestamp_seconds": 2290.629,
+      "timestamp_hhmmss": "00:38:10.629",
+      "source_candidate": "lecture_01_window_06_candidate_04_003810629.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame is the clearest and least occluded view of the board in the window. The line across the board, the marked point on the right, and the small directional arrows near the center are all visible at once. Earlier candidates have Susskind's hand covering the most important part of the sketch more heavily.",
+      "subtitle_excerpt": "completely deterministic and the structure of the equation",
+      "segment_start_seconds": 2288.2,
+      "segment_start_hhmmss": "00:38:08.200",
+      "segment_end_seconds": 2290.96,
+      "segment_end_hhmmss": "00:38:10.960",
+      "caption_hint": "deterministic flow sketch"
+    }
+  ]
+}
