@@ -1,0 +1,474 @@
+\chapter{Action, Symmetry, and Energy}
+
+We are supposed to arrive at energy conservation, but the lecture begins by refusing to rush there. Leonard Susskind first corrects a loose statement from the previous meeting, then rebuilds the planar central-force example carefully enough that the formal machinery and the physics line up. These notes follow that order closely. They are based on Leonard Susskind's lecture, with selected board-frame evidence preserved as visual witnesses through LazyingArt LLC and Video2Book.
+
+\section{A Correction in Polar Coordinates}
+
+The lecture opens with a correction: the term that appears in the radial equation is not Coriolis but centrifugal. Susskind does not merely fix the name. He goes back to the two-dimensional particle and replays the whole Lagrangian procedure in the form he wants us to remember.
+
+We describe a particle in a plane by polar coordinates \(r\) and \(\theta\). The radial component of velocity is simply
+\begin{equation}
+v_r=\dot r,
+\end{equation}
+while the transverse component is not \(\dot\theta\) but
+\begin{equation}
+v_\theta=r\dot\theta.
+\end{equation}
+That is the first point worth making carefully: the same angular speed produces a larger linear speed farther from the origin.
+
+Since these two components are perpendicular, the kinetic energy is
+\begin{equation}
+T=\frac{m}{2}\left(v_r^2+v_\theta^2\right)
+=\frac{m}{2}\left(\dot r^{\,2}+r^2\dot\theta^{\,2}\right).
+\end{equation}
+Now specialize to the central-force problem. We assume the potential depends only on the distance from the origin,
+\begin{equation}
+U=U(r),
+\end{equation}
+so the Lagrangian is
+\begin{equation}
+\mathcal{L}=\frac{m}{2}\left(\dot r^{\,2}+r^2\dot\theta^{\,2}\right)-U(r).
+\end{equation}
+
+This is already more than a convenient example. The condition that \(U\) does not depend on \(\theta\) is the first visible sign of rotational symmetry, and Susskind flags that fact early because it will matter later.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_04_figure_02.png}
+
+\begin{tikzpicture}[scale=1.2]
+\draw[->] (-0.2,0) -- (2.2,0);
+\draw[->] (0,-0.2) -- (0,2.0);
+\draw[thick] (0,0) -- (1.55,1.05);
+\draw (0.75,0) arc (0:34:0.75);
+\node at (0.95,0.25) {$\theta$};
+\end{tikzpicture}
+\end{figure}
+
+The blackboard at this stage is useful because it shows the concrete example turning into general notation. The polar-coordinate Lagrangian is still on the board, but underneath it Susskind has already begun writing derivatives with respect to generalized velocities. That is exactly the bridge he wants us to cross.
+
+\section{Canonical Momenta and the Radial Equation}
+
+The next step is the standard one. For each generalized coordinate \(q_i\), we define its canonical momentum by
+\begin{equation}
+\pi_i=\frac{\partial \mathcal{L}}{\partial \dot q_i}.
+\end{equation}
+The generic Euler--Lagrange equation is then
+\begin{equation}
+\frac{d\pi_i}{dt}=\frac{\partial \mathcal{L}}{\partial q_i}.
+\end{equation}
+The board is partly obscured at exactly the moment this formula is being written, but this standard form is the one supported by both the transcript and the visible sequence of equations.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_04_figure_03.png}
+\end{figure}
+
+Now apply this to the radial coordinate. Since \(\dot r\) appears only in the term \(\frac{m}{2}\dot r^{\,2}\),
+\begin{equation}
+\pi_r=\frac{\partial \mathcal{L}}{\partial \dot r}=m\dot r.
+\end{equation}
+Therefore
+\begin{equation}
+\frac{d\pi_r}{dt}=m\ddot r.
+\end{equation}
+The right-hand side is
+\begin{align}
+\frac{\partial \mathcal{L}}{\partial r}
+&=\frac{\partial}{\partial r}\left[\frac{m}{2}r^2\dot\theta^{\,2}-U(r)\right] \\
+&=mr\dot\theta^{\,2}-\frac{dU}{dr}.
+\end{align}
+So the radial equation becomes
+\begin{equation}
+m\ddot r=mr\dot\theta^{\,2}-\frac{dU}{dr}.
+\end{equation}
+
+This is the first local payoff of the lecture. The extra term
+\begin{equation}
+mr\dot\theta^{\,2}
+\end{equation}
+appears automatically once we differentiate the kinetic term with respect to \(r\). We do not guess it. We do not put it in by hand. It is exactly the sort of term that would have been awkward to reconstruct directly from force-language alone, and this is why Susskind keeps calling the Lagrangian method algorithmic.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} What does it mean to say that the centrifugal term is ``not a real force''?
+
+\paragraph{Answer.} Susskind immediately backs away from the word ``real,'' and rightly so. What he wants to isolate is narrower. The term \(mr\dot\theta^{\,2}\) does not come from differentiating a potential \(U(r)\). It is not of the form \(-dU/dr\). In that sense it is not a potential-derived force. But it is certainly not meaningless: it appears on the right-hand side of the equation of motion, and so it is part of the generalized radial force.
+
+There is also a useful physical way to say the same thing. If a particle has angular motion, then its velocity is not aimed straight at the origin. Left to itself, it prefers to continue roughly along a straight line, and in polar variables that tendency shows up as an outward contribution. The terminology can wobble; the equation does not.
+
+\section{Rotational Symmetry and Angular Momentum}
+
+We now do for \(\theta\) what we just did for \(r\). Differentiating the Lagrangian with respect to \(\dot\theta\) gives
+\begin{equation}
+\pi_\theta=\frac{\partial \mathcal{L}}{\partial \dot\theta}=mr^2\dot\theta.
+\end{equation}
+The Euler--Lagrange equation for \(\theta\) is
+\begin{equation}
+\frac{d\pi_\theta}{dt}=\frac{\partial \mathcal{L}}{\partial \theta}.
+\end{equation}
+But \(\theta\) does not appear in \(\mathcal{L}\) at all. That is exactly what rotational invariance looks like in these coordinates. Therefore
+\begin{equation}
+\frac{\partial \mathcal{L}}{\partial \theta}=0,
+\end{equation}
+so
+\begin{equation}
+\frac{d}{dt}\left(mr^2\dot\theta\right)=0.
+\end{equation}
+Hence
+\begin{equation}
+mr^2\dot\theta=L,
+\end{equation}
+where \(L\) is a constant. Susskind first identifies this as the momentum conjugate to \(\theta\), and then immediately reminds us that we already know its ordinary name: angular momentum.
+
+Once \(L\) is recognized as conserved, the angular variable can be folded back into the radial equation. Solving for \(\dot\theta\),
+\begin{equation}
+\dot\theta=\frac{L}{mr^2}.
+\end{equation}
+Substituting this into the radial equation gives
+\begin{align}
+m\ddot r
+&=-\frac{dU}{dr}+mr\left(\frac{L}{mr^2}\right)^2 \\
+&=-\frac{dU}{dr}+\frac{L^2}{mr^3}.
+\end{align}
+This is a useful rewriting. The entire effect of the angular motion now sits in a single outward term,
+\begin{equation}
+\frac{L^2}{mr^3},
+\end{equation}
+which behaves like a repulsive \(1/r^3\) force. That is stronger at small \(r\) than a gravitational or Coulomb \(1/r^2\) attraction. So for nonzero angular momentum the particle does not easily fall into the origin. The lecture does not stop to build a full effective-potential formalism, but the physical lesson is already clear: angular momentum erects a barrier.
+
+\section{Variation Notation and Stationary Action}
+
+Having extracted one symmetry-conservation story from the polar example, Susskind pauses to reset the notation. This is not a diversion. It is preparation for the main theorem.
+
+Suppose \(f\) depends on many variables \(\alpha_i\). For a small change \(\delta \alpha_i\), the first-order change in \(f\) is
+\begin{equation}
+\delta f=\sum_i \frac{\partial f}{\partial \alpha_i}\,\delta \alpha_i.
+\end{equation}
+If \(\delta f=0\) for arbitrary variations \(\delta\alpha_i\), then every first derivative must vanish:
+\begin{equation}
+\frac{\partial f}{\partial \alpha_i}=0
+\qquad \text{for all } i.
+\end{equation}
+Susskind speaks in the language of a minimum, but what we really need for mechanics is stationarity to first order. The notation \(\delta f=0\) is simply a compact way to say that the first-order change vanishes in every direction.
+
+For the action, the same notation becomes
+\begin{equation}
+A=\int \mathcal{L}\,dt,
+\qquad
+\delta A=0.
+\end{equation}
+The board at this point shows both formulas together, with the trajectory sketch still visible beside them.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_04_figure_04.png}
+
+\begin{tikzpicture}[scale=0.95]
+\draw[->] (0,0) -- (0,4.2);
+\draw[->] (0,0) -- (3.8,0);
+\draw[thick] (1.0,0.35) .. controls (1.35,1.2) and (0.95,2.45) .. (1.65,3.8);
+\draw[thick,dashed] (1.32,0.5) .. controls (1.67,1.35) and (1.25,2.6) .. (1.98,3.95);
+\draw (1.10,0.95) -- (1.43,1.05);
+\draw (1.18,1.75) -- (1.51,1.85);
+\draw (1.20,2.55) -- (1.54,2.65);
+\draw (1.42,3.25) -- (1.76,3.35);
+\node[below] at (2.0,0) {$q$};
+\node[left] at (0,3.9) {$t$};
+\end{tikzpicture}
+\end{figure}
+
+In standard notation, the first variation of the action is
+\begin{equation}
+\delta A
+=
+\int
+\sum_i
+\left(
+\frac{\partial \mathcal{L}}{\partial q_i}\,\delta q_i
++
+\frac{\partial \mathcal{L}}{\partial \dot q_i}\,\delta \dot q_i
+\right)dt.
+\end{equation}
+The frame does not show every symbol sharply enough to justify a verbatim transcription, so this is the clean standard form consistent with the lecture.
+
+\section{Symmetry and Noether's Argument}
+
+Now we come to what Susskind calls the heart of the lecture: the connection between symmetries and conservation laws.
+
+An infinitesimal transformation has the form
+\begin{equation}
+\delta q_i=\epsilon f_i(q),
+\end{equation}
+where \(\epsilon\) is small and the functions \(f_i\) may depend on all the coordinates. A symmetry is precisely such a transformation when it leaves the action unchanged.
+
+There is one important restriction here. The theorem is about continuous symmetries, built from arbitrarily small transformations. A sphere has this kind of rotational symmetry. A cube does not: its symmetries are discrete. That is why the lecture briefly detours through the example of a die and then returns to infinitesimal transformations.
+
+The crucial move is subtle. Start with a trajectory that already satisfies the equations of motion. Now act on that whole trajectory by a symmetry. The resulting path is generally not an allowed least-action variation in the ordinary sense, because the endpoints move as well. But it is still a legitimate variation to compute, and since it is generated by a symmetry, its change in action is zero for a different reason.
+
+After integrating by parts, the standard first-variation formula becomes
+\begin{equation}
+\delta A
+=
+\int
+\sum_i
+\left[
+\frac{\partial \mathcal{L}}{\partial q_i}
+-
+\frac{d}{dt}
+\left(
+\frac{\partial \mathcal{L}}{\partial \dot q_i}
+\right)
+\right]
+\delta q_i\,dt
++
+\left[
+\sum_i
+\frac{\partial \mathcal{L}}{\partial \dot q_i}\,\delta q_i
+\right]_{t_1}^{t_2}.
+\end{equation}
+Again, this is a cautious reconstruction of the formula whose structure is visible on the board.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_04_figure_05.png}
+
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (0,0) -- (0,4.4);
+\draw[->] (0,0) -- (4.1,0);
+\draw[thick] (1.05,0.35) .. controls (0.90,1.35) and (1.85,2.35) .. (1.45,3.95);
+\draw[thick,dashed] (1.42,0.52) .. controls (1.27,1.52) and (2.18,2.52) .. (1.82,4.10);
+\draw (1.02,0.90) -- (1.38,1.02);
+\draw (1.01,1.70) -- (1.37,1.82);
+\draw (1.15,2.50) -- (1.52,2.62);
+\draw (1.32,3.28) -- (1.67,3.40);
+\node[below] at (2.0,0) {$q$};
+\node[left] at (0,4.0) {$t$};
+\end{tikzpicture}
+\end{figure}
+
+\begin{theorem}
+If the infinitesimal transformation \(\delta q_i=\epsilon f_i(q)\) is a symmetry of the action, then
+\begin{equation}
+Q=\sum_i \pi_i f_i(q)
+\end{equation}
+is conserved along every solution of the equations of motion.
+\end{theorem}
+
+\begin{proof}
+Take a trajectory that satisfies the Euler--Lagrange equations. Then the bulk term in the variation of the action vanishes:
+\begin{equation}
+\frac{\partial \mathcal{L}}{\partial q_i}
+-
+\frac{d}{dt}
+\left(
+\frac{\partial \mathcal{L}}{\partial \dot q_i}
+\right)
+=0.
+\end{equation}
+Therefore
+\begin{equation}
+\delta A
+=
+\left[
+\sum_i
+\frac{\partial \mathcal{L}}{\partial \dot q_i}\,\delta q_i
+\right]_{t_1}^{t_2}.
+\end{equation}
+But the variation was generated by a symmetry, so \(\delta A=0\). Hence
+\begin{equation}
+\left[
+\sum_i
+\frac{\partial \mathcal{L}}{\partial \dot q_i}\,\delta q_i
+\right]_{t_1}^{t_2}
+=0.
+\end{equation}
+Now substitute \(\delta q_i=\epsilon f_i(q)\):
+\begin{equation}
+\epsilon
+\left[
+\sum_i
+\frac{\partial \mathcal{L}}{\partial \dot q_i}f_i(q)
+\right]_{t_1}^{t_2}
+=0.
+\end{equation}
+Since \(\epsilon\) is an arbitrary common factor, it may be dropped, and with \(\pi_i=\partial \mathcal{L}/\partial \dot q_i\) we obtain
+\begin{equation}
+\left[
+\sum_i \pi_i f_i(q)
+\right]_{t_1}^{t_2}
+=0.
+\end{equation}
+So the quantity \(Q=\sum_i \pi_i f_i(q)\) has the same value at any two times and is therefore conserved.
+\end{proof}
+
+This is the lecture's first general version of Noether's theorem. The conserved quantity is the endpoint term. Once that is seen, the worked examples become straightforward.
+
+\section{Translation and Rotation as Noether Charges}
+
+For translation along the \(x\)-axis, every particle shifts by the same amount:
+\begin{equation}
+\delta x_i=\epsilon,
+\qquad
+\delta y_i=\delta z_i=0.
+\end{equation}
+So the generator is \(f_{x_i}=1\) and all the other components vanish. The Noether charge is therefore
+\begin{equation}
+Q_x=\sum_i \pi_{x_i}.
+\end{equation}
+For the usual mechanical Lagrangian, \(\pi_{x_i}=m_i\dot x_i=p_{x_i}\), and so
+\begin{equation}
+Q_x=\sum_i p_{x_i},
+\end{equation}
+the total \(x\)-momentum.
+
+The important point is not the formula itself but how little input it required. We did not need the detailed forces. We needed only that the action of the whole isolated system is unchanged when the whole system is translated.
+
+For an infinitesimal rotation in the \(x\)-\(y\) plane,
+\begin{equation}
+\delta x=-\epsilon y,
+\qquad
+\delta y=\epsilon x.
+\end{equation}
+Thus
+\begin{equation}
+f_x=-y,
+\qquad
+f_y=x.
+\end{equation}
+The Noether charge becomes
+\begin{align}
+Q_{\mathrm{rot}}
+&=\pi_x f_x+\pi_y f_y \\
+&=-\pi_x y+\pi_y x \\
+&=xp_y-yp_x.
+\end{align}
+This is precisely the angular momentum perpendicular to the plane. For many particles, one simply sums the same expression over the particles.
+
+By this point the pattern is clear. A symmetry gives a generator \(f_i\). The conserved quantity is \(\sum_i \pi_i f_i\). The exercise itself is often easy; the nontrivial part is recognizing the symmetry in the first place.
+
+\section{Time Translation and the Hamiltonian}
+
+The last turn of the lecture is the one announced at the beginning. Suppose the laws of the system have no explicit time dependence. Then shifting an entire solution forward in time gives another solution. This is time-translation invariance.
+
+Here the geometry is different from ordinary spatial symmetries. Instead of moving a trajectory sideways in configuration space, we first think of moving it upward in time. At fixed \(t\), that upward shift induces a horizontal displacement in \(q\), and that displacement depends on the slope of the trajectory.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (0,0) -- (0,5.0);
+\draw[->] (0,0) -- (4.6,0);
+\draw[thick] (1.55,0.55) .. controls (1.15,1.45) and (2.20,2.70) .. (1.70,4.15);
+\draw[thick,dashed] (1.20,1.10) .. controls (0.82,2.00) and (1.88,3.25) .. (1.36,4.70);
+\draw[dotted] (1.55,0.55) -- (1.20,1.10);
+\draw[dotted] (1.70,4.15) -- (1.36,4.70);
+\node[below] at (2.3,0) {$q$};
+\node[left] at (0,4.7) {$t$};
+\node[right] at (1.78,4.15) {$t_2$};
+\node[right] at (1.62,0.55) {$t_1$};
+\end{tikzpicture}
+\end{figure}
+
+The induced transformation is
+\begin{equation}
+q_i(t)\mapsto q_i(t-\epsilon).
+\end{equation}
+Expanding to first order,
+\begin{equation}
+q_i(t-\epsilon)=q_i(t)-\epsilon \dot q_i(t)+O(\epsilon^2),
+\end{equation}
+so
+\begin{equation}
+\delta q_i=-\epsilon \dot q_i.
+\end{equation}
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why is there a minus sign in \(\delta q_i=-\epsilon \dot q_i\)?
+
+\paragraph{Answer.} Because after the whole trajectory is pushed upward in time, the point on the new curve at fixed time \(t\) comes from the old curve at the earlier time \(t-\epsilon\). If the original trajectory slopes to the right, then pushing it upward makes the new point at the same height sit to the left. A positive \(\dot q\) therefore produces a negative horizontal shift.
+
+\paragraph{Question.} Why does an extra \(\mathcal{L}\)-term appear in the derivation?
+
+\paragraph{Answer.} Because a time shift changes not only the shape of the path but also the interval over which the shifted action is integrated. The new trajectory overhangs the old one at one end and is missing a small piece at the other. Those two small time intervals contribute
+\begin{equation}
+\mathcal{L}(t_2)\epsilon
+\qquad \text{and} \qquad
+\mathcal{L}(t_1)\epsilon,
+\end{equation}
+respectively. Nothing analogous happened for ordinary spatial shifts with fixed time endpoints.
+
+Now compute the action difference exactly as before on the common interval, and then add the two overhangs. The bulk Euler--Lagrange term again vanishes because the original trajectory is a solution. What remains is
+\begin{equation}
+0
+=
+\left[
+\sum_i
+\frac{\partial \mathcal{L}}{\partial \dot q_i}\,\delta q_i
+\right]_{t_1}^{t_2}
++
+\mathcal{L}(t_2)\epsilon
+-
+\mathcal{L}(t_1)\epsilon.
+\end{equation}
+Substituting \(\delta q_i=-\epsilon \dot q_i\), we get
+\begin{equation}
+0
+=
+\epsilon
+\left[
+\mathcal{L}
+-
+\sum_i
+\dot q_i
+\frac{\partial \mathcal{L}}{\partial \dot q_i}
+\right]_{t_1}^{t_2}.
+\end{equation}
+Therefore the quantity
+\begin{equation}
+\mathcal{L}
+-
+\sum_i
+\dot q_i
+\frac{\partial \mathcal{L}}{\partial \dot q_i}
+\end{equation}
+is conserved. Susskind first lands on this sign convention, then immediately flips the overall sign to define the standard object
+\begin{equation}
+H=\sum_i \dot q_i\,\pi_i-\mathcal{L}.
+\end{equation}
+This \(H\) is the Hamiltonian, and in this lecture it is identified as the energy.
+
+To check that this agrees with the familiar case, take
+\begin{equation}
+\mathcal{L}=\frac{1}{2}m\dot x^2-U(x).
+\end{equation}
+Then
+\begin{equation}
+\pi_x=\frac{\partial \mathcal{L}}{\partial \dot x}=m\dot x,
+\end{equation}
+and so
+\begin{align}
+H
+&=\pi_x\dot x-\mathcal{L} \\
+&=m\dot x^2-\left(\frac{1}{2}m\dot x^2-U(x)\right) \\
+&=\frac{1}{2}m\dot x^2+U(x).
+\end{align}
+So in the standard \(T-U\) case, the Hamiltonian is indeed \(T+U\).
+
+This is why Susskind says something stronger than the usual textbook slogan. Energy is not merely another name for \(T+U\). More fundamentally, energy is the conserved quantity associated with time-translation invariance.
+
+There is one essential caveat. If the Lagrangian depends explicitly on time,
+\begin{equation}
+\mathcal{L}=\mathcal{L}(q,\dot q,t),
+\end{equation}
+then a time-shifted trajectory need not have the same action. The symmetry disappears, and with it the conservation law. In that case energy need not be conserved.
+
+\section{Summary}
+
+The lecture begins with a repair to a concrete mechanics example and ends with the general definition of energy. That order matters. First we see, in polar coordinates, how the formal Euler--Lagrange procedure manufactures the centrifugal term and reveals angular momentum conservation. Then the notation of variations is tightened. Only after that does the lecture state the general rule: a continuous symmetry of the action produces a conserved Noether charge.
+
+Time translation is the special case that completes the promised arc. Because the time interval itself shifts, the derivation acquires overhang terms, and those terms turn the ordinary Noether endpoint contribution into the conserved Hamiltonian
+\begin{equation}
+H=\sum_i \dot q_i\,\pi_i-\mathcal{L}.
+\end{equation}
+For ordinary mechanical systems this reduces to \(T+U\), but the lecture's deeper claim is that the Hamiltonian is the more fundamental notion. It is the quantity conserved because the laws do not care when the experiment begins. The next natural step is then Hamiltonian mechanics itself.
