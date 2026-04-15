@@ -1,0 +1,38 @@
+{
+  "course_rel": "core/classical_mechanics/2011_fall_theoretical_minimum",
+  "transcript_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/120 - Classical Mechanics \uff5c Lecture 7 [lQIbcV6dQzw].md",
+  "video_rel": "core/classical_mechanics/2011_fall_theoretical_minimum/120 - Classical Mechanics \uff5c Lecture 7 [lQIbcV6dQzw].mkv",
+  "lecture_number": 7,
+  "lecture_slug": "lecture_07",
+  "lecture_title": "Classical Mechanics : Lecture 7",
+  "assets": [
+    {
+      "name": "lecture_07_figure_02.png",
+      "timestamp_seconds": 449.737,
+      "timestamp_hhmmss": "00:07:29.737",
+      "source_candidate": "lecture_07_window_03_candidate_03_000729737.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the cleanest, most legible view of the board. The Hamiltonian notation and the equation for the momentum derivative are both fully visible, and Susskind has moved far enough left that his hands no longer interfere with the formula. The neighboring frames are either partially occluded by his gesture or slightly more cluttered.",
+      "subtitle_excerpt": "And there's a Hamiltonian equation",
+      "segment_start_seconds": 448.32,
+      "segment_start_hhmmss": "00:07:28.320",
+      "segment_end_seconds": 450.5,
+      "segment_end_hhmmss": "00:07:30.500",
+      "caption_hint": "Hamilton equation for momentum"
+    },
+    {
+      "name": "lecture_07_figure_03.png",
+      "timestamp_seconds": 3611.107,
+      "timestamp_hhmmss": "01:00:11.107",
+      "source_candidate": "lecture_07_window_04_candidate_01_010011107.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and most complete frame in the window. The key equation is already written and fully legible, and Susskind is not yet blocking the board while adding the next line. The later candidates are dominated by the act of writing and leave the new material incomplete.",
+      "subtitle_excerpt": "So the first equation is vp equals...",
+      "segment_start_seconds": 3610.5,
+      "segment_start_hhmmss": "01:00:10.500",
+      "segment_end_seconds": 3615.56,
+      "segment_end_hhmmss": "01:00:15.560",
+      "caption_hint": "first phase-space velocity equation"
+    }
+  ]
+}
