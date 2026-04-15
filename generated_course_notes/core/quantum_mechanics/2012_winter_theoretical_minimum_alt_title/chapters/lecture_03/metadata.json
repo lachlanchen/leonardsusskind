@@ -1,0 +1,38 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/126 - Lecture 3 \uff5c The Theoretical Minimum [-GO3SL5n30k].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/126 - Lecture 3 \uff5c The Theoretical Minimum [-GO3SL5n30k].mkv",
+  "lecture_number": 3,
+  "lecture_slug": "lecture_03",
+  "lecture_title": "Lecture 3 : The Theoretical Minimum",
+  "assets": [
+    {
+      "name": "lecture_03_figure_02.png",
+      "timestamp_seconds": 1110.183,
+      "timestamp_hhmmss": "00:18:30.183",
+      "source_candidate": "lecture_03_window_02_candidate_03_001830183.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the cleanest useful frame in the set. The lecturer is fully out of the way, the board writing is complete enough to follow the derivation from the operator equation to indexed component notation, and the lower component equation is more legible here than in the lecturer-occluded earlier frames. The later board-only frame is very similar, but this one appears slightly sharper and more balanced.",
+      "subtitle_excerpt": "of a matrix times a column vector.",
+      "segment_start_seconds": 1108.74,
+      "segment_start_hhmmss": "00:18:28.740",
+      "segment_end_seconds": 1110.96,
+      "segment_end_hhmmss": "00:18:30.960",
+      "caption_hint": "matrix action in component form"
+    },
+    {
+      "name": "lecture_03_figure_03.png",
+      "timestamp_seconds": 1201.022,
+      "timestamp_hhmmss": "00:20:01.022",
+      "source_candidate": "lecture_03_window_03_candidate_04_002001022.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the most complete and usable view of the board. The matrix, input column vector, equality sign, and output column vector are all visible at once, while the lecturer has moved low enough not to block the central notation. The earlier frames occlude either the matrix entries or the input vector with the lecturer's head and hand.",
+      "subtitle_excerpt": "for multiplying a matrix by a column vector.",
+      "segment_start_seconds": 1198.4,
+      "segment_start_hhmmss": "00:19:58.400",
+      "segment_end_seconds": 1201.38,
+      "segment_end_hhmmss": "00:20:01.380",
+      "caption_hint": "matrix-vector multiplication layout"
+    }
+  ]
+}
