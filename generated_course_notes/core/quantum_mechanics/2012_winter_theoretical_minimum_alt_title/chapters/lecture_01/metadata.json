@@ -1,0 +1,52 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/124 - Lecture 1 \uff5c The Theoretical Minimum [iJfw6lDlTuA].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/124 - Lecture 1 \uff5c The Theoretical Minimum [iJfw6lDlTuA].webm",
+  "lecture_number": 1,
+  "lecture_slug": "lecture_01",
+  "lecture_title": "Lecture 1 : The Theoretical Minimum",
+  "assets": [
+    {
+      "name": "lecture_01_figure_02.png",
+      "timestamp_seconds": 1364.79,
+      "timestamp_hhmmss": "00:22:44.790",
+      "source_candidate": "lecture_01_window_02_candidate_04_002244790.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the most finished and useful frame: both arrow symbols are complete, the paired \\(\\sigma=1\\) and \\(\\sigma=-1\\) labels are clearly visible, and the board is no longer in the middle of being written. It best captures the notation being introduced for the two spin states.",
+      "subtitle_excerpt": "and sigma equals minus one by an arrow pointing down",
+      "segment_start_seconds": 1361.78,
+      "segment_start_hhmmss": "00:22:41.780",
+      "segment_end_seconds": 1365.2,
+      "segment_end_hhmmss": "00:22:45.200",
+      "caption_hint": "spin labels and up/down arrows"
+    },
+    {
+      "name": "lecture_01_figure_03.png",
+      "timestamp_seconds": 2181.652,
+      "timestamp_hhmmss": "00:36:21.652",
+      "source_candidate": "lecture_01_window_03_candidate_04_003621652.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame gives the clearest finished board state for the moment: Susskind is no longer pointing across the diagram, the central up-arrow is fully visible, and the right-hand analyzer sketches are readable. Earlier candidates are more heavily occluded by his arm and hand, especially over the horizontal apparatus drawing.",
+      "subtitle_excerpt": "but the horizontal component of some vector",
+      "segment_start_seconds": 2179.39,
+      "segment_start_hhmmss": "00:36:19.390",
+      "segment_end_seconds": 2181.96,
+      "segment_end_hhmmss": "00:36:21.960",
+      "caption_hint": "horizontal spin-analyzer sketch"
+    },
+    {
+      "name": "lecture_01_figure_05.png",
+      "timestamp_seconds": 4468.985,
+      "timestamp_hhmmss": "01:14:28.985",
+      "source_candidate": "lecture_01_window_06_candidate_03_011428985.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the most useful for notes because it shows the key mathematics most completely: both the column-vector addition rule and the scalar-multiplication rule are visible at once, and Susskind's hand does not significantly block the expressions. Earlier frames are more occluded, while the later frame crops the right-hand result more tightly.",
+      "subtitle_excerpt": "And the vector would be a matrix",
+      "segment_start_seconds": 4466.32,
+      "segment_start_hhmmss": "01:14:26.320",
+      "segment_end_seconds": 4470.42,
+      "segment_end_hhmmss": "01:14:30.420",
+      "caption_hint": "column-vector operations"
+    }
+  ]
+}
