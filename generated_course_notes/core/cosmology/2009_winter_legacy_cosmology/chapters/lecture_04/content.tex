@@ -1,0 +1,497 @@
+\chapter{Pressure, Equation of State, and Vacuum Energy}
+
+This lecture opens in the form of questions, not yet in the form of equations. Susskind first clears away several conceptual obstacles: the microwave background does define a preferred cosmological rest frame, superluminal recession does not violate local relativity, and a horizon is the place where expansion defeats return signals. Only after that warm-up does he deliberately reset the lecture and turn to the technical core: pressure, energy density, the parameter \(w\), and the special role of vacuum energy. The aim here is to follow that unfolding as closely as possible, while keeping the mathematics clean and the board evidence visible. These notes are based on Leonard Susskind's lecture, with supporting curation by LazyingArt LLC and Video2Book.
+
+\section{Opening Questions: Preferred Frame, Recession, and the Microwave Background}
+
+The first question concerns the cosmic microwave background. If the background radiation looks isotropic only in one frame, does that not define a preferred frame of reference? Susskind's answer is yes, it does. That is not a contradiction of relativity. It is a statement about the large-scale state of the universe. There is a special cosmological frame in which the microwave background looks the same in all directions, and this is also, on average, the frame in which the local galaxies are at rest.
+
+If we move through this bath of photons, the Doppler effect immediately breaks the isotropy. Photons coming from the direction of motion are blueshifted; photons from the opposite direction are redshifted. In that sense there is a preferred cosmological rest frame, but the local laws of physics remain perfectly relativistic.
+
+The next question asks whether distant galaxies can recede faster than light. Here the essential distinction is between local motion and global recession. Relativity forbids one object from overtaking another right in front of us at superluminal speed. It does not forbid sufficiently distant galaxies from separating according to
+\begin{equation}
+v = H d .
+\end{equation}
+For large enough \(d\), the recession speed \(v\) can exceed \(c\). In the units of the lecture we set \(c=1\), so the horizon is the distance at which \(Hd=1\).
+
+This immediately leads to the observable universe. The cosmic horizon is the boundary beyond which light cannot get back to us. The surface of last scattering is not exactly the same thing, but it lies very close to it. Radiation from the last-scattering surface is enormously redshifted, by a factor of order \(10^3\), but not infinitely redshifted. For that reason the surface of last scattering sits slightly inside the horizon, while still serving in practice as the edge of what we can directly see.
+
+\section{Expanding Metric and the One-Dimensional Line Analogy}
+
+At this point Susskind insists that ordinary special-relativistic intuition is no longer enough. The problem is not simply one of adding velocities. In general relativity the metric itself can expand.
+
+His favored picture is a one-dimensional line. If we stretch an ordinary material line, it thins out and changes its local properties. That is not the right analogy. The right analogy is a line with a hidden reservoir of new points. Whenever neighboring points separate too much, new points are inserted. The line grows, but its local character does not thin out.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.60\textwidth]{lecture_04_figure_02.png}
+\caption{One-dimensional expansion sketch on the board. The visual evidence is sparse but important: a long line, directional arrowing, and marked points used to introduce the intuition of an expanding metric.}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=0.85cm,y=0.85cm]
+\draw[thick] (0,0)--(12,0);
+\draw[->,thick] (0.9,0.22)--(2.1,0.22);
+\fill (2.5,0) circle (0.06);
+\draw[thick] (4.7,0)--(4.7,0.38);
+\fill (8.9,0) circle (0.06);
+\draw (11.3,0) circle (0.12);
+\end{tikzpicture}
+\caption{Minimal redraw of the line analogy. The lecture uses the picture qualitatively, so the redraw is kept deliberately spare.}
+\end{figure}
+
+What matters is the rule for signals. Locally, a signal always moves at the limiting speed relative to nearby points. Globally, however, the total distance it must overcome may keep increasing because more space is being inserted between source and destination. The lecture returns to this distinction again and again: local speed limits survive, even while global recession can exceed the speed of light.
+
+Susskind also uses the same picture to explain redshift. If we draw a wave on the line, then as the line expands the wave stretches with it. In the full theory this is not merely an image. It is what one finds by writing wave equations in an expanding geometry.
+
+\subsection{Question \& Answer}
+
+\paragraph{How can a light signal fail to get back if nothing locally moves faster than light?}
+
+Because the signal is not racing against a receding material object in a fixed background. It is moving through a geometry whose distance scale is itself increasing. The light ray always propagates locally at the limiting speed, but the proper distance to its destination can grow faster than the ray can eat it up. In Susskind's line picture, the signal advances from point to point while new points are being inserted in front of it. That is the cosmological horizon in a nutshell.
+
+\section{Reset: Friedmann Equation and the Three Components}
+
+After the opening discussion Susskind explicitly resets the lecture. He says, in effect, that this is the theoretical minimum: just enough mathematics to follow a serious cosmology argument. He dislikes jargon, but he also knows that one eventually has to understand what astronomers mean when they say that they are measuring \(w\). So he begins again from the basic expansion equation.
+
+The central relation is
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2 = \frac{8\pi G}{3}\rho,
+\qquad c=1.
+\end{equation}
+Here \(a(t)\) is the scale factor, and
+\begin{equation}
+H \equiv \frac{\dot a}{a}
+\end{equation}
+is the Hubble parameter. The right-hand side contains the total energy density.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_04_figure_03.png}
+\caption{Friedmann equation with line analogy. The cropped notation on the far right only certifies that \(c=1\) was written nearby; the operative equation on the board is the Friedmann equation shown clearly here.}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=0.8cm,y=0.8cm]
+\draw[thick] (0,0)--(12,0);
+\draw[->,thick] (0.9,0.22)--(2.0,0.22);
+\fill (2.35,0) circle (0.06);
+\draw[thick] plot[smooth] coordinates {(3.0,0) (3.4,0.18) (3.8,-0.15) (4.2,0.18) (4.6,-0.08) (5.0,0)};
+\fill (6.2,0) circle (0.06);
+\draw (10.8,0) circle (0.12);
+\end{tikzpicture}
+\caption{Redraw of the same line analogy, now with the small disturbance visible above the basic expansion equation.}
+\end{figure}
+
+The lecture then reviews the three dynamically important contributions to \(\rho\):
+\begin{itemize}
+\item matter, meaning objects effectively at rest in the comoving frame,
+\item radiation, meaning photons and other effectively massless components,
+\item vacuum energy, written \(\rho_0\), which does not dilute when the universe expands.
+\end{itemize}
+
+For matter and radiation the earlier results are recalled:
+\begin{align}
+\rho_m &= \frac{C_m}{a^3},
+&
+a(t) &\sim t^{2/3},
+\\
+\rho_r &= \frac{C_r}{a^4},
+&
+a(t) &\sim t^{1/2}.
+\end{align}
+The third component is introduced as the odd one:
+\begin{equation}
+\rho_0 = \text{constant}.
+\end{equation}
+Susskind does not yet derive this from first principles. He first wants to explain pressure, because pressure is what will ultimately tell us how \(\rho\) changes with \(a\).
+
+\section{Pressure from Radiation and Matter}
+
+We now come to the first real derivation of the lecture. Susskind begins with radiation, because there pressure is visible. Light bouncing off walls exerts a force, and so pressure can be computed directly from momentum transfer.
+
+\paragraph{The one-dimensional box.}
+Start with a one-dimensional box, that is, a line segment of length \(L\), containing photons moving back and forth. In one dimension force and pressure are effectively the same thing, so this is the cleanest place to begin.
+
+Take a single photon with momentum magnitude \(p\). When it reflects from a wall, its momentum reverses. The change in momentum at each collision is therefore
+\begin{equation}
+\Delta p = 2p.
+\end{equation}
+The time between successive collisions with the same wall is
+\begin{equation}
+\Delta t = \frac{2L}{c},
+\end{equation}
+since the photon must traverse the box and return. Hence the average force on the wall is
+\begin{equation}
+F = \frac{\Delta p}{\Delta t} = \frac{pc}{L}.
+\end{equation}
+Now use the photon relation
+\begin{equation}
+E = pc.
+\end{equation}
+Then
+\begin{equation}
+F = \frac{E}{L}.
+\end{equation}
+But \(E/L\) is precisely the one-dimensional energy density. In this toy model,
+\begin{equation}
+P = \rho,
+\end{equation}
+with the important caveat that here \(\rho\) means energy per unit length, not energy per unit volume.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=0.85cm,y=0.85cm]
+\draw[thick] (0,0)--(0,1.4);
+\draw[thick] (8,0)--(8,1.4);
+\draw[<->] (0,-0.45)--(8,-0.45) node[midway,below]{$L$};
+\draw[->,thick] (1.0,0.95)--(7.0,0.95) node[midway,above]{$p$};
+\draw[->,thick] (7.0,0.45)--(1.0,0.45) node[midway,below]{$-p$};
+\end{tikzpicture}
+\caption{One-dimensional photon-in-a-box argument. The wall receives momentum \(2p\) at each reflection, and the average force becomes energy divided by length.}
+\end{figure}
+
+With many photons the jolts are simply added and averaged. The same relation survives:
+\begin{equation}
+P=\rho
+\end{equation}
+in one dimension.
+
+\paragraph{From one dimension to three.}
+Now pass to a three-dimensional box. If all photons moved only along the \(x\)-direction, then the same reasoning would give a pressure on the walls perpendicular to \(x\), but no pressure on the other faces. That is obviously not the correct picture of thermal radiation. Susskind deliberately makes this wrong assumption first, precisely to expose what has to be corrected.
+
+In an isotropic radiation bath, the momentum is distributed over all directions. The pressure on any given wall depends only on the component of momentum normal to that wall. Averaged over directions, one third of the energy density contributes to each Cartesian pressure component. The result is
+\begin{equation}
+P_r = \frac{\rho_r}{3}.
+\end{equation}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+\draw[thick] (0,0)--(2.3,0)--(2.3,2.3)--(0,2.3)--cycle;
+\draw[thick] (0,0)--(0.9,0.7)--(3.2,0.7)--(3.2,3.0)--(2.3,2.3);
+\draw[thick] (2.3,0)--(3.2,0.7);
+\draw[thick] (2.3,2.3)--(3.2,3.0);
+\draw[thick] (0,2.3)--(0.9,3.0)--(3.2,3.0);
+\draw[->] (1.15,1.15)--(2.05,1.15);
+\draw[->] (1.15,1.15)--(1.15,2.0);
+\draw[->] (1.15,1.15)--(1.85,1.8);
+\node at (2.35,0.9) {$x$};
+\node at (0.85,2.2) {$y$};
+\node at (1.95,2.15) {$z$};
+\end{tikzpicture}
+\caption{Three-dimensional schematic used to motivate the isotropic result \(P_r=\rho_r/3\).}
+\end{figure}
+
+\paragraph{Cold matter.}
+The matter-dominated case is the opposite limit. Take a comoving box, meaning a box that moves with the cosmological flow. Cold matter is at rest relative to that box. The particles still contribute energy density, because each one carries rest energy, but they do not transfer momentum to the walls. Therefore
+\begin{equation}
+P_m = 0.
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_04_figure_04.png}
+\caption{Matter and radiation equation-of-state summary on the board. The lecture uses the row-by-row layout itself as part of the argument.}
+\end{figure}
+
+It is useful to write the board summary in clean form:
+\begin{align}
+\text{matter:} \qquad & a(t)\sim t^{2/3}, \qquad P=0,
+\\
+\text{radiation:} \qquad & a(t)\sim t^{1/2}, \qquad P=\frac{\rho_r}{3}.
+\end{align}
+
+\section{Equation of State and Density Scaling}
+
+Only now does Susskind introduce the jargon he had apologized for. The point is simple: if pressure is proportional to energy density, then the proportionality constant is a useful label for the substance filling the universe. He writes the board relation as
+\begin{equation}
+P = w\rho.
+\end{equation}
+On the board the parameter is written as \(\omega\); in these notes we normalize to the standard \(w\). The examples already obtained give
+\begin{equation}
+w=0 \quad \text{for cold matter},
+\qquad
+w=\frac{1}{3} \quad \text{for radiation}.
+\end{equation}
+One can imagine intermediate values as well. The lecture mentions, for example, the possibility of a warm component with \(0<w<1/3\).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_04_figure_05.png}
+\caption{Equation-of-state parameter on the board. The left panel highlights \(P=\omega\rho\), while the right panel carries the density-scaling derivation in partial form.}
+\end{figure}
+
+At this point the lecture poses the natural question. Matter has \(w=0\) and \(\rho_m\propto a^{-3}\). Radiation has \(w=1/3\) and \(\rho_r\propto a^{-4}\). Is this a coincidence, or is there a general relation between \(w\) and the way \(\rho\) scales?
+
+\subsection{Question \& Answer}
+
+\paragraph{Why should the pressure-to-density ratio determine how the density changes with the scale factor?}
+
+Because expansion does work. This is the thermodynamic heart of the lecture.
+
+Take a box of volume \(V\) and let it expand by a small amount \(dV\). If the contents exert pressure \(P\), then the work done on the walls is \(P\,dV\). That work must come from the internal energy of the contents, so
+\begin{equation}
+dE = -P\,dV.
+\end{equation}
+Now write the internal energy as
+\begin{equation}
+E=\rho V.
+\end{equation}
+Its differential is
+\begin{equation}
+dE = \rho\,dV + V\,d\rho.
+\end{equation}
+Equating the two expressions for \(dE\) gives
+\begin{equation}
+\rho\,dV + V\,d\rho = -P\,dV.
+\end{equation}
+Rearranging,
+\begin{equation}
+V\,d\rho = -(\rho+P)\,dV.
+\end{equation}
+Now insert the equation of state \(P=w\rho\):
+\begin{equation}
+V\,d\rho = -(1+w)\rho\,dV.
+\end{equation}
+Divide by \(\rho V\):
+\begin{equation}
+\frac{d\rho}{\rho} = -(1+w)\frac{dV}{V}.
+\end{equation}
+Integrating,
+\begin{equation}
+\ln \rho = -(1+w)\ln V + \text{const},
+\end{equation}
+and therefore
+\begin{equation}
+\rho \propto V^{-(1+w)}.
+\end{equation}
+
+This is the main result of the section. The rest is the subtle step that Susskind corrects on the fly during the lecture: in cosmology the comoving box has volume proportional to \(a^3\), not to \(a\). Thus
+\begin{equation}
+V \propto a^3,
+\end{equation}
+and so
+\begin{equation}
+\rho \propto a^{-3(1+w)}.
+\end{equation}
+Equivalently,
+\begin{equation}
+\rho = \frac{C}{a^{3(1+w)}}
+\end{equation}
+for some constant \(C\).
+
+Now the earlier cases fall out immediately:
+\begin{align}
+w=0
+&\Longrightarrow
+\rho \propto a^{-3},
+\\
+w=\frac{1}{3}
+&\Longrightarrow
+\rho \propto a^{-4}.
+\end{align}
+Matter and radiation are no longer separate facts. They are two special points on the same curve of possibilities.
+
+Once \(\rho(a)\) is known, one can feed it back into the Friedmann equation and solve for \(a(t)\). Susskind does not derive the general power law in detail here; he leaves that as an exercise in trying \(a\sim t^\alpha\). What matters for the lecture is the logic: \(w\) determines \(\rho(a)\), and \(\rho(a)\) determines the expansion history.
+
+\section{Vacuum Energy as the Special Case \(w=-1\)}
+
+The lecture has been steering toward one especially important value, namely
+\begin{equation}
+w=-1.
+\end{equation}
+If we put that into the general scaling law, the exponent vanishes:
+\begin{equation}
+\rho \propto a^{-3(1+w)} = a^0.
+\end{equation}
+Thus
+\begin{equation}
+\rho=\rho_0=\text{const}.
+\end{equation}
+The energy density does not dilute at all. At the same time the equation of state becomes
+\begin{equation}
+P=-\rho.
+\end{equation}
+This is exactly the vacuum-energy case.
+
+\subsection{Question \& Answer}
+
+\paragraph{How can positive energy density come with negative pressure, and why does that not make the theory inconsistent?}
+
+Because negative pressure is simply tension. Positive pressure pushes on the walls of a box. Negative pressure pulls them inward. A stretched rubber band is the everyday model: it has positive energy stored in it, but it pulls its ends together. There is nothing pathological about that sign. The energy density remains positive; the pressure is negative.
+
+Now feed \(\rho_0\) back into the Friedmann equation:
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2 = \frac{8\pi G}{3}\rho_0.
+\end{equation}
+Since the right-hand side is constant, the Hubble parameter becomes a true constant,
+\begin{equation}
+H=\sqrt{\frac{8\pi G\rho_0}{3}}.
+\end{equation}
+This is the special case in which \(\dot a/a\) really deserves to be called a constant. The equation becomes
+\begin{equation}
+\dot a = Ha.
+\end{equation}
+Its solution is exponential:
+\begin{equation}
+a(t)=a_{\ast}\exp(Ht)
+=
+a_{\ast}\exp\!\left(\sqrt{\frac{8\pi G\rho_0}{3}}\,t\right).
+\end{equation}
+
+This is the late-time accelerated expansion. The scale factor does not merely keep increasing; its rate of increase is proportional to the scale factor itself. The characteristic timescale is \(H^{-1}\), the e-folding time.
+
+Susskind also remarks that the combination of \(\rho_0\) with gravitational constants is often packaged into the cosmological constant \(\Lambda\). Historically the numerical normalization is conventional and a bit untidy. For the present lecture the important physics is simpler than the terminology:
+\begin{equation}
+\Lambda \propto \rho_0.
+\end{equation}
+Vacuum energy and cosmological constant are the same physical ingredient, up to the numerical factors attached by historical convention.
+
+As always, the squared Friedmann equation admits two branches when one takes a square root. There is an expanding branch and a time-reversed contracting branch. The lecture, of course, follows the expanding one.
+
+\section{Three Eras, Observation, and the Late-Time Horizon}
+
+With the general framework in hand, Susskind steps back and looks at the whole history. The universe passes through three broad eras:
+\begin{itemize}
+\item a radiation-dominated era at small \(a\),
+\item a matter-dominated era at intermediate \(a\),
+\item a vacuum-dominated era at large \(a\).
+\end{itemize}
+This follows immediately from the scaling laws
+\begin{align}
+\rho_r &\propto a^{-4},
+&
+\rho_m &\propto a^{-3},
+&
+\rho_0 &= \text{const}.
+\end{align}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+\draw[->] (0,0)--(6.6,0) node[right]{$a$};
+\draw[->] (0,0)--(0,4.6) node[above]{$\rho$};
+\draw[thick] (0.45,4.0) .. controls (1.25,2.95) and (2.25,1.65) .. (6.0,0.20);
+\draw[thick] (0.65,3.0) .. controls (1.75,2.35) and (3.0,1.45) .. (6.0,0.45);
+\draw[thick] (0.35,0.95)--(6.0,0.95);
+\fill (2.0,1.90) circle (0.05);
+\fill (4.35,0.95) circle (0.05);
+\node at (1.15,3.55) {radiation};
+\node at (3.2,1.8) {matter};
+\node at (5.5,1.18) {vacuum};
+\end{tikzpicture}
+\caption{Qualitative energy-density history. Radiation dominates at very small \(a\), matter later, and vacuum at large \(a\).}
+\end{figure}
+
+The time history of the scale factor reflects the same sequence:
+\begin{itemize}
+\item early on, \(a(t)\sim t^{1/2}\),
+\item later, \(a(t)\sim t^{2/3}\),
+\item at late times, \(a(t)\) bends upward toward exponential growth.
+\end{itemize}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+\draw[->] (0,0)--(6.6,0) node[right]{$t$};
+\draw[->] (0,0)--(0,4.6) node[above]{$a(t)$};
+\draw[thick] (0.35,0.25) .. controls (1.0,1.0) and (1.7,1.6) .. (2.25,2.0);
+\draw[thick] (2.25,2.0) .. controls (3.1,2.50) and (4.0,2.95) .. (4.65,3.25);
+\draw[thick] (4.65,3.25) .. controls (5.15,3.45) and (5.6,3.82) .. (6.15,4.5);
+\node at (1.1,1.55) {$t^{1/2}$};
+\node at (3.35,2.70) {$t^{2/3}$};
+\node at (5.45,4.08) {exponential};
+\end{tikzpicture}
+\caption{Qualitative time history of the scale factor: radiation era, matter era, then late accelerated expansion.}
+\end{figure}
+
+The lecture gives the crossover times only as order-of-magnitude statements. Radiation gives way to matter very early, after roughly \(10^4\) years in the lecture's rough accounting, well before the universe becomes transparent. Matter gives way to vacuum much later, after several billion years, roughly halfway through cosmic history on the scale Susskind has in mind.
+
+How do we know this sequence? We do not see the future, but we do see the past. Looking farther away means looking to earlier times. By observing distant galaxies, measuring their recession, and correlating distance with lookback time, one reconstructs the Hubble parameter as a function of time and therefore the history of \(a(t)\). The radiation era is too early to be observed directly by ordinary galaxy astronomy, but the matter-dominated era and the transition to late acceleration are visible in the reconstructed expansion history.
+
+At sufficiently late times, when vacuum energy dominates almost completely, the Hubble parameter approaches the constant value
+\begin{equation}
+H=\sqrt{\frac{8\pi G\rho_0}{3}}.
+\end{equation}
+Using again the Hubble law \(v=Hd\), the horizon distance is defined by the condition \(v=1\), that is,
+\begin{equation}
+1 = H d_H.
+\end{equation}
+Therefore
+\begin{equation}
+d_H=\frac{1}{H}
+=
+\frac{1}{\sqrt{8\pi G\rho_0/3}}.
+\end{equation}
+This is the late-time cosmic horizon. Once the vacuum-dominated exponential era sets in, the horizon distance is fixed. Galaxies continue to move outward and pass through it one by one, disappearing not by abruptly vanishing, but by becoming ever more redshifted and fainter.
+
+This is why Susskind spends time on the melancholy future of astronomy. In the remote future, only nearby gravitationally bound structures remain visible. Distant galaxies cross the horizon. The microwave background is stretched to such long wavelengths that it effectively fades away. Astronomers living then may infer that they inhabit a single isolated island of matter in an empty universe.
+
+The lecture then briefly restores the curvature term that had been omitted in the main derivation:
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=
+\frac{8\pi G}{3}\rho
+-
+\frac{K}{a^2}.
+\end{equation}
+Numerically this term appears to be small, but conceptually it matters. In the older cosmology, before vacuum energy was taken seriously, one imagined a matter-dominated universe with curvature of the right sign to halt the expansion and reverse it. The result was the old Big-Crunch picture: expansion, turnaround, recontraction. The mathematics is still legitimate, but it no longer appears to describe our universe.
+
+The present-day composition, in the lecture's rough numbers, is
+\begin{align}
+\frac{\rho_0}{\rho_{\text{total}}} &\sim 0.7,
+&
+\frac{\rho_m}{\rho_{\text{total}}} &\sim 0.3,
+\\
+\frac{\rho_{\text{lum}}}{\rho_{\text{total}}} &\sim 0.05,
+&
+\frac{\rho_{\text{dark}}}{\rho_{\text{total}}} &\sim 0.25,
+\end{align}
+with radiation negligible today. Dark matter and luminous matter both scale as \(a^{-3}\), so their mutual ratio stays roughly fixed even while the overall balance between matter, radiation, and vacuum changes from era to era.
+
+The lecture closes by turning toward geometry. If we know the distance to the surface of last scattering, and if we have a standard lump there whose physical size can be estimated, then its observed angular size tests whether space is positively curved, negatively curved, or flat.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+\coordinate (O) at (0,0);
+\coordinate (L) at (-2.2,4.2);
+\coordinate (R) at (2.2,4.2);
+\draw[thick] (O)--(L);
+\draw[thick] (O)--(R);
+\draw[thick] (L)--(R);
+\draw (0.55,1.0) arc[start angle=61,end angle=119,radius=1.15];
+\node at (0,1.7) {$\theta$};
+\node at (0,4.55) {$L$};
+\node at (-1.55,2.15) {$d$};
+\node at (1.55,2.15) {$d$};
+\node[below] at (O) {observer};
+\node[above] at (0,4.2) {lump on the last-scattering surface};
+\end{tikzpicture}
+\caption{Preview of the next topic: the angular size of a standard lump on the last-scattering surface provides a test of spatial curvature.}
+\end{figure}
+
+That geometry argument belongs properly to the next lecture. Here it functions as an outlook. The work of the present lecture is already complete: pressure has been related to energy density, the equation-of-state parameter \(w\) has been introduced, and vacuum energy has emerged as the special case \(w=-1\).
+
+\section{Summary}
+
+The lecture begins with preferred frames and horizons, but its mathematical center is the relation between pressure and energy density. Radiation gives
+\begin{equation}
+P_r=\frac{\rho_r}{3},
+\end{equation}
+cold matter gives
+\begin{equation}
+P_m=0,
+\end{equation}
+and both are unified by
+\begin{equation}
+P=w\rho.
+\end{equation}
+Thermodynamics then shows that
+\begin{equation}
+\rho \propto a^{-3(1+w)}.
+\end{equation}
+From that one immediately reads off the special case \(w=-1\): constant vacuum energy, negative pressure, and exponential expansion. The three cosmic eras, the late-time fixed horizon, and the modern picture of an accelerating universe all follow from that single thread.
