@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/cosmology/2013_winter_theoretical_minimum",
+  "transcript_rel": "core/cosmology/2013_winter_theoretical_minimum/166 - Cosmology Lecture 2 [938_TNP4aUs].md",
+  "video_rel": "core/cosmology/2013_winter_theoretical_minimum/166 - Cosmology Lecture 2 [938_TNP4aUs].webm",
+  "lecture_number": 2,
+  "lecture_slug": "lecture_02",
+  "lecture_title": "Cosmology Lecture 2",
+  "assets": [
+    {
+      "name": "lecture_02_figure_02.png",
+      "timestamp_seconds": 1760.838,
+      "timestamp_hhmmss": "00:29:20.838",
+      "source_candidate": "lecture_02_window_02_candidate_03_002920838.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "We go back to the energy equations",
+      "segment_start_seconds": 1759.72,
+      "segment_start_hhmmss": "00:29:19.720",
+      "segment_end_seconds": 1761.44,
+      "segment_end_hhmmss": "00:29:21.440",
+      "caption_hint": "We go back to the energy equations"
+    },
+    {
+      "name": "lecture_02_figure_03.png",
+      "timestamp_seconds": 2279.876,
+      "timestamp_hhmmss": "00:37:59.876",
+      "source_candidate": "lecture_02_window_03_candidate_03_003759876.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "the Friedmann equation for non-zero energy.",
+      "segment_start_seconds": 2277.9,
+      "segment_start_hhmmss": "00:37:57.900",
+      "segment_end_seconds": 2280.94,
+      "segment_end_hhmmss": "00:38:00.940",
+      "caption_hint": "the Friedmann equation for non-zero energy."
+    },
+    {
+      "name": "lecture_02_figure_04.png",
+      "timestamp_seconds": 3322.81,
+      "timestamp_hhmmss": "00:55:22.810",
+      "source_candidate": "lecture_02_window_04_candidate_03_005522810.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "Energy-momentum tensor",
+      "segment_start_seconds": 3322.08,
+      "segment_start_hhmmss": "00:55:22.080",
+      "segment_end_seconds": 3323.34,
+      "segment_end_hhmmss": "00:55:23.340",
+      "caption_hint": "Energy-momentum tensor"
+    },
+    {
+      "name": "lecture_02_figure_05.png",
+      "timestamp_seconds": 3472.659,
+      "timestamp_hhmmss": "00:57:52.659",
+      "source_candidate": "lecture_02_window_05_candidate_02_005752659.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the best overall mathematical record of the moment. It preserves the right-hand equation in its most complete visible form, including the \u200b\\(\\nu/a^3\\) matter term and the \u200b\\(C/a^2\\) correction, while still keeping the adjacent \u200b\\(8\\pi G\\rho/3\\) form visible on the left. Candidate 1 hides more of the left equation, and candidates 3 and 4 lose too much of the right-hand expression.",
+      "subtitle_excerpt": "from the E equals mc squared energy.",
+      "segment_start_seconds": 3471.96,
+      "segment_start_hhmmss": "00:57:51.960",
+      "segment_end_seconds": 3473.8,
+      "segment_end_hhmmss": "00:57:53.800",
+      "caption_hint": "Curvature form and density-substituted Friedmann equation"
+    },
+    {
+      "name": "lecture_02_figure_06.png",
+      "timestamp_seconds": 4297.997,
+      "timestamp_hhmmss": "01:11:37.997",
+      "source_candidate": "lecture_02_window_06_candidate_03_011137997.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "That's the equation of motion for a universe which contains,",
+      "segment_start_seconds": 4295.8,
+      "segment_start_hhmmss": "01:11:35.800",
+      "segment_end_seconds": 4299.18,
+      "segment_end_hhmmss": "01:11:39.180",
+      "caption_hint": "That's the equation of motion for a universe which contains,"
+    }
+  ]
+}
