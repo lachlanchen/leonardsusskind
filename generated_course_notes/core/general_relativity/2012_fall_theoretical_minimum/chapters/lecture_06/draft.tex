@@ -1,0 +1,328 @@
+\chapter{Black Holes, Photon Orbits, and the Horizon}
+
+This lecture takes the Schwarzschild black hole seriously as the general-relativistic analog of a Newtonian point mass, and then asks what that geometry actually does to motion, light, clocks, and causal structure. We begin with the contrast between the Newtonian centrifugal barrier and the relativistic pull toward the singularity, pass through the action principle and the circular photon orbit at \(r=3MG\), and then return to the horizon itself, where a change of coordinates reveals that the local geometry is much milder than Schwarzschild coordinates first suggest. These notes follow Leonard Susskind's lecture closely and are prepared as a Video2Book chapter with curation support from LazyingArt LLC.
+
+\section{Point Masses and the Schwarzschild Geometry}
+
+Susskind begins by resetting the problem. In Newtonian mechanics the force law
+\begin{equation}
+F=\frac{GMm}{r^{2}}
+\end{equation}
+is already an idealization: it treats the gravitating body as though all of its mass were concentrated at a point. Even in that idealization, however, the point center is hard to hit. A perfectly radial trajectory reaches the center, but any arbitrarily small miss produces angular momentum, and with angular momentum comes the familiar centrifugal barrier. The particle swings around the center instead of striking it.
+
+The relativistic black hole is the corresponding point-mass idealization in general relativity, but the geometry changes the story qualitatively. The center is no longer merely a place one can miss by going around it. Inside the horizon the singularity lies in the future, and that is a very different statement.
+
+For this lecture we do not derive the Schwarzschild solution. We take it as the target geometry and ask what it means. In the sign convention used throughout the lecture,
+\begin{equation}
+d\tau^{2}
+=
+\left(1-\frac{2MG}{r}\right)dt^{2}
+-
+\left(1-\frac{2MG}{r}\right)^{-1}dr^{2}
+-
+r^{2}d\Omega^{2}.
+\end{equation}
+
+Far from the black hole, the factor \(2MG/r\) is negligible, and the metric reduces to flat spacetime in polar coordinates. The interesting questions are therefore concentrated at two radii:
+\begin{equation}
+r=2MG
+\qquad \text{and} \qquad
+r=0.
+\end{equation}
+
+\begin{remark}
+In the spoken lecture Susskind writes the angular part in a slightly informal way and then immediately restricts attention to motion in a single plane. For the orbit problem below, only one angular coordinate is needed, so we write the reduced angular sector simply as \(r^{2}d\theta^{2}\).
+\end{remark}
+
+\section{Horizon, Singularity, and Falling Clocks}
+
+The first conceptual split of the lecture is between the horizon at \(r=2MG\) and the singularity at \(r=0\). In Schwarzschild coordinates the coefficient of \(dt^{2}\) vanishes at the horizon, while the coefficient of \(dr^{2}\) diverges. Something certainly looks bad there. But the lecture insists on a distinction: the horizon is a coordinate peculiarity, whereas the center is a genuine curvature singularity.
+
+At \(r=0\) the geometry itself becomes violent. Curvature invariants diverge. In physical language, tidal forces diverge. An infalling object would be stretched radially and squeezed transversely without bound. That is the real disaster.
+
+The horizon behaves differently. It is special, but not because curvature blows up there. To see the time issue in the simplest setting, consider a static clock with \(dr=d\Omega=0\). Then
+\begin{equation}
+d\tau
+=
+\sqrt{1-\frac{2MG}{r}}\,dt.
+\end{equation}
+For \(r\gg 2MG\), this is just \(d\tau\approx dt\). But as we move inward, the same coordinate time interval \(dt\) corresponds to a smaller proper time interval \(d\tau\).
+
+This already points toward the falling-clock story. In Schwarzschild coordinate time, an infalling object appears to take forever to reach the horizon. In proper time, the time measured by the object's own clock, the interval is finite. Susskind emphasizes this physically: a heartbeat is a clock, a light clock is a clock, a human body is full of clocks. They all measure \(\tau\), not the global coordinate \(t\).
+
+Thus the lecture's first paradox is already visible before any new diagram is drawn:
+\begin{itemize}
+\item In Schwarzschild time, infall to the horizon takes an infinite time.
+\item In proper time, the infalling observer reaches the horizon in a finite time.
+\end{itemize}
+The later Alice--Bob discussion will explain how both statements can be true at once.
+
+\section{Circular Motion from the Action Principle}
+
+Before returning to the horizon pictures, Susskind detours to a second problem: orbiting the black hole. The point of the detour is methodological as much as physical. We solve the problem not by brute-force differential equations, but by exploiting the action, the Lagrangian, and the conservation laws.
+
+Introduce
+\begin{equation}
+\mathcal F(r)=1-\frac{2MG}{r},
+\qquad
+\mathcal G(r)=\mathcal F(r)^{-1}.
+\end{equation}
+Restricting motion to a single angular variable \(\theta\), the proper time element becomes
+\begin{equation}
+d\tau
+=
+dt\,
+\sqrt{\mathcal F(r)-\mathcal G(r)\dot r^{\,2}-r^{2}\dot\theta^{\,2}},
+\end{equation}
+so the action for a particle of mass \(m\) is
+\begin{equation}
+S
+=
+-m\int d\tau
+=
+-m\int dt\,
+\sqrt{\mathcal F(r)-\mathcal G(r)\dot r^{\,2}-r^{2}\dot\theta^{\,2}}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_06_figure_02.png}
+\caption{Relativistic particle Lagrangian in square-root form. The board image records the lecture moment; the full expression under the square root is reconstructed from the transcript.}
+\end{figure}
+
+Therefore the Lagrangian is
+\begin{equation}
+\mathcal L
+=
+-m\sqrt{\mathcal F(r)-\mathcal G(r)\dot r^{\,2}-r^{2}\dot\theta^{\,2}}.
+\end{equation}
+
+The generic definition of conjugate momentum is
+\begin{equation}
+p_{q}=\frac{\partial \mathcal L}{\partial \dot q}.
+\end{equation}
+Applying it to the two coordinates \(r\) and \(\theta\), we obtain
+\begin{align}
+p_{r}
+&=
+\frac{\partial \mathcal L}{\partial \dot r}
+=
+\frac{m\mathcal G(r)\dot r}
+{\sqrt{\mathcal F(r)-\mathcal G(r)\dot r^{\,2}-r^{2}\dot\theta^{\,2}}}, \\
+L
+&=
+\frac{\partial \mathcal L}{\partial \dot\theta}
+=
+\frac{mr^{2}\dot\theta}
+{\sqrt{\mathcal F(r)-\mathcal G(r)\dot r^{\,2}-r^{2}\dot\theta^{\,2}}}.
+\end{align}
+
+The angular momentum is conserved because \(\theta\) is cyclic. Energy is conserved because the Lagrangian has no explicit dependence on \(t\). Using the Hamiltonian construction,
+\begin{equation}
+E=H=\sum_{i}p_{i}\dot q_{i}-\mathcal L,
+\end{equation}
+we can derive the conserved energy explicitly:
+\begin{align}
+E
+&=
+p_{r}\dot r+L\dot\theta-\mathcal L \\
+&=
+\frac{m\mathcal G(r)\dot r^{\,2}}{\sqrt{\Delta}}
++
+\frac{mr^{2}\dot\theta^{\,2}}{\sqrt{\Delta}}
++
+m\sqrt{\Delta} \\
+&=
+\frac{m\left[\mathcal G(r)\dot r^{\,2}+r^{2}\dot\theta^{\,2}+\Delta\right]}{\sqrt{\Delta}} \\
+&=
+\frac{m\mathcal F(r)}
+{\sqrt{\mathcal F(r)-\mathcal G(r)\dot r^{\,2}-r^{2}\dot\theta^{\,2}}},
+\end{align}
+where, for brevity, \(\Delta=\mathcal F(r)-\mathcal G(r)\dot r^{\,2}-r^{2}\dot\theta^{\,2}\).
+
+This is the key algebraic move in the lecture. Once we know the conserved \(L\) and \(E\), the orbit problem stops looking like a differential-equation problem and starts looking like a bookkeeping problem.
+
+\section{The Photon Sphere}
+
+Now specialize to circular motion. Then
+\begin{equation}
+\dot r=0.
+\end{equation}
+It is convenient to factor the mass out of the angular momentum and define the reduced angular momentum
+\begin{equation}
+\lambda:=\frac{L}{m}.
+\end{equation}
+For a circular orbit, the conserved angular momentum and energy reduce to
+\begin{align}
+\frac{L}{m}
+&=
+\frac{r^{2}\dot\theta}
+{\sqrt{\mathcal F(r)-r^{2}\dot\theta^{\,2}}}
+=
+\lambda, \\
+E
+&=
+\frac{\mathcal F(r)m}
+{\sqrt{\mathcal F(r)-r^{2}\dot\theta^{\,2}}}.
+\end{align}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_04.png}
+\caption{Angular momentum and energy for circular Schwarzschild motion. The lecture board stacks the angular-momentum relation above the energy relation, which is exactly the order needed for the elimination of \(\dot\theta\).}
+\end{figure}
+
+We now eliminate \(\dot\theta\). Squaring the angular-momentum relation gives
+\begin{equation}
+\lambda^{2}
+\left(\mathcal F-r^{2}\dot\theta^{\,2}\right)
+=
+r^{4}\dot\theta^{\,2},
+\end{equation}
+so
+\begin{equation}
+\dot\theta^{\,2}
+=
+\frac{\lambda^{2}\mathcal F(r)}{r^{2}\left(r^{2}+\lambda^{2}\right)}.
+\end{equation}
+Substituting this into the energy formula yields
+\begin{align}
+E(r,\lambda)
+&=
+\frac{\mathcal F(r)m}
+{\sqrt{\mathcal F(r)-r^{2}\dot\theta^{\,2}}} \\
+&=
+m\,\frac{\sqrt{\mathcal F(r)}\sqrt{r^{2}+\lambda^{2}}}{r}.
+\end{align}
+
+This is the cleaned form of the lecture's prescription: first solve the angular-momentum equation, then insert the result into the energy.
+
+To reach the photon orbit we take the massless limit while keeping the physical angular momentum fixed:
+\begin{equation}
+m\to 0,
+\qquad
+\lambda\to\infty,
+\qquad
+L=m\lambda
+\quad \text{fixed}.
+\end{equation}
+In that limit,
+\begin{equation}
+E_{\gamma}(r;L)
+=
+L\,\frac{\sqrt{1-\frac{2MG}{r}}}{r}.
+\end{equation}
+
+\subsection{Question \& Answer}
+
+Why does extremizing this energy locate the photon orbit, and why is the extremum a maximum rather than a minimum?
+
+Because for fixed angular momentum the radial degree of freedom behaves as though it were moving in an effective potential. A circular orbit is an equilibrium condition in the radial direction, so we look for a stationary point of the energy as a function of \(r\). Here the relevant derivative is
+\begin{equation}
+\frac{d}{dr}
+\left(
+\frac{\sqrt{1-\frac{2MG}{r}}}{r}
+\right)
+=
+-\frac{\sqrt{1-\frac{2MG}{r}}}{r^{2}}
++
+\frac{MG}{r^{3}\sqrt{1-\frac{2MG}{r}}}.
+\end{equation}
+Setting this equal to zero gives
+\begin{equation}
+r=3MG.
+\end{equation}
+
+The stationary point is a maximum, not a minimum. That means equilibrium is unstable. A photon placed exactly there can orbit, but a slight outward perturbation lets it escape after sweeping through a large angle, while a slight inward perturbation drives it toward the hole. This is the photon sphere.
+
+The lecture immediately turns this into an optical picture. A ray grazing just outside \(3MG\) can whip around the hole and come back out; a ray just inside \(3MG\) is captured. That is why a black hole does not merely shift background images the way a weak lens does. It fragments them, duplicates them, and builds rings from families of rays that circle the hole one or many times before escaping.
+
+\section{Near the Horizon}
+
+Having solved the orbit problem, the lecture returns to the horizon. Something appears to happen there: clock rates change, the Schwarzschild coefficients change sign, and one coefficient diverges. But the claim is still that nothing locally catastrophic happens at the horizon itself.
+
+To see this, Susskind zooms in near \(r=2MG\), temporarily choosing units in which
+\begin{equation}
+2MG=1.
+\end{equation}
+Ignoring the angular directions for the moment, the metric becomes
+\begin{equation}
+d\tau^{2}
+=
+\left(1-\frac{1}{r}\right)dt^{2}
+-
+\left(1-\frac{1}{r}\right)^{-1}dr^{2}.
+\end{equation}
+Near the horizon \(r=1\), write
+\begin{equation}
+\xi=r-1.
+\end{equation}
+Very close to the horizon, the harmless factor of \(r\) in the denominator may be replaced by its horizon value, and the metric becomes
+\begin{equation}
+d\tau^{2}
+=
+\xi\,dt^{2}
+-
+\frac{d\xi^{2}}{\xi}.
+\end{equation}
+
+Now compare this with flat Minkowski spacetime written in hyperbolic coordinates:
+\begin{equation}
+X=\rho\cosh\omega,
+\qquad
+T=\rho\sinh\omega,
+\qquad
+X^{2}-T^{2}=\rho^{2}.
+\end{equation}
+In these coordinates the flat metric is
+\begin{equation}
+d\tau^{2}
+=
+\rho^{2}d\omega^{2}-d\rho^{2}.
+\end{equation}
+Make the change of variables
+\begin{equation}
+\rho^{2}=4\xi,
+\qquad
+\omega=\frac{t}{2}.
+\end{equation}
+Then \(2\rho\,d\rho=4\,d\xi\), so \(d\rho^{2}=d\xi^{2}/\xi\), and the flat metric becomes precisely
+\begin{equation}
+d\tau^{2}
+=
+\xi\,dt^{2}
+-
+\frac{d\xi^{2}}{\xi}.
+\end{equation}
+
+So the near-horizon Schwarzschild geometry is, to this approximation, just the Rindler form of flat spacetime.
+
+\subsection{Question \& Answer}
+
+How do we reconcile the claim that something happens at the horizon with the claim that nothing locally dramatic happens there?
+
+The answer is that both statements are true, but they refer to different things. What happens in Schwarzschild coordinates is a genuine coordinate effect: clock comparisons with a stationary observer outside the hole become singular, and the coordinate roles of \(t\) and \(r\) exchange across the horizon. What does \emph{not} happen is a blow-up of local curvature at the horizon. The near-horizon metric can be rewritten as the metric of flat spacetime in accelerated coordinates, and that is the precise mathematical sense in which the horizon is locally innocuous.
+
+\section{Alice, Bob, and the Horizon as a Causal Boundary}
+
+Once the near-horizon geometry is written in Rindler form, the causal story becomes visible. The outside observer, Alice, stays at fixed radius outside the hole. That is the analog of a uniformly accelerated observer in flat spacetime. Bob falls inward.
+
+For Alice, the Schwarzschild time \(t\), or equivalently the hyperbolic angle \(\omega\), runs to infinity as Bob approaches the horizon. Thus she never sees him cross it. If Bob emits pulses, Alice receives them more and more slowly. The pulses are redshifted: what begins as visible light is stretched to infrared, then microwaves, then longer and longer radio waves. Operationally Bob simply fades away.
+
+Bob tells a different story because he carries his own clock. His proper time from the outside region to the horizon is finite. He crosses the horizon without noticing a sharp local event there. He continues inward, and only later do the tidal forces grow large enough to destroy him.
+
+This asymmetry is exactly what the lecture wants us to internalize. Alice can keep looking back forever and never see Bob pass through the horizon. Bob has no trouble seeing Alice while he falls, and at the moment of crossing he sees nothing special happen to her. The difference is not a contradiction. Alice organizes events by the external coordinate time; Bob organizes them by proper time along his worldline.
+
+Inside the horizon the roles of radius and time are exchanged. The radial variable becomes timelike. This is why Susskind says that the singularity is ``a time, not a place.'' A place can be avoided by going around it. The future cannot. Once a timelike trajectory has entered the interior region, the surface \(r=0\) lies to its future just as surely as tomorrow lies to ours. In that sense the singularity is unavoidable.
+
+The horizon is therefore the distance of no return. Outside it, outward-directed light rays can still escape. Inside it, even light cannot reach the exterior. The lecture also adds one more refinement: the photon sphere at \(r=3MG\) already constrains tangential null motion, but it is only at \(r=2MG\) that all causal routes to the outside disappear.
+
+\section{Summary and Preview}
+
+The lecture has done three things in one sweep. It has separated the horizon from the singularity, showing that the former is not a curvature singularity while the latter is. It has used the action principle and conservation laws to derive the unstable circular photon orbit at
+\begin{equation}
+r=3MG,
+\end{equation}
+the photon sphere. And it has shown, by a near-horizon change of coordinates, that the horizon is locally like an accelerated frame in flat spacetime even though its global causal role is extraordinary.
+
+That role is the real payoff. Outside the hole one may still escape. Inside, \(r=0\) is in the future of every timelike trajectory. The lecture closes by turning this into the next problem: not an already formed black hole, but a collapsing shell. The next step is to understand how the horizon begins at the center, grows outward, and meets the infalling matter that forms the hole in the first place.
