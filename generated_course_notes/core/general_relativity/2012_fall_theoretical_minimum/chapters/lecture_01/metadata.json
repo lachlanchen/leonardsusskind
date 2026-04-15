@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/general_relativity/2012_fall_theoretical_minimum",
+  "transcript_rel": "core/general_relativity/2012_fall_theoretical_minimum/155 - General Relativity Lecture 1 [JRZgW1YjCKk].md",
+  "video_rel": "core/general_relativity/2012_fall_theoretical_minimum/155 - General Relativity Lecture 1 [JRZgW1YjCKk].webm",
+  "lecture_number": 1,
+  "lecture_slug": "lecture_01",
+  "lecture_title": "General Relativity Lecture 1",
+  "assets": [
+    {
+      "name": "lecture_01_figure_02.png",
+      "timestamp_seconds": 992.972,
+      "timestamp_hhmmss": "00:16:32.972",
+      "source_candidate": "lecture_01_window_02_candidate_01_001632972.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 is the most useful frame for note writing because it preserves the clearest and most complete visible equation at this moment: the left board still shows the written form of Newton's law, while the later candidates crop that content more severely and only add an incomplete new symbol on the right board. It is the best documentary record of the lecture's transition into the equations of motion.",
+      "subtitle_excerpt": "the equations of motion are F equals mA,",
+      "segment_start_seconds": 992.78,
+      "segment_start_hhmmss": "00:16:32.780",
+      "segment_end_seconds": 994.38,
+      "segment_end_hhmmss": "00:16:34.380",
+      "caption_hint": "Newtonian equation of motion on the board"
+    },
+    {
+      "name": "lecture_01_figure_03.png",
+      "timestamp_seconds": 3924.499,
+      "timestamp_hhmmss": "01:05:24.499",
+      "source_candidate": "lecture_01_window_03_candidate_02_010524499.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 02 gives the best balance of legibility and completeness. The line-element equation is more readable than in candidate 01, where the pointing arm obscures its right-hand side, and it preserves both the upper grid sketch and the lower curved coordinate-patch diagram with less occlusion than the later gesture-heavy frames. It is the strongest documentary frame for tying the metric-tensor formula to the geometric picture on the board.",
+      "subtitle_excerpt": "if the metric tensor has a particular property,",
+      "segment_start_seconds": 3923.686,
+      "segment_start_hhmmss": "01:05:23.686",
+      "segment_end_seconds": 3925.826,
+      "segment_end_hhmmss": "01:05:25.826",
+      "caption_hint": "Metric line element on a curved coordinate patch"
+    },
+    {
+      "name": "lecture_01_figure_04.png",
+      "timestamp_seconds": 4034.746,
+      "timestamp_hhmmss": "01:07:14.746",
+      "source_candidate": "lecture_01_window_04_candidate_04_010714746.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 04 is the clearest and least occluded frame in this window. It preserves the metric line element with the metric components and differential coordinates legible, while also keeping the lower curved coordinate-patch sketch and the upper curvilinear-grid sketch visible. The earlier candidates have more hand and body occlusion over the equation and diagram, so they are less useful for note writing.",
+      "subtitle_excerpt": "and I give you one metric tensor,",
+      "segment_start_seconds": 4032.986,
+      "segment_start_hhmmss": "01:07:12.986",
+      "segment_end_seconds": 4034.986,
+      "segment_end_hhmmss": "01:07:14.986",
+      "caption_hint": "One metric tensor on a coordinate patch"
+    },
+    {
+      "name": "lecture_01_figure_05.png",
+      "timestamp_seconds": 4150.395350000001,
+      "timestamp_hhmmss": "01:09:10.395",
+      "source_candidate": "lecture_01_window_05_candidate_03_010910395.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "curvy character of the metric tensor here?",
+      "segment_start_seconds": 4148.706,
+      "segment_start_hhmmss": "01:09:08.706",
+      "segment_end_seconds": 4151.305,
+      "segment_end_hhmmss": "01:09:11.305",
+      "caption_hint": "curvy character of the metric tensor here?"
+    },
+    {
+      "name": "lecture_01_figure_06.png",
+      "timestamp_seconds": 4307.508,
+      "timestamp_hhmmss": "01:11:47.508",
+      "source_candidate": "lecture_01_window_06_candidate_02_011147508.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 02 is the clearest overall record of the board layout in this window. The left-hand curved-surface sketch with downward arrows is fully visible, the local coordinate axes labeled by x^1 and x^2 remain readable on the right, and the lower curved coordinate-patch drawing is still present. The metric formula itself is only partially visible in all four frames, so this moment is most useful as diagram evidence, and candidate 02 gives the best balance of completeness and minimal occlusion.",
+      "subtitle_excerpt": "the metric tensor can always be taken",
+      "segment_start_seconds": 4306.786,
+      "segment_start_hhmmss": "01:11:46.786",
+      "segment_end_seconds": 4308.686,
+      "segment_end_hhmmss": "01:11:48.686",
+      "caption_hint": "Curved surface and local coordinate patch"
+    }
+  ]
+}
