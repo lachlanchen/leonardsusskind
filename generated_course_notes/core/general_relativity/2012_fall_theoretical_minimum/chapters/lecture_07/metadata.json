@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/general_relativity/2012_fall_theoretical_minimum",
+  "transcript_rel": "core/general_relativity/2012_fall_theoretical_minimum/161 - General Relativity Lecture 7 [BdYtfYkdGDk].md",
+  "video_rel": "core/general_relativity/2012_fall_theoretical_minimum/161 - General Relativity Lecture 7 [BdYtfYkdGDk].mkv",
+  "lecture_number": 7,
+  "lecture_slug": "lecture_07",
+  "lecture_title": "General Relativity Lecture 7",
+  "assets": [
+    {
+      "name": "lecture_07_figure_02.png",
+      "timestamp_seconds": 971.91,
+      "timestamp_hhmmss": "00:16:11.910",
+      "source_candidate": "lecture_07_window_03_candidate_01_001611910.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 01 is the cleanest and least obstructed view of the board sketch. It preserves the simple one-dimensional coordinate layout that Susskind is using to explain that r=1 is the horizon in his rescaled coordinates, while later candidates introduce paper or hand intrusion without improving legibility.",
+      "subtitle_excerpt": "r equals 1 is the horizon in these coordinates.",
+      "segment_start_seconds": 971.5,
+      "segment_start_hhmmss": "00:16:11.500",
+      "segment_end_seconds": 974.92,
+      "segment_end_hhmmss": "00:16:14.920",
+      "caption_hint": "Radial line with horizon at r=1"
+    },
+    {
+      "name": "lecture_07_figure_03.png",
+      "timestamp_seconds": 1779.04,
+      "timestamp_hhmmss": "00:29:39.040",
+      "source_candidate": "lecture_07_window_04_candidate_01_002939040.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 is the clearest and most useful frame for note writing. It cleanly shows the transformed metric on the right board together with the asymptotic condition \\(\\lim_{\\rho\\to\\infty} F(\\rho)\\rho^2=4\\), which directly supports the spoken point that the metric far from the black hole approaches the expected form. Later candidates either add occlusion or shift to a less focused view.",
+      "subtitle_excerpt": "That just reflects the metric far from the black hole.",
+      "segment_start_seconds": 1778.24,
+      "segment_start_hhmmss": "00:29:38.240",
+      "segment_end_seconds": 1786.96,
+      "segment_end_hhmmss": "00:29:46.960",
+      "caption_hint": "Asymptotic condition for the rho-coordinate metric"
+    },
+    {
+      "name": "lecture_07_figure_04.png",
+      "timestamp_seconds": 3294.937,
+      "timestamp_hhmmss": "00:54:54.937",
+      "source_candidate": "lecture_07_window_05_candidate_04_005454937.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 04 is the best documentary frame because the lecturer has stepped far enough aside for the causal sketch to be read as a whole. The key label t=\\infty is visible, the fan of red lines is unobstructed, and the Alice annotation remains legible, whereas the earlier candidates are more hand-occluded and more obviously mid-gesture.",
+      "subtitle_excerpt": "she doesn't pass the horizon until t equals infinity.",
+      "segment_start_seconds": 3291.54,
+      "segment_start_hhmmss": "00:54:51.540",
+      "segment_end_seconds": 3295.4,
+      "segment_end_hhmmss": "00:54:55.400",
+      "caption_hint": "Alice and the t equals infinity horizon sketch"
+    },
+    {
+      "name": "lecture_07_figure_05.png",
+      "timestamp_seconds": 4692.341,
+      "timestamp_hhmmss": "01:18:12.341",
+      "source_candidate": "lecture_07_window_06_candidate_04_011812341.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 04 gives the clearest overall view of the completed board diagram with the least critical occlusion. The lecturer has shifted enough that the fan of colored rays, the curved boundary lines, and the top-right convergence region are all more readable than in the earlier frames, where his moving hand covers more of the construction.",
+      "subtitle_excerpt": "Draw the diagram and answer the question.",
+      "segment_start_seconds": 4690.44,
+      "segment_start_hhmmss": "01:18:10.440",
+      "segment_end_seconds": 4692.6,
+      "segment_end_hhmmss": "01:18:12.600",
+      "caption_hint": "Causal ray diagram for the answer"
+    }
+  ]
+}
