@@ -1,0 +1,52 @@
+{
+  "course_rel": "core/cosmology/2013_winter_theoretical_minimum",
+  "transcript_rel": "core/cosmology/2013_winter_theoretical_minimum/169 - Cosmology Lecture 5 [GgKGPyFL-TM].md",
+  "video_rel": "core/cosmology/2013_winter_theoretical_minimum/169 - Cosmology Lecture 5 [GgKGPyFL-TM].mkv",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Cosmology Lecture 5",
+  "assets": [
+    {
+      "name": "lecture_05_figure_02.png",
+      "timestamp_seconds": 198.38,
+      "timestamp_hhmmss": "00:03:18.380",
+      "source_candidate": "lecture_05_window_02_candidate_04_000318380.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 4 is the clearest useful frame in this window. It preserves the visible board context from the preceding discussion, including the scale-factor power laws at the top, and it also captures the newly written energy-density symbol below them. Susskind has moved enough that the fresh symbol is no longer being written over or blocked by his hand. Candidate 3 shows the writing action but occludes the new notation, candidate 2 lacks the new symbol and is mostly a carryover board, and candidate 1 is largely blank board plus lecturer.",
+      "subtitle_excerpt": "The equation of state, incidentally, is what tells us how the energy density, which is",
+      "segment_start_seconds": 191.32,
+      "segment_start_hhmmss": "00:03:11.320",
+      "segment_end_seconds": 198.98,
+      "segment_end_hhmmss": "00:03:18.980",
+      "caption_hint": "Scale-factor laws with new rho notation"
+    },
+    {
+      "name": "lecture_05_figure_03.png",
+      "timestamp_seconds": 819.612,
+      "timestamp_hhmmss": "00:13:39.612",
+      "source_candidate": "lecture_05_window_04_candidate_04_001339612.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 4 captures the fullest and most note-useful board state in this subtitle window. It preserves the equation-of-state line on the right, the box sketch used for the thermodynamic argument, the earlier scale-factor power laws on the left, and the matter-density relation written with an explicit rho on the left board. Candidate 3 is more animated but the pointing hand partially occludes the equation-of-state line, candidate 2 shows a slightly earlier and less finished board state, and candidate 1 crops the right-side material too much.",
+      "subtitle_excerpt": "But let's plug in our guess for an equation of state that pressure is equal to W times",
+      "segment_start_seconds": 815.74,
+      "segment_start_hhmmss": "00:13:35.740",
+      "segment_end_seconds": 820.14,
+      "segment_end_hhmmss": "00:13:40.140",
+      "caption_hint": "Equation of state with thermodynamic box"
+    },
+    {
+      "name": "lecture_05_figure_04.png",
+      "timestamp_seconds": 935.6,
+      "timestamp_hhmmss": "00:15:35.600",
+      "source_candidate": "lecture_05_window_05_candidate_04_001535600.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 4 is the most useful frame in this window because it preserves the preceding differential relation across the top of the board and also shows the newly written logarithmic form pushed one step further, with \"log rho =\" already on the board. Candidate 3 is a little cleaner but stops at \"log rho\" before the equality is written, while candidates 1 and 2 are earlier and less complete.",
+      "subtitle_excerpt": "So this equation says that the logarithm of the density, of the energy density, is equal",
+      "segment_start_seconds": 930.2,
+      "segment_start_hhmmss": "00:15:30.200",
+      "segment_end_seconds": 936.2,
+      "segment_end_hhmmss": "00:15:36.200",
+      "caption_hint": "Log-density step in the integration"
+    }
+  ]
+}
