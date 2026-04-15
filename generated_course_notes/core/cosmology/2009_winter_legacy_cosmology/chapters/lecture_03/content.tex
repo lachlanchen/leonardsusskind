@@ -1,0 +1,413 @@
+\chapter{Reviewing Friedmann, Adding Radiation, and Finding Dark Matter}
+
+This lecture is staged very deliberately. We begin in review mode, going back through the basic cosmological equation in the simplest possible setting, not because Newton is the last word, but because in this setting Newton and Einstein momentarily say the same thing. Then we change only one ingredient at a time: first the interpretation of \(\rho\), then the dominant contents of the universe, then the observational consequences of the resulting scaling laws. Only after that cosmological spine is in place do we turn to dark matter and use the same Newtonian instincts again, now on galactic scales. These notes follow Leonard Susskind's lecture order and rhythm, with transcript and frame curation indebted to LazyingArt LLC and Video2Book.
+
+\section{Homogeneity, Comoving Coordinates, and the Newtonian Setup}
+
+Susskind opens by reminding us that on scales larger than clusters of galaxies, the universe looks smooth enough to be treated as homogeneous. That does not mean it is literally featureless. It means that when we average over sufficiently large distances, the jagged astronomical picture gives way to something simple enough for cosmology.
+
+With that approximation in hand, we choose ourselves to sit at the origin of coordinates. This choice has no physical privilege attached to it; it is merely a convenient orientation. We then place a representative galaxy, or if we want to strip away all unnecessary baggage, a purely imaginary test particle moving with the Hubble flow, at comoving coordinate \(x=1\). We are at \(x=0\).
+
+Now the scale factor is introduced in the lecture in the most concrete possible way. The physical distance to the particle at \(x=1\) is, by definition,
+\begin{equation}
+a(t).
+\end{equation}
+A particle at \(x=2\) is then at distance \(2a(t)\), and so on. In other words, \(a(t)\) is not first presented as an abstract metric coefficient; it is the physical distance to a conveniently chosen comoving particle.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_03_figure_02.png}
+\caption{Energy-conservation term with spherical mass sketch}
+\end{figure}
+
+The corresponding Newtonian picture is just as simple. We draw a sphere centered on us, with radius equal to the particle's distance \(a(t)\). The only gravitating material that matters for the motion of the particle is the material inside that sphere. So the whole cosmological problem is reduced, at first pass, to the motion of one particle under the gravity of the homogeneous matter enclosed within a sphere of radius \(a(t)\).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw (0,0) circle (2.4);
+\foreach \x/\y in {-1.5/1.3,-0.8/1.6,0.2/1.7,1.1/1.3,-1.8/0.6,-0.9/0.7,0.0/0.8,1.0/0.7,1.7/0.2,-1.6/-0.1,-0.7/-0.2,0.4/-0.1,1.3/-0.3,-1.2/-1.0,-0.3/-1.3,0.8/-1.2,1.6/-0.9,-0.2/1.1,0.7/1.2,-1.1/0.0,0.8/0.1,-1.5/-0.7,1.0/-0.9,-0.4/0.2,0.3/0.3}
+  {\fill (\x,\y) circle (0.04);}
+\fill (0,0) circle (0.06);
+\fill (2.4,0) circle (0.06);
+\draw (0,0)--(2.4,0);
+\node[below left] at (0,0) {$x=0$};
+\node[below right] at (2.4,0) {$x=1$};
+\node[above] at (1.2,0) {$a(t)$};
+\end{tikzpicture}
+\caption{Clean reconstruction of the homogeneous sphere used in the lecture}
+\end{figure}
+
+\section{Energy Conservation and the Friedmann Equation}
+
+At this point Susskind says, in effect: let us just go through the argument again, because it is really very simple. We assign the test particle unit mass, so that we do not have to keep writing factors that cancel out anyway. Its kinetic energy is then
+\begin{equation}
+\frac{1}{2}\dot a^2.
+\end{equation}
+The dot denotes the derivative with respect to cosmic time.
+
+The mass enclosed inside the sphere of radius \(a(t)\) is
+\begin{equation}
+M_{\mathrm{enc}}=\frac{4\pi}{3}a^3\rho.
+\end{equation}
+Here \(\rho\) is initially being spoken of in Newtonian language as a mass density. The gravitational potential energy of the particle is therefore
+\begin{equation}
+-\frac{G M_{\mathrm{enc}}}{a}
+=
+-\frac{4\pi G}{3}a^2\rho.
+\end{equation}
+The first blackboard frame only secures this term partially; the factor of \(G\) and the precise power of \(a\) are restored from the spoken derivation rather than from the chalk alone.
+
+So the basic energy balance is
+\begin{equation}
+\frac{1}{2}\dot a^2-\frac{4\pi G}{3}a^2\rho=\text{const}.
+\end{equation}
+Newton tells us that this constant does not depend on time. In the lecture Susskind first names the constant \(-k\), then immediately remarks that the standard normalization really introduces \(k\) only after multiplying by \(2\). The clean way to write the result is therefore
+\begin{equation}
+\dot a^2=\frac{8\pi G}{3}a^2\rho-k,
+\end{equation}
+and then, dividing by \(a^2\),
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}.
+\end{equation}
+This is the Friedmann equation in the form that will drive the entire rest of the lecture.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.56\textwidth]{lecture_03_figure_03.png}
+\caption{Boxed curvature term in the Friedmann equation}
+\end{figure}
+
+The board frame above is useful in a narrow but important way: it shows that the curvature term \(-k/a^2\) was explicitly boxed and emphasized. Susskind also notes that \(k\) is empirically very close to zero. It is related to the spatial curvature, but observationally it is so small that, at the level of this lecture, it is a very good approximation simply to ignore it.
+
+This is also the point at which he briefly pivots back toward Einstein. The aim is not to rederive general relativity, but to orient us. In schematic form the time-time Einstein equation looks like
+\begin{equation}
+R_{00}-\frac{1}{2}g_{00}R \propto T_{00}.
+\end{equation}
+If we insert an expanding homogeneous metric, the geometric side produces the combination of \(\dot a/a\) and \(k/a^2\), while the matter side produces the energy density. So this Newtonian-looking equation is, in fact, the \(00\)-component of Einstein's equation for a homogeneous universe. In Susskind's phrase, we have not abandoned Albert for Isaac; at this stage Isaac and Albert are saying the same thing.
+
+That remark also changes the meaning of \(\rho\). From now on it is better to call \(\rho\) the energy density. For nonrelativistic matter at rest in the comoving frame, energy density and rest-mass density are the same thing once we set \(c=1\). But the distinction will matter as soon as radiation enters.
+
+\section{Matter-Dominated Cosmology}
+
+The next move in the lecture is: now let us assume a form for \(\rho\). Since our coordinates move with the material, the matter is at rest in the coordinate frame we are using. Under those conditions, \(\rho\) is simply the rest-energy density.
+
+Take a cube one coordinate unit on a side. Its physical side lengths are all \(a(t)\), so its physical volume is \(a^3(t)\). Suppose the total mass-energy inside that comoving cube is \(M\), and suppose it stays there: matter moves with the flow, but it does not cross the boundary of the comoving box. Then
+\begin{equation}
+\rho_m=\frac{M}{a^3}.
+\end{equation}
+This is the matter-dominated case.
+
+Susskind is careful about what that phrase means. Matter-dominated does not mean merely that there are particles present. It means the dominant contribution to the energy density comes from particles whose energies are essentially their rest energies in the comoving frame. In that limit the pressure is approximately zero. In the language of the lecture, pressure comes from particles crossing the boundaries of the box; here they do not. Strictly speaking, our present universe is not matter-dominated because dark energy now dominates the cosmic energy budget, but the ordinary matter sector and a long stretch of cosmological history are accurately described this way.
+
+With \(k\approx 0\), the Friedmann equation becomes
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\frac{M}{a^3}.
+\end{equation}
+Now comes the ``honorable'' method of guessing a solution. We try a power law,
+\begin{equation}
+a(t)=Ct^p.
+\end{equation}
+Then
+\begin{align}
+\dot a &= Cp\,t^{p-1},\\
+\frac{\dot a}{a} &= \frac{p}{t},\\
+\left(\frac{\dot a}{a}\right)^2 &= \frac{p^2}{t^2}.
+\end{align}
+Substituting into the matter-dominated equation gives
+\begin{equation}
+\frac{p^2}{t^2}
+=
+\frac{8\pi G}{3}\frac{M}{C^3 t^{3p}}.
+\end{equation}
+The powers of \(t\) must match, so
+\begin{equation}
+3p=2,
+\qquad\text{hence}\qquad
+p=\frac{2}{3}.
+\end{equation}
+Therefore
+\begin{equation}
+a(t)\propto t^{2/3}.
+\end{equation}
+If we also match the coefficients, we recover Susskind's bookkeeping constant,
+\begin{equation}
+C^3=6\pi G M.
+\end{equation}
+
+This is the first concrete cosmological law of the lecture: in a matter-dominated universe the scale factor grows not linearly in time, but like the two-thirds power of time. In the lecture he also sketches the curve and stresses that it rises more slowly than a straight line. Historically, this law describes a long intermediate era, roughly from about \(10^5\) years after the Big Bang until a few billion years later.
+
+\section{Radiation-Dominated Cosmology}
+
+Now we run the universe backward. Earlier than the matter-dominated era, the lecture says, the energy density was dominated not by matter but by radiation. The reason is not mysterious once we phrase it correctly: the universe contains an enormous number of photons, roughly \(10^9\) photons for every proton, and when we compress the universe those photons become much more energetic.
+
+Susskind pauses to say something important. A photon has no rest mass, but that does not mean it has no energy. We are not talking about rest energy for photons. If one tried to bring a photon to rest, there would be no particle left over. But a moving photon certainly has energy, and it is that energy that matters cosmologically.
+
+So again we take a comoving unit box. Photons move through the box, but on average as many enter as leave, so the average number inside stays fixed. The energy of a single photon is
+\begin{equation}
+E_\gamma=h\nu=\frac{hc}{\lambda}.
+\end{equation}
+The key physical assumption, which the lecture treats as well justified by wave dynamics, is that the wavelength stretches with the expansion:
+\begin{equation}
+\lambda\propto a.
+\end{equation}
+Therefore
+\begin{equation}
+E_\gamma\propto a^{-1}.
+\end{equation}
+If the average number of photons in the comoving box stays fixed, then the total energy in the box scales the same way:
+\begin{equation}
+E_{\text{box}}\propto a^{-1}.
+\end{equation}
+Dividing by the physical volume \(a^3\), we get
+\begin{equation}
+\rho_r\propto a^{-4}.
+\end{equation}
+
+This extra factor of \(a^{-1}\) is the new ingredient. Matter dilutes only because the universe gets bigger. Radiation dilutes for that reason and also because each individual photon is redshifted.
+
+It is useful to collect the scaling chain in one place:
+\begin{align}
+E_\gamma &= \frac{hc}{\lambda},\\
+\lambda &\propto a,\\
+E_\gamma &\propto a^{-1},\\
+E_{\text{box}} &\propto a^{-1},\\
+\rho_r &= \frac{E_{\text{box}}}{a^3}\propto a^{-4}.
+\end{align}
+
+The radiation-dominated Friedmann equation is therefore
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\frac{M_r}{a^4},
+\end{equation}
+where \(M_r\) is simply a constant setting the scale of the radiation energy density. In the lecture the same spoken symbol gets reused here, but it is no longer the matter constant from the previous section; it is cleaner to rename it.
+
+We solve in exactly the same way as before. Try
+\begin{equation}
+a(t)=Ct^p.
+\end{equation}
+Then the left-hand side scales as \(t^{-2}\), while the right-hand side scales as \(t^{-4p}\). Matching powers gives
+\begin{equation}
+4p=2,
+\qquad\text{so}\qquad
+p=\frac{1}{2}.
+\end{equation}
+Thus the radiation-dominated universe expands as
+\begin{equation}
+a(t)\propto t^{1/2}.
+\end{equation}
+And if we keep the coefficient,
+\begin{equation}
+C^4=\frac{32\pi G}{3}M_r.
+\end{equation}
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Photons have no rest mass. Why is there still a factor of \(G\) in the radiation equation?
+
+\paragraph{Answer.} Because what gravitates is energy, not rest mass by itself. When particles move slowly, the distinction is easy to miss because their energy is mostly just rest energy. But photons are the example that forces the point. They have no rest mass and yet they carry energy, momentum, and pressure. Susskind answers this in the lecture by going back to Einstein's old box-of-photons argument: a box full of radiation has more inertia than the same box without the radiation, so by the equivalence principle it also has more weight. In cosmology that statement is summarized by putting energy density on the right-hand side of the Friedmann equation.
+
+\paragraph{Question.} If each photon loses energy as the universe expands, what happened to conservation of energy?
+
+\paragraph{Answer.} The lecture's answer is not that conservation failed, but that one has to keep the whole Friedmann bookkeeping in view. If we restore the full energy balance,
+\begin{equation}
+\frac{1}{2}\dot a^2-\frac{4\pi G}{3}a^2\rho=\text{const},
+\end{equation}
+then the redshifting of the photon bath is only one part of the story. There is also the kinetic energy of the expansion and the gravitational part of the energy balance. The energy stored in radiation decreases, but the full cosmological energy accounting is still encoded in the same conserved equation.
+
+\section{Matter-Radiation Equality and the Change of Expansion Law}
+
+Having extracted the two scaling laws, Susskind stops computing and turns to the board. This is an important shift in rhythm. The issue is no longer how to solve each toy model separately, but how the real universe passes from one regime to the other.
+
+For matter we have
+\begin{equation}
+\rho_m\propto a^{-3},
+\end{equation}
+and for radiation
+\begin{equation}
+\rho_r\propto a^{-4}.
+\end{equation}
+So when \(a\) is large, matter dominates; when \(a\) is small, radiation dominates. The lecture's point is that the early universe must therefore have been radiation-dominated.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_03_figure_05.png}
+\caption{Axes for the energy-density plot}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (0,0) -- (6.2,0) node[right] {$a$};
+\draw[->] (0,0) -- (0,4.6) node[above] {energy density};
+\draw[thick] (0.7,3.9) .. controls (1.1,2.9) and (2.0,1.5) .. (5.7,0.35);
+\draw[thick] (0.45,4.3) .. controls (0.9,2.5) and (1.5,0.95) .. (5.7,0.12);
+\fill (1.85,1.55) circle (0.05);
+\node[right] at (1.95,1.55) {equality};
+\node[right] at (4.15,0.62) {matter \(\sim a^{-3}\)};
+\node[right] at (3.05,0.22) {radiation \(\sim a^{-4}\)};
+\end{tikzpicture}
+\caption{Transcript-derived reconstruction of the energy-density comparison drawn in the lecture}
+\end{figure}
+
+The frame above preserves the blackboard moment at which he begins this plot. The completed picture shows exactly what the algebra already told us: radiation lies above matter at small \(a\), matter lies above radiation at large \(a\), and the two cross at an equality scale factor.
+
+In time language, the two limiting laws are
+\begin{equation}
+a(t)\sim t^{1/2}\qquad\text{early},
+\qquad
+a(t)\sim t^{2/3}\qquad\text{later}.
+\end{equation}
+The lecture-level estimate is that matter-radiation equality happened after about \(10^4\) years, perhaps a bit more.
+
+Susskind then draws the complementary plot, this time of scale factor versus time, to make the same point dynamically rather than statically.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (0,0) -- (6.0,0) node[right] {$t$};
+\draw[->] (0,0) -- (0,4.3) node[above] {$a(t)$};
+\draw[dashed] (0.45,0.48) .. controls (1.1,1.10) and (2.0,1.92) .. (3.1,2.52);
+\draw[dashed] (0.45,0.38) .. controls (1.1,0.95) and (2.0,1.70) .. (3.1,2.52);
+\draw[thick] (0.45,0.44) .. controls (1.1,1.02) and (2.0,1.82) .. (3.1,2.52)
+  .. controls (4.0,3.00) and (5.0,3.58) .. (5.7,3.95);
+\node at (1.55,0.93) [rotate=34] {$t^{1/2}$};
+\node at (4.75,3.05) [rotate=24] {$t^{2/3}$};
+\end{tikzpicture}
+\caption{Transcript-derived sketch of the smooth transition from radiation-dominated to matter-dominated expansion}
+\end{figure}
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Does the power \(p\) jump from \(1/2\) to \(2/3\)?
+
+\paragraph{Answer.} No. The lecture makes a point of correcting precisely that misconception. The exponents \(1/2\) and \(2/3\) describe the two clean limiting eras. The real universe interpolates continuously between them over a relatively narrow transition region. The effective law changes, but it does not jump discontinuously.
+
+\section{Temperature, Ionization, and the Surface of Last Scattering}
+
+Before estimating the crossover in more detail, Susskind suddenly says: before we talk about that, let us talk about temperature. This is a characteristic move in the lecture. The algebra has given us the scaling laws; now he wants to translate them into the thermal history of the universe.
+
+Because the energy of each photon scales like \(1/a\), the temperature of the radiation scales the same way, up to an unimportant numerical factor:
+\begin{equation}
+T\propto a^{-1}.
+\end{equation}
+If \(a\) doubles, the radiation temperature is cut in half. Running the universe backward makes the photons hotter.
+
+The lecture then uses a rough but effective classroom estimate. Take the present cosmic radiation temperature to be about \(3\,\mathrm K\), and take the ionizing temperature to be about \(3000\,\mathrm K\), the rough surface-of-the-sun scale repeatedly invoked in the lecture. Then
+\begin{equation}
+\frac{a_{\mathrm{today}}}{a_{\mathrm{ion}}}\sim \frac{3000\,\mathrm K}{3\,\mathrm K}\sim 10^3.
+\end{equation}
+From recombination to the present the universe is well approximated as matter-dominated, so \(a\propto t^{2/3}\). Therefore
+\begin{align}
+\left(\frac{t_{\mathrm{today}}}{t_{\mathrm{ion}}}\right)^{2/3} &\sim 10^3,\\
+\frac{t_{\mathrm{today}}}{t_{\mathrm{ion}}} &\sim 1000^{3/2}\sim 3\times 10^4.
+\end{align}
+If we now use the lecture's order-of-magnitude value \(t_{\mathrm{today}}\sim 10^{10}\) years, we get
+\begin{equation}
+t_{\mathrm{ion}}\sim 3\times 10^5\ \mathrm{years}.
+\end{equation}
+This is not meant as a modern precision cosmological parameter. It is a lecture estimate, and it is good enough to locate the key physical event.
+
+What is the event? Earlier than this, the universe was hot enough to ionize hydrogen and helium. It was a plasma. In a plasma, electromagnetic waves drive electric charges back and forth; in the lecture's language, the medium behaves like a conductor, and conductors are opaque. That is why the surface of the sun is opaque, and it is why the early universe was opaque. Light could not travel very far without scattering.
+
+As the universe cooled, electrons recombined with nuclei to make neutral atoms. Once the plasma turned into ordinary neutral gas, the universe became transparent enough for photons to travel essentially freely. The transition is not infinitely sharp. Susskind stresses that it is a fuzzy place, or equivalently a fuzzy time interval, not a mathematical surface with zero thickness. But it is sharp enough cosmologically that we give it a name: the surface of last scattering.
+
+Now the observational picture becomes vivid. An astronomer looking outward is looking backward in time. Nearby galaxies show us the relatively recent past. Farther galaxies show us earlier times. Eventually every line of sight reaches back to the epoch when the universe was still ionized and opaque. Beyond that, electromagnetic radiation cannot give us a clear view. So the cosmic microwave background is literally the radiation arriving from that last-scattering shell.
+
+The lecture pushes the idea one step further. A neutrino telescope, if one could build a sufficiently sensitive one, would see deeper into the past, because neutrinos decouple earlier. A graviton telescope would see earlier still. But for ordinary electromagnetic astronomy the last-scattering surface is the horizon.
+
+A final clarification comes from the question period. The temperature tracks the energy of a typical photon, but the full radiation energy density grows faster because the photon number density also changes:
+\begin{equation}
+n_\gamma\propto T^3,
+\qquad
+\rho_\gamma\propto T^4.
+\end{equation}
+The first relation counts photons per unit volume; the second combines photon number density with energy per photon.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} If the early universe was as hot as the surface of the sun in every direction, why do we not look up and see a blinding sky?
+
+\paragraph{Answer.} Because the last-scattering surface is not sitting still relative to us. It is receding, and the photons that left it have been redshifted on the way in. In the lecture's rough estimate, they have been redshifted by about a factor of \(10^3\), exactly the factor that turns a \(3000\,\mathrm K\) radiation field into a \(3\,\mathrm K\) microwave background. So we are indeed seeing that hot surface, but after its photons have been stretched into microwaves. Without that redshift, as Susskind says, the sky would be bright enough to burn our eyeballs.
+
+\section{Dark Matter from Galactic Dynamics}
+
+Only now does the lecture return to the promise made at the very beginning: dark matter. The change of scale is explicit. Dark matter was not discovered by studying cosmology in the very large-scale sense. It was discovered by astronomers looking at galaxies and measuring their rotation curves.
+
+So Susskind goes back, once again, to the simplest Newtonian mechanics. Consider a light object of mass \(m\) orbiting a central mass \(M\) at radius \(r\). The gravitational force is
+\begin{equation}
+\frac{GMm}{r^2},
+\end{equation}
+and for circular motion the centripetal acceleration is \(v^2/r\). Newton's law gives
+\begin{equation}
+m\frac{v^2}{r}=\frac{GMm}{r^2}.
+\end{equation}
+Cancel the small mass \(m\), multiply through by \(r\), and we get
+\begin{equation}
+v(r)=\sqrt{\frac{GM}{r}}.
+\end{equation}
+Thus if the gravitating mass is concentrated near the center, the orbital speed falls like \(r^{-1/2}\). This is the Keplerian law familiar from the solar system.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (0,0) -- (5.8,0) node[right] {$r$};
+\draw[->] (0,0) -- (0,3.2) node[above] {$v(r)$};
+\draw[thick] (0.6,2.55) -- (5.3,2.55);
+\draw[thick] (0.6,2.45) .. controls (1.2,2.05) and (2.4,1.38) .. (5.3,0.88);
+\node[right] at (4.1,2.75) {flat rotation curve};
+\node[right] at (3.3,1.08) {Keplerian \(\sim r^{-1/2}\)};
+\end{tikzpicture}
+\caption{Transcript-derived comparison between Keplerian falloff and the approximately flat rotation curves seen in large galaxies}
+\end{figure}
+
+But the measured galactic rotation curves do not fall that way. If one assumes that mass follows light, so that most of the mass sits where most of the luminous matter sits, near the galactic core, then the outer stars should move more slowly. They do not. Their orbital speeds remain roughly constant out to large radii.
+
+So the lecture changes the question. Perhaps mass does not follow light. Let \(M(r)\) be the total mass enclosed inside radius \(r\). Then the orbital relation becomes
+\begin{equation}
+\frac{v^2}{r}=\frac{G M(r)}{r^2}.
+\end{equation}
+If \(v(r)\) is approximately constant, then
+\begin{equation}
+M(r)\propto r.
+\end{equation}
+That is already a powerful conclusion: the total gravitating mass keeps growing with radius even where the visible light does not.
+
+Assume now, as Susskind does for simplicity, that the hidden matter distribution is roughly spherical. Then
+\begin{equation}
+M(R)=\int_0^R 4\pi r^2 \rho(r)\,dr.
+\end{equation}
+If \(M(R)\propto R\), differentiating with respect to \(R\) gives
+\begin{equation}
+4\pi R^2\rho(R)\propto 1,
+\end{equation}
+and hence
+\begin{equation}
+\rho(r)\propto \frac{1}{r^2}.
+\end{equation}
+So the lecture arrives at a simple mathematical picture: a visible galaxy sits inside a much larger dark halo whose density decreases gradually rather than collapsing sharply with the light distribution.
+
+At the numerical level Susskind plays loosely between factors of \(7\) and \(10\), and he is explicit that he is speaking heuristically. The stable statement is that the total gravitating mass of a galaxy is of order several to ten times larger than what one would infer from luminous matter alone.
+
+From here the lecture shifts from derivation to diagnosis. Whatever this material is, it does not shine, and it evidently does not dissipate the way ordinary matter does. Ordinary gas clouds collide, radiate, and keep shrinking. This stuff stays in a large halo.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} If the halo is so massive, why does it not dissipate and collapse together with the luminous matter?
+
+\paragraph{Answer.} Because collapse requires dissipation. Gravity by itself can pull a cloud inward, but to settle into a smaller structure the system must lose energy. Ordinary matter has many channels for doing that: collisions, friction-like processes, radiation, and electromagnetic interactions. Dark matter evidently does not. In the lecture Susskind emphasizes that it is very nearly collisionless and does not radiate appreciably. So the gravitational contraction converts potential energy into kinetic energy, but there is no efficient mechanism for dumping that kinetic energy away. What keeps the halo extended is the same thing that keeps the Earth from falling straight into the sun in the absence of friction: motion.
+
+This is also where the lecture draws a careful boundary. The inferences \(M(r)\propto r\) and \(\rho(r)\propto r^{-2}\) are solid lecture mathematics. But Susskind does not claim a simple first-principles derivation of the detailed halo profile, or a detailed understanding of halo rotation, flattening, or intergalactic distribution. On those points he repeatedly says, quite openly, that he does not know and that large-scale simulations do much of the work.
+
+The last observational beat of the lecture is the Bullet Cluster. When galaxy clusters collide, the hot ordinary gas interacts strongly and can be seen in X-rays, while the dominant gravitating component inferred from lensing passes through much more weakly interacting matter. The resulting separation between the lensing mass and the luminous baryonic material is exactly the sort of thing one would not expect if the whole phenomenon were merely a modification of Newton's force law tied to visible matter. In the lecture, this serves as the decisive piece of evidence that there really is dark matter.
+
+Susskind ends on a note of bounded confidence. Very little is known in detail about what dark matter is, but nothing about it requires a radical rewriting of physics. The conservative possibility is that it consists of new, very weakly interacting particles. In that sense it is mysterious, but not in a way that forces us to throw away the basic principles that got us here.
+
+\section{Summary}
+
+The lecture begins with a single equation and then changes the meaning of its source term step by step. Starting from a homogeneous Newtonian sphere centered on us, we recover the Friedmann equation,
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2},
+\end{equation}
+and are reminded that this is also the time-time Einstein equation for an expanding homogeneous universe. For matter at rest in a comoving box, \(\rho_m\propto a^{-3}\) and \(a(t)\propto t^{2/3}\). For radiation, because photon wavelengths stretch with the expansion, \(\rho_r\propto a^{-4}\) and \(a(t)\propto t^{1/2}\).
+
+From those two scaling laws come the next pieces of the story: radiation domination in the early universe, matter domination later, temperature scaling as \(1/a\), recombination after roughly \(3\times 10^5\) years at lecture level, and the surface of last scattering as the electromagnetic horizon. Only then does the lecture narrow from cosmology to astronomy and use orbital mechanics to infer dark matter from flat galactic rotation curves. The mathematical punch line there is just as sharp: \(v\approx\text{const}\) implies \(M(r)\propto r\), hence a large dark halo with \(\rho(r)\propto r^{-2}\). The details remain open, but the structure of the argument does not.
