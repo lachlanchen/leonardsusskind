@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology \uff5c Lecture 4 [KdBrQMkkDz8].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology \uff5c Lecture 4 [KdBrQMkkDz8].mkv",
+  "lecture_number": 4,
+  "lecture_slug": "lecture_04",
+  "lecture_title": "Cosmology : Lecture 4",
+  "assets": [
+    {
+      "name": "lecture_04_figure_02.png",
+      "timestamp_seconds": 662.29,
+      "timestamp_hhmmss": "00:11:02.290",
+      "source_candidate": "lecture_04_window_02_candidate_03_001102290.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 03 gives the clearest and most balanced view of the only visible board content in this subtitle window: a long horizontal green line with arrow marks and a marked point near the right side. It is sharper and less occluded than candidate 01, less blocked by gesture than candidate 04, and slightly clearer and more complete than candidate 02. The frame is still lecturer-dominant, but it preserves a usable diagrammatic witness for a simple redraw tied to the discussion of spatial expansion.",
+      "subtitle_excerpt": "and general relativity allows the metric of space to expand.",
+      "segment_start_seconds": 659.56,
+      "segment_start_hhmmss": "00:10:59.560",
+      "segment_end_seconds": 663.76,
+      "segment_end_hhmmss": "00:11:03.760",
+      "caption_hint": "one-dimensional expansion sketch"
+    },
+    {
+      "name": "lecture_04_figure_03.png",
+      "timestamp_seconds": 1772.667,
+      "timestamp_hhmmss": "00:29:32.667",
+      "source_candidate": "lecture_04_window_03_candidate_04_002932667.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "All four candidates are very similar, but candidate 04 is the most useful note-writing frame because the Friedmann equation is cleanly legible, the long horizontal line sketch above it remains intact, and the partial right-hand notation with `c=1` is slightly more complete than in the earlier frames. It is the best single witness to both the equation and the surrounding board layout at the moment Susskind calls this the basic equation for expansion.",
+      "subtitle_excerpt": "And that's our basic equation for how the universe expands.",
+      "segment_start_seconds": 1768.76,
+      "segment_start_hhmmss": "00:29:28.760",
+      "segment_end_seconds": 1773.2,
+      "segment_end_hhmmss": "00:29:33.200",
+      "caption_hint": "basic expansion equation with line sketch"
+    },
+    {
+      "name": "lecture_04_figure_04.png",
+      "timestamp_seconds": 3464.712,
+      "timestamp_hhmmss": "00:57:44.712",
+      "source_candidate": "lecture_04_window_04_candidate_04_005744712.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the most complete and useful frame for note writing. It preserves the side-by-side board layout linking matter and radiation to their expansion laws, while also keeping the pressure relations visible. Compared with the earlier candidates, it shows the fully written left-hand labels `Matter` and `radiation`, so the comparison reads more clearly as a finished summary rather than an intermediate writing step.",
+      "subtitle_excerpt": "line of reasoning about the equation of state",
+      "segment_start_seconds": 3462.706,
+      "segment_start_hhmmss": "00:57:42.706",
+      "segment_end_seconds": 3464.986,
+      "segment_end_hhmmss": "00:57:44.986",
+      "caption_hint": "matter and radiation equation-of-state summary"
+    },
+    {
+      "name": "lecture_04_figure_05.png",
+      "timestamp_seconds": 4355.206,
+      "timestamp_hhmmss": "01:12:35.206",
+      "source_candidate": "lecture_04_window_05_candidate_04_011235206.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the strongest frame because it directly captures the board summary that an equation of state is specified by the parameter \\(w\\). The generic relation \\(P=\\omega\\rho\\) is visible and actively indicated by Susskind\u2019s pointing gesture, while the specific cases \\(\\omega=0\\) and \\(\\omega=1/3\\) and the corresponding matter and radiation pressure relations remain on the board. It is the clearest single witness to the conceptual point named in the subtitle.",
+      "subtitle_excerpt": "an equation of state means a value of w",
+      "segment_start_seconds": 4353.006,
+      "segment_start_hhmmss": "01:12:33.006",
+      "segment_end_seconds": 4355.506,
+      "segment_end_hhmmss": "01:12:35.506",
+      "caption_hint": "equation-of-state parameter w"
+    }
+  ]
+}
