@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/general_relativity/2012_fall_theoretical_minimum",
+  "transcript_rel": "core/general_relativity/2012_fall_theoretical_minimum/163 - General Relativity Lecture 9 [umdC_KD458g].md",
+  "video_rel": "core/general_relativity/2012_fall_theoretical_minimum/163 - General Relativity Lecture 9 [umdC_KD458g].mkv",
+  "lecture_number": 9,
+  "lecture_slug": "lecture_09",
+  "lecture_title": "General Relativity Lecture 9",
+  "assets": [
+    {
+      "name": "lecture_09_figure_02.png",
+      "timestamp_seconds": 2709.617,
+      "timestamp_hhmmss": "00:45:09.617",
+      "source_candidate": "lecture_09_window_02_candidate_04_004509617.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame shows the most finished version of the board at this moment: the component layout of the energy-momentum tensor is more complete than in the earlier candidates, including the rightward continuation of the top row, while the large conservation equation on the right remains legible. The lecturer occludes less of the tensor entries than in candidates 1 and 2, and the board content is more developed than in candidate 3.",
+      "subtitle_excerpt": "Combined into an energy-momentum tensor...",
+      "segment_start_seconds": 2707.54,
+      "segment_start_hhmmss": "00:45:07.540",
+      "segment_end_seconds": 2709.9,
+      "segment_end_hhmmss": "00:45:09.900",
+      "caption_hint": "Energy-momentum tensor components and conservation law"
+    },
+    {
+      "name": "lecture_09_figure_03.png",
+      "timestamp_seconds": 3896.829,
+      "timestamp_hhmmss": "01:04:56.829",
+      "source_candidate": "lecture_09_window_04_candidate_02_010456829.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest unobstructed view of the board at the moment when Susskind is testing possible tensors that could stand on the left-hand side of the field equation. The top equation is fully legible, and the two trial expressions below it are visible with their question marks, while the lecturer is not blocking any crucial symbols. Candidate 4 is weakened by hand occlusion over the right-hand side, and candidates 1 and 3 are slightly less clean and stable.",
+      "subtitle_excerpt": "of the metric tensor equaling something",
+      "segment_start_seconds": 3895.4,
+      "segment_start_hhmmss": "01:04:55.400",
+      "segment_end_seconds": 3899.16,
+      "segment_end_hhmmss": "01:04:59.160",
+      "caption_hint": "Candidate curvature terms for Einstein equation"
+    },
+    {
+      "name": "lecture_09_figure_04.png",
+      "timestamp_seconds": 4032.836,
+      "timestamp_hhmmss": "01:07:12.836",
+      "source_candidate": "lecture_09_window_05_candidate_03_010712836.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "the covariant derivative of the metric tensor?",
+      "segment_start_seconds": 4031.64,
+      "segment_start_hhmmss": "01:07:11.640",
+      "segment_end_seconds": 4033.48,
+      "segment_end_hhmmss": "01:07:13.480",
+      "caption_hint": "the covariant derivative of the metric tensor?"
+    },
+    {
+      "name": "lecture_09_figure_05.png",
+      "timestamp_seconds": 5545.457,
+      "timestamp_hhmmss": "01:32:25.457",
+      "source_candidate": "lecture_09_window_06_candidate_02_013225457.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the cleanest overall view of the board while keeping the lecturer from obscuring the key formulas too much. The top rearranged Ricci-tensor equation is fully legible, the trace result R = -8\\pi G T is clear, and enough of the middle line remains to show the connection back to the Einstein equation. Later candidates lose more of the board to the lecturer\u2019s movement.",
+      "subtitle_excerpt": "it's called the trace of the energy momentum tensor.",
+      "segment_start_seconds": 5544.53,
+      "segment_start_hhmmss": "01:32:24.530",
+      "segment_end_seconds": 5546.97,
+      "segment_end_hhmmss": "01:32:26.970",
+      "caption_hint": "Trace relation and rearranged Einstein equation"
+    }
+  ]
+}
