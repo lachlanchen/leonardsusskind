@@ -1,0 +1,322 @@
+\chapter{Stress-Energy and the Einstein Field Equations}
+
+These notes follow Leonard Susskind's ninth lecture on general relativity, with transcript and board evidence curated with LazyingArt LLC and Video2Book. The lecture is organized around a simple idea: the computations of general relativity are unpleasant, but the logic of the field equations can be built step by step. We begin with Newton's two-way street between matter and field, then rebuild local conservation from charge to energy and momentum, and only after that ask what geometric tensor can stand on the left-hand side of Einstein's equation. Throughout we set \(c=1\).
+
+\section{Why We Will Not Solve the Equations Head-On}
+
+Susskind begins by lowering expectations in exactly the right way. The principles of general relativity are not the hard part; the hard part is that the equations become computationally ugly almost immediately. Christoffel symbols proliferate, curvature components proliferate even faster, and every object contains derivatives of several other objects. Even writing the equations out in components is already a nuisance.
+
+For that reason the lecture does not try to solve Einstein's equations in full generality. If one really wants to calculate Christoffel symbols, Riemann tensors, Ricci tensors, and Einstein tensors for a given metric, symbolic computation is the natural tool. The point here is different: we want to understand what the symbols mean, why the right-hand side cannot be just a mass density, and why the left-hand side must be a very special combination of curvature terms.
+
+That is why the lecture backs up to Newtonian gravity. The Newtonian theory has exactly the same logical structure in a simpler setting.
+
+\section{Newton's Two-Way Street and a Heuristic Bridge}
+
+In Newtonian gravity the field tells matter how to move, and matter tells the field what to be. The motion law is
+\begin{align}
+m\mathbf a &= -m\nabla\phi,\\
+\mathbf a &= -\nabla\phi.
+\end{align}
+Here \(\phi\) is the gravitational potential.
+
+The field equation is Poisson's equation,
+\begin{equation}
+\nabla^2\phi = 4\pi G\rho,
+\end{equation}
+where \(\rho\) is the mass density. For a spherically symmetric source of total mass \(M\), the exterior solution is
+\begin{equation}
+\phi(r) = -\frac{GM}{r}.
+\end{equation}
+
+This is the prototype of the two-way street. The potential determines the motion of particles, while the matter distribution determines the potential.
+
+To get a first grip on the relativistic generalization, Susskind recalls one piece of the Schwarzschild metric, namely
+\begin{equation}
+g_{00} = 1-\frac{2GM}{r}.
+\end{equation}
+Since \(\phi=-GM/r\), this can be rewritten as
+\begin{equation}
+g_{00}=1+2\phi.
+\end{equation}
+Therefore
+\begin{equation}
+\nabla^2 g_{00} = 2\nabla^2\phi \sim 8\pi G\rho.
+\end{equation}
+
+This is not Einstein's equation. It is only a mnemonic, and Susskind says so explicitly. But it is a useful mnemonic because it already has the right texture: matter appears to be sourcing geometry, not merely a scalar potential. The Newtonian acceleration law will later be replaced by the geodesic principle, and the crude equation above will be replaced by the true field equation.
+
+Before that can happen, however, we need to understand the right-hand side. In relativity, mass means energy, and energy density is only one piece of a larger tensorial object.
+
+\section{From Charge Conservation to the Energy-Momentum Tensor}
+
+Susskind rebuilds the source side of the theory by first reviewing a simpler conserved quantity: electric charge. Let \(\sigma\) denote charge density, and let \(\mathbf J\) denote the spatial current of charge, the amount of charge passing through an oriented infinitesimal window per unit area per unit time. Local conservation says that charge cannot simply disappear here and reappear at Alpha Centauri. If charge leaves a small box, it must do so by flowing through the walls. Thus
+\begin{equation}
+\dot{\sigma}+\nabla\cdot\mathbf J = 0.
+\end{equation}
+
+If we package charge density and current into the four-current
+\begin{equation}
+J^\mu=(J^0,J^1,J^2,J^3), \qquad J^0=\sigma,
+\end{equation}
+then the continuity equation becomes
+\begin{equation}
+\partial_\mu J^\mu = 0.
+\end{equation}
+In curved-coordinate language the derivative should be promoted, when needed, to a covariant derivative.
+
+The same logic must now be applied to energy and momentum. Energy has a density. Each component of momentum has a density. Energy can flow through a surface, and each component of momentum can also flow through a surface. These densities and fluxes are collected into a rank-two tensor \(T^{\mu\nu}\).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_02.png}
+\caption{Energy-momentum tensor entries and continuity law}
+\end{figure}
+
+A clean reconstruction of the board content is
+\begin{equation}
+T^{\mu\nu}=
+\begin{pmatrix}
+T^{00} & T^{01} & T^{02} & T^{03}\\
+T^{10} & T^{11} & T^{12} & T^{13}\\
+T^{20} & T^{21} & T^{22} & T^{23}\\
+T^{30} & T^{31} & T^{32} & T^{33}
+\end{pmatrix}.
+\end{equation}
+The board only shows part of this matrix directly, but the tensor completion is standard.
+
+The entries have the interpretation Susskind builds slowly on the board:
+\begin{equation}
+T^{00}=\text{energy density}, \qquad
+T^{0i}=\text{flow of energy}, \qquad
+T^{i0}=\text{density of the \(i\)-th momentum component},
+\end{equation}
+while \(T^{ij}\) describes the flow of the \(i\)-th momentum component in the \(j\)-direction. Later these spatial components will also be tied to pressure and stress.
+
+A key structural fact is that the energy-momentum tensor is symmetric,
+\begin{equation}
+T^{\mu\nu}=T^{\nu\mu},
+\end{equation}
+and that each conserved quantity satisfies its own continuity equation. All four continuity equations are gathered into
+\begin{equation}
+D_\mu T^{\nu\mu}=0.
+\end{equation}
+By symmetry one may equally write \(D_\mu T^{\mu\nu}=0\).
+
+At this point the central lesson is already clear: energy density by itself is incomplete. It is only the \(00\)-component of a larger tensor.
+
+\section{Why the Field Equation Must Be a Tensor Equation}
+
+Once the right-hand side is recognized as part of a tensor, the old scalar-looking Newtonian analogy becomes too small. A law of physics cannot say only that one preferred component of one tensor equals the corresponding preferred component of another tensor in every frame.
+
+Susskind makes this point by a simple comparison. Suppose one claimed that a fundamental law said \(A_3=B_3\) for two vectors. If that statement is to hold in every frame, then rotating the axes would turn the third component into the first or second, and the law would force all components to agree. In relativity the same logic applies to space and time together. If a component equation is to be frame-independent, it must really be the shadow of a full tensor equation.
+
+Thus the relativistic generalization of the Newtonian source term cannot stop with the energy density \(T_{00}\). The full right-hand side must be
+\begin{equation}
+8\pi G\,T_{\mu\nu}.
+\end{equation}
+Therefore the left-hand side must also be a symmetric rank-two tensor built geometrically from the metric and its derivatives. Following the lecture, let us temporarily denote that unknown geometric tensor by \(G_{\mu\nu}\). The problem is then to discover what \(G_{\mu\nu}\) actually is.
+
+\section{Geometric Candidates Built from the Metric}
+
+The geometric side should involve the metric and, to match the Newtonian second-derivative structure, it should contain two derivatives of the metric. The first derivative object is the Christoffel symbol. In standard notation,
+\begin{equation}
+\Gamma^\sigma_{\tau\nu}
+=
+\frac12 g^{\sigma\delta}
+\left(
+\partial_\tau g_{\delta\nu}
++
+\partial_\nu g_{\delta\tau}
+-
+\partial_\delta g_{\nu\tau}
+\right).
+\end{equation}
+This is not itself a tensor, but it is built from first derivatives of the metric.
+
+The next object is the Riemann tensor, which does involve genuine curvature:
+\begin{equation}
+R^\mu{}_{\nu\tau\sigma}
+=
+\partial_\tau\Gamma^\mu_{\nu\sigma}
+-
+\partial_\sigma\Gamma^\mu_{\nu\tau}
++
+\Gamma^\mu_{\lambda\tau}\Gamma^\lambda_{\nu\sigma}
+-
+\Gamma^\mu_{\lambda\sigma}\Gamma^\lambda_{\nu\tau}.
+\end{equation}
+The important structural point is that the first two terms contain second derivatives of the metric, while the last two terms are quadratic in first derivatives.
+
+But the Riemann tensor has four indices, whereas the source tensor has two. So the full Riemann tensor cannot stand directly on the left-hand side of the field equation. The natural way down is contraction:
+\begin{equation}
+R_{\mu\nu}=R^\lambda{}_{\mu\lambda\nu},
+\qquad
+R=g^{\mu\nu}R_{\mu\nu}.
+\end{equation}
+Here \(R_{\mu\nu}\) is the Ricci tensor and \(R\) is the curvature scalar.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_09_figure_03.png}
+\caption{Candidate geometric tensors for Einstein's equation}
+\end{figure}
+
+This leads to exactly the board comparison Susskind writes:
+\begin{align}
+G^{\mu\nu} &= 8\pi G\,T^{\mu\nu},\\
+R^{\mu\nu} &\stackrel{?}{=} 8\pi G\,T^{\mu\nu},\\
+g^{\mu\nu}R &\stackrel{?}{=} 8\pi G\,T^{\mu\nu}.
+\end{align}
+At this stage the lower two lines are genuine candidates. They have the right index structure, and they contain the right sort of derivatives. What decides between them is not appearance, but continuity.
+
+\section{Covariant Conservation Selects the Einstein Tensor}
+
+The right-hand side satisfies
+\begin{equation}
+D_\mu T^{\mu\nu}=0.
+\end{equation}
+Therefore the left-hand side must also be covariantly conserved. This is the extra piece of information that turns a menu of possible curvature tensors into a unique answer.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_09_figure_04.png}
+\caption{Product rule for \(D_\mu(g^{\mu\nu}R)\)}
+\end{figure}
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why can neither \(R^{\mu\nu}\) nor \(g^{\mu\nu}R\) stand by itself on the left-hand side?
+
+\paragraph{Answer.} Because neither of them is covariantly conserved by itself.
+
+Start with the scalar-curvature candidate. Using the product rule,
+\begin{align}
+D_\mu\!\left(g^{\mu\nu}R\right)
+&=
+\left(D_\mu g^{\mu\nu}\right)R
++
+g^{\mu\nu}\left(D_\mu R\right).
+\end{align}
+Metric compatibility gives
+\begin{equation}
+D_\mu g^{\mu\nu}=0,
+\end{equation}
+and since \(R\) is a scalar,
+\begin{equation}
+D_\mu R=\partial_\mu R.
+\end{equation}
+Therefore
+\begin{equation}
+D_\mu\!\left(g^{\mu\nu}R\right)=g^{\mu\nu}\partial_\mu R,
+\end{equation}
+which is not zero in general. So \(g^{\mu\nu}R\) fails.
+
+The Ricci tensor fails in a closely related way. In the board-level form used in the lecture,
+\begin{equation}
+D_\mu R^{\mu\nu}
+=
+\frac12 g^{\mu\nu}D_\mu R
+=
+\frac12 D^\nu R,
+\end{equation}
+which again is not zero in general.
+
+But now the cure is obvious. If one object differentiates to the full derivative of \(R\), and the other differentiates to half of that, then the combination
+\begin{equation}
+R^{\mu\nu}-\frac12 g^{\mu\nu}R
+\end{equation}
+has vanishing covariant divergence. Lowering indices, we define the Einstein tensor by
+\begin{equation}
+G_{\mu\nu}=R_{\mu\nu}-\frac12 g_{\mu\nu}R.
+\end{equation}
+This satisfies
+\begin{equation}
+D_\mu G^{\mu\nu}=0.
+\end{equation}
+
+This is the decisive step of the lecture. Among symmetric rank-two tensors built from the metric and two derivatives, the Einstein combination is the one that is covariantly conserved, up to an overall multiplicative constant.
+
+\section{Einstein Tensor, Trace, and Vacuum}
+
+The field equation is therefore
+\begin{equation}
+G_{\mu\nu}=8\pi G\,T_{\mu\nu},
+\end{equation}
+or explicitly,
+\begin{equation}
+R_{\mu\nu}-\frac12 g_{\mu\nu}R = 8\pi G\,T_{\mu\nu}.
+\end{equation}
+
+The lecture does not perform the full Newtonian reduction on the board, but it states the verdict: in the weak-field, slow-motion limit the dominant source component is \(T_{00}\sim\rho\), the dominant geometric piece reduces to the familiar second-derivative structure, and the correct coefficient comes out to be exactly the one shown above. In that limit Einstein's equation reproduces Newton's theory.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_05.png}
+\caption{Trace relation and Ricci-form Einstein equation}
+\end{figure}
+
+\paragraph{Worked derivation: tracing the field equation.} Contract Einstein's equation with \(g^{\mu\nu}\). Using
+\begin{equation}
+T=g^{\mu\nu}T_{\mu\nu},
+\end{equation}
+we obtain
+\begin{align}
+g^{\mu\nu}R_{\mu\nu}
+-
+\frac12 g^{\mu\nu}g_{\mu\nu}R
+&=
+8\pi G\,g^{\mu\nu}T_{\mu\nu},\\
+R-\frac12\,\delta^\mu{}_\mu\,R
+&=
+8\pi G\,T.
+\end{align}
+Since \(\delta^\mu{}_\mu=4\) in four dimensions,
+\begin{equation}
+R-\frac12(4)R = 8\pi G\,T,
+\end{equation}
+and therefore
+\begin{equation}
+R=-8\pi G\,T.
+\end{equation}
+
+Substituting this back into Einstein's equation gives the Ricci-form rewriting
+\begin{equation}
+R_{\mu\nu}=8\pi G\left(T_{\mu\nu}-\frac12 g_{\mu\nu}T\right).
+\end{equation}
+This is often a useful alternate form of the same equation. It also makes the trace \(T\) visible as a separate scalar source. In particular, for radiation and other massless fields the trace can vanish.
+
+\paragraph{Vacuum equations.} In vacuum one has
+\begin{equation}
+T_{\mu\nu}=0.
+\end{equation}
+Then the trace relation gives
+\begin{equation}
+R=0,
+\end{equation}
+and Einstein's equation reduces to
+\begin{equation}
+R_{\mu\nu}=0.
+\end{equation}
+This is the vacuum Einstein equation.
+
+The lecture insists on an important distinction: Ricci-flat does not mean flat. The Schwarzschild exterior is Ricci-flat away from its singularity, yet it certainly has real curvature. Gravitational waves are another example: they satisfy \(R_{\mu\nu}=0\) while the full Riemann tensor is nonzero. Thus the Ricci tensor carries less information than the full curvature tensor.
+
+\paragraph{A final remark on \(\Lambda\).} Susskind also remarks that a cosmological term may be written as an effective contribution to the stress-energy tensor,
+\begin{equation}
+T_{\mu\nu}^{(\Lambda)}=\lambda g_{\mu\nu}.
+\end{equation}
+One may leave it on the right-hand side and interpret it as part of the source, or move it to the left-hand side and interpret it as part of the geometry. From the point of view of the tensor equation, either bookkeeping choice is possible.
+
+\paragraph{A caution about interpretation.} The full Riemann tensor has a comparatively clear geometric meaning in terms of curvature detected by transport around loops. The lecture does not pretend that the Ricci tensor or Ricci scalar has an equally transparent elementary picture. They are contractions of the full curvature, and in four dimensions that contraction throws away real information.
+
+\section{Summary}
+
+The lecture builds Einstein's equation by elimination. Newton suggests that matter should source second derivatives of the field. Relativity then forces us to replace mere mass density by the full symmetric energy-momentum tensor \(T_{\mu\nu}\), which obeys the continuity equation \(D_\mu T^{\mu\nu}=0\). The left-hand side must therefore be a symmetric rank-two geometric tensor with vanishing covariant divergence. Neither \(R_{\mu\nu}\) nor \(g_{\mu\nu}R\) works alone, but the combination
+\begin{equation}
+G_{\mu\nu}=R_{\mu\nu}-\frac12 g_{\mu\nu}R
+\end{equation}
+does. The result is Einstein's field equation,
+\begin{equation}
+G_{\mu\nu}=8\pi G\,T_{\mu\nu}.
+\end{equation}
+Tracing the equation gives \(R=-8\pi G T\), and in vacuum the equation becomes \(R_{\mu\nu}=0\). That last statement is already enough to warn us that empty space in general relativity need not be flat: it can still contain Schwarzschild curvature and gravitational waves.
