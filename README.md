@@ -41,12 +41,17 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <sub>Supplementary course book</sub>
     </td>
     <td align="center">
+      <a href="core_cosmology/2009_winter_legacy_cosmology/cosmology_legacy.pdf"><img src="figs/readme-covers/cosmology_legacy.png" width="170" alt="Cosmology legacy cover"></a><br>
+      <strong>Cosmology</strong><br>
+      <sub>2009 Winter legacy run</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
       <a href="supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf"><img src="figs/readme-covers/topics_in_string_theory.png" width="170" alt="Topics in String Theory cover"></a><br>
       <strong>Topics in String Theory</strong><br>
       <sub>Cosmology and Black Holes set</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="supplemental_higgs_boson/demystifying_the_higgs_boson.pdf"><img src="figs/readme-covers/demystifying_the_higgs_boson.png" width="170" alt="Demystifying the Higgs Boson cover"></a><br>
       <strong>Demystifying the Higgs Boson</strong><br>
@@ -190,6 +195,7 @@ Open the PDFs in the relevant course folder, for example:
 
 - `core_general_relativity/lesson_1.pdf`
 - `core_cosmology/lesson_1.pdf`
+- `core_cosmology/2009_winter_legacy_cosmology/cosmology_legacy.pdf`
 - `core_statistical_mechanics/lesson_1.pdf`
 - `core_classical_mechanics/2011_fall_theoretical_minimum/classical_mechanics_theoretical_minimum.pdf`
 - `core_classical_mechanics/2011_fall_modern_physics_stanford_partial/classical_mechanics_stanford_partial.pdf`

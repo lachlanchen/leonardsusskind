@@ -17,6 +17,7 @@ DEFAULT_TARGET_ROOT = Path("/home/lachlan/Nutstore Files/Projects/LazyingArtBook
 CANONICAL_FILENAMES = {
     "core/classical_mechanics/2011_fall_modern_physics_stanford_partial": "classical_mechanics_stanford_partial.pdf",
     "core/classical_mechanics/2011_fall_theoretical_minimum": "classical_mechanics_theoretical_minimum.pdf",
+    "core/cosmology/2009_winter_legacy_cosmology": "cosmology_legacy.pdf",
     "supplementary/advanced_quantum_mechanics/2013_fall": "advanced_quantum_mechanics.pdf",
     "supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory": "topics_in_string_theory.pdf",
     "supplementary/higgs_boson/2012_summer": "demystifying_the_higgs_boson.pdf",
