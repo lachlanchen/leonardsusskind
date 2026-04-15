@@ -67,13 +67,13 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Particle Physics 1</strong><br>
       <sub>Basic Concepts</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="supplemental_particle_physics_2/particle_physics_2_standard_model.pdf"><img src="figs/readme-covers/particle_physics_2_standard_model.png" width="170" alt="Particle Physics 2 cover"></a><br>
       <strong>Particle Physics 2</strong><br>
       <sub>Standard Model</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="supplemental_particle_physics_3/particle_physics_3_supersymmetry_and_grand_unification.pdf"><img src="figs/readme-covers/particle_physics_3_supersymmetry_and_grand_unification.png" width="170" alt="Particle Physics 3 cover"></a><br>
       <strong>Particle Physics 3</strong><br>
@@ -91,7 +91,7 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
     </td>
   </tr>
   <tr>
-    <td align="center" colspan="3">
+    <td align="center" colspan="4">
       <a href="supplemental_string_theory/string_theory_and_m_theory.pdf"><img src="figs/readme-covers/string_theory_and_m_theory.png" width="170" alt="String Theory and M-Theory cover"></a><br>
       <strong>String Theory and M-Theory</strong><br>
       <sub>Supplementary course book</sub>
