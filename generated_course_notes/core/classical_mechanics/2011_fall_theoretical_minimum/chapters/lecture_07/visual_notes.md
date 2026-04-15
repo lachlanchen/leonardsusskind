@@ -1,38 +1,35 @@
 # Visual Evidence
 ## Frame Inventory
-- `lecture_07_figure_02.png`: A clean recap board showing the canonical variables at the top, the Hamiltonian written as a function of \(q\) and \(p\), and the momentum-side Hamilton equation; this screenshot should remain in the final notes.
-- `lecture_07_figure_03.png`: A worked-example board showing the specific Hamiltonian \(H=pq\) and the first phase-space velocity equation for the \(p\)-direction; this screenshot should remain in the final notes.
+- `lecture_07_figure_02.png`: A sparse recap board showing canonical variables, the Hamiltonian as a function of those variables, and the momentum-side Hamilton equation; this screenshot should remain in the final notes because it is clear board evidence for the abstract setup.
+- `lecture_07_figure_03.png`: A sparse worked-example board showing the special Hamiltonian \(H=pq\) and the first phase-space velocity relation for the \(p\)-direction; this screenshot should remain in the final notes because it captures the start of the example exactly where the lecture turns concrete.
 
 ## Equation Extraction
 - `lecture_07_figure_02.png`: \(q_i,\ p_i\) [visible]
 - `lecture_07_figure_02.png`: \(H(q,p)\) [partially visible]
 - `lecture_07_figure_02.png`: \(\dot p_i=-\frac{\partial H}{\partial q_i}\) [visible]
+- `lecture_07_figure_02.png`: \(\dot q_i=\frac{\partial H}{\partial p_i}\) [standard completion]
 - `lecture_07_figure_03.png`: \(H=pq\) [visible]
 - `lecture_07_figure_03.png`: \(v_p=\dot p=-\frac{\partial H}{\partial q}\) [visible]
 - `lecture_07_figure_03.png`: \(\dot p=-p\) [standard completion]
 - `lecture_07_figure_03.png`: \(\dot q=\frac{\partial H}{\partial p}=q\) [standard completion]
 
 ## Diagram Extraction
-- Neither frame contains a genuine geometric sketch, axis diagram, or flow picture; both are equation-first blackboard states.
-- `lecture_07_figure_02.png` should be preserved as a screenshot rather than redrawn, because its value is the sparse board layout and the abstract recap staging.
-- `lecture_07_figure_03.png` should be preserved as a screenshot rather than redrawn, because it captures the transition from general Hamilton equations to the concrete \(H=pq\) example.
-- No TikZ redraw is needed for the visible frame content itself.
-- If the chapter later includes a TikZ sketch of a phase-space patch stretching under \(H=pq\), that should be treated as a transcript-backed reconstruction placed near `lecture_07_figure_03.png`, not as something directly visible in the frame.
+- Neither frame contains a geometric diagram, axis system, contour plot, or flow sketch that needs direct TikZ reproduction; both are equation-first board states.
+- `lecture_07_figure_02.png` should be preserved as a screenshot rather than redrawn, because its value is the clean staging of the abstract Hamiltonian setup on the board.
+- `lecture_07_figure_03.png` should also be preserved as a screenshot rather than redrawn, because its value is the visible transition from the named Hamiltonian \(H=pq\) to the first phase-space velocity equation.
+- If the final chapter also includes a TikZ sketch of the \(H=pq\) area-preserving deformation, that redraw should be treated as transcript-driven supporting exposition, not as something directly extracted from these frames.
 
 ## Reconstruction Guidance
-- Keep both screenshots visible in the final notes as visual evidence of the lecture’s pacing and board organization.
-- For `lecture_07_figure_02.png`, typeset a clean displayed equation
-  \(\dot p_i=-\frac{\partial H}{\partial q_i}\)
-  and describe in prose that the Hamiltonian is being introduced as a function of canonical pairs \((q_i,p_i)\).
-- For `lecture_07_figure_03.png`, typeset the visible board content first,
-  \(H=pq\) and \(v_p=\dot p=-\frac{\partial H}{\partial q}\),
-  then only afterward continue the transcript-backed derivation to \(\dot p=-p\).
-- Do not attribute \(\dot q=\frac{\partial H}{\partial p}=q\) to the screenshot itself; that belongs to the surrounding derivation, not to the visible board state.
-- Preserve the vertical board logic in the prose: variables first, then Hamiltonian, then the equation of motion beneath it.
+- Keep both screenshots visible in the final chapter and place clean displayed equations nearby; the screenshots provide the board evidence, while the LaTeX provides the legible final mathematical form.
+- For `lecture_07_figure_02.png`, typeset the canonical-pair setup and the visible equation \(\dot p_i=-\frac{\partial H}{\partial q_i}\), then add the companion equation \(\dot q_i=\frac{\partial H}{\partial p_i}\) only as a transcript-backed standard completion, not as if it were already written on the board.
+- For `lecture_07_figure_03.png`, typeset exactly what is visible first, namely \(H=pq\) and \(v_p=\dot p=-\frac{\partial H}{\partial q}\), then complete the worked example in surrounding text with \(\dot p=-p\) and \(\dot q=q\).
+- Normalize handwriting into standard note notation: lowercase \(q_i,p_i\), partial derivatives with \(\partial\), and dotted variables in standard LaTeX form.
+- Preserve the sparse board rhythm. These frames are useful because they show the lecture unfolding step by step, not because they summarize the entire derivation in one place.
+- No TikZ redraw is needed for the content directly visible in these two frames; equation typesetting plus the original screenshots is the right combination here.
 
 ## Uncertainties
-- In `lecture_07_figure_02.png`, the middle notation is best read as \(H(q,p)\), but the separator between \(q\) and \(p\) is not fully clear.
-- The handwritten \(p\) in both frames can momentarily resemble uppercase \(P\); clean notes should normalize to lowercase canonical variables.
-- In `lecture_07_figure_03.png`, the leftmost label is most plausibly \(v_p\), but the handwritten form is slightly ambiguous.
-- The second Hamilton equation is not visible in either frame.
-- The completed substitutions \(\dot p=-p\) and \(\dot q=q\) are supported by the transcript and standard differentiation of \(H=pq\), but they are not written on the board in these screenshots.
+- In `lecture_07_figure_02.png`, the middle expression is best read as \(H(q,p)\), but the separator between \(q\) and \(p\) is slightly ambiguous.
+- In `lecture_07_figure_02.png`, the handwritten \(p\) can briefly resemble an uppercase \(P\); standard typesetting should use lowercase canonical variables.
+- In `lecture_07_figure_03.png`, the leftmost symbol is best read as \(v_p\), but the handwritten form is not perfectly crisp.
+- In `lecture_07_figure_03.png`, the example has not yet been algebraically completed on the board, so \(\dot p=-p\) and \(\dot q=q\) must be treated as cautious standard completion from the transcript, not as visible board content.
+- Neither frame shows the later geometric consequences of the \(H=pq\) example, such as a stretched-and-squeezed patch or a divergence calculation; those belong to later reconstruction, not direct figure extraction.
