@@ -2,12 +2,18 @@
 
 📘 Root publication folder for the core classical mechanics material in this archive.
 
-## ✨ Current PDFs
+## ✨ Published Runs
 
-- `classical_mechanics_stanford_partial.pdf`
-- `stanford_partial_lecture_01.pdf` through `stanford_partial_lecture_09.pdf`
+- [`2011_fall_theoretical_minimum/`](2011_fall_theoretical_minimum)
+  - main Theoretical Minimum classical mechanics run
+  - `classical_mechanics_theoretical_minimum.pdf`
+  - `lecture_01.pdf` through `lecture_10.pdf`
+- [`2011_fall_modern_physics_stanford_partial/`](2011_fall_modern_physics_stanford_partial)
+  - alternate Stanford modern physics upload set
+  - `classical_mechanics_stanford_partial.pdf`
+  - `lecture_01.pdf` through `lecture_09.pdf`
 
-These files correspond to the older Stanford `Modern Physics: Classical Mechanics` upload run that appears in the playlist as a separate 9-lecture sequence.
+This split matches the source archive: one main Theoretical Minimum run and one separate Stanford partial run.
 
 ## 📚 Companion Book
 
@@ -24,10 +30,10 @@ Leonard Susskind and George Hrabovsky also published the related book:
 
 ## 📌 Status
 
-- The Stanford partial run is already published here.
-- The main `2011_fall_theoretical_minimum` run is still being generated.
-- When the full Theoretical Minimum run finishes, it should also be published here under distinct filenames.
+- The Theoretical Minimum run is published here.
+- The Stanford partial run is also published here as a separate subfolder.
+- Both runs are kept independent rather than merged.
 
 ## 🔗 Publication Note
 
-The PDFs in this folder are hard-linked from `generated_course_notes/`, so they should be refreshed again if the generated source PDFs are rebuilt later.
+The PDFs in these subfolders are hard-linked from `generated_course_notes/`, so they should be refreshed again if the generated source PDFs are rebuilt later.

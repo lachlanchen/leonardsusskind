@@ -26,7 +26,12 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
 <table>
   <tr>
     <td align="center">
-      <a href="core_classical_mechanics/classical_mechanics_stanford_partial.pdf"><img src="figs/readme-covers/classical_mechanics_stanford_partial.png" width="170" alt="Classical Mechanics Stanford partial cover"></a><br>
+      <a href="core_classical_mechanics/2011_fall_theoretical_minimum/classical_mechanics_theoretical_minimum.pdf"><img src="figs/readme-covers/classical_mechanics_theoretical_minimum.png" width="170" alt="Classical Mechanics Theoretical Minimum cover"></a><br>
+      <strong>Classical Mechanics</strong><br>
+      <sub>2011 Fall Theoretical Minimum</sub>
+    </td>
+    <td align="center">
+      <a href="core_classical_mechanics/2011_fall_modern_physics_stanford_partial/classical_mechanics_stanford_partial.pdf"><img src="figs/readme-covers/classical_mechanics_stanford_partial.png" width="170" alt="Classical Mechanics Stanford partial cover"></a><br>
       <strong>Classical Mechanics</strong><br>
       <sub>Stanford partial run</sub>
     </td>
@@ -186,6 +191,8 @@ Open the PDFs in the relevant course folder, for example:
 - `core_general_relativity/lesson_1.pdf`
 - `core_cosmology/lesson_1.pdf`
 - `core_statistical_mechanics/lesson_1.pdf`
+- `core_classical_mechanics/2011_fall_theoretical_minimum/classical_mechanics_theoretical_minimum.pdf`
+- `core_classical_mechanics/2011_fall_modern_physics_stanford_partial/classical_mechanics_stanford_partial.pdf`
 - `supplemental_advanced_quantum/advanced_quantum_mechanics.pdf`
 - `supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf`
 - `supplemental_higgs_boson/demystifying_the_higgs_boson.pdf`
