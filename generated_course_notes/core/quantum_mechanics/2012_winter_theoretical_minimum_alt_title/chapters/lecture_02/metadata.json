@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/125 - Lecture 2 \uff5c The Theoretical Minimum [a6ANMKRBjA8].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/125 - Lecture 2 \uff5c The Theoretical Minimum [a6ANMKRBjA8].webm",
+  "lecture_number": 2,
+  "lecture_slug": "lecture_02",
+  "lecture_title": "Lecture 2 : The Theoretical Minimum",
+  "assets": [
+    {
+      "name": "lecture_02_figure_02.png",
+      "timestamp_seconds": 315.344,
+      "timestamp_hhmmss": "00:05:15.344",
+      "source_candidate": "lecture_02_window_02_candidate_03_000515344.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the first frame in which the arrow is fully drawn and clearly legible on a clean portion of the board. The earlier candidates are blank or still in the middle of the stroke, while the later frame adds more lecturer presence without improving the visible notation.",
+      "subtitle_excerpt": "I'll draw it as a little arrow.",
+      "segment_start_seconds": 312.38,
+      "segment_start_hhmmss": "00:05:12.380",
+      "segment_end_seconds": 316.94,
+      "segment_end_hhmmss": "00:05:16.940",
+      "caption_hint": "small upward-arrow state mark"
+    },
+    {
+      "name": "lecture_02_figure_03.png",
+      "timestamp_seconds": 766.075,
+      "timestamp_hhmmss": "00:12:46.075",
+      "source_candidate": "lecture_02_window_03_candidate_04_001246075.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame gives the cleanest overall board state among the four nearly identical candidates. Both visible equations are fully legible, the horizontal arrow with the x label is still present at the left edge, and Susskind is not blocking the notation. It is the most useful combined record of the symbolic labels and the axis orientation cue.",
+      "subtitle_excerpt": "get sigma x equals minus one,",
+      "segment_start_seconds": 765.35,
+      "segment_start_hhmmss": "00:12:45.350",
+      "segment_end_seconds": 766.1,
+      "segment_end_hhmmss": "00:12:46.100",
+      "caption_hint": "sigma labels with x-axis cue"
+    },
+    {
+      "name": "lecture_02_figure_04.png",
+      "timestamp_seconds": 1402.04,
+      "timestamp_hhmmss": "00:23:22.040",
+      "source_candidate": "lecture_02_window_04_candidate_02_002322040.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the best balance of completeness and clarity. The main equation \\(\\langle \\sigma_m \\rangle = n\\cdot m\\) is fully legible, \\(\\sigma_x=\\pm1\\) remains visible above it, and Susskind is not blocking the writing. Earlier and later frames are very similar, but this one preserves slightly more of both the left-side mathematics and the adjacent board context without cropping the key equation.",
+      "subtitle_excerpt": "at one point you were drawing a spin",
+      "segment_start_seconds": 1401.4,
+      "segment_start_hhmmss": "00:23:21.400",
+      "segment_end_seconds": 1402.88,
+      "segment_end_hhmmss": "00:23:22.880",
+      "caption_hint": "spin expectation-value formula"
+    },
+    {
+      "name": "lecture_02_figure_05.png",
+      "timestamp_seconds": 3279.888,
+      "timestamp_hhmmss": "00:54:39.888",
+      "source_candidate": "lecture_02_window_05_candidate_04_005439888.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the most useful frame in the sequence because it captures the new \\(\\sigma_z\\) notation at the moment it is being introduced, while still preserving the earlier parallel labels \\(u,+,\\uparrow\\) and \\(d,-,\\downarrow\\). The lecturer's hand partially covers the equality being written, but this frame is more faithful to the subtitle moment than the earlier, cleaner frames that do not yet show the \\(\\sigma_z\\) label.",
+      "subtitle_excerpt": "We could write it as sigma z equals plus one,",
+      "segment_start_seconds": 3276.72,
+      "segment_start_hhmmss": "00:54:36.720",
+      "segment_end_seconds": 3280.32,
+      "segment_end_hhmmss": "00:54:40.320",
+      "caption_hint": "up/down notation with sigma-z label"
+    },
+    {
+      "name": "lecture_02_figure_06.png",
+      "timestamp_seconds": 3400.985,
+      "timestamp_hhmmss": "00:56:40.985",
+      "source_candidate": "lecture_02_window_06_candidate_04_005640985.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame gives the best combined evidence for the board at this moment. It preserves the earlier up/down correspondences and the \\(\\sigma_z\\) labels, while also showing the lower left-right arrows and the new \\(\\sigma_x\\) notation furthest along. The earlier frames either do not yet show the new expression or catch it too early to be useful.",
+      "subtitle_excerpt": "They also correspond to sigma x equals one",
+      "segment_start_seconds": 3397.94,
+      "segment_start_hhmmss": "00:56:37.940",
+      "segment_end_seconds": 3401.4,
+      "segment_end_hhmmss": "00:56:41.400",
+      "caption_hint": "z- and x-basis spin labels"
+    }
+  ]
+}
