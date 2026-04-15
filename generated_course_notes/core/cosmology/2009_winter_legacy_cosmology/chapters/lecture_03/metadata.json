@@ -1,0 +1,52 @@
+{
+  "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology \uff5c Lecture 3 [rYQTAJ50A44].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology \uff5c Lecture 3 [rYQTAJ50A44].mp4",
+  "lecture_number": 3,
+  "lecture_slug": "lecture_03",
+  "lecture_title": "Cosmology : Lecture 3",
+  "assets": [
+    {
+      "name": "lecture_03_figure_02.png",
+      "timestamp_seconds": 330.639,
+      "timestamp_hhmmss": "00:05:30.639",
+      "source_candidate": "lecture_03_window_03_candidate_01_000530639.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 01 gives the clearest stable view of both the left-hand spherical mass-distribution sketch and the right-hand energy-conservation expression. The writing is sharp, the board layout is complete, and the lecturer's shadow is slightly less intrusive than in the later candidates, which add no new mathematical content.",
+      "subtitle_excerpt": "but remember the gravitational potential energy",
+      "segment_start_seconds": 330.32,
+      "segment_start_hhmmss": "00:05:30.320",
+      "segment_end_seconds": 332.98,
+      "segment_end_hhmmss": "00:05:32.980",
+      "caption_hint": "energy-conservation term with spherical mass sketch"
+    },
+    {
+      "name": "lecture_03_figure_03.png",
+      "timestamp_seconds": 496.901,
+      "timestamp_hhmmss": "00:08:16.901",
+      "source_candidate": "lecture_03_window_04_candidate_04_000816901.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 gives the most complete and legible view of the relevant board work in this subtitle window. The boxed lower expression is clearer than in the earlier frames, the visible curvature term is unobstructed, and the lecturer no longer blocks as much of the left-hand equation fragment.",
+      "subtitle_excerpt": "in particular the time-time component of the equation,",
+      "segment_start_seconds": 494.12,
+      "segment_start_hhmmss": "00:08:14.120",
+      "segment_end_seconds": 497.28,
+      "segment_end_hhmmss": "00:08:17.280",
+      "caption_hint": "boxed curvature term in the Friedmann equation"
+    },
+    {
+      "name": "lecture_03_figure_05.png",
+      "timestamp_seconds": 2685.195,
+      "timestamp_hhmmss": "00:44:45.195",
+      "source_candidate": "lecture_03_window_06_candidate_02_004445195.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 02 is the clearest stable frame in this window. The newly drawn horizontal and vertical axes are both visible with minimal occlusion, and the lecturer is no longer bent over the lower corner as in candidate 01 or actively sweeping an arm across the board as in candidates 03 and 04. For note writing, it is the best witness to the board layout at the moment Susskind begins plotting energy density.",
+      "subtitle_excerpt": "Let's first plot energy density.",
+      "segment_start_seconds": 2684.42,
+      "segment_start_hhmmss": "00:44:44.420",
+      "segment_end_seconds": 2686.46,
+      "segment_end_hhmmss": "00:44:46.460",
+      "caption_hint": "axes for energy-density plot"
+    }
+  ]
+}
