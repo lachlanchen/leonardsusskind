@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology \uff5c Lecture 2 [ERjkSbdn6-4].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology \uff5c Lecture 2 [ERjkSbdn6-4].mkv",
+  "lecture_number": 2,
+  "lecture_slug": "lecture_02",
+  "lecture_title": "Cosmology : Lecture 2",
+  "assets": [
+    {
+      "name": "lecture_02_figure_02.png",
+      "timestamp_seconds": 876.827,
+      "timestamp_hhmmss": "00:14:36.827",
+      "source_candidate": "lecture_02_window_02_candidate_03_001436827.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 03 gives the best balance of visible mathematics and board layout. The lower spacetime interval line is clearer than in candidates 01 and 02, while the left-hand sketch is more exposed. Candidate 04 reveals slightly more of the sketch, but the lecturer is actively moving an eraser across the board and the equation is less settled. For note writing, candidate 03 is the clearest stable witness to the transition from the spatial line element to the spacetime metric-tensor discussion.",
+      "subtitle_excerpt": "by saying the metric tensor,",
+      "segment_start_seconds": 875.54,
+      "segment_start_hhmmss": "00:14:35.540",
+      "segment_end_seconds": 877.52,
+      "segment_end_hhmmss": "00:14:37.520",
+      "caption_hint": "metric tensor and interval sketch"
+    },
+    {
+      "name": "lecture_02_figure_03.png",
+      "timestamp_seconds": 1868.136,
+      "timestamp_hhmmss": "00:31:08.136",
+      "source_candidate": "lecture_02_window_03_candidate_04_003108136.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "All four candidates are extremely similar, but candidate 04 is the latest stable frame in the subtitle window and preserves the small diagram and the kinetic-energy expression cleanly with no lecturer occlusion. It is useful for notes because it captures both the visual setup of a test mass moving away from a central concentric source and the explicit term \\(mv^2/2\\) that the lecture is about to balance against potential energy.",
+      "subtitle_excerpt": "What about its potential energy",
+      "segment_start_seconds": 1866.64,
+      "segment_start_hhmmss": "00:31:06.640",
+      "segment_end_seconds": 1868.34,
+      "segment_end_hhmmss": "00:31:08.340",
+      "caption_hint": "kinetic-energy term with test mass"
+    },
+    {
+      "name": "lecture_02_figure_04.png",
+      "timestamp_seconds": 1982.238,
+      "timestamp_hhmmss": "00:33:02.238",
+      "source_candidate": "lecture_02_window_04_candidate_02_003302238.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 02 gives the clearest combined view of the energy formula and the small source-test-mass sketch. The lecturer's hand has dropped below the drawing, so the concentric source, the test mass label, and the outward arrow are less occluded than in candidates 01, 03, and 04. It is the best note-writing frame for the point that the positive kinetic term is offset by a large negative gravitational potential term.",
+      "subtitle_excerpt": "creates a large amount of negative potential energy.",
+      "segment_start_seconds": 1980.84,
+      "segment_start_hhmmss": "00:33:00.840",
+      "segment_end_seconds": 1984.52,
+      "segment_end_hhmmss": "00:33:04.520",
+      "caption_hint": "kinetic and negative potential energy"
+    },
+    {
+      "name": "lecture_02_figure_05.png",
+      "timestamp_seconds": 2113.039,
+      "timestamp_hhmmss": "00:35:13.039",
+      "source_candidate": "lecture_02_window_05_candidate_03_003513039.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 03 is the clearest frame for note writing because it exposes the lower graph most fully while still preserving the surrounding board layout. In candidates 01 and 02 the lecturer's finger sits on the upper branch of the lower sketch and hides more of the curve. Candidate 04 adds more of the lecturer and lessens the emphasis on the diagram. Candidate 03 best captures the qualitative graph Susskind is using to explain motion toward decreasing potential energy.",
+      "subtitle_excerpt": "It pushes toward decreasing potential energy.",
+      "segment_start_seconds": 2110.66,
+      "segment_start_hhmmss": "00:35:10.660",
+      "segment_end_seconds": 2114.32,
+      "segment_end_hhmmss": "00:35:14.320",
+      "caption_hint": "qualitative potential-energy slope"
+    },
+    {
+      "name": "lecture_02_figure_06.png",
+      "timestamp_seconds": 2219.757,
+      "timestamp_hhmmss": "00:36:59.757",
+      "source_candidate": "lecture_02_window_06_candidate_03_003659757.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 03 is the strongest frame because it shows the full energy expression clearly at the exact moment Susskind emphasizes that the potential term dominates. Candidate 01 is too incomplete, candidate 02 still cuts off the potential term, and candidate 04 is very similar to candidate 03 but offers no additional board content. Candidate 03 is the cleanest complete witness to the relevant equation.",
+      "subtitle_excerpt": "and the potential energy dominates.",
+      "segment_start_seconds": 2217.82,
+      "segment_start_hhmmss": "00:36:57.820",
+      "segment_end_seconds": 2220.8,
+      "segment_end_hhmmss": "00:37:00.800",
+      "caption_hint": "kinetic minus gravitational potential energy"
+    }
+  ]
+}
