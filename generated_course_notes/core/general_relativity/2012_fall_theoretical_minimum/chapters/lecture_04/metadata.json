@@ -1,0 +1,52 @@
+{
+  "course_rel": "core/general_relativity/2012_fall_theoretical_minimum",
+  "transcript_rel": "core/general_relativity/2012_fall_theoretical_minimum/158 - General Relativity Lecture 4 [YdnLcYNdTzE].md",
+  "video_rel": "core/general_relativity/2012_fall_theoretical_minimum/158 - General Relativity Lecture 4 [YdnLcYNdTzE].mkv",
+  "lecture_number": 4,
+  "lecture_slug": "lecture_04",
+  "lecture_title": "General Relativity Lecture 4",
+  "assets": [
+    {
+      "name": "lecture_04_figure_04.png",
+      "timestamp_seconds": 2426.8089999999997,
+      "timestamp_hhmmss": "00:40:26.809",
+      "source_candidate": "lecture_04_window_04_candidate_03_004026809.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "That's the matrix or the metric tensor g mu nu.",
+      "segment_start_seconds": 2423.26,
+      "segment_start_hhmmss": "00:40:23.260",
+      "segment_end_seconds": 2428.72,
+      "segment_end_hhmmss": "00:40:28.720",
+      "caption_hint": "That's the matrix or the metric tensor g mu nu."
+    },
+    {
+      "name": "lecture_04_figure_05.png",
+      "timestamp_seconds": 4919.395,
+      "timestamp_hhmmss": "01:21:59.395",
+      "source_candidate": "lecture_04_window_05_candidate_03_012159395.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame captures the fullest and clearest board state in the subtitle window. The right-board metric expansion is the main payload for note writing, and here it is more legible because Susskind's hand has dropped away from the boxed lower expression. At the same time, the left-board boxed Christoffel-related relation is still visible enough to preserve the surrounding layout. Candidate 02 is more obstructed by his gesture, and candidates 01 and 04 offer slightly poorer visibility of the right-board boxed expression.",
+      "subtitle_excerpt": "The metric tensor in the vicinity of",
+      "segment_start_seconds": 4917.666,
+      "segment_start_hhmmss": "01:21:57.666",
+      "segment_end_seconds": 4920.326,
+      "segment_end_hhmmss": "01:22:00.326",
+      "caption_hint": "local metric expansion near y=0"
+    },
+    {
+      "name": "lecture_04_figure_06.png",
+      "timestamp_seconds": 5418.548,
+      "timestamp_hhmmss": "01:30:18.548",
+      "source_candidate": "lecture_04_window_06_candidate_03_013018548.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "Force is equal derivative of potential energy.",
+      "segment_start_seconds": 5417.066,
+      "segment_start_hhmmss": "01:30:17.066",
+      "segment_end_seconds": 5419.346,
+      "segment_end_hhmmss": "01:30:19.346",
+      "caption_hint": "Force is equal derivative of potential energy."
+    }
+  ]
+}
