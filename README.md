@@ -21,6 +21,69 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
 >
 > 🛠️ The download, transcription, and subtitle-to-notes automation used here is maintained in the companion tool repo [Video2Book](https://github.com/lachlanchen/Video2Book), which is included in this repository as the `Video2Book/` submodule.
 
+## 📚 Published Books
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="core_classical_mechanics/classical_mechanics_stanford_partial.pdf"><img src="figs/readme-covers/classical_mechanics_stanford_partial.png" width="170" alt="Classical Mechanics Stanford partial cover"></a><br>
+      <strong>Classical Mechanics</strong><br>
+      <sub>Stanford partial run</sub>
+    </td>
+    <td align="center">
+      <a href="supplemental_advanced_quantum/advanced_quantum_mechanics.pdf"><img src="figs/readme-covers/advanced_quantum_mechanics.png" width="170" alt="Advanced Quantum Mechanics cover"></a><br>
+      <strong>Advanced Quantum Mechanics</strong><br>
+      <sub>Supplementary course book</sub>
+    </td>
+    <td align="center">
+      <a href="supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf"><img src="figs/readme-covers/topics_in_string_theory.png" width="170" alt="Topics in String Theory cover"></a><br>
+      <strong>Topics in String Theory</strong><br>
+      <sub>Cosmology and Black Holes set</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="supplemental_higgs_boson/demystifying_the_higgs_boson.pdf"><img src="figs/readme-covers/demystifying_the_higgs_boson.png" width="170" alt="Demystifying the Higgs Boson cover"></a><br>
+      <strong>Demystifying the Higgs Boson</strong><br>
+      <sub>Single-lecture book</sub>
+    </td>
+    <td align="center">
+      <a href="supplemental_particle_physics_1/particle_physics_1_basic_concepts.pdf"><img src="figs/readme-covers/particle_physics_1_basic_concepts.png" width="170" alt="Particle Physics 1 cover"></a><br>
+      <strong>Particle Physics 1</strong><br>
+      <sub>Basic Concepts</sub>
+    </td>
+    <td align="center">
+      <a href="supplemental_particle_physics_2/particle_physics_2_standard_model.pdf"><img src="figs/readme-covers/particle_physics_2_standard_model.png" width="170" alt="Particle Physics 2 cover"></a><br>
+      <strong>Particle Physics 2</strong><br>
+      <sub>Standard Model</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="supplemental_particle_physics_3/particle_physics_3_supersymmetry_and_grand_unification.pdf"><img src="figs/readme-covers/particle_physics_3_supersymmetry_and_grand_unification.png" width="170" alt="Particle Physics 3 cover"></a><br>
+      <strong>Particle Physics 3</strong><br>
+      <sub>Supersymmetry and Grand Unification</sub>
+    </td>
+    <td align="center">
+      <a href="supplemental_quantum_entanglement/quantum_entanglement_part_1.pdf"><img src="figs/readme-covers/quantum_entanglement_part_1.png" width="170" alt="Quantum Entanglement Part 1 cover"></a><br>
+      <strong>Quantum Entanglement</strong><br>
+      <sub>Part 1</sub>
+    </td>
+    <td align="center">
+      <a href="supplemental_quantum_entanglement/quantum_entanglement_part_3.pdf"><img src="figs/readme-covers/quantum_entanglement_part_3.png" width="170" alt="Quantum Entanglement Part 3 cover"></a><br>
+      <strong>Quantum Entanglement</strong><br>
+      <sub>Part 3</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="3">
+      <a href="supplemental_string_theory/string_theory_and_m_theory.pdf"><img src="figs/readme-covers/string_theory_and_m_theory.png" width="170" alt="String Theory and M-Theory cover"></a><br>
+      <strong>String Theory and M-Theory</strong><br>
+      <sub>Supplementary course book</sub>
+    </td>
+  </tr>
+</table>
+
 ## ✨ What This Repo Provides
 
 - Existing hand-maintained course PDFs and LaTeX material in `core_*` and `supplemental_*` folders.
