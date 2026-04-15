@@ -1,0 +1,267 @@
+\chapter{Inflation from a Rolling Scalar Field}
+
+We begin where the lecture begins: not with a polished slogan about inflation, but with a student's question about an equation already written on the board. Why should a scalar field satisfy an equation that looks like Newton's law with friction? What is the force, what is moving, and why does cosmological expansion enter at all? The clean way to answer is to unfold the story in the order of the lecture itself. We first treat a nearly homogeneous scalar field as a mechanical degree of freedom in a box, then redo the derivation for an expanding box, then couple the result to Friedmann's equation. Only after that do we ask why such a mechanism was invented, how it ends, and why an inflationary universe is still not perfectly smooth.
+
+\section{The Opening Question: What Force Acts on the Field?}
+
+The remembered equation is
+\begin{equation}
+\ddot{\phi}+3H\dot{\phi}=-\frac{\partial V}{\partial \phi}.
+\end{equation}
+The question is exactly the right one: what is acting on what?
+
+We are not speaking about an ordinary particle moving through ordinary space. We are speaking about a scalar field, a field whose value at each point in space is a single number. Such a field may be hypothetical and undiscovered, but its bookkeeping is familiar enough. Every field carries energy. In the present case we imagine plotting the energy density against the value of the field itself, and we call that energy density \(V(\phi)\).
+
+The zero of \(\phi\) is arbitrary, so there is no reason for the energy density to vanish at \(\phi=0\). The point of the graph is not its absolute origin, but the fact that different values of the field correspond to different values of the energy stored in space per unit volume.
+
+There is also kinetic energy if the field changes with time. Since the lecture is concerned with a field that is nearly uniform in space over the region of interest, the relevant derivative at this stage is the time derivative. The total scalar-field energy density is therefore written as
+\begin{equation}
+\rho_{\phi}=\frac{1}{2}\dot{\phi}^{2}+V(\phi).
+\end{equation}
+The first term is the analog of kinetic energy; the second is the potential energy density.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_09_figure_04.png}
+\caption{Potential sketch beside the energy-to-Lagrangian transition.}
+\end{figure}
+
+The lecture repeatedly insists on a useful analogy: the field value \(\phi\) should be thought of as a coordinate-like variable. It is not the position of a bead in space, but it behaves mathematically as though it were a coordinate. If \(\phi\) changes in time, then \(\dot{\phi}\) plays the role of a velocity. The later dynamics will be the dynamics of this coordinate in field space.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} What sort of force is this, and what is acting on what?
+
+\paragraph{Answer.} The force is not a push on a material object in ordinary space. The quantity that evolves is the field value itself. The derivative of the potential with respect to \(\phi\) plays exactly the role that a force plays in mechanics, but the motion is motion in field space. The field tends to move toward lower potential energy.
+
+\section{A Homogeneous Scalar Field as a Mechanical Degree of Freedom}
+
+Let us now make the mechanical analogy explicit. We follow the field inside a small box and assume that, because expansion has stretched away short-distance variations, the field is essentially homogeneous there. Then \(\phi\) is a single dynamical variable depending only on time.
+
+The lecture briefly notes that if one had written the kinetic term with some constant coefficient \(n^{2}\), as in \(\frac{1}{2}n^{2}\dot{\phi}^{2}\), one could absorb that coefficient by redefining the field,
+\[
+\chi=n\phi.
+\]
+So there is no loss of generality in using the canonical coefficient \(1/2\).
+
+With that normalization, the homogeneous-field Lagrangian density is
+\begin{equation}
+\mathcal{L}=\frac{1}{2}\dot{\phi}^{2}-V(\phi).
+\end{equation}
+The board at this point shows only the opening strokes of the variational operator, but the intended equation is the standard Euler--Lagrange equation.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.42\textwidth]{lecture_09_figure_02.png}
+\caption{Opening Euler--Lagrange operator on the board.}
+\end{figure}
+
+\begin{align}
+\frac{d}{dt}\!\left(\frac{\partial \mathcal{L}}{\partial \dot{\phi}}\right)&=\frac{\partial \mathcal{L}}{\partial \phi},\\
+\frac{\partial \mathcal{L}}{\partial \dot{\phi}}&=\dot{\phi}, \qquad
+\frac{\partial \mathcal{L}}{\partial \phi}=-\frac{\partial V}{\partial \phi}.
+\end{align}
+Therefore
+\begin{equation}
+\ddot{\phi}=-\frac{\partial V}{\partial \phi}.
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_09_figure_03.png}
+\caption{Field equation from the derivative of the potential.}
+\end{figure}
+
+This is the first real payoff. If \(\phi\) were literally the position of a particle, then \(-\partial V/\partial \phi\) would be the force. Here the same formula survives, but what accelerates is the field value itself. That is the clean answer to the opening question.
+
+It is also useful to say explicitly what approximation has been made. We have neglected spatial gradients. That is not because scalar fields have no spatial dependence in principle, but because the lecture assumes that prior expansion has stretched such variations so much that over a small box the field looks very smooth.
+
+\section{Redoing the Derivation for an Expanding Box}
+
+At this point the lecture stops and says, in effect, let us go back now. The previous derivation was not wrong, but it was incomplete for cosmology. We had written an energy density and a Lagrangian density. To get the actual Lagrangian for a cosmological box, we must multiply by the physical volume of the box. In an expanding universe that volume scales as \(a^{3}(t)\).
+
+So the correct Lagrangian is
+\begin{equation}
+L=a^{3}(t)\left(\frac{1}{2}\dot{\phi}^{2}-V(\phi)\right).
+\end{equation}
+Now the Euler--Lagrange step must be repeated with this explicit time dependence included:
+\begin{equation}
+\frac{d}{dt}\!\left(\frac{\partial L}{\partial \dot{\phi}}\right)=\frac{\partial L}{\partial \phi}.
+\end{equation}
+Since
+\[
+\frac{\partial L}{\partial \dot{\phi}}=a^{3}\dot{\phi},
+\qquad
+\frac{\partial L}{\partial \phi}=-a^{3}\frac{\partial V}{\partial \phi},
+\]
+we obtain
+\begin{equation}
+\frac{d}{dt}\!\left(a^{3}\dot{\phi}\right)=-a^{3}\frac{\partial V}{\partial \phi}.
+\end{equation}
+Now expand the time derivative:
+\begin{align}
+\frac{d}{dt}\!\left(a^{3}\dot{\phi}\right)
+&=a^{3}\ddot{\phi}+\frac{d(a^{3})}{dt}\,\dot{\phi} \\
+&=a^{3}\ddot{\phi}+3a^{2}\dot a\,\dot{\phi}.
+\end{align}
+Divide by \(a^{3}\), and the equation becomes
+\begin{equation}
+\ddot{\phi}+3\frac{\dot a}{a}\dot{\phi}=-\frac{\partial V}{\partial \phi}.
+\end{equation}
+With the standard notation
+\begin{equation}
+H=\frac{\dot a}{a},
+\end{equation}
+this is
+\begin{equation}
+\ddot{\phi}+3H\dot{\phi}=-\frac{\partial V}{\partial \phi}.
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_09_figure_05.png}
+\caption{Scalar-field equation with Hubble friction.}
+\end{figure}
+
+The new term is the essential cosmological ingredient. If \(a\) were constant, it would cancel away. Because \(a(t)\) is time-dependent, the expansion inserts a new term into the field equation.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why does expansion look like viscosity, and why is ordinary energy conservation lost?
+
+\paragraph{Answer.} The term \(3H\dot{\phi}\) has exactly the form of a viscous drag: it is proportional to the velocity \(\dot{\phi}\) and opposes the motion. The lecture likens the motion of the field to a rock falling through honey. At rest there is no drag; once the field begins to move, the drag grows.
+
+As for energy conservation, the key point is that the Lagrangian now depends explicitly on time through \(a(t)\). Ordinary energy conservation is a consequence of time-translation invariance. Once the background itself changes with time, that symmetry is gone, and one should not expect the usual conserved energy for the field by itself.
+
+\section{Slow Roll from Friction Plus Friedmann}
+
+The lecture now marks a transition: this was only one half of the story. The expansion affects the motion of \(\phi\), but the field also affects the expansion. For that we go to Friedmann's equation.
+
+Keeping only the flat case for simplicity, we write
+\begin{equation}
+H^{2}=\left(\frac{\dot a}{a}\right)^{2}=\frac{8\pi G}{3}\rho.
+\end{equation}
+For the scalar field,
+\begin{equation}
+\rho=\rho_{\phi}=\frac{1}{2}\dot{\phi}^{2}+V(\phi),
+\end{equation}
+so Friedmann becomes
+\begin{equation}
+H^{2}=\frac{8\pi G}{3}\left(\frac{1}{2}\dot{\phi}^{2}+V(\phi)\right).
+\end{equation}
+
+Now comes the slow-roll regime. The potential is assumed to be high and shallow. Then the force \(-\partial V/\partial \phi\) is small, but the friction coefficient \(3H\) can be large. This is the thick-honey picture. The field quickly reaches terminal velocity, so to first approximation we neglect \(\ddot{\phi}\) and solve
+\begin{equation}
+\dot{\phi}\approx -\frac{1}{3H}\frac{\partial V}{\partial \phi}.
+\end{equation}
+If \(H\) is large and the slope is gentle, then \(\dot{\phi}\) is small, and therefore
+\[
+\dot{\phi}^{2}\ll V(\phi).
+\]
+In that regime the Friedmann equation simplifies to
+\begin{equation}
+H^{2}\approx \frac{8\pi G}{3}V(\phi),
+\qquad
+H\approx \sqrt{\frac{8\pi G}{3}V(\phi)}.
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{lecture_09_figure_06.png}
+\caption{Friedmann equation in the potential-dominated limit.}
+\end{figure}
+
+If the field moves only very slowly down the ramp, then \(V(\phi)\) changes only very slowly, so \(H\) is approximately constant for a significant interval. Then
+\begin{equation}
+\frac{\dot a}{a}=H \qquad \Longrightarrow \qquad a(t)=a_{0}e^{Ht}.
+\end{equation}
+This is the inflationary expansion.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why can a slowly moving field drive a rapidly expanding universe?
+
+\paragraph{Answer.} Because it is \(\phi\) that moves slowly, not \(a\). The derivative of the potential drives the motion of \(\phi\), but the potential energy itself drives the expansion. A large, nearly constant \(V(\phi)\) means a large, nearly constant \(H\), and that means exponential expansion. No viscous drag is acting on the scale factor; the drag acts on the field and keeps the potential energy from changing very much.
+
+\section{Why Inflation Was Invented}
+
+Only after the equations are on the board does the lecture turn to motivation. Why should we care about a scalar field creeping down a shallow potential while the universe expands exponentially?
+
+The first historical answer is the monopole problem. In many unified theories magnetic monopoles are expected, and they are expected to be extremely heavy. Their very heaviness explains why we do not make them in laboratories. But the early universe was hot enough, according to the pre-inflationary picture, that such particles could have been produced. Since magnetic charge would be conserved, they could not simply disappear into ordinary matter and radiation. One would then expect some surviving population of monopoles in space.
+
+Why is that a problem? Because a significant population of monopoles would tend to discharge galactic magnetic fields, in close analogy with how ordinary charges discharge an electric field. Galactic magnetic fields are still there. So the simplest conclusion was that there is no substantial monopole population left.
+
+The second answer is the smoothness problem. By the time of decoupling, the cosmic microwave background was astonishingly uniform across the sky. Standard expansion by itself does not naturally smooth an initially rough, hot universe to that degree. If we start from something more textured, ordinary expansion is not enough.
+
+Inflation solves both problems with one move. It dilutes everything. It dilutes monopoles, and it stretches away bumps and lumps in the early texture. The lecture packages the requirement in the estimate
+\begin{equation}
+Ht\gtrsim 60.
+\end{equation}
+That is, the universe needs roughly sixty \(e\)-foldings of inflation, a linear expansion by about \(e^{60}\), in order to account for the observed flatness and early smoothness. This is best read as a lower bound, not as a sharp universal number. The point is that the field must stay on the shallow part of the potential long enough.
+
+There is also an observational twist. If inflation were only just barely above the minimum required amount, then residual spatial curvature might still be close enough to the observational threshold to be seen. So the lower bound is physically interesting, even though the lecture emphasizes that there is no reliable upper bound.
+
+\section{End of Inflation, Reheating, and the Residual Vacuum Energy}
+
+Inflation is powerful precisely because it leaves the universe cold and nearly empty. Ordinary particles are diluted away, monopoles are diluted away, and the geometry is flattened. But that state cannot be the end of the story, because the present universe is not doubling in size every \(10^{-32}\) seconds.
+
+So the potential must change character. The lecture describes a plateau or shallow ramp that eventually ends. As the field moves downward, two things happen at once: \(V(\phi)\) decreases, so \(H\) decreases, and the slope typically increases, so the force becomes larger. Friction becomes less important relative to the force, and the field rolls off the plateau more quickly. Inflation stops.
+
+What happens to the large potential energy stored in the field? The lecture is careful here. In a rapidly expanding universe one must not appeal too casually to the static-universe form of energy conservation. Still, once the field runs down the hill, the potential energy does not simply vanish from the story. It is transferred into field motion and then, in the standard picture, into ordinary particles and heat.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} How can reheating solve the original problems without simply recreating monopoles?
+
+\paragraph{Answer.} Reheating works only if the temperature reached after inflation is high enough to create the ordinary contents of the hot Big Bang, but low enough to stay below the threshold for monopole production. If reheating went all the way back to the monopole-producing regime, then we would be back where we started. This is why the lecture insists that the relevant temperatures and timescales have to be juggled carefully, even if the required numbers are not absurd.
+
+The inflaton field itself has quanta, and the lecture treats the decay of those quanta into photons, leptons, quarks, and dark matter as the natural picture of reheating. One need not commit to a detailed microphysical model here. The important point is that the hot Big Bang of standard cosmology begins after inflation, not before it. It begins when the potential energy stored in the inflaton is dumped into ordinary degrees of freedom.
+
+The same potential also suggests a way of thinking about the present universe. If the field settles near a minimum with a tiny positive residual potential energy, then we again have an approximately exponential expansion, but on an enormously slower timescale. In that sense inflation and today's dark energy fit into a common picture. But the lecture refuses to pretend that the picture is complete. Why was the plateau so flat? Why did it end where it did? Why is the remaining vacuum energy today so tiny compared with the inflationary scale? These are all left as genuine unknowns.
+
+If the present residual vacuum energy remains positive forever, then the universe continues expanding exponentially on a timescale of billions of years. The lecture follows that consequence out into the far future: galaxies recede beyond the horizon, the microwave background cools below detectability, and later observers may find themselves in a nearly empty universe with very little direct evidence of the larger cosmic history. That discussion is qualitative, but its point is sharp. A small positive vacuum energy eventually hides cosmology from view.
+
+\section{Why the Universe Is Not Perfectly Smooth: Caustics and a Bridge Forward}
+
+At the end of the lecture a new tension appears. If inflation stretches and smooths so effectively, why is the universe not perfectly smooth? Why are there structures at all on very large scales?
+
+The lecture does not answer that immediately by quantum fluctuations. Instead it first explains how a small initial inhomogeneity, once present, naturally develops into large-scale structure. The analogy is a striking one: the deep sky, numerical simulations, and the bright patterns at the bottom of a swimming pool all show similar filamentary networks. The unifying idea is caustics.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} What mechanism can make sharp large-scale structure from a nearly uniform beginning?
+
+\paragraph{Answer.} The lecture first strips the problem down to a one-dimensional kinematic model with no gravity at all. That is enough to show how regions of enhanced density form when neighboring trajectories cross in just the right way. Gravity matters later, especially on smaller scales, but the first mathematical lesson is already visible in the force-free model.
+
+Take a uniform one-dimensional distribution of particles at \(t=0\), labeled by their initial coordinate \(x\). Let the initial number density be constant,
+\begin{equation}
+\frac{dn}{dx}=1.
+\end{equation}
+Now assign to the particles a position-dependent initial velocity \(v(x)\). After a time \(t\), the particle that started at \(x\) has moved to
+\begin{equation}
+y(x,t)=x+v(x)t.
+\end{equation}
+Differentiate with respect to \(x\):
+\begin{equation}
+\frac{dy}{dx}=1+v'(x)t.
+\end{equation}
+To obtain the later density, use the Jacobian:
+\begin{equation}
+\frac{dn}{dy}=\frac{dn}{dx}\frac{dx}{dy}
+=\frac{1}{1+v'(x)t}.
+\end{equation}
+This is the whole calculation. The density becomes large when the denominator becomes small, and formally diverges when
+\begin{equation}
+1+v'(x)t=0.
+\end{equation}
+Those are the caustics.
+
+In one dimension the caustics are bright spots or sharp density peaks. In two dimensions they become lines. In three dimensions they become sheets, with stronger concentrations where sheets intersect along lines and where lines intersect at points. This is why the lecture can move so quickly from the swimming-pool image to the cosmic web. The mathematical structure is the same.
+
+But this still answers only half of the final question. Caustics explain how small initial variations are amplified into visible structure. They do not explain where the initial variations came from. The lecture therefore ends with the right forward pointer: the next task is to understand the quantum origin of those primordial inhomogeneities.
+
+\section{Summary}
+
+We began with a student's question about a force term and ended with a different question about the origin of structure. Between those two questions the lecture builds a coherent chain. A nearly homogeneous scalar field behaves like a coordinate in field space. Its potential gives a force, and once we include the expanding volume of a cosmological box, the equation of motion acquires a Hubble-friction term. In the regime of a high and shallow potential, that friction keeps the field moving slowly while the potential energy itself drives exponential expansion. That is the mechanical core of inflation.
+
+The second half of the chapter is interpretive. Inflation was introduced to dilute monopoles and smooth the early universe; it must last for of order sixty \(e\)-foldings; it must end through the release of its stored potential energy into the hot Big Bang; and it may leave behind the tiny vacuum energy we now call dark energy. But the lecture refuses to stop with a completed triumph. If inflation smooths so efficiently, why is there anything to see at all? The caustics calculation shows how structure can grow once small variations are present. The deeper origin of those variations is the next subject.
