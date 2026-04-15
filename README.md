@@ -217,6 +217,8 @@ Contributions should use focused commits and identify the exact folders, transcr
   - <https://www.lapasserelle.com/general_relativity/>
   - <https://www.lapasserelle.com/cosmology/>
   - <https://www.lapasserelle.com/statistical_mechanics/>
+- Provenance note for the older La Passerelle-derived PDF sets:
+  - [`references/lapasserelle_susskind_pdf_provenance.md`](references/lapasserelle_susskind_pdf_provenance.md)
 
 ## ❤️ Support
 
