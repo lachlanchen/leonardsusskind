@@ -1,10 +1,20 @@
-# Introduction
+# General Relativity
 
-This folder preserves an older general relativity PDF note set based on Leonard Susskind's lectures.
+📘 Root publication surface for transcript-derived General Relativity notes.
 
-Provenance note:
+## ✨ Published Runs
 
-- the closest public source is the La Passerelle general relativity page at <https://www.lapasserelle.com/general_relativity/>
-- that page links `Coauthor` to the `André Cabannes webmaster` page
-- the attribution signal is useful but less direct than for the cosmology and statistical mechanics note sets
-- the fuller provenance note is recorded in [`../references/lapasserelle_susskind_pdf_provenance.md`](../references/lapasserelle_susskind_pdf_provenance.md)
+- `2012_fall_theoretical_minimum/`
+  - `general_relativity_theoretical_minimum.pdf`
+  - `lecture_01.pdf` through `lecture_10.pdf`
+
+## 🛠️ Source
+
+- Generated-note source: `generated_course_notes/core/general_relativity/2012_fall_theoretical_minimum/`
+- Transcript source: `markdown/core/general_relativity/2012_fall_theoretical_minimum/`
+- Subtitle source: `subtitles/core/general_relativity/2012_fall_theoretical_minimum/`
+
+## 🙏 Credits
+
+- Original lectures: Leonard Susskind
+- Transcript-derived notes: [LazyingArt LLC](https://lazying.art) with [Video2Book](https://github.com/lachlanchen/Video2Book)

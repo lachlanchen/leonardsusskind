@@ -104,6 +104,13 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <sub>2012 Winter Theoretical Minimum</sub>
     </td>
   </tr>
+  <tr>
+    <td align="center" colspan="4">
+      <a href="core_general_relativity/2012_fall_theoretical_minimum/general_relativity_theoretical_minimum.pdf"><img src="figs/readme-covers/general_relativity_theoretical_minimum.png" width="170" alt="General Relativity cover"></a><br>
+      <strong>General Relativity</strong><br>
+      <sub>2012 Fall Theoretical Minimum</sub>
+    </td>
+  </tr>
 </table>
 
 ## ✨ What This Repo Provides
@@ -206,6 +213,7 @@ For generated notes, each course folder usually contains:
 Open the PDFs in the relevant course folder, for example:
 
 - `core_general_relativity/lesson_1.pdf`
+- `core_general_relativity/2012_fall_theoretical_minimum/general_relativity_theoretical_minimum.pdf`
 - `core_cosmology/lesson_1.pdf`
 - `core_cosmology/2013_winter_theoretical_minimum/cosmology_theoretical_minimum.pdf`
 - `core_cosmology/2009_winter_legacy_cosmology/cosmology_legacy.pdf`

@@ -3,6 +3,43 @@
 \graphicspath{{figures/}{assets/}}
 \begin{document}
 \frontmatter
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=center,inner sep=0] at (current page.center) {%
+    \includegraphics[height=\paperheight,keepaspectratio]{assets/cover-art.png}%
+  };
+  \node[
+    anchor=north west,
+    align=left,
+    text width=0.78\paperwidth,
+    fill=white,
+    fill opacity=0.9,
+    rounded corners=8pt,
+    inner xsep=10pt,
+    inner ysep=8pt
+  ] at ([xshift=0.08\paperwidth,yshift=-0.06\paperheight]current page.north west) {%
+    {\fontsize{30}{33}\selectfont\bfseries\color{black!88} General Relativity\\[0.45em]}
+    {\large\color{black!72} Core track, 2012 Fall Theoretical Minimum}
+  };
+  \node[
+    anchor=south west,
+    align=left,
+    text width=0.68\paperwidth,
+    fill=white,
+    fill opacity=0.82,
+    text opacity=1,
+    rounded corners=6pt,
+    inner sep=12pt
+  ] at ([xshift=0.08\paperwidth,yshift=0.08\paperheight]current page.south west) {%
+    {\normalsize\color{black!78} Leonard Susskind lecture notes\\[0.35em]}
+    {\small\color{black!72} Original lectures by Leonard Susskind. Transcript-derived notes curated by \href{https://lazying.art}{LazyingArt LLC} with \href{https://github.com/lachlanchen/Video2Book}{Video2Book}.}
+  };
+\end{tikzpicture}
+\mbox{}
+\end{titlepage}
+\hypersetup{pageanchor=true}
 
 \title{General Relativity}
 \author{Leonard Susskind}
