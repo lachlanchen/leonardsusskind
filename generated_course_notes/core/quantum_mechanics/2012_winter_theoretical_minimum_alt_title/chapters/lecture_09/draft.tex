@@ -1,0 +1,330 @@
+\chapter{A Particle on a Line}
+
+These companion notes follow Leonard Susskind's ninth lecture on quantum mechanics. The narrative is his: a short cleanup of the previous discussion of entanglement and photon number, then a deliberate pivot away from spin and toward the motion of a particle on a line. The board evidence preserved by LazyingArt LLC and Video2Book is used only where it supports visible equations or board layout; the transcript remains the primary guide. What emerges is the real mathematical spine of the lecture: plane waves, Fourier transforms, the Dirac delta function, the continuous position and momentum bases, and finally the first Hamiltonians for a moving particle.
+
+\section{From Entanglement to Particle Motion}
+
+The lecture begins by closing the previous arc. The essential point is not a detailed new calculation, but a clarification of tensor-product structure. If we start with an electron pair together with the radiation field in its no-photon state, then after the triplet component decays we end with the electron pair in the singlet state while the radiation field is left in a superposition of zero-photon and one-photon states. Schematically,
+\begin{equation}
+\bigl(c_S |S\rangle + c_T |T\rangle \bigr)\otimes |0_\gamma\rangle
+\;\longrightarrow\;
+|S\rangle \otimes \bigl(a |0_\gamma\rangle + b |1_\gamma\rangle\bigr).
+\end{equation}
+The important lesson is that the electron pair remains entangled with itself through the singlet state, while the radiation field is not entangled with the pair in the final state; instead, it sits in a superposition of different photon numbers.
+
+That prelude is brief, but it matters. Susskind uses it to say, in effect, that the foundations have been laid out in simple systems and that it is time to move on to examples. The next move is explicit: forget particle spin. Real particles may carry both position and spin, but for the moment we isolate the simplest continuous system, a particle moving on a one-dimensional axis.
+
+Before we study that system directly, the lecture stops the physics on purpose and inserts a mathematical interlude. We will need Fourier analysis, Fourier transforms, and the Dirac delta function before the continuous quantum mechanics of a particle on a line can be written in a clean way.
+
+\section{Plane Waves and Fourier Analysis}
+
+The basic mathematical building block is the function
+\begin{equation}
+e^{ipx},
+\end{equation}
+with $p$ treated, for the moment, as an ordinary number. This is a combination of sines and cosines, and so it has a wave-like character. It is a plane wave. It does not yet move, because there is no time dependence here, but it oscillates, and the number $p$ tells us how rapidly.
+
+A large class of functions of interest can be decomposed into such waves. For the lecture this is not a detached mathematical aside; it is a preparation for the relation between position and momentum. We therefore write a complex function $\psi(x)$ as an integral over plane waves,
+\begin{equation}
+\psi(x)=\int \frac{dp}{\sqrt{2\pi}}\,\widetilde{\psi}(p)e^{ipx}.
+\end{equation}
+The coefficient $\widetilde{\psi}(p)$ is the amplitude carried by the wave with oscillation parameter $p$. Susskind chooses the symmetric normalization $1/\sqrt{2\pi}$ as a matter of convention, not necessity.
+
+The reciprocal formula is the inverse Fourier transform,
+\begin{equation}
+\widetilde{\psi}(p)=\int \frac{dx}{\sqrt{2\pi}}\,\psi(x)e^{-ipx}.
+\end{equation}
+The only structural difference is the minus sign in the exponent. The pair of formulas is what the lecture will soon fuse with the delta function. Already one sees the reciprocal relation between $x$ and $p$: one variable is described by an integral over the other.
+
+The discussion is intentionally general. $\psi(x)$ and $\widetilde{\psi}(p)$ are both allowed to be complex. The functions of interest are assumed to be reasonably well behaved: continuous enough for the manipulations to make sense, and not blowing up at infinity.
+
+\section{The Delta Function and Its Fourier Representation}
+
+Susskind next turns to the Dirac delta function as a separate object. Intuitively, it is the limiting idealization of a function that is very narrow, very high, and has unit area. More operationally, one characterizes it by what it does when integrated against a test function. The lecture emphasizes three rules:
+\begin{align}
+f(x)\delta(x-x') &= f(x')\delta(x-x'), \\
+\int dx\,\delta(x-x') &= 1, \\
+\int dx\,\delta(x-x')f(x) &= f(x').
+\end{align}
+The first rule says that the delta function only cares about the point where its argument vanishes. The second says that the total area is one. The third is the sampling or sifting property.
+
+One may take the last identity as the defining action of the delta function:
+\begin{equation}
+\int dx\,f(x)\delta(x-x')=f(x').
+\end{equation}
+This is exactly the form that appears on the board and is the form a mathematician would regard as the decisive one.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\textwidth]{lecture_09_figure_02.png}
+\caption{Delta-function sampling rule above the substituted Fourier expression.}
+\end{figure}
+
+Now the two mathematical interludes are brought together. The board frame above preserves the moment of substitution, though the right half of the inserted bracket is cropped. The transcript makes clear that the intended expression is
+\begin{align}
+\psi(x')
+&=\int \frac{dp}{\sqrt{2\pi}}\,\widetilde{\psi}(p)e^{ipx'} \\
+&=\int \frac{dp}{\sqrt{2\pi}}\,e^{ipx'}
+\left[\int \frac{dx}{\sqrt{2\pi}}\,\psi(x)e^{-ipx}\right].
+\end{align}
+We may then combine the two normalization factors and the two exponentials:
+\begin{align}
+\psi(x')
+&=\int \frac{dp}{2\pi}\int dx\,\psi(x)e^{ip(x'-x)} \\
+&=\int dx\left[\int \frac{dp}{2\pi}e^{ip(x'-x)}\right]\psi(x).
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\textwidth]{lecture_09_figure_03.png}
+\caption{The inner momentum integral is isolated and then identified with a delta function.}
+\end{figure}
+
+The board then isolates the inner $p$-integral as an object in its own right. It briefly gives that object a temporary capital-delta-like name before identifying it with the ordinary Dirac delta. Since the whole expression must reproduce $\psi(x')$ for every suitable $\psi(x)$, the kernel must be
+\begin{equation}
+\int \frac{dp}{2\pi}e^{ip(x'-x)}=\delta(x'-x).
+\end{equation}
+Therefore
+\begin{equation}
+\psi(x')=\int dx\,\delta(x'-x)\psi(x)=\psi(x').
+\end{equation}
+By simply interchanging the names of $x$ and $p$, the lecture also writes the companion formula
+\begin{equation}
+\int \frac{dx}{2\pi}e^{ix(p-p')}=\delta(p-p').
+\end{equation}
+These are among the central identities of the chapter. The delta function is being written as a superposition of plane waves.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} In the derivation one sometimes sees $x'-x$ and sometimes $x-x'$. Does that change the answer?
+
+\paragraph{Answer.} No. The lecture pauses on exactly this point. The delta function is even in its argument, so
+\begin{equation}
+\delta(x-x')=\delta(x'-x).
+\end{equation}
+A systematic derivation may produce one sign order rather than the other, but in the final delta-function identity the distinction disappears.
+
+\section{A Particle on a Line and the Continuous Position Basis}
+
+Only after the Fourier and delta machinery is assembled does the lecture return to physics. Classically, a particle on a line is described by a point in phase space, namely one value of $x$ and one value of $p$. Quantum mechanically, that is already too much information in one dimension. One does not specify both simultaneously. Instead one chooses a basis.
+
+Susskind asks the sharper question: not ``how do we describe the state?'' but ``how do we describe an orthonormal basis of states?'' For a particle on a line we suppose there is an eigenvector $|x\rangle$ for every real value of position. An arbitrary state can then be expanded as a continuous superposition of these basis vectors:
+\begin{equation}
+|\psi\rangle=\int dx\,\psi(x)|x\rangle.
+\end{equation}
+The coefficient is the wavefunction in the position basis,
+\begin{equation}
+\psi(x)=\langle x|\psi\rangle.
+\end{equation}
+This is exactly analogous to the finite-dimensional case; the only new feature is that sums become integrals.
+
+The probability density for finding the particle near $x$ is
+\begin{equation}
+|\psi(x)|^2,
+\end{equation}
+and normalization of the state means
+\begin{equation}
+\int dx\,|\psi(x)|^2=1.
+\end{equation}
+The basis vectors satisfy the continuum orthogonality rule
+\begin{equation}
+\langle x'|x\rangle=\delta(x-x').
+\end{equation}
+Thus the Dirac delta plays the role that the Kronecker delta played for discrete systems.
+
+For two arbitrary states $|\Psi\rangle$ and $|\Phi\rangle$, with position-space representatives $\psi(x)$ and $\phi(x)$, the inner product becomes
+\begin{equation}
+\langle \Psi|\Phi\rangle=\int dx\,\psi^*(x)\phi(x).
+\end{equation}
+Again the structure is familiar: bra vectors correspond to complex-conjugated wavefunctions, and the inner product is the continuous analog of the finite sum over components.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} If position and momentum are too much information in one dimension, is position special, or is the real point that almost anything else would be redundant too?
+
+\paragraph{Answer.} In one dimension, either the position basis or the momentum basis is enough. That is the point of the lecture. Position is not sacred; it is simply a convenient basis to start with. There is, however, a useful caveat. In higher dimensions one may combine commuting pieces of information, such as an $x$-coordinate and a $y$-component of momentum. The statement that $x$ and $p$ are too much information is therefore specific to the one-dimensional pair being discussed here.
+
+\section{Operators in the $x$-Representation}
+
+The next pivot is from states to observables. The board makes a pedagogically important move: it places the operator acting on an abstract ket beside the same operator acting on a wavefunction.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_09_figure_04.png}
+\caption{The position operator written abstractly and in the wavefunction representation.}
+\end{figure}
+
+The position operator $X$ is defined by how it acts on the position-space wavefunction:
+\begin{equation}
+(X\psi)(x)=x\psi(x).
+\end{equation}
+This is not yet a derivation; it is the representation of the observable in the $x$-basis. But once it is written, one can immediately test whether the expected eigenfunctions really are what intuition suggests.
+
+A state localized at the point $x_0$ should be represented by a function concentrated at that point, namely $\delta(x-x_0)$. Acting with $X$ gives
+\begin{equation}
+X\,\delta(x-x_0)=x\,\delta(x-x_0)=x_0\,\delta(x-x_0),
+\end{equation}
+where the final equality uses the first delta-function property. Thus $\delta(x-x_0)$ is indeed an eigenfunction of $X$ with eigenvalue $x_0$.
+
+Momentum is introduced next. The lecture recalls the derivative operator $D$ from the previous discussion of Hermiticity, and writes
+\begin{equation}
+P=-i\hbar D.
+\end{equation}
+In the position representation this becomes
+\begin{equation}
+P=-i\hbar\frac{d}{dx}, \qquad (P\psi)(x)=-i\hbar\frac{d\psi}{dx}.
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_05.png}
+\caption{The momentum operator introduced on the right board, while the left board still carries the tail end of the position-basis discussion.}
+\end{figure}
+
+Now we may solve for the eigenfunctions of $P$. The eigenvalue equation is
+\begin{equation}
+-i\hbar\frac{d\psi}{dx}=p\,\psi.
+\end{equation}
+This is the simplest first-order differential equation imaginable: the derivative of the function is proportional to the function itself. Its solution is
+\begin{equation}
+\psi_p(x)\propto e^{ipx/\hbar}.
+\end{equation}
+At this stage the lecture explicitly remarks that the terminology ``momentum'' is not yet fully justified; for the moment $P$ is still an abstract observable. But the form of the eigenfunction already reveals the wave-particle connection. A definite momentum state looks like a wave.
+
+If $\lambda$ is the wavelength, then the phase must change by $2\pi$ when $x$ shifts by $\lambda$. Therefore
+\begin{equation}
+\frac{p\lambda}{\hbar}=2\pi,
+\qquad\text{so}\qquad
+\lambda=\frac{2\pi\hbar}{p}.
+\end{equation}
+Greater momentum means shorter wavelength.
+
+To normalize the momentum eigenfunctions in the continuum, one compares their inner products with the delta-function identity already derived. With the conventional normalization,
+\begin{equation}
+\psi_p(x)=\frac{1}{\sqrt{2\pi\hbar}}\,e^{ipx/\hbar},
+\end{equation}
+and after the lecture later sets $\hbar=1$, this becomes
+\begin{equation}
+\psi_p(x)=\frac{1}{\sqrt{2\pi}}\,e^{ipx}.
+\end{equation}
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why is the oscillatory inner product between different momentum states taken to vanish, and what really justifies the delta normalization?
+
+\paragraph{Answer.} The lecture is candid here: the manipulations are heuristic unless one begins on a finite interval, or better yet on a finite periodic box, normalizes there, and only then takes the infinite-volume limit. In that regulated setting, the oscillatory integrals become honest finite expressions. One then recovers the continuum statement
+\begin{equation}
+\langle p'|p\rangle=\delta(p-p')
+\end{equation}
+as the limit. So the lecture does take a shortcut, but it is a shortcut whose missing steps can be filled in rigorously.
+
+\section{Momentum Basis, Fourier Duality, and Uncertainty}
+
+At this point Susskind introduces an important distinction. The function $\psi_p(x)$ just found is the position-space representative of a momentum eigenstate. But that is not yet the same thing as the wavefunction of an arbitrary state \emph{in the momentum basis}. The lecture now turns to that second concept.
+
+To match the later board work, we momentarily follow the lecture and set $\hbar=1$ in the Fourier formulas. We define the momentum-space wavefunction by projection onto definite-momentum states:
+\begin{equation}
+\widetilde{\psi}(p)=\langle p|\psi\rangle.
+\end{equation}
+Using the position-space inner product and the known position-space representative of $|p\rangle$, we find
+\begin{align}
+\widetilde{\psi}(p)
+&=\int dx\,\psi_p^*(x)\psi(x) \\
+&=\int dx\,\frac{e^{-ipx}}{\sqrt{2\pi}}\psi(x).
+\end{align}
+This is exactly the Fourier transform encountered at the beginning of the lecture. That is the central conceptual identification: position and momentum are a Heisenberg pair because they are a Fourier pair.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\textwidth]{lecture_09_figure_06.png}
+\caption{Momentum-space delta normalization above the beginning of the momentum-space inner product formula.}
+\end{figure}
+
+The upper line on the board preserves the normalization identity
+\begin{equation}
+\int \frac{dx}{2\pi}\,e^{i(p-p')x}=\delta(p-p'),
+\end{equation}
+and beneath it the momentum-space inner product begins to be written. The completed formula is
+\begin{equation}
+\langle \Psi|\Phi\rangle=\int dp\,\widetilde{\psi}^{\,*}(p)\widetilde{\phi}(p).
+\end{equation}
+So the formalism is perfectly parallel to the position basis. The probability density for measuring momentum $p$ is
+\begin{equation}
+|\widetilde{\psi}(p)|^2.
+\end{equation}
+
+The lecture also remarks that once one passes to the momentum representation, the position operator becomes a derivative with respect to $p$:
+\begin{equation}
+X=+i\hbar\frac{d}{dp},
+\end{equation}
+or simply
+\begin{equation}
+X=+i\frac{d}{dp}
+\end{equation}
+in the temporarily simplified $\hbar=1$ convention.
+
+This is also the point at which the uncertainty principle is given its first natural explanation in the continuous setting. A state of definite momentum has wavefunction $\psi_p(x)\propto e^{ipx}$, and so it is completely delocalized in space. More generally, whenever two descriptions are related by Fourier transform, narrowness in one variable forces breadth in the other. Thus, for $x$ and $p$,
+\begin{equation}
+\text{narrow in }p \;\Longrightarrow\; \text{broad in }x,
+\qquad
+\text{narrow in }x \;\Longrightarrow\; \text{broad in }p.
+\end{equation}
+The lecture does not derive a sharp uncertainty inequality here. It makes the more basic point first: uncertainty is already built into the geometry of Fourier pairs.
+
+\section{First Hamiltonians for a Particle}
+
+Only after the representation theory is in place does the lecture return to dynamics. The Hamiltonian is recalled as the Hermitian operator that governs time evolution through the time-dependent Schrodinger equation:
+\begin{equation}
+i\hbar\,\frac{\partial \psi}{\partial t}=H\psi.
+\end{equation}
+
+Susskind starts with an intentionally simple Hamiltonian,
+\begin{equation}
+H=cP,
+\end{equation}
+not because it is the usual nonrelativistic energy, but because it is easy enough to solve completely and therefore reveals the mechanism cleanly. In the $x$-representation,
+\begin{align}
+i\hbar\,\frac{\partial \psi(x,t)}{\partial t}
+&=c\left(-i\hbar\frac{\partial}{\partial x}\right)\psi(x,t), \\
+\frac{\partial \psi(x,t)}{\partial t}
+&=-c\,\frac{\partial \psi(x,t)}{\partial x}.
+\end{align}
+This equation is so simple that one can write the general solution immediately:
+\begin{equation}
+\psi(x,t)=f(x-ct).
+\end{equation}
+Any sufficiently well-behaved initial wavefunction simply translates rigidly to the right with velocity $c$. The whole probability distribution moves without changing shape.
+
+This is why the lecture chose the symbol $c$. It suggests the speed of light. The system is not literally a photon, but it resembles a purely right-moving massless excitation. The lecture mentions one-dimensional neutrino-like or phonon-like motion as a rough analogy. The important structural point is not the detailed particle identification; it is the rigid transport.
+
+The classical comparison is immediate. For the same Hamiltonian,
+\begin{equation}
+H=cp,
+\end{equation}
+Hamilton's equations give
+\begin{equation}
+\dot{x}=\frac{\partial H}{\partial p}=c,
+\qquad
+\dot{p}=-\frac{\partial H}{\partial x}=0.
+\end{equation}
+So classically the momentum is conserved and the particle moves with constant velocity $c$. In this simple quantum example, the expectation value $\langle x\rangle$ behaves in the same way, because the entire wavepacket moves rigidly.
+
+But the lecture insists that this example is too simple. Real nonrelativistic particles do not keep their shape this way. For a free particle with mass $m$, the natural Hamiltonian is instead
+\begin{equation}
+H=\frac{P^2}{2m}.
+\end{equation}
+Substituting $P=-i\hbar\,d/dx$ into the time-dependent Schrodinger equation yields
+\begin{align}
+i\hbar\,\frac{\partial \psi}{\partial t}
+&=\frac{1}{2m}\left(-i\hbar\frac{\partial}{\partial x}\right)^2\psi \\
+&=-\frac{\hbar^2}{2m}\,\frac{\partial^2\psi}{\partial x^2}.
+\end{align}
+This is the free-particle Schrodinger equation on a line.
+
+The qualitative payoff comes immediately. Under $H=cP$, every Fourier component moves with the same velocity, so the packet keeps its shape. Under $H=P^2/2m$, different wavelengths propagate differently. A packet is built from many wavelengths, and so its different components move at different rates. The shape is not preserved; the packet spreads.
+
+\section{Summary}
+
+The lecture has a very deliberate architecture. We begin with a short carryover remark about entanglement and photon-number superposition, then strip the problem down to a particle on a line. Before any new physics is done, we gather the mathematical tools: plane waves, the Fourier transform pair, and the Dirac delta function. Those tools are then turned directly into the continuous position and momentum representations of quantum mechanics.
+
+Once the basis structure is clear, the operators $X$ and $P$ acquire concrete forms, momentum eigenstates become literal waves, and the momentum-space wavefunction appears as the Fourier transform of the position-space wavefunction. At that point the uncertainty principle is no longer a slogan; it is the geometry of Fourier duality. Only then do the first Hamiltonians act, first in the rigidly translating case $H=cP$, and then in the genuinely dispersive free-particle case $H=P^2/2m$. That is the whole rhythm of the lecture: tools first, representation next, dynamics last.
