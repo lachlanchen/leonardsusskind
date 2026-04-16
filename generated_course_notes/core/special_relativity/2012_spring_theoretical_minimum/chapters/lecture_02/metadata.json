@@ -1,0 +1,52 @@
+{
+  "course_rel": "core/special_relativity/2012_spring_theoretical_minimum",
+  "transcript_rel": "core/special_relativity/2012_spring_theoretical_minimum/135 - Special Relativity \uff5c Lecture 2 [qfTJP7Soto4].md",
+  "video_rel": "core/special_relativity/2012_spring_theoretical_minimum/135 - Special Relativity \uff5c Lecture 2 [qfTJP7Soto4].mkv",
+  "lecture_number": 2,
+  "lecture_slug": "lecture_02",
+  "lecture_title": "Special Relativity : Lecture 2",
+  "assets": [
+    {
+      "name": "lecture_02_figure_02.png",
+      "timestamp_seconds": 643.3,
+      "timestamp_hhmmss": "00:10:43.300",
+      "source_candidate": "lecture_02_window_03_candidate_04_001043300.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 04 shows the most complete and legible version of the board sketch at this moment. The large box labeled in the unprimed coordinates is fully visible, the interior observer and the key primed-position label are readable, and the dashed projection down to the lower x-axis is clearer than in the earlier frames. The other candidates leave more of the diagram blocked by Susskind or only partially reveal the layout.",
+      "subtitle_excerpt": "x equals vt tells you that the relative velocity",
+      "segment_start_seconds": 640.66,
+      "segment_start_hhmmss": "00:10:40.660",
+      "segment_end_seconds": 643.66,
+      "segment_end_hhmmss": "00:10:43.660",
+      "caption_hint": "moving observer marked by x'=0"
+    },
+    {
+      "name": "lecture_02_figure_03.png",
+      "timestamp_seconds": 920.373,
+      "timestamp_hhmmss": "00:15:20.373",
+      "source_candidate": "lecture_02_window_04_candidate_02_001520373.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 gives the clearest and least occluded view of the full equation stack at this moment. All four displayed relations are legible, including the lower time-transformation equation referenced by the subtitle, while Susskind's hand has moved far enough away that it no longer blocks the symbols. The other candidates either point directly into the lower equation or introduce more gesture blur.",
+      "subtitle_excerpt": "The time equation also works out very nicely.",
+      "segment_start_seconds": 919.18,
+      "segment_start_hhmmss": "00:15:19.180",
+      "segment_end_seconds": 922.32,
+      "segment_end_hhmmss": "00:15:22.320",
+      "caption_hint": "stacked Lorentz transformation equations"
+    },
+    {
+      "name": "lecture_02_figure_04.png",
+      "timestamp_seconds": 1196.97,
+      "timestamp_hhmmss": "00:19:56.970",
+      "source_candidate": "lecture_02_window_05_candidate_04_001956970.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 04 is the strongest frame because it captures the diagrammatic point Susskind is making when he says this corresponds to x double prime equals zero. The right-board sketch is the most complete here: the unprimed box labeled x,t, the earlier primed reference marks, the second moving object on the right, and the velocity arrow u are all visible together, while his finger indicates the relevant double-primed location. The earlier candidates preserve more algebra, but they miss the full geometric correspondence that the subtitle is referring to.",
+      "subtitle_excerpt": "That corresponds to x double prime equals zero.",
+      "segment_start_seconds": 1194.26,
+      "segment_start_hhmmss": "00:19:54.260",
+      "segment_end_seconds": 1197.34,
+      "segment_end_hhmmss": "00:19:57.340",
+      "caption_hint": "double-primed origin on the moving car"
+    }
+  ]
+}
