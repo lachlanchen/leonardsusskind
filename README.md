@@ -58,6 +58,11 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <sub>2012 Fall Theoretical Minimum</sub>
     </td>
     <td align="center">
+      <a href="generated_course_notes/core/statistical_mechanics/2013_spring_theoretical_minimum/course.pdf"><img src="figs/readme-covers/statistical_mechanics_theoretical_minimum.png" width="170" alt="Statistical Mechanics and Thermodynamics cover"></a><br>
+      <strong>Statistical Mechanics</strong><br>
+      <sub>2013 Spring Theoretical Minimum</sub>
+    </td>
+    <td align="center">
       <a href="core_cosmology/2013_winter_theoretical_minimum/cosmology_theoretical_minimum.pdf"><img src="figs/readme-covers/cosmology_theoretical_minimum.png" width="170" alt="Cosmology Theoretical Minimum cover"></a><br>
       <strong>Cosmology</strong><br>
       <sub>2013 Winter Theoretical Minimum</sub>
