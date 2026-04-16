@@ -1,0 +1,38 @@
+{
+  "course_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum",
+  "transcript_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum/177 - Statistical Mechanics Lecture 3 [EmM1jOV1uSY].md",
+  "video_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum/177 - Statistical Mechanics Lecture 3 [EmM1jOV1uSY].mkv",
+  "lecture_number": 3,
+  "lecture_slug": "lecture_03",
+  "lecture_title": "Statistical Mechanics Lecture 3",
+  "assets": [
+    {
+      "name": "lecture_03_figure_02.png",
+      "timestamp_seconds": 404.483,
+      "timestamp_hhmmss": "00:06:44.483",
+      "source_candidate": "lecture_03_window_02_candidate_03_000644483.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the clearest and most complete frame of the set. It preserves the full board logic at once: the entropy formula at upper left, the normalization and average-energy equations on the right, and the developed family of schematic probability curves on the left. The lecturer is pushed far enough to the edge that the mathematics is minimally occluded, whereas candidate 04 covers the curves with his hand and candidates 01-02 are less complete.",
+      "subtitle_excerpt": "the probability distributions for given average energy do,",
+      "segment_start_seconds": 400.44,
+      "segment_start_hhmmss": "00:06:40.440",
+      "segment_end_seconds": 406.66,
+      "segment_end_hhmmss": "00:06:46.660",
+      "caption_hint": "family of probability distributions at different average energies"
+    },
+    {
+      "name": "lecture_03_figure_03.png",
+      "timestamp_seconds": 2500.811,
+      "timestamp_hhmmss": "00:41:40.811",
+      "source_candidate": "lecture_03_window_05_candidate_03_004140811.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "Probability is a measure of the fraction of,",
+      "segment_start_seconds": 2499.42,
+      "segment_start_hhmmss": "00:41:39.420",
+      "segment_end_seconds": 2501.56,
+      "segment_end_hhmmss": "00:41:41.560",
+      "caption_hint": "Probability is a measure of the fraction of,"
+    }
+  ]
+}
