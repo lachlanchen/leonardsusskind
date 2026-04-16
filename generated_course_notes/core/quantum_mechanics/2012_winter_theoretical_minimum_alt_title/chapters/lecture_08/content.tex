@@ -1,0 +1,347 @@
+\chapter{Locality, Functions as Vectors, and Momentum}
+
+This lecture returns to unfinished business from the previous meeting. Susskind briefly recalls the discussion of measurement and isolated evolution only long enough to ask the sharper question he really wants to answer: what, exactly, does entanglement do, and what does it not do? The first half of the lecture hammers on locality in the two-spin system; the second half deliberately shifts to a particle on a line, where the same quantum-mechanical structure survives after sums are replaced by integrals. The thread that binds the two halves together is operational clarity: what can Alice know, what can Bob change, and how do the familiar rules of vectors, inner products, and observables reappear when the basis becomes continuous?
+
+\section{Measurement, Entanglement, and Reversibility}
+
+Susskind begins with a short recap of the previous discussion of measurement and isolated evolution, but he does not stay there. He immediately strips the issue down to a simpler question: if two systems that were initially unentangled interact and become entangled, is that entanglement itself irreversible?
+
+The answer is no. If two spins come together, interact, and fly apart in an entangled state, then in principle one can bring them back together and let them interact again in such a way that the entanglement is undone. Anything that can happen by unitary evolution can, in the right circumstances, happen in reverse. Entanglement is not, by itself, a one-way street.
+
+What makes the situation feel irreversible is something else. If one of the two subsystems disappears into the environment, or if one starts speaking from the point of view of a measurement that has already yielded a definite outcome, then the story becomes operationally irreversible. One system is left entangled with degrees of freedom that are no longer under control. That is the peculiar feature he wants us to keep in mind: entanglement may be reversible in principle, while the measurements we actually perform are irreversible for us.
+
+This distinction is not a preface for its own sake. It motivates the next move. If Alice and Bob share an entangled state but are far apart, and Alice can only access her own neighborhood, what is the correct object for her to use in describing her subsystem?
+
+\section{Alice, Bob, and the Reduced Density Matrix}
+
+Here Susskind says, in effect, let me just review something important and hammer on it. If the combined Alice-Bob system is described by wavefunction coefficients
+\begin{equation}
+\Psi(A,B),
+\end{equation}
+with \(A\) labeling Alice's basis states and \(B\) labeling Bob's, then Alice's reduced density matrix is
+\begin{equation}
+\rho_A(A',A)=\sum_B \Psi^*(A',B)\Psi(A,B).
+\end{equation}
+
+The point of the formula is immediate. Once we sum over Bob's index, the result no longer depends on Bob's variables. It is a matrix only in Alice's labels. More importantly, it contains all the statistical information Alice can ever know about her half of the system, unless Bob actually comes over and interacts directly with her apparatus or her surrounding degrees of freedom.
+
+This is the operational notion of locality that governs the whole discussion. Bob may be in Palo Alto and Alice on Alpha Centauri. Bob may do all sorts of things in his own neighborhood. But as long as he does not directly touch Alice's subsystem, the object that governs Alice's local predictions should not change. Susskind now proves exactly that.
+
+\section{Bob's Local Unitary and the Proof of Locality}
+
+Following the lecture, let us first forget Alice for a minute. Bob has his own subsystem, with wavefunction \(\psi(b)\), and he decides to manipulate it. He may turn a magnetic field, change a local Hamiltonian, or otherwise alter the way his spin evolves. Whatever the details, the change is described by a unitary matrix:
+\begin{equation}
+\psi_M(b)=\sum_{b'}U_{bb'}\,\psi(b').
+\end{equation}
+
+Now we ask, in Susskind's language, how do we describe the same thing in the composite language? If the full system is described by \(\Psi(a,b)\), then Bob's action affects only the \(b\)-index; Alice's index is a spectator. The relevant blackboard evidence is reproduced here:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_08_figure_02.png}
+\caption{Unitary action on the composite ket and the corresponding bra transformation.}
+\end{figure}
+
+The upper line is reasonably clear in the frame, and the lower line is clear in intent even though its left side is partly blocked by Susskind. The matrix symbol on the board can look cramped, even a little like an \(L\), but the transcript and the algebra make clear that it is a unitary matrix \(U\). In cleaned notation, the two lines are
+\begin{align}
+\Psi_M(a,b)&=\sum_{b'}U_{bb'}\,\Psi(a,b'),\\
+\Psi_M^*(a',b)&=\sum_{b''}\Psi^*(a',b'')\,U^\dagger_{b''b}.
+\end{align}
+
+The vertical pairing matters. The lecture is making a visual as well as algebraic point: if \(U\) acts on ket coefficients, then \(U^\dagger\) acts on the corresponding bra coefficients.
+
+Now let us recalculate Alice's density matrix after Bob has acted. Using the manipulated wavefunction,
+\begin{equation}
+\rho_{A,M}(a',a)=\sum_b \Psi_M^*(a',b)\Psi_M(a,b),
+\end{equation}
+and substituting the transformed bra and ket coefficients, we find
+\begin{align}
+\rho_{A,M}(a',a)
+&=\sum_b \left(\sum_{b''}\Psi^*(a',b'')\,U^\dagger_{b''b}\right)
+\left(\sum_{b'}U_{bb'}\,\Psi(a,b')\right) \\
+&=\sum_{b,b',b''}\Psi^*(a',b'')\,U^\dagger_{b''b}\,U_{bb'}\,\Psi(a,b') \\
+&=\sum_{b',b''}\Psi^*(a',b'')\,(U^\dagger U)_{b''b'}\,\Psi(a,b') \\
+&=\sum_{b',b''}\Psi^*(a',b'')\,\delta_{b''b'}\,\Psi(a,b') \\
+&=\sum_{b'}\Psi^*(a',b')\Psi(a,b') \\
+&=\rho_A(a',a).
+\end{align}
+
+The decisive step is
+\begin{equation}
+\sum_b U^\dagger_{b''b}U_{bb'}=\delta_{b''b'}.
+\end{equation}
+That is just the statement of unitarity. Once the \(U^\dagger U\) contraction collapses to the identity, Bob's local manipulation disappears from Alice's reduced density matrix.
+
+The argument is worth lingering over for exactly the reason Susskind lingers over it: nowhere did we assume that the original state was a product state. The proof works just as well for entangled states. This is the technical statement of locality in the lecture: Bob cannot influence any statistical prediction available to Alice by acting only on his own degrees of freedom.
+
+He then sharpens the point. The proof does depend on unitarity. If Bob had access to an evolution that was even slightly nonunitary, then the contraction above would fail to become the identity, and Alice's reduced density matrix would change. One would then have the possibility of faster-than-light signaling. This is why the lecture presents unitarity and locality as tightly linked: unitarity is the quantum form of conservation of distinctions, and here it is exactly what keeps locality intact.
+
+\subsection{Question \& Answer}
+
+Question. If Bob is \emph{doing something} to his subsystem, has he not already violated unitarity? And if collapse looks instantaneous anyway, why does a beam-splitter experiment not already let one signal at a distance?
+
+Answer. No. Bob may do something perfectly ordinary and still remain within unitary evolution. He may rotate a magnetic field, change the local Hamiltonian of his spin, or otherwise alter the way his spin evolves. That certainly changes the probabilities of \emph{his own} outcomes. What it does not change is Alice's reduced density matrix.
+
+The lecture then presses the more intuitive objection. Suppose a photon goes through a beam splitter, heads off in two directions, and one detector clicks. Has not the wavefunction on the other arm collapsed instantaneously to zero? Susskind's answer is completely operational: the density matrix of the distant subsystem does not change. Therefore the distant average measurements do not change. Whatever one's discomfort with the language of collapse, no local statistical prediction available to the distant observer is altered.
+
+The same blackboard remains in view during this discussion, and the later frame usefully preserves that live context:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_03.png}
+\caption{The same ket-bra transformation formulas during the locality discussion.}
+\end{figure}
+
+This is why the proof is followed by questions rather than by triumph. The mathematics is decisive, but the uneasiness is real. Susskind's response is to keep returning to concrete operational facts.
+
+\section{Classical Simulation, Shared Randomness, and Where the Trouble Starts}
+
+That is the technical argument. But now comes the natural follow-up: what, then, is the big deal? Einstein and Bell were not fools. If entanglement does not violate locality in the sense just proved, what is the genuinely strange feature of the theory?
+
+Susskind's preferred way to get at that question is through simulation. Suppose we want to simulate a single spin on an ordinary classical computer. The setup is easy to imagine. There is an apparatus on a screen, an experimentalist who can rotate it and press a measurement button \(M\), and a computer connected by wires to the display. In the computer's memory we store two complex numbers, \(\alpha_u\) and \(\alpha_d\), the amplitudes for spin up and spin down. They satisfy
+\begin{equation}
+|\alpha_u|^2+|\alpha_d|^2=1.
+\end{equation}
+
+The computer evolves these amplitudes according to the Schr\"odinger equation, taking into account whatever effective magnetic field or Hamiltonian the setup requires. When the user presses the measurement button, a classical random-number generator produces an outcome with probabilities
+\begin{equation}
+P(+1)=|\alpha_u|^2,\qquad P(-1)=|\alpha_d|^2.
+\end{equation}
+The computer then resets the amplitudes to the measured eigenstate: \((\alpha_u,\alpha_d)=(1,0)\) after \(+1\), and \((0,1)\) after \(-1\). In other words, it implements the usual measurement rule in purely classical bookkeeping language.
+
+So a single spin is no problem. Even two spins in a product state are no problem. One classical device stores Alice's amplitudes, another stores Bob's, and the two separate simulators reproduce the behavior of a product state without difficulty.
+
+Now suppose we want to simulate not merely product states but arbitrary two-spin states, including entangled ones. If we are allowed a single central computer, we can do that too. We store four complex amplitudes,
+\begin{equation}
+\alpha_{uu},\qquad \alpha_{ud},\qquad \alpha_{du},\qquad \alpha_{dd},
+\end{equation}
+and evolve them as a single four-component state. When either Alice or Bob measures, the central machine generates the appropriate outcome and then reinitializes the post-measurement state by throwing away the excluded components and renormalizing the remainder. So long as the central processor remains connected to both sides, the full entangled system can be simulated.
+
+Where do we get in trouble? Exactly where the lecture says we do: after initialization, if we separate the computers and break the wires. One might try to copy the full entangled state into both local machines and then let them continue independently. But now the random-number generators do not talk to one another. For a singlet-like state, if Alice and Bob measure along the same axis, their answers should be opposite. Two independent local random generators do not know how to enforce that. The distinctive correlation is lost.
+
+This is the point at which the lecture changes our sense of what is weird. The weirdness is not that Bob can send a message to Alice through entanglement; he cannot. The weirdness is that entangled correlations cannot be reproduced by separated local classical resources unless one sneaks in a central processor, a shared random source, or something mathematically equivalent to hidden wiring.
+
+\subsection{Question \& Answer}
+
+Question. If the classical simulator needs wires connecting Alice and Bob, does that not suggest that the real world itself must contain some kind of nonlocal wiring?
+
+Answer. Not as a theorem. If the simulator were an ordinary classical device, then yes, those wires would be perfectly good communication channels. Bob could send a signal to Alice. But in the actual quantum problem Bob is restricted to genuine quantum operations, and those are unitary operations on his own subsystem. We already proved that such operations do not change Alice's reduced density matrix. So Susskind's own takeaway is not that the world is secretly full of wires. It is that quantum mechanics cannot be simulated by local classical logic without extra structure that classical reasoning wants to smuggle in.
+
+He leaves one caveat on the table. The simulation story assumes that Alice and Bob can freely choose what to measure and when to measure it. Once one tries to fold Alice and Bob themselves into the physical system, questions of choice and initial conditions become more delicate. The lecture does not try to settle those philosophical issues. It only isolates the operational facts.
+
+\section{From Spins to Particles: Functions as Vectors}
+
+At this point Susskind makes the pivot explicit. We could spend the rest of eternity talking about spins, he says, but now we want to get to particles. Up to now the most complicated system under discussion has been two spins, a four-dimensional Hilbert space. That is not where quantum mechanics ends. We now move to a single particle on a one-dimensional axis, with a continuously infinite range of possible positions.
+
+He takes the axis to be infinite, partly because it is the cleanest way to proceed quickly. A more careful treatment would put the system in a finite box and only later take limits, but that is not the emphasis here. The important point is that we are about to replace discrete labels by a continuous one.
+
+There is also a conceptual change in what we choose as a complete basis. In classical mechanics one would want both position and momentum to specify the state. Here we do not do that. For the moment the basic kets are the position kets \(|x\rangle\): the state in which the particle is located at position \(x\). A general state vector \(|\Psi\rangle\) is then a linear superposition of these basis vectors.
+
+Its wavefunction in the position basis is
+\begin{equation}
+\psi(x)=\langle x|\Psi\rangle.
+\end{equation}
+This is the same idea as before: the wavefunction is the projection of the state vector onto the chosen basis.
+
+The probability density to find the particle near \(x\) is
+\begin{equation}
+|\psi(x)|^2=\psi^*(x)\psi(x),
+\end{equation}
+and the normalization condition becomes
+\begin{equation}
+\int dx\,\psi^*(x)\psi(x)=1.
+\end{equation}
+
+Nothing fundamental has changed except the bookkeeping. In the discrete case, probabilities were summed. Here probabilities are distributed over a continuum, so we integrate. This is exactly the point Susskind wants the reader not to over-mystify: the only new thing is that sums become integrals.
+
+\section{Continuous Bases and Inner Products}
+
+The first subtlety in the continuous case is orthonormality. In the discrete case we had \(1\) when the labels were equal and \(0\) when they were different. Here we keep the idea of orthogonality for unequal labels, but replace the value at coincidence by a Dirac delta:
+\begin{equation}
+\langle x|x'\rangle=\delta(x-x').
+\end{equation}
+
+The lecture uses the delta function in the standard physicist's way. It vanishes unless \(x=x'\), but it has unit area. One may think of it as a spike of width \(\epsilon\) and height \(1/\epsilon\), then imagine \(\epsilon\to 0\) while the area stays fixed. The rigorous framework belongs to distribution theory, but the working rule is intuitive and sufficient for what follows.
+
+Now Susskind guesses the continuous expansion of a state:
+\begin{equation}
+|\Psi\rangle=\int dx'\,\psi(x')\,|x'\rangle.
+\end{equation}
+This is just the continuous analogue of
+\begin{equation}
+|\Psi\rangle=\sum_{a'}\psi(a')\,|a'\rangle,
+\end{equation}
+with the sum replaced by an integral.
+
+But there is an important consistency question. We have given \(\psi(x)\) two meanings: first as \(\langle x|\Psi\rangle\), and second as the coefficient in the expansion of \(|\Psi\rangle\). Are those really the same object? Acting with \(\langle x|\) on the expansion gives
+\begin{align}
+\langle x|\Psi\rangle
+&=\int dx'\,\psi(x')\,\langle x|x'\rangle \\
+&=\int dx'\,\psi(x')\,\delta(x-x').
+\end{align}
+Using the sampling rule
+\begin{equation}
+\int dx'\,\delta(x-x')\,f(x')=f(x),
+\end{equation}
+we obtain
+\begin{equation}
+\langle x|\Psi\rangle=\psi(x).
+\end{equation}
+So the two definitions agree. The coefficient in the continuous expansion is the same thing as the projection of the state onto the basis state \(|x\rangle\).
+
+At this point the lecture deliberately steps back to a familiar discrete formula before writing the continuous inner product. The blackboard evidence is useful because it shows the visual form of the claim that \(\psi^*\) are the coefficients of the bra vector:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_05.png}
+\caption{Inner-product expansion with \(\psi^*\) as the coefficients of the bra vector.}
+\end{figure}
+
+The board uses the labels \(q\) and \(q'\), and one vertical bar is faint enough that it deserves to be restored in the typeset formula. The cleaned expression is
+\begin{equation}
+\langle \psi|\phi\rangle
+=
+\sum_{q',q}\psi^*(q')\,\langle q'|q\rangle\,\phi(q)
+=
+\sum_q \psi^*(q)\phi(q).
+\end{equation}
+The continuous version is almost not even an analogy, as Susskind says: we simply replace \(q\) by \(x\), sums by integrals, and Kronecker deltas by Dirac deltas. The result is
+\begin{equation}
+\langle \psi|\phi\rangle=\int dx\,\psi^*(x)\phi(x).
+\end{equation}
+
+Here one should also say what the omitted integration limits mean. The integral runs over the whole line, and that immediately suggests the class of functions we should have in mind: square-integrable wavefunctions. Functions that blow up at infinity are not the ones that represent normalized probability distributions. Again the lecture keeps the treatment heuristic, but the physical meaning is plain.
+
+It is at this stage that the slogan of the second half of the lecture becomes explicit: functions are vectors. They can be added, multiplied by complex numbers, normalized, and used inside inner products. The notation is new, but the structure is the same structure we already knew.
+
+\section{Observables, Hermiticity, and the Canonical Commutator}
+
+Now Susskind turns to observables. A general linear operator is a machine, which he again calls \(M\): it takes one state vector into another, or, viewed concretely, it acts on a wavefunction and produces a new wavefunction. An observable is a Hermitian operator, and the condensed condition for Hermiticity is the same as before. If \(L\) is Hermitian, then
+\begin{equation}
+\langle \Phi|L|\Psi\rangle=\langle \Psi|L|\Phi\rangle^*.
+\end{equation}
+If the operator were not Hermitian, one would need a dagger on the reversed operator instead.
+
+The simplest nontrivial example is multiplication by \(x\):
+\begin{equation}
+(x\psi)(x)=x\,\psi(x).
+\end{equation}
+One must be slightly careful about the notation. The \(x\) on the right-hand side is not a fixed number; it is the function \(x\mapsto x\), acting by multiplication on another function.
+
+To check Hermiticity, compare
+\begin{equation}
+\langle \phi|x\psi\rangle=\int dx\,\phi^*(x)\,x\,\psi(x)
+\end{equation}
+with
+\begin{equation}
+\langle \psi|x\phi\rangle^*
+=
+\left(\int dx\,\psi^*(x)\,x\,\phi(x)\right)^*
+=
+\int dx\,\phi^*(x)\,x\,\psi(x).
+\end{equation}
+Because \(x\) is real, it is equal to its own complex conjugate, and the two expressions agree. Thus multiplication by \(x\) is Hermitian. It is therefore an observable, and here it is identified with position.
+
+Now let us try differentiation. Define the operator
+\begin{equation}
+(D\psi)(x)=\frac{d\psi}{dx}.
+\end{equation}
+It is linear, since differentiation respects sums and numerical multiples. But is it Hermitian? Compute
+\begin{align}
+\langle \phi|D\psi\rangle
+&=\int dx\,\phi^*(x)\frac{d\psi}{dx}.
+\end{align}
+On the other hand,
+\begin{equation}
+\langle D\phi|\psi\rangle^*
+=
+\left(\int dx\,\psi^*(x)\frac{d\phi}{dx}\right)^*
+=
+\int dx\,\psi(x)\frac{d\phi^*}{dx}.
+\end{equation}
+To compare the two, integrate by parts, assuming that the boundary term vanishes because the wavefunctions fall off sufficiently fast at infinity:
+\begin{equation}
+\int dx\,\psi(x)\frac{d\phi^*}{dx}
+=
+-\int dx\,\phi^*(x)\frac{d\psi}{dx}.
+\end{equation}
+Thus
+\begin{equation}
+\langle D\phi|\psi\rangle^*=-\langle \phi|D\psi\rangle,
+\end{equation}
+so
+\begin{equation}
+D^\dagger=-D.
+\end{equation}
+Differentiation is not Hermitian. It is anti-Hermitian.
+
+That failure can be repaired in the simplest possible way: multiply by \(-i\). Define
+\begin{equation}
+p=-i\,\frac{d}{dx}.
+\end{equation}
+In the units of the lecture, \(\hbar=1\). If we restore units later, this becomes \(p=-i\hbar\,d/dx\).
+
+Now the Hermitian condition works, because the minus sign from integration by parts is canceled by the sign change of \(i\) under complex conjugation. This is why \(-i\,d/dx\), rather than \(d/dx\), is the natural observable.
+
+At this stage Susskind introduces expectation values in the obvious sandwich form:
+\begin{equation}
+\langle L\rangle_\psi=\langle \psi|L|\psi\rangle.
+\end{equation}
+For the momentum operator,
+\begin{align}
+\langle p\rangle_\psi
+&=\int dx\,\psi^*(x)\left(-i\,\frac{d}{dx}\right)\psi(x) \\
+&=-i\int dx\,\psi^*(x)\frac{d\psi}{dx}.
+\end{align}
+Integrating by parts,
+\begin{equation}
+-i\int dx\,\psi^*(x)\frac{d\psi}{dx}
+=
+i\int dx\,\frac{d\psi^*}{dx}\,\psi(x),
+\end{equation}
+and the right-hand side is the complex conjugate of the left-hand side. Since the two are equal, \(\langle p\rangle_\psi\) is real, as it must be for a Hermitian observable.
+
+The lecture then says, in effect, let me do one more thing for you. Compute the commutator of \(x\) with \(p\). Take any wavefunction \(\psi(x)\). First apply \(x\), then \(p\):
+\begin{align}
+(px\,\psi)(x)
+&=-i\,\frac{d}{dx}\bigl(x\psi(x)\bigr) \\
+&=-i\,\psi(x)-i\,x\frac{d\psi}{dx},
+\end{align}
+where the first term comes from differentiating \(x\) and the second from differentiating \(\psi\). Now do it in the opposite order:
+\begin{align}
+(xp\,\psi)(x)
+&=x\left(-i\,\frac{d\psi}{dx}\right) \\
+&=-i\,x\frac{d\psi}{dx}.
+\end{align}
+Subtract in the lecture's order:
+\begin{equation}
+([x,p]\psi)(x)=\bigl(xp-px\bigr)\psi(x)=i\,\psi(x).
+\end{equation}
+Since this holds for every wavefunction,
+\begin{equation}
+[x,p]=i.
+\end{equation}
+Restoring units gives
+\begin{equation}
+[x,p]=i\hbar.
+\end{equation}
+
+This is the quantum analogue of the classical Poisson-bracket relation \(\{x,p\}=1\). Susskind briefly points out the historical connection: Dirac essentially began from the Poisson bracket and argued backward toward the commutator. Here the logic has been reversed. We discovered \(-i\,d/dx\) by asking which operator built from differentiation is actually Hermitian, and only then found that its commutator with \(x\) has exactly the expected form.
+
+Still, the lecture ends with a caution. One cannot simply declare victory and say that \(-i\,d/dx\) is momentum because it looks like the right commutator. One must still show that wave packets move with the corresponding group velocity, that the quantity is conserved in the right circumstances, and that it behaves like momentum when compared with classical motion. Those are the next steps, not the present one.
+
+\section{Summary}
+
+The lecture unfolds as a single argument rather than as a collection of topics. It begins by separating reversible entangling dynamics from the irreversibility of measurement, then introduces the reduced density matrix as the complete local description available to Alice. Bob's local unitary action is lifted into the composite wavefunction, the corresponding bra transformation brings in \(U^\dagger\), and the contraction \(U^\dagger U=1\) proves that Alice's reduced density matrix is unchanged. That is the operational form of locality.
+
+But Susskind does not stop at the proof. He asks what remains strange once signaling has been removed from the table, and answers with the simulation story: one spin is easy to simulate classically, product states are easy, but entangled correlations fail once the central processor or shared random source is removed. The lesson is not that the world must literally be full of hidden wires; it is that quantum mechanics and local classical simulation have different logical structures.
+
+Only then does the lecture pivot to particles. The basis states become \(|x\rangle\), the wavefunction becomes \(\psi(x)=\langle x|\Psi\rangle\), sums become integrals, and orthonormality becomes a Dirac delta. Functions are treated as vectors, inner products become integrals, multiplication by \(x\) becomes the position operator, and the repaired derivative operator
+\begin{equation}
+p=-i\,\frac{d}{dx}
+\end{equation}
+emerges as the Hermitian candidate for momentum. The calculation
+\begin{equation}
+[x,p]=i
+\end{equation}
+is the lecture's final payoff, but not its final word. From here the notes naturally point forward to momentum-space wavefunctions, Fourier transforms, and the time evolution of wave packets under the Schr\"odinger equation.
