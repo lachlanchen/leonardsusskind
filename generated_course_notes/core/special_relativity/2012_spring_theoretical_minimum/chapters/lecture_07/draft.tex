@@ -1,0 +1,309 @@
+\chapter{Lecture 7: Gauge Invariance and the Return of the Vector Potential}
+
+Last time the formalism became heavy, and this lecture begins by admitting exactly that. The first job is to restore fluency with relativistic notation; the second is to say what principles we are actually trying to preserve when we build a relativistic theory; and only then do we return to the charged particle in an electromagnetic field. The real payoff is not merely to re-derive the Lorentz force law, but to understand why the vector potential \(A_\mu\) is forced on us by the action principle and why, once introduced, it comes with a new and rather peculiar invariance. These notes follow Leonard Susskind's lecture closely, using the retained board evidence curated through LazyingArt LLC and Video2Book only where the blackboard itself fixes an equation or a stage in the derivation.
+
+\section{Recap of Relativistic Notation}
+
+The lecture begins by revisiting the notation of four-vectors, not because it is ornamental, but because it is the quickest way to recognize Lorentz-invariant expressions. We write the spacetime coordinates as
+\begin{equation}
+X^\mu = (t,x,y,z),
+\end{equation}
+with \(\mu=0,1,2,3\). Coordinate differences such as \(dX^\mu\) carry upper indices, while derivatives with respect to coordinates carry lower indices:
+\begin{equation}
+\partial_\mu := \frac{\partial}{\partial X^\mu}.
+\end{equation}
+The transcript is somewhat garbled in this part of the lecture, but the secure point is clear: in the flat-space conventions of this course, lowering an index changes only the sign of the time component.
+
+The practical rule is the summation convention: whenever the same index appears once up and once down, we sum over it. The lecturer's concrete example is the change of a scalar function \(s(X)\) between neighboring points:
+\begin{equation}
+ds = \frac{\partial s}{\partial X^\mu}\,dX^\mu = \partial_\mu s\, dX^\mu.
+\end{equation}
+Written out component by component, this is just the ordinary total differential. In compressed notation it also advertises immediately that we are contracting one lower and one upper index.
+
+The same trick produces Lorentz scalars from four-vectors. If \(X^\mu\) is a displacement from the origin, then
+\begin{equation}
+X_\mu X^\mu = x^2+y^2+z^2-t^2.
+\end{equation}
+This is the real point of the notation. A contraction of one upper and one lower index is a scalar, and therefore the same for every inertial observer. The notation is a bookkeeping device, but it is a very powerful one.
+
+\section{Four Principles for Building the Theory}
+
+Once the notation is back on the board, the lecture widens the frame. Suppose an experimental phenomenon is discovered and we want to build a theory of it. What are the rules of the game? In this lecture the answer comes in four stages.
+
+\paragraph{Action principle.}
+The first demand is that the phenomenon be describable by an action principle. This is not presented as a matter of taste. The lecturer insists that energy conservation, momentum conservation, and more generally the relation between symmetries and conservation laws, come through the action principle. For a particle, we seek an action of the form
+\begin{equation}
+I = \int dt\,L(X,\dot X),
+\end{equation}
+and the equations of motion follow from the Euler--Lagrange equations,
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial \dot X^m}=\frac{\partial L}{\partial X^m}.
+\end{equation}
+
+\paragraph{Locality.}
+The second principle is locality. If we poke a system at some point in space and time, the direct effect should be only on nearby things. The violin-string analogy is the lecture's way of saying this: strike one point of the string and only neighboring points respond immediately; farther points respond only after the disturbance propagates.
+
+For a particle, locality means that the Lagrangian depends only on the coordinates and their first time derivatives. For a field, locality means that the action is an integral over spacetime,
+\begin{equation}
+I = \int d^4x\,\mathcal L(\phi,\partial_\mu\phi),
+\end{equation}
+and that \(\mathcal L\) depends on the field and its first derivatives, not on instantaneous couplings between distant points. In field theory \(\mathcal L\) carries the dimensions of an energy density, precisely because it is integrated over a spacetime volume.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.}
+Is entanglement the same thing as nonlocality?
+
+\paragraph{Answer.}
+No. The lecture pauses here to reject that confusion very sharply. Entanglement gives correlations, not instantaneous dynamical influence. One may learn something about one subsystem by measuring another, but one does not thereby send a signal or change the distant system on the spot. Locality, as it is being used here, is a statement about direct influence and about differential equations: the force at a given time determines the acceleration at that same time.
+
+\paragraph{Lorentz invariance.}
+The third principle is Lorentz invariance. The equations of motion should be the same in every inertial frame. In practice the lecturer phrases this as a rule about the Lagrangian: in special relativity it should be a scalar. This is exactly where the notation with upper and lower indices earns its keep.
+
+\paragraph{Gauge invariance.}
+The fourth principle is another invariance, but of a very different kind: gauge invariance. At this stage it is announced as mysterious. We are told what it will eventually mean, but not yet why it is there. The lecture deliberately delays the explanation. First we must go back to the charged particle and see where the vector potential enters.
+
+\section{Why the Vector Potential Returns}
+
+We now return to the example from the previous lecture: a charged particle moving in an electromagnetic field. The familiar equation of motion is written first, with no vector potential in sight.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.82\textwidth]{lecture_07_figure_02.png}
+\end{center}
+\end{figure}
+
+\begin{equation}
+m\mathbf a = e\left(\mathbf E + \mathbf v \times \mathbf B\right).
+\end{equation}
+
+This is the right place to begin, because it creates the central tension of the lecture. The Lorentz force law is familiar, elementary, and involves only \(\mathbf E\) and \(\mathbf B\). So why bring in \(A_\mu\) at all?
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.}
+If the Lorentz force law already uses only \(\mathbf E\) and \(\mathbf B\), why introduce \(A_\mu\)?
+
+\paragraph{Answer.}
+Because writing equations of motion is not the same thing as writing a Lorentz-invariant local action principle. The lecture insists on this point: one may simply write down the Lorentz force law, but one cannot build the required action directly from \(\mathbf E\), \(\mathbf B\), the position, and the velocity of the particle. The lecture treats this as a theorem and does not prove it here. The important point for us is the logical one. If we insist on the four principles just listed---action principle, locality, Lorentz invariance, and eventually gauge invariance---then the vector potential is not optional. It is the object that lets the action exist.
+
+\section{From the Worldline Action to the Ordinary-Time Lagrangian}
+
+The action for a relativistic charged particle is written as two terms:
+\begin{equation}
+I = -m\int d\tau - e\int A_\mu(X)\,dX^\mu.
+\end{equation}
+The first term is the proper-time length of the worldline, weighted by the mass. Because \(d\tau\) is a scalar, this part is manifestly Lorentz invariant. The second term couples the particle to the electromagnetic field. Here \(A_\mu(X)\) is a four-vector field evaluated at the spacetime point occupied by the particle, and \(A_\mu dX^\mu\) is again a scalar.
+
+The next step is to rewrite everything in ordinary time \(t\). This is exactly the board rhythm preserved by the retained frame: first the action in \(dt\)-language, then the Lagrangian extracted from the integrand.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{lecture_07_figure_03.png}
+\end{center}
+\end{figure}
+
+Since
+\begin{equation}
+\frac{d\tau}{dt}=\sqrt{1-\dot X^2},
+\qquad
+\dot X^2=\dot x^2+\dot y^2+\dot z^2,
+\end{equation}
+and since \(dX^0/dt=1\) while \(dX^m/dt=\dot X^m\), the action becomes
+\begin{align}
+I
+&= \int dt\left[-m\frac{d\tau}{dt}-e\,A_\mu(X)\frac{dX^\mu}{dt}\right] \\
+&= \int dt\left[-m\sqrt{1-\dot X^2}-e\bigl(A_0(X)+A_m(X)\dot X^m\bigr)\right].
+\end{align}
+Therefore the ordinary-time Lagrangian is
+\begin{equation}
+L=-m\sqrt{1-\dot X^2}-e\bigl(A_0(X)+A_m(X)\dot X^m\bigr).
+\end{equation}
+
+This is the concrete starting point for the mechanics. Up to this moment the vector potential entered as a four-vector needed to build a scalar action. Now it must justify itself by reproducing the force law.
+
+\section{Euler--Lagrange Mechanics and the Recovery of the Lorentz Force}
+
+The lecture now becomes deliberately mechanical. Once the Lagrangian is guessed, there is no magic left; one follows the Euler--Lagrange equations carefully.
+
+We differentiate \(L\) with respect to the velocity:
+\begin{equation}
+\frac{\partial L}{\partial \dot X^m}
+=
+\frac{m\dot X^m}{\sqrt{1-\dot X^2}}-eA_m(X).
+\end{equation}
+The lecturer first writes the relativistic momentum term and then corrects himself: the coupling term also depends on \(\dot X^m\), so the \(-eA_m\) piece must be present. The first term is just the \(m\)-component of the four-velocity multiplied by \(m\):
+\begin{equation}
+U^\mu := \frac{dX^\mu}{d\tau},
+\qquad
+\frac{m\dot X^m}{\sqrt{1-\dot X^2}} = mU^m.
+\end{equation}
+
+Next we differentiate with respect to time. Since \(A_m\) depends both explicitly on time and implicitly on time through the trajectory \(X(t)\), we need the chain rule:
+\begin{equation}
+\frac{dA_m}{dt} = \partial_0 A_m + (\partial_n A_m)\dot X^n.
+\end{equation}
+On the other side of the Euler--Lagrange equation,
+\begin{equation}
+\frac{\partial L}{\partial X^m}
+=
+-e\,\partial_m A_0
+-e\,(\partial_m A_n)\dot X^n.
+\end{equation}
+Putting these ingredients together gives
+\begin{align}
+\frac{d}{dt}\left(\frac{m\dot X^m}{\sqrt{1-\dot X^2}}-eA_m\right)
+&=
+-e\,\partial_m A_0
+-e\,(\partial_m A_n)\dot X^n,
+\end{align}
+and after rearranging,
+\begin{equation}
+m\frac{d}{dt}\left(\frac{\dot X^m}{\sqrt{1-\dot X^2}}\right)
+=
+e\bigl(\partial_0A_m-\partial_mA_0\bigr)
++
+e\bigl(\partial_nA_m-\partial_mA_n\bigr)\dot X^n.
+\end{equation}
+
+Now the structure becomes visible. The first bracket is the velocity-independent piece, and the lecture identifies it as the electric part of the force. The second bracket is antisymmetric in \(m\) and \(n\), so it is the curl structure. With the usual three-dimensional magnetic field
+\begin{equation}
+\mathbf B = \nabla\times \mathbf A,
+\end{equation}
+the second term is the magnetic piece; componentwise it is the \(m\)-component of \(\mathbf v\times \mathbf B\). Thus the familiar law is recovered from the vector potential:
+\begin{equation}
+m\mathbf a = e\left(\mathbf E+\mathbf v\times\mathbf B\right),
+\end{equation}
+at least in the ordinary slow-motion three-vector form. But the lecture immediately reminds us that the left-hand side is not yet the best relativistic object. It is time to write the whole thing covariantly.
+
+\section{Proper Time, Four-Velocity, and the Field Tensor}
+
+The last equation still mixes ordinary time \(t\) and proper time \(\tau\). Since \(U^\mu=dX^\mu/d\tau\), the more natural relativistic acceleration is
+\begin{equation}
+\frac{dU^\mu}{d\tau}
+=
+\frac{d^2X^\mu}{d\tau^2}.
+\end{equation}
+Multiplying the previous equation by \(dt/d\tau\) converts the factors of \(\dot X^n\) into components of the four-velocity and turns the left-hand side into proper acceleration. The lecture then packages the whole right-hand side into a rank-two tensor built from derivatives of \(A_\mu\).
+
+At the blackboard the lecturer briefly hesitates over the order of the derivatives and the associated signs. For the final notes we now fix one convention and keep it throughout:
+\begin{equation}
+F_{\mu\nu}:=\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{equation}
+This tensor is antisymmetric,
+\begin{equation}
+F_{\mu\nu}=-F_{\nu\mu},
+\end{equation}
+so in particular all diagonal components vanish.
+
+With rows labeled by \(\mu\) and columns by \(\nu\), a canonical matrix form is
+\begin{equation}
+F_{\mu\nu}
+=
+\begin{pmatrix}
+0 & E_x & E_y & E_z \\
+-E_x & 0 & B_z & -B_y \\
+-E_y & -B_z & 0 & B_x \\
+-E_z & B_y & -B_x & 0
+\end{pmatrix}.
+\end{equation}
+The mixed space-time entries encode the electric field, while the space-space entries encode the magnetic field. The point is not the matrix as a piece of decoration. The point is that electric and magnetic fields are being packed into a single geometric object.
+
+A convenient covariant summary of the force law is then
+\begin{equation}
+m\frac{dU^\mu}{d\tau}=e\,F^\mu{}_{\nu}U^\nu.
+\end{equation}
+The mixed-index signs depend on the metric convention used to raise the first index, and the lecture itself does not dwell on that bookkeeping. What matters here is the secure invariant content: the motion is governed by an antisymmetric field tensor acting on the four-velocity.
+
+\section{Gauge Invariance as Boundary-Term Invariance}
+
+Only now does the lecture return to the promised fourth principle. Before discussing electromagnetism directly, it backs up and asks a more general question: what is an invariance? The useful answer is that an invariance is a change of the variables that does not change the equations of motion, or equivalently does not disturb the stationary points of the action.
+
+The warm-up example is the free scalar field,
+\begin{equation}
+\partial_t^2\phi-\nabla^2\phi=0,
+\end{equation}
+with a Lagrangian density built only from derivatives,
+\begin{equation}
+\mathcal L_\phi=-\frac12\,\partial_\mu\phi\,\partial^\mu\phi.
+\end{equation}
+This theory is invariant under constant shifts \(\phi\to\phi+c\), because derivatives of a constant vanish. But if we add a mass term,
+\begin{equation}
+\partial_t^2\phi-\nabla^2\phi+\mu^2\phi=0,
+\qquad
+\mathcal L_{\phi,\mu}
+=
+-\frac12\,\partial_\mu\phi\,\partial^\mu\phi
+-\frac{\mu^2}{2}\phi^2,
+\end{equation}
+the shift symmetry is lost: the \(\phi^2\) term changes when \(\phi\) changes by a constant.
+
+The lecture then takes a more interesting variation, \(\phi\to\phi+x\). The second derivatives of \(x\) vanish, so the free field equation still survives. In the Lagrangian density the change is
+\begin{equation}
+\partial_x(\phi+x)=\partial_x\phi+1,
+\end{equation}
+and therefore
+\begin{equation}
+(\partial_x\phi+1)^2
+=
+(\partial_x\phi)^2+2\,\partial_x\phi+1.
+\end{equation}
+The new pieces are a constant and a total derivative. A constant added to the Lagrangian is irrelevant, and a total derivative contributes only boundary terms to the action. This is the key lesson: adding a total derivative does not change the equations of motion.
+
+We now return to the particle action and perform the analogous transformation
+\begin{equation}
+A_\mu \longrightarrow A_\mu+\partial_\mu S,
+\end{equation}
+where \(S(X)\) is an arbitrary scalar function. The change in the interaction part of the action is
+\begin{align}
+\Delta I
+&=
+-e\int \partial_\mu S\,dX^\mu \\
+&=
+-e\int dS \\
+&=
+-e\bigl(S(2)-S(1)\bigr).
+\end{align}
+Here \(S(1)\) and \(S(2)\) are the values of \(S\) at the fixed endpoints of the worldline. Therefore the action changes only by an endpoint term. But the variational principle holds the endpoints fixed and varies only the trajectory in between. So the equations of motion are unchanged. This is gauge invariance in its first form.
+
+There is also a direct proof at the level of the field tensor. Under the same transformation,
+\begin{align}
+F'_{\mu\nu}
+&=
+\partial_\mu\bigl(A_\nu+\partial_\nu S\bigr)
+-
+\partial_\nu\bigl(A_\mu+\partial_\mu S\bigr) \\
+&=
+F_{\mu\nu}
++
+\partial_\mu\partial_\nu S
+-
+\partial_\nu\partial_\mu S \\
+&=
+F_{\mu\nu},
+\end{align}
+because partial derivatives commute. So the field tensor itself is gauge invariant.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.}
+Is gauge invariance like changing reference frames?
+
+\paragraph{Answer.}
+No. This is one of the most important conceptual clarifications of the lecture. Lorentz invariance compares genuinely different observers, each with a physically meaningful frame of reference. Gauge invariance is different. It is not the passage from your coordinates to mine. It is a redundancy of description: many vector potentials correspond to the same electromagnetic field and therefore to the same physics. What is new is that the transformation involves an arbitrary function of position, not a single global angle or a single global boost parameter.
+
+This is also why \(A_\mu\) is indispensable and yet not directly measurable. It is indispensable because no acceptable local Lorentz-invariant action for the charged particle can be written directly in terms of \(\mathbf E\) and \(\mathbf B\) alone. It is not directly measurable because changing it by a gradient leaves all gauge-invariant physics unchanged. What one can measure are gauge-invariant quantities. A pure gauge potential,
+\begin{equation}
+A_\mu=\partial_\mu S,
+\end{equation}
+has
+\begin{equation}
+F_{\mu\nu}=0,
+\end{equation}
+and therefore produces no force at all.
+
+The lecture does not leave gauge invariance as a mere abstraction. It emphasizes its practical use. By choosing \(S\) appropriately, one may simplify the vector potential, set one component to zero, or make one feature of the theory especially transparent. A gauge transformation can be a very useful device for solving a problem or for exhibiting one aspect of the physics, but it must never change the final physical answer.
+
+\section{Summary}
+
+The lecture moves in a definite order, and the logic of the chapter is the same. We first recover the notation that lets us recognize four-vectors and scalars efficiently. We then formulate four guiding principles: action principle, locality, Lorentz invariance, and gauge invariance. Returning to the charged particle, we see why the vector potential \(A_\mu\) must enter the action even though the familiar force law speaks only of \(\mathbf E\) and \(\mathbf B\). From the resulting Lagrangian we recover the Lorentz force law mechanically, repackage it into the electromagnetic field tensor, and then discover that \(A_\mu\) is not unique. The final conceptual point is the decisive one: gauge invariance is not a new observer symmetry but a redundancy of description. That is why the vector potential is necessary in the formulation and yet not itself a directly measurable observable.
