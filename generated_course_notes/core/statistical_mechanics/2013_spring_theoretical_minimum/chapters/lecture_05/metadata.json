@@ -1,0 +1,52 @@
+{
+  "course_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum",
+  "transcript_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum/179 - Statistical Mechanics Lecture 5 [2BJYXuZZK3c].md",
+  "video_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum/179 - Statistical Mechanics Lecture 5 [2BJYXuZZK3c].mkv",
+  "lecture_number": 5,
+  "lecture_slug": "lecture_05",
+  "lecture_title": "Statistical Mechanics Lecture 5",
+  "assets": [
+    {
+      "name": "lecture_05_figure_03.png",
+      "timestamp_seconds": 1421.771,
+      "timestamp_hhmmss": "00:23:41.771",
+      "source_candidate": "lecture_05_window_03_candidate_04_002341771.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the strongest documentary frame in the set because the right-hand board layout is clearest here and the newly written numerator \\(\\partial E\\) is the most legible. Earlier candidates catch the symbol mid-stroke, while this one preserves the thermodynamic-variable headings and the carryover formulas on the left with less occlusion, making it the most useful frame for reconstructing the derivative relation that is about to be written.",
+      "subtitle_excerpt": "the theorem says that the derivative of the energy,",
+      "segment_start_seconds": 1419.36,
+      "segment_start_hhmmss": "00:23:39.360",
+      "segment_end_seconds": 1422.1,
+      "segment_end_hhmmss": "00:23:42.100",
+      "caption_hint": "setting up the energy derivative"
+    },
+    {
+      "name": "lecture_05_figure_04.png",
+      "timestamp_seconds": 3067.751,
+      "timestamp_hhmmss": "00:51:07.751",
+      "source_candidate": "lecture_05_window_04_candidate_04_005107751.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the best documentary frame because it preserves both kinds of evidence needed for the notes: the piston-style volume-change sketch on the left and the differential work relation across the top. Compared with the earlier candidates, the diagram is fully visible here, the top formula is more recoverable, and the lower derivative setup has progressed farther, making this the most useful frame for reconstructing the thermodynamic argument.",
+      "subtitle_excerpt": "to the derivative of the energy with respect",
+      "segment_start_seconds": 3064.46,
+      "segment_start_hhmmss": "00:51:04.460",
+      "segment_end_seconds": 3068.2,
+      "segment_end_hhmmss": "00:51:08.200",
+      "caption_hint": "piston work and energy derivative"
+    },
+    {
+      "name": "lecture_05_figure_05.png",
+      "timestamp_seconds": 4170.337,
+      "timestamp_hhmmss": "01:09:30.337",
+      "source_candidate": "lecture_05_window_06_candidate_01_010930337.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the best frame because it shows the finished thermodynamic result most clearly at the exact moment Susskind names it. The right-hand board cleanly displays the ideal-gas equation of state, while the left-hand board still retains the partition-function derivative that leads to it. Later candidates begin adding grouping marks and partial boxing that obscure the result rather than clarifying it.",
+      "subtitle_excerpt": "This is the equation of state of an ideal gas.",
+      "segment_start_seconds": 4170.02,
+      "segment_start_hhmmss": "01:09:30.020",
+      "segment_end_seconds": 4172.66,
+      "segment_end_hhmmss": "01:09:32.660",
+      "caption_hint": "ideal-gas equation of state"
+    }
+  ]
+}
