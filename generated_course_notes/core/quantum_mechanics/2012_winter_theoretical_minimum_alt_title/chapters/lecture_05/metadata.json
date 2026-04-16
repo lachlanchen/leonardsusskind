@@ -8,11 +8,11 @@
   "assets": [
     {
       "name": "lecture_05_figure_01.png",
-      "timestamp_seconds": 4.16,
-      "timestamp_hhmmss": "00:00:04.160",
-      "source_candidate": "lecture_05_window_01_candidate_03_000004160.png",
+      "timestamp_seconds": 5.8,
+      "timestamp_hhmmss": "00:00:05.800",
+      "source_candidate": "lecture_05_window_01_candidate_04_000005800.png",
       "recommended_use": "screenshot_only",
-      "rationale": "All four candidates are opening campus or title-card frames rather than lecture content. None shows blackboard mathematics, a diagram, or a classroom layout that would help reconstruct the notes, so this subtitle window should be skipped.",
+      "rationale": "None of the candidates is useful for note writing: they are all opening campus or title-card frames with no blackboard mathematics, diagram, or classroom layout. Candidate 04 is the clearest and most settled frame in the window, but this subtitle moment should still be skipped.",
       "subtitle_excerpt": "Stanford University.",
       "segment_start_seconds": 0.0,
       "segment_start_hhmmss": "00:00:00.000",
@@ -40,7 +40,7 @@
       "timestamp_hhmmss": "00:23:33.840",
       "source_candidate": "lecture_05_window_03_candidate_04_002333840.png",
       "recommended_use": "screenshot_plus_equation",
-      "rationale": "All four candidates show essentially the same clean board close-up, but this final frame is the safest choice because it preserves the fully written difference-quotient equation in a settled board state with no lecturer occlusion. It is sharp, complete, and directly useful for reconstructing the step leading to the time derivative.",
+      "rationale": "All four candidates show the same board close-up, but the final frame is the most settled and complete. The full difference-quotient equation is cleanly visible, with the denominator and right-hand side clearly written, making it the most useful frame for reconstructing the step that becomes the time derivative of the state vector.",
       "subtitle_excerpt": "We get the time derivative of the state vector of the system.",
       "segment_start_seconds": 1409.44,
       "segment_start_hhmmss": "00:23:29.440",
@@ -50,17 +50,17 @@
     },
     {
       "name": "lecture_05_figure_04.png",
-      "timestamp_seconds": 2128.84,
-      "timestamp_hhmmss": "00:35:28.840",
-      "source_candidate": "lecture_05_window_04_candidate_04_003528840.png",
+      "timestamp_seconds": 2127.69,
+      "timestamp_hhmmss": "00:35:27.690",
+      "source_candidate": "lecture_05_window_04_candidate_03_003527690.png",
       "recommended_use": "screenshot_plus_equation",
-      "rationale": "This final frame is the cleanest settled view of the board. The lecturer has moved out of the way, the full left-hand derivative and central equality are unobstructed, and the expectation-value commutator expression is readable across the board. Earlier candidates are partially blocked by Susskind while he is still writing or moving.",
+      "rationale": "",
       "subtitle_excerpt": "If you know what the Hamiltonian is as an operator or as a matrix,",
       "segment_start_seconds": 2124.44,
       "segment_start_hhmmss": "00:35:24.440",
       "segment_end_seconds": 2129.44,
       "segment_end_hhmmss": "00:35:29.440",
-      "caption_hint": "commutator form of average evolution"
+      "caption_hint": "If you know what the Hamiltonian is as an operator or as a matrix,"
     },
     {
       "name": "lecture_05_figure_05.png",
@@ -68,7 +68,7 @@
       "timestamp_hhmmss": "01:04:00.388",
       "source_candidate": "lecture_05_window_05_candidate_03_010400388.png",
       "recommended_use": "screenshot_plus_equation",
-      "rationale": "This frame gives the best compromise between completeness and occlusion. The identifying line at the top connecting \\(|i\\rangle\\) with the energy-eigenvector notation is still visible, and the lower expansion of the state as a sum over basis vectors is more legible here than in the earlier frames, where Susskind's arm blocks more of the equation. The last frame adds more body and eraser occlusion without revealing additional content.",
+      "rationale": "This frame gives the best compromise between completeness and occlusion. The top identification of the basis vectors with energy eigenvectors is still visible, and the lower expansion of the state as a sum over basis vectors is more legible here than in the earlier frames, where Susskind's arm blocks more of the equation. The final frame adds more body and eraser occlusion without revealing additional content.",
       "subtitle_excerpt": "Let's go back to the original equation that the state vector is a sum over the eigenvectors.",
       "segment_start_seconds": 3837.84,
       "segment_start_hhmmss": "01:03:57.840",
@@ -78,17 +78,17 @@
     },
     {
       "name": "lecture_05_figure_06.png",
-      "timestamp_seconds": 5034.06,
-      "timestamp_hhmmss": "01:23:54.060",
-      "source_candidate": "lecture_05_window_06_candidate_04_012354060.png",
-      "recommended_use": "screenshot_plus_equation_and_tikz",
-      "rationale": "This is the strongest frame because it captures the finished board state for the moment: the field-direction sketch labeled \\(B_z\\), the Hamiltonian \\(H=\\omega\\sigma_z/2\\), and the full vertical list \\(\\sigma_x,\\sigma_y,\\sigma_z\\). The lecturer has mostly moved out of the way, so the layout is clearer and more useful for reconstructing both the equation and the simple geometric setup.",
+      "timestamp_seconds": 5030.46,
+      "timestamp_hhmmss": "01:23:50.460",
+      "source_candidate": "lecture_05_window_06_candidate_03_012350460.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
       "subtitle_excerpt": "the z component in the Hamiltonian, but I want to find out how all the components, sigma x, sigma y, and sigma z, how they vary with time.",
       "segment_start_seconds": 5022.66,
       "segment_start_hhmmss": "01:23:42.660",
       "segment_end_seconds": 5034.66,
       "segment_end_hhmmss": "01:23:54.660",
-      "caption_hint": "magnetic field along z and spin components"
+      "caption_hint": "the z component in the Hamiltonian, but I want to find out how all the components, sigma x, sigma y, and sigma z, how they vary with time."
     }
   ]
 }
