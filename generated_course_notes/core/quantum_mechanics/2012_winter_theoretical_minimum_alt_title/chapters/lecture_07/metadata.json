@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/130 - Lecture 7 \uff5c The Theoretical Minimum [QuW24mTDB8s].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/130 - Lecture 7 \uff5c The Theoretical Minimum [QuW24mTDB8s].mkv",
+  "lecture_number": 7,
+  "lecture_slug": "lecture_07",
+  "lecture_title": "Lecture 7 : The Theoretical Minimum",
+  "assets": [
+    {
+      "name": "lecture_07_figure_02.png",
+      "timestamp_seconds": 439.52,
+      "timestamp_hhmmss": "00:07:19.520",
+      "source_candidate": "lecture_07_window_02_candidate_03_000719520.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 03 gives the clearest and most useful view of the board mathematics at this moment. It shows the left-hand ket and equals sign more distinctly than Candidates 01 and 02, and it preserves the top summation structure together with the lower wavefunction-style notation on the right. Candidate 04 is similar but does not add visible mathematical content and is slightly less balanced in occlusion.",
+      "subtitle_excerpt": "that the state vector psi",
+      "segment_start_seconds": 438.8,
+      "segment_start_hhmmss": "00:07:18.800",
+      "segment_end_seconds": 440.04,
+      "segment_end_hhmmss": "00:07:20.040",
+      "caption_hint": "State vector expanded in a basis"
+    },
+    {
+      "name": "lecture_07_figure_03.png",
+      "timestamp_seconds": 1051.139,
+      "timestamp_hhmmss": "00:17:31.139",
+      "source_candidate": "lecture_07_window_03_candidate_04_001731139.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the clearest finished frame. It preserves the full vertical layout of the board notation, including the separate kets, the composite ket |a,b\\rangle, and the completed general state ket |\\Psi\\rangle, while the lecturer has stepped far enough aside that the mathematics is no longer being written over or blocked.",
+      "subtitle_excerpt": "The state vector psi is a state vector",
+      "segment_start_seconds": 1047.98,
+      "segment_start_hhmmss": "00:17:27.980",
+      "segment_end_seconds": 1051.57,
+      "segment_end_hhmmss": "00:17:31.570",
+      "caption_hint": "Examples of state-vector notation"
+    },
+    {
+      "name": "lecture_07_figure_04.png",
+      "timestamp_seconds": 4171.216,
+      "timestamp_hhmmss": "01:09:31.216",
+      "source_candidate": "lecture_07_window_04_candidate_04_010931216.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the best settled frame. The lecturer has stepped aside enough that the right-board mathematics is no longer covered by his hand, and the visible structure is more complete than in the earlier candidates: a top summation defining matrix elements, a standalone conjugated component term, and a lower summed expression showing matrix action on a state component. It is the most useful frame for reconstructing the algebra cleanly in the notes.",
+      "subtitle_excerpt": "of multiplying a column vector by a matrix.",
+      "segment_start_seconds": 4167.59,
+      "segment_start_hhmmss": "01:09:27.590",
+      "segment_end_seconds": 4171.71,
+      "segment_end_hhmmss": "01:09:31.710",
+      "caption_hint": "Density matrix acting on state components"
+    },
+    {
+      "name": "lecture_07_figure_06.png",
+      "timestamp_seconds": 6540.447,
+      "timestamp_hhmmss": "01:49:00.447",
+      "source_candidate": "lecture_07_window_06_candidate_01_014900447.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 01 preserves the clearest overall board layout for this moment. It shows the numbered horizontal trials, the source marked E, and the two already completed measurement outcomes on the right, while the lecturer has not yet obscured as much of the existing diagram as in the later frames. The later candidates do not reveal the newly written lower outcome clearly enough to compensate for the increased occlusion of the rest of the board.",
+      "subtitle_excerpt": "And over here he measures Sigma y equals plus 1.",
+      "segment_start_seconds": 6540.07,
+      "segment_start_hhmmss": "01:49:00.070",
+      "segment_end_seconds": 6543.21,
+      "segment_end_hhmmss": "01:49:03.210",
+      "caption_hint": "Bell measurement outcomes"
+    }
+  ]
+}
