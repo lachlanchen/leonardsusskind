@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/special_relativity/2012_spring_theoretical_minimum",
+  "transcript_rel": "core/special_relativity/2012_spring_theoretical_minimum/141 - Special Relativity \uff5c Lecture 8 [LnsZaOcF1Bo].md",
+  "video_rel": "core/special_relativity/2012_spring_theoretical_minimum/141 - Special Relativity \uff5c Lecture 8 [LnsZaOcF1Bo].mp4",
+  "lecture_number": 8,
+  "lecture_slug": "lecture_08",
+  "lecture_title": "Special Relativity : Lecture 8",
+  "assets": [
+    {
+      "name": "lecture_08_figure_02.png",
+      "timestamp_seconds": 761.62,
+      "timestamp_hhmmss": "00:12:41.620",
+      "source_candidate": "lecture_08_window_02_candidate_01_001241620.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 is the cleanest and least occluded frame in this set. The main line defining the antisymmetric field tensor is fully legible, and the lower component-identification line is still visible without the added lecturer intrusion that appears more strongly in candidates 02 through 04. It preserves the board moment clearly enough to support note writing and a cleaned LaTeX reconstruction nearby.",
+      "subtitle_excerpt": "anti-symmetric field tensor,",
+      "segment_start_seconds": 761.26,
+      "segment_start_hhmmss": "00:12:41.260",
+      "segment_end_seconds": 762.68,
+      "segment_end_hhmmss": "00:12:42.680",
+      "caption_hint": "Field tensor definition on the board"
+    },
+    {
+      "name": "lecture_08_figure_03.png",
+      "timestamp_seconds": 2707.754,
+      "timestamp_hhmmss": "00:45:07.754",
+      "source_candidate": "lecture_08_window_03_candidate_03_004507754.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 03 is the best balance of completeness and usefulness. The already written magnetic relation is fully legible, and this frame also captures the electric-field line at the moment it begins to acquire content after the equals sign. Candidates 01 and 02 are slightly emptier on the lower line, while candidate 04 adds no clearer mathematics and leaves the writing more occluded by the lecturer\u2019s hand.",
+      "subtitle_excerpt": "is equal to time derivative of the vector potential,",
+      "segment_start_seconds": 2705.96,
+      "segment_start_hhmmss": "00:45:05.960",
+      "segment_end_seconds": 2708.72,
+      "segment_end_hhmmss": "00:45:08.720",
+      "caption_hint": "From magnetic curl to the electric field"
+    },
+    {
+      "name": "lecture_08_figure_04.png",
+      "timestamp_seconds": 2924.414,
+      "timestamp_hhmmss": "00:48:44.414",
+      "source_candidate": "lecture_08_window_04_candidate_04_004844414.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 gives the clearest and least occluded view of the two equations. The lecturer has moved his hand away from the writing, so both the divergence equation for the magnetic field and the curl equation for the electric field are more readable than in the earlier candidates. It preserves the board grouping cleanly and is the most useful frame for note reconstruction.",
+      "subtitle_excerpt": "and one more which is a vector equation.",
+      "segment_start_seconds": 2922.76,
+      "segment_start_hhmmss": "00:48:42.760",
+      "segment_end_seconds": 2924.64,
+      "segment_end_hhmmss": "00:48:44.640",
+      "caption_hint": "Homogeneous Maxwell equations on the board"
+    },
+    {
+      "name": "lecture_08_figure_05.png",
+      "timestamp_seconds": 4983.038,
+      "timestamp_hhmmss": "01:23:03.038",
+      "source_candidate": "lecture_08_window_05_candidate_01_012303038.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 best preserves the lecture moment in which the already written Maxwell equations are being reinterpreted. It keeps the two grouped equations readable while also retaining the lecturer in frame, which matches the rhetorical transition signaled by the subtitle. The later candidates do not add clearer mathematics and keep a similar or slightly less balanced view of the board.",
+      "subtitle_excerpt": "can we express them as tensor equations?",
+      "segment_start_seconds": 4982.8,
+      "segment_start_hhmmss": "01:23:02.800",
+      "segment_end_seconds": 4984.78,
+      "segment_end_hhmmss": "01:23:04.780",
+      "caption_hint": "Maxwell equations before tensor form"
+    },
+    {
+      "name": "lecture_08_figure_06.png",
+      "timestamp_seconds": 5396.22,
+      "timestamp_hhmmss": "01:29:56.220",
+      "source_candidate": "lecture_08_window_06_candidate_04_012956220.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 gives the most useful balance between lecturer presence and readable board structure. Susskind\u2019s lowered posture reveals slightly more of the grouped equations behind him, especially the upper line of the left group, while the right-hand equation set remains legible enough to support the transition to a two-index antisymmetric tensor. The earlier candidates keep a similar composition but obscure a bit more of the left group.",
+      "subtitle_excerpt": "anti-symmetric tensor with two indices.",
+      "segment_start_seconds": 5394.019,
+      "segment_start_hhmmss": "01:29:54.019",
+      "segment_end_seconds": 5396.52,
+      "segment_end_hhmmss": "01:29:56.520",
+      "caption_hint": "Maxwell equations grouped for tensor form"
+    }
+  ]
+}
