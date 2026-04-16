@@ -1,0 +1,38 @@
+{
+  "course_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum",
+  "transcript_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum/181 - Statistical Mechanics Lecture 7 [sg15UClUY48].md",
+  "video_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum/181 - Statistical Mechanics Lecture 7 [sg15UClUY48].mp4",
+  "lecture_number": 7,
+  "lecture_slug": "lecture_07",
+  "lecture_title": "Statistical Mechanics Lecture 7",
+  "assets": [
+    {
+      "name": "lecture_07_figure_02.png",
+      "timestamp_seconds": 1869.69,
+      "timestamp_hhmmss": "00:31:09.690",
+      "source_candidate": "lecture_07_window_03_candidate_03_003109690.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "the average kinetic energy and potential energy,",
+      "segment_start_seconds": 1868.39,
+      "segment_start_hhmmss": "00:31:08.390",
+      "segment_end_seconds": 1870.39,
+      "segment_end_hhmmss": "00:31:10.390",
+      "caption_hint": "the average kinetic energy and potential energy,"
+    },
+    {
+      "name": "lecture_07_figure_03.png",
+      "timestamp_seconds": 3833.173,
+      "timestamp_hhmmss": "01:03:53.173",
+      "source_candidate": "lecture_07_window_06_candidate_02_010353173.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 gives the best balance between visible board content and minimal occlusion. The left-hand \\(E\\) is still readable, the upper reminder line beginning with \\(\\log Z\\) remains visible, and the key right-hand identification with \\(1/\\beta\\) is clearer than in the other frames. The mathematics is still partly blocked by the lecturer, so this screenshot is best used alongside a cleaned typeset equation.",
+      "subtitle_excerpt": "the energy is just equal to the temperature,",
+      "segment_start_seconds": 3832.01,
+      "segment_start_hhmmss": "01:03:52.010",
+      "segment_end_seconds": 3835.07,
+      "segment_end_hhmmss": "01:03:55.070",
+      "caption_hint": "Energy identified with \\(1/\\beta\\)"
+    }
+  ]
+}
