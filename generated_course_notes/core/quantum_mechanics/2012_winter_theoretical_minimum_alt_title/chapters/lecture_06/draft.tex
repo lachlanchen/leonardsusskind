@@ -1,0 +1,463 @@
+\chapter{Tensor Products, Two Spins, and the Singlet State}
+
+We begin by repairing a loose end from the previous lecture. A spin in a magnetic field can emit a photon, but what exactly becomes of the energy if the spin is not initially aligned with the field? From that question we are led, almost against our will, into the subject of measurement, and from measurement to the need to combine quantum systems. The chapter then turns to the tensor-product description of two spins, to the special class of product states, and finally to the singlet, where entanglement first appears not as a slogan but as a concrete calculable fact.
+
+\section{A Spin, a Magnetic Field, and the Photon-Emission Puzzle}
+
+Take a single spin in a magnetic field and choose the Hamiltonian to be
+\begin{equation}
+H=\frac{\omega}{2}\sigma_z.
+\end{equation}
+With the convention \(\hbar=1\), the two energy eigenvalues are
+\begin{equation}
+E_+=+\frac{\omega}{2},
+\qquad
+E_-=-\frac{\omega}{2}.
+\end{equation}
+The spacing between the two levels is therefore
+\begin{equation}
+E_+-E_-=\omega.
+\end{equation}
+If the spin is in the upper state, it may drop to the lower state by emitting a photon, and the emitted photon carries energy \(\omega\). If the spin is already in the lower state, no such emission is possible.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+\draw[->] (0,0) -- (0,4);
+\draw (-0.2,3) -- (2.2,3);
+\draw (-0.2,1) -- (2.2,1);
+\draw[->] (1,2.9) -- (1,1.1);
+\node[left] at (0,3) {\(\frac{\omega}{2}\)};
+\node[left] at (0,1) {\(-\frac{\omega}{2}\)};
+\node[right] at (1.1,2) {\(\omega\)};
+\end{tikzpicture}
+\caption{A two-level spin system with energy gap \(\omega\).}
+\end{figure}
+
+Classically one would reason differently. A magnetic dipole oriented at some intermediate angle can radiate continuously while precessing, and the total emitted energy depends on the initial angle. If the dipole begins horizontally, one might imagine that only half the energy difference should be emitted. The quantum story keeps the same precession frequency in expectation value, but it does not allow a half-energy photon. The discreteness stays in the emitted quantum; the uncertainty moves to the question of whether emission occurs.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why is the emitted photon energy still \(\omega\), even when the initial spin is a superposition?
+
+\paragraph{Answer.} Because the system still has only two energy eigenvalues. Write the initial state as
+\begin{equation}
+|\psi\rangle=\alpha|u\rangle+\beta|d\rangle,
+\end{equation}
+with \(|u\rangle\) the \(+1\) eigenstate of \(\sigma_z\) and \(|d\rangle\) the \(-1\) eigenstate. The upper component can emit; the lower one cannot. Thus
+\begin{equation}
+P_{\mathrm{emit}}=|\alpha|^2,
+\qquad
+P_{\mathrm{no\,emit}}=|\beta|^2.
+\end{equation}
+When emission occurs, the energy carried away is not \(\omega/2\) but the full level spacing \(\omega\). Therefore the average emitted energy is
+\begin{equation}
+\langle E_{\mathrm{emitted}}\rangle=|\alpha|^2\omega.
+\end{equation}
+For a spin prepared along the \(x\)-axis, \(|\alpha|=|\beta|=1/\sqrt2\), so the average emitted energy is \(\omega/2\), but each individual event emits either no photon at all or a photon of energy \(\omega\).
+
+That resolves the original puzzle and also sets the tone for what follows. Quantum mechanics does not smear the photon energy into a continuum. It keeps the discrete transition energy and places the uncertainty in the event itself.
+
+A natural follow-up concerns absorption. How sharply tuned must an incoming photon be? The lecture answers only at the level needed here: the linewidth is governed by the lifetime of the excited state, so the shorter the lifetime, the broader the line. One may summarize that schematically by saying that the energy spread is of order the inverse lifetime. But this is only a bridge. The more important transition is conceptual: photon emission may provide a signal, yet it does not quite satisfy the rule that a measurement should leave the system in the eigenstate corresponding to the measured value. That is what pushes us toward the measurement problem.
+
+\section{Collapse, Measurement, and Why One System Is Not Enough}
+
+Between interactions, the quantum state evolves by the Schr\"odinger equation. But when a measuring device interacts with the system, one uses a second rule. If the observable is \(L\), and if the state has been expanded in an eigenbasis of \(L\),
+\begin{equation}
+|\psi\rangle=\sum_i \alpha_i |\lambda_i\rangle,
+\qquad
+L|\lambda_i\rangle=\lambda_i|\lambda_i\rangle,
+\end{equation}
+then a measurement yields one particular eigenvalue \(\lambda_k\), and immediately thereafter the system is described by the corresponding eigenstate:
+\begin{equation}
+|\psi\rangle \longrightarrow |\lambda_k\rangle.
+\end{equation}
+Operationally there is nothing wrong with this rule. It is the usual statement that the wave function collapses onto one outcome.
+
+The discomfort enters at once. The apparatus is itself a physical system. If every physical system is quantum mechanical, why should there be two distinct laws of evolution, one unitary and one non-unitary? The lecture does not yet solve that problem. It sharpens it. If we want a genuinely quantum description of measurement, we must stop talking about a system on one side and a mysteriously external apparatus on the other. We must describe the combined system.
+
+That raises the next question in exactly the form Susskind wants it raised: if we have two quantum systems, how do we combine their state spaces into a single one?
+
+\section{Tensor Products as the State Space of Combined Systems}
+
+Let the two systems be called \(A\) and \(I\), with state spaces \(S_A\) and \(S_I\). The combined state space is
+\begin{equation}
+S_{AI}=S_A\otimes S_I.
+\end{equation}
+This is the tensor product. The lecture introduces it first as a rule and then immediately explains what the rule means.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_06_figure_02.png}
+\caption{Tensor-product basis states.}
+\end{figure}
+
+Choose an orthonormal basis \(\{|a\rangle\}\) for \(S_A\) and an orthonormal basis \(\{|i\rangle\}\) for \(S_I\). Then the basis vectors of the combined system are labeled by all pairings:
+\begin{equation}
+|a\rangle\otimes |i\rangle
+\leftrightarrow
+|a\,i\rangle.
+\end{equation}
+If the dimensions of the two spaces are \(D_A\) and \(D_I\), then
+\begin{equation}
+\dim S_{AI}=D_A D_I.
+\end{equation}
+That is why the construction is called a product: the number of basis states multiplies.
+
+The orthonormality rule is equally simple:
+\begin{equation}
+\langle b\,j|a\,i\rangle=\delta_{ab}\delta_{ij}.
+\end{equation}
+The overlap vanishes unless both subsystem labels match.
+
+Once the basis has been built, the full tensor-product space is not merely the set of paired basis vectors. It is the space of all linear combinations of them:
+\begin{equation}
+|\Psi\rangle=\sum_{a,i}\alpha_{ai}|a\,i\rangle.
+\end{equation}
+This already contains the central lesson. The paired basis vectors are the starting point, but the real state space is the whole linear span. Changing the basis in each subsystem merely changes the basis in the combined space; it does not alter the underlying construction.
+
+The lecture now turns from the abstract pair \((A,I)\) to the first truly interesting concrete example: two spins.
+
+\section{Two Spins and the Special Form of Product States}
+
+Call the first spin \(\sigma\) and the second spin \(\tau\). Each has components \(x,y,z\). Choose the \(z\)-basis for both spins, and write the combined basis in the order
+\begin{equation}
+|uu\rangle,\quad |ud\rangle,\quad |du\rangle,\quad |dd\rangle,
+\end{equation}
+with the first slot always referring to \(\sigma\) and the second to \(\tau\).
+
+A completely general state of the two-spin system is therefore
+\begin{equation}
+|\Psi\rangle
+=
+\alpha_{uu}|uu\rangle
++
+\alpha_{ud}|ud\rangle
++
+\alpha_{du}|du\rangle
++
+\alpha_{dd}|dd\rangle.
+\end{equation}
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} How do we describe a state in which one spin is definite and the other is prepared along another axis?
+
+\paragraph{Answer.} Take \(\sigma\) definite in the \(z\)-basis and let \(\tau\) be definite along the \(x\)-axis. If
+\begin{equation}
+|R\rangle=\frac{|u\rangle+|d\rangle}{\sqrt2},
+\end{equation}
+then the state with \(\sigma\) up and \(\tau\) right is
+\begin{equation}
+|u\rangle\otimes |R\rangle
+=
+\frac{1}{\sqrt2}\bigl(|uu\rangle+|ud\rangle\bigr).
+\end{equation}
+The first slot is fixed; the second is the appropriate superposition.
+
+The lecture then broadens this to the general product state.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_06_figure_03.png}
+\caption{Product state expanded in the composite basis.}
+\end{figure}
+
+Write the most general single-spin state for \(\sigma\) as
+\[
+\alpha_u|u\rangle+\alpha_d|d\rangle,
+\]
+and for \(\tau\) as
+\[
+\beta_u|u\rangle+\beta_d|d\rangle.
+\]
+Their tensor product is
+\begin{equation}
+\bigl(\alpha_u|u\rangle+\alpha_d|d\rangle\bigr)\otimes
+\bigl(\beta_u|u\rangle+\beta_d|d\rangle\bigr),
+\end{equation}
+and expansion in the composite basis gives
+\begin{align}
+|\Psi_{\mathrm{prod}}\rangle
+&=
+\alpha_u\beta_u|uu\rangle
++\alpha_u\beta_d|ud\rangle
++\alpha_d\beta_u|du\rangle
++\alpha_d\beta_d|dd\rangle.
+\end{align}
+This has the same outward form as a general two-spin vector, but the coefficients are special: they factorize.
+
+That specialness can be measured by counting parameters. A general pure state of two spins has four complex coefficients. That is eight real numbers, but normalization removes one and overall phase removes another, leaving six real parameters. A product state, by contrast, is specified by one normalized state for \(\sigma\) and one normalized state for \(\tau\), hence only two real parameters for each spin, or four in all.
+
+So the product states occupy only a four-real-parameter subset of the full six-real-parameter space. Most two-spin states are not product states. This is not yet entanglement in the dramatic sense, but it is the first structural fact that makes entanglement possible.
+
+\section{Observables on the Composite System}
+
+Now we turn to observables. Whatever enlarged formalism we use, it must preserve the single-spin physics already developed. The composite system therefore carries the observables
+\[
+\sigma_x,\ \sigma_y,\ \sigma_z,
+\qquad
+\tau_x,\ \tau_y,\ \tau_z.
+\]
+In compact notation one may think of these as
+\[
+\sigma_m \equiv \sigma_m\otimes I,
+\qquad
+\tau_n \equiv I\otimes \sigma_n,
+\]
+but the lecture phrases the same idea more concretely: when an operator belongs to one subsystem, the other slot is a spectator.
+
+For the first spin,
+\begin{equation}
+\sigma_x=\begin{pmatrix}0&1\\[3pt]1&0\end{pmatrix},
+\qquad
+\sigma_z=\begin{pmatrix}1&0\\[3pt]0&-1\end{pmatrix},
+\qquad
+\sigma_y=\begin{pmatrix}0&-i\\[3pt] i&0\end{pmatrix}.
+\end{equation}
+Thus on composite basis states one has the spectator-index rules
+\begin{align}
+\sigma_x|u\,i\rangle&=|d\,i\rangle,
+&
+\sigma_x|d\,i\rangle&=|u\,i\rangle,
+\\
+\sigma_z|u\,i\rangle&=|u\,i\rangle,
+&
+\sigma_z|d\,i\rangle&=-|d\,i\rangle.
+\end{align}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_06_figure_04.png}
+\caption{Action of \(\sigma_x\) on composite basis states.}
+\end{figure}
+
+For the second spin the first index is the spectator:
+\begin{align}
+\tau_x|a\,u\rangle&=|a\,d\rangle,
+&
+\tau_x|a\,d\rangle&=|a\,u\rangle,
+\\
+\tau_z|a\,u\rangle&=|a\,u\rangle,
+&
+\tau_z|a\,d\rangle&=-|a\,d\rangle.
+\end{align}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_06_figure_05.png}
+\caption{Spectator-index action of \(\tau_x\) and \(\tau_z\).}
+\end{figure}
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Does applying \(\sigma_x\) to \(|u\rangle\) mean a measurement, and why does it not produce a superposition in this basis?
+
+\paragraph{Answer.} No. Operator action is not the same thing as a measurement. Here
+\begin{equation}
+\sigma_x|u\rangle=|d\rangle,
+\qquad
+\sigma_x|d\rangle=|u\rangle,
+\end{equation}
+and that is simply the matrix action of an off-diagonal operator on the \(z\)-basis. It is not an eigenvalue equation. In fact \(|u\rangle\) is as far as possible from a \(\sigma_x\)-eigenstate: acting with \(\sigma_x\) sends it to an orthogonal vector. The physical meaning of that observation is that if the spin is prepared in a \(\sigma_z\)-eigenstate, then a measurement of \(\sigma_x\) is maximally random.
+
+Because the operators attached to the two subsystems act on different slots, they commute. One can see this first on a basis state:
+\begin{equation}
+\sigma_x\tau_x|uu\rangle
+=
+\sigma_x|ud\rangle
+=
+|dd\rangle
+=
+\tau_x|du\rangle
+=
+\tau_x\sigma_x|uu\rangle.
+\end{equation}
+That example captures the general fact
+\begin{equation}
+[\sigma_m,\tau_n]=0
+\qquad
+\text{for all }
+m,n\in\{x,y,z\}.
+\end{equation}
+The order does not matter because each operator acts only where it belongs.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_06_figure_06.png}
+\caption{Commutator of \(\sigma_x\) and \(\tau_x\).}
+\end{figure}
+
+This is the conservative part of the story. It guarantees that if the two spins are separated and we perform only separate measurements on them, the old one-spin physics survives intact inside the combined system.
+
+\section{The Singlet as the First Genuine Entangled State}
+
+We are now ready for the first state that really uses the full composite space:
+\begin{equation}
+|\mathrm{sing}\rangle
+=
+\frac{1}{\sqrt2}\bigl(|ud\rangle-|du\rangle\bigr).
+\end{equation}
+It is already clear that the two spins are anti-correlated in the \(z\)-basis: whenever \(\tau\) is down, \(\sigma\) is up, and whenever \(\tau\) is up, \(\sigma\) is down. But the lecture insists on a sharper test. How do we know that this is not merely a cleverly written product state?
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} How can we tell that the singlet is not a product state?
+
+\paragraph{Answer.} We use a fact about a single spin. For any pure one-spin state there exists some direction \(\mathbf n\) such that the component \(\sigma\cdot \mathbf n\) is definitely \(+1\). Therefore a pure single-spin state cannot have all three expectation values \(\langle \sigma_x\rangle\), \(\langle \sigma_y\rangle\), and \(\langle \sigma_z\rangle\) equal to zero. If the singlet forces all three to vanish, then it cannot describe one spin in any ordinary pure state by itself, and therefore it cannot be a product state.
+
+Let us check this directly. First,
+\begin{align}
+\langle \sigma_z\rangle_{\mathrm{sing}}
+&=
+\langle \mathrm{sing}|\sigma_z|\mathrm{sing}\rangle
+\nonumber\\
+&=
+\frac{1}{2}
+\bigl(\langle ud|-\langle du|\bigr)
+\sigma_z
+\bigl(|ud\rangle-|du\rangle\bigr)
+\nonumber\\
+&=
+\frac{1}{2}
+\bigl(\langle ud|-\langle du|\bigr)
+\bigl(|ud\rangle+|du\rangle\bigr)
+\nonumber\\
+&=0.
+\end{align}
+The cross terms vanish by orthogonality, and the two diagonal terms cancel.
+
+Next,
+\begin{align}
+\langle \sigma_x\rangle_{\mathrm{sing}}
+&=
+\frac{1}{2}
+\bigl(\langle ud|-\langle du|\bigr)
+\sigma_x
+\bigl(|ud\rangle-|du\rangle\bigr)
+\nonumber\\
+&=
+\frac{1}{2}
+\bigl(\langle ud|-\langle du|\bigr)
+\bigl(|dd\rangle-|uu\rangle\bigr)
+\nonumber\\
+&=0.
+\end{align}
+Again there is no overlap at all between the ket produced by \(\sigma_x\) and the bra defining the singlet.
+
+The same reasoning works for \(\sigma_y\). The operator \(\sigma_y\) also flips the first slot, only with phases. The phases do not matter here, because the resulting states are again \(|dd\rangle\) and \(|uu\rangle\), orthogonal to \(\langle ud|\) and \(\langle du|\). Therefore
+\begin{equation}
+\langle \sigma_x\rangle_{\mathrm{sing}}
+=
+\langle \sigma_y\rangle_{\mathrm{sing}}
+=
+\langle \sigma_z\rangle_{\mathrm{sing}}
+=0.
+\end{equation}
+The same is true for \(\tau\):
+\begin{equation}
+\langle \tau_x\rangle_{\mathrm{sing}}
+=
+\langle \tau_y\rangle_{\mathrm{sing}}
+=
+\langle \tau_z\rangle_{\mathrm{sing}}
+=0.
+\end{equation}
+
+That is the negative test. The state of the composite system is perfectly definite, yet neither subsystem by itself behaves as a pure one-spin state. This is the first real mathematical appearance of entanglement in the lecture.
+
+\section{Correlations, Basis Independence, and the Bell Turn}
+
+The singlet becomes more striking when we stop looking at one-spin observables and begin looking at products. Consider first
+\begin{equation}
+\langle \sigma_z\tau_z\rangle_{\mathrm{sing}}
+=
+\langle \mathrm{sing}|\sigma_z\tau_z|\mathrm{sing}\rangle.
+\end{equation}
+Now
+\begin{equation}
+\sigma_z\tau_z|ud\rangle=-|ud\rangle,
+\qquad
+\sigma_z\tau_z|du\rangle=-|du\rangle,
+\end{equation}
+so the singlet is an eigenvector of \(\sigma_z\tau_z\) with eigenvalue \(-1\):
+\begin{equation}
+\sigma_z\tau_z|\mathrm{sing}\rangle=-|\mathrm{sing}\rangle.
+\end{equation}
+Therefore
+\begin{equation}
+\langle \sigma_z\tau_z\rangle_{\mathrm{sing}}=-1.
+\end{equation}
+
+The same happens for the \(x\)-components. Since \(\tau_x\) flips the second slot and \(\sigma_x\) flips the first,
+\begin{equation}
+\sigma_x\tau_x|ud\rangle=|du\rangle,
+\qquad
+\sigma_x\tau_x|du\rangle=|ud\rangle,
+\end{equation}
+and hence
+\begin{equation}
+\sigma_x\tau_x|\mathrm{sing}\rangle=-|\mathrm{sing}\rangle.
+\end{equation}
+So
+\begin{equation}
+\langle \sigma_x\tau_x\rangle_{\mathrm{sing}}=-1.
+\end{equation}
+There is no special axis here, and the same conclusion holds for the \(y\)-components as well:
+\begin{equation}
+\langle \sigma_y\tau_y\rangle_{\mathrm{sing}}=-1.
+\end{equation}
+Thus the same-axis components are perfectly anti-correlated.
+
+For unequal components the result vanishes. For example,
+\begin{align}
+\sigma_x\tau_z|\mathrm{sing}\rangle
+&=
+\frac{1}{\sqrt2}\sigma_x\bigl(-|ud\rangle-|du\rangle\bigr)
+\nonumber\\
+&=
+-\frac{1}{\sqrt2}\bigl(|dd\rangle+|uu\rangle\bigr),
+\end{align}
+which is orthogonal to \(|\mathrm{sing}\rangle\). Therefore
+\begin{equation}
+\langle \sigma_x\tau_z\rangle_{\mathrm{sing}}=0.
+\end{equation}
+
+This is the positive test of entanglement. The individual expectation values vanish, but the products do not. In a product state the expectation value of a product would factor into the product of expectation values. Here that factorization fails as violently as possible.
+
+The lecture then asks how such a state may be prepared. The answer is that it is not exotic at all. If two spins interact through a coupling that favors anti-alignment, then the antisymmetric combination
+\[
+\frac{1}{\sqrt2}\bigl(|ud\rangle-|du\rangle\bigr)
+\]
+can be the lowest-energy state. Bring the spins together, wait long enough for them to radiate, and they relax toward this state. This is the singlet. The lecture only gestures at why the name is appropriate: the remaining three states form a triplet sector, while the singlet stands alone.
+
+There is also a remarkable basis-independence. If we rewrite the \(z\)-basis in terms of right and left,
+\begin{equation}
+|u\rangle=\frac{|R\rangle+|L\rangle}{\sqrt2},
+\qquad
+|d\rangle=\frac{|R\rangle-|L\rangle}{\sqrt2},
+\end{equation}
+then one finds
+\begin{equation}
+|\mathrm{sing}\rangle
+=
+\frac{1}{\sqrt2}\bigl(|LR\rangle-|RL\rangle\bigr).
+\end{equation}
+Likewise, in any other orthonormal spin basis the same antisymmetric pattern survives:
+\begin{equation}
+|\mathrm{sing}\rangle
+=
+\frac{1}{\sqrt2}
+\bigl(|{\rm in}\,{\rm out}\rangle-|{\rm out}\,{\rm in}\rangle\bigr).
+\end{equation}
+That is the special feature of the singlet. The triplet states mix among themselves under basis change, but the singlet keeps the same antisymmetric form.
+
+At this stage the lecture briefly names a more systematic invariant, the entanglement entropy, but does not yet develop it. The main point here is simpler and more immediate: the singlet encodes a correlation that no pair of separate state vectors can reproduce.
+
+This is why the classical penny-and-dime analogy is both useful and insufficient. In an ordinary classical anti-correlation, Alice can look at her coin and infer Bob's. That by itself is not mysterious. The mystery enters when we try to extend classical reasoning to all the quantum spin directions at once. Bell's lesson, as the lecture insists, is not that the singlet allows superluminal signals. It does not. The sharper statement is that classical local reasoning cannot reproduce the full quantum pattern.
+
+Susskind's final parable makes the point in computational language. A single spin can be simulated by a classical computer: evolve the state by the Schr\"odinger equation, compute the relevant probabilities, and use randomness to generate the measurement outcome. But an entangled pair cannot be simulated in a genuinely local way by two separated classical computers, one storing the data for one spin and the other storing the data for the other, unless they remain connected by nonlocal wiring throughout. The failure is not signaling; it is the failure of local classical simulation.
+
+\section{Summary}
+
+The lecture begins with a question about photon emission and ends with a question about the logic of quantum mechanics itself. Along the way we learn that the state space of a combined system is the tensor product of the subsystem spaces, that product states form only a special subset of the full two-spin space, and that subsystem observables act with a spectator index on the unused slot. The singlet then shows what is genuinely new: one-spin expectation values vanish, same-axis product observables are fixed at \(-1\), and the whole state has a basis-independent antisymmetric form. That is the first solid encounter with entanglement, and it prepares the ground for Bell's theorem in the next lecture.
