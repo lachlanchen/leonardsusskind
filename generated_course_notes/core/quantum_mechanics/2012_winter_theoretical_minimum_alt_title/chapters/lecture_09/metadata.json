@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/132 - Lecture 9 \uff5c The Theoretical Minimum [fTRKMAj5q_4].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/132 - Lecture 9 \uff5c The Theoretical Minimum [fTRKMAj5q_4].mkv",
+  "lecture_number": 9,
+  "lecture_slug": "lecture_09",
+  "lecture_title": "Lecture 9 : The Theoretical Minimum",
+  "assets": [
+    {
+      "name": "lecture_09_figure_02.png",
+      "timestamp_seconds": 1420.381,
+      "timestamp_hhmmss": "00:23:40.381",
+      "source_candidate": "lecture_09_window_02_candidate_02_002340381.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 is the clearest usable frame. It removes the raised arm and heavy pointing-shadow that interfere with Candidates 01 and 03, while preserving both the upper sampling identity and the left half of the lower Fourier-transform expression. Candidate 04 is similar, but Candidate 02 feels slightly more settled and readable overall.",
+      "subtitle_excerpt": "Now the second equation for psi twiddle of p,",
+      "segment_start_seconds": 1419.56,
+      "segment_start_hhmmss": "00:23:39.560",
+      "segment_end_seconds": 1421.72,
+      "segment_end_hhmmss": "00:23:41.720",
+      "caption_hint": "Delta-function identity above psi(x) integral"
+    },
+    {
+      "name": "lecture_09_figure_03.png",
+      "timestamp_seconds": 1583.416,
+      "timestamp_hhmmss": "00:26:23.416",
+      "source_candidate": "lecture_09_window_03_candidate_02_002623416.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 gives the best balance of completeness and legibility. It keeps the left-hand \\(\\psi(x')\\) label visible, preserves the boxed momentum-integral kernel cleanly, and shows the lower delta-function reduction step with less bodily occlusion than Candidate 01. Candidates 03 and 04 are very similar, but Candidate 02 is slightly cleaner and avoids the partial next-step writing that begins to intrude in Candidate 04.",
+      "subtitle_excerpt": "equals psi of x prime.",
+      "segment_start_seconds": 1582.74,
+      "segment_start_hhmmss": "00:26:22.740",
+      "segment_end_seconds": 1584.52,
+      "segment_end_hhmmss": "00:26:24.520",
+      "caption_hint": "Boxed Fourier kernel collapsing to delta"
+    },
+    {
+      "name": "lecture_09_figure_04.png",
+      "timestamp_seconds": 2584.497,
+      "timestamp_hhmmss": "00:43:04.497",
+      "source_candidate": "lecture_09_window_04_candidate_03_004304497.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 03 is the cleanest frame of the four. Susskind has stepped almost entirely out of view, leaving both lines fully legible, and it avoids the extra visual clutter that begins to enter at the lower left in Candidate 04. Candidates 01 and 02 are more obstructed by his body.",
+      "subtitle_excerpt": "Wave functions and state vectors",
+      "segment_start_seconds": 2582.3,
+      "segment_start_hhmmss": "00:43:02.300",
+      "segment_end_seconds": 2585.68,
+      "segment_end_hhmmss": "00:43:05.680",
+      "caption_hint": "Position operator on ket and wavefunction"
+    },
+    {
+      "name": "lecture_09_figure_05.png",
+      "timestamp_seconds": 2994.966,
+      "timestamp_hhmmss": "00:49:54.966",
+      "source_candidate": "lecture_09_window_05_candidate_04_004954966.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the clearest and most complete frame in this window. It preserves the tail end of the previous position-basis discussion on the left while giving the best view of the newly written momentum-operator formulas on the right. Earlier candidates cut off too much of the right-hand board or show a less finished version of the operator definition.",
+      "subtitle_excerpt": "The eigenvectors of the momentum",
+      "segment_start_seconds": 2993.4,
+      "segment_start_hhmmss": "00:49:53.400",
+      "segment_end_seconds": 2995.18,
+      "segment_end_hhmmss": "00:49:55.180",
+      "caption_hint": "Momentum operator on ket and wavefunction"
+    },
+    {
+      "name": "lecture_09_figure_06.png",
+      "timestamp_seconds": 3860.87,
+      "timestamp_hhmmss": "01:04:20.870",
+      "source_candidate": "lecture_09_window_06_candidate_04_010420870.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the best frame because it preserves the full upper delta-normalization identity and also shows the most finished state of the lower line, where Susskind has clearly begun writing the integral form of the inner product. Earlier candidates are slightly emptier below the equals sign.",
+      "subtitle_excerpt": "equals integral",
+      "segment_start_seconds": 3860.06,
+      "segment_start_hhmmss": "01:04:20.060",
+      "segment_end_seconds": 3860.98,
+      "segment_end_hhmmss": "01:04:20.980",
+      "caption_hint": "Delta normalization above momentum-space inner product"
+    }
+  ]
+}
