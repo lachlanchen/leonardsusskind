@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/special_relativity/2012_spring_theoretical_minimum",
+  "transcript_rel": "core/special_relativity/2012_spring_theoretical_minimum/137 - Special Relativity \uff5c Lecture 4 [Z8ace3NbXAA].md",
+  "video_rel": "core/special_relativity/2012_spring_theoretical_minimum/137 - Special Relativity \uff5c Lecture 4 [Z8ace3NbXAA].mkv",
+  "lecture_number": 4,
+  "lecture_slug": "lecture_04",
+  "lecture_title": "Special Relativity : Lecture 4",
+  "assets": [
+    {
+      "name": "lecture_04_figure_02.png",
+      "timestamp_seconds": 577.289,
+      "timestamp_hhmmss": "00:09:37.289",
+      "source_candidate": "lecture_04_window_02_candidate_02_000937289.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 is the clearest and most useful note-writing frame: the lecturer is out of the way, the Lagrangian \\(L=\\frac{m}{2}\\dot\\phi^2-V(\\phi)\\) is cleanly visible, and the left-hand side of the Euler-Lagrange equation is already written in a legible form. Candidate 04 is slightly more advanced, but the lecturer blocks too much of the equation. Candidate 02 preserves the best combination of sharpness, completeness, and board context.",
+      "subtitle_excerpt": "of the Lagrangian with respect to phi dot equals the derivative of the Lagrangian.",
+      "segment_start_seconds": 573.25,
+      "segment_start_hhmmss": "00:09:33.250",
+      "segment_end_seconds": 583.88,
+      "segment_end_hhmmss": "00:09:43.880",
+      "caption_hint": "Lagrangian for \\phi and Euler-Lagrange step"
+    },
+    {
+      "name": "lecture_04_figure_03.png",
+      "timestamp_seconds": 2312.706,
+      "timestamp_hhmmss": "00:38:32.706",
+      "source_candidate": "lecture_04_window_03_candidate_01_003832706.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 01 is the clearest and most useful frame for note writing. It preserves the full board context at this moment: the action at the top, the complete Euler-Lagrange equation in the middle, and the start of the lower-line rewrite, while Susskind blocks less of the mathematics than in the later candidates. The later frames show slightly more progress on the lower term, but the added completion is outweighed by increased occlusion from his body and writing hand.",
+      "subtitle_excerpt": "The derivative of the Lagrangian with respect to phi.",
+      "segment_start_seconds": 2312.32,
+      "segment_start_hhmmss": "00:38:32.320",
+      "segment_end_seconds": 2315.54,
+      "segment_end_hhmmss": "00:38:35.540",
+      "caption_hint": "Euler-Lagrange equation and \\partial\\mathcal{L}/\\partial\\phi term"
+    },
+    {
+      "name": "lecture_04_figure_04.png",
+      "timestamp_seconds": 2743.627,
+      "timestamp_hhmmss": "00:45:43.627",
+      "source_candidate": "lecture_04_window_04_candidate_02_004543627.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 is the clearest frame for this subtitle window because the central board content \\(\\mathcal{L}=\\frac{m}{2}\\dot\\phi^2-V(\\phi)\\) is the most readable while the surrounding action and Euler-Lagrange context remain visible. The neighboring frames are very similar, but this one gives the best balance of sharpness, completeness, and minimal occlusion by Susskind\u2019s body.",
+      "subtitle_excerpt": "The equation of the kinetic part minus the potential part",
+      "segment_start_seconds": 2741.94,
+      "segment_start_hhmmss": "00:45:41.940",
+      "segment_end_seconds": 2746.38,
+      "segment_end_hhmmss": "00:45:46.380",
+      "caption_hint": "Lagrangian as kinetic minus potential"
+    },
+    {
+      "name": "lecture_04_figure_05.png",
+      "timestamp_seconds": 2844.746,
+      "timestamp_hhmmss": "00:47:24.746",
+      "source_candidate": "lecture_04_window_05_candidate_03_004724746.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 03 is the best note-writing frame because it shows the fullest and clearest version of the board at this moment: the action at the top, the ordinary Euler-Lagrange equation in the middle, and the field-theory generalization below. Susskind has moved far enough left that the key symbols are minimally occluded, while later candidate 04 reintroduces occlusion with his pointing hand.",
+      "subtitle_excerpt": "Calculate the derivative of the Lagrangian with respect to,",
+      "segment_start_seconds": 2842.38,
+      "segment_start_hhmmss": "00:47:22.380",
+      "segment_end_seconds": 2846.02,
+      "segment_end_hhmmss": "00:47:26.020",
+      "caption_hint": "Field-theory Euler-Lagrange equation on the board"
+    },
+    {
+      "name": "lecture_04_figure_06.png",
+      "timestamp_seconds": 4783.164,
+      "timestamp_hhmmss": "01:19:43.164",
+      "source_candidate": "lecture_04_window_06_candidate_02_011943164.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 02 gives the best balance of legibility and context. The upper metric-derived interval formulas are clearly visible, and the lower board still shows the four-vector example centered on \\(A^\\mu\\), without the distracting hand gesture of candidate 01 or the increased motion and partial occlusion of the later frames. It is the most useful single frame for note writing at this moment.",
+      "subtitle_excerpt": "Because that basic equation was derived from the metric",
+      "segment_start_seconds": 4781.34,
+      "segment_start_hhmmss": "01:19:41.340",
+      "segment_end_seconds": 4786.14,
+      "segment_end_hhmmss": "01:19:46.140",
+      "caption_hint": "metric relation and four-vector example"
+    }
+  ]
+}
