@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum",
+  "transcript_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum/175 - Statistical Mechanics Lecture 1 [D1RzvXDXyqA].md",
+  "video_rel": "core/statistical_mechanics/2013_spring_theoretical_minimum/175 - Statistical Mechanics Lecture 1 [D1RzvXDXyqA].webm",
+  "lecture_number": 1,
+  "lecture_slug": "lecture_01",
+  "lecture_title": "Statistical Mechanics Lecture 1",
+  "assets": [
+    {
+      "name": "lecture_01_figure_02.png",
+      "timestamp_seconds": 1588.182,
+      "timestamp_hhmmss": "00:26:28.182",
+      "source_candidate": "lecture_01_window_02_candidate_01_002628182.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame is the clearest and least distracting of the set. The right-hand transition list is fully legible, the left-hand probability/frequency notation is still readable, and the lecturer is relatively still, so there is less gestural blur than in the later candidates. It preserves the useful board layout at the moment when the law is being recast visually.",
+      "subtitle_excerpt": "I'm going to draw this law as a diagram.",
+      "segment_start_seconds": 1587.88,
+      "segment_start_hhmmss": "00:26:27.880",
+      "segment_end_seconds": 1590.4,
+      "segment_end_hhmmss": "00:26:30.400",
+      "caption_hint": "color transition cycle on the board"
+    },
+    {
+      "name": "lecture_01_figure_03.png",
+      "timestamp_seconds": 2359.072,
+      "timestamp_hhmmss": "00:39:19.072",
+      "source_candidate": "lecture_01_window_03_candidate_01_003919072.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the clearest and least occluded frame. The diagram itself is already fully present, and unlike the later candidates it is not covered by Susskind's hand while he gestures. It gives the most usable view of the board layout for a clean redraw.",
+      "subtitle_excerpt": "You could ask what's the probability that the energy of",
+      "segment_start_seconds": 2358.66,
+      "segment_start_hhmmss": "00:39:18.660",
+      "segment_end_seconds": 2362.09,
+      "segment_end_hhmmss": "00:39:22.090",
+      "caption_hint": "two connected state regions"
+    },
+    {
+      "name": "lecture_01_figure_05.png",
+      "timestamp_seconds": 4480.15,
+      "timestamp_hhmmss": "01:14:40.150",
+      "source_candidate": "lecture_01_window_05_candidate_04_011440150.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the most useful frame because the graph is already drawn in its finished form and the lecturer's hand is no longer obscuring the right-hand side. Earlier candidates catch the curve mid-drawing, while this one preserves the full single-peaked shape, the vertical label, and the tick-marked horizontal axis with the least motion blur.",
+      "subtitle_excerpt": "let's just draw a graph.",
+      "segment_start_seconds": 4479.32,
+      "segment_start_hhmmss": "01:14:39.320",
+      "segment_end_seconds": 4480.28,
+      "segment_end_hhmmss": "01:14:40.280",
+      "caption_hint": "schematic probability graph"
+    },
+    {
+      "name": "lecture_01_figure_06.png",
+      "timestamp_seconds": 4602.427,
+      "timestamp_hhmmss": "01:16:42.427",
+      "source_candidate": "lecture_01_window_06_candidate_01_011642427.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This frame preserves the graph most clearly while keeping the lecturer's hands off the peak of the distribution. The vertical probability label, the full unimodal curve, the tick-marked horizontal axis, and the bracketed width around M are all visible at once. Later candidates place the hand or eraser directly over the curve and add no essential board content.",
+      "subtitle_excerpt": "The narrower the probability distribution,",
+      "segment_start_seconds": 4602.18,
+      "segment_start_hhmmss": "01:16:42.180",
+      "segment_end_seconds": 4604.24,
+      "segment_end_hhmmss": "01:16:44.240",
+      "caption_hint": "narrow probability distribution around M"
+    }
+  ]
+}
