@@ -48,7 +48,7 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
     <td align="center">
       <a href="core_special_relativity/2012_spring_theoretical_minimum/special_relativity_theoretical_minimum.pdf"><img src="figs/readme-covers/special_relativity_theoretical_minimum.png" width="170" alt="Special Relativity cover"></a><br>
       <strong>Special Relativity</strong><br>
-      <sub>2012 Spring Theoretical Minimum (Nano Banana v2 cover)</sub>
+      <sub>2012 Spring Theoretical Minimum</sub>
     </td>
   </tr>
   <tr>
