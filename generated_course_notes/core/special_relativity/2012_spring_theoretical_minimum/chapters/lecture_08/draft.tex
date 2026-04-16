@@ -1,0 +1,286 @@
+\chapter{Electromagnetism, Relativity, and Maxwell's Equations}
+
+We begin here exactly where Susskind begins in the lecture: not with the action principle, but with Einstein's original puzzle about electrodynamics. The same physical effect can be described as magnetic in one frame and electric in another, and that is already a powerful hint that electric and magnetic fields are not separate substances but components of a single relativistic object. Once that point is made concrete, we turn to Maxwell's equations, separate the half that comes for free from the half that is dynamical, and finally rewrite the source-free half in manifestly covariant form.
+
+\section{Einstein's Electrodynamic Puzzle}
+
+Susskind deliberately resets the discussion by going back to the opening paragraph of Einstein's 1905 paper on the electrodynamics of moving bodies. The point is not historical ornament. The point is that relativity was forced on electrodynamics by a very concrete mismatch between description and phenomenon.
+
+Consider a charged particle, or if one prefers Einstein's original language, charges moving in a wire. In one frame there is only a magnetic field, and the charge moves through it. The force is then described by the Lorentz force law
+\begin{equation}
+\vec F = q\,\vec v \times \vec B.
+\end{equation}
+The exact axis labels are not the important thing here. What matters is the structure: the charge moves transverse to a magnetic field, and the resulting force is perpendicular to both.
+
+Now describe what is supposed to be the same laboratory effect from another frame. Keep the charge at rest and instead move the magnet. In that description the moving magnetic configuration produces an electric field, and the force is written as
+\begin{equation}
+\vec F = q\,\vec E.
+\end{equation}
+The observed effect is the same transverse push on the charge. But the bookkeeping has changed completely. In one frame we say, ``a moving charge in a magnetic field.'' In another we say, ``a stationary charge in an electric field.''
+
+Einstein's conclusion, and Susskind's point here, is that the split into electric and magnetic pieces cannot be absolute. The frame has changed, not the phenomenon. Therefore the mathematics must contain a single relativistic object whose decomposition into ``electric'' and ``magnetic'' depends on the observer.
+
+\section{From the Puzzle to the Field Tensor}
+
+The object that carries out this unification is the electromagnetic field tensor. Susskind briefly recalls its definition before doing anything else with Maxwell's equations.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_08_figure_02.png}
+\caption{Definition of the electromagnetic field tensor on the board.}
+\end{figure}
+
+The field tensor is defined by
+\begin{equation}
+F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{equation}
+It is antisymmetric,
+\begin{equation}
+F_{\mu\nu}=-F_{\nu\mu},
+\end{equation}
+so the diagonal entries vanish automatically.
+
+In the cleaned notation appropriate to the lecture, the mixed time-space components are the electric field:
+\begin{equation}
+F_{0n}=E_n, \qquad n=1,2,3.
+\end{equation}
+The purely spatial components encode the magnetic field. With row and column order $(0,x,y,z)$, a standard reconstruction is
+\begin{equation}
+F_{\mu\nu}=
+\begin{pmatrix}
+0 & E_x & E_y & E_z \\
+-E_x & 0 & B_z & -B_y \\
+-E_y & -B_z & 0 & B_x \\
+-E_z & B_y & -B_x & 0
+\end{pmatrix}.
+\end{equation}
+
+This matrix makes the lecture's conceptual point completely visible. Electric fields sit in the time-space slots; magnetic fields sit in the space-space slots. Once a Lorentz transformation mixes time with space, there is no reason for a field that was purely magnetic in one frame to remain purely magnetic in another.
+
+\section{Lorentz Transforming the Electromagnetic Field}
+
+To answer Einstein's puzzle mathematically, we boost along the $x$-direction. The Lorentz matrix is
+\begin{equation}
+L^\mu{}_\nu=
+\begin{pmatrix}
+\gamma & -\gamma v & 0 & 0 \\
+-\gamma v & \gamma & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix},
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\end{equation}
+A rank-two tensor with upper indices transforms as
+\begin{equation}
+F'^{\mu\nu}=L^\mu{}_\sigma L^\nu{}_\tau F^{\sigma\tau}.
+\end{equation}
+
+Now choose the simple field configuration emphasized in the lecture: in the unprimed frame there is no electric field, and the only magnetic component is $B_y$. Then the relevant spatial tensor entry is
+\begin{equation}
+F^{xz}=-B_y,
+\end{equation}
+in the convention we are using. To see whether the moving observer detects an electric field, compute the mixed component $F'^{0z}$:
+\begin{align}
+F'^{0z}
+&=L^0{}_x L^z{}_z F^{xz} \\
+&=(-\gamma v)(1)(-B_y) \\
+&=\gamma v B_y.
+\end{align}
+Because a mixed time-space component is an electric field component, the boosted observer finds a nonzero electric field along the $z$-direction. If one does not want to chase every sign convention on the blackboard, the invariant content is simply
+\begin{equation}
+E'_z \sim \gamma v\,B_y.
+\end{equation}
+
+So the moving frame contains an electric field even though the original frame contained only a magnetic field. That is the answer to Einstein's question. The phenomenon was not ``magnetic'' in one frame and ``electric'' in another in any absolute sense. The phenomenon was electromagnetic, and different observers decomposed the same tensor differently.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} How can a purely magnetic field in one frame become partly electric in another?
+
+\paragraph{Answer.} Because the distinction between electric and magnetic fields is a distinction made only after spacetime has been split into one time direction and three space directions. The tensor $F_{\mu\nu}$ is the invariant object. A boost mixes time with space, so the mixed components and the purely spatial components get reshuffled. What one observer calls ``magnetic'' another observer partly calls ``electric.''
+
+\section{The Maxwell Equations That Come for Free}
+
+Only after this long relativistic arc is completed does Susskind say, in effect, let us now come to Maxwell's equations. He does not derive them from an action principle here. Instead he first isolates the half that follows just from the definitions of $\vec E$ and $\vec B$ in terms of the vector potential.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_08_figure_03.png}
+\caption{From $\vec B=\nabla\times\vec A$ to the electric-field formula.}
+\end{figure}
+
+In the lecture's convention these definitions are
+\begin{equation}
+\vec B=\nabla\times\vec A,
+\end{equation}
+and
+\begin{equation}
+\vec E=\partial_t\vec A-\nabla A_0.
+\end{equation}
+From the three-dimensional point of view, $A_0$ is treated here as a scalar field, so $\nabla A_0$ is an ordinary gradient.
+
+The two vector identities we need are
+\begin{equation}
+\nabla\cdot(\nabla\times\vec A)=0,
+\end{equation}
+for any smooth vector field $\vec A$, and
+\begin{equation}
+\nabla\times(\nabla s)=0,
+\end{equation}
+for any smooth scalar field $s$.
+
+The first homogeneous Maxwell equation is immediate:
+\begin{equation}
+\nabla\cdot\vec B
+=
+\nabla\cdot(\nabla\times\vec A)
+=
+0.
+\end{equation}
+The second takes one more step:
+\begin{align}
+\nabla\times\vec E
+&=\nabla\times(\partial_t\vec A-\nabla A_0) \\
+&=\partial_t(\nabla\times\vec A)-\nabla\times(\nabla A_0) \\
+&=\partial_t\vec B.
+\end{align}
+Therefore
+\begin{equation}
+\nabla\times\vec E-\partial_t\vec B=0.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_08_figure_04.png}
+\caption{The source-free Maxwell equations as a grouped pair.}
+\end{figure}
+
+These are the Maxwell equations that ``come for free'':
+\begin{align}
+\nabla\cdot\vec B &= 0, \\
+\nabla\times\vec E-\partial_t\vec B &= 0.
+\end{align}
+They are not yet dynamics. They are consequences of how $\vec E$ and $\vec B$ are built from the potential.
+
+At the physical level, $\nabla\cdot\vec B=0$ says that ordinary electrodynamics contains no magnetic charge density. There are no magnetic sources from which magnetic field lines simply begin. The second equation says that time-varying magnetic field and the curl of the electric field are tied together by definition once the potential has been introduced.
+
+\section{Charge Density, Current Density, and Local Conservation}
+
+The other half of Maxwell's equations is different. This is the dynamical half:
+\begin{align}
+\nabla\cdot\vec E &= \rho, \\
+\nabla\times\vec B+\partial_t\vec E &= \vec J.
+\end{align}
+There are really eight scalar equations here altogether: two scalar equations and two vector equations, the latter contributing three components each. Vector notation packages them into four lines.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_08_figure_05.png}
+\caption{Maxwell's equations arranged in two board blocks before tensor reformulation.}
+\end{figure}
+
+Now we have to say what the source terms mean. The charge density is exactly what its name suggests:
+\begin{equation}
+\rho=\lim_{\Delta V\to 0}\frac{\Delta q}{\Delta V}.
+\end{equation}
+Take a small spatial cell, look at the charge contained in it at a fixed time, and divide by the cell's volume.
+
+The current density is the corresponding flux through a small window. For a window perpendicular to the $x$-direction, one defines
+\begin{equation}
+J_x=\lim_{\Delta A_{yz}\to 0,\ \Delta t\to 0}
+\frac{\Delta q}{\Delta A_{yz}\,\Delta t}.
+\end{equation}
+This is the charge flowing through a unit area in a unit time, with the area taken perpendicular to the $x$-axis. Likewise $J_y$ and $J_z$ are defined by windows perpendicular to the $y$ and $z$ axes.
+
+Susskind insists on a local version of charge conservation. It is not enough to say that total charge in the universe stays fixed. If charge disappeared in a box here and reappeared instantly at Alpha Centauri, global conservation would still hold, but it would be useless for local physics. The real statement is sharper: charge inside a region can change only by flowing through its boundary.
+
+Take a small box of unit volume. Its charge is then just $\rho$. The inflow through the two faces perpendicular to the $x$-axis contributes $-\partial_x J_x$. The $y$-faces contribute $-\partial_y J_y$, and the $z$-faces contribute $-\partial_z J_z$. Therefore
+\begin{align}
+\partial_t\rho
+&= -\partial_x J_x-\partial_y J_y-\partial_z J_z \\
+&= -\nabla\cdot\vec J.
+\end{align}
+This is the continuity equation,
+\begin{equation}
+\partial_t\rho+\nabla\cdot\vec J=0.
+\end{equation}
+It is the local statement that charge cannot disappear from a region unless it leaves through the walls.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.} Why is the time derivative of $\rho$ here a partial derivative rather than a total derivative?
+
+\paragraph{Answer.} Because the box is fixed in space. We are not moving along with the charges. We keep $x$, $y$, and $z$ fixed and ask how the charge inside that particular box changes as time changes. That is precisely a partial derivative:
+\begin{equation}
+\partial_t\rho=\left(\frac{\partial \rho}{\partial t}\right)_{x,y,z}.
+\end{equation}
+
+\section{Toward Covariant Maxwell Equations}
+
+At this point the ingredients for a relativistic rewriting are finally on the table. The field data already live in the antisymmetric tensor $F_{\mu\nu}$. The sources assemble naturally into a four-vector,
+\begin{equation}
+J^\mu=(\rho,J_x,J_y,J_z).
+\end{equation}
+Then the continuity equation takes the compact form
+\begin{equation}
+\partial_\mu J^\mu=0.
+\end{equation}
+This is the first clear sign that $\rho$ and $\vec J$ do not belong to separate conceptual categories. They are components of one spacetime current.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_08_figure_06.png}
+\caption{Grouped Maxwell equations during the move to tensor language.}
+\end{figure}
+
+Susskind does not finish the whole covariant Maxwell story in this lecture. He begins with the homogeneous equations, the ones that came for free, and asks for a tensor equation that reproduces them all at once. The answer is
+\begin{equation}
+\partial_\sigma F_{\nu\tau}
++\partial_\nu F_{\tau\sigma}
++\partial_\tau F_{\sigma\nu}
+=0.
+\end{equation}
+This is antisymmetric in its index structure and cyclic in the three labels $\sigma,\nu,\tau$.
+
+One check is immediate. If we choose all three indices to be spatial, for example $(\sigma,\nu,\tau)=(x,y,z)$, then we obtain
+\begin{equation}
+\partial_x F_{yz}+\partial_y F_{zx}+\partial_z F_{xy}=0,
+\end{equation}
+which is exactly
+\begin{equation}
+\partial_x B_x+\partial_y B_y+\partial_z B_z=0,
+\end{equation}
+or
+\begin{equation}
+\nabla\cdot\vec B=0.
+\end{equation}
+If we choose one time index and two spatial indices, we recover one component of
+\begin{equation}
+\nabla\times\vec E-\partial_t\vec B=0.
+\end{equation}
+
+There is also a more conceptual check. Since
+\begin{equation}
+F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu,
+\end{equation}
+substituting this into the cyclic expression produces a sum of second derivatives that cancel pairwise. In that sense the covariant equation is nothing but the tensor form of the same ``free'' identities we used earlier in vector notation.
+
+This cyclic equation is a special case of the Bianchi identity. In the present context it expresses, among other things, the absence of magnetic charge density and magnetic current in ordinary electrodynamics. If magnetic monopoles were present, the homogeneous equations would have to be modified. The lecture notes that possibility, but leaves it for later. The sourced covariant Maxwell equation is also left for later; it belongs to the action-principle derivation in the next lecture.
+
+\section{Summary}
+
+The lecture begins by recovering Einstein's original electrodynamic puzzle: the same effect looks magnetic in one frame and electric in another. The field tensor resolves that puzzle because electric and magnetic fields are merely different components of a single antisymmetric spacetime tensor. A Lorentz boost mixes those components and can turn a purely magnetic configuration into one with a nonzero electric field.
+
+Only after that does Susskind turn to Maxwell's equations. The homogeneous pair follows directly from the definitions of $\vec E$ and $\vec B$ in terms of the potential and the basic identities of vector calculus. The sourced pair introduces charge density and current density, and from their local meaning one obtains the continuity equation
+\begin{equation}
+\partial_t\rho+\nabla\cdot\vec J=0.
+\end{equation}
+Finally, the source-free Maxwell equations are rewritten covariantly as
+\begin{equation}
+\partial_\sigma F_{\nu\tau}
++\partial_\nu F_{\tau\sigma}
++\partial_\tau F_{\sigma\nu}
+=0,
+\end{equation}
+the electromagnetic Bianchi identity. That is where this lecture stops: the kinematic half of Maxwell theory has been put into relativistic form, while the dynamical half is deferred to the next step.
