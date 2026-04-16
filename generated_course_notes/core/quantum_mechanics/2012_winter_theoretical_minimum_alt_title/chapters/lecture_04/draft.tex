@@ -1,0 +1,353 @@
+\chapter{The Theoretical Minimum}
+
+We begin where the lecture begins: by setting the spin system aside for a moment and rewriting the postulates that have already appeared. That reset is important. The point is not to pile up axioms, but to place the next question in its proper order. First we recall how measurement is encoded in the formalism. Then we ask the classical question in its quantum form: once a state has been specified, how does it evolve in time? The answer leads to unitary evolution, an infinitesimal generator \(H\), the generalized time-dependent Schr\"odinger equation, and finally to the evolution of averages, where the first real bridge to classical mechanics begins to show itself.
+
+\section{Recalling the Postulates of Measurement}
+
+Susskind begins by reminding us that the postulates are not all independent, but that it is still clearer to write them one at a time. In the language of the lecture, the first cluster of principles is this:
+\begin{enumerate}
+\item Observables are represented by Hermitian operators. For the moment we denote a generic observable by \(L\).
+\item The eigenvalues of \(L\) are the possible outcomes of a measurement of \(L\).
+\item Physically distinguishable states are represented by orthogonal vectors.
+\item Probabilities are determined by Born's rule.
+\end{enumerate}
+
+There is also an explicit statement that the result of an experiment is a real number. If an apparatus seemed to return a complex number, that would really mean that two independent quantities had been measured. Thus the eigenvalues of an observable must be real.
+
+The lecture then leans on the basic mathematical theorem about Hermitian operators.
+
+\begin{theorem}[Fundamental theorem used in this lecture]
+If \(L\) is Hermitian, its eigenvectors may be chosen to form an orthonormal basis. Eigenvectors with distinct eigenvalues are orthogonal, and even within a degenerate eigenspace one may choose orthogonal eigenvectors.
+\end{theorem}
+
+This theorem is the mathematical reason that the language of measurement works as it should: real eigenvalues for outcomes, and orthogonal eigenvectors for distinguishable alternatives.
+
+\section{Distinguishability, Orthogonality, and Born's Rule}
+
+The lecture does not define physical distinguishability abstractly. Instead it asks what it would mean operationally. Suppose someone prepares a spin either up or down and hands it to us. Then there is an unambiguous experiment: measure the \(z\)-component of spin. The two preparations are distinguishable. The same is true for left and right if we measure along the \(x\)-axis.
+
+But now suppose the preparation is either up or right. No matter how cleverly we orient the apparatus, we do not get an experiment whose outcome uniquely identifies the preparation. That is the point of departure for the postulate that physically distinguishable states correspond to orthogonal vectors.
+
+\begin{definition}
+Two states are \emph{physically distinguishable} if there exists an experiment, or a set of experiments, that can unambiguously determine which preparation was given.
+\end{definition}
+
+\subsection{Question \& Answer}
+
+The lecture naturally pauses here.
+
+\paragraph{Question.} Can an experiment unambiguously distinguish a spin prepared up from one prepared right?
+
+\paragraph{Answer.} No. If we measure along the \(z\)-axis, an up state gives \(+1\) with certainty, but a right state also has a nonzero probability of giving \(+1\). Measuring along the \(x\)-axis merely reverses the asymmetry. The difficulty is not that we chose the wrong axis. The difficulty is that the two preparations are not perfectly distinguishable. In the vector-space language, they are not orthogonal.
+
+That brings us to the probability principle. If the system is prepared in a normalized state \(|A\rangle\), and if \(|\lambda\rangle\) is a normalized eigenvector of \(L\) with eigenvalue \(\lambda\), then
+\begin{equation}
+P(\lambda)=|\langle \lambda|A\rangle|^2.
+\end{equation}
+The overlap \(\langle \lambda|A\rangle\) is the probability amplitude. It is not itself a probability, because in a complex vector space it need not even be real. But its absolute square is real and nonnegative, and so it is a legitimate candidate for a probability.
+
+We may also state the eigenvalue equation itself:
+\begin{equation}
+L|\lambda\rangle=\lambda|\lambda\rangle.
+\end{equation}
+
+The lecture is deliberately loose about notation here. The symbol \(\lambda\) labels both the eigenvalue and the corresponding eigenvector \(|\lambda\rangle\). That abuse of notation is worth keeping, because it is exactly the sort of shorthand the lecture uses in real time.
+
+\section{Degeneracy and Orthonormal Bases}
+
+A student immediately asks the right question: what if the same eigenvalue corresponds to more than one eigenvector? The lecture answers this in two stages. First, it observes that if
+\begin{align}
+L|\lambda_1\rangle &= \lambda |\lambda_1\rangle,\\
+L|\lambda_2\rangle &= \lambda |\lambda_2\rangle,
+\end{align}
+then any linear combination is again an eigenvector with the same eigenvalue:
+\begin{equation}
+L\bigl(\alpha|\lambda_1\rangle+\beta|\lambda_2\rangle\bigr)
+=
+\lambda\bigl(\alpha|\lambda_1\rangle+\beta|\lambda_2\rangle\bigr).
+\end{equation}
+So within a degenerate eigenspace we have freedom. In particular, we may choose an orthogonal basis inside that eigenspace.
+
+Once that is done, the probability rule is simple. If several orthogonal eigenvectors correspond to the same numerical value \(\lambda\), then the probability for measuring that value is the sum of the probabilities for the individual orthogonal channels:
+\begin{equation}
+P(\lambda)=\sum_a |\langle \lambda,a|A\rangle|^2.
+\end{equation}
+The extra label \(a\) is not the lecture's notation, but it is the cleanest way to write the rule the lecture states verbally: square each overlap and add.
+
+\section{Time Evolution and the Unitary Operator}
+
+Only after the measurement postulates are back in place does the lecture turn to dynamics. The transition is explicitly classical in spirit. In classical mechanics, once we know the space of possible states, the next question is how a state changes with time. The same question must now be asked in quantum mechanics.
+
+The postulate is that a state at time \(t\) is obtained from the state at time \(0\) by the action of a linear operator \(U(t)\), the same operator for every initial state:
+\begin{align}
+|\Psi(t)\rangle &= U(t)|\Psi(0)\rangle,\\
+|\Phi(t)\rangle &= U(t)|\Phi(0)\rangle.
+\end{align}
+The lecture emphasizes two points. First, \(U(t)\) is linear. Second, it is state-independent: we do not choose a different time-development operator for different states.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_02.png}
+\caption{Time evolution under a common \(U(t)\) preserves orthogonality.}
+\end{figure}
+
+The next physical requirement is reversibility, or information conservation. Distinguishable states must remain distinguishable under time evolution. Thus, if
+\begin{equation}
+\langle \Psi(0)|\Phi(0)\rangle=0,
+\end{equation}
+then
+\begin{equation}
+\langle \Psi(t)|\Phi(t)\rangle=0.
+\end{equation}
+The lecture then points out that this implies a stronger statement: not only orthogonality, but every inner product, is preserved. In other words,
+\begin{equation}
+\langle \Psi(t)|\Phi(t)\rangle=\langle \Psi(0)|\Phi(0)\rangle
+\end{equation}
+for arbitrary pairs of states.
+
+\subsection{Question \& Answer}
+
+At this point the lecture needs a bra-vector version of time evolution.
+
+\paragraph{Question.} Why does the bra version of the time-evolution law involve \(U^\dagger(t)\) rather than \(U(t)\)?
+
+\paragraph{Answer.} Because bras are the Hermitian conjugates of kets. If
+\[
+|\Psi(t)\rangle=U(t)|\Psi(0)\rangle,
+\]
+then taking the Hermitian conjugate gives
+\begin{equation}
+\langle \Psi(t)|=\langle \Psi(0)|U^\dagger(t).
+\end{equation}
+The lecture later makes the same point again for the Schr\"odinger equation: the derivative of a bra is a bra, just as the derivative of a ket is a ket. One is only taking the limit of differences of vectors.
+
+Now substitute both bra and ket evolutions into the overlap:
+\begin{equation}
+\langle \Psi(t)|\Phi(t)\rangle
+=
+\langle \Psi(0)|U^\dagger(t)U(t)|\Phi(0)\rangle.
+\end{equation}
+If this is to equal \(\langle \Psi(0)|\Phi(0)\rangle\) for all pairs of states, then the operator in the middle must be the identity:
+\begin{equation}
+U^\dagger(t)U(t)=I.
+\end{equation}
+That is the condition of unitarity.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{lecture_04_figure_03.png}
+\caption{Unitarity and the infinitesimal evolution operator.}
+\end{figure}
+
+Thus \(U(t)\) is not merely linear. It is unitary, and therefore
+\begin{equation}
+U^\dagger(t)=U^{-1}(t).
+\end{equation}
+
+\section{Infinitesimal Evolution and the Schr\"odinger Equation}
+
+The lecture now narrows to very small time intervals. If \(\epsilon\) is a tiny increment of time, then \(U(\epsilon)\) must be very close to the identity. Susskind chooses to write
+\begin{equation}
+U(\epsilon)=I-i\epsilon H,
+\end{equation}
+understanding that terms of order \(\epsilon^2\) and higher are being dropped. The minus sign and the factor of \(i\) have no content yet; they are absorbed into the definition of \(H\).
+
+Taking the Hermitian conjugate gives
+\begin{equation}
+U^\dagger(\epsilon)=I+i\epsilon H^\dagger.
+\end{equation}
+Now impose unitarity:
+\begin{align}
+I
+&=
+U^\dagger(\epsilon)U(\epsilon) \\
+&=
+\bigl(I+i\epsilon H^\dagger\bigr)\bigl(I-i\epsilon H\bigr) \\
+&=
+I+i\epsilon(H^\dagger-H)
+\end{align}
+to first order in \(\epsilon\). The identity terms cancel, and we conclude that
+\begin{equation}
+H^\dagger=H.
+\end{equation}
+So the infinitesimal generator of time evolution must itself be Hermitian.
+
+The lecture then gives the operator a name. It is \(H\) for Hamiltonian, not \(H\) for Hermitian. At this stage that name is partly anticipatory, but it is not arbitrary. The role of \(H\) in quantum dynamics is precisely analogous to the role of the Hamiltonian in classical dynamics.
+
+With that understood, the infinitesimal state update reads
+\begin{equation}
+|\Psi(\epsilon)\rangle=(I-iH\epsilon)|\Psi(0)\rangle.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_04.png}
+\caption{From infinitesimal evolution to a difference quotient.}
+\end{figure}
+
+Rearranging gives
+\begin{equation}
+|\Psi(\epsilon)\rangle-|\Psi(0)\rangle=-i\epsilon H|\Psi(0)\rangle.
+\end{equation}
+Dividing by \(\epsilon\), we obtain
+\begin{equation}
+\frac{1}{\epsilon}\bigl(|\Psi(\epsilon)\rangle-|\Psi(0)\rangle\bigr)=-iH|\Psi(0)\rangle.
+\end{equation}
+Now the left-hand side is exactly the difference quotient that becomes the time derivative in the limit. Since the starting time need not literally be zero, we arrive at the general equation
+\begin{equation}
+\frac{d}{dt}|\Psi(t)\rangle=-iH|\Psi(t)\rangle.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_05.png}
+\caption{The boxed time-dependent Schr\"odinger equation on the board.}
+\end{figure}
+
+This is the generalized time-dependent Schr\"odinger equation in units where \(\hbar=1\). Later in the lecture Susskind restores the dimensions and reminds us that \(H\) has units of energy. Then the equation becomes
+\begin{equation}
+i\hbar\,\frac{d}{dt}|\Psi(t)\rangle=H|\Psi(t)\rangle.
+\end{equation}
+
+The lecture also pauses to discuss the possibility that \(H\) might depend explicitly on time. If the parameters of the system are themselves changing in time, then \(H\) can be time dependent. When \(H\) has no explicit time dependence, we are in the time-translation-invariant case.
+
+\subsection{Question \& Answer}
+
+The lecture does not let us forget a possible confusion.
+
+\paragraph{Question.} How can this unitary evolution be right if measurements seem to scramble states, for example when we measure a spin along a different axis?
+
+\paragraph{Answer.} Because the Schr\"odinger equation derived here is the law for an isolated system. A measurement is not an isolated evolution; it is an interaction between the system and an apparatus. In quantum mechanics one is not allowed to disturb the system strongly and then ignore the degrees of freedom that did the disturbing. If the apparatus matters, it must be included as part of a larger system. The lecture therefore postpones the real measurement problem until entanglement has been introduced.
+
+\section{Expectation Values}
+
+To compare quantum mechanics with classical mechanics, the lecture next introduces the expectation value of an observable. The terminology is immediately criticized. It is a bad name. The expectation value is really an average value, and averages need not coincide with the most likely outcome. A coin that only takes the values \(+1\) and \(-1\) can have average \(0\), even though \(0\) is never observed.
+
+If the possible outcomes are \(\lambda_i\) and their probabilities are \(P(\lambda_i)\), then the average is defined by
+\begin{equation}
+\bar{\lambda}=\sum_i \lambda_i P(\lambda_i).
+\end{equation}
+Now expand the state in the orthonormal eigenbasis of \(L\):
+\begin{equation}
+|A\rangle=\sum_i \alpha_i |\lambda_i\rangle.
+\end{equation}
+Born's rule gives
+\begin{equation}
+P(\lambda_i)=|\alpha_i|^2=\alpha_i^*\alpha_i.
+\end{equation}
+Therefore
+\begin{equation}
+\bar{\lambda}=\sum_i \lambda_i |\alpha_i|^2.
+\end{equation}
+
+The lecture then proves that this can be written as a sandwich of the operator between the bra and ket of the state.
+
+\begin{proof}
+Write
+\begin{equation}
+\langle A|=\sum_j \alpha_j^* \langle \lambda_j|.
+\end{equation}
+Then
+\begin{align}
+\langle A|L|A\rangle
+&=
+\sum_{i,j}\alpha_j^*\alpha_i \langle \lambda_j|L|\lambda_i\rangle \\
+&=
+\sum_{i,j}\alpha_j^*\alpha_i \lambda_i \langle \lambda_j|\lambda_i\rangle \\
+&=
+\sum_i \lambda_i |\alpha_i|^2,
+\end{align}
+because \(\langle \lambda_j|\lambda_i\rangle=\delta_{ji}\). Thus
+\begin{equation}
+\bar{\lambda}=\langle A|L|A\rangle.
+\end{equation}
+\end{proof}
+
+So if we want the average value of an observable \(L\), we simply write
+\begin{equation}
+\langle L\rangle=\langle \psi|L|\psi\rangle.
+\end{equation}
+The lecture also toys with the notation \(\bar L(t)\), but the bra-ket notation is the one that carries the structure most transparently.
+
+\section{The Evolution of Averages, Poisson Brackets, and Energy}
+
+Now that state-vector dynamics and expectation values are both on the table, the lecture asks how averages evolve in time. At time \(t\),
+\begin{equation}
+\langle L\rangle_t=\langle \psi(t)|L|\psi(t)\rangle.
+\end{equation}
+The operator \(L\) is fixed; the time dependence lies in the state vectors. Differentiate:
+\begin{align}
+\frac{d}{dt}\langle L\rangle_t
+&=
+\left(\frac{d}{dt}\langle \psi|\right)L|\psi\rangle
++
+\langle \psi|L\left(\frac{d}{dt}|\psi\rangle\right).
+\end{align}
+In units where \(\hbar=1\), the ket equation is
+\begin{equation}
+\frac{d}{dt}|\psi\rangle=-iH|\psi\rangle,
+\end{equation}
+and the bra equation is
+\begin{equation}
+\frac{d}{dt}\langle \psi|=i\langle \psi|H.
+\end{equation}
+Substituting both, we find
+\begin{align}
+\frac{d}{dt}\langle L\rangle_t
+&=
+i\langle \psi|HL|\psi\rangle
+-
+i\langle \psi|LH|\psi\rangle \\
+&=
+i\langle \psi|(HL-LH)|\psi\rangle.
+\end{align}
+This introduces the commutator,
+\begin{equation}
+[H,L]=HL-LH,
+\end{equation}
+and the result becomes
+\begin{equation}
+\frac{d}{dt}\langle L\rangle_t=i\langle [H,L]\rangle.
+\end{equation}
+Restoring \(\hbar\), this is
+\begin{equation}
+\frac{d}{dt}\langle L\rangle_t=\frac{i}{\hbar}\langle [H,L]\rangle.
+\end{equation}
+
+The lecture then compares this with the classical equation of motion written in terms of Poisson brackets:
+\begin{equation}
+\frac{dL}{dt}=\{L,H\}_{\mathrm{PB}}.
+\end{equation}
+At this point the comparison is deliberately formal. The lecture is not deriving quantum mechanics from classical mechanics. Quite the reverse: it insists that quantum mechanics is more fundamental and that classical mechanics must emerge from it. Still, the similarity is too striking to ignore. Both Poisson brackets and commutators are antisymmetric:
+\begin{align}
+\{L,H\}_{\mathrm{PB}}&=-\{H,L\}_{\mathrm{PB}},\\
+[L,H]&=-[H,L].
+\end{align}
+And both satisfy the same product rule pattern:
+\begin{align}
+\{LM,H\}_{\mathrm{PB}}&=\{L,H\}_{\mathrm{PB}}\,M+L\,\{M,H\}_{\mathrm{PB}},\\
+[LM,H]&=L[M,H]+[L,H]M.
+\end{align}
+This leads to the tentative correspondence
+\begin{equation}
+[A,B]\approx i\hbar\,\{A,B\}_{\mathrm{PB}}.
+\end{equation}
+The lecture presents this as a clue, not as a foundation.
+
+Finally, it applies the expectation-value equation to the Hamiltonian itself. Setting \(L=H\), we get
+\begin{equation}
+\frac{d}{dt}\langle H\rangle=\frac{i}{\hbar}\langle [H,H]\rangle.
+\end{equation}
+But an operator commutes with itself, so \([H,H]=0\). Therefore
+\begin{equation}
+\frac{d}{dt}\langle H\rangle=0.
+\end{equation}
+This is the sense in which energy is shown to be conserved here: the average energy is conserved. The lecture explicitly warns that this is not yet the deepest statement one might want. It is the first one available from the machinery already built.
+
+The lecture also reminds us that if \(H\) depends explicitly on time, then this conservation law is spoiled, exactly as in classical mechanics.
+
+We end where the lecture ends: with a refusal to pretend that the problem of measurement has been solved. Between measurements the state evolves unitarily. During measurement something else must be understood, and that understanding will come only after entanglement enters the story.
+
+\section{Summary}
+
+The lecture rebuilds quantum mechanics in the order that makes the subject intelligible. First come observables, eigenvalues, orthogonality, and Born's rule. Then comes dynamics: the same linear operator \(U(t)\) acts on every state, reversibility forces it to be unitary, infinitesimal evolution introduces a Hermitian generator \(H\), and the limit of small time steps yields the generalized Schr\"odinger equation. Only after that do we ask how observable averages evolve, and here the Hamiltonian begins to resemble the Hamiltonian of classical mechanics through commutators, Poisson brackets, and the conservation of average energy. Collapse, however, is not part of this chapter's payoff. It has been deferred, just as in the lecture, until the physics of entanglement is available.
