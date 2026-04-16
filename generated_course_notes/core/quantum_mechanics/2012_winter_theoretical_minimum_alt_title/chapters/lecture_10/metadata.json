@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/133 - Lecture 10 \uff5c The Theoretical Minimum [dYtyslPtK8Y].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/133 - Lecture 10 \uff5c The Theoretical Minimum [dYtyslPtK8Y].mkv",
+  "lecture_number": 10,
+  "lecture_slug": "lecture_10",
+  "lecture_title": "Lecture 10 : The Theoretical Minimum",
+  "assets": [
+    {
+      "name": "lecture_10_figure_02.png",
+      "timestamp_seconds": 1245.994,
+      "timestamp_hhmmss": "00:20:45.994",
+      "source_candidate": "lecture_10_window_02_candidate_04_002045994.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the most useful frame because the upper line has progressed the furthest, showing the variance expression beginning with $(\\Delta x)^2 =$ and an integral, while the lower line still preserves the clearer supporting integrand with $\\psi^*(x)\\psi(x)x^2$. The lecturer still occludes part of the board, but this frame gives the most finished mathematical state of the four.",
+      "subtitle_excerpt": "is equal to the integral of psi star psi",
+      "segment_start_seconds": 1243.6,
+      "segment_start_hhmmss": "00:20:43.600",
+      "segment_end_seconds": 1246.32,
+      "segment_end_hhmmss": "00:20:46.320",
+      "caption_hint": "Position uncertainty written in terms of an integral"
+    },
+    {
+      "name": "lecture_10_figure_03.png",
+      "timestamp_seconds": 2343.893,
+      "timestamp_hhmmss": "00:39:03.893",
+      "source_candidate": "lecture_10_window_03_candidate_04_003903893.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the best frame because it preserves the full board layout while showing the most advanced state of the new lower-line derivation. The upper position-variance formula and its bra-ket form are already legible, the momentum-variance line is visible, and the right-hand inequality remains clear. The later frame is therefore the most useful documentary snapshot for note writing.",
+      "subtitle_excerpt": "equal to integral d psi star",
+      "segment_start_seconds": 2340.98,
+      "segment_start_hhmmss": "00:39:00.980",
+      "segment_end_seconds": 2344.29,
+      "segment_end_hhmmss": "00:39:04.290",
+      "caption_hint": "Variance formulas beside the Cauchy-Schwarz inequality"
+    },
+    {
+      "name": "lecture_10_figure_04.png",
+      "timestamp_seconds": 2693.58,
+      "timestamp_hhmmss": "00:44:53.580",
+      "source_candidate": "lecture_10_window_04_candidate_03_004453580.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 03 gives the clearest balance of usable board content and minimal occlusion. The definitions of the auxiliary states on the center board are more legible than in the earlier frames, while the integral on the right remains clearly visible. It best captures the lecture's layout at the moment where Susskind explains the derivative term inside the integral.",
+      "subtitle_excerpt": "It's one half the derivative of the square of psi.",
+      "segment_start_seconds": 2691.24,
+      "segment_start_hhmmss": "00:44:51.240",
+      "segment_end_seconds": 2694.84,
+      "segment_end_hhmmss": "00:44:54.840",
+      "caption_hint": "Choice of A and B for the uncertainty proof"
+    },
+    {
+      "name": "lecture_10_figure_05.png",
+      "timestamp_seconds": 3051.05,
+      "timestamp_hhmmss": "00:50:51.050",
+      "source_candidate": "lecture_10_window_05_candidate_03_005051050.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 03 gives the clearest overall view of the boxed uncertainty relation while still preserving the surrounding board context. The inequality is centered and legible, the auxiliary-state definitions above remain visible, and the derivative-integral expression on the right is still present. It is the most useful frame for documenting the point where the integration-by-parts argument has produced the uncertainty bound.",
+      "subtitle_excerpt": "but the integral of a derivative",
+      "segment_start_seconds": 3049.88,
+      "segment_start_hhmmss": "00:50:49.880",
+      "segment_end_seconds": 3051.68,
+      "segment_end_hhmmss": "00:50:51.680",
+      "caption_hint": "Boxed uncertainty bound after the derivative integral step"
+    },
+    {
+      "name": "lecture_10_figure_06.png",
+      "timestamp_seconds": 3539.664,
+      "timestamp_hhmmss": "00:58:59.664",
+      "source_candidate": "lecture_10_window_06_candidate_04_005859664.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the best frame because the equation has progressed the furthest: the right-hand side now clearly begins with H acting on a ket, while the left-hand side still shows the time-derivative-over-t structure. Earlier candidates are noticeably emptier and capture only the start of the right-hand side.",
+      "subtitle_excerpt": "is governed by the Hamiltonian acting on psi",
+      "segment_start_seconds": 3537.2,
+      "segment_start_hhmmss": "00:58:57.200",
+      "segment_end_seconds": 3540.0,
+      "segment_end_hhmmss": "00:59:00.000",
+      "caption_hint": "Hamiltonian acting on the state vector"
+    }
+  ]
+}
