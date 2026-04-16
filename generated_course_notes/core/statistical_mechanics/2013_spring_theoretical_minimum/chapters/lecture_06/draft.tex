@@ -1,0 +1,286 @@
+\chapter{Weakly Interacting Gases and Inexact Differentials}
+
+These notes follow Leonard Susskind's lecture closely and keep its two large motions: first the operational question of what it means to measure temperature, and then the first correction to the ideal-gas law when weak forces are turned on. In this LazyingArt LLC and Video2Book companion draft we preserve that order on purpose, because the later mathematics is motivated by the earlier insistence that thermodynamic words are meaningful only under controlled conditions.
+
+\section{Measurement, Calibration, and Local Linearity}
+
+No instrument directly reports the abstract quantity we name. A spring balance does not literally measure force; it measures the extension of a spring. A thermometer does not literally measure temperature; it measures the height of a column, or some other proxy quantity. What makes either device useful is not an identity but a controlled regime in which the response is smooth and approximately linear.
+
+If the readout variable is \(\ell\) for the spring balance and \(h\) for the thermometer, the operational content is only that over a sufficiently small interval we may write
+\begin{equation}
+\delta \ell \propto \delta F,
+\qquad
+\delta h \propto \delta T.
+\end{equation}
+Outside that interval the proportionality can fail, sometimes mildly and sometimes catastrophically. Pull too hard and the spring does not merely stop being linear; it stops being a spring balance.
+
+The thermometer is the same story in thermodynamic dress. The height of the mercury column may depend a little on other things: orientation, gravity, very slow aging, perhaps the detailed construction of the device. In practice one either neglects those effects or folds them into the protocol of use. We hold the thermometer the right way, calibrate it under standard conditions, and then trust it only over a range where the graph of column height against the intended temperature looks close to a straight line.
+
+This is also why the zero of an ordinary temperature scale is conventional. One may mark the freezing point of water as \(0\), the boiling point as \(100\), divide the interval into equal steps, and obtain a very useful thermometer. But one has not thereby discovered absolute zero. One has built a locally linear scale from two convenient fixed points.
+
+\section{Equilibrium and Temperature as an Energy Scale}
+
+The lecture then tightens the operational story with the word that really matters: equilibrium. A thermometer measures the temperature of its environment only after it has had time to equilibrate with that environment. Before that, it is merely reporting its own transient state.
+
+This immediately explains several student questions. If the density of the gas is very low, the temperature may still be high, because temperature is tied to molecular kinetic energy, not to how many molecules happen to be present. But a thermometer in such a dilute gas will equilibrate slowly, simply because few molecules strike it. Likewise, the radiation field in a room need not be in thermal equilibrium with the air. If matter and radiation are not equilibrated, one should not speak as if there were a single temperature governing both.
+
+The conceptual payoff is that temperature is best thought of as an energy scale. Later, in the ideal gas, that statement becomes quantitative:
+\begin{equation}
+E_{\mathrm{ideal}}=\frac{3}{2}NT.
+\end{equation}
+In these units \(T\) already carries the dimensions of energy. At fixed temperature, the average kinetic energy per particle is set by \(T\), not by the particle's mass. A heavy particle moves more slowly, not because it gets less thermal energy, but because the same energy is stored in a larger mass.
+
+\section{From the Ideal Gas to a Weakly Interacting Gas}
+
+The lecture's main calculation begins when a student asks the right question: when does the ideal gas approximation break down, and can one see that mathematically? The strategy is the natural one. We begin with a solved problem, the noninteracting gas, and then take a small step away from it. Weak interactions are tractable precisely because they let us expand around the ideal gas.
+
+We therefore write the energy of a configuration as kinetic energy plus pairwise potential energy:
+\begin{equation}
+E=\sum_{n=1}^{N}\frac{p_n^2}{2m}+\sum_{n>m}U\!\left(|x_n-x_m|\right).
+\end{equation}
+Here \(x_n\) and \(p_n\) are the position and momentum of the \(n\)-th molecule, and \(p_n^2\) means the sum of the squares of its three momentum components. The board writes the kinetic term schematically; in the cleaned notes we restore the particle index and use a consistent mass \(m\).
+
+The notation \(n>m\) carries two jobs at once. It excludes the meaningless self-pair \(n=m\), and it avoids counting the same pair twice. The pair \((3,7)\) is the same physical pair as \((7,3)\), so only one of them belongs in the sum.
+
+It is convenient to package the total potential energy into a single configuration-space function
+\begin{equation}
+U(X)=\sum_{n>m}U\!\left(|x_n-x_m|\right),
+\qquad
+dx=\prod_{i=1}^{N}d^3x_i,
+\qquad
+dp=\prod_{i=1}^{N}d^3p_i.
+\end{equation}
+Then the partition function takes the cleaned form
+\begin{equation}
+Z=\frac{1}{N!}\int dp\,dx\,
+e^{-\beta\sum_{n=1}^{N}p_n^2/(2m)}\,e^{-\beta U(X)},
+\qquad \beta=\frac{1}{T}.
+\end{equation}
+On the board only the beginning of this expression is visible below the energy formula; the extra potential factor is the transcript-supported completion of what the lecture is setting up.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_06_figure_04.png}
+\caption{Total energy split into kinetic and pair-potential terms, with the partition function begun below.}
+\end{figure}
+
+At this stage Susskind pauses to identify the one interaction parameter that will matter at first order. Because the potential depends only on separation, we define
+\begin{equation}
+U_0=\int d^3r\,U(r).
+\end{equation}
+Its units are energy times volume. It measures both how strong the interaction is and over how much volume it acts.
+
+For the two-particle integral that will appear later, the lecture uses
+\begin{equation}
+\int d^3x_1\,d^3x_2\,U\!\left(|x_1-x_2|\right)=V\,U_0,
+\end{equation}
+which is exactly the scaling one expects for a short-range interaction in a large box.
+
+\subsection{Question \& Answer}
+
+Why does the two-particle integral scale like \(V U_0\) rather than \(V^2\)?
+
+The point is that only one integration produces a factor of the full container volume. If we hold particle \(1\) fixed and integrate particle \(2\) over all space, the potential contributes only when particle \(2\) lies within the interaction range. That integral is therefore not of order the whole box; it is of order the interaction volume times the typical strength of the potential, which is exactly what \(U_0\) encodes. After that, we may move the first particle through the whole container, and that second step produces the factor of \(V\).
+
+Boundary corrections do exist. A particle near the wall cannot have its partner distributed in a full interaction sphere around it. But the fraction of particles that feel this defect is a surface-to-volume effect. For a macroscopic box, that correction is negligible compared with the bulk term \(V U_0\).
+
+\section{The Partition Function on Autopilot}
+
+Once the setup is right, the lecture deliberately shifts into what Susskind calls autopilot. We write the partition function, factor it, expand in the small quantity, and only later come back to ask whether the answer makes sense.
+
+The momentum and position integrals separate immediately:
+\begin{align}
+Z
+&=\frac{1}{N!}\int dp\,e^{-\beta\sum_n p_n^2/(2m)}
+\int dx\,e^{-\beta U(X)}.
+\end{align}
+For the momentum part we simply reuse the Gaussian integral from the ideal gas:
+\begin{equation}
+\int dp\,e^{-\beta\sum_n p_n^2/(2m)}
+=\left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+\end{equation}
+On the board this factor is written as a square root raised to the power \(3N\); the cleaned form above is the same statement with the square root absorbed into the exponent.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_06_figure_05.png}
+\caption{Recalled ingredients for the factorized partition function: the pair-potential integral and the Gaussian momentum factor.}
+\end{figure}
+
+Now multiply and divide the position factor by \(V^N\). This isolates the ideal-gas partition function,
+\begin{equation}
+Z_0=\frac{V^N}{N!}\left(\frac{2\pi m}{\beta}\right)^{3N/2},
+\end{equation}
+and leaves only the interaction correction:
+\begin{equation}
+Z=Z_0\left[\frac{1}{V^N}\int dx\,e^{-\beta U(X)}\right].
+\end{equation}
+Because the interaction is weak, we expand
+\begin{equation}
+e^{-\beta U(X)}\approx 1-\beta U(X).
+\end{equation}
+The first nontrivial step is then
+\begin{align}
+\frac{1}{V^N}\int dx\,e^{-\beta U(X)}
+&\approx \frac{1}{V^N}\int dx\left[1-\beta\sum_{n>m}U\!\left(|x_n-x_m|\right)\right] \\
+&=1-\frac{\beta}{V^N}\sum_{n>m}\int dx\,U\!\left(|x_n-x_m|\right).
+\end{align}
+Every pair contributes the same integral, so the sum over pairs becomes a combinatorial factor:
+\begin{equation}
+\sum_{n>m}1=\binom{N}{2}=\frac{N(N-1)}{2}\approx \frac{N^2}{2}.
+\end{equation}
+For one chosen pair, say \((1,2)\), the other \(N-2\) coordinates are spectators and give \(V^{N-2}\). The remaining pair integral gives \(V U_0\). Therefore
+\begin{align}
+\frac{1}{V^N}\int dx\,e^{-\beta U(X)}
+&\approx 1-\beta\,\frac{N(N-1)}{2}\,\frac{V^{N-2}(V U_0)}{V^N} \\
+&=1-\beta\,\frac{N(N-1)}{2V}\,U_0 \\
+&\approx 1-\beta\,\frac{N^2}{2V}\,U_0.
+\end{align}
+Taking the logarithm and keeping only first order in \(U_0\),
+\begin{equation}
+\log Z\approx \log Z_0-\beta\,\frac{N^2}{2V}\,U_0.
+\end{equation}
+
+From here the thermodynamic quantities follow mechanically. The energy is
+\begin{equation}
+E=-\frac{\partial \log Z}{\partial \beta}
+\approx \frac{3}{2}NT+\frac{N^2}{2V}U_0
+= N\left(\frac{3}{2}T+\frac{1}{2}\rho U_0\right),
+\qquad \rho=\frac{N}{V}.
+\end{equation}
+The pressure comes from
+\begin{equation}
+P=T\left(\frac{\partial \log Z}{\partial V}\right)_T,
+\end{equation}
+so the corrected equation of state becomes
+\begin{equation}
+P\approx \rho T+\frac{1}{2}\rho^2U_0.
+\end{equation}
+
+\subsection{Question \& Answer}
+
+Are we losing something essential by keeping only pair interactions?
+
+We are certainly making an approximation, but in the dilute-gas regime it is the right first approximation. Genuine three-body forces may exist, and even when the microscopic forces are only pairwise, higher-order terms in the expansion probe situations in which three or more particles are close together at once. Those contributions are suppressed by extra powers of the density. The lecture is careful not to pretend that the next term has been cleanly derived on the spot; the stable point is only that pair terms dominate the first correction and triplets are rarer by one more power of dilution.
+
+\section{Interpreting the Correction}
+
+The algebra is simple enough, but the lecture does not leave it as algebra. The first sanity check is the density dependence. The ideal-gas pressure term is proportional to \(\rho\) because it only asks whether a particle is present. The interaction correction is proportional to \(\rho^2\) because it asks for two particles to come near one another. Pair physics should come with one extra power of density, and it does.
+
+The second sanity check is the sign. If \(U_0>0\), the interaction is net repulsive, so bringing molecules closer together costs energy and raises the pressure:
+\begin{equation}
+U_0>0 \quad \Longrightarrow \quad P>\rho T.
+\end{equation}
+If \(U_0<0\), the interaction is net attractive, so the correction lowers the pressure:
+\begin{equation}
+U_0<0 \quad \Longrightarrow \quad P<\rho T.
+\end{equation}
+This is exactly what one would guess physically. Real molecular potentials typically have a strong short-range repulsive core and a weaker attractive tail, and the sign of \(U_0\) measures the balance after integrating over separation. Determining the actual function \(U(r)\) is not a problem in statistical mechanics; it belongs to molecular and atomic physics. Statistical mechanics takes that input and tells us how it appears in bulk observables.
+
+The criterion for the ideal gas to be reliable is equally transparent. The correction to the pressure must be small compared with the leading term:
+\begin{equation}
+\rho^2 U_0 \ll \rho T
+\qquad \Longleftrightarrow \qquad
+\rho U_0 \ll T.
+\end{equation}
+Since \(U_0\) has units of energy times volume, the quantity \(\rho U_0\) has units of energy. It is the potential energy per particle. Thus the ideal gas works when the potential energy per particle is much smaller than the kinetic energy scale \(T\). This is the precise version of the lecture's physical slogan: the gas is nearly ideal when the molecules spend most of their time too far apart to feel each other very much.
+
+\section{Exact and Inexact Differentials}
+
+The lecture then changes register completely. The weakly interacting gas was straightforward; now Susskind turns to a point that often causes confusion in thermodynamics, namely the difference between exact and inexact differentials.
+
+Take a function \(f(x,y)\). Its small change is
+\begin{equation}
+df=\frac{\partial f}{\partial x}\,dx+\frac{\partial f}{\partial y}\,dy
+=f_x\,dx+f_y\,dy.
+\end{equation}
+Not every expression of the form \(F_x\,dx+F_y\,dy\) is the differential of an honest function. The test is the equality of mixed partials:
+\begin{equation}
+\frac{\partial F_y}{\partial x}=\frac{\partial F_x}{\partial y}.
+\end{equation}
+When this holds, the differential is exact. Equivalently, the line integral is path independent, and the integral around any closed loop vanishes:
+\begin{equation}
+\oint \bigl(F_x\,dx+F_y\,dy\bigr)=0.
+\end{equation}
+
+Two examples from the lecture make the point cleanly. If
+\begin{equation}
+F_x=y,\qquad F_y=x,
+\end{equation}
+then
+\begin{equation}
+\frac{\partial F_x}{\partial y}=1,\qquad \frac{\partial F_y}{\partial x}=1,
+\end{equation}
+so the differential is exact, and in fact
+\begin{equation}
+d(xy)=y\,dx+x\,dy.
+\end{equation}
+But if
+\begin{equation}
+F_x=y,\qquad F_y=-x,
+\end{equation}
+then
+\begin{equation}
+\frac{\partial F_x}{\partial y}=1,\qquad \frac{\partial F_y}{\partial x}=-1,
+\end{equation}
+so the differential is inexact. The integral depends on the path. One may think of altitude as the exact case, and fuel consumption or tiredness as the inexact one: two routes with the same endpoints can involve different fuel use and different fatigue.
+
+Now apply this to thermodynamics. The state of a simple system may be parameterized by two independent variables, and Susskind settles on entropy and volume. The first law is
+\begin{equation}
+dE=-P\,dV+T\,dS.
+\end{equation}
+This separates naturally into work and heat:
+\begin{equation}
+dW=-P\,dV,
+\qquad
+dQ=T\,dS.
+\end{equation}
+To test whether heat is a state function, it is convenient to rewrite the same relation in variables \(E\) and \(V\):
+\begin{equation}
+dQ=dE+P\,dV.
+\end{equation}
+If there really existed a function \(Q(E,V)\), then its partial derivatives would have to be
+\begin{equation}
+\left.\frac{\partial Q}{\partial E}\right|_V=1,
+\qquad
+\left.\frac{\partial Q}{\partial V}\right|_E=P.
+\end{equation}
+Exactness would then require
+\begin{equation}
+\frac{\partial}{\partial V}\left(\left.\frac{\partial Q}{\partial E}\right|_V\right)
+=
+\frac{\partial}{\partial E}\left(\left.\frac{\partial Q}{\partial V}\right|_E\right),
+\end{equation}
+hence
+\begin{equation}
+\left.\frac{\partial P}{\partial E}\right|_V=0.
+\end{equation}
+But for an ideal gas we already know
+\begin{equation}
+PV=NT,
+\qquad
+E=\frac{3}{2}NT,
+\end{equation}
+so
+\begin{equation}
+P=\frac{NT}{V}=\frac{2}{3}\frac{E}{V}.
+\end{equation}
+Therefore
+\begin{equation}
+\left.\frac{\partial P}{\partial E}\right|_V=\frac{2}{3V}\neq 0.
+\end{equation}
+The curl test fails. So \(dQ\) is not exact. Heat is not a state function. The same is true of work. What is exact is only the total energy change \(dE\).
+
+\subsection{Question \& Answer}
+
+Why is heat not a property of the thermodynamic state?
+
+Because the thermodynamic state tells us where the system is, while heat tells us part of how it got there. Two processes can begin at the same state and end at the same state, yet exchange different amounts of heat with the surroundings. On a closed cycle the net change in energy is zero, since the system returns to the same state, but the total heat exchanged and the total work done need not vanish separately. That is exactly like the fuel gauge in a car or the tiredness of a walker: those quantities record a history, not merely a position.
+
+\section{Summary}
+
+The lecture begins by warning us not to speak too casually about measurement. A thermometer, like any other instrument, is trustworthy only within a controlled linear regime and only after equilibrium has been established. From there the argument pivots naturally to the real calculation: start with the ideal gas, turn on a weak pair potential, define the interaction scale \(U_0\), and let the partition function machinery run. The first correction is
+\begin{equation}
+P\approx \rho T+\frac{1}{2}\rho^2U_0,
+\end{equation}
+so the ideal gas is valid when \(\rho U_0\ll T\). The closing mathematical interlude then clarifies a different but equally important point: heat and work are not state functions, because their differentials are inexact. Only their combination, the change in energy, belongs to the thermodynamic state itself.
