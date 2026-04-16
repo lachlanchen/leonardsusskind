@@ -1,0 +1,442 @@
+\chapter{Particle Mechanics, Four-Momentum, and \(E=mc^2\)}
+
+These notes follow Leonard Susskind's third lecture on special relativity, with companion-note curation by LazyingArt LLC and Video2Book. The lecture begins almost pragmatically: before we are allowed to talk about relativistic momentum, relativistic energy, and \(E=mc^2\), we first put on the board the approximation that will be used over and over to recover the Newtonian limit. From there the argument unfolds in a steady sequence. We pass from particles and their world lines to proper time, from proper time to the invariant free-particle action, from the action to the Lagrangian, and only then to momentum, energy, four-momentum, the mass-shell relation, and finally a simple decay process in which frozen mass becomes outgoing radiation.
+
+\section{Low-Velocity Expansions as Setup}
+
+Susskind opens by saying, in effect, let us first do the one bit of mathematics that we will need recurrently. The reason is clear: every relativistic formula we write down had better collapse back to the old Newtonian one when the velocity is small.
+
+For a parameter \(\epsilon\), the binomial theorem says
+\begin{equation}
+(1+\epsilon)^p
+=
+1+p\epsilon+\frac{p(p-1)}{2}\epsilon^2+\frac{p(p-1)(p-2)}{3!}\epsilon^3+\cdots.
+\end{equation}
+In the uses we need tonight, the zeroth-order term is too boring to matter very much; the first correction carries the physics.
+
+We first apply this to the quantity that recurs throughout relativistic mechanics:
+\begin{equation}
+\sqrt{1-v^2},
+\end{equation}
+where for the moment we work in units with \(c=1\), so \(v\) means velocity measured as a fraction of the speed of light. Setting \(\epsilon=-v^2\) and \(p=\tfrac12\), we obtain
+\begin{equation}
+\sqrt{1-v^2}\approx 1-\frac{v^2}{2},
+\qquad v\ll 1.
+\end{equation}
+The companion expansion, which will be needed just as often, comes from \(p=-\tfrac12\):
+\begin{equation}
+\frac{1}{\sqrt{1-v^2}}
+\approx
+1+\frac{v^2}{2},
+\qquad v\ll 1.
+\end{equation}
+
+These are not side remarks. The first of them will recover the ordinary free-particle Lagrangian from the relativistic one, and the second will recover the ordinary kinetic energy from the relativistic energy. Susskind even pauses to note that many familiar factors of \(1/2\) in classical mechanics can be viewed as relics of these low-velocity expansions.
+
+\section{Particles, World Lines, and Proper Time}
+
+Now we turn to particles. A particle, in the mechanical sense, need not be elementary. It may be an electron, but it may also be a donut, a box of chocolates, or the sun. What mechanics follows is the motion of the center of mass. In Newtonian language,
+\begin{equation}
+\vec p = m\vec v,
+\qquad
+E_{\text{kin}}=\frac12 mv^2.
+\end{equation}
+If the object has internal energy, that energy is there as well, but it does not depend on the overall motion of the center of mass. A moving donut carries \(\tfrac12 mv^2\) plus its internal energy; only the first term changes when we change frames.
+
+This is the point at which Susskind asks us to recall the previous quarter's mechanics: least action, Lagrangians, canonical momentum, Hamiltonians. The essential geometric object is the trajectory in spacetime. If we plot position horizontally and time vertically, the motion of a single particle traces out a curve, its world line.
+
+In relativity this curve takes on extra importance because space and time mix under Lorentz transformations. A physical particle with nonzero mass moves along a timelike world line. To make that precise, consider two nearby events with coordinate separations \(\Delta t\) and \(\Delta \vec x\). Their invariant proper-time interval is
+\begin{equation}
+\Delta \tau^2 = \Delta t^2 - \Delta \vec x^{\,2},
+\end{equation}
+with
+\begin{equation}
+\Delta \vec x^{\,2} = \Delta x^2+\Delta y^2+\Delta z^2.
+\end{equation}
+If we restore units for a moment, this becomes
+\begin{equation}
+\Delta \tau^2=\Delta t^2-\frac{\Delta \vec x^{\,2}}{c^2}.
+\end{equation}
+
+When \(\Delta \tau^2>0\), the interval is timelike: it has more time in it than space. Then there exists a frame in which the two events occur at the same spatial location. When \(\Delta \tau^2<0\), the interval is spacelike: it has more space in it than time. Then there exists a frame in which the two events are simultaneous, and indeed one can even reverse their temporal order by changing frames. This is the relativity of simultaneity.
+
+The world line of a massive particle is built from timelike pieces. That is just another way of saying that the particle never outruns light. If it did, the notions of before and after along its trajectory would cease to have invariant meaning, and physics would become badly confused.
+
+\section{Four-Velocity and Its Constraint}
+
+Let us now focus on one infinitesimal timelike segment of the world line. Ordinary velocity is a three-dimensional object,
+\begin{equation}
+v^i=\frac{dx^i}{dt},
+\qquad i=1,2,3.
+\end{equation}
+But relativity suggests a more invariant quantity. Since \(dx^\mu\) is a four-vector and \(d\tau\) is invariant, we define the four-velocity by
+\begin{equation}
+u^\mu=\frac{dx^\mu}{d\tau},
+\qquad \mu=0,1,2,3.
+\end{equation}
+The zeroth component is the time component:
+\begin{equation}
+u^0=\frac{dt}{d\tau}.
+\end{equation}
+
+To relate \(u^\mu\) to the ordinary velocity, begin with
+\begin{equation}
+d\tau^2 = dt^2-d\vec x^{\,2}
+=
+dt^2\left(1-\frac{d\vec x^{\,2}}{dt^2}\right)
+=
+dt^2(1-v^2).
+\end{equation}
+Therefore
+\begin{equation}
+d\tau = dt\sqrt{1-v^2},
+\qquad
+\frac{d\tau}{dt}=\sqrt{1-v^2}.
+\end{equation}
+Inverting gives
+\begin{equation}
+u^0=\frac{dt}{d\tau}=\frac{1}{\sqrt{1-v^2}}.
+\end{equation}
+For the spatial components,
+\begin{equation}
+v^i=\frac{dx^i}{dt}=\frac{dx^i}{d\tau}\frac{d\tau}{dt}=u^i\sqrt{1-v^2},
+\end{equation}
+so
+\begin{equation}
+u^i=\frac{v^i}{\sqrt{1-v^2}}.
+\end{equation}
+
+This is the basic kinematic relation. In the nonrelativistic limit, \(u^0\to 1\) and \(u^i\to v^i\). But as \(v\) approaches the speed of light, the distinction becomes decisive.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.}
+Why does four-velocity have only three independent components, and why does the relation \(u_0^2-\vec u^{\,2}=1\) hold?
+
+\paragraph{Answer.}
+The quickest way to see it is to divide the interval formula by \(\Delta \tau^2\):
+\begin{equation}
+1
+=
+\frac{\Delta t^2}{\Delta\tau^2}
+-
+\frac{\Delta \vec x^{\,2}}{\Delta\tau^2}.
+\end{equation}
+But \(\Delta t/\Delta\tau\) is just \(u^0\), and \(\Delta \vec x/\Delta\tau\) is \(\vec u\). Therefore
+\begin{equation}
+u_0^2-\vec u^{\,2}=1.
+\end{equation}
+So the four components are constrained by one invariant relation. That leaves only three independent pieces of information, exactly as one should expect from the ordinary three-velocity.
+
+This normalization will return later in a more physical guise, when it becomes the energy-momentum relation.
+
+\section{Invariant Action and the Relativistic Lagrangian}
+
+With the geometry in place, the lecture turns to dynamics. What law should govern a free particle? Susskind does not start by guessing an energy. He goes back to the principle of least action. If we want the laws of physics to be the same in every inertial frame, then the action should be built from quantities all observers agree on.
+
+There are two pieces of classical wisdom to preserve. First, the action should be an integral along the trajectory, built up from infinitesimal contributions. Second, the integrand should now be something invariant. For a free particle there is really only one obvious candidate: the proper time along the world line. So the right guess, and it is the right guess, is
+\begin{equation}
+S=-m\int_a^b d\tau.
+\end{equation}
+The factor of \(m\) is chosen so that the low-velocity limit matches ordinary mechanics. The minus sign is a convention, but it is the convention that makes the later comparison with the old Lagrangian come out in the usual way.
+
+Using
+\begin{equation}
+d\tau = dt\sqrt{1-v^2},
+\end{equation}
+we can rewrite the action in the familiar form
+\begin{equation}
+S=-m\int_a^b dt\,\sqrt{1-v^2}.
+\end{equation}
+Thus the free-particle Lagrangian is
+\begin{equation}
+L=-m\sqrt{1-v^2}.
+\end{equation}
+At this stage we are still discussing only a free particle. No potential energy has yet been added, and no force law has yet been introduced.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.}
+Why is proper time the right thing to build the action from, and why do the overall sign and constant factor not affect the equations of motion?
+
+\paragraph{Answer.}
+Proper time is the natural choice because it is the invariant quantity attached to each infinitesimal segment of a timelike world line. If the action is an integral of invariant pieces, then every observer agrees on the value of the action for a given path, and therefore every observer agrees on which path makes the action stationary.
+
+As for the prefactors: multiplying the action by any constant leaves the stationarity condition unchanged. Multiplying by a negative constant merely exchanges a minimum for a maximum, but the stationary path is the same. Likewise, proper time itself is taken to be positive by definition, since it is the time read by a clock from past to future. Had we chosen the negative root everywhere, we would only have flipped the sign of the action, not the resulting trajectory.
+
+Now the opening approximation pays off. Returning to the binomial expansion, and keeping the corrected low-velocity sign, we have
+\begin{equation}
+L
+=
+-m\sqrt{1-v^2}
+\approx
+-m\left(1-\frac{v^2}{2}\right)
+=
+-m+\frac12 mv^2.
+\end{equation}
+The constant term \(-m\) does nothing dynamically; adding a constant to the Lagrangian does not alter the Euler-Lagrange equations. The piece with the juice in it, as Susskind puts it, is the familiar one:
+\begin{equation}
+L_{\text{Newton}}=\frac12 mv^2.
+\end{equation}
+So the relativistic action reduces, in the low-velocity limit, to the old Lagrangian mechanics of Lagrange and Newton.
+
+\section{Canonical Momentum, Vector Conservation, and the Missing Component}
+
+At this point Susskind makes an explicit pivot. He does not work out the equations of motion in detail, because for a free particle they only say that the particle moves on a straight line with constant velocity. The interesting objects tonight are the conserved quantities: momentum and energy.
+
+Since the Lagrangian depends on velocity but not on position, it is translation invariant. By the general machinery of Lagrangian mechanics, that means momentum is conserved. But we do not identify momentum by guessing \(p=mv\). We go back to the canonical definition.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_02.png}
+\caption{Canonical momentum defined from the Lagrangian.}
+\end{figure}
+
+The right-hand side of the board formula is partly blocked by Susskind's arm, so we standardize it in the canonical form:
+\begin{equation}
+p_x=\frac{\partial L}{\partial \dot x}.
+\end{equation}
+Applying this to
+\begin{equation}
+L=-m\sqrt{1-v^2},
+\end{equation}
+we get
+\begin{align}
+p_x
+&=
+\frac{\partial}{\partial \dot x}\Bigl(-m\sqrt{1-v^2}\Bigr) \\
+&=
+-m\left(\frac{1}{2\sqrt{1-v^2}}\right)(-2\dot x) \\
+&=
+\frac{m v_x}{\sqrt{1-v^2}} \\
+&=
+m u_x.
+\end{align}
+The same calculation in all spatial directions gives
+\begin{equation}
+p_i=\frac{m v_i}{\sqrt{1-v^2}}=m u_i.
+\end{equation}
+So relativistic momentum is mass times the spatial components of four-velocity.
+
+Before pushing farther, Susskind pauses over terminology. Modern usage is to call \(m\) simply the mass. The expression ``rest mass'' is treated as an anachronism. Mass is the invariant tag attached to the particle; what changes with motion is not the mass but the energy.
+
+Now comes the conceptual obstacle. In relativity, statements that single out only some components of a four-vector are usually not invariant. A displacement with \(\Delta x=0\) in one frame need not have \(\Delta x=0\) in another. Likewise \(u_i=0\) merely says that we happen to be in the particle's rest frame. It is not an invariant statement. If we want invariant laws, we should expect them to involve all components of a four-vector together.
+
+This is exactly the issue with momentum conservation. The lecture's board at that point is worth keeping:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_03_figure_03.png}
+\caption{Momentum conservation written as a vector equation, with the earlier low-velocity expansion still visible on the neighboring board.}
+\end{figure}
+
+The board labels are soft, so we standardize the conservation law as
+\begin{equation}
+\vec P_{\mathrm{i}}-\vec P_{\mathrm{f}}=0.
+\end{equation}
+This is certainly a vector equation. But is it an invariant one?
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.}
+Why is three-momentum conservation by itself not enough, and why must it be completed to a four-vector statement?
+
+\paragraph{Answer.}
+A statement that all components of a four-vector vanish is invariant. A statement involving only the spatial components need not remain true after a Lorentz transformation. So \(\vec P_{\mathrm{i}}-\vec P_{\mathrm{f}}=0\) is not yet a fully relativistic conservation law. To make it invariant, we must identify a fourth component and require that it too be conserved.
+
+Since the known three components are \(m u_i\), the natural candidate for the missing component is
+\begin{equation}
+p_0 = m u_0.
+\end{equation}
+The immediate question is whether this fourth component is something we already recognize. The lecture's answer is: yes, if the mechanics is done systematically, it will turn out to be the energy.
+
+\section{Hamiltonian, Energy, and the Meaning of Mass}
+
+How do we decide what the energy is? Not by inspiration, but by method. The only systematic procedure is to compute the Hamiltonian:
+\begin{equation}
+H=\sum_i \dot x^i p_i-L.
+\end{equation}
+This is not a special relativistic trick. It is the general Hamiltonian formula from ordinary mechanics, now applied to a different Lagrangian.
+
+Substituting
+\begin{equation}
+p_i=\frac{m\dot x^i}{\sqrt{1-v^2}},
+\qquad
+L=-m\sqrt{1-v^2},
+\end{equation}
+we find
+\begin{align}
+H
+&=
+\sum_i \dot x^i \frac{m\dot x^i}{\sqrt{1-v^2}} + m\sqrt{1-v^2} \\
+&=
+\frac{m v^2}{\sqrt{1-v^2}} + m\sqrt{1-v^2} \\
+&=
+\frac{m v^2}{\sqrt{1-v^2}} + \frac{m(1-v^2)}{\sqrt{1-v^2}} \\
+&=
+\frac{m}{\sqrt{1-v^2}} \\
+&=
+m u_0.
+\end{align}
+So the missing fourth component is indeed the Hamiltonian:
+\begin{equation}
+p_0 = H = E = \frac{m}{\sqrt{1-v^2}}
+\end{equation}
+in units with \(c=1\). Once this is recognized, momentum conservation becomes conservation of four-momentum,
+\begin{equation}
+p^\mu = m u^\mu.
+\end{equation}
+
+The next natural question is how this new energy compares with the old one. Here the second low-velocity expansion enters:
+\begin{equation}
+E
+=
+\frac{m}{\sqrt{1-v^2}}
+\approx
+m\left(1+\frac{v^2}{2}\right)
+=
+m+\frac12 mv^2.
+\end{equation}
+The second term is the ordinary Newtonian kinetic energy. The first term is new. Restoring the factors of \(c\), we must write
+\begin{equation}
+E=\frac{mc^2}{\sqrt{1-v^2/c^2}},
+\end{equation}
+so that
+\begin{equation}
+E\approx mc^2+\frac12 mv^2.
+\end{equation}
+This is where \(E=mc^2\) enters the lecture: the energy of a system whose center of mass is at rest is \(mc^2\).
+
+Susskind is careful here about what ``at rest'' means. For a composite object, the constituents may be moving wildly inside it. What is set to zero is the velocity of the center of mass. The energy that remains in that frame is the rest energy, and the corresponding invariant quantity is the mass.
+
+\begin{remark}
+Modern usage is therefore this: mass means invariant mass. It is the energy of the system in the frame where the total momentum is zero, divided by \(c^2\). For a composite system, that mass can be larger than the sum of the constituent masses if there is internal kinetic energy, or smaller if the binding energy is sufficiently negative. What is invariant is not a naive sum of constituent masses, but the total energy in the center-of-mass frame.
+\end{remark}
+
+At this stage the Euler-Lagrange equations for the free particle contain no further surprises. They say that momentum and energy are constant, hence the four-velocity is constant, so the world line is a straight line in spacetime. In that sense, two familiar Newtonian statements merge into one: straight-line motion and constant velocity are both encoded by constant four-velocity.
+
+\section{Mass Shell, Massless Particles, and Positronium Decay}
+
+The normalization of the four-velocity now turns into a direct relation between energy, momentum, and mass. The board image is especially helpful here because it preserves the lecture's juxtaposition: old-fashioned kinetic energy on one side, relativistic invariant on the other.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_03_figure_05.png}
+\caption{Four-velocity normalization and the relativistic energy-momentum invariant.}
+\end{figure}
+
+The upper board formula is partly obscured, so we write its cautious standard form:
+\begin{equation}
+u_0^2-\vec u^{\,2}=1.
+\end{equation}
+Multiplying by \(m^2\) and using
+\begin{equation}
+E=p_0=mu_0,
+\qquad
+\vec p = m\vec u,
+\end{equation}
+we obtain
+\begin{equation}
+E^2-p^2=m^2
+\end{equation}
+in units with \(c=1\). Equivalently,
+\begin{equation}
+E=\sqrt{p^2+m^2}.
+\end{equation}
+When units are restored, this becomes
+\begin{equation}
+E^2=p^2c^2+m^2c^4,
+\qquad
+E=\sqrt{p^2c^2+m^2c^4}.
+\end{equation}
+
+This is the right variable change for the next part of the lecture. Instead of asking for energy as a function of velocity, we can ask for energy as a function of momentum.
+
+\subsection{Question \& Answer}
+
+\paragraph{Question.}
+Why is velocity the wrong variable for massless particles, and why should we think instead in terms of energy as a function of momentum?
+
+\paragraph{Answer.}
+If we try to use
+\begin{equation}
+E=\frac{m}{\sqrt{1-v^2}}
+\end{equation}
+for a massless particle, then \(m=0\) and \(v=1\), so the formula becomes the indeterminate expression \(0/0\). More importantly, all massless particles move with the same speed, so velocity cannot distinguish one photon's energy from another's. Momentum can. The invariant relation does the job immediately:
+\begin{equation}
+E=\sqrt{p^2+m^2}.
+\end{equation}
+Setting \(m=0\), we get
+\begin{equation}
+E=|p|
+\qquad (c=1),
+\end{equation}
+or, with units restored,
+\begin{equation}
+E=pc.
+\end{equation}
+So for massless particles the natural description is \(E(p)\), not \(E(v)\).
+
+That prepares the lecture's concrete payoff: positronium decay. Positronium is a neutral bound state of an electron and a positron. It has a nonzero mass, and after some time it may decay into two photons. This is precisely the kind of process that does not fit nonrelativistic intuition, because the initial object is massive while the final objects are massless.
+
+\paragraph{Worked example: positronium at rest.}
+Put the positronium atom in its rest frame. Then the initial total momentum is zero. After decay into two photons, the total momentum must still be zero, so the photons must emerge back to back with equal and opposite momenta:
+\begin{equation}
+p_{\gamma,1}=-p_{\gamma,2}.
+\end{equation}
+Let the magnitude of each photon's momentum be \(p\). Then energy conservation gives
+\begin{equation}
+E_{\text{init}} = mc^2 = E_{\gamma,1}+E_{\gamma,2}.
+\end{equation}
+But each photon is massless, so each has energy \(pc\). Therefore
+\begin{equation}
+mc^2 = 2pc,
+\end{equation}
+and hence
+\begin{equation}
+p=\frac{mc}{2},
+\qquad
+E_\gamma = pc = \frac{mc^2}{2}.
+\end{equation}
+
+That is the simplest clean relativistic decay calculation in the lecture. What is conserved is not the sum of particle masses. The photons have zero mass. What is conserved is total energy and total momentum. The rest energy of the positronium has simply reappeared as the energy carried by the outgoing radiation.
+
+The lecture briefly goes on to mention wavelengths, angular momentum, and quantum-mechanical randomness in the emission direction. Those are real questions, but the stable classical-relativistic thread is already complete: mass is a form of energy, and the invariant bookkeeping device is four-momentum.
+
+\section{Summary}
+
+The lecture begins with a technical warm-up and never loses sight of why it began there. The low-velocity expansions
+\begin{equation}
+\sqrt{1-v^2}\approx 1-\frac{v^2}{2},
+\qquad
+\frac{1}{\sqrt{1-v^2}}\approx 1+\frac{v^2}{2}
+\end{equation}
+are the bridge back to Newtonian mechanics. From there we were led to world lines, proper time, and the four-velocity
+\begin{equation}
+u^\mu=\frac{dx^\mu}{d\tau},
+\qquad
+u_0^2-\vec u^{\,2}=1.
+\end{equation}
+Building the free-particle action from proper time gave
+\begin{equation}
+S=-m\int d\tau,
+\qquad
+L=-m\sqrt{1-v^2},
+\end{equation}
+whose low-velocity limit is the old free-particle Lagrangian. Canonical momentum then gave
+\begin{equation}
+p_i = \frac{m v_i}{\sqrt{1-v^2}}=m u_i,
+\end{equation}
+and the Hamiltonian supplied the fourth component,
+\begin{equation}
+E=H=\frac{m}{\sqrt{1-v^2}},
+\end{equation}
+so that energy and momentum fit together into four-momentum. That led directly to
+\begin{equation}
+E\approx mc^2+\frac12 mv^2
+\end{equation}
+at low velocity, and to the exact invariant relation
+\begin{equation}
+E^2=p^2c^2+m^2c^4.
+\end{equation}
+Finally, the positronium example showed what the whole construction is for: in relativity the correct conservation law is not the conservation of naive mass sums, but the conservation of total energy-momentum.
