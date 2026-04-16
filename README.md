@@ -27,6 +27,9 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
 
 <table>
   <tr>
+    <td colspan="4"><strong>Core</strong> · Classical → Quantum → Special → General → Statistical → Cosmology</td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="core_classical_mechanics/2011_fall_theoretical_minimum/classical_mechanics_theoretical_minimum.pdf"><img src="figs/readme-covers/classical_mechanics_theoretical_minimum.png" width="170" alt="Classical Mechanics Theoretical Minimum cover"></a><br>
       <strong>Classical Mechanics</strong><br>
@@ -37,49 +40,51 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Classical Mechanics</strong><br>
       <sub>Stanford partial run</sub>
     </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td align="center">
-      <a href="supplemental_advanced_quantum/advanced_quantum_mechanics.pdf"><img src="figs/readme-covers/advanced_quantum_mechanics.png" width="170" alt="Advanced Quantum Mechanics cover"></a><br>
-      <strong>Advanced Quantum Mechanics</strong><br>
-      <sub>Supplementary course book</sub>
+      <a href="core_quantum_mechanics/2012_winter_theoretical_minimum/quantum_mechanics_theoretical_minimum.pdf"><img src="figs/readme-covers/quantum_mechanics_theoretical_minimum.png" width="170" alt="Quantum Mechanics cover"></a><br>
+      <strong>Quantum Mechanics</strong><br>
+      <sub>2012 Winter Theoretical Minimum</sub>
     </td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="core_general_relativity/2012_fall_theoretical_minimum/general_relativity_theoretical_minimum.pdf"><img src="figs/readme-covers/general_relativity_theoretical_minimum.png" width="170" alt="General Relativity cover"></a><br>
+      <strong>General Relativity</strong><br>
+      <sub>2012 Fall Theoretical Minimum</sub>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="core_cosmology/2013_winter_theoretical_minimum/cosmology_theoretical_minimum.pdf"><img src="figs/readme-covers/cosmology_theoretical_minimum.png" width="170" alt="Cosmology Theoretical Minimum cover"></a><br>
       <strong>Cosmology</strong><br>
       <sub>2013 Winter Theoretical Minimum</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="core_cosmology/2009_winter_legacy_cosmology/cosmology_legacy.pdf"><img src="figs/readme-covers/cosmology_legacy.png" width="170" alt="Cosmology legacy cover"></a><br>
       <strong>Cosmology</strong><br>
       <sub>2009 Winter legacy run</sub>
     </td>
-    <td align="center">
-      <a href="supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf"><img src="figs/readme-covers/topics_in_string_theory.png" width="170" alt="Topics in String Theory cover"></a><br>
-      <strong>Topics in String Theory</strong><br>
-      <sub>Cosmology and Black Holes set</sub>
-    </td>
-    <td align="center">
-      <a href="supplemental_higgs_boson/demystifying_the_higgs_boson.pdf"><img src="figs/readme-covers/demystifying_the_higgs_boson.png" width="170" alt="Demystifying the Higgs Boson cover"></a><br>
-      <strong>Demystifying the Higgs Boson</strong><br>
-      <sub>Single-lecture book</sub>
-    </td>
-    <td align="center">
-      <a href="supplemental_particle_physics_1/particle_physics_1_basic_concepts.pdf"><img src="figs/readme-covers/particle_physics_1_basic_concepts.png" width="170" alt="Particle Physics 1 cover"></a><br>
-      <strong>Particle Physics 1</strong><br>
-      <sub>Basic Concepts</sub>
-    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="4"><strong>Supplementary</strong> · Quantum → Special → General → Statistical → Cosmology</td>
   </tr>
   <tr>
     <td align="center">
-      <a href="supplemental_particle_physics_2/particle_physics_2_standard_model.pdf"><img src="figs/readme-covers/particle_physics_2_standard_model.png" width="170" alt="Particle Physics 2 cover"></a><br>
-      <strong>Particle Physics 2</strong><br>
-      <sub>Standard Model</sub>
-    </td>
-    <td align="center">
-      <a href="supplemental_particle_physics_3/particle_physics_3_supersymmetry_and_grand_unification.pdf"><img src="figs/readme-covers/particle_physics_3_supersymmetry_and_grand_unification.png" width="170" alt="Particle Physics 3 cover"></a><br>
-      <strong>Particle Physics 3</strong><br>
-      <sub>Supersymmetry and Grand Unification</sub>
+      <a href="supplemental_advanced_quantum/advanced_quantum_mechanics.pdf"><img src="figs/readme-covers/advanced_quantum_mechanics.png" width="170" alt="Advanced Quantum Mechanics cover"></a><br>
+      <strong>Advanced Quantum Mechanics</strong><br>
+      <sub>Supplementary course book</sub>
     </td>
     <td align="center">
       <a href="supplemental_quantum_entanglement/quantum_entanglement_part_1.pdf"><img src="figs/readme-covers/quantum_entanglement_part_1.png" width="170" alt="Quantum Entanglement Part 1 cover"></a><br>
@@ -91,25 +96,43 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Quantum Entanglement</strong><br>
       <sub>Part 3</sub>
     </td>
+    <td></td>
   </tr>
   <tr>
-    <td align="center" colspan="2">
+    <td align="center">
+      <a href="supplemental_particle_physics_1/particle_physics_1_basic_concepts.pdf"><img src="figs/readme-covers/particle_physics_1_basic_concepts.png" width="170" alt="Particle Physics 1 cover"></a><br>
+      <strong>Particle Physics 1</strong><br>
+      <sub>Basic Concepts</sub>
+    </td>
+    <td align="center">
+      <a href="supplemental_particle_physics_2/particle_physics_2_standard_model.pdf"><img src="figs/readme-covers/particle_physics_2_standard_model.png" width="170" alt="Particle Physics 2 cover"></a><br>
+      <strong>Particle Physics 2</strong><br>
+      <sub>Standard Model</sub>
+    </td>
+    <td align="center">
+      <a href="supplemental_particle_physics_3/particle_physics_3_supersymmetry_and_grand_unification.pdf"><img src="figs/readme-covers/particle_physics_3_supersymmetry_and_grand_unification.png" width="170" alt="Particle Physics 3 cover"></a><br>
+      <strong>Particle Physics 3</strong><br>
+      <sub>Supersymmetry and Grand Unification</sub>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf"><img src="figs/readme-covers/topics_in_string_theory.png" width="170" alt="Topics in String Theory cover"></a><br>
+      <strong>Topics in String Theory</strong><br>
+      <sub>Cosmology and Black Holes set</sub>
+    </td>
+    <td align="center">
       <a href="supplemental_string_theory/string_theory_and_m_theory.pdf"><img src="figs/readme-covers/string_theory_and_m_theory.png" width="170" alt="String Theory and M-Theory cover"></a><br>
       <strong>String Theory and M-Theory</strong><br>
       <sub>Supplementary course book</sub>
     </td>
-    <td align="center" colspan="2">
-      <a href="core_quantum_mechanics/2012_winter_theoretical_minimum/quantum_mechanics_theoretical_minimum.pdf"><img src="figs/readme-covers/quantum_mechanics_theoretical_minimum.png" width="170" alt="Quantum Mechanics cover"></a><br>
-      <strong>Quantum Mechanics</strong><br>
-      <sub>2012 Winter Theoretical Minimum</sub>
+    <td align="center">
+      <a href="supplemental_higgs_boson/demystifying_the_higgs_boson.pdf"><img src="figs/readme-covers/demystifying_the_higgs_boson.png" width="170" alt="Demystifying the Higgs Boson cover"></a><br>
+      <strong>Demystifying the Higgs Boson</strong><br>
+      <sub>Single-lecture book</sub>
     </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="4">
-      <a href="core_general_relativity/2012_fall_theoretical_minimum/general_relativity_theoretical_minimum.pdf"><img src="figs/readme-covers/general_relativity_theoretical_minimum.png" width="170" alt="General Relativity cover"></a><br>
-      <strong>General Relativity</strong><br>
-      <sub>2012 Fall Theoretical Minimum</sub>
-    </td>
+    <td></td>
   </tr>
 </table>
 
