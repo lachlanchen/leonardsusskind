@@ -27,7 +27,7 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
 
 <table>
   <tr>
-    <td colspan="4"><strong>Core</strong> · Classical → Quantum → Special → General → Statistical → Cosmology</td>
+    <td colspan="3"><strong>Core</strong> · Classical → Quantum → Special → General → Statistical → Cosmology</td>
   </tr>
   <tr>
     <td align="center">
@@ -40,18 +40,11 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Classical Mechanics</strong><br>
       <sub>Stanford partial run</sub>
     </td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="core_quantum_mechanics/2012_winter_theoretical_minimum/quantum_mechanics_theoretical_minimum.pdf"><img src="figs/readme-covers/quantum_mechanics_theoretical_minimum.png" width="170" alt="Quantum Mechanics cover"></a><br>
       <strong>Quantum Mechanics</strong><br>
       <sub>2012 Winter Theoretical Minimum</sub>
     </td>
-    <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <td align="center">
@@ -59,11 +52,6 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>General Relativity</strong><br>
       <sub>2012 Fall Theoretical Minimum</sub>
     </td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="core_cosmology/2013_winter_theoretical_minimum/cosmology_theoretical_minimum.pdf"><img src="figs/readme-covers/cosmology_theoretical_minimum.png" width="170" alt="Cosmology Theoretical Minimum cover"></a><br>
       <strong>Cosmology</strong><br>
@@ -74,11 +62,9 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Cosmology</strong><br>
       <sub>2009 Winter legacy run</sub>
     </td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
-    <td colspan="4"><strong>Supplementary</strong> · Quantum → Special → General → Statistical → Cosmology</td>
+    <td colspan="3"><strong>Supplementary</strong> · Quantum → Special → General → Statistical → Cosmology</td>
   </tr>
   <tr>
     <td align="center">
@@ -96,7 +82,6 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Quantum Entanglement</strong><br>
       <sub>Part 3</sub>
     </td>
-    <td></td>
   </tr>
   <tr>
     <td align="center">
@@ -114,7 +99,6 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Particle Physics 3</strong><br>
       <sub>Supersymmetry and Grand Unification</sub>
     </td>
-    <td></td>
   </tr>
   <tr>
     <td align="center">
@@ -132,7 +116,6 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Demystifying the Higgs Boson</strong><br>
       <sub>Single-lecture book</sub>
     </td>
-    <td></td>
   </tr>
 </table>
 
