@@ -1,0 +1,492 @@
+\chapter{Free Particles, Momentum Space, and the Classical Limit}
+
+These notes follow Leonard Susskind's lecture closely. We begin where the lecture begins, not with a polished differential equation, but with the historical crisis that made quantum mechanics unavoidable. The transcript and frame material curated by LazyingArt LLC and Video2Book are used only to keep faith with the visible board work and the order of the spoken argument. What matters throughout is the lecture's logical direction: quantum mechanics is fundamental, and classical mechanics must be recovered from it, not the other way around.
+
+\section{From Quantum Crisis to Quantum First Principles}
+
+The lecture opens by clearing the ground. Michelson--Morley belongs to that story, but the mathematically sharper crisis for the present chapter is blackbody radiation. The old wave theory of light said that electromagnetic radiation could occur at arbitrary wavelength, and each wavelength behaved like a harmonic oscillator. Statistical mechanics then said that in thermal equilibrium each oscillator should carry the same average energy,
+\begin{equation}
+E_{\text{mode}} = kT.
+\end{equation}
+Now put radiation in a cavity. The cavity supports infinitely many modes. If each allowed mode carries the same nonzero energy, the total energy diverges. That is the ultraviolet catastrophe.
+
+Planck's intervention was to write
+\begin{equation}
+E = n h \nu,
+\end{equation}
+but the lecture is careful here: Planck did not yet correctly interpret this as a statement about the cavity radiation itself. In his original picture, the quantization belonged to the oscillators in the walls that emitted the radiation. Einstein's step was deeper. He treated the radiation itself as quantized. Then the high-frequency modes are suppressed: if
+\begin{equation}
+h\nu > kT,
+\end{equation}
+the classical equipartition estimate would assign less than one quantum to that mode, and quantum mechanics does not permit that. Less than one quantum means no quanta.
+
+Susskind then walks through the long hesitation over photons, the eventual force of Compton scattering, and the slow collapse of mechanistic rescue attempts. At the same time he emphasizes a second lesson. Einstein, well before the final formalism of quantum mechanics, already understood that spontaneous emission and radioactive decay point toward a fundamentally probabilistic law. The old picture of atoms as little solar systems, with particles in definite orbits, could be patched for a while, but only for a while.
+
+That entire prelude has one function in the lecture. Before we write down the Schr\"odinger equation again, we are meant to see why the direction of explanation matters. Quantum mechanics is not to be derived from classical mechanics. At most we may borrow a classical Hamiltonian as a guess, and then test what the quantum theory does with it.
+
+\section{Recalling the Schr\"odinger Equation and Guessing the Free Hamiltonian}
+
+Only after that clearing of the ground does the lecture pivot back: let us get back to the Schr\"odinger equation and really go through it now. The general time-evolution law is
+\begin{equation}
+i\hbar \frac{\partial}{\partial t} |\psi\rangle = \hat H |\psi\rangle,
+\end{equation}
+and the momentum operator for motion on a line is
+\begin{equation}
+\hat P = -\,i\hbar \frac{\partial}{\partial x}.
+\end{equation}
+The lecture lingers over the structure of these formulas. Time derivatives are tied to the Hamiltonian. Space derivatives are tied to momentum. The minus sign in the momentum operator is a convention, and the lecture even remarks on that convention, but the point is that these are quantum definitions, not deductions from classical mechanics.
+
+Now we specialize to a nonrelativistic particle on a line. Here Susskind says plainly that we are making a guess, not a derivation:
+\begin{equation}
+\hat H = \frac{\hat P^2}{2m}.
+\end{equation}
+Why \(\hat P^2\) rather than \(\hat P\)? Because momentum has a direction, but the free-particle energy should not care whether the particle moves left or right. A particle with momentum \(p\) and a particle with momentum \(-p\) should have the same energy. That already tells us the dependence must be even in \(p\), and the simplest nonrelativistic choice is \(p^2\). The factor \(2m\) is then the familiar normalization, and in that sense it is what makes \(m\) deserve the name mass.
+
+This is one of the lecture's persistent motifs. We borrow a classical-looking expression, but only as a tentative bridge. Then we ask, what does it mean quantum mechanically? In particular, what does \(\hat P^2\) mean? It simply means that the same operator acts twice.
+
+\section{From Kets to Wave Functions: The Free-Particle Equation}
+
+At this point the lecture shifts from abstract ket language to the wave function on a line. The board frame below records that shift in layout. What is visible on the board is only an isolated ket and a rightward arrow. The lecture, however, is already speaking of the wave function \(\psi(x)\) as living in a vector space. So the figure should be read as evidence for the transition in board language, not as a complete written equation.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.40\textwidth]{lecture_09_figure_02.png}
+\caption{Ket state with rightward arrow}
+\end{figure}
+
+The lecture slows down here for a reason. \(\psi\) depends on position because position is an observable. But \(\psi\) also changes with time, and that dependence is logically different. We do not ask for the probability that the time is such-and-such. We ask for the probability that the particle is at position \(x\) at a given time \(t\). Thus \(\psi(x,t)\) is the state written in the position representation, evolving in time.
+
+Let us now see what the guess \(\hat H=\hat P^2/2m\) means in this representation. Substitute it into the general Schr\"odinger equation:
+\begin{align}
+i\hbar \frac{\partial}{\partial t}\psi(x,t)
+&=
+\frac{1}{2m}\hat P^2 \psi(x,t) \\
+&=
+\frac{1}{2m}
+\left(
+-\,i\hbar \frac{\partial}{\partial x}
+\right)
+\left(
+-\,i\hbar \frac{\partial}{\partial x}
+\right)
+\psi(x,t).
+\end{align}
+Since \((-i)^2=-1\), we obtain
+\begin{equation}
+i\hbar \frac{\partial}{\partial t}\psi(x,t)
+=
+-\,\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\psi(x,t).
+\end{equation}
+This is the free-particle Schr\"odinger equation.
+
+\paragraph{Let us do the substitution the way the lecture does it.}
+First write the time derivative on the left. Then insert the Hamiltonian \(\hat P^2/2m\) on the right. Then remember that each \(\hat P\) means \(-i\hbar \partial_x\). Acting once gives a first derivative; acting twice gives a second derivative. Only after that step-by-step substitution does the familiar differential equation appear. The lecture is careful not to let us skip the passage from operator language to wave-function language.
+
+\section{Plane Waves, Momentum Eigenstates, and the Meaning of Energy}
+
+Now comes the next question: what are the solutions? Again the lecture proceeds by trial rather than declaration. Let us look for wave-like solutions. Let the \(x\)-dependence be that of a momentum eigenfunction, and let the time-dependence be oscillatory:
+\begin{equation}
+\psi(x,t)=e^{ipx/\hbar}e^{i\omega t}.
+\end{equation}
+The first factor is chosen because momentum eigenstates in the position representation have precisely that form. The second factor is a guess; we shall see whether the Schr\"odinger equation permits it and, if so, what \(\omega\) must be.
+
+Differentiate with respect to time:
+\begin{equation}
+\frac{\partial \psi}{\partial t}=i\omega \psi.
+\end{equation}
+Therefore the left-hand side of the Schr\"odinger equation is
+\begin{equation}
+i\hbar \frac{\partial \psi}{\partial t}
+=
+i\hbar(i\omega)\psi
+=
+-\,\hbar\omega\,\psi.
+\end{equation}
+Differentiate twice with respect to \(x\):
+\begin{equation}
+\frac{\partial^2 \psi}{\partial x^2}
+=
+-\,\frac{p^2}{\hbar^2}\psi.
+\end{equation}
+So the right-hand side is
+\begin{equation}
+-\,\frac{\hbar^2}{2m}\frac{\partial^2 \psi}{\partial x^2}
+=
+-\,\frac{\hbar^2}{2m}
+\left(
+-\,\frac{p^2}{\hbar^2}
+\right)\psi
+=
+\frac{p^2}{2m}\psi.
+\end{equation}
+Cancelling the common factor \(\psi\), we find
+\begin{equation}
+-\hbar\omega = \frac{p^2}{2m}.
+\end{equation}
+Hence
+\begin{equation}
+\omega = -\,\frac{p^2}{2m\hbar},
+\end{equation}
+and the plane-wave solution becomes
+\begin{equation}
+\psi_p(x,t)
+=
+e^{ipx/\hbar - i p^2 t/(2m\hbar)}.
+\end{equation}
+
+This is the first real payoff of the lecture. The \(x\)-dependence labels the state by momentum \(p\), while the time phase shows that the Hamiltonian eigenvalue is
+\begin{equation}
+E=\frac{p^2}{2m}.
+\end{equation}
+So the free-particle energy takes the expected nonrelativistic form. The lecture even pauses to note that there is no extra \(\hbar\) in the relation between energy and momentum. The \(\hbar\) lives in the oscillatory phases, not in the classical-looking formula \(E=p^2/2m\).
+
+There is, however, another solution with exactly the same energy:
+\begin{equation}
+\psi_{-p}(x,t)
+=
+e^{-ipx/\hbar - i p^2 t/(2m\hbar)}.
+\end{equation}
+The momentum has been reversed, but the time phase is unchanged because only \(p^2\) enters the energy.
+
+\subsection{Question \& Answer}
+
+If the energy is \(E\), why do two momentum states contribute, and how do we compute the probability for that energy?
+
+Because free-particle energy depends on \(p^2\), not on \(p\). If we reverse the momentum, the energy does not change. In the simplest two-state example,
+\begin{equation}
+\psi(x,t)=\alpha\,\psi_p(x,t)+\beta\,\psi_{-p}(x,t),
+\end{equation}
+the probability of right-moving momentum is \(\alpha^*\alpha\), and the probability of left-moving momentum is \(\beta^*\beta\). But both components have the same energy \(E=p^2/(2m)\). So for this example the energy probability is
+\begin{equation}
+P(E)=\alpha^*\alpha+\beta^*\beta.
+\end{equation}
+
+The lecture then states the same idea in the more general language we shall need later. If a fixed energy \(E\) is given, we solve
+\begin{equation}
+E=\frac{p^2}{2m},
+\end{equation}
+which gives two momenta,
+\begin{equation}
+p_\pm=\pm\sqrt{2mE}.
+\end{equation}
+The probability associated with that energy is obtained by collecting the contributions from both momentum values. The conceptual lesson is the important one: momentum labels and energy labels are not the same labels.
+
+\section{General Solution in Momentum Space and the Fourier Transform at \(t=0\)}
+
+The lecture now asks the next natural question in exactly these words: what is the general solution? The answer is not another special wave, but a superposition of all such waves. Better yet, since momentum is continuous, an integral:
+\begin{equation}
+\psi(x,t)
+=
+\int_{-\infty}^{\infty}
+\frac{dp}{\sqrt{2\pi}}\,
+e^{ipx/\hbar - i p^2 t/(2m\hbar)}\,
+\tilde\psi(p).
+\end{equation}
+Here \(\tilde\psi(p)\) is the momentum-space amplitude. Nothing mysterious is fixed except the constants. We integrate over all \(p\), positive and negative, so the formula already includes both right-moving and left-moving momenta. In general it is a superposition of different momenta and, because \(E=p^2/(2m)\), of different energies as well.
+
+At this point the lecture pauses over the interpretation of \(\tilde\psi(p)\). What is the probability density for momentum? Because momentum is continuous, we ask for a density. The board frame below is especially useful here. Its upper integral is only partially visible, so the full superposition formula should be reconstructed from the transcript. But the two lower equations are legible and directly support the local point being made.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.56\textwidth]{lecture_09_figure_03.png}
+\caption{Momentum-space probability and free-particle energy}
+\end{figure}
+
+The cleaned equations are
+\begin{equation}
+P(q)=\tilde\psi^*(q)\tilde\psi(q),
+\end{equation}
+and
+\begin{equation}
+E=\frac{p^2}{2m}.
+\end{equation}
+The notation \(q\) matters. The lecture corrects the symbol precisely because \(p\) is already serving as the dummy variable of integration in the general superposition formula.
+
+So far \(\tilde\psi(p)\) is still only an amplitude function in momentum space. The lecture now asks the right operational question: what does it mean in terms of the original wave function in \(x\)-space? To answer that, let us go to time \(t=0\). This is exactly the move the lecture makes.
+
+The next board frame records the rewrite step. The left-hand side is heavily occluded by Susskind's body, so the full equation must be reconstructed from the transcript. What the frame does securely preserve is the rhythm of the board: the earlier momentum integral on the left, and the new \(\psi\)-expression on the right.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.56\textwidth]{lecture_09_figure_04.png}
+\caption{Momentum integral rewritten as the initial wave function}
+\end{figure}
+
+At \(t=0\), the time phase disappears, and on the board the lecture temporarily suppresses \(\hbar\) in the Fourier formulas. In that shorthand,
+\begin{equation}
+\psi(x,0)
+=
+\int_{-\infty}^{\infty}
+\frac{dp}{\sqrt{2\pi}}\,
+e^{ipx}\,\tilde\psi(p).
+\end{equation}
+Immediately afterward, the lecture abbreviates \(\psi(x,0)\) to \(\psi(x)\) when the discussion is restricted to the initial data. The inverse transform is
+\begin{equation}
+\tilde\psi(p)
+=
+\int_{-\infty}^{\infty}
+\frac{dx}{\sqrt{2\pi}}\,
+e^{-ipx}\,\psi(x,0).
+\end{equation}
+Thus \(\tilde\psi(p)\) is not an arbitrary bookkeeping device. It is the Fourier transform of the initial wave function.
+
+\subsection{Question \& Answer}
+
+Could this free-particle equation describe a photon?
+
+No. The lecture answers this immediately and without hedging. This is a nonrelativistic theory. Its Hamiltonian is built from
+\begin{equation}
+E=\frac{p^2}{2m},
+\end{equation}
+and photons do not satisfy that relation. In fact they do not come with a mass parameter \(m\) of this sort at all. So one would not use this equation in this form for a photon. It is the appropriate description for particles moving much slower than the speed of light.
+
+\section{Dispersive Time Evolution from Initial Data}
+
+Once we know what \(\tilde\psi(p)\) means, we also know how to solve an initial-value problem. This is the practical heart of the lecture. Suppose someone tells us the wave function at time \(t=0\). What do we do?
+
+We proceed exactly in the order Susskind lays out:
+\begin{enumerate}
+\item Start with the initial wave function \(\psi(x,0)\).
+\item Compute its Fourier transform \(\tilde\psi(p)\).
+\item Put that \(\tilde\psi(p)\) into the time-dependent superposition formula.
+\item Let each momentum component acquire its own phase.
+\item Reconstruct \(\psi(x,t)\), and then compute \(|\psi(x,t)|^2\).
+\end{enumerate}
+
+Equivalently, one may say that the Fourier transform itself evolves by a phase:
+\begin{equation}
+\tilde\psi(p,t)
+=
+e^{-i p^2 t/(2m\hbar)}\tilde\psi(p,0).
+\end{equation}
+Therefore
+\begin{equation}
+\psi(x,t)
+=
+\int_{-\infty}^{\infty}
+\frac{dp}{\sqrt{2\pi}}\,
+e^{ipx/\hbar}
+e^{-i p^2 t/(2m\hbar)}
+\tilde\psi(p,0).
+\end{equation}
+
+The lecture then makes the physical point. A general wave packet will not preserve its shape. Different Fourier components carry different momenta, hence different energies, hence different time phases. The result is a complicated evolution in which the packet deforms. This is precisely what the student in the lecture calls a dispersive wave, and Susskind agrees: the different components propagate with different speeds. He mentions phase velocity and group velocity, but postpones that subject. Here the essential statement is simpler and already sufficient. Free evolution is dispersive because the time phase depends on \(p^2\), so different momentum components do not stay locked together.
+
+\section{Expectation Values, Commutators, Potentials, and the Classical Limit}
+
+At this point the lecture deliberately backs off from the special free-particle calculation. Let us put a little variety into this, Susskind says. Before studying the more complicated Schr\"odinger equation with a potential, let us remind ourselves how expectation values evolve. That reminder is the bridge to the classical limit.
+
+\paragraph{Expectation values and their time evolution.}
+Take an observable \(\hat K\), assumed not to depend explicitly on time. Its expectation value is
+\begin{equation}
+\langle K\rangle=\langle\psi|\hat K|\psi\rangle.
+\end{equation}
+Only the bra and ket change with time. Differentiating and using the Schr\"odinger equation gives
+\begin{align}
+\frac{d}{dt}\langle K\rangle
+&=
+\langle \dot\psi|\hat K|\psi\rangle
++
+\langle\psi|\hat K|\dot\psi\rangle \\
+&=
+\frac{i}{\hbar}\langle\psi|\hat H\hat K|\psi\rangle
+-
+\frac{i}{\hbar}\langle\psi|\hat K\hat H|\psi\rangle \\
+&=
+\frac{i}{\hbar}\langle[\hat H,\hat K]\rangle.
+\end{align}
+On the board the lecture sets \(\hbar=1\) for convenience and hesitates openly over signs and order. The clean formula, with \(\hbar\) restored, is the one above.
+
+The corresponding classical law is
+\begin{equation}
+\dot K=\{K,H\}.
+\end{equation}
+The lecture pauses over the order here too, but that pause is part of the pedagogy. The final point is that classical evolution is governed by Poisson brackets, quantum evolution of expectation values by commutators.
+
+\paragraph{How Poisson brackets and commutators line up.}
+Let us begin with a function of position and the momentum. Classically,
+\begin{equation}
+\{f(x),p\}=f'(x),
+\qquad
+\{x,p\}=1.
+\end{equation}
+Quantum mechanically, let \(f(\hat X)\) act on an arbitrary wave function \(\psi(x)\). Then
+\begin{align}
+[f(\hat X),\hat P]\psi(x)
+&=
+f(x)\left(-i\hbar\frac{d\psi}{dx}\right)
+-
+\left(-i\hbar\frac{d}{dx}\right)\bigl(f(x)\psi(x)\bigr) \\
+&=
+f(x)\left(-i\hbar\frac{d\psi}{dx}\right)
++
+i\hbar
+\left(
+f(x)\frac{d\psi}{dx}+f'(x)\psi(x)
+\right) \\
+&=
+i\hbar f'(x)\psi(x).
+\end{align}
+Hence
+\begin{equation}
+[f(\hat X),\hat P]=i\hbar f'(\hat X).
+\end{equation}
+By the same reciprocity between \(x\) and \(p\), the lecture also records
+\begin{equation}
+[\hat X,f(\hat P)]=i\hbar f'(\hat P),
+\end{equation}
+and in particular
+\begin{equation}
+[\hat X,\hat P]=i\hbar.
+\end{equation}
+
+The lecture then checks the algebra. Both Poisson brackets and commutators are antisymmetric:
+\begin{equation}
+\{A,B\}=-\{B,A\},
+\qquad
+[A,B]=-[B,A].
+\end{equation}
+Both satisfy a product rule. The corrected commutator identity, after the classroom correction on the board, is
+\begin{align}
+\{AB,C\} &= A\{B,C\}+B\{A,C\}, \\
+[AB,C] &= A[B,C]+[A,C]B.
+\end{align}
+So in the simple situations relevant here,
+\begin{equation}
+[A,B]\approx i\hbar\,\{A,B\}.
+\end{equation}
+The lecture does warn that operator-ordering ambiguities can spoil a naive one-to-one identification in more complicated expressions. But for the present purpose the parallel is close enough to reveal how the classical equations are going to emerge.
+
+\paragraph{The Schr\"odinger equation with a potential.}
+Now we come back to a particle on a line, but no longer free. The Hamiltonian is
+\begin{equation}
+\hat H=\frac{\hat P^2}{2m}+U(\hat X),
+\end{equation}
+where the force is
+\begin{equation}
+F(x)=-\,\frac{dU}{dx}.
+\end{equation}
+In the position representation, this becomes
+\begin{equation}
+i\hbar \frac{\partial \psi(x,t)}{\partial t}
+=
+\left[
+-\,\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
++
+U(x)
+\right]\psi(x,t).
+\end{equation}
+The lecture emphasizes a simple but important point. \(U(\hat X)\) is an operator. In position space it acts by multiplication. That is why the equation contains \(U(x)\psi(x,t)\), not merely \(U(x)\).
+
+\paragraph{How the average position moves.}
+Now apply the expectation-value formula with \(\hat K=\hat X\):
+\begin{equation}
+\frac{d}{dt}\langle X\rangle
+=
+\frac{i}{\hbar}
+\left\langle
+\left[
+\frac{\hat P^2}{2m}+U(\hat X),\hat X
+\right]
+\right\rangle.
+\end{equation}
+Since any function of \(\hat X\) commutes with \(\hat X\),
+\begin{equation}
+[U(\hat X),\hat X]=0.
+\end{equation}
+So only the kinetic term survives:
+\begin{equation}
+\frac{d}{dt}\langle X\rangle
+=
+\frac{i}{\hbar}
+\left\langle
+\left[
+\frac{\hat P^2}{2m},\hat X
+\right]
+\right\rangle.
+\end{equation}
+Now use the corrected product rule:
+\begin{equation}
+[\hat P^2,\hat X]
+=
+\hat P[\hat P,\hat X]+[\hat P,\hat X]\hat P.
+\end{equation}
+Since \([\hat P,\hat X]=-i\hbar\), this becomes
+\begin{equation}
+[\hat P^2,\hat X]=-2i\hbar \hat P.
+\end{equation}
+Therefore
+\begin{equation}
+\frac{d}{dt}\langle X\rangle=\frac{\langle P\rangle}{m}.
+\end{equation}
+This is exactly the result the lecture wants to see: the average velocity is the average momentum divided by the mass.
+
+\paragraph{How the average momentum moves.}
+Now take \(\hat K=\hat P\):
+\begin{equation}
+\frac{d}{dt}\langle P\rangle
+=
+\frac{i}{\hbar}
+\left\langle
+\left[
+\frac{\hat P^2}{2m}+U(\hat X),\hat P
+\right]
+\right\rangle.
+\end{equation}
+This time \(\hat P\) commutes with \(\hat P^2\), so the interesting term is the potential:
+\begin{equation}
+\frac{d}{dt}\langle P\rangle
+=
+\frac{i}{\hbar}\langle[U(\hat X),\hat P]\rangle.
+\end{equation}
+Using the identity already derived,
+\begin{equation}
+[U(\hat X),\hat P]=i\hbar U'(\hat X),
+\end{equation}
+we obtain
+\begin{equation}
+\frac{d}{dt}\langle P\rangle
+=
+-\,\langle U'(\hat X)\rangle.
+\end{equation}
+In other words,
+\begin{equation}
+\frac{d}{dt}\langle P\rangle=\langle F(\hat X)\rangle.
+\end{equation}
+
+So the exact quantum equations for the expectation values are
+\begin{equation}
+\frac{d}{dt}\langle X\rangle=\frac{\langle P\rangle}{m},
+\end{equation}
+and
+\begin{equation}
+\frac{d}{dt}\langle P\rangle=-\,\langle U'(\hat X)\rangle.
+\end{equation}
+Combining them,
+\begin{equation}
+m\frac{d^2}{dt^2}\langle X\rangle=-\,\langle U'(\hat X)\rangle.
+\end{equation}
+
+This is where the lecture cashes its promise. If the wave packet is well localized and the potential is smooth across the region where the wave function has appreciable support, then the force does not vary much across the packet. In that circumstance,
+\begin{equation}
+\langle F(\hat X)\rangle \approx F(\langle X\rangle),
+\end{equation}
+and so
+\begin{equation}
+m\frac{d^2}{dt^2}\langle X\rangle \approx F(\langle X\rangle).
+\end{equation}
+That is the classical limit the lecture wants. But the exact quantum statement is still the one involving \(\langle U'(\hat X)\rangle\). The replacement by \(F(\langle X\rangle)\) is an approximation, justified only for a narrow packet in a smooth potential.
+
+\section{Summary}
+
+The lecture begins by insisting that quantum mechanics was not born as a decorative correction to classical mechanics. Blackbody radiation, photons, atomic structure, and probabilistic decay already forced a more radical change of viewpoint. That is why the historical prelude matters: it prepares the quantum-first stance of the whole lecture.
+
+Once we return to the Schr\"odinger equation, the mathematics unfolds in a very specific order. We guess the free Hamiltonian \(\hat H=\hat P^2/2m\), translate from kets to \(\psi(x,t)\), derive the free-particle Schr\"odinger equation, and solve it first by plane waves. From there we pass to the general momentum-space superposition, identify \(\tilde\psi(p)\) as the Fourier transform of the initial wave function, and see why free evolution is dispersive.
+
+Finally the lecture steps back and asks how averages move. The exact quantum equations
+\begin{equation}
+\frac{d}{dt}\langle X\rangle=\frac{\langle P\rangle}{m},
+\qquad
+\frac{d}{dt}\langle P\rangle=-\,\langle U'(\hat X)\rangle
+\end{equation}
+show why momentum and Hamiltonian deserve their classical names in the appropriate limit. Classical mechanics appears only at the end, and only as the motion of a narrow wave packet in a smooth potential. That is exactly the direction of explanation the lecture set out to establish.
