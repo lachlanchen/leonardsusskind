@@ -108,7 +108,8 @@ The lecture then insists on a crucial point. If the first measurement gives \(+1
 \qquad
 -1\to -1\to -1\to \cdots.
 \end{equation}
-Thus the measurement is not merely a readout. It is also a preparation. Once the qubit has been found in a given state, repeating the same experiment leaves that result fixed.
+Thus the measurement is not merely a readout. It is also a preparation.
+Once the qubit has been found in a given state, repeating the same experiment leaves that result fixed.
 
 This is the first genuinely quantum lesson of the lecture, but it is phrased operationally rather than interpretively. The lecture does not yet speak in terms of wave-function collapse. It speaks in terms of what the apparatus does: the first measurement produces a result; the second, if done immediately in the same orientation, confirms it.
 
@@ -132,6 +133,7 @@ What the apparatus actually returns is not \(0\). It returns, once again, only \
 
 \begin{figure}[ht]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[>=stealth,thick,scale=0.90]
 \draw[->] (0,0)--(0,1.8);
 \node at (0,-0.35) {\(\uparrow\)};
@@ -164,6 +166,7 @@ What the apparatus actually returns is not \(0\). It returns, once again, only \
 \node at (11.7,-0.55) {average \(=\cos\theta\)};
 \node at (11.7,2.02) {\(\theta\)};
 \end{tikzpicture}
+}%
 \caption{Cleaned reconstruction of the detector-orientation experiments. The redraw follows the transcript's logic rather than every literal chalk arrow.}
 \end{figure}
 
@@ -187,7 +190,9 @@ For the \(90^\circ\) case, the lecture's statement is:
 \qquad
 \text{but the ensemble average is }0.
 \end{equation}
-This is not because the apparatus is secretly returning intermediate values. It never does. The average is zero only because, over many identically prepared trials, there are as many \(+1\)'s as \(-1\)'s.
+This is not because the apparatus is secretly returning intermediate values.
+It never does.
+The average is zero only because, over many identically prepared trials, there are as many \(+1\)'s as \(-1\)'s.
 
 If we now rotate the detector by an arbitrary angle \(\theta\) relative to the preparation axis, the same pattern survives. Each single trial still gives only \(+1\) or \(-1\), but the average now depends smoothly on \(\theta\). As a convenient editorial shorthand, let
 \begin{equation}
