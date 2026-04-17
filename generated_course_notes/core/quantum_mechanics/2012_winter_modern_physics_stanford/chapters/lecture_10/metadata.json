@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford/039 - Lecture 10 \uff5c Modern Physics\uff1a Quantum Mechanics (Stanford) [JIuU3xnOx7g].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford/039 - Lecture 10 \uff5c Modern Physics\uff1a Quantum Mechanics (Stanford) [JIuU3xnOx7g].mp4",
+  "lecture_number": 10,
+  "lecture_slug": "lecture_10",
+  "lecture_title": "Lecture 10 : Modern Physics\uff1a Quantum Mechanics (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_10_figure_02.png",
+      "timestamp_seconds": 657.74,
+      "timestamp_hhmmss": "00:10:57.740",
+      "source_candidate": "lecture_10_window_02_candidate_04_001057740.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the most useful frame because it preserves the full spring-mass sketch on the left, keeps the harmonic-oscillator expression across the top legible, and shows the lower partial-derivative mark in its most finished state within this subtitle window. The earlier candidates are slightly less complete in the symbol being written.",
+      "subtitle_excerpt": "partial derivative of the Lagrangian,",
+      "segment_start_seconds": 656.68,
+      "segment_start_hhmmss": "00:10:56.680",
+      "segment_end_seconds": 658.1,
+      "segment_end_hhmmss": "00:10:58.100",
+      "caption_hint": "spring-mass oscillator and Lagrangian term"
+    },
+    {
+      "name": "lecture_10_figure_03.png",
+      "timestamp_seconds": 1355.587,
+      "timestamp_hhmmss": "00:22:35.587",
+      "source_candidate": "lecture_10_window_03_candidate_02_002235587.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the clearest and least occluded of the four while preserving the full three-line board sequence: the Hamiltonian derived from the Lagrangian, its rewritten harmonic-oscillator form, and the final line showing its action on the wave function. Later candidates add slight hand intrusion without adding more mathematical content.",
+      "subtitle_excerpt": "That's the action of the Hamiltonian on psi",
+      "segment_start_seconds": 1354.66,
+      "segment_start_hhmmss": "00:22:34.660",
+      "segment_end_seconds": 1357.1,
+      "segment_end_hhmmss": "00:22:37.100",
+      "caption_hint": "Hamiltonian acting on the wave function"
+    },
+    {
+      "name": "lecture_10_figure_04.png",
+      "timestamp_seconds": 2674.68,
+      "timestamp_hhmmss": "00:44:34.680",
+      "source_candidate": "lecture_10_window_04_candidate_04_004434680.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is fully unobstructed and preserves the whole board calculation cleanly: the Gaussian trial wavefunction at the top, the derivative step underneath, the circled operator combination in the middle, and the final eigenvalue form on the right. The candidates are very similar, but this latest frame keeps the most complete finished board state with no lecturer intrusion.",
+      "subtitle_excerpt": "So we found one eigenvector of the Hamiltonian",
+      "segment_start_seconds": 2670.2,
+      "segment_start_hhmmss": "00:44:30.200",
+      "segment_end_seconds": 2675.28,
+      "segment_end_hhmmss": "00:44:35.280",
+      "caption_hint": "Gaussian eigenvector of the Hamiltonian"
+    },
+    {
+      "name": "lecture_10_figure_05.png",
+      "timestamp_seconds": 2813.743,
+      "timestamp_hhmmss": "00:46:53.743",
+      "source_candidate": "lecture_10_window_05_candidate_02_004653743.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the best balance of legibility and context. The upper board equation is the clearest and most complete here, while Susskind's gesture is less intrusive than in the first candidate and the later candidates crop away too much of the mathematics.",
+      "subtitle_excerpt": "Psi equals one is a state of zero momentum.",
+      "segment_start_seconds": 2812.58,
+      "segment_start_hhmmss": "00:46:52.580",
+      "segment_end_seconds": 2815.64,
+      "segment_end_hhmmss": "00:46:55.640",
+      "caption_hint": "harmonic-oscillator Schr\u00f6dinger equation on the board"
+    },
+    {
+      "name": "lecture_10_figure_06.png",
+      "timestamp_seconds": 4780.938,
+      "timestamp_hhmmss": "01:19:40.938",
+      "source_candidate": "lecture_10_window_06_candidate_04_011940938.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest overall board view in the window. The top-line operator identity is most visible here, and Susskind has turned enough that he occludes less of the central writing than in the earlier candidates. It is the most usable frame for documenting the board layout at the moment he identifies the eigenvector of the Hamiltonian.",
+      "subtitle_excerpt": "So this is the eigenvector of the Hamiltonian,",
+      "segment_start_seconds": 4779.16,
+      "segment_start_hhmmss": "01:19:39.160",
+      "segment_end_seconds": 4781.18,
+      "segment_end_hhmmss": "01:19:41.180",
+      "caption_hint": "ladder-operator form of the Hamiltonian"
+    }
+  ]
+}
