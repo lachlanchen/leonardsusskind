@@ -125,6 +125,7 @@ The lower board line is only partially visible in the preserved frame, but the t
 
 \begin{figure}[htbp]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=0.92]
 \begin{scope}[xshift=-4.15cm]
 \draw[->] (-1.7,0)--(1.9,0);
@@ -148,7 +149,8 @@ The lower board line is only partially visible in the preserved frame, but the t
 \draw (0,2.35) node {$r=\pi$};
 \end{scope}
 \end{tikzpicture}
-\caption{A clean reconstruction of the lecture's two pictures: flat space as nested circles, and the sphere as a family of circles that grow, reach a maximum, and then shrink back to zero.}
+}%
+\caption{A clean reconstruction of the lecture's two pictures: flat space as nested circles, and the sphere as circles that grow, reach a maximum, and then shrink back to zero.}
 \end{figure}
 
 At this point the lecture introduces the notation \(d\Omega_2^2\) for the metric of the unit \(2\)-sphere, just as \(d\Omega_1^2\) denotes the metric of the unit circle. The same pattern then continues one dimension higher. In flat three-space, when we use polar coordinates around ourselves, the shells at fixed distance are \(2\)-spheres, so
@@ -205,6 +207,7 @@ The same shell picture also tells us about galaxy counts. In flat space the shel
 
 \begin{figure}[htbp]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[x=1.15cm,y=1.05cm]
 \begin{scope}
 \draw[->] (0,0)--(3.55,0) node[right] {$r$};
@@ -239,7 +242,8 @@ plot[smooth] coordinates {(0.3,2.0) (0.7,1.15) (1.1,0.72) (1.6,0.42) (2.0,0.25) 
 \draw (2.15,0.2) node[above] {$d/\sinh r$};
 \end{scope}
 \end{tikzpicture}
-\caption{Left: the shell-size factors \(r\), \(\sin r\), and \(\sinh r\), which control how many objects lie on a shell at distance \(r\). Right: the corresponding angular-size laws \(d/r\), \(d/\sin r\), and \(d/\sinh r\). On the sphere the apparent size turns around; in hyperbolic space it shrinks exponentially fast.}
+}%
+\caption{Left: the shell-size factors \(r\), \(\sin r\), and \(\sinh r\), which control how many objects lie on a shell at distance \(r\). Right: the angular-size laws \(d/r\), \(d/\sin r\), and \(d/\sinh r\). On the sphere the apparent size turns around; in hyperbolic space it shrinks exponentially fast.}
 \end{figure}
 
 \subsection{Question \& Answer}
@@ -260,6 +264,7 @@ That distortion is not a flaw in the sphere. It is a property of the projection.
 
 \begin{figure}[htbp]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \begin{scope}[xshift=-4.2cm]
 \draw[thick] (-2.2,-1.25)--(2.2,-1.25);
@@ -294,7 +299,8 @@ plot[smooth] coordinates
 \draw (1,0.72) -- (1,1.28);
 \end{scope}
 \end{tikzpicture}
-\caption{Cross-sectional sketches of the two projection ideas used in the lecture: stereographic projection of the sphere onto a plane, and the analogous projection of the hyperboloid to a finite disk (shown here in cross-section as a finite interval).}
+}%
+\caption{Cross-sectional sketches of the two projection ideas used in the lecture: stereographic projection of the sphere onto a plane, and the analogous projection of the hyperboloid to a finite disk, shown here in cross-section as a finite interval.}
 \end{figure}
 
 Now the lecture brings in the third homogeneous geometry. In two dimensions the metric is
