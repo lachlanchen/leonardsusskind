@@ -310,6 +310,7 @@ The lecture then turns to the distinction between intrinsic and extrinsic geomet
 
 \begin{figure}[htbp]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=0.92]
 \begin{scope}
 \draw[smooth] (-3.1,1.7) .. controls (-2.2,2.5) and (-1.1,2.1) .. (-0.4,1.7)
@@ -336,7 +337,8 @@ The lecture then turns to the distinction between intrinsic and extrinsic geomet
 \fill (2.2,0.55) circle (0.04);
 \end{scope}
 \end{tikzpicture}
-\caption{A schematic intrinsic-versus-extrinsic picture: folding changes the embedding, not the local distance relations on the surface}
+}%
+\caption{A schematic intrinsic-versus-extrinsic picture: folding changes the embedding, not the local distance relations on the surface.}
 \end{figure}
 
 This is where the lecture states the deeper lesson explicitly.  The relation between tidal force and curvature is not just a loose analogy.  In general relativity, genuine gravity is diagnosed by curvature, and flatness means vanishing curvature.  The machinery for proving that comes later, but the target has now come into focus.
