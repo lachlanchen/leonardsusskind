@@ -1,0 +1,268 @@
+\chapter{Curvature, Ricci, and the First Appearance of Matter}
+
+We continue the story of curvature rather than restarting it. The lecture begins with the simplest operational picture: take a vector around a small closed loop, see whether it comes back to itself, and define curvature from the resulting failure. From there the discussion tightens in two directions at once. First, curvature must be local, so the loop is taken infinitesimal. Second, the geometry we care about is intrinsic, the sort of geometry a bug or a gyroscope could discover without looking into any embedding space. Only after that groundwork is in place do we let the rank-four Riemann tensor appear. The second half of the lecture then changes register: geometry is only half of gravity, and the other half is matter, first rehearsed with charge and current, then assembled properly into the energy-momentum tensor.
+
+\section{Recap: Curvature from Parallel Transport}
+
+Let us begin exactly where Susskind begins: with a two-dimensional surface and a vector that lies in the surface. Even on a curved surface we still know what it means to move as straight as possible along the surface, and we still know what it means to parallel transport a vector. What curvature does is not to destroy these notions, but to make them nontrivial when we go around a closed path.
+
+Take a very small closed loop and a vector tangent to the surface at one point of the loop. Parallel transport the vector all the way around. If the enclosed region is flat, the vector comes back unchanged. If the region contains curvature, the vector returns rotated by a small angle. That angle, divided by the enclosed area, gives the curvature.
+
+\begin{equation}
+K=\lim_{\Delta A\to 0}\frac{\Delta\theta}{\Delta A}.
+\end{equation}
+
+The sign matters. The lecture fixes the sign convention by choosing a direction of circumnavigation, say counterclockwise. If counterclockwise circumnavigation produces counterclockwise rotation of the vector, the curvature is positive. If counterclockwise circumnavigation produces clockwise rotation, the curvature is negative. In this sense spherical surfaces are positive-curvature surfaces, while saddle-like surfaces have negative curvature.
+
+This is a local definition. We are not meant to walk around the whole Earth. If our instruments were accurate enough, a sufficiently small loop would already detect the curvature. That is the important point: curvature is diagnosed locally by infinitesimal loops.
+
+A useful benchmark, stated explicitly in the lecture, is the sphere. For a sphere of radius \(a\),
+\begin{equation}
+K_{\text{sphere}}=\frac{1}{a^2}.
+\end{equation}
+The larger the sphere, the closer it is locally to flatness; the smaller the sphere, the larger the curvature.
+
+\section{Intrinsic Versus Extrinsic Geometry}
+
+At this point the lecture stops to prevent a common confusion. We often draw a curved two-dimensional surface by embedding it in a three-dimensional space, but that is not the geometry we are after. We are not interested in the way a surface bends in some surrounding space. We want the geometry that can be discovered from within the surface itself.
+
+Susskind's bug on the surface is the right image. The bug sees only along the surface, carries rulers and protractors that lie in the surface, and performs experiments without ever probing in the perpendicular direction. Whatever the bug can determine is intrinsic. The opposite notion, depending on how the surface sits in a larger space, is extrinsic.
+
+Geodesics, parallel transport, and covariant differentiation are intrinsic in precisely this sense. A little wheeled device with its steering fixed straight ahead will trace the straightest possible path on the surface. On a sphere that path is a great circle. Likewise, a gyroscope supplies a physical model of parallel transport: it carries an orientation that lives in the space itself, not in some imagined external dimension.
+
+The lecture also insists on a key feature of Riemannian geometry: perpendicularity is preserved under parallel transport. If two vectors are perpendicular at the start, they remain perpendicular when transported. In two dimensions that already goes a long way toward fixing what parallel transport means. In higher dimensions it is not yet enough, because a vector can remain perpendicular to a geodesic while still spiraling around it. That is one reason the higher-dimensional story becomes more subtle.
+
+A good operational picture is this: along the surface of the Earth, or along a geodesic more generally, one ``drives straight ahead.'' One locks the steering wheel and does not compensate for bumps, hills, or embedding effects. The path so traced is a geodesic. In locally inertial coordinates, chosen to be as flat as possible at a point, the spurious change due to the coordinate frame disappears there, and the geometric content becomes transparent.
+
+\section{From Small Loops to the Riemann Tensor}
+
+Once we leave two dimensions, a single curvature scalar no longer tells the whole story. In three dimensions one can still cheat a little by speaking about an axis perpendicular to a small loop, but that is already special to three dimensions. In general dimensions, a plane is specified by two directions, and the curvature problem naturally involves two planes.
+
+The first plane is the plane of excursion: the infinitesimal plane in which we carry the vector around a small loop. The second is the plane of rotation: the plane in which the vector is rotated when it comes back. This is the real origin of the four indices of the curvature tensor.
+
+So let us choose two infinitesimal displacements, \(\delta x^\mu\) and \(dx^\nu\), spanning a small rectangle. The area enclosed is proportional to the product \(\delta x^\mu dx^\nu\). If we parallel transport a vector \(V^\rho\) around the loop, the net change must vanish when there is no enclosed area, and therefore the leading nontrivial effect must be proportional to the area. It must also be linear in the vector itself. That is the geometric content behind the definition
+\begin{equation}
+\delta V^\rho = R^\rho{}_{\sigma\mu\nu}V^\sigma\,\delta x^\mu dx^\nu.
+\end{equation}
+Here we have written the canonical index arrangement rather than following the lecture's on-the-fly corrections literally; the spoken discussion is conceptually clear but not index-stable at every moment.
+
+The first-order transport law comes directly from the vanishing of the covariant derivative along a curve:
+\begin{equation}
+\frac{D V^\rho}{ds}
+=
+\frac{dV^\rho}{ds}
++
+\Gamma^\rho{}_{\alpha\beta}V^\alpha \frac{dx^\beta}{ds}
+=
+0.
+\end{equation}
+Multiplying by \(ds\) gives the infinitesimal update rule
+\begin{equation}
+dV^\rho=-\Gamma^\rho{}_{\alpha\beta}V^\alpha\,dx^\beta.
+\end{equation}
+Now go around the small rectangle. Along one side the vector changes according to this rule. Along the opposite side the rule is slightly different, because the Christoffel symbols have changed from one point to the neighboring point. That difference produces derivatives of \(\Gamma\). Repeating the transport twice also produces quadratic \(\Gamma\Gamma\) terms. The result is the Riemann tensor.
+
+The board formula that Susskind writes is the familiar one:
+\begin{align}
+R^\rho{}_{\sigma\mu\nu}
+&=
+\partial_\mu \Gamma^\rho{}_{\nu\sigma}
+-
+\partial_\nu \Gamma^\rho{}_{\mu\sigma}
++
+\Gamma^\rho{}_{\mu\lambda}\Gamma^\lambda{}_{\nu\sigma}
+-
+\Gamma^\rho{}_{\nu\lambda}\Gamma^\lambda{}_{\mu\sigma}.
+\end{align}
+The important structural point is not merely the formula itself, but what it means. Curvature is the obstruction to returning a vector to its original orientation after an infinitesimal circumnavigation. It is therefore an intrinsic diagnostic of nonflatness.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_02.png}
+\caption{Riemann tensor formula on the board.}
+\end{figure}
+
+\subsection{Question \& Answer}
+
+Why is this really a tensor? The lecture pauses here because the objection is a good one. A derivative of a vector is not, in general, a tensor. So why should the coefficient in the loop formula be tensorial?
+
+The answer is that the left-hand side of the holonomy formula is not a derivative of vectors at different points. It is the difference of two vectors at the same point: the original vector and the vector returned after transport around the loop. A difference of vectors at one point is again a vector. The displacements \(\delta x^\mu\) and \(dx^\nu\) are vectors, and the starting vector \(V^\sigma\) is arbitrary. If
+\[
+\delta V^\rho = R^\rho{}_{\sigma\mu\nu}V^\sigma\,\delta x^\mu dx^\nu
+\]
+holds for every \(V^\sigma\), then the coefficient object \(R^\rho{}_{\sigma\mu\nu}\) must transform as a tensor. That is the theorem Susskind invokes.
+
+The lecture then gives a second way of thinking about the same object. The quadratic Christoffel terms can be read as a matrix commutator,
+\[
+(\Gamma_\mu\Gamma_\nu-\Gamma_\nu\Gamma_\mu)^\rho{}_\sigma,
+\]
+and the whole curvature operator can be summarized by the commutator of covariant derivatives:
+\begin{equation}
+[\nabla_\mu,\nabla_\nu]V^\rho = R^\rho{}_{\sigma\mu\nu}V^\sigma.
+\end{equation}
+That formulation is more abstract, but it says the same thing: covariant derivatives in different directions fail to commute, and the failure is curvature.
+
+\section{Symmetries and the Ricci Tensor}
+
+To expose the symmetries it is best to lower the upper index. We define
+\begin{equation}
+R_{\lambda\sigma\mu\nu}=g_{\lambda\rho}R^\rho{}_{\sigma\mu\nu}.
+\end{equation}
+The lecture contains several self-corrections at this stage, so it is better to write down the cleaned result than to reproduce the false starts. In the all-lowered form, the Riemann tensor satisfies
+\begin{align}
+R_{\alpha\beta\gamma\delta}
+&=-R_{\beta\alpha\gamma\delta}
+=-R_{\alpha\beta\delta\gamma}, \\
+R_{\alpha\beta\gamma\delta}
+&=R_{\gamma\delta\alpha\beta}.
+\end{align}
+These are exactly the symmetries one expects from the geometric roles of the two planes: antisymmetry within each plane, symmetry under exchanging the two planes as pairs.
+
+The next move is contraction. We take one index associated with the plane of circumnavigation and one associated with the plane of rotation, and contract them. In the notation used on the board,
+\begin{equation}
+R_{\beta\delta}=g^{\alpha\gamma}R_{\alpha\beta\gamma\delta}.
+\end{equation}
+This is the Ricci tensor. It has only two indices, and by the symmetries of the Riemann tensor it is symmetric:
+\begin{equation}
+R_{\beta\delta}=R_{\delta\beta}.
+\end{equation}
+
+Susskind is careful about the geometric status of this object. The Ricci tensor is easier to write down than the full Riemann tensor because it has fewer indices, but it is not easier to picture. There is no simple little mental movie for it, not the way there is for parallel transport around a loop. Nevertheless, it is the object that will matter dynamically. In three dimensions the distinction softens because a plane corresponds to a perpendicular axis, and then Ricci and Riemann carry the same information. In four-dimensional space-time, however, the contraction is a real reduction, and it is this reduced object that will stand much closer to Einstein's field equation.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_03.png}
+\caption{Ricci tensor as a contraction of the Riemann tensor.}
+\end{figure}
+
+\section{Local Conservation Warm-Up: Charge Density, Current, and Continuity}
+
+With curvature established, the lecture pivots sharply. Geometry is only half of gravity. The other half is matter. But before talking about energy and momentum, Susskind rehearses the bookkeeping with electric charge, precisely because charge is simpler.
+
+Take a small box of ordinary space, not space-time yet. Let \(dq\) be the charge in a small volume \(dV\). Then the charge density is
+\begin{equation}
+\rho_q=\frac{dq}{dV}.
+\end{equation}
+For a finite region \(V\), the total charge is
+\begin{equation}
+q(V)=\int_V \rho_q\,dV.
+\end{equation}
+
+Now turn from a box to a window. A current is charge passing through an oriented area per unit time. If the window is perpendicular to the \(x\)-direction, the corresponding current component is \(J_x\); similarly for \(J_y\) and \(J_z\). Because we are working with \(c=1\), time and length carry the same units, and the density \(\rho_q\) and the current components \(J_i\) fit naturally together into a four-vector:
+\begin{equation}
+J^\mu=(\rho_q,J_x,J_y,J_z).
+\end{equation}
+The time component is charge density; the spatial components are charge fluxes.
+
+At this point the lecture inserts an important clarification. The total charge itself is a scalar. All observers agree on how much charge there is. The four-current is not a scalar; it is a four-vector. The distinction matters, and it is exactly the sort of distinction we will need later for energy and momentum.
+
+\subsection{Question \& Answer}
+
+Why is global conservation not enough? Because global conservation by itself would allow absurd operational possibilities. If charge could disappear here and reappear far away, the total charge of the universe might still remain constant, but any laboratory experiment would conclude that charge had not been conserved locally.
+
+The real statement is local conservation: the only way the charge inside a room can change is by charge flowing through the walls. The mathematical object that measures net outward flow is the divergence. Therefore the rate of increase of charge density must be the negative of the outward divergence of the current:
+\begin{equation}
+\partial_t \rho_q + \nabla\cdot \mathbf J = 0.
+\end{equation}
+Written out in components,
+\begin{equation}
+\partial_t \rho_q + \partial_x J_x + \partial_y J_y + \partial_z J_z = 0.
+\end{equation}
+If we recognize \(\rho_q\) as the time component of \(J^\mu\), the same equation becomes
+\begin{equation}
+\partial_\mu J^\mu = 0.
+\end{equation}
+This is the continuity equation. It is the compact local form of charge conservation, and it is the immediate model for the conservation law obeyed later by stress-energy.
+
+\section{Energy, Momentum, and the Stress-Energy Tensor}
+
+Now we come to the real source terms of gravity. Energy and momentum are conserved, but unlike total charge they are not invariants. Different observers attribute different energies and momenta to the same system. What is invariant is not each component separately, but the fact that together they form a four-vector:
+\begin{equation}
+P^\mu=(E,p_x,p_y,p_z).
+\end{equation}
+This is the total energy-momentum of a system.
+
+But for field theory and for gravity, total quantities are not enough. We need densities and flows. So we repeat the charge-current construction, now for each component of the energy-momentum four-vector.
+
+The density of energy is \(T^{00}\). The flow of energy along the \(x\)-direction is \(T^{01}\). The density of \(x\)-momentum is \(T^{10}\). The flow of \(x\)-momentum along the \(y\)-direction is \(T^{12}\), and so on. The rule is simple and important:
+\begin{itemize}
+\item the first index tells us which conserved quantity we are talking about;
+\item the second index tells us whether we mean density or flow direction.
+\end{itemize}
+
+Thus the sixteen components arrange themselves into the tensor
+\begin{equation}
+T^{\mu\nu}
+=
+\begin{pmatrix}
+T^{00} & T^{01} & T^{02} & T^{03} \\
+T^{10} & T^{11} & T^{12} & T^{13} \\
+T^{20} & T^{21} & T^{22} & T^{23} \\
+T^{30} & T^{31} & T^{32} & T^{33}
+\end{pmatrix}.
+\end{equation}
+The lecture presents this entry by entry rather than all at once, and that is the right way to think about it. The tensor is not mysterious at birth. It is built component by component from physically meaningful densities and fluxes.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_07_figure_05.png}
+\caption{First stress-energy tensor components on the board.}
+\end{figure}
+
+A few entries are worth naming explicitly:
+\begin{align}
+T^{00} &:\ \text{energy density}, \\
+T^{01} &:\ \text{flow of energy along the }x\text{-direction}, \\
+T^{10} &:\ \text{density of }x\text{-momentum}, \\
+T^{12} &:\ \text{flow of }x\text{-momentum along the }y\text{-direction}.
+\end{align}
+For relativistic systems the tensor turns out to be symmetric,
+\[
+T^{\mu\nu}=T^{\nu\mu},
+\]
+a fact Susskind mentions here but does not derive.
+
+Each row has its own continuity equation. For the energy row,
+\begin{equation}
+\partial_t T^{00}+\partial_x T^{01}+\partial_y T^{02}+\partial_z T^{03}=0.
+\end{equation}
+For the \(x\)-momentum row,
+\begin{equation}
+\partial_t T^{10}+\partial_x T^{11}+\partial_y T^{12}+\partial_z T^{13}=0.
+\end{equation}
+And similarly for the remaining momentum components. All four equations can be compressed into the single tensor equation
+\begin{equation}
+\partial_\mu T^{\nu\mu}=0.
+\end{equation}
+This is local conservation of energy and momentum in special relativity. In general relativity, as the lecture notes explicitly, the ordinary derivative will be replaced by a covariant derivative. That refinement belongs to the next step of the theory.
+
+\section{Geometry, Source, and Motion}
+
+At this point the pieces of general relativity are lying on the table. Geometry is one half of the subject; matter is the other. Curvature represents the gravitational field. Energy and momentum represent the source. The problem Einstein had to solve was to write tensor equations connecting them in a way that makes sense in every frame.
+
+Susskind emphasizes that curvature is the part of the gravitational field that cannot be transformed away. In Newtonian language it is the analog of tidal force. A uniform gravitational field can be disguised locally by going into free fall, but tidal effects remain. In general relativity, curvature is exactly that irreducible residue.
+
+The lecture then turns to the other half of the story: what geometry does to particles. Einstein's guiding principle is simple. Particles move on geodesics of space-time. In flat space-time this reduces to motion along straight lines at constant velocity. In curved space-time it becomes the covariant statement that the tangent vector to the worldline has zero covariant derivative along the worldline:
+\begin{equation}
+\frac{D}{d\tau}\left(\frac{dx^\mu}{d\tau}\right)=0.
+\end{equation}
+Equivalently,
+\begin{equation}
+\frac{d^2x^\mu}{d\tau^2}
++
+\Gamma^\mu{}_{\nu\sigma}
+\frac{dx^\nu}{d\tau}
+\frac{dx^\sigma}{d\tau}
+=0.
+\end{equation}
+Here \(\tau\) is proper time, and \(dx^\mu/d\tau\) is the tangent vector to the worldline.
+
+The lecture ends with a preview of the Newtonian limit. Suppose the gravitational field is weak and the particle moves slowly. Then the spatial components of \(dx^\mu/d\tau\) are small, while the time component is approximately \(dt/d\tau\approx 1\). The dominant term in the Christoffel contribution is therefore the one with two time indices, and the spatial geodesic equation reduces to
+\begin{equation}
+\frac{d^2x^i}{dt^2}+\Gamma^i{}_{00}\approx 0.
+\end{equation}
+So the Christoffel symbols \(\Gamma^i{}_{00}\) play the role of the Newtonian gravitational acceleration. This is the promised bridge: Newton's force law is recovered from the geodesic principle when the geometry is only weakly curved and motion is slow.
+
+\section{Summary}
+
+The lecture builds gravity in the right order. We begin with the operational definition of curvature from parallel transport around a small loop, insist that the notion is intrinsic, and then generalize from a scalar curvature in two dimensions to the four-index Riemann tensor in higher dimensions. We then reduce Riemann to the Ricci tensor, not because Ricci is easy to picture, but because it is the contraction that will matter dynamically. Only after the geometric side is in place do we turn to matter, first through the easier example of charge and current, then through the full energy-momentum tensor and its continuity equation. The chapter closes where the lecture closes: curvature on one side, stress-energy on the other, and geodesic motion as the rule that tells matter how to move through the geometry it helps create.
