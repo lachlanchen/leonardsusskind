@@ -297,6 +297,7 @@ Before giving the model example, the lecture inserts an important distinction. A
 
 \begin{figure}[h]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=0.95]
 \draw (-4.2,0) arc[start angle=25,end angle=335,radius=2.0];
 \draw (-4.2,0) -- (-2.39,0.85);
@@ -311,8 +312,9 @@ Before giving the model example, the lecture inserts an important distinction. A
 \draw (1.5,-1.1) arc[start angle=200,end angle=340,x radius=1.35,y radius=0.45];
 \draw[dashed] (1.78,-0.75) -- (2.8,2.1);
 \draw[dashed] (3.82,-0.75) -- (2.8,2.1);
-\node at (2.8,-2.35) {identified edges form a cone};
+\node at (2.8,-2.35) {identified edges make a cone};
 \end{tikzpicture}
+}%
 \caption{The cone as a flat sheet with an angular deficit and the corresponding identified surface.}
 \end{figure}
 
@@ -320,6 +322,7 @@ The cone is produced by cutting an angular wedge out of a flat sheet and identif
 
 \begin{figure}[h]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=0.92]
 \draw (-4.0,0) arc[start angle=25,end angle=335,radius=2.0];
 \draw (-4.0,0) -- (-2.19,0.85);
@@ -338,6 +341,7 @@ The cone is produced by cutting an angular wedge out of a flat sheet and identif
 \node at (5.05,0.02) {$\theta$};
 \node at (3.0,-2.45) {loop enclosing the tip};
 \end{tikzpicture}
+}%
 \caption{A loop that avoids the cone tip returns the vector unchanged; a loop that encloses the tip returns it rotated by the angular deficit.}
 \end{figure}
 
@@ -355,6 +359,7 @@ The sphere supplies the smooth version of the same idea. Take a small loop on a 
 
 \begin{figure}[h]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \draw (0,0) circle (2.0);
 \draw (-2.0,0) arc[start angle=180,end angle=360,x radius=2.0,y radius=0.55];
@@ -363,8 +368,9 @@ The sphere supplies the smooth version of the same idea. Take a small loop on a 
 \draw (0,0.85) ellipse (0.92 and 0.22);
 \draw[->] (0.92,0.85) arc[start angle=0,end angle=290,x radius=0.92,y radius=0.22];
 \node at (0,1.25) {$\delta A$};
-\node at (0,-2.45) {A small loop on the sphere and the tangent-cone picture behind the area law.};
+\node at (0,-2.45) {Small loop on the sphere and tangent-cone picture};
 \end{tikzpicture}
+}%
 \caption{For a sufficiently small loop on a smooth surface, the transport defect is controlled by the enclosed area.}
 \end{figure}
 
