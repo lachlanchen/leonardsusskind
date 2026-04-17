@@ -72,7 +72,18 @@ run_name="${meta[2]}"
 pocket_name="${filename%.pdf}_pocket_1_2x.pdf"
 pocket_src="$repo_root/all_notes/pocket_books_1_2x/$pocket_name"
 pocket_dst="$repo_root/$root_track_dir/$run_name/$pocket_name"
+root_pdf="$repo_root/$root_track_dir/$run_name/$filename"
+course_pdf="generated_course_notes/$course/course.pdf"
 
 hardlink_or_copy "$pocket_src" "$pocket_dst"
 
 printf 'published onepointtwo pocket -> %s\n' "$pocket_dst"
+
+bash "$video2book_root/scripts/codex_commit_push.sh" \
+  "$repo_root" \
+  "Publish pocket overflow outputs for $course" \
+  "$course_pdf" \
+  "${root_track_dir}/${run_name}/${filename}" \
+  "${root_track_dir}/${run_name}/${pocket_name}" \
+  "all_notes/${filename}" \
+  "all_notes/pocket_books_1_2x/${pocket_name}"
