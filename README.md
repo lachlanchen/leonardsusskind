@@ -27,7 +27,7 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
 
 <table>
   <tr>
-    <td colspan="3"><strong>Core</strong> · Classical → Quantum → Special → General → Statistical → Cosmology</td>
+    <td colspan="4"><strong>Core</strong> · Classical → Quantum → Special → General → Statistical → Cosmology</td>
   </tr>
   <tr>
     <td align="center">
@@ -84,7 +84,7 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
     <td></td>
   </tr>
   <tr>
-    <td colspan="3"><strong>Supplementary</strong> · Quantum → Special → General → Statistical → Cosmology</td>
+    <td colspan="4"><strong>Supplementary</strong> · Quantum → Special → General → Statistical → Cosmology</td>
   </tr>
   <tr>
     <td align="center">
