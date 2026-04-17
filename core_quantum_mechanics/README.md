@@ -11,11 +11,13 @@
 Published course package:
 
 - `2012_winter_theoretical_minimum/quantum_mechanics_theoretical_minimum.pdf`
+- `2012_winter_modern_physics_stanford/quantum_mechanics_modern_physics_stanford.pdf`
 - `2012_winter_theoretical_minimum/lecture_01.pdf` through `lecture_10.pdf`
 
 These PDFs are hard-linked from:
 
 - `generated_course_notes/core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/`
+- `generated_course_notes/core/quantum_mechanics/2012_winter_modern_physics_stanford/`
 
 ## 🧭 Source Archive Paths
 

@@ -15,6 +15,7 @@ CANONICAL_FILENAMES = {
     "core/cosmology/2013_winter_theoretical_minimum": "cosmology_theoretical_minimum.pdf",
     "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity": "general_relativity_2008_fall_einsteins_general_theory_of_relativity.pdf",
     "core/general_relativity/2012_fall_theoretical_minimum": "general_relativity_theoretical_minimum.pdf",
+    "core/quantum_mechanics/2012_winter_modern_physics_stanford": "quantum_mechanics_modern_physics_stanford.pdf",
     "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title": "quantum_mechanics_theoretical_minimum.pdf",
     "core/special_relativity/2012_spring_theoretical_minimum": "special_relativity_theoretical_minimum.pdf",
     "core/statistical_mechanics/2013_spring_theoretical_minimum": "statistical_mechanics_theoretical_minimum.pdf",
