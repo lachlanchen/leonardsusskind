@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity",
+  "transcript_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/012 - Einstein's General Theory of Relativity \uff5c Lecture 12 [fVqYlSNqSQk].md",
+  "video_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/012 - Einstein's General Theory of Relativity \uff5c Lecture 12 [fVqYlSNqSQk].mp4",
+  "lecture_number": 12,
+  "lecture_slug": "lecture_12",
+  "lecture_title": "Einstein's General Theory of Relativity : Lecture 12",
+  "assets": [
+    {
+      "name": "lecture_12_figure_02.png",
+      "timestamp_seconds": 694.64,
+      "timestamp_hhmmss": "00:11:34.640",
+      "source_candidate": "lecture_12_window_02_candidate_04_001134640.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the strongest frame because the wedge diagram on the left is the most complete and least occluded, while the coordinate labels and the beginning of the transformation equations are also visible on the right. The lecturer has moved far enough aside that the blackboard layout is clearer than in the earlier candidates, making it the best evidentiary frame for both the geometry and the accompanying coordinate relations.",
+      "subtitle_excerpt": "Let's draw the diagram again.",
+      "segment_start_seconds": 693.66,
+      "segment_start_hhmmss": "00:11:33.660",
+      "segment_end_seconds": 694.92,
+      "segment_end_hhmmss": "00:11:34.920",
+      "caption_hint": "Rindler wedge diagram with coordinate map"
+    },
+    {
+      "name": "lecture_12_figure_03.png",
+      "timestamp_seconds": 1336.75,
+      "timestamp_hhmmss": "00:22:16.750",
+      "source_candidate": "lecture_12_window_03_candidate_04_002216750.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame is the clearest and least occluded view of the blackboard equation. It shows the defining structure of the Schwarzschild line element most completely, including the radial denominator and angular term, while the lecturer has moved out of the way. Although the extreme left edge of the equation is slightly cropped, this frame is still the best documentary evidence for the finished board formula.",
+      "subtitle_excerpt": "That is the metric of the Schwarzschild black hole.",
+      "segment_start_seconds": 1332.72,
+      "segment_start_hhmmss": "00:22:12.720",
+      "segment_end_seconds": 1337.3,
+      "segment_end_hhmmss": "00:22:17.300",
+      "caption_hint": "Schwarzschild metric on the board"
+    },
+    {
+      "name": "lecture_12_figure_04.png",
+      "timestamp_seconds": 4246.67,
+      "timestamp_hhmmss": "01:10:46.670",
+      "source_candidate": "lecture_12_window_04_candidate_03_011046670.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame gives the best overall view of the blackboard at the key explanatory moment. The central wedge diagram is fully legible, the lecturer is no longer actively pointing across the lines, and the nearby invariant-style equations remain visible without the heavier occlusion seen in the earlier candidates. It is the most useful frame for reconstructing both the causal diagram and the accompanying coordinate relations.",
+      "subtitle_excerpt": "nothing passes the horizon until omega equals infinity.",
+      "segment_start_seconds": 4244.59,
+      "segment_start_hhmmss": "01:10:44.590",
+      "segment_end_seconds": 4247.79,
+      "segment_end_hhmmss": "01:10:47.790",
+      "caption_hint": "horizon reached only at infinite omega"
+    },
+    {
+      "name": "lecture_12_figure_05.png",
+      "timestamp_seconds": 4908.004,
+      "timestamp_hhmmss": "01:21:48.004",
+      "source_candidate": "lecture_12_window_05_candidate_04_012148004.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This is the best frame because the lecturer has moved far enough left that the central equation block is much less occluded, while the left edge still preserves the beginning of the redrawn diagram. It is the most useful single frame for note writing: it documents both the metric in Rindler-like form and the board layout of the new diagram being set up.",
+      "subtitle_excerpt": "Let's redraw the diagram and try to figure out where...",
+      "segment_start_seconds": 4904.73,
+      "segment_start_hhmmss": "01:21:44.730",
+      "segment_end_seconds": 4908.45,
+      "segment_end_hhmmss": "01:21:48.450",
+      "caption_hint": "Rindler-form metric with redraw setup"
+    },
+    {
+      "name": "lecture_12_figure_06.png",
+      "timestamp_seconds": 6468.21,
+      "timestamp_hhmmss": "01:47:48.210",
+      "source_candidate": "lecture_12_window_06_candidate_04_014748210.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the best frame because the lower source equation has just been completed and the lecturer has moved enough that both the main Einstein-equation line and the Newtonian-potential analogy are readable. The earlier candidates catch the writing in progress, but this one is the most finished and least occluded.",
+      "subtitle_excerpt": "the potential equals the energy distribution,",
+      "segment_start_seconds": 6466.01,
+      "segment_start_hhmmss": "01:47:46.010",
+      "segment_end_seconds": 6468.51,
+      "segment_end_hhmmss": "01:47:48.510",
+      "caption_hint": "Einstein equation and Poisson analogy"
+    }
+  ]
+}
