@@ -12,6 +12,7 @@ The lecture's little bug is the right guide. A bug confined to the surface canno
 
 \begin{figure}[t]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \begin{scope}
 \draw (-1.8,-1.1) rectangle (1.8,1.1);
@@ -32,6 +33,7 @@ The lecture's little bug is the right guide. A bug confined to the surface canno
 \node at (0,1.45) {curled sheet};
 \end{scope}
 \end{tikzpicture}
+}%
 \caption{Schematic reconstruction of the curled-page argument. The embedding changes, but lengths measured along the page do not. The bug, confined to the surface, has access only to the intrinsic geometry.}
 \end{figure}
 
@@ -57,6 +59,7 @@ A triangular lattice is the cleanest example. If the links form equilateral tria
 
 \begin{figure}[t]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \begin{scope}
 \draw (0,0) -- (1,0) -- (2,0);
@@ -96,6 +99,7 @@ A triangular lattice is the cleanest example. If the links form equilateral tria
 \node at (1.0,-0.55) {six enlarged links at one node};
 \end{scope}
 \end{tikzpicture}
+}%
 \caption{Schematic reconstruction of the triangulation argument. Equal neighboring distances can be realized in a flat layout; altering the six links that meet one node forces a bulge if the lengths are to remain fixed.}
 \end{figure}
 
