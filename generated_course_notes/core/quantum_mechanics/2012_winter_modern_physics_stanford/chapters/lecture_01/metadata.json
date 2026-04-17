@@ -1,0 +1,52 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford/030 - Lecture 1 \uff5c Modern Physics\uff1a Quantum Mechanics (Stanford) [JzhlfbWBuQ8].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford/030 - Lecture 1 \uff5c Modern Physics\uff1a Quantum Mechanics (Stanford) [JzhlfbWBuQ8].webm",
+  "lecture_number": 1,
+  "lecture_slug": "lecture_01",
+  "lecture_title": "Lecture 1 : Modern Physics\uff1a Quantum Mechanics (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_01_figure_02.png",
+      "timestamp_seconds": 2756.45,
+      "timestamp_hhmmss": "00:45:56.450",
+      "source_candidate": "lecture_01_window_02_candidate_01_004556450.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the clearest and least occluded frame. It preserves the full board layout at the moment the probability distribution is being introduced: the broad hump-shaped curve is fully visible, the left circular sketch is unobstructed, and the auxiliary triangle-like diagram at upper right is still legible. Later candidates are progressively blocked by the lecturer\u2019s pointing hand over the main curve.",
+      "subtitle_excerpt": "let's plot the probability distribution",
+      "segment_start_seconds": 2756.232,
+      "segment_start_hhmmss": "00:45:56.232",
+      "segment_end_seconds": 2758.047,
+      "segment_end_hhmmss": "00:45:58.047",
+      "caption_hint": "probability-distribution sketch on the board"
+    },
+    {
+      "name": "lecture_01_figure_04.png",
+      "timestamp_seconds": 3697.521,
+      "timestamp_hhmmss": "01:01:37.521",
+      "source_candidate": "lecture_01_window_04_candidate_04_010137521.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame captures the most finished and useful board state for the subtitle moment. The equation cluster is more complete than in the earlier candidates, including the energy-frequency relation, the angular-frequency relation, and the boxed wave-speed relation, while the lecturer has moved enough that the key formulas are less obscured. Although the earlier frames retain more of the wave sketch, this later frame is better for note writing because the mathematics relevant to the statement about momentum and wavelength is more fully assembled.",
+      "subtitle_excerpt": "Momentum and wavelength are inverse to each other.",
+      "segment_start_seconds": 3694.582,
+      "segment_start_hhmmss": "01:01:34.582",
+      "segment_end_seconds": 3697.922,
+      "segment_end_hhmmss": "01:01:37.922",
+      "caption_hint": "photon relations leading to inverse momentum-wavelength relation"
+    },
+    {
+      "name": "lecture_01_figure_05.png",
+      "timestamp_seconds": 3789.756,
+      "timestamp_hhmmss": "01:03:09.756",
+      "source_candidate": "lecture_01_window_05_candidate_03_010309756.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the best balance of legibility and relevance. It preserves the broader equation cluster needed to reconstruct the erased statement: the energy-frequency relation is clearly visible on the left, the angular-frequency relation remains readable on the right, and the lecturer is actively rewriting the missing equation at center-right. The earlier frames show less of the left-hand formula context, while the later frame crops the right-hand relation more tightly without revealing the rewritten equation any better.",
+      "subtitle_excerpt": "The equation that I erased is that the momentum",
+      "segment_start_seconds": 3787.702,
+      "segment_start_hhmmss": "01:03:07.702",
+      "segment_end_seconds": 3790.862,
+      "segment_end_hhmmss": "01:03:10.862",
+      "caption_hint": "reconstructing the erased momentum relation"
+    }
+  ]
+}
