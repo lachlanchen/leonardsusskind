@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity",
+  "transcript_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/007 - Einstein's General Theory of Relativity \uff5c Lecture 7 [xOzVmC-4gpw].md",
+  "video_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/007 - Einstein's General Theory of Relativity \uff5c Lecture 7 [xOzVmC-4gpw].mp4",
+  "lecture_number": 7,
+  "lecture_slug": "lecture_07",
+  "lecture_title": "Einstein's General Theory of Relativity : Lecture 7",
+  "assets": [
+    {
+      "name": "lecture_07_figure_01.png",
+      "timestamp_seconds": 0.0,
+      "timestamp_hhmmss": "00:00:00.000",
+      "source_candidate": "lecture_07_window_01_candidate_03_000008669.png",
+      "recommended_use": "screenshot_only",
+      "rationale": "All four candidates are identical Stanford title cards and contain no blackboard mathematics, diagram, or lecture layout useful for note writing.",
+      "subtitle_excerpt": "This program is brought to you by Stanford University.",
+      "segment_start_seconds": 6.679,
+      "segment_start_hhmmss": "00:00:06.679",
+      "segment_end_seconds": 9.74,
+      "segment_end_hhmmss": "00:00:09.740",
+      "caption_hint": "This program is brought to you by Stanford University."
+    },
+    {
+      "name": "lecture_07_figure_02.png",
+      "timestamp_seconds": 1999.218,
+      "timestamp_hhmmss": "00:33:19.218",
+      "source_candidate": "lecture_07_window_02_candidate_02_003319218.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the best balance of clarity and completeness: the left-hand side of the Riemann-tensor equation is still visible, the derivative terms are sharp and legible, and the lecturer occludes less of the key mathematical structure than in the neighboring frames. Later candidates show more of the right side but lose the identifying left side of the formula.",
+      "subtitle_excerpt": "But a derivative of a vector is not a tensor.",
+      "segment_start_seconds": 1998.2,
+      "segment_start_hhmmss": "00:33:18.200",
+      "segment_end_seconds": 2000.88,
+      "segment_end_hhmmss": "00:33:20.880",
+      "caption_hint": "Riemann tensor formula on the board"
+    },
+    {
+      "name": "lecture_07_figure_03.png",
+      "timestamp_seconds": 3771.373,
+      "timestamp_hhmmss": "01:02:51.373",
+      "source_candidate": "lecture_07_window_04_candidate_03_010251373.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "tensor assure that this is symmetric.",
+      "segment_start_seconds": 3769.774,
+      "segment_start_hhmmss": "01:02:49.774",
+      "segment_end_seconds": 3772.234,
+      "segment_end_hhmmss": "01:02:52.234",
+      "caption_hint": "tensor assure that this is symmetric."
+    },
+    {
+      "name": "lecture_07_figure_04.png",
+      "timestamp_seconds": 5745.504,
+      "timestamp_hhmmss": "01:35:45.504",
+      "source_candidate": "lecture_07_window_05_candidate_03_013545504.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "energy and momentum form the four vector P naught,",
+      "segment_start_seconds": 5743.138,
+      "segment_start_hhmmss": "01:35:43.138",
+      "segment_end_seconds": 5746.778,
+      "segment_end_hhmmss": "01:35:46.778",
+      "caption_hint": "energy and momentum form the four vector P naught,"
+    },
+    {
+      "name": "lecture_07_figure_05.png",
+      "timestamp_seconds": 5872.8255,
+      "timestamp_hhmmss": "01:37:52.826",
+      "source_candidate": "lecture_07_window_06_candidate_03_013752826.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "",
+      "subtitle_excerpt": "zero component of the energy momentum four vector,",
+      "segment_start_seconds": 5870.128,
+      "segment_start_hhmmss": "01:37:50.128",
+      "segment_end_seconds": 5874.278,
+      "segment_end_hhmmss": "01:37:54.278",
+      "caption_hint": "zero component of the energy momentum four vector,"
+    }
+  ]
+}
