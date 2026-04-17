@@ -58,6 +58,11 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <sub>2012 Fall Theoretical Minimum</sub>
     </td>
     <td align="center">
+      <a href="core_general_relativity/2008_fall_einsteins_general_theory_of_relativity/general_relativity_2008_fall_einsteins_general_theory_of_relativity.pdf"><img src="figs/readme-covers/general_relativity_2008_fall_einsteins_general_theory_of_relativity_first_page.png" width="170" alt="General Relativity 2008 cover"></a><br>
+      <strong>General Relativity</strong><br>
+      <sub>2008 Fall Einstein's General Theory</sub>
+    </td>
+    <td align="center">
       <a href="core_statistical_mechanics/2013_spring_theoretical_minimum/statistical_mechanics_theoretical_minimum.pdf"><img src="figs/readme-covers/statistical_mechanics_theoretical_minimum_first_page.png" width="170" alt="Statistical Mechanics and Thermodynamics cover"></a><br>
       <strong>Statistical Mechanics</strong><br>
       <sub>2013 Spring Theoretical Minimum</sub>
@@ -67,11 +72,16 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
       <strong>Cosmology</strong><br>
       <sub>2013 Winter Theoretical Minimum</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="core_cosmology/2009_winter_legacy_cosmology/cosmology_legacy.pdf"><img src="figs/readme-covers/cosmology_legacy.png" width="170" alt="Cosmology legacy cover"></a><br>
       <strong>Cosmology</strong><br>
       <sub>2009 Winter legacy run</sub>
     </td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td colspan="3"><strong>Supplementary</strong> · Quantum → Special → General → Statistical → Cosmology</td>
