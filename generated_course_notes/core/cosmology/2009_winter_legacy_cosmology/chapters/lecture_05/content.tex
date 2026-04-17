@@ -91,6 +91,7 @@ d\Omega_n^2=d\alpha^2+\sin^2\alpha\,d\Omega_{n-1}^2.
 
 \begin{figure}[htbp]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=0.95]
 \draw (-4,0) circle (2.0);
 \draw (-4,1.15) ellipse (1.10 and 0.28);
@@ -113,7 +114,8 @@ d\Omega_n^2=d\alpha^2+\sin^2\alpha\,d\Omega_{n-1}^2.
 \node at (1.10,2.32) {$\alpha$};
 \node at (2.2,-2.65) {$S^3$ schematically as a sequence of $S^2$'s};
 \end{tikzpicture}
-\caption{The constructive picture used in the lecture. A two-sphere is built from one-spheres whose radius grows and shrinks, and a three-sphere is obtained by repeating the same pattern one dimension higher.}
+}%
+\caption{The lecture's constructive picture: a two-sphere built from one-spheres whose radius grows and shrinks, and a three-sphere built the same way one dimension higher.}
 \end{figure}
 
 This is the real geometric backbone of the lecture. Once the pattern is seen, the four-dimensional embedding picture becomes unnecessary. The geometry is already in the metric.
@@ -145,6 +147,7 @@ To make the geometry intelligible from the inside, Susskind chooses one pole and
 
 \begin{figure}[htbp]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \def\R{2.4}
 \draw (0,0) circle (\R);
@@ -161,9 +164,10 @@ To make the geometry intelligible from the inside, Susskind chooses one pole and
 \draw[->] (1.95,1.15) arc[start angle=28,end angle=110,radius=2.05];
 \node at (0.95,2.05) {$\alpha$};
 
-\node at (0,-2.85) {Fixed-\(\alpha\) spheres centered on us grow, then shrink};
+\node at (0,-2.85) {Fixed-\(\alpha\) spheres grow, then shrink};
 \end{tikzpicture}
-\caption{Observer-centered spherical geometry drawn in two-dimensional cross-section. In the real three-dimensional case the fixed-\(\alpha\) surfaces are two-spheres around us: they first grow with distance and then, after a maximum, begin to shrink.}
+}%
+\caption{Observer-centered spherical geometry in two-dimensional cross-section. In three dimensions the fixed-\(\alpha\) surfaces are two-spheres around us: they first grow with distance and then, after a maximum, begin to shrink.}
 \end{figure}
 
 In two dimensions the fixed-\(\alpha\) sets are circles around us; in three dimensions they are two-spheres. The striking fact is that as we look farther away, these two-spheres first get larger, then eventually smaller. That is the positive-curvature intuition the lecture will soon turn into an observational statement.
@@ -182,6 +186,7 @@ The stereographic projection is the key construction. Take a two-sphere resting 
 
 \begin{figure}[htbp]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \draw (-3.2,0) -- (3.6,0);
 \node at (3.10,-0.28) {plane};
@@ -275,8 +280,9 @@ Only after this algebraic setup is in place does the lecture turn to the picture
 \draw (1.55,-1.66) circle (0.06);
 
 \draw[dashed] (0,0) -- (2.4,0);
-\node at (0,-2.75) {A Poincar\'e-disk style picture: equal objects shrink toward the boundary};
+\node at (0,-2.75) {Poincar\'e-disk style: equal objects shrink toward the boundary};
 \end{tikzpicture}
+}%
 \caption{A schematic disk picture for negative curvature. The boundary looks finite in the drawing, but the intrinsic distance to it is infinite.}
 \end{figure}
 
@@ -318,7 +324,7 @@ At this point the three classical homogeneous cosmologies can be stated cleanly:
 \begin{align}
 k=+1 &: \text{space is spherical and positively curved}, \\
 k=0 &: \text{space is flat}, \\
-k=-1 &: \text{space is hyperbolic and negatively curved}.
+k=-1 &: \text{space is hyperbolic with negative curvature}.
 \end{align}
 
 This is a regrouping moment in the lecture, not yet the final payoff. We have built the three geometries, understood how they distort angular sizes, and attached the sign labels \(k=+1,0,-1\). Only now are we ready to return to the earlier cosmological equations and ask what Einstein has to do with them.
