@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity",
+  "transcript_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/003 - Einstein's General Theory of Relativity \uff5c Lecture 3 [hR7fWF_qBZI].md",
+  "video_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/003 - Einstein's General Theory of Relativity \uff5c Lecture 3 [hR7fWF_qBZI].mp4",
+  "lecture_number": 3,
+  "lecture_slug": "lecture_03",
+  "lecture_title": "Einstein's General Theory of Relativity : Lecture 3",
+  "assets": [
+    {
+      "name": "lecture_03_figure_02.png",
+      "timestamp_seconds": 2499.828,
+      "timestamp_hhmmss": "00:41:39.828",
+      "source_candidate": "lecture_03_window_02_candidate_01_004139828.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "Candidate 01 is the only frame that preserves the board diagram in a reasonably complete and legible way. It shows the black reference grid, the overlaid red skew lines, and the marked interior point together in one composition, whereas the later candidates crop away most of the diagram and become primarily lecturer shots. For note writing, this is the clearest documentary frame for the board layout at the moment he begins discussing a vector equation.",
+      "subtitle_excerpt": "If we have some vector equation,",
+      "segment_start_seconds": 2499.42,
+      "segment_start_hhmmss": "00:41:39.420",
+      "segment_end_seconds": 2502.82,
+      "segment_end_hhmmss": "00:41:42.820",
+      "caption_hint": "Skew coordinate grid and vector construction"
+    },
+    {
+      "name": "lecture_03_figure_03.png",
+      "timestamp_seconds": 2777.009,
+      "timestamp_hhmmss": "00:46:17.009",
+      "source_candidate": "lecture_03_window_03_candidate_03_004617009.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "Candidate 03 preserves the full mathematical layout with the least occlusion. The top equation, the arrowed differential notation in the middle, and the two separated vector marks are all visible at once, while the earlier frames are more obstructed by the lecturer's hand and candidate 04 adds more lecturer/shadow without improving the board evidence. It is the clearest frame for the point that the vector is being treated as a geometric object independent of where it is drawn.",
+      "subtitle_excerpt": "The vector itself is a geometric object.",
+      "segment_start_seconds": 2775.8,
+      "segment_start_hhmmss": "00:46:15.800",
+      "segment_end_seconds": 2777.66,
+      "segment_end_hhmmss": "00:46:17.660",
+      "caption_hint": "Scalar equality and free vector"
+    },
+    {
+      "name": "lecture_03_figure_04.png",
+      "timestamp_seconds": 4317.863,
+      "timestamp_hhmmss": "01:11:57.863",
+      "source_candidate": "lecture_03_window_04_candidate_02_011157863.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame cleanly preserves the full blackboard equation with no lecturer occlusion and no missing symbols. The candidate set is very similar, but candidate 02 is the best balanced and most legible of the four, making it the strongest documentary frame for the transformation law being discussed just before the metric tensor is introduced.",
+      "subtitle_excerpt": "and then we'll come to the metric tensor.",
+      "segment_start_seconds": 4317.126,
+      "segment_start_hhmmss": "01:11:57.126",
+      "segment_end_seconds": 4319.066,
+      "segment_end_hhmmss": "01:11:59.066",
+      "caption_hint": "Rank-two tensor transformation law"
+    },
+    {
+      "name": "lecture_03_figure_05.png",
+      "timestamp_seconds": 5315.84,
+      "timestamp_hhmmss": "01:28:35.840",
+      "source_candidate": "lecture_03_window_05_candidate_04_012835840.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the clearest and least occluded frame. The lecturer has stepped away enough that the full equation is visible, including the central metric symbol and both differential factors, whereas the earlier candidates have his arm or body covering part of the expression while he is still writing or pointing. This is the best documentary frame for the board statement identifying the Cartesian metric tensor.",
+      "subtitle_excerpt": "This is the metric tensor in Cartesian coordinates.",
+      "segment_start_seconds": 5312.866,
+      "segment_start_hhmmss": "01:28:32.866",
+      "segment_end_seconds": 5316.246,
+      "segment_end_hhmmss": "01:28:36.246",
+      "caption_hint": "Metric tensor in Cartesian coordinates"
+    },
+    {
+      "name": "lecture_03_figure_06.png",
+      "timestamp_seconds": 5481.338,
+      "timestamp_hhmmss": "01:31:21.338",
+      "source_candidate": "lecture_03_window_06_candidate_04_013121338.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "Candidate 04 is the most useful frame for note writing because it shows the transformed line element in its most finished state. The top differential relation, the central circled coefficient multiplying the two differentials, and the lower circled identification of the new metric components are all visible at once. Earlier candidates either crop more of the board or have Susskind blocking key parts of the expression.",
+      "subtitle_excerpt": "We can always write the metric tensor",
+      "segment_start_seconds": 5477.466,
+      "segment_start_hhmmss": "01:31:17.466",
+      "segment_end_seconds": 5481.866,
+      "segment_end_hhmmss": "01:31:21.866",
+      "caption_hint": "Metric tensor under coordinate change"
+    }
+  ]
+}
