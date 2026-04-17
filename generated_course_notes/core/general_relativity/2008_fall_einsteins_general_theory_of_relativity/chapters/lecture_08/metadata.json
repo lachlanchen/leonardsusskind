@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity",
+  "transcript_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/008 - Einstein's General Theory of Relativity \uff5c Lecture 8 [AC3TMizGpB8].md",
+  "video_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/008 - Einstein's General Theory of Relativity \uff5c Lecture 8 [AC3TMizGpB8].mp4",
+  "lecture_number": 8,
+  "lecture_slug": "lecture_08",
+  "lecture_title": "Einstein's General Theory of Relativity : Lecture 8",
+  "assets": [
+    {
+      "name": "lecture_08_figure_02.png",
+      "timestamp_seconds": 3693.413,
+      "timestamp_hhmmss": "01:01:33.413",
+      "source_candidate": "lecture_08_window_02_candidate_03_010133413.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest frame in the window: Susskind has moved his hand away, the tensor expression is least occluded, and the visible indices are sharper than in the earlier frames. The later frame adds no new mathematical content, so this one is the most useful for note writing.",
+      "subtitle_excerpt": "and contract it with an anti-symmetric matrix,",
+      "segment_start_seconds": 3691.84,
+      "segment_start_hhmmss": "01:01:31.840",
+      "segment_end_seconds": 3694.26,
+      "segment_end_hhmmss": "01:01:34.260",
+      "caption_hint": "Riemann contraction on the board"
+    },
+    {
+      "name": "lecture_08_figure_03.png",
+      "timestamp_seconds": 5523.266,
+      "timestamp_hhmmss": "01:32:03.266",
+      "source_candidate": "lecture_08_window_03_candidate_02_013203266.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest view of the mathematical content in the window. The acceleration term and the derivative of the potential are both legible, and the boxed lower relation is more complete and less occluded than in the neighboring frames.",
+      "subtitle_excerpt": "We've now learned something about the metric tensor.",
+      "segment_start_seconds": 5522.286,
+      "segment_start_hhmmss": "01:32:02.286",
+      "segment_end_seconds": 5524.866,
+      "segment_end_hhmmss": "01:32:04.866",
+      "caption_hint": "Newtonian potential on the board"
+    },
+    {
+      "name": "lecture_08_figure_04.png",
+      "timestamp_seconds": 5756.983,
+      "timestamp_hhmmss": "01:35:56.983",
+      "source_candidate": "lecture_08_window_04_candidate_01_013556983.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame shows the full cluster of equations most cleanly and with the best overall board layout. Susskind is not occluding the mathematical content, and the later frames do not reveal anything new.",
+      "subtitle_excerpt": "and the matrix was called the energy momentum tensor.",
+      "segment_start_seconds": 5756.606,
+      "segment_start_hhmmss": "01:35:56.606",
+      "segment_end_seconds": 5759.746,
+      "segment_end_hhmmss": "01:35:59.746",
+      "caption_hint": "Newtonian gravity equations on the board"
+    },
+    {
+      "name": "lecture_08_figure_05.png",
+      "timestamp_seconds": 5881.144,
+      "timestamp_hhmmss": "01:38:01.144",
+      "source_candidate": "lecture_08_window_05_candidate_01_013801144.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the cleanest unobstructed view of the full board progression. The Newtonian field equations, the identification with \\(T^{00}\\), and the final relation for \\(g_{00}\\) are all visible at once, whereas the later frames are partially occluded by Susskind's pointing hand.",
+      "subtitle_excerpt": "that the energy momentum tensor,",
+      "segment_start_seconds": 5880.866,
+      "segment_start_hhmmss": "01:38:00.866",
+      "segment_end_seconds": 5883.186,
+      "segment_end_hhmmss": "01:38:03.186",
+      "caption_hint": "Poisson equation matched to \\(T^{00}\\)"
+    },
+    {
+      "name": "lecture_08_figure_06.png",
+      "timestamp_seconds": 5979.973,
+      "timestamp_hhmmss": "01:39:39.973",
+      "source_candidate": "lecture_08_window_06_candidate_04_013939973.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and least occluded frame in the window. Susskind has moved almost entirely out of the way, leaving the full board visible: the Newtonian field equations, the weak-field relation for \\(g_{00}\\), the expanded Laplacian in coordinates, and the first visible entries of the stress-energy matrix.",
+      "subtitle_excerpt": "is there a tensor equation which becomes equal to this?",
+      "segment_start_seconds": 5976.506,
+      "segment_start_hhmmss": "01:39:36.506",
+      "segment_end_seconds": 5980.446,
+      "segment_end_hhmmss": "01:39:40.446",
+      "caption_hint": "Weak-field equation and stress-energy layout"
+    }
+  ]
+}
