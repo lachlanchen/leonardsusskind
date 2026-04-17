@@ -1,0 +1,66 @@
+{
+  "course_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford",
+  "transcript_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford/032 - Lecture 3 \uff5c Modern Physics\uff1a Quantum Mechanics (Stanford) [epzh76hNl8I].md",
+  "video_rel": "core/quantum_mechanics/2012_winter_modern_physics_stanford/032 - Lecture 3 \uff5c Modern Physics\uff1a Quantum Mechanics (Stanford) [epzh76hNl8I].mp4",
+  "lecture_number": 3,
+  "lecture_slug": "lecture_03",
+  "lecture_title": "Lecture 3 : Modern Physics\uff1a Quantum Mechanics (Stanford)",
+  "assets": [
+    {
+      "name": "lecture_03_figure_02.png",
+      "timestamp_seconds": 269.62,
+      "timestamp_hhmmss": "00:04:29.620",
+      "source_candidate": "lecture_03_window_02_candidate_04_000429620.png",
+      "recommended_use": "screenshot_plus_tikz",
+      "rationale": "This is the clearest and most complete frame of the diagram. By this point the three-arrow sketch from a common origin is fully drawn, and Susskind has moved far enough aside that the geometry is least occluded and most useful for a clean redraw in the notes.",
+      "subtitle_excerpt": "it's hard to draw vectors in a complex vector space.",
+      "segment_start_seconds": 264.96,
+      "segment_start_hhmmss": "00:04:24.960",
+      "segment_end_seconds": 270.22,
+      "segment_end_hhmmss": "00:04:30.220",
+      "caption_hint": "ordinary vector sketch on the board"
+    },
+    {
+      "name": "lecture_03_figure_03.png",
+      "timestamp_seconds": 382.498,
+      "timestamp_hhmmss": "00:06:22.498",
+      "source_candidate": "lecture_03_window_03_candidate_02_000622498.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame gives the clearest and least occluded view of the key board expression. The matrix element is fully written and unobstructed by Susskind's hand or paper, making it the most reliable candidate for note writing and equation reconstruction.",
+      "subtitle_excerpt": "matrix elements of k between vectors n and m.",
+      "segment_start_seconds": 381.32,
+      "segment_start_hhmmss": "00:06:21.320",
+      "segment_end_seconds": 384.42,
+      "segment_end_hhmmss": "00:06:24.420",
+      "caption_hint": "matrix element between basis vectors"
+    },
+    {
+      "name": "lecture_03_figure_04.png",
+      "timestamp_seconds": 817.149,
+      "timestamp_hhmmss": "00:13:37.149",
+      "source_candidate": "lecture_03_window_04_candidate_03_001337149.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame best balances completeness and legibility. The upper bra-ket expression and the lower indexed sum are both visible at once, and Susskind has moved enough that the main structure of the calculation is readable while still indicating the final coefficient term relevant to the matrix-times-column interpretation.",
+      "subtitle_excerpt": "matrix k acting on the column vector a.",
+      "segment_start_seconds": 815.16,
+      "segment_start_hhmmss": "00:13:35.160",
+      "segment_end_seconds": 818.22,
+      "segment_end_hhmmss": "00:13:38.220",
+      "caption_hint": "operator action in matrix notation"
+    },
+    {
+      "name": "lecture_03_figure_06.png",
+      "timestamp_seconds": 2368.933,
+      "timestamp_hhmmss": "00:39:28.933",
+      "source_candidate": "lecture_03_window_06_candidate_04_003928933.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the clearest and least occluded frame of the board layout. The matrix and the column vector are both fully visible, while Susskind has moved almost entirely out of the way, leaving the structure of the matrix-vector product easy to read and useful for note writing.",
+      "subtitle_excerpt": "And then acting with a matrix on a column vector,",
+      "segment_start_seconds": 2366.68,
+      "segment_start_hhmmss": "00:39:26.680",
+      "segment_end_seconds": 2369.24,
+      "segment_end_hhmmss": "00:39:29.240",
+      "caption_hint": "matrix acting on a column vector"
+    }
+  ]
+}
