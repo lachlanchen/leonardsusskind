@@ -39,6 +39,32 @@ hardlink_or_copy() {
   fi
 }
 
+validate_pocket_pdf_text() {
+  local pdf_path="$1"
+  python3 - "$pdf_path" <<'PY'
+from pathlib import Path
+import re
+import subprocess
+import sys
+
+pdf_path = Path(sys.argv[1])
+text = subprocess.run(
+    ["pdftotext", "-layout", str(pdf_path), "-"],
+    check=True,
+    stdout=subprocess.PIPE,
+    stderr=subprocess.PIPE,
+    text=True,
+).stdout
+
+bad_pattern = re.compile(r"(?:footnotesize|scriptsize|normalsize|ootnotesize|ormalsize|criptsize)")
+match = bad_pattern.search(text)
+if match:
+    line = text[max(0, match.start() - 120): match.start() + 120].splitlines()
+    excerpt = "\n".join(line[:6])
+    raise SystemExit(f"pocket PDF leaked TeX size token in {pdf_path}:\n{excerpt}")
+PY
+}
+
 bash "$repo_root/scripts/publish_generated_course_pdf.sh" --repo-root "$repo_root" --course "$course"
 
 mapfile -t meta < <(python3 - "$repo_root" "$course" <<'PY'
@@ -83,6 +109,7 @@ publish_pocket_variant() {
     --suffix "$suffix" \
     --nutstore-dir "$nutstore_dir"
 
+  validate_pocket_pdf_text "$pocket_src"
   hardlink_or_copy "$pocket_src" "$pocket_dst"
   printf 'published %s pocket -> %s\n' "$suffix" "$pocket_dst"
 }
