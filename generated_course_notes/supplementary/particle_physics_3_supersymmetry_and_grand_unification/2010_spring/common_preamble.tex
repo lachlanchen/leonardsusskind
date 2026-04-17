@@ -13,6 +13,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,calc,decorations.pathmorphing}
 
@@ -27,6 +28,7 @@
 \setlength{\parindent}{0pt}
 \setlist[itemize]{topsep=0.25em,itemsep=0.2em}
 \setlist[enumerate]{topsep=0.25em,itemsep=0.2em}
+\setlength{\headheight}{40pt}
 \numberwithin{equation}{chapter}
 
 \newtheorem{theorem}{Theorem}[chapter]
@@ -44,3 +46,38 @@
 \providecommand{\braket}[2]{\left\langle#1\,\middle|\,#2\right\rangle}
 \providecommand{\expect}[1]{\left\langle#1\right\rangle}
 \newcommand{\lectureoverview}[1]{\paragraph{Overview.} #1}
+
+\makeatletter
+\newcommand{\course@headerfont}{\normalfont\small\itshape}
+\newcommand{\course@pagefont}{\normalfont\small}
+\newcommand{\course@headerraise}{14pt}
+\newlength{\course@headerboxheight}
+\setlength{\course@headerboxheight}{\dimexpr\headheight-\course@headerraise-9pt\relax}
+\newcommand{\course@leftheadbox}[1]{%
+  \raisebox{\course@headerraise}{%
+    \parbox[t][\course@headerboxheight][t]{0.82\textwidth}{%
+      \raggedright\course@headerfont\strut\MakeUppercase{#1}\strut%
+    }%
+  }%
+}
+\newcommand{\course@rightheadbox}[1]{%
+  \raisebox{\course@headerraise}{%
+    \parbox[t][\course@headerboxheight][t]{0.82\textwidth}{%
+      \raggedleft\course@headerfont\strut\MakeUppercase{#1}\strut%
+    }%
+  }%
+}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{\thesection\hspace{0.4em}#1}}}
+\fancyhf{}
+\fancyhead[L]{\course@leftheadbox{\leftmark}}
+\fancyhead[R]{\course@pagefont\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[L]{\course@leftheadbox{\leftmark}}
+  \fancyhead[R]{\course@pagefont\thepage}
+  \renewcommand{\headrulewidth}{0.5pt}
+}
+\makeatother
