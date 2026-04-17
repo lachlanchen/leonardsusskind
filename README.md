@@ -122,7 +122,7 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
   </tr>
   <tr>
     <td align="center">
-      <a href="supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf"><img src="figs/readme-covers/topics_in_string_theory.png" width="170" alt="Topics in String Theory cover"></a><br>
+      <a href="supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf"><img src="figs/readme-covers/topics_in_string_theory_first_page.png" width="170" alt="Topics in String Theory cover"></a><br>
       <strong>Topics in String Theory</strong><br>
       <sub>Cosmology and Black Holes set</sub>
     </td>
