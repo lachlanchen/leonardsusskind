@@ -1,0 +1,80 @@
+{
+  "course_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity",
+  "transcript_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/004 - Einstein's General Theory of Relativity \uff5c Lecture 4 [ttMI0dmmkrE].md",
+  "video_rel": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/004 - Einstein's General Theory of Relativity \uff5c Lecture 4 [ttMI0dmmkrE].mkv",
+  "lecture_number": 4,
+  "lecture_slug": "lecture_04",
+  "lecture_title": "Einstein's General Theory of Relativity : Lecture 4",
+  "assets": [
+    {
+      "name": "lecture_04_figure_02.png",
+      "timestamp_seconds": 2406.039,
+      "timestamp_hhmmss": "00:40:06.039",
+      "source_candidate": "lecture_04_window_02_candidate_04_004006039.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame leaves the inverse-metric equations the least occluded. The lecturer has moved far enough to the right that both the matrix statement at the top and the indexed contraction identity below are readable together, making it the most useful documentary frame for note writing at this moment.",
+      "subtitle_excerpt": "of the inverse matrix are themselves a tensor.",
+      "segment_start_seconds": 2403.346,
+      "segment_start_hhmmss": "00:40:03.346",
+      "segment_end_seconds": 2406.406,
+      "segment_end_hhmmss": "00:40:06.406",
+      "caption_hint": "Inverse metric contraction identity"
+    },
+    {
+      "name": "lecture_04_figure_03.png",
+      "timestamp_seconds": 2726.252,
+      "timestamp_hhmmss": "00:45:26.252",
+      "source_candidate": "lecture_04_window_03_candidate_04_004526252.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame shows the inverse-metric discussion in its most finished and least occluded form. The lecturer has lowered his hand, so the boxed component equation is no longer covered, while the matrix statement above it remains visible. That makes it the clearest frame for note writing at the moment he states that the metric tensor has an inverse.",
+      "subtitle_excerpt": "that the metric tensor always has an inverse.",
+      "segment_start_seconds": 2723.946,
+      "segment_start_hhmmss": "00:45:23.946",
+      "segment_end_seconds": 2726.566,
+      "segment_end_hhmmss": "00:45:26.566",
+      "caption_hint": "Inverse metric relation"
+    },
+    {
+      "name": "lecture_04_figure_04.png",
+      "timestamp_seconds": 3204.476,
+      "timestamp_hhmmss": "00:53:24.476",
+      "source_candidate": "lecture_04_window_04_candidate_03_005324476.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This frame captures the board content most completely and with the least occlusion. The top identification of the metric tensor with its matrix of components is visible together with the lower inverse-metric contraction, and the lecturer has moved enough to the side that neither expression is blocked.",
+      "subtitle_excerpt": "and the metric tensor that allows you to do this.",
+      "segment_start_seconds": 3202.526,
+      "segment_start_hhmmss": "00:53:22.526",
+      "segment_end_seconds": 3205.526,
+      "segment_end_hhmmss": "00:53:25.526",
+      "caption_hint": "Metric tensor as matrix"
+    },
+    {
+      "name": "lecture_04_figure_05.png",
+      "timestamp_seconds": 3388.021,
+      "timestamp_hhmmss": "00:56:28.021",
+      "source_candidate": "lecture_04_window_05_candidate_02_005628021.png",
+      "recommended_use": "screenshot_plus_equation",
+      "rationale": "This is the first fully unobstructed frame after the lecturer steps away, and it preserves the complete board equation most clearly. The contraction leading to the line element is visible without the lecturer or shadow covering the symbols, making it the most useful documentary frame for notes.",
+      "subtitle_excerpt": "So by using the metric tensor to lower the index,",
+      "segment_start_seconds": 3386.486,
+      "segment_start_hhmmss": "00:56:26.486",
+      "segment_end_seconds": 3390.526,
+      "segment_end_hhmmss": "00:56:30.526",
+      "caption_hint": "Lowering an index with the metric"
+    },
+    {
+      "name": "lecture_04_figure_06.png",
+      "timestamp_seconds": 4153.038,
+      "timestamp_hhmmss": "01:09:13.038",
+      "source_candidate": "lecture_04_window_06_candidate_01_010913038.png",
+      "recommended_use": "screenshot_plus_equation_and_tikz",
+      "rationale": "This frame gives the cleanest complete view of the board before new writing begins below the equation. The left-side line element is fully visible, and the skew coordinate-grid diagram on the right is intact and unobstructed, making it the best documentary frame for both the mathematical statement and the board layout.",
+      "subtitle_excerpt": "That's the same as saying that the metric tensor gmn",
+      "segment_start_seconds": 4152.606,
+      "segment_start_hhmmss": "01:09:12.606",
+      "segment_end_seconds": 4156.206,
+      "segment_end_hhmmss": "01:09:16.206",
+      "caption_hint": "Flat line element and skew grid"
+    }
+  ]
+}
