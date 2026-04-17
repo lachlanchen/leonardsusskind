@@ -259,6 +259,7 @@ Only after this algebraic setup is in place does the lecture turn to the picture
 
 \begin{figure}[htbp]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \draw (0,0) circle (2.4);
 \fill (0,0) circle (0.05);
@@ -281,9 +282,10 @@ Only after this algebraic setup is in place does the lecture turn to the picture
 \draw (1.55,-1.66) circle (0.06);
 
 \draw[dashed] (0,0) -- (2.4,0);
-\node at (0,-2.75) {Poincar\'e-disk style: equal objects shrink toward the boundary};
+\node at (0,-2.75) {Poincar\'e disk: equal objects shrink toward the boundary};
 \end{tikzpicture}
-\caption{A schematic disk picture for negative curvature. The boundary looks finite in the drawing, but the intrinsic distance to it is infinite.}
+}%
+\caption{A schematic disk picture for negative curvature. The boundary looks finite in the drawing, but its intrinsic distance is infinite.}
 \end{figure}
 
 The lecture likes to compare this with the stereographic projection of the sphere. There the page looked infinite, but the actual spherical distance was finite. Here the page looks finite, but the actual hyperbolic distance is infinite. Equal objects appear smaller and smaller as they approach the boundary. The drawing is deceptive in exactly the opposite way.
@@ -324,7 +326,7 @@ At this point the three classical homogeneous cosmologies can be stated cleanly:
 \begin{align}
 k=+1 &: \text{space is spherical and positively curved}, \\
 k=0 &: \text{space is flat}, \\
-k=-1 &: \text{space is hyperbolic with negative curvature}.
+k=-1 &: \text{space is hyperbolic and negatively curved}.
 \end{align}
 
 This is a regrouping moment in the lecture, not yet the final payoff. We have built the three geometries, understood how they distort angular sizes, and attached the sign labels \(k=+1,0,-1\). Only now are we ready to return to the earlier cosmological equations and ask what Einstein has to do with them.
