@@ -14,7 +14,7 @@ N_{\mathrm{independent}} \sim 10\text{--}20,
 \qquad
 N_{\mathrm{parameters}} \sim 20.
 \end{equation}
-Even this is not the end of the story. The Standard Model does not contain gravity, does not explain dark matter, does not supply the extra structure needed for inflation, and carries a severe fine-tuning problem. Once one adds the ``bells and whistles'' that are usually invoked to repair these omissions, the effective count swells rather than shrinks. In the lecture supersymmetry is the clean example, and the schematic message is simply
+Even this is not the end of the story. The Standard Model does not contain gravity, does not explain dark matter, does not supply the extra structure needed for inflation, and carries a severe fine-tuning problem. Adding the usual repair mechanisms only increases the count. In the lecture supersymmetry is the clean example, and the schematic message is simply
 \begin{equation}
 N_{\mathrm{parameters}}^{\mathrm{extended}} \sim 200.
 \end{equation}
@@ -52,7 +52,7 @@ G \gg 1
 &\Rightarrow
 \ell \text{ large, the kink spreads out, and the }\phi\text{-description is efficient}.
 \end{align}
-For small \(G\), the kink is tight and the fermion looks like the simple object. As \(G\) is increased, the kink broadens, the fermion becomes less point-like, and the bosonic variables become the more economical ones.
+For small \(G\), the kink is tight and the fermion looks like the simple object. As \(G\) increases, the kink broadens and the fermion becomes less point-like. The bosonic variables then become the more economical ones.
 
 \paragraph{Schematic update rule.}
 \begin{enumerate}
@@ -89,7 +89,7 @@ When \(\alpha\ll 1\), the electron is the simple object. Its electric field is w
 &\Rightarrow
 \text{monopole simple, electron heavy and structured}.
 \end{align}
-The lecture does not derive a monopole mass formula. It does not need one. Its point is that as one increases \(\alpha\), the electron's field becomes stronger, the electron becomes surrounded by more structure, and the monopole shrinks and lightens. If \(\alpha\) were pushed far past unity, the convenient description would exchange: the monopole would be the simple object and the electron the complicated one.
+The lecture does not derive a monopole mass formula. It does not need one. Its point is that as one increases \(\alpha\), the electron's field grows stronger, the electron acquires more structure, and the monopole shrinks and lightens. If \(\alpha\) were pushed far past unity, the convenient description would exchange: the monopole would be the simple object and the electron the complicated one.
 
 That is the field-theory version of the earlier lesson from bosonization. The distinction between basic and composite is not absolute. It depends on the coupling.
 
@@ -134,7 +134,7 @@ g \gg 1
 &\Rightarrow
 \text{D-string light and thin,\quad F-string heavy and structured}.
 \end{align}
-Susskind remarks that around \(g\sim 1\) the two descriptions cease to be sharply distinct, and beyond that point they effectively exchange roles. This is the string-theoretic version of the electron--monopole interchange. The accepted name for this is S-duality.
+Susskind remarks that around \(g\sim 1\) the two descriptions cease to be sharply distinct. Beyond that point they effectively exchange roles. This is the string-theoretic version of the electron--monopole interchange, and its accepted name is S-duality.
 
 The lecture pushes the point one step further. In the idealized theory the coupling is not merely a number to be dialed by hand; it behaves like a field. Schematically,
 \begin{equation}
@@ -226,9 +226,10 @@ The strong-coupling limit therefore cannot simply be a relabeling of one string 
 
 The bookkeeping is part of the point, so he pauses over it:
 \begin{equation}
-10\text{-dimensional string theory}=9\text{ space}+1\text{ time},
-\qquad
-11\text{-dimensional theory}=10\text{ space}+1\text{ time}.
+\begin{aligned}
+10\text{-dimensional string theory} &= 9\text{ space}+1\text{ time},\\
+11\text{-dimensional theory} &= 10\text{ space}+1\text{ time}.
+\end{aligned}
 \end{equation}
 The lecture's claim is that the strong-coupling limit of the even-brane theory is effectively eleven-dimensional.
 
@@ -248,6 +249,7 @@ That is what Susskind means when he says that a new dimension of space appears: 
 
 \begin{figure}[h]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=0.95]
 \draw[line width=0.9pt] (-5,1.7) -- (5,1.7);
 \draw[line width=0.9pt] (-5,-1.7) -- (5,-1.7);
@@ -274,6 +276,7 @@ That is what Susskind means when he says that a new dimension of space appears: 
 \fill (-3.8,0) circle (0.07);
 \node[below] at (-3.8,-0.05) {D0};
 \end{tikzpicture}
+}%
 \caption{Transcript-based redraw of the sandwich compactification. The upper and lower boundaries are periodically identified; one D2-brane floats between them like a carpet, while another stretches from floor to ceiling and looks string-like when the compact direction is small.}
 \end{figure}
 
@@ -307,6 +310,7 @@ The first bridge uses a D3-brane. A D3-brane has three spatial dimensions, and a
 
 \begin{figure}[h]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \draw[fill=gray!15] (-4,-0.35) rectangle (4,0.35);
 \node at (0,-0.75) {D3-brane};
@@ -321,7 +325,8 @@ The first bridge uses a D3-brane. A D3-brane has three spatial dimensions, and a
 \node[right] at (1.95,1.25) {D-string};
 \node[below right] at (1.7,0.32) {magnetic monopole};
 \end{tikzpicture}
-\caption{Transcript-based redraw of the D3-brane worldvolume interpretation. An F-string endpoint appears as an electrically charged particle; a D-string endpoint appears as a magnetic monopole.}
+}%
+\caption{Transcript-based redraw of the D3-brane worldvolume interpretation. An F-string endpoint appears as an electric charge; a D-string endpoint appears as a magnetic monopole.}
 \end{figure}
 
 This is one of the lecture's most satisfying identifications. An F-string ending on the D3-brane appears to the worldvolume observer as an electric charge. A D-string ending on the same brane appears as a magnetic monopole. In other words, the duality between F-strings and D-strings becomes, on the D3-brane worldvolume, the electric--magnetic duality of ordinary field theory. What was earlier an analogy is now an explicit dictionary.
