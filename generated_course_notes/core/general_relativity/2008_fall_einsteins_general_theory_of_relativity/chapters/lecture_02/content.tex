@@ -385,6 +385,7 @@ For a small deflection angle,
 
 \begin{figure}[ht]
 \centering
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[scale=1.0]
 \draw (0,0) circle (1.0);
 \node at (0,0) {Sun};
@@ -394,7 +395,8 @@ For a small deflection angle,
 \node[above] at (-2.5,1.05) {incoming ray};
 \node[right] at (4.5,0.15) {outgoing ray};
 \end{tikzpicture}
-\caption{Crude sun-skimming-ray estimate. The lecture treats the deflection qualitatively and then estimates it by combining surface gravity with a light-crossing time.}
+}%
+\caption{Crude sun-skimming-ray estimate. The lecture treats the deflection qualitatively, then estimates it by combining surface gravity with a light-crossing time.}
 \end{figure}
 
 This is Einstein before the full apparatus of general relativity. Susskind keeps the historical caution in view: the final relativistic answer differs by a factor of two. The point of the lecture here is not precision but the conceptual use of the equivalence principle in a place where nobody had used it before.
