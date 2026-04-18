@@ -24,6 +24,10 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
 ## 📚 Published Books
 
 > 📷 Preview covers are sourced from each course PDF's first page so root README and website cards always match the actual published text and layout.
+>
+> 📱 Pocket-size / penguin editions are also published for finished books:
+> [Pocket-size 1.0x](all_notes/pocket_books/) and [Pocket-size 1.2x](all_notes/pocket_books_1_2x/).
+> These compact builds are tuned for comfortable reading on 10-inch e-ink devices and iPad-class screens.
 
 <table>
   <tr>
