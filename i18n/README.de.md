@@ -1,354 +1,375 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://lazying.art)
 
+# Repository für Leonard-Susskind-Vorlesungsnotizen
 
-[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
+> Geleitet von [LazyingArt LLC](https://lazying.art). Websites: [lazying.art](https://lazying.art) und [learn.lazying.art](https://learn.lazying.art).
 
-# Repository der Leonard-Susskind-Vorlesungsnotizen
+[![Archive](https://img.shields.io/badge/archive-active-16a34a?style=flat-square)](#)
+[![Subtitles](https://img.shields.io/badge/subtitles-.srt-2563eb?style=flat-square)](#-repo-layout)
+[![Transcripts](https://img.shields.io/badge/transcripts-markdown-0f766e?style=flat-square)](#-repo-layout)
+[![Generated Notes](https://img.shields.io/badge/generated_notes-LaTeX-f97316?style=flat-square)](#-repo-layout)
+[![PDF Outputs](https://img.shields.io/badge/outputs-PDF-a855f7?style=flat-square)](#-repo-layout)
+[![Theoretical Minimum](https://img.shields.io/badge/focus-Theoretical%20Minimum-f59e0b?style=flat-square)](#)
 
-![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
-![Content Type](https://img.shields.io/badge/content-Lecture%20Notes%20%26%20LaTeX-informational)
-![Status](https://img.shields.io/badge/status-Active%20Archive-success)
-![LaTeX](https://img.shields.io/badge/tooling-LaTeX-008080)
-![Core Tracks](https://img.shields.io/badge/core_tracks-6-1f6feb)
-![Supplemental Tracks](https://img.shields.io/badge/supplemental_tracks-9-9a6700)
-![i18n](https://img.shields.io/badge/i18n-10%20translations%20%2B%20English-orange)
-![Stars](https://img.shields.io/github/stars/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=stars&color=22c55e)
-![Forks](https://img.shields.io/github/forks/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=forks&color=3b82f6)
-![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
+Dieses Repository ist ein Physik-Studienarchiv mit Schwerpunkt auf den Vorlesungen von Leonard Susskind, dem breiteren *Theoretical Minimum*-Ökosystem und aus Transkripten abgeleiteten Begleitnotizen.
 
-> 🎓 Ein mehrsprachiges Archiv der Vorlesungsunterlagen von Professor Leonard Susskind, das sowohl aufbereitete PDFs als auch editierbare LaTeX-Quellen für Studium, Wiederverwendung und Referenz bereithält.
+Es kombiniert Vorlesungstranskriptionen, Untertiteldateien, generierte TeX-Notizen, kompilierte PDFs und manuell gepflegte Kursordner in einer stabilen Verzeichnisstruktur.
 
----
+> 📘 Vollständige Vorlesungstranskriptionen, Untertiteldateien, Workflows für generierte TeX-Notizen und veröffentlichte Kurs-PDFs werden hier in einem einzigen Archiv gepflegt.
+>
+> 🛠️ Die hier verwendete Automatisierung für Download, Transkription und die Umwandlung von Untertiteln in Notizen wird im begleitenden Tool-Repository [Video2Book](https://github.com/lachlanchen/Video2Book) gepflegt, das in diesem Repository als Submodul `Video2Book/` enthalten ist.
 
-## Überblick
-Dieses Repository ist ein inhaltlich ausgerichtetes Archiv von Vorlesungsunterlagen aus dem Lehrumfeld von Professor Leonard Susskind.
+## 📚 Veröffentlichte Bücher
 
-> Die Vorlesungsnotizen von Professor Leonard Susskind. Falls dies gegen Urheberrechte verstößt, kontaktieren Sie mich bitte, damit ich dieses Repository lösche. Professor Susskind übernimmt keine Verantwortung für Fehler oder Fehlinformationen in den Notizen; dasselbe gilt für mich.
+> 📷 Die Vorschaubilder der Cover stammen jeweils von der ersten Seite des zugehörigen Kurs-PDFs, damit das Root-README und die Website-Karten immer exakt zum tatsächlich veröffentlichten Text und Layout passen.
+>
+> 📱 Für abgeschlossene Bücher werden auch Pocket-size-/Penguin-Ausgaben veröffentlicht:
+> [Pocket-size 1.0x](../all_notes/pocket_books/) und [Pocket-size 1.2x](../all_notes/pocket_books_1_2x/).
+> Diese kompakten Builds sind auf komfortables Lesen auf 10-Zoll-E-Ink-Geräten und Bildschirmen der iPad-Klasse abgestimmt.
 
-Es vereint drei Ebenen an einem Ort:
+<table>
+  <tr>
+    <td colspan="4"><strong>Kern</strong> · Klassisch → Quanten → Speziell → Allgemein → Statistisch → Kosmologie</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="../core_classical_mechanics/2011_fall_theoretical_minimum/classical_mechanics_theoretical_minimum.pdf"><img src="../figs/readme-covers/classical_mechanics_theoretical_minimum.png" width="170" alt="Classical Mechanics Theoretical Minimum cover"></a><br>
+      <strong>Klassische Mechanik</strong><br>
+      <sub>Herbst 2011 Theoretical Minimum</sub>
+    </td>
+    <td align="center">
+      <a href="../core_classical_mechanics/2011_fall_modern_physics_stanford_partial/classical_mechanics_stanford_partial.pdf"><img src="../figs/readme-covers/classical_mechanics_stanford_partial.png" width="170" alt="Classical Mechanics Stanford partial cover"></a><br>
+      <strong>Klassische Mechanik</strong><br>
+      <sub>Stanford-Teillauf</sub>
+    </td>
+    <td align="center">
+      <a href="../core_quantum_mechanics/2012_winter_theoretical_minimum/quantum_mechanics_theoretical_minimum.pdf"><img src="../figs/readme-covers/quantum_mechanics_theoretical_minimum.png" width="170" alt="Quantum Mechanics cover"></a><br>
+      <strong>Quantenmechanik</strong><br>
+      <sub>Winter 2012 Theoretical Minimum</sub>
+    </td>
+    <td align="center">
+      <a href="../core_quantum_mechanics/2012_winter_modern_physics_stanford/quantum_mechanics_modern_physics_stanford.pdf"><img src="../figs/readme-covers/quantum_mechanics_modern_physics_stanford_first_page.png" width="170" alt="Quantum Mechanics Modern Physics Stanford cover"></a><br>
+      <strong>Quantenmechanik</strong><br>
+      <sub>Winter 2012 Modern Physics Stanford</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="../core_special_relativity/2012_spring_theoretical_minimum/special_relativity_theoretical_minimum.pdf"><img src="../figs/readme-covers/special_relativity_theoretical_minimum.png" width="170" alt="Special Relativity cover"></a><br>
+      <strong>Spezielle Relativitätstheorie</strong><br>
+      <sub>Frühjahr 2012 Theoretical Minimum</sub>
+    </td>
+    <td align="center">
+      <a href="../core_general_relativity/2012_fall_theoretical_minimum/general_relativity_theoretical_minimum.pdf"><img src="../figs/readme-covers/general_relativity_theoretical_minimum.png" width="170" alt="General Relativity cover"></a><br>
+      <strong>Allgemeine Relativitätstheorie</strong><br>
+      <sub>Herbst 2012 Theoretical Minimum</sub>
+    </td>
+    <td align="center">
+      <a href="../core_general_relativity/2008_fall_einsteins_general_theory_of_relativity/general_relativity_2008_fall_einsteins_general_theory_of_relativity.pdf"><img src="../figs/readme-covers/general_relativity_2008_fall_einsteins_general_theory_of_relativity_first_page.png" width="170" alt="General Relativity 2008 cover"></a><br>
+      <strong>Allgemeine Relativitätstheorie</strong><br>
+      <sub>Herbst 2008 Einsteins Allgemeine Theorie</sub>
+    </td>
+    <td align="center">
+      <a href="../core_statistical_mechanics/2013_spring_theoretical_minimum/statistical_mechanics_theoretical_minimum.pdf"><img src="../figs/readme-covers/statistical_mechanics_theoretical_minimum_first_page.png" width="170" alt="Statistical Mechanics and Thermodynamics cover"></a><br>
+      <strong>Statistische Mechanik</strong><br>
+      <sub>Frühjahr 2013 Theoretical Minimum</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="../core_cosmology/2013_winter_theoretical_minimum/cosmology_theoretical_minimum.pdf"><img src="../figs/readme-covers/cosmology_theoretical_minimum_first_page.png" width="170" alt="Cosmology Theoretical Minimum cover"></a><br>
+      <strong>Kosmologie</strong><br>
+      <sub>Winter 2013 Theoretical Minimum</sub>
+    </td>
+    <td align="center">
+      <a href="../core_cosmology/2009_winter_legacy_cosmology/cosmology_legacy.pdf"><img src="../figs/readme-covers/cosmology_legacy.png" width="170" alt="Cosmology legacy cover"></a><br>
+      <strong>Kosmologie</strong><br>
+      <sub>Legacy-Lauf Winter 2009</sub>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="4"><strong>Ergänzend</strong> · Quanten → Speziell → Allgemein → Statistisch → Kosmologie</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="../supplemental_advanced_quantum/advanced_quantum_mechanics.pdf"><img src="../figs/readme-covers/advanced_quantum_mechanics.png" width="170" alt="Advanced Quantum Mechanics cover"></a><br>
+      <strong>Fortgeschrittene Quantenmechanik</strong><br>
+      <sub>Ergänzendes Kursbuch</sub>
+    </td>
+    <td align="center">
+      <a href="../supplemental_quantum_entanglement/quantum_entanglement_part_1.pdf"><img src="../figs/readme-covers/quantum_entanglement_part_1.png" width="170" alt="Quantum Entanglement Part 1 cover"></a><br>
+      <strong>Quantenverschränkung</strong><br>
+      <sub>Teil 1</sub>
+    </td>
+    <td align="center">
+      <a href="../supplemental_quantum_entanglement/quantum_entanglement_part_3.pdf"><img src="../figs/readme-covers/quantum_entanglement_part_3.png" width="170" alt="Quantum Entanglement Part 3 cover"></a><br>
+      <strong>Quantenverschränkung</strong><br>
+      <sub>Teil 3</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="../supplemental_particle_physics_1/particle_physics_1_basic_concepts.pdf"><img src="../figs/readme-covers/particle_physics_1_basic_concepts.png" width="170" alt="Particle Physics 1 cover"></a><br>
+      <strong>Teilchenphysik 1</strong><br>
+      <sub>Grundbegriffe</sub>
+    </td>
+    <td align="center">
+      <a href="../supplemental_particle_physics_2/particle_physics_2_standard_model.pdf"><img src="../figs/readme-covers/particle_physics_2_standard_model.png" width="170" alt="Particle Physics 2 cover"></a><br>
+      <strong>Teilchenphysik 2</strong><br>
+      <sub>Standardmodell</sub>
+    </td>
+    <td align="center">
+      <a href="../supplemental_particle_physics_3/particle_physics_3_supersymmetry_and_grand_unification.pdf"><img src="../figs/readme-covers/particle_physics_3_supersymmetry_and_grand_unification.png" width="170" alt="Particle Physics 3 cover"></a><br>
+      <strong>Teilchenphysik 3</strong><br>
+      <sub>Supersymmetrie und Große Vereinheitlichung</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="../supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf"><img src="../figs/readme-covers/topics_in_string_theory_first_page.png" width="170" alt="Topics in String Theory cover"></a><br>
+      <strong>Themen der Stringtheorie</strong><br>
+      <sub>Kosmologie- und Schwarze-Löcher-Sammlung</sub>
+    </td>
+    <td align="center">
+      <a href="../supplemental_string_theory/string_theory_and_m_theory.pdf"><img src="../figs/readme-covers/string_theory_and_m_theory.png" width="170" alt="String Theory and M-Theory cover"></a><br>
+      <strong>String Theory and M-Theory</strong><br>
+      <sub>Ergänzendes Kursbuch</sub>
+    </td>
+    <td align="center">
+      <a href="../supplemental_higgs_boson/demystifying_the_higgs_boson.pdf"><img src="../figs/readme-covers/demystifying_the_higgs_boson.png" width="170" alt="Demystifying the Higgs Boson cover"></a><br>
+      <strong>Entmystifizierung des Higgs-Bosons</strong><br>
+      <sub>Buch zu einer einzelnen Vorlesung</sub>
+    </td>
+  </tr>
+</table>
 
-- Kuratierte Notizspur- und Kursfortschrittsdaten.
-- Bereitgestellte Artefakte (`.pdf`) zum Lesen und Teilen.
-- Quelldateien (`.tex`, `.bib`, Templates) für alle, die das Archiv pflegen oder erweitern.
+## ✨ Was dieses Repository bereitstellt
 
-### Hauptziele
-- Kursnotizen und Fortschritt an einem Ort bündeln.
-- Entwurfs- und Notizfortschritt für Kern- und Ergänzungskurse sichtbar halten.
-- Quellmaterialien (PDF, TeX, BibTeX, Templates) für die Weiterarbeit bereitstellen.
+- Bereits vorhandene, manuell gepflegte Kurs-PDFs und LaTeX-Materialien in den Ordnern `core_*` und `supplemental_*`.
+- Eine zweigeteilte Transkriptionsschicht für das Vorlesungsarchiv:
+  - `subtitles/` für `.srt`
+  - `markdown/` für mit Zeitstempeln versehene Markdown-Transkripte
+- Eine Transkript-zu-TeX-Pipeline in `generated_course_notes/`.
+- Das Submodul `Video2Book/` für Playlist-Download, Transkription und Untertitel-zu-Notizen-Automatisierung.
+- Importiertes Begleitmaterial in `theoretical_minimum_companion_notes/`.
+- Wiederverwendbare LaTeX-Templates in `template/kaobook` und `template/tuftle`.
 
-## Funktionen
-- 📚 Fortschritt und Referenzen der Kernkurse.
-- 📌 Fortschrittsnachverfolgung für Ergänzungskurse.
-- 📄 Vorliegende Vorlesungs-PDFs für mehrere Kernkurse.
-- 🧪 LaTeX-Quellmaterialien in ausgewählten Spuren.
-- 🧷 Wiederverwendbare LaTeX-Templates in `template/tuftle` und `template/kaobook`.
-- 🎨 Repository-Materialien in `figs/`.
-- 🌐 Mehrsprachige README-Varianten in `i18n/`.
+Englisch ist die kanonische README. Übersetzungen liegen in `i18n/` und können gegenüber der englischen Datei hinterherhinken.
 
-## Schnellübersicht
-| Bereich | Verfügbarkeit |
+## 🎬 Quell-Playlist
+
+Das Hauptarchiv der Transkripte und Untertitel in diesem Repository stammt aus dieser YouTube-Playlist:
+
+- <https://www.youtube.com/playlist?list=PLERGeJGfknBTR_nXt5QL88xJF5LhDZBnG>
+
+## 🗂️ Repository-Layout
+
+<table>
+  <colgroup>
+    <col style="width: 33%">
+    <col style="width: 33%">
+    <col style="width: 34%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>📚 Ebene</th>
+      <th>📍 Hauptpfad</th>
+      <th>🧾 Inhalt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Manuell gepflegte Kursordner</td>
+      <td><code>core_*</code>, <code>supplemental_*</code></td>
+      <td>Leserorientierte Kursordner, veröffentlichte PDFs, READMEs und ausgewählte LaTeX-Quellen.</td>
+    </tr>
+    <tr>
+      <td>Untertitel</td>
+      <td><code>subtitles/</code></td>
+      <td>Untertiteldateien der Vorlesungen im Format <code>.srt</code>.</td>
+    </tr>
+    <tr>
+      <td>Markdown-Transkripte</td>
+      <td><code>markdown/</code></td>
+      <td>Mit Zeitstempeln versehene Vorlesungstranskripte für Lesen, Suche und Notizgenerierung.</td>
+    </tr>
+    <tr>
+      <td>Quellen der generierten Notizen</td>
+      <td><code>generated_course_notes/</code></td>
+      <td>Aus Transkripten abgeleitete TeX-Kapitel, Abbildungen, Prompts und Build-Material für Kurse.</td>
+    </tr>
+    <tr>
+      <td>Veröffentlichte generierte PDFs</td>
+      <td><code>supplemental_*/</code></td>
+      <td>Kanonische veröffentlichte Ausgaben für fertig generierte Kurse, mit einem kursspezifischen zusammengeführten PDF-Dateinamen plus <code>lecture_XX.pdf</code>-Dateien.</td>
+    </tr>
+    <tr>
+      <td>Legacy-Build-Artefakte</td>
+      <td><code>core_cosmology/cosmology_ch10/artifacts/</code></td>
+      <td>Build-Ausgaben, die für das ältere Kapitel-10-Kosmologie-Teilprojekt aufbewahrt werden.</td>
+    </tr>
+    <tr>
+      <td>Begleitnotizen</td>
+      <td><code>theoretical_minimum_companion_notes/</code></td>
+      <td>Importierte TeX-Begleitnotizen, abgeleitet aus dem Projekt <code>weka511/tm</code>.</td>
+    </tr>
+    <tr>
+      <td>Templates und gemeinsames Material</td>
+      <td><code>template/</code>, <code>figs/</code>, <code>the_theoretical_minimum/</code>, <code>Video2Book/</code></td>
+      <td>LaTeX-Templates, gemeinsames Branding/Assets, der zugehörige Submodul-Checkout und das Submodul für Download-/Transkriptionsautomatisierung.</td>
+    </tr>
+  </tbody>
+</table>
+
+Innerhalb von `subtitles/`, `markdown/` und `generated_course_notes/` ist das Material nach Spur (`core/` oder `supplementary`), dann nach Fach und dann nach Kurslauf organisiert.
+
+Bei generierten Notizen enthält jeder Kursordner üblicherweise:
+
+- `chapters/` für Vorlesung-für-Vorlesung-TeX und PDF-Dateien pro Vorlesung
+- `figures/` für extrahierte Vorlesungsframes und Abbildungs-Assets
+- `course.tex` und `course.pdf` für das zusammengeführte vollständige Kursbuch
+
+## 🧭 Kursordner auf Root-Ebene
+
+| 🏷️ Gruppe | 📂 Ordner |
 |---|---|
-| 📝 Notizen | Mehrere Kursnotiz-Sammlungen mit Fortschrittsnachverfolgung |
-| 🧾 Quelle | TeX/BibTeX-Quellen in ausgewählten Teilprojekten |
-| 🧱 Templates | `template/tuftle` und `template/kaobook` |
-| 🎨 Branding | `figs/banner.*`, `figs/logo.*`, `figs/logo-w-text.*` |
-| 🌍 i18n | Sprachvarianten `i18n/README.*.md` |
+| Kern | `core_classical_mechanics`, `core_quantum_mechanics`, `core_special_relativity`, `core_general_relativity`, `core_cosmology`, `core_statistical_mechanics` |
+| Ergänzend | `supplemental_advanced_quantum`, `supplemental_cosmology_and_black_holes`, `supplemental_higgs_boson`, `supplemental_particle_physics_1`, `supplemental_particle_physics_2`, `supplemental_particle_physics_3`, `supplemental_quantum_entanglement`, `supplemental_relativity`, `supplemental_string_theory` |
 
-## Inhaltsverzeichnis
-- [Überblick](#überblick)
-- [Funktionen](#funktionen)
-- [Schnellübersicht](#schnellübersicht)
-- [Projektstruktur](#projektstruktur)
-- [Voraussetzungen](#voraussetzungen)
-- [Installation](#installation)
-- [Nutzung](#nutzung)
-- [Konfiguration](#konfiguration)
-- [Beispiele](#beispiele)
-- [Entwicklungsnotizen](#entwicklungsnotizen)
-- [Kanonischer Kursfortschritt (Erhalten und reorganisiert)](#kanonischer-kursfortschritt-erhalten-und-reorganisiert)
-- [Fehlerbehebung](#fehlerbehebung)
-- [Roadmap](#roadmap)
-- [Beitrag](#beitrag)
-- [❤️ Support](#-support)
-- [Danksagung](#danksagung)
-- [Lizenz](#lizenz)
+## 🚀 So nutzt man das Repository
 
-## Projektstruktur
-```text
-leonardsusskind/
-├── README.md
-├── LICENSE
-├── tuftle_book_guide.pdf
-├── figs/
-│   ├── banner.(png|svg)
-│   ├── logo.(png|svg)
-│   └── logo-w-text.(png|svg)
-i18n/
-│   ├── README.ar.md
-│   ├── README.de.md
-│   ├── README.es.md
-│   ├── README.fr.md
-│   ├── README.ja.md
-│   ├── README.ko.md
-│   ├── README.ru.md
-│   ├── README.vi.md
-│   ├── README.zh-Hans.md
-│   └── README.zh-Hant.md
-├── core_classical_mechanics/
-│   └── README.md
-├── core_quantum_mechanics/
-│   └── README.md
-├── core_special_relativity/
-│   └── README.md
-├── core_general_relativity/
-│   ├── README.md
-│   └── lesson_1.pdf ... lesson_10.pdf
-├── core_cosmology/
-│   ├── README.md
-│   ├── lesson_1.pdf ... lesson_9.pdf
-│   └── cosmology_ch10/
-│       ├── cosmology_ch10.tex
-│       └── ref.bib
-├── core_statistical_mechanics/
-│   ├── README.md
-│   └── lesson_1.pdf ... lesson_11.pdf
-├── supplemental_advanced_quantum/
-│   ├── README.md
-│   └── ch1/
-│       ├── main.tex
-│       ├── book_1_template.tex
-│       └── bibliography.bib
-├── supplemental_cosmology_and_black_holes/
-│   └── README.md
-├── supplemental_higgs_boson/
-│   └── README.md
-├── supplemental_particle_physics_1/
-│   ├── README.md
-│   ├── ch1/
-│   │   ├── main.tex
-│   │   ├── book_1_template.tex
-│   │   └── bibliography.bib
-│   └── lecture transcript .txt files
-├── supplemental_particle_physics_2/
-│   ├── README.md
-│   ├── NumberTheory.pdf
-│   └── lecture transcript .txt files
-├── supplemental_particle_physics_3/
-│   └── README.md
-├── supplemental_quantum_entanglement/
-│   └── README.md
-├── supplemental_relativity/
-│   └── README.md
-├── supplemental_string_theory/
-│   └── README.md
-└── template/
-    ├── kaobook/
-    │   ├── main.tex
-    │   ├── structure.tex
-    │   └── bibliography.bib
-    └── tuftle/
-        ├── main.tex
-        ├── book_1_template.tex
-        └── bibliography.bib
-```
+### 📖 Veröffentlichte Notizen lesen
 
-## Voraussetzungen
-Zum Lesen:
-- Ein PDF-Reader (systemseitig oder per App).
+Öffnen Sie die PDFs im entsprechenden Kursordner, zum Beispiel:
 
-Zum Bearbeiten/Erstellen von TeX-Materialien:
-- Eine LaTeX-Distribution (TeX Live / MiKTeX).
-- `pdflatex`.
-- `bibtex` oder `biber`, je nach Unterprojekt.
-- `makeindex` für Projekte, die Indexeinträge verwenden.
+- `../core_classical_mechanics/2011_fall_theoretical_minimum/classical_mechanics_theoretical_minimum.pdf`
+- `../core_classical_mechanics/2011_fall_modern_physics_stanford_partial/classical_mechanics_stanford_partial.pdf`
+- `../core_quantum_mechanics/2012_winter_theoretical_minimum/quantum_mechanics_theoretical_minimum.pdf`
+- `../core_quantum_mechanics/2012_winter_modern_physics_stanford/quantum_mechanics_modern_physics_stanford.pdf`
+- `../core_special_relativity/2012_spring_theoretical_minimum/special_relativity_theoretical_minimum.pdf`
+- `../core_general_relativity/2012_fall_theoretical_minimum/general_relativity_theoretical_minimum.pdf`
+- `../core_cosmology/2013_winter_theoretical_minimum/cosmology_theoretical_minimum.pdf`
+- `../core_cosmology/2009_winter_legacy_cosmology/cosmology_legacy.pdf`
+- `../core_statistical_mechanics/lesson_1.pdf`
+- `../supplemental_advanced_quantum/advanced_quantum_mechanics.pdf`
+- `../supplemental_cosmology_and_black_holes/topics_in_string_theory.pdf`
+- `../supplemental_higgs_boson/demystifying_the_higgs_boson.pdf`
+- `../supplemental_particle_physics_1/particle_physics_1_basic_concepts.pdf`
+- `../supplemental_particle_physics_2/particle_physics_2_standard_model.pdf`
+- `../supplemental_particle_physics_3/particle_physics_3_supersymmetry_and_grand_unification.pdf`
+- `../supplemental_quantum_entanglement/quantum_entanglement_part_1.pdf`
+- `../supplemental_quantum_entanglement/quantum_entanglement_part_3.pdf`
+- `../supplemental_string_theory/string_theory_and_m_theory.pdf`
 
-Hinweis zu Annahmen:
-- Es gibt kein einheitliches Root-Buildsystem (`Makefile`, `package.json`, `pyproject.toml`) im Repository.
-- Build-Workflows werden erfahrungsgemäß aus jedem Unterordner heraus ausgeführt.
+### 📝 Transkripte direkt lesen
 
-## Installation
-```bash
-# Repository klonen
-git clone https://github.com/lachlanchen/leonardsusskind.git
-cd leonardsusskind
-```
+Verwenden Sie:
 
-Dieses Repository ist inhaltlich priorisiert. Wenn es gespiegelt oder geforkt wird, ersetzen Sie die Remote-URL entsprechend durch Ihre eigene Kopie.
+- `../subtitles/` für Lesen im Untertitelstil und Zeitstempelgenauigkeit
+- `../markdown/` für Textprüfung, Suche und Notizgenerierung
 
-Für das reine Lesen bestehender Notizen ist keine globale Paketinstallation erforderlich.
+### ⬇️ Die Quell-Playlist aktualisieren
 
-## Nutzung
-### 1) Bestehende Notizen lesen
-Öffnen Sie PDFs in den passenden Ordnern, zum Beispiel:
-- `core_general_relativity/lesson_1.pdf`
-- `core_cosmology/lesson_1.pdf`
-- `core_statistical_mechanics/lesson_1.pdf`
-- `supplemental_particle_physics_2/NumberTheory.pdf`
-
-### 2) LaTeX-Materialien erstellen oder erweitern
-- Bearbeiten Sie `.tex`- und `.bib`-Dateien im Zielkurs-/Template-Ordner.
-- Kompilieren Sie mit dem in diesem Ordner vorgesehenen Workflow.
-- Arbeiten Sie lokal im jeweiligen Projektverzeichnis, damit relative Pfade zu Assets und Stil-Dateien korrekt aufgelöst werden.
-
-### 3) Nach Track-Einstieg navigieren
-Jede größere Spur hat ihr eigenes `README.md` mit lokalem Kontext, Referenzen und Fortschrittsstand.
-
-## Konfiguration
-Es gibt keine globale Konfigurationsdatei.
-
-Die Konfiguration ist lokal für jedes TeX-Projekt definiert. Typische Einstellpunkte sind in den Quelldateien eingebettet, darunter:
-- Dokumentenklasse und Paketkonfiguration in `template/kaobook/main.tex`
-- Wiederverwendbarer Stil/Struktur in `template/kaobook/`
-- Bibliografie-Backend und Zitierstil in lokalen `main.tex`/`ref.bib`-Kombinationen
-- Include-Pfade für Bilder und kapitelspezifische Assets in jedem Projekt
-
-Typische lokale Konfigurationspunkte:
-- `template/kaobook/main.tex`
-- `template/tuftle/main.tex`
-- `core_cosmology/cosmology_ch10/cosmology_ch10.tex`
-- `supplemental_particle_physics_1/ch1/main.tex`
-- `supplemental_advanced_quantum/ch1/main.tex`
-
-## Beispiele
-### Beispiel A: Build von `template/kaobook`
-`template/kaobook/main.tex` dokumentiert diese Kompilierkette:
+Verwenden Sie den übergeordneten Wrapper, der an das Submodul `Video2Book` delegiert:
 
 ```bash
-cd template/kaobook
-pdflatex main
-makeindex main.idx -s StyleInd.ist
-biber main
-pdflatex main
-pdflatex main
+./scripts/download_susskind_playlist.sh
 ```
 
-### Beispiel B: Build von `core_cosmology/cosmology_ch10`
-`cosmology_ch10.tex` verwendet einen BibTeX-artigen Workflow:
+### 🎙️ Die Transkriptionswarteschlange starten
+
+Verwenden Sie die übergeordneten Wrapper, die an das Submodul `Video2Book` delegieren:
 
 ```bash
-cd core_cosmology/cosmology_ch10
-pdflatex cosmology_ch10.tex
-bibtex cosmology_ch10
-pdflatex cosmology_ch10.tex
-pdflatex cosmology_ch10.tex
+./scripts/start_transcription_tmux.sh
+./scripts/start_transcription_monitor_tmux.sh
 ```
 
-### Beispiel C: Build von `supplemental_particle_physics_1/ch1`
+### 🧪 An aus Transkripten abgeleiteten Notizen arbeiten
+
+Der Arbeitsbereich für generierte Notizen befindet sich unter:
+
+- `../generated_course_notes/`
+
+Innerhalb jedes Kurslaufs:
+
+- enthält `chapters/` einen Ordner pro Vorlesung
+- enthält jeder Vorlesungsordner das Kapitel-TeX und das kompilierte Vorlesungs-PDF
+- ist `course.pdf` das zusammengeführte vollständige Kurs-PDF für diesen Lauf
+
+Starten Sie den Notiz-Kurator über die übergeordneten Wrapper, die an das Submodul `Video2Book` delegieren:
+
 ```bash
-cd supplemental_particle_physics_1/ch1
-pdflatex main.tex
-bibtex main
-makeindex main.idx
-pdflatex main.tex
-pdflatex main.tex
+./scripts/start_course_notes_tmux.sh
+./scripts/start_course_notes_monitor_tmux.sh
 ```
 
-### Beispiel D: Build von `supplemental_advanced_quantum/ch1`
+### 📘 Kompakte Pocket-Format-PDFs exportieren
+
+Erzeugen Sie handliche 6x9-Zoll-Varianten aus fertigem generiertem Kurs-LaTeX:
+
 ```bash
-cd supplemental_advanced_quantum/ch1
-pdflatex main.tex
-bibtex main
-makeindex main.idx
-pdflatex main.tex
-pdflatex main.tex
+./scripts/export_course_pocket_pdfs.sh
+./scripts/export_course_pocket_pdfs.sh --size a5 --suffix a5
 ```
 
-### Beispiel E: Ausgabe lokal anzeigen
+Die Ausgaben werden standardmäßig nach `../all_notes/pocket_books/<course>_pocket.pdf` geschrieben (kanonische
+Dateinamen, mit optionalem benutzerdefiniertem Suffix über `--suffix`).
+
+### 📚 An importierten Begleitnotizen arbeiten
+
 ```bash
-xdg-open supplemental_particle_physics_1/ch1/main.pdf
+./theoretical_minimum_companion_notes/build_all.sh
 ```
 
-## Entwicklungsnotizen
-- Dieses Repository ist primär ein Dokumentations- und Notiz-Repository, kein Anwendungs-Codebestand.
-- Einige Ordner enthalten generierte TeX-Artefakte (`.aux`, `.log`, `.toc`, `.bbl` usw.), die im Repository versioniert sind.
-- Build-Befehle können je nach Unterverzeichnis variieren; folgen Sie den lokalen `.tex`-Konventionen.
-- Pro-Track-`README.md`-Dateien existieren in Kern- und Ergänzungsbereichen und sollten mit den Fortschrittsangaben der Wurzel synchron bleiben.
-- `i18n/` existiert und dient der Bereitstellung mehrsprachiger README-Varianten.
-- Die Root-README ist die kanonische Quelle; lokalisierte Dateien sollten bei Aktualisierungen daran ausgerichtet werden.
+## 🤝 Zusammenarbeit
 
-## Kanonischer Kursfortschritt (Erhalten und reorganisiert)
+Beiträge, die die mathematische Qualität, Klarheit und Bewahrung von Leonard-Susskind-bezogenem Studienmaterial verbessern, sind willkommen.
 
-### Kernkurse
+Prioritäre Bereiche sind:
 
-#### Klassische Mechanik
-Das Lehrbuch zu diesem Kurs [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) wurde veröffentlicht. Sie können es auf Amazon unter [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) erwerben.
+- Bereinigung von Transkripten
+  - Sprecherzuordnung korrigieren
+  - Zeitstempel reparieren
+  - physikalische Begriffe, Namen und Notation korrigieren
+- TeX-Verbesserung
+  - Transkripte in eine sauberere mathematische Darstellung überführen
+  - Struktur, Typografie und Querverweise verbessern
+  - generierte Kapitel zu belastbaren Kursnotizen ausarbeiten
+- Arbeit an Abbildungen und Gleichungen
+  - extrahierte Vorlesungsframes verifizieren
+  - Diagramme in TikZ neu zeichnen
+  - Tafelgleichungen in zuverlässiges LaTeX überführen
+- breitere Physik-Archivierungsarbeit
+  - Begleitmaterial zu *Theoretical Minimum* verbessern
+  - zugehörige Susskind-Vorlesungen, Bücher und Notizensammlungen verknüpfen
+  - dabei helfen, diesen Bestand an Physiklehre verantwortungsvoll zu verbreiten und zu bewahren
 
-#### Quantenmechanik
-Das Lehrbuch zu diesem Kurs [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) wurde veröffentlicht. Sie können es auf Amazon unter [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) erwerben.
+Beiträge sollten fokussierte Commits verwenden und die exakt geänderten Ordner, Transkripte oder Kursläufe benennen.
 
-#### Spezielle Relativitätstheorie und Elektrodynamik
-Das Lehrbuch zu diesem Kurs [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) wurde veröffentlicht. Sie können es auf Amazon unter [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) erwerben.
+## 🙏 Danksagungen
 
-#### Kernfortschrittstabelle
-| Kurs | Entwurfsfortschritt | Notizfortschritt | Notizen/Referenzen |
-|---|---:|---:|---|
-| General Relativity | 10/10 | 10/10 | Die Vorlesungsnotizen wurden von https://www.lapasserelle.com/general_relativity/ erfasst. |
-| Cosmology | 10/10 | 9/10 | Die Vorlesungsnotizen von Kapitel 1 bis 9 wurden von https://www.lapasserelle.com/cosmology/ erfasst. Kapitel 10 befindet sich in Arbeit. |
-| Statistical Mechanics | 11/11 | 10/10 | Die Vorlesungsnotizen wurden von https://www.lapasserelle.com/statistical_mechanics/ erfasst. |
+- Leonard Susskind für den ursprünglichen Vorlesungsinhalt.
+- Repository-Kuration und Veröffentlichungs-Tooling: [LazyingArt LLC](https://lazying.art)
+- Simon Crase für das Begleitnotiz-Repository, das nach `../theoretical_minimum_companion_notes/` importiert wurde.
+- Quell-Repository der Begleitnotizen: <https://github.com/weka511/tm>
+- Vorhandene referenzierte Notizquellen:
+  - <https://www.lapasserelle.com/general_relativity/>
+  - <https://www.lapasserelle.com/cosmology/>
+  - <https://www.lapasserelle.com/statistical_mechanics/>
+- Herkunftsvermerk für die älteren, von La Passerelle abgeleiteten PDF-Sammlungen:
+  - [`../references/lapasserelle_susskind_pdf_provenance.md`](../references/lapasserelle_susskind_pdf_provenance.md)
 
-### Ergänzende Kurse
-| Kurs | Entwurfsfortschritt | Notizfortschritt |
-|---|---:|---:|
-| Advanced Quantum Mechanics | 0/10 | 0/10 |
-| Higgs Boson | 0/1 | 0/1 |
-| Quantum Entanglement | 0/9 | 0/9 |
-| Relativity | 0/9 | 0/9 |
-| Particle Physics 1: Basic Concepts | 6/10 | 0/10 |
-| Particle Physics 2: Standard Model | 0/10 | 0/10 |
-| Particle Physics 3: Supersymmetry and Grand Unification | 0/10 | 0/10 |
-| String Theory | 0/11 | 10/10 |
-| Cosmology and Black Holes | 0/8 | 0/10 |
-
-### Fortschrittsintegrität
-- Die obigen Fortschrittstabellen wurden aus dem kanonischen README-Text übernommen.
-- Das Repository enthält sowohl ausgereifte als auch Platzhalter-Spuren; wenn ein Tabellenwert und der Ordnerzustand nicht übereinstimmen, gilt die Tabelle als dokumentierte Absicht. In zukünftigen Revisionen sollten beide gemeinsam aktualisiert werden.
-
-## Fehlerbehebung
-| Problem | Lösung |
-|---|---|
-| `pdflatex: command not found` | Installieren Sie eine LaTeX-Distribution und stellen Sie sicher, dass die Binaries im `PATH` liegen. |
-| Literaturverzeichnis/Index erscheint nicht | Führen Sie das erforderliche Backend (`bibtex` oder `biber`) und gegebenenfalls `makeindex` aus, dann `pdflatex` erneut. |
-| Fehler durch fehlende Style-/Klassen-Datei | Bauen Sie im vorgesehenen Projektverzeichnis, damit relative Pfade zu lokalen Assets korrekt aufgelöst werden. |
-| Build-Ausgabe unterscheidet sich zwischen Umgebungen | Dieses Repository enthält Materialien aus unterschiedlichen Umgebungen; versuchen Sie, Paketversionen nach Möglichkeit anzugleichen. |
-| Veraltete i18n-Links oder fehlende Sprach-README | Halten Sie die Sprachauswahllinie oben und die Dateien unter `i18n/` synchron. |
-| GitHub-Markdown-Linkfehler nach Ordnerumbenennung | Prüfen Sie Root-Sprachlinks und alle `i18n/README.*.md`-Verweise in einem Durchgang neu. |
-
-## Roadmap
-- Ergänzen Sie ergänzende Kurse mit echtem Kapitelinhalt und Quelldateien.
-- Verbessern Sie die Konsistenz der per-Kurs-README-Dateien.
-- Erweitern und pflegen Sie mehrsprachige README-Dateien unter `i18n/` und halten Sie den Sprachselektor synchron.
-- Ergänzen Sie einen repositoryweiten Build-Leitfaden für Unterprojekte mit TeX-Quellen.
-- Ergänzen Sie pro-Track-Kompilierungsschnipsel, wo lokale Toolchain-Unterschiede bestehen.
-- Führen Sie minimale Automatisierungen zur Validierung der README-/i18n-Link-Integrität ein.
-
-## Beitrag
-Sie können zu diesem Projekt beitragen, indem Sie es forken und einen Pull Request einreichen.
-
-Mögliche Beitragsbereiche:
-- Ergänzen oder verbessern Sie Kapitelnotizen und Referenzen.
-- Verbessern Sie die Qualität der TeX-Quellen und reproduzierbaren Build-Anleitungen.
-- Halten Sie Fortschrittsangaben in Root- und Track-READMEs synchron.
-- Sorgen Sie für Konsistenz der mehrsprachigen README-Dateien unter `i18n/`.
-
-Empfohlene Pull-Request-Hygiene:
-- Nennen Sie die genauen geänderten Track-Ordner.
-- Fügen Sie die verwendeten TeX-Kompilierungsbefehle bei (falls Quelldateien bearbeitet wurden).
-- Aktualisieren Sie relevante Fortschrittstabellen, wenn sich der Kapitelstand ändert.
-- Aktualisieren Sie die Dateien in `i18n/` nach Änderungen an der kanonischen englischen README.
-
-## Danksagung
-- Professor Leonard Susskind für den ursprünglichen Vorlesungsinhalt.
-- Referenzierte Notizquelle: https://www.lapasserelle.com/general_relativity/
-- Referenzierte Notizquelle: https://www.lapasserelle.com/cosmology/
-- Referenzierte Notizquelle: https://www.lapasserelle.com/statistical_mechanics/
-
-## Lizenz
-Dieses Repository ist unter der GNU General Public License v3.0 lizenziert. Siehe [LICENSE](LICENSE).
-
-
-## ❤️ Support
+## ❤️ Unterstützung
 
 | Donate | PayPal | Stripe |
 | --- | --- | --- |
 | [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
+
+## Lizenz
+
+Dieses Repository ist unter der GNU General Public License v3.0 lizenziert. Siehe [LICENSE](../LICENSE).
