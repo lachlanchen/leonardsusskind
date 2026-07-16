@@ -1,7 +1,7 @@
 {
   "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
-  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology \uff5c Lecture 4 [KdBrQMkkDz8].md",
-  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology \uff5c Lecture 4 [KdBrQMkkDz8].mkv",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].mkv",
   "lecture_number": 4,
   "lecture_slug": "lecture_04",
   "lecture_title": "Cosmology : Lecture 4",
@@ -54,7 +54,7 @@
       "timestamp_hhmmss": "01:12:35.206",
       "source_candidate": "lecture_04_window_05_candidate_04_011235206.png",
       "recommended_use": "screenshot_plus_equation",
-      "rationale": "Candidate 04 is the strongest frame because it directly captures the board summary that an equation of state is specified by the parameter \\(w\\). The generic relation \\(P=\\omega\\rho\\) is visible and actively indicated by Susskind\u2019s pointing gesture, while the specific cases \\(\\omega=0\\) and \\(\\omega=1/3\\) and the corresponding matter and radiation pressure relations remain on the board. It is the clearest single witness to the conceptual point named in the subtitle.",
+      "rationale": "Candidate 04 is the strongest frame because it directly captures the board summary that an equation of state is specified by the parameter \\(w\\). The generic relation \\(P=\\omega\\rho\\) is visible and actively indicated by Susskind’s pointing gesture, while the specific cases \\(\\omega=0\\) and \\(\\omega=1/3\\) and the corresponding matter and radiation pressure relations remain on the board. It is the clearest single witness to the conceptual point named in the subtitle.",
       "subtitle_excerpt": "an equation of state means a value of w",
       "segment_start_seconds": 4353.006,
       "segment_start_hhmmss": "01:12:33.006",
@@ -62,5 +62,6 @@
       "segment_end_hhmmss": "01:12:35.506",
       "caption_hint": "equation-of-state parameter w"
     }
-  ]
+  ],
+  "schema_version": 2
 }

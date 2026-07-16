@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "unsupported_claims": [],
+  "missing_beats": [],
+  "style_violations": [],
+  "provenance_gaps": [],
+  "q_and_a_checks": [
+    {
+      "locator": "Does the apparent wavelength of the cosmic radiation depend on the observer's motion, and does that imply a preferred frame?",
+      "timestamp": "00:00:25",
+      "verified": true,
+      "reason": "Direct classroom question and answer in the transcript; the revised chapter now keeps only transcript-supported claims."
+    },
+    {
+      "locator": "Can two galaxies have a relative velocity greater than c?",
+      "timestamp": "00:04:48",
+      "verified": true,
+      "reason": "Direct audience question and answer in the transcript."
+    },
+    {
+      "locator": "Wouldn't a light ray sent in the reverse direction still travel toward us?",
+      "timestamp": "00:07:03",
+      "verified": true,
+      "reason": "Direct objection and response in the transcript."
+    },
+    {
+      "locator": "Does the ordinary relativistic law for adding velocities still hold in this situation?",
+      "timestamp": "00:09:42",
+      "verified": true,
+      "reason": "The transcript explicitly distinguishes local special-relativistic velocity addition from the global expansion problem."
+    },
+    {
+      "locator": "Is the statement that a wave stretches with the universe theoretical, empirical, or both?",
+      "timestamp": "00:14:42",
+      "verified": true,
+      "reason": "The transcript explicitly gives both the theoretical and empirical sides."
+    },
+    {
+      "locator": "What is the relationship between superluminal recession, the surface of last scattering, and the observable universe?",
+      "timestamp": "00:17:53",
+      "verified": true,
+      "reason": "This is a real classroom exchange and the revised chapter preserves its physics correctly."
+    },
+    {
+      "locator": "Since H changes with time, is the horizon distance changing, and will the microwave background eventually disappear?",
+      "timestamp": "00:22:43",
+      "verified": true,
+      "reason": "The transcript explicitly asks about the time dependence of the horizon and the fate of the microwave background."
+    },
+    {
+      "locator": "In the expanding universe, aren't the particles actually moving apart?",
+      "timestamp": "00:54:27",
+      "verified": true,
+      "reason": "Direct audience question and local-box answer in the transcript."
+    },
+    {
+      "locator": "If vacuum energy drives exponential expansion, won't everything eventually be ripped apart?",
+      "timestamp": "01:27:16",
+      "verified": true,
+      "reason": "The exchange is explicit and the revised chapter keeps the point about bound systems."
+    },
+    {
+      "locator": "Is there anything interesting in the negative sign when one takes the square root of the Friedmann equation?",
+      "timestamp": "01:31:43",
+      "verified": true,
+      "reason": "The transcript directly discusses the two branches of the square root."
+    },
+    {
+      "locator": "If the surface of last scattering fades into the horizon, is that the same thing as galaxies moving beyond the horizon?",
+      "timestamp": "01:48:07",
+      "verified": true,
+      "reason": "The revised chapter preserves the real exchange distinguishing cooler deeper CMB sightlines from galaxies simply moving away."
+    },
+    {
+      "locator": "Is this vacuum energy related to quantum vacuum energy?",
+      "timestamp": "01:53:51",
+      "verified": true,
+      "reason": "Direct audience question and affirmative answer in the transcript."
+    },
+    {
+      "locator": "What is an example of an object out there whose size we know?",
+      "timestamp": "02:08:09",
+      "verified": true,
+      "reason": "The transcript explicitly identifies the largest microwave-background lumps."
+    },
+    {
+      "locator": "In the density calculation for matter and for radiation, did we assume that the energy was constant and then adjust the scale factor to figure out the formula? And what happens in the vacuum-energy case?",
+      "timestamp": "02:11:04",
+      "verified": true,
+      "reason": "The two-part, halting exchange is genuine, and the revised chapter restores the vacuum-energy clause while keeping the answer close to the transcript."
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_04_figure_02.png",
+      "timestamp": "00:11:02",
+      "verdict": "keep",
+      "reason": "Correctly timed and still the best screenshot witness for the one-dimensional expansion sketch."
+    },
+    {
+      "asset": "lecture_04_figure_03.png",
+      "timestamp": "00:29:32",
+      "verdict": "keep",
+      "reason": "Correctly timed and clearly shows the basic expansion equation together with the lingering line sketch."
+    },
+    {
+      "asset": "lecture_04_figure_04.png",
+      "timestamp": "00:57:44",
+      "verdict": "keep",
+      "reason": "Useful board summary for matter versus radiation, including the scale-factor laws and pressure relations."
+    },
+    {
+      "asset": "lecture_04_figure_05.png",
+      "timestamp": "01:12:35",
+      "verdict": "keep",
+      "reason": "Best source witness for P = omega rho and the density-scaling discussion."
+    }
+  ],
+  "source_map": [
+    {
+      "locator": "Opening preferred-frame paragraph",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:25",
+        "00:04:28"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Built from the Doppler-anisotropy discussion and the statement that the same preferred frame is defined by the microwave background and the average rest frame of local galaxies."
+    },
+    {
+      "locator": "Section 'Preferred Frame, Superluminal Recession, and the Horizon'",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:48",
+        "00:07:33"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Supported by the superluminal-recession discussion and the explanation that space grows faster than the light ray can overcome."
+    },
+    {
+      "locator": "Section 'The Expanding Metric and the Line Analogy'",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:07:35",
+        "00:17:46"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Built from the line-of-atoms analogy, the local-signal-speed discussion, and the anti-rubber-band clarification."
+    },
+    {
+      "locator": "lecture_04_figure_02.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:11:02"
+      ],
+      "reference": "lecture_04_figure_02.png",
+      "confidence": "high",
+      "note": "Screenshot witness for the one-dimensional line sketch used in the expansion analogy."
+    },
+    {
+      "locator": "Basic expansion equation \\((\\dot a/a)^2 = 8\\pi G\\rho/3\\)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:07",
+        "00:29:33"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Spoken and written on the board as the basic equation for expansion, with c set equal to 1."
+    },
+    {
+      "locator": "lecture_04_figure_03.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:29:32"
+      ],
+      "reference": "lecture_04_figure_03.png",
+      "confidence": "high",
+      "note": "Board witness for the basic expansion equation and the lingering line sketch."
+    },
+    {
+      "locator": "Section 'Radiation Pressure and Cold Matter'",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:38:26",
+        "00:54:55"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Based on the one-dimensional photon box, the isotropic three-dimensional correction, and the cold-matter limit."
+    },
+    {
+      "locator": "lecture_04_figure_04.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:57:44"
+      ],
+      "reference": "lecture_04_figure_04.png",
+      "confidence": "high",
+      "note": "Board summary of matter versus radiation, their pressures, and their scale-factor laws."
+    },
+    {
+      "locator": "Equation of state \\(P = w\\rho\\) and density law \\(\\rho \\propto a^{-3(1+w)}\\)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:55:15",
+        "01:12:57"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The lecture states the equation of state and works through the thermodynamic scaling argument in speech and on the board."
+    },
+    {
+      "locator": "lecture_04_figure_05.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "01:12:35"
+      ],
+      "reference": "lecture_04_figure_05.png",
+      "confidence": "high",
+      "note": "Best board witness for P = omega rho and the density-scaling derivation."
+    },
+    {
+      "locator": "Section 'Vacuum Energy and Negative Pressure'",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:15:05",
+        "01:25:57"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Supported by the discussion of w = -1, negative pressure as tension, and the exponential solution."
+    },
+    {
+      "locator": "Section 'Three Eras and the Observed Expansion History'",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:39:45",
+        "01:47:24"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Based on the plotted crossover of radiation, matter, and vacuum components and the reconstruction of scale-factor history from observations."
+    },
+    {
+      "locator": "Q&A on late-time last scattering versus galaxies crossing the horizon",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:48:07"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Directly supported by the transcript; distinguishes deeper and cooler CMB sightlines from galaxies moving away."
+    },
+    {
+      "locator": "Section 'Curvature, the Big Crunch Picture, and the Late-Time Horizon'",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:50:47",
+        "02:01:12"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The lecture explicitly restores the curvature term, contrasts the old Big-Crunch picture with the present one, and derives the fixed late-time horizon."
+    },
+    {
+      "locator": "Section 'Geometry from the Last-Scattering Surface'",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "02:04:46",
+        "02:08:42"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The triangle argument, the known-size lump idea, and the few-percent Euclidean result are all directly present in the transcript."
+    },
+    {
+      "locator": "Paragraph on measured \\(w\\) near \\(-1\\) and the note about other possibilities",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "02:09:04",
+        "02:10:26"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Supported by the explicit statement that measured W near minus one indicates nearly constant vacuum energy, together with the follow-up remark that general relativity does not exclude more radical possibilities in principle."
+    },
+    {
+      "locator": "Final classroomqa on energy conservation",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "02:11:04"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Real two-part exchange; the revised chapter restores the vacuum-energy clause and keeps the answer close to the spoken explanation."
+    },
+    {
+      "locator": "Does the apparent wavelength of the cosmic radiation depend on the observer's motion, and does that imply a preferred frame?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:25"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Direct classroom question and answer in the transcript; the revised chapter now keeps only transcript-supported claims."
+    },
+    {
+      "locator": "Can two galaxies have a relative velocity greater than c?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:48"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Direct audience question and answer in the transcript."
+    },
+    {
+      "locator": "Wouldn't a light ray sent in the reverse direction still travel toward us?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:07:03"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Direct objection and response in the transcript."
+    },
+    {
+      "locator": "Does the ordinary relativistic law for adding velocities still hold in this situation?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:09:42"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The transcript explicitly distinguishes local special-relativistic velocity addition from the global expansion problem."
+    },
+    {
+      "locator": "Is the statement that a wave stretches with the universe theoretical, empirical, or both?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:14:42"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The transcript explicitly gives both the theoretical and empirical sides."
+    },
+    {
+      "locator": "What is the relationship between superluminal recession, the surface of last scattering, and the observable universe?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:17:53"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "This is a real classroom exchange and the revised chapter preserves its physics correctly."
+    },
+    {
+      "locator": "Since H changes with time, is the horizon distance changing, and will the microwave background eventually disappear?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:22:43"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The transcript explicitly asks about the time dependence of the horizon and the fate of the microwave background."
+    },
+    {
+      "locator": "In the expanding universe, aren't the particles actually moving apart?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:54:27"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Direct audience question and local-box answer in the transcript."
+    },
+    {
+      "locator": "If vacuum energy drives exponential expansion, won't everything eventually be ripped apart?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:27:16"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The exchange is explicit and the revised chapter keeps the point about bound systems."
+    },
+    {
+      "locator": "Is there anything interesting in the negative sign when one takes the square root of the Friedmann equation?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:31:43"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The transcript directly discusses the two branches of the square root."
+    },
+    {
+      "locator": "Is this vacuum energy related to quantum vacuum energy?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:53:51"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "Direct audience question and affirmative answer in the transcript."
+    },
+    {
+      "locator": "What is an example of an object out there whose size we know?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "02:08:09"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].md",
+      "confidence": "high",
+      "note": "The transcript explicitly identifies the largest microwave-background lumps."
+    }
+  ]
+}

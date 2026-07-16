@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_04",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "leakage",
+      "locator": "opening paragraph ending \"These notes are based on Leonard Susskind's lecture, with supporting curation by LazyingArt LLC and Video2Book.\"",
+      "evidence": "This inserts prohibited production and company references into chapter prose and mixes editorial method with exposition. Credits and workflow history do not belong in the body of the chapter.",
+      "action": "Remove the sentence from chapter prose. If any credit is needed, place it only in permitted front matter or outside the chapter text."
+    },
+    {
+      "severity": "high",
+      "category": "voice",
+      "locator": "opening paragraph beginning \"This lecture opens in the form of questions...\"",
+      "evidence": "The paragraph tracks what \"this lecture\" and \"Susskind\" are doing, states \"The aim here is to follow that unfolding...\", and refers to \"board evidence visible.\" This is lecturer-centered and editorial-process language rather than direct physics exposition.",
+      "action": "Replace the roadmap paragraph with a direct opening on the first physics issue: the CMB rest frame, superluminal recession, and the cosmological horizon."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "subsections titled \"Question & Answer\" with prompts such as \"How can a light signal fail to get back...\" and \"Why should the pressure-to-density ratio determine...\"",
+      "evidence": "These are not transcript-confirmed audience questions in their present wording. The chapter synthesizes catechism-style prompts instead of preserving real classroom exchanges, and it does not render verified exchanges as timestamped classroom Q&A.",
+      "action": "Convert the invented Q&A subsections to ordinary prose, or replace them with transcript-verified `classroomqa` blocks carrying timestamps."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "final section \"Summary\"",
+      "evidence": "The lecture does not conclude with a separate recap section; the chapter imposes a summary structure that the editorial charter explicitly warns against.",
+      "action": "Remove the summary section and keep only source-based closing prose where the lecture actually turns to curvature and CMB lump geometry."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "captions for lecture_04_figure_02 through lecture_04_figure_05, especially phrases like \"The visual evidence is sparse but important\" and \"only certifies\"",
+      "evidence": "These captions discuss evidentiary quality, cropping, and editorial handling instead of describing the physics shown. That production commentary belongs in notes or a source map, not in captions.",
+      "action": "Rewrite the captions as physics-only descriptions and move evidentiary remarks to concise footnotes or the source map."
+    },
+    {
+      "severity": "medium",
+      "category": "fidelity",
+      "locator": "vacuum-energy discussion before the final observational sections",
+      "evidence": "The lecture explicitly explains why astronomers care about W observationally: measuring W close to minus one is evidence that vacuum energy is approximately constant. The chapter introduces the jargon but drops that payoff.",
+      "action": "Add a short source-based sentence near the late vacuum-energy discussion tying measured W approximately minus one to nearly constant vacuum energy."
+    },
+    {
+      "severity": "medium",
+      "category": "fidelity",
+      "locator": "late vacuum-energy section after the discussion of w = -1",
+      "evidence": "The chapter omits the final classroom challenge about energy conservation when a constant vacuum density fills an expanding volume. The transcript's answer is rough, but the exchange is real and directly addresses the likely objection raised by the preceding derivation.",
+      "action": "Restore the exchange briefly and cautiously as prose or a verified classroom Q&A block, after checking the audio because the spoken answer is halting."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:12",
+      "end": "00:04:28",
+      "subject": "CMB Doppler anisotropy and the preferred cosmological rest frame",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:04:48",
+      "end": "00:07:02",
+      "subject": "superluminal recession and the definition of a horizon",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:07:03",
+      "end": "00:17:46",
+      "subject": "one-dimensional line analogy, local speed limits, wave stretching, and why the rubber-band picture is wrong",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:17:53",
+      "end": "00:24:36",
+      "subject": "surface of last scattering versus horizon, late-time fading of galaxies and CMB",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:25:34",
+      "end": "00:29:33",
+      "subject": "theoretical-minimum reset and brief FRW review",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:29:39",
+      "end": "00:37:45",
+      "subject": "matter, radiation, and vacuum energy as the three important components",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:38:01",
+      "end": "00:45:15",
+      "subject": "one-dimensional radiation-pressure derivation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:45:39",
+      "end": "00:52:09",
+      "subject": "three-dimensional isotropic radiation and the result P = rho/3",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:52:11",
+      "end": "00:57:03",
+      "subject": "cold matter, zero pressure, and the parameter w in P = w rho",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:57:37",
+      "end": "01:12:35",
+      "subject": "thermodynamic derivation of rho proportional to a^{-3(1+w)}",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:15:05",
+      "end": "01:18:35",
+      "subject": "w = -1 and negative pressure as tension",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:18:40",
+      "end": "01:25:57",
+      "subject": "pure vacuum energy, exponential expansion, and the e-folding time",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:27:16",
+      "end": "01:31:53",
+      "subject": "what accelerated expansion pulls apart, what it leaves bound, and the branch ambiguity from the square root",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:35:39",
+      "end": "01:47:17",
+      "subject": "three eras of expansion and observational reconstruction from lookback time",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:51:03",
+      "end": "01:53:18",
+      "subject": "restoring the curvature term and the older Big-Crunch picture",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:54:01",
+      "end": "02:01:12",
+      "subject": "today's energy budget, fixed late-time horizon, and future isolated astronomers",
+      "chapter_status": "present"
+    },
+    {
+      "start": "02:04:22",
+      "end": "02:08:29",
+      "subject": "flatness test from the angular size of CMB lumps",
+      "chapter_status": "present"
+    },
+    {
+      "start": "02:09:04",
+      "end": "02:10:15",
+      "subject": "measuring W near minus one as evidence for nearly constant vacuum energy",
+      "chapter_status": "missing"
+    },
+    {
+      "start": "02:11:04",
+      "end": "02:12:38",
+      "subject": "late clarification about the density calculation and energy conservation",
+      "chapter_status": "missing"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:00:25",
+      "end": "00:04:28",
+      "question": "Does the apparent wavelength of the cosmic radiation depend on the observer's motion, and does that imply a preferred frame?",
+      "answer_summary": "Yes. The CMB defines a preferred cosmological frame, and it is the same average rest frame in which local galaxies are at rest.",
+      "verified": true
+    },
+    {
+      "start": "00:04:48",
+      "end": "00:07:02",
+      "question": "Can two galaxies have a relative velocity greater than c?",
+      "answer_summary": "Yes, if they are far enough apart. Hubble recession can exceed the speed of light without violating local relativity, and the place where recession reaches c is a horizon.",
+      "verified": true
+    },
+    {
+      "start": "00:07:03",
+      "end": "00:07:35",
+      "question": "Wouldn't a light ray sent in the reverse direction still travel toward us?",
+      "answer_summary": "No. The light moves locally at c, but space grows faster than the ray can overcome.",
+      "verified": true
+    },
+    {
+      "start": "00:14:42",
+      "end": "00:15:45",
+      "question": "Is the statement that a wave stretches with the universe theoretical, empirical, or both?",
+      "answer_summary": "It is a theoretical result of wave propagation in expanding spacetime and is also supported by astronomical evidence.",
+      "verified": true
+    },
+    {
+      "start": "00:17:53",
+      "end": "00:21:42",
+      "question": "What is the relationship between superluminal recession, the surface of last scattering, and the observable universe?",
+      "answer_summary": "The horizon is where recession reaches the speed of light. The surface of last scattering lies slightly inside it because its redshift is huge but finite, and that defines the observable universe for practical purposes.",
+      "verified": true
+    },
+    {
+      "start": "00:22:43",
+      "end": "00:25:19",
+      "question": "Since H changes with time, is the horizon distance changing, and will the microwave background eventually disappear?",
+      "answer_summary": "At late times H tends to a constant, so the horizon approaches a fixed distance. The microwave background keeps redshifting and eventually fades away.",
+      "verified": true
+    },
+    {
+      "start": "00:54:27",
+      "end": "00:54:47",
+      "question": "In the expanding universe, aren't the particles actually moving apart?",
+      "answer_summary": "Yes, but the pressure argument is applied to an infinitesimal comoving box, where the thermodynamic reasoning still works locally.",
+      "verified": true
+    },
+    {
+      "start": "01:27:16",
+      "end": "01:29:14",
+      "question": "If vacuum energy drives exponential expansion, won't everything be ripped apart?",
+      "answer_summary": "No. Bound systems such as galaxies, solar systems, and atoms need not be torn apart; the effect dominates only on sufficiently large, dilute scales.",
+      "verified": true
+    },
+    {
+      "start": "01:31:43",
+      "end": "01:32:36",
+      "question": "Is there anything interesting in the negative sign when taking the square root of the Friedmann equation?",
+      "answer_summary": "Yes. There are always two branches, corresponding to expansion and the time-reversed contracting solution.",
+      "verified": true
+    },
+    {
+      "start": "01:53:51",
+      "end": "01:53:59",
+      "question": "Is vacuum energy related to quantum vacuum energy?",
+      "answer_summary": "Yes, or at least it is generally believed to be.",
+      "verified": true
+    },
+    {
+      "start": "02:11:04",
+      "end": "02:12:38",
+      "question": "In the density calculation for matter and radiation, did you assume constant total energy, and what about vacuum energy?",
+      "answer_summary": "No. The derivation used the work relation minus P dV. The discussion then turns to energy conservation in cosmology, though the spoken answer is rough and incomplete.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_04_figure_02.png",
+      "timestamp": "00:11:02",
+      "verdict": "keep",
+      "reason": "Lecturer-dominant but still a useful witness to the first one-dimensional expansion sketch: long line, arrowing, and marked point.",
+      "caption_guidance": "One-dimensional expansion sketch used to illustrate an expanding metric."
+    },
+    {
+      "asset": "lecture_04_figure_03.png",
+      "timestamp": "00:29:32",
+      "verdict": "keep",
+      "reason": "Strong witness to the basic expansion equation together with the line analogy above it; the main equation is clear and correctly timed.",
+      "caption_guidance": "Basic expansion equation with one-dimensional line analogy."
+    },
+    {
+      "asset": "lecture_04_figure_04.png",
+      "timestamp": "00:57:44",
+      "verdict": "keep",
+      "reason": "Useful summary frame linking matter and radiation to their scale-factor laws and pressure relations.",
+      "caption_guidance": "Matter and radiation summary: a ~ t^{2/3}, P = 0; a ~ t^{1/2}, P = rho_r/3."
+    },
+    {
+      "asset": "lecture_04_figure_05.png",
+      "timestamp": "01:12:35",
+      "verdict": "keep",
+      "reason": "Best single witness to the equation-of-state relation P = omega rho and the partial derivation of density scaling.",
+      "caption_guidance": "Equation-of-state parameter omega and the density-scaling derivation."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "00:46:31-00:46:33 during the three-dimensional radiation-box setup",
+      "problem": "The transcript contains a stray non-English ASR intrusion and the surrounding sentence is broken.",
+      "required_check": "audio"
+    },
+    {
+      "locator": "01:10:32-01:11:25 during the conversion from volume scaling to a-scaling",
+      "problem": "The spoken derivation is hesitant and self-correcting; the final exponent 3(1+w) is clear, but the intermediate wording is unreliable.",
+      "required_check": "audio and frame"
+    },
+    {
+      "locator": "01:19:20-01:20:21 on the relation between lambda and rho_0",
+      "problem": "The historical explanation of the numerical normalization is spoken loosely and is easy to over-regularize into a stronger exact formula than the lecture provides.",
+      "required_check": "audio or named reference"
+    },
+    {
+      "locator": "01:53:16-01:53:48 on the transition time to accelerated expansion",
+      "problem": "The lecture gives only a rough order-of-magnitude time and mixes ten-billion and thirteen-billion-year conventions.",
+      "required_check": "audio or named reference"
+    },
+    {
+      "locator": "02:11:04-02:12:38 on energy conservation under vacuum energy",
+      "problem": "The answer is halting and easy to over-regularize into a polished claim that is stronger than the transcript supports.",
+      "required_check": "audio"
+    }
+  ]
+}
