@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
+  "chapter": "lecture_02",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].mkv",
+  "entries": [
+    {
+      "locator": "chapter opening on geometry, dynamics, and deriving the Friedmann equation from Newton",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:12",
+        "00:01:20"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Matches the lecture's opening plan: a little geometry, then dynamics, with the cosmological evolution equation derived from Newton rather than general relativity."
+    },
+    {
+      "locator": "Hubble law paragraph in the first section",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:01:37",
+        "00:02:58"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The statements about homogeneity, isotropy, linear proportionality, and the Hubble constant being constant in space but not in time are directly transcript-based."
+    },
+    {
+      "locator": "meter-stick discussion and force-model discussion",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:00",
+        "00:08:57"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The chapter preserves the lecture's distinction between bound matter and cosmological separation, including the spring analogy and the remark about accelerated expansion."
+    },
+    {
+      "locator": "equations for ds^2 and d tau^2 in the first section",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:10:07",
+        "00:14:08"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The spatial metric with a(t)^2 and the spacetime interval d tau^2 = dt^2 - a(t)^2(dx^2 + dy^2 + dz^2) are explicitly spoken and partially visible on the board."
+    },
+    {
+      "locator": "equation g_mu_nu = diag(1, -a(t)^2, -a(t)^2, -a(t)^2)",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:14:33",
+        "00:15:10"
+      ],
+      "reference": "",
+      "confidence": "medium",
+      "note": "The diagonal form is a justified reconstruction from the spoken metric-tensor description and the visible interval, and it is explicitly marked as editorial."
+    },
+    {
+      "locator": "figure lecture_02_figure_02.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:14:36"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].mkv",
+      "confidence": "high",
+      "note": "Correctly used as a witness to the comoving-grid sketch and spacetime-interval discussion."
+    },
+    {
+      "locator": "projectile warm-up and kinetic-energy term",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:03",
+        "00:31:08"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The chapter follows the lecture's warm-up from an ejected test mass to the use of energy conservation before cosmology is reintroduced."
+    },
+    {
+      "locator": "figure lecture_02_figure_03.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:31:08"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].mkv",
+      "confidence": "high",
+      "note": "Supports the isolated kinetic-energy term and the outgoing test-mass sketch."
+    },
+    {
+      "locator": "full Newtonian energy expression with negative potential",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:31:08",
+        "00:33:29"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The chapter's use of 1/2 mv^2 - mMG/D follows both the spoken explanation and the board ordering of factors."
+    },
+    {
+      "locator": "figure lecture_02_figure_04.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:33:02"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].mkv",
+      "confidence": "high",
+      "note": "Used correctly for the full conserved-energy expression in the Newtonian warm-up."
+    },
+    {
+      "locator": "sign of gravitational potential energy",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:34:13",
+        "00:35:35"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The discussion of 1/D versus -1/D and the rule that force points toward decreasing potential energy is directly grounded in the transcript."
+    },
+    {
+      "locator": "figure lecture_02_figure_05.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:35:13"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].mkv",
+      "confidence": "high",
+      "note": "Correctly used for the qualitative graph comparison in the sign-of-potential argument."
+    },
+    {
+      "locator": "escape-velocity section",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:35:35",
+        "00:41:27"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The three energy cases, the bound/critical/unbound classification, and the direct analogy to cosmology all follow the lecture closely."
+    },
+    {
+      "locator": "figure lecture_02_figure_06.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:36:59"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].mkv",
+      "confidence": "high",
+      "note": "Used appropriately as a later emphasis frame for the regime in which the negative potential term dominates."
+    },
+    {
+      "locator": "section \"Newton's Theorem\"",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:42:09",
+        "00:52:34"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The theorem, the thin-shell surprise, and the water-flow analogy are all sourced from the lecture and retained accurately."
+    },
+    {
+      "locator": "derivation from the one-body energy equation to the Friedmann equation",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:52:39",
+        "01:09:01"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The reduction using D = ax, v = a dot x, M = 4 pi rho D^3 / 3, the x^2 argument, and the final standard form are all explicitly developed in the lecture."
+    },
+    {
+      "locator": "editorial note introducing M_Box for the unit coordinate cube",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:17:01",
+        "01:18:58"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The lecture reuses M for several different masses; the notational distinction is a transparent editorial aid and is explicitly marked."
+    },
+    {
+      "locator": "equation rho = M_Box / a^3 and the matter-dominated form",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:17:01",
+        "01:23:10"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The unit coordinate cube, fixed enclosed mass, and density falling as one over a cubed are directly stated in the lecture."
+    },
+    {
+      "locator": "section \"The Critical Case k = 0\" and the power-law solution",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:23:13",
+        "01:35:13"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The choice k = 0, the positivity argument, the power-law ansatz, p = 2/3, the determination of the constant, and the time-shift remark all come directly from the transcript."
+    },
+    {
+      "locator": "section \"The Hubble Constant and the Age of the Universe\"",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:35:16",
+        "01:39:13"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The relation H = 2/3t, the age estimate of about 13 to 14 billion years, and the claim that k is observationally very close to zero all come directly from the lecture."
+    },
+    {
+      "locator": "late discussion of arbitrariness of the fiducial box and cancellation in H = a dot / a",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:39:14",
+        "01:44:49"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The chapter accurately preserves the real exchange about the arbitrariness of a and the box mass and the cancellation of the normalization constant in the age relation."
+    },
+    {
+      "locator": "closing section on the local Newtonian patch and the Einstein-equation preview",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:49:03",
+        "01:56:29"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "The chapter retains the Earth-and-grass analogy, the local-validity conditions for Newtonian reasoning, and the closing preview of curvature and Einstein's equations."
+    },
+    {
+      "locator": "Does that mean linearly proportional?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:02:06"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Direct transcript support for the classroom question about the linear form of Hubble's law."
+    },
+    {
+      "locator": "Is there any issue about the fact that the measuring rods are expanding too?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:00"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed exchange on why bound objects do not expand with the background."
+    },
+    {
+      "locator": "You can't model it though as a force between points, is that correct? Because otherwise it'd be an acceleration.",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:05:29"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Real exchange about force language, equilibrium shifts, and accelerated expansion."
+    },
+    {
+      "locator": "In that equation, the small t, a(t), whose t is that?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:19:19"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed question about whose time appears in a(t)."
+    },
+    {
+      "locator": "Are there transformations that leave this form of the metric invariant?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:23:08"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Verified exchange on rotations, boosts, and the preferred frame picked out by matter."
+    },
+    {
+      "locator": "The potential energy increase with distance rather than decrease?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:34:13"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed exchange tied to the board's graph argument."
+    },
+    {
+      "locator": "In the example you gave there, should we be a little surprised that it seems like as the particle moves across the boundary, the force is discontinuous?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:48:19"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed exchange on the thin-shell discontinuity and its special dependence on the inverse-square law."
+    },
+    {
+      "locator": "According to that equation, the Hubble constant is a function of rho. Therefore it's not a constant.",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:19:21"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Direct transcript support for the explicit non-constancy of the Hubble constant."
+    },
+    {
+      "locator": "Is k=0? Then the velocity between two galaxies is approaching zero?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:21:12"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed exchange on vanishing velocity with unbounded distance in the critical case."
+    },
+    {
+      "locator": "I'm just sort of confused about what M and a are.",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:39:16"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Real late-lecture exchange on the arbitrariness of the fiducial box and scale normalization."
+    },
+    {
+      "locator": "This all seems to depend on an assumption of an open universe.",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:45:44"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed exchange linking the Newtonian treatment to flat space and postponing the geometric interpretation of k."
+    },
+    {
+      "locator": "Sometime long ago, did the length of meter sticks depend on a?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:47:53"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed exchange about early matter density and the impossibility of truly rigid bodies."
+    },
+    {
+      "locator": "Why do you think there is this coincidence of equations, Newtonian and relativistic?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:49:03"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/041 - Cosmology ｜ Lecture 2 [ERjkSbdn6-4].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed exchange on the local-patch explanation for the Newtonian-relativistic agreement."
+    }
+  ]
+}

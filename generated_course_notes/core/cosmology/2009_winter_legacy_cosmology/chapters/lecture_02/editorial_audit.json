@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_02",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "leakage",
+      "locator": "opening paragraph ending \"with supporting curation from LazyingArt LLC and Video2Book\"",
+      "evidence": "The chapter body contains prohibited workflow/provenance language and names that belong, if anywhere, in front matter or source notes, not in the lecture prose.",
+      "action": "Remove this sentence from the chapter body. If source provenance must be recorded, move it to front matter or a source footnote outside the running exposition."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "the three paragraph-style \"Question & Answer\" subsections",
+      "evidence": "Verified audience exchanges are flattened into untimestamped prose instead of being preserved as attested classroom dialogue. At minimum the exchanges around 00:19:19, 00:34:13, and 01:39:14 are real source Q&A and should not be rendered as generic explanatory paragraphs.",
+      "action": "Restore each real exchange as its own `classroomqa` block with `\\audiencequestion{...}`, `\\lecturerresponse{...}`, and `\\lecturetimestamp{HH:MM:SS}`. Keep separate exchanges separate rather than merging them into exposition."
+    },
+    {
+      "severity": "high",
+      "category": "structure",
+      "locator": "`\\section{Summary}`",
+      "evidence": "The lecture does not end with an editorial summary. It ends with source-backed questions about the age estimate, arbitrariness of the fiducial box, the local validity of the Newtonian treatment, and a preview of curvature next time. The added summary imposes a book-like structure the lecture does not provide.",
+      "action": "Remove the forced summary section and let the chapter end with the lecture's actual closing sequence and next-lecture preview."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "`\\varepsilon(x)=-\\frac{k}{2}\\,x^2`",
+      "evidence": "The lecture argues that the time-constant term must be proportional to `x^2`, but it does not introduce `\\varepsilon(x)` or this specific normalization. As written, the chapter silently adds notation and a normalization choice not stated in the source.",
+      "action": "Either keep the lecture's simpler wording that the constant is proportional to `x^2`, or mark the normalization as an editorial reconstruction with a concise provenance footnote."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "caption of `lecture_02_figure_02.png`: \"The lecture frame is retained as board evidence; the redraw beneath it...\"",
+      "evidence": "The caption uses prohibited production language and discusses editorial handling rather than the physics shown. The same pattern appears elsewhere in captions that talk about redraws and lecture frames instead of the cosmology.",
+      "action": "Rewrite captions as physics-only descriptions. Keep provenance, redraw rationale, and editorial handling out of captions and in notes or source apparatus if needed."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "`g_{\\mu\\nu}=\\mathrm{diag}\\!\\left(1,-a(t)^2,-a(t)^2,-a(t)^2\\right)`",
+      "evidence": "This is a nontrivial reconstruction from the spoken metric discussion and partial board visibility, but it is not marked as reconstructed. Under the charter, nontrivial reconstructed equations should carry concise provenance.",
+      "action": "Add a short footnote stating that the diagonal form is reconstructed from the spoken metric-tensor discussion and the partially legible board writing."
+    },
+    {
+      "severity": "medium",
+      "category": "fidelity",
+      "locator": "closing transition after the Hubble-age discussion",
+      "evidence": "The late lecture beat explaining why the Newtonian derivation works locally is heavily compressed away. The transcript spends substantial time on the curvature-scale and nonrelativistic-velocity justification, including the Earth/grass analogy, before previewing next lecture.",
+      "action": "Restore a concise late section or closing paragraph on the local-patch approximation: Newtonian treatment is valid when the region is small compared with the curvature radius and local Hubble velocities are well below the speed of light."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:12",
+      "end": "00:01:20",
+      "subject": "Plan to derive the Friedmann equation from Newton rather than general relativity",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:01:37",
+      "end": "00:03:00",
+      "subject": "Homogeneity and isotropy imply a linear Hubble law at fixed time",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:04:00",
+      "end": "00:08:57",
+      "subject": "Why meter sticks do not expand, and why expansion is not simply an ordinary force law",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:10:07",
+      "end": "00:18:56",
+      "subject": "Spatial metric, spacetime interval, expanding grid cartoon, and the meaning of a(t)->0",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:19:19",
+      "end": "00:25:09",
+      "subject": "Comoving time, dt=dtau along galaxy worldlines, and the preferred isotropic frame",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:28:43",
+      "end": "00:35:29",
+      "subject": "Projectile energy conservation and the sign of gravitational potential energy",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:35:35",
+      "end": "00:41:27",
+      "subject": "Negative, zero, and positive energy trajectories and the escape-velocity analogy for cosmology",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:41:56",
+      "end": "00:52:34",
+      "subject": "Newton's shell theorem, including the zero force inside a spherical shell and the water-flow analogy",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:52:39",
+      "end": "01:08:57",
+      "subject": "Reduction of the homogeneous universe to a one-body problem and derivation of the Friedmann equation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:10:29",
+      "end": "01:23:13",
+      "subject": "Time dependence of rho, Hubble constant is not constant, and setup of the k=0 case",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:23:53",
+      "end": "01:35:16",
+      "subject": "Power-law solution a(t)=ct^p, the value p=2/3, and the dense early-universe limit",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:35:16",
+      "end": "01:39:13",
+      "subject": "Hubble constant as roughly the inverse age of the universe and the observational remark that k is very close to zero",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:39:14",
+      "end": "01:44:49",
+      "subject": "Arbitrariness of the fiducial box, the physical meaning of density, and cancellation of the box-mass parameter in the age estimate",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:45:43",
+      "end": "01:47:31",
+      "subject": "Question about flat-space assumptions and the relation between k and spatial curvature",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:47:53",
+      "end": "01:49:08",
+      "subject": "Meter sticks in the very early dense universe and the absence of truly rigid bodies",
+      "chapter_status": "missing"
+    },
+    {
+      "start": "01:49:10",
+      "end": "01:56:29",
+      "subject": "Why the Newtonian and relativistic derivations agree locally: curvature scale, nonrelativistic Hubble flow, and the Earth-grass analogy",
+      "chapter_status": "compressed"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:01:58",
+      "end": "00:02:58",
+      "question": "Does that mean linearly proportional?",
+      "answer_summary": "Yes. At a fixed time the velocity is linearly proportional to distance, but the proportionality factor generally changes with time.",
+      "verified": true
+    },
+    {
+      "start": "00:04:00",
+      "end": "00:05:29",
+      "question": "Is there any issue about the fact that the measuring rods are expanding too?",
+      "answer_summary": "No. Ordinary rods are held together by forces far stronger than the cosmological effect; sufficiently unbound systems such as distant galaxies separate, but meter sticks do not expand with the Hubble flow.",
+      "verified": true
+    },
+    {
+      "start": "00:05:29",
+      "end": "00:08:57",
+      "question": "You can't model it though as a force between points, is that correct? Because otherwise it'd be an acceleration.",
+      "answer_summary": "A tiny extra repulsion can be imagined, but for bound matter it only shifts equilibrium slightly. Expansion by itself is not simply an ordinary force law, though accelerated expansion can be modeled that way.",
+      "verified": true
+    },
+    {
+      "start": "00:19:19",
+      "end": "00:23:06",
+      "question": "In that equation, the small t, a(t), whose t is that?",
+      "answer_summary": "It is the time measured by identical clocks moving with the galaxies. In the comoving frame, along galaxy worldlines, dt equals proper time d tau.",
+      "verified": true
+    },
+    {
+      "start": "00:23:04",
+      "end": "00:25:09",
+      "question": "Are there transformations that leave this form of the metric invariant?",
+      "answer_summary": "Rotations preserve the form because the spatial part is isotropic, but boosts do not. Matter and galaxies pick out the preferred comoving frame.",
+      "verified": true
+    },
+    {
+      "start": "00:34:13",
+      "end": "00:35:29",
+      "question": "The potential energy increase with distance rather than decrease?",
+      "answer_summary": "Yes. Plotting 1/D and -1/D shows that attractive gravity corresponds to the upside-down curve, so the potential is negative and force points toward decreasing potential energy.",
+      "verified": true
+    },
+    {
+      "start": "00:48:19",
+      "end": "00:49:35",
+      "question": "In the example you gave there, should we be a little surprised that it seems like as the particle moves across the boundary, the force is discontinuous?",
+      "answer_summary": "Yes, that is a little surprising. For an ideal thin shell the jump is real, and it is special to the inverse-square law.",
+      "verified": true
+    },
+    {
+      "start": "01:19:21",
+      "end": "01:20:08",
+      "question": "According to that equation, the Hubble constant is a function of rho. Therefore it's not a constant.",
+      "answer_summary": "Correct. The lecture explicitly uses the equation to underline that H changes because the density changes; the Hubble constant is not constant in time.",
+      "verified": true
+    },
+    {
+      "start": "01:21:12",
+      "end": "01:22:17",
+      "question": "Is k equals zero? Then the velocity between two galaxies is approaching zero?",
+      "answer_summary": "Yes, the velocity tends to zero, but the distance is still unbounded. If it ever actually stopped at finite time, it would fall back.",
+      "verified": true
+    },
+    {
+      "start": "01:39:14",
+      "end": "01:44:49",
+      "question": "I'm just sort of confused about what M and A are.",
+      "answer_summary": "Both the fiducial-box mass and the normalization of A depend on the chosen grid, but the physical density does not. In the k=0 solution the arbitrary constant cancels from H=2/3t, so the age relation does not depend on that box-mass parameter.",
+      "verified": true
+    },
+    {
+      "start": "01:45:43",
+      "end": "01:47:31",
+      "question": "This all seems to depend on an assumption of an open universe.",
+      "answer_summary": "The Newtonian setup uses flat space, but the same Friedmann form accommodates k positive, negative, or zero, which the lecture connects with the curved cases to be discussed next time.",
+      "verified": true
+    },
+    {
+      "start": "01:47:53",
+      "end": "01:49:08",
+      "question": "Sometime long ago, did the length of meter sticks depend on A?",
+      "answer_summary": "At sufficiently high density ordinary matter would be crowded together and lose the separate meter-stick picture. The discussion also recalls that relativity does not permit truly rigid bodies.",
+      "verified": true
+    },
+    {
+      "start": "01:49:10",
+      "end": "01:56:29",
+      "question": "Why do you think there is this coincidence of equations, Newtonian and relativistic?",
+      "answer_summary": "Newtonian cosmology is a good local approximation when the region studied is small compared with the curvature radius and local Hubble velocities are well below the speed of light. General relativity becomes essential when those conditions fail.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_02_figure_02.png",
+      "timestamp": "00:14:36",
+      "verdict": "keep",
+      "reason": "Correctly timed and useful for the transition from the spatial line element to the spacetime metric, with the comoving sketch and interval both visible. The screenshot is good evidence for the interval discussion, though not for a fully legible metric matrix.",
+      "caption_guidance": "Comoving grid sketch and spacetime interval with a time-dependent scale factor."
+    },
+    {
+      "asset": "lecture_02_figure_03.png",
+      "timestamp": "00:31:08",
+      "verdict": "keep",
+      "reason": "Useful if the chapter preserves the live buildup from the kinetic term to the full energy expression. It cleanly captures the outgoing test mass and the isolated kinetic-energy term before the potential term is added.",
+      "caption_guidance": "Outgoing test mass and kinetic-energy term before the gravitational potential is added."
+    },
+    {
+      "asset": "lecture_02_figure_04.png",
+      "timestamp": "00:33:02",
+      "verdict": "keep",
+      "reason": "This is the clearest board witness for the full Newtonian energy expression together with the source-test-mass sketch. It directly supports the lecture's transition from kinetic energy alone to kinetic plus negative potential energy.",
+      "caption_guidance": "Total Newtonian energy for a radially moving test mass: kinetic term minus gravitational potential."
+    },
+    {
+      "asset": "lecture_02_figure_05.png",
+      "timestamp": "00:35:13",
+      "verdict": "keep",
+      "reason": "Useful for the sign-of-potential argument. The lower curve is the main target of the discussion, and the frame captures the lecturer's qualitative comparison of 1/D and its upside-down counterpart.",
+      "caption_guidance": "Qualitative comparison of 1/D and -1/D used to identify the sign of gravitational potential energy."
+    },
+    {
+      "asset": "lecture_02_figure_06.png",
+      "timestamp": "00:36:59",
+      "verdict": "keep",
+      "reason": "A later emphasis frame rather than a new derivation, but it is correctly timed for the beat that small initial outward speed leaves the negative potential term dominant. It is useful if that beat is explicitly retained in the text.",
+      "caption_guidance": "For small initial outward speed, the negative gravitational potential term dominates the total energy."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "chapter equation `g_{\\mu\\nu}=\\mathrm{diag}\\!\\left(1,-a(t)^2,-a(t)^2,-a(t)^2\\right)`",
+      "problem": "The diagonal metric is supported by the spoken discussion and surrounding board context, but the crop in `lecture_02_figure_02.png` does not itself show a fully legible matrix.",
+      "required_check": "audio plus surrounding board frames"
+    },
+    {
+      "locator": "chapter redraw labels associated with `lecture_02_figure_05.png`",
+      "problem": "The lower curve is not explicitly labeled on the board. Writing both curves as 1/D and -1/D is a reasonable reconstruction from the spoken explanation, but it is still reconstructive rather than directly written evidence.",
+      "required_check": "audio plus frame"
+    },
+    {
+      "locator": "chapter excerpt `\\varepsilon(x)=-\\frac{k}{2}\\,x^2`",
+      "problem": "Added notation and normalization are not spoken or written in the transcript or visible on the board.",
+      "required_check": "transcript or named reference; otherwise mark as editorial reconstruction or remove"
+    },
+    {
+      "locator": "chapter normalization of the gravitational term as `-\\frac{GMm}{d}` in cleaned equations",
+      "problem": "The board writes the factors in the order mMG/D and uses an uppercase distance symbol on the board. Regularizing to conventional typesetting is plausible, but the normalization should be explicitly understood as editorial.",
+      "required_check": "frame plus spoken \"distance\" discussion"
+    }
+  ]
+}

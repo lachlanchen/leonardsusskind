@@ -1,288 +1,292 @@
-\chapter{Cosmology Lecture 2: From the Expanding Metric to Friedmann's Equation}
+\chapter{Newtonian Cosmology and the Friedmann Equation}
 
-We were talking last time about the metric of space. This lecture picks up exactly there and asks the next question: what equation tells the scale factor how to change with time? Susskind announces the plan immediately. First a little geometry, then dynamics; and the dynamics, at least for now, will be derived not from general relativity but from Newton's equations. That choice gives the lecture its shape. We begin with an expanding comoving grid, pass through a deliberately simple projectile problem, and then watch that one-body Newtonian problem turn into Friedmann's equation. The selected board frames are kept below as local mathematical evidence, following Leonard Susskind's lecture with supporting curation from LazyingArt LLC and Video2Book.
+We were talking last time about the metric of space. The next question is dynamics: how does the scale factor change with time? First comes a little geometry, and then Newtonian cosmology. The Friedmann equation will not yet be derived from general relativity. It will be derived from Newton's equations.
 
-\section{From Homogeneity to the Expanding Metric}
+\section{Homogeneity, Isotropy, and a Time-Dependent Metric}
 
-The standing assumptions are homogeneity and isotropy. Under those assumptions Hubble's law is not something tacked on from observation after the fact; it is the natural kinematics of a uniformly expanding universe. At a fixed time,
+Homogeneity and isotropy are the standing assumptions. If the universe is homogeneous and isotropic and it changes with time, then Hubble's law is always true. At any fixed time the recession velocity is proportional to distance,
 \begin{equation}
 v = H(t)\,d.
 \end{equation}
-The proportionality is linear in the distance, and the important qualification comes immediately: the so-called Hubble constant is constant in space, not in time. Homogeneity means it does not vary from place to place. It does \emph{not} mean it remains unchanged as the universe evolves.
+The proportionality is linear. What is constant is not time, but space: the same proportionality factor applies everywhere at a given instant.
 
-Before writing any metric, Susskind pauses over the question of measuring rods. If space expands, why do meter sticks not expand? The lecture's answer is concrete. The forces binding ordinary matter are enormously stronger than the tiny effect of cosmological expansion on atomic scales. One may imagine adding a minuscule extra repulsion between atoms; it would shift an equilibrium separation a little, but it would not tear apart a tightly bound rod. The cosmological expansion is therefore seen not in bound objects but in the growing separation of sufficiently distant, sufficiently unbound systems such as galaxies.
+\begin{classroomqa}
+\audiencequestion{Does that mean linearly proportional?}\lecturetimestamp{00:02:06}
+\lecturerresponse{Yes. At a fixed time the recession velocity is linearly proportional to distance. The proportionality factor is the Hubble constant. In general it depends on time, but it does not vary from point to point in space.}
+\end{classroomqa}
 
-This is the reason for comoving coordinates. We assign coordinates that move with the Hubble flow. A galaxy with no extra peculiar motion then keeps the same coordinate value for all time. What changes is the relation between coordinate separation and physical distance measured in meters. That changing conversion factor is the scale factor \(a(t)\).
+That is why the phrase ``Hubble constant'' is dangerous. It is constant with respect to position in space. It is not constant with respect to time.
 
-For flat space the spatial line element is
+A natural question comes next. If space expands, why do meter sticks not expand too? The answer is that meter sticks are held together by forces enormously stronger than anything associated with the cosmological expansion on atomic scales. Bound objects stay bound. What expands is the distance between sufficiently disconnected things, such as galaxies far enough apart that they do not hold each other together strongly.
+
+\begin{classroomqa}
+\audiencequestion{Is there any issue about the fact that the measuring rods are expanding too?}\lecturetimestamp{00:04:00}
+\lecturerresponse{No. The measuring rods are not expanding. The coordinates are expanding. The forces which hold meter sticks together are far stronger than the effects due to the expansion, so ordinary bound objects do not expand with the background. Galaxies far enough apart do separate, but meter sticks do not.}
+\end{classroomqa}
+
+One can even imagine a tiny extra repulsive effect between atoms. That still would not tear a rod apart. It would only shift the equilibrium separation a little bit, the way a small extra pull changes the equilibrium position of a stiff spring.
+
+\begin{classroomqa}
+\audiencequestion{You can't model it though as a force between points, is that correct? Because otherwise it'd be an acceleration.}\lecturetimestamp{00:05:29}
+\lecturerresponse{A small extra force between atoms can be imagined, but if it is tiny compared with the binding forces it only shifts the equilibrium position slightly. Expansion by itself does not create an ordinary force law. Some kinds of expansion can be modeled in terms of a force, namely accelerated expansion, but that is a later question.}
+\end{classroomqa}
+
+So the useful coordinates are coordinates embedded in the expanding matter distribution. Galaxies with no extra peculiar motion keep the same coordinate values. What changes with time is the relation between coordinate separation and physical distance measured in meters. That relation is codified by the scale factor \(a(t)\).
+
+For flat space the spatial metric may be written
 \begin{equation}
 ds^2 = a(t)^2\left(dx^2+dy^2+dz^2\right).
 \end{equation}
-Here \(x,y,z\) are comoving coordinates. If two galaxies have a fixed coordinate separation \(\Delta x\) along one axis, then their physical distance is
-\begin{equation}
-d(t)=a(t)\,\Delta x.
-\end{equation}
-Differentiating with respect to time gives
-\begin{equation}
-v=\dot d=\dot a\,\Delta x=\frac{\dot a}{a}\,d.
-\end{equation}
-So once the comoving metric is in hand, the Hubble parameter becomes
-\begin{equation}
-H(t)=\frac{\dot a}{a}.
-\end{equation}
-That is already the first bridge from geometry to dynamics.
+Here \(a\) is the actual distance, measured in meters, between neighboring points separated by one unit of coordinate distance. If the universe expands, \(a\) becomes time-dependent.
 
-\section{Flat Spatial Slices Inside Curved Spacetime}
-
-Now we shift from the metric of space to the metric of spacetime. The lecture insists on an important point: three-dimensional space may be flat while spacetime is nevertheless curved. If the geometry of space changes with time, then spacetime is no longer Minkowski even if each spatial slice remains flat. Susskind's image is a flat rubber sheet being stretched by distant giants. The sheet stays flat as a sheet, but the four-dimensional history is curved.
-
-Starting from the special-relativistic form \(d\tau^2=dt^2-ds^2\), we upgrade the spatial metric to
+To pass to spacetime, start from the special-relativistic form
+\begin{equation}
+d\tau^2 = dt^2 - ds^2,
+\end{equation}
+and substitute the spatial metric. This gives
 \begin{equation}
 d\tau^2 = dt^2 - a(t)^2\left(dx^2+dy^2+dz^2\right).
 \end{equation}
-The coefficients do not depend on position in space; they depend only on time. That is the metric expression of homogeneity. In matrix language, completing the spoken board description in the standard way, one writes
+The coefficients do not depend on position in space. They depend only on time. That is the statement of homogeneity in metric language. The diagonal metric has the form
 \begin{equation}
 g_{\mu\nu}=\mathrm{diag}\!\left(1,-a(t)^2,-a(t)^2,-a(t)^2\right).
 \end{equation}
-The off-diagonal terms vanish. There are no \(dx\,dy\) or \(dx\,dt\) terms. The metric is almost as simple as that of flat spacetime, except that the conversion between spatial separation and time is now time-dependent.
+\editorialnote{The full diagonal matrix written here follows the spoken metric-tensor description around 00:14:33. The board frame shows the line element clearly, but not a fully legible matrix.}
+
+There are no off-diagonal terms. No \(dx\,dy\), no \(dx\,dt\), no other mixed terms. The metric is almost as simple as that of flat spacetime. The peculiarity is that the relation between spatial measure and time is itself time-dependent.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.58\textwidth]{lecture_02_figure_02.png}
-
-\begin{tikzpicture}[scale=0.9]
-\draw[->] (0,0) -- (0,4.8) node[left]{\(t\)};
-\draw (0.8,0.8) -- (4.9,0.8);
-\draw (0.6,1.8) -- (4.65,1.8);
-\draw (0.35,3.0) -- (4.35,3.0);
-\draw (0.1,4.2) -- (4.05,4.2);
-
-\draw (1.0,0.35) -- (0.35,4.45);
-\draw (2.15,0.35) -- (1.65,4.45);
-\draw (3.3,0.35) -- (2.95,4.45);
-\draw (4.45,0.35) -- (4.25,4.45);
-
-\fill (0.78,4.2) circle (2pt);
-\fill (2.10,4.2) circle (2pt);
-\node[above] at (1.44,4.2) {\(\Delta x=1\)};
-\end{tikzpicture}
-\caption{Spacetime interval and expanding-grid sketch. The lecture frame is retained as board evidence; the redraw beneath it makes the comoving grid legible as a geometric cartoon of fixed coordinate separation and increasing physical distance.}
+\includegraphics[width=0.62\textwidth]{lecture_02_figure_02.png}
+\caption{Comoving grid sketch and spacetime interval with a time-dependent scale factor.}
 \end{figure}
 
-The picture is not decoration. It carries the lecture's intuition. Alice and Bob remain one coordinate unit apart, but one coordinate unit comes to represent more and more physical distance as time goes on. If \(a(t)\) were driven to zero, then every physical separation would be driven to zero with it. In the lecture this is said in plain language: everything gets squashed on top of everything else, and the density becomes infinite. If \(a(t)\) grows, the universe becomes correspondingly more diffuse.
+The picture carries the point. Alice and Bob remain one unit apart in the comoving coordinates, but that one coordinate unit represents more and more meters as time goes on. If \(a(t)\) were zero at some time in the past, then every physical separation would be zero. Everything would be squashed on top of everything else. That is why \(a\to 0\) corresponds to infinite density. If \(a\) grows, the universe becomes more and more diffuse.
 
-There is another subtle point here. This metric has the stated form only in the frame moving with the galaxies. Rotations leave the spatial part unchanged, but a Lorentz boost does not preserve the same isotropic appearance. Matter itself picks out the preferred comoving frame.
+This form of the metric is not valid in every frame. It is the form in the frame moving with the galaxies.
 
-\subsection{Question \& Answer}
+\begin{classroomqa}
+\audiencequestion{In that equation, the small \(t\), \(a(t)\), whose \(t\) is that?}\lecturetimestamp{00:19:19}
+\lecturerresponse{It is the time measured by clocks moving with the galaxies. Imagine identical clocks made in the same cosmic clock factory and carried by the galaxies. In this frame the time variable is exactly what those clocks measure. Along a galaxy worldline the proper time is the same as this coordinate time.}
+\end{classroomqa}
 
-\paragraph{Whose time is \(t\) in \(a(t)\)?}
-It is the time measured by clocks moving with the galaxies. The lecture even says: imagine a cosmic clock factory making identical clocks, one carried by each galaxy. The coordinate time \(t\) is the time those comoving clocks measure.
-
-This is also immediate from the metric. Along a galaxy worldline in the comoving frame we have
+Indeed, along a comoving galaxy worldline,
 \begin{equation}
 dx=dy=dz=0,
 \end{equation}
-so the interval reduces to
+so
 \begin{equation}
-d\tau^2=dt^2,
+d\tau^2 = dt^2,
 \end{equation}
-hence
+and therefore
 \begin{equation}
 dt=d\tau.
 \end{equation}
-So the time appearing in \(a(t)\) is cosmic proper time along the flow lines of the galaxies.
 
-\section{Newtonian Warm-Up: A Projectile in a Gravitational Field}
+\begin{classroomqa}
+\audiencequestion{Are there transformations that leave this form of the metric invariant?}\lecturetimestamp{00:23:08}
+\lecturerresponse{Rotations do, because \(dx^2+dy^2+dz^2\) is invariant under rotations. But Lorentz boosts do not preserve this form. Matter itself picks out the frame moving with the galaxies, and in some other frame the world would not look isotropic.}
+\end{classroomqa}
 
-With the geometry fixed, Susskind makes the lecture's second major pivot. Rather than deriving the dynamics of \(a(t)\) from general relativity, he cools the problem down first and goes back to a familiar Newtonian one-body system. Before doing cosmology, let us understand a particle ejected radially outward from a heavy gravitating mass.
+\section{A Projectile in a Gravitational Field}
 
-Take a heavy mass \(M\) and a much smaller mass \(m\). Give the small mass an outward impulse and then let it move freely under gravity. Angular complications are not the point here, so the motion is taken to be radial. What matters for the cosmological analogy is energy conservation.
+Before applying Newton to the whole universe, it helps to step back to a simpler problem: a heavy mass \(M\), a much smaller mass \(m\), and an initial outward impulse. After the impulse, the small mass simply moves in the gravitational field and does whatever Newton says it should do.
 
-The kinetic energy is
+For the cosmological discussion, the important thing is not the full orbit problem. It is energy conservation. The kinetic energy is
 \begin{equation}
 \frac{1}{2}mv^2.
 \end{equation}
-The gravitational potential energy has the product of the masses, Newton's constant, and one power of the distance in the denominator:
-\begin{equation}
--\frac{GMm}{d}.
-\end{equation}
-On the board the factors are written in the order \(mMG/D\); in the cleaned equations we restore the conventional form \(GMm/d\), but the board order is kept visible in the screenshots below. The conserved total energy is then
-\begin{equation}
-E=\frac{1}{2}mv^2-\frac{GMm}{d}.
-\end{equation}
-Here ``constant'' means constant in time for the particular particle under discussion. Different projectiles may of course have different values of \(E\).
 
 \begin{figure}
 \centering
-\includegraphics[width=0.44\textwidth]{lecture_02_figure_03.png}
-\hfill
-\includegraphics[width=0.44\textwidth]{lecture_02_figure_04.png}
-
-\begin{tikzpicture}[scale=1.0]
-\draw (0,0) circle (0.42);
-\draw (0,0) circle (0.28);
-\draw (0,0) circle (0.14);
-\node at (0,-0.8) {\(M\)};
-
-\fill (1.25,0) circle (2pt);
-\node[below] at (1.25,0) {\(m\)};
-\draw[->] (1.35,0) -- (3.0,0);
-
-\node at (5.0,0.4) {\(\frac{1}{2}mv^2\)};
-\node at (7.4,0.4) {\(-\)};
-\node at (9.1,0.4) {\(\frac{GMm}{d}\)};
-\end{tikzpicture}
-\caption{The Newtonian warm-up in the same order as the board. First the kinetic term, then the full energy balance with negative gravitational potential. The redraw regularizes the source--test-mass geometry without replacing the lecture frames.}
+\includegraphics[width=0.42\textwidth]{lecture_02_figure_03.png}
+\caption{Outgoing test mass and the kinetic-energy term \(\frac{1}{2}mv^2\).}
 \end{figure}
 
-Notice how the lecture builds the formula. First the kinetic term is written. Then the potential term is added. Only after that does the negative sign become the issue. The sequence matters because later the cosmological argument will lean on the same intuition: not just on the existence of a formula, but on what the sign of the gravitational term means.
-
-\subsection{Question \& Answer}
-
-\paragraph{Why is the gravitational potential energy negative?}
-The lecture does not answer this by abstract convention. It answers it by drawing the graphs of \(1/D\) and \(-1/D\). Forget the constants. The function \(1/D\) decreases as \(D\) increases. The function \(-1/D\) is the same curve upside down. Forces push in the direction of decreasing potential energy. Therefore an attractive force, which pulls inward toward smaller \(D\), must correspond to the upside-down curve:
+The gravitational potential energy contains the product of the masses, Newton's constant, and one power of the distance in the denominator. In the board writing the factors appear in the order \(mMG/D\), so it is best to keep that order here:
 \begin{equation}
-V(d)\propto -\frac{1}{d}.
+-\frac{mMG}{D}.
 \end{equation}
-Bringing the mass closer to the source creates a larger amount of negative potential energy. Moving it farther away makes the energy less negative. That is exactly what attraction means in energy language.
+Thus the total energy is
+\begin{equation}
+\frac{1}{2}mv^2-\frac{mMG}{D}.
+\end{equation}
+Energy conservation says only that this quantity does not change with time for the particular particle under discussion. Different particles may have different energies.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_02_figure_04.png}
+\caption{Total Newtonian energy for a radially moving test mass: kinetic term minus gravitational potential.}
+\end{figure}
+
+The negative sign matters. Gravitational potential energy is negative because gravity is attractive. Bringing the particle closer creates a larger amount of negative potential energy. Moving it farther away makes the potential energy less negative.
+
+\begin{classroomqa}
+\audiencequestion{The potential energy increase with distance rather than decrease?}\lecturetimestamp{00:34:13}
+\lecturerresponse{Yes. Forget the constants and look at the graphs of \(1/D\) and \(-1/D\). Force pushes toward decreasing potential energy. An attractive force therefore corresponds to the upside-down curve, \(-1/D\), so the potential energy increases with distance and becomes more negative as the particle moves inward.}
+\end{classroomqa}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.46\textwidth]{lecture_02_figure_05.png}
-
-\begin{tikzpicture}[scale=1.0]
-\draw[->] (0,0) -- (4.6,0) node[right]{\(D\)};
-\draw[->] (0,-2.2) -- (0,2.2);
-
-\draw[domain=0.35:4.0,smooth,variable=\x] plot (\x,{1/\x});
-\draw[domain=0.35:4.0,smooth,variable=\x] plot (\x,{-1/\x});
-
-\node at (3.35,0.95) {\(\frac{1}{D}\)};
-\node at (3.35,-1.0) {\(-\frac{1}{D}\)};
-\end{tikzpicture}
-\caption{Qualitative potential-energy graphs. The lecture frame is kept because it records the actual board argument; the redraw regularizes the axes and the two comparison curves \(1/D\) and \(-1/D\).}
+\caption{Qualitative comparison of \(1/D\) and \(-1/D\) for the sign of gravitational potential energy.}
 \end{figure}
 
-\section{Escape Velocity and the Three Energy Regimes}
+\section{Escape Velocity}
 
-Once the conserved energy is on the board, the lecture does not calculate right away. Instead it classifies the possible motions. There are only three cases.
+Now classify the possibilities. The energy can be positive, negative, or zero. Those are the only three cases.
 
 \begin{itemize}
-\item If \(E<0\), the motion is bound. The particle rises, slows, turns around, and falls back.
-\item If \(E=0\), the particle has exactly the escape velocity. The distance keeps increasing forever, while the speed decreases toward zero.
-\item If \(E>0\), the particle escapes completely. Gravity still decelerates it for a while, but not enough to prevent a nonzero asymptotic outward speed.
+\item If the energy is negative, the particle is bound. Throw it up with too small a velocity and it rises, slows, turns around, and falls back.
+\item If the energy is positive, the particle escapes. Gravity decelerates it at first, but not enough to stop it, and eventually it moves off with a nonzero asymptotic outward velocity.
+\item If the energy is exactly zero, the particle is at the escape velocity. That is the marginal case between escaping and not escaping.
 \end{itemize}
 
-The critical case \(E=0\) needs to be heard carefully. The distance is unbounded, but the speed goes to zero. It cannot actually come to rest at any finite time, because if it did, it would turn around and fall back. So the speed decreases forever without ever quite reaching zero at finite time.
+For sufficiently small initial velocity, the potential term dominates from the start and the energy is negative.
 
-For sufficiently small starting velocity the potential term dominates from the beginning, so the energy is negative:
 \begin{figure}
 \centering
 \includegraphics[width=0.62\textwidth]{lecture_02_figure_06.png}
-\caption{Later emphasis frame: at small enough initial outward speed, the negative potential term dominates the total energy.}
+\caption{At small outward speed, the negative potential term dominates the total energy.}
 \end{figure}
 
-This is the bridge to cosmology. The universe, in Newtonian language, behaves the same way. If the initial Hubble flow is large enough, galaxies escape from one another forever. If it is too small, gravity eventually wins and the universe recollapses. Between the two lies the critical case, the cosmological analog of escape velocity.
+In the zero-energy case the distance keeps increasing, but the speed keeps decreasing. The particle cannot come to rest at any finite time. If it did, it would fall back in. So the distance is unbounded, while the velocity tends toward zero.
 
-\section{Newton's Shell Theorem and the Cosmological Reduction}
+This is the direct analogy that matters for cosmology. The universe can behave the same way. If the initial outward Hubble flow is large enough, everything escapes from everything else. If it is too small, gravity wins and there is a giant crunch. There is also the marginal case, exactly analogous to escape velocity.
 
-The projectile analogy becomes a cosmological calculation only because of Newton's shell theorem. This is the lecture's third hinge, and Susskind takes time to make the audience trust it.
+\section{Newton's Theorem}
 
-For a spherically symmetric mass distribution, the gravitational force on a particle at radius \(d\) is exactly the same as if all the mass inside radius \(d\) were concentrated at the center, while the mass outside radius \(d\) contributes no net force. The theorem is stronger than the familiar outside-a-sphere statement. A perfect spherical shell exerts no force on a particle anywhere inside it, even off-center. This is a surprising property, and in the lecture Susskind reminds us that it is special to the inverse-square law.
+The cosmological reduction works because of Newton's theorem for the inverse-square law.
 
-He even sketches a water-flow analogy: a point source produces a \(1/r^2\)-type flux in three dimensions, and a symmetric shell of such sources produces no net interior flow. The details are postponed, but the moral is clear. Exterior shells cancel.
+If matter is distributed spherically symmetrically about some center, then the gravitational force on a particle outside the distribution is exactly the same as if all the mass were concentrated at the center. But the theorem is stronger than that. If the particle is inside the distribution, then only the mass at smaller radius contributes. The mass at larger radius gives no net force.
 
-Now we use that theorem in cosmology. Pick any galaxy and, for the sake of calculation, call it the center. Because the universe is homogeneous and isotropic, this choice cannot matter. Pick a second galaxy at comoving coordinate \(x\). Draw a sphere centered on the first galaxy and passing through the second. Then only the mass inside that sphere matters for the motion of the second galaxy.
+The cleanest version of the theorem is the thin shell. A perfect spherical shell exerts no gravitational force on a particle anywhere inside it, even away from the center. That is surprising at first sight, but it is true for the \(1/r^2\) law.
 
-Two further facts are essential.
+\begin{classroomqa}
+\audiencequestion{In the example you gave there, should we be a little surprised that it seems like as the particle moves across the boundary, the force is discontinuous?}\lecturetimestamp{00:48:19}
+\lecturerresponse{Yes. For an ideal infinitely thin shell it is surprising, and it is special to the \(1/r^2\) force law. A real shell has thickness, so the variation is smoothed out, but the sharp statement for an ideal shell is exactly the remarkable property of Newton's theorem.}
+\end{classroomqa}
 
-First, the center is arbitrary. We could have centered the calculation on Alice, Bob, Fred, or any other galaxy, and the same equation must come out.
+A picture then makes the theorem plausible. Replace a point mass by a point source of water. In three dimensions the outward flow decreases like \(1/r^2\). Put such sources continuously all around a spherical shell. Outside the shell the flow looks exactly as if everything were concentrated at the center. Inside the shell there can be no net flow, because there is no source at the center. The same structure is what underlies the gravitational theorem.
 
-Second, the sphere expands with the Hubble flow. It therefore encloses the same galaxies for all time, and so its enclosed mass is constant in time even though its physical radius changes.
+The point here is not to rederive the theorem. It is to use it.
 
-\section{From Galaxy Energetics to Friedmann's Equation}
+\section{A Homogeneous Universe as a One-Body Problem}
 
-We are now ready to write for a galaxy exactly the same kind of Newtonian energy equation we wrote for the projectile. After dividing by the test mass, it is convenient to write
+Now go back to cosmology. Take a little patch of the world, filled with a uniform gas of galaxies. One may put oneself at the center if one likes. That is only a convenience. Anybody can call themselves at the center, and the same equation must come out.
+
+Choose a galaxy on the \(x\)-axis at comoving coordinate \(x\). Since the universe is isotropic, the choice of axis does not matter. Draw a sphere centered on \(x=0\) and passing through that galaxy. By Newton's theorem, the force on the galaxy is exactly the same as if all the mass inside that sphere were concentrated at the center, while everything outside contributed nothing.
+
+The sphere expands with the galaxies. It always contains the same galaxies, and therefore the same total mass, even though its physical radius changes with time.
+
+The motion of that galaxy therefore obeys exactly the same kind of energy equation as the projectile:
 \begin{equation}
-\frac{v^2}{2}-\frac{GM(d)}{d}=\varepsilon(x),
+\frac{1}{2}mv^2-\frac{mMG}{D}=\text{constant}.
 \end{equation}
-where \(\varepsilon(x)\) is constant in time for the galaxy at comoving coordinate \(x\). It is not required to be the same for every \(x\).
+Here the \(M\) now means the mass inside the expanding sphere, not the central mass in the warm-up picture. The algebra is then simplified by multiplying by \(2\) and dividing by \(m\). Since a constant divided by \(m\) is still just a constant, one may write
+\begin{equation}
+v^2-\frac{2MG}{D}=\text{constant}.
+\end{equation}
+Again, ``constant'' means constant in time for that particular galaxy.
 
-The physical distance from the chosen center to that galaxy is
+Now relate this to the scale factor. The physical distance to the galaxy is
 \begin{equation}
-d=a(t)x,
+D=ax,
 \end{equation}
-and because \(x\) is comoving,
+because \(x\) is a fixed comoving coordinate. Its velocity is
 \begin{equation}
-v=\dot d=\dot a\,x.
+v=\dot D=\dot a\,x.
 \end{equation}
-If \(\rho(t)\) is the homogeneous density, then the enclosed mass is
-\begin{equation}
-M(d)=\frac{4\pi}{3}\rho\,d^3=\frac{4\pi}{3}\rho\,a^3x^3.
-\end{equation}
-Substituting these into the energy equation gives
-\begin{align}
-\frac{(\dot a x)^2}{2}-\frac{G\left(\frac{4\pi}{3}\rho\,a^3x^3\right)}{ax} &= \varepsilon(x), \\
-\frac{\dot a^2x^2}{2}-\frac{4\pi G}{3}\rho\,a^2x^2 &= \varepsilon(x).
-\end{align}
 
-Here the lecture lingers on the factor of \(x^2\), and rightly so. Both terms on the left-hand side are proportional to \(x^2\). Everything else there is the same for every galaxy. Therefore the right-hand side must also be proportional to \(x^2\). That is the precise meaning of the seemingly casual statement that the ``constant'' must scale with \(x^2\). The farther galaxies carry larger energies, and that is exactly what one should expect since they are also moving faster.
+The mass inside the sphere is the density times the volume. If \(\rho\) is the mass density, then
+\begin{equation}
+M=\frac{4\pi}{3}\rho D^3=\frac{4\pi}{3}\rho a^3x^3.
+\end{equation}
+Substituting into the energy equation gives
+\begin{equation}
+\dot a^2x^2-\frac{2G}{ax}\left(\frac{4\pi}{3}\rho a^3x^3\right)=\text{constant},
+\end{equation}
+or
+\begin{equation}
+\dot a^2x^2-\frac{8\pi G}{3}\rho a^2x^2=\text{constant}.
+\end{equation}
 
-So we write
+Both terms on the left-hand side are proportional to \(x^2\). Everything else there is the same everywhere. Therefore the right-hand side must also be proportional to \(x^2\). That is not a contradiction with calling it a constant. It means constant with respect to time for each fixed \(x\), but it may still scale with \(x^2\) from one galaxy to another. That makes sense. The more distant galaxies are moving faster.
+
+So divide away the common factor of \(x^2\). The remaining constant is now independent of both time and space. Write it in the historically standard way as \(-k\):
 \begin{equation}
-\varepsilon(x)=-\frac{k}{2}\,x^2,
+\dot a^2-\frac{8\pi G}{3}\rho a^2=-k.
 \end{equation}
-where the normalization of \(k\) is conventional. Dividing through by \(x^2/2\), we obtain
-\begin{equation}
-\dot a^2=\frac{8\pi G}{3}\rho\,a^2-k.
-\end{equation}
-Dividing once more by \(a^2\), we arrive at the standard historical form,
+After dividing by \(a^2\),
 \begin{equation}
 \left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}.
 \end{equation}
 
-This is Friedmann's equation in the Newtonian form emphasized in the lecture. One can also write it as
+This is the famous Friedmann-Robertson-Walker equation, though the lecture also remarks that it is really Friedman's equation. The sign convention is historical. Writing \(-k\) does not mean \(k\) must be positive. \(k\) may be positive, negative, or zero. In units with the speed of light set equal to \(1\), \(k\) is dimensionless.
+
+\section{Density and the Matter-Dominated Equation}
+
+The next question is immediate: what is \(\rho\)? It is not a constant. As the universe expands, the density decreases.
+
+To express that dependence, take a unit cube in coordinate space: one unit on a side in \(x\), \(y\), and \(z\). The same galaxies remain inside that cube for all time because the cube expands with the coordinates. So the mass inside that coordinate cube is fixed.
+
+\editorialnote{The lecture reuses the symbol \(M\) at several stages. Here \(M_{\Box}\) is used only to keep the mass in a unit coordinate cube distinct from the earlier central mass and sphere-enclosed mass.}
+
+The physical side length of the cube is \(a\), so its physical volume is \(a^3\). Therefore
 \begin{equation}
-H(t)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2},
+\rho=\frac{M_{\Box}}{a^3}.
 \end{equation}
-since \(H=\dot a/a\). Susskind likes to pause here and point out the historical drama of the result: a purely Newtonian energy argument has landed on the same equation that later appears as a component of Einstein's equations.
+This is the matter-dominated case: the right-hand side involves only the density of ordinary, nonrelativistic matter.
 
-The sign of \(k\) tracks the same three cases we already met in the escape-velocity problem. The critical case is \(k=0\). In units with \(c=1\), \(k\) is dimensionless.
+\begin{classroomqa}
+\audiencequestion{According to that equation, the Hubble constant is a function of \(\rho\). Therefore it's not a constant.}\lecturetimestamp{01:19:21}
+\lecturerresponse{Exactly. The Hubble constant is not a constant. It depends on the density, and the density changes with time. The lecture even jokes that the final examination could consist of one question: Is the Hubble constant a constant?}
+\end{classroomqa}
 
-\section{Matter Density, the Critical Case, and the Age of the Universe}
-
-If we sent ourselves home at this point and tried to solve Friedmann's equation, the first objection would be immediate: \(\rho\) is not a constant. It changes as the universe expands. So the next task is to express that dependence cleanly.
-
-Susskind does it with a unit comoving cube. Take a cube that is one unit on a side in coordinate space. The galaxies move with the comoving coordinates, so the same galaxies remain inside that cube for all time. Let the mass inside it be \(m_{\Box}\). Then the physical side length of the cube is \(a(t)\), and the physical volume is \(a(t)^3\). Therefore
+Substituting \(\rho=M_{\Box}/a^3\) into Friedmann's equation gives
 \begin{equation}
-\rho(t)=\frac{m_{\Box}}{a(t)^3}.
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G M_{\Box}}{3a^3}-\frac{k}{a^2}.
 \end{equation}
 
-Substituting this into Friedmann's equation gives
+At this point the arbitrary choices are clear. One needs the mass in a unit coordinate cube and the value of \(k\). The three possible signs of \(k\) correspond to the three energy cases of the projectile problem.
+
+\begin{itemize}
+\item If \(-k>0\), the energy is effectively above escape velocity, and the universe expands forever.
+\item If \(-k<0\), gravity eventually wins and the universe recollapses.
+\item If \(k=0\), the universe is exactly at the escape velocity.
+\end{itemize}
+
+\begin{classroomqa}
+\audiencequestion{Is \(k=0\)? Then the velocity between two galaxies is approaching zero?}\lecturetimestamp{01:21:12}
+\lecturerresponse{Yes. In the critical case the velocity approaches zero, but the distance is still unbounded. The galaxies keep separating, only more and more slowly. If they actually came to rest at any finite time, they would fall back in.}
+\end{classroomqa}
+
+\section{The Critical Case \(k=0\)}
+
+Now choose the simplest case, \(k=0\). That is the exact escape-velocity case, and it is simpler only because the mathematics is simpler. The equation becomes
 \begin{equation}
-\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G\,m_{\Box}}{3a^3}-\frac{k}{a^2}.
-\end{equation}
-Now choose the simplest case, \(k=0\), the analog of exact escape velocity. Then
-\begin{equation}
-\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G\,m_{\Box}}{3a^3}.
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G M_{\Box}}{3a^3}.
 \end{equation}
 
-Before solving, the lecture points out a qualitative consequence. The right-hand side is always positive. Therefore the left-hand side cannot pass through zero, which means the model does not turn around. In the critical case the universe expands forever, but with a continually decreasing expansion rate.
+The right-hand side is always positive and never zero. Therefore \(\dot a/a\) cannot pass through zero. The universe cannot turn around in this case. It is either always expanding or always shrinking. Take the expanding branch.
 
-Now comes the worked solution. Rather than grinding through the differential equation abstractly, Susskind tries a power law:
+Now guess a power law,
 \begin{equation}
 a(t)=ct^p.
 \end{equation}
 Then
-\begin{align}
-\dot a &= cp\,t^{p-1}, &
-\frac{\dot a}{a} &= \frac{p}{t}.
-\end{align}
-Substituting into the equation gives
 \begin{equation}
-\frac{p^2}{t^2}=\frac{8\pi G\,m_{\Box}}{3c^3\,t^{3p}}.
+\dot a = cp\,t^{p-1},
 \end{equation}
-For this to hold for all \(t\), the powers of \(t\) must match:
+so
+\begin{equation}
+\frac{\dot a}{a}=\frac{p}{t}.
+\end{equation}
+Substituting into the differential equation gives
+\begin{equation}
+\frac{p^2}{t^2}=\frac{8\pi G M_{\Box}}{3c^3t^{3p}}.
+\end{equation}
+For the powers of \(t\) to match, one must have
 \begin{equation}
 3p=2.
 \end{equation}
@@ -290,84 +294,87 @@ So
 \begin{equation}
 p=\frac{2}{3}.
 \end{equation}
-Then matching coefficients gives
+Then the constants must satisfy
 \begin{equation}
-\frac{4}{9}=\frac{8\pi G\,m_{\Box}}{3c^3},
+\frac{4}{9}=\frac{8\pi G M_{\Box}}{3c^3},
 \end{equation}
 hence
 \begin{equation}
-c^3=6\pi G\,m_{\Box}.
+c^3=6\pi G M_{\Box}.
 \end{equation}
-The critical matter-dominated solution is therefore
+Therefore
 \begin{equation}
-a(t)=\left(6\pi G\,m_{\Box}\right)^{1/3}t^{2/3}.
-\end{equation}
-More generally one may absorb the remaining integration constant into a shift of the origin of time and write
-\begin{equation}
-a(t)\propto (t-t_0)^{2/3}.
+a(t)=\left(6\pi G M_{\Box}\right)^{1/3}t^{2/3}.
 \end{equation}
 
-This is a more interesting result than it may look at first sight. The universe does not expand linearly with time. Linear growth would be the analog of unaccelerated motion. Here the growth is slower than linear:
+There can still be an additive time shift. It is absorbed by replacing \(t\) with \(t-t_0\). Once one chooses the origin of time so that \(a=0\) at \(t=0\), that remaining constant is gone.
+
+So the universe expands as the two-thirds power of time,
 \begin{equation}
 a(t)\propto t^{2/3}.
 \end{equation}
-So the expansion slows down, but in the critical case it never turns around.
+It does not expand linearly with time. Linear growth would be the analog of unaccelerated motion. Here the expansion slows down.
 
-The interpretation of \(t=0\) is also part of the lecture's rhythm. If \(a(t)\) really went to zero, everything would be squashed on top of everything else and the density would diverge. Susskind immediately softens the literalness of that statement: the Newtonian model cannot be trusted all the way down to infinite density. But it does tell us that the universe emerged from an extremely dense early state. That is the Big Bang limit of the model.
+If one pushes the formula backward to \(t=0\), the scale factor goes to zero and the density blows up. Saying \(a=0\) is extreme. We do not know what happens to matter when it becomes too dense. The real point is that at some early stage everything was so crowded that atoms, nuclei, and quarks were all packed together in an extraordinarily dense state.
 
-The Hubble parameter now becomes explicit:
+\section{The Hubble Constant and the Age of the Universe}
+
+In the critical model,
 \begin{equation}
 H(t)=\frac{\dot a}{a}=\frac{2}{3t}.
 \end{equation}
-So in this model
+So the Hubble constant is approximately one over the age of the universe,
 \begin{equation}
 t=\frac{2}{3H}.
 \end{equation}
-This is one of the lecture's payoffs. The Hubble constant is not a constant at all; it falls like \(1/t\). Susskind jokes that a final examination could consist of a single question: \emph{Is the Hubble constant a constant?} The correct answer is no.
+This is one of the main payoffs of the calculation. Measure the Hubble constant today, and one gets an age estimate for the universe, at least back to the point where the Newtonian model ceases to make sense.
 
-The same formula turns a present-day measurement of \(H\) into an age estimate. In the lecture Susskind quotes an age of roughly \(13\) to \(14\) billion years and remarks that \(k=0\) is observationally very realistic, with no known significant deviation from flatness at the level of precision he quotes.
+The quoted age is roughly \(13\) to \(14\) billion years. The text also says that \(k=0\) is observationally very realistic: to the level of precision quoted there, no significant deviation from \(k=0\) is known.
 
-\subsection{Question \& Answer}
+\begin{classroomqa}
+\audiencequestion{I'm just sort of confused about what \(M\) and \(a\) are.}\lecturetimestamp{01:39:16}
+\lecturerresponse{Both contain arbitrariness from the choice of grid. Change the fiducial box and the amount of matter in it changes, and the numerical value of the scale factor changes too. What is physical is the density, \(M/a^3\), or equivalently combinations such as \(a/M^{1/3}\) that do not depend on how the grid is chosen. In the \(k=0\) solution the unknown constant multiplying \(t^{2/3}\) cancels out of \(\dot a/a\), so the age relation \(t=2/3H\) does not depend on the fiducial box mass.}
+\end{classroomqa}
 
-\paragraph{Why does the age estimate not depend on the arbitrary fiducial box mass?}
-The lecture's late discussion of this point is subtle because the notation becomes slippery, but the underlying idea is clean. The fiducial comoving box is conventional. If we double its side length, then the mass inside it grows by a factor of \(8\), while \(m_{\Box}^{1/3}\) grows by a factor of \(2\). The corresponding normalization of \(a\) changes by the same factor. What is physical is the density
+That cancellation is immediate in the solution. If
 \begin{equation}
-\rho=\frac{m_{\Box}}{a^3},
-\end{equation}
-or equivalently the invariant combination \(a/m_{\Box}^{1/3}\), not \(a\) and \(m_{\Box}\) taken separately.
-
-The cancellation appears directly in the solution. If
-\begin{equation}
-a(t)=ct^{2/3},
+a(t)=Ct^{2/3},
 \end{equation}
 then
 \begin{equation}
-\dot a=\frac{2}{3}c\,t^{-1/3},
+\dot a=\frac{2}{3}Ct^{-1/3},
 \end{equation}
-so
+and therefore
 \begin{equation}
-\frac{\dot a}{a}=\frac{\frac{2}{3}c\,t^{-1/3}}{ct^{2/3}}=\frac{2}{3t}.
+\frac{\dot a}{a}=\frac{2}{3t}.
 \end{equation}
-The constant \(c\), and therefore the dependence on the fiducial-box mass, drops out of \(H=\dot a/a\). That is why the age relation
-\begin{equation}
-t=\frac{2}{3H}
-\end{equation}
-does not depend on the arbitrary normalization of the comoving box in the critical model.
+The constant \(C\) drops out completely.
 
-This is also the right place to hear the lecture's last reinterpretation. Rearranging Friedmann's equation gives
-\begin{equation}
-\frac{\dot a^2}{a^2}-\frac{k}{a^2}=\frac{8\pi G}{3}\rho.
-\end{equation}
-The left-hand side is geometric: it is built from the scale factor and, next time, from spatial curvature. The right-hand side is matter density, or in relativistic language energy density. That is exactly the sort of equation Einstein's theory ought to produce.
+\section{Why the Newtonian Derivation Works}
 
-\section{Summary}
+Near the end the question becomes: why should the Newtonian derivation agree with the relativistic one as well as it does?
 
-The lecture unfolds in a very deliberate sequence. Homogeneity and isotropy fix the kinematics of expansion. The comoving metric gives the scale factor a precise meaning. A Newtonian projectile problem provides the right intuition for conserved energy and escape velocity. Newton's shell theorem then converts the many-body universe into an effective one-body problem, and that reduction yields
+\begin{classroomqa}
+\audiencequestion{This all seems to depend on an assumption of an open universe.}\lecturetimestamp{01:45:44}
+\lecturerresponse{At this stage the derivation is Newtonian, and Newtonian physics means flat space. The interpretation of \(k\) in terms of the geometry of space is postponed to the next lecture. There \(k=0\) will correspond to flat space, while the other signs will be tied to curved spatial geometry.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sometime long ago, did the length of meter sticks depend on \(a\)?}\lecturetimestamp{01:47:53}
+\lecturerresponse{Far enough back, matter would have been so crowded that separate meter sticks would not really exist. Before that they would be squeezed together. The lecture also reminds us that relativity does not allow truly rigid bodies anyway: if a body were perfectly rigid, a push on one side would send a signal to the other side instantaneously, faster than light.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Why do you think there is this coincidence of equations, Newtonian and relativistic?}\lecturetimestamp{01:49:03}
+\lecturerresponse{Because the Newtonian treatment is being applied only to a sufficiently small region. As long as the region is small compared with the radius of curvature of the whole universe, and as long as local Hubble velocities there are well below the speed of light, Newtonian mechanics is a good approximation. The lecture compares this with studying the growth of grass on the Earth: one can understand the local process without using the curvature of the whole Earth.}
+\end{classroomqa}
+
+This is the logic of the local patch. Newtonian mechanics assumes, first, that the curvature of space is not important for the question at hand, and second, that nothing locally is moving close to the speed of light. In cosmology that means choosing a region large enough to be homogeneous, but still small enough that curvature effects are negligible and Hubble velocities remain nonrelativistic.
+
+With that in mind, the Newtonian calculation is not an accident. It is the local approximation to an equation that can also be read in relativistic form. If the curvature term is moved to the left, the Friedmann equation becomes
 \begin{equation}
-\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}.
+\left(\frac{\dot a}{a}\right)^2+\frac{k}{a^2}=\frac{8\pi G}{3}\rho.
 \end{equation}
-In the critical matter-dominated case \(k=0\), the solution is
-\begin{equation}
-a(t)\propto t^{2/3}, \qquad H(t)=\frac{2}{3t}.
-\end{equation}
-So the Newtonian model already gives a serious cosmological prediction: a slowing but never reversing critical expansion, together with an age estimate from the present Hubble parameter. The next lecture will reopen the equation from the relativistic side and show how curvature and Einstein's equations complete the story.
+The left-hand side is geometric: it involves the scale factor and, next time, the curvature of space. The right-hand side is the energy density. That is exactly the kind of equation one expects from general relativity.
+
+Next time the subject is curvature itself, Einstein's equations, and the relation between that relativistic derivation and the Newtonian one.
