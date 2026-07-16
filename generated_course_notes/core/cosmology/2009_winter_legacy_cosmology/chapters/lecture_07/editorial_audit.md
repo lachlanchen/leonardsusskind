@@ -1,0 +1,23 @@
+# Editorial Audit
+
+- Status: **revise**
+- Findings: 9
+
+## Findings
+
+- **critical / front_matter** at `\paragraph{Credit.} These companion notes follow Leonard Susskind's Lecture 7, with supporting frame extraction curated by LazyingArt LLC and Video2Book.`: This inserts production credits and workflow names directly into chapter prose. The charter explicitly forbids this kind of body-language leakage and requires editorial method material to stay out of the chapter body. Repair: Remove the credit paragraph from the chapter body. If credits or method notes are needed, move them to permitted front matter or source footnotes outside the prose of the chapter.
+- **critical / q_and_a** at `multiple "Question & Answer" subsections, especially the block beginning "What are the axes of the V(phi) graph..."`: Several Q&A blocks merge distinct transcript moments or turn ordinary exposition into synthetic dialogue. For example, the axes question and the time-parameter clarification occur as separate exchanges in the transcript, while the plateau-flatness block folds later fluctuation material into one constructed exchange. Repair: Keep only transcript-supported classroom exchanges, split merged material back into prose, and render genuine exchanges as timestamped classroom Q&A.
+- **high / structure** at `opening paragraph beginning "Inflation is the announced subject of this lecture, but the lecturer does not begin there."`: The chapter starts with a prefatory overview and lecture-management narration instead of entering the argument where the lecture enters it. The charter says not to force an overview and to avoid repeatedly narrating what the lecturer is doing. Repair: Cut the overview paragraph and begin with the flat-space vacuum-energy Friedmann discussion that opens the lecture.
+- **high / structure** at `\section{Summary}`: The lecture does not close with a recap section. It closes by pointing forward to acoustic waves and the geometric measurement of spatial curvature in the next lecture. Repair: Remove the summary section and let the acoustic-wave handoff close the chapter.
+- **high / leakage** at `It would be a mistake to convert this lecture comment into a polished Hamiltonian formula that was never actually derived on the board.`: This is editorial process commentary about what the chapter writer chose not to do. It is not lecture exposition and violates the prohibition on workflow-style language in chapter prose. Repair: Delete the sentence and present only the physics claim itself.
+- **medium / provenance** at `formulas such as t_double = ln 2 / H, V_today = 3H_0^2/(8πG), and N = ln(a_f/a_i)`: These are sensible derivations from the lecture, but they are introduced as clean formulas without any provenance marking. They are not board equations, and some are not stated explicitly in the transcript. Repair: Either add brief provenance footnotes identifying them as editorial derivations from the spoken exponential law and e-folding discussion, or recast them into prose.
+- **medium / figure** at `caption of lecture_07_figure_02.png`: The caption discusses partial legibility, equivalence of forms, and residual board context. Captions are supposed to describe the physics shown, while uncertainty and provenance belong elsewhere. Repair: Replace the caption with a physics-only caption and move any uncertainty about the partial top line or left-board residue into a footnote or source map.
+- **medium / mathematics** at `Susskind speaks of A(t); here we use the standard a(t), with the same meaning:`: The lecture's notation is being standardized in the body rather than preserved. The charter says to preserve lecture notation unless a correction is necessary and documented. Repair: Prefer the lecture's A(t), or mark the notation change explicitly as editorial if standardization is retained.
+- **low / voice** at `phrases such as "The lecture's favorite analogy...", "The lecture's verdict is strong...", and "This figure matters for more than the equation itself."`: These lines narrate the lecture and the editorial handling instead of speaking directly about the physics. Repair: Rewrite such passages into direct exposition and move editorial significance claims out of the body.
+
+## Source Uncertainties
+
+- `lecture_07_figure_02.png top line and the chapter's use of HD = c`: equation Check: frame
+- `lecture_07_figure_02.png left-board residue from the rho0-to-H discussion`: equation Check: audio or earlier frame
+- `chapter formulas t_double = ln 2 / H, V_today = 3H_0^2/(8πG), and N = ln(a_f/a_i)`: attribution Check: transcript plus editorial footnote
+- `01:36:12-01:36:18`: ASR Check: audio

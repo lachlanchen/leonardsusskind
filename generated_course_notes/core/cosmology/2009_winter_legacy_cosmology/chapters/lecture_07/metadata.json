@@ -1,7 +1,7 @@
 {
   "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
-  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology \uff5c Lecture 7 [KATSfJjZGVQ].md",
-  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology \uff5c Lecture 7 [KATSfJjZGVQ].mkv",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].mkv",
   "lecture_number": 7,
   "lecture_slug": "lecture_07",
   "lecture_title": "Cosmology : Lecture 7",
@@ -26,7 +26,7 @@
       "timestamp_hhmmss": "00:47:08.822",
       "source_candidate": "lecture_07_window_03_candidate_04_004708822.png",
       "recommended_use": "screenshot_plus_equation_and_tikz",
-      "rationale": "This is the best frame because it captures the full teaching point of the subtitle window: not just the notation \\(\\phi\\) and \\(V(\\phi)\\), but also the plotted potential profile showing how the potential varies with position in field space. Compared with the earlier candidates, the graph is more complete and the board layout is more informative for note writing, while the lecturer\u2019s hand does not obscure the essential shape of the curve.",
+      "rationale": "This is the best frame because it captures the full teaching point of the subtitle window: not just the notation \\(\\phi\\) and \\(V(\\phi)\\), but also the plotted potential profile showing how the potential varies with position in field space. Compared with the earlier candidates, the graph is more complete and the board layout is more informative for note writing, while the lecturer’s hand does not obscure the essential shape of the curve.",
       "subtitle_excerpt": "And the potential energy can vary from point to point.",
       "segment_start_seconds": 2825.46,
       "segment_start_hhmmss": "00:47:05.460",
@@ -48,5 +48,6 @@
       "segment_end_hhmmss": "01:02:30.660",
       "caption_hint": "High plateau of the potential"
     }
-  ]
+  ],
+  "schema_version": 2
 }

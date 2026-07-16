@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
+  "chapter": "lecture_07",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].mkv",
+  "entries": [
+    {
+      "locator": "Section opening on the flat-space Friedmann equation and nondiluting vacuum energy",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:34",
+        "00:02:18"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Matches the lecture's opening move from the cosmological constant to the flat-space Friedmann equation and the constant vacuum-energy case."
+    },
+    {
+      "locator": "Equation H^2 = 8πGρ0/3 and H = sqrt(8πGρ0/3)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:02:43",
+        "00:03:35"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct spoken identification of the constant right-hand side with H^2 and its square root."
+    },
+    {
+      "locator": "Equation A(t)=C e^{Ht}",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:23",
+        "00:04:53"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct spoken solution of A dot = H A."
+    },
+    {
+      "locator": "Metric dτ^2 = dt^2 - e^{2Ht}(dx^2+dy^2+dz^2)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:05:47"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "The de Sitter line element is spoken explicitly in expanding coordinates."
+    },
+    {
+      "locator": "Equation D = c/H and Figure lecture_07_figure_02.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:30:37"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].mkv",
+      "confidence": "high",
+      "note": "The right board clearly shows the horizon relation D=c/H."
+    },
+    {
+      "locator": "Editorial restatement HD = c",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:12:27",
+        "00:30:37"
+      ],
+      "reference": "",
+      "confidence": "medium",
+      "note": "Algebraically equivalent to the spoken and legible relation D=c/H; the chapter correctly marks it as editorial rather than as an independent lecture equation."
+    },
+    {
+      "locator": "Classroom Q&A on the horizon scale and the age of the universe",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:14:10"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange about the tangent-line special case A(t)=t."
+    },
+    {
+      "locator": "Section on vacuum energy from harmonic-oscillator zero-point energy",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:16:34",
+        "00:22:49"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Tracks the oscillator, uncertainty-principle, electromagnetic-field, and zero-point-energy explanation."
+    },
+    {
+      "locator": "Equation E0 = 1/2 ħω",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:19:20"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "The ground-state energy of the harmonic oscillator is stated explicitly."
+    },
+    {
+      "locator": "Section on energy and the cosmic horizon",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:27",
+        "00:33:15"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Captures the fixed-horizon argument and the warning that energy in general relativity is subtler than in elementary mechanics."
+    },
+    {
+      "locator": "Equation E_hor = (4π/3) D^3 ρ0",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:31:06",
+        "00:32:23"
+      ],
+      "reference": "",
+      "confidence": "medium",
+      "note": "Compact editorial restatement of the spoken horizon-volume times density calculation; the chapter explicitly labels it as such."
+    },
+    {
+      "locator": "Section on why inflation was introduced",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:34:01",
+        "00:40:54"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Matches the flatness, smoothness, and horizon-problem motivation, including the balloon and raisin analogies."
+    },
+    {
+      "locator": "Figure lecture_07_figure_03.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:47:08"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].mkv",
+      "confidence": "high",
+      "note": "Generic scalar-potential sketch with visible phi and V(phi) notation."
+    },
+    {
+      "locator": "Equation H = sqrt(8πG V(phi)/3)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:49:24"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct spoken replacement of ρ0 by V(phi)."
+    },
+    {
+      "locator": "Figure lecture_07_figure_04.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "01:02:30"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].mkv",
+      "confidence": "high",
+      "note": "Late-lecture plateau-cliff-minimum sketch used in the reheating discussion."
+    },
+    {
+      "locator": "Prose on at least about fifty e-foldings",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:14:05",
+        "01:19:27"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The chapter correctly presents the lower bound as an editorial restatement of the spoken claim that the universe was multiplied by e at least about fifty times."
+    },
+    {
+      "locator": "Rough plateau-height estimate near 10^-14 in Planck units",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:14:38"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The chapter correctly labels this as a rough spoken estimate rather than a derived lecture result."
+    },
+    {
+      "locator": "Section on quantum fluctuations and the seeds of galaxies",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:22:10",
+        "01:38:13"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Follows the contour picture, staggered reheating, density-contrast argument, and later gravitational amplification."
+    },
+    {
+      "locator": "Equation δρ/ρ ~ 10^-5 and its constraining role",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:35:14",
+        "01:36:18"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "The amplitude is spoken directly, and the transcript also says this number constrains the plateau height and flatness rather than being derived from the sketch alone."
+    },
+    {
+      "locator": "Section on acoustic waves as a standard ruler",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:47:19",
+        "01:49:27"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Matches the closing handoff to acoustic waves and geometry measurement from their known physical size and observed angular size."
+    },
+    {
+      "locator": "What is this vacuum energy, and why would anything remain if matter and radiation were removed?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:16:15"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the response keeps the harmonic-oscillator and zero-point-energy explanation at the right level."
+    },
+    {
+      "locator": "Could you go over the point about the age of the universe and the inverse Hubble constant?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:23:46"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the response faithfully preserves the power-law versus de Sitter contrast."
+    },
+    {
+      "locator": "If the vacuum-energy density stays constant while the universe expands, where does the extra energy come from?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:27"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the answer keeps the lecture's general-relativistic bookkeeping and fixed-horizon reply without overformalizing it."
+    },
+    {
+      "locator": "Are we assuming equilibrium before inflation?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:40:05"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the chapter correctly preserves the point that inflation erases prior structure rather than assuming equilibrium."
+    },
+    {
+      "locator": "What is the horizontal axis in the V(phi) drawing?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:46:34"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the axes are rendered plainly and correctly."
+    },
+    {
+      "locator": "What is causing phi to move?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:59:07"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the answer correctly identifies the slope plus cosmological viscosity."
+    },
+    {
+      "locator": "Is phi acting like a time parameter here?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:05:11"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the response keeps the monotonic-in-time qualification."
+    },
+    {
+      "locator": "Could the plateau be exactly flat, with perturbations somehow knocking the field off the edge?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:19:48"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the answer preserves the conclusion that the plateau cannot be completely flat."
+    },
+    {
+      "locator": "Are the later reheated regions hotter or cooler than the earlier ones?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:34:00"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the response keeps the final corrected statement that later-fallen regions are hotter."
+    },
+    {
+      "locator": "How is the microwave background reflected in all of this, given that phi is not an electromagnetic field?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:40:24"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the answer correctly routes the field energy through reheating into particles and photons and then to the last-scattering imprint."
+    },
+    {
+      "locator": "Is the reheating itself the Big Bang?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:45:42"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the chapter preserves the lecture's two nearby uses of Big Bang without forcing a single definition."
+    },
+    {
+      "locator": "What about the acoustic waves?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:47:19"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].md",
+      "confidence": "high",
+      "note": "Direct exchange; the answer correctly keeps the measuring-rod handoff to the next lecture."
+    }
+  ]
+}

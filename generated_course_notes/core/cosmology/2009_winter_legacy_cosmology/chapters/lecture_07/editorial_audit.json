@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_07",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "front_matter",
+      "locator": "\\paragraph{Credit.} These companion notes follow Leonard Susskind's Lecture 7, with supporting frame extraction curated by LazyingArt LLC and Video2Book.",
+      "evidence": "This inserts production credits and workflow names directly into chapter prose. The charter explicitly forbids this kind of body-language leakage and requires editorial method material to stay out of the chapter body.",
+      "action": "Remove the credit paragraph from the chapter body. If credits or method notes are needed, move them to permitted front matter or source footnotes outside the prose of the chapter."
+    },
+    {
+      "severity": "critical",
+      "category": "q_and_a",
+      "locator": "multiple \"Question & Answer\" subsections, especially the block beginning \"What are the axes of the V(phi) graph...\"",
+      "evidence": "Several Q&A blocks merge distinct transcript moments or turn ordinary exposition into synthetic dialogue. For example, the axes question and the time-parameter clarification occur as separate exchanges in the transcript, while the plateau-flatness block folds later fluctuation material into one constructed exchange.",
+      "action": "Keep only transcript-supported classroom exchanges, split merged material back into prose, and render genuine exchanges as timestamped classroom Q&A."
+    },
+    {
+      "severity": "high",
+      "category": "structure",
+      "locator": "opening paragraph beginning \"Inflation is the announced subject of this lecture, but the lecturer does not begin there.\"",
+      "evidence": "The chapter starts with a prefatory overview and lecture-management narration instead of entering the argument where the lecture enters it. The charter says not to force an overview and to avoid repeatedly narrating what the lecturer is doing.",
+      "action": "Cut the overview paragraph and begin with the flat-space vacuum-energy Friedmann discussion that opens the lecture."
+    },
+    {
+      "severity": "high",
+      "category": "structure",
+      "locator": "\\section{Summary}",
+      "evidence": "The lecture does not close with a recap section. It closes by pointing forward to acoustic waves and the geometric measurement of spatial curvature in the next lecture.",
+      "action": "Remove the summary section and let the acoustic-wave handoff close the chapter."
+    },
+    {
+      "severity": "high",
+      "category": "leakage",
+      "locator": "It would be a mistake to convert this lecture comment into a polished Hamiltonian formula that was never actually derived on the board.",
+      "evidence": "This is editorial process commentary about what the chapter writer chose not to do. It is not lecture exposition and violates the prohibition on workflow-style language in chapter prose.",
+      "action": "Delete the sentence and present only the physics claim itself."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "formulas such as t_double = ln 2 / H, V_today = 3H_0^2/(8πG), and N = ln(a_f/a_i)",
+      "evidence": "These are sensible derivations from the lecture, but they are introduced as clean formulas without any provenance marking. They are not board equations, and some are not stated explicitly in the transcript.",
+      "action": "Either add brief provenance footnotes identifying them as editorial derivations from the spoken exponential law and e-folding discussion, or recast them into prose."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "caption of lecture_07_figure_02.png",
+      "evidence": "The caption discusses partial legibility, equivalence of forms, and residual board context. Captions are supposed to describe the physics shown, while uncertainty and provenance belong elsewhere.",
+      "action": "Replace the caption with a physics-only caption and move any uncertainty about the partial top line or left-board residue into a footnote or source map."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "Susskind speaks of A(t); here we use the standard a(t), with the same meaning:",
+      "evidence": "The lecture's notation is being standardized in the body rather than preserved. The charter says to preserve lecture notation unless a correction is necessary and documented.",
+      "action": "Prefer the lecture's A(t), or mark the notation change explicitly as editorial if standardization is retained."
+    },
+    {
+      "severity": "low",
+      "category": "voice",
+      "locator": "phrases such as \"The lecture's favorite analogy...\", \"The lecture's verdict is strong...\", and \"This figure matters for more than the equation itself.\"",
+      "evidence": "These lines narrate the lecture and the editorial handling instead of speaking directly about the physics.",
+      "action": "Rewrite such passages into direct exposition and move editorial significance claims out of the body."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:10",
+      "end": "00:08:33",
+      "subject": "Vacuum energy in flat FRW gives constant H and exponential de Sitter expansion",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:08:33",
+      "end": "00:15:55",
+      "subject": "Observed late-time acceleration, the horizon distance c/H, and the contingent near-equality of horizon scale and cosmic age",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:16:15",
+      "end": "00:23:44",
+      "subject": "Vacuum energy as zero-point energy of quantum fields, distinguished from ordinary radiation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:23:46",
+      "end": "00:29:24",
+      "subject": "Power-law universes versus de Sitter: when H^{-1} tracks age and when it is only an e-folding time",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:29:27",
+      "end": "00:33:58",
+      "subject": "Energy bookkeeping in de Sitter space and fixed vacuum energy inside the cosmic horizon",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:34:01",
+      "end": "00:43:33",
+      "subject": "Inflation motivated by flatness, smoothness, and the horizon problem, with balloon and raisin analogies",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:43:41",
+      "end": "00:52:42",
+      "subject": "Hypothetical scalar field phi, potential V(phi), and the replacement rho0 -> V(phi)",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:52:42",
+      "end": "01:04:29",
+      "subject": "Plateau-cliff potential, slow roll, fall to the minimum, reheating, and the claim that everything observable happens much later",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:04:29",
+      "end": "01:20:50",
+      "subject": "E-foldings, rough bounds on the inflationary scale, and the requirement that the plateau not be perfectly flat",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:21:14",
+      "end": "01:35:56",
+      "subject": "Quantum fluctuations, contour picture, staggered reheating, and primordial density contrasts",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:40:24",
+      "end": "01:49:27",
+      "subject": "Microwave-background imprint, later gravitational amplification, and acoustic waves as the next lecture's standard ruler",
+      "chapter_status": "compressed"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:14:10",
+      "end": "00:15:55",
+      "question": "Isn't the horizon-scale coincidence basically what one gets when the tangent line happens to meet the origin?",
+      "answer_summary": "Only in the special linear case a(t) ∝ t. The present near-equality between horizon scale and age is not a mathematical identity.",
+      "verified": true
+    },
+    {
+      "start": "00:16:15",
+      "end": "00:23:44",
+      "question": "What is this vacuum energy, and why would anything remain if matter and radiation were removed?",
+      "answer_summary": "It is described as zero-point energy of quantum fields: harmonic-oscillator ground states are positive, fields fluctuate even without real particles, and this is not the three-degree background radiation.",
+      "verified": true
+    },
+    {
+      "start": "00:23:46",
+      "end": "00:29:24",
+      "question": "Could you go over the point about the age of the universe and the inverse Hubble constant?",
+      "answer_summary": "For power laws H = p/t, but for de Sitter expansion H is constant, so 1/H is the e-folding time rather than the age.",
+      "verified": true
+    },
+    {
+      "start": "00:29:27",
+      "end": "00:33:58",
+      "question": "If the vacuum-energy density stays constant while the universe expands, where does the extra energy come from?",
+      "answer_summary": "Susskind answers in GR terms and then points out that in exact de Sitter space the cosmic horizon is fixed, so the vacuum energy within that horizon stays fixed.",
+      "verified": true
+    },
+    {
+      "start": "00:40:05",
+      "end": "00:40:34",
+      "question": "Are we assuming equilibrium before inflation?",
+      "answer_summary": "No. Inflation erases detailed initial conditions rather than presupposing a homogeneous equilibrium state.",
+      "verified": true
+    },
+    {
+      "start": "00:46:34",
+      "end": "00:47:08",
+      "question": "What is the horizontal axis in the V(phi) drawing?",
+      "answer_summary": "The horizontal axis is the field value phi, and the vertical axis is the potential energy V.",
+      "verified": true
+    },
+    {
+      "start": "01:19:48",
+      "end": "01:20:50",
+      "question": "Could the plateau be exactly flat, with perturbations somehow knocking the field off the edge?",
+      "answer_summary": "No. The plateau must have some tilt, and if it were too flat it would make the reheated universe too inhomogeneous.",
+      "verified": true
+    },
+    {
+      "start": "01:34:00",
+      "end": "01:35:05",
+      "question": "Are the later reheated regions hotter or cooler than the earlier ones?",
+      "answer_summary": "The earlier-fallen regions have had more time to expand and cool, so the later-fallen regions are hotter; that difference contributes to the density contrast.",
+      "verified": true
+    },
+    {
+      "start": "01:40:24",
+      "end": "01:42:59",
+      "question": "How is the microwave background reflected in all this, given that phi is not an electromagnetic field?",
+      "answer_summary": "The primordial density pattern is imprinted on last scattering, while reheating converts the field energy into ordinary particles and photons.",
+      "verified": true
+    },
+    {
+      "start": "01:47:19",
+      "end": "01:49:27",
+      "question": "What about the acoustic waves?",
+      "answer_summary": "They provide a known-size ruler on the sky, and their geometric use is deferred to the next lecture.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_07_figure_02.png",
+      "timestamp": "00:30:37",
+      "verdict": "keep",
+      "reason": "This is the clearest board evidence for the de Sitter horizon relation D = c/H and matches the transition from expansion-rate discussion to the fixed horizon scale.",
+      "caption_guidance": "Horizon distance D = c/H for exponential expansion."
+    },
+    {
+      "asset": "lecture_07_figure_03.png",
+      "timestamp": "00:47:08",
+      "verdict": "keep",
+      "reason": "It captures the first generic scalar-potential sketch together with the notation V(phi), before the later plateau-cliff specialization.",
+      "caption_guidance": "Qualitative scalar potential V(phi) showing that different field values carry different potential energies."
+    },
+    {
+      "asset": "lecture_07_figure_04.png",
+      "timestamp": "01:02:30",
+      "verdict": "keep",
+      "reason": "It is the best late-lecture documentary image of the inflationary plateau, steep drop, and lower minimum used in the reheating discussion.",
+      "caption_guidance": "Inflationary potential with a high plateau, steep drop, and lower minimum."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "lecture_07_figure_02.png top line and the chapter's use of HD = c",
+      "problem": "equation",
+      "required_check": "frame"
+    },
+    {
+      "locator": "lecture_07_figure_02.png left-board residue from the rho0-to-H discussion",
+      "problem": "equation",
+      "required_check": "audio or earlier frame"
+    },
+    {
+      "locator": "chapter formulas t_double = ln 2 / H, V_today = 3H_0^2/(8πG), and N = ln(a_f/a_i)",
+      "problem": "attribution",
+      "required_check": "transcript plus editorial footnote"
+    },
+    {
+      "locator": "01:36:12-01:36:18",
+      "problem": "ASR",
+      "required_check": "audio"
+    }
+  ]
+}
