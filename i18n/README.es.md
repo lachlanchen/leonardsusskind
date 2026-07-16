@@ -21,6 +21,8 @@ Combina transcripciones de conferencias, archivos de subtítulos, notas TeX gene
 >
 > 🛠️ La automatización de descarga, transcripción y conversión de subtítulos a notas utilizada aquí se mantiene en el repositorio de herramientas complementario [Video2Book](https://github.com/lachlanchen/Video2Book), que está incluido en este repositorio como el submódulo `Video2Book/`.
 
+> **Nota de edición:** las transcripciones con marcas de tiempo se generan automáticamente y pueden contener errores de reconocimiento. Los libros compilados son apuntes complementarios independientes, editados con ayuda de IA y reconstruidos a partir de esas transcripciones y de imágenes de la pizarra; no son transcripciones literales, manuscritos originales ni ediciones avaladas por Leonard Susskind. La [revisión editorial](../references/editorial_revision_status.md) documenta las fuentes y figuras de cada capítulo.
+
 ## 📚 Libros publicados
 
 > 📷 Las portadas de vista previa se obtienen de la primera página del PDF de cada curso para que el README raíz y las tarjetas del sitio web siempre coincidan con el texto y el diseño realmente publicados.

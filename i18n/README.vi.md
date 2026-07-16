@@ -26,6 +26,8 @@ Kho lưu trữ này là kho tài liệu trọng tâm cho các ghi chú giảng d
 
 > Đây là các ghi chú bài giảng của Giáo sư Leonard Susskind. Nếu điều này vi phạm bản quyền, vui lòng liên hệ để tôi xóa kho này. Giáo sư Susskind không chịu trách nhiệm cho lỗi hay thông tin sai trong các ghi chú, tôi cũng vậy.
 
+> **Lưu ý về ấn bản:** bản chép lời có dấu thời gian được tạo tự động và có thể chứa lỗi nhận dạng. Các sách PDF là ghi chú đồng hành được biên tập độc lập với sự hỗ trợ của AI, tái dựng từ bản chép lời và hình ảnh bảng; chúng không phải bản chép nguyên văn, bản thảo gốc hay ấn bản được Leonard Susskind phê duyệt. Đợt [biên tập lại](../references/editorial_revision_status.md) đang ghi nguồn và xuất xứ hình ảnh cho từng chương.
+
 Nó kết hợp ba lớp tại cùng một nơi:
 
 - Theo dõi chuyên mục ghi chú và tiến độ theo khóa học.

@@ -21,6 +21,8 @@ It combines lecture transcriptions, subtitle files, generated TeX notes, compile
 >
 > 🛠️ The download, transcription, and subtitle-to-notes automation used here is maintained in the companion tool repo [Video2Book](https://github.com/lachlanchen/Video2Book), which is included in this repository as the `Video2Book/` submodule.
 
+> **Edition note:** the timestamped transcripts are machine-generated and may contain recognition errors. The compiled books are independently edited, AI-assisted companion notes reconstructed from those transcripts and blackboard frames; they are not exact transcripts, original Susskind manuscripts, or lecturer-endorsed editions. The ongoing [editorial revision](references/editorial_revision_status.md) records source and figure provenance chapter by chapter.
+
 ## 📚 Published Books
 
 > 📷 Preview covers are sourced from each course PDF's first page so root README and website cards always match the actual published text and layout.

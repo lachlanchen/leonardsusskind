@@ -21,6 +21,8 @@ Es kombiniert Vorlesungstranskriptionen, Untertiteldateien, generierte TeX-Notiz
 >
 > 🛠️ Die hier verwendete Automatisierung für Download, Transkription und die Umwandlung von Untertiteln in Notizen wird im begleitenden Tool-Repository [Video2Book](https://github.com/lachlanchen/Video2Book) gepflegt, das in diesem Repository als Submodul `Video2Book/` enthalten ist.
 
+> **Hinweis zur Ausgabe:** Die zeitgestempelten Transkripte wurden maschinell erzeugt und können Erkennungsfehler enthalten. Die kompilierten Bücher sind unabhängig redigierte, KI-gestützte Begleitnotizen, die aus Transkripten und Tafelbildern rekonstruiert wurden; sie sind weder wortgetreue Transkripte noch Originalmanuskripte oder von Leonard Susskind gebilligte Ausgaben. Die laufende [redaktionelle Überarbeitung](../references/editorial_revision_status.md) dokumentiert Quellen und Abbildungen kapitelweise.
+
 ## 📚 Veröffentlichte Bücher
 
 > 📷 Die Vorschaubilder der Cover stammen jeweils von der ersten Seite des zugehörigen Kurs-PDFs, damit das Root-README und die Website-Karten immer exakt zum tatsächlich veröffentlichten Text und Layout passen.

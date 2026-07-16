@@ -21,6 +21,8 @@ Il combine des transcriptions de cours, des fichiers de sous-titres, des notes T
 >
 > 🛠️ L’automatisation de téléchargement, de transcription et de conversion des sous-titres en notes utilisée ici est maintenue dans le dépôt d’outils compagnon [Video2Book](https://github.com/lachlanchen/Video2Book), qui est inclus dans ce dépôt comme sous-module `Video2Book/`.
 
+> **Note d’édition :** les transcriptions horodatées sont produites automatiquement et peuvent contenir des erreurs de reconnaissance. Les livres compilés sont des notes d’accompagnement indépendantes, éditées avec l’aide de l’IA et reconstruites à partir des transcriptions et des tableaux ; ce ne sont ni des transcriptions exactes, ni des manuscrits originaux, ni des éditions approuvées par Leonard Susskind. La [révision éditoriale](../references/editorial_revision_status.md) documente les sources et figures chapitre par chapitre.
+
 ## 📚 Livres publiés
 
 > 📷 Les couvertures d’aperçu proviennent de la première page du PDF de chaque cours afin que le README racine et les cartes du site web correspondent toujours exactement au texte et à la mise en page réellement publiés.
