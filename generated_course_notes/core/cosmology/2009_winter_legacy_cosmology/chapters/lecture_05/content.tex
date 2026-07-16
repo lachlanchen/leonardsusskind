@@ -1,425 +1,320 @@
-\chapter{Homogeneous Space, FRW Geometry, and the Meaning of $k$}
+\chapter{Spheres, Hyperbolic Space, and the Meaning of \(k\)}
 
-Let us begin exactly where the lecture begins: not with expansion, but with some simple mathematics. The connection to Einstein's equations is the destination, but Leonard Susskind very deliberately refuses to go there at once. We first need a language for homogeneous curved spaces, then a way to look out from within them, and only then can the constant \(k\) reveal its double meaning. What follows is a companion account of the fifth cosmology lecture, prepared for the course notes with curation support from LazyingArt LLC and Video2Book.
+Let us do a little mathematics, some simple mathematics. Spheres in any number of dimensions are special geometries: they are uniform, and here uniform means constant curvature. Positive curvature comes first, then uniform negative curvature, and after that the connection with Einstein's equations.
 
-\section{Uniform Geometry and the Meaning of a Sphere}
+A spherical universe means that \emph{space} is spherical, not spacetime. There is also the other possibility, uniform negative curvature. Putting these cases side by side is what makes the role of general relativity clear.
 
-Susskind begins by reminding us that spheres are the paradigmatic \emph{uniform} geometries. Uniform here means constant curvature: every point is like every other point. That is already the cosmological theme in miniature. Before one says anything about galaxies or expansion, one asks what kinds of large-scale spaces could be homogeneous.
+\section{Spheres and Uniform Geometry}
 
-The first description uses an embedding space as a crutch. A one-sphere is just a circle,
+A one-sphere is just a circle. The simplest way to describe it is to embed it in a two-dimensional auxiliary space and write
 \begin{equation}
-x^2+y^2=a^2,
+x^2+y^2=R^2.
 \end{equation}
-with unit case
+The unit one-sphere is
 \begin{equation}
 x^2+y^2=1.
 \end{equation}
-A two-sphere is described in the same way, only now the crutch is three-dimensional:
+
+A two-sphere is described the same way, now using three auxiliary coordinates:
 \begin{equation}
-x^2+y^2+z^2=a^2,
+x^2+y^2+z^2=R^2,
 \end{equation}
-and the unit two-sphere is
+with unit case
 \begin{equation}
 x^2+y^2+z^2=1.
 \end{equation}
-For the three-sphere one adds one more coordinate,
+
+These coordinates are only a crutch. The geometry of interest is not the surrounding \(x,y,z\) space. It is the surface itself. A creature living on a one-sphere lives on a circle; it has no access to an inside or an outside. The same idea applies to a two-sphere. The filling of the sphere and the outside of the sphere belong only to the auxiliary picture.
+
+The same construction gives a three-sphere. One introduces one more coordinate, say \(w\), and writes
 \begin{equation}
-x^2+y^2+z^2+w^2=A^2,
+x^2+y^2+z^2+w^2=R^2,
 \end{equation}
 with unit case
 \begin{equation}
 x^2+y^2+z^2+w^2=1.
 \end{equation}
+A three-sphere is harder to visualize, because the crutch would now be four-dimensional, but the mathematics is not much harder.
 
-The essential point is that these ambient coordinates are not themselves the space in which the inhabitants live. The embedding space is only a device for writing an equation. The actual geometry is the sphere itself. If a creature lives on a one-sphere, it lives on a circle; it has no access to an ``outside'' or an ``inside.'' Likewise, if space were a two-sphere or a three-sphere, the geometry of interest would be the surface itself, not the surrounding Euclidean space we used to write it down.
+The standard notation is \(\Omega_n\) for the \(n\)-sphere. Thus \(\Omega_1\) is the one-sphere, \(\Omega_2\) the two-sphere, and \(\Omega_3\) the three-sphere.
 
-This distinction matters immediately when the lecture turns toward cosmology. A spherical universe means that \emph{space} is spherical. It does \emph{not} mean that spacetime is some higher-dimensional sphere with time smuggled in as one more coordinate. Time will enter later, but it enters differently.
+\section{Metrics on the Sphere}
 
-For amusement, and to show that the pattern continues backward, the lecture briefly asks about a zero-sphere. Extrapolating the same algebraic pattern gives
-\begin{equation}
-x^2=1,
-\end{equation}
-whose solutions are the two points \(x=\pm 1\). We will not need the zero-sphere later, but it makes the recursive picture of spheres feel less accidental.
+The more useful description is intrinsic. One describes the sphere by coordinates that live on the sphere itself.
 
-\section{Intrinsic Metrics and the Recursive Sphere Construction}
-
-The more useful description is intrinsic. We now stop leaning on the crutch and describe the sphere in coordinates that live on the sphere itself. That is the language cosmology will actually use.
-
-For the unit one-sphere a single angular coordinate \(\phi\), with \(0\leq \phi < 2\pi\), is enough. The metric is simply
+For the unit one-sphere one coordinate \(\phi\) is enough, with \(0\leq \phi \leq 2\pi\). Its metric is
 \begin{equation}
 ds^2=d\phi^2.
 \end{equation}
-This is the first appearance of the notation
+This is also written
 \begin{equation}
-d\Omega_1^2=d\phi^2,
+d\Omega_1^2=d\phi^2.
 \end{equation}
-where \(d\Omega_n^2\) denotes the metric of the unit \(n\)-sphere.
 
-Now we pass to the unit two-sphere. The lecture's picture is not an abstract formula but a constructive one: think of the two-sphere as a sequence of one-spheres. Start at one pole with a circle of zero size, let the circle grow, reach a maximum, then let it shrink again to zero at the opposite pole.
-
-Introduce a second coordinate \(\theta\), running from \(0\) to \(\pi\). The metric follows almost by inspection:
-
-\begin{enumerate}
-\item Motion in the north-south direction contributes \(d\theta^2\).
-\item At fixed \(\theta\), motion in the transverse direction is motion around a one-sphere labeled by \(\phi\).
-\item That transverse one-sphere does not have unit radius; its radius is \(\sin\theta\).
-\item Therefore the angular contribution is \(\sin^2\theta\,d\phi^2\).
-\end{enumerate}
-
-So the metric of the unit two-sphere is
+The unit two-sphere is described as a sequence of one-spheres. One angle \(\phi\) still goes around each circle, but a second angle \(\theta\) runs from one end of the sphere to the other. That second angle goes from \(0\) to \(\pi\). Motion in the \(\theta\)-direction contributes \(d\theta^2\). Motion around the \(\phi\)-direction takes place on a circle whose radius is \(\sin\theta\). Thus
 \begin{equation}
-ds^2=d\theta^2+\sin^2\theta\,d\phi^2.
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\phi^2
 \end{equation}
-In the \(\Omega\)-notation this is
+or
 \begin{equation}
 d\Omega_2^2=d\theta^2+\sin^2\theta\,d\Omega_1^2.
 \end{equation}
 
-The three-sphere is obtained in exactly the same way. One thinks of it as a family of two-spheres. Introduce one more coordinate \(\alpha\), and let the radius of the two-sphere at fixed \(\alpha\) again grow and then shrink. Geometrically this requires \(0\leq \alpha \leq \pi\): the lower-dimensional sphere begins at zero size, reaches a maximum, and returns to zero. The metric is
+The three-sphere is obtained the same way, now as a sequence of two-spheres. Introduce another coordinate \(\alpha\). Then
 \begin{equation}
 d\Omega_3^2=d\alpha^2+\sin^2\alpha\,d\Omega_2^2.
 \end{equation}
-If we expand the lower-dimensional piece explicitly, we get
+Expanded out, this is
 \begin{equation}
 d\Omega_3^2=d\alpha^2+\sin^2\alpha\left(d\theta^2+\sin^2\theta\,d\phi^2\right).
 \end{equation}
+Here \(\alpha\) runs from one zero-size end to the other, so \(0\leq \alpha \leq \pi\).\editorialnote{At 00:17:24 the audio briefly sounds like ``zero to two pi,'' but the surrounding construction and the explicit \(\sin^2\alpha\) factor require the new coordinate to run from one zero-size end of the family of lower-dimensional spheres to the other.}
 
-Now the inductive rule is obvious:
+The general recursive form is
 \begin{equation}
 d\Omega_n^2=d\alpha^2+\sin^2\alpha\,d\Omega_{n-1}^2.
 \end{equation}
 
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[scale=0.95]
-\draw (-4,0) circle (2.0);
-\draw (-4,1.15) ellipse (1.10 and 0.28);
-\draw (-4,0.55) ellipse (1.70 and 0.18);
-\draw (-4,0.00) ellipse (2.00 and 0.10);
-\draw (-4,-0.55) ellipse (1.70 and 0.18);
-\draw (-4,-1.15) ellipse (1.10 and 0.28);
-\draw[->] (-6.4,0) -- (-1.6,0);
-\node at (-1.20,0.28) {$\theta$};
-\node at (-4,-2.65) {$S^2$ as a sequence of $S^1$'s};
+Once this point of view is adopted, the embedding picture can be forgotten. A one-sphere is described by one coordinate, a two-sphere by two, a three-sphere by three, and so on. The geometry stands on its own.
 
-\draw[dashed] (2.2,-2.0) -- (2.2,2.0);
-\draw (2.2,-1.75) circle (0.12);
-\draw (2.2,-1.10) circle (0.45);
-\draw (2.2,-0.35) circle (0.82);
-\draw (2.2,0.45) circle (1.05);
-\draw (2.2,1.20) circle (0.62);
-\draw (2.2,1.80) circle (0.12);
-\draw[->] (0.8,-2.2) -- (0.8,2.2);
-\node at (1.10,2.32) {$\alpha$};
-\node at (2.2,-2.65) {$S^3$ schematically as a sequence of $S^2$'s};
-\end{tikzpicture}
-}%
-\caption{The lecture's constructive picture: a two-sphere built from one-spheres whose radius grows and shrinks, and a three-sphere built the same way one dimension higher.}
-\end{figure}
+This geometry is special because it is homogeneous. One could deform the metric by replacing \(\sin^2\theta\) with some other function that still vanishes at both ends. One would then get some deformed closed surface, for example an ellipsoid. But it would no longer be uniform. The sphere is homogeneous because every point is the same as every other point.
 
-This is the real geometric backbone of the lecture. Once the pattern is seen, the four-dimensional embedding picture becomes unnecessary. The geometry is already in the metric.
-
-It also becomes clear why the sphere is special. We could replace \(\sin^2\theta\) by some other function that vanishes at both ends and still obtain a smooth closed surface, but then the resulting geometry would not be uniform. An ellipsoid, for example, is perfectly smooth, but it is not homogeneous; its curvature varies from place to place. The sphere is special precisely because every point looks the same.
-
-\section{From a Static Three-Sphere to a Positively Curved FRW Universe}
-
-Once the unit-sphere metric is in hand, the next move is almost embarrassingly simple. To obtain a sphere of fixed radius \(A\), one multiplies the unit metric by \(A^2\):
+If one wants a sphere of radius \(A\) instead of unit radius, one multiplies the unit metric by \(A^2\):
 \begin{equation}
 ds^2=A^2\,d\Omega_3^2.
 \end{equation}
-The square is important. A metric measures squared distances, so the radius must enter as \(A^2\), not as \(A\).
+The square is necessary because the metric measures squared distance.
 
-Now the lecture turns from space to spacetime. We no longer consider a static three-sphere of fixed radius, but a three-sphere whose radius varies with time. At this point one must keep the warning sharp: time is not another embedding coordinate. The fact that space is spherical does not mean that spacetime is a higher-dimensional sphere. The cosmological degree of freedom is instead the time-dependent radius \(a(t)\).
+A brief aside concerns the zero-sphere. Extrapolating one step backward gives
+\begin{equation}
+x^2=1,
+\end{equation}
+whose solutions are the two points \(x=\pm 1\). So the unit zero-sphere is just two points.
 
-The lecture also assumes, as FRW cosmology does, that the metric has no mixed space-time terms such as \(dtdx\). With that assumption the positively curved FRW spacetime metric is
+\section{A Spherical FRW Universe}
+
+Now the interest is not in space alone, but in spacetime. The relevant picture is a three-sphere whose radius changes with time.
+
+One warning matters throughout: time is different. One should not think of the expanding universe as a higher-dimensional sphere with time playing the role of one more embedding coordinate.
+
+With that in mind, the spacetime interval is
 \begin{equation}
 d\tau^2=dt^2-a(t)^2\,d\Omega_3^2.
 \end{equation}
-Equivalently,
-\begin{equation}
-d\tau^2=dt^2-a(t)^2\left(d\alpha^2+\sin^2\alpha\,d\Omega_2^2\right).
-\end{equation}
+This is the FRW metric for a spatially spherical universe. The only new ingredient compared with the static sphere is that the radius has become a time-dependent function \(a(t)\).
 
-This is the first genuinely cosmological metric of the lecture. It describes a universe whose spatial slices are three-spheres, and whose size changes with time. One may think of the Big Bang, in this language, as a three-sphere that begins very small and then expands.
+It is convenient to choose coordinates so that we are at one pole. Nothing is special about that point; it is just a convention. Then \(\alpha\) can be thought of as a radial coordinate away from us on the unit sphere. It is not a radial distance in kilometers. It is a dimensionless angular measure on the unit sphere, but it plays the role of radial distance in the geometry.
 
-To make the geometry intelligible from the inside, Susskind chooses one pole and places us there. That does not make us special; it merely chooses coordinates convenient for an observer. With that choice, \(\alpha\) can be interpreted as a radial coordinate away from us on the unit sphere. It is not a radial distance in kilometers. It is an angular measure, hence dimensionless, but it plays the role of radial distance in the geometry.
-
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[scale=1.0]
-\def\R{2.4}
-\draw (0,0) circle (\R);
-\fill (\R,0) circle (0.05);
-\node[right] at (\R,0) {us};
-\fill (-\R,0) circle (0.05);
-\node[left] at (-\R,0) {opposite pole};
-
-\draw[dashed] (1.6,-1.79) -- (1.6,1.79);
-\draw[dashed] (0.6,-2.32) -- (0.6,2.32);
-\draw[dashed] (-0.6,-2.32) -- (-0.6,2.32);
-\draw[dashed] (-1.6,-1.79) -- (-1.6,1.79);
-
-\draw[->] (1.95,1.15) arc[start angle=28,end angle=110,radius=2.05];
-\node at (0.95,2.05) {$\alpha$};
-
-\node at (0,-2.85) {Fixed-\(\alpha\) spheres grow, then shrink};
-\end{tikzpicture}
-}%
-\caption{Observer-centered spherical geometry in two-dimensional cross-section. In three dimensions the fixed-\(\alpha\) surfaces are two-spheres around us: they first grow with distance and then, after a maximum, begin to shrink.}
-\end{figure}
-
-In two dimensions the fixed-\(\alpha\) sets are circles around us; in three dimensions they are two-spheres. The striking fact is that as we look farther away, these two-spheres first get larger, then eventually smaller. That is the positive-curvature intuition the lecture will soon turn into an observational statement.
-
-This spacetime geometry is what Susskind calls FRW, following common usage even though one sometimes inserts an \(L\) for Lema\^\i tre. The spherical case is labeled by
+Apart from local lumps such as galaxies and stars, this is the whole geometry of a spatially spherical FRW universe. Its spatial curvature is positive, and the sign convention is written
 \begin{equation}
 k=+1.
 \end{equation}
-At this stage \(k\) is first of all a sign: it means positive \emph{spatial} curvature, not positive spacetime curvature.
+Nothing itself is ``plus one.'' It simply means positive spatial curvature.
 
-\section{Looking Outward: Stereographic Projection and Angular Size}
+\section{Looking Out from a Sphere}
 
-At this point the lecture deliberately pauses the formalism. A metric by itself is not yet a picture. We want to know what a positively curved space looks like to an astronomer who sits at one point and looks outward. This is why Susskind spends so much time drawing projections: curvature should be translated into something one might see in the sky.
+How does such a sphere look when one looks out from one point on it? This is where the stereographic projection enters.
 
-The stereographic projection is the key construction. Take a two-sphere resting on a plane tangent at the south pole. To map a point \(P\) on the sphere to the plane, draw the straight line from the north pole through \(P\), and continue it until it hits the plane. The intersection point is the image \(P'\).
+Take a two-sphere tangent to an infinite plane at the south pole. Pick a point on the sphere. Draw the straight line from the north pole through that point and continue it until it hits the plane. In this way each point on the sphere is mapped to a point on the plane. The south pole lands at the origin of the plane. The north pole is the exceptional point: as one approaches it from different directions, its image runs off to infinity in a direction-sensitive way. One therefore treats it as the point at infinity.
 
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[scale=1.0]
-\draw (-3.2,0) -- (3.6,0);
-\node at (3.10,-0.28) {plane};
+If equal ``continents'' are placed at different positions on the sphere, their images on the plane become larger as one moves toward the north pole. So an observer placed at the south pole would see distant objects subtend larger angles than they would in flat space. In positive curvature, a known object looks too big relative to Euclidean geometry.
 
-\draw (0,1.5) circle (1.5);
+That is the basic observational point. Curvature is inferred from the relation between distance, size, and angular size. Galaxies themselves are not good standard rulers for very deep distances, but the logic is exactly that.
 
-\fill (0,3) circle (0.05);
-\node at (0.05,3.28) {North pole};
+\begin{classroomqa}
+\lecturetimestamp{00:45:54}
+\audiencequestion{Do you also have to know the distance, not just the angular size?}
+\lecturerresponse{Yes. The angle by itself is not enough. You need the angle and the distance.}
+\end{classroomqa}
 
-\fill (0,0) circle (0.05);
-\node at (0.35,-0.28) {South pole};
+\begin{classroomqa}
+\lecturetimestamp{00:46:18}
+\audiencequestion{Do circles on the surface of the sphere project as circles?}
+\lecturerresponse{Yes. Circles project to circles. That is one of the special features of stereographic projection.}
+\end{classroomqa}
 
-\fill (1.38,0.92) circle (0.05);
-\node at (1.62,1.10) {$P$};
+\begin{classroomqa}
+\lecturetimestamp{00:47:02}
+\audiencequestion{Would a continent keep the same shape under the projection?}
+\lecturerresponse{There are two different statements. One is that circles project to circles. The other is the weaker statement that sufficiently small shapes preserve their local shape because angles are preserved. The mapping is conformal: it preserves angles, though not relative sizes.}
+\end{classroomqa}
 
-\fill (2.0,0.0) circle (0.05);
-\node at (2.2,-0.28) {$P'$};
+\section{Uniform Negative Curvature}
 
-\draw (0,3) -- (2,0);
-\draw[dashed] (0,1.5) -- (1.38,0.92);
+The uniformly negatively curved case is introduced through its metric.
 
-\node at (-1.8,2.55) {sphere};
-\end{tikzpicture}
-}%
-\caption{Stereographic projection from the north pole onto the plane tangent at the south pole. The north pole itself is sent to the point at infinity.}
-\end{figure}
-
-This mapping is already telling us something. Near the south pole, where we have placed ourselves, the projection is gentle. But points near the north pole are sent very far away. In fact the north pole itself becomes the point at infinity. Thus the projection of a finite sphere occupies an infinite plane.
-
-Now come the observational consequences. If equal ``continents'' are placed farther and farther away on the sphere, their stereographic images become larger and larger. Translating that into astronomy: in a positively curved space, a standard ruler at fixed distance subtends a larger angle than it would in flat space. Distant objects look too big. This is not merely a cartographic curiosity; it is the operational signature of positive curvature.
-
-One can say the same thing in the language of triangles. On a positively curved surface, the sum of the angles of a triangle is greater than \(180^\circ\). The sky remembers that. A curved geometry changes the relation between physical size, distance, and angular size.
-
-The lecture also stresses a practical point. Angle alone is not enough. One needs both angular size and distance, together with some reason to believe the object's actual size is known well enough for it to act as a standard ruler. In that sense the astronomer becomes a surveyor, measuring large triangles in the sky.
-
-\subsection{Question \& Answer}
-
-\paragraph{Question.} Why do circles stay circles, and what exactly does conformal mean here?
-
-\paragraph{Answer.} Stereographic projection has two different virtues. First, circles on the sphere project to circles in the plane, with straight lines understood as circles of infinite radius. That is a special property of this projection. Second, it is conformal: it preserves angles. Conformal does \emph{not} mean that sizes are preserved. It means that sufficiently small shapes keep their local shape because the angles between directions are unchanged. Thus a small continent keeps the right shape while acquiring the wrong scale. The Mercator projection has the second property as well; stereographic projection has both.
-
-A related warning belongs here. Because the projection stretches distances differently in different regions, signal propagation drawn on the map may appear to speed up or slow down across the page. That is a property of the projection, not a physical change in the speed of light.
-
-\section{Negative Curvature, the Hyperbolic Metric, and the Disk Picture}
-
-Having said, in effect, ``that is about everything we need to know about spheres,'' the lecture pivots to a new homogeneous geometry. It is not literally the opposite of a sphere, but it is the standard example of uniform negative curvature.
-
-Susskind's route is important. He does not begin with the picture. He begins with the metric, by analogy with the sphere:
+The negatively curved analog of the sphere is hyperbolic space. In the same recursive spirit as before, its metric is obtained by replacing \(\sin\alpha\) with \(\sinh\alpha\):
 \begin{equation}
 d\mathcal H_n^2=d\alpha^2+\sinh^2\alpha\,d\Omega_{n-1}^2.
 \end{equation}
-Notice carefully what changes and what does not. The angular factor \(d\Omega_{n-1}^2\) is still the metric of the ordinary unit sphere of one lower dimension. What changes is the growth law of its radius. We replace \(\sin\alpha\) by \(\sinh\alpha\).
+The lower-dimensional angular piece remains the unit sphere metric \(d\Omega_{n-1}^2\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:51}
+\audiencequestion{In the metric, is that lower-dimensional differential still the spherical one?}
+\lecturerresponse{Yes. That lower-dimensional piece is the ordinary unit-sphere metric. The change is in the \(\sinh^2\alpha\) factor in front of it.}
+\end{classroomqa}
 
 The hyperbolic sine is
 \begin{equation}
 \sinh\alpha=\frac{e^\alpha-e^{-\alpha}}{2}.
 \end{equation}
-The student correction in the lecture matters: the minus sign is the correct one. Also, \(\alpha\) is no longer an angle running from one pole to another. In the hyperbolic case it runs from
+The minus sign matters; in the lecture it is corrected immediately by a student.
+
+There is also one crucial difference in the range of the coordinate. For the sphere, the new coordinate runs from one end to the other and stops at \(\pi\). Here,
 \begin{equation}
-0\leq \alpha < \infty.
+0\leq \alpha<\infty.
 \end{equation}
+The ordinary sine rises and then comes back to zero. The hyperbolic sine begins the same way near \(\alpha=0\), but then it grows exponentially.
 
-This single change is the whole story geometrically. For the sphere, \(\sin\alpha\) starts at zero, rises, and returns to zero. For negative curvature, \(\sinh\alpha\) starts at zero and then keeps growing. So the spheres around us do not first grow and then shrink. They grow without bound, and indeed exponentially for large \(\alpha\).
+That means the lower-dimensional spheres around us grow bigger and bigger as we move outward. In this geometry the sky at increasing radius does not first grow and then shrink. It keeps growing.
 
-In three spatial dimensions we therefore write
+In three spatial dimensions the corresponding FRW form is
 \begin{equation}
-d\mathcal H_3^2=d\alpha^2+\sinh^2\alpha\,d\Omega_2^2.
+d\tau^2=dt^2-a(t)^2\,d\mathcal H_3^2,
 \end{equation}
-Only after this algebraic setup is in place does the lecture turn to the picture.
-
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[scale=1.0]
-\draw (0,0) circle (2.4);
-\fill (0,0) circle (0.05);
-
-\draw (0.00,0.00) circle (0.34);
-\draw (0.72,0.00) circle (0.24);
-\draw (1.18,0.00) circle (0.16);
-\draw (1.52,0.00) circle (0.11);
-\draw (1.76,0.00) circle (0.075);
-\draw (1.92,0.00) circle (0.05);
-
-\draw (0.36,0.62) circle (0.20);
-\draw (0.86,1.08) circle (0.13);
-\draw (1.24,1.42) circle (0.09);
-\draw (1.55,1.66) circle (0.06);
-
-\draw (0.36,-0.62) circle (0.20);
-\draw (0.86,-1.08) circle (0.13);
-\draw (1.24,-1.42) circle (0.09);
-\draw (1.55,-1.66) circle (0.06);
-
-\draw[dashed] (0,0) -- (2.4,0);
-\node at (0,-2.75) {Poincar\'e disk: equal objects shrink toward the boundary};
-\end{tikzpicture}
-}%
-\caption{A schematic disk picture for negative curvature. The boundary looks finite in the drawing, but its intrinsic distance is infinite.}
-\end{figure}
-
-The lecture likes to compare this with the stereographic projection of the sphere. There the page looked infinite, but the actual spherical distance was finite. Here the page looks finite, but the actual hyperbolic distance is infinite. Equal objects appear smaller and smaller as they approach the boundary. The drawing is deceptive in exactly the opposite way.
-
-This is why distant objects in a negatively curved universe look too small relative to flat space. A standard ruler at fixed distance subtends too small an angle. Again the geometry has become an observational statement.
-
-Only after the disk picture has been understood does the lecture write the cosmological spacetime metric:
-\begin{equation}
-d\tau^2=dt^2-a(t)^2\,d\mathcal H_3^2.
-\end{equation}
-This is the negatively curved FRW universe, often described in the lecture as the infinite FRW case. Its sign label is
+and the sign label is
 \begin{equation}
 k=-1.
 \end{equation}
 
-Two more geometric remarks from the lecture should be preserved. First, this negatively curved space is still homogeneous. The drawing looks wildly inhomogeneous because the tiles near the edge are tiny, but any observer moved to another location sees the same intrinsic geometry. Second, one can draw small patches of negative curvature as saddle-shaped surfaces, but only locally. There is no global embedding of the entire hyperbolic space as a nice ordinary surface in Euclidean three-space.
+\section{The Disk Picture and What It Means}
 
-\subsection{Question \& Answer}
+Negative curvature becomes intuitive in the disk picture made famous by Escher, especially \emph{Limit Circle Number Four}. The analogy with stereographic projection is useful, but the behavior is opposite.
 
-\paragraph{Question.} Why does a finite-looking disk represent an infinite homogeneous space?
+For the sphere, the projection looks infinite while the real geometry is finite. For the negatively curved case, the disk picture looks finite while the real geometry is infinite. Equal ``continents'' or ``galaxies'' appear smaller and smaller as one moves toward the boundary, but geometrically they are all the same size. If distance is measured by counting how many equal pieces one crosses, then the boundary is infinitely far away.
 
-\paragraph{Answer.} Because the Euclidean size in the drawing is not the intrinsic size in the metric. The little tiles or continents near the edge are geometrically the same size as those near the center; only their \emph{pictures} are smaller. If one measures distance by counting equal geometric tiles, one crosses infinitely many before reaching the boundary. The boundary therefore lies at infinite distance even though it looks finite on the page. Homogeneity survives because every tile is intrinsically like every other one, and the isometries of the space move one location into another without changing the geometry.
+Thus a known object in negative curvature looks too small relative to flat space. It subtends too small an angle.
 
-\section{The Flat Limit and the Three FRW Cases}
+The geometry is still homogeneous. Although the picture makes the outer pieces look tiny, any observer moved to another location would see the same intrinsic geometry.
 
-Only once the positively and negatively curved cases are on the table does the lecture turn to the intermediate case. Flat space is the boundary between them. One may think of it as a limit if one likes, but Susskind eventually says not to fuss over that. It is simply flat Euclidean space.
+\begin{classroomqa}
+\lecturetimestamp{01:06:42}
+\audiencequestion{Would an observer in any one of those circles see a similar pattern?}
+\lecturerresponse{Yes, exactly the same thing. The space is homogeneous.}
+\end{classroomqa}
 
-The corresponding FRW metric is
+\begin{classroomqa}
+\lecturetimestamp{01:07:03}
+\audiencequestion{In the spherical case distant things seem too big, while here they seem too small?}
+\lecturerresponse{Yes. In positive curvature a known object subtends too large an angle relative to flat space. In negative curvature it subtends too small an angle.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:08:09}
+\audiencequestion{Is the relevance of the stereographic-style projection that an astronomer can reconstruct it from observations?}
+\lecturerresponse{Yes. The astronomer is effectively a surveyor who surveys triangles in the sky. For the immediate geometric point one can set aside the time dependence and focus on angles and distances.}
+\end{classroomqa}
+
+There is also a useful local picture. A small patch of negative curvature can be drawn as a saddle surface in ordinary three-dimensional space. But only small patches can be drawn that way; the whole hyperbolic plane cannot be embedded globally as a nice ordinary surface in three-dimensional Euclidean space.
+
+\section{The Flat Case}
+
+Between the positively curved and negatively curved cases sits flat space. One may think of it as a limit, but it is enough simply to think of ordinary flat Euclidean space.
+
+Its FRW form is
 \begin{equation}
-d\tau^2=dt^2-a(t)^2\left(dx^2+dy^2+dz^2\right).
+d\tau^2=dt^2-a(t)^2\left(dx^2+dy^2+dz^2\right),
 \end{equation}
-Its label is
+with
 \begin{equation}
 k=0.
 \end{equation}
 
-At this point the three classical homogeneous cosmologies can be stated cleanly:
+These are the three homogeneous FRW geometries:
 \begin{align}
-k=+1 &: \text{space is spherical and positively curved}, \\
-k=0 &: \text{space is flat}, \\
-k=-1 &: \text{space is hyperbolic and negatively curved}.
+k=+1 &: \text{positive spatial curvature},\\
+k=0 &: \text{flat space},\\
+k=-1 &: \text{negative spatial curvature}.
 \end{align}
 
-This is a regrouping moment in the lecture, not yet the final payoff. We have built the three geometries, understood how they distort angular sizes, and attached the sign labels \(k=+1,0,-1\). Only now are we ready to return to the earlier cosmological equations and ask what Einstein has to do with them.
+\begin{classroomqa}
+\lecturetimestamp{01:15:07}
+\audiencequestion{If one projects the geometry onto a plane and follows a signal, would the projected speed of light vary from place to place?}
+\lecturerresponse{Yes, on the projection it would. On the spherical projection it would appear to go faster and faster farther out; on the negative-curvature disk it would appear to go slower and slower near the edge. That variation belongs to the picture, not to the underlying physics.}
+\end{classroomqa}
 
-\section{Newtonian Cosmology Recalled, Einstein Cosmology Interpreted}
+\begin{classroomqa}
+\lecturetimestamp{01:17:05}
+\audiencequestion{Has one actually used looking at far-away objects in this way to determine flatness?}
+\lecturerresponse{Yes, but it is really the angular information that is used. One does not determine flatness by trying to measure how fast light appears to move on the projection.}
+\end{classroomqa}
 
-After the break Susskind does not jump straight to general relativity. He backs up. That is important to the rhythm of the argument: the old Newtonian constant must be put back on the table before its geometric meaning can be explained.
+\section{Back to the Cosmological Equations}
 
-The board at the transition still carries a fragment of the flat FRW metric:
+After the break comes the connection between the cosmological equations already studied and Einstein's equations. At this point the board still carries the flat spatial metric fragment.
 
+\lecturetimestamp{01:18:18}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.72\textwidth]{lecture_05_figure_02.png}
-\caption{Flat-space metric fragment on the board, carried into the transition back from the break.}
+\caption{Flat FRW metric fragment.}
 \end{figure}
 
-The screenshot only certifies the visible spatial piece \(dx^2+dy^2+dz^2\), but that is enough to witness the board continuity: the lecture is now moving from the three FRW metrics toward general relativity.
+A very brief Newtonian review comes first. Put us at the center. Look at a galaxy moving away according to the Hubble law. By Newton's theorem for a spherically symmetric distribution, only the mass inside the sphere whose radius matches the galaxy's distance contributes to the force on it. Then there are three possibilities: the galaxy moves above the escape velocity, below the escape velocity, or exactly at the escape velocity.
 
-The Newtonian recap is brief and disciplined. Put ourselves at the center. Consider a galaxy at distance \(r(t)\) moving away according to the Hubble flow. By Newton's shell theorem, only the mass inside the sphere of radius \(r\) contributes to the force on that galaxy. Writing the Newtonian energy equation per unit mass,
-\begin{align}
-\frac{1}{2}\dot r^{\,2}-\frac{GM(r)}{r} &= E, \\
-M(r) &= \frac{4\pi}{3}r^3\rho.
-\end{align}
-For a comoving galaxy we may write
-\begin{equation}
-r(t)=a(t)\chi,
-\end{equation}
-with \(\chi\) fixed. Then \(\dot r=\dot a\,\chi\), and after dividing through by \(a^2\chi^2\) one arrives at the Newtonian cosmology equation in the form
-\begin{equation}
-\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2},
-\end{equation}
-where the last term packages the previously omitted constant total-energy contribution. The knife-edge case studied earlier corresponds to setting that constant to zero, that is, exactly the escape-velocity case.
+What is recalled next is that for ordinary nonrelativistic matter the density goes like the mass divided by \(a^3\), for radiation it goes like \(1/a^4\), and for vacuum energy it does not change as the sphere changes.
 
-The lecture also reinstates the density scalings that accompany the matter content:
-\begin{align}
-\rho_m &\propto a^{-3}, &
-\rho_r &\propto a^{-4}, &
-\rho_{\mathrm{vac}} &= \text{const.}
-\end{align}
-and, as before, pressure is written as
-\begin{equation}
-p=w\rho,
-\end{equation}
-with the familiar cases
-\begin{equation}
-w=0,\qquad w=\frac{1}{3},\qquad w=-1
-\end{equation}
-for matter, radiation, and vacuum energy.
+In the earlier Newtonian treatment, the cosmological equation had a density term and, if one did not sit exactly at the escape-velocity case, an additional constant term proportional to \(1/a^2\). The earlier discussion mostly set that term to zero. Empirically it is small, but conceptually there is no reason to leave it out.
 
-Only now does the lecture turn to Einstein's field equations. The board writes a compressed version, and the top-to-bottom staging is itself part of the rhetoric: first the general field equation, then the \(00\) component that cosmology actually needs.
+\section{Einstein's Equations and the \(00\) Component}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.62\textwidth]{lecture_05_figure_05.png}
-\caption{Einstein equation on the top line and its \(00\) component below it.}
-\end{figure}
-
-The board image does not show the factor \(\tfrac12\) multiplying \(g^{\mu\nu}R\) clearly, but the lecture later acknowledges that a half belongs there. We therefore write the cleaned form while preserving the lecture's normalization:
+The next step is Einstein's field equations. On the left-hand side stands the geometry, built from the spacetime curvature. On the right-hand side stands the energy-momentum tensor, the source of the gravitational field. In the lecture's normalization one writes
 \begin{equation}
 R^{\mu\nu}-\frac{1}{2}g^{\mu\nu}R=4\pi G\,T^{\mu\nu}.
 \end{equation}
-The \(00\)-component becomes
+\editorialnote{In the visible board line the factor \(\tfrac12\) is not legible, but around 01:33:36 the spoken correction restores it. The equation here keeps that correction while preserving the lecture's \(4\pi G\) normalization.}
+
+Not all ten independent components are needed here. By this stage so much has already been assumed --- homogeneity, the FRW form, and a single time-dependent scale factor --- that there is only one arbitrary function left, namely \(a(t)\). The natural component to choose is the time-time component, because \(T^{00}\) is the energy density \(\rho\).
+
+\lecturetimestamp{01:30:54}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_05_figure_05.png}
+\caption{Einstein field equation and its \(00\) component.}
+\end{figure}
+
+So the focus is
 \begin{equation}
 R^{00}-\frac{1}{2}g^{00}R=4\pi G\,\rho.
 \end{equation}
 
-The left-hand side is geometry, now spacetime geometry rather than merely spatial geometry. The right-hand side is matter, more precisely the energy-momentum tensor. The lecture also reminds us that the other components of \(T^{\mu\nu}\) need not vanish. In particular, the space-space components encode pressure. That is why the equation of state \(p=w\rho\) remains in the story even though the \(00\) equation is the one singled out to determine \(a(t)\).
+The right-hand side is the energy density. The left-hand side is geometry.
 
-\subsection{Question \& Answer}
+\begin{classroomqa}
+\lecturetimestamp{01:39:09}
+\audiencequestion{What about the other components of the energy-momentum tensor?}
+\lecturerresponse{They do not vanish in general. The space-space components can represent pressure. In the matter-dominated case the pressure is zero, in the radiation-dominated case it is one-third of the energy density, and for vacuum energy one writes \(P=w\rho\) with \(w=-1\).}
+\end{classroomqa}
 
-\paragraph{Question.} Why is one Einstein equation enough once FRW symmetry leaves only \(a(t)\) as the unknown?
+\begin{classroomqa}
+\lecturetimestamp{01:40:24}
+\audiencequestion{So if one had only matter, would the other components of \(T^{\mu\nu}\) vanish?}
+\lecturerresponse{For pressureless matter, yes, the pressure components vanish.}
+\end{classroomqa}
 
-\paragraph{Answer.} Because by the time we reach Einstein's equations we have already assumed an enormous amount. We have assumed homogeneity. We have assumed isotropy. We have assumed that the spatial slices are of one of the three FRW types. After all of that, the metric contains only one dynamical function, the scale factor \(a(t)\). Many tensor equations remain formally present, but there is only one independent unknown function to solve for. The \(00\) component is the natural choice because \(T^{00}\) is the energy density \(\rho\), so this component most directly ties geometry to the cosmological matter content.
+\section{What the Einstein Calculation Produces}
 
-The lecture does not carry out the curvature calculation in detail on the board. Instead it tells us what kind of terms must appear when the FRW metric is substituted into the Einstein tensor.
+The full curvature calculation is not carried out on the board. What matters is what appears when an FRW metric is substituted into the Einstein tensor.
 
-First, there is a contribution that comes from the fact that the geometry is time dependent. It would be there even if space were flat. This term is proportional to
+One kind of term comes just from the fact that the scale factor depends on time. Even if space were flat, a time-dependent scale factor would still give spacetime curvature. That contribution is proportional to
 \begin{equation}
 \left(\frac{\dot a}{a}\right)^2.
 \end{equation}
-It represents spacetime curvature produced purely by the changing scale factor.
 
-Second, there is a contribution that would remain even if the scale factor were frozen. This is the contribution of spatial curvature itself. For a homogeneous space of fixed shape, curvature scales like the inverse radius squared:
+The second kind of term comes from the spatial curvature itself. Even if the scale factor were frozen in time, curved space would still contribute to the spacetime curvature. For a simple uniformly curved geometry, curvature goes like one over the radius of curvature squared, so it contributes a term proportional to
 \begin{equation}
-\text{curvature} \propto \frac{1}{a^2}.
+\frac{k}{a^2},
 \end{equation}
-With the sign convention already prepared by the geometry, that contribution is
-\begin{equation}
-\frac{k}{a^2}.
-\end{equation}
-Positive curvature contributes with a plus sign, negative curvature with a minus sign, and flat space with zero.
+with a positive sign for the sphere, a negative sign for the hyperbolic case, and zero for flat space.
 
-The lecture's coefficient bookkeeping here is informal and partly self-correcting; Susskind checks the answer against the earlier Newtonian result rather than presenting a polished tensor derivation. The cleaned endpoint is
+\begin{classroomqa}
+\lecturetimestamp{01:36:53}
+\audiencequestion{Should there also be a factor such as a radius of curvature?}
+\lecturerresponse{That is already the \(1/a^2\) factor. For these simple uniformly curved geometries, curvature is just the inverse radius of curvature squared.}
+\end{classroomqa}
+
+The coefficient bookkeeping is done on the fly and is partly checked against the earlier Newtonian answer. The endpoint is\footnote{This displayed Friedmann form consolidates the spoken, self-corrected coefficient discussion and the comparison with the earlier Newtonian result around 01:32:35--01:36:53.}
 \begin{equation}
 \left(\frac{\dot a}{a}\right)^2+\frac{k}{a^2}=\frac{8\pi G}{3}\rho,
 \end{equation}
@@ -428,14 +323,26 @@ or equivalently
 \left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}.
 \end{equation}
 
-This is the real destination of the lecture. The same symbol \(k\) is now seen in two lights. From the Newtonian point of view, it classifies the motion: above escape velocity, at escape velocity, or below escape velocity. From the Einstein point of view, it classifies the shape of space itself: hyperbolic, flat, or spherical.
+This is the form that links the three FRW geometries to the earlier cosmological dynamics.
 
-There is one final normalization subtlety that the lecture brings out in discussion. In the spherical and hyperbolic cases there is a natural curvature radius, so one may choose \(a(t)\) so that \(k=\pm 1\). In the flat case there is no distinguished spatial radius, so \(a(t)\) may be rescaled without changing the statement \(k=0\). Thus the three values \(k=+1,0,-1\) are best thought of as a sign classification once the natural curvature scale has been absorbed into \(a(t)\).
+\begin{classroomqa}
+\lecturetimestamp{01:37:52}
+\audiencequestion{Could \(k\) take any value if one redefined \(a\)?}
+\lecturerresponse{In the flat case there is no unique natural scale for \(a\), so one can rescale it, but \(k\) remains zero. In the spherical and negatively curved cases there is a natural curvature scale. If one takes \(a(t)\) to be that natural radius of curvature, then \(k\) is just \(+1\) or \(-1\).}
+\end{classroomqa}
 
-This is why general relativity does not simply replace the earlier Newtonian cosmology. It explains it. The old integration constant was already measuring something real; Einstein tells us that what it was measuring was the curvature of space.
+\begin{classroomqa}
+\lecturetimestamp{01:41:00}
+\audiencequestion{Is \(k\) equal to \(+1\), \(-1\), or \(0\) in that final equation?}
+\lecturerresponse{Yes. It is \(+1\) for the sphere, \(-1\) for the hyperbolic case, and \(0\) for flat space.}
+\end{classroomqa}
 
-\section{Summary}
+Newton's treatment did not lead us astray; it gave the same basic equation. What general relativity adds is the interpretation. From the Newtonian point of view, the extra constant distinguishes above escape velocity, below escape velocity, and the knife-edge case. From the Einstein point of view, the same sign tells us the geometry of space itself.
 
-The lecture unfolds in a very deliberate order. We begin with spheres, not because cosmology has become geometry for its own sake, but because homogeneous cosmology needs a precise language for homogeneous spaces. The recursive construction of \(S^1\), \(S^2\), and \(S^3\) then becomes the spatial part of the FRW metrics once the fixed radius is promoted to \(a(t)\).
+\begin{classroomqa}
+\lecturetimestamp{01:42:46}
+\audiencequestion{How did this work before one included a cosmological constant?}
+\lecturerresponse{Before the cosmological constant, there was a tight relationship between escape-velocity behavior and spatial geometry. If \(k=+1\), space is positively curved and the motion is below escape velocity, so the universe can expand and then recontract. If \(k=-1\), space is negatively curved and the motion is above escape velocity, so the universe keeps expanding. If \(k=0\), one has the marginal knife-edge case.}
+\end{classroomqa}
 
-The long visual detour is equally essential. Positive curvature makes standard rulers look too large, negative curvature makes them look too small, and stereographic or disk pictures teach us how to think from the observer's point of view. Only after that does the Einstein bridge become intelligible. The final Friedmann equation contains exactly the two geometric ingredients the lecture has prepared us for: the time-variation term \((\dot a/a)^2\) and the spatial-curvature term \(k/a^2\). The sign \(k\) is therefore both a dynamical classifier and a statement about the shape of space.
+The same sign \(k\) can therefore be read in two ways: as a dynamical classification of the motion and as the sign of the curvature of space.

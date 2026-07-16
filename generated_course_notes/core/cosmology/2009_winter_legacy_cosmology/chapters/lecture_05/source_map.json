@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
+  "chapter": "lecture_05",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].mkv",
+  "entries": [
+    {
+      "locator": "opening paragraphs",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:10",
+        "00:02:09"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "Matches the lecture's opening plan: spheres, negative curvature, then the relation to Einstein's equations."
+    },
+    {
+      "locator": "section Spheres and Uniform Geometry",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:02:17",
+        "00:08:27"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The embedding definitions of the 1-, 2-, and 3-sphere and the crutch language are directly grounded in the spoken lecture."
+    },
+    {
+      "locator": "equations for dOmega_1^2, dOmega_2^2, and dOmega_3^2",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:09:42",
+        "00:20:11"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "These intrinsic metrics follow the lecture's explicit recursive construction of spheres from lower-dimensional spheres."
+    },
+    {
+      "locator": "note that alpha runs from 0 to pi on the 3-sphere",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:17:24",
+        "00:18:40"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript briefly sounds like zero to two pi, but the surrounding construction and the sin^2 alpha geometry require the rise-and-return range."
+    },
+    {
+      "locator": "section A Spherical FRW Universe",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:26:19",
+        "00:34:16"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The FRW metric with spatial 3-sphere and time-dependent radius is explicitly introduced in this interval."
+    },
+    {
+      "locator": "section Looking Out from a Sphere",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:36:24",
+        "00:48:30"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The stereographic projection, point at infinity, and too-large angular size in positive curvature all come directly from the lecture."
+    },
+    {
+      "locator": "section Uniform Negative Curvature",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:50:42",
+        "00:58:55"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The hyperbolic metric, the sinh replacement, and the 0<=alpha<infinity range are all stated in the lecture."
+    },
+    {
+      "locator": "section The Disk Picture and What It Means",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:59:09",
+        "01:10:44"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The Escher disk picture, shrinking equal objects, infinite boundary distance, and homogeneity are directly lecture-based."
+    },
+    {
+      "locator": "projected-light-speed discussion and flatness follow-up",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:15:07",
+        "01:17:49"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The chapter preserves both the projection-speed distortion exchange and the follow-up that curvature is inferred from angles rather than by directly measuring a projected light speed."
+    },
+    {
+      "locator": "figure lecture_05_figure_02.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "01:18:18"
+      ],
+      "reference": "lecture_05_figure_02.png",
+      "confidence": "high",
+      "note": "Correctly timed screenshot of the flat spatial metric fragment still visible on the board after the break."
+    },
+    {
+      "locator": "section Back to the Cosmological Equations",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:18:31",
+        "01:24:39"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The Newtonian recap is spoken only as a reminder, and the chapter stays at that level."
+    },
+    {
+      "locator": "field equation R^{mu nu} - 1/2 g^{mu nu} R = 4 pi G T^{mu nu}",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:26:06",
+        "01:33:38"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "medium",
+      "note": "The board frame obscures the 1/2, but the later spoken self-correction justifies restoring it while keeping the lecture's 4 pi G normalization."
+    },
+    {
+      "locator": "figure lecture_05_figure_05.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "01:30:54"
+      ],
+      "reference": "lecture_05_figure_05.png",
+      "confidence": "high",
+      "note": "The frame preserves the general Einstein equation on the top line and the visible 00 specialization below it."
+    },
+    {
+      "locator": "radius-of-curvature clarification",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:36:53"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript explicitly identifies the missing radius factor with the existing 1/a^2 curvature term."
+    },
+    {
+      "locator": "final Friedmann-form equations",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:31:13",
+        "01:36:53"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "medium",
+      "note": "Traceable to the spoken comparison between the Einstein-tensor terms and the earlier Newtonian result, with the displayed form explicitly marked as a consolidation."
+    },
+    {
+      "locator": "final paragraph on the meaning of k",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:41:20",
+        "01:43:53"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "This matches the lecture's concluding point that the Newtonian escape-velocity constant is interpreted in general relativity as the sign of spatial curvature."
+    },
+    {
+      "locator": "Do you also have to know the distance, not just the angular size?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:45:54"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript explicitly records the point that angle alone is insufficient and the answer that distance is also needed."
+    },
+    {
+      "locator": "Do circles on the surface of the sphere project as circles?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:46:18"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "This exchange appears directly in the transcript, and the chapter preserves both the question and the answer faithfully."
+    },
+    {
+      "locator": "Would a continent keep the same shape under the projection?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:47:02"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript distinguishes the circles-to-circles claim from the weaker conformal claim for small shapes, and the chapter keeps that distinction."
+    },
+    {
+      "locator": "In the metric, is that lower-dimensional differential still the spherical one?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:55:51"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript confirms the clarification that the lower-dimensional factor remains the ordinary unit-sphere metric."
+    },
+    {
+      "locator": "Would an observer in any one of those circles see a similar pattern?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:06:42"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript gives this exchange directly, and the chapter keeps the claim of homogeneity."
+    },
+    {
+      "locator": "In the spherical case distant things seem too big, while here they seem too small?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:07:03"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The chapter matches the transcript's positive-curvature versus negative-curvature angular-size contrast."
+    },
+    {
+      "locator": "Is the relevance of the stereographic-style projection that an astronomer can reconstruct it from observations?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:08:09"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The response remains transcript-faithful, including the surveyor analogy and the temporary setting aside of time dependence."
+    },
+    {
+      "locator": "Has one actually used looking at far-away objects in this way to determine flatness?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:17:05"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript records this follow-up and distinguishes the standard angular test of curvature from any direct attempt to read off a projected light speed."
+    },
+    {
+      "locator": "Could k take any value if one redefined a?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:37:52"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The chapter preserves the transcript's distinction between the flat case, where a may be rescaled, and the curved cases, where there is a natural curvature scale."
+    },
+    {
+      "locator": "What about the other components of the energy-momentum tensor?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:39:09"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript uses this question to connect the spatial components of T with pressure and to recall the cases w=0, 1/3, and -1."
+    },
+    {
+      "locator": "So if one had only matter, would the other components of T vanish?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:40:24"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The chapter's answer matches the transcript's affirmative reply for pressureless matter."
+    },
+    {
+      "locator": "Is k equal to +1, -1, or 0 in that final equation?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:41:00"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The transcript explicitly confirms those three normalized values, and the chapter keeps that answer correctly."
+    },
+    {
+      "locator": "How did this work before one included a cosmological constant?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:42:46"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].md",
+      "confidence": "high",
+      "note": "The chapter preserves the pre-cosmological-constant framing and the link between the sign of k and above/below escape velocity."
+    }
+  ]
+}

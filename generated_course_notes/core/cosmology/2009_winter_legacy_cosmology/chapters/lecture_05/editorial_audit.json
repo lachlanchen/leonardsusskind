@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_05",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "leakage",
+      "locator": "opening paragraph: \"prepared for the course notes with curation support from LazyingArt LLC and Video2Book\"",
+      "evidence": "This is prohibited workflow and company-credit language inside chapter prose. It introduces production context that is not part of the lecture and does not belong in the body of the chapter.",
+      "action": "Delete the clause from the chapter body. Keep editorial-method or credit material only in front matter, not in lecture exposition."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "the three \"Question & Answer\" subsections",
+      "evidence": "They are not transcript-faithful classroom exchanges. The stereographic-projection subsection merges separate audience questions from 00:46:18-00:48:26 into one synthetic prompt; the hyperbolic-space subsection turns exposition plus a brief question at 01:06:42 into an invented exchange; the Einstein-equation subsection is synthesized from ordinary exposition around 01:29:31-01:30:04. None is rendered as classroomqa with timestamps.",
+      "action": "Replace them with verified classroomqa blocks using actual transcript-backed questions and responses plus \\lecturetimestamp{...}, or fold the material back into prose where no real exchange exists."
+    },
+    {
+      "severity": "high",
+      "category": "fidelity",
+      "locator": "section \"Newtonian Cosmology Recalled, Einstein Cosmology Interpreted\" beginning with the explicit Newtonian equations",
+      "evidence": "Lecture 5 gives only a spoken recap of the Newtonian setup. The chapter adds a full textbook derivation with equations such as 1/2 \\dot r^2-GM(r)/r=E, M(r)=4\\pi r^3\\rho/3, r=a\\chi, and the division by a^2\\chi^2. Those details are not developed in this lecture.",
+      "action": "Compress this back to the lecture-level reminder, or mark any retained derivational equations as recalled editorially from earlier lectures with an explicit source note instead of presenting them as lecture_05 content."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "section \"Summary\"",
+      "evidence": "The lecture does not end with a formal summary section. The chapter imposes one and recasts the close in retrospective prose rather than following the lecture's actual stopping point.",
+      "action": "Remove the summary section and end on the lecture's final point: general relativity reinterprets the Newtonian escape-velocity constant as the geometry sign k."
+    },
+    {
+      "severity": "medium",
+      "category": "voice",
+      "locator": "opening paragraph: \"Leonard Susskind very deliberately refuses to go there at once\"",
+      "evidence": "This ascribes intention to the lecturer and adds a polished narrative frame that the source does not require.",
+      "action": "Rewrite neutrally, for example by stating that the lecture reaches Einstein's equations only after setting up the homogeneous geometries."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "3-sphere coordinate range and the cleaned Einstein equation",
+      "evidence": "The chapter silently regularizes two places where the live lecture is messy: the spoken range of alpha near 00:17:24 conflicts with the surrounding geometry, and the board frame for the Einstein equation omits or obscures the 1/2 factor even though the lecture later corrects it. Both repairs are plausible but currently undocumented.",
+      "action": "Add concise source footnotes or editorial notes identifying these as transcript-guided or audio-guided corrections."
+    },
+    {
+      "severity": "low",
+      "category": "figure",
+      "locator": "caption of lecture_05_figure_02: \"Flat-space metric fragment on the board, carried into the transition back from the break.\"",
+      "evidence": "The caption includes staging history rather than describing the physics shown.",
+      "action": "Use a physics-only caption such as \"Flat FRW metric fragment on the board.\""
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:10",
+      "end": "00:02:10",
+      "subject": "Opening plan: simple mathematics of spheres, negative curvature, and eventual connection to Einstein equations",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:02:11",
+      "end": "00:09:02",
+      "subject": "Embedded definitions of the 1-, 2-, and 3-sphere; embedding treated as a crutch",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:09:02",
+      "end": "00:22:22",
+      "subject": "Intrinsic metrics d\\Omega_1^2, d\\Omega_2^2, d\\Omega_3^2, recursive construction, and homogeneity versus ellipsoids",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:24:01",
+      "end": "00:25:32",
+      "subject": "Zero-sphere aside and extrapolation x^2=1",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:26:19",
+      "end": "00:34:16",
+      "subject": "Spherical FRW spacetime, time-dependent radius a(t), observer at a pole, and k=+1",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:34:16",
+      "end": "00:48:30",
+      "subject": "Stereographic projection, oversized angular appearance in positive curvature, circles, small-shape conformality, and the need for distance information",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "00:48:30",
+      "end": "01:13:15",
+      "subject": "Hyperbolic metric with sinh, Escher/disk picture, homogeneity of negative curvature, local saddle picture, flat case, and k=0",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:15:07",
+      "end": "01:17:50",
+      "subject": "Apparent variation of light speed on the projections as a property of the map, not of the physics",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:18:28",
+      "end": "01:24:41",
+      "subject": "Post-break Newtonian review, omitted k/a^2 term, and matter/radiation/vacuum density scalings",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "01:25:06",
+      "end": "01:30:55",
+      "subject": "Einstein equations, one dynamical unknown in FRW, and choice of the 00 component",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:31:13",
+      "end": "01:36:53",
+      "subject": "Time-dependent curvature contribution plus spatial-curvature contribution leading to the Friedmann equation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:37:06",
+      "end": "01:41:22",
+      "subject": "Normalization of k, rescaling of a, and reminder that other stress-energy components encode pressure",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:41:22",
+      "end": "01:44:00",
+      "subject": "Newtonian escape-velocity interpretation of k linked to the geometry of space; preview of cosmological-constant significance",
+      "chapter_status": "compressed"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:45:54",
+      "end": "00:46:06",
+      "question": "Do you also have to know the distance, not just the angular size?",
+      "answer_summary": "Yes. The angle alone is not enough; one also needs the distance.",
+      "verified": true
+    },
+    {
+      "start": "00:46:18",
+      "end": "00:46:57",
+      "question": "Do circles on the surface of the sphere project as circles?",
+      "answer_summary": "Yes. Under stereographic projection, circles project to circles.",
+      "verified": true
+    },
+    {
+      "start": "00:47:02",
+      "end": "00:48:26",
+      "question": "Would a continent keep the same shape under the projection?",
+      "answer_summary": "There are two claims: circles project to circles, and more generally small shapes preserve angles. The mapping is conformal, so small shapes keep their local shape while their size is distorted.",
+      "verified": true
+    },
+    {
+      "start": "01:06:42",
+      "end": "01:07:00",
+      "question": "Would an observer in any one of those circles see a similar pattern?",
+      "answer_summary": "Yes, exactly the same thing. The hyperbolic geometry is homogeneous.",
+      "verified": true
+    },
+    {
+      "start": "01:07:03",
+      "end": "01:08:08",
+      "question": "In the spherical case distant things seem too big, while here they seem too small?",
+      "answer_summary": "Yes. In positive curvature a known-size object subtends too large an angle relative to flat space; in negative curvature it subtends too small an angle.",
+      "verified": true
+    },
+    {
+      "start": "01:08:09",
+      "end": "01:10:10",
+      "question": "Is the stereographic-style projection relevant because an astronomer can construct it from observations?",
+      "answer_summary": "Yes. The astronomer is effectively surveying triangles in the sky and can reconstruct the geometry from angular measurements and distances.",
+      "verified": true
+    },
+    {
+      "start": "01:15:07",
+      "end": "01:17:04",
+      "question": "If one tracks a signal on these projections, wouldn't the projected light speed vary?",
+      "answer_summary": "Yes, on the projection it would appear to vary. That is a property of the diagram, not an actual change in the physical speed of light.",
+      "verified": true
+    },
+    {
+      "start": "01:37:49",
+      "end": "01:39:06",
+      "question": "Could k take any value if one redefined a?",
+      "answer_summary": "Only in the flat case can a be freely rescaled. In the spherical and hyperbolic cases there is a natural curvature scale, so k is normalized to +1 or -1.",
+      "verified": true
+    },
+    {
+      "start": "01:39:09",
+      "end": "01:40:55",
+      "question": "What about the other components of the energy-momentum tensor?",
+      "answer_summary": "They need not vanish; the space-space components encode pressure. Matter has p=0, radiation has p=rho/3, and vacuum energy has p=-rho.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_05_figure_02.png",
+      "timestamp": "01:18:18",
+      "verdict": "keep",
+      "reason": "The frame is correctly timed to the post-break transition and usefully preserves the visible flat FRW metric fragment and nearby FRW context on the board. It works as board-layout evidence, not as a standalone derivation.",
+      "caption_guidance": "Flat FRW metric fragment on the board."
+    },
+    {
+      "asset": "lecture_05_figure_05.png",
+      "timestamp": "01:30:54",
+      "verdict": "keep",
+      "reason": "The timing matches the Einstein-equation discussion. The top general field equation is readable, and the lower 00-component line is visible enough to support the lecture's top-to-bottom specialization from general tensor equation to cosmological component.",
+      "caption_guidance": "Einstein field equation and its 00 component."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "00:17:24-00:18:40 / chapter statement that the 3-sphere coordinate alpha runs from 0 to pi",
+      "problem": "ASR or spoken-slip conflict: the transcript briefly says alpha goes from 0 to 2pi, but the surrounding geometric explanation requires a rise and return to zero consistent with 0 to pi.",
+      "required_check": "audio and, if available, the corresponding board context"
+    },
+    {
+      "locator": "lecture_05_figure_05 and the chapter's cleaned equation R^{mu nu}-1/2 g^{mu nu}R=4pi G T^{mu nu}",
+      "problem": "equation provenance: the board frame omits or obscures the 1/2 factor, while the lecture later verbally corrects it",
+      "required_check": "frame plus the later audio correction around 01:33:36-01:33:46"
+    }
+  ]
+}
