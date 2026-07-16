@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
+  "chapter": "lecture_03",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].mp4",
+  "entries": [
+    {
+      "locator": "Review of the Basic Cosmological Equation section opening",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:01:53",
+        "00:04:08"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "Directly supported by the homogeneity discussion and the x=0, x=1 setup."
+    },
+    {
+      "locator": "lecture_03_figure_02",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:05:30"
+      ],
+      "reference": "lecture_03_figure_02.png",
+      "confidence": "high",
+      "note": "Board frame shows the spherical sketch and the energy-balance expression."
+    },
+    {
+      "locator": "energy-conservation equation and Friedmann equation derivation",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:08",
+        "00:07:59"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "The algebra, normalization warning, and the potential-term coefficient are spoken in the lecture."
+    },
+    {
+      "locator": "lecture_03_figure_03",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:08:16"
+      ],
+      "reference": "lecture_03_figure_03.png",
+      "confidence": "high",
+      "note": "Useful witness for the boxed curvature term in the Friedmann equation."
+    },
+    {
+      "locator": "schematic Einstein time-time equation",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:08:00",
+        "00:10:24"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "medium",
+      "note": "The tensor structure is explicit in speech, but the lecturer also says he is not recalling the exact numerical coefficient."
+    },
+    {
+      "locator": "Matter Domination section from 'Now assume that the energy density is carried by matter at rest'",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:10:25",
+        "00:20:41"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "Supported by the comoving-box argument, the zero-temperature and zero-pressure remarks, and the power-law solution."
+    },
+    {
+      "locator": "Radiation Domination section opening and wavelength-scaling argument",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:20:42",
+        "00:31:24"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "Based on the photon-per-proton count, photon-energy formula, expanding-box analogy, and lambda proportional to a."
+    },
+    {
+      "locator": "equations rho_r proportional to a^(-4) and a(t) proportional to t^(1/2)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:31:24",
+        "00:35:40"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "The lecture explicitly derives the scaling and the exponent, and gives the coefficient relation for C."
+    },
+    {
+      "locator": "box-of-photons paragraph after the 00:35:41 Q&A",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:40:47",
+        "00:42:49"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "This restored paragraph matches the lecture's thought experiment about the extra force needed to accelerate a box of radiation."
+    },
+    {
+      "locator": "lecture_03_figure_05 and equality discussion",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:44:45"
+      ],
+      "reference": "lecture_03_figure_05.png",
+      "confidence": "high",
+      "note": "The frame supports the board layout at the start of the energy-density comparison plot."
+    },
+    {
+      "locator": "Matter and Radiation Together section",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:42:52",
+        "00:48:12"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "Supported by the two comparison-plot explanations and the spoken estimate that equality occurs after about 10,000 years."
+    },
+    {
+      "locator": "Temperature, Recombination, and Last Scattering section",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:48:13",
+        "01:09:58"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "Drawn from the temperature scaling, ionization estimate, opacity explanation, last-scattering discussion, and redshift resolution of the bright-sky paradox."
+    },
+    {
+      "locator": "classroomqa at 01:08:43",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:08:43"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "The question now tracks the transcript's black-body and wavelength wording, with the T^4 clarification kept in the answer."
+    },
+    {
+      "locator": "Dark Matter from Rotation Curves section through rho(r) proportional to 1/r^2",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:12:46",
+        "01:30:34"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "Strongly supported by the Newtonian orbital-velocity derivation, the observed flat rotation curves, the M(r) argument, and the differentiation that yields rho(r) proportional to 1/r^2."
+    },
+    {
+      "locator": "rotation-curve measurement sentence on relative line-of-sight velocities",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:20:14",
+        "01:21:02"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "The restored sentence matches the lecture's explanation of subtracting the overall recessional motion and using Doppler differences across the galaxy."
+    },
+    {
+      "locator": "dark-halo collapse and composition discussion",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:30:34",
+        "01:37:05"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "The halo, dissipation, neutrino, hydrogen, and black-hole remarks are all present in the transcript; the revised wording now keeps the black-hole objection appropriately tentative."
+    },
+    {
+      "locator": "classroomqa at 01:53:12 and Bullet Cluster close",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:53:12",
+        "01:55:10"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "The exchange and the separation of X-ray gas from lensing mass are explicit in the transcript."
+    },
+    {
+      "locator": "final paragraph on weakly interacting particles",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:56:40",
+        "02:00:16"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "Accurately reflects the lecture's conservative closing view that dark matter probably means additional weakly interacting particles rather than a radical new principle."
+    },
+    {
+      "locator": "Why is there a G in there?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:35:41"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "This is a genuine audience question, and the answer now stays with the lecture's point that energy density, not rest mass alone, is what gravitates. The adjacent box-of-photons paragraph restores the fuller lecture beat from 00:40:47-00:42:49."
+    },
+    {
+      "locator": "Is either of these equations solvable with an a that decreases with time?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:38:11"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "The wording is source-close and the response matches the lecture's statement that restoring the curvature term allows solutions that expand and later contract."
+    },
+    {
+      "locator": "What happened to conservation of energy?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:38:44"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "This is a real exchange, and the answer preserves the lecture's bookkeeping point that the cosmological equation itself expresses the conservation law once the full energy balance is written."
+    },
+    {
+      "locator": "As the universe ages, does the power p go continuously from 1/2 to 2/3?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:44:04"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "Transcript-confirmed. The answer correctly keeps the lecture's insistence that the change is continuous rather than abrupt."
+    },
+    {
+      "locator": "So our telescopes cannot look earlier than about 300,000 years?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:03:51"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "This is a real exchange, and the response preserves the lecturer's correction that electromagnetic telescopes cannot see earlier than that epoch, while neutrinos or gravitons could in principle probe deeper."
+    },
+    {
+      "locator": "It looks as if the density should go like 1/r^2. Is there a reason for that?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:28:18"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/042 - Cosmology ｜ Lecture 3 [rYQTAJ50A44].md",
+      "confidence": "high",
+      "note": "This is transcript-grounded, and the answer correctly ties the statement to M(R) proportional to R while preserving the lecturer's caution that no simple first-principles explanation is being claimed."
+    }
+  ]
+}

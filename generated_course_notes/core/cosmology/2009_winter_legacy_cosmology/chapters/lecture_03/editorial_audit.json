@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_03",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "leakage",
+      "locator": "opening paragraph ending \"with transcript and frame curation indebted to LazyingArt LLC and Video2Book.\"",
+      "evidence": "This is explicit workflow and provenance language in chapter prose, and it names entities that the editorial charter forbids in the body. It also shifts the opening away from the physics into production history.",
+      "action": "Delete the sentence entirely and remove all workflow, curation, and production-credit language from the chapter body."
+    },
+    {
+      "severity": "high",
+      "category": "voice",
+      "locator": "repeated lecturer-centered narration such as \"Susskind opens by reminding us...\", \"Susskind pauses to say...\", and \"Susskind then draws...\"",
+      "evidence": "The chapter repeatedly narrates the lecturer's behavior instead of presenting the physics directly in lecture order. The charter asks for direct exposition rather than tracking what the lecturer is doing.",
+      "action": "Rewrite these passages as direct physics exposition while preserving the lecture's sequence and emphases."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "all \"Question & Answer\" subsections using \\paragraph{Question.} and \\paragraph{Answer.}",
+      "evidence": "Several real classroom exchanges are paraphrased into synthetic Q&A blocks rather than preserved as transcript-backed classroom exchanges with timestamps. This loses source fidelity and violates the chapter's required Q&A format.",
+      "action": "Convert genuine exchanges to `classroomqa` with transcript-backed wording and `\\lecturetimestamp{...}`; fold any non-essential paraphrase back into prose instead of keeping synthetic Q&A blocks."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "final section \"Summary\"",
+      "evidence": "The lecture does not close with a recap section. The added summary is an imposed structure rather than a lecture-determined ending.",
+      "action": "Remove the summary section and let the chapter end with the actual dark-matter close of the lecture."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "captions such as \"Clean reconstruction of the homogeneous sphere used in the lecture\" and \"Transcript-derived reconstruction of the energy-density comparison drawn in the lecture\"",
+      "evidence": "These captions describe editorial process rather than the physics shown, and they introduce production-style wording into captions. The charter requires physics-only captions, with provenance moved elsewhere.",
+      "action": "Replace these with physics-only captions and move provenance to concise footnotes or the source map."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "the extra TikZ redraws for the homogeneous sphere, energy-density comparison, scale-factor transition, and rotation-curve comparison",
+      "evidence": "The redraws are not explicitly footnoted as editorial reconstructions. The energy-density redraw is acceptable as a companion to the axes screenshot, but the rotation-curve comparison has no attached board witness and currently reads like a lecture figure rather than a reconstruction from spoken argument.",
+      "action": "Add concise provenance footnotes for nontrivial redraws, and either remove the unsupported rotation-curve redraw or clearly mark it as an editorial reconstruction based on the transcript."
+    },
+    {
+      "severity": "low",
+      "category": "structure",
+      "locator": "dark-matter discussion after the derivation of rho(r) ~ 1/r^2",
+      "evidence": "The prose compresses a long cluster of useful classroom exchanges into generalized exposition. The argument survives, but some of the lecture's clarifying give-and-take is lost.",
+      "action": "Restore one or two of the strongest verified exchanges from this segment in `classroomqa`, especially the 1/r^2 question and the Bullet Cluster exchange."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:12",
+      "end": "00:00:58",
+      "subject": "review of the basic equations and preview of a tour through cosmology plus dark matter",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:01:53",
+      "end": "00:03:20",
+      "subject": "homogeneity on large scales and the x=0, x=1 Newtonian setup",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:03:20",
+      "end": "00:07:58",
+      "subject": "re-derivation of the Newtonian energy equation and the Friedmann equation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:08:00",
+      "end": "00:10:24",
+      "subject": "orientation to the Einstein time-time equation and the meaning of rho as energy density",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:10:25",
+      "end": "00:15:00",
+      "subject": "matter-dominated rho = M/a^3, k approximately zero, and the idealized pressureless rest-energy picture",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:16:34",
+      "end": "00:20:41",
+      "subject": "power-law solution a proportional to t^(2/3) and the matter-dominated era",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:20:42",
+      "end": "00:35:40",
+      "subject": "radiation bath, photon energy, wavelength stretching, rho_r proportional to a^(-4), and a proportional to t^(1/2)",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:35:41",
+      "end": "00:42:49",
+      "subject": "why G still appears, why energy rather than rest mass gravitates, and the Einstein box-of-photons argument",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:42:52",
+      "end": "00:48:12",
+      "subject": "real universe as a mixture of matter and radiation, equality crossover, and the two comparison plots",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:48:13",
+      "end": "00:59:40",
+      "subject": "temperature scaling, ionization estimate, and the 300,000-year recombination timescale",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:00:18",
+      "end": "01:09:58",
+      "subject": "surface of last scattering, neutrino and graviton horizons, and redshift as the resolution of the bright-sky paradox",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:12:46",
+      "end": "01:18:34",
+      "subject": "dark matter introduced from galactic rotation curves and the Keplerian expectation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:18:35",
+      "end": "01:30:26",
+      "subject": "flat galactic rotation curves imply M(r) proportional to r and rho(r) proportional to 1/r^2",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:30:34",
+      "end": "01:37:05",
+      "subject": "non-dissipative dark halo, why it does not collapse with luminous matter, and why it is not neutrino or black-hole matter",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:53:12",
+      "end": "01:55:10",
+      "subject": "Bullet Cluster as evidence separating dark matter from luminous matter and arguing against a simple modified-gravity explanation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:56:40",
+      "end": "02:00:16",
+      "subject": "dark matter as likely new weakly interacting particles rather than radical new principles",
+      "chapter_status": "present"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:35:41",
+      "end": "00:42:49",
+      "question": "Why is there a g in there?",
+      "answer_summary": "Because the source is energy density, not rest mass alone. Slow matter hides the distinction, but photons and a box of radiation make it explicit: energy contributes inertia and therefore gravitation.",
+      "verified": true
+    },
+    {
+      "start": "00:38:11",
+      "end": "00:38:44",
+      "question": "Is either of these equations solvable with an A that decreases with time?",
+      "answer_summary": "Yes. With the curvature term restored there are contracting and turnaround solutions, even though that is not the behavior observed for our universe.",
+      "verified": true
+    },
+    {
+      "start": "00:38:44",
+      "end": "00:40:25",
+      "question": "What happened to conservation of energy?",
+      "answer_summary": "The full cosmological equation is the conservation law. It balances the rest or radiation energy on one side with the kinetic and gravitational-expansion bookkeeping on the other.",
+      "verified": true
+    },
+    {
+      "start": "00:44:04",
+      "end": "00:44:23",
+      "question": "So as the universe ages, does the P go continuously from one half to two thirds?",
+      "answer_summary": "Yes. The transition from radiation domination to matter domination is continuous and fairly narrow in time, not a jump.",
+      "verified": true
+    },
+    {
+      "start": "01:03:51",
+      "end": "01:04:12",
+      "question": "So basically what you're saying is our limitations with our telescopes ... they cannot look beyond 300,000 years ago.",
+      "answer_summary": "Electromagnetic telescopes cannot see earlier than recombination, because the earlier plasma is opaque. Other messengers such as neutrinos or gravitons could in principle probe deeper.",
+      "verified": true
+    },
+    {
+      "start": "01:08:43",
+      "end": "01:09:57",
+      "question": "When you talk about the temperature of a photon ... that is not linear in wavelength.",
+      "answer_summary": "The temperature tracks the energy of a typical photon, while T to the fourth refers to energy density. The extra powers come from the photon number density, which scales like T cubed.",
+      "verified": true
+    },
+    {
+      "start": "01:28:18",
+      "end": "01:30:26",
+      "question": "It looks like the density would sort of go 1 over r squared. Do they have a reason for that?",
+      "answer_summary": "From the observed flat rotation curve one infers M(R) proportional to R, and differentiating then gives rho(r) proportional to 1/r^2. Beyond that, the lecture does not claim a simple first-principles reason.",
+      "verified": true
+    },
+    {
+      "start": "01:53:12",
+      "end": "01:55:10",
+      "question": "Are you talking about the bullet galaxy?",
+      "answer_summary": "Yes: the Bullet Cluster separates the X-ray gas from the total gravitating mass inferred by lensing. That separation supports real dark matter rather than a gravity modification tied only to visible matter.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_03_figure_02.png",
+      "timestamp": "00:05:30",
+      "verdict": "keep",
+      "reason": "The frame is correctly timed and clearly shows the left-hand homogeneous sphere sketch together with the Newtonian energy-conservation expression. It is a useful witness for the x=0, x=1 setup and the kinetic-minus-potential form.",
+      "caption_guidance": "Homogeneous sphere centered at x=0 with a comoving galaxy at x=1 and the Newtonian energy balance for a(t)."
+    },
+    {
+      "asset": "lecture_03_figure_03.png",
+      "timestamp": "00:08:16",
+      "verdict": "keep",
+      "reason": "This is a good emphasis frame for the Friedmann equation with the curvature term singled out. It securely witnesses the boxed -k/a^2 term, even though it is not a direct witness for the full Einstein tensor equation.",
+      "caption_guidance": "Curvature contribution -k/a^2 isolated in the Friedmann equation."
+    },
+    {
+      "asset": "lecture_03_figure_05.png",
+      "timestamp": "00:44:45",
+      "verdict": "keep",
+      "reason": "The frame is correctly timed for the beginning of the energy-density comparison plot. By itself it shows only the axes, but it is useful as board-layout evidence when paired with a clearly marked redraw.",
+      "caption_guidance": "Axes for comparing matter and radiation energy density as functions of the scale factor."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "equation \"R_{00}-\\frac{1}{2}g_{00}R \\propto T_{00}\"",
+      "problem": "equation",
+      "required_check": "named reference"
+    },
+    {
+      "locator": "the added rotation-curve comparison redraw",
+      "problem": "unsupported addition",
+      "required_check": "transcript"
+    },
+    {
+      "locator": "the redraw paired with lecture_03_figure_05",
+      "problem": "attribution",
+      "required_check": "audio"
+    }
+  ]
+}
