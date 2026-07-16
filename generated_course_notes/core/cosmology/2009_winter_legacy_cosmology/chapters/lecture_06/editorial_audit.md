@@ -1,0 +1,25 @@
+# Editorial Audit
+
+- Status: **revise**
+- Findings: 9
+
+## Findings
+
+- **critical / leakage** at `opening paragraph: "prepared with LazyingArt LLC and Video2Book"`: This is explicit workflow and company leakage. The charter forbids references to private production method, attached assets, or internal pipeline history in chapter prose. Repair: Delete the entire production-history clause and keep the opening on the physics only.
+- **high / q_and_a** at `section "Baryogenesis and the Sakharov Conditions" / subsection "Question & Answer"`: This is a synthesized composite exchange, not a real transcript-backed classroom question. It merges separate audience questions from around 00:42:25, 00:58:53, and later discussion into one polished editorial dialogue. Repair: Replace it with actual `classroomqa` blocks for the real audience exchanges, or fold the material back into ordinary prose.
+- **high / figure** at `captions for `lecture_06_figure_02.png`, `lecture_06_figure_03.png`, and `lecture_06_figure_04.png``: The captions discuss legibility, transcript dependence, reconstruction method, and "documentary evidence" instead of describing only the physics shown. The charter says provenance and uncertainty belong in footnotes or the source map, not in captions. Repair: Rewrite the captions as physics-only captions and move all provenance or uncertainty remarks into concise footnotes or the source map.
+- **high / provenance** at `editorial figures "The 'one-way street' of freeze-out" and "Minimal logical reconstruction of the board discussion"`: These are not blackboard redraws and not lecture screenshots. They are editorial explanatory figures invented to organize the argument. As written they appear as ordinary lecture figures without explicit editorial framing. Repair: Remove these figures, or keep them only with very clear editorial marking and a narrower claim that they are schematic clarifications rather than lecture-native figures.
+- **medium / structure** at `final section "Summary"`: The lecture does not conclude with a recap section. The summary is editorially imposed rather than lecture-determined. Repair: Remove the summary section and end on the last substantive physics point instead.
+- **medium / q_and_a** at `late section "Clarifications at the Edge of What We Know"`: Several strong classroom exchanges are flattened into prose even though the transcript supports them directly: the CP/T clarification, the dark-matter spectator question, the condition-3-versus-CPT question, the gravity and black-hole argument, and the neutron question. Repair: Restore selected verified exchanges in `classroomqa` form where they sharpen the logic instead of paraphrasing them all into expository prose.
+- **medium / figure** at ``lecture_06_figure_03.png``: This is a weaker intermediate view of the same Sakharov-condition board cluster shown much more clearly in `lecture_06_figure_04.png`. In the current chapter it reads as largely redundant. Repair: Drop `lecture_06_figure_03.png` unless the text is revised to make its intermediate timing genuinely necessary.
+- **low / voice** at `opening sentence: "We begin where Leonard Susskind begins"`: This is mild stage-direction framing about the speaker's movement through the lecture rather than direct presentation of the cosmological point. Repair: Open directly with the observational claim about distance, look-back time, and temperature.
+- **low / structure** at `formal `definition` blocks for the surface of last scattering and baryon number`: The lecture explains these notions informally. Turning them into textbook-style definition environments stiffens the classroom cadence and adds structure the lecture itself does not impose. Repair: Convert these blocks to plain prose unless there is a strong local reason to keep formal definitions.
+
+## Source Uncertainties
+
+- `opening paragraph reference to "LazyingArt LLC and Video2Book"`: unsupported addition Check: remove rather than verify; it is not lecture content
+- `caption of `lecture_06_figure_02.png` mentioning that the lower proton note is less sharp but transcript settles it`: attribution Check: move the uncertainty and transcript-based repair into a footnote or source map if the lower `2m_p c^2` label is discussed explicitly
+- `synthetic subsection "Question & Answer" under baryogenesis`: unsupported addition Check: replace with transcript-backed classroom exchanges or revert to prose
+- `editorial figure "The 'one-way street' of freeze-out"`: unsupported addition Check: either remove it or explicitly mark it as an editorial schematic rather than a lecture-native figure
+- `editorial figure "Minimal logical reconstruction of the board discussion"`: unsupported addition Check: either remove it or explicitly mark it as an editorial schematic rather than a lecture-native figure
+- `bound-neutron formula `M_bound ≈ m_n + m_p - E_bind/c^2``: equation Check: add explicit editorial framing or a brief source note, since the lecture gives this only verbally rather than as a clean displayed equation

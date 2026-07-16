@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "unsupported_claims": [],
+  "missing_beats": [],
+  "style_violations": [],
+  "provenance_gaps": [],
+  "q_and_a_checks": [
+    {
+      "locator": "Is it mesons or pre-quarks?",
+      "timestamp": "00:20:05",
+      "verified": true,
+      "reason": "The exchange is reproduced closely from the transcript and preserves the quark-meson clarification without embellishment."
+    },
+    {
+      "locator": "Why not think of the excess statistically, as something created during cooling with a tiny probability?",
+      "timestamp": "00:42:25",
+      "verified": true,
+      "reason": "This is a genuine audience question, and the response remains a faithful compression of the lecture's answer about extra-proton creation, compensating charge, and baryon-number conservation."
+    },
+    {
+      "locator": "Matching these to CPT, is condition 2 really CP and condition 3 really the time-direction issue?",
+      "timestamp": "01:09:08",
+      "verified": true,
+      "reason": "The response keeps the essential correction from the lecture: condition 2 should be phrased as CP violation, while condition 3 concerns out-of-equilibrium history rather than a separate conservation law."
+    },
+    {
+      "locator": "How does gravity affect all this?",
+      "timestamp": "01:24:49",
+      "verified": true,
+      "reason": "The classroom exchange is now cleanly separated from the later charged-black-hole follow-up and accurately summarizes gravity's two roles in the lecture."
+    },
+    {
+      "locator": "Would one know how to amend the standard model to include such reactions?",
+      "timestamp": "01:31:14",
+      "verified": true,
+      "reason": "The chapter preserves the source exchange's main point that the real difficulty is not inventing baryon-violating terms but avoiding proton decay that is too fast."
+    },
+    {
+      "locator": "Are neutrons simply disappearing from the universe, or are they also created?",
+      "timestamp": "01:43:03",
+      "verified": true,
+      "reason": "This faithfully captures the lecture's self-correction from an initial one-way-decrease answer to the later acknowledgment of neutron production in stars and neutron stars."
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_06_figure_02.png",
+      "timestamp": "00:18:47",
+      "verdict": "keep",
+      "reason": "The frame matches the pair-production and threshold discussion and remains the best blackboard evidence for the electron and proton mass-scale comparison used nearby in the text."
+    },
+    {
+      "asset": "lecture_06_figure_03.png",
+      "timestamp": "01:05:05",
+      "verdict": "remove",
+      "reason": "The revised chapter correctly omits this intermediate board frame; the later asymmetry-condition screenshot is the more useful and less redundant choice."
+    },
+    {
+      "asset": "lecture_06_figure_04.png",
+      "timestamp": "01:22:26",
+      "verdict": "keep",
+      "reason": "This frame remains the strongest source for the asymmetry notation and numbered Sakharov-condition list, with the partly illegible wording properly handled outside the caption."
+    }
+  ],
+  "source_map": [
+    {
+      "locator": "Opening section on look-back time, denser past, hotter past, and last scattering",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:15",
+        "00:06:26"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The section follows the lecture's opening sequence closely: looking outward means looking backward, then opacity and sudden transparency."
+    },
+    {
+      "locator": "Displayed redshift-temperature relation",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:02:20",
+        "00:02:39"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The chapter now marks this as a symbolic editorial transcription of the spoken redshift argument."
+    },
+    {
+      "locator": "Section on electron-positron pair production and thermal equilibrium",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:08:13",
+        "00:15:11"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The prose tracks the lecture's threshold, inverse reaction, and density-comparison discussion without adding outside material."
+    },
+    {
+      "locator": "lecture_06_figure_02.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:18:47"
+      ],
+      "reference": "generated_course_notes/core/cosmology/2009_winter_legacy_cosmology/figures/lecture_06_figure_02.png",
+      "confidence": "high",
+      "note": "The screenshot supports the threshold sketch and nearby mass labels used in the surrounding explanation."
+    },
+    {
+      "locator": "Electrical-neutrality mnemonic with flux lines on a closed sphere",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:22:38",
+        "00:28:20"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The chapter preserves the lecture's two-sphere mnemonic and the distinction between net charge neutrality and proton-antiproton equality."
+    },
+    {
+      "locator": "Photon-to-baryon ratio and leftover one-in-a-billion asymmetry",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:40:03",
+        "00:42:24"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The numerical ratio and its interpretation are taken directly from the lecture's counting argument."
+    },
+    {
+      "locator": "Schematic process gamma + gamma -> p + e- and baryon-number definition",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:44:16",
+        "00:46:35"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "Both displays are now explicitly identified as compact formalizations of the verbal standard-model discussion."
+    },
+    {
+      "locator": "Section on the three baryogenesis conditions",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:51:41",
+        "01:06:24"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The order baryon-number violation, CP violation, and out-of-equilibrium evolution matches the lecture's explicit development."
+    },
+    {
+      "locator": "lecture_06_figure_04.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "01:22:26"
+      ],
+      "reference": "generated_course_notes/core/cosmology/2009_winter_legacy_cosmology/figures/lecture_06_figure_04.png",
+      "confidence": "high",
+      "note": "The frame is the correct visual source for the asymmetry notation and the numbered condition list."
+    },
+    {
+      "locator": "Gravity, black-hole evaporation, charged-black-hole follow-up, and rejection of the early-universe black-hole picture",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:24:49",
+        "01:30:56"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The repaired chapter now separates the verified gravity Q&A from the later charge-conservation follow-up and keeps the black-hole material in the right order."
+    },
+    {
+      "locator": "Proton lifetime bound and underground water-detector experiments",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:13:02",
+        "01:17:27"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The lifetime bound, detector setup, and low-energy suppression argument are all directly sourced from the lecture."
+    },
+    {
+      "locator": "Free-neutron decay, bound-neutron stability, and late neutron creation question",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:38:56",
+        "01:44:21"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The chapter's closing neutron discussion stays within the lecture's account of beta decay, small available energy, binding-energy stabilization, and later neutron production."
+    },
+    {
+      "locator": "Is it mesons or pre-quarks?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:20:05"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The exchange is reproduced closely from the transcript and preserves the quark-meson clarification without embellishment."
+    },
+    {
+      "locator": "Why not think of the excess statistically, as something created during cooling with a tiny probability?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:42:25"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "This is a genuine audience question, and the response remains a faithful compression of the lecture's answer about extra-proton creation, compensating charge, and baryon-number conservation."
+    },
+    {
+      "locator": "Matching these to CPT, is condition 2 really CP and condition 3 really the time-direction issue?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:09:08"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The response keeps the essential correction from the lecture: condition 2 should be phrased as CP violation, while condition 3 concerns out-of-equilibrium history rather than a separate conservation law."
+    },
+    {
+      "locator": "How does gravity affect all this?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:24:49"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The classroom exchange is now cleanly separated from the later charged-black-hole follow-up and accurately summarizes gravity's two roles in the lecture."
+    },
+    {
+      "locator": "Would one know how to amend the standard model to include such reactions?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:31:14"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "The chapter preserves the source exchange's main point that the real difficulty is not inventing baryon-violating terms but avoiding proton decay that is too fast."
+    },
+    {
+      "locator": "Are neutrons simply disappearing from the universe, or are they also created?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:43:03"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/045 - Cosmology ｜ Lecture 6 [di8egIk4cWY].md",
+      "confidence": "high",
+      "note": "This faithfully captures the lecture's self-correction from an initial one-way-decrease answer to the later acknowledgment of neutron production in stars and neutron stars."
+    }
+  ]
+}

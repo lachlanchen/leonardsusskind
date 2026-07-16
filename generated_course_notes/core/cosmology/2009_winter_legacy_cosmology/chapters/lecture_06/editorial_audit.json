@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_06",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "leakage",
+      "locator": "opening paragraph: \"prepared with LazyingArt LLC and Video2Book\"",
+      "evidence": "This is explicit workflow and company leakage. The charter forbids references to private production method, attached assets, or internal pipeline history in chapter prose.",
+      "action": "Delete the entire production-history clause and keep the opening on the physics only."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "section \"Baryogenesis and the Sakharov Conditions\" / subsection \"Question & Answer\"",
+      "evidence": "This is a synthesized composite exchange, not a real transcript-backed classroom question. It merges separate audience questions from around 00:42:25, 00:58:53, and later discussion into one polished editorial dialogue.",
+      "action": "Replace it with actual `classroomqa` blocks for the real audience exchanges, or fold the material back into ordinary prose."
+    },
+    {
+      "severity": "high",
+      "category": "figure",
+      "locator": "captions for `lecture_06_figure_02.png`, `lecture_06_figure_03.png`, and `lecture_06_figure_04.png`",
+      "evidence": "The captions discuss legibility, transcript dependence, reconstruction method, and \"documentary evidence\" instead of describing only the physics shown. The charter says provenance and uncertainty belong in footnotes or the source map, not in captions.",
+      "action": "Rewrite the captions as physics-only captions and move all provenance or uncertainty remarks into concise footnotes or the source map."
+    },
+    {
+      "severity": "high",
+      "category": "provenance",
+      "locator": "editorial figures \"The 'one-way street' of freeze-out\" and \"Minimal logical reconstruction of the board discussion\"",
+      "evidence": "These are not blackboard redraws and not lecture screenshots. They are editorial explanatory figures invented to organize the argument. As written they appear as ordinary lecture figures without explicit editorial framing.",
+      "action": "Remove these figures, or keep them only with very clear editorial marking and a narrower claim that they are schematic clarifications rather than lecture-native figures."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "final section \"Summary\"",
+      "evidence": "The lecture does not conclude with a recap section. The summary is editorially imposed rather than lecture-determined.",
+      "action": "Remove the summary section and end on the last substantive physics point instead."
+    },
+    {
+      "severity": "medium",
+      "category": "q_and_a",
+      "locator": "late section \"Clarifications at the Edge of What We Know\"",
+      "evidence": "Several strong classroom exchanges are flattened into prose even though the transcript supports them directly: the CP/T clarification, the dark-matter spectator question, the condition-3-versus-CPT question, the gravity and black-hole argument, and the neutron question.",
+      "action": "Restore selected verified exchanges in `classroomqa` form where they sharpen the logic instead of paraphrasing them all into expository prose."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "`lecture_06_figure_03.png`",
+      "evidence": "This is a weaker intermediate view of the same Sakharov-condition board cluster shown much more clearly in `lecture_06_figure_04.png`. In the current chapter it reads as largely redundant.",
+      "action": "Drop `lecture_06_figure_03.png` unless the text is revised to make its intermediate timing genuinely necessary."
+    },
+    {
+      "severity": "low",
+      "category": "voice",
+      "locator": "opening sentence: \"We begin where Leonard Susskind begins\"",
+      "evidence": "This is mild stage-direction framing about the speaker's movement through the lecture rather than direct presentation of the cosmological point.",
+      "action": "Open directly with the observational claim about distance, look-back time, and temperature."
+    },
+    {
+      "severity": "low",
+      "category": "structure",
+      "locator": "formal `definition` blocks for the surface of last scattering and baryon number",
+      "evidence": "The lecture explains these notions informally. Turning them into textbook-style definition environments stiffens the classroom cadence and adds structure the lecture itself does not impose.",
+      "action": "Convert these blocks to plain prose unless there is a strong local reason to keep formal definitions."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:11",
+      "end": "00:06:36",
+      "subject": "Looking outward means looking backward; redshift; last scattering; opacity of ionized gas",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:06:36",
+      "end": "00:15:15",
+      "subject": "Using atomic, nuclear, and particle physics to push farther back; electron-positron pair production",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:15:15",
+      "end": "00:20:04",
+      "subject": "Proton threshold, proton-electron mass contrast, and the shift from protons to quarks at higher temperature",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:20:05",
+      "end": "00:21:47",
+      "subject": "Clarifying questions on mesons, stellar temperatures, and the fact that the real sequence runs forward in time",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:21:47",
+      "end": "00:29:00",
+      "subject": "Electrical neutrality, the spherical flux mnemonic, and the distinction between charge neutrality and proton-antiproton equality",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:29:00",
+      "end": "00:32:26",
+      "subject": "Conjectured symmetric hot start and approximate particle-antiparticle symmetry of known physics",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:32:27",
+      "end": "00:40:03",
+      "subject": "Cooling, the one-way street, annihilation of matched pairs, and adiabatic expansion",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:40:03",
+      "end": "00:42:24",
+      "subject": "Counting photons today to infer the tiny primordial baryon asymmetry",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:42:25",
+      "end": "00:50:04",
+      "subject": "Why the asymmetry cannot be generated by ordinary tested low-energy particle physics during cooling",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "00:50:05",
+      "end": "01:05:21",
+      "subject": "Sakharov conditions: baryon-number violation, CP-type bias, and departure from equilibrium",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:05:21",
+      "end": "01:08:40",
+      "subject": "Baryogenesis as the organizing idea, with baryon-number violation still the main open empirical step",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:09:08",
+      "end": "01:23:50",
+      "subject": "Clarifications on CP versus T, proton decay searches, the electroweak-scale aside, dark matter, and condition 3 versus CPT",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:24:49",
+      "end": "01:31:13",
+      "subject": "Gravity, black holes, charge conservation, and why the early dense universe is not simply a black hole",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:33:13",
+      "end": "01:37:32",
+      "subject": "Entropy bookkeeping and the reversal of the older question about why there are so many photons",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:38:56",
+      "end": "01:44:27",
+      "subject": "Neutron beta decay, bound-neutron stability, and the late neutron discussion",
+      "chapter_status": "compressed"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:20:05",
+      "end": "00:20:20",
+      "question": "Is it mesons or pre-quarks?",
+      "answer_summary": "Mesons are made of quarks, and once the temperature is high enough to shatter protons it also shatters mesons.",
+      "verified": true
+    },
+    {
+      "start": "00:21:14",
+      "end": "00:21:19",
+      "question": "This would be hotter than inside a star?",
+      "answer_summary": "Yes, definitely hotter than the interior of a star.",
+      "verified": true
+    },
+    {
+      "start": "00:21:33",
+      "end": "00:21:40",
+      "question": "So the sequence is going backwards in time, right?",
+      "answer_summary": "Yes; the lecture is reasoning backward first and then plans to run the real sequence forward.",
+      "verified": true
+    },
+    {
+      "start": "00:27:29",
+      "end": "00:28:01",
+      "question": "Isn't the fact that we can see the CMB evidence of generally transparent space?",
+      "answer_summary": "Yes, but the charge-neutrality statement is much stronger than just the observed transparency.",
+      "verified": true
+    },
+    {
+      "start": "00:42:25",
+      "end": "00:46:56",
+      "question": "Why not think of the proton excess as something created statistically during cooling?",
+      "answer_summary": "Within tested particle physics the needed baryon-number-violating processes are absent at those energies, so ordinary cooling cannot generate the net proton excess.",
+      "verified": true
+    },
+    {
+      "start": "00:58:53",
+      "end": "01:00:30",
+      "question": "Could a random process near freeze-out still leave an overall excess?",
+      "answer_summary": "Only square-root-of-N fluctuations would result, and that is far too small to explain the observed proton abundance.",
+      "verified": true
+    },
+    {
+      "start": "01:09:08",
+      "end": "01:10:10",
+      "question": "Matching CPT to conditions 1, 2, 3: is number 2 really CP and number 3 really T?",
+      "answer_summary": "Yes, the lecturer sharpens condition 2 to CP violation and distinguishes condition 3 as the time-direction issue associated with being out of equilibrium.",
+      "verified": true
+    },
+    {
+      "start": "01:10:32",
+      "end": "01:10:56",
+      "question": "How close are you to the Big Bang?",
+      "answer_summary": "Very close, although the exact answer depends on how one counts a prior inflationary period.",
+      "verified": true
+    },
+    {
+      "start": "01:11:00",
+      "end": "01:17:27",
+      "question": "At what energy would baryon-number violation appear, and how does proton stability fit in?",
+      "answer_summary": "A process can be important at very high temperature yet fantastically improbable at low energy; that is why proton-decay searches constrain but do not eliminate such mechanisms.",
+      "verified": true
+    },
+    {
+      "start": "01:17:33",
+      "end": "01:19:04",
+      "question": "If antiparticles disappeared during cooling, why is the number of electrons the same as the number of protons?",
+      "answer_summary": "Electric charge is exactly conserved in the basic processes, so the cooling history cannot drive the universe out of electrical neutrality.",
+      "verified": true
+    },
+    {
+      "start": "01:20:44",
+      "end": "01:21:54",
+      "question": "Does dark matter modify this picture in any way?",
+      "answer_summary": "Not in any special way here; in most theories dark matter is largely a spectator to the baryogenesis logic.",
+      "verified": true
+    },
+    {
+      "start": "01:21:55",
+      "end": "01:24:48",
+      "question": "Is condition number three equivalent to violating CPT symmetry?",
+      "answer_summary": "No. Being out of equilibrium means the actual history is changing and not static; it is not the same as saying the backward-running history would fail to satisfy the laws.",
+      "verified": true
+    },
+    {
+      "start": "01:24:49",
+      "end": "01:29:27",
+      "question": "How does gravity affect all this, and does a charged black-hole argument also threaten charge conservation?",
+      "answer_summary": "Gravity matters mainly through cosmic expansion and the black-hole argument against exact baryon conservation, but charge is tracked by flux lines and charged black holes do not evaporate away in the same manner.",
+      "verified": true
+    },
+    {
+      "start": "01:31:14",
+      "end": "01:31:46",
+      "question": "Would one know how to amend the standard model to include such reactions?",
+      "answer_summary": "The difficulty is the opposite: it is easy to add too much baryon violation and make the proton decay too quickly.",
+      "verified": true
+    },
+    {
+      "start": "01:38:56",
+      "end": "01:44:27",
+      "question": "Free neutrons decay quickly, so how do neutrons persist and what makes bound neutrons different?",
+      "answer_summary": "A free neutron beta-decays on a short timescale, while binding energy in nuclei can remove the available decay energy and stabilize a bound neutron.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_06_figure_02.png",
+      "timestamp": "00:18:47",
+      "verdict": "keep",
+      "reason": "This is a useful, correctly timed board frame for the pair-production threshold discussion. It preserves the process sketch and the electron-versus-proton mass-scale comparison that the prose relies on.",
+      "caption_guidance": "Pair-production threshold sketch comparing the electron and proton mass scales."
+    },
+    {
+      "asset": "lecture_06_figure_03.png",
+      "timestamp": "01:05:05",
+      "verdict": "remove",
+      "reason": "It is a weaker intermediate view of the same baryon-asymmetry board cluster shown more clearly in `lecture_06_figure_04.png`. In the current chapter it adds little beyond board continuity.",
+      "caption_guidance": "Intermediate board state relating an initially symmetric proton-antiproton count to the residual asymmetry."
+    },
+    {
+      "asset": "lecture_06_figure_04.png",
+      "timestamp": "01:22:26",
+      "verdict": "keep",
+      "reason": "This is the strongest documentary screenshot for the late asymmetry discussion. It preserves the symmetric starting point, the net asymmetry expression, and the numbered checklist on one board state.",
+      "caption_guidance": "Board checklist for generating a baryon asymmetry from an initially symmetric state."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "opening paragraph reference to \"LazyingArt LLC and Video2Book\"",
+      "problem": "unsupported addition",
+      "required_check": "remove rather than verify; it is not lecture content"
+    },
+    {
+      "locator": "caption of `lecture_06_figure_02.png` mentioning that the lower proton note is less sharp but transcript settles it",
+      "problem": "attribution",
+      "required_check": "move the uncertainty and transcript-based repair into a footnote or source map if the lower `2m_p c^2` label is discussed explicitly"
+    },
+    {
+      "locator": "synthetic subsection \"Question & Answer\" under baryogenesis",
+      "problem": "unsupported addition",
+      "required_check": "replace with transcript-backed classroom exchanges or revert to prose"
+    },
+    {
+      "locator": "editorial figure \"The 'one-way street' of freeze-out\"",
+      "problem": "unsupported addition",
+      "required_check": "either remove it or explicitly mark it as an editorial schematic rather than a lecture-native figure"
+    },
+    {
+      "locator": "editorial figure \"Minimal logical reconstruction of the board discussion\"",
+      "problem": "unsupported addition",
+      "required_check": "either remove it or explicitly mark it as an editorial schematic rather than a lecture-native figure"
+    },
+    {
+      "locator": "bound-neutron formula `M_bound ≈ m_n + m_p - E_bind/c^2`",
+      "problem": "equation",
+      "required_check": "add explicit editorial framing or a brief source note, since the lecture gives this only verbally rather than as a clean displayed equation"
+    }
+  ]
+}
