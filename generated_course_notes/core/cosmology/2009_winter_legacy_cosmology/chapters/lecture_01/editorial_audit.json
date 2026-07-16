@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_01",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "high",
+      "category": "leakage",
+      "locator": "\"These notes follow Leonard Susskind's first cosmology lecture ... preserved through LazyingArt LLC and Video2Book\"",
+      "evidence": "The opening paragraph puts note-making method, transcript handling, and banned production names into chapter prose. The charter forbids this kind of workflow language and says credits/editorial method belong only in front matter or source footnotes.",
+      "action": "Remove the notes-about-notes framing from the chapter body. If any source-method credit must remain, move it to permitted front matter or a concise source footnote outside the prose."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "all subsectioned \"Question & Answer\" blocks",
+      "evidence": "The charter requires real audience exchanges to be rendered as classroom Q&A with timestamps. The current chapter uses untimestamped paragraph-style Question/Answer blocks instead of transcript-verified classroomqa structures.",
+      "action": "Convert only verified exchanges into timestamped classroom Q&A blocks using \\lecturetimestamp{HH:MM:SS}, \\audiencequestion{...}, and \\lecturerresponse{...}."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "Section 1.6.1, \"What exactly do homogeneity and isotropy buy us, and how are they related?\"",
+      "evidence": "This is not a single audience question in the transcript. It blends ordinary exposition, the farmer's-field analogy, the horizon discussion, and the later exchange about whether isotropy everywhere implies homogeneity.",
+      "action": "Replace this synthesized Q&A with either ordinary prose or one or more real transcript-supported exchanges, especially the 01:18:57 question about isotropy and homogeneity."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "Section 1.7.1, \"Where did the Big Bang happen, and what do the cylinder and cone pictures really mean?\"",
+      "evidence": "The first half is built from Susskind's rhetorical setup about the Big Bang happening 'everywhere,' not from an audience question. The second half folds in a separate later classroom exchange about whether a cylinder or cone is curved. This is a merged synthetic Q&A.",
+      "action": "Keep the 'everywhere' point in ordinary prose unless a real audience question is located, and split out the verified 01:38:04 cylinder/cone curvature exchange into its own classroomqa block."
+    },
+    {
+      "severity": "high",
+      "category": "provenance",
+      "locator": "\"The frame below is worth keeping precisely because...\"; \"This last equation is not directly visible in the captured frame...\"; captions for Figures 1.3, 1.4, and 1.5",
+      "evidence": "The chapter repeatedly explains why frames are retained, how equations were reconstructed, and what the redraws are doing. The charter bars production-language commentary in chapter prose, and captions are supposed to describe the physics shown, not editorial handling.",
+      "action": "Move reconstruction/provenance remarks to source footnotes or the source map, and rewrite captions so they state only the physics or geometry depicted."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "\"The cleaner convention, and the one we keep, is L = 2πa\"",
+      "evidence": "The transcript shows a live notational wobble about whether a denotes the total circumference or a radius-like parameter. The cleaned convention is reasonable, but it is an editorial repair and should not appear as if the lecture simply stated it that way.",
+      "action": "Mark the notation cleanup explicitly with a footnote or \\editorialnote{...} tied to the 01:26:40-01:29:20 discussion."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "Section \"Summary\"",
+      "evidence": "The lecture does not end with a recap section; it ends on the circle-universe spacetime pictures, the 'everywhere' Big Bang point, the cylinder/cone flatness exchange, and a preview of the next lecture. The imposed summary breaks the lecture-determined ending.",
+      "action": "Remove the forced summary and let the chapter end on the actual closing lecture material, optionally retaining the forward look to the next lecture."
+    },
+    {
+      "severity": "medium",
+      "category": "q_and_a",
+      "locator": "\"A second caution is briefly raised and deferred.\"",
+      "evidence": "At 00:20:23 there is a real audience question about Hubble recession exceeding the speed of light, and Susskind flags it as very important. The chapter compresses that exchange into narration and loses a useful transition the lecture explicitly marks for later return.",
+      "action": "Consider restoring this as a short verified classroomqa or an explicitly timestamped sentence so the chapter keeps the lecture's question-driven transition."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:15",
+      "end": "00:03:53",
+      "subject": "Course roadmap: start from expanding-universe geometry now, dynamics and broader cosmology later",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:03:57",
+      "end": "00:12:00",
+      "subject": "One-dimensional line of galaxies, comoving labels, scale factor, elastic-thread picture, and homogeneity",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:12:00",
+      "end": "00:20:08",
+      "subject": "Derivation of Hubble's law, Hubble parameter, and absence of a center",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:20:09",
+      "end": "00:31:36",
+      "subject": "Redshift, observational meaning of recession speed, Hubble's data, scatter, and bad early distance estimates",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:31:39",
+      "end": "00:40:05",
+      "subject": "Extension to two and three dimensions with isotropy and homogeneity",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:40:09",
+      "end": "00:48:59",
+      "subject": "Velocity versus acceleration, examples of different scale-factor time dependences, and arbitrariness of overall normalization",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:49:00",
+      "end": "00:59:55",
+      "subject": "Spatial metric, spacetime metric, and diagonal metric components for the expanding universe",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:59:58",
+      "end": "01:10:30",
+      "subject": "Homogeneity and isotropy in metric language, dx as label not distance, time-coordinate convention, dynamics deferred, and horizon limits",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "01:10:30",
+      "end": "01:22:17",
+      "subject": "Bounded without boundary: cube, sphere surface, cosmological principle, and the relation between isotropy and homogeneity",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:22:17",
+      "end": "01:31:45",
+      "subject": "Closed one-dimensional universe on a circle, angular coordinate, circumference, and local metric",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:31:45",
+      "end": "01:42:12",
+      "subject": "Spacetime picture of the circle universe, Big Bang everywhere, cylinder/cone/vase examples, and flatness of cylinder and cone away from the tip",
+      "chapter_status": "distorted"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:20:23",
+      "end": "00:20:46",
+      "question": "If the galaxies are far enough apart, does Hubble's law make them move faster than the speed of light?",
+      "answer_summary": "He says yes in this recession sense and marks the issue as very important for later cosmology.",
+      "verified": true
+    },
+    {
+      "start": "00:40:22",
+      "end": "00:45:02",
+      "question": "Does velocity proportional to distance mean a fixed pair of galaxies must be accelerating?",
+      "answer_summary": "No. Velocity increases with distance at a given moment, but whether a fixed pair speeds up, stays constant, or slows down depends on the time dependence of a(t); he illustrates this with a proportional to t, t squared, and log t.",
+      "verified": true
+    },
+    {
+      "start": "00:46:18",
+      "end": "00:48:32",
+      "question": "How do you set the initial value of the scale factor a?",
+      "answer_summary": "Its overall normalization is arbitrary. Rescaling a by a constant changes its name or units but leaves a-dot over a unchanged.",
+      "verified": true
+    },
+    {
+      "start": "01:01:18",
+      "end": "01:03:22",
+      "question": "Are we supposed to think of dx as a physical distance?",
+      "answer_summary": "No. x is a comoving label attached to the galaxies; the physical distance is a times dx, with units placed by convention in x, in a, or split between them.",
+      "verified": true
+    },
+    {
+      "start": "01:03:24",
+      "end": "01:05:21",
+      "question": "Is setting the coefficient of dt squared equal to 1 just a convention?",
+      "answer_summary": "Yes. If that coefficient depends only on time, one can redefine the time variable to absorb it.",
+      "verified": true
+    },
+    {
+      "start": "01:05:59",
+      "end": "01:07:14",
+      "question": "If this metric is inserted into Einstein's equations, what energy-momentum tensor do you get?",
+      "answer_summary": "He defers the question. The metric can be put into Einstein's equations to infer the required energy-momentum content, but this lecture is doing geometry, not dynamics.",
+      "verified": true
+    },
+    {
+      "start": "01:10:34",
+      "end": "01:10:55",
+      "question": "If we may never directly know what lies beyond the observable region, might there still be an indirect way?",
+      "answer_summary": "He allows that perhaps there could be, but says the issue belongs to later discussion.",
+      "verified": true
+    },
+    {
+      "start": "01:11:53",
+      "end": "01:13:39",
+      "question": "Could gravity reveal what lies beyond what we can see?",
+      "answer_summary": "Not in any straightforward way. Faraway mass would mainly place us in free fall; only tidal effects could reveal it, and those can be too small to detect.",
+      "verified": true
+    },
+    {
+      "start": "01:18:57",
+      "end": "01:20:32",
+      "question": "Does isotropy everywhere imply homogeneity?",
+      "answer_summary": "Yes. If every observer sees the same thing in every direction, that implies homogeneity, although homogeneity alone does not imply isotropy.",
+      "verified": true
+    },
+    {
+      "start": "01:38:04",
+      "end": "01:41:56",
+      "question": "If the circle-universe spacetime picture is a cylinder or a cone, is it curved?",
+      "answer_summary": "A cylinder is flat despite its embedding because it can be cut and laid flat. A cone is also flat except at its tip, which is a conical singularity.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_01_figure_02.png",
+      "timestamp": "00:56:40",
+      "verdict": "keep",
+      "reason": "This frame is the clearest witness to the late transition from comoving-coordinate picture to spacetime line element and diagonal metric components. The lecturer partly occludes the board, but the left spacetime sketch, central line element, and right metric layout are still useful together.",
+      "caption_guidance": "Spacetime line element and diagonal metric for comoving coordinates in the expanding universe."
+    },
+    {
+      "asset": "lecture_01_figure_03.png",
+      "timestamp": "01:28:45",
+      "verdict": "keep",
+      "reason": "This frame cleanly supports the closed one-dimensional circle model, including the angular coordinate, the marked origin θ = 0, and the circumference cue 2πa. It is directly relevant and legible enough to justify retention.",
+      "caption_guidance": "Closed one-dimensional universe parameterized by the angle θ, with total circumference 2πa."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "00:01:31-00:02:01",
+      "problem": "ASR",
+      "required_check": "audio"
+    },
+    {
+      "locator": "00:56:38-00:58:51",
+      "problem": "equation",
+      "required_check": "frame and audio"
+    },
+    {
+      "locator": "01:26:40-01:29:20",
+      "problem": "equation",
+      "required_check": "audio and frame"
+    },
+    {
+      "locator": "01:31:05-01:31:44",
+      "problem": "equation",
+      "required_check": "audio"
+    }
+  ]
+}

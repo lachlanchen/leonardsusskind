@@ -1,0 +1,22 @@
+# Editorial Audit
+
+- Status: **revise**
+- Findings: 8
+
+## Findings
+
+- **high / leakage** at `"These notes follow Leonard Susskind's first cosmology lecture ... preserved through LazyingArt LLC and Video2Book"`: The opening paragraph puts note-making method, transcript handling, and banned production names into chapter prose. The charter forbids this kind of workflow language and says credits/editorial method belong only in front matter or source footnotes. Repair: Remove the notes-about-notes framing from the chapter body. If any source-method credit must remain, move it to permitted front matter or a concise source footnote outside the prose.
+- **high / q_and_a** at `all subsectioned "Question & Answer" blocks`: The charter requires real audience exchanges to be rendered as classroom Q&A with timestamps. The current chapter uses untimestamped paragraph-style Question/Answer blocks instead of transcript-verified classroomqa structures. Repair: Convert only verified exchanges into timestamped classroom Q&A blocks using \lecturetimestamp{HH:MM:SS}, \audiencequestion{...}, and \lecturerresponse{...}.
+- **high / q_and_a** at `Section 1.6.1, "What exactly do homogeneity and isotropy buy us, and how are they related?"`: This is not a single audience question in the transcript. It blends ordinary exposition, the farmer's-field analogy, the horizon discussion, and the later exchange about whether isotropy everywhere implies homogeneity. Repair: Replace this synthesized Q&A with either ordinary prose or one or more real transcript-supported exchanges, especially the 01:18:57 question about isotropy and homogeneity.
+- **high / q_and_a** at `Section 1.7.1, "Where did the Big Bang happen, and what do the cylinder and cone pictures really mean?"`: The first half is built from Susskind's rhetorical setup about the Big Bang happening 'everywhere,' not from an audience question. The second half folds in a separate later classroom exchange about whether a cylinder or cone is curved. This is a merged synthetic Q&A. Repair: Keep the 'everywhere' point in ordinary prose unless a real audience question is located, and split out the verified 01:38:04 cylinder/cone curvature exchange into its own classroomqa block.
+- **high / provenance** at `"The frame below is worth keeping precisely because..."; "This last equation is not directly visible in the captured frame..."; captions for Figures 1.3, 1.4, and 1.5`: The chapter repeatedly explains why frames are retained, how equations were reconstructed, and what the redraws are doing. The charter bars production-language commentary in chapter prose, and captions are supposed to describe the physics shown, not editorial handling. Repair: Move reconstruction/provenance remarks to source footnotes or the source map, and rewrite captions so they state only the physics or geometry depicted.
+- **medium / mathematics** at `"The cleaner convention, and the one we keep, is L = 2πa"`: The transcript shows a live notational wobble about whether a denotes the total circumference or a radius-like parameter. The cleaned convention is reasonable, but it is an editorial repair and should not appear as if the lecture simply stated it that way. Repair: Mark the notation cleanup explicitly with a footnote or \editorialnote{...} tied to the 01:26:40-01:29:20 discussion.
+- **medium / structure** at `Section "Summary"`: The lecture does not end with a recap section; it ends on the circle-universe spacetime pictures, the 'everywhere' Big Bang point, the cylinder/cone flatness exchange, and a preview of the next lecture. The imposed summary breaks the lecture-determined ending. Repair: Remove the forced summary and let the chapter end on the actual closing lecture material, optionally retaining the forward look to the next lecture.
+- **medium / q_and_a** at `"A second caution is briefly raised and deferred."`: At 00:20:23 there is a real audience question about Hubble recession exceeding the speed of light, and Susskind flags it as very important. The chapter compresses that exchange into narration and loses a useful transition the lecture explicitly marks for later return. Repair: Consider restoring this as a short verified classroomqa or an explicitly timestamped sentence so the chapter keeps the lecture's question-driven transition.
+
+## Source Uncertainties
+
+- `00:01:31-00:02:01`: ASR Check: audio
+- `00:56:38-00:58:51`: equation Check: frame and audio
+- `01:26:40-01:29:20`: equation Check: audio and frame
+- `01:31:05-01:31:44`: equation Check: audio

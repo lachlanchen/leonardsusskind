@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "unsupported_claims": [],
+  "missing_beats": [],
+  "style_violations": [],
+  "provenance_gaps": [],
+  "q_and_a_checks": [
+    {
+      "locator": "If the galaxies are far enough apart, does Hubble's law make them move faster than the speed of light?",
+      "timestamp": "00:20:23",
+      "verified": true,
+      "reason": "This exchange is directly attested, and the revised response now keeps the source-tight deferral without adding unsupported later topics."
+    },
+    {
+      "locator": "If velocity is proportional to distance, and the distance is increasing, does that mean a fixed pair of galaxies must be accelerating away from each other?",
+      "timestamp": "00:40:22",
+      "verified": true,
+      "reason": "The exchange is source-backed and the revised chapter preserves the distinction between velocity as a function of distance and the time behavior of a fixed pair."
+    },
+    {
+      "locator": "How do you set the initial value of the scale factor a?",
+      "timestamp": "00:46:18",
+      "verified": true,
+      "reason": "The question and the normalization-arbitrariness answer are directly attested, including the rescaling example with b=3a."
+    },
+    {
+      "locator": "Are we not supposed to think of dx as a distance?",
+      "timestamp": "01:01:18",
+      "verified": true,
+      "reason": "This is a real audience exchange in the transcript, and the revised chapter now keeps it explicitly as classroom dialogue."
+    },
+    {
+      "locator": "The metric coefficient of dt^2 is equal to 1. Is that just by convention also?",
+      "timestamp": "01:03:24",
+      "verified": true,
+      "reason": "The convention question is explicitly asked in the lecture and is now restored as a separate Q&A block."
+    },
+    {
+      "locator": "If you put this into Einstein's field equations, what do you get for the energy-momentum tensor?",
+      "timestamp": "01:05:59",
+      "verified": true,
+      "reason": "The question is genuine and the revised chapter now preserves the geometry-versus-dynamics deferral as attested dialogue."
+    },
+    {
+      "locator": "You said we will never really directly find out. Does that imply that there might be an indirect way to find out?",
+      "timestamp": "01:10:34",
+      "verified": true,
+      "reason": "This exchange is present in the transcript and is now kept as a distinct classroom question with the lecturer's qualified answer."
+    },
+    {
+      "locator": "Couldn't you use gravity to look for masses beyond what you can see?",
+      "timestamp": "01:11:53",
+      "verified": true,
+      "reason": "This is a real audience exchange, and the revised chapter now preserves the free-fall and tidal-force answer in dialogue form."
+    },
+    {
+      "locator": "Does isotropy everywhere imply homogeneity?",
+      "timestamp": "01:18:57",
+      "verified": true,
+      "reason": "The question is directly attested and the answer correctly keeps the distinction between homogeneity and isotropy."
+    },
+    {
+      "locator": "You said the spacetime is curved. Is it curved if that were a cylinder?",
+      "timestamp": "01:38:04",
+      "verified": true,
+      "reason": "The chapter preserves the actual cylinder question and keeps the later cone discussion separate in prose, matching the source order."
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_01_figure_02.png",
+      "timestamp": "00:56:40",
+      "verdict": "keep",
+      "reason": "The frame provides useful blackboard evidence for the comoving spacetime sketch, the one-dimensional line element, and the metric layout, even though part of the board is occluded."
+    },
+    {
+      "asset": "lecture_01_figure_03.png",
+      "timestamp": "01:28:45",
+      "verdict": "keep",
+      "reason": "The frame clearly supports the circle model, including the theta label, the theta=0 mark, and the separate 2pi a segment."
+    }
+  ],
+  "source_map": [
+    {
+      "locator": "Opening chapter paragraph on the geometry-first aim",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:16",
+        "00:02:01",
+        "00:02:25"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The lecture explicitly goes straight to the expanding universe and postpones dynamics."
+    },
+    {
+      "locator": "Section on comoving coordinates and the formulas d=a Delta x and d(t)=a(t) Delta x",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:06:01",
+        "00:07:46",
+        "00:10:19"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The labels-as-names explanation and the scale-factor relation are stated directly."
+    },
+    {
+      "locator": "Hubble-law derivation and the absence of a center",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:13:27",
+        "00:15:20",
+        "00:19:37"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The calculation for two fixed galaxies and the no-center interpretation are both explicit in the lecture."
+    },
+    {
+      "locator": "Superluminal-recession classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:20:23"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "A student asks about recession faster than light and the answer defers the issue without further elaboration."
+    },
+    {
+      "locator": "Redshift discussion and Hubble's rough observational argument",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:20:49",
+        "00:24:30",
+        "00:28:22",
+        "00:30:49"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The transcript supports the Doppler-redshift discussion, rough distance measures, and the noisy first Hubble plot."
+    },
+    {
+      "locator": "Higher-dimensional extension, isotropy motivation, and Pythagorean distance formulas",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:31:39",
+        "00:33:44",
+        "00:37:59",
+        "00:39:38"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The grid model, isotropy argument, and two- and three-dimensional formulas are all spoken explicitly."
+    },
+    {
+      "locator": "Acceleration-versus-distance classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:40:22",
+        "00:42:29",
+        "00:43:17",
+        "00:44:22"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The exchange distinguishes Hubble's law from the time evolution of a fixed pair's recession speed."
+    },
+    {
+      "locator": "Scale-factor normalization exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:46:18",
+        "00:47:44"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The arbitrariness of the overall normalization and the unchanged ratio A-dot over A are source-backed."
+    },
+    {
+      "locator": "One-dimensional spatial and spacetime metric formulas",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:49:44",
+        "00:50:31",
+        "00:52:33",
+        "00:54:16"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The lecture moves from ds=a dx to ds^2=a^2 dx^2 and then to d tau^2 = dt^2 - a^2 dx^2."
+    },
+    {
+      "locator": "Figure lecture_01_figure_02.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:56:40"
+      ],
+      "reference": "generated_course_notes/core/cosmology/2009_winter_legacy_cosmology/figures/lecture_01_figure_02.png",
+      "confidence": "medium",
+      "note": "The board is partly blocked, but the spacetime sketch, line element, and metric layout remain legible enough to justify the retained screenshot."
+    },
+    {
+      "locator": "Three-dimensional spacetime extension and diagonal metric",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:58:06",
+        "00:58:39"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "medium",
+      "note": "The clean 3D form is reconstructed from the spoken extension together with the partially visible diagonal pattern on the board."
+    },
+    {
+      "locator": "dx question, dt^2-convention question, and Einstein-equations question",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:01:18",
+        "01:03:24",
+        "01:05:59"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "All three exchanges are directly attested and are now preserved as separate classroom dialogue."
+    },
+    {
+      "locator": "Horizon discussion, indirect-evidence exchange, gravity objection, and thousand-times-larger claim",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:08:50",
+        "01:10:34",
+        "01:11:53",
+        "01:13:50"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The horizon limit, the possibility of indirect evidence, the free-fall and tidal-force answer, and the immense unseen volume are all source-backed."
+    },
+    {
+      "locator": "Closed-geometry discussion rejecting the line segment, cube, and ball interior",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:15:07",
+        "01:16:51",
+        "01:17:03"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The revised chapter now keeps the actual sequence of rejected bounded models before moving to the surface-of-sphere idea."
+    },
+    {
+      "locator": "Isotropy-everywhere exchange and surface-of-sphere model",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:18:57",
+        "01:20:35",
+        "01:21:00"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The lecture explicitly gives the isotropy-everywhere point and then turns to the featureless sphere as bounded without boundary."
+    },
+    {
+      "locator": "Circle geometry, intrinsic circumference, and the 2pi a convention",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:25:45",
+        "01:26:40",
+        "01:28:01",
+        "01:29:42"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The circle inhabitants' access to circumference rather than an external radius and the later 2pi a convention are both attested."
+    },
+    {
+      "locator": "Figure lecture_01_figure_03.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "01:28:45"
+      ],
+      "reference": "generated_course_notes/core/cosmology/2009_winter_legacy_cosmology/figures/lecture_01_figure_03.png",
+      "confidence": "high",
+      "note": "The angular labels and the separate 2pi a segment are directly visible in the preserved frame."
+    },
+    {
+      "locator": "Circle-universe Hubble law, Big Bang everywhere, cylinder flatness, and cone discussion",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:34:41",
+        "01:35:45",
+        "01:37:58",
+        "01:38:04",
+        "01:40:25",
+        "01:41:19"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The lecture explicitly keeps Hubble's law on the circle, answers the Big Bang question with everywhere, and distinguishes the flat cylinder from the cone, which is flat away from its tip."
+    },
+    {
+      "locator": "You said we will never really directly find out. Does that imply that there might be an indirect way to find out?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:10:34"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "This exchange is present in the transcript and is now kept as a distinct classroom question with the lecturer's qualified answer."
+    },
+    {
+      "locator": "Couldn't you use gravity to look for masses beyond what you can see?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:11:53"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "This is a real audience exchange, and the revised chapter now preserves the free-fall and tidal-force answer in dialogue form."
+    },
+    {
+      "locator": "You said the spacetime is curved. Is it curved if that were a cylinder?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:38:04"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/040 - Cosmology ｜ Lecture 1 [32wIKaLkvc4].md",
+      "confidence": "high",
+      "note": "The chapter preserves the actual cylinder question and keeps the later cone discussion separate in prose, matching the source order."
+    }
+  ]
+}
