@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
+  "chapter": "lecture_08",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].mkv",
+  "entries": [
+    {
+      "locator": "\\section{Omega and the Evidence for Flatness} opening FRW equation",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:32",
+        "00:02:05",
+        "00:02:40"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture explicitly returns to the FRW equation, names the vacuum term \\(\\rho_0\\), and introduces the matter term for the late universe."
+    },
+    {
+      "locator": "Omega normalization block \\(\\Omega_0,\\Omega_m,\\Omega_k\\) and \\(\\Omega_0+\\Omega_m+\\Omega_k=1\\)",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:04:20",
+        "00:05:42",
+        "00:08:21"
+      ],
+      "reference": "",
+      "confidence": "medium",
+      "note": "The transcript securely supports dividing by \\(H^2\\) and the statement that the normalized terms add to one; the exact standardized notation is an editorial regularization."
+    },
+    {
+      "locator": "Flatness condition \\(\\Omega_0+\\Omega_m=1\\)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:06:33",
+        "00:08:49"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture states explicitly that if \\(k=0\\), the vacuum and matter terms must add to one."
+    },
+    {
+      "locator": "Cross-checks for present-day flatness",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:12:51",
+        "00:14:03",
+        "00:15:01"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Matter measurement, Hubble measurement, and geometric curvature measurement are all described in the transcript."
+    },
+    {
+      "locator": "\\section{From Flatness to Structure} one-part-in-\\(10^5\\) inhomogeneity",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:17:21",
+        "00:18:00",
+        "00:33:00"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture states the fluctuation level near transparency several times."
+    },
+    {
+      "locator": "Pressure-versus-gravity discussion and \\(p=w\\rho\\) values",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:20:46",
+        "00:21:19",
+        "00:22:24",
+        "00:23:38"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The transcript explicitly recalls \\(w=1/3\\) for radiation, \\(w=-1\\) for vacuum, and \\(w=0\\) for matter, then uses them to explain why collapse waits until radiation is unimportant."
+    },
+    {
+      "locator": "Dark-matter halos, baryons, and timing before transparency",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:24:42",
+        "00:25:02",
+        "00:27:23",
+        "00:28:12"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture explicitly says dark matter begins the halo formation and that contraction starts somewhat before transparency."
+    },
+    {
+      "locator": "Heavy-elements aside and CMB temperature pattern",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:12",
+        "00:30:34",
+        "00:31:38",
+        "00:32:20"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The transcript directly covers stellar production of heavy elements, velocity fluctuations, gravitational redshift, and Doppler contributions."
+    },
+    {
+      "locator": "\\section{The Inflaton and the Plateau} scalar-field energy density \\(\\rho_\\phi\\)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:36:05",
+        "00:37:27",
+        "00:37:55"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture verbally enumerates the time-derivative term, the spatial-gradient term, and the potential term, with the conventional factors of one-half."
+    },
+    {
+      "locator": "Present vacuum energy \\(10^{-123}\\) and qualitative plateau shape",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:39:24",
+        "00:40:44",
+        "00:41:11"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture describes the flat plateau, the drop, and the small positive residual vacuum energy."
+    },
+    {
+      "locator": "lecture_08_figure_03.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:43:23"
+      ],
+      "reference": "generated_course_notes/core/cosmology/2009_winter_legacy_cosmology/figures/lecture_08_figure_03.png",
+      "confidence": "high",
+      "note": "The screenshot is the clearest surviving board image of the inflaton potential."
+    },
+    {
+      "locator": "Relation \\(H\\propto \\sqrt{V(\\phi)}\\) and near-exponential growth",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:43:27",
+        "00:43:41",
+        "00:44:02"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The speaker explicitly states proportionality and says he is omitting numerical factors such as \\(8\\pi\\)."
+    },
+    {
+      "locator": "Homogeneous effective Lagrangian \\(L_{\\mathrm{hom}}=a^3[\\tfrac12\\dot\\phi^2-V(\\phi)]\\)",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:53:34",
+        "00:53:53",
+        "00:54:01"
+      ],
+      "reference": "",
+      "confidence": "medium",
+      "note": "The transcript securely gives the logic: treat the field as homogeneous, take \\(T-V\\), and multiply the density by the physical volume \\(a^3\\); the compact displayed formula is an editorial reconstruction of that spoken derivation."
+    },
+    {
+      "locator": "Equation of motion \\(\\frac{d}{dt}(a^3\\dot\\phi)=-a^3\\partial V/\\partial\\phi\\) and \\(\\ddot\\phi+3H\\dot\\phi=-\\partial V/\\partial\\phi\\)",
+      "kind": "equation",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:54:24",
+        "00:56:02",
+        "00:57:00"
+      ],
+      "reference": "generated_course_notes/core/cosmology/2009_winter_legacy_cosmology/figures/lecture_08_figure_05.png",
+      "confidence": "high",
+      "note": "These equations are both spoken through and visibly present on the board, including the explicit correction of the minus sign."
+    },
+    {
+      "locator": "lecture_08_figure_05.png",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:57:10"
+      ],
+      "reference": "generated_course_notes/core/cosmology/2009_winter_legacy_cosmology/figures/lecture_08_figure_05.png",
+      "confidence": "high",
+      "note": "The screenshot is strong direct support for the Hubble-friction discussion."
+    },
+    {
+      "locator": "\\section{Quantum Fluctuations and Horizon Exit} freeze-out and shrinking comoving horizon",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:01:40",
+        "01:04:38",
+        "01:09:42",
+        "01:14:12"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture explicitly develops the wave/rope analogy, the fixed physical horizon scale, and the shrinking horizon in comoving coordinates."
+    },
+    {
+      "locator": "Scale-invariant spectrum and continuing freeze-out of new modes",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:15:13",
+        "01:16:41",
+        "01:20:33",
+        "01:21:16"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The transcript directly states that stretching old modes and freezing new ones leads to an approximately scale-invariant steady pattern."
+    },
+    {
+      "locator": "\\section{From Frozen Field Variations to Density Variations} slower roll gives larger final density contrasts",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:21:38",
+        "01:24:02",
+        "01:26:38",
+        "01:27:58"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture presents this qualitatively, without the textbook formulas removed from the earlier version."
+    },
+    {
+      "locator": "Gravitational-wave window and units \\([\\rho]=(\\mathrm{mass})^4\\)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:29:55",
+        "01:30:54",
+        "01:31:17",
+        "01:31:59"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The transcript supports only rough order-of-magnitude bounds for the energy density, and directly explains the mass-to-the-fourth units via natural units."
+    },
+    {
+      "locator": "\\section{What Inflation Hides} erasure of earlier conditions and \\(a(t)\\propto \\cosh(Ht)\\)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:34:04",
+        "01:35:47",
+        "01:39:39",
+        "01:40:18"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The lecture explicitly ties inflation's success to erasing earlier information and replaces the exact eternal exponential with the global de Sitter \\(\\cosh\\) form."
+    },
+    {
+      "locator": "\\section{Tuning, Curvature, and Anthropic Bounds} 2 percent estimate, Weinberg bound, and 59.5 e-folding threshold",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:46:02",
+        "01:47:48",
+        "01:52:42",
+        "01:56:07"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The transcript explicitly gives the rough 2 percent tuning estimate, the anthropic discussion of the cosmological constant, and the lower bound of about 59.5 e-foldings for galaxy formation."
+    },
+    {
+      "locator": "Does matter include dark matter?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:10:50"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct audience question and answer in transcript; revised wording stays close to the source and keeps the radiation caveat."
+    },
+    {
+      "locator": "Is there some measure of dark energy other than the Hubble constant?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:11:11"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response preserves the point that the evidence is the tendency toward exponential expansion together with the other measurements."
+    },
+    {
+      "locator": "Why didn't gravity make the lumps grow earlier?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:20:29"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response accurately keeps the radiation-pressure explanation."
+    },
+    {
+      "locator": "Don't you need a dissipation mechanism for collapse?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:24:35"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response preserves the dark-matter halo point and the later promise of expansion-driven damping."
+    },
+    {
+      "locator": "Were there also velocity fluctuations, so that later galaxies could acquire angular momentum?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:30:34"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response correctly keeps the density-plus-velocity point and its relation to the observed temperature pattern."
+    },
+    {
+      "locator": "What is \\(\\phi\\) a field on, and are Einstein's equations still being used?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:44:07"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "This is a faithful condensation of the multipart audience question and the response that the Friedmann equation is still being used with \\(V(\\phi)\\) as the dominant energy density when slow roll holds."
+    },
+    {
+      "locator": "How can vacuum-like inflaton energy turn into matter and radiation?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:47:04"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response accurately keeps the oscillating quanta and decay picture."
+    },
+    {
+      "locator": "Why doesn't the field just oscillate forever, and what provides the damping?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:50:48"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response correctly identifies expansion as the source of the friction-like term."
+    },
+    {
+      "locator": "What does the horizon look like on the spacetime graph?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:12:02"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response correctly distinguishes fixed physical horizon size from shrinking comoving horizon size."
+    },
+    {
+      "locator": "What happens to the amplitude as the fluctuations are stretched, and is there a steady state?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:15:59"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response preserves the dilution of individual modes and the continuing freeze-out of new modes."
+    },
+    {
+      "locator": "Does \\(\\phi\\) undergo a random walk, and does that make the earlier starting point irrelevant?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:33:04"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "The revised Q&A matches the verified exchange cluster identified in the source packet: random walk at a point, different walks at different places, and the difficulty of recovering earlier information."
+    },
+    {
+      "locator": "Could there have been no start, with exponential behavior continuing indefinitely into the past?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:37:31"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response accurately keeps the move from pure exponential language to the \\(\\cosh(Ht)\\) de Sitter picture and the open question about the contracting branch."
+    },
+    {
+      "locator": "Can inflation be understood in terms of a parameter space, and how tuned is it?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:46:02"
+      ],
+      "reference": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+      "confidence": "high",
+      "note": "Direct exchange in transcript; revised response correctly retains the height-slope-width parameterization and the rough few-percent estimate."
+    }
+  ]
+}

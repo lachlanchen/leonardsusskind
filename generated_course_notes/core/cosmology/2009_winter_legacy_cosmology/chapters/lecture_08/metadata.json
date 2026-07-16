@@ -1,7 +1,7 @@
 {
   "course_rel": "core/cosmology/2009_winter_legacy_cosmology",
-  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology \uff5c Lecture 8 [9R57sdG61tA].md",
-  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology \uff5c Lecture 8 [9R57sdG61tA].mkv",
+  "transcript_rel": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].md",
+  "video_rel": "core/cosmology/2009_winter_legacy_cosmology/047 - Cosmology ｜ Lecture 8 [9R57sdG61tA].mkv",
   "lecture_number": 8,
   "lecture_slug": "lecture_08",
   "lecture_title": "Cosmology : Lecture 8",
@@ -40,7 +40,7 @@
       "timestamp_hhmmss": "00:43:23.409",
       "source_candidate": "lecture_08_window_04_candidate_02_004323409.png",
       "recommended_use": "screenshot_plus_tikz",
-      "rationale": "This frame is the clearest and most useful for note writing because it preserves the full qualitative shape of the potential with minimal occlusion. The long left plateau, sharp drop, local minimum, and rising right-hand branch are all visible at once, while the lecturer\u2019s hand sits low enough that it does not cover the essential turning points of the curve. The neighboring frames are similar, but this one is the most balanced and readable.",
+      "rationale": "This frame is the clearest and most useful for note writing because it preserves the full qualitative shape of the potential with minimal occlusion. The long left plateau, sharp drop, local minimum, and rising right-hand branch are all visible at once, while the lecturer’s hand sits low enough that it does not cover the essential turning points of the curve. The neighboring frames are similar, but this one is the most balanced and readable.",
       "subtitle_excerpt": "then the value of the potential energy",
       "segment_start_seconds": 2602.52,
       "segment_start_hhmmss": "00:43:22.520",
@@ -76,5 +76,6 @@
       "segment_end_hhmmss": "00:57:11.220",
       "caption_hint": "the derivative of the potential energy."
     }
-  ]
+  ],
+  "schema_version": 2
 }

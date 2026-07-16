@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_08",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "front_matter",
+      "locator": "chapter opening paragraph",
+      "evidence": "The chapter opens with editorial framing and forbidden credit/process language: \"These notes follow Leonard Susskind's eighth lecture...\" and \"The classroom record is due to Leonard Susskind, LazyingArt LLC, and Video2Book.\" The charter forbids workflow, production, and private-credit language in chapter prose.",
+      "action": "Delete the prefatory paragraph from the chapter body. If any credit or editorial-method statement is needed, move it to allowed front matter outside the chapter and remove workflow names."
+    },
+    {
+      "severity": "high",
+      "category": "voice",
+      "locator": "opening overview and internal markers such as \"The lecture begins...\" and \"This is the first important beat of the chapter.\"",
+      "evidence": "The prose repeatedly narrates lecture choreography instead of entering the physics directly, and it uses internal staging language that does not belong in the notes.",
+      "action": "Begin directly with the Omega discussion and the Friedmann bookkeeping, and remove chapter-management phrases such as \"important beat of the chapter\"."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "all three synthetic \"Question & Answer\" subsections",
+      "evidence": "Real classroom exchanges are flattened into untimestamped summary paragraphs, and the required `classroomqa` structure is not used. The transcript contains verified audience questions at several key points, especially 00:20:29, 00:24:35, 00:50:48, 01:12:02, and 01:33:04.",
+      "action": "Restore genuine exchanges as `classroomqa` blocks with `\\lecturetimestamp{...}`, `\\audiencequestion{...}`, and `\\lecturerresponse{...}` at the relevant places. Do not synthesize new Q&A headers."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "Omega standardization block beginning \"we standardize once and for all\"",
+      "evidence": "The transcript clearly supports the FRW bookkeeping argument and the statement that the normalized terms add to one after dividing by H^2, but the exact notation block with `\\Omega_\\Lambda`, `\\Omega_m`, and `\\Omega_k` is a cleaned editorial reconstruction over rough audio and only partly legible board work.",
+      "action": "Keep the standardized notation only if it is marked as an editorial clarification or footnoted as a normalization of the rough spoken notation; otherwise recast the point in prose."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "\"H^2\\simeq \\frac{8\\pi G}{3}\\,V(\\phi)\" and \"L_{\\rm eff}=a^3(t)[\\frac12\\dot\\phi^2-V(\\phi)]\"",
+      "evidence": "The lecture gives `H \\propto \\sqrt{V(\\phi)}` explicitly and the later board securely gives the Euler-Lagrange equations, but the exact normalization and the top Lagrangian line are only partially spoken or partially visible. They are defensible reconstructions, not plain lecture equations.",
+      "action": "Mark these equations as editorial reconstructions with concise provenance notes, or restrict the text to the directly spoken proportionality and the secure board equations."
+    },
+    {
+      "severity": "high",
+      "category": "fidelity",
+      "locator": "\"\\delta t\\sim \\frac{\\delta\\phi}{\\dot\\phi}, \\qquad \\frac{\\delta\\rho}{\\rho}\\propto H\\,\\delta t \\sim H\\,\\frac{\\delta\\phi}{\\dot\\phi}.\" and \"N=\\ln\\!\\frac{a_f}{a_i}=\\int_{t_i}^{t_f} H\\,dt\"",
+      "evidence": "These are textbook-style condensations of the lecture's qualitative argument. The supplied transcript and board frames do not present these formulas explicitly.",
+      "action": "Remove these displayed formulas, or replace them with transcript-faithful prose explaining that slower roll and higher plateau produce larger final density fluctuations and that the number of e-foldings depends on the height, width, and slope."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "\"10^{-16}\\lesssim V \\lesssim 10^{-14}\" tensor-window inequality",
+      "evidence": "The lecture gives only rough ballpark estimates for the inflationary energy scale and explicitly says the speaker does not remember the precise numbers. The clean inequality overstates the precision of the source.",
+      "action": "Soften this to rough order-of-magnitude prose and attach a provenance note that the numerical bounds are approximate spoken estimates."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "captions for the inflationary-potential screenshot, the overdensity redraw, the potential redraw, and the Hubble-friction screenshot",
+      "evidence": "Several captions contain prohibited process or provenance language rather than physics-only description, for example \"A transcript-backed schematic...\", \"The lecture uses this blackboard sketch...\", \"note-writer reconstructions...\", and \"the top Lagrangian line is only partial and is regularized in the text.\"",
+      "action": "Rewrite captions so they describe only the physics shown. Move provenance, uncertainty, and editorial-reconstruction remarks to footnotes or a source map."
+    },
+    {
+      "severity": "low",
+      "category": "structure",
+      "locator": "final section `\\section{Summary}`",
+      "evidence": "The lecture does not end with a recap; it ends in open questions about fine-tuning, anthropic conditioning, and what inflation erases. The added summary feels imposed rather than lecture-determined.",
+      "action": "Remove the summary section and let the chapter close on the anthropic/fine-tuning discussion, or fold any necessary concluding sentence into that final section."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:11",
+      "end": "00:15:25",
+      "subject": "Omega as FRW bookkeeping, present-day matter plus vacuum terms, and observational flatness from cross-checks",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:15:28",
+      "end": "00:20:28",
+      "subject": "Inflation as explanation of flatness, but exact smoothness would forbid structure; primordial inhomogeneity near 10^-5",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:20:29",
+      "end": "00:29:06",
+      "subject": "Pressure versus gravity, dark-matter halos, dissipation, and the matter-radiation crossover before transparency",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:29:12",
+      "end": "00:33:10",
+      "subject": "Heavy-elements aside, velocity fluctuations, and why overdense regions look colder in the microwave background",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:33:24",
+      "end": "00:36:01",
+      "subject": "Quantum mechanics, not insufficient inflation, as the unavoidable source of surviving fluctuations",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:36:05",
+      "end": "00:50:15",
+      "subject": "Scalar-field energy terms, the plateau potential, inflaton decay, and conversion into ordinary particles",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:50:48",
+      "end": "00:59:05",
+      "subject": "Derivation of the inflaton equation of motion and Hubble friction",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:01:40",
+      "end": "01:21:14",
+      "subject": "Freeze-out beyond the temporary horizon, re-entry, scale invariance, and random-walk accumulation of fluctuations",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:21:31",
+      "end": "01:28:31",
+      "subject": "How field variations become density variations after the cliff, with dependence on slope and height",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:28:56",
+      "end": "01:33:04",
+      "subject": "Gravitational-wave bounds and the mass^4 units of the inflationary energy density",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:33:10",
+      "end": "01:45:10",
+      "subject": "Inflation's success at erasing earlier initial conditions, de Sitter `cosh(Ht)`, and the difficulty of recovering the pre-inflationary past",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:46:02",
+      "end": "01:58:24",
+      "subject": "Parameter-space tuning, the rough 2 percent estimate, Weinberg's anthropic bound, curvature dilution, and the minimum number of e-foldings",
+      "chapter_status": "present"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:10:50",
+      "end": "00:11:06",
+      "question": "Does matter include dark matter?",
+      "answer_summary": "Yes. For present purposes matter includes dark matter, while radiation is neglected because it is too small today.",
+      "verified": true
+    },
+    {
+      "start": "00:11:11",
+      "end": "00:15:08",
+      "question": "Is there some measure of dark energy other than the Hubble constant?",
+      "answer_summary": "The key evidence is not H by itself but the way the expansion tends toward an exponential, together with flatness and matter measurements that let one infer the vacuum term.",
+      "verified": true
+    },
+    {
+      "start": "00:20:29",
+      "end": "00:24:34",
+      "question": "Why didn't gravity make the lumps grow earlier?",
+      "answer_summary": "Because during radiation domination the positive radiation pressure was large enough to homogenize the medium and suppress gravitational collapse; once matter dominated, gravity won.",
+      "verified": true
+    },
+    {
+      "start": "00:24:35",
+      "end": "00:26:59",
+      "question": "Don't you need a dissipation mechanism for collapse?",
+      "answer_summary": "Dark matter can form halos before ordinary baryons dissipate, and cosmology also has an expansion-driven damping effect that will matter later in the inflaton discussion.",
+      "verified": true
+    },
+    {
+      "start": "00:30:34",
+      "end": "00:32:39",
+      "question": "Were there also velocity fluctuations and angular momentum, not just density fluctuations?",
+      "answer_summary": "Yes. The primordial pattern includes density and velocity fluctuations, and what we observe on the sky is a temperature anisotropy that mixes gravitational redshift and Doppler effects.",
+      "verified": true
+    },
+    {
+      "start": "00:44:07",
+      "end": "00:44:45",
+      "question": "What is the field phi living on, and are Einstein's equations still being used?",
+      "answer_summary": "Phi is a field on spacetime, and the same Einstein-FRW equation is still being used, with the energy density supplied mainly by V(phi) when the field varies slowly.",
+      "verified": true
+    },
+    {
+      "start": "00:47:04",
+      "end": "00:50:15",
+      "question": "How can vacuum-like inflaton energy turn into matter and radiation?",
+      "answer_summary": "Once the field rolls to the bottom and oscillates, those oscillations are inflaton quanta, and if the quanta are unstable they decay into photons, electrons, and other ordinary particles.",
+      "verified": true
+    },
+    {
+      "start": "00:50:48",
+      "end": "00:59:05",
+      "question": "Why doesn't the field just oscillate forever, and what provides the damping?",
+      "answer_summary": "Expansion itself produces a friction-like term. Differentiating the a^3 factor in the homogeneous-field Lagrangian gives the 3H phi-dot term, which behaves like viscous drag.",
+      "verified": true
+    },
+    {
+      "start": "01:12:02",
+      "end": "01:14:18",
+      "question": "What does the horizon look like on the space-time graph?",
+      "answer_summary": "The physical horizon stays at roughly c/H during exponential expansion, but in comoving coordinates it shrinks like 1 over aH, so more and more modes cross outside it and freeze.",
+      "verified": true
+    },
+    {
+      "start": "01:15:59",
+      "end": "01:17:00",
+      "question": "What happens to the amplitude as the fluctuations are stretched, and is there a steady state?",
+      "answer_summary": "Individual modes dilute as they are stretched, but new modes continually freeze out, so the field settles into a statistical, approximately scale-invariant steady pattern.",
+      "verified": true
+    },
+    {
+      "start": "01:33:04",
+      "end": "01:35:31",
+      "question": "Does phi undergo a random walk, and does that make the earlier starting point irrelevant?",
+      "answer_summary": "At any fixed point the frozen modes add with random phase, so phi does execute a random walk; inflation's very success is that it erases most earlier information and makes the prior stage hard to recover.",
+      "verified": true
+    },
+    {
+      "start": "01:37:31",
+      "end": "01:40:17",
+      "question": "Could there have been no start, just continued exponential behavior into the past?",
+      "answer_summary": "Not in the simple picture being used. Exact de Sitter is more like cosh(Ht), contracting and then expanding, and whether to take that earlier contracting branch literally is left open.",
+      "verified": true
+    },
+    {
+      "start": "01:46:02",
+      "end": "01:48:18",
+      "question": "Can inflation be understood in terms of a parameter space, and how tuned is it?",
+      "answer_summary": "To first approximation the important parameters are the height, slope, and width of the plateau; the lecture gives a rough estimate that getting enough e-foldings corresponds to tuning at the few-percent level.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_08_figure_01.png",
+      "timestamp": "00:00:08",
+      "verdict": "remove",
+      "reason": "This is only the Stanford title card. It contains no blackboard mathematics, diagram, or classroom evidence and should not appear as a lecture-note figure.",
+      "caption_guidance": "omit"
+    },
+    {
+      "asset": "lecture_08_figure_02.png",
+      "timestamp": "00:26:34",
+      "verdict": "remove",
+      "reason": "The frame preserves residual Omega-board terms and a boxed H^2 expression, but it is weakly legible, not self-sufficient, and not a strong visual match to the dark-matter-dissipation discussion attached to this moment.",
+      "caption_guidance": "omit"
+    },
+    {
+      "asset": "lecture_08_figure_03.png",
+      "timestamp": "00:43:23",
+      "verdict": "keep",
+      "reason": "This is the clearest documentary frame for the inflationary potential: the broad plateau, the steep drop, the low minimum, and the rising right branch are all visible with minimal occlusion.",
+      "caption_guidance": "Qualitative inflaton potential with a broad plateau, a steep drop, and a low minimum."
+    },
+    {
+      "asset": "lecture_08_figure_04.png",
+      "timestamp": "00:54:21",
+      "verdict": "replace",
+      "reason": "The frame documents the transition from the potential sketch to exponential growth, but the H-versus-V relation is partial and the board is mixed and partly obscured. Clean typeset equations are stronger than this screenshot for the final notes.",
+      "caption_guidance": "If retained at all: Exponential growth law beside the inflaton potential."
+    },
+    {
+      "asset": "lecture_08_figure_05.png",
+      "timestamp": "00:57:10",
+      "verdict": "keep",
+      "reason": "This is the strongest equation board in the set. The Euler-Lagrange form and the final equation with the 3H phi-dot damping term are both clearly legible and directly support the Hubble-friction derivation.",
+      "caption_guidance": "Homogeneous inflaton equation of motion showing the Hubble-friction term 3H phi-dot."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "00:04:00-00:09:15 Omega-definition block in the chapter",
+      "problem": "The transcript is rough and the board is only partly legible during the normalized-Omega discussion, so exact notation choices and sign conventions are editorial cleanup rather than clean transcription.",
+      "required_check": "audio and board frame, especially lecture_08_figure_02.png"
+    },
+    {
+      "locator": "00:43:23-00:44:49 equations relating H and V(phi)",
+      "problem": "The lecture states proportionality and explicitly says the 8pi factors are being omitted. The exact normalized equality should not be presented as a plain lecture equation without checking or marking it.",
+      "required_check": "audio and lecture_08_figure_04.png"
+    },
+    {
+      "locator": "00:52:52-00:57:11 effective Lagrangian line",
+      "problem": "The top board line is partial and the lecture distinguishes energy density, Lagrangian density, and full Lagrangian. The cleaned `a^3[1/2 phi-dot^2 - V(phi)]` form is a reconstruction.",
+      "required_check": "audio and lecture_08_figure_05.png"
+    },
+    {
+      "locator": "chapter formulas for delta t, delta rho/rho, and N in the final major section",
+      "problem": "These displayed formulas are not directly stated in the supplied lecture evidence and read as textbook condensations.",
+      "required_check": "named reference or removal if no primary-source support is available"
+    },
+    {
+      "locator": "01:29:55-01:32:31 gravitational-wave window and energy-scale bounds",
+      "problem": "The speaker gives ballpark numbers and explicitly says he does not remember the precise values. A sharp printed inequality overstates the certainty of the source.",
+      "required_check": "audio"
+    }
+  ]
+}
