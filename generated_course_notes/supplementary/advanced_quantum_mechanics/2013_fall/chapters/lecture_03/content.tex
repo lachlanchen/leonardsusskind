@@ -1,111 +1,195 @@
-\chapter{Angular Momentum, Central Forces, and the Oscillator Ladder}
+\chapter{Angular-Momentum Multiplets, Radial Motion, and the Oscillator Ladder}
 
-These notes follow Leonard Susskind's \emph{Advanced Quantum Mechanics} Lecture~3, curated by LazyingArt LLC. The lecture opens as a continuation of the previous discussion of angular momentum, but almost immediately shifts from algebra to physics: angular momentum is the language of how a wavefunction depends on angles. From there the hour unfolds in two acts. First, angular-momentum multiplets are reconstructed and then used to reduce the central-force Schr\"odinger equation to a one-dimensional radial problem. Second, the same ladder-operator instinct reappears in the harmonic oscillator. Throughout, Susskind suppresses factors of \(\hbar\) on the board; they are restored here.
+\section{Angular Dependence of the Wavefunction}
 
-\section{Angular Momentum as Angular Dependence of the Wavefunction}
-
-Susskind begins by recalling the angular-momentum operators and the multiplets they form, but he does not stay in recap mode for long. Instead he asks what angular momentum is really about. His example is a particle moving in a central force field. Classically, the angular momentum
+A particle in a central force field has a radial position and two angular coordinates. Classically,
 \begin{equation}
-\mathbf{L}=\mathbf{r}\times \mathbf{p}
+\mathbf L=\mathbf r\times\mathbf p
 \end{equation}
-is conserved, so both its magnitude and its direction remain fixed. The orbit therefore stays in a fixed plane perpendicular to \(\mathbf{L}\).
+is conserved as a vector. Its direction fixes the plane of the orbit, although the orbit need not be circular.
 
-Quantum mechanically the particle is described by a wavefunction, and the point is no longer the orbit itself but the way the wavefunction changes under rotation. In a central-force problem the wavefunction may be written as a function of radius and angles,
+Quantum mechanically the particle is described by
 \begin{equation}
 \Psi=\Psi(r,\theta,\phi),
 \end{equation}
-and angular momentum acts only on the angular part.
+and angular momentum concerns the dependence of this wavefunction on the angles.
 
-\paragraph{A two-dimensional prototype.}
-Susskind briefly returns to two dimensions because there the basic idea is completely transparent. If motion is confined to a plane, the only relevant angular momentum is the generator of rotations about the perpendicular axis:
+In two dimensions there is only one angular-momentum component, the generator of rotations about the axis perpendicular to the plane:
 \begin{equation}
-L_z=-i\hbar\,\frac{\partial}{\partial \theta}.
+L_z=-i\hbar\frac{\partial}{\partial\theta}.
 \end{equation}
-An angular-momentum eigenstate therefore satisfies
+An eigenfunction with eigenvalue \(\hbar\ell\) obeys
 \begin{equation}
-L_z\psi(r,\theta)=\hbar \ell\,\psi(r,\theta),
+-i\hbar\frac{\partial}{\partial\theta}\psi(r,\theta)
+=\hbar\ell\,\psi(r,\theta).
 \end{equation}
-or
+The coordinate \(r\) is a spectator in this equation. Its solution has the form
 \begin{equation}
--i\hbar\,\frac{\partial}{\partial \theta}\psi(r,\theta)=\hbar \ell\,\psi(r,\theta).
+\psi(r,\theta)=\chi(r)e^{i\ell\theta}.
 \end{equation}
-Here the derivative is only with respect to \(\theta\). The radial coordinate is a spectator. Solving for the \(\theta\)-dependence gives
+For an ordinary single-valued orbital wavefunction, returning to the same point after \(\theta\to\theta+2\pi\) requires \(\ell\) to be an integer. The radial factor \(\chi(r)\) may affect the energy, but it does not affect this angular-momentum eigenvalue.
+
+The three-dimensional analogue separates the radial dependence from functions on the sphere:
 \begin{equation}
-\psi(r,\theta)=\chi(r)e^{i\ell\theta},
+\Psi(r,\theta,\phi)=R(r)Y_{\ell m}(\theta,\phi).
 \end{equation}
-where \(\ell\) must be an integer so that the wavefunction returns to itself when \(\theta\) goes around the circle by \(2\pi\).
+The functions \(Y_{\ell m}\) are spherical harmonics. Their explicit formulas will not be needed here. Rotations act on the angular factor, while the radial function is left alone.
 
-This is the first structural lesson of the lecture. Angular momentum is determined by the angular dependence of the wavefunction. The radial factor \(\chi(r)\) may matter for the energy, but it does not matter for the angular-momentum eigenvalue.
+\section{Finite Angular-Momentum Multiplets}
 
-\paragraph{Back to three dimensions.}
-The same statement survives in three dimensions. One writes the wavefunction schematically as
-\begin{equation}
-\Psi(r,\theta,\phi)=R(r)\,Y_{\ell m}(\theta,\phi),
-\end{equation}
-where the angular factor \(Y_{\ell m}\) carries the rotational quantum numbers. These are the spherical harmonics. Susskind's emphasis is that one need not know their explicit formulas at this stage. What matters is that the angular problem and the radial problem separate, and angular momentum belongs entirely to the first of them.
-
-With that physical point fixed, he returns to the operator algebra.
-
-\section{From the \(L_z\) Basis to Finite Multiplets}
-
-The next move, as Susskind says in a distinctly Dirac-like spirit, is to pick one component of angular momentum and work in its eigenbasis. Take \(L_z\). The basic commutators are
+The components of angular momentum satisfy
 \begin{equation}
 [L_x,L_y]=i\hbar L_z,\qquad
 [L_y,L_z]=i\hbar L_x,\qquad
 [L_z,L_x]=i\hbar L_y.
 \end{equation}
-Now define
-\begin{equation}
-L_\pm=L_x\pm iL_y.
-\end{equation}
-A short computation gives
-\begin{equation}
-[L_z,L_\pm]=\pm \hbar L_\pm.
-\end{equation}
-Therefore, if
+Choose eigenstates of \(L_z\),
 \begin{equation}
 L_z|\ell,m\rangle=\hbar m\,|\ell,m\rangle,
 \end{equation}
-then
+and define
+\begin{equation}
+L_\pm=L_x\pm iL_y.
+\end{equation}
+The commutators
+\begin{equation}
+[L_z,L_\pm]=\pm\hbar L_\pm
+\end{equation}
+give
 \begin{align}
 L_z\bigl(L_\pm|\ell,m\rangle\bigr)
 &=\bigl(L_\pm L_z+[L_z,L_\pm]\bigr)|\ell,m\rangle \\
-&=\hbar(m\pm1)\bigl(L_\pm|\ell,m\rangle\bigr).
+&=\hbar(m\pm1)L_\pm|\ell,m\rangle.
 \end{align}
-So \(L_+\) raises \(m\) by one unit and \(L_-\) lowers it by one unit:
-\begin{equation}
-L_\pm|\ell,m\rangle\propto |\ell,m\pm1\rangle.
-\end{equation}
+Thus \(L_+\) raises \(m\) by one and \(L_-\) lowers it by one, unless the resulting vector vanishes.
 
-That is the first algebraic payoff. The second is the question Susskind immediately asks: does the ladder continue forever? It can only stop if eventually one of the raised or lowered states vanishes:
+For a finite multiplet there is a highest state and a lowest state:
 \begin{equation}
-L_+|\text{top}\rangle=0,\qquad L_-|\text{bottom}\rangle=0.
+L_+|\ell,\ell\rangle=0,
+\qquad
+L_-|\ell,-\ell\rangle=0.
 \end{equation}
-Rotational symmetry then forces the spectrum to be symmetric about zero. There is nothing fundamentally privileged about the \(+z\)-direction relative to the \(-z\)-direction. Hence a finite ladder must run from some highest value \(m=\ell\) down to the reflected value \(m=-\ell\):
+The \(+z\) and \(-z\) directions are related by a rotation, so the finite spectrum is symmetric about zero. Its values are therefore
 \begin{equation}
-m=-\ell,-\ell+1,\dots,\ell-1,\ell.
+m=-\ell,-\ell+1,\ldots,\ell-1,\ell,
 \end{equation}
-The number of states is therefore
+and the number of states is
 \begin{equation}
 2\ell+1.
 \end{equation}
+Since neighboring values differ by one, the endpoints can be integers or half-integers. Ordinary orbital spherical harmonics realize the integer case; the abstract angular-momentum algebra also permits half-integer multiplets.
 
-Susskind makes one further observation here. If the steps are always in integers, then a finite symmetric ladder can begin either at an integer or at a half-integer. Thus the abstract angular-momentum algebra allows both integer and half-integer multiplets. Later, when the discussion specializes to orbital wavefunctions on the sphere, only integer \(\ell\) remain.
+\begin{classroomqa}
+\lecturetimestamp{00:16:12}
+\audiencequestion{Could an angular-momentum multiplet contain infinitely many states?}
+\lecturerresponse{That possibility can be contemplated, but it will not be needed here. Angular momentum generally raises the energy when the other features of the state are held fixed, so states of infinite angular momentum are not relevant when discussing finite-energy states.}
+\end{classroomqa}
 
-\begin{remark}
-The lecture briefly mentions the possibility of infinite ladders. They are mathematically conceivable, but they are set aside as physically pathological for the finite-energy situations of interest here.
-\end{remark}
+\section{The Common Value of \(L^2\)}
 
-\begin{figure}
+The operator measuring the square of the angular-momentum magnitude is
+\begin{equation}
+L^2=L_x^2+L_y^2+L_z^2.
+\end{equation}
+The ordered product of ladder operators is
+\begin{align}
+L_-L_+
+&=(L_x-iL_y)(L_x+iL_y) \\
+&=L_x^2+L_y^2+i[L_x,L_y] \\
+&=L_x^2+L_y^2-\hbar L_z.
+\end{align}
+Consequently,
+\begin{equation}
+L^2=L_z^2+\hbar L_z+L_-L_+.
+\end{equation}
+Apply this identity to the highest state. Since \(L_+|\ell,\ell\rangle=0\),
+\begin{align}
+L^2|\ell,\ell\rangle
+&=\left(L_z^2+\hbar L_z+L_-L_+\right)|\ell,\ell\rangle \\
+&=\hbar^2\left(\ell^2+\ell\right)|\ell,\ell\rangle,
+\end{align}
+and therefore
+\begin{equation}
+L^2|\ell,\ell\rangle
+=\hbar^2\ell(\ell+1)|\ell,\ell\rangle.
+\end{equation}
+The squared magnitude is not \(\hbar^2\ell^2\). The extra term is a consequence of the noncommutativity of the angular-momentum components.
+
+The same value belongs to every state in the multiplet, not only to the highest one.
+
+\begin{classroomqa}
+\lecturetimestamp{00:26:08}
+\audiencequestion{What exactly is the exercise showing that the other states have the same value of \(L^2\)?}
+\lecturerresponse{Show that \(L^2\) commutes with every component of angular momentum and hence with \(L_-\). Then commute \(L^2\) through \(L_-\): if the highest state has eigenvalue \(\hbar^2\ell(\ell+1)\), the next state down has the same eigenvalue. Repeating the argument carries that value through the whole ladder.}
+\end{classroomqa}
+
+Indeed,
+\begin{equation}
+[L^2,L_i]=0,
+\qquad i=x,y,z,
+\end{equation}
+so
+\begin{equation}
+[L^2,L_\pm]=0.
+\end{equation}
+For example,
+\begin{align}
+L^2\bigl(L_-|\ell,\ell\rangle\bigr)
+&=L_-L^2|\ell,\ell\rangle \\
+&=\hbar^2\ell(\ell+1)L_-|\ell,\ell\rangle.
+\end{align}
+Continuing downward gives
+\begin{equation}
+L^2|\ell,m\rangle
+=\hbar^2\ell(\ell+1)|\ell,m\rangle
+\end{equation}
+for every \(m=-\ell,\ldots,\ell\).
+
+The opposite ordering gives an equivalent factorization:
+\begin{align}
+L_+L_-
+&=(L_x+iL_y)(L_x-iL_y) \\
+&=L_x^2+L_y^2-i[L_x,L_y] \\
+&=L_x^2+L_y^2+\hbar L_z,
+\end{align}
+and hence
+\begin{equation}
+L^2=L_z^2-\hbar L_z+L_+L_-.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:32:05}
+\audiencequestion{Could \(L_x^2+L_y^2\) be factored in the opposite order using \(L_+L_-\)?}
+\lecturerresponse{Yes. The sign of the \(L_z\) term reverses. With that ordering, apply the identity to the lowest state, which is annihilated by \(L_-\), rather than to the highest state. The same eigenvalue \(\hbar^2\ell(\ell+1)\) follows.}
+\end{classroomqa}
+
+The spherical harmonics therefore satisfy
+\begin{align}
+L^2Y_{\ell m}
+&=\hbar^2\ell(\ell+1)Y_{\ell m}, \\
+L_zY_{\ell m}
+&=\hbar m\,Y_{\ell m}.
+\end{align}
+For each orbital value \(\ell=0,1,2,\ldots\), there are \(2\ell+1\) functions labeled by \(m=-\ell,\ldots,\ell\).
+
+For a central potential,
+\begin{equation}
+[H,L_i]=0.
+\end{equation}
+Once a radial energy eigenstate and \(\ell\) are held fixed, changing \(m\) with \(L_\pm\) does not change the energy. Each such radial eigenstate therefore generates a \(2\ell+1\)-dimensional magnetic multiplet.
+
+The integer orbital ladder is shown below.\footnote{The diagram is reconstructed from the multiplet sketch and operator identities visible at \(00{:}35{:}53\) of the lecture video.}
+
+\begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[x=1cm,y=0.9cm]
-\draw[->] (0,-3.6) -- (0,3.6) node[above] {$m$};
+\begin{tikzpicture}[x=1cm,y=0.85cm,>=stealth]
+\draw[->] (0,-3.5) -- (0,3.5) node[above] {$m$};
 
-\fill (0,3) circle (2pt);
-\fill (0,2) circle (2pt);
-\fill (0,0) circle (2pt);
-\fill (0,-2) circle (2pt);
-\fill (0,-3) circle (2pt);
+\fill (0,3) circle (2.2pt);
+\fill (0,2) circle (2.2pt);
+\fill (0,0) circle (2.2pt);
+\fill (0,-2) circle (2.2pt);
+\fill (0,-3) circle (2.2pt);
 
 \node[left] at (0,3) {$\ell$};
 \node[left] at (0,2) {$\ell-1$};
@@ -116,436 +200,370 @@ The lecture briefly mentions the possibility of infinite ladders. They are mathe
 \node at (0,1) {$\vdots$};
 \node at (0,-1) {$\vdots$};
 
-\draw[->] (-1.1,-2.4) -- (-1.1,2.4) node[midway,left] {$L_+$};
-\draw[->] (1.1,2.4) -- (1.1,-2.4) node[midway,right] {$L_-$};
+\draw[->] (-1.15,-2.65) -- (-1.15,2.65)
+node[midway,left] {$L_+$};
+\draw[->] (1.15,2.65) -- (1.15,-2.65)
+node[midway,right] {$L_-$};
 
-\node[anchor=west] at (2.0,1.9) {$L_z|\ell,m\rangle=\hbar m\,|\ell,m\rangle$};
-\node[anchor=west] at (2.0,1.0) {$L^2|\ell,m\rangle=\hbar^2\ell(\ell+1)|\ell,m\rangle$};
-\node[anchor=west] at (2.0,0.1) {$L_\pm|\ell,m\rangle\propto |\ell,m\pm1\rangle$};
+\node[anchor=west] at (2.1,1.35)
+{$L_z|\ell,m\rangle=\hbar m|\ell,m\rangle$};
+\node[anchor=west] at (2.1,0.25)
+{$L^2|\ell,m\rangle=\hbar^2\ell(\ell+1)|\ell,m\rangle$};
+\node[anchor=west] at (2.1,-0.85)
+{$L_\pm|\ell,m\rangle\propto|\ell,m\pm1\rangle$};
 \end{tikzpicture}
-\caption{The finite angular-momentum ladder suggested by the blackboard discussion. The ladder operators move in unit steps of \(m\), and the multiplet terminates symmetrically at \(m=\pm \ell\).}
+\caption{An integer orbital angular-momentum multiplet. \(L_+\) and \(L_-\) change \(m\) by one, while \(L^2\) remains \(\hbar^2\ell(\ell+1)\) throughout the multiplet.}
+\lectureframe{00:35:53}
 \end{figure}
 
-\section{What a Multiplet Has in Common}
+\section{The Central-Force Problem}
 
-Once the ladder has been built, Susskind asks what characterizes the entire multiplet. The answer is the square of the total angular momentum,
+Consider
 \begin{equation}
-L^2=L_x^2+L_y^2+L_z^2.
+H=\frac{\mathbf p^2}{2m}+V(r),
 \end{equation}
-To evaluate it, he rewrites \(L_x^2+L_y^2\) in terms of the ladder operators. The ordered product is
-\begin{align}
-L_-L_+
-&=(L_x-iL_y)(L_x+iL_y) \\
-&=L_x^2+L_y^2+iL_xL_y-iL_yL_x \\
-&=L_x^2+L_y^2+i[L_x,L_y] \\
-&=L_x^2+L_y^2-\hbar L_z.
-\end{align}
-Therefore
-\begin{equation}
-L^2=L_z^2+\hbar L_z+L_-L_+.
-\end{equation}
-There is also the equally valid alternative
-\begin{equation}
-L^2=L_z^2-\hbar L_z+L_+L_-,
-\end{equation}
-which corresponds to factoring in the opposite order. An audience member asks precisely this question in the lecture, and Susskind's answer is that the same derivation works if one applies the reordered identity to the bottom state instead of the top.
+where \(V\) depends only on the distance from the origin. Rotational symmetry implies conservation of angular momentum. Classically, \(\mathbf L\) has fixed magnitude and direction, so the orbit remains in a plane perpendicular to \(\mathbf L\). The orbit need not be circular, or even closed.
 
-\paragraph{Worked derivation of \(L^2=\hbar^2\ell(\ell+1)\).}
-Apply the first ordered form to the highest state of the multiplet:
-\begin{align}
-L^2|\ell,\ell\rangle
-&=\left(L_z^2+\hbar L_z+L_-L_+\right)|\ell,\ell\rangle \\
-&=\left(\hbar^2\ell^2+\hbar^2\ell\right)|\ell,\ell\rangle
-+L_-\bigl(L_+|\ell,\ell\rangle\bigr).
-\end{align}
-By definition of the top state,
+Choose coordinates so that this classical orbital plane is the \(xy\)-plane, and resolve the momentum into radial and tangential components:
 \begin{equation}
-L_+|\ell,\ell\rangle=0,
+\mathbf p^2=p_r^2+p_\theta^2.
 \end{equation}
-and so
+Since the magnitude of the angular momentum is
 \begin{equation}
-L^2|\ell,\ell\rangle=\hbar^2\ell(\ell+1)|\ell,\ell\rangle.
+L=r p_\theta,
 \end{equation}
-This is the blackboard formula \(L^2=\ell(\ell+1)\) with the suppressed factor of \(\hbar^2\) restored.
-
-The lecture then pushes one step further. This is not just a property of the top state. In fact,
+the tangential contribution may be written
 \begin{equation}
-[L^2,L_i]=0,\qquad i=x,y,z,
-\end{equation}
-and therefore \(L^2\) commutes with \(L_\pm\) as well. For example,
-\begin{align}
-L^2\bigl(L_-|\ell,\ell\rangle\bigr)
-&=L_-\bigl(L^2|\ell,\ell\rangle\bigr) \\
-&=\hbar^2\ell(\ell+1)\bigl(L_-|\ell,\ell\rangle\bigr).
-\end{align}
-So the next state down has the same \(L^2\)-eigenvalue, and the same argument propagates all the way to the bottom of the ladder.
-
-This is the meaning of the multiplet. All \(2\ell+1\) states have the same total angular momentum, but different projections on the \(z\)-axis:
-\begin{equation}
-L^2|\ell,m\rangle=\hbar^2\ell(\ell+1)|\ell,m\rangle,\qquad
-L_z|\ell,m\rangle=\hbar m\,|\ell,m\rangle.
-\end{equation}
-In the orbital case these states are represented by the spherical harmonics \(Y_{\ell m}(\theta,\phi)\), with \(\ell=0,1,2,\dots\) and \(m=-\ell,\dots,\ell\).
-
-Susskind then makes the transition that matters for atomic physics. In a central-force problem the Hamiltonian commutes with angular momentum, so all members of a fixed \(\ell\)-multiplet have the same energy:
-\begin{equation}
-[H,L_i]=0 \qquad \text{for } V=V(r).
-\end{equation}
-That closes the angular-momentum recap and opens the central-force problem.
-
-\section{From Three Dimensions to an Effective Radial Problem}
-
-At this point Susskind says explicitly that he will use a little classical intuition, even a tiny bit of cheating, to motivate the reduction of the central-force problem. The starting Hamiltonian is
-\begin{equation}
-H=\frac{p^2}{2m}+V(r),
-\end{equation}
-with \(p^2\) the full three-dimensional momentum squared and \(V(r)\) depending only on the distance from the origin.
-
-\paragraph{Classical reduction.}
-Because the force is central, angular momentum is conserved. Classically one may therefore choose coordinates so that the orbit lies in the \(xy\)-plane. In that plane decompose the momentum into a radial component \(p_r\) and an angular component \(p_\theta\):
-\begin{equation}
-p^2=p_r^2+p_\theta^2.
+p_\theta^2=\frac{L^2}{r^2}.
 \end{equation}
 The Hamiltonian becomes
 \begin{equation}
-H=\frac{p_r^2+p_\theta^2}{2m}+V(r).
-\end{equation}
-Now use the magnitude of the classical angular momentum:
-\begin{equation}
-L=r\,p_\theta.
-\end{equation}
-Hence
-\begin{equation}
-L^2=r^2p_\theta^2,\qquad p_\theta^2=\frac{L^2}{r^2}.
-\end{equation}
-Substituting back gives the board equation
-\begin{equation}
 H=\frac{p_r^2}{2m}+\frac{L^2}{2mr^2}+V(r).
 \end{equation}
-This is the effective radial Hamiltonian. Once the angular momentum is fixed, everything angular has been frozen into the parameter \(L\), and the remaining motion is one-dimensional in \(r\).
-
-It is natural to define the effective potential
+For fixed \(L\), this is a one-dimensional problem in the radial coordinate, with effective potential
 \begin{equation}
 V_{\mathrm{eff}}(r)=\frac{L^2}{2mr^2}+V(r).
 \end{equation}
-The extra \(1/r^2\) term is the centrifugal barrier. It is repulsive, not attractive: as \(r\) decreases, the potential rises sharply, so the corresponding force pushes the particle away from the origin.
+The radial Hamiltonian is shown on the blackboard below.\footnote{Source frame: \texttt{\detokenize{lecture_03_frame_02.png}}, lecture video at \(00{:}47{:}15\).}
 
-\paragraph{What the effective potential means.}
-For a Coulomb attraction \(V(r)\sim -1/r\), the barrier behaves as \(+1/r^2\). Near the origin the \(1/r^2\) term dominates; far away the \(1/r\) term dominates. Their sum has a minimum. A particle sitting at that minimum executes a circular orbit, while a particle with slightly different energy oscillates radially between a minimum and maximum radius. In the Coulomb case those radial oscillations are the classical elliptical orbits.
-
-\begin{figure}
+\begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[x=1.2cm,y=1.0cm]
-\draw[->] (0,0) -- (5.8,0) node[right] {$r$};
-\draw[->] (0,-2.2) -- (0,3.2);
-
-\draw[dotted] plot[smooth] coordinates {(0.5,-1.7) (0.8,-1.3) (1.2,-0.9) (1.8,-0.55) (2.8,-0.30) (4.0,-0.15) (5.5,-0.05)};
-\node[anchor=west] at (3.7,-0.55) {$V(r)$};
-
-\draw[dashed] plot[smooth] coordinates {(0.45,2.8) (0.65,1.8) (0.95,1.0) (1.4,0.45) (2.2,0.16) (3.5,0.05) (5.5,0.0)};
-\node[anchor=west] at (2.4,1.55) {$\dfrac{\hbar^2\ell(\ell+1)}{2mr^2}$};
-
-\draw[thick] plot[smooth] coordinates {(0.45,1.2) (0.65,0.6) (0.95,0.05) (1.3,-0.35) (1.8,-0.72) (2.4,-0.68) (3.2,-0.42) (4.2,-0.20) (5.5,-0.06)};
-\fill (1.95,-0.72) circle (2pt);
-\node[anchor=west] at (3.1,-1.15) {$V_{\mathrm{eff}}(r)$};
-
-\draw (1.55,-0.72) -- (2.35,-0.72);
-\node[anchor=south] at (2.05,-0.72) {circular orbit};
-\end{tikzpicture}
-\caption{The effective radial potential for an attractive central force. The Coulomb tail \(V(r)\sim -1/r\) and the centrifugal barrier \(\sim 1/r^2\) combine into a one-dimensional potential with a minimum when \(\ell\neq 0\).}
+\includegraphics[width=0.9\linewidth]{lecture_03_frame_02.png}
+\caption{For fixed classical angular momentum, the radial Hamiltonian contains radial kinetic energy, the centrifugal term \(L^2/(2mr^2)\), and the central potential \(V(r)\).}
+\lectureframe{00:47:15}
 \end{figure}
 
-There is one exceptional case, emphasized later in the discussion: if \(\ell=0\), then the centrifugal barrier vanishes. Classically nothing prevents the motion from heading straight through the origin.
+The \(1/r^2\) term is the centrifugal barrier. It rises as the particle approaches the origin, so the associated force points outward. For the Coulomb-like attractions under discussion, a trajectory with \(L\neq0\) swings around the center instead of reaching it. When \(L=0\), the barrier is absent.
 
-\section{The Quantum Radial Equation}
-
-Susskind now turns to the quantum problem, but he keeps the classical reduction in view. He does not carry out every angular derivative on the board. Instead he uses the classical form of the Hamiltonian as a guide and then states the separated quantum equation. The omitted manipulations are real, but they do not change the basic story.
-
-The full time-independent Schr\"odinger equation is
+For the attractive Coulomb potential,
 \begin{equation}
--\frac{\hbar^2}{2m}\left(
+V(r)=-\frac{\kappa}{r},
+\end{equation}
+the centrifugal term dominates at small \(r\), while the Coulomb term falls more slowly and dominates at large \(r\). For \(L\neq0\), their sum has a minimum. Motion at the minimum has constant radius and is therefore circular. Bound motion above the minimum and below the escape threshold oscillates between a smallest and a largest radius; in the Coulomb problem these are the radial oscillations of an elliptical orbit.
+
+\section{The Reduced Radial Equation}
+
+In quantum mechanics the angular part of a state with definite orbital angular momentum is a spherical harmonic. Write the separated state as
+\begin{equation}
+\Psi_{n_r\ell m}(r,\theta,\phi)
+=\frac{u_{n_r\ell}(r)}{r}\,
+Y_{\ell m}(\theta,\phi).
+\end{equation}
+The angular operator \(L^2\) has the eigenvalue
+\begin{equation}
+L^2Y_{\ell m}
+=\hbar^2\ell(\ell+1)Y_{\ell m}.
+\end{equation}
+The equation left for the reduced radial function is
+\begin{equation}
+\left[
+-\frac{\hbar^2}{2m}\frac{d^2}{dr^2}
++\frac{\hbar^2\ell(\ell+1)}{2mr^2}
++V(r)
+\right]u_{n_r\ell}(r)
+=E_{n_r\ell}\,u_{n_r\ell}(r).
+\end{equation}
+
+\editorialnote{The pure one-dimensional second-derivative equation uses the reduced radial function \(u=rR\). Thus the \(\psi(r)\) in the displayed lecture equation corresponds to \(u(r)\), while the ordinary radial factor in \(\Psi=R(r)Y_{\ell m}\) is \(R=u/r\). This convention avoids treating \(-i\hbar\,d/dr\) as a standalone Hermitian radial-momentum operator on the three-dimensional radial Hilbert space.}
+
+The reduced radial equation is shown on the blackboard below.\footnote{Source frame: \texttt{\detokenize{lecture_03_frame_03.png}}, lecture video at \(00{:}54{:}32\).}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{lecture_03_frame_03.png}
+\caption{For fixed \(\ell\), the reduced radial wavefunction satisfies a one-dimensional Schr\"odinger equation with a centrifugal term proportional to \(\ell(\ell+1)/r^2\).}
+\lectureframe{00:54:32}
+\end{figure}
+
+The three-dimensional angular structure has been compressed into the parameter \(\ell\). The magnetic quantum number \(m\) does not occur in the radial equation.
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:34}
+\audiencequestion{For a given \(\ell\), do the \(2\ell+1\) magnetic states have the same energy?}
+\lecturerresponse{Yes, provided the radial eigenstate is also held fixed. For each chosen \(u_{n_r\ell}\), all values \(m=-\ell,\ldots,\ell\) have the same energy because \(m\) does not enter the radial equation. Different radial eigenstates at the same \(\ell\) generally have different energies.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:03}
+\audiencequestion{Why may \(L^2\) be replaced by \(\hbar^2\ell(\ell+1)\), and how is \(\ell\) related to the allowed values of \(m\)?}
+\lecturerresponse{The number \(\ell\) labels an angular-momentum multiplet and is its largest \(m\)-value. Every state in that multiplet has the same \(L^2\)-eigenvalue, \(\hbar^2\ell(\ell+1)\), so that eigenvalue is inserted into the radial equation.}
+\end{classroomqa}
+
+The explicit special-function solutions are not needed for the present argument. What matters is how the solutions are organized.
+
+\section{Radial Nodes and Energy Levels}
+
+For fixed \(\ell\), the reduced radial equation is an ordinary one-dimensional eigenvalue problem. Its bound states are ordered by their number of interior nodes. The lowest radial state has no interior node, the next has one, and the next has two. More nodes mean more rapid variation of the wavefunction; more rapid variation means larger momentum and therefore larger kinetic energy.
+
+Each value of \(\ell\) defines a different radial operator because the centrifugal term changes with \(\ell\). Thus \(\ell=0,1,2,\ldots\) give separate radial towers. The positive centrifugal term shifts the levels upward as angular momentum is added. Every radial eigenvalue at fixed \(\ell\) carries a magnetic multiplet of dimension
+\begin{equation}
+2\ell+1.
+\end{equation}
+The \(\ell=0\) levels are singlets, the \(\ell=1\) levels are triplets, and the \(\ell=2\) levels are quintuplets. These are the degeneracies guaranteed by rotational symmetry; an additional symmetry may make states with different values of \(\ell\) degenerate as well.
+
+For atomic-type potentials satisfying \(V(r)\to0\) at large \(r\), the escape threshold is conventionally \(E=0\). The negative-energy states form the discrete bound spectrum. At and above \(E=0\), one encounters the scattering continuum. This statement depends on the large-\(r\) behavior of the potential and does not apply to a confining central potential.
+
+\section{The Special Coulomb Degeneracy}
+
+The exact nonrelativistic Coulomb potential has an additional alignment of levels. The lowest \(\ell=1\) radial state has the same energy as the first excited \(\ell=0\) state. The next \(\ell=1\) state aligns with the second excited \(\ell=0\) state, and the lowest \(\ell=2\) state joins them. The pattern continues through the higher radial and angular-momentum towers.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:57}
+\audiencequestion{Does this extra Coulomb degeneracy indicate another symmetry?}
+\lecturerresponse{Yes. It is an unusual additional symmetry of the exact Coulomb potential. Small changes in the potential destroy the alignment, and its derivation is not pursued here.}
+\end{classroomqa}
+
+The resulting orbital shell degeneracies are
+\begin{equation}
+1,\qquad 4,\qquad 9,\qquad 16,\qquad \ldots
+\end{equation}
+before electron spin is included.
+
+\begin{classroomqa}
+\lecturetimestamp{01:11:46}
+\audiencequestion{Does this degeneracy describe hydrogen, or only the ideal Coulomb problem?}
+\lecturerresponse{Hydrogen satisfies it to very good approximation, but not exactly. Relativistic corrections and the finite size of the nucleus disturb the ideal Coulomb pattern.}
+\end{classroomqa}
+
+A point nucleus produces an exact \(1/r\) potential. A nucleus with charge spread over a small volume produces a slightly different potential when the electron penetrates that volume, and even this small departure lifts part of the special degeneracy.
+
+Spin has also been omitted. Including the two electron spin states doubles the shell counts to
+\begin{equation}
+2,\qquad 8,\qquad 18,\qquad 32,\qquad \ldots
+\end{equation}
+before the further splittings of a more complete atomic treatment are resolved.
+
+\section{The Cartesian Equation Revisited}
+
+The equation from which the radial problem began is the three-dimensional time-independent Schr\"odinger equation
+\begin{equation}
+-\frac{\hbar^2}{2m}
+\left(
 \frac{\partial^2}{\partial x^2}
 +\frac{\partial^2}{\partial y^2}
-+\frac{\partial^2}{\partial z^2}\right)\Psi
-+V(r)\Psi
-=
-E\Psi.
++\frac{\partial^2}{\partial z^2}
+\right)\Psi
++V\!\left(\sqrt{x^2+y^2+z^2}\right)\Psi
+=E\Psi.
 \end{equation}
-Now choose a state of definite angular momentum:
-\begin{equation}
-\Psi_{\ell m}(r,\theta,\phi)=\psi(r)\,Y_{\ell m}(\theta,\phi).
-\end{equation}
-Once \(\ell\) and \(m\) are fixed, the angular dependence has already been solved by the spherical harmonic. The remaining unknown is the radial function \(\psi(r)\).
+Passing to radial and angular coordinates, selecting an \(L^2\)-eigenstate, and replacing \(L^2\) by \(\hbar^2\ell(\ell+1)\) reduces this partial differential equation to the ordinary radial equation above.
 
-The radial momentum operator is
-\begin{equation}
-p_r=-i\hbar\,\frac{d}{dr},
-\end{equation}
-so that
-\begin{equation}
-p_r^2\to -\hbar^2\,\frac{d^2}{dr^2}.
-\end{equation}
-Susskind is slightly casual about the sign when he speaks it aloud, but only \(p_r^2\) appears in the Hamiltonian, so the final radial kinetic term is unambiguous.
+\begin{classroomqa}
+\lecturetimestamp{01:16:42}
+\audiencequestion{Could deviations from the ideal Coulomb spectrum be used to determine the size of the nucleus?}
+\lecturerresponse{Not by this simple comparison. Other corrections are much larger and must first be accounted for. Nuclear size is mentioned here because it gives an immediate example of a departure from the point-Coulomb potential.}
+\end{classroomqa}
 
-On a state of definite \(\ell\), one replaces \(L^2\) by \(\hbar^2\ell(\ell+1)\). Thus the radial Hamiltonian acts as
-\begin{equation}
-H\psi(r)=E\psi(r),
-\end{equation}
-with
-\begin{equation}
-H=-\frac{\hbar^2}{2m}\frac{d^2}{dr^2}
-+\frac{\hbar^2\ell(\ell+1)}{2mr^2}
-+V(r),
-\end{equation}
-and therefore
-\begin{equation}
--\frac{\hbar^2}{2m}\frac{d^2}{dr^2}\psi(r)
-+\frac{\hbar^2\ell(\ell+1)}{2mr^2}\psi(r)
-+V(r)\psi(r)
-=
-E\psi(r).
-\end{equation}
+\begin{classroomqa}
+\lecturetimestamp{01:17:09}
+\audiencequestion{What is the main difference between the classical and quantum angular-momentum terms?}
+\lecturerresponse{Classically \(L^2\) is the ordinary square of a conserved vector magnitude. In a quantum orbital multiplet its eigenvalue is \(\hbar^2\ell(\ell+1)\), not simply \(\hbar^2\ell^2\). The additional term comes from the noncommutativity of the angular-momentum components.}
+\end{classroomqa}
 
-\begin{remark}
-The lecture writes this as a pure second-order equation for \(\psi(r)\). In standard separation of variables this clean one-dimensional form is the equation for the reduced radial function \(u_\ell(r)=rR_\ell(r)\). To stay close to Susskind's notation while remaining precise, it is best to read \(\psi(r)\) here as that reduced radial variable.
-\end{remark}
+\begin{classroomqa}
+\lecturetimestamp{01:17:58}
+\audiencequestion{Do the bound-state wavefunctions have compact support?}
+\lecturerresponse{No. They extend arbitrarily far from the center. For the atomic bound states under discussion they decrease exponentially at large distance, so the probability becomes negligible but does not vanish beyond any finite radius.}
+\end{classroomqa}
 
-This is the main payoff of the angular-momentum recap. The original three-dimensional partial differential equation has become an ordinary differential equation in one variable. The angular structure has not disappeared; it has been compressed into the single parameter \(\ell\).
+\begin{classroomqa}
+\lecturetimestamp{01:18:48}
+\audiencequestion{When \(\ell=0\) removes the centrifugal well, what becomes of the stable point?}
+\lecturerresponse{There is no longer a minimum produced by competition between the centrifugal barrier and the attraction. In the point-Coulomb idealization the classical motion heads toward the singular center. Quantum mechanically the lowest state cannot have both an exactly definite position at the center and zero momentum, so the lowest wavefunction has a finite spatial spread.}
+\end{classroomqa}
 
-There is also a conceptual point that surfaces in the question period. Quantum mechanically one cannot literally rotate the whole wavefunction into a fixed plane, as one does classically for a single orbit. The memory of full three-dimensional motion survives in the fact that the relevant operator is \(L^2\), not \(L_z^2\). If one could replace \(L^2\) by \(L_z^2\), one would get something like \(\ell^2\). Instead one gets the genuinely three-dimensional result \(\ell(\ell+1)\).
+\editorialnote{For a regular central potential, a classical zero-angular-momentum trajectory may continue through the origin. For the ideal point-Coulomb potential, \(r=0\) is instead a collision singularity, and continuation of the classical trajectory requires an additional prescription.}
 
-Susskind stops short of solving the radial equation explicitly. That, he says, is a matter of differential equations, and the lecture is after the structure of the spectrum rather than the explicit special functions.
+The classical reduction placed a single orbit in a plane, but that step cannot be applied to a quantum wavefunction in the same way. A quantum orbital state fills three-dimensional space. The full angular operator is \(L^2=L_x^2+L_y^2+L_z^2\), and its eigenvalue retains the three-dimensional result \(\hbar^2\ell(\ell+1)\).
 
-\section{Nodes, Degeneracies, and the Coulomb Accident}
+\begin{classroomqa}
+\lecturetimestamp{01:21:30}
+\audiencequestion{How can the quantum problem remain three-dimensional after the classical orbit was placed in a plane?}
+\lecturerresponse{Only the classical orbit was put in a fixed plane by choosing coordinates perpendicular to its conserved angular-momentum vector. A quantum wavefunction occupies three-dimensional space. The other angular-momentum components remain present through \(L^2\), which is why the radial equation contains \(\ell(\ell+1)\) rather than only a square of one component.}
+\end{classroomqa}
 
-Having reduced the problem to one dimension, Susskind turns immediately to what one can say about the spectrum without solving the equation in detail.
+\begin{classroomqa}
+\lecturetimestamp{01:22:54}
+\audiencequestion{Does every quantum problem admit raising and lowering operators?}
+\lecturerresponse{No. They occur in unusually favorable cases. Angular momentum is one such case, and the harmonic oscillator is another. The oscillator case is especially useful because motion near a stable equilibrium is so often approximately harmonic, including small radial oscillations near the minimum of an effective potential.}
+\end{classroomqa}
 
-\paragraph{Node counting.}
-For fixed \(\ell\), the radial Schr\"odinger equation is a one-dimensional bound-state problem. The lowest bound state has no nodes, the first excited state has one node, the next has two, and so on. Here a node means a zero of the radial wavefunction. Susskind gives the physical reason in his usual way: more nodes mean more rapid wiggles; more rapid wiggles mean larger momentum; larger momentum means higher kinetic energy. In this sense the node count organizes the bound-state spectrum.
+The atomic problem is set aside at this point, and the harmonic oscillator becomes the next example of a spectrum determined by ladder operators.
 
-\paragraph{The generic central-force spectrum.}
-Each value of \(\ell\) gives a different radial equation because the centrifugal term depends on \(\ell\). Thus one obtains a separate tower of radial states for each \(\ell\). The \(\ell=0\) tower sits lowest because the centrifugal barrier is absent there. The \(\ell=1\) tower is shifted upward, the \(\ell=2\) tower upward again, and so on. At every level in the \(\ell\)-th tower there are
-\begin{equation}
-2\ell+1
-\end{equation}
-degenerate states, corresponding to the allowed values of \(m\).
+\section{Small Oscillations and the Harmonic Oscillator}
 
-At sufficiently high energy the states cease to be bound. Classically the particle escapes; quantum mechanically the discrete spectrum gives way to the continuum. For the bound states of an attractive potential, the energies lie below that escape threshold.
+Near a stable equilibrium, a sufficiently small displacement often produces harmonic motion. The effective radial potential for nonzero angular momentum provides one example: radial motion close to the bottom of its well is approximately harmonic.
 
-\paragraph{The special case \(\ell=0\).}
-One audience question returns to the missing centrifugal barrier when \(\ell=0\). Classically, if the potential is Coulombic, the particle would simply run toward the center. Quantum mechanically that does not happen. The lowest state cannot be both sharply localized at the origin and at rest there. The uncertainty principle forces a compromise: the ground-state wavefunction spreads over a finite region, and the corresponding energy is finite rather than negatively infinite.
-
-\begin{figure}
-\centering
-\begin{tikzpicture}[x=0.95cm,y=0.9cm]
-\begin{scope}[shift={(0,0)}]
-\node at (2.2,4.25) {Generic central force};
-\draw[->] (-0.75,0) -- (5.3,0);
-\draw[->] (-0.75,0) -- (-0.75,4.0);
-\node[left] at (-0.75,3.95) {$E$};
-
-\node[below] at (0,0) {$\ell=0$};
-\node[below] at (1.5,0) {$1$};
-\node[below] at (3.0,0) {$2$};
-\node[below] at (4.5,0) {$3$};
-
-\draw (-0.18,0.65) -- (0.18,0.65);
-\draw (-0.18,1.55) -- (0.18,1.55);
-\draw (-0.18,2.45) -- (0.18,2.45);
-
-\foreach \dx in {-0.22,0,0.22}{
-\draw (1.5+\dx-0.09,1.10) -- (1.5+\dx+0.09,1.10);}
-\foreach \dx in {-0.22,0,0.22}{
-\draw (1.5+\dx-0.09,2.00) -- (1.5+\dx+0.09,2.00);}
-
-\foreach \dx in {-0.36,-0.18,0,0.18,0.36}{
-\draw (3.0+\dx-0.07,1.55) -- (3.0+\dx+0.07,1.55);}
-\foreach \dx in {-0.36,-0.18,0,0.18,0.36}{
-\draw (3.0+\dx-0.07,2.45) -- (3.0+\dx+0.07,2.45);}
-
-\foreach \dx in {-0.48,-0.32,-0.16,0,0.16,0.32,0.48}{
-\draw (4.5+\dx-0.05,1.95) -- (4.5+\dx+0.05,1.95);}
-
-\node[anchor=west] at (4.9,3.35) {$2\ell+1$};
-\node[anchor=west] at (4.9,3.05) {states};
-\end{scope}
-
-\begin{scope}[shift={(7.1,0)}]
-\node at (2.2,4.25) {Ideal Coulomb potential};
-\draw[->] (-0.75,0) -- (5.3,0);
-\draw[->] (-0.75,0) -- (-0.75,4.0);
-\node[left] at (-0.75,3.95) {$E$};
-
-\node[below] at (0,0) {$\ell=0$};
-\node[below] at (1.5,0) {$1$};
-\node[below] at (3.0,0) {$2$};
-\node[below] at (4.5,0) {$3$};
-
-\draw (-0.18,0.65) -- (0.18,0.65);
-\node[anchor=west] at (5.0,0.65) {$1$};
-
-\draw (-0.18,1.55) -- (0.18,1.55);
-\foreach \dx in {-0.22,0,0.22}{
-\draw (1.5+\dx-0.09,1.55) -- (1.5+\dx+0.09,1.55);}
-\node[anchor=west] at (5.0,1.55) {$4$};
-
-\draw (-0.18,2.45) -- (0.18,2.45);
-\foreach \dx in {-0.22,0,0.22}{
-\draw (1.5+\dx-0.09,2.45) -- (1.5+\dx+0.09,2.45);}
-\foreach \dx in {-0.36,-0.18,0,0.18,0.36}{
-\draw (3.0+\dx-0.07,2.45) -- (3.0+\dx+0.07,2.45);}
-\node[anchor=west] at (5.0,2.45) {$9$};
-
-\draw (-0.18,3.35) -- (0.18,3.35);
-\foreach \dx in {-0.22,0,0.22}{
-\draw (1.5+\dx-0.09,3.35) -- (1.5+\dx+0.09,3.35);}
-\foreach \dx in {-0.36,-0.18,0,0.18,0.36}{
-\draw (3.0+\dx-0.07,3.35) -- (3.0+\dx+0.07,3.35);}
-\foreach \dx in {-0.48,-0.32,-0.16,0,0.16,0.32,0.48}{
-\draw (4.5+\dx-0.05,3.35) -- (4.5+\dx+0.05,3.35);}
-\node[anchor=west] at (5.0,3.35) {$16$};
-\end{scope}
-\end{tikzpicture}
-\caption{Left: the generic qualitative spectrum of an attractive central force. Each value of \(\ell\) has its own radial tower, shifted upward by the centrifugal term, and each level carries degeneracy \(2\ell+1\). Right: in the ideal Coulomb problem, levels from different \(\ell\)-towers align into shells with orbital degeneracies \(1,4,9,16,\dots\).}
-\end{figure}
-
-\paragraph{The Coulomb accident.}
-For the special potential \(V(r)\propto -1/r\), Susskind describes a remarkable extra degeneracy. The lowest \(\ell=1\) state has exactly the same energy as the first excited \(\ell=0\) state. The lowest \(\ell=2\) state has the same energy as the second excited \(\ell=0\) state. More generally, the lowest state in the \(\ell\)-tower aligns with the \(\ell\)-node state in the \(\ell=0\) tower. The result is a sequence of shells whose orbital degeneracies are
-\begin{equation}
-1,\qquad 4,\qquad 9,\qquad 16,\qquad \dots
-\end{equation}
-or, equivalently,
-\begin{equation}
-\sum_{k=0}^{n-1}(2k+1)=n^2.
-\end{equation}
-
-Susskind repeatedly warns that this is special to the ideal nonrelativistic Coulomb problem. A finite nuclear size, relativistic corrections, and spin all spoil it. The hydrogen atom approximately displays the pattern, but not exactly. In particular, because spin has not yet been included, the analysis is missing a factor of two. Real atomic shell counts begin
-\begin{equation}
-2,\qquad 8,\qquad 18,\qquad 32,\qquad \dots
-\end{equation}
-rather than
-\begin{equation}
-1,\qquad 4,\qquad 9,\qquad 16,\qquad \dots
-\end{equation}
-
-The lecture also pauses on a subtle question about wavefunctions. Bound states do not have compact support. They do not literally vanish beyond some finite radius. Instead they fall off rapidly, typically exponentially, so that the probability of finding the particle very far away is nonzero but extremely small.
-
-That completes the atomic part of the lecture. Susskind then puts atoms aside for the moment and turns to a new system in which the same algebraic luck appears again.
-
-\section{The Harmonic Oscillator: Dirac's Trick Again}
-
-The transition to the harmonic oscillator is not a digression so much as a replay. Susskind emphasizes that many small oscillations in physics are approximately harmonic, and he even notes that oscillations near the bottom of an effective radial well are an example. The oscillator is the second case in which ladder operators solve the spectrum almost at once.
-
-Take the mass to be \(1\) and write the spring constant as \(k=\omega^2\). Then the classical Hamiltonian is
+Consider a one-dimensional oscillator with unit mass. Let \(x\) be the displacement from equilibrium and write the spring constant as \(k=\omega^2\). The classical Hamiltonian is
 \begin{equation}
 H=\frac{p^2}{2}+\frac{\omega^2x^2}{2}.
 \end{equation}
-Hamilton's equations are
+Hamilton's equations give
 \begin{equation}
-\dot x=\frac{\partial H}{\partial p}=p,\qquad
-\dot p=-\frac{\partial H}{\partial x}=-\omega^2x.
+\dot{x}=\frac{\partial H}{\partial p}=p,
+\qquad
+\dot{p}=-\frac{\partial H}{\partial x}=-\omega^2x,
 \end{equation}
-Therefore
+and therefore
 \begin{equation}
-\ddot x=-\omega^2x,
+\ddot{x}=-\omega^2x.
 \end{equation}
-which identifies \(\omega\) as the classical frequency of oscillation.
+Thus \(\omega\) is the classical oscillation frequency.
 
-\paragraph{Factorization and the zero-point term.}
-Now comes the Dirac-like move. Since the Hamiltonian is a sum of squares, try to factor it:
+\section{Factorization and the Zero-Point Energy}
+
+Quantum mechanically,
 \begin{equation}
-\frac12(p+i\omega x)(p-i\omega x).
+[x,p]=i\hbar.
 \end{equation}
-Quantum mechanically this is not exactly \(H\), because \(x\) and \(p\) do not commute. Using
-\begin{equation}
-[x,p]=i\hbar,
-\end{equation}
-one finds
+The Hamiltonian is a sum of squares, suggesting the factorization
 \begin{align}
-\frac12(p+i\omega x)(p-i\omega x)
-&=\frac12\bigl(p^2+\omega^2x^2+i\omega[x,p]\bigr) \\
-&=\frac12\bigl(p^2+\omega^2x^2-\hbar\omega\bigr).
+\frac{1}{2}(p+i\omega x)(p-i\omega x)
+&=\frac{1}{2}\left(p^2+\omega^2x^2+i\omega[x,p]\right) \\
+&=\frac{1}{2}\left(p^2+\omega^2x^2-\hbar\omega\right).
 \end{align}
 Hence
 \begin{equation}
-H=\frac12(p+i\omega x)(p-i\omega x)+\frac12\hbar\omega.
+H=\frac{1}{2}(p+i\omega x)(p-i\omega x)
++\frac{1}{2}\hbar\omega.
 \end{equation}
-The additive constant \(\frac12\hbar\omega\) is the zero-point energy. In the lecture Susskind temporarily drops it in order to focus on the ladder structure, and then restores it at the end.
+The additive term \(\hbar\omega/2\) is the zero-point energy.
+
+Classically the lowest energy would occur at \(x=p=0\). Quantum mechanically no state can have both position and momentum sharply fixed at zero. Moreover, the two terms \(p^2/2\) and \(\omega^2x^2/2\) are positive and cannot cancel. A nonzero ground-state energy is therefore unavoidable.
+
+For the ladder calculation the common additive constant may be set aside temporarily and restored at the end.
+
+\begin{classroomqa}
+\lecturetimestamp{01:36:10}
+\audiencequestion{Does the positive sign of the zero-point term tell us anything further?}
+\lecturerresponse{The oscillator Hamiltonian is a positive operator: it is a sum of positive squares, so its energy cannot be negative.}
+\end{classroomqa}
+
+\section{The Oscillator Ladder}
+
+Introduce the dimensionless operators\footnote{Around \(01{:}37\)--\(01{:}42\), the calculation uses \(\hbar=1\). The factor of \(\hbar\) is restored in these normalized definitions so that \(A_\pm\) are dimensionless and their commutator is unity.}
+\begin{equation}
+A_+=\frac{p+i\omega x}{\sqrt{2\hbar\omega}},
+\qquad
+A_-=\frac{p-i\omega x}{\sqrt{2\hbar\omega}}.
+\end{equation}
+They are Hermitian conjugates:
+\begin{equation}
+A_+^\dagger=A_-.
+\end{equation}
+Their commutator is
+\begin{align}
+[A_-,A_+]
+&=\frac{1}{2\hbar\omega}
+\left([p,i\omega x]+[-i\omega x,p]\right) \\
+&=1.
+\end{align}
 
 Define
 \begin{equation}
-A_+=\frac{p+i\omega x}{\sqrt{2\hbar\omega}},\qquad
-A_-=\frac{p-i\omega x}{\sqrt{2\hbar\omega}},
-\end{equation}
-so that \(A_+\) and \(A_-\) are Hermitian conjugates of one another. In standard notation they are \(a^\dagger\) and \(a\). The Hamiltonian becomes
-\begin{equation}
-H=\hbar\omega\left(A_+A_-+\frac12\right).
-\end{equation}
-Now define the number operator
-\begin{equation}
 N=A_+A_-.
 \end{equation}
-At this point Susskind asks what Dirac would do. His answer is immediate: commute the factors. A direct calculation gives
+The Hamiltonian is then
 \begin{equation}
-[A_-,A_+]=1.
+H=\hbar\omega\left(N+\frac{1}{2}\right).
 \end{equation}
-From this it follows that
-\begin{equation}
-[N,A_+]=A_+,\qquad [N,A_-]=-A_-.
-\end{equation}
+Thus finding the energy spectrum reduces to finding the eigenvalues of \(N\).
 
-\paragraph{The ladder.}
 Suppose
 \begin{equation}
 N|n\rangle=n|n\rangle.
 \end{equation}
-Then
+The commutators with \(N\) are\footnote{The intermediate steps at \(01{:}45{:}37\)--\(01{:}48{:}10\) are reconstructed directly from the stated relations \(N=A_+A_-\) and \([A_-,A_+]=1\).}
 \begin{align}
-N(A_+|n\rangle)
-&=(A_+N+[N,A_+])|n\rangle \\
-&=(n+1)(A_+|n\rangle),
+[N,A_+]
+&=A_+[A_-,A_+]=A_+, \\
+[N,A_-]
+&=[A_+,A_-]A_-=-A_-.
 \end{align}
-so \(A_+\) raises the eigenvalue by one. Similarly,
-\begin{equation}
-N(A_-|n\rangle)=(n-1)(A_-|n\rangle).
-\end{equation}
-Thus the oscillator has precisely the same ladder structure that angular momentum had, except that the ladder now lives in energy rather than in \(m\).
+It follows that
+\begin{align}
+N\bigl(A_+|n\rangle\bigr)
+&=(n+1)A_+|n\rangle, \\
+N\bigl(A_-|n\rangle\bigr)
+&=(n-1)A_-|n\rangle.
+\end{align}
+Thus \(A_+\) raises an eigenvalue of \(N\) by one and \(A_-\) lowers it by one whenever the resulting vector is nonzero.
 
-What prevents the ladder from descending forever? Here the answer is positivity:
+The operator \(N\) is nonnegative:
 \begin{equation}
-\langle \psi|N|\psi\rangle
-=
-\langle \psi|A_+A_-|\psi\rangle
-=
-\|A_-|\psi\rangle\|^2
-\ge 0.
+\langle\psi|N|\psi\rangle
+=\langle\psi|A_+A_-|\psi\rangle
+=\|A_-|\psi\rangle\|^2
+\geq0.
 \end{equation}
-So the eigenvalues of \(N\) are nonnegative. Since raising and lowering change them in integer steps, there must be a lowest one, and it must be
+The lowering process therefore cannot continue into negative eigenvalues. At a bottom state \(|b\rangle\), it must terminate:
 \begin{equation}
-n=0.
-\end{equation}
-The corresponding ground state obeys
-\begin{equation}
-A_-|0\rangle=0.
+A_-|b\rangle=0.
 \end{equation}
 
-With the standard normalization,
+For normalized eigenstates, the coefficients in the ladder are fixed by their norms:
+\begin{align}
+\|A_-|n\rangle\|^2
+&=\langle n|A_+A_-|n\rangle=n, \\
+\|A_+|n\rangle\|^2
+&=\langle n|A_-A_+|n\rangle=n+1.
+\end{align}
+Phases may therefore be chosen so that
 \begin{equation}
-A_+|n\rangle=\sqrt{n+1}\,|n+1\rangle,\qquad
 A_-|n\rangle=\sqrt{n}\,|n-1\rangle,
+\qquad
+A_+|n\rangle=\sqrt{n+1}\,|n+1\rangle.
 \end{equation}
-and so the full energy spectrum is
+
+\begin{classroomqa}
+\lecturetimestamp{01:52:42}
+\audiencequestion{If \(A_-\) lowers a state and \(A_+\) raises it back, how does \(A_+A_-\) produce the eigenvalue \(n\)?}
+\lecturerresponse{The ladder action includes normalization factors. Acting first with \(A_-\) contributes \(\sqrt n\), and acting with \(A_+\) on the resulting state contributes another \(\sqrt n\). Their product is \(n\).}
+\end{classroomqa}
+
+Indeed,
 \begin{equation}
-E_n=\hbar\omega\left(n+\frac12\right),\qquad n=0,1,2,\dots
+A_+A_-|n\rangle
+=\sqrt n\,A_+|n-1\rangle
+=n|n\rangle.
 \end{equation}
-This is exactly the spectrum Susskind reaches at the end of the lecture, with the \(\frac12\hbar\omega\) restored after having been temporarily set aside.
 
-He also remarks, in response to a question, that one does not usually get ladder operators this cleanly. Physics has been lucky here twice: once for angular momentum, and once for the harmonic oscillator. The second luck is especially important because so many systems reduce, near equilibrium, to oscillator behavior.
+\begin{classroomqa}
+\lecturetimestamp{01:55:52}
+\audiencequestion{Must the lowest eigenvalue of \(N\) be zero, or could it be positive?}
+\lecturerresponse{It must be zero, and the spectrum of \(N\) consists of the nonnegative integers. A proof of the endpoint has not yet been supplied.}
+\end{classroomqa}
 
-\section{Summary}
+\editorialnote{Let \(|b\rangle\) be a lowest state. Since lowering must terminate, \(A_-|b\rangle=0\). It follows immediately that \(N|b\rangle=A_+A_-|b\rangle=0\), so the lowest eigenvalue of \(N\) is zero.}
 
-Lecture~3 has a single mathematical instinct running through it. Angular momentum is first reinterpreted as angular dependence of a wavefunction, which leads naturally to the ladder of \(m\)-values and to the common multiplet value
+Starting from this lowest state and applying \(A_+\) gives
 \begin{equation}
-L^2=\hbar^2\ell(\ell+1).
+n=0,1,2,\ldots.
 \end{equation}
-That algebra then reduces the central-force Schr\"odinger equation to a radial one-dimensional problem with an effective centrifugal barrier. The resulting spectra are organized by node number and by the \(2\ell+1\) degeneracy of each multiplet, with the Coulomb potential singled out by its special \(1,4,9,16,\dots\) shell pattern before spin is included. The lecture closes by showing that the same algebraic way of thinking works again for the harmonic oscillator: factorize the Hamiltonian, compute a commutator, build a ladder, identify the lowest state, and read off the spectrum.
+Restoring the additive zero-point term, the oscillator energies are
+\begin{equation}
+E_n=\hbar\omega\left(n+\frac{1}{2}\right),
+\qquad n=0,1,2,\ldots.
+\end{equation}
+
+The oscillator algebra will be developed further and used to solve other quantum problems.

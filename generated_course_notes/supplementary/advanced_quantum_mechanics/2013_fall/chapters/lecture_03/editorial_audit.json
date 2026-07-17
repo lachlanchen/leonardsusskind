@@ -1,0 +1,426 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_03",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "leakage",
+      "locator": "“These notes follow Leonard Susskind's ... Lecture 3, curated by LazyingArt LLC.”",
+      "evidence": "The chapter body contains prohibited company credit and production attribution. It also risks suggesting an authorized or endorsed edition.",
+      "action": "Remove the sentence. Keep the independent-companion disclaimer and editorial credits only in designated front matter."
+    },
+    {
+      "severity": "high",
+      "category": "voice",
+      "locator": "Repeated phrases including “Susskind begins,” “Susskind asks,” “Susskind's emphasis,” and “Susskind then makes the transition”",
+      "evidence": "The prose repeatedly narrates the speaker's actions instead of presenting the physics directly. Phrases such as “two acts” and “not a digression so much as a replay” impose an editorial architecture and motive not stated in the lecture.",
+      "action": "Rewrite in neutral explanatory prose while preserving the lecture's sequence, rhetorical questions, repetitions, and examples."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "Opening “the hour unfolds in two acts” paragraph and final “Summary” section",
+      "evidence": "The lecture announces neither a two-act plan nor the synthesized closing summary.",
+      "action": "Remove both imposed structures and retain the recorded transitions from angular momentum to central forces and then to the oscillator."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "No classroomqa environments occur in the chapter",
+      "evidence": "The chapter omits or converts into narration sixteen useful, verified audience exchanges, including the infinite-multiplet question, both factorization questions, the fixed-ℓ degeneracy question, the Coulomb-symmetry discussion, the compact-support question, and the late oscillator questions.",
+      "action": "Restore every verified exchange in chronological position using classroomqa, audiencequestion, lecturerresponse, and an internal lecturetimestamp."
+    },
+    {
+      "severity": "high",
+      "category": "structure",
+      "locator": "“The full time-independent Schrödinger equation is ...” in “The Quantum Radial Equation”",
+      "evidence": "The Cartesian three-dimensional equation is introduced too early. The lecture first develops and uses the radial equation, discusses its spectrum and Coulomb degeneracy, and only returns to the Cartesian equation at 01:14:45.",
+      "action": "Restore the recorded order: reduced radial equation first, spectral discussion next, and Cartesian equation after the Coulomb and spin discussion."
+    },
+    {
+      "severity": "critical",
+      "category": "mathematics",
+      "locator": "“Ψ_{ℓm}(r,θ,φ)=ψ(r)Y_{ℓm}(θ,φ)” followed by “p_r=−iℏ d/dr” and a pure second-derivative equation",
+      "evidence": "The displayed decomposition treats ψ as the ordinary radial factor R while applying the one-dimensional kinetic operator appropriate to the reduced function u=rR. On the three-dimensional radial Hilbert space, the Hermitian radial momentum is not simply −iℏ d/dr.",
+      "action": "Write Ψ=u_{n_rℓ}(r)Y_{ℓm}(θ,φ)/r and formulate the pure second-derivative equation for u. Explain the convention in an editorialnote and avoid asserting a standalone radial-momentum operator."
+    },
+    {
+      "severity": "medium",
+      "category": "fidelity",
+      "locator": "“Susskind is slightly casual about the sign when he speaks it aloud”",
+      "evidence": "This is source assessment in the chapter body. It also treats the sign as the main problem when the more important ambiguity concerns the radial variable and operator.",
+      "action": "Remove the judgmental narration and state the precise reduced-radial convention in an editorialnote."
+    },
+    {
+      "severity": "high",
+      "category": "mathematics",
+      "locator": "“all members of a fixed ℓ-multiplet have the same energy”",
+      "evidence": "A fixed ℓ selects a radial operator, not a single energy. That operator generally has several radial eigenvalues.",
+      "action": "State that each selected radial eigenfunction u_{n_rℓ} generates a 2ℓ+1-dimensional m multiplet with common energy because m does not enter the radial equation."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "“At every level in the ℓ-th tower there are 2ℓ+1 degenerate states”",
+      "evidence": "The statement can be read as specifying the complete degeneracy, although additional symmetries can align states with different ℓ values.",
+      "action": "Say that every radial eigenvalue at fixed ℓ carries a 2ℓ+1-dimensional magnetic multiplet and that extra symmetries may enlarge the total degeneracy."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "“if ℓ=0 ... nothing prevents the motion from heading straight through the origin”",
+      "evidence": "For a regular central potential, a zero-angular-momentum trajectory may pass through the origin. For the singular point-Coulomb potential it reaches a collision singularity, and continuation requires an additional prescription.",
+      "action": "Qualify the statement by distinguishing regular central potentials from the ideal point-Coulomb potential."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "“At sufficiently high energy the states cease to be bound ... the discrete spectrum gives way to the continuum.”",
+      "evidence": "This is appropriate for the atomic-type potentials under discussion when V(r) approaches a finite threshold, conventionally zero, at infinity. It is false for confining central potentials.",
+      "action": "Tie the claim explicitly to potentials with V(r)→0: E<0 gives the discrete bound spectrum and E≥0 the scattering continuum."
+    },
+    {
+      "severity": "high",
+      "category": "figure",
+      "locator": "All three figures are unsupported TikZ reconstructions; none of the supplied lecture frames is retained",
+      "evidence": "Frames 02 and 03 are clear, correctly timed records of the effective radial Hamiltonian and radial Schrödinger equation. Replacing both with unsourced reconstructions weakens provenance.",
+      "action": "Retain frames 02 and 03 with physics-only captions and immediate lectureframe markers. Use frame 01 only as the source for a legible integer-multiplet redraw."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "Caption: “The finite angular-momentum ladder suggested by the blackboard discussion.”",
+      "evidence": "The caption contains production provenance rather than only describing the physics. Because it includes m=0, the drawing specifically represents an integer orbital multiplet, not a general half-integer multiplet.",
+      "action": "Describe it as an integer orbital multiplet, move provenance to a footnote, and place lectureframe{00:35:53} immediately after the caption."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "Effective-potential TikZ figure in the classical-reduction section",
+      "evidence": "The classical section derives L²/(2mr²), but the redraw labels the barrier with the quantum eigenvalue ℏ²ℓ(ℓ+1)/(2mr²). Its caption also suggests that every attractive central force has such a minimum, whereas the argument given is Coulomb-specific.",
+      "action": "Remove the redraw in favor of frame 02, or use classical notation and restrict the minimum claim to the Coulomb-like potential actually discussed."
+    },
+    {
+      "severity": "high",
+      "category": "fidelity",
+      "locator": "“Since raising and lowering change them in integer steps, there must be a lowest one, and it must be n=0.”",
+      "evidence": "Positivity establishes a lower endpoint but does not alone prove that the endpoint eigenvalue is zero. The lecture explicitly asserts zero, acknowledges that the proof was not supplied, and states the nonnegative-integer spectrum.",
+      "action": "Restore the 01:55:52 exchange faithfully, then add an editorialnote proving that A₋|b⟩=0 implies N|b⟩=A₊A₋|b⟩=0."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "“Throughout, Susskind suppresses factors of ℏ on the board; they are restored here.”",
+      "evidence": "The blanket statement is inaccurate: factors of ℏ are included, dropped, and restored at different stages. The dimensionless normalization of A₊ and A₋ is an editorial reconstruction of a calculation performed mostly with ℏ=1.",
+      "action": "Remove the blanket claim. Attach a concise source footnote to the normalized A₊ and A₋ definitions explaining the local ℏ=1 convention."
+    },
+    {
+      "severity": "low",
+      "category": "provenance",
+      "locator": "“In standard notation they are a† and a” and “Σ_{k=0}^{n−1}(2k+1)=n²”",
+      "evidence": "These are correct textbook additions, but neither is needed for coherence nor explicitly developed in the lecture.",
+      "action": "Remove them or identify them as brief editorial clarifications rather than silently expanding the lecture."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:13",
+      "end": "00:06:49",
+      "subject": "Central-force motivation and angular dependence in two and three dimensions",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:07:04",
+      "end": "00:16:06",
+      "subject": "Angular-momentum commutators, ladder endpoints, integer and half-integer multiplets, and 2ℓ+1 states",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:16:12",
+      "end": "00:17:02",
+      "subject": "Audience question about an infinite multiplet and the finite-energy qualification",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:17:05",
+      "end": "00:25:59",
+      "subject": "Factorization of L² and derivation of ℏ²ℓ(ℓ+1) on the highest state",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:26:08",
+      "end": "00:32:38",
+      "subject": "Exercise showing that L² is common to the multiplet and the opposite ordered factorization",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:32:43",
+      "end": "00:35:59",
+      "subject": "Spherical harmonics, multiplet labels, and rotational energy degeneracy",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:36:08",
+      "end": "00:50:33",
+      "subject": "Classical central-force reduction, centrifugal barrier, and Coulomb effective potential",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "00:50:34",
+      "end": "00:57:24",
+      "subject": "Quantum radial equation, restoration of ℏ², and questions about ℓ and m",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "00:57:30",
+      "end": "01:00:41",
+      "subject": "Decision not to solve the special functions explicitly and organization by radial nodes",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:00:43",
+      "end": "01:07:06",
+      "subject": "Generic atomic-type spectra by ℓ, magnetic multiplet sizes, and the escape threshold",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "01:07:08",
+      "end": "01:14:40",
+      "subject": "Special Coulomb alignments, square degeneracies, hydrogen corrections, and spin doubling",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:14:45",
+      "end": "01:16:39",
+      "subject": "Return to the original Cartesian Schrödinger equation and reduction to an ordinary radial equation",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "01:16:42",
+      "end": "01:24:09",
+      "subject": "Questions on nuclear size, L², wavefunction tails, ℓ=0, dimensionality, and ladder operators",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:24:12",
+      "end": "01:30:05",
+      "subject": "Transition from atoms to the harmonic oscillator and verification of the classical Hamiltonian",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:30:08",
+      "end": "01:36:30",
+      "subject": "Oscillator factorization, the commutator correction, and zero-point energy",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:36:34",
+      "end": "01:42:46",
+      "subject": "Definitions, adjoint relation, and commutator of A₊ and A₋",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:42:50",
+      "end": "01:52:40",
+      "subject": "Number operator, raising and lowering its eigenvalues, positivity, and the bottom state",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:52:42",
+      "end": "01:56:40",
+      "subject": "Normalization coefficients and the question whether the lowest N eigenvalue is zero",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "01:56:41",
+      "end": "01:57:27",
+      "subject": "Final oscillator spectrum and its intended later use",
+      "chapter_status": "present"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:16:12",
+      "end": "00:17:02",
+      "question": "Could the angular-momentum multiplet contain infinitely many states?",
+      "answer_summary": "The possibility can be contemplated but is set aside; angular momentum generally raises the energy, so infinite angular momentum is irrelevant to the finite-energy states under discussion.",
+      "verified": true
+    },
+    {
+      "start": "00:26:08",
+      "end": "00:30:37",
+      "question": "What exactly is the exercise showing that the other states have the same value of L²?",
+      "answer_summary": "Commute L² through L₋ and prove that L² commutes with every angular-momentum component, allowing the highest-state eigenvalue to be carried down the ladder.",
+      "verified": true
+    },
+    {
+      "start": "00:32:05",
+      "end": "00:32:38",
+      "question": "Could L_x²+L_y² be factored in the opposite order using L₊L₋?",
+      "answer_summary": "Yes. The sign of the L_z term reverses, and the identity is applied to the lowest state instead of the highest; the same ℓ(ℓ+1) result follows.",
+      "verified": true
+    },
+    {
+      "start": "00:55:34",
+      "end": "00:56:01",
+      "question": "For a given ℓ, do the 2ℓ+1 magnetic states have the same energy?",
+      "answer_summary": "They share the same energy when the radial eigenstate is also held fixed, because m does not enter the radial equation.",
+      "verified": true
+    },
+    {
+      "start": "00:56:03",
+      "end": "00:57:03",
+      "question": "Why may L² be replaced by ℏ²ℓ(ℓ+1), and how is ℓ related to the m values?",
+      "answer_summary": "The quantum number ℓ labels the multiplet and is its maximum m value; its common L² eigenvalue is inserted into the radial equation.",
+      "verified": true
+    },
+    {
+      "start": "01:09:57",
+      "end": "01:10:20",
+      "question": "Does the extra Coulomb degeneracy indicate an additional symmetry?",
+      "answer_summary": "Yes. It is an unusual symmetry special to the exact Coulomb potential, and the lecture does not derive it.",
+      "verified": true
+    },
+    {
+      "start": "01:11:46",
+      "end": "01:12:12",
+      "question": "Does this degeneracy describe hydrogen or only the ideal Coulomb problem?",
+      "answer_summary": "Hydrogen satisfies it very accurately but not exactly; relativistic effects and finite nuclear size disturb the ideal pattern.",
+      "verified": true
+    },
+    {
+      "start": "01:16:42",
+      "end": "01:17:08",
+      "question": "Could deviations from the ideal Coulomb spectrum determine the nuclear size?",
+      "answer_summary": "Not by this simple comparison, because much larger corrections intervene; nuclear size is only an easy example of departure from the point-Coulomb potential.",
+      "verified": true
+    },
+    {
+      "start": "01:17:09",
+      "end": "01:17:56",
+      "question": "What is the main difference between the classical and quantum angular-momentum terms?",
+      "answer_summary": "The quantum squared magnitude is ℏ²ℓ(ℓ+1), rather than a simple square, and the difference comes from noncommutativity.",
+      "verified": true
+    },
+    {
+      "start": "01:17:58",
+      "end": "01:18:46",
+      "question": "Do the bound-state wavefunctions have compact support?",
+      "answer_summary": "No. They extend arbitrarily far but decrease exponentially and become negligibly small at large distance.",
+      "verified": true
+    },
+    {
+      "start": "01:18:48",
+      "end": "01:20:10",
+      "question": "When ℓ=0 removes the centrifugal well, what becomes of the stable point?",
+      "answer_summary": "Classically the motion heads toward the center; quantum mechanically exact localization and definite zero momentum cannot coexist, so the lowest state has finite spatial spread.",
+      "verified": true
+    },
+    {
+      "start": "01:21:30",
+      "end": "01:22:52",
+      "question": "How can the quantum problem remain three-dimensional after the classical orbit was placed in a plane?",
+      "answer_summary": "Only the classical orbit can be put in a fixed plane. The quantum wavefunction fills three-dimensional space, and the full L² eigenvalue retains the additional components.",
+      "verified": true
+    },
+    {
+      "start": "01:22:54",
+      "end": "01:24:09",
+      "question": "Does every quantum problem admit raising and lowering operators?",
+      "answer_summary": "No. They occur in unusually favorable cases; angular momentum and the oscillator are the two examples emphasized, with the oscillator especially pervasive near equilibrium.",
+      "verified": true
+    },
+    {
+      "start": "01:36:10",
+      "end": "01:36:30",
+      "question": "Does the positive sign of the zero-point term tell us anything further?",
+      "answer_summary": "The oscillator Hamiltonian is a positive operator, so its energy cannot be negative.",
+      "verified": true
+    },
+    {
+      "start": "01:52:42",
+      "end": "01:55:04",
+      "question": "If A₋ lowers a state and A₊ raises it back, how does A₊A₋ produce the eigenvalue n?",
+      "answer_summary": "The ladder action includes normalization factors: A₋ contributes √n and A₊ contributes a second √n when returning to the original state.",
+      "verified": true
+    },
+    {
+      "start": "01:55:52",
+      "end": "01:56:40",
+      "question": "Must the lowest eigenvalue of N be zero, or could it be positive?",
+      "answer_summary": "The response asserts that it is zero and that the spectrum consists of the nonnegative integers, while acknowledging that the endpoint proof was not supplied.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_03_frame_01.png",
+      "timestamp": "00:35:53",
+      "verdict": "replace",
+      "reason": "The multiplet sketch and the L_z, L², and ladder-operator relations support a redraw, but the speaker obscures part of the ladder and the right side is cropped.",
+      "caption_guidance": "An integer orbital angular-momentum multiplet; L₊ and L₋ change m by one while L² remains ℏ²ℓ(ℓ+1)."
+    },
+    {
+      "asset": "lecture_03_frame_02.png",
+      "timestamp": "00:47:15",
+      "verdict": "keep",
+      "reason": "The effective radial Hamiltonian is centered and readable, including radial kinetic energy, the centrifugal term, and V(r). The timestamp matches the classical central-force reduction.",
+      "caption_guidance": "For fixed classical angular momentum, the radial Hamiltonian contains radial kinetic energy, the centrifugal term L²/(2mr²), and the central potential V(r)."
+    },
+    {
+      "asset": "lecture_03_frame_03.png",
+      "timestamp": "00:54:32",
+      "verdict": "keep",
+      "reason": "The frame clearly shows the radial equation with the ℓ(ℓ+1)/r² and V(r) terms. A nearby clarification must identify the displayed ψ(r) with the reduced radial function used in the exact one-dimensional equation.",
+      "caption_guidance": "For fixed ℓ, the reduced radial wavefunction satisfies a one-dimensional Schrödinger equation with a centrifugal term proportional to ℓ(ℓ+1)/r²."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "00:14:02–00:14:35",
+      "problem": "The ASR is badly damaged during the concrete seven-state counting example.",
+      "required_check": "Use the video and visible multiplet sketch if the exact example or wording is retained."
+    },
+    {
+      "locator": "00:51:57–00:54:56",
+      "problem": "The spoken sign of p_r and the identity of the radial variable are imprecise; the frame displays a pure second derivative without distinguishing R(r) from u(r)=rR(r).",
+      "required_check": "Check frame 03 and a named radial-Schrödinger reference before fixing the decomposition and operator convention."
+    },
+    {
+      "locator": "00:56:03–00:57:03",
+      "problem": "The follow-up audience wording is fragmented, although the response clearly distinguishes ℓ as the multiplet label and maximum m value.",
+      "required_check": "Check the audio before presenting the audience question as a close quotation; otherwise paraphrase conservatively."
+    },
+    {
+      "locator": "01:11:46–01:11:57",
+      "problem": "The audience question is severely corrupted by ASR, although the answer clearly contrasts real hydrogen with the ideal Coulomb model.",
+      "required_check": "Use the audio for any close rendering of the question."
+    },
+    {
+      "locator": "01:17:09–01:17:56",
+      "problem": "The speaker explicitly introduces a second question, but the audience's exact wording is not separately captured.",
+      "required_check": "Use the audio if exact wording is needed; otherwise paraphrase the mathematical issue conservatively."
+    },
+    {
+      "locator": "01:20:16–01:20:33",
+      "problem": "The transcript is unintelligible and cannot support an additional exchange or physical claim.",
+      "required_check": "Review the audio or video before retaining anything from this interval."
+    },
+    {
+      "locator": "01:45:37–01:48:10",
+      "problem": "ASR damage obscures several intermediate algebraic lines in the proof that A₊ raises the N eigenvalue.",
+      "required_check": "Check the board or derive the commutator steps explicitly and mark the nontrivial reconstruction in a source footnote."
+    },
+    {
+      "locator": "01:55:52–01:56:40",
+      "problem": "The lecture asserts that the bottom N eigenvalue is zero but explicitly does not complete the proof.",
+      "required_check": "Keep the recorded assertion in classroomqa and identify the short endpoint proof as an editorial clarification."
+    },
+    {
+      "locator": "Three TikZ figures in the current chapter",
+      "problem": "No frame times or source footnotes identify the visual basis for the effective-potential and spectrum reconstructions.",
+      "required_check": "Match each retained redraw to a precise video time or replace it with the supplied readable frame."
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "course_rel": "supplementary/advanced_quantum_mechanics/2013_fall",
+  "chapter": "lecture_03",
+  "transcript_rel": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+  "video_rel": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].mkv",
+  "entries": [
+    {
+      "locator": "Angular Dependence of the Wavefunction, opening",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:45",
+        "00:01:53"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Central-force motivation, conserved angular momentum, fixed orbital plane, and transition to the wavefunction."
+    },
+    {
+      "locator": "Two-dimensional angular-momentum eigenfunction",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:02:43",
+        "00:05:28"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports the angular derivative, exponential angular dependence, integer orbital label, and arbitrary radial factor."
+    },
+    {
+      "locator": "Three-dimensional separation into R(r)Y_{ℓm}",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:05:28",
+        "00:06:49"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The lecture describes arbitrary radial functions multiplying specific functions of the two angles."
+    },
+    {
+      "locator": "Finite Angular-Momentum Multiplets",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:07:04",
+        "00:16:06"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Covers the commutators, L_±, unit changes in m, ladder endpoints, integer and half-integer cases, and 2ℓ+1 states."
+    },
+    {
+      "locator": "Infinite-multiplet classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:16:12"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Explicit audience question and finite-energy response."
+    },
+    {
+      "locator": "Highest-state derivation of L²=ℏ²ℓ(ℓ+1)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:17:05",
+        "00:25:59"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The ordered factorization and annihilation of the highest state are developed explicitly."
+    },
+    {
+      "locator": "Common L² value throughout a multiplet",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:26:08",
+        "00:31:58"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Commutation of L² with the angular-momentum components carries the eigenvalue down the ladder."
+    },
+    {
+      "locator": "Opposite ordered factorization classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:32:05"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The alternate L_+L_- ordering and use of the lowest state are explicit."
+    },
+    {
+      "locator": "Spherical harmonics and magnetic degeneracy",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:32:43",
+        "00:35:59"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports the Y_{ℓm} labels, 2ℓ+1 functions, common L², and central-force energy degeneracy."
+    },
+    {
+      "locator": "Integer orbital multiplet TikZ redraw",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:35:53"
+      ],
+      "reference": "generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/assets/lecture_03_frame_01.png",
+      "confidence": "medium",
+      "note": "The visible multiplet and operator identities support the redraw, although the source frame is partially obscured."
+    },
+    {
+      "locator": "Classical central-force radial reduction",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:36:08",
+        "00:46:56"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports momentum decomposition, L=rp_θ, and the effective radial Hamiltonian."
+    },
+    {
+      "locator": "Classical radial Hamiltonian screenshot",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:47:15"
+      ],
+      "reference": "generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/assets/lecture_03_frame_02.png",
+      "confidence": "high",
+      "note": "The radial kinetic term, centrifugal contribution, and central potential are legible in lecture_03_frame_02.png."
+    },
+    {
+      "locator": "Coulomb effective potential and classical orbits",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:47:03",
+        "00:50:33"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports the competing 1/r² and 1/r behavior, the minimum, circular motion, and radial oscillations of elliptical orbits."
+    },
+    {
+      "locator": "Reduced radial Schrödinger equation",
+      "kind": "equation",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:50:34",
+        "00:54:32"
+      ],
+      "reference": "generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/assets/lecture_03_frame_03.png",
+      "confidence": "high",
+      "note": "Speech and lecture_03_frame_03.png support the second derivative, centrifugal term, potential, and energy eigenvalue."
+    },
+    {
+      "locator": "Identification of the reduced radial function u=rR",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:54:32"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "Necessary clarification resolving the radial-variable and Hermitian-operator ambiguity in the spoken and written notation."
+    },
+    {
+      "locator": "Fixed-ℓ energy and ℓ–m classroom exchanges",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:55:34",
+        "00:56:03"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports magnetic degeneracy at fixed radial eigenstate and the role of ℓ as the multiplet label."
+    },
+    {
+      "locator": "Radial Nodes and Energy Levels",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:57:30",
+        "01:00:41"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports node ordering and the connection between rapid variation, momentum, and kinetic energy."
+    },
+    {
+      "locator": "Generic central-force spectral organization",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:00:43",
+        "01:07:06"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports separate radial towers, magnetic multiplet sizes, centrifugal shifts, and the escape threshold."
+    },
+    {
+      "locator": "Special Coulomb degeneracy",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:07:08",
+        "01:11:45"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports alignment of different ℓ towers and the orbital degeneracies 1, 4, 9, and 16."
+    },
+    {
+      "locator": "Coulomb-symmetry classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:09:57"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports the additional symmetry special to the Coulomb potential."
+    },
+    {
+      "locator": "Ideal-Coulomb versus hydrogen classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:11:46"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports the distinction between ideal Coulomb degeneracy and approximate hydrogenic behavior."
+    },
+    {
+      "locator": "Finite nuclear size, relativistic corrections, and spin doubling",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:12:13",
+        "01:14:40"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports deviations from the point-Coulomb spectrum and shell counts doubled by electron spin."
+    },
+    {
+      "locator": "Cartesian Schrödinger equation revisited",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:14:45",
+        "01:16:39"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The lecture explicitly returns to the Cartesian three-dimensional equation after the spectral discussion."
+    },
+    {
+      "locator": "Post-Coulomb classroom discussion",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:16:42",
+        "01:17:09",
+        "01:17:58",
+        "01:18:48",
+        "01:21:30",
+        "01:22:54"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Covers nuclear size, the quantum angular-momentum correction, wavefunction tails, ℓ=0, dimensionality, and the rarity of ladder operators."
+    },
+    {
+      "locator": "Point-Coulomb collision qualification",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:18:48"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "Necessary distinction between passage through the origin for regular potentials and the collision singularity of the ideal point-Coulomb problem."
+    },
+    {
+      "locator": "Small Oscillations and the Harmonic Oscillator",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:24:12",
+        "01:30:05"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports the near-equilibrium motivation, unit-mass Hamiltonian, Hamilton equations, and frequency ω."
+    },
+    {
+      "locator": "Oscillator factorization and zero-point energy",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:30:08",
+        "01:36:30"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports the noncommuting factorization, additive ℏω/2 term, uncertainty explanation, and positivity exchange."
+    },
+    {
+      "locator": "Positive zero-point-term classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:36:10"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The exchange explicitly connects the sign to positivity of the oscillator Hamiltonian."
+    },
+    {
+      "locator": "Normalized A_± definitions and commutator",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:36:34",
+        "01:42:46"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The lecture defines the conjugate factors and derives their unit commutator; the chapter documents restoration of ℏ."
+    },
+    {
+      "locator": "Number operator and ladder spectrum",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:42:50",
+        "01:52:40"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports N=A_+A_-, raising and lowering by one, positivity, and termination at a bottom state."
+    },
+    {
+      "locator": "Reconstructed commutators of N with A_±",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:45:37",
+        "01:48:10"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The marked reconstruction follows directly from N=A_+A_- and the stated unit commutator."
+    },
+    {
+      "locator": "Normalization coefficients and A_+A_- action",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:52:42",
+        "01:55:04"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The square-root coefficients and their product are explicitly developed in response to the audience question."
+    },
+    {
+      "locator": "Lowest-N-eigenvalue classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:55:52"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The response asserts that the lowest eigenvalue is zero while acknowledging that the proof was not supplied."
+    },
+    {
+      "locator": "Proof that the lowest N eigenvalue is zero",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:55:52"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The marked clarification supplies the short endpoint argument omitted from the lecture."
+    },
+    {
+      "locator": "Final oscillator spectrum",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:56:41",
+        "01:57:27"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "Supports nonnegative integer N and E_n=ℏω(n+1/2), together with the stated later use of the oscillator algebra."
+    },
+    {
+      "locator": "What exactly is the exercise showing that the other states have the same value of L²?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:26:08"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The audience asks for the exercise, and the response accurately follows the recorded commutation argument."
+    },
+    {
+      "locator": "If A_- lowers a state and A_+ raises it back, how does A_+A_- produce the eigenvalue n?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:52:42"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].md",
+      "confidence": "high",
+      "note": "The audience question is explicit, and the two square-root normalization factors are developed in the response."
+    }
+  ]
+}
