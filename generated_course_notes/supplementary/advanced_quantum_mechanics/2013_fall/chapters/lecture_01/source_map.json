@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "course_rel": "supplementary/advanced_quantum_mechanics/2013_fall",
+  "chapter": "lecture_01",
+  "transcript_rel": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+  "video_rel": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].webm",
+  "entries": [
+    {
+      "locator": "Opening two paragraphs",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:12",
+        "00:01:10",
+        "00:01:57"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Preserves the reason for the review, the applications roadmap, and the recurring symmetry theme."
+    },
+    {
+      "locator": "States, observables, and orthogonality",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:02:35",
+        "00:04:41",
+        "00:06:26",
+        "00:09:08"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Follows the review of state vectors, Dirac notation, Hermitian observables, eigenvalues, inner products, and distinguishability."
+    },
+    {
+      "locator": "Position states and ψ(x)=⟨x|ψ⟩",
+      "kind": "equation",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:12:38",
+        "00:13:15"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].webm",
+      "confidence": "high",
+      "note": "The orthogonality relation and wavefunction definition are spoken and visible in the position-state board sequence."
+    },
+    {
+      "locator": "P(x)=|ψ(x)|² and wavefunction normalization",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:13:47",
+        "00:14:19",
+        "00:28:30"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "The probability rule is explicit; the normalization integral reconstructs the spoken requirement that total probability equal one."
+    },
+    {
+      "locator": "Position operator and three-dimensional extension",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:15:22",
+        "00:15:59",
+        "00:17:00"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Preserves multiplication by x and the extension from a line to points in three-dimensional space."
+    },
+    {
+      "locator": "pₓ=−iℏ d/dx and the definite-momentum eigenfunction",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:20:08",
+        "00:22:20",
+        "00:23:21"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "The differential operator, eigenvalue equation, and proportional plane-wave solution are explicitly developed."
+    },
+    {
+      "locator": "Generalized position and momentum eigenstates",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:19:24",
+        "00:25:05",
+        "00:28:02"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The marked editorial note distinguishes delta and plane-wave generalized eigenstates from ordinary square-integrable normalized wavefunctions."
+    },
+    {
+      "locator": "Momentum and position Q&A sequence",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:24:26",
+        "00:26:36",
+        "00:28:02",
+        "00:28:53"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "All four exchanges are genuine and the mathematical caveat is kept outside the lecturer responses."
+    },
+    {
+      "locator": "Time evolution U(t)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:41",
+        "00:31:21",
+        "00:32:08"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Defines evolution through elapsed time and the identity at zero elapsed time."
+    },
+    {
+      "locator": "U†(t)U(t)=1",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:33:17",
+        "00:34:13",
+        "00:35:44"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Derived from preservation of distinguishability and inner products."
+    },
+    {
+      "locator": "Orthogonality, normalization, and inner-product preservation",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:36:36"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The marked clarification supplies the normalization condition needed to exclude an overall nonunit rescaling."
+    },
+    {
+      "locator": "Unitarity Q&A sequence",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:36:36",
+        "00:38:12"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Both exchanges and the rotation and phase analogies are source-supported."
+    },
+    {
+      "locator": "U(ε)=1+εG and G†=−G",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:40:47",
+        "00:42:23",
+        "00:43:20"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Follows the first-order expansion and unitarity calculation."
+    },
+    {
+      "locator": "G=−iH/ℏ and H†=H",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:44:07",
+        "00:45:14",
+        "00:58:38"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The lecture works intermittently with ℏ=1; the chapter consistently restores ℏ according to the Hamiltonian's energy dimension."
+    },
+    {
+      "locator": "First-order truncation Q&A",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:45:48"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Accurately condenses the discussion of consistent order counting."
+    },
+    {
+      "locator": "U(t)=lim(1−itH/(Nℏ))^N=exp(−iHt/ℏ)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:48:06",
+        "00:49:07",
+        "00:51:31",
+        "00:53:02"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "The compact limit formula reconstructs the repeated-small-step construction of the exponential."
+    },
+    {
+      "locator": "Time-dependent Schrödinger equation",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:53:48",
+        "00:55:26",
+        "00:56:17",
+        "00:56:34"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "The finite-difference derivation and both ket and wavefunction forms are explicitly discussed."
+    },
+    {
+      "locator": "H|E⟩=E|E⟩ and energy levels",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:58:08",
+        "00:59:15",
+        "01:00:17"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "The Hamiltonian eigenvalue equation and its relation to time evolution are explicit."
+    },
+    {
+      "locator": "Energy-eigenstate phase and Q&A",
+      "kind": "q_and_a",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:53:02",
+        "01:01:05"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].webm",
+      "confidence": "high",
+      "note": "The negative sign follows from the previously established evolution operator, and the conflicting later spoken sign is documented in a footnote."
+    },
+    {
+      "locator": "What counts as a symmetry?",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:02:37",
+        "01:03:28",
+        "01:06:11",
+        "01:06:30",
+        "01:07:41"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Preserves hydrogen rotations, translations in empty space, the furnace counterexample, and squeezing as a non-symmetry."
+    },
+    {
+      "locator": "V†V=1",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:08:44",
+        "01:09:00",
+        "01:09:38"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "The symmetry operator is required to preserve distinguishability and orthogonality."
+    },
+    {
+      "locator": "Inline commutative symmetry diagram",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "01:10:30",
+        "01:16:34"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].webm",
+      "confidence": "high",
+      "note": "A legible redraw of the initial/final and primed/unprimed state argument."
+    },
+    {
+      "locator": "VU(t)=U(t)V and [V,H]=0",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:15:32",
+        "01:16:21",
+        "01:17:44",
+        "01:18:38"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "The commutation condition is derived first for full time evolution and then for the Hamiltonian."
+    },
+    {
+      "locator": "Symmetry commutation Q&A sequence",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:16:38",
+        "01:17:13",
+        "01:19:29"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "All three exchanges are directly supported."
+    },
+    {
+      "locator": "Symmetry, conservation, and Noether's theorem",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:21:02",
+        "01:21:34",
+        "01:21:45"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Preserves the recalled commutator criterion and the comparison with classical Noether's theorem."
+    },
+    {
+      "locator": "Discrete and continuous symmetries",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:22:24",
+        "01:22:43",
+        "01:23:13",
+        "01:24:16",
+        "01:25:14"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Includes reflection, particle interchange, an unmarked two-sided object, rotations, and translations."
+    },
+    {
+      "locator": "V(ε)=1−iεG and [H,G]=0",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:25:39",
+        "01:26:36",
+        "01:27:25",
+        "01:27:50"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Directly follows the infinitesimal-generator argument."
+    },
+    {
+      "locator": "T(ε)ψ(x)=ψ(x−ε) and T(ε)=exp(−iεpₓ/ℏ)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:29:18",
+        "01:31:14",
+        "01:32:37",
+        "01:34:51",
+        "01:35:35"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Uses the final corrected active-translation convention and the previously established exponentiation of infinitesimal transformations."
+    },
+    {
+      "locator": "Translation-sign Q&A",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:34:08"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "medium",
+      "note": "The intervention is partly ASR-damaged, but the sign issue and resulting correction are clear."
+    },
+    {
+      "locator": "Free-particle Hamiltonian and momentum conservation",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:36:38",
+        "01:37:01",
+        "01:37:16",
+        "01:37:40"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "The one-dimensional free Hamiltonian and its commutator with momentum are explicit."
+    },
+    {
+      "locator": "Three-dimensional translations and closing rotation preview",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:38:14",
+        "01:38:28",
+        "01:39:00",
+        "01:39:25"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].md",
+      "confidence": "high",
+      "note": "Preserves the three translation generators and the transition to noncommuting rotations and group theory."
+    }
+  ]
+}

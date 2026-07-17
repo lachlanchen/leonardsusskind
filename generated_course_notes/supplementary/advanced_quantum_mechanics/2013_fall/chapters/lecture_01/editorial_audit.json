@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_01",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "mathematics",
+      "locator": "\"(T(ε)ψ)(x)=ψ(x+ε), which is a rightward shift by ε\"",
+      "evidence": "This reverses an active translation. At 01:34:51-01:35:29 the lecture explicitly corrects a rightward shift to ψ(x−ε). The following equations are also internally inconsistent: 1+ε∂x equals 1+iεp/ħ, not 1−iεp/ħ.",
+      "action": "Follow the corrected convention: use ψ(x−ε), expand with −ε∂x, and obtain T(ε)=exp(−iεp/ħ)."
+    },
+    {
+      "severity": "high",
+      "category": "mathematics",
+      "locator": "From \"U(ε)=1−iεH\" through \"U(t)=exp(−iHt/ħ)\"",
+      "evidence": "The chapter alternates between ħ=1 and explicit ħ without declaring a change. The abstract Schrödinger equation omits ħ, while the wavefunction equation and finite evolution include it. Since H is identified as energy, the infinitesimal generator requires H/ħ.",
+      "action": "Use one convention throughout. Either include ħ in the infinitesimal evolution and abstract Schrödinger equation or explicitly set ħ=1 everywhere in this derivation."
+    },
+    {
+      "severity": "high",
+      "category": "figure",
+      "locator": "lecture_01_frame_03.png captioned as infinitesimal time evolution",
+      "evidence": "The image shows position-state orthogonality, a delta-like spike at x₀, and position probability notation. It contains no time-evolution expansion. The required lectureframe marker is also absent.",
+      "action": "Remove this frame from the time-evolution section. Replace it with frame 04 or frame 05 after verifying the exact frame time, and put the lectureframe marker immediately after the caption."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "Entire chapter",
+      "evidence": "No classroomqa environment is present, although several genuine exchanges materially clarify the physics and mathematics, including the scope of the momentum eigenvalue equation, first-order truncation, why symmetry operators are unitary, and the translation-sign correction.",
+      "action": "Retain a small selection of verified exchanges with their actual timestamps. The exchanges beginning at 00:24:26, 00:45:48, 01:17:13, 01:19:29, and 01:34:08 are especially useful."
+    },
+    {
+      "severity": "high",
+      "category": "structure",
+      "locator": "Opening paragraph beginning \"This chapter rebuilds the basic mathematical spine\"",
+      "evidence": "This synthetic overview replaces the lecture's opening at 00:00:12-00:02:34. That opening explains why a review is needed and identifies atoms, electron-like particles, photons, and symmetry as the course's intended direction.",
+      "action": "Replace the editorial overview with a concise account of the actual course opening and the reason for the review."
+    },
+    {
+      "severity": "high",
+      "category": "fidelity",
+      "locator": "Direct transition from time evolution to \"Symmetry as commuting operators\"",
+      "evidence": "The chapter omits the concrete development at 01:02:37-01:08:11: hydrogen's rotational symmetry, translating an isolated system, the furnace counterexample, translating the entire setup, and squeezing as a non-symmetry. These examples prepare the abstract condition VU=UV.",
+      "action": "Restore a compact version of these examples in lecture order before introducing the operator V."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "\"φp(x)=1/√(2πħ) exp(ipx/ħ)\"",
+      "evidence": "The lecture derives only the proportional form exp(ip₀x/ħ). The continuum-normalization factor is convention-dependent and is not supplied by the lecture or an identified source note.",
+      "action": "Write φp(x) proportional to exp(ipx/ħ), or document the selected normalization convention with a named reference."
+    },
+    {
+      "severity": "medium",
+      "category": "fidelity",
+      "locator": "Paragraph headed \"Distributional caveat\"",
+      "evidence": "The lecture calls position eigenfunctions Dirac delta functions and deliberately avoids their precise definition. Claims about non-square-integrability, physical packet states, and Gaussian approximants are textbook additions.",
+      "action": "Reduce the paragraph to the lecture's delta-spike description, or mark the additional functional-analytic material as an editorial clarification."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "\"⟨x|x′⟩=δ(x−x′)\"",
+      "evidence": "The transcript and visible board establish orthogonality for distinct positions and describe position eigenfunctions as delta functions, but the exact continuum-normalization equation is not clearly spoken.",
+      "action": "Identify the board frame or named reference that fixes the normalization convention in a concise source footnote."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "\"d⟨G⟩/dt=(i/ħ)⟨[H,G]⟩=0\"",
+      "evidence": "The lecture recalls that quantities commuting with H are conserved, but it does not derive this expectation-value equation in the present lecture.",
+      "action": "Keep only the directly supported commutator criterion, or identify the earlier derivation and mark this equation as an editorial clarification."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "Particle kinematics and continuous-symmetry sections",
+      "evidence": "Two useful transitions are absent: the extension to three-dimensional position at 00:15:59-00:17:50 and the distinction between discrete and continuous symmetries at 01:22:24-01:25:38.",
+      "action": "Restore the concise three-dimensional extension and the lecture's discrete-versus-continuous comparison."
+    },
+    {
+      "severity": "medium",
+      "category": "voice",
+      "locator": "\"This chapter rebuilds... The goal is...\" and the final \"Summary\"",
+      "evidence": "These passages narrate editorial organization rather than the physics. The synthetic summary also displaces the lecture's actual closing transition to rotational symmetry, noncommuting rotations, and group theory.",
+      "action": "Remove the editorial framing and end with the free-particle translation result followed by the lecture's brief preview of rotations."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "TikZ diagram relating U and V",
+      "evidence": "The redraw is supported by the derivation at 01:10:30-01:16:34 and improves substantially on the occluded screenshot, but its origin is not identified.",
+      "action": "Retain the redraw and add a concise source footnote identifying the corresponding lecture interval."
+    },
+    {
+      "severity": "medium",
+      "category": "fidelity",
+      "locator": "\"for particles and fields, the basis index becomes continuous\"",
+      "evidence": "This lecture develops continuous position labels for particles. It does not extend the review to field configuration spaces.",
+      "action": "Remove \"and fields\" unless the extension is explicitly marked as an editorial clarification."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:12",
+      "end": "00:02:34",
+      "subject": "Reason for the review, course applications, and recurring symmetry theme",
+      "chapter_status": "missing"
+    },
+    {
+      "start": "00:02:35",
+      "end": "00:08:24",
+      "subject": "State vectors, bras and kets, observables, and eigenvalue measurements",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:09:08",
+      "end": "00:15:36",
+      "subject": "Inner products, orthogonality, position states, wavefunctions, probability, and position operator",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:15:59",
+      "end": "00:17:50",
+      "subject": "Extension from one-dimensional position to three-dimensional space",
+      "chapter_status": "missing"
+    },
+    {
+      "start": "00:17:52",
+      "end": "00:26:33",
+      "subject": "Momentum operator, momentum eigenfunctions, and position-momentum uncertainty",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:24:26",
+      "end": "00:29:37",
+      "subject": "Clarifications about momentum eigenstates, position probabilities, normalization, and continuous vector representations",
+      "chapter_status": "missing"
+    },
+    {
+      "start": "00:29:41",
+      "end": "00:39:30",
+      "subject": "Time evolution, information preservation, unitarity, and unitary phases",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:39:34",
+      "end": "00:53:26",
+      "subject": "Infinitesimal time evolution, Hermitian generator, and finite exponentiation",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:53:27",
+      "end": "01:02:35",
+      "subject": "Time-dependent and time-independent Schrödinger equations and energy eigenstate evolution",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "01:02:37",
+      "end": "01:08:11",
+      "subject": "Physical meaning of symmetry through rotations, translations, environmental breaking, and squeezing",
+      "chapter_status": "missing"
+    },
+    {
+      "start": "01:08:11",
+      "end": "01:20:59",
+      "subject": "Unitary symmetry operator and commutation with time evolution and the Hamiltonian",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:21:02",
+      "end": "01:22:24",
+      "subject": "Symmetry, conserved quantities, and comparison with Noether's theorem",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:22:24",
+      "end": "01:25:38",
+      "subject": "Discrete versus continuous symmetries",
+      "chapter_status": "missing"
+    },
+    {
+      "start": "01:25:39",
+      "end": "01:29:17",
+      "subject": "Hermitian generators of continuous symmetries and their conservation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:29:18",
+      "end": "01:38:59",
+      "subject": "Spatial translations, momentum as generator, and the free-particle Hamiltonian",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "01:39:00",
+      "end": "01:40:00",
+      "subject": "Preview of rotations, group theory, and noncommuting symmetry operations",
+      "chapter_status": "missing"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:24:26",
+      "end": "00:25:05",
+      "question": "Does the momentum-eigenvalue differential equation hold for any wavefunction?",
+      "answer_summary": "No. It is the special equation satisfied by a momentum eigenfunction, not an arbitrary wavefunction.",
+      "verified": true
+    },
+    {
+      "start": "00:26:36",
+      "end": "00:27:33",
+      "question": "If the momentum is known to be p₀, why is there still a probability distribution?",
+      "answer_summary": "The displayed distribution concerns a subsequent position measurement. Momentum and position are different measurements; momentum amplitudes belong to the momentum representation.",
+      "verified": true
+    },
+    {
+      "start": "00:28:02",
+      "end": "00:28:52",
+      "question": "What does the position probability look like when the wavefunction is a Dirac delta function?",
+      "answer_summary": "It remains concentrated at the specified point. The response then notes that normalization requires total probability one.",
+      "verified": true
+    },
+    {
+      "start": "00:28:53",
+      "end": "00:29:28",
+      "question": "Are state vectors represented by column vectors?",
+      "answer_summary": "They can be viewed formally that way, but a position wavefunction has continuously many components, so a function is the more natural representation.",
+      "verified": true
+    },
+    {
+      "start": "00:36:36",
+      "end": "00:37:47",
+      "question": "Is preservation of every inner product stronger than merely preserving orthogonality?",
+      "answer_summary": "For a linear transformation, preserving orthogonality implies preservation of inner products. Ordinary rotations provide the analogy.",
+      "verified": true
+    },
+    {
+      "start": "00:38:12",
+      "end": "00:39:30",
+      "question": "What is an example of a nonunitary transformation?",
+      "answer_summary": "Position and momentum observables are generally not unitary. A unitary operator instead has eigenvalues that are phases on the unit circle.",
+      "verified": true
+    },
+    {
+      "start": "00:45:48",
+      "end": "00:47:19",
+      "question": "What permits the ε² term to be ignored?",
+      "answer_summary": "The calculation is consistently restricted to first order in ε. A higher-order calculation would require the corresponding higher-order terms.",
+      "verified": true
+    },
+    {
+      "start": "01:01:05",
+      "end": "01:02:35",
+      "question": "How does an energy eigenvector evolve under the time-dependent Schrödinger equation?",
+      "answer_summary": "It remains the same energy eigenvector while acquiring a time-dependent phase fixed by its energy eigenvalue.",
+      "verified": true
+    },
+    {
+      "start": "01:16:38",
+      "end": "01:16:51",
+      "question": "Must the symmetry commute with time evolution for all times?",
+      "answer_summary": "Yes. The commutation condition applies to the full time evolution.",
+      "verified": true
+    },
+    {
+      "start": "01:17:13",
+      "end": "01:17:26",
+      "question": "Does the condition mean that one may rotate and then wait, or wait and then rotate?",
+      "answer_summary": "Exactly. The two orders produce the same transformed final state.",
+      "verified": true
+    },
+    {
+      "start": "01:19:29",
+      "end": "01:20:20",
+      "question": "What requires the symmetry operator V to be unitary?",
+      "answer_summary": "A symmetry must preserve logical distinctions, taking orthogonal states to orthogonal states rather than erasing their distinguishability.",
+      "verified": true
+    },
+    {
+      "start": "01:34:08",
+      "end": "01:35:29",
+      "question": "Was a minus sign lost in the translation derivation?",
+      "answer_summary": "After checking the convention, the response corrects an active rightward shift to ψ(x−ε), fixing the generator's sign.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_01_frame_01.png",
+      "timestamp": "unknown",
+      "verdict": "remove",
+      "reason": "This is a Stanford title card corresponding only to the opening identification around 00:00:04-00:00:06. It contains no lecture physics.",
+      "caption_guidance": "Omit the asset."
+    },
+    {
+      "asset": "lecture_01_frame_02.png",
+      "timestamp": "unknown",
+      "verdict": "keep",
+      "reason": "The board legibly shows distinct position states, their orthogonality, and ⟨x|ψ⟩=ψ(x), matching the discussion around 00:12:38-00:13:35. Its exact frame time remains unverified.",
+      "caption_guidance": "Distinct position eigenstates are orthogonal, and their overlap with |ψ⟩ defines the position-space wavefunction."
+    },
+    {
+      "asset": "lecture_01_frame_03.png",
+      "timestamp": "unknown",
+      "verdict": "replace",
+      "reason": "The frame concerns a delta-like position eigenstate and position probability, not time evolution. It is partly occluded and currently has a false caption.",
+      "caption_guidance": "For a clearer replacement: a position eigenstate concentrated at x₀, represented formally by a delta-like spike."
+    },
+    {
+      "asset": "lecture_01_frame_04.png",
+      "timestamp": "unknown",
+      "verdict": "keep",
+      "reason": "The board shows infinitesimal unitary evolution, its first-order expansion, and the emerging differential equation, matching approximately 00:54:00-00:56:30.",
+      "caption_guidance": "Infinitesimal unitary evolution leading from |ψ(t+ε)⟩ to the time-dependent Schrödinger equation."
+    },
+    {
+      "asset": "lecture_01_frame_05.png",
+      "timestamp": "unknown",
+      "verdict": "keep",
+      "reason": "The board identifies the time-dependent Schrödinger equation and the energy eigenvalue equation H|E⟩=E|E⟩, matching approximately 00:56:34-00:59:45.",
+      "caption_guidance": "The time-dependent Schrödinger equation and the Hamiltonian eigenvalue equation for states of definite energy."
+    },
+    {
+      "asset": "lecture_01_frame_06.png",
+      "timestamp": "unknown",
+      "verdict": "remove",
+      "reason": "The frame corresponds to the symmetry map around 01:10:30-01:15:52, but the lecturer obscures much of the diagram. The chapter's redraw is substantially more legible.",
+      "caption_guidance": "If a clearer frame is found: time evolution and a symmetry operation give the same final state in either order."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "lecture_01_frame_02.png, lecture_01_frame_04.png, and lecture_01_frame_05.png",
+      "problem": "The supplied metadata gives no exact video timestamps for the potentially retained frames.",
+      "required_check": "Recover each exact frame time from the video or extraction metadata before adding a lectureframe marker."
+    },
+    {
+      "locator": "\"⟨x|x′⟩=δ(x−x′)\"",
+      "problem": "The exact continuum-normalization equation is not explicit in the transcript, although orthogonality and delta-function eigenstates are discussed.",
+      "required_check": "Confirm the full equation in an unobscured frame or identify the named reference used for the normalization convention."
+    },
+    {
+      "locator": "\"φp(x)=1/√(2πħ) exp(ipx/ħ)\"",
+      "problem": "The normalization factor is absent from the lecture and depends on the chosen continuum convention.",
+      "required_check": "Use a named reference or remove the prefactor and retain only proportionality."
+    },
+    {
+      "locator": "Paragraph headed \"Distributional caveat\"",
+      "problem": "Square-integrability and Gaussian approximants are unsupported additions in the present source set.",
+      "required_check": "Identify a named reference and mark the passage as editorial clarification, or remove the added claims."
+    },
+    {
+      "locator": "\"d⟨G⟩/dt=(i/ħ)⟨[H,G]⟩\"",
+      "problem": "The lecture invokes conservation from an earlier course but does not derive this displayed equation here.",
+      "required_check": "Locate the earlier derivation or named reference, or replace the formula with the directly supported commutator statement."
+    },
+    {
+      "locator": "00:28:21-00:28:38",
+      "problem": "The response informally describes the probability as the square of a delta function. A literal δ² is not a well-defined distribution without regularization.",
+      "required_check": "If this exchange is retained, preserve its qualitative point without promoting the informal statement to a formal equation; use a named reference for any clarification."
+    },
+    {
+      "locator": "01:01:55-01:02:25",
+      "problem": "The transcript renders the energy-eigenstate phase with a positive sign, while the corrected evolution operator earlier gives the conventional negative sign.",
+      "required_check": "Check the audio and board before reconstructing or quoting the phase derivation."
+    },
+    {
+      "locator": "01:34:08-01:35:29",
+      "problem": "The ASR is damaged during the audience intervention, although the subsequent correction to ψ(x−ε) is clear.",
+      "required_check": "Check the audio if the exchange is retained verbatim, and preserve the corrected active-translation sign."
+    }
+  ]
+}

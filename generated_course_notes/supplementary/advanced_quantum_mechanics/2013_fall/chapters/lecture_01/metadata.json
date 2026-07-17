@@ -6,11 +6,27 @@
   "lecture_slug": "lecture_01",
   "lecture_title": "Advanced Quantum Mechanics Lecture 1",
   "assets": [
-    "lecture_01_frame_01.png",
-    "lecture_01_frame_02.png",
-    "lecture_01_frame_03.png",
-    "lecture_01_frame_04.png",
-    "lecture_01_frame_05.png",
-    "lecture_01_frame_06.png"
+    {
+      "name": "lecture_01_frame_01.png"
+    },
+    {
+      "name": "lecture_01_frame_02.png"
+    },
+    {
+      "name": "lecture_01_frame_03.png"
+    },
+    {
+      "name": "lecture_01_frame_04.png"
+    },
+    {
+      "name": "lecture_01_frame_05.png"
+    },
+    {
+      "name": "lecture_01_frame_06.png"
+    }
+  ],
+  "schema_version": 2,
+  "lecture_numbers": [
+    1
   ]
 }
