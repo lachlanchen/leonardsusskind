@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "course_rel": "supplementary/advanced_quantum_mechanics/2013_fall",
+  "chapter": "lecture_02",
+  "transcript_rel": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+  "video_rel": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].mkv",
+  "entries": [
+    {
+      "locator": "Opening definition and examples of symmetry",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:09",
+        "00:04:52"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Preserves translations, rotations, particle interchange, crystal translation, homogeneity, and isotropy."
+    },
+    {
+      "locator": "S H S-dagger = H and [S,H] = 0",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:18",
+        "00:41:37"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "medium",
+      "note": "This is a standard operator rendering of the verbal invariance condition and the later explicit commutation criterion."
+    },
+    {
+      "locator": "Definition and significance of degeneracy",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:58",
+        "00:07:18"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Includes exact equality, generic accidental coincidence, and the role of symmetry."
+    },
+    {
+      "locator": "Particle on a circle and psi(theta)",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:07:22",
+        "00:08:58"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Follows the bead-on-a-circular-wire setup and probability interpretation."
+    },
+    {
+      "locator": "Infinitesimal rotation and L_z=-i hbar d/dtheta",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:09:02",
+        "00:15:20"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The sign convention, Hermiticity, generator interpretation, and restoration of hbar are supported."
+    },
+    {
+      "locator": "Circle sign and direction-of-motion exchanges",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:11:19",
+        "00:22:51"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Both retained exchanges are faithful paraphrases."
+    },
+    {
+      "locator": "Angular eigenfunction, periodicity, and M=m hbar",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:15:28",
+        "00:20:54"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The exponential eigenfunction and single-valuedness argument are explicitly developed."
+    },
+    {
+      "locator": "Magnetic-field splitting of m and -m",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:21:19",
+        "00:25:42"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Preserves rotational invariance while allowing the pair to split."
+    },
+    {
+      "locator": "Reflection maps m to -m and gives E_m=E_-m",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:25:44",
+        "00:29:53"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The ket calculation faithfully renders the spoken reflection argument."
+    },
+    {
+      "locator": "Probability-density and magnetic-reflection exchanges",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:54",
+        "00:33:05"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Both exchanges preserve the distinctions made in the source."
+    },
+    {
+      "locator": "Reflection-rotation commutator on psi_m",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:34:55",
+        "00:40:27"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The factor 2m hbar follows from the two operator orderings worked out in the lecture."
+    },
+    {
+      "locator": "Heisenberg-pair exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:40:28"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Correctly retains the requirement that both operators also be symmetries."
+    },
+    {
+      "locator": "C=i[A,B] and [C,H]=0",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:41:37",
+        "00:45:30"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The Hermiticity factor and commutation proof follow the lecture."
+    },
+    {
+      "locator": "Closure, symmetry groups, spectroscopy, and abelian versus non-abelian algebras",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:45:31",
+        "00:53:13"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Preserves the closure procedure, group distinction, and spectroscopy motivation."
+    },
+    {
+      "locator": "Group, generator, and algebra exchanges",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:49:07",
+        "00:50:25",
+        "00:52:08"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "All three retained exchanges are verified."
+    },
+    {
+      "locator": "Noncommuting rotations and the classical rotated orbit",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:53:16",
+        "00:58:55"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Preserves the second-order infinitesimal mismatch and the same-energy rotated orbit."
+    },
+    {
+      "locator": "Infinitesimal-rotation exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:54:22"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Faithfully records the audience objection and response."
+    },
+    {
+      "locator": "Planar wavefunction derivation of L_z=xp_y-yp_x",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:58:56",
+        "01:05:07"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The final sign and generator are explicit in the source."
+    },
+    {
+      "locator": "Footnote on the active-rotation sign convention",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:02:36",
+        "01:04:13"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Documents the correction of the intermediate sign uncertainty without altering the final lecture result."
+    },
+    {
+      "locator": "Cartesian angular-momentum components",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:05:09",
+        "01:06:28"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "medium",
+      "note": "L_x and L_y follow from the cyclic substitution explicitly prescribed in the lecture; the chapter identifies this reconstruction in a footnote."
+    },
+    {
+      "locator": "Central-force example and [H,L_i]=0",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:06:30",
+        "01:07:44"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The source explicitly connects rotational invariance with conservation of all three components."
+    },
+    {
+      "locator": "Derivation of [L_x,L_y]=i hbar L_z and cyclic relations",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:07:45",
+        "01:14:45"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The canonical commutators and two surviving terms are worked out in the source."
+    },
+    {
+      "locator": "Independence challenge concerning L_z",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:14:50"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The chapter now retains the proof obligation and the decision to defer its direct algebraic resolution."
+    },
+    {
+      "locator": "Closed angular-momentum algebra, oscillator analogy, and arbitrary z basis",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:16:54",
+        "01:23:58"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Preserves closure, the optional oscillator analogy, and the arbitrary choice of the z component."
+    },
+    {
+      "locator": "Quantum-oscillator prerequisite exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:24:02"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Faithfully states that the present angular-momentum derivation is self-contained."
+    },
+    {
+      "locator": "Definitions of L_+ and L_- and their commutators with L_z",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:25:24",
+        "01:29:35"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Uses the commutators derived and used in the lecture, with hbar restored consistently."
+    },
+    {
+      "locator": "Ladder action on |m>",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:29:35",
+        "01:34:16"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Faithfully reconstructs the raising and lowering calculation."
+    },
+    {
+      "locator": "Termination and integer or half-integer spectra",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:34:16",
+        "01:40:54"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Preserves the conditional termination argument and avoids introducing later L-squared machinery."
+    },
+    {
+      "locator": "Integer-spectrum exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:35:11"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Faithfully distinguishes orbital and spin angular momentum."
+    },
+    {
+      "locator": "Equal-energy proof for raised and lowered states",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:40:54",
+        "01:44:13"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "Restores the central degeneracy calculation using [H,L_i]=0."
+    },
+    {
+      "locator": "Rotated-axis and ladder-endpoint exchanges",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:44:13",
+        "01:46:33"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The chapter accurately preserves the rotation interpretation and the conditional endpoint definitions."
+    },
+    {
+      "locator": "Closing atomic and hydrogen-spectrum preview",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:47:30",
+        "01:48:18"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/186 - Advanced Quantum Mechanics Lecture 2 [7O1NhGP07Xo].md",
+      "confidence": "high",
+      "note": "The revised wording appropriately limits the result to part of the degeneracy pattern and preserves the source's warning that further structure remains."
+    }
+  ]
+}

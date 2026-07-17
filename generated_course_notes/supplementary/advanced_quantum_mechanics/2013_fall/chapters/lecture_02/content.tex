@@ -1,192 +1,467 @@
-\chapter{Symmetry, Degeneracy, and Angular Momentum for Quantum Rotational Systems}
+\chapter{Symmetry, Degeneracy, and Angular-Momentum Ladders}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
 
-This chapter develops a symmetry-first view of rotational quantum systems. We define symmetries as operators commuting with the Hamiltonian, distinguish generic level coincidences from symmetry-protected multiplets, and build angular-momentum structure from the commutator algebra of generators. The particle on a circle provides an explicit worked model where quantized \(m\)-values, reflection pairing, and ladder operators emerge from operator algebra rather than ad hoc assumptions.
+\section{Symmetries and degenerate energy levels}
 
-\section{Symmetry as an invariance principle}
-A symmetry is an operation that leaves the quantum description unchanged. For a unitary transformation \(S\), invariance of dynamics is the condition
-\[
-S H S^\dagger = H
-\]
-equivalently
-\[
-[H,S]=0.
-\]
-Because \(S\) commutes with \(H\), Schr\"odinger evolution is covariant under \(S\): if \(|\psi(t)\rangle\) evolves by \(H\), then \(S|\psi(t)\rangle\) evolves in the same way. In particular, \(E\)-eigenvalues are mapped to the same \(E\)-eigenspaces.
+A symmetry is an operation that does not change the physical description of a system. It does not change the Hamiltonian, the Schr\"odinger equation, or the possible energies. If a unitary operator \(S\) represents the operation, invariance means
+\begin{equation}
+S H S^\dagger=H,
+\end{equation}
+or equivalently
+\begin{equation}
+[S,H]=0.
+\end{equation}
 
-Symmetries can be exact (invariance of the full Hamiltonian), approximate (effective in a regime), or accidental (valid only for very specific parameter choices). Our focus is on exact symmetries because they control spectral structure.
+Translation is one example. Move an atom from one place to another and its energy does not change. This is true for every atomic state, not only the ground state. Rotation is another example and will be the main subject here.
 
-\section{Symmetry examples and the organizing role of operators}
-The same formal rule \([H,S]=0\) unifies many familiar examples:
-\begin{itemize}
-\item spatial translations and rotations,
-\item interchange of identical particles,
-\item relabeling symmetries of a periodic lattice (discrete translation in crystal index),
-\item discrete mirror or inversion operations.
-\end{itemize}
+Interchanging two identical particles is also a symmetry. Calling two electrons electron one and electron two, or Harry and Fred, does not make them different. Interchanging the labels cannot change the properties of the atom.
 
-In practice, this is less about geometry alone and more about algebraic leverage: a set of commuting operators gives you a good quantum-number basis, while noncommuting families often generate nontrivial multiplets. Symmetry language gives a compact way to classify allowed degeneracies before solving differential equations.
+A crystal has an additional kind of translation symmetry. Moving the whole crystal through space is an ordinary translation. For an infinite crystal, however, translation by one lattice spacing also returns the same physical arrangement. Equivalently, the lattice sites can be relabeled by shifting every site index by one. Boundaries spoil this exact statement for a finite crystal, but it becomes a good symmetry far from the ends of a very long crystal.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.94\textwidth]{lecture_02_figure_01_crystal_translation.png}
-\caption{Discrete translation and relabeling symmetry on an idealized crystal lattice, one of the lecture's opening examples of an operation that leaves the energy spectrum unchanged.}
-\end{figure}
+The homogeneity of space---the fact that every position is like every other position---is translation symmetry. The isotropy of space---the fact that every direction is like every other direction---is rotational symmetry.
 
-\section{Degeneracy, symmetry, and when degeneracy is protected}
-For a bounded discrete spectrum, exact equality of two nearby energies is rare unless there is structure behind it. We call this \emph{accidental} coincidence when no symmetry explanation exists. In contrast, symmetry-protected degeneracies are stable under small perturbations that preserve the same symmetry.
+Degeneracy is related to symmetry, but it is not the same thing. An energy level is degenerate when more than one state has exactly that energy. For a generic Hamiltonian with a discrete spectrum, an exact equality between two unrelated levels would be a remarkable accident. Agreement to one part in \(10^{15}\) is still not exact equality. Exact degeneracies ordinarily point to symmetry.
 
-\begin{proposition}
-Let \(A\) and \(B\) be Hermitian symmetry generators commuting with \(H\): \([A,H]=[B,H]=0\). Define
-\[
-C := \frac{1}{i\hbar}[A,B].
-\]
-Then \(C\) is Hermitian and \([C,H]=0\).
-\end{proposition}
-\begin{proof}
-Since \(A\) and \(B\) are Hermitian, \([A,B]^\dagger=-[A,B]\), so \(C\) is Hermitian. Then
-\[
-[C,H]=\frac{1}{i\hbar}\big([AB,H]-[BA,H]\big)
-\]
-and expanding each commutator gives zero because both \(A\) and \(B\) commute with \(H\). Hence \([C,H]=0\).
-\end{proof}
+Symmetry sometimes implies degeneracy, but not always. The first example shows both why it can and why one symmetry alone may be insufficient.
 
-Thus one can grow a closed set of symmetry generators by commutators. If that set closes to a Lie algebra with nontrivial structure constants, the representation theory is what drives degeneracy and spectral multiplets.
+\section{A particle on a circle}
 
-\section{Particle on a circle: quantized \(L_z\) from single-valued wave functions}
-Let \(\theta\in[0,2\pi)\) label the position of a particle constrained to a circle. A small rotation by \(\epsilon\) acts as
-\[
-(\mathcal R(\epsilon)\psi)(\theta)=\psi(\theta-\epsilon).
-\]
-Its infinitesimal form defines the generator \(L_z\):
-\[
-\mathcal R(\epsilon)\psi(\theta)\approx \left(1-\frac{i\epsilon}{\hbar}L_z\right)\psi(\theta),
+Consider a bead constrained to move on a circular wire. Its position could be described by Cartesian coordinates \(x\) and \(y\), but one angular coordinate is enough:
+\begin{equation}
+\psi=\psi(\theta).
+\end{equation}
+The position probability density on the circle is \(\psi^*(\theta)\psi(\theta)\).
+
+An active counterclockwise rotation through a small angle \(\epsilon\) sends
+\begin{equation}
+\psi(\theta)\longrightarrow\psi(\theta-\epsilon).
+\end{equation}
+Therefore
+\begin{align}
+\delta\psi(\theta)
+&=\psi(\theta-\epsilon)-\psi(\theta)\\
+&=-\epsilon\frac{d\psi}{d\theta}
++\mathcal O(\epsilon^2).
+\end{align}
+
+The operator
+\begin{equation}
+L_z=-i\hbar\frac{d}{d\theta}
+\end{equation}
+is Hermitian on periodic wavefunctions. It is the angular analogue of
+\begin{equation}
+p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+The factor of \(i\) is essential to Hermiticity. In terms of \(L_z\),
+\begin{equation}
+\delta\psi
+=-\frac{i\epsilon}{\hbar}L_z\psi
++\mathcal O(\epsilon^2),
+\end{equation}
+so the infinitesimal rotation operator is
+\begin{equation}
+R(\epsilon)
+=1-\frac{i\epsilon}{\hbar}L_z
++\mathcal O(\epsilon^2).
+\end{equation}
+This identifies \(L_z\) as the generator of rotations about the axis perpendicular to the circle.
+
+\begin{classroomqa}
+\lecturetimestamp{00:11:19}
+\audiencequestion{Should one of the factors involving \(i\) have the opposite sign?}
+\lecturerresponse{Checking the signs gives the relation above. With the convention \(\psi(\theta)\to\psi(\theta-\epsilon)\), the change is \(-\epsilon\,d\psi/d\theta\), which equals \(-i\epsilon L_z\psi/\hbar\).}
+\end{classroomqa}
+
+Now find the eigenstates of angular momentum:
+\begin{equation}
+L_z\psi=M\psi.
+\end{equation}
+Substitution of the differential operator gives
+\begin{equation}
+-i\hbar\frac{d\psi}{d\theta}=M\psi,
+\end{equation}
+whose solutions have the form
+\begin{equation}
+\psi(\theta)=C\exp\left(\frac{iM\theta}{\hbar}\right).
+\end{equation}
+
+There is an additional condition that does not occur for motion on an infinite line. The points \(\theta=0\) and \(\theta=2\pi\) are the same point, so a single-valued orbital wavefunction must satisfy
+\begin{equation}
+\psi(\theta+2\pi)=\psi(\theta).
+\end{equation}
+For the eigenfunction above, this requires
+\begin{equation}
+\exp\left(\frac{2\pi iM}{\hbar}\right)=1.
+\end{equation}
+Consequently,
+\begin{equation}
+M=m\hbar,
 \qquad
-L_z=-i\hbar\frac{d}{d\theta}.
-\]
-Hence
-\[
-L_z\ket{\psi_m}=m\hbar\ket{\psi_m}
-\quad\Longleftrightarrow\quad
--i\hbar\frac{d\psi_m}{d\theta}=m\hbar\psi_m
-\]
-and therefore
-\[
-\psi_m(\theta)=\frac{1}{\sqrt{2\pi}}e^{im\theta}.
-\]
-Single-valuedness on \(0\sim 2\pi\) gives
-\[
-\psi_m(\theta+2\pi)=\psi_m(\theta)
-\iff
-e^{i2\pi m}=1
-\iff
 m\in\mathbb Z.
-\]
-So the orbital angular-momentum quantum numbers are \(m=0,\pm1,\pm2,\ldots\).
+\end{equation}
+The possible orbital angular momenta on the circle are therefore
+\begin{equation}
+\ldots,-2\hbar,-\hbar,0,\hbar,2\hbar,\ldots.
+\end{equation}
 
-\begin{figure}[h]
-\centering
-\begin{tikzpicture}[scale=1.05]
-  \draw[line width=0.9pt] (0,0) circle(2.0);
-  \draw[->, thick] (2,0) arc(0:330:2 and 2);
-  \node at (2.25,-0.18) {$\theta$};
-  \fill (90:2) circle(1.5pt) node[right] {$\theta$};
-  \fill (-60:2) circle(1.5pt) node[below right] {$-\theta$};
-  \draw[thick,->] (0,0) -- (90:2);
-  \draw[thick,dashed] (0,0) -- (-60:2);
-  \node at (0,-2.45) {Identification of \(\theta\) and \(\theta+2\pi\): \(\psi(\theta+2\pi)=\psi(\theta)\)};
-\end{tikzpicture}
-\caption{Circle coordinate, opposite angles, and periodicity condition.}
-\end{figure}
+Must a state with angular momentum \(m\hbar\) have the same energy as a state with angular momentum \(-m\hbar\)? Positive and negative \(m\) describe opposite senses of circulation. The question is whether rotational symmetry alone requires those two motions to have equal energy.
 
-\section{Mirror symmetry and the \(m\leftrightarrow -m\) pairing}
-Introduce a mirror (reflection) operator \(\mathcal M\) with
-\[
+\begin{classroomqa}
+\lecturetimestamp{00:22:51}
+\audiencequestion{Does using \(\psi(\theta-\epsilon)\) mean that the particle is moving clockwise?}
+\lecturerresponse{No. That convention only fixes which direction is called positive rotation. It defines the signs of angular position and angular momentum, but it does not determine the actual direction in which the particle moves.}
+\end{classroomqa}
+
+A magnetic field perpendicular to the plane of the circle supplies a counterexample. It can shift the energies of positive and negative angular momentum in opposite directions and thereby split the pair. The sign of the shift depends on the charge and orientation conventions, but the splitting is the important point.
+
+Such a field still preserves rotations about the perpendicular axis. It therefore shows that rotational symmetry by itself does not require
+\begin{equation}
+E(m)=E(-m).
+\end{equation}
+Without the splitting, \(m=1\) and \(m=-1\) may form a degenerate pair, as may \(m=2\) and \(m=-2\). The state \(m=0\) has no distinct partner of this kind.
+
+\section{Reflection symmetry and the \(m,-m\) pair}
+
+Add a discrete reflection symmetry. Let \(\mathcal M\) denote reflection across a diameter of the circle:
+\begin{equation}
 (\mathcal M\psi)(\theta)=\psi(-\theta).
-\]
-Its action on a momentum eigenmode is
-\[
-\mathcal M\psi_m(\theta)=\psi_{-m}(\theta).
-\]
-On a circle eigenstate:
-\[
-\mathcal M L_z\psi_m = m\hbar\,\mathcal M\psi_m,\qquad
-L_z\mathcal M\psi_m = -m\hbar\,\mathcal M\psi_m,
-\]
-so
-\[
-[\mathcal M,L_z]\psi_m = 2m\hbar\,\mathcal M\psi_m\neq 0\quad (m\neq0).
-\]
-Thus \(\mathcal M\) does not commute with \(L_z\), even though both may commute with \(H\) in a symmetric setup. When both symmetries are present (no mirror-breaking field), states \(m\) and \(-m\) are paired at equal energy.
+\end{equation}
+It reverses the sense of circulation:
+\begin{equation}
+\mathcal M\psi_m=\psi_{-m}.
+\end{equation}
 
-Important warning from the formalism: equal probabilities \(|\psi_m(\theta)|^2=|\psi_{-m}(\theta)|^2\) does not imply identical wave functions. Degeneracy concerns states and operators, not only densities.
+If reflection is a symmetry, then
+\begin{equation}
+[\mathcal M,H]=0.
+\end{equation}
+Suppose
+\begin{equation}
+H\ket{m}=E_m\ket{m}.
+\end{equation}
+Applying \(\mathcal M\) gives
+\begin{align}
+H\mathcal M\ket{m}
+&=\mathcal M H\ket{m}\\
+&=E_m\mathcal M\ket{m}.
+\end{align}
+Since \(\mathcal M\ket{m}\) is the state with angular momentum \(-m\hbar\),
+\begin{equation}
+E_{-m}=E_m.
+\end{equation}
+Rotation symmetry conserves angular momentum; reflection symmetry relates the two opposite values. Together they require the pair to be degenerate.
 
-A uniform magnetic field is a standard counterexample: it can split \(\pm m\) levels while preserving some rotational structure of orbital motion in other settings. Symmetry arguments apply to what the Hamiltonian does, not to geometric intuition alone.
+\begin{classroomqa}
+\lecturetimestamp{00:29:54}
+\audiencequestion{Since the \(m\) and \(-m\) modes have the same probability density, does that already show that their energies are equal?}
+\lecturerresponse{No. The wavefunctions \(e^{im\theta}\) and \(e^{-im\theta}\) are different even though their absolute squares agree. The angular-momentum eigenvalue equation involves the wavefunction, not only \(\psi^*\psi\). Quantum mechanics requires amplitudes, not probabilities alone.}
+\end{classroomqa}
 
-\section{Generators, commutator algebra, and closure}
-For continuous symmetries a small transformation is written as
-\[
-U(\epsilon)=1-\frac{i\epsilon}{\hbar}G+\mathcal O(\epsilon^2),
-\]
-with Hermitian generator \(G\). The commutator of two generators is another generator of another direction in the same symmetry structure if closure holds.
+The magnetic field preserves rotations about its axis but breaks the reflection used above.
 
-A useful worked pattern is:
-\[
-\begin{aligned}
-[\,\mathcal M,L_z\,]&\neq 0,\\
-[H,L_z]&=0,\qquad [H,\mathcal M]=0
-\quad(\text{if mirror symmetric}).
-\end{aligned}
-\]
-Hence \(\mathcal M\) and \(L_z\) generate two operations whose noncommutativity forces additional structure.
+\begin{classroomqa}
+\lecturetimestamp{00:33:05}
+\audiencequestion{Does reflection symmetry reverse the magnetic field?}
+\lecturerresponse{Yes. A magnetic field is an axial vector. Reflecting a field directed into the board gives one directed out of the board. Equivalently, a current loop and its mirror image carry current in opposite senses and produce oppositely directed fields.}
+\end{classroomqa}
 
-\section{Three-dimensional angular momentum and ladder structure}
-For a particle in 3D,
-\[
-\begin{aligned}
-L_x&= y p_z-z p_y,\\
-L_y&= z p_x-x p_z,\\
-L_z&= x p_y-y p_x.
-\end{aligned}
-\]
-with canonical \([x_i,p_j]=i\hbar\delta_{ij}\). A compact expansion gives
-\[
-[L_x,L_y]=i\hbar L_z,
-\]
-and cyclic permutations. Equivalently,
-\[
-[L_i,L_j]=i\hbar\sum_k \epsilon_{ijk}L_k.
-\]
-For a rotationally invariant Hamiltonian, \([H,L_i]=0\), so \(L_x,L_y,L_z\) are conserved quantities.
+The noncommutativity of rotation and reflection can be seen directly. On an angular-momentum eigenfunction,
+\begin{align}
+\mathcal M L_z\psi_m
+&=m\hbar\,\psi_{-m},\\
+L_z\mathcal M\psi_m
+&=-m\hbar\,\psi_{-m}.
+\end{align}
+Thus
+\begin{equation}
+[\mathcal M,L_z]\psi_m
+=2m\hbar\,\psi_{-m},
+\end{equation}
+which is nonzero for \(m\neq0\). Rotating and then reflecting is not the same operation as reflecting and then rotating.
 
-Define raising and lowering operators
-\[
-L_\pm:=L_x\pm iL_y.
-\]
-Using the algebra above,
-\[
-[L_z,L_\pm]=\pm\hbar L_\pm,\qquad [L_+,L_-]=2\hbar L_z.
-\]
-If \(|\ell,m\rangle\) is an eigenvector of \(L_z\),
-\[
-L_z|\ell,m\rangle=m\hbar|\ell,m\rangle,
-\]
-then
-\[
-L_z(L_\pm|\ell,m\rangle)=(m\pm1)\hbar (L_\pm|\ell,m\rangle),
-\]
-so \(L_\pm\) create a state with adjacent \(m\)-value when nonzero.
+Both operators commute with \(H\) when both transformations are symmetries, but they do not commute with each other. That is the pattern responsible for the degeneracy.
 
-In a finite ladder representation, the chain terminates:
-\[
-L_+|\ell,\ell\rangle=0,\qquad L_-|\ell,-\ell\rangle=0,
-\]
-giving \(m=-\ell,-\ell+1,\ldots,\ell\), hence \(2\ell+1\) states in one rotational multiplet. For orbital wave functions on configuration space, \(\ell,m\in\mathbb Z\) and \(m\in\{-\ell,\ldots,\ell\}\). For more general angular-momentum types (including spin), half-integer \(m\) spectra are also possible; in this lecture the orbital circle argument selects the integer branch.
+\begin{classroomqa}
+\lecturetimestamp{00:40:28}
+\audiencequestion{Does any noncommuting Heisenberg pair, such as \(x\) and \(p\), generate degeneracies?}
+\lecturerresponse{Not generally. The operators must also be symmetries: they must commute with the Hamiltonian. Position and momentum are typically not both conserved. If both did commute with \(H\), then their noncommutativity would imply degeneracy.}
+\end{classroomqa}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.74\textwidth]{lecture_02_frame_05.png}
-\caption{Illustrative ladder picture: \(L_\pm\) connect adjacent \(m\)-levels inside a symmetry multiplet.}
-\end{figure}
+\section{Commutator algebras of symmetries}
 
-\section{Summary}
-Symmetry enters as a commutation criterion with the Hamiltonian. Single symmetries can explain invariant spectral structure, but genuine multiplets require a noncommuting symmetry set whose commutator algebra closes. The circle provides the cleanest demonstration: rotational invariance gives \(L_z=-i\hbar\partial_\theta\), single-valuedness gives integer \(m\), and mirror symmetry links \(m\) to \(-m\). In three dimensions, the algebra \([L_i,L_j]=i\hbar\epsilon_{ijk}L_k\) yields ladder operators \(L_\pm\), a finite \(m\)-tower for each \(\ell\), and equal-energy multiplets in rotationally invariant systems.
+Suppose \(A\) and \(B\) are Hermitian generators of two continuous symmetries:
+\begin{equation}
+[A,H]=0,
+\qquad
+[B,H]=0.
+\end{equation}
+Nothing in these equations requires \(A\) and \(B\) to commute with each other.
+
+The commutator \([A,B]\) is anti-Hermitian, so define a Hermitian operator
+\begin{equation}
+C=i[A,B].
+\end{equation}
+Numerical factors and an overall sign are immaterial here. The important point is that \(C\) also commutes with the Hamiltonian. Indeed,
+\begin{equation}
+[AB,H]
+=A[B,H]+[A,H]B=0,
+\end{equation}
+and similarly
+\begin{equation}
+[BA,H]=0.
+\end{equation}
+Therefore
+\begin{equation}
+[C,H]
+=i\bigl([AB,H]-[BA,H]\bigr)=0.
+\end{equation}
+
+The new generator \(C\) may be independent of \(A\) and \(B\), or it may only be a linear combination of generators already known. If it is new, add it to the list and form further commutators. Repeating this process may continue indefinitely, but often it closes after finitely many generators: every further commutator is a linear combination of those already present. That closed system is a commutator algebra or Lie algebra.
+
+The finite symmetry transformations form a group. Their infinitesimal generators form the associated Lie algebra.
+
+Degeneracies matter because they organize spectra. If two states have equal energy, one cannot decay to the other by emitting a photon carrying their energy difference. In atomic spectroscopy the arrangement and degeneracy of the levels determine the possible spectral lines. The same logic applies to excited hadrons and their transitions.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:07}
+\audiencequestion{Are these commutators themselves elements of the symmetry group?}
+\lecturerresponse{The operators under discussion are generators. The generators and their commutators form a commutator algebra, or Lie algebra. Finite symmetry operations built from the generators are the group elements.}
+\end{classroomqa}
+
+If all the symmetry generators commute with one another, the symmetry is called abelian. If some of their commutators are nonzero, it is non-abelian.
+
+\begin{classroomqa}
+\lecturetimestamp{00:50:25}
+\audiencequestion{What is the fundamental definition of a generator?}
+\lecturerresponse{Take a unitary symmetry transformation very close to the identity and write it as \(1-i\epsilon G/\hbar+\cdots\). The Hermitian operator \(G\) is its generator. Repeating the corresponding infinitesimal transformation builds a finite one.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:52:08}
+\audiencequestion{What is meant by the algebra of symmetry generators?}
+\lecturerresponse{It is a collection of generators that can be added, subtracted, multiplied by ordinary numbers, and commuted. In this algebra the commutator plays the role of multiplication, and closure means that these operations do not produce generators outside the collection.}
+\end{classroomqa}
+
+\section{Rotations about different axes}
+
+Rotations provide the most important example of a non-abelian symmetry. A rotation about the \(x\)-axis followed by one about the \(y\)-axis is not generally the same as performing them in the reverse order. Their mismatch is itself related to rotation about the third axis.
+
+\begin{classroomqa}
+\lecturetimestamp{00:54:22}
+\audiencequestion{Do infinitesimal rotations commute even though finite rotations do not?}
+\lecturerresponse{They differ at second order in the two small rotation angles. That is enough: after those small parameters are factored out, the generators themselves have a nonzero commutator.}
+\end{classroomqa}
+
+Before calculating the quantum commutators, consider the corresponding classical picture. Take a circular planetary orbit with angular momentum perpendicular to its plane. Rotating the whole orbit about the \(y\)-axis gives another allowed orbit with exactly the same energy. Its angular-momentum vector, however, now has a different \(x\)-component.
+
+Thus rotational invariance produces same-energy configurations with different angular-momentum components. Quantum mechanically, this appears as noncommutativity among the generators of rotations about different axes.
+
+\section{Angular momentum in Cartesian coordinates}
+
+First consider a particle moving in the \(xy\)-plane, without restricting it to a circle. Under a small counterclockwise rotation,
+\begin{equation}
+\delta x=-\epsilon y,
+\qquad
+\delta y=\epsilon x.
+\end{equation}
+For the actively rotated state, the transformed wavefunction is evaluated at the inverse-rotated coordinates:
+\begin{equation}
+\psi_\epsilon(x,y)
+=\psi(x+\epsilon y,y-\epsilon x).
+\end{equation}
+Consequently,
+\begin{align}
+\delta\psi
+&=\epsilon\left(
+y\frac{\partial}{\partial x}
+-x\frac{\partial}{\partial y}
+\right)\psi
++\mathcal O(\epsilon^2)\\
+&=-\frac{i\epsilon}{\hbar}
+\left(xp_y-yp_x\right)\psi
++\mathcal O(\epsilon^2).
+\end{align}
+The generator of rotations about the \(z\)-axis is therefore
+\begin{equation}
+L_z=xp_y-yp_x.
+\end{equation}
+This is the \(z\)-component of the familiar classical vector
+\begin{equation}
+\mathbf L=\mathbf r\times\mathbf p.
+\end{equation}
+It is not only the mechanical angular momentum; in quantum mechanics it is the operator that generates rotations of the wavefunction.\footnote{The active-rotation convention is chosen to agree with the earlier transformation \(\psi(\theta)\mapsto\psi(\theta-\epsilon)\) and with the final identification \(L_z=xp_y-yp_x\) after the intermediate sign uncertainty in the spoken derivation.}
+
+Cycling \(x\to y\to z\to x\) gives the other components.\footnote{The \(L_x\) and \(L_y\) formulas are reconstructed by applying the cyclic substitution \(x\to y\to z\to x\), explicitly prescribed in the lecture, to \(L_z=xp_y-yp_x\).}
+\begin{align}
+L_x&=yp_z-zp_y,\\
+L_y&=zp_x-xp_z,\\
+L_z&=xp_y-yp_x.
+\end{align}
+
+For a rotationally invariant system these operators commute with the Hamiltonian:
+\begin{equation}
+[H,L_x]=[H,L_y]=[H,L_z]=0.
+\end{equation}
+A particle in a central force field is the standard example. These equations are angular-momentum conservation in quantum form.
+
+\section{The angular-momentum Lie algebra}
+
+The canonical commutation relations are
+\begin{align}
+[x_i,x_j]&=0,\\
+[p_i,p_j]&=0,\\
+[x_i,p_j]&=i\hbar\,\delta_{ij}.
+\end{align}
+Coordinates commute with momentum components belonging to different directions. Thus \(x\) commutes with \(p_y\), for example, while \(x\) does not commute with \(p_x\).
+
+Now calculate
+\begin{equation}
+[L_x,L_y]
+=
+[yp_z-zp_y,\;zp_x-xp_z].
+\end{equation}
+Most terms vanish. The two nonzero contributions are
+\begin{align}
+[yp_z,zp_x]&=-i\hbar\,yp_x,\\
+[zp_y,xp_z]&=i\hbar\,xp_y.
+\end{align}
+Therefore
+\begin{align}
+[L_x,L_y]
+&=i\hbar\left(xp_y-yp_x\right)\\
+&=i\hbar L_z.
+\end{align}
+Cycling the coordinate labels gives
+\begin{align}
+[L_x,L_y]&=i\hbar L_z,\\
+[L_y,L_z]&=i\hbar L_x,\\
+[L_z,L_x]&=i\hbar L_y.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:50}
+\audiencequestion{When the commutator produces \(L_z\), do we still have to show that \(L_z\) is not a linear combination of \(L_x\) and \(L_y\)?}
+\lecturerresponse{Yes. There is an obligation to establish that independence rather than assume it. A direct algebraic proof is not pursued at this point.}
+\end{classroomqa}
+
+The displayed commutators close on the span of \(L_x\), \(L_y\), and \(L_z\): once all three are included, further commutators produce no operator outside that span. This is the angular-momentum Lie algebra. Together with
+\begin{equation}
+[H,L_i]=0,
+\qquad i=x,y,z,
+\end{equation}
+these relations contain substantial information about the energy spectrum without requiring the angular Schr\"odinger equation to be solved directly.
+
+A similar algebraic strategy is used for the quantum harmonic oscillator, where creation and annihilation operators generate its spectrum. Here the analogous operators will change the \(z\)-component of angular momentum rather than the energy.
+
+Choosing the \(z\)-axis is only a choice of representation. Nothing makes \(z\) physically preferable to \(x\) or \(y\), but choosing one component gives a convenient basis. Write
+\begin{equation}
+L_z\ket{m}=m\hbar\ket{m}.
+\end{equation}
+The task is to determine which values of \(m\) can occur and how states with different \(m\) are related.
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:02}
+\audiencequestion{When you compare this construction with the harmonic oscillator, do you mean the quantum harmonic oscillator? That was not covered in the preceding class.}
+\lecturerresponse{Yes, the comparison is with the quantum oscillator. The present angular-momentum argument is self-contained and does not require knowledge of the oscillator. The analogy can later be read in the other direction: the oscillator uses a similar algebraic method.}
+\end{classroomqa}
+
+\section{Raising and lowering angular momentum}
+
+Define
+\begin{equation}
+L_+=L_x+iL_y,
+\qquad
+L_-=L_x-iL_y.
+\end{equation}
+The angular-momentum commutators imply
+\begin{equation}
+[L_z,L_+]=\hbar L_+,
+\qquad
+[L_z,L_-]=-\hbar L_-.
+\end{equation}
+
+Apply the first relation to an eigenstate of \(L_z\):
+\begin{align}
+L_zL_+\ket{m}
+&=\left(L_+L_z+[L_z,L_+]\right)\ket{m}\\
+&=(m+1)\hbar\,L_+\ket{m}.
+\end{align}
+Unless \(L_+\ket{m}=0\), it is another eigenstate of \(L_z\), now with eigenvalue \((m+1)\hbar\). Similarly,
+\begin{equation}
+L_zL_-\ket{m}
+=(m-1)\hbar\,L_-\ket{m}.
+\end{equation}
+Thus \(L_+\) raises \(m\) by one and \(L_-\) lowers it by one.
+
+Starting from any one eigenvalue, the algebra generates a sequence separated by integers. The sequence may continue indefinitely, or it may terminate because
+\begin{equation}
+L_+\ket{m_{\mathrm{top}}}=0
+\end{equation}
+at the upper end and
+\begin{equation}
+L_-\ket{m_{\mathrm{bottom}}}=0
+\end{equation}
+at the lower end.
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:11}
+\audiencequestion{Was angular momentum not already required to be an integer by the circle argument?}
+\lecturerresponse{That argument proves integer values for orbital angular momentum represented by single-valued position wavefunctions. The abstract angular-momentum algebra gives a looser result: the ladder may contain either integer or half-integer values.}
+\end{classroomqa}
+
+If a ladder terminates, rotational invariance relates its two ends. A rotation through \(180^\circ\) about an axis perpendicular to \(z\) sends
+\begin{equation}
+L_z\longrightarrow-L_z.
+\end{equation}
+The spectrum must therefore be symmetric about zero:
+\begin{equation}
+m_{\mathrm{bottom}}=-m_{\mathrm{top}}.
+\end{equation}
+Since neighboring values differ by one, there are two possibilities. The ladder contains either integers,
+\begin{equation}
+\ldots,-2,-1,0,1,2,\ldots,
+\end{equation}
+or half-integers,
+\begin{equation}
+\ldots,-\frac{5}{2},-\frac{3}{2},-\frac{1}{2},
+\frac{1}{2},\frac{3}{2},\frac{5}{2},\ldots,
+\end{equation}
+with endpoints wherever the raising or lowering operator gives zero.
+
+The single-valued wavefunction argument on the circle selects the integer possibility for orbital angular momentum,
+\begin{equation}
+\mathbf L=\mathbf r\times\mathbf p.
+\end{equation}
+The half-integer possibility is also physical and belongs to spin angular momentum, which will be treated separately.
+
+Finally, the ladder states have equal energy when the Hamiltonian is rotationally invariant. Suppose
+\begin{equation}
+H\ket{m}=E\ket{m}.
+\end{equation}
+Since every component \(L_i\) commutes with \(H\), so do \(L_+\) and \(L_-\). Hence
+\begin{align}
+H L_+\ket{m}
+&=L_+H\ket{m}\\
+&=E L_+\ket{m}.
+\end{align}
+Whenever \(L_+\ket{m}\neq0\), the raised state has the same energy as the original state. The same calculation gives
+\begin{equation}
+H L_-\ket{m}=E L_-\ket{m}.
+\end{equation}
+Raising and lowering therefore generate a family of states with different \(L_z\) eigenvalues but exactly the same energy. This is the connection between noncommuting symmetries and degeneracy developed throughout the lecture.
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:13}
+\audiencequestion{Are these ladder states associated with choosing different rotation axes?}
+\lecturerresponse{They are related by rotations. Eigenvectors of \(L_x\) or \(L_y\) are linear combinations of the chosen \(L_z\) eigenvectors. Rotating a state changes its angular-momentum components while leaving its energy unchanged.}
+\end{classroomqa}
+
+The choice of \(L_+\) and \(L_-\) is convenient because these combinations expose the ladder directly. This trick recurs throughout quantum mechanics: when a commutator algebra closes, raising and lowering operators often organize its eigenvalue spectrum.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:33}
+\audiencequestion{What happens when \(L_+\) acts on the maximum state, and how is the top defined?}
+\lecturerresponse{It gives zero. That is the definition of the top of a terminating ladder. Likewise \(L_-\) gives zero at the bottom. An abstract ladder need not terminate. For the atomic angular-momentum states considered later, one typically encounters terminating ladders.}
+\end{classroomqa}
+
+The next step is to develop this angular-momentum structure further and apply it to atoms, including hydrogen. The rotational multiplets found here account for part of the degeneracy pattern; further structure remains to be developed.

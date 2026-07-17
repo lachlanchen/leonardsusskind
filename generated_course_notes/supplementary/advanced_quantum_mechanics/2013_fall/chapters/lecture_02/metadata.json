@@ -6,11 +6,30 @@
   "lecture_slug": "lecture_02",
   "lecture_title": "Advanced Quantum Mechanics Lecture 2",
   "assets": [
-    "lecture_02_frame_01.png",
-    "lecture_02_frame_02.png",
-    "lecture_02_frame_03.png",
-    "lecture_02_frame_04.png",
-    "lecture_02_frame_05.png",
-    "lecture_02_frame_06.png"
+    {
+      "name": "lecture_02_frame_01.png"
+    },
+    {
+      "name": "lecture_02_frame_02.png"
+    },
+    {
+      "name": "lecture_02_frame_03.png"
+    },
+    {
+      "name": "lecture_02_frame_04.png"
+    },
+    {
+      "name": "lecture_02_frame_05.png"
+    },
+    {
+      "name": "lecture_02_frame_06.png"
+    },
+    {
+      "name": "lecture_02_figure_01_crystal_translation.png"
+    }
+  ],
+  "schema_version": 2,
+  "lecture_numbers": [
+    2
   ]
 }
