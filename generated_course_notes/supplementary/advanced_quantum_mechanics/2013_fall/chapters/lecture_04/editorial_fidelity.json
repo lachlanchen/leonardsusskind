@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "unsupported_claims": [],
+  "missing_beats": [],
+  "style_violations": [],
+  "provenance_gaps": [],
+  "q_and_a_checks": [
+    {
+      "locator": "Why is zero included in the spectrum of the number operator?",
+      "timestamp": "00:09:46",
+      "verified": true,
+      "reason": "The question and promise to construct an explicit N=0 ground state match the recorded exchange."
+    },
+    {
+      "locator": "If zero is the eigenvalue, should the right-hand side contain a zero eigenvector?",
+      "timestamp": "00:14:57",
+      "verified": true,
+      "reason": "The response faithfully distinguishes the normalized ket labeled zero from the zero vector."
+    },
+    {
+      "locator": "Could this be solved by separation of variables?",
+      "timestamp": "00:22:32",
+      "verified": true,
+      "reason": "The exchange begins with the request for a solution method; the audience proposes separation of variables at 00:22:49, and the response correctly identifies the one-variable logarithmic structure."
+    },
+    {
+      "locator": "Should there be a minus sign in f(x)?",
+      "timestamp": "00:26:28",
+      "verified": true,
+      "reason": "An audience member catches the missing sign, and the negative quadratic term is immediately acknowledged."
+    },
+    {
+      "locator": "Does the harmonic oscillator fail to approach classical behavior when n becomes large?",
+      "timestamp": "00:37:18",
+      "verified": true,
+      "reason": "The displaced-wave-packet response follows the recorded correspondence-principle discussion."
+    },
+    {
+      "locator": "Should the second excited-state wavefunction pass through zero at the origin?",
+      "timestamp": "00:39:29",
+      "verified": true,
+      "reason": "The response about the polynomial's constant term is explicit in the transcript."
+    },
+    {
+      "locator": "Is there a general way to recognize when a Hamiltonian can be solved by these algebraic methods?",
+      "timestamp": "00:40:45",
+      "verified": true,
+      "reason": "The question is conservatively repaired from damaged ASR, while the answer about rare solvable systems is clear."
+    },
+    {
+      "locator": "Is there a minus sign in sigma_x?",
+      "timestamp": "00:47:35",
+      "verified": true,
+      "reason": "This is a direct, unambiguous exchange."
+    },
+    {
+      "locator": "If a system has total angular momentum J, how is its spin S identified?",
+      "timestamp": "00:56:49",
+      "verified": true,
+      "reason": "Despite a damaged lead-in, the question and deferred angular-momentum-addition answer are clear."
+    },
+    {
+      "locator": "What experimental evidence led to the introduction of spin?",
+      "timestamp": "00:58:18",
+      "verified": true,
+      "reason": "The response preserves spectroscopy and the periodic table as the stated motivations."
+    },
+    {
+      "locator": "How do the s- and p-states give eight possibilities in the first excited shell?",
+      "timestamp": "01:14:58",
+      "verified": true,
+      "reason": "The exchange conservatively consolidates the recorded corrections: one s state plus three p states, doubled by spin."
+    },
+    {
+      "locator": "What happens for a free stream of electrons rather than electrons bound in atoms?",
+      "timestamp": "01:20:28",
+      "verified": true,
+      "reason": "The electron-stream and photon-laser contrast matches the source."
+    },
+    {
+      "locator": "Is orbital angular momentum specifically rotation about a nucleus?",
+      "timestamp": "01:21:12",
+      "verified": true,
+      "reason": "The response accurately preserves angular momentum relative to a chosen origin."
+    },
+    {
+      "locator": "Why does the periodic table contain repeated rows of eight and then repeated rows of eighteen elements?",
+      "timestamp": "01:22:34",
+      "verified": true,
+      "reason": "The answer correctly states that the naive shell picture fails once electron interactions matter."
+    },
+    {
+      "locator": "Why do atoms not become dramatically larger as more electrons are added?",
+      "timestamp": "01:23:33",
+      "verified": true,
+      "reason": "The nuclear-charge and screening explanation follows the recorded discussion."
+    },
+    {
+      "locator": "Is electrical repulsion the reason neighboring atoms remain separated?",
+      "timestamp": "01:24:49",
+      "verified": true,
+      "reason": "The response preserves the stated importance of Pauli repulsion."
+    },
+    {
+      "locator": "Is the exclusion principle a separate postulate?",
+      "timestamp": "01:25:23",
+      "verified": true,
+      "reason": "The distinction between a nonrelativistic postulate and the relativistic spin-statistics basis is faithful and physically precise."
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_04_frame_01.png",
+      "timestamp": "00:49:35",
+      "verdict": "replace",
+      "reason": "The speaker and shadow obscure the matrix products. The chapter correctly uses the frame only as a reconstruction source for the explicit algebra."
+    },
+    {
+      "asset": "lecture_04_frame_02.png",
+      "timestamp": "00:55:41",
+      "verdict": "keep",
+      "reason": "The normalized spin-one-half matrices and commutator are legible, the caption is physics-only, and the lectureframe marker is correctly placed."
+    },
+    {
+      "asset": "lecture_04_frame_03.png",
+      "timestamp": "01:02:01",
+      "verdict": "replace",
+      "reason": "The frame shows only the beginning of the spectrum and is partly obstructed. The TikZ replacement adds legibility, while adjacent footnotes identify the later completed level alignment."
+    }
+  ],
+  "source_map": [
+    {
+      "locator": "Oscillators Everywhere",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:10",
+        "00:01:21",
+        "00:03:16"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The violin modes, electromagnetic modes, photons, crystal waves, and phonons follow the opening discussion."
+    },
+    {
+      "locator": "Oscillator Hamiltonian, ladder operators, number operator, and commutator",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:13",
+        "00:05:30",
+        "00:05:50",
+        "00:09:01"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The notation, normalization, and ladder interpretation match the spoken board construction."
+    },
+    {
+      "locator": "H=omega(N+1/2), shifted Hamiltonian, and zero-point energy",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:06:35",
+        "00:07:20",
+        "00:07:32",
+        "00:07:48",
+        "00:08:08"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The half-quantum correction, uncertainty-principle motivation, and optional subtraction are explicit."
+    },
+    {
+      "locator": "Ground-state existence and zero-vector exchanges",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:09:46",
+        "00:14:57"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "Both exchanges are direct and retain the interrupted order of the calculation."
+    },
+    {
+      "locator": "Position representation and abstract endpoint proof",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:10:16",
+        "00:11:13",
+        "00:12:54",
+        "00:14:12"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The chapter starts the wavefunction construction, interrupts it with the endpoint argument, and then returns to the calculation."
+    },
+    {
+      "locator": "Schrodinger equation and square-integrability restriction",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:16:53",
+        "00:18:17",
+        "00:19:08",
+        "00:19:35",
+        "00:20:20"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The differential equation, exceptional position and momentum states, and rejection of exponentially growing solutions are explicit."
+    },
+    {
+      "locator": "Separation-of-variables classroom exchange",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:22:32",
+        "00:22:49",
+        "00:23:27"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The audience proposal, one-variable objection, and logarithmic observation support the compact reconstruction."
+    },
+    {
+      "locator": "Gaussian ground-state derivation and sign correction",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:20:48",
+        "00:23:34",
+        "00:25:22",
+        "00:26:28",
+        "00:26:34",
+        "00:27:18"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The first-order equation, exponential substitution, corrected negative sign, and unnormalized Gaussian are directly supported."
+    },
+    {
+      "locator": "First excited state, odd parity, and node at the origin",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:14",
+        "00:30:00",
+        "00:31:24",
+        "00:32:00",
+        "00:33:17"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The x-times-Gaussian form, odd parity, and vanishing density at the origin are explicit."
+    },
+    {
+      "locator": "Higher polynomial factors, parity, nodes, and increasing oscillation",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:34:25",
+        "00:34:32",
+        "00:35:41",
+        "00:35:49"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "medium",
+      "note": "The later statements are clear, while the immediately preceding transition is ASR-damaged."
+    },
+    {
+      "locator": "Gaussian-times-polynomial oscillator form and alternating parity",
+      "kind": "equation",
+      "source_type": "named_reference",
+      "timestamps": [],
+      "reference": "/home/lachlan/ProjectsLFS/leonardsusskind/susskind-books-and-lecture-notes/Leonard_Susskind-Theoretical_Minimum-Quantum_Mechanics-2014.pdf",
+      "confidence": "high",
+      "note": "The cited reference corroborates the polynomial-times-Gaussian structure, alternating parity, and increasing oscillation."
+    },
+    {
+      "locator": "Correspondence-principle exchange and displaced packet",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:37:18",
+        "00:37:38",
+        "00:38:20",
+        "00:38:46"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The superposition and displaced-Gaussian explanation follow the source."
+    },
+    {
+      "locator": "Second-excited-state and solvability exchanges",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:39:29",
+        "00:40:45"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "medium",
+      "note": "The answers are clear; the solvability question requires modest ASR repair."
+    },
+    {
+      "locator": "Spin-one-half introduction and Pauli matrices",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:41:40",
+        "00:43:22",
+        "00:45:33",
+        "00:46:30"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "Intrinsic spin, rotational behavior, angular-momentum commutators, and the three matrices are explicit."
+    },
+    {
+      "locator": "Pauli-matrix products and commutator",
+      "kind": "equation",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:49:35"
+      ],
+      "reference": "generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/assets/lecture_04_frame_01.png",
+      "confidence": "medium",
+      "note": "The obstructed frame corroborates the surrounding spoken matrix calculation and is used only as a reconstruction source."
+    },
+    {
+      "locator": "Spin-one-half matrix figure",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:55:41"
+      ],
+      "reference": "generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/assets/lecture_04_frame_02.png",
+      "confidence": "high",
+      "note": "The normalized matrices and commutator are stable and legible."
+    },
+    {
+      "locator": "Spin eigenvalues and integer-versus-half-integer multiplets",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:51:40",
+        "00:52:04",
+        "00:52:11",
+        "00:52:47",
+        "00:53:21"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The corrected eigenvalue equation and the two-member spin-one-half ladder accurately express the recorded discussion."
+    },
+    {
+      "locator": "J=L+S and deferred angular-momentum addition",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:55:12",
+        "00:56:49",
+        "00:57:12",
+        "00:57:45"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "Total angular momentum and the postponed addition rules are source-supported."
+    },
+    {
+      "locator": "Experimental motivation for spin",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:58:18",
+        "00:58:42",
+        "00:58:49"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "Spectroscopy and the periodic table are the two motivations identified in the lecture."
+    },
+    {
+      "locator": "Hydrogenic degeneracy redraw",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "01:02:01"
+      ],
+      "reference": "generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/assets/lecture_04_frame_03.png",
+      "confidence": "medium",
+      "note": "The frame supplies the axes and initial levels; the redraw adds legibility and is completed from the subsequent spoken alignment."
+    },
+    {
+      "locator": "Hydrogenic shell alignments and counts",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:02:33",
+        "01:03:10",
+        "01:03:31",
+        "01:03:42",
+        "01:04:02"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The level alignments and totals 1, 4, 9, and 16 are stated explicitly."
+    },
+    {
+      "locator": "Allowed ell range and n-squared shell sum",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:02:33",
+        "01:03:42",
+        "01:04:02"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The compact formulas organize the spoken multiplet alignments and counts and are identified by an adjacent provenance footnote."
+    },
+    {
+      "locator": "Helium, exclusion, and the two-valued electron property",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:04:16",
+        "01:06:08",
+        "01:08:01",
+        "01:08:43",
+        "01:09:42"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The independent-electron approximation, exclusion problem, and opposite-spin resolution follow the lecture."
+    },
+    {
+      "locator": "Spinless-exclusion backtrack and eight-state counting",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:12:13",
+        "01:13:05",
+        "01:14:05",
+        "01:14:58",
+        "01:15:32"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The chapter preserves the false start and the corrected one-plus-three spatial count doubled by spin."
+    },
+    {
+      "locator": "Magnetic splitting and photon-electron occupancy contrast",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:15:56",
+        "01:16:34",
+        "01:17:18",
+        "01:18:47",
+        "01:19:05"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "Magnetic-field splitting and multiple photons occupying one state are explicit."
+    },
+    {
+      "locator": "Free electrons, origin dependence, shell failure, screening, Pauli repulsion, and exclusion postulate",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:20:28",
+        "01:21:12",
+        "01:22:34",
+        "01:23:33",
+        "01:24:49",
+        "01:25:23"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "All six exchanges follow the recorded late-lecture discussion."
+    },
+    {
+      "locator": "Classical identical-particle counting",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:26:15",
+        "01:27:23",
+        "01:28:04",
+        "01:29:31"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The boxes, Harry-and-Sally labels, and 1/N! counting are explicit."
+    },
+    {
+      "locator": "Two-particle wavefunction",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:31:24",
+        "01:31:38",
+        "01:32:01",
+        "01:32:20"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The inner-product meaning of psi(x) and extension to psi(x1,x2) are explicit."
+    },
+    {
+      "locator": "Swap operator, S squared, and exchange eigenvalues",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:33:49",
+        "01:34:08",
+        "01:35:28",
+        "01:36:11",
+        "01:36:41"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The notation S, unitarity, S squared equal to identity, and eigenvalues plus or minus one are directly supported."
+    },
+    {
+      "locator": "Projector decomposition into symmetric and antisymmetric parts",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:36:41",
+        "01:37:07"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "The algebraic decomposition is useful, correct, and explicitly identified as an editorial clarification."
+    },
+    {
+      "locator": "Species-wide symmetric-or-antisymmetric statistics principle",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:37:07",
+        "01:37:23",
+        "01:37:40",
+        "01:38:07"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "The additional statistics principle is correctly separated from the algebraic identity S squared equals one."
+    },
+    {
+      "locator": "Should there be a minus sign in f(x)?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:26:28"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "An audience member catches the missing sign, and the negative quadratic term is immediately acknowledged."
+    },
+    {
+      "locator": "Is there a minus sign in sigma_x?",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:47:35"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+      "confidence": "high",
+      "note": "This is a direct, unambiguous exchange."
+    }
+  ]
+}
