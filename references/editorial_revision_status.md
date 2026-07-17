@@ -10,7 +10,7 @@ The July 2026 audit covers 19 generated books and 175 chapters. It found systema
 
 The approved production queue now covers 15 books and 137 chapters. It revises all nine supplementary courses first, followed by the latest complete Classical Mechanics, Quantum Mechanics, Special Relativity, General Relativity, Statistical Mechanics, and Cosmology runs. The completed Cosmology pilot and three older or partial duplicate runs are excluded from this pass.
 
-The tracked queue is `references/editorial_revision_queue.json`. It uses one read-only `gpt-5.6-sol` writer session at `ultra` reasoning, commits and pushes each accepted chapter, and resumes from atomic state under `.editorial-revision-work/queue/`. Each accepted chapter receives an editorial audit, fidelity report, and machine-readable source map. Normal and pocket PDFs are republished only after source, style, figure, and LaTeX gates pass.
+The tracked queue is `references/editorial_revision_queue.json`. It uses one persistent, sandboxed editable `gpt-5.6-sol` writer session at `ultra` reasoning. Codex saves candidates only under `.editorial-revision-work/`; the driver promotes them after validation, commits and pushes each accepted chapter, and resumes from atomic queue state. Each accepted chapter receives an editorial audit, fidelity report, and machine-readable source map. Normal and pocket PDFs are republished only after source, style, figure, and LaTeX gates pass.
 
 ## Pilot Result
 
