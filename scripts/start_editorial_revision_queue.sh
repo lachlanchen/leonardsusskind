@@ -11,5 +11,5 @@ exec "$repo_root/Video2Book/scripts/start_editorial_revision_queue_tmux.sh" \
   --interval 1800 \
   --model gpt-5.6-sol \
   --reasoning ultra \
-  --prompt-access workspace-write \
+  --prompt-access danger-full-access \
   "$@"
