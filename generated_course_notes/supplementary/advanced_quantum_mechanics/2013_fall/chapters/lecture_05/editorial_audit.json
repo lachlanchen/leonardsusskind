@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "chapter": "lecture_05",
+  "overall_status": "revise",
+  "findings": [
+    {
+      "severity": "critical",
+      "category": "leakage",
+      "locator": "“These notes follow Leonard Susskind's fifth lecture ... with explicit credit to Leonard Susskind and curation by LazyingArt LLC.”",
+      "evidence": "The chapter body contains prohibited company credit and wording that can imply an authorized or endorsed edition.",
+      "action": "Remove the sentence. Place the independent-companion disclaimer and editorial credits only in designated front matter."
+    },
+    {
+      "severity": "high",
+      "category": "voice",
+      "locator": "“Susskind now does what he always does when a formal rule threatens to become too abstract”",
+      "evidence": "This assigns a habitual motive and repeatedly narrates the speaker instead of presenting the physics directly. Similar constructions recur throughout the chapter.",
+      "action": "Rewrite in neutral explanatory prose while retaining the lecture's questions, examples, repetitions, and conceptual order."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "Opening synthetic overview and final “Summary” section",
+      "evidence": "The overview imposes a polished chapter arc, while the recap is not part of the lecture. Both duplicate material instead of preserving the recorded transitions.",
+      "action": "Remove the overview and summary. Begin with the shell-model review and end with the relative-rotation discussion recorded at the close."
+    },
+    {
+      "severity": "high",
+      "category": "q_and_a",
+      "locator": "No classroomqa environments appear",
+      "evidence": "The chapter narrates a few student interventions and omits many others that materially clarify permutation symmetry, products versus sums, interference, rotation axes, topology, wavefunction branches, which-path information, and recombination.",
+      "action": "Restore the verified exchanges listed below using classroomqa, audiencequestion, lecturerresponse, and an internal lecturetimestamp."
+    },
+    {
+      "severity": "high",
+      "category": "mathematics",
+      "locator": "“the most general possibility consistent with indistinguishability is ψ(x₁,x₂)=e^{iφ}ψ(x₂,x₁)” and “The exclusion principle is not being appended as an extra axiom.”",
+      "evidence": "Two exchanges imply that an exchange eigenvalue must square to one only after assuming that the state is an exchange eigenstate. The algebra alone does not impose the species-wide symmetrization rule. The lecture later stresses that Pauli originally organized an empirical principle rather than deriving it.",
+      "action": "Present symmetric or antisymmetric exchange behavior as an additional physical rule for identical particles of a fixed species. Then derive exclusion from antisymmetry when the one-particle states coincide."
+    },
+    {
+      "severity": "high",
+      "category": "mathematics",
+      "locator": "Remark containing “R_z(θ)=e^{-iθJ_z}” after deriving “ψ(θ)=e^{imθ}ψ(0)” from “J_z=-i∂/∂θ”",
+      "evidence": "The added standard rotation-operator formula uses the opposite exponent convention from the preceding derivation without explicitly distinguishing active and passive rotations. The lecture does not add this remark.",
+      "action": "Remove the remark or document the active/passive convention in an editorialnote. Preserve the lecture's differential derivation consistently."
+    },
+    {
+      "severity": "medium",
+      "category": "mathematics",
+      "locator": "Spin and rotation formulas using m, J_z, and phases without an explicit unit convention",
+      "evidence": "Writing J_z=-i∂/∂θ and treating m as an integer or half-integer suppresses ℏ. Without stating that convention, J_z appears dimensionally inconsistent.",
+      "action": "State that ℏ=1 is used in the angular-momentum discussion, or restore ℏ and distinguish the dimensionless magnetic quantum number from the physical eigenvalue."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "Normalized symmetric and antisymmetric combinations with coefficient 1/√2",
+      "evidence": "The lecture constructs the plus and minus combinations but does not calculate their normalization. The coefficient assumes normalized orthogonal one-particle orbitals.",
+      "action": "Use proportionality signs, or identify the normalization assumption in a concise editorialnote."
+    },
+    {
+      "severity": "medium",
+      "category": "fidelity",
+      "locator": "“In a compact operator notation one may write P₁₂ψ_±=±ψ_±”",
+      "evidence": "The lecture develops exchange directly by switching wavefunction arguments and does not introduce P₁₂ here. The added notation is unnecessary and obscures the continuity with the recorded presentation.",
+      "action": "Retain the explicit coordinate-exchange equations, or mark the operator notation as an editorial clarification."
+    },
+    {
+      "severity": "high",
+      "category": "figure",
+      "locator": "Second TikZ figure with columns labeled ψ₀, ψ₁, and ψ₂",
+      "evidence": "The corresponding board view retains the S, P, and D columns labeled by l=0,1,2; ψ₀(x₁) is a separate one-particle wavefunction label. The redraw turns those columns into three orbitals and therefore changes the meaning of the board.",
+      "action": "Remove this redraw or reconstruct it with the S/P/D labels intact and ψ₀(x₁) shown separately."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "All three figure environments",
+      "evidence": "The figures have no physics captions, no adjacent source notes, and no frame markers. Two shell diagrams are also partly redundant.",
+      "action": "Keep only figures that materially aid the argument. Give each a physics-only caption, place provenance in a footnote, and put the applicable lectureframe immediately after the caption."
+    },
+    {
+      "severity": "medium",
+      "category": "figure",
+      "locator": "Exchange-label TikZ redraw",
+      "evidence": "The supplied frame at 00:35:25 already gives readable blackboard evidence for the full-label swap. The redraw may improve legibility, but currently replaces the stronger source image without a timestamp or source note.",
+      "action": "Retain lecture_05_frame_03.png with lectureframe{00:35:25}; include a redraw only if it adds a clearly explained interpretation."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "Paragraph beginning “This is still one electron.”",
+      "evidence": "The lecture deliberately repeats that the split branches are one electron, not two, and then resolves several audience objections about boxes, paths, and detection. The chapter compresses that teaching sequence into a few declarative sentences.",
+      "action": "Restore the useful repetition and the principal classroom exchanges about one electron in a superposition, localized branches, and destruction of interference by path detection."
+    },
+    {
+      "severity": "medium",
+      "category": "structure",
+      "locator": "“Once the real criterion is the ability to create and annihilate particle-like excitations, the argument should apply equally to solitons...”",
+      "evidence": "The chapter states the generalization but compresses away the mirrored-lump construction that makes the extension intelligible: particle-antiparticle lumps are brought together and continuously annihilated before the creation-exchange-rotation history is repeated.",
+      "action": "Restore the lump-and-mirror argument, its connection to pair creation, and the physical-realization exchange without presenting the heuristic as a rigorous theorem."
+    },
+    {
+      "severity": "medium",
+      "category": "provenance",
+      "locator": "Claims that the 2π interference effect “has been carried out experimentally” and the attribution to David Finkelstein",
+      "evidence": "Both claims occur in the lecture, but the chapter converts them into unqualified historical statements without identifying the experiment or a corroborating source. Portions of the associated transcript are badly damaged.",
+      "action": "Phrase them explicitly as lecture attributions or attach concise source footnotes to named experimental and historical references."
+    }
+  ],
+  "lecture_beats": [
+    {
+      "start": "00:00:09",
+      "end": "00:03:49",
+      "subject": "Helium, lithium, opposite spins, entanglement, and the shell-model approximation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:03:49",
+      "end": "00:08:54",
+      "subject": "S, P, and D levels, Coulomb degeneracies, shell filling, and the eight-state row",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:08:54",
+      "end": "00:12:11",
+      "subject": "Photons versus electrons, spin-statistics pairing, dimensional caveat, and unlimited bosonic occupancy",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:12:11",
+      "end": "00:15:15",
+      "subject": "Many-particle position basis, coordinate wavefunction, and joint probability density",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:15:16",
+      "end": "00:19:52",
+      "subject": "Identical particles, unobservable overall phase, and the two possible exchange phases",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:19:58",
+      "end": "00:23:12",
+      "subject": "Bosonic symmetry and fermionic antisymmetry under exchange",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:23:13",
+      "end": "00:31:49",
+      "subject": "Same-state products, symmetrized and antisymmetrized products, and exclusion",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:31:49",
+      "end": "00:34:28",
+      "subject": "Restoring spin as part of the complete particle label",
+      "chapter_status": "present"
+    },
+    {
+      "start": "00:34:28",
+      "end": "00:39:52",
+      "subject": "Permutation group, products versus sums, interference, and Pauli's empirical starting point",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:39:52",
+      "end": "00:50:16",
+      "subject": "Rotation by 2π, angular momentum as generator, and integer versus half-integer phases",
+      "chapter_status": "distorted"
+    },
+    {
+      "start": "00:50:16",
+      "end": "00:55:37",
+      "subject": "Cup and tethered-sphere demonstrations of the 2π/4π topology",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "00:55:37",
+      "end": "01:02:44",
+      "subject": "Belt demonstration connecting exchange with a 2π rotation",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:02:45",
+      "end": "01:07:55",
+      "subject": "Pair creation, exchange-plus-rotation histories, and cancellation of phases",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:08:01",
+      "end": "01:16:09",
+      "subject": "Solitons, mirrored lumps, annihilation, monopoles, and the broader topological argument",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:16:12",
+      "end": "01:17:10",
+      "subject": "Clarification of the half-integer rotation phase",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:17:11",
+      "end": "01:20:25",
+      "subject": "A null experiment in which a global 2π phase remains unobservable",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:20:31",
+      "end": "01:25:47",
+      "subject": "One electron in two coherent branches and detection of the relative minus sign",
+      "chapter_status": "present"
+    },
+    {
+      "start": "01:25:48",
+      "end": "01:35:11",
+      "subject": "Magnetic-precession implementation, beam splitting, branches, and two-slit interference",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:35:45",
+      "end": "01:38:11",
+      "subject": "Experimental significance, recombination, and the Aharonov-Bohm aside",
+      "chapter_status": "compressed"
+    },
+    {
+      "start": "01:38:12",
+      "end": "01:43:23",
+      "subject": "Two-electron exchange interferometer, hybrid rotation-exchange experiment, and relative versus global rotation",
+      "chapter_status": "compressed"
+    }
+  ],
+  "classroom_exchanges": [
+    {
+      "start": "00:11:48",
+      "end": "00:12:06",
+      "question": "Is there a maximum number of bosonic quanta that can occupy one state?",
+      "answer_summary": "No. Bosons have no occupancy limit and tend to accumulate in the same state.",
+      "verified": true
+    },
+    {
+      "start": "00:34:33",
+      "end": "00:35:10",
+      "question": "Is exchange symmetry an instance of the permutation group?",
+      "answer_summary": "Yes. Particle exchange is a permutation, and the plus or minus transformation law gives a representation of the permutation group.",
+      "verified": true
+    },
+    {
+      "start": "00:35:12",
+      "end": "00:36:12",
+      "question": "Why is the two-particle construction a product rather than a sum of the one-particle wavefunctions?",
+      "answer_summary": "A sum describes one particle in a superposition. A product describes two particles, one assigned to each one-particle state.",
+      "verified": true
+    },
+    {
+      "start": "00:36:13",
+      "end": "00:37:12",
+      "question": "Does exchanging particles produce an interference effect?",
+      "answer_summary": "Yes. The vanishing same-state fermionic amplitude can be viewed as destructive interference between exchanged contributions.",
+      "verified": true
+    },
+    {
+      "start": "00:37:13",
+      "end": "00:38:06",
+      "question": "Did Pauli derive exclusion using this same symmetry argument?",
+      "answer_summary": "Pauli began from an empirical fact and found a mathematical framework for it; he was not initially deriving exclusion from a more fundamental theory.",
+      "verified": true
+    },
+    {
+      "start": "00:39:01",
+      "end": "00:39:47",
+      "question": "Is particle-exchange interference connected with interference between alternative paths?",
+      "answer_summary": "Yes. The histories in which two particles pass without crossing or cross to the exchanged destinations contribute amplitudes that add for bosons and can cancel for fermions.",
+      "verified": true
+    },
+    {
+      "start": "00:42:12",
+      "end": "00:43:17",
+      "question": "What axis is used for the rotation, and does the generator include orbital motion or only spin?",
+      "answer_summary": "The rotation may be about a chosen external axis, taken later as the z-axis, and the generator is total angular momentum, including both orbital and spin contributions.",
+      "verified": true
+    },
+    {
+      "start": "00:54:22",
+      "end": "00:55:06",
+      "question": "Can the strings attached to the sphere really be untangled after two rotations about the same axis, and does that require another spatial dimension?",
+      "answer_summary": "A 4π path can be unwound in ordinary three-dimensional space. The relevant object is a path through the space of rotations, with time parameterizing that path.",
+      "verified": true
+    },
+    {
+      "start": "01:01:12",
+      "end": "01:02:35",
+      "question": "Is the belt argument merely about how a belt is embedded in space rather than particle topology?",
+      "answer_summary": "The belt can be read as a particle history in spacetime. Pair creation, a 2π rotation, and exchange then imply that the rotation and exchange phases cancel.",
+      "verified": true
+    },
+    {
+      "start": "01:03:34",
+      "end": "01:04:52",
+      "question": "Can exchange be related to rotations by letting each of two particles move through π and then reorienting them?",
+      "answer_summary": "The construction may reflect the same mathematics, but it uses two π rotations rather than the single 2π rotation being analyzed.",
+      "verified": true
+    },
+    {
+      "start": "01:11:30",
+      "end": "01:12:03",
+      "question": "Are there physical realizations of the lump-like field configurations?",
+      "answer_summary": "Yes. Examples mentioned include nuclei in Skyrmion-type descriptions, magnetic monopoles, and particle-like excitations in field theories.",
+      "verified": true
+    },
+    {
+      "start": "01:16:12",
+      "end": "01:17:09",
+      "question": "Does spin one-half mean that the state accumulates only half the usual rotation phase?",
+      "answer_summary": "Yes. The phase is governed by exp(i m theta); for half-integer m a 2π rotation gives minus one and a 4π rotation returns plus one.",
+      "verified": true
+    },
+    {
+      "start": "01:20:01",
+      "end": "01:20:11",
+      "question": "Why must the idealized magnetic-field rotation be performed slowly?",
+      "answer_summary": "The spin must follow the slowly rotated magnetic field; if the field is dragged too quickly, it will not remain locked to it.",
+      "verified": true
+    },
+    {
+      "start": "01:23:46",
+      "end": "01:25:43",
+      "question": "What is being rotated if there is only one electron but two wavefunction branches?",
+      "answer_summary": "The electron is in a coherent superposition of two localized alternatives. One branch is rotated and the other is not; opening the boxes to determine the path destroys the interference.",
+      "verified": true
+    },
+    {
+      "start": "01:27:05",
+      "end": "01:27:19",
+      "question": "How can the path of the single electron be determined?",
+      "answer_summary": "It cannot be determined without ruining the experiment. Any which-path measurement destroys the interference.",
+      "verified": true
+    },
+    {
+      "start": "01:27:50",
+      "end": "01:30:07",
+      "question": "What exactly is a branch of the wavefunction, and how does the splitter produce two branches?",
+      "answer_summary": "A branch is a wave packet localized along one path. The splitter turns the incoming wave into two spatially separated packets that can be guided independently.",
+      "verified": true
+    },
+    {
+      "start": "01:30:46",
+      "end": "01:33:22",
+      "question": "How can there be interference if the electron travels through distinct tubes or slits?",
+      "answer_summary": "The final detection does not reveal the path. The two outgoing wave amplitudes spread and overlap; observing which path was taken would destroy the interference.",
+      "verified": true
+    },
+    {
+      "start": "01:33:22",
+      "end": "01:33:40",
+      "question": "Must the tube or slit diameter be comparable to the electron wavelength?",
+      "answer_summary": "For a literal diffraction-based two-slit realization it must be sufficiently small, although the described apparatus is schematic rather than the practical implementation.",
+      "verified": true
+    },
+    {
+      "start": "01:33:44",
+      "end": "01:34:09",
+      "question": "Would a corresponding 2π polarization rotation of photons leave the interference pattern unchanged?",
+      "answer_summary": "Yes. Photons have integer spin, so a full 2π rotation does not introduce the fermionic minus sign.",
+      "verified": true
+    },
+    {
+      "start": "01:34:12",
+      "end": "01:35:11",
+      "question": "What is the slight departure of the practical experiment from the idealized version?",
+      "answer_summary": "The pure construction rotates the spin adiabatically. In the practical description the electron moves through a magnetic region and precesses more quickly, but the same 2π phase is measured.",
+      "verified": true
+    },
+    {
+      "start": "01:36:15",
+      "end": "01:37:00",
+      "question": "Must the two branches be recombined after the splitter?",
+      "answer_summary": "Yes. The emerging wave packets must overlap or spread onto a common detection region so their amplitudes form an interference pattern.",
+      "verified": true
+    },
+    {
+      "start": "01:38:12",
+      "end": "01:38:35",
+      "question": "Is the one-electron rotation experiment a consequence of Pauli exclusion?",
+      "answer_summary": "No. Only one electron is present, so the experiment concerns the spinor phase under rotation rather than two-fermion exclusion.",
+      "verified": true
+    },
+    {
+      "start": "01:41:34",
+      "end": "01:42:05",
+      "question": "Would observing an exchange phase challenge the indistinguishability of the two electrons?",
+      "answer_summary": "No. Quantum indistinguishability is subtler than classical sameness and permits the state vector to change sign under exchange.",
+      "verified": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_05_frame_01.png",
+      "timestamp": "00:04:43",
+      "verdict": "replace",
+      "reason": "The S and P columns are readable, but the diagram is still incomplete and does not yet show the full S/P/D pattern later reconstructed by the chapter. It is better used as a redraw reference.",
+      "caption_guidance": "The S, P, and D sectors correspond to orbital angular momenta l=0, 1, and 2, with 1, 3, and 5 magnetic states respectively."
+    },
+    {
+      "asset": "lecture_05_frame_02.png",
+      "timestamp": "00:24:23",
+      "verdict": "replace",
+      "reason": "The frame is a transitional board state combining the S/P/D spectrum with the separate label ψ₀(x₁). It is useful for reconstruction, but the chapter's current redraw incorrectly relabels the columns as ψ₀, ψ₁, and ψ₂.",
+      "caption_guidance": "A one-particle orbital such as ψ₀ becomes the factor ψ₀(x₁) when it is assigned to particle 1 in a two-particle wavefunction."
+    },
+    {
+      "asset": "lecture_05_frame_03.png",
+      "timestamp": "00:35:25",
+      "verdict": "keep",
+      "reason": "The many-particle wavefunction, complete position-spin labels, and exchange arrows are relevant and sufficiently readable. The frame directly supports the rule that all labels belonging to the two particles are swapped together.",
+      "caption_guidance": "Exchanging two identical particles swaps their complete labels, including position and spin; bosonic states remain unchanged while fermionic states change sign."
+    }
+  ],
+  "uncertain_sources": [
+    {
+      "locator": "00:01:16–00:01:25",
+      "problem": "The spoken phrase says that no more than two electrons can occupy the same state, then immediately clarifies that spin counts. Literally, no two fermions may occupy the same full one-particle state; two may share one spatial orbital with opposite spin.",
+      "required_check": "Use the surrounding audio and preserve the distinction between a spatial orbital and a complete state."
+    },
+    {
+      "locator": "00:11:35–00:11:47",
+      "problem": "The audience wording is missing, although the response clearly confirms that the preceding statement requires qualification in one and two spatial dimensions.",
+      "required_check": "Check the audio before rendering this as classroomqa; otherwise retain only the lecturer's dimensional caveat in exposition."
+    },
+    {
+      "locator": "00:26:45–00:26:53",
+      "problem": "The illustrative product of two arbitrary functions is badly corrupted as “sine ... hyperbolic moose.”",
+      "required_check": "Check the audio if the particular example is retained; the general statement that the product lacks exchange symmetry is clear without it."
+    },
+    {
+      "locator": "00:33:11–00:33:36",
+      "problem": "A long ASR gap obscures the formula for exchanging the full position-spin labels.",
+      "required_check": "Use lecture_05_frame_03.png and the audio to reconstruct the exact ordering of x₁,σ₁ and x₂,σ₂."
+    },
+    {
+      "locator": "00:35:12–00:35:28",
+      "problem": "The audience question about multiplication versus addition is substantially damaged, although the response is clear.",
+      "required_check": "Paraphrase the question conservatively or check the audio before close quotation."
+    },
+    {
+      "locator": "00:37:43–00:38:56",
+      "problem": "The historical discussion of Pauli, relativistic theory, and Fermi is severely corrupted.",
+      "required_check": "Use the audio and a named history-of-physics reference before retaining detailed attributions."
+    },
+    {
+      "locator": "00:51:18–00:52:23",
+      "problem": "The attribution of the cup or arm trick to Dirac and Gerard 't Hooft is partly humorous and uncertain in the spoken account.",
+      "required_check": "Use a named reference before converting the passage into a settled historical attribution."
+    },
+    {
+      "locator": "00:53:30–00:54:09",
+      "problem": "ASR damage obscures the precise topological statement about 2π and 4π paths in the rotation group.",
+      "required_check": "Check the audio or a named topology reference before giving a formal theorem statement."
+    },
+    {
+      "locator": "00:56:20–00:57:06",
+      "problem": "The introduction and attribution of the exchange-rotation observation to David Finkelstein are partly corrupted.",
+      "required_check": "Check the audio and identify the relevant Finkelstein or Finkelstein-Rubinstein reference if the historical claim is retained."
+    },
+    {
+      "locator": "00:58:18–00:59:03",
+      "problem": "The spoken description of the belt drawing is nearly unintelligible.",
+      "required_check": "Use the video before reconstructing the belt geometry or worldline diagram."
+    },
+    {
+      "locator": "01:02:45–01:03:05",
+      "problem": "The transcript says “Bohmian strip,” but the audience likely refers to a Möbius strip.",
+      "required_check": "Check the audio before naming the object or retaining the exchange."
+    },
+    {
+      "locator": "01:08:21–01:09:38",
+      "problem": "The paper history and the names Finkelstein and Rubinstein are recoverable only in part from damaged ASR.",
+      "required_check": "Use the audio and a named reference before presenting the chronology or scope of the result."
+    },
+    {
+      "locator": "01:11:46–01:11:51",
+      "problem": "The transcript gives “skirmion theories,” which is almost certainly Skyrmion theories of nuclei.",
+      "required_check": "Confirm against the audio and a named field-theory reference before retaining the term."
+    },
+    {
+      "locator": "01:17:42–01:18:00 and 01:25:48–01:35:11",
+      "problem": "The lecture says that a related 2π spinor-phase experiment was performed, but no experiment, apparatus, or paper is identified reliably in the transcript.",
+      "required_check": "Use the audio and a named experimental reference before presenting the implementation or historical claim as settled fact."
+    },
+    {
+      "locator": "01:35:11–01:35:45",
+      "problem": "ASR corruption removes the apparent name or characterization of the measured effect.",
+      "required_check": "Check the audio before restoring terminology."
+    },
+    {
+      "locator": "01:37:10–01:37:32",
+      "problem": "“Haranoff-Bohm” is an ASR error for Aharonov-Bohm, and the stated chronology is given from memory.",
+      "required_check": "Use the audio and a named historical reference if the aside is retained."
+    },
+    {
+      "locator": "01:40:26–01:41:01",
+      "problem": "The proposed hybrid exchange-versus-2π-rotation interferometer is badly damaged at the point where its transformations are specified.",
+      "required_check": "Check the audio before closely reconstructing the apparatus; retain only the clear conclusion that the two relative phases should cancel."
+    }
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "unsupported_claims": [],
+  "missing_beats": [],
+  "style_violations": [],
+  "provenance_gaps": [],
+  "q_and_a_checks": [
+    {
+      "locator": "Is there a maximum number of bosonic quanta that can occupy one state?",
+      "timestamp": "00:11:48",
+      "verified": true,
+      "reason": "The question and the answer that bosonic occupancy has no upper limit are explicit."
+    },
+    {
+      "locator": "Is exchange symmetry an instance of the permutation group?",
+      "timestamp": "00:34:33",
+      "verified": true,
+      "reason": "The audience invokes permutations, and the response identifies the plus and minus laws as representations of the permutation group."
+    },
+    {
+      "locator": "Why is the two-particle construction a product rather than a sum of the one-particle wavefunctions?",
+      "timestamp": "00:35:12",
+      "verified": true,
+      "reason": "Despite damaged ASR in the question, the answer clearly distinguishes a one-particle superposition from a two-particle tensor-product state."
+    },
+    {
+      "locator": "Does exchanging particles produce an interference effect?",
+      "timestamp": "00:36:13",
+      "verified": true,
+      "reason": "The response explicitly interprets the vanishing same-state fermionic amplitude as destructive interference."
+    },
+    {
+      "locator": "Did Pauli derive exclusion using this same symmetry argument?",
+      "timestamp": "00:37:13",
+      "verified": true,
+      "reason": "The response preserves the distinction between Pauli’s empirical starting point and its later mathematical and theoretical interpretation."
+    },
+    {
+      "locator": "Is particle-exchange interference connected with interference between alternative paths?",
+      "timestamp": "00:39:01",
+      "verified": true,
+      "reason": "The crossing and noncrossing histories, bosonic addition, and possible fermionic cancellation are explicit."
+    },
+    {
+      "locator": "Which axis is used for the rotation, and is the generator orbital angular momentum, spin, or both?",
+      "timestamp": "00:42:12",
+      "verified": true,
+      "reason": "This conservatively consolidates consecutive prompts about the external axis, total angular momentum, and spin orientation."
+    },
+    {
+      "locator": "If the sphere is turned twice about the same axis, can the strings really be untangled?",
+      "timestamp": "00:54:22",
+      "verified": true,
+      "reason": "The exchange explicitly discusses unwinding the 4π path in three spatial dimensions and distinguishes time as the path parameter."
+    },
+    {
+      "locator": "Is this only a statement about how the belt is embedded in space rather than a statement about particle topology?",
+      "timestamp": "01:01:12",
+      "verified": true,
+      "reason": "The answer follows the interpretation of the belt as a spacetime history with pair creation, rotation, and exchange."
+    },
+    {
+      "locator": "Can exchange be related to rotations by letting each of two particles move through π and then reorienting them?",
+      "timestamp": "01:03:34",
+      "verified": true,
+      "reason": "The response accurately distinguishes two separate π rotations from the single 2π rotation under discussion."
+    },
+    {
+      "locator": "Are there physical realizations of these lump-like field configurations?",
+      "timestamp": "01:11:30",
+      "verified": true,
+      "reason": "Nuclear lump descriptions, magnetic monopoles, and other field excitations are explicitly discussed; “Skyrmion” is a defensible ASR correction."
+    },
+    {
+      "locator": "Does spin one-half mean that the state accumulates only half the usual rotation phase?",
+      "timestamp": "01:16:12",
+      "verified": true,
+      "reason": "The response correctly retains the e^{imθ} phase and its values after 2π and 4π."
+    },
+    {
+      "locator": "Why must the magnetic-field rotation be performed slowly?",
+      "timestamp": "01:20:01",
+      "verified": true,
+      "reason": "The answer directly reflects the requirement that the spin remain locked to the rotating magnetic field."
+    },
+    {
+      "locator": "What is being rotated if there is only one electron but two wavefunction branches?",
+      "timestamp": "01:23:46",
+      "verified": true,
+      "reason": "The response faithfully consolidates the extended discussion of one electron in two coherent alternatives and the destruction of interference by path detection."
+    },
+    {
+      "locator": "How can the path of the single electron be determined?",
+      "timestamp": "01:27:05",
+      "verified": true,
+      "reason": "The lecture answers that determining the path ruins the interference experiment."
+    },
+    {
+      "locator": "What exactly is a branch of the wavefunction, and how does the splitter produce two branches?",
+      "timestamp": "01:27:50",
+      "verified": true,
+      "reason": "The answer matches the explanation of spatially separated wave packets produced by the splitter and guided by fields."
+    },
+    {
+      "locator": "How can there be interference if the electron travels through distinct tubes or slits?",
+      "timestamp": "01:30:46",
+      "verified": true,
+      "reason": "The response preserves the repeated explanation that the outgoing amplitudes overlap and which-path observation destroys interference."
+    },
+    {
+      "locator": "Must the tube or slit diameter be comparable to the electron wavelength?",
+      "timestamp": "01:33:22",
+      "verified": true,
+      "reason": "The response correctly limits the small-opening requirement to a literal diffraction-based realization."
+    },
+    {
+      "locator": "Would a corresponding 2π polarization rotation of photons leave the interference pattern unchanged?",
+      "timestamp": "01:33:44",
+      "verified": true,
+      "reason": "The answer is supported by the explicit statement that the photon pattern is insensitive to a 2π polarization rotation."
+    },
+    {
+      "locator": "What is the slight departure of the practical experiment from the idealized version?",
+      "timestamp": "01:34:12",
+      "verified": true,
+      "reason": "The response accurately contrasts slow adiabatic rotation with faster magnetic precession through the same total angle."
+    },
+    {
+      "locator": "Must the two branches be recombined after the splitter?",
+      "timestamp": "01:36:15",
+      "verified": true,
+      "reason": "The answer correctly states that the outgoing packets must overlap or spread into a common detection region."
+    },
+    {
+      "locator": "Is this one-electron rotation experiment a consequence of Pauli exclusion?",
+      "timestamp": "01:38:12",
+      "verified": true,
+      "reason": "The response preserves the explicit correction that only one electron is present and that the effect concerns rotation rather than exclusion."
+    },
+    {
+      "locator": "Would observing an exchange phase challenge the indistinguishability of the two electrons?",
+      "timestamp": "01:41:34",
+      "verified": true,
+      "reason": "The response accurately retains the statement that quantum indistinguishability permits a sign change under exchange."
+    }
+  ],
+  "figure_checks": [
+    {
+      "asset": "lecture_05_frame_01.png",
+      "timestamp": "00:04:43",
+      "verdict": "remove",
+      "reason": "This is an incomplete early S/P spectrum sketch. The chapter conveys its useful content through the supported shell-counting discussion."
+    },
+    {
+      "asset": "lecture_05_frame_02.png",
+      "timestamp": "00:24:23",
+      "verdict": "remove",
+      "reason": "The transitional board state mixes the S/P/D spectrum with the separate ψ₀(x₁) label and could obscure their different roles."
+    },
+    {
+      "asset": "lecture_05_frame_03.png",
+      "timestamp": "00:35:25",
+      "verdict": "keep",
+      "reason": "The complete position-spin labels and exchange arrows are legible, the caption describes the physics, and the frame marker is correctly placed."
+    }
+  ],
+  "source_map": [
+    {
+      "locator": "Shell Filling and the Spin–Statistics Question: electron, helium, and lithium discussion",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:00:09",
+        "00:01:21",
+        "00:02:38",
+        "00:02:59",
+        "00:03:14"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supports the spin projections, complete-state distinction, shell-model approximation, helium entanglement, and lithium filling."
+    },
+    {
+      "locator": "Equations for ℓ = 0, 1, 2 and the corresponding state counts",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:04:05",
+        "00:04:25",
+        "00:04:43",
+        "00:05:11",
+        "00:05:20",
+        "00:05:35"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The S/P/D labels and their one-, three-, and five-state counts are explicit; 2ℓ+1 compactly records that stated pattern."
+    },
+    {
+      "locator": "Equations 1 + 3 = 4 and 2(1 + 3) = 8",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:06:19",
+        "00:07:51",
+        "00:08:00",
+        "00:08:07"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Compact reconstruction of the four stated orbital states and their doubling by spin."
+    },
+    {
+      "locator": "Photon contrast and the spin–statistics question",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:08:54",
+        "00:09:22",
+        "00:10:09",
+        "00:10:38",
+        "00:11:13",
+        "00:11:40"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supports the photon example, unlimited bosonic occupancy, spin–statistics pairing, field-theory qualification, and dimensional caveat."
+    },
+    {
+      "locator": "Bosonic occupancy Q&A",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:11:48"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Direct audience question and answer."
+    },
+    {
+      "locator": "Many-Particle Wavefunctions: position basis, coordinate wavefunction, and probability density",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:12:48",
+        "00:13:06",
+        "00:13:38",
+        "00:14:12",
+        "00:14:44",
+        "00:14:52"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The displayed basis, wavefunction, and joint-density expressions follow the recorded development."
+    },
+    {
+      "locator": "Identical-particle color example and exchange phase η",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:15:16",
+        "00:16:06",
+        "00:17:42",
+        "00:18:16",
+        "00:18:45",
+        "00:18:54",
+        "00:19:27"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The lecture introduces an exchange phase and applies the exchange twice to obtain the two signs."
+    },
+    {
+      "locator": "Editorial note distinguishing exchange eigenvalues from the species-wide exchange rule",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:18:54",
+        "00:19:27"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "Necessary logical qualification, now explicitly marked as editorial clarification."
+    },
+    {
+      "locator": "Symmetric and antisymmetric exchange equations",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:19:58",
+        "00:20:31",
+        "00:21:06",
+        "00:22:13",
+        "00:22:49"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The bosonic plus and fermionic minus transformation laws are explicit."
+    },
+    {
+      "locator": "Products, Sums, and Exclusion: same-state and different-state products",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:23:13",
+        "00:24:26",
+        "00:24:47",
+        "00:25:01",
+        "00:25:54",
+        "00:26:04"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Follows the lecture’s order and avoids relying on corrupted illustrative function names."
+    },
+    {
+      "locator": "Symmetric and antisymmetric two-orbital combinations",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:27:08",
+        "00:27:25",
+        "00:28:13",
+        "00:28:23"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The plus and minus constructions are explicit, and proportionality signs avoid introducing an unsupported normalization."
+    },
+    {
+      "locator": "Same-orbital bosonic and fermionic limits",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:29:00",
+        "00:29:36",
+        "00:29:43",
+        "00:30:00"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supports the nonzero bosonic combination, vanishing fermionic combination, and resulting exclusion rule."
+    },
+    {
+      "locator": "Spin in the Complete Particle Label",
+      "kind": "equation",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:31:49",
+        "00:32:20",
+        "00:33:43",
+        "00:34:13"
+      ],
+      "reference": "generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/assets/lecture_05_frame_03.png",
+      "confidence": "high",
+      "note": "The complete position-spin label swap is supported jointly by the surrounding speech and retained board frame."
+    },
+    {
+      "locator": "Permutation, product-versus-sum, exchange interference, Pauli, and path Q&As",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:34:33",
+        "00:35:12",
+        "00:36:13",
+        "00:37:13",
+        "00:39:01"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "All five exchanges are retained in their recorded conceptual order."
+    },
+    {
+      "locator": "Figure: complete position-spin exchange",
+      "kind": "figure",
+      "source_type": "blackboard",
+      "timestamps": [
+        "00:35:25"
+      ],
+      "reference": "generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/assets/lecture_05_frame_03.png",
+      "confidence": "high",
+      "note": "The frame is correctly timed and retains the many-particle labels and exchange arrows."
+    },
+    {
+      "locator": "Rotation axis and total-angular-momentum Q&A",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:42:12"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Faithful consolidation of the connected audience discussion through approximately 00:43:17."
+    },
+    {
+      "locator": "ℏ = 1 unit convention",
+      "kind": "prose",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "00:45:22"
+      ],
+      "reference": "",
+      "confidence": "high",
+      "note": "Necessary dimensional clarification and correctly marked with editorialnote."
+    },
+    {
+      "locator": "Jz differential relation and ψ(θ) = e^{imθ}ψ(0)",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:45:22",
+        "00:46:06",
+        "00:46:49",
+        "00:47:17",
+        "00:47:35"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Preserves the exponent convention used in the lecture without adding a conflicting rotation-operator convention."
+    },
+    {
+      "locator": "Integer and half-integer phases under 2π and 4π",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:47:53",
+        "00:48:28",
+        "00:48:36",
+        "00:49:02",
+        "00:50:03"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The sign change for half-integer angular momentum and return after 4π are explicit."
+    },
+    {
+      "locator": "Cup and tethered-sphere demonstrations",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:50:16",
+        "00:51:53",
+        "00:52:28",
+        "00:53:09",
+        "00:54:22"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Retains the physical 2π/4π demonstrations while omitting uncertain historical details."
+    },
+    {
+      "locator": "Sphere-unwinding Q&A",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:54:22"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supported by the extended discussion of paths through the space of rotations."
+    },
+    {
+      "locator": "Exchange and Rotation in the Belt Picture",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:55:37",
+        "00:57:31",
+        "00:57:44",
+        "00:57:51",
+        "00:59:40",
+        "01:00:00"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supports the identification of exchange plus a 2π twist with the trivial belt configuration."
+    },
+    {
+      "locator": "David Finkelstein attribution footnote",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "00:56:20"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "medium",
+      "note": "The name is retained only as a qualified lecture attribution because no publication is identified."
+    },
+    {
+      "locator": "Particle-history construction and ηrotηex = 1",
+      "kind": "equation",
+      "source_type": "editorial_clarification",
+      "timestamps": [
+        "01:01:23",
+        "01:05:22",
+        "01:06:21",
+        "01:06:50",
+        "01:07:12"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The compact equation records the explicitly stated cancellation and is identified by a provenance footnote."
+    },
+    {
+      "locator": "Belt-history and two-π-rotations Q&As",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:01:12",
+        "01:03:34"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Both exchanges are retained without depending on the uncertain Möbius-strip wording."
+    },
+    {
+      "locator": "Lumps, Mirror Images, and Annihilation",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:08:31",
+        "01:08:46",
+        "01:10:38",
+        "01:12:23",
+        "01:12:40",
+        "01:13:13",
+        "01:14:52",
+        "01:15:01"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Retains the mirrored-lump annihilation and reverse pair-creation construction central to the extension."
+    },
+    {
+      "locator": "Physical-lump and half-phase Q&As",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:11:30",
+        "01:16:12"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The physical examples and phase explanation are clear despite local ASR damage."
+    },
+    {
+      "locator": "A Global Sign and a Null Experiment",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:17:11",
+        "01:18:09",
+        "01:18:49",
+        "01:19:09",
+        "01:20:17"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supports the slow magnetic rotation, global minus sign, and null result."
+    },
+    {
+      "locator": "One Electron in Two Coherent Branches and ψ₁ + ψ₂ → ψ₁ − ψ₂",
+      "kind": "equation",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:20:31",
+        "01:21:06",
+        "01:21:43",
+        "01:22:36",
+        "01:22:41",
+        "01:23:01"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "The lecture repeatedly emphasizes that there is one electron and explicitly derives the relative sign."
+    },
+    {
+      "locator": "Magnetic-precession implementation",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:25:48",
+        "01:26:04",
+        "01:26:22",
+        "01:26:33",
+        "01:26:49"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supports transverse polarization, precession through 2π in one branch, and no corresponding turn in the other."
+    },
+    {
+      "locator": "Experimental-realization footnote",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:17:39",
+        "01:25:43"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "medium",
+      "note": "Correctly framed as a lecture attribution because no experiment or publication is identified."
+    },
+    {
+      "locator": "Two-slit interference, which-path information, and recombination",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:30:11",
+        "01:30:46",
+        "01:31:25",
+        "01:32:17",
+        "01:33:07",
+        "01:36:15"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Retains the repeated explanation that overlapping amplitudes interfere and path records destroy the effect."
+    },
+    {
+      "locator": "Interferometry Q&A sequence",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:20:01",
+        "01:23:46",
+        "01:27:05",
+        "01:27:50",
+        "01:30:46",
+        "01:33:22",
+        "01:33:44",
+        "01:34:12",
+        "01:36:15",
+        "01:38:12"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "All retained questions are grounded in real audience exchanges and preserve their conceptual order."
+    },
+    {
+      "locator": "Two-electron exchange interferometer",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:38:36",
+        "01:39:06",
+        "01:39:19",
+        "01:39:31",
+        "01:40:09"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supports two electrons in two coherent pair branches, exchange in one branch, and subsequent interference."
+    },
+    {
+      "locator": "Hybrid exchange–rotation comparison",
+      "kind": "prose",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:40:59",
+        "01:41:02",
+        "01:41:10",
+        "01:41:22"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "medium",
+      "note": "The chapter retains only the secure exchange phase, 2π-rotation phase, and cancellation; the uncertain detailed assignment is disclosed in a footnote."
+    },
+    {
+      "locator": "Indistinguishability Q&A and final relative-versus-global rotation",
+      "kind": "q_and_a",
+      "source_type": "transcript",
+      "timestamps": [
+        "01:41:34",
+        "01:42:07",
+        "01:42:53",
+        "01:43:00"
+      ],
+      "reference": "supplementary/advanced_quantum_mechanics/2013_fall/189 - Advanced Quantum Mechanics Lecture 5 [A7PZftS7uOA].md",
+      "confidence": "high",
+      "note": "Supports the final distinction between an unobservable common phase and a detectable relative phase."
+    }
+  ]
+}
