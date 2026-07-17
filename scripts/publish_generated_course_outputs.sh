@@ -107,6 +107,7 @@ publish_pocket_variant() {
     --font-mode "$font_mode" \
     --output-dir "$output_dir" \
     --suffix "$suffix" \
+    --fail-on-overflow \
     --nutstore-dir "$nutstore_dir"
 
   validate_pocket_pdf_text "$pocket_src"

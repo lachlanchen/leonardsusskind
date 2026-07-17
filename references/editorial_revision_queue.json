@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "expected_courses": 15,
+  "expected_chapters": 137,
+  "output_root": "generated_course_notes",
+  "markdown_root": "markdown",
+  "video_root": "susskind_lecture_videos",
+  "state_root": ".editorial-revision-work/queue",
+  "model": "gpt-5.6-sol",
+  "reasoning": "ultra",
+  "max_repair_passes": 2,
+  "publish_script": "scripts/publish_generated_course_outputs.sh",
+  "canary": "supplementary/advanced_quantum_mechanics/2013_fall/lecture_01",
+  "excluded_courses": [
+    {
+      "course": "core/cosmology/2009_winter_legacy_cosmology",
+      "reason": "completed editorial pilot"
+    },
+    {
+      "course": "core/classical_mechanics/2011_fall_modern_physics_stanford_partial",
+      "reason": "older partial duplicate"
+    },
+    {
+      "course": "core/quantum_mechanics/2012_winter_modern_physics_stanford",
+      "reason": "non-canonical duplicate for this pass"
+    },
+    {
+      "course": "core/general_relativity/2008_fall_einsteins_general_theory_of_relativity",
+      "reason": "older duplicate"
+    }
+  ],
+  "courses": [
+    {
+      "course": "supplementary/advanced_quantum_mechanics/2013_fall",
+      "expected_chapters": 10,
+      "references": [
+        "susskind-books-and-lecture-notes/Leonard_Susskind-Theoretical_Minimum-Quantum_Mechanics-2014.pdf"
+      ]
+    },
+    {
+      "course": "supplementary/quantum_entanglement/2006_fall_part_1",
+      "expected_chapters": 9,
+      "references": [
+        "susskind-books-and-lecture-notes/Leonard_Susskind-Theoretical_Minimum-Quantum_Mechanics-2014.pdf"
+      ]
+    },
+    {
+      "course": "supplementary/quantum_entanglement/2006_fall_part_3",
+      "expected_chapters": 8,
+      "references": [
+        "susskind-books-and-lecture-notes/Leonard_Susskind-Theoretical_Minimum-Quantum_Mechanics-2014.pdf"
+      ]
+    },
+    {
+      "course": "supplementary/particle_physics_1_basic_concepts/2009_fall",
+      "expected_chapters": 10,
+      "references": []
+    },
+    {
+      "course": "supplementary/particle_physics_2_standard_model/2010_winter",
+      "expected_chapters": 10,
+      "references": []
+    },
+    {
+      "course": "supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring",
+      "expected_chapters": 10,
+      "references": []
+    },
+    {
+      "course": "supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory",
+      "expected_chapters": 9,
+      "references": []
+    },
+    {
+      "course": "supplementary/string_theory/2010_fall_string_theory_and_m_theory",
+      "expected_chapters": 10,
+      "references": []
+    },
+    {
+      "course": "supplementary/higgs_boson/2012_summer",
+      "expected_chapters": 1,
+      "references": []
+    },
+    {
+      "course": "core/classical_mechanics/2011_fall_theoretical_minimum",
+      "expected_chapters": 10,
+      "references": [
+        "susskind-books-and-lecture-notes/Leonard_Susskind-Theoretical_Minimum-Classical_Mechanics-2014.pdf"
+      ]
+    },
+    {
+      "course": "core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title",
+      "expected_chapters": 10,
+      "references": [
+        "susskind-books-and-lecture-notes/Leonard_Susskind-Theoretical_Minimum-Quantum_Mechanics-2014.pdf"
+      ]
+    },
+    {
+      "course": "core/special_relativity/2012_spring_theoretical_minimum",
+      "expected_chapters": 10,
+      "references": [
+        "susskind-books-and-lecture-notes/Leonard_Susskind-Theoretical_Minimum-Special_Relativity_and_Classical_Field-2017.pdf"
+      ]
+    },
+    {
+      "course": "core/general_relativity/2012_fall_theoretical_minimum",
+      "expected_chapters": 10,
+      "references": [
+        "core_general_relativity"
+      ]
+    },
+    {
+      "course": "core/statistical_mechanics/2013_spring_theoretical_minimum",
+      "expected_chapters": 10,
+      "references": [
+        "core_statistical_mechanics"
+      ]
+    },
+    {
+      "course": "core/cosmology/2013_winter_theoretical_minimum",
+      "expected_chapters": 10,
+      "references": [
+        "core_cosmology"
+      ],
+      "chapter_references": {
+        "lecture_10": [
+          "susskind-books-and-lecture-notes/Leonard_Susskind-Theoretical_Minimum-Cosmology.pdf"
+        ]
+      }
+    }
+  ]
+}

@@ -8,9 +8,9 @@ The July 2026 audit covers 19 generated books and 175 chapters. It found systema
 
 ## Revision Order
 
-The first pilot is `generated_course_notes/core/cosmology/2009_winter_legacy_cosmology`. Its eight chapters can be checked against timestamped transcripts, lecture video, blackboard frames, and the human-prepared `core_cosmology/lesson_*.pdf` notes.
+The approved production queue now covers 15 books and 137 chapters. It revises all nine supplementary courses first, followed by the latest complete Classical Mechanics, Quantum Mechanics, Special Relativity, General Relativity, Statistical Mechanics, and Cosmology runs. The completed Cosmology pilot and three older or partial duplicate runs are excluded from this pass.
 
-After pilot review, canonical core courses will be revised first, supplementary courses second, and legacy or duplicate variants last. Each accepted chapter receives an editorial audit, fidelity report, and machine-readable source map. Normal and pocket PDFs are republished only after source, style, figure, and LaTeX gates pass.
+The tracked queue is `references/editorial_revision_queue.json`. It uses one read-only `gpt-5.6-sol` writer session at `ultra` reasoning, commits and pushes each accepted chapter, and resumes from atomic state under `.editorial-revision-work/queue/`. Each accepted chapter receives an editorial audit, fidelity report, and machine-readable source map. Normal and pocket PDFs are republished only after source, style, figure, and LaTeX gates pass.
 
 ## Pilot Result
 
@@ -18,4 +18,4 @@ The Cosmology pilot completed on July 16, 2026. All eight chapters pass the sour
 
 Local 6-by-9-inch review editions were also built at normal and 1.2-times font size. They contain 122 and 152 pages respectively, and both report zero actionable overfulls, page-builder overflows, underfull paragraphs, or leaked TeX sizing tokens. The normal, pocket, and 1.2-times pocket artifacts were visually checked at the cover, front matter, chapter openings, wrapped running heads, equations, Q&A blocks, and retained blackboard figures.
 
-The broader 19-book corpus remains behind the pilot approval gate. Public republishing and bulk revision should begin only after this edition's prose, attribution, Q&A treatment, and figure presentation are accepted as the reference standard.
+The pilot standard is now approved for the remaining latest-edition queue. Older duplicate editions remain available but will not be revised until the canonical supplementary and core sequence is complete.
