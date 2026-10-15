@@ -2,7 +2,7 @@
 
 
 
-[![LazyingArt banner — apps and four buddies](https://github.com/lachlanchen/LazyingArtWebsite/raw/main/media/brand/lazyingart-intro.gif)](https://lazying.art)
+[![LazyingArt banner — apps and four buddies](https://lazying.art/media/brand/lazyingart-intro.gif)](https://lazying.art)
 
 # Репозиторий конспектов лекций Леонарда Сасскинда
 
