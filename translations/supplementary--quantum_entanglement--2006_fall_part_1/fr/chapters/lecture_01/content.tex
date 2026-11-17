@@ -1,0 +1,444 @@
+\chapter{Information classique, dynamique réversible et matrices}
+
+\lectureoverview{La mécanique quantique nous demande de raisonner en dehors du domaine pour lequel notre intuition ordinaire s’est formée. Nous commencerons donc un peu plus tôt, par l’information classique : les bits, les configurations et les lois d’évolution réversibles. Cette étude nous conduira naturellement aux vecteurs et aux matrices, qui fourniront le langage des bits quantiques.}
+
+\section{Une intuition façonnée pour un monde différent}
+
+Notre intuition physique est ancienne. Bien avant que quiconque écrive une équation, un animal poursuivant une proie devait estimer sa vitesse et sa direction relatives. Si un lion gagne du terrain sur une antilope, il réagit à une distance qui varie et, implicitement, à la vitesse relative. Les systèmes nerveux capables de faire ces estimations correctement étaient favorisés ; ceux qui échouaient n’ont pas laissé beaucoup de descendants. Une grande partie de ce que nous appelons le bon sens en matière de mouvement s’est formée dans ce monde ordinaire.
+
+Cet héritage est utile, mais limité. Dans la vie ordinaire, rien ne se déplace à une vitesse proche de celle de la lumière ; l’évolution ne nous a donc donné aucun instinct pour l’espace-temps relativiste. Le physicien commence par apprendre la géométrie abstraite, puis acquiert peu à peu une nouvelle intuition. La mécanique quantique est plus difficile encore. Notre représentation familière d’une particule vient des pierres et des flèches : à chaque instant, l’objet a une position, la succession de ses positions forme une trajectoire et les variations de position définissent une vitesse. L’électron ne se plie pas à cette représentation. L’incertitude de position et l’absence de trajectoire classique n’ont aucun équivalent dans l’expérience qui a façonné nos sens.
+
+Cet échec de l’intuition n’a rien de paradoxal. Il y aurait paradoxe seulement si des instincts adaptés aux pierres, aux animaux et aux vitesses modérées connaissaient d’avance les électrons. La bonne démarche consiste à construire une autre intuition à partir d’un petit ensemble de règles précises. Ici, nous ne suivrons pas la voie habituelle qui passe par la mécanique ondulatoire et l’équation de Schr\"odinger. Nous nous concentrerons sur la structure logique de la mécanique quantique et sur l’information quantique. Avant de demander ce qu’est un bit quantique, nous devons comprendre exactement ce que fait un bit ordinaire.
+
+\section{Les bits et la quantité d’information}
+
+La physique est indissociable de l’information. Celle-ci s’exprime parfois par un nombre réel, mais la forme la plus simple d’information est la réponse à une question qui n’admet que deux possibilités : oui ou non, pile ou face, haut ou bas.
+
+\begin{definition}Un \emph{bit classique} est une question physique qui possède exactement deux réponses possibles.\end{definition}
+
+Nous pouvons désigner ces réponses par \(0\) et \(1\). Ces étiquettes n’ont aucune signification intrinsèque ; deux symboles distincts quelconques feraient l’affaire. Comme la notation de Dirac deviendra bientôt indispensable, nous l’introduisons dès maintenant, même si elle est encore redondante :
+\begin{equation}
+  \ket{0},
+  \qquad
+  \ket{1}.
+\end{equation}
+La barre verticale et le chevron fermant forment un \emph{ket}, c’est-à-dire la moitié droite d’un bra--ket. Le simple changement de notation n’introduit rien de quantique.
+
+Pour plusieurs bits discernables, écrivons les réponses dans un ordre fixé. Six pièces discernables, par exemple, peuvent avoir la configuration
+\begin{equation}
+  \ket{0\,1\,1\,0\,1\,0}.
+\end{equation}
+Une fois l’ordre établi, les virgules sont facultatives. Un bit a deux états possibles, deux bits en ont quatre, et chaque bit ajouté double ce nombre. Un système à \(n\) bits possède donc
+\begin{equation}
+  N_s=2^n
+  \label{eq:l01-state-count}
+\end{equation}
+états. Réciproquement,
+\begin{equation}
+  n=\log_2 N_s.
+  \label{eq:l01-bits-from-states}
+\end{equation}
+
+L’équation~\eqref{eq:l01-bits-from-states} suggère une définition utile même lorsque le nombre d’états n’est pas une puissance de deux :
+\begin{equation}
+  I=\log_2 N_s.
+  \label{eq:l01-information}
+\end{equation}
+Un dé à six faces porte donc \(\log_2 6\) bits d’information. Ce nombre n’a pas besoin d’être entier. Les systèmes constitués littéralement d’interrupteurs binaires fourniront des exemples commodes, mais le logarithme est une mesure plus générale.
+
+\section{Encoder un monde apparemment continu}
+
+Les bits ne se limitent pas aux pièces. Toute grandeur mesurée avec une précision finie peut être écrite sous la forme d’une chaîne binaire finie. Supposons, par exemple, que la température d’une pièce soit requise à un nombre donné de chiffres significatifs. Exprimons la valeur mesurée en base deux et conservons les chiffres nécessaires à cette précision. Une plus grande précision exige une chaîne plus longue, mais ne change pas le principe.
+
+On peut traiter de la même manière un champ qui varie dans l’espace. Divisons la pièce en un réseau ordonné de cellules suffisamment fines, relevons la valeur du champ dans chaque cellule avec une précision finie, puis concaténons les chaînes binaires obtenues. Réduire la taille des cellules améliore la résolution spatiale ; conserver davantage de chiffres binaires améliore la résolution de la valeur du champ. Les champs de température, électriques et magnétiques peuvent tous être encodés ainsi avec toute précision finie spécifiée.
+
+Les configurations de particules offrent une représentation binaire encore plus littérale. Subdivisons l’espace en cellules assez petites pour qu’elles contiennent au plus une particule. Posons
+\begin{equation}
+  n_i=
+  \begin{cases}
+    1,&\text{cell \(i\) is occupied},\\
+    0,&\text{cell \(i\) is empty}.
+  \end{cases}
+  \label{eq:l01-occupancy-bit}
+\end{equation}
+La configuration complète est la chaîne ordonnée
+\begin{equation}
+  \ket{n_1n_2n_3\cdots}.
+\end{equation}
+C’est une très longue réponse à une suite de questions par oui ou par non : y a-t-il une particule dans la première cellule, dans la deuxième, et ainsi de suite ? C’est la version physique du jeu \emph{des vingt questions}, sauf que le nombre de questions peut être immense.
+
+Cette construction explique pourquoi les ordinateurs numériques peuvent simuler la physique. Un ordinateur stocke des chaînes finies, et une résolution finie transforme les grandeurs et les champs mesurés en chaînes de ce type. On peut améliorer systématiquement l’approximation en affinant le réseau, le pas de temps ou le nombre de chiffres conservés.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:43}
+\audiencequestion{La précision de la représentation de la température est-elle arbitraire ?}
+\lecturerresponse{Elle est choisie en fonction de l’approximation recherchée. Une chaîne finie donne une précision finie ; conserver davantage de chiffres binaires permet une approximation plus fine. Rien ici ne prétend qu’une chaîne finie spécifie exactement un nombre réel classique quelconque.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:30:11}
+\audiencequestion{Qu’en est-il d’un nombre réel quelconque, en particulier d’un nombre irrationnel ?}
+\lecturerresponse{Un nombre réel exact peut nécessiter une infinité de bits. Certains développements binaires rationnels sont périodiques, tandis qu’un développement irrationnel générique ne s’achève jamais. Un ordinateur réel ne conserve toujours qu’un nombre fini de chiffres. L’idée est que toute précision finie spécifiée peut être encodée, et non que chaque nombre réel classique possède une description exacte finie.}
+\end{classroomqa}
+
+\section{Un état et une loi du mouvement}
+
+Jusqu’ici, nous avons décrit un système à un instant donné. Pour parler de mouvement, il faut un deuxième élément.
+
+\begin{definition}Une \emph{configuration} est l’état complet d’un système à un instant donné. Une loi du mouvement en temps discret est une règle qui associe à chaque configuration celle de l’instant suivant.\end{definition}
+
+La distinction est élémentaire, mais essentielle. Un instantané de la distribution d’un électron est une configuration ; ce n’est pas encore une orbite. Si l’espace est remplacé par un réseau et le temps par une suite \(t_0,t_1,t_2,\ldots\), le mouvement est alors la succession
+\begin{equation}
+  \ket{s(t_0)}
+  \longmapsto
+  \ket{s(t_1)}
+  \longmapsto
+  \ket{s(t_2)}
+  \longmapsto\cdots.
+  \label{eq:l01-discrete-motion}
+\end{equation}
+Un modèle physique nécessite donc à la fois un ensemble d’états possibles et une règle d’évolution.
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:12}
+\audiencequestion{Comment cette description par cellules rend-elle compte du mouvement d’un électron sur une orbite ?}
+\lecturerresponse{Commençons par spécifier uniquement la configuration à un instant donné : quelles cellules sont occupées, en maintenant le noyau fixe si cela fait partie du modèle. Discrétisons ensuite le temps. Le mouvement orbital est la règle qui fait évoluer une chaîne d’occupation vers la suivante. La règle peut être complexe en raison de l’ordre des cellules, mais elle reste une évolution de l’information.}
+\end{classroomqa}
+
+Pour se représenter les choses, traçons un \emph{espace des états} abstrait. Chaque point de cet espace représente une configuration entière, et non une position dans l’espace ordinaire. Un réseau d’occupation \(10\times10\) contient cent bits et donc \(2^{100}\) configurations possibles.\editorialnote{Dans l’exemple, le cours oral mentionne brièvement \(10^{100}\) ; le nombre de bits fixe la valeur attendue à \(2^{100}\).} Chacune de ces configurations correspond à un seul point de l’espace des états.
+
+Pour un bit, il n’y a que deux points. La loi identité les laisse tous deux inchangés :
+\begin{equation}
+  0\mapsto0,
+  \qquad
+  1\mapsto1.
+  \label{eq:l01-identity-update}
+\end{equation}
+L’autre possibilité réversible les échange :
+\begin{equation}
+  0\mapsto1,
+  \qquad
+  1\mapsto0.
+  \label{eq:l01-flip-update}
+\end{equation}
+C’est un basculeur. Un exemple physique qui évolue librement est moins immédiat qu’un interrupteur actionné à la main, car toute intervention élargirait le système. Le jour et la nuit forment un cycle approximatif à deux états ; un pendule alterne lui aussi entre des positions extrêmes, bien que son état complet comprenne toutes les positions et vitesses intermédiaires.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:38}
+\audiencequestion{Un interrupteur ordinaire serait-il un exemple de la loi du basculeur ?}
+\lecturerresponse{Pas si une personne le fait basculer : l’interrupteur n’évolue alors pas de lui-même, et la personne fait partie du système dynamique élargi. Nous cherchons un système fermé dont la propre loi fait alterner les états. Le jour et la nuit suggèrent l’idée, tandis que le pendule nous rappelle qu’un exemple réel comporte généralement plus de deux états.}
+\end{classroomqa}
+
+Un système à deux bits possède quatre configurations. Une loi d’évolution peut faire passer les quatre états par un cycle unique. Une autre peut être constituée de deux cycles distincts de deux états. Ce sont des cycles dans l’espace logique des configurations, pas nécessairement dans l’espace physique. Les flèches spécifient la loi : quel que soit l’état initial du système, leur suivi indique son évolution ultérieure.
+
+\section{Réversibilité et préservation des distinctions}
+
+Tous les diagrammes de flèches n’ont pas le même statut physique. Considérons une règle selon laquelle deux états différents aboutissent au même état suivant :
+\begin{equation}
+  a\mapsto c,
+  \qquad
+  b\mapsto c.
+  \label{eq:l01-merging-update}
+\end{equation}
+L’état suivant est défini que l’on parte de \(a\) ou de \(b\), mais après être arrivé à \(c\), il est impossible de déterminer lequel de ces états était l’état passé. La distinction entre \(a\) et \(b\) a disparu.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_01_figure_02.png}
+\caption{Plusieurs diagrammes d’évolution restent au tableau pendant la discussion sur la réversibilité. Des cycles fermés coexistent avec un schéma de fusion, et le terme quantique \emph{unitaire} est inscrit à côté.}
+\lectureframe{00:53:21}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Latex,thick,node distance=1.15cm]
+  \node[circle,fill,inner sep=1.8pt,label=above:\(1\)] (r1) {};
+  \node[circle,fill,inner sep=1.8pt,right=of r1,label=above:\(2\)] (r2) {};
+  \node[circle,fill,inner sep=1.8pt,below=of r2,label=below:\(3\)] (r3) {};
+  \node[circle,fill,inner sep=1.8pt,left=of r3,label=below:\(4\)] (r4) {};
+  \draw[->] (r1) -- (r2);
+  \draw[->] (r2) -- (r3);
+  \draw[->] (r3) -- (r4);
+  \draw[->] (r4) -- (r1);
+  \node[below=0.5cm of r4,anchor=north west] {\small reversible cycle};
+
+  \node[circle,fill,inner sep=1.8pt,right=4.2cm of r1,label=above:\(a\)] (a) {};
+  \node[circle,fill,inner sep=1.8pt,below=1.25cm of a,label=below:\(b\)] (b) {};
+  \node[circle,fill,inner sep=1.8pt,right=1.6cm of a,yshift=-0.625cm,label=above:\(c\)] (c) {};
+  \node[circle,fill,inner sep=1.8pt,right=of c,label=above:\(d\)] (d) {};
+  \draw[->] (a) -- (c);
+  \draw[->] (b) -- (c);
+  \draw[->] (c) -- (d);
+  \node[below=0.55cm of b,anchor=north west] {\small information-losing merge};
+\end{tikzpicture}
+\caption{Une loi réversible associe à chaque état un prédécesseur et un successeur uniques. Une loi qui fusionne des états a un avenir unique, mais un passé ambigu.}
+\end{figure}
+
+La dynamique classique fondamentale ne permet pas cette perte lorsque tous les degrés de liberté sont pris en compte. La propriété requise comporte deux volets :
+\begin{equation}
+  \boxed{\begin{gathered}
+    \text{one unique future and one unique past}\\
+    \text{for every state}
+  \end{gathered}.}
+  \label{eq:l01-reversibility}
+\end{equation}
+Dans un espace d’états fini, l’évolution doit donc être une permutation. Chaque état possède exactement une flèche sortante et une flèche entrante, de sorte que le diagramme se décompose en cycles disjoints.
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:32}
+\audiencequestion{Qu’est-ce qui distingue le diagramme où les états fusionnent ?}
+\lecturerresponse{Il n’est pas entièrement constitué de boucles. Plus fondamentalement, trouver le système dans l’état issu de la fusion ne nous indique pas quel était son prédécesseur. Nous pouvons construire l’avenir, mais pas reconstituer le passé. Une distinction historique, autrement dit un bit d’information, a été perdue.}
+\end{classroomqa}
+
+Il s’agit de la \emph{réversibilité temporelle}, qui n’implique pas nécessairement une symétrie exacte par renversement du temps. Un cycle orienté dans le sens horaire possède un sens d’évolution défini. La loi initiale ne fait pas parcourir le cycle dans le sens antihoraire, mais il existe une loi inverse qui le fait. La symétrie exacte par renversement du temps pose une question supplémentaire : après application de l’opération de renversement appropriée, retrouve-t-on les mêmes lois dynamiques ? La réversibilité demande seulement si l’histoire peut être parcourue en sens inverse de manière univoque.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:58}
+\audiencequestion{L’unicité du passé est-elle simplement la symétrie par renversement du temps ?}
+\lecturerresponse{Pas exactement. Les flèches d’un cycle peuvent ne pointer que dans un seul sens, ce qui donne une orientation à la loi. La réversibilité signifie qu’on peut construire une loi inverse bien définie en renversant chaque flèche. Cela ne signifie pas, à soi seul, que la loi inverse est identique à la loi initiale.}
+\end{classroomqa}
+
+Il ne faut pas non plus réparer un diagramme irréversible en plaçant deux flèches sortantes à l’état de fusion. Cela rendrait le mouvement en sens inverse ambigu d’une autre manière : le système aurait besoin d’une instruction probabiliste, choisissant par exemple une branche avec une probabilité de \(30\%\) et l’autre avec une probabilité de \(70\%\). Nous construisons toujours une dynamique classique déterministe, dans laquelle un état présent détermine un avenir unique et un passé unique.
+
+Tout système réel est, en dernière analyse, quantique. Pourquoi les grands objets paraissent classiques et pourquoi leurs alternatives quantiques sont difficiles à observer sont des questions qui viendront plus tard. Le principe quantique correspondant préservera le même noyau logique. Avec un brin d’humour, on pourrait appeler l’unicité du passé et de l’avenir « \emph{uniquité} ». Son véritable nom est \emph{unitarité} : l’évolution quantique peut être parcourue de manière univoque vers l’avant comme vers l’arrière.
+
+\section{Perte apparente d’information et coarse-graining}
+
+L’expérience macroscopique semble contredire la réversibilité. Rassemblons toutes les molécules d’un gaz dans le coin gauche d’une pièce fermée, puis libérons-les. Bientôt, le gaz occupe toute la pièce. Si nous partons plutôt du coin droit, l’état macroscopique final semble identique. Les deux états initiaux distincts ont-ils fusionné ?
+
+Seulement après avoir éliminé des détails. Un état microscopique spécifie chaque molécule. Si l’on pouvait suivre avec suffisamment de précision toutes les positions et toutes les vitesses, inverser ces mouvements permettrait de distinguer les deux préparations. En pratique, le calcul est prohibitif et la précision nécessaire augmente rapidement, mais l’impossibilité pratique n’est pas un effacement fondamental. L’énoncé macroscopique « \emph{l’air remplit la pièce} » regroupe un nombre immense de configurations microscopiques distinctes dans un seul état obtenu par coarse-graining.
+
+C’est là qu’intervient le deuxième principe de la thermodynamique. Nous perdons la capacité de distinguer les états détaillés parce que nous ne suivons pas toutes les variables microscopiques. L’information semble disparaître parce que notre description est grossière, et non parce que la loi déterministe à granularité fine fusionne des points distincts.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:11}
+\audiencequestion{Le suivi de toutes les molécules d’une pièce classique nécessiterait-il une infinité de bits ?}
+\lecturerresponse{Pour une description classique exacte, oui. Les positions et les vitesses sont des nombres réels, et suivre un système chaotique à plusieurs particules pendant de longues durées exige une précision toujours plus grande. La mécanique quantique change cette conclusion : pour une région fermée d’énergie bornée, la description physiquement discernable peut être discrète plutôt que prendre la forme d’une liste arbitraire de nombres réels classiques exacts.}
+\end{classroomqa}
+
+La question n’est pas seulement théorique. La possibilité qu’un trou noir détruise l’information a fait débat pendant des décennies ; Stephen Hawking soutenait initialement que c’était possible. Cette controverse demande si la fusion apparente relève, là encore, d’une description obtenue par coarse-graining ou si elle constitue une véritable violation de l’unitarité quantique. Nous ne la trancherons pas avant que la mécanique quantique nous ait fourni le langage précis nécessaire, mais elle montre tout ce qui dépend de ces simples diagrammes de flèches.
+
+\section{Lignes, colonnes et produits scalaires}
+
+Avant de remplacer les bits classiques par des bits quantiques, nous avons besoin de quelques notions d’algèbre linéaire. Pour l’instant, nous pouvons simplement considérer un vecteur comme une liste ordonnée finie de nombres réels. Un vecteur à quatre composantes peut s’écrire horizontalement,
+\begin{equation}
+  A^{\mathsf T}=(A_1,A_2,A_3,A_4),
+  \label{eq:l01-row-vector}
+\end{equation}
+ou verticalement,
+\begin{equation}
+  A=
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}.
+  \label{eq:l01-column-vector}
+\end{equation}
+L’expression \emph{à quatre dimensions} signifie simplement qu’il possède quatre composantes. Il n’est pas nécessaire de se représenter une flèche dans l’espace ordinaire. L’objet horizontal est un vecteur ligne et l’objet vertical, un vecteur colonne.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\linewidth]{lecture_01_figure_03.png}
+\caption{Les mêmes composantes sont écrites sous forme de ligne et de colonne. À ce stade, ce sont des nombres réels ; aucune conjugaison complexe n’intervient.}
+\lectureframe{01:03:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:14}
+\audiencequestion{Le vecteur ligne n’est-il pas le vecteur colonne dagué ?}
+\lecturerresponse{Ce sera la bonne façon de le décrire une fois les composantes complexes. Il faudra alors accompagner la transposition de la conjugaison complexe. Pour le moment, les entrées sont réelles ; il suffit donc de distinguer la disposition en ligne de celle en colonne.}
+\end{classroomqa}
+
+Soit
+\begin{equation}
+  B=(B_1,B_2,B_3,B_4)
+\end{equation}
+une ligne ayant autant d’entrées que la colonne \(A\). Leur produit est défini en faisant correspondre les positions puis en additionnant :
+\begin{align}
+  BA
+  &=
+  (B_1,B_2,B_3,B_4)
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}\\
+  &=B_1A_1+B_2A_2+B_3A_3+B_4A_4.
+  \label{eq:l01-inner-product}
+\end{align}
+Le résultat est un nombre, et non un autre vecteur ou une matrice. Dans un espace vectoriel abstrait, cette opération s’appelle un produit scalaire.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:44}
+\audiencequestion{Est-ce le produit scalaire usuel ?}
+\lecturerresponse{Oui. Pour des vecteurs ordinaires dans un espace à trois dimensions, c’est le produit scalaire familier. Le terme \emph{produit scalaire} souligne que la même opération ligne-colonne s’applique aux espaces vectoriels de toute dimension finie.}
+\end{classroomqa}
+
+\section{Les matrices comme machines à faire évoluer les états}
+
+Une matrice est un tableau carré de nombres qui agit sur un vecteur pour produire un autre vecteur. On peut la voir comme une machine : on lui fournit l’ancienne colonne, on lui applique une règle fixe et l’on obtient une nouvelle colonne. En quatre dimensions,
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}&M_{13}&M_{14}\\
+    M_{21}&M_{22}&M_{23}&M_{24}\\
+    M_{31}&M_{32}&M_{33}&M_{34}\\
+    M_{41}&M_{42}&M_{43}&M_{44}
+  \end{pmatrix}.
+  \label{eq:l01-general-matrix}
+\end{equation}
+Le premier indice désigne la ligne et le second la colonne. On peut considérer \(M\) comme un ensemble de colonnes ou comme un ensemble de lignes ; ces deux points de vue seront utiles.
+
+Pour calculer \(A'=MA\), effectuons le produit scalaire de chaque ligne de \(M\) avec la colonne d’entrée :
+\begin{equation}
+  A'_i=(MA)_i=\sum_{j=1}^{4}M_{ij}A_j.
+  \label{eq:l01-matrix-vector}
+\end{equation}
+Par exemple,
+\begin{align}
+  A'_1&=M_{11}A_1+M_{12}A_2+M_{13}A_3+M_{14}A_4,\\
+  A'_2&=M_{21}A_1+M_{22}A_2+M_{23}A_3+M_{24}A_4.
+\end{align}
+Les troisième et quatrième composantes s’obtiennent de la même manière.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_01_figure_04.png}
+\caption{Une matrice agit sur un vecteur colonne, ligne par ligne. Les deux premières composantes du vecteur obtenu sont développées explicitement au tableau.}
+\lectureframe{01:12:45}
+\end{figure}
+
+\subsection{Encoder une configuration classique}
+
+Supposons qu’un système ait quatre états possibles. Représentons-les par les colonnes unitaires
+\begin{equation}
+  e_1=
+  \begin{pmatrix}1\\0\\0\\0\end{pmatrix},
+  \quad
+  e_2=
+  \begin{pmatrix}0\\1\\0\\0\end{pmatrix},
+  \quad
+  e_3=
+  \begin{pmatrix}0\\0\\1\\0\end{pmatrix},
+  \quad
+  e_4=
+  \begin{pmatrix}0\\0\\0\\1\end{pmatrix}.
+  \label{eq:l01-one-hot}
+\end{equation}
+La position de l’unique \(1\) indique quelle configuration classique est présente.
+
+Considérons l’évolution cyclique
+\begin{equation}
+  1\longrightarrow2\longrightarrow3\longrightarrow4\longrightarrow1.
+  \label{eq:l01-four-cycle}
+\end{equation}
+Elle est représentée par
+\begin{equation}
+  P=
+  \begin{pmatrix}
+    0&0&0&1\\
+    1&0&0&0\\
+    0&1&0&0\\
+    0&0&1&0
+  \end{pmatrix}.
+  \label{eq:l01-permutation-matrix}
+\end{equation}
+En effet,
+\begin{equation}
+  \begin{aligned}
+    Pe_1&=e_2, & Pe_2&=e_3,\\
+    Pe_3&=e_4, & Pe_4&=e_1.
+  \end{aligned}
+\end{equation}
+La construction au tableau est corrigée au fur et à mesure de son écriture, d’abord pour cinq états, puis pour quatre. L’équation~\eqref{eq:l01-permutation-matrix} consigne la règle cyclique définitive, et non le tableau intermédiaire abandonné.
+
+La même matrice agit sur une colonne quelconque :
+\begin{equation}
+  P
+  \begin{pmatrix}A\\B\\C\\D\end{pmatrix}
+  =
+  \begin{pmatrix}D\\A\\B\\C\end{pmatrix}.
+  \label{eq:l01-cyclic-shift}
+\end{equation}
+Pour un état classique, une seule composante vaut \(1\), mais autoriser des entrées générales fait apparaître l’opération linéaire sous-jacente. Les évolutions classiques déterministes utilisent des matrices spéciales, constituées uniquement de zéros et de uns, avec un \(1\) dans chaque ligne et chaque colonne. La mécanique quantique conservera l’évolution matricielle tout en élargissant considérablement l’ensemble des entrées autorisées.
+
+\subsection{La composition correspond au produit matriciel}
+
+Si une étape de temps est décrite par
+\begin{equation}
+  V'=MV,
+\end{equation}
+alors une deuxième application donne
+\begin{equation}
+  V''=MV'=M(MV)=M^2V.
+  \label{eq:l01-two-updates}
+\end{equation}
+La multiplication des matrices n’est donc pas un exercice algébrique arbitraire : elle compose des évolutions physiques. Cinq étapes de temps sont représentées par \(M^5\).
+
+Pour deux matrices \(2\times2\)
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}\\
+    M_{21}&M_{22}
+  \end{pmatrix},
+  \qquad
+  N=
+  \begin{pmatrix}
+    N_{11}&N_{12}\\
+    N_{21}&N_{22}
+  \end{pmatrix},
+\end{equation}
+le produit \(C=MN\) a pour entrées
+\begin{equation}
+  C_{ij}=\sum_k M_{ik}N_{kj}.
+  \label{eq:l01-matrix-product}
+\end{equation}
+En particulier,
+\begin{align}
+  C_{11}&=M_{11}N_{11}+M_{12}N_{21},\\
+  C_{12}&=M_{11}N_{12}+M_{12}N_{22},\\
+  C_{21}&=M_{21}N_{11}+M_{22}N_{21},\\
+  C_{22}&=M_{21}N_{12}+M_{22}N_{22}.
+\end{align}
+Chaque entrée est le produit d’une ligne de la matrice de gauche par une colonne de celle de droite. De façon équivalente, appliquons \(M\) à chaque colonne de \(N\) et plaçons les colonnes obtenues côte à côte.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\linewidth]{lecture_01_figure_05.png}
+\caption{La multiplication matricielle organisée comme une succession de multiplications d’une matrice par des colonnes--. La première ligne et les colonnes de la seconde matrice sont mises en évidence pour montrer l’origine de chaque entrée du produit.}
+\lectureframe{01:26:30}
+\end{figure}
+
+Un vecteur ligne peut également agir par la gauche. Si \(B=(B_1,\ldots,B_4)\), alors \(BM\) est un autre vecteur ligne dont les composantes sont
+\begin{equation}
+  (BM)_j=\sum_i B_iM_{ij}.
+  \label{eq:l01-row-times-matrix}
+\end{equation}
+La règle reste celle du produit ligne-colonne. Les dimensions indiquent la forme du résultat :
+\begin{equation}
+\begin{array}{c@{\qquad}c}
+\text{row}\times\text{column}&=\text{number},\\
+\text{matrix}\times\text{column}&=\text{column},\\
+\text{row}\times\text{matrix}&=\text{row},\\
+\text{matrix}\times\text{matrix}&=\text{matrix}.
+\end{array}
+\label{eq:l01-shape-rules}
+\end{equation}
+
+Il est utile de s’exercer à ces opérations à l’aide de petits exemples numériques en \(2\times2\) et en \(3\times3\). Avec un peu de calcul différentiel, la multiplication ligne--colonne constitue la principale nouvelle habitude mathématique nécessaire pour aborder la mécanique quantique.
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:50}
+\audiencequestion{Quelle contrainte la réversibilité impose-t-elle à la matrice d’évolution ?}
+\lecturerresponse{Elle doit être inversible. La matrice inverse réalise l’évolution en sens inverse et ramène chaque état à son prédécesseur unique. Toute matrice n’est pas inversible ; l’algèbre retrouve donc la distinction établie plus tôt à l’aide des diagrammes de flèches. Dans l’exemple cyclique, \(P^{-1}=P^3\) et \(P^4=\mathbb{1}\).}
+\end{classroomqa}
+
+\section{Pourquoi préparer l’algèbre avant d’introduire le qubit ?}
+
+La première heure a présenté qualitativement la physique classique déterministe en termes de bits et de flèches réversibles. Les mathématiques qui suivent traduisent cette description sous une forme qui pourra être conservée lors du passage à la mécanique quantique. Une configuration devient une colonne ; une loi à un pas devient une matrice ; l’évolution au fil du temps devient un produit de matrices ; et la réversibilité devient l’existence d’une inverse.
+
+Nous n’avons pas encore utilisé de règle quantique. Ce délai est délibéré. À l’étape suivante, nous remplacerons les alternatives classiques \(\ket{0}\) et \(\ket{1}\) par un qubit et demanderons quels nouveaux états sont possibles. Les vecteurs lignes et colonnes, les produits scalaires et les matrices introduits ici montreront alors pourquoi l’information quantique diffère si profondément d’une chaîne classique de bits.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:00}
+\audiencequestion{Pourquoi introduire toute cette algèbre matricielle avant d’expliquer à quoi elle sert ?}
+\lecturerresponse{La question qualitative est venue d’abord : comment représenter la physique déterministe par des états et des lois d’évolution ? L’algèbre prépare l’étape suivante. Une fois les qubits introduits, ces manipulations ne sembleront plus détachées du sujet ; elles seront le langage naturel des états quantiques et de leur évolution.}
+\end{classroomqa}

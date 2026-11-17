@@ -1,0 +1,426 @@
+\chapter{Qubits, vecteurs d’état complexes et observables}
+
+\lectureoverview{Le spin d’un électron isolé constitue le premier véritable bit quantique. On peut le préparer selon n’importe quelle direction de l’espace, mais un détecteur donné ne renvoie que deux résultats. Nous laissons échouer le modèle magnétique classique, puis construisons l’espace vectoriel complexe, la règle de probabilité et le formalisme matriciel nécessaires pour décrire ce que fait réellement l’expérience.}
+
+\section{Un spin et deux sens du mot vecteur}
+
+Un bit classique possède deux états possibles, sans état intermédiaire. On peut les noter \(0\) et \(1\), pile et face, ou haut et bas ; ces noms désignent deux points distincts de l’espace des états classique. Un bit quantique donne lui aussi deux résultats possibles lorsqu’on le mesure d’une façon donnée, mais on ne peut pas le décrire par seulement deux points de l’espace des états. L’exemple le plus simple est le spin de l’électron.
+
+Dans cet exemple, le mot vecteur désigne deux objets différents ; les confondre rend inutilement mystérieux tout ce qui suit. Le premier est un \emph{vecteur spatial} ordinaire : une flèche dans l’espace à trois dimensions, caractérisée par une norme et une direction. L’électron possède un moment magnétique qui, pour l’instant, se comporte comme un minuscule aimant. Sa norme est fixe, mais une procédure de préparation permet de lui attribuer une direction dans l’espace.
+
+Le second objet est un vecteur abstrait d’un espace vectoriel complexe. Ce \emph{vecteur d’état} décrit l’état quantique. Ce n’est pas simplement la flèche magnétique écrite dans une autre notation. Le lien entre directions spatiales et vecteurs d’état est réel et important, mais ces deux objets ne sont pas identiques. Nous établirons progressivement ce lien.
+
+\section{Laissons échouer le modèle classique}
+
+Commençons délibérément par un récit classique. Plaçons un minuscule aimant dans un champ magnétique extérieur intense. S’il n’est pas déjà aligné, il précesse autour du champ. En rayonnant de l’énergie, sa précession s’amortit et l’aimant se stabilise dans son orientation de plus basse énergie. En choisissant la direction du champ appliqué, en attendant cette relaxation, puis en supprimant le champ, il semble possible de préparer le moment magnétique selon n’importe quelle direction voulue.
+
+Le même dispositif suggère une méthode de détection. Appliquons un champ dans une direction choisie et observons le rayonnement produit pendant que le petit aimant se stabilise. Un aimant classique aligné sur le champ ne devrait émettre aucune énergie. Un aimant initialement orienté en sens opposé devrait en émettre le maximum, et un angle intermédiaire devrait donner une émission intermédiaire. Dans ce modèle, l’énergie rayonnée varie continûment avec l’angle.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[>=Latex,thick,scale=0.92]
+  \draw[rounded corners] (-0.2,-0.2) rectangle (3.0,3.4);
+  \node at (1.4,3.05) {\small preparation};
+  \draw[->,very thick] (1.4,0.45) -- (1.4,2.55);
+  \node[right] at (1.4,2.35) {\small applied field};
+  \fill (1.4,1.35) circle (2.3pt);
+  \draw[->,very thick] (1.4,1.35) -- (2.25,1.95);
+  \node[below] at (1.4,0.15) {\small choose a direction and wait};
+
+  \draw[->] (3.25,1.6) -- (4.25,1.6);
+
+  \draw[rounded corners] (4.5,-0.2) rectangle (8.8,3.4);
+  \node at (6.65,3.05) {\small measurement in a fixed direction};
+  \draw[->,very thick] (5.15,0.45) -- (5.15,2.55);
+  \fill (5.15,1.35) circle (2.3pt);
+  \node[anchor=west] at (5.7,2.0) {no photon};
+  \node[anchor=west] at (5.7,1.25) {one photon of fixed energy};
+\node[anchor=west] at (5.7,0.5) {no intermediate outcome};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Le problème opérationnel : une préparation continûment variable est suivie d’un détecteur qui ne peut donner que deux résultats.}
+\end{figure}
+
+Cette prédiction classique est fausse pour un électron. Lorsqu’on active le champ du détecteur, seuls deux résultats sont possibles :
+\begin{enumerate}
+  \item aucun photon n’est émis ;
+  \item un photon est émis, avec l’énergie fixe correspondant à l’écart entre les niveaux bas et haut.
+\end{enumerate}
+Il n’y a jamais de photon qui emporte une fraction arbitraire de cette énergie. La réponse classique continue s’est réduite à une réponse quantique binaire.
+
+La direction choisie pour la préparation n’est pas devenue sans importance. Elle détermine les \emph{probabilités} des deux résultats. Si l’on prépare l’électron dans l’état haut par rapport au détecteur, le résultat haut est obtenu avec certitude. Si on le prépare dans l’état bas, la transition se produit avec certitude. Si on le prépare horizontalement, un détecteur vertical donne les deux résultats avec la même fréquence :
+\begin{equation}
+  P(\text{up})=\frac12,
+  \qquad
+  P(\text{down})=\frac12.
+  \label{eq:l02-horizontal-probabilities}
+\end{equation}
+Ainsi, une famille continûment variable de préparations conduit à une mesure à deux résultats dont les statistiques varient continûment.
+
+\begin{classroomqa}
+\lecturetimestamp{00:21:23}
+\audiencequestion{Un autre petit objet, peut-être un deuxième électron, pourrait-il fournir le champ magnétique à la place d’un aimant macroscopique ?}
+\lecturerresponse{Ce serait possible, mais les deux électrons formeraient alors un système quantique composé et pourraient s’intriquer. C’est précisément là que nous allons. Nous remettrons cette question à plus tard, quand l’espace des états d’un électron sera maîtrisé.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:22:17}
+\audiencequestion{Faut-il répéter toute la préparation et la mesure pour déterminer la distribution de probabilité ? Que se passe-t-il si l’on mesure une seconde fois le même électron ?}
+\lecturerresponse{Oui, il faut répéter des essais préparés de façon identique pour obtenir la distribution initiale. Après la première mesure, répéter la même mesure sur cet électron donne le même résultat ; la mesure l’a préparé par rapport à ce détecteur. Attendre une transition radiative constitue en soi une procédure de préparation possible.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:23:48}
+\audiencequestion{Parle-t-on d’un électron libre, et le champ magnétique reste-t-il constamment activé ?}
+\lecturerresponse{Nous isolons le degré de liberté de spin et faisons abstraction de la position de l’électron, qu’il soit libre ou soumis à une contrainte. On peut activer rapidement un électroaimant puissant pour la préparation ou la détection. Cette expérience simplifiée ne porte que sur le spin.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:25:22}
+\audiencequestion{Si l’électron est préparé exactement dans l’état bas et qu’on inverse le champ, un photon est-il émis avec certitude, et d’où vient son énergie ?}
+\lecturerresponse{En cas d’opposition exacte, la transition se produit avec une probabilité égale à un. Pour une préparation oblique, cette probabilité est plus faible. L’énergie provient en définitive du travail effectué pour établir ou inverser le champ magnétique extérieur ; le bilan énergétique doit inclure l’appareil.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:27:31}
+\audiencequestion{Quand le photon apparaît-il ? La transition est-elle instantanée ?}
+\lecturerresponse{L’instant de l’émission est aléatoire, comme le temps de désintégration d’un état instable. On peut définir une durée de vie caractéristique ou une demi-vie, et un champ plus intense raccourcit cette échelle de temps. L’incertitude énergie--temps intervient dans une description plus fine, mais les faits opérationnels qui nous intéressent ici sont les deux résultats possibles et leurs fréquences mesurées.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:17}
+\audiencequestion{Un faisceau d’un million d’électrons préparés de façon identique produirait-il simplement une intensité lumineuse mesurable ?}
+\lecturerresponse{Oui. L’intensité de l’ensemble révèle la probabilité moyenne de transition, tandis que l’instant de l’émission pour un électron donné reste aléatoire. Un ensemble fait apparaître la distribution qu’un essai unique ne peut révéler.}
+\end{classroomqa}
+
+Voilà notre point de départ. Deux points classiques isolés peuvent coder les résultats du détecteur, mais pas toutes les préparations qui modifient les probabilités de ces résultats. Il nous faut un autre espace des états.
+
+\section{Nombres complexes et géométrie de l’espace des états}
+
+L’espace des états requis est linéaire : on peut additionner ses éléments et les multiplier par des scalaires. Ses scalaires sont des nombres complexes. Écrivons
+\begin{equation}
+  z=a+ib,
+  \qquad
+  i^2=-1,
+  \qquad
+  z^*=a-ib,
+  \label{eq:l02-complex-number}
+\end{equation}
+où \(a\) et \(b\) sont réels. La conjugaison complexe donne la quantité positive
+\begin{align}
+  z^*z
+  &=(a-ib)(a+ib) \notag\\
+  &=a^2+b^2.
+  \label{eq:l02-complex-norm}
+\end{align}
+Cette simple annulation constitue le germe algébrique de la règle de probabilité.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\linewidth]{lecture_02_figure_02.png}
+\caption{La conjugaison complexe et \(z^*z\) sont présentées au tableau avant que les amplitudes soient interprétées comme des probabilités.}
+\lectureframe{00:37:10}
+\end{figure}
+
+Un espace vectoriel complexe contient des objets \(\ket a,\ket b,\ldots\) tels que
+\begin{equation}
+  c\ket a,
+  \qquad
+  \ket a+\ket b
+\end{equation}
+sont encore des vecteurs dès lors que \(c\) est complexe. Les vecteurs colonnes en donnent une réalisation concrète :
+\begin{equation}
+  \begin{aligned}
+    \ket a&=
+    \begin{pmatrix}
+      a_1\\a_2\\ \vdots\\a_n
+    \end{pmatrix},
+    &
+    c\ket a&=
+    \begin{pmatrix}
+      ca_1\\ca_2\\ \vdots\\ca_n
+    \end{pmatrix},\\[0.7em]
+    \ket a+\ket b&=
+    \begin{pmatrix}
+      a_1+b_1\\a_2+b_2\\ \vdots\\a_n+b_n
+    \end{pmatrix}.
+  \end{aligned}
+  \label{eq:l02-vector-operations}
+\end{equation}
+Les nombres complexes eux-mêmes forment un espace vectoriel complexe de dimension un. Pour le spin de l’électron, il nous en faudra deux.
+
+À chaque ket colonne, nous associons un bra ligne conjugué :
+\begin{equation}
+  \ket a=
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  \quad\longleftrightarrow\quad
+  \bra a=
+  \begin{pmatrix}a_1^*&a_2^*\end{pmatrix}.
+  \label{eq:l02-bra-ket-components}
+\end{equation}
+Le produit scalaire est alors
+\begin{equation}
+  \braket{b}{a}=b_1^*a_1+b_2^*a_2,
+  \label{eq:l02-inner-product}
+\end{equation}
+et la norme au carré vaut
+\begin{equation}
+  \braket{a}{a}=|a_1|^2+|a_2|^2.
+  \label{eq:l02-norm}
+\end{equation}
+Elle est réelle et positive ou nulle, car chaque terme est de la forme \(z^*z\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:24}
+\audiencequestion{Pourquoi le symbole du bra ne comporte-t-il pas d’étoile explicite ?}
+\lecturerresponse{La transformation d’un ket en son bra implique déjà la transposition et la conjugaison complexe. L’inversion des crochets note cette opération ; ajouter une étoile répéterait donc ce qui est implicite.}
+\end{classroomqa}
+
+\section{La base du qubit et la règle de Born}
+
+Revenons maintenant au détecteur. Notons \(\ket{+}\) son état haut et \(\ket{-}\) son état bas. Un état de spin général est une combinaison linéaire
+\begin{equation}
+  \ket\psi=a_+\ket{+}+a_-\ket{-}
+  \quad\longleftrightarrow\quad
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-general-qubit}
+\end{equation}
+Les signes plus et moins à l’intérieur des kets sont des étiquettes, et non des opérations arithmétiques. Une fois cette base ordonnée choisie,
+\begin{equation}
+  \ket{+}=
+  \begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{-}=
+  \begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l02-basis-columns}
+\end{equation}
+En effet,
+\begin{equation}
+  a_+\begin{pmatrix}1\\0\end{pmatrix}
+  +a_-\begin{pmatrix}0\\1\end{pmatrix}
+  =
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-basis-expansion}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_02_figure_03.png}
+\caption{Les états du détecteur sont définis comme les deux vecteurs colonnes de la base canonique.}
+\lectureframe{00:58:10}
+\end{figure}
+
+Les coefficients sont des amplitudes de probabilité. La probabilité de chaque résultat du détecteur est le carré du module de l’amplitude correspondante :
+\begin{equation}
+  P(+)=|a_+|^2,
+  \qquad
+  P(-)=|a_-|^2.
+  \label{eq:l02-born-rule}
+\end{equation}
+Puisque ce sont les seuls résultats possibles,
+\begin{equation}
+  \begin{gathered}
+    |a_+|^2+|a_-|^2=1,\\
+    \text{or equivalently}\qquad \braket{\psi}{\psi}=1.
+  \end{gathered}
+  \label{eq:l02-normalization}
+\end{equation}
+Le vecteur d’état physique est donc normalisé.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:54}
+\audiencequestion{Les signes plus et moins ont-ils un sens algébrique dans les composantes ?}
+\lecturerresponse{Ici, ils désignent les deux états de base et leurs coefficients. On pourrait les noter \(1\) et \(2\), ou bien haut et bas. En particulier, \(-\ket{+}\) est un multiple scalaire admissible de \(\ket{+}\) ; ce n’est pas l’état \(\ket{-}\).}
+\end{classroomqa}
+
+Multiplier un état par un nombre complexe de module un ne change aucune de ses probabilités :
+\begin{equation}
+  \ket\psi\longmapsto e^{i\phi}\ket\psi,
+  \qquad
+  |e^{i\phi}a_\pm|^2=|a_\pm|^2.
+  \label{eq:l02-global-phase}
+\end{equation}
+Deux vecteurs qui ne diffèrent que par une phase globale représentent donc le même état physique. Une phase \emph{relative} est différente. Par exemple, remplacer uniquement \(a_-\) par \(-a_-\) ne peut généralement pas être compensé par la multiplication du vecteur entier par une phase unique ; cela peut modifier les résultats d’une mesure dans une autre base.
+
+\begin{classroomqa}
+\lecturetimestamp{00:59:54}
+\audiencequestion{\(\ket{+}\), \(-\ket{+}\) et \(e^{i\phi}\ket{+}\) sont-ils des états différents ? Qu’en est-il si l’on change le signe d’un terme d’une superposition ?}
+\lecturerresponse{Ce sont des vecteurs mathématiques différents, mais lorsque le facteur multiplie le vecteur entier et que son module vaut un, ils décrivent le même état physique. Un signe ou une phase relative entre les termes haut et bas est observable dans certaines mesures et modifie donc l’état.}
+\end{classroomqa}
+
+La base est orthonormale :
+\begin{align}
+  \braket{+}{+}&=1,
+  &\braket{-}{-}&=1,
+  \notag\\
+  \braket{+}{-}&=0,
+  &\braket{-}{+}&=0.
+  \label{eq:l02-orthonormality}
+\end{align}
+Par exemple,
+\begin{equation}
+  \braket{+}{-}
+  =
+  \begin{pmatrix}1&0\end{pmatrix}
+  \begin{pmatrix}0\\1\end{pmatrix}
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_02_figure_04.png}
+\caption{Les quatre produits scalaires de la base haut/bas sont calculés directement au tableau.}
+\lectureframe{01:05:00}
+\end{figure}
+
+Un état à poids égaux fournit la première correction utile au tableau. Le vecteur colonne
+\begin{equation}
+  \begin{pmatrix}1\\1\end{pmatrix}
+\end{equation}
+a pour norme au carré \(2\), et non \(1\) ; il n’est donc pas normalisé. Le diviser par \(\sqrt2\) le normalise :
+\begin{equation}
+  \ket{\rightarrow}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =
+  \frac{\ket{+}+\ket{-}}{\sqrt2}.
+  \label{eq:l02-horizontal-state}
+\end{equation}
+Il donne \(P(+)=P(-)=1/2\) avec le détecteur vertical et correspond à une préparation horizontale. La correction de \((1,1)^T\) à \(2^{-1/2}(1,1)^T\) n’est pas une simple question de forme : la normalisation permet aux carrés des amplitudes de constituer une distribution de probabilité complète.
+
+Après la pause, il est utile de revenir aux deux sens du mot vecteur. Une flèche spatiale a trois composantes réelles. Le vecteur d’état d’un qubit a deux composantes complexes, soit quatre nombres réels avant d’imposer la normalisation et d’identifier les phases globales. Ces objets sont liés, mais l’un n’est pas simplement l’autre réétiqueté. Nous n’avons pas encore besoin de connaître le lien géométrique complet entre eux.
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:56}
+\audiencequestion{Comment déterminer la dimension de l’espace des états d’un autre système quantique ?}
+\lecturerresponse{L’expérience nous indique combien de résultats mutuellement exclusifs une mesure complète peut distinguer. Le spin de l’électron a deux résultats de ce type et exige donc un espace des états complexe de dimension deux. Un système de spin un a trois résultats dans la mesure correspondante et requiert trois composantes.}
+\end{classroomqa}
+
+\section{Observables classiques et moyennes d’ensemble}
+
+Après avoir décrit les états, passons aux grandeurs mesurables. Dans un système classique à états discrets \(n\), une observable est une fonction à valeurs réelles \(f_n\) définie sur ces états. Si l’état est incertain et décrit par des probabilités \(p_n\), sa moyenne d’ensemble est
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =\sum_n p_n f_n.
+  \label{eq:l02-classical-expectation}
+\end{equation}
+Cette notation ne signifie pas qu’une mesure unique doit nécessairement donner cette valeur.
+
+Pour une pièce, attribuons \(f_+=+1\) et \(f_-=-1\). Alors,
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =p_+-p_-.
+  \label{eq:l02-coin-expectation}
+\end{equation}
+Une pièce équilibrée a une moyenne nulle. Si \(p_+=3/4\) et \(p_-=1/4\), la moyenne vaut \(1/2\). Ni \(0\) ni \(1/2\) n’est un résultat d’un lancer unique ; chacun résume de nombreux résultats \(+1\) et \(-1\).
+
+\begin{classroomqa}
+\lecturetimestamp{01:23:30}
+\audiencequestion{Comment la valeur moyenne peut-elle être nulle ou égale à un demi si aucune de ces valeurs ne peut apparaître lors d’un essai unique ?}
+\lecturerresponse{L’expression « valeur moyenne » peut induire en erreur. Elle désigne la moyenne sur un grand ensemble, et non la valeur qu’on devrait s’attendre à observer au prochain essai. Une série équilibrée de résultats \(+1\) et \(-1\) a une moyenne nulle, tandis qu’un rapport de trois à un donne une moyenne d’un demi.}
+\end{classroomqa}
+
+Une observable particulièrement utile est la fonction indicatrice d’un état :
+\begin{equation}
+  \chi_k(n)=
+  \begin{cases}
+    1,&n=k,\\
+    0,&n\ne k.
+  \end{cases}
+\end{equation}
+Sa moyenne vaut
+\begin{equation}
+  \langle\chi_k\rangle_{\mathrm{ens}}=p_k.
+\end{equation}
+Ainsi, connaître les moyennes de toutes les observables classiques revient notamment à connaître la distribution de probabilité.
+
+\section{Matrices et observables quantiques}
+
+En mécanique quantique, les observables sont représentées non par des fonctions définies sur les points de l’espace des états, mais par des opérateurs linéaires. Dans un espace des états de dimension finie, ces opérateurs sont des matrices. Une matrice \(M\) transforme un vecteur en un autre :
+\begin{equation}
+  M\ket a=\ket{a'}.
+  \label{eq:l02-matrix-action}
+\end{equation}
+Pour deux composantes,
+\begin{equation}
+  \begin{pmatrix}
+    m_{11}&m_{12}\\
+    m_{21}&m_{22}
+  \end{pmatrix}
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  =
+  \begin{pmatrix}
+    m_{11}a_1+m_{12}a_2\\
+    m_{21}a_1+m_{22}a_2
+  \end{pmatrix}.
+  \label{eq:l02-matrix-components}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_02_figure_05.png}
+\caption{L’action matricielle est développée ligne par ligne en deux composantes du vecteur transformé.}
+\lectureframe{01:32:10}
+\end{figure}
+
+Les vecteurs réels à deux dimensions rendent la géométrie visible. Les matrices
+\begin{equation}
+  \begin{pmatrix}2&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}1&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}2&0\\0&1\end{pmatrix}
+\end{equation}
+écrivent respectivement une dilatation uniforme dans toutes les directions, une dilatation de la seule composante \(y\) et une dilatation de la seule composante \(x\). La matrice
+\begin{equation}
+  \begin{pmatrix}0&1\\1&0\end{pmatrix}
+\end{equation}
+échange les composantes et effectue une réflexion du plan par rapport à \(x=y\). Par ailleurs,
+\begin{equation}
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  \begin{pmatrix}v_x\\v_y\end{pmatrix}
+  =
+  \begin{pmatrix}v_y\\-v_x\end{pmatrix}
+  \label{eq:l02-quarter-turn}
+\end{equation}fait subir aux vecteurs un quart de tour dans le sens horaire, selon la convention utilisée au tableau. Un cisaillement fournit un autre exemple linéaire, mais sa matrice est laissée en exercice. La condition essentielle est la linéarité : toutes les transformations imaginables du plan ne sont pas représentées par une matrice.
+
+Les observables quantiques appartiennent à une classe particulière.
+
+\begin{definition}
+Une matrice \(M\) est \emph{hermitienne} si
+\begin{equation}
+  M_{ij}=M_{ji}^*.
+  \label{eq:l02-hermitian-condition}
+\end{equation}
+\end{definition}
+
+La condition diagonale \(M_{ii}=M_{ii}^*\) impose que chaque élément diagonal soit réel. Les éléments hors diagonale apparaissent par paires conjuguées. Par exemple,
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    r&4+i\\
+    4-i&s
+  \end{pmatrix},
+  \qquad r,s\in\mathbb R,
+  \label{eq:l02-hermitian-example}
+\end{equation}
+est hermitienne. Si tous ses éléments sont réels, être hermitienne revient à être symétrique.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\linewidth]{lecture_02_figure_06.png}
+\caption{La relation de conjugaison qui définit la symétrie par rapport à la diagonale, \(M_{ij}=M_{ji}^*\), est présentée isolément à la fin du cours.}
+\lectureframe{01:42:50}
+\end{figure}
+
+Les matrices hermitiennes représentent les grandeurs mesurables, notamment le spin selon les directions \(x\), \(y\) et \(z\). Il ne faut pas les confondre avec les opérateurs qui décrivent une impulsion physique ou l’évolution temporelle.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:49}
+\audiencequestion{Si une matrice donne une impulsion à l’état et le transforme en un autre état, doit-elle conserver la normalisation ? Une matrice hermitienne le fait-elle ?}
+\lecturerresponse{Une impulsion physique doit conserver la norme du vecteur d’état, mais une matrice hermitienne générale ne le fait pas. Les transformations qui préservent la norme sont unitaires. Les opérateurs hermitiens représentent les observables ; les opérateurs unitaires représentent les transformations réversibles qui agissent sur les états. Nous étudierons leur lien détaillé dans la suite.}
+\end{classroomqa}
+
+Nous disposons maintenant du formalisme minimal nécessaire pour aborder l’étape suivante. Un qubit est un vecteur normalisé d’un espace vectoriel complexe à deux dimensions ; les amplitudes déterminent les probabilités ; et les observables sont des matrices hermitiennes. Ces éléments nous permettront de discuter du spin selon des directions quelconques, puis de paires intriquées, sans revenir au modèle classique qui a déjà échoué.

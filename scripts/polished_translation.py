@@ -984,9 +984,21 @@ def translated_preamble(source, lang):
     suffix = '\n' + language_setup + '\n'.join(
         f'\\renewcommand{{\\{key}}}{{{value}}}' for key, value in zip(name_keys, name_values))
     if family not in {'JP', 'SC', 'TC', 'KR'}:
-        suffix += '\n\\sectionfont{' + (r'\raggedleft' if lang == 'ar' else r'\raggedright') + '}'
+        alignment = r'\raggedleft' if lang == 'ar' else r'\raggedright'
+        suffix += ('\n\\sectionfont{' + alignment + '}'
+                   '\n\\subsectionfont{' + alignment + '}'
+                   '\n\\makeatletter'
+                   '\n\\renewcommand{\\@pnumwidth}{2.2em}'
+                   '\n\\renewcommand{\\@tocrmarg}{3.2em}'
+                   '\n\\makeatother'
+                   '\n\\usepackage{tocloft}'
+                   '\n\\renewcommand{\\cftchapfont}{\\small\\bfseries}'
+                   '\n\\renewcommand{\\cftchappagefont}{\\small\\bfseries}'
+                   '\n\\renewcommand{\\cftsecfont}{\\small}'
+                   '\n\\renewcommand{\\cftsecpagefont}{\\small}'
+                   '\n\\setlength{\\cftsecnumwidth}{3em}')
     # CJK italics are not supplied by Noto. Keep readable upright CJK, Latin italic intact.
-    emergency_stretch = '2em' if family in {'JP', 'SC', 'TC', 'KR'} else '4em'
+    emergency_stretch = '2em' if family in {'JP', 'SC', 'TC', 'KR'} else '6em'
     return (prefix + t + suffix + f'\n\\emergencystretch={emergency_stretch}\n'
             '\\pdfstringdefDisableCommands{\\def\\proseunicodefont{}}\n' + page_layout(lang))
 
@@ -1040,6 +1052,58 @@ def restore_layout_arguments(source, translated):
     return translated
 
 
+def localized_track(course, lang):
+    """Turn queue identifiers into concise reader-facing cover metadata."""
+    raw = course.split('/')[-1]
+    match = re.fullmatch(r'(\d{4})_(winter|spring|summer|fall)(?:_(.+))?', raw)
+    if not match:
+        return raw.replace('_', ' ')
+    year, season, qualifier = match.groups()
+    labels = {
+        'ja': (('冬', '春', '夏', '秋'), '{year}年{season}', '・',
+               ('第1部', '第3部', '旧版宇宙論', '弦理論とM理論', '理論的最小限', '弦理論特論', '理論的最小限（別題）')),
+        'zh': (('冬季', '春季', '夏季', '秋季'), '{year}年{season}', '・',
+               ('第1部分', '第3部分', '旧版宇宙学', '弦理论与M理论', '理论最低限度', '弦理论专题', '理论最低限度（别名）')),
+        'fr': (('hiver', 'printemps', 'été', 'automne'), '{season} {year}', ', ',
+               ('première partie', 'troisième partie', 'ancienne version du cours de cosmologie',
+                'théorie des cordes et théorie M', 'minimum théorique', 'thèmes de théorie des cordes',
+                'minimum théorique (titre alternatif)')),
+        'es': (('invierno', 'primavera', 'verano', 'otoño'), '{season} de {year}', ', ',
+               ('primera parte', 'tercera parte', 'curso anterior de cosmología',
+                'teoría de cuerdas y teoría M', 'mínimo teórico', 'temas de teoría de cuerdas',
+                'mínimo teórico (título alternativo)')),
+        'de': (('Winter', 'Frühjahr', 'Sommer', 'Herbst'), '{season} {year}', ', ',
+               ('Teil 1', 'Teil 3', 'frühere Kosmologievorlesung', 'Stringtheorie und M-Theorie',
+                'Theoretisches Minimum', 'Themen der Stringtheorie',
+                'Theoretisches Minimum (Alternativtitel)')),
+        'zh-Hant': (('冬季', '春季', '夏季', '秋季'), '{year}年{season}', '・',
+                    ('第1部分', '第3部分', '舊版宇宙學', '弦理論與M理論', '理論最低限度', '弦理論專題',
+                     '理論最低限度（別名）')),
+        'ko': (('겨울', '봄', '여름', '가을'), '{year}년 {season}', ' · ',
+               ('1부', '3부', '이전 우주론 강의', '끈 이론과 M이론', '이론적 최소한', '끈 이론 특강',
+                '이론적 최소한(대체 제목)')),
+        'vi': (('mùa đông', 'mùa xuân', 'mùa hè', 'mùa thu'), '{season} {year}', ', ',
+               ('phần 1', 'phần 3', 'khóa vũ trụ học trước đây', 'lý thuyết dây và lý thuyết M',
+                'mức tối thiểu lý thuyết', 'chuyên đề lý thuyết dây',
+                'mức tối thiểu lý thuyết (tựa thay thế)')),
+        'ru': (('зима', 'весна', 'лето', 'осень'), '{season} {year}', ', ',
+               ('часть 1', 'часть 3', 'предыдущий курс космологии', 'теория струн и M-теория',
+                'теоретический минимум', 'темы по теории струн',
+                'теоретический минимум (альтернативное название)')),
+        'ar': (('شتاء', 'ربيع', 'صيف', 'خريف'), '{season} {year}', '، ',
+               ('الجزء الأول', 'الجزء الثالث', 'مقرر علم الكونيات السابق', 'نظرية الأوتار ونظرية M',
+                'الحد الأدنى النظري', 'موضوعات في نظرية الأوتار', 'الحد الأدنى النظري (عنوان بديل)')),
+    }
+    qualifiers = ('part_1', 'part_3', 'legacy_cosmology', 'string_theory_and_m_theory',
+                  'theoretical_minimum', 'topics_in_string_theory', 'theoretical_minimum_alt_title')
+    seasons, pattern, separator, translated_qualifiers = labels[lang]
+    season_label = seasons[('winter', 'spring', 'summer', 'fall').index(season)]
+    result = pattern.format(year=year, season=season_label)
+    if qualifier:
+        result += separator + dict(zip(qualifiers, translated_qualifiers)).get(qualifier, qualifier.replace('_', ' '))
+    return result
+
+
 def cover(book, lang, args=None):
     source = (ROOT / 'generated_course_notes' / book['course'] / 'course.tex').read_text()
     titlepage = re.search(r'\\begin\{titlepage\}.*?\\end\{titlepage\}', source, re.S).group()
@@ -1047,7 +1111,7 @@ def cover(book, lang, args=None):
     titlepage = re.sub(r'(\\color\{black!\d+\} )[^}\n]+(?=\})',
         lambda m: m.group(1) + title + r'\\[0.85em]', titlepage, count=1)
     spec = LANGUAGE_SPECS[lang]
-    track = spec['edition'] + ' / ' + book['course'].split('/')[-1].replace('_', ' ')
+    track = spec['edition'] + ' / ' + localized_track(book['course'], lang)
     titlepage = re.sub(r'(\\large\\color\{black!\d+\} )[^}\n]+', lambda m: m.group(1) + track, titlepage, count=1)
     titlepage = re.sub(r'(?:Original lectures?|Lectures) by Leonard Susskind', spec['lecturer'], titlepage)
     titlepage = titlepage.replace('Companion edition by ', spec['companion'])

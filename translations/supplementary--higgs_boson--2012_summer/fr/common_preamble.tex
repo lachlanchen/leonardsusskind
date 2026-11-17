@@ -106,7 +106,18 @@
 \renewcommand{\proofname}{Démonstration}
 \renewcommand{\bibname}{Références}
 \sectionfont{\raggedright}
-\emergencystretch=4em
+\subsectionfont{\raggedright}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.2em}
+\renewcommand{\@tocrmarg}{3.2em}
+\makeatother
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\small\bfseries}
+\renewcommand{\cftchappagefont}{\small\bfseries}
+\renewcommand{\cftsecfont}{\small}
+\renewcommand{\cftsecpagefont}{\small}
+\setlength{\cftsecnumwidth}{3em}
+\emergencystretch=6em
 \pdfstringdefDisableCommands{\def\proseunicodefont{}}
 
 \geometry{paperwidth=177.6mm,paperheight=252mm,left=16mm,right=16mm,

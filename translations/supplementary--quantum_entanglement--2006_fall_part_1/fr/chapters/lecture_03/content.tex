@@ -1,0 +1,541 @@
+\chapter{Observables hermitiennes, spin et règle des probabilités}
+
+\lectureoverview{La mécanique quantique est un calcul des probabilités. Pour l’utiliser sans remplacer la compréhension par des slogans, il nous faut une chaîne mathématique concise : phases complexes, états normalisés, observables hermitiennes, valeurs propres et vecteurs propres, orthogonalité et règle de Born. Les trois matrices de Pauli permettent ensuite de tirer de cette chaîne des prédictions concrètes pour le spin de l’électron.}
+
+\section{Nombres complexes sous forme polaire}
+
+Commençons par éliminer une petite source de complications algébriques. Un nombre complexe
+\begin{equation}
+  z=x+iy
+\end{equation}
+est un point du plan complexe, où \(x\) se trouve sur l’axe réel et \(y\) sur l’axe imaginaire. Si ce point a pour coordonnées polaires \((r,\theta)\), alors
+\begin{equation}
+  x=r\cos\theta,
+  \qquad
+  y=r\sin\theta,
+\end{equation}
+et donc
+\begin{equation}
+  z=r(\cos\theta+i\sin\theta)=re^{i\theta}.
+  \label{eq:l03-polar-form}
+\end{equation}
+La notation d’Euler est utile car les formules d’addition des angles se résument à la loi exponentielle
+\begin{equation}
+  e^{i\theta}e^{i\phi}
+  =e^{i(\theta+\phi)}.
+  \label{eq:l03-phase-product}
+\end{equation}
+En effet, le produit des deux formes trigonométriques donne
+\begin{align}
+& (\cos\theta+i\sin\theta)(\cos\phi+i\sin\phi)
+\notag\\
+&\qquad=\cos(\theta+\phi)+i\sin(\theta+\phi).
+\end{align}
+Les formules de somme usuelles sont toutes contenues dans cette unique multiplication.
+
+La conjugaison complexe réfléchit le point par rapport à l’axe réel :
+\begin{equation}
+  z^*=x-iy,
+  \qquad
+  (e^{i\theta})^*=e^{-i\theta}.
+\end{equation}
+Par conséquent,
+\begin{equation}
+  e^{i\theta}e^{-i\theta}=1.
+\end{equation}
+Les nombres de la forme \(e^{i\theta}\) se trouvent sur le cercle unité et sont appelés \emph{phases pures}. Tout nombre complexe non nul s’écrit comme le produit d’un module positif par une phase pure :
+\begin{equation}
+  z=|z|e^{i\theta},
+  \qquad
+  |z|^2=z^*z=x^2+y^2.
+  \label{eq:l03-modulus-phase}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:36}
+\audiencequestion{Le passage de \(\theta\) à \(-\theta\) correspond-il à une inversion du sens de rotation dans le plan complexe ?}
+\lecturerresponse{Oui. Les angles de phase positifs et négatifs parcourent le cercle unité en sens opposés. La conjugaison complexe transforme \(e^{i\theta}\) en \(e^{-i\theta}\), c’est-à-dire en son symétrique et en la phase inverse.}
+\end{classroomqa}
+
+Voilà tout ce dont nous avons besoin aujourd’hui sur les nombres complexes : le module, la phase, la conjugaison et le cercle unité.
+
+\section{La mécanique quantique comme calcul des probabilités}
+
+Passons maintenant aux postulats. Un système physique est préparé dans un \emph{état} ; une mesure porte sur la valeur d’une \emph{observable} ; la mécanique quantique fournit les probabilités des réponses possibles.
+
+Les états sont des vecteurs d’un espace vectoriel complexe. Pour un système de spin à deux niveaux,
+\begin{equation}
+  \ket\psi=\alpha\ket{u}+\beta\ket{d},
+  \qquad
+  \ket{u}=\begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{d}=\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-two-level-state}
+\end{equation}
+Les coefficients déterminent les probabilités de spin vers le haut et vers le bas,
+\begin{equation}
+  P(u)=|\alpha|^2,
+  \qquad
+  P(d)=|\beta|^2,
+\end{equation}
+l’état doit donc être normalisé :
+\begin{equation}
+  \braket{\psi}{\psi}
+  =|\alpha|^2+|\beta|^2
+  =1.
+  \label{eq:l03-state-normalization}
+\end{equation}
+La dimension désigne le nombre d’alternatives indépendantes dans l’espace des états, et non la dimension de l’espace ordinaire. Un système possédant trois états de base mutuellement exclusifs ferait appel à trois colonnes orthonormées et à trois amplitudes.
+
+Les probabilités ne déterminent pas complètement les amplitudes. Une multiplication par une phase pure laisse le module inchangé :
+\begin{equation}
+  |e^{i\theta}\alpha|^2=|\alpha|^2.
+\end{equation}
+Les amplitudes contiennent donc des informations qui vont au-delà des probabilités dans cette base. Leur rôle apparaîtra lorsqu’on considérera différentes mesures, puis l’évolution temporelle.
+
+Les états de base sont orthonormés :
+\begin{equation}
+  \braket{u}{u}=\braket{d}{d}=1,
+  \qquad
+  \braket{u}{d}=\braket{d}{u}=0.
+\end{equation}
+Leur orthogonalité relève de l’espace complexe des états. Il ne faut pas encore la confondre avec deux flèches perpendiculaires dans l’espace ordinaire à trois dimensions ; cette distinction deviendra décisive vers la fin du cours.
+
+\section{Pourquoi les observables sont hermitiennes}
+
+Les résultats expérimentaux peuvent être consignés sous forme de nombres réels. Pour des raisons pratiques, on peut réunir deux nombres réels en un nombre complexe, mais les indications d’un appareil de mesure peuvent toujours être séparées en quantités réelles. En dimension finie, les observables quantiques sont représentées par une classe particulière d’opérateurs linéaires : les matrices hermitiennes.
+
+Pour les définir, transposons d’abord une matrice en échangeant ses lignes et ses colonnes :
+\begin{equation}
+  (M^T)_{ij}=M_{ji}.
+  \label{eq:l03-transpose}
+\end{equation}
+Une matrice réelle vérifiant \(M^T=M\) est symétrique. Pour les matrices complexes, l’opération correspondante est la conjugaison hermitienne,
+\begin{equation}
+  M^\dagger=(M^T)^*,
+  \qquad
+  (M^\dagger)_{ij}=M_{ji}^*.
+  \label{eq:l03-dagger}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\linewidth]{lecture_03_figure_02.png}
+\caption{Transposition, symétrie et passage à la conjugaison hermitienne partagent une même mise en page au tableau.}
+\lectureframe{00:23:06}
+\end{figure}
+
+\begin{definition}
+Une matrice \(M\) est \emph{hermitienne} si
+\begin{equation}
+  M^\dagger=M,
+  \qquad\text{equivalently}\qquad
+  M_{ij}=M_{ji}^*.
+  \label{eq:l03-hermitian}
+\end{equation}
+\end{definition}
+
+Les éléments diagonaux sont réels, puisque \(M_{ii}=M_{ii}^*\). Les éléments symétriques par rapport à la diagonale sont des paires de conjugués. La forme générale d’une matrice deux par deux est donc
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    a&z\\
+    z^*&b
+  \end{pmatrix},
+  \qquad a,b\in\mathbb R.
+  \label{eq:l03-hermitian-two}
+\end{equation}
+L’hermiticité est l’analogue matriciel d’une condition de réalité ; elle n’exige pas que chaque élément soit réel séparément.
+
+La première conséquence découle de deux identités élémentaires de conjugaison :
+\begin{equation}
+  \braket{B}{A}=\braket{A}{B}^*,
+  \label{eq:l03-inner-conjugation}
+\end{equation}
+et, pour tout \(M\),
+\begin{equation}
+  \bra B M\ket A
+  =
+  \bigl(\bra A M^\dagger\ket B\bigr)^*.
+  \label{eq:l03-matrix-element-conjugation}
+\end{equation}
+L’expression \(\bra B M\ket A\) est un nombre, l’élément de matrice \(BA\) de \(M\). Si \(M\) est hermitienne et \(B=A\), alors
+\begin{equation}
+  \bra A M\ket A
+  =
+  \bigl(\bra A M\ket A\bigr)^*.
+\end{equation}
+Cette quantité est donc réelle.
+
+\begin{proposition}
+Pour toute matrice hermitienne \(M\), la valeur moyenne
+\begin{equation}
+  \expect{M}_A=\bra A M\ket A
+  \label{eq:l03-expectation}
+\end{equation}
+est réelle pour tout état normalisé \(\ket A\).
+\end{proposition}
+
+La signification probabiliste de la valeur moyenne sera développée plus loin, mais le fait qu’elle soit réelle explique déjà pourquoi les opérateurs hermitiens sont des candidats naturels pour représenter les observables.
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:22}
+\audiencequestion{La notation des crochets pour une moyenne vient-elle de la notation bra--ket ?}
+\lecturerresponse{Oui. La notation de Dirac fournit les mêmes crochets. Dans \(\bra A M\ket A\), l’opérateur est placé entre le bra et le ket qui représentent l’état, et le résultat est la valeur moyenne.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:31}
+\audiencequestion{Une grandeur physique peut-elle elle-même avoir une valeur mesurée imaginaire ? Si les mesures donnent des valeurs réelles, pourquoi la mécanique quantique fait-elle appel aux nombres complexes ?}
+\lecturerresponse{Les résultats d’une série de mesures peuvent toujours être consignés sous forme de nombres réels, même si l’on choisit de regrouper une paire de valeurs en un nombre complexe. La question plus précise est de savoir pourquoi la théorie nous conduit à des amplitudes complexes. Gardons cette question en suspens : la réponse est liée à l’évolution temporelle réversible, que nous n’avons pas encore introduite. Restreindre la théorie aux vecteurs réels lui ferait perdre d’importantes possibilités.}
+\end{classroomqa}
+
+Les mathématiques ne sont pas un simple ornement. Sans elles, on peut présenter l’intrication comme mystérieuse tout en la laissant sans définition. Poursuivons dans le cadre le plus simple possible, celui d’un système à deux niveaux, afin de pouvoir ensuite combiner honnêtement deux systèmes de ce type.
+
+\section{Les valeurs propres sont des résultats possibles de mesure}
+
+\begin{definition}
+Un vecteur non nul \(\ket a\) est un vecteur propre de \(M\) associé à la valeur propre \(\lambda_a\) si
+\begin{equation}
+  M\ket a=\lambda_a\ket a.
+  \label{eq:l03-eigenvalue-equation}
+\end{equation}
+\end{definition}
+La matrice peut modifier la longueur ou la phase du vecteur, mais elle ne le transforme pas en un vecteur de direction différente dans l’espace des états.
+
+Pour une matrice hermitienne, la valeur propre est réelle. En multipliant l’équation~\eqref{eq:l03-eigenvalue-equation} à gauche par \(\bra a\), on obtient
+\begin{equation}
+  \bra a M\ket a
+  =\lambda_a\braket{a}{a}.
+\end{equation}
+Le membre de gauche est réel par hermiticité, et la norme au membre de droite est réelle et positive. On a donc
+\begin{equation}
+  \lambda_a
+  =
+  \frac{\bra a M\ket a}{\braket{a}{a}}
+  \in\mathbb R.
+  \label{eq:l03-real-eigenvalue}
+\end{equation}
+
+Voici maintenant l’énoncé physique : lorsque \(M\) représente une observable, ses valeurs propres sont les valeurs qu’une mesure de \(M\) peut donner. Le vecteur propre associé à \(\lambda_a\) est un état dans lequel cette valeur apparaît avec certitude.
+
+L’exemple le plus simple est une matrice diagonale :
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    m_{11}&0\\
+    0&m_{22}
+  \end{pmatrix}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_03.png}
+\caption{L’équation abstraite des valeurs propres est présentée au-dessus du premier exemple diagonal.}
+\lectureframe{00:44:04}
+\end{figure}
+
+Un calcul direct donne
+\begin{align}
+  M\begin{pmatrix}1\\0\end{pmatrix}
+  &=m_{11}\begin{pmatrix}1\\0\end{pmatrix},
+  \notag\\
+  M\begin{pmatrix}0\\1\end{pmatrix}
+  &=m_{22}\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-diagonal-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_04.png}
+\caption{Le vecteur de base inférieur est multiplié par l’élément diagonal inférieur.}
+\lectureframe{00:45:58}
+\end{figure}
+
+Pour une matrice diagonale de plus grande taille, la même règle s’applique : ses éléments diagonaux sont les valeurs propres, et ses colonnes canoniques ne contenant qu’un seul élément non nul sont les vecteurs propres.
+
+\section{Les trois matrices de spin}
+
+Pour le spin de l’électron selon le troisième axe, choisissons
+\begin{equation}
+  \sigma_3=
+  \begin{pmatrix}
+    1&0\\
+    0&-1
+  \end{pmatrix}.
+\end{equation}
+Ses états propres sont \(\ket u=(1,0)^T\) associé à la valeur propre \(+1\) et \(\ket d=(0,1)^T\) associé à la valeur propre \(-1\). Les deux valeurs possibles indiquées par le détecteur sont donc les deux valeurs propres.
+
+La matrice de spin selon le premier axe est
+\begin{equation}
+  \sigma_1=
+  \begin{pmatrix}
+    0&1\\
+    1&0
+  \end{pmatrix}.
+\end{equation}
+On écrit d’abord ses vecteurs propres candidats sans les normaliser, car tout multiple scalaire non nul d’un vecteur propre reste un vecteur propre. Les états physiques doivent toutefois être normalisés :
+\begin{align}
+  \ket{x+}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},
+  &
+  \sigma_1\ket{x+}&=+\ket{x+},
+  \notag\\
+  \ket{x-}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix},
+  &
+  \sigma_1\ket{x-}&=-\ket{x-}.
+  \label{eq:l03-sigma-one-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_05.png}
+\caption{La matrice à éléments non diagonaux et le vecteur candidat à poids égaux apparaissent avant le calcul du produit.}
+\lectureframe{00:50:29}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:45}
+\audiencequestion{Peut-on interpréter géométriquement les vecteurs propres de \(\sigma_1\) sans les déterminer par calcul algébrique ?}
+\lecturerresponse{Dans la représentation réelle à deux composantes, \(\sigma_1\) échange les directions de base \(E_1\) et \(E_2\). La direction diagonale \((1,1)^T\) reste inchangée, tandis que l’autre diagonale \((1,-1)^T\) s’inverse. Ce sont donc des vecteurs propres associés aux valeurs propres \(+1\) et \(-1\). Il s’agit d’une représentation dans l’espace des composantes, et non encore d’un énoncé sur l’aiguille indiquant le spin physique.}
+\end{classroomqa}
+
+La matrice restante est
+\begin{equation}
+  \sigma_2=
+  \begin{pmatrix}
+    0&-i\\
+    i&0
+  \end{pmatrix},
+\end{equation}
+avec les vecteurs propres normalisés
+\begin{equation}
+  \ket{y+}=\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix},
+  \qquad
+  \ket{y-}=\frac{1}{\sqrt2}\begin{pmatrix}1\\-i\end{pmatrix}.
+  \label{eq:l03-sigma-two-eigenvectors}
+\end{equation}
+Leurs valeurs propres sont, là encore, \(+1\) et \(-1\).
+
+Les trois matrices élevées au carré donnent l’identité :
+\begin{equation}
+  \sigma_1^2=\sigma_2^2=\sigma_3^2=I.
+  \label{eq:l03-pauli-squares}
+\end{equation}
+Si \(\sigma_i\ket a=\lambda\ket a\), alors l’application de \(\sigma_i\) deux fois donne \(\lambda^2=1\), donc \(\lambda=\pm1\). Leurs spectres identiques indiquent pour la première fois que ces matrices représentent des composantes du spin selon des axes spatiaux équivalents.
+
+\section{Des résultats distincts exigent des états orthogonaux}
+
+Avant de démontrer le théorème suivant, précisons-en le sens. Si une observable donne deux réponses déterminées différentes dans deux états, alors une mesure de cette observable permet de distinguer parfaitement ces états. En mécanique quantique, cette distinguabilité parfaite s’exprime par l’orthogonalité.
+
+\begin{theorem}
+Soit \(M\) une matrice hermitienne telle que
+\begin{equation}
+  M\ket A=\lambda_A\ket A,
+  \qquad
+  M\ket B=\lambda_B\ket B.
+\end{equation}
+Si \(\lambda_A\ne\lambda_B\), alors
+\begin{equation}
+  \braket{B}{A}=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+En multipliant la première équation aux valeurs propres par \(\bra B\), on obtient
+\begin{equation}
+  \bra B M\ket A=\lambda_A\braket{B}{A}.
+\end{equation}
+L’hermiticité et la deuxième équation aux valeurs propres donnent le même élément de matrice :
+\begin{equation}
+  \bra B M\ket A=\lambda_B\braket{B}{A},
+\end{equation}
+car \(\lambda_B\) est réel. La soustraction donne
+\begin{equation}
+  (\lambda_A-\lambda_B)\braket{B}{A}=0.
+\end{equation}
+Les valeurs propres étant différentes, le produit scalaire doit être nul.
+\end{proof}
+
+Les vecteurs propres de \(\sigma_1\) fournissent une vérification immédiate :
+\begin{equation}
+  \braket{x+}{x-}
+  =
+  \frac12
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\-1\end{pmatrix}
+  =\frac12-\frac12=0.
+\end{equation}
+Réciproquement, il existe une mesure qui distingue deux états orthogonaux. L’orthogonalité n’est donc pas qu’un terme géométrique ; elle a une signification opérationnelle.
+
+\section{Le postulat des probabilités}
+
+Supposons que le système soit préparé dans un état normalisé \(\ket B\). Soit \(M\) une observable, et soit \(\ket A\) un vecteur propre normalisé de \(M\) associé à la valeur propre \(\lambda_A\). La probabilité qu’une mesure de \(M\) donne \(\lambda_A\) est alors
+\begin{equation}
+  P(\lambda_A\mid B)
+  =
+  |\braket{A}{B}|^2
+  =
+  \braket{A}{B}\braket{B}{A}.
+  \label{eq:l03-born-rule}
+\end{equation}
+Le produit est réel et positif ou nul. Pour des vecteurs normalisés, il est inférieur ou égal à un.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_06.png}
+\caption{La règle des probabilités est écrite comme le produit d’un recouvrement par son conjugué.}
+\lectureframe{01:16:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:19}
+\audiencequestion{Est-ce le cosinus au carré de l’angle entre les deux états ?}
+\lecturerresponse{Pour des vecteurs réels unitaires dans l’espace euclidien ordinaire, le produit scalaire est le cosinus d’un angle. Ici, le produit scalaire est généralement complexe ; il n’existe donc pas d’angle spatial ordinaire dont il serait le cosinus. L’analogue utile est le module du recouvrement, et la probabilité est son carré.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:20:18}
+\audiencequestion{Que se passe-t-il si l’état préparé est un autre vecteur propre de \(M\) associé à une valeur propre différente ?}
+\lecturerresponse{Les deux vecteurs propres sont alors orthogonaux. Leur recouvrement est nul, donc la probabilité d’obtenir \(\lambda_A\) est nulle. Préparer un état auquel correspond une valeur déterminée exclut une autre valeur déterminée de la même observable.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:23}
+\audiencequestion{La même règle peut-elle s’appliquer à un état préparé pour lequel aucun résultat n’est certain ?}
+\lecturerresponse{Oui. C’est le cas général : \(\ket B\) n’a pas besoin d’être un vecteur propre de \(M\). Ses recouvrements avec les vecteurs propres normalisés donnent les probabilités des résultats correspondants. Nous commençons par un exemple à deux résultats avant d’aborder des distributions plus élaborées.}
+\end{classroomqa}
+
+Le cours met la règle à l’épreuve sur plusieurs préparations au lieu de la dissimuler dans une formule unique.
+
+Commençons par préparer \(\sigma_3=+1\) :
+\begin{equation}
+  \ket B=\ket{u}=\begin{pmatrix}1\\0\end{pmatrix}.
+\end{equation}
+Mesurons \(\sigma_1\). Pour son vecteur propre associé à \(+1\),
+\begin{equation}
+  \braket{x+}{u}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\0\end{pmatrix}
+  =\frac{1}{\sqrt2},
+\end{equation}
+donc
+\begin{equation}
+  P(\sigma_1=+1\mid\sigma_3=+1)=\frac12.
+\end{equation}
+Remplacer \(\ket{x+}\) par \(\ket{x-}\) donne la même probabilité. Inverser la préparation et la mesure donne également une moitié, car le carré du module du recouvrement est symétrique.
+
+Pour un exemple véritablement complexe, préparons \(\ket{x+}\) et mesurons \(\sigma_2\). On obtient alors
+\begin{align}
+  \braket{y+}{x+}
+  &=
+  \frac12
+  \begin{pmatrix}1&-i\end{pmatrix}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =\frac{1-i}{2},
+  \notag\\
+  P(\sigma_2=+1\mid\sigma_1=+1)
+  &=\left|\frac{1-i}{2}\right|^2
+  =\frac14+\frac14
+  =\frac12.
+  \label{eq:l03-complex-probability-example}
+\end{align}
+Préparer le spin selon un axe et le mesurer selon un axe perpendiculaire donne donc des probabilités égales pour les deux résultats.
+
+\section{Aiguilles, états et axes quelconques}
+
+La phrase précédente peut être mal comprise si l’on n’emploie pas les termes correctement. Un moment magnétique possède une direction spatiale, que nous appellerons \emph{aiguille}. Un ket est un vecteur de l’espace complexe des états. Deux aiguilles spatiales peuvent être perpendiculaires, tandis que deux vecteurs d’état peuvent être orthogonaux. Ce sont des énoncés différents portant sur des espaces différents.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:25}
+\audiencequestion{Si deux directions physiques du spin sont séparées par un angle droit, leurs vecteurs d’état doivent-ils être orthogonaux ?}
+\lecturerresponse{Non. Le carré du module du recouvrement des états de spin vers le haut selon des axes spatiaux perpendiculaires vaut \(1/2\), et non zéro. L’état orthogonal à l’état de spin vers le haut selon un axe est celui de spin vers le bas selon ce même axe. Réservons le terme \emph{perpendiculaire} aux aiguilles de l’espace ordinaire et le terme \emph{orthogonal} aux états parfaitement distinguables.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:25}
+\audiencequestion{Pourrait-on employer le terme \emph{indépendants} à la place de \emph{orthogonaux} ?}
+\lecturerresponse{Non. L’indépendance linéaire signifie seulement qu’aucun vecteur n’est un multiple scalaire des autres ; elle n’exige pas que les produits scalaires soient nuls. L’orthogonalité est une condition plus forte et porte ici le sens physique de distinguabilité parfaite.}
+\end{classroomqa}
+
+Soit \(\hat n=(n_1,n_2,n_3)\) une aiguille unitaire dans l’espace ordinaire :
+\begin{equation}
+  n_1^2+n_2^2+n_3^2=1.
+\end{equation}
+L’opérateur correspondant au spin selon cette direction est l’analogue matriciel d’un produit scalaire :
+\begin{equation}
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3
+  =
+  \begin{pmatrix}
+    n_3&n_1-in_2\\
+    n_1+in_2&-n_3
+  \end{pmatrix}.
+  \label{eq:l03-spin-arbitrary-axis}
+\end{equation}
+Il est hermitien : les éléments diagonaux sont réels et les éléments hors diagonale sont conjugués l’un de l’autre.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_03_figure_07.png}
+\caption{L’aiguille spatiale unitaire, la somme d’opérateurs et sa matrice hermitienne explicite sont présentées ensemble.}
+\lectureframe{01:38:00}
+\end{figure}
+
+Pour déterminer ses valeurs possibles, calculons son carré avant d’insérer les éléments de la matrice. L’ordre des matrices compte, de sorte que les termes croisés prennent la forme d’anticommutateurs :
+\begin{align}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  &=
+  n_1^2\sigma_1^2+n_2^2\sigma_2^2+n_3^2\sigma_3^2
+  \notag\\
+  &\quad
+  +n_1n_2(\sigma_1\sigma_2+\sigma_2\sigma_1)
+  \notag\\
+  &\quad
+  +n_2n_3(\sigma_2\sigma_3+\sigma_3\sigma_2)
+  \notag\\
+  &\quad
+  +n_1n_3(\sigma_1\sigma_3+\sigma_3\sigma_1).
+  \label{eq:l03-axis-square-expanded}
+\end{align}
+Les différentes matrices de Pauli anticommutent :
+\begin{equation}
+  \sigma_i\sigma_j+\sigma_j\sigma_i=0
+  \qquad(i\ne j).
+  \label{eq:l03-pauli-anticommutation}
+\end{equation}
+Le cours vérifie explicitement un cas :
+\begin{equation}
+  \sigma_1\sigma_3
+  =
+  \begin{pmatrix}0&-1\\1&0\end{pmatrix},
+  \qquad
+  \sigma_3\sigma_1
+  =
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  =-\sigma_1\sigma_3.
+  \label{eq:l03-order-check}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_03_figure_08.png}
+\caption{Les multiplications de \(\sigma_1\) et \(\sigma_3\) dans les deux ordres donnent des matrices qui diffèrent d’un signe moins.}
+\lectureframe{01:44:50}
+\end{figure}
+
+Les termes croisés dans l’équation~\eqref{eq:l03-axis-square-expanded} s’annulent, tandis que \(\sigma_i^2=I\). Par conséquent,
+\begin{equation}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  =(n_1^2+n_2^2+n_3^2)I
+  =I.
+\end{equation}
+Toute valeur propre vérifie donc \(\lambda^2=1\) :
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+Quel que soit l’axe spatial choisi par l’appareil, le détecteur ne peut toujours donner que deux résultats : \(+1\) et \(-1\). La relation entre des directions voisines ne se manifeste pas par une valeur intermédiaire mesurée, mais par les probabilités de ces deux résultats fixes.

@@ -1,0 +1,500 @@
+\chapter{Vecteurs d’état, évolution unitaire et symétrie de translation}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+
+Après une interruption de deux trimestres, une révision rapide de la mécanique quantique est utile. Elle ne peut toutefois pas occuper tout le trimestre. Nous allons étudier l’application de la mécanique quantique aux problèmes pour lesquels elle a été développée à l’origine : les atomes, les électrons et les particules apparentées, ainsi que les photons.
+
+Nous commencerons par les atomes. Comment peuvent-ils venir avant les électrons, alors que les électrons sont des constituants des atomes ? Au début, il suffit de connaître assez de mécanique électronique pour écrire les équations de base de l’atome d’hydrogène. Nous pourrons ensuite étudier plus en détail les particules apparentées aux électrons. Dans toutes ces applications, la symétrie sera un outil récurrent : nous examinerons comment les symétries sont représentées en mécanique quantique et ce qu’elles impliquent pour un système.
+
+\section{États, observables et orthogonalité}
+
+En mécanique classique, un état est représenté par un point de l’espace des phases. En mécanique quantique, il est représenté par un vecteur d’un espace vectoriel complexe. Il s’agit d’un vecteur abstrait, et non d’une flèche dans l’espace ordinaire à trois dimensions. Les vecteurs d’état peuvent être additionnés et multipliés par des nombres complexes, et l’espace qui les contient n’a pas besoin d’être de dimension finie particulière.
+
+La notation de Dirac désigne un vecteur d’état par un ket,
+\begin{equation}
+\ket{\psi},
+\end{equation}
+et lui associe un bra,
+\begin{equation}
+\bra{\psi}.
+\end{equation}
+Les bras et les kets sont liés par la conjugaison hermitienne. La combinaison d’un bra et d’un ket donne un produit scalaire,
+\begin{equation}
+\langle\phi|\psi\rangle,
+\end{equation}
+qui est en général un nombre complexe.
+
+Une observable est une grandeur susceptible d’être mesurée : la position, la quantité de mouvement, l’énergie ou toute autre grandeur mesurable. En mécanique quantique, une observable est représentée par un opérateur linéaire hermitien \(A\),
+\begin{equation}
+A^\dagger=A.
+\end{equation}
+L’hermiticité est l’analogue, pour les opérateurs, de la réalité. En particulier, les valeurs propres d’un opérateur hermitien sont réelles.
+
+Un vecteur propre de \(A\) vérifie
+\begin{equation}
+A\ket{\alpha}=\alpha\ket{\alpha}.
+\end{equation}
+Les valeurs propres possibles sont les résultats possibles d’une mesure de \(A\). Par exemple, si une observable ne peut prendre que les valeurs \(1\), \(3\) ou \(7\), celles-ci sont ses valeurs propres. Ses vecteurs propres sont les états pour lesquels le résultat est déterminé, plutôt que statistique. Dans l’état \(\ket{\alpha}\), une mesure de \(A\) donne certainement \(\alpha\).
+
+Le produit scalaire exprime une importante relation logique entre les états. Supposons qu’il existe une mesure permettant de distinguer avec certitude \(\ket{\phi}\) de \(\ket{\psi}\). Les états sont alors orthogonaux :
+\begin{equation}
+\langle\phi|\psi\rangle=0.
+\end{equation}
+L’orthogonalité signifie que les états sont physiquement distinguables sans ambiguïté. Pour un état normalisé,
+\begin{equation}
+\langle\psi|\psi\rangle=1.
+\end{equation}
+
+\section{Une particule dans la représentation de position}
+
+Considérons d’abord une particule se déplaçant sur une droite. Sa position \(x\) est une observable. À chaque position possible \(x_0\) correspond un état \(\ket{x_0}\) dans lequel une mesure de position donne certainement \(x_0\).
+
+Des états associés à des positions différentes sont distinguables et donc orthogonaux :
+\begin{equation}
+x\neq x'
+\quad\Longrightarrow\quad
+\langle x'|x\rangle=0.
+\end{equation}
+Pour un état arbitraire \(\ket{\psi}\), son recouvrement avec un état de position définit la fonction d’onde :
+\begin{equation}
+\psi(x)=\langle x|\psi\rangle.
+\end{equation}
+C’est la représentation de position du vecteur d’état.
+
+La fonction d’onde n’est pas elle-même une probabilité. Elle peut être positive, négative, imaginaire ou entièrement complexe. La densité de probabilité de position est
+\begin{equation}
+P(x)=\psi^*(x)\psi(x)=|\psi(x)|^2.
+\end{equation}
+Le produit est non négatif, comme doit l’être une densité de probabilité. Pour une fonction d’onde normalisée,
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,|\psi(x)|^2=1.
+\end{equation}
+
+Dans la représentation de position, l’opérateur position agit par multiplication :
+\begin{equation}
+(\hat x\psi)(x)=x\psi(x).
+\end{equation}
+Ses fonctions propres sont des fonctions idéalisées, concentrées en un point. Elles sont décrites formellement par des distributions de Dirac : des pics très étroits centrés sur la valeur propre de position. Leur définition précise au sens des distributions n’est pas nécessaire pour cette révision.
+
+En trois dimensions, la position a trois composantes, \(x\), \(y\) et \(z\), et un état de position représente un point de l’espace tridimensionnel. Deux états de ce type sont orthogonaux dès que leurs points diffèrent d’au moins une coordonnée. Nous conserverons généralement la notation unidimensionnelle, en sous-entendant son extension correspondante à trois dimensions.
+
+\section{Quantité de mouvement et états de quantité de mouvement déterminée}
+
+À chaque composante de la position correspond une composante de la quantité de mouvement. Dans la représentation de position, l’opérateur quantité de mouvement selon l’axe \(x\) est
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+Ainsi, un opérateur hermitien abstrait peut aussi être considéré concrètement comme une opération sur les fonctions d’onde.
+
+Un état de quantité de mouvement déterminée \(p_0\) vérifie l’équation aux valeurs propres
+\begin{equation}
+\hat p_x\psi_{p_0}(x)=p_0\psi_{p_0}(x).
+\end{equation}
+En substituant la forme différentielle de \(\hat p_x\), on obtient
+\begin{equation}
+-i\hbar\frac{d\psi_{p_0}(x)}{dx}
+=p_0\psi_{p_0}(x).
+\end{equation}
+La dérivée de la fonction d’onde est proportionnelle à la fonction d’onde elle-même ; la solution est donc de forme exponentielle :
+\begin{equation}
+\psi_{p_0}(x)\propto
+\exp\left(\frac{ip_0x}{\hbar}\right).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:24:26}
+\audiencequestion{Cette équation différentielle est-elle vérifiée par toute fonction d’onde ?}
+\lecturerresponse{Non. C’est l’équation aux valeurs propres d’un état de quantité de mouvement déterminée. La plupart des fonctions d’onde ne la vérifient pas ; elle sélectionne les fonctions propres de quantité de mouvement.}
+\end{classroomqa}
+
+La distinction entre les états propres de position et ceux de quantité de mouvement est nette. Une fonction propre de position est concentrée en un point. Le module d’une fonction propre de quantité de mouvement est
+\begin{equation}
+\left|\exp\left(\frac{ip_0x}{\hbar}\right)\right|^2=1.
+\end{equation}
+Il est donc constant sur toute la droite. En ce sens idéalisé, une quantité de mouvement déterminée implique une incertitude complète sur la position ; de même, une position déterminée implique une incertitude complète sur la quantité de mouvement. C’est le cas limite de la relation d’incertitude position--quantité de mouvement.
+
+\begin{classroomqa}
+\lecturetimestamp{00:26:36}
+\audiencequestion{Si la quantité de mouvement est connue et vaut \(p_0\), pourquoi subsiste-t-il une distribution de probabilité ?}
+\lecturerresponse{La quantité affichée concerne une mesure de position, et non une autre mesure de quantité de mouvement. La position et la quantité de mouvement sont des observables différentes. Pour l’état propre idéalisé de quantité de mouvement, le module de l’amplitude de position est constant sur toute la droite. Les amplitudes de quantité de mouvement relèvent de la représentation de quantité de mouvement et sont reliées à la fonction d’onde de position par une transformée de Fourier.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:02}
+\audiencequestion{À quoi ressemble la probabilité de position lorsque la fonction d’onde est une distribution de Dirac ?}
+\lecturerresponse{Elle est concentrée à la position spécifiée. Ce pic idéalisé exprime la certitude de la position.}
+\end{classroomqa}
+
+\editorialnote{Les états propres exacts de position et de quantité de mouvement sont des états généralisés. Une distribution de Dirac et une onde plane ne sont pas des fonctions d’onde ordinaires, normalisables au carré et intégrables sur toute la droite ; de plus, le carré littéral d’une distribution de Dirac n’est pas une distribution ordinaire. Les énoncés ci-dessus portent sur leur localisation idéalisée et leur module constant.}
+
+On peut considérer formellement une fonction d’onde comme un vecteur ayant une composante pour chaque valeur de \(x\). Contrairement à un vecteur colonne ordinaire de dimension finie, elle possède toutefois une infinité continue de composantes.
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:53}
+\audiencequestion{Les vecteurs d’état sont-ils représentés par des vecteurs colonnes ?}
+\lecturerresponse{Ils peuvent l’être, mais il est malcommode d’écrire une fonction d’onde de position sous la forme d’un vecteur colonne ordinaire, car \(x\) prend un continuum de valeurs. On peut la considérer formellement comme un vecteur colonne continu, et considérer le bra correspondant comme un vecteur ligne continu.}
+\end{classroomqa}
+
+\section{Évolution temporelle et unitarité}
+
+Comment un état évolue-t-il au cours du temps ? L’évolution temporelle est une transformation dans l’espace des états. Désignons par \(U(t)\) l’évolution pendant un intervalle de temps écoulé \(t\). Alors,
+\begin{equation}
+U(t)\ket{\psi(t_1)}=\ket{\psi(t_1+t)}.
+\end{equation}
+En particulier,
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)},
+\qquad
+U(0)=\mathbf 1.
+\end{equation}
+
+La condition imposée à \(U(t)\) découle de la conservation de l’information. Si deux états initiaux sont distinguables, l’évolution temporelle ne doit pas effacer cette distinction. Des états orthogonaux doivent rester orthogonaux. Plus généralement, le produit scalaire de deux états quelconques est conservé :
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|\psi\rangle.
+\end{equation}
+Puisque
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|U^\dagger(t)U(t)|\psi\rangle,
+\end{equation}
+la conservation de tous les produits scalaires exige
+\begin{equation}
+U^\dagger(t)U(t)=\mathbf 1.
+\end{equation}
+Un opérateur qui vérifie cette équation est unitaire.
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:36}
+\audiencequestion{La conservation de chaque produit scalaire est-elle une condition plus forte que la simple conservation de l’orthogonalité ?}
+\lecturerresponse{Pour les transformations linéaires des états considérées ici, la conservation de l’orthogonalité entraîne celle des produits scalaires. Les rotations ordinaires en donnent l’analogie familière : elles conservent l’orthogonalité et les produits scalaires.}
+\end{classroomqa}
+
+\editorialnote{Au sens strict, la conservation de l’orthogonalité seule autorise un facteur d’échelle global non nul. La conservation de la norme, déjà exigée pour l’évolution temporelle physique, élimine cette liberté et entraîne la conservation des produits scalaires.}
+
+Il ne faut pas confondre les opérateurs unitaires avec les observables hermitiennes. La position et la quantité de mouvement sont hermitiennes, mais ne sont généralement pas unitaires. Les valeurs propres d’un opérateur unitaire sont des phases, c’est-à-dire des nombres de la forme \(e^{i\theta}\) situés sur le cercle unité.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:12}
+\audiencequestion{Quel est un exemple de transformation non unitaire ?}
+\lecturerresponse{Les opérateurs position et quantité de mouvement en sont des exemples : ce sont des observables hermitiennes, mais ils ne sont pas unitaires. Un opérateur unitaire a des valeurs propres de module unité ; ses valeurs propres sont donc des phases.}
+\end{classroomqa}
+
+\section{Le Hamiltonien et l’équation de Schr\"odinger}
+
+On suppose que l’évolution temporelle est continue. Sur un intervalle très court \(\epsilon\), l’opérateur d’évolution doit donc être proche de l’identité :
+\begin{equation}
+U(\epsilon)=\mathbf 1+\epsilon G+\mathcal O(\epsilon^2).
+\end{equation}
+En utilisant l’unitarité,
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(\mathbf 1+\epsilon G^\dagger\right)
+\left(\mathbf 1+\epsilon G\right)
++\mathcal O(\epsilon^2)
+\\
+&=
+\mathbf 1+\epsilon(G^\dagger+G)
++\mathcal O(\epsilon^2).
+\end{align}
+Au premier ordre,
+\begin{equation}
+G^\dagger=-G.
+\end{equation}
+Ainsi, \(G\) est antihermitien. On peut l’écrire
+\begin{equation}
+G=-\frac{i}{\hbar}H,
+\end{equation}
+où \(H\) est hermitien :
+\begin{equation}
+H^\dagger=H.
+\end{equation}
+L’opérateur infinitésimal d’évolution temporelle est donc
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+L’opérateur hermitien \(H\) est le Hamiltonien.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:48}
+\audiencequestion{Pourquoi peut-on négliger le terme \(\epsilon^2\) ?}
+\lecturerresponse{Le calcul est mené de façon cohérente au premier ordre en \(\epsilon\). Un calcul au second ordre devrait inclure tous les termes du second ordre, y compris le terme proportionnel à \(-\epsilon^2H^2/(2\hbar^2)\). L’approximation vient de l’expression tronquée de \(U(\epsilon)\), et non de l’hermiticité de \(H\).}
+\end{classroomqa}
+
+On peut construire un intervalle de temps fini à partir d’un grand nombre de petits intervalles. Découpons \(t\) en \(N\) pas de longueur \(t/N\). La répétition de la transformation infinitésimale donne
+\begin{equation}
+U(t)
+=
+\lim_{N\to\infty}
+\left(
+\mathbf 1-\frac{itH}{N\hbar}
+\right)^N
+=
+\exp\left(-\frac{iHt}{\hbar}\right).
+\end{equation}
+L’exponentielle est la version finie de la transformation infinitésimale.
+
+Faisons maintenant évoluer un état de \(t\) à \(t+\epsilon\) :
+\begin{align}
+\ket{\psi(t+\epsilon)}
+&=
+U(\epsilon)\ket{\psi(t)}
+\\
+&=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)\ket{\psi(t)}
++\mathcal O(\epsilon^2).
+\end{align}
+En soustrayant \(\ket{\psi(t)}\), en divisant par \(\epsilon\), puis en prenant la limite, on obtient
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+De façon équivalente,
+\begin{equation}
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=
+H\ket{\psi(t)}.
+\end{equation}
+C’est l’équation de Schr\"odinger dépendant du temps. Dans la représentation de position, elle devient
+\begin{equation}
+i\hbar\frac{\partial}{\partial t}\psi(x,t)
+=
+H\psi(x,t),
+\end{equation}
+où \(H\) agit comme un opérateur sur la fonction d’onde.
+
+L’équation de Schr\"odinger indépendante du temps est l’équation aux valeurs propres du Hamiltonien :
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+Les valeurs propres \(E\) sont les énergies mesurables possibles, ou niveaux d’énergie. Le même Hamiltonien détermine donc à la fois les énergies permises et l’évolution de l’état.
+
+Si l’état initial est un état propre d’énergie, son évolution est
+\begin{equation}
+\ket{E;t}
+=
+\exp\left(-\frac{iEt}{\hbar}\right)\ket{E}.
+\end{equation}
+Il reste le même vecteur propre d’énergie et acquiert seulement une phase.\footnote{Le signe moins est fixé par la dérivation précédente de \(U(t)=\exp(-iHt/\hbar)\). Une formulation orale ultérieure de la phase donne le signe opposé et est incompatible avec cette dérivation.}
+
+\begin{classroomqa}
+\lecturetimestamp{01:01:05}
+\audiencequestion{Comment un vecteur propre d’énergie évolue-t-il selon l’équation de Schr\"odinger dépendant du temps ?}
+\lecturerresponse{Conservons le ket. Puisque \(H\ket{E}=E\ket{E}\), l’évolution temporelle multiplie le vecteur propre d’énergie par une phase déterminée par son énergie : \(\exp(-iEt/\hbar)\).}
+\end{classroomqa}
+
+\section{Qu’appelle-t-on une symétrie ?}
+
+L’évolution temporelle est une transformation unitaire dans l’espace des états. Les transformations de symétrie constituent une autre classe importante.
+
+La symétrie de rotation joue un rôle central en physique atomique. Dans un atome d’hydrogène, l’électron se déplace dans le potentiel coulombien central. Une rotation du système de coordonnées ne modifie pas les équations ; une rotation physique de l’atome laisse également un atome d’hydrogène régi par les mêmes équations. L’état peut changer sous l’effet de la rotation, mais pas la loi dynamique.
+
+La translation en fournit un autre exemple. Un système isolé dans le vide devrait se comporter de la même façon lorsque toutes ses parties sont déplacées d’une même quantité. Cette précision est importante. Si un four est présent et que seul le système est rapproché de celui-ci, le système peut se comporter différemment ; le four brise cette symétrie de translation. Si le système et le four sont tous deux translatés ensemble, leur relation initiale est rétablie.
+
+Toute opération n’est pas une symétrie. Comprimer un cristal de sel gemme d’un facteur deux modifie généralement son comportement. La compression est une transformation bien définie, mais elle n’est généralement pas une symétrie.
+
+Une symétrie est donc une opération sur les états qui préserve la forme de la dynamique. Désignons-la par \(V\). Elle doit préserver la distinguabilité : deux états orthogonaux doivent rester orthogonaux après la transformation. Par conséquent,
+\begin{equation}
+V^\dagger V=\mathbf 1,
+\end{equation}
+et \(V\) est unitaire.
+
+\section{Les symétries commutent avec l’évolution temporelle}
+
+Supposons qu’un état initial \(\ket{\psi_1}\) évolue vers \(\ket{\psi_2}\) :
+\begin{equation}
+\ket{\psi_2}=U(t)\ket{\psi_1}.
+\end{equation}
+Appliquons une symétrie candidate \(V\) aux deux états :
+\begin{equation}
+\ket{\psi_1'}=V\ket{\psi_1},
+\qquad
+\ket{\psi_2'}=V\ket{\psi_2}.
+\end{equation}
+Si \(V\) est une symétrie de la dynamique, l’état initial transformé doit évoluer vers l’état final transformé :
+\begin{equation}
+\ket{\psi_2'}=U(t)\ket{\psi_1'}.
+\end{equation}
+En substituant les définitions, on obtient
+\begin{equation}
+VU(t)\ket{\psi_1}
+=
+U(t)V\ket{\psi_1}.
+\end{equation}
+Cette relation doit être vérifiée pour tout état initial. Par conséquent,
+\begin{equation}
+VU(t)=U(t)V.
+\end{equation}
+
+Les deux voies équivalentes peuvent être représentées par un diagramme commutatif.\footnote{Le diagramme reconstitue l’argument des deux voies développé entre les repères temporels 01:10:30 et 01:16:34.}\begin{figure}\centering
+\begin{tikzpicture}[>=Stealth]
+\node (a) at (0,0) {$\ket{\psi_1}$};
+\node (b) at (4.2,0) {$\ket{\psi_2}=U(t)\ket{\psi_1}$};
+\node (c) at (0,-2.0) {$V\ket{\psi_1}$};
+\node (d) at (4.2,-2.0) {$V\ket{\psi_2}=U(t)V\ket{\psi_1}$};
+
+\draw[->] (a) -- node[above] {$U(t)$} (b);
+\draw[->] (c) -- node[below] {$U(t)$} (d);
+\draw[->] (a) -- node[left] {$V$} (c);
+\draw[->] (b) -- node[right] {$V$} (d);
+\end{tikzpicture}\caption{Une opération de symétrie et l’évolution temporelle conduisent au même état final, quel que soit l’ordre dans lequel elles sont appliquées.}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:38}
+\audiencequestion{La symétrie doit-elle commuter avec l’évolution temporelle pour toutes les durées ?}
+\lecturerresponse{Oui. Une symétrie de la dynamique doit satisfaire la condition de commutation pour l’évolution temporelle complète.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:13}
+\audiencequestion{Cela signifie-t-il que l’on peut effectuer une rotation puis attendre, ou attendre puis effectuer une rotation ?}
+\lecturerresponse{Exactement. Si la rotation est une symétrie, les deux ordres donnent le même état final transformé.}
+\end{classroomqa}
+
+Pour un petit intervalle de temps,
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+La condition de commutation devient
+\begin{equation}
+V\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)
+=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)V
++\mathcal O(\epsilon^2).
+\end{equation}
+Les termes d’identité s’annulent, ce qui laisse
+\begin{equation}
+VH=HV,
+\end{equation}
+soit
+\begin{equation}
+[V,H]=0.
+\end{equation}
+Ainsi, une opération unitaire est une symétrie de la dynamique si et seulement si elle commute avec le Hamiltonien.
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:29}
+\audiencequestion{Pourquoi l’opérateur de symétrie \(V\) doit-il être unitaire ?}
+\lecturerresponse{Une symétrie doit préserver les distinctions logiques entre les états. Elle ne devrait pas transformer deux états orthogonaux mutuellement exclusifs en états qui ne seraient plus distinguables. La préservation de ces relations exige une transformation unitaire.}
+\end{classroomqa}
+
+Un opérateur sans dépendance explicite en temps qui commute avec \(H\) est conservé. Cela relie la symétrie à la conservation. En mécanique classique, cette relation s’exprime par le théorème de Noether. Dans la formulation quantique considérée ici, le critère central est le commutateur avec le Hamiltonien.
+
+\section{Symétries discrètes et continues}
+
+Les symétries peuvent être discrètes ou continues. Une réflexion dans un miroir est discrète : elle échange la gauche et la droite, sans qu’il existe entre les deux une suite de réflexions infinitésimales. L’échange de deux particules identiques est une autre opération discrète. Le retournement d’un objet à deux faces non marquées en donne un exemple du même type.
+
+Les rotations sont continues. Une rotation de \(90^\circ\) peut être construite à partir de nombreuses petites rotations autour du même axe. Les translations spatiales sont continues pour la même raison : un déplacement fini peut être construit à partir d’une multitude de déplacements infinitésimaux.
+
+Cette décomposition en petites transformations confère une forme particulière aux symétries continues. Au voisinage de l’identité, écrivons
+\begin{equation}
+V(\epsilon)
+=
+\mathbf 1-i\epsilon G+\mathcal O(\epsilon^2),
+\end{equation}
+où \(\epsilon\) paramètre la transformation. L’unitarité implique
+\begin{equation}
+G^\dagger=G.
+\end{equation}
+L’opérateur hermitien \(G\) est appelé le générateur de la symétrie.
+
+Si la transformation est une symétrie, alors
+\begin{equation}
+[H,V(\epsilon)]=0.
+\end{equation}
+En développant au premier ordre, on obtient
+\begin{equation}
+[H,G]=0.
+\end{equation}
+Les symétries continues sont donc engendrées par des opérateurs hermitiens qui commutent avec le Hamiltonien. Ces générateurs sont des grandeurs conservées.
+
+Le mot ``engendrée'' a ici un sens concret. Une transformation finie est construite en appliquant plusieurs fois la transformation infinitésimale, tout comme l’évolution temporelle finie est construite à partir de nombreux petits pas de temps.
+
+\section{Symétrie de translation et quantité de mouvement}
+
+Considérons la translation active d’une fonction d’onde vers la droite d’une distance \(\epsilon\). Si la fonction d’onde initiale est centrée en \(x_0\), la fonction d’onde translatée doit être centrée en \(x_0+\epsilon\). Sa valeur à la coordonnée \(x\) est donc celle de l’ancienne fonction d’onde évaluée en \(x-\epsilon\) :
+\begin{equation}
+(T(\epsilon)\psi)(x)=\psi(x-\epsilon).
+\end{equation}
+Pour un petit déplacement,
+\begin{equation}
+\psi(x-\epsilon)
+=
+\psi(x)-\epsilon\frac{d\psi(x)}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+On a donc
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\epsilon\frac{d}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+En utilisant
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx},
+\qquad
+\frac{d}{dx}=\frac{i}{\hbar}\hat p_x,
+\end{equation}
+la translation infinitésimale devient
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}\hat p_x
++\mathcal O(\epsilon^2).
+\end{equation}
+La translation finie correspondante est
+\begin{equation}
+T(\epsilon)
+=
+\exp\left(-\frac{i\epsilon}{\hbar}\hat p_x\right).
+\end{equation}
+Avec la convention \(V(\epsilon)=\mathbf 1-i\epsilon G+\cdots\), le paramètre de translation dimensionné donne
+\begin{equation}
+G_{\mathrm{trans}}=\frac{\hat p_x}{\hbar}.
+\end{equation}
+De façon équivalente, on dit que la quantité de mouvement est le générateur des translations spatiales lorsque le facteur \(\hbar\) apparaît explicitement dans l’exponentielle.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:08}
+\audiencequestion{Un signe moins a-t-il été perdu dans la dérivation de la translation ?}
+\lecturerresponse{La question vient du sens attribué au déplacement de la fonction d’onde. Une translation active vers la droite est représentée par \(\psi(x-\epsilon)\), et non par \(\psi(x+\epsilon)\). Avec cette correction, on obtient \(T(\epsilon)=\mathbf 1-i\epsilon\hat p_x/\hbar+\cdots\).}
+\end{classroomqa}
+
+La conservation de la quantité de mouvement dépend du Hamiltonien. Pour une particule libre se déplaçant à une dimension,
+\begin{equation}
+H=\frac{\hat p_x^2}{2m}.
+\end{equation}
+Tout opérateur commutant avec toute fonction de lui-même,
+\begin{equation}
+[H,\hat p_x]=0.
+\end{equation}
+le Hamiltonien de la particule libre est invariant par translation, et \(\hat p_x\) est conservé. Physiquement, la particule se comporte de la même façon quel que soit le choix de sa position initiale. La translation de la condition initiale translate simplement l’ensemble du mouvement.
+
+En trois dimensions,
+\begin{equation}
+H
+=
+\frac{\hat p_x^2+\hat p_y^2+\hat p_z^2}{2m}.
+\end{equation}
+Chaque composante de la quantité de mouvement commute avec \(H\) :
+\begin{equation}
+[H,\hat p_x]=[H,\hat p_y]=[H,\hat p_z]=0.
+\end{equation}
+Il existe une symétrie de translation distincte dans chaque direction spatiale. La quantité de mouvement est à la fois la grandeur conservée et le générateur associé à ces translations.
+
+Le cas suivant est celui de la symétrie de rotation. Les rotations sont plus complexes, car les rotations autour d’axes différents ne commutent généralement pas : une rotation de \(x\) suivie d’une rotation de \(y\) ne donne pas le même résultat que l’ordre inverse. Il en découle des générateurs de symétrie qui ne commutent pas, ainsi que la structure de groupe des rotations.

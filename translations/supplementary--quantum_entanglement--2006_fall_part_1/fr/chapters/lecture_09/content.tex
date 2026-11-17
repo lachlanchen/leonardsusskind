@@ -1,0 +1,690 @@
+\chapter{Évolution temporelle, conservation et spins couplés}
+
+Un état quantique n’est pas un point fixe de l’espace de Hilbert. Au fil du temps, il évolue, mais sans perdre sa normalisation, ses probabilités ni la distinction encodée dans les produits scalaires. Ces exigences déterminent presque entièrement la forme de la dynamique quantique. La linéarité donne un opérateur d’évolution temporelle, la conservation des probabilités rend cet opérateur unitaire, et une transformation unitaire infinitésimale est engendrée par un opérateur hermitien. Cet opérateur est le Hamiltonien. Nous déduirons l’équation de Schr\"odinger à partir de ces énoncés, verrons comment les états propres de l’énergie accumulent une phase, puis appliquerons le formalisme à deux calculs concrets : la précession d’un spin dans un champ magnétique et l’oscillation entre deux états d’une paire de spins couplés.
+
+\section{Évolution linéaire dans l’espace de Hilbert}
+
+Notons l’état à l’instant \(t\) par \(\ket{\psi(t)}\). Nous supposons que son lien avec l’état à l’instant zéro est linéaire :
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+La linéarité est un postulat, et non un théorème déduit de principes plus élémentaires. Elle fait partie des éléments de la mécanique quantique confirmés par l’expérience, et les tentatives visant généralement à la remplacer mettent en péril soit les probabilités, soit les lois de conservation. Dans une base donnée, \(U(t)\) est simplement une matrice dépendant du temps.
+
+Le vecteur dual obéit à la règle conjuguée. Si
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)},
+\end{equation}
+alors
+\begin{equation}
+\bra{\phi(t)}=\bra{\phi(0)}U^\dagger(t).
+\end{equation}
+Pour une matrice, le symbole dag signifie la conjugaison complexe suivie de la transposition. Le bra obéit donc à la même loi d’évolution que le ket, exprimée dans l’espace dual.
+
+\subsection{La conservation des probabilités implique l’unitarité}
+
+Un état normalisé représente une probabilité totale égale à un :
+\begin{equation}
+\braket{\psi(t)}{\psi(t)}=1.
+\end{equation}
+L’évolution temporelle doit préserver cette norme. En fait, toute application linéaire qui préserve la norme de chaque vecteur préserve aussi tous les produits scalaires. Géométriquement, préserver les longueurs de deux vecteurs et de leur différence préserve le triangle qu’ils forment et, par conséquent, leur angle. Dans un espace vectoriel complexe, on aboutit à la même conclusion en considérant également des combinaisons comportant un facteur \(i\).
+
+Ainsi, pour \(\ket{\phi}\) et \(\ket{\psi}\) quelconques,
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+En substituant les lois d’évolution, on obtient
+\begin{equation}
+\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Comme cette équation vaut pour toute paire de vecteurs,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+Un tel opérateur est unitaire. Son analogue scalaire est un nombre complexe de module un,
+\begin{equation}
+e^{i\theta}\bigl(e^{i\theta}\bigr)^*=1.
+\end{equation}
+Un opérateur unitaire est la généralisation matricielle d’une phase pure : il peut faire tourner un état dans l’espace de Hilbert, mais ne peut ni l’étirer ni le contracter.
+
+\section{Le générateur infinitésimal}
+
+L’évolution sur un intervalle fini se construit à partir de très petits pas de temps. Soit \(\epsilon\) le temps écoulé, suffisamment petit pour que l’on puisse négliger les termes d’ordre \(\epsilon^2\). Lorsque le temps écoulé est nul, rien ne se passe, donc
+\begin{equation}
+U(0)=I.
+\end{equation}
+La correction dominante doit être proportionnelle à \(\epsilon\). Nous l’écrivons sous la forme conventionnelle
+\begin{equation}
+\boxed{U(\epsilon)=I-\frac{i\epsilon}{\hbar}H}.
+\end{equation}
+À ce stade, seul le facteur \(\epsilon\) s’impose. \(i\), \(\hbar\) et le symbole \(H\) sont choisis de manière que l’opérateur obtenu au bout du calcul ait la normalisation usuelle et soit hermitien.
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:46}
+\audiencequestion{Pourquoi la constante de Planck est-elle si remarquablement petite dans les unités usuelles ?}
+\lecturerresponse{Cette valeur numérique tient aux unités choisies par les humains. Les chimistes ont retenu des quantités macroscopiques adaptées à des récipients qu’on peut tenir dans la main, tandis que les atomes sont immensément plus petits que nous. Dans des unités adaptées à ces échelles macroscopiques, un quantum atomique d’action doit paraître infime. Il ne s’agit pas d’un mystère distinct touchant à la dynamique ; cela tient en grande partie aux échelles humaines et historiques intégrées aux unités.}
+\end{classroomqa}
+
+En prenant le conjugué hermitien,
+\begin{equation}
+U^\dagger(\epsilon)
+=I+\frac{i\epsilon}{\hbar}H^\dagger.
+\end{equation}
+Multiplions maintenant les expressions et ne gardons que les termes du premier ordre :
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(I+\frac{i\epsilon}{\hbar}H^\dagger\right)
+\left(I-\frac{i\epsilon}{\hbar}H\right) \\
+&=
+I+\frac{i\epsilon}{\hbar}\left(H^\dagger-H\right)
++O(\epsilon^2).
+\end{align}
+L’unitarité exige que ce produit soit égal à \(I\), d’où
+\begin{equation}
+\boxed{H^\dagger=H}.
+\end{equation}
+Le générateur infinitésimal de l’évolution temporelle est hermitien. Puisque les opérateurs hermitiens représentent des observables, tout système dynamique possède une observable qui engendre son évolution au cours du temps. C’est le Hamiltonien. Nous notons l’opérateur \(H\) et réservons \(E\) à ses valeurs possibles mesurées, les valeurs propres.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:34}
+\audiencequestion{Pourquoi appeler ce générateur l’énergie ? L’énergie n’est-elle pas \(p^2/2m\), ou la capacité à fournir un travail ?}
+\lecturerresponse{Ce sont des descriptions utiles dans certains cas classiques, mais elles ne constituent pas une définition générale. L’expression \(p^2/2m\) ne désigne que l’énergie cinétique d’une particule libre non relativiste ; elle ne définit pas, par exemple, l’énergie stockée dans un champ électromagnétique. Pour un système abstrait, la première propriété universelle à exiger de l’énergie est la conservation. Nous démontrerons bientôt que la valeur moyenne de \(H\) se conserve, et les phases de ses états propres satisferont également \(E=\hbar\omega\). Ces deux faits permettent d’identifier le générateur à l’énergie.}
+\end{classroomqa}
+
+\section{Du petit pas à l’équation de Schr\"odinger}
+
+La mise à jour infinitésimale est déjà, sous une forme déguisée, une équation différentielle. Pour une origine du temps arbitraire,
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+\lim_{\epsilon\to0}
+\frac{\ket{\psi(t+\epsilon)}-\ket{\psi(t)}}{\epsilon}.
+\end{equation}
+Au tableau, l’expression est d’abord écrite pour \(t=0\) ; un changement d’origine donne la forme générale ci-dessus.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_03.png}
+\caption{Le quotient différentiel qui transforme l’évolution infinitésimale en équation différentielle.}
+\lectureframe{00:22:15}
+\end{figure}
+
+Posons
+\begin{equation}
+\ket{\psi(t+\epsilon)}
+=
+\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}.
+\end{equation}
+Alors
+\begin{align}
+\frac{d}{dt}\ket{\psi(t)}
+&=
+\lim_{\epsilon\to0}
+\frac{\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}
+-\ket{\psi(t)}}{\epsilon} \\
+&=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{align}
+De façon équivalente,
+\begin{equation}
+\boxed{
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+C’est l’équation de Schr\"odinger. Une fois connus \(H\) et l’état à un instant donné, elle détermine les états aux instants ultérieurs. Les probabilités des mesures ultérieures s’obtiennent ensuite selon les règles ordinaires de la mesure.
+
+\section{États propres de l’énergie et phase tournante}
+
+La solution la plus simple part d’un vecteur propre du Hamiltonien :
+\begin{equation}
+H\ket{\psi_E}=E\ket{\psi_E}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_09_figure_04.png}
+\caption{L’équation aux valeurs propres de l’énergie écrite au tableau.}
+\lectureframe{00:28:22}
+\end{figure}
+
+Comme \(H\) renvoie \(\ket{\psi_E}\) dans la même direction unidimensionnelle, l’évolution temporelle ne peut le mélanger à un autre vecteur propre. Elle ne peut que le multiplier par un scalaire :
+\begin{equation}
+\ket{\psi_E(t)}=f(t)\ket{\psi_E}.
+\end{equation}
+En substituant dans l’équation de Schr\"odinger, on obtient
+\begin{align}
+i\hbar\,\dot f(t)\ket{\psi_E}
+&=
+f(t)H\ket{\psi_E} \\
+&=
+E f(t)\ket{\psi_E}.
+\end{align}
+Par conséquent,
+\begin{equation}
+\dot f(t)=-\frac{iE}{\hbar}f(t),
+\qquad
+f(t)=e^{-iEt/\hbar},
+\end{equation}
+et
+\begin{equation}
+\boxed{
+\ket{\psi_E(t)}
+=e^{-iEt/\hbar}\ket{\psi_E(0)}
+}.
+\end{equation}
+Un état propre de l’énergie est stationnaire au sens où son rayon dans l’espace de Hilbert ne se déplace pas. Son ket accumule néanmoins une phase.
+
+L’exponentielle peut s’écrire
+\begin{equation}
+e^{-iEt/\hbar}
+=
+\cos\!\left(\frac{Et}{\hbar}\right)
+-i\sin\!\left(\frac{Et}{\hbar}\right).
+\end{equation}
+Le signe moins et l’absence d’un facteur \(i\) supplémentaire dans le sinus ont été corrigés pendant le calcul au tableau. La pulsation est
+\begin{equation}
+\omega=\frac{E}{\hbar},
+\qquad
+\boxed{E=\hbar\omega}.
+\end{equation}
+De façon équivalente, en utilisant la fréquence ordinaire \(\nu=\omega/(2\pi)\), on a \(E=h\nu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_09_figure_05.png}
+\caption{La solution en phase et la relation entre l’énergie et la--fréquence sont développées sur des tableaux adjacents.}
+\lectureframe{00:36:19}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:43}
+\audiencequestion{Pourquoi les facteurs \(i\) et \(\hbar\) ont-ils été introduits dans l’opérateur infinitésimal avant que le calcul ne l’exige ?}
+\lecturerresponse{Ce sont des conventions choisies en gardant le résultat à l’esprit. Sans \(i\), l’unitarité rendrait le générateur anti-hermitien. Le multiplier par \(i\) en fait une observable hermitienne aux valeurs propres réelles. Le facteur \(\hbar\) donne à ces valeurs propres les unités et la normalisation conventionnelles de l’énergie. L’énoncé physique est l’unitarité ; ces facteurs mettent son générateur sous la forme usuelle.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:18}
+\audiencequestion{La relation \(E=\hbar\omega\) concerne-t-elle uniquement les ondes électromagnétiques et les photons ?}
+\lecturerresponse{Non. Les photons en sont un cas important, mais la relation est plus générale. Tout état propre du Hamiltonien acquiert une phase de pulsation \(E/\hbar\). Relier la fréquence d’un mode du champ électromagnétique à celle de son photon demande d’autres éléments de physique, mais la relation énergie--phase découle déjà de l’évolution temporelle quantique.}
+\end{classroomqa}
+
+\section{Superposition dans la base d’énergie}
+
+Un état propre de l’énergie ne change que par une phase globale, laquelle ne peut affecter une probabilité. Une dynamique intéressante apparaît lorsqu’un état contient plusieurs vecteurs propres de l’énergie. Comme un Hamiltonien hermitien possède une base propre orthonormale complète,
+\begin{equation}
+H\ket{\psi_n}=E_n\ket{\psi_n},
+\qquad
+\ket{\psi(0)}=\sum_n\alpha_n\ket{\psi_n}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_06.png}
+\caption{Décomposition d’un état arbitraire sur les vecteurs propres du Hamiltonien.}
+\lectureframe{00:38:35}
+\end{figure}
+
+La linéarité permet à chaque composante d’évoluer séparément :
+\begin{equation}
+\boxed{
+\ket{\psi(t)}
+=
+\sum_n\alpha_n e^{-iE_n t/\hbar}\ket{\psi_n}
+}.
+\end{equation}
+Les composantes de haute énergie tournent rapidement dans le plan complexe ; celles de basse énergie tournent plus lentement. Ce qui modifie les probabilités mesurables n’est pas une phase commune à l’état entier, mais l’évolution des phases relatives entre les composantes associées à des \(E_n\) différents.
+
+Dans la base d’énergie,
+\begin{equation}
+\begin{aligned}
+H&=
+\begin{pmatrix}
+E_1&0&\cdots\\
+0&E_2&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix},\\[0.6em]
+U(t)&=
+\begin{pmatrix}
+e^{-iE_1t/\hbar}&0&\cdots\\
+0&e^{-iE_2t/\hbar}&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix}.
+\end{aligned}
+\end{equation}
+Pour un Hamiltonien indépendant du temps, on peut résumer la même affirmation sans choisir de base par
+\begin{equation}
+\boxed{U(t)=e^{-iHt/\hbar}},
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:17}
+\audiencequestion{Cette décomposition est-elle essentiellement une série de Fourier, et est-elle analogue aux décompositions utilisées pour la conduction thermique ?}
+\lecturerresponse{Il s’agit bien d’une décomposition de type Fourier en temps : chaque vecteur propre de l’énergie est associé à une fréquence définie. Les méthodes de Fourier et de Laplace permettent aussi de séparer les modes dans de nombreuses équations classiques, notamment celles de la diffusion. La ressemblance mathématique est réelle, mais il faut examiner au cas par cas les affirmations sur la grandeur physique qui correspond à la fréquence. En mécanique quantique, la relation précise est fixée par l’équation de Schr\"odinger.}
+\end{classroomqa}
+
+\subsection{Combinaison de systèmes}
+
+Pour deux systèmes non interactifs \(A\) et \(B\), le Hamiltonien combiné est la somme des générateurs propres à chacun, agissant dans l’espace produit :
+\begin{equation}
+H_{AB}
+=
+H_A\otimes I_B+I_A\otimes H_B.
+\end{equation}
+Si
+\begin{equation}
+H_A\ket{a}=E_a\ket{a},
+\qquad
+H_B\ket{b}=E_b\ket{b},
+\end{equation}
+alors
+\begin{equation}
+H_{AB}\ket{a,b}=(E_a+E_b)\ket{a,b}.
+\end{equation}
+Pour des systèmes séparés et non interactifs, les énergies et, par conséquent, les pulsations des phases s’additionnent. Une interaction ajoute un terme \(H_{\mathrm{int}}\) ; cette somme simple ne représente alors plus l’énergie totale.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:20}
+\audiencequestion{Si deux systèmes distincts possèdent des composantes de même fréquence, que se passe-t-il lorsqu’on les rapproche ?}
+\lecturerresponse{Pour des systèmes non interactifs, les valeurs propres de l’énergie combinée sont les sommes des valeurs propres de chaque système. L’égalité de deux fréquences peut entraîner une dégénérescence, mais elle ne mélange pas, à elle seule, les vecteurs propres correspondants. Le mélange nécessite un terme d’interaction ou un choix de base à l’intérieur d’un sous-espace dégénéré. Dès que les systèmes interagissent, il faut diagonaliser le Hamiltonien complet pour résoudre ce nouveau problème.}
+\end{classroomqa}
+
+\section{Valeurs moyennes et commutateurs}
+
+Nous avons suivi l’état en maintenant les observables fixes. C’est la représentation de Schr\"odinger. Soit \(A\) une observable sans dépendance explicite en temps. Sa valeur moyenne est
+\begin{equation}
+\langle A\rangle_t
+=
+\bra{\psi(t)}A\ket{\psi(t)}.
+\end{equation}
+Dérivons par rapport au temps le bra et le ket :
+\begin{equation}
+\frac{d}{dt}\langle A\rangle_t
+=
+\bra{\dot\psi}A\ket{\psi}
++
+\bra{\psi}A\ket{\dot\psi}.
+\end{equation}
+L’équation de Schr\"odinger et son conjugué hermitien donnent
+\begin{equation}
+\ket{\dot\psi}
+=-\frac{i}{\hbar}H\ket{\psi},
+\qquad
+\bra{\dot\psi}
+=\frac{i}{\hbar}\bra{\psi}H.
+\end{equation}
+D’où
+\begin{align}
+\frac{d}{dt}\langle A\rangle_t
+&=
+\frac{i}{\hbar}\bra{\psi}HA\ket{\psi}
+-\frac{i}{\hbar}\bra{\psi}AH\ket{\psi} \\
+&=
+\frac{i}{\hbar}\bra{\psi}(HA-AH)\ket{\psi}.
+\end{align}
+Définissons le commutateur
+\begin{equation}
+[H,A]=HA-AH.
+\end{equation}
+L’équation du mouvement pour une valeur moyenne s’écrit alors
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle A\rangle_t
+=
+\frac{i}{\hbar}\langle[H,A]\rangle_t
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_07.png}
+\caption{L’équation pour la valeur moyenne et le commutateur \(AB-BA=[A,B]\).}
+\lectureframe{00:51:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:13}
+\audiencequestion{Pourquoi le commutateur dans cette équation figure-t-il lui-même à l’intérieur d’une valeur moyenne ?}
+\lecturerresponse{Le commutateur est un opérateur. Tout opérateur placé entre \(\bra{\psi}\) et \(\ket{\psi}\) a une valeur moyenne ; \(\bra{\psi}[H,A]\ket{\psi}\) est donc simplement la moyenne de ce commutateur dans l’état actuel.}
+\end{classroomqa}
+
+\subsection{Lois de conservation}
+
+Posons \(A=H\). Un opérateur commute toujours avec lui-même :
+\begin{equation}
+[H,H]=HH-HH=0.
+\end{equation}
+Par conséquent,
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle H\rangle_t=0
+}.
+\end{equation}
+La valeur moyenne du Hamiltonien se conserve. Voilà la raison structurelle annoncée pour identifier \(H\) à l’énergie. Tout système isolé possède un Hamiltonien, et tout Hamiltonien indépendant du temps fournit cette loi de conservation.
+
+Plus généralement,
+\begin{equation}
+[H,A]=0
+\quad\Longrightarrow\quad
+\frac{d}{dt}\langle A\rangle_t=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:41}
+\audiencequestion{Quelle est l’interprétation physique de l’ensemble des opérateurs qui commutent avec \(H\), et comprend-il des grandeurs autres que l’énergie ?}
+\lecturerresponse{Ce sont les observables conservées du système. Celles qui apparaissent dépendent du Hamiltonien. Une particule libre conserve sa quantité de mouvement, tandis qu’une force peut détruire cette conservation. L’énergie est toujours présente parce que \(H\) commute avec lui-même ; les autres opérateurs qui commutent avec lui expriment des symétries et des lois de conservation supplémentaires.}
+\end{classroomqa}
+
+\section{Un spin dans un champ magnétique}
+
+Considérons un spin décrit par les opérateurs de Pauli
+\begin{equation}
+\boldsymbol{\sigma}
+=(\sigma_1,\sigma_2,\sigma_3)
+\end{equation}
+dans un champ magnétique extérieur uniforme \(\mathbf B\). Le moment magnétique est proportionnel au spin. Dans la convention utilisée ici,
+\begin{equation}
+\boxed{
+H=\frac{\mu}{2}\boldsymbol{\sigma}\cdot\mathbf B
+}.
+\end{equation}
+Le facteur \(1/2\), le signe et l’échelle dépendant de la charge peuvent être intégrés à la définition de \(\mu\). Le champ est traité classiquement : un grand aimant stable fournit \(\mathbf B\), et nous ne modélisons pas l’état quantique de cet aimant.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_09_figure_08.png}
+\caption{L’opérateur moment magnétique se couple au champ magnétique extérieur.}
+\lectureframe{01:01:45}
+\end{figure}
+
+Choisissons le champ selon le troisième axe,
+\begin{equation}
+\mathbf B=B\hat{\mathbf z},
+\qquad
+H=\frac{\mu B}{2}\sigma_3.
+\end{equation}
+Nous suivrons les valeurs moyennes des trois composantes du spin. Pour alléger les équations, posons
+\begin{equation}
+s_i(t)=\langle\sigma_i\rangle_t.
+\end{equation}
+La composante longitudinale obéit à
+\begin{equation}
+\dot s_3
+=
+\frac{i}{\hbar}\langle[H,\sigma_3]\rangle
+=0,
+\end{equation}
+car \(H\) est proportionnel à \(\sigma_3\). La projection du spin selon le champ est fixe. Géométriquement, l’extrémité du spin moyen reste sur un cône d’angle au sommet constant autour de l’axe du champ.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_09_figure_09.png}
+\caption{La composante longitudinale fixe du spin implique un mouvement sur un cône autour de l’axe du champ magnétique.}
+\lectureframe{01:04:45}
+\end{figure}
+
+Pour la première composante transverse,
+\begin{equation}
+\dot s_1
+=
+\frac{i\mu B}{2\hbar}
+\langle[\sigma_3,\sigma_1]\rangle.
+\end{equation}
+On peut vérifier directement le commutateur à partir de
+\begin{equation}
+\begin{aligned}
+\sigma_3&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+&
+\sigma_1&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.5em]
+\sigma_2&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix}.
+\end{aligned}
+\end{equation}
+En effet,
+\begin{equation}
+\sigma_3\sigma_1=i\sigma_2,
+\qquad
+\sigma_1\sigma_3=-i\sigma_2,
+\end{equation}
+donc
+\begin{equation}
+[\sigma_3,\sigma_1]=2i\sigma_2.
+\end{equation}
+Par conséquent,
+\begin{equation}
+\dot s_1=-\frac{\mu B}{\hbar}s_2.
+\end{equation}
+De même, en utilisant \([\sigma_3,\sigma_2]=-2i\sigma_1\),
+\begin{equation}
+\dot s_2=\frac{\mu B}{\hbar}s_1.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_10.png}
+\caption{Calcul du commutateur de Pauli qui mène à l’équation du mouvement transverse.}
+\lectureframe{01:09:35}
+\end{figure}
+
+Posons
+\begin{equation}
+\Omega=\frac{\mu B}{\hbar}.
+\end{equation}
+Les trois équations sont
+\begin{equation}
+\dot s_1=-\Omega s_2,
+\qquad
+\dot s_2=\Omega s_1,
+\qquad
+\dot s_3=0.
+\end{equation}
+Une solution d’amplitude transverse \(s_\perp\) est
+\begin{equation}
+s_1(t)=s_\perp\cos(\Omega t+\varphi),
+\qquad
+s_2(t)=s_\perp\sin(\Omega t+\varphi),
+\end{equation}
+où \(s_3\) est constante.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_09_figure_11.png}
+\caption{Les composantes transverses du spin forment un couple sinus--cosinus de pulsation \(\mu B/\hbar\).}
+\lectureframe{01:11:45}
+\end{figure}
+
+Le spin moyen précesse donc autour du champ magnétique comme un gyroscope. Le choix d’un champ dirigé selon \(z\) n’était qu’une commodité. Pour un champ de direction quelconque, la composante parallèle à \(\mathbf B\) se conserve et la composante perpendiculaire tourne autour de lui.
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:02}
+\audiencequestion{La solution en sinus et cosinus doit-elle comporter une phase supplémentaire ?}
+\lecturerresponse{Oui. La phase \(\varphi\) spécifie la direction initiale dans le plan transverse, ou, de façon équivalente, le choix de l’instant appelé \(t=0\). La fixer à zéro revient simplement à choisir un axe transverse particulier le long duquel le spin commence.}
+\end{classroomqa}
+
+\subsection{Préparation et mesure}
+
+Supposons qu’un ensemble soit préparé dans l’état propre \(+1\) de \(\sigma_1\). À \(t=0\), une mesure de \(\sigma_1\) donnera certainement \(+1\), tandis que des mesures de \(\sigma_2\) ou de \(\sigma_3\) donnent des probabilités égales pour \(\pm1\). Après un quart de période de précession, l’état a tourné pour devenir l’état propre \(+1\) de \(\sigma_2\) : le résultat de mesure de \(\sigma_2\) est alors certain, et celui de \(\sigma_1\) est parfaitement indéterminé. Après un autre quart de période, l’état atteint l’état propre \(-1\) de \(\sigma_1\). Les valeurs moyennes tournantes ont donc un sens opérationnel direct.
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:04}
+\audiencequestion{Si les valeurs moyennes exigent de nombreux électrons, leurs phases différentes ne vont-elles pas s’annuler et effacer la précession ?}
+\lecturerresponse{Non, si la même expérience est réalisée sur chaque électron. Une préparation identique donne à chacun le même état initial, et donc la même évolution de phase. Si les phases initiales ne sont pas contrôlées, l’ensemble ne correspond pas à une préparation pure ; c’est un état mixte, et la déphasing peut réduire la moyenne transverse.}
+\end{classroomqa}
+
+\section{Deux spins couplés}
+
+Considérons maintenant deux spins. Dire simplement qu’ils sont intriqués ne suffit pas à prédire leur évolution. Pour décrire la dynamique, il faut un Hamiltonien.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:49}
+\audiencequestion{Si deux électrons sont intriqués de telle sorte qu’on obtienne des résultats opposés selon tout axe commun, cela signifie-t-il que leurs mouvements sont toujours déphasés de \(180^\circ\) ?}
+\lecturerresponse{On ne peut tirer aucune conclusion dynamique de la seule intrication. L’anticorrélation évoquée décrit l’état singulet, mais son évolution ultérieure dépend de l’opérateur énergie. Il faut d’abord préciser s’il existe un champ extérieur, une interaction entre les spins, ou les deux.}
+\end{classroomqa}
+
+Considérons l’interaction isotrope simple dans laquelle chaque spin fournit le champ effectif ressenti par l’autre :
+\begin{equation}
+\boxed{
+H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}
+=
+J\left(
+\sigma_1\tau_1+\sigma_2\tau_2+\sigma_3\tau_3
+\right)
+}.
+\end{equation}
+Les opérateurs \(\boldsymbol{\sigma}\) agissent sur le premier spin et \(\boldsymbol{\tau}\) sur le second. Le couplage \(J\) fixe l’échelle d’énergie ; sa valeur et son signe ne sont pas précisés.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_09_figure_12.png}
+\caption{L’interaction isotrope entre deux spins \(H\propto\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\).}
+\lectureframe{01:19:20}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:49}
+\audiencequestion{Placer deux électrons intriqués dans un champ magnétique uniforme va-t-il nécessairement les désintriquer ?}
+\lecturerresponse{Pas nécessairement. Un champ modifie le Hamiltonien et peut tendre à aligner les spins, surtout s’il est intense, mais l’évolution unitaire dans un champ uniforme ne garantit pas à elle seule la disparition de l’intrication. La réponse dépend du Hamiltonien complet et de l’état initial.}
+\end{classroomqa}
+
+\subsection{Énergies des états triplet et singulet}
+
+L’espace de Hilbert des deux spins est de dimension quatre. L’interaction est diagonale dans la base triplet--singulet :
+\begin{align}
+\ket{T_+}&=\ket{\uparrow\uparrow}, \\
+\ket{T_0}&=
+\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt2}, \\
+\ket{T_-}&=\ket{\downarrow\downarrow}, \\
+\ket{S}&=
+\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt2}.
+\end{align}
+Les trois états triplets ont la même énergie \(E_T\) ; le singulet a une autre énergie \(E_S\). Il y a donc quatre vecteurs propres indépendants, mais seulement deux niveaux d’énergie distincts. Le niveau triplet est dégénéré trois fois.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_13.png}
+\caption{Le Hamiltonien des spins couplés possède un niveau triplet dégénéré et un niveau singulet distinct.}
+\lectureframe{01:20:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:16}
+\audiencequestion{Que se passe-t-il si l’état initial est déjà l’état propre singulet de l’énergie ?}
+\lecturerresponse{Il reste dans l’état singulet et acquiert seulement la phase \(e^{-iE_St/\hbar}\). Comme pour tout état propre de l’énergie unique, ses propriétés mesurables ne changent pas du seul fait que le ket entier soit multiplié par cette phase commune.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:54}
+\audiencequestion{Un champ magnétique extérieur fournit-il de l’énergie au système des deux spins pendant ce calcul ?}
+\lecturerresponse{L’exemple résolu ne comporte aucun champ extérieur. Le seul champ dont il est question est celui de l’interaction mutuelle représentée par \(J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\). Ajouter un champ extérieur ajouterait un autre terme à \(H\) et définirait un problème différent.}
+\end{classroomqa}
+
+\subsection{Départ avec un spin haut et un spin bas}
+
+Un état propre de l’énergie ne ferait qu’accumuler une phase ; choisissons donc un état produit qui n’est pas un état propre de l’énergie :
+\begin{equation}
+\ket{\psi(0)}=\ket{\uparrow\downarrow}.
+\end{equation}
+Décomposons-le sur les deux vecteurs propres pertinents :
+\begin{equation}
+\boxed{
+\ket{\uparrow\downarrow}
+=
+\frac{1}{\sqrt2}\ket{T_0}
++
+\frac{1}{\sqrt2}\ket{S}
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_14.png}
+\caption{Décomposition de l’état produit \(\ket{\uparrow\downarrow}\) en composantes triplet et singulet.}
+\lectureframe{01:24:30}
+\end{figure}
+
+Chaque composante énergétique reçoit maintenant sa propre phase :
+\begin{equation}
+\ket{\psi(t)}
+=
+\frac{e^{-iE_Tt/\hbar}}{\sqrt2}\ket{T_0}
++
+\frac{e^{-iE_St/\hbar}}{\sqrt2}\ket{S}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:25:59}
+\audiencequestion{Laquelle est la plus grande, l’énergie triplet \(E_T\) ou l’énergie singulet \(E_S\) ?}
+\lecturerresponse{Cela dépend du signe du couplage. Pour \(H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\) avec \(J>0\), le singulet est le plus bas en énergie et le triplet le plus haut ; le signe inverse inverse l’ordre. Ajouter une constante aux deux énergies ne change qu’une phase globale ; on peut donc fixer l’un ou l’autre niveau à zéro sans modifier les probabilités de transition.}
+\end{classroomqa}
+
+Revenons à la base des états produits :
+\begin{align}
+\ket{\psi(t)}
+&=
+\frac12
+\left(
+e^{-iE_Tt/\hbar}+e^{-iE_St/\hbar}
+\right)\ket{\uparrow\downarrow} \\
+&\quad+
+\frac12
+\left(
+e^{-iE_Tt/\hbar}-e^{-iE_St/\hbar}
+\right)\ket{\downarrow\uparrow}.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_15.png}
+\caption{L’état évolué recomposé dans la base \(\ket{\uparrow\downarrow}\), \(\ket{\downarrow\uparrow}\).}
+\lectureframe{01:30:40}
+\end{figure}
+
+À \(t=0\), le coefficient de \(\ket{\downarrow\uparrow}\) s’annule, comme il se doit. Par la suite, la phase relative entre les composantes singulet et triplet fait croître ce coefficient. Définissons l’énergie moyenne et l’écart d’énergie,
+\begin{equation}
+\overline E=\frac{E_T+E_S}{2},
+\qquad
+\Delta E=E_T-E_S.
+\end{equation}
+En factorisant la phase associée à l’énergie moyenne, on obtient
+\begin{equation}
+\boxed{
+\begin{aligned}
+\ket{\psi(t)}
+&=e^{-i\overline E t/\hbar}\Biggl[
+\cos\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\uparrow\downarrow}
+\\
+&\qquad
+-i\sin\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\downarrow\uparrow}
+\Biggr]
+\end{aligned}
+}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_16.png}
+\caption{L’énergie moyenne devient une phase commune, tandis que l’écart d’énergie entre singulet--triplet apparaît dans les amplitudes en sinus et cosinus.}
+\lectureframe{01:35:15}
+\end{figure}
+
+Le facteur \(e^{-i\overline E t/\hbar}\) est commun à tout le ket et disparaît de chaque probabilité. Les probabilités mesurables sont
+\begin{equation}
+P_{\uparrow\downarrow}(t)
+=
+\cos^2\!\left(\frac{\Delta E\,t}{2\hbar}\right),
+\qquad
+P_{\downarrow\uparrow}(t)
+=
+\sin^2\!\left(\frac{\Delta E\,t}{2\hbar}\right).
+\end{equation}
+L’état oscille de \(\ket{\uparrow\downarrow}\) à \(\ket{\downarrow\uparrow}\) puis revient, à un rythme déterminé uniquement par la différence d’énergie. Aux instants intermédiaires, les deux amplitudes sont non nulles et, sauf à certains instants particuliers, les deux spins sont intriqués.
+
+Ce calcul illustre une méthode générale. Choisir la base dans laquelle se pose la question physique, développer l’état initial sur les vecteurs propres du Hamiltonien, laisser chaque vecteur propre acquérir sa propre phase, puis recombiner les composantes dans la base de mesure. Une fois le Hamiltonien diagonalisé, la dynamique quantique devient systématique ; tout mouvement observable est porté par la phase relative.

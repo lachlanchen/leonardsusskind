@@ -1,0 +1,771 @@
+\chapter{États réduits, entropie d’intrication et évolution unitaire}
+
+Une matrice densité apparaît d’abord comme la description naturelle d’une préparation incomplète : un système quantique a été préparé, mais nous ne savons pas exactement comment. L’intrication confère au même objet mathématique un rôle plus profond. Même lorsque l’état d’un système composé est parfaitement connu, un sous-système n’a généralement pas de vecteur d’état qui lui soit propre. Sa matrice densité réduite contient tout ce que l’on peut prédire localement. Nous allons établir ce résultat en composantes, le vérifier sur deux états de spin et utiliser l’entropie pour distinguer les états produits des états intriqués. Nous aborderons ensuite une seconde question : comment un état quantique évolue au cours du temps. La conservation des produits scalaires nous conduira à l’unitarité, à un générateur hermitien et à l’équation de Schr\"odinger.
+
+\section{Matrices densité et préparation incomplète}
+
+Supposons qu’un électron ait été placé dans un champ magnétique intense et qu’on l’ait laissé s’aligner sur celui-ci. Quelqu’un d’autre a choisi la direction du champ et préparé l’électron, mais ne nous a pas indiqué cette direction. Le spin peut donc être dans un état pur parfaitement déterminé, même si nous ignorons lequel. Nous pouvons connaître une distribution de probabilités sur les préparations possibles, ou ne rien savoir du tout. Une matrice densité \(\rho\) est la description quantique précisément adaptée à ce type d’information incomplète.
+
+L’analogue classique est une densité de probabilité dans l’espace des phases ou une distribution de probabilité sur des configurations discrètes. L’objet quantique est un opérateur qui possède trois propriétés essentielles :
+\begin{equation}
+\rho^\dagger=\rho,
+\qquad
+\operatorname{Tr}\rho=1,
+\qquad
+\lambda_i\geq 0,
+\end{equation}
+où les \(\lambda_i\) sont les valeurs propres de \(\rho\). L’hermiticité garantit que les valeurs propres sont réelles et fournit une base propre orthonormée. La positivité en fait des probabilités admissibles, et la normalisation donne
+\begin{equation}
+\sum_{i=1}^{n}\lambda_i=1.
+\end{equation}
+Dans la base propre de \(\rho\), \(\lambda_i\) est la probabilité attribuée au \(i\)-ième état propre.
+
+L’ignorance complète correspond au cas où aucune direction de l’espace de Hilbert n’est privilégiée :
+\begin{equation}
+\rho_{\mathrm{max}}=\frac{1}{n}I.
+\end{equation}
+Toutes les valeurs propres valent \(1/n\). À l’extrême opposé, la connaissance complète est représentée par un état normalisé \(\ket{\psi}\), avec
+\begin{equation}
+\rho_\psi=\ket{\psi}\bra{\psi}.
+\end{equation}
+Il s’agit du projecteur sur le sous-espace de dimension un engendré par \(\ket{\psi}\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:47}
+\audiencequestion{Une préparation peut-elle être décrite comme un choix équiprobable entre deux états non orthogonaux, par exemple deux directions de spin séparées de \(45^\circ\) ?}
+\lecturerresponse{Une telle procédure de préparation est possible, mais ces deux poids ne sont généralement pas les valeurs propres de la matrice densité obtenue. On forme d’abord la somme pondérée des projecteurs, puis on la diagonalise. L’interprétation simple des valeurs propres en termes de probabilités vaut dans la base propre orthonormée de \(\rho\), et pas nécessairement pour les états non orthogonaux désignés par la personne qui effectue la préparation.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:07:47}
+\audiencequestion{Qu’est-ce qui distingue un état pur d’un état mixte ?}
+\lecturerresponse{La matrice densité d’un état pur possède une seule valeur propre non nulle, égale à \(1\). Un état mixte possède plusieurs valeurs propres non nulles. La littérature ancienne employait le mot allemand \emph{Gemisch} ; le terme moderne est simplement \emph{état mixte}.}
+\end{classroomqa}
+
+Vérifions le spectre du projecteur associé à un état pur. La normalisation donne
+\begin{equation}
+\rho_\psi\ket{\psi}
+=\ket{\psi}\braket{\psi}{\psi}
+=\ket{\psi},
+\end{equation}
+Ainsi, \(\ket{\psi}\) est un vecteur propre de valeur propre \(1\). Si \(\ket{\phi}\) est orthogonal à \(\ket{\psi}\), alors
+\begin{equation}
+\rho_\psi\ket{\phi}
+=\ket{\psi}\braket{\psi}{\phi}
+=0.
+\end{equation}
+Toute direction orthogonale à \(\ket{\psi}\) a donc pour valeur propre zéro.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_08_figure_06.png}
+\caption{La matrice densité d’un état pur agit comme un projecteur : \(\rho\ket{\psi}=\ket{\psi}\).}
+\lectureframe{00:09:32}
+\end{figure}
+
+\section{Valeurs moyennes et trace}
+
+La règle opérationnelle associée à une matrice densité est
+\begin{equation}
+\overline{M}=\operatorname{Tr}(\rho M),
+\end{equation}
+où \(M\) est une observable. Pour deux facteurs, la propriété cyclique de la trace donne
+\begin{equation}
+\operatorname{Tr}(\rho M)=\operatorname{Tr}(M\rho),
+\end{equation}que \(\rho\) et \(M\) commutent ou non.
+
+Dans toute base orthonormée \(\{\ket{i}\}\),
+\begin{equation}
+\operatorname{Tr}X=\sum_i\bra{i}X\ket{i}.
+\end{equation}
+La valeur numérique ne dépend pas de la base. Pour un état pur,
+\begin{align}
+\overline{M}
+&=\operatorname{Tr}\!\left(\ket{\psi}\bra{\psi}M\right) \\
+&=\sum_i\braket{i}{\psi}\bra{\psi}M\ket{i} \\
+&=\bra{\psi}M\left(\sum_i\ket{i}\bra{i}\right)\ket{\psi} \\
+&=\bra{\psi}M\ket{\psi}.
+\end{align}
+La relation de fermeture,
+\begin{equation}
+\sum_i\ket{i}\bra{i}=I,
+\end{equation}
+ramène la règle faisant intervenir la matrice densité à la valeur moyenne usuelle pour un état pur.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_07.png}
+\caption{Calcul de la trace pour un projecteur associé à un état pur et relation de fermeture.}
+\lectureframe{00:14:25}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:38}
+\audiencequestion{La quantité à gauche devrait-elle être \(\overline{M}\), la moyenne de \(M\) ?}
+\lecturerresponse{Oui. La trace n’est pas l’opérateur \(M\) lui-même : c’est la valeur moyenne scalaire \(\overline{M}\).}
+\end{classroomqa}
+
+Pour une matrice densité générale, choisissons sa base propre :
+\begin{equation}
+\rho\ket{j}=\lambda_j\ket{j}.
+\end{equation}
+Insérons un ensemble complet d’états entre \(\rho\) et \(M\) :
+\begin{align}
+\overline{M}
+&=\sum_i\bra{i}\rho M\ket{i} \\
+&=\sum_{i,j}\bra{i}\rho\ket{j}\bra{j}M\ket{i} \\
+&=\sum_{i,j}\lambda_j\delta_{ij}\bra{j}M\ket{i} \\
+&=\sum_j\lambda_j\bra{j}M\ket{j}.
+\end{align}
+Il s’agit d’une moyenne pondérée ordinaire : \(\lambda_j\) est la probabilité du \(j\)-ième état propre, et \(\bra{j}M\ket{j}\) est la valeur moyenne de \(M\) dans cet état.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:12}
+\audiencequestion{Pourquoi les deux indices du dernier élément de matrice deviennent-ils \(j\), et quel indice reste-t-il sommé ?}
+\lecturerresponse{Comme \(\rho\) est diagonale dans cette base, \(\bra{i}\rho\ket{j}=\lambda_j\delta_{ij}\), seuls les termes tels que \(i=j\) subsistent. La somme double initiale se réduit à une somme unique, que l’on peut appeler somme sur \(j\). Le nom d’un indice muet de sommation n’a aucune signification physique.}
+\end{classroomqa}
+
+\section{L’entropie comme information manquante}
+
+Pour une distribution de probabilité classique \(\{p_i\}\), définissons
+\begin{equation}
+S=-\sum_i p_i\log p_i,
+\end{equation}
+où \(0\log 0\) désigne sa valeur limite \(0\). Si une probabilité vaut \(1\) et que toutes les autres sont nulles, alors \(S=0\) : l’état est connu. Si les \(n\) possibilités sont toutes équiprobables,
+\begin{equation}
+p_i=\frac{1}{n},
+\qquad
+S=-n\left(\frac{1}{n}\log\frac{1}{n}\right)=\log n.
+\end{equation}
+L’entropie augmente donc à mesure que la distribution de probabilité s’étend à un plus grand nombre de possibilités significatives. En gros, \(e^S\) est le nombre effectif d’états de poids comparables lorsque l’on utilise les logarithmes népériens.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_08_figure_08.png}
+\caption{Entropie d’une distribution de probabilité et valeur \(S=\log n\) dans le cas équiprobable.}
+\lectureframe{00:21:08}
+\end{figure}
+
+Pour une matrice densité, on applique la même définition à ses valeurs propres :
+\begin{equation}
+S(\rho)=-\sum_i\lambda_i\log\lambda_i
+=-\operatorname{Tr}(\rho\log\rho).
+\end{equation}
+La première expression est celle dont nous avons besoin ici ; la forme avec la trace souligne que le résultat est indépendant de la base.
+
+\section{Système composé et expérience locale}
+
+Considérons deux sous-systèmes, \(A\) et \(B\). Un vecteur de base s’écrit \(\ket{a,b}\). Si \(A\) possède \(N\) états de base et si \(B\) en possède \(n\), le système composé a \(Nn\) états de base. Les deux systèmes n’ont pas besoin d’être semblables : l’un peut être un spin à deux états et l’autre un atome à trois états.
+
+L’état pur le plus général de la paire est
+\begin{equation}
+\ket{\Psi}
+=\sum_{a,b}\psi(a,b)\ket{a,b},
+\qquad
+\sum_{a,b}|\psi(a,b)|^2=1.
+\end{equation}
+Supposons maintenant qu’Alice mesure une observable \(M_A\) qui agit uniquement sur le sous-système \(A\). Dans l’espace de Hilbert composé, l’opérateur est \(M_A\otimes I_B\). Ses éléments de matrice sont
+\begin{equation}
+\bra{a',b'}M_A\otimes I_B\ket{a,b}
+=\bra{a'}M_A\ket{a}\,\delta_{b'b}.
+\end{equation}
+L’indice \(B\) est passif.
+
+Écrivons la valeur moyenne en détail :
+\begin{align}
+\expect{M_A}
+&=\bra{\Psi}M_A\otimes I_B\ket{\Psi} \\
+&=\sum_{a',b'}\sum_{a,b}
+\psi^*(a',b')\psi(a,b)
+\bra{a'}M_A\ket{a}\delta_{b'b} \\
+&=\sum_{a',a,b}
+\psi^*(a',b)\psi(a,b)
+\bra{a'}M_A\ket{a}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:12}
+\audiencequestion{Pourquoi les indices du bra sont-ils primés, alors que ceux du ket ne le sont pas ?}
+\lecturerresponse{Avant l’évaluation de l’élément de matrice, le bra et le ket font l’objet de sommes indépendantes ; il leur faut donc des indices muets distincts. Les primes différencient les indices du bra de ceux du ket. L’opérateur et les produits scalaires déterminent ensuite quels indices doivent coïncider.}
+\end{classroomqa}
+
+Fixons \(a\) et \(a'\), puis effectuons la somme sur \(b\). Le résultat est une matrice sur le sous-système \(A\) :
+\begin{equation}
+\boxed{
+\rho_A(a,a')
+=\sum_b\psi(a,b)\psi^*(a',b)
+}.
+\end{equation}
+C’est la matrice densité réduite de \(A\), ou, de manière équivalente, la trace partielle du projecteur associé à l’état pur sur \(B\) :
+\begin{equation}
+\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}.
+\end{equation}
+La valeur moyenne locale devient
+\begin{equation}
+\expect{M_A}
+=\sum_{a,a'}\rho_A(a,a')\bra{a'}M_A\ket{a}
+=\operatorname{Tr}_A(\rho_A M_A).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_09.png}
+\caption{L’indice \(B\) est sommé et éliminé ; il reste une matrice à deux indices \(A\).}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:35:39}
+\audiencequestion{L’observable locale est-elle simplement l’identité sur le sous-système \(B\) ?}
+\lecturerresponse{Exactement. \(M_A\otimes I_B\) peut modifier la coordonnée \(A\), mais ne modifie pas \(b\) et n’en dépend pas non plus. C’est pourquoi son élément de matrice dans l’espace \(B\) est \(\delta_{b'b}\).}
+\end{classroomqa}
+
+Toutes les prédictions relatives aux expériences limitées à \(A\) sont donc contenues dans \(\rho_A\). Bob n’a pas besoin de mesurer son sous-système. Le simple fait de ne pas utiliser les degrés de liberté de \(B\) contraint la description d’Alice à prendre la forme d’une matrice densité.
+
+\section{Un tout pur peut avoir des parties mixtes}
+
+Le système combiné est dans l’état pur \(\ket{\Psi}\), et pourtant \(\rho_A\) possède généralement plusieurs valeurs propres non nulles. La connaissance complète du tout n’implique pas qu’il existe un vecteur d’état pour chacune de ses parties. Le chat et le fusil peuvent former un seul état intriqué ; le chat seul est alors décrit par une matrice densité réduite.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:25}
+\audiencequestion{Peut-on remplacer \(\operatorname{Tr}(M\rho)\) par \((\operatorname{Tr}M)(\operatorname{Tr}\rho)\) ?}
+\lecturerresponse{Non. La trace d’un produit n’est généralement pas le produit des traces. La cyclicité permet d’écrire \(\operatorname{Tr}(M\rho)=\operatorname{Tr}(\rho M)\), mais elle ne factorise pas la trace.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:49}
+\audiencequestion{Avons-nous commencé uniquement avec l’état de base \(\ket{a,b}\), ou avec l’état pur le plus général ?}
+\lecturerresponse{Avec l’état pur le plus général du système composé : \(\ket{\Psi}=\sum_{a,b}\psi(a,b)\ket{a,b}\). Un seul \(\ket{a,b}\) n’est qu’un vecteur de base. Ce qui est surprenant, c’est que même ce vecteur composé parfaitement spécifié peut donner un état réduit mixte.}
+\end{classroomqa}
+
+Le contraste avec la mécanique classique est net. Une connaissance classique complète d’un système composé fixe chacune de ses coordonnées, et donc chacun de ses sous-systèmes. Une distribution de probabilité classique peut certes être marginalisée, mais si la distribution initiale est concentrée en un point de l’espace des phases, chaque marginale reste concentrée sur une valeur déterminée. Les états purs quantiques ne possèdent pas nécessairement cette propriété.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:46}
+\audiencequestion{En quoi sommer sur \(B\) diffère-t-il de l’intégration d’une distribution classique position--vitesse sur la vitesse ?}
+\lecturerresponse{Les opérations se ressemblent, mais leurs limites pour un état pur diffèrent. Un point de l’espace des phases connu avec certitude fixe la position et la vitesse ; chacune des marginales reste donc déterminée. Un état quantique intriqué connu avec certitude peut donner un état mixte non trivial pour chacun des sous-systèmes. La trace partielle met ainsi en évidence un échec quantique de l’implication classique selon laquelle un tout pur aurait des parties pures.}
+\end{classroomqa}
+
+\section{États produits : le cas particulier}
+
+Quand \(\rho_A\) reste-t-elle pure ? La fonction d’onde doit se factoriser :
+\begin{equation}
+\psi(a,b)=\phi(a)\chi(b).
+\end{equation}
+Supposons que \(\phi\) et \(\chi\) soient normalisées séparément. En substituant dans la matrice densité réduite, on obtient
+\begin{align}
+\rho_A(a,a')
+&=\sum_b\phi(a)\chi(b)\phi^*(a')\chi^*(b) \\
+&=\phi(a)\phi^*(a')\sum_b|\chi(b)|^2 \\
+&=\phi(a)\phi^*(a').
+\end{align}
+Ainsi,
+\begin{equation}
+\rho_A=\ket{\phi}\bra{\phi}.
+\end{equation}
+Elle possède une valeur propre \(1\), toutes les autres valent \(0\), et son entropie est nulle.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_10.png}
+\caption{Pour une fonction d’onde factorisée, la somme sur \(B\) se réduit à la normalisation de \(\chi\).}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:44:17}
+\audiencequestion{\(\phi(a)\) est-elle en soi l’état du système \(A\) ?}
+\lecturerresponse{C’est la composante de la fonction d’onde de cet état. Plus précisément, \(\ket{\phi}=\sum_a\phi(a)\ket{a}\), et de même \(\ket{\chi}=\sum_b\chi(b)\ket{b}\). La factorisation signifie que \(\ket{\Psi}=\ket{\phi}\otimes\ket{\chi}\) : c’est un état produit sans intrication entre \(A\) et \(B\).}
+\end{classroomqa}
+
+Pour toute observable locale,
+\begin{equation}
+\expect{M_A}
+=\operatorname{Tr}(\rho_A M_A)
+=\bra{\phi}M_A\ket{\phi}.
+\end{equation}
+Le sous-système \(A\) se comporte exactement comme un état pur \(\ket{\phi}\). Pour un état pur bipartite, l’entropie de \(\rho_A\) permet donc de tester la structure produit : une entropie nulle indique un état produit, tandis qu’une entropie non nulle indique de l’intrication. Des valeurs proches de zéro signalent une faible intrication ; des valeurs proches du maximum indiquent un état éloigné de tout état produit pour cette bipartition.
+
+\section{Le singulet : un tout pur et une ignorance locale maximale}
+
+Considérons le singulet de deux spins
+\begin{equation}
+\ket{\Psi^-}
+=\frac{1}{\sqrt{2}}
+\left(
+\ket{\uparrow\downarrow}
+-\ket{\downarrow\uparrow}
+\right).
+\end{equation}
+Ses composantes non nulles de fonction d’onde sont
+\begin{equation}
+\psi(\uparrow,\downarrow)=\frac{1}{\sqrt{2}},
+\qquad
+\psi(\downarrow,\uparrow)=-\frac{1}{\sqrt{2}},
+\end{equation}
+tandis que \(\psi(\uparrow,\uparrow)=\psi(\downarrow,\downarrow)=0\).
+
+Prenons la trace sur le spin \(2\). Les éléments diagonaux sont
+\begin{align}
+\rho_1(\uparrow,\uparrow)
+&=|\psi(\uparrow,\uparrow)|^2
+ +|\psi(\uparrow,\downarrow)|^2
+=\frac{1}{2}, \\
+\rho_1(\downarrow,\downarrow)
+&=|\psi(\downarrow,\uparrow)|^2
+ +|\psi(\downarrow,\downarrow)|^2
+=\frac{1}{2}.
+\end{align}
+L’élément hors diagonale vaut
+\begin{align}
+\rho_1(\uparrow,\downarrow)
+&=\psi(\uparrow,\uparrow)\psi^*(\downarrow,\uparrow)
+ +\psi(\uparrow,\downarrow)\psi^*(\downarrow,\downarrow) \\
+&=0,
+\end{align}
+et son conjugué est également nul. On obtient donc
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&0\\[2pt]
+0&\frac12
+\end{pmatrix}
+=\frac12 I.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_11.png}
+\caption{Les quatre éléments de la matrice densité réduite d’un spin dans le singulet.}
+\lectureframe{00:55:35}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:58}
+\audiencequestion{Quelle est l’entropie de l’état réduit d’un spin ?}
+\lecturerresponse{Ses deux valeurs propres valent toutes deux \(1/2\), donc
+\[
+S_1=-2\left(\frac12\log\frac12\right)=\log 2.
+\]
+C’est l’entropie maximale possible pour un sous-système à deux états. Ce sont des \emph{valeurs propres} égales, et non des éléments de matrice égaux dans une base arbitraire, qui caractérisent l’état le plus mélangé.}
+\end{classroomqa}
+
+La valeur moyenne du spin est nulle selon chaque axe :
+\begin{equation}
+\expect{\bm{\sigma}\cdot\hat{\bm n}}
+=\operatorname{Tr}\!\left(
+\rho_1\,\bm{\sigma}\cdot\hat{\bm n}
+\right)
+=\frac12\operatorname{Tr}
+\left(\bm{\sigma}\cdot\hat{\bm n}\right)
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:58:37}
+\audiencequestion{Pourquoi la trace de \(\bm{\sigma}\cdot\hat{\bm n}\) est-elle nulle quelle que soit la direction ?}
+\lecturerresponse{Chaque matrice de Pauli est de trace nulle. Puisque \(\bm{\sigma}\cdot\hat{\bm n}=n_1\sigma_1+n_2\sigma_2+n_3\sigma_3\), la linéarité de la trace donne zéro pour tout vecteur unitaire \(\hat{\bm n}\). Le spin a donc autant de chances d’être mesuré parallèle qu’antiparallèle à n’importe quel axe choisi.}
+\end{classroomqa}
+
+La paire entière est dans un état pur déterminé et son entropie est nulle. Chacun des spins pris séparément est dans un état maximalement mélangé. Cela ne vient pas d’un relevé de préparation défectueux : c’est l’état local qu’implique l’intrication.
+
+\section{Un état produit à amplitudes égales}
+
+Considérons maintenant
+\begin{equation}
+\ket{\Phi}
+=\frac12\left(
+\ket{\uparrow\uparrow}
++\ket{\uparrow\downarrow}
++\ket{\downarrow\uparrow}
++\ket{\downarrow\downarrow}
+\right).
+\end{equation}
+Les quatre amplitudes valent \(1/2\) ; la normalisation découle donc des quatre contributions de \(1/4\). La trace sur le spin \(2\) donne
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}.
+\end{equation}
+Sa trace vaut \(1\), mais
+\begin{equation}
+\det\rho_1
+=\frac14-\frac14
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:23}
+\audiencequestion{Comment la trace et le déterminant déterminent-ils ici les deux valeurs propres ?}
+\lecturerresponse{Pour une matrice \(2\times2\), la somme des valeurs propres est égale à la trace et leur produit au déterminant. Ainsi, \(\lambda_1+\lambda_2=1\) et \(\lambda_1\lambda_2=0\), ce qui impose la paire \(\{1,0\}\). L’état réduit est pur et son entropie est nulle.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:18}
+\audiencequestion{Que font concrètement les deux spins non intriqués ?}
+\lecturerresponse{Ils sont tous deux alignés selon l’axe \(x\) positif. On peut le voir en factorisant l’état,
+\[
+\ket{\Phi}
+=\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2}
+\otimes
+\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2},
+\]
+ou le montrer expérimentalement en calculant les valeurs moyennes des matrices de Pauli.}
+\end{classroomqa}
+
+Pour la composante \(z\),
+\begin{equation}
+\sigma_3=
+\begin{pmatrix}
+1&0\\[2pt]
+0&-1
+\end{pmatrix},
+\qquad
+\operatorname{Tr}(\rho_1\sigma_3)=0.
+\end{equation}
+Pour la composante \(x\),
+\begin{equation}
+\sigma_1=
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix},
+\end{equation}
+et
+\begin{align}
+\rho_1\sigma_1
+&=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}, \\
+\operatorname{Tr}(\rho_1\sigma_1)&=1.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_03.png}
+\caption{Calcul matriciel avec \(\sigma_1\) pour l’état réduit à amplitudes égales.}
+\lectureframe{01:05:13}
+\end{figure}
+
+Ainsi, \(\expect{\sigma_1}=1\) tandis que \(\expect{\sigma_2}=\expect{\sigma_3}=0\). Une perturbation des amplitudes qui les éloigne de la factorisation exacte fait généralement passer les valeurs propres de \(\{1,0\}\) à deux valeurs non nulles. La faible entropie obtenue mesure une faible intrication.
+
+\section{À qui appartient cette entropie ?}
+
+L’entropie que nous venons de calculer appartient à un sous-système. Dans l’exemple du singulet,
+\begin{equation}
+S(\rho_{12})=0,
+\qquad
+S(\rho_1)=S(\rho_2)=\log 2.
+\end{equation}
+Le tout est pur tandis que chacune de ses parties est mixte. L’entropie d’intrication ne suit donc pas la règle additive naïve \(S_{12}=S_1+S_2\). Pour un état pur bipartite, les deux matrices densité réduites ont les mêmes valeurs propres non nulles ; leurs entropies sont donc égales, bien que l’entropie du tout soit nulle.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:03}
+\audiencequestion{Toute matrice densité est-elle, en définitive, une matrice densité d’intrication ?}
+\lecturerresponse{Sur le plan opérationnel, on peut décrire une incertitude ordinaire sans suivre le système qui porte l’information manquante. Si l’on inclut l’appareil de préparation, l’environnement ou l’observateur, cette incertitude peut souvent être interprétée comme une intrication avec des degrés de liberté non observés. Mathématiquement, le résultat est exact : toute matrice densité admet une purification dans un espace de Hilbert plus grand, mais cette purification ne détermine pas de façon unique l’histoire physique de la préparation.}
+\end{classroomqa}
+
+\section{Du mouvement classique discret au mouvement quantique}
+
+Laissons provisoirement l’intrication de côté et demandons-nous comment les états évoluent au cours du temps. Pour un système classique comportant un nombre fini de configurations, l’évolution réversible est une permutation. Chaque état a un successeur et un prédécesseur ; le mouvement se décompose en cycles.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_12.png}
+\caption{Évolution classique réversible représentée par des flèches entre des configurations discrètes.}
+\lectureframe{01:11:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:11:51}
+\audiencequestion{Pourquoi les pas de temps doivent-ils eux aussi être discrets si les configurations sont discrètes ?}
+\lecturerresponse{Un modèle strictement classique à deux états ne comporte aucune configuration intermédiaire permettant de suivre un chemin continu. Faire tourner lentement une pièce introduit son orientation comme coordonnée continue supplémentaire ; on n’a donc plus un modèle à deux configurations. Un système quantique à deux états est différent : son espace de Hilbert contient une famille continue de superpositions, bien qu’une base orthonormée ne compte que deux éléments.}
+\end{classroomqa}
+
+Un état de spin \(\tfrac12\) peut tourner continûment de \(\ket{\uparrow}\) vers \(\ket{\downarrow}\) en passant par des superpositions. Une dimension finie n’implique pas un ensemble fini de vecteurs d’état. Cela permet une évolution temporelle continue dans un système quantique discret.
+
+La dynamique microscopique réversible préserve également les distinctions. Deux conditions initiales classiques différentes ne fusionnent pas en un seul état microscopique, car cela effacerait l’information sur la condition initiale réalisée. En mécanique hamiltonienne, cette inversibilité s’accompagne du théorème de Liouville : le volume de l’espace des phases est conservé.
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:26}
+\audiencequestion{Qu’en est-il des bifurcations non linéaires où plusieurs conditions initiales convergent vers le même état stationnaire ?}
+\lecturerresponse{Les attracteurs apparaissent dans les descriptions dissipatives effectives, où des degrés de liberté de l’environnement ont été écartés. L’évolution hamiltonienne microscopique fondamentale reste inversible ; l’information peut être transférée à des variables non observées, mais des états complets distincts ne deviennent pas littéralement un seul et même état complet.}
+\end{classroomqa}
+
+En mécanique quantique, cette affirmation prend la forme de l’unitarité. Des états initiaux orthogonaux évoluent vers des états finaux orthogonaux et, plus généralement, tout produit scalaire est conservé.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:50}
+\audiencequestion{Les deux états doivent-ils subir exactement la même influence ? Que deviennent des états initiaux \(z\)-spin vers le haut et \(z\)-spin vers le bas dans un champ magnétique dirigé selon \(x\) ?}
+\lecturerresponse{Le même opérateur d’évolution doit agir sur les deux états. Dans le champ transverse, les deux spins précessent, mais leurs vecteurs de Bloch restent opposés et leurs vecteurs d’état restent orthogonaux. Appliquer des histoires externes différentes reviendrait à comparer différents opérateurs d’évolution.}
+\end{classroomqa}
+
+\section{Linéarité et unitarité}
+
+Le premier principe de l’évolution temporelle quantique est la linéarité :
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+L’opérateur dépend du temps écoulé et vérifie
+\begin{equation}
+U(0)=I.
+\end{equation}
+Comme la linéarité de la mécanique quantique elle-même, cette règle est justifiée par son succès empirique.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_13.png}
+\caption{L’état à l’instant \(t\) s’obtient en appliquant l’opérateur linéaire \(U(t)\) à l’état initial.}
+\lectureframe{01:19:00}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:01}
+\audiencequestion{Que doit valoir \(U(t)\) lorsque \(t=0\) ?}
+\lecturerresponse{Il doit être égal à l’identité. Lorsque le temps écoulé est nul, l’état reste inchangé, quel que soit le vecteur initial.}
+\end{classroomqa}
+
+Le second principe est la conservation des produits scalaires :
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Lorsque \(\phi=\psi\), la normalisation est conservée, et donc la probabilité totale. Si les états initiaux sont orthogonaux, leur parfaite distinguabilité est préservée. Pour des états quelconques, toute leur relation géométrique est conservée.
+
+Le bra évolue selon
+\begin{equation}
+\bra{\phi(t)}
+=\bra{\phi(0)}U^\dagger(t),
+\end{equation}
+d’où
+\begin{align}
+\braket{\phi(t)}{\psi(t)}
+&=\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)} \\
+&=\braket{\phi(0)}{\psi(0)}.
+\end{align}
+Comme cette égalité vaut pour toute paire de vecteurs initiaux,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_04.png}
+\caption{Évolution du ket, évolution du bra et condition sur le produit scalaire qui conduit à \(U^\dagger U=I\).}
+\lectureframe{01:23:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:22:10}
+\audiencequestion{Pourquoi le bra acquiert-il \(U^\dagger\) plutôt que \(U\) ?}
+\lecturerresponse{La conjugaison hermitienne inverse l’ordre des facteurs et remplace chaque opérateur par son conjugué hermitien :
+\[
+\bigl(U\ket{\phi}\bigr)^\dagger
+=\bra{\phi}U^\dagger.
+\]
+C’est l’action duale nécessaire pour assurer la cohérence des produits scalaires.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:34}
+\audiencequestion{Si \(U\) était simplement un nombre complexe, que signifierait \(U^\dagger U=1\) ?}
+\lecturerresponse{Cela signifierait que \(|U|=1\), donc \(U=e^{i\theta}\) se trouve sur le cercle unité. Une matrice unitaire est l’analogue opératoriel d’une phase pure : elle conserve les longueurs et les produits scalaires.}
+\end{classroomqa}
+
+\section{Évolution infinitésimale et hamiltonien}
+
+Soit \(\epsilon\) un intervalle de temps très court. Puisque \(U(0)=I\), écrivons le développement au premier ordre
+\begin{equation}
+U(\epsilon)=I-i\epsilon h+O(\epsilon^2).
+\end{equation}
+Le signe moins et le facteur \(i\) sont des conventions commodes. La conjugaison hermitienne donne
+\begin{equation}
+U^\dagger(\epsilon)
+=I+i\epsilon h^\dagger+O(\epsilon^2).
+\end{equation}
+L’unitarité impose alors
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon) \\
+&=\left(I+i\epsilon h^\dagger\right)
+\left(I-i\epsilon h\right)+O(\epsilon^2) \\
+&=I+i\epsilon(h^\dagger-h)+O(\epsilon^2).
+\end{align}
+Le terme du premier ordre doit s’annuler :
+\begin{equation}
+\boxed{h^\dagger=h}.
+\end{equation}
+Le générateur infinitésimal est hermitien.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_14.png}
+\caption{L’unitarité au premier ordre impose que le générateur infinitésimal soit hermitien.}
+\lectureframe{01:29:35}
+\end{figure}
+
+Dans la convention provisoire ci-dessus, \(h\) a les dimensions d’une fréquence angulaire. Rétablissons les unités physiques en définissant l’opérateur énergie
+\begin{equation}
+H=\hbar h.
+\end{equation}
+Cet opérateur hermitien est l’hamiltonien, et ses valeurs propres sont les niveaux d’énergie.
+
+Appliquons l’opérateur infinitésimal à un état :
+\begin{equation}
+\ket{\psi(\epsilon)}
+=\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(0)}
++O(\epsilon^2).
+\end{equation}
+Soustrayons l’état initial, divisons par \(\epsilon\) et prenons la limite :
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+De manière équivalente,
+\begin{equation}
+\boxed{
+i\hbar\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+C’est l’équation générale de Schr\"odinger.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_15.png}
+\caption{Le quotient différentiel infinitésimal devient la dérivée temporelle de l’état.}
+\lectureframe{01:32:18}
+\end{figure}
+
+L’hamiltonien dépend du dispositif physique. Il peut varier au cours du temps si un champ magnétique externe ou une autre commande change. Lorsque le dispositif est indépendant du temps, \(H\) est un opérateur hermitien fixe.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:30}
+\audiencequestion{La conservation des produits scalaires implique-t-elle que des systèmes initialement non intriqués doivent le rester ?}
+\lecturerresponse{Non. L’unitarité conserve les produits scalaires entre les vecteurs d’état complets, et non la structure produit d’une partition donnée. Un hamiltonien d’interaction peut transformer un état produit en état intriqué. Si les opérateurs unitaires ne pouvaient pas le faire, les mesures ne pourraient pas corréler un système avec un appareil.}
+\end{classroomqa}
+
+\section{Les unités de l’entropie}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:08}
+\audiencequestion{L’intrication a-t-elle une unité physique telle que le joule ?}
+\lecturerresponse{L’entropie d’intrication est une mesure d’information, et non une énergie. Avec les logarithmes népériens, elle se mesure en nats ; avec les logarithmes en base deux, elle se mesure en bits. Dans les deux cas, ce sont des conventions de dénombrement sans dimension.}
+\end{classroomqa}
+
+La notation thermodynamique peut masquer ce point, car la constante de Boltzmann assure la conversion entre la température en kelvins et l’énergie :
+\begin{equation}
+\expect{K}_{\mathrm{monatomic}}
+=\frac32 k_{\mathrm B}T.
+\end{equation}
+La relation réversible entre chaleur et entropie est
+\begin{equation}
+\delta Q_{\mathrm{rev}}=T\,\mathrm dS_{\mathrm{th}}.
+\end{equation}
+Si l’entropie informationnelle vaut
+\begin{equation}
+S_{\mathrm{info}}=-\sum_i p_i\log p_i,
+\end{equation}
+alors l’entropie thermodynamique usuelle est
+\begin{equation}
+S_{\mathrm{th}}=k_{\mathrm B}S_{\mathrm{info}}.
+\end{equation}
+Prendre \(k_{\mathrm B}=1\) revient à mesurer la température en unités d’énergie et laisse l’entropie sans dimension. On reconnaît alors dans la constante de Boltzmann un facteur de conversion, plutôt qu’une nouvelle unité d’intrication. La remarque historique reliant les idées statistiques de Boltzmann aux travaux d’Einstein de 1905 sur le mouvement brownien ne change rien à la définition informationnelle.
+
+\section{États propres de l’énergie et phase}
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:54}
+\audiencequestion{Pourquoi identifie-t-on le générateur hermitien \(H\) à l’énergie ?}
+\lecturerresponse{L’unitarité seule établit uniquement que le générateur est hermitien. Son identification à l’énergie est une affirmation physique supplémentaire : l’énergie engendre les translations temporelles. Pour un hamiltonien indépendant du temps, le même opérateur qui régit l’évolution est conservé, et ses valeurs propres sont les niveaux d’énergie stationnaires. Les hamiltoniens concrets donnent à cette identification son contenu expérimental.}
+\end{classroomqa}
+
+La relation entre la constante de Planck et la fréquence est
+\begin{equation}
+E=h\nu=\hbar\omega,
+\qquad
+\omega=2\pi\nu,
+\qquad
+h=2\pi\hbar.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:30}
+\audiencequestion{L’équation d’évolution doit-elle contenir \(h\), \(\hbar\) ou un facteur supplémentaire de \(2\pi\) ?}
+\lecturerresponse{Avec la fréquence angulaire \(\omega\), l’équation s’écrit \(E=\hbar\omega\), et l’équation de Schr\"odinger contient \(\hbar\). Avec la fréquence ordinaire \(\nu\), la relation équivalente est \(E=h\nu\). Le facteur \(2\pi\) est entièrement pris en compte par \(\omega=2\pi\nu\) et \(h=2\pi\hbar\).}
+\end{classroomqa}
+
+Supposons que l’état initial soit un vecteur propre de l’énergie :
+\begin{equation}
+H\ket{\psi(0)}=E\ket{\psi(0)}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:18}
+\audiencequestion{Si l’état reste un vecteur propre de l’énergie, cela signifie-t-il qu’il ne change pas ?}
+\lecturerresponse{Il peut acquérir un facteur complexe dépendant du temps tout en restant un vecteur propre associé à la même valeur propre. L’unitarité impose que ce facteur soit une phase. Le rayon reste donc stationnaire, même lorsque le ket tourne en phase.}
+\end{classroomqa}
+
+Écrivons
+\begin{equation}
+\ket{\psi(t)}=f(t)\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_05.png}
+\caption{Un état propre de l’énergie conserve la même direction dans l’espace de Hilbert, à un facteur scalaire près, \(f(t)\).}
+\lectureframe{01:43:54}
+\end{figure}
+
+En substituant dans l’équation de Schr\"odinger, on obtient
+\begin{align}
+i\hbar\frac{\mathrm d f}{\mathrm dt}\ket{\psi(0)}
+&=f(t)H\ket{\psi(0)} \\
+&=E f(t)\ket{\psi(0)}.
+\end{align}
+Simplifions par le vecteur commun :
+\begin{equation}
+\frac{\mathrm d f}{\mathrm dt}
+=-\frac{iE}{\hbar}f(t).
+\end{equation}
+Avec \(f(0)=1\),
+\begin{equation}
+f(t)=e^{-iEt/\hbar},
+\qquad
+\ket{\psi(t)}=e^{-iEt/\hbar}\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_16.png}
+\caption{L’équation aux valeurs propres de l’énergie et l’évolution de phase qui en résulte.}
+\lectureframe{01:46:10}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{Quel est le coefficient de \(t\) dans la phase \(e^{-iEt/\hbar}\) ?}
+\lecturerresponse{C’est la fréquence angulaire,
+\[
+\omega=\frac{E}{\hbar}.
+\]
+Autrement dit, \(E=\hbar\omega\). Un coefficient exponentiel réel décrirait un taux de croissance ou de décroissance ; l’exposant imaginaire décrit ici une rotation de phase unitaire.}
+\end{classroomqa}
+
+Cette relation entre phase et fréquence et l’équation de Schr\"odinger sont deux formes d’une même loi d’évolution temporelle. L’équation est générale ; l’hamiltonien d’une particule libre, d’une particule dans un potentiel ou d’un spin dans un champ magnétique est différent dans chaque cas. L’étape suivante consiste à choisir ces hamiltoniens et à les résoudre.

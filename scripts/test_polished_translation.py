@@ -178,6 +178,15 @@ class TranslationTests(unittest.TestCase):
         self.assertIn(r'\fancyfoot[C]', p.page_layout())
         self.assertIn(r'\setlength{\headwidth}{\textwidth}', p.page_layout())
 
+    def test_cover_track_metadata_is_localized(self):
+        self.assertEqual(p.localized_track('path/2013_fall', 'fr'), 'automne 2013')
+        self.assertEqual(p.localized_track('path/2006_fall_part_1', 'fr'), 'automne 2006, première partie')
+        self.assertEqual(p.localized_track('path/2011_winter_topics_in_string_theory', 'zh-Hant'),
+                         '2011年冬季・弦理論專題')
+        for lang in p.LANGS:
+            label = p.localized_track('path/2012_spring_theoretical_minimum', lang)
+            self.assertNotRegex(label, r'\b(?:spring|theoretical_minimum)\b')
+
     def test_caption_boundary_escape_is_rejected(self):
         source, protected = p.protect(r'\begin{figure}\caption{A particle diagram.}\label{fig:one}\end{figure}')
         tokens = p.TOKEN.findall(source)
@@ -541,8 +550,15 @@ class TranslationTests(unittest.TestCase):
         self.assertIn('概観。', result)
         self.assertIn(r'\emergencystretch=2em', result)
         french = p.translated_preamble(source, 'fr')
-        self.assertIn(r'\emergencystretch=4em', french)
+        self.assertIn(r'\emergencystretch=6em', french)
         self.assertIn(r'\sectionfont{\raggedright}', french)
+        self.assertIn(r'\subsectionfont{\raggedright}', french)
+        self.assertIn(r'\usepackage{tocloft}', french)
+        self.assertIn(r'\renewcommand{\@pnumwidth}{2.2em}', french)
+        self.assertIn(r'\setlength{\cftsecnumwidth}{3em}', french)
+        arabic = p.translated_preamble(source, 'ar')
+        self.assertIn(r'\sectionfont{\raggedleft}', arabic)
+        self.assertIn(r'\subsectionfont{\raggedleft}', arabic)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,723 @@
+\chapter{Géométrie du spin et premier état intriqué}
+
+\lectureoverview{L’intrication concerne les systèmes composés de plusieurs parties, mais on ne peut aborder honnêtement le problème de deux spins tant que l’étude du spin unique n’est pas achevée. Nous commencerons donc par le spin selon un axe quelconque, calculerons la probabilité de transition entre deux directions, interpréterons la mesure comme un filtre et établirons que la commutation est le critère de compatibilité des observables. Un argument de dénombrement révélera ensuite que deux spins possèdent davantage d’états purs que ne peuvent en fournir deux spins préparés séparément. Ces états supplémentaires sont intriqués, et le plus simple d’entre eux présente déjà des corrélations définies entre les deux particules alors que chaque électron, pris séparément, est complètement dépolarisé.}
+
+\section{Achever l’étude du spin unique}
+
+Le théorème de Bell peut attendre. L’intrication elle-même commence avec deux électrons, mais la structure restante de l’électron unique interviendra dans tous les calculs. Achevons donc l’étude du système à deux états avant d’en combiner deux exemplaires.
+
+Choisissons un vecteur unitaire ordinaire de l’espace
+\begin{equation}
+  \hat n=(n_1,n_2,n_3),
+  \qquad
+  n_1^2+n_2^2+n_3^2=1.
+  \label{eq:l04-unit-pointer}
+\end{equation}
+Les étiquettes \(1,2,3\) peuvent tout aussi bien être appelées \(x,y,z\). L’essentiel est que les axes forment un même repère direct.
+
+\begin{classroomqa}
+\lecturetimestamp{00:02:33}
+\audiencequestion{Le trièdre de coordonnées dessiné au tableau est-il direct ?}
+\lecturerresponse{Le premier dessin est indirect. Inverser le deuxième axe, ou permuter de façon cohérente deux axes, permet de corriger cela. Le calcul qui suit repose uniquement sur une convention directe fixe ; l’orientation accidentelle du dessin n’a aucune portée physique.}
+\end{classroomqa}
+
+Le spin possède trois composantes observables, représentées par les matrices de Pauli
+\begin{equation}
+  \begin{aligned}
+    \sigma_1&=
+    \begin{pmatrix}0&1\\1&0\end{pmatrix},
+    &
+    \sigma_2&=
+    \begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.5em]
+    \sigma_3&=
+    \begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+  \end{aligned}
+\end{equation}
+La composante selon \(\hat n\) est le produit scalaire ordinaire du pointeur avec ce vecteur à valeurs matricielles :
+\begin{equation}
+  \sigma_{\hat n}
+  \equiv
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3.
+  \label{eq:l04-sigma-dot-n}
+\end{equation}
+Ce produit scalaire est défini dans l’espace physique à trois dimensions. Ce n’est pas le produit scalaire de deux vecteurs d’état.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_02.png}
+\caption{La composante spatiale selon \(\hat n\) devient une combinaison linéaire de trois observables matricielles.}
+\lectureframe{00:05:09}
+\end{figure}
+
+En substituant les matrices de Pauli, on obtient
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3 & n_1-in_2\\
+    n_1+in_2 & -n_3
+  \end{pmatrix}.
+  \label{eq:l04-sigma-n-matrix}
+\end{equation}
+Il est commode d’introduire les abréviations
+\begin{equation}
+  n_-=n_1-in_2,
+  \qquad
+  n_+=n_1+in_2=n_-^*,
+\end{equation}
+de sorte que
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}.
+\end{equation}
+Les éléments diagonaux réels et les éléments extradiagonaux conjugués montrent que l’opérateur est hermitien.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_03.png}
+\caption{Observable de spin selon un axe quelconque, sous forme explicite deux par deux.}
+\lectureframe{00:07:34}
+\end{figure}
+
+Concrètement, mesurer \(\sigma_{\hat n}\) consiste à orienter un champ magnétique intense selon \(\hat n\) et à observer la réponse liée au spin, représentée dans le cours par l’émission ou non d’un photon. La matrice et la question posée au laboratoire décrivent une même mesure.
+
+Deux identités simples nous serviront pour la suite du calcul. Tout d’abord,
+\begin{equation}
+  \sigma_{\hat n}^{\,2}=I.
+  \label{eq:l04-sigma-n-square}
+\end{equation}
+On obtient ce résultat soit en multipliant l’équation~\eqref{eq:l04-sigma-n-matrix} par elle-même, soit en utilisant
+\begin{equation}
+  \sigma_i^2=I,
+  \qquad
+  \sigma_i\sigma_j=-\sigma_j\sigma_i
+  \quad(i\ne j).
+\end{equation}
+Toute valeur propre \(\lambda\) de \(\sigma_{\hat n}\) vérifie donc \(\lambda^2=1\), et les seules valeurs possibles sont
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+Ensuite,
+\begin{equation}
+  n_+n_-
+  =n_1^2+n_2^2
+  =1-n_3^2
+  =(1-n_3)(1+n_3).
+  \label{eq:l04-nplus-nminus}
+\end{equation}
+Ce n’est pas un théorème profond, mais cette identité permet de maîtriser le calcul des vecteurs propres.
+
+\section{De la préparation à la probabilité}
+
+Préparons l’électron avec un spin \(+1\) selon \(\hat n\), puis mesurons-le selon une autre direction \(\hat m\). La question centrale concernant un spin unique est
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  P(\sigma_{\hat m}=+1\mid\sigma_{\hat n}=+1).
+  \label{eq:l04-central-probability}
+\end{equation}
+La symétrie suggère que la réponse ne dépend que de l’angle entre \(\hat n\) et \(\hat m\) et qu’elle reste inchangée si l’on permute les deux directions. Ces attentes constituent des vérifications utiles, mais ne remplacent pas le postulat de probabilité.
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:03}
+\audiencequestion{La mécanique quantique nous apprend-elle elle-même que les trois matrices de Pauli sont les opérateurs de spin, ou est-ce l’expérience qui nous l’apprend ?}
+\lecturerresponse{Cette identification fait partie de l’ensemble des résultats empiriques accumulés en mécanique quantique ; elle ne découle pas d’une expérience isolée. Des expériences répétées sur le spin mettent en évidence des régularités probabilistes, et le formalisme matriciel a été élaboré par Einstein, Born, Heisenberg, Dirac et d’autres pour les décrire. Les postulats sont des hypothèses remarquablement fécondes, contraintes par les données expérimentales.}
+\end{classroomqa}
+
+Posons
+\begin{equation}
+  \sigma_{\hat n}\ket{n,+}=\ket{n,+},
+  \qquad
+  \sigma_{\hat m}\ket{m,+}=\ket{m,+}.
+  \label{eq:l04-nm-eigenstates}
+\end{equation}
+Les symboles \(n,+\) et \(m,+\) sont des étiquettes figurant à l’intérieur des kets. Ils désignent les états propres associés à la valeur propre \(+1\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_04.png}
+\caption{États propres de \(+1\) pour le spin selon \(\hat n\) et \(\hat m\).}
+\lectureframe{00:17:36}
+\end{figure}
+
+La première quantité à calculer est l’amplitude de probabilité
+\begin{equation}
+  \mathcal A(m,+\mid n,+)=\braket{m,+}{n,+}.
+\end{equation}
+La probabilité est le carré de son module :
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \left|\braket{m,+}{n,+}\right|^2.
+  \label{eq:l04-born-nm}
+\end{equation}
+D’abord l’amplitude, puis la probabilité : cet ordre est l’étape quantique essentielle.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_04_figure_05.png}
+\caption{Le recouvrement entre l’état préparé \(n\) et l’état testé \(m\) est l’amplitude de probabilité.}
+\lectureframe{00:19:59}
+\end{figure}
+
+\subsection{Résolution du problème des vecteurs propres}
+
+Écrivons un vecteur propre candidat \(+1\) de \(\sigma_{\hat n}\) sous la forme
+\begin{equation}
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix}.
+\end{equation}
+Nous pouvons remettre la normalisation à plus tard, et la phase globale n’a aucun effet physique. En dehors de la carte de coordonnées au pôle Sud, nous pouvons donc choisir \(\alpha=1\) et écrire \(\beta=z\). La composante supérieure de
+\begin{equation}
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}
+  \begin{pmatrix}1\\z\end{pmatrix}
+  =
+  \begin{pmatrix}1\\z\end{pmatrix}
+\end{equation}
+donne
+\begin{equation}
+  n_3+n_-z=1,
+  \qquad
+  z=\frac{1-n_3}{n_-}.
+  \label{eq:l04-z-solution}
+\end{equation}
+La composante inférieure conduit à la même condition lorsque l’on utilise l’équation~\eqref{eq:l04-nplus-nminus}.
+
+Le vecteur non normalisé a pour norme au carré
+\begin{align}
+  \begin{pmatrix}
+    1&\dfrac{1-n_3}{n_+}
+  \end{pmatrix}
+  \begin{pmatrix}
+    1\\[3pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}
+  &=
+  1+\frac{(1-n_3)^2}{n_+n_-}
+  \notag\\
+  &=
+  1+\frac{1-n_3}{1+n_3}
+  =
+  \frac{2}{1+n_3}.
+  \label{eq:l04-unnormalized-norm}
+\end{align}
+Un choix normalisé est donc
+\begin{equation}
+  \ket{n,+}
+  =
+  \sqrt{\frac{1+n_3}{2}}
+  \begin{pmatrix}
+    1\\[5pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}.
+  \label{eq:l04-normalized-n-state}
+\end{equation}
+Pour \(n_3=-1\), cette expression en coordonnées est singulière, bien que l’état ne le soit pas ; le vecteur propre est simplement \(\ket d=(0,1)^T\). La singularité tient à la convention de phase, et non au spin.
+
+En remplaçant \(n\) par \(m\) et en prenant le conjugué, on obtient
+\begin{equation}
+  \bra{m,+}
+  =
+  \sqrt{\frac{1+m_3}{2}}
+  \begin{pmatrix}
+    1&
+    \dfrac{1-m_3}{m_+}
+  \end{pmatrix}.
+\end{equation}
+Le recouvrement paraît peu maniable, et le multiplier par son conjugué l’est encore moins. Des applications répétées de l’équation~\eqref{eq:l04-nplus-nminus}ramènent le résultat à
+\begin{equation}
+  \begin{aligned}
+    P(m,+\mid n,+)
+    &=\frac{1+n_1m_1+n_2m_2+n_3m_3}{2}\\
+    &=\frac{1+\hat n\cdot\hat m}{2}.
+  \end{aligned}
+  \label{eq:l04-spin-transition-probability}
+\end{equation}
+Si \(\theta_{nm}\) est l’angle entre les deux directions spatiales,
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \frac{1+\cos\theta_{nm}}{2}
+  =
+  \cos^2\frac{\theta_{nm}}{2}.
+  \label{eq:l04-half-angle-probability}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:32:47}
+\audiencequestion{Le recouvrement doit-il s’annuler parce que les deux états sont orthogonaux ?}
+\lecturerresponse{Non. Les étiquettes \(m,+\) et \(n,+\) désignent des axes de mesure différents, et non des valeurs propres différentes d’un même observable fixé. Si \(m=n\), les deux états coïncident et leur recouvrement vaut un. Ils ne deviennent orthogonaux que lorsque les directions physiques sont opposées : l’un des états est alors l’état \(+1\) et l’autre l’état \(-1\) du même composant de spin.}
+\end{classroomqa}
+
+\section{Sens de la formule de probabilité}
+
+L’équation~\eqref{eq:l04-spin-transition-probability} satisfait immédiatement à trois vérifications :
+\begin{align}
+  \hat m=\hat n
+  &\quad\Longrightarrow\quad P=1,
+  \notag\\
+  \hat m=-\hat n
+  &\quad\Longrightarrow\quad P=0,
+  \notag\\
+  \hat m\cdot\hat n=0
+  &\quad\Longrightarrow\quad P=\frac12.
+\end{align}
+La réponse ne dépend que de l’angle relatif et est symétrique par échange de \(m\leftrightarrow n\). La rotation de l’ensemble de l’appareil ne change aucune prédiction.
+
+Voilà le remarquable compromis du spin un demi. Quel que soit l’axe, le résultat observé reste \(+1\) ou \(-1\) ; on n’obtient jamais de valeur de spin fractionnaire. La dépendance continue en rotation se manifeste plutôt dans les probabilités de ces deux résultats discrets.
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:20}
+\audiencequestion{Comment sait-on que les essais répétés portent sur le même électron, et comment mesure-t-on une probabilité ?}
+\lecturerresponse{On peut confiner un électron dans une cavité, suivre sa charge conservée au moyen de son flux électrique, préparer à nouveau cet électron selon \(\hat n\), puis répéter la mesure selon \(\hat m\). On peut aussi préparer de façon identique un grand ensemble d’électrons et mesurer chacun une fois. Dans les deux procédures, les fréquences à long terme des résultats positif et négatif sont les mêmes, aux fluctuations statistiques près.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:41:29}
+\audiencequestion{Faut-il mesurer tous les membres de l’ensemble dans une seule expérience collective ?}
+\lecturerresponse{Non. Chaque membre est préparé selon le même protocole et mesuré séparément. Un million d’essais constitue une seule expérience statistique uniquement en ce sens que leurs fréquences de résultats permettent d’estimer la même probabilité.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:42:23}
+\audiencequestion{Si l’on réutilise un électron, combien de photons peut-il émettre ?}
+\lecturerresponse{Il n’existe pas de quota fixe lié à sa durée de vie. Chaque cycle comprend un travail extérieur lors de l’activation du champ magnétique. Si le spin est dans l’orientation d’énergie la plus élevée, l’énergie fournie peut être émise sous forme de photon au cours de la relaxation. En principe, l’appareil peut donc répéter indéfiniment le cycle de préparation et d’émission.}
+\end{classroomqa}
+
+Une fois l’invariance par rotation établie, on peut obtenir très rapidement la formule : choisissons \(\hat n\) comme troisième axe, de sorte que \(\ket{n,+}=(1,0)^T\), puis lisons la probabilité à partir de la composante supérieure de \(\ket{m,+}\). Mais utiliser d’emblée ce raccourci reviendrait à supposer la symétrie que le calcul explicite vient de démontrer.
+
+\begin{classroomqa}
+\lecturetimestamp{00:43:33}
+\audiencequestion{Un meilleur choix de base permettrait-il d’éliminer les vecteurs propres peu commodes selon un axe quelconque ?}
+\lecturerresponse{Oui. Une fois les rotations et les transformations unitaires introduites, on peut aligner un axe de coordonnées sur l’une des directions et abréger le calcul. À ce stade, le calcul explicite a son utilité : il vérifie que les matrices de Pauli choisies donnent bien une réponse invariante par rotation, au lieu de supposer ce résultat.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:48:30}
+\audiencequestion{Pour quelle raison physique la réponse ne dépend-elle que de l’angle ?}
+\lecturerresponse{La réponse structurelle relève de la théorie quantique des symétries : les rotations spatiales sont représentées par des transformations unitaires agissant sur les états et les observables de spin. Nous aborderons ce formalisme plus tard. Pour l’instant, la dépendance angulaire est un résultat que nous avons établi par le calcul avec les matrices de Pauli.}
+\end{classroomqa}
+
+\section{La mesure agit comme un filtre}
+
+Une mesure ne se contente pas de donner une valeur. Si l’on mesure \(\sigma_{\hat m}\) et que le résultat est \(+1\), l’électron se retrouve dans l’état \(\ket{m,+}\). L’appareil joue à la fois le rôle de détecteur et de préparateur d’état, un peu comme un polariseur qui teste un photon et laisse le photon transmis polarisé selon son propre axe.
+
+Cette règle de changement d’état rend concrète la question de la mesure simultanée. Deux observables ne peuvent avoir ensemble des valeurs définies et reproductibles que s’il existe des états qui sont vecteurs propres des deux.
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:29}
+\audiencequestion{Une même mesure peut-elle déterminer simultanément deux composantes de spin différentes, telles que \(\sigma_1\) et \(\sigma_2\) ?}
+\lecturerresponse{Non. Leurs vecteurs propres sont différents. La mesure d’une composante laisse l’électron dans un état propre de cette composante, mais cet état n’est pas un état propre de l’autre. La première mesure détruit donc le caractère défini nécessaire à la seconde.}
+\end{classroomqa}
+
+L’énoncé général en dimension finie s’exprime le plus simplement pour les opérateurs hermitiens.
+
+\begin{theorem}
+Deux opérateurs hermitiens \(A\) et \(B\) sont simultanément diagonalisables si et seulement s’ils commutent :
+\begin{equation}
+  [A,B]\equiv AB-BA=0.
+  \label{eq:l04-commutator}
+\end{equation}
+Autrement dit, ils possèdent une base complète de vecteurs propres orthonormés commune.
+\end{theorem}
+
+Pour le sens direct, supposons que
+\begin{equation}
+  A\ket{\alpha_i}=\lambda_i\ket{\alpha_i},
+  \qquad
+  B\ket{\alpha_i}=\mu_i\ket{\alpha_i}
+\end{equation}
+pour une base complète. Alors
+\begin{align}
+  AB\ket{\alpha_i}
+  &=\lambda_i\mu_i\ket{\alpha_i},
+  \notag\\
+  BA\ket{\alpha_i}
+  &=\mu_i\lambda_i\ket{\alpha_i},
+\end{align}
+ainsi, \(AB\) et \(BA\) agissent de la même façon sur chaque vecteur de base. On a donc \(AB=BA\). Réciproquement, si les opérateurs hermitiens \(A\) et \(B\) commutent, \(B\) préserve chaque sous-espace propre de \(A\) ; en diagonalisant \(B\) dans chacun des sous-espaces propres dégénérés, on obtient une base propre commune.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_06.png}
+\caption{Deux observables peuvent avoir les mêmes vecteurs propres tout en leur attribuant des valeurs propres différentes.}
+\lectureframe{00:55:45}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:53:56}
+\audiencequestion{Peut-on appliquer simultanément des champs magnétiques selon \(x\) et \(y\) et parler de mesure simultanée ?}
+\lecturerresponse{Les champs s’additionnent pour donner une direction résultante. L’appareil mesure alors le spin selon cet axe résultant, éventuellement à \(45^\circ\), au lieu de mesurer séparément \(\sigma_x\) et \(\sigma_y\). Cette construction donne un troisième observable, et non deux résultats compatibles.}
+\end{classroomqa}
+
+\section{Tout état pur d’un spin unique possède un axe}
+
+Inversions à présent le problème des vecteurs propres. Pour un spineur normalisé quelconque
+\begin{equation}
+  \ket\psi=
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix},
+  \qquad
+  |\alpha|^2+|\beta|^2=1,
+  \label{eq:l04-general-spinor}
+\end{equation}
+existe-t-il une direction spatiale \(\hat n\) telle que
+\begin{equation}
+  \sigma_{\hat n}\ket\psi=\ket\psi?
+  \label{eq:l04-reverse-eigenproblem}
+\end{equation}
+Oui. Le cours commence par le montrer à l’aide d’un dénombrement. Les deux composantes complexes représentent quatre nombres réels. La normalisation en élimine un et la phase globale, qui n’a pas d’effet physique, en élimine un autre ; il en reste deux. Un pointeur unitaire possède lui aussi deux paramètres réels indépendants, par exemple la longitude et la latitude.
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:52}
+\audiencequestion{Comment l’état peut-il n’avoir que deux degrés de liberté alors que \(\alpha\) et \(\beta\) sont tous deux complexes ?}
+\lecturerresponse{Au départ, ils comportent quatre composantes réelles. La condition de normalisation élimine un degré de liberté réel, et multiplier l’état entier par \(e^{i\theta}\) ne modifie aucune probabilité : la phase commune en élimine donc un autre. Il reste deux paramètres physiquement significatifs, qui correspondent aux deux angles d’un pointeur unitaire.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:20}
+\audiencequestion{Faut-il aussi résoudre l’équation pour la valeur propre ?}
+\lecturerresponse{Ici, la valeur propre recherchée est fixée à \(+1\). Nous cherchons uniquement la direction dont l’état up est le spineur donné. Le pointeur opposé décrit le même rayon comme un état down de valeur propre \(-1\).}
+\end{classroomqa}
+
+Le dénombrement explique pourquoi cette correspondance devrait exister. Une construction directe le confirme. Définissons
+\begin{align}
+  n_1&=\bra\psi\sigma_1\ket\psi
+      =2\operatorname{Re}(\alpha^*\beta),
+  \notag\\
+  n_2&=\bra\psi\sigma_2\ket\psi
+      =2\operatorname{Im}(\alpha^*\beta),
+  \notag\\
+  n_3&=\bra\psi\sigma_3\ket\psi
+      =|\alpha|^2-|\beta|^2.
+  \label{eq:l04-bloch-components}
+\end{align}
+La normalisation donne \(n_1^2+n_2^2+n_3^2=1\), et une substitution directe donne l’équation~\eqref{eq:l04-reverse-eigenproblem}. Ainsi, tout état pur d’un spin unique est un état up selon un axe spatial.
+
+Il existe une façon opérationnelle d’énoncer ce résultat. Préparons plusieurs copies d’un même état pur inconnu. Mesurons des lots d’électrons selon des directions d’essai, ajustons l’aimant et cherchons la direction pour laquelle chaque résultat est up. Des données en nombre fini ne permettent de déterminer la direction qu’avec une incertitude, mais l’état idéal possède un axe exact.
+
+Les questions font partie de cette méthode ; elles ne l’interrompent pas. Une brève digression en classe évoque des enfants de dix ans qui posaient librement des questions sur la théorie des cordes, les dimensions supplémentaires et la possibilité que les neutrinos environnants donnent mal à la tête. Une question peut reposer sur des détails erronés ; il reste néanmoins précieux d’exprimer le point qui pose problème.
+
+\section{Deux spins et opérateurs locaux}
+
+Avant de combiner deux spins, rappelons l’action des matrices de Pauli sur la base \(\sigma_3\) :
+\begin{align}
+  \sigma_1\ket u&=\ket d,
+  &
+  \sigma_1\ket d&=\ket u,
+  \notag\\
+  \sigma_2\ket u&=i\ket d,
+  &
+  \sigma_2\ket d&=-i\ket u,
+  \notag\\
+  \sigma_3\ket u&=\ket u,
+  &
+  \sigma_3\ket d&=-\ket d.
+  \label{eq:l04-pauli-action-table}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\linewidth]{lecture_04_figure_07.png}
+\caption{Le tableau d’action des matrices de Pauli reformule les matrices en règles appliquées à la base up/down.}
+\lectureframe{01:09:35}
+\end{figure}
+
+Imaginons à présent deux électrons maintenus en des endroits distincts, de sorte que seuls leurs spins varient. Les quatre états de base sont
+\begin{equation}
+  \ket{uu},
+  \qquad
+  \ket{du},
+  \qquad
+  \ket{ud},
+  \qquad
+  \ket{dd}.
+  \label{eq:l04-two-spin-basis}
+\end{equation}
+La première étiquette correspond à l’électron \(1\), la seconde à l’électron \(2\). Ces états sont mutuellement orthonormés, car ils représentent des résultats conjoints distincts des deux mesures de la troisième composante.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_08.png}
+\caption{Les quatre états de la base produit engendrent l’espace des états à deux spins.}
+\lectureframe{01:11:40}
+\end{figure}
+
+Désignons par \(\sigma_i\) les opérateurs agissant sur l’électron \(1\) et par \(\tau_i\) ceux qui agissent sur l’électron \(2\). Plus explicitement,
+\begin{equation}
+  \sigma_i\equiv\sigma_i\otimes I,
+  \qquad
+  \tau_i\equiv I\otimes\sigma_i.
+\end{equation}
+Le premier ensemble agit uniquement sur la première étiquette, et le second uniquement sur la deuxième :
+\begin{align}
+  \sigma_1\ket{ud}&=\ket{dd},
+  &
+  \sigma_1\ket{dd}&=\ket{ud},
+  \notag\\
+  \sigma_3\ket{dd}&=-\ket{dd},
+  &
+  \tau_2\ket{ud}&=-i\ket{uu}.
+  \label{eq:l04-local-operator-examples}
+\end{align}
+Dès que l’action d’un opérateur est connue sur les quatre états de base, la linéarité détermine son action sur tout état à deux spins.
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:47}
+\audiencequestion{Pourquoi le facteur \(-i\) est-il écrit à l’extérieur du ket ? Agit-il sur les deux électrons ?}
+\lecturerresponse{Les symboles à l’intérieur du ket sont les étiquettes d’une configuration de base. Un scalaire complexe multiplie le vecteur d’état entier ; la notation usuelle le place donc à l’extérieur. Ici, ce facteur provient de l’action de \(\tau_2\) sur la deuxième étiquette ; l’écrire à l’extérieur ne signifie pas qu’une opération physique distincte a été appliquée aux deux électrons.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:44}
+\audiencequestion{La multiplication par \(i\) représente-t-elle une rotation de l’électron dans l’espace ordinaire ?}
+\lecturerresponse{Pas à elle seule. Il s’agit d’une multiplication par un scalaire complexe dans l’espace des états. Les rotations spatiales seront représentées plus tard par des opérateurs unitaires particuliers ; le facteur \(i\) isolé dans ce tableau d’action ne correspond pas à une rotation réelle dans l’espace.}
+\end{classroomqa}
+
+\section{Six paramètres, et non quatre}
+
+Un état pur général de la paire s’écrit
+\begin{equation}
+  \ket\Psi
+  =
+  c_{uu}\ket{uu}
+  +c_{du}\ket{du}
+  +c_{ud}\ket{ud}
+  +c_{dd}\ket{dd}.
+  \label{eq:l04-general-two-spin-state}
+\end{equation}
+Quatre coefficients complexes représentent huit nombres réels. La normalisation en élimine un, et la phase globale en élimine un autre :
+\begin{equation}
+  8-1-1=6.
+  \label{eq:l04-two-spin-parameter-count}
+\end{equation}
+Un état pur préparé séparément pour l’électron \(1\) nécessite deux paramètres réels ; il en faut deux autres pour l’électron \(2\), soit seulement quatre au total. Les deux paramètres manquants ne résultent pas d’une erreur de dénombrement. Ils signalent des états purs de la paire auxquels on ne peut assigner des états purs séparés pour chacune de ses parties.
+
+Il faut d’abord identifier les états qui proviennent effectivement de préparations séparées. Si
+\begin{equation}
+  \ket{\psi_1}=\alpha_1\ket u+\beta_1\ket d,
+  \qquad
+  \ket{\psi_2}=\alpha_2\ket u+\beta_2\ket d,
+\end{equation}
+alors
+\begin{align}
+  \ket{\psi_1}\otimes\ket{\psi_2}
+  &=
+  \alpha_1\alpha_2\ket{uu}
+  +\alpha_1\beta_2\ket{ud}
+  \notag\\
+  &\quad
+  +\beta_1\alpha_2\ket{du}
+  +\beta_1\beta_2\ket{dd}.
+  \label{eq:l04-product-expansion}
+\end{align}
+Il s’agit d’un \emph{état produit}. Chaque électron possède son propre axe de polarisation, comme si les deux préparations magnétiques avaient été effectuées indépendamment.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_09.png}
+\caption{Le produit de deux états à un spin donne un état produit à quatre termes, soumis à des contraintes.}
+\lectureframe{01:25:15}
+\end{figure}
+
+Si l’on dispose les quatre coefficients sous la forme
+\begin{equation}
+  C=
+  \begin{pmatrix}
+    c_{uu}&c_{ud}\\
+    c_{du}&c_{dd}
+  \end{pmatrix},
+\end{equation}
+l’état est un état produit si et seulement si \(C\) est de rang un, ce qui revient à avoir
+\begin{equation}
+  c_{uu}c_{dd}-c_{ud}c_{du}=0.
+  \label{eq:l04-product-condition}
+\end{equation}
+La plupart des choix de quatre amplitudes ne satisfont pas cette condition. Ils sont intriqués.
+
+\section{Le premier état intriqué}
+
+Le premier exemple du cours est
+\begin{equation}
+  \ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}+\ket{du}\right).
+  \label{eq:l04-psi-plus}
+\end{equation}
+Il ne peut pas se factoriser en un état pour l’électron \(1\) et un autre pour l’électron \(2\). Si une mesure de la troisième composante trouve l’électron \(2\) dans l’état down, l’électron \(1\) est dans l’état up ; si elle trouve l’électron \(2\) dans l’état up, l’électron \(1\) est dans l’état down. La paire possède une information définie dont aucune des particules ne dispose séparément.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_10.png}
+\caption{Cette première superposition intriquée contient un état up et un état down, sans attribuer à l’avance l’un ou l’autre résultat à une particule donnée.}
+\lectureframe{01:29:30}
+\end{figure}
+
+Pour déterminer ce que présente chaque électron pris isolément, calculons les trois valeurs moyennes locales. Pour la première composante,
+\begin{equation}
+  \sigma_1\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{dd}+\ket{uu}\right),
+\end{equation}
+qui est orthogonale à \(\ket{\psi_+}\). Par conséquent,
+\begin{equation}
+  \bra{\psi_+}\sigma_1\ket{\psi_+}=0.
+\end{equation}
+De même,
+\begin{equation}
+  \sigma_2\ket{\psi_+}
+  =
+  \frac{i}{\sqrt2}
+  \left(\ket{dd}-\ket{uu}\right),
+\end{equation}
+d’où
+\begin{equation}
+  \bra{\psi_+}\sigma_2\ket{\psi_+}=0.
+\end{equation}
+Pour la troisième composante,
+\begin{equation}
+  \sigma_3\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right),
+\end{equation}
+les deux contributions diagonales s’annulent :
+\begin{equation}
+  \bra{\psi_+}\sigma_3\ket{\psi_+}
+  =\frac12(1-1)=0.
+\end{equation}
+Ainsi,
+\begin{equation}
+  \begin{aligned}
+    \bra{\psi_+}\sigma_i\ket{\psi_+}&=0,\\
+    \bra{\psi_+}\tau_i\ket{\psi_+}&=0,
+    \qquad i=1,2,3.
+  \end{aligned}
+  \label{eq:l04-zero-local-spin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_11.png}
+\caption{L’état transformé et l’annulation \(1-1=0\) établissent que les valeurs moyennes locales du spin sont nulles.}
+\lectureframe{01:35:50}
+\end{figure}
+
+Dans toute direction,
+\begin{equation}
+  \bra{\psi_+}\sigma_{\hat n}\ket{\psi_+}=0,
+  \qquad
+  \bra{\psi_+}\tau_{\hat n}\ket{\psi_+}=0.
+  \label{eq:l04-zero-arbitrary-local-spin}
+\end{equation}
+Comme la mesure locale ne peut donner que les résultats \(\pm1\), une valeur moyenne nulle signifie que
+\begin{equation}
+  P(\sigma_{\hat n}=+1)
+  =
+  P(\sigma_{\hat n}=-1)
+  =
+  \frac12,
+\end{equation}
+et de même pour le deuxième électron. Aucune direction ne polarise un électron pris isolément. Cela est impossible pour un état pur à un spin, mais tout à fait possible pour une partie d’un état pur intriqué.
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:23}
+\audiencequestion{Le fait que les résultats locaux soient équiprobables et celui qu’une mesure sur un électron nous renseigne sur l’autre sont-ils une seule et même affirmation ?}
+\lecturerresponse{Non. Commençons par ignorer l’électron \(2\) : quelle que soit la direction, une mesure effectuée sur le seul électron \(1\) donne une distribution équiprobable. Cela établit l’absence de toute polarisation locale. La corrélation est une affirmation distincte, portant conjointement sur la relation entre les deux résultats enregistrés. L’intrication produit les deux caractéristiques, mais l’une ne saurait remplacer la démonstration de l’autre.}
+\end{classroomqa}
+
+\section{Les corrélations avant Bell}
+
+La corrélation à elle seule n’est pas spécifiquement quantique. Mélangeons une pièce d’un centime et une pièce de dix centimes, séparons-les sans regarder et examinons l’une d’elles. Avant l’inspection, chacune a une chance sur deux d’être la pièce d’un centime ; si l’on découvre ici cette pièce, on sait que l’autre, éloignée, est celle de dix centimes. La paire porte une information définie, même si chacune de ses parties ne la possède pas à elle seule.
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:45}
+\audiencequestion{Le raisonnement sur les deux pièces ne fonctionne-t-il que si l’on sait que la paire initiale contenait exactement une pièce de chaque sorte ?}
+\lecturerresponse{Exactement. L’inférence classique repose sur une préparation dont on connaît le résultat. De même, une prédiction de corrélation quantique ne s’applique que si le système des deux électrons a été préparé dans l’état conjoint spécifié.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:09}
+\audiencequestion{Pour \(\ket{\psi_+}\), la probabilité que les deux mesures de la troisième composante donnent up est-elle nulle ? Cela prouve-t-il que les spins sont opposés selon tout axe ?}
+\lecturerresponse{La probabilité d’obtenir \(uu\) dans la base associée au troisième axe est nulle, et les deux résultats selon cet axe sont opposés. Mais la deuxième conclusion est trop forte pour cet état avec un signe plus. Son spin local est nul dans toutes les directions, tandis que sa corrélation conjointe dépend de la direction. Des résultats toujours opposés appartiennent à l’état singulet avec signe moins, qui sera introduit à la fin du cours.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:51}
+\audiencequestion{Peut-on imaginer les pièces classiques soudées ensemble de façon que leurs faces soient toujours opposées ?}
+\lecturerresponse{Ce mécanisme classique pourrait produire une anticorrélation fixe, à condition que l’agitation ne défasse pas l’assemblage. Il s’agit toujours d’une configuration classique cachée, établie lors de la préparation. L’analogie est volontairement provisoire ; le théorème de Bell montrera les limites de ces explications classiques.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:32}
+\audiencequestion{À quoi sert la loi des grands nombres si un résultat détermine déjà celui du partenaire ?}
+\lecturerresponse{La certitude conditionnelle concerne un essai donné, une fois connus l’état conjoint et l’un des résultats. Il faut tout de même répéter les essais pour vérifier expérimentalement la fiabilité de la corrélation annoncée et estimer les valeurs moyennes et les probabilités imparfaites. La loi des grands nombres relie ces fréquences répétées à la distribution théorique.}
+\end{classroomqa}
+
+Les deux observateurs peuvent être séparés par une distance immense. Consulter un résultat modifie ce que l’observateur local sait de l’autre résultat, mais n’envoie aucun message contrôlable à l’observateur distant. À ce stade, la situation ressemble encore à celle des deux pièces séparées.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:46}
+\audiencequestion{L’image des deux pièces séparées est-elle une bonne façon de penser la paire quantique ?}
+\lecturerresponse{C’est une bonne première comparaison classique, mais pas l’explication quantique définitive. Le théorème de Bell porte sur la différence mesurable entre une paire dotée de propriétés classiques préexistantes et une paire quantique intriquée. Nous reporterons cette distinction jusqu’à ce que les corrélations nécessaires aient été calculées.}
+\end{classroomqa}
+
+\section{Le singulet et sa préparation}
+
+À la fin du calcul au tableau, remplaçons le signe plus par un signe moins :
+\begin{equation}
+  \ket{\psi_-}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right).
+  \label{eq:l04-singlet}
+\end{equation}
+Cette modification laisse les valeurs moyennes locales de l’équation~\eqref{eq:l04-zero-local-spin}égales à zéro et conserve l’opposition des résultats selon le troisième axe. Elle modifie toutefois les corrélations conjointes transversales. Cet état avec signe moins est le singulet de spin, l’état invariant par rotation où les deux spins sont opposés selon tout axe de mesure commun.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_12.png}
+\caption{La dernière modification au tableau remplace la superposition symétrique par le singulet avec signe moins, tout en conservant un spin local nul.}
+\lectureframe{01:47:25}
+\end{figure}
+
+Dans l’image physique simplifiée utilisée ici, rapprocher suffisamment les moments magnétiques localisés de deux électrons permet à l’alignement d’énergie plus élevée de se relaxer par émission d’un photon. En l’absence d’axe extérieur privilégié, l’état de spin de plus basse énergie est représenté par le singulet symétrique par rotation. Le calcul de l’interaction exacte et la raison pour laquelle la phase relative doit être négative nécessitent une analyse supplémentaire.
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:02}
+\audiencequestion{En pratique, suffit-il de rapprocher deux électrons et d’attendre ?}
+\lecturerresponse{Dans ce modèle idéalisé, oui : laissons agir l’interaction spin-spin et attendons la relaxation radiative vers l’état de plus basse énergie. Les électrons doivent simplement être assez proches et le rester assez longtemps pour que leur interaction magnétique soit efficace. Un protocole de préparation réel doit aussi contrôler l’état orbital et les interactions concurrentes.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:16}
+\audiencequestion{Est-ce simplement le principe d’exclusion de Pauli ?}
+\lecturerresponse{Non. On a attribué aux deux électrons des positions spatiales distinctes ; leur description en termes de spin ne nécessite donc pas encore d’antisymétriser des fonctions d’onde orbitales qui se recouvrent. Le principe d’exclusion devient pertinent lorsque des électrons identiques occupent des états à une particule qui se recouvrent ; l’argument d’intrication présenté ici fonctionne déjà pour des sites séparés.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:31}
+\audiencequestion{Un faisceau ordinaire d’électrons contient-il naturellement de telles paires en interaction ?}
+\lecturerresponse{En général, non. Un faisceau est peu dense, et les électrons typiques restent trop éloignés les uns des autres pour que l’interaction entre leurs spins soit appréciable pendant le temps de vol disponible. Des collisions ou une interaction de confinement délibérément mise en place peuvent créer des paires intriquées, mais le simple fait d’appartenir au même faisceau ne suffit pas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:51:45}
+\audiencequestion{À quelle distance l’interaction magnétique devient-elle nécessaire ?}
+\lecturerresponse{Il n’existe pas de seuil net et universel ; c’est l’échelle de temps de l’interaction qui est déterminante. Le cours donne une estimation microscopique approximative de l’ordre de \(10^{-11}\,\mathrm{cm}\) pour un couplage rapide. Lorsque la séparation augmente, l’écart d’énergie diminue, le photon émis a une longueur d’onde plus grande et la relaxation prend beaucoup plus de temps. En principe, attendre suffisamment longtemps peut compenser cet effet, tandis qu’un faisceau ordinaire ne laisse pas assez de temps.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:53:10}
+\audiencequestion{Pourquoi l’état singulet doit-il comporter un signe moins plutôt qu’un signe plus ?}
+\lecturerresponse{Cela ne ressort pas clairement des statistiques locales à parts égales, car elles sont identiques pour les deux phases relatives. La réponse tient à la façon dont l’état se transforme sous l’effet des rotations et au fait que l’interaction sélectionne un spin total nul. La démonstration sera donnée au prochain cours.}
+\end{classroomqa}
+
+Le cours a maintenant franchi le seuil visé. Un spin pur isolé possède toujours un axe privilégié bien défini. Une paire pure n’attribue pas nécessairement d’état pur à chacun de ses membres, mais elle peut encoder des relations exactes entre leurs résultats de mesure. Cette structure supplémentaire est l’intrication ; le théorème de Bell établira pourquoi aucun scénario classique de pièces de deux sortes ne peut en reproduire tous les aspects.
