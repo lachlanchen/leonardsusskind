@@ -61,11 +61,91 @@ class TranslationTests(unittest.TestCase):
             self.assertEqual(result, {'translations': {'0': 'text'}})
             self.assertEqual(len(list(Path(tmp).glob('*.invalid-json'))), 1)
 
+    def test_codex_transport_creates_private_destination_directory(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp) / 'work'):
+            dest = Path(tmp) / 'nested' / 'reply.json'
+
+            def completed(command, **kwargs):
+                message = Path(command[command.index('-o') + 1])
+                message.write_text('{"translations":{"0":"texte"}}', encoding='utf-8')
+                return SimpleNamespace(returncode=0, stdout=b'completed')
+
+            args = SimpleNamespace(reasoning='high', codex_timeout=60)
+            with patch.object(p.subprocess, 'run', side_effect=completed):
+                self.assertEqual(p.codex_chat('prompt', dest, args, 'gpt-6-luna'),
+                                 {'translations': {'0': 'texte'}})
+            self.assertTrue(dest.is_file())
+
+    def test_json_parser_accepts_only_surplus_closing_braces(self):
+        expected = {'translations': {'0': 'texte'}}
+        self.assertEqual(p._parse_json_message('{"translations":{"0":"texte"}}}'), expected)
+        with self.assertRaises(ValueError):
+            p._parse_json_message('{"translations":{"0":"texte"}} commentary')
+
     def test_no_unsafe_model_syntax(self):
         self.assertIsNotNone(p.validate('Hello', r'\input{secret}', 'ja'))
         self.assertIsNotNone(p.validate('@@T000000@@ Hello', 'こんにちは', 'ja'))
         self.assertIsNotNone(p.validate('Hello', 'こんにちは 3', 'ja'))
         self.assertEqual(p.validate('position', '位�置', 'zh'), 'corrupt Unicode/control character')
+
+    def test_each_new_language_rejects_untranslated_long_prose(self):
+        source = ('The physical state evolves continuously while the measured observable '
+                  'retains the same expectation value throughout the experiment.')
+        translations = {
+            'fr': 'L’état physique évolue continûment tandis que l’observable mesurée conserve la même valeur moyenne pendant toute l’expérience.',
+            'es': 'El estado físico evoluciona continuamente mientras el observable medido conserva el mismo valor esperado durante el experimento.',
+            'de': 'Der physikalische Zustand entwickelt sich stetig, während die gemessene Observable während des Experiments denselben Erwartungswert behält.',
+            'zh-Hant': '物理狀態連續演化，而測得的可觀測量在整個實驗中保持相同的期望值。',
+            'ko': '물리적 상태는 연속적으로 변하지만 측정된 관측량은 실험 내내 같은 기댓값을 유지한다.',
+            'vi': 'Trạng thái vật lý biến đổi liên tục, trong khi đại lượng quan sát được vẫn giữ nguyên giá trị kỳ vọng trong suốt thí nghiệm.',
+            'ru': 'Физическое состояние непрерывно эволюционирует, а измеряемая наблюдаемая сохраняет одно и то же среднее значение на протяжении эксперимента.',
+            'ar': 'تتطور الحالة الفيزيائية بصورة متصلة، بينما تحتفظ الكمية المرصودة المقاسة بالقيمة المتوقعة نفسها طوال التجربة.',
+        }
+        for lang, translated in translations.items():
+            with self.subTest(language=lang):
+                self.assertIsNone(p.validate(source, translated, lang))
+                self.assertEqual(p.validate(source, source, lang), 'untranslated prose')
+
+    def test_traditional_chinese_uses_direct_conversion_before_polish(self):
+        self.assertEqual(p.OPENCC_S2T.convert('量子纠缠与信息'), '量子糾纏與資訊')
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
+            book = {'id': 'fixture', 'titles': {'en': 'Physics', 'zh-Hant': '物理學'}}
+            rel = 'chapter.tex'
+            prepared = {'source_sha256': 'test', 'parts': ['Quantum entanglement and information.'], 'protected': []}
+            p.write(p.WORK / 'prepared/fixture' / (rel + '.json'), prepared)
+            p.write(p.result_path(book, 'zh', rel), {
+                'source_sha256': 'test', 'accepted': {'0': '量子纠缠与信息。'}})
+            prompts = []
+
+            def reply(prompt, *args, **kwargs):
+                prompts.append(prompt)
+                return {'translations': {'0': '量子糾纏與資訊。'}}
+
+            with patch.object(p, 'chat', side_effect=reply):
+                p.translate_file(book, 'zh-Hant', rel, SimpleNamespace(batch_chars=80000))
+            self.assertIn('"simplified_chinese_drafts": {"0": "量子糾纏與資訊。"}', prompts[0])
+            self.assertIn('Do not retranslate from scratch', prompts[0])
+
+    def test_published_cache_evidence_prevents_destructive_migration(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp) / 'work'), \
+             patch.object(p, 'OUT', Path(tmp) / 'out'):
+            slug, lang, rel = 'fixture', 'zh', 'chapter.tex'
+            payload = {'source_sha256': 'source-hash'}
+            accepted = {'0': '已验证的译文。'}
+            translated = '已验证的完整 TeX。'
+            p.write(p.WORK / 'results' / slug / lang / (rel + '.json'), {
+                'source_sha256': 'source-hash', 'accepted': accepted})
+            p.textwrite(p.OUT / slug / lang / rel, translated)
+            p.write(p.OUT / slug / lang / 'quality.json', {
+                'status': 'validated',
+                'source_files': {rel: 'source-hash'},
+                'translation_results': {rel: p.digest(p.json.dumps(
+                    accepted, ensure_ascii=False, sort_keys=True))},
+                'translated_tex': {rel: p.digest(translated)},
+            })
+            self.assertTrue(p.published_cache_proven(slug, rel, payload))
+            p.textwrite(p.OUT / slug / lang / rel, translated + 'changed')
+            self.assertFalse(p.published_cache_proven(slug, rel, payload))
 
     def test_math_at_end_of_heading_has_separate_closing_brace(self):
         source = r'\chapter{The meaning of \(k\)}'
@@ -412,7 +492,7 @@ class TranslationTests(unittest.TestCase):
             args = SimpleNamespace(pilot_only=False, workers=5, publish=False)
             complete = set()
 
-            def process(book, args):
+            def process(book, args, languages):
                 if book['id'] == 'second':
                     complete.add('second')
                     return []
@@ -459,6 +539,10 @@ class TranslationTests(unittest.TestCase):
         self.assertIn(r'\newcommand{\custom}', result)
         self.assertIn('Noto Serif CJK JP', result)
         self.assertIn('概観。', result)
+        self.assertIn(r'\emergencystretch=2em', result)
+        french = p.translated_preamble(source, 'fr')
+        self.assertIn(r'\emergencystretch=4em', french)
+        self.assertIn(r'\sectionfont{\raggedright}', french)
 
 
 if __name__ == '__main__':

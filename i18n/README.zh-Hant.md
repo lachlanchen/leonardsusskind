@@ -404,9 +404,9 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 <!-- polished-translations:start -->
 ## 最終潤色版譯本
 
-日文版與簡體中文版均以最終潤色的英文講義為依據。保留公式與圖版，僅發布通過檢查的PDF。這些譯本未經原講師認可。
+各語言版本均以最終潤色的英文講義為依據。繁體中文版由已驗證的簡體中文版直接轉換，再對照英文原文潤色。保留公式與原圖，僅發布通過檢查的 PDF。這些譯本未經原講師認可。
 
-[日文與中文版發布進度](../README.md#final-polished-translations)
+[所有語言版本的發布進度](../README.md#final-polished-translations)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

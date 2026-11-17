@@ -402,9 +402,9 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 <!-- polished-translations:start -->
 ## 최종 교정판 번역
 
-일본어판과 중국어판은 최종 교정된 영어 강의 노트를 바탕으로 합니다. 수식과 그림을 유지하며 검증된 PDF만 공개합니다.
+각 언어판은 최종 교정된 영어 강의 노트를 바탕으로 합니다. 번체 중국어판은 검증된 간체 중국어판을 직접 변환한 뒤 영어 원문과 대조해 다듬습니다. 수식과 원본 그림을 유지하며 검증된 PDF만 공개합니다.
 
-[번역판 공개 현황](../README.md#final-polished-translations)
+[전체 언어판 공개 현황](../README.md#final-polished-translations)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

@@ -1,17 +1,19 @@
-# Final Polished Japanese and Chinese Editions
+# Final Polished Multilingual Editions
 
 This queue translates the **accepted editorial TeX**, never `draft.tex`, OCR,
 legacy unpolished PDFs, or the earlier duplicate lecture runs. It includes the
-15-course editorial queue and its completed eight-chapter Cosmology pilot:
-16 books, 145 chapters, Japanese and Simplified Chinese editions.
+15-course editorial queue and its completed eight-chapter Cosmology pilot: 16
+books and 145 chapters. Japanese and Simplified Chinese are complete. The next
+sequence adds French, Spanish, German, Traditional Chinese, Korean, Vietnamese,
+Russian and Arabic, one complete language at a time.
 
 Each language is an **independent, normally readable book**, not an interlinear
 export. The original English edition remains unchanged. Bunko also uses aligned
-English/Japanese/Chinese paragraph layers; LazyLearn links to the independent
-PDFs. These reader exports do not replace the standalone translations.
+English/Japanese/Chinese paragraph layers; LazyLearn links to every validated
+standalone PDF. These reader exports do not replace the standalone translations.
 
-The short Higgs book is the first pilot. Both translated PDFs must pass a
-manual visual/semantic review before the other courses start. These are
+The short Higgs book was the first Japanese/Chinese pilot. Each added language
+must pass the same structural, semantic and PDF gates before publication. These are
 AI-assisted companion translations, not Susskind manuscripts or endorsed
 translations. Automatic checks and sampled semantic review do not establish
 error-free translation throughout a book.
@@ -22,20 +24,24 @@ error-free translation throughout a book.
 2. Hash-lock the final TeX and prepare losslessly masked paragraph segments.
 3. Use pylatexenc's structured parser to preserve all syntax, equations,
    numeric values, references, asset paths and environments. Translate prose,
-   titles, introductions, captions, questions and responses with DeepSeek.
+   titles, introductions, captions, questions and responses with `gpt-6-luna`
+   through the authenticated Codex CLI. Traditional Chinese is the exception:
+   OpenCC converts each validated Simplified Chinese segment with the `s2twp`
+   profile, then Luna polishes that conversion against the English source. It is
+   not independently regenerated from English.
    Inline math/reference tokens can reorder within the same structural block
-   for natural Japanese syntax; display equations, braces and environments
+   for natural target-language syntax; display equations, braces and environments
    cannot move. Reordered and retried rows receive additional semantic review.
 4. Cache valid segments and retry only invalid segments once. Up to two targeted
    reasoning-model repairs may then address the failed segments. Attempts are
    persisted before requests, so restarting cannot silently reset the budget.
    API transport errors have three bounded attempts; exhaustion stops new calls
-   across all workers. There is no perpetual quota retry loop or hidden Codex
-   reviewer fleet.
+   across all workers. There is no perpetual quota retry loop.
 5. Reassemble real TeX, retaining source figure assets and the accepted layout.
-   Use XeLaTeX with Noto CJK fonts. Original blackboard writing and English labels
+   Use XeLaTeX with Noto CJK, Noto Serif/Sans or Noto Arabic fonts as appropriate.
+   Original blackboard writing and English labels
    inside frozen mathematical displays are intentionally retained, not redrawn.
-6. Build three passes; require a nonempty PDF and outline, CJK text, no missing
+6. Build three passes; require a nonempty PDF and outline, target-language text, no missing
    glyphs, unresolved references or overfull boxes. Run a sampled semantic audit
    covering opening and technical paragraphs from each chapter plus repaired or
    reordered rows, in bounded ten-pair review batches. Unresolved issues
@@ -45,7 +51,7 @@ error-free translation throughout a book.
 7. Update the README availability table, with PDF links only for validated output.
 
 No source English file is overwritten. Per-language output is under
-`translations/<course-id>/{ja,zh}/`; intermediate requests, caches, usage logs,
+`translations/<course-id>/<language>/`; intermediate requests, caches, usage logs,
 build artifacts and queue state are under ignored `.translation-work/`.
 Original figure directories are referenced by relative TeX paths, not duplicated.
 Availability is bound to the PDF and translated-TeX hashes. Preparation and manual
@@ -53,27 +59,27 @@ compilation share the queue lock and cannot race a live worker run.
 
 ## Commands
 
-Dependencies: Python with `pylatexenc==2.10`, `openai`, `PyMuPDF`; XeLaTeX,
-Noto Serif/Sans CJK fonts and tmux. Reuse the shared Python environment. The
-transport comes from `../ZhJpBook/scripts/interlinear/llm_chat_backend.py`;
-override `--toolkit-root` for another checkout. Credentials are supplied through
-`DEEPSEEK_API_KEY` or an owner-only `DEEPSEEK_API_KEY_FILE`, never tracked.
+Dependencies: Python with `pylatexenc==2.10`, `PyMuPDF` and `opencc`; XeLaTeX,
+Noto Serif/Sans, Noto CJK and Noto Arabic fonts; Codex CLI and tmux. Reuse the
+shared Python environment. Codex account authentication is reused by the CLI;
+no credential, cookie or session file is copied into the repository.
 
 ```bash
 python scripts/polished_translation.py prepare
-python -m unittest discover -s scripts -p test_polished_translation.py
-bash scripts/start_polished_translation_tmux.sh --pilot-only
+python -m unittest discover -s scripts -p 'test_*translation*.py'
+python scripts/polished_translation.py run --provider codex --model gpt-6-luna \
+  --review-model gpt-6-luna --reasoning high --batch-chars 24000 \
+  --workers 2 --language fr --book supplementary--higgs_boson--2012_summer
 python scripts/polished_translation.py status
-# After reviewing the two pilot PDFs:
-python scripts/polished_translation.py approve-pilot --evidence 'Review findings'
-bash scripts/start_polished_translation_tmux.sh --publish
+bash scripts/start_luna_translation_tmux.sh
 ```
 
-One tmux session: `susskind-polished-translations`. At most five simultaneous
-requests, staggered one second apart; books advance sequentially, not in parallel.
-Compile jobs are serial. `touch .translation-work/STOP` stops at the next book
-boundary. Remove that marker to resume. Accepted caches survive interruptions.
-Check `.translation-work/status.json` and `queue.log` before restarting.
+One tmux session: `susskind-luna-translations`. The fixed order is `fr`, `es`,
+`de`, `zh-Hant`, `ko`, `vi`, `ru`, `ar`. A language completes and publishes
+before the next starts. At most five isolated Codex calls run simultaneously;
+books and compile jobs remain sequential. `touch .translation-work/STOP` stops
+at the next book boundary. Remove that marker to resume. Accepted caches survive
+interruptions. Check `.translation-work/status.json` and `luna-queue.log` before restarting.
 Per-book failures and publication state are retained under
 `.translation-work/book-state/`. Final queue state distinguishes `complete`,
 `finished_with_blockers`, `provider_blocked`, and user-requested `paused`.
@@ -207,14 +213,20 @@ translation is discarded by that retry.
 
 ### Review Model Qualification
 
-Translation remains on `deepseek-chat`; semantic review uses the independently
-tested `deepseek-reasoner` route (`--review-model` overrides it). The basic chat
-reviewer repeatedly called equivalent translations errors, and once suggested
-reversing an operator product that was copied faithfully. In a six-case pilot,
-the reasoning route correctly accepted all five faithful passages and rejected
-a deliberately reversed electric-charge statement. This is pilot evidence,
-not a guarantee. Review caches include the model identity, so a model change
-cannot silently reuse a weaker review. No Codex translation workers were added.
+The accepted Japanese and Simplified Chinese editions were translated with
+`deepseek-chat` and sampled with the independently tested `deepseek-reasoner`
+route. That historical evidence remains bound to those editions.
+
+The eight added languages use the exact `gpt-6-luna` model for both translation
+and sampled semantic review, with high reasoning effort. Every request runs in
+an ephemeral, read-only Codex working directory; only the controller writes a
+validated JSON response into the ignored cache. Model identity is included in
+title and review caches, so a model change cannot silently reuse old review
+evidence. The model choice follows the official
+[GPT-6 Luna documentation](https://developers.openai.com/api/docs/models/gpt-6-luna),
+which describes it as a multilingual model for focused, high-volume tasks. This
+qualification and sampled review are evidence, not a guarantee of error-free
+translation.
 
 ## Earlier Verified Checkpoint: 2026-10-12
 

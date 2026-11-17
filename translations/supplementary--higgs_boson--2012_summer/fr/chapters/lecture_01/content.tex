@@ -1,0 +1,412 @@
+\chapter{Démystifier le boson de Higgs}
+
+\lectureoverview{Pour comprendre au mieux le mécanisme de Higgs, il faut suivre l’ordre dans lequel ses différents éléments deviennent nécessaires. Nous partons du mouvement quantifié et des champs, transformons un bol ordinaire en potentiel en chapeau mexicain, puis nous appuyons sur le condensat qui en résulte pour comprendre pourquoi les fermions et les bosons faibles peuvent être massifs. Ce n’est qu’ensuite que nous identifions le boson de Higgs physique à la vibration radiale de ce condensat et que nous suivons les processus de production et de désintégration qui l’ont révélé en 2012.}
+
+\section{Le mécanisme derrière les grands titres}
+
+La découverte d’une nouvelle particule de masse voisine de $125\,\mathrm{GeV}$ a suscité, à juste titre, un vif enthousiasme, mais l’enthousiasme ne suffit pas à comprendre. La question utile n’est pas de savoir si le Higgs est important, ni s’il peut être relié de manière rhétorique à l’origine de l’Univers. Elle est bien plus circonscrite : quels sont les rouages du phénomène, et pourquoi le Modèle standard en avait-il besoin ?
+
+L’appellation mérite aussi une brève précision. Peter Higgs fut l’un des chercheurs qui ont identifié la physique en jeu, et Fran\c{c}ois Englert et Robert Brout sont parvenus indépendamment à l’idée centrale. L’expression \emph{mécanisme de Brout--Englert--Higgs} restitue donc plus fidèlement l’histoire, même si nous emploierons ci-dessous le nom plus court.
+
+L’explication se construit par étapes. Il nous faut d’abord deux notions élémentaires de mécanique quantique et une idée issue de la théorie classique des champs. Ensuite, nous avons besoin d’un vide dont l’état d’énergie minimale comporte un champ non nul. Nous pourrons alors passer en revue les particules du Modèle standard et voir pourquoi une version nue de la théorie les laisse sans masse. Le boson de Higgs lui-même n’intervient que vers la fin. Il ne constitue pas tout le mécanisme : c’est une oscillation particulière qui subsiste une fois le mécanisme en place.
+
+\section{Deux notions quantiques et un champ}
+
+La première notion quantique est la quantification. Le moment cinétique en est un exemple simple, car il ne prend que des valeurs discrètes,
+\begin{equation}
+L=n\hbar,
+\qquad
+n=0,\pm1,\pm2,\ldots .
+\end{equation}
+Il existe aussi des moments cinétiques demi-entiers, mais rien dans le raisonnement immédiat ne dépend de leur existence. Ce qui compte, c’est qu’un mouvement classique variant de façon continue devient une échelle d’états quantiques.
+
+La deuxième notion est le principe d’incertitude. Nous attendrons qu’apparaisse un cercle continu de vides possibles pour l’aborder. Il nous empêchera alors de considérer le vide comme une petite bille classique, immobile en un point défini avec une précision parfaite.
+
+Entre ces deux notions quantiques se trouve le concept classique de champ. Un champ associe une grandeur à chaque point de l’espace et du temps. Les champs électrique, magnétique et gravitationnel en sont des exemples familiers. Une région peut sembler vide tout en contenant un champ. Imaginons deux plaques chargées, si éloignées qu’on ne peut voir ni l’une ni l’autre. Le champ électrique presque uniforme qui les sépare n’en est pas moins réel localement. Ainsi, ``espace vide'' ne signifie pas nécessairement que ``tous les champs sont nuls.'' Cela signifie que les champs se trouvent dans l’état de plus basse énergie accessible.
+
+Supposons que l’énergie d’un champ soit minimale pour une certaine valeur et qu’elle augmente lorsque le champ s’en écarte. Si le champ est perturbé, il oscille autour de ce minimum. La mécanique quantique quantifie ces oscillations, dont les quanta individuels sont des particules. Voici le dictionnaire de la théorie des champs dont nous aurons besoin tout au long de ce cours :
+\begin{equation}
+\text{particle}
+\quad\longleftrightarrow\quad
+\text{quantum of a field vibration}.
+\end{equation}
+
+\section{Un bol dans l’espace des champs}
+
+Pour une composante réelle de champ $\phi$, le paysage énergétique le plus simple a la forme d’un bol,
+\begin{equation}
+V(\phi)=\frac{1}{2}m^{2}\phi^{2}.
+\end{equation}
+Le fond du bol se trouve en $\phi=0$. Les petites oscillations autour du fond ont une fréquence déterminée, et leurs quanta se comportent comme des particules de masse $m$.
+
+Remplaçons maintenant le champ unique par deux composantes, $(\phi_1,\phi_2)$. L’énergie peut ne dépendre que du rayon dans ce plan interne,
+\begin{equation}
+r^{2}=\phi_1^{2}+\phi_2^{2},
+\qquad
+V=V(r).
+\end{equation}
+Il s’agit d’un bol dans l’\emph{espace des champs}, et non d’un creux dans l’espace ordinaire. La rotation du couple $(\phi_1,\phi_2)$ ne change pas l’énergie. Le chapeau utilisé dans le cours rend visible cette même symétrie : quand on le fait tourner autour de son axe, il garde le même aspect.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_02.png}\caption{Le bol symétrique ordinaire et le chapeau réel utilisés pour rendre tangible la symétrie de rotation dans l’espace des champs.}\lectureframe{00:10:02}\end{figure}
+
+L’analogie devient plus qu’une simple géométrie lorsque le champ se met en mouvement. Écartons-le du centre et faisons-le tourner autour du bol. Ce mouvement circulaire porte un moment cinétique dans l’espace des champs. Il ne s’agit pas du moment cinétique d’un objet qui tourne dans le laboratoire, mais d’un moment cinétique interne. Une fois quantifié, il fournit un modèle de charge conservée,
+\begin{equation}
+Q=nq_0,
+\qquad
+n\in\mathbb{Z}.
+\end{equation}
+L’équation est schématique. L’idée physique centrale est qu’on peut se représenter une excitation de champ chargée comme une rotation dans un plan interne. Une charge positive et une charge négative correspondent à des sens de rotation opposés, tandis que l’absence de rotation correspond à une charge nulle.
+
+\section{Renverser le chapeau}
+
+Le bol ordinaire n’a qu’un seul point d’énergie minimale. La physique de Higgs commence lorsqu’on renverse le chapeau. Le centre devient alors instable, tandis qu’un creux circulaire entier présente la même énergie minimale. Une réalisation mathématique classique est
+\begin{equation}
+V(\phi_1,\phi_2)
+=
+\lambda
+\left(
+  \phi_1^{2}+\phi_2^{2}-v^{2}
+\right)^{2},
+\qquad \lambda>0,
+\end{equation}
+dont les minima vérifient
+\begin{equation}
+\phi_1^{2}+\phi_2^{2}=v^{2}.
+\end{equation}\editorialnote{Le potentiel quartique explicite constitue la réalisation analytique standard de la géométrie en chapeau mexicain représentée dans le cours ; il n’est pas retranscrit d’une formule écrite au tableau.}
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_03.png}\caption{Le sommet central et le creux circulaire du potentiel en chapeau renversé. Le schéma complet au tableau remplace un cadrage antérieur qui ne montrait pas l’essentiel de la géométrie.}\lectureframe{00:13:10}\end{figure}
+
+Le vide ne correspond désormais plus à un champ nul. Il doit se trouver quelque part dans le creux,
+\begin{equation}
+(\phi_1,\phi_2)
+=
+v(\cos\theta,\sin\theta).
+\end{equation}
+Les équations conservent la symétrie de rotation, mais tout vide particulier sélectionne un angle $\theta$. C’est la brisure spontanée de symétrie : la loi est symétrique, mais l’état de plus basse énergie choisi ne l’est pas.
+
+Il existe désormais deux types de mouvement qualitativement différents. Se déplacer radialement vers l’intérieur ou l’extérieur du creux fait remonter le potentiel et coûte de l’énergie. Se déplacer le long du creux ne change que $\theta$ et, au niveau classique, ne coûte aucune énergie potentielle. On peut donc associer une grande quantité de mouvement angulaire, analogue à une charge, à un très faible supplément d’énergie potentielle.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_04.png}\caption{Un point marqué dans le creux représente un vide particulier, choisi parmi le cercle continu de minima équivalents.}\lectureframe{00:16:14}\end{figure}
+
+\section{L’incertitude fait du vide un condensat}
+
+Classiquement, on pourrait placer le champ en un point du bord, annuler sa vitesse angulaire et considérer le problème réglé. La mécanique quantique interdit une conclusion aussi précise. La position et la quantité de mouvement vérifient
+\begin{equation}
+\Delta x\,\Delta p\gtrsim\frac{\hbar}{2}.
+\end{equation}
+Sur le creux circulaire, l’énoncé analogue est que la localisation de l’angle du champ rend incertain le moment cinétique interne qui lui est conjugué. Dans le langage schématique du cours,
+\begin{equation}
+\Delta\theta\,\Delta L_{\mathrm{int}}
+\gtrsim
+\frac{\hbar}{2}.
+\end{equation}\editorialnote{Les opérateurs d’angle présentent des subtilités techniques ; cette relation exprime donc localement l’argument d’incertitude semi-classique du cours plutôt qu’une identité exacte entre opérateurs valable globalement.}
+
+Un vide concentré au voisinage d’un point du creux n’est donc pas un état de charge interne définie. Il contient une large superposition d’états propres de charge. Le cours précise cette idée au moyen d’un test opérationnel : l’ajout ou le retrait d’une unité de charge modifie à peine l’état. Schématiquement, on peut se représenter
+\begin{align}
+\ket{\Omega}
+&\sim
+\sum_n c_n\ket{n},
+\\
+c_{n+1}
+&\simeq
+c_n
+\quad\text{within the occupied range}.
+\end{align}
+Décaler $n$ d’une unité revient alors essentiellement à réindexer des termes déjà présents. C’est en ce sens que le vide est un \emph{condensat} : il contient un nombre indéfini des quanta concernés, si bien qu’en ajouter ou en retirer un ne produit pas un état macroscopique différent de façon observable.
+
+Le véritable vide électrofaible n’est pas un condensat de charge électrique ordinaire. Si c’était le cas, le comportement électromagnétique de l’espace vide serait radicalement différent. Un supraconducteur fournit toutefois un exemple concret de condensat chargé. Il constitue donc un pont physique utile entre l’image abstraite du chapeau mexicain et l’idée qu’un vide puisse porter une structure quantique cohérente.
+
+Voilà pour la première étape. Nous avons vu que l’état de plus basse énergie n’est pas nécessairement celui où le champ est nul, et que l’incertitude quantique peut rendre cet état insensible à l’ajout ou au retrait de quanta individuels. Nous pouvons maintenant nous demander quelles particules ont besoin d’un tel champ de fond.
+
+\section{Le Modèle standard nu}
+
+La masse de Planck constitue la limite supérieure naturelle pour les masses des particules élémentaires. Si l’on concentre suffisamment d’énergie en un lieu, on ne peut plus négliger la gravité ; l’objet finit par être mieux décrit comme un trou noir que comme une particule élémentaire ordinaire. Numériquement,
+\begin{equation}
+m_{\mathrm P}
+=
+\sqrt{\frac{\hbar c}{G}}
+\approx
+2.2\times10^{-8}\,\mathrm{kg},
+\end{equation}
+elle est de l’ordre de la masse d’un minuscule grain de poussière. Les particules élémentaires connues sont infiniment plus légères. Selon l’estimation d’échelle utilisée dans le cours, leurs masses n’atteignent qu’environ $10^{-17}$ de la masse de Planck.
+
+Cette observation ne prouve pas qu’il n’existe pas de particules élémentaires plus lourdes. Les accélérateurs révèlent surtout des particules assez légères pour être produites avec l’énergie disponible. Le spectre connu dépend donc en partie des capacités des machines utilisées pour le sonder. De nombreuses particules plus lourdes pourraient se trouver au-delà de la portée actuelle.
+
+Les particules observées se répartissent en fermions et en bosons. Parmi les fermions figurent l’électron, le muon, le tau, leurs neutrinos et les six saveurs de quarks. Parmi les bosons figurent le photon, les gluons et les bosons faibles $W$ et $Z$. Les gluons lient les quarks pour former les protons et les neutrons ; ils jouent donc un rôle central dans la structure des noyaux ordinaires.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_05.png}\caption{Le premier inventaire du Modèle standard présenté dans le cours, avec l’énorme intervalle de masses indiqué au-dessus des colonnes de fermions et de bosons.}\lectureframe{00:24:22}\end{figure}
+
+La théorie ne se réduit pas à une liste : elle définit les interactions permises. Un électron peut émettre un photon,
+\begin{equation}
+e\longrightarrow e+\gamma.
+\end{equation}
+Un quark porte à la fois une charge électrique et une charge de couleur ; il peut donc émettre un photon ou un gluon,
+\begin{equation}
+q\longrightarrow q+\gamma,
+\qquad
+q\longrightarrow q+g.
+\end{equation}
+Un électron ne peut pas émettre de gluon, et un neutrino n’émet ni photon ni gluon. Les fermions dotés des nombres quantiques faibles appropriés peuvent interagir par l’intermédiaire du $Z$,
+\begin{equation}
+f\longrightarrow f+Z.
+\end{equation}
+Les bosons $W$ et les réactions à courant chargé font eux aussi partie du Modèle standard, mais le cours les omet pour que l’argument puisse s’appuyer sur un seul boson faible neutre.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_06.png}\caption{Sommets d’émission d’un photon, d’un gluon et du $Z$, inscrits à côté du mot ``sans masse.'' Ces processus résument la théorie nue avant l’introduction du condensat.}\lectureframe{00:29:20}\end{figure}
+
+Le photon est sans masse. Dans une théorie de jauge non brisée du même type général, les gluons et les bosons de jauge faibles sont eux aussi sans masse. De même, la théorie électrofaible non modifiée ne peut pas simplement introduire à la main des masses pour les fermions tout en préservant sa symétrie de jauge. Il manque un ingrédient. Avant de l’ajouter, voyons dans un cadre plus simple comment un champ de fond peut modifier la masse d’une particule sans agir comme un frottement.
+
+\section{Comment un champ de fond peut modifier la masse}
+
+Considérons une molécule d’eau comme un dipôle électrique : une extrémité est légèrement positive et l’autre légèrement négative. Dans l’espace vide, deux orientations opposées ont la même énergie. Pour s’amuser, le cours donne à ces orientations des noms distincts, ``eau'' et ``whisky,'' uniquement pour pouvoir les suivre comme deux états internes différents.
+
+Plaçons la molécule entre les plaques d’un condensateur. Si son moment dipolaire est $\bm d$ et le champ électrique $\bm E$, l’énergie d’interaction vaut
+\begin{equation}
+U=-\bm d\mathbin{\cdot}\bm E.
+\end{equation}
+Pour les deux orientations alignées, on obtient
+\begin{equation}
+U_{\parallel}=-dE,
+\qquad
+U_{\mathrm{anti}}=+dE.
+\end{equation}
+La relation d’Einstein $E=mc^2$ transforme l’écart d’énergie en écart de masse,
+\begin{equation}
+m_{\mathrm{anti}}-m_{\parallel}
+=
+\frac{2dE}{c^{2}}.
+\end{equation}
+Rien n’a frotté contre la molécule. En présence du champ de fond, un état interne possède simplement plus d’énergie, et donc plus de masse, que l’autre.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_07.png}\caption{Orientations opposées d’une molécule dans le champ du condensateur. Le champ sépare leurs énergies sans introduire de force de frottement.}\lectureframe{00:34:35}\end{figure}
+
+Cela permet d’écarter deux analogies trompeuses. Le champ de Higgs n’est pas une mélasse que les particules doivent traverser en forçant, et une particule massive n’est pas un chasse-neige ralenti par la matière qui s’accumule devant lui. Un champ uniforme dans l’espace peut parfaitement ne produire aucune force résultante. L’effet est une modification de l’énergie interne, pas un frottement ni une perte de quantité de mouvement.
+
+On peut reformuler le même exemple en langage quantique. Un champ électrique classique est un état cohérent, qu’on peut ici décrire comme un condensat de photons. La molécule peut émettre un photon dans ce champ de fond ou en absorber un qui en provient. Comme l’ajout ou le retrait d’un seul quantum modifie à peine un état cohérent fortement peuplé, la ligne du photon peut aboutir dans le condensat. La croix dessinée au tableau indique cette disparition dans le champ de fond, et non une violation de la conservation de l’énergie.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_08.png}\caption{Le champ du condensateur représenté de nouveau comme un condensat de photons. Un photon émis par le dipôle est absorbé par un champ de fond que l’ajout d’un quantum ne modifie pas.}\lectureframe{00:38:45}\end{figure}
+
+C’est le modèle dont nous avons besoin. Si un condensat peut absorber la différence de nombres quantiques entre deux états internes, il peut mélanger ces états. L’oscillation qui en résulte peut se manifester sous la forme d’une masse.
+
+\section{Pourquoi le Higgs n’explique pas toutes les masses}
+
+Avant d’appliquer ce modèle, il faut écarter une idée fausse : il n’est pas vrai que toute la masse de chaque objet massif provienne du champ de Higgs.
+
+Plaçons un rayonnement dans une boîte parfaitement réfléchissante. Les photons individuels sont sans masse, mais la boîte fermée possède un référentiel au repos et stocke de l’énergie. Sa masse augmente de
+\begin{equation}
+\Delta M=\frac{E_{\mathrm{radiation}}}{c^{2}}.
+\end{equation}
+La masse peut donc provenir de l’énergie cinétique et de champ confinée, même lorsque les constituants n’ont pas de masse au repos.
+
+Le proton en fournit un exemple réel important. Il contient des quarks, des antiquarks et des gluons dans un état en forte interaction. La majeure partie de sa masse provient de leur énergie cinétique et de liaison, et non de la simple addition des masses induites par le Higgs de quelques quarks constituants. Selon l’estimation mise en avant dans le cours, rendre les quarks légers sans masse ne modifierait la masse du proton que de l’ordre du pour cent. Les trous noirs illustrent le même raisonnement de façon encore plus frappante : un trou noir peut être massif en raison de l’énergie totale qui l’a formé, sans que chaque contribution ait d’abord été convertie par le champ de Higgs en masse au repos de particules élémentaires.
+
+Le mécanisme de Higgs a un rôle plus précis. Il permet aux fermions élémentaires et aux bosons de jauge faibles d’avoir une masse tout en préservant la cohérence de la théorie de jauge sous-jacente.
+
+\section{Chiralité : la masse comme mélange gauche--droite}
+
+Concentrons-nous d’abord sur l’électron. Le spin est un moment cinétique intrinsèque. Pour une particule en mouvement, on peut comparer la direction de son spin à celle de sa quantité de mouvement. Dans le langage géométrique du cours, un électron droitier et un électron gaucher se distinguent par la relation entre ces deux directions. Pour une particule sans masse, l’hélicité et la chiralité coïncident de la manière simple requise par l’argument ; pour une particule massive, il faut distinguer précisément ces deux notions.
+
+Imaginons qu’on dépasse à plusieurs reprises un électron massif. Dans un autre référentiel inertiel, sa quantité de mouvement s’inverse alors que son spin ne change pas ; la chiralité apparente associée au sens du mouvement peut donc s’inverser. Aucun observateur ne peut dépasser une particule strictement sans masse, qui se déplace toujours à la vitesse de la lumière. D’où l’énoncé heuristique du cours : un électron sans masse reste dans un état chiral, tandis qu’un électron massif mélange continuellement les chiralités gauche et droite.
+
+L’énoncé exact en théorie des champs est qu’un terme de masse de Dirac couple les deux champs chiraux,
+\begin{equation}
+\mathcal L_m
+=
+-m_e\bar e e
+=
+-m_e
+\left(
+  \bar e_L e_R
+  +
+  \bar e_R e_L
+\right).
+\end{equation}\editorialnote{Le terme de masse de Dirac constitue la formulation mathématique standard de l’image du ``taux de retournement'' présentée dans le cours. Le mélange des chiralités est proportionnel à la masse ; le taux temporel au sens littéral dépend de l’état et de la dilatation relativiste du temps.}
+
+Si $m_e=0$, les champs gauche et droit se propagent indépendamment. Si $m_e\ne0$, les équations les couplent. En ce sens précis, la masse mesure l’intensité du mélange gauche--droite.
+
+\section{La loi de conservation qui interdit une masse nue}
+
+Pourquoi ne pas écrire simplement le terme de mélange dès le départ ? L’interaction faible traite $e_L$ et $e_R$ différemment. Susskind donne à cette distinction un nom volontairement simple : \emph{zilch}. Avec la normalisation utilisée dans le cours,
+\begin{equation}
+z(e_L)=1,
+\qquad
+z(e_R)=0.
+\end{equation}
+Les deux chiralités ont la même charge électrique, mais des nombres quantiques faibles différents. Une transition directe
+\begin{equation}
+e_L\longrightarrow e_R
+\end{equation}
+ne conserverait donc pas la quantité associée à l’interaction faible. Dans la théorie non brisée, le terme de masse nue est interdit.
+
+\editorialnote{``Zilch'' est un raccourci pédagogique. Dans le Modèle standard, les fermions gauches et droits appartiennent à des représentations différentes de $SU(2)_L\times U(1)_Y$ ; un terme de masse de Dirac direct n’est donc pas invariant de jauge. Les valeurs attribuées dans le cours, $1$ et $0$, encodent cette différence sans reprendre le tableau complet des charges électrofaibles.}
+
+Le tableau présente l’obstacle sous forme d’une chaîne. Un électron droitier ne peut pas devenir gaucher à moins que quelque chose d’autre n’emporte la différence de zilch. Le même obstacle s’applique aux quarks, aux muons et aux taus ; une fois le champ manquant introduit, l’intensité du couplage dépend de l’espèce.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_09.png}
+\caption{La séquence chirale au tableau : l’insertion d’un quantum du condensat à la croix verte permet au label zilch de passer d’une propagation de chiralité droite à une propagation de chiralité gauche.}
+\lectureframe{00:50:15}
+\end{figure}
+
+\section{Le condensat de ``Ziggs'' et la masse des fermions}
+
+Introduisons un champ dont les quanta portent exactement le nombre quantique faible manquant. Pour éviter de le confondre trop tôt avec la particule de Higgs physique, le cours appelle le quantum pertinent le \emph{Ziggs}. Supposons que le champ de Ziggs ait un potentiel en chapeau mexicain et que son vide soit un condensat. Un électron gauche peut alors émettre un quantum de Ziggs et devenir droit,
+\begin{equation}
+e_L\longrightarrow e_R+\text{Ziggs},
+\end{equation}
+ou un électron droit peut en absorber un et devenir gauche,
+\begin{equation}
+e_R+\text{Ziggs}\longrightarrow e_L.
+\end{equation}
+Le condensat absorbe ou fournit la différence de nombres quantiques sans que son état macroscopique change. Ce qui était interdit dans le vide non brisé devient permis dans le vide à symétrie brisée.
+
+Des émissions et des absorptions répétées mélangent $e_L$ et $e_R$. L’électron se propage donc comme une particule massive. Le même mécanisme s’applique aux leptons chargés et aux quarks. Chaque espèce se couple au condensat avec une intensité qui lui est propre ; l’intensité du retournement, et donc la masse, peut ainsi varier d’une espèce à l’autre.
+
+Dans la notation moderne, l’interaction invariante de jauge est un couplage de Yukawa. Après que le champ de Higgs a acquis la valeur moyenne du vide $v$, elle produit
+\begin{equation}
+\mathcal L_Y
+\supset
+-\frac{y_f}{\sqrt{2}}
+(v+h)\bar f f,
+\end{equation}
+et donc
+\begin{equation}
+m_f=\frac{y_fv}{\sqrt{2}},
+\qquad
+g_{hff}=\frac{y_f}{\sqrt{2}}
+=
+\frac{m_f}{v}.
+\end{equation}
+\editorialnote{Ces formules donnent la notation électrofaible standard qui sous-tend l’argument du cours sur le couplage au condensat. Elles montrent aussi explicitement pourquoi le même couplage détermine à la fois la masse du fermion et la désintégration du Higgs en ce fermion.}
+
+Le cours décrit cela comme une brisure spontanée d’une symétrie chirale. Cette description rend compte du scénario gauche--droite dans le cadre de l’exemple. Plus précisément, la valeur moyenne du champ de Higgs brise la symétrie de jauge électrofaible en laissant le sous-groupe électromagnétique, puis les interactions de Yukawa prennent la forme de termes de masse des fermions.
+
+\section{Comment le boson faible acquiert une masse}
+
+Le condensat modifie également les bosons de jauge faibles. Une excitation de Ziggs peut émettre un boson $Z$ et, inversement, le $Z$ peut se transformer en l’excitation appropriée soutenue par le condensat, puis retrouver son état initial. Le $Z$ se propage ainsi dans un vide où il se mélange au secteur angulaire du champ de Higgs. Il en résulte un boson vectoriel massif doté d’une polarisation longitudinale, absente pour un boson vectoriel sans masse.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_10.png}
+\caption{Séquence complète au tableau pour le mécanisme des bosons faibles : la chaîne chirale reste au-dessus, tandis que le $Z$ échange un nombre quantique avec le secteur soutenu par le condensat, en dessous.}
+\lectureframe{00:53:40}
+\end{figure}
+
+C’est le phénomène de Brout--Englert--Higgs dans sa version pour les bosons de jauge. Dans le Modèle standard complet, les bosons $W$ et $Z$ acquièrent une masse, tandis qu’une combinaison des champs de jauge neutres initiaux reste le photon sans masse. Si le vide avait plutôt brisé la symétrie de jauge électromagnétique ordinaire, le photon serait devenu massif, comme il le devient effectivement à l’intérieur d’un supraconducteur. Le comportement électromagnétique à longue portée du vide serait alors tout autre.
+
+Les bosons faibles avaient déjà fourni des preuves solides de ce mécanisme bien avant que la particule de Higgs physique soit isolée. Leurs masses et leurs interactions montraient que la symétrie électrofaible était brisée de la manière requise. C’est pourquoi le cours peut dire, dans un sens opérationnel assez large, que le secteur ``Ziggs'' était déjà connu : l’objet expérimental manquant était la vibration radiale indépendante.
+
+\editorialnote{La référence improvisée du cours à une découverte au SLAC vers 1980 condense plusieurs événements. Les courants neutres faibles ont été observés en 1973, la diffusion d’électrons violant la parité au SLAC a été rapportée à la fin des années 1970, et les bosons $W$ et $Z$ ont été directement découverts au CERN en 1983. Le point physique est que la brisure de la symétrie électrofaible avait déjà été confirmée expérimentalement.}
+
+\section{Ce qu’est réellement le boson de Higgs}
+
+Revenons au chapeau mexicain. Le mouvement le long du creux modifie l’angle, mais pas le rayon. Ce secteur angulaire fournit les modes absorbés par les bosons faibles massifs. Le boson de Higgs physique correspond à l’autre type de mouvement : une oscillation vers l’intérieur et l’extérieur, le long des parois du potentiel.
+
+Écrivons le champ de manière schématique :
+\begin{equation}
+\Phi(x)
+=
+\frac{v+h(x)}{\sqrt{2}}
+\exp\!\left(
+  \frac{i\theta(x)}{v}
+\right).
+\end{equation}
+La variable $\theta$ décrit le mouvement le long du creux. La variable $h$ en modifie le rayon. Dans une théorie de jauge, les degrés de liberté angulaires correspondants deviennent les composantes longitudinales des bosons faibles massifs, tandis que $h$ subsiste comme particule scalaire propagative : le boson de Higgs.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_11.png}
+\caption{Les deux potentiels réapparaissent au tableau, avec un déplacement radial indiqué dans le creux du chapeau mexicain. Cette vibration vers l’intérieur et vers l’extérieur est le mode de Higgs physique.}
+\lectureframe{00:56:30}
+\end{figure}
+
+Il existe une représentation équivalente faisant intervenir plusieurs particules. Le vide est un condensat, et une oscillation radiale en modifie la densité. Le boson de Higgs est donc analogue à une onde de compression dans ce milieu quantique. L’analogie est utile à condition de ne pas en déduire que l’onde doit être stable. Les ondes sonores ordinaires peuvent se désintégrer, tout comme l’excitation de Higgs.
+
+Cette distinction explique pourquoi la découverte du boson de Higgs constituait la dernière pièce manquante, et non le premier indice du mécanisme. Le vide brisé et les bosons faibles massifs étaient déjà visibles indirectement. Il restait à produire l’onde radiale de densité sous forme de particule et à l’identifier grâce à ses produits de désintégration.
+
+\section{Désintégration, production et avantage des fermions lourds}
+
+Le Higgs se couple à un fermion proportionnellement à la masse de celui-ci. Il peut se désintégrer en une paire fermion-antifermion,
+\begin{equation}
+H\longrightarrow f+\bar f,
+\end{equation}
+et le même diagramme peut se lire en sens inverse comme un processus de production,
+\begin{equation}
+f+\bar f\longrightarrow H.
+\end{equation}
+L’annihilation électron-positron est donc possible en principe. Historiquement, toutefois, les premiers collisionneurs n’avaient pas une énergie suffisante pour produire le Higgs ; plus tard, les machines se sont heurtées à un problème plus fondamental : le couplage de Yukawa de l’électron est extrêmement faible. L’annihilation de quarks légers est tout aussi faible.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_12.png}
+\caption{Le vertex de désintégration du Higgs dessiné au tableau. En lisant les flèches dans l’autre sens, on obtient la fusion d’un fermion et d’un antifermion en un Higgs.}
+\lectureframe{00:59:40}
+\end{figure}
+
+Plus le fermion est lourd, plus son couplage de Yukawa est grand. Le quark top se distingue ainsi, avec une masse d’environ $173\,\mathrm{GeV}$, soit à peu près $180$ masses du proton. Le cours retient l’ordre de grandeur de $170$ masses du proton. Pourtant, un Higgs de masse voisine de $125\,\mathrm{GeV}$ est trop léger pour se désintégrer en une paire $t\bar t$ sur couche de masse,
+\begin{equation}
+m_H<2m_t.
+\end{equation}
+On ne peut pas non plus constituer un faisceau utile de quarks top : le top se désintègre avant de pouvoir s’hadroniser en une particule de faisceau à longue durée de vie.
+
+La mécanique quantique permet de contourner ces deux obstacles. Deux gluons peuvent fluctuer en passant par une boucle virtuelle de quark top, puis donner un Higgs,
+\begin{equation}
+g+g\longrightarrow H.
+\end{equation}
+Les lignes de top virtuelles n’ont pas à satisfaire le seuil de couche de masse qui s’appliquerait à la production réelle d’une paire de tops. Les protons regorgent de gluons ; les collisions proton-proton à haute énergie du Grand collisionneur de hadrons fournissent donc une source intense des paires de gluons requises.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_13.png}
+\caption{Fusion de gluons par une boucle virtuelle de top. Deux gluons issus des protons en collision se rencontrent dans la boucle et produisent le Higgs.}
+\lectureframe{01:06:35}
+\end{figure}
+
+Voilà pourquoi un collisionneur de protons, malgré la complexité des débris protoniques, est devenu l’usine à Higgs décisive. Le proton ne se couple pas au Higgs comme un objet élémentaire unique ; ses gluons constituants produisent le Higgs par une boucle dominée par le fort couplage du quark top.
+
+\section{La particule de 2012 et son test en deux photons}
+
+La particule annoncée en 2012 avait une masse voisine de
+\begin{equation}
+m_H\simeq125\,\mathrm{GeV}.
+\end{equation}
+Selon la comparaison commode du cours, cela représente environ $127$ masses du proton. Sa découverte a complété la liste des particules requises par le Modèle standard minimal. Restait à savoir si ses propriétés quantitatives étaient exactement celles prévues par le Modèle standard.
+
+On peut inverser le raisonnement sur la boucle de top. Le Higgs se couple aux particules chargées virtuelles dans une boucle, laquelle peut émettre deux photons,
+\begin{equation}
+H\longrightarrow\gamma+\gamma.
+\end{equation}
+Cette désintégration est rare, mais les photons sont des objets exceptionnellement propres dans un collisionneur hadronique. Un excès étroit dans leur distribution de masse invariante peut donc révéler un Higgs, même lorsque les désintégrations plus courantes sont expérimentalement plus difficiles à étudier.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_14.png}
+\caption{Le triangle de désintégration en deux photons, à droite du tableau, est associé à la boucle de fusion de gluons vue précédemment, à gauche. Ces deux processus sondent la même logique des boucles, en sens opposés.}
+\lectureframe{01:09:00}
+\end{figure}
+
+À l’époque du cours, le taux de désintégration en deux photons rapporté semblait atteindre peut-être une fois et demie la valeur prévue par la version la plus simple du Modèle standard, avec une signification statistique de seulement deux écarts-types environ. Une telle fluctuation ne constituait pas en soi une preuve. Si elle s’était maintenue, elle aurait toutefois pu signaler la présence d’une particule chargée supplémentaire dans la boucle, peut-être liée à la supersymétrie ou à une autre extension du Modèle standard.
+
+Cette affirmation correspond au contexte historique de 2012. Elle rapporte ce qu’on demandait alors aux expérimentateurs de surveiller ensuite, et ne prétend pas qu’il existe une anomalie aujourd’hui. La découverte elle-même confirmait en grande partie un cadre déjà étayé par les données sur les bosons faibles. Les tests les plus précis sur le plan scientifique portaient sur les taux de désintégration : le nouveau scalaire se couplait-il à chaque particule selon la dépendance en masse prédite par le mécanisme de Higgs ?
+
+\section{Questions du public}
+
+\begin{classroomqa}\audiencequestion{Qu’est-ce qui détermine qu’un fermion oscille plus rapidement qu’un autre entre les états gauche et droit, et possède donc une masse différente ?\lecturetimestamp{01:12:00}}\lecturerresponse{Chaque espèce de fermion possède son propre couplage au condensat de Higgs. Un couplage plus fort produit un mélange gauche--droite plus intense et une masse plus grande. Ce même couplage détermine l’intensité avec laquelle le Higgs physique se désintègre en ce fermion, ce qui explique pourquoi les fermions plus lourds ont généralement des couplages plus forts. Le Modèle standard paramètre ces couplages de Yukawa, mais n’explique pas leur hiérarchie frappante. Dire que l’électron a un faible couplage et le quark top un couplage élevé est une description juste, mais pas encore une explication plus fondamentale.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Connaît-on la valeur du champ de Higgs dans le vide ?\lecturetimestamp{01:13:36}}\lecturerresponse{Oui. Avec la convention utilisée ici, la valeur moyenne dans le vide est d’environ $240\,\mathrm{GeV}$ ; la valeur standard plus précise est approximativement $246\,\mathrm{GeV}$. On peut la représenter soit comme le déplacement radial du champ par rapport à l’origine, soit comme la densité du condensat. Un quantum de Higgs physique est une petite oscillation radiale autour de cette valeur, ou, de manière équivalente, une fluctuation locale de la densité du condensat.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{La valeur non nulle du champ de Higgs dans le vide implique-t-elle une densité d’énergie du vide ?\lecturetimestamp{01:14:12}}\lecturerresponse{Oui. Le potentiel de Higgs contribue à l’énergie du vide, tout comme de nombreux autres secteurs de la théorie quantique des champs. L’énergie nette du vide observée est extraordinairement faible par rapport aux valeurs naturelles de ces contributions ; elles doivent donc presque se compenser. Aucune théorie admise n’explique cette compensation. C’est le problème de la constante cosmologique, l’un des problèmes non résolus les plus profonds de la physique fondamentale.}\end{classroomqa}
+
+\section{Ce que cette construction a permis d’établir}
+
+On peut maintenant suivre le raisonnement du début à la fin sans invoquer d’éther visqueux. La rotation interne quantifiée fournit un modèle pour la charge. En donnant au bol la forme d’un chapeau mexicain, on confère au champ une valeur non nulle dans le vide. Le principe d’incertitude transforme un vide classique choisi avec précision en un condensat insensible aux quanta individuels. Le condensat peut alors porter la différence de nombres quantiques faibles entre les fermions gauches et droits, ce qui permet leur mélange et, par conséquent, leur masse. Il fournit aussi les modes longitudinaux qui permettent aux bosons vectoriels $W$ et $Z$ de se propager avec une masse, tandis que le photon reste sans masse.
+
+Le boson de Higgs physique est l’oscillation radiale qui subsiste après ce réarrangement. Ce n’est pas ``la masse elle-même,'' et il n’est pas responsable de la majeure partie de la masse du proton. C’est l’onde de densité observable du champ qui brise la symétrie. Ses couplages reflètent les masses produites par ce champ, ce qui explique pourquoi les particules lourdes dominent sa production et sa désintégration. La boucle de fusion de gluons, le canal à deux photons et la dernière question du public sur l’énergie du vide ne sont donc pas des curiosités sans lien. Ils sont des conséquences, des tests et des implications encore ouvertes d’un même vide non trivial.

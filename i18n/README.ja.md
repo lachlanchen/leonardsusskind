@@ -416,9 +416,9 @@ Leonard Susskind 関連の学習資料について、数学的品質、明瞭さ
 <!-- polished-translations:start -->
 ## 最終推敲版の翻訳
 
-日本語版と簡体字中国語版は最終推敲済みの英語講義ノートに基づきます。数式・図版を保持し、検証済みのPDFのみ公開します。原講師が公認した翻訳ではありません。
+各言語版は最終推敲済みの英語講義ノートに基づきます。繁体字中国語版のみ、検証済みの簡体字中国語版を変換し、英語原文と照合して推敲します。数式・原図を保持し、検証済みのPDFだけを公開します。原講師が公認した翻訳ではありません。
 
-[日本語・中国語版の公開状況](../README.md#final-polished-translations)
+[全言語版の公開状況](../README.md#final-polished-translations)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

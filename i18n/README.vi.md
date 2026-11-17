@@ -403,9 +403,9 @@ Bạn có bản ghi bài giảng do mình sở hữu hoặc được phép sử 
 <!-- polished-translations:start -->
 ## Bản dịch từ bản hiệu đính cuối
 
-Bản tiếng Nhật và tiếng Trung dựa trên bản tiếng Anh đã hiệu đính. Giữ nguyên công thức và hình; chỉ công bố PDF đã kiểm tra.
+Mỗi ấn bản ngôn ngữ dựa trên bản tiếng Anh đã hiệu đính. Bản tiếng Trung phồn thể được chuyển đổi trực tiếp từ bản giản thể đã kiểm định, rồi được trau chuốt đối chiếu với nguyên bản tiếng Anh. Công thức và hình gốc được giữ nguyên; chỉ PDF đã kiểm tra mới được công bố.
 
-[Tiến độ và kiểm tra](../README.md#final-polished-translations)
+[Tình trạng của mọi ấn bản ngôn ngữ](../README.md#final-polished-translations)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

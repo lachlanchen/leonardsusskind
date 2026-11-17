@@ -415,11 +415,11 @@ Dieses Repository ist unter der GNU General Public License v3.0 lizenziert. Sieh
 
 
 <!-- polished-translations:start -->
-## Uebersetzungen der finalen Ausgabe
+## Übersetzungen der finalen Ausgabe
 
-Japanische und chinesische Ausgaben entstehen aus den final redigierten englischen Notizen. Formeln und Abbildungen bleiben erhalten; nur gepruefte PDFs werden verlinkt.
+Jede Sprachausgabe beruht auf den abschließend redigierten englischen Notizen. Die traditionelle chinesische Ausgabe wird aus der geprüften vereinfachten Fassung konvertiert und anschließend am englischen Text nachbearbeitet. Formeln und Originalabbildungen bleiben erhalten; verlinkt werden nur geprüfte PDFs.
 
-[Verfuegbarkeit und Pruefverfahren](../README.md#final-polished-translations)
+[Verfügbarkeit aller Sprachausgaben](../README.md#final-polished-translations)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->
