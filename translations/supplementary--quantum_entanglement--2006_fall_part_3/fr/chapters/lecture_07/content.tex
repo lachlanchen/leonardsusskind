@@ -1,0 +1,505 @@
+\chapter{Particules chargées, transformations des champs et ondes relativistes}
+
+La dernière fois, nous avons commencé à nous demander comment se déplace une particule chargée dans des champs électrique et magnétique lorsque l’on impose les principes de la relativité. La loi de force de Lorentz familière nous en donne déjà l’indice : son terme magnétique dépend de la vitesse de la particule, si bien que des observateurs différents ne peuvent pas s’accorder séparément sur ce qui est électrique et sur ce qui est magnétique. Notre tâche consiste à formuler la loi de façon que tous les observateurs inertiels utilisent la même équation, même si les champs et la vitesse de la particule changent d’un référentiel à l’autre.
+
+Sauf indication contraire, nous utilisons des unités dans lesquelles \(c=1\) et la signature métrique \((-,-,-,+)\). Les composantes de l’espace-temps sont ordonnées en plaçant d’abord les trois composantes spatiales :
+\begin{equation}
+  \mu=(1,2,3,0)=(x,y,z,t).
+\end{equation}
+Les indices latins \(m,n\) ne parcourent que les trois directions spatiales.
+
+\section{Ce qui subsiste de la loi de force de Newton}
+
+En mécanique newtonienne,
+\begin{equation}
+  \boldsymbol F=m\boldsymbol a
+\end{equation}
+a la même forme dans tous les référentiels inertiels, car les observateurs galiléens s’accordent sur l’accélération. Ils attribuent aussi à la particule la même masse et la même force. Dès lors que la cinématique change, rien ne permet de s’attendre à ce que cette relation particulière entre la force et l’accélération ordinaire demeure inchangée.
+
+L’électromagnétisme et la gravitation nous avertissent déjà que leurs extensions relativistes n’ont pas nécessairement à se ressembler. La loi de Coulomb et la loi de la gravitation de Newton sont toutes deux des lois en inverse du carré, mais la gravitation ne peut être intégrée naturellement à la relativité restreinte sans une modification plus profonde de la géométrie de l’espace-temps. C’est possible pour l’électromagnétisme. En fait, le magnétisme est lui-même un effet relativiste : lorsque l’on réintroduit les facteurs de \(c\), une force magnétique comporte un facteur égal à la vitesse divisée par \(c\), et elle disparaît dans la limite formelle \(c\to\infty\).
+
+La partie durable de la loi de Newton est l’affirmation selon laquelle la force est le taux de variation de la quantité de mouvement. Pour une masse au repos constante,
+\begin{equation}
+  \boldsymbol F
+  =m\frac{d\boldsymbol v}{dt}
+  =\frac{d}{dt}(m\boldsymbol v)
+  =\frac{d\boldsymbol p}{dt}.
+\end{equation}
+La relativité modifiera la relation entre la quantité de mouvement et la vitesse, mais préservera cette façon d’organiser l’équation.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_01.png}
+\caption{La force réécrite sous la forme \(d\boldsymbol p/dt\), tandis que la partie électrique de la loi de Lorentz est inscrite au tableau.}
+\lectureframe{00:08:20}
+\end{figure}
+
+Dans les unités \(c=1\), la loi de force de Lorentz prérelativiste s’écrit
+\begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr).
+  \label{eq:lorentz-three}
+\end{equation}
+Les deux champs peuvent dépendre de la position et du temps. La limite non relativiste est maintenant la limite \(v\ll 1\), et non une limite dans laquelle la constante numérique \(c=1\) changerait d’une manière ou d’une autre. Le terme électrique de \eqref{eq:lorentz-three} est déjà un vecteur ordinaire. Pour comprendre le terme magnétique sous une forme qui puisse être transposée à l’espace-temps, nous devons réexaminer le produit vectoriel.
+
+\section{Le produit vectoriel comme tenseur antisymétrique}
+
+Considérons deux vecteurs tridimensionnels \(\boldsymbol A\) et \(\boldsymbol B\).
+Leur produit tensoriel
+\begin{equation}
+  T_{mn}=A_mB_n
+\end{equation}
+est un tenseur de rang deux à neuf composantes. En général, il n’a pas de symétrie. Son antisymétrisation donne
+\begin{equation}
+  K_{mn}=A_mB_n-A_nB_m,
+  \qquad K_{mn}=-K_{nm}.
+  \label{eq:antisym-product}
+\end{equation}
+Ses éléments diagonaux sont nuls, et chaque élément sous la diagonale est déterminé par l’élément correspondant au-dessus de celle-ci. Un tenseur antisymétrique \(3\times3\) ne possède donc que trois composantes indépendantes.
+
+Ce décompte est évocateur, mais il ne suffit pas à lui seul. Trois quantités ne se transforment pas automatiquement comme un vecteur. En trois dimensions, toutefois, on peut identifier les trois éléments indépendants de \eqref{eq:antisym-product} aux composantes du produit vectoriel
+\(\boldsymbol C=\boldsymbol A\times\boldsymbol B\). Au tableau, \(C_2\) est d’abord placé provisoirement dans la position supérieure droite :
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_02.png}
+\caption{Le produit antisymétrique, dont les trois éléments indépendants sont mis en correspondance avec les composantes de \(\boldsymbol C\). L’étiquette en haut à droite est encore provisoire.}
+\lectureframe{00:17:33}
+\end{figure}
+
+En faisant le cycle \(1\to2\to3\to1\), on obtient les formules des composantes
+\begin{align}
+  C_3 &= A_1B_2-A_2B_1, \\
+  C_1 &= A_2B_3-A_3B_2, \\
+  C_2 &= A_3B_1-A_1B_3.
+  \label{eq:cross-components}
+\end{align}
+La dernière ligne montre que l’élément supérieur droit est \(-C_2\), et non \(C_2\). Cette correction fait partie de l’argument ; ce n’est pas un détail à dissimuler.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_03.png}
+\caption{Les identités cycliques complètes entre les composantes, qui déterminent le signe provisoire dans le tableau antisymétrique.}
+\lectureframe{00:21:54}
+\end{figure}
+
+La matrice obtenue est
+\begin{equation}
+  K_{mn}=
+  \begin{pmatrix}
+    0 & C_3 & -C_2 \\
+    -C_3 & 0 & C_1 \\
+    C_2 & -C_1 & 0
+  \end{pmatrix}.
+  \label{eq:cross-matrix}
+\end{equation}
+
+Cette notation repose sur une géométrie utile. Une composante dont les indices sont \(1,2\) appartient naturellement au plan \(xy\) et est identifiée à une composante vectorielle selon l’axe \(z\) qui lui est perpendiculaire. On peut décrire le même objet orienté soit par un plan, soit par une flèche normale à ce plan. La description par une flèche est propre à trois dimensions ; en dimensions supérieures, un tenseur antisymétrique de rang deux existe toujours, mais il n’a plus le même nombre de composantes qu’un vecteur. C’est donc le tenseur, et non la flèche perpendiculaire, qui constitue la forme généralisable du produit vectoriel.
+
+De manière équivalente, après avoir choisi une orientation,
+\begin{equation}
+  C_k=\frac12\epsilon_{kmn}K_{mn}.
+\end{equation}
+La nécessité de choisir une orientation est à l’origine de la règle de la main droite et de la distinction familière entre vecteurs polaires et axiaux.
+\editorialnote{La formule avec le symbole de Levi--Civita et la terminologie des vecteurs axiaux sont des notations usuelles pour la géométrie qui distingue le plan de sa normale et qui est explicitée dans le cours.}
+
+\section{Le champ magnétique sous forme tensorielle}
+
+La même description duale s’applique au champ magnétique. Nous définissons son tenseur spatial antisymétrique par
+\begin{equation}
+  B_{mn}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 \\
+    B_3 & 0 & -B_1 \\
+    -B_2 & B_1 & 0
+  \end{pmatrix}.
+  \label{eq:magnetic-tensor}
+\end{equation}
+Le signe global supplémentaire par rapport à \eqref{eq:cross-matrix} relève d’une convention. Une fois celle-ci choisie, il faut l’appliquer de manière cohérente ; changer le signe des trois composantes vectorielles décrirait la même identification entre tenseur et vecteur, mais avec la convention d’orientation opposée.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_04.png}
+\caption{Le champ magnétique représenté à la fois par un tableau spatial antisymétrique et par ses trois composantes vectorielles.}
+\lectureframe{00:24:40}
+\end{figure}
+
+Considérons maintenant la troisième composante du produit vectoriel :
+\begin{align}
+  (\boldsymbol v\times\boldsymbol B)_3
+  &=v_1B_2-v_2B_1 \\
+  &=v_1B_{13}+v_2B_{23}+v_3B_{33}.
+\end{align}
+On peut ajouter le dernier terme parce que \(B_{33}=0\). En faisant cycler la composante libre, on obtient la règle compacte
+\begin{equation}
+  (\boldsymbol v\times\boldsymbol B)_m=v_nB_{nm},
+  \label{eq:cross-contraction}
+\end{equation}
+où l’indice répété \(n\) est sommé. La force magnétique s’écrit donc
+\begin{equation}
+  F_m^{(B)}=qv_nB_{nm}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_07_figure_05.png}
+\caption{La troisième composante de \(\boldsymbol v\times\boldsymbol B\) et son expression générale comme contraction avec \(B_{nm}\).}
+\lectureframe{00:28:30}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{L’indice libre \(m\) désigne-t-il une composante magnétique distincte de la force ?}
+\lecturerresponse{Non. Il désigne la composante spatiale de la force que l’on calcule. Pour l’argument présent, le champ électrique a simplement été posé égal à zéro, et tous les indices ici ne parcourent que les trois directions spatiales.}
+\end{classroomqa}
+
+La notation tensorielle rend presque automatique la propriété selon laquelle un champ magnétique ne fournit aucun travail. Dérivons le carré de la vitesse :
+\begin{align}
+  \frac{d}{dt}(v_mv_m)
+  &=2\dot v_m v_m \\
+  &\propto 2(\boldsymbol v\times\boldsymbol B)_m v_m \\
+  &=2v_nB_{nm}v_m.
+  \label{eq:speed-derivative}
+\end{align}
+Les termes tels que \(m=n\) s’annulent, car la diagonale de \(B_{nm}\) est nulle. Chaque terme hors diagonale a un terme correspondant dans lequel \(m\) et \(n\) sont intervertis ; les deux s’annulent parce que \(v_nv_m\) est symétrique, tandis que \(B_{nm}\) est antisymétrique. On a donc
+\begin{equation}
+  \frac{d}{dt}(v_mv_m)=0.
+\end{equation}
+Une force purement magnétique dévie la trajectoire sans modifier la vitesse ni l’énergie cinétique.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_06.png}
+\caption{Les termes associés dans \(v_nB_{nm}v_m\) s’annulent parce que le tenseur magnétique change de signe lorsque l’on intervertit ses indices.}
+\lectureframe{00:35:40}
+\end{figure}
+
+Cette démonstration est volontairement plus élaborée que le simple énoncé selon lequel un produit vectoriel est perpendiculaire à son premier facteur. Cette dernière propriété est propre à la représentation vectorielle en trois dimensions. La contraction d’une paire symétrique avec un tenseur antisymétrique est l’argument qui se conservera en quatre dimensions.
+
+\begin{classroomqa}\audiencequestion{Le champ magnétique doit-il être indépendant du temps pour que la vitesse reste constante ?}
+\lecturerresponse{L’algèbre ci-dessus ne dérive jamais le champ et n’exige pas que \(\partial_t\boldsymbol B=0\). Un terme magnétique seul ne fournit toujours aucun travail. En électrodynamique, cependant, un champ magnétique variable produit un champ électrique, et ce champ électrique peut modifier la vitesse de la particule.}
+\end{classroomqa}
+
+\section{Pourquoi les champs électrique et magnétique doivent se mélanger}
+
+Le mélange de \(\boldsymbol E\) et de \(\boldsymbol B\) se voit avant tout calcul en quatre dimensions. Considérons un mouvement lent, de sorte que les énoncés ordinaires de la mécanique newtonienne sur l’accélération restent valables. Supposons qu’un champ magnétique soit dirigé selon l’axe \(y\) et qu’une particule chargée se déplace selon l’axe \(x\). La force magnétique est dirigée selon l’axe \(z\) :
+\begin{equation}
+  \boldsymbol F=q\boldsymbol v\times\boldsymbol B.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_07.png}
+\caption{Schéma au tableau d’une particule se déplaçant transversalement à un champ magnétique ; les trois directions servent à comparer les descriptions dans le référentiel du laboratoire et dans le référentiel comobile.}
+\lectureframe{00:42:20}
+\end{figure}
+
+On peut redessiner la géométrie sans la perspective de la salle de cours :
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.05,>=Stealth]
+  \draw[->] (0,0) -- (3.8,0) node[right] {\(x\)};
+  \draw[->] (0,0) -- (-1.9,2.4) node[above left] {\(y\)};
+  \draw[->] (0,0) -- (0,3.1) node[above] {\(z\)};
+  \draw[->,very thick] (0,0) -- (2.7,0)
+    node[midway,below] {\(\boldsymbol v\)};
+  \draw[->,very thick] (0,0) -- (-1.35,1.7)
+    node[midway,above left] {\(\boldsymbol B\)};
+  \draw[->,very thick] (0,0) -- (0,2.35)
+    node[midway,right] {\(\boldsymbol F,\ \boldsymbol E'\)};
+\end{tikzpicture}
+\caption{Au laboratoire, la force dirigée selon \(z\) est magnétique ; dans le référentiel comobile instantané, cette même force doit être électrique.}
+\end{figure}
+
+Introduisons maintenant un observateur qui se déplace avec la particule à cet instant. La vitesse de la particule dans le nouveau référentiel est nulle, de sorte que le terme magnétique \(q\boldsymbol v'\times\boldsymbol B'\) s’annule. Pourtant, dans la limite des faibles vitesses, les deux observateurs doivent s’accorder sur le fait que la particule a une accélération selon \(z\). Si la loi de force de Lorentz a la même forme dans les deux référentiels, l’observateur comobile doit attribuer la force à un champ électrique \(\boldsymbol E'\) selon \(z\). Un champ qui était purement magnétique au laboratoire n’est donc pas purement magnétique dans le référentiel en mouvement.
+
+Voilà pourquoi il faut chercher un objet unique dont les composantes comprennent les deux champs. Un changement de référentiel ne se contente pas de faire tourner \(\boldsymbol E\) parmi ses propres trois composantes et \(\boldsymbol B\) parmi ses propres trois composantes ; il mélange les deux ensembles.
+
+\section{Le tenseur électromagnétique}
+
+Les champs électrique et magnétique ont ensemble six composantes. Un tenseur antisymétrique en quatre dimensions possède lui aussi six composantes indépendantes, puisque
+\begin{equation}
+  \frac{4(4-1)}{2}=6.
+\end{equation}
+Cela ne signifie pas qu’un tenseur antisymétrique soit littéralement le seul ensemble de six quantités que l’on puisse imaginer : six scalaires, ou un vecteur et deux scalaires, contiendraient eux aussi six nombres. C’est l’objet géométrique naturel dont les composantes peuvent se mélanger de la manière requise.
+
+Pour expliciter la convention du tableau, nous affichons le tenseur contravariant dans l’ordre où les composantes spatiales précèdent la composante temporelle, \((1,2,3,0)\) :
+\begin{equation}
+  F^{\mu\nu}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 & E_1 \\
+    B_3 & 0 & -B_1 & E_2 \\
+    -B_2 & B_1 & 0 & E_3 \\
+    -E_1 & -E_2 & -E_3 & 0
+  \end{pmatrix}.
+  \label{eq:l07-field-tensor}
+\end{equation}
+Le bloc \(3\times3\) en haut à gauche est précisément le tenseur magnétique \eqref{eq:magnetic-tensor} ; les composantes ayant un indice spatial et un indice temporel contiennent le champ électrique. L’antisymétrie fournit les autres éléments.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_08.png}
+\caption{Le bloc spatial magnétique et la colonne spatio-temporelle électrique sont assemblés pour former le tenseur du champ en quatre dimensions.}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{Quand ces composantes du champ doivent-elles porter des indices supérieurs plutôt qu’inférieurs ?}
+\lecturerresponse{Pour les seuls indices spatiaux, le tableau omet parfois la distinction lorsqu’il identifie les champs de Maxwell--Faraday familiers. Dans un calcul covariant, il faut rétablir cette distinction : avec la convention de métrique choisie, la montée ou la descente d’un indice spatial change un signe.}
+\end{classroomqa}
+
+Ce qui est invariant, ce n’est pas un arrangement particulier de signes au tableau, mais le tenseur antisymétrique de l’espace-temps, associé à une métrique et à une convention d’indices cohérentes. La notation \(F\) peut évoquer Faraday, même si le cours ne présente pas cette attribution historique comme certaine. Einstein a établi la transformation des composantes électriques et magnétiques en 1905 ; le langage compact des tenseurs quadridimensionnels est venu avec la formulation ultérieure de l’espace-temps associée à Minkowski.
+
+\section{Quadrivitesse et quadri-force}
+
+Il faut aussi rendre covariante la partie de l’équation qui décrit la particule. Le temps propre \(\tau\) est invariant ; dériver le quadrivecteur position par rapport à celui-ci donne donc un autre quadrivecteur :
+\begin{equation}
+  u^\mu=\frac{dx^\mu}{d\tau}
+  =\gamma(v_x,v_y,v_z,1),
+  \qquad
+  \gamma=\frac{1}{\sqrt{1-v^2}}.
+  \label{eq:four-velocity}
+\end{equation}
+La dernière composante découle de \(dt/d\tau=\gamma\). Le quadrivecteur quantité de mouvement est
+\begin{equation}
+  p^\mu=mu^\mu,
+\end{equation}
+dont la partie spatiale est la quantité de mouvement relativiste
+\(\boldsymbol p=m\gamma\boldsymbol v\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_09.png}
+\caption{Quadrivitesse, ses composantes, facteur de Lorentz et quadrivecteur quantité de mouvement.}
+\lectureframe{00:50:30}
+\end{figure}
+
+Puisque \(p^\mu\) est un quadrivecteur et que \(\tau\) est un scalaire, le membre de gauche relativiste naturel est
+\begin{equation}
+  f^\mu\equiv\frac{dp^\mu}{d\tau}.
+  \label{eq:four-force-def}
+\end{equation}
+La quadri-force ne peut pas être choisie arbitrairement. La quadrivitesse a une norme fixée,
+\begin{equation}
+  u_\mu u^\mu=1.
+\end{equation}
+En dérivant le long de la ligne d’univers, on obtient
+\begin{align}
+  0
+  &=\frac{d}{d\tau}(u_\mu u^\mu) \\
+  &=\frac{du_\mu}{d\tau}u^\mu
+    +u_\mu\frac{du^\mu}{d\tau} \\
+  &=2u_\mu\frac{du^\mu}{d\tau}.
+\end{align}
+Pour une masse constante, cela implique
+\begin{equation}
+  f^\mu u_\mu=0.
+  \label{eq:force-orthogonal}
+\end{equation}
+La quadri-force est donc orthogonale, au sens de Minkowski, à la quadrivitesse. Il s’agit d’une contrainte purement cinématique, qui découle de la normalisation de \(u^\mu\), et non d’une propriété particulière de l’électromagnétisme.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_10.png}
+\caption{La norme unitaire de la quadrivitesse et l’orthogonalité qui en résulte entre la quadri-force et la quadrivitesse.}
+\lectureframe{00:56:50}
+\end{figure}
+
+Le calcul magnétique en trois dimensions nous a déjà fourni l’astuce qui permet de satisfaire \eqref{eq:force-orthogonal}. Contractons un tenseur antisymétrique avec un exemplaire de la quadrivitesse :
+\begin{equation}
+  \boxed{
+  \frac{dp^\mu}{d\tau}=qF^{\mu\nu}u_\nu.}
+  \label{eq:covariant-lorentz}
+\end{equation}
+En effet,
+\begin{equation}
+  f^\mu u_\mu
+  =qF^{\mu\nu}u_\nu u_\mu=0,
+\end{equation}
+car \(F^{\mu\nu}\) est antisymétrique et \(u_\nu u_\mu\) est symétrique. Ce n’est pas la seule loi de force relativiste concevable, mais c’est la plus simple qui soit linéaire à la fois dans le champ électromagnétique et dans la quadrivitesse.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_11.png}
+\caption{L’équation covariante de la force de Lorentz à gauche et sa contraction nulle avec une seconde quadrivitesse à droite.}
+\lectureframe{01:00:00}
+\end{figure}
+
+\section{Retrouver la force de Lorentz ordinaire}
+
+Une équation qui semble covariante doit néanmoins reproduire la loi de force connue. Avec la convention de métrique énoncée au début,
+\begin{equation}
+  u_\mu=\gamma(-v_x,-v_y,-v_z,1).
+\end{equation}
+Pour la composante \(x\), \eqref{eq:l07-field-tensor} et \eqref{eq:covariant-lorentz} donnent
+\begin{align}
+  \frac{dp^1}{d\tau}
+  &=q\bigl(F^{12}u_2+F^{13}u_3+F^{10}u_0\bigr) \\
+  &=q\gamma\bigl(B_3v_y-B_2v_z+E_1\bigr) \\
+  &=q\gamma\bigl[\boldsymbol E+\boldsymbol v\times
+    \boldsymbol B\bigr]_x.
+  \label{eq:x-force}
+\end{align}
+Les autres composantes spatiales s’obtiennent en faisant cycler les indices.
+
+\begin{classroomqa}\audiencequestion{Où se trouve le terme \(qE_x\) dans le développement en composantes ?}
+\lecturerresponse{C’est le terme \(qF^{10}u_0\). Une composante du tenseur de champ ayant un indice spatial et un indice temporel est une composante du champ électrique, et \(u_0=\gamma\).}
+\end{classroomqa}
+
+Le facteur \(\gamma\) au membre de droite n’est pas une force supplémentaire. Comme
+\begin{equation}
+  \frac{dp^i}{d\tau}=\frac{dt}{d\tau}\frac{dp^i}{dt}
+  =\gamma\frac{dp^i}{dt},
+\end{equation}
+il se simplifie dans les deux membres de \eqref{eq:x-force}. L’équation spatiale exacte est donc de nouveau
+\begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr),
+  \qquad
+  \boldsymbol p=m\gamma\boldsymbol v.
+  \label{eq:exact-three-force}
+\end{equation}
+La forme familière est préservée, mais la relativité se trouve dans la quantité de mouvement.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_12.png}
+\caption{La loi de Lorentz tridimensionnelle retrouvée après simplification du facteur commun de temps propre ; la quantité de mouvement conserve son facteur \(\gamma\).}
+\lectureframe{01:06:30}
+\end{figure}
+
+La composante temporelle porte l’énoncé correspondant sur l’énergie,
+\begin{equation}
+  \frac{dp^0}{dt}=q\boldsymbol E\cdot\boldsymbol v,
+\end{equation}
+de sorte qu’un champ magnétique ne fournit aucun travail, tandis qu’un champ électrique peut modifier l’énergie de la particule.
+\editorialnote{La vérification de la composante temporelle est le pendant direct du calcul spatial du cours ; elle est incluse pour mettre en évidence la même propriété d’absence de travail dans la notation quadridimensionnelle.}
+
+\begin{classroomqa}\audiencequestion{Cette dérivation relève-t-elle des mathématiques ou de la physique ?}
+\lecturerresponse{Des deux. L’algèbre tensorielle fournit la forme compacte, mais des considérations physiques substantielles interviennent dans le principe selon lequel les lois sont les mêmes dans tous les référentiels inertiels et dans l’hypothèse que les équations du mouvement sont du second ordre. Une loi du second ordre prédit l’avenir à partir de la position et de la vitesse ; une loi du troisième ordre exigerait l’accélération comme donnée initiale supplémentaire. C’est l’expérience, et non la notation, qui nous indique quel type de loi la nature utilise.}
+\end{classroomqa}
+
+\section{Comment se transforment les champs}
+
+L’équation \eqref{eq:covariant-lorentz} a la même forme dans tous les référentiels parce que ses deux membres sont des quadrivecteurs. Le tenseur de champ lui-même se transforme par l’application d’une matrice de Lorentz à chacun de ses indices :
+\begin{equation}
+  F'^{\mu\nu}
+  =\Lambda^\mu{}_{\rho}\Lambda^\nu{}_{\sigma}F^{\rho\sigma}.
+  \label{eq:tensor-transform}
+\end{equation}
+Au tableau, cette règle est dérivée en transformant d’abord un produit simple \(A^\mu B^\nu\). Une fois la règle connue pour un produit de vecteurs, la linéarité permet de l’étendre à tout tenseur de rang deux.
+
+Pour une transformation de Lorentz selon l’axe \(1\), les coordonnées se transforment comme suit :
+\begin{align}
+  x'^1&=\gamma(x^1-vx^0), &
+  x'^0&=\gamma(x^0-vx^1), \\
+  x'^2&=x^2, & x'^3&=x^3.
+\end{align}
+Appliquons la même transformation séparément aux deux indices du tenseur. Pour la composante parallèle à la transformation, le tableau commence par un produit :
+\begin{align}
+  (A'^0B'^1)
+  =\gamma^2\bigl(
+     A^0B^1-vA^0B^0-vA^1B^1+v^2A^1B^0
+   \bigr).
+\end{align}
+En remplaçant chaque produit par la composante tensorielle correspondante, puis en utilisant l’antisymétrie, \(F^{00}=F^{11}=0\) et \(F^{10}=-F^{01}\), on obtient
+\begin{equation}
+  F'^{01}
+  =\gamma^2(1-v^2)F^{01}
+  =F^{01}.
+\end{equation}
+La composante du champ électrique parallèle au mouvement reste donc inchangée. La composante magnétique parallèle se comporte de façon analogue.
+
+Les composantes transversales sont différentes. En suivant la convention de signe et celle du référentiel primé utilisées au tableau,
+\begin{align}
+  F'^{02}
+  &=\gamma\bigl(F^{02}-vF^{12}\bigr), \\
+  E'_2
+  &=\gamma(E_2+vB_3).
+  \label{eq:e-transform}
+\end{align}
+Une composante électrique transversale acquiert une partie d’une composante magnétique. Les autres lois de transformation découlent de la même règle à deux indices et sont laissées en exercice dans le cours.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_07_figure_13.png}
+\caption{La transformation tensorielle transversale au moment où l’on voit que la composante \(E'_2\) contient un terme proportionnel à \(vB_3\).}
+\lectureframe{01:23:40}
+\end{figure}
+
+Le signe dans \eqref{eq:e-transform} dépend du référentiel que l’on déclare en mouvement à la vitesse \(+v\), ainsi que des conventions relatives aux indices et à la métrique. Son contenu invariant, lui, ne dépend pas de ces conventions : les composantes électriques et magnétiques transversales se mélangent, et l’équation covariante de la force reste valable après la transformation.
+
+\begin{classroomqa}\audiencequestion{Dans le cas d’un courant dans un fil, peut-on se déplacer à une certaine vitesse de sorte que le champ magnétique s’annule ?}
+\lecturerresponse{Se déplacer avec les électrons de conduction ne suffit pas, car les charges positives du réseau cristallin sont alors en mouvement dans le nouveau référentiel. Un fil neutre parcouru par un courant est donc plus subtil qu’un seul amas de charges en mouvement. Il est impossible d’éliminer complètement un champ purement magnétique par transformation. Si des champs électrique et magnétique sont tous deux présents, leurs composantes transformées peuvent s’annuler dans certaines circonstances ; pour une charge en mouvement uniforme, le référentiel où elle est au repos est le cas simple dans lequel son champ magnétique s’annule.}
+\end{classroomqa}
+
+Le critère invariant précis fait appel à
+\begin{equation}
+  \boldsymbol B^2-\boldsymbol E^2,
+  \qquad
+  \boldsymbol E\cdot\boldsymbol B.
+\end{equation}
+Un référentiel tel que \(\boldsymbol B'=0\) ne peut exister que pour un champ à dominante électrique, avec \(\boldsymbol E\cdot\boldsymbol B=0\) ; un champ purement magnétique dans un référentiel est à dominante magnétique et ne peut satisfaire cette condition.
+\editorialnote{Ces critères invariants énoncent précisément la réserve formulée dans la discussion en cours ; leur dérivation est reportée.}
+
+\begin{classroomqa}\audiencequestion{Le potentiel scalaire électrique et le potentiel vecteur magnétique forment-ils un quadrivecteur ?}
+\lecturerresponse{Oui. À des signes près selon la convention choisie, ils se combinent pour former le quadripotentiel \(A^\mu\). Les équations de Maxwell feront un usage systématique de cet objet.}
+\end{classroomqa}
+
+\section{Dérivées des champs}
+
+Nous quittons maintenant la trajectoire d’une particule pour considérer un champ défini dans tout l’espace-temps. Soit
+\begin{equation}
+  \phi=\phi(x^1,x^2,x^3,x^0)
+\end{equation}
+un champ scalaire. Ses quatre dérivées forment les composantes covariantes d’un quadrivecteur :
+\begin{equation}
+  \partial_\mu\phi
+  \equiv\frac{\partial\phi}{\partial x^\mu}
+  =\left(
+    \frac{\partial\phi}{\partial x},
+    \frac{\partial\phi}{\partial y},
+    \frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+La règle de dérivation en chaîne, appliquée à la transformation de Lorentz des coordonnées, démontre cette loi de transformation covariante. La montée de l’indice inverse les signes spatiaux, mais laisse inchangé le signe temporel :
+\begin{equation}
+  \partial^\mu\phi
+  =\left(
+    -\frac{\partial\phi}{\partial x},
+    -\frac{\partial\phi}{\partial y},
+    -\frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+
+Chaque dérivation ajoute un indice inférieur. Ainsi,
+\(\partial_\nu V^\mu\)est un tenseur de rang deux ayant un indice supérieur et un indice inférieur, et la dérivation d’un tenseur produit un objet auquel s’ajoute un indice inférieur. C’est la règle fondamentale pour écrire les équations de champ sans choisir de référentiel inertiel privilégié.
+
+\section{L’équation scalaire des ondes invariante}
+
+Les équations d’onde les plus simples contiennent deux dérivées. Pour que l’équation ait la même forme dans tous les référentiels inertiels, son membre de gauche doit être un scalaire. La contraction des indices de dérivation donne le choix le plus simple, et unique :
+\begin{equation}
+  \boxed{\partial^\mu\partial_\mu\phi=0.}
+  \label{eq:wave-covariant}
+\end{equation}
+En développant les composantes avec la signature utilisée ici,
+\begin{equation}
+  \frac{\partial^2\phi}{\partial t^2}
+  -\frac{\partial^2\phi}{\partial x^2}
+  -\frac{\partial^2\phi}{\partial y^2}
+  -\frac{\partial^2\phi}{\partial z^2}=0.
+  \label{eq:wave-components}
+\end{equation}
+La contraction dans \eqref{eq:wave-covariant} rend manifeste l’invariance de Lorentz ; l’équation \eqref{eq:wave-components} exprime la même chose en détaillant les composantes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_14.png}
+\caption{La forme contractée de l’équation scalaire des ondes et son développement en composantes, avec le terme temporel moins les termes spatiaux.}
+\lectureframe{01:39:40}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{Le membre de droite de l’équation d’onde doit-il être nul ?}
+\lecturerresponse{Non. Il peut s’agir de n’importe quel scalaire compatible avec le problème. Une constante multipliée par \(\phi\), ou une fonction scalaire non linéaire telle qu’une fonction proportionnelle à \(\phi^2\), préserve encore la covariance. Le choix zéro donne l’équation d’onde libre la plus simple.}
+\end{classroomqa}
+
+Cet exemple scalaire sert de préparation. Les équations de Maxwell mélangent les champs électrique et magnétique de manière plus complexe, mais elles aussi peuvent s’écrire de façon que leur structure indicielle rende visible l’invariance de Lorentz. C’est à ce problème que nous reviendrons la prochaine fois.

@@ -1,0 +1,56 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 230,
+  "outline_entries": 96,
+  "target_characters": 179926,
+  "image_placements": 98,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Intrication quantique, troisième partie",
+  "pdf_sha256": "32a5418dd217112c025faf5f18ed723a5b2a15ee79de2c73fc027af807922938",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 32,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "28ee7faf029f316d113e199ad4dad76ddd17da0ef7853b9492683a42100c1ddb",
+    "chapters/lecture_01/content.tex": "bd27074b02cf0bea570cce288764a1f341bf821c975c46907beae8dda1600eed",
+    "chapters/lecture_02_03/content.tex": "9ed43b94718b926417d86660d4bd3421a7947d2f76bc0d765c82c6fc8a7c7f91",
+    "chapters/lecture_04/content.tex": "8259d73b9f8c502d370755e2f3be34e1fe947e276dfbd79d74e6ade44ea27580",
+    "chapters/lecture_05/content.tex": "5e2298e865eb42ae64e42730b472cef58ef6b2730a5440b2eebc4e17aaddf475",
+    "chapters/lecture_06/content.tex": "3faa809b09965fecc49dca6c9dfeb68ea0db1c8ce1bf89bd2c49e7cd4f382e29",
+    "chapters/lecture_07/content.tex": "bd7c4c98308eea6049e23da4c098fbb4ec624f6792b4a9cde7b116c7c1896667",
+    "chapters/lecture_08/content.tex": "2014b99d4b4e4e4fc83e052d2a15eb3799f7e7f68bea28dbf50ad618a265bb7b",
+    "chapters/lecture_09/content.tex": "40d0c24a01beefdbbe67c530bf3b7fc1acfc433ae41e2093c367706469515bbd"
+  },
+  "source_files": {
+    "course.tex": "356d8ce3183a4c7413b9c336e9a2d8bd28af68d0f32fc281411dd6137903070b",
+    "common_preamble.tex": "7230adaa2c872f88056a832b9a230eaf89d97409c06df43c5abd3be7bb7c6e6d",
+    "chapters/lecture_01/content.tex": "8901a5e94b79043b8683ae3c07a6714b79847789e5762c48cd72e9d9f36d025a",
+    "chapters/lecture_02_03/content.tex": "d5f4018fc88275e090e6b4773153254fd7bbd28504c004b454fb444d72fb2f3f",
+    "chapters/lecture_04/content.tex": "b79226daad0aa91b17e4b2afe6d6e4b98fc52396be779aab36de42d64582b3ab",
+    "chapters/lecture_05/content.tex": "3e7b4248a1a92ec5b0838f3fcbd1c70b542ad61307daf8cff5face134ee911b3",
+    "chapters/lecture_06/content.tex": "ed6739fc900e1b83e609422bcf5a0246a4429759b0de1ebc104649c101391284",
+    "chapters/lecture_07/content.tex": "42d787980d2bd997c18034f22e260e9db3610b2b44586bcd1d5557ab67b90c95",
+    "chapters/lecture_08/content.tex": "57e52781307495b368457421b6d78cc41a563bc01a566b789fd9200862518709",
+    "chapters/lecture_09/content.tex": "a2e052c366902368f82b9b8cc60ec34b86f8d7451d0adc06a04c22b71778c74f"
+  },
+  "translated_tex": {
+    "cover.tex": "86bd9bd56bfc49decbad22548b7ffa17bbda6bfce2cb66e258c14f9ed853c2a3",
+    "common_preamble.tex": "fa39fb2b964b738049087302863d01024130929dd2f34b44cf71ca46aa31389f",
+    "course.tex": "16bded33c8543dede7b101f6f7c99875cd3a91a89e967069728786212ff67af1",
+    "chapters/lecture_07/content.tex": "b60e2fd7f70da8ed2a4c5d1a52a49708263a4dead2ed40c8cb4edececb600216",
+    "chapters/lecture_09/content.tex": "293f4f27735354cdd34d37b3e6c56a5d6690d4509ddb36a5ee96e6fb40c7e402",
+    "chapters/lecture_02_03/content.tex": "aa7742e1e8f57bf7f564a8f52bc6f0fd3730fc27ab6ad0694e798f81e69dc892",
+    "chapters/lecture_01/content.tex": "9c265b4e6b15644a06bd194b8f27819cd6e8023fdec6ad704799c7593d2d4be5",
+    "chapters/lecture_08/content.tex": "329f56319febf8e9b937565f0c0efc0d2714d7a0b1f0655f8766972080f9a6f9",
+    "chapters/lecture_05/content.tex": "106fef2c84603150b24b25ee161d1d5397e59cf90106d2720bbd1bf964cc3849",
+    "chapters/lecture_04/content.tex": "7478c3a8a2c0bdb088feac181b4d3ccfb1adad9f4ef73b7c243739501ae91298",
+    "chapters/lecture_06/content.tex": "2779da71d357148a6c7dcfbc8d10e62b7ecbed045df89b1d609497a890d3d826"
+  }
+}
