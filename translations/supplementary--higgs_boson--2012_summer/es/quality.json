@@ -1,0 +1,35 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 35,
+  "outline_entries": 18,
+  "target_characters": 28705,
+  "image_placements": 14,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Desmitificando el bosón de Higgs",
+  "pdf_sha256": "45b6e66e6a17f1f18a43976889308626d83f18138584bbb12528a774a3261b76",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 4,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "c2ddb5c89270505e2c792984a5ce8f935f1b459689fd333e7eb36e66fe3f0f25",
+    "chapters/lecture_01/content.tex": "9ad1986e0c3d16f23fb2d36b10f7f871bec1c7649f2d250eea3ec0aeb88906e0"
+  },
+  "source_files": {
+    "course.tex": "8618bd1a9d6c91833ba00f7be31dcb20fcc6727f03cd9160273f418737e819fd",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "0dce2f6c0fcca244ee59848cdffaf66f43d412a86a2f3e89cf16984c5f46430c"
+  },
+  "translated_tex": {
+    "cover.tex": "ca506782832ce5299832c8b7776791d554b23fead7d68019aaa24a5f939e665a",
+    "common_preamble.tex": "ba6baed6e0ccfaffc059dc8550a7ae85e8975a0feba22d1ce16e1bfa6ded79f0",
+    "course.tex": "010cc6ea91ebdf28aef89f85a070f94fec380e21906177c9d6f945ca42a52195",
+    "chapters/lecture_01/content.tex": "131acceb750b7cd6911a5f009fd70b427d58ae51b16ab08912712c3ac084f82b"
+  }
+}

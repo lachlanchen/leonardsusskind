@@ -1,0 +1,452 @@
+\chapter{Desmitificando el bosón de Higgs}
+
+\lectureoverview{El mecanismo de Higgs se entiende mejor siguiendo el orden en que sus componentes se vuelven necesarios. Empezamos con el movimiento y los campos cuantizados, convertimos una cubeta ordinaria en un potencial de sombrero mexicano y usamos el condensado resultante para entender por qué los fermiones y los bosones débiles pueden tener masa. Solo entonces identificamos el bosón de Higgs físico como la vibración radial de ese condensado y seguimos los procesos de producción y desintegración que lo revelaron en 2012.}
+
+\section{El mecanismo detrás de los titulares}
+
+El descubrimiento de una nueva partícula cerca de $125\,\mathrm{GeV}$ fue, con razón, motivo de entusiasmo, pero el entusiasmo aún no equivale a comprensión. La pregunta útil no es si el Higgs es importante ni si se puede vincular retóricamente con el origen del universo. La pregunta útil es mucho más acotada: ¿cuáles son los engranajes del fenómeno y por qué lo necesitaba el Modelo Estándar?
+
+El nombre también merece una breve precisión. Peter Higgs fue una de varias personas que identificaron la física, y Fran\c{c}ois Englert y Robert Brout llegaron de manera independiente a la idea central. Por eso, la expresión \emph{mecanismo de Brout----Englert} refleja la historia con mayor fidelidad, aunque a continuación usaremos el nombre más corto.
+
+La explicación se desarrolla por módulos. Primero necesitamos dos elementos básicos de la mecánica cuántica y una idea de la teoría clásica de campos. Después necesitamos un vacío cuyo estado de menor energía contenga un campo distinto de cero. Luego podremos hacer un inventario de las partículas del Modelo Estándar y ver por qué una versión básica de la teoría deja sin masa a las partículas pertinentes. El propio bosón de Higgs aparece casi al final. No es todo el mecanismo, sino una oscilación particular que queda una vez establecido el mecanismo.
+
+\section{Dos hechos cuánticos y un campo}
+
+El primer hecho cuántico es la cuantización. El momento angular es un ejemplo sencillo porque aparece en unidades discretas,
+\begin{equation}
+L=n\hbar,
+\qquad
+n=0,\pm1,\pm2,\ldots .
+\end{equation}
+También hay momentos angulares semienteros, pero nada en el argumento inmediato depende de ellos. Lo importante es que un movimiento clásico que varía de manera continua se convierte en una escalera de estados cuánticos.
+
+El segundo hecho es el principio de incertidumbre. Lo dejaremos para más adelante, cuando aparezca un círculo continuo de posibles vacíos. Entonces nos impedirá tratar el vacío como una pequeña bola clásica inmóvil en un punto definido con precisión.
+
+Entre estos dos hechos cuánticos está el concepto clásico de campo. Un campo asigna una cantidad a cada punto del espacio y el tiempo. Los campos eléctrico, magnético y gravitatorio son ejemplos conocidos. Una región puede parecer vacía y aun así contener un campo. Imaginemos dos placas cargadas tan alejadas que no podamos ver ninguna de ellas. Sin embargo, el campo eléctrico casi uniforme entre ambas es real localmente. Así pues, ``el espacio vacío'' no tiene por qué significar que ``todos los campos sean iguales a cero.'' Significa que los campos ocupan el estado de menor energía disponible.
+
+Supongamos que la energía de un campo alcanza su mínimo en un valor y aumenta cuando el campo se desplaza de él. Si se perturba el campo, este oscila alrededor del mínimo. La mecánica cuántica cuantiza esas oscilaciones, y sus cuantos individuales son partículas. Este es el diccionario de la teoría de campos que necesitaremos a lo largo de la conferencia:
+\begin{equation}
+\text{particle}
+\quad\longleftrightarrow\quad
+\text{quantum of a field vibration}.
+\end{equation}
+
+\section{Una cubeta en el espacio de campos}
+
+Para una componente de campo real $\phi$, el paisaje energético más sencillo es una cubeta,
+\begin{equation}
+V(\phi)=\frac{1}{2}m^{2}\phi^{2}.
+\end{equation}
+El fondo de la cubeta está en $\phi=0$. Las pequeñas oscilaciones alrededor del fondo tienen una frecuencia definida, y sus cuantos se comportan como partículas de masa $m$.
+
+Ahora reemplacemos el campo único por dos componentes, $(\phi_1,\phi_2)$. La energía puede depender solo del radio en este plano interno,
+\begin{equation}
+r^{2}=\phi_1^{2}+\phi_2^{2},
+\qquad
+V=V(r).
+\end{equation}
+Esta es una cubeta en el \emph{espacio de campos}, no una depresión en el espacio ordinario. Al rotar el par $(\phi_1,\phi_2)$, la energía no cambia. El sombrero que se usa en la conferencia hace visible la misma simetría: al girarlo alrededor de su eje, sigue teniendo el mismo aspecto.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_02.png}
+\caption{La cubeta simétrica ordinaria y el sombrero físico empleados para hacer tangible la simetría de rotación en el espacio de campos.}
+\lectureframe{00:10:02}
+\end{figure}
+
+La analogía deja de ser solo geométrica cuando el campo se mueve. Desplacémoslo desde el centro y hagámoslo circular alrededor de la cubeta. Ese movimiento circular lleva momento angular en el espacio de campos. No se trata del momento angular de un objeto que gira en el laboratorio, sino de un momento angular interno. Una vez cuantizado, proporciona el modelo para una carga conservada,
+\begin{equation}
+Q=nq_0,
+\qquad
+n\in\mathbb{Z}.
+\end{equation}
+La ecuación es esquemática. La idea física central es que una excitación cargada del campo puede representarse como una rotación en un plano interno. Las cargas positiva y negativa corresponden a sentidos de rotación opuestos, y la ausencia de rotación corresponde a carga nula.
+
+\section{Dar la vuelta al sombrero}
+
+La cubeta ordinaria tiene un único punto más bajo. La física de Higgs empieza cuando se da la vuelta al sombrero. El centro se vuelve inestable, mientras que toda una depresión circular tiene la misma energía mínima. Una realización matemática estándar es
+\begin{equation}
+V(\phi_1,\phi_2)
+=
+\lambda
+\left(
+  \phi_1^{2}+\phi_2^{2}-v^{2}
+\right)^{2},
+\qquad \lambda>0,
+\end{equation}
+cuyos mínimos satisfacen
+\begin{equation}
+\phi_1^{2}+\phi_2^{2}=v^{2}.
+\end{equation}
+\editorialnote{El potencial cuártico explícito es la formulación analítica estándar de la geometría del sombrero mexicano dibujada en la conferencia; no se transcribe de una fórmula escrita en la pizarra.}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_03.png}
+\caption{La cúspide central y la depresión circular del potencial con forma de sombrero invertido. El dibujo completo de la pizarra reemplaza un recorte anterior que omitía casi toda la geometría.}
+\lectureframe{00:13:10}
+\end{figure}
+
+El vacío ya no tiene campo nulo. Debe encontrarse en algún punto de la depresión,
+\begin{equation}
+(\phi_1,\phi_2)
+=
+v(\cos\theta,\sin\theta).
+\end{equation}
+Las ecuaciones conservan la simetría de rotación, pero cada vacío concreto selecciona un ángulo $\theta$. Esto es la ruptura espontánea de simetría: la ley es simétrica, pero el estado elegido de menor energía no lo es.
+
+Ahora hay dos tipos de movimiento cualitativamente distintos. Desplazarse radialmente hacia dentro o hacia fuera hace subir por el potencial y cuesta energía. Recorrer la depresión solo cambia $\theta$ y, clásicamente, no cuesta energía potencial. Por tanto, se puede asociar un movimiento angular de tipo carga de gran magnitud con muy poca energía potencial adicional.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_04.png}
+\caption{Un punto marcado en la depresión representa un vacío concreto, seleccionado entre el círculo continuo de mínimos igualmente válidos.}
+\lectureframe{00:16:14}
+\end{figure}
+
+\section{La incertidumbre convierte el vacío en un condensado}
+
+Clásicamente, se podría colocar el campo en un punto del borde, fijar su velocidad angular en cero y dar el problema por resuelto. La mecánica cuántica impide una conclusión tan tajante. La posición y el momento obedecen
+\begin{equation}
+\Delta x\,\Delta p\gtrsim\frac{\hbar}{2}.
+\end{equation}
+La afirmación análoga para la depresión circular es que localizar el ángulo del campo hace incierto su momento angular interno conjugado. En el lenguaje esquemático de la conferencia,
+\begin{equation}
+\Delta\theta\,\Delta L_{\mathrm{int}}
+\gtrsim
+\frac{\hbar}{2}.
+\end{equation}
+\editorialnote{Los operadores de ángulo presentan sutilezas técnicas, por lo que esta relación es una expresión semiclásica local del argumento de incertidumbre de la conferencia, y no una identidad exacta de operadores válida globalmente.}
+
+Por tanto, un vacío concentrado cerca de un punto de la depresión no es un estado de carga interna definida. Contiene una superposición amplia de estados propios de la carga. La conferencia precisa esta idea mediante una prueba operacional: añadir una unidad de carga o quitar una unidad apenas cambia el estado. Esquemáticamente, se puede representar así:
+\begin{align}
+\ket{\Omega}
+&\sim
+\sum_n c_n\ket{n},
+\\
+c_{n+1}
+&\simeq
+c_n
+\quad\text{within the occupied range}.
+\end{align}
+Entonces, cambiar $n$ en una unidad equivale en gran medida a volver a etiquetar términos que ya están presentes. En ese sentido, el vacío es un \emph{condensado}: contiene un número indefinido de los cuantos pertinentes, de modo que añadir uno o quitar uno no produce un estado macroscópico observable distinto.
+
+El verdadero vacío electrodébil no es un condensado de carga eléctrica ordinaria. Si lo fuera, el comportamiento electromagnético del espacio vacío sería radicalmente distinto. Sin embargo, un superconductor ofrece un ejemplo concreto de condensado cargado. Por eso constituye un puente físico útil entre la imagen abstracta del sombrero mexicano y la afirmación de que un vacío puede tener una estructura cuántica coherente.
+
+Con esto concluye el primer módulo. Hemos aprendido que el estado de menor energía no tiene por qué corresponder a un campo nulo y que la incertidumbre cuántica puede hacer que ese estado sea insensible a la adición o eliminación de cuantos individuales. Ahora preguntamos qué partículas necesitan semejante campo de fondo.
+
+\section{El Modelo Estándar sin modificaciones}
+
+La masa de Planck es la cota superior natural para las masas de las partículas elementales. Si se concentra suficiente energía en una región, ya no se puede ignorar la gravedad; con el tiempo, conviene considerar el objeto como un agujero negro y no como una partícula elemental ordinaria. Numéricamente,
+\begin{equation}
+m_{\mathrm P}
+=
+\sqrt{\frac{\hbar c}{G}}
+\approx
+2.2\times10^{-8}\,\mathrm{kg},
+\end{equation}
+aproximadamente la masa de una mota de polvo diminuta. Las partículas elementales conocidas son muchísimo más ligeras. En la estimación de escala empleada en la conferencia, sus masas llegan solo a cerca de $10^{-17}$ de la masa de Planck.
+
+Esta observación no demuestra que no existan partículas elementales más pesadas. Los aceleradores tienden a revelar partículas lo bastante ligeras como para producirlas con la energía disponible. Por tanto, el espectro conocido está parcialmente condicionado por el alcance de las máquinas empleadas para buscarlo. Puede haber muchas partículas más pesadas fuera del alcance actual.
+
+Las partículas observadas se dividen en fermiones y bosones. Entre los fermiones están el electrón, el muón, el tau, sus neutrinos y los seis sabores de quarks. Entre los bosones están el fotón, los gluones y los bosones débiles $W$ y $Z$. Los gluones unen los quarks para formar protones y neutrones y, por tanto, son fundamentales para la estructura de los núcleos ordinarios.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_05.png}
+\caption{El primer inventario del Modelo Estándar de la conferencia, con el enorme intervalo de masas dibujado sobre las columnas de fermiones y bosones.}
+\lectureframe{00:24:22}
+\end{figure}
+
+La teoría no es una mera lista, sino un conjunto de interacciones permitidas. Un electrón puede emitir un fotón,
+\begin{equation}
+e\longrightarrow e+\gamma.
+\end{equation}
+Un quark tiene carga eléctrica y carga de color, por lo que puede emitir un fotón o un gluón,
+\begin{equation}
+q\longrightarrow q+\gamma,
+\qquad
+q\longrightarrow q+g.
+\end{equation}
+Un electrón no puede emitir un gluón, y un neutrino no emite ni fotones ni gluones. Los fermiones con los números cuánticos débiles adecuados pueden interactuar mediante el $Z$,
+\begin{equation}
+f\longrightarrow f+Z.
+\end{equation}
+Los bosones $W$ y las reacciones de corriente cargada también forman parte del Modelo Estándar, pero la conferencia los deja de lado para que un único bosón débil neutro baste para desarrollar el argumento.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_06.png}
+\caption{Vértices de emisión de fotones, gluones y $Z$ junto a la palabra ``sin masa.'' Estos procesos resumen la teoría sin modificaciones, antes de introducir el condensado.}
+\lectureframe{00:29:20}
+\end{figure}
+
+El fotón no tiene masa. En una teoría gauge no rota del mismo tipo general, los gluones y los bosones gauge débiles tampoco tienen masa. Asimismo, la teoría electrodébil sin modificar no puede simplemente introducir masas fermiónicas a mano y conservar su simetría gauge. Falta un ingrediente. Antes de incorporarlo, necesitamos ver, en un contexto más sencillo, cómo un campo de fondo puede modificar la masa de una partícula sin actuar como una fuerza de rozamiento.
+
+\section{Cómo puede un campo de fondo modificar la masa}
+
+Consideremos una molécula de agua como un dipolo eléctrico: un extremo es ligeramente positivo y el otro, ligeramente negativo. En el espacio vacío, las dos orientaciones opuestas tienen la misma energía. En tono lúdico, la conferencia da nombres distintos a esas orientaciones, ``agua'' y ``whisky,'' solo para poder seguirlas como estados internos distintos.
+
+Coloquemos la molécula entre las placas de un condensador. Si su momento dipolar es $\bm d$ y el campo eléctrico es $\bm E$, la energía de interacción es
+\begin{equation}
+U=-\bm d\mathbin{\cdot}\bm E.
+\end{equation}
+Para las dos orientaciones alineadas, resulta
+\begin{equation}
+U_{\parallel}=-dE,
+\qquad
+U_{\mathrm{anti}}=+dE.
+\end{equation}
+La relación de Einstein $E=mc^2$ convierte la diferencia de energía en una diferencia de masa,
+\begin{equation}
+m_{\mathrm{anti}}-m_{\parallel}
+=
+\frac{2dE}{c^{2}}.
+\end{equation}
+No se ha frotado nada contra la molécula. Mientras el campo de fondo está presente, un estado interno simplemente tiene más energía y, por tanto, más masa que el otro.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_07.png}
+\caption{Orientaciones moleculares opuestas en el campo del condensador. El campo separa sus energías sin introducir una fuerza de arrastre.}
+\lectureframe{00:34:35}
+\end{figure}
+
+Esto descarta dos analogías engañosas. El campo de Higgs no es una melaza que las partículas deban atravesar a empujones, y una partícula masiva no es una máquina quitanieves que se ralentiza al acumular material delante. En un campo espacialmente uniforme puede no haber ninguna fuerza neta. El efecto es un desplazamiento de energía interna, no fricción ni pérdida de momento.
+
+El mismo ejemplo puede expresarse en lenguaje cuántico. Un campo eléctrico clásico es un estado coherente que, para nuestros fines, puede describirse como un condensado de fotones. La molécula puede emitir un fotón hacia ese fondo o absorber uno de él. Como añadir o quitar un cuanto apenas altera un estado coherente con una ocupación muy grande, la línea del fotón puede terminar en el condensado. La cruz dibujada en la pizarra indica que el fotón desaparece en el campo de fondo, no que se incumpla la conservación de la energía.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_08.png}
+\caption{El campo del condensador, representado de nuevo como un condensado de fotones. El fotón emitido por el dipolo se absorbe en un fondo al que apenas afecta la adición de otro cuanto.}
+\lectureframe{00:38:45}
+\end{figure}
+
+Este es el modelo que necesitamos. Si un condensado puede absorber la diferencia de números cuánticos entre dos estados internos, puede mezclarlos. La oscilación resultante puede manifestarse como masa.
+
+\section{Por qué el Higgs no explica toda la masa}
+
+Antes de aplicar este modelo, hay que despejar una idea equivocada. Es falso que todos los objetos masivos obtengan toda su masa del campo de Higgs.
+
+Introduzcamos radiación en una caja perfectamente reflectante. Los fotones individuales no tienen masa, pero la caja cerrada tiene un sistema de reposo y almacena energía. Su masa aumenta en
+\begin{equation}
+\Delta M=\frac{E_{\mathrm{radiation}}}{c^{2}}.
+\end{equation}
+Así pues, puede surgir masa de la energía cinética y del campo confinados, aunque los constituyentes no tengan masa en reposo.
+
+Un protón es el ejemplo real importante. Contiene quarks, antiquarks y gluones en un estado de interacción fuerte. La mayor parte de la masa del protón proviene de su energía cinética y de enlace, no de sumar sin más las masas generadas por el Higgs de unos pocos quarks constituyentes. En la estimación que destaca la conferencia, hacer que los quarks ligeros no tengan masa cambiaría la masa del protón solo en torno al uno por ciento. Los agujeros negros hacen que la idea sea aún más evidente: un agujero negro puede tener masa por la energía total que lo formó, no porque el campo de Higgs haya convertido primero cada contribución en masa en reposo de partículas elementales.
+
+El mecanismo de Higgs tiene una función más precisa. Permite que los fermiones elementales y los bosones gauge débiles tengan masa, a la vez que preserva la consistencia de la teoría gauge subyacente.
+
+\section{Quiralidad: la masa como mezcla entre izquierda--derecha}
+
+Centrémonos primero en el electrón. El espín es un momento angular intrínseco. Para una partícula en movimiento, se puede comparar la dirección de su espín con la de su momento. En el lenguaje geométrico de la conferencia, se distingue un electrón dextrógiro de uno levógiro por la relación entre esas direcciones. Para una partícula sin masa, la helicidad y la quiralidad coinciden de la manera sencilla que requiere el argumento; para una partícula masiva, hay que distinguir con precisión ambos conceptos.
+
+Imaginemos que adelantamos repetidamente a un electrón masivo. En otro sistema de referencia inercial, su momento se invierte mientras que su espín no lo hace, de modo que puede invertirse la quiralidad aparente asociada a la dirección del movimiento. Ningún observador puede adelantar a una partícula estrictamente sin masa, que siempre se mueve a la velocidad de la luz. Esto motiva la afirmación heurística de la conferencia: un electrón sin masa permanece en un estado quiral, mientras que uno masivo mezcla continuamente los estados izquierdo y derecho.
+
+La formulación exacta de la teoría de campos establece que un término de masa de Dirac acopla los dos campos quirales,
+\begin{equation}
+\mathcal L_m
+=
+-m_e\bar e e
+=
+-m_e
+\left(
+  \bar e_L e_R
+  +
+  \bar e_R e_L
+\right).
+\end{equation}
+\editorialnote{El término de masa de Dirac es la formulación matemática estándar de la imagen de la ``frecuencia de inversión'' de la conferencia. La mezcla de quiralidades es proporcional a la masa; la frecuencia temporal literal depende del estado y de la dilatación relativista del tiempo.}
+
+Si $m_e=0$, los campos izquierdo y derecho se propagan independientemente. Si $m_e\ne0$, las ecuaciones los acoplan. En ese sentido preciso, la masa mide la intensidad de la mezcla entre izquierda--derecha.
+
+\section{La ley de conservación que prohíbe una masa explícita}
+
+¿Por qué no escribir desde el principio el término de mezcla? La interacción débil trata de forma distinta a $e_L$ y $e_R$. Susskind da a la distinción pertinente un nombre deliberadamente sencillo: \emph{zilch}. Con la normalización utilizada en la conferencia,
+\begin{equation}
+z(e_L)=1,
+\qquad
+z(e_R)=0.
+\end{equation}
+Las dos quiralidades tienen la misma carga eléctrica, pero distintos números cuánticos débiles. Por tanto, una transición directa
+\begin{equation}
+e_L\longrightarrow e_R
+\end{equation}
+no conservaría la cantidad asociada a la interacción débil. En la teoría no rota, el término de masa explícito está prohibido.
+
+\editorialnote{``Zilch'' es una simplificación pedagógica. En el Modelo Estándar, los fermiones levógiros y dextrógiros pertenecen a representaciones distintas de $SU(2)_L\times U(1)_Y$, de modo que un término de masa de Dirac directo no es invariante gauge. Las asignaciones de la conferencia, $1$ y $0$, codifican esta diferencia sin reproducir toda la tabla de cargas electrodébiles.}
+
+La pizarra presenta el obstáculo como una cadena. Un electrón dextrógiro no puede convertirse en levógiro a menos que algo más se lleve la diferencia de zilch. El mismo obstáculo se aplica a los quarks, muones y taus, con intensidades que dependen de la especie una vez incorporado el campo que falta.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_09.png}
+\caption{La secuencia quiral de la pizarra: un cuanto del condensado, insertado en la cruz verde, permite que cambie la etiqueta de zilch entre la propagación dextrógira y la levógira.}
+\lectureframe{00:50:15}
+\end{figure}
+
+\section{El condensado de ``Ziggs'' y la masa de los fermiones}
+
+Introduzcamos un campo cuyos cuantos tengan exactamente el número cuántico débil que falta. Para evitar confundirlo prematuramente con la partícula de Higgs física, la conferencia llama \emph{Ziggs} a su cuanto pertinente. Supongamos que el campo Ziggs tiene un potencial de sombrero mexicano y que su vacío es un condensado. Entonces, un electrón levógiro puede emitir un cuanto Ziggs y convertirse en dextrógiro,
+\begin{equation}
+e_L\longrightarrow e_R+\text{Ziggs},
+\end{equation}
+o un electrón dextrógiro puede absorber uno y convertirse en levógiro,
+\begin{equation}
+e_R+\text{Ziggs}\longrightarrow e_L.
+\end{equation}
+El condensado absorbe o aporta la diferencia de números cuánticos sin cambiar su estado macroscópico. Lo que estaba prohibido en el vacío vacío sin ruptura se vuelve posible en el vacío con simetría rota.
+
+La emisión y absorción repetidas mezclan $e_L$ y $e_R$. Por tanto, el electrón se propaga como una partícula masiva. El mismo mecanismo se aplica a los leptones cargados y a los quarks. Cada especie tiene su propio acoplamiento al condensado, por lo que la intensidad de la inversión y, en consecuencia, la masa pueden variar de una especie a otra.
+
+En la notación moderna, la interacción invariante gauge es un acoplamiento de Yukawa. Cuando el campo de Higgs adquiere el valor esperado en el vacío $v$, produce
+\begin{equation}
+\mathcal L_Y
+\supset
+-\frac{y_f}{\sqrt{2}}
+(v+h)\bar f f,
+\end{equation}
+y, por tanto,
+\begin{equation}
+m_f=\frac{y_fv}{\sqrt{2}},
+\qquad
+g_{hff}=\frac{y_f}{\sqrt{2}}
+=
+\frac{m_f}{v}.
+\end{equation}
+\editorialnote{Estas fórmulas proporcionan la notación electrodébil estándar que subyace al argumento de la conferencia sobre el acoplamiento al condensado. También explicitan por qué el mismo acoplamiento determina tanto la masa del fermión como la desintegración del Higgs en ese fermión.}
+
+La conferencia describe esto como ruptura espontánea de una simetría quiral. Esa descripción recoge la historia de izquierda--derecha en el ejemplo. Más precisamente, el valor esperado del Higgs rompe la simetría gauge electrodébil hasta dejar el subgrupo electromagnético, y luego las interacciones de Yukawa se convierten en términos de masa fermiónica.
+
+\section{Cómo adquiere masa el bosón débil}
+
+El condensado también modifica los bosones débiles. Una excitación Ziggs puede emitir un bosón $Z$ y, a la inversa, el $Z$ puede transformarse en la excitación correspondiente, sostenida por el condensado, y volver a transformarse. Así, el $Z$ se propaga a través de un vacío en el que se mezcla con el sector angular del campo de Higgs. El resultado es un bosón vectorial masivo con una polarización longitudinal que un bosón vectorial sin masa no tendría.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_10.png}
+\caption{La secuencia completa de la pizarra para el mecanismo de los bosones débiles: la cadena quiral sigue arriba, mientras que el $Z$ intercambia número cuántico con el sector sostenido por el condensado, abajo.}
+\lectureframe{00:53:40}
+\end{figure}
+
+Este es el fenómeno de Brout--Englert--Higgs en su versión para los bosones gauge. En el Modelo Estándar completo, los bosones $W$ y $Z$ adquieren masa, mientras que una combinación de los campos gauge neutros originales permanece como el fotón sin masa. Si el vacío hubiera roto, en cambio, la simetría gauge electromagnética ordinaria, el fotón habría adquirido masa, como ocurre efectivamente en el interior de un superconductor. El espacio vacío tendría entonces un comportamiento electromagnético de largo alcance totalmente distinto.
+
+Los bosones débiles ya aportaban pruebas sólidas de este mecanismo mucho antes de que se identificara por separado la partícula de Higgs física. Sus masas e interacciones mostraban que la simetría electrodébil se había roto de la manera requerida. Por eso la conferencia puede decir, en un sentido operacional amplio, que el sector ``Ziggs'' ya se conocía: el objeto experimental que faltaba era la vibración radial independiente.
+
+\editorialnote{La alusión improvisada de la conferencia a un descubrimiento en SLAC alrededor de 1980 condensa varios acontecimientos. Las corrientes débiles neutras se observaron en 1973; la dispersión de electrones con violación de paridad en SLAC se comunicó a finales de la década de 1970, y los bosones $W$ y $Z$ se descubrieron directamente en el CERN en 1983. El punto físico es la confirmación experimental previa de la ruptura de la simetría electrodébil.}
+
+\section{Qué es realmente el bosón de Higgs}
+
+Volvamos al sombrero mexicano. El movimiento alrededor de la depresión cambia el ángulo, pero no el radio. Ese sector angular proporciona los modos que se incorporan a los bosones débiles masivos. El bosón de Higgs físico corresponde al otro movimiento: una oscilación hacia dentro y hacia fuera, por las paredes del potencial.
+
+Escribamos esquemáticamente el campo como
+\begin{equation}
+\Phi(x)
+=
+\frac{v+h(x)}{\sqrt{2}}
+\exp\!\left(
+  \frac{i\theta(x)}{v}
+\right).
+\end{equation}
+La variable $\theta$ describe el movimiento a lo largo de la depresión. La variable $h$ cambia el radio. En una teoría gauge, los grados de libertad angulares correspondientes se convierten en las componentes longitudinales de los bosones débiles masivos, mientras que $h$ permanece como una partícula escalar propagante: el bosón de Higgs.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_11.png}
+\caption{En la pizarra vuelven a aparecer ambos potenciales, con un desplazamiento radial marcado en la depresión del sombrero mexicano. Esta vibración hacia dentro y hacia fuera es el modo físico de Higgs.}
+\lectureframe{00:56:30}
+\end{figure}
+
+Hay una imagen equivalente en términos de muchas partículas. El vacío es un condensado, y una oscilación radial modifica su densidad. Por tanto, el bosón de Higgs es como una onda de compresión en ese medio cuántico. La analogía es útil siempre que no se infiera que la onda tenga que ser estable. Las ondas sonoras ordinarias pueden desintegrarse, y la excitación de Higgs también puede hacerlo.
+
+Esta distinción explica por qué encontrar el bosón de Higgs fue la pieza final que faltaba, y no la primera prueba del mecanismo. El vacío con simetría rota y los bosones débiles masivos ya eran visibles indirectamente. Había que producir la onda radial de densidad como partícula e identificarla a través de sus productos de desintegración.
+
+\section{Desintegración, producción y la ventaja de los fermiones pesados}
+
+El Higgs se acopla a un fermión en proporción a la masa de este. Puede desintegrarse en un par fermión-antifermión,
+\begin{equation}
+H\longrightarrow f+\bar f,
+\end{equation}
+y el mismo diagrama puede interpretarse al revés como producción,
+\begin{equation}
+f+\bar f\longrightarrow H.
+\end{equation}
+En principio, por tanto, es posible la aniquilación de un electrón y un positrón. Históricamente, sin embargo, a los primeros colisionadores les faltaba energía suficiente para producir el Higgs y, más adelante, las máquinas se enfrentaron al problema más fundamental de que el acoplamiento de Yukawa del electrón es extremadamente pequeño. La aniquilación de quarks ligeros es igual de débil.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_12.png}
+\caption{Vértice de desintegración del Higgs dibujado en la pizarra. Si se leen las flechas al revés, se obtiene la fusión de un fermión y un antifermión para producir un Higgs.}
+\lectureframe{00:59:40}
+\end{figure}
+
+Cuanto más pesado es el fermión, mayor es su acoplamiento de Yukawa. Esto destaca al quark top, cuya masa es de aproximadamente $173\,\mathrm{GeV}$, es decir, unas $180$ masas de protón. En la clase se usa la cifra redonda de unas $170$ masas de protón. Sin embargo, un Higgs con una masa cercana a $125\,\mathrm{GeV}$ es demasiado ligero para desintegrarse en un par $t\bar t$ en capa de masa,
+\begin{equation}
+m_H<2m_t.
+\end{equation}
+Tampoco se puede construir un haz útil de quarks top: el top se desintegra antes de hadronizarse en una partícula de haz de larga vida.
+
+La mecánica cuántica ofrece una forma de superar ambos obstáculos. Dos gluones pueden fluctuar a través de un lazo virtual de quark top y dar lugar a un Higgs,
+\begin{equation}
+g+g\longrightarrow H.
+\end{equation}
+Las líneas virtuales del top no tienen que satisfacer el umbral de capa de masa que regiría la producción de un par real de quarks top. Los protones están llenos de gluones, así que las colisiones protón-protón de alta energía en el Gran Colisionador de Hadrones proporcionan una fuente intensa de los pares de gluones necesarios.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_13.png}
+\caption{Fusión de gluones a través de un lazo virtual de quark top. Dos gluones procedentes de los protones que colisionan se encuentran en el lazo y producen el Higgs.}
+\lectureframe{01:06:35}
+\end{figure}
+
+Por eso un colisionador de protones, pese a la complejidad de los restos de la colisión, se convirtió en la fábrica de Higgs decisiva. El protón no se acopla al Higgs como un único objeto elemental; sus constituyentes gluónicos producen el Higgs mediante un lazo dominado por el fuerte acoplamiento del top.
+
+\section{2012 y su prueba de los dos fotones}
+
+La partícula anunciada en 2012 tenía una masa cercana a
+\begin{equation}
+m_H\simeq125\,\mathrm{GeV}.
+\end{equation}
+En la comparación práctica de la clase, equivale aproximadamente a $127$ masas de protón. Su descubrimiento completó la lista de partículas que requiere el Modelo Estándar mínimo. La pregunta que quedaba era si sus propiedades cuantitativas coincidían exactamente con las del Modelo Estándar.
+
+La lógica del lazo del top puede invertirse. El Higgs se acopla a las partículas cargadas virtuales del lazo, y este puede emitir dos fotones,
+\begin{equation}
+H\longrightarrow\gamma+\gamma.
+\end{equation}
+Esta desintegración es poco frecuente, pero los fotones son objetos excepcionalmente limpios en un colisionador de hadrones. Por tanto, un exceso estrecho en su distribución de masa invariante puede revelar un Higgs incluso cuando las desintegraciones más comunes son más difíciles de analizar experimentalmente.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_14.png}
+\caption{El triángulo de dos fotones a la derecha de la pizarra, junto al lazo de fusión de gluones anterior a la izquierda. Los dos procesos exploran la misma lógica de los lazos en sentidos opuestos.}
+\lectureframe{01:09:00}
+\end{figure}
+
+En el momento de la clase, la tasa de producción de dos fotones anunciada parecía ser quizá una vez y media la predicción más sencilla del Modelo Estándar, con una significación de apenas unas dos desviaciones estándar. Esa fluctuación no constituía por sí sola una prueba. Sin embargo, si hubiera persistido, podría haber indicado la presencia de otra partícula cargada en el lazo, quizá asociada con la supersimetría o con otra extensión del Modelo Estándar.
+
+Esa afirmación corresponde al momento histórico de 2012. Registra aquello que se decía a los experimentalistas que debían observar a continuación; no afirma que exista una anomalía actual. El propio descubrimiento fue, en gran medida, una confirmación de un marco teórico que ya contaba con el respaldo de los datos de los bosones débiles. Las pruebas científicamente más precisas eran las tasas de desintegración: ¿se acoplaba el nuevo escalar a cada partícula según el patrón dependiente de la masa que predice el mecanismo de Higgs?
+
+\section{Preguntas del público}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué determina que un tipo de fermión oscile entre izquierda y derecha más rápido que otro y, por tanto, tenga una masa diferente?\lecturetimestamp{01:12:00}}
+\lecturerresponse{Cada especie de fermión tiene su propio acoplamiento al condensado de Higgs. Un acoplamiento más fuerte produce una mezcla izquierda--derecha más intensa y una masa mayor. El mismo acoplamiento determina con qué intensidad se desintegra el Higgs físico en ese fermión, por lo que, en general, los fermiones más pesados se acoplan con mayor intensidad. El Modelo Estándar parametriza estos acoplamientos de Yukawa, pero no explica su notable jerarquía. Decir que el electrón tiene un acoplamiento pequeño y el quark top uno grande es una descripción correcta, pero todavía no es una explicación más profunda.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Conocemos la magnitud del campo de Higgs en el vacío?\lecturetimestamp{01:13:36}}
+\lecturerresponse{Sí. En la convención empleada aquí, el valor esperado en el vacío es aproximadamente $240\,\mathrm{GeV}$; el valor estándar más preciso es aproximadamente $246\,\mathrm{GeV}$. Puede visualizarse como el desplazamiento radial del campo desde el origen o como la densidad del condensado. Un cuanto de Higgs físico es una pequeña oscilación radial de ese valor, o, de manera equivalente, una fluctuación local de la densidad del condensado.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿El valor no nulo del campo de Higgs en el vacío implica que el espacio vacío tiene una densidad de energía?\lecturetimestamp{01:14:12}}
+\lecturerresponse{Sí. El potencial de Higgs contribuye a la energía del vacío, al igual que muchos otros sectores de la teoría cuántica de campos. La energía neta del vacío observada es extraordinariamente pequeña en comparación con las magnitudes naturales de esas contribuciones, así que estas deben cancelarse casi por completo. Ninguna teoría aceptada explica esa cancelación. Este es el problema de la constante cosmológica, uno de los problemas sin resolver más profundos de la física fundamental.}
+\end{classroomqa}
+
+\section{Qué ha logrado esta construcción}
+
+Ahora se puede seguir la lógica de principio a fin sin recurrir a un éter pegajoso. La rotación interna cuantizada proporciona el modelo para la carga. Al convertir el cuenco en un sombrero mexicano, el campo adquiere un valor no nulo en el vacío. El principio de incertidumbre convierte un vacío clásico elegido con precisión en un condensado insensible a los cuantos individuales. A continuación, el condensado puede llevar la diferencia de números cuánticos débiles entre fermiones levógiros y dextrógiros, lo que permite su mezcla y, por tanto, sus masas. También proporciona los modos longitudinales que permiten que $W$ y $Z$ se propaguen como bosones vectoriales masivos, mientras que el fotón permanece sin masa.
+
+El bosón de Higgs físico es la oscilación radial que queda tras esta reorganización. No es ``la masa misma,'' ni es responsable de la mayor parte de la masa del protón. Es la onda de densidad observable del campo que rompe la simetría. Sus acoplamientos reflejan las masas generadas por ese campo, por lo que las partículas pesadas dominan su producción y desintegración. Así pues, el lazo de fusión de gluones, el canal de dos fotones y la pregunta final del público sobre la energía del vacío no son curiosidades independientes. Son consecuencias, pruebas e implicaciones aún abiertas de un mismo vacío no trivial.
