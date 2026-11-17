@@ -19,6 +19,8 @@ import sys
 import threading
 import time
 
+from opencc import OpenCC
+
 from pylatexenc import latexwalker as lw
 from pylatexenc.macrospec import MacroSpec, EnvironmentSpec
 
@@ -29,7 +31,63 @@ MANIFEST = ROOT / 'references/polished_translation_queue.json'
 VERSION = 1
 LAYOUT = 'a5-1.2-dimensions-v2'
 TOKEN = re.compile(r'@@T\d{6}@@')
-LANGS = {'ja': 'modern Japanese', 'zh': 'modern Simplified Chinese'}
+BASE_LANGS = ('ja', 'zh')
+LANGUAGE_SPECS = {
+    'ja': {
+        'name': 'modern Japanese in a precise university-physics register',
+        'label': '日本語', 'script': r'[\u3040-\u30ff\u3400-\u9fff]', 'font': 'JP',
+        'edition': '日本語版', 'lecturer': '原講義：Leonard Susskind', 'companion': '講義補助版：',
+    },
+    'zh': {
+        'name': 'modern Simplified Chinese in a precise university-physics register',
+        'label': '中文（简体）', 'script': r'[\u3400-\u9fff]', 'font': 'SC',
+        'edition': '简体中文版', 'lecturer': '原讲授：Leonard Susskind', 'companion': '讲义辅助版本：',
+    },
+    'fr': {
+        'name': 'idiomatic contemporary French suitable for university physics notes',
+        'label': 'Français', 'font': 'french', 'edition': 'Édition française',
+        'lecturer': 'Cours originaux : Leonard Susskind', 'companion': 'Édition d’accompagnement : ',
+    },
+    'es': {
+        'name': 'idiomatic contemporary Spanish suitable for university physics notes',
+        'label': 'Español', 'font': 'spanish', 'edition': 'Edición en español',
+        'lecturer': 'Clases originales: Leonard Susskind', 'companion': 'Edición complementaria: ',
+    },
+    'de': {
+        'name': 'idiomatic contemporary German suitable for university physics notes',
+        'label': 'Deutsch', 'font': 'german', 'edition': 'Deutsche Ausgabe',
+        'lecturer': 'Originalvorlesungen: Leonard Susskind', 'companion': 'Begleitausgabe: ',
+    },
+    'zh-Hant': {
+        'name': 'modern Traditional Chinese as used in Taiwan, polished from Simplified Chinese',
+        'label': '中文（繁體）', 'script': r'[\u3400-\u9fff]', 'font': 'TC',
+        'edition': '繁體中文版', 'lecturer': '原講授：Leonard Susskind', 'companion': '講義輔助版本：',
+    },
+    'ko': {
+        'name': 'idiomatic contemporary Korean suitable for university physics notes',
+        'label': '한국어', 'script': r'[\uac00-\ud7af]', 'font': 'KR',
+        'edition': '한국어판', 'lecturer': '원 강의: Leonard Susskind', 'companion': '보조 강의 노트: ',
+    },
+    'vi': {
+        'name': 'idiomatic contemporary Vietnamese suitable for university physics notes',
+        'label': 'Tiếng Việt', 'font': 'vietnamese', 'edition': 'Bản tiếng Việt',
+        'lecturer': 'Bài giảng gốc: Leonard Susskind', 'companion': 'Ấn bản đồng hành: ',
+    },
+    'ru': {
+        'name': 'idiomatic contemporary Russian suitable for university physics notes',
+        'label': 'Русский', 'script': r'[\u0400-\u04ff]', 'font': 'russian',
+        'edition': 'Русское издание', 'lecturer': 'Оригинальные лекции: Leonard Susskind',
+        'companion': 'Сопроводительное издание: ',
+    },
+    'ar': {
+        'name': 'clear contemporary Modern Standard Arabic suitable for university physics notes',
+        'label': 'العربية', 'script': r'[\u0600-\u06ff]', 'font': 'arabic',
+        'edition': 'النسخة العربية', 'lecturer': 'المحاضرات الأصلية: Leonard Susskind',
+        'companion': 'النسخة المصاحبة: ',
+    },
+}
+LANGS = {code: spec['name'] for code, spec in LANGUAGE_SPECS.items()}
+OPENCC_S2T = OpenCC('s2twp')
 NUMBER_WORDS = dict(zip(
     'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split(),
     map(str, range(20))))
@@ -376,13 +434,42 @@ def validate(source, translated, lang, protected=None):
         return 'invalid numerical fraction'
     if candidate_numbers - normalized_source:
         return 'introduced unprotected number'
-    if len(TOKEN.sub('', source).strip()) > 60 and not re.search(r'[\u3400-\u9fff\u3040-\u30ff]', prose):
-        return 'untranslated prose'
+    source_prose = TOKEN.sub('', source).strip()
+    if len(source_prose) > 60:
+        script = LANGUAGE_SPECS[lang].get('script')
+        if script and not re.search(script, prose):
+            return 'untranslated prose'
+        if not script:
+            source_words_plain = re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]+", source_prose.lower())
+            target_words_plain = re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]+", prose.lower())
+            if source_words_plain and target_words_plain:
+                unchanged = Counter(source_words_plain) & Counter(target_words_plain)
+                if sum(unchanged.values()) / max(1, len(source_words_plain)) > 0.72:
+                    return 'untranslated prose'
     n = len(re.sub(r'\s', '', TOKEN.sub('', source)))
     size = len(re.sub(r'\s', '', prose))
     if n > 100 and not 0.12 * n <= size <= 2.8 * n:
         return 'suspicious translation length'
     return None
+
+
+def published_cache_proven(slug, rel, payload):
+    """Return true when a published quality record binds this exact private cache."""
+    for lang in BASE_LANGS:
+        quality_path = OUT / slug / lang / 'quality.json'
+        cache = WORK / 'results' / slug / lang / (rel + '.json')
+        translated_tex = OUT / slug / lang / rel
+        if not (quality_path.exists() and cache.exists() and translated_tex.exists()):
+            continue
+        quality = read(quality_path)
+        accepted_hash = digest(json.dumps(
+            read(cache).get('accepted', {}), ensure_ascii=False, sort_keys=True))
+        if (quality.get('status') == 'validated'
+                and quality.get('source_files', {}).get(rel) == payload['source_sha256']
+                and quality.get('translation_results', {}).get(rel) == accepted_hash
+                and quality.get('translated_tex', {}).get(rel) == digest(translated_tex.read_text())):
+            return True
+    return False
 
 
 def prepare():
@@ -433,6 +520,11 @@ def prepare():
         path = WORK / 'prepared' / slug / (rel + '.json')
         if path.exists() and read(path) != payload:
             old = read(path)
+            # Published PDFs are bound to the accepted cache and translated TeX.
+            # Keep their proven segmentation rather than destructively migrating it.
+            if (old.get('source_sha256') == payload['source_sha256']
+                    and published_cache_proven(slug, rel, payload)):
+                continue
             _, split_protected, expansion = split_closing_tokens('', old['protected'])
             for lang in LANGS:
                 cache = WORK / 'results' / slug / lang / (rel + '.json')
@@ -535,7 +627,70 @@ def apply_reviewed_repairs(path):
     print(f'Applied {len(packet["repairs"])} reviewed repairs', flush=True)
 
 
+def _parse_json_message(text):
+    text = text.strip()
+    if text.startswith('```'):
+        text = re.sub(r'^```(?:json)?\s*|\s*```$', '', text, flags=re.S)
+    try:
+        value = json.loads(text)
+    except json.JSONDecodeError:
+        start = text.find('{')
+        if start < 0:
+            raise
+        value, end = json.JSONDecoder().raw_decode(text[start:])
+        trailing = text[start + end:].strip()
+        if trailing and not re.fullmatch(r'}+', trailing):
+            raise ValueError('Unexpected text after JSON object')
+    if not isinstance(value, dict):
+        raise ValueError('Expected a JSON object')
+    return value
+
+
+def codex_chat(prompt, dest, args, model):
+    """Run an isolated Codex request; the model never receives filesystem write access."""
+    cwd = WORK / 'codex-cwd'
+    cwd.mkdir(parents=True, exist_ok=True)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    message = dest.with_suffix('.message.json')
+    log = dest.with_suffix('.codex.log')
+    command = [
+        'codex', 'exec', '--ephemeral', '--ignore-user-config', '--skip-git-repo-check',
+        '-C', str(cwd), '--sandbox', 'read-only', '-m', model,
+        '-c', f'model_reasoning_effort="{args.reasoning}"', '-o', str(message),
+        prompt + '\nReturn only the requested valid JSON object, with no Markdown fence or commentary.',
+    ]
+    try:
+        run = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                             timeout=args.codex_timeout, env={**os.environ, 'GIT_TERMINAL_PROMPT': '0'})
+    except subprocess.TimeoutExpired as exc:
+        raise ProviderUnavailable(f'Codex request timed out after {args.codex_timeout}s') from exc
+    log.parent.mkdir(parents=True, exist_ok=True)
+    log.write_bytes(run.stdout)
+    if run.returncode or not message.exists():
+        tail = run.stdout.decode(errors='replace')[-2000:]
+        raise ProviderUnavailable(f'Codex request failed ({run.returncode}): {tail}')
+    try:
+        value = _parse_json_message(message.read_text(encoding='utf-8'))
+    except (ValueError, json.JSONDecodeError) as exc:
+        message.rename(message.with_suffix(f'.{time.time_ns()}.invalid-json'))
+        raise InvalidReply('Codex returned invalid JSON; retained for inspection') from exc
+    write(dest, value)
+    return value
+
+
 def chat(prompt, dest, args, *, model=None):
+    if getattr(args, 'provider', 'deepseek') == 'codex':
+        if PROVIDER_STOP.is_set():
+            raise ProviderUnavailable('Provider stopped; no new requests scheduled')
+        try:
+            return codex_chat(prompt, dest, args, model or args.model)
+        except InvalidReply:
+            raise
+        except Exception as exc:
+            PROVIDER_STOP.set()
+            if isinstance(exc, ProviderUnavailable):
+                raise
+            raise ProviderUnavailable(str(exc)) from exc
     sys.path.insert(0, str(args.toolkit_root / 'scripts/interlinear'))
     from llm_chat_backend import run_chat_completion
     for attempt in range(2):
@@ -562,6 +717,50 @@ def chat(prompt, dest, args, *, model=None):
             if attempt:
                 raise InvalidReply('Two invalid JSON responses; retained for inspection')
             prompt += '\nThe previous response was not valid JSON. Escape every backslash and quote; return only the requested JSON object.'
+
+
+def ensure_language_titles(lang, args):
+    if lang in BASE_LANGS:
+        return
+    path = WORK / 'titles' / f'{lang}.json'
+    books = read(MANIFEST)['books']
+    if path.exists():
+        data = read(path)
+        if data.get('model') == args.model and set(data.get('translations', {})) == {b['id'] for b in books}:
+            return
+    if lang == 'zh-Hant':
+        drafts = {book['id']: OPENCC_S2T.convert(book['titles']['zh']) for book in books}
+        instruction = ('Polish these mechanically converted titles into natural Traditional Chinese as used in Taiwan. '
+                       'Use the English titles only to resolve meaning; do not revert to Simplified Chinese.')
+    else:
+        drafts = {book['id']: book['titles']['en'] for book in books}
+        instruction = f'Translate these physics-book titles into {LANGS[lang]}.'
+    prompt = (instruction + ' Preserve established physics terminology and return every key exactly once. '
+              'Return JSON {"translations":{"book-id":"localized title"}}.\n' +
+              json.dumps({'titles': drafts,
+                          'english_reference': {b['id']: b['titles']['en'] for b in books}}, ensure_ascii=False))
+    reply = chat(prompt, path.with_suffix('.reply.json'), args)
+    translations = reply.get('translations')
+    if not isinstance(translations, dict) or set(translations) != set(drafts):
+        raise InvalidReply(f'Invalid {lang} title response')
+    if any(not isinstance(value, str) or not value.strip() or re.search(r'[{}\\]', value)
+           for value in translations.values()):
+        raise InvalidReply(f'Unsafe {lang} title response')
+    write(path, {'model': args.model, 'translations': translations})
+
+
+def book_title(book, lang, args=None):
+    if lang in book.get('titles', {}):
+        return book['titles'][lang]
+    quality = OUT / book['id'] / lang / 'quality.json'
+    if quality.exists() and read(quality).get('title'):
+        return read(quality)['title']
+    path = WORK / 'titles' / f'{lang}.json'
+    if not path.exists():
+        if args is None:
+            return book['titles']['en']
+        ensure_language_titles(lang, args)
+    return read(path)['translations'][book['id']]
 
 
 def accept_candidates(prepared, result, rows, translations, lang, stage):
@@ -671,7 +870,7 @@ def translate_file(book, lang, rel, args):
             if needs_translation(text) and str(i) not in result['accepted']]
     batches, batch, size = [], [], 0
     for item in todo:
-        if batch and size + len(item[1]) > 4800:
+        if batch and size + len(item[1]) > getattr(args, 'batch_chars', 4800):
             batches.append(batch)
             batch, size = [], 0
         batch.append(item)
@@ -687,8 +886,24 @@ def translate_file(book, lang, rel, args):
                         if result.get('attempts', {}).get(k, {}).get('writer', 0) < REQUEST_LIMIT}
             if not eligible:
                 break
+            payload = {'paragraphs': eligible, 'previous_errors': errors,
+                'read_only_token_legend': {token: p['protected'][int(token[3:9])]
+                    for source in eligible.values() for token in TOKEN.findall(source)}}
+            if lang == 'zh-Hant':
+                simplified = load_results(book, 'zh', rel, p)
+                missing = [key for key in eligible if key not in simplified['accepted']]
+                if missing:
+                    raise RuntimeError(f'Simplified Chinese source is incomplete: {book["id"]}/{rel}: {missing}')
+                payload['simplified_chinese_drafts'] = {
+                    key: OPENCC_S2T.convert(simplified['accepted'][key]) for key in eligible}
+                opening = (
+                    'Polish the supplied mechanically converted drafts into fluent, precise Traditional Chinese '
+                    'as used in Taiwan. Do not retranslate from scratch. Use each English paragraph only as the '
+                    'authoritative reference for meaning, facts, qualifications, negations and physics terminology. ')
+            else:
+                opening = f'Translate these final edited physics lecture paragraphs into fluent, precise {LANGS[lang]}. '
             prompt = (
-                f'Translate these final edited physics lecture paragraphs into fluent, precise {LANGS[lang]}. '
+                opening +
                 'Translate faithfully, not summarize: preserve every qualification, negation, physical distinction, '
                 'question and answer. Never add facts. Keep standard physics terminology consistent. '
                 'Every @@T000000@@-style token is immutable TeX, math, a reference, or a number. '
@@ -702,23 +917,16 @@ def translate_file(book, lang, rel, args):
                 'No TeX commands, markdown, new numbers, or comments. Translate headings and introductory '
                 'paragraphs just as carefully as body text. Proper names may remain Latin, but ordinary '
                 'prose such as companion notes or Professor must be translated, not left in English. '
-                f'Book: {book["titles"]["en"]}. Target title: {book["titles"][lang]}. '
-                'Use Japanese scientific style (である調) or readable modern Chinese as appropriate. '
-                'In Japanese use 標準模型 for Standard Model, 弱ゲージボソン for weak boson, '
-                'カイラリティ for chirality; render year dates as 年に, not で. '
-                'In Chinese retain the 年 year marker after a year token; never write 在YEAR中 for a date. '
-                'In Chinese velocity is 速度 and speed is 速率; do not erase their vector/scalar distinction. '
-                'A lattice is a 点阵 or 网格, not a single 格点 (lattice site). '
-                'Distinguish applying an operator from holding it constant; do not change the physical action.\n'
+                f'Book: {book["titles"]["en"]}. Target title: {book_title(book, lang, args)}. '
+                'Use the established scientific register of the target language. Distinguish vectors from scalars, '
+                'operators from their values, and transformations from literal motion. Do not change the physical action.\n'
                 'Use idiomatic scientific sentences around displayed equations rather than mechanically '
                 'copying English word order. Introduce transformations as transformations, not literal sending. '
                 'Frozen expressions cannot be repeated, even if repeating them would be natural: use a '
                 'pronoun or restructure the sentence instead. English spelled-out numbers up to '
                 'ninety-nine and unity may use equivalent Arabic numerals. Never add explanatory quantities. '
                 'Translate a/an/per-unit expressions with natural words, not extra Arabic digits. '
-                + json.dumps({'paragraphs': eligible, 'previous_errors': errors,
-                    'read_only_token_legend': {token: p['protected'][int(token[3:9])]
-                        for source in eligible.values() for token in TOKEN.findall(source)}}, ensure_ascii=False))
+                + json.dumps(payload, ensure_ascii=False))
             request_segments(book, lang, rel, p, result, eligible, args, 'writer', errors, prompt)
             pending = {k: s for k, s in pending.items() if k not in result['accepted']}
             print(json.dumps({'book': book['id'], 'lang': lang, 'file': rel,
@@ -736,36 +944,56 @@ def translate_file(book, lang, rel, args):
 
 def translated_preamble(source, lang):
     t = re.sub(r'\\usepackage(?:\[[^\]]*\])?\{(?:fontenc|inputenc|lmodern)\}\s*', '', source)
-    family = 'JP' if lang == 'ja' else 'SC'
-    prefix = (r'\usepackage{fontspec}' '\n' r'\usepackage{xeCJK}' '\n'
-              r'\setmainfont{Latin Modern Roman}' '\n'
-              f'\\setCJKmainfont[ItalicFont={{Noto Serif CJK {family}}},BoldItalicFont={{Noto Serif CJK {family} Bold}}]{{Noto Serif CJK {family}}}\n'
-              f'\\setCJKsansfont{{Noto Sans CJK {family}}}\n'
-              f'\\setCJKmonofont{{Noto Sans Mono CJK {family}}}\n')
+    family = LANGUAGE_SPECS[lang]['font']
+    prefix = r'\usepackage{fontspec}' + '\n'
+    language_setup = ''
+    if family in {'JP', 'SC', 'TC', 'KR'}:
+        prefix += (r'\usepackage{xeCJK}' '\n' r'\setmainfont{Latin Modern Roman}' '\n'
+                   f'\\setCJKmainfont[ItalicFont={{Noto Serif CJK {family}}},BoldItalicFont={{Noto Serif CJK {family} Bold}}]{{Noto Serif CJK {family}}}\n'
+                   f'\\setCJKsansfont{{Noto Sans CJK {family}}}\n'
+                   f'\\setCJKmonofont{{Noto Sans Mono CJK {family}}}\n')
+    else:
+        prefix += (r'\setmainfont{Noto Serif}' '\n' r'\setsansfont{Noto Sans}' '\n'
+                   r'\setmonofont{Noto Sans Mono}' '\n')
+        language_setup = (r'\usepackage{polyglossia}' '\n'
+                          f'\\setdefaultlanguage{{{family}}}\n' r'\usepackage{sectsty}' '\n')
+        if lang == 'ar':
+            language_setup += (r'\setotherlanguage{english}' '\n'
+                               r'\newfontfamily\arabicfont[Script=Arabic]{Noto Naskh Arabic}' '\n'
+                               r'\newfontfamily\arabicfontsf[Script=Arabic]{Noto Sans Arabic}' '\n')
     prefix += '\\newfontfamily\\proseunicodefont{DejaVu Serif}\n'
-    labels = {
-        'Theorem': ('定理', '定理'), 'Proposition': ('命題', '命题'),
-        'Lemma': ('補題', '引理'), 'Corollary': ('系', '推论'),
-        'Definition': ('定義', '定义'), 'Example': ('例', '例'), 'Remark': ('注意', '注'),
-        'Overview.': ('概観。', '概述。'),
-        'Question from the audience.': ('受講者からの質問。', '听众提问。'),
-        'Question for the class.': ('受講者への問い。', '课堂提问。'),
-        'Response.': ('回答。', '回答。'), 'Lecture timestamp:': ('講義時刻：', '讲课时间：'),
-        'Lecture frame:': ('講義映像：', '讲课画面：'),
-        'Editorial clarification:': ('編集上の補足：', '编者说明：'),
+    localized = {
+        'ja': ('定理|命題|補題|系|定義|例|注意|概観。|受講者からの質問。|受講者への問い。|回答。|講義時刻：|講義映像：|編集上の補足：', '目次|章|図|表|証明|参考文献'),
+        'zh': ('定理|命题|引理|推论|定义|例|注|概述。|听众提问。|课堂提问。|回答。|讲课时间：|讲课画面：|编者说明：', '目录|章|图|表|证明|参考文献'),
+        'fr': ('Théorème|Proposition|Lemme|Corollaire|Définition|Exemple|Remarque|Vue d’ensemble.|Question du public.|Question à la classe.|Réponse.|Horodatage du cours :|Image du cours :|Précision éditoriale :', 'Table des matières|Chapitre|Figure|Tableau|Démonstration|Références'),
+        'es': ('Teorema|Proposición|Lema|Corolario|Definición|Ejemplo|Observación|Resumen.|Pregunta del público.|Pregunta para la clase.|Respuesta.|Marca temporal:|Fotograma de la clase:|Aclaración editorial:', 'Índice|Capítulo|Figura|Tabla|Demostración|Bibliografía'),
+        'de': ('Satz|Proposition|Lemma|Korollar|Definition|Beispiel|Bemerkung|Überblick.|Frage aus dem Publikum.|Frage an den Kurs.|Antwort.|Vorlesungszeit:|Vorlesungsbild:|Redaktionelle Klarstellung:', 'Inhaltsverzeichnis|Kapitel|Abbildung|Tabelle|Beweis|Literatur'),
+        'zh-Hant': ('定理|命題|引理|推論|定義|例|註|概述。|聽眾提問。|課堂提問。|回答。|講課時間：|講課畫面：|編者說明：', '目錄|章|圖|表|證明|參考文獻'),
+        'ko': ('정리|명제|보조정리|따름정리|정의|예|비고|개요.|청중 질문.|수강생에게 묻는 질문.|답변.|강의 시각:|강의 화면:|편집자 설명:', '목차|장|그림|표|증명|참고문헌'),
+        'vi': ('Định lý|Mệnh đề|Bổ đề|Hệ quả|Định nghĩa|Ví dụ|Nhận xét|Tổng quan.|Câu hỏi từ người nghe.|Câu hỏi cho lớp.|Trả lời.|Mốc thời gian bài giảng:|Khung hình bài giảng:|Chú giải biên tập:', 'Mục lục|Chương|Hình|Bảng|Chứng minh|Tài liệu tham khảo'),
+        'ru': ('Теорема|Утверждение|Лемма|Следствие|Определение|Пример|Замечание|Обзор.|Вопрос из аудитории.|Вопрос аудитории.|Ответ.|Время в лекции:|Кадр лекции:|Редакторское пояснение:', 'Содержание|Глава|Рисунок|Таблица|Доказательство|Литература'),
+        'ar': ('نظرية|قضية|لمّة|نتيجة|تعريف|مثال|ملاحظة|نظرة عامة.|سؤال من الحضور.|سؤال للصف.|الإجابة.|التوقيت في المحاضرة:|لقطة المحاضرة:|توضيح تحريري:', 'المحتويات|الفصل|الشكل|الجدول|البرهان|المراجع'),
     }
-    for english, versions in labels.items():
-        t = t.replace(english, versions[0 if lang == 'ja' else 1])
-    names = {'contentsname': ('目次', '目录'), 'chaptername': ('章', '章'),
-             'figurename': ('図', '图'), 'tablename': ('表', '表'),
-             'proofname': ('証明', '证明'), 'bibname': ('参考文献', '参考文献')}
-    suffix = '\n' + '\n'.join(f'\\renewcommand{{\\{k}}}{{{v[0 if lang == "ja" else 1]}}}' for k, v in names.items())
+    label_keys = ('Theorem', 'Proposition', 'Lemma', 'Corollary', 'Definition', 'Example', 'Remark',
+                  'Overview.', 'Question from the audience.', 'Question for the class.', 'Response.',
+                  'Lecture timestamp:', 'Lecture frame:', 'Editorial clarification:')
+    label_values, name_values = (part.split('|') for part in localized[lang])
+    for english, translated in zip(label_keys, label_values):
+        t = t.replace(english, translated)
+    name_keys = ('contentsname', 'chaptername', 'figurename', 'tablename', 'proofname', 'bibname')
+    suffix = '\n' + language_setup + '\n'.join(
+        f'\\renewcommand{{\\{key}}}{{{value}}}' for key, value in zip(name_keys, name_values))
+    if family not in {'JP', 'SC', 'TC', 'KR'}:
+        suffix += '\n\\sectionfont{' + (r'\raggedleft' if lang == 'ar' else r'\raggedright') + '}'
     # CJK italics are not supplied by Noto. Keep readable upright CJK, Latin italic intact.
-    return prefix + t + suffix + '\n\\emergencystretch=2em\n\\pdfstringdefDisableCommands{\\def\\proseunicodefont{}}\n' + page_layout()
+    emergency_stretch = '2em' if family in {'JP', 'SC', 'TC', 'KR'} else '4em'
+    return (prefix + t + suffix + f'\n\\emergencystretch={emergency_stretch}\n'
+            '\\pdfstringdefDisableCommands{\\def\\proseunicodefont{}}\n' + page_layout(lang))
 
 
-def page_layout():
+def page_layout(lang='ja'):
     """An explicit paper profile, independent of the legacy 1.2x font variant."""
+    alignment = r'\raggedleft' if lang == 'ar' else r'\raggedright'
     return r'''
 \geometry{paperwidth=177.6mm,paperheight=252mm,left=16mm,right=16mm,
  top=18mm,bottom=18mm,includeheadfoot,headheight=28pt,headsep=7mm,footskip=9mm}
@@ -775,7 +1003,7 @@ def page_layout():
 \renewenvironment{classroomqa}{\par\medskip\begingroup}{\par\endgroup\medskip}
 \fancyhf{}
 \setlength{\headwidth}{\textwidth}
-\fancyhead[L]{\parbox{\textwidth}{\raggedright\fontsize{9}{11}\selectfont\nouppercase{\leftmark}}}
+\fancyhead[L]{\parbox{\textwidth}{''' + alignment + r'''\fontsize{9}{11}\selectfont\nouppercase{\leftmark}}}
 \fancyfoot[C]{\small\thepage}
 \renewcommand{\headrulewidth}{0.3pt}
 \fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
@@ -812,17 +1040,17 @@ def restore_layout_arguments(source, translated):
     return translated
 
 
-def cover(book, lang):
+def cover(book, lang, args=None):
     source = (ROOT / 'generated_course_notes' / book['course'] / 'course.tex').read_text()
     titlepage = re.search(r'\\begin\{titlepage\}.*?\\end\{titlepage\}', source, re.S).group()
-    title = book['titles'][lang]
+    title = book_title(book, lang, args)
     titlepage = re.sub(r'(\\color\{black!\d+\} )[^}\n]+(?=\})',
         lambda m: m.group(1) + title + r'\\[0.85em]', titlepage, count=1)
-    track = ('日本語版' if lang == 'ja' else '中文版') + ' / ' + book['course'].split('/')[-1].replace('_', ' ')
+    spec = LANGUAGE_SPECS[lang]
+    track = spec['edition'] + ' / ' + book['course'].split('/')[-1].replace('_', ' ')
     titlepage = re.sub(r'(\\large\\color\{black!\d+\} )[^}\n]+', lambda m: m.group(1) + track, titlepage, count=1)
-    lecturer = '原講義：Leonard Susskind' if lang == 'ja' else '原讲授：Leonard Susskind'
-    titlepage = re.sub(r'(?:Original lectures?|Lectures) by Leonard Susskind', lecturer, titlepage)
-    titlepage = titlepage.replace('Companion edition by ', '講義補助版：' if lang == 'ja' else '讲义辅助版本：')
+    titlepage = re.sub(r'(?:Original lectures?|Lectures) by Leonard Susskind', spec['lecturer'], titlepage)
+    titlepage = titlepage.replace('Companion edition by ', spec['companion'])
     titlepage = titlepage.replace(' with ', ' / ')
     # Allow long CJK titles to wrap within the existing cover text area.
     return titlepage
@@ -845,7 +1073,7 @@ def layout_repairs(book, lang, rel, text):
         if lang == 'zh':
             anchor = '\\begin{equation}\n\\frac{GM}{r^2}=\\frac{v^2}{r},'
             replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
-        else:
+        elif lang == 'ja':
             anchor = '\\eqref{eq:c06-null-ray}と\\eqref{eq:c06-redshift}が結果'
             replacements.append((anchor, '\\eqref{eq:c06-null-ray}\\allowbreak と\\allowbreak\\eqref{eq:c06-redshift}\\allowbreak が結果'))
     for anchor, replacement in replacements:
@@ -855,7 +1083,7 @@ def layout_repairs(book, lang, rel, text):
     return text
 
 
-def assemble(book, lang):
+def assemble(book, lang, args=None):
     src = ROOT / 'generated_course_notes' / book['course']
     dst = OUT / book['id'] / lang
     for rel, expected in book['source_files'].items():
@@ -883,7 +1111,7 @@ def assemble(book, lang):
                 return '\\graphicspath{' + ''.join('{' + os.path.relpath(src / path, dst) + '/}' for path in paths) + '}'
             rendered = re.sub(r'\\graphicspath\{((?:\{[^{}]*\})+)\}', graphic_paths, rendered)
         textwrite(dst / rel, rendered)
-    titlepage = cover(book, lang).replace('{assets/', '{' + os.path.relpath(src / 'assets', dst) + '/')
+    titlepage = cover(book, lang, args).replace('{assets/', '{' + os.path.relpath(src / 'assets', dst) + '/')
     textwrite(dst / 'cover.tex', titlepage)
     return dst
 
@@ -1001,7 +1229,7 @@ def compile_book(book, lang, args):
             break
         if attempt == REQUEST_LIMIT or not repair_review(book, lang, review, args):
             raise RuntimeError(f'Sampled semantic review needs repair: {lang}')
-    dst = assemble(book, lang)
+    dst = assemble(book, lang, args)
     build = WORK / 'build' / book['id'] / lang
     build.mkdir(parents=True, exist_ok=True)
     for pass_number in range(3):
@@ -1017,16 +1245,19 @@ def compile_book(book, lang, args):
     errors = [s for s in ['Missing character:', 'undefined references', 'multiply defined'] if s in log]
     with fitz.open(build / 'course.pdf') as pdf:
         text = ''.join(page.get_text() for page in pdf)
+        script = LANGUAGE_SPECS[lang].get('script')
+        target_characters = len(re.findall(script, text)) if script else len(re.findall(r'[^\W\d_]', text, re.UNICODE))
         qa = {'layout_profile': LAYOUT, 'paper_mm': [177.6, 252],
               'pages': len(pdf), 'outline_entries': len(pdf.get_toc()),
-              'cjk_characters': len(re.findall(r'[\u3400-\u9fff\u3040-\u30ff]', text)),
+              'target_characters': target_characters,
               'image_placements': sum(len(page.get_images()) for page in pdf),
               'overflows': overflows, 'errors': errors}
     write(build / 'quality.json', qa)
-    if errors or overflows or not qa['outline_entries'] or qa['cjk_characters'] < 100:
+    if errors or overflows or not qa['outline_entries'] or qa['target_characters'] < 100:
         raise RuntimeError(f'PDF quality gate needs repair: {build}/quality.json')
     shutil.copy2(build / 'course.pdf', dst / 'book.pdf')
-    qa.update({'status': 'validated', 'pdf_sha256': hashlib.sha256((dst / 'book.pdf').read_bytes()).hexdigest(),
+    qa.update({'status': 'validated', 'title': book_title(book, lang, args),
+               'pdf_sha256': hashlib.sha256((dst / 'book.pdf').read_bytes()).hexdigest(),
                'semantic_review': 'sampled, not exhaustive', 'sample_pairs': review['pairs_reviewed'],
                'review_model': review['model'],
                'review_adjudications': review.get('adjudications', []),
@@ -1061,7 +1292,11 @@ def update_readmes():
     if not MANIFEST.exists():
         return
     rows = status()
-    table = ['| Final polished book | 日本語 | 中文 |', '| --- | --- | --- |']
+    language_labels = [LANGUAGE_SPECS[lang]['label'] for lang in LANGS]
+    table = [
+        '| Final polished book | ' + ' | '.join(language_labels) + ' |',
+        '| --- | ' + ' | '.join('---' for _ in language_labels) + ' |',
+    ]
     for book, st in zip(read(MANIFEST)['books'], rows):
         cells = []
         for lang in LANGS:
@@ -1071,11 +1306,13 @@ def update_readmes():
                 cells.append(f'In preparation ({st[lang]}/{st["segments_per_language"]} segments)')
         table.append(f'| {book["titles"]["en"]} ({book["course"].split("/")[-1].replace("_", " ")}) | ' + ' | '.join(cells) + ' |')
     block = ('<!-- polished-translations:start -->\n## Final Polished Translations\n\n'
-             'Japanese and Simplified Chinese editions are produced from the accepted final '
-             'English companion TeX only. These are AI-assisted translations, not lecturer-endorsed '
-             'editions. Equations and original board figures are preserved; labels within them remain '
-             'as in the English source. A download is marked available only after complete segment '
-             'coverage, a clean build, outline/overflow checks, and sampled semantic review.\n\n'
+             'Each language edition is produced from the accepted final English companion TeX. '
+             'The Traditional Chinese edition is converted from the validated Simplified Chinese text '
+             'and then polished against the English source. These are AI-assisted translations, not '
+             'lecturer-endorsed editions. Equations and original board figures are preserved; labels '
+             'within them remain as in the English source. A download is marked available only after '
+             'complete segment coverage, a clean build, outline and overflow checks, and sampled '
+             'semantic review.\n\n'
              + '\n'.join(table) + '\n\n[Workflow and limitations](references/POLISHED_TRANSLATIONS.md)\n'
              '<!-- polished-translations:end -->')
     for path in [ROOT / 'README.md', *sorted((ROOT / 'i18n').glob('README.*.md'))]:
@@ -1084,16 +1321,16 @@ def update_readmes():
         if path.parent.name == 'i18n':
             locale = path.name.removeprefix('README.').removesuffix('.md')
             heading, notice, label = {
-                'ja': ('最終推敲版の翻訳', '日本語版と簡体字中国語版は最終推敲済みの英語講義ノートに基づきます。数式・図版を保持し、検証済みのPDFのみ公開します。原講師が公認した翻訳ではありません。', '日本語・中国語版の公開状況'),
-                'zh-Hans': ('最终润色版译本', '日文版与简体中文版均以最终润色的英文讲义为依据。保留公式与图版，仅发布通过检查的PDF。这些译本未经原讲师认可。', '日文与中文版发布进度'),
-                'zh-Hant': ('最終潤色版譯本', '日文版與簡體中文版均以最終潤色的英文講義為依據。保留公式與圖版，僅發布通過檢查的PDF。這些譯本未經原講師認可。', '日文與中文版發布進度'),
-                'de': ('Uebersetzungen der finalen Ausgabe', 'Japanische und chinesische Ausgaben entstehen aus den final redigierten englischen Notizen. Formeln und Abbildungen bleiben erhalten; nur gepruefte PDFs werden verlinkt.', 'Verfuegbarkeit und Pruefverfahren'),
-                'es': ('Traducciones de la edición final', 'Las versiones en japonés y chino se basan en el texto inglés revisado. Se conservan las ecuaciones y figuras; solo se enlazan los PDF verificados.', 'Disponibilidad y controles'),
-                'fr': ('Traductions de la version finale', 'Les versions japonaises et chinoises sont fondées sur le texte anglais révisé. Les équations et figures sont conservées ; seuls les PDF vérifiés sont proposés.', 'Disponibilité et vérification'),
-                'ko': ('최종 교정판 번역', '일본어판과 중국어판은 최종 교정된 영어 강의 노트를 바탕으로 합니다. 수식과 그림을 유지하며 검증된 PDF만 공개합니다.', '번역판 공개 현황'),
-                'ru': ('Переводы окончательной редакции', 'Японское и китайское издания основаны на окончательно отредактированных английских конспектах. Формулы и рисунки сохраняются; публикуются только проверенные PDF.', 'Доступность и проверка'),
-                'vi': ('Bản dịch từ bản hiệu đính cuối', 'Bản tiếng Nhật và tiếng Trung dựa trên bản tiếng Anh đã hiệu đính. Giữ nguyên công thức và hình; chỉ công bố PDF đã kiểm tra.', 'Tiến độ và kiểm tra'),
-                'ar': ('ترجمات النسخة النهائية', 'تستند النسختان اليابانية والصينية إلى النص الإنجليزي المنقح، مع الحفاظ على المعادلات والرسوم ونشر ملفات PDF بعد التحقق.', 'حالة الإتاحة والتحقق'),
+                'ja': ('最終推敲版の翻訳', '各言語版は最終推敲済みの英語講義ノートに基づきます。繁体字中国語版のみ、検証済みの簡体字中国語版を変換し、英語原文と照合して推敲します。数式・原図を保持し、検証済みのPDFだけを公開します。原講師が公認した翻訳ではありません。', '全言語版の公開状況'),
+                'zh-Hans': ('最终润色版译本', '各语言版本均以最终润色的英文讲义为依据。繁体中文版由已验证的简体中文版直接转换，再对照英文原文润色。保留公式与原图，仅发布通过检查的 PDF。这些译本未经原讲师认可。', '所有语言版本的发布进度'),
+                'zh-Hant': ('最終潤色版譯本', '各語言版本均以最終潤色的英文講義為依據。繁體中文版由已驗證的簡體中文版直接轉換，再對照英文原文潤色。保留公式與原圖，僅發布通過檢查的 PDF。這些譯本未經原講師認可。', '所有語言版本的發布進度'),
+                'de': ('Übersetzungen der finalen Ausgabe', 'Jede Sprachausgabe beruht auf den abschließend redigierten englischen Notizen. Die traditionelle chinesische Ausgabe wird aus der geprüften vereinfachten Fassung konvertiert und anschließend am englischen Text nachbearbeitet. Formeln und Originalabbildungen bleiben erhalten; verlinkt werden nur geprüfte PDFs.', 'Verfügbarkeit aller Sprachausgaben'),
+                'es': ('Traducciones de la edición final', 'Cada edición parte del texto inglés revisado. La edición en chino tradicional se convierte directamente de la versión simplificada validada y después se pule contrastándola con el original inglés. Se conservan las ecuaciones y figuras originales; solo se enlazan los PDF verificados.', 'Disponibilidad de todas las ediciones'),
+                'fr': ('Traductions de la version finale', 'Chaque édition part du texte anglais révisé. L’édition chinoise traditionnelle est convertie depuis la version simplifiée validée, puis révisée à l’aide de l’original anglais. Les équations et figures d’origine sont conservées ; seuls les PDF vérifiés sont proposés.', 'Disponibilité de toutes les éditions'),
+                'ko': ('최종 교정판 번역', '각 언어판은 최종 교정된 영어 강의 노트를 바탕으로 합니다. 번체 중국어판은 검증된 간체 중국어판을 직접 변환한 뒤 영어 원문과 대조해 다듬습니다. 수식과 원본 그림을 유지하며 검증된 PDF만 공개합니다.', '전체 언어판 공개 현황'),
+                'ru': ('Переводы окончательной редакции', 'Каждое языковое издание основано на окончательно отредактированном английском тексте. Традиционная китайская версия напрямую преобразуется из проверенной упрощённой и затем редактируется с опорой на английский оригинал. Формулы и исходные рисунки сохраняются; публикуются только проверенные PDF.', 'Доступность всех языковых изданий'),
+                'vi': ('Bản dịch từ bản hiệu đính cuối', 'Mỗi ấn bản ngôn ngữ dựa trên bản tiếng Anh đã hiệu đính. Bản tiếng Trung phồn thể được chuyển đổi trực tiếp từ bản giản thể đã kiểm định, rồi được trau chuốt đối chiếu với nguyên bản tiếng Anh. Công thức và hình gốc được giữ nguyên; chỉ PDF đã kiểm tra mới được công bố.', 'Tình trạng của mọi ấn bản ngôn ngữ'),
+                'ar': ('ترجمات النسخة النهائية', 'تستند كل طبعة لغوية إلى النص الإنجليزي المنقح. وتُحوَّل طبعة الصينية التقليدية مباشرة من النسخة المبسطة المتحقق منها، ثم تُصقل بالرجوع إلى الأصل الإنجليزي. تُحفظ المعادلات والرسوم الأصلية، ولا تُنشر إلا ملفات PDF التي اجتازت التحقق.', 'حالة جميع الطبعات اللغوية'),
             }[locale]
             adjusted = ('<!-- polished-translations:start -->\n## ' + heading + '\n\n' + notice + '\n\n'
                         f'[{label}](../README.md#final-polished-translations)\n'
@@ -1129,7 +1366,7 @@ def validated_output(book, lang):
                     for rel, sha in q.get('translation_results', {}).items()))
 
 
-def publish_book(book):
+def publish_book(book, languages):
     """Publish only owned outputs; refuse a dirty index or edits outside README markers."""
     def git(*args):
         return subprocess.check_output(['git', *args], cwd=ROOT, text=True, stderr=subprocess.STDOUT,
@@ -1151,7 +1388,8 @@ def publish_book(book):
             paths.append(str(p.relative_to(ROOT)))
     git('add', '--', *paths)
     if git('diff', '--cached', '--name-only').strip():
-        git('commit', '--only', '-m', 'Publish polished Japanese and Chinese ' + book['titles']['en'], '--', *paths)
+        labels = ', '.join(LANGUAGE_SPECS[lang]['label'] for lang in languages)
+        git('commit', '--only', '-m', f'Publish {labels} {book["titles"]["en"]}', '--', *paths)
     git('push', 'origin', 'HEAD')
 
 
@@ -1167,11 +1405,15 @@ def language_complete(book, lang):
     return True
 
 
-def run_book(book, args):
+def run_book(book, args, languages=None):
+    languages = list(languages or BASE_LANGS)
+    if 'zh-Hant' in languages and not validated_output(book, 'zh'):
+        raise RuntimeError(
+            f'Traditional Chinese requires the validated Simplified Chinese edition: {book["id"]}')
     errors = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {}
-        for lang in LANGS:
+        for lang in languages:
             for rel in book['source_files']:
                 if rel == 'common_preamble.tex' or PROVIDER_STOP.is_set():
                     continue
@@ -1192,7 +1434,7 @@ def run_book(book, args):
                   {'state': 'translating', 'updated_at': time.time(), 'errors': errors})
         if provider_failure:
             raise provider_failure
-    for lang in LANGS:
+    for lang in languages:
         try:
             if validated_output(book, lang) or not language_complete(book, lang):
                 continue
@@ -1212,13 +1454,18 @@ def run(args):
     WORK.mkdir(parents=True, exist_ok=True)
     with (WORK / 'queue.lock').open('w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        selected_language = getattr(args, 'language', None)
+        # Keep the historical no-flag behavior scoped to the accepted Japanese/Chinese queue.
+        languages = [selected_language] if selected_language else list(BASE_LANGS)
+        for lang in languages:
+            ensure_language_titles(lang, args)
         books = read(MANIFEST)['books']
         if getattr(args, 'book', None):
             books = [b for b in books if b['id'] == args.book]
             if not books:
                 raise ValueError('Unknown book id')
         elif not args.pilot_only:
-            books.sort(key=lambda b: all(language_complete(b, l) for l in LANGS))
+            books.sort(key=lambda b: all(language_complete(b, lang) for lang in languages))
         if not args.pilot_only and not (WORK / 'pilot-approved.json').exists():
             raise RuntimeError('First run --pilot-only; inspect both PDFs and approve-pilot before full queue')
         if args.pilot_only:
@@ -1237,11 +1484,11 @@ def run(args):
                 blocked.append(book['id'])
                 write(state_path, {'state': 'blocked', 'errors': [{'stage': 'source', 'error': str(exc)}]})
                 continue
-            if all(validated_output(book, l) for l in LANGS):
+            if all(validated_output(book, lang) for lang in languages):
                 previous = read(state_path) if state_path.exists() else {}
-                if args.publish and previous.get('publication') == 'deferred':
+                if args.publish:
                     try:
-                        publish_book(book)
+                        publish_book(book, languages)
                         write(state_path, {'state': 'complete', 'publication': 'pushed'})
                     except Exception as exc:
                         write(state_path, {**previous, 'error': str(exc)})
@@ -1249,8 +1496,8 @@ def run(args):
             write(WORK / 'status.json', {'state': 'running', 'book': book['id'], 'workers': args.workers,
                                         'previous_blocked_books': blocked, 'updated_at': time.time()})
             try:
-                errors = run_book(book, args)
-                complete = all(validated_output(book, l) for l in LANGS)
+                errors = run_book(book, args, languages)
+                complete = all(validated_output(book, lang) for lang in languages)
                 report = {'state': 'complete' if complete else 'blocked', 'errors': errors,
                           'updated_at': time.time()}
                 if not complete:
@@ -1259,7 +1506,7 @@ def run(args):
                     try:
                         write(WORK / 'status.json', {'state': 'publishing', 'book': book['id'],
                                                     'updated_at': time.time()})
-                        publish_book(book)
+                        publish_book(book, languages)
                         write(WORK / 'publication.json', {'book': book['id'], 'state': 'pushed'})
                         report['publication'] = 'pushed'
                     except Exception as exc:
@@ -1304,8 +1551,12 @@ def main():
     parser.add_argument('command', choices=['prepare', 'run', 'status', 'compile', 'approve-pilot', 'readme', 'repair', 'review'])
     parser.add_argument('--workers', type=int, default=5)
     parser.add_argument('--ramp-seconds', type=float, default=1)
+    parser.add_argument('--provider', choices=['deepseek', 'codex'], default='deepseek')
     parser.add_argument('--model', default='deepseek-chat')
     parser.add_argument('--review-model', default='deepseek-reasoner')
+    parser.add_argument('--reasoning', choices=['none', 'low', 'medium', 'high', 'xhigh', 'max'], default='medium')
+    parser.add_argument('--codex-timeout', type=int, default=1800)
+    parser.add_argument('--batch-chars', type=int, default=4800)
     parser.add_argument('--transport-resumes', type=int, choices=range(4), default=2)
     parser.add_argument('--transport-retry-seconds', type=int, default=300)
     parser.add_argument('--toolkit-root', type=Path, default=ROOT.parent / 'ZhJpBook')
@@ -1320,6 +1571,10 @@ def main():
         parser.error('Use 1 to 5 workers')
     if args.transport_retry_seconds < 0:
         parser.error('Transport delay cannot be negative')
+    if args.codex_timeout < 30:
+        parser.error('Codex timeout must be at least 30 seconds')
+    if args.batch_chars < 1000:
+        parser.error('Batch size must be at least 1000 characters')
     with ExitStack() as stack:
         if args.command in {'prepare', 'compile', 'approve-pilot', 'repair', 'review'}:
             WORK.mkdir(parents=True, exist_ok=True)
@@ -1344,15 +1599,15 @@ def main():
                 print(json.dumps({'language': lang, **review_sample(book, lang, args)}, ensure_ascii=False, indent=2))
         elif args.command == 'compile':
             book = next(b for b in read(MANIFEST)['books'] if b['id'] == args.book)
-            for lang in LANGS:
+            for lang in ([args.language] if args.language else BASE_LANGS):
                 compile_book(book, lang, args)
             update_readmes()
         else:
             if not args.evidence:
                 parser.error('--evidence is required')
             book = read(MANIFEST)['books'][0]
-            checks = {l: read(OUT / book['id'] / l / 'quality.json') for l in LANGS}
-            if not all(validated_output(book, lang) for lang in LANGS):
+            checks = {lang: read(OUT / book['id'] / lang / 'quality.json') for lang in BASE_LANGS}
+            if not all(validated_output(book, lang) for lang in BASE_LANGS):
                 parser.error('Pilot is not validated')
             write(WORK / 'pilot-approved.json', {'evidence': args.evidence, 'checks': checks})
 

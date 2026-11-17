@@ -60,6 +60,12 @@ class CoverTableTests(unittest.TestCase):
             self.assertIn('?book=sample&amp;lang=' + lang, table)
         self.assertIn('Closing paragraph.\n\nAnother paragraph.', text)
 
+    def test_every_validated_language_is_linked(self):
+        self.data['books']['sample']['editions'].update({'fr': {}, 'zh-Hant': {}, 'ar': {}})
+        table = self.assert_valid_cover_table(self.decorate())
+        for lang in ('fr', 'zh-Hant', 'ar'):
+            self.assertIn('?book=sample&amp;lang=' + lang, table)
+
     def test_existing_broken_annotation_is_repaired_idempotently(self):
         broken = self.original.replace(
             '    </td>', '\n      <!-- edition-links --><br><sub>old links</sub>'

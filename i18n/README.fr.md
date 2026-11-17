@@ -414,9 +414,9 @@ Ce dépôt est distribué sous licence GNU General Public License v3.0. Voir [LI
 <!-- polished-translations:start -->
 ## Traductions de la version finale
 
-Les versions japonaises et chinoises sont fondées sur le texte anglais révisé. Les équations et figures sont conservées ; seuls les PDF vérifiés sont proposés.
+Chaque édition part du texte anglais révisé. L’édition chinoise traditionnelle est convertie depuis la version simplifiée validée, puis révisée à l’aide de l’original anglais. Les équations et figures d’origine sont conservées ; seuls les PDF vérifiés sont proposés.
 
-[Disponibilité et vérification](../README.md#final-polished-translations)
+[Disponibilité de toutes les éditions](../README.md#final-polished-translations)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

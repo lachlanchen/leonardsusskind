@@ -1,0 +1,35 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 36,
+  "outline_entries": 19,
+  "target_characters": 29027,
+  "image_placements": 14,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Démystifier le boson de Higgs",
+  "pdf_sha256": "21fc50704c8faabc00da987a7c9f50f7859d8201395ccb66d60f080ffa6fa0ee",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 44,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "5c2dfa31484e76dbb0c25afb678602a569c1acb41da59fef605bf7899438c232",
+    "chapters/lecture_01/content.tex": "fa8c5b88843bc30169c586d1d13e478ea1818b664ce4bc8af1a9835ec2dd82e6"
+  },
+  "source_files": {
+    "course.tex": "8618bd1a9d6c91833ba00f7be31dcb20fcc6727f03cd9160273f418737e819fd",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "0dce2f6c0fcca244ee59848cdffaf66f43d412a86a2f3e89cf16984c5f46430c"
+  },
+  "translated_tex": {
+    "cover.tex": "d59971719776757d5f380b8c9be45d0257a6ead5a6b3e2b00a8cab72adad8ab0",
+    "common_preamble.tex": "5f308514c4234e965624c0e409725e5bece0b0b125c5a7b8eef3661a4630fdba",
+    "course.tex": "cfc4f655ad22d4033b6ae472ba4d7c0f0b8131d9d3ef78f8eefb1aa7504b0b45",
+    "chapters/lecture_01/content.tex": "b0a03c9b61567d79a69432e10c3177fe435f08ca9501e4862c8783c1c3fc743b"
+  }
+}

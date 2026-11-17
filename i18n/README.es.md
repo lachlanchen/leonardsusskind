@@ -414,9 +414,9 @@ Este repositorio está licenciado bajo la GNU General Public License v3.0. Consu
 <!-- polished-translations:start -->
 ## Traducciones de la edición final
 
-Las versiones en japonés y chino se basan en el texto inglés revisado. Se conservan las ecuaciones y figuras; solo se enlazan los PDF verificados.
+Cada edición parte del texto inglés revisado. La edición en chino tradicional se convierte directamente de la versión simplificada validada y después se pule contrastándola con el original inglés. Se conservan las ecuaciones y figuras originales; solo se enlazan los PDF verificados.
 
-[Disponibilidad y controles](../README.md#final-polished-translations)
+[Disponibilidad de todas las ediciones](../README.md#final-polished-translations)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->
