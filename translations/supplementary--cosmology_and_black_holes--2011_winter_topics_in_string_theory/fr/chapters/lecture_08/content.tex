@@ -1,0 +1,569 @@
+\chapter{Énergie du vide et horizons de de Sitter}
+
+\lectureoverview{L’énergie du vide diffère de la matière ordinaire : elle ne privilégie aucun référentiel inertiel et ne se dilue pas avec l’expansion de l’Univers. Dès que l’on tient compte de la gravité, ce zéro de l’énergie, apparemment anodin, modifie la géométrie de l’espace-temps. Nous établirons la loi de l’ère dominée par la matière \(a(t)\propto t^{2/3}\), la comparerons à celle de l’ère dominée par le vide \(a(t)\propto e^{Ht}\), puis réécrirons l’espace-temps de de Sitter en coordonnées conformes. Le diagramme causal qui en résulte révèle un horizon des événements, dépendant de l’observateur, situé à distance propre constante.}
+
+\section{Fluctuations quantiques du vide}
+
+Nous commencerons par la question qui motive tout ce cours. La théorie quantique des champs attribue une énergie à l’espace vide. Cela signifie-t-il que de véritables paires électron--positron émergent continuellement du néant ?
+
+\begin{classroomqa}
+\audiencequestion{La création et l’annihilation de paires électron--positron se produisent-elles réellement dans le vide, ou s’agit-il simplement d’un artifice comptable ?\lecturetimestamp{00:00:06}}
+\lecturerresponse{Les paires virtuelles contribuent à l’énergie du vide, mais ce ne sont pas des particules ordinaires que l’on pourrait observer émergeant de l’espace vide. Ce sont des fluctuations de l’état fondamental quantique, qui ne persistent que dans les limites propres à un processus virtuel.}
+\end{classroomqa}
+
+L’oscillateur harmonique en fournit le modèle le plus simple. Classiquement, il peut rester immobile au minimum de son potentiel. En mécanique quantique, une position exactement égale au minimum et une quantité de mouvement exactement nulle sont incompatibles. L’état fondamental constitue un compromis entre les deux et conserve l’énergie du point zéro
+\begin{equation}
+E_0=\frac{1}{2}\hbar\omega.
+\label{eq:l08-zero-point}
+\end{equation}
+C’est l’énergie minimale que l’oscillateur puisse avoir. Ce n’est pas un état excité et cela ne représente pas un flux de particules observables.
+
+Un champ libre se décompose en modes normaux, dont chacun se comporte comme un oscillateur. Le champ électromagnétique dans une cavité en est un exemple familier. Chaque mode apporte un terme de la forme donnée à l’équation~\eqref{eq:l08-zero-point} ; les champs quantiques de l’électron, des quarks et d’autres particules apportent leurs propres fluctuations de l’état fondamental. La somme de ces contributions donne ce que nous appelons l’énergie du vide. L’écart notoire entre les estimations microscopiques naïves et l’échelle cosmologique observée est réel, mais ce n’est pas le sujet de ce cours.
+
+\begin{classroomqa}
+\audiencequestion{La différence d’environ \(120\) ordres de grandeur sera-t-elle abordée de nouveau ?\lecturetimestamp{00:02:59}}
+\lecturerresponse{Pas ici. Le but est de comprendre les horizons cosmiques : comment les équations cosmologiques produisent une expansion accélérée et pourquoi celle-ci crée des horizons des événements.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La relation ultraviolet--infrarouge du cours précédent fait-elle partie de la discussion de ce soir ?\lecturetimestamp{00:03:59}}
+\lecturerresponse{Nous y reviendrons peut-être plus tard, mais elle ne fait pas partie du raisonnement prévu. Le parcours immédiat va de l’énergie du vide à la cosmologie, puis aux horizons.}
+\end{classroomqa}
+
+\section{Pourquoi l’énergie du vide est invariante de Lorentz}
+
+La question suivante semble élémentaire, mais elle met en évidence la propriété qui définit l’énergie du vide. Si l’espace vide possède une densité d’énergie positive, pourquoi ne se comporte-t-il pas comme un milieu optique et ne modifie-t-il pas la vitesse de la lumière ?
+
+\begin{classroomqa}
+\audiencequestion{Une densité d’énergie du vide positive devrait-elle avoir un effet réfractif et ralentir légèrement la lumière ?\lecturetimestamp{00:04:35}}
+\lecturerresponse{La matière ordinaire peut produire cet effet parce qu’elle définit un référentiel de repos privilégié. L’énergie du vide est différente : elle ne sélectionne aucun référentiel de ce type, et tous les observateurs inertiels mesurent la même densité d’énergie du vide. Les mesures locales de la lumière donnent donc toujours la vitesse invariante \(c\).}
+\end{classroomqa}
+
+Il faut distinguer la symétrie des lois de celle d’un état particulier. Les lois de la physique peuvent être invariantes par translation, même si Stanford n’est pas Berkeley et si la Terre n’est pas l’espace interstellaire. La translation de \emph{l’ensemble} de la configuration physique laisse les lois inchangées ; la répartition réelle de la matière n’a pas besoin d’être identique en tout lieu. De même, des équations invariantes par rotation ne rendent pas cette salle de cours symétrique par rotation.
+
+La même distinction s’applique aux transformations de Lorentz. Un gaz possède un référentiel de repos. Un observateur qui se déplace par rapport à lui voit des molécules en mouvement et mesure une densité d’énergie différente : l’état du gaz n’est donc pas invariant de Lorentz, même si les équations qui le régissent le sont. La matière ordinaire, les bains de rayonnement et les appareils de laboratoire brisent tous la symétrie en sélectionnant des mouvements ou des directions privilégiés.
+
+L’énergie du vide est la forme exceptionnelle de matière qui ne fait rien de tel. Imaginons un détecteur qui mesure la densité d’énergie du vide. Au repos, il indique une certaine valeur \(\rho_{\rm vac}\). Accélérons le détecteur et répétons la mesure : le résultat ne change pas. En notation relativiste, cette propriété s’exprime par un tenseur énergie-impulsion proportionnel à la métrique,
+\begin{equation}
+T_{\mu\nu}^{\rm vac}=-\rho_{\rm vac}g_{\mu\nu},
+\qquad
+p_{\rm vac}=-\rho_{\rm vac}.
+\label{eq:l08-vacuum-stress}
+\end{equation}
+\editorialnote{La relation entre pression et densité n’est pas déduite au tableau. Elle exprime de façon covariante les deux propriétés qui définissent l’énergie du vide dans ce cours : l’invariance de Lorentz et la constance de la densité pendant l’expansion.}
+
+La précision « locale » est importante. Un rayon lumineux qui passe près d’un observateur est mesuré à l’aide d’horloges et de règles locales comme se déplaçant à \(c\). Demander la vitesse, par rapport à nous, d’un rayon lumineux lointain dans un espace en expansion nécessite de choisir des coordonnées et une méthode pour comparer des événements distants. Cette vitesse coordonnée n’a pas besoin d’être égale à \(c\), même si chaque observateur local mesure \(c\).
+
+\begin{classroomqa}
+\audiencequestion{Dans cette discussion, l’énergie du vide et la constante cosmologique sont-elles synonymes ?\lecturetimestamp{00:11:57}}
+\lecturerresponse{Oui. Ce sont deux façons de placer le même terme dans les équations d’Einstein : on peut le décrire comme une constante cosmologique du côté géométrique, ou comme un tenseur énergie-impulsion du vide invariant de Lorentz du côté des sources.}
+\end{classroomqa}
+
+\section{Ce qui se dilue et ce qui ne se dilue pas}
+
+Remplissons une vaste région de particules non relativistes de masse \(m\). À des échelles suffisamment grandes pour moyenner les galaxies et les amas, supposons la distribution homogène. Si un volume comobile contient \(N\) particules, sa densité de matière vaut
+\begin{equation}
+\rho_m=\frac{Nm}{V}.
+\end{equation}
+Lorsque chaque dimension linéaire double, le volume est multiplié par \(2^3=8\), tandis que \(N\) et \(m\) restent inchangés. La densité tombe donc au huitième de sa valeur initiale. La matière ordinaire se dilue parce que les mêmes particules occupent un volume physique plus grand.
+
+Le rayonnement se dilue lui aussi, et plus rapidement. Sa densité numérique diminue avec le volume, tandis que la longueur d’onde de chaque photon est étirée et que son énergie subit un décalage vers le rouge. Nous noterons plus tard le résultat \(\rho_r\propto a^{-4}\), mais nous ne résoudrons pas ce soir la cosmologie dominée par le rayonnement.
+
+L’énergie du vide fait exception :
+\begin{equation}
+\rho_{\rm vac}(t)=\text{constant}.
+\label{eq:l08-rho-vac-constant}
+\end{equation}
+Elle ne s’agrège pas, ne sélectionne ni direction ni référentiel inertiel, et sa densité ne diminue pas avec l’expansion de l’espace. Si une boîte comobile grandit, l’énergie du vide qu’elle contient augmente en proportion de son volume.
+
+\editorialnote{Une densité constante ne signifie pas que l’énergie totale du vide dans une boîte comobile en expansion reste constante. La conservation covariante du tenseur énergie-impulsion,
+\(\dot\rho+3H(\rho+p)=0\), est satisfaite parce que l’énergie du vide a une pression négative \(p_{\rm vac}=-\rho_{\rm vac}\). Le terme de travail fournit exactement la variation de l’énergie totale du vide dans la boîte.}
+
+\section{La gravité est sensible au zéro de l’énergie}
+
+En physique de laboratoire sans gravitation, décaler toutes les énergies d’une même constante ne change généralement rien. Les spectres dépendent des différences d’énergie : entre un atome excité et un atome non excité, ou entre un état avec particule et un état sans particule. L’espace vide semble ne fournir aucun référentiel permettant de mesurer son énergie absolue.
+
+La gravité change la question. La masse est de l’énergie, l’énergie est une source de gravitation, et l’énergie du vide gravite donc elle aussi. Une constante invisible dans une transition atomique peut courber l’espace-temps.
+
+L’équation d’Einstein sépare la géométrie des sources :
+\begin{equation}
+G_{\mu\nu}=8\pi G_N T_{\mu\nu},
+\label{eq:l08-einstein}
+\end{equation}
+dans un système d’unités où \(c=1\). Le tenseur d’Einstein \(G_{\mu\nu}\) est construit à partir de la métrique \(g_{\mu\nu}(x)\) et de ses dérivées. Le tenseur énergie-impulsion \(T_{\mu\nu}\) comprend la densité d’énergie, la densité de quantité de mouvement, la pression et les contraintes dues à la matière et aux champs non gravitationnels. L’énergie du vide figure du côté des sources, comme la matière ordinaire.\editorialnote{L’introduction orale associe brièvement \(8\pi/3\) à l’équation tensorielle. Le facteur \(1/3\) appartient à l’équation de Friedmann spatialement plate présentée ci-dessous, et non à l’équation~\eqref{eq:l08-einstein}.}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_08_figure_02.png}
+\caption{Le côté géométrique de l’équation d’Einstein, construit à partir de la métrique de l’espace-temps \(g_{\mu\nu}(x)\).}
+\lectureframe{00:21:58.820}
+\end{figure}
+
+\section{Réduire la géométrie à un facteur d’échelle}
+
+Choisissons maintenant la géométrie homogène en expansion la plus simple, avec des tranches spatiales plates :
+\begin{equation}
+ds^2=-dt^2+a(t)^2\,d\mathbf{x}^2,
+\qquad
+d\mathbf{x}^2=dx^2+dy^2+dz^2.
+\label{eq:l08-frw-metric}
+\end{equation}
+Les coordonnées \(\mathbf{x}\) sont tracées sur une feuille de caoutchouc infinie. Elles peuvent rester immobiles, mais les distances physiques entre elles varient. Deux points comobiles séparés par \(\Delta\mathbf{x}\) sont à distance propre constante à \(t\) donnée
+\begin{equation}
+D(t)=a(t)\lvert\Delta\mathbf{x}\rvert.
+\label{eq:l08-proper-distance}
+\end{equation}
+Ainsi, toute la dépendance temporelle de cette géométrie hautement symétrique est contenue dans une seule fonction, le facteur d’échelle \(a(t)\). Une valeur constante de \(a\) donne l’espace-temps plat de Minkowski après un changement d’échelle spatial. Un facteur \(a\) qui dépend du temps peut laisser chaque tranche spatiale plate tout en courbant l’espace-temps dans son ensemble.
+
+\begin{classroomqa}
+\audiencequestion{Pour des coordonnées \(x=7\) et \(x=13\), leur séparation en coordonnées est-elle \(4\) ?\lecturetimestamp{00:27:40}}
+\lecturerresponse{Non. Elle vaut \(13-7=6\), et leur séparation physique vaut donc \(6a(t)\). Cette correction est utile : \(x\) repère la position comobile, tandis que la multiplication par \(a(t)\) donne la distance physique.}
+\end{classroomqa}
+
+Pour cette métrique et une densité d’énergie uniforme dans l’espace, une composante de l’équation d’Einstein devient l’équation de Friedmann spatialement plate,
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N}{3}\rho(t).
+\label{eq:l08-friedmann}
+\end{equation}
+Le rapport
+\begin{equation}
+H(t)\equiv\frac{\dot a(t)}{a(t)}
+\label{eq:l08-hubble-definition}
+\end{equation}
+est le paramètre de Hubble. À ce stade, il est défini ainsi et peut dépendre du temps.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_03.png}
+\caption{La métrique plate en expansion et l’équation de Friedmann, après rétablissement au tableau du facteur manquant \(1/a^2\).}
+\lectureframe{00:30:30.000}
+\end{figure}
+
+\paragraph{L’interprétation en bilan énergétique.}
+Dans ce bilan énergétique, l’équation~\eqref{eq:l08-friedmann} s’écrit schématiquement
+\begin{equation}
+-\frac{3}{8\pi G_N}H^2+\rho=0.
+\label{eq:l08-energy-heuristic}
+\end{equation}
+L’énergie de la matière est positive, tandis que le degré de liberté gravitationnel représenté par le facteur d’échelle en expansion porte un terme cinétique négatif. Dans ce problème réduit, l’égalité entre énergie gravitationnelle négative plus énergie positive de la matière et zéro est un moyen mnémotechnique utile.
+
+\editorialnote{L’équation~\eqref{eq:l08-energy-heuristic} est la contrainte hamiltonienne d’un modèle de minisuperspace hautement symétrique, et non un théorème indépendant des coordonnées selon lequel tout univers arbitraire posséderait une énergie totale globale conservée égale à zéro. Le cours l’utilise comme interprétation heuristique de la contrainte de Friedmann.}
+
+\section{Expansion dominée par la matière}
+
+Revenons à une boîte mathématique comobile de côté, en coordonnées, \(\Delta x=1\). Son côté physique vaut \(a(t)\), et son volume physique est donc \(a(t)^3\). Si elle contient \(N\) particules non relativistes de masse \(m\), alors
+\begin{equation}
+\rho_m(t)=\frac{Nm}{a(t)^3}
+=\frac{\rho_0}{a(t)^3}.
+\label{eq:l08-matter-density}
+\end{equation}
+Les particules elles-mêmes ne se dilatent pas ; c’est leur séparation moyenne qui augmente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_08_figure_04.png}
+\caption{La métrique et l’équation de Friedmann au fil de la construction du raisonnement sur la boîte comobile.}
+\lectureframe{00:36:07.940}
+\end{figure}
+
+En substituant dans l’équation~\eqref{eq:l08-friedmann}, on obtient
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N\rho_0}{3a^3}.
+\end{equation}
+Posons \(K=8\pi G_N\rho_0/3\) et choisissons la branche en expansion :
+\begin{align}
+\dot a^2&=\frac{K}{a},\\
+\dot a&=\sqrt{K}\,a^{-1/2},\\
+a^{1/2}\,da&=\sqrt{K}\,dt.
+\label{eq:l08-matter-separated}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{Comment résoudre l’équation après séparation des variables ?\lecturetimestamp{00:38:15}}
+\lecturerresponse{Intégrons les deux membres. L’intégrale de \(a^{1/2}\,da\) est \(\frac{2}{3}a^{3/2}\), et non \(\frac{3}{2}a^{3/2}\) ; \(\frac{3}{2}\) est la nouvelle puissance, tandis que \(\frac{2}{3}\) est le coefficient.}
+\end{classroomqa}
+
+On obtient donc
+\begin{equation}
+\frac{2}{3}a^{3/2}
+=\sqrt{K}\,(t-t_B),
+\end{equation}
+où \(t_B\) est une constante d’intégration qui fixe l’origine du temps choisie. À un facteur de normalisation près et à un décalage temporel près,
+\begin{equation}
+a(t)\propto (t-t_B)^{2/3}.
+\label{eq:l08-matter-solution}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_05.png}
+\caption{Substitution de la densité de matière et séparation des variables conduisant à \(a^{1/2}da\propto dt\).}
+\lectureframe{00:38:30.000}
+\end{figure}
+
+La courbe \(t^{2/3}\) croît moins vite qu’une droite. Sa pente diminue : l’expansion d’un univers dominé par la matière est donc décélérée. Dans le langage newtonien employé dans le cours, les particules ont commencé par s’éloigner les unes des autres et leur attraction gravitationnelle mutuelle réduit continuellement leur vitesse d’éloignement.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_06.png}
+\caption{Comparaison au tableau entre une expansion linéaire et la loi de l’ère dominée par la matière, concave vers le bas, \(a(t)\propto t^{2/3}\).}
+\lectureframe{00:40:00.000}
+\end{figure}
+
+À titre de repère, un bain de rayonnement vérifie
+\begin{equation}
+\rho_r\propto a^{-4},
+\end{equation}
+plutôt que \(a^{-3}\) : la dilution liée au volume apporte trois puissances et le décalage cosmologique vers le rouge en apporte une quatrième. Le facteur d’échelle correspondant peut également se calculer, mais le cours laisse volontairement cet exercice de côté.
+
+\section{Expansion dominée par le vide}
+
+Ne plaçons maintenant que l’énergie du vide du côté droit de l’équation de Friedmann. Puisque \(\rho_{\rm vac}\) est constante,
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N}{3}\rho_{\rm vac}
+\equiv H^2.
+\label{eq:l08-de-sitter-friedmann}
+\end{equation}
+Il faut distinguer deux usages de \(H\). L’équation~\eqref{eq:l08-hubble-definition} définit la quantité, éventuellement dépendante du temps, \(\dot a/a\). L’équation~\eqref{eq:l08-de-sitter-friedmann} indique que, dans un univers composé uniquement d’énergie du vide, sa valeur est la constante
+\begin{equation}
+H=\sqrt{\frac{8\pi G_N\rho_{\rm vac}}{3}}.
+\end{equation}
+En prenant la branche en expansion, on obtient
+\begin{equation}
+\dot a=Ha,
+\end{equation}
+et donc
+\begin{equation}
+a(t)=C e^{Ht}.
+\label{eq:l08-exponential-solution}
+\end{equation}
+La constante d’intégration \(C\) fixe la normalisation arbitraire des coordonnées comobiles. Une croissance proportionnelle à la valeur actuelle de \(a\) est une croissance exponentielle.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{L’équation de l’expansion dominée par le vide \((\dot a/a)^2=H^2\), sa forme du premier ordre \(\dot a=Ha\) et la solution exponentielle.}
+\lectureframe{00:47:45.000}
+\end{figure}
+
+La loi de Hubble pour des objets comobiles s’écrit
+\begin{equation}
+v_{\rm rec}=HD.
+\label{eq:l08-hubble-law}
+\end{equation}
+Dans ce cas précis de de Sitter, la distance propre à laquelle la vitesse de récession est égale à \(c\) est constante :
+\begin{equation}
+D_H=\frac{c}{H},
+\label{eq:l08-hubble-radius}
+\end{equation}
+ou \(D_H=H^{-1}\) dans le système d’unités \(c=1\) utilisé au tableau. Cette échelle fixe réapparaîtra géométriquement comme le rayon de l’horizon des événements de de Sitter.\editorialnote{Dans une cosmologie quelconque où le facteur d’échelle dépend du temps, le rayon de Hubble n’est pas automatiquement un horizon des événements. L’identification fonctionne ici parce que \(H\) est constant dans l’espace exact de de Sitter.}
+
+Le cours propose une expérience de pensée avec un détecteur d’énergie du vide. Plaçons deux corps d’épreuve très légers loin de toute autre source, initialement au repos par rapport au flot comobile, et rendons leur attraction mutuelle négligeable. Leur séparation suit l’expansion exponentielle. L’effet est beaucoup trop faible pour être détecté par un appareil terrestre, mais les distances cosmiques et le temps rétrospectif le rendent observable.
+
+\section{De la domination de la matière à celle du vide}
+
+Le modèle cosmologique réel envisagé dans le cours comprend les deux termes :
+\begin{equation}
+H(t)^2
+=\frac{8\pi G_N}{3}
+\left(\frac{\rho_0}{a(t)^3}+\rho_{\rm vac}\right).
+\label{eq:l08-mixed-friedmann}
+\end{equation}
+Pour de petites valeurs de \(a\), le terme de matière domine parce que \(a^{-3}\) est grand, et la solution ressemble à \(t^{2/3}\). À mesure que l’Univers grandit, la matière se dilue tandis que l’énergie du vide reste constante. Le terme constant finit par l’emporter et le facteur d’échelle se courbe vers le haut, en direction de \(e^{Ht}\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.87\textwidth]{lecture_08_figure_08.png}
+\caption{La transition qualitative dessinée dans le cours : décélération initiale sous la domination de la matière, suivie d’une croissance exponentielle tardive sous celle du vide.}
+\lectureframe{00:53:30.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La solution exponentielle contient une constante d’intégration. Comment savons-nous qu’elle n’est pas extrêmement petite ?\lecturetimestamp{00:52:41}}
+\lecturerresponse{Nous la mesurons. Plus nous observons loin dans l’Univers, plus nous regardons loin dans le passé. Les observations à différentes distances permettent donc de reconstituer une partie antérieure de la courbe d’expansion, et pas seulement sa valeur actuelle.}
+\end{classroomqa}
+
+Le cours indique que les observations tardives alors disponibles concordaient avec une branche exponentielle à environ cinq pour cent près et qualifie les éléments de preuve de convaincants, sans toutefois les juger aussi exacts qu’une mesure de précision des propriétés de l’électron, par exemple. Il faut lire cela comme l’évaluation historique du cours, et non comme un énoncé de précision actuel.
+
+\begin{classroomqa}
+\audiencequestion{La courbe d’expansion qui se courbe vers le haut finira-t-elle par nous empêcher de remonter, à partir des observations, jusqu’au Big Bang ou au fond diffus cosmologique ?\lecturetimestamp{00:55:05}}
+\lecturerresponse{Cette question n’est pas abordée sous l’angle de l’extrapolation du graphique. La question pertinente, qui est invariante, concerne l’existence d’un horizon des événements ; c’est cette question causale que nous allons examiner.}
+\end{classroomqa}
+
+\section{Systèmes liés et avenir lointain}
+
+Si l’expansion exponentielle se poursuit, toute composante qui se dilue devient négligeable devant \(\rho_{\rm vac}\). Cela ne signifie pas que les atomes, les systèmes solaires ou les galaxies eux-mêmes sont étirés. Les systèmes liés assez fortement pour le rester ne suivent pas le flot de Hubble.
+
+\begin{classroomqa}
+\audiencequestion{Les galaxies qui ne sont pas en expansion aujourd’hui finiront-elles par se dilater lorsque l’énergie du vide dominera ?\lecturetimestamp{00:57:44}}
+\lecturerresponse{Les systèmes liés le restent. La Voie lactée et Andromède font partie de la structure proche qui restera unie, tandis que les galaxies suffisamment lointaines, déjà entraînées par l’expansion, continueront de s’éloigner et finiront par passer au-delà de notre horizon.}
+\end{classroomqa}
+
+La distinction entre \emph{attiré} et \emph{lié} est essentielle. Une fusée lancée au-dessus de la vitesse de libération reste soumise à l’attraction gravitationnelle de la Terre, mais elle n’y revient pas. De même, l’attraction gravitationnelle ordinaire peut être la force locale la plus importante entre deux galaxies sans que leur orbite relative soit liée.
+
+\begin{classroomqa}
+\audiencequestion{Notre galaxie est gravitationnellement associée à un groupe. L’expansion accélérée finit-elle par vaincre cette attraction ?\lecturetimestamp{00:59:17}}
+\lecturerresponse{Seule la partie réellement liée de la structure locale reste unie. Le simple fait de parler d’un amas ne suffit pas : un système est lié si son mouvement relatif est inférieur à la vitesse de libération. Des galaxies plus lointaines peuvent être attirées et néanmoins s’éloigner à une vitesse supérieure à la vitesse de libération.}
+\end{classroomqa}
+
+Pour fixer les idées, le cours représente schématiquement l’accélération radiale relative comme la somme d’un terme attractif en inverse du carré de la distance et d’un terme du vide linéaire en la séparation :
+\begin{equation}
+\ddot r\sim-\frac{G_NM}{r^2}+H^2r.
+\label{eq:l08-newtonian-vacuum}
+\end{equation}
+Dans la limite idéalisée de de Sitter, les coefficients ne dépendent pas du temps. Le second terme augmente uniquement parce que \(r\) augmente ; il ne résulte pas d’un affaiblissement progressif de \(G_N\).
+
+\editorialnote{L’équation~\eqref{eq:l08-newtonian-vacuum} est une heuristique newtonienne pour l’accélération relative, et non une loi de force fondamentale supplémentaire en relativité générale. Dans l’espace exact de de Sitter, l’accélération relative de lignes d’univers voisines en chute libre est proportionnelle à \(H^2r\).}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{Comparaison au tableau entre l’attraction en inverse du carré de la distance et la répulsion effective du vide, qui croît linéairement avec la séparation.}
+\lectureframe{01:04:10.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{L’effet dirigé vers l’extérieur augmente-t-il lui-même avec le temps ?\lecturetimestamp{01:01:18}}
+\lecturerresponse{Pas à séparation fixe. Son coefficient est constant. Les objets qui s’éloignent en chute libre finissent par être plus éloignés, et le terme proportionnel à \(r\) est alors plus grand parce que leur distance est plus grande.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on décrire l’effet net comme une diminution progressive de la constante de Newton ?\lecturetimestamp{01:02:30}}
+\lecturerresponse{Non. \(G_N\)reste constante. Pour une séparation donnée, les deux coefficients ne changent pas ; seule l’importance relative de l’attraction en \(1/r^2\) et du terme proportionnel à \(r\) varie avec la distance.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Les mêmes galaxies étaient-elles liées gravitationnellement dans l’Univers primordial, avant que l’énergie du vide ne devienne importante ?\lecturetimestamp{01:05:03}}
+\lecturerresponse{La domination de l’attraction ordinaire n’implique pas à elle seule qu’il y ait liaison. De nombreuses galaxies s’éloignaient déjà à peu près à la vitesse de libération, voire plus vite. Plus tard, l’énergie du vide détermine si l’expansion à grande échelle décélère jusqu’à un effondrement ou s’accélère, mais la force dominante et l’existence d’une orbite liée sont deux affirmations distinctes.}
+\end{classroomqa}
+
+Dans un avenir très lointain, un observateur pourrait donc habiter une structure locale fusionnée tandis que toutes les galaxies non liées seraient devenues inobservables. En l’absence d’archives historiques, cet observateur pourrait raisonnablement conclure que l’Univers est presque vide. Cette solitude causale, plutôt que la destruction des objets locaux, nous conduit à la notion d’horizon.
+
+\section{Ce que signifie un horizon des événements}
+
+Après la pause, posons
+\begin{equation}
+a(t)=e^{Ht}
+\end{equation}
+et écrivons la métrique sous la forme
+\begin{equation}
+ds^2=-dt^2+e^{2Ht}d\mathbf{x}^2.
+\label{eq:l08-de-sitter-metric}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Quel est le nom de l’espace-temps décrit par cette métrique ?\lecturetimestamp{01:08:13}}
+\lecturerresponse{C’est l’espace-temps de de Sitter, souvent abrégé en espace de de Sitter. Ses horizons importent parce qu’un Univers dominé par le vide tend vers cette géométrie aux temps tardifs.}
+\end{classroomqa}
+
+Avant d’en dessiner la structure causale, rappelons le rôle d’un diagramme de Penrose. Les intervalles infinis y sont comprimés en une figure finie, tout en laissant les rayons lumineux à \(45^\circ\). Dans l’espace-temps plat, les objets massifs aboutissent à l’infini temporel futur, les rayons lumineux à l’infini nul, et un observateur inertiel qui peut attendre arbitrairement longtemps n’a pas d’horizon des événements excluant une région permanente de l’espace-temps.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_08_figure_10.png}
+\caption{Diagramme de Penrose de l’espace-temps plat, utilisé pour distinguer les destinations temporelles et nulles avant l’introduction d’un horizon.}
+\lectureframe{01:10:35.000}
+\end{figure}
+
+Un diagramme de trou noir fournit un contraste. Un observateur extérieur ne peut recevoir que les signaux issus d’événements appartenant au passé causal de sa ligne d’univers future. Même lorsque le temps d’observation tend vers l’infini, la région intérieure reste exclue. La frontière entre les événements qui peuvent communiquer avec cet observateur et ceux qui ne le pourront jamais est l’horizon des événements.
+
+\begin{definition}
+L’horizon des événements futur d’un observateur est la frontière de l’ensemble des événements à partir desquels un signal causal dirigé vers le futur peut un jour atteindre sa ligne d’univers.
+\label{def:l08-event-horizon}
+\end{definition}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_08_figure_11.png}
+\caption{Le contraste avec le trou noir : les cônes de lumière passés associés à des observations extérieures, même à des temps arbitrairement tardifs, n’incluent jamais la région au-delà de l’horizon des événements.}
+\lectureframe{01:13:50.000}
+\end{figure}
+
+Un horizon des événements est donc une frontière causale globale, et non simplement la distance à laquelle un objet paraît aujourd’hui peu lumineux. Pour le repérer, il faut savoir quels signaux peuvent parvenir à l’observateur, même après une attente arbitrairement longue.
+
+\section{Comprimer l’avenir infini}
+
+Les coordonnées spatiales de l’équation~\eqref{eq:l08-de-sitter-metric} couvrent déjà une tranche plate infinie. Nous les laisserons telles quelles et ne comprimerons que le temps. Introduisons le temps conforme \(T\) en imposant
+\begin{equation}
+dt^2=e^{2Ht}dT^2.
+\label{eq:l08-conformal-definition}
+\end{equation}
+En prenant la racine carrée dirigée vers le futur et en réarrangeant, on obtient
+\begin{equation}
+dT=e^{-Ht}dt.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Quelle est l’intégrale, signe compris ?\lecturetimestamp{01:17:25}}
+\lecturerresponse{Elle vaut \(-H^{-1}e^{-Ht}\). Une constante additive ne fait que décaler l’origine de \(T\) ; choisissons-la de sorte que l’avenir infini corresponde à \(T=0\).}
+\end{classroomqa}
+
+Ainsi,
+\begin{equation}
+T=-\frac{1}{H}e^{-Ht},
+\qquad -\infty<T<0.
+\label{eq:l08-conformal-time}
+\end{equation}
+Quand \(t\to-\infty\), \(T\to-\infty\). Lorsque le temps propre \(t\to+\infty\), \(T\to0^{-}\). L’avenir infini a été placé sur la droite horizontale finie \(T=0\) ; aucun observateur ne l’atteint en un temps propre fini.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_12.png}
+\caption{Intégrale définissant le temps conforme et représentation de l’avenir infini \(t\to+\infty\) par \(T=0^{-}\).}
+\lectureframe{01:19:10.000}
+\end{figure}
+
+D’après l’équation~\eqref{eq:l08-conformal-time},
+\begin{equation}
+HT=-e^{-Ht},
+\qquad
+e^{2Ht}=\frac{1}{H^2T^2}.
+\label{eq:l08-conformal-factor}
+\end{equation}
+En utilisant \(dt=e^{Ht}dT\) dans l’équation~\eqref{eq:l08-de-sitter-metric}, on obtient alors
+\begin{equation}
+ds^2=\frac{1}{H^2T^2}
+\left(-dT^2+d\mathbf{x}^2\right).
+\label{eq:l08-conformal-metric}
+\end{equation}
+L’expression entre parenthèses est la métrique de Minkowski. Toute la géométrie de de Sitter est maintenant contenue dans un facteur conforme commun qui diverge lorsque \(T\to0^{-}\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.87\textwidth]{lecture_08_figure_13.png}
+\caption{Calcul reliant \(e^{2Ht}\) à \(1/(H^2T^2)\), qui prépare la forme conforme de la métrique.}
+\lectureframe{01:22:50.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Quelle condition détermine la trajectoire d’un rayon lumineux dans cette métrique ?\lecturetimestamp{01:23:49}}
+\lecturerresponse{Un rayon lumineux suit une trajectoire nulle, \(ds^2=0\). Le facteur conforme commun s’élimine donc, laissant \(dT=\pm dx\) dans une direction spatiale choisie.}
+\end{classroomqa}
+
+Dans le diagramme \((T,x)\), les rayons lumineux sont des droites à \(45^\circ\) :
+\begin{equation}
+\frac{dx}{dT}=\pm1.
+\label{eq:l08-null-lines}
+\end{equation}
+La représentation en coordonnées est fortement comprimée près de \(T=0\), mais elle conserve précisément ce qu’il nous faut : quels événements peuvent communiquer entre eux.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_14.png}
+\caption{La métrique conforme au moment où la condition de nullité \(ds^2=0\) permet de retrouver les rayons lumineux à \(45^\circ\).}
+\lectureframe{01:24:05.000}
+\end{figure}
+
+\section{Alice et Bob dans l’espace de de Sitter}
+
+Plaçons Alice à la position comobile fixe \(x=0\). Sa ligne d’univers monte verticalement et aboutit sur le diagramme en \(T=0\), bien que sa montre indique un temps propre infini pour y parvenir. Traçons les rayons lumineux nuls dirigés vers le passé depuis ce point final. Ils délimitent la plus grande région dont Alice puisse jamais recevoir un signal. Les événements situés à l’extérieur lui restent à jamais inaccessibles.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_15.png}
+\caption{Cône de lumière passé limite d’Alice. Sa frontière nulle est l’horizon des événements de de Sitter, qui dépend de l’observateur.}
+\lectureframe{01:28:50.000}
+\end{figure}
+
+Cet horizon est propre à chaque observateur. Un autre observateur a un point final futur différent et donc un cône de lumière passé limite différent. Supposons que Bob se trouve un jour dans la région causale d’Alice et qu’ils échangent des messages. Si Bob suit ensuite l’expansion de Hubble et franchit l’horizon d’Alice, les signaux émis après ce franchissement ne peuvent pas parvenir à Alice, aussi longtemps qu’elle attende. Bob a son propre horizon et finit par perdre la capacité correspondante de recevoir les signaux tardifs d’Alice.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_16.png}
+\caption{Alice et Bob et leurs frontières causales distinctes. Un Bob comobile peut sortir du passé causal d’Alice, même s’ils ont échangé des signaux auparavant.}
+\lectureframe{01:30:20.000}
+\end{figure}
+
+Si Alice et Bob se tiennent la main, ou, plus réalistement, restent liés à une distance propre fixe, leur séparation en coordonnées comobiles diminue comme \(a^{-1}\). Leurs courbes se rapprochent sur le diagramme conforme, mais cela ne signifie pas que leur distance propre s’annule. Le facteur conforme croissant compense la diminution de l’écart en coordonnées, et la communication reste possible indéfiniment.
+
+\begin{classroomqa}
+\audiencequestion{Bob peut-il voir Alice au même moment, une fois que leurs horizons les ont séparés ?\lecturetimestamp{01:31:43}}
+\lecturerresponse{Aucun observateur ne voit jamais un événement lointain au même moment, au sens littéral : l’observation porte toujours sur un événement situé dans le cône de lumière passé. La formulation plus précise est qu’après le franchissement de l’horizon, aucun nouveau signal émis depuis l’autre ligne d’univers ne peut arriver.}
+\end{classroomqa}
+
+Dans l’application à la cosmologie du futur lointain, Alice représente notre vestige local lié gravitationnellement et Bob chacune des galaxies lointaines non liées. Ces galaxies ne disparaissent pas soudainement à un instant fini sur l’horloge d’Alice. Leurs signaux ultérieurs s’étalent sur des intervalles de plus en plus longs et sont décalés vers des longueurs d’onde de plus en plus grandes, jusqu’à devenir physiquement indétectables.
+
+\begin{classroomqa}
+\audiencequestion{La théorie dit-elle vraiment qu’aucune galaxie lointaine ne restera visible dans un futur très lointain ?\lecturetimestamp{01:33:38}}
+\lecturerresponse{Les galaxies non liées franchissent l’horizon des événements de l’observateur local. Leurs derniers signaux visibles arrivent avec un retard croissant et sont de plus en plus décalés vers le rouge, de sorte que, en pratique, seule la structure locale liée reste observable.}
+\end{classroomqa}
+
+\section{Décalage vers le rouge à l’horizon}
+
+On peut encore tracer un ancien signal lumineux émis par Bob qui parvient à Alice à un temps conforme très tardif, ce qui peut donner l’impression qu’elle continue à le voir. Le contenu physique réside dans l’espacement et l’énergie de ces signaux. Des intervalles égaux sur l’horloge de Bob correspondent à des intervalles de plus en plus longs de temps propre pour Alice. Les fréquences et les énergies des photons diminuent :
+\begin{equation}
+\nu_{\rm received}\longrightarrow0,
+\qquad
+E_{\rm received}=h\nu_{\rm received}\longrightarrow0.
+\end{equation}
+L’image de Bob ralentit, rougit et s’atténue. Le signal limite transporte une quantité d’information exploitable qui tend vers zéro.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.89\textwidth]{lecture_08_figure_17.png}
+\caption{État tardif du tableau comparant le décalage vers le rouge à l’horizon de de Sitter à la vue familière d’un horizon de trou noir depuis l’extérieur.}
+\lectureframe{01:36:20.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce comme pour un trou noir, où un observateur extérieur ne voit jamais un objet en chute franchir l’horizon ?\lecturetimestamp{01:36:09}}
+\lecturerresponse{Oui. Dans les deux cas, l’observateur reçoit des signaux de plus en plus décalés vers le rouge et ne voit jamais directement le franchissement s’achever. Le diagramme causal indique quelles émissions ultérieures ne peuvent jamais arriver ; le décalage vers le rouge explique comment les dernières informations observables s’évanouissent.}
+\end{classroomqa}
+
+Cette analogie amène à s’interroger sur la température.
+
+\begin{classroomqa}
+\audiencequestion{Comment Alice pourrait-elle mesurer la température juste au-dessus d’un horizon ?\lecturetimestamp{01:39:34}}
+\lecturerresponse{En pratique, elle pourrait descendre un thermomètre au bout d’un câble, l’empêcher de franchir l’horizon, puis le remonter. Un observateur de de Sitter pourrait imaginer une expérience analogue près de l’horizon cosmologique. Dans la théorie quantique, les horizons sont chauds, mais le présent cours s’en tient à la géométrie classique et remet ce calcul à plus tard.}
+\end{classroomqa}
+
+Aucune formule pour la température de de Sitter n’est déduite ici. Le rayonnement de Hawking n’est évoqué qu’en aperçu de la correction quantique à cette image classique.
+
+\section{Le rayon de l’horizon est fixe}
+
+On peut traduire le diagramme conforme dans la coordonnée temporelle initiale. Deux points comobiles séparés par une distance fixe en coordonnées vérifient
+\begin{equation}
+D(t)=e^{Ht}\lvert\Delta x\rvert,
+\end{equation}
+leur distance propre croît donc exponentiellement.
+
+\begin{classroomqa}
+\audiencequestion{À quoi ressemble ce même mouvement dans la coordonnée temporelle initiale, avant la transformation ?\lecturetimestamp{01:41:14}}
+\lecturerresponse{Pour des coordonnées comobiles fixes, toute la métrique spatiale croît comme \(e^{2Ht}\) ; les distances propres croissent donc comme \(e^{Ht}\). L’inversion de la transformation de coordonnées rend cette expansion explicite.}
+\end{classroomqa}
+
+La situation de l’horizon est différente, car sa distance en coordonnées comobiles à Alice n’est pas fixe. À partir de la ligne nulle à \(45^\circ\) qui aboutit en \(T=0\), la distance de l’horizon sur une tranche de temps constant \(T<0\) est
+\begin{equation}
+\Delta x_H=-T=\frac{1}{H}e^{-Ht}.
+\label{eq:l08-coordinate-horizon}
+\end{equation}
+En multipliant par le facteur d’échelle, on obtient
+\begin{equation}
+D_H(t)=a(t)\Delta x_H
+=e^{Ht}\frac{e^{-Ht}}{H}
+=\frac{1}{H}.
+\label{eq:l08-fixed-horizon}
+\end{equation}
+En rétablissant les unités, \(D_H=c/H\). L’écart en coordonnées diminue, l’échelle de la métrique augmente et leur produit reste constant.
+
+\begin{classroomqa}
+\audiencequestion{Au fil du temps, la distance entre Alice et l’horizon augmente-t-elle, diminue-t-elle ou reste-t-elle constante ?\lecturetimestamp{01:42:42}}
+\lecturerresponse{Elle reste constante. Sa distance en coordonnées diminue tandis que le facteur conforme augmente, de sorte que le rayon propre de l’horizon reste égal à \(H^{-1}\) dans des unités où \(c=1\).}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_18.png}
+\caption{État final du tableau : les tranches horizontales successives présentent une distance en coordonnées à l’horizon qui diminue, mais une distance propre constante.}
+\lectureframe{01:43:20.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Alice continue-t-elle à voir le passé se projeter sur l’horizon parce que les anciennes images ne disparaissent jamais tout à fait ?\lecturetimestamp{01:43:45}}
+\lecturerresponse{Dans la description classique, les images persistent seulement au sens limite où le décalage vers le rouge, qui devient sans borne, les rend de plus en plus difficiles à détecter. Cette affirmation ne tient pas compte du rayonnement de Hawking associé à l’horizon, qui modifiera la description quantique.}
+\end{classroomqa}
+
+Le cours s’achève donc sur une frontière précise. L’énergie du vide a produit une expansion exponentielle ; celle-ci a engendré un horizon des événements fixe, propre à chaque observateur ; et les signaux proches de cet horizon ont été décalés vers des fréquences qui tendent vers zéro. La température de l’horizon et le rayonnement de Hawking seront abordés par la suite. En supposant, comme le dit Susskind, que nous ne franchissions pas les horizons les uns des autres, nous nous retrouverons au prochain cours.

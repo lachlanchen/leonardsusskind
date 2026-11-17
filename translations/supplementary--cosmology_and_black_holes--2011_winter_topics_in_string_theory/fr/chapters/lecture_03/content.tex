@@ -1,0 +1,490 @@
+\chapter{L’horizon en coordonnées plates et la thermodynamique de l’évaporation}
+
+\lectureoverview{La métrique de Schwarzschild semble devenir singulière à l’horizon, alors qu’un observateur en chute libre ne devrait rien y remarquer d’exceptionnel. Nous résolvons cette tension en transformant la métrique près de l’horizon en espace-temps plat de Minkowski, exprimé en coordonnées polaires hyperboliques. Cette même géométrie distingue alors la description de la chute d’Alice de celle de Bob, accéléré à l’extérieur. La seconde moitié développe l’entropie et la température, déduit la température de Hawking, inversement proportionnelle à la masse, et la loi d’évaporation \(M^3\), puis s’achève sur la question de ce que la conservation de l’information exige de la théorie microscopique de la gravité.}
+
+\section{Le problème en \texorpdfstring{\(r=2GM\)}{r=2GM}}
+
+Commençons par un trou noir très massif. La courbure de son horizon peut être si faible qu’un observateur qui le traverse en chute libre voit, sur toute région de taille modeste, comparable à celle d’un laboratoire, un espace-temps presque plat et vide. Il ne heurte aucun mur, et aucune alarme locale ne signale le passage. Pourtant, la métrique de Schwarzschild semble indiquer qu’une singularité se produit précisément à ce rayon. La première moitié de ce cours vise à rendre ces deux énoncés compatibles.
+
+Nous adoptons la convention où la signature est principalement positive. En espace-temps plat,
+\begin{equation}
+ds^2=-dt^2+dx^2+dy^2+dz^2,
+\end{equation}
+une ligne d’univers de genre temps vérifie donc \(ds^2<0\) et le temps propre satisfait \(d\tau^2=-ds^2\). C’est l’inverse global de la convention utilisée dans le cours précédent ; aucun observable ne dépend de ce choix.
+
+Avec \(c=1\), l’élément de ligne de Schwarzschild s’écrit
+\begin{equation}
+\begin{aligned}
+ds^2={}&-\left(1-\frac{2GM}{r}\right)dt^2
++\frac{dr^2}{1-\frac{2GM}{r}}
++r^2d\Omega_2^2,\\
+d\Omega_2^2={}&d\theta^2+\sin^2\theta\,d\phi^2 .
+\end{aligned}
+\label{eq:l03-schwarzschild}
+\end{equation}
+Le rayon de Schwarzschild vaut \(R_s=2GM\), ou \(R_s=2GM/c^2\) lorsque \(c\) est réintroduit. Loin du trou noir, \(r\gg R_s\), les deux coefficients radiaux tendent vers leurs valeurs en espace plat. À \(r=R_s\), en revanche, le coefficient de \(dt^2\) s’annule et celui de \(dr^2\) diverge. Cela semble spectaculaire. La question est de savoir si c’est la géométrie qui l’est, ou seulement les coordonnées.
+
+\section{Deux leçons sur les coordonnées}
+
+\subsection{L’origine sans singularité des coordonnées polaires}
+
+Sur un plan euclidien ordinaire,
+\begin{equation}
+ds^2=dx^2+dy^2.
+\end{equation}
+Introduisons les coordonnées polaires
+\begin{equation}
+x=\rho\cos\theta,
+\qquad
+y=\rho\sin\theta .
+\end{equation}
+Un petit déplacement a une longueur radiale \(d\rho\) et une longueur transverse \(\rho\,d\theta\), d’où
+\begin{equation}
+ds^2=d\rho^2+\rho^2d\theta^2.
+\label{eq:l03-polar}
+\end{equation}
+En \(\rho=0\), le coefficient angulaire s’annule. Cela ne rend pas le centre du plan singulier. Cela signifie simplement que toutes les valeurs de \(\theta\) désignent le même point. Un coefficient métrique inhabituel peut donc signaler un système de coordonnées inhabituel plutôt qu’une physique inhabituelle.
+
+\subsection{Coordonnées polaires hyperboliques}
+
+Remplaçons maintenant le plan euclidien par un espace-temps de Minkowski à \(1+1\) dimensions,
+\begin{equation}
+ds^2=-dT^2+dX^2.
+\end{equation}
+Dans le coin droit \(X>|T|\), définissons
+\begin{equation}
+X=\rho\cosh\omega,
+\qquad
+T=\rho\sinh\omega,
+\qquad \rho>0 .
+\label{eq:l03-rindler-transform}
+\end{equation}
+L’identité usuelle \(\cos^2\theta+\sin^2\theta=1\) est remplacée par
+\begin{equation}
+\cosh^2\omega-\sinh^2\omega=1.
+\end{equation}
+Ainsi, une ligne où \(\rho\) est constante est l’hyperbole
+\begin{equation}
+X^2-T^2=\rho^2.
+\end{equation}
+Contrairement à l’angle périodique \(\theta\), la coordonnée apparentée à la rapidité \(\omega\) varie de \(-\infty\) à \(+\infty\). Pour de grandes valeurs positives de \(\omega\), \(\cosh\omega\) et \(\sinh\omega\) deviennent presque égales, et l’hyperbole s’approche du rayon nul futur \(X=T\).
+
+En dérivant l’équation~\eqref{eq:l03-rindler-transform}, on obtient
+\begin{align}
+dX&=\cosh\omega\,d\rho+\rho\sinh\omega\,d\omega,\\
+dT&=\sinh\omega\,d\rho+\rho\cosh\omega\,d\omega .
+\end{align}
+Les termes croisés s’annulent, ce qui laisse
+\begin{equation}
+ds^2=-\rho^2d\omega^2+d\rho^2.
+\label{eq:l03-rindler-metric}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_02.png}
+\caption{Le tableau achevé des coordonnées hyperboliques : \(X=\rho\cosh\omega\), \(T=\rho\sinh\omega\), la construction de l’hyperbole unité et la métrique plate sous la forme \(ds^2=-\rho^2d\omega^2+d\rho^2\).}
+\lectureframe{00:16:55.000}
+\end{figure}
+
+L’équation~\eqref{eq:l03-rindler-metric} décrit toujours un espace-temps parfaitement plat. Son coefficient temporel s’annule en \(\rho=0\), tout comme le coefficient angulaire de l’équation~\eqref{eq:l03-polar} s’annule à l’origine. La carte de coordonnées y dégénère ; l’espace-temps, lui, ne dégénère pas.
+
+\section{Zoom sur l’horizon de Schwarzschild}
+
+Revenons à la partie radiale et temporelle de l’équation~\eqref{eq:l03-schwarzschild} :
+\begin{align}
+ds^2
+&=-\frac{r-2GM}{r}\,dt^2
++\frac{r}{r-2GM}\,dr^2 .
+\label{eq:l03-rewritten-schwarzschild}
+\end{align}
+Examinons maintenant un voisinage étroit de \(r=2GM\). Dans les facteurs qui varient lentement, on peut remplacer \(r\) par \(2GM\). Il faut conserver le facteur \(r-2GM\), car il s’annule et change de signe à l’horizon. On a donc
+\begin{equation}
+ds^2\approx
+-\frac{r-2GM}{2GM}\,dt^2
++\frac{2GM}{r-2GM}\,dr^2 .
+\label{eq:l03-near-horizon-r}
+\end{equation}
+
+Choisissons une nouvelle coordonnée radiale \(\rho\) de sorte que le second terme soit simplement \(d\rho^2\) :
+\begin{equation}
+d\rho^2=\frac{2GM}{r-2GM}\,dr^2.
+\end{equation}
+À l’extérieur de l’horizon, prenons la racine carrée positive et intégrons à partir de \(r=2GM\) :
+\begin{align}
+d\rho&=\sqrt{\frac{2GM}{r-2GM}}\,dr,\\
+\rho&=2\sqrt{2GM}\sqrt{r-2GM},\\
+\rho^2&=8GM(r-2GM),
+\qquad
+r-2GM=\frac{\rho^2}{8GM}.
+\label{eq:l03-rho-r}
+\end{align}
+En substituant dans l’équation~\eqref{eq:l03-near-horizon-r}, on obtient
+\begin{equation}
+ds^2\approx
+-\frac{\rho^2}{16G^2M^2}\,dt^2+d\rho^2.
+\end{equation}
+Enfin, redéfinissons l’échelle du temps de Schwarzschild,
+\begin{equation}
+\omega=\frac{t}{4GM},
+\qquad
+d\omega^2=\frac{dt^2}{16G^2M^2},
+\label{eq:l03-omega}
+\end{equation}
+et obtenons
+\begin{equation}
+\boxed{ds^2\approx-\rho^2d\omega^2+d\rho^2.}
+\label{eq:l03-near-horizon-rindler}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_03_figure_03.png}
+\caption{Le tableau après le changement d’échelle du temps : la métrique de Schwarzschild près de l’horizon est devenue la même métrique polaire hyperbolique que celle de l’espace-temps plat de Minkowski.}
+\lectureframe{00:31:35.000}
+\end{figure}
+
+L’approximation s’améliore sans limite à mesure que le voisinage étudié se rétrécit autour de l’horizon. Elle démontre le résultat local recherché : pour un trou noir suffisamment massif, l’horizon est un espace-temps ordinaire décrit dans un système de coordonnées extraordinaire. La courbure n’est pas littéralement nulle pour un trou noir de Schwarzschild de masse finie, mais elle reste finie à l’horizon et peut y devenir arbitrairement faible en augmentant \(M\).\editorialnote{L’échelle locale de courbure est de l’ordre de \(R_s^{-2}\). La métrique de Rindler est le terme dominant d’un développement local près de l’horizon ; cela ne signifie pas que toute la géométrie de Schwarzschild soit globalement plate.}
+
+\begin{classroomqa}
+\audiencequestion{Pour \(r<2GM\), l’équation~\eqref{eq:l03-rho-r} rend cet extérieur \(\rho\) imaginaire. Est-ce le signe d’un problème physique ?\lecturetimestamp{00:32:30}}
+\lecturerresponse{Elle reproduit sous une autre forme la même défaillance des coordonnées. La carte considérée a été construite pour la région extérieure ; pour prolonger la description au-delà de l’horizon, il faut une autre carte. La défaillance de cette coordonnée particulière \(\rho\) ne correspond pas à un événement physique à l’horizon.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Dans la réécriture près de l’horizon, comment obtient-on la ligne approchée à partir de la ligne exacte précédente ?\lecturetimestamp{00:39:21}}
+\lecturerresponse{Seules les occurrences de \(r\) qui varient lentement ont été remplacées par \(2GM\). La petite différence \(r-2GM\) est conservée. C’est là l’approximation, qui devient de plus en plus précise à mesure que \(r\) s’approche de \(2GM\).}
+\end{classroomqa}
+
+\section{Signification des coordonnées}
+
+La transformation établit l’identification
+\begin{equation}
+\rho=0\quad\Longleftrightarrow\quad r=2GM.
+\end{equation}
+L’extérieur \(r>2GM\) est le coin de Rindler droit \(X>|T|\). Les hyperboles à \(\rho\) constant représentent des observateurs qui restent à rayon de Schwarzschild constant. Un rayon lumineux sortant émis n’importe où dans ce coin croise toutes les lignes d’univers de valeur plus grande de \(\rho\) ; un observateur extérieur peut donc communiquer vers l’extérieur. Un point situé au-delà de la frontière nulle future ne peut envoyer de signal lumineux dans le coin droit. Cette frontière nulle est l’horizon.
+
+\begin{classroomqa}
+\audiencequestion{La région extérieure à l’horizon est-elle toujours décrite par la carte de coordonnées hyperboliques présentée ici ?\lecturetimestamp{00:35:22}}
+\lecturerresponse{Oui. Dans cette construction, \(r>2GM\) implique \(\rho^2>0\) et place l’événement dans le coin extérieur droit. La frontière nulle \(\rho=0\) est l’horizon ; les coordonnées utilisées ici ne se prolongent pas au-delà sous la forme de coordonnées extérieures réelles.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Une hyperbole à \(\rho\) constant représente-t-elle un temps ou une distance ?\lecturetimestamp{00:37:21}}
+\lecturerresponse{Elle représente une distance propre fixe à l’horizon dans l’approximation près de celui-ci, et donc un rayon de Schwarzschild fixe. Le mouvement le long de l’hyperbole correspond au temps qui passe pour l’observateur qui s’y trouve.}
+\end{classroomqa}
+
+Le long d’une trajectoire à \(\rho\) fixe, l’équation~\eqref{eq:l03-rindler-metric} donne
+\begin{equation}
+d\tau=\rho\,d\omega.
+\label{eq:l03-proper-time-rindler}
+\end{equation}
+Ainsi, \(\omega\) n’est pas à proprement parler le temps propre de l’observateur. C’est un temps angulaire commun à la famille d’hyperboles ; chaque observateur le multiplie par son propre \(\rho\), tout comme un angle ordinaire est multiplié par le rayon du cercle pour donner la longueur d’arc.
+
+\begin{classroomqa}
+\audiencequestion{\(\omega\) est-il le temps propre de l’observateur accéléré ?\lecturetimestamp{00:51:45}}
+\lecturerresponse{Presque. À \(\rho\) fixe, l’intervalle de temps propre est \(\rho\,d\omega\). Le facteur \(\rho\) est essentiel.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_04.png}
+\caption{Le diagramme causal près de l’horizon : les frontières nulles qui se croisent, les hyperboles à rayon constant dans le coin extérieur et la relation entre les coordonnées \(\rho\) et \(r-2GM\).}
+\lectureframe{00:34:35.000}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.04,>=Latex]
+  \draw[->] (-0.3,0) -- (4.6,0) node[right] {\(X\)};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {\(T\)};
+  \draw[very thick,blue!55!black] (0,0) -- (3,3);
+  \draw[very thick,blue!55!black] (0,0) -- (3,-3);
+  \node[blue!55!black,rotate=45] at (0.72,1.02) {future horizon};
+  \draw[thick,domain=-1.45:1.45,samples=80] plot ({0.75*cosh(\x)},{0.75*sinh(\x)});
+  \draw[thick,domain=-1.25:1.25,samples=80] plot ({1.25*cosh(\x)},{1.25*sinh(\x)});
+  \draw[very thick,domain=-1.05:1.05,samples=80] plot ({2.0*cosh(\x)},{2.0*sinh(\x)});
+  \node at (3.64,2.18) {Bob: \(\rho=\mathrm{const.}\)};
+  \draw[very thick,red!65!black,->] (1.2,-2.9) -- (1.2,2.9);
+  \node[red!65!black] at (1.58,-1.75) {Alice};
+  \fill[red!65!black] (1.2,1.2) circle (1.7pt);
+  \draw[dashed,->] (1.2,0) -- (2.27,1.07);
+  \node[align=left] at (3.18,0.80) {\small pre-crossing\\[-0.2em]\small light signal};
+\end{tikzpicture}
+\caption{Un schéma complémentaire composé. Bob suit une hyperbole accélérée à \(\rho\) constant ; Alice suit une ligne localement inertielle qui traverse l’horizon futur. La frontière nulle limite l’accès causal de Bob sans constituer un obstacle local pour Alice.}
+\end{figure}
+
+\section{Alice tombe, Bob reste en suspension}
+
+Supposons que Bob maintienne une distance fixe à l’horizon tandis qu’Alice lâche sa main et tombe. La ligne d’univers de Bob est une hyperbole, et il est donc accéléré. La ligne d’univers locale d’Alice est approximativement droite. Elle traverse la frontière nulle en un temps propre fini, sans rencontrer de discontinuité locale.
+
+Les descriptions causales sont asymétriques. Après le franchissement d’Alice, sa lumière ne peut plus atteindre Bob, tandis que la lumière émise par Bob peut encore lui parvenir pendant un certain temps. Bob reçoit les signaux qu’Alice a émis à des étapes de plus en plus précoces de sa chute, qui dure un temps fini. Les intervalles entre leurs arrivées s’allongent sans cesse, leur fréquence subit un décalage vers le rouge et leur intensité diminue. En temps de Schwarzschild, Bob ne voit jamais le franchissement lui-même ; Alice semble s’approcher de l’horizon et s’y aplatir de manière asymptotique. Son nez ne s’aplatit pas tandis que l’arrière de sa tête resterait intact : les signaux provenant de toutes les parties de son corps se trouvent comprimés dans la même couche limite.
+
+\begin{classroomqa}
+\audiencequestion{Alice peut-elle voir Bob après avoir franchi l’horizon parce que les photons de Bob se dirigent vers l’intérieur, vers elle ?\lecturetimestamp{00:42:48}}
+\lecturerresponse{Oui. C’est là le sens de la relation causale à sens unique : les signaux de Bob dirigés vers l’intérieur peuvent parvenir à Alice, alors que ses signaux ultérieurs dirigés vers l’extérieur ne peuvent s’échapper jusqu’à Bob.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si les pieds d’Alice franchissent l’horizon en premier alors que ses yeux sont encore à l’extérieur, perd-elle temporairement de vue ses propres pieds ?\lecturetimestamp{00:43:03}}
+\lecturerresponse{Une chute ordinaire ne produit aucun phénomène visuel soudain. La lumière met toujours un certain temps à voyager des pieds jusqu’aux yeux ; lorsque le signal en question arrive, ses yeux ont eux aussi franchi l’horizon. Seule une tentative violente de maintenir sa tête à l’extérieur tandis que ses pieds continueraient vers l’intérieur créerait une situation différente et destructrice.}
+\end{classroomqa}
+
+Rester en position est le choix non inertiel. Bob a besoin d’une fusée, tout comme une personne debout sur le sol a besoin de la force exercée vers le haut par le sol pour ne pas être en chute libre. Plus Bob reste proche de l’horizon, plus l’accélération propre nécessaire est grande ; dans l’approximation locale de Rindler, sa norme vaut \(a=1/\rho\) en unités où \(c=1\).\editorialnote{En rétablissant les unités, on obtient \(a=c^2/\rho\) pour l’observateur local de Rindler. L’accélération propre d’un observateur exactement statique de Schwarzschild diverge à mesure qu’il s’approche de l’horizon.}
+
+\begin{classroomqa}
+\audiencequestion{Sommes-nous en train d’accélérer en restant debout dans cette salle de cours ?\lecturetimestamp{00:45:40}}
+\lecturerresponse{Oui, par rapport à un référentiel en chute libre. Le sol nous soutient ; sans lui, ou sans réacteur dorsal, nous tomberions.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bob finira-t-il par voir Alice à moins d’une longueur de Planck de l’horizon, et que se passe-t-il ensuite ?\lecturetimestamp{00:49:24}}
+\lecturerresponse{C’est là que la description géométrique classique cesse de suffire. La longueur de Planck fait intervenir \(\hbar\) ; il faut donc la mécanique quantique pour répondre à la question de ce que Bob peut y résoudre.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Les courbes à rayon constant semblent rejoindre l’horizon en formant un angle droit dans les coordonnées. Peut-on y calculer une dérivée ?\lecturetimestamp{00:51:12}}
+\lecturerresponse{La carte de coordonnées présente une singularité en ce point, mais la physique locale n’en présente pas. Une carte couvrant les autres coins élimine cet angle artificiel. Pour la discussion actuelle, limitée à l’extérieur, l’image de Rindler contient déjà les faits causaux nécessaires.}
+\end{classroomqa}
+
+Il est donc peu utile de demander, sans préciser de quel observateur il s’agit, si Alice franchit \emph{réellement} l’horizon. L’horloge d’Alice atteint l’horizon en un temps propre fini. La suite de signaux reçus par Bob ne contient jamais l’événement du franchissement. La physique demande ce que mesure chaque observateur et comment comparer leurs relevés.
+
+\begin{classroomqa}
+\audiencequestion{Peut-on dire précisément que Bob ne voit qu’une portion finie du futur d’Alice, bien que son propre temps d’observation soit illimité ?\lecturetimestamp{00:53:33}}
+\lecturerresponse{Oui. Alice attribue un temps propre fini à la portion visible de sa chute. Dans la géométrie éternelle idéalisée, Bob reçoit pour toujours les signaux, de plus en plus retardés et décalés vers le rouge, mais il ne la voit pas continuer à vieillir après le franchissement de l’horizon.}
+\end{classroomqa}
+
+\section{Les horizons dus à l’accélération suffisent déjà}
+
+Cette structure causale n’exige pas de trou noir. Une fusée dont l’accélération reste uniforme pour toujours suit une hyperbole de Rindler en espace-temps plat, et possède une frontière nulle qu’aucun signal ne peut franchir pour la rattraper. Cet observateur a donc un horizon d’accélération, même si un observateur inertiel considère la même région comme un espace-temps de Minkowski ordinaire.
+
+\begin{classroomqa}
+\audiencequestion{Ce phénomène est-il propre aux trous noirs, ou se produit-il avec tout horizon ?\lecturetimestamp{00:55:25}}
+\lecturerresponse{Le même phénomène se produit pour un observateur uniformément accéléré. Il possède un horizon d’accélération et ne peut voir les événements qui se trouvent au-delà. Localement, l’horizon d’un trou noir ne diffère pas physiquement de ce cas.}
+\end{classroomqa}
+
+C’est le principe d’équivalence à l’œuvre : comprendre d’abord l’accélération uniforme, puis reconnaître la même structure locale dans un champ gravitationnel. Rétrospectivement, on aurait pu prévoir l’existence d’horizons gravitationnels à partir des horizons d’accélération, avant même que l’existence physique des trous noirs soit admise. Einstein lui-même n’acceptait pas la formation physique de trous noirs, alors qu’il avait fourni la théorie qui conduit à leur géométrie. Pour l’observateur en chute libre, l’horizon est sans particularité ; il a des conséquences pour celui qui tient à rester à l’extérieur. Il s’agit d’une tension entre des descriptions valides, pas encore d’un paradoxe.
+
+\section{Retour à la chaleur et à l’entropie}
+
+Après la pause, adoptons le point de vue de la thermodynamique. Dans la construction précédente, le trou noir était rempli comme une baignoire, goutte à goutte, sauf que chaque goutte était un photon transportant environ un bit. Chaque bit augmentait l’aire de l’horizon d’une quantité de l’ordre de l’aire de Planck. L’entropie exacte est
+\begin{equation}
+S_{\mathrm{BH}}=\frac{k_B A}{4\ell_P^2}.
+\end{equation}
+Le cours plaisante en disant qu’on aurait pu éviter le facteur \(1/4\) si Planck avait défini sa longueur autrement. Le point sérieux est que l’analyse dimensionnelle fixe l’échelle, mais pas le coefficient numérique ; le calcul de Hawking fixe ce coefficient.\editorialnote{La longueur de Planck a une définition standard \(\ell_P=\sqrt{G\hbar/c^3}\). Une fois cette convention et l’entropie thermodynamique usuelle fixées, le facteur \(1/4\) est physique ; la remarque sur une redéfinition est une plaisanterie de cours sur les conventions.}
+
+La température semble élémentaire parce que les doigts et les thermomètres la mesurent directement. L’entropie paraît souvent plus mystérieuse. Le cours inverse cette hiérarchie : l’entropie et l’énergie sont considérées comme les variables fondamentales, tandis que la température se déduit de la variation d’énergie nécessaire pour faire varier l’entropie :
+\begin{equation}
+dE=T\,dS.
+\end{equation}
+Dans les unités du cours où un bit vaut une unité d’entropie, \(\Delta S=1\), l’énergie minimale associée à l’ajout ou à l’effacement d’un bit est appelée \(T\). Un effacement effectué sans précaution---avec l’équivalent logique d’un coup de masse---peut dissiper une quantité d’énergie arbitrairement plus grande. La définition porte sur la dissipation minimale possible lorsque l’information manquante est transférée aux degrés de liberté microscopiques de l’environnement. En unités conventionnelles, un bit binaire porte \(\Delta S=k_B\ln2\), et l’effacement réversible dissipe au moins \(k_BT\ln2\).\editorialnote{Il s’agit de la normalisation de Landauer, omise par le choix du cours de mesurer à la fois l’entropie et la température dans des unités naturelles fondées sur l’énergie.}
+
+\subsection{Estimation à un photon}
+
+Choisissons un photon dont la longueur d’onde est comparable au rayon de Schwarzschild :
+\begin{equation}
+\lambda\sim R_s=\frac{2GM}{c^2}.
+\end{equation}
+Son énergie vaut, à un facteur près correspondant à la convention \(2\pi\) qui distingue \(h\) de \(\hbar\),
+\begin{equation}
+\Delta E\sim \frac{\hbar c}{\lambda}.
+\end{equation}
+C’est le coût énergétique du bit ajouté, donc
+\begin{equation}
+k_BT_H\sim\frac{\hbar c}{R_s}
+\sim\frac{\hbar c^3}{GM}.
+\label{eq:l03-hawking-scale}
+\end{equation}
+Cet argument heuristique ne permet pas de déterminer des facteurs tels que \(2\) et \(\pi\). Le résultat exact de Hawking est
+\begin{equation}
+\boxed{k_BT_H=\frac{\hbar c^3}{8\pi GM}.}
+\label{eq:l03-hawking-exact}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_05.png}
+\caption{Le tableau achevé de la température : \(R_s=2GM/c^2\), l’échelle d’un bit \(\hbar c/R_s\) et le facteur exact de normalisation de Hawking \(8\pi\).}
+\lectureframe{01:07:48.000}
+\end{figure}
+
+Deux faits sont immédiats. Premièrement, la température s’annule avec \(\hbar\) : c’est donc un effet quantique. Deuxièmement,
+\begin{equation}
+T_H\propto\frac{1}{M}.
+\end{equation}
+Un trou noir massif est froid. Pour une masse solaire,
+\begin{equation}
+T_H\approx6\times10^{-8}\ {\rm K},
+\end{equation}
+ce qui est du même ordre que l’estimation \(10^{-8}\,\mathrm{K}\) donnée dans le cours et très inférieur à la température du fond diffus cosmologique, d’environ \(2.7\,\mathrm{K}\).
+
+\subsection{Capacité thermique négative}
+
+Plaçons un tel trou noir dans un environnement plus chaud. Il absorbe de l’énergie, sa masse augmente et l’équation~\eqref{eq:l03-hawking-exact} indique qu’il se refroidit. Il absorbe alors encore plus facilement. Plaçons-le dans un environnement plus froid et le processus divergent inverse s’enclenche : il rayonne, perd de la masse, se réchauffe et rayonne plus vite. Formellement,
+\begin{equation}
+C_{\mathrm{BH}}
+=\frac{dE}{dT_H}
+=c^2\frac{dM}{dT_H}
+<0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce cela qu’on entend par capacité thermique négative ?\lecturetimestamp{01:14:08}}
+\lecturerresponse{Exactement. Un système autogravitant peut s’échauffer tout en perdant de l’énergie. Une étoile présente un phénomène analogue : en rayonnant, elle perd de la pression, se contracte et sa compression gravitationnelle élève sa température.}
+\end{classroomqa}
+
+Un trou noir isolé n’est pas pour autant non physique. Dans l’Univers actuel, un trou noir stellaire est plus froid que son environnement et absorbe principalement de l’énergie. À mesure que l’Univers se dilate et que le fond se refroidit, l’équilibre peut finir par s’inverser et l’évaporation devenir dominante. L’équilibre simple avec un bain thermique effectivement infini est instable.\editorialnote{Les conditions aux limites comptent. Un trou noir peut être stabilisé dans une cavité réfléchissante de taille finie ou, pour les trous noirs suffisamment grands, dans un espace-temps anti-de Sitter ; l’instabilité décrite ici concerne le cas d’un bain ordinaire en espace asymptotiquement plat.}
+
+\section{La loi d’évaporation}
+
+Pour dériver la loi d’échelle, imaginons que nous n’ayons pas de manuel sous la main et choisissons les unités dans lesquelles les équations dont nous nous souvenons sont les plus simples :
+\begin{equation}
+c=\hbar=G=k_B=1.
+\end{equation}
+Ce sont les unités de Planck. Les échelles caractéristiques données dans le cours sont
+\begin{equation}
+\ell_P\sim10^{-35}\ {\rm m},
+\qquad
+t_P\sim10^{-43}\ {\rm s},
+\qquad
+m_P\sim10^{-8}\ {\rm kg}.
+\end{equation}
+La masse de Planck est à peu près celle d’une poussière visible, tandis que la longueur et le temps de Planck sont extraordinairement petits. Puisque \(c=1\), \(t_P\) est simplement le temps que la lumière met à parcourir \(\ell_P\).
+
+Considérons le trou noir comme un corps noir, c’est-à-dire comme un émetteur thermique plutôt que comme un objet qui doit rester parfaitement noir. Il peut émettre un rayonnement électromagnétique et, en principe, d’autres espèces disponibles, notamment des gravitons. La puissance rayonnée est proportionnelle à la surface émettrice, puisque le rayonnement s’échappe par la surface. La loi d’échelle de Stefan--Boltzmann est
+\begin{equation}
+L=-\frac{dE}{dt}\sim A T^4.
+\end{equation}
+En unités de Planck, \(E=M\), \(R_s\sim M\), \(A\sim R_s^2\sim M^2\) et \(T\sim R_s^{-1}\sim M^{-1}\). Par conséquent,
+\begin{align}
+-\frac{dM}{dt}
+&\sim R_s^2\left(\frac{1}{R_s}\right)^4
+\sim\frac{1}{R_s^2}
+\sim\frac{1}{M^2},\\
+-M^2\frac{dM}{dt}&\sim1,\\
+-\frac{d(M^3)}{dt}&\sim1.
+\label{eq:l03-evap-scaling}
+\end{align}
+En négligeant les coefficients de l’ordre de l’unité, la durée de vie est
+\begin{equation}
+\boxed{t_{\mathrm{evap}}\sim M^3.}
+\label{eq:l03-lifetime}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_06.png}
+\caption{Le tableau d’évaporation sans obstacle : la luminosité donne \(-dM/dt\sim1/M^2\), d’où une diminution uniforme de \(M^3\) et une durée de vie proportionnelle au cube de la masse initiale.}
+\lectureframe{01:23:20.000}
+\end{figure}
+
+Le traitement schématique de Stefan--Boltzmann néglige les facteurs d’émissivité et le nombre d’espèces de particules. Pour un trou noir neutre et non rotatif, dans l’approximation la plus simple d’émission de particules sans masse, le rétablissement des constantes donne
+\begin{equation}
+t_{\mathrm{evap}}
+=\frac{5120\pi G^2M_0^3}{\hbar c^4}.
+\label{eq:l03-exact-lifetime}
+\end{equation}
+Ce coefficient complète la présentation à des fins éditoriales ; le cours ne déduit que la dépendance robuste en \(M_0^3\).
+
+\subsection{Échelles solaire, montagnarde et kilogrammique}
+
+La masse du Soleil vaut \(M_\odot\sim10^{30}\,\mathrm{kg}\sim10^{38}m_P\). En élevant au cube et en multipliant par un temps de Planck, on obtient la chaîne d’estimations volontairement approximatives du cours :
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{114}t_P
+\sim10^{71}\ {\rm s}
+\sim10^{64}\ {\rm yr}.
+\end{equation}
+Dans les deux cas, la durée dépasse de très loin les quelque \(10^{10}\) années d’existence de l’Univers. Le rétablissement du coefficient dans l’équation~\eqref{eq:l03-exact-lifetime} porte l’estimation usuelle pour une masse solaire à environ \(2\times10^{67}\) années.\editorialnote{La différence est attendue : le calcul au tableau omet toutes les constantes numériques et arrondit les échelles de Planck aux puissances de dix. Il vise à illustrer la dépendance en masse au cube, et non à calculer précisément des durées de vie astronomiques.}
+
+La classe considère ensuite un trou noir de \emph{masse montagnarde}. Elle retient la valeur approximative \(M\sim10^{10}\,\mathrm{kg}\) utilisée au tableau, soit \(M\sim10^{18}m_P\), et obtient
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{54}t_P
+\sim10^{11}\ {\rm s}
+\sim10^4\ {\rm yr}.
+\end{equation}
+Cela reprend le calcul effectivement effectué au tableau. La géométrie évoquée oralement pour motiver cette masse---environ \(100\,\mathrm{km}^3\) de roche---correspondrait en réalité à une masse beaucoup plus élevée, et le coefficient exact de durée de vie modifierait aussi considérablement le résultat.\editorialnote{À la densité ordinaire de la roche, \(100\,\mathrm{km}^3\) est de l’ordre de \(10^{14}\,\mathrm{kg}\), et non de \(10^{10}\,\mathrm{kg}\). Pour \(10^{10}\,\mathrm{kg}\), l’équation~\eqref{eq:l03-exact-lifetime} donne une durée de vie de l’ordre de \(10^6\) années. Ces corrections ne changent pas la leçon du cours : la durée de vie décroît comme le cube de la masse.}
+
+\begin{classroomqa}
+\audiencequestion{Un trou noir d’une masse d’un kilogramme serait-il extrêmement petit ?\lecturetimestamp{01:29:14}}
+\lecturerresponse{Oui. Le rayon étant proportionnel à la masse et une masse solaire correspondant à quelques kilomètres, le rayon de Schwarzschild d’un trou noir d’un kilogramme est d’environ \(10^{-27}\,\mathrm{m}\). Un tel trou noir serait également extrêmement chaud et aurait une durée de vie très courte.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ces estimations de l’évaporation supposent-elles une température ambiante nulle ?\lecturetimestamp{01:29:53}}
+\lecturerresponse{Elles s’appliquent lorsque l’environnement est plus froid que le trou noir, de sorte que l’énergie nette s’écoule vers l’extérieur. Un environnement plus chaud alimente au contraire le trou noir. La masse pour laquelle la température de Hawking égale celle du fond actuel est laissée en exercice.}
+\end{classroomqa}
+
+Pour se repérer, en posant \(T_H=2.7\,\mathrm{K}\), on trouve \(M\) de l’ordre de \(10^{22}\,\mathrm{kg}\) et un rayon de Schwarzschild de l’ordre de \(10^{-4}\,\mathrm{m}\).\editorialnote{Ce calcul répond à l’exercice proposé dans le cours ; il ne fait pas partie de la démonstration orale.}
+
+\section{Que doit contenir la métrique ?}
+
+\begin{classroomqa}
+\audiencequestion{Quel mécanisme fait sortir les photons du trou noir ?\lecturetimestamp{01:30:53}}
+\lecturerresponse{Avant de proposer un mécanisme microscopique pour le rayonnement, il faut identifier les degrés de liberté responsables de l’entropie. L’argument thermodynamique contraint ce qui doit exister sans encore exposer explicitement ces variables.}
+\end{classroomqa}
+
+L’analogie est celle de la mécanique des fluides. L’hydrodynamique décrit des champs lisses de densité et de vitesse sans suivre chaque molécule. Pourtant, l’entropie révèle qu’un grand nombre de configurations microscopiques cachées sous-tendent un même état lisse. De même, la relativité générale classique décrit une métrique lisse, mais ne révèle pas les nombreux degrés de liberté microscopiques comptabilisés par l’entropie des trous noirs. La loi de l’aire et le rayonnement de Hawking indiquent que la théorie d’Einstein est une description macroscopique effective.
+
+\begin{classroomqa}
+\audiencequestion{Si le trou noir rayonne de l’énergie, cela signifie-t-il aussi qu’il rayonne de l’information, de sorte que l’information engloutie pendant sa croissance revient au cours de son évaporation ?\lecturetimestamp{01:33:27}}
+\lecturerresponse{C’est bien l’exigence : si l’évolution complète conserve l’information, le rayonnement sortant doit finir par permettre de distinguer les différents états qui ont formé le trou noir. Il reste à concilier cela avec le tableau causal dans lequel la matière franchit l’horizon.}
+\end{classroomqa}
+
+Le flux d’énergie, à lui seul, ne suffit pas à spécifier l’information. Une matrice de densité parfaitement thermique peut transporter de l’énergie tout en oubliant les détails de l’état initial. Dans une description unitaire, l’information requise est encodée dans les corrélations fines entre les quanta émis.\editorialnote{Cette distinction explicite la formulation moderne du problème de l’information. Elle précise la question soulevée dans le cours sans la modifier.}
+
+\section{La conservation de l’information comme principe structurel}
+
+\begin{classroomqa}
+\audiencequestion{La conservation de l’information est-elle véritablement un principe fondamental ?\lecturetimestamp{01:34:13}}
+\lecturerresponse{C’est l’un des principes les plus fondamentaux. Si des états initiaux distincts pouvaient évoluer vers exactement le même état final, les lois effaceraient leur propre passé. Les lois usuelles de conservation reposent non seulement sur des symétries, mais aussi sur une évolution réversible, de forme hamiltonienne ou unitaire.}
+\end{classroomqa}
+
+Imaginons, comme dans le cours, une loi fondamentale fictive qui ferait simplement s’arrêter toute gomme qu’on fait glisser. Des vitesses initiales différentes aboutissent toutes au même état. L’état final de la gomme ne permet plus de distinguer les histoires qui y ont conduit : l’information a été détruite. La quantité de mouvement et l’énergie mécanique disparaissent également. Le frottement réel ne produit pas cet effet à l’échelle microscopique : la quantité de mouvement et l’énergie sont transférées à la table, à l’air et aux degrés de liberté thermiques.
+
+Même une table infinie parfaitement uniforme posséderait une symétrie de translation, et pourtant la loi fictive d’amortissement pourrait toujours arrêter la gomme. La seule symétrie de translation ne suffit donc pas à déduire la conservation de la quantité de mouvement à partir d’une telle règle non hamiltonienne. Le théorème de Noether suppose un principe d’action et la dynamique réversible qui lui est associée. Dans le langage employé ici, la symétrie associée à une dynamique qui préserve l’information donne la loi de conservation.
+
+\begin{classroomqa}
+\audiencequestion{La conservation de l’information est-elle plus fondamentale que la causalité ?\lecturetimestamp{01:37:00}}
+\lecturerresponse{Ce sont deux principes distincts, d’un niveau fondationnel comparable. Il faut d’abord énoncer précisément la causalité---par exemple, en affirmant que les signaux ne peuvent pas se propager vers l’arrière en dehors de la structure causale autorisée---mais aucun des deux principes ne peut simplement se substituer à l’autre.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La préservation du volume dans l’espace des phases, évoquée en mécanique hamiltonienne, est-elle la version classique de cette idée ?\lecturetimestamp{01:37:38}}
+\lecturerresponse{Oui. Le théorème de Liouville affirme que le flot hamiltonien préserve le volume dans l’espace des phases. Un ensemble d’états initiaux possibles ne peut pas se contracter en un volume plus petit en effaçant les distinctions entre ces états. En mécanique quantique, l’énoncé correspondant est l’unitarité : les produits scalaires, et donc les distinctions entre états orthogonaux, sont préservés.}
+\end{classroomqa}
+
+Classiquement,
+\begin{equation}
+\frac{d}{dt}\,\mathrm{Vol}_{\Gamma}=0,
+\end{equation}
+pour une région de l’espace des phases transportée par le flot hamiltonien. En mécanique quantique,
+\begin{equation}
+\begin{aligned}
+\ket{\psi(t)}&=U(t)\ket{\psi(0)},\\
+U^\dagger U&=I,\\
+\braket{\psi(t)}{\phi(t)}
+&=\braket{\psi(0)}{\phi(0)}.
+\end{aligned}
+\end{equation}Voici des formulations précises de l’affirmation selon laquelle les distinctions microscopiques subsistent au cours de l’évolution temporelle.
+
+\section{De quoi dépend l’entropie ?}
+
+À partir des probabilités \(p_i\) des possibilités microscopiques,
+\begin{equation}
+S=-k_B\sum_i p_i\ln p_i
+\label{eq:l03-shannon}
+\end{equation}on obtient l’entropie en unités thermodynamiques ; sans \(k_B\), l’entropie de Shannon sans dimension.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_07.png}
+\caption{La formule finale au tableau \(S=-\sum_i p_i\log p_i\), écrite en distinguant une distribution de probabilité de l’unique valeur d’entropie qu’on en calcule.}
+\lectureframe{01:40:32.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Maximiser l’entropie définit-il la distribution de probabilité, plutôt que les probabilités ne définissent l’entropie ?\lecturetimestamp{01:38:33}}
+\lecturerresponse{Une distribution de probabilité détermine une valeur d’entropie par l’équation~\eqref{eq:l03-shannon} ; un seul nombre ne permet pas de retrouver toutes les \(p_i\). La maximisation de l’entropie ne peut sélectionner une distribution qu’une fois spécifiées la normalisation et d’autres contraintes, comme la valeur moyenne fixée de l’énergie.}
+\end{classroomqa}
+
+Cette distinction clôt le cours à la bonne frontière. La géométrie lisse a conduit à un horizon ; l’horizon a conduit à la thermodynamique ; la thermodynamique a révélé des degrés de liberté cachés ; et la conservation de l’information exige maintenant que ces degrés de liberté évoluent sans effacer les distinctions qui sont entrées dans le trou. Le mécanisme n’a pas encore été fourni. La géométrie et le bilan comptable ont plutôt permis de préciser ce que toute théorie microscopique satisfaisante doit expliquer.
