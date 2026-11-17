@@ -1,0 +1,651 @@
+\chapter{Particules, champs et notation relativiste}
+
+\section{Un problème de décalage Doppler avant le cours}
+
+La discussion s’ouvre sur une question restée en suspens depuis la semaine précédente. Un observateur qui se déplace presque à la vitesse de la lumière mesure-t-il toujours une longueur d’onde plus grande ? Non : la réponse dépend de la direction du mouvement. Un observateur qui se déplace dans le sens de propagation de l’onde lumineuse voit sa longueur d’onde s’allonger, tandis qu’un observateur qui se déplace en sens contraire la voit se raccourcir. C’est l’effet Doppler relativiste.
+
+\begin{classroomqa}\audiencequestion{Un mouvement proche de la vitesse de la lumière allonge-t-il la longueur d’onde observée ?}\lecturerresponse{Seulement si l’observateur se déplace dans le même sens que la lumière. Inverser la vitesse de l’observateur inverse le décalage. On peut obtenir le résultat directement à partir de la géométrie de Lorentz, sans mémoriser une formule distincte. \lecturetimestamp{00:00:13}}\end{classroomqa}
+
+On utilise les unités où \(c=1\) et on suppose que le référentiel primé se déplace vers la droite à la vitesse \(v\). Une crête lumineuse qui se déplace vers la droite suit une ligne nulle. Normalisons à un la longueur d’onde dans le référentiel non primé et écrivons les lignes d’univers de deux crêtes successives : \begin{equation}
+x=t,
+\qquad
+x=t+1.
+\label{eq:sr5-crest-lines}
+\end{equation}Dans le référentiel non primé, on mesure la longueur d’onde entre les crêtes à même \(t\). Dans le référentiel primé, il faut au contraire la mesurer à même \(t'\). Toute la démonstration repose donc sur la relativité de la simultanéité.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_01.png}\caption{Crêtes successives de l’onde se propageant vers la droite, cône de lumière et axes inclinés du référentiel mobile.}\lectureframe{00:03:30}\end{figure}
+
+À ce stade, la démonstration s’interrompt pour une brève discussion de la suite du cours. Il n’y aura pas de cours d’été. La relativité générale et un retour plus large à la mécanique quantique sont deux options pour le prochain cours ; l’oscillateur harmonique est cité comme un sujet à maîtriser avant la théorie quantique des champs.
+
+\begin{classroomqa}\audiencequestion{Un futur cours pourrait-il aborder le lien entre l’infrarouge--l’ultraviolet ?}\lecturerresponse{Cette question relève de la rencontre entre mécanique quantique et gravité. Le cours a suffisamment étudié la mécanique quantique pour cerner le problème, mais il faut d’abord développer la gravitation, le plus naturellement par la relativité générale. \lecturetimestamp{00:05:37}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Peut-on simplement déduire du dessin au tableau l’échelle relative des axes inclinés ?}\lecturerresponse{Non. Un diagramme d’espace-temps représente la géométrie causale et celle de la simultanéité, mais une règle euclidienne ordinaire appliquée au dessin ne permet pas une mesure de Lorentz. Repérez les événements pertinents et appliquez la transformation de Lorentz. \lecturetimestamp{00:06:10}}\end{classroomqa}
+
+Reprenons maintenant le calcul. Normalisons à un l’écart entre les crêtes dans le référentiel non primé et déterminons algébriquement les deux événements simultanés dans le référentiel primé.
+
+La transformation de Lorentz s’écrit \begin{equation}
+t'=\gamma(t-vx),
+\qquad
+x'=\gamma(x-vt),
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr5-lorentz-doppler}
+\end{equation}Choisissons l’hypersurface de simultanéité primée \(t'=0\). L’équation \eqref{eq:sr5-lorentz-doppler} donne alors \begin{equation}
+t=vx.
+\label{eq:sr5-primed-simultaneity}
+\end{equation}La première crête coupe cette hypersurface à l’origine. La seconde crête vérifie \(x=t+1\) ; à son intersection, on a donc \begin{align}
+x&=vx+1,\\
+x&=\frac{1}{1-v},
+\qquad
+t=\frac{v}{1-v}.
+\end{align}Sa coordonnée primée vaut \begin{align}
+x'
+&=\frac{x-vt}{\sqrt{1-v^2}}\\
+&=\frac{1-v^2}{(1-v)\sqrt{1-v^2}}\\
+&=\sqrt{\frac{1+v}{1-v}}.
+\end{align}Comme la longueur d’onde initiale valait un, \begin{equation}
+\boxed{
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{1+\beta}{1-\beta}}
+},
+\qquad
+\beta=\frac{v}{c}.
+\label{eq:sr5-doppler}
+\end{equation}Autrement dit, \begin{equation}
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{c+v}{c-v}}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_02.png}\caption{Le facteur Doppler, après réintroduction de \(c\) ; inverser \(v\) donne le décalage réciproque.}\lectureframe{00:13:40}\end{figure}
+
+Pour \(v>0\), l’observateur primé poursuit la lumière et mesure une longueur d’onde plus grande. Remplacer \(v\) par \(-v\) décrit un mouvement à contre-sens de la lumière et donne un facteur inférieur à un. Si un observateur pouvait s’approcher de \(c\) tout en poursuivant le rayon, la longueur d’onde divergerait. Le décalage de fréquence est le rapport inverse.
+
+\section{Pourquoi l’interaction doit figurer dans une même action}
+
+Après les questions préliminaires, le cours passe aux champs et aux particules. En théorie quantique des champs, les particules et les champs finiront par devenir deux descriptions des mêmes excitations. Ce n’est pas le cadre adopté ici. Ici, les particules suivent des lignes d’univers et les champs classiques remplissent l’espace-temps. La question immédiate est plus modeste : si un champ agit sur une particule, comment la particule agit-elle en retour sur le champ ?
+
+Le principe de l’action répond à cette question à l’aide d’un modèle de dimension finie. Soient \(x(t)\) et \(y(t)\) deux coordonnées généralisées. Si le lagrangien se sépare, \begin{equation}
+L(x,\dot x,y,\dot y)
+=
+L_x(x,\dot x)+L_y(y,\dot y),
+\label{eq:sr5-separable-l}
+\end{equation}les deux équations d’Euler--Lagrange sont alors indépendantes : \begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x}
+=
+\frac{\partial L}{\partial x},
+\qquad
+\frac{d}{dt}\frac{\partial L}{\partial\dot y}
+=
+\frac{\partial L}{\partial y}.
+\end{equation}L’équation en \(x\) ne contient pas \(y\), et celle en \(y\) ne contient pas \(x\).
+
+Pour que les variables interagissent, ajoutons un terme qui ne peut pas se décomposer en une partie dépendant de \(x\) et une partie dépendant de \(y\). Un exemple simple est \begin{equation}
+L
+=
+\frac{\dot x^2}{2}
++\frac{\dot y^2}{2}
+-V(x)-W(y)+\kappa xy.
+\label{eq:sr5-coupled-coordinates}
+\end{equation}Faire varier \(x\) produit alors un terme proportionnel à \(y\), tandis que faire varier \(y\) produit un terme proportionnel à \(x\). Le même terme mixte régit les deux sens de l’influence.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_03.png}\caption{Deux coordonnées généralisées sont couplées dynamiquement lorsqu’un même terme du lagrangien dépend des deux.}\lectureframe{00:19:00}\end{figure}
+
+C’est précisément dans ce cadre que s’applique l’énoncé d’action--réaction utilisé ici : les deux objets sont dynamiques et leurs variations sont prises dans une seule action commune. Traiter un champ comme un arrière-plan imposé peut masquer sa réponse, mais dès que le champ est lui-même dynamique, le terme de couplage intervient dans les deux équations.
+
+\section{Comment un champ scalaire agit sur une particule}
+
+\subsection{Le couplage relativiste}
+
+Commençons par considérer le champ scalaire \(\phi(\mathbf{x},t)\) comme connu. Il peut s’agir d’une onde ou d’un profil statique ; pour l’instant, sa propre équation n’importe pas. L’action d’une particule relativiste libre est \begin{equation}
+S_{\mathrm p}
+=
+-m\int d\tau.
+\end{equation}Pour un mouvement en ligne droite et avec \(c=1\), \begin{equation}
+L_{\mathrm p}^{(0)}
+=
+-m\sqrt{1-\dot x^2}.
+\end{equation}Le couplage scalaire le plus simple consiste à remplacer le coefficient de masse par un coefficient dépendant du champ : \begin{equation}
+\boxed{
+L_{\mathrm p}
+=
+-\bigl[m+g\phi(x,t)\bigr]\sqrt{1-\dot x^2}
+}.
+\label{eq:sr5-particle-coupling}
+\end{equation}La constante de couplage \(g\) mesure l’intensité de l’action du champ sur cette particule. Son signe relève d’une convention : remplacer \(g\) par \(-g\) inverse le sens de la force scalaire.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_04.png}\caption{Action de la particule libre où \(m\) est remplacé par le coefficient local \(m+g\phi(x,t)\).}\lectureframe{00:24:10}\end{figure}
+
+\subsection{La limite des particules lentes}
+
+Réintroduisons la vitesse de la lumière afin de faire apparaître la limite newtonienne : \begin{equation}
+L_{\mathrm p}
+=
+-\bigl[mc^2+g\phi(x,t)\bigr]
+\sqrt{1-\frac{\dot x^2}{c^2}}.
+\label{eq:sr5-particle-coupling-c}
+\end{equation}Pour \(|\dot x|\ll c\), \begin{equation}
+\sqrt{1-\frac{\dot x^2}{c^2}}
+=
+1-\frac{\dot x^2}{2c^2}
++O\!\left(\frac{\dot x^4}{c^4}\right).
+\end{equation}En substituant dans \eqref{eq:sr5-particle-coupling-c}, on obtient \begin{align}
+L_{\mathrm p}
+&=
+-mc^2-g\phi
++\frac{m\dot x^2}{2}
++\frac{g\phi\,\dot x^2}{2c^2}
++O(c^{-4})\\
+&\longrightarrow
+\frac{m\dot x^2}{2}-g\phi(x,t),
+\label{eq:sr5-nr-particle}
+\end{align}après avoir omis la constante \(-mc^2\) et les termes d’ordre \(c^{-2}\). On retrouve la forme usuelle \(T-V\), avec \begin{equation}
+V_{\mathrm p}(x,t)=g\phi(x,t).
+\label{eq:sr5-scalar-potential}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_05.png}\caption{Le développement de la racine carrée fait apparaître le terme cinétique newtonien et l’énergie potentielle scalaire \(g\phi\).}\lectureframe{00:28:50}\end{figure}
+
+La grande constante d’énergie de masse au repos n’intervient pas dans l’équation d’Euler--Lagrange. Le terme dépendant du champ, lui, y intervient. En électromagnétisme, la charge électrique joue un rôle analogue de constante de couplage, même si l’interaction électromagnétique fait intervenir un potentiel à quatre composantes plutôt que ce modèle scalaire simplifié.
+
+\section{Comment la particule agit en retour sur le champ}
+
+\subsection{Un seul problème variationnel}
+
+Le champ ne peut désormais plus être considéré comme simplement imposé. Considérons une région de l’espace-temps qui contient à la fois une configuration de champ et une ligne d’univers de particule. La solution physique rend stationnaire l’action totale lorsque l’on fait varier les deux : \begin{equation}
+\delta S[\phi,x]=0.
+\end{equation}Faire varier la ligne d’univers en maintenant le champ fixé donne l’équation de la particule. Faire varier le champ en maintenant la ligne d’univers fixée donne l’équation du champ. Leur terme d’interaction commun les relie.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_06.png}\caption{Une ligne d’univers de particule traversant une région de l’espace-temps occupée par un champ scalaire.}\lectureframe{00:30:30}\end{figure}
+
+Pour le champ scalaire libre sans masse, prenons \begin{equation}
+S_{\mathrm f}
+=
+\int d^4x\,
+\frac12
+\left[
+(\partial_t\phi)^2
+-(\partial_x\phi)^2
+-(\partial_y\phi)^2
+-(\partial_z\phi)^2
+\right].
+\label{eq:sr5-free-field-action}
+\end{equation}À partir d’ici, nous reprenons la convention \(c=1\). Avec les unités explicites, le terme temporel comporterait le facteur correspondant \(1/c^2\), selon la normalisation des coordonnées et du champ.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_07.png}\caption{L’action du champ intégrée sur la même région de l’espace-temps que la ligne d’univers de la particule.}\lectureframe{00:32:10}\end{figure}
+
+\subsection{Une particule immobile et une intégrale sur sa ligne d’univers}
+
+Pour faire apparaître la source avec un minimum de calculs, plaçons la particule au repos à l’origine. Le facteur \(d\tau\) est alors égal à \(dt\), et la partie d’interaction de \eqref{eq:sr5-particle-coupling} devient \begin{equation}
+S_{\mathrm{int}}
+=
+-g\int dt\,\phi(\mathbf{0},t).
+\label{eq:sr5-worldline-interaction}
+\end{equation}Il s’agit d’une intégrale le long de la ligne d’univers, tandis que \eqref{eq:sr5-free-field-action} est une intégrale sur tout l’espace-temps. Pour les réunir en une seule intégrale d’espace-temps, il nous faut une fonction qui sélectionne la position de la particule.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_08.png}\caption{La ligne d’univers statique dans la région occupée par le champ et l’action du champ à combiner avec elle.}\lectureframe{00:35:35}\end{figure}
+
+\subsection{La fonction delta de Dirac}
+
+La fonction delta unidimensionnelle est définie par \begin{equation}
+\int_{-\infty}^{\infty}dx\,f(x)\delta(x-a)=f(a).
+\label{eq:sr5-delta-definition}
+\end{equation}Elle s’annule hors de \(x=a\), est singulière en \(x=a\) et son intégrale vaut un. Il est préférable de la comprendre comme une distribution caractérisée par \eqref{eq:sr5-delta-definition} plutôt que comme une fonction ordinaire à valeurs finies.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_09.png}\caption{L’identité de la fonction delta qui réécrit la valeur du champ à l’origine sous la forme d’une intégrale spatiale.}\lectureframe{00:36:45}\end{figure}
+
+En trois dimensions, \begin{equation}
+\delta^3(\mathbf{x})
+=
+\delta(x)\delta(y)\delta(z),
+\end{equation}et donc \begin{align}
+\int d^3x\,
+\phi(\mathbf{x},t)\delta^3(\mathbf{x})
+&=
+\int dx\,dy\,dz\,
+\phi(x,y,z,t)\\
+&\quad\times\delta(x)\delta(y)\delta(z)\\
+&=\phi(\mathbf{0},t).
+\label{eq:sr5-triple-delta}
+\end{align}
+
+\begin{classroomqa}\audiencequestion{D’où vient le \(d^3x\) ?}\lecturerresponse{Il s’agit de l’élément de volume spatial ordinaire \(dx\,dy\,dz\). En une dimension spatiale, la même identité ne comporte que \(dx\) et une seule fonction delta. \lecturetimestamp{00:37:09}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_10.png}\caption{La fonction delta tridimensionnelle décomposée en trois facteurs unidimensionnels.}\lectureframe{00:39:05}\end{figure}
+
+L’équation \eqref{eq:sr5-worldline-interaction} peut maintenant s’écrire \begin{equation}
+S_{\mathrm{int}}
+=
+-g\int d^4x\,
+\delta^3(\mathbf{x})\phi(\mathbf{x},t).
+\end{equation}L’action complète avec source statique est \begin{align}
+S
+=
+\int d^4x
+\biggl\{
+&\frac12(\partial_t\phi)^2
+-\frac12|\boldsymbol{\nabla}\phi|^2
+\nonumber\\
+&-g\delta^3(\mathbf{x})\phi
+\biggr\}.
+\label{eq:sr5-combined-action}
+\end{align}
+
+\begin{classroomqa}\audiencequestion{Un signe moins a-t-il été perdu en insérant l’interaction dans l’action d’espace-temps ?}\lecturerresponse{Le lagrangien de la ligne d’univers contient \(-g\phi\) ; la densité dans l’espace-temps doit donc contenir \(-g\delta^3(\mathbf{x})\phi\). Conserver ce signe fixe le terme source dans l’équation du champ. \lecturetimestamp{00:41:24}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_11.png}\caption{La densité scalaire libre et l’interaction localisée réunies dans une seule action d’espace-temps.}\lectureframe{00:42:05}\end{figure}
+
+\subsection{L’équation du champ avec source}
+
+Faire varier \eqref{eq:sr5-combined-action} par rapport à \(\phi\) donne \begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi
+=
+-g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-sourced-wave}
+\end{equation}Loin de l’origine, c’est l’équation d’onde libre. À l’origine, la fonction delta signale la particule comme une source localisée.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_12.png}\caption{L’opérateur d’onde entraîné par une source ponctuelle à l’origine.}\lectureframe{00:45:35}\end{figure}
+
+Pour une solution statique, \(\partial_t\phi=0\), donc \begin{equation}
+\boxed{
+\nabla^2\phi
+=
+g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-poisson}
+\end{equation}C’est l’équation de Poisson pour une source ponctuelle. L’analogie est électrostatique, pas encore électromagnétique : le champ reste le champ scalaire \(\phi\), et non le quadripotentiel électromagnétique.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_13.png}\caption{La limite statique de l’équation d’onde avec source, qui prend la forme de l’équation de Poisson.}\lectureframe{00:47:05}\end{figure}
+
+La réciprocité apparaît maintenant clairement. Le terme \(g\phi\) donne à la particule une énergie potentielle, et ce même \(g\) fait de la particule une source pour \(\phi\). Ces deux effets ne sont pas des hypothèses indépendantes.
+
+\subsection{Les sources en mouvement rayonnent}
+
+Une particule immobile en \(\mathbf{a}\) est représentée par \(\delta^3(\mathbf{x}-\mathbf{a})\). Si sa position varie au cours du temps, la source devient \begin{equation}
+\delta^3\!\left(\mathbf{x}-\mathbf{a}(t)\right).
+\label{eq:sr5-moving-delta}
+\end{equation}Un membre de droite dépendant du temps ne peut être équilibré par un champ indépendant du temps. Le terme \(\partial_t^2\phi\) doit réapparaître, et une source accélérée ou oscillante peut engendrer des ondes dans le champ.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_14.png}\caption{Une source en fonction delta translatée en \(\mathbf{a}(t)\), ce qui rend l’équation du champ dépendante du temps.}\lectureframe{00:50:30}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Si la source est traitée de façon non relativiste, où se trouve la relativité dans l’équation du champ ?}\lecturerresponse{La propagation relativiste est encodée dans l’opérateur d’onde d’espace-temps du membre de gauche. Un traitement entièrement relativiste de la particule conserverait son action en temps propre et ses facteurs de vitesse. Même une source dépendant du temps mais se déplaçant lentement peut engendrer des ondes. \lecturetimestamp{00:52:14}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Quelles sont les unités de \(g\phi\) ?}\lecturerresponse{Cette quantité apparaît à côté de \(mc^2\) dans l’action de la particule ; elle a donc les unités d’une énergie. Dans la normalisation en unités naturelles utilisée ici, un scalaire en dimension \(3+1\) a une dimension de masse égale à un et \(g\) peut être sans dimension. Les dimensions changent selon la dimension de l’espace-temps et la normalisation du champ. \lecturetimestamp{00:52:55}}\end{classroomqa}
+
+\section{Quadrivecteurs, scalaires et métrique}
+
+Les équations en composantes sont devenues assez longues pour justifier une notation plus commode. Écrivons les coordonnées d’espace-temps sous la forme \begin{equation}
+x^\mu=(x^0,x^1,x^2,x^3)=(t,x,y,z),
+\label{eq:sr5-four-coordinate}
+\end{equation}où les indices grecs parcourent les quatre composantes. Une liste de quatre composantes n’est pas automatiquement un quadrivecteur. Elle n’en est un que si ses composantes se transforment sous les transformations de Lorentz comme \(x^\mu\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_15.png}\caption{Les quatre coordonnées d’espace-temps réunies dans \(x^\mu\).}\lectureframe{00:55:00}\end{figure}
+
+L’énoncé selon lequel les trois composantes spatiales s’annulent peut être vrai dans un référentiel et faux dans un autre. En revanche, si les quatre composantes s’annulent, tous les observateurs de Lorentz s’accordent à dire que le vecteur est nul. Les différences telles que \(dx^\mu\) sont également des quadrivecteurs.
+
+L’intervalle invariant de temps propre est \begin{equation}
+d\tau^2
+=
+dt^2-dx^2-dy^2-dz^2.
+\label{eq:sr5-proper-time}
+\end{equation}Il a une seule valeur, et non quatre composantes dépendant du référentiel ; c’est donc un scalaire.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_16.png}\caption{Le déplacement à quatre composantes et l’intervalle invariant de temps propre.}\lectureframe{00:57:25}\end{figure}
+
+\subsection{La métrique de Minkowski}
+
+Adoptons la signature majoritairement positive \begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr5-metric}
+\end{equation}La convention majoritairement négative est tout aussi valable, mais il faut employer une même convention dans toutes les équations. Avec \eqref{eq:sr5-metric}, \begin{equation}
+dx^\mu dx_\mu
+=
+-dt^2+dx^2+dy^2+dz^2
+=
+-d\tau^2.
+\end{equation}Le signe global ne change pas l’invariance.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_17.png}\caption{La métrique de Minkowski à signature majoritairement positive, écrite sous forme de matrice diagonale.}\lectureframe{01:00:30}\end{figure}
+
+La métrique abaisse un indice : \begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\label{eq:sr5-lower-index}
+\end{equation}Pour cette métrique cartésienne, \begin{equation}
+A^\mu=(A^0,A^1,A^2,A^3),
+\qquad
+A_\mu=(-A^0,A^1,A^2,A^3).
+\label{eq:sr5-upper-lower-components}
+\end{equation}Appliquer à nouveau la même métrique relève l’indice, puisque \(\eta^{\mu\rho}\eta_{\rho\nu}=\delta^\mu{}_\nu\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_18.png}\caption{Abaissement d’un indice par multiplication matricielle par \(\eta_{\mu\nu}\).}\lectureframe{01:03:00}\end{figure}
+
+\begin{classroomqa}\audiencequestion{La multiplication matricielle ordinaire implique-t-elle vraiment une sommation ici ?}\lecturerresponse{Oui. Chaque composante du résultat est obtenue en multipliant une ligne de \(\eta\) par le vecteur entier : on somme sur l’indice de colonne. La métrique diagonale rend le calcul trivial en apparence, mais avec une matrice générale, la somme apparaît explicitement. \lecturetimestamp{01:04:56}}\end{classroomqa}
+
+\subsection{Convention de sommation d’Einstein et indices libres}
+
+La convention d’Einstein omet le symbole de sommation chaque fois qu’un indice figure une fois en haut et une fois en bas : \begin{equation}
+\eta_{\mu\nu}A^\nu
+\equiv
+\sum_{\nu=0}^{3}\eta_{\mu\nu}A^\nu.
+\end{equation}Ici, \(\nu\) est un indice muet ; il est sommé et peut être renommé. L’indice \(\mu\) est libre et étiquette les quatre composantes du résultat. En règle générale, un indice ne devrait pas apparaître plus de deux fois dans un même monôme.
+
+Les termes traditionnels sont \emph{contravariant} pour un indice supérieur et \emph{covariant} pour un indice inférieur. Dans ce cours, on préfère délibérément les termes plus simples \emph{supérieur} et \emph{inférieur}, mais les deux terminologies désignent les mêmes lois de transformation.
+
+\section{Contractions et dérivées d’un scalaire}
+
+\subsection{Produit scalaire de Minkowski}
+
+La contraction d’un vecteur avec sa forme à indice abaissé donne \begin{equation}
+A^\mu A_\mu
+=
+\eta_{\mu\nu}A^\mu A^\nu
+=
+-(A^0)^2+(A^1)^2+(A^2)^2+(A^3)^2.
+\label{eq:sr5-vector-square}
+\end{equation}Il ne faut pas ajouter à la main un signe moins supplémentaire : il provient déjà de la composante temporelle abaissée.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_19.png}\caption{La contraction \(A^\mu A_\mu\) développée en composantes temporelle et spatiales.}\lectureframe{01:09:30}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Un vecteur à indice inférieur doit-il être représenté en ligne plutôt qu’en colonne ?}\lecturerresponse{On peut le représenter en ligne dans la notation matricielle élémentaire, mais la notation indicielle n’impose pas ce choix. Ce qui le définit, c’est sa loi de transformation et sa contraction avec un vecteur à indice supérieur. \lecturetimestamp{01:10:26}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Les indices grecs désignent-ils toujours les quatre composantes ?}\lecturerresponse{Dans cette notation, oui. Les indices grecs comme \(\mu,\nu\) parcourent l’espace-temps, tandis que les indices latins comme \(i,j\) parcourent généralement les trois seules composantes spatiales. \lecturetimestamp{01:12:23}}\end{classroomqa}
+
+La même construction s’applique à deux quadrivecteurs différents : \begin{equation}
+A^\mu B_\mu
+\end{equation}est un scalaire. L’identité de polarisation en donne une démonstration rapide. Puisque \((A+B)^2\) et \((A-B)^2\) sont tous deux des scalaires, \begin{equation}
+(A+B)^2-(A-B)^2=4A^\mu B_\mu
+\end{equation}est également un scalaire. C’est la version de Minkowski du produit scalaire ordinaire.
+
+\begin{classroomqa}\audiencequestion{\(A^\mu B_\mu\) est-il analogue au produit scalaire ordinaire ?}\lecturerresponse{Exactement, à ceci près que la métrique de Minkowski fournit le signe relatif entre les composantes temporelle et spatiales. \lecturetimestamp{01:15:44}}\end{classroomqa}
+
+\subsection{Le gradient est un covecteur}
+
+Soit \(\phi(x)\) un champ scalaire, et notons désormais \(x\) l’ensemble des quatre coordonnées d’espace-temps. Entre deux événements voisins, \begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr5-dphi}
+\end{equation}Le membre de gauche est un scalaire, et \(dx^\mu\) est un quadrivecteur. Le coefficient \begin{equation}
+\partial_\mu\phi
+=
+\left(
+\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right)
+\label{eq:sr5-gradient-lower}
+\end{equation}doit donc se transformer comme un covecteur. En relevant son indice, on obtient \begin{equation}
+\partial^\mu\phi
+=
+\left(
+-\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right).
+\label{eq:sr5-gradient-upper}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_20.png}\caption{Le différentiel \(d\phi=\partial_\mu\phi\,dx^\mu\), dont découle le caractère covariant du gradient d’un scalaire.}\lectureframe{01:20:00}\end{figure}
+
+\begin{classroomqa}\audiencequestion{L’indice supérieur de \(x^\mu\) devient-il inférieur lorsqu’il apparaît au dénominateur \(\partial/\partial x^\mu\) ?}\lecturerresponse{Oui. Le différentiel de coordonnée \(dx^\mu\) se transforme de façon contravariante ; sa dérivée duale \(\partial_\mu=\partial/\partial x^\mu\) se transforme donc de façon covariante. C’est ce qui fait de \(d\phi=\partial_\mu\phi\,dx^\mu\) un scalaire. \lecturetimestamp{01:20:00}}\end{classroomqa}
+
+\subsection{Une densité scalaire invariante}
+
+Contractons les deux vecteurs dérivés : \begin{align}
+\partial_\mu\phi\,\partial^\mu\phi
+&=
+-(\partial_t\phi)^2
++(\partial_x\phi)^2
++(\partial_y\phi)^2
++(\partial_z\phi)^2.
+\end{align}La densité du champ scalaire libre s’écrit donc de façon compacte : \begin{equation}
+\boxed{
+\mathcal L_0
+=
+-\frac12
+\partial_\mu\phi\,\partial^\mu\phi
+}.
+\label{eq:sr5-compact-density}
+\end{equation}C’est la même densité que celle en composantes de \eqref{eq:sr5-free-field-action}.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_21.png}\caption{La densité cinétique du champ scalaire, condensée en une expression contractée.}\lectureframe{01:25:10}\end{figure}
+
+\begin{classroomqa}\audiencequestion{L’expression contractée en dérivées premières est-elle le laplacien ?}\lecturerresponse{Non. Le laplacien contient des dérivées spatiales secondes. Cette expression est la densité lagrangienne, construite à partir de produits de dérivées premières. \lecturetimestamp{01:24:38}}\end{classroomqa}
+
+La valeur d’une densité scalaire en un événement physique est indépendante du référentiel. Le déterminant de la transformation de Lorentz propre a également une valeur absolue égale à un ; la mesure \(d^4x\) est donc invariante. Par conséquent, \begin{equation}
+S=\int d^4x\,\mathcal L
+\end{equation}est invariant. Une action indépendante du référentiel donne des équations d’Euler--Lagrange de même forme dans tous les référentiels inertiels.
+
+\section{La limite galiléenne}
+
+\begin{classroomqa}\audiencequestion{Un lagrangien newtonien devait-il lui aussi respecter un principe de relativité ?}\lecturerresponse{Oui, même si cela n’avait pas été souligné auparavant. Les équations newtoniennes sont invariantes sous les transformations galiléennes, qui correspondent à la limite \(c\to\infty\) des transformations de Lorentz. Dans cette limite, c’est la relativité de la simultanéité qui disparaît. \lecturetimestamp{01:27:16}}\end{classroomqa}
+
+Pour faire apparaître cette limite, réintroduisons \(c\) dans un boost selon \(x\) : \begin{equation}
+x'
+=
+\frac{x-vt}{\sqrt{1-v^2/c^2}},
+\qquad
+t'
+=
+\frac{t-vx/c^2}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr5-lorentz-c}
+\end{equation}En prenant \(c\to\infty\), on obtient \begin{equation}
+\boxed{
+x'=x-vt,
+\qquad
+t'=t
+}.
+\label{eq:sr5-galilean}
+\end{equation}Ce sont les transformations galiléennes. La mécanique newtonienne conserve le principe de relativité selon lequel les lois ont la même forme dans tous les référentiels inertiels, mais elle suppose également un temps absolu partagé par tous les observateurs.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_22.png}\caption{Le boost de Lorentz avant la limite \(c\to\infty\), qui conduit aux transformations galiléennes \(x'=x-vt\) et \(t'=t\).}\lectureframe{01:29:40}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Les vecteurs à indices supérieur et inférieur ne diffèrent-ils que par un changement de signe ?}\lecturerresponse{Pour la métrique cartésienne fixe utilisée ici, abaisser l’indice d’un vecteur connu ne change que le signe de sa composante temporelle. Leurs lois de transformation de Lorentz sont néanmoins des lois duales, et non une simple convention de signe arbitraire : c’est la métrique qui permet de passer de l’une à l’autre. \lecturetimestamp{01:31:19}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Toute fonction des coordonnées d’apparence ordinaire est-elle un scalaire ?}\lecturerresponse{Non. Le fait d’avoir une valeur numérique en chaque point de coordonnées ne suffit pas ; cette valeur doit représenter la même grandeur physique au même événement dans tous les référentiels. La densité d’énergie en est un contre-exemple : un boost modifie à la fois l’énergie mesurée dans une boîte et le volume mesuré, de sorte que les observateurs n’attribuent pas la même densité. \lecturetimestamp{01:33:23}}\end{classroomqa}
+
+Une composante de la quadrivitesse en est un autre exemple. La quadrivitesse entière est un vecteur, mais sa composante temporelle change sous l’effet d’un boost et n’est pas elle-même un scalaire.
+
+\section{Le champ de Klein--Gordon}
+
+\subsection{L’analogue de l’oscillateur harmonique pour un champ}
+
+Revenons à la densité scalaire et ajoutons le potentiel quadratique le plus simple : \begin{equation}
+\boxed{
+\mathcal L
+=
+\frac12
+\left[
+(\partial_t\phi)^2
+-|\boldsymbol{\nabla}\phi|^2
+-\mu^2\phi^2
+\right]
+}.
+\label{eq:sr5-kg-density}
+\end{equation}C’est l’analogue, en théorie des champs, de \begin{equation}
+L_{\mathrm{osc}}
+=
+\frac12\dot q^2-\frac12\mu^2q^2.
+\end{equation}Chaque point de l’espace se comporte localement comme un oscillateur, tandis que le terme de gradient couple les points voisins.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_23.png}\caption{La densité quadratique du champ scalaire et son modèle d’oscillateur harmonique.}\lectureframe{01:38:20}\end{figure}
+
+L’équation d’Euler--Lagrange pour le champ est \begin{equation}
+\partial_\mu
+\left[
+\frac{\partial\mathcal L}
+{\partial(\partial_\mu\phi)}
+\right]
+-
+\frac{\partial\mathcal L}{\partial\phi}
+=0.
+\label{eq:sr5-field-el}
+\end{equation}En l’appliquant à \eqref{eq:sr5-kg-density}, on obtient \begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi+\mu^2\phi=0
+}.
+\label{eq:sr5-kg}
+\end{equation}C’est l’équation de Klein--Gordon. Avec la convention majoritairement positive et \(\Box=\partial_\mu\partial^\mu=-\partial_t^2+\nabla^2\), la même équation s’écrit \((\Box-\mu^2)\phi=0\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_24.png}\caption{L’équation de Klein--Gordon, écrite sous la densité dont elle découle.}\lectureframe{01:40:00}\end{figure}
+
+Historiquement, cette équation a d’abord été étudiée comme équation d’onde relativiste à une particule. Cette interprétation s’est heurtée à des difficultés, notamment pour obtenir une densité de probabilité positive. Son cadre moderne adéquat est la théorie relativiste des champs, où elle régit les champs scalaires libres et la limite libre des champs scalaires en interaction.
+
+\subsection{Modes d’onde plane}
+
+Puisque \eqref{eq:sr5-kg} est linéaire à coefficients constants, cherchons une onde plane \begin{equation}
+\phi(x)
+=
+\exp\!\left[
+-i\omega t+i\mathbf{k}\cdot\mathbf{x}
+\right].
+\label{eq:sr5-plane-wave}
+\end{equation}Avec \begin{equation}
+k_\mu=(-\omega,k_x,k_y,k_z),
+\end{equation}, l’exposant vaut \(ik_\mu x^\mu\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_25.png}\caption{L’ansatz d’onde plane écrit en composantes et sous la forme \(e^{ik_\mu x^\mu}\).}\lectureframe{01:44:00}\end{figure}
+
+La dérivation donne \begin{equation}
+\partial_t^2\phi=-\omega^2\phi,
+\qquad
+\nabla^2\phi=-|\mathbf{k}|^2\phi.
+\end{equation}En substituant dans \eqref{eq:sr5-kg}, on obtient \begin{equation}
+\left(
+-\omega^2+|\mathbf{k}|^2+\mu^2
+\right)\phi=0.
+\end{equation}Un mode non nul exige donc \begin{equation}
+\boxed{
+\omega^2=|\mathbf{k}|^2+\mu^2
+},
+\qquad
+\omega=\pm\sqrt{|\mathbf{k}|^2+\mu^2}.
+\label{eq:sr5-dispersion}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_26.png}\caption{La substitution d’une onde plane et la relation de dispersion relativiste qui en découle.}\lectureframe{01:47:00}\end{figure}
+
+En unités naturelles, \(\mu\) joue le rôle d’une masse. En rétablissant les constantes pour une excitation quantique, \begin{equation}
+E=\hbar\omega,
+\qquad
+\mathbf{p}=\hbar\mathbf{k},
+\qquad
+\mu=\frac{mc}{\hbar},
+\end{equation}transforme \eqref{eq:sr5-dispersion} en \begin{equation}
+E^2=p^2c^2+m^2c^4.
+\end{equation}Les branches de fréquence positive et négative font toutes deux partie de l’espace des solutions classiques. Les solutions générales sont des superpositions de ces modes.
+
+\begin{classroomqa}\audiencequestion{D’où vient l’équation de Klein--Gordon ?}\lecturerresponse{Elle découle directement de la densité quadratique scalaire de Lorentz, en appliquant l’équation d’Euler--Lagrange du champ. Cet exemple a été choisi parce que cette densité quadratique simple donne une équation de champ linéaire. \lecturetimestamp{01:47:59}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Qu’est-ce qui, dans la nature, obéit à l’équation de Klein--Gordon ?}\lecturerresponse{Un champ scalaire classique libre lui obéit. Les fluctuations du champ de Higgs sont scalaires et prennent la forme de Klein--Gordon dans l’approximation libre, bien que le champ de Higgs réel comporte aussi des interactions et des couplages de jauge. \lecturetimestamp{01:50:41}}\end{classroomqa}
+
+\section{Un arrière-plan scalaire comme décalage de masse}
+
+Revenons maintenant à l’action de la particule : \begin{equation}
+S_{\mathrm p}
+=
+-\int d\tau\,
+\bigl[m+g\phi(x)\bigr].
+\label{eq:sr5-final-particle-action}
+\end{equation}Si \(\phi\) a une valeur d’arrière-plan constante \(\phi_0\), la particule se déplace comme si sa masse était \begin{equation}
+\boxed{
+m_{\mathrm{eff}}=m+g\phi_0
+}.
+\label{eq:sr5-effective-mass}
+\end{equation}Si le terme de masse nue \(m\) s’annule, l’arrière-plan scalaire peut fournir à lui seul tout le coefficient de l’intervalle de temps propre.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_27.png}\caption{L’action de la particule dépendant du champ, placée au-dessus de l’équation d’Euler--Lagrange compacte du champ, réunit les deux volets du cours.}\lectureframe{01:51:30}\end{figure}
+
+Il s’agit d’un modèle délibérément simplifié de génération de masse par le Higgs. Dans le Modèle standard, les masses des fermions proviennent de couplages de Yukawa à la valeur moyenne du champ de Higgs dans le vide, schématiquement \(m_f\propto y_f v\), tandis que les masses des bosons \(W\) et \(Z\) proviennent du terme cinétique du champ de Higgs, covariant de jauge. Le couplage toy de ligne d’univers saisit l’idée centrale--un arrière-plan scalaire non nul modifie la masse inertielle--sans reproduire toute la théorie électrofaible. La réciprocité établie précédemment reste valable : faire varier la même interaction par rapport au champ fait de la particule une source. Le champ agit sur les particules, et les particules agissent en retour sur le champ.
+
+\subsection{Pourquoi les exponentielles complexes sont utiles}
+
+Le champ n’a pas besoin d’être physiquement complexe. La formule d’Euler donne
+\begin{equation}
+e^{i(\omega t-\mathbf{k}\cdot\mathbf{x})}
+=
+\cos(\omega t-\mathbf{k}\cdot\mathbf{x})
++i\sin(\omega t-\mathbf{k}\cdot\mathbf{x}).
+\end{equation}
+Comme l’équation est réelle et linéaire, les parties réelle et imaginaire sont chacune des solutions réelles. Ce sont des ondes décalées d’un quart de période, et toute combinaison linéaire réelle est à nouveau une solution.
+
+\begin{classroomqa}
+\audiencequestion{Quand on prend la partie réelle, la partie imaginaire s’annule-t-elle d’une manière ou d’une autre ?}
+\lecturerresponse{Non. L’exponentielle complexe regroupe deux solutions réelles indépendantes, le cosinus et le sinus. On peut conserver l’une ou l’autre partie, ou former des combinaisons réelles. On utilise l’exponentielle parce que la dérivation se ramène à une multiplication. \lecturetimestamp{01:53:29}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_28.png}
+\caption{Une onde plane complexe décomposée en cosinus et sinus, représentés par deux ondes réelles déphasées.}
+\lectureframe{01:56:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La masse acquise par le champ électromagnétique dans un supraconducteur relève-t-elle du même phénomène ?}
+\lecturerresponse{C’est étroitement lié : dans un supraconducteur, le condensat confère au champ électromagnétique une masse effective dans le milieu, ce qui produit l’effet Meissner. Une explication complète nécessite d’introduire le champ électromagnétique et sera donnée plus loin. \lecturetimestamp{01:56:14}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on se représenter le mécanisme de Higgs comme une particule de Higgs qui traverse l’espace en distribuant de la masse ?}
+\lecturerresponse{Non. L’objet pertinent est la valeur de fond du champ de Higgs, et non un flux de particules de Higgs individuelles. Dans l’action toy, le champ de fond modifie simplement le coefficient qui joue le rôle de masse de la particule. \lecturetimestamp{01:57:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Des couplages différents au même champ scalaire de fond peuvent-ils produire des masses différentes ?}
+\lecturerresponse{Oui. Le décalage est proportionnel au couplage \(g\). Dans le Modèle standard, les différents couplages de Yukawa expliquent précisément pourquoi les différents fermions acquièrent des masses différentes à partir d’un même champ de Higgs de fond. \lecturetimestamp{01:58:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce que \(\phi\) lui-même constitue le terme de masse ?}
+\lecturerresponse{Dans ce modèle toy, \(g\phi_0\) joue, à tous égards mécaniques, le rôle d’une contribution au coefficient de masse. Il faut prendre en compte à la fois le couplage et la valeur de fond. \lecturetimestamp{01:58:42}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si le champ de Higgs de fond s’annulait, toutes les particules deviendraient-elles sans masse ?}
+\lecturerresponse{Non. Les électrons, les quarks et les bosons de jauge faibles perdraient leurs contributions ordinaires à la masse électrofaible, les détails concernant les neutrinos dépendant du mécanisme qui leur confère une masse. Le secteur scalaire lui-même ne deviendrait pas nécessairement sans masse simplement parce que sa valeur de fond s’annule. La majeure partie de la masse du proton et du neutron provient plutôt de l’énergie de liaison et du confinement de la QCD ; elle n’est donc pas générée directement par le champ de Higgs. \lecturetimestamp{01:58:51}}
+\end{classroomqa}
+
+La conséquence pour les atomes est néanmoins radicale. L’échelle de Bohr se comporte comme
+\begin{equation}
+a_0\sim\frac{1}{\alpha m_e}
+\end{equation}
+en unités naturelles. Faire tendre la masse de l’électron vers zéro fait diverger l’échelle de longueur atomique ordinaire ; les atomes ordinaires localisés cesseraient d’exister. Le proton et le neutron seraient beaucoup moins directement affectés, car leur masse est principalement une énergie dynamique de la QCD.
+
+Les éléments forment maintenant un argument continu. La géométrie de Lorentz régit les longueurs d’onde observées. Un terme de mélange dans une action unique permet à deux systèmes dynamiques d’agir l’un sur l’autre. Un champ scalaire devient à la fois un potentiel pour une particule et un champ dont cette particule est une source. La métrique et la notation indicielle rendent manifeste l’invariance de Lorentz, et la densité lagrangienne invariante quadratique la plus simple produit des ondes de Klein--Gordon. Enfin, un champ scalaire de fond constant transforme le même couplage en un décalage de masse. La méthode reste la même tout au long du raisonnement : construire une action invariante, faire varier chaque objet dynamique et déduire la physique de leurs interactions mutuelles des équations qui en résultent.

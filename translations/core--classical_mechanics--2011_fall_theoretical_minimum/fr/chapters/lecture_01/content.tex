@@ -1,0 +1,521 @@
+\chapter{États, réversibilité et cinématique}
+
+La mécanique classique ne se réduit pas à un ensemble d’équations décrivant des corps en chute, des planètes en orbite ou des particules chargées. Avant de choisir une équation particulière, nous pouvons poser une question plus générale : à quoi doit ressembler une loi du mouvement pour être considérée comme une loi classique ? Nous commencerons par des systèmes si simples que l’on peut dessiner au tableau toutes leurs évolutions possibles. Une fois les notions d’état, de déterminisme, de réversibilité et de conservation clarifiées dans ces systèmes, nous reviendrons aux particules se déplaçant dans l’espace ordinaire.
+
+\section{Deux types de questions}
+
+En mécanique, on peut poser deux types de questions. La première porte sur la loi particulière qui régit un système donné. Une planète qui se déplace dans le champ gravitationnel d’un corps massif obéit à une loi ; une particule chargée en mouvement dans un champ magnétique en obéit à une autre. Il s’agit de questions portant sur les lois détaillées de la nature.
+
+L’autre question concerne le cadre commun à tous ces exemples. Existe-t-il des règles que toute loi admissible doit respecter ? Quelles caractéristiques relèvent de la mécanique classique elle-même, indépendamment de la force ou de l’objet étudié ? Les exemples particuliers nous aideront à répondre, mais c’est cette seconde question qui structure le sujet.
+
+Le premier exemple le plus utile est celui d’une pièce abstraite posée sur une table abstraite. Nous ne retenons qu’une propriété de la pièce : elle peut tomber sur pile ou sur face. Son espace des configurations est donc
+\begin{equation}
+  \mathcal C=\{H,T\}.
+\end{equation}
+Le mot \emph{configuration} désigne l’une des façons dont le système peut se trouver. Une condition initiale consiste à en choisir une. Une pièce à une seule face serait encore plus simple, mais elle n’aurait qu’une configuration et rien ne pourrait jamais se produire. Deux états suffisent pour rendre une dynamique possible.
+
+\section{La pièce : état, loi et évolution}
+
+Faisons avancer le temps par pas entiers, comme si le monde était éclairé par un stroboscope :
+\begin{equation}
+  t=\ldots,-2,-1,0,1,2,\ldots .
+\end{equation}
+Une loi du mouvement est une règle de mise à jour. Elle associe à l’état à l’instant \(t\) un état à l’instant \(t+1\). La règle la plus simple ne change rien :
+\begin{equation}
+  H\longmapsto H,
+  \qquad
+  T\longmapsto T.
+  \label{eq:coin-identity}
+\end{equation}
+En partant de \(H\), on obtient toute l’évolution \(H,H,H,\ldots\) ; en partant de \(T\), on obtient \(T,T,T,\ldots\). Cette règle est monotone, mais elle est parfaitement prédictive.
+
+L’autre règle réversible échange les deux états :
+\begin{equation}
+  H\longmapsto T,
+  \qquad
+  T\longmapsto H.
+  \label{eq:coin-flip}
+\end{equation}
+Les évolutions alternent alors :
+\begin{equation}
+  H,T,H,T,\ldots,
+  \qquad
+  T,H,T,H,\ldots .
+\end{equation}
+Une flèche va de l’état précédant la mise à jour à celui qui la suit. La base de la flèche indique donc l’état de départ du système, et sa pointe indique son état d’arrivée.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_02.png}
+  \caption{Les deux configurations de la pièce et la loi de retournement orientée, dessinées au tableau pendant le cours. La règle de mise à jour épurée est donnée dans l’équation ~\eqref{eq:coin-flip}.}
+  \lectureframe{00:06:50}
+  \label{fig:coin-board}
+\end{figure}
+
+Nous pouvons coder les faces à l’aide d’une variable à deux valeurs,
+\begin{equation}
+  \sigma=
+  \begin{cases}
+    +1,&H,\\
+    -1,&T.
+  \end{cases}
+\end{equation}
+La lettre \(\sigma\) est traditionnellement utilisée en physique pour les grandeurs à deux valeurs, notamment dans les descriptions du spin, mais aucune connaissance du spin n’est nécessaire ici. Avec cette notation, les deux règles s’écrivent sous forme d’équations du mouvement :
+\begin{align}
+  \sigma(t+1)&=\sigma(t),
+  &&\text{identity law},\label{eq:sigma-identity}\\
+  \sigma(t+1)&=-\sigma(t),
+  &&\text{flip law}.\label{eq:sigma-flip}
+\end{align}
+La variable n’ajoute pas de nouvelle physique. Elle fournit une étiquette compacte pour la configuration et transforme un graphe en équation.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_03.png}
+  \caption{La loi de retournement écrite sous la forme \(\sigma(t+1)=-\sigma(t)\). Les valeurs encadrées \(\sigma=\pm1\) désignent pile et face.}
+  \lectureframe{00:08:58}
+  \label{fig:sigma-board}
+\end{figure}
+
+Pour l’une ou l’autre règle, l’état initial et la loi déterminent l’état à tout instant ultérieur. Cette affirmation suppose que le système est \emph{fermé}. Si quelqu’un intervient pour retourner la pièce, sa main exerce une influence extérieure qui ne figure pas dans notre description. Nous n’avons pas réfuté le déterminisme ; nous avons changé de système. Une loi classique est censée régir un système fermé, dont la description inclut toutes les influences pertinentes pour son évolution.
+
+Il existe quatre fonctions mathématiques d’un ensemble à deux éléments vers lui-même. Les deux autres règles, non écrites plus haut, envoient les deux entrées sur \(H\) ou toutes deux sur \(T\). Elles sont déterministes vers le futur, mais effacent la distinction entre deux passés possibles. Lorsque nous imposerons la réversibilité ci-dessous, les équations ~\eqref{eq:coin-identity} et \eqref{eq:coin-flip} seront exactement les deux applications autorisées.
+
+\section{Un dé : orbites et grandeurs conservées}
+
+Remplaçons la pièce par un dé. Pour ce qui nous occupe, le seul fait important est qu’un dé possède six configurations,
+\begin{equation}
+  \mathcal C=\{1,2,3,4,5,6\}.
+\end{equation}
+Une condition initiale consiste à choisir un nombre. Nous pourrions, là encore, laisser chaque état fixe, mais les graphes orientés sont plus utiles pour étudier des règles moins triviales. Considérons
+\begin{equation}
+  1\longmapsto2\longmapsto3\longmapsto4
+  \longmapsto5\longmapsto6\longmapsto1.
+  \label{eq:six-cycle}
+\end{equation}
+Par exemple, en partant de \(4\), on obtient l’évolution suivante :
+
+\[
+  4,5,6,1,2,3,4,\ldots .
+\]
+Les six états forment un cycle unique.\footnote{Note sur la source : lors de la première lecture des flèches, une phrase prononcée indique que \(6\) revient à \(6\). La phrase qui suit immédiatement, le cycle dessiné et l’évolution énumérée donnent tous la mise à jour voulue : \(6\mapsto1\).}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_06.png}
+  \caption{L’unique cycle à six états. À chaque pas stroboscopique, un état passe au suivant et revient à son point de départ après six mises à jour.}
+  \lectureframe{00:12:40}
+  \label{fig:six-cycle-board}
+\end{figure}
+
+Une règle peut sembler plus compliquée sans différer par sa structure. Par exemple,
+\begin{equation}
+  1\to2\to5\to3\to4\to6\to1
+  \label{eq:relabeled-cycle}
+\end{equation}
+forme toujours un cycle unique à six états. Si l’on place les sommets sur la page dans l’ordre \(1,2,5,3,4,6\), on retrouve le même schéma que dans l’équation ~\eqref{eq:six-cycle}. Des étiquettes telles que \(1\) et \(5\) ne sont que des noms ; la structure du cycle n’en dépend pas.
+
+Une loi véritablement différente répartit les six états en deux cycles, par exemple
+\begin{equation}
+  1\to2\to3\to1,
+  \qquad
+  4\to6\to5\to4.
+  \label{eq:two-cycles}
+\end{equation}
+Il n’y a toujours qu’un seul dé et une seule loi, mais une trajectoire qui commence sur un cycle ne peut jamais atteindre l’autre. On peut attribuer aux cycles un nombre \(Q\) :
+\begin{equation}
+  Q=
+  \begin{cases}
+    0,&\text{on the cycle }\{1,2,3\},\\
+    1,&\text{on the cycle }\{4,5,6\}.
+  \end{cases}
+\end{equation}
+L’état change à chaque pas, tandis que \(Q\) reste constant.
+
+\begin{definition}
+Une grandeur conservée est une fonction de l’état dont la valeur reste inchangée sous l’action de la loi du mouvement.
+\end{definition}
+
+La même idée permet d’avoir un point fixe, un cycle de longueur deux et un cycle de longueur trois. L’étiquette conservée indique sur quelle orbite se trouve le système ; elle n’a pas besoin de préciser l’état au sein de cette orbite. La conservation est donc compatible avec le mouvement. Ce qui est préservé n’est pas nécessairement la configuration entière, mais une certaine distinction entre les configurations possibles.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_07.png}
+  \caption{Plusieurs cycles disjoints au tableau : un point fixe, un cycle de longueur deux et un cycle de longueur trois. L’étiquette du cycle est conservée alors même que l’état parcourt celui-ci.}
+  \lectureframe{00:18:40}
+  \label{fig:conserved-cycles-board}
+\end{figure}
+
+Dans un système fini réversible, chaque trajectoire est un cycle. Un cycle unique ne peut pas porter d’étiquette conservée non constante de ce type élémentaire, car la trajectoire finit par visiter tous les états. La présence de plusieurs cycles permet une telle étiquette, puisque l’évolution ne fait jamais passer un état d’une composante à une autre.
+
+\section{Que faut-il inclure dans un état ?}
+
+Dans les exemples avec la pièce, la règle ne portait que sur un pas : la face suivante dépendait uniquement de la face présente. Une question du public permet de vérifier si cette restriction est essentielle.
+
+\begin{classroomqa}
+\audiencequestion{Peut-on construire une suite de piles et de faces dans laquelle le résultat suivant dépend de davantage que de la face immédiatement visible, par exemple d’un ou de plusieurs résultats antérieurs ?\lecturetimestamp{00:19:27--00:21:23}}
+
+\lecturerresponse{Oui. Dans ce cas, \(H\) ou \(T\) à lui seul ne constitue pas l’état complet. S’il faut connaître la face précédente, élargissons l’espace des états à
+\(
+  \{HH,HT,TH,TT\}.
+\)
+Chaque paire ordonnée enregistre la face présente et celle qui la précède. On peut alors de nouveau écrire l’évolution comme une règle à un pas sur cet espace à quatre états. Si une histoire plus longue est nécessaire, il suffit d’inclure également ces informations.}
+\end{classroomqa}
+
+Cette réponse donne le sens opérationnel de la notion d’état.
+
+\begin{definition}
+À un instant donné, l’état d’un système comprend toutes les informations qui, avec la loi du mouvement, sont nécessaires pour prédire son évolution future.
+\end{definition}
+
+L’état n’est donc pas simplement une photographie. Il désigne l’ensemble complet de données qui rend l’évolution déterminée. Plus tard, lorsque nous décrirons une particule newtonienne, sa position ne suffira pas : la vitesse fera aussi partie des données initiales. La pièce dotée d’une mémoire illustre le même principe sous sa forme la plus simple.
+
+\section{Espaces d’états infinis}
+
+Un nombre infini d’états n’exige pas une infinité d’objets. Considérons une particule contrainte de se déplacer sur les sites entiers d’une droite infinie. Son état est un entier
+\[
+  n\in\mathbb Z.
+\]
+Une loi la fait avancer d’un site vers la droite à chaque pas :
+\begin{equation}
+  n(t+1)=n(t)+1.
+  \label{eq:lattice-one}
+\end{equation}
+Cette orbite ne se referme jamais, mais, si on la suit dans le futur comme dans le passé, elle passe par tous les entiers. En ce sens élargi, elle joue le rôle d’un cycle sans fin.
+
+Une autre loi la fait avancer de deux sites à la fois :
+\begin{equation}
+  n(t+1)=n(t)+2.
+  \label{eq:lattice-two}
+\end{equation}
+Les sites pairs évoluent alors uniquement parmi les sites pairs, et les sites impairs uniquement parmi les sites impairs. La parité est conservée :
+\begin{equation}
+  \begin{aligned}
+    Q_{\rm parity}(n)&=n\bmod 2,\\
+    Q_{\rm parity}(n(t+1))&=Q_{\rm parity}(n(t)).
+  \end{aligned}
+\end{equation}
+Le passage d’un espace de configurations fini à un espace infini permet des évolutions qui ne se répètent jamais, mais ne change pas le sens des notions d’état, d’orbite ou de conservation.
+
+\section{Le déterminisme n’implique pas encore la réversibilité}
+
+Dessinons maintenant une règle qui prédit le futur de façon univoque, mais qui échoue à satisfaire une deuxième exigence classique. Donnons à une pièce à trois côtés les états pile, face et tranche, et définissons
+\begin{equation}
+  H\to T,
+  \qquad
+  T\to E,
+  \qquad
+  E\to T.
+  \label{eq:nonreversible-map}
+\end{equation}
+En partant de \(H\), on obtient l’évolution
+\[
+  H,T,E,T,E,\ldots;
+\]
+et, en partant de \(T\) ou de \(E\), l’alternance qui suit est tout aussi univoque. Chaque état possède exactement une flèche sortante : la règle est donc déterministe vers le futur.
+
+La difficulté apparaît lorsque nous essayons de reconstruire le passé. Si l’état présent est \(T\), l’état précédent a pu être \(H\) ou \(E\). Deux évolutions ont fusionné. Si l’on inverse toutes les flèches, le défaut devient manifeste : à partir de \(T\), le graphe inversé offre deux mouvements possibles. La règle inversée n’est pas déterministe.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_08.png}
+  \caption{La loi non réversible \(H,T,E\) et des évolutions représentatives. \(H\) et \(E\) mènent tous deux à \(T\) ; le présent ne détermine donc pas un passé unique.}
+  \lectureframe{00:28:50}
+  \label{fig:nonreversible-board}
+\end{figure}
+
+\begin{definition}
+Une loi discrète est réversible si l’état présent détermine à la fois un état suivant unique et un état précédent unique. Dans un graphe d’états, chaque état doit avoir exactement une flèche entrante et une flèche sortante.
+\end{definition}
+
+Dans un espace d’états fini, une mise à jour réversible est une permutation des états. Elle ne crée ni ne détruit de distinctions entre les états ; elle ne fait que les réarranger. C’est pourquoi son graphe se décompose en cycles. L’application de l’équation ~\eqref{eq:nonreversible-map} est bien une fonction, mais elle n’est pas injective et n’a donc pas d’inverse.
+
+\begin{classroomqa}
+\audiencequestion{Une règle de ce type pourrait-elle être admise si les états représentaient des probabilités pour une particule ?\lecturetimestamp{00:29:46--00:31:17}}
+
+\lecturerresponse{Ce serait un autre cadre théorique. La mécanique classique fondamentale, telle que nous la formulons ici, repose sur des lois déterministes plutôt que sur des règles de mise à jour probabilistes. On peut bien sûr inventer et étudier une telle règle, mais ce n’est pas une loi de mécanique classique en ce sens. La mécanique quantique n’est pas déterministe de la même manière et possède néanmoins un analogue de l’évolution réversible ; cela demandera une discussion ultérieure. La mécanique statistique classique fait aussi intervenir des probabilités, mais elle part de lois mécaniques sous-jacentes et représente notre connaissance incomplète des données initiales.}
+\end{classroomqa}
+
+Cette distinction est importante. Une distribution de probabilité utilisée parce que nous ignorons l’état classique exact ne constitue pas une loi du mouvement indéterministe. Elle décrit les informations dont nous disposons sur un système dont l’évolution microscopique est toujours supposée déterministe et réversible.
+
+\section{Lois exactes et connaissance imparfaite}
+
+La prédiction exige deux éléments :
+\begin{enumerate}
+  \item la loi du mouvement ;
+  \item l’état initial.
+\end{enumerate}
+Une loi exacte ne permet pas d’obtenir une prévision exacte si la condition initiale n’est connue qu’approximativement. Pour la pièce, il est facile d’imaginer que l’on regarde la table et que l’on détermine parfaitement la face visible. Les variables mécaniques réelles sont continues. Les positions et les vitesses peuvent prendre des valeurs réelles quelconques, et aucune mesure ne fournit une infinité de décimales.
+
+Supposons que l’état initial véritable appartienne à une petite région de l’espace des états possibles. Selon la dynamique, cette région peut rester petite pendant longtemps ; selon une autre, des états initiaux voisins peuvent diverger rapidement. Dans un système chaotique, de petites incertitudes initiales finissent par produire de grandes différences. L’atmosphère en est un exemple familier. Des mesures plus précises peuvent prolonger la période pendant laquelle la prévision est utile, mais, pour toute précision de mesure fixée, il existe un instant suffisamment éloigné où la prévision devient peu fiable.
+
+Cette limite pratique n’introduit pas d’ambiguïté dans les équations. Si les conditions initiales étaient connues exactement, une loi classique réversible déterminerait aussi bien le futur que le passé. Avec une précision finie, la question quantitative est plutôt la suivante : avec quelle précision faut-il connaître l’état initial pour pouvoir prédire l’évolution sur une durée donnée ?
+
+Le test graphique conduit à présent à une conclusion concise. Une loi représentée par exactement une flèche entrante et une flèche sortante en chaque état est déterministe et réversible. Les énoncés correspondants pour les particules seront moins élémentaires, mais ils exprimeront la même structure classique.
+
+\section{Des états abstraits aux points de l’espace}
+
+Passons maintenant des pièces et des dés aux particules ponctuelles. Une particule peut se déplacer dans une, trois, cinq dimensions, ou tout autre nombre de dimensions, mais l’espace ordinaire fournit un exemple immédiat. Pour décrire un point quantitativement, choisissons :
+\begin{itemize}
+  \item une origine ;
+  \item trois axes mutuellement perpendiculaires ;
+  \item une orientation de ces axes ;
+  \item une unité de longueur.
+\end{itemize}
+Le choix de l’origine est conventionnel. On peut la placer à Palo Alto ou ailleurs, et les conclusions physiques ne devraient pas dépendre de ce choix. Les axes peuvent être notés \(x,y,z\) ou \(x_1,x_2,x_3\). Une fois les directions \(x\) et \(y\) fixées, l’axe \(z\) peut pointer dans l’un ou l’autre de deux sens perpendiculaires. Nous adoptons la convention directe : le pouce de la main droite pointant dans la direction \(x\) et l’index dans la direction \(y\), le majeur pointe dans la direction \(z\).
+
+Des graduations identiques le long des axes exigent une unité, par exemple le mètre, le pied, le pouce ou l’année-lumière. Une fois ces conventions fixées, chaque point est repéré par trois nombres,
+\begin{equation}
+  (x,y,z).
+\end{equation}
+On peut atteindre le point depuis l’origine en se déplaçant le long des trois axes. Un système composé de plusieurs particules requiert un tel triplet pour chacune d’elles.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_09.png}
+  \caption{Les axes cartésiens et les trois coordonnées d’un point. Le dessin fixe une convention de coordonnées ; le point lui-même ne dépend pas du choix de l’origine ou des axes.}
+  \lectureframe{00:43:00}
+  \label{fig:coordinates-board}
+\end{figure}
+
+\section{Vecteurs et composantes}
+
+Un vecteur est un objet doté d’une norme et d’une direction. Le déplacement de l’origine à un point est un vecteur, mais les vecteurs servent aussi à décrire la vitesse, l’accélération, les champs électriques et bien d’autres grandeurs. Nous noterons un vecteur en caractères gras, par exemple \(\mathbf v\), et sa norme \(\lvert\mathbf v\rvert\). Cette norme est positive ou nulle, et ne s’annule que pour le vecteur nul.
+
+Géométriquement, un vecteur est une flèche libre. La translater sans changer sa longueur ni sa direction ne change pas le vecteur. Dans une application donnée, un vecteur peut être attaché à un point, comme lorsqu’on spécifie le champ électrique en un lieu donné, mais cette attache est une information supplémentaire et ne fait pas partie du vecteur abstrait lui-même.
+
+Dans un repère cartésien, un vecteur a pour composantes
+\begin{equation}
+  \mathbf v=(v_x,v_y,v_z).
+\end{equation}
+Les composantes sont des nombres signés ordinaires, obtenus par projection sur les axes. Elles codent à la fois la norme et la direction. Le théorème de Pythagore en trois dimensions donne
+\begin{equation}
+  \lvert\mathbf v\rvert^2
+  =v_x^2+v_y^2+v_z^2,
+  \qquad
+  \lvert\mathbf v\rvert
+  =\sqrt{v_x^2+v_y^2+v_z^2}.
+  \label{eq:vector-magnitude}
+\end{equation}
+Les rapports entre les composantes déterminent la direction. Une composante négative signifie que le vecteur pointe en partie dans le sens négatif de l’axe correspondant.
+
+\subsection{Multiplication par un scalaire et addition}
+
+La multiplication par un nombre réel modifie la longueur d’un vecteur et, si ce nombre est négatif, en inverse la direction. Pour \(c>0\), \(c\mathbf A\) pointe dans la direction de \(\mathbf A\) et a pour norme \(c\lvert\mathbf A\rvert\). En particulier, \(-\mathbf A\) a la même longueur que \(\mathbf A\), mais pointe dans le sens opposé.
+
+Il existe trois représentations équivalentes de l’addition vectorielle. Premièrement, plaçons l’origine de \(\mathbf B\) à la pointe de \(\mathbf A\) ; la flèche allant de l’origine de \(\mathbf A\) à la pointe de \(\mathbf B\) est \(\mathbf A+\mathbf B\).
+Deuxièmement, plaçons les origines des deux vecteurs au même point et complétons un parallélogramme ; sa diagonale est leur somme. Cette construction rend visible la commutativité :
+\begin{equation}
+  \mathbf A+\mathbf B=\mathbf B+\mathbf A.
+\end{equation}
+Troisièmement, additionnons les composantes correspondantes :
+\begin{equation}
+  C_i=A_i+B_i,
+  \qquad i=x,y,z,
+  \label{eq:component-addition}
+\end{equation}
+où \(\mathbf C=\mathbf A+\mathbf B\). Ces règles définissent aussi des combinaisons linéaires quelconques, telles que \(a\mathbf A+b\mathbf B\).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_10.png}
+  \caption{Les constructions du triangle et du parallélogramme pour l’addition vectorielle. Toutes deux donnent le même vecteur \(\mathbf A+\mathbf B\).}
+  \lectureframe{00:53:00}
+  \label{fig:vector-addition-board}
+\end{figure}
+
+Il n’existe pas d’opération générale permettant de diviser un vecteur par un autre. Il existe toutefois deux produits vectoriels usuels. Nous réserverons le produit vectoriel à un cours ultérieur. Ici, nous avons besoin du produit scalaire.
+
+\subsection{Le produit scalaire}
+
+Projetons \(\mathbf A\) sur l’axe défini par \(\mathbf B\). Si l’angle entre les vecteurs est \(\theta\), la composante algébrique de \(\mathbf A\) selon \(\mathbf B\) vaut \(\lvert\mathbf A\rvert\cos\theta\). La multiplication de cette projection par \(\lvert\mathbf B\rvert\) définit
+\begin{equation}
+  \mathbf A\cdot\mathbf B
+  =\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert\cos\theta.
+  \label{eq:dot-geometric}
+\end{equation}
+Le résultat est un scalaire, et non un autre vecteur. L’équation ~\eqref{eq:dot-geometric} est symétrique par rapport à \(\mathbf A\) et \(\mathbf B\) ; ainsi, \(\mathbf A\cdot\mathbf B=\mathbf B\cdot\mathbf A\).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_11.png}
+  \caption{Construction au tableau du produit scalaire par projection. La forme composée est \(\mathbf A\cdot\mathbf B=AB\cos\theta\).}
+  \lectureframe{00:58:30}
+  \label{fig:dot-product-board}
+\end{figure}
+
+Le signe fournit une information géométrique. Le produit scalaire est positif pour un angle aigu, négatif pour un angle obtus et nul pour des vecteurs perpendiculaires. Ainsi,
+\begin{equation}
+  \mathbf A\perp\mathbf B
+  \quad\Longleftrightarrow\quad
+  \mathbf A\cdot\mathbf B=0
+\end{equation}
+pour des vecteurs non nuls.
+
+En composantes,
+\begin{equation}
+  \mathbf A\cdot\mathbf B
+  =A_xB_x+A_yB_y+A_zB_z.
+  \label{eq:dot-components}
+\end{equation}
+Cette formule permet d’effectuer directement les calculs. En particulier,
+\begin{equation}
+  \mathbf A\cdot\mathbf A
+  =A_x^2+A_y^2+A_z^2
+  =\lvert\mathbf A\rvert^2.
+  \label{eq:self-dot}
+\end{equation}
+Étant données les composantes de deux vecteurs, les équations ~\eqref{eq:dot-geometric} et \eqref{eq:dot-components} déterminent l’angle qu’ils forment :
+\begin{equation}
+  \cos\theta
+  =\frac{\mathbf A\cdot\mathbf B}
+  {\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert}.
+\end{equation}
+
+La loi des cosinus découle du même calcul. Soient \(\mathbf A\) et \(\mathbf B\) les vecteurs allant d’un même sommet aux deux autres sommets d’un triangle. Le troisième côté est
+\(\mathbf C=\mathbf A-\mathbf B\), et non \(\mathbf A+\mathbf B\). Par conséquent,
+\begin{align}
+  C^2
+  &=(\mathbf A-\mathbf B)\cdot(\mathbf A-\mathbf B)\notag\\
+  &=A^2+B^2-2\mathbf A\cdot\mathbf B\notag\\
+  &=A^2+B^2-2AB\cos\theta.
+  \label{eq:law-of-cosines}
+\end{align}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_04.png}
+  \caption{Triangle utilisé pour la loi des cosinus. La correction apportée au tableau identifie le côté de fermeture comme étant \(\mathbf C=\mathbf A-\mathbf B\), ce qui conduit à l’équation ~\eqref{eq:law-of-cosines}.}
+  \lectureframe{01:04:29}
+  \label{fig:law-cosines-board}
+\end{figure}
+
+\section{Position, vitesse et accélération}
+
+Choisissons une origine et notons \(\mathbf r\) le vecteur position allant de l’origine à une particule. Ses composantes sont les coordonnées cartésiennes :
+\begin{equation}
+  \mathbf r=(x,y,z),
+  \qquad
+  \lvert\mathbf r\rvert=\sqrt{x^2+y^2+z^2}.
+\end{equation}
+Changer d’origine modifie \(\mathbf r\) ; nous remettrons cette question à plus tard. Une fois l’origine fixée, le mouvement est décrit par une position dépendant du temps,
+\begin{equation}
+  \mathbf r(t)=\bigl(x(t),y(t),z(t)\bigr).
+\end{equation}
+La trajectoire est donc codée par trois fonctions du temps.
+
+La vitesse est la dérivée temporelle de la position :
+\begin{equation}
+  \mathbf v(t)=\frac{d\mathbf r}{dt}
+  =\dot{\mathbf r}(t),
+  \qquad
+  v_i=\frac{dx_i}{dt}=\dot x_i.
+  \label{eq:velocity}
+\end{equation}
+Un point désigne toujours une dérivée par rapport au temps. La norme \(\lvert\mathbf v\rvert\) est la vitesse scalaire. En général, la position et la vitesse ont des directions indépendantes : en un lieu donné, une particule peut se déplacer dans toute direction permise par le problème.
+
+L’accélération est le taux de variation de la vitesse, donc la dérivée seconde de la position par rapport au temps :
+\begin{equation}
+  \mathbf a(t)=\frac{d\mathbf v}{dt}
+  =\dot{\mathbf v}(t)
+  =\frac{d^2\mathbf r}{dt^2}
+  =\ddot{\mathbf r}(t),
+  \qquad
+  a_i=\ddot x_i.
+  \label{eq:acceleration}
+\end{equation}
+L’accélération est elle aussi un vecteur. Si une particule se déplaçant dans le sens positif de \(x\) accélère, \(a_x>0\). Si elle ralentit, \(a_x<0\). Ce qu’on appelle souvent une décélération est simplement une accélération opposée à la vitesse instantanée. Plus généralement, la vitesse peut changer de direction même si sa norme reste constante.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_05.png}
+  \caption{Composantes de la vitesse écrites comme dérivées temporelles des composantes de la position. En notation vectorielle compacte, \(\mathbf v=d\mathbf r/dt\).}
+  \lectureframe{01:14:24}
+  \label{fig:velocity-board}
+\end{figure}
+
+\subsection{Accélération uniforme sur une droite}
+
+Pour un mouvement à une dimension, écrivons
+\begin{equation}
+  x(t)=a+bt+ct^2.
+  \label{eq:quadratic-motion}
+\end{equation}
+À l’instant \(t=0\), la particule se trouve en \(x=a\). Une puis deux dérivations donnent
+\begin{align}
+  v(t)=\dot x(t)&=b+2ct,\label{eq:line-velocity}\\
+  a(t)=\ddot x(t)&=2c.\label{eq:line-acceleration}
+\end{align}
+Ainsi, \(b\) est la vitesse initiale et \(2c\) une accélération constante. Si \(c>0\), la vitesse augmente linéairement ; si \(c<0\), elle diminue linéairement. Cette loi quadratique pour la position décrit un mouvement à accélération constante, comme le mouvement idéalisé d’un corps en chute près de la surface terrestre.
+
+\section{Mouvement circulaire uniforme}
+
+Pour finir, considérons une particule se déplaçant dans le plan \(x\)-\(y\) sur le cercle unité. Elle part du point de l’axe \(x\) positif à l’instant \(t=0\), et sa coordonnée angulaire augmente uniformément :
+\begin{equation}
+  \theta(t)=\omega t.
+\end{equation}
+La constante \(\omega\) est la pulsation. Un tour correspond à une augmentation de l’angle de \(2\pi\) ; la période est donc
+\begin{equation}
+  T=\frac{2\pi}{\omega}.
+  \label{eq:circular-period}
+\end{equation}
+On peut laisser l’angle augmenter au-delà de \(2\pi\) ; la position se répète, même si l’angle, enregistré de manière continue, ne revient pas à zéro.
+
+Sur le cercle unité,
+\begin{equation}
+  \mathbf r(t)
+  =\bigl(\cos\omega t,\,\sin\omega t\bigr).
+  \label{eq:circular-position}
+\end{equation}
+La dérivation donne
+\begin{equation}
+  \mathbf v(t)
+  =\omega\bigl(-\sin\omega t,\,\cos\omega t\bigr).
+  \label{eq:circular-velocity}
+\end{equation}
+La vitesse est tangente au cercle. Nous pouvons démontrer qu’elle est perpendiculaire au rayon sans nous appuyer sur le dessin :
+\begin{align}
+  \mathbf r\cdot\mathbf v
+  &=\cos\omega t\,(-\omega\sin\omega t)
+    +\sin\omega t\,(\omega\cos\omega t)\notag\\
+  &=0.
+  \label{eq:r-dot-v}
+\end{align}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_12.png}
+  \caption{Composantes de la position et de la vitesse pour un mouvement sur le cercle unité. L’annulation dans \(\mathbf r\cdot\mathbf v\) vérifie que la vitesse est tangente au cercle.}
+  \lectureframe{01:24:30}
+  \label{fig:circular-velocity-board}
+\end{figure}
+
+En dérivant une nouvelle fois,
+\begin{equation}
+  \mathbf a(t)
+  =-\omega^2
+  \bigl(\cos\omega t,\,\sin\omega t\bigr)
+  =-\omega^2\mathbf r(t).
+  \label{eq:centripetal-acceleration}
+\end{equation}
+L’accélération est parallèle au rayon, mais pointe dans le sens opposé, vers le centre. C’est l’accélération centripète.\footnote{Note terminologique : le mot « ``centrifuge'' » apparaît à cet endroit du cours, mais l’équation et la description qui l’accompagne identifient l’accélération centripète usuelle, dirigée vers le centre.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_13.png}
+  \caption{Calcul des composantes de l’accélération circulaire. Chaque composante est égale à \(-\omega^2\) multiplié par la composante correspondante de la position ; ainsi, \(\mathbf a=-\omega^2\mathbf r\).}
+  \lectureframe{01:26:30}
+  \label{fig:circular-acceleration-board}
+\end{figure}
+
+Comme le rayon vaut un,
+\begin{equation}
+  \lvert\mathbf r\rvert=1,
+  \qquad
+  \lvert\mathbf v\rvert=\omega,
+  \qquad
+  \lvert\mathbf a\rvert=\omega^2.
+\end{equation}
+Augmenter \(\omega\) augmente linéairement la vitesse et quadratiquement l’accélération centripète nécessaire. Pour un cercle de rayon \(R\), le même calcul donnerait \(v=\omega R\) et \(\lvert\mathbf a\rvert=\omega^2R=v^2/R\) ; le cours utilise \(R=1\) afin de ne pas alourdir le premier calcul.
+
+Nous disposons maintenant du langage élémentaire nécessaire à la mécanique des particules : états et données initiales, évolution réversible, coordonnées, vecteurs et dérivées définissant la vitesse et l’accélération. Il nous faut ensuite déterminer précisément quelles données initiales spécifient une particule et trouver les lois qui font évoluer ces données d’un instant au suivant.

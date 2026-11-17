@@ -1,0 +1,855 @@
+\chapter{Mécanique des particules, quadrivecteur énergie-impulsion et énergie de repos}
+
+\section{L’approximation que nous utiliserons à plusieurs reprises}
+
+La mécanique d’une particule relativiste doit répondre à des questions familières dans un langage nouveau. Comment une particule se déplace-t-elle ? Quels sont sa quantité de mouvement et son énergie ? Pourquoi ces grandeurs s’inscrivent-elles dans un quadrivecteur, et comment \(E=mc^2\) découle-t-il des outils ordinaires de la mécanique ? Avant d’aborder ces questions, nous avons besoin d’une approximation élémentaire qui reviendra tout au long du calcul.
+
+Pour tout exposant \(p\), la série du binôme s’écrit
+\begin{equation}
+\begin{aligned}
+(1+\epsilon)^p
+&=1+p\epsilon\\
+&\quad+\frac{p(p-1)}{2!}\epsilon^2\\
+&\quad+\frac{p(p-1)(p-2)}{3!}\epsilon^3
++\cdots .
+\end{aligned}
+\label{eq:sr3-binomial}
+\end{equation}
+L’exposant peut être positif, négatif, fractionnaire ou même complexe. Pour \(\epsilon\) suffisamment petit, la série converge rapidement et chaque terme successif est plus petit que le précédent. On peut alors s’arrêter à l’ordre requis par la précision souhaitée. Le terme d’ordre zéro est souvent le plus grand, mais, dans les applications qui suivent, il est fréquemment constant et donc sans intérêt dynamique. C’est dans la première correction qu’apparaît le mouvement.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_01.png}
+\caption{La série du binôme jusqu’à l’ordre cubique, utilisée pour retrouver la mécanique non relativiste à partir des formules relativistes.}
+\lectureframe{00:04:24}
+\end{figure}
+
+On pose généralement \(c=1\) ; une vitesse \(v\) représente donc la fraction \(v/c\) de la vitesse de la lumière. Prenons \(\epsilon=-v^2\). Avec \(p=\tfrac12\),
+\begin{equation}
+\sqrt{1-v^2}
+=
+1-\frac{v^2}{2}-\frac{v^4}{8}-\cdots
+\approx
+1-\frac{v^2}{2},
+\qquad |v|\ll 1.
+\label{eq:sr3-sqrt-expansion}
+\end{equation}
+Avec \(p=-\tfrac12\), les deux signes moins s’annulent :
+\begin{equation}
+\frac{1}{\sqrt{1-v^2}}
+=
+1+\frac{v^2}{2}+\frac{3v^4}{8}+\cdots
+\approx
+1+\frac{v^2}{2}.
+\label{eq:sr3-gamma-expansion}
+\end{equation}
+On peut reconnaître, a posteriori, de nombreux facteurs \(1/2\) de la mécanique classique comme la première correction de l’un de ces développements relativistes. L’approximation cesse d’être valable lorsque \(v\) tend vers un ; aucun développement tronqué à un ordre fini ne peut alors reproduire le comportement singulier de l’expression exacte.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_02.png}
+\caption{Les deux formules à basse vitesse apparaissent : \(\sqrt{1-v^2}\approx1-v^2/2\) et \((1-v^2)^{-1/2}\approx1+v^2/2\).}
+\lectureframe{00:07:39}
+\end{figure}
+
+\section{Qu’appelle-t-on une particule ?}
+
+En mécanique, une particule n’a pas besoin d’être élémentaire. Il peut s’agir d’un électron, du Soleil, d’une boîte de chocolats ou d’un beignet. Il suffit que l’objet soit assez cohérent pour que son mouvement d’ensemble puisse être décrit par son centre de masse. Le beignet rappelle utilement que le centre de masse ne se trouve pas nécessairement dans la matière qui constitue l’objet.
+
+En mécanique newtonienne, les variables du centre de masse vérifient
+\begin{equation}
+\vec p=m\vec v,
+\qquad
+K=\frac12mv^2,
+\qquad
+\vec F=m\vec a.
+\label{eq:sr3-newtonian-particle}
+\end{equation}
+Ces formules ne dépendent pas du caractère élémentaire ou composite de l’objet. Un objet composite possède aussi une énergie interne. Un beignet en mouvement, par exemple, a une énergie cinétique du centre de masse, à laquelle s’ajoutent ses énergies chimique, thermique et de liaison :
+\begin{equation}
+E_{\text{Newtonian}}
+=
+E_{\text{internal}}+\frac12mv^2.
+\label{eq:sr3-newtonian-internal}
+\end{equation}
+Le terme interne est indépendant de la vitesse d’ensemble du centre de masse. La relativité conserve cette distinction, mais révèle que l’énergie interne contribue à la masse invariante de l’objet entier.
+
+Les outils nécessaires sont les mêmes qu’en mécanique classique : trajectoires, principe de l’action stationnaire, lagrangiens, quantités de mouvement canoniques, hamiltoniens et relation entre symétries continues et lois de conservation.
+
+\section{Lignes d’univers et séparation causale}
+
+Représentons la position d’un système horizontalement et le temps verticalement. Son histoire forme alors une courbe dans l’espace-temps. Pour une particule, cette courbe est sa \emph{ligne d’univers}. Ce concept existe en mécanique newtonienne, mais il devient fondamental en relativité, car les transformations de Lorentz mélangent l’espace et le temps.
+
+Considérons deux événements séparés par
+\begin{equation}
+\Delta x^\mu=(\Delta t,\Delta\vec x),
+\qquad
+\Delta\vec x^{\,2}
+=
+(\Delta x)^2+(\Delta y)^2+(\Delta z)^2.
+\end{equation}
+Dans les unités \(c=1\), leur intervalle invariant vaut
+\begin{equation}
+(\Delta\tau)^2
+=
+(\Delta t)^2-\Delta\vec x^{\,2}.
+\label{eq:sr3-interval}
+\end{equation}
+
+\subsection{Séparation de genre temps}
+
+Si \((\Delta t)^2>\Delta\vec x^{\,2}\), alors \((\Delta\tau)^2>0\) et la séparation est de genre temps. Il existe un référentiel de Lorentz dans lequel les deux événements se produisent au même endroit. Dans ce référentiel, la droite qui les relie est verticale et une horloge peut aller de l’un à l’autre. Le temps écoulé qu’elle indique est le temps propre \(\Delta\tau\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_03.png}
+\caption{Un intervalle de genre temps comporte une séparation temporelle supérieure à la séparation spatiale ; il existe un référentiel de repos dans lequel les deux événements ont la même position.}
+\lectureframe{00:14:42}
+\end{figure}
+
+\subsection{Séparation de genre espace}
+
+Si \(\Delta\vec x^{\,2}>(\Delta t)^2\), l’intervalle est de genre espace. Aucun référentiel inertiel ne place les deux événements au même endroit, mais il en existe un dans lequel ils sont simultanés. D’autres référentiels peuvent inverser leur ordre temporel. Par conséquent, ni \emph{l’événement \(A\) ne s’est produit en premier} ni \emph{l’événement \(B\) ne s’est produit en premier} n’est un énoncé invariant pour une paire d’événements séparés par un intervalle de genre espace. C’est la relativité de la simultanéité sous sa forme géométrique.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_04.png}
+\caption{Pour un intervalle de genre espace, un changement de référentiel inertiel peut rendre les deux événements simultanés ou inverser leur ordre temporel.}
+\lectureframe{00:17:01}
+\end{figure}
+
+Une particule massive suit une ligne d’univers de genre temps : chaque segment suffisamment court vérifie \(d\tau^2>0\). En composant successivement des vitesses de \(0.9c\), on peut rapprocher toujours davantage une particule de \(c\), sans jamais la dépasser. Cette approche rappelle le paradoxe de Zénon. Cette restriction causale s’applique non seulement aux objets matériels, mais aussi aux signaux et à l’information, puisque celle-ci doit être transportée par des systèmes physiques. Un signal supraluminique permettrait à différents référentiels de diverger sur l’extrémité de son histoire qui constitue la cause et celle qui constitue l’effet.
+
+\section{Quadrivitesse}
+
+Concentrons-nous sur un court segment de genre temps. En unités usuelles,
+\begin{equation}
+d\tau
+=
+\sqrt{dt^2-\frac{d\vec x^{\,2}}{c^2}}.
+\label{eq:sr3-proper-time-dimensional}
+\end{equation}
+Le facteur \(c^2\) est imposé par l’analyse dimensionnelle : \(dt^2\) s’exprime en unités de temps au carré, tandis que \(d\vec x^{\,2}\) s’exprime en unités de longueur au carré.
+
+\begin{classroomqa}
+\audiencequestion{Où faut-il introduire la vitesse de la lumière lorsque l’intervalle est écrit en unités usuelles ?}
+\lecturerresponse{Il faut diviser le terme spatial par \(c^2\), ce qui donne \(d\tau^2=dt^2-d\vec x^{\,2}/c^2\). Nous reviendrons généralement à \(c=1\), mais la cohérence dimensionnelle permet toujours de retrouver les facteurs manquants. \lecturetimestamp{00:21:23}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_05.png}
+\caption{Un déplacement de la ligne d’univers \(\Delta x^\mu=(\Delta t,\Delta\vec x)\) et l’incrément de temps propre qui lui est associé.}
+\lectureframe{00:21:03}
+\end{figure}
+
+La vitesse ordinaire possède trois composantes spatiales,
+\begin{equation}
+v^i=\frac{dx^i}{dt},
+\qquad i=1,2,3.
+\end{equation}
+La vitesse relativiste s’obtient en divisant le déplacement complet dans l’espace-temps par le temps propre invariant :
+\begin{equation}
+u^\mu
+=
+\frac{dx^\mu}{d\tau},
+\qquad
+\mu=0,1,2,3.
+\label{eq:sr3-four-velocity-definition}
+\end{equation}
+Les indices grecs parcourent l’espace-temps ; les indices latins, l’espace. La composante temporelle de la position est \(x^0=t\) en unités \(c=1\), donc
+\begin{equation}
+u^0=\frac{dt}{d\tau}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_06.png}
+\caption{La vitesse ordinaire divise le déplacement spatial par le temps coordonné, tandis que la quadrivitesse divise ses quatre composantes par le temps propre.}
+\lectureframe{00:24:05}
+\end{figure}
+
+Pour relier \(u^\mu\) à \(\vec v\), factorisons \(dt^2\) dans l’intervalle :
+\begin{align}
+d\tau^2
+&=dt^2-d\vec x^{\,2}\\
+&=dt^2\left(1-\frac{d\vec x^{\,2}}{dt^2}\right)
+=dt^2(1-v^2).
+\end{align}
+En prenant la racine positive pour une ligne d’univers orientée vers le futur,
+\begin{equation}
+\frac{d\tau}{dt}=\sqrt{1-v^2},
+\qquad
+\frac{dt}{d\tau}=\frac{1}{\sqrt{1-v^2}}
+\equiv\gamma.
+\label{eq:sr3-time-component}
+\end{equation}
+Pour une composante spatiale,
+\begin{equation}
+v^i
+=
+\frac{dx^i}{dt}
+=
+\frac{dx^i}{d\tau}\frac{d\tau}{dt}
+=u^i\sqrt{1-v^2}.
+\end{equation}
+On obtient donc
+\begin{equation}
+\boxed{
+u^\mu
+=
+\gamma(1,\vec v)
+},
+\qquad
+u^0=\gamma,
+\qquad
+u^i=\gamma v^i.
+\label{eq:sr3-four-velocity-components}
+\end{equation}
+À faible vitesse, \(u^0\to1\) et \(u^i\to v^i\). À proximité de la vitesse de la lumière, \(u^0\) et la norme de la quadrivitesse spatiale deviennent toutes deux grandes, même si \(|\vec v|<1\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_07.png}
+\caption{La relation établie entre la vitesse ordinaire et les quatre composantes de \(u^\mu\).}
+\lectureframe{00:30:40}
+\end{figure}
+
+\subsection{Pourquoi seules trois composantes sont indépendantes}
+
+La quadrivitesse a quatre composantes, mais seulement trois degrés de liberté indépendants. En divisant l’identité de l’intervalle par \(d\tau^2\), on obtient
+\begin{equation}
+1
+=
+\left(\frac{dt}{d\tau}\right)^2
+-\left(\frac{d\vec x}{d\tau}\right)^2,
+\end{equation}
+soit
+\begin{equation}
+\boxed{
+(u^0)^2-\vec u^{\,2}=1
+}.
+\label{eq:sr3-four-velocity-normalization}
+\end{equation}
+Cette condition de normalisation élimine une composante indépendante.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_08.png}
+\caption{L’intervalle invariant donne immédiatement la condition de normalisation \((u^0)^2-\vec u^{\,2}=1\).}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La perte d’une composante indépendante peut-elle se comprendre en dérivant par rapport au temps propre lui-même ?}
+\lecturerresponse{Oui. Le temps propre n’est pas une cinquième coordonnée indépendante : il est déterminé par l’intervalle d’espace-temps le long de la ligne d’univers. La division de cette relation définitoire par \(d\tau^2\) contraint les quatre dérivées à appartenir à l’hyperboloïde unité de genre temps \((u^0)^2-\vec u^{\,2}=1\). \lecturetimestamp{00:34:07}}
+\end{classroomqa}
+
+\section{Une action invariante pour une particule libre}
+
+Quelle loi régit une ligne d’univers en l’absence de force ? Nous retenons deux enseignements de la mécanique classique :
+\begin{enumerate}
+\item le chemin physique rend l’action stationnaire lorsque ses extrémités sont fixées ;
+\item l’action est construite par addition des segments infinitésimaux du chemin.
+\end{enumerate}
+La relativité impose une troisième exigence : tous les observateurs inertiels doivent s’accorder sur l’action. Le scalaire infinitésimal naturel disponible le long d’une ligne d’univers de genre temps est \(d\tau\). L’action d’une particule libre est donc
+\begin{equation}
+\boxed{
+S=-m\int_a^b d\tau
+}
+\qquad(c=1).
+\label{eq:sr3-invariant-action}
+\end{equation}
+On peut aussi la voir comme une somme finie :
+\begin{equation}
+S=-m\lim_{N\to\infty}\sum_{k=1}^{N}\Delta\tau_k.
+\end{equation}
+Puisque tous les observateurs s’accordent sur chaque incrément de temps propre, ils s’accordent aussi sur le chemin qui rend leur somme stationnaire.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_09.png}
+\caption{L’action est construite comme une somme d’incréments invariants de temps propre le long d’une ligne d’univers variée à extrémités fixes.}
+\lectureframe{00:38:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Que devient l’énergie si l’action est multipliée par une constante arbitraire ?}
+\lecturerresponse{L’énergie n’est pas l’invariant de départ ; elle sera déduite du lagrangien et de l’hamiltonien. Multiplier toute l’action par une constante non nulle laisse inchangés ses chemins stationnaires, mais modifie l’échelle des grandeurs canoniques définies à partir de cette action. La normalisation \(-m\) est choisie de sorte que ces grandeurs dérivées correspondent aux conventions newtoniennes établies. \lecturetimestamp{00:39:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi un invariant tel que le temps propre est-il un bon point de départ pour construire l’action ?}
+\lecturerresponse{Parce qu’une loi d’action stationnaire devrait sélectionner le même chemin physique dans tous les référentiels inertiels. Cela revient à chercher la courbe la plus courte dans un plan euclidien : les rotations modifient les composantes des coordonnées, mais pas chaque longueur infinitésimale ; elles ne peuvent donc pas changer la courbe la plus courte. Remplacer la longueur euclidienne par le temps propre donne la construction relativiste. \lecturetimestamp{00:40:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi choisir la racine carrée positive pour le temps propre plutôt que la racine négative ?}
+\lecturerresponse{Le temps propre est défini comme le temps écoulé positif indiqué par une horloge transportée du passé vers le futur. Choisir systématiquement la racine négative ne ferait qu’inverser le signe de l’action, transformant un minimum en maximum sans changer la ligne d’univers stationnaire. Dans le référentiel de repos de l’horloge, la convention positive donne \(d\tau=dt\). \lecturetimestamp{00:42:59}}
+\end{classroomqa}
+
+Le facteur \(-m\) est lui aussi une convention de normalisation, choisie pour retrouver la mécanique newtonienne. En rétablissant les unités, l’action conventionnelle s’écrit
+\begin{equation}
+S=-mc^2\int_a^b d\tau.
+\label{eq:sr3-action-dimensional}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_10.png}
+\caption{La somme finie des temps propres devient l’intégrale invariante \(-m\int d\tau\) en unités naturelles.}
+\lectureframe{00:46:23}
+\end{figure}
+
+\section{Le lagrangien relativiste}
+
+Pour mettre l’action sous sa forme mécanique usuelle, factorisons \(dt\) dans \(d\tau\) :
+\begin{equation}
+d\tau
+=dt\sqrt{1-\dot{\vec x}^{\,2}},
+\qquad
+\dot{\vec x}^{\,2}
+=\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+On obtient alors
+\begin{equation}
+S
+=
+\int_a^b L\,dt,
+\qquad
+\boxed{
+L=-m\sqrt{1-v^2}
+}
+\quad(c=1).
+\label{eq:sr3-relativistic-lagrangian}
+\end{equation}
+En unités usuelles,
+\begin{equation}
+L=-mc^2\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr3-relativistic-lagrangian-c}
+\end{equation}
+C’est le lagrangien d’une particule libre : il dépend de la vitesse, mais pas de la position. Aucune force ni aucun potentiel n’ont encore été introduits.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_11.png}
+\caption{En factorisant \(dt\), on fait apparaître le lagrangien relativiste libre en fonction des trois composantes de la vitesse.}
+\lectureframe{00:49:57}
+\end{figure}
+
+\subsection{Retrouver Lagrange et Newton}
+
+Substituons \eqref{eq:sr3-sqrt-expansion} :
+\begin{align}
+L
+&=-m\sqrt{1-v^2}\\
+&\approx-m\left(1-\frac{v^2}{2}\right)\\
+&=-m+\frac12mv^2.
+\label{eq:sr3-lagrangian-low-speed}
+\end{align}
+La constante \(-m\) est indépendante de la position comme de la vitesse. Elle contribue de la même façon à tous les chemins ayant les mêmes temps aux extrémités et disparaît donc des équations d’Euler--Lagrange. La partie qui porte le contenu dynamique est précisément
+\begin{equation}
+L_{\mathrm{Newton}}=\frac12mv^2.
+\end{equation}
+Le signe et la normalisation en masse de l’action invariante ont donc été choisis correctement.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_12.png}
+\caption{Le développement à faible vitesse laisse une constante \(-m\) et le lagrangien newtonien d’une particule libre \(mv^2/2\).}
+\lectureframe{00:53:24}
+\end{figure}
+
+Pour la particule libre considérée ici, les équations d’Euler--Lagrange diront seulement que la vitesse est constante et que la ligne d’univers dans l’espace-temps est droite. Il est plus instructif d’identifier la quantité de mouvement et l’énergie conservées.
+
+\section{Quantité de mouvement canonique}
+
+Comme \(L\) ne dépend pas de la position, il est invariant par translation spatiale. La grandeur conservée correspondante est la quantité de mouvement. Nous ne supposons pas la formule newtonienne \(p_i=mv_i\) ; nous utilisons la définition canonique
+\begin{equation}
+p_i=\frac{\partial L}{\partial\dot x^i}.
+\label{eq:sr3-canonical-momentum}
+\end{equation}
+Pour \(L=-m\sqrt{1-v^2}\),
+\begin{align}
+p_i
+&=
+-m\frac{1}{2\sqrt{1-v^2}}
+\frac{\partial}{\partial\dot x^i}(1-v^2)\\
+&=
+-m\frac{1}{2\sqrt{1-v^2}}(-2\dot x^i)\\
+&=
+\frac{mv_i}{\sqrt{1-v^2}}
+=m\gamma v_i.
+\label{eq:sr3-relativistic-momentum}
+\end{align}
+Puisque \(u^i=\gamma v^i\),
+\begin{equation}
+\boxed{
+p^i=mu^i
+}.
+\label{eq:sr3-momentum-spatial}
+\end{equation}
+À faible vitesse, cette expression se réduit à \(p^i\approx mv^i\). À proximité de la vitesse de la lumière, le dénominateur joue un rôle décisif.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_13.png}
+\caption{La dérivation canonique du lagrangien à racine carrée donne \(p_x=mv_x/\sqrt{1-v^2}\).}
+\lectureframe{00:58:49}
+\end{figure}
+
+\subsection{La masse, et non la masse relativiste}
+
+Ici, \(m\) désigne simplement la masse de la particule : un paramètre invariant qui ne change pas lorsque la particule se déplace. Les textes anciens l’appellent parfois \emph{masse au repos} et désignent \(E/c^2\) par \emph{masse relativiste} dépendant de la vitesse. L’usage moderne évite cette distinction. Le mouvement modifie l’énergie et la quantité de mouvement, pas la masse invariante. La masse d’un électron est le même paramètre dans tous les référentiels.
+
+\section{De la quantité de mouvement à trois composantes au quadrivecteur énergie-impulsion}
+
+Un énoncé portant sur une composante d’un quadrivecteur dépend généralement du référentiel. Par exemple, \(\Delta\vec x=0\) signifie que deux événements ont la même position dans un référentiel, mais un boost incline cet intervalle et donne \(\Delta\vec x'\ne0\). En revanche,
+\begin{equation}
+\Delta x^\mu=0
+\end{equation}
+est invariant : si ses quatre composantes s’annulent dans un référentiel, elles s’annulent dans tous les référentiels. De même, \(\vec u=0\) identifie seulement le référentiel de repos de la particule ; ce n’est pas une description invariante de la quadrivitesse.
+
+Pour un système fermé, la conservation ordinaire de la quantité de mouvement s’écrit
+\begin{equation}
+\vec P_{\mathrm{initial}}-\vec P_{\mathrm{final}}=0.
+\label{eq:sr3-three-momentum-conservation}
+\end{equation}
+C’est une équation vectorielle à trois composantes. Pour rendre la conservation manifestement covariante de Lorentz, il nous faut une quatrième composante qui complète les trois \(p^i=mu^i\). Le prolongement le plus évident est
+\begin{equation}
+p^\mu=mu^\mu.
+\label{eq:sr3-four-momentum}
+\end{equation}
+En unités \(c=1\),
+\begin{equation}
+p^\mu=(p^0,\vec p)
+=
+m\gamma(1,\vec v).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_14.png}
+\caption{La conservation de la quantité de mouvement ne devient invariante qu’après adjonction d’une quatrième composante aux composantes spatiales.}
+\lectureframe{01:09:51}
+\end{figure}
+
+La composante manquante doit elle-même se conserver. La mécanique des particules comporte déjà une autre grandeur conservée : l’énergie. La question est de savoir si \(p^0=mu^0=m\gamma\) est exactement cette énergie en unités naturelles. L’hamiltonien apporte la réponse systématique.
+
+\section{L’hamiltonien est l’énergie}
+
+Pour tout lagrangien indépendant du temps de cette forme, l’hamiltonien est
+\begin{equation}
+H=\sum_{i=1}^{3}\dot x^i p_i-L.
+\label{eq:sr3-hamiltonian-definition}
+\end{equation}
+Cette formule n’est pas propre à la mécanique newtonienne. C’est la transformation de Legendre générale qui fait passer des vitesses aux quantités de mouvement canoniques ; elle s’applique aussi au lagrangien relativiste.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_15.png}
+\caption{La formule générale de l’hamiltonien \(H=\sum_i\dot x^i p_i-L\).}
+\lectureframe{01:11:55}
+\end{figure}
+
+Substituons \(p_i=m\dot x_i/\sqrt{1-v^2}\) et \(L=-m\sqrt{1-v^2}\) :
+\begin{align}
+H
+&=
+\frac{mv^2}{\sqrt{1-v^2}}
++m\sqrt{1-v^2}\\
+&=
+\frac{mv^2+m(1-v^2)}{\sqrt{1-v^2}}\\
+&=
+\boxed{\frac{m}{\sqrt{1-v^2}}}
+=m\gamma.
+\label{eq:sr3-hamiltonian-result}
+\end{align}
+Cette simplification est l’étape clé. En comparant avec \(u^0=\gamma\),
+\begin{equation}
+H=mu^0=p^0.
+\end{equation}
+la quatrième composante est donc l’énergie :
+\begin{equation}
+p^\mu=(E,\vec p),
+\qquad
+E=H
+\qquad(c=1).
+\label{eq:sr3-four-momentum-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_16.png}
+\caption{Les deux termes de l’hamiltonien se combinent avec un dénominateur commun ; les contributions en \(mv^2\) s’annulent.}
+\lectureframe{01:14:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La formule \(H=\sum_i\dot x^i p_i-L\) est-elle seulement la formule classique de l’hamiltonien ?}
+\lecturerresponse{C’est la transformation de Legendre générale associée à un lagrangien, et non une hypothèse particulière à la mécanique non relativiste. C’est la forme de \(L\) qui détermine la mécanique obtenue. Ici, le lagrangien relativiste à racine carrée donne \(H=m/\sqrt{1-v^2}\). \lecturetimestamp{01:15:21}}
+\end{classroomqa}
+
+L’énoncé invariant de conservation est maintenant
+\begin{equation}
+\sum_{\mathrm{initial}}p^\mu
+=
+\sum_{\mathrm{final}}p^\mu,
+\label{eq:sr3-four-momentum-conservation}
+\end{equation}
+Il regroupe la conservation de l’énergie et celle des trois composantes de la quantité de mouvement dans une seule équation quadrivectorielle.
+
+\section{Énergie de repos et limite newtonienne}
+
+En unités naturelles, l’énergie exacte est
+\begin{equation}
+E=\frac{m}{\sqrt{1-v^2}}.
+\end{equation}
+En utilisant \eqref{eq:sr3-gamma-expansion},
+\begin{equation}
+E
+\approx
+m+\frac12mv^2+\frac38mv^4+\cdots .
+\label{eq:sr3-energy-natural-expansion}
+\end{equation}
+Le second terme est l’énergie cinétique familière. Le premier est l’énergie qui subsiste lorsque le centre de masse est au repos.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_17.png}
+\caption{L’énergie exacte se développe sous la forme \(m+mv^2/2+\cdots\) en unités \(c=1\).}
+\lectureframe{01:18:02}
+\end{figure}
+
+Rétablissons les dimensions dans l’expression exacte. Le rapport sous la racine carrée doit être \(v^2/c^2\), et le numérateur doit avoir les dimensions d’une énergie :
+\begin{equation}
+\boxed{
+E
+=
+\gamma mc^2
+=
+\frac{mc^2}{\sqrt{1-v^2/c^2}}
+}.
+\label{eq:sr3-energy-exact}
+\end{equation}
+Son développement à faible vitesse est
+\begin{equation}
+\boxed{
+E
+=
+mc^2+\frac12mv^2
++\frac38m\frac{v^4}{c^2}
++\cdots
+}.
+\label{eq:sr3-energy-dimensional-expansion}
+\end{equation}
+Au repos,
+\begin{equation}
+\boxed{E_{\mathrm{rest}}=mc^2}.
+\label{eq:sr3-emc2}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_18.png}
+\caption{Le rétablissement des dimensions transforme le terme constant en \(mc^2\), suivi de l’énergie cinétique newtonienne \(mv^2/2\).}
+\lectureframe{01:19:16}
+\end{figure}
+
+Cela s’applique à tout objet fermé, et pas seulement à une particule élémentaire. \emph{Au repos} signifie que le centre de masse est au repos. Les molécules, les atomes et les champs à l’intérieur de l’objet peuvent toujours se déplacer et interagir. Leur énergie cinétique interne, leur énergie potentielle et leur énergie de liaison contribuent toutes à l’énergie totale au repos et, par conséquent, à la masse invariante de l’objet.
+
+\begin{classroomqa}
+\audiencequestion{Le facteur de conversion aurait-il pu être \(c^2\) divisé par un nombre arbitraire ?}
+\lecturerresponse{L’analyse dimensionnelle détermine seulement la puissance de \(c\), mais le coefficient est fixé par le résultat en unités naturelles. La formule en unités usuelles doit se réduire à \(E=m\) lorsque \(c=1\) ; l’expression rétablie est donc \(E=mc^2\) au repos, avec un coefficient égal à un. \lecturetimestamp{01:22:08}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le terme dominant égal à un dans le développement du binôme a-t-il une importance physique, et que signifient les termes d’ordre supérieur ?}
+\lecturerresponse{Oui. Dans le développement de l’énergie, le terme dominant devient l’énergie de repos \(mc^2\). Le terme suivant est l’énergie cinétique newtonienne, et tous les termes d’ordre supérieur sont des corrections relativistes. Elles sont négligeables pour une balle de baseball, mais deviennent essentielles lorsque \(v\) tend vers \(c\). \lecturetimestamp{01:22:37}}
+\end{classroomqa}
+
+L’énergie et la quantité de mouvement exactes divergent lorsque \(v\to c\) :
+\begin{equation}
+\begin{aligned}
+E&=\gamma mc^2\longrightarrow\infty,\\
+\vec p&=\gamma m\vec v\longrightarrow\infty
+\qquad(m>0).
+\end{aligned}
+\end{equation}
+Atteindre la vitesse de la lumière exigerait donc une énergie et une quantité de mouvement illimitées. Une force finie agissant pendant un temps fini ne fournit qu’une impulsion finie ; une particule massive peut donc s’approcher de \(c\), mais ne peut l’atteindre.
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-ce qui impose maintenant la barrière de la vitesse de la lumière ?}
+\lecturerresponse{Le quadrivecteur énergie-impulsion exact. L’énergie et la quantité de mouvement divergent toutes deux lorsqu’une particule massive s’approche de \(c\), tandis que la conservation du quadrivecteur énergie-impulsion contraint chaque interaction. La normalisation de la quadrivitesse établie plus tôt exprime la même chose sous forme cinématique. \lecturetimestamp{01:24:27}}
+\end{classroomqa}
+
+\section{La masse d’un système composite}
+
+Supposons que deux particules se déplacent avec des quantités de mouvement égales et opposées. Leur quantité de mouvement totale à trois composantes s’annule ; nous sommes donc déjà dans le référentiel de repos du système combiné. La masse invariante \(M\) de ce système est définie à partir de son énergie totale dans ce référentiel :
+\begin{equation}
+Mc^2=E_{\mathrm{tot}}
+\qquad
+(\vec P_{\mathrm{tot}}=0).
+\end{equation}
+Plus généralement,
+\begin{equation}
+M^2c^4
+=
+E_{\mathrm{tot}}^2-c^2\vec P_{\mathrm{tot}}^{\,2}.
+\label{eq:sr3-composite-mass}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Pour deux particules se déplaçant en sens opposés, la masse du système combiné est-elle supérieure à la somme de leurs masses individuelles ?}
+\lecturerresponse{Si elles sont libres, oui : dans le référentiel du centre de quantité de mouvement, leur énergie cinétique s’ajoute à l’énergie totale au repos, donc \(M>m_1+m_2\). L’énergie de liaison attractive peut au contraire abaisser la masse totale, donnant \(M<m_1+m_2\). La définition invariante est l’énergie totale dans le référentiel où la quantité de mouvement totale s’annule. \lecturetimestamp{01:25:06}}
+\end{classroomqa}
+
+C’est pourquoi il ne faut pas négliger le mouvement interne et la liaison lorsqu’on pèse un objet composite. La masse invariante appartient au système fermé dans son ensemble, et non à une simple somme arithmétique des masses de ses constituants.
+
+\begin{classroomqa}
+\audiencequestion{Quel rôle joue le terme d’énergie de repos dans la phase d’un état quantique ?}
+\lecturerresponse{Un état d’énergie bien définie évolue avec une phase \(\exp(-iEt/\hbar)\) ; une particule au repos contribue donc par \(\exp(-imc^2t/\hbar)\). Une phase globale commune n’est pas observable, mais les phases relatives entre des composantes d’énergies différentes peuvent l’être. Cette conséquence quantique est cohérente avec la dérivation classique présentée ici, sans être nécessaire à celle-ci. \lecturetimestamp{01:26:57}}
+\end{classroomqa}
+
+\section{La relation énergie--quantité de mouvement}
+
+La normalisation de la quadrivitesse donne immédiatement la norme invariante du quadrivecteur énergie-impulsion. En unités \(c=1\),
+\begin{equation}
+(u^0)^2-\vec u^{\,2}=1.
+\end{equation}
+
+En multipliant par \(m^2\) et en utilisant \(p^\mu=mu^\mu\),
+\begin{equation}
+\boxed{
+E^2-\vec p^{\,2}=m^2
+}
+\qquad(c=1).
+\label{eq:sr3-mass-shell-natural}
+\end{equation}
+De façon équivalente,
+\begin{equation}
+E=\sqrt{\vec p^{\,2}+m^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_19.png}
+\caption{La multiplication de la condition de normalisation de la quadrivitesse par \(m^2\) donne \(E^2-\vec p^{\,2}=m^2\).}
+\lectureframe{01:31:48}
+\end{figure}
+
+En rétablissant \(c\),
+\begin{equation}
+\boxed{
+E^2
+=
+\vec p^{\,2}c^2+m^2c^4
+},
+\qquad
+E=\sqrt{\vec p^{\,2}c^2+m^2c^4}.
+\label{eq:sr3-mass-shell}
+\end{equation}
+Cette formule exprime l’énergie en fonction de la quantité de mouvement, sans faire intervenir la vitesse. C’est l’analogue relativiste de la relation newtonienne
+\begin{equation}
+K=\frac{\vec p^{\,2}}{2m}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_20.png}
+\caption{La relation de couche de masse avec les dimensions rétablies : \(E=\sqrt{\vec p^{\,2}c^2+m^2c^4}\).}
+\lectureframe{01:32:38}
+\end{figure}
+
+\subsection{Particules sans masse}
+
+La formule de la vitesse \(E=\gamma mc^2\) prend la forme indéterminée \(0/0\) si \(m=0\) et \(v=c\). La vitesse est donc un mauvais critère pour distinguer les particules sans masse : toute particule sans masse se propageant librement dans le vide se déplace à \(c\), mais des photons différents peuvent avoir des énergies différentes.
+
+La relation énergie--quantité de mouvement admet une limite sans masse régulière :
+\begin{equation}
+m=0
+\quad\Longrightarrow\quad
+\boxed{E=c|\vec p|}.
+\label{eq:sr3-massless-energy}
+\end{equation}
+Cela s’applique aux photons et, dans la théorie idéalisée où ils sont sans masse, aux gravitons. C’est aussi une excellente approximation pour une particule hautement relativiste dès que \(mc^2\ll E\), notamment pour les neutrinos à suffisamment haute énergie, malgré leurs masses non nulles mais faibles.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_21.png}
+\caption{La limite sans masse de la relation énergie--quantité de mouvement donne \(E=c|\vec p|\).}
+\lectureframe{01:33:48}
+\end{figure}
+
+\section{Désintégration du positronium}
+
+Considérons le positronium, état lié formé d’un électron et d’un positron. Sa masse invariante est légèrement inférieure à \(2m_e\) : les constituants possèdent une énergie cinétique interne positive, mais leur énergie de liaison négative est de plus grande valeur absolue. Numériquement,
+\begin{equation}
+m_ec^2\approx0.511\ \mathrm{MeV},
+\qquad
+m_e\approx9.11\times10^{-31}\ \mathrm{kg},
+\end{equation}
+mais la cinématique ne dépend pas de cette valeur numérique.
+
+Considérons le canal de désintégration en deux photons dans le référentiel de repos du positronium :
+\begin{equation}
+\mathrm{Ps}\longrightarrow\gamma+\gamma.
+\end{equation}
+Initialement, la quantité de mouvement totale est nulle. La conservation de la quantité de mouvement exige donc que les photons soient émis en sens opposés, avec des quantités de mouvement égales et opposées :
+\begin{equation}
+\vec p_1=\vec p,
+\qquad
+\vec p_2=-\vec p.
+\label{eq:sr3-positronium-momentum}
+\end{equation}
+Si \(M\) est la masse du positronium, la conservation de l’énergie donne
+\begin{equation}
+Mc^2
+=E_1+E_2
+=c|\vec p_1|+c|\vec p_2|
+=2c|\vec p|.
+\end{equation}
+D’où
+\begin{equation}
+\boxed{
+|\vec p|=\frac{Mc}{2},
+\qquad
+E_1=E_2=\frac{Mc^2}{2}
+}.
+\label{eq:sr3-positronium-result}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_22.png}
+\caption{Un état de positronium au repos se désintègre en deux photons de quantités de mouvement égales et opposées ; \(Mc^2=2c|\vec p|\).}
+\lectureframe{01:40:55}
+\end{figure}
+
+Ce processus n’a pas d’analogue newtonien où la somme des masses des particules se conserve. L’état initial a une masse invariante non nulle, alors que chaque photon de l’état final est sans masse. C’est le quadrivecteur énergie-impulsion total qui se conserve. L’énergie de repos stockée est devenue énergie électromagnétique propagée. Avec la relation quantique \(|\vec p|=h/\lambda\), le même résultat fixe la longueur d’onde du photon ; l’énergie correspondante est très supérieure à celle du domaine optique.
+
+\begin{classroomqa}
+\audiencequestion{Comment le moment cinétique se conserve-t-il dans cette désintégration ?}
+\lecturerresponse{Le rayonnement émis doit porter le même moment cinétique total que l’état initial. Dans le canal à deux photons, les hélicités des photons et leur état orbital se combinent de façon appropriée. Plus précisément, le para-positronium en état singulet de spin se désintègre principalement en deux photons, tandis que l’ortho-positronium en état triplet de spin se désintègre principalement en trois ; le canal autorisé respecte tous les nombres quantiques. \lecturetimestamp{01:42:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi une particule se déplaçant à la vitesse de la lumière doit-elle être sans masse ?}
+\lecturerresponse{À énergie finie non nulle, le facteur \(\gamma\) diverge lorsque \(v\to c\). La relation invariante \(E^2-\vec p^{\,2}c^2=m^2c^4\) montre qu’une particule dont le quadrivecteur énergie-impulsion est de genre lumière vérifie \(m=0\). Réciproquement, une particule libre sans masse suit une ligne d’univers de genre lumière et se propage à \(c\). \lecturetimestamp{01:42:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le même état neutre pourrait-il se désintégrer en gravitons plutôt qu’en photons ?}
+\lecturerresponse{En principe, les états gravitationnels finaux sont autorisés si les nombres quantiques le permettent, mais leur fraction de branchement gravitationnelle est infiniment plus faible que la fraction électromagnétique. Le bilan cinématique ferait toujours appel à la conservation du quadrivecteur énergie-impulsion et à \(E=c|\vec p|\) pour chaque quantum sans masse. \lecturetimestamp{01:43:20}}
+\end{classroomqa}
+
+\subsection{Un sommet de désintégration}
+
+Une désintégration est locale : la ligne d’univers de la particule mère prend fin en un événement de l’espace-temps, et les lignes d’univers des photons émis commencent à cet endroit. On peut extrapoler les interactions avec les détecteurs vers le passé pour reconstituer ce vertex commun. Si les deux photons avaient été émis en des événements distincts, leurs trajectoires de genre lumière extrapolées vers le passé ne se rejoindraient pas en un même point.
+
+\begin{classroomqa}
+\audiencequestion{Les deux photons doivent-ils être émis simultanément dans tous les référentiels ?}
+\lecturerresponse{Ils proviennent du même événement de l’espace-temps, et non de deux événements spatialement séparés dont la simultanéité pourrait dépendre du référentiel. Tous les référentiels de Lorentz s’accordent sur le fait qu’un événement donné est un seul et même événement. La mécanique quantique attribue à la particule mère une incertitude de position finie ; le vertex reconstitué est donc une distribution, et non un point classique parfaitement connu. \lecturetimestamp{01:44:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi la norme du quadrivecteur vitesse est-elle égale à un ?}
+\lecturerresponse{Le temps propre a été défini par \(d\tau^2=dt^2-d\vec x^{\,2}\) en unités où \(c=1\). En divisant par \(d\tau^2\), on obtient \((dt/d\tau)^2-(d\vec x/d\tau)^2=1\), ce qui est précisément \((u^0)^2-\vec u^{\,2}=1\). La normalisation est donc intégrée à la définition du temps propre. \lecturetimestamp{01:45:38}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(u^0=dt/d\tau\) donne-t-il une interprétation plus profonde de l’énergie ?}
+\lecturerresponse{Il donne l’identité utile \(E=mc^2\,dt/d\tau=\gamma mc^2\) : au repos, le rapport du temps coordonné au temps propre vaut un ; en mouvement, il vaut le facteur de Lorentz. Au-delà de l’expression de cette dépendance à la vitesse, cette identité n’ajoute pas, à elle seule, de principe dynamique distinct. \lecturetimestamp{01:46:36}}
+\end{classroomqa}
+
+\section{La conservation exige un système fermé}
+
+L’énoncé
+\begin{equation}
+\sum p^\mu_{\mathrm{initial}}
+=
+\sum p^\mu_{\mathrm{final}}
+\end{equation}
+s’applique à un système isolé qui comprend tout ce qui échange de l’énergie et de la quantité de mouvement. Les laboratoires réels sont traversés par des champs électriques et magnétiques parasites, des particules ambiantes et la gravité ; ils comportent aussi des supports et des détecteurs. Si l’on exclut ces degrés de liberté du bilan, le sous-système peut présenter un léger déséquilibre apparent ; le quadrivecteur quantité de mouvement manquant a été transféré à l’environnement.
+
+\begin{classroomqa}
+\audiencequestion{La somme des quantités de mouvement des deux photons pourrait-elle différer très légèrement de zéro ?}
+\lecturerresponse{Pas pour le système isolé complet. Dans une expérience réelle, un champ non pris en compte ou le recul de l’appareil peut emporter le faible résidu ; le sous-système considéré peut alors sembler ne pas être fermé. Dès que toutes les parties en interaction sont incluses, le quadrivecteur quantité de mouvement total se conserve. \lecturetimestamp{01:47:51}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le principe d’incertitude affaiblit-il la conservation de la quantité de mouvement ?}
+\lecturerresponse{Non. La position ou la quantité de mouvement d’un état quantique peuvent être incertaines, et une connaissance plus précise de l’une élargit la distribution de l’autre ; toutefois, la symétrie par translation implique toujours la conservation exacte de la quantité de mouvement totale d’un système isolé. L’incertitude quantique concerne les résultats et les distributions, et non une défaillance de la loi de conservation. \lecturetimestamp{01:49:19}}
+\end{classroomqa}
+
+\section{Énergie exacte et énergie approchée}
+
+Il importe de ne pas confondre la formule exacte avec son développement à faible vitesse :
+\begin{align}
+E_{\mathrm{exact}}
+&=
+\frac{mc^2}{\sqrt{1-v^2/c^2}},
+\label{eq:sr3-exact-repeated}\\
+E_{\mathrm{slow}}
+&=
+mc^2+\frac12mv^2
++O\!\left(\frac{mv^4}{c^2}\right).
+\label{eq:sr3-approx-repeated}
+\end{align}
+La première reste valable pour toute valeur de \(v<c\). La seconde n’est utile que lorsque \(v/c\ll1\).
+
+\begin{classroomqa}
+\audiencequestion{La formule de l’énergie n’était-elle qu’une approximation ?}
+\lecturerresponse{\(E=mc^2+mv^2/2+\cdots\) est l’approximation. Le résultat exact est \(E=mc^2/\sqrt{1-v^2/c^2}\). Le facteur \(v^2/c^2\) rend le dénominateur sans dimension, tandis que le numérateur \(mc^2\) donne à l’expression les unités de l’énergie. \lecturetimestamp{01:49:56}}
+\end{classroomqa}
+
+\subsection{Retour sur la représentation de l’espace-temps}
+
+Le dernier schéma au tableau revient à la géométrie de l’expérience. Avant la désintégration, le positronium au repos suit une ligne d’univers verticale de genre temps. À l’événement de désintégration, cette ligne d’univers prend fin et deux lignes d’univers de genre lumière partent en directions spatiales opposées.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_23.png}\caption{La ligne d’univers du positronium se termine en un événement de désintégration, d’où émergent les deux lignes d’univers des photons, de genre lumière.}
+\lectureframe{01:53:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-ce qui détermine l’axe suivant lequel les deux photons émergent ?}
+\lecturerresponse{Pour un état non polarisé, il existe une distribution angulaire quantique, et chaque désintégration individuelle sélectionne aléatoirement une direction selon cette distribution. Une fois cette direction déterminée, la conservation de la quantité de mouvement impose que les photons partent en sens opposés ; elle ne choisit pas cet axe à l’avance. \lecturetimestamp{01:53:55}}
+\end{classroomqa}
+
+\section{Ce que disent les équations du mouvement libre}
+
+L’action invariante n’a pas été choisie en devinant une loi de force. Elle a été choisie comme le scalaire de Lorentz local le plus simple qui reproduit le lagrangien newtonien d’une particule libre à faible vitesse. Sa variation donne
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot x^i}\right)=0,
+\end{equation}
+donc
+\begin{equation}
+\frac{dp_i}{dt}=0.
+\end{equation}
+Pour une masse non nulle fixée, cela équivaut à une quadrivitesse constante :
+\begin{equation}
+\frac{du^\mu}{d\tau}=0.
+\end{equation}
+La ligne d’univers est donc une droite dans l’espace-temps. Cette unique affirmation géométrique comprend à la fois une vitesse uniforme et une direction spatiale constante.
+
+\begin{classroomqa}
+\audiencequestion{Existe-t-il une justification plus fondamentale de l’action relativiste, analogue au choix de l’action classique pour qu’elle reproduise les équations de Newton ?}
+\lecturerresponse{Pour la particule libre, l’invariance de Lorentz, la localité le long de la ligne d’univers et la limite newtonienne à faible vitesse déterminent l’action la plus simple, à une constante multiplicative près. Son équation d’Euler--Lagrange donne alors une quantité de mouvement constante, exactement comme dans le cas newtonien sans force. Les interactions fournissent d’autres mises à l’épreuve ; plus tard, une particule chargée sera couplée aux champs électrique et magnétique. \lecturetimestamp{01:54:27}}
+\end{classroomqa}
+
+\section{Deux limites classiques indépendantes}
+
+La limite non relativiste et la limite classique de la mécanique quantique sont deux opérations distinctes. Les corrections relativistes sont régies par le rapport \(v/c\). Les effets quantiques dépendent des échelles d’action comparées à \(\hbar\), ainsi que de propriétés comme la masse, la taille du système et la régularité de variation des forces extérieures.
+
+\begin{classroomqa}
+\audiencequestion{La limite de faible vitesse qui permet de retrouver la mécanique newtonienne est-elle la même que celle par laquelle la mécanique quantique devient classique ?}
+\lecturerresponse{Non. La limite relativiste concerne \(v/c\) ; la limite quantique-classique concerne \(\hbar\) par rapport à l’action caractéristique, et devient souvent effective pour de grandes masses ou des forces qui varient doucement. Un système peut être quantique mais non relativiste, relativiste mais essentiellement classique, les deux, ou ni l’un ni l’autre. \lecturetimestamp{01:57:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Existe-t-il une incompatibilité entre la relativité restreinte et la mécanique quantique ?}
+\lecturerresponse{Non. La théorie quantique relativiste est cohérente et conduit à la théorie quantique des champs. La célèbre tension qui reste à résoudre concerne l’intégration de la gravité à la mécanique quantique, et non la combinaison de la relativité restreinte et des principes quantiques. La gravité n’est pas intervenue dans la discussion actuelle sur les particules libres. \lecturetimestamp{01:59:01}}
+\end{classroomqa}
+
+Pour l’instant, le résultat en l’absence de force est complet : une particule massive suit une ligne d’univers de genre temps qui est droite, sa masse invariante fixe la norme de son quadrivecteur quantité de mouvement, et l’énergie et la quantité de mouvement sont les quatre composantes d’un même objet conservé. L’étape suivante, au-delà de ce mouvement libre, consistera à introduire la charge et les champs électromagnétiques.

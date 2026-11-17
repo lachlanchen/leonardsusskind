@@ -1,0 +1,936 @@
+\chapter{Ondes électromagnétiques et action de Maxwell}
+
+\lectureoverview{Nous commençons par résoudre les équations de Maxwell sans source pour une onde plane et laissons ces équations déterminer sa polarisation, la géométrie de ses champs et sa vitesse. Nous posons ensuite une question plus profonde : quelle action locale, invariante de Lorentz et de jauge, produit les équations dynamiques de Maxwell ? La réponse relie en une seule structure le champ électromagnétique, la conservation de la charge et l’invariance de jauge.}
+
+\section{Deux familles d’équations de Maxwell}
+
+Commençons par une onde électromagnétique plane. Ici, \emph{plane} est le terme géométrique, et non \emph{plane} au sens de « sans ornement ». Les questions immédiates sont concrètes : à quoi ressemble une telle onde et comment sa forme découle-t-elle des équations de Maxwell ?
+
+Avant d’étudier l’onde, il est utile de disposer les équations en deux colonnes. Dans le vide, elles s’écrivent
+\begin{align}
+\nabla\cdot\mathbf B&=0,
+&
+\dot{\mathbf B}&=\nabla\times\mathbf E,
+\label{eq:homogeneous-vector}
+\\
+\nabla\cdot\mathbf E&=0,
+&
+\dot{\mathbf E}&=-\,\nabla\times\mathbf B.
+\label{eq:dynamical-vector-vacuum}
+\end{align}
+Nous utilisons la métrique de signature principalement positive
+\begin{equation}
+\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)
+\end{equation}
+et la convention du cours
+\begin{equation}
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\qquad
+F_{0i}=E_i,
+\qquad
+F_{ij}=\epsilon_{ijk}B_k.
+\label{eq:course-f-convention}
+\end{equation}
+Les deux familles peuvent alors s’écrire sous la forme
+\begin{align}
+\partial_\mu F_{\nu\sigma}
++\partial_\nu F_{\sigma\mu}
++\partial_\sigma F_{\mu\nu}
+&=0,
+\label{eq:bianchi-l9}
+\\
+\partial_\mu F^{\mu\nu}
+&=0.
+\label{eq:vacuum-maxwell-covariant}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_01.png}
+\caption{Les deux familles des équations de Maxwell dans le vide et leurs formes covariantes. L’équation cyclique est une identité ; l’équation contractée est dynamique.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:03:30.}
+\end{figure}
+
+La distinction entre les deux lignes est importante. L’équation \eqref{eq:bianchi-l9} découle identiquement de l’existence du potentiel \(A_\mu\) : chaque terme est une dérivée seconde, et les termes s’annulent deux à deux. C’est donc une identité de Bianchi. En revanche, l’équation \eqref{eq:vacuum-maxwell-covariant} est une équation du mouvement. Si l’on modifie le lagrangien électromagnétique, c’est cette famille qui change.
+
+Une remarque au tableau va remplir deux rôles dans ce chapitre. Tous les champs des équations de Maxwell apparaissent sous forme dérivée. Ce fait contraindra les phases relatives d’une onde plane et rendra plus tard l’invariance de jauge naturelle.
+
+\section{Une onde plane se propageant selon l’axe \texorpdfstring{\(z\)}{z}}
+
+Choisissons les coordonnées de sorte que l’onde se propage selon l’axe \(z\). Cela ne restreint pas la généralité : une onde se propageant dans une autre direction peut être ramenée à cette forme par une rotation des axes. Notons \(k\) son nombre d’onde, \begin{equation}
+\lambda=\frac{2\pi}{k},
+\end{equation} et \(\omega\) sa fréquence. Avant d’imposer une quelconque équation du mouvement, écrivons les six composantes du champ avec une phase commune
+\begin{equation}
+\theta=kz-\omega t:
+\end{equation}
+\begin{align}
+E_x(z,t)&=\epsilon_x\sin\theta,
+&
+B_x(z,t)&=\beta_x\sin\theta,
+\nonumber\\
+E_y(z,t)&=\epsilon_y\sin\theta,
+&
+B_y(z,t)&=\beta_y\sin\theta,
+\label{eq:plane-wave-ansatz}\\
+E_z(z,t)&=\epsilon_z\sin\theta,
+&
+B_z(z,t)&=\beta_z\sin\theta.
+\nonumber
+\end{align}
+Les six lettres grecques représentent des amplitudes constantes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_02.png}
+\caption{Ansatz d’onde plane à six composantes, avant que les équations de Maxwell n’éliminent les amplitudes interdites.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:08:45.}
+\end{figure}
+
+Pourquoi commencer par supposer la même dépendance sinusoïdale pour \(\mathbf E\) et \(\mathbf B\) ? Supposons qu’un champ soit proportionnel à \(\sin\theta\) et l’autre à \(\cos\theta\). Une dérivée temporelle d’un côté d’une équation de rotationnel et une dérivée spatiale de l’autre produiraient alors des fonctions trigonométriques différentes. L’égalité ne pourrait pas être vérifiée pour toutes les valeurs de \(z\) et de \(t\). Une phase constante commune est permise, mais une translation de l’origine de \(z\) permet de l’éliminer. L’ansatz n’est donc pas une loi dynamique supplémentaire ; c’est le représentant le plus simple de la relation de phase qu’exigeront les équations différentielles.
+
+Nous n’avons encore utilisé aucune équation de Maxwell. Nous avons seulement choisi une direction, une longueur d’onde et une origine de phase commode. Les équations vont maintenant déterminer quelles amplitudes subsistent.
+
+\subsection{Les contraintes de divergence}
+
+Comme les champs ne dépendent que de \(z\) et de \(t\),
+\begin{equation}
+\nabla\cdot\mathbf E
+=
+\partial_xE_x+\partial_yE_y+\partial_zE_z
+=
+\partial_zE_z.
+\end{equation}
+Dans le vide, cette quantité doit s’annuler quelle que soit la phase, donc
+\begin{equation}
+\epsilon_z=0.
+\label{eq:epsilon-z-zero}
+\end{equation}
+Le même raisonnement appliqué au champ magnétique donne
+\begin{equation}
+\beta_z=0.
+\label{eq:beta-z-zero}
+\end{equation}
+Aucun des deux champs n’a de composante dans la direction de propagation. L’onde est transverse.
+
+Il nous reste une liberté de rotation dans le plan transverse \(xy\). Le couple \((\epsilon_x,\epsilon_y)\) est un vecteur ordinaire à deux dimensions ; faisons donc tourner les axes transverses jusqu’à obtenir
+\begin{equation}
+\epsilon_y=0,
+\qquad
+\epsilon_x\ne0.
+\label{eq:polarization-axis}
+\end{equation}
+Il s’agit d’un choix de polarisation linéaire, et non d’une restriction physique.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_03.png}
+\caption{Les amplitudes longitudinales s’annulent et l’axe du champ électrique transverse est choisi.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:14:30.}
+\end{figure}
+
+\subsection{Les équations de rotationnel}
+
+Utilisons la composante \(x\) de \(\dot{\mathbf E}=-\nabla\times\mathbf B\). Puisque les champs ne varient qu’avec \(z\),
+\begin{equation}
+\dot E_x
+=
+-\left(\nabla\times\mathbf B\right)_x
+=
+\partial_zB_y.
+\end{equation}
+En substituant l’ansatz, on obtient
+\begin{align}
+-\omega\epsilon_x\cos\theta
+&=
+k\beta_y\cos\theta,
+\nonumber\\
+\beta_y
+&=
+-\,\epsilon_x\frac{\omega}{k}.
+\label{eq:beta-y-epsilon}
+\end{align}
+La composante \(y\) de la même équation de Maxwell s’écrit
+\begin{equation}
+\dot E_y
+=
+-\left(\partial_zB_x\right).
+\end{equation}
+Le membre de gauche est nul d’après notre choix de polarisation, donc
+\begin{equation}
+\beta_x=0.
+\label{eq:beta-x-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_04.png}
+\caption{Un calcul par composantes du rotationnel relie \(\epsilon_x\) à \(\beta_y\) et élimine l’amplitude magnétique restante.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:20:15.}
+\end{figure}
+
+La géométrie est donc déterminée :
+\begin{equation}
+\mathbf E\parallel\hat{\mathbf x},
+\qquad
+\mathbf B\parallel\hat{\mathbf y},
+\qquad
+\mathbf k\parallel\hat{\mathbf z}.
+\end{equation}
+Le champ électrique, le champ magnétique et la direction de propagation sont mutuellement perpendiculaires.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_09_figure_05.png}
+\caption{Représentation au tableau des oscillations transverses des champs électrique et magnétique qui se propagent selon l’axe \(z\).}
+\par\smallskip
+\textit{Cadre de la conférence : 00:23:15.}
+\end{figure}
+
+L’autre équation de rotationnel fournit une relation indépendante entre les amplitudes. Sa composante \(y\) est
+\begin{equation}
+\dot B_y=(\nabla\times\mathbf E)_y=\partial_zE_x,
+\end{equation}
+on en déduit donc
+\begin{align}
+-\omega\beta_y\cos\theta
+&=
+k\epsilon_x\cos\theta,
+\nonumber\\
+\epsilon_x
+&=
+-\,\beta_y\frac{\omega}{k}.
+\label{eq:epsilon-beta-y}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_06.png}
+\caption{Les relations réciproques entre amplitudes au-dessus du schéma de l’onde transverse.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:25:00.}
+\end{figure}
+
+En combinant les équations \eqref{eq:beta-y-epsilon} et \eqref{eq:epsilon-beta-y}, on obtient la relation de dispersion
+\begin{equation}
+\left(\frac{\omega}{k}\right)^2=1.
+\end{equation}
+Pour l’onde de fréquence positive qui se propage dans la direction choisie,
+\begin{equation}
+\omega=k
+\qquad
+(c=1).
+\label{eq:omega-k}
+\end{equation}
+La phase commune s’écrit donc
+\begin{equation}
+\theta=k(z-t).
+\end{equation}
+En rétablissant les unités usuelles, on trouve
+\begin{equation}
+\omega=ck,
+\qquad
+\theta=k(z-ct).
+\label{eq:restore-c-wave}
+\end{equation}
+Le profil se propage ainsi sans déformation à la vitesse de la lumière. Dans les unités utilisées au tableau, les amplitudes des champs électrique et magnétique sont égales en valeur absolue. Leur signe relatif négatif relève d’une convention d’orientation : il indique le sens de l’axe \(y\) choisi, et non un déphasage d’un quart de période entre les deux champs.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_07.png}
+\caption{Forme finale de l’onde plane après imposition de \(\omega=k\).}
+\par\smallskip
+\textit{Cadre de la conférence : 00:26:45.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Les quantités \(\omega\) et \(k\) n’ont-elles pas des unités différentes ?}
+\lecturerresponse{Si, dans les unités usuelles : \(\omega\) est l’inverse d’un temps et \(k\) l’inverse d’une longueur. Lorsque \(c=1\), le temps et la longueur ont la même unité. Rétablir \(c\) transforme \(\omega=k\) en \(\omega=ck\), comme l’exige exactement l’analyse dimensionnelle. \lecturetimestamp{00:25:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Les champs électrique et magnétique sont-ils toujours en phase dans une onde plane ?}
+\lecturerresponse{Ils ont la même dépendance de phase. Leurs amplitudes signées peuvent différer d’un signe moins, ce qui peut être décrit comme un renversement de \(180^\circ\), mais les équations de Maxwell n’autorisent pas de déphasage de \(90^\circ\) entre les composantes sinus--cosinus de cette onde plane polarisée linéairement. La polarisation circulaire est formée de composantes transversales et exige un langage plus précis, mais elle ne modifie pas cette relation de Maxwell valable composante par composante. \lecturetimestamp{00:27:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si les deux champs s’annulent en même temps, l’énergie est-elle tout de même conservée ?}
+\lecturerresponse{Oui. La densité d’énergie en un point fixe oscille au passage de l’onde, mais l’énergie s’est déplacée au lieu de disparaître. Ce qui occupait une région à un instant donné se trouve dans une région voisine un peu plus tard. Le transport local d’énergie, décrit plus complètement par le flux de Poynting, concilie la variation de la densité avec la conservation. \lecturetimestamp{00:28:15}}
+\end{classroomqa}
+
+Les équations de Maxwell sont linéaires. L’amplitude \(\epsilon_x\) peut être grande ou petite ; \(\beta_y\) en découle, et toute somme ou différence de solutions est elle-même une solution. On peut donc superposer des ondes qui se propagent dans différentes directions. Ce bref calcul mérite d’être fait : un exposé de l’électromagnétisme ne devrait pas laisser l’onde électromagnétique au rang de simple citation inexpliquée.
+
+\begin{classroomqa}
+\audiencequestion{La dérivation supposait-elle dès le départ que \(\mathbf E\) et \(\mathbf B\) avaient la même phase ?}
+\lecturerresponse{La phase commune a été posée dans l’ansatz, mais ce n’est pas une hypothèse physique indépendante. Comme chaque membre des équations de rotationnel dérive un champ, les équations éliminent toute phase relative non triviale. On peut ensuite supprimer un déphasage commun en translatant l’origine. \lecturetimestamp{00:29:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{D’où vient la seconde relation \(\epsilon_x=-\beta_y\omega/k\) ?}
+\lecturerresponse{La première relation provient de \(\dot{\mathbf E}=-\nabla\times\mathbf B\). La seconde découle de l’équation associée \(\dot{\mathbf B}=\nabla\times\mathbf E\), en intervertissant \(\mathbf E\) et \(\mathbf B\) dans le même calcul par composantes. Elles sont toutes deux nécessaires pour obtenir \(\omega^2=k^2\). \lecturetimestamp{00:30:25}}
+\end{classroomqa}
+
+\section{Pourquoi les équations différentielles ne suffisent pas}
+
+Passons maintenant d’une solution particulière à la structure de la théorie. Le principe de moindre action organise la conservation de l’énergie, celle de la quantité de mouvement et leurs liens avec les symétries de l’espace-temps. On peut inventer des équations différentielles qui ne possèdent aucune énergie que l’on puisse qualifier de conservée, ni aucun principe de symétrie utile. Les équations de Maxwell devraient plutôt découler d’un lagrangien.
+
+Il suffit de produire la famille dynamique :
+\begin{equation}
+\partial_\mu F^{\mu\nu}=J^\nu.
+\label{eq:target-sourced-maxwell}
+\end{equation}
+La famille de Bianchi découle déjà de la définition de \(F_{\mu\nu}\). En langage des vecteurs à trois composantes, notre convention donne
+\begin{align}
+\nabla\cdot\mathbf E&=\rho,
+\label{eq:gauss-source}
+\\
+\dot{\mathbf E}+\nabla\times\mathbf B&=-\,\mathbf J.
+\label{eq:ampere-course-sign}
+\end{align}
+Le signe moins dans \eqref{eq:ampere-course-sign} est important. C’est la forme en composantes de \eqref{eq:target-sourced-maxwell} avec la convention \eqref{eq:course-f-convention} ; nous le retrouverons en vérifiant les signes en direct vers la fin.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_08.png}
+\caption{L’ensemble des équations de Maxwell au tableau, lors du passage de la solution en onde à la formulation par le principe d’action.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:32:45.}
+\end{figure}
+
+\section{Théorie locale des champs relativiste}
+
+Le premier principe est la localité. Une action est une intégrale sur l’espace-temps d’une densité construite à partir des champs et de leurs premières dérivées au même point :
+\begin{equation}
+S=\int d^4x\,\mathcal L(\phi,\phi_{,\mu}),
+\qquad
+\phi_{,\mu}\equiv\partial_\mu\phi.
+\label{eq:local-action}
+\end{equation}
+La virgule est une notation compacte pour les dérivées. Le second principe est l’invariance de Lorentz : \(\mathcal L\) doit être un scalaire.
+
+\subsection{Rappel sur un champ scalaire}
+
+Avant de faire varier un quadrivecteur, rappelons la méthode pour un champ scalaire. Un scalaire local de Lorentz peut dépendre d’un potentiel \(U(\phi)\) et de la contraction de deux dérivées :
+\begin{equation}
+\mathcal L_\phi
+=
+-\frac12\,\partial_\mu\phi\,\partial^\mu\phi-U(\phi).
+\label{eq:scalar-lagrangian}
+\end{equation}
+Avec la métrique de signature principalement positive,
+\begin{equation}
+\partial_\mu\phi\,\partial^\mu\phi
+=
+-\dot\phi^{\,2}+|\nabla\phi|^2,
+\end{equation}
+on a donc
+\begin{equation}
+\mathcal L_\phi
+=
+\frac12\dot\phi^{\,2}
+-\frac12|\nabla\phi|^2
+-U(\phi).
+\end{equation}
+La dérivée temporelle à indice relevé diffère par son signe de celle à indice abaissé ; ce n’est pas le cas des dérivées spatiales, dont le signe reste le même.
+
+\begin{classroomqa}
+\audiencequestion{Est-ce que cela signifie quelque chose de placer l’indice de la dérivée en haut plutôt qu’en bas ?}
+\lecturerresponse{Oui. Relever l’indice revient à contracter avec la métrique inverse. Avec la signature \((-+++)\), \(\partial^0=-\partial_0\), tandis que \(\partial^i=\partial_i\). C’est pourquoi le terme de dérivée temporelle porte le signe opposé aux trois termes spatiaux. \lecturetimestamp{00:38:02}}
+\end{classroomqa}
+
+L’équation d’Euler--Lagrange pour les champs est
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial\phi_{,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial\phi}.
+\label{eq:field-el}
+\end{equation}
+Pour \eqref{eq:scalar-lagrangian},
+\begin{equation}
+\frac{\partial\mathcal L_\phi}{\partial\phi_{,\mu}}
+=
+-\partial^\mu\phi,
+\qquad
+\frac{\partial\mathcal L_\phi}{\partial\phi}
+=
+-U'(\phi),
+\end{equation}
+et par conséquent
+\begin{equation}
+\Box\phi=U'(\phi),
+\qquad
+\Box\equiv\partial_\mu\partial^\mu.
+\end{equation}
+De manière équivalente,
+\begin{equation}
+\ddot\phi-\nabla^2\phi=-U'(\phi).
+\label{eq:scalar-wave}
+\end{equation}
+Au tableau, seule la dérivée selon \(x\) est écrite ; les termes en \(y\) et \(z\) sont laissés implicites. On obtient l’équation d’onde bien connue, avec une force provenant du potentiel.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_09.png}
+\caption{Localité, lagrangien scalaire invariant de Lorentz et équation d’Euler--Lagrange pour la théorie des champs.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:41:00.}
+\end{figure}
+
+Le calcul électromagnétique suit le même procédé variationnel, avec quatre champs et davantage d’indices.
+
+\section{L’invariance de jauge sélectionne le scalaire de Maxwell}
+
+Ajoutons un troisième principe : l’invariance de jauge. Pour l’instant, posons \(J^\mu=0\) et considérons le champ libre. Une transformation de jauge est donnée par
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\chi.
+\label{eq:gauge-transform}
+\end{equation}
+Le tenseur de champ reste inchangé, car les dérivées secondes mixtes commutent :
+\begin{align}
+F_{\mu\nu}
+&\longrightarrow
+F_{\mu\nu}
++\partial_\mu\partial_\nu\chi
+-\partial_\nu\partial_\mu\chi
+\nonumber\\
+&=F_{\mu\nu}.
+\end{align}
+
+L’invariance de Lorentz seule autoriserait le scalaire
+\begin{equation}
+A_\mu A^\mu.
+\end{equation}
+Celui-ci reste toutefois interdit dans la théorie de Maxwell, car il varie sous la transformation \eqref{eq:gauge-transform}. Les indices de cette expression désignent des composantes du champ ; ce ne sont pas des dérivées. Une dérivée est indiquée par une virgule, comme dans \(A_{\nu,\mu}=\partial_\mu A_\nu\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_10.png}
+\caption{La transformation de jauge et le scalaire de Lorentz \(A_\mu A^\mu\), écarté parce qu’il n’est pas invariant de jauge.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:43:40.}
+\end{figure}
+
+Nous devons donc construire le lagrangien libre à partir de \(F_{\mu\nu}\). La trace linéaire échoue :
+\begin{equation}
+F^\mu{}_\mu=0.
+\end{equation}
+L’antisymétrie impose l’annulation de toutes les composantes diagonales :
+\begin{equation}
+F_{00}=F_{11}=F_{22}=F_{33}=0.
+\end{equation}
+Relever un indice peut changer le signe, mais ne peut rien produire à partir de zéro.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_11.png}
+\caption{La trace linéaire envisagée et l’annulation des composantes diagonales du tenseur de champ antisymétrique.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:47:00.}
+\end{figure}
+
+Le premier scalaire de Lorentz non nul est quadratique :
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}.
+\label{eq:f2-scalar}
+\end{equation}
+Développons la contraction au lieu de simplement la citer. Les composantes mixtes font intervenir le champ électrique. Relever leur indice temporel introduit un signe moins, et les deux ordres \(0i\) et \(i0\) apparaissent :
+\begin{equation}
+\sum_i\left(F_{0i}F^{0i}+F_{i0}F^{i0}\right)
+=-2E^2.
+\end{equation}
+Les composantes purement spatiales font intervenir le champ magnétique. Relever les indices spatiaux ne change pas le signe, et les deux ordres apparaissent là aussi :
+\begin{equation}
+\sum_{i<j}\left(F_{ij}F^{ij}+F_{ji}F^{ji}\right)
+=2B^2.
+\end{equation}
+On obtient donc
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}=2(B^2-E^2),
+\qquad
+-F_{\mu\nu}F^{\mu\nu}=2(E^2-B^2).
+\label{eq:f2-eb}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_12.png}
+\caption{Contraction développée en fonction des normes des champs électrique et magnétique.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:51:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(F_{00}\) est-il lui aussi nul ?}
+\lecturerresponse{Oui. Toute composante diagonale d’un tenseur antisymétrique s’annule, y compris \(F_{00}\). Seules contribuent les composantes mixtes hors diagonale, qui codent \(\mathbf E\), ainsi que les composantes spatiales hors diagonale, qui codent \(\mathbf B\). \lecturetimestamp{00:51:36}}
+\end{classroomqa}
+
+La normalisation usuelle est
+\begin{equation}
+\boxed{
+\mathcal L_{\mathrm{EM}}
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+}
+\label{eq:maxwell-lagrangian}
+\end{equation}
+ou
+\begin{equation}
+\mathcal L_{\mathrm{EM}}
+=
+\frac12(E^2-B^2).
+\label{eq:maxwell-lagrangian-eb}
+\end{equation}
+Le signe moins donne au terme électrique son signe positif habituel. Le facteur \(1/4\) compense le fait que chaque paire antisymétrique apparaît deux fois et laisse le facteur conventionnel \(1/2\). Multiplier l’action libre entière par une constante non nulle ne modifierait pas les équations sans source, mais cette normalisation est celle qui convient au couplage standard aux sources.
+
+\section{Variation du champ électromagnétique libre}
+
+Les champs indépendants sont
+\begin{equation}
+A_0,\qquad A_x,\qquad A_y,\qquad A_z.
+\end{equation}
+Pour chaque composante \(A_\nu\), l’équation d’Euler--Lagrange est
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial A_{\nu,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial A_\nu},
+\qquad
+A_{\nu,\mu}\equiv\partial_\mu A_\nu.
+\label{eq:vector-el-comma}
+\end{equation}
+Il vaut la peine de lire attentivement la notation avec virgule : le premier indice désigne la composante de \(A\) qui constitue le champ ; le second indique la coordonnée par rapport à laquelle on dérive.
+
+Dans cette notation,
+\begin{equation}
+F_{\mu\nu}
+=
+A_{\nu,\mu}-A_{\mu,\nu}.
+\label{eq:f-comma-consistent}
+\end{equation}
+C’est exactement \eqref{eq:course-f-convention}. Inverser l’ordre verbal des indices après la virgule change le signe dans un calcul intermédiaire ; c’est pourquoi un calcul par composantes est utile.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_13.png}
+\caption{Tenseur de champ écrit avec la notation à virgule, après avoir identifié les quatre composantes du quadripotentiel comme champs indépendants.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:55:30.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_14.png}
+\caption{Lagrangien de Maxwell écrit explicitement en fonction des dérivées du quadripotentiel.}
+\par\smallskip
+\textit{Cadre de la conférence : 00:56:45.}
+\end{figure}
+
+\subsection{Un exemple de dérivée}
+
+Considérons la dérivée \(A_{x,y}=\partial_yA_x\). Les termes \(xy\) et \(yx\) de la somme complète contribuent à
+\begin{align}
+\mathcal L_{\mathrm{EM}}
+&\supset
+-\frac14\left(F_{xy}F^{xy}+F_{yx}F^{yx}\right)
+\nonumber\\
+&=
+-\frac12F_{xy}^2
+\nonumber\\
+&=
+-\frac12\left(A_{x,y}-A_{y,x}\right)^2.
+\label{eq:isolated-xy-piece}
+\end{align}
+La dernière égalité est justifiée, car le signe disparaît lorsqu’on élève au carré : \(A_{x,y}-A_{y,x}=F_{yx}=-F_{xy}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_15.png}
+\caption{Dérivée représentative \(A_{x,y}\) et carré antisymétrique isolé.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:00:45.}
+\end{figure}
+
+Dérivons :
+\begin{align}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial A_{x,y}}
+&=
+-\left(A_{x,y}-A_{y,x}\right)
+\nonumber\\
+&=
+F_{xy}.
+\label{eq:component-variation}
+\end{align}
+Le tableau résume le calcul en associant un signe moins au tenseur dont les indices suivent l’ordre de dérivation adopté au tableau. Avec la définition du cours \eqref{eq:course-f-convention}, l’énoncé invariant est
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial(\partial_\mu A_\nu)}
+=
+-F^{\mu\nu}.
+\label{eq:maxwell-canonical-derivative}
+\end{equation}
+Dans l’exemple \(\partial_yA_x\), cela donne \(-F^{yx}=F^{xy}\), ce qui est précisément \eqref{eq:component-variation}. La différence de signe apparente tient donc uniquement à l’ordre des indices dans le calcul.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_16.png}
+\caption{Développement du carré choisi avant de dériver par rapport à une dérivée du potentiel.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:03:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-il advenu du facteur \(1/2\) dans la dérivée par composante ?}
+\lecturerresponse{La dérivation du carré donne un facteur deux, qui annule le facteur \(1/2\) :
+\[
+\frac{d}{dx}\left[-\frac12x^2\right]=-x.
+\]
+Le passage précédent de \(1/4\) à \(1/2\) provenait des deux composantes ordonnées du tenseur, \(xy\) et \(yx\). \lecturetimestamp{01:03:29}}
+\end{classroomqa}
+
+Le lagrangien du vide ne contient aucun potentiel non dérivé :
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}{\partial A_\nu}=0.
+\end{equation}
+La substitution dans \eqref{eq:vector-el-comma} donne
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=0,
+\end{equation}
+ou, de manière équivalente,
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=0.}
+\label{eq:free-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_17.png}
+\caption{Résultat par composantes généralisé, puis substitué dans l’équation d’Euler--Lagrange.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:09:00.}
+\end{figure}
+
+La même conclusion s’obtient plus simplement en faisant varier l’action entière :
+\begin{align}
+\delta S_{\mathrm{EM}}
+&=
+-\frac12\int d^4x\,
+F^{\mu\nu}
+\left(\partial_\mu\delta A_\nu
+-\partial_\nu\delta A_\mu\right)
+\nonumber\\
+&=
+-\int d^4x\,F^{\mu\nu}\partial_\mu\delta A_\nu
+\nonumber\\
+&=
+\int d^4x\,
+\left(\partial_\mu F^{\mu\nu}\right)\delta A_\nu,
+\label{eq:global-maxwell-variation}
+\end{align}
+On écarte le terme de bord. L’antisymétrie regroupe les deux termes de la première ligne. Comme \(\delta A_\nu\) est arbitraire, on obtient \eqref{eq:free-maxwell-from-action}.
+
+\begin{classroomqa}
+\audiencequestion{Le terme carré isolé supposait-il que le champ magnétique pointait uniquement dans la direction \(z\) ?}
+\lecturerresponse{Non. Il s’agissait d’un terme extrait de la somme complète pour l’examiner ; il faut ajouter des points de suspension après celui-ci. Les autres paires spatiales donnent les autres composantes magnétiques, tandis que les paires temporelle--spatiale donnent les composantes électriques. \lecturetimestamp{01:08:05}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le résultat changerait-il si l’on choisissait un indice temporel plutôt que deux indices spatiaux ?}
+\lecturerresponse{On obtient la même dérivée générale, le signe métrique étant pris en compte lors du relèvement des indices. Deux indices spatiaux sélectionnent une composante magnétique ; un indice temporel et un indice spatial sélectionnent une composante électrique. La formule antisymétrique \eqref{eq:maxwell-canonical-derivative} couvre les deux cas. \lecturetimestamp{01:08:46}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Supposons-nous toujours que \(J^\mu=0\) ?}
+\lecturerresponse{Seulement pour cette dérivation du champ libre. Nous avons temporairement posé le courant égal à zéro afin d’identifier le terme cinétique invariant de jauge. Nous le rétablissons maintenant et cherchons quel terme supplémentaire produit le membre de droite de l’équation de Maxwell. \lecturetimestamp{01:09:41}}
+\end{classroomqa}
+
+L’algèbre n’est pas difficile, mais il faut la faire soi-même plutôt que de se contenter de la suivre. Suivre une fois une chaîne d’indices ne suffit pas à la retenir durablement ; la refaire à la main, si.
+
+\section{Le quadr courant conservé}
+
+La source est le quadr courant
+\begin{equation}
+J^\mu=(\rho,\mathbf J).
+\end{equation}
+Sa composante temporelle est la densité de charge et ses composantes spatiales sont les flux de charge à travers trois surfaces mutuellement perpendiculaires. Pour une petite boîte fixe, cela revient à écrire
+\begin{equation}
+\frac{\partial\rho}{\partial t}
++\nabla\cdot\mathbf J=0.
+\label{eq:continuity-vector-l9}
+\end{equation}
+La charge contenue dans la boîte ne peut diminuer qu’en s’écoulant à travers ses parois. En notation covariante,
+\begin{equation}
+\boxed{\partial_\mu J^\mu=0.}
+\label{eq:continuity-covariant-l9}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_18.png}
+\caption{Densité de charge, courant spatial et interprétation en termes d’une petite boîte, rappelés avant l’introduction du couplage aux sources.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:14:45.}
+\end{figure}
+
+\section{Couplage aux sources et invariance de jauge}
+
+Le scalaire local de Lorentz le plus simple, linéaire à la fois en le courant et en le potentiel, est
+\begin{equation}
+S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu A_\mu.
+\label{eq:interaction-action}
+\end{equation}
+Le signe global est conventionnel. La conférence plaisante en disant que le choix historique du signe de la charge électrique peut, en fin de compte, être attribué à Benjamin Franklin ; l’essentiel est d’employer partout une convention de signe cohérente.
+
+À première vue, \eqref{eq:interaction-action} ne semble pas invariant de jauge. Sous la transformation \eqref{eq:gauge-transform},
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu\partial_\mu\chi.
+\label{eq:gauge-variation-interaction}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_19.png}
+\caption{Action d’interaction et variation sous \(A_\mu\mapsto A_\mu+\partial_\mu\chi\).}
+\par\smallskip
+\textit{Cadre de la conférence : 01:16:45.}
+\end{figure}
+
+Pour voir le mécanisme simplement, développons la contraction :
+\begin{equation}
+J^\mu\partial_\mu\chi
+=
+J^0\partial_0\chi
++J^1\partial_1\chi
++J^2\partial_2\chi
++J^3\partial_3\chi.
+\end{equation}
+Supposons que le courant soit confiné dans un grand laboratoire ou qu’il décroisse assez rapidement pour s’annuler à la frontière. Intégrons chaque terme par parties. Par exemple, pour la première coordonnée spatiale,
+\begin{align}
+-\int d^4x\,J^1\partial_1\chi
+&=
+-\int dt\,dx^2\,dx^3
+\left[J^1\chi\right]_{x^1=-\infty}^{x^1=+\infty}
+\nonumber\\
+&\quad
++\int d^4x\,\chi\,\partial_1J^1
+\nonumber\\
+&=
+\int d^4x\,\chi\,\partial_1J^1.
+\end{align}
+On procède de la même façon pour le terme temporel et les deux autres termes spatiaux.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_20.png}
+\caption{Les quatre termes de la variation de jauge, développés avant intégration par parties.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:19:15.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_21.png}
+\caption{Exemple d’intégration par parties où la dérivée passe de la fonction de jauge au courant.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:20:45.}
+\end{figure}
+
+En regroupant les quatre composantes,
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+\int d^4x\,\chi\,\partial_\mu J^\mu.
+\label{eq:gauge-variation-continuity}
+\end{equation}
+Par conséquent,
+\begin{equation}
+\partial_\mu J^\mu=0
+\quad\Longrightarrow\quad
+\delta_\chi S_{\mathrm{int}}=0.
+\end{equation}
+Sous les conditions aux limites supposées, l’interaction avec les sources est invariante de jauge si, et seulement si, le courant est localement conservé.
+
+\begin{classroomqa}
+\audiencequestion{Suffit-il d’imposer seulement \(\nabla\cdot\mathbf J=0\) ?}
+\lecturerresponse{Non. Les quatre termes sont nécessaires :
+\[
+\partial_\mu J^\mu
+=
+\dot\rho+\nabla\cdot\mathbf J=0.
+\]
+Le premier terme représente la variation de la densité de charge dans la boîte fixe. La divergence spatiale peut être non nulle si cette variation la compense. \lecturetimestamp{01:22:00}}
+\end{classroomqa}
+
+\section{L’équation de Maxwell avec source}
+
+La densité lagrangienne électromagnétique complète est
+\begin{equation}
+\boxed{
+\mathcal L
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+-J^\mu A_\mu.
+}
+\label{eq:full-maxwell-lagrangian}
+\end{equation}
+Le terme de source ne contient aucune dérivée de \(A_\nu\) ; il ne modifie donc pas \eqref{eq:maxwell-canonical-derivative} et contribue par
+\begin{equation}
+\frac{\partial\mathcal L}{\partial A_\nu}=-J^\nu.
+\end{equation}
+L’équation d’Euler--Lagrange donne donc
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=-J^\nu,
+\end{equation}
+ou
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=J^\nu.}
+\label{eq:sourced-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_22.png}
+\caption{Termes libre et de source, avec les dérivées d’Euler--Lagrange représentatives.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:25:00.}
+\end{figure}
+
+Un courant prescrit non conservé entraînerait deux problèmes à la fois. L’action d’interaction ne serait pas invariante de jauge et les équations de Maxwell avec source seraient incohérentes. La charge ne peut pas simplement disparaître à l’intérieur d’une région sans qu’un flux compensateur traverse sa frontière.
+
+\section{Les équations de Maxwell rétablissent la conservation}
+
+La compatibilité apparaît directement dans l’équation de champ. En appliquant \(\partial_\nu\) à \eqref{eq:sourced-maxwell-from-action}, on obtient
+\begin{equation}
+\partial_\nu J^\nu
+=
+\partial_\nu\partial_\mu F^{\mu\nu}
+=0,
+\label{eq:antisymmetry-implies-continuity}
+\end{equation}
+car les dérivées sont symétriques par échange de \(\mu\leftrightarrow\nu\), tandis que \(F^{\mu\nu}\) est antisymétrique.
+
+La conférence vérifie aussi ce résultat sous forme vectorielle, et cette vérification met au jour une erreur de signe faite en direct. Partons de la loi de Gauss :
+\begin{equation}
+\rho=\nabla\cdot\mathbf E.
+\end{equation}
+Dérivons par rapport au temps :
+\begin{equation}
+\dot\rho=\nabla\cdot\dot{\mathbf E}.
+\label{eq:rho-dot-div-edot}
+\end{equation}
+Au tableau, l’équation provisoire a été écrite
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B+\mathbf J.
+\label{eq:provisional-wrong-source-sign}
+\end{equation}
+Sa divergence donnerait
+\begin{equation}
+\dot\rho=\nabla\cdot\mathbf J,
+\end{equation}
+puisque la divergence d’un rotationnel est nulle. Cela contredit \eqref{eq:continuity-vector-l9}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_23.png}
+\caption{L’équation provisoire avec un signe plus devant \(\mathbf J\), qui conduit au mauvais signe dans l’équation de continuité.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:27:00.}
+\end{figure}
+
+L’incohérence est manifeste. Le calcul est repris en direct ; l’équation de continuité requise est énoncée ; puis une personne dans l’auditoire vérifie l’équation et repère le signe de la source. L’équation en composantes compatible avec la convention est
+\begin{equation}
+\boxed{
+\dot{\mathbf E}+\nabla\times\mathbf B=-\,\mathbf J,
+}
+\label{eq:corrected-source-sign}
+\end{equation}
+ou
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B-\mathbf J.
+\end{equation}
+Les équations \eqref{eq:rho-dot-div-edot} et \eqref{eq:corrected-source-sign} donnent alors
+\begin{align}
+\dot\rho
+&=
+\nabla\cdot
+\left(-\nabla\times\mathbf B-\mathbf J\right)
+\nonumber\\
+&=
+-\nabla\cdot\mathbf J,
+\end{align}
+ce qui est exactement la conservation locale de la charge.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_24.png}
+\caption{Signe corrigé de la source et équation de continuité retrouvée.}
+\par\smallskip
+\textit{Cadre de la conférence : 01:31:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Le terme de courant à droite ne devrait-il pas être \(-\mathbf J\) ?}
+\lecturerresponse{Oui. Avec la convention du tenseur de champ utilisée dans tout le cours, la partie spatiale de \(\partial_\mu F^{\mu\nu}=J^\nu\) est \(\dot{\mathbf E}+\nabla\times\mathbf B=-\mathbf J\). Cette correction permet au calcul de la divergence de retrouver \(\dot\rho+\nabla\cdot\mathbf J=0\) et ne modifie pas la dérivation covariante de l’action qui précède. \lecturetimestamp{01:30:17}}
+\end{classroomqa}
+
+\section{Quel principe est fondamental ?}
+
+\begin{classroomqa}
+\audiencequestion{Le raisonnement est-il circulaire ? Nous avons utilisé la conservation de la charge pour rendre l’action invariante de jauge, puis nous nous sommes servis de l’action pour dériver les équations de Maxwell, lesquelles impliquent la conservation de la charge.}
+\lecturerresponse{Ces affirmations sont compatibles entre elles ; il ne s’agit pas d’une démonstration circulaire qui présupposerait sa propre conclusion. On peut partir des équations de Maxwell observées et en découvrir l’équation de continuité ; on reconnaît alors \(-J^\mu A_\mu\) comme un couplage invariant de jauge. On peut aussi partir de la localité, de l’invariance de Lorentz, de l’invariance de jauge et d’une action ; l’invariance de jauge impose alors un courant conservé, et l’action donne les équations de Maxwell. On peut encore considérer comme un fait premier que la charge ne disparaît pas localement. Ces différentes voies conduisent à la même structure. \lecturetimestamp{01:31:11}}
+\end{classroomqa}
+
+Si l’on cherche la démarche constructive la plus économique, la combinaison de la localité, de l’invariance de Lorentz, de l’invariance de jauge et d’un principe lagrangien sélectionne
+\begin{equation}
+-\frac14F_{\mu\nu}F^{\mu\nu}-J^\mu A_\mu
+\end{equation}
+et donc l’équation dynamique de Maxwell. Considérer l’un des éléments de ce triangle comme plus fondamental relève en partie d’une préférence. L’essentiel est que ces éléments s’accordent.
+
+\section{Pourquoi le terme \emph{jauge} ?}
+
+\begin{classroomqa}
+\audiencequestion{Les mathématiques sont claires, mais que signifie ici le mot \emph{jauge} ?}
+\lecturerresponse{Cette appellation est un anachronisme historique. Une jauge peut désigner un zéro choisi, comme dans le cas d’une pression mesurée par rapport à une référence. Hermann Weyl a d’abord associé cette idée à une unité locale de longueur ; cette interprétation ne correspondait pas à la bonne physique. Le terme a survécu lorsque cette liberté a été correctement reliée à la phase d’une fonction d’onde quantique. Dans le calcul classique présent, la transformation de \(A_\mu\) par \(\partial_\mu\chi\) change le zéro descriptif sans modifier \(F_{\mu\nu}\). La signification quantique plus profonde sera abordée plus tard.
+\lecturetimestamp{01:34:49}}
+\end{classroomqa}
+
+Cette appellation historique ne doit pas masquer l’énoncé opérationnel : les potentiels reliés par \eqref{eq:gauge-transform} décrivent le même champ électromagnétique. La liberté de jauge constitue donc une redondance de la description par le potentiel, tandis que le tenseur de champ est invariant de jauge.
+
+\section{Pourquoi les deux familles d’équations de Maxwell semblent asymétriques}
+
+\begin{classroomqa}
+\audiencequestion{Si les champs électrique et magnétique sont si symétriques, pourquoi l’une des familles d’équations de Maxwell apparaît-elle comme une identité de Bianchi, tandis que l’autre découle des équations du mouvement ?}
+\lecturerresponse{En électromagnétisme sans sources, on peut introduire un potentiel dual de façon à échanger les rôles : ce qui était une équation du mouvement devient une identité de Bianchi, et inversement. L’asymétrie physique vient des sources. On observe des charges électriques, mais aucun monopôle magnétique élémentaire n’a été observé. S’il existait une symétrie ordinaire exacte échangeant les charges électriques et magnétiques, on s’attendrait à des homologues magnétiques avec des spectres correspondants, qui ne sont pas observés. Des théories plus élaborées peuvent néanmoins comporter des charges magnétiques ou des dualités électro--magnétiques, mais cela dépasse le cadre de la présente dérivation. \lecturetimestamp{01:37:11}}
+\end{classroomqa}
+
+Les équations sans sources présentent donc une structure d’échange électro--magnétique, tandis que le secteur des sources observées privilégie une description électrique. Ce n’est pas qu’une convention typographique, mais cela ne remet pas en cause la symétrie visible dans une onde plane libre.
+
+\section{Ce qui a été construit}
+
+Le parcours de ce cours est maintenant achevé :
+\begin{enumerate}
+\item Les équations de Maxwell imposent à une onde plane d’être transverse, avec des champs électrique et magnétique orthogonaux et une relation de dispersion \(\omega=ck\).
+\item Les équations de Bianchi sont des identités qui découlent du potentiel ; les équations contractées sont dynamiques.
+\item La localité et l’invariance de Lorentz conduisent à une densité d’action, tandis que l’invariance de jauge exclut \(A_\mu A^\mu\) et sélectionne un scalaire construit à partir de \(F_{\mu\nu}\).
+\item L’action libre \(-\tfrac14F_{\mu\nu}F^{\mu\nu}\) donne l’équation de Maxwell dans le vide.
+\item L’interaction \(-J^\mu A_\mu\) est invariante de jauge si et seulement si le courant satisfait l’équation de continuité.
+\item L’action avec sources donne \(\partial_\mu F^{\mu\nu}=J^\nu\), et l’antisymétrie permet de retrouver \(\partial_\mu J^\mu=0\).
+\end{enumerate}
+
+La structure ainsi réunie est considérable : la mécanique lagrangienne, la théorie relativiste des champs, l’électrodynamique, l’invariance de Lorentz, l’invariance de jauge et la conservation locale de la charge s’inscrivent dans un même raisonnement. Pour assimiler tout cela, la seule méthode fiable consiste à reprendre les équations depuis le début et à suivre à la main chaque dérivée et chaque signe.

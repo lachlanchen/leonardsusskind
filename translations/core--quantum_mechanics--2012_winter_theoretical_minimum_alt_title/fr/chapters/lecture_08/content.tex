@@ -1,0 +1,652 @@
+\chapter{Localité, états continus et quantité de mouvement}
+
+\lectureoverview{L’intrication peut être créée puis défaite par une dynamique réversible. Pourtant, les mesures deviennent effectivement irréversibles lorsqu’une partie du système intriqué échappe à notre contrôle. Cette distinction conduit à un test précis de la localité : Bob peut appliquer n’importe quelle opération unitaire dans son voisinage, mais la matrice densité réduite d’Alice, et donc toutes les statistiques auxquelles elle a seule accès, restent inchangées. Une expérience de pensée fondée sur la simulation classique permet ensuite d’isoler ce qui est véritablement non classique. Il est facile d’imiter un spin, et un ordinateur central peut simuler une paire intriquée, mais des machines locales séparées ne peuvent reproduire toutes les corrélations intriquées sans communication illicite ou sans recourir à un modèle de variables cachées local au sens de Bell, qui finit par échouer. Le cours délaisse ensuite les spins pour étudier une particule sur une droite. Les sommes discrètes deviennent des intégrales, les deltas de Kronecker des deltas de Dirac, et les fonctions d’onde des vecteurs d’un espace de dimension infinie. La multiplication par \(x\) donne la position ; la dérivation est anti-hermitienne ; la multiplication par \(-i\) produit l’opérateur quantité de mouvement hermitien. Le calcul final, \([x,p]=i\hbar\), relie à nouveau les commutateurs quantiques aux crochets de Poisson classiques et ouvre la voie aux paquets d’ondes, aux transformées de Fourier et à l’évolution de Schr\"odinger.}
+
+\section{L’intrication n’est pas l’irréversibilité}
+
+Commençons par une distinction qu’il est facile de perdre de vue lorsqu’on parle de mesure. Supposons que deux spins soient initialement dans un état produit, qu’ils interagissent, se séparent et repartent dans un état intriqué. L’intrication doit-elle alors persister à jamais ? Non. L’interaction était unitaire : une autre interaction appropriée peut donc l’annuler. On peut réfléchir les spins, les rapprocher de nouveau et mettre en place une évolution inverse qui ramène la paire à un état produit. Aucune loi n’impose que l’intrication, à elle seule, ne puisse qu’augmenter.
+
+La situation change sur le plan opérationnel lorsqu’on écarte l’un des membres de la paire. Si un électron s’éloigne dans un environnement incontrôlé, son partenaire resté à proximité demeure intriqué avec quelque chose, mais les degrés de liberté manquants ne sont plus accessibles pour effectuer l’opération inverse. En principe, l’électron éloigné pourrait être réfléchi et revenir ; en pratique, il est parti. C’est en ce sens qu’une mesure est irréversible \emph{pour nous} : les corrélations se sont propagées à des degrés de liberté que nous ne contrôlons pas.
+
+\begin{classroomqa}
+\audiencequestion{Si deux systèmes s’intriquent, peuvent-ils ensuite se désintriqué ?}
+\lecturerresponse{Oui. L’évolution unitaire est réversible. Une seconde interaction peut réaliser l’inverse de la première et rétablir un état produit. L’irréversibilité apparaît lorsque des degrés de liberté pertinents sont écartés ou absorbés par un environnement incontrôlé ; elle ne découle pas de la seule intrication.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi une mesure achevée semble-t-elle alors irréversible ?}
+\lecturerresponse{Parce que le système mesuré s’est corrélé à un appareil, à un observateur et, en définitive, à un vaste environnement. Inverser l’état complet exigerait de contrôler toutes ces traces. L’évolution microscopique peut rester unitaire alors que l’opération est inaccessible dans la description réduite de l’observateur.}
+\end{classroomqa}
+
+\section{L’état accessible à Alice}
+
+Divisons un système composite en degrés de liberté d’Alice \(a\) et degrés de liberté de Bob \(b\), et notons les coefficients de l’état pur
+\begin{equation}
+\Psi(a,b)=\braket{a,b}{\Psi}.
+\end{equation}
+Alice n’a pas accès au laboratoire de Bob. Sa description locale complète n’est donc généralement pas une fonction d’onde. C’est la matrice densité réduite
+\begin{equation}
+\rho_A(a',a)
+=
+\sum_b \Psi^*(a',b)\Psi(a,b).
+\label{eq:l8-reduced-density}
+\end{equation}
+La somme élimine l’indice de Bob. Il reste un indice de bra et un indice de ket pour Alice ; cette matrice contient toutes les distributions de probabilité qu’Alice peut obtenir par des expériences réalisées entièrement dans son voisinage.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_01.png}
+\caption{La matrice densité réduite d’Alice, obtenue en sommant la fonction d’onde conjointe sur l’indice de base de Bob.}
+\lectureframe{00:04:34}
+\end{figure}
+
+Il faut entendre au sens large le voisinage d’Alice et celui de Bob. Chacun peut comprendre un appareil, des champs magnétiques, des techniciens et tout autre degré de liberté avec lequel l’observateur concerné peut interagir. L’affirmation de localité ne signifie pas que Bob ne peut pas modifier son propre système. Il peut le faire de nombreuses façons. Elle signifie qu’aussi longtemps qu’il reste à distance, aucune de ses actions locales ne modifie l’équation~\eqref{eq:l8-reduced-density}.
+
+\section{L’opération unitaire locale de Bob}
+
+Commençons par ignorer Alice et décrivons uniquement la manipulation de Bob. Si Bob modifie un champ magnétique ou, autrement, son Hamiltonien local, les coefficients de sa fonction d’onde subissent une transformation unitaire,
+\begin{equation}
+\psi_M(b)
+=
+\sum_{b'}U_{bb'}\psi(b').
+\label{eq:l8-bob-unitary}
+\end{equation}
+Dans la description composite, l’indice d’Alice reste spectateur :
+\begin{equation}
+\Psi_M(a,b)
+=
+\sum_{b'}U_{bb'}\Psi(a,b').
+\label{eq:l8-composite-unitary}
+\end{equation}
+La conjugaison complexe transforme le ket de façon à obtenir la transformation correspondante du bra,
+\begin{equation}
+\Psi_M^*(a',b)
+=
+\sum_{b''}\Psi^*(a',b'')U^\dagger_{b''b}.
+\label{eq:l8-composite-bra}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_02.png}
+\caption{Une transformation unitaire agit sur l’indice ket de Bob, tandis que la matrice adjointe agit sur l’indice bra correspondant.}
+\lectureframe{00:12:54}
+\end{figure}
+
+Recalculons maintenant la matrice densité d’Alice :
+\begin{align}
+\rho_{A,M}(a',a)
+&=
+\sum_b\Psi_M^*(a',b)\Psi_M(a,b) \notag\\
+&=
+\sum_{b,b',b''}
+\Psi^*(a',b'')
+U^\dagger_{b''b}U_{bb'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')
+(U^\dagger U)_{b''b'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')\delta_{b''b'}\Psi(a,b') \notag\\
+&=
+\sum_{b'}\Psi^*(a',b')\Psi(a,b') \notag\\
+&=
+\rho_A(a',a).
+\label{eq:l8-locality-proof}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_03.png}
+\caption{Le calcul de localité au tableau : \(U^\dagger U\) se réduit à l’identité dans l’état réduit d’Alice.}
+\lectureframe{00:14:27}
+\end{figure}
+
+La démonstration entière tient dans la contraction
+\begin{equation}
+\sum_bU^\dagger_{b''b}U_{bb'}
+=(U^\dagger U)_{b''b'}
+=\delta_{b''b'}.
+\label{eq:l8-unitarity-contraction}
+\end{equation}
+Aucune hypothèse de factorisation n’a été utilisée. L’équation~\eqref{eq:l8-locality-proof} est valable que l’état conjoint soit un état produit ou un état maximalement intriqué. Ainsi, toute valeur moyenne accessible à Alice seule,
+\begin{equation}
+\expect{L_A}
+=
+\operatorname{Tr}_A(\rho_A L_A),
+\end{equation}
+invariante sous l’opération unitaire locale de Bob.
+
+\begin{classroomqa}
+\audiencequestion{Si Bob agit sur son spin, pourquoi cela ne constitue-t-il pas déjà une violation de l’unitarité ?}
+\lecturerresponse{Agir ne signifie pas appliquer une transformation non unitaire. Bob peut faire tourner un aimant, modifier un Hamiltonien local ou laisser son spin précesser. Il s’agit d’évolutions unitaires ordinaires. Elles modifient son propre état et les probabilités de ses propres résultats, mais le calcul précédent montre qu’elles ne modifient pas l’état réduit d’Alice.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La mécanique quantique respecte-t-elle donc la localité ?}
+\lecturerresponse{Elle respecte la localité opérationnelle considérée ici : Bob ne peut pas influer sur les statistiques des mesures accessibles à Alice en agissant uniquement dans son voisinage. Les corrélations conjointes intriquées restent non classiques, mais elles ne permettent pas de transmettre un signal contrôlable.}
+\end{classroomqa}
+
+\subsection{Pourquoi l’unitarité est importante}
+
+L’unitarité n’était pas un simple ornement. C’est elle qui fournit l’identité dans l’équation~\eqref{eq:l8-unitarity-contraction}. Dans le langage utilisé précédemment, l’unitarité exprime la conservation des distinctions : deux vecteurs d’état distinguables le restent après une évolution réversible. Si Bob disposait d’une évolution déterministe, même légèrement non unitaire, \(U^\dagger U\) ne serait pas l’identité. La matrice densité réduite d’Alice pourrait alors changer instantanément, ce qui donnerait à Bob un moyen de transmettre un signal plus vite que la lumière.
+
+Ce lien étroit explique en partie pourquoi il est difficile de modifier la mécanique quantique par morceaux. Changer la loi d’évolution peut entraîner la défaillance de principes apparemment éloignés. Localité, conservation des probabilités et évolution réversible des états font partie d’une même structure.
+
+\begin{classroomqa}
+\audiencequestion{Comment une opération non unitaire permettrait-elle de transmettre un signal plus vite que la lumière ?}
+\lecturerresponse{Bob déciderait de l’appliquer ou non. Si la transformation modifiait \(\rho_A\), Alice pourrait distinguer les deux choix en répétant des mesures locales sur un ensemble de systèmes. La modification se produirait sans qu’un signal se propage depuis Bob, ce qui est précisément empêché par la compensation unitaire.}
+\end{classroomqa}
+
+\section{L’effondrement modifie les conditions, pas les distributions marginales à distance}
+
+L’exemple de la séparatrice rend le malaise très concret. Un photon unique est placé dans une superposition de deux chemins, l’un vers Alice, l’autre vers Bob. Si le détecteur d’Alice se déclenche, l’état conditionnel attribue une amplitude nulle à un déclenchement ultérieur sur le chemin de Bob. On serait tenté de dire qu’Alice a modifié instantanément le photon de Bob.
+
+Ce que Bob peut observer sans connaître le résultat d’Alice est différent. Avant de recevoir un message, il doit faire la moyenne sur les différents résultats possibles d’Alice. Cette moyenne non conditionnelle est décrite par sa matrice densité réduite et ne change pas. Le déclenchement d’Alice détermine quel sous-ensemble conditionnel décrit une réalisation une fois son résultat connu ; il ne modifie pas la distribution marginale locale de Bob. La distinction entre
+\begin{equation}
+\rho_B
+\qquad\text{and}\qquad
+\rho_{B\mid A=\text{click}}
+\end{equation}
+est celle entre absence de signalisation et corrélations exploitables.
+
+\begin{classroomqa}
+\audiencequestion{Quand un détecteur se déclenche, la fonction d’onde sur l’autre bras ne s’effondre-t-elle pas instantanément à zéro ?}
+\lecturerresponse{L’état conditionné par ce déclenchement change, mais l’observateur distant ne connaît pas cette condition avant qu’un message ordinaire lui parvienne. La matrice densité non conditionnelle de Bob et toutes ses statistiques locales moyennes restent inchangées. L’effondrement ne peut pas servir de télégraphe.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La confusion vient-elle en partie d’une confusion entre l’état et l’information sur l’état ?}
+\lecturerresponse{Cette formulation est évocatrice, mais elle reste trop vague. La distinction concrète porte sur l’état conjoint, l’état réduit et l’état conditionné par un résultat communiqué. Il est plus sûr de distinguer ces trois objets mathématiques que de chercher à trancher la question en invoquant seulement le mot « information ».}
+\end{classroomqa}
+
+Le malaise d’Einstein--Podolsky--Rosen subsiste néanmoins. Un état singulet peut nous donner une connaissance maximale du \emph{tout}, alors qu’aucune des deux particules ne possède d’état local pur. Cette inversion de l’attente classique---connaître le tout sans attribuer d’état pur déterminé aux parties---n’est pas un effet de signalisation, mais elle est véritablement singulière. Pour mettre cette singularité davantage en évidence, transformons la mécanique quantique en problème de programmation.
+
+\section{Un simulateur classique pour un spin}
+
+Dessinez un appareil de mesure du spin sur un écran d’ordinateur. L’utilisateur peut l’orienter, appuyer sur un bouton de mesure \(M\), puis lire \(+1\) ou \(-1\). L’ordinateur classique stocke deux amplitudes complexes,
+\begin{equation}
+\alpha_u,\qquad \alpha_d,
+\qquad
+|\alpha_u|^2+|\alpha_d|^2=1.
+\label{eq:l8-one-spin-amplitudes}
+\end{equation}
+Entre les mesures, l’ordinateur intègre l’équation appropriée de Schr\"odinger. Un champ magnétique simulé peut faire précesser les amplitudes exactement comme le ferait un véritable état de spin.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_04.png}
+\caption{Le simulateur d’un spin : un appareil orientable et un bouton de mesure reliés à un ordinateur qui stocke deux amplitudes.}
+\lectureframe{00:27:47}
+\end{figure}
+
+Lorsque l’utilisateur appuie sur \(M\), un générateur de nombres pseudo-aléatoires sélectionne un résultat selon les probabilités de Born
+\begin{equation}
+P(+1)=|\alpha_u|^2,
+\qquad
+P(-1)=|\alpha_d|^2.
+\label{eq:l8-one-spin-born}
+\end{equation}
+L’ordinateur affiche le signe sélectionné puis met à jour l’état. Après \(+1\),
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(1,0),
+\end{equation}
+alors qu’après \(-1\),
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(0,1).
+\end{equation}
+L’évolution unitaire reprend ensuite à partir de l’état postérieur à la mesure. Si l’utilisateur tourne l’appareil avant d’appuyer sur \(M\), l’ordinateur change de base et calcule les probabilités correspondant au nouvel axe.
+
+Le matériel n’a rien de spécifiquement quantique. Un algorithme pseudo-aléatoire déterministe suffit à produire une suite qui semble aléatoire à l’utilisateur. Pour un spin unique, cette imitation classique peut être indiscernable sur le plan opérationnel de l’expérience en laboratoire.
+
+\begin{classroomqa}
+\audiencequestion{À quoi sert le bouton de mesure ? Le temps qui s’écoule avant qu’on appuie dessus a-t-il une importance ?}
+\lecturerresponse{Le bouton marque l’instant où le simulateur échantillonne la distribution de Born et met à jour les amplitudes stockées. Pendant l’attente, les amplitudes évoluent sous l’action du Hamiltonien. Si celui-ci est nul, rien ne change avec le temps ; en présence d’un champ magnétique, le spin simulé précesse avant la mesure.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Qui décide du moment où l’on appuie sur le bouton et de l’orientation de l’appareil ?}
+\lecturerresponse{Dans ce modèle, c’est l’expérimentateur qui choisit ces réglages. Le simulateur suit l’évolution de l’état en continu, puis utilise l’axe et l’instant de mesure choisis au moment où l’on appuie sur le bouton. Nous reviendrons plus tard sur l’hypothèse selon laquelle les réglages peuvent être choisis indépendamment de la paire préparée.}
+\end{classroomqa}
+
+\section{Deux spins : là où la simulation locale échoue}
+
+Deux spins dans un état produit restent faciles à simuler. Donnez à Alice un ordinateur qui stocke les amplitudes \(\alpha_u,\alpha_d\), et à Bob un autre qui stocke \(\beta_u,\beta_d\). Chaque machine fait évoluer et mesure son propre spin. Aucune communication n’est nécessaire, car les coefficients conjoints se factorisent :
+\begin{equation}
+\Psi(a,b)=\alpha_a\beta_b.
+\end{equation}
+
+Un état quelconque de deux spins nécessite quatre coefficients,
+\begin{equation}
+\alpha_{uu},\qquad
+\alpha_{ud},\qquad
+\alpha_{du},\qquad
+\alpha_{dd},
+\qquad
+\sum_{a,b}|\alpha_{ab}|^2=1.
+\label{eq:l8-four-amplitudes}
+\end{equation}
+Un seul ordinateur central peut stocker ces nombres et les faire évoluer au moyen de l’équation de Schr\"odinger en quatre dimensions. Lorsque l’un des observateurs effectue une mesure, la machine centrale échantillonne la probabilité marginale correcte, élimine les composantes incompatibles, renormalise les composantes restantes et poursuit l’évolution à partir de l’état conditionnel.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_05.png}
+\caption{Un simulateur central stocke les quatre amplitudes d’un état quelconque de deux spins et reste relié aux deux stations de mesure.}
+\lectureframe{00:37:47}
+\end{figure}
+
+Cette construction simule parfaitement l’intrication tant que le processeur central reste relié aux deux côtés. Le problème commence lorsqu’on copie les quatre amplitudes dans deux machines, qu’on les sépare, qu’on coupe les fils et qu’on laisse chacune utiliser son propre générateur aléatoire. Pour l’état singulet,
+\begin{equation}
+\ket{\Psi^-}
+=
+\frac{1}{\sqrt2}
+\left(
+\ket{u}_A\ket{d}_B-\ket{d}_A\ket{u}_B
+\right),
+\label{eq:l8-singlet}
+\end{equation}
+les mesures selon un même axe doivent donner des résultats opposés. Des tirages aléatoires indépendants peuvent au contraire donner \(++\) ou \(--\) : la corrélation est alors perdue, bien que les deux machines aient commencé avec une copie des coefficients conjoints.
+
+\begin{classroomqa}
+\audiencequestion{Les deux machines pourraient-elles partager une source de nombres aléatoires avant d’être séparées ?}
+\lecturerresponse{Un aléa partagé peut imposer une corrélation donnée pour un axe de mesure fixe. Le problème de Bell, plus profond, demande un schéma local unique qui reproduise les corrélations quantiques pour chaque paire d’axes choisie indépendamment. Les variables partagées à l’avance sont incluses dans les modèles locaux au sens de Bell, et aucun modèle de ce type ne reproduit la fonction de corrélation quantique complète.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Les quatre amplitudes sont-elles indépendantes ?}
+\lecturerresponse{Ce sont les quatre coordonnées d’un même état conjoint normalisé, et non quatre états locaux indépendants. Dans un état intriqué, elles ne peuvent pas s’écrire sous la forme \(\alpha_a\beta_b\). Une fois le résultat local sélectionné, il faut mettre à jour de manière cohérente les coefficients conjoints restants ; deux copies déconnectées n’effectuent pas automatiquement des mises à jour concordantes.}
+\end{classroomqa}
+
+\subsection{Ce que signifient les fils cachés}
+
+Un générateur central de nombres aléatoires relié aux deux stations pourrait coordonner les résultats. Dans un simulateur classique ordinaire, ces fils seraient aussi des canaux de communication. Bob pourrait délibérément envoyer un bit à Alice et, si la liaison était instantanée, la machine violerait la localité.
+
+Le système quantique n’accorde pas cette liberté à Bob. Les transformations locales qui lui sont permises sont unitaires, et la démonstration à partir de la matrice densité réduite a déjà montré qu’aucune de ces transformations ne modifie les statistiques marginales d’Alice. Les fils du simulateur montrent donc que la comptabilité classique ordinaire a une structure inadéquate ; ils ne prouvent pas que la nature comporte des câbles supraluminiques accessibles.
+
+\begin{classroomqa}
+\audiencequestion{Les fils nécessaires au simulateur classique représentent-ils une non-localité physique ?}
+\lecturerresponse{Ils représentent la coordination supplémentaire dont a besoin un modèle classique naïf. S’il s’agissait de fils ordinaires utilisables, ils permettraient la signalisation et ne simuleraient pas l’expérience quantique. La conclusion la plus sûre est que la simulation classique locale et la mécanique quantique ont des structures logiques différentes, et non que l’on a découvert des fils de communication cachés.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si Alice et Bob reçoivent chacun un bit aléatoire, mais que les bits sont parfaitement corrélés, qu’y a-t-il d’étrange à cela ?}
+\lecturerresponse{Rien d’étrange à une seule corrélation convenue d’avance : des enveloppes identiques ou des graines aléatoires partagées peuvent la produire. Le caractère non classique apparaît quand Alice et Bob choisissent indépendamment entre plusieurs réglages incompatibles et que les corrélations obtenues violent une inégalité de Bell, alors que chaque résultat local reste aléatoire.}
+\end{classroomqa}
+
+L’expérience de pensée comporte aussi une prémisse qu’il convient de mettre en évidence : les réglages de mesure sont traités comme des choix indépendants. Alice et Bob décident du moment où ils appuient sur leurs boutons et de l’orientation de leurs appareils sans que ces choix soient secrètement fixés par les variables de la source. Dès lors que les observateurs et leurs mécanismes de décision sont inclus dans un même système physique fermé, la notion philosophique de libre choix devient délicate. Les tests opérationnels de Bell formulent la condition requise comme une indépendance des réglages de mesure et mettent en place des réglages générés à l’extérieur, en séparation de genre espace. Le cours laisse la métaphysique ouverte tout en conservant la prémisse expérimentale.
+
+\begin{classroomqa}
+\audiencequestion{Inclure Alice et Bob dans le système physique crée-t-il une échappatoire ?}
+\lecturerresponse{Cela met au jour une hypothèse : les réglages ne doivent pas être corrélés à l’avance avec les variables cachées qui préparent la paire. On peut débattre du libre arbitre, mais l’énoncé testable est l’indépendance des réglages de mesure. Il est logiquement possible d’y renoncer, mais cela déplace la charge explicative au lieu de fournir une simulation locale ordinaire.}
+\end{classroomqa}
+
+\section{Des spins à une particule sur une droite}
+
+Les spins ont conduit la discussion des vecteurs de dimension finie à l’intrication et à la localité. Élargissons maintenant l’espace de Hilbert. Considérons une particule qui se déplace sur une droite infinie. Un état propre de position se note
+\begin{equation}
+\ket{x},
+\end{equation}
+et signifie que la particule a une position déterminée \(x\). Ces kets forment une base à étiquetage continu. Un état général est une superposition de ces kets, et sa fonction d’onde dans l’espace des positions est
+\begin{equation}
+\psi(x)=\braket{x}{\Psi}.
+\label{eq:l8-position-wavefunction}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_06.png}
+\caption{La fonction d’onde dans l’espace des positions comme projection de l’état abstrait sur le ket de base \(\ket{x}\).}
+\lectureframe{00:56:51}
+\end{figure}
+
+La position sert ici d’étiquette complète pour la base. Cela ne signifie ni qu’on peut spécifier un état classique par la seule position, ni que la particule possède simultanément une position et une quantité de mouvement déterminées. Cela signifie que tout vecteur d’état quantique peut être développé dans la base des positions. La quantité de mouvement apparaîtra comme un opérateur agissant sur les coefficients de la fonction d’onde dans l’espace des positions.
+
+La règle de Born donne maintenant une densité de probabilité \emph{},
+\begin{equation}
+\rho(x)=|\psi(x)|^2.
+\label{eq:l8-probability-density}
+\end{equation}
+Pour une variable continue, la probabilité associée à un point exact est en général nulle. La probabilité de trouver la particule dans un intervalle est
+\begin{equation}
+P(x_1<x<x_2)
+=
+\int_{x_1}^{x_2}|\psi(x)|^2\,dx,
+\end{equation}
+et la normalisation exige que
+\begin{equation}
+\int_{-\infty}^{\infty}|\psi(x)|^2\,dx=1.
+\label{eq:l8-continuous-normalization}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Comment la position seule peut-elle constituer une base complète, alors qu’une particule classique nécessite à la fois une position et une quantité de mouvement ?}
+\lecturerresponse{Ici, la complétude concerne la représentation d’un vecteur quantique. Les coefficients \(\psi(x)\) pour toutes les valeurs de \(x\) spécifient l’état, et l’information sur la quantité de mouvement est encodée dans leurs phases et leur variation spatiale. Les bases de la position et de la quantité de mouvement sont différentes et seront reliées plus tard par une transformée de Fourier ; elles ne sont pas des étiquettes classiques simultanées.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(|\psi(x)|^2\) est-elle la probabilité de trouver la particule exactement au point \(x\) ?}
+\lecturerresponse{C’est une densité. La multiplier par un petit intervalle \(dx\) donne la probabilité approximative que la particule se trouve dans cet intervalle ; l’intégration donne la probabilité exacte dans une région finie. Une densité peut être non nulle même si la probabilité attribuée à un point isolé est nulle.}
+\end{classroomqa}
+
+\section{Orthogonalité de la base continue et fonction delta}
+
+Pour une base orthonormée discrète,
+\begin{equation}
+\braket{a}{a'}=\delta_{aa'}.
+\end{equation}
+L’analogue pour une base continue est
+\begin{equation}
+\braket{x}{x'}=\delta(x-x'),
+\label{eq:l8-delta-normalization}
+\end{equation}
+où le delta de Dirac s’annule pour \(x\neq x'\) et a une aire unité :
+\begin{equation}
+\int_{-\infty}^{\infty}\delta(x-x')\,dx'=1.
+\end{equation}
+On peut se le représenter comme un pic étroit de largeur \(\epsilon\), de hauteur \(1/\epsilon\) et d’aire fixe, puis prendre la limite \(\epsilon\to0\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{Représentation au tableau du delta de Dirac par un pic étroit : largeur \(\epsilon\), hauteur \(1/\epsilon\) et aire unité.}
+\lectureframe{01:01:57}
+\end{figure}
+
+Cette notation est un raccourci au sens des distributions. Un ket propre de position n’est pas un vecteur normalisable de l’espace de Hilbert ordinaire des fonctions de carré intégrable ; c’est un vecteur généralisé dont la normalisation par un delta prend son sens sous une intégrale. La règle pratique essentielle est
+\begin{equation}
+\int_{-\infty}^{\infty}
+\delta(x-x')f(x')\,dx'
+=f(x).
+\label{eq:l8-delta-sampling}
+\end{equation}
+Le delta sélectionne la valeur pour laquelle son argument s’annule.
+
+Écrivons maintenant le développement continu
+\begin{equation}
+\ket{\Psi}
+=
+\int_{-\infty}^{\infty}
+\psi(x')\ket{x'}\,dx'.
+\label{eq:l8-continuous-expansion}
+\end{equation}
+En faisant agir \(\bra{x}\), on obtient
+\begin{align}
+\braket{x}{\Psi}
+&=
+\int dx'\,\psi(x')\braket{x}{x'} \notag\\
+&=
+\int dx'\,\psi(x')\delta(x-x') \notag\\
+&=
+\psi(x).
+\label{eq:l8-expansion-consistency}
+\end{align}
+Le coefficient du développement et la projection \(\braket{x}{\Psi}\) sont donc une seule et même fonction, exactement comme dans une base discrète.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_08.png}
+\caption{Le développement continu de l’état et sa vérification de cohérence à l’aide de \(\braket{x}{x'}=\delta(x-x')\).}
+\lectureframe{01:07:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\psi(x')\) joue-t-elle le même rôle que les amplitudes d’un vecteur de dimension finie ?}
+\lecturerresponse{Oui. L’étiquette de base \(a'\) devient l’étiquette continue \(x'\), la somme devient une intégrale, et le coefficient \(\psi(a')\) devient la fonction \(\psi(x')\). L’énoncé concernant l’espace vectoriel sous-jacent reste inchangé.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le delta de Dirac est-il réellement une fonction qui prend une valeur infinie en un point ?}
+\lecturerresponse{Cette représentation est utile, mais elle n’est pas littérale. Rigoureusement, le delta est une distribution définie par son action sous une intégrale, équation~\eqref{eq:l8-delta-sampling}. Le pic étroit d’aire unité représente une suite de fonctions ordinaires qui tend vers la même règle d’échantillonnage.}
+\end{classroomqa}
+
+\section{Les fonctions comme vecteurs}
+
+Pour voir comment se présente le produit scalaire, rappelons d’abord le calcul discret :
+\begin{align}
+\braket{\psi}{\phi}
+&=
+\sum_{a',a}
+\psi^*(a')\braket{a'}{a}\phi(a) \notag\\
+&=
+\sum_a\psi^*(a)\phi(a).
+\label{eq:l8-discrete-inner-product}
+\end{align}
+Les coefficients conjugués complexes appartiennent au bra, et l’orthonormalité réduit la double somme.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{Le produit scalaire discret développé dans une base, avant de remplacer les sommes par des intégrales.}
+\lectureframe{01:11:11}
+\end{figure}
+
+Remplaçons les étiquettes de base par des positions et la somme par une intégrale :
+\begin{equation}
+\braket{\psi}{\phi}
+=
+\int_{-\infty}^{\infty}\psi^*(x)\phi(x)\,dx.
+\label{eq:l8-continuous-inner-product}
+\end{equation}
+L’échange des vecteurs conjugue le résultat,
+\begin{equation}
+\braket{\phi}{\psi}
+=
+\braket{\psi}{\phi}^*,
+\end{equation}
+et la norme vaut
+\begin{equation}
+\|\psi\|^2=\braket{\psi}{\psi}
+=\int |\psi(x)|^2\,dx.
+\end{equation}
+
+Les fonctions sont donc des vecteurs : on peut les additionner, les multiplier par des scalaires complexes, les normaliser et former leur produit scalaire. Les fonctions d’onde physiques sur la droite infinie sont de carré intégrable ; les fonctions qui croissent sans borne à l’infini sont donc exclues. Les fonctions de base généralisées \(\delta(x-x_0)\) se situent juste en dehors de cet espace de Hilbert, mais restent indispensables comme vecteurs de base au sens des distributions.
+
+\begin{classroomqa}
+\audiencequestion{Les bornes d’intégration non indiquées devraient-elles être \(-\infty\) et \(+\infty\) ?}
+\lecturerresponse{Oui, pour la droite infinie. Ces bornes expliquent aussi pourquoi les fonctions d’onde normalisables doivent décroître suffisamment vite : sinon, l’intégrale de la probabilité totale n’existerait pas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Il manquait une barre verticale dans une des expressions au tableau. Cela en change-t-il le sens ?}
+\lecturerresponse{C’était simplement une erreur de notation. Le recouvrement des états de base est \(\braket{a'}{a}\), avec un bra à gauche et un ket à droite. Le rétablissement de la barre indique clairement qu’il s’agit d’un produit scalaire, et non d’une ligne ou d’une colonne ambiguë.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La plupart des systèmes sont-ils intriqués avec un environnement la majeure partie du temps ?}
+\lecturerresponse{Dans des conditions macroscopiques réalistes, oui. Les systèmes sont continuellement frappés par des photons, des molécules d’air et d’autres degrés de liberté, qui dispersent l’information de phase dans l’environnement. Cette intrication avec l’environnement est au cœur de la décohérence et explique pourquoi il est difficile d’observer l’interférence entre des possibilités macroscopiques.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La théorie mathématique des distributions a-t-elle modifié la physique, ou a-t-elle seulement légitimé la fonction delta ?}
+\lecturerresponse{Elle a d’abord permis de rendre rigoureuses des manipulations que les physiciens utilisaient déjà. Elle a fourni un langage précis pour les fonctions généralisées et a facilité les échanges avec les mathématiciens, sans toutefois résoudre à elle seule toutes les difficultés liées aux distributions en théorie quantique des champs.}
+\end{classroomqa}
+
+\section{Opérateurs linéaires agissant sur les fonctions d’onde}
+
+Un opérateur linéaire transforme une fonction en une autre tout en respectant le principe de superposition :
+\begin{equation}
+L(c_1\psi+c_2\phi)
+=
+c_1L\psi+c_2L\phi.
+\end{equation}
+Une observable doit être représentée par un opérateur hermitien. Dans la notation utilisée ici, cette condition s’écrit
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{L\phi}{\psi},
+\label{eq:l8-hermitian-condition}
+\end{equation}
+ou, de manière équivalente,
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{\psi}{L\phi}^*.
+\end{equation}
+Pour les opérateurs non bornés, cette propriété suppose aussi un domaine et des conditions aux limites ; les intégrales ci-dessous portent sur des fonctions d’onde pour lesquelles les termes de bord s’annulent.
+
+\subsection{La position comme opérateur de multiplication}
+
+L’opérateur le plus simple consiste à multiplier une fonction d’onde par la coordonnée :
+\begin{equation}
+(x\psi)(x)=x\psi(x).
+\label{eq:l8-position-operator}
+\end{equation}
+Il est linéaire, et
+\begin{align}
+\braket{\phi}{x\psi}
+&=
+\int dx\,\phi^*(x)x\psi(x), \notag\\
+\braket{x\phi}{\psi}
+&=
+\int dx\,[x\phi(x)]^*\psi(x) \notag\\
+&=
+\int dx\,\phi^*(x)x\psi(x),
+\end{align}
+car \(x\) est réel. La multiplication par \(x\) définit donc un opérateur hermitien qui représente l’observable position.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_10.png}
+\caption{Vérification de l’hermiticité de l’opérateur position, qui multiplie la fonction d’onde par la variable réelle \(x\).}
+\lectureframe{01:26:47}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Dans \(x\psi(x)\), \(x\) est-il un opérateur ou simplement un nombre réel ?}
+\lecturerresponse{En chaque point, c’est la valeur réelle de la coordonnée ; mais la règle qui transforme la fonction entière \(\psi(x)\) en la nouvelle fonction \(x\psi(x)\) constitue l’opérateur. Le fait qu’elle soit réelle est précisément ce qui assure l’égalité des deux produits scalaires dans le test d’hermiticité.}
+\end{classroomqa}
+
+\subsection{La dérivation est antihermitienne}
+
+Considérons l’opérateur dérivée
+\begin{equation}
+D=\frac{d}{dx}.
+\end{equation}
+Il est linéaire, mais une intégration par parties donne
+\begin{align}
+\braket{\phi}{D\psi}
+&=
+\int dx\,\phi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+\left[\phi^*(x)\psi(x)\right]_{-\infty}^{\infty}
+-
+\int dx\,\frac{d\phi^*}{dx}\psi(x) \notag\\
+&=
+-\braket{D\phi}{\psi},
+\label{eq:l8-derivative-adjoint}
+\end{align}
+où le terme de bord s’annule. Ainsi,
+\begin{equation}
+D^\dagger=-D.
+\end{equation}
+L’opérateur de dérivation est donc antihermitien plutôt qu’hermitien.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_11.png}
+\caption{L’intégration par parties transfère la dérivée d’une fonction d’onde à l’autre et fait apparaître le signe moins décisif.}
+\lectureframe{01:32:30}
+\end{figure}
+
+Multiplions par \(-i\) :
+\begin{equation}
+p=-i\frac{d}{dx}.
+\label{eq:l8-momentum-natural-units}
+\end{equation}
+La conjugaison complexe transforme \(-i\) en \(+i\), tandis que l’intégration par parties introduit un autre signe moins. Les signes se compensent, de sorte que \(p^\dagger=p\). En rétablissant les unités,
+\begin{equation}
+p=-i\hbar\frac{d}{dx}.
+\label{eq:l8-momentum-operator}
+\end{equation}
+
+La valeur moyenne montre explicitement que cette quantité est réelle :
+\begin{align}
+\expect{p}_\psi
+&=
+-i\int dx\,\psi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+i\int dx\,\frac{d\psi^*}{dx}\psi(x) \notag\\
+&=
+\expect{p}_\psi^*.
+\label{eq:l8-momentum-expectation-real}
+\end{align}
+Tout nombre égal à son propre conjugué complexe est réel, comme doit l’être la valeur moyenne d’une observable.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_12.png}
+\caption{La valeur moyenne de la quantité de mouvement avant et après intégration par parties : les deux expressions sont conjuguées complexes et égales.}
+\lectureframe{01:39:44}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Comment un opérateur qui contient \(i\) peut-il représenter une observable réelle ?}
+\lecturerresponse{L’hermiticité porte sur l’opérateur complet dans le produit scalaire ; elle n’exige pas que chaque symbole de son expression en coordonnées soit réel. Le facteur \(i\) compense le signe moins qui apparaît quand l’intégration par parties transfère la dérivée, ce qui rend réelles toutes les valeurs moyennes.}
+\end{classroomqa}
+
+\section{Le commutateur canonique}
+
+Un calcul supplémentaire révèle pourquoi l’opérateur de l’équation~\eqref{eq:l8-momentum-operator} mérite notre attention. En unités telles que \(\hbar=1\), appliquons d’abord \(x\), puis \(p\) :
+\begin{align}
+(px\psi)(x)
+&=
+-i\frac{d}{dx}\bigl(x\psi(x)\bigr) \notag\\
+&=
+-i\psi(x)-ix\frac{d\psi}{dx}.
+\label{eq:l8-px}
+\end{align}
+Inversions l’ordre :
+\begin{equation}
+(xp\psi)(x)
+=
+-ix\frac{d\psi}{dx}.
+\label{eq:l8-xp}
+\end{equation}
+En soustrayant l’équation~\eqref{eq:l8-px} de l’équation~\eqref{eq:l8-xp}, on obtient
+\begin{equation}
+\bigl([x,p]\psi\bigr)(x)
+=
+\bigl(xp-px\bigr)\psi(x)
+=
+i\psi(x).
+\end{equation}
+Comme cette relation vaut pour toute fonction d’onde du domaine des opérateurs,
+\begin{equation}
+[x,p]=i,
+\end{equation}
+ou, en rétablissant les unités,
+\begin{equation}
+[x,p]=i\hbar.
+\label{eq:l8-canonical-commutator}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_13.png}
+\caption{L’argument opératoriel achevé : si \(([x,p]-i)\psi=0\) pour toute fonction d’onde, alors \([x,p]=i\).}
+\lectureframe{01:46:24}
+\end{figure}
+
+L’analogue classique est
+\begin{equation}
+\{x,p\}_{\mathrm{PB}}=1.
+\end{equation}
+Le raisonnement historique de Dirac suivait le chemin inverse de la dérivation présentée ici. Partant de la ressemblance algébrique entre les crochets de Poisson antisymétriques et les commutateurs, il a postulé la correspondance
+\begin{equation}
+[A,B]\longleftrightarrow i\hbar\{A,B\}_{\mathrm{PB}},
+\end{equation}
+puis en a déduit que l’opérateur quantité de mouvement devait vérifier le commutateur canonique avec la position. Ici, nous avons découvert \(-i\,d/dx\) en corrigeant le défaut d’hermiticité de l’opérateur dérivée, et nous n’avons retrouvé cette même algèbre qu’ensuite.
+
+\begin{classroomqa}
+\audiencequestion{Le commutateur suffit-il à prouver que \(-i\hbar\,d/dx\) représente la quantité de mouvement physique ?}
+\lecturerresponse{C’est un indice fort, mais il ne suffit pas à établir entièrement cette identification physique. Il faut encore montrer que l’opérateur engendre les translations spatiales, que sa valeur moyenne est conservée en présence d’une symétrie par translation et qu’un paquet d’ondes se déplace à la vitesse de groupe \(\expect{p}/m\) dans le système non relativiste approprié.}
+\end{classroomqa}
+
+\section{La suite}
+
+Le passage des spins aux particules conserve la même architecture, mais en change l’échelle. Une base indexée continûment remplace une liste finie de vecteurs de base. Les sommes deviennent des intégrales, les deltas de Kronecker deviennent des deltas de Dirac, et les vecteurs colonnes deviennent des fonctions de carré intégrable. La position agit par multiplication, tandis que la quantité de mouvement agit par dérivation.
+
+Les prochaines étapes sont physiques, et pas seulement liées à la notation. Le calcul des probabilités de la quantité de mouvement exige la base de quantité de mouvement et la transformation de Fourier. L’évolution temporelle requiert l’équation de Schr\"odinger pour \(\psi(x,t)\). Les paquets d’ondes relieront alors l’opérateur abstrait \(p=-i\hbar\,d/dx\) au mouvement : leur vitesse de groupe sera liée à la quantité de mouvement divisée par la masse, et la symétrie par translation expliquera la conservation de la quantité de mouvement. Le commutateur \([x,p]=i\hbar\) n’est donc pas une astuce isolée. Il constitue la charnière entre la mécanique dans l’espace vectoriel déjà développée et la dynamique quantique des particules.

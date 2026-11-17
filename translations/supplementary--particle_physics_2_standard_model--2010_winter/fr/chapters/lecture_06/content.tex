@@ -1,0 +1,554 @@
+\chapter{Échange faible massif, particules virtuelles et brisure de symétrie}
+
+Le groupe du Modèle standard devient beaucoup moins mystérieux si on le lit comme un ensemble de transformations permises sur le tableau des fermions. Les transformations de couleur font passer verticalement du rouge au vert et au bleu. Les transformations faibles chargées agissent horizontalement au sein des doublets de quarks et de leptons. Les transformations de phase électromagnétiques constituent une troisième opération. Les bosons de jauge correspondants ne sont pas des ornements ajoutés après la découverte des symétries : l’émission d’un boson de jauge réalise physiquement le même changement d’état que celui décrit par un générateur de la symétrie.
+
+Cette observation conduit à la question centrale de ce cours. Un vertex faible a un couplage d’ordre comparable à celui d’un vertex électromagnétique, et pourtant la désintégration bêta est infiniment plus lente qu’un processus fort ou électromagnétique typique. L’élément manquant est la propagation. À faible impulsion, l’échange d’un \(W\) coûte un facteur de l’ordre de \(1/m_W^2\) dans l’amplitude. Nous établirons d’abord cette affirmation dans l’espace des distances, puis dans l’espace des impulsions, en suivrons les conséquences au fil d’une longue discussion sur les particules réelles et virtuelles, puis aborderons le premier modèle qualitatif de la brisure spontanée de symétrie.
+
+\section{Lire la symétrie de jauge dans le tableau des fermions}
+
+\subsection{La couleur agit verticalement}
+
+Disposons les six saveurs de quarks en trois familles faibles,
+\begin{equation}
+  (u,d),\qquad(c,s),\qquad(t,b),
+\end{equation}
+et attribuons à chaque quark une couleur rouge, verte ou bleue. On obtient un tableau de quarks comportant trois lignes de couleur et six colonnes de saveur. La couleur \(SU(3)\) mélange les trois entrées d’une même colonne de saveur. Par exemple, un générateur peut transformer un quark up rouge en quark up vert. En termes de particules, cette même opération s’accompagne de l’émission d’un gluon porteur de la couleur et de l’anticouleur compensatrices.
+
+La même transformation de couleur doit agir sur toutes les saveurs. Le gluon qui transforme un quark up rouge en quark up vert est de la même espèce que celui qui transforme un quark top rouge en quark top vert. Une véritable opération de symétrie ne s’applique pas à la première génération en ignorant les autres. Le changement de couleur est donc vertical et universel :
+\begin{equation}
+  q_r\longleftrightarrow q_g\longleftrightarrow q_b,
+  \qquad q\in\{u,d,c,s,t,b\}.
+\end{equation}
+Il change la couleur, mais pas la saveur.
+
+C’est là la relation caractéristique entre un groupe de jauge et ses bosons de jauge. Les générateurs infinitésimaux décrivent des transformations entre états, et l’émission ou l’absorption des bosons correspondants réalise ces transformations sous forme de processus physiques.
+
+\subsection{Les transformations faibles agissent horizontalement}
+
+L’interaction faible chargée agit dans l’autre direction. Un quark de type up peut émettre un boson faible chargé et devenir son partenaire de type down sans changer de couleur :
+\begin{equation}
+  u_b\longrightarrow d_b+W^+.
+\end{equation}
+La même \(W^+\) intervient dans
+\begin{equation}
+  c_g\longrightarrow s_g+W^+,
+  \qquad
+  t_r\longrightarrow b_r+W^+.
+\end{equation}
+Les étiquettes \(r,g,b\) sont spectatrices. Les gluons ne se déplacent pas horizontalement dans le tableau, et les bosons \(W\) chargés ne traversent pas verticalement les couleurs.
+
+Ajoutons la symétrie de phase électromagnétique \(U(1)\), sous laquelle chaque champ chargé acquiert une phase. La structure du groupe au premier abord est alors
+\begin{equation}
+  SU(3)\times SU(2)\times U(1).
+\end{equation}
+Les signes de multiplication indiquent qu’il s’agit de facteurs indépendants : l’un agit sur la couleur, l’un sur les doublets faibles et l’un par une phase. Cette image approximative est utile, mais elle ne décrit pas encore toute l’interaction électrofaible.\editorialnote{Le groupe de jauge exact du Modèle standard s’écrit conventionnellement
+\(SU(3)_c\times SU(2)_L\times U(1)_Y\). Le groupe faible \(SU(2)_L\) n’agit que sur les doublets gauches, et le groupe électromagnétique final \(U(1)_{\rm em}\) émerge de \(SU(2)_L\times U(1)_Y\) après la brisure de symétrie. Le cours précise que l’identification initiale des deux derniers facteurs n’est pas encore tout à fait cohérente ; les cours ultérieurs apportent la structure chirale et électrofaible manquante.}
+
+\subsection{Le même schéma s’applique aux leptons}
+
+Plaçons une ligne de leptons sans couleur sous les trois lignes de couleur :
+\begin{equation}
+\begin{array}{c|cc|cc|cc}
+ &u&d&c&s&t&b\\ \hline
+Q&+\frac23&-\frac13&+\frac23&-\frac13&+\frac23&-\frac13\\
+\text{lepton partner}
+ &\nu_e&e^-&\nu_\mu&\mu^-&\nu_\tau&\tau^-\\
+Q&0&-1&0&-1&0&-1
+\end{array}
+\end{equation}
+Dans chaque paire adjacente, les charges électriques diffèrent d’une unité. C’est pourquoi le même boson faible chargé peut relier \(u\) à \(d\), \(c\) à \(s\), \(t\) à \(b\), ainsi qu’un lepton chargé à son neutrino. Le vertex \(W\) dépend des nombres quantiques pertinents et de la différence de charge, et non du fait que le fermion soit un quark ou un lepton.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_06_figure_07.png}
+\caption{Tableau complet des fermions : trois lignes de quarks correspondant aux couleurs, au-dessus de la ligne des leptons sans couleur ; les charges des quarks et les trois doublets de leptons sont indiqués.}
+\lectureframe{00:18:55}
+\end{figure}
+
+Le muon a la même charge et les mêmes nombres quantiques intrinsèques connus que l’électron, mais il est environ deux cents fois plus lourd. Le tau est encore plus lourd. Les masses des neutrinos sont très faibles et n’étaient pas connues en détail dans la discussion du cours. Aucun principe permettant d’expliquer le schéma observé des masses des familles ne s’est encore dégagé ici.
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi les leptons, les baryons et les mésons portent-ils ces noms ?
+\lecturetimestamp{00:19:02}}
+\lecturerresponse{Les racines grecques historiques signifiaient approximativement léger, lourd et intermédiaire. Cette nomenclature fondée sur la masse est devenue trompeuse. Le muon a autrefois été appelé méson mu parce que sa masse se situait entre celles de l’électron et du proton, mais ses interactions montrent qu’il s’agit d’un lepton, bien plus proche de l’électron que du pion. Aujourd’hui, un méson désigne un hadron formé d’un quark--et d’un antiquark, et c’est un boson ; le muon n’est pas un méson.}
+\end{classroomqa}
+
+\section{L’énigme de la faiblesse}
+
+\subsection{Un processus concret à courant chargé}
+
+Prenons la désintégration bêta du neutron comme diagramme de référence. Les compositions en quarks de valence sont
+\begin{equation}
+  n=udd,\qquad p=uud.
+\end{equation}
+Un quark down effectue la transition
+\begin{equation}
+  d\longrightarrow u+W^-,
+\end{equation}
+et le boson chargé produit
+\begin{equation}
+  W^-\longrightarrow e^-+\bar\nu_e.
+\end{equation}
+En combinant les deux,
+\begin{equation}
+  n\longrightarrow p+e^-+\bar\nu_e.
+\end{equation}
+Les deux autres quarks de valence traversent le processus en spectateurs. Au premier vertex, le neutron devient un proton ; au second, la même interaction faible qui relie un doublet de leptons transforme le \(W^-\) en l’électron et l’antineutrino électronique observés.
+
+\subsection{Trois couplages, trois impressions très différentes}
+
+En électrodynamique quantique, la charge de l’électron \(e\) est l’amplitude du vertex. Son carré donne la probabilité caractéristique d’émission, avec les facteurs conventionnels regroupés dans
+\begin{equation}
+  \alpha=\frac{e^2}{4\pi}\simeq\frac1{137}
+\end{equation}
+en unités naturelles. L’interaction forte a un couplage \(g_s\) et, à une échelle hadronique typique, son analogue \(\alpha_s\) peut être de l’ordre de \(0.2\).
+C’est bien plus grand que \(1/137\), si bien que l’émission de gluons est fréquente lorsqu’un quark est heurté.
+
+Notons \(g_w\) le couplage faible chargé. Son carré n’est pas extraordinairement petit ; à l’ordre de grandeur considéré ici, il est comparable au couplage électromagnétique. Pourtant, un neutron libre attend environ quinze minutes avant de se désintégrer, alors qu’une désintégration forte peut se produire en un temps de traversée hadronique. L’estimation historique du cours utilise l’ancienne valeur approximative de douze minutes, mais les deux valeurs rendent la même énigme incontournable.\editorialnote{La durée de vie moyenne moderne du neutron libre est d’environ \(8.8\times10^2\,{\rm s}\), et les principales méthodes de mesure présentent encore une tension expérimentale. La durée de vie approximative donnée dans le cours est conservée comme échelle pédagogique, et non comme valeur de précision.}
+\begin{quote}
+Si \(g_w\) n’est pas extraordinairement petit, qu’est-ce qui rend les processus faibles ?
+\end{quote}
+
+La réponse ne peut pas tenir aux seuls vertex. Tout diagramme de Feynman contient aussi des propagateurs, les facteurs qui décrivent la propagation intermédiaire d’un vertex à l’autre.
+
+\section{Un propagateur massif dans l’espace des distances}
+
+\subsection{Les vertex ne constituent pas tout le diagramme}
+
+Le diagramme de désintégration bêta comporte deux vertex faibles, qui contribuent deux puissances de \(g_w\), et une ligne \(W\) qui les relie. Notons le propagateur dans l’espace des positions \(\Delta(x-y)\), où \(x\) désigne l’événement d’émission et \(y\) l’événement d’absorption ou de conversion. Il s’agit du noyau d’amplitude associé à la propagation de la perturbation du champ entre ces événements.
+
+Le propagateur relativiste exact présente une structure plus riche que celle dont nous avons besoin. Sa dépendance en la masse est sa caractéristique qualitative essentielle. À courte distance de genre espace, il présente une singularité en loi de puissance, schématiquement
+\begin{equation}
+  \Delta(d)\sim\frac1{d^2}.
+\end{equation}
+Un champ sans masse conserve une traîne en loi de puissance. En revanche, un champ massif est supprimé exponentiellement lorsque la séparation devient grande devant son échelle de Compton. La courbe du diagramme s’infléchit alors fortement vers le bas.
+
+\subsection{Les unités naturelles situent le point d’inflexion}
+
+Posons
+\begin{equation}
+  c=\hbar=1.
+\end{equation}
+On a alors
+\begin{equation}
+  [m]=[E]=[p]=L^{-1}.
+\end{equation}
+Les relations usuelles expliquent chacune de ces égalités : \(E=mc^2\) identifie la masse à l’énergie, tandis que \(p\,x\) a les dimensions de \(\hbar\), si bien que l’impulsion et la distance ont des unités inverses. La seule longueur que l’on puisse former à partir de la masse \(m\) est donc
+\begin{equation}
+  d_m\sim\frac1m.
+\end{equation}
+En rétablissant les constantes, on obtient
+\begin{equation}
+  d_m\sim\frac{\hbar}{mc},
+\end{equation}
+la longueur d’onde de Compton. Une particule échangée plus lourde a une portée effective plus courte.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_02.png}
+\caption{Dimensions en unités naturelles et décroissance qualitative du propagateur. La courbe noire conserve une traîne en loi de puissance ; la courbe rouge correspondant à une masse non nulle s’infléchit près de l’échelle inverse de la masse.}
+\lectureframe{00:27:19}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1.0cm,y=0.9cm]
+  \draw[->] (0,0) -- (7,0) node[right] {$d$};
+  \draw[->] (0,0) -- (0,5) node[above] {$|\Delta(d)|$};
+  \draw[thick]
+    plot[smooth] coordinates {(0.45,4.5) (0.9,3.3) (1.6,2.5)
+      (2.5,1.9) (3.7,1.45) (5.1,1.12) (6.4,0.9)};
+  \draw[thick,red]
+    plot[smooth] coordinates {(0.45,4.5) (0.9,3.3) (1.6,2.5)
+      (2.5,1.9) (3.2,1.55) (3.7,0.95) (4.2,0.36) (4.8,0.1)};
+  \draw[dashed] (3.4,0) -- (3.4,1.4);
+  \node at (5.7,1.4) {$m=0$};
+  \node[red] at (4.75,0.72) {$m>0$};
+  \node[below] at (3.4,0) {$d\sim m^{-1}$};
+\end{tikzpicture}
+\caption{Schéma clair de l’argument présenté au tableau. Il ne s’agit pas d’une formule exacte pour un propagateur en quatre dimensions ; ce schéma isole la portée contrôlée par la masse.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Que représente l’axe vertical ?
+\lecturetimestamp{00:28:30}}
+\lecturerresponse{La grandeur du propagateur, notée \(\Delta\). Son carré contribue à une probabilité une fois pris en compte l’amplitude complète, les états externes et les facteurs d’espace des phases. Le graphique vise à montrer que l’amplitude d’un échange massif sur une longue distance s’annule rapidement.\editorialnote{Un propagateur, à lui seul, n’est pas une amplitude de probabilité directement mesurable pour une particule suivant une trajectoire classique. La formulation du cours fournit une estimation utile de la portée : le propagateur est l’un des facteurs de l’amplitude complète de diffusion ou de désintégration.}}
+\end{classroomqa}
+
+\section{Transformation de Fourier et limite de Fermi}
+
+\subsection{Les expériences mesurent les impulsions}
+
+Une expérience mesure généralement les impulsions externes plutôt que les deux points de l’espace-temps où commence et se termine une ligne interne. Dans la désintégration bêta, l’impulsion portée par le \(W\) se déduit de la différence entre les impulsions du neutron et du proton ; elle est égale à l’impulsion totale de l’électron et de l’antineutrino. Les propagateurs dans l’espace des positions et dans l’espace des impulsions sont reliés par une transformation de Fourier.
+\begin{equation}
+  k=p_n-p_p=p_e+p_{\bar\nu_e}.
+\end{equation}
+
+Avec la convention d’un dénominateur positif utilisée au tableau,
+\begin{equation}
+  \widetilde{\Delta}_W(k)=\frac1{k^2+m_W^2},
+  \qquad
+  \widetilde{\Delta}_\gamma(k)=\frac1{k^2}.
+\end{equation}
+Le propagateur du photon sans masse devient grand lorsque le transfert d’impulsion est faible. Le propagateur du \(W\) massif ne dépasse jamais une échelle de l’ordre de \(1/m_W^2\). Dans la désintégration bêta,
+\begin{equation}
+  |k^2|\ll m_W^2,
+\end{equation}
+les détails de \(k^2\) sont donc négligeables, et
+\begin{equation}
+  \widetilde{\Delta}_W(k)\simeq\frac1{m_W^2}.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Le terme \(k^2\) relativiste ne devrait-il pas comporter un signe moins entre l’énergie et l’impulsion spatiale ?
+\lecturetimestamp{00:35:11}}
+\lecturerresponse{Oui. Avec une métrique de Minkowski de signature principalement négative,
+\(k^2=(k^0)^2-\boldsymbol{k}^2\), et le dénominateur scalaire s’écrit conventionnellement
+\(k^2-m_W^2+i\epsilon\). Au tableau, on utilise la grandeur positive équivalente de genre espace ou euclidienne. Dans la désintégration bêta à basse énergie, le quadrivecteur transféré est minuscule devant \(m_W\) ; les deux notations donnent donc la même suppression en \(1/m_W^2\), à un signe sans conséquence dans l’amplitude près.}
+\end{classroomqa}
+
+\subsection{L’amplitude à basse énergie}
+
+Deux vertex faibles et un propagateur donnent
+\begin{align}
+  \mathcal A_{\rm weak}
+  &\sim g_w\,\widetilde{\Delta}_W(k)\,g_w\\
+  &\sim\frac{g_w^2}{k^2+m_W^2}
+  \simeq\frac{g_w^2}{m_W^2}.
+\end{align}
+Le carré de l’amplitude produit la suppression caractéristique
+\begin{equation}
+  |\mathcal A_{\rm weak}|^2
+  \sim\frac{g_w^4}{m_W^4},
+\end{equation}
+avant la prise en compte des facteurs cinématiques et d’espace des phases propres à la désintégration considérée. L’interaction faible est faible aux énergies nucléaires non parce que son couplage de jauge élémentaire est absurdement petit, mais parce que son médiateur est lourd.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}
+\caption{Processus faible neutron-proton et transfert de quantité de mouvement porté par la ligne interne, comme on l’a vu en déterminant le signe du propagateur.--}
+\lectureframe{00:35:40}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_04.png}
+\caption{Topologie de la désintégration bêta à côté de l’estimation encadrée à basse énergie \(g_w^2/m_W^2\).}
+\lectureframe{00:37:25}
+\end{figure}
+
+Numériquement, \(m_W\) vaut environ cent fois la masse du proton à la précision de ce cours. Un facteur \(m_W^{-2}\) dans l’amplitude devient \(m_W^{-4}\) dans le taux ; ainsi, même un couplage d’une grandeur ordinaire pour une théorie de jauge produit une durée de vie très longue.
+
+\begin{classroomqa}
+\audiencequestion{Parle-t-on d’une suppression d’un sur un million ou d’un sur un milliard, et comment la masse du \(W\) a-t-elle été déterminée à l’origine ?
+\lecturetimestamp{00:38:11}}
+\lecturerresponse{L’estimation approximative du cours indique une petitesse de l’ordre du milliard pour une probabilité faible à basse énergie par rapport à un processus hadronique non supprimé. Historiquement, les expériences à basse énergie n’ont pas mesuré séparément \(g_w\) et \(m_W\). Elles ont mesuré la petite combinaison \(g_w^2/m_W^2\), appelée constante de Fermi. Une fois le couplage de jauge relié à la théorie électrofaible, cette combinaison a prédit un médiateur très lourd ; des accélérateurs ultérieurs ont produit directement le \(W\) et mesuré sa masse.}
+\end{classroomqa}
+
+À des impulsions très inférieures à \(m_W\), toutes les expériences voient pratiquement la même constante :
+\begin{equation}
+  G_F\sim\frac{g_w^2}{m_W^2}.
+\end{equation}
+C’est pourquoi Fermi a pu décrire la désintégration bêta dans les années 1930 comme une interaction ponctuelle à quatre fermions, bien avant l’observation du médiateur. En augmentant les énergies de collision, les expériences sont devenues sensibles à la dépendance en l’impulsion cachée dans le propagateur, confirmant que la constante effective était l’empreinte à basse énergie d’un échange massif.\editorialnote{Avec la normalisation électrofaible standard à l’ordre des arbres,
+\[
+  \frac{G_F}{\sqrt2}=\frac{g^2}{8m_W^2}.
+\]
+Le cours omet délibérément les facteurs numériques et spinoriels et ne conserve que le comportement d’échelle \(G_F\sim g_w^2/m_W^2\). Les bosons \(W\) et \(Z\) ont été découverts directement au CERN en 1983 ; la datation approximative de leur observation, située entre le milieu et la fin des années 1970 dans le cours, est trop précoce.}
+
+Historiquement, l’idée que les interactions faibles puissent être médiées par une particule lourde a émergé au milieu du vingtième siècle ; le cours cite Julian Schwinger parmi les théoriciens qui ont exploré cette possibilité et indique que la lettre \(W\) signifiait probablement « weak » (faible). Les données à basse énergie impliquaient déjà que ce médiateur devait être extrêmement lourd à l’échelle nucléaire, bien avant que les accélérateurs aient une énergie suffisante pour le produire comme particule réelle.
+
+\subsection{Trois facteurs indépendants déterminent un taux}
+
+Une question posée en classe au sujet de la liaison nucléaire permet de distinguer trois facteurs logiquement différents qui déterminent une transition :
+\begin{enumerate}
+  \item les constantes de couplage aux vertex ;
+  \item les propagateurs, notamment les masses et la dépendance en l’impulsion ;
+  \item l’énergie disponible entre l’état initial et l’état final, ainsi que l’espace des phases.
+\end{enumerate}
+La liaison peut fermer un canal de désintégration si l’état final aurait une énergie supérieure à celle de l’état initial. Il s’agit d’une interdiction cinématique, et non d’une diminution supplémentaire de \(g_w\) ou d’un changement de \(m_W\). Même lorsqu’un canal reste ouvert, une faible énergie disponible peut encore fortement réduire son espace des phases.
+
+\begin{classroomqa}
+\audiencequestion{Le champ ou la liaison due à un proton voisin supprime-t-il la désintégration bêta par le même mécanisme de propagateur ?
+\lecturetimestamp{00:41:13}}
+\lecturerresponse{Pas dans l’exemple considéré. La liaison importe parce qu’elle modifie les énergies des états nucléaires initial et final. Un processus ne peut pas avoir lieu si l’état final est inaccessible énergétiquement. Les couplages, les propagateurs et l’énergie disponible sont trois ingrédients distincts.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Les constantes de couplage sont-elles vraiment constantes ?
+\lecturetimestamp{00:42:55}}
+\lecturerresponse{Elles ne le sont qu’à une échelle fixée. Les corrections quantiques font varier les couplages effectifs avec l’impulsion ou la distance. Dans l’argument présent, chaque couplage est considéré à l’échelle pertinente pour le processus ; la dépendance en l’échelle sera étudiée plus tard.}
+\end{classroomqa}
+
+\section{Échange virtuel sans renoncer aux lois de conservation}
+
+\subsection{Pourquoi la ligne lourde peut apparaître}
+
+La désintégration ordinaire du neutron ne dispose pas d’une énergie suffisante pour produire un \(W\) libre sur sa couche de masse. Le \(W\) du diagramme est interne et hors couche de masse. Le cours introduit ce fait au moyen de l’estimation traditionnelle énergie--temps
+\begin{equation}
+  \Delta E\,\Delta t\lesssim\hbar:
+\end{equation}
+une configuration intermédiaire dont l’énergie classique semble incorrecte de \(\Delta E\) ne peut contribuer que pendant un temps de l’ordre de
+\(\hbar/\Delta E\).
+
+L’analogie avec l’effet tunnel rend l’image visée plus parlante. Plaçons une particule alpha dans un puits de potentiel nucléaire. Son énergie se situe sous le sommet de la barrière, si bien qu’elle ne peut pas s’échapper classiquement. En mécanique quantique, la fonction d’onde s’étend au travers de la barrière, et la particule peut émerger de l’autre côté avec la même énergie totale qu’au départ. Si l’on tente de décrire l’intérieur de la barrière comme une trajectoire classique ordinaire, l’énergie potentielle semble trop élevée et l’énergie cinétique devrait être négative. Cette image classique qui échoue est analogue à la tentative de traiter le \(W\) interne comme une particule réelle.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_06.png}
+\caption{Analogie avec l’effet tunnel : le point initial et le point indiqué sur la pente opposée ont la même énergie totale, tandis que la barrière intermédiaire est interdite classiquement.}
+\lectureframe{00:46:00}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1.0cm,y=0.9cm]
+  \draw[->] (0,0) -- (7,0) node[right] {$x$};
+  \draw[->] (0,0) -- (0,4.8) node[above] {$V(x)$};
+  \draw[thick]
+    plot[smooth] coordinates {(0.3,1.4) (1.0,0.7) (1.7,0.55)
+      (2.1,0.9) (3.2,3.9) (4.2,2.1) (5.0,0.75) (6.6,0.18)};
+  \draw[dashed] (1.7,0.75) -- (5.0,0.75);
+  \fill (1.7,0.75) circle (0.06);
+  \fill (5.0,0.75) circle (0.06);
+  \node at (3.35,0.35) {$\Delta E\,\Delta t\lesssim\hbar$};
+\end{tikzpicture}
+\caption{Reconstitution lisible de la barrière et des points d’énergie égale.}
+\end{figure}
+
+Dans l’image de la désintégration bêta, le neutron peut fluctuer en un proton et un \(W^-\) interne, mais la ligne lourde doit disparaître rapidement. Le boson peut être réabsorbé, ce qui rétablit le neutron, ou atteindre le second vertex et produire l’électron et l’antineutrino, beaucoup plus légers. Les énergies initiale et finale totales sont égales.\editorialnote{L’énergie et l’impulsion sont conservées à chaque vertex de Feynman. Les particules virtuelles n’empruntent pas littéralement de l’énergie pour la rendre ensuite. Plus précisément, une ligne interne est intégrée sur des quadrimpulsions qui ne satisfont pas nécessairement la relation de couche de masse d’une particule réelle
+\(k^2=m_W^2\). Le langage du principe d’incertitude et de l’effet tunnel est conservé parce qu’il constitue la voie explicative du cours, mais la formulation moderne en théorie quantique des champs est celle des lignes hors couche de masse.}
+
+\subsection{Bosons W réels}
+
+Un accélérateur suffisamment énergétique peut produire un \(W\) réel. Celui-ci a alors sa propre durée de vie propre, sans rapport avec un éventuel temps d’incertitude associé à la ligne virtuelle. Un \(W\) réel en mouvement vit plus longtemps dans le laboratoire, par dilatation relativiste ordinaire du temps. Dans une désintégration leptonique à deux corps d’un \(W\) au repos,
+\begin{equation}
+  W^-\longrightarrow e^-+\bar\nu_e,
+\end{equation}
+l’électron et l’antineutrino emportent de grandes énergies cinétiques, presque dos à dos, chacune de l’ordre de \(m_W/2\). L’énergie de masse au repos n’a pas disparu ; elle s’est transformée en énergie des états finaux. Les canaux impliquant des muons et des taus, ainsi que ceux impliquant des quarks, sont également possibles.
+
+\begin{classroomqa}
+\audiencequestion{Combien de temps vit un \(W\) réel, et peut-on calculer sa durée de vie à partir du même couplage ?
+\lecturetimestamp{00:49:49}}
+\lecturerresponse{Oui. On calcule l’amplitude de chaque désintégration permise, on en prend le carré, on intègre sur l’espace des phases des états finaux et on somme les largeurs partielles. L’inverse de la largeur totale donne la durée de vie. L’estimation numérique prononcée dans la transcription est corrompue, mais l’idée qualitative est que la durée de vie propre est extrêmement courte et qu’un \(W\) en mouvement subit la dilatation du temps habituelle.\editorialnote{Avec la largeur mesurée
+\(\Gamma_W\simeq2.1\,{\rm GeV}\) on obtient
+\(\tau_W=\hbar/\Gamma_W\simeq3.2\times10^{-25}\,{\rm s}\). Cette valeur moderne résout l’échange numérique corrompu sans l’attribuer au cours.}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Comment le carré d’une amplitude devient-il un taux, puis une durée de vie ?
+\lecturetimestamp{00:50:52}}
+\lecturerresponse{On combine l’élément de matrice au carré avec la densité des états finaux accessibles, les fonctions delta de conservation et les facteurs de normalisation pour obtenir une probabilité par unité de temps, la largeur de désintégration \(\Gamma\). La probabilité de survie est \(e^{-\Gamma t}\) en unités telles que \(\hbar=1\), donc \(\tau=1/\Gamma\), ou \(\tau=\hbar/\Gamma\) lorsque les unités sont rétablies. Une faible largeur faible signifie donc une longue durée de vie faible.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on attribuer une vitesse à une particule qui traverse la barrière par effet tunnel ?
+\lecturetimestamp{00:52:42}}
+\lecturerresponse{On peut diviser une distance estimée par un temps de traversée estimé, mais il ne faut pas interpréter cette grandeur comme la vitesse d’une particule classique ou d’un signal. Toute tentative de mesurer une trajectoire à l’intérieur de la barrière modifie l’état et détruit l’expérience d’effet tunnel initiale.}
+\end{classroomqa}
+
+\section{Que signifie observer une particule virtuelle ?}
+
+\subsection{Particules externes et lignes internes}
+
+Les particules réelles sont les états asymptotiques entrants et sortants, que l’on peut préparer ou détecter loin de la région d’interaction. Les particules virtuelles sont des lignes internes dans une représentation perturbative de l’amplitude. Elles ne correspondent pas à des traces supplémentaires cachées dans le détecteur.
+
+\begin{classroomqa}
+\audiencequestion{Existe-t-il une définition claire de la différence entre une particule réelle et une particule virtuelle ?
+\lecturetimestamp{00:55:05}}
+\lecturerresponse{Une particule réelle est un état externe sur couche de masse qui entre dans la région d’interaction ou en sort. Une particule virtuelle est une ligne interne hors couche de masse dans un diagramme de Feynman. Cette dernière fait partie du développement mathématique ; ce n’est pas un objet observé indépendamment.}
+\end{classroomqa}
+
+Pour résoudre un processus qui ne dure que \(\Delta t\), une sonde doit avoir des fréquences de l’ordre de \(1/\Delta t\), et donc une énergie de l’ordre de \(\hbar/\Delta t\). Un photon suffisamment précis pour sonder une particule alpha sous une barrière élevée peut fournir l’énergie nécessaire pour la faire monter dans la région de la barrière. De même, une sonde assez énergétique pour résoudre le \(W\) interne de courte durée peut créer un \(W\) réel. La tentative d’observation transforme le processus initial en une expérience différente.
+
+Le cours présente cela comme une frustration récurrente de la mécanique quantique : l’intervention nécessaire pour vérifier l’image intermédiaire interdite apporte précisément l’énergie qui rend réelle la configuration apparemment interdite.
+
+\subsection{Fluctuations d’un proton}
+
+En théorie des perturbations, l’état du proton comporte des amplitudes associées à des configurations telles que
+\begin{equation}
+  p\longleftrightarrow n+W^+,
+\end{equation}
+et le neutron présente de même
+\begin{equation}
+  n\longleftrightarrow p+W^-.
+\end{equation}
+Si aucune autre interaction n’intervient, le boson interne est réabsorbé. Une sonde très énergétique peut au contraire laisser un \(W\) parmi les particules sortantes. On peut décrire cela comme l’expulsion d’une fluctuation ou la création d’un \(W\). Les formulations diffèrent ; l’amplitude mesurable de l’état final est la même.
+
+\begin{classroomqa}
+\audiencequestion{Quand une sonde très énergétique produit un \(W\) sortant, a-t-elle expulsé une particule qui était déjà là ou en a-t-elle créé une nouvelle ?
+\lecturetimestamp{01:01:20}}
+\lecturerresponse{Les deux images peuvent servir à organiser le calcul. Une description ordonnée dans le temps dit que le proton a fluctué en \(n+W^+\) et que la sonde a retiré le neutron avant sa réabsorption ; une autre dit que la collision a créé le \(W\) final. Ce qui est invariant, c’est la probabilité calculée de l’état final observé, et non un récit classique unique de ce qui existait avant la mesure.}
+\end{classroomqa}
+
+Augmenter l’énergie de collision ne révèle pas un inventaire fixe d’objets jusque-là cachés dans la cible. Cela ouvre de nombreux états finaux possibles : un \(W\), plusieurs bosons, des jets de quarks, des hadrons et d’autres particules autorisées par les nombres quantiques conservés. Même une collision assez énergétique pour frapper un champ élémentaire peut produire des protons et de nombreux autres objets composites. Les produits de la collision n’étaient pas nécessairement présents auparavant comme constituants. Le cours pousse l’idée jusqu’à des extrêmes comiques : si l’énergie et les nombres quantiques le permettent, même des tables, des chaises ou un atome d’hydrogène ne sont pas logiquement exclus comme états finaux, même si leur probabilité est fantastiquement faible. La plaisanterie met en garde sérieusement contre une définition de l’élémentarité fondée sur un inventaire naïf des débris de collision.
+
+\subsection{Fluctuations du vide et température}
+
+Une fluctuation associée à un proton n’est pas la même chose qu’un diagramme du vide. La première est une composante de l’état d’un proton en interaction ; une fluctuation du vide ne comporte aucune ligne externe de proton. Dans les deux cas, une sonde suffisamment énergétique peut produire des particules réelles correspondant à un état final permis. Deux photons énergétiques, par exemple, peuvent produire une paire électron--positon lorsque l’énergie dans le centre de masse dépasse le seuil.
+
+\begin{classroomqa}
+\audiencequestion{Ces réactions dépendent-elles de la température ?
+\lecturetimestamp{01:05:17}}
+\lecturerresponse{L’amplitude élémentaire ne nécessite pas de bain thermique.
+La température intervient de manière statistique : un système à haute température contient de nombreuses particules dotées d’une grande énergie cinétique, si bien que les collisions franchissant le seuil deviennent courantes. Chauffer un système contenant une particule alpha liée peut aussi fournir assez d’énergie pour permettre son échappement par-dessus la barrière, en plus de l’effet tunnel quantique.
+Quelques particules énergétiques isolées constituent un faisceau ; de nombreuses particules énergétiques réparties selon une distribution thermique constituent un bain chaud.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le \(W\) émis lors d’une fluctuation du proton est-il une fluctuation du vide ?
+\lecturetimestamp{01:06:56}}
+\lecturerresponse{Non. Le \(W\) interne dans
+\(p\leftrightarrow n+W^+\) est une fluctuation de l’état du proton en interaction.
+Un processus virtuel fermé, sans proton externe, est une fluctuation du vide. Les deux obéissent aux mêmes règles de la théorie des champs, mais relèvent d’amplitudes différentes.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi l’antineutrino est-il nécessaire au vertex leptonique du \(W\) ?
+\lecturetimestamp{01:08:51}}
+\lecturerresponse{Il apporte les nombres quantiques leptoniques conservés et fait partie du vertex élémentaire de courant chargé reliant \(e\), \(\nu_e\) et \(W\).
+La barre distingue l’antineutrino électronique sortant d’un neutrino.}
+\end{classroomqa}
+
+\section{Jusqu’où peut-on pousser la conversion de l’énergie ?}
+
+La classe pousse ensuite jusqu’à une limite délibérément absurde la règle selon laquelle l’énergie peut créer des particules. Un grain de café pourrait-il devenir un gâteau au chocolat ? Il n’existe aucun processus pratique de ce genre, mais la théorie quantique relativiste n’impose pas que la matière finale ressemble à l’objet initial. Elle exige une énergie suffisante, les bonnes charges conservées et une amplitude non nulle. Un kilogramme correspond à une énergie de l’ordre de
+\begin{equation}
+  Mc^2\sim9\times10^{16}\ {\rm J},
+\end{equation}
+Ainsi, toute collision microscopique qui assemblerait un objet particulier à l’échelle du kilogramme serait d’une improbabilité absolument extravagante.
+
+La masse de Planck,
+\begin{equation}
+  m_{\rm P}=\sqrt{\frac{\hbar c}{G}}
+  \simeq2.2\times10^{-5}\ {\rm g},
+\end{equation}
+n’est pas une masse maximale possible. C’est l’échelle à laquelle la gravité devient forte pour un objet quantique localisé à sa longueur d’onde de Compton. Un kilogramme contient environ \(5\times10^7\) masses de Planck.
+
+\begin{classroomqa}
+\audiencequestion{Si les collisions dépassent l’échelle de Planck, des objets arbitrairement lourds, comme des chaises ou des planètes, peuvent-ils apparaître ?
+\lecturetimestamp{01:10:37}}
+\lecturerresponse{À une énergie transplanckienne dans le centre de masse, concentrée dans une petite région, l’issue de loin la plus naturelle est l’effondrement gravitationnel : un trou noir. Une fluctuation donnant un objet macroscopique très organisé serait extraordinairement rare. Le cours invoque l’inversion du temps : puisqu’une chaise peut tomber dans un trou noir, l’amplitude du processus inverse n’est pas exactement nulle. Sa probabilité est supprimée par un facteur entropique immense ; il ne faut donc pas confondre possibilité et vraisemblance pratique.}
+\end{classroomqa}
+
+Cette digression renforce la mise en garde formulée précédemment. La théorie quantique des champs prédit des amplitudes entre des états initial et final spécifiés. L’affirmation imagée selon laquelle chaque produit était littéralement contenu dans la cible avant l’impact ne fait pas partie de la prédiction.
+
+\section{Les bosons, leurs interactions et leurs statistiques}
+
+\subsection{Les photons peuvent diffuser}
+
+Être un boson ne signifie pas ne pas interagir. La distinction entre bosons et fermions porte sur les statistiques d’échange ; les vertex d’interaction sont des faits dynamiques distincts. Les faisceaux lumineux classiques se traversent normalement sans interagir, car l’électrodynamique quantique ne comporte pas de vertex à quatre photons au niveau de l’arbre et la diffusion photon--photon à basse énergie est extrêmement faible. Néanmoins, deux photons peuvent interagir par l’intermédiaire d’une boucle virtuelle électron--positron :
+\begin{equation}
+  \gamma+\gamma
+  \longrightarrow(e^-e^+)_{\rm virtual}
+  \longrightarrow\gamma+\gamma.
+\end{equation}
+Lorsque l’énergie dans le centre de masse est assez élevée, ils peuvent plutôt créer une paire réelle,
+\begin{equation}
+  \gamma+\gamma\longrightarrow e^-+e^+.
+\end{equation}
+Les photons optiques ont des énergies de quelques électronvolts, tandis que le seuil de création de la paire est de l’ordre de \(2m_e c^2\approx1.02\,{\rm MeV}\). Le processus virtuel est donc fortement supprimé aux énergies optiques ordinaires, ce qui explique pourquoi les faisceaux lumineux qui se croisent semblent ne pas se remarquer.
+
+\begin{classroomqa}
+\audiencequestion{Les bosons \(W\) virtuels interagissent-ils avec d’autres bosons simplement parce que ce sont des bosons ?
+\lecturetimestamp{01:12:47}}
+\lecturerresponse{Ils peuvent interagir, mais pas du seul fait qu’ils obéissent à la statistique de Bose. Les vertex de jauge déterminent les interactions dynamiques. La statistique détermine plutôt le comportement des amplitudes à plusieurs particules lorsqu’on échange des particules identiques. Les photons interagissent faiblement par l’intermédiaire de particules virtuelles chargées, et la théorie électrofaible comporte aussi des auto-interactions non abéliennes directes entre bosons \(W\).}
+\end{classroomqa}
+
+\subsection{L’amplification de Bose n’est pas une force}
+
+La différence entre les statistiques des fermions et des bosons devient manifeste lorsque plusieurs particules identiques occupent des états quantiques voisins. Les bosons favorisent l’occupation multiple ; les fermions interdisent l’occupation d’un même état par des particules identiques. Dans une collision typique à haute énergie, les particules se dispersent dans des états d’impulsion bien séparés ; cet effet statistique peut donc être moins évident que dans un laser ou un condensat.
+
+En principe, les bosons \(W\) présentent la même amplification de Bose. Le cours plaisante en imaginant un système qui pourrait fonctionner comme un laser à bosons \(W\). Leur masse énorme et leur durée de vie extrêmement courte rendent un tel dispositif absolument irréalisable en pratique, mais leur statistique est bien celle des bosons.
+
+\begin{classroomqa}
+\audiencequestion{De quelle couleur est un proton ou un neutron ?
+\lecturetimestamp{01:18:41}}
+\lecturerresponse{Un hadron physique est un singulet de couleur, souvent qualifié d’incolore ou de blanc. Selon l’abréviation courante, un baryon contient un quark rouge, un vert et un bleu. Plus précisément, sa fonction d’onde de couleur est la superposition antisymétrique
+\[
+  |{\rm singlet}\rangle
+  =\frac1{\sqrt6}\epsilon_{abc}|q^a q^b q^c\rangle,
+\]
+et non l’attribution classique d’une couleur permanente à chacun des quarks nommément désignés.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La condensation de Bose sera-t-elle abordée dans ce cours ?
+\lecturetimestamp{01:19:25}}
+\lecturerresponse{Oui, avec le phénomène de Higgs. Un champ de Higgs non nul dans tout le vide présente des analogies importantes avec un condensat bosonique. Cette analogie sera développée après l’introduction de la brisure spontanée de symétrie.\editorialnote{La valeur moyenne du champ de Higgs dans le vide ne correspond pas littéralement à un gaz ordinaire de particules de Higgs sur couche de masse occupant un même état. La condensation est une analogie éclairante pour décrire un champ bosonique cohérent et un vide choisi, mais elle ne constitue pas une identification microscopique complète.}}
+\end{classroomqa}
+
+\section{Le boson faible neutre manquant}
+
+Revenons au tableau des groupes. Si la symétrie faible horizontale est \(SU(2)\), alors elle possède
+\begin{equation}
+  \dim SU(2)=3
+\end{equation}
+générateurs, et donc trois champs de jauge. Les combinaisons chargées \(W^+\) et \(W^-\) n’en représentent que deux. Il faut donc un troisième champ, neutre. Celui-ci est étroitement lié au boson \(Z\) observé, mais ne se confond pas simplement avec le photon. Les combinaisons neutres précises font intervenir à la fois le troisième champ \(SU(2)_L\) et le champ \(U(1)_Y\). Ce mélange, ainsi que la définition correcte de la charge électrique, sera délibérément reporté au cours suivant.
+
+\section{Brisure spontanée de symétrie}
+
+\subsection{Un choix symétrique peut laisser place à une indécision instable}
+
+Imaginez une table ronde de banquet où chaque couvert comporte un ustensile à gauche et un autre à droite. Avant que quiconque ne bouge, la gauche et la droite sont équivalentes. Dès qu’un convive tend la main vers la droite, le choix de chaque voisin s’en trouve imposé et toute la table adopte la disposition orientée vers la droite. Les règles étaient symétriques, mais la configuration réalisée a sélectionné l’une de deux possibilités. Cette histoire n’est qu’une analogie, mais elle met en évidence la combinaison recherchée : une symétrie, plusieurs issues équivalentes et une instabilité qui permet à une perturbation arbitrairement petite de sélectionner une issue pour l’ensemble du système.
+
+\subsection{Le réseau de pile--face}
+
+Pour obtenir un modèle plus simple, plaçons une variable à deux états \(s_i=\pm1\) sur chaque site d’un réseau. Appelons \(+1\) pile et \(-1\) face. Supposons que les sites voisins tendent à s’aligner :
+\begin{equation}
+  H=-J\sum_{\langle ij\rangle}s_i s_j,
+  \qquad J>0.
+\end{equation}
+Des voisins parallèles contribuent une énergie plus faible que des voisins antiparallèles. Il existe donc deux états fondamentaux dégénérés,
+\begin{equation}
+\begin{aligned}
+  s_i&=+1\quad\text{for every }i,
+  \\
+  s_i&=-1\quad\text{for every }i.
+\end{aligned}
+\end{equation}
+L’hamiltonien est invariant sous la transformation globale \(s_i\to-s_i\), mais aucun des deux états fondamentaux choisis ne l’est.
+
+Fixons maintenant à pile un spin situé sur une frontière très éloignée. Dans un système ordinaire à courte portée, on pourrait s’attendre à ce qu’un degré de liberté aussi lointain n’ait aucune influence ici. Dans la phase ordonnée, toutefois, cette condition à la frontière sélectionne le vide où tous les spins sont à pile. Une fois cet état sélectionné, un seul spin à face dans cette mer de spins à pile coûte de l’énergie, car il n’est pas aligné avec ses voisins. Les excitations locales se définissent par rapport à l’état fondamental choisi, même si les équations sous-jacentes conservent la symétrie pile--face.
+
+\subsection{Brisure explicite et parois de domaine}
+
+Une brisure explicite consisterait à ajouter un biais local,
+\begin{equation}
+  H_{\rm explicit}
+  =-J\sum_{\langle ij\rangle}s_i s_j-h\sum_i s_i,
+  \qquad h\ne0.
+\end{equation}
+Alors, pile et face n’ont pas la même énergie, même sur un site isolé, et il n’existe qu’un seul vide privilégié. Dans le cas d’une brisure spontanée, \(h=0\) : les règles locales sont symétriques et les deux vides restent dégénérés, mais le système occupe l’un d’eux.
+
+Imposons plutôt que la frontière tout à gauche soit entièrement à pile et celle tout à droite entièrement à face. La configuration d’énergie minimale doit interpoler entre les deux vides. L’interface est une paroi de domaine.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{lecture_06_figure_08.png}
+\caption{Le réseau de pile--face, séparé par une paroi de domaine en pointillés. Des conditions aux frontières opposées imposent au système de contenir une interface entre les deux états ordonnés dégénérés.}
+\lectureframe{01:30:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-ce qui distingue la brisure spontanée de symétrie de la brisure explicite ordinaire ?
+\lecturetimestamp{01:28:36}}
+\lecturerresponse{Dans le cas d’une brisure explicite, l’hamiltonien local attribue déjà des énergies différentes à pile et à face ; il n’existe donc pas de paire d’états fondamentaux reliés par la symétrie. Dans le cas d’une brisure spontanée, les équations conservent la symétrie, les vides sont dégénérés et les conditions aux frontières ou une perturbation arbitrairement petite en sélectionnent un. La possibilité d’une paroi de domaine interpolant entre des vides distincts est un signe caractéristique de cette dernière situation.}
+\end{classroomqa}
+
+Le modèle est volontairement rudimentaire, mais il contient la logique essentielle qui sera transposée au champ de Higgs : une théorie symétrique, une structure de vide instable ou dégénérée, un état fondamental sélectionné et des conséquences physiques déterminées par ce choix.
+
+\section{Où nous mène ce cours}
+
+Le tableau des fermions traduit le groupe du modèle standard en directions physiques. La couleur \(SU(3)\) agit verticalement, entre le rouge, le vert et le bleu ; les transformations faibles chargées agissent horizontalement sur les doublets de quarks et de leptons ; une symétrie de phase fournit le facteur préliminaire \(U(1)\). L’émission de bosons de jauge réalise ces transformations de groupe sous forme d’interactions.
+
+La faiblesse de la désintégration bêta ne s’explique donc pas par un \(g_w\) exceptionnellement petit, mais par le médiateur lourd. Dans l’espace des distances, la masse supprime le propagateur au-delà de l’échelle de Compton \(\hbar/(m_Wc)\). Dans l’espace des impulsions,
+\begin{equation}
+  \mathcal A_{\rm weak}
+  \sim\frac{g_w^2}{k^2+m_W^2}
+  \simeq\frac{g_w^2}{m_W^2}
+\end{equation}
+aux impulsions nucléaires. Les anciennes expériences à basse énergie ont mesuré cette combinaison sous le nom de constante de Fermi.
+
+La longue discussion en classe précise ce que cette formule signifie et ne signifie pas. Les lignes internes \(W\) sont virtuelles et hors couche de masse ; l’énergie--l’impulsion reste néanmoins conservée. Une sonde suffisamment énergétique peut produire un \(W\) réel, mais elle a alors créé un processus différent dans l’état final. Les produits d’une collision ne sont pas la liste littérale de constituants déjà présents. La température modifie la population de projectiles énergétiques, les photons peuvent interagir par l’intermédiaire de particules virtuelles chargées, et la statistique de Bose est distincte d’une force dynamique.
+
+Enfin, \(SU(2)\) exige un champ de jauge neutre manquant, lié au \(Z\), et le réseau de pile--face fournit le premier modèle de brisure spontanée de symétrie. L’étape suivante consiste à réunir ces deux fils encore inachevés : le mélange électrofaible et le mécanisme de Higgs.

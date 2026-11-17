@@ -1,0 +1,570 @@
+\chapter{Forces magnétiques, potentiels vecteurs et principe de l’action}
+
+\lectureoverview{Les forces électrostatiques suivent le schéma conservatif familier, mais les forces magnétiques dépendent de la vitesse. Pour les intégrer à la mécanique lagrangienne, nous développons d’abord les outils de calcul vectoriel nécessaires, utilisons le caractère sans source du champ magnétique pour introduire un potentiel vecteur, examinons sa liberté de jauge, puis construisons le terme magnétique de l’action.}
+
+\section{Une nouvelle sorte de force}
+
+La discussion précédente du moment cinétique, des gyroscopes et des crochets de Poisson a réuni plusieurs thèmes. En particulier, un corps chargé en rotation dans un champ magnétique précesse à peu près comme un gyroscope. Nous passons maintenant de cette analogie au mouvement d’une particule chargée isolée.
+
+Les forces électrostatiques ne nécessitent aucune nouvelle mécanique. Si \(U(\mathbf x)\) est une énergie potentielle, alors
+\begin{equation}
+  \mathbf F=-\nabla U(\mathbf x),
+\end{equation}
+et le raisonnement habituel donne la conservation de la somme des énergies cinétique et potentielle. Pour une particule de charge \(e\) dans un potentiel électrostatique \(V(\mathbf x)\),
+\begin{equation}
+  U(\mathbf x)=eV(\mathbf x),
+  \qquad
+  \mathbf F_{\mathrm{el}}=-e\nabla V.
+\end{equation}
+Les forces magnétiques ont une forme différente. Elles dépendent de la vitesse de la particule et ne peuvent donc pas être introduites simplement en ajoutant une autre énergie potentielle ordinaire. Elles découlent néanmoins d’un principe de l’action et admettent une description lagrangienne comme hamiltonienne. Pour parvenir à cette description, un bref détour essentiel par le calcul vectoriel s’impose.
+
+\section{Champs et opérations locales}
+
+\subsection{Ce qu’un champ représente}
+
+Un champ associe une grandeur physique à chaque point de l’espace et, en général, à chaque instant. La température et la pression sont des champs scalaires. La vitesse du vent est un champ vectoriel. Les champs électrique et magnétique sont des champs vectoriels. D’autres théories comportent des champs scalaires même à l’échelle microscopique, tandis que la gravitation est décrite par un champ tensoriel. Pour la présente discussion, nous omettons toute dépendance temporelle et écrivons les champs comme des fonctions de \(\mathbf x\).
+
+Le caractère local est au cœur de la notion de champ. Imaginons qu’une certaine région soit cachée dans un sac. Pour mesurer le champ électrique dans cette région, plaçons-y une petite charge test et observons son accélération. La force est déterminée par le champ à l’endroit où se trouve la charge, sans qu’il soit nécessaire de consulter séparément toutes les sources lointaines. Le même raisonnement vaut pour un champ magnétique et une charge test en mouvement. Le potentiel vecteur nous obligera plus tard à nuancer cette image simple, mais c’est le bon point de départ.
+
+\subsection{L’opérateur dérivation}
+
+Les dérivées transforment des champs en d’autres champs. Regroupons les trois dérivées spatiales dans
+\begin{equation}
+  \nabla
+  =
+  \left(
+    \frac{\partial}{\partial x},
+    \frac{\partial}{\partial y},
+    \frac{\partial}{\partial z}
+  \right).
+\end{equation}
+Ce symbole se lit \emph{del} ou \emph{nabla}. Sa forme de triangle renversé est facile à retenir, mais sa véritable importance tient au fait qu’il se comporte formellement comme un vecteur dont les composantes sont des opérateurs différentiels.
+
+Il s’agit de l’espace physique ordinaire à trois dimensions, et non de l’espace des phases ni d’un espace de configurations à plusieurs particules. De plus, \(\nabla\) n’est pas un champ vectoriel qui puisse exister isolément. Il doit agir sur quelque chose. Si \(T(\mathbf x)\) est un champ scalaire de température, alors
+\begin{equation}
+  \nabla T
+  =
+  \left(
+    \frac{\partial T}{\partial x},
+    \frac{\partial T}{\partial y},
+    \frac{\partial T}{\partial z}
+  \right)
+\end{equation}
+est son gradient, qui est un véritable champ vectoriel.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_01.png}
+\caption{Au tableau, \(\nabla\) est introduit comme vecteur d’opérateurs de dérivation spatiale, puis appliqué à un champ scalaire \(T(\mathbf x)\).}
+\lectureframe{00:11:30}
+\end{figure}
+
+Un scalaire n’est pas simplement une grandeur écrite avec une seule composante. C’est une grandeur dont la valeur ne dépend pas de l’orientation des axes de coordonnées. La température en est l’exemple classique. Étant donné un champ vectoriel \(\mathbf E\), l’expression locale \(\mathbf E\cdot\mathbf E\) est également un scalaire. En revanche, construire un potentiel par intégration d’un champ est une opération non locale : elle fait intervenir les valeurs le long d’un chemin.
+
+\subsection{Divergence}
+
+Pour un champ vectoriel \(\mathbf A=(A_x,A_y,A_z)\), le scalaire
+\begin{equation}
+  \nabla\cdot\mathbf A
+  =
+  \frac{\partial A_x}{\partial x}
+  +\frac{\partial A_y}{\partial y}
+  +\frac{\partial A_z}{\partial z}
+\end{equation}
+est sa divergence. En langage des fluides, une divergence positive mesure une tendance locale à s’écouler vers l’extérieur, tandis qu’une divergence négative mesure une tendance à converger vers l’intérieur. Une source de fluide produit une divergence positive ; un puits, une divergence négative. Cette image est qualitative, mais elle rendra manifeste l’absence de sources du champ magnétique.
+
+\section{Produits vectoriels, symboles epsilon et rotationnel}
+
+\subsection{Le produit vectoriel en composantes}
+
+Pour deux vecteurs \(\mathbf V\) et \(\mathbf A\), une composante de leur produit vectoriel est
+\begin{equation}
+  (\mathbf V\times\mathbf A)_x
+  =
+  V_yA_z-V_zA_y.
+\end{equation}
+Les deux autres s’obtiennent par permutation cyclique de \(x\to y\to z\to x\). Il est utile de remplacer \(x,y,z\) par les indices \(1,2,3\). Le symbole de Kronecker est défini par
+\begin{equation}
+  \delta_{ij}
+  =
+  \begin{cases}
+    1,&i=j,\\
+    0,&i\ne j,
+  \end{cases}
+\end{equation}
+et le symbole de Levi--Civita par
+\begin{equation}
+  \epsilon_{123}=\epsilon_{231}=\epsilon_{312}=1,
+  \qquad
+  \epsilon_{132}=\epsilon_{321}=\epsilon_{213}=-1,
+\end{equation}
+avec \(\epsilon_{ijk}=0\) dès que deux indices quelconques coïncident. Un ordre cyclique autour d’une horloge à trois heures donne les signes positifs ; l’ordre inverse donne les signes négatifs. L’échange de deux indices quelconques inverse le signe : \(\epsilon_{ijk}\) est donc complètement antisymétrique.
+
+Nous utilisons aussi la convention de sommation : tout indice répété dans un terme est sommé de \(1\) à \(3\). Les trois équations du produit vectoriel s’écrivent alors
+\begin{equation}
+  (\mathbf V\times\mathbf A)_i
+  =
+  \epsilon_{ijk}V_jA_k.
+\end{equation}
+Par exemple, en posant \(i=1\), seuls \((j,k)=(2,3)\) et \((3,2)\) subsistent :
+\begin{equation}
+  (\mathbf V\times\mathbf A)_1
+  =
+  \epsilon_{123}V_2A_3
+  +\epsilon_{132}V_3A_2
+  =
+  V_2A_3-V_3A_2.
+\end{equation}
+Cette notation compacte contient donc exactement la règle usuelle de calcul des composantes.
+
+\subsection{Un vecteur déguisé en matrice antisymétrique}
+
+Il existe une deuxième représentation :
+\begin{equation}
+  V_iA_j-V_jA_i
+  =
+  \epsilon_{ijk}(\mathbf V\times\mathbf A)_k.
+\end{equation}
+Le membre de gauche porte deux indices et est antisymétrique sous \(i\leftrightarrow j\). Sa représentation matricielle a la forme
+\begin{equation}
+  M_{ij}
+  =
+  \begin{pmatrix}
+    0&M_{12}&M_{13}\\
+    -M_{12}&0&M_{23}\\
+    -M_{13}&-M_{23}&0
+  \end{pmatrix}.
+\end{equation}
+Les éléments diagonaux sont nuls, et le triangle inférieur est déterminé par le triangle supérieur. Il y a donc trois composantes indépendantes.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_02.png}
+\caption{Une composante du produit vectoriel et le tableau antisymétrique schématique \(3\times3\), qui sert à dénombrer ses éléments indépendants. Les marques dans les cases sont des moyens mnémotechniques, pas des symboles supplémentaires.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Le produit vectoriel, ou son identification à un autre vecteur, a-t-il un sens au-delà de trois dimensions ?}
+\lecturerresponse{L’objet antisymétrique à deux indices a un sens en toute dimension, mais son identification à un vecteur est propre à trois dimensions. Un vecteur tridimensionnel a trois composantes, et une matrice antisymétrique \(3\times3\) a trois composantes indépendantes. En quatre dimensions, les nombres correspondants sont quatre et six, puisque \(4(4-1)/2=6\). L’objet antisymétrique existe toujours et s’interprète naturellement comme une 2-forme, mais ce n’est pas un autre vecteur à quatre composantes.}
+\end{classroomqa}
+
+\subsection{Rotationnel}
+
+En remplaçant \(\mathbf V\) par \(\nabla\), on définit le rotationnel :
+\begin{equation}
+  (\nabla\times\mathbf A)_i
+  =
+  \epsilon_{ijk}\frac{\partial A_k}{\partial x_j}.
+\end{equation}
+Dans les composantes usuelles,
+\begin{align}
+  (\nabla\times\mathbf A)_x
+  &=
+  \frac{\partial A_z}{\partial y}
+  -\frac{\partial A_y}{\partial z},\\
+  (\nabla\times\mathbf A)_y
+  &=
+  \frac{\partial A_x}{\partial z}
+  -\frac{\partial A_z}{\partial x},\\
+  (\nabla\times\mathbf A)_z
+  &=
+  \frac{\partial A_y}{\partial x}
+  -\frac{\partial A_x}{\partial y}.
+\end{align}
+La divergence mesure la dispersion locale, tandis que le rotationnel mesure la circulation locale. Un fluide en rotation autour d’un axe a un rotationnel non nul suivant cet axe. L’image est particulièrement parlante pour les champs de vitesse, bien que la définition s’applique à tout champ vectoriel.
+
+\section{Deux identités structurelles}
+
+Deux propriétés fourniront presque tout le travail mathématique :
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0,
+  \qquad
+  \nabla\times(\nabla s)=0.
+\end{equation}
+La première découle du fait que les dérivées secondes sont symétriques, alors que \(\epsilon_{ijk}\) est antisymétrique :
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)
+  =
+  \epsilon_{ijk}\partial_i\partial_j A_k
+  =0.
+\end{equation}
+La seconde découle de l’égalité des dérivées partielles mixtes :
+\begin{equation}
+  \bigl[\nabla\times(\nabla s)\bigr]_i
+  =
+  \epsilon_{ijk}\partial_j\partial_k s
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_03.png}
+\caption{Première identité au tableau : la divergence de tout rotationnel est nulle.}
+\lectureframe{00:38:26}
+\end{figure}
+
+Ce sont les implications faciles, qui se prêtent bien au devoir ou au petit quiz annoncé pour le cours. Les réciproques demandent davantage de précautions. Localement, ou globalement sur un domaine convenablement simplement connexe ou contractile,
+\begin{align}
+  \nabla\cdot\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla\times\mathbf A,\\
+  \nabla\times\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla s.
+\end{align}
+Sans cette précision sur le domaine, des trous et d’autres propriétés topologiques globales peuvent faire obstacle à ces conclusions. Le cours utilise la forme locale, qui est exactement celle dont nous avons besoin par la suite.
+
+\section{Pourquoi le champ magnétique est un rotationnel}
+
+\subsection{Absence de sources magnétiques observées}
+
+Un champ magnétique \(\mathbf B\) est défini opérationnellement par son effet sur les particules chargées et les courants. En électromagnétisme ordinaire, en l’absence de monopôles magnétiques,
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+Cela diffère du champ électrique, dont la divergence est proportionnelle à la densité de charge électrique. Les charges électriques sont des sources et des puits du flux électrique. Aucune source ni aucun puits isolé de flux magnétique n’a été observé.
+
+La présence de monopôles magnétiques modifierait cette équation. Les théories unifiées des champs donnent souvent des raisons théoriques de s’attendre à l’existence de tels objets ; s’ils existent, ils sont peut-être trop massifs pour être produits dans les expériences actuellement possibles. La théorie présentée ici suppose donc une densité de charge magnétique nulle.
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-ce qu’un monopôle magnétique ? Les aimants ordinaires ont déjà un pôle nord et un pôle sud.}
+\lecturerresponse{Un monopôle isolé serait une véritable source ou un véritable puits de champ magnétique, analogue à une charge électrique. Un aimant droit ordinaire est différent. Les lignes de champ qui émergent près de son pôle nord se courbent dans l’espace et reviennent par le pôle sud, puis se poursuivent à l’intérieur de l’aimant. Ce qui ressemble à l’extérieur à une source et à un puits est relié, comme un fluide qui circule dans une canalisation cachée. Il n’y a aucune création ni destruction nette de flux magnétique.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_04.png}
+\caption{Le tableau oppose les sources apparentes nord et sud, tout en reliant leurs lignes de champ à travers l’aimant, pour souligner que le flux magnétique n’y commence ni ne s’y termine.}
+\lectureframe{00:44:56}
+\end{figure}
+
+Puisque \(\mathbf B\) est de divergence nulle, le théorème réciproque permet d’écrire, au moins localement,
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+Le champ \(\mathbf A\) est le potentiel vecteur. À première vue, il peut sembler inutile de redécrire ainsi le champ mesurable \(\mathbf B\). Son utilité ne deviendra claire que lorsque nous construirons l’action.
+
+\subsection{Le potentiel vecteur n’est pas unique}
+
+Si \(\mathbf A\) est un potentiel vecteur, alors
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla s
+\end{equation}
+en est un autre, car
+\begin{equation}
+  \nabla\times\mathbf A'
+  =
+  \nabla\times\mathbf A+\nabla\times(\nabla s)
+  =
+  \mathbf B.
+\end{equation}
+Cette transformation est une \emph{transformation de jauge}. Le champ magnétique est invariant de jauge.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_05.png}
+\caption{La relation de définition \(\mathbf B=\nabla\times\mathbf A\) et le décalage de jauge \(\mathbf A'=\mathbf A+\nabla s\) figurent ensemble au tableau.}
+\lectureframe{01:03:01}
+\end{figure}
+
+La prononciation est \emph{gauge}, et non \emph{gouache} ni \emph{gouge}--, distinction que le cours impose avec une sévérité feinte. Le mot est d’origine historique. Il est apparu lors d’une première tentative pour relier cette liberté à la comparaison d’étalons de longueur en différents lieux ; cette interprétation initiale n’a pas résisté, mais le nom est resté.
+
+\begin{classroomqa}
+\audiencequestion{Dans cette discussion, une transformation de jauge désigne-t-elle précisément \(\mathbf A\mapsto\mathbf A+\nabla s\) ?}
+\lecturerresponse{Oui. C’est la transformation électromagnétique complète considérée ici. Les transformations de jauge en théorie de Yang--Mills et dans d’autres théories des champs généralisent la même idée, mais l’électromagnétisme ne nécessite que l’ajout du gradient d’un scalaire.}
+\end{classroomqa}
+
+La non-unicité précise aussi ce qui est directement mesurable. Dans une petite région, une particule chargée réagit au \(\mathbf B\) local, et tous les potentiels vecteurs reliés par une transformation de jauge prédisent la même force en ce lieu. Aucune expérience locale de ce type classique ne permet d’attribuer une valeur unique à \(\mathbf A\).
+
+\begin{classroomqa}
+\audiencequestion{L’ajout d’un gradient décrit-il entièrement la non-unicité ?}
+\lecturerresponse{Localement, sur un domaine simple, oui. Si \(\nabla\times\mathbf A'=\nabla\times\mathbf A\), alors \(\nabla\times(\mathbf A'-\mathbf A)=0\), et la différence est donc un gradient. Globalement, un domaine multiplement connexe peut présenter des subtilités supplémentaires. L’ajout d’un vecteur constant est déjà inclus, puisqu’un vecteur constant est le gradient d’une fonction scalaire linéaire. Ajouter une constante à \(s\) ne change rien, car son gradient s’annule.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si la liberté de jauge a une raison physique profonde, quelle est-elle ?}
+\lecturerresponse{Le cours remet à plus tard cette interprétation plus profonde. La première étape utile consiste à exploiter cette liberté et à voir comment elle intervient dans l’action. Une fois le formalisme familier, il devient plus facile de comprendre pourquoi les descriptions de jauge sont indispensables.}
+\end{classroomqa}
+
+\section{Un champ magnétique, plusieurs potentiels}
+
+Considérons l’exemple le plus simple possible,
+\begin{equation}
+  \mathbf B=b\,\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=b,
+\end{equation}
+où \(b\) est constant. Un potentiel vecteur possible est
+\begin{equation}
+  \mathbf A^{(1)}=(0,bx,0).
+\end{equation}
+En effet,
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -\frac{\partial A_x^{(1)}}{\partial y}
+  =b,
+\end{equation}
+et les autres composantes du rotationnel s’annulent.
+
+Ce choix semble privilégier la direction \(y\), alors que le champ physique est invariant par rotation dans le plan \(x\)-\(y\). Un deuxième choix rend l’arbitraire manifeste :
+\begin{equation}
+  \mathbf A^{(2)}=(-by,0,0).
+\end{equation}
+Il donne
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-by)}{\partial y}
+  =b.
+\end{equation}
+La différence entre les deux potentiels est
+\begin{equation}
+  \mathbf A^{(2)}-\mathbf A^{(1)}
+  =
+  (-by,-bx,0)
+  =
+  \nabla(-bxy).
+\end{equation}
+Ils sont donc équivalents de jauge. Le choix invariant par rotation,
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \frac12\,\mathbf B\times\mathbf r
+  =
+  \left(-\frac{by}{2},\frac{bx}{2},0\right),
+\end{equation}
+est un autre élément de la même famille.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_06.png}
+\caption{Deux parties du tableau présentent les choix \(A_y=bx\) et \(A_x=-by\), qui produisent tous deux le même champ uniforme \(B_z=b\).}
+\lectureframe{01:07:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce la même ambiguïté que celle qui consiste à disposer différemment les bobines parcourues par un courant pour produire un champ ?}
+\lecturerresponse{Non. Des dispositions différentes des courants sont des sources physiques différentes et peuvent produire des champs différents ailleurs, même si elles donnent le même champ dans une région. La liberté de jauge subsiste même après que le champ magnétique a été spécifié partout : un même \(\mathbf B\) physique admet encore de nombreux potentiels vecteurs.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on se représenter l’ajout d’un gradient comme un étirement ou une compression sans torsion supplémentaire ?}
+\lecturerresponse{C’est une intuition géométrique utile. Le rotationnel détecte la composante de torsion locale, et un gradient pur a un rotationnel nul. Cette propriété s’exprime exactement par \(\nabla\times\nabla s=0\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Existe-t-il une relation fixe entre la direction de \(\mathbf A\) et celle de \(\mathbf B\) ?}
+\lecturerresponse{Il n’existe aucune relation indépendante de la jauge. Dans les exemples ci-dessus, on a \(A_z=0\), mais on pourrait ajouter une constante \(A_z\) sans modifier aucune dérivée. Alors \(\mathbf A\) ne serait plus perpendiculaire à \(\mathbf B\). Dans cette discussion classique, seul le rotationnel possède un contenu physique invariant.}
+\end{classroomqa}
+
+Il existe un analogue plus limité en électrostatique. Puisque \(\mathbf E=-\nabla V\), remplacer \(V\) par \(V+C\) ne modifie pas \(\mathbf E\). Le terme \emph{potentiel vecteur} a été choisi en partie par analogie avec cette liberté du potentiel scalaire ordinaire : on peut modifier le potentiel d’une manière qui laisse le champ physique inchangé.
+
+\section{La force de Lorentz}
+
+Nous pouvons maintenant énoncer la loi de force que le principe de l’action doit reproduire. Avec les conventions utilisées ici,
+\begin{equation}
+  \boxed{
+  \mathbf F
+  =
+  e\left(
+    \mathbf E+\frac{\mathbf v}{c}\times\mathbf B
+  \right)
+  =
+  -e\nabla V+\frac{e}{c}\mathbf v\times\mathbf B
+  }.
+\end{equation}
+Le symbole \(e\) désigne la charge électrique de la particule, \(\mathbf v=\dot{\mathbf x}\) sa vitesse et \(V\) le potentiel scalaire. La notation ne doit pas nous inciter à confondre \(V\) et \(\mathbf v\). En unités SI, \(V\) se mesure en volts et \(e\) en coulombs ; le facteur \(1/c\) affiché relève du système d’unités utilisé dans le cours. Le point structurel est indépendant des unités.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_07.png}
+\caption{Les contributions électrique et magnétique à la force de Lorentz sont présentées ensemble. La contribution magnétique est proportionnelle à \(\mathbf v\times\mathbf B\).}
+\lectureframe{00:58:54}
+\end{figure}
+
+Le terme électrique est conservatif et déjà familier. Le terme magnétique est nouveau. Il s’annule pour une particule immobile et est perpendiculaire à \(\mathbf v\) comme à \(\mathbf B\). Par conséquent,
+\begin{equation}
+  \mathbf v\cdot\mathbf F_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+Un champ magnétique statique dévie la trajectoire, mais n’effectue aucun travail sur la particule. Il en va autrement du frottement visqueux, qui est dirigé à l’opposé de la vitesse et dissipe l’énergie cinétique.
+
+Le facteur \(v/c\) indique aussi pourquoi, pour des échelles de champ comparables dans ces conventions, les effets magnétiques sont souvent plus faibles que les effets électriques lorsque les particules se déplacent lentement. Les électrons étant suffisamment légers pour atteindre de grandes vitesses, leur déviation magnétique reste facile à observer.
+
+Historiquement, les forces exercées sur les fils parcourus par un courant ont été connues avant que la force sur une charge isolée soit mise en évidence. Lorentz a compris que la force sur le fil pouvait s’expliquer en attribuant le terme dépendant de la vitesse à chaque charge en mouvement. L’expression complète, qui réunit les contributions électrique et magnétique, est aujourd’hui appelée loi de force de Lorentz, bien que, dans la présente discussion, la partie nouvelle soit la contribution magnétique.
+
+\begin{classroomqa}
+\audiencequestion{L’expression complète a-t-elle un symbole particulier, ou seule la contribution magnétique est-elle la force de Lorentz ?}
+\lecturerresponse{L’expression complète est simplement la force \(\mathbf F=m\mathbf a\), couramment appelée force de Lorentz. Le terme magnétique est celui qui, historiquement, est le plus directement associé à Lorentz. Les champs électrique et magnétique sont profondément liés par la relativité, mais cette unification n’est pas nécessaire pour le problème de mécanique qui nous occupe.}
+\end{classroomqa}
+
+\subsection{L’analogie avec la force de Coriolis}
+
+Nous avons déjà rencontré le produit vectoriel d’une vitesse par un vecteur fixe. Dans un référentiel en rotation de vitesse angulaire \(\boldsymbol\omega\), la force de Coriolis s’écrit
+\begin{equation}
+  \mathbf F_{\mathrm{Cor}}
+  =
+  2m\,\mathbf v\times\boldsymbol\omega.
+\end{equation}
+Elle a la même forme algébrique que la force magnétique :
+\begin{equation}
+  2m\boldsymbol\omega
+  \quad\longleftrightarrow\quad
+  \frac{e}{c}\mathbf B.
+\end{equation}
+Un champ magnétique uniforme perpendiculaire à un plan dévie donc les trajectoires des particules chargées d’une manière très semblable à celle dont un référentiel en rotation dévie les corps en mouvement.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_08.png}
+\caption{La force de Lorentz reste à gauche, tandis que le tableau lui associe la forme correspondante de la force de Coriolis \(2m\,\mathbf v\times\boldsymbol\omega\).}
+\lectureframe{01:02:08}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La force de Coriolis est dite fictive. Est-elle moins réelle que la force magnétique parce qu’elle dépend de la vitesse ?}
+\lecturerresponse{La dépendance à la vitesse n’est pas en cause. Une personne sur une plateforme en rotation peut tenir un objet en mouvement et ressentir la force de Coriolis. On la dit fictive parce qu’elle disparaît dans un référentiel inertiel, tandis que le référentiel en rotation est précisément défini par la présence de tels termes d’inertie. Le mot \emph{réel} est souvent moins utile qu’une indication du référentiel et de l’équation utilisés.}
+\end{classroomqa}
+
+On peut pousser l’analogie au moyen d’une petite expérience de pensée. Sur une plateforme en rotation, un champ électrostatique convenable peut compenser le terme centrifuge pour une particule donnée, tandis qu’un champ magnétique uniforme convenable peut compenser la force de Coriolis. Cette compensation ne fonctionne que pour un rapport charge/masse donné : les forces électrique et magnétique sont proportionnelles à \(e\), tandis que les forces d’inertie sont proportionnelles à \(m\). Une configuration de champ réglée pour les électrons ne compenserait pas les mêmes termes pour des particules ayant un rapport \(e/m\) différent.
+
+\section{Construire l’action d’une particule chargée}
+
+\subsection{Action stationnaire à extrémités fixes}
+
+Nous posons maintenant la question centrale : peut-on déduire la force de Lorentz d’un principe de l’action ? Oui, mais le potentiel vecteur est indispensable. Un lagrangien construit localement à partir de la particule et de \(\mathbf B\) seuls ne produit pas la force magnétique requise. Plutôt que de démontrer cette impossibilité, construisons directement l’action qui convient.
+
+Pour une trajectoire \(\mathbf x(t)\), écrivons
+\begin{equation}
+  S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L(\mathbf x,\dot{\mathbf x},t)\,dt.
+\end{equation}
+Le cours utilise la même lettre manuscrite pour l’action et le potentiel vecteur ; nous noterons l’action \(S\) et le potentiel vecteur \(\mathbf A\). Le chemin physique rend \(S\) stationnaire sous les variations qui maintiennent fixes ses deux extrémités. L’expression traditionnelle \emph{action minimale} est commode, bien que « action stationnaire » soit plus exact, car l’extremum n’est pas nécessairement un minimum.
+
+Le fait que les extrémités soient fixes est important. On peut imaginer que les bouts de la trajectoire sont cloués au tableau tandis que l’intérieur oscille. Il s’agit d’une trajectoire de mécanique ordinaire, et non d’un objet de théorie des cordes ; l’image de la corde sert uniquement à visualiser la variation.
+
+\subsection{Quels termes peuvent figurer dans le lagrangien ?}
+
+Lorsque tous les champs sont nuls, le lagrangien est l’énergie cinétique,
+\begin{equation}
+  L_0=\frac{m}{2}\dot{\mathbf x}^{\,2}.
+\end{equation}
+Le terme électrostatique est également classique :
+\begin{equation}
+  L_{\mathrm{el}}=-eV(\mathbf x).
+\end{equation}
+Plusieurs indices doivent guider le choix du terme magnétique :
+\begin{enumerate}
+  \item il doit être proportionnel à la charge \(e\) ;
+  \item il doit contenir le facteur \(1/c\) dans les unités du cours ;
+  \item il doit faire intervenir la vitesse ;
+  \item il doit être un scalaire par rotation.
+\end{enumerate}
+
+L’essai tentant \(\mathbf B\cdot\dot{\mathbf x}\) est un scalaire et contient une vitesse, mais il donne une équation du mouvement erronée. Le terme correct fait intervenir le potentiel vecteur :
+\begin{equation}
+  L_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  =
+  \frac{e}{c}A_i(\mathbf x)\dot x_i.
+\end{equation}
+Le lagrangien électromagnétique complet, indépendant du temps, est donc
+\begin{equation}
+  \boxed{
+  L
+  =
+  \frac{m}{2}\dot{\mathbf x}^{\,2}
+  +\frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  -eV(\mathbf x)
+  }.
+\end{equation}
+Le cours 10 appliquera les équations d’Euler--Lagrange et montrera explicitement que cette expression produit la force de Lorentz.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_09.png}
+\caption{Le lagrangien est achevé au tableau : un terme cinétique libre auquel s’ajoute \((e/c)A_i\dot x_i\).}
+\lectureframe{01:26:36}
+\end{figure}
+
+\section{Les transformations de jauge ne modifient que les extrémités}
+
+La contribution magnétique à l’action est
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}
+  \int_{t_i}^{t_f}A_i(\mathbf x)\dot x_i\,dt.
+\end{equation}
+Puisque \(\dot x_i\,dt=dx_i\), il s’agit d’une intégrale curviligne le long du chemin de la particule \(\gamma\) :
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}\int_\gamma A_i\,dx_i
+  =
+  \frac{e}{c}\int_\gamma\mathbf A\cdot d\mathbf x.
+\end{equation}
+Découpons le chemin en petits segments, prenons la composante de \(\mathbf A\) suivant chaque segment, multiplions-la par la longueur de celui-ci et additionnons les résultats. Telle est la signification géométrique de l’intégrale.
+
+Effectuons maintenant la transformation de jauge
+\begin{equation}
+  A_i\longmapsto A_i+\partial_i s.
+\end{equation}
+L’action varie de
+\begin{align}
+  \Delta S
+  &=
+  \frac{e}{c}\int_\gamma \partial_i s\,dx_i\\
+  &=
+  \frac{e}{c}\int_\gamma ds\\
+  &=
+  \frac{e}{c}
+  \left[
+    s(\mathbf x_f)-s(\mathbf x_i)
+  \right].
+\end{align}
+Chaque segment infinitésimal contribue par la valeur de \(s\) à une extrémité moins sa valeur à l’autre. En faisant la somme, toutes les contributions intérieures s’annulent en cascade, ne laissant que les deux extrémités.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_10.png}
+\caption{L’intégrale curviligne, sa décomposition en petits segments du chemin et le résultat aux extrémités \(s(\mathbf x_f)-s(\mathbf x_i)\).}
+\lectureframe{01:32:31}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Si l’action varie sous une transformation de jauge, pourquoi la trajectoire ne change-t-elle pas ?}
+\lecturerresponse{Le principe de l’action compare des chemins ayant les mêmes points initial et final. La quantité ajoutée ne dépend que de ces extrémités ; elle a donc la même valeur pour tous les chemins comparés. Sa variation est nulle. La valeur numérique de l’action n’est pas strictement invariante, mais les équations d’Euler--Lagrange et la trajectoire physique sont invariantes de jauge.}
+\end{classroomqa}
+
+Cette distinction constitue le principal résultat conceptuel du cours :
+\begin{equation}
+  \begin{aligned}
+    S&\ \hbox{may shift by an endpoint term},\\
+    \delta S&\ \hbox{and the equations of motion do not}.
+  \end{aligned}
+\end{equation}
+La liberté de jauge est donc compatible avec le principe de l’action. Le potentiel vecteur peut figurer dans le lagrangien même si le champ magnétique ne sélectionne aucun \(\mathbf A\) de manière unique.
+
+\section{La suite du raisonnement}
+
+Le présent cours a réuni les outils et construit l’action, mais s’arrête délibérément avant de faire varier cette action. Les étapes suivantes sont maintenant fixées :
+\begin{enumerate}
+  \item appliquer les équations d’Euler--Lagrange et retrouver
+  \(\mathbf F_{\mathrm{mag}}=(e/c)\mathbf v\times\mathbf B\);
+  \item calculer la quantité de mouvement canonique, qui différera de \(m\mathbf v\);
+  \item construire le hamiltonien ;
+  \item identifier les lois de conservation ;
+  \item résoudre le mouvement d’une particule chargée dans un champ magnétique uniforme.
+\end{enumerate}
+
+Le chemin qui mène à ces résultats explique pourquoi le potentiel vecteur a été introduit. Le champ magnétique est le rotationnel mesurable localement, mais le potentiel vecteur est l’objet qui se couple naturellement au chemin d’une particule. Les transformations de jauge ne modifient ce couplage qu’aux extrémités fixes, laissant la mécanique inchangée.

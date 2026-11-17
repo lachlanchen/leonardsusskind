@@ -1,0 +1,592 @@
+\chapter{Poids de Boltzmann, fonctions de partition et gaz parfait}
+
+\lectureoverview{Nous déduisons la distribution de probabilité à l’équilibre en maximisant l’entropie sous les contraintes de normalisation et d’énergie moyenne fixée. La fonction de partition permet ensuite d’obtenir l’énergie moyenne, l’entropie et la température par dérivation. Le gaz parfait en fournit le premier exemple complet, suivi d’une extension gravitationnelle et d’un aperçu des fluctuations d’énergie.}
+
+\section{Le problème d’entropie sous contraintes}
+
+Considérons un grand ensemble de \(\mathcal N\) répliques identiques, interagissant très faiblement, d’un même sous-système. Si \(n_i\) répliques occupent le \(i\)-ième état, alors
+\begin{equation}
+ p_i=\frac{n_i}{\mathcal N},
+ \qquad
+ \sum_i p_i=1.
+ \label{eq:sm4-occupation-probability}
+\end{equation}
+Le dénombrement multinomial du cours précédent donne l’entropie par réplique,
+\begin{equation}
+ S[p]=-\sum_i p_i\log p_i.
+ \label{eq:sm4-entropy}
+\end{equation}
+Il est utile de considérer cette expression comme une fonction ordinaire de toutes les variables \(p_1,p_2,\ldots\). Sa forme additive simple rend le calcul possible.
+
+L’énergie totale de l’ensemble de répliques est fixée à \(\mathcal N E\), où \(E\) désigne l’énergie moyenne par réplique. La seconde contrainte est donc
+\begin{equation}
+ \sum_i p_iE_i=E.
+ \label{eq:sm4-energy-constraint}
+\end{equation}
+Les niveaux \(E_i\) appartiennent au sous-système ; le nombre \(E\) au membre de droite est leur moyenne pondérée par les probabilités. La maximisation de \eqref{eq:sm4-entropy} sous les contraintes \eqref{eq:sm4-occupation-probability} et \eqref{eq:sm4-energy-constraint} sélectionne les fractions d’occupation de très loin les plus probables.
+
+Pour simplifier, minimisons \(-S=\sum_i p_i\log p_i\). Introduisons un multiplicateur de Lagrange pour chaque contrainte :
+\begin{equation}
+ \begin{aligned}
+ \Phi[p;\alpha,\beta]
+ &=\sum_i p_i\log p_i\\
+ &\quad+\alpha\left(\sum_i p_i-1\right)\\
+ &\quad+\beta\left(\sum_i p_iE_i-E\right).
+ \end{aligned}
+ \label{eq:sm4-augmented-functional}
+\end{equation}
+Les noms \(\alpha\) et \(\beta\) ne correspondent pas encore à des hypothèses physiques. À ce stade, ce sont simplement les deux nombres nécessaires pour imposer les deux contraintes.
+
+\begin{classroomqa}
+\audiencequestion{La fonction augmentée dépend-elle aussi de \(\alpha\) et de \(\beta\) ?}
+\lecturerresponse{Oui. La variation par rapport à \(\alpha\) et \(\beta\) rétablit les deux contraintes. Pour le calcul immédiat, toutefois, nous maintenons ces multiplicateurs fixes et faisons varier les probabilités \(p_i\). Leurs valeurs seront déterminées ensuite par la normalisation et l’énergie moyenne prescrite.
+\lecturetimestamp{00:09:32--00:09:49}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{lecture_04_figure_02.png}
+\caption{La fonctionnelle d’entropie augmentée, après suppression des termes constants lors de la variation des probabilités.}
+\lectureframe{00:10:56}
+\end{figure}
+
+Lorsqu’on dérive par rapport à une probabilité, les termes \(-\alpha\) et \(-\beta E\) ne contribuent pas. C’est la fonctionnelle abrégée que l’on voit au tableau. Ils font toujours partie de \eqref{eq:sm4-augmented-functional} ; ils sont simplement sans effet sur cette dérivée particulière.
+
+\section{La distribution de Boltzmann}
+
+Choisissons une probabilité quelconque. Le cours choisit \(p_7\), en partie parce que \(1\) paraît trop particulier et que \(7\) est un chiffre porte-bonheur. Ce choix n’a aucune incidence. Le seul calcul différentiel nécessaire est
+\begin{equation}
+ \frac{d}{dp_i}\bigl(p_i\log p_i\bigr)=\log p_i+1.
+\end{equation}
+On obtient donc
+\begin{equation}
+ \frac{\partial\Phi}{\partial p_i}
+ =\log p_i+1+\alpha+\beta E_i=0.
+ \label{eq:sm4-stationarity}
+\end{equation}
+En isolant \(p_i\),
+\begin{align}
+ \log p_i&=-(1+\alpha)-\beta E_i,\\
+ p_i&=e^{-(1+\alpha)}e^{-\beta E_i}.
+\end{align}
+Le premier facteur est indépendant de l’indice d’état. Notons-le \(1/Z\) :
+\begin{equation}
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+ \label{eq:sm4-boltzmann-weight}
+\end{equation}
+
+C’est le premier résultat immédiat. Une dérivée sous contrainte tout à fait ordinaire a produit une loi exponentielle. Les probabilités relatives vérifient
+\begin{equation}
+ \frac{p_i}{p_j}=e^{-\beta(E_i-E_j)}.
+ \label{eq:sm4-relative-weight}
+\end{equation}
+Le multiplicateur \(\beta\) détermine la rapidité avec laquelle la probabilité décroît en fonction de l’énergie. Une grande valeur positive de \(\beta\) concentre la distribution près des niveaux les plus bas ; une petite valeur positive de \(\beta\) répartit un poids appréciable plus haut dans le spectre. On voit déjà que la variation de \(\beta\) modifie l’énergie moyenne, même s’il reste à démontrer que ce paramètre s’identifie à l’inverse de la température.
+
+\section{Normalisation et fonction de partition}
+
+La normalisation détermine le facteur indépendant de l’état :
+\begin{equation}
+ 1=\sum_i p_i
+ =\frac{1}{Z}\sum_i e^{-\beta E_i},
+\end{equation}
+d’où
+\begin{equation}
+ Z(\beta)=\sum_i e^{-\beta E_i}.
+ \label{eq:sm4-partition-function}
+\end{equation}
+C’est la fonction de partition canonique. Elle est d’abord apparue comme une constante de normalisation, mais ce rôle est loin de rendre compte de toute son importance. Une fois \(Z(\beta)\) connue, on obtient les grandeurs thermodynamiques à partir de ses dérivées.
+
+Les niveaux d’énergie qui figurent dans \eqref{eq:sm4-partition-function} sont des données d’entrée. Ils découlent de la mécanique du système et des conditions extérieures fixées : le volume et la forme de la boîte, les champs magnétiques ou électriques, ainsi que tout autre paramètre de contrôle. La variation d’un paramètre de contrôle modifie le spectre et, par conséquent, \(Z\). Dans le calcul présent, ces paramètres, et donc l’ensemble \(\{E_i\}\), sont maintenus fixes.
+
+\begin{classroomqa}
+\audiencequestion{Que représentent exactement les axes du schéma de la fonction exponentielle ? L’ordonnée correspond-elle à un \(p_i\) particulier ?}
+\lecturerresponse{La hauteur représentée est la probabilité attribuée à un niveau ; l’ordre horizontal peut se lire soit comme l’indice d’état \(i\), soit, de façon plus physique, comme l’énergie \(E_i\). Chaque état a une énergie fixe. Pour une grande valeur de \(\beta\), la probabilité décroît fortement avec cette énergie ; près de \(\beta=0\), les poids sont presque uniformes sur les niveaux accessibles.
+\lecturetimestamp{00:19:39--00:20:09}}
+\end{classroomqa}
+
+\section{L’énergie moyenne cachée dans la fonction de partition}
+
+La seconde contrainte détermine \(\beta\) :
+\begin{equation}
+ E=\sum_i p_iE_i
+ =\frac{1}{Z}\sum_i E_i e^{-\beta E_i}.
+ \label{eq:sm4-mean-energy}
+\end{equation}
+Au lieu de recalculer cette somme pondérée, dérivons \eqref{eq:sm4-partition-function} :
+\begin{equation}
+ \frac{dZ}{d\beta}
+ =-\sum_i E_i e^{-\beta E_i}.
+\end{equation}
+En comparant avec \eqref{eq:sm4-mean-energy}, on obtient
+\begin{equation}
+ E(\beta)
+ =-\frac{1}{Z}\frac{dZ}{d\beta}
+ =-\frac{d\log Z}{d\beta}.
+ \label{eq:sm4-energy-logz}
+\end{equation}
+Le logarithme est naturel, car sa dérivée fournit le facteur \(1/Z\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_03.png}
+\caption{La normalisation, la contrainte sur l’énergie moyenne et la dérivée de la fonction de partition apparaissent ensemble au tableau.}
+\lectureframe{00:26:24}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{L’équation du bas au tableau est-elle une nouvelle équation pour \(Z\), ou découle-t-elle de la définition écrite au-dessus ?}
+\lecturerresponse{Elle découle de la dérivation de la définition \(Z=\sum_i e^{-\beta E_i}\). La dérivée fait apparaître le facteur \(-E_i\). En divisant ensuite le résultat par \(Z\), on retrouve la somme pondérée qui définit l’énergie moyenne.
+\lecturetimestamp{00:25:58--00:26:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce que \(dZ/d\beta=-E Z\) fait de \(Z\) une fonction propre de la dérivation ?}
+\lecturerresponse{Pas au sens habituel. Une équation aux valeurs propres ferait intervenir une constante multipliant \(Z\), alors qu’ici \(E=E(\beta)\). Cette équation donne l’énergie moyenne en fonction de \(\beta\) ; il ne s’agit pas d’un problème à valeur propre fixe.
+\lecturetimestamp{00:28:49--00:29:43}}
+\end{classroomqa}
+
+La simplicité de \eqref{eq:sm4-energy-logz} est trompeuse. Le spectre peut être compliqué et le calcul de \(Z\) difficile ; pourtant, une fois cette unique fonction déterminée, une seule dérivée suffit pour obtenir l’énergie moyenne. Ce schéma revient dans toute la mécanique statistique : des opérations élémentaires appliquées dans le bon ordre donnent des résultats difficiles à deviner directement.
+
+\begin{classroomqa}
+\audiencequestion{Est-ce que \(E\) désigne l’énergie totale de toutes les répliques ou l’énergie moyenne par boîte ?}
+\lecturerresponse{C’est l’énergie moyenne d’une boîte. L’énergie totale de l’ensemble de répliques est \(\mathcal N E\). Plus tard, lorsque le système considéré sera une boîte entière contenant \(N\) particules de gaz, \(E\) désignera l’énergie de cet échantillon gazeux entier.
+\lecturetimestamp{00:30:55--00:31:10}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on prendre le logarithme de \(\sum_i e^{-\beta E_i}\) terme à terme ?}
+\lecturerresponse{Non. Le logarithme transforme un produit en somme, et non une somme en somme de logarithmes :
+\[
+ \log\!\left(\sum_i e^{-\beta E_i}\right)
+ \ne \sum_i\log\!\left(e^{-\beta E_i}\right).
+\]
+Cette distinction sera utile plus tard, lorsque les fonctions de partition de sous-systèmes indépendants se multiplieront.
+\lecturetimestamp{00:31:10--00:31:58}}
+\end{classroomqa}
+
+\section{Qu’est-ce qui est fixé et qu’est-ce qui peut varier ?}
+
+Les mêmes formules font intervenir plusieurs niveaux de variables, que la discussion en classe distingue délibérément.
+
+\begin{itemize}
+ \item Les probabilités \(p_i\) sont les inconnues initiales.
+ \item Les niveaux \(E_i\) sont fixés une fois le système et ses paramètres de contrôle spécifiés.
+ \item Le multiplicateur \(\alpha\) a été absorbé dans la constante de normalisation \(Z=e^{1+\alpha}\).
+ \item Pour une énergie moyenne prescrite \(E\), la contrainte fixe un nombre \(\beta\). Toutefois, dans une famille d’états d’équilibre, on peut utiliser soit \(E=E(\beta)\), soit \(\beta=\beta(E)\).
+\end{itemize}
+
+\begin{classroomqa}
+\audiencequestion{Si les multiplicateurs sont des nombres, pourquoi traite-t-on maintenant \(\beta\) et \(E\) comme des variables ?}
+\lecturerresponse{Pour un problème sous contrainte donné, ce sont bien des nombres. Mais nous pouvons comparer de nombreux problèmes d’équilibre ayant le même spectre et des énergies moyennes prescrites différentes. Dans cette famille, \(\beta\) varie avec \(E\). Fixer \(E\) détermine \(\beta\) ; fixer \(\beta\) détermine \(E\). Ce sont deux façons de lire la même relation.
+\lecturetimestamp{00:31:58--00:33:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le paramètre \(\alpha\) a-t-il disparu ?}
+\lecturerresponse{Seul son nom a disparu. La définition \(e^{-(1+\alpha)}=1/Z\) l’absorbe dans \(Z\). Conserver à la fois \(\alpha\) et \(Z\) reviendrait à compter deux fois le même paramètre de normalisation.
+\lecturetimestamp{00:33:29--00:33:49}}
+\end{classroomqa}
+
+L’énergie n’est pas nécessairement la seule grandeur conservée. Si l’on impose aussi la quantité de mouvement totale, le nombre de particules, le moment cinétique ou une autre grandeur, sa valeur moyenne reçoit son propre multiplicateur. Cet élargissement modifie l’ensemble statistique, mais pas la méthode.
+
+\begin{classroomqa}
+\audiencequestion{Ne fixer que l’énergie moyenne ne suppose-t-il pas trop de choses sur le système ?}
+\lecturerresponse{Cela suppose qu’aucune autre grandeur conservée ne doit être prise en compte dans le problème présent. Si, par exemple, la quantité de mouvement totale est également fixée, on ajoute une autre contrainte et un autre multiplicateur de Lagrange. En revanche, le volume, la forme et les champs extérieurs sont ici des paramètres de contrôle : ils sont maintenus fixes et déterminent les niveaux d’énergie eux-mêmes.
+\lecturetimestamp{00:33:51--00:35:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce que \(\alpha\) devrait apparaître comme un autre argument de l’énergie, et est-ce que \(Z\) dépend des niveaux \(E_i\) ?}
+\lecturerresponse{\(\alpha\) est déjà inclus dans \(Z\) ; ce n’est donc pas un argument indépendant. La fonction de partition dépend bel et bien du spectre fixé ainsi que de \(\beta\). La variation d’un paramètre de contrôle modifie les \(E_i\), et donc \(Z\) ; lors des dérivées par rapport à \(\beta\) effectuées ici, le spectre est maintenu fixe.
+\lecturetimestamp{00:35:52--00:37:10}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Fait-on varier les niveaux individuels \(E_i\) ou l’énergie moyenne \(E\) ?}
+\lecturerresponse{Les niveaux individuels restent fixes. L’énergie moyenne varie parce que les probabilités changent. La famille est donc paramétrée par \(E\) ou, de manière équivalente, par \(\beta\), tandis que la même liste de niveaux \(\{E_i\}\) est utilisée dans tous les cas.
+\lecturetimestamp{00:37:12--00:39:04}}
+\end{classroomqa}
+
+En pratique, la température est souvent bien plus facile à mesurer que l’énergie totale d’un gaz. On peut utiliser un thermomètre ; peser la différence de masse relativiste et invoquer \(E=mc^2\) serait correct, mais terriblement peu pratique. Pour donner un sens opérationnel à \(\beta\), nous devons maintenant le relier à la définition thermodynamique de la température.
+
+\section{L’entropie avant la température}
+
+Logiquement, l’entropie vient d’abord. Remplaçons les probabilités de Boltzmann dans \eqref{eq:sm4-entropy} :
+\begin{equation}
+ \log p_i=-\beta E_i-\log Z.
+\end{equation}
+On obtient alors
+\begin{align}
+ S
+ &=-\sum_i p_i\log p_i\\
+ &=\beta\sum_i p_iE_i+\log Z\sum_i p_i\\
+ &=\beta E+\log Z.
+ \label{eq:sm4-entropy-logz}
+\end{align}
+La somme de normalisation fournit le dernier facteur égal à un. C’est aussi un premier indice de l’énergie libre de Helmholtz, puisque plus loin \(F_{\mathrm H}=-T\log Z\) dans les unités où \(k_B=1\).
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-il advenu du facteur \(1/Z\) dans le premier terme ?}
+\lecturerresponse{Il est déjà inclus dans \(p_i\). La somme \(\sum_i p_iE_i\) comprend la probabilité normalisée complète et, par définition, elle vaut l’énergie moyenne \(E\).
+\lecturetimestamp{00:43:19--00:43:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ne devrait-il pas y avoir un signe moins dans \(S=\beta E+\log Z\) ?}
+\lecturerresponse{Non. L’entropie commence par un signe moins, tandis que \(\log p_i=-\beta E_i-\log Z\) contient deux autres signes moins. Ils donnent les deux termes positifs affichés dans \eqref{eq:sm4-entropy-logz}.
+\lecturetimestamp{00:45:53--00:46:03}}
+\end{classroomqa}
+
+La température a été définie thermodynamiquement par
+\begin{equation}
+ dE=T\,dS,
+ \qquad
+ \frac{1}{T}=\frac{dS}{dE},
+ \label{eq:sm4-temperature-definition}
+\end{equation}
+en maintenant fixes tous les autres paramètres de contrôle. Une première tentative consistant à dériver directement \eqref{eq:sm4-entropy-logz} par rapport à \(E\) s’encombre vite, car \(\beta\) dépend aussi de \(E\). Le calcul est plus clair en prenant une différentielle totale :
+\begin{align}
+ dS
+ &=\beta\,dE+E\,d\beta
+   +\frac{d\log Z}{d\beta}\,d\beta\\
+ &=\beta\,dE+E\,d\beta-E\,d\beta\\
+ &=\beta\,dE.
+ \label{eq:sm4-entropy-differential}
+\end{align}
+La simplification utilise \eqref{eq:sm4-energy-logz}. En comparant \eqref{eq:sm4-entropy-differential} et \eqref{eq:sm4-temperature-definition}, on obtient
+\begin{equation}
+ T=\frac{1}{\beta},
+ \qquad
+ \beta=\frac{1}{T}.
+ \label{eq:sm4-beta-temperature}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_04.png}
+\caption{Les deux termes en \(d\beta\) s’annulent, ce qui laisse \(dS=\beta\,dE\).}
+\lectureframe{00:50:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Cette simplification suppose-t-elle à tort que \(\log Z\) est indépendant de l’énergie ou de la température ?}
+\lecturerresponse{Non. Pour un spectre fixé, il n’y a qu’un seul paramètre thermique indépendant. On peut écrire \(Z=Z(\beta)\), puis considérer \(\beta=\beta(E)\) le long de la famille d’équilibres. La différentielle totale conserve toute la dépendance en \(d\beta\), et c’est précisément l’identité \(d\log Z/d\beta=-E\) qui rend possible la simplification.
+\lecturetimestamp{00:52:04--00:52:44}}
+\end{classroomqa}
+
+Dans la majeure partie du calcul, la température est exprimée en unités d’énergie, de sorte que \(k_B=1\). Pour revenir aux unités de laboratoire,
+\begin{equation}
+ \beta=\frac{1}{k_B T_{\mathrm K}},
+ \label{eq:sm4-beta-laboratory}
+\end{equation}
+où \(T_{\mathrm K}\) est une température absolue exprimée en kelvins. Il est souvent commode d’écrire \(T_{\mathrm e}=k_BT_{\mathrm K}\), puis d’utiliser \(\beta=1/T_{\mathrm e}\).
+
+\begin{classroomqa}
+\audiencequestion{Pour un volume de gaz, le système est-il une molécule ou l’ensemble des molécules ?}
+\lecturerresponse{Cela dépend de la façon dont le système est défini. Ici, le système sera la boîte de gaz entière ; \(E\) est donc l’énergie de toutes ses molécules. Pour un gaz parfait suffisamment dilué, on peut aussi traiter une molécule comme un sous-système, puisque les particules n’interagissent pas ; la factorisation ci-dessous montrera le lien entre les deux descriptions.
+\lecturetimestamp{00:53:32--00:54:49}}
+\end{classroomqa}
+
+On peut maintenant rassembler les identités canoniques :
+\begin{align}
+ p_i&=\frac{e^{-\beta E_i}}{Z},&
+ Z(\beta)&=\sum_i e^{-\beta E_i},\label{eq:sm4-canonical-pair}\\
+ E&=-\frac{d\log Z}{d\beta},&
+ S&=\beta E+\log Z,&
+ T&=\frac{1}{\beta}.
+ \label{eq:sm4-canonical-identities}
+\end{align}
+
+\section{Un gaz parfait classique}
+
+Considérons \(N\) particules ponctuelles identiques, de masse \(m\), dans une boîte de volume \(V\). Le gaz est parfait lorsque les interactions entre particules peuvent être négligées. Cette approximation peut être valable parce que les forces sont faibles ou parce que le gaz est assez dilué pour que les rencontres rapprochées soient rares.
+
+Un microétat classique est défini par toutes les positions et toutes les quantités de mouvement :
+\begin{equation}
+ (\bm q_1,\ldots,\bm q_N;\bm p_1,\ldots,\bm p_N).
+\end{equation}
+Il y a \(3N\) coordonnées de position et \(3N\) coordonnées de quantité de mouvement ; l’état est donc un point d’un espace des phases à \(6N\) dimensions. En l’absence d’interactions, le hamiltonien est
+\begin{equation}
+ H(\bm p)=\sum_{a=1}^{N}\frac{\bm p_a^2}{2m}
+ =\sum_{\mu=1}^{3N}\frac{p_\mu^2}{2m}.
+ \label{eq:sm4-ideal-hamiltonian}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Y a-t-il \(3N\) particules, et la somme sur toutes les composantes de la quantité de mouvement compte-t-elle les états en double ?}
+\lecturerresponse{Il y a \(N\) particules et \(3N\) composantes de la quantité de mouvement. La somme dans \eqref{eq:sm4-ideal-hamiltonian} comporte un terme quadratique pour chaque composante. L’intégrale sur l’espace des phases intègre ensuite chaque composante indépendante une seule fois ; le produit n’entraîne donc aucun double comptage.
+\lecturetimestamp{01:02:29--01:04:04}}
+\end{classroomqa}
+
+Pour un espace des phases classique continu, la somme sur les états devient
+\begin{equation}
+ Z_N
+ =\frac{1}{N!\,h^{3N}}
+ \int_{V^N}d^{3N}q
+ \int_{\mathbb R^{3N}}d^{3N}p\,
+ e^{-\beta H(\bm p)}.
+ \label{eq:sm4-classical-partition}
+\end{equation}
+Le cours se concentre sur les intégrales et écrit la même expression sans la cellule d’espace des phases \(h^{3N}\). La réintroduire rend \(Z_N\) sans dimension et rappelle l’origine quantique du dénombrement classique des états. Comme \(h\) est indépendant de \(\beta\), il ne modifie pas la dérivée de l’énergie utilisée plus loin.
+
+L’intégrale sur les positions est immédiate. Le hamiltonien ne dépend pas de la position et chaque particule peut se trouver n’importe où dans la boîte :
+\begin{equation}
+ \int_{V^N}d^{3N}q=V^N.
+\end{equation}
+L’intégrale sur les quantités de mouvement se factorise en \(3N\) intégrales gaussiennes identiques à une dimension :
+\begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left[
+  \int_{-\infty}^{\infty}dp\,
+  e^{-\beta p^2/(2m)}
+ \right]^{3N}.
+ \label{eq:sm4-factorized-gas}
+\end{equation}
+
+Le facteur \(1/N!\) regroupe les configurations qui ne diffèrent que par une permutation de particules identiques. Pour l’énergie moyenne à \(N\) et \(V\) fixés, il n’ajoute à \(\log Z_N\) qu’une constante indépendante de \(\beta\) ; il disparaît donc lors de \(-\partial/\partial\beta\). Il n’est pas négligeable pour toutes les questions : avec \(h^{3N}\), il est indispensable pour obtenir une fonction de partition sans dimension, une entropie extensive et un potentiel chimique cohérent.
+
+Posons maintenant
+\begin{equation}
+ x=\sqrt{\frac{\beta}{2m}}\,p,
+ \qquad
+ dp=\sqrt{\frac{2m}{\beta}}\,dx.
+\end{equation}
+L’intégrale gaussienne devient
+\begin{align}
+ \int_{-\infty}^{\infty}dp\,e^{-\beta p^2/(2m)}
+ &=
+ \sqrt{\frac{2m}{\beta}}
+ \int_{-\infty}^{\infty}dx\,e^{-x^2}\\
+ &=\sqrt{\frac{2\pi m}{\beta}}.
+ \label{eq:sm4-gaussian}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_05.png}
+\caption{Un seul changement d’échelle ramène l’intégrale sur les quantités de mouvement à l’intégrale gaussienne standard.}
+\lectureframe{01:13:12}
+\end{figure}
+
+En substituant dans \eqref{eq:sm4-factorized-gas}, on obtient
+\begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm4-ideal-partition}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_04_figure_06.png}
+\caption{La fonction de partition complète du gaz parfait, obtenue au tableau. La cellule d’espace des phases \(h^{3N}\) est rétablie dans \eqref{eq:sm4-ideal-partition}.}
+\lectureframe{01:14:38}
+\end{figure}
+
+Il est utile de mettre le même résultat sous une forme faisant intervenir la longueur d’onde thermique de de Broglie
+\begin{equation}
+ \lambda_T=\frac{h}{\sqrt{2\pi mT}}
+ \qquad (k_B=1).
+\end{equation}
+On obtient alors
+\begin{equation}
+ Z_N=\frac{1}{N!}\left(\frac{V}{\lambda_T^3}\right)^N.
+ \label{eq:sm4-thermal-wavelength-form}
+\end{equation}
+
+Pour \(N\) macroscopique, la formule de Stirling donne
+\begin{equation}
+ N!\simeq N^Ne^{-N}\sqrt{2\pi N}.
+\end{equation}
+En ne conservant que la dépendance exponentielle dominante et en posant \(\rho=N/V\),
+\begin{equation}
+ \frac{V^N}{N!}
+ \simeq
+ \frac{1}{\sqrt{2\pi N}}
+ \left(\frac{e}{\rho}\right)^N.
+ \label{eq:sm4-density-rewrite}
+\end{equation}
+On obtient ainsi la réécriture élégante en fonction de la densité présentée dans le cours. Le facteur en racine carrée est sous-dominant dans \(\log Z_N\), mais il est affiché ici au lieu d’être omis sans le signaler.
+
+\begin{classroomqa}
+\audiencequestion{Si \(1/N!\) est indépendant de \(\beta\), n’est-il vraiment sans aucun effet ?}
+\lecturerresponse{Il n’a aucun effet sur la dérivée de l’énergie moyenne que nous calculons ici, à \(N\) et \(V\) fixés, car il ajoute à \(\log Z_N\) une constante indépendante de \(\beta\). En revanche, il compte pour l’entropie absolue et pour les variations du nombre de particules. Il ne faut pas confondre cette affirmation limitée sur la dérivée avec le rôle plus général du dénombrement des états.
+\lecturetimestamp{01:27:01--01:27:51}}
+\end{classroomqa}
+
+\section{Énergie et équipartition}
+
+Les produits sont peu commodes à dériver ; les logarithmes les transforment en sommes. D’après \eqref{eq:sm4-ideal-partition},
+\begin{equation}
+ \log Z_N
+ =-\frac{3N}{2}\log\beta+\text{\(\beta\)-independent terms}.
+ \label{eq:sm4-log-ideal-partition}
+\end{equation}
+On obtient donc
+\begin{equation}
+ E
+ =-\frac{\partial\log Z_N}{\partial\beta}
+ =\frac{3N}{2\beta}
+ =\frac{3N}{2}T.
+ \label{eq:sm4-ideal-energy}
+\end{equation}
+L’énergie par particule est
+\begin{equation}
+ \frac{E}{N}=\frac{3}{2}T
+ \qquad (k_B=1),
+\end{equation}
+ou, en unités de laboratoire,
+\begin{equation}
+ \frac{E}{N}=\frac{3}{2}k_BT_{\mathrm K}.
+ \label{eq:sm4-ideal-energy-lab}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_04_figure_07.png}
+\caption{Seul le terme \(-3N\log\beta/2\) contribue à l’énergie du gaz parfait, ce qui donne \(E/N=3T/2\).}
+\lectureframe{01:25:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Comment la constante de Boltzmann intervient-elle dans la formule de l’énergie ?}
+\lecturerresponse{La température utilisée par le théoricien, \(T\), est une énergie. Pour utiliser les kelvins, on la remplace par \(k_BT_{\mathrm K}\), ce qui donne \(E/N=3k_BT_{\mathrm K}/2\). La faible valeur de \(k_B\) convertit une température numérique d’allure macroscopique en l’échelle d’énergie microscopique d’une molécule.
+\lecturetimestamp{01:24:58--01:26:01}}
+\end{classroomqa}
+
+Le facteur trois vient des trois directions de l’espace. Le facteur un demi vient de la dépendance en racine carrée de chaque intégrale gaussienne par rapport à \(1/\beta\). Chaque coordonnée indépendante quadratique de quantité de mouvement contribue \begin{equation}
+ \frac{1}{2}T
+\end{equation} à l’énergie moyenne. En \(d\) dimensions spatiales, le même raisonnement donne \(E/N=dT/2\). C’est la première apparition de l’équipartition.
+
+Le calcul de l’entropie donné à la fin du cours découle de \(S=\beta E+\log Z_N\). En utilisant l’approximation de Stirling,
+\begin{equation}
+ \frac{S}{N}
+ \simeq
+ \log\!\left[
+  \frac{V}{N}
+  \left(\frac{2\pi mT}{h^2}\right)^{3/2}
+ \right]
+ +\frac{5}{2},
+ \label{eq:sm4-sackur-tetrode}
+\end{equation}
+à la correction sous-dominante finie en \(N\) près. Le rétablissement de \(k_B\) multiplie le membre de droite par \(k_B\) et remplace \(T\) par \(k_BT_{\mathrm K}\). Le résultat montre clairement pourquoi les facteurs de normalisation qui disparaissaient dans le calcul de l’énergie sont indispensables pour l’entropie.
+
+\section{Placer le gaz dans un champ gravitationnel}
+
+Une question sur le placement de la boîte sur une étoile à neutrons introduit l’extension gravitationnelle. Avant d’aborder le cas d’une étoile à neutrons, considérons un champ uniforme \(g\) dans une pièce ordinaire. Choisissons \(y=0\) au bas d’une boîte de surface de base \(A\) et de hauteur \(L\). Le hamiltonien devient
+\begin{equation}
+ H=\sum_{a=1}^{N}
+ \left(\frac{\bm p_a^2}{2m}+mgy_a\right).
+ \label{eq:sm4-gravity-hamiltonian}
+\end{equation}
+Les intégrales sur les positions horizontales donnent toujours \(A^N\), tandis que chaque coordonnée verticale contribue
+\begin{equation}
+ I_y(L)
+ =\int_0^Ldy\,e^{-\beta mgy}
+ =\frac{1-e^{-\beta mgL}}{\beta mg}.
+ \label{eq:sm4-finite-height-integral}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{L’intégrale verticale doit-elle vraiment aller jusqu’à l’infini, ou seulement jusqu’au sommet de la boîte ?}
+\lecturerresponse{Pour une boîte de hauteur finie, elle doit aller de \(0\) à sa hauteur \(L\), comme dans \eqref{eq:sm4-finite-height-integral}. La limite supérieure infinie est une simplification introduite par la suite, qui modélise une atmosphère au-dessus d’une surface plutôt qu’une pièce de hauteur finie.
+\lecturetimestamp{01:30:25--01:31:32}}
+\end{classroomqa}
+
+La fonction de partition complète pour une hauteur finie est donc
+\begin{equation}
+ Z_N(L)
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  A\,
+  \frac{1-e^{-\beta mgL}}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-finite}
+\end{equation}
+Le facteur vertical dépend de \(\beta\) ; il doit donc contribuer à l’énergie. En effet,
+\begin{equation}
+ \langle U\rangle
+ =N\left[
+  \frac{1}{\beta}
+  -\frac{mgL}{e^{\beta mgL}-1}
+ \right].
+ \label{eq:sm4-finite-gravity-energy}
+\end{equation}
+Cela achève le petit calcul d’intégration que le cours laisse d’abord de côté comme un détail fastidieux.
+
+Pour une atmosphère de hauteur infinie, \(L\to\infty\), et
+\begin{equation}
+ I_y(\infty)=\frac{1}{\beta mg}.
+\end{equation}
+La fonction de partition devient
+\begin{equation}
+ Z_N^{(\infty)}
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  \frac{A}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-infinite}
+\end{equation}
+Son logarithme, dépendant de \(\beta\), vaut
+\begin{equation}
+ \log Z_N^{(\infty)}
+ =-\frac{3N}{2}\log\beta-N\log\beta+\mathrm{const}.
+\end{equation}
+Le premier terme donne l’énergie cinétique \(3NT/2\) ; le second donne l’énergie potentielle gravitationnelle moyenne \(NT\). Ainsi,
+\begin{equation}
+ E_{\mathrm{tot}}=\frac{5N}{2}T
+\end{equation}
+pour cette atmosphère idéalisée et non bornée.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.83\textwidth]{lecture_04_figure_08.png}
+\caption{La fonction de partition pour une atmosphère infinie ajoute \(-N\log\beta\) à \(\log Z\), ce qui est à l’origine de l’énergie potentielle moyenne.}
+\lectureframe{01:36:38}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Un champ gravitationnel très intense exige-t-il un autre multiplicateur de Lagrange ?}
+\lecturerresponse{Pas du seul fait qu’il est intense. La gravité modifie le hamiltonien et, par conséquent, les niveaux d’énergie ou le poids dans l’espace des phases. Le même multiplicateur d’énergie \(\beta\) reste valable. Une étoile à neutrons entraîne d’autres complications physiques, mais la première modification consiste toujours à inclure l’énergie potentielle gravitationnelle dans \(H\).
+\lecturetimestamp{01:27:58--01:29:24}}
+\end{classroomqa}
+
+\section{Trois questions pour conclure}
+
+\begin{classroomqa}
+\audiencequestion{Quelle équation donne la distribution de Boltzmann, et qu’affirme-t-elle sur l’équilibre ?}
+\lecturerresponse{La distribution est
+\[
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+\]
+C’est la distribution qui maximise l’entropie sous les contraintes de normalisation et d’énergie moyenne fixée. L’énergie moyenne doit être calculée à partir des mêmes probabilités, et la normalisation doit toujours être imposée, même si elle semble presque automatique dans la formule finale.
+\lecturetimestamp{01:38:14--01:38:45}}
+\end{classroomqa}
+
+La procédure peut sembler mécanique : écrire une fonction de partition, prendre son logarithme et dériver. Pourtant, les équations obtenues continuent de surprendre. L’habitude apprend quelle opération simple doit suivre laquelle, sans rendre le sujet moins étonnant.
+
+\begin{classroomqa}
+\audiencequestion{Ces idées sur l’entropie s’appliquent-elles à une étoile en effondrement ou à un trou noir ? Comment l’entropie peut-elle augmenter alors que la matière occupe une région plus petite ?}
+\lecturerresponse{Les étoiles sont difficiles à traiter surtout parce que la composition de leur matière est complexe. Le trou noir fournit un cas de référence plus net : son entropie de Bekenstein--Hawking est l’entropie gravitationnelle limite pour les contraintes macroscopiques données. L’effondrement peut augmenter l’entropie jusqu’à cette valeur du trou noir ; pour l’augmenter davantage, il faut modifier l’énergie ou la taille disponibles.
+\lecturetimestamp{01:39:29--01:40:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La fonction de partition permet-elle aussi de calculer les fluctuations d’énergie ?}
+\lecturerresponse{Oui. Une dérivée donne l’énergie moyenne et une seconde dérivée donne sa variance :
+\begin{align*}
+ \frac{\partial^2\log Z}{\partial\beta^2}
+ &=\langle E^2\rangle-\langle E\rangle^2\\
+ &=\operatorname{Var}(E).
+\end{align*}
+En unités d’énergie, celle-ci est liée à la capacité thermique par \(\operatorname{Var}(E)=T^2C_V\). En unités de laboratoire,
+\(\operatorname{Var}(E)=k_BT_{\mathrm K}^2C_V\). Cette relation entre fluctuations et capacité thermique fera l’objet du prochain calcul.
+\lecturetimestamp{01:40:37--01:41:53}}
+\end{classroomqa}
+
+Les fluctuations distinguent la mécanique statistique d’une description thermodynamique purement continue. Leur étude systématique, associée notamment à Gibbs et Einstein, met au jour les constituants microscopiques en nombre fini qui sous-tendent les lois macroscopiques lisses. C’est là que commence le cours suivant.

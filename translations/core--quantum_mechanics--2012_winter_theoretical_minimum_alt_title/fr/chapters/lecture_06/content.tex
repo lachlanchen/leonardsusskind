@@ -1,0 +1,491 @@
+\chapter{Systèmes composites, intrication et singulet}
+
+\lectureoverview{Une question sur l’émission des photons met en évidence la différence entre un événement quantique et sa moyenne d’ensemble. Cette distinction conduit naturellement à la mesure, à la réduction de l’état et à la nécessité de traiter ensemble un système et son appareil de mesure. Nous construisons donc l’espace d’états produit tensoriel de deux systèmes, puis nous nous restreignons à deux spins, distinguons les états produits des états intriqués et plongeons chaque observable d’un spin dans l’espace composite. L’état singulet en fournit alors l’exemple décisif : chaque spin est localement non polarisé, mais les composantes mesurées selon un même axe sont parfaitement anticorrélées. Sa forme indépendante de la base prépare le terrain au théorème de Bell et à la distinction entre corrélation non classique et signalisation plus rapide que la lumière.}
+
+\section{Transitions discrètes d’un spin en superposition}
+
+Considérons d’abord un spin dans un champ magnétique dirigé selon l’axe \(z\). Dans des unités où \(\hbar=1\),
+\begin{equation}
+H=\frac{\omega}{2}\sigma_z,
+\qquad
+E_+=+\frac{\omega}{2},
+\qquad
+E_-=-\frac{\omega}{2}.
+\label{eq:l6-spin-hamiltonian}
+\end{equation}
+Les deux niveaux sont séparés par
+\begin{equation}
+\Delta E=E_+-E_-=\omega.
+\label{eq:l6-energy-gap}
+\end{equation}
+Lorsque le champ de rayonnement est pris en compte, un spin dans le niveau supérieur peut passer au niveau inférieur en émettant un photon d’énergie \(\omega\). Un spin déjà dans le niveau inférieur ne peut pas émettre de rayonnement pour passer vers un état de spin d’énergie plus basse.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_01.png}
+\caption{Les deux niveaux d’énergie du spin et leur écart \(\omega\), avec \(\hbar=1\).}
+\lectureframe{00:02:35}
+\end{figure}
+
+Le cas subtil est celui d’un spin préparé dans une direction transverse. Un rotor magnétique classique possède une énergie qui varie continûment, proportionnellement au cosinus de l’angle qu’il forme avec le champ. Il précesse à la fréquence angulaire \(\omega\), rayonne à cette même fréquence et s’oriente progressivement vers sa configuration d’énergie minimale. L’énergie totale rayonnée dépend continûment de l’angle initial : un rotor initialement horizontal libère deux fois moins d’énergie qu’un rotor qui commence au sommet.
+
+La mécanique quantique ne retrouve ce résultat classique qu’en moyenne. Écrivons
+\begin{equation}
+\ket{\psi}=\alpha\ket{u}+\beta\ket{d},
+\qquad
+|\alpha|^2+|\beta|^2=1,
+\label{eq:l6-superposed-spin}
+\end{equation}
+où \(\ket{u}\) et \(\ket{d}\) sont les états propres d’énergie supérieure et inférieure. La composante supérieure peut se désexciter ; la composante inférieure ne le peut pas. Ainsi,
+\begin{equation}
+P(\text{one photon})=|\alpha|^2,
+\qquad
+P(\text{no photon})=|\beta|^2.
+\end{equation}
+Si un photon est émis, son énergie est égale à l’écart complet entre les niveaux \(\omega\), et non à une fraction de celui-ci. L’énergie moyenne émise vaut néanmoins
+\begin{equation}
+\expect{E_{\rm emitted}}=|\alpha|^2\omega.
+\end{equation}
+Pour un spin orienté selon \(x\), \(|\alpha|^2=|\beta|^2=1/2\), de sorte que la moyenne vaut \(\omega/2\). Chaque événement individuel produit toujours soit un photon d’énergie \(\omega\), soit aucun photon. Le résultat classique continu concerne la moyenne d’ensemble ; chaque événement, lui, est discret.
+
+\begin{classroomqa}
+\audiencequestion{Avec quelle précision l’énergie d’un photon absorbé doit-elle correspondre à l’écart entre les niveaux ?}
+\lecturerresponse{La résonance possède une largeur de raie finie. Si l’état excité a une durée de vie \(\tau\), sa largeur caractéristique en énergie est de l’ordre de \(\Delta E\sim\hbar/\tau\). Un moment dipolaire magnétique plus grand se couple généralement plus fortement au champ de rayonnement, ce qui raccourcit la durée de vie et élargit la raie. C’est la relation d’incertitude énergie-temps sous la forme qui s’applique aux niveaux instables.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{L’émission d’un photon peut-elle elle-même servir d’appareil de mesure du spin ?}
+\lecturerresponse{Elle peut révéler qu’une désintégration a eu lieu, mais elle ne constitue pas le modèle idéal de mesure répétable dont nous avons besoin ici. Une mesure d’une composante du spin devrait laisser celui-ci dans l’état propre correspondant à la valeur enregistrée. La désintégration conduit au contraire chaque branche où un photon est émis vers le niveau inférieur ; elle n’enregistre donc pas simplement les deux valeurs possibles de l’état initial tout en préservant les états propres correspondants.}
+\end{classroomqa}
+
+\section{Réduction de l’état et nécessité d’un système composite}
+
+Entre deux interventions, l’état d’un système isolé évolue selon l’équation de Schr\"odinger. La mesure est généralement posée comme une règle supplémentaire. Soit \(L\) un observable dont les vecteurs propres orthonormés sont \(\ket{\lambda_i}\), et développons l’état sous la forme
+\begin{equation}
+\ket{\psi}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+L\ket{\lambda_i}=\lambda_i\ket{\lambda_i}.
+\label{eq:l6-measurement-expansion}
+\end{equation}Une mesure donne une valeur \(\lambda_k\) avec une probabilité \(|\alpha_k|^2\), après quoi l’état est
+\begin{equation}
+\ket{\psi}\longrightarrow\ket{\lambda_k}.
+\label{eq:l6-collapse}
+\end{equation}La disparition des autres composantes de la description après la mesure est appelée réduction de l’état.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_02.png}
+\caption{État développé dans la base propre de l’observable \(L\), avant la sélection d’un résultat.}
+\lectureframe{00:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-ce qui pose problème dans la règle de réduction ?}
+\lecturerresponse{Comme règle opérationnelle de prédiction des résultats de mesure, elle ne pose aucun problème. La tension conceptuelle vient du fait qu’un appareil est lui-même un système physique. Si l’objet et l’appareil obéissent tous deux à la mécanique quantique, pourquoi leur interaction devrait-elle nécessiter une seconde loi dynamique en plus de l’évolution unitaire de Schr\"odinger ? Nous choisissons ici de décrire l’objet et l’appareil comme un seul système quantique plus vaste.}
+\end{classroomqa}
+
+La frontière nette entre le système et l’appareil de mesure a été au cœur d’un débat historique. Au lieu de trancher ce débat par décret, nous allons d’abord apprendre à combiner des systèmes quantiques. Une fois l’espace d’états combiné construit, nous pourrons étudier la mesure comme une interaction qui corrèle le système et l’appareil. La question mathématique immédiate est donc la suivante :
+\begin{quote}Étant donné deux systèmes quantiques, quel est l’espace d’états de leur ensemble ?
+\end{quote}
+
+\section{L’espace d’états produit tensoriel}
+
+Appelons les systèmes \(A\) et \(I\), et leurs espaces de Hilbert \(\mathcal S_A\) et \(\mathcal S_I\). Leur espace composite est
+\begin{equation}
+\mathcal S_{AI}=\mathcal S_A\otimes\mathcal S_I.
+\label{eq:l6-tensor-space}
+\end{equation}Choisissons des bases orthonormées \(\{\ket{a}\}\) et \(\{\ket{i}\}\) pour les deux facteurs. Associons chaque vecteur de base du premier système à chaque vecteur de base du second :
+\begin{equation}
+\ket{a}\otimes\ket{i}\equiv\ket{a\,i}.
+\end{equation}Si les espaces des facteurs sont de dimensions \(D_A\) et \(D_I\), alors
+\begin{equation}
+\dim\mathcal S_{AI}=D_A D_I.
+\end{equation}Le produit scalaire se factorise :
+\begin{equation}
+\braket{b\,j}{a\,i}
+=\braket{b}{a}\braket{j}{i}
+=\delta_{ba}\delta_{ji}.
+\label{eq:l6-tensor-inner-product}
+\end{equation}Ainsi, deux états de base composites sont orthogonaux dès que leurs étiquettes diffèrent pour l’un ou l’autre des sous-systèmes.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}
+\caption{Espaces d’états distincts, leur produit tensoriel et la base orthonormée formée des paires de vecteurs.}
+\lectureframe{00:24:05}
+\end{figure}
+
+Les vecteurs de base obtenus par paires ne constituent pas à eux seuls tout l’espace. Leur enveloppe linéaire complète est :
+\begin{equation}
+\ket{\Psi}=\sum_{a,i}c_{ai}\ket{a\,i},
+\qquad
+\sum_{a,i}|c_{ai}|^2=1.
+\label{eq:l6-general-tensor-state}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{\(\ket{a}\) et \(\ket{i}\) sont-ils des vecteurs arbitraires ?}
+\lecturerresponse{Ici, ce sont des éléments des bases orthonormées choisies. On peut utiliser n’importe quelle base orthonormée dans chacun des facteurs. Associer ces vecteurs de base construit une base orthonormée de l’espace composite ; les vecteurs arbitraires s’obtiennent ensuite par combinaisons linéaires, comme dans l’équation~\eqref{eq:l6-general-tensor-state}.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le produit tensoriel dépend-il des bases choisies ?}
+\lecturerresponse{Sa description en coordonnées en dépend, mais pas l’espace lui-même. Un changement de base dans l’un ou l’autre sous-système ne fait que changer la base induite utilisée pour décrire les mêmes vecteurs dans \(\mathcal S_A\otimes\mathcal S_I\).}
+\end{classroomqa}
+
+\section{Deux spins et états produits}
+
+Considérons maintenant deux spins. Désignons les composantes du premier par \(\sigma_x,\sigma_y,\sigma_z\) et celles du second par \(\tau_x,\tau_y,\tau_z\). Dans une base \(z\), la base composite est
+\begin{equation}
+\ket{uu},\qquad \ket{ud},\qquad \ket{du},\qquad \ket{dd}.
+\label{eq:l6-two-spin-basis}
+\end{equation}Le premier emplacement se rapporte toujours à \(\sigma\), le second à \(\tau\). Un état général s’écrit
+\begin{equation}
+\ket{\Psi}
+=c_{uu}\ket{uu}+c_{ud}\ket{ud}
++c_{du}\ket{du}+c_{dd}\ket{dd}.
+\label{eq:l6-general-two-spin}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Si les deux spins interagissent, les vecteurs de base eux-mêmes changent-ils ?}
+\lecturerresponse{Aucune base fixe n’est nécessaire pour suivre l’évolution. Dans la base choisie, l’interaction modifie les coefficients \(c_{ab}(t)\), et non la définition de \(\ket{uu},\ket{ud},\ket{du},\ket{dd}\). Un état qui commence sous la forme \(\ket{uu}\) peut évoluer vers une superposition, voire vers \(\ket{dd}\), tandis que la base de coordonnées reste inchangée.}
+\end{classroomqa}
+
+La construction doit aussi satisfaire à un test de cohérence. Si les spins sont très éloignés et que seul \(\sigma\) est examiné, les prédictions doivent être conformes à la théorie du spin unique élaborée avant l’introduction de \(\tau\). Les produits tensoriels sont conçus pour préserver cette théorie locale.
+
+Certains états à deux spins décrivent des spins préparés indépendamment. Par exemple, soit
+\begin{equation}
+\ket{R}=\frac{\ket{u}+\ket{d}}{\sqrt2}
+\end{equation}l’état propre de valeur propre \(+1\) de la composante \(x\). Alors,
+\begin{equation}
+\ket{u}_{\sigma}\otimes\ket{R}_{\tau}
+=\frac{\ket{uu}+\ket{ud}}{\sqrt2}.
+\label{eq:l6-up-right-product}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on préparer les deux facteurs selon des axes différents ?}
+\lecturerresponse{Oui. Chaque facteur peut être n’importe quel état d’un spin. L’équation~\eqref{eq:l6-up-right-product} décrit le premier spin dans un état défini selon \(z\) et le second dans un état défini selon \(x\). Développer le second facteur dans la base \(z\) ne fait que réécrire le même état produit dans la base composite.}
+\end{classroomqa}
+
+L’état produit le plus général est
+\begin{align}
+\ket{\Psi_{\rm prod}}
+&=(\alpha_u\ket{u}+\alpha_d\ket{d})
+\otimes(\beta_u\ket{u}+\beta_d\ket{d})\\
+&=\alpha_u\beta_u\ket{uu}
++\alpha_u\beta_d\ket{ud}
+\\
+&\quad
++\alpha_d\beta_u\ket{du}
++\alpha_d\beta_d\ket{dd}.
+\label{eq:l6-product-expansion}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_04.png}
+\caption{État à deux spins factorisé, développé dans la base composite à quatre états.}
+\lectureframe{00:37:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Quel type de produit de vecteurs apparaît dans l’équation~\eqref{eq:l6-product-expansion} ?}
+\lecturerresponse{L’espace ambiant est le produit tensoriel des deux espaces de Hilbert. Un vecteur qui se factorise lui-même en un vecteur de chacun de ces espaces est appelé état produit ou tenseur simple. La plupart des vecteurs d’un espace produit tensoriel sont des sommes de tels produits et ne peuvent pas s’écrire sous la forme d’un produit unique.}
+\end{classroomqa}
+
+La contrainte se voit directement sur les coefficients :
+\begin{equation}
+c_{uu}c_{dd}=c_{ud}c_{du}
+\qquad\text{for every product state}.
+\label{eq:l6-rank-one-condition}
+\end{equation}De façon équivalente, la matrice des coefficients \(2\times2\) est de rang un. Le décompte des paramètres mène à la même conclusion. Quatre coefficients complexes représentent huit paramètres réels ; la normalisation en élimine un et la phase globale sans effet physique en élimine un autre, ce qui en laisse six pour un état pur général à deux spins. Chaque état pur d’un spin nécessite deux paramètres réels ; deux spins spécifiés séparément n’en nécessitent donc que quatre. Les états produits forment ainsi un sous-ensemble particulier à quatre paramètres de l’espace des états à deux spins, qui en compte six. Les autres états sont intriqués.
+
+\section{Observables locales dans l’espace composite}
+
+Les observables familières d’un spin doivent subsister au sein du système plus vaste. Plus explicitement,
+\begin{equation}
+\sigma_m\equiv\sigma_m\otimes I,
+\qquad
+\tau_n\equiv I\otimes\sigma_n,
+\qquad
+m,n\in\{x,y,z\}.
+\label{eq:l6-local-operators}
+\end{equation}La notation abrégée ne pose aucun problème dès lors que la convention sur les emplacements est fixée. En utilisant
+\begin{equation}
+\begin{aligned}
+\sigma_x&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.4em]
+\sigma_y&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.4em]
+\sigma_z&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\end{aligned}
+\end{equation}les opérateurs du premier spin agissent tandis que l’étiquette du second reste spectatrice :
+\begin{align}
+\sigma_x\ket{u\,i}&=\ket{d\,i},
+&
+\sigma_x\ket{d\,i}&=\ket{u\,i},\\
+\sigma_z\ket{u\,i}&=\ket{u\,i},
+&
+\sigma_z\ket{d\,i}&=-\ket{d\,i}.
+\end{align}Pour le second spin, c’est la première étiquette qui reste spectatrice :
+\begin{align}
+\tau_x\ket{a\,u}&=\ket{a\,d},
+&
+\tau_x\ket{a\,d}&=\ket{a\,u},\\
+\tau_z\ket{a\,u}&=\ket{a\,u},
+&
+\tau_z\ket{a\,d}&=-\ket{a\,d}.
+\label{eq:l6-spectator-action}
+\end{align}La composante selon \(y\) inverse elle aussi l’emplacement sur lequel elle agit, avec \(\sigma_y\ket{u}=i\ket{d}\) et \(\sigma_y\ket{d}=-i\ket{u}\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_05.png}
+\caption{Table d’action sur le second spin : le premier indice reste spectateur.}
+\lectureframe{00:47:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{L’application de \(\sigma_x\) signifie-t-elle qu’une mesure de \(x\) a eu lieu, et pourquoi le résultat n’est-il pas une superposition ?}
+\lecturerresponse{L’action d’un opérateur n’est pas en soi une mesure. Le produit de la matrice \(\sigma_x\) par le vecteur de base de \(z\) \(\ket{u}\) donne \(\ket{d}\). Il ne s’agit pas d’une équation aux valeurs propres : sous l’action de l’opérateur, un vecteur propre conserverait sa direction. En effet, \(\ket{u}\) est transformé en un état orthogonal, ce qui permet aussi de comprendre pourquoi une mesure de \(x\) sur un état propre de \(z\) donne un résultat entièrement aléatoire. L’application de l’opérateur à un vecteur qui n’est pas un vecteur propre constitue généralement une étape algébrique intermédiaire, dont le sens physique dépend de la grandeur complète que l’on calcule.}
+\end{classroomqa}
+
+Les opérateurs agissant sur des facteurs différents commutent. Par exemple,
+\begin{equation}
+\sigma_x\tau_x\ket{uu}
+=\ket{dd}
+=\tau_x\sigma_x\ket{uu}.
+\end{equation}La même égalité vaut pour chaque vecteur de la base composite, et donc pour tout état :
+\begin{equation}
+[\sigma_m,\tau_n]=0
+\qquad\text{for all }m,n.
+\label{eq:l6-local-commutation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_06.png}
+\caption{Les actions sur des emplacements distincts donnent le commutateur nul \([\sigma_x,\tau_x]\).}
+\lectureframe{00:56:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi vérifier l’action sur un seul vecteur de base ne suffit-il pas encore à prouver que deux opérateurs commutent ?}
+\lecturerresponse{L’égalité de deux opérateurs exige qu’ils agissent de la même façon sur chaque vecteur. Il suffit de vérifier leur action sur chaque vecteur d’une base, car la linéarité étend alors le résultat à toute superposition. Pour des opérateurs locaux, le raisonnement est immédiat sur les quatre vecteurs de base : chaque opérateur modifie un emplacement différent, de sorte que l’ordre des opérations est sans effet.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Existe-t-il des observables qui appartiennent véritablement au système des deux spins ?}
+\lecturerresponse{Oui. Des produits comme \(\sigma_x\tau_x\), \(\sigma_x\tau_y\), ainsi que des combinaisons linéaires de tels produits, sondent des propriétés conjointes. Les observables locales décrivent chaque facteur ; les observables de corrélation révèlent les relations entre les facteurs.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Des états produits préparés indépendamment sont-ils déjà intriqués ?}
+\lecturerresponse{Non. Dans un état produit, chaque facteur possède son propre vecteur d’état et les valeurs moyennes locales se factorisent. L’intrication apparaît lorsque l’état composite ne peut pas être séparé en un état pour \(\sigma\) et un état pour \(\tau\).}
+\end{classroomqa}
+
+\section{L’état singulet}
+
+Un exemple d’intrication maximale est
+\begin{equation}
+\ket{S}
+=\frac{1}{\sqrt2}\bigl(\ket{ud}-\ket{du}\bigr).
+\label{eq:l6-singlet}
+\end{equation}Les deux termes montrent déjà une anticorrélation parfaite selon \(z\) : chaque fois qu’un spin est orienté vers le haut, l’autre l’est vers le bas. Le point essentiel est qu’on ne peut attribuer à aucun des deux spins un état pur qui lui serait propre.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_07.png}
+\caption{État antisymétrique à deux spins qui sera identifié comme le singulet.}
+\lectureframe{01:09:25}
+\end{figure}
+
+Pour tout état pur d’un spin, il existe un vecteur unitaire \(\bm n\) tel que
+\begin{equation}
+(\bm\sigma\cdot\bm n)\ket{\psi}=\ket{\psi}.
+\end{equation}De façon équivalente, le vecteur de Bloch
+\begin{equation}
+\bm r
+=\bigl(\expect{\sigma_x},\expect{\sigma_y},\expect{\sigma_z}\bigr)
+\end{equation}est de norme un pour un état pur d’un spin. Ses trois composantes ne peuvent donc pas être toutes nulles. Une fois l’état donné, orienter le détecteur selon \(\bm r\) donne le résultat \(+1\) avec certitude. Les exemples familiers sont \(z\) pour \(\ket{u}\), \(x\) pour \((\ket{u}+\ket{d})/\sqrt2\), et l’une des directions \(y\) pour \((\ket{u}+i\ket{d})/\sqrt2\).
+
+Calculons maintenant une valeur moyenne locale dans l’état singulet :
+\begin{align}
+\expect{\sigma_z}_S
+&=\frac12
+(\bra{ud}-\bra{du})\sigma_z
+(\ket{ud}-\ket{du})\\
+&=\frac12
+(\bra{ud}-\bra{du})
+(\ket{ud}+\ket{du})\\
+&=0.
+\end{align}Pour \(\sigma_x\),
+\begin{equation}
+\sigma_x\ket{S}
+=\frac{\ket{dd}-\ket{uu}}{\sqrt2},
+\end{equation}qui est orthogonal à \(\ket{S}\) ; par conséquent, \(\expect{\sigma_x}_S=0\). Les phases apportées par \(\sigma_y\) ne changent pas cette orthogonalité, d’où
+\begin{equation}
+\expect{\sigma_x}_S
+=\expect{\sigma_y}_S
+=\expect{\sigma_z}_S=0.
+\label{eq:l6-zero-local-sigma}
+\end{equation}Par symétrie,
+\begin{equation}
+\expect{\tau_x}_S
+=\expect{\tau_y}_S
+=\expect{\tau_z}_S=0.
+\label{eq:l6-zero-local-tau}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_08.png}
+\caption{Le tableau consigne l’annulation des valeurs moyennes locales du spin et l’inversion de la composante \(y\) utilisée pour achever la vérification.}
+\lectureframe{01:14:20}
+\end{figure}
+
+L’état global des deux spins est pur et parfaitement connu, mais chaque partie est localement non polarisée. Comme aucun état pur d’un spin n’a de vecteur de Bloch nul, \(\ket{S}\) ne peut pas être un état produit.
+
+\begin{classroomqa}
+\audiencequestion{Un état produit ordinaire possède-t-il tout de même une direction selon laquelle la polarisation locale est non nulle ?}
+\lecturerresponse{Oui. La démonstration pour un spin s’applique au facteur considéré, tandis que l’autre facteur reste spectateur. Chaque facteur d’un état produit pur possède donc un vecteur de Bloch unitaire. L’état singulet ne vérifie cette propriété d’état produit pour aucun des deux spins.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Comment peut-on préparer deux spins dans l’état singulet ?}
+\lecturerresponse{Un couplage qui favorise l’antiparallélisme peut faire du singulet l’état de plus basse énergie. On met les spins en interaction et on laisse la paire céder de l’énergie à son environnement ; elle peut alors se relaxer vers l’état singulet. Cela dépend de l’interaction. Pour le Hamiltonien antiferromagnétique isotrope \(H_{\rm int}=J\,\bm\sigma\cdot\bm\tau\) avec \(J>0\), le singulet est situé en dessous des trois états triplets.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Combien de temps dure cette relaxation ?}
+\lecturerresponse{L’échelle de temps dépend de la séparation des spins, de l’intensité de leur couplage mutuel, de leurs moments magnétiques et de leur couplage à l’environnement électromagnétique qui emporte l’énergie. Un couplage plus fort entraîne généralement une relaxation plus rapide.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi la combinaison antisymétrique peut-elle avoir une énergie inférieure à celle de la combinaison symétrique ?}
+\lecturerresponse{Pour des particules de spin \(\tfrac12\), l’état antisymétrique a un spin total nul, tandis que les trois états symétriques forment un triplet de spin total un. Une interaction proportionnelle à \(+\bm\sigma\cdot\bm\tau\) attribue la valeur propre \(-3\) au singulet et \(+1\) au triplet ; un couplage positif place donc le singulet plus bas en énergie. D’autres Hamiltoniens ne sont pas tenus de classer les niveaux dans le même ordre.}
+\end{classroomqa}
+
+\subsection{Le même état dans toute base de spin}
+
+L’intrication ne disparaît pas lorsqu’on choisit une base locale plus commode. L’entropie d’intrication, que nous étudierons plus tard, en fournit une mesure indépendante de la base. Le singulet manifeste une symétrie encore plus forte. Avec
+\begin{equation}
+\ket{u}=\frac{\ket{R}+\ket{L}}{\sqrt2},
+\qquad
+\ket{d}=\frac{\ket{R}-\ket{L}}{\sqrt2},
+\end{equation}la substitution dans l’équation~\eqref{eq:l6-singlet} donne
+\begin{equation}
+\ket{S}
+=\frac{\ket{LR}-\ket{RL}}{\sqrt2}.
+\label{eq:l6-singlet-x-basis}
+\end{equation}Dans toute base de spin orthonormée commune \(\{\ket{\rm in},\ket{\rm out}\}\),
+\begin{equation}
+\ket{S}
+=\frac{\ket{{\rm in}\,{\rm out}}-\ket{{\rm out}\,{\rm in}}}{\sqrt2},
+\label{eq:l6-singlet-any-basis}
+\end{equation}à une phase globale sans effet physique près. Sous une rotation commune, les trois états triplets se mélangent entre eux ; le secteur singulet, qui est de dimension un, ne peut que se reproduire lui-même.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_09.png}
+\caption{Le motif antisymétrique subsiste lorsque l’on passe de la base haut-bas à la base droite-gauche ou à d’autres bases de spin communes.}
+\lectureframe{01:21:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{L’intrication est-elle simplement un artefact de la base choisie pour écrire l’état ?}
+\lecturerresponse{Non. Les changements de base locaux modifient les coefficients, mais pas le fait que l’état se factorise ou non ; l’entropie d’intrication quantifie cette propriété invariante. Pour le singulet, les rotations communes rendent cette invariance particulièrement visible : sa forme antisymétrique est reproduite dans toute base de spin.}
+\end{classroomqa}
+
+\section{Observables de corrélation}
+
+Les valeurs moyennes locales s’annulent ; l’information portée par le singulet doit donc résider dans les observables conjointes. Commençons par
+\begin{equation}
+\sigma_z\tau_z\ket{ud}=-\ket{ud},
+\qquad
+\sigma_z\tau_z\ket{du}=-\ket{du}.
+\end{equation}Par conséquent,
+\begin{equation}
+\sigma_z\tau_z\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_z\tau_z}_S=-1.
+\label{eq:l6-zz-correlation}
+\end{equation}Le résultat n’est pas une simple moyenne : le singulet est un état propre du produit. Les mesures selon \(z\) d’une même composante donnent donc toujours des signes opposés.
+
+Les deux opérateurs \(x\) inversent leur emplacement d’action :
+\begin{equation}
+\sigma_x\tau_x\ket{ud}=\ket{du},
+\qquad
+\sigma_x\tau_x\ket{du}=\ket{ud}.
+\end{equation}L’échange des deux termes inverse l’état antisymétrique :
+\begin{equation}
+\sigma_x\tau_x\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_x\tau_x}_S=-1.
+\end{equation}De la même manière, les deux phases dues aux opérateurs \(y\) s’annulent, ce qui donne
+\begin{equation}
+\expect{\sigma_y\tau_y}_S=-1.
+\end{equation}En revanche, la valeur moyenne de composantes cartésiennes différentes est nulle. Par exemple,
+\begin{equation}
+\sigma_x\tau_z\ket{S}
+=-\frac{\ket{dd}+\ket{uu}}{\sqrt2},
+\qquad
+\expect{\sigma_x\tau_z}_S=0.
+\end{equation}Tous ces résultats se résument ainsi :
+\begin{equation}
+\expect{\sigma_m\tau_n}_S=-\delta_{mn},
+\qquad
+\expect{(\bm\sigma\cdot\bm a)(\bm\tau\cdot\bm b)}_S
+=-\bm a\cdot\bm b.
+\label{eq:l6-singlet-correlation-tensor}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_10.png}
+\caption{Le calcul des corrélations donne \(\expect{\sigma_x\tau_x}=-1\) et le résultat pour des axes différents \(\expect{\sigma_x\tau_z}=0\).}
+\lectureframe{01:32:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Que signifie physiquement le produit de deux observables ? Effectue-t-on l’une des mesures après l’autre ?}
+\lecturerresponse{En général, le produit hermitien de deux observables est une autre observable de l’espace composite. Ici, chaque \(\sigma_m\) commute avec chaque \(\tau_n\) ; les deux composantes locales peuvent donc être mesurées simultanément, puis leurs résultats numériques multipliés. L’opérateur produit regroupe ce résultat conjoint ; aucun ordre temporel n’est requis.}
+\end{classroomqa}
+
+Pour un état produit, les valeurs moyennes conjointes se factorisent :
+\begin{equation}
+\expect{\sigma_m\tau_n}_{\rm prod}
+=\expect{\sigma_m}_{\sigma}\expect{\tau_n}_{\tau}.
+\end{equation}Le singulet viole cette factorisation de façon maximale. Chacun des facteurs du membre de droite serait nul, alors qu’un produit selon un même axe dans le membre de gauche vaut \(-1\). Pris individuellement, les spins sont complètement aléatoires ; conjointement, leurs composantes selon un même axe sont certainement opposées.
+
+\begin{classroomqa}
+\audiencequestion{Toute interaction entre deux spins produit-elle de l’intrication ?}
+\lecturerresponse{Un couplage générique peut intriquer un état initialement factorisé, et de nombreuses interactions ordinaires le font. Ce n’est pas inévitable au sens strict : un état propre produit choisi spécialement peut seulement acquérir une phase, et un Hamiltonien purement local ne peut pas intriquer les facteurs. Ce qui compte, c’est un couplage non trivial agissant sur un état qu’il ne préserve pas comme état produit.}
+\end{classroomqa}
+
+\section{De la corrélation à la question de Bell}
+
+Une anticorrélation parfaite n’a rien de paradoxal en soi. Imaginons que l’on place une pièce de un centime et une pièce de dix centimes dans une poche, que l’on distribue à l’aveugle l’une à Alice et l’autre à Bob, puis qu’on les envoie très loin l’un de l’autre. Lorsqu’Alice voit quelle pièce elle a, elle sait aussitôt quelle pièce a Bob. La corrélation s’est établie lorsque les pièces étaient ensemble ; connaître un résultat n’envoie aucun signal vers l’autre lieu.
+
+Le singulet partage cette caractéristique élémentaire, mais il ajoute une liberté cruciale : Alice et Bob peuvent choisir n’importe quelles directions de mesure, et la mécanique quantique prédit la corrélation continûment variable \(-\bm a\cdot\bm b\). Le théorème de Bell demande si toutes ces corrélations peuvent provenir de consignes classiques locales transportées à l’avance par les particules.
+
+\begin{classroomqa}
+\audiencequestion{Est-ce l’état utilisé dans le théorème de Bell ?}
+\lecturerresponse{Oui. Les arguments de type Bell utilisent des paires intriquées comme le singulet, et non un état produit défini \(\ket{ud}\). La distinction est importante : un état produit fournit des descriptions locales séparées, tandis que le singulet porte une structure de corrélation inséparable, quelle que soit la base commune.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi qualifier l’anticorrélation de statistique si les résultats selon un même axe sont toujours opposés ?}
+\lecturerresponse{Chaque résultat local est aléatoire : Alice ne peut pas prédire si elle obtiendra \(+1\) ou \(-1\). La relation conditionnelle est exacte : dès qu’un résultat selon un même axe est connu, l’autre est fixé et lui est opposé. La corrélation concerne la distribution conjointe, et non une incertitude sur le produit des résultats selon un même axe.}
+\end{classroomqa}
+
+La simulation permet de préciser utilement la question. Un seul ordinateur classique peut imiter toutes les expériences effectuées sur un spin : il stocke son état, le fait évoluer selon l’équation de Schr\"odinger, calcule les probabilités demandées et utilise un générateur de nombres aléatoires pour sélectionner un résultat. Il peut ainsi reproduire les mesures répétées et la précession magnétique.
+
+Répartissons maintenant une paire intriquée entre deux ordinateurs classiques. Laissons-les interagir pendant la préparation de la paire, puis déconnectons-les et choisissons indépendamment les directions de mesure en des lieux éloignés. Aucune paire de programmes classiques locaux séparés, même dotés d’aléa partagé fixé à l’avance, ne peut reproduire les corrélations quantiques pour tous les choix de directions. Une simulation classique globale est possible, mais elle doit conserver l’accès à l’état conjoint ou coordonner autrement les deux côtés d’une manière qui ne correspond pas à un modèle local à variables cachées.
+
+Cet échec d’une description classique locale ne fournit pas de canal de communication plus rapide que la lumière. Les résultats locaux d’Alice restent aléatoires ; elle ne peut donc pas contrôler un message que Bob pourrait lire sans comparer ultérieurement leurs relevés. La terminologie relative à la non-localité varie, mais la distinction opérationnelle est ferme : les corrélations de Bell excluent les explications classiques locales tout en préservant l’absence de signalisation.
+
+La construction de l’état composite a donc fait apparaître quelque chose de véritablement nouveau. Les produits tensoriels préservent localement l’ancienne physique du spin unique, mais leurs vecteurs génériques ne peuvent pas être décomposés en états séparés. Dans le singulet, toute polarisation locale s’annule, tandis que les composantes conjointes du spin présentent une anticorrélation parfaite, indépendante de la base. L’étape suivante consiste à transformer cette structure en un test quantitatif du raisonnement classique proposé par Bell.

@@ -1,0 +1,564 @@
+\chapter{Récurrence, ordre hors équilibre et spins d’Ising}
+
+\lectureoverview{Un gaz libéré dans une moitié d’une pièce évolue rapidement vers l’équilibre, mais la mécanique réversible implique qu’une évolution suffisamment longue doit aussi ramener le système à l’état exceptionnel. Nous estimons ce temps de retour à partir du volume dans l’espace des phases, distinguons la récurrence du début de l’Univers à faible entropie qui reste inexpliqué, puis nous nous servons du paradoxe qui en résulte pour parler des cerveaux de Boltzmann, de la cohérence de l’histoire et de la vie entretenue par un flux d’énergie. Nous passons ensuite à l’ordre magnétique. Un ensemble de spins indépendants à deux états constitue un premier modèle exactement soluble : le dénombrement combinatoire détermine la fonction de partition et l’aimantation est une tangente hyperbolique. Les interactions entre voisins rétablissent finalement une symétrie haut--bas et conduisent au modèle d’Ising à une dimension.}
+
+\section{Une pièce pleine d’air qui finit par revenir à son état initial}
+
+Supposons d’abord que tout l’air se trouve dans la moitié gauche d’une pièce. On peut préparer cet état au moyen d’une cloison : on évacue la moitié droite, on place l’air à gauche, puis on retire la cloison. Le gaz se répand rapidement dans toute la pièce et s’approche de l’équilibre thermique. L’entropie augmente. Rien d’étonnant à cela.
+
+Laissons maintenant la pièce fermée et attendons. Obtenir une suite d’un million de faces consécutives est extraordinairement improbable lors d’un lancer de pièce, mais une expérience répétée indéfiniment finit par produire des suites tout aussi improbables. Le même raisonnement s’applique au gaz. À un moment très lointain, toutes ses molécules se retrouveront de nouveau dans la moitié gauche, ou dans une région tout aussi particulière. Un tel retour est une récurrence de Poincaré.
+
+Le théorème précis est un peu plus nuancé que cette image. Pour une région de mesure finie de l’espace des phases dont la dynamique préserve le volume de phase, presque tout point initial revient arbitrairement près de son point de départ. Une affirmation macroscopique telle que \emph{toutes les molécules sont dans la moitié gauche} est plus simple : il suffit que la trajectoire repasse dans une région finie définie à gros grain ; les coordonnées de chaque molécule n’ont pas à retrouver exactement leurs valeurs initiales. La question pratique est de savoir combien de temps cela prend.
+
+\subsection{Un point de phase de grande dimension}
+
+Pour \(N\) particules classiques, l’espace des phases possède \(6N\) coordonnées :
+\begin{equation}
+ \Gamma=(\bm x_1,\ldots,\bm x_N;\bm p_1,\ldots,\bm p_N).
+ \label{eq:sm8-phase-point}
+\end{equation}
+Les positions sont bornées par les dimensions de la pièce. À énergie totale fixée, les moments le sont également, car aucune particule ne peut avoir un moment arbitrairement grand sans porter une énergie tout aussi arbitrairement grande. Sous les hypothèses de l’argument de récurrence, la surface d’énergie accessible a donc une mesure finie.
+
+Le point de phase évolue de manière déterministe, mais le mouvement d’un gaz à plusieurs corps est chaotique. Des trajectoires proches divergent rapidement, comme lors d’une succession de collisions entre boules de billard. Après un passage au gros grain, une longue trajectoire semble errer dans toute la région accessible.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_02.png}
+\caption{Une région schématique de l’espace des phases et une trajectoire complexe qui y erre. Le dessin est volontairement de faible dimension ; le gaz réel évolue dans un espace de dimension \(6N\).}
+\lectureframe{00:06:41}
+\end{figure}
+
+Le schéma de faible dimension nous incite aussitôt à commettre une erreur. Si l’état particulier occupait la moitié du rectangle représenté, on pourrait croire que le gaz devrait y passer la moitié de son temps. Or la condition \emph{toutes les molécules sont dans la moitié gauche} contraint chaque coordonnée de position, et pas seulement une coordonnée du point de phase.
+
+Considérons seulement deux particules se déplaçant dans une dimension spatiale, de coordonnées \(x_1\) et \(x_2\). Leur espace des configurations est un carré. La condition \(x_1<L/2\) en sélectionne la moitié ; imposer à la fois \(x_1<L/2\) et \(x_2<L/2\) en sélectionne un quart :
+\begin{equation}
+ P_2=\frac{1}{2}\frac{1}{2}=\frac{1}{4}.
+ \label{eq:sm8-two-particle-quarter}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_07.png}
+\caption{Pour deux particules en une dimension, le petit carré représente les configurations où les deux coordonnées se trouvent dans la moitié choisie de la pièce.}
+\lectureframe{00:07:08}
+\end{figure}
+
+Pour trois particules, on obtient \(1/2^3\), et pour \(N\) particules, on obtient
+\begin{equation}
+ P_{\mathrm{half}}(N)
+ =\left(\frac{1}{2}\right)^N.
+ \label{eq:sm8-half-probability}
+\end{equation}
+C’est l’exposant qui compte. Un facteur d’un demi est banal ; un demi élevé à un nombre macroscopique de particules dépasse l’intuition ordinaire.
+
+\begin{classroomqa}
+\audiencequestion{La réponse devrait-elle être \(1/3^N\), puisque les molécules ont aussi d’autres directions spatiales ?}
+\lecturerresponse{Tout dépend de la condition imposée. Si l’on demande seulement si chaque particule se trouve à gauche de la cloison, chaque particule doit satisfaire une condition binaire et la réponse est \(2^{-N}\). Contraindre une autre fraction indépendante de l’espace des positions accessible introduirait un facteur supplémentaire.
+\lecturetimestamp{00:07:47--00:08:05}}
+\end{classroomqa}
+
+\section{Volume de phase, entropie et échelle de récurrence}
+
+On peut formuler la même estimation sans parler de moitiés. Soit \(V\) le volume spatial ordinaire de la pièce et \(v\) celui d’une région plus petite où l’on exige que chaque molécule se trouve. En négligeant les facteurs liés aux moments, qui sont communs aux deux macroétats, les volumes de l’espace des configurations accessibles sont
+\begin{equation}
+ \Omega_{\mathrm{room}}\propto V^N,
+ \qquad
+ \Omega_{\mathrm{small}}\propto v^N.
+ \label{eq:sm8-config-volumes}
+\end{equation}
+La fraction du temps passé dans le petit macroétat à long terme est donc
+\begin{equation}
+ P(v)
+ =\frac{\Omega_{\mathrm{small}}}{\Omega_{\mathrm{room}}}
+ =\left(\frac{v}{V}\right)^N.
+ \label{eq:sm8-volume-ratio}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_08.png}
+\caption{Représentation générale au tableau des volumes de phase : une petite région \(v^N\) à l’intérieur d’une région accessible \(V^N\), avec le rapport \(v^N/V^N\).}
+\lectureframe{00:10:44}
+\end{figure}
+
+Dans des unités telles que \(k_B=1\), l’entropie est le logarithme du volume de phase accessible. Si \(S_A=\log\Omega_A\) est l’entropie du macroétat contraint et \(S_{\rm eq}=\log\Omega_{\rm eq}\) celle de l’équilibre, alors
+\begin{equation}
+ \begin{aligned}
+ P(A)
+ &=\frac{\Omega_A}{\Omega_{\rm eq}}\\
+ &=\exp\!\left(S_A-S_{\rm eq}\right)\\
+ &=e^{-\Delta S},\\
+ \Delta S&=S_{\rm eq}-S_A.
+ \end{aligned}
+ \label{eq:sm8-entropy-probability}
+\end{equation}
+Pour l’état où toutes les molécules sont dans la moitié de la pièce, \(\Delta S=N\log 2\), et \eqref{eq:sm8-entropy-probability} se réduit exactement à \(2^{-N}\). L’abréviation \(P\sim e^{-S_{\rm eq}}\) ne convient que si l’entropie de la région particulière est prise comme référence fixe ; l’exposant physiquement pertinent est le déficit d’entropie \(\Delta S\).
+
+\begin{classroomqa}
+\audiencequestion{S’agit-il du volume de l’espace des configurations plutôt que de l’espace des phases entier ?}
+\lecturerresponse{Pour cette comparaison, oui. Nous imposons une condition sur les positions tout en maintenant la même distribution des moments à la même température ; le facteur commun de l’espace des moments s’élimine donc. Un énoncé général de la récurrence porte sur l’espace des phases ; cette probabilité particulière se calcule à partir du rapport des volumes de l’espace des configurations.
+\lecturetimestamp{00:11:21--00:11:40}}
+\end{classroomqa}
+
+Supposons que le système perde la mémoire de la position détaillée des molécules au bout d’un temps microscopique de corrélation ou de mélange \(\tau_{\rm mix}\). On rencontrera alors une région rare de probabilité \(P(A)\) au bout d’un temps de l’ordre de
+\begin{equation}
+ \tau_{\rm rec}
+ \sim \frac{\tau_{\rm mix}}{P(A)}
+ \sim \tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-recurrence-time-general}
+\end{equation}
+Pour la condition portant sur la moitié de la pièce,
+\begin{equation}
+ \tau_{\rm rec}\sim\tau_{\rm mix}2^N.
+ \label{eq:sm8-recurrence-time-half}
+\end{equation}
+Le cours adopte volontairement une estimation grossière, de l’ordre de la taille d’une pièce, \(N\sim10^{30}\), ce qui donne l’échelle frappante
+\(\tau_{\rm rec}/\tau_{\rm mix}\sim2^{10^{30}}\). À la densité atmosphérique ordinaire, une pièce contient plutôt environ \(10^{27}\) molécules, mais remplacer \(10^{30}\) par \(10^{27}\) ne change rien à la conclusion : le temps de récurrence reste inconcevablement supérieur à l’âge de l’Univers.
+
+\begin{classroomqa}
+\audiencequestion{Dans quelles unités mesure-t-on le temps de récurrence ? Le passage des secondes aux heures, ou à une unité extrêmement brève, pourrait-il changer la conclusion ?}
+\lecturerresponse{Le facteur dimensionné est \(\tau_{\rm mix}\) ; le nombre immense est le rapport sans dimension \(\tau_{\rm rec}/\tau_{\rm mix}\). Passer des secondes aux heures revient à diviser par un facteur de conversion ordinaire, négligeable devant \(2^{10^{30}}\). En revanche, la durée d’une visite dans le coin dépend bien des vitesses moléculaires. L’estimation porte sur la rareté du début de cette visite. Il existe aussi un théorème de récurrence quantique, mais nous n’en avons pas besoin ici.
+\lecturetimestamp{00:17:24--00:19:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{À quoi bon calculer un temps qu’aucune expérience ne pourrait attendre ?}
+\lecturerresponse{L’intérêt est conceptuel. Cela nous indique en quel sens un système mécanique fermé reste réversible. Il passe presque tout son temps près de l’équilibre, mais, à une échelle de temps suffisamment longue, il subit aussi des fluctuations vers une entropie plus faible. La deuxième loi est donc une affirmation extrêmement probable au sujet de conditions initiales particulières, et non une équation microscopique qui interdit le mouvement inverse.
+\lecturetimestamp{00:15:12--00:16:35}}
+\end{classroomqa}
+
+\section{Réversibilité et début exceptionnel}
+
+Partons délibérément d’une situation où l’air se trouve dans la petite région correspondant à la moitié de la pièce. Presque toutes les trajectoires voisines en sortent aussitôt, car le volume de phase situé à l’extérieur est immensément plus grand que celui situé à l’intérieur. Le gaz se répand rapidement, puis attend un temps immense avant d’y revenir. Cette asymétrie entre une relaxation rapide et une longue attente ne viole pas la mécanique réversible.
+
+L’inverse temporel de la rapide sortie n’est pas toute la période d’attente. C’est le bref épisode, fantastiquement coordonné, où les vitesses moléculaires qui semblent à l’équilibre s’agencent par hasard de sorte que le gaz \emph{se précipite} dans une moitié de la pièce. Si l’on inverse tous les moments à la fin de la détente ordinaire, le gaz retrace cette détente en sens inverse. La longue attente correspond au temps nécessaire pour que cette configuration particulière de vitesses entrantes se produise spontanément.
+
+\begin{classroomqa}
+\audiencequestion{La symétrie temporelle signifie-t-elle que la récurrence lente dans le coin prend aussi longtemps que la sortie initiale ?}
+\lecturerresponse{Non. Comparons la sortie à son inverse temporel exact : les deux sont rapides. Ce qui prend un temps immense, c’est l’attente à l’équilibre de la fluctuation entrante précise qui déclenche la précipitation en sens inverse. Sur une histoire immensément longue, les excursions hors de l’équilibre se produisent dans les deux directions temporelles, avec des histoires locales symétriques.
+\lecturetimestamp{00:20:46--00:21:58}}
+\end{classroomqa}
+
+L’argument de récurrence n’explique donc qu’une partie de la flèche du temps. Il explique pourquoi l’entropie augmente ordinairement \emph{à condition que} le système ait commencé dans une région de faible entropie. Il n’explique pas pourquoi la condition initiale était particulière. En cosmologie, cette prémisse manquante devient la question centrale : pourquoi l’Univers observable a-t-il commencé dans une région aussi exceptionnelle et restreinte de son espace des phases gravitationnel ?
+
+\begin{classroomqa}
+\audiencequestion{La récurrence s’applique-t-elle à la cosmologie ? Après l’expansion de l’Univers, pourrait-il revenir à son état initial si l’on attendait assez longtemps ?}
+\lecturerresponse{Cette question est incontournable, mais la réponse dépend de la cosmologie globale. Un système véritablement fermé dont l’espace des états d’équilibre est fini appelle la récurrence. Un espace-temps en expansion, la gravité, les horizons et un espace des états infini ou non stationnaire peuvent modifier les prémisses. La leçon est ici plus limitée : une représentation de l’Univers comme système à l’équilibre sujet à des récurrences ne constitue pas, à elle seule, une explication statistique satisfaisante de l’Univers structuré que nous observons.
+\lecturetimestamp{00:19:59--00:20:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La récurrence dépend-elle du fait que le gaz ait été préparé dans une petite région au départ ? Si la pièce commence à l’équilibre, l’air finira-t-il tout de même par se rassembler dans un coin ?}
+\lecturerresponse{Oui. La récurrence concerne la dynamique à long terme du système fermé ; un état initial qui semble à l’équilibre subit donc lui aussi de rares fluctuations vers une faible entropie. Préparer l’état où l’air occupe la moitié de la pièce répond à une autre question : cela nous permet de partir d’un début particulier connu et de demander pourquoi l’entropie augmente aussitôt après.
+\lecturetimestamp{00:22:04--00:22:20}}
+\end{classroomqa}
+
+\section{Pourquoi une fluctuation aléatoire ne suffit pas à expliquer ce que nous observons}
+
+On pourrait tenter de bâtir une cosmologie sur la récurrence : peut-être l’Univers a-t-il passé presque toute l’éternité à l’équilibre et notre monde actuel serait-il une fluctuation rare. Cette proposition échoue à un test statistique rigoureux. Conditionnons sur l’existence d’un observateur et demandons-nous ce qu’il devrait s’attendre à observer d’autre.
+
+Une fluctuation assez grande pour créer une planète est extraordinairement rare. Une fluctuation qui en crée deux exige un déficit d’entropie plus important et est encore plus rare. Une fluctuation qui crée des étoiles, des galaxies, un fond diffus cosmologique et des traces mutuellement cohérentes d’un long passé est encore beaucoup plus rare, d’un facteur exponentiel immense. Une théorie fondée sur les fluctuations à l’équilibre prédit donc la plus petite fluctuation suffisante pour qu’il y ait observation, et non le monde riche et cohérent que nous observons effectivement. Dans sa forme la plus extrême, l’observateur minimal est appelé cerveau de Boltzmann.
+
+Le raisonnement relève de la probabilité conditionnelle. Soit \(A\) l’événement correspondant à une fluctuation de la taille d’un observateur et \(B\) une seconde structure indépendante. Si chacune a une faible probabilité \(p\), alors
+\begin{equation}
+ P(B\mid A)=p,
+ \qquad
+ P(A\cap B)=p^2.
+ \label{eq:sm8-conditional-fluctuations}
+\end{equation}
+Apprendre que la première fluctuation s’est produite ne rend pas la seconde probable. L’analogie avec la loterie est exacte à ce niveau : un gagnant précédent n’a pas plus de chances de gagner au tirage indépendant suivant. L’observateur peut donc conditionner son raisonnement sur sa propre présence, mais il devrait encore être stupéfait de découvrir autour de lui un environnement structuré de manière indépendante.
+
+\begin{classroomqa}
+\audiencequestion{Si une planète ou un observateur de Boltzmann existe déjà, la probabilité qu’un autre existe est-elle vraiment plus faible ?}
+\lecturerresponse{La probabilité conditionnelle d’une seconde fluctuation rare et indépendante est la même que celle d’un événement isolé, toujours très faible ; ce n’est pas son carré. C’est la probabilité conjointe des deux événements qui est le carré. C’est précisément pourquoi le premier observateur devrait encore s’attendre à trouver du désordre thermique en dehors de lui-même. Découvrir un conjoint, une autre planète et un ciel ordonné est un indice allant à l’encontre de l’hypothèse selon laquelle l’observateur aurait été assemblé comme une fluctuation isolée à l’équilibre.
+\lecturetimestamp{00:26:12--00:30:27}}
+\end{classroomqa}
+
+\subsection{Des traces cohérentes d’un passé}
+
+Le même raisonnement s’applique à l’histoire. Deux manuels qui concordent, des données astronomiques compatibles avec une même histoire de l’expansion, des strates géologiques, des souvenirs et des cahiers de laboratoire se contraignent mutuellement. Un manuel aléatoire peut raconter n’importe quelle histoire. Un réseau entier de traces qui concordent au sujet du même passé correspond à une région beaucoup plus petite de l’espace des phases.
+
+L’exemple donné en cours reprend le récit bien connu selon lequel George Washington aurait abattu un cerisier. Que ce récit soit vrai ou non n’a aucune importance. L’idée est que, dans un monde apparu par fluctuation à l’instant présent, la phrase d’un livre n’offre aucune raison dynamique pour qu’une autre trace concorde avec elle. Des corrélations cohérentes témoignent d’une histoire commune, et non d’un simple accident instantané.
+
+\begin{classroomqa}
+\audiencequestion{Que signifie ici la \emph{cohérence historique} ?}
+\lecturerresponse{Cela signifie que de nombreuses traces présentes concordent comme autant de conséquences d’un passé commun. Une fluctuation pourrait fabriquer des traces et des souvenirs, mais en fabriquer un réseau mutuellement cohérent exigerait une fluctuation bien plus importante que celle nécessaire pour créer un observateur minimal. La théorie de la récurrence prédit donc que la plupart des fluctuations ressemblant à des observateurs ne présentent pas la cohérence que nous constatons effectivement.
+\lecturetimestamp{00:30:30--00:31:12}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{L’Univers pourrait-il tout de même être un système fermé dont les temps d’équilibration et de récurrence seraient simplement extrêmement longs ?}
+\lecturerresponse{Cette possibilité ne résout pas le problème statistique. Au cours d’une histoire indéfiniment longue, il y aurait de nombreuses fluctuations ressemblant à des observateurs, dont l’immense majorité serait minimale et dépourvue d’un passé environnant cohérent. Un observateur choisi dans cet ensemble ne devrait pas s’attendre à faire les observations que nous faisons. Les cosmologistes prennent donc au sérieux le problème des cerveaux de Boltzmann comme un test des mesures cosmologiques et des modèles de l’Univers tardif, et non comme l’affirmation qu’une récurrence a déjà été observée.
+\lecturetimestamp{00:31:13--00:32:42}}
+\end{classroomqa}
+
+\section{La vie, une structure entretenue par un flux}
+
+La vie semble poser le problème inverse. Les organismes maintiennent une organisation complexe pendant longtemps ; ils ne ressemblent pas à de brèves fluctuations accidentelles. La résolution est que la deuxième loi s’applique à un système fermé complet. Un sous-système peut diminuer ou maintenir son entropie à condition qu’une augmentation plus importante se produise dans son environnement :
+\begin{equation}
+ \dot S_{\rm total}
+ =\dot S_{\rm subsystem}+\dot S_{\rm environment}\geq 0.
+ \label{eq:sm8-open-system-second-law}
+\end{equation}
+
+La Terre n’est pas à l’équilibre thermique. Elle est approximativement stationnaire à l’échelle humaine, mais stationnaire ne signifie pas statique. De l’énergie la traverse. La lumière solaire arrive, se dégrade au fil de nombreux processus, puis est rayonnée à une température effective plus basse. Ce flux peut entretenir une organisation locale tandis que l’entropie totale augmente.
+
+L’eau qui s’écoule dans un tuyau fournit une image mécanique immédiate. L’écoulement peut comporter des remous et des tourbillons persistants. Ce sont des structures organisées, mais le courant les entretient. Si l’on ferme les deux extrémités et que l’on arrête l’écoulement, la viscosité efface les tourbillons tandis que l’eau s’approche d’un équilibre sans relief. L’eau sortante est plus chaude que l’eau entrante : le système plus vaste a donc payé la facture d’entropie.
+
+\begin{classroomqa}
+\audiencequestion{La vie diminue-t-elle l’entropie ? Et pourquoi son organisation peut-elle persister au lieu d’apparaître puis de disparaître comme une fluctuation ordinaire ?}
+\lecturerresponse{La vie peut maintenir ou diminuer localement l’entropie, mais seulement en en exportant une quantité encore plus grande. Elle persiste grâce à un flux stationnaire hors équilibre, principalement le flux d’énergie solaire qui traverse la Terre. Si la Terre était isolée des rayonnements entrants et sortants, elle finirait par atteindre l’équilibre thermique et son activité organisée cesserait. La vie ressemble davantage à un tourbillon dans un courant qu’à une fluctuation à l’équilibre.
+\lecturetimestamp{00:32:43--00:35:42}}
+\end{classroomqa}
+
+Nous quittons ainsi les \emph{choses intéressantes} et revenons, selon la formule volontairement sèche du cours, à quelque chose d’ennuyeux : les aimants.
+
+\section{Refroidir un aimant : domaines et orientation choisie}
+
+En mécanique statistique, on appelle souvent « aimant » un modèle mathématique même s’il ne s’agit pas littéralement d’un morceau de fer. Ce qu’ils ont en commun d’utile, c’est un ensemble de degrés de liberté locaux susceptibles de s’ordonner. Dans un véritable matériau magnétique, ces degrés de liberté peuvent provenir de moments magnétiques atomiques, de spins électroniques, de courants orbitaux ou de moments effectifs d’unités cristallines.
+
+À température élevée, le désordre thermique oriente les moments locaux dans de nombreuses directions, ce qui donne une aimantation nette faible ou nulle. Si l’énergie des moments voisins est plus faible lorsqu’ils sont alignés, le refroidissement permet la formation de petits domaines alignés. En poursuivant le refroidissement, l’avantage énergétique devient plus important et les domaines corrélés s’agrandissent. Dans un système qui présente une transition ferromagnétique, la longueur de corrélation devient macroscopique à une température critique finie. La phase ordonnée choisit alors une orientation, bien que l’énergie en l’absence de champ n’en ait privilégié aucune à l’avance.
+
+\begin{classroomqa}
+\audiencequestion{Les aimants microscopiques ne devraient-ils pas préférer s’aligner en sens opposés, puisque le pôle nord attire le pôle sud ?}
+\lecturerresponse{L’interaction effective dépend du matériau. L’intuition ordinaire fondée sur les dipôles ne suffit pas à décrire le problème microscopique : les interactions d’échange, la structure cristalline et les interactions concurrentes comptent aussi. Les matériaux ferromagnétiques sont ceux où la tendance effective à basse énergie favorise un ordre parallèle ; d’autres matériaux peuvent favoriser un alignement opposé.
+\lecturetimestamp{00:39:56--00:40:30}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Un champ magnétique extérieur doit-il être présent pendant le refroidissement du matériau pour que les moments s’alignent ?}
+\lecturerresponse{Non. L’interaction peut engendrer un ordre sans champ. Dans une idéalisation parfaitement symétrique, les différentes directions sont équivalentes du point de vue énergétique ; la direction effectivement choisie est déterminée par les fluctuations initiales, les conditions aux limites ou un champ parasite arbitrairement faible. Choisir l’une de ces directions équivalentes constitue une brisure spontanée de symétrie ; l’apparition d’un ordre macroscopique est la transition de phase magnétique.
+\lecturetimestamp{00:40:31--00:42:33}}
+\end{classroomqa}
+
+Les matériaux réels sont complexes ; nous allons donc simplifier radicalement. Chaque moment local ne peut pointer que vers le haut ou vers le bas :
+\begin{equation}
+ \sigma_i=+1\quad\hbox{or}\quad\sigma_i=-1.
+ \label{eq:sm8-ising-spin}
+\end{equation}
+Dans ce modèle, il n’y a ni est ni ouest. Les deux orientations possibles définissent le modèle, tout comme pile et face sont les deux résultats possibles d’un lancer de pièce. L’intérêt du modèle n’est pas son réalisme microscopique, mais sa clarté mathématique et sa capacité à représenter des phénomènes d’ordre communs à de nombreux systèmes.
+
+\begin{classroomqa}
+\audiencequestion{Que représentent physiquement ces objets à deux états ? Faut-il les imaginer comme des particules ?}
+\lecturerresponse{On peut se représenter des atomes aux sites d’un cristal, chacun doté d’un moment magnétique effectif produit par le spin ou un courant microscopique. Dans le modèle, toutefois, seule compte la variable à deux valeurs. La restriction aux orientations haut et bas est imposée pour simplifier la mécanique statistique.
+\lecturetimestamp{00:44:22--00:45:01}}
+\end{classroomqa}
+
+\section{Spins indépendants dans un champ extérieur}
+
+Le premier modèle comporte \(N\) spins qui n’interagissent pas entre eux. Un champ extérieur \(H\) fournit l’unique échelle d’énergie, et \(\mu\) mesure l’intensité du couplage d’un spin à ce champ. Nous conservons la convention de signe utilisée dans le calcul :
+\begin{equation}
+ \epsilon_i=\mu H\sigma_i.
+ \label{eq:sm8-single-spin-energy}
+\end{equation}
+Pour \(H>0\), un spin orienté vers le haut \(\sigma_i=+1\) a une énergie \(+\mu H\), tandis qu’un spin orienté vers le bas \(\sigma_i=-1\) a une énergie \(-\mu H\). Cette convention fait donc du champ positif un facteur favorable aux spins vers le bas. Elle inverse une autre convention de dénomination courante, mais les noms n’ont aucune conséquence physique si les signes sont utilisés de manière cohérente.
+
+Soit \(n\) le nombre de spins vers le haut et \(m\) le nombre de spins vers le bas. Alors
+\begin{equation}
+ n+m=N,
+ \qquad
+ E=(n-m)\mu H.
+ \label{eq:sm8-counting-energy}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_03.png}
+\caption{Le modèle de spins indépendants : \(n\) spins vers le haut, \(m\) vers le bas,
+\(n+m=N\) et \(E=(n-m)\mu H\).}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Quelles sont les dimensions de \(H\), \(\mu\) et \(E\) ? \(H\) est-il une valeur numérique ou un champ magnétique ?}
+\lecturerresponse{\(H\) désigne l’intensité du champ imposé de l’extérieur et \(\mu\) le moment magnétique. Leur produit \(\mu H\) a les dimensions d’une énergie. Dans le modèle abstrait, on les regroupe souvent en un seul paramètre ayant les dimensions d’une énergie, généralement noté lui aussi par un \(h\) minuscule. Ici, nous conservons les deux facteurs pour montrer leur origine physique, et \(E\) est l’énergie totale.
+\lecturetimestamp{00:48:21--00:49:27}}
+\end{classroomqa}
+
+\subsection{Dénombrement des configurations}
+
+À \(n\) et \(m=N-n\) fixés, choisissons quels \(n\) des \(N\) sites sont orientés vers le haut. La multiplicité vaut
+\begin{equation}
+ \Omega(n,m)=\binom{N}{n}
+ =\frac{N!}{n!\,m!}.
+ \label{eq:sm8-spin-multiplicity}
+\end{equation}
+Toutes ces configurations ont la même énergie
+\eqref{eq:sm8-counting-energy}.
+
+\begin{classroomqa}
+\audiencequestion{Peut-on prendre \(n\) et \(m\) tous deux comme indices de sommation, puisqu’ils ne sont pas indépendants ? Et où intervient le facteur combinatoire ?}
+\lecturerresponse{On peut les écrire comme une paire soumise à la contrainte \(n+m=N\), ou sommer sur \(n=0,\ldots,N\) en posant \(m=N-n\). Le facteur de Boltzmann s’applique à chaque configuration individuelle ; en regroupant toutes les configurations de même énergie, on multiplie ce facteur par \(N!/(n!\,m!)\).
+\lecturetimestamp{00:52:04--00:53:03}}
+\end{classroomqa}
+
+La fonction de partition est donc
+\begin{align}
+ Z_N
+ &=\sum_{n+m=N}
+   \frac{N!}{n!\,m!}
+   e^{-\beta\mu H(n-m)}
+ \notag\\
+ &=\sum_{n=0}^{N}
+   \binom{N}{n}
+   \left(e^{-\beta\mu H}\right)^n
+   \left(e^{+\beta\mu H}\right)^{N-n}.
+ \label{eq:sm8-spin-z-sum}
+\end{align}
+Introduisons
+\begin{equation}
+ x=e^{-\beta\mu H},
+ \qquad
+ y=e^{+\beta\mu H}.
+ \label{eq:sm8-xy}
+\end{equation}
+Le théorème du binôme achève alors le calcul :
+\begin{align}
+ Z_N
+ &=\sum_{n=0}^{N}\binom{N}{n}x^n y^{N-n}
+   =(x+y)^N
+ \notag\\
+ &=\left(e^{-\beta\mu H}+e^{+\beta\mu H}\right)^N
+   =\left[2\cosh(\beta\mu H)\right]^N.
+ \label{eq:sm8-spin-z-closed}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_04.png}
+\caption{La somme définissant la fonction de partition, les substitutions \(x\) et \(y\), puis la réduction par le binôme à une puissance de \(2\cosh(\beta\mu H)\).}
+\lectureframe{00:56:00}
+\end{figure}
+
+On peut aussi procéder plus brièvement. Les spins étant indépendants, un seul spin a
+\begin{equation}
+ z_1=e^{-\beta\mu H}+e^{+\beta\mu H}
+    =2\cosh(\beta\mu H),
+ \label{eq:sm8-one-spin-z}
+\end{equation}
+et \(Z_N=z_1^N\). La dérivation combinatoire mérite néanmoins d’être conservée, car elle montre explicitement la compétition entre multiplicité et énergie.
+
+\section{Aimantation d’une configuration et aimantation de l’ensemble statistique}
+
+Pour une configuration donnée, définissons l’excès de spins par site, sans dimension :
+\begin{equation}
+ M_{\rm conf}=\frac{n-m}{N}.
+ \label{eq:sm8-config-magnetization}
+\end{equation}
+Il varie de \(+1\), lorsque tous les spins sont orientés vers le haut, à \(-1\), lorsqu’ils sont tous orientés vers le bas. L’aimantation thermodynamique utilisée ici est sa moyenne de Boltzmann :
+\begin{equation}
+ M=\left\langle M_{\rm conf}\right\rangle
+  =\left\langle\frac{n-m}{N}\right\rangle.
+ \label{eq:sm8-average-magnetization}
+\end{equation}
+Le facteur \(\mu H\) n’entre pas dans cette définition. Il y avait été inscrit brièvement pendant le calcul, puis a été supprimé ; \(\mu H\) convertit l’excès de spins en énergie.
+
+Pour chaque configuration,
+\begin{equation}
+ E=N\mu H M_{\rm conf}.
+ \label{eq:sm8-energy-config-m}
+\end{equation}
+La linéarité de la moyenne donne aussitôt
+\begin{equation}
+ \langle E\rangle=N\mu H M.
+ \label{eq:sm8-energy-average-m}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_05.png}
+\caption{La rangée de spins, l’aimantation moyenne corrigée et la relation entre énergie et aimantation mises en évidence au tableau.}
+\lectureframe{01:01:22}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Parle-t-on de l’aimantation d’une configuration particulière ou d’une aimantation moyenne ? Pourquoi la même relation vaut-elle pour l’énergie moyenne ?}
+\lecturerresponse{Les deux notions interviennent et doivent être distinguées. \((n-m)/N\) est la valeur pour une configuration ; \(M\) en est la moyenne de Boltzmann. Comme \(E=N\mu H M_{\rm conf}\) vaut séparément pour chaque configuration, il suffit de prendre la moyenne des deux membres avec les mêmes probabilités pour obtenir \(\langle E\rangle=N\mu H M\). Les grandeurs fixes \(N\), \(\mu\) et \(H\) peuvent sortir de la moyenne.
+\lecturetimestamp{00:59:54--01:03:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Comment le modèle peut-il aligner tous les spins vers le nord--sud sans
+favoriser les spins vers le haut par rapport à ceux vers le bas ?}
+\lecturerresponse{L’absence d’est et d’ouest est intégrée au modèle à deux états : c’est une restriction des degrés de liberté autorisés. Dans le modèle avec champ extérieur considéré ici, \emph{il y a} un biais entre les spins vers le haut et ceux vers le bas : avec notre convention de signe, le champ abaisse l’énergie des spins vers le bas. Par conséquent, ce modèle ne possède pas de symétrie haut--bas. Le modèle d’Ising sans champ présenté ci-dessous rétablira cette symétrie.
+\lecturetimestamp{01:03:41--01:04:53}}
+\end{classroomqa}
+
+\subsection{Énergie à partir de la fonction de partition}
+
+L’énergie moyenne découle de l’identité usuelle
+\begin{equation}
+ \langle E\rangle
+ =-\frac{\partial}{\partial\beta}\log Z_N.
+ \label{eq:sm8-energy-identity}
+\end{equation}
+En utilisant \eqref{eq:sm8-spin-z-closed},
+\begin{align}
+ \log Z_N
+ &=N\log 2+N\log\!\left[\cosh(\beta\mu H)\right],
+ \notag\\
+ \langle E\rangle
+ &=-N\mu H\,
+   \frac{\sinh(\beta\mu H)}{\cosh(\beta\mu H)}
+ \notag\\
+ &=-N\mu H\tanh(\beta\mu H).
+ \label{eq:sm8-average-energy}
+\end{align}
+En combinant ce résultat avec \eqref{eq:sm8-energy-average-m}, on obtient
+\begin{equation}
+ \boxed{M=-\tanh(\beta\mu H)}.
+ \label{eq:sm8-magnetization-tanh}
+\end{equation}
+
+La forme du résultat contient l’essentiel de la physique. Rappelons que
+\begin{equation}
+ \cosh x=\frac{e^x+e^{-x}}{2},
+ \qquad
+ \sinh x=\frac{e^x-e^{-x}}{2}.
+ \label{eq:sm8-hyperbolic-definitions}
+\end{equation}
+Au voisinage de l’origine, \(\tanh x=x+O(x^3)\) ; pour de grandes valeurs positives de \(x\), elle tend vers
+\(1\). Puisque \(\beta=1/T\),
+\begin{equation}
+ M\longrightarrow -1
+ \quad (T\longrightarrow0),
+ \qquad
+ M\longrightarrow 0
+ \quad (T\longrightarrow\infty).
+ \label{eq:sm8-magnetization-limits}
+\end{equation}
+À température nulle, chaque spin occupe l’état de plus basse énergie, orienté vers le bas. À température infinie, toutes les configurations ont le même poids et le biais dû au champ disparaît. Inverser \(H\) inverse \(M\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_09.png}
+\caption{La courbe de la tangente hyperbolique tend vers une constante pour de grandes valeurs de \(\beta\mu H\) et est linéaire au voisinage de l’origine. Dans la convention adoptée dans le cours, l’aimantation physique est l’opposé de la quantité \(\tanh\) représentée.}
+\lectureframe{01:13:14}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{L’aimantation varie de façon continue. Où se trouve la température de transition de phase mentionnée précédemment ?}
+\lecturerresponse{Il n’y en a pas dans ce modèle. Les spins indépendants soumis à un champ extérieur non nul constituent un système trop simple, et
+\(\log Z_N=N\log[2\cosh(\beta\mu H)]\) est régulière à toute température finie positive. Une transition de phase exige le problème interactif et symétrique que nous allons maintenant aborder ; le modèle d’Ising bidimensionnel sans champ est le premier de cette famille à présenter une transition à température finie.
+\lecturetimestamp{01:14:47--01:15:11}}
+\end{classroomqa}
+
+\section{Le modèle d’Ising : énergie des paires de voisins}
+
+Le champ extérieur imposait une direction avant même que l’on commence l’étude statistique. Supprimons ce champ et laissons les spins voisins fournir les uns aux autres un champ effectif. Si les deux voisins d’un site sont orientés vers le haut, ils favorisent cette orientation ; s’ils sont tous deux orientés vers le bas, ils favorisent celle-ci ; si l’un est orienté dans chaque sens, leurs effets se compensent dans l’image la plus simple. L’énergie est désormais associée à des paires plutôt qu’à des sites isolés.
+
+Pour deux spins voisins, choisissons \(J>0\) et écrivons
+\begin{equation}
+ E_{12}=-J\sigma_1\sigma_2.
+ \label{eq:sm8-pair-energy}
+\end{equation}
+Des spins alignés ont \(\sigma_1\sigma_2=+1\) et une énergie \(-J\) ; des spins anti-alignés ont pour produit \(-1\) et pour énergie \(+J\). Le signe moins est donc précisément ce qui rend l’interaction ferromagnétique.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_06.png}
+\caption{L’interaction ferromagnétique locale
+\(E_{12}=-J\sigma_1\sigma_2\).}
+\lectureframe{01:19:59}
+\end{figure}
+
+Pour une chaîne unidimensionnelle ouverte, l’hamiltonien est
+\begin{equation}
+ {\cal H}=-J\sum_{i=1}^{N-1}\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-ising-chain-open}
+\end{equation}
+Avec des conditions aux limites périodiques, on pose \(\sigma_{N+1}=\sigma_1\) et on somme jusqu’à \(N\). Dans les deux conventions, chaque paire de voisins est comptée une fois ; la différence aux limites devient négligeable pour une longue chaîne.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_10.png}
+\caption{L’énergie locale des paires étendue à l’hamiltonien d’une chaîne avec interaction entre premiers voisins.}
+\lectureframe{01:20:46}
+\end{figure}
+
+À température infinie, toutes les chaînes de spins sont équiprobables. En moyenne, la moitié des liaisons sont alignées et l’autre moitié anti-alignées, de sorte que
+\begin{equation}
+ \left\langle\sigma_i\sigma_{i+1}\right\rangle_{T=\infty}=0,
+ \qquad
+ \left\langle{\cal H}\right\rangle_{T=\infty}=0.
+ \label{eq:sm8-infinite-t-bond}
+\end{equation}
+Ici, une énergie nulle ne correspond pas à un état de basse énergie. L’état fondamental, où tous les spins sont alignés, a une énergie de \(-J\) par liaison ; l’ensemble à température infinie se situe donc à une énergie extensive au-dessus de cet état.
+
+\begin{classroomqa}
+\audiencequestion{Comment le produit moyen peut-il être nul alors que chaque produit individuel
+\(\sigma_i\sigma_{i+1}\) vaut soit \(+1\), soit \(-1\) ?}
+\lecturerresponse{Une moyenne n’a pas à être l’une des valeurs prises dans une configuration donnée. À température infinie, les liaisons alignées et anti-alignées sont en nombres égaux ; leurs contributions \(+1\) et \(-1\) se compensent donc. La même distinction liée à la moyenne qui comptait pour l’aimantation intervient ici.
+\lecturetimestamp{01:21:39--01:22:37}}
+\end{classroomqa}
+
+\subsection{Deux états fondamentaux et une symétrie globale}
+
+À température nulle, chaque liaison tend à être alignée. Il y a donc deux états fondamentaux,
+\begin{equation}
+ (+,+,+,\ldots,+)
+ \qquad\hbox{and}\qquad
+ (-,-,-,\ldots,-).
+ \label{eq:sm8-two-ground-states}
+\end{equation}
+Ils ont exactement la même énergie. L’hamiltonien rend cette dégénérescence manifeste : inversons tous les spins,
+\begin{equation}
+ \sigma_i\longmapsto-\sigma_i
+ \qquad\hbox{for all }i,
+ \label{eq:sm8-global-flip}
+\end{equation}
+et le produit de chaque paire reste inchangé,
+\begin{equation}
+ (-\sigma_i)(-\sigma_{i+1})
+ =\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-global-flip-invariance}
+\end{equation}
+Inverser un seul spin n’est pas une symétrie, car cela inverse le signe des produits des liaisons adjacentes. Inverser tous les spins est une symétrie. C’est la symétrie globale \(\mathbb Z_2\) du modèle d’Ising sans champ.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_11.png}
+\caption{L’hamiltonien de la chaîne et la transformation globale
+\(\sigma_i\mapsto-\sigma_i\), qui laisse invariant le produit de chaque paire.}
+\lectureframe{01:26:31}
+\end{figure}
+
+Appliquons un champ infinitésimal à un spin, à température strictement nulle. Il lève la dégénérescence entre les deux états fondamentaux, et les couplages ferromagnétiques propagent ce choix à toute la chaîne. Si l’on supprime le champ une fois l’état sélectionné, un grand système peut conserver son orientation très longtemps. C’est le point de départ intuitif pour comprendre la brisure spontanée de symétrie.
+
+Il faut toutefois apporter une précision statistique essentielle. Pour un système fini soumis à un champ exactement nul, l’ensemble canonique attribue le même poids aux deux états fondamentaux et donne donc une aimantation moyenne nulle. On définit une phase à symétrie brisée en prenant la limite thermodynamique avant de supprimer le champ qui sélectionne l’état :
+\begin{equation}
+ M_*=\lim_{H\to0^+}\lim_{N\to\infty}M_N(H).
+ \label{eq:sm8-order-of-limits}
+\end{equation}
+Dans le modèle unidimensionnel avec interaction entre premiers voisins, cette limite n’est non nulle qu’à \(T=0\) ; toute température finie détruit l’ordre à longue portée dans la chaîne infinie. En deux dimensions, la phase ordonnée persiste au-dessous d’une température critique non nulle.
+
+\subsection{Correction historique}
+
+Dans son récit en classe, le professeur accompagne cette histoire d’une plaisanterie aux dépens d’Ising. La chronologie exacte est plus indulgente. Wilhelm Lenz a proposé le modèle, et son étudiant Ernst Ising a résolu le cas unidimensionnel dans sa thèse de 1924, publiée en 1925. Ising a correctement conclu qu’il n’existait pas de transition ferromagnétique à température finie en une dimension, même si l’importance plus générale des dimensions supérieures n’était pas encore comprise. Kramers et Wannier ont élaboré la dualité en deux dimensions et identifié le point critique du réseau carré en 1941 ; Onsager a donné en 1944 la célèbre solution exacte sans champ.
+
+Le calcul suivant s’impose maintenant. Nous devons déterminer la fonction de partition de \eqref{eq:sm8-ising-chain-open} et établir comment ses corrélations dépendent de la température. Ce calcul montrera explicitement pourquoi la chaîne unidimensionnelle ne présente aucune transition de phase à température finie, et pourquoi la dimension du système importe.
+
+\section{Où en sommes-nous ?}
+
+Le problème du retour et celui des spins illustrent la même leçon statistique. Dans le gaz, un déficit d’entropie rend un macro-état exponentiellement rare :
+\begin{equation}
+ P(A)=e^{-\Delta S},
+ \qquad
+ \tau_{\rm rec}\sim\tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-summary-recurrence}
+\end{equation}
+La mécanique réversible permet le retour, tandis que l’énorme rapport des volumes de phase explique pourquoi l’expérience ordinaire ne voit que la relaxation. Le problème restant de la flèche du temps tient à la condition initiale cosmologique particulière, et non à une défaillance de la réversibilité microscopique.
+
+Pour des spins indépendants soumis à un champ,
+\begin{equation}
+ Z_N=\left[2\cosh(\beta\mu H)\right]^N,
+ \qquad
+ M=-\tanh(\beta\mu H).
+ \label{eq:sm8-summary-spins}
+\end{equation}
+ce système présente un biais explicite et évolue de façon régulière avec la température. L’interaction d’Ising
+\begin{equation}
+ {\cal H}=-J\sum_i\sigma_i\sigma_{i+1}
+ \label{eq:sm8-summary-ising}
+\end{equation}
+supprime le biais extérieur, rétablit une symétrie globale haut--bas et pose la véritable question de l’ordre : un système à plusieurs corps symétrique peut-il choisir l’un de deux états ordonnés à température non nulle ?

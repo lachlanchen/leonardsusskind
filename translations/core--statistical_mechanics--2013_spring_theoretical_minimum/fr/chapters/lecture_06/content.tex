@@ -1,0 +1,632 @@
+\chapter{Interactions faibles, corrections du viriel et différentielles inexactes}
+
+\lectureoverview{Nous commençons par le sens opérationnel de la mesure et de la température, puis nous examinons comment un gaz dilué s’écarte de la loi des gaz parfaits lorsqu’on introduit progressivement de faibles interactions à courte portée. La fonction de partition fournit les premières corrections dues aux interactions pour l’énergie et la pression, et en précise le domaine de validité. Un dernier détour mathématique distingue les fonctions d’état de la chaleur et du travail, qui dépendent du chemin suivi, au moyen des différentielles exactes, des boucles fermées et d’un exemple concret de gaz parfait.}
+
+\section{Ce que mesure réellement un instrument}
+
+Aucun appareil de laboratoire ne puise directement dans la nature pour rendre compte d’une variable mathématique abstraite. Un dynamomètre indique un allongement ; un thermomètre, la hauteur d’une colonne de liquide. Nous parlons de mesure d’une force dans le premier cas et de mesure d’une température dans le second uniquement parce qu’une relation reproductible a été établie entre la réponse observable et la grandeur recherchée.
+
+Cette relation n’est valable que dans un domaine limité. Un ressort n’obéit à la loi de Hooke que tant qu’il reste élastique ; si la force devient suffisamment grande, il finit par se déformer ou se rompre. Plus généralement, si une indication lisse \(R\) dépend d’une variable physique \(X\), alors au voisinage d’un point de fonctionnement choisi,
+\begin{equation}
+ \Delta R \simeq
+ \left.\frac{dR}{dX}\right|_{X_0}\Delta X.
+ \label{eq:sm6-local-linear-response}
+\end{equation}
+les petites variations de l’indication sont proportionnelles aux petites variations de la variable recherchée, même lorsque la réponse complète est non linéaire. Cette linéarisation locale relève de la méthode ordinaire d’étalonnage.
+
+L’indication peut aussi dépendre de variables parasites. Un ressort peut réagir faiblement à la température ou à la pression. La hauteur du mercure dans un thermomètre pourrait dépendre de l’orientation sous l’effet de la gravité, des propriétés du verre ou de l’évolution lente des matériaux. Un protocole de mesure ne prouve pas l’absence de ces dépendances : il les maintient constantes ou montre qu’elles sont négligeables à l’échelle requise.
+
+\begin{classroomqa}
+\audiencequestion{Le champ gravitationnel local, ou l’orientation du thermomètre, peut-il modifier la lecture ?}
+\lecturerresponse{Oui, en principe. Si l’orientation a un effet appréciable, l’instruction de tenir le thermomètre à la verticale fait partie de la définition de l’instrument. À la surface de la Terre, le champ gravitationnel est suffisamment stable pour que les variations résiduelles soient normalement négligeables.
+\lecturetimestamp{00:04:08--00:05:00}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le vieillissement ou une évolution chimique peuvent-ils modifier lentement l’étalonnage ?}
+\lecturerresponse{C’est possible. Le mercure et le verre sont suffisamment inertes pour les mesures courantes, tandis que les changements sur des échelles de temps extraordinairement longues n’ont pas d’importance pour l’expérience. Tout étalonnage se rapporte à un instrument, un domaine, un protocole et une durée spécifiés.
+\lecturetimestamp{00:05:03--00:06:11}}
+\end{classroomqa}
+
+Pour un thermomètre Celsius, deux états de référence reproductibles fournissent une échelle commode. Si \(h_f\) et \(h_b\) désignent respectivement les hauteurs de la colonne aux points de congélation et d’ébullition de l’eau, alors, dans un domaine où la réponse est presque linéaire,
+\begin{equation}
+ T_{\mathrm C}=100\,\frac{h-h_f}{h_b-h_f}.
+ \label{eq:sm6-celsius-calibration}
+\end{equation}
+Le choix de \(T_{\mathrm C}=0\) au point de congélation est conventionnel. Il ne correspond pas à l’état d’énergie thermique nulle, pas plus que zéro degré Fahrenheit par une journée d’hiver ne correspond au zéro absolu.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}
+\caption{Réponse lisse mais non linéaire d’un thermomètre, avec un court intervalle délimité pour l’étalonnage linéaire.}
+\lectureframe{00:07:55}
+\end{figure}
+
+\section{Équilibre et température comme échelle d’énergie}
+
+Un thermomètre ne mesure la température de son environnement qu’une fois que lui-même et le milieu voisin ont atteint l’équilibre thermique. Avant cela, sa lecture ne fait qu’évoluer vers l’équilibre. Le critère pratique est simple : attendre que la lecture cesse de changer. Cette règle apparemment simple dissimule les processus physiques qui déterminent le temps d’attente.
+
+\begin{classroomqa}
+\audiencequestion{L’équilibration ne concerne-t-elle qu’une couche limite autour du bulbe, et combien de temps faut-il attendre ?}
+\lecturerresponse{L’énergie doit traverser le verre et être échangée avec le milieu environnant ; le temps dépend donc du thermomètre, de sa conductivité thermique et du milieu. L’environnement immédiat doit aussi être représentatif d’un état d’équilibre uniforme. En pratique, on considère que la mesure est acquise lorsqu’elle ne dérive plus.
+\lecturetimestamp{00:08:45--00:10:13}}
+\end{classroomqa}
+
+La température et la densité jouent des rôles distincts dans ce temps d’attente. Un gaz très dilué peut être très chaud : les quelques molécules présentes peuvent avoir de grandes énergies cinétiques. Pourtant, elles heurtent rarement le thermomètre, si bien que l’équilibration peut être lente. Réduire la densité d’un facteur cent ou mille tout en maintenant la température constante ne diminue pas l’échelle d’énergie moléculaire ; cela réduit la vitesse à laquelle cette énergie est transmise à l’instrument.
+
+\begin{classroomqa}
+\audiencequestion{Le rayonnement dans une pièce peut-il avoir une température différente de celle de l’air ?}
+\lecturerresponse{Oui. Matière et rayonnement n’ont une température commune que lorsqu’ils sont en équilibre thermique l’un avec l’autre. L’air neutre interagit faiblement avec une grande partie du rayonnement optique dans une pièce éclairée ; la population de photons n’est donc pas nécessairement un champ de rayonnement de corps noir à l’équilibre à la température de l’air.
+\lecturetimestamp{00:11:26--00:12:20}}
+\end{classroomqa}
+
+Une fois l’équilibre établi, il est préférable de considérer la température comme une échelle d’énergie. Nous continuons à utiliser les unités où \(k_B=1\), de sorte que \(T\) a elle-même les dimensions d’une énergie. Pour un gaz parfait monoatomique,
+\begin{equation}
+ E_0=\frac{3}{2}NT.
+ \label{eq:sm6-ideal-energy}
+\end{equation}
+L’énergie thermique par molécule est fixée par \(T\) ; la vitesse correspondante dépend toujours de la masse moléculaire.
+
+\section{Introduire une faible interaction}
+
+\begin{classroomqa}
+\audiencequestion{Dans quelles conditions l’approximation du gaz parfait cesse-t-elle d’être valable, et peut-on montrer mathématiquement cet écart ?}
+\lecturerresponse{Partons du gaz non interactif, dont la solution est connue, et introduisons une faible interaction. Développons en fonction de cette perturbation, calculons la première correction et comparons-la au terme idéal. L’approximation cesse d’être valable lorsque la correction n’est plus petite.
+\lecturetimestamp{00:12:25--00:14:40}}
+\end{classroomqa}
+
+C’est la stratégie perturbative classique. Si un problème est soluble pour \(\lambda=0\), introduisons un couplage \(\lambda\), écrivons
+\begin{equation}
+ F(\lambda)=F(0)+\lambda F_1+\lambda^2F_2+\cdots,
+ \label{eq:sm6-perturbative-template}
+\end{equation}
+et vérifions si chaque terme retenu est plus petit que le précédent. Ici, le problème de référence est celui du gaz parfait. Le faible paramètre physique tient à la dilution de l’échantillon, à une portée de l’interaction courte devant la distance moyenne entre molécules, et à un potentiel assez faible pour que le premier terme d’interaction soit pertinent. Une forte densité ou une force de longue portée peut invalider l’approximation, même si chaque rencontre prise isolément semble peu intense.
+
+Soient \(x_i\in\mathbb R^3\) et \(p_i\in\mathbb R^3\) la position et la quantité de mouvement de la molécule \(i\). Pour des molécules identiques de masse \(m\), prenons
+\begin{equation}
+ H(X,P)=
+ \sum_{i=1}^{N}\frac{p_i^2}{2m}
+ +\sum_{i<j}u\!\left(|x_i-x_j|\right),
+ \label{eq:sm6-interacting-hamiltonian}
+\end{equation}
+où \(X=(x_1,\ldots,x_N)\) et \(P=(p_1,\ldots,p_N)\). La restriction \(i<j\) exclut les paires d’une particule avec elle-même et ne compte chaque paire \((i,j)\) qu’une seule fois :
+\begin{equation}
+ \sum_{i<j}1=\binom{N}{2}=\frac{N(N-1)}{2}.
+ \label{eq:sm6-pair-count}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi ne pas sommer séparément sur les deux indices des particules ?}
+\lecturerresponse{La paire \((3,7)\) est la même paire physique que \((7,3)\), et une particule n’est pas appariée avec elle-même. Restreindre la somme à \(i<j\) impose ces deux conditions. On réserve le symbole de masse \(m\), tandis que \(i,j\) désignent les particules, afin d’éviter la collision de notation qui se produirait si \(m\) désignait les deux.
+\lecturetimestamp{00:17:52--00:19:12}}
+\end{classroomqa}
+
+Écrivons le potentiel configurationnel total sous la forme
+\begin{equation}
+ U(X)=\sum_{i<j}u\!\left(|x_i-x_j|\right).
+ \label{eq:sm6-total-potential}
+\end{equation}
+On suppose l’interaction invariante par translation et de courte portée : \(u(r)\) devient négligeable lorsque \(r\) est grand devant une longueur moléculaire.
+
+\section{L’intensité intégrée de la paire}
+
+Une seule intégrale du faible potentiel de paire intervient dans la première correction :
+\begin{equation}
+ U_0\equiv\int_{\mathbb R^3}d^3r\,u(r).
+ \label{eq:sm6-u0-definition}
+\end{equation}
+Ses unités sont celles d’une énergie multipliée par un volume. Elle combine l’intensité typique de l’interaction et le volume sur lequel celle-ci est appréciable.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}
+\caption{Le potentiel de paire à courte portée ramené à l’intensité intégrée \(U_0=\int d^3r\,u(r)\).}
+\lectureframe{00:25:15}
+\end{figure}
+
+Pour voir pourquoi \(U_0\) est utile, considérons une paire :
+\begin{equation}
+ I_2=\int_V d^3x_1\,d^3x_2\,
+ u\!\left(|x_1-x_2|\right).
+ \label{eq:sm6-two-particle-integral}
+\end{equation}
+Introduisons une coordonnée relative \(r=x_2-x_1\). Loin de la frontière, l’intégrale relative donne \(U_0\), tandis que la position commune de la paire parcourt tout le récipient. Ainsi,
+\begin{equation}
+ I_2=V U_0+\text{surface corrections}.
+ \label{eq:sm6-pair-integral-vu0}
+\end{equation}
+La correction vient des particules situées à une portée d’interaction du bord, où une partie du voisinage en coordonnée relative se trouve hors de la boîte. Son importance relative est proportionnelle au rapport surface-volume et s’annule dans la limite macroscopique.
+
+\begin{classroomqa}
+\audiencequestion{\(U_0\) désigne-t-il une paire donnée, et l’une des particules reste-t-elle à une distance fixe de l’autre ?}
+\lecturerresponse{Il désigne la loi d’interaction commune à toute paire. Fixons la première particule et intégrons sur toutes les positions relatives de la seconde. La séparation n’est pas fixe au cours de cette intégration. Seule la région où l’interaction est proche contribue de façon appréciable, ce qui donne \(U_0\).
+\lecturetimestamp{00:26:03--00:27:33}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi l’intégrale sur la position de la seconde particule donne-t-elle le volume complet du récipient, alors que celle sur la première ne le donne pas ?}
+\lecturerresponse{Une fois la configuration relative intégrée dans \(U_0\), la paire entière peut être translatée dans l’échantillon. Cette translation commune fournit le grand facteur \(V\). Le voisinage d’interaction est un volume de l’échelle moléculaire, déjà contenu dans \(U_0\), et non un facteur supplémentaire égal au volume du récipient.
+\lecturetimestamp{00:27:48--00:29:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La valeur peut-elle dépendre du point fixé, surtout près d’une paroi ?}
+\lecturerresponse{L’invariance par translation rend la valeur dans le volume indépendante du point fixé. Près d’une paroi, l’intégrale diffère légèrement parce que certaines positions voisines sont inaccessibles. Seule une couche superficielle d’épaisseur moléculaire est concernée ; l’erreur est donc négligeable lorsque la boîte est macroscopique.
+\lecturetimestamp{00:29:24--00:31:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le résultat est-il l’énergie potentielle intégrée sur toutes les configurations à deux particules, et pourquoi est-il proportionnel à un seul grand volume ?}
+\lecturerresponse{Oui. Ses unités sont celles d’une énergie multipliée par un volume au carré, puisque \(V U_0\) contient un volume de récipient et un volume d’interaction moléculaire. Seul le premier croît avec la taille de l’échantillon.
+\lecturetimestamp{00:31:31--00:32:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Choisir une sphère, qui minimise la surface à volume fixé, change-t-il le résultat dans le volume ?}
+\lecturerresponse{Cela ne modifie que la petite correction de bord. Pour toute forme macroscopique ordinaire, le nombre de particules situées à une distance moléculaire de la surface est négligeable devant le nombre de particules dans le volume. La surface ne devient importante que lorsque le récipient lui-même approche l’échelle moléculaire.
+\lecturetimestamp{00:32:04--00:33:58}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{A-t-on omis les collisions en remplaçant les trajectoires des particules par un potentiel ?}
+\lecturerresponse{Non. La force est la dérivée du potentiel et c’est précisément elle qui produit les collisions. La mécanique statistique à l’équilibre n’exige pas de suivre ces collisions une à une : leur effet est encodé dans l’énergie et donc dans le facteur de Boltzmann.
+\lecturetimestamp{00:33:59--00:35:29}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Que perd-on en ne gardant que les forces de paire et en omettant les véritables interactions à trois corps ?}
+\lecturerresponse{Une énergie microscopique peut comporter de véritables termes à trois corps, et les ordres supérieurs d’un potentiel de paire produisent aussi des corrélations entre plusieurs particules. Dans un gaz dilué, toutefois, la probabilité que trois particules données occupent un même voisinage moléculaire est bien plus faible que celle que deux particules le fassent. Les effets de paire fournissent donc la première correction en densité ; les amas d’ordre supérieur interviennent aux puissances supérieures de la densité.
+\lecturetimestamp{00:35:29--00:38:14}}
+\end{classroomqa}
+
+\section{La fonction de partition, sans détour}
+
+L’avantage de la méthode statistique apparaît maintenant. Une fois l’hamiltonien spécifié, nul besoin de deviner la distribution détaillée des vitesses près des parois ou pendant les collisions. Écrivons la fonction de partition canonique et suivons les étapes du calcul :
+\begin{equation}
+\begin{aligned}
+ Z&=
+ \frac{1}{N!h^{3N}}
+ \int d^{3N}P\,d^{3N}X\\
+ &\qquad{}\times e^{-\beta K(P)}e^{-\beta U(X)},\\
+ K(P)&=\sum_i\frac{p_i^2}{2m}.
+\end{aligned}
+ \label{eq:sm6-full-partition-function}
+\end{equation}
+Le facteur \(h^{3N}\) rend sans dimension la mesure classique dans l’espace des phases, et \(N!\) élimine le surcomptage dû aux permutations de particules identiques.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}
+\caption{Énergie d’un système de nombreuses particules et facteurs cinétique et configurationnel correspondants dans la fonction de partition.}
+\lectureframe{00:40:35}
+\end{figure}
+
+La quantité de mouvement et la position se séparent. En multipliant et en divisant l’intégrale configurationnelle par \(V^N\), isolons le résultat du gaz parfait :
+\begin{align}
+ Z
+ &=\left[
+ \frac{V^N}{N!h^{3N}}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ \right] \notag\\
+ &\quad\times\left[
+ \frac{1}{V^N}
+ \int d^{3N}X\,e^{-\beta U(X)}
+ \right] \notag\\
+ &\equiv Z_0\,C(\beta,V,N).
+ \label{eq:sm6-z-factorization}
+\end{align}
+Le facteur gaussien bien connu vaut
+\begin{equation}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ =\left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm6-gaussian-factor}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}
+\caption{Fonction de partition du gaz parfait isolée du facteur configurationnel normalisé.}
+\lectureframe{00:43:45}
+\end{figure}
+
+Le facteur \(N!\) n’affecte ni le rapport normalisé \(C\), ni les dérivées à \(N\) fixé utilisées ci-dessous. Il n’est toutefois pas dispensable en thermodynamique dans son ensemble : il est essentiel au dénombrement correct des états et à l’extensivité de l’entropie.
+
+Au premier ordre en l’interaction,
+\begin{equation}
+ e^{-\beta U(X)}
+ =1-\beta U(X)+O(U^2).
+ \label{eq:sm6-boltzmann-expansion}
+\end{equation}
+Par conséquent,
+\begin{align}
+ C
+ &=
+ 1-\frac{\beta}{V^N}
+ \sum_{i<j}
+ \int d^{3N}X\,u(|x_i-x_j|)
+ +O(U^2) \notag\\
+ &=
+ 1-\frac{\beta}{V^N}
+ \frac{N(N-1)}{2}
+ V^{N-2}(V U_0)+O(U^2) \notag\\
+ &=
+ 1-\beta\frac{N(N-1)}{2V}U_0+O(U^2).
+ \label{eq:sm6-configurational-correction}
+\end{align}
+Chaque paire a la même \emph{intégrale}, et non la même séparation instantanée ni la même énergie potentielle. Les \(N-2\) intégrales restantes sur les positions apportent chacune un facteur \(V\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}
+\caption{Comptage des paires, volumes associés aux coordonnées spectatrices et première correction configurationnelle \(1-\beta N^2U_0/(2V)\).}
+\lectureframe{00:53:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Le terme dominant \(1\) suppose-t-il que le potentiel s’annule à séparation nulle ?}
+\lecturerresponse{Non. C’est le terme d’ordre zéro du développement de l’exponentielle, indépendant de la valeur de \(u(0)\). Le potentiel intervient au terme suivant, \(-\beta U(X)\).
+\lecturetimestamp{00:46:19--00:46:48}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi peut-on remplacer chaque paire par la même expression si leurs séparations diffèrent ?}
+\lecturerresponse{On n’assimile pas leurs valeurs ponctuelles. Chaque terme est intégré sur le même espace complet des configurations, et les étiquettes des particules ne distinguent pas une paire d’une autre. Les intégrales ont la même forme et la même valeur.
+\lecturetimestamp{00:50:00--00:51:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le nombre de paires est-il \(N(N-1)/2\) ou \(N(N+1)/2\) ?}
+\lecturerresponse{C’est \(N(N-1)/2\) : après avoir choisi une particule, il ne reste que \(N-1\) partenaires distincts, et la division par deux élimine le double comptage des deux ordres. Pour un \(N\) macroscopique, remplacer \(N(N-1)\) par \(N^2\) ne modifie le résultat que d’une correction relative de l’ordre de \(1/N\).
+\lecturetimestamp{00:48:33--00:49:56}}
+\end{classroomqa}
+
+Comme \(\log(1-x)=-x-x^2/2-x^3/3-\cdots\), et non une série alternée, le logarithme au premier ordre est
+\begin{equation}
+ \log Z
+ =
+ \log Z_0
+ -\beta\frac{N(N-1)}{2V}U_0
+ +O(U^2).
+ \label{eq:sm6-logz-correction}
+\end{equation}
+Pour un grand \(N\), nous pouvons remplacer \(N(N-1)\) par \(N^2\), puisque aucune distinction à nombre fini de \(N\) n’est nécessaire.
+
+\begin{remark}La formulation contrôlée à faible densité utilise la fonction de Mayer \(f(r)=e^{-\beta u(r)}-1\) et le deuxième coefficient du viriel
+\begin{equation}
+ B_2(T)=-\frac{1}{2}\int d^3r\,f(r).
+ \label{eq:sm6-second-virial}
+\end{equation}
+Pour un potentiel faible, \(f(r)\simeq-\beta u(r)\), donc \(B_2\simeq\beta U_0/2\), et l’on retrouve le résultat ci-dessous. Cette formulation est nécessaire pour un cœur répulsif dur, pour lequel le développement direct de \(e^{-\beta u}\) n’est pas valable.
+\end{remark}
+
+\section{Énergie, pression et sens de la correction}
+
+Le logarithme de \(Z\) est utile parce que ses dérivées sont mesurables. En supposant que le potentiel microscopique est indépendant de la température,
+\begin{align}
+ E
+ &=-\left(\frac{\partial\log Z}{\partial\beta}\right)_{V,N} \notag\\
+ &=
+ \frac{3}{2}NT
+ +\frac{N(N-1)}{2V}U_0+O(U^2) \notag\\
+ &\simeq
+ N\left(\frac{3}{2}T+\frac{1}{2}\rho U_0\right),
+ \qquad
+ \rho=\frac{N}{V}.
+ \label{eq:sm6-energy-correction}
+\end{align}
+Le terme en apparence non extensif \(N^2\) s’accompagne de \(1/V\). À densité fixée, \(N^2/V=N\rho\), de sorte que l’énergie totale reste proportionnelle à la taille du système. L’énergie supplémentaire par particule est proportionnelle à la densité, car une molécule donnée n’acquiert une énergie de paire que lorsqu’une autre molécule se trouve à proximité.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}
+\caption{La première correction due aux interactions, réécrite sous la forme d’une énergie extensive \(N[3T/2+\rho U_0/2]\).}
+\lectureframe{01:03:25}
+\end{figure}
+
+La pression est plus facile à mesurer. En utilisant le résultat du chapitre précédent,
+\begin{equation}
+ P=T\left(\frac{\partial\log Z}{\partial V}\right)_{T,N},
+ \label{eq:sm6-pressure-from-z}
+\end{equation}
+on obtient
+\begin{align}
+ P
+ &=
+ \frac{NT}{V}
+ +T\frac{\partial}{\partial V}
+ \left(-\beta\frac{N(N-1)}{2V}U_0\right)
+ +O(U^2) \notag\\
+ &=
+ \rho T+\frac{1}{2}\rho^2U_0
+ +O\!\left(\frac{\rho U_0}{N},U^2\right).
+ \label{eq:sm6-pressure-correction}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}
+\caption{Pression obtenue à partir de la dérivée de Helmholtz, avec la première correction quadratique en densité.}
+\lectureframe{01:09:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi \(\rho^2\) constitue-t-il la correction initiale naturelle, plutôt qu’une autre puissance ?}
+\lecturerresponse{Le terme idéal exige la présence d’une particule dans une petite région et est donc proportionnel à \(\rho\). Une interaction exige que deux particules occupent un même voisinage moléculaire, ce dont la probabilité est proportionnelle à \(\rho^2\). Le facteur \(1/2\) est le même facteur de comptage des paires qui empêche de compter séparément \((i,j)\) et \((j,i)\).
+\lecturetimestamp{01:24:27--01:26:00}}
+\end{classroomqa}
+
+À température fixée, on peut faire varier \(V\), mesurer \(\rho=N/V\) et tracer la pression. La loi idéale donne le terme linéaire. La courbure de \(P(\rho)\) révèle la première correction due aux interactions. Dans le cadre de cette approximation de potentiel faible, la correction ne dépend pas explicitement de la température, car le facteur \(T\) dans \eqref{eq:sm6-pressure-from-z} s’annule avec \(\beta=1/T\).
+
+\begin{classroomqa}
+\audiencequestion{Jusqu’à quelle densité peut-on aller avant de devoir prendre en compte les effets à trois corps ?}
+\lecturerresponse{Le dénombrement en densité indique que le terme suivant du viriel est proportionnel à \(\rho^3\), mais son coefficient ne peut pas être déduit de \(U_0\) seul. Il reçoit des contributions de produits corrélés d’interactions de paire et, le cas échéant, de véritables forces à trois corps. Il faut calculer le coefficient d’amas suivant et le comparer au terme en \(\rho^2\) ; une formule conjecturée ne doit pas être présentée comme un résultat.
+\lecturetimestamp{01:10:50--01:13:38}}
+\end{classroomqa}
+
+Le terme du gaz parfait domine lorsque la correction est faible en valeur absolue :
+\begin{equation}
+ \begin{aligned}
+ \frac{1}{2}\rho^2|U_0|&\ll \rho T,\\
+ |\rho U_0|&\ll T
+ \qquad\text{(parametrically)}.
+ \end{aligned}
+ \label{eq:sm6-ideal-validity}
+\end{equation}
+Les deux membres de la seconde inégalité sont des énergies. La grandeur \(\rho U_0\) est l’échelle de l’énergie d’interaction par particule, tandis que \(T\) est l’échelle de l’énergie cinétique. Un gaz dilué ordinaire à température ambiante se trouve largement dans ce régime ; des écarts notables apparaissent seulement lorsque les voisinages moléculaires sont assez souvent occupés pour que les interactions rivalisent avec l’agitation thermique.
+
+\begin{classroomqa}
+\audiencequestion{Peut-on estimer ce critère pour l’air de cette pièce ?}
+\lecturerresponse{Estimons \(U_0\) comme le produit d’une énergie d’interaction moléculaire par un volume moléculaire, multiplions-le par la densité numérique et comparons le résultat à \(k_BT\). Les ordres de grandeur moléculaires montrent que l’échelle d’interaction est bien plus faible dans l’air ambiant ordinaire. Il faut une compression considérable avant que les molécules se retrouvent souvent à portée d’interaction les unes des autres.
+\lecturetimestamp{01:16:24--01:18:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(U_0\) peut-il être de l’un ou l’autre signe ?}
+\lecturerresponse{Oui. Une interaction intégrée positive est globalement répulsive dans cette approximation et élève la pression au-dessus de \(\rho T\). Une valeur négative correspond à une attraction nette et l’abaisse. Ce test de signe fournit une vérification physique immédiate de \eqref{eq:sm6-pressure-correction}.
+\lecturetimestamp{01:18:56--01:20:29}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}
+\caption{Profils qualitatifs de potentiels de paire répulsif et attractif, à côté de la formule de pression dont la correction suit le signe de \(U_0\).}
+\lectureframe{01:21:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on introduire dans ce calcul la répulsion électrostatique, l’attraction gravitationnelle ou les forces moléculaires réelles ?}
+\lecturerresponse{Le potentiel microscopique provient de la physique atomique, moléculaire ou quantique. Les molécules neutres présentent souvent un cœur répulsif à courte portée très raide et une queue attractive de van der Waals de plus grande portée, représentés schématiquement par un potentiel 12--6. Pour un tel cœur dur, il faut utiliser la formule complète faisant intervenir la fonction de Mayer. La gravité est différente : sa portée est longue, son intégrale spatiale ne converge pas de la manière requise, et la limite thermodynamique ordinaire à courte portée utilisée ici ne s’applique pas.
+\lecturetimestamp{01:20:40--01:23:03}}
+\end{classroomqa}
+
+Ce calcul illustre une répartition utile des rôles. La physique microscopique fournit \(u(r)\). La mécanique statistique transforme cette énergie en \(Z\) ; les dérivées de \(Z\) donnent les observables macroscopiques, et le raisonnement physique en vérifie le signe, la dépendance en densité, l’extensivité et le domaine de validité. Le calcul formel ne devient mécanique qu’une fois choisies l’énergie correcte et l’approximation appropriée.
+
+\section{Différentielles exactes et dépendance du chemin}
+
+Nous adoptons maintenant un autre langage mathématique. Dans l’expression \emph{différentielle exacte}, « exacte » ne signifie pas numériquement précise. Cela signifie qu’une forme différentielle est la différentielle d’une véritable fonction scalaire.
+
+Soit \(f(x,y)\) l’altitude au-dessus d’un point du paysage. Un petit déplacement la fait varier de
+\begin{equation}
+ df=
+ \frac{\partial f}{\partial x}\,dx+
+ \frac{\partial f}{\partial y}\,dy
+ =f_x\,dx+f_y\,dy.
+ \label{eq:sm6-total-differential}
+\end{equation}
+Supposons plutôt qu’on nous donne simplement
+\begin{equation}
+ \omega=F_x(x,y)\,dx+F_y(x,y)\,dy.
+ \label{eq:sm6-one-form}
+\end{equation}
+Existe-t-il un scalaire \(f\) tel que \(\omega=df\) ? L’égalité des dérivées partielles mixtes impose
+\begin{equation}
+ \frac{\partial F_y}{\partial x}
+ =
+ \frac{\partial F_x}{\partial y}.
+ \label{eq:sm6-exactness-condition}
+\end{equation}
+Sur un domaine simplement connexe, cette condition de rotationnel nul est également suffisante. Les composantes \((F_x,F_y)\) forment alors le gradient de \(f\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}
+\caption{Altitude comme fonction scalaire, sa différentielle et condition sur les dérivées partielles mixtes garantissant l’exactitude.}
+\lectureframe{01:34:30}
+\end{figure}
+
+La même condition a une interprétation intégrale. Si \(\omega=df\), alors
+\begin{equation}
+ \int_{\gamma:1\to2}\omega=f(2)-f(1)
+ \label{eq:sm6-path-independent-integral}
+\end{equation}
+ne dépend que des extrémités, et non du chemin \(\gamma\). En particulier,
+\begin{equation}
+ \oint_\gamma\omega=0
+ \label{eq:sm6-closed-loop-zero}
+\end{equation}
+pour toute boucle fermée contractile.
+
+L’altitude possède cette propriété. Aller d’un même point à un autre par une route de niveau ou en franchissant une colline donne la même variation nette d’altitude. Ce n’est pas le cas de la consommation de carburant. Un itinéraire vallonné et un itinéraire plat consomment généralement des quantités différentes, et un trajet en boucle ne restitue pas le carburant brûlé. La quantité de carburant restant est certes bien définie si l’on élargit la description de l’état, mais elle n’est pas une fonction de la seule position \((x,y)\) de la voiture : elle garde la mémoire du trajet. La fatigue fournit une analogie du même type : descendre une colline n’annule généralement pas la fatigue accumulée en la gravissant.
+
+\begin{classroomqa}
+\audiencequestion{L’exactitude est-elle la même notion que celle d’une force conservative, et a-t-elle un lien avec la courbure ?}
+\lecturerresponse{Un champ de forces de rotationnel nul est localement conservatif et admet un potentiel ; les deux notions sont donc étroitement liées. Le transport parallèle et la courbure relient aussi les variations le long de boucles fermées à des propriétés géométriques locales, mais cela relève d’un sujet plus vaste. Ici, seule l’affirmation élémentaire est nécessaire : un rotationnel nul entraîne l’indépendance locale du chemin, sous réserve de la condition globale habituelle sur le domaine.
+\lecturetimestamp{01:39:22--01:41:07}}
+\end{classroomqa}
+
+Deux exemples rendent le critère concret. Prenons d’abord
+\begin{equation}
+ F_x=y,\qquad F_y=x.
+ \label{eq:sm6-exact-example}
+\end{equation}
+Les deux dérivées croisées valent \(1\), et l’on a bien
+\begin{equation}
+ \omega=y\,dx+x\,dy=d(xy).
+ \label{eq:sm6-exact-example-potential}
+\end{equation}
+Changeons maintenant un signe :
+\begin{equation}
+ F_x=y,\qquad F_y=-x.
+ \label{eq:sm6-inexact-example}
+\end{equation}
+Alors,
+\begin{equation}
+ \frac{\partial F_x}{\partial y}=1,
+ \qquad
+ \frac{\partial F_y}{\partial x}=-1,
+ \label{eq:sm6-inexact-cross-derivatives}
+\end{equation}
+si bien qu’aucun scalaire \(f(x,y)\) n’a ces deux composantes pour gradient.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}
+\caption{Exemple exact engendré par \(f=xy\) et exemple inexact dont les dérivées croisées valent \(1\) et \(-1\).}
+\lectureframe{01:44:50}
+\end{figure}
+
+\section{La chaleur et le travail ne sont pas des fonctions d’état}
+
+Pour un système compressible simple à nombre de particules fixé, deux variables d’équilibre indépendantes déterminent l’état. On peut choisir \((T,V)\), \((E,V)\) ou, ce qui est particulièrement naturel pour la relation fondamentale, \((S,V)\). Ainsi,
+\begin{equation}
+ E=E(S,V),
+ \end{equation}
+et sa différentielle exacte est
+\begin{equation}
+ dE=
+ \left(\frac{\partial E}{\partial S}\right)_V dS+
+ \left(\frac{\partial E}{\partial V}\right)_S dV
+ =T\,dS-P\,dV.
+ \label{eq:sm6-fundamental-relation}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Adiabatique signifie-t-il lent, isolé, réversible ou à entropie constante ?}
+\lecturerresponse{La terminologie varie selon les contextes. Pour le chemin d’équilibre considéré ici, la transformation est quasi statique et thermiquement isolée ; elle est donc réversible et isentropique. Un processus simplement isolé peut néanmoins être irréversible et produire de l’entropie, tandis que le théorème quantique de l’adiabaticité met l’accent sur une variation lente des paramètres.
+\lecturetimestamp{01:47:13--01:47:54}}
+\end{classroomqa}
+
+À entropie constante, une détente fait varier l’énergie du gaz de \(-P\,dV\). À volume constant, un transfert réversible de chaleur la fait varier de \(T\,dS\). Il est donc utile d’écrire
+\begin{equation}
+ \begin{aligned}
+ \delta W_{\mathrm{on}}&=-P\,dV,
+ &\delta Q_{\mathrm{rev}}&=T\,dS,\\
+ dE&=\delta Q_{\mathrm{rev}}+\delta W_{\mathrm{on}}.&&
+ \end{aligned}
+ \label{eq:sm6-first-law-increments}
+\end{equation}
+Le symbole \(\delta\), plutôt que \(d\), indique que la chaleur et le travail sont des incréments dépendant du chemin, et non les différentielles de fonctions d’état.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}
+\caption{Premier principe pour un système à piston :
+\(dE=-P\,dV+T\,dS\).}
+\lectureframe{01:50:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{L’expression \(-P\,dV\) représente-t-elle le travail effectué sur le gaz ou par le gaz ?}
+\lecturerresponse{Avec la convention de \eqref{eq:sm6-first-law-increments}, il s’agit du travail effectué sur le gaz. Lors d’une expansion \(dV>0\), le gaz effectue un travail positif sur le piston ; le travail effectué sur le gaz est donc négatif et le gaz perd de l’énergie. Les deux descriptions sont égales et de signe opposé.
+\lecturetimestamp{01:51:23--01:52:27}}
+\end{classroomqa}
+
+L’égalité \(\delta Q_{\mathrm{rev}}=T\,dS\) ne doit pas être étendue telle quelle au chauffage irréversible arbitraire. En général,
+\begin{equation}
+ dS=\frac{\delta Q}{T_{\mathrm{boundary}}}+dS_{\mathrm{prod}},
+ \qquad dS_{\mathrm{prod}}\ge 0.
+ \label{eq:sm6-entropy-production}
+\end{equation}
+L’argument sur les différentielles exactes présenté ci-dessous concerne les chemins d’équilibre quasi statiques, pour lesquels la relation réversible est appropriée.
+
+\begin{classroomqa}
+\audiencequestion{Suppose-t-on que tous les chemins de l’argument dans l’espace des états passent par des états d’équilibre ?}
+\lecturerresponse{Oui. Les opérations sont effectuées assez lentement pour que \(P\), \(T\), \(E\), \(S\) et \(V\) restent bien définis le long du chemin. La dépendance de la chaleur et du travail vis-à-vis du chemin n’exige pas que le système soit éloigné de l’équilibre.
+\lecturetimestamp{01:54:30--01:54:39}}
+\end{classroomqa}
+
+Pour tester si la chaleur est une différentielle exacte, prenons \((E,V)\) comme coordonnées et réarrangeons le premier principe :
+\begin{equation}
+ \delta Q_{\mathrm{rev}}=dE+P(E,V)\,dV.
+ \label{eq:sm6-heat-one-form}
+\end{equation}
+S’il existait une fonction d’état \(Q(E,V)\) telle que \(dQ=\delta Q_{\mathrm{rev}}\), ses dérivées partielles devraient être
+\begin{equation}
+ \left(\frac{\partial Q}{\partial E}\right)_V=1,
+ \qquad
+ \left(\frac{\partial Q}{\partial V}\right)_E=P.
+ \label{eq:sm6-hypothetical-heat-derivatives}
+\end{equation}
+L’égalité des dérivées mixtes imposerait alors
+\begin{equation}
+ \begin{aligned}
+ \frac{\partial}{\partial V}
+ \left(\frac{\partial Q}{\partial E}\right)_V
+ &=\frac{\partial}{\partial E}
+ \left(\frac{\partial Q}{\partial V}\right)_E,\\
+ 0&=\left(\frac{\partial P}{\partial E}\right)_V.
+ \end{aligned}
+ \label{eq:sm6-heat-exactness-requirement}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce exactement le même test du rotationnel que pour \(F_x\,dx+F_y\,dy\) ?}
+\lecturerresponse{Oui. Les coefficients de \(dE\) et \(dV\) sont \(1\) et \(P(E,V)\). Leurs dérivées croisées sont \(0\) et \((\partial P/\partial E)_V\). La chaleur ne serait une différentielle exacte que si ces dérivées étaient égales.
+\lecturetimestamp{01:54:39--01:54:52}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}
+\caption{La forme différentielle de la chaleur \(dE+P\,dV\) et les dérivées mixtes qu’exigerait le fait qu’elle soit la différentielle d’une fonction d’état.}
+\lectureframe{01:58:10}
+\end{figure}
+
+Cette condition est déjà physiquement peu plausible : ajouter de l’énergie à un gaz à volume constant modifie généralement sa pression. Le gaz parfait fournit un calcul direct :
+\begin{equation}
+ PV=NT,
+ \qquad
+ E=\frac{3}{2}NT
+ \quad\Longrightarrow\quad
+ P=\frac{2E}{3V}.
+ \label{eq:sm6-ideal-pressure-energy}
+\end{equation}
+On obtient donc
+\begin{equation}
+ \left(\frac{\partial P}{\partial E}\right)_V
+ =\frac{2}{3V}\ne0.
+ \label{eq:sm6-heat-curl-fails}
+\end{equation}
+Le test du rotationnel échoue : \(\delta Q_{\mathrm{rev}}\) n’est pas une différentielle exacte. L’incrément de travail \(\delta W_{\mathrm{on}}=-P\,dV\) échoue pour la même raison.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}
+\caption{Les relations du gaz parfait réunies donnent \(P=2E/(3V)\).}
+\lectureframe{02:00:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}
+\caption{L’argument complet : puisque \((\partial P/\partial E)_V\ne0\), la forme différentielle de la chaleur ne peut pas être exacte.}
+\lectureframe{02:00:35}
+\end{figure}
+
+Pour un cycle d’équilibre fermé,
+\begin{equation}
+ \oint dE=0,
+ \qquad
+ \oint\delta Q_{\mathrm{rev}}
+ =-\oint\delta W_{\mathrm{on}}.
+ \label{eq:sm6-cycle-balance}
+\end{equation}
+Le système retrouve la même énergie, mais la chaleur et le travail ne sont pas nécessairement nuls séparément. Leurs valeurs dépendent du chemin parcouru dans l’espace des états. C’est pourquoi un moteur cyclique peut absorber de la chaleur et fournir un travail net alors que son fluide de travail revient à son état thermodynamique initial.
+
+\begin{classroomqa}
+\audiencequestion{Cette dépendance au chemin est-elle liée au rendement des moteurs, à l’hystérésis et à la mémoire ?}
+\lecturerresponse{Les cycles des moteurs l’exploitent directement : sur un cycle fermé, la chaleur reçue compense le travail net fourni tandis que la fonction d’état \(E\) retrouve sa valeur initiale. L’hystérésis et la mémoire font également intervenir une dépendance au chemin, même si elles nécessitent souvent des variables internes supplémentaires ou une physique hors équilibre. La conclusion présente est plus restreinte et vaut déjà pour les chemins d’équilibre réversibles : la chaleur et le travail sont des transferts, pas des propriétés stockées dans l’état thermodynamique.
+\lecturetimestamp{02:02:21--02:03:17}}
+\end{classroomqa}
+
+Les deux volets de l’argument se rejoignent maintenant. Une mesure n’a de sens qu’une fois précisés ses paramètres de contrôle et ses conditions d’équilibre. Une approximation n’a de sens qu’une fois précisés son petit paramètre et son critère d’échec. Une grandeur thermodynamique est une fonction d’état uniquement si sa différentielle satisfait au critère d’indépendance du chemin. Dans chaque cas, les mathématiques rigoureuses ne remplacent pas l’interprétation physique ; elles indiquent précisément dans quelles conditions cette interprétation est justifiée.

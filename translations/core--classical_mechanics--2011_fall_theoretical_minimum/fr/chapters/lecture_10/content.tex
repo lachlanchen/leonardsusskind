@@ -1,0 +1,613 @@
+\chapter{Invariance de jauge et mouvement des particules chargées}
+
+\lectureoverview{Le champ magnétique est à divergence nulle ; il peut donc être représenté par un potentiel vecteur. Cette représentation n’est pas unique, mais c’est précisément ce qui permet d’introduire les forces magnétiques dans le principe de moindre action. Nous déduisons la force de Lorentz, distinguons la quantité de mouvement canonique de la quantité de mouvement mécanique, construisons le Hamiltonien et utilisons deux jauges différentes pour résoudre le mouvement dans un champ magnétique uniforme. Pour conclure, nous situons cette mécanique particulaire dans les domaines plus vastes de la théorie de Maxwell, des monopôles magnétiques et de la dynamique dans l’espace des phases.}
+
+\section{Dernière étape du cours de mécanique}
+
+Le cours commence par une petite surprise dans le calendrier. Le programme consiste à terminer l’étude des particules chargées dans des champs magnétiques, peut-être à ajouter les champs électriques, puis à décider ce qui restera pour une prochaine séance. Le public fait remarquer qu’il s’agit déjà du dixième cours. Dans ce cas, l’objectif est plus précis : achever le problème magnétique et s’en servir pour conclure l’étude de la structure formelle de la mécanique classique.
+
+Commençons par un bref rappel. Un champ magnétique est un champ vectoriel,
+\begin{equation}
+  \mathbf B=\mathbf B(\mathbf x),
+  \qquad
+  B_i(\mathbf x)=(B_x,B_y,B_z),
+\end{equation}
+doté d’une norme et d’une direction en chaque point. Dans ce cours, on suppose que les champs électrique et magnétique extérieurs sont statiques. Cette restriction vise à clarifier la présentation ; elle ne signifie pas que les champs électromagnétiques doivent toujours être indépendants du temps.
+
+Il y a aussi une contrainte :
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+Dans l’analogie avec un fluide, cela signifie qu’il n’y a ni extrémité de conduite d’où le flux magnétique s’écoulerait, ni évacuation où il disparaîtrait. En électrodynamique classique usuelle, il n’existe ni source ni puits magnétique. L’expérience n’a pas établi l’existence d’un monopôle magnétique élémentaire, même si le cours laisse à plusieurs reprises ouverte la possibilité qu’une théorie plus complète en contienne un.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_02.png}
+\caption{Les composantes du champ, la condition d’absence de sources \(\nabla\cdot\mathbf B=0\) et la représentation par un potentiel vecteur sont présentées ensemble au début du cours.}
+\lectureframe{00:04:56}
+\end{figure}
+
+Plutôt que de vérifier la divergence chaque fois qu’on propose un champ, on peut satisfaire automatiquement cette contrainte. Écrivons
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+L’identité
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0
+\end{equation}
+effectue alors le calcul à notre place. Le nouveau champ \(\mathbf A\) est le potentiel vecteur.
+
+\section{Le prix d’une contrainte automatique}
+
+L’introduction de \(\mathbf A\) résout un problème et en crée un autre : ce potentiel n’est pas unique. Pour toute fonction scalaire \(S(\mathbf x)\),
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla S
+\end{equation}
+a le même rotationnel, puisque
+\begin{equation}
+  \nabla\times(\nabla S)=0.
+\end{equation}
+Ainsi, \(\mathbf A\) et \(\mathbf A'\) décrivent le même champ magnétique. Sur un domaine suffisamment simple, c’est toute l’ambiguïté locale : si deux potentiels vecteurs ont le même rotationnel, leur différence est localement un gradient. La topologie globale peut nécessiter plusieurs cartes ou entraîner d’autres subtilités, mais rien de cela n’est nécessaire pour les champs étudiés ici.
+
+Un représentant particulier est appelé une \emph{jauge}, et le passage d’un représentant à un autre est une \emph{transformation de jauge}. Le champ \(\mathbf B\) ne change pas : il est invariant de jauge. Le principe de travail est que les prédictions physiques observables ne doivent pas dépendre du représentant choisi. Nous avons élargi la description en introduisant \(\mathbf A\), puis éliminé cette redondance descriptive en exigeant des prédictions invariantes de jauge.
+
+\subsection{Trois jauges pour un même champ uniforme}
+
+Le cours passe aussitôt à un exemple concret. Choisissons les coordonnées de sorte qu’un champ magnétique uniforme soit dirigé selon l’axe \(z\) :
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=B,
+\end{equation}
+où \(B\) est une constante. Un premier potentiel vecteur est
+\begin{equation}
+  \mathbf A^{(1)}=(0,Bx,0).
+\end{equation}
+En effet,
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -
+  \frac{\partial A_x^{(1)}}{\partial y}
+  =B.
+\end{equation}
+Un deuxième choix est
+\begin{equation}
+  \mathbf A^{(2)}=(-By,0,0),
+\end{equation}
+pour lequel
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-By)}{\partial y}
+  =B.
+\end{equation}
+
+Pour passer de l’un à l’autre, prenons
+\begin{equation}
+  S=Cxy,
+  \qquad
+  \nabla S=(Cy,Cx,0).
+\end{equation}
+À partir de \(\mathbf A^{(1)}\), les composantes transformées sont
+\begin{equation}
+  A_x'=Cy,
+  \qquad
+  A_y'=(B+C)x,
+  \qquad
+  A_z'=0.
+\end{equation}
+Le choix \(C=-B\) donne \(\mathbf A^{(2)}\). Le choix \(C=-B/2\) donne la jauge symétrique,
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \left(-\frac{B}{2}y,\frac{B}{2}x,0\right)
+  =
+  \frac12\,\mathbf B\times\mathbf r.
+\end{equation}
+Ces trois potentiels ont le même rotationnel. Nous reviendrons délibérément aux deux premiers, car chacun rend manifeste une symétrie de translation différente.
+
+\begin{classroomqa}
+\audiencequestion{Le potentiel vecteur peut-il avoir la même symétrie que le champ magnétique uniforme ?}
+\lecturerresponse{Il ne peut pas être spatialement constant comme le champ magnétique, car un potentiel vecteur constant a un rotationnel nul. Une jauge unique ne peut pas non plus rendre manifeste chacune des symétries de translation d’un champ uniforme non nul. La jauge symétrique rend manifeste les rotations autour de l’axe \(z\). La leçon précise n’est donc pas que toutes les symétries doivent être absentes de \(\mathbf A\), mais que le potentiel n’a pas besoin d’afficher simultanément toutes les symétries du champ physique.}
+\end{classroomqa}
+
+La famille \(S=Cxy\) n’est qu’un exemple. Plus généralement, on peut imposer des conditions de jauge utiles, par exemple faire s’annuler une composante de \(\mathbf A\) dans une région appropriée. Le terme \emph{jauge} vient historiquement d’une tentative infructueuse d’interpréter cette liberté comme un changement local d’unités. Cette interprétation a été abandonnée, mais le nom est resté.
+
+\begin{classroomqa}
+\audiencequestion{Une transformation de jauge consiste-t-elle toujours à ajouter le gradient d’un scalaire ?}
+\lecturerresponse{C’est la transformation utilisée ici pour un potentiel vecteur électromagnétique statique. D’autres théories de jauge font appel à des transformations plus élaborées et, en gravitation, un changement de coordonnées est souvent décrit comme un changement de jauge, car la géométrie physique ne peut dépendre des étiquettes de coordonnées. Dans ce chapitre, toutefois, une transformation de jauge désigne \(\mathbf A\mapsto\mathbf A+\nabla S\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Une jauge peut-elle être plus avantageuse qu’une autre pour les calculs ?}
+\lecturerresponse{Très souvent. Une symétrie ou une loi de conservation peut être manifeste dans une jauge et cachée dans une autre. Ce n’est pas une simple possibilité abstraite : plus loin dans ce cours, une jauge rendra \(y\) cyclique, tandis qu’une autre rendra \(x\) cyclique. Les deux calculs décrivent la même trajectoire.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Cette ambiguïté est-elle liée au choix d’espaces propres ou à la recherche de valeurs propres ?}
+\lecturerresponse{Il n’y a ici aucun lien direct nécessaire. Ces deux sujets impliquent de faire des choix mathématiques utiles, mais un changement de base propre et une transformation de jauge électromagnétique sont des structures différentes.}
+\end{classroomqa}
+
+\section{Le lagrangien magnétique}
+
+Revenons maintenant à la mécanique. L’objet étudié est le lagrangien d’une particule ponctuelle en mouvement dans un champ magnétique donné, et non encore le lagrangien du champ électromagnétique lui-même. Avec le système d’unités utilisé dans ce cours,
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{e}{c}
+  \left(
+    A_x\dot x+A_y\dot y+A_z\dot z
+  \right).
+\end{equation}
+En notation vectorielle,
+\begin{equation}
+  \boxed{
+  L=\frac12 m\mathbf v^2+\frac{e}{c}\mathbf A(\mathbf x)\cdot\mathbf v
+  }.
+\end{equation}
+Le coefficient \(e\) est la charge de la particule. Le facteur explicite \(c\) dépend du système d’unités ; le contenu structurel est le couplage dépendant de la vitesse \(\mathbf A\cdot\mathbf v\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_03.png}
+\caption{Le lagrangien de la particule dans un champ magnétique est écrit composante par composante, afin de faire apparaître les trois couplages à la vitesse.}
+\lectureframe{00:25:29}
+\end{figure}
+
+Au départ, ce terme est proposé plutôt que déduit. On nous invite à l’essayer et à examiner les équations qu’il produit. On pourrait aussi essayer un terme construit directement à partir de \(\mathbf B\), mais il produirait des dérivées de \(\mathbf B\), et non la force de Lorentz. Le potentiel vecteur est la grandeur locale qui se couple correctement à la trajectoire.
+
+\subsection{Pourquoi un changement de jauge ne modifie pas la trajectoire}
+
+Avant de varier l’action, examinons l’effet d’une transformation de jauge sur celle-ci. Pour des points de départ et d’arrivée fixés dans l’espace-temps,
+\begin{equation}
+  \mathcal S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L\,dt.
+\end{equation}
+Sous la transformation \(\mathbf A\mapsto\mathbf A+\nabla S\), sa variation est
+\begin{align}
+  \Delta\mathcal S
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}
+  \nabla S(\mathbf x)\cdot\dot{\mathbf x}\,dt\\
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}\frac{dS(\mathbf x(t))}{dt}\,dt\\
+  &=
+  \frac{e}{c}
+  \left[
+    S(\mathbf x_f)-S(\mathbf x_i)
+  \right].
+\end{align}
+La valeur numérique de l’action change donc. Mais le terme ajouté ne dépend que des extrémités fixées, et non de l’intérieur de la trajectoire que l’on fait varier. Sa variation est nulle et il ne peut pas modifier la trajectoire stationnaire.
+
+\begin{classroomqa}
+\audiencequestion{Que signifie l’invariance de jauge des équations ?}
+\lecturerresponse{Après le calcul d’Euler--Lagrange, \(\mathbf A\) ne doit intervenir que dans des combinaisons de rotationnels que l’on reconnaît comme les composantes de \(\mathbf B\). Le potentiel lui-même peut changer et l’action peut subir un décalage de bord, mais la trajectoire physique et la loi de force doivent rester inchangées.}
+\end{classroomqa}
+
+\section{Deux notions de quantité de mouvement}
+
+Les équations d’Euler--Lagrange peuvent s’écrire
+\begin{equation}
+  \dot p_i=\frac{\partial L}{\partial x_i},
+  \qquad
+  p_i=\frac{\partial L}{\partial\dot x_i}.
+\end{equation}
+Il faut alors distinguer deux quantités de mouvement. La quantité de mouvement mécanique usuelle est
+\begin{equation}
+  \boldsymbol{\pi}=m\mathbf v.
+\end{equation}
+La quantité de mouvement canonique est définie à partir du lagrangien :
+\begin{equation}
+  p_i
+  =
+  m\dot x_i+\frac{e}{c}A_i.
+\end{equation}
+Ainsi,
+\begin{equation}
+  \boxed{
+  \boldsymbol{\pi}
+  =
+  \mathbf p-\frac{e}{c}\mathbf A
+  =
+  m\mathbf v
+  }.
+\end{equation}
+Pour une particule libre, ou soumise à un potentiel ordinaire dépendant de la position, les quantités de mouvement canonique et mécanique coïncident. L’interaction magnétique dépend de la vitesse : elles ne coïncident donc plus.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_04.png}
+\caption{Le tableau distingue la définition canonique \(p_i=\partial L/\partial\dot x_i\) de \(m\dot x_i\) et commence à la dériver le long de la trajectoire.}
+\lectureframe{00:37:33}
+\end{figure}
+
+Cette distinction n’est pas une simple question de terminologie. La quantité de mouvement canonique intervient dans les équations de Hamilton, les crochets de Poisson et la loi de conservation associée à une coordonnée cyclique. La quantité de mouvement mécanique est le produit directement mesurable de la masse par la vitesse.
+
+\begin{classroomqa}
+\audiencequestion{Le terme \((e/c)\mathbf A\cdot\mathbf v\) représente-t-il une énergie cinétique ou une énergie potentielle, et comment savoir s’il faut l’ajouter ou le soustraire ?}
+\lecturerresponse{Ce n’est ni une énergie cinétique ordinaire ni un potentiel ordinaire dépendant de la position. C’est une interaction dépendant de la vitesse. À ce stade, son signe fait partie du couplage proposé ; changer ce signe revient à inverser le signe de la charge ou de \(\mathbf A\). Le critère décisif est la loi de force qui en découle.}
+\end{classroomqa}
+
+\section{Du calcul à la force de Lorentz}
+
+Le cours détaille lentement le calcul d’une composante. Pour \(p_x\),
+\begin{equation}
+  p_x=m\dot x+\frac{e}{c}A_x(\mathbf x).
+\end{equation}
+Même si le champ extérieur est statique, \(A_x(\mathbf x(t))\) varie avec le mouvement de la particule. Sa dérivée totale par rapport au temps est
+\begin{equation}
+  \frac{dA_x}{dt}
+  =
+  \frac{\partial A_x}{\partial x}\dot x
+  +
+  \frac{\partial A_x}{\partial y}\dot y
+  +
+  \frac{\partial A_x}{\partial z}\dot z.
+\end{equation}
+Par conséquent,
+\begin{equation}
+  \dot p_x
+  =
+  m\ddot x
+  +
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_yA_x\,\dot y
+    +
+    \partial_zA_x\,\dot z
+  \right).
+\end{equation}
+Le membre de droite de l’équation d’Euler--Lagrange est
+\begin{equation}
+  \frac{\partial L}{\partial x}
+  =
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_xA_y\,\dot y
+    +
+    \partial_xA_z\,\dot z
+  \right).
+\end{equation}
+Les termes \(\partial_xA_x\,\dot x\) s’annulent. En regroupant les termes restants selon les composantes de la vitesse, on obtient
+\begin{align}
+  m\ddot x
+  &=
+  \frac{e}{c}
+  \left[
+    \left(\partial_xA_y-\partial_yA_x\right)\dot y
+    +
+    \left(\partial_xA_z-\partial_zA_x\right)\dot z
+  \right].
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{Calcul achevé pour la composante \(x\) : les dérivées du potentiel vecteur se sont regroupées en combinaisons de rotationnels.}
+\lectureframe{00:46:41}
+\end{figure}
+
+En utilisant
+\begin{align}
+  B_y&=\partial_zA_x-\partial_xA_z,\\
+  B_z&=\partial_xA_y-\partial_yA_x,
+\end{align}
+on obtient
+\begin{equation}
+  m a_x
+  =
+  \frac{e}{c}
+  \left(B_zv_y-B_yv_z\right)
+  =
+  \frac{e}{c}
+  (\mathbf v\times\mathbf B)_x.
+\end{equation}
+Le même calcul pour \(y\) et \(z\) donne
+\begin{equation}
+  \boxed{
+  m\mathbf a=\frac{e}{c}\,\mathbf v\times\mathbf B
+  }.
+\end{equation}
+C’est la loi de force de Lorentz magnétique. Le cours appelle l’équation complète l’équation de Newton--Lorentz : Newton fournit \(m\mathbf a\), et Lorentz, la force magnétique.
+
+Le résultat satisfait aux trois critères posés avant le calcul. Le nouveau terme produit une force non nulle. La force est invariante de jauge, car seul \(\nabla\times\mathbf A=\mathbf B\) subsiste. Enfin, le potentiel vecteur, malgré la redondance qu’il introduit, permet de formuler la force magnétique à partir d’un principe variationnel. Remplacer \(\mathbf A\) par \(\mathbf B\) dans le terme d’interaction conduirait à des combinaisons faisant intervenir le rotationnel de \(\mathbf B\) et ne reproduirait pas cette loi.
+
+\section{Le Hamiltonien et le sens de l’énergie}
+
+La question suivante est de savoir si ce système admet aussi une description hamiltonienne. Commençons par
+\begin{align}
+  p_x&=m\dot x+\frac{e}{c}A_x,\\
+  p_y&=m\dot y+\frac{e}{c}A_y,\\
+  p_z&=m\dot z+\frac{e}{c}A_z.
+\end{align}
+Ces relations peuvent être inversées :
+\begin{align}
+  \dot x&=\frac{1}{m}\left(p_x-\frac{e}{c}A_x\right),\\
+  \dot y&=\frac{1}{m}\left(p_y-\frac{e}{c}A_y\right),\\
+  \dot z&=\frac{1}{m}\left(p_z-\frac{e}{c}A_z\right).
+\end{align}
+La transformation de Legendre est
+\begin{equation}
+  H=\sum_i p_i\dot x_i-L.
+\end{equation}
+Après substitution et simplification, on obtient
+\begin{equation}
+  \boxed{
+  H(\mathbf x,\mathbf p)
+  =
+  \frac{1}{2m}
+  \left(
+    \mathbf p-\frac{e}{c}\mathbf A(\mathbf x)
+  \right)^2
+  }.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_06.png}
+\caption{La construction du Hamiltonien achevée, les trois quantités de mouvement canoniques figurent à gauche et les carrés avec couplage minimal à droite.}
+\lectureframe{00:53:05}
+\end{figure}
+
+Écrit en variables canoniques, ce Hamiltonien diffère de celui de la particule libre. Exprimé en fonction de la vitesse physique, toutefois,
+\begin{equation}
+  H=\frac{\boldsymbol{\pi}^{\,2}}{2m}
+  =\frac12m\mathbf v^2.
+\end{equation}
+Il n’y a aucune contradiction. La même énergie numérique est représentée par une fonction différente de \((\mathbf x,\mathbf p)\) ; les équations de Hamilton sont donc différentes, bien que l’énergie soit toujours égale à l’énergie cinétique ordinaire.
+
+Le champ étant statique, \(H\) se conserve. La vitesse est donc constante. La force de Lorentz le montre directement :
+\begin{equation}
+  \frac{d}{dt}\left(\frac12mv^2\right)
+  =
+  m\mathbf v\cdot\mathbf a
+  =
+  \frac{e}{c}\,
+  \mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+Un champ magnétique modifie la direction du mouvement, mais pas la norme de la vitesse. Il courbe la trajectoire sans effectuer de travail.
+
+\section{Résoudre le problème du champ uniforme par un changement de jauge}
+
+Après la pause, reprenons le champ uniforme
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z}.
+\end{equation}
+Le but n’est pas seulement de résoudre une trajectoire bien connue, mais de montrer pourquoi le choix d’une jauge peut rendre presque immédiat un calcul fondé sur une symétrie.
+
+\subsection{Première jauge : les coordonnées y et z sont cycliques}
+
+Prenons
+\begin{equation}
+  A_x=A_z=0,
+  \qquad
+  A_y=Bx.
+\end{equation}
+Alors
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{eB}{c}x\dot y.
+\end{equation}
+Les coordonnées \(y\) et \(z\) n’apparaissent pas explicitement. Elles sont cycliques, et leurs quantités de mouvement canoniques se conservent. Pour \(z\),
+\begin{equation}
+  p_z=m\dot z,
+  \qquad
+  \dot p_z=0,
+\end{equation}
+d’où
+\begin{equation}
+  a_z=0.
+\end{equation}
+La particule se déplace uniformément le long du champ.
+
+Pour \(y\),
+\begin{equation}
+  p_y=m\dot y+\frac{eB}{c}x,
+  \qquad
+  \dot p_y=0.
+\end{equation}
+Par conséquent,
+\begin{equation}
+  m a_y+\frac{eB}{c}v_x=0,
+  \qquad
+  \boxed{m a_y=-\frac{eB}{c}v_x}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_07.png}
+\caption{Dans la jauge \(A_y=Bx\), le tableau consigne les quantités de mouvement conservées \(p_z\) et \(p_y\), ainsi que la composante \(y\) de la force de Lorentz qui en résulte.}
+\lectureframe{01:03:50}
+\end{figure}
+
+\subsection{Deuxième jauge : la coordonnée x est cyclique}
+
+Passons maintenant à
+\begin{equation}
+  A_x=-By,
+  \qquad
+  A_y=A_z=0.
+\end{equation}
+Le lagrangien devient
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  -
+  \frac{eB}{c}y\dot x.
+\end{equation}
+Cette fois, \(x\) est cyclique :
+\begin{equation}
+  p_x=m\dot x-\frac{eB}{c}y,
+  \qquad
+  \dot p_x=0.
+\end{equation}
+On a donc
+\begin{equation}
+  \boxed{m a_x=\frac{eB}{c}v_y}.
+\end{equation}
+Avec le résultat obtenu dans la première jauge et \(a_z=0\), cela donne exactement
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times B\hat{\mathbf z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_08.png}
+\caption{Après le changement de jauge, les deux composantes transverses de la force de Lorentz apparaissent. Chacune a été obtenue comme loi de conservation d’une quantité de mouvement canonique dans une jauge différente.}
+\lectureframe{01:08:05}
+\end{figure}
+
+La symétrie de translation physique était présente tout au long du calcul. Le choix de jauge a seulement changé la partie de cette symétrie qui apparaissait explicitement comme une coordonnée cyclique ordinaire. C’est pourquoi la quantité de mouvement canonique peut se conserver sous une jauge et prendre une autre forme sous une autre, tandis que l’accélération mesurable reste la même.
+
+\begin{classroomqa}
+\audiencequestion{Les composantes de la quantité de mouvement canonique sont-elles invariantes de jauge ? Sont-elles directement physiques ?}
+\lecturerresponse{Non. Sous la transformation \(\mathbf A\mapsto\mathbf A+\nabla S\), la quantité de mouvement canonique varie de \((e/c)\nabla S\). La quantité de mouvement mécanique \(m\mathbf v=\mathbf p-(e/c)\mathbf A\) est invariante de jauge et directement liée à la vitesse de la particule. La quantité de mouvement canonique reste néanmoins indispensable, car c’est la variable utilisée dans les équations de Hamilton et les crochets de Poisson.}
+\end{classroomqa}
+
+\section{La trajectoire dans un champ magnétique uniforme}
+
+Le travail formel est terminé ; examinons maintenant le mouvement. Supposons d’abord que \(v_z=0\), de sorte que la particule reste dans le plan \(xy\). L’accélération est perpendiculaire à la vitesse et sa norme est constante :
+\begin{equation}
+  |\mathbf a|
+  =
+  \frac{|e|}{mc}vB.
+\end{equation}
+Une particule qui se déplace à vitesse constante avec une accélération de norme constante, toujours perpendiculaire à sa vitesse, décrit un cercle.
+
+Si \(r\) désigne le rayon, l’accélération centripète vaut \(v^2/r\). En égalant les normes, on obtient
+\begin{equation}
+  m\frac{v^2}{r}
+  =
+  \frac{|e|}{c}vB,
+\end{equation}
+et donc
+\begin{equation}
+  \boxed{
+  r=\frac{mcv}{|e|B}
+  }.
+\end{equation}
+Le cours écrit d’abord l’expression sans \(c\), constate qu’elle ne correspond pas à la convention choisie pour la force de Lorentz, puis rétablit ce facteur. Le signe de \(eB\) détermine le sens de rotation ; le rayon, lui, est positif.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{Trajectoire circulaire, vitesse tangentielle et relation donnant le rayon, une fois le facteur \(c\) manquant rétabli.}
+\lectureframe{01:16:50}
+\end{figure}
+
+Le champ fixe la relation entre la vitesse et le rayon, mais pas le centre du cercle. Celui-ci peut se trouver n’importe où dans le plan transverse. Une vitesse transverse plus grande donne une orbite plus grande ; une charge ou un champ magnétique plus grand donne une orbite plus serrée.
+
+Si \(v_z\neq0\), le mouvement transverse reste circulaire tandis que \(z\) progresse uniformément. La combinaison de ces deux mouvements forme une hélice autour de la direction du champ magnétique.\editorialnote{Le cours établit séparément les deux éléments : \(a_z=0\) et le mouvement circulaire transverse. Leur combinaison donne la trajectoire hélicoïdale annoncée.}
+
+\section{D’où vient le couplage ?}
+
+Le calcul de la trajectoire amène le public à revenir au point de départ. Le terme \((e/c)\mathbf A\cdot\mathbf v\) était-il simplement connu d’avance ? Pour répondre honnêtement, plusieurs points de départ cohérents sont possibles.
+
+\begin{classroomqa}
+\audiencequestion{Connaissions-nous simplement le lagrangien magnétique et l’avons-nous écrit ?}
+\lecturerresponse{Dans cette présentation, oui : on écrit le couplage linéaire en vitesse et on l’étudie. À partir de ce terme, on découvre l’invariance de jauge, puis on constate que les combinaisons de rotationnels qui apparaissent dans les équations se comportent comme un champ magnétique. On peut aussi partir de la force de Lorentz observée et chercher une action, ou commencer par exiger l’invariance de jauge, comme on le fait aujourd’hui. Historiquement, ces éléments ont été découverts dans un ordre moins direct.}
+\end{classroomqa}
+
+Il existe aussi un critère utile pour déterminer si un lagrangien proposé permet la construction hamiltonienne usuelle. Les équations
+\begin{equation}
+  p_i=\frac{\partial L}{\partial\dot x_i}
+\end{equation}
+doivent pouvoir être inversées par rapport aux vitesses, au moins pour le système régulier considéré ici. Plus précisément, la hessienne par rapport aux vitesses
+\begin{equation}
+  \frac{\partial^2L}
+       {\partial\dot x_i\,\partial\dot x_j}
+\end{equation}
+doit être non singulière. Pour cette particule, elle vaut simplement \(m\delta_{ij}\) ; la transformation de Legendre est donc sans ambiguïté.
+
+\begin{classroomqa}
+\audiencequestion{À quelles conditions un lagrangien proposé est-il légitime ?}
+\lecturerresponse{Pour la mécanique usuelle que nous développons ici, il doit conduire à des équations du mouvement sans ambiguïté et permettre de définir un Hamiltonien unique après avoir exprimé les vitesses en fonction des quantités de mouvement. Il existe des lagrangiens singuliers en théorie des champs de jauge, mais le traitement de leurs contraintes nécessite des outils qui dépassent le cadre de ce cours.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La symétrie de jauge donne-t-elle elle-même une quantité conservée ?}
+\lecturerresponse{Pas dans le seul problème d’une particule placée dans un champ extérieur prescrit. Pour discuter correctement de la loi de conservation correspondante, il faut inclure le champ électromagnétique parmi les variables dynamiques. Dans la théorie complète des champs, l’invariance de jauge est liée à la conservation de la charge, mais cela nécessite l’action du champ et les équations de Maxwell.}
+\end{classroomqa}
+
+\section{Champs extérieurs prescrits et dynamique de Maxwell}
+
+Jusqu’ici, rien ne décrit l’évolution du champ électromagnétique. Celui-ci a été fourni comme champ extérieur fixe, et la seule question était : étant donnés \(\mathbf E\) et \(\mathbf B\), comment la particule se déplace-t-elle ?
+
+\begin{classroomqa}
+\audiencequestion{Quel est le lien avec les équations de Maxwell ?}
+\lecturerresponse{Pour déduire les équations de Maxwell, il faut ajouter l’action propre du champ électromagnétique et faire varier le champ en même temps que la trajectoire de la particule. Le couplage \((e/c)\int\mathbf A\cdot d\mathbf x\) est une partie de l’action complète. Le terme de champ n’influe pas sur la variation relative à la particule lorsque le champ extérieur est maintenu fixe, mais il est essentiel lorsque le champ devient lui-même dynamique.}
+\end{classroomqa}
+
+En mécanique classique, on pourrait ignorer le formalisme de l’action et simplement postuler
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times\mathbf B.
+\end{equation}
+Pour décrire le mouvement d’une particule test, cette équation différentielle est parfaitement pertinente. Mais les structures lagrangienne et hamiltonienne deviennent indispensables en mécanique quantique, où le potentiel vecteur intervient directement.
+
+\section{Monopôles et représentation par un solénoïde mince}
+
+Que se passerait-il si
+\begin{equation}
+  \nabla\cdot\mathbf B\neq0?
+\end{equation}
+Alors \(\mathbf B\) ne peut pas être représenté partout par un potentiel vecteur lisse unique, puisque la divergence de tout rotationnel est nulle. La construction globale simple utilisée dans ce chapitre échoue.
+
+Le cours illustre le problème en imaginant un aimant barre ou un solénoïde extrêmement long et très mince. Près d’une extrémité, si l’autre est repoussée arbitrairement loin, le champ extérieur ressemble à celui d’un seul pôle magnétique. Le flux de retour n’a pas disparu : il est confiné à l’intérieur du tube mince. Si l’on idéalisait le tube au point de le rendre inobservable, il jouerait le rôle du fil attaché à un monopôle apparent.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{Schéma au tableau du solénoïde mince : les lignes de champ s’écartent d’un pôle apparent tandis que le flux de retour reste confiné dans un tube étroit.}
+\lectureframe{01:27:35}
+\end{figure}
+
+Dans l’électromagnétisme classique ordinaire, confiner un flux fixe dans une section qui tend vers zéro fait croître la norme du champ et l’énergie du champ. Le cours recourt à des réponses délibérément extravagantes sur l’énergie infinie pour souligner qu’un monopôle réaliste nécessiterait une nouvelle physique, et ne serait pas simplement un solénoïde ordinaire rendu de plus en plus mince. En théorie quantique, un tube de flux convenablement quantifié peut devenir inobservable à l’extérieur de son cœur ; c’est l’idée qui sous-tend la construction du fil de Dirac, même si une théorie complète des monopôles dépasse le cadre de ce cours.
+
+\begin{classroomqa}
+\audiencequestion{Une particule ponctuelle peut-elle avoir un moment magnétique ? Est-ce un monopôle ?}
+\lecturerresponse{Non. Un moment magnétique est un dipôle : il présente deux pôles de caractères opposés et égaux. Un monopôle porterait une charge magnétique nette. Découper un aimant ordinaire ne permet pas d’isoler ses pôles ; chaque morceau acquiert ses propres extrémités nord et sud.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La difficulté à séparer les deux extrémités est-elle analogue au confinement des quarks ?}
+\lecturerresponse{L’analogie est utile. Séparer des quarks confinés ne produit pas de quark isolé dans les observations ordinaires ; le champ qui les relie engendre de nouveaux objets liés. Les mécanismes ne sont pas identifiés ici, mais l’image d’extrémités reliées par une structure de flux inévitable est semblable.}
+\end{classroomqa}
+
+La conclusion du cours reste prudente. Les monopôles magnétiques ne font pas partie de la théorie classique ordinaire utilisée dans cette dérivation, mais de nombreuses théories des hautes énergies en contiennent. S’ils existent comme particules élémentaires, on s’attend à ce qu’ils impliquent des échelles d’énergie très supérieures à celles étudiées dans ce cours de mécanique.
+
+\section{L’autre algèbre de Hamilton et le sujet laissé en suspens}
+
+Une dernière question du public porte sur les quaternions de Hamilton. Ils sont historiquement distincts de la mécanique hamiltonienne. Hamilton cherchait une algèbre qui jouerait, pour les rotations dans l’espace à trois dimensions, un rôle analogue à celui des nombres complexes pour les rotations dans le plan. Le résultat repose sur trois unités imaginaires \(i,j,k\), telles que
+\begin{equation}
+  i^2=j^2=k^2=ijk=-1,
+\end{equation}
+et, par exemple,
+\begin{equation}
+  ij=k,
+  \qquad
+  ji=-k.
+\end{equation}
+Les quaternions unitaires fournissent une représentation efficace des rotations dans l’espace à trois dimensions. En mécanique quantique, cette même structure algébrique peut être représentée par des matrices de Pauli, avec des facteurs appropriés de l’unité imaginaire usuelle. Le lien est réel, mais il n’est pas à l’origine de la quantité de mouvement canonique ni du Hamiltonien développés dans ce cours.
+
+Le dernier sujet demandé est le chaos. Il ne reste plus de temps pour le développer. Le cours s’achève en revenant aux outils déjà construits : la dynamique est un mouvement le long de trajectoires dans l’espace des phases, et ce langage constitue le point de départ de l’étude des comportements réguliers et chaotiques. La structure formelle de la mécanique classique est désormais assez complète pour que le public poursuive cette étude.

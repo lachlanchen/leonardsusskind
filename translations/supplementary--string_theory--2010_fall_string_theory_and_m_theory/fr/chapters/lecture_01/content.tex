@@ -1,0 +1,691 @@
+\chapter{Des trajectoires de Regge hadroniques aux cordes du cône de lumière}
+
+\lectureoverview{La théorie des cordes n’est pas née comme une théorie de la gravitation quantique.
+Elle est née d’une tentative de comprendre le spectre et la diffusion des hadrons.
+Les trajectoires de Regge rectilignes suggéraient l’existence d’un objet étendu ; la dualité dans la diffusion pion--pion suggérait que deux processus apparemment distincts étaient deux découpages d’une même surface. Nous suivrons ces indices jusqu’à la représentation par la feuille d’univers, réinterpréterons la corde hadronique comme un tube de flux de la QCD, puis utiliserons le référentiel de l’impulsion infinie pour déduire la mécanique transverse d’une corde ouverte.
+Le résultat central est que son Hamiltonien interne effectif mesure le carré de la masse. Dans cette description, une énergie de type loi de Hooke proportionnelle à \(L^2\) devient donc une énergie au repos proportionnelle à \(L\), comportement caractéristique d’une corde de tension constante.}
+
+\section{L’origine hadronique de la théorie des cordes}
+
+Vers 1968--1970, le problème qui a conduit aux cordes concernait les protons, les neutrons et, en particulier, les mésons. Le modèle des quarks était déjà une idée sérieuse, mais la composition en quarks des hadrons n’avait pas encore été établie expérimentalement au sens moderne. Les gluons étaient encore moins présents dans les discussions courantes. Nambu avait proposé des idées apparentées faisant intervenir des champs de jauge, mais le langage bien établi de la chromodynamique quantique n’existait pas encore. On disposait plutôt d’un spectre étonnamment riche de particules en interaction forte.
+
+Pour l’instant, il est utile de laisser de côté la distinction entre proton et neutron-- et de désigner ces deux états par le terme nucléon. Au-delà du nucléon, on trouvait des états plus lourds de spin plus élevé, puis des états encore plus lourds de spin toujours plus élevé. Chew et Frautschi ont organisé ces familles dans un graphique où le moment cinétique figure en ordonnée et le carré de la masse en abscisse. Dans les unités de l’époque, la masse du proton était d’environ un BeV ; cette unité s’appelle aujourd’hui le GeV.
+
+Mesurons le moment cinétique en unités de \(\hbar\). Pour une famille de baryons, les valeurs adimensionnelles du spin sont demi-entières,
+
+\begin{equation}
+  J=\frac12,\frac32,\frac52,\ldots,
+\end{equation}
+
+tandis que le spin des familles de mésons est entier. Le fait empirique remarquable était que chacune de ces familles se plaçait approximativement sur une droite lorsqu’on la représentait en fonction de \(M^2\). Dans la notation moderne, on écrit
+
+\begin{equation}
+  J\simeq \alpha_0+\alpha' M^2,
+  \label{eq:l01-regge-trajectory}
+\end{equation}
+
+où \(\alpha_0\) est une ordonnée à l’origine et \(\alpha'\) la pente de Regge.
+\editorialnote{Le cours souligne la relation linéaire observée et sa pente presque universelle. La notation de l’ordonnée à l’origine est donnée uniquement pour exprimer cette relation de façon compacte ; les trajectoires sont empiriques et approximatives.}
+
+La droite initiale n’était pas convaincante, puisqu’elle ne passait que par deux points connus. Deux points quelconques définissent une droite. La surprise est venue plus tard : les nouveaux états découverts continuaient de se placer près de la même droite. Les trajectoires des mésons présentaient la même organisation. Le pion commence près de \(J=0\), avec une faible masse à l’échelle du GeV ; le rho commence à \(J=1\) ; les excitations suivantes se poursuivent vers le haut. Une famille pouvait compter cinq, six ou sept états. Plus étonnant encore, les différentes trajectoires de baryons et de mésons étaient presque parallèles. Ainsi, une augmentation d’un quantum du moment cinétique correspondait approximativement à la même augmentation du carré de la masse :
+
+\begin{equation}
+  \Delta J=1
+  \quad\Longrightarrow\quad
+  \Delta M^2\simeq \frac{1}{\alpha'}.
+  \label{eq:l01-regge-spacing}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Que signifie le parallélisme de différentes trajectoires de Regge ?\lecturetimestamp{00:09:32}}
+\lecturerresponse{Choisissez une famille de particules et représentez tous ses états excités : ils se trouvent sur une même droite. Faites de même pour une autre famille de mésons ou de baryons. Les droites ont approximativement la même pente, même si leurs ordonnées à l’origine diffèrent. Une même variation du moment cinétique entraîne donc approximativement la même variation de \(M^2\). Cette pente commune était appelée pente de Regge universelle.}
+\end{classroomqa}
+
+La comparaison avec des objets étendus ordinaires montre pourquoi cette régularité importait. Un ballon de basket acquiert de l’énergie de rotation lorsqu’on le fait tourner, mais sa trajectoire n’est pas linéaire et, à une vitesse angulaire suffisamment élevée, il se déchire. Un atome possède lui aussi des excitations de rotation, mais finit par s’ioniser ; sa trajectoire s’interrompt. Les hadrons présentaient une séquence beaucoup plus simple et, dans les données disponibles, rien n’indiquait qu’elle était sur le point de s’arrêter.
+
+Ce spectre indiquait qu’un hadron ne se comportait pas comme un point. Un point n’a pas de structure spatiale à faire tourner ou à déformer. On n’a observé aucun ensemble d’états internes de spin supérieur pour l’électron, qui est donc ponctuel dans les limites expérimentales actuelles. Un hadron, en revanche, peut être mis en rotation. Son spectre suggère qu’il est composite, et la relation entre le spin et la masse laisse penser que l’objet se déforme lorsque son moment cinétique augmente.
+
+\section{La dualité dans la diffusion pion--pion}
+
+La spectroscopie apportait un indice. La diffusion pion--pion en apportait un autre. Deux pions peuvent former une résonance de type rho, puis réapparaître sous la forme de deux pions. Dans un diagramme de Feynman conventionnel, il s’agit d’un processus d’annihilation et de recréation, appelé couramment processus dans le canal \(s\). Le même diagramme élémentaire, tourné sur le côté, donne un processus croisé, ou dans le canal \(t\), où une particule de type rho est échangée entre les pions.
+
+Le rho n’est pas seul. Il appartient à une famille de Regge ; la cohérence semble donc exiger la présence du rho et de tous ses partenaires excités dans chacun des deux canaux. Schématiquement,
+
+\begin{equation}
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(s)}_{\rho_n}(s,t),
+  \qquad
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(t)}_{\rho_n}(s,t).
+  \label{eq:l01-channel-sums}
+\end{equation}
+
+Ces expressions ne sont pas deux approximations qu’il faudrait simplement additionner. Des études numériques ont montré que la somme sur la tour de résonances dans le canal d’annihilation donnait déjà approximativement la contribution attendue du canal d’échange. Inversement, la tour échangée pouvait reproduire la description en termes de résonances. Additionner les deux tours complètes semblait donc compter deux fois la même physique. Selon les règles ordinaires de la théorie des perturbations, si deux diagrammes existent, il faut les inclure tous les deux. Or, les amplitudes hadroniques suggéraient que les descriptions des deux canaux étaient duales.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth]{lecture_01_figure_01.png}
+  \caption{Le tableau relie le graphique de Chew--Frautschi aux diagrammes d’annihilation et de canal croisé ; les indices spectraux et ceux issus de la diffusion font ainsi partie d’un même problème.}
+  \lectureframe{00:14:20}
+  \label{fig:l01-regge-duality-board}
+\end{figure}
+
+On peut présenter les mêmes relations dans un schéma clair. Le premier panneau représente le spectre linéaire ; les deux autres figurent les développements alternatifs de la même amplitude dans les deux canaux.
+
+\begin{figure}[H]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}[>=Latex,thick]
+    \begin{scope}
+      \draw[->] (0,0) -- (4.2,0) node[right] {$M^2$};
+      \draw[->] (0,0) -- (0,3.4) node[above] {$J$};
+      \draw[blue!65!black] (0.45,0.35) -- (3.55,2.95);
+      \draw[orange!80!black] (0.75,0.20) -- (3.85,2.80);
+      \foreach \x/\y in {0.65/0.52,1.35/1.10,2.05/1.69,2.75/2.27,3.45/2.86}
+        \fill[blue!65!black] (\x,\y) circle (0.07);
+      \foreach \x/\y in {0.95/0.37,1.65/0.95,2.35/1.54,3.05/2.12,3.75/2.71}
+        \fill[orange!80!black] (\x,\y) circle (0.07);
+      \node at (2.1,-0.55) {parallel Regge families};
+    \end{scope}
+    \begin{scope}[xshift=5.7cm]
+      \draw[->] (-1.5,1.2) -- (-0.3,0.25);
+      \draw[->] (-1.5,-1.2) -- (-0.3,-0.25);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.25) -- (0,-0.25);
+      \draw[->] (0.3,0.25) -- (1.5,1.2);
+      \draw[->] (0.3,-0.25) -- (1.5,-1.2);
+      \node at (0,-1.75) {$s$-channel tower};
+    \end{scope}
+    \begin{scope}[xshift=10.5cm]
+      \draw[->] (-1.5,1.2) -- (1.5,1.2);
+      \draw[->] (-1.5,-1.2) -- (1.5,-1.2);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.95) -- (0,-0.95);
+      \node at (0,-1.75) {$t$-channel tower};
+    \end{scope}
+  \end{tikzpicture}}
+  \caption{Familles de Regge parallèles et développements dans les deux canaux intervenant dans la dualité hadronique.}
+  \label{fig:l01-regge-duality-redraw}
+\end{figure}
+
+\section{Une feuille d’univers, deux découpages}
+
+L’idée naturelle était de chercher une histoire géométrique unique que l’on puisse lire de deux façons. Représentons un pion par une paire quark--antiquark et faisons courir le temps vers le haut. Au lieu de ne dessiner que des lignes de particules unidimensionnelles, remplissons la région délimitée par les trajectoires des quarks. Une coupe horizontale de cette histoire bidimensionnelle peut montrer deux cordes entrantes qui se rejoignent, puis se séparent. Un autre découpage représente une corde échangée d’un côté à l’autre. Les deux représentations de Feynman selon les canaux ne sont plus des mécanismes indépendants : ce sont différentes décompositions d’une même surface.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_02.png}
+  \caption{La topologie des lignes de quarks au tableau. Différentes coupes de la même histoire bidimensionnelle donnent les représentations en termes de résonances et d’échanges.}
+  \lectureframe{00:17:50}
+  \label{fig:l01-worldsheet-topology-board}
+\end{figure}
+
+La région entre un quark et un antiquark apporte une idée supplémentaire. À un instant donné, la coupe comprend deux extrémités et quelque chose qui remplit tout l’intervalle entre elles. Cet objet est unidimensionnel : c’est une corde. Au cours d’une interaction, la corde balaie une surface bidimensionnelle.
+
+\begin{definition}
+L’histoire d’une particule ponctuelle dans l’espace-temps est une \emph{ligne d’univers}. L’histoire d’une corde dans l’espace-temps est une \emph{feuille d’univers}. À un instant donné, une corde est une coupe spatiale de sa feuille d’univers.
+\end{definition}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_03.png}
+  \caption{La surface remplie au tableau entre les trajectoires des extrémités. Une coupe temporelle l’intersecte suivant une corde unidimensionnelle.}
+  \lectureframe{00:19:15}
+  \label{fig:l01-worldsheet-filled-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex,scale=0.95]
+    \fill[blue!10]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3)
+      -- (2.6,2.3)
+      .. controls (1.0,1.0) and (1.0,0.5) .. (0.2,0)
+      .. controls (1.0,-0.4) and (1.0,-1.0) .. (2.6,-2.3) -- cycle;
+    \draw[blue!65!black]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3);
+    \draw[blue!65!black]
+      (2.6,-2.3) .. controls (1.0,-1.0) and (1.0,-0.4) .. (0.2,0)
+      .. controls (1.0,0.5) and (1.0,1.0) .. (2.6,2.3);
+    \draw[red!75!black,dashed] (-2.9,-1.15) -- (2.9,-1.15)
+      node[right] {time slice};
+    \draw[orange!80!black,dashed] (-1.55,-2.5) -- (1.55,2.5)
+      node[above] {crossed slicing};
+    \draw[->] (3.45,-1.7) -- (3.45,1.8) node[above] {time};
+    \node[blue!65!black] at (0,-2.7) {one world sheet};
+  \end{tikzpicture}
+  \caption{Schéma clair d’une feuille d’univers. Des découpages distincts organisent une même surface en différentes descriptions des canaux intermédiaires.}
+  \label{fig:l01-worldsheet-redraw}
+\end{figure}
+
+Cette reconstruction géométrique était une piste exploratoire, et non une déduction de la théorie complète à partir de premiers principes. Plusieurs personnes sont parvenues de différentes manières aux premières idées sur les cordes. Leur intérêt tenait à ce qu’un même objet étendu pouvait rendre compte des deux observations : une corde peut tourner et se déformer, et sa feuille d’univers peut encoder les canaux de diffusion duaux.
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi introduire entre les quarks un lien de type corde plutôt qu’une particule ordinaire échangée ?\lecturetimestamp{00:21:20}}
+\lecturerresponse{À un instant donné, il n’y a pas simplement une particule échangée localisée. Il y a un quark, un antiquark et une structure en tout point de l’intervalle qui les sépare. Cette structure est peut-être fondamentalement continue, ou peut-être une collection dense de constituants qui approxime un continuum ; la première représentation ne tranchait pas. L’essentiel était que tout l’intervalle soit occupé et que les trajectoires observées ne montrent aucune tendance à s’interrompre, comme le ferait un lacet ordinaire muni de poids à ses extrémités.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le Modèle standard peut-il décrire la diffusion des pions ?
+\lecturetimestamp{00:22:45}}
+\lecturerresponse{Oui, mais son utilité dépend du régime d’énergie. À basse énergie, le Modèle standard, par l’intermédiaire de la QCD et de ses descriptions à basse énergie, rend compte d’une grande partie de la diffusion des pions. À plus haute énergie, lorsque des tours entières d’échanges hadroniques interviennent, les calculs directs deviennent plus difficiles et une organisation de type corde peut être plus utile.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Les premières expériences ont-elles établi qu’une trajectoire de Regge ne s’arrête jamais ?\lecturetimestamp{00:23:37}}
+\lecturerresponse{Non. Elles ont seulement établi que la séquence observée ne présentait pas encore de point final. L’extrapolation suggérant une capacité d’étirement indéfinie était une hypothèse plausible, et non la mesure d’un infini.}
+\end{classroomqa}
+
+\section{Tubes de flux et changement d’échelle}
+
+La QCD moderne donne à l’ancienne représentation une interprétation en termes de théorie des champs. Un quark et un antiquark agissent comme des sources opposées du champ de gluons. En électrodynamique ordinaire, le flux électrique se répand latéralement à mesure que l’on éloigne les charges opposées. Le champ s’affaiblit avec la distance ; la région entre les charges ne conserve donc pas un profil transverse fixe. La QCD est non linéaire. Sa dynamique peut confiner le flux chromoélectrique pertinent dans un tube étroit reliant le quark et l’antiquark.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_04.png}
+  \caption{Lignes de champ du quark et de l’antiquark représentées sous la forme d’un tube de flux étroit, plutôt que d’un champ coulombien qui se répand librement.}
+  \lectureframe{00:25:15}
+  \label{fig:l01-qcd-flux-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[orange!14,rounded corners=8pt] (-3.0,-0.55) rectangle (3.0,0.55);
+    \draw[orange!80!black,thick,rounded corners=8pt]
+      (-3.0,-0.55) rectangle (3.0,0.55);
+    \fill[blue!70!black] (-3.35,0) circle (0.17);
+    \fill[red!75!black] (3.35,0) circle (0.17);
+    \node[below] at (-3.35,-0.22) {$q$};
+    \node[below] at (3.35,-0.22) {$\bar q$};
+    \foreach \y in {-0.30,0,0.30}
+      \draw[->,orange!85!black] (-3.05,\y) -- (3.05,\y);
+    \draw[<->] (-2.9,-1.05) -- (2.9,-1.05) node[midway,below] {$L$};
+    \node at (0,0.92) {approximately fixed transverse profile};
+  \end{tikzpicture}
+  \caption{Un tube de flux confiné s’allonge sans se disperser. Une énergie constante par unité de longueur donne \(E=TL\).}
+  \label{fig:l01-qcd-flux-redraw}
+\end{figure}
+
+Le langage des particules et celui des champs expriment la même idée de façons différentes. Dans la description en termes de champs, le tube conserve approximativement la même intensité de champ et la même section lorsque ses extrémités s’éloignent. Dans une représentation en constituants, l’énergie d’étirement crée davantage de structure gluonique entre les extrémités. Un élastique ordinaire contient un nombre fixe de molécules ; celles-ci s’écartent jusqu’à ce que le matériau casse. Imaginons plutôt qu’une nouvelle molécule soit insérée chaque fois qu’un intervalle se crée. La densité le long de l’élastique pourrait rester fixe tandis qu’il s’allongerait. C’est là l’analogie recherchée pour le champ de gluons : le tube s’allonge au lieu de s’amincir jusqu’à la rupture.
+
+\begin{classroomqa}
+\audiencequestion{Une corde qui constituerait un électron serait-elle elle aussi composée de gluons ?\lecturetimestamp{00:28:08}}
+\lecturerresponse{Rien ne permet de tirer une telle conclusion. La corde hadronique est un objet de la QCD à l’échelle du proton. Une hypothétique corde fondamentale pertinente pour la gravitation quantique existerait à proximité de l’échelle de Planck, immensément plus petite ; rien n’indique ici que l’électron soit une corde hadronique de gluons. Le fait frappant est que des mathématiques apparentées sont apparues aux deux échelles, et non que les objets physiques soient identiques.}
+\end{classroomqa}
+
+Les tentatives visant à transformer l’image hadronique en une théorie complète des cordes en interaction étaient prometteuses, mais n’ont pas tout à fait abouti à la théorie des hadrons recherchée. Le modèle mathématique contenait à plusieurs reprises une particule sans masse de spin deux. Dans une théorie hadronique, cet état semblait être une prédiction indésirable ; en tant que théorie de la gravitation, il avait précisément les nombres quantiques du graviton. Joel Scherk et John Schwarz ont proposé la réinterprétation décisive : peut-être la théorie nous parlait-elle de gravitation quantique plutôt que de hadrons. Les applications hadroniques et fondamentales sont physiquement différentes, même si le problème initial des hadrons a ouvert la voie aux mathématiques.
+
+\begin{classroomqa}
+\audiencequestion{Comment les lignes de flux vont-elles d’une extrémité positive à une extrémité négative ?\lecturetimestamp{00:31:46}}
+\lecturerresponse{Elles quittent une source et entrent dans l’autre, comme les lignes du champ magnétique vont du pôle nord au pôle sud d’un aimant droit. Les étiquettes opposées des extrémités indiquent l’orientation du flux ; de même, un aimant droit a deux pôles opposés et non deux pôles nord.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La corde est-elle continue ou discrète ?
+\lecturetimestamp{00:32:45}}
+\lecturerresponse{La théorie quantique rend cette distinction subtile. Le champ électromagnétique est représenté comme un champ continu, mais il possède aussi des quanta discrets. De même, une corde peut être traitée comme un objet continu alors que ses excitations sont quantifiées. Les deux descriptions peuvent être valables, selon la question posée.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si l’on change l’inclinaison de la coupe de l’espace-temps à travers une feuille d’univers, l’intersection est-elle toujours une corde ?\lecturetimestamp{00:34:20}}
+\lecturerresponse{Oui. Changer la coupe de simultanéité revient à effectuer une transformation de Lorentz. La nouvelle coupe intersecte la surface selon une corde observée dans un état de mouvement différent. Même une corde dont le centre de masse est au repos n’est pas immobile intérieurement ; elle peut vibrer. ``Au repos'' ne se rapporte qu’à son centre de masse.}
+\end{classroomqa}
+
+\section{Deux développements de l’énergie relativiste}
+
+La description relativiste directe d’un objet étendu et vibrant est malaisée. La stratégie utile consiste à trouver un référentiel où le mouvement pertinent prend la forme d’une mécanique non relativiste ordinaire. Commençons par une particule unique. En mécanique non relativiste, on écrit
+
+\begin{equation}
+  E_{\mathrm{nr}}=\frac{\bm p^2}{2m}+B,
+  \label{eq:l01-nonrel-energy}
+\end{equation}
+
+où \(B\) est une énergie interne ou de liaison indépendante de la quantité de mouvement globale. Pour plusieurs particules sans interaction, on additionne à la fois les termes cinétiques et les constantes internes. Seules les différences d’énergie gouvernant le mouvement, une constante additive indépendante de l’état peut souvent être omise.
+
+L’énergie relativiste exacte est
+
+\begin{equation}
+  E=\sqrt{\bm p^2c^2+m^2c^4}.
+  \label{eq:l01-rel-energy-c}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_05.png}
+  \caption{L’énergie cinétique non relativiste et la racine carrée relativiste exacte, avec les puissances de \(c\) corrigées au cours de la discussion.}
+  \lectureframe{00:38:45}
+  \label{fig:l01-relativistic-energy-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La formule relativiste doit-elle contenir \(p^2c^2\) et \(m^2c^4\), plutôt que les puissances inscrites initialement au tableau ?
+\lecturetimestamp{00:39:12}}
+\lecturerresponse{Oui. La cohérence dimensionnelle impose l’expression \(E^2=p^2c^2+m^2c^4\). Après avoir retrouvé la limite non relativiste, nous poserons \(c=1\), mais conserver ici les puissances rend le développement explicite.}
+\end{classroomqa}
+
+Lorsque \(p^2c^2\ll m^2c^4\), mettons \(m^2c^4\) en facteur et utilisons
+\(\sqrt{1+\epsilon}\simeq1+\epsilon/2\) :
+
+\begin{align}
+  E
+  &=mc^2\sqrt{1+\frac{p^2}{m^2c^2}}
+  \notag\\
+  &\simeq mc^2+\frac{p^2}{2m}.
+  \label{eq:l01-low-momentum-expansion}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_06.png}
+  \caption{Développement aux faibles quantités de mouvement, qui retrouve l’énergie au repos à laquelle s’ajoute le terme cinétique non relativiste habituel.}
+  \lectureframe{00:41:30}
+  \label{fig:l01-low-momentum-board}
+\end{figure}
+
+Cette approximation exige davantage qu’un centre de masse se déplaçant lentement. Une boîte peut dériver lentement tandis que les particules qu’elle contient se déplacent à une vitesse proche de celle de la lumière. Dans ce cas, la dynamique interne reste relativiste. La limite non relativiste ordinaire exige que toutes les vitesses pertinentes des constituants soient faibles dans le référentiel choisi.
+
+Il existe une autre limite utile. Appliquons au système entier une transformation de Lorentz le long de l’axe \(z\), jusqu’à ce que chaque constituant ait une grande quantité de mouvement longitudinale positive \(P_{zi}\). Une transformation de Lorentz suffisamment importante entraîne vers l’avant tout constituant qui se déplaçait initialement vers l’arrière. Les quantités de mouvement transverses et les masses au repos restent fixes :
+
+\begin{equation}
+  P_{zi}\gg |p_{xi}|,|p_{yi}|,m_i,
+  \qquad
+  p_{\perp i}^2=p_{xi}^2+p_{yi}^2,
+\end{equation}
+
+où l’on pose désormais \(c=1\). Le développement pour de grandes valeurs de \(P_{zi}\) donne
+
+\begin{align}
+  E_i
+  &=\sqrt{P_{zi}^2+p_{\perp i}^2+m_i^2}
+  \notag\\
+  &=P_{zi}\sqrt{1+\frac{p_{\perp i}^2+m_i^2}{P_{zi}^2}}
+  \notag\\
+  &\simeq P_{zi}
+  +\frac{p_{\perp i}^2+m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-one-particle}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_07.png}
+  \caption{Développement de la racine carrée pour une grande valeur de \(P_z\), en conservant la quantité de mouvement transverse et la masse parmi les petites grandeurs.}
+  \lectureframe{00:46:45}
+  \label{fig:l01-large-pz-board}
+\end{figure}
+
+Pour plusieurs constituants,
+
+\begin{equation}
+  E\simeq
+  \sum_i P_{zi}
+  +\sum_i\frac{p_{\perp i}^2}{2P_{zi}}
+  +\sum_i\frac{m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-sum}
+\end{equation}
+
+Le premier terme est la quantité de mouvement longitudinale totale conservée. Elle est énorme, mais constitue aussi une contribution additive fixe. La conserver ou la soustraire ne change aucune différence d’énergie, tout comme l’ajout à un Hamiltonien de tout autre nombre conservé ne modifierait pas les équations du mouvement. La partie dynamique est donc
+
+\begin{equation}
+  \begin{aligned}
+    H_{\perp}=E-P_z
+    &\simeq
+    \sum_i\left(
+      \frac{p_{\perp i}^2}{2P_{zi}}
+      +\frac{m_i^2}{2P_{zi}}
+    \right),\\
+    P_z&=\sum_iP_{zi}.
+  \end{aligned}
+  \label{eq:l01-transverse-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_08.png}
+  \caption{Décomposition à plusieurs particules en quantité de mouvement longitudinale conservée, énergie cinétique transverse et termes internes dépendant de la masse.}
+  \lectureframe{00:49:16}
+  \label{fig:l01-energy-sum-board}
+\end{figure}
+
+\section{Le référentiel de l’impulsion infinie}
+
+La limite qui précède était historiquement appelée référentiel de l’impulsion infinie ; elle est aujourd’hui généralement formulée à l’aide des coordonnées du cône de lumière. Son sens se lit directement dans l’Hamiltonien. En mécanique quantique,
+
+\begin{equation}
+  i\hbar\frac{\partial}{\partial t}\ket{\psi}=H\ket{\psi}.
+  \label{eq:l01-time-evolution}
+\end{equation}
+
+Tous les termes non triviaux de \(H_{\perp}\) varient comme \(1/P_z\). À mesure que la transformation de Lorentz augmente, les écarts d’énergie diminuent et les changements se produisent plus lentement. C’est la dilatation du temps. Un système radioactif semble se désintégrer plus lentement lorsqu’il est soumis à une forte transformation de Lorentz ; on peut compenser cet effet en l’observant pendant une durée proportionnellement plus longue. Ce ralentissement ne supprime pas la dynamique. Il en change l’échelle de temps.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_09.png}
+  \caption{Le tableau identifie l’énergie réduite à l’Hamiltonien qui engendre l’évolution temporelle ralentie du système soumis à une transformation de Lorentz.}
+  \lectureframe{00:52:57}
+  \label{fig:l01-hamiltonian-board}
+\end{figure}
+
+Le terme transverse a précisément la forme non relativiste \(p^2/(2m)\), mais c’est \(P_z\) qui joue le rôle de la masse. C’est physiquement cohérent : une quantité de mouvement longitudinale plus grande rend une particule plus difficile à dévier latéralement et agit donc comme une inertie transverse. Le terme \(m_i^2/(2P_{zi})\) ne dépend pas de l’état de mouvement bidimensionnel et joue donc le rôle d’une énergie interne ou de liaison. Un mouvement relativiste dans trois dimensions spatiales est devenu un mouvement d’apparence non relativiste dans les deux dimensions perpendiculaires à la transformation de Lorentz.
+
+Cette approche permet de modéliser une corde relativiste à l’aide d’un système élémentaire de masses et de ressorts. Le modèle ne prétend pas que la corde se déplace lentement dans son référentiel au repos. Il utilise le référentiel où la dynamique transverse présente la structure non relativiste nécessaire.
+
+\section{Une corde ouverte composée de billes et de ressorts}
+
+Considérons une corde ouverte, c’est-à-dire une corde ayant deux extrémités. On pourra éventuellement attacher quelque chose à ces extrémités, mais pour l’instant, intéressons-nous à la corde elle-même. Approchons-la par des billes situées aux positions transverses \(\bm X_i(t)=(X_i(t),Y_i(t))\) et reliées par des ressorts identiques. Un Hamiltonien discret s’écrit
+
+\begin{equation}
+  H_N=\sum_{i=1}^{N}
+  \left[
+    \frac{\mu_N}{2}\dot{\bm X}_i^{\,2}
+    +\frac{k_N}{2}
+      \left(\bm X_{i+1}-\bm X_i\right)^2
+  \right].
+  \label{eq:l01-discrete-string}
+\end{equation}
+
+Le seul terme cinétique permettrait aux billes de s’éloigner les unes des autres. C’est le terme de Hooke entre voisines qui en fait une corde.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{lecture_01_figure_10.png}
+  \caption{Premier schéma d’une chaîne de billes et de ressorts représentant une corde ouverte à deux coordonnées transverses.}
+  \lectureframe{01:00:30}
+  \label{fig:l01-bead-chain-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \foreach \x in {0,...,8} {
+      \fill[blue!65!black] ({0.85*\x},0) circle (0.09);
+    }
+    \foreach \x in {0,...,7} {
+      \draw[decorate,decoration={zigzag,segment length=4pt,amplitude=2pt}]
+        ({0.85*\x+0.10},0) -- ({0.85*\x+0.75},0);
+    }
+    \draw[->] (3.4,0.15) -- (3.4,1.25) node[above] {$\bm X_i(t)$};
+    \draw[<->] (0,-0.65) -- (6.8,-0.65)
+      node[midway,below] {$0\leq\sigma\leq\pi$};
+  \end{tikzpicture}
+  \caption{Régularisation discrète de la corde ouverte. La masse des billes et la constante de raideur des ressorts varient avec l’espacement avant le passage à la limite continue.}
+  \label{fig:l01-bead-chain-redraw}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_11.png}
+  \caption{Termes cinétique et de Hooke discrets réunis avant le passage à la limite continue.}
+  \lectureframe{01:01:30}
+  \label{fig:l01-discrete-energy-board}
+\end{figure}
+
+À mesure que le nombre de billes augmente, la masse de chaque bille \(\mu_N\) doit tendre vers zéro afin que la corde entière conserve une inertie finie. Dans le même temps, la constante de raideur des ressorts \(k_N\) doit augmenter. Une longue bande de caoutchouc est plus facile à étirer d’une quantité donnée qu’un petit segment du même matériau ; les points voisins que l’on rapproche doivent donc être reliés plus rigidement pour que le matériau continu conserve ses propriétés.
+
+Introduisons une coordonnée \(\sigma\) le long de la corde. Son intervalle numérique est conventionnel. Le choix de
+
+\begin{equation}
+  0\leq\sigma\leq\pi
+\end{equation}
+
+est commode, car une corde fermée pourra ensuite être paramétrée de \(0\) à \(2\pi\). La somme devient une intégrale, et la différence entre voisins devient une dérivée :
+
+\begin{equation}
+  \sum_i\longrightarrow\int_0^\pi d\sigma,
+  \qquad
+  \bm X_{i+1}-\bm X_i
+  \longrightarrow
+  \partial_\sigma\bm X.
+  \label{eq:l01-continuum-replacements}
+\end{equation}
+
+Après avoir absorbé les constantes dépendant de l’espacement dans la normalisation de \(t\), \(\sigma\) et \(\bm X\), l’Hamiltonien continu prend la forme
+
+\begin{equation}
+  H_{\mathrm{string}}=
+  \frac12\int_0^\pi d\sigma
+  \left[
+    \left(\partial_t\bm X\right)^2
+    +\left(\partial_\sigma\bm X\right)^2
+  \right].
+  \label{eq:l01-continuum-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_12.png}
+  \caption{Passage au tableau de la somme sur les billes à \(\int_0^\pi d\sigma\), où la différence entre voisins est remplacée par \(\partial_\sigma\bm X\).}
+  \lectureframe{01:05:00}
+  \label{fig:l01-continuum-board}
+\end{figure}
+
+Le premier terme est l’énergie cinétique dans les deux directions transverses. Le second mesure l’étirement le long de la corde. Les deux termes portent un signe plus, puisqu’il s’agit de l’Hamiltonien. Dans le lagrangien, le terme de potentiel aurait un signe moins. Les coefficients précis dépendent des conventions et n’ont pas été fixés à ce stade ; c’est la structure formée par l’énergie cinétique et l’étirement qui importe ici.
+
+Séparons le mouvement du centre de masse du mouvement relatif. Translater tous les points d’une même quantité déplace la particule dans son ensemble. Les oscillations, les flexions et les étirements relatifs sont des mouvements internes. Un proton, un atome ou tout autre objet composite peut être qualifié de particule même si ses constituants sont en mouvement interne. La corde ne diffère pas à cet égard.
+
+\section{Pourquoi l’Hamiltonien mesure le carré de la masse}
+
+Pour un objet se déplaçant lentement, l’énergie au repos est proportionnelle à sa masse. Dans la description par l’impulsion infinie, en revanche, la contribution interne apparaît sous la forme de \(M^2/(2P_z)\). Une fois fixées la quantité de mouvement longitudinale commune et la dilatation temporelle qui lui est associée, l’Hamiltonien interne de la corde est proportionnel au carré de la masse invariante de l’objet entier :
+
+\begin{equation}
+  H_{\mathrm{int}}\propto M^2.
+  \label{eq:l01-hint-mass-squared}
+\end{equation}
+
+\editorialnote{Plus précisément, la cinématique du cône de lumière donne une relation invariante de la forme \(M^2=2P^+P^- - \bm P_\perp^2\). Dans le référentiel transverse du centre de masse et à \(P^+\) fixé, l’Hamiltonien du cône de lumière \(P^-\) est donc proportionnel à \(M^2\). Pour les besoins de l’argument, le cours omet ces détails de normalisation et conserve la relation de proportionnalité.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_13.png}
+  \caption{Le tableau identifie l’énergie interne de la corde au carré de la masse de l’état complet de la corde.}
+  \lectureframe{01:10:30}
+  \label{fig:l01-mass-squared-board}
+\end{figure}
+
+Une corde vibrante est un ensemble d’oscillateurs couplés. Sa quantification complète est reportée à plus tard, mais le fait spectral essentiel apparaît déjà. Les énergies de l’oscillateur harmonique augmentent par sauts discrets. Puisque ces énergies internes contribuent à \(M^2\), les excitations de la corde produisent naturellement des sauts discrets du carré de la masse. C’est la structure qu’annonçaient les graphiques de Regge du début.
+
+\begin{classroomqa}
+\audiencequestion{\(M\) est-il la masse de la corde entière, et le fait de doubler cette masse quadruplerait-il la contribution correspondante à \(M^2\) ?
+\lecturetimestamp{01:12:10}}
+\lecturerresponse{Oui. \(M\) est la masse au repos de l’état complet de la corde, qui comprend la vibration, l’étirement et toutes les autres contributions internes. L’Hamiltonien effectif dans le référentiel soumis à la transformation de Lorentz est proportionnel à \(M^2\) ; un état de masse double a donc une valeur du carré de la masse quatre fois plus grande.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Comment cette description peut-elle inclure le photon, dont la masse au repos est nulle ?\lecturetimestamp{01:12:52}}
+\lecturerresponse{Un état sans masse correspond à \(M=0\). La manière dont des contributions positives des oscillateurs peuvent se combiner pour produire un tel état est une question importante pour la théorie quantifiée, à laquelle le modèle classique présenté ici ne répond pas. À ce stade, \(M\) désigne simplement la masse au repos totale, et la mécanique quantique n’a pas encore été introduite.}
+\end{classroomqa}
+
+Étendons maintenant uniformément une corde immobile jusqu’à la longueur physique \(L\). Le terme cinétique s’annule et, sur l’intervalle de paramètre de longueur \(\pi\),
+
+\begin{equation}
+  \left|\partial_\sigma\bm X\right|\simeq\frac{L}{\pi}.
+\end{equation}
+
+Par conséquent,
+
+\begin{align}
+  H_{\mathrm{stretch}}
+  &\propto
+  \int_0^\pi d\sigma
+    \left(\partial_\sigma\bm X\right)^2
+  \notag\\
+  &\simeq
+  \pi\left(\frac{L}{\pi}\right)^2
+  \propto L^2.
+  \label{eq:l01-hooke-l2}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_14.png}
+  \caption{Configuration uniformément étirée utilisée pour déduire
+  \(H_{\mathrm{stretch}}\propto L^2\) et donc \(M\propto L\).}
+  \lectureframe{01:15:30}
+  \label{fig:l01-length-relation-board}
+\end{figure}
+
+Dans la mécanique transverse effective, ce comportement est celui de la loi de Hooke. Mais la quantité à gauche est proportionnelle à \(M^2\), et non à \(M\). Il s’ensuit que
+
+\begin{equation}
+  M^2\propto L^2,
+  \qquad
+  M\propto L.
+  \label{eq:l01-mass-length}
+\end{equation}
+
+Dans le référentiel au repos, l’énergie vaut \(E_{\mathrm{rest}}=M\), en unités où \(c=1\).
+En notant \(T\) la constante de proportionnalité,
+
+\begin{equation}
+  E_{\mathrm{rest}}=TL.
+  \label{eq:l01-string-tension}
+\end{equation}
+
+Le résultat concorde avec le modèle du tube de flux. Un champ électrique ou magnétique uniforme possède une densité d’énergie uniforme. Si son flux est confiné dans un tube de section constante, chaque unité de longueur supplémentaire apporte la même quantité d’énergie. De façon équivalente, dans un modèle où de nouveaux degrés de liberté occupent chaque intervalle nouvellement créé, l’énergie par unité de longueur reste constante. La tension de corde est cette énergie par unité de longueur.
+
+Cette conclusion est indirecte. Elle ne signifie pas qu’un élastique quelconque, soumis à des vitesses relativistes, acquiert automatiquement \(E=TL\). Le raisonnement part de la description transverse non relativiste qui découle du grand boost, identifie son énergie interne à \(M^2\), puis seulement traduit le résultat en énergie dans le référentiel au repos.
+
+\section{Le même objet dans deux référentiels}
+
+La distinction entre \(M\) et \(M^2\) se perd facilement ; il est donc utile de mettre les deux développements côte à côte. Avec \(c=1\),
+
+\begin{align}
+  E&=\sqrt{p^2+M^2}
+  \simeq M+\frac{p^2}{2M},
+  &&p\ll M,
+  \label{eq:l01-rest-expansion-again}\\
+  E&=\sqrt{P_z^2+M^2}
+  \simeq P_z+\frac{M^2}{2P_z},
+  &&P_z\gg M.
+  \label{eq:l01-boost-expansion-again}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_15.png}
+  \caption{Développement à faible impulsion, repris après la coupure, où l’énergie de masse au repos interne est identifiée à \(M\).}
+  \lectureframe{01:28:00}
+  \label{fig:l01-rest-expansion-board-again}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_16.png}
+  \caption{Développement complémentaire à grande impulsion, où l’énergie résiduelle est proportionnelle à \(M^2/(2P_z)\).}
+  \lectureframe{01:31:00}
+  \label{fig:l01-boost-expansion-board-again}
+\end{figure}
+
+Le premier développement identifie l’énergie au repos à la masse et l’inertie ordinaire à \(M\). Dans le second, le terme conservé \(P_z\) est retranché, l’inertie transverse vaut \(P_z\) et l’énergie interne est représentée par \(M^2/(2P_z)\). Dans les deux référentiels, la masse reste proportionnelle à la longueur de la corde. Ce qui change, c’est la fonction de la masse qui apparaît dans l’hamiltonien résiduel.
+
+\begin{classroomqa}
+\audiencequestion{Un boost de Lorentz ne devrait pas changer la physique. Pourquoi la corde boostée semble-t-elle obéir à une loi énergétique différente ?
+\lecturetimestamp{01:25:35}}
+\lecturerresponse{Elle n’obéit pas à des lois physiques différentes. Dans les deux descriptions, \(M\propto L\) et \(M^2\propto L^2\). Dans le référentiel au repos, l’énergie pertinente est \(M\) ; après un grand boost, le terme conservé \(P_z\) est isolé et l’hamiltonien restant est proportionnel à \(M^2\). Le boost change la description la plus commode, mais pas la relation invariante entre masse et longueur--.}
+\end{classroomqa}
+
+\section{Un modèle supraconducteur du confinement}
+
+Un supraconducteur expulse le champ magnétique de son volume. Si un flux magnétique est piégé dans un canal suffisamment étroit avant que le matériau ne devienne supraconducteur, il ne peut pas s’étaler latéralement et reste confiné dans un tube. Une expérience de pensée utile consiste à percer un trou étroit dans un échantillon à l’état normal, à y insérer un long barreau aimanté, à refroidir l’échantillon, puis à retirer l’aimant. Cette construction est schématique et ne constitue pas un protocole de laboratoire pratique. Elle vise à isoler une ligne de flux dont l’intensité du champ et la densité d’énergie sont approximativement uniformes sur toute sa longueur.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_17.png}
+  \caption{La construction d’une ligne de flux supraconductrice et le modèle correspondant du confinement d’un monopole--et d’un antimonopole.}
+  \lectureframe{01:35:30}
+  \label{fig:l01-superconductor-board}
+\end{figure}
+
+Supposons, dans une autre expérience de pensée, qu’il soit possible de placer un monopole magnétique et un antimonopole dans le milieu supraconducteur et de les séparer. Le flux magnétique entre eux serait comprimé en un tube. Comme chaque unité de longueur du tube porte la même énergie,
+
+\begin{equation}
+  V(R)=T_{\mathrm{flux}}R.
+  \label{eq:l01-linear-confinement}
+\end{equation}
+
+La force \(F=-dV/dR\) a une norme constante. Écarter les deux charges coûte de plus en plus d’énergie, et la paire est donc confinée. C’est le comportement recherché pour les quarks dans un hadron.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[blue!8,rounded corners=5pt] (-4,-1.35) rectangle (4,1.35);
+    \node[blue!55!black] at (0,1.65) {superconducting medium};
+    \fill[red!75!black] (-2.8,0) circle (0.17);
+    \fill[blue!70!black] (2.8,0) circle (0.17);
+    \node[below] at (-2.8,-0.22) {monopole};
+    \node[below] at (2.8,-0.22) {antimonopole};
+    \fill[orange!18,rounded corners=7pt] (-2.65,-0.42) rectangle (2.65,0.42);
+    \draw[orange!85!black,thick,rounded corners=7pt]
+      (-2.65,-0.42) rectangle (2.65,0.42);
+    \foreach \y in {-0.22,0,0.22}
+      \draw[->,orange!85!black] (-2.55,\y) -- (2.55,\y);
+    \draw[<->] (-2.8,-1.00) -- (2.8,-1.00) node[midway,below] {$R$};
+  \end{tikzpicture}
+  \caption{Le confinement du flux produit un tube uniforme et un potentiel linéaire \(V(R)=T_{\mathrm{flux}}R\).}
+  \label{fig:l01-superconductor-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Quel est, dans le hadron, l’équivalent du milieu supraconducteur ?\lecturetimestamp{01:36:57}}
+\lecturerresponse{L’analogie proposée inverse les rôles de l’électricité et du magnétisme. Un condensat supraconducteur ordinaire est électriquement chargé et confine le flux magnétique. Dans le modèle du double supraconducteur appliqué à la QCD, un condensat d’objets chromomagnétiques confine la charge chromoélectrique des quarks. Ces objets n’apparaissent pas sous forme de particules isolées, car ils sont représentés comme condensés dans le vide.}
+\end{classroomqa}
+
+\editorialnote{La description par le double supraconducteur est un mécanisme de confinement influent, présenté ici dans le langage historique du cours. Il faut y voir un modèle physique du vide de la QCD, et non une dérivation complète du confinement à partir des principes premiers.}
+
+\begin{classroomqa}
+\audiencequestion{L’énergie proportionnelle à la longueur est-elle une règle générale pour toute corde ordinaire rendue très relativiste ?\lecturetimestamp{01:38:10}}
+\lecturerresponse{Non. Il faudrait d’abord disposer d’une théorie relativiste cohérente de ce matériau, et son comportement dépendrait de ses propriétés. La croissance linéaire de l’énergie est propre à une configuration dont la densité reste constante lorsqu’on l’étend, ou à un flux empêché de s’étaler transversalement. En l’étirant, on crée davantage de constituants ou une plus grande longueur remplie d’un champ uniforme, au lieu d’augmenter simplement la séparation d’un ensemble fixe de molécules.}
+\end{classroomqa}
+
+\section{Degrés de liberté transverses et taille d’une particule}
+
+La construction en coordonnées du cône de lumière écrit directement la corde en fonction de ses coordonnées transverses. Il n’existe pas d’oscillateur longitudinal indépendant et librement spécifiable, analogue à chacun des oscillateurs transverses. Cette réduction d’une dimension spatiale directe est l’une des caractéristiques remarquables du formalisme ; la théorie complète doit néanmoins satisfaire à l’invariance de Lorentz.
+
+\begin{classroomqa}
+\audiencequestion{Qu’advient-il du mouvement résiduel selon la direction \(z\) ?
+\lecturetimestamp{01:40:10}}
+\lecturerresponse{Dans la description en coordonnées du cône de lumière, le mouvement longitudinal n’est pas introduit comme un degré de liberté indépendant. Les oscillations physiques sont décrites transversalement, tandis que les contraintes déterminent l’information longitudinale. Cette économie rappelle l’idée que les systèmes gravitationnels pourraient admettre une description comportant une dimension directe de moins, même si ce lien n’est pas établi ici.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Combien de points connaît-on réellement sur les diagrammes de Regge ?
+\lecturetimestamp{01:41:15}}
+\lecturerresponse{Le nombre maximal exact dépend de la famille ; on peut l’estimer grossièrement à environ sept. La série n’est pas infinie du point de vue expérimental. Le fait pertinent est que les points connus ne montrent pas de signe manifeste de défaillance ni de seuil de rupture comme on en observe pour les matériaux macroscopiques ordinaires.}
+\end{classroomqa}
+
+La phénoménologie hadronique a fourni la motivation historique, mais la théorie mathématique des cordes n’a pas à reproduire les hadrons dans tous leurs détails. Une fois le formalisme construit, on se demande ce qu’il décrit réellement. Son état de spin deux sans masse et d’autres propriétés orientent plus naturellement vers la gravité.
+
+Le contraste apparent entre les hadrons et les électrons peut être quantifié à partir de l’énergie d’une rotation rigide,
+
+\begin{equation}
+  E_{\mathrm{rot}}=\frac{J^2}{2I},
+  \qquad
+  I\sim MR^2.
+  \label{eq:l01-rotational-energy}
+\end{equation}
+
+Le moment cinétique est quantifié. En écrivant schématiquement \(J^2\) sous la forme \(\hbar^2 n^2\), le premier saut de rotation est de l’ordre de
+
+\begin{equation}
+  \Delta E_{0\to1}\sim\frac{\hbar^2}{2I}.
+  \label{eq:l01-first-rotational-step}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_18.png}
+  \caption{Estimation du moment d’inertie pour la première excitation rotationnelle, \(\Delta E\sim\hbar^2/(2I)\).}
+  \lectureframe{01:44:00}
+  \label{fig:l01-rotational-board}
+\end{figure}
+
+À masse fixée, un rayon plus petit signifie un moment d’inertie bien plus faible et une énergie d’excitation bien plus élevée. Les hadrons sont grands à l’échelle de leur dynamique interne : une excitation rotationnelle coûte donc environ un GeV et est accessible lors de collisions de particules. Si les électrons possèdent une quelconque sous-structure spatiale, les limites expérimentales situent son échelle bien plus bas, et les excitations rotationnelles se trouveraient très au-delà des énergies disponibles. À l’autre extrême, le moment d’inertie d’un ballon de basket est si grand qu’un quantum de moment cinétique ne coûte qu’une énergie imperceptiblement faible. Les sauts rotationnels ou orbitaux des atomes se situent entre ces deux extrêmes, couramment à l’échelle de l’électronvolt.
+
+\begin{classroomqa}
+\audiencequestion{Un électron qui semble élémentaire pourrait-il tout de même avoir une structure spatiale et des excitations rotationnelles ?\lecturetimestamp{01:42:04}}
+\lecturerresponse{Elles ne pourraient être cachées qu’à très haute énergie. Le coût d’une unité de moment cinétique varie comme \(1/I\), et \(I\sim MR^2\). Un rayon extrêmement petit repousse donc très loin la première excitation sur le diagramme masse au carré. L’absence d’excitations observées de l’électron signifie soit que celui-ci est ponctuel, soit que toute échelle de composition est bien plus petite que ce que les expériences actuelles peuvent résoudre.}
+\end{classroomqa}
+
+Le premier diagramme de Regge peut maintenant être interprété dynamiquement. Les hadrons révèlent des états rotationnels et vibrationnels accessibles parce qu’ils sont étendus. Les pas égaux de leur spectre en masse au carré sont la signature attendue lorsqu’on identifie un hamiltonien d’oscillateur à \(M^2\). Leur énergie approximativement linéaire en fonction de la longueur est la signature d’un tube de flux de tension constante. La spectroscopie, la dualité de diffusion, la géométrie de la feuille d’univers et la mécanique du cône de lumière sont quatre descriptions d’une même idée directrice : un objet relativiste étendu dont la variable interne naturelle est la masse au carré.

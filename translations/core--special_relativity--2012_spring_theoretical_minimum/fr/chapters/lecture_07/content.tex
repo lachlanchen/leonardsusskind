@@ -1,0 +1,939 @@
+\chapter{Invariance de jauge et nécessité du potentiel vecteur}
+
+Avant d’aborder la physique, deux questions pratiques. La prochaine séance sera annulée pendant que le professeur sera en Belgique, mais le cours se poursuivra jusqu’à ce que les dix leçons aient été données. Les notes manuscrites de la séance de ce soir ont également été préparées à la dernière minute ; quiconque accepterait de les numériser pour le site du cours les sauverait d’un scanner remarquablement lent.
+
+La leçon précédente était dense sur le plan mathématique. Plutôt que de prétendre le contraire, nous allons reprendre son calcul central. Le cours vise un véritable minimum théorique : disposer d’assez de structure pour passer au niveau suivant. Si l’on pouvait éliminer les mathématiques sans perdre la physique, il y aurait toutes les raisons de le faire. Mais les lois exactes exigent des énoncés quantitatifs, et les énoncés quantitatifs exigent des mathématiques. La notation peut devenir ésotérique ; cela ne prouve pas que les physiciens cherchent à dissimuler le sujet derrière un langage sacerdotal.
+
+Il reste peut-être à découvrir une formulation plus simple de la nature. On peut, comme Feynman le plaisantait, élever au carré toutes les équations de la physique, additionner les carrés et égaler leur somme à zéro. On obtient alors une seule équation, puisque chaque carré doit s’annuler, mais on n’acquiert aucune compréhension nouvelle. La simplicité consiste à trouver l’idée qui organise les choses, et non à simplement condenser la typographie. Lorsqu’un membre du public objecte que cette idée doit nécessairement venir de quelqu’un de jeune, le point est volontiers concédé : l’âge n’a rien à voir avec la perspicacité.
+
+\lectureoverview{Nous commencerons par rétablir la notation indicielle nécessaire pour reconnaître les scalaires de Lorentz. Nous énoncerons ensuite quatre principes pour une théorie relativiste, reprendrons intégralement la dérivation concernant une particule chargée, puis découvrirons deux fois l’invariance de jauge : comme terme aux extrémités dans l’action, puis comme invariance du tenseur du champ électromagnétique.}
+
+\section{Retour sur le langage indiciel}
+
+\subsection{Pourquoi certains indices sont en position supérieure}
+
+Soit
+\begin{equation}
+x^\mu=(t,x,y,z),
+\qquad
+\mu=0,1,2,3,
+\end{equation}
+avec la métrique
+\begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr7-metric}
+\end{equation}
+Les coordonnées et leurs déplacements portent des indices supérieurs :
+\begin{equation}
+dx^\mu=(dt,dx,dy,dz).
+\end{equation}
+Les dérivées par rapport à ces coordonnées portent des indices inférieurs :
+\begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\label{eq:sr7-gradient}
+\end{equation}
+La désignation de l’une ou l’autre famille comme supérieure ou inférieure est conventionnelle, comme le sont les mots gauche et droite. Une fois la convention choisie, il faut toutefois la respecter systématiquement, car les deux familles se transforment différemment.
+
+\begin{classroomqa}
+\audiencequestion{Quand faut-il écrire un indice en position supérieure et quand faut-il l’écrire en position inférieure ?}
+\lecturerresponse{Les coordonnées, leurs déplacements et les objets qui se transforment comme eux portent des indices supérieurs. Les dérivées et les objets qui se transforment comme elles portent des indices inférieurs. Le choix de la famille dite supérieure est conventionnel, mais la distinction entre les deux lois de transformation ne l’est pas. \lecturetimestamp{00:05:03}}
+\end{classroomqa}
+
+Pour une fonction scalaire \(s(x)\), la différentielle totale est
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu s\,dx^\mu.
+\label{eq:sr7-total-differential}
+\end{equation}
+Développée, elle s’écrit
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial t}\,dt
++\frac{\partial s}{\partial x}\,dx
++\frac{\partial s}{\partial y}\,dy
++\frac{\partial s}{\partial z}\,dz.
+\end{equation}
+L’expression compacte signifie exactement la même chose. Ce n’est pas une nouvelle loi ; c’est un moyen de faire apparaître la structure scalaire sans devoir traîner quatre termes à chaque ligne.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_01.png}
+\caption{La différentielle scalaire formée à partir d’un gradient à indice inférieur et d’un déplacement à indice supérieur.}
+\lectureframe{00:08:20}
+\end{figure}
+
+La convention d’Einstein s’impose alors d’elle-même : un indice répété une fois en position supérieure et une fois en position inférieure est sommé. La contraction dans \eqref{eq:sr7-total-differential} est donc un scalaire. Les vecteurs et les covecteurs ont une interprétation géométrique plus profonde, mais cette discussion est reportée au cours de relativité générale.
+
+\subsection{Relever un indice}
+
+Tout quadrivecteur possède des formes à indices supérieurs et inférieurs, reliées par la métrique :
+\begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\end{equation}
+Avec \eqref{eq:sr7-metric},
+\begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m,
+\qquad m=1,2,3.
+\label{eq:sr7-lowering}
+\end{equation}
+Ainsi, relever ou abaisser un indice change le signe de la composante temporelle et ne modifie pas les composantes spatiales. La même règle s’applique à la dérivée :
+\begin{equation}
+\begin{aligned}
+\partial_\mu
+&=
+\left(
+\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right),\\[0.5em]
+\partial^\mu
+&=
+\left(
+-\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right).
+\end{aligned}
+\label{eq:sr7-raised-gradient}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_02.png}
+\caption{Les opérateurs de dérivation à indices inférieur et supérieur ; seule la composante temporelle change de signe.}
+\lectureframe{00:12:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Une dérivée partielle porte-t-elle toujours un indice inférieur, et peut-on aussi relever cet indice ?}
+\lecturerresponse{L’opérateur \(\partial/\partial x^\mu\) est naturellement
+\(\partial_\mu\), un covecteur. En appliquant la métrique, on obtient
+\(\partial^\mu=\eta^{\mu\nu}\partial_\nu\) ; dans l’espace-temps plat, cela ne fait qu’inverser la composante temporelle. \lecturetimestamp{00:11:00}}
+\end{classroomqa}
+
+L’intervalle invariant en est l’exemple familier :
+\begin{equation}
+x_\mu x^\mu
+=
+x^2+y^2+z^2-t^2.
+\label{eq:sr7-interval}
+\end{equation}
+La contraction d’un indice supérieur avec un indice inférieur donne un scalaire de Lorentz. Cette règle simple de reconnaissance explique pourquoi il faut manier la notation avec tant de soin.
+
+\section{Quatre principes pour construire une théorie}
+
+Supposons qu’une expérience révèle un phénomène nouveau et que nous voulions en formuler une théorie. Quatre principes orientent la recherche. Il faudra peut-être les affiner par la suite, mais toutes les théories fondamentales qui ont réussi jusqu’ici suivent ce schéma.
+
+\subsection{Le principe de l’action}
+
+La première exigence est l’existence d’une action. En mécanique du point matériel,
+\begin{equation}
+I[x]
+=
+\int dt\,L(x,\dot x),
+\label{eq:sr7-particle-action-general}
+\end{equation}
+et le trajet physique rend l’action stationnaire sous les variations qui maintiennent ses extrémités fixes :
+\begin{equation}
+\delta I=0.
+\end{equation}
+Les équations obtenues sont
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr7-EL}
+\end{equation}
+
+Le principe de l’action n’est pas un ornement esthétique. C’est le cadre qui relie les symétries aux lois de conservation. L’invariance de l’action par translation dans le temps entraîne la conservation de l’énergie ; les translations spatiales entraînent la conservation de la quantité de mouvement ; d’autres quantités conservées découlent de symétries apparentées. L’action n’est pas à elle seule la loi de conservation, mais elle fournit la structure par laquelle la symétrie devient une telle loi.
+
+\subsection{Localité}
+
+La deuxième exigence est la localité. Si l’on perturbe un point d’une corde de violon, le segment voisin réagit d’abord. Le segment suivant réagit ensuite, et la perturbation se propage. Elle peut finir par atteindre toute la corde, mais son influence directe à court terme est locale.
+
+Pour une particule, la localité est encodée par un lagrangien évalué le long de la trajectoire. Il dépend de la position et de la vitesse au même instant, et non de paires arbitraires d’instants éloignés. Pour un champ \(\phi(x)\),
+\begin{equation}
+I[\phi]
+=
+\int d^4x\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr7-local-field-action}
+\end{equation}
+La densité en un événement dépend du champ et de ses premières dérivées en cet événement. Elle ne contient pas de produit direct du champ ici par le champ en un point distant sans lien avec lui.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_03.png}
+\caption{Actions d’une particule et d’un champ présentées sous le principe de localité.}
+\lectureframe{00:19:30}
+\end{figure}
+
+C’est pourquoi les équations locales du mouvement sont des équations différentielles. Les dérivées comparent des valeurs infiniment voisines. Une autre loi, non locale, pourrait relier l’accélération à cet instant à une force exercée à un instant entièrement différent, ou relier des vitesses à deux instants éloignés à une force exercée à un troisième instant. De telles lois sont concevables mathématiquement, mais la localité les exclut.
+
+\begin{classroomqa}
+\audiencequestion{L’intrication quantique contredit-elle ce principe de localité ?}
+\lecturerresponse{Pas au sens dynamique donné ici. L’intrication crée des corrélations, mais une opération locale effectuée par Alice ne peut pas servir à modifier l’état réduit de Bob ni à lui envoyer instantanément un signal contrôlable. L’analogie des pièces de monnaie illustre la distinction : voir une pièce révèle à quelqu’un laquelle des pièces corrélées l’autre personne possède, mais cela n’agit pas sur la pièce distante. Les corrélations quantiques sont plus riches que cette analogie classique, mais elles ne permettent toujours pas de transmettre un signal supraluminique. \lecturetimestamp{00:20:02}}
+\end{classroomqa}
+
+\subsection{Invariance de Lorentz}
+
+La troisième exigence est que les lois aient la même forme dans tous les référentiels inertiels. La règle pratique de construction est simple : le lagrangien doit être un scalaire de Lorentz, de sorte que l’action soit invariante. Les contractions d’indices supérieur--inférieur comme \(\partial_\mu\phi\,\partial^\mu\phi\) en fournissent les éléments de base.
+
+En relativité générale, l’énoncé est élargi. L’intégrande est une densité scalaire, et l’invariance s’étend des transformations de Lorentz aux transformations de coordonnées arbitraires. Cet affinement ne remplace pas le principe présent ; il en est la formulation en espace-temps courbe.
+
+\begin{classroomqa}
+\audiencequestion{L’invariance de Lorentz n’est-elle qu’une règle propre à la relativité restreinte, plutôt qu’un véritable principe général ?}
+\lecturerresponse{Pour un problème non gravitationnel dans un espace-temps plat, l’invariance de Lorentz est l’énoncé correct. En espace-temps courbe, on remplace le lagrangien scalaire par la densité scalaire appropriée et on exige l’invariance sous des transformations de coordonnées arbitraires. Cette précision mise à part, la même philosophie de construction demeure valable. \lecturetimestamp{00:24:16}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Quelles sont les dimensions du lagrangien d’une particule et de la densité lagrangienne d’un champ ?}
+\lecturerresponse{Le lagrangien d’une particule a les dimensions d’une énergie. Dans
+\(I=\int dt\,d^3x\,\mathcal L\), la mesure spatiale apporte un volume, si bien que \(\mathcal L\) a les dimensions d’une énergie par unité de volume. Son intégration sur l’espace donne un lagrangien ordinaire dont les dimensions sont celles d’une énergie.
+\lecturetimestamp{00:25:49}}
+\end{classroomqa}
+
+\subsection{Invariance de jauge}
+
+La quatrième exigence est l’invariance de jauge. À ce stade, elle reste volontairement mystérieuse. Un membre du public en donne une anticipation utile : peut-être peut-on ajouter certaines choses à un lagrangien sans modifier la physique. C’est presque cela, mais le mot certaines fera presque tout le travail.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_04.png}
+\caption{Localité, construction scalaire, invariance de Lorentz et invariance de jauge réunies au tableau.}
+\lectureframe{00:27:00}
+\end{figure}
+
+Nous en reportons la définition, car le calcul concernant une particule chargée la contient déjà. Reprendre ce calcul n’est pas une digression. Il montrera pourquoi le potentiel vecteur s’impose et pourquoi, une fois introduit, il comporte une redondance.
+
+\section{Pourquoi le potentiel vecteur est nécessaire}
+
+Pour une particule chargée se déplaçant lentement, l’équation visée est la loi familière de la force de Lorentz
+\begin{equation}
+m\mathbf a
+=
+e\left(
+\mathbf E+\mathbf v\times\mathbf B
+\right).
+\label{eq:sr7-lorentz-target}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_05.png}
+\caption{La loi familière de la force, écrite avant de réintroduire le potentiel vecteur.}
+\lectureframe{00:29:08.870}
+\end{figure}
+
+Le potentiel vecteur n’apparaît pas dans \eqref{eq:sr7-lorentz-target}. On peut écrire directement les équations du mouvement avec \(\mathbf E\) et \(\mathbf B\). La difficulté est d’ordre plus structurel : sous les hypothèses de localité et d’invariance de Lorentz utilisées dans cette leçon, l’interaction d’une particule chargée ne peut pas s’écrire sous la forme d’une action sur sa ligne d’univers, directement en fonction de ces champs, de sa position et de sa vitesse seulement. Le potentiel \(A_\mu\) est nécessaire pour construire le couplage scalaire local.
+
+\begin{classroomqa}
+\audiencequestion{Si la loi de force ne fait déjà intervenir que \(\mathbf E\) et \(\mathbf B\), pourquoi introduire \(A_\mu\) ?}
+\lecturerresponse{Parce qu’une équation du mouvement n’est pas encore un principe de l’action. Dans le cadre local et invariant de Lorentz de cette leçon, l’action d’une particule chargée exige le quadripotentiel. Les champs suffisent à énoncer la force, mais c’est le potentiel qui permet de la déduire d’une action scalaire sur la ligne d’univers. \lecturetimestamp{00:29:06}}
+\end{classroomqa}
+
+\subsection{L’action sur la ligne d’univers}
+
+L’action candidate comporte une partie libre et une partie d’interaction :
+\begin{equation}
+I[x]
+=
+-m\int d\tau
+-e\int A_\mu(x)\,dx^\mu.
+\label{eq:sr7-worldline-action}
+\end{equation}
+Le premier terme additionne la longueur propre de chaque segment infinitésimal de la trajectoire. Il est scalaire par construction. Dans le second terme, \(A_\mu(x)\) est évalué en l’événement occupé par la particule et contracté avec le déplacement \(dx^\mu\). Cet incrément est lui aussi un scalaire et il est local le long de la ligne d’univers.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_06.png}
+\caption{Les deux termes de l’action d’une particule chargée et la contraction locale \(A_\mu(x)dx^\mu\).}
+\lectureframe{00:31:20}
+\end{figure}
+
+\subsection{Réécriture de l’action en temps ordinaire}
+
+Pour utiliser les équations familières d’Euler--Lagrange, divisons chaque incrément de la ligne d’univers par \(dt\) :
+\begin{equation}
+\frac{d\tau}{dt}
+=
+\sqrt{1-\dot{\mathbf x}^{\,2}},
+\qquad
+\dot{\mathbf x}^{\,2}
+=
+\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+Les quatre composantes de \(dx^\mu/dt\) sont
+\begin{equation}
+\frac{dx^\mu}{dt}
+=
+\left(1,\dot x,\dot y,\dot z\right).
+\end{equation}
+Par conséquent,
+\begin{align}
+I
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_\mu\frac{dx^\mu}{dt}
+\right]
+\notag\\
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-e\left(A_0+A_m\dot x^m\right)
+\right].
+\label{eq:sr7-action-in-t}
+\end{align}
+Le lagrangien en temps ordinaire est donc
+\begin{equation}
+\begin{aligned}
+L(x,\dot x,t)
+&=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+\\
+&\quad -e\left[
+A_0(x,t)+A_m(x,t)\dot x^m
+\right].
+\end{aligned}
+\label{eq:sr7-lagrangian}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_07.png}
+\caption{L’action sur la ligne d’univers réécrite comme une intégrale en temps ordinaire, et le lagrangien lu dans son intégrande.}
+\lectureframe{00:35:30}
+\end{figure}
+
+À ce stade, la part d’imagination est terminée. Une fois le lagrangien choisi, le reste est mécanique. Les calculs peuvent être longs et fastidieux, mais cette peine n’est pas vaine : elle révèle les structures électrique, magnétique et relativiste. Le professeur plaisante en disant que découvrir le principe est la partie agréable, et que déduire toutes ses conséquences est le travail que l’on confie aux étudiants de troisième cycle.
+
+\begin{classroomqa}
+\audiencequestion{Peut-on déplacer en position supérieure ou inférieure l’indice spatial de \(A_m\) ou de \(\dot x^m\) dans ce calcul ?}
+\lecturerresponse{Oui. La métrique spatiale est l’identité ; relever ou abaisser un indice latin ne change donc pas la valeur de sa composante. C’est l’indice temporel dont le signe demande de la prudence. \lecturetimestamp{00:34:10}}
+\end{classroomqa}
+
+\section{Calcul d’Euler--Lagrange}
+
+\subsection{Quantité de mouvement canonique et correction en direct}
+
+Choisissons une composante spatiale \(x^m\). La dérivée de la partie libre de \eqref{eq:sr7-lagrangian} est
+\begin{equation}
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+=
+m u_m,
+\qquad
+u^\mu\equiv\frac{dx^\mu}{d\tau}.
+\end{equation}
+La première tentative au tableau s’arrête là. Une correction venue du public relève l’omission : le terme d’interaction dépend lui aussi de \(\dot x^m\). La dérivée complète est
+\begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+=
+m u_m-eA_m.
+\label{eq:sr7-canonical-momentum}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{La première expression de \(\partial L/\partial\dot x^m\) omet-elle la contribution du terme électromagnétique ?}
+\lecturerresponse{Oui. La dérivation de
+\(-eA_n\dot x^n\) par rapport à \(\dot x^m\) apporte
+\(-eA_m\). La quantité de mouvement canonique corrigée est
+\(m u_m-eA_m\), et non la seule quantité de mouvement mécanique.
+\lecturetimestamp{00:37:24}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_08.png}
+\caption{La quantité de mouvement canonique corrigée, comprenant les termes mécanique et de potentiel.}
+\lectureframe{00:38:30}
+\end{figure}
+
+\subsection{Dériver le long de la trajectoire en mouvement}
+
+Le membre de gauche de l’équation d’Euler--Lagrange est
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+m\frac{du_m}{dt}
+-e\frac{dA_m(x(t),t)}{dt}.
+\end{equation}
+Le potentiel varie pour deux raisons : il peut dépendre explicitement du temps, et la particule se déplace dans son gradient spatial. La règle de dérivation en chaîne donne
+\begin{equation}
+\frac{dA_m}{dt}
+=
+\partial_0A_m
++\dot x^n\partial_nA_m.
+\label{eq:sr7-chain-rule}
+\end{equation}
+En toutes lettres, le deuxième terme signifie
+\begin{equation}
+\dot x\,\frac{\partial A_m}{\partial x}
++\dot y\,\frac{\partial A_m}{\partial y}
++\dot z\,\frac{\partial A_m}{\partial z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_09.png}
+\caption{Les contributions explicite et convective à la dérivée temporelle de \(A_m\).}
+\lectureframe{00:42:10}
+\end{figure}
+
+Au membre de droite,
+\begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\partial_mA_0
+-e\dot x^n\partial_mA_n.
+\label{eq:sr7-spatial-derivative-L}
+\end{equation}
+Le terme libre ne dépend pas explicitement de la position. Dans \eqref{eq:sr7-spatial-derivative-L}, \(m\) est l’indice libre qui sélectionne une équation ; \(n\) est un indice muet répété et fait l’objet d’une sommation. Renommer cet indice muet ne change rien. C’est cette distinction qui amène le professeur à s’arrêter sur les lettres avant de combiner les termes.
+
+En égalant les deux membres et en réarrangeant, on obtient
+\begin{equation}
+m\frac{du_m}{dt}
+=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)
++e\dot x^n
+\left(
+\partial_nA_m-\partial_mA_n
+\right).
+\label{eq:sr7-grouped-force}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_10.png}
+\caption{La force séparée en un crochet indépendant de la vitesse et un crochet antisymétrique linéaire en la vitesse.}
+\lectureframe{00:49:30}
+\end{figure}
+
+\subsection{Reconnaître les champs électrique et magnétique}
+
+Le premier crochet ne contient pas la vitesse de la particule. Dans la convention de cette action, définissons
+\begin{equation}
+E_m
+\equiv
+\partial_0A_m-\partial_mA_0.
+\label{eq:sr7-E-from-A}
+\end{equation}
+Il joue précisément le rôle opérationnel du champ électrique. Le deuxième crochet est antisymétrique en ses indices spatiaux :
+\begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n.
+\label{eq:sr7-C}
+\end{equation}
+Ses trois composantes indépendantes sont le rotationnel du potentiel spatial ; dans la convention d’orientation adoptée dans la leçon, on a
+\begin{equation}
+\dot x^n C_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\label{eq:sr7-magnetic-identification}
+\end{equation}
+La vérification détaillée des composantes est laissée comme exercice au tableau. L’identification structurelle est déjà manifeste : une dérivée antisymétrisée d’un vecteur possède trois composantes, exactement le nombre de composantes de \(\mathbf B\), et elle multiplie la vitesse.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_11.png}
+\caption{Les deux crochets de dérivées identifiés comme les contributions électrique et magnétique à la force de Lorentz.}
+\lectureframe{00:52:00}
+\end{figure}
+
+L’équation \eqref{eq:sr7-grouped-force} a donc retrouvé la force de Lorentz à partir de l’action faisant intervenir le potentiel vecteur. Elle a également révélé quelque chose de plus important : les dérivées antisymétrisées qui formeront le tenseur du champ.
+
+\section{Du temps ordinaire à une équation à quatre-vecteurs}
+
+\subsection{Passage au temps propre}
+
+Le membre de gauche de \eqref{eq:sr7-grouped-force} n’est pas l’accélération newtonienne \(d\mathbf v/dt\). C’est la dérivée par rapport au temps ordinaire d’une composante de la quadri-vitesse :
+\begin{equation}
+\frac{du^m}{dt}
+=
+\frac{du^m}{d\tau}\frac{d\tau}{dt}.
+\end{equation}
+Multiplions l’équation par \(dt/d\tau\). Alors
+\begin{equation}
+\dot x^n\frac{dt}{d\tau}
+=
+\frac{dx^n}{dt}\frac{dt}{d\tau}
+=
+u^n,
+\qquad
+\frac{dt}{d\tau}=u^0.
+\end{equation}
+L’équation spatiale devient
+\begin{align}
+m\frac{du^m}{d\tau}
+&=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)u^0
+\notag\\
+&\quad
++e\left(
+\partial_nA_m-\partial_mA_n
+\right)u^n.
+\label{eq:sr7-proper-spatial}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_12.png}
+\caption{Les facteurs \(dt/d\tau\) convertissent les vitesses ordinaires en composantes de la quadri-vitesse.}
+\lectureframe{00:56:30}
+\end{figure}
+
+Le membre de gauche est l’accélération propre :
+\begin{equation}
+\frac{du^\mu}{d\tau}
+=
+\frac{d^2x^\mu}{d\tau^2}.
+\end{equation}
+C’est un quadrivecteur. Le membre de droite doit donc être construit à partir d’un tenseur de rang deux agissant sur \(u^\nu\).
+
+\subsection{Le tenseur du champ et la loi de force}
+
+Choisissons la convention
+\begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\label{eq:sr7-F-definition}
+\end{equation}
+Il est antisymétrique :
+\begin{equation}
+F_{\mu\nu}=-F_{\nu\mu}.
+\end{equation}
+Avec le signe de l’interaction dans \eqref{eq:sr7-worldline-action}, l’équation compacte est
+\begin{equation}
+\boxed{
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu
+}.
+\label{eq:sr7-covariant-force}
+\end{equation}
+De manière équivalente, avant de nommer \(F_{\mu\nu}\),
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+e\left(
+\partial_\nu A^\mu-\partial^\mu A_\nu
+\right)u^\nu.
+\end{equation}
+Selon les conventions choisies pour la métrique, la charge et le potentiel, les signes globaux sont répartis différemment. Le contenu invariant est la dérivée antisymétrisée du potentiel et sa contraction avec la quadri-vitesse.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_13.png}
+\caption{L’équation en temps propre exprimée au moyen d’un tenseur du champ de rang deux agissant sur la quadri-vitesse.}
+\lectureframe{00:58:25}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La dérivation a produit trois équations spatiales. Pourquoi peut-on en ajouter une quatrième ?}
+\lecturerresponse{L’action scalaire garantit un résultat covariant de Lorentz. Dès qu’on reconnaît que la différence entre les deux membres est un quadrivecteur, les transformations de Lorentz mélangent ses composantes spatiales et temporelle. Une équation vectorielle à quatre composantes ne peut pas n’en avoir que trois de façon cohérente ; la composante temporelle accompagne les composantes spatiales. \lecturetimestamp{00:59:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Une liste fixe de nombres telle que \((1,2,3,4)\) constitue-t-elle à elle seule un quadrivecteur invariant de Lorentz ?}
+\lecturerresponse{Non. Ces nombres peuvent être les composantes d’un vecteur dans un référentiel donné, mais les composantes se transforment. Même en deux dimensions, le vecteur de composantes \((1,2)\) peut être décrit dans un référentiel tourné par \((0,\sqrt5)\). Le vecteur géométrique demeure ; sa liste de composantes numériques, elle, ne demeure pas la même. \lecturetimestamp{01:00:28}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_14.png}
+\caption{Un vecteur à deux composantes réexprimé dans des axes alignés sur le vecteur lui-même.}
+\lectureframe{01:02:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Si le but était de remplacer le temps ordinaire par le temps propre, pourquoi \(\partial_0A_m=\partial A_m/\partial t\) apparaît-il encore ?}
+\lecturerresponse{Le but n’était pas d’effacer chaque lettre \(t\). Il s’agissait d’écrire la dynamique dans une notation manifestement quadridimensionnelle. L’opérateur \(\partial_0\) est la composante temporelle du quadrigradient covariant, tout comme \(\partial_m\) en sont les composantes spatiales. Il fait partie du tenseur quadridimensionnel. \lecturetimestamp{01:05:10}}
+\end{classroomqa}
+
+La leçon profite de ce moment pour rappeler le principe de localité. Une équation locale relie l’accélération en un événement au champ et à la vitesse en cet événement. Elle ne relie pas l’accélération à l’instant présent à une force exercée à un instant éloigné.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_15.png}
+\caption{L’équation covariante de la force, qui permet de reformuler la localité comme une dynamique différentielle.}
+\lectureframe{01:05:50}
+\end{figure}
+
+\subsection{Représenter les composantes électromagnétiques}
+
+Pour le tenseur à indices tous supérieurs, la convention utilisée au tableau donne
+\begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_x&-E_y&-E_z\\
+E_x&0&B_z&-B_y\\
+E_y&-B_z&0&B_x\\
+E_z&B_y&-B_x&0
+\end{pmatrix}.
+\label{eq:sr7-F-matrix}
+\end{equation}
+L’indice de ligne est \(\mu\), celui de colonne \(\nu\). Les composantes mixtes temps--espace contiennent le champ électrique ; le bloc espace--espace contient le champ magnétique. L’antisymétrie annule la diagonale et ramène les seize éléments affichés à six composantes indépendantes.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_16.png}
+\caption{Le tenseur électromagnétique complet, avec les composantes électriques dans les cases temps--espace et les composantes magnétiques dans le bloc spatial.}
+\lectureframe{01:12:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Existe-t-il une règle standard pour déterminer quel indice d’un tenseur désigne les lignes et lequel désigne les colonnes ?}
+\lecturerresponse{C’est une convention de représentation. Ici, le premier indice \(\mu\) se lit verticalement et le second, \(\nu\), horizontalement. Une fois cette convention annoncée, chaque composante se lit sans ambiguïté. Relever un indice temporel introduit un signe, mais ne modifie pas la convention ligne--colonne. \lecturetimestamp{01:09:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Quelles positions des indices préservent l’antisymétrie ?}
+\lecturerresponse{Les tenseurs \(F_{\mu\nu}\) et \(F^{\mu\nu}\) sont antisymétriques. Le tableau mixte \(F^\mu{}_\nu\) n’est pas antisymétrique sous transposition matricielle ordinaire : relever un indice temporel modifie les composantes électriques et rend symétrique la paire temps--espace, tandis que le bloc purement spatial des composantes magnétiques reste antisymétrique. Le professeur aboutit à cette conclusion après avoir brièvement examiné puis écarté l’hypothèse inverse au tableau.
+\lecturetimestamp{01:13:18}}
+\end{classroomqa}
+
+\section{Qu’entend-on par invariance ?}
+
+Nous revenons seulement maintenant au quatrième principe. Une invariance est une transformation qui laisse les équations du mouvement inchangées. L’action elle-même peut rester rigoureusement inchangée, ou bien varier d’un terme de bord sans effet sur les équations variationnelles.
+
+\subsection{Translations constantes d’un champ scalaire sans masse}
+
+Considérons l’équation d’un champ scalaire sans masse en une dimension spatiale,
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
+=0,
+\label{eq:sr7-wave}
+\end{equation}
+obtenue à partir de
+\begin{equation}
+\mathcal L_0
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi.
+\label{eq:sr7-massless-L}
+\end{equation}
+Si \(\phi\) est une solution, alors
+\begin{equation}
+\phi\longrightarrow\phi+c,
+\label{eq:sr7-constant-shift}
+\end{equation}
+est également une solution, où \(c\) est une constante. Toutes les dérivées de \(c\) s’annulent ; ni l’équation ni le lagrangien qui ne dépend que des dérivées ne changent donc.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_17.png}
+\caption{L’équation d’onde sans masse, son lagrangien en dérivées et la translation constante \(\phi\mapsto\phi+c\).}
+\lectureframe{01:17:10}
+\end{figure}
+
+Ajoutons maintenant un terme de masse :
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
++\mu^2\phi
+=0,
+\end{equation}
+\begin{equation}
+\mathcal L_\mu
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi
+-\frac{\mu^2}{2}\phi^2.
+\label{eq:sr7-massive-L}
+\end{equation}
+La partie dérivée reste inchangée sous \(\phi\mapsto\phi+c\), mais ce n’est pas le cas de \(\phi^2\). Les deux théories sont légitimes ; l’une possède l’invariance par translation et l’autre non.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_18.png}
+\caption{Le terme de masse qui brise l’invariance par translation constante.}
+\lectureframe{01:18:50}
+\end{figure}
+
+\subsection{Un étudiant anticipe le terme de bord}
+
+Un membre du public propose un test plus précis :
+\begin{equation}
+\phi(x,t)\longrightarrow\phi(x,t)+x.
+\label{eq:sr7-linear-shift}
+\end{equation}
+Les dérivées secondes de \(x\) s’annulent ; l’équation d’onde sans masse reste donc satisfaite. Il faut examiner l’action de plus près. Comme \(x\) et \(t\) sont des variables indépendantes,
+\begin{equation}
+\frac{\partial x}{\partial t}=0,
+\qquad
+\frac{\partial x}{\partial x}=1.
+\end{equation}
+La partie spatiale varie de la manière suivante :
+\begin{align}
+-\frac12
+\left[
+\partial_x(\phi+x)
+\right]^2
+&=
+-\frac12
+\left(
+\partial_x\phi+1
+\right)^2
+\notag\\
+&=
+-\frac12(\partial_x\phi)^2
+-\partial_x\phi
+-\frac12.
+\label{eq:sr7-linear-shift-L}
+\end{align}
+Les nouveaux termes sont une constante et une dérivée totale. La constante ne modifie pas l’équation d’Euler--Lagrange. L’intégration de \(\partial_x\phi\) ne produit que des valeurs aux limites spatiales ; sous les conditions habituelles de valeurs fixées aux limites, elle laisse donc elle aussi l’équation du mouvement inchangée.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_19.png}
+\caption{La translation proposée \(\phi\mapsto\phi+x\) et le carré de la dérivée qui fait apparaître une constante plus une dérivée totale.}
+\lectureframe{01:22:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La transformation \(\phi\mapsto\phi+x\) préserve-t-elle l’équation du champ sans masse même si elle modifie la densité lagrangienne ?}
+\lecturerresponse{Oui. Les dérivées secondes de \(x\) s’annulent, si bien que l’équation reste inchangée. Le lagrangien ne varie que d’une constante et d’une dérivée spatiale totale. Ces termes modifient la valeur numérique de l’action par une constante de volume fixée et par des valeurs aux limites, mais ils ne modifient pas l’équation d’Euler--Lagrange lorsque les valeurs aux limites sont fixées. \lecturetimestamp{01:20:00}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi \(\partial x/\partial t\) est-il nul ?}
+\lecturerresponse{Parce que \(x\) et \(t\) sont des coordonnées indépendantes dans la description du champ. Une dérivée partielle par rapport à \(t\) maintient \(x\) fixe. \lecturetimestamp{01:22:22}}
+\end{classroomqa}
+
+L’étudiant a trouvé l’outil dont nous avons besoin en électromagnétisme : une dérivée totale peut modifier l’expression de l’action sans changer ses trajectoires stationnaires.
+
+\section{Invariance de jauge pour une particule chargée}
+
+\subsection{Ajouter un quadrigradient}
+
+Revenons au terme d’interaction
+\begin{equation}
+I_{\mathrm{int}}
+=
+-e\int A_\mu\,dx^\mu.
+\end{equation}
+Soit \(\Lambda(x)\) un scalaire suffisamment régulier et modifions le potentiel comme suit :
+\begin{equation}
+A_\mu
+\longrightarrow
+A'_\mu
+=
+A_\mu+\partial_\mu\Lambda.
+\label{eq:sr7-gauge-transformation}
+\end{equation}
+Le gradient \(\partial_\mu\Lambda\) a la même structure d’indices covariants que \(A_\mu\) ; leur somme est donc bien définie.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_20.png}
+\caption{Le couplage sur la ligne d’univers et la transformation \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\).}
+\lectureframe{01:24:50}
+\end{figure}
+
+La variation de l’action est
+\begin{align}
+\Delta I_{\mathrm{int}}
+&=
+-e\int \partial_\mu\Lambda\,dx^\mu
+\notag\\
+&=
+-e\int d\Lambda
+\notag\\
+&=
+-e\left[
+\Lambda(x_2)-\Lambda(x_1)
+\right].
+\label{eq:sr7-gauge-boundary}
+\end{align}
+Sur chaque segment infinitésimal de ligne d’univers,
+\(\partial_\mu\Lambda\,dx^\mu\) est exactement l’incrément
+\(d\Lambda\). La somme de ces incréments se télescope et donne la différence entre les valeurs aux extrémités finale et initiale.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_21.png}
+\caption{La contribution du gradient intégrée le long du chemin donne la différence entre les valeurs aux extrémités \(\Lambda(x_2)-\Lambda(x_1)\).}
+\lectureframe{01:28:10}
+\end{figure}
+
+Le principe variationnel compare des trajectoires voisines en maintenant \(x_1\) et
+\(x_2\) fixes. Le terme supplémentaire dans \eqref{eq:sr7-gauge-boundary} est donc identique pour toutes les variations admissibles :
+\begin{equation}
+\delta\Delta I_{\mathrm{int}}=0.
+\end{equation}
+La trajectoire stationnaire ne change pas. C’est là l’invariance de jauge, formulée comme un énoncé sur les extrémités.
+
+\begin{classroomqa}
+\audiencequestion{La fonction scalaire \(\Lambda\) peut-elle être quelconque ?}
+\lecturerresponse{Oui, sous réserve des conditions de régularité et aux limites nécessaires pour les dérivées et l’action. La transformation est locale parce que le paramètre est une fonction arbitraire de l’espace-temps, et non une seule constante globale. \lecturetimestamp{01:28:40}}
+\end{classroomqa}
+
+Ajouter un gradient à \(A_\mu\) s’appelle une transformation de jauge. Le terme « jauge » est un héritage historique ; le cours déconseille, avec humour mais fermeté, de prononcer le terme anglais gauge comme s’il s’agissait d’un mot français. Le nom importe moins que l’opération.
+
+\subsection{Preuve directe à l’aide du tenseur de champ}
+
+Les équations du mouvement dépendent de \(F_{\mu\nu}\), et non du potentiel lui-même. Sous la transformation \eqref{eq:sr7-gauge-transformation},
+\begin{align}
+F'_{\mu\nu}
+&=
+\partial_\mu
+\left(
+A_\nu+\partial_\nu\Lambda
+\right)
+-
+\partial_\nu
+\left(
+A_\mu+\partial_\mu\Lambda
+\right)
+\notag\\
+&=
+F_{\mu\nu}
++
+\partial_\mu\partial_\nu\Lambda
+-
+\partial_\nu\partial_\mu\Lambda
+\notag\\
+&=
+F_{\mu\nu}.
+\label{eq:sr7-F-gauge-invariant}
+\end{align}
+Dans l’espace-temps plat ordinaire, les dérivées partielles d’une fonction scalaire régulière commutent. Les deux termes supplémentaires s’annulent. Le tenseur de champ, les champs électrique et magnétique qu’il contient, ainsi que la loi de force sont donc tous invariants de jauge.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_22.png}
+\caption{Les deux dérivées secondes produites par une transformation de jauge s’annulent, car les dérivées partielles commutent.}
+\lectureframe{01:33:50}
+\end{figure}
+
+Les deux preuves bouclent le même raisonnement en partant de directions opposées. L’action ne change qu’aux extrémités fixées, tandis que les équations ne dépendent que d’un tenseur de champ inchangé.
+
+\section{Ce que signifie cette redondance}
+
+\subsection{Pourquoi conserver un objet qui n’est pas unique ?}
+
+L’objection vient immédiatement. Si \(A_\mu\) n’est pas unique, pourquoi l’avoir introduit ? Parce qu’il est indispensable à l’action locale invariante de Lorentz, même si ses composantes contiennent de l’information redondante. Plusieurs potentiels représentent le même champ électromagnétique :
+\begin{equation}
+A_\mu
+\sim
+A_\mu+\partial_\mu\Lambda.
+\end{equation}
+La classe d’équivalence est physique ; le choix d’un représentant particulier relève de la description.
+
+\begin{classroomqa}
+\audiencequestion{Changer de jauge présente-t-il un intérêt pratique ?}
+\lecturerresponse{Oui. Une fonction \(\Lambda\) bien choisie peut simplifier une composante du potentiel ou rendre manifeste un aspect du problème. Localement, et avec des conditions aux limites appropriées, on peut souvent choisir une jauge dans laquelle une composante donnée, y compris \(A_0\), s’annule. Une autre jauge peut mettre plus clairement en évidence un autre aspect. \lecturetimestamp{01:35:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{L’invariance de jauge est-elle analogue à la description d’une même expérience depuis deux référentiels de Lorentz ?}
+\lecturerresponse{Non. Les transformations de Lorentz comparent des référentiels physiquement significatifs, associés à différents observateurs. Les transformations de jauge sont des redondances au sein d’une même description : des potentiels différents codent le même champ. Mathématiquement, les deux sont des invariances, mais leur interprétation diffère. \lecturetimestamp{01:37:07}}
+\end{classroomqa}
+
+Il existe aussi une différence de structure. Une rotation utilise un angle global fixe ; en général, on ne fait pas tourner les axes d’un angle différent en chaque point. Une transformation de jauge est paramétrée par toute la fonction \(\Lambda(x)\). Cette liberté dépendant de la position est ce qui en fait une invariance de jauge locale.
+
+\begin{classroomqa}
+\audiencequestion{Ajouter un gradient est-il la définition générale de l’invariance de jauge ?}
+\lecturerresponse{Pour la théorie électromagnétique abélienne, c’est bien la transformation. Les théories de Yang--Mills en proposent une version non abélienne plus élaborée, dans laquelle le potentiel porte une structure interne supplémentaire, mais l’idée reste la même : des descriptions locales différentes représentent la même physique. \lecturetimestamp{01:39:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Une transformation de jauge est-elle simplement un outil mathématique pour mettre en évidence différents aspects d’un problème ?}
+\lecturerresponse{C’est un outil utile pour le calcul et l’interprétation, mais son rôle est limité : elle peut simplifier les équations ou révéler une propriété, sans pouvoir modifier aucune prédiction finale invariante de jauge.
+\lecturetimestamp{01:40:22}}
+\end{classroomqa}
+
+\subsection{Autres champs et autres potentiels}
+
+Dans d’autres théories, les potentiels de jauge sont également couramment notés \(A\) et portent un indice d’espace-temps \(\mu\). Ils se distinguent par une structure interne supplémentaire associée à d’autres symétries. Le cours réserve cette structure pour plus tard au lieu de proposer prématurément une formule.
+
+\begin{classroomqa}
+\audiencequestion{À quoi ressemblent les potentiels vecteurs des autres théories des champs ?}
+\lecturerresponse{Ils se comportent toujours comme des vecteurs d’espace-temps et se notent couramment \(A_\mu\), mais portent des indices supplémentaires et une structure algébrique associée aux symétries internes. C’est le point de départ de la théorie de Yang--Mills, qui est délibérément abordée plus tard. \lecturetimestamp{01:41:02}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Est-il vraiment impossible d’écrire directement, avec \(\mathbf E\) et \(\mathbf B\), l’action locale et invariante de Lorentz d’une particule chargée ?}
+\lecturerresponse{Dans le cadre des hypothèses énoncées ici, oui. Le cours présente cela comme un théorème, sans le démontrer. Préserver le principe de l’action, la localité et l’invariance de Lorentz impose d’introduire le potentiel ; la redondance de jauge apparaît alors automatiquement.
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\subsection{Que peut-on mesurer ?}
+
+Une valeur locale de \(A_\mu\) n’est pas, à elle seule, invariante de jauge. Si une mesure physique déterminait cette valeur de façon unique, la modifier de \(\partial_\mu\Lambda\) changerait un résultat physique, en contradiction avec l’invariance qui vient d’être démontrée. Dans la discussion classique présente, les prédictions mesurables doivent être construites à partir de quantités invariantes de jauge, comme \(F_{\mu\nu}\).
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi la nature choisit-elle avec tant d’insistance les théories de jauge ?}
+\lecturerresponse{Au niveau classique, le cours n’apporte pas de réponse définitive. La mécanique quantique offre une perspective plus profonde, mais même là, la réponse générale n’est pas épuisée. On voit déjà l’étonnante beauté, la symétrie et l’économie des théories organisées autour de la redondance de jauge.
+\lecturetimestamp{01:43:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Le potentiel vecteur lui-même peut-il être mesuré ?}
+\lecturerresponse{Pas sous la forme d’une valeur locale de ses composantes dépendant de la jauge. Une mesure est un processus physique, et toute prédiction physique doit être insensible à \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\). Ce que l’on peut mesurer, ce sont des propriétés invariantes de jauge du potentiel et du champ.
+\lecturetimestamp{01:44:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Que se passe-t-il si l’on modifie \(A_\mu\) par un terme qui n’est pas un gradient ?}
+\lecturerresponse{En général, \(F_{\mu\nu}\) change, et cette modification est donc détectable. En revanche, un potentiel de jauge pure \(A_\mu=\partial_\mu\Lambda\) vérifie \(F_{\mu\nu}=0\) et n’exerce aucune force électromagnétique ; une particule libre suit alors une ligne d’univers rectiligne. \lecturetimestamp{01:45:22}}
+\end{classroomqa}
+
+L’invariance de jauge n’est donc pas une astuce dont on peut se passer. L’électrodynamique, la théorie de Yang--Mills, le Modèle standard et la gravité possèdent tous des redondances de jauge d’une forme ou d’une autre. Le schéma est singulier : une quantité auxiliaire est nécessaire pour formuler la théorie, et pourtant une partie de cette quantité peut être modifiée sans changer la physique. Cette singularité est aussi ce qui lui confère son pouvoir organisateur.
+
+\section{La logique de l’invariance de jauge}
+
+Le cours a délibérément suivi un chemin indirect. Nous avons d’abord rétabli le langage des indices supérieurs--inférieurs, car les contractions scalaires constituent la grammaire des actions invariantes de Lorentz. Nous avons ensuite énoncé quatre principes : l’action, la localité, l’invariance de Lorentz et l’invariance de jauge. Le quatrième est resté sans définition pendant que nous reconstruisions le calcul de la particule chargée.
+
+Ce calcul est parti de l’action scalaire locale
+\begin{equation}
+I
+=
+-m\int d\tau
+-e\int A_\mu dx^\mu,
+\end{equation}
+puis est passé par le lagrangien en temps ordinaire et chacune des dérivées d’Euler--Lagrange, avant de retrouver la force de Lorentz électrique et magnétique. Le temps propre a ensuite permis de rassembler le résultat sous la forme
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu,
+\qquad
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{equation}
+
+Les exemples de champs scalaires ont préparé la dernière étape : une dérivée totale ne peut modifier l’action qu’à travers les termes de bord. Par conséquent,
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\Lambda
+\end{equation}
+ne modifie l’action sur la ligne d’univers que par des valeurs fixées aux extrémités et laisse \(F_{\mu\nu}\) inchangé, puisque les dérivées partielles mixtes commutent. Le potentiel vecteur est donc nécessaire, mais non unique. L’invariance de jauge exprime que cette non-unicité appartient à la description et non à la physique.

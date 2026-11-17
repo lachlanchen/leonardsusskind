@@ -1,0 +1,569 @@
+\chapter{Repères, lumière et géométrie de l’espace-temps}
+
+\section{Le cours reprend avec la relativité}
+
+Ce trimestre revient à la physique classique, mais pas à la vision newtonienne selon laquelle l’espace et le temps sont indépendants et universels. Les sujets abordés d’emblée sont la relativité restreinte et la théorie classique des champs, en particulier l’électromagnétisme. La mécanique quantique ne sera pas utilisée. Le cours de mécanique précédent a fourni le principe de l’action ainsi que les formulations hamiltonienne et lagrangienne ; le cours de mécanique quantique en a présenté les principes fondamentaux, même si l’oscillateur harmonique a dû être réservé à un retour ultérieur. La lumière a elle aussi été largement absente. Cette lacune est maintenant comblée, car la lumière est intrinsèquement relativiste.
+
+La plupart des étudiants ont déjà rencontré la relativité restreinte. Pourtant, à main levée, la majorité préfère la reconstruire depuis le début. C’est le choix le plus utile. La transformation de Lorentz ne doit pas être introduite comme une formule à mémoriser. Elle doit découler du fait que les mesures opérationnelles de l’espace et du temps ne peuvent satisfaire à la fois la cinématique galiléenne et la loi observée de propagation de la lumière.
+
+\subsection{Les coordonnées comme dispositif de mesure physique}
+
+Commençons par un repère cartésien : une origine, trois axes orientés et des coordonnées \(x,y,z\). On pourrait le réaliser concrètement en remplissant l’espace d’un réseau rigide de règles graduées. Pour repérer un événement, et pas seulement un lieu, chaque point du réseau est également muni d’une horloge. Un événement est alors repéré par
+\begin{equation}
+(x,y,z,t).
+\end{equation}
+Les horloges doivent être synchronisées selon une procédure définie ; cette exigence va bientôt devenir l’aspect délicat de la construction.
+
+\begin{definition}
+Un référentiel est un réseau de coordonnées spatiales associé à un système distribué d’horloges synchronisées. Un référentiel inertiel est un référentiel non tournant et non accéléré dans lequel toute particule libre se déplace à vitesse constante.
+\end{definition}
+
+Deux référentiels en mouvement rectiligne uniforme l’un par rapport à l’autre attribuent des coordonnées différentes à un même événement. Un point fixe dans le référentiel mobile a une coordonnée constante \(x'\), même si sa coordonnée non primée varie. En physique newtonienne, la relation spatiale pour un mouvement selon la direction \(x\) est
+\begin{equation}
+x'=x-vt.
+\label{eq:sr1-galilean-space}
+\end{equation}
+L’hypothèse newtonienne moins apparente est que toutes les horloges bien réglées restent synchronisées de manière universelle :
+\begin{equation}
+t'=t.
+\label{eq:sr1-absolute-time}
+\end{equation}
+
+\subsection{Le principe de relativité}
+
+La relativité ne commence pas avec Einstein. Galilée et Newton appliquaient déjà le principe selon lequel les lois de la physique ont la même forme dans tous les référentiels inertiels. La loi de Newton \(F=ma\), la loi de la gravitation en inverse du carré de la distance et la force de Coulomb ne changent pas de forme du seul fait que le laboratoire est en mouvement uniforme.
+
+L’expérience classique se déroule dans un wagon fermé. Si le train avance sans à-coups et que les fenêtres ne laissent rien voir de l’extérieur, jongler se passe exactement comme dans une pièce immobile. Les balles montent, retombent et reviennent normalement dans la main. Une expérience réalisée à l’intérieur du wagon ne permet pas de détecter sa vitesse uniforme. On peut détecter une accélération ou une rotation de l’intérieur ; un mouvement de translation uniforme, non.
+
+Einstein ajoute une loi physique à ce principe ancien : dans le vide, la lumière se propage à
+\begin{equation}
+c \simeq 1.86\times 10^5\ {\rm miles/s}
+   \simeq 3.00\times 10^8\ {\rm m/s}.
+\end{equation}
+Si c’est une loi de la nature et que les lois sont les mêmes dans tous les référentiels inertiels, tout observateur inertiel doit mesurer la même valeur de \(c\).
+
+\section{Pourquoi la transformation galiléenne échoue}
+
+Une seule dimension spatiale suffit à faire apparaître le conflit. Traçons un diagramme d’espace-temps dont la coordonnée horizontale est \(x\) et la coordonnée verticale \(t\). Une impulsion lumineuse émise à l’origine et se propageant vers la droite suit
+\begin{equation}
+x=ct.
+\label{eq:sr1-light-right}
+\end{equation}
+Un référentiel se déplaçant vers la droite à la vitesse \(v\) a son origine sur
+\begin{equation}
+x=vt,
+\qquad
+x'=0.
+\label{eq:sr1-moving-origin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_01.png}
+\caption{Le rayon lumineux se propageant vers la droite et l’origine mobile \(x=vt\), que l’observateur primé repère par \(x'=0\).}
+\lectureframe{00:15:24}
+\end{figure}
+
+Appliquons au rayon lumineux les règles galiléennes \eqref{eq:sr1-galilean-space}--\eqref{eq:sr1-absolute-time} :
+\begin{align}
+x'&=x-vt=(c-v)t,\\
+t'&=t.
+\end{align}
+L’observateur primé en déduirait donc
+\begin{equation}
+x'=(c-v)t',
+\end{equation}
+La vitesse de la lumière se propageant vers la droite serait alors \(c-v\). Pour un rayon se propageant vers la gauche \(x=-ct\),
+\begin{equation}
+x'=-(c+v)t',
+\end{equation}
+la valeur absolue de sa vitesse serait \(c+v\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_02.png}
+\caption{La substitution galiléenne prédit \(c-v\) pour le rayon lumineux se propageant vers la droite, en contradiction avec l’indépendance de la vitesse de la lumière par rapport au référentiel.}
+\lectureframe{00:17:23}
+\end{figure}
+
+La composition ordinaire des vitesses est une excellente approximation pour les mouvements mécaniques lents, mais les mesures de la lumière ne donnent ni \(c-v\) ni \(c+v\). Il faut revoir la loi de transformation, et non le postulat sur la lumière. Le principal suspect est l’énoncé apparemment anodin \(t'=t\) : il affirme une notion absolue de simultanéité.
+
+\section{Synchroniser des horloges éloignées}
+
+Dire que deux horloges situées en des endroits différents indiquent la même heure suppose une expérience. Plaçons un troisième observateur à leur point milieu, les distances égales étant établies à l’aide de règles graduées. Demandons aux deux horloges situées aux extrémités d’émettre un signal lumineux lorsqu’elles indiquent midi. Si les signaux atteignent simultanément le point milieu, nous dirons que les horloges sont synchronisées.
+
+Il ne s’agit pas d’une définition philosophique plaquée sur la physique. C’est une opération reproductible qui fait intervenir des horloges, des distances et des signaux lumineux.
+
+Considérons maintenant un observateur qui passe devant le point milieu en mouvement. Les signaux émis aux extrémités et reçus simultanément au point milieu immobile ne lui parviennent pas simultanément : pendant leur propagation, cet observateur se déplace vers l’un des signaux et s’éloigne de l’autre. Des événements jugés simultanés par les horloges immobiles ne le sont donc pas selon la procédure de synchronisation, tout aussi valide, du référentiel mobile.
+
+Dans le référentiel non primé, une ligne d’événements simultanés est
+\begin{equation}
+t=\text{constant}.
+\end{equation}
+La ligne correspondante dans le diagramme \(x\)-\(t\) sera inclinée. Avant de chercher les formules de transformation, nous pouvons construire cette inclinaison à l’aide de signaux lumineux.
+
+\section{Représenter le référentiel mobile à l’aide de la lumière}
+
+Posons \(c=1\). On peut mesurer les distances en secondes-lumière lorsque le temps est mesuré en secondes, ou mesurer le temps par la durée de propagation de la lumière sur une unité de longueur choisie. Dans les deux conventions, les rayons lumineux sont représentés par
+\begin{equation}
+x=\pm t,
+\label{eq:sr1-light-units}
+\end{equation}
+et forment donc des droites à \(45^\circ\) sur des axes dont les échelles sont égales.
+
+Traçons d’abord les rayons lumineux. Traçons ensuite une famille d’observateurs au repos dans le référentiel mobile :
+\begin{equation}
+x=vt,\qquad x=vt+1,\qquad x=vt+2.
+\label{eq:sr1-moving-family}
+\end{equation}
+Leurs lignes d’univers sont parallèles, car les observateurs gardent des séparations fixes dans leur propre réseau inertiel.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_03.png}
+\caption{Rayons lumineux à \(45^\circ\) et lignes d’univers parallèles \(x=vt\), \(x=vt+1\) et \(x=vt+2\) du réseau de coordonnées mobile.}
+\lectureframe{00:29:55}
+\end{figure}
+
+\subsection{Fred, Mary et Seymour}
+
+Plaçons Fred sur \(x=vt\), Mary sur \(x=vt+1\) et Seymour sur \(x=vt+2\). À l’origine \(O\), Fred envoie à Mary un signal lumineux se propageant vers la droite. Seymour en envoie un autre vers la gauche, de sorte que les deux signaux atteignent Mary au même événement \(a\). Selon la règle de synchronisation au point milieu du référentiel mobile, l’émission du signal par Seymour, à l’événement \(b\), est simultanée avec celle de Fred, à l’événement \(O\). La ligne passant par \(O\) et \(b\) est donc \(t'=0\).
+
+L’événement \(a\) se trouve à la fois sur
+\begin{equation}
+x=t
+\end{equation}
+et sur
+\begin{equation}
+x=vt+1.
+\end{equation}
+Par conséquent,
+\begin{equation}
+t_a=x_a=\frac{1}{1-v}.
+\label{eq:sr1-event-a}
+\end{equation}
+
+Le rayon lumineux se propageant vers la gauche et passant par \(a\) vérifie
+\begin{equation}
+x+t=x_a+t_a=\frac{2}{1-v}.
+\label{eq:sr1-ab-light}
+\end{equation}
+L’événement \(b\) se trouve aussi sur la ligne d’univers de Seymour,
+\begin{equation}
+x-vt=2.
+\label{eq:sr1-seymour-line}
+\end{equation}
+La résolution de \eqref{eq:sr1-ab-light} et \eqref{eq:sr1-seymour-line} donne
+\begin{align}
+t_b&=\frac{2v}{1-v^2},\\
+x_b&=\frac{2}{1-v^2}.
+\label{eq:sr1-event-b}
+\end{align}
+La pente de la ligne reliant \(O\) à \(b\) est donc
+\begin{equation}
+\frac{t_b}{x_b}=v,
+\end{equation}
+La ligne de simultanéité mobile est ainsi
+\begin{equation}
+t=vx,
+\qquad
+t'=0.
+\label{eq:sr1-moving-simultaneity}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.93\textwidth]{lecture_01_figure_04.png}
+\caption{Construction de la synchronisation de Fred--Mary--Seymour. Les signaux lumineux arrivant simultanément permettent d’identifier \(O\) et \(b\) comme simultanés dans le référentiel mobile, ce qui donne \(t=vx\).}
+\lectureframe{00:44:38}
+\end{figure}
+
+Les deux axes du référentiel primé ont maintenant des équations parallèles :
+\begin{align}
+x'=0 &\quad\Longleftrightarrow\quad x=vt,\\
+t'=0 &\quad\Longleftrightarrow\quad t=vx.
+\end{align}
+Ils sont symétriques l’un de l’autre par rapport à la droite de propagation vers la droite de la lumière \(x=t\). La géométrie a déjà remplacé la simultanéité universelle.
+
+\begin{classroomqa}
+\audiencequestion{Que devient la construction si \(v=1\) ou \(v=-1\) ?}
+\lecturerresponse{Les dénominateurs dans \eqref{eq:sr1-event-a}--\eqref{eq:sr1-event-b} s’annulent et les intersections concernées partent à l’infini. Pour \(\lvert v\rvert=1\), un observateur matériel se déplacerait le long d’un rayon lumineux et ne pourrait pas accomplir l’échange ordinaire au point milieu. Ce comportement singulier constitue le premier avertissement géométrique indiquant que \(c\) est une vitesse limite. \lecturetimestamp{00:40:43}}
+\end{classroomqa}
+
+\section{Dériver la transformation de Lorentz}
+
+La condition \(x'=0\) sur \(x=vt\) impose que \(x'\) contienne le facteur \(x-vt\). De même, \(t'=0\) sur \(t=vx\) impose le facteur \(t-vx\). L’homogénéité de l’espace-temps rend la transformation linéaire ; écrivons donc
+\begin{align}
+x'&=(x-vt)f(v),\\
+t'&=(t-vx)g(v).
+\label{eq:sr1-linear-ansatz}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_05.png}
+\caption{La transformation linéaire se construit à partir des deux conditions d’annulation, avec des facteurs d’échelle dépendant de la vitesse, \(f(v)\) et \(g(v)\).}
+\lectureframe{00:49:35}
+\end{figure}
+
+Le long d’un rayon lumineux se propageant vers la droite, \(x=t\), l’invariance de la vitesse de la lumière impose \(x'=t'\). L’équation~\eqref{eq:sr1-linear-ansatz} devient alors
+\begin{align}
+x'&=(1-v)x f(v),\\
+t'&=(1-v)x g(v),
+\end{align}
+et donc
+\begin{equation}
+f(v)=g(v).
+\label{eq:sr1-f-equals-g}
+\end{equation}
+Il ne reste ainsi qu’un facteur d’échelle commun :
+\begin{align}
+x'&=(x-vt)f(v),\\
+t'&=(t-vx)f(v).
+\label{eq:sr1-direct-unscaled}
+\end{align}
+C’est pour l’essentiel le raisonnement concis suivi dans le premier article d’Einstein sur la relativité : la simultanéité opérationnelle et l’invariance de la vitesse de la lumière déterminent la transformation.
+
+\subsection{La réciprocité fixe le facteur d’échelle}
+
+Aucun référentiel inertiel n’est privilégié comme étant \emph{réellement mobile}. Si le référentiel primé se déplace à la vitesse \(v\) par rapport au référentiel non primé, ce dernier se déplace à la vitesse \(-v\) par rapport au référentiel primé. L’application inverse doit donc avoir la même forme, avec le signe de \(v\) inversé :
+\begin{align}
+x&=(x'+vt')f(v),\\
+t&=(t'+vx')f(v).
+\label{eq:sr1-inverse-unscaled}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_06.png}
+\caption{La réciprocité donne la transformation inverse en inversant la vitesse relative tout en conservant le même facteur d’échelle.}
+\lectureframe{00:55:12}
+\end{figure}
+
+Insérons \eqref{eq:sr1-direct-unscaled} dans la première des équations \eqref{eq:sr1-inverse-unscaled} :
+\begin{align}
+x
+&=\left[(x-vt)f(v)+v(t-vx)f(v)\right]f(v)\\
+&=x(1-v^2)f(v)^2.
+\end{align}
+Comme cette composition doit être l’identité,
+\begin{equation}
+(1-v^2)f(v)^2=1,
+\end{equation}
+et donc
+\begin{equation}
+f(v)=\pm\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr1-factor-roots}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_07.png}
+\caption{La composition des transformations directe et inverse fixe la valeur absolue du facteur commun \(f(v)\).}
+\lectureframe{00:59:31}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi écarter la racine carrée négative dans \eqref{eq:sr1-factor-roots} ?}
+\lecturerresponse{À vitesse relative nulle, la transformation doit tendre continûment vers l’identité : \(x'=x\) et \(t'=t\). L’autre branche donne au contraire \(x'=-x\) et \(t'=-t\), ce qui inverse les deux orientations des coordonnées. La choisir introduirait une réflexion brutale au lieu de décrire un référentiel en mouvement continu. \lecturetimestamp{00:59:27}}
+\end{classroomqa}
+
+Avec la branche positive, la transformation de Lorentz dans les unités \(c=1\) s’écrit
+\begin{align}
+x'&=\frac{x-vt}{\sqrt{1-v^2}},&
+t'&=\frac{t-vx}{\sqrt{1-v^2}}.
+\label{eq:sr1-lorentz-c1}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_08.png}
+\caption{La transformation de Lorentz complète, dans les unités où la vitesse de la lumière vaut un.}
+\lectureframe{01:02:05}
+\end{figure}
+
+\subsection{Rétablir les unités usuelles}
+
+L’analyse dimensionnelle permet de rétablir les unités usuelles. Le dénominateur ne peut dépendre que du rapport sans dimension \(v^2/c^2\), tandis que \(vx\) dans l’équation du temps doit devenir \(vx/c^2\) :
+\begin{align}
+x'&=\gamma(x-vt),&
+t'&=\gamma\left(t-\frac{vx}{c^2}\right),
+\label{eq:sr1-lorentz-dimensional}\\
+\gamma&=\frac{1}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr1-gamma}
+\end{align}
+La transformation inverse est
+\begin{align}
+x&=\gamma(x'+vt'),&
+t&=\gamma\left(t'+\frac{vx'}{c^2}\right).
+\label{eq:sr1-lorentz-inverse-dimensional}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_09.png}
+\caption{Les formules de Lorentz avec \(c\) rétabli : \(v^2/c^2\) détermine le facteur d’échelle et \(vx/c^2\) introduit la position dans l’expression du temps.}
+\lectureframe{01:05:01}
+\end{figure}
+
+Pour \(v\ll c\),
+\begin{equation}
+\gamma=1+\frac{1}{2}\frac{v^2}{c^2}+O\!\left(\frac{v^4}{c^4}\right),
+\end{equation}
+et la transformation se réduit à
+\begin{equation}
+x'\approx x-vt,
+\qquad
+t'\approx t.
+\end{equation}
+Aux vitesses terrestres, les rapports sont généralement très petits, ce qui explique le succès de la cinématique newtonienne. À l’approche de \(c\), les corrections deviennent importantes.
+
+Le mouvement a été choisi le long de l’axe \(x\). Un instrument de mesure transversal ne peut distinguer un référentiel inertiel de l’autre sans violer la réciprocité ; ainsi,
+\begin{equation}
+y'=y,
+\qquad
+z'=z.
+\end{equation}
+
+\section{Mesurer une règle en mouvement}
+
+La longueur désigne la distance entre les deux extrémités mesurée au même instant dans le référentiel qui effectue la mesure. Elle ne désigne pas la taille angulaire apparente d’un objet photographié, car les retards de propagation de la lumière posent un problème optique distinct.
+
+Considérons une règle au repos dans le référentiel non primé, dont les extrémités sont en
+\begin{equation}
+x=0,
+\qquad
+x=1.
+\end{equation}
+L’observateur primé mesure les événements aux deux extrémités sur une même tranche de simultanéité primée, par exemple \(t'=0\). À l’extrémité éloignée \(x=1\),
+\begin{equation}
+t'=0
+\quad\Longrightarrow\quad
+t=\frac{vx}{c^2}.
+\end{equation}
+Revenons provisoirement à \(c=1\) ; cet événement a pour coordonnée \(t=v\), et
+\begin{equation}
+x'=\frac{x-vt}{\sqrt{1-v^2}}
+   =\frac{1-v^2}{\sqrt{1-v^2}}
+   =\sqrt{1-v^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_10.png}
+\caption{Les lignes d’univers \(x=0\) et \(x=1\) d’une règle au repos dans le référentiel non primé ; un observateur mobile doit les comparer sur une même tranche \(t'\).}
+\lectureframe{01:11:14}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_11.png}
+\caption{La mesure des extrémités simultanée dans le référentiel primé donne le facteur de contraction \(\sqrt{1-v^2}\) dans les unités \(c=1\).}
+\lectureframe{01:16:03}
+\end{figure}
+
+Rétablissons les unités et considérons une longueur propre quelconque \(L_0\) :
+\begin{equation}
+L=\frac{L_0}{\gamma}
+ =L_0\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr1-length-contraction}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Si l’extrémité éloignée de la règle est en \(x=1\), sa coordonnée ne devrait-elle pas aussi être \(x'=1\) ?}
+\lecturerresponse{Non. La règle est au repos dans le référentiel non primé : \(x=0\) et \(x=1\) repèrent donc ses extrémités fixes dans ce référentiel. La coordonnée primée de l’extrémité éloignée varie avec le temps. Sa valeur sur la tranche de mesure \(t'=0\) est précisément celle que calcule la transformation de Lorentz. \lecturetimestamp{01:14:24}}
+\end{classroomqa}
+
+\begin{classroomqa}
+Comment chaque observateur inertiel peut-il dire de façon cohérente que la règle de l’autre observateur est plus courte ?\audiencequestion{}
+Ils ne mesurent pas les mêmes paires d’événements aux extrémités. L’observateur non primé exige des valeurs égales de \lecturerresponse{, tandis que l’observateur primé exige des valeurs égales de \(t\). Comme la simultanéité dépend du référentiel, ces deux paires d’événements ne sont pas identiques. La réciprocité ne crée donc aucune contradiction. \(t'\)
+\lecturetimestamp{01:16:28}}
+\end{classroomqa}
+
+Il est utile d’expliciter la procédure opérationnelle. Plaçons des horloges synchronisées et des assistants le long du référentiel de mesure. À une heure locale fixée, chacun relève la position de l’extrémité qui passe à proximité. La différence entre les deux positions relevées simultanément donne la longueur de la règle dans ce référentiel. Son apparence n’intervient pas.
+
+\begin{classroomqa}
+\audiencequestion{Lorsque \(c=1\), une règle unité doit-elle mesurer une seconde-lumière ?}
+\lecturerresponse{Seulement si le temps est mesuré en secondes. On peut plutôt mesurer les longueurs en mètres et le temps par le temps que met la lumière à parcourir un mètre. Poser \(c=1\) lie entre elles les unités de temps et de longueur ; cela ne prescrit pas laquelle des deux unités physiques doit être choisie en premier. \lecturetimestamp{01:21:17}}
+\end{classroomqa}
+
+\section{Une horloge en mouvement et la question des jumeaux}
+
+Considérons maintenant une horloge au repos dans le référentiel primé. Le long de sa ligne d’univers,
+\begin{equation}
+x'=0.
+\end{equation}
+Comparons l’événement où elle indique \(t'=1\) à l’origine. La transformation inverse donne
+\begin{equation}
+t=\gamma\left(t'+\frac{vx'}{c^2}\right)=\gamma.
+\end{equation}
+Ainsi, une unité de temps écoulée sur l’horloge en mouvement correspond à \(\gamma\) unités de temps coordonné dans le référentiel non primé :
+\begin{equation}
+\Delta t=\gamma\,\Delta\tau,
+\qquad
+\Delta\tau=\frac{\Delta t}{\gamma}.
+\label{eq:sr1-time-dilation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_12.png}
+\caption{Une horloge transportée sur \(x'=0\) enregistre, entre les mêmes deux événements, une durée écoulée inférieure au temps coordonné dans le référentiel immobile : \(t=\gamma t'\).}
+\lectureframe{01:26:42}
+\end{figure}
+
+Cet effet concerne toutes les horloges physiques, et pas seulement un mécanisme désigné comme tel. Une montre-bracelet, une transition atomique, le métabolisme et le vieillissement biologique suivent tous le même temps propre. Une montre bon marché achetée dans une rue de New York n’échapperait pas à la relativité sous prétexte qu’elle serait de piètre qualité, contrairement à une Rolex ; elle pourrait donner une heure inexacte, mais le processus qu’elle utilise reste soumis à la même cinématique.
+
+\begin{classroomqa}
+\audiencequestion{Si chaque observateur inertiel voit l’horloge de l’autre retarder, pourquoi le jumeau voyageur revient-il plus jeune ?}
+\lecturerresponse{Un aller-retour ne met pas en jeu deux lignes d’univers inertiels globalement équivalentes. Le voyageur doit faire demi-tour et rejoindre un autre référentiel inertiel, tandis que le jumeau resté au foyer suit une seule ligne d’univers inertielle. Le demi-tour rompt la symétrie de l’échange ; les temps propres accumulés peuvent donc différer. \lecturetimestamp{01:26:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{L’accélération pendant le demi-tour est-elle, à elle seule, ce qui cause la différence d’âge ?}
+\lecturerresponse{L’accélération marque l’endroit où la symétrie est rompue, mais la différence d’âge se calcule en intégrant le temps propre le long des trajectoires complètes. Le demi-tour peut être bref ou être traité comme un passage d’un segment inertiel à un autre ; les trajectoires différentes dans l’espace-temps ont néanmoins des temps propres différents. \lecturetimestamp{01:29:20}}
+\end{classroomqa}
+
+\section{La géométrie invariante}
+
+Le diagramme de dilatation du temps semble absurde si on le lit avec la géométrie euclidienne. Le trajet incliné paraît être une hypoténuse, mais il correspond à moins de temps propre que le trajet vertical. La solution ne tient pas à une astuce algébrique : l’espace-temps possède une autre métrique.
+
+Dans un plan euclidien, une rotation modifie \(x\) et \(y\), mais conserve
+\begin{equation}
+x'^2+y'^2=x^2+y^2.
+\label{eq:sr1-euclidean-invariant}
+\end{equation}
+Il est naturel de vérifier si une transformation de Lorentz conserve \(t^2+x^2\). Ce n’est pas le cas. Dans les unités \(c=1\),
+\begin{align}
+t'^2
+&=\frac{t^2-2vtx+v^2x^2}{1-v^2},\\
+x'^2
+&=\frac{x^2-2vtx+v^2t^2}{1-v^2}.
+\end{align}
+L’addition donne des coefficients incorrects. La soustraction, en revanche, annule les termes croisés et donne
+\begin{align}
+t'^2-x'^2
+&=
+\frac{t^2-2vtx+v^2x^2-x^2+2vtx-v^2t^2}{1-v^2}\\
+&=t^2-x^2.
+\label{eq:sr1-interval-invariance}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_13.png}
+\caption{La soustraction des coordonnées transformées au carré annule les termes croisés et fait apparaître l’invariant \(t^2-x^2\).}
+\lectureframe{01:38:07}
+\end{figure}
+
+Les coordonnées sont des composantes qui dépendent du référentiel. La combinaison
+\begin{equation}
+\Delta s^2=c^2\Delta t^2-\Delta x^2
+\label{eq:sr1-spacetime-interval}
+\end{equation}
+est la même dans tous les référentiels inertiels. Avec davantage de dimensions spatiales,
+\begin{equation}
+\Delta s^2
+=c^2\Delta t^2-\Delta x^2-\Delta y^2-\Delta z^2.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi est-il légitime d’abandonner la règle géométrique ordinaire selon laquelle l’hypoténuse est plus longue ?}
+\lecturerresponse{Cette règle relève de la métrique euclidienne définie positive. Ici, les coordonnées ont été définies opérationnellement à l’aide de règles, d’horloges et de signaux lumineux, et leur transformation conserve une différence de carrés. La géométrie de Minkowski n’est pas postulée pour échapper au paradoxe : elle découle de ces mesures. \lecturetimestamp{01:43:21}}
+\end{classroomqa}
+
+\subsection{Temps propre}
+
+Pour deux événements situés sur la ligne d’univers d’une horloge, choisissons le référentiel où cette horloge est au repos. Dans ce référentiel, \(\Delta x'=0\), donc l’invariance donne
+\begin{equation}
+c^2\Delta\tau^2
+=c^2\Delta t^2-\Delta x^2,
+\end{equation}
+ou
+\begin{equation}
+\Delta\tau
+=\sqrt{\Delta t^2-\frac{\Delta x^2}{c^2}}.
+\label{eq:sr1-proper-time}
+\end{equation}
+C’est le temps effectivement enregistré par l’horloge entre les deux événements.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_14.png}
+\caption{Dans le référentiel au repos de l’horloge, la séparation spatiale est nulle ; l’intervalle invariant est donc le carré de son temps propre.}
+\lectureframe{01:41:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Le temps propre doit-il être \(t^2-x^2/c^2\) ou sa racine carrée ?}
+\lecturerresponse{La différence de carrés est le carré du temps propre. Le temps écoulé indiqué par une horloge est \(\tau=\sqrt{t^2-x^2/c^2}\) pour des séparations mesurées à partir d’une origine commune. Il faut rétablir la racine carrée omise dans la formulation initiale. \lecturetimestamp{01:51:02}}
+\end{classroomqa}
+
+\subsection{Séparations de genre temporel, nul et spatial}
+
+Deux événements distincts peuvent avoir un intervalle nul. Dans les unités \(c=1\),
+\begin{equation}
+\Delta t^2-\Delta x^2=0
+\quad\Longleftrightarrow\quad
+\Delta x=\pm\Delta t.
+\end{equation}
+De tels événements sont reliés par un rayon lumineux.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_15.png}
+\caption{Les événements à séparation nulle se trouvent sur \(x=\pm t\), où l’intervalle d’espace-temps et le temps propre de la trajectoire lumineuse sont nuls.}
+\lectureframe{01:46:40}
+\end{figure}
+
+Si la lumière pouvait porter une horloge ordinaire, aucun tic de temps propre ne s’écoulerait entre l’émission et l’absorption. Il ne s’agit pas d’un référentiel au repos pour la lumière, mais de l’énoncé limite selon lequel chaque segment de genre lumière a un temps propre nul.
+
+Les rayons lumineux divisent l’espace-temps en trois classes invariantes :
+\begin{align}
+c^2\Delta t^2-\Delta x^2&>0
+&&\text{timelike},\\
+c^2\Delta t^2-\Delta x^2&=0
+&&\text{null},\\
+c^2\Delta t^2-\Delta x^2&<0
+&&\text{spacelike}.
+\end{align}
+Une horloge physique peut relier des événements à séparation de genre temporel, et l’intervalle positif détermine son temps propre. Aucun objet subluminal ne peut relier des événements à séparation de genre spatial. Pour une paire d’événements à séparation de genre spatial, on peut choisir un référentiel où ils sont simultanés et définir la distance propre
+\begin{equation}
+\ell_{\rm proper}
+=\sqrt{\Delta x^2-c^2\Delta t^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_16.png}
+\caption{Le cône de lumière sépare les paires d’événements à séparation de genre temporel, qu’une horloge peut relier, de celles à séparation de genre spatial, qu’aucun objet subluminal ne peut relier.}
+\lectureframe{01:48:47}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Quand faut-il appeler l’invariant temps propre, et quand faut-il l’appeler longueur propre ?}
+\lecturerresponse{Pour une paire d’événements à séparation de genre temporel, il existe un référentiel au repos où les deux événements ont lieu au même endroit ; l’intervalle donne alors le temps propre. Pour une paire à séparation de genre spatial, il existe un référentiel où les deux événements ont lieu au même instant ; l’invariant de signe opposé donne alors leur distance propre. La séparation nulle est la frontière entre les deux. \lecturetimestamp{01:47:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Où faut-il placer \(c\) lorsque les unités ne sont pas choisies de sorte que \(c=1\) ?}
+\lecturerresponse{L’invariant est \(c^2\Delta t^2-\Delta x^2\), et ses dimensions sont celles d’une longueur au carré. En le divisant par \(c^2\), on obtient \(\Delta\tau^2=\Delta t^2-\Delta x^2/c^2\), dont les dimensions sont celles d’un temps au carré. \lecturetimestamp{01:49:56}}
+\end{classroomqa}
+
+\section{La symétrie de Lorentz et sa portée historique}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on considérer une transformation de Lorentz comme une rotation ?}
+\lecturerresponse{Oui, mais pas comme une rotation euclidienne ordinaire. C’est une rotation hyperbolique qui conserve \(t^2-x^2\). Historiquement, on peut la décrire comme une rotation d’angle imaginaire ; la rapidité en fournit la paramétrisation réelle moderne. \lecturetimestamp{01:51:40}}
+\end{classroomqa}
+
+La démarche d’Einstein était étroitement liée à l’électromagnétisme. Selon son souvenir ultérieur, il se demandait déjà à l’adolescence ce qui se passerait s’il poursuivait une onde lumineuse. La soustraction galiléenne des vitesses rendrait l’onde apparemment immobile, mais les équations de Maxwell n’admettent pas d’onde lumineuse oscillante figée correspondante dans le vide. Ce conflit orientait vers la cinématique, et non vers une propriété mécanique particulière des règles de mesure.
+
+\begin{classroomqa}
+\audiencequestion{L’argument d’Einstein répondait-il principalement à des expériences telles que celle de Michelson--Morley ?}
+\lecturerresponse{Le contexte expérimental a compté historiquement, mais le propre témoignage d’Einstein mettait l’accent sur la structure des équations de Maxwell et sur l’expérience de pensée consistant à poursuivre un faisceau lumineux. La mesure dans laquelle il connaissait ou prenait en compte les résultats particuliers des interféromètres fait débat chez les historiens ; le point physique essentiel est donc le conflit de symétrie entre les transformations de Maxwell et celles de Galilée. \lecturetimestamp{01:52:04}}
+\end{classroomqa}
+
+Les équations de Maxwell sont invariantes sous les transformations de Lorentz, et non sous les transformations galiléennes. Lorentz et FitzGerald avaient déjà trouvé des formules de contraction apparentées, tout en conservant l’éther et en interprétant la contraction comme une déformation dynamique causée par le mouvement à travers celui-ci. Selon cette interprétation, l’effet aurait pu être une réponse matérielle approximative, assortie d’autres corrections.
+
+Le geste décisif d’Einstein a été d’ériger le principe de relativité et l’invariance de la vitesse de la lumière en principes cinématiques exacts. La contraction des longueurs et la dilatation du temps s’appliquent alors à toute règle et à toute horloge appropriées, car elles expriment la géométrie qui relie les référentiels inertiels, et non l’action d’une force particulière exercée par un éther. La tâche suivante consiste à formuler le mouvement des particules dans cette géométrie.

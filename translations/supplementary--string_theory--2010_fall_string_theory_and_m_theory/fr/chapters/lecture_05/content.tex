@@ -1,0 +1,809 @@
+\chapter{Échelles, cordes et vingt-six dimensions}
+
+\lectureoverview{Qu’est-ce qui fixe l’espacement du spectre d’une corde ? La réponse est
+la tension, une grandeur de dimension masse au carré. Pour les cordes
+fondamentales, cette observation conduit aux unités de Planck, à
+l’impossibilité pratique de les exciter directement et à l’apparition d’une
+forte gravité. Après une pause délibérée, nous revenons à l’état
+fondamental de la corde ouverte bosonique. La régularisation de son énergie
+de point zéro fournit la voie historique
+\emph{facile} vers vingt-quatre directions transverses, et donc vingt-six
+dimensions d’espace-temps.}
+
+\section{L’échelle que nous avions laissée de côté}
+
+Jusqu’ici, nous avons parlé de cordes qui vibrent et tournent sans préciser
+ce que signifie une unité d’excitation. On peut se représenter un hadron
+comme une corde et exciter ses oscillateurs, mais quelle est l’ampleur du
+passage d’un état au suivant ? Qu’est-ce qui la détermine ?
+
+Le modèle élémentaire de la corde ne comporte qu’un seul paramètre
+ayant une dimension. Pour le trouver, considérons d’abord un ressort
+étiré ordinaire. Si ses extrémités sont séparées d’une distance \(\ell\),
+la loi de Hooke donne
+\begin{equation}
+  E_{\mathrm{spring}}=\frac{k\ell^2}{2}.
+  \label{eq:l05-hooke}
+\end{equation}
+Le facteur un demi a été ajouté par la classe après la rédaction de la
+première version. Aucun point essentiel de cette estimation initiale ne
+dépendra de tels facteurs numériques.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_01.png}
+  \caption{Le segment étiré et son énergie potentielle élastique selon la loi de Hooke.}
+  \lectureframe{00:02:28}
+  \label{fig:l05-hooke-board}
+\end{figure}
+
+L’énergie dans \eqref{eq:l05-hooke} est non relativiste. Dans la description à
+impulsion infinie utilisée dans les cours précédents, l’énergie interne
+non relativiste est proportionnelle non pas à \(m\), mais à \(m^2\). Nous
+écrivons donc, de manière schématique,
+\begin{equation}
+  m^2\sim k\ell^2,
+  \qquad
+  m\sim \sqrt{k}\,\ell.
+  \label{eq:l05-mass-length}
+\end{equation}
+Dans le référentiel au repos de la corde, sa masse est égale à son énergie ;
+la seconde relation prend donc la forme
+\begin{equation}
+  E_{\mathrm{rest}}\sim T_s\ell,
+  \qquad
+  T_s\equiv\sqrt{k}.
+  \label{eq:l05-tension}
+\end{equation}
+Le coefficient \(T_s\) est la tension de la corde : l’énergie stockée par
+unité de longueur.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_02.png}
+  \caption{Au tableau, on passe de \(m^2\sim k\ell^2\) à une masse proportionnelle
+  à la longueur.}
+  \lectureframe{00:05:42}
+  \label{fig:l05-mass-length-board}
+\end{figure}
+
+Cette notation est adaptée à l’analogie avec le ressort utilisée dans le
+cours. Dans la notation relativiste usuelle des cordes, on écrit plutôt
+\begin{equation}
+  T_s=\frac{1}{2\pi\alpha'},
+  \label{eq:l05-alpha-prime}
+\end{equation}
+Ainsi, les accroissements du niveau de la corde produisent des
+accroissements de \(m^2\) d’un ordre de grandeur égal à \(1/\alpha'\), donc, de façon équivalente, à la tension.
+\editorialnote{Le \(k\) effectif du cours est choisi de sorte que
+\(\sqrt{k}\) joue le rôle de la tension. L’énoncé indépendant des conventions
+est que \(T_s\) est de dimension masse au carré et que la pente de Regge
+vérifie \(\alpha'\propto T_s^{-1}\).}
+
+\subsection{Dimensions et écarts entre niveaux d’oscillation}
+
+Posons \(c=\hbar=1\). L’énergie a alors la dimension de l’inverse d’une longueur :
+\begin{equation}
+  [E]=L^{-1}.
+\end{equation}
+La tension étant l’énergie par unité de longueur,
+\begin{equation}
+  [T_s]=L^{-2}=E^2.
+  \label{eq:l05-tension-dimension}
+\end{equation}
+C’est pourquoi le spectre d’une corde est naturellement espacé en masse au carré.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_03.png}
+  \caption{Unités naturelles au tableau : \(c=\hbar=1\), l’énergie est l’inverse
+  d’une longueur et la fréquence d’oscillation est fixée par l’échelle du ressort.}
+  \lectureframe{00:06:05}
+  \label{fig:l05-natural-units-board}
+\end{figure}
+
+L’oscillateur ordinaire exprime la même idée sous un autre angle. Pour un
+ressort de masse \(\mu\),
+\begin{equation}
+  \omega=\sqrt{\frac{k}{\mu}},
+  \qquad
+  \Delta E=\hbar\omega.
+\end{equation}
+Un ressort plus raide a une fréquence plus élevée et un écart quantique plus
+grand. Une corde contient une infinité de tels modes normaux, mais leur
+échelle commune est fixée par \(T_s\). Dès que la tension est connue,
+l’espacement du spectre de la corde l’est aussi.
+
+La tension a aussi la dimension d’une force, puisque le produit d’une
+force par une distance est une énergie. Imaginons que l’on fixe une
+extrémité et que l’on suspende un poids à l’autre. Une corde relativiste
+idéale telle que \(E=T_s\ell\) peut soutenir une force déterminée par \(T_s\),
+indépendamment de sa longueur. La tension hadronique déduite des énergies
+d’excitation observées correspond, dans cette comparaison délibérément
+fantaisiste, au poids d’un camion. On n’a jamais suspendu de camion à un
+méson ; le spectre mesuré donne la tension, et la tension permet cette
+comparaison mécanique.
+
+Les cordes fondamentales seraient bien plus raides. Si elles sont à
+l’origine des électrons, des photons et des gravitons, leurs premières
+excitations d’oscillation doivent se situer très au-dessus des énergies des
+particules observées. Dans la même expérience gravitationnelle fantaisiste,
+leur tension pourrait soutenir un objet de masse galactique. Cette
+comparaison ne porte pas sur l’ingénierie. Elle illustre le fait qu’une
+tension énorme implique à la fois une énergie d’excitation élevée et une
+fluctuation de l’état fondamental très faible.
+
+\section{Des unités construites à partir de constantes universelles}
+
+Quelle échelle est suffisamment élevée ? L’échelle de Planck constitue le
+repère naturel. Plutôt que de simplement la citer, construisons-la.
+
+Le mètre, le kilogramme et la seconde sont d’excellentes unités de
+laboratoire, mais leur origine est liée à l’échelle humaine. Le mètre est
+commode pour mesurer du tissu ou une corde ; le pied porte le nom d’une
+partie du corps ; la seconde représente une fraction du jour facile à
+appréhender. On pourrait poser que le rayon du proton vaut un et simplifier
+certaines formules nucléaires, mais le proton n’est qu’une particule
+composite parmi d’autres. Un tel choix ne simplifierait pas toute la physique.
+
+Trois constantes dimensionnées ont une portée plus universelle :
+\begin{itemize}
+  \item \(c\) fixe la vitesse limite pour tout système matériel ;
+  \item \(\hbar\) intervient dans les relations d’incertitude de tout système
+  quantique ;
+  \item \(G\) couple la gravité à toute forme de masse-énergie.
+\end{itemize}
+Choisir des unités telles que \(c=\hbar=G=1\) revient à construire des unités
+de longueur, de temps et de masse à partir de ces constantes.
+
+Leurs dimensions usuelles sont
+\begin{equation}
+  \begin{aligned}
+    [c]&=LT^{-1},
+    & [\hbar]&=ML^2T^{-1},\\
+    [G]&=L^3M^{-1}T^{-2}.
+  \end{aligned}
+  \label{eq:l05-dimensions-constants}
+\end{equation}
+La relation du milieu découle directement de
+\(\Delta x\,\Delta p\gtrsim\hbar\). La dernière découle, par exemple, de
+\begin{equation}
+  a=\frac{GM}{r^2}.
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_04.png}
+    \par\smallskip\footnotesize Unités de \(c\) et \(\hbar\).
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_05.png}
+    \par\smallskip\footnotesize Unités de \(G\) déduites de l’accélération newtonienne.
+  \end{minipage}
+  \caption{Les éléments d’analyse dimensionnelle rassemblés en cours.}
+  \lectureframe{00:25:43--00:26:40}
+  \label{fig:l05-dimensional-analysis-board}
+\end{figure}
+
+\subsection{D’abord l’aire de Planck}
+
+Cherchons les exposants \(p,q,r\) tels que
+\begin{equation}
+  G^p\hbar^q c^r
+\end{equation}
+ait la dimension \(L^2\). Commencer par l’aire évite d’introduire trop tôt
+une racine carrée et annonce aussi le rôle particulier que l’aire jouera
+plus tard en gravité. À partir de \eqref{eq:l05-dimensions-constants}, l’élimination de la masse et du
+temps donne
+\begin{equation}
+  -p+q=0,
+  \qquad
+  -2p-q-r=0.
+\end{equation}
+L’exposant restant de la longueur doit satisfaire
+\begin{equation}
+  3p+2q+r=2.
+\end{equation}
+On obtient donc \(q=p\), \(r=-3p\) et \(p=1\). L’aire de Planck vaut
+\begin{equation}
+  \ell_P^2=\frac{G\hbar}{c^3},
+  \label{eq:l05-planck-area}
+\end{equation}
+et, par conséquent,
+\begin{equation}
+  \ell_P=\sqrt{\frac{G\hbar}{c^3}},
+  \qquad
+  t_P=\frac{\ell_P}{c},
+  \qquad
+  m_P=\sqrt{\frac{\hbar c}{G}}.
+  \label{eq:l05-planck-units}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_06.png}
+  \caption{L’argument dimensionnel complet pour l’aire et la longueur de Planck.}
+  \lectureframe{00:31:34}
+  \label{fig:l05-planck-area-board}
+\end{figure}
+
+À un ordre de grandeur près,
+\begin{equation}
+  \begin{aligned}
+    \ell_P&\sim10^{-35}\,\mathrm{m},
+    &t_P&\sim10^{-43}\,\mathrm{s},\\
+    m_P&\sim10^{-8}\,\mathrm{kg},
+    &m_Pc^2&\sim10^{19}\,\mathrm{GeV}.
+  \end{aligned}
+  \label{eq:l05-planck-numbers}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_07.png}
+  \caption{Les trois échelles de Planck inscrites au tableau, à un ordre de grandeur près.}
+  \lectureframe{00:35:12}
+  \label{fig:l05-planck-values-board}
+\end{figure}
+
+La longueur et le temps sont inimaginablement petits, tandis que la
+masse est étonnamment macroscopique à l’échelle des particules, à peu près
+celle d’un grain de poussière fine. Son énergie de masse au repos est de
+l’ordre de quelques gigajoules, comparable à l’énergie chimique d’un
+réservoir d’essence. En revanche, l’Univers observable s’étend sur environ
+\(10^{60}\) longueurs de Planck et son âge est d’environ
+\(10^{60}\) temps de Planck. Ces comparaisons visent à donner une réalité
+physique à ces unités, et non à améliorer leur précision numérique.
+
+Si la longueur caractéristique de la corde \(\ell_s=\sqrt{\alpha'}\) est proche de
+\(\ell_P\), sa taille quantique est proche de \(\ell_P\), sa période
+d’oscillation de \(t_P\) et sa première excitation massive de
+\(m_P\). Le cours admet des facteurs de dix, de cent ou davantage ; il
+s’agit d’une estimation, pas d’une identité dimensionnelle.
+
+\begin{classroomqa}
+\audiencequestion{La masse à l’échelle de Planck correspond-elle à l’augmentation
+par rapport à l’état fondamental de la particule ? \lecturetimestamp{00:38:37}}
+\lecturerresponse{La grandeur régulièrement espacée est la masse au carré. Si l’état
+fondamental est léger, la première excitation de la corde a une valeur de
+\(m^2\) supérieure de l’ordre de \(m_P^2\) ; sa masse et l’énergie du
+centre de masse nécessaire sont donc de l’ordre de \(m_P\).}
+\end{classroomqa}
+
+\section{À quel point les deux échelles doivent-elles être proches ?}
+
+\begin{classroomqa}
+\audiencequestion{L’analyse dimensionnelle donne \(\ell_P\), mais pourquoi ce
+nombre serait-il la longueur d’une corde ? \lecturetimestamp{00:40:21}}
+\lecturerresponse{C’est une hypothèse physique étayée par la gravité et par
+l’absence de structure des cordes observée ; elle ne découle pas de la seule
+analyse dimensionnelle. La longueur de la corde peut être supérieure à la
+longueur de Planck, auquel cas son échelle d’énergie est plus basse. Le
+cours soutient seulement qu’elle ne devrait pas être une longueur ordinaire
+de la physique des particules et qu’une longueur bien inférieure à celle de
+Planck se heurte à l’effondrement gravitationnel.}
+\end{classroomqa}
+
+La relation entre les deux échelles dépend en fait du couplage. Dans une
+compactification complète, \(\ell_P\), \(\ell_s\), le couplage des cordes et
+le volume de compactification interviennent ensemble. Il n’existe pas
+d’équation universelle \(\ell_s=\ell_P\). Ce qui subsiste de l’argument du cours,
+c’est l’argument d’échelle : les effets des cordes doivent apparaître à très
+haute énergie, et on ne peut étudier une localisation sous la longueur de
+Planck en négligeant la gravité.
+\editorialnote{Les constructions modernes de la théorie des cordes n’identifient
+pas nécessairement la longueur de la corde à la longueur de Planck en
+quatre dimensions. Leur relation dépend du couplage des cordes et des
+données de compactification.}
+
+\begin{classroomqa}
+\audiencequestion{Si l’on considère la longueur de Planck comme la plus petite
+longueur utile, la masse de Planck est-elle aussi la plus petite masse
+possible ? \lecturetimestamp{00:43:27}}
+\lecturerresponse{Non. Les particules ordinaires sont bien plus légères. La masse de
+Planck est l’échelle à laquelle un objet compact peut avoir un rayon
+gravitationnel comparable à sa longueur d’onde quantique. Dans le langage
+heuristique du cours, c’est l’échelle du trou noir semi-classique le plus
+léger, dont la durée de vie est de l’ordre du temps de Planck ; cette
+dernière affirmation ne doit pas être prise pour une description précise
+d’un objet pleinement quantique.}
+\end{classroomqa}
+
+\subsection{Ce que les couplages en cours d’évolution peuvent nous apprendre}
+
+Des indices indirects montrent que la théorie quantique des champs
+conventionnelle reste valable jusqu’à des échelles bien au-delà de la
+portée directe des accélérateurs. Les trois constantes de couplage de jauge
+du modèle standard sont mesurées aux énergies accessibles, et leur
+dépendance en fonction de l’échelle peut être extrapolée. Dans le graphique
+schématique du cours, les couplages \(U(1)\), \(SU(2)\) et \(SU(3)\) se
+rapprochent à une échelle élevée d’unification, peut-être à quelques ordres
+de grandeur sous l’énergie de Planck.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_08.png}
+  \caption{Graphique schématique des couplages en fonction de l’échelle. Les trois courbes de jauge
+  se rapprochent avant que l’intensité gravitationnelle croissante ne devienne
+  de l’ordre de un.}
+  \lectureframe{00:47:18}
+  \label{fig:l05-running-couplings-board}
+\end{figure}
+
+Il s’agit d’une extrapolation, pas d’une expérience directe au point
+d’intersection. Des particules supplémentaires ou des seuils entre les
+énergies de laboratoire et celles d’unification peuvent modifier les
+pentes. La conclusion prudente est simplement que la théorie des champs
+connue ne révèle aucun signe de sous-structure à l’échelle des cordes aux
+distances ordinaires, et qu’une échelle plausible pour les cordes se situe
+quelque part dans l’énorme intervalle entre les échelles d’unification
+inférée et de Planck.
+
+\begin{classroomqa}
+\audiencequestion{Quels sont les trois couplages que l’on extrapole ? \lecturetimestamp{00:48:28}}
+\lecturerresponse{Ce sont les couplages de jauge associés à \(U(1)\), \(SU(2)\) et
+\(SU(3)\) : les interactions d’hypercharge, faible et forte. Dans cette
+classification, l’électromagnétisme résulte du mélange électrofaible ; il
+ne constitue pas un quatrième facteur de jauge indépendant.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La constante gravitationnelle \(G\) elle-même augmente-t-elle
+lorsqu’on sonde des énergies plus élevées ? \lecturetimestamp{00:49:30}}
+\lecturerresponse{\(G\) est dimensionnelle ; prise isolément, ce n’est donc pas la
+bonne grandeur à comparer à un couplage de jauge sans dimension. À une
+énergie caractéristique \(M\), l’intensité gravitationnelle sans
+dimension se comporte schématiquement comme \(GM^2/(\hbar c)\). Cette combinaison
+augmente avec l’énergie et devient de l’ordre de un à l’échelle de Planck.}
+\end{classroomqa}
+
+Les lois de force rendent la comparaison manifeste :
+\begin{equation}
+  F_{\mathrm{em}}\sim\frac{e^2}{r^2},
+  \qquad
+  F_{\mathrm{grav}}\sim\frac{GM^2}{r^2}.
+  \label{eq:l05-force-laws}
+\end{equation}
+Ainsi, en unités naturelles, on compare \(e^2\) non pas à \(G\),
+mais à \(GM^2\).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_09.png}
+  \caption{Lois de force électromagnétique et gravitationnelle utilisées pour définir
+  l’intensité gravitationnelle sans dimension.}
+  \lectureframe{00:50:50}
+  \label{fig:l05-force-laws-board}
+\end{figure}
+
+\section{Pourquoi la spectroscopie directe des cordes est hors de portée}
+
+Comment établir expérimentalement qu’un électron est une corde ? Nous
+ferions comme en spectroscopie des hadrons : le frapper assez fort pour
+exciter ses modes internes et rechercher une série de niveaux dont les
+masses suivent le motif propre aux cordes. Si le premier niveau massif se
+situe près de \(10^{19}\,\mathrm{GeV}\), il est très au-delà de la portée de tout
+accélérateur direct.
+
+L’énergie totale n’est pas le seul obstacle. Il faut la concentrer dans
+un paramètre d’impact minuscule. Cela fait intervenir les trous noirs.
+
+\begin{classroomqa}
+\audiencequestion{À ces énergies, un accélérateur commencerait-il à produire
+de petits trous noirs ? \lecturetimestamp{00:50:57}}
+\lecturerresponse{C’est ce que suggère l’argument heuristique lorsque l’énergie du
+centre de masse est concentrée à l’intérieur de son rayon gravitationnel.
+Un trou noir stellaire se forme lorsque l’énergie potentielle
+gravitationnelle comprime une étoile massive. Un trou noir microscopique
+se formerait plutôt en concentrant l’énergie cinétique dans une région de
+collision minuscule. En gravité à quatre dimensions, l’échelle requise est
+celle de Planck.}
+\end{classroomqa}
+
+Pour donner un ordre d’idée, le gain en énergie d’un accélérateur linéaire
+est à peu près proportionnel à sa longueur. Le cours prend environ deux
+miles pour atteindre approximativement \(100\,\mathrm{GeV}\), comme repère simple à
+l’échelle du SLAC. Atteindre \(10^{19}\,\mathrm{GeV}\) avec le même gradient multiplierait
+la longueur par environ \(10^{17}\) et donnerait une machine de taille
+galactique.
+
+Même une telle machine aurait besoin d’une certaine luminosité. Les
+faisceaux ne sont pas dirigés avec une précision de longueur de Planck,
+pour chaque paire de particules ; on fait se croiser un nombre immense de
+particules afin que quelques-unes entrent en collision au paramètre
+d’impact voulu. Le produit d’une énergie de Planck par un taux de collision
+énorme conduit à une puissance tout aussi absurde. Les estimations sont
+volontairement approximatives, mais leur conclusion reste solide : la
+spectroscopie directe des cordes à l’échelle de Planck n’est pas une
+expérience que l’on puisse raisonnablement concevoir.
+
+Les indices indirects devraient être plus structurels : une théorie qui
+produit les particules et les interactions observées à basse énergie avec
+assez de précision pour être mise à l’épreuve, ou des effets de la
+compactification qui subsistent bien en dessous de l’échelle des cordes.
+Le cours ne prétend pas qu’une telle construction décisive soit déjà
+établie.
+
+\subsection{Dimensions supplémentaires et limite de localisation}
+
+\begin{classroomqa}
+\audiencequestion{Les dimensions supplémentaires devraient-elles avoir elles aussi
+des tailles proches de la longueur de Planck ? \lecturetimestamp{00:56:23}}
+\lecturerresponse{Dans cette image élémentaire, on s’attend à ce qu’elles soient
+extrêmement petites, même si l’argument n’en fixe pas précisément la taille.
+Si une dimension compactifiée était assez grande pour être explorée à plus
+basse énergie, de nouveaux modes de Kaluza--Klein et des effets
+quadridimensionnels auraient déjà modifié la théorie des champs que nous
+observons. L’extrapolation qui fonctionne impose donc une borne supérieure
+à la taille de ces dimensions.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi une corde ou une dimension compactifiée ne pourrait-elle
+pas être beaucoup plus petite que \(\ell_P\) ? \lecturetimestamp{00:57:48}}
+\lecturerresponse{Pour résoudre une distance plus courte, il faut une impulsion plus
+grande. Au-delà de l’échelle de Planck, l’énergie nécessaire à la
+localisation a un rayon gravitationnel comparable, puis supérieur, à la
+région sondée. L’expérience forme un trou noir avant de pouvoir résoudre
+une corde ordinaire plus petite.}
+\end{classroomqa}
+
+Le principe d’incertitude fournit l’estimation. Localiser à l’échelle
+\(\Delta x\) exige
+
+\begin{classroomqa}
+\audiencequestion{Une fois la longueur et le temps de Planck choisis, comment la
+masse de Planck est-elle déterminée physiquement ? \lecturetimestamp{00:59:04}}
+\lecturerresponse{On peut utiliser soit \(\hbar\), soit \(G\) pour convertir
+l’échelle de longueur en énergie. Le principe d’incertitude indique que
+localiser deux particules à l’intérieur de \(\ell_P\) exige une impulsion
+de l’ordre de \(\hbar/\ell_P\), donc une énergie de l’ordre de \(m_Pc^2\).
+Équivalemment, c’est la masse pour laquelle les longueurs quantique et
+gravitationnelle deviennent comparables.}
+\end{classroomqa}
+
+\begin{equation}
+  \Delta p\gtrsim\frac{\hbar}{\Delta x},
+  \qquad
+  E\sim c\,\Delta p.
+  \label{eq:l05-localization}
+\end{equation}
+Pour \(\Delta x=\ell_P\), cette énergie vaut
+\begin{equation}
+  E\sim\frac{\hbar c}{\ell_P}=m_Pc^2.
+\end{equation}
+Au même moment, le rayon de Schwarzschild
+\begin{equation}
+  r_s\sim\frac{GE}{c^4}
+\end{equation}
+est de l’ordre de \(\ell_P\), à des constantes numériques près. La
+localisation quantique et l’effondrement gravitationnel se rejoignent à la
+même échelle.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_10.png}
+  \caption{Les formules de la longueur et de la masse de Planck reprises dans l’argument sur la localisation.}
+  \lectureframe{01:00:25}
+  \label{fig:l05-localization-board}
+\end{figure}
+
+L’argument qui fixe l’échelle est ainsi achevé.
+
+\section{L’état fondamental doit se situer sous le photon}
+
+Après la pause, deux pistes s’offrent à nous : commencer par les
+transformations conformes ou présenter la voie plus ancienne et plus simple
+vers la dimension critique. Nous choisissons la seconde, avec une mise en
+garde. L’argument simple n’est pas facile et ne donne pas la raison la plus
+profonde. Il est néanmoins correct et proche de la découverte historique.
+
+Revenons à la corde ouverte bosonique. L’action d’un opérateur de création
+transverse produit deux états de polarisation. En l’absence d’un troisième
+état longitudinal, l’excitation doit être un vecteur sans masse. En unités
+où un quantum du mode \(1\) augmente \(m^2\) d’une unité,
+\begin{equation}
+  m_{\mathrm{ground}}^2=-1,
+  \qquad
+  m_{\mathrm{first}}^2=-1+1=0.
+  \label{eq:l05-open-intercept}
+\end{equation}
+L’état fondamental tachyonique reste un problème de la théorie bosonique ;
+nous le reconnaissons et le laissons de côté. La question immédiate est
+d’où vient l’unité négative dans \eqref{eq:l05-open-intercept}.
+
+Chaque mode de la corde est un oscillateur harmonique. Pour \(\hbar=1\),
+l’énergie du vide vaut
+\begin{equation}
+  E_{0,n}=\frac{\omega_n}{2}.
+\end{equation}
+Pour la corde, \(\omega_n=n\), si bien qu’une coordonnée transverse contribue
+formellement
+\begin{equation}
+  E_0^{(1)}
+  =\frac12\sum_{n=1}^{\infty}n.
+  \label{eq:l05-formal-zero-point}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_11.png}
+  \caption{La somme des énergies de point zéro \(\sum n/2\) écrite après le rappel des fréquences des modes.}
+  \lectureframe{01:06:18}
+  \label{fig:l05-zero-point-board}
+\end{figure}
+
+La difficulté apparaît maintenant clairement. Chaque terme de
+\eqref{eq:l05-formal-zero-point} est positif et la somme diverge. Comment pourrait-elle fournir
+un intercept négatif fini ?
+
+\section{Soustraire le mouvement avant de lire le spectre}
+
+Avant de régulariser la somme, rappelons pourquoi l’énergie interne a été
+identifiée à la masse au carré. Pour une particule portant une grande
+impulsion longitudinale \(P>0\),
+\begin{equation}
+  E=\sqrt{P^2+m^2}
+   =P+\frac{m^2}{2P}
+   +O(P^{-3}).
+  \label{eq:l05-large-p-energy}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_12.png}
+  \caption{Le développement en grandes valeurs de \(P\) qui sépare l’impulsion globale du terme de masse interne.}
+  \lectureframe{01:07:35}
+  \label{fig:l05-fast-energy-board}
+\end{figure}
+
+Le premier terme décrit le mouvement global sans intérêt le long de l’axe
+\(z\). Il est conservé et commun à tous les états internes ayant la même
+valeur de \(P\). En le soustrayant puis en redimensionnant, on élimine
+la dilatation cinématique du temps :
+\begin{equation}
+  \begin{aligned}
+    E-P&=\frac{m^2}{2P}+O(P^{-3}),\\
+    2P(E-P)&=m^2+O(P^{-2}).
+  \end{aligned}
+  \label{eq:l05-internal-energy}
+\end{equation}
+
+L’atome donne une image physique de la situation. Accélérons un atome
+d’hydrogène par transformation de Lorentz. Son énergie totale augmente,
+mais l’écart entre deux niveaux internes, mesuré selon le temps du
+laboratoire, diminue parce que l’horloge de l’atome est dilatée. Le facteur
+\(1/P\) dans \eqref{eq:l05-large-p-energy} exprime cette réduction. La multiplication par
+\(2P\) rétablit l’écart invariant de masse au carré.
+
+L’énergie brute de l’état fondamental n’a donc pas besoin d’être
+littéralement \(-1\). Elle peut comporter une grande contribution
+indépendante de l’état, associée à l’énergie longitudinale globale, ainsi
+qu’un reste interne fini. Le cours réécrit la relation dans le référentiel
+boosté pour faire apparaître les deux contributions, avant de revenir à la
+somme des oscillateurs.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_13.png}
+  \caption{Le terme de masse invariant affiché à côté de la grande contribution longitudinale indépendante de l’état.}
+  \lectureframe{01:11:34}
+  \label{fig:l05-infinite-piece-board}
+\end{figure}
+
+Les énergies du vide infinies sont familières en théorie quantique des
+champs. On sépare souvent une constante divergente indépendante de l’état
+des différences d’énergie observables. Le cours établit un parallèle avec
+l’énergie de point zéro du champ électromagnétique dans la pièce et
+qualifie ouvertement la procédure d’insatisfaisante, mais standard. Nous
+suivons ici la même approche heuristique : isoler la partie divergente et
+vérifier s’il subsiste un reste fini bien défini.
+
+\section{Régularisation de la somme}
+
+Introduisons un régulateur positif \(\epsilon\) :
+\begin{equation}
+  S_1(\epsilon)
+  =\sum_{n=1}^{\infty}n e^{-n\epsilon}.
+  \label{eq:l05-regulated-sum}
+\end{equation}
+Pour tout \(\epsilon>0\), l’exponentielle finit par dominer le facteur \(n\),
+de sorte que la somme converge. Faire tendre \(\epsilon\) vers zéro supprime
+la coupure.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_14.png}
+  \caption{Le régulateur exponentiel appliqué terme à terme à \(1+2+3+\cdots\).}
+  \lectureframe{01:16:42}
+  \label{fig:l05-regulator-board}
+\end{figure}
+
+Le facteur \(n\) s’obtient par dérivation :
+\begin{equation}
+  S_1(\epsilon)
+  =
+  -\frac{d}{d\epsilon}
+  \sum_{n=1}^{\infty}e^{-n\epsilon}.
+  \label{eq:l05-derivative-trick}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_15.png}
+  \caption{La dérivation par rapport au paramètre de coupure fait apparaître le facteur \(-n\).}
+  \lectureframe{01:18:05}
+  \label{fig:l05-derivative-board}
+\end{figure}
+
+La série restante est géométrique :
+\begin{equation}
+  S_0(\epsilon)
+  \equiv
+  \sum_{n=1}^{\infty}e^{-n\epsilon}
+  =
+  \frac{e^{-\epsilon}}{1-e^{-\epsilon}}
+  =
+  \frac{1}{e^\epsilon-1}.
+  \label{eq:l05-geometric-sum}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_16.png}
+  \caption{La série géométrique régularisée sous forme fermée.}
+  \lectureframe{01:19:12}
+  \label{fig:l05-geometric-board}
+\end{figure}
+
+Développons pour \(\epsilon\) petit :
+\begin{equation}
+  S_0(\epsilon)
+  =
+  \frac{1}{\epsilon}
+  -\frac12
+  +\frac{\epsilon}{12}
+  -\frac{\epsilon^3}{720}
+  +O(\epsilon^5).
+  \label{eq:l05-bernoulli-expansion}
+\end{equation}
+Au tableau, ce résultat est obtenu en développant séparément le numérateur
+et le dénominateur, en mettant en facteur une puissance de \(\epsilon\), puis
+en développant l’inverse. Ce calcul comporte plusieurs vérifications de
+signe faites en cours ; l’expression compacte \eqref{eq:l05-bernoulli-expansion} en est le résultat
+mis au propre.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_17.png}
+  \caption{Développements du numérateur et du dénominateur avant la simplification de l’inverse.}
+  \lectureframe{01:23:10}
+  \label{fig:l05-expansion-board}
+\end{figure}
+
+L’application de \(-d/d\epsilon\) donne
+\begin{equation}
+  S_1(\epsilon)
+  =
+  \frac{1}{\epsilon^2}
+  -\frac{1}{12}
+  +\frac{\epsilon^2}{240}
+  +O(\epsilon^4).
+  \label{eq:l05-regulated-result}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_18.png}
+  \caption{Le terme divergent \(1/\epsilon^2\) et le reste fini \(-1/12\) au terme du calcul avec régulateur.}
+  \lectureframe{01:29:48}
+  \label{fig:l05-minus-twelve-board}
+\end{figure}
+
+On résume souvent ce résultat, sur le ton de la plaisanterie, par
+\(1+2+3+\cdots=-1/12\). Il ne s’agit pas d’une convergence ordinaire. L’équation
+\eqref{eq:l05-regulated-result} indique que ce régulateur particulier produit un terme divergent
+et une partie finie indépendante du régulateur :
+\begin{equation}
+  \underbrace{\frac{1}{\epsilon^2}}_{\text{divergent}}
+  \;+\;
+  \underbrace{\left(-\frac{1}{12}\right)}_{\text{finite}}
+  \;+\;O(\epsilon^2).
+\end{equation}
+Le cours absorbe le premier terme dans la contribution indépendante de
+l’état déjà présente et conserve le second. Il rappelle aussi la mise en
+garde attribuée à Pauli : le seul fait qu’une quantité soit infinie ne la
+rend pas nulle. Une théorie cohérente doit expliquer pourquoi cette
+soustraction est permise.
+
+En rétablissant le facteur un demi dans \eqref{eq:l05-formal-zero-point}, une coordonnée
+transverse contribue
+\begin{equation}
+  E_0^{(1)}=-\frac{1}{24}.
+  \label{eq:l05-one-transverse-zero-point}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_19.png}
+  \caption{Le facteur un demi transforme le terme fini \(-1/12\) en \(-1/24\) par coordonnée transverse.}
+  \lectureframe{01:33:42}
+  \label{fig:l05-minus-twenty-four-board}
+\end{figure}
+
+\section{Comptage des directions transverses}
+
+Soit \(D_\perp\) le nombre de coordonnées transverses de la corde. Leur
+contribution totale au vide est
+\begin{equation}
+  E_0^{\mathrm{open}}
+  =-\frac{D_\perp}{24}.
+  \label{eq:l05-open-vacuum}
+\end{equation}
+Pour que le premier oscillateur de la corde ouverte fasse passer l’état
+fondamental de \(-1\) au niveau sans masse, il faut que
+\begin{equation}
+  -\frac{D_\perp}{24}=-1.
+\end{equation}
+Par conséquent,
+\begin{equation}
+  D_\perp=24.
+\end{equation}
+Ce sont les directions perpendiculaires à la grande impulsion longitudinale.
+En ajoutant cette direction spatiale longitudinale et le temps, on obtient
+\begin{equation}
+  D=D_\perp+2=26.
+  \label{eq:l05-critical-dimension}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Quand cet argument est-il entré dans la théorie des cordes ? \lecturetimestamp{01:35:27}}
+\lecturerresponse{Il remonte à l’époque des cordes hadroniques, vers 1969 et le
+début des années 1970. Les trajectoires de Regge étaient déjà connues
+expérimentalement. Lorsque le modèle oscillatoire fut étudié pour lui-même,
+on constata que le premier état excité avait deux polarisations vectorielles,
+et non trois, ce qui imposait qu’il soit sans masse. L’intercept requis
+conduisit alors rapidement à vingt-quatre oscillateurs transverses.}
+\end{classroomqa}
+
+À l’époque, cela semblait presque trop étrange pour être crédible. Pourquoi
+une somme régularisée du vide devrait-elle connaître la dimension de
+l’espace-temps ? Pourtant, tout concordait : le vecteur sans masse,
+l’intercept et le nombre d’oscillateurs transverses sélectionnaient tous le
+même nombre.
+
+\subsection{La corde fermée confirme le décompte}
+
+Pour atteindre son premier niveau physique sans masse, une corde fermée a
+besoin d’un mode se propageant vers la gauche et d’un mode se propageant
+vers la droite. Son état fondamental doit donc commencer deux unités en
+dessous de zéro.
+
+\begin{classroomqa}
+\audiencequestion{Si vingt-quatre directions transverses donnent seulement \(-1\),
+une corde fermée doit-elle vivre dans quarante-huit directions transverses ? \lecturetimestamp{01:37:47}}
+\lecturerresponse{Non. Les cordes ouvertes et fermées coexistent dans le même espace-temps.
+Une corde fermée possède déjà deux fois plus d’oscillateurs : une tour de
+modes circule dans chaque direction sur la feuille d’univers. Chaque tour
+contribue \(-24/24=-1\) ; ensemble, elles donnent \(-2\).}
+\end{classroomqa}
+
+Ainsi,
+\begin{equation}
+  E_0^{\mathrm{closed}}
+  =
+  2\left(-\frac{D_\perp}{24}\right)
+  =-2
+  \qquad (D_\perp=24).
+\end{equation}
+L’ajout d’un oscillateur de chaque secteur élève l’état de deux unités et
+aboutit à une masse au carré nulle, exactement là où le multiplet du graviton
+était apparu dans le cours précédent.
+
+Cette concordance rend l’argument plus convaincant, mais elle ne constitue toujours pas l’explication profonde. Dans la quantification moderne, la constante de mise en ordre normal, la fermeture de l’algèbre de Lorentz ou de Virasoro et l’annulation de l’anomalie conforme font partie d’une même structure cohérente. Cette structure fixe à la fois l’intercept et la dimension critique ; le terme résiduel fini dû à la coupure est la voie historique qui y mène.
+\editorialnote{Le calcul avec régulateur donne une interprétation heuristique de la constante de mise en ordre normal. La dérivation plus profonde de \(D=26\) exige l’invariance conforme sur la feuille d’univers, ce qui équivaut à l’annulation de l’anomalie conforme et à la cohérence de l’algèbre des contraintes.}
+
+La suite présente cette voie plus profonde. Pour commencer, un peu d’analyse complexe suffit : les coordonnées complexes, les fonctions analytiques et les équations de Cauchy--Riemann. L’image physique annoncée est celle de la pâte à tire turque---tirée dans un sens, étirée dans un autre, remodelée sans détruire la structure essentielle. L’invariance conforme est le fondement mathématique de cette image.
