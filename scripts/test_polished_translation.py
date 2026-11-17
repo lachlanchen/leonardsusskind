@@ -222,11 +222,20 @@ class TranslationTests(unittest.TestCase):
                 p.check_codex_quota()
                 p.check_codex_quota()
                 self.assertEqual(run.call_count, 1)
+                self.assertEqual(run.call_args.args[0], [p.sys.executable, '/quota-helper', 'quota'])
             p.write(p.WORK / 'quota-check.json', {
                 'ok': True, 'remaining_percent': 4, 'checked_at': p.time.time()})
             with patch.object(p.subprocess, 'run') as run, self.assertRaises(p.ProviderUnavailable):
                 p.check_codex_quota()
             run.assert_not_called()
+
+    def test_quota_probe_failure_is_not_reported_as_exhaustion(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)), \
+             patch.dict(p.os.environ, {'TRANSLATION_QUOTA_HELPER': '/quota-helper'}):
+            p.write(p.WORK / 'quota-check.json', {
+                'ok': False, 'error': 'RPC rejected', 'checked_at': p.time.time()})
+            with self.assertRaisesRegex(p.ProviderUnavailable, 'telemetry unavailable.*RPC rejected'):
+                p.check_codex_quota()
 
     def test_publication_refuses_an_unvalidated_edition(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'ROOT', Path(tmp)), \

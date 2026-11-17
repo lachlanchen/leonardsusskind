@@ -658,17 +658,21 @@ def check_codex_quota():
     with QUOTA_CHECK_LOCK:
         path = WORK / 'quota-check.json'
         data = read(path) if path.exists() else {}
-        if time.time() - data.get('checked_at', 0) >= 60:
+        snapshot_time = data.get('observed_at_epoch', data.get('checked_at', 0))
+        if time.time() - data.get('checked_at', 0) >= 60 or time.time() - snapshot_time >= 180:
             try:
-                probe = subprocess.run([sys.executable, helper, 'quota', '--probe'],
+                probe = subprocess.run([sys.executable, helper, 'quota'],
                                        capture_output=True, text=True, timeout=120)
                 data = {**json.loads(probe.stdout), 'checked_at': time.time()}
             except Exception as exc:
                 raise ProviderUnavailable('Codex quota probe failed; no new requests scheduled') from exc
             write(path, data)
         remaining = data.get('remaining_percent')
-        if not data.get('ok') or not isinstance(remaining, (int, float)) or remaining < 5:
-            raise ProviderUnavailable('Codex quota unavailable or below 5%; no new requests scheduled')
+        if not data.get('ok') or not isinstance(remaining, (int, float)):
+            raise ProviderUnavailable('Codex quota telemetry unavailable; no new requests scheduled: '
+                                      + str(data.get('error', 'Invalid quota snapshot')))
+        if remaining < 5:
+            raise ProviderUnavailable('Codex quota below 5%; no new requests scheduled')
 
 
 def codex_chat(prompt, dest, args, model):

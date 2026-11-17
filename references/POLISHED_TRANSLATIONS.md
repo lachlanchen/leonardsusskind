@@ -101,8 +101,10 @@ Simplified Chinese editions. Private prompts and results remain under
 `.translation-work/language-repairs/`.
 The launcher configures `TRANSLATION_QUOTA_HELPER` to the installed
 `codex-collaboration` quota helper; an alternative helper path can be supplied
-through that environment variable. Quota probes are cached for at most one
-minute. Unavailable quota or less than five percent remaining stops new requests
+through that environment variable. Checks reuse the helper's freshness-checked
+snapshot (up to three minutes old) rather than forcing a network request before
+each batch; the in-process check is refreshed at least once per minute.
+Unavailable quota telemetry or less than five percent remaining stops new requests
 and repair sweeps without purchasing credits or repeatedly retrying quota errors.
 Each publication verifies the exact commit SHA on every configured push URL;
 one successful mirror push alone does not establish publication completion.
