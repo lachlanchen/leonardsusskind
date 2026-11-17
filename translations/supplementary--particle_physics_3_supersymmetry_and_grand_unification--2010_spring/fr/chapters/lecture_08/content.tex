@@ -1,0 +1,517 @@
+\chapter{Supersymétrie en quatre dimensions et modèle de Wess--Zumino}
+
+\lectureoverview{L’algèbre de supersymétrie unidimensionnelle du cours précédent ne faisait intervenir que le Hamiltonien. L’invariance de Lorentz impose maintenant de réunir l’énergie et l’impulsion spatiale, et les supercharges doivent devenir des spineurs à deux composantes. Pour obtenir cette algèbre, reprenons d’abord une fermion de Weyl sans masse et son Hamiltonien \(H=\boldsymbol{\sigma}\cdot\mathbf p\). Nous représenterons ensuite les supercharges par des opérateurs différentiels sur l’espace-temps supersymétrique à quatre dimensions, isolerons les superchamps chiraux au moyen de la contrainte \(\bar D_{\dot\alpha}\Phi=0\), puis construirons une théorie des champs concrète par intégration sur l’espace supersymétrique. Les choix successifs \(\Phi^\dagger\Phi\), \(\Phi^2\) et \(\Phi^3\) produisent la propagation, l’égalité des masses des bosons et des fermions --, des interactions de Yukawa et une interaction scalaire associée. Le champ auxiliaire \(F\) rend ces relations transparentes, tandis que les diagrammes de boucles de la fin montrent pourquoi la supersymétrie atténue la sensibilité ultraviolette.}
+
+\section{Pourquoi le Hamiltonien ne peut pas être considéré isolément}
+
+Dans le modèle jouet, on avait supprimé l’espace et la relation fondamentale était
+\begin{equation}
+\{Q,Q^\dagger\}=2H.
+\label{eq:l8-time-only-algebra}
+\end{equation}
+Cette forme convient lorsque le temps est la seule coordonnée. Dans une théorie relativiste, cependant, \(H=P_0\) est une composante du quadrivecteur impulsion-énergie \(P_\mu\). Une transformation de Lorentz la mélange avec \(P_i\). Une algèbre dont le membre de droite isolerait \(P_0\) ne pourrait pas se transformer de manière covariante.
+
+Il faut donc apporter deux modifications à la fois : remplacer \(H\) par les quatre composantes \(P_\mu\) et donner au membre de gauche des indices qui puissent correspondre à un vecteur de Lorentz dans le membre de droite. L’équation de Dirac sans masse fournit l’indice nécessaire : un fermion relativiste peut être décrit par un spineur à deux composantes, et les matrices \(\sigma^\mu\) convertissent un indice vectoriel en une paire d’indices spinoriels.
+
+\section{Fermions sans masse, hélicité et chiralité}
+
+Commençons par distinguer physiquement les particules massives des particules sans masse. Considérons une particule de spin \(\tfrac12\) massive se déplaçant dans la direction de son spin. Sa vitesse étant inférieure à celle de la lumière, un observateur peut la dépasser. Dans le nouveau référentiel, l’impulsion s’inverse tandis que le spin ne change pas de direction ; l’hélicité s’inverse donc. Une théorie invariante de Lorentz pour une particule massive doit par conséquent contenir les deux hélicités.
+
+Aucun observateur ne peut dépasser une particule sans masse. Les transformations de Lorentz propres ne peuvent pas inverser son impulsion par rapport à son spin ; une représentation irréductible sans masse peut donc porter une seule hélicité. Une rotation spatiale peut retourner la direction du mouvement, mais elle ne transforme pas une main droite en main gauche.
+
+\begin{classroomqa}
+\audiencequestion{L’argument du dépassement concerne-t-il vraiment l’hélicité plutôt que la chiralité ? \lecturetimestamp{00:05:42}}
+\lecturerresponse{Oui. L’hélicité est la projection du spin sur l’impulsion, tandis que la chiralité est la valeur propre de la matrice chirale, conventionnellement \(\gamma^5\). Pour un mode sans masse, ces deux étiquettes sont liées, ce qui explique qu’elles puissent sembler interchangeables dans cet exemple. Pour une particule massive, elles sont distinctes.}
+\end{classroomqa}
+
+Le dénombrement des états demande une précision.\editorialnote{Un champ de Weyl sans masse possède une hélicité pour la particule et l’hélicité opposée pour l’antiparticule. Ainsi, l’expression « deux fois moins d’états » désigne le passage d’un champ de Dirac à quatre composantes à un champ de Weyl à deux composantes ; elle ne signifie pas que les états d’antiparticule ont disparu.}
+
+Notons le champ de Weyl utilisé dans cet argument introductif
+\begin{equation}
+\chi=
+\begin{pmatrix}
+\chi_1\\
+\chi_2
+\end{pmatrix},
+\end{equation}
+Le cours note ce champ \(\psi_\alpha\) ; nous le notons ici \(\chi\) afin de ne pas le confondre avec le spineur de Weyl conjugué que l’on place conventionnellement dans un superchamp chiral plus loin.
+\begin{equation}
+H\chi=\boldsymbol{\sigma}\cdot\mathbf p\,\chi.
+\label{eq:l8-weyl-hamiltonian}
+\end{equation}
+Pour une impulsion \(\mathbf p\), la matrice \(\boldsymbol{\sigma}\cdot\mathbf p\) a pour valeurs propres \(\pm|\mathbf p|\). La branche d’énergie positive fournit le mode particule ; la branche d’énergie négative est réinterprétée dans la construction de l’antiparticule, plutôt que conservée comme un spectre non borné inférieurement.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_02.png}
+\lectureframe{00:07:44.271}
+\caption{Le spineur chiral à deux composantes et le Hamiltonien \(H=\boldsymbol{\sigma}\cdot\mathbf p\). Le symbole de l’impulsion à la fin est en partie masqué, mais l’équation énoncée permet de le déterminer.}
+\end{figure}
+
+L’étiquette de chiralité dépend aussi de la convention.\editorialnote{Au tableau, une chiralité est directement associée à la valeur propre positive de \(\boldsymbol{\sigma}\cdot\mathbf p\). La chiralité à laquelle correspond ce signe dépend des définitions de \(\sigma^\mu\), \(\bar\sigma^\mu\) et du champ de Weyl. Nous conservons l’énoncé sur la valeur propre, sans lui attribuer d’étiquette gauche/droite indépendante des conventions.}
+
+En remplaçant \(H\) par \(i\partial_t\) et \(\mathbf p\) par \(-i\nabla\), on obtient
+\begin{equation}
+i\partial_t\chi=-i\boldsymbol{\sigma}\cdot\nabla\chi.
+\end{equation}
+Introduisons
+\begin{equation}
+\begin{aligned}
+\sigma^\mu&=(\mathbf 1,\boldsymbol{\sigma}),\\
+\bar\sigma^\mu&=(\mathbf 1,-\boldsymbol{\sigma}),\\
+\eta_{\mu\nu}&=\operatorname{diag}(1,-1,-1,-1).
+\end{aligned}
+\label{eq:l8-sigma-convention}
+\end{equation}
+L’équation obtenue s’écrit alors
+\begin{equation}
+i\sigma^\mu\partial_\mu\chi=0.
+\label{eq:l8-weyl-equation}
+\end{equation}
+La représentation de Weyl conjuguée fait intervenir \(\bar\sigma^\mu\). C’est cette représentation conjuguée, notée \(\psi_\alpha\) ci-dessous, dont l’équation libre est \(i\bar\sigma^\mu\partial_\mu\psi=0\). Pour démontrer la covariance, il faut utiliser la représentation spinorielle du groupe de Lorentz ; retenons ici le point structurel essentiel : les quatre matrices \(\sigma^\mu\) relient un indice d’espace-temps à deux indices spinoriels.
+
+\section{L’algèbre de supersymétrie en quatre dimensions}
+
+Les coordonnées impaires doivent maintenant se transformer comme des spineurs de Weyl :
+\begin{equation}
+\theta^\alpha=(\theta^1,\theta^2),
+\qquad
+\bar\theta^{\dot\alpha}=(\bar\theta^{\dot1},\bar\theta^{\dot2}).
+\end{equation}
+La barre désigne la conjugaison complexe, et le point distingue la représentation de Lorentz conjuguée. Il y a deux composantes complexes, soit quatre composantes réelles, de Grassmann. Un superchamp pair général
+\begin{equation}
+\mathcal S=\mathcal S(x^\mu,\theta^\alpha,\bar\theta^{\dot\alpha})
+\end{equation}
+a donc un développement fini en Grassmann. Son monôme de degré maximal est
+\begin{equation}
+\theta^2\bar\theta^2
+\equiv
+(\theta^1\theta^2)(\bar\theta^{\dot1}\bar\theta^{\dot2}),
+\end{equation}
+le produit des quatre coordonnées impaires indépendantes. Le coefficient de ce monôme est couramment appelé la composante \(D\).
+
+Les supercharges portent elles aussi des indices spinoriels. En supersymétrie \(N=1\) à quatre dimensions, leur algèbre est
+\begin{align}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+&=2\sigma^\mu_{\alpha\dot\beta}P_\mu,
+\label{eq:l8-superalgebra-main}\\
+\{Q_\alpha,Q_\beta\}&=0,
+&
+\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}&=0,
+\label{eq:l8-superalgebra-nilpotent}\\
+[P_\mu,Q_\alpha]&=0,
+&
+[P_\mu,\bar Q_{\dot\alpha}]&=0,
+&
+[P_\mu,P_\nu]&=0.
+\label{eq:l8-superalgebra-commutators}
+\end{align}
+Le facteur deux relève d’une convention. La matrice
+\(\sigma^\mu_{\alpha\dot\beta}\) contracte l’indice vectoriel de \(P_\mu\) et laisse précisément les deux indices spinoriels qui apparaissent à gauche.
+
+\begin{classroomqa}
+\audiencequestion{\(\alpha\) et \(\beta\) sur la matrice sigma sont-ils ses indices matriciels ? \lecturetimestamp{00:22:01}}
+\lecturerresponse{Oui. Plus précisément, l’un est un indice de Weyl non pointé et l’autre un indice conjugué pointé ; \(\mu\) est l’indice de vecteur d’espace-temps. La matrice sigma fait le lien entre ces deux descriptions.}
+\end{classroomqa}
+
+La notation clarifiée rend ce lien explicite.\editorialnote{Le cours omet délibérément les indices pointés et examine au tableau l’ordre \(\alpha\beta\) ou \(\beta\alpha\). Les équations~\eqref{eq:l8-superalgebra-main} et \eqref{eq:l8-superalgebra-commutators} rétablissent la notation standard avec indices pointés et non pointés, sans modifier le raisonnement.}
+
+La dernière ligne indique que les supercharges sont conservées et compatibles avec les translations. Les composantes de l’impulsion commutent, car leurs représentations par des dérivées commutent. Avec la convention différentielle adoptée ci-dessous,
+\begin{equation}
+P_\mu=i\partial_\mu,
+\end{equation}
+l’équation ~\eqref{eq:l8-superalgebra-main} peut aussi s’écrire
+\begin{equation}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+=2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu.
+\end{equation}
+
+\section{Les supercharges comme dérivées sur l’espace supersymétrique}
+
+L’impulsion engendre une translation d’une coordonnée ordinaire ; une supercharge engendre une translation d’une coordonnée impaire tout en décalant l’espace-temps. Fixons la convention des dérivées de Grassmann à gauche et définissons
+\begin{align}
+Q_\alpha
+&=\partial_\alpha
+-i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-Q}\\
+\bar Q_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
++i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Qbar}
+\end{align}
+L’action de \(\epsilon^\alpha Q_\alpha+
+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\) donne la variation infinitésimale de supersymétrie d’un superchamp. Ses composantes sont simplement les coefficients des monômes indépendants de Grassmann, et les opérateurs différentiels mélangent ces coefficients.
+
+\begin{classroomqa}
+\audiencequestion{De quelle dérivée par rapport à \(x\) s’agit-il dans la notation abrégée \(\bar\theta\sigma\partial\) ? \lecturetimestamp{00:25:40}}
+\lecturerresponse{Des quatre. L’indice répété \(\mu\) dans \(\bar\theta^{\dot\alpha}\sigma^\mu_{\alpha\dot\alpha}\partial_\mu\) est sommé ; chaque composante de \(\sigma^\mu\) est donc associée à la dérivée correspondante \(\partial/\partial x^\mu\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La charge conjuguée devrait-elle contenir \(\theta\) plutôt qu’un autre \(\bar\theta\) ? \lecturetimestamp{00:26:16}}
+\lecturerresponse{Oui. \(Q\) dérive par rapport à \(\theta\) et contient \(\bar\theta\) ; \(\bar Q\) dérive par rapport à \(\bar\theta\) et contient \(\theta\). Ce sont des opérateurs conjugués.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\sigma^\mu\) est-elle symétrique ? \lecturetimestamp{00:27:04}}
+\lecturerresponse{Les matrices de Pauli sont hermitiennes. Trois des quatre matrices de \((\mathbf1,\boldsymbol{\sigma})\) sont symétriques, tandis que \(\sigma^2\) est antisymétrique par transposition ordinaire. La propriété de conjugaison pertinente est l’hermiticité, avec le placement des indices pointés et non pointés.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Dans l’équation conjuguée, les indices de la matrice sigma sont-ils dans l’ordre inverse ? \lecturetimestamp{00:27:13}}
+\lecturerresponse{La conjugaison échange les représentations pointée et non pointée. La notation sûre est donc \(\sigma^\mu_{\alpha\dot\alpha}\) et son conjugué \(\bar\sigma^{\mu\,\dot\alpha\alpha}\), plutôt que de traiter les deux indices comme des emplacements matriciels interchangeables.}
+\end{classroomqa}
+
+Les formules des équations~\eqref{eq:l8-Q} et \eqref{eq:l8-Qbar} présentent des signes superficiellement différents de ceux de la notation abrégée utilisée au tableau. Ces signes dépendent du choix entre \(P_\mu\) et \(+i\partial_\mu\) ou \(-i\partial_\mu\), du fait que les dérivées agissent à gauche ou à droite, et de l’ordre des variables impaires conjuguées. L’essentiel est qu’une même convention satisfasse simultanément toute l’algèbre.
+
+\section{Une contrainte préservée par la supersymétrie}
+
+Un superchamp général contient beaucoup de composantes. Nous cherchons une classe plus restreinte sans détruire la symétrie. Le cours commence par une analogie ordinaire. Pour un vecteur \(\mathbf V\), la contrainte
+\begin{equation}
+V_x=0
+\end{equation}
+n’est pas invariante par rotation : après une rotation, \(V_y\) contribue à la nouvelle composante \(x\). En revanche,
+\begin{equation}
+\mathbf V^2=1
+\end{equation}
+est invariante et élimine un degré de liberté indépendant. Une contrainte utile doit transformer des champs contraints en champs contraints sous l’action de la symétrie.
+
+Supposons qu’un opérateur impair linéaire \(\bar D_{\dot\alpha}\) définisse
+\begin{equation}
+\bar D_{\dot\alpha}\Phi=0.
+\label{eq:l8-chiral-constraint}
+\end{equation}
+Après une variation de supersymétrie \(\delta\Phi=Q\Phi\), cette même condition sera satisfaite si \(\bar D\) anticommute avec les supercharges :
+\begin{equation}
+\bar D(Q\Phi)=-Q(\bar D\Phi)=0.
+\end{equation}
+C’est le critère abstrait de cohérence qui motive la construction, plutôt qu’une définition donnée sans explication.
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi peut-on permuter \(Q\) et \(\bar D\) dans la dernière expression ? \lecturetimestamp{00:36:56}}
+\lecturerresponse{Ce sont des opérateurs impairs choisis pour anticommuter. Permuter leur ordre introduit donc un signe moins ; une fois que \(\bar D\) agit sur \(\Phi\), la contrainte initiale annule le résultat.}
+\end{classroomqa}
+
+On obtient les dérivées covariantes requises en inversant les signes des termes de dérivée d’espace-temps par rapport à ceux des supercharges :
+\begin{align}
+D_\alpha
+&=\partial_\alpha
++i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-D}\\
+\bar D_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
+-i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Dbar}
+\end{align}
+Elles vérifient
+\begin{align}
+\{D_\alpha,\bar D_{\dot\beta}\}
+&=-2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu,\\
+\{D_\alpha,Q_\beta\}
+&=\{D_\alpha,\bar Q_{\dot\beta}\}=0,\\
+\{\bar D_{\dot\alpha},Q_\beta\}
+&=\{\bar D_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{Le seul changement entre \(\bar Q\) et \(\bar D\) est-il le signe du terme de dérivée d’espace-temps ? \lecturetimestamp{00:37:58}}
+\lecturerresponse{Exactement. Cette inversion de signe annule les termes croisés lorsque \(D\) anticommmute avec l’une ou l’autre supercharge.}
+\end{classroomqa}
+
+Nous n’imposons que l’équation~\eqref{eq:l8-chiral-constraint}. Imposer à la fois \(D_\alpha\Phi=0\) et \(\bar D_{\dot\alpha}\Phi=0\), compte tenu de leur anticommutateur, imposerait \(\partial_\mu\Phi=0\) et ne laisserait tout au plus qu’un résidu indépendant de l’espace-temps.
+\editorialnote{Au tableau, il est dit que l’imposition des deux contraintes entraînerait \(\Phi=0\). L’algèbre impose strictement l’indépendance par rapport à l’espace-temps ; des conditions supplémentaires sur les composantes ou aux limites peuvent ensuite réduire davantage le champ.}
+
+\section{Résolution de la contrainte chirale}
+
+Définissons la coordonnée décalée
+\begin{equation}
+y^\mu=x^\mu+i\theta\sigma^\mu\bar\theta.
+\label{eq:l8-chiral-coordinate}
+\end{equation}
+Avec la convention des dérivées à gauche adoptée ci-dessus, une fonction
+\begin{equation}
+\Phi=\Phi(y,\theta)
+\label{eq:l8-chiral-solution}
+\end{equation}
+vérifie \(\bar D_{\dot\alpha}\Phi=0\). La règle de dérivation en chaîne rend l’annulation explicite. La dérivation par rapport à \(y^\mu\) produit le même terme \(i\theta\sigma^\mu\partial_\mu\Phi\) que celui qui apparaît avec le signe opposé dans \(\bar D_{\dot\alpha}\).
+
+Un superchamp chiral ne dépend donc pas indépendamment de \(\bar\theta\). Il peut tout de même contenir \(\bar\theta\), mais uniquement par l’intermédiaire de la combinaison \(y^\mu\). Son développement fini est
+\begin{equation}
+\Phi(y,\theta)
+=\phi(y)+\sqrt2\,\theta\psi(y)+\theta^2F(y).
+\label{eq:l8-chiral-expansion-y}
+\end{equation}
+Les trois types de composantes sont un scalaire complexe \(\phi\), un fermion de Weyl \(\psi_\alpha\) et un scalaire complexe \(F\). Ce dernier est auxiliaire et non un second boson propagatif.
+
+\begin{classroomqa}
+\audiencequestion{\(x\) a-t-il été remplacé par une nouvelle coordonnée \(y\) qui lui serait orthogonale ? \lecturetimestamp{00:49:08}}
+\lecturerresponse{Non. \(y^\mu\) est une notation abrégée pour la combinaison particulière de l’équation~\eqref{eq:l8-chiral-coordinate} ; ce n’est pas une direction supplémentaire de l’espace-temps. Travailler en \(y\) simplifie la chiralité, puis nous revenons à \(x\) pour construire la théorie des champs ordinaire.}
+\end{classroomqa}
+
+En développant l’équation~\eqref{eq:l8-chiral-expansion-y} à \(x\) fixé, on obtient
+\begin{align}
+\Phi(x,\theta,\bar\theta)
+={}&\phi
++\sqrt2\,\theta\psi
++\theta^2F
++i\theta\sigma^\mu\bar\theta\,\partial_\mu\phi
+\notag\\
+&-\frac{i}{\sqrt2}\theta^2
+\partial_\mu\psi\,\sigma^\mu\bar\theta
++\frac14\theta^2\bar\theta^2\Box\phi.
+\label{eq:l8-chiral-expansion-x}
+\end{align}
+Tous les champs de composantes du membre de droite sont évalués en \(x\). Le champ antichiral conjugué dépend de
+\(\bar y^\mu=x^\mu-i\theta\sigma^\mu\bar\theta\) et de \(\bar\theta\). Un superchamp chiral ne peut pas être réel de façon cohérente, car son conjugué satisfait la contrainte de chiralité opposée.
+
+\section{Intégrales sur l’espace supersymétrique}
+
+Une action sur tout l’espace supersymétrique a la forme
+\begin{equation}
+S_D=\int d^4x\,d^2\theta\,d^2\bar\theta\;K,
+\label{eq:l8-D-term-action}
+\end{equation}
+où \(K\) est un superchamp réel. L’intégration de Berezin en extrait le coefficient
+\(\theta^2\bar\theta^2\). Après les intégrations sur les coordonnées impaires, il ne reste qu’une lagrangienne ordinaire d’espace-temps.
+
+Il existe une autre construction invariante. Si \(W(\Phi)\) est chiral, alors
+\begin{equation}
+S_F=\int d^4x\,d^2\theta\;W(\Phi)
++\int d^4x\,d^2\bar\theta\;\overline{W}(\Phi^\dagger)
+\label{eq:l8-F-term-action}
+\end{equation}
+est supersymétrique. La première intégrale extrait la composante \(\theta^2\) et la seconde, son conjugué.
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi est-il légitime d’intégrer seulement sur \(d^2\theta\) alors que l’expression ne dépend pas de \(\bar\theta\) ? \lecturetimestamp{01:16:30}}
+\lecturerresponse{La chiralité est préservée par la supersymétrie, et la composante \(\theta\) de degré maximal d’un superchamp chiral ne varie que par une dérivée totale d’espace-temps. Son intégrale sur l’espace-temps est donc invariante, tout comme l’intégrale de la composante \(D\) complète.}
+\end{classroomqa}
+
+\section{Le multiplet chiral libre}
+
+Considérons l’expression, apparemment sans structure,
+\begin{equation}
+S_{\mathrm{free}}
+=\int d^4x\,d^2\theta\,d^2\bar\theta\;
+\Phi^\dagger\Phi.
+\label{eq:l8-free-superaction}
+\end{equation}
+Les deux facteurs dépendent de coordonnées décalées en sens opposés :
+\begin{equation}
+\Phi=\Phi(x+i\theta\sigma\bar\theta,\theta),
+\qquad
+\Phi^\dagger
+=\Phi^\dagger(x-i\theta\sigma\bar\theta,\bar\theta).
+\end{equation}
+Dans l’intégrale sur l’espace-temps, nous pouvons effectuer un changement de variable sur la variable muette \(x\). Un des décalages peut supprimer le déplacement de Grassmann d’un facteur, mais il double alors le déplacement relatif dans l’autre. Le développement de Taylor en ce déplacement nilpotent s’arrête après un nombre fini de termes.
+
+C’est ainsi qu’apparaissent les dérivées. L’expression sur l’espace supersymétrique
+\(\Phi^\dagger\Phi\) ne contient aucune dérivée d’espace-temps explicite, et pourtant les arguments décalés engendrent des dérivées première et seconde des champs de composantes. En multipliant les développements et en ne conservant que la composante supérieure, on obtient, avec la convention de l’équation~\eqref{eq:l8-sigma-convention},
+\begin{equation}
+\mathcal L_{\mathrm{free}}
+=\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F.
+\label{eq:l8-free-component-lagrangian}
+\end{equation}
+À une intégration par parties près, la partie scalaire peut aussi s’écrire schématiquement \(-\phi^\ast\Box\phi\), forme vers laquelle tend le calcul au tableau.
+
+\begin{classroomqa}
+\audiencequestion{D’où vient la deuxième ligne du développement de Taylor du superchamp ? \lecturetimestamp{01:03:00}}
+\lecturerresponse{Elle vient du développement en composantes \(\Phi(y,\theta)=\phi(y)+\sqrt2\theta\psi(y)+\theta^2F(y)\). On développe ensuite chaque composante en série de Taylor, car \(y\) diffère de \(x\) par un bilinéaire nilpotent de Grassmann.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Cette dernière composante ne devrait-elle pas porter \(\theta^2\) ? \lecturetimestamp{01:04:54}}
+\lecturerresponse{Oui. La composante auxiliaire est \(F\theta^2\). Comme elle contient déjà les deux \(\theta\) indépendants, tout décalage de Taylor supplémentaire faisant intervenir un autre \(\theta\) s’annule.}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}
+\lectureframe{01:08:57.900}
+\caption{Le développement en coordonnées décalées, regroupé en termes scalaires, fermioniques et auxiliaires de la lagrangienne ordinaire.}
+\end{figure}
+
+Les deux premiers termes de l’équation~\eqref{eq:l8-free-component-lagrangian} donnent les équations de Klein--Gordon sans masse et de Weyl sans masse. Le dernier ne contient aucune dérivée :
+\begin{equation}
+\frac{\partial\mathcal L}{\partial F}=F^\ast=0,
+\qquad
+\frac{\partial\mathcal L}{\partial F^\ast}=F=0.
+\label{eq:l8-free-F-equation}
+\end{equation}
+Il n’introduit aucune donnée initiale et aucune particule sur la couche de masse.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_04.png}
+\lectureframe{01:11:32.360}
+\caption{Le terme auxiliaire sans dérivée \(F^\ast F\) à la fin de la lagrangienne en composantes.}
+\end{figure}
+
+Le langage des propagateurs exprime la même idée. L’opérateur quadratique inverse associé à \(F\) est indépendant de l’impulsion. Sa transformée de Fourier est locale :
+\begin{equation}
+\langle F(x)F^\ast(y)\rangle
+\propto \delta^{(4)}(x-y).
+\label{eq:l8-F-contact}
+\end{equation}
+Une ligne \(F\) peut servir à organiser un diagramme, mais ses extrémités coïncident. C’est une contraction de contact, et non la trajectoire d’une particule physique.
+
+\section{Superpotentiel quadratique et égalité des masses}
+
+La propagation provenait d’un terme \(D\). La masse vient de l’intégrale chirale. Choisissons la normalisation conventionnelle
+\begin{equation}
+W_2(\Phi)=\frac12m\Phi^2.
+\end{equation}
+La composante \(\theta^2\) est
+\begin{equation}
+\left.W_2(\Phi)\right|_{\theta^2}
+=m\phi F-\frac12m\psi\psi.
+\end{equation}
+Avec le terme conjugué, la lagrangienne en composantes devient
+\begin{align}
+\mathcal L
+={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F
+\notag\\
+&+m\phi F+m^\ast\phi^\ast F^\ast
+-\frac12m\psi\psi
+-\frac12m^\ast\bar\psi\bar\psi.
+\label{eq:l8-mass-offshell}
+\end{align}
+Le bilinéaire fermionique est une masse de Majorana pour le champ de Weyl. Les équations de \(F\) sont algébriques :
+\begin{equation}
+F^\ast=-m\phi,
+\qquad
+F=-m^\ast\phi^\ast.
+\label{eq:l8-mass-F-equations}
+\end{equation}
+Après substitution, on obtient
+\begin{equation}
+\begin{aligned}
+\mathcal L_{\mathrm{on\ shell}}={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi\\
+&-|m|^2|\phi|^2\\
+&-\frac12\left(m\psi\psi+m^\ast\bar\psi\bar\psi\right).
+\end{aligned}
+\label{eq:l8-mass-onshell}
+\end{equation}
+La masse du scalaire et celle du fermion sont donc toutes deux égales à \(|m|\). Dans le langage diagrammatique du tableau, un scalaire se convertit localement en \(F\) par une insertion de \(m\phi F\), puis se reconvertit immédiatement par l’insertion conjuguée. Deux insertions fournissent \(|m|^2|\phi|^2\), soit exactement le terme de masse scalaire obtenu en résolvant l’équation~\eqref{eq:l8-mass-F-equations}.
+
+La normalisation peut maintenant être précisée.\editorialnote{Dans le développement des produits de superchamps, le cours omet délibérément les coefficients numériques. Les facteurs \(1/2\), \(1/3\) et \(\sqrt2\) utilisés ici correspondent à la normalisation conventionnelle de Wess--Zumino ; ils rendent exacts les masses et les couplages des composantes tout en préservant chacune des étapes qualitatives de la dérivation au tableau.}
+
+\section{Superpotentiel cubique et interactions}
+
+Ajoutons maintenant
+\begin{equation}
+W(\Phi)=\frac12m\Phi^2+\frac13g\Phi^3.
+\label{eq:l8-superpotential}
+\end{equation}
+Pour un \(W\) holomorphe général, la composante \(F\) est
+\begin{equation}
+\left.W(\Phi)\right|_{\theta^2}
+=F W'(\phi)-\frac12W''(\phi)\psi\psi.
+\label{eq:l8-W-components}
+\end{equation}
+Ici,
+\begin{equation}
+W'(\phi)=m\phi+g\phi^2,
+\qquad
+W''(\phi)=m+2g\phi.
+\end{equation}
+Avant d’éliminer \(F\), le terme cubique contient
+\begin{equation}
+g\phi^2F-g\phi\psi\psi+\text{h.c.}
+\label{eq:l8-cubic-offshell}
+\end{equation}
+Le second terme est un vertex de Yukawa reliant un scalaire à deux lignes fermioniques. Le premier relie deux scalaires à une ligne auxiliaire.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95,>=Latex]
+  \coordinate (vone) at (0,0);
+  \draw[->,thick] (-2,1.1) -- (vone);
+  \draw[->,thick] (vone) -- (-2,-1.1);
+  \draw[thick,dashed] (vone) -- (2,0);
+  \node[left] at (-2,1.1) {\(\psi\)};
+  \node[left] at (-2,-1.1) {\(\psi\)};
+  \node[right] at (2,0) {\(\phi\)};
+  \node[below=8pt of vone] {\(-g\phi\psi\psi\)};
+\end{tikzpicture}
+\caption{Représentation pédagogique du vertex de Yukawa : deux lignes fermioniques et une ligne scalaire se rejoignent avec un couplage proportionnel à \(g\).}
+\end{figure}
+
+L’équation complète du champ auxiliaire est
+\begin{equation}
+F^\ast=-W'(\phi)=-(m\phi+g\phi^2).
+\label{eq:l8-general-F-equation}
+\end{equation}
+Son élimination produit le potentiel scalaire
+\begin{equation}
+V(\phi)=|W'(\phi)|^2
+=|m\phi+g\phi^2|^2.
+\label{eq:l8-scalar-potential}
+\end{equation}
+Outre le terme de masse, celui-ci contient des termes cubiques en le scalaire proportionnels à \(m^\ast g\) et un terme quartique
+\begin{equation}
+V(\phi)\supset |g|^2|\phi|^4.
+\label{eq:l8-quartic}
+\end{equation}
+Dans la représentation avec lignes auxiliaires, deux vertices \(\phi^2F\) sont reliés par la contraction locale \(F\). Comme l’équation~\eqref{eq:l8-F-contact} impose que leurs positions coïncident, on obtient exactement un vertex de contact à quatre scalaires.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95]
+  \coordinate (vfour) at (0,0);
+  \foreach \angle in {35,145,215,325}
+    \draw[thick,dashed] (vfour) -- (\angle:1.9);
+  \fill (vfour) circle (1.5pt);
+  \node[below=8pt of vfour] {\(-|g|^2|\phi|^4\)};
+\end{tikzpicture}
+\caption{Après élimination du champ auxiliaire, deux vertices locaux \(F\) donnent une seule interaction de contact à quatre scalaires.}
+\end{figure}
+
+La supersymétrie ne s’est pas contentée de placer un boson et un fermion dans une même théorie. Elle a imposé l’égalité de leurs masses, relié le couplage de Yukawa à \(g\) et fixé le couplage scalaire quartique à \(|g|^2\). Ces relations pourraient être testées au moyen des masses, des amplitudes de diffusion et des désintégrations ; ce ne sont pas des coïncidences numériques facultatives.
+
+\section{Effets de boucle appariés}
+
+Ces relations deviennent particulièrement utiles lorsque les interactions corrigent les masses des particules. L’auto-énergie du scalaire reçoit une contribution de boucle bosonique du vertex quartique et une contribution de boucle fermionique de deux vertices de Yukawa. Chacune comporte deux puissances du même couplage. Une boucle fermionique fermée porte le signe relatif moins imposé par la statistique de Fermi.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=Latex,scale=0.9]
+  \begin{scope}[xshift=-3.3cm]
+    \draw[thick,dashed] (-2,0)--(0,0)--(2,0);
+    \draw[thick,dashed] (0,0) .. controls (-0.9,1.7) and (0.9,1.7) .. (0,0);
+    \fill (0,0) circle (1.4pt);
+    \node at (0,-0.55) {bosonic loop};
+  \end{scope}
+  \begin{scope}[xshift=3.3cm]
+    \draw[thick,dashed] (-2,0)--(-0.8,0);
+    \draw[thick,dashed] (0.8,0)--(2,0);
+    \draw[->,thick] (-0.8,0) arc[start angle=180,end angle=0,x radius=0.8,y radius=0.8];
+    \draw[->,thick] (0.8,0) arc[start angle=0,end angle=-180,x radius=0.8,y radius=0.8];
+    \fill (-0.8,0) circle (1.4pt);
+    \fill (0.8,0) circle (1.4pt);
+    \node at (0,-1.35) {fermionic loop};
+  \end{scope}
+\end{tikzpicture}
+\caption{Les deux mécanismes appariés de contribution à l’auto-énergie du scalaire présentés dans le cours. La supersymétrie fixe les couplages relatifs, tandis que la boucle fermionique fermée apporte le signe opposé.}
+\end{figure}
+
+À une boucle, les contributions bosoniques et fermioniques complètes annulent les termes dominants sensibles aux effets ultraviolets. À des ordres supérieurs, la même symétrie organise les corrections au moyen des identités de Ward et des propriétés de non-renormalisation. Cet énoncé porte sur des sommes de contributions liées par la symétrie, et non sur une annulation littérale de chaque diagramme avec un autre ; la renormalisation de la fonction d’onde, les effets finis et d’autres corrections préservant la symétrie peuvent subsister. C’est là l’intérêt pratique de construire la théorie sur l’espace supersymétrique : l’égalité des masses et les relations entre les couplages sont imposées avant même le calcul d’une intégrale de Feynman particulière.\editorialnote{Au tableau, l’annulation est énoncée plus largement ; le texte principal apporte la précision usuelle.}
+
+\section{Et ensuite}
+
+Le modèle construit ici est la théorie chirale avec interactions la plus simple, couramment appelée modèle de Wess--Zumino. C’est un exemple, et non la théorie supersymétrique la plus générale, mais le schéma se retrouve ailleurs : représenter les champs par des supermultiplets, écrire des intégrales invariantes sur l’espace supersymétrique et laisser le développement en Grassmann imposer les relations entre les composantes.
+
+La supersymétrie exacte n’apparaît pas dans le spectre des particules observé. Le problème suivant est donc de savoir comment briser la symétrie tout en conservant suffisamment son contrôle des effets ultraviolets pour qu’il reste utile. L’autre piste annoncée est la grande unification : comment
+\begin{equation}
+SU(3)\times SU(2)\times U(1)
+\end{equation}
+pourrait s’inscrire dans un groupe plus vaste tel que \(SU(5)\), et comment le contenu en particules supersymétriques modifie cette unification. Ce sont les questions auxquelles seront consacrés les cours suivants.
