@@ -1430,6 +1430,30 @@ def validated_output(book, lang):
                     for rel, sha in q.get('translation_results', {}).items()))
 
 
+def push_publication_remotes(git):
+    """Push and verify every configured destination with bounded retries."""
+    local_head = git('rev-parse', 'HEAD').strip()
+    remotes = [url for url in git('remote', 'get-url', '--push', '--all', 'origin').splitlines() if url]
+    if not remotes:
+        raise RuntimeError('No publication push URL is configured')
+    for url in remotes:
+        last_error = None
+        for attempt in range(3):
+            try:
+                git('push', url, 'HEAD:refs/heads/main')
+                remote = git('ls-remote', url, 'refs/heads/main').split()
+                if not remote or remote[0] != local_head:
+                    raise RuntimeError(f'Remote SHA verification failed for {url}')
+                last_error = None
+                break
+            except Exception as exc:
+                last_error = exc
+                if attempt < 2:
+                    time.sleep(2 ** attempt)
+        if last_error:
+            raise RuntimeError(f'Publication failed for {url} after 3 attempts: {last_error}') from last_error
+
+
 def publish_book(book, languages):
     """Publish only owned outputs; refuse a dirty index or edits outside README markers."""
     def git(*args):
@@ -1454,7 +1478,7 @@ def publish_book(book, languages):
     if git('diff', '--cached', '--name-only').strip():
         labels = ', '.join(LANGUAGE_SPECS[lang]['label'] for lang in languages)
         git('commit', '--only', '-m', f'Publish {labels} {book["titles"]["en"]}', '--', *paths)
-    git('push', 'origin', 'HEAD')
+    push_publication_remotes(git)
 
 
 def language_complete(book, lang):

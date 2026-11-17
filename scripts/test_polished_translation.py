@@ -541,6 +541,43 @@ class TranslationTests(unittest.TestCase):
                 sleep.assert_not_called()
             self.assertEqual(p.read(p.WORK / 'status.json')['state'], 'paused')
 
+    def test_publication_pushes_and_verifies_each_remote_with_retry(self):
+        attempts = {}
+
+        def git(*args):
+            if args == ('rev-parse', 'HEAD'):
+                return 'abc123\n'
+            if args == ('remote', 'get-url', '--push', '--all', 'origin'):
+                return 'canonical\nmirror\n'
+            if args[0] == 'push':
+                attempts[args[1]] = attempts.get(args[1], 0) + 1
+                if args[1] == 'canonical' and attempts[args[1]] == 1:
+                    raise RuntimeError('transient transport failure')
+                return ''
+            if args[0] == 'ls-remote':
+                return 'abc123\trefs/heads/main\n'
+            self.fail(f'Unexpected git call: {args}')
+
+        with patch.object(p.time, 'sleep') as sleep:
+            p.push_publication_remotes(git)
+        self.assertEqual(attempts, {'canonical': 2, 'mirror': 1})
+        sleep.assert_called_once_with(1)
+
+    def test_publication_rejects_unverified_remote_sha(self):
+        def git(*args):
+            if args == ('rev-parse', 'HEAD'):
+                return 'local\n'
+            if args == ('remote', 'get-url', '--push', '--all', 'origin'):
+                return 'canonical\n'
+            if args[0] == 'push':
+                return ''
+            if args[0] == 'ls-remote':
+                return 'stale\trefs/heads/main\n'
+            self.fail(f'Unexpected git call: {args}')
+
+        with patch.object(p.time, 'sleep'), self.assertRaisesRegex(RuntimeError, 'after 3 attempts'):
+            p.push_publication_remotes(git)
+
     def test_preamble_retains_custom_macros_and_localizes_labels(self):
         source = r'\usepackage[utf8]{inputenc}' + '\n' + r'\newcommand{\custom}[1]{#1}\newcommand{\lectureoverview}[1]{\paragraph{Overview.} #1}'
         result = p.translated_preamble(source, 'ja')
