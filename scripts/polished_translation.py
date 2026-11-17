@@ -266,6 +266,10 @@ def restore(masked, protected):
     return TOKEN.sub(lambda m: protected[int(m.group()[3:9])], masked)
 
 
+def clean_prose_line_endings(masked):
+    return re.sub(r'[ \t]+(?=\n|$)', '', masked)
+
+
 def segments(masked):
     return re.split(r'(\n\s*\n)', masked)
 
@@ -1204,7 +1208,8 @@ def assemble(book, lang, args=None):
             else:
                 translated.append(part)
         # Font substitution affects translated prose only, never frozen math.
-        masked = re.sub(r'[\u0370-\u03ff]', lambda m: '{\\proseunicodefont ' + m.group() + '}', ''.join(translated))
+        masked = re.sub(r'[\u0370-\u03ff]', lambda m: '{\\proseunicodefont ' + m.group() + '}',
+                        clean_prose_line_endings(''.join(translated)))
         rendered = restore(masked, p['protected'])
         rendered = restore_layout_arguments((src / rel).read_text(), rendered)
         rendered = layout_repairs(book, lang, rel, rendered)

@@ -21,6 +21,12 @@ class TranslationTests(unittest.TestCase):
         self.assertNotIn('board_1', text)
         self.assertIn('Motion', text)
 
+    def test_prose_line_endings_do_not_change_frozen_equations(self):
+        source = 'A field. \n' + r'\begin{equation}x=1  ' + '\n' + r'\end{equation}'
+        masked, frozen = p.protect(source)
+        result = p.restore(p.clean_prose_line_endings(masked), frozen)
+        self.assertEqual(result, source.replace('field. \n', 'field.\n'))
+
     def test_heading_intro_and_caption_are_translatable(self):
         text, frozen = p.protect(r'\section{Heading}' + '\n\nIntroduction.\n\n' + r'\begin{figure}[tbp]\includegraphics{x.png}\caption{A board}\lectureframe{00:12:34}\end{figure}')
         for word in ['Heading', 'Introduction', 'A board']:
