@@ -63,8 +63,14 @@ Dependencies: Python with `pylatexenc==2.10`, `PyMuPDF` and `opencc`; XeLaTeX,
 Noto Serif/Sans, Noto CJK and Noto Arabic fonts; Codex CLI and tmux. Reuse the
 shared Python environment. Codex account authentication is reused by the CLI;
 no credential, cookie or session file is copied into the repository.
+`scripts/setup_translation_tex.sh` prepares an isolated XeLaTeX format under
+`.translation-work/` with hash-verified French, Spanish, German and Russian
+hyphenation patterns pinned to an upstream revision. No system TeX configuration
+or other project's format is changed. The tmux launcher runs this setup once;
+later compilations reuse it. Missing hyphenation patterns fail the PDF gate.
 
 ```bash
+bash scripts/setup_translation_tex.sh
 python scripts/polished_translation.py prepare
 python -m unittest discover -s scripts -p 'test_*translation*.py'
 python scripts/polished_translation.py run --provider codex --model gpt-6-luna \
@@ -86,6 +92,20 @@ Per-book failures and publication state are retained under
 An interrupted request with a saved valid response is recovered without a new
 API call. Malformed or missing responses still consume the finite content
 attempt budget; transport failures refund it because they produced no content.
+For new language queues, a failed language may receive up to three bounded Luna
+repair sweeps before the wrapper stops. Each sweep runs only after the normal
+queue has exited, reuses accepted caches, and must retain the same source,
+semantic and PDF gates. It cannot silently skip a language, publish blocked
+outputs, increase request budgets, or modify the accepted English, Japanese or
+Simplified Chinese editions. Private prompts and results remain under
+`.translation-work/language-repairs/`.
+The launcher configures `TRANSLATION_QUOTA_HELPER` to the installed
+`codex-collaboration` quota helper; an alternative helper path can be supplied
+through that environment variable. Quota probes are cached for at most one
+minute. Unavailable quota or less than five percent remaining stops new requests
+and repair sweeps without purchasing credits or repeatedly retrying quota errors.
+Each publication verifies the exact commit SHA on every configured push URL;
+one successful mirror push alone does not establish publication completion.
 Transient connection, timeout, rate-limit or server failures may resume the
 queue twice after five- and ten-minute cooldowns. No calls run during the wait;
 STOP is checked every five seconds. Authentication/payment failures stop for
@@ -139,6 +159,12 @@ source/translation sample hash and exact issue hash, with a written reason.
 The original report is retained, and the published quality record includes the
 decisions. A changed sample or new issue cannot inherit a dismissal. There is
 no blanket reviewer bypass or automatic acceptance of model corrections.
+
+Layout restoration matches environment instances rather than counting optional
+arguments. Missing minipage alignment options and damaged width keys are restored
+from the immutable English headers; translated captions and body text are kept.
+Missing, added or reordered layout environments still fail. Contents entries
+reserve space for three-level numbering such as `10.10.1`.
 
 ## Reading Editions and Release Checks
 

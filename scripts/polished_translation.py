@@ -107,6 +107,7 @@ NUMBER_WORDS.update({'single': '1', 'once': '1', 'penny': '1', 'pennies': '1', '
 NUMBER_WORD_PATTERN = re.compile(r'\b(?:' + '|'.join(
     re.escape(w) for w in sorted(NUMBER_WORDS, key=len, reverse=True)) + r')\b')
 PROVIDER_STOP = threading.Event()
+QUOTA_CHECK_LOCK = threading.Lock()
 REQUEST_LIMIT = 2
 
 
@@ -646,8 +647,29 @@ def _parse_json_message(text):
     return value
 
 
+def check_codex_quota():
+    helper = os.environ.get('TRANSLATION_QUOTA_HELPER')
+    if not helper:
+        return
+    with QUOTA_CHECK_LOCK:
+        path = WORK / 'quota-check.json'
+        data = read(path) if path.exists() else {}
+        if time.time() - data.get('checked_at', 0) >= 60:
+            try:
+                probe = subprocess.run([sys.executable, helper, 'quota', '--probe'],
+                                       capture_output=True, text=True, timeout=120)
+                data = {**json.loads(probe.stdout), 'checked_at': time.time()}
+            except Exception as exc:
+                raise ProviderUnavailable('Codex quota probe failed; no new requests scheduled') from exc
+            write(path, data)
+        remaining = data.get('remaining_percent')
+        if not data.get('ok') or not isinstance(remaining, (int, float)) or remaining < 5:
+            raise ProviderUnavailable('Codex quota unavailable or below 5%; no new requests scheduled')
+
+
 def codex_chat(prompt, dest, args, model):
     """Run an isolated Codex request; the model never receives filesystem write access."""
+    check_codex_quota()
     cwd = WORK / 'codex-cwd'
     cwd.mkdir(parents=True, exist_ok=True)
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -996,7 +1018,11 @@ def translated_preamble(source, lang):
                    '\n\\renewcommand{\\cftchappagefont}{\\small\\bfseries}'
                    '\n\\renewcommand{\\cftsecfont}{\\small}'
                    '\n\\renewcommand{\\cftsecpagefont}{\\small}'
-                   '\n\\setlength{\\cftsecnumwidth}{3em}')
+                   '\n\\setlength{\\cftsecnumwidth}{3em}'
+                   '\n\\renewcommand{\\cftsubsecfont}{\\small}'
+                   '\n\\renewcommand{\\cftsubsecpagefont}{\\small}'
+                   '\n\\setlength{\\cftsubsecindent}{4.5em}'
+                   '\n\\setlength{\\cftsubsecnumwidth}{4em}')
     # CJK italics are not supplied by Noto. Keep readable upright CJK, Latin italic intact.
     emergency_stretch = '2em' if family in {'JP', 'SC', 'TC', 'KR'} else '6em'
     return (prefix + t + suffix + f'\n\\emergencystretch={emergency_stretch}\n'
@@ -1026,8 +1052,8 @@ def restore_layout_arguments(source, translated):
     """Legacy caches exposed layout options as prose. Restore only those AST spans."""
     context = lw.get_default_latex_context_db()
     context.add_context_category('layout', prepend=True, environments=[
-        EnvironmentSpec('adjustbox', '{'), EnvironmentSpec('minipage', '[{'),
-        EnvironmentSpec('tabular', '[{'), EnvironmentSpec('tabular*', '{{'),
+        EnvironmentSpec('adjustbox', '{'), EnvironmentSpec('minipage', '[[[{'),
+        EnvironmentSpec('tabular', '[{'), EnvironmentSpec('tabular*', '{[{'),
         EnvironmentSpec('longtable', '[{')])
 
     def spans(text):
@@ -1037,11 +1063,18 @@ def restore_layout_arguments(source, translated):
             for node in items:
                 if isinstance(node, lw.LatexEnvironmentNode):
                     if node.environmentname in {'adjustbox', 'minipage', 'tabular', 'tabular*', 'longtable'}:
-                        result.extend((node.environmentname, arg.pos, arg.len, text[arg.pos:arg.pos+arg.len])
-                                      for arg in node.nodeargd.argnlist if arg)
+                        args = [arg for arg in node.nodeargd.argnlist if arg]
+                        if not args:
+                            raise ValueError('Missing layout environment arguments')
+                        # Restore the complete header, including omitted optional arguments.
+                        start = node.pos + len('\\begin{' + node.environmentname + '}')
+                        end = args[-1].pos + args[-1].len
+                        result.append((node.environmentname, start, end - start, text[start:end]))
                     walk(node.nodelist)
                 elif isinstance(node, lw.LatexGroupNode):
                     walk(node.nodelist)
+                elif isinstance(node, lw.LatexMacroNode) and node.nodeargd:
+                    walk([arg for arg in node.nodeargd.argnlist if arg])
         walk(nodes)
         return result
     original, target = spans(source), spans(translated)
@@ -1107,6 +1140,8 @@ def localized_track(course, lang):
 def cover(book, lang, args=None):
     source = (ROOT / 'generated_course_notes' / book['course'] / 'course.tex').read_text()
     titlepage = re.search(r'\\begin\{titlepage\}.*?\\end\{titlepage\}', source, re.S).group()
+    titlepage = titlepage.replace(r'\begin{titlepage}',
+        r'\begin{titlepage}' + '\n' + r'\hyphenpenalty=10000\exhyphenpenalty=10000', 1)
     title = book_title(book, lang, args)
     titlepage = re.sub(r'(\\color\{black!\d+\} )[^}\n]+(?=\})',
         lambda m: m.group(1) + title + r'\\[0.85em]', titlepage, count=1)
@@ -1124,6 +1159,10 @@ def layout_repairs(book, lang, rel, text):
     # The three timestamp footnotes on this verified page need 2 pt more depth.
     # This leaves over 17 mm bottom margin and does not change any source prose.
     replacements = []
+    if (book['id'] == 'core--classical_mechanics--2011_fall_theoretical_minimum'
+            and lang == 'fr' and rel == 'chapters/lecture_03/content.tex'):
+        anchor = '\\begin{figure}[htbp]\n  \\centering\n  \\includegraphics[width=0.76\\textwidth]{lecture_03_figure_17.png}'
+        replacements.append((anchor, '\\clearpage\n' + anchor))
     if (book['id'] == 'supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory'
             and lang == 'zh' and rel == 'chapters/lecture_08/content.tex'):
         anchor = '\\begin{equation}\n\\ddot r\\sim-\\frac{G_NM}{r^2}+H^2r.'
@@ -1284,6 +1323,14 @@ def repair_review(book, lang, report, args):
     return attempted
 
 
+def translation_tex_environment():
+    env = os.environ.copy()
+    if (WORK / 'texmf-var/web2c/xetex/xelatex.fmt').is_file():
+        env.update(TEXMFHOME=str(WORK / 'texmf'), TEXMFVAR=str(WORK / 'texmf-var'),
+                   TEXMFCONFIG=str(WORK / 'texmf-config'))
+    return env
+
+
 def compile_book(book, lang, args):
     import fitz
     write(OUT / book['id'] / lang / 'quality.json', {'status': 'building'})
@@ -1300,13 +1347,15 @@ def compile_book(book, lang, args):
         run = subprocess.run(['xelatex', *(['-no-pdf'] if pass_number < 2 else []),
                               '-interaction=nonstopmode', '-halt-on-error', '-no-shell-escape',
                               f'-output-directory={build}', 'course.tex'], cwd=dst,
-                             stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=900)
+                             stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=900,
+                             env=translation_tex_environment())
         (build / 'compile-output.txt').write_bytes(run.stdout)
         if run.returncode:
             raise RuntimeError(f'XeLaTeX failed: {build}/compile-output.txt')
     log = (build / 'course.log').read_text(errors='replace')
     overflows = re.findall(r'Overfull \\[hv]box \(([^\n]+)', log)
-    errors = [s for s in ['Missing character:', 'undefined references', 'multiply defined'] if s in log]
+    errors = [s for s in ['Missing character:', 'undefined references', 'multiply defined',
+                         'No hyphenation patterns were loaded'] if s in log]
     with fitz.open(build / 'course.pdf') as pdf:
         text = ''.join(page.get_text() for page in pdf)
         script = LANGUAGE_SPECS[lang].get('script')
@@ -1469,11 +1518,14 @@ def publish_book(book, languages):
         current = (ROOT / name).read_text()
         if re.sub(marker, '', previous, flags=re.S).strip() != re.sub(marker, '', current, flags=re.S).strip():
             raise RuntimeError(f'Unrelated README changes: {name}; publication deferred')
-    for p in sorted((OUT / book['id']).rglob('*')):
-        if p.is_file():
-            if p.stat().st_size >= 95 * 1024 * 1024:
-                raise RuntimeError(f'Artifact too large for regular Git: {p.name}')
-            paths.append(str(p.relative_to(ROOT)))
+    for lang in languages:
+        if not validated_output(book, lang):
+            raise RuntimeError(f'Refusing to publish an unvalidated edition: {book["id"]}/{lang}')
+        for p in sorted((OUT / book['id'] / lang).rglob('*')):
+            if p.is_file():
+                if p.stat().st_size >= 95 * 1024 * 1024:
+                    raise RuntimeError(f'Artifact too large for regular Git: {p.name}')
+                paths.append(str(p.relative_to(ROOT)))
     git('add', '--', *paths)
     if git('diff', '--cached', '--name-only').strip():
         labels = ', '.join(LANGUAGE_SPECS[lang]['label'] for lang in languages)
@@ -1542,6 +1594,7 @@ def run(args):
     WORK.mkdir(parents=True, exist_ok=True)
     with (WORK / 'queue.lock').open('w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        PROVIDER_STOP.clear()
         selected_language = getattr(args, 'language', None)
         # Keep the historical no-flag behavior scoped to the accepted Japanese/Chinese queue.
         languages = [selected_language] if selected_language else list(BASE_LANGS)
@@ -1558,7 +1611,6 @@ def run(args):
             raise RuntimeError('First run --pilot-only; inspect both PDFs and approve-pilot before full queue')
         if args.pilot_only:
             books = books[:1]
-        PROVIDER_STOP.clear()
         blocked = []
         paused = False
         for book in books:
@@ -1618,6 +1670,8 @@ def run_with_transport_recovery(args):
         try:
             return run(args)
         except ProviderUnavailable as exc:
+            state = read(WORK / 'status.json') if (WORK / 'status.json').exists() else {}
+            write(WORK / 'status.json', {**state, 'state': 'provider_blocked', 'error': str(exc)})
             retryable = re.search(r'status=(?:408|409|425|429|5\d\d)\b|API(?:Connection|Timeout)Error', str(exc))
             if not retryable or attempt == args.transport_resumes:
                 raise

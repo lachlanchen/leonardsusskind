@@ -162,6 +162,24 @@ class TranslationTests(unittest.TestCase):
         bad = source.replace('max width', '最大宽度').replace('Hello', '你好')
         self.assertEqual(p.restore_layout_arguments(source, bad), source.replace('Hello', '你好'))
 
+    def test_layout_restores_omitted_and_misplaced_optional_arguments(self):
+        source = r'\begin{minipage}[t]{0.48\textwidth}Hello\end{minipage}'
+        for header in (r'{0.48\textwidth}', r'{[t]0.48\textwidth}'):
+            translated = r'\begin{minipage}' + header + r'Bonjour\end{minipage}'
+            self.assertEqual(p.restore_layout_arguments(source, translated), source.replace('Hello', 'Bonjour'))
+
+    def test_layout_restores_all_minipage_options_and_nested_headers(self):
+        source = (r'\begin{minipage}[t][3cm][c]{0.5\textwidth}'
+                  r'\begin{adjustbox}{max width=\linewidth}Hello\end{adjustbox}\end{minipage}')
+        translated = (r'\begin{minipage}{0.5\textwidth}'
+                      r'\begin{adjustbox}{\linewidth}Bonjour\end{adjustbox}\end{minipage}')
+        self.assertEqual(p.restore_layout_arguments(source, translated), source.replace('Hello', 'Bonjour'))
+
+    def test_layout_still_rejects_removed_environments(self):
+        source = r'\begin{minipage}[c]{0.5\textwidth}Hello\end{minipage}'
+        with self.assertRaisesRegex(ValueError, 'Layout environment structure changed'):
+            p.restore_layout_arguments(source, 'Bonjour')
+
     def test_empty_content_does_not_stop_other_chapters(self):
         def completion(*args, **kwargs):
             try:
@@ -178,6 +196,41 @@ class TranslationTests(unittest.TestCase):
         self.assertIn(r'\fancyfoot[C]', p.page_layout())
         self.assertIn(r'\setlength{\headwidth}{\textwidth}', p.page_layout())
 
+    def test_translation_tex_format_is_isolated(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
+            baseline = p.translation_tex_environment()
+            fmt = p.WORK / 'texmf-var/web2c/xetex/xelatex.fmt'
+            fmt.parent.mkdir(parents=True)
+            fmt.touch()
+            isolated = p.translation_tex_environment()
+            self.assertEqual(isolated['TEXMFHOME'], str(p.WORK / 'texmf'))
+            self.assertEqual(isolated['TEXMFVAR'], str(p.WORK / 'texmf-var'))
+            self.assertEqual(isolated['TEXMFCONFIG'], str(p.WORK / 'texmf-config'))
+            self.assertEqual(baseline.get('TEXMFVAR'), p.os.environ.get('TEXMFVAR'))
+
+    def test_codex_quota_gate_caches_probe_and_blocks_low_quota(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)), \
+             patch.dict(p.os.environ, {'TRANSLATION_QUOTA_HELPER': '/quota-helper'}):
+            completed = SimpleNamespace(stdout='{"ok":true,"remaining_percent":49}', returncode=0)
+            with patch.object(p.subprocess, 'run', return_value=completed) as run:
+                p.check_codex_quota()
+                p.check_codex_quota()
+                self.assertEqual(run.call_count, 1)
+            p.write(p.WORK / 'quota-check.json', {
+                'ok': True, 'remaining_percent': 4, 'checked_at': p.time.time()})
+            with patch.object(p.subprocess, 'run') as run, self.assertRaises(p.ProviderUnavailable):
+                p.check_codex_quota()
+            run.assert_not_called()
+
+    def test_publication_refuses_an_unvalidated_edition(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'ROOT', Path(tmp)), \
+             patch.object(p, 'validated_output', return_value=False), \
+             patch.object(p.subprocess, 'check_output', return_value='') as git:
+            (p.ROOT / 'README.md').touch()
+            with self.assertRaisesRegex(RuntimeError, 'Refusing to publish an unvalidated'):
+                p.publish_book({'id': 'book'}, ['es'])
+            self.assertFalse(any(call.args[0][1] == 'add' for call in git.call_args_list))
+
     def test_cover_track_metadata_is_localized(self):
         self.assertEqual(p.localized_track('path/2013_fall', 'fr'), 'automne 2013')
         self.assertEqual(p.localized_track('path/2006_fall_part_1', 'fr'), 'automne 2006, première partie')
@@ -186,6 +239,14 @@ class TranslationTests(unittest.TestCase):
         for lang in p.LANGS:
             label = p.localized_track('path/2012_spring_theoretical_minimum', lang)
             self.assertNotRegex(label, r'\b(?:spring|theoretical_minimum)\b')
+
+    def test_cover_does_not_hyphenate_titles(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'ROOT', Path(tmp)):
+            source = p.ROOT / 'generated_course_notes/course/2013_fall/course.tex'
+            source.parent.mkdir(parents=True)
+            source.write_text(r'\begin{titlepage}\color{black!80} Old title}\end{titlepage}')
+            result = p.cover({'course': 'course/2013_fall', 'titles': {'fr': 'Théorie des cordes'}}, 'fr')
+            self.assertIn(r'\hyphenpenalty=10000\exhyphenpenalty=10000', result)
 
     def test_caption_boundary_escape_is_rejected(self):
         source, protected = p.protect(r'\begin{figure}\caption{A particle diagram.}\label{fig:one}\end{figure}')
@@ -593,6 +654,7 @@ class TranslationTests(unittest.TestCase):
         self.assertIn(r'\usepackage{tocloft}', french)
         self.assertIn(r'\renewcommand{\@pnumwidth}{2.2em}', french)
         self.assertIn(r'\setlength{\cftsecnumwidth}{3em}', french)
+        self.assertIn(r'\setlength{\cftsubsecnumwidth}{4em}', french)
         arabic = p.translated_preamble(source, 'ar')
         self.assertIn(r'\sectionfont{\raggedleft}', arabic)
         self.assertIn(r'\subsectionfont{\raggedleft}', arabic)

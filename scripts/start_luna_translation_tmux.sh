@@ -15,6 +15,7 @@ if [[ -n "$(git -C "$root" status --porcelain)" ]]; then
 fi
 command -v codex >/dev/null
 mkdir -p "$root/.translation-work"
+bash "$root/scripts/setup_translation_tex.sh"
 tmux new-session -d -s "$session" -c "$root" \
   'bash scripts/run_luna_translation_languages.sh >>.translation-work/luna-tmux.log 2>&1'
 printf 'Started %s; log: %s/.translation-work/luna-queue.log\n' "$session" "$root"
