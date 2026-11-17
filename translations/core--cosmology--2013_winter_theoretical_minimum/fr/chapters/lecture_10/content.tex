@@ -1,0 +1,578 @@
+\chapter{Fluctuations quantiques et origine des structures}
+
+\lectureoverview{Cette dernière leçon demande comment un univers rendu lisse par l’inflation peut néanmoins acquérir les minuscules irrégularités à partir desquelles les galaxies se forment. La réponse se construit par étapes. Les constantes universelles définissent d’abord les échelles de Planck et révèlent l’immense écart entre la physique familière des particules et la gravité quantique. Le fond diffus cosmologique fournit ensuite la cible : des variations de température et de densité de l’ordre de \(10^{-5}\), réparties sur de nombreuses échelles. Le mouvement de point zéro fournit des fluctuations inévitables, l’amortissement explique comment une oscillation peut se figer, et l’équation d’onde dans un univers en expansion transforme chaque mode de Fourier de l’inflaton en un tel oscillateur amorti. Les modes se figent lorsque leur longueur d’onde physique atteint l’échelle de Hubble. À la fin de l’inflation, les fluctuations figées font que des régions voisines se réchauffent à des moments légèrement différents, convertissant le bruit quantique microscopique en la distribution primordiale de densité.}
+
+\section{Quelles constantes sont universelles ?}
+
+Nous possédons une théorie quantique des particules élémentaires d’une précision extraordinaire. Ses paramètres comprennent les masses des quarks et des leptons, les constantes de couplage, les données de mélange, les charges et la liste des particules elles-mêmes. Avec une puissance de calcul illimitée, la théorie rendrait compte non seulement des expériences d’accélérateur, mais aussi des atomes, des molécules et de la chimie ; en principe, ses conséquences s’étendent jusqu’à la biologie et aux processus physiques sous-jacents à la pensée. Cela ne rend pas ces systèmes faciles à calculer. Cela signifie que le Modèle standard se veut une fondation microscopique de la matière ordinaire. La gravité est décrite séparément, au niveau classique, par la relativité générale. Ces deux théories sont puissantes ; aucune ne rend inévitable chaque nombre qui apparaît en physique à basse énergie.
+
+Le rapport des masses du proton et de l’électron est un nombre physique tout à fait valable, mais il est lié à deux particules particulières. Remplacer le proton par un neutron ou l’électron par un muon donne un autre rapport. De tels paramètres peuvent receler une physique profonde qui nous échappe encore, mais ils ne signalent pas leur universalité. Trois constantes dimensionnées sont d’une autre nature :
+\[
+c,\qquad \hbar,\qquad G.
+\]
+Leurs lois définissantes contiennent à plusieurs reprises le mot \emph{tous}. Toute matière et toute information respectent la vitesse limite \(c\). Tous les systèmes quantiques obéissent à des relations d’incertitude régies par \(\hbar\). Toutes les formes d’énergie gravitent avec la même constante de Newton \(G\). C’est cette portée qui rend ces constantes fondamentales dans le raisonnement présent.
+
+Planck avait reconnu l’importance de cette combinaison avant que le sens complet de la mécanique quantique ne soit connu. Sa constante est d’abord apparue dans la description du rayonnement du corps noir. Même alors, le fait dimensionnel était manifeste : à partir de \(c\), \(\hbar\) et \(G\), on peut construire des unités de longueur, de temps et de masse sans faire référence à un atome ou à une particule en particulier.
+
+\section{Construction des échelles de Planck}
+
+Notons \(L\), \(T\) et \(M\) les dimensions de longueur, de temps et de masse. La vitesse de la lumière a pour dimension
+\[
+[c]=LT^{-1}.
+\]
+La relation d’incertitude \(\Delta x\,\Delta p\gtrsim\hbar\), combinée à \(p=mv\), donne
+\[
+[\hbar]=ML^2T^{-1}.
+\]
+Enfin, les équations de Newton
+\[
+F=\frac{Gm_1m_2}{r^2},
+\qquad
+F=ma
+\]
+donnent
+\[
+[G]=L^3M^{-1}T^{-2}.
+\]
+Cette dérivation est importante, car l’analyse dimensionnelle ne relève pas de la conjecture : chaque exposant est fixé en exigeant l’élimination des dimensions indésirables.
+
+Cherchons une longueur de la forme
+\begin{equation}
+\ell=c^\alpha\hbar^\beta G^\gamma.
+\label{eq:c10-length-ansatz}
+\end{equation}
+L’exposant de la masse doit être nul, donc
+\[
+\beta-\gamma=0.
+\]
+L’exposant du temps doit être nul et celui de la longueur doit être égal à un :
+\[
+-\alpha-\beta-2\gamma=0,
+\qquad
+\alpha+2\beta+3\gamma=1.
+\]
+En utilisant \(\gamma=\beta\), on obtient
+\[
+\alpha+3\beta=0,
+\qquad
+\alpha+5\beta=1.
+\]
+La différence entre ces équations donne \(2\beta=1\), d’où
+\[
+\beta=\gamma=\frac12,
+\qquad
+\alpha=-\frac32.
+\]
+La longueur unique que l’on peut former à partir des trois constantes universelles est donc
+\begin{equation}
+\ell_{\mathrm P}
+=\sqrt{\frac{\hbar G}{c^3}}
+\approx 1.6\times10^{-35}\,\mathrm m.
+\label{eq:c10-planck-length}
+\end{equation}
+La leçon ne retient que l’ordre de grandeur, \(10^{-35}\,\mathrm m\), mais la dérivation dimensionnelle fixe la combinaison elle-même.
+
+Le temps associé est le temps de parcours de la lumière :
+\begin{equation}
+t_{\mathrm P}
+=\frac{\ell_{\mathrm P}}{c}
+=\sqrt{\frac{\hbar G}{c^5}}
+\approx 5.4\times10^{-44}\,\mathrm s.
+\label{eq:c10-planck-time}
+\end{equation}
+À l’ordre de grandeur près, il vaut \(10^{-43}\,\mathrm s\). Une fois connus la longueur de Planck et la vitesse universelle, on ne le construit pas indépendamment.
+
+Pour la masse, utilisons la relation dimensionnelle \(Et\sim\hbar\) et \(E=mc^2\). En prenant \(t=t_{\mathrm P}\), on obtient
+\begin{equation}
+m_{\mathrm P}
+=\frac{\hbar}{c^2t_{\mathrm P}}
+=\sqrt{\frac{\hbar c}{G}}
+\approx 2.2\times10^{-8}\,\mathrm{kg}.
+\label{eq:c10-planck-mass}
+\end{equation}
+Selon les normes de la physique des particules, cette masse est étonnamment macroscopique : elle est à peu près égale à celle d’un fin grain de poussière. Son énergie de masse au repos est de l’ordre de \(10^9\,\mathrm J\), comparable à l’énergie chimique contenue dans un réservoir de carburant. Une voiture peut parcourir des centaines de kilomètres avec seulement quelques pleins parce que la combustion ne libère qu’une infime fraction de l’énergie de masse au repos du carburant. Convertir entièrement une masse de Planck en énergie serait une tout autre affaire. Une masse minuscule peut représenter une énergie immense lorsqu’on la multiplie par \(c^2\).
+
+Le contraste avec la physique des accélérateurs est saisissant. Une distance de l’ordre de \(10^{-18}\,\mathrm m\), caractéristique des plus petites échelles sondées dans les collisions de haute énergie à l’époque de cette leçon, représente encore environ \(10^{17}\) longueurs de Planck. Le territoire inconnu entre les échelles électrofaible et de Planck est donc immense. La physique nucléaire offre une bonne analogie. De loin, un noyau semble élémentaire, mais à plus courte distance, il se résout en protons et en neutrons, qui se résolvent à leur tour en quarks et en gluons. Les particules de basse énergie peuvent être simples par rapport aux noyaux, tout en restant des objets émergents complexes par rapport à ce qui se trouve à l’échelle de Planck. La multitude de paramètres du Modèle standard est moins surprenante lorsqu’on considère cette hiérarchie, même si leurs valeurs observées et leurs ajustements fins restent inexpliqués.
+
+\begin{classroomqa}
+\audiencequestion{Le boson de Higgs est-il plus léger ou plus lourd que prévu, et pourquoi sa masse pose-t-elle problème ?}
+\lecturerresponse{Il y a deux comparaisons à faire. Par rapport à la masse de Planck, un Higgs de \(125\,\mathrm{GeV}\) est extraordinairement léger. Dans une théorie dépourvue de mécanisme protecteur, les corrections quantiques tendent à rendre la masse d’un scalaire sensible à des échelles bien supérieures ; obtenir la valeur observée semble donc exiger un réglage des paramètres sur une plage très étroite. En revanche, par rapport à certaines prévisions simples de la supersymétrie évoquées à l’époque, on pourrait qualifier le Higgs observé d’assez lourd. Cette apparente contradiction vient de la comparaison avec deux échelles de référence différentes ; le problème de hiérarchie sous-jacent demeure. \lecturetimestamp{00:26:45--00:30:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si le Higgs contribue à donner leur masse aux particules, les particules de matière noire devraient-elles avoir des masses proches de l’échelle de Planck ?}
+\lecturerresponse{Non. Un WIMP est une \emph{particule massive à interaction faible} ; cette expression désigne une échelle d’interaction qui pourrait permettre une détection en laboratoire, et non la masse de Planck. Dans les hypothèses habituelles concernant les WIMP, leurs masses peuvent être très supérieures à celle du proton tout en restant immensément inférieures à \(m_{\mathrm P}\). Si l’interaction avec la matière ordinaire peut être arbitrairement plus faible, la cosmologie autorise une gamme de masses bien plus large, mais une découverte directe devient d’autant plus difficile. Le proton et le neutron rappellent également que l’essentiel de leur masse est une énergie de liaison due à l’interaction forte, et non simplement la somme des masses des quarks engendrées par le Higgs. \lecturetimestamp{00:30:55--00:33:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Que représente une masse de Planck, et existe-t-il une énergie fondamentale par bit ?}
+\lecturerresponse{Une interprétation gravitationnelle utile est qu’un trou noir ne peut être rendu arbitrairement plus petit que l’échelle de Planck tout en restant un trou noir semi-classique conventionnel. Un tel objet aurait une masse de l’ordre de \(m_{\mathrm P}\), une aire d’horizon de l’ordre d’une aire de Planck et une entropie de l’ordre d’une unité. Dans ce sens restreint, propre aux trous noirs, on peut associer une énergie de l’ordre de celle de Planck à une quantité d’information de l’ordre de l’unité. Cela ne signifie pas que chaque bit stocké dans chaque dispositif coûte une énergie de Planck ; les particules ordinaires et les mémoires ordinaires peuvent être bien plus légères. \lecturetimestamp{00:33:11--00:35:10}}
+\end{classroomqa}
+
+À partir de maintenant, il est commode d’utiliser les unités de Planck,
+\begin{equation}
+c=\hbar=G=1.
+\label{eq:c10-planck-units}
+\end{equation}
+Les longueurs, les temps, les masses et les énergies peuvent alors être exprimés par des nombres purs, rapportés aux équations~\eqref{eq:c10-planck-length}--\eqref{eq:c10-planck-mass}.
+
+\section{Le fond diffus presque uniforme}
+
+Le problème cosmologique commence par une carte micro-onde de l’ensemble du ciel. WMAP, la sonde Wilkinson Microwave Anisotropy Probe, a mesuré le rayonnement émis à l’époque où le plasma primordial est devenu transparent. Depuis, les photons ont été décalés vers le rouge d’un facteur d’environ mille et forment aujourd’hui un corps noir presque parfait, à environ \(2.7\,\mathrm K\). Lorsque nous regardons au loin, nous ne voyons pas l’Univers à un même instant présent. Plus la distance est grande, plus l’émission est ancienne, et le fond diffus micro-onde est la coquille lointaine d’où les photons ont commencé à se propager librement vers nous.
+
+\begin{classroomqa}
+\audiencequestion{Que représente exactement l’image ovale de WMAP ?}
+\lecturerresponse{Chaque point de l’ovale représente une direction du ciel, la sphère étant aplatie par une projection cartographique. Les bords gauche et droit se rejoignent, les parties supérieure et inférieure représentent des hémisphères galactiques opposés, et le plan galactique traverse le milieu. Il faut modéliser puis soustraire l’émission micro-onde d’avant-plan de notre propre Galaxie. Ce qui reste n’est pas une carte des étoiles proches, mais une carte directionnelle de la température micro-onde sur la coquille de dernière diffusion. \lecturetimestamp{00:37:49--00:40:49}}
+\end{classroomqa}
+
+En première approximation, le résultat est isotrope :
+\[
+T(\hat{\mathbf n})\simeq 2.7\,\mathrm K
+\]
+pour chaque direction d’observation \(\hat{\mathbf n}\). Une isotropie parfaite autour de chaque point impliquerait une homogénéité parfaite. Mais un univers parfaitement homogène ne produirait pas spontanément de galaxies, d’amas ni la toile cosmique en forme de caustiques évoquée dans la leçon précédente. Il a donc dû exister une certaine inhomogénéité, aussi faible qu’ait été son amplitude.
+
+Écrivons l’écart de température dans une direction donnée sous la forme
+\[
+\delta T(\hat{\mathbf n})=T(\hat{\mathbf n})-\bar T.
+\]
+La variation fractionnaire mesurée est de l’ordre de
+\begin{equation}
+\frac{\delta T}{T}\sim10^{-5}.
+\label{eq:c10-cmb-anisotropy}
+\end{equation}
+Une première méthode pour obtenir ce nombre consistait à procéder par dynamique : faire évoluer à rebours la distribution actuelle de matière et chercher le contraste initial nécessaire à l’époque du découplage. L’autre méthode était directe : amplifier de cinq ordres de grandeur la carte micro-onde presque uniforme et mesurer ses marbrures. Les deux méthodes concordent suffisamment pour le présent raisonnement.
+
+Les marbrures apparaissent à de nombreuses échelles angulaires. Les grandes taches contiennent de plus petites taches, et si l’on agrandit une région, on obtient une texture statistiquement semblable. L’expression \emph{invariant d’échelle} ne signifie pas que toutes les échelles sont littéralement identiques ; elle indique que la puissance des fluctuations varie peu avec l’échelle dans la gamme pertinente. Cette quasi-invariance d’échelle fait partie des observations que la théorie doit expliquer, et pas seulement l’amplitude globale.
+
+Pourquoi la température suit-elle la matière ? Un photon qui s’échappe d’un puits de potentiel gravitationnel perd de l’énergie. Le rayonnement qui nous parvient d’une région plus dense peut donc être décalé par rapport à celui d’une région moins dense. À l’ordre de grandeur considéré dans la leçon, cela motive
+\begin{equation}
+\frac{\delta\rho}{\rho}\sim10^{-5}
+\label{eq:c10-density-target}
+\end{equation}
+près du découplage. Un calcul précis du fond diffus cosmologique tient compte de la dynamique acoustique, des potentiels gravitationnels et des fonctions de transfert ; l’équation~\eqref{eq:c10-density-target} sert donc à fixer l’échelle, mais n’exprime pas une égalité exacte entre \(\delta T/T\) et \(\delta\rho/\rho\).
+
+\begin{classroomqa}
+\audiencequestion{Les marbrures pourraient-elles être un bruit microscopique ordinaire produit au moment de la dernière diffusion ?}
+\lecturerresponse{Pas aux échelles angulaires observées. À l’époque du découplage, les taches correspondaient à des régions physiques immenses, et non à des perturbations à l’échelle atomique dans le plasma en recombinaison. Toutefois, si l’on remonte beaucoup plus loin dans le temps, leurs longueurs d’onde physiques diminuent. L’inflation fournit l’amplification nécessaire : des fluctuations qui ont commencé comme des perturbations quantiques microscopiques peuvent être étirées jusqu’à des échelles astronomiques. \lecturetimestamp{00:46:42--00:48:02}}
+\end{classroomqa}
+
+Le mécanisme se comprend à partir de trois éléments de physique : le mouvement de point zéro d’un oscillateur harmonique, l’amortissement d’un oscillateur et l’équation d’onde d’un champ scalaire dans un univers en expansion. Nous allons les assembler dans cet ordre.
+
+\section{Mouvement de point zéro d’un oscillateur}
+
+Pour un oscillateur harmonique de masse unité,
+\begin{equation}
+E=\frac12\dot x^{\,2}+\frac12\omega^2x^2,
+\qquad
+\ddot x+\omega^2x=0.
+\label{eq:c10-undamped}
+\end{equation}
+L’énergie cinétique et l’énergie potentielle s’échangent continuellement. Moyennée sur une oscillation, chacune représente la moitié de l’énergie totale.
+
+La mécanique quantique donne les niveaux d’énergie
+\begin{equation}
+E_n=\left(n+\frac12\right)\hbar\omega.
+\label{eq:c10-oscillator-levels}
+\end{equation}
+L’état fondamental ne peut avoir à la fois \(x=0\) et \(\dot x=0\), car cela reviendrait à attribuer simultanément une position et une quantité de mouvement exactes. Son énergie irréductible,
+\[
+E_0=\frac12\hbar\omega,
+\]
+est l’énergie de point zéro. Il faut comprendre le mot \emph{oscillation} au sens statistique : un état fondamental stationnaire ne décrit pas une orbite sinusoïdale classique, mais présente des variances non nulles de la position et de la quantité de mouvement.
+
+En moyenne, la moitié de l’énergie de l’état fondamental se trouve dans le terme potentiel :
+\[
+\frac12\omega^2\langle x^2\rangle
+=\frac14\hbar\omega.
+\]
+Ainsi,
+\begin{equation}
+\langle x^2\rangle=\frac{\hbar}{2\omega}
+\sim\frac{\hbar}{\omega}.
+\label{eq:c10-zero-point-position}
+\end{equation}
+En négligeant les facteurs deux, une notation complexe pour l’amplitude de la fluctuation est
+\[
+x(t)\sim\sqrt{\frac{\hbar}{\omega}}\,e^{i\omega t}.
+\]
+La dérivation donne alors
+\begin{equation}
+\langle\dot x^{\,2}\rangle\sim\hbar\omega,
+\label{eq:c10-zero-point-velocity}
+\end{equation}
+ce qui est cohérent avec l’égalité des énergies cinétique et potentielle moyennes. Le refroidissement peut éliminer les excitations avec \(n>0\), mais il ne peut supprimer ces variances de l’état fondamental.
+
+\section{Amortissement, régime critique et gel}
+
+Plongeons l’oscillateur dans un milieu visqueux. Un ressort et une masse se déplaçant dans du miel obéissent à
+\begin{equation}
+\ddot x+\gamma\dot x+\omega^2x=0,
+\label{eq:c10-damped}
+\end{equation}
+où \(\gamma>0\) mesure la force de frottement. En cherchant une solution de la forme \(x=e^{\alpha t}\), on obtient
+\begin{equation}
+\alpha^2+\gamma\alpha+\omega^2=0,
+\end{equation}
+et donc
+\begin{equation}
+\alpha_\pm
+=\frac{-\gamma\pm\sqrt{\gamma^2-4\omega^2}}{2}.
+\label{eq:c10-damped-roots}
+\end{equation}
+Les deux racines fournissent les deux solutions indépendantes requises par une équation différentielle du second ordre.
+
+\begin{classroomqa}
+\audiencequestion{Le terme de frottement dans l’équation~\eqref{eq:c10-damped} ne devrait-il pas être précédé d’un signe moins ?}
+\lecturerresponse{La force de frottement elle-même est \(F_{\rm drag}=-\gamma\dot x\). L’équation de Newton est \(\ddot x=-\gamma\dot x-\omega^2x\). En ramenant les deux termes de force à gauche, on obtient l’équation~\eqref{eq:c10-damped} avec des signes positifs. Le signe dans l’équation différentielle est donc cohérent avec la direction de la force physique. \lecturetimestamp{00:59:38--01:00:10}}
+\end{classroomqa}
+
+Si \(\gamma^2<4\omega^2\), les racines sont complexes. Définissons
+\[
+\Omega=\sqrt{\omega^2-\frac{\gamma^2}{4}}.
+\]
+On a alors
+\begin{equation}
+x(t)=e^{-\gamma t/2}
+\left(A\cos\Omega t+B\sin\Omega t\right).
+\label{eq:c10-underdamped}
+\end{equation}
+L’oscillateur traverse encore plusieurs fois sa position d’équilibre, mais son enveloppe décroît. C’est le régime sous-amorti.
+
+Si \(\gamma^2>4\omega^2\), les deux racines de l’équation~\eqref{eq:c10-damped-roots} sont réelles et négatives :
+\begin{equation}
+x(t)=A e^{\alpha_+t}+B e^{\alpha_-t}.
+\label{eq:c10-overdamped}
+\end{equation}
+Il n’y a pas d’oscillation entretenue ; les deux composantes décroissent. C’est le régime suramorti. Pour
+\begin{equation}
+\gamma=2\omega
+\label{eq:c10-critical}
+\end{equation}
+les racines coïncident : c’est l’amortissement critique, qui marque la transition entre les deux comportements.
+
+Un cas limite est particulièrement important. En l’absence de force de rappel, \(\omega=0\),
+\[
+\alpha(\alpha+\gamma)=0,
+\]
+donc
+\begin{equation}
+x(t)=c_0+c_1e^{-\gamma t}.
+\label{eq:c10-no-restoring}
+\end{equation}
+La vitesse s’annule, mais la coordonnée n’est pas obligée de revenir à zéro. Elle se fige à la valeur constante \(c_0\), déterminée par les conditions initiales. Une pierre poussée dans du miel, sans ressort, finit par s’immobiliser là où les frottements épuisent son mouvement.
+
+Faisons maintenant varier lentement la fréquence. Commençons par \(\omega\gg\gamma\), de sorte que le mouvement soit oscillant. Réduisons \(\omega(t)\) tout en maintenant approximativement fixe l’échelle d’amortissement. L’oscillation ralentit, franchit \(\gamma=2\omega\), devient suramortie et tend vers la forme sans force de rappel lorsque \(\omega\to0\). On peut aussi augmenter l’amortissement par rapport à la force de rappel. En cosmologie, le changement décisif sera la diminution de la fréquence effective tandis que l’amortissement de Hubble reste presque constant. On ne peut déduire la valeur finale figée du seul point de transition ; elle découle de toute l’évolution antérieure et de l’état quantique initial.
+
+\section{Ondes scalaires dans un univers en expansion}
+
+Revenons à l’inflaton \(\phi\). On suppose que son potentiel présente un plateau élevé et étendu, suivi d’une descente abrupte vers un minimum plus bas. Sur le plateau, l’approximation importante est
+\begin{equation}
+V'(\phi)\simeq0,
+\label{eq:c10-flat-potential}
+\end{equation}
+et non \(V(\phi)\simeq0\). La pente est faible tandis que la densité d’énergie peut rester assez élevée pour entraîner l’inflation. L’origine détaillée de cette forme n’est pas précisée ; le modèle l’exige de manière phénoménologique.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_02.png}
+\caption{Le plateau et la falaise du potentiel de l’inflaton restent visibles à gauche, tandis que l’équation d’onde dans l’espace plat est amorcée à droite. Le tableau étaye clairement la condition approchée \(V'(\phi)=0\) et le début d’un terme de dérivée seconde, mais le conférencier masque l’équation inachevée ; l’équation~\eqref{eq:c10-flat-wave} est reconstruite à partir de la dérivation orale.}
+\label{fig:c10-potential-wave}
+\lectureframe{01:17:17.865}
+\end{figure}
+
+Pour un champ scalaire presque libre dans l’espace-temps plat,
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\nabla^2\phi=0.
+\label{eq:c10-flat-wave}
+\end{equation}
+Un potentiel non plat ajouterait \(-V'(\phi)\) au membre de droite. Dans l’approximation du plateau, nous l’omettons. Si le champ était parfaitement homogène, sa dérivée spatiale s’annulerait. Dans un univers en expansion, l’équation restante pour un champ homogène serait
+\[
+\ddot\phi+3H\dot\phi=0,
+\]
+l’équation avec frottement de Hubble de la leçon précédente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_03.png}
+\caption{Le plateau est indiqué à gauche tandis que les étapes successives de l’équation d’onde apparaissent à droite. L’opérateur supérieur, pour l’espace plat, est lisible ; la ligne du bas atteint \(+3H\) mais reste inachevée. Le terme complet d’amortissement est donc donné d’après l’explication correspondante.}
+\label{fig:c10-hubble-board}
+\lectureframe{01:18:57.554}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.9cm,>=Latex]
+  \draw[->] (-0.2,0) -- (9.3,0) node[right] {\(\phi\)};
+  \draw[->] (0,-0.2) -- (0,4.6) node[above] {\(V(\phi)\)};
+  \draw[very thick,blue!55!black,smooth]
+    plot coordinates {(0.25,3.9) (1.4,3.88) (2.8,3.8) (4.2,3.6) (5.3,3.25) (6.0,2.6) (6.5,1.45) (6.9,0.45) (7.5,0.28) (8.5,0.7)};
+  \draw[dashed] (6.45,0) -- (6.45,2.0);
+  \draw[->,thick,red!65!black] (2.0,4.25) -- (3.1,3.82);
+  \node[anchor=south west] at (0.8,4.0) {slow-roll plateau: \(V'\simeq0\)};
+  \node[anchor=west] at (6.55,2.05) {end of inflation};
+  \node[anchor=north] at (7.45,0.22) {reheating region};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Reconstruction propre du potentiel utilisé tout au long du raisonnement. Une pente faible permet le roulement lent, tandis que la grande valeur de \(V\) maintient \(H\) presque constant ; la descente abrupte met fin à l’inflation et libère l’énergie emmagasinée.}
+\label{fig:c10-potential-reconstruction}
+\end{figure}
+
+Pour un champ inhomogène, il faut distinguer la distance de coordonnées de la distance physique. Choisissons des coordonnées comobiles sans dimension \(\mathbf x\), de sorte qu’un élément infinitésimal de distance propre soit
+\[
+d\boldsymbol\ell=a(t)\,d\mathbf x.
+\]
+À temps fixé,
+\[
+\nabla_{\rm proper}=\frac{1}{a}\nabla_{\mathbf x},
+\qquad
+\nabla_{\rm proper}^2=\frac{1}{a^2}\nabla_{\mathbf x}^2.
+\]
+L’équation scalaire est donc
+\begin{equation}
+\ddot\phi+3H\dot\phi-\frac{1}{a^2}\nabla^2\phi=0,
+\label{eq:c10-frw-wave}
+\end{equation}
+où \(\nabla\) désigne la dérivation par rapport aux coordonnées comobiles. Si l’on choisit plutôt un facteur d’échelle sans dimension, les coordonnées comobiles ont une dimension de longueur ; la physique reste inchangée.
+
+\begin{classroomqa}
+\audiencequestion{Le terme spatial de l’équation~\eqref{eq:c10-frw-wave} devrait-il être positif ?}
+\lecturerresponse{Non. L’opérateur d’onde dans l’espace plat comporte déjà le signe relatif \(\partial_t^2-\nabla^2\). L’expansion modifie la dérivée spatiale par le facteur \(a^{-2}\), mais n’en inverse pas le signe. Après substitution de Fourier, les deux signes moins se compensent, et l’équation du mode acquiert le terme de rappel positif attendu \(+k^2\phi_k/a^2\). \lecturetimestamp{01:22:18--01:23:06}}
+\end{classroomqa}
+
+\section{Chaque mode de Fourier est un oscillateur amorti}
+
+Étudions une onde spatiale à la fois :
+\begin{equation}
+\phi(\mathbf x,t)
+=\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-mode-ansatz}
+\end{equation}
+L’exponentielle complexe sert à représenter les sinus et les cosinus. Un profil réel arbitraire s’obtient par superposition de modes satisfaisant la relation de réalité appropriée entre \(\mathbf k\) et \(-\mathbf k\).
+
+Les dérivées temporelles n’agissent que sur \(\phi_{\mathbf k}(t)\), tandis que
+\[
+\nabla^2e^{i\mathbf k\cdot\mathbf x}
+=-k^2e^{i\mathbf k\cdot\mathbf x}.
+\]
+La substitution dans l’équation~\eqref{eq:c10-frw-wave} donne
+\begin{equation}
+\ddot\phi_{\mathbf k}
++3H\dot\phi_{\mathbf k}
++\frac{k^2}{a^2}\phi_{\mathbf k}=0.
+\label{eq:c10-mode-equation}
+\end{equation}
+Ainsi, chaque nombre d’onde se comporte comme un oscillateur amorti, avec
+\begin{equation}
+\gamma=3H,
+\qquad
+\omega_k(t)=\frac{k}{a(t)}.
+\label{eq:c10-mode-identification}
+\end{equation}
+Le nombre d’onde physique \(k/a\) est décalé vers le rouge à mesure que l’Univers se dilate. Par conséquent, la force de rappel effective \(k^2/a^2\) tend vers zéro.
+
+Un mode qui commence avec une courte longueur d’onde physique vérifie \(\omega_k\gg H\) et oscille. Sa longueur d’onde s’étire, sa fréquence diminue et l’amortissement de Hubble finit par dominer. Le mode tend alors vers une valeur non oscillante au lieu d’être ramené à zéro. Différents modes \(\mathbf k\) passent d’un régime à l’autre à des moments différents : un plus grand \(k\), qui correspond à une longueur d’onde plus courte à \(a\) fixé, doit attendre une expansion plus importante avant que sa fréquence physique ne tombe à l’échelle de Hubble.
+
+\section{Sortie de l’horizon et fluctuations du vide figées}
+
+En utilisant la condition critique de l’oscillateur comme estimation à un facteur d’ordre unité près,
+\[
+\gamma=2\omega_k,
+\]
+l’équation~\eqref{eq:c10-mode-identification} donne
+\begin{equation}
+3H=\frac{2k}{a},
+\qquad
+a_{\rm cross}=\frac{2k}{3H}.
+\label{eq:c10-critical-mode}
+\end{equation}
+Les facteurs numériques ne sont pas l’essentiel. Le changement de régime se produit lorsque le nombre d’onde physique \(k/a\) est de l’ordre de \(H\).
+
+Posons
+\[
+\lambda_{\rm com}=\frac{2\pi}{k},
+\qquad
+\lambda_{\rm phys}=a\lambda_{\rm com}
+=\frac{2\pi a}{k}.
+\]
+Une vérification dimensionnelle fixe la place de \(a\) : comme \(\mathbf x\) est sans dimension, \(k\) et \(\mathbf k\cdot\mathbf x\) le sont aussi, tandis que \(a\) et \(\lambda_{\rm phys}\) ont la dimension d’une longueur. L’équation~\eqref{eq:c10-critical-mode} implique donc
+\begin{equation}
+\lambda_{\rm phys}\sim H^{-1},
+\label{eq:c10-horizon-crossing}
+\end{equation}
+à des facteurs tels que \(2\), \(3\) et \(2\pi\) près.
+
+La loi de Hubble \(v=Hd\) associe à la distance \(H^{-1}\) une vitesse d’éloignement de l’ordre de \(c=1\). Pendant l’inflation, \(H\) est grand et presque constant ; cette longueur de Hubble est donc microscopique, bien qu’elle joue le rôle d’une échelle causale. L’expression \emph{sortie de l’horizon} est conventionnelle : aucun objet matériel ne traverse une paroi physique. La longueur d’onde physique du mode dépasse l’échelle de Hubble, approximativement fixe, et sa dynamique passe d’oscillations rapides à une amplitude presque figée.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.85cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {cosmic time};
+  \draw[->] (0,0) -- (0,5.0) node[above] {physical length};
+  \draw[dashed,thick] (0.25,2.75) -- (8.75,2.75)
+    node[right] {\(H^{-1}\)};
+  \draw[very thick,blue!55!black]
+    (0.35,0.55) .. controls (3.3,0.75) and (5.3,1.55) .. (8.5,4.55);
+  \node[blue!55!black,anchor=west] at (6.65,4.55) {\(\lambda_{\rm phys}=2\pi a/k\)};
+  \draw[densely dotted] (6.05,0) -- (6.05,2.75);
+  \fill (6.05,2.75) circle (2pt);
+  \node[anchor=north] at (6.05,0) {horizon exit};
+  \node[align=center] at (2.6,1.7) {oscillating\\sub-Hubble mode};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Au cours d’une expansion presque exponentielle, une longueur d’onde physique augmente tandis que la longueur de Hubble reste approximativement fixe. Leur croisement marque la transition entre les oscillations rapides et un mode figé, à des facteurs d’ordre unité près.}
+\label{fig:c10-horizon-reconstruction}
+\end{figure}
+
+Les fluctuations du vide empêchent l’inflation d’effacer simplement toutes les ondes. Chaque mode de courte longueur d’onde commence par un mouvement de point zéro. L’expansion étire un mode jusqu’à l’échelle de Hubble et le fige, tandis que les modes du vide de longueur d’onde encore plus courte continuent d’osciller. À leur tour, ils s’étirent et se figent. La répétition de ce processus construit un profil de champ composé de contributions figées sur une vaste gamme de longueurs d’onde et d’orientations. Le résultat est stochastique, mais il n’est pas dépourvu de structure : ses statistiques découlent de l’état quantique et du fond inflationnaire.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_04.png}
+\caption{Superposition, sur l’ensemble du tableau, d’ondes de champ longues et courtes, accompagnée d’un petit schéma d’amortissement près des mentions \(\gamma\) et \(3H\). L’image illustre qualitativement les modes ; elle ne sert pas à relever une fonction exacte.}
+\label{fig:c10-mode-board}
+\lectureframe{01:45:28.476}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Les modes se figent-ils en un point ou à une longueur d’onde, et \(H\) croît-il lui-même exponentiellement ?}
+\lecturerresponse{Ils se figent lorsqu’une longueur d’onde atteint l’échelle de Hubble. Sur le plateau presque plat, \(V\) et donc \(H\) sont approximativement constants ; c’est le facteur d’échelle \(a(t)\), et par conséquent la longueur d’onde physique \(a/k\), qui croît exponentiellement. Chaque mode comobile atteint la condition \(k/a\sim H\) à son propre instant. \lecturetimestamp{01:45:06--01:45:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{S’agit-il d’ondes électromagnétiques ?}
+\lecturerresponse{Non. Ce sont des fluctuations du champ scalaire de l’inflaton. Les fluctuations quantiques du vide électromagnétique fournissent une analogie familière, mais la variable de l’équation~\eqref{eq:c10-mode-equation} est \(\phi\). \lecturetimestamp{01:45:39--01:46:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Existe-t-il un continuum de longueurs d’onde ?}
+\lecturerresponse{Dans l’idéalisation d’un espace infini, oui. Le champ est représenté par une intégrale de Fourier,
+\begin{equation}
+\phi(\mathbf x,t)
+=\int\frac{d^3k}{(2\pi)^3}\,
+\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-fourier-integral}
+\end{equation}
+Tous les nombres d’onde suivent le même mécanisme de décalage vers le rouge et de gel. \lecturetimestamp{01:46:04--01:46:34}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Un univers fini n’aurait-il que des modes discrets ?}
+\lecturerresponse{Oui. Les conditions aux limites dans un volume spatial fini quantifient les nombres d’onde autorisés. Si le volume est bien plus grand que les échelles considérées, leur espacement peut être si fin que la somme est bien approchée par l’intégrale de l’équation~\eqref{eq:c10-fourier-integral}. La représentation continue est une idéalisation, et non un mécanisme local différent. \lecturetimestamp{01:46:34--01:47:01}}
+\end{classroomqa}
+
+Deux mouvements coexistent désormais. Le champ moyenné sur l’espace \(\bar\phi(t)\) roule lentement et de manière classique le long du potentiel. Il est surmonté d’une petite fluctuation quantique,
+\[
+\phi(\mathbf x,t)=\bar\phi(t)+\delta\phi(\mathbf x,t),
+\]
+composée des modes figés. L’énergie de la fluctuation elle-même est trop faible pour expliquer le contraste de matière observé. Son importance tient au fait qu’elle perturbe le moment auquel l’inflation prend fin.
+
+Un calcul quantique complet à un seul champ précise cet argument fondé sur l’oscillateur. Un scalaire léger acquiert, par intervalle logarithmique du nombre d’onde, une fluctuation typique de l’ordre de
+\begin{equation}
+\delta\phi_{\rm exit}\sim\frac{H}{2\pi}.
+\label{eq:c10-field-amplitude}
+\end{equation}
+La quantification des modes du champ dans le fond inflationnaire est nécessaire pour dériver la normalisation. L’image de l’oscillateur a déjà fourni le mécanisme essentiel : des fluctuations du vide existent même dans l’état fondamental, et l’expansion les transforme en un motif figé d’apparence classique.
+
+\section{La falaise transforme le bruit du champ en bruit de densité}
+
+Commençons par supprimer \(\delta\phi\). À tout instant donné, le champ a alors partout la même valeur, représentée sur le tableau par une droite verticale lorsque l’espace \(x\) est porté vers le haut et la valeur du champ \(\phi\) à l’horizontale. À mesure que le temps passe, la droite se déplace vers la falaise. Tout l’Univers atteint la chute en même temps, l’énergie potentielle de l’inflaton se transforme en particules, en rayonnement et en chaleur, l’expansion exponentielle prend fin et la densité d’énergie qui en résulte commence à se diluer sous l’effet de l’expansion ordinaire.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_05.png}
+\caption{Diagramme de l’espace en fonction du champ, tel qu’il est dessiné au tableau. L’axe vertical représente \(x\), la direction horizontale \(\phi\), les profils presque verticaux en pointillés marquent des configurations successives du champ, et la limite hachurée à droite représente la falaise où l’inflation prend fin.}
+\label{fig:c10-cliff-board}
+\lectureframe{01:50:54.502}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.82cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {\(\phi\)};
+  \draw[->] (0,0) -- (0,5.2) node[above] {space \(x\)};
+  \draw[thick,gray!60] (8.2,0.15) rectangle (8.55,4.85);
+  \foreach \y in {0.35,0.85,...,4.55} {
+    \draw[gray!60] (8.2,\y) -- (8.55,{\y+0.25});
+  }
+  \node[anchor=south,rotate=90] at (8.38,2.5) {cliff};
+  \draw[thick,densely dashed,gray!70] (3.2,0.2) -- (3.2,4.75);
+  \draw[thick,blue!45!black,smooth]
+    plot coordinates {(5.0,0.2) (5.12,0.75) (4.9,1.25) (5.18,1.8) (4.94,2.35) (5.2,2.9) (4.88,3.45) (5.12,4.05) (5.0,4.75)};
+  \draw[very thick,red!65!black,smooth]
+    plot coordinates {(7.15,0.2) (7.32,0.7) (7.0,1.2) (7.42,1.75) (7.1,2.3) (7.5,2.85) (7.02,3.35) (7.35,4.0) (7.16,4.75)};
+  \draw[->,thick] (3.55,2.5) -- (4.55,2.5);
+  \draw[->,thick] (5.55,2.5) -- (6.65,2.5);
+  \node[align=center,anchor=south,font=\small] at (3.2,4.8) {uniform\\profile};
+  \node[align=center,anchor=south,font=\small] at (5.0,4.8) {frozen\\ripple};
+  \node[align=center,anchor=south,font=\small] at (7.2,4.8) {near\\reheating};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Reconstitution nette du diagramme de l’espace en fonction du champ. Le champ moyen évolue vers la falaise tandis qu’une ondulation spatiale gelée persiste ; les différentes positions atteignent donc la fin de l’inflation à des instants légèrement différents.}
+\label{fig:c10-cliff-reconstruction}
+\end{figure}
+
+Rétablissons la variation gelée. La droite est maintenant légèrement ondulée : des points voisins ont des valeurs légèrement différentes de \(\phi\). Imaginons une rangée de personnes qui essaient d’avancer au pas, côte à côte, vers une falaise. Quelques-unes sont un peu en avance, d’autres un peu en retard. Celles qui sont en avance tombent les premières.
+
+Ce décalage temporel est la véritable origine du contraste de densité. Une région qui tombe la première se réchauffe la première. Son énergie potentielle est convertie en particules et en chaleur, puis cette énergie a le temps de se diluer pendant l’expansion de l’Univers après l’inflation. Une région voisine qui tombe un peu plus tard se réchauffe plus tard ; lorsqu’on compare les deux régions, celle qui est tombée plus tard est simplement plus dense parce qu’elle a eu moins de temps pour se diluer. Les premiers franchissements laissent donc des poches relativement denses. Pendant que ces poches s’étendent, des ondulations de plus courte longueur d’onde font franchir le bord à d’autres positions et créent des poches plus petites à l’intérieur de la structure plus vaste. La répétition de ce processus sur toute la hiérarchie des modes gelés produit des structures emboîtées. Ainsi, la minuscule fluctuation du champ n’importe pas par l’énergie qu’elle porte ; elle importe parce qu’elle décale l’instant local du réchauffement.
+
+La relation entre le décalage temporel et la fluctuation peut s’écrire schématiquement. Si le champ homogène atteint la valeur finale \(\phi_{\rm end}\) avec une vitesse \(\dot{\bar\phi}\), alors un petit déplacement du champ modifie localement l’instant de fin de
+\begin{equation}
+\delta t_{\rm end}
+\simeq-\frac{\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-time-delay}
+\end{equation}
+Un roulement plus lent fait correspondre le même \(\delta\phi\) à un retard plus important. Pendant ce temps supplémentaire, la région qui a franchi la falaise la première poursuit son expansion et se dilue davantage. À des facteurs de transfert d’ordre unité près, la perturbation de courbure ou de densité est donc déterminée par
+\begin{equation}
+\mathcal R
+\sim H\,\delta t_{\rm end}
+\sim-\frac{H\,\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-curvature-estimate}
+\end{equation}
+En combinant cela avec l’équation~\eqref{eq:c10-field-amplitude}, on obtient l’échelle familière de l’inflation lente
+\begin{equation}
+\mathcal P_{\mathcal R}^{1/2}
+\sim\frac{H^2}{2\pi|\dot{\bar\phi}|},
+\label{eq:c10-slow-roll-amplitude}
+\end{equation}
+Les conventions précises et le transfert ultérieur vers \(\delta\rho/\rho\) nécessitent un calcul plus complet des perturbations. Plus le champ évolue lentement, plus le délai entre les franchissements de la falaise par des régions voisines est long et plus la dilution qui se produit entre-temps est importante. La même fluctuation du champ laisse donc une empreinte de densité plus grande lorsque \(\lvert\dot{\bar\phi}\rvert\) est plus petit.
+
+De nombreux modes franchissent l’échelle de Hubble à des instants différents ; des régions de tailles diverses se réchauffent donc à des instants légèrement différents. Le champ de densité qui en résulte contient des poches surdenses et sous-denses emboîtées à différentes échelles. Ses propriétés statistiques dépendent de la hauteur, de la pente et de la courbure du potentiel inflationnaire. Des modèles appropriés à inflation lente produisent naturellement une amplitude presque invariante d’échelle, proche de
+\[
+\frac{\delta\rho}{\rho}\sim10^{-5},
+\]
+et les spectres détaillés du fond diffus cosmologique permettent de confronter un petit nombre de paramètres cosmologiques aux observations sur de nombreuses échelles angulaires.
+
+\section{Des germes primordiaux au ciel, et retour}
+
+Nous pouvons maintenant revenir à l’observateur situé au centre d’un ensemble de coquilles de lumière passée. La sphère de dernière diffusion traverse le champ de densité primordial tridimensionnel. Les directions où cette coquille rencontre des potentiels gravitationnels différents présentent de légères différences de température micro-onde. WMAP affiche sur cette sphère le motif bidimensionnel. La carte n’est ni une photographie de l’instant zéro ni une projection de toutes les structures à l’intérieur de la sphère ; elle montre la structure de température sur la coquille particulière d’où les photons micro-ondes ont été diffusés pour la dernière fois.
+
+À l’intérieur de cette coquille, les mêmes perturbations primordiales continuent d’évoluer. La gravité amplifie les surdensités, des écoulements semblables à ceux qui forment des caustiques affinent les feuillets et les filaments, le gaz s’accumule et les galaxies se forment. Le motif du fond diffus cosmologique et la toile cosmique ultérieure sont donc deux étapes d’une même histoire : les fluctuations inflationnaires gelées apparaissent d’abord comme de minuscules germes de densité, puis deviennent des structures visibles.
+
+\begin{classroomqa}
+\audiencequestion{À quelle époque correspond le fond diffus cosmologique que nous observons aujourd’hui ?}
+\lecturerresponse{Les photons ont voyagé pendant environ \(13\) milliards d’années, mais ils ont été émis quelques centaines de milliers d’années après le Big Bang chaud, lorsque les électrons et les protons se sont combinés pour former de l’hydrogène neutre et que l’Univers est devenu transparent. L’inflation avait pris fin bien avant cela. Le réchauffement a créé la matière chaude et le rayonnement ; l’Univers a ensuite poursuivi son expansion et son refroidissement jusqu’à la dernière diffusion. Pour cet argument, l’affirmation robuste porte sur l’ordre de grandeur---quelques centaines de milliers d’années---, plutôt que sur une date précise de la recombinaison. \lecturetimestamp{02:00:38--02:02:19}}
+\end{classroomqa}
+
+\section{Un seul ciel et la variance cosmique}
+
+\begin{classroomqa}
+\audiencequestion{L’inflation prédit-elle la direction privilégiée signalée, ou l’asymétrie nord--sud dans WMAP ?}
+\lecturerresponse{Aucune direction privilégiée de ce type ne découle du modèle inflationnaire simple présenté ici. Le statut des anomalies signalées aux grandes échelles angulaires était incertain ; les avant-plans et les fluctuations statistiques restaient des explications possibles, et toute évaluation sérieuse exigeait de consulter la littérature spécialisée plutôt que d’en donner un résumé sensationnaliste. L’inflation prédit des propriétés statistiques d’un ensemble ; déterminer si une caractéristique inhabituelle du ciel révèle une nouvelle physique est plus difficile. \lecturetimestamp{02:02:19--02:03:26}}
+\end{classroomqa}
+
+Les petites structures angulaires apparaissent de nombreuses fois dans le ciel. Elles fournissent de nombreux échantillons, ce qui permet de tester statistiquement leur distribution et son isotropie. Une structure de l’ordre du quadrupôle est différente : seules quelques grandes échelles angulaires indépendantes tiennent sur la sphère observable. La puissance mesurée peut donc différer considérablement de la moyenne d’ensemble, même si la théorie sous-jacente est correcte. Cette incertitude d’échantillonnage irréductible est la \emph{variance cosmique}.
+
+\begin{classroomqa}
+\audiencequestion{Que penser de l’alignement apparent de plusieurs multipôles bas ?}
+\lecturerresponse{Il pourrait s’agir d’un indice, d’un avant-plan ou d’un artefact d’analyse, ou encore d’une réalisation improbable mais permise. Le problème est que nous ne pouvons pas tirer un autre Univers observable du même ensemble statistique. Obtenir quatre fois pile en six lancers ne signifie pas nécessairement que la pièce est truquée ; des séries répétées permettraient de trancher, mais la cosmologie ne fournit qu’une seule série aux plus grandes échelles. L’anomalie mérite peut-être d’être étudiée, mais un seul ciel ne peut à lui seul fournir les essais répétés nécessaires à un test décisif de sa significativité. \lecturetimestamp{02:05:31--02:07:36}}
+\end{classroomqa}
+
+\section{Du mouvement quantique à la structure cosmique}
+
+Trois constantes universelles définissent les échelles de Planck et montrent à quel point la physique des particules familière est éloignée de la gravité quantique. Le ciel micro-onde fournit une cible cosmologique précise : une quasi-isotropie, une amplitude de fluctuation de l’ordre de \(10^{-5}\) et des structures présentes à de nombreuses échelles. La mécanique quantique garantit que chaque mode de champ possède des fluctuations de point zéro. L’inflation étire chaque mode de l’inflaton jusqu’à ce que sa longueur d’onde physique soit de l’ordre de \(H^{-1}\) ; à ce stade, l’amortissement de Hubble supprime son oscillation et en laisse une amplitude effectivement gelée.
+
+L’inflaton homogène continue de rouler sous ce bruit gelé. Lorsque le champ atteint la fin de son plateau, des régions voisines ne se réchauffent pas exactement au même instant. Les régions qui se réchauffent les premières se diluent plus longtemps ; celles qui se réchauffent plus tard restent plus denses. Cela transforme \(\delta\phi\) en un motif primordial de densité et de courbure. La gravité amplifie ensuite ce motif jusqu’à former les galaxies et la toile cosmique, tandis que la coquille de dernière diffusion en préserve l’état antérieur dans le ciel micro-onde. Le mouvement microscopique de point zéro, l’expansion cosmique et le réchauffement décalé ne sont donc pas des histoires distinctes. Ensemble, ils expliquent comment un Univers inflationnaire peut être à la fois extraordinairement lisse et suffisamment structuré pour que nous existions.
