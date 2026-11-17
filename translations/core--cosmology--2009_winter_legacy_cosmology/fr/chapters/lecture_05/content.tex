@@ -1,0 +1,348 @@
+\chapter{Sphères, espace hyperbolique et signification de \(k\)}
+
+Faisons un peu de mathématiques, des mathématiques simples. Les sphères en un nombre quelconque de dimensions sont des géométries particulières : elles sont homogènes, c’est-à-dire qu’elles ont une courbure constante. Nous commencerons par la courbure positive, puis examinerons la courbure négative homogène, avant d’établir le lien avec les équations d’Einstein.
+
+Un univers sphérique signifie que \emph{l’espace} est sphérique, et non l’espace-temps. L’autre possibilité est une courbure négative homogène. Mettre ces deux cas en regard permet de faire apparaître clairement le rôle de la relativité générale.
+
+\section{Sphères et géométrie homogène}
+
+Une sphère de dimension 1 n’est autre qu’un cercle. La façon la plus simple de la décrire consiste à la plonger dans un espace auxiliaire à deux dimensions et à écrire
+\begin{equation}
+x^2+y^2=R^2.
+\end{equation}
+La sphère unité de dimension 1 est donnée par
+\begin{equation}
+x^2+y^2=1.
+\end{equation}
+
+On décrit une sphère de dimension 2 de la même manière, en utilisant cette fois trois coordonnées auxiliaires :
+\begin{equation}
+x^2+y^2+z^2=R^2,
+\end{equation}
+et, dans le cas unité,
+\begin{equation}
+x^2+y^2+z^2=1.
+\end{equation}
+
+Ces coordonnées ne sont qu’un artifice. La géométrie qui nous intéresse n’est pas celle de l’espace \(x,y,z\) environnant, mais celle de la surface elle-même. Un être vivant sur une sphère de dimension 1 vit sur un cercle ; il n’a accès ni à l’intérieur ni à l’extérieur. Il en va de même pour une sphère de dimension 2. L’intérieur de la sphère et son extérieur n’existent que dans la représentation auxiliaire.
+
+La même construction donne une sphère de dimension 3. On introduit une coordonnée supplémentaire, notée par exemple \(w\), et l’on écrit
+\begin{equation}
+x^2+y^2+z^2+w^2=R^2,
+\end{equation}
+et, dans le cas unité,
+\begin{equation}
+x^2+y^2+z^2+w^2=1.
+\end{equation}
+Une sphère de dimension 3 est plus difficile à visualiser, car l’artifice fait alors appel à quatre dimensions, mais les mathématiques ne sont guère plus compliquées.
+
+La notation usuelle est \(\Omega_n\) pour la sphère de dimension \(n\). Ainsi, \(\Omega_1\) désigne la sphère de dimension 1, \(\Omega_2\) celle de dimension 2, et \(\Omega_3\) celle de dimension 3.
+
+\section{Métriques sur la sphère}
+
+Une description intrinsèque est plus utile : on décrit la sphère à l’aide de coordonnées définies sur la sphère elle-même.
+
+Pour la sphère unité de dimension 1, une seule coordonnée, \(\phi\), suffit, avec \(0\leq \phi \leq 2\pi\). Sa métrique est
+\begin{equation}
+ds^2=d\phi^2.
+\end{equation}
+On écrit aussi
+\begin{equation}
+d\Omega_1^2=d\phi^2.
+\end{equation}
+
+La sphère unité de dimension 2 peut être décrite comme une famille de sphères de dimension 1. Un angle, \(\phi\), parcourt toujours chaque cercle, tandis qu’un second angle, \(\theta\), va d’une extrémité de la sphère à l’autre. Ce second angle varie de \(0\) à \(\pi\). Le déplacement dans la direction \(\theta\) contribue par \(d\theta^2\). Le parcours dans la direction \(\phi\) s’effectue sur un cercle de rayon \(\sin\theta\). On a donc
+\begin{equation}
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\phi^2
+\end{equation}
+ou
+\begin{equation}
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\Omega_1^2.
+\end{equation}
+
+On construit la sphère de dimension 3 de la même façon, cette fois comme une famille de sphères de dimension 2. Introduisons une autre coordonnée, \(\alpha\). On obtient alors
+\begin{equation}
+d\Omega_3^2=d\alpha^2+\sin^2\alpha\,d\Omega_2^2.
+\end{equation}
+En développant, cela donne
+\begin{equation}
+d\Omega_3^2=d\alpha^2+\sin^2\alpha\left(d\theta^2+\sin^2\theta\,d\phi^2\right).
+\end{equation}
+Ici, \(\alpha\) va d’une extrémité de taille nulle à l’autre, donc \(0\leq \alpha \leq \pi\).\editorialnote{À 00:17:24, l’enregistrement semble brièvement dire ``de zéro à deux pi,'' mais la construction qui l’entoure et le facteur explicite \(\sin^2\alpha\) imposent que la nouvelle coordonnée aille d’une extrémité, où les sphères de dimension inférieure ont une taille nulle, à l’autre.}
+
+La forme récursive générale est
+\begin{equation}
+d\Omega_n^2=d\alpha^2+\sin^2\alpha\,d\Omega_{n-1}^2.
+\end{equation}
+
+Une fois ce point de vue adopté, on peut oublier la représentation par plongement. Une sphère de dimension 1 se décrit avec une coordonnée, une sphère de dimension 2 avec deux, une sphère de dimension 3 avec trois, et ainsi de suite. La géométrie se suffit à elle-même.
+
+Cette géométrie est particulière parce qu’elle est homogène. On pourrait déformer la métrique en remplaçant \(\sin^2\theta\) par une autre fonction qui s’annule toujours aux deux extrémités. On obtiendrait alors une surface fermée déformée, par exemple un ellipsoïde. Elle ne serait toutefois plus homogène. La sphère est homogène parce que tous ses points sont équivalents.
+
+Pour obtenir une sphère de rayon \(A\) plutôt que de rayon unité, on multiplie la métrique unité par \(A^2\) :
+\begin{equation}
+ds^2=A^2\,d\Omega_3^2.
+\end{equation}
+Le carré est nécessaire, car la métrique mesure le carré de la distance.
+
+Une brève parenthèse sur la sphère de dimension zéro. En extrapolant d’un cran en arrière, on obtient
+\begin{equation}
+x^2=1,
+\end{equation}
+dont les solutions sont les deux points \(x=\pm 1\). La sphère unité de dimension zéro se réduit donc à deux points.
+
+\section{Un univers FRW sphérique}
+
+Nous nous intéressons maintenant non plus à l’espace seul, mais à l’espace-temps. La représentation pertinente est celle d’une sphère de dimension 3 dont le rayon varie avec le temps.
+
+Il faut garder à l’esprit une mise en garde : le temps est différent. Il ne faut pas considérer l’univers en expansion comme une sphère plongée dans un espace de dimension supérieure, où le temps jouerait le rôle d’une coordonnée de plongement supplémentaire.
+
+Dans cette perspective, l’intervalle d’espace-temps s’écrit
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\,d\Omega_3^2.
+\end{equation}
+C’est la métrique FRW d’un univers dont l’espace est sphérique. Par rapport à la sphère statique, le seul nouvel élément est que le rayon devient une fonction du temps, \(a(t)\).
+
+Il est commode de choisir les coordonnées de sorte que nous soyons à l’un des pôles. Ce point n’a rien de particulier ; c’est simplement une convention. On peut alors interpréter \(\alpha\) comme une coordonnée radiale qui nous éloigne sur la sphère unité. Ce n’est pas une distance radiale exprimée en kilomètres. C’est une mesure angulaire sans dimension sur la sphère unité, mais elle joue le rôle d’une distance radiale dans la géométrie.
+
+À l’exception des concentrations locales de matière, telles que les galaxies et les étoiles, c’est toute la géométrie d’un univers FRW spatialement sphérique. Sa courbure spatiale est positive, ce qu’indique la convention de signe
+\begin{equation}
+k=+1.
+\end{equation}
+Rien n’est en soi ``plus un.'' Cela signifie simplement que la courbure spatiale est positive.
+
+\section{Observer depuis une sphère}
+
+À quoi ressemble une telle sphère lorsqu’on l’observe depuis l’un de ses points ? C’est là qu’intervient la projection stéréographique.
+
+Considérons une sphère de dimension 2 tangente à un plan infini au pôle Sud. Choisissons un point sur la sphère. Traçons la droite qui relie le pôle Nord à ce point et prolongeons-la jusqu’à son intersection avec le plan. Ainsi, chaque point de la sphère est associé à un point du plan. Le pôle Sud se projette à l’origine du plan. Le pôle Nord est le point exceptionnel : lorsqu’on s’en approche par différentes directions, son image s’éloigne à l’infini, selon la direction considérée. On le traite donc comme le point à l’infini.
+
+Si l’on place des ``continents'' de même taille à différents endroits de la sphère, leurs images sur le plan deviennent de plus en plus grandes à mesure qu’on s’approche du pôle Nord. Un observateur situé au pôle Sud verrait donc les objets lointains sous des angles plus grands que dans un espace plat. En courbure positive, un objet connu paraît trop grand par rapport à ce que prévoit la géométrie euclidienne.
+
+Voilà l’idée observationnelle fondamentale. On déduit la courbure de la relation entre distance, taille et taille angulaire. Les galaxies ne sont pas de bons étalons pour mesurer de très grandes distances, mais le raisonnement est bien celui-là.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:54}
+\audiencequestion{Faut-il aussi connaître la distance, et pas seulement la taille angulaire ?}
+\lecturerresponse{Oui. L’angle seul ne suffit pas. Il faut connaître l’angle et la distance.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:18}
+\audiencequestion{Les cercles tracés sur la surface de la sphère se projettent-ils en cercles ?}
+\lecturerresponse{Oui. Les cercles se projettent en cercles. C’est l’une des propriétés particulières de la projection stéréographique.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:47:02}
+\audiencequestion{Un continent conserverait-il sa forme sous cette projection ?}
+\lecturerresponse{Il faut distinguer deux affirmations. La première est que les cercles se projettent en cercles. La seconde, plus faible, est que les formes suffisamment petites conservent localement leur forme parce que les angles sont préservés. La transformation est conforme : elle préserve les angles, mais pas les tailles relatives.}
+\end{classroomqa}
+
+\section{Courbure négative homogène}
+
+On introduit le cas de courbure négative homogène à l’aide de sa métrique.
+
+L’analogue de la sphère en courbure négative est l’espace hyperbolique. Dans le même esprit récursif que précédemment, on obtient sa métrique en remplaçant \(\sin\alpha\) par \(\sinh\alpha\) :
+\begin{equation}
+d\mathcal H_n^2=d\alpha^2+\sinh^2\alpha\,d\Omega_{n-1}^2.
+\end{equation}
+La partie angulaire de dimension inférieure reste la métrique de la sphère unité, \(d\Omega_{n-1}^2\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:51}
+\audiencequestion{Dans la métrique, la différentielle de dimension inférieure est-elle toujours celle de la sphère ?}
+\lecturerresponse{Oui. Cette partie de dimension inférieure est la métrique ordinaire de la sphère unité. Le changement porte sur le facteur \(\sinh^2\alpha\) qui la précède.}
+\end{classroomqa}
+
+Le sinus hyperbolique est défini par
+\begin{equation}
+\sinh\alpha=\frac{e^\alpha-e^{-\alpha}}{2}.
+\end{equation}
+Le signe moins est important ; pendant le cours, un étudiant corrige immédiatement l’erreur.
+
+La plage de valeurs de la coordonnée est également très différente, et c’est essentiel. Pour la sphère, la nouvelle coordonnée va d’une extrémité à l’autre et s’arrête à \(\pi\). Ici,
+\begin{equation}
+0\leq \alpha<\infty.
+\end{equation}
+Le sinus ordinaire augmente, puis revient à zéro. Le sinus hyperbolique commence de la même manière au voisinage de \(\alpha=0\), puis croît exponentiellement.
+
+Cela signifie que les sphères de dimension inférieure qui nous entourent deviennent de plus en plus grandes à mesure que l’on s’éloigne. Dans cette géométrie, le ciel ne commence pas par s’agrandir puis rétrécir à mesure que le rayon augmente : il continue de s’agrandir.
+
+En trois dimensions spatiales, la forme FRW correspondante est
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\,d\mathcal H_3^2,
+\end{equation}
+et le signe est indiqué par
+\begin{equation}
+k=-1.
+\end{equation}
+
+\section{La représentation en disque et sa signification}
+
+La courbure négative devient intuitive dans la représentation en disque rendue célèbre par Escher, en particulier dans \emph{Limite circulaire numéro quatre}. L’analogie avec la projection stéréographique est utile, mais le comportement est inverse.
+
+Pour la sphère, la projection semble infinie alors que la géométrie réelle est finie. Dans le cas de courbure négative, la représentation en disque semble finie alors que la géométrie réelle est infinie. Des ``continents'' ou des ``galaxies'' de même taille semblent de plus en plus petits à mesure qu’on approche du bord, mais ils ont tous la même taille géométrique. Si l’on mesure la distance en comptant le nombre de morceaux égaux que l’on traverse, le bord est à une distance infinie.
+
+Ainsi, en courbure négative, un objet connu paraît trop petit par rapport à l’espace plat. Il sous-tend un angle trop faible.
+
+La géométrie reste homogène. Même si la représentation fait paraître minuscules les éléments proches du bord, tout observateur placé ailleurs verrait la même géométrie intrinsèque.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:42}
+\audiencequestion{Un observateur placé dans l’un de ces cercles verrait-il un motif semblable ?}
+\lecturerresponse{Oui, exactement la même chose. L’espace est homogène.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:07:03}
+\audiencequestion{Dans le cas sphérique, les objets lointains semblent trop grands, tandis qu’ici ils semblent trop petits ?}
+\lecturerresponse{Oui. En courbure positive, un objet connu sous-tend un angle trop grand par rapport à l’espace plat. En courbure négative, il sous-tend un angle trop petit.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:08:09}
+\audiencequestion{La projection de type stéréographique est-elle pertinente parce qu’un astronome peut la reconstruire à partir d’observations ?}
+\lecturerresponse{Oui. L’astronome joue en quelque sorte le rôle d’un géomètre qui relève des triangles dans le ciel. Pour saisir immédiatement le point géométrique, on peut laisser de côté la dépendance temporelle et se concentrer sur les angles et les distances.}
+\end{classroomqa}
+
+Il existe aussi une représentation locale utile. On peut dessiner une petite région à courbure négative sous la forme d’une surface en selle dans l’espace ordinaire à trois dimensions. Mais seules de petites régions peuvent être représentées ainsi ; on ne peut pas plonger globalement le plan hyperbolique comme une belle surface ordinaire dans l’espace euclidien à trois dimensions.
+
+\section{Le cas plat}
+
+Entre les cas de courbure positive et négative se trouve l’espace plat. On peut le concevoir comme une limite, mais il suffit de penser à l’espace euclidien plat ordinaire.
+
+Sa forme FRW est
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\left(dx^2+dy^2+dz^2\right),
+\end{equation}
+avec
+\begin{equation}
+k=0.
+\end{equation}
+
+Voici les trois géométries FRW homogènes :
+\begin{align}
+k=+1 &: \text{positive spatial curvature},\\
+k=0 &: \text{flat space},\\
+k=-1 &: \text{negative spatial curvature}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:07}
+\audiencequestion{Si l’on projette la géométrie sur un plan et qu’on suit un signal, la vitesse projetée de la lumière varierait-elle d’un endroit à l’autre ?}
+\lecturerresponse{Oui, dans la projection, elle varierait. Sur la projection sphérique, elle semblerait augmenter à mesure qu’on s’éloigne ; dans le disque de courbure négative, elle semblerait diminuer à mesure qu’on approche du bord. Cette variation appartient à la représentation, et non à la physique sous-jacente.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:05}
+\audiencequestion{A-t-on réellement utilisé l’observation d’objets lointains de cette façon pour déterminer si l’espace est plat ?}
+\lecturerresponse{Oui, mais ce sont en réalité les informations angulaires qui sont utilisées. On ne détermine pas si l’espace est plat en essayant de mesurer à quelle vitesse la lumière semble se déplacer dans la projection.}
+\end{classroomqa}
+
+\section{Retour aux équations cosmologiques}
+
+Après la pause vient le lien entre les équations cosmologiques déjà étudiées et les équations d’Einstein. À ce stade, le fragment de métrique spatiale plate est encore inscrit au tableau.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_05_figure_02.png}
+\caption{Fragment de la métrique FRW plate.}
+\lectureframe{01:18:18}
+\end{figure}
+
+Commençons par un très bref rappel de mécanique newtonienne. Plaçons-nous au centre. Considérons une galaxie qui s’éloigne selon la loi de Hubble. D’après le théorème de Newton pour une distribution à symétrie sphérique, seule la masse contenue à l’intérieur de la sphère dont le rayon correspond à la distance de la galaxie contribue à la force exercée sur celle-ci. Trois cas sont alors possibles : la galaxie se déplace au-dessus de la vitesse de libération, au-dessous de celle-ci ou exactement à cette vitesse.
+
+On rappelle ensuite que, pour la matière ordinaire non relativiste, la densité varie comme la masse divisée par \(a^3\) ; pour le rayonnement, elle varie comme \(1/a^4\) ; quant à l’énergie du vide, elle ne change pas lorsque le rayon de la sphère varie.
+
+Dans le traitement newtonien précédent, l’équation cosmologique comportait un terme de densité et, si l’on n’était pas exactement dans le cas de la vitesse de libération, un terme constant supplémentaire proportionnel à \(1/a^2\). L’exposé précédent a, pour l’essentiel, posé ce terme égal à zéro. Empiriquement, il est petit, mais rien ne justifie de l’omettre sur le plan conceptuel.
+
+\section{Les équations d’Einstein et la composante \(00\)}
+
+L’étape suivante consiste à examiner les équations de champ d’Einstein. Le membre de gauche contient la géométrie, construite à partir de la courbure de l’espace-temps. Le membre de droite contient le tenseur énergie-impulsion, source du champ gravitationnel. Avec la normalisation utilisée dans le cours, on écrit
+\begin{equation}
+R^{\mu\nu}-\frac{1}{2}g^{\mu\nu}R=4\pi G\,T^{\mu\nu}.
+\end{equation}
+\editorialnote{Sur la ligne visible au tableau, le facteur \(\tfrac12\) est illisible, mais la correction orale apportée à 01:33:36 le rétablit. L’équation ci-dessus tient compte de cette correction tout en conservant la normalisation \(4\pi G\) du cours.}
+
+Il n’est pas nécessaire d’utiliser les dix composantes indépendantes. À ce stade, tant d’hypothèses ont déjà été posées --- l’homogénéité, la forme FRW et un unique facteur d’échelle dépendant du temps --- qu’il ne reste qu’une seule fonction arbitraire, à savoir \(a(t)\). Le choix naturel est la composante temporelle-temporelle, car \(T^{00}\) correspond à la densité d’énergie \(\rho\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_05_figure_05.png}
+\caption{Équation de champ d’Einstein et composante \(00\).}
+\lectureframe{01:30:54}
+\end{figure}
+
+On se concentre donc sur
+\begin{equation}
+R^{00}-\frac{1}{2}g^{00}R=4\pi G\,\rho.
+\end{equation}
+
+Le membre de droite est la densité d’énergie. Celui de gauche décrit la géométrie.
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:09}
+\audiencequestion{Qu’en est-il des autres composantes du tenseur énergie-impulsion ?}
+\lecturerresponse{Elles ne sont pas nulles en général. Les composantes spatiales-spatiales peuvent représenter la pression. Dans un univers dominé par la matière, la pression est nulle ; dans un univers dominé par le rayonnement, elle vaut un tiers de la densité d’énergie ; pour l’énergie du vide, on écrit \(P=w\rho\) avec \(w=-1\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:24}
+\audiencequestion{Donc, s’il n’y avait que de la matière, les autres composantes de \(T^{\mu\nu}\) seraient-elles nulles ?}
+\lecturerresponse{Pour une matière sans pression, oui, les composantes de pression sont nulles.}
+\end{classroomqa}
+
+\section{Résultat du calcul d’Einstein}
+
+Le calcul complet de la courbure n’est pas effectué au tableau. Ce qui importe, c’est le résultat obtenu en substituant une métrique FRW dans le tenseur d’Einstein.
+
+Un premier type de terme découle simplement de la dépendance temporelle du facteur d’échelle. Même si l’espace était plat, un facteur d’échelle dépendant du temps produirait tout de même une courbure de l’espace-temps. Cette contribution est proportionnelle à
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2.
+\end{equation}
+
+Le second type de terme provient de la courbure spatiale elle-même. Même si le facteur d’échelle était constant dans le temps, l’espace courbe contribuerait toujours à la courbure de l’espace-temps. Dans une géométrie à courbure homogène simple, la courbure varie comme l’inverse du carré du rayon de courbure ; elle contribue donc par un terme proportionnel à
+\begin{equation}
+\frac{k}{a^2},
+\end{equation}
+avec un signe positif pour la sphère, négatif pour le cas hyperbolique, et nul pour l’espace plat.
+
+\begin{classroomqa}
+\lecturetimestamp{01:36:53}
+\audiencequestion{Ne devrait-il pas aussi y avoir un facteur tel qu’un rayon de courbure ?}
+\lecturerresponse{C’est déjà le facteur \(1/a^2\). Pour ces géométries simples à courbure homogène, la courbure est simplement l’inverse du carré du rayon de courbure.}
+\end{classroomqa}
+
+Les coefficients sont ajustés au fur et à mesure, avec une vérification partielle à l’aide du résultat newtonien précédent. On aboutit à\footnote{Cette forme affichée de l’équation de Friedmann rassemble la discussion orale, avec ses corrections successives des coefficients, et la comparaison avec le résultat newtonien précédent autour de 01:32:35--01:36:53.}
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2+\frac{k}{a^2}=\frac{8\pi G}{3}\rho,
+\end{equation}
+ou, de manière équivalente,
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}.
+\end{equation}
+
+Cette forme relie les trois géométries FRW à la dynamique cosmologique étudiée précédemment.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:52}
+\audiencequestion{\(k\) pourrait-il prendre n’importe quelle valeur si l’on redéfinissait \(a\) ?}
+\lecturerresponse{Dans le cas plat, il n’existe pas d’échelle naturelle unique pour \(a\), donc on peut la redimensionner, mais \(k\) reste nul. Dans les cas sphérique et à courbure négative, il existe une échelle de courbure naturelle. Si l’on choisit \(a(t)\) comme rayon de courbure naturel, alors \(k\) vaut simplement \(+1\) ou \(-1\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:00}
+\audiencequestion{Dans cette équation finale, \(k\) vaut-il \(+1\), \(-1\) ou \(0\) ?}
+\lecturerresponse{Oui. Il vaut \(+1\) pour la sphère, \(-1\) pour le cas hyperbolique et \(0\) pour l’espace plat.}
+\end{classroomqa}
+
+Le traitement newtonien ne nous a pas induits en erreur : il a fourni la même équation fondamentale. La relativité générale en apporte l’interprétation. Du point de vue newtonien, la constante supplémentaire distingue les cas où la vitesse est supérieure à la vitesse de libération, inférieure à celle-ci, ou exactement égale à celle-ci. Du point de vue d’Einstein, le même signe nous renseigne sur la géométrie de l’espace lui-même.
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:46}
+\audiencequestion{Comment cela fonctionnait-il avant l’introduction d’une constante cosmologique ?}
+\lecturerresponse{Avant l’introduction de la constante cosmologique, il existait un lien étroit entre le comportement associé à la vitesse de libération et la géométrie spatiale. Si \(k=+1\), l’espace est à courbure positive et le mouvement est inférieur à la vitesse de libération ; l’univers peut donc se dilater, puis se recontracter. Si \(k=-1\), l’espace est à courbure négative et le mouvement est supérieur à la vitesse de libération ; l’univers continue donc de se dilater. Si \(k=0\), on se trouve dans le cas limite.}
+\end{classroomqa}
+
+Le même signe, \(k\), peut donc s’interpréter de deux façons : comme une classification dynamique du mouvement et comme le signe de la courbure de l’espace.
