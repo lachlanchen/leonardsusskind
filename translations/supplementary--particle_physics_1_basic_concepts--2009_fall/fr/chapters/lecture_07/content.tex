@@ -1,0 +1,660 @@
+\chapter{Moment cinétique, spin et statistiques}
+
+\section{De la rotation ordinaire au spin intrinsèque}
+
+Le moment cinétique est le sujet formel, mais c’est le spin qui nous intéresse vraiment. Le spin est l’une des propriétés les plus simples et les plus contre-intuitives des particules élémentaires, et sa structure découle des mathématiques du moment cinétique.
+
+Le moment cinétique est un vecteur. Sa direction est celle de l’axe de rotation. Deux sens sont possibles le long de cet axe ; il faut donc adopter une convention pour les distinguer : enroulez les doigts de la main droite dans le sens de la rotation, et le pouce indique la direction du vecteur moment cinétique. C’est une définition, pas un théorème.
+
+La norme dépend de la quantité de masse, de sa répartition, de la taille du système et de sa vitesse angulaire. La répartition de la masse et la taille sont prises en compte dans le moment d’inertie. Un objet grand et un objet petit peuvent donc avoir le même moment cinétique tout en tournant à des vitesses et avec des énergies très différentes.
+
+Un objet composite ordinaire peut posséder deux types de moment cinétique conceptuellement différents. Une tasse qui décrit un cercle autour d’un axe extérieur a un moment cinétique parce que son centre de masse tourne autour de cet axe, même si la tasse ne tourne autour d’aucun axe qui lui soit propre. C’est le moment cinétique orbital. Le spin désigne une rotation autour d’un axe interne.
+
+La définition la plus nette se donne dans le référentiel du centre de masse. Plaçons-nous dans le référentiel où le centre de masse est au repos, de sorte que la quantité de mouvement totale soit nulle. Tout moment cinétique qui subsiste dans ce référentiel est un moment cinétique de spin. L’objet n’a pas besoin d’être immobile intérieurement ; seul son centre de masse est au repos.
+
+Pour un ballon de basket, cette distinction ne pose aucune difficulté. On reconnaît sans peine un ballon de basket au repos et le même ballon mis en rotation comme un seul et même objet dans deux états différents. La mécanique quantique complique ce tableau, car le moment cinétique est discret. Il n’existe pas de succession continue de valeurs permises reliant un état de moment cinétique nul au premier état en rotation. On peut donc se demander si ce premier état en rotation est le même objet en mouvement ou un objet entièrement différent.
+
+La formulation relève en partie d’une convention, mais la question physique est précise : quelle énergie faut-il pour atteindre le premier état de rotation non nul ? Si l’écart est faible, l’objet excité reste facilement reconnaissable. Si cet écart est immense, l’excitation peut transformer radicalement l’objet. Tenter de donner à un atome une excitation rotationnelle trop importante peut lui arracher ses électrons et le détruire, au lieu de laisser le même atome tourner tranquillement.
+
+Considérons maintenant un électron, en laissant provisoirement de côté son spin intrinsèque connu. Peut-on mettre un électron en rotation autour d’un axe interne ? Un point mathématique n’a pas de structure interne visible qui puisse tourner, mais l’expérience n’établit pas la taille de l’électron en lui fournissant une petite surface rigide dont on pourrait observer la rotation. Si l’électron a une taille finie extrêmement petite, sa première excitation rotationnelle supplémentaire pourrait simplement demander trop d’énergie pour être accessible. Comme l’énergie augmente quand la taille diminue, l’énergie requise pourrait être astronomique, peut-être même de l’ordre de l’énergie de Planck. Cette estimation est délibérément prudente.\footnote{Un court passage qui suit immédiatement cette estimation n’est pas assez intelligible pour permettre d’en proposer une reconstruction substantielle.}
+
+Pour une particule élémentaire, la norme du spin est donc considérée comme une caractéristique fixe. Les électrons ne présentent pas une gamme de normes de spin intrinsèque de plus en plus grandes. Si une excitation par ailleurs semblable à un électron possédait un spin total différent, elle serait classée comme une particule différente.
+
+Une norme fixe ne fixe pas la direction. Imaginons une particule appelée \emph{spintron}, identifiée en partie par la norme de son moment cinétique. Si son spin pointe selon un axe, l’invariance par rotation exige qu’une particule du même type puisse aussi avoir son spin orienté selon un autre axe. Aucune direction de l’espace n’est intrinsèquement privilégiée. La quantité de spin reste fixe, mais son orientation peut changer. Le problème présente donc deux éléments apparemment contradictoires : une norme quantifiée et des directions librement orientables. L’algèbre du moment cinétique va montrer comment ils peuvent coexister.
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:25}
+\audiencequestion{Pourquoi faut-il de l’énergie pour mettre une petite particule en rotation ?}
+\lecturerresponse{Pour un objet de masse \(M\) et de rayon caractéristique \(R\), le moment d’inertie est de l’ordre de
+\begin{equation}
+I\sim cMR^2,
+\end{equation}
+où le facteur numérique \(c\) dépend de la forme et de la répartition de la masse. Si la matière proche de la périphérie se déplace à la vitesse \(v\), sa quantité de mouvement ordinaire est de l’ordre de \(Mv\), et le moment cinétique est le produit de la quantité de mouvement par la distance :
+\begin{equation}
+L\sim MvR.
+\end{equation}
+De façon équivalente, \(L=I\omega\) avec \(v\sim\omega R\). L’énergie cinétique de rotation est
+\begin{equation}
+E_{\mathrm{rot}}=\frac{L^2}{2I}.
+\end{equation}
+À \(M\) et \(L\) fixés,
+\begin{equation}
+E_{\mathrm{rot}}\sim\frac{L^2}{2cMR^2}\propto\frac{1}{R^2}.
+\end{equation}
+Plus l’objet est petit, plus il faut d’énergie pour lui donner un moment cinétique donné. Cette dépendance en l’inverse du carré est classique. Le fait supplémentaire propre à la mécanique quantique est que le moment cinétique varie par étapes discrètes ; le premier saut permis ne peut donc pas être arbitrairement petit.}
+\end{classroomqa}
+
+Les mathématiques qui vont suivre sont abstraites et, au départ, plutôt contre-intuitives. Leur intérêt tient à ce qu’un petit nombre de règles algébriques permet d’obtenir des faits vérifiables expérimentalement.
+
+\section{Moment cinétique orbital}
+
+Commençons par une particule qui décrit une orbite circulaire autour d’une origine. La norme de son moment cinétique est le produit de sa quantité de mouvement par la distance perpendiculaire à l’origine. Dans un plan, on peut appeler positif un sens de circulation et négatif le sens inverse. Le signe indique le sens du vecteur moment cinétique par rapport à l’axe choisi.
+
+Il ne s’agit pas encore de spin. La particule a un moment cinétique parce qu’elle possède une quantité de mouvement ordinaire. Plaçons maintenant deux particules aux extrémités opposées d’un diamètre et faisons-les tourner dans le même sens. Leurs quantités de mouvement ordinaires s’annulent ; le centre de masse est donc au repos. Mais leurs moments cinétiques pointent dans le même sens et s’additionnent. Le système a une quantité de mouvement totale nulle et un moment cinétique total non nul : c’est un modèle classique du spin.
+
+Soit la position d’une particule par rapport à l’origine
+\begin{equation}
+\vec r=(x,y,z)=(x_1,x_2,x_3),
+\end{equation}
+et sa quantité de mouvement
+\begin{equation}
+\vec p=(p_x,p_y,p_z)=(p_1,p_2,p_3).
+\end{equation}
+Le moment cinétique est le produit vectoriel
+\begin{equation}
+\vec L=\vec r\times\vec p.
+\end{equation}
+Inverser l’ordre des facteurs inverse le vecteur : \(\vec p\times\vec r=-\vec r\times\vec p\). La convention usuelle est \(\vec r\times\vec p\), son sens étant fixé par la règle de la main droite.\footnote{\raggedright Image de la vidéo du cours \nolinkurl{lecture_07_figure_02.png}, 00:18:49.\par}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_02.png}
+\par
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-0.6,0) -- (4.8,0) node[right] {$x$};
+\draw[->] (0,-0.6) -- (0,3.8) node[above] {$y$};
+\coordinate (P) at (3.2,2.3);
+\draw[->,thick] (0,0) -- (P) node[midway,above left] {$\vec r$};
+\draw[dashed] (P) -- (3.2,0);
+\draw[dashed] (P) -- (0,2.3);
+\draw[->,thick] (P) -- ++(-1.0,1.25) node[above] {$\vec p$};
+\node at (4.15,2.75) {$\vec L=\vec r\times\vec p$};
+\end{tikzpicture}
+\caption{Pour une particule située en \(\vec r\) et de quantité de mouvement \(\vec p\), le moment cinétique \(\vec L=\vec r\times\vec p\) est perpendiculaire au plan qu’ils définissent.}
+\lectureframe{00:18:49}
+\end{figure}
+
+En coordonnées cartésiennes,
+\begin{equation}
+\begin{aligned}
+L_x&=yp_z-zp_y,\qquad
+L_y=zp_x-xp_z,\\
+L_z&=xp_y-yp_x.
+\end{aligned}
+\end{equation}
+Il suffit de retenir la première formule et de faire défiler les indices
+\[
+x\longrightarrow y\longrightarrow z\longrightarrow x.
+\]
+En faisant défiler à la fois l’indice de la composante et les indices du membre de droite, on obtient la formule suivante sans changer le signe relatif. Ce moyen mnémotechnique est utile précisément parce qu’il est facile d’inverser le signe par inadvertance.
+
+Pour une particule ponctuelle, \(\vec r\times\vec p\) est le moment cinétique orbital par rapport à l’origine choisie. Pour un système composite, on additionne vectoriellement les moments cinétiques de tous ses constituants :
+\begin{equation}
+\vec L_{\mathrm{tot}}=\sum_a \vec r_a\times\vec p_a.
+\end{equation}
+Lorsque cette somme est évaluée dans le référentiel du centre de masse, elle peut rester non nulle même si
+\[
+\sum_a\vec p_a=0.
+\]
+Ce moment cinétique résiduel est le spin du système composite.
+
+\section{Opérateurs quantiques et commutateurs canoniques}
+
+En mécanique quantique, les grandeurs observables sont représentées par des opérateurs. La position, la quantité de mouvement et chaque composante du moment cinétique sont donc des opérateurs. Il n’est pas nécessaire ici de connaître leur réalisation détaillée en tant qu’opérateurs différentiels. Les relations de commutation suffisent pour déduire le spectre du moment cinétique.
+
+Pour deux opérateurs \(A\) et \(B\),
+\begin{equation}
+[A,B]=AB-BA.
+\end{equation}
+Si deux observables commutent, elles peuvent être spécifiées simultanément. Si elles ne commutent pas, la mécanique quantique interdit de leur attribuer simultanément des valeurs bien définies.
+
+Les trois coordonnées de position peuvent être mesurées simultanément ; les composantes de la position commutent donc :
+\begin{equation}
+[x_i,x_j]=0.
+\end{equation}
+En particulier, tout opérateur commute avec lui-même. Il n’aurait pas de sens qu’une observable soit incompatible avec une autre mesure de cette même observable.
+
+De même, les composantes de la quantité de mouvement commutent :
+\begin{equation}
+[p_i,p_j]=0.
+\end{equation}
+Une composante de la position commute avec une composante de la quantité de mouvement dirigée selon un autre axe, mais pas avec la composante correspondante de la quantité de mouvement. Les trois relations canoniques s’écrivent ensemble
+\begin{equation}
+[x_i,x_j]=0,\qquad
+[p_i,p_j]=0,\qquad
+[x_i,p_j]=i\hbar\,\delta_{ij}.
+\end{equation}
+Ainsi, par exemple,
+\[
+[x,p_y]=0,\qquad [x,p_x]=i\hbar,
+\]
+et inverser l’ordre inverse le signe :
+\begin{equation}
+[p_j,x_i]=-i\hbar\,\delta_{ij}.
+\end{equation}
+
+Le moment cinétique et la constante de Planck ont les mêmes dimensions. Le moment cinétique est le produit d’une distance par une quantité de mouvement, tandis que la relation d’incertitude a la forme dimensionnelle
+\begin{equation}
+\Delta x\,\Delta p\sim\hbar
+\end{equation}
+à un facteur numérique usuel près dans l’inégalité précise. Il est donc naturel que le moment cinétique soit quantifié par unités de \(\hbar\), même si cette quantification n’a pas encore été déduite.
+
+\section{Déduction de l’algèbre du moment cinétique}
+
+La première étape consiste à calculer le commutateur de deux composantes du moment cinétique. À partir de
+\[
+L_x=yp_z-zp_y,\qquad
+L_y=zp_x-xp_z,
+\]
+on obtient
+\begin{align}
+[L_x,L_y]
+&=[yp_z-zp_y,\;zp_x-xp_z] \\
+&=[yp_z,zp_x]-[yp_z,xp_z] \notag\\
+&\quad{}-[zp_y,zp_x]+[zp_y,xp_z].
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:41}
+\audiencequestion{Peut-on retrouver les formules des composantes en faisant défiler les symboles de gauche à droite, plutôt qu’en faisant défiler les trois équations de haut en bas ?}
+\lecturerresponse{Oui. Les deux moyens mnémotechniques fondés sur le défilement conviennent. Ils servent uniquement à produire les composantes dans le bon ordre cyclique tout en gardant le signe correct.}
+\end{classroomqa}
+
+On peut comprendre un commutateur en se demandant si les facteurs d’un produit peuvent être déplacés de part et d’autre des facteurs de l’autre produit. Dans
+\[
+[yp_z,xp_z],
+\]
+l’opérateur \(y\) commute avec \(x\) et \(p_z\), tandis que \(p_z\) commute avec \(x\) et avec lui-même. Rien ne s’y oppose ; ce terme s’annule donc. Le même raisonnement donne
+\[
+[zp_y,zp_x]=0.
+\]
+Seules deux paires de produits subsistent.
+
+Pour la première, le seul obstacle est le passage de \(p_z\) à travers \(z\) :
+\begin{align}
+[yp_z,zp_x]
+&=yp_zzp_x-zp_xyp_z \\
+&=y(p_zz-zp_z)p_x \\
+&=y[p_z,z]p_x \\
+&=-i\hbar\,yp_x.
+\end{align}
+L’ordre des termes dans le commutateur canonique compte :
+\[
+[p_z,z]=-[z,p_z]=-i\hbar.
+\]
+
+Pour l’autre paire restante, les signes moins dans les définitions de \(L_x\) et \(L_y\) se multiplient et donnent un signe plus. Le seul obstacle est le passage de \(z\) à travers \(p_z\) :
+\begin{align}
+[zp_y,xp_z]
+&=zp_yxp_z-xp_zzp_y \\
+&=x(zp_z-p_zz)p_y \\
+&=x[z,p_z]p_y \\
+&=i\hbar\,xp_y.
+\end{align}
+En réunissant les deux contributions,
+\begin{align}
+[L_x,L_y]
+&=-i\hbar\,yp_x+i\hbar\,xp_y \\
+&=i\hbar(xp_y-yp_x) \\
+&=i\hbar L_z.
+\end{align}
+
+C’est là la simplification importante. Le commutateur de deux composantes du moment cinétique donne la troisième composante ; aucun opérateur de position ou de quantité de mouvement ne subsiste. Une permutation cyclique donne
+\begin{equation}
+\begin{aligned}
+[L_x,L_y]&=i\hbar L_z,\qquad
+[L_y,L_z]=i\hbar L_x,\\
+[L_z,L_x]&=i\hbar L_y.
+\end{aligned}
+\end{equation}
+De façon équivalente,
+\begin{equation}
+[L_i,L_j]=i\hbar\,\epsilon_{ijk}L_k.
+\end{equation}
+
+L’algèbre se referme sur les opérateurs du moment cinétique eux-mêmes. Une fois ces relations obtenues, on peut laisser de côté les \(x_i\) et \(p_i\) qui ont servi à les déduire. La même algèbre s’applique lorsque le moment cinétique total est une somme sur de nombreux constituants. Elle s’applique en particulier dans le référentiel du centre de masse, où le moment cinétique résiduel est le spin. On peut donc utiliser les commutateurs du moment cinétique de façon abstraite, sans d’abord construire le spin comme le mouvement de petites parties constituantes.
+
+Le choix des axes \(x\), \(y\) et \(z\) est arbitraire. Si l’on passe à tout autre ensemble d’axes cartésiens inertiels mutuellement perpendiculaires, les composantes primées obéissent aux mêmes relations :
+\begin{equation}
+[L'_x,L'_y]=i\hbar L'_z,
+\end{equation}
+ainsi qu’aux relations cycliques correspondantes. L’algèbre est invariante par rotation ; les prédictions physiques ne peuvent donc dépendre des axes inertiels choisis pour le calcul.
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:09}
+\audiencequestion{Le moment cinétique de spin est-il indépendant des translations aussi bien que des rotations des axes de coordonnées ?}
+\lecturerresponse{Oui. Le spin intrinsèque est indépendant des translations. Le moment cinétique orbital par rapport à une origine peut changer lorsqu’on translate cette origine, mais le spin résiduel dans le référentiel du centre de masse ne dépend pas de cette translation.}
+\end{classroomqa}
+
+L’algèbre abstraite peut produire indéfiniment des identités, dont la plupart sont dépourvues d’intérêt physique. Elle devient utile lorsqu’une identité se traduit par un fait mesurable ou éclaire le sens opérationnel d’une mesure. Jusqu’ici, la construction est encore surtout algébrique. L’étape suivante va dégager la structure discrète du spin.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:42}
+\audiencequestion{Que se passe-t-il si les axes \(x\), \(y\) et \(z\) choisis tournent avec les particules ?}
+\lecturerresponse{La discussion se limite aux référentiels inertiels. Un système de coordonnées en rotation est non inertiel et introduit des effets tels que les forces centrifuge et de Coriolis. Le moment cinétique n’est pas invariant lors du passage à un référentiel en corotation : un système qui tourne visiblement dans un référentiel inertiel peut sembler immobile dans un référentiel qui tourne avec lui. L’invariance par rotation utilisée ici concerne des axes cartésiens inertiels d’orientations différentes, et non des axes qui tournent au cours du temps.}
+\end{classroomqa}
+
+\section{Opérateurs échelle et axe de quantification}
+
+Introduisons les deux combinaisons
+\begin{equation}
+L_+=L_x+iL_y,
+\qquad
+L_-=L_x-iL_y.
+\end{equation}
+Elles sont analogues aux opérateurs de création et d’annihilation de l’oscillateur harmonique. Leur rôle est d’augmenter ou de diminuer une composante choisie du moment cinétique.
+
+L’axe \(z\) n’a rien de particulier, mais il faut choisir un axe pour spécifier une composante. Prenons \(z\) comme axe de quantification et écrivons
+\begin{equation}
+L_z\lvert m\rangle=m\hbar\,\lvert m\rangle.
+\end{equation}
+Ainsi, \(m\) est la composante \(z\) mesurée en unités de \(\hbar\). Pour simplifier les calculs, on pose souvent \(\hbar=1\) ; nous conserverons ici cette constante explicitement.
+
+Le commutateur \([L_+,L_-]\) est proportionnel à \(L_z\), mais il n’est pas nécessaire pour l’argument immédiat. Ce qui importe d’abord, c’est le commutateur de chaque opérateur échelle avec \(L_z\). À partir de
+\[
+[L_x,L_z]=-i\hbar L_y,
+\qquad
+[L_y,L_z]=i\hbar L_x,
+\]
+on obtient
+\begin{align}
+[L_+,L_z]
+&=[L_x+iL_y,L_z] \\
+&=[L_x,L_z]+i[L_y,L_z] \\
+&=-i\hbar L_y+i(i\hbar L_x) \\
+&=-\hbar(L_x+iL_y) \\
+&=-\hbar L_+.
+\end{align}
+Changer le signe du terme \(iL_y\) donne
+\begin{equation}
+[L_-,L_z]=+\hbar L_-.
+\end{equation}
+De façon équivalente, en inversant l’ordre dans chaque commutateur,
+\begin{equation}
+[L_z,L_+]=\hbar L_+,
+\qquad
+[L_z,L_-]=-\hbar L_-.
+\end{equation}
+
+Une seule composante du moment cinétique peut avoir une valeur bien définie à la fois. Deux composantes distinctes ne commutent pas ; elles ne peuvent donc pas être spécifiées simultanément. La composante choisie comme valeur bien définie définit l’axe de quantification ; choisir \(z\) relève de la commodité, et non d’une préférence physique.
+
+Appliquons maintenant \(L_+\) à un état propre de \(L_z\). On peut réécrire le commutateur sous la forme
+\begin{equation}
+L_zL_+=L_+L_z+\hbar L_+.
+\end{equation}
+On obtient donc
+\begin{align}
+L_z\bigl(L_+\lvert m\rangle\bigr)
+&=\bigl(L_+L_z+\hbar L_+\bigr)\lvert m\rangle \\
+&=m\hbar L_+\lvert m\rangle+\hbar L_+\lvert m\rangle \\
+&=(m+1)\hbar\,L_+\lvert m\rangle.
+\end{align}
+À condition qu’il soit non nul, \(L_+\lvert m\rangle\) est un état propre de \(L_z\) dont la valeur propre a augmenté d’une unité de \(\hbar\). De la même façon,
+\begin{equation}
+L_z\bigl(L_-\lvert m\rangle\bigr)
+=(m-1)\hbar\,L_-\lvert m\rangle.
+\end{equation}
+Ainsi, \(L_-\) diminue \(m\) d’une unité.
+
+C’est déjà une conclusion non triviale. Quelle que soit la forme du spectre de \(L_z\), les valeurs voisines sont séparées par des entiers :
+\begin{equation}
+\ldots,\ m-2,\ m-1,\ m,\ m+1,\ m+2,\ \ldots
+\end{equation}
+Les extrémités n’ont pas encore été déterminées.
+
+\section{Multiplets finis et étiquette de spin}
+
+Une espèce de particule donnée a une norme de moment cinétique fixe. Son moment cinétique peut être réorienté, mais augmenter sa norme sans limite finirait par produire un objet différent. Il doit donc exister une valeur maximale possible de la composante selon \(z\) pour cette particule.
+
+Comment un opérateur qui augmente la valeur propre peut-il avoir une valeur maximale ? L’oscillateur harmonique fournit le modèle : son opérateur d’annihilation donne zéro lorsqu’il atteint l’état inférieur. Ici, l’opérateur d’augmentation doit donner zéro lorsqu’il atteint l’état supérieur :
+\begin{equation}
+L_+\lvert m_{\max}\rangle=0.
+\end{equation}
+L’affirmation selon laquelle \(L_+\) augmente une valeur propre ne vaut que si le vecteur qu’il produit est non nul. L’état de poids maximal est précisément l’état exceptionnel où la suite d’augmentations prend fin.
+
+L’invariance par rotation fixe l’extrémité inférieure. Si le moment cinétique peut pointer au maximum selon \(+z\), le même objet physique peut être tourné de sorte qu’il pointe au maximum selon \(-z\). On a donc
+\begin{equation}
+m_{\min}=-m_{\max}.
+\end{equation}
+Le spectre est symétrique par rapport à zéro et ses valeurs sont espacées d’une unité. Il existe deux familles possibles.
+
+Dans la première famille, zéro figure parmi les valeurs :
+\begin{equation}
+\begin{aligned}
+m={}&-m_{\max},-m_{\max}+1,\ldots,-1,0,\\
+&1,\ldots,m_{\max}-1,m_{\max}.
+\end{aligned}
+\end{equation}
+Alors \(m_{\max}\) est un entier, et le nombre d’états est
+\begin{equation}
+2m_{\max}+1.
+\end{equation}
+La valeur maximale caractérise la particule et s’appelle son spin. Dans la notation usuelle,
+\begin{equation}
+s\equiv m_{\max},
+\qquad
+\lvert s,m\rangle\equiv\lvert m\rangle
+\end{equation}
+dans un multiplet de spin fixé.\footnote{\raggedright Image de la vidéo du cours \nolinkurl{lecture_07_figure_03.png}, 01:01:08.\par}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_07_figure_03.png}
+\caption{La condition de poids maximal met fin à la suite d’augmentations, et les valeurs permises de \(m\) forment une échelle finie à pas d’une unité.}
+\lectureframe{01:01:08}
+\end{figure}
+
+Une particule de spin zéro ne possède que \(m=0\). Une particule de spin un possède
+\[
+m=1,0,-1,
+\]
+et une particule de spin deux a cinq valeurs possibles pour sa composante. Le boson de Higgs est un exemple de particule de spin zéro. Le photon et le boson \(Z\) ont un spin un. Un graviton, s’il existe, a un spin deux. Les objets composites peuvent avoir un spin trois et bien davantage : les noyaux le peuvent, tout comme des objets en rotation suffisamment grands, tels que des ballons de basket et des galaxies, qui peuvent porter un moment cinétique arbitrairement élevé. Ce qui manque dans la liste habituelle des particules élémentaires, c’est une particule élémentaire de spin trois.
+
+L’autre famille, symétrique et à pas d’une unité, ne contient pas zéro. Elle commence par
+\[
+m=\frac12,-\frac12
+\]
+et se poursuit par pas d’une unité :
+\begin{equation}
+\begin{aligned}
+m={}&-m_{\max},-m_{\max}+1,\ldots,-\frac32,-\frac12,\\
+&\frac12,\frac32,\ldots,m_{\max}.
+\end{aligned}
+\end{equation}
+Ici, \(m_{\max}\) est un demi-entier. Le cas le plus simple est le spin \(\tfrac12\), suivi du spin \(\tfrac32\), du spin \(\tfrac52\), et ainsi de suite. Les multiplets de moment cinétique appartiennent donc à deux familles : celles de spin entier et celles de spin demi-entier.
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:46}
+\audiencequestion{Un multiplet de spin demi-entier a-t-il aussi une valeur maximale ?}
+\lecturerresponse{Oui. L’échelle a de nouveau une valeur supérieure. Pour une particule de spin \(\tfrac32\), la valeur maximale est \(m_{\max}=\tfrac32\) ; pour une particule de spin \(\tfrac52\), elle est \(m_{\max}=\tfrac52\). La seule différence est que la valeur maximale et toutes les autres valeurs du multiplet sont des demi-entiers.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:04}
+\audiencequestion{N’existe-t-il aucune particule élémentaire de spin trois ou supérieur ?}
+\lecturerresponse{Dans le cadre de la théorie quantique relativiste dont il est question ici, les spins des particules élémentaires figurant sur la liste usuelle sont \(0,\tfrac12,1,\tfrac32,\) et \(2\). Les objets composites ne sont pas limités à cette gamme et peuvent avoir un spin trois ou bien supérieur.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:50}
+\audiencequestion{Les valeurs négatives de l’échelle représentent-elles un spin négatif ?}
+\lecturerresponse{Non. Une valeur négative de \(m\) est une valeur de composante : elle indique que le moment cinétique pointe dans le sens opposé par rapport à l’axe choisi. Le spin de la particule est la valeur maximale non négative \(s=m_{\max}\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:05:10}
+\audiencequestion{Si les valeurs de la composante sont discrètes, qu’en est-il de toutes les orientations intermédiaires ?}
+\lecturerresponse{Il n’existe pas seulement deux ou trois orientations spatiales possibles. Les orientations intermédiaires sont représentées par des superpositions quantiques des états de la base \(m\). La construction pour le spin \(\tfrac12\) présentée ci-dessous le montre explicitement.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:05:42}
+\audiencequestion{Qu’en est-il du mouvement en tire-bouchon ou des ondes polarisées circulairement ?}
+\lecturerresponse{Une onde électromagnétique polarisée circulairement est constituée de photons polarisés circulairement, qui portent un moment cinétique le long de l’axe de propagation. Le mot ``tire-bouchon'' associe une rotation à un mouvement vers l’avant ; il ne convient donc pas pour décrire un objet considéré au repos. Pour une particule en mouvement, la grandeur pertinente est l’hélicité : l’orientation de son spin par rapport à sa direction de mouvement.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:07:10}
+\audiencequestion{Une particule élémentaire connue a-t-elle un spin \(\tfrac32\) ?}
+\lecturerresponse{Aucune particule élémentaire de spin \(\tfrac32\) n’a été directement confirmée. La supersymétrie conjecture l’existence d’un partenaire de spin \(\tfrac32\) du graviton, appelé gravitino, mais celui-ci n’a pas été directement détecté.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:08:01}
+\audiencequestion{Les opérateurs du moment cinétique ont-ils cessé d’agir sur la fonction d’onde ou l’espace des kets d’origine ?}
+\lecturerresponse{Aucun espace de spin initial n’avait été spécifié. L’algèbre sert à déterminer cet espace. Pour un spin fixé \(s\), il a pour base les vecteurs étiquetés par les valeurs permises
+\[
+\lvert s,m\rangle,\qquad m=-s,-s+1,\ldots,s.
+\]
+Cet espace de spin intrinsèque est distinct de l’espace ordinaire des fonctions d’onde spatiales, sur lequel le moment cinétique orbital agit comme \(\mathbf r\times\mathbf p\), bien que les deux réalisent la même algèbre du moment cinétique.}
+\end{classroomqa}
+
+\section{Norme du moment cinétique}
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:32}
+\audiencequestion{La norme du vecteur moment cinétique est-elle observable ?}
+\lecturerresponse{Oui. Il est plus commode d’utiliser son carré,
+\[
+L^2=L_x^2+L_y^2+L_z^2.
+\]
+Sa valeur sur l’état de poids maximal n’est pas simplement \(s^2\hbar^2\). Même lorsque \(L_z\) est bien définie et maximale, les composantes transverses qui ne commutent pas ne peuvent pas être toutes deux nulles avec certitude ; elles apportent donc une contribution quantique supplémentaire.}
+\end{classroomqa}
+
+Pour calculer cette contribution, multiplions les opérateurs échelle dans l’ordre où l’opérateur d’augmentation agit en premier sur un ket :
+\begin{align}
+L_-L_+
+&=(L_x-iL_y)(L_x+iL_y) \\
+&=L_x^2+L_y^2+iL_xL_y-iL_yL_x \\
+&=L_x^2+L_y^2+i[L_x,L_y] \\
+&=L_x^2+L_y^2-\hbar L_z.
+\end{align}
+La dernière étape utilise \([L_x,L_y]=i\hbar L_z\). On obtient donc
+\begin{equation}
+L_x^2+L_y^2=L_-L_++\hbar L_z,
+\end{equation}
+et par conséquent
+\begin{equation}
+L^2=L_-L_++L_z^2+\hbar L_z.
+\end{equation}
+
+Appliquons cette identité à l’état de poids maximal \(\lvert s,s\rangle=\lvert m_{\max}\rangle\) :
+\begin{align}
+L^2\lvert s,s\rangle
+&=\left(L_-L_++L_z^2+\hbar L_z\right)\lvert s,s\rangle \\
+&=L_-L_+\lvert s,s\rangle
++s^2\hbar^2\lvert s,s\rangle
++s\hbar^2\lvert s,s\rangle.
+\end{align}
+Le premier terme s’annule car \(L_+\lvert s,s\rangle=0\). Ainsi,
+\begin{equation}
+L^2\lvert s,s\rangle
+=s(s+1)\hbar^2\lvert s,s\rangle.
+\end{equation}
+Le terme supplémentaire \(+s\) est la correction quantique associée aux fluctuations transverses inévitables. Classiquement, on s’attendrait seulement à \(s^2\hbar^2\).
+
+Les premières valeurs rendent cette distinction concrète :
+\begin{align}
+s=0 &: \qquad L^2=0,\\
+s=1 &: \qquad L^2=2\hbar^2,\\
+s=\frac12 &: \qquad L^2=\frac34\hbar^2.
+\end{align}
+Pour \(s=1000\), le facteur sans dimension est \(1000\times1001\) ; à l’échelle d’un moment cinétique aussi grand, il diffère peu de \(1000^2\). En général,
+\begin{equation}
+s(s+1)=s^2\left(1+\frac1s\right),
+\end{equation}
+la correction quantique relative devient donc négligeable lorsque \(s\) est très grand. C’est ainsi qu’émerge le résultat classique \(s^2\).
+
+Tous les états \(m\) d’un multiplet de spin fixé ont cette même valeur propre de \(L^2\). Modifier \(m\) change la composante selon l’axe choisi, et non la norme totale. C’est la version quantique de la réorientation d’un vecteur moment cinétique sans changement de sa longueur.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:43}
+\audiencequestion{Peut-on connaître simultanément \(L^2\) et la composante selon \(z\) ?}
+\lecturerresponse{Oui. Le carré du moment cinétique total commute avec chaque composante du moment cinétique :
+\[
+[L^2,L_i]=0,\qquad i=x,y,z.
+\]
+On peut donc spécifier simultanément \(L^2\) et une composante choisie, telle que \(L_z\), même si deux composantes distinctes ne peuvent pas l’être. Chaque électron, par exemple, a \(L^2=\tfrac34\hbar^2\), quelle que soit son orientation.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:41}
+\audiencequestion{\(L^2\) est-il nul pour le spin un, ou seulement pour le spin zéro ?}
+\lecturerresponse{Seul le spin zéro donne \(L^2=0\). Pour le spin un, on obtient
+\[
+L^2=1(1+1)\hbar^2=2\hbar^2,
+\]
+tandis que pour le spin trois, on obtient
+\[
+L^2=3(3+1)\hbar^2=12\hbar^2.
+\]}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:18:13}
+\audiencequestion{Pourquoi chaque niveau \(m\) du multiplet a-t-il la même valeur propre de \(L^2\) ?}
+\lecturerresponse{Partons de l’état de poids maximal et abaissons-le. Comme \(L^2\) commute avec chaque composante, il commute aussi avec \(L_-\) :
+\[
+[L^2,L_-]=0.
+\]
+Si
+\[
+L^2\lvert s,s\rangle=s(s+1)\hbar^2\lvert s,s\rangle,
+\]
+alors
+\begin{align}
+L^2\bigl(L_-\lvert s,s\rangle\bigr)
+&=L_-L^2\lvert s,s\rangle \\
+&=s(s+1)\hbar^2\,L_-\lvert s,s\rangle.
+\end{align}
+L’état suivant dans l’échelle a donc la même valeur propre de \(L^2\). En répétant le raisonnement, on retrouve cette valeur propre jusqu’en bas de l’échelle.}
+\end{classroomqa}
+
+La discrétisation des valeurs de \(m\) ne signifie donc pas qu’il n’existe qu’un ensemble discret d’orientations spatiales. L’invariance par rotation exige toujours des états correspondant à des directions réorientées. Pour le spin \(\tfrac12\), ces directions apparaîtront sous forme de superpositions des deux états de la base \(L_z\).
+
+\section{\texorpdfstring{\(\tfrac12\)}{/12 : états et orientation}}
+
+L’invariance par rotation exige davantage que les seuls états propres discrets de \(L_z\). Le spin peut pointer selon n’importe quel axe, même si la mesure de sa composante selon un axe choisi ne donne que les valeurs discrètes permises. Les directions intermédiaires entre les états propres de l’axe \(z\) sont représentées par des superpositions.
+
+Pour une particule de spin \(\tfrac12\), limitons-nous aux degrés de liberté de spin. Un électron possède aussi des états orbitaux : il n’a donc certainement pas deux états seulement au total ; son seul espace de spin est de dimension deux. Choisissons la base associée à l’axe \(z\)
+\begin{equation}
+L_z\lvert+\rangle=\frac{\hbar}{2}\lvert+\rangle,
+\qquad
+L_z\lvert-\rangle=-\frac{\hbar}{2}\lvert-\rangle.
+\end{equation}
+Un état de spin général s’écrit
+\begin{equation}
+\lvert\psi\rangle
+=
+\alpha\lvert+\rangle+\beta\lvert-\rangle,
+\end{equation}
+où \(\alpha\) et \(\beta\) sont des nombres complexes. La mesure de \(L_z\) donne \(+\hbar/2\) avec une probabilité \(|\alpha|^2\) et \(-\hbar/2\) avec une probabilité \(|\beta|^2\) ; la normalisation impose donc
+\begin{equation}
+|\alpha|^2+|\beta|^2=1.
+\end{equation}
+
+Une phase commune n’a aucun effet physique :
+\begin{equation}
+(\alpha,\beta)\longrightarrow
+e^{i\chi}(\alpha,\beta).
+\end{equation}
+Les deux amplitudes complexes comportent au départ quatre paramètres réels. La normalisation en élimine un, et la phase globale sans effet physique en élimine un autre : il reste deux paramètres réels physiques. C’est précisément le nombre nécessaire pour spécifier une direction par ses angles polaire et azimutal. Faire varier \(\alpha\) et \(\beta\) revient à faire tourner l’orientation du spin.
+
+Une composante mesurée et sa valeur moyenne sont deux choses différentes. La valeur moyenne est une moyenne d’ensemble. Préparez de nombreux électrons dans exactement le même état, mesurez \(L_z\) une fois sur chacun, additionnez les résultats, puis divisez par le nombre d’expériences. Chaque résultat individuel reste égal à \(+\hbar/2\) ou à \(-\hbar/2\), mais la moyenne peut prendre n’importe quelle valeur comprise entre les deux :
+\begin{equation}
+\langle L_z\rangle
+=
+\frac{\hbar}{2}\bigl(|\alpha|^2-|\beta|^2\bigr).
+\end{equation}
+
+Des amplitudes égales pour les composantes vers le haut et vers le bas donnent un spin orienté selon l’un des deux sens de l’axe \(x\). Des représentants normalisés sont\footnote{Les rapports des coefficients déterminent les directions. Les facteurs \(1/\sqrt2\) fournissent la normalisation requise par \( |\alpha|^2+|\beta|^2=1\). Les phases relatives \(+i\) et \(-i\) donnent des orientations opposées selon l’axe \(y\) ; attribuer l’un ou l’autre signe à \(y\) positif dépend de la convention choisie pour l’axe.}
+\begin{equation}
+\lvert x;+\rangle
+=
+\frac{\lvert+\rangle+\lvert-\rangle}{\sqrt2},
+\qquad
+\lvert x;-\rangle
+=
+\frac{\lvert+\rangle-\lvert-\rangle}{\sqrt2}.
+\end{equation}
+Pour chacun des deux états, une mesure selon \(z\) donne les deux résultats possibles avec la même probabilité, et donc
+\begin{equation}
+\langle L_z\rangle
+=
+\frac12\left(\frac{\hbar}{2}\right)
++
+\frac12\left(-\frac{\hbar}{2}\right)
+=0.
+\end{equation}
+Les signes relatifs plus et moins correspondent à des directions opposées selon l’axe \(x\). De même,
+\begin{equation}
+\frac{\lvert+\rangle+i\lvert-\rangle}{\sqrt2},
+\qquad
+\frac{\lvert+\rangle-i\lvert-\rangle}{\sqrt2}
+\end{equation}
+donnent les deux orientations opposées selon l’axe \(y\). Des valeurs normalisées générales de \(\alpha\) et \(\beta\) décrivent des axes quelconques. Dire qu’un spin est orienté selon un axe particulier signifie que la mesure de sa composante selon cet axe donne un résultat déterminé. Par rapport à un autre axe, le même état est généralement une superposition.
+
+Les résultats individuels des mesures restent quantifiés. Ce sont leurs moyennes d’ensemble qui varient continûment et reproduisent la géométrie familière d’un vecteur classique.
+
+\section{Spin, statistique et particules composites}
+
+La masse, la charge électrique et le spin comptent parmi les principales propriétés qui servent à caractériser une particule. Le spin est aussi lié à la statistique. La relation spin-statistique est un théorème de la mécanique quantique relativiste, bien qu’elle ne soit pas démontrée ici :
+\begin{equation}
+\begin{aligned}
+\text{half-integer spin} &\quad\Longleftrightarrow\quad \text{fermion},\\
+\text{integer spin} &\quad\Longleftrightarrow\quad \text{boson}.
+\end{aligned}
+\end{equation}
+Deux fermions identiques ne peuvent pas occuper le même état quantique complet. Des bosons identiques peuvent occuper le même état, et un grand nombre d’entre eux dans un même état peuvent se comporter collectivement comme une onde classique. Ainsi, les particules de spin \(\tfrac12,\tfrac32,\tfrac52,\ldots\) sont des fermions, tandis que celles de spin \(0,1,2,\ldots\) sont des bosons.
+
+La règle s’étend immédiatement aux systèmes composites. L’addition de deux moments cinétiques demi-entiers donne un moment cinétique entier. Plus généralement, un nombre pair de constituants fermioniques forme un composite bosonique, tandis qu’un nombre impair forme un composite fermionique. L’ajout de constituants bosoniques ne modifie pas cette règle de parité.
+
+L’hydrogène ordinaire contient un proton de spin \(\tfrac12\) et un électron de spin \(\tfrac12\). Il contient donc un nombre pair de fermions et est bosonique dans son ensemble. Un deutéron contient un proton et un neutron, tous deux des fermions, et est lui aussi un boson. Un atome de deutérium ajoute un électron au deutéron, ce qui donne trois constituants fermioniques dans cette description ; le deutérium est donc un fermion.
+
+Les particules et les antiparticules ont la même masse et le même spin, mais des charges électriques opposées. Le positronium est un électron et un positron liés l’un à l’autre. Il contient deux fermions et est donc bosonique.
+
+\begin{classroomqa}
+\lecturetimestamp{01:33:08}
+\audiencequestion{Les bosons traversent-ils la matière, et la supraconductivité est-elle liée au comportement bosonique des paires d’électrons ?}
+\lecturerresponse{La propriété pertinente n’est pas simplement la capacité de traverser la matière ; c’est la possibilité, pour les bosons, d’occuper un même état. L’hélium superfluide en fournit un exemple plus simple. Un atome d’hélium ordinaire \(4\) contient deux protons, deux neutrons et deux électrons, soit un nombre pair de constituants fermioniques ; l’atome est donc un boson. De nombreux atomes d’hélium peuvent occuper un même état quantique et se déplacer collectivement. On peut alors se représenter approximativement un superfluide comme une onde classique formée en accumulant de nombreux atomes dans un même état. Cette représentation n’est pas exacte, mais elle rend compte de l’idée nécessaire ici. Un électron dans un métal est un fermion et ne peut pas partager un état complet avec un autre électron. En revanche, les paires d’électrons sont des composites bosoniques, ce qui établit le lien avec la supraconductivité. Cela soulève un paradoxe : si les électrons constituants ne peuvent pas occuper le même état, comment plusieurs paires composites peuvent-elles occuper un même état ? La résolution exige un examen plus attentif des états composites et sera abordée plus tard.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:46}
+\audiencequestion{Puisque les protons et les neutrons sont composites, pourquoi ont-ils un spin demi-entier ?}
+\lecturerresponse{Chacun est constitué d’un nombre impair de quarks de spin \(\tfrac12\). Trois constituants fermioniques forment un composite fermionique ; les protons et les neutrons peuvent donc avoir un spin demi-entier.}
+\end{classroomqa}
+
+\section{Principe d’exclusion de Pauli et orbitales atomiques}
+
+Le tableau périodique fournit la motivation immédiate du principe d’exclusion de Pauli. La règle n’interdit pas à deux électrons d’avoir le même mouvement orbital. Elle leur interdit d’occuper le même état quantique complet.
+
+Cette distinction compte même dans les atomes les plus simples. En partant de l’hydrogène, augmentons la charge du noyau et ajoutons un deuxième électron. Les deux électrons peuvent occuper la même orbitale spatiale, mais leurs états de spin doivent être différents. Par rapport à l’axe choisi, l’un peut avoir un spin orienté vers le haut et l’autre vers le bas. Lorsque deux électrons occupent une orbitale, leurs spins se combinent pour former l’état singulet de spin, de sorte que leur spin total s’annule. Une orbitale spatiale ne peut accueillir plus de deux électrons, car il n’existe que deux états de spin indépendants.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:53}
+\audiencequestion{Peut-on se représenter les spins opposés de deux électrons dans une orbitale comme des engrenages en prise ?}
+\lecturerresponse{Comme image approximative, oui : des engrenages en prise tournent en sens opposés. Ce n’est qu’une analogie pour les directions de spin opposées, et non un modèle mécanique littéral des électrons.}
+\end{classroomqa}
+
+Le mot ``orbitale'' peut s’employer à deux niveaux différents. Au sens large, un état de mouvement orbital est l’état obtenu en résolvant l’équation de Schrödinger sans tenir compte du spin. Il contient davantage d’informations que la seule couche occupée par l’électron.
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:09}
+\audiencequestion{Une orbitale désigne-t-elle davantage que la seule couche occupée par l’électron ?}
+\lecturerresponse{Oui. Ici, le mouvement orbital désigne l’état de Schrödinger de l’électron, spin mis de côté. Il comprend le nombre quantique principal \(n\), qui renseigne sur la position radiale et détermine approximativement la distance de l’électron au noyau, ainsi que les nombres quantiques du moment cinétique orbital. Dans la notation spectroscopique employée par les chimistes, \(S\), \(P\), \(D\) et \(F\) correspondent respectivement au moment cinétique orbital \(l=0,1,2,3\).}
+\end{classroomqa}
+
+Ainsi, le nombre quantique principal et le moment cinétique orbital décrivent des aspects différents du mouvement. Les étiquettes \(S,P,D,F\) renvoient à la valeur de \(l\), tandis que \(n\) apporte une information radiale distincte. La règle de Pauli stipule que deux électrons ne peuvent avoir tous leurs nombres quantiques identiques, y compris le nombre quantique de spin.
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:42}
+\audiencequestion{Les nombres quantiques permettent-ils de déterminer combien d’électrons peuvent occuper chaque couche d’un atome ?}
+\lecturerresponse{Oui. Ils déterminent le nombre maximal possible, mais pas le nombre d’électrons qu’un atome donné contient effectivement dans cette couche. Le problème général du dénombrement des couches ne sera pas traité ici.}
+\end{classroomqa}
+
+Pour un moment cinétique orbital fixé \(l\), le nombre quantique de la composante prend
+\begin{equation}
+2l+1
+\end{equation}
+valeurs possibles. C’est le même dénombrement des états du moment cinétique que celui déjà utilisé pour le spin. Un état \(S\) a \(l=0\), donc il comporte un état orbital. Un état \(P\) a \(l=1\), donc il comporte trois états orbitaux. Un état \(D\) a \(l=2\), donc il en comporte cinq.
+
+Le spin double chaque dénombrement orbital, car chaque orbitale spatiale peut accueillir un électron dans chacun des deux états de spin opposés.
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:54}
+\audiencequestion{L’état \(S\) peut-il accueillir deux électrons, et les trois états \(P\) en accueillent-ils six de plus ?}
+\lecturerresponse{Oui. L’unique état orbital \(S\) peut accueillir au plus deux électrons. Les trois états orbitaux \(P\) en accueillent deux chacun, soit six de plus. Les états \(S\) et \(P\) dont il est question peuvent donc accueillir \(2+6=8\) électrons au total.}
+\end{classroomqa}
+
+La même structure de moment cinétique qui organise les orbitales atomiques réapparaît, avec quelques différences, lorsque les quarks se déplacent dans des systèmes liés et gravitent les uns autour des autres.

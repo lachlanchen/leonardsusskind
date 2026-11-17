@@ -1,0 +1,612 @@
+\chapter{Fonctions delta, champs quantiques et lois de conservation}
+
+Le champ quantique simple introduit précédemment suffit à décrire, dans les grandes lignes, la diffusion, la création et l’annihilation de particules, mais il reste encore beaucoup à en tirer. En particulier, il montre comment les lois de conservation interviennent dans les processus impliquant des particules. Un cours complet de théorie quantique des champs demande bien plus que quelques séances ; ici, l’objectif est plus limité. Nous utiliserons le champ le plus simple pour voir concrètement d’où vient la conservation de l’énergie, pourquoi la quantité de mouvement de la particule diffusée n’est pas nécessairement conservée lorsqu’elle rencontre une cible fixe, et comment l’invariance de phase exprime la conservation de la charge.
+
+Avant de revenir au champ, nous avons besoin de deux notions mathématiques : la fonction delta de Dirac et l’action des opérateurs de création et d’annihilation sur les vecteurs bra.
+
+\section{La fonction delta de Dirac}
+
+Notons la coordonnée \(y\), sans décider si elle représentera plus tard une position, un nombre d’onde ou autre chose. Commençons par une fonction ordinaire en forme de bosse, concentrée au voisinage de \(y=a\). Rétrécissons cette bosse de plus en plus. Si sa hauteur restait fixe, son aire tendrait vers zéro ; augmentons donc sa hauteur à mesure que sa largeur diminue, de sorte que le produit de la hauteur par la largeur reste égal à un. L’objet limite est la fonction delta de Dirac \(\delta(y-a)\).
+
+Elle s’annule en dehors de \(y=a\), est infiniment concentrée en \(y=a\) et son aire vaut l’unité :
+\begin{equation}
+\delta(y-a)=0\quad (y\neq a),
+\qquad
+\int_{-\infty}^{\infty}dy\,\delta(y-a)=1.
+\end{equation}
+L’essentiel tient à la combinaison de la localisation et de l’aire constante. Resserer le pic ne le fait pas disparaître, car sa hauteur augmente simultanément.
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.68\textwidth]{lecture_04_figure_02.png}\caption{Pic de fonction delta d’aire unité centré en \(y=a\).}\lectureframe{00:05:50}\end{figure}
+
+On peut aussi idéaliser cette image en représentant la fonction par un pic vertical :
+\begin{figure}[h]\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.1,0) -- (3.3,0) node[right] {$y$};
+\draw[very thick] (0,0) -- (0,2.9);
+\draw (0,-0.15) node[below] {$y=a$};
+\node at (1.35,1.65) {$\delta(y-a)$};
+\end{tikzpicture}\caption{Localisation idéalisée de \(\delta(y-a)\) au zéro de son argument.}\end{figure}
+
+La fonction delta apparaît naturellement dans les intégrales de Fourier. Revenons un instant à un intervalle spatial périodique de longueur totale \(L\). Un mode périodique s’écrit
+\begin{equation}
+e^{ikx},
+\end{equation}
+où \(k\) est l’un des nombres d’onde autorisés
+\begin{equation}
+k_n=\frac{2\pi n}{L},
+\qquad n\in\mathbb Z.
+\end{equation}
+On peut représenter l’intervalle par \(0\leq x<L\), mais il est plus symétrique de placer l’origine au milieu et de prendre
+\begin{equation}
+-\frac L2\leq x<\frac L2.
+\end{equation}
+Les extrémités sont identifiées : lorsqu’on franchit \(L/2\), on revient en \(-L/2\).
+
+Intégrons un mode autorisé sur tout l’intervalle périodique :
+\begin{equation}
+I_L(k)=\int_{-L/2}^{L/2}dx\,e^{ikx}.
+\end{equation}
+Si \(k=0\), l’intégrande vaut constamment un et le résultat est \(L\). Si \(k\neq0\) est une valeur autorisée, les parties positive et négative de l’oscillation se compensent sur le nombre entier de périodes. Ainsi,
+\begin{equation}
+I_L(k)=
+\begin{cases}
+L,&k=0,\\[4pt]
+0,&k\neq0,
+\end{cases}
+\qquad
+k=\frac{2\pi n}{L}.
+\end{equation}
+
+Considérons maintenant \(I_L(k)\) comme une fonction définie sur l’ensemble discret des valeurs autorisées de \(k\). L’écart entre deux valeurs voisines est
+\begin{equation}
+\Delta k=\frac{2\pi}{L}.
+\end{equation}
+En \(k=0\), la fonction vaut \(L\) ; elle est nulle en toute autre valeur autorisée. Pour représenter graphiquement ce pic discret, attribuons-lui une largeur égale à un intervalle de \(k\). Son aire vaut alors
+\begin{equation}
+(\text{height})(\text{width})
+=L\frac{2\pi}{L}=2\pi.
+\end{equation}
+Lorsque \(L\) augmente, la hauteur croît, l’écart diminue et l’aire reste égale à \(2\pi\). À la limite d’un volume infini, le pic devient \(2\pi\delta(k)\), ce qui donne l’identité de Fourier formelle
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,e^{ikx}=2\pi\delta(k).
+\end{equation}
+Les variables \(x\) et \(k\) jouent des rôles symétriques dans l’exponentielle. En les intervertissant, on obtient l’identité associée
+\begin{equation}
+\int_{-\infty}^{\infty}dk\,e^{ikx}=2\pi\delta(x).
+\end{equation}
+Ces deux règles élémentaires transformeront bientôt une intégrale sur toutes les durées d’interaction en une condition de conservation de l’énergie.
+
+\section{Bras, kets et opérateurs agissant à gauche}
+
+Un ket est une notation symbolique pour un état quantique. Pour ce qui nous intéresse ici, nous noterons l’état initial par un ket et l’état final par un bra. La juxtaposition d’un bra et d’un ket forme un produit scalaire, qui est un nombre. Ce sont ces nombres, ou leurs carrés de module, que l’on peut finalement confronter à l’expérience.
+
+\begin{classroomqa}\lecturetimestamp{00:15:30}\audiencequestion{Le mot ``ket'' a-t-il vraiment déjà été introduit ?}\lecturerresponse{Oui. Un ket constitue une moitié de la notation bra-ket ; l’autre moitié, que nous introduisons maintenant, est le bra.}\end{classroomqa}
+
+Pour l’oscillateur harmonique, les états de nombre d’occupation peuvent s’écrire sous forme de kets \(\lvert n\rangle\) ou de bras \(\langle n\rvert\). Leur produit scalaire vaut
+\begin{equation}
+\langle m\vert n\rangle=\delta_{mn}
+=\begin{cases}
+1,&m=n,\\
+0,&m\neq n.
+\end{cases}
+\end{equation}
+Le delta de Kronecker \(\delta_{mn}\) est l’analogue discret de la fonction delta de Dirac.
+
+Les opérateurs de création et d’annihilation agissent sur les kets de la manière habituelle :
+\begin{align}
+a^\dagger\lvert n\rangle&=\sqrt{n+1}\,\lvert n+1\rangle,\\
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle.
+\end{align}
+On peut aussi noter les opérateurs de création et d’annihilation \(a^+\) et \(a^-\) ; nous utiliserons partout \(a^\dagger\) et \(a\).
+
+Comment ces mêmes opérateurs doivent-ils agir sur les bras ? Dans cette notation, un opérateur placé à droite d’un bra agit à gauche. La définition est choisie de façon qu’un élément de matrice ait la même valeur, que l’opérateur agisse d’abord sur le ket ou d’abord sur le bra. Considérons
+\begin{equation}
+\langle n\rvert a^\dagger\lvert m\rangle.
+\end{equation}
+L’action sur le ket donne
+\begin{align}
+\langle n\rvert a^\dagger\lvert m\rangle
+&=\sqrt{m+1}\,\langle n\vert m+1\rangle\\
+&=\sqrt{m+1}\,\delta_{n,m+1}.
+\end{align}
+Cette expression est non nulle uniquement si \(n=m+1\), c’est-à-dire si \(m=n-1\). Pour retrouver la même condition en faisant agir l’opérateur sur le bra, \(a^\dagger\) doit abaisser son indice :
+\begin{equation}
+\langle n\rvert a^\dagger
+=\sqrt n\,\langle n-1\rvert.
+\end{equation}
+Le facteur numérique est \(\sqrt n\), puisque, pour l’élément de matrice non nul, \(n=m+1\). L’opérateur d’annihilation obéit à la règle complémentaire
+\begin{equation}
+\langle n\rvert a
+=\sqrt{n+1}\,\langle n+1\rvert.
+\end{equation}
+Ainsi, \(a^\dagger\) élève un ket mais abaisse un bra, tandis que \(a\) abaisse un ket mais élève un bra.
+
+L’intérêt apparaît dans l’élément de matrice de l’opérateur nombre
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle.
+\end{equation}
+En faisant agir les opérateurs vers la droite,
+\begin{align}
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle,\\
+a^\dagger\lvert n-1\rangle&=\sqrt n\,\lvert n\rangle,
+\end{align}
+on obtient
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle
+=n\langle n\vert n\rangle=n.
+\end{equation}
+En faisant plutôt agir les opérateurs vers la gauche,
+\begin{align}
+\langle n\rvert a^\dagger&=\sqrt n\,\langle n-1\rvert,\\
+\langle n-1\rvert a&=\sqrt n\,\langle n\rvert,
+\end{align}
+on obtient le même résultat. Il n’est pas nécessaire de décider quel sens est le plus fondamental ; le calcul est construit de sorte que les deux donnent le même nombre.
+
+\section{Un champ quantique dans l’espace et le temps}
+
+Cette comptabilité est motivée par la physique des particules. À l’échelle microscopique, le principal moyen d’investigation expérimental consiste à faire entrer des particules en collision et à observer ce qui en ressort. Un état initial contenant une ou deux particules peut évoluer vers un état qui en contient quatre, cinq, sept, neuf ou un autre nombre. Les champs quantiques, construits à partir d’opérateurs de création et d’annihilation, fournissent un langage pour décrire de tels processus.
+
+Commençons par travailler en une dimension spatiale. Rien n’empêche d’utiliser trois dimensions : \(x\) et \(k\) deviennent simplement des vecteurs à trois composantes. Il est également commode d’utiliser des unités telles que
+\begin{equation}
+\hbar=1.
+\end{equation}
+La quantité de mouvement et le vecteur d’onde ont alors la même valeur numérique,
+\begin{equation}
+\vec p=\vec k.
+\end{equation}
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.58\textwidth]{lecture_04_figure_03.png}\caption{Unités naturelles \(\hbar=1\) et identification \(\vec p=\vec k\).}\lectureframe{00:36:56}\end{figure}
+
+Adoptons la convention selon laquelle \(\psi\) annule une particule et \(\psi^\dagger\) en crée une :
+\begin{align}
+\psi(x)&=\sum_k a(k)e^{ikx},\\
+\psi^\dagger(x)&=\sum_k a^\dagger(k)e^{-ikx}.
+\end{align}
+La somme porte sur \(k=2\pi n/L\) dans l’espace périodique et devient continue dans l’espace infini. La seconde équation est l’adjoint hermitien de la première. On peut aussi la considérer comme l’analogue, pour les opérateurs, de la conjugaison complexe.\footnote{Au tableau, le développement du champ de création est provisoirement noté \(\sum_k a^\dagger(k)e^{-ikx}\) par \(\Psi\), puis le choix du dagué est remis en question. Les notations sont fixées ici de manière cohérente, avec \(\psi\) pour l’annihilation et \(\psi^\dagger\) pour la création, conformément au calcul de diffusion qui suit.}
+
+Pourquoi cette définition ? À ce stade, la meilleure réponse est qu’elle est utile. Il s’agit d’une somme simple sur les modes de quantité de mouvement, et ses coefficients sont précisément les opérateurs qui retirent ou ajoutent des particules. Sa justification détaillée viendra de la dynamique et des calculs qu’elle permet d’effectuer.
+
+\editorialnote{Le bref passage de la source qui suit immédiatement l’introduction du champ spatial conjugué est trop peu intelligible pour justifier un énoncé supplémentaire sur la normalisation ou l’interprétation. Le contenu assuré reprend avec l’utilité de la définition.}
+
+Jusqu’ici, les champs dépendent de la position, mais pas du temps. Les champs oscillent, et chaque nombre d’onde \(k\) est associé à une fréquence \(\omega(k)\). Un objet de fréquence définie \(\omega\) dépend du temps selon
+\begin{equation}
+e^{i\omega t}=\cos(\omega t)+i\sin(\omega t).
+\end{equation}
+Associons les phases conjuguées aux deux développements du champ :
+\begin{align}
+\psi(x,t)&=\sum_k a(k)e^{ikx}e^{-i\omega(k)t},\\
+\psi^\dagger(x,t)&=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+Chaque mode spatial oscille désormais à la fréquence correspondant à son nombre d’onde, et le champ dépend à la fois de l’espace et du temps.
+
+\section{L’équation non relativiste du champ}
+
+La relation entre \(\omega\) et \(k\) détermine l’équation différentielle vérifiée par le champ. Pour une particule unique, les relations entre onde et particule sont
+\begin{equation}
+E=\hbar\omega,
+\qquad
+p=\hbar k.
+\end{equation}
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.62\textwidth]{lecture_04_figure_04.png}\caption{Relations entre énergie et fréquence, puis entre quantité de mouvement et nombre d’onde : \(E=\hbar\omega\) et \(p=\hbar k\).}\lectureframe{00:41:28}\end{figure}
+
+Avec \(\hbar=1\), l’énergie est la fréquence et la quantité de mouvement est le nombre d’onde :
+\begin{equation}
+E=\omega,
+\qquad
+p=k.
+\end{equation}
+Pour une particule non relativiste dont la vitesse est très inférieure à celle de la lumière, l’énergie cinétique et la quantité de mouvement vérifient
+\begin{equation}
+E=\frac{p^2}{2m}.
+\end{equation}
+C’est la même relation que celle obtenue à partir de \(E=\tfrac12 mv^2\) et \(p=mv\). En combinant ces relations, on obtient la relation de dispersion non relativiste
+\begin{equation}
+\omega(k)=\frac{k^2}{2m}.
+\end{equation}
+
+Pour le champ de création, le développement en modes est
+\begin{equation}
+\psi^\dagger(x,t)=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.66\textwidth]{lecture_04_figure_05.png}\caption{Développement en modes dépendant du temps, utilisé pour établir l’équation non relativiste du champ.}\lectureframe{00:43:23}\end{figure}
+
+Dérivons par rapport au temps :
+\begin{equation}
+\dot\psi^\dagger(x,t)
+=\sum_k i\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+Dérivons une fois par rapport à la position :
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial x}
+=\sum_k(-ik)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+Il n’existe pas de relation directe du premier ordre entre ces dérivées, car la dérivée temporelle fait apparaître \(\omega(k)\), tandis qu’une dérivée spatiale fait apparaître \(k\). Pour voir explicitement la différence, imaginons la relation de dispersion linéaire
+\begin{equation}
+\omega(k)=k.
+\end{equation}
+La dérivée temporelle ferait alors apparaître \(i\omega=ik\), tandis que la première dérivée spatiale ferait apparaître \(-ik\). Mode par mode,
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{\partial\psi^\dagger}{\partial x}.
+\end{equation}
+Ce champ hypothétique satisferait une équation du premier ordre. Ici, cependant, \(\omega=k^2/(2m)\), et il faut donc une dérivée spatiale seconde :
+\begin{align}
+\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=\sum_k(-k^2)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}\\
+&=-2m\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+
+\begin{classroomqa}\lecturetimestamp{00:47:14}\audiencequestion{Le signe moins provenant des dérivées spatiales doit-il vraiment être présent ?}\lecturerresponse{Oui. Chaque dérivée par rapport à \(x\) de \(e^{-ikx}\) fait apparaître \(-ik\), et deux dérivées donnent \((-ik)^2=-k^2\). En substituant \(k^2=2m\omega\), on obtient donc \(-2m\omega\).}\end{classroomqa}
+
+En multipliant la dérivée temporelle par \(i\), on obtient le même coefficient de mode qu’en divisant la dérivée spatiale seconde par \(2m\) :
+\begin{align}
+i\dot\psi^\dagger
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t},\\
+\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+Par conséquent,
+\begin{equation}
+i\frac{\partial\psi^\dagger}{\partial t}
+=\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2},
+\end{equation}
+ou, de manière équivalente,
+\begin{equation}
+-i\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}.
+\end{equation}
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.72\textwidth]{lecture_04_figure_06.png}\caption{Dérivées temporelle et spatiales du développement en modes du champ de création.}\lectureframe{00:49:06}\end{figure}
+
+\begin{classroomqa}\lecturetimestamp{00:49:43}\audiencequestion{Le coefficient est-il \(1/(2m)^2\) ?}\lecturerresponse{Non. Il vaut \(1/(2m)\).}\end{classroomqa}
+
+Le champ d’annihilation conjugué vérifie l’équation habituelle sous forme Schr\"odinger :
+\begin{equation}
+i\frac{\partial\psi}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi}{\partial x^2}.
+\end{equation}
+Les deux équations de champ sont des adjointes hermitiennes l’une de l’autre.\footnote{Lors de la vérification du signe, le terme spatial a brièvement été écrit au tableau avec le signe opposé. La dérivation directe des phases de mode affichées donne la paire d’équations conjuguées écrite ici.}
+
+L’équation a la même forme que l’équation de Schr\"odinger de la mécanique quantique élémentaire, mais l’objet qui la vérifie est différent. En mécanique quantique élémentaire, la fonction d’onde est une fonction à valeurs complexes dont le carré du module s’interprète en termes de probabilité. Ici, \(\psi\) et \(\psi^\dagger\) sont des opérateurs : \(\psi\) annule une particule et \(\psi^\dagger\) en ajoute une. Cette paire conjuguée établit un lien direct entre particules et champs.
+
+Lorsque de nombreux quanta occupent les modes concernés, un champ peut se comporter approximativement de façon classique, tout comme un oscillateur harmonique fortement excité peut sembler classique, contrairement à un oscillateur à un quantum. Une occupation élevée permet d’atteindre une grande échelle classique et peut rendre faibles les fluctuations relatives pertinentes.
+
+\editorialnote{Une occupation élevée ne suffit pas, à elle seule, à rendre un champ classique. Il faut également un état semi-classique cohérent en phase ; un état propre du nombre n’a pas de phase définie et n’a pas nécessairement un champ moyen non nul.}
+
+\section{Une cible fixe et une amplitude de diffusion}
+
+Comment utilise-t-on ces champs ? Considérons le processus de diffusion le plus simple qui soit. Une particule rencontre une cible si lourde que l’on néglige son recul. La cible reste fixe dans l’espace pour toujours. La particule peut être réfléchie, transmise ou déviée ; en trois dimensions, sa direction après la collision peut différer de sa direction avant celle-ci.
+
+La quantité de mouvement de la particule peut différer avant et après la collision. La quantité de mouvement est conservée pour le système physique complet, mais la cible absorbe la quantité manquante. Comme le mouvement de la cible est omis de la description mathématique, la quantité de mouvement de la particule seule n’est pas conservée.
+
+Dans ce modèle idéalisé, son énergie se comporte autrement. Imaginons qu’on lance une balle de tennis contre un mur. Une vraie balle chauffe et se déforme, mais si l’on ignore ces effets, elle repart avec la même énergie cinétique, bien que sa quantité de mouvement s’inverse. Le modèle à cible fixe est conçu pour reproduire cette distinction : l’énergie de la particule est conservée, tandis que sa quantité de mouvement peut changer.
+
+Représentons l’espace horizontalement et le temps verticalement. La cible est la droite verticale \(x=0\). Un état initial à une particule de quantité de mouvement \(k_i\) atteint la cible, puis un état final à une particule de quantité de mouvement \(k_f\) s’en éloigne.
+
+\begin{figure}[h]\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.2,0) -- (3.2,0) node[right] {space};
+\draw[->] (0,-0.3) -- (0,4.2) node[above] {time};
+\draw[very thick] (0,0) -- (0,3.8);
+\node[left] at (-0.15,3.55) {$x=0$};
+\draw[thick,->] (-2.2,0.8) -- (0,2.0);
+\node[below] at (-1.45,1.05) {$k_i$};
+\draw[thick,->] (0,2.0) -- (2.2,3.2);
+\node[above] at (1.5,2.9) {$k_f$};
+\fill (0,2.0) circle (1.4pt);
+\end{tikzpicture}\caption{Une particule de quantité de mouvement \(k_i\) est diffusée par une cible fixe située en \(x=0\) et ressort avec une quantité de mouvement \(k_f\).}\end{figure}
+
+Utilisons le langage de l’absorption et de la réémission. La cible annule la particule incidente et crée aussitôt la particule émergente, dont la quantité de mouvement peut être différente. Il ne s’agit que d’un modèle mathématique de l’événement de diffusion ; un atome réel, par exemple, peut absorber un photon, rester dans un état excité pendant un certain temps, puis l’émettre.
+
+\begin{classroomqa}\lecturetimestamp{01:02:28}\audiencequestion{Pourquoi la particule doit-elle être absorbée puis réémise immédiatement ?}\lecturerresponse{Ce n’est pas nécessairement le cas dans la nature. L’absorption et la réémission instantanées en un même point constituent ici le modèle simplifié utilisé.}\end{classroomqa}
+
+L’état initial contient une particule dans le mode \(k_i\) et aucune dans les autres modes. En termes de nombres d’occupation, toutes les entrées sont nulles, sauf celle associée à \(k_i\), qui vaut un. Il suffit de noter la liste complète sous la forme
+\begin{equation}
+\lvert k_i\rangle=a^\dagger(k_i)\lvert0\rangle.
+\end{equation}
+De même,
+\begin{equation}
+\langle k_f\rvert=\langle0\rvert a(k_f).
+\end{equation}
+
+L’annihilation au point cible et à l’instant \(t\) est représentée par \(\psi(0,t)\) ; la recréation immédiate au même point et au même instant est représentée par \(\psi^\dagger(0,t)\). Aucun instant n’est privilégié pour l’événement. Il peut se produire dès que la particule incidente atteint la cible, avec la même intensité d’interaction à tout instant. Pour exprimer l’absence d’instant privilégié, intégrons sur tout \(t\) :
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,\psi^\dagger(0,t)\psi(0,t).
+\end{equation}
+Agissant sur le ket initial, cet opérateur produit un état. Son recouvrement avec le bra final est l’amplitude de la transition considérée. On obtient la probabilité seulement après avoir pris le carré du module de l’amplitude.
+
+Il nous faut encore un nombre. Notons \(g\) l’intensité de l’interaction entre la particule et la cible. Dans ce modèle de comptabilité, écrivons l’amplitude schématique au premier ordre ainsi :\footnote{Les facteurs de normalisation des états et le facteur global habituel de la théorie des perturbations au premier ordre sont omis ; le calcul ne fait intervenir que les règles de sélection des opérateurs et le support imposé par la conservation de l’énergie.}
+\begin{equation}
+\mathcal A_{i\to f}
+=g\left\langle k_f\left|
+\int_{-\infty}^{\infty}dt\,
+\psi^\dagger(0,t)\psi(0,t)
+\right|k_i\right\rangle.
+\end{equation}
+Le coefficient \(g\) est appelé constante de couplage. Dans la diffusion d’un photon par une cible chargée, la charge électrique mesure l’intensité de l’interaction : plus la charge augmente, plus la tendance à diffuser est forte.
+
+Les couplages varient beaucoup d’une interaction à l’autre. Un méson qui atteint un proton subit une interaction forte et présente une intensité de diffusion relativement élevée. Un photon diffusé par un proton chargé a un couplage électromagnétique plus faible. Pour un neutrino qui interagit avec un proton, le couplage est encore plus faible.
+
+\begin{classroomqa}\lecturetimestamp{01:09:09}\audiencequestion{Ce modèle simple est-il valable pour un électron ?}\lecturerresponse{Il ne sert que de représentation simplifiée de plusieurs types de diffusion. Il ne faut pas encore y voir une théorie réaliste de l’électron ou d’une cible particulière.}\end{classroomqa}
+
+La diffusion gravitationnelle d’un graviton par un noyau serait extraordinairement faible. Ces exemples ne partagent pas une unique constante \(g\) ; la physique des particules comporte de nombreuses constantes de couplage.
+
+De même, un couplage effectif ne doit pas nécessairement être indépendant de la fréquence.
+
+\begin{classroomqa}\lecturetimestamp{01:10:31}\audiencequestion{Pourquoi considérer \(g\) comme une constante plutôt que comme une fonction de \(\omega\) ou de \(k\) ?}\lecturerresponse{Il n’est pas toujours constant. Si un photon est absorbé par un atome, que celui-ci reste excité pendant un certain temps, puis que le photon est réémis, la diffusion effective peut dépendre de la fréquence. La constante \(g\) vaut pour le modèle instantané considéré ici.}\end{classroomqa}
+
+Pour l’instant, gardons \(g\) constant et calculons les conséquences de ce choix des plus simples.
+
+\begin{classroomqa}\lecturetimestamp{01:12:32}\audiencequestion{Si \(g=1\), la probabilité de diffusion doit-elle être égale à un ?}\lecturerresponse{Non. L’expression calculée n’est que l’approximation dominante pour un petit \(g\). Si le couplage n’est pas petit, il faut recourir à la théorie des perturbations à des ordres supérieurs ; une probabilité supérieure à un signalerait l’échec de l’approximation à une étape, et non une probabilité physique.}\end{classroomqa}
+
+\section{Réduction des sommes sur les modes}
+
+En \(x=0\), les phases spatiales valent un, donc
+\begin{align}
+\psi(0,t)&=\sum_k a(k)e^{-i\omega(k)t},\\
+\psi^\dagger(0,t)&=\sum_\ell a^\dagger(\ell)e^{i\omega(\ell)t}.
+\end{align}
+
+\begin{classroomqa}\lecturetimestamp{01:13:58}\audiencequestion{Puisque la cible se trouve en \(x=0\), faut-il omettre l’exponentielle spatiale ?}\lecturerresponse{Oui. À la cible, \(e^{ikx}=e^{ik0}=1\), et le facteur spatial conjugué vaut lui aussi un.}\end{classroomqa}
+
+Utilisons des indices muets différents, \(k\) et \(\ell\), dans les deux sommes. La substitution donne
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt
+\sum_{\ell,k}
+e^{i\omega(\ell)t}e^{-i\omega(k)t}
+\langle k_f\rvert a^\dagger(\ell)a(k)\lvert k_i\rangle.
+\end{align}
+Quel terme de la somme sur \(k\) peut subsister ? Un opérateur d’annihilation donne zéro dans tout mode vide. L’état initial ne contient une particule que dans le mode \(k_i\), donc \(k=k_i\). Quel terme de la somme sur \(\ell\) peut subsister ? En agissant à gauche, \(a^\dagger(\ell)\) doit retirer la particule représentée par le bra final ; il faut donc \(\ell=k_f\). Les deux sommes se réduisent alors à un seul terme :
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+\langle k_f\rvert a^\dagger(k_f)a(k_i)\lvert k_i\rangle.
+\end{align}
+L’opérateur d’annihilation transforme le ket initial à une particule en vide :
+\begin{equation}
+a(k_i)\lvert k_i\rangle=\lvert0\rangle,
+\end{equation}
+et l’opérateur de création, agissant à gauche, transforme le bra final à une particule en bra du vide :
+\begin{equation}
+\langle k_f\rvert a^\dagger(k_f)=\langle0\rvert.
+\end{equation}
+Leur élément de matrice vaut donc
+\begin{equation}
+\langle0\vert0\rangle=1.
+\end{equation}
+Toute la comptabilité des opérateurs se réduit à un ; le couplage fournit \(g\), et il ne reste que la partie non triviale, l’intégrale temporelle :
+\begin{equation}
+\mathcal A_{i\to f}
+=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}.
+\end{equation}
+
+\editorialnote{Une brève question de l’auditoire à 01:18:40 n’a pas pu être reconstituée à partir de la source. La réponse distingue ce calcul à une particule d’une question relativiste ou à plusieurs particules ; il n’est pas possible de reconstituer avec certitude un échange plus précis.}
+
+L’identité de la fonction delta établie plus tôt s’applique maintenant directement :
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+=2\pi\delta(\omega_f-\omega_i).
+\end{equation}
+Par conséquent,
+\begin{equation}
+\boxed{
+\mathcal A_{i\to f}
+=2\pi g\,\delta(\omega_f-\omega_i)
+}.
+\end{equation}
+L’amplitude s’annule à moins que
+\begin{equation}
+\omega_f=\omega_i.
+\end{equation}
+Puisque \(\hbar=1\), cela revient à \(E_f=E_i\). La conservation de l’énergie apparaît parce que tous les instants d’interaction ont été traités de la même manière. Si l’intégrale temporelle était limitée à un intervalle fini, elle produirait une fonction élargie plutôt qu’une fonction delta exacte. C’est l’invariance exacte par translation dans le temps qui donne la condition exacte de conservation de l’énergie.
+
+\begin{classroomqa}\lecturetimestamp{01:21:30}\audiencequestion{Pour obtenir une probabilité, il faut prendre le carré de l’amplitude. Que devient la fonction delta lorsqu’on l’élève au carré ?}\lecturerresponse{Le carré de la fonction delta demande des précautions supplémentaires. Le point nécessaire ici est sûr : le résultat est nul sauf si les énergies initiale et finale sont égales. Sur le support où l’énergie est conservée, le préfacteur schématique au carré contient \(4\pi^2g^2\).}\end{classroomqa}
+
+\editorialnote{On ne peut pas obtenir une probabilité de transition normalisée ou un taux en supprimant simplement \(\delta(\omega_f-\omega_i)^2\). Il faut une régularisation à temps fini et une normalisation cohérente des états. Ainsi, \(4\pi^2g^2\) n’est conservé que comme préfacteur schématique au carré, mis en évidence dans la source.}
+
+Dans cette interaction avec une cible ponctuelle, rien ne distingue une quantité de mouvement finale d’une autre, si ce n’est la condition portant sur l’énergie. En trois dimensions, le modèle attribue donc le même poids au premier ordre à toutes les quantités de mouvement émergentes de même énergie---c’est-à-dire, de manière équivalente, à toutes les directions émergentes sur la sphère d’énergie fixée. Cette isotropie est une propriété de ce diffuseur ponctuel très simple, et non de toute cible réelle.
+
+Le calcul a fait apparaître trois idées liées. Le coefficient \(g\) mesure l’intensité de l’interaction. Une expression bra-opérateur-ket est une amplitude de diffusion dont le carré du module intervient dans la probabilité. Plus important encore, l’intégration sur tous les instants produit la fonction delta de l’énergie : la symétrie de translation dans le temps impose la conservation de l’énergie.
+
+\section{Que se passe-t-il si la cible ou le couplage change ?}
+
+L’origine \(x=0\) n’a été choisie que par commodité. Plaçons la cible en \(x=x_{\mathrm T}\). Les facteurs spatiaux de \(\psi^\dagger(x_{\mathrm T},t)\psi(x_{\mathrm T},t)\) donnent
+\begin{equation}
+e^{-ik_f x_{\mathrm T}}e^{ik_i x_{\mathrm T}}
+=e^{i(k_i-k_f)x_{\mathrm T}}.
+\end{equation}
+L’amplitude devient donc
+\begin{equation}
+\mathcal A_{i\to f}(x_{\mathrm T})
+=e^{i(k_i-k_f)x_{\mathrm T}}
+\mathcal A_{i\to f}(0).
+\end{equation}
+
+\begin{classroomqa}\lecturetimestamp{01:24:37}\audiencequestion{Peut-on toujours redéfinir la position de sorte que la cible se trouve en \(x=0\) ?}\lecturerresponse{Pour cette cible fixe unique, oui. Si on la laisse en \(x_{\mathrm T}\neq0\), sa position apparaît sous forme de phase \(e^{i(k_i-k_f)x_{\mathrm T}}\) dans l’amplitude. La multiplication par la phase complexe conjuguée élimine cette phase de la probabilité.}\end{classroomqa}
+
+En effet,
+\begin{equation}
+\left|e^{i(k_i-k_f)x_{\mathrm T}}\right|^2=1.
+\end{equation}
+L’amplitude dépend de la position de la cible, mais la probabilité pour cette cible unique n’en dépend pas.
+
+Inversions maintenant l’asymétrie. Supposons qu’une interaction puisse se produire en tout point, mais uniquement à un instant privilégié. Une intégration sur la position donnerait
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,
+e^{i(k_i-k_f)x}
+=2\pi\delta(k_i-k_f),
+\end{equation}
+tandis que la fixation de l’instant ferait disparaître la fonction delta de l’énergie.
+
+\begin{classroomqa}\lecturetimestamp{01:26:41}\audiencequestion{Si la position de l’interaction importait peu, mais que celle-ci se produisait à un instant fixe, une autre quantité serait-elle conservée ?}\lecturerresponse{Oui. L’intégration sur toutes les positions imposerait la conservation de la quantité de mouvement, tandis que l’instant d’interaction privilégié supprimerait la conservation exacte de l’énergie. Dans un problème complet à deux particules, l’interaction peut se produire à tout instant et en tout point.}\end{classroomqa}
+
+Cela donne aussi une interprétation physique de la dépendance explicite en temps. Si le couplage est \(g(t)\), ou si une intervention extérieure rend soudainement la diffusion possible, tous les instants ne sont pas équivalents. La description réduite peut alors échanger de l’énergie avec une dynamique extérieure qui a été omise.
+
+\begin{classroomqa}\lecturetimestamp{01:28:29}\audiencequestion{Les constantes de couplage sont-elles déterminées principalement par l’expérience, et que signifie un couplage dépendant du temps ?}\lecturerresponse{Oui, leurs valeurs sont déterminées expérimentalement. Une dépendance explicite en temps signifie généralement qu’une partie mobile ou changeante du système a été omise, tout comme le recul de la cible a été omis dans le modèle à cible fixe. L’énergie qui semble manquer appartient à ces degrés de liberté omis.}\end{classroomqa}
+
+Une cible en mouvement en est l’exemple le plus simple.
+
+\begin{classroomqa}\lecturetimestamp{01:29:23}\audiencequestion{Frapper une cible en mouvement est-il un exemple où l’énergie de la particule n’est pas conservée ?}\lecturerresponse{Oui. Si le mouvement imposé à la cible est omis du bilan énergétique, celle-ci peut fournir de l’énergie à la particule ou lui en retirer.}\end{classroomqa}
+
+Le caractère ponctuel de la cible constitue une autre simplification.
+
+\begin{classroomqa}\lecturetimestamp{01:29:43}\audiencequestion{Quand faut-il comparer la taille de la cible à celle de l’onde incidente, ou à sa longueur d’onde ?}\lecturerresponse{Dans le modèle présent, la cible est de taille nulle. Une taille finie produit bien des effets supplémentaires lorsqu’on la compare à la longueur d’onde, mais nous reporterons l’étude de ce raffinement.}\end{classroomqa}
+
+Revenons maintenant à la cible en mouvement. Imaginons un mur qui se déplace vers une balle de tennis. Le mur peut transmettre de l’énergie à la balle. Si le mouvement du mur est imposé et que son énergie est omise, l’énergie de la balle seule n’est pas conservée. Mathématiquement, cela correspond à une dépendance temporelle de la position de la cible, et pas nécessairement de \(g\).
+
+Les opérateurs de création et d’annihilation ont donc fait exactement ce qu’on attendait d’eux : ils décrivent une transition d’un état de particule à un autre, tandis que la dépendance des champs dans l’espace-temps détermine quelles lois de conservation accompagnent cette transition.
+
+\section{Comptage de la charge et invariance de phase}
+
+Chaque espèce de particules possède son propre champ. Les électrons et les photons, par exemple, ne sont pas décrits par le même \(\psi\). Pour faire apparaître le comptage de la charge avec l’algèbre déjà disponible, notons provisoirement \(\psi\) un champ analogue à celui de l’électron : \(\psi\) en annihile une particule chargée et \(\psi^\dagger\) en crée une. Il s’agit d’un substitut bosonique servant au décompte ; le véritable champ fermionique de l’électron exige une algèbre qui n’a pas encore été introduite.
+
+Le facteur correspondant à la cible fixe
+\begin{equation}
+\psi^\dagger\psi
+\end{equation}
+annihile une particule et en crée une. Un électron entre et un électron ressort : la charge portée par cette espèce ne change donc pas.
+
+Imaginons maintenant qu’un électron entre et que deux électrons ressortent du même point. Le produit d’opérateurs correspondant contiendrait un champ d’annihilation et deux champs de création,
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+Pour un champ électronique, cela créerait un électron net et violerait la conservation de la charge électrique. On peut plutôt représenter deux électrons entrants et deux sortants par
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+qui comporte autant de champs de création que d’annihilation. Deux électrons entrants et trois sortants exigeraient
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+et changeraient de nouveau la charge nette. La règle immédiate est simple : une interaction qui conserve la charge comporte le même nombre de facteurs \(\psi\) et de facteurs \(\psi^\dagger\).
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:27}
+\audiencequestion{Pour vérifier la conservation de la charge, l’ordre des opérateurs de champ importe-t-il ?}
+\lecturerresponse{Le test immédiat porte sur le nombre de facteurs \(\psi\) et \(\psi^\dagger\), et non sur leur ordre. La question de savoir si des produits ordonnés différemment sont par ailleurs identiques est distincte.}
+\end{classroomqa}
+
+Il existe un critère mathématique plus profond que le simple décompte. Multiplions le champ par une phase constante :
+\begin{equation}
+\psi\longrightarrow e^{i\alpha}\psi.
+\end{equation}
+Comme \(\psi^\dagger\) est le conjugué hermitien, il se transforme avec la phase conjuguée,
+\begin{equation}
+\psi^\dagger\longrightarrow e^{-i\alpha}\psi^\dagger.
+\end{equation}
+Une expression comportant autant de champs de l’un que de l’autre reste inchangée. Par exemple,
+\begin{align}
+\psi^\dagger\psi
+&\longrightarrow
+e^{-i\alpha}e^{i\alpha}\psi^\dagger\psi
+=\psi^\dagger\psi,\\
+\psi^\dagger\psi^\dagger\psi\psi
+&\longrightarrow
+e^{-2i\alpha}e^{2i\alpha}
+\psi^\dagger\psi^\dagger\psi\psi
+=\psi^\dagger\psi^\dagger\psi\psi.
+\end{align}
+Une expression où leurs nombres diffèrent change. Ainsi,
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi
+\longrightarrow
+e^{-i\alpha}\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+Les interactions qui conservent la charge sont précisément celles qui restent invariantes sous cette transformation globale de phase. Dans ce langage simple des champs, invariance de phase et conservation de la charge sont deux façons d’énoncer la même règle.
+
+La combinaison
+\begin{equation}
+\psi+\psi^\dagger
+\end{equation}
+n’est pas invariante sous une rotation de phase arbitraire.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:53}
+\audiencequestion{N’est-ce pas la partie réelle de \(\psi\) ?}
+\lecturerresponse{Oui. Elle est proportionnelle à la partie réelle de \(\psi\), et la multiplication de \(\psi\) par une phase modifie cette partie réelle. Elle n’est donc pas invariante de phase.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:05}
+\audiencequestion{Si un électron frappe une cible et que de nombreux électrons secondaires sont émis, comment la charge peut-elle rester conservée ?}
+\lecturerresponse{Dans ce processus, la cible n’est pas passive. Si un atome émet de nombreux électrons, sa charge et son état changent. Il faut inclure sa dynamique et décrire également la cible au moyen de champs quantiques.}
+\end{classroomqa}
+
+Trois correspondances apparaissent à ce stade. L’invariance par translation temporelle correspond à la conservation de l’énergie. L’invariance globale de phase correspond à la conservation de la charge. L’invariance par translation spatiale correspond à la conservation de la quantité de mouvement, même si le calcul spatial complet reste à effectuer.
+
+\section{Ordre des opérateurs et limites du modèle au plus bas ordre}
+
+Par souci de simplicité, les produits ci-dessus placent tous les champs de création à gauche et tous les champs d’annihilation à droite. Un produit entrelacé peut lui aussi comporter autant de facteurs de chaque type et réussir ainsi le test de comptage de la charge, mais l’ordre des opérateurs peut influer sur l’expression d’autres façons.
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:02}
+\audiencequestion{Le même type de processus pourrait-il s’écrire avec des facteurs entrelacés tels que \(\psi\psi^\dagger\psi\psi^\dagger\) ?}
+\lecturerresponse{Il comporte toujours autant de facteurs de chaque type et respecte donc la règle de conservation de la charge, mais il n’est généralement pas identique à une expression où tous les daggers sont à gauche. Le réarrangement de produits d’ordres différents sera abordé plus tard.}
+\end{classroomqa}
+
+\editorialnote{La formulation de la question d’un membre du public à 01:41:10 est trop abîmée pour être reconstituée. La réponse que l’on peut retrouver répète qu’un nombre égal de facteurs \(\psi\) et \(\psi^\dagger\) implique l’invariance de phase et la conservation de la charge, tandis que des nombres inégaux n’impliquent ni l’une ni l’autre.}
+
+Ces liens entre symétries et lois de conservation sont des exemples du théorème de Noether. En mécanique classique, ce théorème fournit le cadre général ; ici, le même lien a été mis en évidence directement au moyen des phases et des fonctions delta des champs quantiques.
+
+Le résultat dominant pour une cible fixe a lui aussi un domaine de validité évident. On ne peut plus se fier à un préfacteur schématique de probabilité tel que \(4\pi^2g^2\) lorsqu’il approche ou dépasse l’unité.
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:33}
+\audiencequestion{Le résultat schématique signifie-t-il que \(g\) doit être inférieur à environ \(1/(2\pi)\) ?}
+\lecturerresponse{Soit \(g\) est assez petit pour que ce premier terme soit utile, soit le modèle est incomplet. Une particule peut subir une première diffusion, revenir et en subir une deuxième, puis une troisième, et ainsi de suite. L’amplitude complète est une série infinie. Le terme le plus simple ne domine que pour de petites valeurs de \(g\) ; sinon, il faut sommer de nombreux graphes de Feynman.}
+\end{classroomqa}
+
+Les simples représentations dans l’espace-temps sont les prémices des graphes de Feynman. Leurs sommets indiquent des possibilités élémentaires : une particule entrante et une sortante correspondent à un facteur tel que \(\psi^\dagger\psi\) ; deux particules entrantes et deux sortantes correspondent à un facteur tel que \(\psi^\dagger\psi^\dagger\psi\psi\). La répétition des sommets produit des puissances supérieures de la constante de couplage et les termes d’ordre supérieur de la série.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{Une constante de couplage peut-elle avoir une partie imaginaire ?}
+\lecturerresponse{Des constantes de couplage complexes peuvent exister. Des combinaisons de phases irréductibles impaires sous \(T\) peuvent signaler une violation de l’invariance par renversement du temps : le processus renversé dans le temps n’a pas nécessairement l’amplitude reliée par la symétrie.}
+\end{classroomqa}
+
+\editorialnote{Le paramètre \(\theta\) de la QCD a été mentionné dans cet échange, mais c’est un coefficient réel qui multiplie une interaction impaire sous \(T\), et non une partie imaginaire d’un couplage. Une phase éliminable ou une phase complexe absorptive ne suffit pas, à elle seule, à établir une violation de \(T\). Cette conclusion ne s’applique qu’aux combinaisons de phases irréductibles impaires sous \(T\).}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:02}
+\audiencequestion{La particule sortante peut-elle être émise avant ou après l’absorption de la particule entrante, plutôt qu’au même instant ?}
+\lecturerresponse{C’est une question légitime, mais le modèle instantané ne permet pas d’y répondre. L’ordre temporel plus général sera traité plus tard.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:44}
+\audiencequestion{Comment rendre cette construction relativiste ?}
+\lecturerresponse{On peut brièvement indiquer qu’il faut combiner les termes conjugués et inclure un dénominateur faisant intervenir une racine carrée de \(\omega(k)\). La construction complète sera présentée plus tard.}
+\end{classroomqa}
+
+\editorialnote{La formule relativiste énoncée brièvement à l’oral ne peut pas être reconstituée avec assez de certitude pour être mise en équations. Seuls les ingrédients mentionnés et le fait que la construction complète est renvoyée à plus tard sont conservés.}
+
+Il faut également distinguer nettement la conservation de la charge de celle de la masse au repos.
+
+\begin{classroomqa}
+\lecturetimestamp{01:48:22}
+\audiencequestion{La masse au repos se conserve-t-elle au même titre que la charge électrique ?}
+\lecturerresponse{Non. En mécanique galiléenne non relativiste, la masse est une grandeur additive conservée. Dans les réactions relativistes, la somme des masses au repos des particules individuelles n’a pas à se conserver. Un électron et un positron peuvent s’annihiler en deux photons, tandis que la charge électrique reste conservée.}
+\end{classroomqa}
+
+\editorialnote{Pour un système relativiste fermé complet, la quadrimpulsion totale se conserve, et la masse invariante de ce système reste donc fixe. L’exemple de l’annihilation porte sur la somme des masses au repos des particules individuelles, et non sur la masse invariante du système fermé.}
+
+La conservation de la masse additive est donc un fait effectif en régime non relativiste, et non une règle fondamentale au même titre que la conservation de la charge électrique. L’invariance de phase trouvée plus haut exprime la symétrie plus profonde associée à la charge.
+
+Les prochaines étapes consistent à remplacer le substitut bosonique par des champs fermioniques et à considérer plusieurs espèces de particules---électrons, muons, quarks, photons et autres---, chacune ayant son propre champ et ses propres interactions autorisées.
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:39}
+\audiencequestion{Était-il légitime d’appeler champ électronique l’objet de l’exemple précédent alors que seuls les champs bosoniques ont été introduits jusqu’ici ?}
+\lecturerresponse{Uniquement en tant que version bosonique ou substitut de l’électron. La véritable théorie fermionique n’a pas encore été introduite.}
+\end{classroomqa}
