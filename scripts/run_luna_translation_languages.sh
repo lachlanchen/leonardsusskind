@@ -42,4 +42,3 @@ PY
   fi
   printf '[%s] Completed and published %s\n' "$(date -Is)" "$language" | tee -a .translation-work/luna-queue.log
 done
-
