@@ -1,0 +1,639 @@
+\chapter{Aplatissement local, dérivation covariante et courbure}
+
+\lectureoverview{En un point donné, on peut toujours rendre une métrique euclidienne au premier ordre. La courbure apparaît là où cette liberté de coordonnées s’arrête : dans l’échec, au second ordre, de l’ajustement des repères locaux voisins. Nous allons développer cette idée en trois étapes. Nous commencerons par les coordonnées normales, puis étudierons la dérivée covariante et sa connexion, et enfin la non-commutativité de deux dérivées covariantes, qui définit le tenseur de Riemann et donne un sens invariant à la gravité de marée.}
+
+\section{Le nécessaire fardeau des indices}
+
+La relativité générale est difficile d’une manière bien particulière. Ses idées fondamentales ne sont pas d’une obscurité insurmontable, mais un calcul se retrouve vite encombré d’indices, de dérivées et de symboles. Il existe des langages plus compacts : les repères mobiles, les formes différentielles, les spineurs, les twistors et d’autres outils apparentés permettent de condenser de longues équations en composantes en objets compacts. Apprendre ces langages demande toutefois un travail considérable, et une notation compacte peut masquer les mécanismes qu’il importe le plus de comprendre lors d’une première approche.
+
+Les équations de Maxwell en donnent un exemple. Écrites composante par composante, elles se ramènent à plusieurs équations distinctes. La notation vectorielle les rassemble sous forme d’équations de divergence et de rotationnel, ce qui rend leur structure plus facile à voir. La relativité générale admet des condensations analogues, mais la méthode des composantes reste la voie sûre lorsqu’il faut effectuer un calcul explicite. Nous conserverons donc les indices apparents. Une fois leur grammaire familière, le cheminement conceptuel devient beaucoup plus fluide, même si les calculs peuvent encore remplir des pages.
+
+Des logiciels de calcul symbolique peuvent aider pour ces calculs. À partir d’une métrique \(g_{mn}(x)\), un tel logiciel peut construire les symboles de Christoffel, les tenseurs de Riemann, de Ricci et d’Einstein. Il peut ensuite substituer ces expressions dans les équations de champ. Cela ne dispense pas de comprendre la signification de ces objets ; cela sépare simplement le développement mécanique de la géométrie.
+
+\begin{classroomqa}
+\audiencequestion{Quels étaient les domaines de recherche actifs en relativité générale à l’époque de cette conférence ?}
+\lecturerresponse{La conférence en distinguait plusieurs. La gravité quantique et la physique quantique des trous noirs étaient des problèmes centraux de la théorie fondamentale. L’astrophysique classique et la relativité numérique étudiaient des systèmes tels que des trous noirs en orbite ou en fusion, pour lesquels résoudre les équations d’Einstein et prédire le rayonnement gravitationnel exige bien davantage que de fournir aveuglément des équations à un ordinateur. Ces mêmes structures mathématiques trouvaient aussi des applications en physique de la matière condensée et en dynamique des fluides. L’évolution historique était tout aussi frappante : la relativité générale, qui relevait d’un domaine relativement restreint dans les 1960, était devenue l’un des langages centraux de la physique théorique, étroitement lié à la théorie quantique des champs.
+\lecturetimestamp{00:05:15}}
+\end{classroomqa}
+
+C’est la dernière conférence consacrée à la géométrie riemannienne pour elle-même. À partir de la prochaine, la géométrie sera interprétée comme la gravité. Le lien apparaît déjà. Distinguer un véritable champ gravitationnel d’un champ apparent dû à des coordonnées accélérées ou curvilignes revient mathématiquement au même que distinguer une métrique courbe d’une métrique plate exprimée dans des coordonnées peu commodes.
+
+\section{La question invariante}
+
+Une géométrie bidimensionnelle est plate lorsque la géométrie euclidienne y vaut intrinsèquement : les droites, les parallèles, les relations entre les angles d’un triangle et les mesures de distance ont toutes leur forme euclidienne. On pourrait être tenté d’affirmer que la platitude signifie \(g_{mn}=\delta_{mn}\), mais cette affirmation dépend des coordonnées. Même dans le plan ordinaire, la métrique dépend de la position en coordonnées polaires. La formulation correcte est qu’une région plate admet des coordonnées dans lesquelles la métrique est constante et euclidienne dans toute la région.
+
+Supposons plutôt que la métrique nous soit donnée dans des coordonnées quelconques. Une mauvaise méthode consisterait à passer en revue des systèmes de coordonnées, à transformer chaque fois la métrique et à espérer finir par trouver une forme cartésienne. Comme les possibilités sont infinies, ce n’est pas un critère pratique.
+
+La bonne stratégie consiste à construire un diagnostic à partir de \(g_{mn}\) et de ses dérivées. Nous voulons un objet \(R\) ayant deux propriétés décisives :
+\[
+\begin{aligned}
+R=0
+&\quad\Longleftrightarrow\quad
+\text{locally flat geometry},\\
+R\neq 0 \text{ at } P
+&\quad\Longrightarrow\quad
+\text{curvature at } P.
+\end{aligned}
+\]
+Surtout, \(R\) doit être un tenseur. Si un tenseur s’annule dans un système de coordonnées, il s’annule dans tous les systèmes ; il n’est donc pas nécessaire de chercher des coordonnées.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_01.png}
+\caption{Le test invariant recherché : la métrique n’a pas à être manifestement égale à \(\delta_{mn}\), tandis qu’un objet de courbure nul doit caractériser une géométrie localement plate.}
+\lectureframe{00:18:20}
+\end{figure}
+
+La précision \emph{localement} est importante. Un tenseur de Riemann nul garantit une géométrie euclidienne locale ; des identifications globales peuvent néanmoins donner lieu à une topologie non triviale. Un cylindre plat ou un tore plat, par exemple, peut être euclidien localement sans être le plan à l’échelle globale.
+
+\section{La géométrie métrique à petite échelle}
+
+Il est utile de voir comment la situation change avec la dimension. Un espace de dimension zéro n’est qu’un point. Un espace riemannien connexe de dimension un peut être localement redressé en une droite ; globalement, il peut être un intervalle, une droite ou une boucle. Un insecte confiné à un circuit fermé unidimensionnel peut en mesurer la circonférence, mais le fait que le circuit soit incurvé dans une pièce ambiante ne modifie pas sa métrique intrinsèque.
+
+En deux dimensions, la géométrie intrinsèque est bien plus riche : un plan, une sphère, une surface terrestre irrégulière et un tore peuvent différer même localement, et leurs topologies globales peuvent également être différentes. La métrique mesure les distances infinitésimales :
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:l3-line-element}
+\end{equation}
+La quantité \(ds^2\) est un scalaire. Les variations de \(dx^m\) lors d’une transformation de coordonnées sont donc exactement compensées par la transformation de \(g_{mn}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_02.png}
+\caption{L’élément de longueur invariant exprimé à l’aide d’une métrique dépendant de la position.}
+\lectureframe{00:19:00}
+\end{figure}
+
+La métrique est non dégénérée et possède donc un inverse :
+\begin{equation}
+ g^{mn}g_{nr}=\delta^m{}_r.
+\label{eq:l3-inverse-metric}
+\end{equation}
+Le tenseur de Kronecker mixte \(\delta^m{}_r\) est l’application identité. En géométrie riemannienne ordinaire, la métrique est également définie positive,
+\begin{equation}
+ g_{mn}u^m u^n>0
+\qquad\text{for every nonzero }u^m.
+\label{eq:l3-positive}
+\end{equation}
+L’espace-temps lorentzien relâchera par la suite cette condition de positivité tout en conservant la non-dégénérescence.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_03.png}
+\caption{La métrique inverse et le tenseur identité au tableau.}
+\lectureframe{00:20:40}
+\end{figure}
+
+La métrique établit une correspondance entre vecteurs et covecteurs :
+\begin{equation}
+ V_m=g_{mn}V^n,
+ \qquad
+ V^m=g^{mn}V_n.
+\label{eq:l3-raise-lower}
+\end{equation}
+Changer un indice est donc une opération effectuée par la métrique, et non une simple modification typographique.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_04.png}
+\caption{Monter et abaisser un indice vectoriel à l’aide de la métrique et de son inverse.}
+\lectureframe{00:24:40}
+\end{figure}
+
+Si toutes les composantes de \(g_{mn}\) sont constantes dans une région, un changement linéaire constant de coordonnées permet d’y diagonaliser et de normaliser la métrique. La géométrie est alors plate. Les informations intéressantes doivent donc être liées à la variation de la métrique avec la position.
+
+\section{Coordonnées normales : aplatissement au premier ordre}
+
+Choisissons un point \(P\). Le théorème des coordonnées normales affirme que l’on peut construire des coordonnées centrées en \(P\) telles que
+\begin{align}
+ g_{mn}(P)&=\delta_{mn}, \label{eq:l3-normal-metric}\\
+ \partial_r g_{mn}(P)&=0. \label{eq:l3-normal-first}
+\end{align}
+La conférence les appelle coordonnées normales de Gauss. Géométriquement, on trace des axes passant par \(P\), puis on prolonge leurs lignes de coordonnées aussi droit que la géométrie le permet. La notion précise de rectitude sera celle du mouvement géodésique.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_05.png}
+\caption{Coordonnées normales choisies de sorte que la métrique soit euclidienne au point considéré.}
+\lectureframe{00:28:50}
+\end{figure}
+
+Un tel repère n’est pas unique. Une rotation orthogonale en \(P\) conserve \(g_{mn}(P)=\delta_{mn}\). L’orientation des axes n’importe pas ; ce qui compte, c’est l’existence d’un repère dans lequel \eqref{eq:l3-normal-metric} et \eqref{eq:l3-normal-first} sont vérifiées toutes les deux.
+
+\begin{classroomqa}
+\audiencequestion{Ces conditions ne sont-elles vérifiées qu’au point choisi, ou dans tout un voisinage ?}
+\lecturerresponse{Elles sont vérifiées au point choisi \(P\). On peut centrer un repère normal en n’importe quel point, mais on ne peut généralement pas utiliser un même système de coordonnées sur une région courbe en gardant la métrique euclidienne et toutes ses dérivées premières nulles partout. Prolonger les mêmes coordonnées au-delà de \(P\) fait apparaître des dérivées d’ordre supérieur de la métrique.
+\lecturetimestamp{00:29:53}}
+\end{classroomqa}
+
+En \(P\), les dérivées secondes sont généralement inévitables :
+\begin{equation}
+ \partial_r\partial_s g_{mn}(P)\neq 0
+ \qquad\text{in general}.
+\label{eq:l3-normal-second}
+\end{equation}
+Ainsi, en un point, la métrique ne porte aucune information invariante sur la courbure à l’ordre zéro ou au premier ordre : la liberté de coordonnées permet de l’éliminer. Les premières informations invariantes possibles apparaissent au second ordre.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_06.png}
+\caption{Conditions des coordonnées normales : la métrique est euclidienne, ses dérivées premières s’annulent et ses dérivées secondes peuvent être non nulles.}
+\lectureframe{00:30:50}
+\end{figure}
+
+\subsection{Pourquoi la liberté de coordonnées suffit}
+
+Prenons \(P\) comme origine commune des coordonnées \(x^m\) et \(y^m\). Après avoir ajusté la métrique à l’origine au moyen d’une transformation linéaire, considérons la partie quadratique d’un changement de coordonnées supplémentaire :
+\begin{equation}
+ x^m
+ =y^m+C^m{}_{nr}y^n y^r+O(y^3),
+ \qquad C^m{}_{nr}=C^m{}_{rn}.
+\label{eq:l3-quadratic-transform}
+\end{equation}
+En dimension quatre, la paire symétrique \(nr\) admet
+\[
+\frac{4(4+1)}{2}=10
+\]
+choix indépendants. Pour chacune des quatre valeurs de \(m\), il y a dix coefficients \(C^m{}_{nr}\), soit quarante coefficients quadratiques.
+
+En dimension quatre, la métrique symétrique possède elle aussi dix composantes indépendantes. Chaque composante a quatre dérivées premières ; les conditions \(\partial_r g_{mn}(P)=0\) représentent donc quarante équations. Cette égalité montre que la liberté quadratique de changement de coordonnées a exactement la dimension voulue pour imposer les conditions sur les dérivées premières. Le théorème des coordonnées normales garantit l’existence ; le décompte constitue un contrôle structurel utile, mais ne démontre pas à lui seul qu’un système non linéaire arbitraire est résoluble.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_07.png}
+\caption{La transformation quadratique des coordonnées et les dix monômes quadratiques indépendants en dimension quatre.}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce une tentative de transformation de coordonnées :
+\(x^m=y^m+C^m{}_{nr}y^n y^r+\cdots\)?}
+\lecturerresponse{Oui. On choisit les coefficients \(C^m{}_{nr}\) de sorte que, dans les nouvelles coordonnées, les dérivées premières de la métrique s’annulent à l’origine commune. La partie linéaire maintient inversible le jacobien au voisinage de ce point, tandis que la partie quadratique ajuste les dérivées premières de la métrique.
+\lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Est-ce cela que signifie l’expression « une géométrie lisse est localement plate » ?}
+\lecturerresponse{C’est l’énoncé pertinent au premier ordre. À suffisamment petite échelle, une surface lisse est approximée par son plan tangent, et les coordonnées normales expriment ce fait par \(g_{mn}(P)=\delta_{mn}\) et \(\partial_r g_{mn}(P)=0\). La platitude exacte dans un voisinage est une condition plus forte : elle exige aussi que le tenseur de courbure s’y annule.
+\lecturetimestamp{00:36:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{L’égalité entre quarante coefficients et quarante équations garantit-elle vraiment que le système peut être résolu ?}
+\lecturerresponse{Ce décompte repère la liberté de coordonnées nécessaire, tandis que le théorème garantit la construction locale pour une métrique lisse et non dégénérée. La conférence propose de vérifier directement le cas bidimensionnel à titre d’exercice. L’argument ne dépend pas de la dimension quatre ; en dimension \(d\), les mêmes propriétés de symétrie et la même liberté de coordonnées s’accordent.
+\lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi le développement ne comporte-t-il pas de terme constant, et quel est le terme du premier ordre ?}
+\lecturerresponse{Le terme \(y^m\) est celui du premier ordre. Le terme constant a été omis parce que les deux origines des coordonnées ont été choisies délibérément pour représenter le même point ; ainsi, \(y=0\) implique \(x=0\). Ce choix ne restreint pas la généralité.
+\lecturetimestamp{00:38:52}}
+\end{classroomqa}
+
+\section{Pourquoi la dérivation composante par composante échoue}
+
+Considérons maintenant un champ de vecteurs covariants \(V_m(x)\). Dans des coordonnées cartésiennes rectilignes d’un espace plat, les composantes d’un vecteur géométriquement constant sont constantes. On pourrait donc tenter de définir sa dérivée par \(\partial_rV_m\). La difficulté apparaît dès que le réseau de coordonnées est courbe.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_08.png}
+\caption{Un réseau de coordonnées curvilignes superposé à un repère local rectiligne.}
+\lectureframe{00:40:10}
+\end{figure}
+
+Plaçons le même vecteur géométrique en des points voisins. Dans un repère cartésien fixe, ses composantes ne changent pas. En revanche, dans une base curviligne, les vecteurs de base eux-mêmes tournent lorsqu’on se déplace ; la liste des composantes change donc, même si le vecteur, lui, ne change pas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_09.png}
+\caption{Le même vecteur acquiert des composantes différentes en des points voisins parce que la base locale des coordonnées a tourné.}
+\lectureframe{00:42:30}
+\end{figure}
+
+La condition naïve
+\begin{equation}
+ \partial_rV_m=0
+\label{eq:l3-naive-derivative}
+\end{equation}
+peut donc être vraie dans un système de coordonnées et fausse dans un autre. Si \(\partial_rV_m\) était un tenseur de rang deux, cela serait impossible : son annulation dans un repère entraînerait son annulation dans tous les repères. Les dérivées partielles ordinaires des composantes d’un vecteur ne sont donc pas les composantes d’un tenseur.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_10.png}
+\caption{La condition naïve, délibérément posée, de dérivée nulle, à côté d’une base curviligne qui change.}
+\lectureframe{00:44:00}
+\end{figure}
+
+Il nous faut une dérivée qui élimine la variation apparente due à la base tout en conservant la variation réelle du champ de vecteurs.
+
+\section{Définition de la dérivée covariante}
+
+La dérivation en \(P\) ne compare des valeurs que dans un voisinage arbitrairement petit de \(P\). Nous pouvons donc commencer en coordonnées normales centrées en ce point. Prenons un vecteur situé en un point voisin, ramenons-en l’origine en \(P\) et gardons ses composantes en coordonnées normales inchangées pendant ce déplacement. Comparer le vecteur ainsi transporté à celui qui se trouve déjà en \(P\), puis diviser par la séparation, donne la dérivée ordinaire dans ce repère local rectiligne.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_11.png}
+\caption{Comparaison locale : déplacer le vecteur du point voisin dans les coordonnées normales avant de calculer la différence.}
+\lectureframe{00:46:50}
+\end{figure}
+
+Exprimons maintenant cette dérivée définie géométriquement dans des coordonnées quelconques. Deux contributions interviennent : les composantes \(V_m\) peuvent varier, et la base de coordonnées peut elle aussi varier. La structure des indices fixe la forme du terme correctif :
+\begin{equation}
+ \nabla_rV_m
+ =\partial_rV_m-\Gamma^t{}_{rm}V_t.
+\label{eq:l3-covector-derivative}
+\end{equation}
+Les quantités \(\Gamma^t{}_{rm}\) sont les coefficients de connexion, également appelés symboles de Christoffel. Le signe moins convient à un indice vectoriel inférieur. Au centre \(P\) des coordonnées normales,
+\begin{equation}
+ \Gamma^t{}_{rm}(P)=0,
+\qquad
+ \nabla_rV_m(P)=\partial_rV_m(P).
+\label{eq:l3-gamma-normal-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_12.png}
+\caption{Dérivée covariante d’un covecteur : variation ordinaire des composantes moins la variation induite par le déplacement de la base.}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La relation \(\nabla_rV_m=\partial_rV_m-\Gamma^t{}_{rm}V_t\) est-elle valable dans des coordonnées quelconques, et que devient-elle en coordonnées normales ?}
+\lecturerresponse{La formule complète est valable dans des coordonnées quelconques. Au point choisi, en coordonnées normales, les dérivées premières de la métrique s’annulent, tout comme les symboles de Christoffel ; il ne reste donc que \(\partial_rV_m\). En dehors de ce point, les coefficients de connexion sont généralement non nuls, même dans ce même système de coordonnées normales.
+\lecturetimestamp{00:50:22}}
+\end{classroomqa}
+
+La dérivée covariante porte ce nom parce que l’objet entier \(\nabla_rV_m\) se transforme de façon covariante en tant que tenseur ; ce nom ne fait pas simplement référence à l’indice inférieur de dérivation. Le terme de Christoffel corrige précisément la loi de transformation non tensorielle de la dérivée partielle.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_13.png}
+\caption{La dérivée complète d’un covecteur et son terme correctif de connexion.}
+\lectureframe{00:51:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Y a-t-il un lien avec la dérivée convective utilisée en mécanique des fluides ?}
+\lecturerresponse{La réponse de la conférence est prudente : il existe un lien. En mécanique des fluides aussi, on distingue la variation transportée par un écoulement de celle observée en un point fixe des coordonnées, et les dérivées covariantes interviennent dans les équations des fluides sur des coordonnées ou des espaces courbes. Par définition, ces opérateurs ne sont pas identiques, mais ils corrigent tous deux une dérivée naïve pour tenir compte d’une structure qui se déplace avec la description.
+\lecturetimestamp{00:52:31}}
+\end{classroomqa}
+
+Pour la connexion sans torsion utilisée ici,
+\begin{equation}
+ \Gamma^t{}_{rm}=\Gamma^t{}_{mr}.
+\label{eq:l3-torsion-free}
+\end{equation}
+Des géométries plus générales peuvent comporter de la torsion et ne pas satisfaire cette symétrie. La connexion considérée ici est celle qui intervient dans la formulation métrique standard de la relativité générale.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_14.png}
+\caption{Les symboles de Christoffel, identifiés aux coefficients symétriques de la connexion sans torsion.}
+\lectureframe{00:54:30}
+\end{figure}
+
+Une analogie physique est utile. Les coordonnées normales jouent le rôle d’un repère en chute libre en un événement : la correction de coordonnées peut y être rendue nulle. Des coordonnées curvilignes quelconques évoquent un ascenseur accéléré, où des forces apparentes apparaissent parce que le repère lui-même change. L’analogie est locale ; la courbure mesurera pourquoi un seul repère en chute libre ne peut éliminer la gravité dans toute une région étendue.
+
+\subsection{Une correction pour chaque indice tensoriel}
+
+Pour un tenseur covariant de rang deux \(T_{mn}\), chaque indice inférieur reçoit son propre terme correctif de connexion :
+\begin{equation}
+ \nabla_sT_{mn}
+ =\partial_sT_{mn}
+ -\Gamma^t{}_{sm}T_{tn}
+ -\Gamma^t{}_{sn}T_{mt}.
+\label{eq:l3-rank-two-derivative}
+\end{equation}
+Pour retenir la règle, gardez un indice fixe comme spectateur pendant que vous dérivez par rapport à l’autre, puis répétez l’opération pour le second indice. Les indices contravariants reçoivent des termes correspondants de signe opposé.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_15.png}
+\caption{Dérivée covariante d’un tenseur covariant de rang deux, avec une correction de Christoffel pour chacun des indices inférieurs.}
+\lectureframe{01:01:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Le symbole \(\partial_r\) désigne-t-il uniquement les coordonnées normales, et la formule tensorielle se limite-t-elle à ce repère ?}
+\lecturerresponse{Non. La notation \(\partial_r=\partial/\partial x^r\) a un sens dans n’importe quel système de coordonnées, et la formule complète de la dérivée covariante s’écrit pour des coordonnées quelconques. Les termes correctifs de Christoffel ne s’annulent qu’au point choisi d’un repère normal.
+\lecturetimestamp{00:57:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Lorsque la dérivée covariante se réduit à la dérivée partielle en coordonnées normales, cette réduction ne vaut-elle qu’au point choisi ? Les symboles de Christoffel sont-ils des tenseurs ?}
+\lecturerresponse{Oui, la réduction est ponctuelle. Les symboles de Christoffel ne sont pas des tenseurs : ils peuvent s’annuler en \(P\) dans des coordonnées normales et être non nuls au même point dans un autre système de coordonnées. Leur loi de transformation non tensorielle permet précisément à la combinaison dans \eqref{eq:l3-covector-derivative} de se transformer comme un tenseur.
+\lecturetimestamp{00:58:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{À quoi servira concrètement la dérivée covariante ?}
+\lecturerresponse{Aux équations de champ. Les champs gravitationnels varient d’un point à l’autre ; leurs équations doivent donc contenir des dérivées. En même temps, ces équations doivent avoir le même contenu dans tous les systèmes de coordonnées. La dérivation covariante transforme les tenseurs en tenseurs et permet ainsi d’écrire des équations différentielles dont la validité ne dépend pas d’un repère particulier.
+\lecturetimestamp{01:02:35}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Peut-on multiplier la dérivée covariante par un différentiel de coordonnées pour décrire la variation entre des points voisins ?}
+\lecturerresponse{Oui. Le long d’un déplacement infinitésimal \(dx^s\), la variation covariante est \(dx^s\nabla_sT\). Le terme partiel mesure la variation des composantes, tandis que les termes de connexion rendent compte de la variation de la base de coordonnées. Même dans l’espace plat exprimé en coordonnées polaires, cette distinction est nécessaire.
+\lecturetimestamp{01:03:22}}
+\end{classroomqa}
+
+\section{La compatibilité avec la métrique détermine la connexion}
+
+Appliquons la règle du tenseur de rang deux à la métrique. En \(P\), dans des coordonnées normales, \(\partial_sg_{mn}=0\) et \(\Gamma^t{}_{sm}=0\), donc \(\nabla_sg_{mn}=0\). Comme la dérivée covariante est un tenseur, ce résultat ponctuel vaut dans tous les systèmes de coordonnées :
+\begin{equation}
+ \nabla_sg_{mn}=0.
+\label{eq:l3-metric-compatibility}
+\end{equation}
+C’est la compatibilité avec la métrique. Elle signifie que le transport parallèle préserve la métrique, et donc les longueurs et les angles.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_16.png}
+\caption{L’équation de compatibilité avec la métrique ouvre la dérivation de la connexion à partir de la métrique.}
+\lectureframe{01:06:20}
+\end{figure}
+
+En développant \eqref{eq:l3-metric-compatibility}, on obtient
+\begin{equation}
+ 0
+ =\partial_sg_{mn}
+ -\Gamma^t{}_{sm}g_{tn}
+ -\Gamma^t{}_{sn}g_{mt}.
+\label{eq:l3-compat-expanded}
+\end{equation}
+Écrivons encore deux copies en permutant cycliquement les indices de dérivation et de la métrique :
+\begin{align}
+ 0
+ &=\partial_mg_{sn}
+ -\Gamma^t{}_{ms}g_{tn}
+ -\Gamma^t{}_{mn}g_{st},
+\label{eq:l3-compat-m}\\
+ 0
+ &=\partial_ng_{sm}
+ -\Gamma^t{}_{ns}g_{tm}
+ -\Gamma^t{}_{nm}g_{st}.
+\label{eq:l3-compat-n}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_17.png}
+\caption{Trois équations de compatibilité avec la métrique, avec permutation des indices.}
+\lectureframe{01:10:20}
+\end{figure}
+
+Additionnons \eqref{eq:l3-compat-m} et \eqref{eq:l3-compat-n}, puis soustrayons \eqref{eq:l3-compat-expanded}. En utilisant la symétrie sans torsion \eqref{eq:l3-torsion-free}, les termes de connexion indésirables s’annulent :
+\begin{equation}
+ \partial_mg_{sn}+\partial_ng_{sm}-\partial_sg_{mn}
+ =2\Gamma^t{}_{mn}g_{st}.
+\label{eq:l3-isolate-gamma-lowered}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_18.png}
+\caption{L’addition de deux équations de compatibilité et la soustraction de la troisième annulent les termes de Christoffel indésirables.}
+\lectureframe{01:12:10}
+\end{figure}
+
+En multipliant par \(g^{rs}\), on isole la connexion :
+\begin{equation}
+ \boxed{
+ \Gamma^r{}_{mn}
+ =\frac12 g^{rs}
+ \left(
+ \partial_mg_{sn}
+ +\partial_ng_{sm}
+ -\partial_sg_{mn}
+ \right)}
+\label{eq:l3-christoffel}
+\end{equation}
+La connexion de Levi-Civita est donc construite à partir de la métrique et de ses dérivées premières. Voilà pourquoi les symboles de Christoffel s’annulent au centre des coordonnées normales.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_19.png}
+\caption{La métrique inverse permet d’isoler le symbole de Christoffel dans l’équation de connexion avec indice abaissé.}
+\lectureframe{01:16:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi a-t-on posé à zéro les trois équations de compatibilité avec la métrique ?}
+\lecturerresponse{Au point choisi, en coordonnées normales, les dérivées ordinaires de la métrique s’annulent, de même que les symboles de Christoffel. La dérivée covariante de la métrique y est donc nulle. Pour établir cette propriété en un autre point, centrons un repère normal en ce point et recommençons. Puisque \(\nabla_sg_{mn}\) est un tenseur, son annulation est indépendante des coordonnées.
+\lecturetimestamp{01:14:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Quelles sont les dimensions de la métrique et du tableau des symboles de Christoffel, et pourquoi y a-t-il quarante composantes de Christoffel indépendantes en dimension quatre ?}
+\lecturerresponse{En dimension \(d\), \(g_{mn}\) est une matrice symétrique de taille \(d\times d\). La connexion a trois indices. Pour chaque indice supérieur fixé \(r\), la paire inférieure symétrique \(mn\) offre \(d(d+1)/2\) possibilités. Une connexion sans torsion possède donc \(d^2(d+1)/2\) composantes indépendantes, soit quarante lorsque \(d=4\).
+\lecturetimestamp{01:16:18}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_20.png}
+\caption{Le tableau pendant le décompte des composantes : dix possibilités pour la paire inférieure symétrique et quatre possibilités pour l’indice supérieur.}
+\lectureframe{01:16:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Quelle métrique intervient dans \eqref{eq:l3-christoffel} ? Faut-il utiliser une métrique en coordonnées normales différente en chaque point ?}
+\lecturerresponse{La formule utilise les composantes de la métrique dans les coordonnées globales ou locales choisies pour le calcul. Les coordonnées normales ne sont qu’un outil local servant à dériver la règle : on passe à un repère normal en un point, on y effectue la dérivation, on transforme le résultat en retour, puis on abandonne ce repère auxiliaire. Une fois \eqref{eq:l3-christoffel} connue, on l’évalue directement dans les coordonnées quelconques qui nous intéressent.
+\lecturetimestamp{01:17:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ni \(\nabla_sg_{mn}=0\) ni la formule de Christoffel n’indiquent-ils que l’espace est plat ?}
+\lecturerresponse{Non. La compatibilité avec la métrique vaut pour toute connexion de Levi-Civita, que l’espace soit courbe ou plat. Les symboles de Christoffel peuvent être non nuls même dans un plan plat exprimé en coordonnées polaires. Si tous les \(\Gamma^r{}_{mn}\) s’annulent dans toute une région pour un même système de coordonnées, ce système est cartésien dans cette région, qui est alors plate ; mais leur seule non-annulation ne révèle pas la courbure. Il faut encore un tenseur construit à partir des dérivées et des produits de \(\Gamma\).
+\lecturetimestamp{01:19:27}}
+\end{classroomqa}
+
+\section{Le cône révèle ce que la connexion ne peut déterminer}
+
+Considérons un cône arrondi. À l’écart de sa pointe, on peut l’approximer par un cône ordinaire fait de papier. Découpons un secteur dans un disque plat et collons ensemble les bords mis à nu. Le papier restant n’a subi aucun étirement ; localement, chaque point éloigné de la ligne de jonction et de la pointe demeure plat. Le secteur manquant est caractérisé par un angle de déficit \(\Delta\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_21.png}
+\caption{Le cône illustre une géométrie localement plate loin de sa pointe, mais dont la courbure non triviale est concentrée en celle-ci.}
+\lectureframe{01:23:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_22.png}
+\caption{La découpe d’un secteur dans un disque, suivie de l’identification de ses bords, produit l’angle de déficit conique.}
+\lectureframe{01:24:20}
+\end{figure}
+
+La construction en papier rend cette distinction tangible. Sur la feuille découpée, transportons un vecteur en le gardant parallèle dans le plan ordinaire. Après avoir joint les bords de la découpe, un parcours qui fait le tour de la pointe ramène le vecteur à son point de départ, mais sa direction est tournée par rapport à sa direction initiale.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_23.png}
+\caption{Démonstration du cône en papier : une feuille plane dont on a retiré un secteur devient un cône lorsque ses bords découpés sont réunis.}
+\lectureframe{01:25:10}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_24.png}
+\caption{Vecteurs tracés sur le secteur découpé avant que ses bords soient réunis.}
+\lectureframe{01:27:40}
+\end{figure}
+
+Cette rotation est l’holonomie. Elle ne résulte pas d’un mauvais choix de coordonnées le long d’un segment. Chaque petit segment peut être traité dans un repère localement plat. L’effet n’apparaît qu’après composition de ces comparaisons locales le long d’une boucle fermée. Pour le cône idéal, la rotation totale est égale à l’angle de déficit, au signe près selon l’orientation.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_25.png}
+\caption{Le transport parallèle autour de la pointe conique ramène un vecteur avec une direction tournée : l’holonomie enregistre la courbure enfermée.}
+\lectureframe{01:29:10}
+\end{figure}
+
+\section{Deux parcours autour d’une boucle infinitésimale}
+
+Remplaçons la boucle finie par un minuscule rectangle de coordonnées. En partant d’un sommet, effectuons d’abord le transport dans la direction \(r\), puis dans la direction \(s\). Comparons ce résultat à celui obtenu en effectuant d’abord le transport dans la direction \(s\), puis dans la direction \(r\). En coordonnées cartésiennes plates, les deux parcours donnent le même résultat. Dans une géométrie courbe, ce n’est généralement pas le cas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_26.png}
+\caption{Deux ordres de transport infinitésimal autour d’un rectangle de coordonnées.}
+\lectureframe{01:31:40}
+\end{figure}
+
+La mesure algébrique est le commutateur des dérivées covariantes :
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n.
+\label{eq:l3-commutator}
+\end{equation}
+Les dérivées partielles mixtes ordinaires commutent sur les fonctions régulières. Ici, le défaut de commutation vient de la dérivation des termes de connexion aussi bien que des composantes du vecteur.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_27.png}
+\caption{La boucle infinitésimale représentée par la différence entre les deux ordres de dérivation covariante.}
+\lectureframe{01:33:20}
+\end{figure}
+
+Pour effectuer ce calcul, considérons d’abord
+\[
+ T_{rn}=\nabla_rV_n
+\]
+comme un tenseur covariant de rang deux. Utilisons ensuite
+\eqref{eq:l3-rank-two-derivative} pour dériver \(T_{rn}\) dans la direction \(s\). Recommençons en échangeant \(r\) et \(s\), puis soustrayons les deux résultats. Le calcul est long, mais mécanique : développons, appliquons la règle du produit et simplifions les termes contenant les dérivées partielles secondes de \(V_n\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_28.png}
+\caption{Début de la dérivée covariante seconde, en traitant \(\nabla_rV_n\) comme un tenseur de rang deux.}
+\lectureframe{01:35:40}
+\end{figure}
+
+Avec la convention adoptée au tableau, on obtient
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n
+ =R_{srn}{}^tV_t.
+\label{eq:l3-riemann-commutator}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_29.png}
+\caption{Le commutateur des dérivées covariantes définit l’action du tenseur de courbure sur un covecteur.}
+\lectureframe{01:38:30}
+\end{figure}
+
+Pour cet ordre des termes dans le commutateur,
+\begin{equation}
+\begin{split}
+ R_{srn}{}^t
+={}&
+ \partial_r\Gamma^t{}_{sn}
+ -\partial_s\Gamma^t{}_{rn}\\
+&+\Gamma^p{}_{sn}\Gamma^t{}_{pr}
+ -\Gamma^p{}_{rn}\Gamma^t{}_{ps}.
+\end{split}
+\label{eq:l3-riemann}
+\end{equation}
+D’autres textes peuvent adopter le signe opposé ou disposer les indices différemment ; la convention est fixée en écrivant à la fois \eqref{eq:l3-riemann-commutator} et \eqref{eq:l3-riemann}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_30.png}
+\caption{Le tenseur de Riemann : deux dérivées de la connexion et deux termes quadratiques en la connexion.}
+\lectureframe{01:39:40}
+\end{figure}
+
+L’équation \eqref{eq:l3-christoffel} montre pourquoi la courbure apparaît dès le second ordre de la métrique. Chaque \(\Gamma\) contient une dérivée première de \(g\). Les termes dérivés de \eqref{eq:l3-riemann} contiennent donc des dérivées secondes de \(g\), tandis que les termes quadratiques contiennent des produits de dérivées premières. En coordonnées normales en \(P\), la connexion elle-même s’annule, mais ses dérivées ne s’annulent généralement pas : la courbure subsiste donc :
+\[
+\begin{aligned}
+ \Gamma^t{}_{mn}(P)&=0,\\
+ R_{srn}{}^t(P)
+ &=\partial_r\Gamma^t{}_{sn}(P)
+ -\partial_s\Gamma^t{}_{rn}(P).
+\end{aligned}
+\]
+Il faut bien distinguer les ordres de dérivation : le tenseur de Riemann fait intervenir les dérivées premières de \(\Gamma\), qui sont du second ordre par rapport à la métrique.
+
+C’est le critère recherché. Si toutes les composantes du tenseur de Riemann s’annulent dans toute une région, celle-ci est localement plate. Si une composante quelconque est non nulle en un point, aucun changement de coordonnées ne peut y supprimer la courbure. Un système de calcul formel peut tester ces composantes à partir d’une métrique analytique, mais le concept se résume au défaut de fermeture du transport parallèle autour d’une boucle infinitésimale.
+
+\section{La courbure comme gravité de marée}
+
+Ce critère géométrique a une signification physique directe. Imaginons un objet flexible constitué de triangles articulés. Dans une région plate, on peut le déplacer sans le déformer. Si on le pousse dans une région où la métrique intrinsèque est courbe, les différentes parties de l’assemblage ne peuvent pas toutes conserver leurs distances et leurs angles privilégiés. L’objet doit s’étirer, se comprimer ou se cisailler.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_31.png}
+\caption{Un objet articulé déplacé d’une région plate vers une protubérance courbe doit se déformer pour suivre la métrique locale.}
+\lectureframe{01:44:10}
+\end{figure}
+
+Cette déformation est le pendant géométrique de la force de marée. Dans un champ gravitationnel, des particules voisines en chute libre peuvent accélérer les unes par rapport aux autres : une direction peut être étirée tandis qu’une autre est comprimée. Le tenseur de Riemann détermine cette accélération relative. Dans le langage de la déviation géodésique, qui sera introduit plus loin, pour le vecteur tangent \(u^\mu\) et le vecteur séparation \(\xi^\mu\),
+\begin{equation}
+ \frac{D^2\xi^\mu}{D\tau^2}
+ =-R^\mu{}_{\nu\rho\sigma}
+ u^\nu\xi^\rho u^\sigma,
+\label{eq:l3-geodesic-deviation-preview}
+\end{equation}
+le signe global dépendant de la convention de courbure choisie. Cette équation n’est pas dérivée ici, mais elle précise l’affirmation du cours selon laquelle courbure et contrainte de marée relèvent littéralement de la même physique locale.
+
+Un champ gravitationnel idéal parfaitement uniforme ne présente aucune variation de marée et peut être éliminé localement en passant à un référentiel uniformément accéléré. Les champs réels produits par des masses isolées ne sont pas parfaitement uniformes. Le champ terrestre est approximativement radial et varie avec la position ; les trajectoires voisines en chute libre convergent ou s’écartent donc les unes des autres.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_32.png}
+\caption{Un champ gravitationnel radial varie à travers un corps étendu, produisant l’accélération relative identifiée à la gravité de marée.}
+\lectureframe{01:48:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-ce qui distingue un véritable champ gravitationnel du champ apparent observé dans un référentiel accéléré ?}
+\lecturerresponse{Un référentiel uniformément accéléré peut imiter un champ gravitationnel uniforme dans le cadre d’expériences locales, mais il ne produit pas d’accélération relative de marée. Un champ engendré par de la matière réelle varie d’un endroit à l’autre et produit donc des forces de marée. Ces forces sont une preuve invariante que l’effet ne relève pas simplement d’un changement de coordonnées. Un champ réel parfaitement uniforme est une idéalisation ; près d’une portion suffisamment petite de la surface d’un corps de grande taille, le champ réel ne peut être qu’approximativement uniforme. \lecturetimestamp{01:46:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi la taille de l’objet en chute importe-t-elle pour les effets de marée ?}
+\lecturerresponse{La courbure compare des points voisins. Un objet beaucoup plus petit que l’échelle de longueur sur laquelle le champ varie subit presque la même accélération en chacun de ses points et se déforme peu. Un objet étendu est soumis à une différence plus grande. Une bactérie en chute libre près de la Terre subit une contrainte de marée négligeable, tandis que la personne imaginaire de deux mille miles évoquée dans le cours serait fortement déformée. La courbure a une valeur locale, mais la déformation accumulée dépend de la séparation considérée.
+\lecturetimestamp{01:49:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si la platitude exige de vérifier la courbure en chaque point, le problème reste-t-il infini ?}
+\lecturerresponse{Pour une métrique donnée analytiquement, les dérivées et les composantes de courbure sont des expressions analytiques. On les calcule une fois en fonction de la position et l’on peut souvent voir si elles s’annulent identiquement. Si la métrique n’est fournie que sous la forme d’un tableau numérique, il faut alors estimer et examiner la courbure dans toute la région échantillonnée, ce qui peut effectivement être coûteux. Même dans ce cas, la démarche est bien mieux définie que la recherche de tous les systèmes de coordonnées possibles en chaque point.
+\lecturetimestamp{01:50:37}}
+\end{classroomqa}
+
+\section{Ce qui a été établi}
+
+Le raisonnement peut maintenant se lire comme une chaîne continue :
+\begin{enumerate}
+ \item En tout point choisi, on peut choisir des coordonnées telles que \(g_{mn}=\delta_{mn}\) et \(\partial_rg_{mn}=0\).
+ \item Les dérivées ordinaires des composantes d’un tenseur ne se transforment pas comme des tenseurs, car les bases de coordonnées varient d’un point à l’autre.
+ \item La connexion corrige cette variation de la base et définit la dérivation covariante.
+ \item La compatibilité métrique et l’absence de torsion déterminent la connexion de manière unique à partir de la métrique.
+ \item Deux dérivées covariantes ne commutent pas ; leur commutateur est donné par le tenseur de Riemann. Ce défaut de commutation mesure l’holonomie, la variation de la métrique au second ordre et la gravité de marée.
+\end{enumerate}
+
+Le critère de courbure annoncé a donc été construit sans choisir de système de coordonnées global privilégié. L’étape suivante consiste à passer de la géométrie riemannienne définie positive à l’espace-temps lorentzien, à appliquer ces outils à la géométrie de Schwarzschild d’une étoile ou d’un trou noir, puis à revenir aux géodésiques laissées de côté à la fin de ce cours.

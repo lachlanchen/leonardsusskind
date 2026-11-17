@@ -1,0 +1,707 @@
+\chapter{Géométrie intrinsèque et algèbre des tenseurs}
+
+La notation tensorielle n’est utile que si elle nous aide à raisonner.
+Une notation bien conçue fonctionne comme un jeu de pièces mécaniques : un indice supérieur s’accorde avec un indice inférieur, des objets de nature différente refusent d’être additionnés, et une contraction licite laisse un objet dont la loi de transformation se lit sur les indices restants. Ce mécanisme sert d’abord la géométrie. Nous voulons distinguer la courbure véritable de celle qui n’apparaît que parce que les coordonnées ont été déformées.
+
+\section{Observer la courbure de l’intérieur}
+
+Partons d’une simple feuille de papier. On peut la rouler en cylindre sans l’étirer ni la déchirer. Pour un observateur dans la pièce qui l’entoure, la feuille est manifestement courbe ; pourtant, les distances mesurées sur la feuille restent inchangées. Sa courbure extrinsèque a changé, mais pas sa géométrie intrinsèque.
+
+Imaginons maintenant une petite créature confinée sur la feuille. Elle ne peut pas regarder la pièce environnante. Elle peut mesurer des longueurs, comparer des directions voisines, construire des triangles et transporter des règles d’un endroit à un autre. La géométrie ne devrait exiger que ces expériences internes. En gravitation, la question correspondante est de savoir si un champ représente une véritable courbure de l’espace-temps ou seulement une description curviligne d’un espace-temps plat.
+
+Pour rendre concrète cette approche intrinsèque, remplaçons la surface par un réseau de points et de liens. Relions les points voisins, relevons la longueur de chaque lien et laissons les articulations pivoter. Un réseau triangulaire équilatéral est plat. Le pivotement des articulations ne modifie pas la géométrie codée, car on peut toujours remettre le réseau à plat sans changer aucune longueur.
+
+Allongeons maintenant les six liens qui se rejoignent en un sommet, en gardant fixes les liens environnants. Le sommet central ne peut plus rester dans le plan sans que les longueurs prescrites soient modifiées. Il doit se soulever pour former une bosse. Il n’a pas fallu regarder la surface de l’extérieur pour diagnostiquer cette courbure : les distances incompatibles entre points voisins la contenaient déjà.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_01.png}
+\caption{Modèle de la géométrie intrinsèque par des liens triangulaires. Modifier les liens autour d’un sommet impose une bosse qu’on ne peut aplanir sans changer les longueurs.}
+\lectureframe{00:06:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Quelle est donc la définition précise d’un espace plat ?}
+\lecturerresponse{La réponse opérationnelle est que ses relations de distance intrinsèques peuvent être réalisées sans déformation dans une configuration euclidienne. Dans le langage développé ci-dessous, un espace riemannien est plat si l’on peut trouver, dans toute la région considérée, des coordonnées pour lesquelles la métrique est la delta de Kronecker constante. Cela est toujours possible localement en un point ; le faire sur toute une région est la condition non triviale. Le tenseur de courbure finira par exprimer cette condition sans faire référence à un choix particulier de coordonnées.
+\lecturetimestamp{00:09:15}}
+\end{classroomqa}
+
+Cette réponse fait appel à la métrique avant que nous l’ayons établie. Nous nous tournons donc provisoirement vers l’analyse tensorielle plutôt que vers la courbure. Ce détour est indispensable : il faut reconnaître la métrique comme un tenseur avant de pouvoir distinguer sa dépendance aux coordonnées de la géométrie véritable.
+
+\section{Champs et descriptions coordonnées}
+
+En relativité générale, un tenseur est généralement un \emph{champ} tensoriel : en chaque point se trouve un tenseur, dont les composantes varient d’un point à l’autre. Un champ scalaire en est l’exemple le plus simple. La température sur une surface peut être représentée par un nombre \(S(P)\) en chaque point \(P\). Deux personnes peuvent attribuer au point des coordonnées différentes, mais elles doivent s’accorder sur la température en ce point.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_02.png}
+\caption{Un champ scalaire et deux étiquetages par coordonnées des mêmes points.}
+\lectureframe{00:11:25}
+\end{figure}
+
+Soient \(x^m\) et \(y^m\) deux systèmes de coordonnées réguliers. Chacun associe aux points une liste ordonnée de nombres et, dans une carte où leurs domaines se chevauchent, les deux listes sont reliées par des fonctions réciproques l’une de l’autre,
+\begin{equation}
+ y^m=y^m(x^1,\ldots,x^d),
+ \qquad
+ x^m=x^m(y^1,\ldots,y^d).
+\label{eq:coordinate-maps}
+\end{equation}
+La régularité permet de dériver les fonctions, et leur inversibilité garantit que le simple changement de coordonnées ne fait perdre ni ne confond aucun point.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_03.png}
+\caption{Deux applications de coordonnées régulières et inversibles décrivant la même région géométrique.}
+\lectureframe{00:13:10}
+\end{figure}
+
+Pour un champ scalaire, la loi de transformation est simplement
+\begin{equation}
+ S'(y)=S(x).
+\label{eq:scalar-law}
+\end{equation}
+Les fonctions figurant des deux côtés peuvent sembler différentes parce que leurs arguments diffèrent, mais leurs valeurs coïncident aux points correspondants. C’est le prototype d’un énoncé invariant.
+
+\section{Coordonnées obliques et deux types de composantes}
+
+Avant de définir les tenseurs généraux par leurs lois de transformation, il est utile de voir pourquoi les indices supérieurs et inférieurs d’un vecteur ne sont pas de simples variantes décoratives l’un de l’autre.
+
+Traçons un quadrillage de coordonnées dont les axes ne sont ni perpendiculaires ni normalisés. En un point, faire varier \(x^m\) d’une unité de coordonnée produit un vecteur de base \(\mathbf e_m\). En langage des coordonnées,
+\begin{equation}
+ \mathbf e_m=\frac{\partial \mathbf r}{\partial x^m}.
+\label{eq:coordinate-basis}
+\end{equation}
+Les vecteurs \(\mathbf e_m\) n’ont pas nécessairement une longueur unitaire ni des directions orthogonales.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_04.png}
+\caption{Quadrillage oblique et vecteurs de base associés aux coordonnées.}
+\lectureframe{00:17:40}
+\end{figure}
+
+Tout vecteur \(\mathbf V\) peut se développer dans cette base :
+\begin{equation}
+ \mathbf V=V^m\mathbf e_m.
+\label{eq:contravariant-expansion}
+\end{equation}
+Les nombres \(V^m\) sont les composantes \emph{contravariantes}. Ce sont les coefficients nécessaires pour construire le vecteur géométrique à partir des vecteurs de base.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_05.png}
+\caption{Développement d’un vecteur dans une base de coordonnées non orthogonale.}
+\lectureframe{00:19:20}
+\end{figure}
+
+Il existe un autre ensemble naturel de nombres :
+\begin{equation}
+ V_m=\mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf e_m.
+\label{eq:covariant-projection}
+\end{equation}
+Ce sont les composantes \emph{covariantes}. Dans une base oblique, elles ne sont pas simplement les mêmes coefficients avec l’indice déplacé. En substituant \eqref{eq:contravariant-expansion}, on obtient
+\begin{equation}
+ V_m
+ =V^n\bigl(\mathbf e_n\mathbin{\boldsymbol{\cdot}}\mathbf e_m\bigr).
+\label{eq:covariant-from-basis}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_06.png}
+\caption{Composantes covariantes obtenues en calculant les produits scalaires avec les vecteurs de base associés aux coordonnées.}
+\lectureframe{00:21:10}
+\end{figure}
+
+Les produits scalaires des vecteurs de base forment la matrice de Gram
+\begin{equation}
+ g_{mn}=\mathbf e_m\mathbin{\boldsymbol{\cdot}}\mathbf e_n.
+\label{eq:metric-gram}
+\end{equation}
+Par conséquent,
+\begin{equation}
+ V_m=g_{mn}V^n.
+\label{eq:lower-vector}
+\end{equation}
+La métrique apparaît ici pour la première fois. Elle convertit les coefficients du développement en projections parce qu’elle encode les longueurs des vecteurs de base et leurs angles mutuels.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_07.png}
+\caption{La métrique comme matrice de Gram des vecteurs de base.}
+\lectureframe{00:23:40}
+\end{figure}
+
+La même matrice permet de calculer la longueur :
+\begin{align}
+ \mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf V
+ &=(V^m\mathbf e_m)\mathbin{\boldsymbol{\cdot}}
+   (V^n\mathbf e_n) \notag\\
+ &=g_{mn}V^mV^n.
+\label{eq:vector-length}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_08.png}
+\caption{Norme d’un vecteur exprimée à l’aide de la métrique et des composantes contravariantes.}
+\lectureframe{00:25:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi introduire cette construction géométrique avant les lois formelles de transformation ?}
+\lecturerresponse{Elle donne aux indices un sens concret. Les composantes supérieures sont des coefficients de développement, les composantes inférieures sont des mesures linéaires du vecteur, et la métrique relie les deux. La définition formelle nous dira ensuite que ces rôles sont préservés par tout changement régulier de coordonnées. \lecturetimestamp{00:26:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Dans quels cas les composantes covariantes et contravariantes ont-elles les mêmes valeurs numériques ?}
+\lecturerresponse{Dans une base euclidienne orthonormée,
+\(g_{mn}=\delta_{mn}\), donc \(V_m=V^m\) composante par composante. La seule orthogonalité ne suffit pas : si les vecteurs de base ne sont pas de longueur unitaire, la métrique diagonale introduit encore des facteurs d’échelle.
+\lecturetimestamp{00:26:19}}
+\end{classroomqa}
+
+Les coordonnées polaires illustrent clairement cette mise en garde. Les lignes de coordonnées radiales et angulaires se coupent à angle droit, mais une variation donnée \(d\theta\) correspond à une distance physique \(r\,d\theta\). Dans le plan,
+\begin{equation}
+ ds^2=dr^2+r^2d\theta^2,
+\label{eq:polar-metric}
+\end{equation}
+la base est donc orthogonale, mais pas cartésienne.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_09.png}
+\caption{Coordonnées polaires : directions de coordonnées orthogonales et facteur d’échelle angulaire croissant avec le rayon.}
+\lectureframe{00:28:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Les vecteurs covariants sont-ils réellement des vecteurs différents, ou s’agit-il seulement d’une seconde façon de décrire le même vecteur ?}
+\lecturerresponse{Avant l’introduction d’une métrique, un vecteur et un covecteur sont deux types d’objets linéaires différents. Un vecteur appartient à l’espace tangent ; un covecteur est une forme linéaire sur cet espace. Une métrique non dégénérée établit entre eux une correspondance bijective, représentée par \(V_m=g_{mn}V^n\), mais il ne faut pas confondre cette correspondance avec une identité. \lecturetimestamp{00:29:10}}
+\end{classroomqa}
+
+\section{Les lois de transformation définissent le tenseur}
+
+La définition formelle la plus sûre est opérationnelle : un tableau est un tenseur si ses composantes se transforment avec les facteurs jacobiens appropriés.
+En dérivant \eqref{eq:coordinate-maps}, on obtient
+\begin{equation}
+ dy^m=\frac{\partial y^m}{\partial x^n}\,dx^n.
+\label{eq:differential-law}
+\end{equation}
+Tout vecteur contravariant obéit à la même règle,
+\begin{equation}
+ V'^m(y)
+ =\frac{\partial y^m}{\partial x^n}V^n(x).
+\label{eq:contravariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_10.png}
+\caption{Loi de transformation contravariante, calquée sur la transformation des différentielles de coordonnées.}
+\lectureframe{00:32:50}
+\end{figure}
+
+Un covecteur se transforme avec le jacobien inverse :
+\begin{equation}
+ W'_m(y)
+ =\frac{\partial x^n}{\partial y^m}W_n(x).
+\label{eq:covariant-law}
+\end{equation}
+Le gradient d’un scalaire en est l’exemple standard. En appliquant la règle de dérivation en chaîne à \eqref{eq:scalar-law},
+\begin{equation}
+ \frac{\partial S}{\partial y^m}
+ =\frac{\partial x^n}{\partial y^m}
+  \frac{\partial S}{\partial x^n}.
+\label{eq:gradient-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_11.png}
+\caption{Transformation du gradient d’un scalaire comme covecteur, par la règle de dérivation en chaîne.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Les composantes supérieures et inférieures ont-elles nécessairement les mêmes unités physiques ?}
+\lecturerresponse{Non. Les composantes coordonnées héritent des unités et des conventions d’échelle des coordonnées et de leurs vecteurs de base. Si une coordonnée est une longueur et une autre un angle, leurs composantes peuvent même avoir des dimensions différentes. C’est la contraction complète qui est l’objet dont les dimensions physiques sont indépendantes des coordonnées.
+\lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi s’agit-il de dérivées partielles et non de dérivées ordinaires ?}
+\lecturerresponse{Un champ dépend de plusieurs coordonnées. Le jacobien indique comment une fonction coordonnée varie lorsque l’un de ses arguments varie, les autres étant maintenus fixes ; ses éléments sont donc des dérivées partielles.
+\lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+Le schéma s’étend maintenant mécaniquement. Chaque indice primé supérieur apporte un facteur \(\partial y/\partial x\) ; chaque indice primé inférieur apporte un facteur \(\partial x/\partial y\). Un tenseur mixte se transforme selon
+\begin{equation}
+ T'^m{}_n
+ =
+ \frac{\partial y^m}{\partial x^p}
+ \frac{\partial x^q}{\partial y^n}
+ T^p{}_q,
+\label{eq:mixed-law}
+\end{equation}
+et un tenseur covariant de rang deux selon
+\begin{equation}
+ W'_{mn}
+ =
+ \frac{\partial x^p}{\partial y^m}
+ \frac{\partial x^q}{\partial y^n}
+ W_{pq}.
+\label{eq:rank-two-covariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_12.png}
+\caption{Loi de transformation d’un tenseur ayant un indice supérieur et un indice inférieur.}
+\lectureframe{00:40:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_13.png}
+\caption{Loi de transformation d’un tenseur covariant de rang deux, avec un jacobien inverse pour chaque indice inférieur.}
+\lectureframe{00:42:15}
+\end{figure}
+
+Les indices répétés sont sommés, sauf indication contraire. Cette convention supprime les signes de sommation tout en conservant toute l’information nécessaire pour les reconstituer. Dans un terme, un indice muet répété doit apparaître exactement deux fois, une fois en position supérieure et une fois en position inférieure ; un indice libre apparaît une fois dans chaque terme d’une équation.
+
+\begin{classroomqa}
+\audiencequestion{Qui a introduit cette notation de sommation ?}
+\lecturerresponse{On l’attribue traditionnellement à Einstein, d’où son nom de convention de sommation d’Einstein. Son intérêt ne tient pas à une anecdote historique : la disposition des indices rend immédiatement visibles les opérations tensorielles licites. \lecturetimestamp{00:43:21}}
+\end{classroomqa}
+
+\section{Équations tensorielles et vérité indépendante des coordonnées}
+
+Les composantes varient avec les coordonnées, mais une équation tensorielle reste vraie dans tout système de coordonnées. Si deux tenseurs de même type vérifient \(W=T\), leur différence est le tenseur nul :
+\begin{equation}
+ W^{m\cdots}{}_{\cdots n}
+ -T^{m\cdots}{}_{\cdots n}=0.
+\label{eq:tensor-equality}
+\end{equation}
+La loi de transformation est linéaire ; des composantes nulles dans un système le restent donc dans tous les systèmes. La correspondance des indices libres des deux côtés est indispensable. Une équation entre des objets de types tensoriels différents n’a aucun sens indépendant des coordonnées.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_14.png}
+\caption{La correspondance des structures d’indices transforme l’égalité des composantes en une équation tensorielle valable dans tout système de coordonnées.}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Qu’est-ce qui est exactement invariant si les composantes du vecteur changent ?}
+\lecturerresponse{Le tenseur géométrique et la vérité d’une équation tensorielle sont invariants ; la liste des composantes coordonnées ne l’est pas. Un scalaire est le cas particulier sans indice : sa valeur numérique en un point est donc la même dans tous les systèmes de coordonnées. \lecturetimestamp{00:47:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La norme du vecteur est-elle l’analogue invariant, et une norme nulle signifie-t-elle que le vecteur est nul ?}
+\lecturerresponse{Une fois la métrique donnée, la contraction \(g_{mn}V^mV^n\) est un scalaire et donc une norme au carré invariante. En géométrie définie positive, elle ne s’annule que pour le vecteur nul. Dans un espace-temps lorentzien, un vecteur nul non nul peut avoir une norme nulle ; il faut donc distinguer ces deux affirmations. \lecturetimestamp{00:48:04}}
+\end{classroomqa}
+
+\section{Algèbre tensorielle : opérations autorisées}
+
+Le tableau rassemble les principales opérations dont nous aurons besoin : multiplier par un scalaire, additionner ou soustraire des tenseurs de même type, former des produits tensoriels, contracter un indice supérieur avec un indice inférieur et, plus tard, dériver de façon covariante.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_15.png}
+\caption{Inventaire des opérations tensorielles : addition, multiplication, contraction et dérivation.}
+\lectureframe{00:50:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Par rapport à quoi dériver ?}
+\lecturerresponse{Par rapport à la position, donc aux coordonnées. Les dérivées ordinaires des composantes ne se transforment généralement pas comme des tenseurs, car les jacobiens varient eux-mêmes. La dérivation covariante remédie à cela, mais sa construction attendra que les préliminaires géométriques soient établis. \lecturetimestamp{00:51:49}}
+\end{classroomqa}
+
+La multiplication par un scalaire est immédiate. L’addition et la soustraction exigent des tenseurs de même type :
+\begin{equation}
+ C^m{}_n=A^m{}_n+B^m{}_n,
+\qquad
+ D^m{}_n=A^m{}_n-B^m{}_n.
+\label{eq:tensor-addition}
+\end{equation}
+On ne peut pas additionner un vecteur à un covecteur, ni un tenseur de rang deux à un scalaire, pas plus qu’on ne peut additionner une vitesse à une aire.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_16.png}
+\caption{L’addition, définie composante par composante, n’est possible que pour des tenseurs ayant la même structure d’indices libres.}
+\lectureframe{00:53:00}
+\end{figure}
+
+Le produit tensoriel combine tous les indices de ses facteurs. Par exemple,
+\begin{equation}
+ T^{mn}=V^mW^n,
+\qquad
+ S^m{}_n=V^mU_n.
+\label{eq:tensor-products}
+\end{equation}
+En quatre dimensions, \(T^{mn}\) possède seize composantes. Aucun indice n’a été sommé : il s’agit donc d’un produit extérieur, et non d’un produit scalaire.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_17.png}
+\caption{Produit tensoriel conservant un indice libre de chacun des facteurs vectoriels.}
+\lectureframe{00:55:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Le produit de deux vecteurs désigne-t-il ici le produit scalaire ?}
+\lecturerresponse{Non. Un produit scalaire contracte un indice et donne un scalaire. Le produit tensoriel laisse les deux indices libres et donne donc un tenseur de rang deux. En quatre dimensions, celui-ci a seize composantes, et non une seule. \lecturetimestamp{00:56:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Puisque les valeurs des composantes commutent, permuter les deux facteurs vectoriels ne change-t-il rien ?}
+\lecturerresponse{Pour des composantes scalaires ordinaires,
+\(V^mW^n=W^nV^m\). Mais les places des indices dans le tenseur sont ordonnées. Si l’on permute les facteurs puis nomme \(m\) la première place et \(n\) la seconde, on obtient le tableau transposé ; \(T^{mn}\) n’est pas nécessairement égal à \(T^{nm}\).
+\lecturetimestamp{00:58:52}}
+\end{classroomqa}
+
+\section{Contraction et lemme du jacobien inverse}
+
+La règle de dérivation en chaîne est la clé de la contraction. Puisque les applications de coordonnées sont inverses l’une de l’autre,
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =
+ \frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\label{eq:inverse-jacobian}
+\end{equation}
+Les deux matrices jacobiennes sont inverses l’une de l’autre, et leur produit est le delta de Kronecker.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_18.png}
+\caption{Identité du jacobien inverse, préparée comme lemme fondant la contraction tensorielle.}
+\lectureframe{01:02:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{De quel type d’objet s’agit-il, le jacobien inverse ?}
+\lecturerresponse{C’est la matrice dérivée de l’application de coordonnées inverse. Ses éléments sont \(\partial x^b/\partial y^m\), et sa multiplication matricielle par \(\partial y^m/\partial x^a\) donne l’identité grâce à la règle de dérivation en chaîne à plusieurs variables. \lecturetimestamp{01:02:37}}
+\end{classroomqa}
+
+Une démonstration rapide rend la notation transparente. Pour toute fonction scalaire \(f\),
+\begin{equation}
+ \frac{\partial f}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial f}{\partial x^a}.
+\end{equation}
+En choisissant \(f=x^b\), on obtient
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_19.png}
+\caption{La règle de dérivation en chaîne réduit les jacobiens inverses au delta de Kronecker.}
+\lectureframe{01:04:55}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\delta^b{}_a\) est-il l’identité uniquement dans les coordonnées cartésiennes ?}
+\lecturerresponse{Non. Le tenseur mixte \(\delta^b{}_a\) représente l’application identité dans tout système de coordonnées. Une métrique euclidienne écrite sous la forme \(\delta_{ab}\) est particulière aux coordonnées cartésiennes orthonormées, mais il ne faut pas confondre cette métrique avec l’identité à indices mixtes.
+\lecturetimestamp{01:04:58}}
+\end{classroomqa}
+
+Considérons maintenant un tenseur mixte \(T^m{}_n\). Sa trace transformée est
+\begin{align}
+ T'^m{}_m
+ &=
+ \frac{\partial y^m}{\partial x^a}
+ \frac{\partial x^b}{\partial y^m}
+ T^a{}_b \notag\\
+ &=\delta^b{}_aT^a{}_b
+ =T^a{}_a.
+\label{eq:trace-invariant}
+\end{align}
+La quantité contractée n’a aucun indice libre : c’est donc un scalaire.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_20.png}
+\caption{Transformation d’un tenseur mixte avant la contraction des indices supérieur et inférieur.}
+\lectureframe{01:07:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_21.png}
+\caption{La contraction annule les jacobiens et laisse la même trace scalaire dans les deux systèmes de coordonnées.}
+\lectureframe{01:10:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Après une contraction, le résultat porte-t-il encore des indices ?}
+\lecturerresponse{Seule la paire contractée disparaît. Contracter les seuls indices supérieur et inférieur de \(T^m{}_n\) donne un scalaire. Dans un tenseur de rang supérieur, tous les indices non contractés restent libres.
+\lecturetimestamp{01:09:00}}
+\end{classroomqa}
+
+Par exemple,
+\begin{equation}
+ A^{mn}{}_{pq}
+ \longmapsto
+ A^{mn}{}_{pn}
+ =B^m{}_p
+\label{eq:higher-rank-contraction}
+\end{equation}
+contracte \(n\) et abaisse le rang de deux unités. Les lettres précises sont des indices muets ; la règle de structure consiste à sommer sur une place supérieure et une place inférieure.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_22.png}
+\caption{Une contraction de rang supérieur supprime un indice supérieur et un indice inférieur tout en préservant les indices libres restants.}
+\lectureframe{01:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi ne pas contracter de la même façon deux indices supérieurs ou deux indices inférieurs ?}
+\lecturerresponse{Deux indices supérieurs fournissent deux jacobiens de même orientation,
+\(\partial y^m/\partial x^a\) et \(\partial y^m/\partial x^b\). Leur produit ne donne pas l’identité ; la somme proposée ne suit donc pas une loi de transformation tensorielle. Une métrique peut d’abord abaisser l’un des indices ; on peut alors effectuer une contraction entre un indice supérieur--et un indice inférieur. Sans ce tenseur supplémentaire, l’opération n’est pas invariante par changement de coordonnées. \lecturetimestamp{01:13:03}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_23.png}
+\caption{La tentative de contraction entre indices de même variance laisse deux jacobiens de même orientation et ne se réduit donc pas à l’identité.}
+\lectureframe{01:14:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La contraction est-elle l’équivalent tensoriel d’un produit intérieur ?}
+\lecturerresponse{Une contraction associe une place vectorielle à une place covectorielle et constitue l’appariement invariant fondamental. Avec une métrique, on peut transformer deux vecteurs en une telle paire ; le produit intérieur usuel est donc l’application d’une métrique suivie d’une contraction. \lecturetimestamp{01:14:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Les deux indices contractés doivent-ils parcourir le même ensemble de valeurs ?}
+\lecturerresponse{Oui. Ils se rapportent à des bases duales du même espace tangent et du même espace cotangent, de dimension \(d\). Sinon, la sommation et l’identité du jacobien inverse ne seraient pas définies.
+\lecturetimestamp{01:15:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi un tenseur nul dans un repère est-il nul dans tous les repères ?}
+\lecturerresponse{Chaque composante transformée est une combinaison linéaire des composantes initiales. Toutes ces combinaisons s’annulent si toutes les composantes d’entrée sont nulles. Cette simple linéarité rend les équations tensorielles indépendantes des coordonnées. \lecturetimestamp{01:15:31}}
+\end{classroomqa}
+
+\section{La métrique à partir de la distance au carré}
+
+Revenons maintenant à la géométrie. Pour un déplacement infinitésimal de composantes \(dx^m\), définissons le carré de sa longueur par
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:line-element}
+\end{equation}
+Il s’agit du théorème de Pythagore généralisé. La métrique peut varier d’un point à l’autre, et les termes hors diagonale traduisent la non-orthogonalité des directions de coordonnées.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_24.png}
+\caption{La liste des opérations tensorielles cède la place à la définition quadratique de l’élément de ligne infinitésimal.}
+\lectureframe{01:18:45}
+\end{figure}
+
+Seule la partie symétrique contribue, puisque
+\(dx^m dx^n=dx^n dx^m\). Nous pouvons donc poser
+\begin{equation}
+ g_{mn}=g_{nm}.
+\label{eq:metric-symmetry}
+\end{equation}
+En dimension \(d\), une métrique symétrique possède
+\begin{equation}
+ \frac{d(d+1)}{2}
+\label{eq:metric-component-count}
+\end{equation}
+composantes indépendantes : dix en quatre dimensions, six en trois et trois en deux.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_25.png}
+\caption{Élément de ligne et tableau symétrique des composantes, utilisés pour compter les composantes indépendantes de la métrique.}
+\lectureframe{01:21:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi y a-t-il dix composantes indépendantes de la métrique en quatre dimensions, et non seize ?}
+\lecturerresponse{Il y a quatre termes diagonaux et six paires hors diagonale non ordonnées. De façon équivalente,
+\(4(4+1)/2=10\). La partie antisymétrique, multipliée par le produit symétrique \(dx^m dx^n\), s’annulerait. \lecturetimestamp{01:19:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Combien y a-t-il de composantes indépendantes en trois dimensions ?}
+\lecturerresponse{Six : trois termes diagonaux et trois paires hors diagonale, soit \(3(3+1)/2\). \lecturetimestamp{01:20:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Et en deux dimensions ?}
+\lecturerresponse{Trois : \(g_{11}\), \(g_{22}\) et l’unique paire symétrique \(g_{12}=g_{21}\). \lecturetimestamp{01:22:28}}
+\end{classroomqa}
+
+\subsection{Pourquoi la métrique est un tenseur}
+
+La distance au carré est un scalaire. Écrire le même déplacement dans deux systèmes de coordonnées donne donc
+\begin{equation}
+ g_{mn}(x)\,dx^m dx^n
+ =
+ g'_{pq}(y)\,dy^pdy^q.
+\label{eq:length-invariance}
+\end{equation}
+Utilisons deux fois
+\begin{equation}
+ dx^m=\frac{\partial x^m}{\partial y^p}\,dy^p
+\end{equation}
+On obtient alors
+\begin{align}
+ ds^2
+ &=
+ g_{mn}(x)
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ dy^pdy^q.
+\label{eq:metric-transform-derivation}
+\end{align}
+La comparaison avec l’expression primée identifie
+\begin{equation}
+ g'_{pq}(y)
+ =
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ g_{mn}(x).
+\label{eq:metric-transformation}
+\end{equation}
+C’est exactement la loi de transformation d’un tenseur covariant de rang deux.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_26.png}
+\caption{Dérivation de la loi de transformation de la métrique à partir de l’invariance de l’élément de ligne scalaire.}
+\lectureframe{01:26:25}
+\end{figure}
+
+Cette conclusion explique aussi la présence de deux indices inférieurs. Chaque indice inférieur de la métrique s’apparie avec un indice supérieur d’une composante du déplacement. Lors d’un changement de coordonnées, les deux jacobiens inverses dans \eqref{eq:metric-transformation} annulent les deux jacobiens directs des différentielles, laissant \(ds^2\) inchangé.
+
+\section{La matrice métrique et son inverse}
+
+En un point, \(g_{mn}\) est une matrice symétrique :
+\begin{equation}
+ [g_{mn}]
+ =
+ \begin{pmatrix}
+ g_{11} & g_{12} & \cdots \\
+ g_{12} & g_{22} & \cdots \\
+ \vdots & \vdots & \ddots
+ \end{pmatrix}.
+\label{eq:metric-matrix}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_27.png}
+\caption{La métrique représentée par une matrice symétrique, une fois établie sa loi de transformation tensorielle.}
+\lectureframe{01:28:50}
+\end{figure}
+
+La métrique doit être non dégénérée : elle n’a aucune valeur propre nulle et possède donc un inverse. Notons cet inverse \(g^{mn}\).
+En notation indicielle,
+\begin{equation}
+ g_{mn}g^{np}=\delta_m{}^p.
+\label{eq:inverse-metric}
+\end{equation}
+L’indice répété \(n\) est sommé, tandis que \(m\) et \(p\) désignent la ligne et la colonne du produit.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_28.png}
+\caption{La métrique inverse introduite par la relation
+\(g_{mn}g^{np}=\delta_m{}^p\).}
+\lectureframe{01:31:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Où se trouvent concrètement les vecteurs et les tenseurs en un point ?}
+\lecturerresponse{Les vecteurs en un point forment son espace tangent \(T_P M\) ; les covecteurs forment l’espace dual \(T_P^*M\). Les tenseurs d’ordre supérieur appartiennent à des produits tensoriels de ces espaces. Un champ tensoriel associe de façon régulière un tel objet à chaque point. La métrique est une forme bilinéaire sur l’espace tangent, et son inverse est la forme bilinéaire correspondante sur l’espace cotangent. \lecturetimestamp{01:34:15}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_29.png}
+\caption{Vecteur représenté dans l’espace tangent attaché à un point d’une variété courbe.}
+\lectureframe{01:35:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La relation \(g_{mn}g^{np}=\delta_m{}^p\) ne concerne-t-elle que le cas \(m=p\) ?}
+\lecturerresponse{Non. C’est l’équation matricielle complète. Pour chaque paire ordonnée \((m,p)\), le produit sommé vaut un si \(m=p\) et zéro si \(m\ne p\). Toutes les équations diagonales et hors diagonale sont présentes simultanément. \lecturetimestamp{01:36:50}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_30.png}
+\caption{La relation d’inversion interprétée comme l’identité complète à indices mixtes.}
+\lectureframe{01:38:50}
+\end{figure}
+
+En deux dimensions, cela signifie
+\begin{equation}
+ \begin{pmatrix}
+ g_{11} & g_{12}\\
+ g_{12} & g_{22}
+ \end{pmatrix}
+ \begin{pmatrix}
+ g^{11} & g^{12}\\
+ g^{12} & g^{22}
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+ 1&0\\
+ 0&1
+ \end{pmatrix}.
+\label{eq:two-dimensional-inverse}
+\end{equation}
+Par exemple,
+\begin{align}
+ g_{11}g^{11}+g_{12}g^{12}&=1,\\
+ g_{11}g^{12}+g_{12}g^{22}&=0.
+\end{align}
+L’autre ligne fournit les deux équations restantes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_31.png}
+\caption{Identité de la métrique inverse développée sous la forme d’un produit matriciel explicite en deux dimensions.}
+\lectureframe{01:40:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{La métrique doit-elle être définie positive ?}
+\lecturerresponse{En géométrie riemannienne ordinaire, la définie-positivité garantit que le carré de toute longueur non nulle est positif. L’espace-temps utilise plutôt une métrique lorentzienne, dont un signe diffère des trois autres. Dans les deux cas, la condition requise ici est la non-dégénérescence, et non la positivité.
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Pourquoi exclure une valeur propre nulle ?}
+\lecturerresponse{Une valeur propre nulle rend la matrice métrique singulière : \(g^{mn}\) n’existe donc pas, et la métrique ne peut pas établir de correspondance bijective entre les vecteurs et les covecteurs. Au sens habituel de la géométrie différentielle, une métrique doit être non dégénérée. \lecturetimestamp{01:43:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Les dix composantes indépendantes d’une métrique en quatre dimensions ont-elles un rapport avec la théorie des cordes à dix dimensions ?}
+\lecturerresponse{Non. Le premier « dix » est simplement \(4(4+1)/2\), le nombre d’entrées d’une matrice symétrique de taille quatre sur quatre. L’apparition de dix dimensions d’espace-temps dans la théorie des supercordes a une autre origine. \lecturetimestamp{01:44:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si l’espace-temps lorentzien possède des vecteurs non nuls de longueur nulle, la métrique est-elle alors non inversible ?}
+\lecturerresponse{Non. Un vecteur nul vérifie \(g_{mn}V^mV^n=0\) : il s’agit d’une compensation au sein d’une forme quadratique indéfinie. Ce n’est pas un vecteur associé à une valeur propre nulle et vérifiant \(g_{mn}V^n=0\). Par exemple, la métrique de Minkowski a pour valeurs propres \(\pm1\) et est parfaitement inversible, tout en admettant des vecteurs de genre lumière. \lecturetimestamp{01:45:02}}
+\end{classroomqa}
+
+\section{Et maintenant}
+
+Nous pouvons maintenant énoncer clairement le programme géométrique. La métrique décrit les distances infinitésimales, se transforme de manière covariante et possède une inverse. Ses composantes peuvent sembler compliquées simplement parce que les coordonnées le sont. Pour déterminer si la géométrie elle-même est courbe, nous devons comparer la métrique en des points voisins d’une manière indépendante des coordonnées.
+
+Les dérivées ordinaires ne suffisent pas, car dériver un tenseur revient aussi à dériver les jacobiens, qui dépendent de la position, dans sa loi de transformation. L’étape suivante consiste donc à introduire la dérivation covariante. À partir des dérivées de la métrique, on construit une connexion ; à partir des dérivées et des produits de cette connexion, on construit la courbure. Ce n’est qu’alors que la question de la page courbée recevra sa réponse intrinsèque définitive.
