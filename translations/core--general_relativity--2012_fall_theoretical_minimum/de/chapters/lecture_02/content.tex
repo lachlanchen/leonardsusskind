@@ -1,0 +1,711 @@
+\chapter{Innere Geometrie und die Algebra der Tensoren}
+
+Tensorielle Notation ist nur dann nützlich, wenn sie uns einen Teil des Denkens abnimmt.
+Eine gut gewählte Notation funktioniert wie ein Baukasten mechanischer Teile: Ein oberer Index passt zu einem unteren, unvereinbare Objekte lassen sich nicht addieren, und eine zulässige Kontraktion ergibt ein Objekt, dessen Transformationsgesetz sich an den verbleibenden Indizes ablesen lässt. Der unmittelbare Zweck dieses Apparats ist geometrischer Natur. Wir wollen echte Krümmung von einer Krümmung unterscheiden, die nur deshalb auftritt, weil die Koordinaten gekrümmt gewählt wurden.
+
+\section{Krümmung aus der Innenperspektive}
+
+Betrachten wir zunächst ein gewöhnliches Blatt Papier. Es lässt sich zu einem Zylinder aufrollen, ohne es zu dehnen oder zu zerreißen. Für einen Beobachter im umgebenden Raum ist das Blatt eindeutig gekrümmt; dennoch bleiben die innerhalb des Blatts gemessenen Abstände unverändert. Seine extrinsische Krümmung hat sich geändert, seine innere Geometrie dagegen nicht.
+
+Stellen wir uns nun ein kleines Lebewesen vor, das auf das Blatt beschränkt ist. Es kann nicht in den umgebenden Raum hinausblicken. Es kann Längen messen, benachbarte Richtungen vergleichen, Dreiecke konstruieren und Maßstäbe von einem Ort zum anderen transportieren.
+Für die Geometrie sollten allein solche inneren Experimente maßgeblich sein. Die entsprechende Frage in der Gravitation lautet, ob ein Feld eine echte Raumzeitkrümmung beschreibt oder lediglich eine krummlinige Beschreibung flacher Raumzeit darstellt.
+
+Eine Möglichkeit, diese innere Sichtweise anschaulich zu machen, besteht darin, die Fläche durch ein Netz aus Punkten und Verbindungen zu ersetzen. Verbinden wir benachbarte Punkte, halten die Länge jeder Verbindung fest und lassen die Gelenke beweglich. Ein gleichseitiges Dreiecksgitter liegt flach. Werden die Gelenke gebogen, ändert sich die codierte Geometrie nicht, denn das Gitter lässt sich stets in die Ebene zurückführen, ohne eine Länge zu ändern.
+
+Verlängern wir nun die sechs Verbindungen, die an einem Eckpunkt zusammentreffen, und halten die übrigen Verbindungen fest. Der zentrale Eckpunkt kann dann nicht mehr in der Ebene bleiben, ohne die vorgegebenen Längen zu verletzen. Er muss sich zu einer Ausbeulung erheben. Um diese Krümmung festzustellen, war kein Blick von außen nötig: Die unvereinbaren Abstände zwischen benachbarten Punkten enthielten sie bereits.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_01.png}
+\caption{Das Modell der inneren Geometrie mit dreieckigen Verbindungen. Werden die Verbindungen um einen Eckpunkt verändert, entsteht eine Ausbeulung, die sich nicht ohne Längenänderung abflachen lässt.}
+\lectureframe{00:06:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was ist also die genaue Definition eines flachen Raums?}
+\lecturerresponse{Operativ gesehen lassen sich seine inneren Abstandsbeziehungen ohne Verzerrung in einer euklidischen Anordnung verwirklichen. In der weiter unten entwickelten Sprache ist ein Riemannscher Raum flach, wenn sich im gesamten betrachteten Gebiet Koordinaten finden lassen, in denen die Metrik der konstanten Kronecker-Delta-Matrix entspricht. An einem einzelnen Punkt ist dies lokal immer möglich; die Bedingung, dass dies über ein Gebiet hinweg gelingt, ist nicht trivial. Der Krümmungstensor wird diese Bedingung schließlich ohne Bezug auf eine besondere Koordinatenwahl formulieren.
+\lecturetimestamp{00:09:15}}
+\end{classroomqa}
+
+Diese Antwort setzt die Metrik voraus, bevor wir sie eingeführt haben. Deshalb wenden wir uns vorübergehend von der Krümmung der Tensoranalysis zu. Dieser Umweg ist unverzichtbar: Wir müssen die Metrik als Tensor erkennen, bevor wir ihre Koordinatenabhängigkeit von der eigentlichen Geometrie unterscheiden können.
+
+\section{Felder und Koordinatenbeschreibungen}
+
+Ein Tensor in der allgemeinen Relativitätstheorie ist gewöhnlich ein Tensor\emph{feld}: An jedem Punkt gibt es einen Tensor, und seine Komponenten ändern sich von Punkt zu Punkt. Ein Skalarfeld ist das einfachste Beispiel. Die Temperatur auf einer Fläche lässt sich durch eine Zahl \(S(P)\) an jedem Punkt \(P\) darstellen. Zwei Personen können denselben Punkt mit unterschiedlichen Koordinaten bezeichnen, müssen sich dort aber über die Temperatur einig sein.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_02.png}
+\caption{Ein Skalarfeld mit zwei Koordinatenbezeichnungen für dieselben Punkte.}
+\lectureframe{00:11:25}
+\end{figure}
+
+Seien \(x^m\) und \(y^m\) zwei glatte Koordinatensysteme. Jedes ordnet Punkten eine geordnete Liste von Zahlen zu. In einem überlappenden Koordinatengebiet sind die beiden Listen durch zueinander inverse Funktionen verknüpft,
+\begin{equation}
+ y^m=y^m(x^1,\ldots,x^d),
+ \qquad
+ x^m=x^m(y^1,\ldots,y^d).
+\label{eq:coordinate-maps}
+\end{equation}
+Die Glattheit ermöglicht Differentiation, und die Invertierbarkeit stellt sicher, dass durch den Koordinatenwechsel kein Punkt verloren geht oder mit einem anderen identifiziert wird.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_03.png}
+\caption{Zwei glatte, invertierbare Koordinatenabbildungen, die dasselbe geometrische Gebiet beschreiben.}
+\lectureframe{00:13:10}
+\end{figure}
+
+Für ein Skalarfeld lautet das Transformationsgesetz schlicht
+\begin{equation}
+ S'(y)=S(x).
+\label{eq:scalar-law}
+\end{equation}
+Die Funktionen auf beiden Seiten können unterschiedlich aussehen, weil ihre Argumente verschieden sind; an entsprechenden Punkten stimmen ihre Werte jedoch überein. Dies ist das Grundmuster einer invarianten Aussage.
+
+\section{Schiefwinklige Koordinaten und zwei Arten von Komponenten}
+
+Bevor wir allgemeine Tensoren durch Transformationsgesetze definieren, sollten wir uns ansehen, warum obere und untere Vektorindizes nicht bloß dekorative Varianten voneinander sind.
+
+Zeichnen wir ein Koordinatengitter, dessen Achsen weder senkrecht aufeinander stehen noch normiert sind. An einem Punkt führt eine Änderung von \(x^m\) um eine Koordinateneinheit zum Basisvektor \(\mathbf e_m\). In der Koordinatensprache gilt
+\begin{equation}
+ \mathbf e_m=\frac{\partial \mathbf r}{\partial x^m}.
+\label{eq:coordinate-basis}
+\end{equation}
+Die Vektoren \(\mathbf e_m\) müssen weder die Einheitslänge haben noch orthogonal sein.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_04.png}
+\caption{Ein schiefwinkliges Koordinatengitter und seine Koordinatenbasisvektoren.}
+\lectureframe{00:17:40}
+\end{figure}
+
+Jeder Vektor \(\mathbf V\) lässt sich in dieser Basis entwickeln:
+\begin{equation}
+ \mathbf V=V^m\mathbf e_m.
+\label{eq:contravariant-expansion}
+\end{equation}
+Die Zahlen \(V^m\) heißen \emph{kontravariante Komponenten}. Sie sind die Koeffizienten, aus denen sich der geometrische Vektor mit den Basisvektoren zusammensetzt.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_05.png}
+\caption{Entwicklung eines Vektors in einer nichtorthogonalen Koordinatenbasis.}
+\lectureframe{00:19:20}
+\end{figure}
+
+Es gibt noch eine weitere natürliche Menge von Zahlen:
+\begin{equation}
+ V_m=\mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf e_m.
+\label{eq:covariant-projection}
+\end{equation}
+Dies sind die \emph{kovarianten Komponenten}. In einer schiefwinkligen Basis erhält man sie nicht einfach dadurch, dass man bei denselben Koeffizienten den Index nach unten versetzt. Setzen wir \eqref{eq:contravariant-expansion} ein, so ergibt sich
+\begin{equation}
+ V_m
+ =V^n\bigl(\mathbf e_n\mathbin{\boldsymbol{\cdot}}\mathbf e_m\bigr).
+\label{eq:covariant-from-basis}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_06.png}
+\caption{Kovariante Komponenten, die durch Skalarprodukte mit den Koordinatenbasisvektoren gewonnen werden.}
+\lectureframe{00:21:10}
+\end{figure}
+
+Die Skalarprodukte der Basisvektoren bilden die Gram-Matrix
+\begin{equation}
+ g_{mn}=\mathbf e_m\mathbin{\boldsymbol{\cdot}}\mathbf e_n.
+\label{eq:metric-gram}
+\end{equation}
+Folglich gilt
+\begin{equation}
+ V_m=g_{mn}V^n.
+\label{eq:lower-vector}
+\end{equation}
+Hier tritt die Metrik erstmals auf. Sie überführt Entwicklungskoeffizienten in Projektionen, denn sie erfasst sowohl die Längen als auch die gegenseitigen Winkel der Koordinatenbasis.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_07.png}
+\caption{Die Metrik als Gram-Matrix der Basisvektoren.}
+\lectureframe{00:23:40}
+\end{figure}
+
+Dieselbe Matrix berechnet die Länge:
+\begin{align}
+ \mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf V
+ &=(V^m\mathbf e_m)\mathbin{\boldsymbol{\cdot}}
+   (V^n\mathbf e_n) \notag\\
+ &=g_{mn}V^mV^n.
+\label{eq:vector-length}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_08.png}
+\caption{Die Vektornorm, ausgedrückt mithilfe der Metrik und der kontravarianten Komponenten.}
+\lectureframe{00:25:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Warum führen wir diese geometrische Konstruktion ein, bevor wir die formalen Transformationsgesetze behandeln?}
+\lecturerresponse{Sie gibt den Indizes eine anschauliche Bedeutung. Obere Komponenten sind Entwicklungskoeffizienten, untere Komponenten sind lineare Messwerte des Vektors, und die Metrik stellt die Verbindung zwischen beiden her. Die formale Definition wird dann zeigen, dass diese Funktionen bei beliebigen glatten Koordinatenwechseln erhalten bleiben. \lecturetimestamp{00:26:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wann haben kovariante und kontravariante Komponenten dieselben Zahlenwerte?}
+\lecturerresponse{In einer orthonormalen euklidischen Basis gilt
+\(g_{mn}=\delta_{mn}\); daher gilt \(V_m=V^m\) komponentenweise. Orthogonalität allein genügt nicht: Haben die Basisvektoren keine Einheitslänge, enthält auch die diagonale Metrik noch Skalierungsfaktoren.
+\lecturetimestamp{00:26:19}}
+\end{classroomqa}
+
+Polarkoordinaten machen dies besonders deutlich. Radiale und winklige Koordinatenlinien stehen senkrecht aufeinander, dennoch entspricht einer festen Änderung \(d\theta\) die physikalische Strecke \(r\,d\theta\). In der Ebene gilt
+\begin{equation}
+ ds^2=dr^2+r^2d\theta^2,
+\label{eq:polar-metric}
+\end{equation}
+Die Basis ist also orthogonal, aber nicht kartesisch.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_09.png}
+\caption{Polarkoordinaten: orthogonale Koordinatenrichtungen mit einem Winkelskalenfaktor, der mit dem Radius wächst.}
+\lectureframe{00:28:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Sind kovariante Vektoren tatsächlich andere Vektoren oder nur eine zweite Art, denselben Vektor aufzulisten?}
+\lecturerresponse{Bevor eine Metrik vorgegeben ist, sind ein Vektor und ein Kovektor verschiedene Arten linearer Objekte. Ein Vektor gehört zum Tangentialraum; ein Kovektor ist ein lineares Funktional auf diesem Raum. Eine nicht ausgeartete Metrik stellt eine eineindeutige Zuordnung zwischen beiden her, dargestellt durch \(V_m=g_{mn}V^n\); diese Zuordnung darf jedoch nicht mit Identität verwechselt werden. \lecturetimestamp{00:29:10}}
+\end{classroomqa}
+
+\section{Transformationsgesetze definieren den Tensor}
+
+Die sicherste formale Definition ist operational: Eine Anordnung von Komponenten ist ein Tensor, wenn sich ihre Komponenten mit den passenden Jacobi-Faktoren transformieren.
+Differenzieren wir \eqref{eq:coordinate-maps}, so erhalten wir
+\begin{equation}
+ dy^m=\frac{\partial y^m}{\partial x^n}\,dx^n.
+\label{eq:differential-law}
+\end{equation}
+Jeder kontravariante Vektor erfüllt dasselbe Gesetz,
+\begin{equation}
+ V'^m(y)
+ =\frac{\partial y^m}{\partial x^n}V^n(x).
+\label{eq:contravariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_10.png}
+\caption{Das kontravariante Transformationsgesetz, nach dem Vorbild der Transformation von Koordinatendifferentialen.}
+\lectureframe{00:32:50}
+\end{figure}
+
+Ein Kovektor transformiert sich mit der inversen Jacobi-Matrix:
+\begin{equation}
+ W'_m(y)
+ =\frac{\partial x^n}{\partial y^m}W_n(x).
+\label{eq:covariant-law}
+\end{equation}
+Der Gradient eines Skalars ist das Standardbeispiel. Wenden wir die Kettenregel auf \eqref{eq:scalar-law} an, so folgt
+\begin{equation}
+ \frac{\partial S}{\partial y^m}
+ =\frac{\partial x^n}{\partial y^m}
+  \frac{\partial S}{\partial x^n}.
+\label{eq:gradient-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_11.png}
+\caption{Der Gradient eines Skalars transformiert sich gemäß der Kettenregel wie ein Kovektor.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Haben obere und untere Komponenten notwendigerweise dieselben physikalischen Einheiten?}
+\lecturerresponse{Nein. Koordinatenkomponenten übernehmen die Einheiten und Skalierungskonventionen der Koordinaten und ihrer Basisvektoren. Ist eine Koordinate eine Länge und eine andere ein Winkel, müssen ihre Komponenten nicht einmal dieselben Dimensionen haben. Die vollständige Kontraktion ist das Objekt, dessen physikalische Dimensionen unabhängig von den Koordinaten sind.
+\lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum verwenden wir partielle statt gewöhnlicher Ableitungen?}
+\lecturerresponse{Ein Feld hängt von mehreren Koordinaten ab. Die Jacobi-Matrix gibt an, wie sich eine Koordinatenfunktion ändert, wenn ein Argument variiert und die übrigen festgehalten werden; ihre Einträge sind daher partielle Ableitungen.
+\lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+Das Muster lässt sich nun mechanisch fortsetzen. Jeder obere gestrichene Index bringt einen Faktor \(\partial y/\partial x\) mit sich; jeder untere gestrichene Index einen Faktor \(\partial x/\partial y\). Ein gemischter Tensor transformiert sich gemäß
+\begin{equation}
+ T'^m{}_n
+ =
+ \frac{\partial y^m}{\partial x^p}
+ \frac{\partial x^q}{\partial y^n}
+ T^p{}_q,
+\label{eq:mixed-law}
+\end{equation}und ein kovarianter Tensor vom Rang zwei gemäß
+\begin{equation}
+ W'_{mn}
+ =
+ \frac{\partial x^p}{\partial y^m}
+ \frac{\partial x^q}{\partial y^n}
+ W_{pq}.
+\label{eq:rank-two-covariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_12.png}
+\caption{Transformationsgesetz für einen Tensor mit einem oberen und einem unteren Index.}
+\lectureframe{00:40:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_13.png}
+\caption{Ein kovariantes Transformationsgesetz vom Rang zwei mit einer inversen Jacobi-Matrix für jeden unteren Index.}
+\lectureframe{00:42:15}
+\end{figure}
+
+Wiederholte Indizes werden summiert, sofern nichts anderes angegeben ist. Diese Konvention lässt Summenzeichen weg, ohne die Informationen zu verlieren, die zu ihrer Rekonstruktion nötig sind. Ein wiederholter, stummer Index muss in einem Term genau zweimal auftreten, einmal oben und einmal unten; ein freier Index tritt in jedem Term einer Gleichung genau einmal auf.
+
+\begin{classroomqa}
+\audiencequestion{Wer hat diese Summationsnotation eingeführt?}
+\lecturerresponse{Üblicherweise wird sie Einstein zugeschrieben; daher heißt sie Einsteinsche Summenkonvention. Ihr Nutzen ist nicht bloß historischer Natur: An der Indexstruktur sind zulässige Tensoroperationen auf einen Blick zu erkennen. \lecturetimestamp{00:43:21}}
+\end{classroomqa}
+
+\section{Tensorielle Gleichungen und koordinatenunabhängige Wahrheit}
+
+Die Komponenten ändern sich mit den Koordinaten, doch eine tensorielle Gleichung bleibt in jedem Koordinatensystem gültig. Gilt für zwei Tensoren desselben Typs \(W=T\), so ist ihre Differenz der Nulltensor:
+\begin{equation}
+ W^{m\cdots}{}_{\cdots n}
+ -T^{m\cdots}{}_{\cdots n}=0.
+\label{eq:tensor-equality}
+\end{equation}
+Das Transformationsgesetz ist linear; daher führen verschwindende Komponenten in einem System in jedem System zu verschwindenden Komponenten. Die übereinstimmenden freien Indizes auf beiden Seiten sind unerlässlich. Eine Gleichung zwischen Objekten unterschiedlichen Tensortyps hat keine koordinatenunabhängige Bedeutung.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_14.png}
+\caption{Eine übereinstimmende Indexstruktur macht aus der Gleichheit von Komponenten eine in jedem Koordinatensystem gültige tensorielle Gleichung.}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was genau ist invariant, wenn sich die Vektorkomponenten ändern?}
+\lecturerresponse{Der geometrische Tensor und die Gültigkeit einer tensoriellen Gleichung sind invariant; die Koordinatenliste ist es nicht. Ein Skalar ist der Sonderfall ohne Indizes, daher hat sein Zahlenwert an einem Punkt in allen Koordinatensystemen denselben Wert. \lecturetimestamp{00:47:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist der Betrag eines Vektors das entsprechende Invariant, und bedeutet ein Betrag von null, dass der Vektor null ist?}
+\lecturerresponse{Ist eine Metrik gegeben, so ist die Kontraktion
+\(g_{mn}V^mV^n\) ein Skalar und somit eine invariante quadrierte Norm. In einer positiv definiten Geometrie verschwindet sie nur für den Nullvektor. In einer Lorentzschen Raumzeit kann ein von null verschiedener lichtartiger Vektor eine Norm von null haben; diese beiden Aussagen müssen daher auseinandergehalten werden. \lecturetimestamp{00:48:04}}
+\end{classroomqa}
+
+\section{Die zulässige Algebra der Tensoren}
+
+Die Tafel fasst die wichtigsten benötigten Operationen zusammen: Multiplikation mit einem Skalar, Addition und Subtraktion von Tensoren desselben Typs, Bildung von Tensorprodukten, Kontraktion eines oberen mit einem unteren Index und schließlich kovariante Differentiation.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_15.png}
+\caption{Übersicht der Tensoroperationen: Addition, Multiplikation, Kontraktion und Differentiation.}
+\lectureframe{00:50:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Worauf beziehen wir die Ableitung?}
+\lecturerresponse{Auf die Position, also auf die Koordinaten. Gewöhnliche Ableitungen der Komponenten transformieren sich im Allgemeinen nicht wie Tensoren, weil die Jacobi-Matrizen selbst variieren. Die kovariante Differentiation behebt dies; ihre Konstruktion verschieben wir, bis die geometrischen Grundlagen bereitstehen. \lecturetimestamp{00:51:49}}
+\end{classroomqa}
+
+Die Multiplikation mit einem Skalar ist unmittelbar definiert. Addition und Subtraktion setzen denselben Tensortyp voraus:
+\begin{equation}
+ C^m{}_n=A^m{}_n+B^m{}_n,
+\qquad
+ D^m{}_n=A^m{}_n-B^m{}_n.
+\label{eq:tensor-addition}
+\end{equation}
+Einen Vektor kann man nicht zu einem Kovektor addieren und einen Tensor vom Rang zwei nicht zu einem Skalar, ebenso wenig wie man eine Geschwindigkeit zu einer Fläche addieren kann.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_16.png}
+\caption{Addition ist komponentenweise nur für Tensoren mit demselben Muster freier Indizes definiert.}
+\lectureframe{00:53:00}
+\end{figure}
+
+Das Tensorprodukt vereint sämtliche Indizes seiner Faktoren. Zum Beispiel gilt
+\begin{equation}
+ T^{mn}=V^mW^n,
+\qquad
+ S^m{}_n=V^mU_n.
+\label{eq:tensor-products}
+\end{equation}
+In vier Dimensionen hat \(T^{mn}\) sechzehn Komponenten. Es wurde über keinen Index summiert; daher handelt es sich um ein äußeres Produkt und nicht um ein Skalarprodukt.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_17.png}
+\caption{Ein Tensorprodukt, das aus jedem Vektorfaktor einen freien Index behält.}
+\lectureframe{00:55:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Multiplikation zweier Vektoren hier das Skalarprodukt?}
+\lecturerresponse{Nein. Beim Skalarprodukt wird ein Index kontrahiert, sodass ein Skalar entsteht. Beim Tensorprodukt bleiben beide Indizes frei; das Ergebnis ist daher ein Tensor vom Rang zwei. In vier Dimensionen hat er sechzehn Komponenten statt einer. \lecturetimestamp{00:56:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Da die Komponentenzahlen vertauschbar sind, ändert sich nichts, wenn man die beiden Vektorfaktoren vertauscht?}
+\lecturerresponse{Für gewöhnliche skalare Komponenten gilt
+\(V^mW^n=W^nV^m\). Die Tensorplätze sind jedoch geordnet. Vertauscht man die Faktoren und bezeichnet anschließend den ersten Platz mit \(m\) und den zweiten mit \(n\), so entsteht die transponierte Anordnung; \(T^{mn}\) muss nicht gleich \(T^{nm}\) sein.
+\lecturetimestamp{00:58:52}}
+\end{classroomqa}
+
+\section{Kontraktion und das Lemma zur inversen Jacobi-Matrix}
+
+Der Schlüssel zur Kontraktion ist die Kettenregel. Da die Koordinatenabbildungen zueinander invers sind, gilt
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =
+ \frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\label{eq:inverse-jacobian}
+\end{equation}
+Die beiden Jacobi-Matrizen sind invers zueinander, und ihr Produkt ist das Kronecker-Delta.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_18.png}
+\caption{Die Identität für inverse Jacobi-Matrizen als Lemma, auf dem die Tensor kontraktion beruht.}
+\lectureframe{01:02:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Um was für ein Objekt handelt es sich bei der inversen Jacobi-Matrix?}
+\lecturerresponse{Sie ist die Ableitungsmatrix der inversen Koordinatenabbildung. Ihre Einträge sind \(\partial x^b/\partial y^m\), und die Matrixmultiplikation mit \(\partial y^m/\partial x^a\) ergibt aufgrund der mehrdimensionalen Kettenregel die Einheitsmatrix. \lecturetimestamp{01:02:37}}
+\end{classroomqa}
+
+Ein kurzer Beweis macht die Notation anschaulich. Für eine beliebige skalare Funktion \(f\) gilt
+\begin{equation}
+ \frac{\partial f}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial f}{\partial x^a}.
+\end{equation}
+Setzen wir \(f=x^b\), so folgt
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_19.png}
+\caption{Die Kettenregel führt die inversen Jacobi-Matrizen auf das Kronecker-Delta zurück.}
+\lectureframe{01:04:55}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist \(\delta^b{}_a\) nur in kartesischen Koordinaten die Identität?}
+\lecturerresponse{Nein. Der gemischte Tensor \(\delta^b{}_a\) stellt in jedem Koordinatensystem die Identitätsabbildung dar. Eine euklidische Metrik in der Form \(\delta_{ab}\) ist dagegen speziell für orthonormale kartesische Koordinaten; die Identität mit gemischten Indizes darf nicht mit dieser Metrik verwechselt werden.
+\lecturetimestamp{01:04:58}}
+\end{classroomqa}
+
+Betrachten wir nun einen gemischten Tensor \(T^m{}_n\). Seine transformierte Spur lautet
+\begin{align}
+ T'^m{}_m
+ &=
+ \frac{\partial y^m}{\partial x^a}
+ \frac{\partial x^b}{\partial y^m}
+ T^a{}_b \notag\\
+ &=\delta^b{}_aT^a{}_b
+ =T^a{}_a.
+\label{eq:trace-invariant}
+\end{align}
+Die kontrahierte Größe hat keinen freien Index und ist somit ein Skalar.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_20.png}
+\caption{Transformation eines gemischten Tensors vor der Kontraktion seiner oberen und unteren Indizes.}
+\lectureframe{01:07:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_21.png}
+\caption{Bei der Kontraktion heben sich die Jacobi-Matrizen auf; in beiden Koordinatensystemen bleibt dieselbe skalare Spur.}
+\lectureframe{01:10:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Trägt das Ergebnis nach einer Kontraktion noch Indizes?}
+\lecturerresponse{Nur das kontrahierte Indexpaar verschwindet. Kontrahiert man den einzigen oberen mit dem einzigen unteren Index von \(T^m{}_n\), so bleibt ein Skalar. Bei einem Tensor höheren Ranges bleiben alle nicht kontrahierten Indizes frei.
+\lecturetimestamp{01:09:00}}
+\end{classroomqa}
+
+Zum Beispiel kontrahiert
+\begin{equation}
+ A^{mn}{}_{pq}
+ \longmapsto
+ A^{mn}{}_{pn}
+ =B^m{}_p
+\label{eq:higher-rank-contraction}
+\end{equation}
+den Index \(n\) und verringert den Rang um zwei. Die konkreten Buchstaben sind stumme Bezeichnungen; entscheidend ist die Struktur: Über einen oberen und einen unteren Platz wird summiert.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_22.png}
+\caption{Eine Kontraktion höheren Ranges entfernt einen oberen und einen unteren Index, während die übrigen freien Indizes erhalten bleiben.}
+\lectureframe{01:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Warum kann man nicht auf dieselbe Weise zwei obere oder zwei untere Indizes kontrahieren?}
+\lecturerresponse{Zwei obere Indizes liefern zwei Jacobi-Matrizen gleicher Orientierung,
+\(\partial y^m/\partial x^a\) und
+\(\partial y^m/\partial x^b\). Ihr Produkt ist nicht die Einheitsmatrix, daher erfüllt die vorgeschlagene Summe kein Tensortransformationsgesetz. Eine Metrik kann zunächst einen der Indizes senken; danach ist eine Kontraktion zwischen einem oberen--unteren Index zulässig. Ohne diesen zusätzlichen Tensor ist die Operation nicht koordinateninvariant. \lecturetimestamp{01:13:03}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_23.png}
+\caption{Bei der versuchten Kontraktion gleichartiger Indizes bleiben zwei Jacobi-Matrizen in derselben Richtung stehen; sie ergeben daher nicht die Einheitsmatrix.}
+\lectureframe{01:14:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Kontraktion das tensorielle Gegenstück zum inneren Produkt?}
+\lecturerresponse{Bei einer Kontraktion wird ein Vektorplatz mit einem Kovektorplatz gepaart; dies ist die grundlegende invariante Paarung. Mithilfe einer Metrik lassen sich zwei Vektoren in ein solches Paar überführen. Das vertraute innere Produkt besteht daher aus einer Metrik und anschließender Kontraktion. \lecturetimestamp{01:14:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Müssen die beiden kontrahierten Indizes denselben Wertebereich durchlaufen?}
+\lecturerresponse{Ja. Sie beziehen sich auf duale Basen desselben \(d\)-dimensionalen Tangential- und Kotangentialraums. Andernfalls wären weder die Summe noch die Identität für inverse Jacobi-Matrizen definiert.
+\lecturetimestamp{01:15:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum verschwindet ein Tensor in jedem Bezugssystem, wenn er in einem Bezugssystem verschwindet?}
+\lecturerresponse{Jede transformierte Komponente ist eine Linearkombination der ursprünglichen Komponenten. Sind sämtliche Eingabekomponenten null, verschwinden all diese Linearkombinationen. Diese einfache Linearität macht tensorielle Gleichungen koordinatenunabhängig. \lecturetimestamp{01:15:31}}
+\end{classroomqa}
+
+\section{Die Metrik aus dem Abstandsquadrat}
+
+Kehren wir nun zur Geometrie zurück. Für eine infinitesimale Verschiebung mit den Komponenten \(dx^m\) definieren wir das Längenquadrat durch
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:line-element}
+\end{equation}
+Dies ist der verallgemeinerte Satz des Pythagoras. Die Metrik kann sich von Punkt zu Punkt ändern; Nebendiagonalelemente erfassen die Nichtorthogonalität der Koordinatenrichtungen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_24.png}
+\caption{An die Stelle der Liste von Tensoroperationen tritt die quadratische Definition des infinitesimalen Linienelements.}
+\lectureframe{01:18:45}
+\end{figure}
+
+Nur der symmetrische Anteil trägt etwas bei, denn
+\(dx^m dx^n=dx^n dx^m\). Daher können wir annehmen,
+\begin{equation}
+ g_{mn}=g_{nm}.
+\label{eq:metric-symmetry}
+\end{equation}
+In \(d\) Dimensionen hat eine symmetrische Metrik
+\begin{equation}
+ \frac{d(d+1)}{2}
+\label{eq:metric-component-count}
+\end{equation}
+unabhängige Komponenten: zehn in vier, sechs in drei und drei in zwei Dimensionen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_25.png}
+\caption{Das Linienelement und die symmetrische Komponentenmatrix, mit deren Hilfe sich die unabhängigen Einträge der Metrik zählen lassen.}
+\lectureframe{01:21:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Warum gibt es in vier Dimensionen zehn unabhängige Metrikkomponenten statt sechzehn?}
+\lecturerresponse{Es gibt vier Diagonaleinträge und sechs ungeordnete Paare von Nebendiagonaleinträgen. Gleichwertig gilt
+\(4(4+1)/2=10\). Der antisymmetrische Anteil würde mit dem symmetrischen Produkt \(dx^m dx^n\) multipliziert und sich dadurch aufheben. \lecturetimestamp{01:19:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie viele unabhängige Komponenten gibt es in drei Dimensionen?}
+\lecturerresponse{Sechs: drei Diagonaleinträge und drei Paare von Nebendiagonaleinträgen, also \(3(3+1)/2\). \lecturetimestamp{01:20:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Und in zwei Dimensionen?}
+\lecturerresponse{Drei: \(g_{11}\), \(g_{22}\) und das einzige symmetrische Paar \(g_{12}=g_{21}\). \lecturetimestamp{01:22:28}}
+\end{classroomqa}
+
+\subsection{Warum die Metrik ein Tensor ist}
+
+Das Abstandsquadrat ist ein Skalar. Schreiben wir dieselbe Verschiebung in zwei Koordinatensystemen, so gilt daher
+\begin{equation}
+ g_{mn}(x)\,dx^m dx^n
+ =
+ g'_{pq}(y)\,dy^pdy^q.
+\label{eq:length-invariance}
+\end{equation}
+Verwenden wir
+\begin{equation}
+ dx^m=\frac{\partial x^m}{\partial y^p}\,dy^p
+\end{equation}
+zwei Mal:
+\begin{align}
+ ds^2
+ &=
+ g_{mn}(x)
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ dy^pdy^q.
+\label{eq:metric-transform-derivation}
+\end{align}
+Der Vergleich mit dem gestrichenen Ausdruck ergibt
+\begin{equation}
+ g'_{pq}(y)
+ =
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ g_{mn}(x).
+\label{eq:metric-transformation}
+\end{equation}
+Dies ist genau das Transformationsgesetz eines kovarianten Tensors vom Rang zwei.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_26.png}
+\caption{Herleitung des Transformationsgesetzes der Metrik aus der Invarianz des skalaren Linienelements.}
+\lectureframe{01:26:25}
+\end{figure}
+
+Die Schlussfolgerung erklärt auch die beiden unteren Indizes. Jeder untere Metrikindex paart sich mit einem oberen Index einer Verschiebungskomponente. Bei einem Koordinatenwechsel heben die beiden inversen Jacobi-Matrizen in \eqref{eq:metric-transformation} die beiden direkten Jacobi-Matrizen der Differentiale auf; dadurch bleibt \(ds^2\) unverändert.
+
+\section{Die Metrikmatrix und ihre Inverse}
+
+An einem Punkt ist \(g_{mn}\) eine symmetrische Matrix:
+\begin{equation}
+ [g_{mn}]
+ =
+ \begin{pmatrix}
+ g_{11} & g_{12} & \cdots \\
+ g_{12} & g_{22} & \cdots \\
+ \vdots & \vdots & \ddots
+ \end{pmatrix}.
+\label{eq:metric-matrix}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_27.png}
+\caption{Darstellung der Metrik als symmetrische Matrix, nachdem ihr tensoriales Transformationsgesetz hergeleitet wurde.}
+\lectureframe{01:28:50}
+\end{figure}
+
+Die Metrik muss nicht ausgeartet sein: Sie hat keinen Eigenwert null und besitzt daher eine Inverse. Bezeichnen wir diese mit \(g^{mn}\).
+In Indexnotation gilt
+\begin{equation}
+ g_{mn}g^{np}=\delta_m{}^p.
+\label{eq:inverse-metric}
+\end{equation}
+Der wiederholte Index \(n\) wird summiert, während \(m\) und \(p\) die Zeile beziehungsweise Spalte des Produkts bezeichnen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_28.png}
+\caption{Die inverse Metrik, eingeführt durch
+\(g_{mn}g^{np}=\delta_m{}^p\).}
+\lectureframe{01:31:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Wo befinden sich die Vektoren und Tensoren an einem Punkt eigentlich?}
+\lecturerresponse{Die Vektoren an einem Punkt bilden seinen Tangentialraum
+\(T_P M\); die Kovektoren bilden den Dualraum \(T_P^*M\). Tensoren höherer Ordnung gehören zu Tensorprodukten dieser Räume. Ein Tensorfeld ordnet jedem Punkt glatt ein solches Objekt zu. Die Metrik ist eine Bilinearform auf dem Tangentialraum; ihre Inverse ist die entsprechende Bilinearform auf dem Kotangentialraum. \lecturetimestamp{01:34:15}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_29.png}
+\caption{Ein Vektor im Tangentialraum, der an einen Punkt einer gekrümmten Mannigfaltigkeit angeheftet ist.}
+\lectureframe{01:35:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Bezieht sich
+\(g_{mn}g^{np}=\delta_m{}^p\)nur auf den Fall \(m=p\)?}
+\lecturerresponse{Nein. Es ist die vollständige Matrixgleichung. Für jedes geordnete Paar \((m,p)\) ist das summierte Produkt eins, wenn \(m=p\), und null, wenn \(m\ne p\). Alle Gleichungen für die Diagonal- und Nebendiagonaleinträge gelten gleichzeitig. \lecturetimestamp{01:36:50}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_30.png}
+\caption{Die inverse Beziehung, verstanden als vollständige Einheitsmatrix mit gemischten Indizes.}
+\lectureframe{01:38:50}
+\end{figure}
+
+In zwei Dimensionen bedeutet dies
+\begin{equation}
+ \begin{pmatrix}
+ g_{11} & g_{12}\\
+ g_{12} & g_{22}
+ \end{pmatrix}
+ \begin{pmatrix}
+ g^{11} & g^{12}\\
+ g^{12} & g^{22}
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+ 1&0\\
+ 0&1
+ \end{pmatrix}.
+\label{eq:two-dimensional-inverse}
+\end{equation}
+Zum Beispiel gilt
+\begin{align}
+ g_{11}g^{11}+g_{12}g^{12}&=1,\\
+ g_{11}g^{12}+g_{12}g^{22}&=0.
+\end{align}
+Die andere Zeile liefert die beiden übrigen Gleichungen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_31.png}
+\caption{Die Identität für die inverse Metrik, ausmultipliziert als explizites Matrixprodukt in zwei Dimensionen.}
+\lectureframe{01:40:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Muss die Metrik positiv definit sein?}
+\lecturerresponse{In der gewöhnlichen Riemannschen Geometrie sorgt positive Definitheit dafür, dass jedes von null verschiedene Längenquadrat positiv ist. In der Raumzeit wird stattdessen eine Lorentzsche Metrik verwendet, bei der ein Vorzeichen den übrigen drei entgegengesetzt ist. In beiden Fällen ist hier Nichtausgeartetheit erforderlich, nicht Positivität.
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum schließt man einen Eigenwert null aus?}
+\lecturerresponse{Ein Eigenwert null macht die Metrikmatrix singulär, sodass \(g^{mn}\) nicht existiert und die Metrik keine eineindeutige Zuordnung zwischen Vektoren und Kovektoren herstellen kann. Eine Metrik ist im üblichen differentialgeometrischen Sinn als nicht ausgeartet vorausgesetzt. \lecturetimestamp{01:43:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Haben die zehn unabhängigen Komponenten einer vierdimensionalen Metrik etwas mit der zehndimensionalen Stringtheorie zu tun?}
+\lecturerresponse{Nein. Die erste Zehn ist einfach \(4(4+1)/2\), die Anzahl der Einträge einer symmetrischen 4×4-Matrix. Dass in der Superstringtheorie zehn Raumzeitdimensionen auftreten, hat einen anderen Ursprung. \lecturetimestamp{01:44:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Macht es die Metrik nichtinvertierbar, wenn es in der Lorentzschen Raumzeit von null verschiedene Vektoren der Länge null gibt?}
+\lecturerresponse{Nein. Ein Nullvektor erfüllt \(g_{mn}V^mV^n=0\); dabei handelt es sich um eine Aufhebung innerhalb einer indefiniten quadratischen Form. Er ist kein Vektor mit Eigenwert null, der \(g_{mn}V^n=0\) erfüllt. Die Minkowski-Metrik hat zum Beispiel die Eigenwerte \(\pm1\) und ist vollkommen invertierbar, lässt aber dennoch lichtartige Vektoren zu. \lecturetimestamp{01:45:02}}
+\end{classroomqa}
+
+\section{Was kommt als Nächstes?}
+
+Nun können wir das geometrische Programm klar formulieren. Die Metrik erfasst infinitesimale Abstände, transformiert kovariant und besitzt eine Inverse. Ihre Komponenten können allein deshalb kompliziert aussehen, weil die Koordinaten kompliziert sind. Um zu entscheiden, ob die Geometrie selbst gekrümmt ist, müssen wir die Metrik an benachbarten Punkten auf koordinatenunabhängige Weise vergleichen.
+
+Gewöhnliche Ableitungen reichen nicht aus, denn beim Ableiten eines Tensors werden auch die von der Position abhängigen Jacobi-Matrizen in seinem Transformationsgesetz abgeleitet. Der nächste Schritt ist daher die kovariante Ableitung. Aus Ableitungen der Metrik konstruiert man eine Verbindung; aus Ableitungen und Produkten dieser Verbindung konstruiert man die Krümmung. Erst dann erhält die Frage nach der gekrümmten Seite ihre abschließende intrinsische Antwort.
