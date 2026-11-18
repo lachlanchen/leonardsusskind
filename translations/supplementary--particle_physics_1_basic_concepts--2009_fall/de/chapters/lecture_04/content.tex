@@ -1,0 +1,654 @@
+\chapter{Deltafunktionen, Quantenfelder und Erhaltungssätze}
+
+Das zuvor eingeführte einfache Quantenfeld reicht aus, um Streuung, Erzeugung und Vernichtung in groben Zügen zu beschreiben. Doch es lässt sich noch mehr daraus gewinnen. Insbesondere zeigt es, wie Erhaltungssätze in Teilchenprozesse eingehen. Ein vollständiger Kurs über Quantenfeldtheorie dauert deutlich länger als ein paar Vorlesungen; hier ist das Ziel enger gefasst. Am einfachsten Feld wollen wir nachvollziehen, wie die Energieerhaltung zustande kommt, warum bei einem feststehenden Target der Impuls des gestreuten Teilchens nicht erhalten sein muss und wie Phaseninvarianz die Ladungserhaltung kodiert.
+
+Bevor wir zum Feld zurückkehren, benötigen wir zwei mathematische Grundlagen: die Dirac-Deltafunktion und die Wirkung von Erzeugungs- und Vernichtungsoperatoren auf Bra-Vektoren.
+
+\section{Die Dirac-Deltafunktion}
+
+Nennen wir die Koordinate \(y\), ohne bereits festzulegen, ob sie später den Ort, die Wellenzahl oder etwas anderes bezeichnet. Wir beginnen mit einer gewöhnlichen, glockenförmigen Funktion, die in der Nähe von \(y=a\) konzentriert ist. Dann machen wir die Glocke immer schmaler. Bliebe ihre Höhe konstant, würde ihre Fläche gegen null gehen. Deshalb erhöhen wir die Höhe, während die Breite abnimmt, und halten das Produkt aus Höhe und Breite gleich eins. Im Grenzfall erhalten wir die Dirac-Deltafunktion \(\delta(y-a)\).
+
+Sie verschwindet außerhalb von \(y=a\), ist bei \(y=a\) unendlich scharf konzentriert und hat Flächeninhalt eins:
+\begin{equation}
+\delta(y-a)=0\quad (y\neq a),
+\qquad
+\int_{-\infty}^{\infty}dy\,\delta(y-a)=1.
+\end{equation}
+Entscheidend ist die Kombination aus Lokalisierung und festem Flächeninhalt. Durch das Verschmälern verschwindet der Peak nicht, denn gleichzeitig nimmt seine Höhe zu.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_04_figure_02.png}
+\caption{Deltafunktionspeak mit Flächeninhalt eins, zentriert bei \(y=a\).}
+\lectureframe{00:05:50}
+\end{figure}
+
+Dasselbe Bild lässt sich idealisiert als vertikaler Strich darstellen:
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.1,0) -- (3.3,0) node[right] {$y$};
+\draw[very thick] (0,0) -- (0,2.9);
+\draw (0,-0.15) node[below] {$y=a$};
+\node at (1.35,1.65) {$\delta(y-a)$};
+\end{tikzpicture}
+\caption{Idealisierte Lokalisierung von \(\delta(y-a)\) bei der Nullstelle ihres Arguments.}
+\end{figure}
+
+Die Deltafunktion tritt ganz natürlich in Fourier-Integralen auf. Kehren wir kurz zu einem periodischen Ortsintervall der Gesamtlänge \(L\) zurück. Eine periodische Mode lautet
+\begin{equation}
+e^{ikx},
+\end{equation}
+Dabei ist \(k\) eine der zulässigen Wellenzahlen
+\begin{equation}
+k_n=\frac{2\pi n}{L},
+\qquad n\in\mathbb Z.
+\end{equation}
+Man kann das Intervall als \(0\leq x<L\) darstellen. Symmetrischer ist es jedoch, den Ursprung in die Mitte zu legen und stattdessen
+\begin{equation}
+-\frac L2\leq x<\frac L2.
+\end{equation}
+zu verwenden. Die Endpunkte sind miteinander identifiziert: Wer \(L/2\) überschreitet, kommt bei \(-L/2\) wieder heraus.
+
+Integrieren wir eine zulässige Mode über das gesamte periodische Intervall:
+\begin{equation}
+I_L(k)=\int_{-L/2}^{L/2}dx\,e^{ikx}.
+\end{equation}
+Ist \(k=0\), so ist der Integrand überall gleich eins und das Ergebnis ist \(L\). Ist \(k\neq0\) ein zulässiger Wert, heben sich die positiven und negativen Teile der Schwingung über die volle Anzahl von Perioden hinweg auf. Daher gilt
+\begin{equation}
+I_L(k)=
+\begin{cases}
+L,&k=0,\\[4pt]
+0,&k\neq0,
+\end{cases}
+\qquad
+k=\frac{2\pi n}{L}.
+\end{equation}
+
+Betrachten wir nun \(I_L(k)\) als Funktion auf der diskreten Menge der zulässigen \(k\)-Werte. Der Abstand benachbarter Werte beträgt
+\begin{equation}
+\Delta k=\frac{2\pi}{L}.
+\end{equation}
+Bei \(k=0\) hat die Funktion die Höhe \(L\); bei jedem anderen zulässigen Wert ist sie null. Um den diskreten Peak zu zeichnen, geben wir ihm die Breite eines \(k\)-Abstands. Sein Flächeninhalt ist dann
+\begin{equation}
+(\text{height})(\text{width})
+=L\frac{2\pi}{L}=2\pi.
+\end{equation}
+Mit wachsendem \(L\) steigt die Höhe, der Abstand wird kleiner, und der Flächeninhalt bleibt \(2\pi\). Im Grenzfall unendlichen Volumens wird der Peak zu \(2\pi\delta(k)\). Damit ergibt sich die formale Fourier-Identität
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,e^{ikx}=2\pi\delta(k).
+\end{equation}
+Die Variablen \(x\) und \(k\) treten im Exponenten symmetrisch auf. Vertauscht man ihre Rollen, erhält man die entsprechende Identität
+\begin{equation}
+\int_{-\infty}^{\infty}dk\,e^{ikx}=2\pi\delta(x).
+\end{equation}
+Diese beiden elementaren Regeln machen aus einem Integral über alle Wechselwirkungszeiten gleich die Bedingung der Energieerhaltung.
+
+\section{Bras, Kets und nach links wirkende Operatoren}
+
+Ein Ket ist eine symbolische Schreibweise für einen Quantenzustand. Für unsere Zwecke schreiben wir den Anfangszustand als Ket und den Endzustand als Bra. Ein Bra zusammen mit einem Ket ergibt ein Skalarprodukt, also eine Zahl. Mit diesen Zahlen beziehungsweise ihren Betragsquadraten lassen sich letztlich Vorhersagen mit dem Experiment vergleichen.
+
+\begin{classroomqa}
+\lecturetimestamp{00:15:30}
+\audiencequestion{Wurde der Begriff ``Ket'' eigentlich schon eingeführt?}
+\lecturerresponse{Ja. Ein Ket ist eine Hälfte der Bra-Ket-Notation; die andere Hälfte, das Bra, führen wir jetzt ein.}
+\end{classroomqa}
+
+Für den harmonischen Oszillator lassen sich die Besetzungszahlzustände sowohl als Kets \(\lvert n\rangle\) als auch als Bras \(\langle n\rvert\) schreiben. Ihr Skalarprodukt ist
+\begin{equation}
+\langle m\vert n\rangle=\delta_{mn}
+=\begin{cases}
+1,&m=n,\\
+0,&m\neq n.
+\end{cases}
+\end{equation}
+Das Kronecker-Delta \(\delta_{mn}\) ist das diskrete Analogon der Dirac-Deltafunktion.
+
+Erzeugungs- und Vernichtungsoperatoren wirken auf Kets auf die bekannte Weise:
+\begin{align}
+a^\dagger\lvert n\rangle&=\sqrt{n+1}\,\lvert n+1\rangle,\\
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle.
+\end{align}
+Man kann die Erzeugungs- und Vernichtungsoperatoren auch mit \(a^+\) und \(a^-\) bezeichnen. Hier verwenden wir durchgehend \(a^\dagger\) und \(a\).
+
+Wie sollen dieselben Operatoren auf Bras wirken? In der Notation steht ein Operator rechts von einem Bra, wenn er nach links wirkt. Die Definition ist so gewählt, dass ein Matrixelement denselben Wert hat, unabhängig davon, ob der Operator zuerst auf das Ket oder zuerst auf das Bra angewendet wird. Betrachten wir
+\begin{equation}
+\langle n\rvert a^\dagger\lvert m\rangle.
+\end{equation}
+Wirkt der Operator auf das Ket, ergibt sich
+\begin{align}
+\langle n\rvert a^\dagger\lvert m\rangle
+&=\sqrt{m+1}\,\langle n\vert m+1\rangle\\
+&=\sqrt{m+1}\,\delta_{n,m+1}.
+\end{align}
+Dies ist nur dann ungleich null, wenn \(n=m+1\), oder gleichbedeutend, wenn \(m=n-1\). Damit dieselbe Bedingung auch bei Wirkung auf das Bra herauskommt, muss \(a^\dagger\) dessen Index erniedrigen:
+\begin{equation}
+\langle n\rvert a^\dagger
+=\sqrt n\,\langle n-1\rvert.
+\end{equation}
+Der Zahlenfaktor ist \(\sqrt n\), denn für das von null verschiedene Matrixelement gilt \(n=m+1\). Für den Vernichtungsoperator gilt entsprechend die komplementäre Regel
+\begin{equation}
+\langle n\rvert a
+=\sqrt{n+1}\,\langle n+1\rvert.
+\end{equation}
+Somit erhöht \(a^\dagger\) den Index eines Kets, senkt aber den eines Bras; \(a\) senkt den Index eines Kets, erhöht aber den eines Bras.
+
+Der Vorteil zeigt sich am Matrixelement des Zahloperators
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle.
+\end{equation}
+Bei Wirkung nach rechts gilt
+\begin{align}
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle,\\
+a^\dagger\lvert n-1\rangle&=\sqrt n\,\lvert n\rangle,
+\end{align}
+also
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle
+=n\langle n\vert n\rangle=n.
+\end{equation}
+Bei Wirkung nach links ergibt sich stattdessen
+\begin{align}
+\langle n\rvert a^\dagger&=\sqrt n\,\langle n-1\rvert,\\
+\langle n-1\rvert a&=\sqrt n\,\langle n\rvert,
+\end{align}
+und damit dasselbe Ergebnis. Man muss nicht entscheiden, welche Wirkrichtung grundlegender ist; der Formalismus ist so eingerichtet, dass beide zum selben Wert führen.
+
+\section{Ein Quantenfeld in Raum und Zeit}
+
+Der Grund für diese Buchführung liegt in der Teilchenphysik. Auf mikroskopischen Skalen besteht der wichtigste experimentelle Zugang darin, Teilchen zusammenstoßen zu lassen und zu beobachten, was dabei entsteht. Ein Anfangszustand mit einem oder zwei Teilchen kann in einen Zustand mit vier, fünf, sieben, neun oder einer anderen Teilchenzahl übergehen. Quantenfelder, die aus Erzeugungs- und Vernichtungsoperatoren aufgebaut sind, bieten eine Sprache für solche Prozesse.
+
+Betrachten wir zunächst eine Raumdimension. Grundsätzlich spricht nichts gegen drei Dimensionen: \(x\) und \(k\) werden dann einfach zu Vektoren mit drei Komponenten. Außerdem ist es praktisch, Einheiten zu verwenden, in denen
+\begin{equation}
+\hbar=1.
+\end{equation}
+Dann haben Impuls und Wellenvektor denselben Zahlenwert:
+\begin{equation}
+\vec p=\vec k.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_04_figure_03.png}
+\caption{Natürliche Einheiten \(\hbar=1\) und die Identifikation \(\vec p=\vec k\).}
+\lectureframe{00:36:56}
+\end{figure}
+
+Wir legen die Konvention fest, dass \(\psi\) vernichtet und \(\psi^\dagger\) erzeugt:
+\begin{align}
+\psi(x)&=\sum_k a(k)e^{ikx},\\
+\psi^\dagger(x)&=\sum_k a^\dagger(k)e^{-ikx}.
+\end{align}
+Die Summe läuft im periodischen Raum über \(k=2\pi n/L\) und wird im unendlichen Raum kontinuierlich. Die zweite Gleichung ist die hermitesch konjugierte der ersten. Man kann sie auch als operatorwertiges Analogon einer komplexen Konjugation auffassen.\footnote{An der Tafel wird der Entwicklung des Erzeugungsfeldes vorübergehend das Symbol \(\sum_k a^\dagger(k)e^{-ikx}\) mit der Bezeichnung \(\Psi\) zugeordnet; später ist die Zuordnung der Dagger etwas unsicher. Hier sind die Bezeichnungen einheitlich festgelegt: \(\psi\) vernichtet und \(\psi^\dagger\) erzeugt, genau wie in der anschließenden Streurechnung.}
+
+Warum ist diese Definition sinnvoll? An diesem Punkt lautet die beste Antwort: Sie ist nützlich. Sie ist eine einfache Summe über Impulsmoden, und ihre Koeffizienten sind genau die Operatoren, die Teilchen entfernen oder hinzufügen. Die nähere Begründung ergibt sich aus der Dynamik und den Rechnungen, die diese Definition ermöglicht.
+
+\editorialnote{Ein kurzer Abschnitt der Quelle, unmittelbar nach der Einführung des konjugierten Ortsfeldes, ist nicht verständlich genug, um eine zusätzliche Aussage zur Normierung oder Interpretation zu stützen. Der gesicherte Inhalt setzt mit der Nützlichkeit der Definition wieder ein.}
+
+Bislang hängen die Felder vom Ort, aber nicht von der Zeit ab. Felder schwingen, und zu jeder Wellenzahl \(k\) gehört eine Frequenz \(\omega(k)\). Ein Objekt mit fester Frequenz \(\omega\) hat die Zeitabhängigkeit
+\begin{equation}
+e^{i\omega t}=\cos(\omega t)+i\sin(\omega t).
+\end{equation}
+Wir versehen die beiden Feldentwicklungen mit den konjugierten Phasenfaktoren:
+\begin{align}
+\psi(x,t)&=\sum_k a(k)e^{ikx}e^{-i\omega(k)t},\\
+\psi^\dagger(x,t)&=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+Nun schwingt jede Ortsmode mit der ihrer Wellenzahl entsprechenden Frequenz, und das Feld hängt sowohl von Ort als auch von Zeit ab.
+
+\section{Die nichtrelativistische Feldgleichung}
+
+Die Beziehung zwischen \(\omega\) und \(k\) legt fest, welche Differentialgleichung das Feld erfüllt. Für ein einzelnes Quant lauten die Welle-Teilchen-Beziehungen
+\begin{equation}
+E=\hbar\omega,
+\qquad
+p=\hbar k.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_04_figure_04.png}
+\caption{Beziehungen zwischen Energie und Frequenz sowie Impuls und Wellenzahl: \(E=\hbar\omega\) und \(p=\hbar k\).}
+\lectureframe{00:41:28}
+\end{figure}
+
+Mit \(\hbar=1\) gilt: Energie ist gleich Frequenz und Impuls gleich Wellenzahl:
+\begin{equation}
+E=\omega,
+\qquad
+p=k.
+\end{equation}
+Für ein nichtrelativistisches Teilchen, das sich viel langsamer als das Licht bewegt, gelten für kinetische Energie und Impuls die Beziehungen
+\begin{equation}
+E=\frac{p^2}{2m}.
+\end{equation}
+Dies ist dieselbe Beziehung, die sich aus \(E=\tfrac12 mv^2\) und \(p=mv\) ergibt. Kombiniert man diese Beziehungen, erhält man die nichtrelativistische Dispersionsrelation
+\begin{equation}
+\omega(k)=\frac{k^2}{2m}.
+\end{equation}
+
+Die Modenentwicklung des Erzeugungsfeldes lautet
+\begin{equation}
+\psi^\dagger(x,t)=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.66\textwidth]{lecture_04_figure_05.png}
+\caption{Zeitabhängige Modenentwicklung als Ausgangspunkt für die nichtrelativistische Feldgleichung.}
+\lectureframe{00:43:23}
+\end{figure}
+
+Wir bilden die Zeitableitung:
+\begin{equation}
+\dot\psi^\dagger(x,t)
+=\sum_k i\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+Nun bilden wir einmal die Ortsableitung:
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial x}
+=\sum_k(-ik)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+Zwischen diesen Ableitungen besteht keine direkte Beziehung erster Ordnung, denn die Zeitableitung bringt den Faktor \(\omega(k)\) hervor, während eine Ortsableitung den Faktor \(k\) hervorbringt. Um den Unterschied ausdrücklich zu sehen, betrachten wir die lineare Dispersionsrelation
+\begin{equation}
+\omega(k)=k.
+\end{equation}
+Dann würde die Zeitableitung den Faktor \(i\omega=ik\) hervorbringen, die erste Ortsableitung dagegen \(-ik\). Für jede Mode einzeln gälte dann
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{\partial\psi^\dagger}{\partial x}.
+\end{equation}
+Ein solches hypothetisches Feld würde eine Differentialgleichung erster Ordnung erfüllen. Hier gilt jedoch \(\omega=k^2/(2m)\), weshalb wir die zweite Ortsableitung benötigen:
+\begin{align}
+\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=\sum_k(-k^2)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}\\
+&=-2m\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:47:14}
+\audiencequestion{Soll das Minuszeichen aus den Ortsableitungen wirklich dort stehen?}
+\lecturerresponse{Ja. Jede \(x\)-Ableitung von \(e^{-ikx}\) liefert den Faktor \(-ik\), und zwei Ableitungen ergeben \((-ik)^2=-k^2\). Setzt man also \(k^2=2m\omega\) ein, erhält man \(-2m\omega\).}
+\end{classroomqa}
+
+Multipliziert man die Zeitableitung mit \(i\), erhält man denselben Modenkoeffizienten wie beim Teilen der zweiten Ortsableitung durch \(2m\):
+\begin{align}
+i\dot\psi^\dagger
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t},\\
+\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+Also gilt
+\begin{equation}
+i\frac{\partial\psi^\dagger}{\partial t}
+=\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2},
+\end{equation}
+oder gleichbedeutend
+\begin{equation}
+-i\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_04_figure_06.png}
+\caption{Zeit- und Ortsableitungen der Modenentwicklung des Erzeugungsfeldes.}
+\lectureframe{00:49:06}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:43}
+\audiencequestion{Ist der Koeffizient \(1/(2m)^2\)?}
+\lecturerresponse{Nein. Er ist \(1/(2m)\).}
+\end{classroomqa}
+
+Das konjugierte Vernichtungsfeld erfüllt die bekannte Form der Schr\"odinger-Gleichung
+\begin{equation}
+i\frac{\partial\psi}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi}{\partial x^2}.
+\end{equation}
+Die beiden Feldgleichungen sind hermitesch konjugiert.\footnote{Bei der Überprüfung der Vorzeichen stand an der Tafel vorübergehend das Vorzeichen des Ortsanteils umgekehrt. Die direkte Ableitung der dargestellten Modenphasen ergibt das hier angegebene konjugierte Gleichungspaar.}
+
+Die Gleichung hat dieselbe Form wie die Schr\"odinger-Gleichung der elementaren Quantenmechanik, doch die Größe, die sie erfüllt, ist eine andere. In der elementaren Quantenmechanik ist die Wellenfunktion eine komplexwertige Funktion, deren Betragsquadrat probabilistisch interpretiert wird. Hier sind \(\psi\) und \(\psi^\dagger\) Operatoren: \(\psi\) entfernt ein Teilchen und \(\psi^\dagger\) fügt eines hinzu. Das konjugierte Paar stellt eine unmittelbare Verbindung zwischen Teilchen und Feldern her.
+
+Sind viele Quanten in den betreffenden Moden besetzt, kann sich ein Feld näherungsweise klassisch verhalten. Das ist vergleichbar mit einem stark angeregten harmonischen Oszillator, der klassisch wirken kann, während ein Oszillator mit einem Quant dies nicht tut. Eine große Besetzung ermöglicht eine große klassische Skala und kann geeignete relative Fluktuationen klein machen.
+
+\editorialnote{Eine große Besetzung allein genügt nicht, damit ein Feld klassisch ist. Erforderlich ist auch ein phasenkohärenter semiklassischer Zustand; ein Besetzungszahl-Eigenzustand hat keine festgelegte Phase und muss keinen von null verschiedenen mittleren Feldwert haben.}
+
+\section{Ein festes Target und eine Streuamplitude}
+
+Wie verwendet man diese Felder? Betrachten wir den denkbar einfachsten Streuprozess. Ein Teilchen trifft auf ein so schweres Target, dass wir seinen Rückstoß vernachlässigen. Das Target bleibt für alle Zeiten an einem festen Ort. Ein Teilchen kann reflektiert, durchgelassen oder abgelenkt werden; in drei Dimensionen kann seine Ausfallsrichtung von seiner Einfallsrichtung abweichen.
+
+Der Impuls des Teilchens muss vor und nach dem Stoß nicht derselbe sein. Für das gesamte physikalische System bleibt der Impuls erhalten, doch das Target nimmt den fehlenden Impuls auf. Lässt man die Bewegung des Targets in der mathematischen Beschreibung weg, ist der Impuls des Teilchens allein nicht erhalten.
+
+In diesem idealisierten Modell verhält sich seine Energie anders. Stellen wir uns vor, einen Tennisball gegen eine Wand zu werfen. Ein echter Tennisball erwärmt und verformt sich, doch wenn wir diese Effekte vernachlässigen, kommt er mit derselben kinetischen Energie zurück, obwohl sich sein Impuls umkehrt. Das Modell des festen Targets soll genau diesen Unterschied abbilden: Die Energie des Teilchens bleibt erhalten, sein Impuls kann sich dagegen ändern.
+
+Wir tragen den Raum horizontal und die Zeit vertikal auf. Das Target ist die vertikale Linie \(x=0\). Ein einlaufender Einteilchenzustand mit Impuls \(k_i\) erreicht das Target; ein auslaufender Einteilchenzustand mit Impuls \(k_f\) verlässt es.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.2,0) -- (3.2,0) node[right] {space};
+\draw[->] (0,-0.3) -- (0,4.2) node[above] {time};
+\draw[very thick] (0,0) -- (0,3.8);
+\node[left] at (-0.15,3.55) {$x=0$};
+\draw[thick,->] (-2.2,0.8) -- (0,2.0);
+\node[below] at (-1.45,1.05) {$k_i$};
+\draw[thick,->] (0,2.0) -- (2.2,3.2);
+\node[above] at (1.5,2.9) {$k_f$};
+\fill (0,2.0) circle (1.4pt);
+\end{tikzpicture}
+\caption{Ein Teilchen mit Impuls \(k_i\) wird an einem bei \(x=0\) ruhenden Target gestreut und verlässt es mit Impuls \(k_f\).}
+\end{figure}
+
+Wir beschreiben den Vorgang als Absorption und erneute Emission. Das Target vernichtet das einlaufende Teilchen und erzeugt unmittelbar danach das auslaufende Teilchen, möglicherweise mit einem anderen Impuls. Das ist lediglich ein mathematisches Modell des Streuereignisses; ein tatsächliches Atom kann beispielsweise ein Photon absorbieren, eine Zeit lang angeregt bleiben und es später wieder emittieren.
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:28}
+\audiencequestion{Warum muss das Teilchen sofort absorbiert und wieder emittiert werden?}
+\lecturerresponse{Das muss es in der Natur nicht. Die sofortige Absorption und Wiederemission an einem Ort ist das vereinfachende Modell, das wir hier verwenden.}
+\end{classroomqa}
+
+Der Anfangszustand enthält ein Teilchen in der Mode \(k_i\) und kein Teilchen in irgendeiner anderen Mode. In der Besetzungszahldarstellung sind alle Einträge null, mit Ausnahme des Eintrags für \(k_i\), der gleich eins ist. Die vollständige Liste lässt sich abkürzen als
+\begin{equation}
+\lvert k_i\rangle=a^\dagger(k_i)\lvert0\rangle.
+\end{equation}
+Entsprechend gilt
+\begin{equation}
+\langle k_f\rvert=\langle0\rvert a(k_f).
+\end{equation}
+
+Die Vernichtung am Target zum Zeitpunkt \(t\) wird durch \(\psi(0,t)\) dargestellt; die unmittelbare Neuerzeugung am selben Ort und zur selben Zeit durch \(\psi^\dagger(0,t)\). Es gibt keinen ausgezeichneten Zeitpunkt für das Ereignis. Es kann eintreten, sobald das einlaufende Teilchen das Target erreicht, und die Wechselwirkungsstärke ist zu jeder Zeit gleich. Um auszudrücken, dass kein Zeitpunkt besonders ist, integrieren wir über alle \(t\):
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,\psi^\dagger(0,t)\psi(0,t).
+\end{equation}
+Dieser Operator wirkt auf das Anfangs-Ket und erzeugt einen Zustand. Sein Überlapp mit dem End-Bra ist die Amplitude für den angegebenen Übergang. Erst das Betragsquadrat der Amplitude ergibt die Wahrscheinlichkeit.
+
+Wir benötigen noch eine weitere Zahl. \(g\) soll die Stärke der Wechselwirkung zwischen Teilchen und Target messen. In diesem Buchführungsmodell schreiben wir die schematische führende Amplitude als\footnote{Normierungsfaktoren für die Zustände und der übliche Gesamtfaktor der Störungstheorie erster Ordnung sind unterdrückt; die Rechnung verwendet nur die Auswahlregeln der Operatoren und den Träger der Energieerhaltung.}
+\begin{equation}
+\mathcal A_{i\to f}
+=g\left\langle k_f\left|
+\int_{-\infty}^{\infty}dt\,
+\psi^\dagger(0,t)\psi(0,t)
+\right|k_i\right\rangle.
+\end{equation}
+Der Koeffizient \(g\) heißt Kopplungskonstante. Bei der Streuung eines Photons an einem geladenen Target liefert die elektrische Ladung das maßgebliche Maß für die Wechselwirkungsstärke: Eine größere Ladung erhöht die Streuwahrscheinlichkeit.
+
+Die Kopplungen verschiedener Wechselwirkungen unterscheiden sich stark. Ein Meson, das auf ein Proton trifft, unterliegt einer starken Wechselwirkung und hat eine vergleichsweise große Streustärke. Ein Photon, das an einem geladenen Proton gestreut wird, hat eine kleinere elektromagnetische Kopplung. Bei der Wechselwirkung eines Neutrinos mit einem Proton ist die Kopplung noch kleiner.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:09}
+\audiencequestion{Ist dieses einfache Modell für ein Elektron gültig?}
+\lecturerresponse{Nur als vereinfachtes Ersatzmodell für verschiedene Arten von Streuung. Es ist vorerst nicht als realistische Theorie eines Elektrons oder eines bestimmten Targets zu verstehen.}
+\end{classroomqa}
+
+Die gravitative Streuung eines Gravitons an einem Atomkern wäre außerordentlich schwach. Diesen Beispielen liegt keine universelle Kopplung \(g\) zugrunde; in der Teilchenphysik gibt es viele Kopplungskonstanten.
+
+Auch muss eine effektive Kopplung nicht immer frequenzunabhängig sein.
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:31}
+\audiencequestion{Warum nehmen wir an, dass \(g\) konstant ist, statt eine Funktion von \(\omega\) oder \(k\)?}
+\lecturerresponse{Sie muss nicht immer konstant sein. Wird ein Photon von einem Atom absorbiert, bleibt das Atom eine Zeit lang angeregt und das Photon wird erst später wieder emittiert; dann kann die effektive Streuung von der Frequenz abhängen. Die konstante Kopplung \(g\) gehört zum hier verwendeten instantanen Modell.}
+\end{classroomqa}
+
+Vorerst halten wir \(g\) konstant und berechnen die Folgen dieser einfachsten Wahl.
+
+\begin{classroomqa}
+\lecturetimestamp{01:12:32}
+\audiencequestion{Wenn \(g=1\) gilt, muss dann die Streuwahrscheinlichkeit eins sein?}
+\lecturerresponse{Nein. Der hier berechnete Ausdruck ist nur die führende Näherung für kleine \(g\). Ist die Kopplung nicht klein, benötigt man Störungstheorie höherer Ordnung; eine Wahrscheinlichkeit größer als eins würde das Versagen der Näherung mit nur einem Wechselwirkungsschritt anzeigen, nicht eine physikalische Wahrscheinlichkeit.}
+\end{classroomqa}
+
+\section{Die Modensummen vereinfachen}
+
+Bei \(x=0\) sind die räumlichen Phasen gleich eins, also gilt
+\begin{align}
+\psi(0,t)&=\sum_k a(k)e^{-i\omega(k)t},\\
+\psi^\dagger(0,t)&=\sum_\ell a^\dagger(\ell)e^{i\omega(\ell)t}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:58}
+\audiencequestion{Da sich das Target bei \(x=0\) befindet, kann dann der räumliche Exponentialfaktor weggelassen werden?}
+\lecturerresponse{Ja. Beim Target gilt \(e^{ikx}=e^{ik0}=1\), und der konjugierte räumliche Faktor ist ebenfalls eins.}
+\end{classroomqa}
+
+Verwenden wir für die beiden Summen unterschiedliche Summationsindizes \(k\) und \(\ell\). Nach dem Einsetzen erhalten wir
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt
+\sum_{\ell,k}
+e^{i\omega(\ell)t}e^{-i\omega(k)t}
+\langle k_f\rvert a^\dagger(\ell)a(k)\lvert k_i\rangle.
+\end{align}
+Welcher Term in der \(k\)-Summe kann übrig bleiben? Der Vernichtungsoperator liefert für jede unbesetzte Mode null. Der Anfangszustand enthält nur in der Mode \(k_i\) ein Teilchen, also gilt \(k=k_i\). Welcher Term in der \(\ell\)-Summe kann übrig bleiben? Bei Wirkung nach links muss \(a^\dagger(\ell)\) das durch das End-Bra dargestellte Teilchen entfernen; somit gilt \(\ell=k_f\). Beide Summen fallen auf jeweils einen Term zusammen:
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+\langle k_f\rvert a^\dagger(k_f)a(k_i)\lvert k_i\rangle.
+\end{align}
+Der Vernichtungsoperator überführt das Einteilchen-Anfangs-Ket in das Vakuum:
+\begin{equation}
+a(k_i)\lvert k_i\rangle=\lvert0\rangle,
+\end{equation}
+Der Erzeugungsoperator überführt, wenn er nach links wirkt, das Einteilchen-End-Bra in das Vakuum-Bra:
+\begin{equation}
+\langle k_f\rvert a^\dagger(k_f)=\langle0\rvert.
+\end{equation}
+Ihr Matrixelement ist daher
+\begin{equation}
+\langle0\vert0\rangle=1.
+\end{equation}
+Die gesamte Operatorbuchführung reduziert sich auf eins; die Kopplung liefert den Faktor \(g\), und übrig bleibt als nichttrivialer Teil das Zeitintegral:
+\begin{equation}
+\mathcal A_{i\to f}
+=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}.
+\end{equation}
+
+\editorialnote{Eine kurze Frage aus dem Publikum bei 01:18:40 lässt sich aus der Quelle nicht rekonstruieren. Die Antwort unterscheidet diese Einteilchenrechnung von einer relativistischen oder Mehrteilchenfrage; der genaue Wortwechsel lässt sich nicht verlässlich wiederherstellen.}
+
+Nun können wir die zuvor hergeleitete Deltafunktionsidentität direkt anwenden:
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+=2\pi\delta(\omega_f-\omega_i).
+\end{equation}
+Damit folgt
+\begin{equation}
+\boxed{
+\mathcal A_{i\to f}
+=2\pi g\,\delta(\omega_f-\omega_i)
+}.
+\end{equation}
+Die Amplitude verschwindet, sofern nicht
+\begin{equation}
+\omega_f=\omega_i.
+\end{equation}
+Da \(\hbar=1\), bedeutet dies \(E_f=E_i\). Die Energieerhaltung ergibt sich daraus, dass jeder Wechselwirkungszeitpunkt gleich behandelt wurde. Beschränkte man das Zeitintegral auf ein endliches Intervall, erhielte man eine verbreiterte Funktion statt einer exakten Deltafunktion. Die exakte Invarianz unter Zeittranslationen führt genau zur Bedingung der Energieerhaltung.
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:30}
+\audiencequestion{Für die Wahrscheinlichkeit muss die Amplitude quadriert werden. Was geschieht beim Quadrieren der Deltafunktion?}
+\lecturerresponse{Das Quadrat der Deltafunktion erfordert besondere Sorgfalt. Sicher ist hier die entscheidende Aussage: Das Ergebnis ist null, wenn die Anfangs- und Endenergie nicht gleich sind. Auf dem Träger der Energieerhaltung enthält der schematische quadrierte Vorfaktor \(4\pi^2g^2\).}
+\end{classroomqa}
+
+\editorialnote{Eine normierte Übergangswahrscheinlichkeit oder Rate erhält man nicht, indem man \(\delta(\omega_f-\omega_i)^2\) einfach weglässt. Dazu sind eine Regularisierung bei endlicher Zeit und eine konsistente Normierung der Zustände erforderlich. Daher bleibt \(4\pi^2g^2\) hier ausschließlich als der in der Quelle hervorgehobene schematische quadrierte Vorfaktor stehen.}
+
+Bei dieser Wechselwirkung mit einem punktförmigen Target zeichnet nichts außer der Energiebedingung einen bestimmten Endimpuls aus. In drei Dimensionen weist das Modell daher allen auslaufenden Impulsen gleicher Energie dasselbe führende Gewicht zu---gleichbedeutend: allen Ausfallsrichtungen auf der Kugel mit festem Energiewert. Diese Isotropie ist eine Eigenschaft dieses sehr einfachen Punktstreuers, nicht jedes realen Targets.
+
+Die Rechnung hat drei miteinander verknüpfte Ideen ergeben. Der Koeffizient \(g\) misst die Stärke der Wechselwirkung. Ein Ausdruck aus Bra, Operator und Ket ist eine Streuamplitude, deren Betragsquadrat in die Wahrscheinlichkeit eingeht. Vor allem ergibt die Integration über alle Zeiten die Energie-Deltafunktion: Die Zeittranslationssymmetrie erzwingt die Energieerhaltung.
+
+\section{Was ändert sich bei einem anderen Target oder einer anderen Kopplung?}
+
+Der Ursprung \(x=0\) wurde nur der Einfachheit halber gewählt. Setzen wir das Target an den Ort \(x=x_{\mathrm T}\). Die räumlichen Faktoren in \(\psi^\dagger(x_{\mathrm T},t)\psi(x_{\mathrm T},t)\) ergeben
+\begin{equation}
+e^{-ik_f x_{\mathrm T}}e^{ik_i x_{\mathrm T}}
+=e^{i(k_i-k_f)x_{\mathrm T}}.
+\end{equation}
+Damit wird die Amplitude zu
+\begin{equation}
+\mathcal A_{i\to f}(x_{\mathrm T})
+=e^{i(k_i-k_f)x_{\mathrm T}}
+\mathcal A_{i\to f}(0).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:37}
+\audiencequestion{Kann man den Ort immer so umdefinieren, dass das Target bei \(x=0\) liegt?}
+\lecturerresponse{Für dieses einzelne feste Target: ja. Lässt man es bei \(x_{\mathrm T}\neq0\), so erscheint seine Position als Phase \(e^{i(k_i-k_f)x_{\mathrm T}}\) in der Amplitude. Multipliziert man mit der komplex konjugierten Phase, fällt sie aus der Wahrscheinlichkeit heraus.}
+\end{classroomqa}
+
+Tatsächlich gilt
+\begin{equation}
+\left|e^{i(k_i-k_f)x_{\mathrm T}}\right|^2=1.
+\end{equation}
+Die Amplitude hängt von der Position des Targets ab, die Wahrscheinlichkeit für dieses einzelne Target jedoch nicht.
+
+Kehren wir nun die Asymmetrie um. Angenommen, eine Wechselwirkung könnte an jedem Ort, aber nur zu einem einzigen ausgezeichneten Zeitpunkt stattfinden. Ein Integral über den Ort ergäbe
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,
+e^{i(k_i-k_f)x}
+=2\pi\delta(k_i-k_f),
+\end{equation}
+während der festgelegte Zeitpunkt die Energie-Deltafunktion beseitigen würde.
+
+\begin{classroomqa}
+\lecturetimestamp{01:26:41}
+\audiencequestion{Wäre bei einer Wechselwirkung an einem beliebigen Ort, aber nur zu einem festen Zeitpunkt, eine andere Größe erhalten?}
+\lecturerresponse{Ja. Die Integration über alle Orte würde die Impulserhaltung erzwingen, während der ausgezeichnete Wechselwirkungszeitpunkt die exakte Energieerhaltung aufheben würde. In einem vollständigen Problem mit zwei Teilchen kann die Wechselwirkung zu jeder Zeit und an jedem Ort stattfinden.}
+\end{classroomqa}
+
+Damit lässt sich auch die explizite Zeitabhängigkeit physikalisch deuten. Ist die Kopplung \(g(t)\) zeitabhängig, oder ermöglicht ein äußerer Eingriff die Streuung plötzlich, sind nicht alle Zeitpunkte gleichwertig. Die reduzierte Beschreibung kann dann Energie mit den nicht berücksichtigten äußeren Dynamiken austauschen.
+
+\begin{classroomqa}
+\lecturetimestamp{01:28:29}
+\audiencequestion{Stammen Kopplungskonstanten meist aus dem Experiment, und was bedeutet eine zeitabhängige Kopplung?}
+\lecturerresponse{Ja, ihre Werte werden experimentell bestimmt. Explizite Zeitabhängigkeit bedeutet meist, dass ein beweglicher oder veränderlicher Teil des Systems weggelassen wurde, ähnlich wie im Modell des festen Targets dessen Rückstoß vernachlässigt wurde. Die scheinbar fehlende Energie gehört zu diesen nicht berücksichtigten Freiheitsgraden.}
+\end{classroomqa}
+
+Ein bewegtes Target ist das einfachste Beispiel.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:23}
+\audiencequestion{Ist ein Stoß gegen ein bewegtes Target ein Beispiel dafür, dass die Energie des Teilchens nicht erhalten bleibt?}
+\lecturerresponse{Ja. Wird die vorgegebene Bewegung des Targets in der Energiebilanz weggelassen, kann es dem Teilchen Energie zuführen oder entziehen.}
+\end{classroomqa}
+
+Auch die Punktförmigkeit des Targets ist eine Vereinfachung.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:43}
+\audiencequestion{Wann muss man die Größe des Targets mit der Größe oder der Wellenlänge der einlaufenden Welle vergleichen?}
+\lecturerresponse{Im vorliegenden Modell hat das Target keine Ausdehnung. Eine endliche Targetgröße führt im Vergleich zur Wellenlänge tatsächlich zu zusätzlichen Effekten; auf diese Verfeinerung gehen wir jedoch erst später ein.}
+\end{classroomqa}
+
+Kehren wir nun zum bewegten Target zurück. Stellen wir uns eine Wand vor, die sich auf einen Tennisball zubewegt. Die Wand kann dem Ball Energie zuführen. Ist die Bewegung der Wand vorgegeben und ihre Energie wird nicht berücksichtigt, so bleibt die Energie des Balls allein nicht erhalten. Mathematisch entspricht dies einer Zeitabhängigkeit der Targetposition und nicht notwendigerweise einer Zeitabhängigkeit von \(g\).
+
+Die Erzeugungs- und Vernichtungsoperatoren haben also genau das geleistet, was beabsichtigt war: Sie beschreiben den Übergang von einem Teilchenzustand in einen anderen, während die Raumzeitabhängigkeit der Felder bestimmt, welche Erhaltungsbedingungen mit diesem Übergang einhergehen.
+
+\section{Ladungszählung und Phaseninvarianz}
+
+Jede Teilchensorte hat ihr eigenes Feld. Elektronen und Photonen werden beispielsweise nicht durch dasselbe \(\psi\) beschrieben. Um die Ladungszählung mit der bereits verfügbaren Algebra sichtbar zu machen, bezeichnen wir vorübergehend ein elektronenartiges Feld mit \(\psi\): \(\psi\) vernichtet ein solches geladenes Teilchen, und \(\psi^\dagger\) erzeugt eines. Für die Buchführung dient dies als bosonischer Ersatz; für das echte fermionische Elektronenfeld ist eine Algebra erforderlich, die noch nicht eingeführt wurde.
+
+Der Faktor für ein festes Target
+\begin{equation}
+\psi^\dagger\psi
+\end{equation}
+vernichtet ein Teilchen und erzeugt eines. Ein Elektron kommt hinein und eines geht wieder hinaus, die von dieser Teilchensorte getragene Ladung ändert sich also nicht.
+
+Stellen wir uns nun vor, dass ein Elektron eintritt und am selben Punkt zwei Elektronen austreten. Das entsprechende Operatorprodukt enthielte ein Vernichtungsfeld und zwei Erzeugungsfelder,
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+Für ein Elektronenfeld würde dadurch netto ein Elektron erzeugt und somit die elektrische Ladungserhaltung verletzt. Zwei ein- und zwei auslaufende Elektronen lassen sich dagegen durch
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+darstellen; dieser Ausdruck enthält gleich viele Erzeugungs- und Vernichtungsfelder. Für zwei ein- und drei auslaufende Elektronen wäre
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+erforderlich, was die Nettoladung erneut ändert. Die unmittelbare Regel ist einfach: Eine ladungserhaltende Wechselwirkung enthält gleich viele \(\psi\)- wie \(\psi^\dagger\)-Felder.
+
+\begin{classroomqa}\lecturetimestamp{01:34:27}\audiencequestion{Spielt die Reihenfolge der Feldoperatoren bei dieser Prüfung der Ladungserhaltung eine Rolle?}\lecturerresponse{Bei der unmittelbaren Prüfung zählt die Anzahl der Faktoren \(\psi\) und \(\psi^\dagger\), nicht ihre Reihenfolge. Ob Produkte mit unterschiedlicher Reihenfolge ansonsten identisch sind, ist eine separate Frage.}\end{classroomqa}
+
+Es gibt ein tiefergehendes mathematisches Kriterium als bloßes Zählen. Multiplizieren wir das Feld mit einer konstanten Phase:
+\begin{equation}
+\psi\longrightarrow e^{i\alpha}\psi.
+\end{equation}
+Da \(\psi^\dagger\) das hermitesch konjugierte Feld ist, transformiert es mit der konjugierten Phase,
+\begin{equation}
+\psi^\dagger\longrightarrow e^{-i\alpha}\psi^\dagger.
+\end{equation}
+Ein Ausdruck mit gleich vielen Feldern beider Arten bleibt unverändert. Zum Beispiel gilt:
+\begin{align}
+\psi^\dagger\psi
+&\longrightarrow
+e^{-i\alpha}e^{i\alpha}\psi^\dagger\psi
+=\psi^\dagger\psi,\\
+\psi^\dagger\psi^\dagger\psi\psi
+&\longrightarrow
+e^{-2i\alpha}e^{2i\alpha}
+\psi^\dagger\psi^\dagger\psi\psi
+=\psi^\dagger\psi^\dagger\psi\psi.
+\end{align}
+Ein Ausdruck mit ungleichen Anzahlen ändert sich dagegen. Also gilt:
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi
+\longrightarrow
+e^{-i\alpha}\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+Die zulässigen ladungserhaltenden Wechselwirkungen sind genau diejenigen, die unter dieser globalen Phasenänderung invariant bleiben. In dieser einfachen Feldbeschreibung sind Phaseninvarianz und Ladungserhaltung zwei Beschreibungen derselben Regel.
+
+Die Kombination
+\begin{equation}
+\psi+\psi^\dagger
+\end{equation}
+ist unter einer beliebigen Phasendrehung nicht invariant.
+
+\begin{classroomqa}\lecturetimestamp{01:37:53}\audiencequestion{Ist das nicht der Realteil von \(\psi\)?}\lecturerresponse{Ja. Er ist proportional zum Realteil von \(\psi\), und eine Multiplikation von \(\psi\) mit einer Phase ändert diesen Realteil. Der Ausdruck ist daher nicht phaseninvariant.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{01:38:05}\audiencequestion{Wenn ein Elektron auf ein Target trifft und viele sekundäre Elektronen emittiert werden, wie kann die Ladung dann erhalten bleiben?}\lecturerresponse{Das Target ist an diesem Prozess beteiligt und nicht passiv. Wenn ein Atom viele Elektronen emittiert, ändern sich seine Ladung und sein Zustand. Seine Dynamik muss mit einbezogen werden, und auch das Target muss durch Quantenfelder beschrieben werden.}\end{classroomqa}
+
+An diesem Punkt werden drei Entsprechungen sichtbar. Zeittranslationsinvarianz entspricht der Energieerhaltung. Globale Phaseninvarianz entspricht der Ladungserhaltung. Räumliche Translationsinvarianz entspricht der Impulserhaltung, auch wenn die vollständige räumliche Rechnung noch aussteht.
+
+\section{Operatorreihenfolge und die Grenzen des Modells niedrigster Ordnung}
+
+Der Einfachheit halber stehen in den obigen Produkten alle Erzeugungsfelder links und alle Vernichtungsfelder rechts. Ein verschachteltes Produkt kann weiterhin gleich viele Faktoren beider Arten enthalten und damit die Ladungszählung bestehen; die Operatorreihenfolge kann den Ausdruck jedoch auf andere Weise beeinflussen.
+
+\begin{classroomqa}\lecturetimestamp{01:40:02}\audiencequestion{Lässt sich derselbe Prozess mit verschachtelten Faktoren wie \(\psi\psi^\dagger\psi\psi^\dagger\) schreiben?}\lecturerresponse{Es enthält weiterhin gleich viele Faktoren beider Arten und erfüllt daher die Ladungsregel, ist aber im Allgemeinen nicht derselbe Ausdruck wie einer, bei dem alle Daggers links stehen. Wie sich Ausdrücke mit unterschiedlicher Reihenfolge ineinander umformen lassen, wird später behandelt.}\end{classroomqa}
+
+\editorialnote{Der Wortlaut einer Frage aus dem Publikum bei 01:41:10 ist zu stark beschädigt, um ihn zu rekonstruieren. Aus der erhaltenen Antwort geht hervor, dass gleiche Anzahlen von \(\psi\) und \(\psi^\dagger\) Phaseninvarianz und Ladungserhaltung bedeuten, ungleiche Anzahlen dagegen keines von beiden.}
+
+Diese Verbindungen zwischen Symmetrien und Erhaltungssätzen sind Beispiele für den Satz von Noether. In der klassischen Mechanik liefert dieser Satz den allgemeinen Rahmen; hier wurde derselbe Zusammenhang direkt anhand der Phasen und Deltafunktionen der Quantenfelder gezeigt.
+
+Auch das führende Ergebnis für ein festes Target hat einen offensichtlichen Gültigkeitsbereich. Ein schematischer Wahrscheinlichkeitsvorfaktor wie \(4\pi^2g^2\) ist nicht mehr verlässlich, sobald er sich dem Wert eins nähert oder ihn überschreitet.
+
+\begin{classroomqa}\lecturetimestamp{01:43:33}\audiencequestion{Bedeutet das schematische Ergebnis, dass \(g\) ungefähr kleiner als \(1/(2\pi)\) sein muss?}\lecturerresponse{Entweder ist \(g\) klein genug, damit dieser erste Term brauchbar ist, oder das Modell ist unvollständig. Ein Teilchen kann einmal streuen, zurückkehren und ein zweites Mal streuen, dann ein drittes Mal und so weiter. Die vollständige Amplitude ist eine unendliche Reihe. Nur für kleine Werte von \(g\) dominiert der einfachste Term; andernfalls müssen viele Feynman-Diagramme summiert werden.}\end{classroomqa}
+
+Die einfachen Raumzeitbilder sind die Anfänge von Feynman-Diagrammen. Ihre Vertizes geben elementare Möglichkeiten an: Ein ein- und ein auslaufendes Teilchen entspricht einem Faktor wie \(\psi^\dagger\psi\); zwei ein- und zwei auslaufende Teilchen entsprechen einem Faktor wie \(\psi^\dagger\psi^\dagger\psi\psi\). Wiederholte Vertizes erzeugen höhere Potenzen der Kopplung und die Terme höherer Ordnung in der Reihe.
+
+\begin{classroomqa}\lecturetimestamp{01:45:39}\audiencequestion{Kann eine Kopplungskonstante einen imaginären Anteil haben?}\lecturerresponse{Komplexe Kopplungskonstanten können vorkommen. Irreduzible Phasenkombinationen, die unter \(T\) ungerade sind, können auf eine Verletzung der Zeitumkehrinvarianz hinweisen: Der zeitumgekehrte Prozess muss dann nicht die durch die Symmetrie entsprechende Amplitude haben.}\end{classroomqa}
+
+\editorialnote{Der QCD-Parameter \(\theta\) wurde in diesem Austausch erwähnt. Er ist jedoch ein reeller Koeffizient vor einer unter \(T\) ungeraden Wechselwirkung und kein imaginärer Anteil einer Kopplung. Eine entfernbar gewählte Phase oder eine absorptive komplexe Phase belegt für sich genommen keine Verletzung von \(T\). Die Schlussfolgerung gilt nur für irreduzible Phasenkombinationen, die unter \(T\) ungerade sind.}
+
+\begin{classroomqa}\lecturetimestamp{01:47:02}\audiencequestion{Kann das auslaufende Teilchen früher oder später emittiert werden, statt dass das einlaufende Teilchen gleichzeitig absorbiert wird?}\lecturerresponse{Das ist eine berechtigte Frage, aber das augenblickliche Modell behandelt sie nicht. Die allgemeinere Zeitordnung wird später behandelt.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{01:47:44}\audiencequestion{Wie wird diese Konstruktion relativistisch?}\lecturerresponse{Der kurze Hinweis lautet, die konjugierten Anteile zu kombinieren und einen Nenner mit der Quadratwurzel aus \(\omega(k)\) einzubeziehen. Die vollständige Konstruktion wird später behandelt.}\end{classroomqa}
+
+\editorialnote{Die kurz erwähnte relativistische Formel lässt sich nicht zuverlässig genug rekonstruieren, um sie zu setzen. Festgehalten werden nur die genannten Bestandteile und der Hinweis, dass die vollständige Herleitung später folgt.}
+
+Ladungserhaltung muss klar von der Erhaltung der Ruhemasse unterschieden werden.
+
+\begin{classroomqa}\lecturetimestamp{01:48:22}\audiencequestion{Wird die Ruhemasse im selben strukturellen Sinn wie die elektrische Ladung erhalten?}\lecturerresponse{Nein. In der nichtrelativistischen Galilei-Mechanik ist die Masse eine additive Erhaltungsgröße. Bei relativistischen Reaktionen muss die Summe der Ruhemassen der einzelnen Teilchen nicht erhalten bleiben. Ein Elektron und ein Positron können in zwei Photonen annihilieren, während die elektrische Ladung erhalten bleibt.}\end{classroomqa}
+
+\editorialnote{Für ein vollständiges abgeschlossenes relativistisches System bleibt der Gesamtviererimpuls erhalten; daher ist die invariante Masse dieses Systems konstant. Das Annihilationsbeispiel bezieht sich auf die Summe der Ruhemassen der einzelnen Teilchen, nicht auf die invariante Masse des abgeschlossenen Systems.}
+
+Die Erhaltung der additiven Masse ist somit eine effektive nichtrelativistische Tatsache und keine fundamentale Regel auf derselben Ebene wie die Erhaltung der elektrischen Ladung. Die oben gefundene Phaseninvarianz bringt die tieferliegende Ladungssymmetrie zum Ausdruck.
+
+Als Nächstes wird der bosonische Ersatz durch fermionische Felder ersetzt, und mehrere Teilchensorten werden zugelassen---Elektronen, Myonen, Quarks, Photonen und weitere---, von denen jede ihr eigenes Feld und ihre eigenen zulässigen Wechselwirkungen hat.
+
+\begin{classroomqa}\lecturetimestamp{01:50:39}\audiencequestion{War es gerechtfertigt, das frühere Beispiel ein Elektronenfeld zu nennen, obwohl bislang nur bosonische Felder entwickelt wurden?}\lecturerresponse{Nur als bosonische Version oder als Ersatz für ein Elektron. Die echte fermionische Theorie wurde noch nicht eingeführt.}\end{classroomqa}
