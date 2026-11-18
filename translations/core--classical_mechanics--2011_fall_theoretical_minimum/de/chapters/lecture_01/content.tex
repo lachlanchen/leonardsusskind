@@ -1,0 +1,353 @@
+\chapter{Zustände, Umkehrbarkeit und Kinematik}
+
+Die klassische Mechanik ist nicht bloß eine Sammlung von Gleichungen für fallende Körper, umlaufende Planeten oder geladene Teilchen. Bevor wir eine bestimmte Gleichung auswählen, können wir eine allgemeinere Frage stellen: Wie muss ein Bewegungsgesetz aussehen, damit es als klassisches Gesetz gelten kann? Wir beginnen mit so einfachen Systemen, dass sich jeder mögliche Verlauf an der Tafel darstellen lässt. Wenn dort die Begriffe Zustand, Determinismus, Umkehrbarkeit und Erhaltung klar geworden sind, kehren wir zu Teilchen zurück, die sich im gewöhnlichen Raum bewegen.
+
+\section{Zwei Arten von Fragen}
+
+In der Mechanik gibt es zwei Arten von Fragen. Die eine fragt nach dem konkreten Gesetz, das ein bestimmtes System beherrscht. Ein Planet, der sich im Gravitationsfeld eines massereichen Körpers bewegt, folgt einem Gesetz; ein elektrisch geladenes Teilchen, das sich in einem Magnetfeld bewegt, einem anderen. Dabei geht es um die detaillierten Naturgesetze.
+
+Die andere Frage betrifft den Rahmen, der all diesen Beispielen gemeinsam ist. Gibt es Regeln, die jedes zulässige Gesetz erfüllen muss? Welche Merkmale gehören zur klassischen Mechanik selbst, unabhängig von der Kraft oder dem untersuchten Objekt? Die konkreten Beispiele werden die Antwort veranschaulichen, doch dieses zweite Problem gibt dem Fach seine Struktur.
+
+Das nützlichste erste Beispiel ist eine abstrakte Münze auf einem abstrakten Tisch. Wir behalten von der Münze nur eine Eigenschaft bei: Sie kann Kopf oder Zahl zeigen. Ihr Konfigurationsraum ist daher \begin{equation}
+  \mathcal C=\{H,T\}.
+\end{equation}Das Wort \emph{Konfiguration} bezeichnet eine der möglichen Beschaffenheiten des Systems. Eine Anfangsbedingung ist die Wahl einer davon. Eine Münze mit nur einer Seite wäre noch einfacher, hätte aber nur eine Konfiguration, sodass nichts geschehen könnte. Zwei Zustände genügen, um Dynamik zu ermöglichen.
+
+\section{Die Münze: Zustand, Gesetz und Verlauf}
+
+Die Zeit schreitet in ganzzahligen Schritten voran, als würde die Welt mit einem Stroboskop beleuchtet: \begin{equation}
+  t=\ldots,-2,-1,0,1,2,\ldots .
+\end{equation}Ein Bewegungsgesetz ist eine Aktualisierungsregel. Es ordnet dem Zustand zur Zeit \(t\) einen Zustand zur Zeit \(t+1\) zu. Die einfachste Regel lässt alles unverändert: \begin{equation}
+  H\longmapsto H,
+  \qquad
+  T\longmapsto T.
+  \label{eq:coin-identity}
+\end{equation}Ausgehend von \(H\) ist der gesamte Verlauf \(H,H,H,\ldots\); ausgehend von \(T\) ist er \(T,T,T,\ldots\). Die Regel ist langweilig, aber sie erlaubt vollständige Vorhersagen.
+
+Die andere umkehrbare Regel vertauscht die beiden Zustände: \begin{equation}
+  H\longmapsto T,
+  \qquad
+  T\longmapsto H.
+  \label{eq:coin-flip}
+\end{equation}Die Verläufe wechseln nun ab: \begin{equation}
+  H,T,H,T,\ldots,
+  \qquad
+  T,H,T,H,\ldots .
+\end{equation}Ein Pfeil zeigt vom Zustand vor der Aktualisierung zum Zustand danach. Das Ende des Pfeils gibt also an, wo das System beginnt, die Pfeilspitze, wohin es gelangt.
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_02.png}\caption{Die beiden Konfigurationen der Münze und das gerichtete Wurfgesetz an der Vorlesungstafel. Die übersichtliche Aktualisierungsregel steht in Gl.~\eqref{eq:coin-flip}}\lectureframe{00:06:50}\label{fig:coin-board}\end{figure}
+
+Die Seiten lassen sich durch eine Variable mit zwei möglichen Werten kodieren: \begin{equation}
+  \sigma=
+  \begin{cases}
+    +1,&H,\\
+    -1,&T.
+  \end{cases}
+\end{equation}Der Buchstabe \(\sigma\) wird in der Physik traditionell für Größen mit zwei möglichen Werten verwendet, insbesondere bei Beschreibungen des Spins; Kenntnisse über Spin sind hier jedoch nicht erforderlich. Mit dieser Notation werden die beiden Regeln zu Bewegungsgleichungen: \begin{align}
+  \sigma(t+1)&=\sigma(t),
+  &&\text{identity law},\label{eq:sigma-identity}\\
+  \sigma(t+1)&=-\sigma(t),
+  &&\text{flip law}.\label{eq:sigma-flip}
+\end{align}Die Variable fügt keine neue Physik hinzu. Sie liefert eine kompakte Bezeichnung für die Konfiguration und macht aus einem Graphen eine Gleichung.
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_03.png}\caption{Das Wurfgesetz in der Form \(\sigma(t+1)=-\sigma(t)\). Die eingerahmten Werte \(\sigma=\pm1\) bezeichnen Kopf und Zahl.}\lectureframe{00:08:58}\label{fig:sigma-board}\end{figure}
+
+Bei beiden Regeln bestimmen der Anfangszustand und das Gesetz den Zustand zu jedem späteren Zeitpunkt. Diese Aussage setzt voraus, dass das System \emph{abgeschlossen} ist. Greift jemand ein und dreht die Münze um, dann ist die Hand ein äußerer Einfluss, der in unserer Beschreibung nicht berücksichtigt wird. Damit haben wir den Determinismus nicht widerlegt, sondern das System geändert. Ein klassisches Gesetz soll ein abgeschlossenes System beherrschen, in dessen Beschreibung alle für seine Entwicklung relevanten Einflüsse enthalten sind.
+
+Es gibt vier mathematische Funktionen von einer zweielementigen Menge in sich selbst. Die beiden oben nicht angegebenen schicken beide Eingaben auf \(H\) beziehungsweise beide auf \(T\). Sie sind für die Zukunft deterministisch, tilgen aber die Unterscheidung zwischen zwei möglichen Vergangenheiten. Wenn wir im Folgenden Umkehrbarkeit fordern, sind die Gl.~\eqref{eq:coin-identity} und \eqref{eq:coin-flip} genau die beiden zulässigen Abbildungen.
+
+\section{Ein Würfel: Bahnen und Erhaltungsgrößen}
+
+Ersetzen wir die Münze durch einen Würfel. Für unsere Zwecke ist an einem Würfel nur wichtig, dass er sechs Konfigurationen hat: \begin{equation}
+  \mathcal C=\{1,2,3,4,5,6\}.
+\end{equation}Eine Anfangsbedingung ist die Wahl einer Zahl. Wir könnten wiederum jeden Zustand unverändert lassen, doch gerichtete Graphen sind für weniger triviale Regeln nützlicher. Betrachten wir \begin{equation}
+  1\longmapsto2\longmapsto3\longmapsto4
+  \longmapsto5\longmapsto6\longmapsto1.
+  \label{eq:six-cycle}
+\end{equation}Ausgehend von \(4\) lautet der Verlauf beispielsweise
+
+\[
+  4,5,6,1,2,3,4,\ldots .
+\]\footnote{Quelle: Beim ersten mündlichen Durchgehen der Pfeile heißt es an einer Stelle, \(6\) kehre zu \(6\) zurück. Die unmittelbar folgende Formulierung, der gezeichnete Zyklus und der aufgezählte Verlauf geben alle die beabsichtigte Aktualisierung \(6\mapsto1\) wieder.}
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_06.png}\caption{Der einzelne Zyklus mit sechs Zuständen. Bei jedem Stroboskopschritt geht ein Zustand in den nächsten über; nach sechs Aktualisierungen kehrt er zum Ausgangszustand zurück.}\lectureframe{00:12:40}\label{fig:six-cycle-board}\end{figure}
+
+Ein Gesetz kann komplizierter aussehen, ohne sich strukturell zu unterscheiden. Zum Beispiel ist \begin{equation}
+  1\to2\to5\to3\to4\to6\to1
+  \label{eq:relabeled-cycle}
+\end{equation} weiterhin ein einzelner Zyklus mit sechs Zuständen. Ordnet man die Knoten auf der Seite in der Reihenfolge \(1,2,5,3,4,6\) an, ergibt sich dasselbe Bild wie in Gl.~\eqref{eq:six-cycle}. Bezeichnungen wie \(1\) und \(5\) sind Namen; die Zyklusstruktur hängt nicht von ihnen ab.
+
+Ein tatsächlich anderes Gesetz teilt die sechs Zustände in zwei Zyklen auf, zum Beispiel \begin{equation}
+  1\to2\to3\to1,
+  \qquad
+  4\to6\to5\to4.
+  \label{eq:two-cycles}
+\end{equation}Es gibt weiterhin einen Würfel und ein Gesetz, aber eine Bahn, die auf einem Zyklus beginnt, kann den anderen niemals erreichen. Wir können den Zyklen eine Zahl \(Q\) zuordnen: \begin{equation}
+  Q=
+  \begin{cases}
+    0,&\text{on the cycle }\{1,2,3\},\\
+    1,&\text{on the cycle }\{4,5,6\}.
+  \end{cases}
+\end{equation}Der Zustand ändert sich bei jedem Schritt, während \(Q\) unverändert bleibt.
+
+\begin{definition}Eine Erhaltungsgröße ist eine Funktion des Zustands, deren Wert sich unter dem Bewegungsgesetz nicht ändert.\end{definition}
+
+Dieselbe Idee ermöglicht einen Fixpunkt, einen Zweierzyklus und einen Dreierzyklus. Die erhaltene Kennzeichnung gibt an, auf welcher Bahn sich das System befindet; den Zustand innerhalb dieser Bahn muss sie nicht bestimmen. Erhaltung ist somit mit Bewegung vereinbar. Erhalten bleibt nicht unbedingt die vollständige Konfiguration, sondern möglicherweise nur eine Unterscheidung zwischen möglichen Konfigurationen.
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_07.png}\caption{Mehrere voneinander getrennte Zyklen an der Tafel: ein Fixpunkt, ein Zweierzyklus und ein Dreierzyklus. Die Zykluskennzeichnung bleibt erhalten, auch wenn sich der Zustand auf seinem Zyklus bewegt.}\lectureframe{00:18:40}\label{fig:conserved-cycles-board}\end{figure}
+
+In einem endlichen umkehrbaren System ist jede Bahn ein Zyklus. Ein einzelner Zyklus besitzt keine nichtkonstante Erhaltungsgröße dieser einfachen Art, denn die Bahn durchläuft schließlich jeden Zustand. Mehrere Zyklen erlauben eine solche Kennzeichnung, weil die Entwicklung einen Zustand niemals von einer Komponente in eine andere überführt.
+
+\section{Was muss in einem Zustand enthalten sein?}
+
+Bei den Münzbeispielen hing der nächste Seitenwurf nur von der aktuellen Seite ab. Eine Frage aus dem Publikum prüft, ob diese Einschränkung wesentlich ist.
+
+\begin{classroomqa}\audiencequestion{Lässt sich eine Folge von Kopf und Zahl konstruieren, bei der das nächste Ergebnis von mehr als der unmittelbar sichtbaren Seite abhängt, vielleicht von einem oder mehreren früheren Ergebnissen?\lecturetimestamp{00:19:27--00:21:23}}
+
+\lecturerresponse{Ja. In diesem Fall ist weder \(H\) noch \(T\) für sich genommen der vollständige Zustand. Wird eine frühere Seite benötigt, erweitern wir den Zustandsraum zu \(
+  \{HH,HT,TH,TT\}.
+\)Jedes geordnete Paar hält die aktuelle und die vorhergehende Seite fest. Die Entwicklung lässt sich dann wieder als Einschrittregel auf diesem vier Zustände umfassenden Raum schreiben. Wird noch mehr Verlauf benötigt, nehmen wir auch diese Information auf.}\end{classroomqa}
+
+Diese Antwort gibt dem Zustand seine operationale Bedeutung.
+
+\begin{definition}Der Zustand eines Systems zu einem bestimmten Zeitpunkt umfasst alle Informationen, die zusammen mit dem Bewegungsgesetz benötigt werden, um seine Zukunft vorherzusagen.\end{definition}
+
+Ein Zustand ist also nicht bloß eine Momentaufnahme. Gemeint ist die vollständige Menge an Daten, die die Entwicklung eindeutig festlegt. Später wird die Position allein nicht ausreichen, wenn wir ein Newtonsches Teilchen beschreiben; auch die Geschwindigkeit gehört zu den Anfangsdaten. Die Münze mit Gedächtnis ist die einfachste Ausprägung desselben Prinzips.
+
+\section{Unendliche Zustandsräume}
+
+Unendlich viele Zustände erfordern nicht unendlich viele Objekte. Betrachten wir ein Teilchen, das auf die ganzzahligen Punkte einer unendlichen Geraden beschränkt ist. Sein Zustand ist eine ganze Zahl: \[
+  n\in\mathbb Z.
+\]Ein Gesetz bewegt es bei jedem Schritt um einen Punkt nach rechts: \begin{equation}
+  n(t+1)=n(t)+1.
+  \label{eq:lattice-one}
+\end{equation}Diese Bahn schließt sich nie, durchläuft aber jede ganze Zahl, wenn man sie sowohl in die Zukunft als auch in die Vergangenheit verfolgt. In diesem erweiterten Sinn spielt sie die Rolle eines einzigen endlosen Zyklus.
+
+Ein anderes Gesetz verschiebt das Teilchen bei jedem Schritt um zwei Punkte: \begin{equation}
+  n(t+1)=n(t)+2.
+  \label{eq:lattice-two}
+\end{equation}Nun entwickelt sich jeder gerade Zustand ausschließlich über gerade Zustände und jeder ungerade ausschließlich über ungerade Zustände. Die Parität bleibt erhalten: \begin{equation}
+  \begin{aligned}
+    Q_{\rm parity}(n)&=n\bmod 2,\\
+    Q_{\rm parity}(n(t+1))&=Q_{\rm parity}(n(t)).
+  \end{aligned}
+\end{equation}Der Übergang von einem endlichen zu einem unendlichen Konfigurationsraum erlaubt Verläufe, die sich nie wiederholen, ändert aber nichts an der Bedeutung von Zustand, Bahn oder Erhaltung.
+
+\section{Determinismus bedeutet noch keine Umkehrbarkeit}
+
+Nun zeichnen wir eine Regel, die die Zukunft eindeutig vorhersagt, aber eine zweite klassische Forderung nicht erfüllt. Geben wir einer dreiseitigen Münze die Zustände Kopf, Zahl und Kante und legen wir fest: \begin{equation}
+  H\to T,
+  \qquad
+  T\to E,
+  \qquad
+  E\to T.
+  \label{eq:nonreversible-map}
+\end{equation}Ausgehend von \(H\) lautet der Verlauf \[
+  H,T,E,T,E,\ldots;
+\]; beginnt man dagegen mit \(T\) oder \(E\), ist der anschließende Wechsel ebenso eindeutig. Von jedem Zustand geht genau ein Pfeil aus, also ist die Regel für die Zukunft deterministisch.
+
+Das Problem zeigt sich, wenn wir versuchen, die Vergangenheit zu rekonstruieren. Ist der aktuelle Zustand \(T\), könnte der vorhergehende Zustand entweder \(H\) oder \(E\) gewesen sein. Zwei Verläufe sind zusammengeführt worden. Kehrt man alle Pfeile um, wird der Mangel unmittelbar sichtbar: Von \(T\) aus bietet der umgekehrte Graph zwei mögliche Schritte. Die umgekehrte Regel ist nicht deterministisch.
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_08.png}\caption{Das nichtumkehrbare Gesetz \(H,T,E\) und beispielhafte Verläufe. Sowohl \(H\) als auch \(E\) führen zu \(T\), daher bestimmt die Gegenwart keine eindeutige Vergangenheit.}\lectureframe{00:28:50}\label{fig:nonreversible-board}\end{figure}
+
+\begin{definition}Ein diskretes Gesetz ist umkehrbar, wenn der aktuelle Zustand sowohl den nächsten als auch den vorhergehenden Zustand eindeutig festlegt. Im Zustandsgraphen muss von jedem Zustand genau ein Pfeil ausgehen und genau ein Pfeil in ihn hineinführen.\end{definition}
+
+Für einen endlichen Zustandsraum ist eine umkehrbare Aktualisierung eine Permutation der Zustände. Sie erzeugt oder beseitigt keine Unterscheidungen zwischen Zuständen, sondern ordnet sie lediglich neu an. Deshalb zerfällt ihr Graph in Zyklen. Die Abbildung in Gl.~\eqref{eq:nonreversible-map} ist zwar eine Funktion, aber keine injektive Funktion und besitzt daher keine Umkehrabbildung.
+
+\begin{classroomqa}\audiencequestion{Wäre eine Regel dieser Art zulässig, wenn die Zustände Wahrscheinlichkeiten für ein Teilchen darstellten?\lecturetimestamp{00:29:46--00:31:17}}
+
+\lecturerresponse{Das wäre ein anderer Rahmen. Die grundlegende klassische Mechanik, wie wir sie hier formulieren, verwendet deterministische Gesetze statt probabilistischer Aktualisierungsregeln. Man kann eine solche Regel durchaus erfinden und untersuchen, aber in diesem Sinne ist sie kein klassisches mechanisches Gesetz. Die Quantenmechanik ist nicht auf dieselbe Weise deterministisch und besitzt dennoch ein Analogon umkehrbarer Entwicklung; das erfordert eine spätere Diskussion. Auch die klassische statistische Mechanik verwendet Wahrscheinlichkeiten, geht aber von zugrunde liegenden mechanischen Gesetzen aus und beschreibt damit unvollständige Kenntnis der Anfangsdaten.}\end{classroomqa}
+
+Diese Unterscheidung ist wichtig. Eine Wahrscheinlichkeitsverteilung, die wir verwenden, weil wir den genauen klassischen Zustand nicht kennen, ist kein indeterministisches Bewegungsgesetz. Sie beschreibt unseren Kenntnisstand über ein System, dessen mikroskopische Entwicklung weiterhin als deterministisch und umkehrbar gilt.
+
+\section{Exakte Gesetze und unvollständige Kenntnis}
+
+Für eine Vorhersage sind zwei Zutaten erforderlich: \begin{enumerate}\item das Bewegungsgesetz; \item der Anfangszustand.\end{enumerate}Ein exaktes Gesetz führt nicht zu einer exakten Vorhersage, wenn die Anfangsbedingung nur näherungsweise bekannt ist. Bei der Münze lässt sich leicht vorstellen, dass man auf den Tisch schaut und die Seite einwandfrei erkennt. Reale mechanische Variablen sind kontinuierlich. Positionen und Geschwindigkeiten können beliebige reelle Werte annehmen, und keine Messung liefert unendlich viele Dezimalstellen.
+
+Nehmen wir an, der tatsächliche Anfangszustand liege in einem kleinen Bereich möglicher Zustände. Bei manchen Dynamiken bleibt dieser Bereich lange klein; bei anderen entfernen sich benachbarte Anfangszustände rasch voneinander. In einem chaotischen System wachsen kleine Unsicherheiten im Anfangszustand schließlich zu großen Abweichungen an. Die Atmosphäre ist ein vertrautes Beispiel. Genauere Messungen können den Zeitraum verlängern, für den die Vorhersage brauchbar bleibt. Doch bei jeder festgelegten Messgenauigkeit gibt es einen ausreichend weit entfernten Zeitpunkt, ab dem die Vorhersage unzuverlässig wird.
+
+Diese praktische Einschränkung führt keine Mehrdeutigkeit in die Gleichungen ein. Wären die Anfangsbedingungen exakt bekannt, würde ein klassisches umkehrbares Gesetz sowohl die Zukunft als auch die Vergangenheit festlegen. Bei endlicher Genauigkeit lautet die quantitative Frage vielmehr: Wie genau muss der Anfangszustand bekannt sein, damit eine Vorhersage für einen vorgegebenen Zeitraum möglich ist?
+
+Der graphische Test führt nun zu einer knappen Schlussfolgerung. Ein Gesetz, bei dem an jedem Zustand genau ein Pfeil eintrifft und genau einer ausgeht, ist deterministisch und umkehrbar. Die entsprechenden Aussagen für Teilchen sind weniger elementar, drücken aber dieselbe klassische Struktur aus.
+
+\section{Von abstrakten Zuständen zu Punkten im Raum}
+
+Nun wenden wir uns von Münzen und Würfeln den Punktteilchen zu. Ein Teilchen kann sich in einer, drei, fünf oder beliebig vielen Dimensionen bewegen; der gewöhnliche Raum liefert jedoch das naheliegende Beispiel. Um einen Punkt quantitativ zu beschreiben, wählen wir: \begin{itemize}\item einen Ursprung; \item drei zueinander senkrechte Achsen; \item eine Orientierung dieser Achsen; \item eine Längeneinheit.\end{itemize}Die Wahl des Ursprungs ist Konvention. Er kann in Palo Alto oder anderswo liegen, und physikalische Schlussfolgerungen sollten nicht von dieser Wahl abhängen. Die Achsen können mit \(x,y,z\) oder \(x_1,x_2,x_3\) beschriftet werden. Nachdem die \(x\)- und \(y\)-Richtungen festgelegt sind, kann die \(z\)-Achse in eine von zwei zueinander senkrechten Richtungen zeigen. Wir wählen die Rechtshandkonvention: Zeigt der Daumen der rechten Hand entlang \(x\) und der Zeigefinger entlang \(y\), so weist der Mittelfinger entlang \(z\).
+
+Gleiche Markierungen auf den Achsen erfordern eine Einheit, etwa Meter, Fuß, Zoll oder Lichtjahre. Sind diese Konventionen festgelegt, wird jeder Punkt durch drei Zahlen bezeichnet: \begin{equation}
+  (x,y,z).
+\end{equation}Vom Ursprung aus lässt sich der Punkt durch Verschiebungen entlang der drei Achsen erreichen. Für ein System aus vielen Teilchen benötigt man je Teilchen ein solches Zahlentripel.
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_09.png}\caption{Kartesische Achsen und die drei Koordinaten eines Punktes. Die Zeichnung legt eine Koordinatenkonvention fest; der Punkt selbst hängt nicht davon ab, wo wir Ursprung oder Achsen wählen.}\lectureframe{00:43:00}\label{fig:coordinates-board}\end{figure}
+
+\section{Vektoren und ihre Komponenten}
+
+Ein Vektor ist ein Objekt mit Betrag und Richtung. Die Verschiebung vom Ursprung zu einem Punkt ist ein Vektor; Vektoren beschreiben aber auch Geschwindigkeit, Beschleunigung, elektrische Felder und viele weitere Größen. Einen Vektor schreiben wir fett, zum Beispiel \(\mathbf v\), seinen Betrag als \(\lvert\mathbf v\rvert\). Der Betrag ist nichtnegativ und nur beim Nullvektor gleich null.
+
+Geometrisch ist ein Vektor ein freier Pfeil. Wird der Pfeil verschoben, ohne seine Länge oder Richtung zu ändern, so bleibt der Vektor derselbe. In einer konkreten Anwendung kann ein Vektor einem Punkt zugeordnet sein, etwa wenn wir das elektrische Feld an einem bestimmten Ort angeben. Diese Zuordnung ist jedoch eine zusätzliche Information und gehört nicht zum abstrakten Vektor selbst.
+
+Bezüglich kartesischer Achsen hat ein Vektor die Komponenten \begin{equation}
+  \mathbf v=(v_x,v_y,v_z).
+\end{equation}Die Komponenten sind gewöhnliche vorzeichenbehaftete Zahlen, die man durch Projektion auf die Achsen erhält. Sie kodieren Betrag und Richtung. Der Satz des Pythagoras in drei Dimensionen ergibt \begin{equation}
+  \lvert\mathbf v\rvert^2
+  =v_x^2+v_y^2+v_z^2,
+  \qquad
+  \lvert\mathbf v\rvert
+  =\sqrt{v_x^2+v_y^2+v_z^2}.
+  \label{eq:vector-magnitude}
+\end{equation}Die Verhältnisse der Komponenten bestimmen die Richtung. Eine negative Komponente bedeutet, dass der Vektor teilweise in Richtung der negativen Achsenrichtung zeigt.
+
+\subsection{Skalarmultiplikation und Addition}
+
+Die Multiplikation mit einer reellen Zahl ändert die Länge eines Vektors und kehrt bei einem negativen Faktor seine Richtung um. Für \(c>0\) zeigt \(c\mathbf A\) in Richtung von \(\mathbf A\) und hat den Betrag \(c\lvert\mathbf A\rvert\). Insbesondere hat \(-\mathbf A\) dieselbe Länge wie \(\mathbf A\) und zeigt in die entgegengesetzte Richtung.
+
+Die Vektoraddition lässt sich auf drei gleichwertige Arten veranschaulichen. Erstens setzt man den Anfang von \(\mathbf B\) an die Spitze von \(\mathbf A\); der Pfeil vom Anfang von \(\mathbf A\) zur Spitze von \(\mathbf B\) ist dann \(\mathbf A+\mathbf B\). Zweitens setzt man beide Pfeilanfänge an denselben Punkt und ergänzt ein Parallelogramm; dessen Diagonale ist die Summe. An dieser Darstellung wird die Kommutativität sichtbar: \begin{equation}
+  \mathbf A+\mathbf B=\mathbf B+\mathbf A.
+\end{equation}Drittens addiert man die entsprechenden Komponenten: \begin{equation}
+  C_i=A_i+B_i,
+  \qquad i=x,y,z,
+  \label{eq:component-addition}
+\end{equation}wobei \(\mathbf C=\mathbf A+\mathbf B\) gilt. Mit diesen Regeln lassen sich auch beliebige Linearkombinationen wie \(a\mathbf A+b\mathbf B\) bilden.
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_10.png}\caption{Dreiecks- und Parallelogrammkonstruktion für die Vektoraddition. Beide ergeben denselben Vektor \(\mathbf A+\mathbf B\).}\lectureframe{00:53:00}\label{fig:vector-addition-board}\end{figure}
+
+Eine allgemeine Möglichkeit, einen Vektor durch einen anderen zu dividieren, gibt es nicht. Es gibt jedoch zwei übliche Vektorprodukte. Das Kreuzprodukt behandeln wir in einer späteren Vorlesung. Hier benötigen wir das Skalarprodukt.
+
+\subsection{Das Skalarprodukt}
+
+Projizieren wir \(\mathbf A\) auf die von \(\mathbf B\) bestimmte Achse. Beträgt der Winkel zwischen den Vektoren \(\theta\), so ist die vorzeichenbehaftete Komponente von \(\mathbf A\) in Richtung von \(\mathbf B\) gleich \(\lvert\mathbf A\rvert\cos\theta\). Multiplizieren wir diese Projektion mit \(\lvert\mathbf B\rvert\), erhalten wir die Definition von \begin{equation}
+  \mathbf A\cdot\mathbf B
+  =\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert\cos\theta.
+  \label{eq:dot-geometric}
+\end{equation}Das Ergebnis ist ein Skalar, kein weiterer Vektor. Gl.~\eqref{eq:dot-geometric} ist symmetrisch in \(\mathbf A\) und \(\mathbf B\), also gilt \(\mathbf A\cdot\mathbf B=\mathbf B\cdot\mathbf A\).
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_11.png}\caption{Geometrische Herleitung des Skalarprodukts durch Projektion an der Tafel. Die gesetzte Form lautet \(\mathbf A\cdot\mathbf B=AB\cos\theta\).}\lectureframe{00:58:30}\label{fig:dot-product-board}\end{figure}
+
+Das Vorzeichen enthält geometrische Information. Bei einem spitzen Winkel ist das Skalarprodukt positiv, bei einem stumpfen negativ und bei senkrechten Vektoren null. Daher gilt \begin{equation}
+  \mathbf A\perp\mathbf B
+  \quad\Longleftrightarrow\quad
+  \mathbf A\cdot\mathbf B=0
+\end{equation}für von null verschiedene Vektoren.
+
+In Komponenten lautet das Skalarprodukt \begin{equation}
+  \mathbf A\cdot\mathbf B
+  =A_xB_x+A_yB_y+A_zB_z.
+  \label{eq:dot-components}
+\end{equation}Diese Formel macht Berechnungen unmittelbar. Insbesondere gilt \begin{equation}
+  \mathbf A\cdot\mathbf A
+  =A_x^2+A_y^2+A_z^2
+  =\lvert\mathbf A\rvert^2.
+  \label{eq:self-dot}
+\end{equation}Aus den Komponenten zweier Vektoren bestimmen die Gl.~\eqref{eq:dot-geometric} und \eqref{eq:dot-components} den Winkel zwischen ihnen: \begin{equation}
+  \cos\theta
+  =\frac{\mathbf A\cdot\mathbf B}
+  {\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert}.
+\end{equation}
+
+Der Kosinussatz folgt aus derselben Rechnung. Seien \(\mathbf A\) und \(\mathbf B\) die Vektoren von einem gemeinsamen Eckpunkt zu den beiden anderen Eckpunkten eines Dreiecks. Die dritte Seite ist \(\mathbf C=\mathbf A-\mathbf B\), nicht \(\mathbf A+\mathbf B\). Daher gilt \begin{align}
+  C^2
+  &=(\mathbf A-\mathbf B)\cdot(\mathbf A-\mathbf B)\notag\\
+  &=A^2+B^2-2\mathbf A\cdot\mathbf B\notag\\
+  &=A^2+B^2-2AB\cos\theta.
+  \label{eq:law-of-cosines}
+\end{align}
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_04.png}\caption{Das Dreieck zum Kosinussatz. Die Korrektur an der Tafel identifiziert die schließende Seite als \(\mathbf C=\mathbf A-\mathbf B\); daraus folgt Gl.~\eqref{eq:law-of-cosines}.}\lectureframe{01:04:29}\label{fig:law-cosines-board}\end{figure}
+
+\section{Position, Geschwindigkeit und Beschleunigung}
+
+Wählen wir einen Ursprung und bezeichnen wir mit \(\mathbf r\) den Ortsvektor vom Ursprung zum Teilchen. Seine Komponenten sind die kartesischen Koordinaten: \begin{equation}
+  \mathbf r=(x,y,z),
+  \qquad
+  \lvert\mathbf r\rvert=\sqrt{x^2+y^2+z^2}.
+\end{equation}Eine Änderung des Ursprungs verändert \(\mathbf r\); diese Frage vertagen wir. Bei festem Ursprung wird die Bewegung durch einen zeitabhängigen Ort beschrieben: \begin{equation}
+  \mathbf r(t)=\bigl(x(t),y(t),z(t)\bigr).
+\end{equation}Die Bahn ist somit durch drei Funktionen der Zeit kodiert.
+
+Die Geschwindigkeit ist die zeitliche Ableitung des Ortes: \begin{equation}
+  \mathbf v(t)=\frac{d\mathbf r}{dt}
+  =\dot{\mathbf r}(t),
+  \qquad
+  v_i=\frac{dx_i}{dt}=\dot x_i.
+  \label{eq:velocity}
+\end{equation}Ein Punkt bezeichnet stets eine Ableitung nach der Zeit. Der Betrag \(\lvert\mathbf v\rvert\) ist die Schnelligkeit. Im Allgemeinen sind Ort und Geschwindigkeit voneinander unabhängige Richtungen: Ein Teilchen an einem bestimmten Ort kann sich in jede Richtung bewegen, die das Problem zulässt.
+
+Die Beschleunigung ist die Änderungsrate der Geschwindigkeit und somit die zweite zeitliche Ableitung des Ortes: \begin{equation}
+  \mathbf a(t)=\frac{d\mathbf v}{dt}
+  =\dot{\mathbf v}(t)
+  =\frac{d^2\mathbf r}{dt^2}
+  =\ddot{\mathbf r}(t),
+  \qquad
+  a_i=\ddot x_i.
+  \label{eq:acceleration}
+\end{equation}Auch die Beschleunigung ist ein Vektor. Wird ein Teilchen, das sich in positiver \(x\)-Richtung bewegt, schneller, so gilt \(a_x>0\). Wird es langsamer, so gilt \(a_x<0\). Was häufig Verzögerung genannt wird, ist einfach eine Beschleunigung entgegen der momentanen Geschwindigkeit. Allgemeiner kann sich die Geschwindigkeit auch dadurch ändern, dass sich ihre Richtung ändert, selbst wenn ihr Betrag konstant bleibt.
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_05.png}\caption{Geschwindigkeitskomponenten als zeitliche Ableitungen der Ortskomponenten. In kompakter Vektorschreibweise gilt \(\mathbf v=d\mathbf r/dt\).}\lectureframe{01:14:24}\label{fig:velocity-board}\end{figure}
+
+\subsection{Gleichförmige Beschleunigung auf einer Geraden}
+
+Für eine eindimensionale Bewegung schreiben wir \begin{equation}
+  x(t)=a+bt+ct^2.
+  \label{eq:quadratic-motion}
+\end{equation}Bei \(t=0\) befindet sich das Teilchen bei \(x=a\). Einmaliges und anschließendes zweimaliges Differenzieren ergibt \begin{align}
+  v(t)=\dot x(t)&=b+2ct,\label{eq:line-velocity}\\
+  a(t)=\ddot x(t)&=2c.\label{eq:line-acceleration}
+\end{align}Damit ist \(b\) die Anfangsgeschwindigkeit und \(2c\) eine konstante Beschleunigung. Für \(c>0\) steigt die Geschwindigkeit linear; für \(c<0\) sinkt sie linear. Diese quadratische Ortsfunktion beschreibt die Bewegung bei konstanter Beschleunigung, etwa die idealisierte Bewegung eines fallenden Körpers nahe der Erdoberfläche.
+
+\section{Gleichförmige Kreisbewegung}
+
+Als letztes Beispiel betrachten wir ein Teilchen, das sich in der \(x\)-\(y\)-Ebene auf dem Einheitskreis bewegt. Es startet bei \(t=0\) auf der positiven \(x\)-Achse, und seine Winkelkoordinate nimmt gleichmäßig zu: \begin{equation}
+  \theta(t)=\omega t.
+\end{equation}Die Konstante \(\omega\) ist die Kreisfrequenz. Eine volle Umdrehung entspricht einer Winkelzunahme von \(2\pi\); daher ist die Periodendauer \begin{equation}
+  T=\frac{2\pi}{\omega}.
+  \label{eq:circular-period}
+\end{equation}Der Winkel darf über \(2\pi\) hinaus anwachsen; die Position wiederholt sich, obwohl der fortlaufend erfasste Winkel nicht auf null zurückgesetzt wird.
+
+Auf dem Einheitskreis gilt \begin{equation}
+  \mathbf r(t)
+  =\bigl(\cos\omega t,\,\sin\omega t\bigr).
+  \label{eq:circular-position}
+\end{equation}Differenzieren ergibt \begin{equation}
+  \mathbf v(t)
+  =\omega\bigl(-\sin\omega t,\,\cos\omega t\bigr).
+  \label{eq:circular-velocity}
+\end{equation}Die Geschwindigkeit ist tangential zum Kreis. Ihre Senkrechtstellung zum Radius lässt sich ohne Rückgriff auf die Zeichnung beweisen: \begin{align}
+  \mathbf r\cdot\mathbf v
+  &=\cos\omega t\,(-\omega\sin\omega t)
+    +\sin\omega t\,(\omega\cos\omega t)\notag\\
+  &=0.
+  \label{eq:r-dot-v}
+\end{align}
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_12.png}\caption{Orts- und Geschwindigkeitskomponenten für die Bewegung auf dem Einheitskreis. Die Kürzung in \(\mathbf r\cdot\mathbf v\) bestätigt, dass die Geschwindigkeit tangential zum Kreis ist.}\lectureframe{01:24:30}\label{fig:circular-velocity-board}\end{figure}
+
+Nochmaliges Differenzieren ergibt \begin{equation}
+  \mathbf a(t)
+  =-\omega^2
+  \bigl(\cos\omega t,\,\sin\omega t\bigr)
+  =-\omega^2\mathbf r(t).
+  \label{eq:centripetal-acceleration}
+\end{equation}Die Beschleunigung ist parallel zum Radius, zeigt aber in die entgegengesetzte Richtung, also zum Zentrum. Dies ist die Zentripetalbeschleunigung.\footnote{Terminologiehinweis: Das Wort ``Zentrifugal'' fällt an dieser Stelle in der Vorlesung, doch die Gleichung und die begleitende Beschreibung bezeichnen die übliche Zentripetalbeschleunigung, die zum Zentrum gerichtet ist.}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_13.png}\caption{Komponentenrechnung der Kreisbewegungsbeschleunigung. Jede Komponente ist das \(-\omega^2\)-Fache der entsprechenden Ortskomponente, also gilt \(\mathbf a=-\omega^2\mathbf r\).}\lectureframe{01:26:30}\label{fig:circular-acceleration-board}\end{figure}
+
+Da der Radius eins beträgt, gilt \begin{equation}
+  \lvert\mathbf r\rvert=1,
+  \qquad
+  \lvert\mathbf v\rvert=\omega,
+  \qquad
+  \lvert\mathbf a\rvert=\omega^2.
+\end{equation}Eine größere Kreisfrequenz \(\omega\) erhöht die Geschwindigkeit linear und die erforderliche nach innen gerichtete Beschleunigung quadratisch. Für einen Kreis mit Radius \(R\) ergäben dieselbe Rechnung \(v=\omega R\) und \(\lvert\mathbf a\rvert=\omega^2R=v^2/R\); in der Vorlesung wird \(R=1\) verwendet, um die erste Rechnung übersichtlich zu halten.
+
+Damit verfügen wir über die elementaren Begriffe für die Teilchenmechanik: Zustände und Anfangsdaten, umkehrbare Entwicklung, Koordinaten, Vektoren sowie die Ableitungen, die Geschwindigkeit und Beschleunigung definieren. Als Nächstes ist zu klären, welche Anfangsdaten ein Teilchen genau festlegen und welche Gesetze diese Daten von einem Zeitpunkt zum nächsten überführen.

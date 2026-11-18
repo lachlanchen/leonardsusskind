@@ -1,0 +1,570 @@
+\chapter{Magnetische Kräfte, Vektorpotentiale und das Wirkungsprinzip}
+
+\lectureoverview{Elektrostatische Kräfte folgen dem vertrauten konservativen Muster, magnetische Kräfte hängen jedoch von der Geschwindigkeit ab. Um sie in die Lagrange-Mechanik einzuordnen, entwickeln wir zunächst die benötigte Vektoranalysis, nutzen den quellenfreien Charakter des Magnetfelds, um ein Vektorpotential einzuführen, untersuchen dessen Eichfreiheit und konstruieren anschließend den magnetischen Term in der Wirkung.}
+
+\section{Eine neue Art von Kraft}
+
+Die vorangegangene Diskussion über Drehimpuls, Kreisel und Poisson-Klammern hat mehrere Themen zusammengeführt. Insbesondere präzediert ein rotierender geladener Körper in einem Magnetfeld ähnlich wie ein Kreisel. Nun wenden wir uns von dieser Analogie der Bewegung eines einzelnen geladenen Teilchens zu.
+
+Elektrostatische Kräfte erfordern keine neue Mechanik. Ist \(U(\mathbf x)\) eine potenzielle Energie, so gilt
+\begin{equation}
+  \mathbf F=-\nabla U(\mathbf x),
+\end{equation}
+und die übliche Argumentation führt zur Erhaltung der Summe aus kinetischer und potenzieller Energie. Für ein Teilchen mit der Ladung \(e\) in einem elektrostatischen Potential \(V(\mathbf x)\) gilt
+\begin{equation}
+  U(\mathbf x)=eV(\mathbf x),
+  \qquad
+  \mathbf F_{\mathrm{el}}=-e\nabla V.
+\end{equation}
+Magnetische Kräfte haben eine andere Form. Sie hängen von der Geschwindigkeit des Teilchens ab und lassen sich daher nicht einfach durch Hinzufügen einer weiteren gewöhnlichen potenziellen Energie einführen. Dennoch folgen sie aus einem Wirkungsprinzip und lassen sowohl eine Lagrange- als auch eine Hamilton-Beschreibung zu. Um diese Beschreibung zu erhalten, ist ein kurzer, aber wesentlicher Einschub zur Vektoranalysis erforderlich.
+
+\section{Felder und lokale Operationen}
+
+\subsection{Was ein Feld festhält}
+
+Ein Feld ordnet jedem Punkt des Raums und im Allgemeinen auch jedem Zeitpunkt eine physikalische Größe zu. Temperatur und Druck sind Skalarfelder. Die Windgeschwindigkeit ist ein Vektorfeld. Elektrische und magnetische Felder sind Vektorfelder. Andere Theorien enthalten selbst auf mikroskopischen Skalen Skalarfelder, während die Gravitation durch ein Tensorfeld beschrieben wird. Für die vorliegende Diskussion lassen wir die Zeitabhängigkeit außer Acht und schreiben Felder als Funktionen von \(\mathbf x\).
+
+Entscheidend an einem Feld ist seine lokale Bedeutung. Stellen wir uns vor, ein bestimmter Bereich sei in einer Tasche verborgen. Um das elektrische Feld in diesem Bereich zu messen, bringen wir eine kleine Probeladung hinein und beobachten ihre Beschleunigung. Die Kraft wird durch das Feld am Aufenthaltsort der Ladung bestimmt, nicht dadurch, dass man jede weit entfernte Quelle gesondert befragt. Dasselbe gilt für ein Magnetfeld und eine bewegte Probeladung. Später werden wir dieses einfache Bild im Hinblick auf das Vektorpotential einschränken müssen, aber als Ausgangspunkt ist es richtig.
+
+\subsection{Der Differentialoperator}
+
+Ableitungen machen aus Feldern andere Felder. Wir fassen die drei räumlichen Ableitungen zusammen zu
+\begin{equation}
+  \nabla
+  =
+  \left(
+    \frac{\partial}{\partial x},
+    \frac{\partial}{\partial y},
+    \frac{\partial}{\partial z}
+  \right).
+\end{equation}
+Das Symbol wird \emph{del} oder \emph{Nabla} gelesen. Sein Aussehen wie ein umgedrehtes Dreieck ist einprägsam; seine eigentliche Bedeutung besteht jedoch darin, dass es formal wie ein Vektor behandelt werden kann, dessen Komponenten Differentialoperatoren sind.
+
+Dies ist der gewöhnliche dreidimensionale physikalische Raum, nicht der Phasenraum und auch kein Konfigurationsraum eines Vielteilchensystems. Außerdem ist \(\nabla\) kein Vektorfeld, das für sich allein stehen könnte. Es muss auf etwas wirken. Ist \(T(\mathbf x)\) ein skalares Temperaturfeld, so ist
+\begin{equation}
+  \nabla T
+  =
+  \left(
+    \frac{\partial T}{\partial x},
+    \frac{\partial T}{\partial y},
+    \frac{\partial T}{\partial z}
+  \right)
+\end{equation}
+sein Gradient, also ein echtes Vektorfeld.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_01.png}
+\caption{An der Tafel wird \(\nabla\) als Vektor räumlicher Differentialoperatoren eingeführt und auf ein skalares Feld \(T(\mathbf x)\) angewendet.}
+\lectureframe{00:11:30}
+\end{figure}
+
+Ein Skalar ist nicht einfach eine Größe, die mit nur einer Komponente geschrieben wird. Es ist eine Größe, deren Wert unabhängig von der Orientierung der Koordinatenachsen ist. Temperatur ist das Standardbeispiel. Für ein Vektorfeld \(\mathbf E\) ist auch der lokale Ausdruck \(\mathbf E\cdot\mathbf E\) ein Skalar. Ein Potential durch Integration eines Feldes zu konstruieren, ist dagegen eine nichtlokale Operation: Dabei werden Werte entlang eines Weges verwendet.
+
+\subsection{Divergenz}
+
+Für ein Vektorfeld \(\mathbf A=(A_x,A_y,A_z)\) ist der Skalar
+\begin{equation}
+  \nabla\cdot\mathbf A
+  =
+  \frac{\partial A_x}{\partial x}
+  +\frac{\partial A_y}{\partial y}
+  +\frac{\partial A_z}{\partial z}
+\end{equation}
+seine Divergenz. In der Sprache der Strömungsmechanik misst eine positive Divergenz die lokale Tendenz, nach außen zu strömen, während eine negative Divergenz eine Tendenz zum Zusammenströmen misst. Eine Fluidquelle hat eine positive Divergenz, eine Senke eine negative. Dieses Bild ist qualitativ, macht aber den quellenfreien Charakter des Magnetfelds anschaulich.
+
+\section{Kreuzprodukte, Epsilon-Symbole und Rotation}
+
+\subsection{Das Kreuzprodukt in Komponenten}
+
+Für zwei Vektoren \(\mathbf V\) und \(\mathbf A\) lautet eine Komponente des Kreuzprodukts
+\begin{equation}
+  (\mathbf V\times\mathbf A)_x
+  =
+  V_yA_z-V_zA_y.
+\end{equation}
+Die beiden anderen erhält man durch zyklisches Vertauschen von \(x\to y\to z\to x\). Es ist praktisch, \(x,y,z\) durch die Indizes \(1,2,3\) zu ersetzen. Das Kronecker-Symbol ist definiert durch
+\begin{equation}
+  \delta_{ij}
+  =
+  \begin{cases}
+    1,&i=j,\\
+    0,&i\ne j,
+  \end{cases}
+\end{equation}
+und das Levi--Civita-Symbol durch
+\begin{equation}
+  \epsilon_{123}=\epsilon_{231}=\epsilon_{312}=1,
+  \qquad
+  \epsilon_{132}=\epsilon_{321}=\epsilon_{213}=-1,
+\end{equation}
+Dabei gilt \(\epsilon_{ijk}=0\), wenn zwei Indizes übereinstimmen. Eine zyklische Anordnung auf einer Dreistundenuhr ergibt die Pluszeichen; eine Umkehr der Richtung ergibt die Minuszeichen. Beim Vertauschen beliebiger zwei Indizes wechselt das Vorzeichen, daher ist \(\epsilon_{ijk}\) vollständig antisymmetrisch.
+
+Wir verwenden außerdem die Summenkonvention: Ein Index, der in einem Term wiederholt auftritt, wird von \(1\) bis \(3\) summiert. Die drei Gleichungen für das Kreuzprodukt lauten dann
+\begin{equation}
+  (\mathbf V\times\mathbf A)_i
+  =
+  \epsilon_{ijk}V_jA_k.
+\end{equation}
+Setzen wir zum Beispiel \(i=1\), bleiben nur \((j,k)=(2,3)\) und \((3,2)\) übrig:
+\begin{equation}
+  (\mathbf V\times\mathbf A)_1
+  =
+  \epsilon_{123}V_2A_3
+  +\epsilon_{132}V_3A_2
+  =
+  V_2A_3-V_3A_2.
+\end{equation}
+Die kompakte Schreibweise enthält also genau die vertraute Komponentenregel.
+
+\subsection{Ein als antisymmetrische Matrix dargestellter Vektor}
+
+Es gibt noch eine zweite Darstellung:
+\begin{equation}
+  V_iA_j-V_jA_i
+  =
+  \epsilon_{ijk}(\mathbf V\times\mathbf A)_k.
+\end{equation}
+Die linke Seite hat zwei Indizes und ist unter \(i\leftrightarrow j\) antisymmetrisch. Als Matrix hat sie die Form
+\begin{equation}
+  M_{ij}
+  =
+  \begin{pmatrix}
+    0&M_{12}&M_{13}\\
+    -M_{12}&0&M_{23}\\
+    -M_{13}&-M_{23}&0
+  \end{pmatrix}.
+\end{equation}
+Die Diagonaleinträge verschwinden, und das untere Dreieck ist durch das obere festgelegt. Es gibt daher drei unabhängige Komponenten.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_02.png}
+\caption{Eine Komponente des Kreuzprodukts und die schematische antisymmetrische \(3\times3\)-Matrix, anhand derer sich ihre unabhängigen Einträge zählen lassen. Die Markierungen in den Feldern dienen als Gedächtnisstütze und sind keine zusätzlichen Symbole.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist das Kreuzprodukt oder die Zuordnung zu einem anderen Vektor auch außerhalb von drei Dimensionen sinnvoll?}
+\lecturerresponse{Das antisymmetrische Objekt mit zwei Indizes ist in jeder Dimension sinnvoll, seine Zuordnung zu einem Vektor ist jedoch eine Besonderheit des dreidimensionalen Raums. Ein Vektor in drei Dimensionen hat drei Komponenten, und eine antisymmetrische \(3\times3\)-Matrix hat drei unabhängige Komponenten. In vier Dimensionen sind es entsprechend vier beziehungsweise sechs, denn \(4(4-1)/2=6\). Das antisymmetrische Objekt existiert weiterhin und lässt sich natürlich als Zweiform auffassen, ist aber kein weiterer Vierervektor.}
+\end{classroomqa}
+
+\subsection{Rotation}
+
+Ersetzt man \(\mathbf V\) durch \(\nabla\), erhält man die Rotation:
+\begin{equation}
+  (\nabla\times\mathbf A)_i
+  =
+  \epsilon_{ijk}\frac{\partial A_k}{\partial x_j}.
+\end{equation}
+In gewöhnlichen Komponenten gilt
+\begin{align}
+  (\nabla\times\mathbf A)_x
+  &=
+  \frac{\partial A_z}{\partial y}
+  -\frac{\partial A_y}{\partial z},\\
+  (\nabla\times\mathbf A)_y
+  &=
+  \frac{\partial A_x}{\partial z}
+  -\frac{\partial A_z}{\partial x},\\
+  (\nabla\times\mathbf A)_z
+  &=
+  \frac{\partial A_y}{\partial x}
+  -\frac{\partial A_x}{\partial y}.
+\end{align}
+Während die Divergenz die lokale Ausbreitung misst, misst die Rotation die lokale Zirkulation. Eine Flüssigkeit, die sich um eine Achse dreht, hat entlang dieser Achse eine von null verschiedene Rotation. Bei Geschwindigkeitsfeldern ist dieses Bild besonders anschaulich, doch die Definition gilt für jedes Vektorfeld.
+
+\section{Zwei strukturelle Identitäten}
+
+Zwei Tatsachen übernehmen fast die gesamte mathematische Arbeit:
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0,
+  \qquad
+  \nabla\times(\nabla s)=0.
+\end{equation}
+Die erste folgt daraus, dass die zweiten Ableitungen symmetrisch sind, während \(\epsilon_{ijk}\) antisymmetrisch ist:
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)
+  =
+  \epsilon_{ijk}\partial_i\partial_j A_k
+  =0.
+\end{equation}
+Die zweite folgt aus der Vertauschbarkeit gemischter partieller Ableitungen:
+\begin{equation}
+  \bigl[\nabla\times(\nabla s)\bigr]_i
+  =
+  \epsilon_{ijk}\partial_j\partial_k s
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_03.png}
+\caption{Die erste Identität an der Tafel: Die Divergenz jeder Rotation verschwindet.}
+\lectureframe{00:38:26}
+\end{figure}
+
+Das sind die einfachen Richtungen, passend zu den angekündigten Hausaufgaben oder zum Kurztest in der Vorlesung. Die Umkehrungen erfordern mehr Sorgfalt. Lokal oder global auf einem geeigneten einfach zusammenhängenden beziehungsweise kontrahierbaren Gebiet gilt
+\begin{align}
+  \nabla\cdot\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla\times\mathbf A,\\
+  \nabla\times\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla s.
+\end{align}
+Ohne diese Einschränkung des Gebiets können Löcher und andere globale topologische Eigenschaften die Schlussfolgerungen verhindern. Die Vorlesung verwendet die lokale Form, die für das Folgende genau ausreicht.
+
+\section{Warum das Magnetfeld eine Rotation ist}
+
+\subsection{Keine beobachteten magnetischen Quellen}
+
+Ein Magnetfeld \(\mathbf B\) wird operationell über seine Wirkung auf geladene Teilchen und Ströme definiert. In der gewöhnlichen Elektromagnetik ohne magnetische Monopole gilt
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+Das unterscheidet es vom elektrischen Feld, dessen Divergenz proportional zur elektrischen Ladungsdichte ist. Elektrische Ladungen sind Quellen und Senken des elektrischen Flusses. Isolierte Quellen oder Senken des magnetischen Flusses wurden nicht beobachtet.
+
+Magnetische Monopole würden diese Gleichung ändern. Vereinheitlichte Feldtheorien liefern oft theoretische Gründe, solche Objekte zu erwarten. Falls sie existieren, könnten sie jedoch zu massereich sein, um mit verfügbaren Experimenten erzeugt zu werden. Die vorliegende Theorie geht daher von einer verschwindenden magnetischen Ladungsdichte aus.
+
+\begin{classroomqa}
+\audiencequestion{Was wäre ein magnetischer Monopol? Gewöhnliche Magnete haben doch bereits Nord- und Südpole.}
+\lecturerresponse{Ein isolierter Monopol wäre eine echte Quelle oder Senke des Magnetfelds, analog zu einer elektrischen Ladung. Ein gewöhnlicher Stabmagnet ist etwas anderes. Die Feldlinien, die in der Nähe seines Nordpols austreten, verlaufen durch den Raum und kehren am Südpol zurück; anschließend setzen sie sich durch das Material des Magneten fort. Was von außen wie eine Quelle und eine Senke aussieht, ist miteinander verbunden – wie eine Flüssigkeit, die durch ein verborgenes Rohr strömt. Es wird kein magnetischer Fluss netto erzeugt oder vernichtet.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_04.png}
+\caption{Die Tafel stellt scheinbare Nord- und Südquellen gegenüber und verbindet ihre Feldlinien durch den Magneten. So wird hervorgehoben, dass der magnetische Fluss dort weder beginnt noch endet.}
+\lectureframe{00:44:56}
+\end{figure}
+
+Da \(\mathbf B\) divergenzfrei ist, können wir nach dem Umkehrsatz zumindest lokal schreiben:
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+Das Feld \(\mathbf A\) heißt Vektorpotential. Zunächst mag es wie eine unnötige Neudarstellung des messbaren Feldes \(\mathbf B\) wirken. Sein Zweck wird erst deutlich, wenn wir die Wirkung konstruieren.
+
+\subsection{Das Vektorpotential ist nicht eindeutig}
+
+Ist \(\mathbf A\) ein Vektorpotential, so ist auch
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla s
+\end{equation}
+eines, denn
+\begin{equation}
+  \nabla\times\mathbf A'
+  =
+  \nabla\times\mathbf A+\nabla\times(\nabla s)
+  =
+  \mathbf B.
+\end{equation}
+Diese Ersetzung ist eine \emph{Eichtransformation}. Das Magnetfeld ist eichinvariant.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_05.png}
+\caption{An der Tafel stehen die definierende Beziehung \(\mathbf B=\nabla\times\mathbf A\) und die Eichverschiebung \(\mathbf A'=\mathbf A+\nabla s\) nebeneinander.}
+\lectureframe{01:03:01}
+\end{figure}
+
+Man spricht es \emph{gauge} aus, nicht \emph{gouache} oder \emph{gouge}-- – eine Unterscheidung, auf der die Vorlesung mit gespieltem Ernst besteht. Das Wort hat historische Wurzeln. Es entstand aus einem frühen Versuch, die Freiheit mit Vergleichen von Längennormalen an verschiedenen Orten zu verknüpfen. Diese ursprüngliche Deutung hat sich nicht gehalten, der Name aber schon.
+
+\begin{classroomqa}
+\audiencequestion{Bedeutet Eichtransformation in dieser Diskussion speziell \(\mathbf A\mapsto\mathbf A+\nabla s\)?}
+\lecturerresponse{Ja. Das ist die vollständige elektromagnetische Transformation, die hier verwendet wird. Eichtransformationen in der Yang--Mills-Theorie und anderen Feldtheorien verallgemeinern dieselbe Idee; in der Elektromagnetik genügt jedoch das Addieren eines skalaren Gradienten.}
+\end{classroomqa}
+
+Die Nichteindeutigkeit verdeutlicht auch, was direkt messbar ist. Ein geladenes Teilchen in einem kleinen Bereich reagiert auf das lokale \(\mathbf B\), und alle Vektorpotentiale, die durch eine Eichtransformation miteinander verbunden sind, sagen dort dieselbe Kraft voraus. Es gibt kein lokales klassisches Experiment dieser Art, das einem \(\mathbf A\) einen eindeutigen Wert zuordnet.
+
+\begin{classroomqa}
+\audiencequestion{Beschreibt das Addieren eines Gradienten die Nichteindeutigkeit vollständig?}
+\lecturerresponse{Lokal auf einem einfachen Gebiet: ja. Wenn \(\nabla\times\mathbf A'=\nabla\times\mathbf A\) gilt, dann gilt \(\nabla\times(\mathbf A'-\mathbf A)=0\); die Differenz ist also ein Gradient. Auf einem mehrfach zusammenhängenden Gebiet können global zusätzliche Feinheiten auftreten. Das Addieren eines konstanten Vektors ist bereits eingeschlossen, denn ein konstanter Vektor ist der Gradient einer linearen skalaren Funktion. Das Addieren einer Konstante zu \(s\) selbst ändert nichts, weil sein Gradient verschwindet.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wenn die Eichfreiheit einen zugrunde liegenden physikalischen Grund hat, worin besteht er?}
+\lecturerresponse{Die Vorlesung verschiebt diese tiefere Deutung auf später. Der nützliche erste Schritt ist, mit dieser Freiheit zu arbeiten und zu sehen, wie sie in die Wirkung eingeht. Sobald der Formalismus vertraut ist, lässt sich leichter erkennen, warum Eichbeschreibungen unverzichtbar sind.}
+\end{classroomqa}
+
+\section{Ein Magnetfeld, viele Potentiale}
+
+Betrachten wir das denkbar einfachste Beispiel:
+\begin{equation}
+  \mathbf B=b\,\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=b,
+\end{equation}
+wobei \(b\) konstant ist. Ein Vektorpotential lautet
+\begin{equation}
+  \mathbf A^{(1)}=(0,bx,0).
+\end{equation}
+Tatsächlich gilt
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -\frac{\partial A_x^{(1)}}{\partial y}
+  =b,
+\end{equation}
+und die anderen Komponenten der Rotation verschwinden.
+
+Diese Wahl scheint die \(y\)-Richtung auszuzeichnen, obwohl das physikalische Feld in der \(x\)-\(y\)-Ebene rotationssymmetrisch ist. Eine zweite Wahl macht die Willkür deutlich:
+\begin{equation}
+  \mathbf A^{(2)}=(-by,0,0).
+\end{equation}
+Sie ergibt
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-by)}{\partial y}
+  =b.
+\end{equation}
+Die beiden Potentiale unterscheiden sich um
+\begin{equation}
+  \mathbf A^{(2)}-\mathbf A^{(1)}
+  =
+  (-by,-bx,0)
+  =
+  \nabla(-bxy).
+\end{equation}
+Sie sind also eichäquivalent. Eine rotationssymmetrische Wahl,
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \frac12\,\mathbf B\times\mathbf r
+  =
+  \left(-\frac{by}{2},\frac{bx}{2},0\right),
+\end{equation}
+ist ein weiteres Mitglied derselben Familie.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_06.png}
+\caption{Zwei Tafelausschnitte zeigen die Wahlmöglichkeiten \(A_y=bx\) und \(A_x=-by\); beide ergeben dasselbe homogene Feld \(B_z=b\).}
+\lectureframe{01:07:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist diese Mehrdeutigkeit dieselbe wie die, verschiedene stromführende Spulen so anzuordnen, dass sie ein bestimmtes Feld erzeugen?}
+\lecturerresponse{Nein. Verschiedene Stromanordnungen sind verschiedene physikalische Quellen und können anderswo unterschiedliche Felder erzeugen, selbst wenn sie in einem Bereich übereinstimmen. Die Eichfreiheit bleibt bestehen, nachdem das Magnetfeld überall festgelegt worden ist: Dasselbe physikalische \(\mathbf B\) hat viele Vektorpotentiale.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann man sich das Addieren eines Gradienten als Dehnen oder Stauchen ohne zusätzliche Verdrehung vorstellen?}
+\lecturerresponse{Das ist eine hilfreiche geometrische Anschauung. Die Rotation erfasst den lokalen Drehanteil, und ein reiner Gradient hat eine verschwindende Rotation. Die Aussage ist exakt in \(\nabla\times\nabla s=0\) kodiert.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Gibt es eine feste Beziehung zwischen der Richtung von \(\mathbf A\) und der Richtung von \(\mathbf B\)?}
+\lecturerresponse{Nein, es gibt keine eichunabhängige Beziehung. In den obigen Beispielen gilt zwar \(A_z=0\), doch man kann einen konstanten Vektor \(A_z\) addieren, ohne eine Ableitung zu ändern. Dann wäre \(\mathbf A\) nicht mehr senkrecht zu \(\mathbf B\). In dieser klassischen Diskussion besitzt nur die Rotation einen invarianten physikalischen Gehalt.}
+\end{classroomqa}
+
+Eine schwächere Analogie gibt es in der Elektrostatik. Da \(\mathbf E=-\nabla V\), ändert die Ersetzung von \(V\) durch \(V+C\) nichts an \(\mathbf E\). Der Begriff \emph{Vektorpotential} wurde teilweise in Analogie zu dieser Freiheit beim gewöhnlichen skalaren Potential gewählt: Man kann das Potential so ändern, dass das physikalische Feld unverändert bleibt.
+
+\section{Die Lorentzkraft}
+
+Nun können wir das Kraftgesetz angeben, das das Wirkungsprinzip reproduzieren muss. In der hier verwendeten Konvention gilt
+\begin{equation}
+  \boxed{
+  \mathbf F
+  =
+  e\left(
+    \mathbf E+\frac{\mathbf v}{c}\times\mathbf B
+  \right)
+  =
+  -e\nabla V+\frac{e}{c}\mathbf v\times\mathbf B
+  }.
+\end{equation}
+Das Symbol \(e\) bezeichnet die elektrische Ladung des Teilchens, \(\mathbf v=\dot{\mathbf x}\) seine Geschwindigkeit und \(V\) das skalare Potential. Die Schreibweise darf nicht dazu verleiten, \(V\) mit \(\mathbf v\) zu verwechseln. In SI-Einheiten wird \(V\) in Volt und \(e\) in Coulomb gemessen; der dargestellte Faktor \(1/c\) gehört zur in der Vorlesung verwendeten Einheitkonvention. Die strukturelle Aussage ist unabhängig von der Wahl der Einheiten.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_07.png}
+\caption{Die elektrischen und magnetischen Terme der Lorentzkraft sind gemeinsam dargestellt. Der magnetische Beitrag ist proportional zu \(\mathbf v\times\mathbf B\).}
+\lectureframe{00:58:54}
+\end{figure}
+
+Der elektrische Term ist konservativ und bereits vertraut. Der magnetische Term ist neu. Er verschwindet für ein ruhendes Teilchen und steht senkrecht auf \(\mathbf v\) und \(\mathbf B\). Folglich gilt
+\begin{equation}
+  \mathbf v\cdot\mathbf F_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+Ein statisches Magnetfeld lenkt eine Bahn ab, verrichtet aber keine Arbeit am Teilchen. Das ist anders als bei der viskosen Reibung, die der Geschwindigkeit entgegengerichtet ist und kinetische Energie entzieht.
+
+Der Faktor \(v/c\) deutet auch darauf hin, warum magnetische Wirkungen bei vergleichbaren Feldstärken in dieser Konvention für langsam bewegte Teilchen oft kleiner sind als elektrische. Elektronen sind leicht genug, um hohe Geschwindigkeiten zu erreichen, sodass ihre magnetische Ablenkung leicht zu beobachten bleibt.
+
+Historisch waren Kräfte auf stromdurchflossene Drähte bekannt, bevor die Kraft auf eine einzelne Ladung isoliert betrachtet wurde. Lorentz erkannte, dass sich die Kraft auf den Draht verstehen lässt, indem man jedem bewegten Ladungsträger den geschwindigkeitsabhängigen Term zuordnet. Der vollständige Ausdruck aus elektrischem und magnetischem Anteil heißt heute Lorentzkraft, obwohl der magnetische Anteil in der vorliegenden Diskussion der neue ist.
+
+\begin{classroomqa}
+\audiencequestion{Hat der ganze Ausdruck ein eigenes Symbol, oder bezeichnet Lorentzkraft nur den magnetischen Anteil?}
+\lecturerresponse{Der ganze Ausdruck ist einfach die Kraft \(\mathbf F=m\mathbf a\) und wird allgemein Lorentzkraft genannt. Der magnetische Term ist der Anteil, der historisch am unmittelbarsten mit Lorentz verbunden ist. Elektrische und magnetische Felder sind durch die Relativitätstheorie eng miteinander verknüpft, doch für das vorliegende mechanische Problem benötigen wir diese Vereinheitlichung nicht.}
+\end{classroomqa}
+
+\subsection{Die Coriolis-Analogie}
+
+Einen Geschwindigkeitsvektor, der mit einem festen Vektor gekreuzt wird, haben wir schon einmal betrachtet. In einem Bezugssystem, das sich mit der Winkelgeschwindigkeit \(\boldsymbol\omega\) dreht, lässt sich die Corioliskraft schreiben als
+\begin{equation}
+  \mathbf F_{\mathrm{Cor}}
+  =
+  2m\,\mathbf v\times\boldsymbol\omega.
+\end{equation}
+Sie hat dieselbe algebraische Form wie die magnetische Kraft:
+\begin{equation}
+  2m\boldsymbol\omega
+  \quad\longleftrightarrow\quad
+  \frac{e}{c}\mathbf B.
+\end{equation}
+Ein homogenes Magnetfeld senkrecht zu einer Ebene lenkt die Bahnen geladener Teilchen daher ähnlich ab wie ein rotierendes Bezugssystem bewegte Körper.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_08.png}
+\caption{Links steht weiterhin die Lorentzkraft, während die Tafel die entsprechende Coriolis-Form \(2m\,\mathbf v\times\boldsymbol\omega\) hinzufügt.}
+\lectureframe{01:02:08}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Die Corioliskraft wird Scheinkraft genannt. Ist sie weniger real als die magnetische Kraft, weil sie von der Geschwindigkeit abhängt?}
+\lecturerresponse{Die Geschwindigkeitsabhängigkeit ist hier nicht entscheidend. Eine Person auf einer rotierenden Plattform kann einen bewegten Gegenstand halten und die Corioliskraft spüren. Sie heißt Scheinkraft, weil sie in einem Inertialsystem verschwindet; ein rotierendes Bezugssystem ist gerade dadurch gekennzeichnet, dass solche Trägheitskräfte auftreten. Das Wort \emph{real} ist oft weniger hilfreich, als das verwendete Bezugssystem und die zugrunde liegende Gleichung anzugeben.}
+\end{classroomqa}
+
+Die Analogie lässt sich in einem kleinen Gedankenexperiment weiterführen. Auf einer rotierenden Plattform kann ein geeignetes elektrostatisches Feld den Zentrifugalterm für ein ausgewähltes Teilchen aufheben, während ein geeignetes homogenes Magnetfeld den Coriolisterm aufheben kann. Die Aufhebung funktioniert nur für ein bestimmtes Verhältnis von Ladung zu Masse: Elektrische und magnetische Kräfte skalieren mit \(e\), die Trägheitskräfte dagegen mit \(m\). Eine für Elektronen abgestimmte Feldanordnung würde dieselben Terme für Teilchen mit einem anderen \(e/m\) nicht aufheben.
+
+\section{Konstruktion der Wirkung für ein geladenes Teilchen}
+
+\subsection{Stationäre Wirkung bei festen Endpunkten}
+
+Nun stellen wir die zentrale Frage: Lässt sich die Lorentzkraft aus einem Wirkungsprinzip herleiten? Ja, aber das Vektorpotential ist unverzichtbar. Eine lokal aus dem Teilchen und allein aus \(\mathbf B\) aufgebaute Lagrange-Funktion liefert nicht die erforderliche magnetische Kraft. Anstatt diese negative Aussage zu beweisen, konstruieren wir direkt die passende Wirkung.
+
+Für eine Bahn \(\mathbf x(t)\) schreiben wir
+\begin{equation}
+  S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L(\mathbf x,\dot{\mathbf x},t)\,dt.
+\end{equation}
+In der Vorlesung wird für die Wirkung und das Vektorpotential derselbe handschriftliche Buchstabe verwendet. Hier steht \(S\) für die Wirkung und \(\mathbf A\) für das Vektorpotential. Die physikalische Bahn macht \(S\) unter Variationen stationär, bei denen beide Endpunkte festgehalten werden. Der traditionelle Ausdruck \emph{Prinzip der kleinsten Wirkung} ist praktisch, doch stationäre Wirkung ist genauer, denn das Extremum muss kein Minimum sein.
+
+Die festen Endpunkte sind wichtig. Man kann sich vorstellen, dass die Enden der Bahn an die Tafel genagelt sind, während man den mittleren Teil verformt. Es handelt sich um eine Bahn der gewöhnlichen Mechanik, nicht um ein Objekt der Stringtheorie; das Bild mit der Saite dient lediglich dazu, sich die Variation vorzustellen.
+
+\subsection{Was darf in die Lagrange-Funktion eingehen?}
+
+Sind alle Felder ausgeschaltet, ist die Lagrange-Funktion gleich der kinetischen Energie:
+\begin{equation}
+  L_0=\frac{m}{2}\dot{\mathbf x}^{\,2}.
+\end{equation}
+Auch der elektrostatische Term ist vertraut:
+\begin{equation}
+  L_{\mathrm{el}}=-eV(\mathbf x).
+\end{equation}
+Der magnetische Term muss mehrere Bedingungen erfüllen:
+\begin{enumerate}
+  \item Er muss proportional zur Ladung \(e\) sein;
+  \item Er muss den Faktor \(1/c\) in den Einheiten der Vorlesung enthalten;
+  \item Er muss die Geschwindigkeit enthalten;
+  \item Er muss ein Rotationsskalar sein.
+\end{enumerate}
+
+Der verlockende Ansatz \(\mathbf B\cdot\dot{\mathbf x}\) ist ein Skalar und enthält eine Geschwindigkeit, liefert jedoch die falsche Bewegungsgleichung. Der korrekte Term verwendet das Vektorpotential:
+\begin{equation}
+  L_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  =
+  \frac{e}{c}A_i(\mathbf x)\dot x_i.
+\end{equation}
+Damit lautet die vollständige zeitunabhängige elektromagnetische Lagrangefunktion
+\begin{equation}
+  \boxed{
+  L
+  =
+  \frac{m}{2}\dot{\mathbf x}^{\,2}
+  +\frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  -eV(\mathbf x)
+  }.
+\end{equation}
+In Vorlesung 10 werden die Euler--Lagrange-Gleichungen angewandt und es wird explizit gezeigt, dass dieser Ausdruck die Lorentzkraft ergibt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_09.png}
+\caption{Die vollständige Konstruktion der Wirkung an der Tafel: ein freier kinetischer Term plus \((e/c)A_i\dot x_i\).}
+\lectureframe{01:26:36}
+\end{figure}
+
+\section{Eichtransformationen ändern nur die Endpunkte}
+
+Der magnetische Beitrag zur Wirkung ist
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}
+  \int_{t_i}^{t_f}A_i(\mathbf x)\dot x_i\,dt.
+\end{equation}
+Da \(\dot x_i\,dt=dx_i\), handelt es sich um ein Linienintegral entlang der Teilchenbahn \(\gamma\):
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}\int_\gamma A_i\,dx_i
+  =
+  \frac{e}{c}\int_\gamma\mathbf A\cdot d\mathbf x.
+\end{equation}
+Man zerlegt die Bahn in kurze Abschnitte, nimmt jeweils die Komponente von \(\mathbf A\) entlang des Abschnitts, multipliziert sie mit dessen Länge und addiert die Beiträge. Das ist die geometrische Bedeutung des Integrals.
+
+Nun führen wir die Eichtransformation
+\begin{equation}
+  A_i\longmapsto A_i+\partial_i s.
+\end{equation}
+aus. Die Wirkung ändert sich um
+\begin{align}
+  \Delta S
+  &=
+  \frac{e}{c}\int_\gamma \partial_i s\,dx_i\\
+  &=
+  \frac{e}{c}\int_\gamma ds\\
+  &=
+  \frac{e}{c}
+  \left[
+    s(\mathbf x_f)-s(\mathbf x_i)
+  \right].
+\end{align}
+Jeder infinitesimale Abschnitt trägt den Wert von \(s\) an seinem einen Ende abzüglich des Werts am anderen Ende bei. Bei der Summation heben sich alle inneren Beiträge teleskopartig auf; übrig bleiben nur die beiden Endpunkte.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_10.png}
+\caption{Das Linienintegral, seine Zerlegung in kurze Bahnabschnitte und das Ergebnis für die Endpunkte \(s(\mathbf x_f)-s(\mathbf x_i)\).}
+\lectureframe{01:32:31}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Wenn sich die Wirkung unter einer Eichtransformation ändert, warum ändert sich dann die Bahn nicht?}
+\lecturerresponse{Das Wirkungsprinzip vergleicht Bahnen mit festem Anfangs- und Endpunkt. Die hinzugefügte Größe hängt nur von diesen Endpunkten ab und hat deshalb für alle verglichenen Bahnen denselben Wert. Ihre Variation ist null. Die numerische Wirkung ist nicht streng invariant, wohl aber sind die Euler--Lagrange-Gleichungen und die physikalische Bahn eichinvariant.}
+\end{classroomqa}
+
+Dies ist das wichtigste konzeptionelle Ergebnis der Vorlesung:
+\begin{equation}
+  \begin{aligned}
+    S&\ \hbox{may shift by an endpoint term},\\
+    \delta S&\ \hbox{and the equations of motion do not}.
+  \end{aligned}
+\end{equation}
+Die Eichfreiheit ist also mit dem Wirkungsprinzip vereinbar. Das Vektorpotential kann in die Lagrange-Funktion eingehen, obwohl das Magnetfeld kein eindeutiges \(\mathbf A\) festlegt.
+
+\section{Wie es weitergeht}
+
+In der vorliegenden Vorlesung wurden die mathematischen Hilfsmittel und die Wirkung zusammengestellt; vor der Variation dieser Wirkung hält sie jedoch bewusst inne. Die nächsten Schritte stehen nun fest:
+\begin{enumerate}
+  \item die Euler--Lagrange-Gleichungen anwenden und
+  \(\mathbf F_{\mathrm{mag}}=(e/c)\mathbf v\times\mathbf B\)herleiten;
+  \item den kanonischen Impuls berechnen, der sich von \(m\mathbf v\) unterscheiden wird;
+  \item den Hamiltonian konstruieren;
+  \item die Erhaltungssätze identifizieren;
+  \item die Bewegung eines geladenen Teilchens in einem homogenen Magnetfeld lösen.
+\end{enumerate}
+
+Der Weg zu diesen Ergebnissen erklärt, warum das Vektorpotential eingeführt wurde. Das Magnetfeld ist die lokal messbare Rotation; das Vektorpotential hingegen koppelt auf natürliche Weise an die Bahn eines Teilchens. Eichtransformationen verändern diese Kopplung nur an den festen Endpunkten und lassen die Mechanik unverändert.

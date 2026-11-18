@@ -1,0 +1,613 @@
+\chapter{Eichinvarianz und die Bewegung geladener Teilchen}
+
+\lectureoverview{Ein Magnetfeld ist divergenzfrei und lässt sich daher durch ein Vektorpotential darstellen. Diese Darstellung ist zwar nicht eindeutig, ermöglicht es jedoch, magnetische Kräfte in das Wirkungsprinzip einzubeziehen. Wir leiten die Lorentzkraft her, unterscheiden kanonischen und mechanischen Impuls, konstruieren den Hamiltonian und lösen die Bewegung in einem homogenen Magnetfeld in zwei verschiedenen Eichungen. Zum Abschluss ordnet die Vorlesung diese Teilchenmechanik in die größeren Themengebiete der Maxwell-Theorie, der magnetischen Monopole und der Phasenraumdynamik ein.}
+
+\section{Der letzte Schritt im Mechanikkurs}
+
+Die Vorlesung beginnt mit einer kleinen Überraschung bei der Zeitplanung. Geplant ist, die Bewegung geladener Teilchen in Magnetfeldern abzuschließen, vielleicht noch elektrische Felder hinzuzunehmen und dann zu entscheiden, was für eine weitere Sitzung bleibt. Aus dem Publikum kommt der Hinweis, dass dies bereits die zehnte Vorlesung ist. Damit ist die Aufgabe klarer umrissen: das Magnetfeldproblem abschließen und daran die formale Struktur der klassischen Mechanik zu Ende führen.
+
+Wir beginnen mit einer kurzen Wiederholung. Ein Magnetfeld ist ein Vektorfeld,
+\begin{equation}
+  \mathbf B=\mathbf B(\mathbf x),
+  \qquad
+  B_i(\mathbf x)=(B_x,B_y,B_z),
+\end{equation}
+mit einem Betrag und einer Richtung an jedem Punkt. Für diese Vorlesung wird angenommen, dass die äußeren elektrischen und magnetischen Felder statisch sind. Diese Einschränkung dient der Übersichtlichkeit und bedeutet nicht, dass elektromagnetische Felder immer zeitunabhängig sein müssen.
+
+Außerdem gilt eine Zwangsbedingung:
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+In der Analogie zur Strömungslehre bedeutet dies, dass es keine Rohrenden gibt, aus denen magnetischer Fluss herausströmt, und keine Abflüsse, in denen er verschwindet. In der klassischen Elektrodynamik gibt es keine magnetischen Quellen oder Senken. Ein elementarer magnetischer Monopol ist durch Experimente bislang nicht nachgewiesen worden; die Vorlesung lässt jedoch wiederholt die Möglichkeit offen, dass eine umfassendere Theorie einen solchen enthalten könnte.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_02.png}
+\caption{Zu Beginn der Vorlesung werden gemeinsam die Feldkomponenten, die quellenfreie Bedingung \(\nabla\cdot\mathbf B=0\) und die Darstellung durch ein Vektorpotential eingeführt.}
+\lectureframe{00:04:56}
+\end{figure}
+
+Statt bei jedem vorgeschlagenen Feld die Divergenz zu überprüfen, können wir die Zwangsbedingung automatisch erfüllen. Wir setzen
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+Die Identität
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0
+\end{equation}
+erledigt dann diese Buchführung für uns. Das neue Feld \(\mathbf A\) ist das Vektorpotential.
+
+\section{Der Preis für eine automatisch erfüllte Zwangsbedingung}
+
+Mit der Einführung von \(\mathbf A\) lösen wir ein Problem und schaffen zugleich ein anderes: Die Darstellung ist nicht eindeutig. Für jede skalare Funktion \(S(\mathbf x)\) gilt:
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla S
+\end{equation}
+Sie hat dieselbe Rotation, denn
+\begin{equation}
+  \nabla\times(\nabla S)=0.
+\end{equation}
+Damit beschreiben \(\mathbf A\) und \(\mathbf A'\) dasselbe Magnetfeld. In einem hinreichend einfachen Gebiet ist dies die vollständige lokale Mehrdeutigkeit: Haben zwei Vektorpotentiale dieselbe Rotation, so ist ihre Differenz lokal ein Gradient. Die globale Topologie kann mehrere Gebiete erfordern oder weitere Feinheiten mit sich bringen; für die hier betrachteten Felder ist dies jedoch nicht nötig.
+
+Eine bestimmte Darstellung heißt \emph{Eichung}, und der Wechsel zwischen Darstellungen heißt \emph{Eichtransformation}. Das Feld \(\mathbf B\) ändert sich nicht und ist daher eichinvariant. Das Arbeitsprinzip lautet: Beobachtbare Physik darf nicht davon abhängen, welche Darstellung wir gewählt haben. Durch die Einführung von \(\mathbf A\) haben wir die Beschreibung erweitert und anschließend die beschreibungsbedingte Redundanz beseitigt, indem wir eichinvariante Vorhersagen verlangen.
+
+\subsection{Drei Eichungen für ein homogenes Feld}
+
+Die Vorlesung macht den Gedanken unmittelbar konkret. Wir wählen die Koordinaten so, dass ein homogenes Magnetfeld entlang der \(z\)-Achse zeigt:
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=B,
+\end{equation}
+Dabei ist \(B\) konstant. Ein erstes Vektorpotential lautet
+\begin{equation}
+  \mathbf A^{(1)}=(0,Bx,0).
+\end{equation}
+Tatsächlich gilt
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -
+  \frac{\partial A_x^{(1)}}{\partial y}
+  =B.
+\end{equation}
+Eine zweite Wahl ist
+\begin{equation}
+  \mathbf A^{(2)}=(-By,0,0),
+\end{equation}
+und dafür gilt
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-By)}{\partial y}
+  =B.
+\end{equation}
+
+Um zwischen ihnen zu wechseln, wählen wir
+\begin{equation}
+  S=Cxy,
+  \qquad
+  \nabla S=(Cy,Cx,0).
+\end{equation}
+Ausgehend von \(\mathbf A^{(1)}\) lauten die transformierten Komponenten
+\begin{equation}
+  A_x'=Cy,
+  \qquad
+  A_y'=(B+C)x,
+  \qquad
+  A_z'=0.
+\end{equation}
+Die Wahl \(C=-B\) ergibt \(\mathbf A^{(2)}\). Die Wahl \(C=-B/2\) ergibt die symmetrische Eichung:
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \left(-\frac{B}{2}y,\frac{B}{2}x,0\right)
+  =
+  \frac12\,\mathbf B\times\mathbf r.
+\end{equation}
+Alle drei haben dieselbe Rotation. Später kehren wir bewusst zu den ersten beiden zurück, denn jede von ihnen macht eine andere Translationssymmetrie unmittelbar sichtbar.
+
+\begin{classroomqa}
+\audiencequestion{Kann das Vektorpotential dieselbe Symmetrie wie das homogene Magnetfeld haben?}
+\lecturerresponse{Es kann nicht wie das Magnetfeld räumlich konstant sein, denn ein konstantes Vektorpotential hat eine verschwindende Rotation. Auch lässt sich mit einer einzelnen Eichung nicht jede Translationssymmetrie eines von null verschiedenen homogenen Feldes unmittelbar sichtbar machen. Die symmetrische Eichung macht Rotationen um die \(z\)-Achse sichtbar. Die präzise Aussage ist also nicht, dass jede Symmetrie in \(\mathbf A\) fehlen muss, sondern dass das Potential nicht alle Symmetrien des physikalischen Feldes zugleich zeigen muss.}
+\end{classroomqa}
+
+Die Familie \(S=Cxy\) ist nur ein Beispiel. Allgemeiner kann man nützliche Eichbedingungen festlegen, etwa so, dass eine Komponente von \(\mathbf A\) in einem geeigneten Gebiet verschwindet. Die Bezeichnung \emph{Eichung} geht historisch auf den erfolglosen Versuch zurück, die Freiheit als lokale Änderung der Einheiten zu deuten. Diese Interpretation wurde aufgegeben; der Name blieb.
+
+\begin{classroomqa}
+\audiencequestion{Bedeutet eine Eichtransformation immer, dass der Gradient einer skalaren Funktion addiert wird?}
+\lecturerresponse{Für ein statisches elektromagnetisches Vektorpotential verwenden wir hier genau diese Transformation. In anderen Eichtheorien sind die Transformationen komplexer. In der Gravitation wird eine Koordinatenänderung oft als Eichänderung bezeichnet, weil die physikalische Geometrie nicht von den Koordinatenbezeichnungen abhängen darf. In diesem Kapitel bedeutet Eichtransformation jedoch \(\mathbf A\mapsto\mathbf A+\nabla S\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann eine Eichung rechnerisch günstiger sein als eine andere?}
+\lecturerresponse{Sehr oft. Eine Symmetrie oder ein Erhaltungssatz kann in einer Eichung unmittelbar sichtbar und in einer anderen verborgen sein. Das ist keine bloß abstrakte Möglichkeit: Im späteren Verlauf dieser Vorlesung wird in einer Eichung \(y\) zyklisch sein, in einer anderen dagegen \(x\). Beide Rechnungen beschreiben dieselbe Bahn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hängt diese Mehrdeutigkeit mit der Wahl von Eigenräumen oder der Bestimmung von Eigenwerten zusammen?}
+\lecturerresponse{Hier besteht kein unmittelbarer Zusammenhang. In beiden Gebieten trifft man nützliche mathematische Wahlentscheidungen, doch ein Wechsel der Eigenbasis und eine elektromagnetische Eichtransformation sind unterschiedliche Strukturen.}
+\end{classroomqa}
+
+\section{Die magnetische Lagrangefunktion}
+
+Kehren wir nun zur Mechanik zurück. Gegenstand ist die Lagrangefunktion eines Punktteilchens, das sich in einem vorgegebenen Magnetfeld bewegt, noch nicht die Lagrangefunktion des elektromagnetischen Feldes selbst. In der in der Vorlesung verwendeten Einheitensetzung gilt
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{e}{c}
+  \left(
+    A_x\dot x+A_y\dot y+A_z\dot z
+  \right).
+\end{equation}
+In Vektorschreibweise lautet sie
+\begin{equation}
+  \boxed{
+  L=\frac12 m\mathbf v^2+\frac{e}{c}\mathbf A(\mathbf x)\cdot\mathbf v
+  }.
+\end{equation}
+Der Koeffizient \(e\) ist die Ladung des Teilchens. Der explizite Faktor \(c\) hängt von der Einheitensetzung ab; der strukturelle Inhalt ist die geschwindigkeitsabhängige Kopplung \(\mathbf A\cdot\mathbf v\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_03.png}
+\caption{Die Lagrangefunktion des magnetischen Teilchens wird komponentenweise angeschrieben, sodass die drei Geschwindigkeitskopplungen sichtbar bleiben.}
+\lectureframe{00:25:29}
+\end{figure}
+
+Zunächst wird dieser Term vorgeschlagen, nicht hergeleitet. Wir sollen ihn ausprobieren und untersuchen, welche Bewegungsgleichungen er ergibt. Man könnte auch einen Term direkt aus \(\mathbf B\) bilden, doch dieser würde Ableitungen von \(\mathbf B\) hervorbringen und nicht die Lorentzkraft. Das Vektorpotential ist das lokale Objekt, das auf die richtige Weise an die Bahn koppelt.
+
+\subsection{Warum eine Eichverschiebung die Bahn nicht ändert}
+
+Bevor wir die Wirkung variieren, prüfen wir, was eine Eichtransformation mit ihr macht. Bei festgehaltenen raumzeitlichen Anfangs- und Endpunkten gilt
+\begin{equation}
+  \mathcal S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L\,dt.
+\end{equation}
+Unter \(\mathbf A\mapsto\mathbf A+\nabla S\) beträgt die Änderung
+\begin{align}
+  \Delta\mathcal S
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}
+  \nabla S(\mathbf x)\cdot\dot{\mathbf x}\,dt\\
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}\frac{dS(\mathbf x(t))}{dt}\,dt\\
+  &=
+  \frac{e}{c}
+  \left[
+    S(\mathbf x_f)-S(\mathbf x_i)
+  \right].
+\end{align}
+Der Zahlenwert der Wirkung ändert sich also. Der zusätzliche Term hängt jedoch nur von den festgehaltenen Endpunkten ab, nicht vom variierten Inneren der Bahn. Seine Variation ist null und er kann die stationäre Bahn nicht ändern.
+
+\begin{classroomqa}
+\audiencequestion{Was bedeutet es, wenn man sagt, die Gleichungen seien eichinvariant?}
+\lecturerresponse{Nach der Euler---Lagrange-Rechnung darf \(\mathbf A\) nur in Kombinationen auftreten, die als Komponenten von \(\mathbf B\) erkannt werden. Das Potential selbst darf sich ändern, und die Wirkung darf sich um einen Randterm verschieben; die physikalische Bahn und das Kraftgesetz müssen jedoch unverändert bleiben.}
+\end{classroomqa}
+
+\section{Zwei Begriffe des Impulses}
+
+Die Euler---Lagrange-Gleichungen lassen sich schreiben als
+\begin{equation}
+  \dot p_i=\frac{\partial L}{\partial x_i},
+  \qquad
+  p_i=\frac{\partial L}{\partial\dot x_i}.
+\end{equation}
+An dieser Stelle müssen wir zwei Impulse unterscheiden. Der vertraute mechanische Impuls ist
+\begin{equation}
+  \boldsymbol{\pi}=m\mathbf v.
+\end{equation}
+Der kanonische Impuls ist durch die Lagrangefunktion definiert:
+\begin{equation}
+  p_i
+  =
+  m\dot x_i+\frac{e}{c}A_i.
+\end{equation}
+Somit gilt
+\begin{equation}
+  \boxed{
+  \boldsymbol{\pi}
+  =
+  \mathbf p-\frac{e}{c}\mathbf A
+  =
+  m\mathbf v
+  }.
+\end{equation}
+Für ein freies Teilchen oder bei einem gewöhnlichen ortsabhängigen Potential stimmen kanonischer und mechanischer Impuls überein. Die magnetische Wechselwirkung hängt von der Geschwindigkeit ab, daher stimmen sie nicht mehr überein.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_04.png}
+\caption{Die Tafel unterscheidet die kanonische Definition \(p_i=\partial L/\partial\dot x_i\) von \(m\dot x_i\) und leitet die zeitliche Änderung entlang der Bahn her.}
+\lectureframe{00:37:33}
+\end{figure}
+
+Diese Unterscheidung ist nicht bloß eine Frage der Wortwahl. Der kanonische Impuls geht in die Hamilton-Gleichungen, die Poisson-Klammern und den Erhaltungssatz ein, der einer zyklischen Koordinate zugeordnet ist. Der mechanische Impuls ist Masse mal Geschwindigkeit und unmittelbar messbar.
+
+\begin{classroomqa}
+\audiencequestion{Ist \((e/c)\mathbf A\cdot\mathbf v\) eine kinetische Energie oder eine potenzielle Energie, und woher wissen wir, ob wir sie addieren oder subtrahieren müssen?}
+\lecturerresponse{Weder eine gewöhnliche kinetische Energie noch ein gewöhnliches ortsabhängiges Potential: Es handelt sich um eine geschwindigkeitsabhängige Wechselwirkung. In diesem Schritt ist das Vorzeichen Teil der vorgeschlagenen Kopplung; eine Änderung des Vorzeichens entspricht einer Umkehr des Vorzeichens der Ladung oder von \(\mathbf A\). Entscheidend ist die Überprüfung des daraus folgenden Kraftgesetzes.}
+\end{classroomqa}
+
+\section{Von der Rechnung zum Lorentzkraftgesetz}
+
+Die Vorlesung führt eine Komponente Schritt für Schritt vor. Für \(p_x\) gilt
+\begin{equation}
+  p_x=m\dot x+\frac{e}{c}A_x(\mathbf x).
+\end{equation}
+Obwohl das äußere Feld statisch ist, ändert sich \(A_x(\mathbf x(t))\), wenn sich das Teilchen bewegt. Seine totale zeitliche Ableitung lautet
+\begin{equation}
+  \frac{dA_x}{dt}
+  =
+  \frac{\partial A_x}{\partial x}\dot x
+  +
+  \frac{\partial A_x}{\partial y}\dot y
+  +
+  \frac{\partial A_x}{\partial z}\dot z.
+\end{equation}
+Folglich gilt
+\begin{equation}
+  \dot p_x
+  =
+  m\ddot x
+  +
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_yA_x\,\dot y
+    +
+    \partial_zA_x\,\dot z
+  \right).
+\end{equation}
+Die rechte Seite der Euler---Lagrange-Gleichung ist
+\begin{equation}
+  \frac{\partial L}{\partial x}
+  =
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_xA_y\,\dot y
+    +
+    \partial_xA_z\,\dot z
+  \right).
+\end{equation}
+Die Terme \(\partial_xA_x\,\dot x\) heben sich auf. Ordnen wir die übrigen Terme nach den Geschwindigkeitskomponenten, erhalten wir
+\begin{align}
+  m\ddot x
+  &=
+  \frac{e}{c}
+  \left[
+    \left(\partial_xA_y-\partial_yA_x\right)\dot y
+    +
+    \left(\partial_xA_z-\partial_zA_x\right)\dot z
+  \right].
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{Die vollständige Rechnung für die \(x\)-Komponente: Die Ableitungen des Vektorpotentials verbinden sich zu Kombinationen der Rotation.}
+\lectureframe{00:46:41}
+\end{figure}
+
+Mit
+\begin{align}
+  B_y&=\partial_zA_x-\partial_xA_z,\\
+  B_z&=\partial_xA_y-\partial_yA_x,
+\end{align}
+erhalten wir
+\begin{equation}
+  m a_x
+  =
+  \frac{e}{c}
+  \left(B_zv_y-B_yv_z\right)
+  =
+  \frac{e}{c}
+  (\mathbf v\times\mathbf B)_x.
+\end{equation}
+Dieselbe Rechnung für \(y\) und \(z\) ergibt
+\begin{equation}
+  \boxed{
+  m\mathbf a=\frac{e}{c}\,\mathbf v\times\mathbf B
+  }.
+\end{equation}
+Dies ist das magnetische Lorentzkraftgesetz. Die Vorlesung nennt die vollständige Gleichung die Newton---Lorentz-Gleichung: Newton liefert \(m\mathbf a\), Lorentz die magnetische Kraft.
+
+Das Ergebnis erfüllt alle drei vor der Rechnung aufgestellten Anforderungen. Der neue Term erzeugt eine von null verschiedene Kraft. Die Kraft ist eichinvariant, denn nur \(\nabla\times\mathbf A=\mathbf B\) bleibt übrig. Und das Vektorpotential hat trotz seiner Redundanz der magnetischen Kraft ein Wirkungsprinzip gegeben. Ersetzte man in der Wechselwirkung \(\mathbf A\) durch \(\mathbf B\), entstünden Kombinationen aus der Rotation von \(\mathbf B\), und das Gesetz würde nicht folgen.
+
+\section{Der Hamiltonian und die Bedeutung der Energie}
+
+Als Nächstes stellt sich die Frage, ob sich dasselbe System auch durch einen Hamiltonian beschreiben lässt. Wir beginnen mit
+\begin{align}
+  p_x&=m\dot x+\frac{e}{c}A_x,\\
+  p_y&=m\dot y+\frac{e}{c}A_y,\\
+  p_z&=m\dot z+\frac{e}{c}A_z.
+\end{align}
+Diese Beziehungen lassen sich umkehren:
+\begin{align}
+  \dot x&=\frac{1}{m}\left(p_x-\frac{e}{c}A_x\right),\\
+  \dot y&=\frac{1}{m}\left(p_y-\frac{e}{c}A_y\right),\\
+  \dot z&=\frac{1}{m}\left(p_z-\frac{e}{c}A_z\right).
+\end{align}
+Die Legendre-Transformation lautet
+\begin{equation}
+  H=\sum_i p_i\dot x_i-L.
+\end{equation}
+Einsetzen und Kürzen ergibt
+\begin{equation}
+  \boxed{
+  H(\mathbf x,\mathbf p)
+  =
+  \frac{1}{2m}
+  \left(
+    \mathbf p-\frac{e}{c}\mathbf A(\mathbf x)
+  \right)^2
+  }.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_06.png}
+\caption{Die fertige Hamilton-Konstruktion behält links die drei kanonischen Impulse und rechts die Quadrate mit minimaler Kopplung bei.}
+\lectureframe{00:53:05}
+\end{figure}
+
+In kanonischen Variablen unterscheidet sich dies vom Hamiltonian des freien Teilchens. In Größen ausgedrückt, die die physikalische Geschwindigkeit beschreiben, gilt jedoch
+\begin{equation}
+  H=\frac{\boldsymbol{\pi}^{\,2}}{2m}
+  =\frac12m\mathbf v^2.
+\end{equation}
+Das ist kein Widerspruch. Dieselbe Energie wird als eine andere Funktion von \((\mathbf x,\mathbf p)\) dargestellt; daher unterscheiden sich die Hamilton-Gleichungen, obwohl die Energie weiterhin der gewöhnlichen kinetischen Energie entspricht.
+
+Da das Feld statisch ist, bleibt \(H\) erhalten. Daher ist der Betrag der Geschwindigkeit konstant. Dasselbe wird am Lorentzkraftgesetz unmittelbar deutlich:
+\begin{equation}
+  \frac{d}{dt}\left(\frac12mv^2\right)
+  =
+  m\mathbf v\cdot\mathbf a
+  =
+  \frac{e}{c}\,
+  \mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+Ein Magnetfeld ändert die Bewegungsrichtung, nicht den Betrag der Geschwindigkeit. Es krümmt die Bahn, verrichtet aber keine Arbeit.
+
+\section{Ein homogenes Feld lösen, indem man die Eichung wechselt}
+
+Nach der Pause betrachten wir erneut das homogene Feld
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z}.
+\end{equation}
+Es geht nicht nur darum, eine vertraute Bahn zu bestimmen. Vielmehr soll gezeigt werden, warum die Wahl der Eichung eine Symmetrierechnung nahezu mühelos machen kann.
+
+\subsection{Erste Eichung: Die Koordinaten y und z sind zyklisch}
+
+Wir wählen
+\begin{equation}
+  A_x=A_z=0,
+  \qquad
+  A_y=Bx.
+\end{equation}
+Dann gilt
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{eB}{c}x\dot y.
+\end{equation}
+Die Koordinaten \(y\) und \(z\) treten nicht explizit auf. Sie sind zyklisch, daher sind ihre kanonischen Impulse erhalten. Für \(z\) gilt
+\begin{equation}
+  p_z=m\dot z,
+  \qquad
+  \dot p_z=0,
+\end{equation}
+und somit
+\begin{equation}
+  a_z=0.
+\end{equation}
+Das Teilchen bewegt sich gleichförmig entlang des Feldes.
+
+Für \(y\) gilt
+\begin{equation}
+  p_y=m\dot y+\frac{eB}{c}x,
+  \qquad
+  \dot p_y=0.
+\end{equation}
+Daher
+\begin{equation}
+  m a_y+\frac{eB}{c}v_x=0,
+  \qquad
+  \boxed{m a_y=-\frac{eB}{c}v_x}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_07.png}
+\caption{In der Eichung \(A_y=Bx\) hält die Tafel die erhaltenen Größen \(p_z\) und \(p_y\) sowie die daraus folgende \(y\)-Komponente der Lorentzkraft fest.}
+\lectureframe{01:03:50}
+\end{figure}
+
+\subsection{Zweite Eichung: Die x-Koordinate ist zyklisch}
+
+Nun wechseln wir zu
+\begin{equation}
+  A_x=-By,
+  \qquad
+  A_y=A_z=0.
+\end{equation}
+Die Lagrangefunktion wird
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  -
+  \frac{eB}{c}y\dot x.
+\end{equation}
+Diesmal ist \(x\) zyklisch:
+\begin{equation}
+  p_x=m\dot x-\frac{eB}{c}y,
+  \qquad
+  \dot p_x=0.
+\end{equation}
+Also gilt
+\begin{equation}
+  \boxed{m a_x=\frac{eB}{c}v_y}.
+\end{equation}
+Zusammen mit dem Ergebnis aus der ersten Eichung und \(a_z=0\) ergibt sich genau
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times B\hat{\mathbf z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_08.png}
+\caption{Nach dem Wechsel der Eichung sind beide transversalen Komponenten der Lorentzkraft sichtbar. Jede ergibt sich in einer anderen Eichung aus einem Erhaltungssatz für den kanonischen Impuls.}
+\lectureframe{01:08:05}
+\end{figure}
+
+Die physikalische Translationssymmetrie war die ganze Zeit vorhanden. Durch die Wahl der Eichung änderte sich lediglich, welcher Teil dieser Symmetrie sich als gewöhnliche zyklische Koordinate unmittelbar zeigte. Deshalb kann der kanonische Impuls in einer Eichung erhalten sein und in einer anderen eine andere Form haben, während die messbare Beschleunigung gleich bleibt.
+
+\begin{classroomqa}
+\audiencequestion{Sind die Komponenten des kanonischen Impulses eichinvariant? Sind sie direkt physikalisch?}
+\lecturerresponse{Nein. Unter \(\mathbf A\mapsto\mathbf A+\nabla S\) ändert sich der kanonische Impuls um \((e/c)\nabla S\). Der mechanische Impuls \(m\mathbf v=\mathbf p-(e/c)\mathbf A\) ist eichinvariant und unmittelbar mit der Geschwindigkeit des Teilchens verknüpft. Der kanonische Impuls bleibt dennoch unverzichtbar, weil die Hamilton-Gleichungen und Poisson-Klammern mit ihm formuliert werden.}
+\end{classroomqa}
+
+\section{Die Bahn in einem homogenen Magnetfeld}
+
+Die formale Arbeit ist abgeschlossen; betrachten wir nun die Bewegung. Nehmen wir zunächst \(v_z=0\) an, sodass das Teilchen in der \(xy\)-Ebene bleibt. Die Beschleunigung steht senkrecht zur Geschwindigkeit und hat einen konstanten Betrag:
+\begin{equation}
+  |\mathbf a|
+  =
+  \frac{|e|}{mc}vB.
+\end{equation}
+Ein Teilchen, das sich mit konstantem Tempo bewegt und eine Beschleunigung konstanten Betrags erfährt, die stets senkrecht zu seiner Geschwindigkeit steht, bewegt sich auf einem Kreis.
+
+Sei \(r\) der Radius. Dann beträgt die Zentripetalbeschleunigung \(v^2/r\). Der Vergleich der Beträge ergibt
+\begin{equation}
+  m\frac{v^2}{r}
+  =
+  \frac{|e|}{c}vB,
+\end{equation}
+und damit
+\begin{equation}
+  \boxed{
+  r=\frac{mcv}{|e|B}
+  }.
+\end{equation}
+Zunächst schreibt die Vorlesung den Ausdruck ohne \(c\) an, bemerkt dann die Abweichung von der gewählten Konvention für die Lorentzkraft und ergänzt den Faktor. Das Vorzeichen von \(eB\) bestimmt den Drehsinn; der Radius selbst ist positiv.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{Die Kreisbahn, die tangentiale Geschwindigkeit und die Beziehung für den Radius, nachdem der fehlende Faktor \(c\) ergänzt wurde.}
+\lectureframe{01:16:50}
+\end{figure}
+
+Das Feld legt den Zusammenhang zwischen Geschwindigkeit und Radius fest, nicht aber den Kreismittelpunkt. Dieser kann an jeder Stelle der Querebene liegen. Eine größere Quergeschwindigkeit ergibt eine größere Bahn; eine größere Ladung oder ein stärkeres Magnetfeld ergibt eine engere Bahn.
+
+Falls \(v_z\neq0\) gilt, bleibt die Querbewegung kreisförmig, während \(z\) sich gleichförmig fortbewegt. Die Überlagerung dieser beiden Bewegungen ergibt eine Schraubenbahn entlang der Richtung des Magnetfeldes.\editorialnote{Die Vorlesung leitet die beiden Bestandteile getrennt her: \(a_z=0\) und die kreisförmige Querbewegung. Ihre Überlagerung ergibt die angegebene Schraubenbahn.}
+
+\section{Woher kommt die Kopplung?}
+
+Die Berechnung der Bahn veranlasst das Publikum, zum Anfang zurückzukehren. War der Term \((e/c)\mathbf A\cdot\mathbf v\) einfach schon bekannt? Ehrlicherweise gibt es mehrere logisch konsistente Ausgangspunkte.
+
+\begin{classroomqa}
+\audiencequestion{War die magnetische Lagrangefunktion einfach bekannt, und haben wir sie hingeschrieben?}
+\lecturerresponse{Für diese Darstellung: ja. Wir schreiben die lineare Kopplung an die Geschwindigkeit hin und untersuchen sie. Ausgehend von diesem Term entdeckt man die Eichinvarianz und anschließend, dass sich die Kombinationen der Rotation in den Gleichungen wie ein Magnetfeld verhalten. Man kann auch von der beobachteten Lorentzkraft ausgehen und nach einer Wirkung suchen oder mit der modernen Forderung nach Eichinvarianz beginnen. Historisch wurden diese Bestandteile in einer weniger direkten Reihenfolge entdeckt.}
+\end{classroomqa}
+
+Es gibt auch einen nützlichen Test dafür, ob eine vorgeschlagene Lagrangefunktion die gewöhnliche Hamilton-Konstruktion zulässt. Die Gleichungen
+\begin{equation}
+  p_i=\frac{\partial L}{\partial\dot x_i}
+\end{equation}
+müssen sich zumindest für das hier betrachtete reguläre System nach den Geschwindigkeiten auflösen lassen. Präziser gesagt muss die Geschwindigkeitshesse-Matrix
+\begin{equation}
+  \frac{\partial^2L}
+       {\partial\dot x_i\,\partial\dot x_j}
+\end{equation}
+nichtsingulär sein. Für dieses Teilchen ist sie einfach \(m\delta_{ij}\); deshalb ist die Legendre-Transformation eindeutig.
+
+\begin{classroomqa}
+\audiencequestion{Was macht eine vorgeschlagene Lagrangefunktion zulässig?}
+\lecturerresponse{Für die hier entwickelte gewöhnliche Mechanik sollte sie eindeutige Bewegungsgleichungen ergeben und einen eindeutigen Hamiltonian ermöglichen, nachdem die Geschwindigkeiten durch die Impulse ausgedrückt wurden. Singuläre Lagrangefunktionen kommen in Eichtheorien der Felder vor; die Behandlung ihrer Zwangsbedingungen erfordert jedoch Methoden, die über diesen Kurs hinausgehen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liefert die Eichsymmetrie selbst eine Erhaltungsgröße?}
+\lecturerresponse{Nicht allein im Problem eines Teilchens in einem vorgegebenen Hintergrundfeld. Um den zugehörigen Erhaltungssatz angemessen zu behandeln, muss das elektromagnetische Feld zu den dynamischen Variablen gehören. In der vollständigen Feldtheorie ist die Eichinvarianz mit der Ladungserhaltung verknüpft; dafür benötigt man jedoch die Feldwirkung und die Maxwell-Gleichungen.}
+\end{classroomqa}
+
+\section{Vorgegebene Felder und die Dynamik nach Maxwell}
+
+Bisher sagt nichts aus, wie sich das elektromagnetische Feld entwickelt. Das Feld wurde als festes Hintergrundfeld vorgegeben, und die Frage lautete lediglich: Wie bewegt sich ein Teilchen bei gegebenen \(\mathbf E\) und \(\mathbf B\)?
+
+\begin{classroomqa}
+\audiencequestion{Wie hängt das mit den Maxwell-Gleichungen zusammen?}
+\lecturerresponse{Um die Maxwell-Gleichungen herzuleiten, muss man die eigene Wirkung des elektromagnetischen Feldes hinzufügen und sowohl das Feld als auch die Teilchenbahn variieren. Die Kopplung \((e/c)\int\mathbf A\cdot d\mathbf x\) ist ein Teil der vollständigen Wirkung. Wird das Hintergrundfeld festgehalten, wirkt sich der Feldterm nicht auf die Variation bezüglich des Teilchens aus; sobald das Feld selbst dynamisch ist, ist er jedoch wesentlich.}
+\end{classroomqa}
+
+Klassisch könnte man den Formalismus der Wirkung ignorieren und einfach postulieren:
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times\mathbf B.
+\end{equation}
+Für die Mechanik eines Testteilchens ist das eine durchaus sinnvolle Differentialgleichung. In der Quantenmechanik werden die Lagrange- und Hamilton-Strukturen jedoch unverzichtbar, weil dort das Vektorpotential unmittelbar eingeht.
+
+\section{Monopole und das Bild des dünnen Solenoids}
+
+Was wäre, wenn
+\begin{equation}
+  \nabla\cdot\mathbf B\neq0?
+\end{equation}
+Dann kann \(\mathbf B\) nicht überall durch ein einziges glattes Vektorpotential dargestellt werden, denn die Divergenz jeder Rotation verschwindet. Die einfache globale Konstruktion dieses Kapitels versagt dann.
+
+Zur Veranschaulichung stellt sich die Vorlesung einen enorm langen, sehr dünnen Stabmagneten oder Solenoid vor. In der Nähe eines Endes, während das andere Ende beliebig weit entfernt liegt, ähnelt das äußere Feld dem Feld eines einzelnen magnetischen Pols. Der Rückfluss ist nicht verschwunden, sondern auf das Innere des dünnen Röhrchens beschränkt. Würde man das Röhrchen idealisieren und unbeobachtbar machen, entspräche es der an einen scheinbaren Monopol angehefteten Saite.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{Das Tafelbild mit dem dünnen Solenoid: Die Feldlinien breiten sich von einem scheinbaren Pol aus, während der Rückfluss in einem engen Röhrchen eingeschlossen bleibt.}
+\lectureframe{01:27:35}
+\end{figure}
+
+Im Rahmen der gewöhnlichen klassischen Elektromagnetik führt es dazu, dass Feldstärke und Feldenergie anwachsen, wenn man einen festen Fluss in einen Querschnitt presst, der gegen null geht. Mit absichtlich übertriebenen Antworten, die sich auf unendliche Energie berufen, macht die Vorlesung deutlich, dass ein realistischer Monopol neue Physik erfordern würde und sich nicht einfach durch einen immer dünneren gewöhnlichen Solenoid beschreiben ließe. In der Quantentheorie kann ein korrekt quantisiertes Flussröhrchen außerhalb seines Kerns unbeobachtbar werden. Dies ist der Gedanke hinter der Dirac-Saite; eine vollständige Monopoltheorie liegt jedoch außerhalb des gegenwärtigen Kurses.
+
+\begin{classroomqa}
+\audiencequestion{Ein Punktteilchen kann ein magnetisches Moment haben. Ist das ein Monopol?}
+\lecturerresponse{Nein. Ein magnetisches Moment ist ein Dipol: Es weist gleich große, entgegengesetzte Polanteile auf. Ein Monopol trüge eine von null verschiedene magnetische Gesamtladung. Wenn man einen gewöhnlichen Magneten zerteilt, lassen sich seine Pole nicht isolieren; jedes Stück erhält ein eigenes Nord- und Südende.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Schwierigkeit, die beiden Enden zu trennen, mit dem Quark-Confinement vergleichbar?}
+\lecturerresponse{Die Analogie ist nützlich. Wenn man gebundene Quarks auseinanderzieht, erhält man nach den gewöhnlichen Beobachtungen kein isoliertes Quark; das verbindende Feld erzeugt neue gebundene Objekte. Die Mechanismen werden hier nicht gleichgesetzt, doch das Bild von Endpunkten, die durch eine unvermeidliche Flussstruktur verbunden sind, ist ähnlich.}
+\end{classroomqa}
+
+Das Fazit der Vorlesung ist vorsichtig. Magnetische Monopole gehören nicht zu der gewöhnlichen klassischen Theorie, die der Herleitung zugrunde liegt, kommen aber in vielen Hochenergietheorien vor. Falls sie als elementare Teilchen existieren, sind bei ihnen Energieskalen weit jenseits der klassischen Mechanik dieses Kurses zu erwarten.
+
+\section{Hamiltons andere Algebra und das noch offene Thema}
+
+Die letzte Frage aus dem Publikum gilt Hamiltons Quaternionen. Sie sind historisch von der Hamilton-Mechanik unabhängig. Hamilton suchte eine Algebra, die für Drehungen im dreidimensionalen Raum eine ähnliche Rolle spielen könnte wie die komplexen Zahlen für Drehungen in der Ebene. Das Ergebnis verwendet drei imaginäre Einheiten \(i,j,k\), für die gilt:
+\begin{equation}
+  i^2=j^2=k^2=ijk=-1,
+\end{equation}
+Zum Beispiel gilt
+\begin{equation}
+  ij=k,
+  \qquad
+  ji=-k.
+\end{equation}
+Einheitsquaternionen bieten eine effiziente Darstellung dreidimensionaler Drehungen. In der Quantenmechanik lässt sich dieselbe algebraische Struktur durch Pauli-Matrizen darstellen, ergänzt um geeignete Faktoren der gewöhnlichen imaginären Einheit. Dieser Zusammenhang ist real, bildet aber nicht den Ursprung des kanonischen Impulses oder des Hamiltonians, die wir in diesem Kurs entwickelt haben.
+
+Das letzte gewünschte Thema ist das Chaos. Es bleibt keine Zeit mehr, es zu entwickeln. Zum Abschluss verweist die Vorlesung auf die bereits aufgebaute mathematische Maschinerie: Dynamik ist Bewegung entlang von Bahnen im Phasenraum, und diese Sprache bildet den Ausgangspunkt für die Untersuchung regelmäßigen und chaotischen Verhaltens. Die formale Struktur der klassischen Mechanik ist nun hinreichend vollständig, sodass das Publikum von hier aus weiterarbeiten kann.
