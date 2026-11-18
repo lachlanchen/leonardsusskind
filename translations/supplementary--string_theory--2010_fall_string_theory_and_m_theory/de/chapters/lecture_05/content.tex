@@ -1,0 +1,531 @@
+\chapter{Skalen, Strings und sechsundzwanzig Dimensionen}
+
+\lectureoverview{Was bestimmt den Abstand der Stringspektren? Die Antwort lautet: die Spannung, eine Größe mit der Dimension einer Masse zum Quadrat. Bei fundamentalen Strings führt diese Beobachtung zu Planck-Einheiten, zur praktischen Unmöglichkeit direkter Anregung und zum Einsetzen starker Gravitation. Nach einer bewussten Unterbrechung kehren wir zum Grundzustand des bosonischen offenen Strings zurück. Die Regularisierung seiner Nullpunktsenergie bietet den historischen \emph{einfachen} Weg zu vierundzwanzig transversalen Richtungen und damit zu sechsundzwanzig Raumzeitdimensionen.}
+
+\section{Die bisher ausgelassene Skala}
+
+Bisher haben wir über schwingende und rotierende Strings gesprochen, ohne zu sagen, was eine Anregungseinheit bedeutet. Man kann sich ein Hadron als String vorstellen und seine Oszillatoren anregen, aber wie groß ist der Sprung von einem Zustand zum nächsten? Wodurch wird er bestimmt?
+
+Im elementaren Stringmodell gibt es nur einen dimensionalen Parameter. Um ihn zu finden, betrachten wir zunächst eine gewöhnliche gespannte Feder. Sind ihre Endpunkte um \(\ell\) voneinander entfernt, so ergibt sich nach dem Hookeschen Gesetz
+\begin{equation}
+  E_{\mathrm{spring}}=\frac{k\ell^2}{2}.
+  \label{eq:l05-hooke}
+\end{equation}
+Der Faktor einhalb wurde von der Klasse ergänzt, nachdem die erste Fassung bereits geschrieben war. Für diese erste Abschätzung ist ein solcher numerischer Faktor unerheblich.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_01.png}
+  \caption{Das gespannte Stück und seine potenzielle Energie nach dem Hookeschen Gesetz.}
+  \lectureframe{00:02:28}
+  \label{fig:l05-hooke-board}
+\end{figure}
+
+Die Energie in \eqref{eq:l05-hooke} ist nichtrelativistisch. In der Beschreibung mit unendlichem Impuls, die wir in den vorangegangenen Vorlesungen verwendet haben, ist die innere nichtrelativistische Energie proportional zu \(m^2\), nicht zu \(m\). Daher schreiben wir schematisch
+\begin{equation}
+  m^2\sim k\ell^2,
+  \qquad
+  m\sim \sqrt{k}\,\ell.
+  \label{eq:l05-mass-length}
+\end{equation}
+Im Ruhesystem des Strings ist seine Masse gleich seiner Energie. Die zweite Beziehung hat daher die Form
+\begin{equation}
+  E_{\mathrm{rest}}\sim T_s\ell,
+  \qquad
+  T_s\equiv\sqrt{k}.
+  \label{eq:l05-tension}
+\end{equation}
+Der Koeffizient \(T_s\) ist die Stringspannung: die pro Längeneinheit gespeicherte Energie.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_02.png}
+  \caption{Die Tafel führt von \(m^2\sim k\ell^2\) zu einer Masse, die proportional zur Länge ist.}
+  \lectureframe{00:05:42}
+  \label{fig:l05-mass-length-board}
+\end{figure}
+
+Diese Schreibweise ist an die Federanalogie der Vorlesung angepasst. In der üblichen relativistischen Stringnotation schreibt man meist
+\begin{equation}
+  T_s=\frac{1}{2\pi\alpha'},
+  \label{eq:l05-alpha-prime}
+\end{equation}
+Daher erzeugen Zuwächse des Stringniveaus Zuwächse von \(m^2\) in der Größenordnung von \(1/\alpha'\), also äquivalent in der Größenordnung der Spannung.
+\editorialnote{Die effektive Größe \(k\) der Vorlesung ist so gewählt, dass \(\sqrt{k}\) die Rolle der Spannung übernimmt. Die konventionsunabhängige Aussage lautet, dass \(T_s\) die Dimension einer Masse zum Quadrat hat und dass die Regge-Steigung \(\alpha'\propto T_s^{-1}\) erfüllt.}
+
+\subsection{Dimensionen und Oszillatorabstände}
+
+Setzen wir \(c=\hbar=1\). Dann hat die Energie die Dimension einer inversen Länge:
+\begin{equation}
+  [E]=L^{-1}.
+\end{equation}
+Da die Spannung Energie pro Längeneinheit ist, gilt
+\begin{equation}
+  [T_s]=L^{-2}=E^2.
+  \label{eq:l05-tension-dimension}
+\end{equation}
+Deshalb sind die Abstände im Stringspektrum natürlicherweise Abstände im Massenquadrat.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_03.png}
+  \caption{Natürliche Einheiten an der Tafel: \(c=\hbar=1\), die Energie ist eine inverse Länge und die Oszillatorfrequenz wird durch die Federskala bestimmt.}
+  \lectureframe{00:06:05}
+  \label{fig:l05-natural-units-board}
+\end{figure}
+
+Der gewöhnliche Oszillator veranschaulicht denselben Punkt auf andere Weise. Für eine Feder mit der Masse \(\mu\) gilt
+\begin{equation}
+  \omega=\sqrt{\frac{k}{\mu}},
+  \qquad
+  \Delta E=\hbar\omega.
+\end{equation}
+Eine steifere Feder hat eine höhere Frequenz und einen größeren Quantensprung. Ein String enthält unendlich viele solcher Normalmoden, doch ihre gemeinsame Skala wird durch \(T_s\) festgelegt. Sobald die Spannung bekannt ist, kennt man auch den Abstand der Stringspektren.
+
+Die Spannung hat auch die Dimension einer Kraft, denn Kraft mal Weg ist Energie. Stellen wir uns vor, ein Endpunkt sei fest verankert und am anderen hänge ein Gewicht. Ein idealer relativistischer String mit \(E=T_s\ell\) kann eine durch \(T_s\) bestimmte Kraft tragen, unabhängig von seiner Länge. Die aus den beobachteten Anregungsenergien abgeleitete hadronische Spannung entspräche in diesem bewusst fantasievollen Vergleich dem Gewicht eines Lastwagens. Noch nie wurde ein Lastwagen an ein Meson gehängt; das gemessene Spektrum liefert die Spannung, und die Spannung ermöglicht diesen mechanischen Vergleich.
+
+Fundamentale Strings wären sehr viel steifer. Wenn sie Elektronen, Photonen und Gravitonen zugrunde liegen, müssen ihre ersten Oszillatoranregungen weit über den beobachteten Teilchenenergien liegen. Im selben fantasievollen Gravitationsexperiment könnte ihre Spannung etwas von galaktischer Masse tragen. Der Vergleich soll keine technische Anwendung veranschaulichen. Er soll zeigen, dass eine enorme Spannung sowohl eine hohe Anregungsenergie als auch eine sehr kleine Grundzustandsfluktuation bedeutet.
+
+\section{Einheiten aus universellen Konstanten}
+
+Wie groß muss eine Skala sein, damit sie als enorm gelten kann? Der natürliche Maßstab ist die Planck-Skala. Statt sie einfach anzugeben, wollen wir sie herleiten.
+
+Meter, Kilogramm und Sekunde sind ausgezeichnete Laboreinheiten, doch ihr Ursprung liegt im menschlichen Maßstab. Ein Meter ist für Stoff oder Seil praktisch; der Fuß ist nach einem Körperteil benannt; eine Sekunde ist ein handlicher Bruchteil eines Tages. Man könnte den Protonenradius gleich eins setzen und damit manche Kernphysikformeln vereinfachen, doch das Proton ist nur ein bestimmtes zusammengesetztes Teilchen. Eine solche Wahl würde nicht die gesamte Physik vereinfachen.
+
+Drei dimensionale Konstanten haben eine größere universelle Bedeutung:
+\begin{itemize}
+  \item \(c\) legt die Grenzgeschwindigkeit für jedes materielle System fest;
+  \item \(\hbar\) tritt in den Unschärferelationen jedes Quantensystems auf;
+  \item \(G\) koppelt die Gravitation an jede Form von Masse und Energie.
+\end{itemize}
+Einheiten zu wählen, in denen \(c=\hbar=G=1\) gilt, kommt darauf hinaus, Einheiten für Länge, Zeit und Masse aus diesen Konstanten zu konstruieren.
+
+Ihre gewöhnlichen Dimensionen lauten
+\begin{equation}
+  \begin{aligned}
+    [c]&=LT^{-1},
+    & [\hbar]&=ML^2T^{-1},\\
+    [G]&=L^3M^{-1}T^{-2}.
+  \end{aligned}
+  \label{eq:l05-dimensions-constants}
+\end{equation}
+Die mittlere Beziehung folgt unmittelbar aus
+\(\Delta x\,\Delta p\gtrsim\hbar\). Die letzte folgt beispielsweise aus
+\begin{equation}
+  a=\frac{GM}{r^2}.
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_04.png}
+    \par\smallskip\footnotesize (a) Einheiten von \(c\) und \(\hbar\).
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_05.png}
+    \par\smallskip\footnotesize (b) Einheiten von \(G\) aus der Newtonschen Beschleunigung.
+  \end{minipage}
+  \caption{Die in der Vorlesung zusammengestellten Größen der Dimensionsanalyse.}
+  \lectureframe{00:25:43--00:26:40}
+  \label{fig:l05-dimensional-analysis-board}
+\end{figure}
+
+\subsection{Zuerst die Planck-Fläche}
+
+Gesucht sind Potenzen \(p,q,r\), sodass
+\begin{equation}
+  G^p\hbar^q c^r
+\end{equation}
+die Dimension \(L^2\) hat. Die Fläche zuerst zu bestimmen vermeidet eine frühzeitige Quadratwurzel und nimmt zugleich die besondere Rolle vorweg, die die Fläche später in der Gravitation spielt. Aus \eqref{eq:l05-dimensions-constants} folgt durch Kürzen der Masse und der Zeit
+\begin{equation}
+  -p+q=0,
+  \qquad
+  -2p-q-r=0.
+\end{equation}
+Die verbleibende Potenz der Länge muss erfüllen
+\begin{equation}
+  3p+2q+r=2.
+\end{equation}
+Somit gilt \(q=p\), \(r=-3p\) und \(p=1\). Die Planck-Fläche ist
+\begin{equation}
+  \ell_P^2=\frac{G\hbar}{c^3},
+  \label{eq:l05-planck-area}
+\end{equation}
+und folglich
+\begin{equation}
+  \ell_P=\sqrt{\frac{G\hbar}{c^3}},
+  \qquad
+  t_P=\frac{\ell_P}{c},
+  \qquad
+  m_P=\sqrt{\frac{\hbar c}{G}}.
+  \label{eq:l05-planck-units}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_06.png}
+  \caption{Die vollständige Dimensionsanalyse für Planck-Fläche und Planck-Länge.}
+  \lectureframe{00:31:34}
+  \label{fig:l05-planck-area-board}
+\end{figure}
+
+Mit der Genauigkeit einer Größenordnung gilt
+\begin{equation}
+  \begin{aligned}
+    \ell_P&\sim10^{-35}\,\mathrm{m},
+    &t_P&\sim10^{-43}\,\mathrm{s},\\
+    m_P&\sim10^{-8}\,\mathrm{kg},
+    &m_Pc^2&\sim10^{19}\,\mathrm{GeV}.
+  \end{aligned}
+  \label{eq:l05-planck-numbers}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_07.png}
+  \caption{Die drei Planck-Skalen, auf eine Größenordnung genau.}
+  \lectureframe{00:35:12}
+  \label{fig:l05-planck-values-board}
+\end{figure}
+
+Länge und Zeit sind unvorstellbar klein, während die Masse gemessen an Teilchen erstaunlich makroskopisch ist: ungefähr so groß wie die Masse eines feinen Staubkorns. Ihre Ruheenergie liegt in der Größenordnung einiger Gigajoule, vergleichbar mit der chemischen Energie in einem Benzintank. Das beobachtbare Universum erstreckt sich dagegen über ungefähr \(10^{60}\) Planck-Längen und besteht seit ungefähr \(10^{60}\) Planck-Zeiten. Diese Vergleiche sollen den Einheiten eine anschauliche physikalische Bedeutung geben, nicht ihre numerische Genauigkeit erhöhen.
+
+Liegt die charakteristische Stringlänge \(\ell_s=\sqrt{\alpha'}\) nahe bei \(\ell_P\), so liegt die quantenmechanische Größe des Strings nahe bei \(\ell_P\), seine Schwingungsperiode nahe bei \(t_P\) und seine erste massive Anregung nahe bei \(m_P\). Die Vorlesung lässt Faktoren von zehn, hundert oder mehr zu; es handelt sich um eine Erwartung, nicht um eine Dimensionsidentität.
+
+\begin{classroomqa}\audiencequestion{Ist die Masse auf der Planck-Skala die Zunahme gegenüber dem Grundzustand des Teilchens? \lecturetimestamp{00:38:37}}\lecturerresponse{Die äquidistante Größe ist das Massenquadrat. Ist der Grundzustand leicht, so ist das \(m^2\) der ersten Stringanregung um einen Betrag in der Größenordnung von \(m_P^2\) größer; ihre Masse und die erforderliche Schwerpunktsenergie liegen daher in der Größenordnung von \(m_P\).}\end{classroomqa}
+
+\section{Wie nahe sollten die beiden Skalen beieinanderliegen?}
+
+\begin{classroomqa}\audiencequestion{Die Dimensionsanalyse liefert \(\ell_P\), aber warum sollte diese Zahl die Länge eines Strings sein? \lecturetimestamp{00:40:21}}\lecturerresponse{Das ist eine physikalische Vermutung, die durch die Gravitation und das Ausbleiben beobachteter Stringstruktur gestützt wird; sie folgt nicht allein aus der Dimensionsanalyse. Die Stringlänge kann größer als die Planck-Länge sein, was eine niedrigere Energieskala bedeutet. Die Vorlesung argumentiert lediglich, dass sie keine gewöhnliche teilchenphysikalische Länge sein sollte und dass eine Stringlänge weit unterhalb der Planck-Länge zu gravitativen Kollaps führt.}\end{classroomqa}
+
+Die Beziehung zwischen den beiden Skalen hängt tatsächlich von der Kopplung ab. In einer vollständigen Kompaktifizierung gehen \(\ell_P\), \(\ell_s\), die Stringkopplung und das Kompaktifizierungsvolumen gemeinsam ein. Es gibt keine universelle Gleichung \(\ell_s=\ell_P\). Was von der Skalenargumentation der Vorlesung bleibt, ist: Stringeffekte müssen bei sehr hohen Energien einsetzen, und subplancksche Lokalisierung lässt sich nicht unter Vernachlässigung der Gravitation diskutieren.
+\editorialnote{Moderne Stringkonstruktionen müssen die Stringlänge nicht exakt mit der vierdimensionalen Planck-Länge gleichsetzen. Ihr Verhältnis hängt von der Stringkopplung und den Kompaktifizierungsdaten ab.}
+
+\begin{classroomqa}\audiencequestion{Wenn man die Planck-Länge als kleinste sinnvolle Länge auffasst, ist die Planck-Masse dann auch die kleinstmögliche Masse? \lecturetimestamp{00:43:27}}\lecturerresponse{Nein. Gewöhnliche Teilchen sind sehr viel leichter. Die Planck-Masse ist die Skala, bei der ein kompaktes Objekt einen Gravitationsradius haben kann, der mit seiner quantenmechanischen Wellenlänge vergleichbar ist. In der heuristischen Sprache der Vorlesung ist dies die Skala des leichtesten semiklassischen Schwarzen Lochs mit einer Lebensdauer in der Größenordnung einer Planck-Zeit; die letzte Aussage sollte nicht als präzise Beschreibung eines vollständig quantenmechanischen Objekts missverstanden werden.}\end{classroomqa}
+
+\subsection{Was laufende Kopplungen aussagen können}
+
+Es gibt indirekte Hinweise darauf, dass die herkömmliche Quantenfeldtheorie bis zu Skalen weit jenseits der direkten Reichweite von Beschleunigern gültig bleibt. Die drei Eichtheorie-Kopplungen des Standardmodells werden bei erreichbaren Energien gemessen, und ihre Abhängigkeit von der Skala lässt sich extrapolieren. In der schematischen Grafik der Vorlesung nähern sich die Kopplungen von \(U(1)\), \(SU(2)\) und \(SU(3)\) bei einer hohen Vereinheitlichungsskala einander an, möglicherweise einige Größenordnungen unterhalb der Planck-Energie.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_08.png}
+  \caption{Die schematische Grafik der laufenden Kopplungen. Die drei Eichkurven nähern sich einander an, bevor die zunehmende Stärke der Gravitation die Größenordnung eins erreicht.}
+  \lectureframe{00:47:18}
+  \label{fig:l05-running-couplings-board}
+\end{figure}
+
+Das ist eine Extrapolation, kein direktes Experiment am Schnittpunkt. Zusätzliche Teilchen oder Schwellen zwischen Labor- und Vereinheitlichungsenergien können die Steigungen verändern. Die vorsichtige Schlussfolgerung lautet lediglich, dass die bekannte Feldtheorie bei gewöhnlichen Abständen keine Anzeichen für Stringstruktur zeigt und dass eine plausible Stringskala irgendwo im enormen Bereich zwischen der erschlossenen Vereinheitlichungs- und der Planck-Skala liegt.
+
+\begin{classroomqa}\audiencequestion{Welche drei Kopplungen werden extrapoliert? \lecturetimestamp{00:48:28}}\lecturerresponse{Es sind die Eichtheorie-Kopplungen zu \(U(1)\), \(SU(2)\) und \(SU(3)\): Hyperladung, schwache und starke Wechselwirkung. Der Elektromagnetismus geht aus der elektroschwachen Mischung hervor und ist in dieser Zählweise kein unabhängiger vierter Eichfaktor.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Nimmt die Gravitationskonstante \(G\) selbst zu, wenn wir höhere Energien untersuchen? \lecturetimestamp{00:49:30}}\lecturerresponse{\(G\) ist dimensional und daher für sich genommen nicht die passende Größe für einen Vergleich mit einer dimensionslosen Eichtheorie-Kopplung. Bei einer charakteristischen Energie \(M\) verhält sich die dimensionslose Stärke der Gravitation schematisch wie \(GM^2/(\hbar c)\). Diese Kombination wächst mit der Energie und erreicht auf der Planck-Skala die Größenordnung eins.}\end{classroomqa}
+
+Die Kraftgesetze machen den Vergleich deutlich:
+\begin{equation}
+  F_{\mathrm{em}}\sim\frac{e^2}{r^2},
+  \qquad
+  F_{\mathrm{grav}}\sim\frac{GM^2}{r^2}.
+  \label{eq:l05-force-laws}
+\end{equation}
+Somit vergleicht man in natürlichen Einheiten \(e^2\) nicht mit \(G\), sondern mit \(GM^2\).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_09.png}
+  \caption{Die elektromagnetischen und gravitativen Kraftgesetze, anhand derer sich die dimensionslose Stärke der Gravitation bestimmen lässt.}
+  \lectureframe{00:50:50}
+  \label{fig:l05-force-laws-board}
+\end{figure}
+
+\section{Warum direkte String-Spektroskopie außer Reichweite liegt}
+
+Wie könnten wir experimentell feststellen, dass ein Elektron ein String ist? Wir würden wie in der Hadronenspektroskopie vorgehen: das Elektron mit genügend hoher Energie treffen, um seine inneren Moden anzuregen, und nach einer Reihe von Zuständen suchen, deren Massen dem Stringmuster folgen. Liegt das erste massive Niveau nahe bei \(10^{19}\,\mathrm{GeV}\), ist das weit außerhalb der Reichweite jedes direkten Beschleunigers.
+
+Die Gesamtenergie ist nicht das einzige Hindernis. Sie muss innerhalb eines winzigen Stoßparameters konzentriert werden. Damit kommen Schwarze Löcher ins Spiel.
+
+\begin{classroomqa}\audiencequestion{Würde ein Beschleuniger bei diesen Energien beginnen, kleine Schwarze Löcher zu erzeugen? \lecturetimestamp{00:50:57}}\lecturerresponse{Das ist die heuristische Erwartung, sobald die Schwerpunktsenergie innerhalb ihres Gravitationsradius konzentriert wird. Ein stellares Schwarzes Loch entsteht, wenn das Gravitationspotenzial einen massereichen Stern zusammendrückt. Ein mikroskopisches Schwarzes Loch würde stattdessen entstehen, wenn kinetische Energie auf einen winzigen Kollisionsbereich fokussiert wird. In der vierdimensionalen Gravitation liegt die dafür erforderliche Skala bei der Planck-Skala.}\end{classroomqa}
+
+Zur Einordnung: Der Energiegewinn eines Linearbeschleunigers ist ungefähr proportional zu seiner Länge. Als einfache Richtgröße im Maßstab des SLAC setzt die Vorlesung etwa zwei Meilen für ungefähr \(100\,\mathrm{GeV}\) an. Bei derselben Beschleunigungsgradienten wären für \(10^{19}\,\mathrm{GeV}\) ungefähr \(10^{17}\) mehr Länge nötig; der Beschleuniger hätte dann galaktische Ausmaße.
+
+Selbst eine solche Anlage bräuchte eine hohe Luminosität. Die Strahlen werden nicht Paar für Paar mit Planck-Längengenauigkeit ausgerichtet; vielmehr kreuzen sich enorme Teilchenzahlen, damit einige Teilchen beim gewünschten Stoßparameter kollidieren. Multipliziert man eine Planck-Energie mit einer enormen Kollisionsrate, ergibt sich ein ebenso absurder Leistungsbedarf. Die Abschätzungen sind bewusst grob, doch die Schlussfolgerung bleibt bestehen: Eine direkte String-Spektroskopie auf der Planck-Skala ist kein Experiment, das sich plausibel entwerfen ließe.
+
+Indirekte Hinweise müssten struktureller Natur sein: eine Theorie, die die beobachteten niederenergetischen Teilchen und Wechselwirkungen hinreichend konkret vorhersagt, um überprüfbar zu sein, oder Effekte der Kompaktifizierung, die weit unterhalb der String-Skala noch nachweisbar sind. Die Vorlesung behauptet nicht, eine solche entscheidende Konstruktion liege bereits vor.
+
+\subsection{Extra Dimensionen und die Grenze der Lokalisierung}
+
+\begin{classroomqa}\audiencequestion{Sollten auch die zusätzlichen Dimensionen eine Größe nahe der Planck-Länge haben? \lecturetimestamp{00:56:23}}\lecturerresponse{In diesem elementaren Bild erwartet man, dass sie äußerst klein sind, doch das Argument legt ihre Größe nicht exakt fest. Wäre eine kompakte Dimension groß genug, um sie bei niedrigeren Energien zu untersuchen, hätten neue Kaluza--Klein-Moden und höherdimensionales Verhalten die von uns beobachtete Feldtheorie bereits verändert. Ihre erfolgreiche Extrapolation setzt solchen Dimensionen daher eine obere Grenze.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Warum könnten ein String oder eine kompakte Dimension nicht um viele Größenordnungen kleiner als \(\ell_P\) sein? \lecturetimestamp{00:57:48}}\lecturerresponse{Um einen kürzeren Abstand aufzulösen, braucht man einen größeren Impuls. Oberhalb der Planck-Skala hat die zur Lokalisierung erforderliche Energie einen Gravitationsradius, der mit dem untersuchten Bereich vergleichbar und schließlich größer ist. Das Experiment erzeugt ein Schwarzes Loch, bevor es einen gewöhnlichen String kleinerer Ausdehnung auflösen kann.}\end{classroomqa}
+
+Das Unschärfeprinzip liefert die Abschätzung. Eine Lokalisierung auf \(\Delta x\) erfordert
+
+\begin{classroomqa}\audiencequestion{Wie wird die Planck-Masse physikalisch bestimmt, wenn Planck-Länge und Planck-Zeit festgelegt sind? \lecturetimestamp{00:59:04}}\lecturerresponse{Verwende entweder \(\hbar\) oder \(G\), um die Längenskala in eine Energie umzurechnen. Nach dem Unschärfeprinzip erfordert es, zwei Teilchen innerhalb von \(\ell_P\) zu lokalisieren, einen Impuls in der Größenordnung von \(\hbar/\ell_P\) und damit eine Energie in der Größenordnung von \(m_Pc^2\). Gleichbedeutend ist dies die Masse, bei der quantenmechanische und gravitative Längenskalen vergleichbar werden.}\end{classroomqa}
+
+\begin{equation}
+  \Delta p\gtrsim\frac{\hbar}{\Delta x},
+  \qquad
+  E\sim c\,\Delta p.
+  \label{eq:l05-localization}
+\end{equation}
+Bei \(\Delta x=\ell_P\) beträgt diese Energie
+\begin{equation}
+  E\sim\frac{\hbar c}{\ell_P}=m_Pc^2.
+\end{equation}
+Gleichzeitig ist der Schwarzschildradius
+\begin{equation}
+  r_s\sim\frac{GE}{c^4}
+\end{equation}
+von der Größenordnung \(\ell_P\), bis auf numerische Faktoren. Quantenmechanische Lokalisierung und gravitativer Kollaps treffen auf derselben Skala zusammen.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_10.png}
+  \caption{Die Formeln für Planck-Länge und Planck-Masse, die während des Lokalisierungsarguments erneut aufgegriffen wurden.}
+  \lectureframe{01:00:25}
+  \label{fig:l05-localization-board}
+\end{figure}
+
+Damit ist das Argument zur Festlegung der Skala abgeschlossen.
+
+\section{Der Grundzustand muss unterhalb des Photons liegen}
+
+Nach der Pause bieten sich zwei Wege an: mit konformen Transformationen zu beginnen oder den älteren und einfacheren Weg zur kritischen Dimension zu behandeln. Wir wählen den zweiten Weg, mit einer Warnung: Das einfache Argument ist nicht einfach und auch nicht der tiefste Grund. Dennoch ist es korrekt und kommt der historischen Entdeckung nahe.
+
+Kehren wir zum bosonischen offenen String zurück. Die einmalige Wirkung eines transversalen Erzeugungsoperators erzeugt zwei Polarisationszustände. Da es keinen dritten longitudinalen Zustand gibt, muss die Anregung ein masseloser Vektor sein. In Einheiten, in denen ein Quant der Mode \(1\) das \(m^2\) um eins erhöht, gilt
+\begin{equation}
+  m_{\mathrm{ground}}^2=-1,
+  \qquad
+  m_{\mathrm{first}}^2=-1+1=0.
+  \label{eq:l05-open-intercept}
+\end{equation}
+Der tachyonische Grundzustand bleibt ein Problem der bosonischen Theorie; wir erkennen es an und stellen es zurück. Die unmittelbare Frage lautet, woher die negative Einheit in \eqref{eq:l05-open-intercept} kommt.
+
+Jede Stringmode ist ein harmonischer Oszillator. Für \(\hbar=1\) beträgt seine Vakuumenergie
+\begin{equation}
+  E_{0,n}=\frac{\omega_n}{2}.
+\end{equation}
+Für den String gilt \(\omega_n=n\), daher trägt eine transversale Koordinate formal
+\begin{equation}
+  E_0^{(1)}
+  =\frac12\sum_{n=1}^{\infty}n.
+  \label{eq:l05-formal-zero-point}
+\end{equation} bei.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_11.png}
+  \caption{Die Nullpunktsumme \(\sum n/2\) nach der Erinnerung an die Frequenzen der Moden.}
+  \lectureframe{01:06:18}
+  \label{fig:l05-zero-point-board}
+\end{figure}
+
+Nun tritt die Schwierigkeit klar zutage. Jeder Summand in \eqref{eq:l05-formal-zero-point} ist positiv, und die Summe divergiert. Wie kann sie einen endlichen negativen Achsenabschnitt ergeben?
+
+\section{Die Bewegung abziehen, bevor man das Spektrum betrachtet}
+
+Bevor wir die Summe regularisieren, erinnern wir uns daran, warum die innere Energie mit dem Massenquadrat identifiziert wurde. Für ein Teilchen mit großem longitudinalem Impuls \(P>0\) gilt
+\begin{equation}
+  E=\sqrt{P^2+m^2}
+   =P+\frac{m^2}{2P}
+   +O(P^{-3}).
+  \label{eq:l05-large-p-energy}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_12.png}
+  \caption{Die Entwicklung für großes \(P\) trennt den Gesamtimpuls vom inneren Massenterm.}
+  \lectureframe{01:07:35}
+  \label{fig:l05-fast-energy-board}
+\end{figure}
+
+Der erste Term beschreibt die uninteressante Gesamtbewegung entlang der \(z\)-Achse. Sie ist erhalten und für alle inneren Zustände mit demselben \(P\) gleich. Zieht man sie ab und skaliert um, wird die kinematische Zeitdilatation entfernt:
+\begin{equation}
+  \begin{aligned}
+    E-P&=\frac{m^2}{2P}+O(P^{-3}),\\
+    2P(E-P)&=m^2+O(P^{-2}).
+  \end{aligned}
+  \label{eq:l05-internal-energy}
+\end{equation}
+
+Das Atom liefert das physikalische Bild. Man versetzt ein Wasserstoffatom in einen geboosteten Zustand. Seine Gesamtenergie steigt, doch der im Laborsystem gemessene Energieabstand zwischen zwei inneren Zuständen schrumpft, weil die Uhr des Atoms langsamer geht. Der Faktor \(1/P\) in \eqref{eq:l05-large-p-energy} bewirkt diese Unterdrückung. Die Multiplikation mit \(2P\) stellt den invarianten Unterschied der Massenquadrate wieder her.
+
+Die rohe Grundzustandsenergie muss daher nicht buchstäblich \(-1\) sein. Sie kann einen großen, zustandsunabhängigen Anteil enthalten, der mit der gesamten longitudinalen Energie zusammenhängt, sowie einen endlichen inneren Rest. Die Vorlesung schreibt die geboostete Beziehung um, um beide Anteile sichtbar zu machen, bevor sie zur Oszillatorsumme zurückkehrt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_13.png}
+  \caption{Der invariante Massenterm neben dem großen zustandsunabhängigen longitudinalen Beitrag.}
+  \lectureframe{01:11:34}
+  \label{fig:l05-infinite-piece-board}
+\end{figure}
+
+Unendliche Vakuumenergien sind aus der Quantenfeldtheorie bekannt. Häufig trennt man eine divergente, zustandsunabhängige Konstante von den beobachtbaren Energiedifferenzen. Die Vorlesung zieht den Vergleich mit der Nullpunktsenergie des elektromagnetischen Feldes im Hörsaal und bezeichnet das Vorgehen offen als unbefriedigend, aber üblich. Hier folgen wir derselben heuristischen Idee: Wir isolieren den divergenten Anteil und fragen, ob ein bestimmter endlicher Rest übrig bleibt.
+
+\section{Die Summe regularisieren}
+
+Wir führen einen positiven Regulator \(\epsilon\) ein:
+\begin{equation}
+  S_1(\epsilon)
+  =\sum_{n=1}^{\infty}n e^{-n\epsilon}.
+  \label{eq:l05-regulated-sum}
+\end{equation}
+Für jedes \(\epsilon>0\) überwiegt die Exponentialfunktion schließlich den Faktor \(n\), sodass die Summe konvergiert. Lässt man \(\epsilon\) gegen null gehen, wird die Abschneidung entfernt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_14.png}
+  \caption{Der exponentielle Regulator, termweise auf \(1+2+3+\cdots\) angewandt.}
+  \lectureframe{01:16:42}
+  \label{fig:l05-regulator-board}
+\end{figure}
+
+Der Faktor \(n\) lässt sich durch Ableiten erzeugen:
+\begin{equation}
+  S_1(\epsilon)
+  =
+  -\frac{d}{d\epsilon}
+  \sum_{n=1}^{\infty}e^{-n\epsilon}.
+  \label{eq:l05-derivative-trick}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_15.png}
+  \caption{Beim Ableiten nach dem Abschneideparameter entsteht der Faktor \(-n\).}
+  \lectureframe{01:18:05}
+  \label{fig:l05-derivative-board}
+\end{figure}
+
+Die verbleibende Reihe ist geometrisch:
+\begin{equation}
+  S_0(\epsilon)
+  \equiv
+  \sum_{n=1}^{\infty}e^{-n\epsilon}
+  =
+  \frac{e^{-\epsilon}}{1-e^{-\epsilon}}
+  =
+  \frac{1}{e^\epsilon-1}.
+  \label{eq:l05-geometric-sum}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_16.png}
+  \caption{Die regularisierte geometrische Reihe in geschlossener Form.}
+  \lectureframe{01:19:12}
+  \label{fig:l05-geometric-board}
+\end{figure}
+
+Wir entwickeln für kleine \(\epsilon\):
+\begin{equation}
+  S_0(\epsilon)
+  =
+  \frac{1}{\epsilon}
+  -\frac12
+  +\frac{\epsilon}{12}
+  -\frac{\epsilon^3}{720}
+  +O(\epsilon^5).
+  \label{eq:l05-bernoulli-expansion}
+\end{equation}
+An der Tafel wird dies hergeleitet, indem Zähler und Nenner getrennt entwickelt, eine Potenz von \(\epsilon\) ausgeklammert und anschließend der Kehrwert entwickelt wird. Bei dieser Rechnung werden in der Vorlesung mehrere Vorzeichen überprüft; der kompakte Ausdruck \eqref{eq:l05-bernoulli-expansion} ist das bereinigte Ergebnis.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_17.png}
+  \caption{Die Entwicklungen von Zähler und Nenner, bevor der Kehrwert vereinfacht wird.}
+  \lectureframe{01:23:10}
+  \label{fig:l05-expansion-board}
+\end{figure}
+
+Die Anwendung von \(-d/d\epsilon\) ergibt
+\begin{equation}
+  S_1(\epsilon)
+  =
+  \frac{1}{\epsilon^2}
+  -\frac{1}{12}
+  +\frac{\epsilon^2}{240}
+  +O(\epsilon^4).
+  \label{eq:l05-regulated-result}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_18.png}
+  \caption{Der divergente Term \(1/\epsilon^2\) und der endliche Rest \(-1/12\) am Ende der Regulatorrechnung.}
+  \lectureframe{01:29:48}
+  \label{fig:l05-minus-twelve-board}
+\end{figure}
+
+Man fasst dieses Ergebnis oft scherzhaft als \(1+2+3+\cdots=-1/12\) zusammen. Das ist keine gewöhnliche Konvergenz. Gleichung \eqref{eq:l05-regulated-result} besagt, dass dieser spezielle Regulator einen divergenten Term sowie einen vom Regulator unabhängigen endlichen Anteil liefert:
+\begin{equation}
+  \underbrace{\frac{1}{\epsilon^2}}_{\text{divergent}}
+  \;+\;
+  \underbrace{\left(-\frac{1}{12}\right)}_{\text{finite}}
+  \;+\;O(\epsilon^2).
+\end{equation}
+Die Vorlesung nimmt den ersten Term in den bereits vorhandenen zustandsunabhängigen Anteil auf und behält den zweiten bei. Sie bewahrt auch die Pauli zugeschriebene Warnung: Unendlich zu sein macht eine Größe nicht von selbst zu null. Eine konsistente Theorie muss erklären, warum diese Subtraktion zulässig ist.
+
+Setzen wir den Faktor einhalb in \eqref{eq:l05-formal-zero-point} wieder ein, so trägt eine transversale Koordinate bei:
+\begin{equation}
+  E_0^{(1)}=-\frac{1}{24}.
+  \label{eq:l05-one-transverse-zero-point}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_19.png}
+  \caption{Der Faktor einhalb macht aus dem endlichen Anteil \(-1/12\) den Beitrag \(-1/24\) pro transversaler Koordinate.}
+  \lectureframe{01:33:42}
+  \label{fig:l05-minus-twenty-four-board}
+\end{figure}
+
+\section{Die transversalen Richtungen zählen}
+
+Sei \(D_\perp\) die Anzahl der transversalen Stringkoordinaten. Ihr gesamter Vakuumbeitrag ist
+\begin{equation}
+  E_0^{\mathrm{open}}
+  =-\frac{D_\perp}{24}.
+  \label{eq:l05-open-vacuum}
+\end{equation}
+Damit der erste Oszillator des offenen Strings den Grundzustand von \(-1\) auf das masselose Niveau anhebt, muss gelten
+\begin{equation}
+  -\frac{D_\perp}{24}=-1.
+\end{equation}
+Daraus folgt
+\begin{equation}
+  D_\perp=24.
+\end{equation}
+Das sind die Richtungen senkrecht zum großen longitudinalen Impuls. Addiert man die longitudinale räumliche Richtung und die Zeit, erhält man
+\begin{equation}
+  D=D_\perp+2=26.
+  \label{eq:l05-critical-dimension}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{Wann ging dieses Argument in die Stringtheorie ein? \lecturetimestamp{01:35:27}}\lecturerresponse{Es gehört in die ursprüngliche Ära der hadronischen Strings, ungefähr in 1969 und die frühen 1970er Jahre. Regge-Trajektorien waren bereits experimentell bekannt. Als man dann das Oszillatormodell für sich untersuchte, zeigte sich, dass der erste angeregte Zustand zwei statt drei Vektorpolarisationen hat; deshalb muss er masselos sein. Aus dem erforderlichen Achsenabschnitt ergaben sich dann rasch vierundzwanzig transversale Oszillatoren.}\end{classroomqa}
+
+Damals schien das kaum glaubhaft. Warum sollte eine regularisierte Vakuumsumme etwas über die Dimension der Raumzeit aussagen? Und doch passten die Bausteine zusammen: Der masselose Vektor, der Achsenabschnitt und die Zahl der transversalen Oszillatoren führten alle zur selben Zahl.
+
+\subsection{Der geschlossene String bestätigt die Zählung}
+
+Ein geschlossener String benötigt je eine links- und rechtslaufende Mode, um sein erstes physikalisches masseloses Niveau zu erreichen. Sein Grundzustand muss daher bei zwei Einheiten unter null beginnen.
+
+\begin{classroomqa}\audiencequestion{Ergeben vierundzwanzig transversale Richtungen nur \(-1\), muss ein geschlossener String dann in achtundvierzig transversalen Richtungen leben? \lecturetimestamp{01:37:47}}\lecturerresponse{Nein. Offene und geschlossene Strings befinden sich in derselben Raumzeit. Ein geschlossener String hat bereits doppelt so viele Oszillatoren: eine Turmstruktur zirkuliert in jeder der beiden Richtungen des Weltblatts. Jeder Turm trägt \(-24/24=-1\) bei, zusammen ergibt das \(-2\).}\end{classroomqa}
+
+Somit gilt
+\begin{equation}
+  E_0^{\mathrm{closed}}
+  =
+  2\left(-\frac{D_\perp}{24}\right)
+  =-2
+  \qquad (D_\perp=24).
+\end{equation}
+Ein Oszillator aus jedem Sektor hebt den Zustand um zwei Einheiten an und bringt das Massenquadrat auf null – genau dort, wo in der vorangegangenen Vorlesung das Gravitonenmultiplett auftrat.
+
+Diese Übereinstimmung lässt die Argumentation plausibler erscheinen, liefert aber noch immer nicht die tiefergehende Erklärung. Bei der modernen Quantisierung gehören die Normalordnungskonstante, die Abgeschlossenheit der Lorentz- oder Virasoro-Algebra und die Aufhebung der konformen Anomalie zu einer einheitlichen, konsistenten Struktur. Diese Struktur legt sowohl den Achsenabschnitt als auch die kritische Dimension fest; der endliche Rest des Cutoffs ist der historische Zugang zu ihr.
+\editorialnote{Die Regulatorrechnung liefert eine heuristische Sicht auf die Normalordnungskonstante. Die tiefere Herleitung von \(D=26\) erfordert konforme Invarianz der Weltfläche, was gleichbedeutend mit der Aufhebung der konformen Anomalie und einer konsistenten Zwangsbedingungsalgebra ist.}
+
+Als Nächstes folgt dieser tiefergehende Zugang. Für den Einstieg braucht man nur ein wenig komplexe Analysis: komplexe Koordinaten, analytische Funktionen und die Cauchy--Riemann-Gleichungen. Das angekündigte physikalische Bild ist türkisches Kaubonbon---, das in eine Richtung gezogen, in eine andere gedehnt und umgeformt wird, ohne die maßgebliche Struktur zu zerstören. Die Mathematik hinter diesem Bild ist die konforme Invarianz.

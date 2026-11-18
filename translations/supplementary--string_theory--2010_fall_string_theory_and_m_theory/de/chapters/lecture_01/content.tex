@@ -1,0 +1,692 @@
+\chapter{Von hadronischen Regge-Trajektorien zu Lichtkegelsaiten}
+
+\lectureoverview{Die Stringtheorie begann nicht als Theorie der Quantengravitation.
+Sie entstand aus dem Versuch, das Spektrum und die Streuung von Hadronen zu verstehen.
+Geradlinige Regge-Trajektorien deuteten auf ein ausgedehntes Objekt hin; die Dualität bei der Pion--Pion-Streuung legte nahe, dass zwei scheinbar verschiedene Prozesse zwei Schnitte durch dieselbe Fläche waren. Wir werden diesen Hinweisen bis zum Weltflächenbild folgen, die hadronische Saite als QCD-Flussschlauch neu deuten und dann im unendlichen Impulsrahmen die Transversaldynamik einer offenen Saite herleiten.
+Das zentrale Ergebnis lautet, dass ihr effektiver innerer Hamiltonoperator das Quadrat der Masse misst. Eine Hooke-Energie, die in dieser Beschreibung proportional zu \(L^2\) ist, wird daher zu einer Ruheenergie proportional zu \(L\) – dem kennzeichnenden Verhalten einer Saite mit konstanter Spannung.}
+
+\section{Der hadronische Ursprung der Stringtheorie}
+
+Um 1968--1970 ging es bei dem Problem, aus dem die Stringtheorie hervorging, um Protonen, Neutronen und insbesondere Mesonen. Das Quarkmodell war bereits eine ernst zu nehmende Idee, doch der Quarkinhalt der Hadronen war experimentell noch nicht im heutigen Sinne nachgewiesen. Gluonen spielten in der üblichen Diskussion eine noch geringere Rolle. Nambu hatte verwandte Ideen zu Eichfeldern vorgeschlagen, doch die gefestigte Sprache der Quantenchromodynamik gab es noch nicht. Das Ausgangsmaterial war vielmehr ein unerwartet reiches Spektrum stark wechselwirkender Teilchen.
+
+Vorerst kann man den Unterschied zwischen Proton--Neutron beiseitelassen und beide Zustände als Nukleon bezeichnen. Neben dem Nukleon gab es schwerere Zustände mit größerem Spin, gefolgt von noch schwereren Zuständen mit noch größerem Spin. Chew und Frautschi ordneten solche Familien in einem Diagramm an, dessen vertikale Achse den Drehimpuls und dessen horizontale Achse das Quadrat der Masse zeigte. In den damaligen Einheiten betrug die Protonenmasse etwa ein BeV; dieselbe Einheit heißt heute GeV.
+
+Man messe den Drehimpuls in Einheiten von \(\hbar\). Für eine Baryonenfamilie sind die dimensionslosen Spinwerte halbzahlig,
+
+\begin{equation}
+  J=\frac12,\frac32,\frac52,\ldots,
+\end{equation}
+
+während Mesonenfamilien ganzzahligen Spin haben. Bemerkenswert war, dass beide Familien im Diagramm gegen \(M^2\) annähernd auf einer Geraden lagen. In heutiger Notation schreibt man
+
+\begin{equation}
+  J\simeq \alpha_0+\alpha' M^2,
+  \label{eq:l01-regge-trajectory}
+\end{equation}
+
+wobei \(\alpha_0\) den Achsenabschnitt und \(\alpha'\) die Regge-Steigung bezeichnet.
+\editorialnote{In der Vorlesung wird die beobachtete lineare Beziehung mit ihrer nahezu universellen Steigung hervorgehoben. Die Bezeichnung für den Achsenabschnitt wird nur eingeführt, um diese Beziehung kompakt anzugeben; die Trajektorien sind empirisch und näherungsweise.}
+
+Die ursprüngliche Gerade war nicht überzeugend, denn sie verlief nur durch zwei bekannte Punkte. Durch zwei Punkte lässt sich immer eine Gerade legen. Die Überraschung kam später: Neu entdeckte Zustände lagen weiterhin nahe an derselben Geraden. Mesonentrajektorien zeigten dieselbe Anordnung. Das Pion beginnt bei \(J=0\) mit einer kleinen Masse auf der GeV-Skala; das Rho beginnt bei \(J=1\); weitere Anregungen folgen nach oben. Eine Familie konnte fünf, sechs oder sieben Zustände umfassen. Noch erstaunlicher war, dass verschiedene Baryonen- und Mesonentrajektorien nahezu parallel verliefen. Ein Zuwachs um ein Drehimpulsquant entsprach also ungefähr demselben Zuwachs des quadrierten Massenwerts:
+
+\begin{equation}
+  \Delta J=1
+  \quad\Longrightarrow\quad
+  \Delta M^2\simeq \frac{1}{\alpha'}.
+  \label{eq:l01-regge-spacing}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Was bedeutet es, wenn verschiedene Regge-Trajektorien parallel sind?\lecturetimestamp{00:09:32}}
+\lecturerresponse{Man wählt eine Teilchenfamilie aus und trägt alle ihre angeregten Zustände in ein Diagramm ein; sie liegen auf einer Geraden. Dasselbe wiederholt man für eine andere Mesonen- oder Baryonenfamilie. Die Geraden haben annähernd dieselbe Steigung, obwohl ihre Achsenabschnitte verschieden sind. Derselbe Zuwachs des Drehimpulses erfordert somit ungefähr denselben Zuwachs von \(M^2\). Diese gemeinsame Steigung wurde universelle Regge-Steigung genannt.}
+\end{classroomqa}
+
+Der Vergleich mit gewöhnlichen ausgedehnten Objekten zeigt, warum dieses Muster bedeutsam war. Ein Basketball gewinnt Rotationsenergie, wenn man ihn in Drehung versetzt, doch seine Trajektorie ist gekrümmt statt linear, und bei hinreichend hoher Winkelgeschwindigkeit wird der Ball auseinandergerissen. Auch ein Atom besitzt Rotationsanregungen, wird aber schließlich ionisiert; seine Trajektorie endet. Hadronen zeigten eine viel einfachere Abfolge und ließen in den verfügbaren Daten keine Anzeichen erkennen, dass diese Abfolge an ihr Ende gelangte.
+
+Dieses Spektrum zeigte, dass sich ein Hadron nicht wie ein Punkt verhielt. Ein Punkt besitzt keine räumliche Struktur, die sich drehen oder verformen könnte. Beim Elektron gibt es keine beobachtete Folge interner Zustände mit höherem Spin; entsprechend verhält es sich innerhalb der derzeitigen experimentellen Grenzen punktförmig. Ein Hadron dagegen lässt sich in Rotation versetzen. Sein Spektrum deutet auf eine Zusammensetzung aus Bestandteilen hin, und die Beziehung zwischen Spin und Masse legt nahe, dass sich das Objekt mit zunehmendem Drehimpuls verformt.
+
+\section{Dualität bei der Pion--Pion-Streuung}
+
+Die Spektroskopie lieferte einen Hinweis. Die Pion--Pion-Streuung lieferte einen weiteren. Zwei Pionen können sich zu einer rhoartigen Resonanz verbinden und später wieder als zwei Pionen hervorgehen. In einem herkömmlichen Feynman-Diagramm ist dies ein Annihilations- und Erzeugungsprozess, der üblicherweise als \(s\)-Kanal-Prozess bezeichnet wird. Dreht man dasselbe elementare Diagramm seitwärts, erhält man einen gekreuzten oder \(t\)-Kanal-Prozess, bei dem ein rhoartiges Teilchen zwischen den Pionen ausgetauscht wird.
+
+Das Rho steht nicht allein. Es gehört zu einer Regge-Familie, sodass die Konsistenz in beiden Kanälen offenbar das Rho und sämtliche angeregten Partner erfordert. Schematisch gilt:
+
+\begin{equation}
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(s)}_{\rho_n}(s,t),
+  \qquad
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(t)}_{\rho_n}(s,t).
+  \label{eq:l01-channel-sums}
+\end{equation}
+
+Diese Ausdrücke sind nicht zwei Näherungen, die man einfach addieren sollte. Numerische Untersuchungen ergaben, dass die Summe über den Turm von Resonanzen im Annihilationskanal bereits ungefähr den erwarteten Beitrag des Austauschkanals lieferte. Umgekehrt konnte der ausgetauschte Turm die Resonanzbeschreibung reproduzieren. Beide vollständigen Türme zu addieren, schien daher dieselbe Physik doppelt zu zählen. Nach den üblichen Regeln der Störungstheorie müsste man beide Diagramme berücksichtigen, wenn es sie gibt. Die hadronischen Amplituden deuteten dagegen darauf hin, dass die beiden Kanalbeschreibungen dual waren.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth]{lecture_01_figure_01.png}
+  \caption{Die Tafel verbindet das Chew--Frautschi-Diagramm mit den Diagrammen des Annihilations- und des gekreuzten Kanals und führt so die spektralen Hinweise und die Streuhinweise zu einem gemeinsamen Problem zusammen.}
+  \lectureframe{00:14:20}
+  \label{fig:l01-regge-duality-board}
+\end{figure}
+
+Dieselben Beziehungen lassen sich auch in einer klaren schematischen Darstellung zeigen. Das erste Teilbild hält das lineare Spektrum fest; die beiden anderen stellen die alternativen Kanalentwicklungen derselben Amplitude dar.
+
+\begin{figure}[H]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}[>=Latex,thick]
+    \begin{scope}
+      \draw[->] (0,0) -- (4.2,0) node[right] {$M^2$};
+      \draw[->] (0,0) -- (0,3.4) node[above] {$J$};
+      \draw[blue!65!black] (0.45,0.35) -- (3.55,2.95);
+      \draw[orange!80!black] (0.75,0.20) -- (3.85,2.80);
+      \foreach \x/\y in {0.65/0.52,1.35/1.10,2.05/1.69,2.75/2.27,3.45/2.86}
+        \fill[blue!65!black] (\x,\y) circle (0.07);
+      \foreach \x/\y in {0.95/0.37,1.65/0.95,2.35/1.54,3.05/2.12,3.75/2.71}
+        \fill[orange!80!black] (\x,\y) circle (0.07);
+      \node at (2.1,-0.55) {parallel Regge families};
+    \end{scope}
+    \begin{scope}[xshift=5.7cm]
+      \draw[->] (-1.5,1.2) -- (-0.3,0.25);
+      \draw[->] (-1.5,-1.2) -- (-0.3,-0.25);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.25) -- (0,-0.25);
+      \draw[->] (0.3,0.25) -- (1.5,1.2);
+      \draw[->] (0.3,-0.25) -- (1.5,-1.2);
+      \node at (0,-1.75) {$s$-channel tower};
+    \end{scope}
+    \begin{scope}[xshift=10.5cm]
+      \draw[->] (-1.5,1.2) -- (1.5,1.2);
+      \draw[->] (-1.5,-1.2) -- (1.5,-1.2);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.95) -- (0,-0.95);
+      \node at (0,-1.75) {$t$-channel tower};
+    \end{scope}
+  \end{tikzpicture}}
+  \caption{Parallele Regge-Familien und die beiden Kanalentwicklungen, die an der hadronischen Dualität beteiligt sind.}
+  \label{fig:l01-regge-duality-redraw}
+\end{figure}
+
+\section{Eine Weltfläche, zwei Schnitte}
+
+Naheliegend war es, nach einer einzigen geometrischen Geschichte zu suchen, die sich auf beide Arten lesen lässt. Man stellt ein Pion als Quark--Antiquark-Paar dar und lässt die Zeit nach oben laufen. Statt nur eindimensionale Teilchenlinien zu zeichnen, füllt man den von den Quarktrajektorien begrenzten Bereich aus. Ein horizontaler Schnitt durch diese zweidimensionale Geschichte kann zwei einlaufende Saiten zeigen, die sich verbinden und später wieder trennen. Ein anderer Schnitt zeigt eine Saite, die von einer Seite zur anderen ausgetauscht wird. Die beiden Feynman-Kanalbilder sind keine voneinander unabhängigen Mechanismen mehr, sondern verschiedene Zerlegungen derselben Fläche.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_02.png}
+  \caption{Die Topologie der Quarklinien auf der Tafel. Verschiedene Schnitte durch dieselbe zweidimensionale Geschichte ergeben die Resonanz- und die Austauschdeutung.}
+  \lectureframe{00:17:50}
+  \label{fig:l01-worldsheet-topology-board}
+\end{figure}
+
+Der Bereich zwischen einem Quark und einem Antiquark liefert einen weiteren Gedanken. Zu einem festen Zeitpunkt enthält der Schnitt zwei Endpunkte und etwas, das das gesamte Intervall zwischen ihnen ausfüllt. Dieses Objekt ist eindimensional: eine Saite. Während einer Wechselwirkung überstreicht die Saite die zweidimensionale Fläche.
+
+\begin{definition}
+Die Raumzeitgeschichte eines Punktteilchens ist eine \emph{Weltlinie}. Die Raumzeitgeschichte einer Saite ist eine \emph{Weltfläche}. Eine Saite zu einem Zeitpunkt ist ein räumlicher Schnitt durch ihre Weltfläche.
+\end{definition}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_03.png}
+  \caption{Die auf der Tafel eingezeichnete Fläche, die den Bereich zwischen den Endpunkttrajektorien ausfüllt. Ein Zeitschnitt schneidet sie in einer eindimensionalen Saite.}
+  \lectureframe{00:19:15}
+  \label{fig:l01-worldsheet-filled-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex,scale=0.95]
+    \fill[blue!10]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3)
+      -- (2.6,2.3)
+      .. controls (1.0,1.0) and (1.0,0.5) .. (0.2,0)
+      .. controls (1.0,-0.4) and (1.0,-1.0) .. (2.6,-2.3) -- cycle;
+    \draw[blue!65!black]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3);
+    \draw[blue!65!black]
+      (2.6,-2.3) .. controls (1.0,-1.0) and (1.0,-0.4) .. (0.2,0)
+      .. controls (1.0,0.5) and (1.0,1.0) .. (2.6,2.3);
+    \draw[red!75!black,dashed] (-2.9,-1.15) -- (2.9,-1.15)
+      node[right] {time slice};
+    \draw[orange!80!black,dashed] (-1.55,-2.5) -- (1.55,2.5)
+      node[above] {crossed slicing};
+    \draw[->] (3.45,-1.7) -- (3.45,1.8) node[above] {time};
+    \node[blue!65!black] at (0,-2.7) {one world sheet};
+  \end{tikzpicture}
+  \caption{Eine klare schematische Darstellung der Weltfläche. Verschiedene Schnitte zerlegen dieselbe Fläche auf unterschiedliche Weise in Beschreibungen über Zwischenkanäle.}
+  \label{fig:l01-worldsheet-redraw}
+\end{figure}
+
+Diese geometrische Rekonstruktion war ein Erkundungsansatz, keine Herleitung der vollständigen Theorie aus ersten Prinzipien. Verschiedene Personen gelangten auf unterschiedlichen Wegen zum frühen Saitenbild. Seine Stärke lag darin, dass dasselbe ausgedehnte Objekt beide Beobachtungen erklären konnte: Eine Saite kann rotieren und sich verformen, und ihre Weltfläche kann die dualen Streukanäle kodieren.
+
+\begin{classroomqa}
+\audiencequestion{Warum führt man eine saitenartige Verbindung ein, statt ein gewöhnliches Teilchen zwischen den Quarks auszutauschen?\lecturetimestamp{00:21:20}}
+\lecturerresponse{Zu einem Zeitpunkt gibt es nicht bloß ein lokalisiertes ausgetauschtes Teilchen. Es gibt ein Quark, ein Antiquark und eine Struktur an allen Punkten dazwischen. Diese Struktur könnte grundsätzlich kontinuierlich sein oder aus einer dichten Ansammlung von Bestandteilen bestehen, die ein Kontinuum annähert; die erste Vorstellung legte sich darauf nicht fest. Entscheidend war, dass das gesamte Intervall ausgefüllt war und die beobachteten Trajektorien keine Anzeichen dafür zeigten, wie ein gewöhnlicher Schnürsenkel mit Gewichten an den Enden abzureißen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann das Standardmodell die Pionstreuung beschreiben?
+\lecturetimestamp{00:22:45}}
+\lecturerresponse{Ja, wobei es auf den Energiebereich ankommt, wie nützlich die Beschreibung ist. Bei niedrigen Energien erklärt das Standardmodell über die QCD und ihre Niederenergie-Beschreibungen einen großen Teil der Pionstreuung. Bei höheren Energien, wenn ganze Türme hadronischer Austauschzustände eine Rolle spielen, werden direkte Berechnungen schwieriger; dann kann eine saitenartige Ordnung hilfreicher sein.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Haben die frühen Experimente gezeigt, dass eine Regge-Trajektorie niemals endet?\lecturetimestamp{00:23:37}}
+\lecturerresponse{Nein. Sie zeigten lediglich, dass die beobachtete Abfolge bis dahin keinen Endpunkt erkennen ließ. Die Annahme, sie lasse sich unbegrenzt fortsetzen, war eine naheliegende Extrapolation, keine Messung einer Unendlichkeit.}
+\end{classroomqa}
+
+\section{Flussschläuche und der Wechsel der Skala}
+
+Die moderne QCD liefert für das alte Bild eine feldtheoretische Deutung. Quark und Antiquark wirken als entgegengesetzte Quellen des Gluonenfeldes. In der gewöhnlichen Elektrodynamik breitet sich der elektrische Fluss seitwärts aus, wenn die entgegengesetzten Ladungen voneinander getrennt werden. Das Feld wird mit zunehmender Entfernung schwächer, sodass der Bereich zwischen den Ladungen kein festes transversales Profil beibehält. Die QCD ist nichtlinear. Ihre Dynamik kann den betreffenden chromoelektrischen Fluss in einem schmalen Schlauch einschließen, der Quark und Antiquark verbindet.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_04.png}
+  \caption{Quark und Antiquark mit Feldlinien, die einen schmalen Flussschlauch statt eines sich frei ausbreitenden Coulomb-Feldes bilden.}
+  \lectureframe{00:25:15}
+  \label{fig:l01-qcd-flux-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[orange!14,rounded corners=8pt] (-3.0,-0.55) rectangle (3.0,0.55);
+    \draw[orange!80!black,thick,rounded corners=8pt]
+      (-3.0,-0.55) rectangle (3.0,0.55);
+    \fill[blue!70!black] (-3.35,0) circle (0.17);
+    \fill[red!75!black] (3.35,0) circle (0.17);
+    \node[below] at (-3.35,-0.22) {$q$};
+    \node[below] at (3.35,-0.22) {$\bar q$};
+    \foreach \y in {-0.30,0,0.30}
+      \draw[->,orange!85!black] (-3.05,\y) -- (3.05,\y);
+    \draw[<->] (-2.9,-1.05) -- (2.9,-1.05) node[midway,below] {$L$};
+    \node at (0,0.92) {approximately fixed transverse profile};
+  \end{tikzpicture}
+  \caption{Ein eingeschlossener Flussschlauch wird länger, ohne sich seitwärts auszubreiten. Eine feste Energie pro Längeneinheit ergibt \(E=TL\).}
+  \label{fig:l01-qcd-flux-redraw}
+\end{figure}
+
+Teilchenbild und Feldbild beschreiben denselben Sachverhalt auf unterschiedliche Weise. In der Feldbeschreibung behält der Schlauch ungefähr dieselbe Feldstärke und denselben Querschnitt, wenn sich seine Endpunkte voneinander entfernen. Im Bild der Bestandteile erzeugt die Dehnungsenergie mehr gluonische Struktur zwischen den Endpunkten.
+Ein gewöhnliches Gummiband enthält eine feste Zahl von Molekülen; beim Auseinanderziehen entfernen sie sich voneinander, bis das Material reißt. Man stelle sich stattdessen vor, bei jeder entstehenden Lücke würde ein neues Molekül eingefügt. Die Dichte entlang des Bandes könnte konstant bleiben, während es länger würde. Das ist die beabsichtigte Analogie zum Gluonenfeld: Der Schlauch gewinnt an Länge, statt dünner zu werden und schließlich zu reißen.
+
+\begin{classroomqa}
+\audiencequestion{Wäre eine Saite, aus der ein Elektron besteht, ebenfalls aus Gluonen aufgebaut?\lecturetimestamp{00:28:08}}
+\lecturerresponse{Daraus folgt nichts dergleichen. Die hadronische Saite ist ein QCD-Objekt auf der Skala eines Protons. Eine hypothetische fundamentale Saite, die für die Quantengravitation relevant wäre, läge nahe der sehr viel kleineren Planck-Skala; es gibt hier keinen Hinweis darauf, dass ein Elektron eine hadronische Gluonensaite ist. Bemerkenswert ist, dass verwandte Mathematik auf beiden Skalen auftrat, nicht, dass die physikalischen Objekte identisch wären.}
+\end{classroomqa}
+
+Versuche, aus dem hadronischen Bild eine vollständige wechselwirkende Stringtheorie zu entwickeln, waren vielversprechend, ergaben aber nicht ganz die gewünschte Theorie der Hadronen. Das mathematische Modell enthielt wiederholt ein masseloses Teilchen mit Spin zwei. In einer hadronischen Theorie schien dieser Zustand eine unerwünschte Vorhersage zu sein; als Gravitationstheorie hatte er genau die Quantenzahlen des Gravitons. Joel Scherk und John Schwarz nahmen die entscheidende Umdeutung vor: Vielleicht sprach die Theorie von Quantengravitation statt von Hadronen. Die hadronischen und fundamentalen Anwendungen sind physikalisch verschieden, obwohl das frühe Problem der Hadronen den Weg zur Mathematik wies.
+
+\begin{classroomqa}
+\audiencequestion{Wie verlaufen die Flusslinien von einem positiven zu einem negativen Endpunkt?\lecturetimestamp{00:31:46}}
+\lecturerresponse{Sie verlassen die eine Quelle und treten in die andere ein, so wie magnetische Feldlinien vom Nordpol zum Südpol eines Stabmagneten verlaufen. Die entgegengesetzten Bezeichnungen der Endpunkte geben die Orientierung des Flusses an; auch ein Stabmagnet hat zwei entgegengesetzte Pole und nicht zwei Nordpole.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Saite kontinuierlich oder diskret?
+\lecturetimestamp{00:32:45}}
+\lecturerresponse{In der Quantentheorie ist diese Unterscheidung subtil. Das elektromagnetische Feld wird als kontinuierliches Feld dargestellt und besitzt zugleich diskrete Quanten. Ebenso kann man eine Saite kontinuierlich behandeln, während ihre Anregungen quantisiert sind. Je nach Fragestellung können beide Beschreibungen gültig sein.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bleibt der Schnitt durch eine Weltfläche eine Saite, wenn man den Winkel der Raumzeitscheibe ändert?
+\lecturetimestamp{00:34:20}}
+\lecturerresponse{Ja. Eine Änderung des Gleichzeitigkeitsschnitts ist eine Lorentz-Transformation. Der neue Schnitt schneidet die Fläche in einer Saite, die sich in einem anderen Bewegungszustand befindet. Auch eine Saite, deren Schwerpunkt in Ruhe ist, ist intern nicht bewegungslos; sie kann schwingen. ``In Ruhe'' bezieht sich nur auf ihren Schwerpunkt.}
+\end{classroomqa}
+
+\section{Zwei Entwicklungen der relativistischen Energie}
+
+Eine direkte relativistische Beschreibung eines ausgedehnten, schwingenden Objekts ist umständlich. Zweckmäßig ist es, ein Bezugssystem zu finden, in dem seine relevante Bewegung die Form gewöhnlicher nichtrelativistischer Mechanik hat. Beginnen wir mit einem einzelnen Teilchen. Nichtrelativistisch schreibt man
+
+\begin{equation}
+  E_{\mathrm{nr}}=\frac{\bm p^2}{2m}+B,
+  \label{eq:l01-nonrel-energy}
+\end{equation}
+
+wobei \(B\) eine innere Energie oder Bindungsenergie bezeichnet, die unabhängig vom Gesamtimpuls ist. Für mehrere nicht wechselwirkende Teilchen addiert man sowohl die kinetischen Terme als auch die inneren Konstanten. Da nur Energiedifferenzen die Bewegung bestimmen, kann man häufig eine zustandsunabhängige additive Konstante weglassen.
+
+Die exakte relativistische Energie lautet
+
+\begin{equation}
+  E=\sqrt{\bm p^2c^2+m^2c^4}.
+  \label{eq:l01-rel-energy-c}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_05.png}
+  \caption{Die nichtrelativistische kinetische Energie und die exakte relativistische Wurzel; die Potenzen von \(c\) wurden im Verlauf der Diskussion korrigiert.}
+  \lectureframe{00:38:45}
+  \label{fig:l01-relativistic-energy-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Muss die relativistische Formel \(p^2c^2\) und \(m^2c^4\) enthalten statt der Potenzen, die anfangs an der Tafel standen?
+\lecturetimestamp{00:39:12}}
+\lecturerresponse{Ja. Die Dimensionskonsistenz legt den Ausdruck auf \(E^2=p^2c^2+m^2c^4\) fest. Nachdem wir den nichtrelativistischen Grenzfall wiedergewonnen haben, setzen wir \(c=1\); die Potenzen hier beizubehalten macht die Entwicklung jedoch anschaulich.}
+\end{classroomqa}
+
+Für \(p^2c^2\ll m^2c^4\) klammert man \(m^2c^4\) aus und verwendet
+\(\sqrt{1+\epsilon}\simeq1+\epsilon/2\):
+
+\begin{align}
+  E
+  &=mc^2\sqrt{1+\frac{p^2}{m^2c^2}}
+  \notag\\
+  &\simeq mc^2+\frac{p^2}{2m}.
+  \label{eq:l01-low-momentum-expansion}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_06.png}
+  \caption{Die Entwicklung für kleine Impulse ergibt die Ruheenergie plus den bekannten nichtrelativistischen kinetischen Term.}
+  \lectureframe{00:41:30}
+  \label{fig:l01-low-momentum-board}
+\end{figure}
+
+Diese Näherung setzt mehr voraus als einen langsam bewegten Schwerpunkt. Eine Box kann sich langsam fortbewegen, während sich die Teilchen darin nahezu mit Lichtgeschwindigkeit bewegen. Dann ist die innere Dynamik weiterhin relativistisch. Für den gewöhnlichen nichtrelativistischen Grenzfall müssen alle relevanten Teilchengeschwindigkeiten im gewählten Bezugssystem klein sein.
+
+Es gibt noch einen weiteren nützlichen Grenzfall. Man boostet das gesamte System entlang der \(z\)-Achse, bis jeder Bestandteil einen großen positiven longitudinalen Impuls \(P_{zi}\) hat. Ein ursprünglich rückwärts bewegter Bestandteil wird durch einen hinreichend großen Boost nach vorn getragen. Die Transversalimpulse und die Ruhemasse bleiben unverändert:
+
+\begin{equation}
+  P_{zi}\gg |p_{xi}|,|p_{yi}|,m_i,
+  \qquad
+  p_{\perp i}^2=p_{xi}^2+p_{yi}^2,
+\end{equation}
+
+wobei von jetzt an \(c=1\) gilt. Für große Werte von \(P_{zi}\) ergibt die Entwicklung
+
+\begin{align}
+  E_i
+  &=\sqrt{P_{zi}^2+p_{\perp i}^2+m_i^2}
+  \notag\\
+  &=P_{zi}\sqrt{1+\frac{p_{\perp i}^2+m_i^2}{P_{zi}^2}}
+  \notag\\
+  &\simeq P_{zi}
+  +\frac{p_{\perp i}^2+m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-one-particle}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_07.png}
+  \caption{Entwicklung der großen \(P_z\)-Wurzel, wobei Transversalimpuls und Masse als kleine Größen beibehalten werden.}
+  \lectureframe{00:46:45}
+  \label{fig:l01-large-pz-board}
+\end{figure}
+
+Für viele Bestandteile gilt:
+
+\begin{equation}
+  E\simeq
+  \sum_i P_{zi}
+  +\sum_i\frac{p_{\perp i}^2}{2P_{zi}}
+  +\sum_i\frac{m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-sum}
+\end{equation}
+
+Der erste Term ist der erhaltene longitudinale Gesamtimpuls. Er ist enorm, aber zugleich ein fester additiver Beitrag. Ihn beizubehalten oder abzuziehen ändert keine Energiedifferenz, genauso wenig wie eine andere erhaltene Größe als Summand im Hamiltonoperator die Bewegungsgleichungen ändern würde. Der dynamische Anteil lautet daher
+
+\begin{equation}
+  \begin{aligned}
+    H_{\perp}=E-P_z
+    &\simeq
+    \sum_i\left(
+      \frac{p_{\perp i}^2}{2P_{zi}}
+      +\frac{m_i^2}{2P_{zi}}
+    \right),\\
+    P_z&=\sum_iP_{zi}.
+  \end{aligned}
+  \label{eq:l01-transverse-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_08.png}
+  \caption{Die Zerlegung für viele Teilchen in den erhaltenen longitudinalen Impuls, die kinetische Transversalenergie und massenabhängige innere Terme.}
+  \lectureframe{00:49:16}
+  \label{fig:l01-energy-sum-board}
+\end{figure}
+
+\section{Der unendliche Impulsrahmen}
+
+Der soeben betrachtete Grenzfall wurde historisch unendlicher Impulsrahmen genannt und wird heute gewöhnlich mit Lichtkegelkoordinaten formuliert. Seine Bedeutung lässt sich unmittelbar am Hamiltonoperator ablesen. In der Quantenmechanik gilt:
+
+\begin{equation}
+  i\hbar\frac{\partial}{\partial t}\ket{\psi}=H\ket{\psi}.
+  \label{eq:l01-time-evolution}
+\end{equation}
+
+Alle nichttrivialen Terme in \(H_{\perp}\) skalieren wie \(1/P_z\). Mit zunehmendem Boost werden die Energieaufspaltungen kleiner, und Änderungen laufen langsamer ab. Das ist Zeitdilatation. Ein radioaktives System scheint langsamer zu zerfallen, wenn es stark geboostet ist; man kann dies ausgleichen, indem man es proportional länger beobachtet. Die Dynamik verschwindet dadurch nicht. Ihre Zeitskala wird verändert.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_09.png}
+  \caption{Die Tafel setzt die reduzierte Energie mit dem Hamiltonoperator gleich, der die verlangsamte zeitliche Entwicklung des geboosteten Systems erzeugt.}
+  \lectureframe{00:52:57}
+  \label{fig:l01-hamiltonian-board}
+\end{figure}
+
+Der Transversalterm hat genau die nichtrelativistische Form \(p^2/(2m)\), doch die Rolle der Masse übernimmt \(P_z\). Das ist physikalisch sinnvoll: Ein größerer longitudinaler Impuls erschwert es, ein Teilchen seitwärts abzulenken, und wirkt deshalb als transversale Trägheit. Der Term \(m_i^2/(2P_{zi})\) hängt nicht vom zweidimensionalen Bewegungszustand ab und spielt daher die Rolle einer inneren Energie oder Bindungsenergie. Die relativistische Bewegung in drei Raumdimensionen ist zu einer nichtrelativistisch anmutenden Bewegung in den beiden zum Boost senkrechten Dimensionen geworden.
+
+Damit ist die Voraussetzung dafür gegeben, ein einfaches Modell aus Massen und Federn für eine relativistische Saite zu verwenden. Das Modell behauptet nicht, dass sich die Saite in ihrem Ruhesystem langsam bewegt. Es verwendet das Bezugssystem, in dem die Transversaldynamik die erforderliche nichtrelativistische Struktur hat.
+
+\section{Eine offene Saite aus Perlen und Federn}
+
+Wir betrachten eine offene Saite, also eine Saite mit zwei Endpunkten. Später kann etwas an diesen Endpunkten befestigt werden; hier geht es jedoch um die Saite selbst. Wir nähern sie durch Perlen an den transversalen Positionen \(\bm X_i(t)=(X_i(t),Y_i(t))\) an, die mit identischen Federn verbunden sind. Ein diskreter Hamiltonoperator lautet
+
+\begin{equation}
+  H_N=\sum_{i=1}^{N}
+  \left[
+    \frac{\mu_N}{2}\dot{\bm X}_i^{\,2}
+    +\frac{k_N}{2}
+      \left(\bm X_{i+1}-\bm X_i\right)^2
+  \right].
+  \label{eq:l01-discrete-string}
+\end{equation}
+
+Der kinetische Term allein ließe die Perlen auseinanderfliegen. Erst der Hooke-Term zwischen nächsten Nachbarn macht aus ihnen eine Saite.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{lecture_01_figure_10.png}
+  \caption{Die erste Perlen-Feder-Skizze einer offenen Saite mit zwei transversalen Koordinaten.}
+  \lectureframe{01:00:30}
+  \label{fig:l01-bead-chain-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \foreach \x in {0,...,8} {
+      \fill[blue!65!black] ({0.85*\x},0) circle (0.09);
+    }
+    \foreach \x in {0,...,7} {
+      \draw[decorate,decoration={zigzag,segment length=4pt,amplitude=2pt}]
+        ({0.85*\x+0.10},0) -- ({0.85*\x+0.75},0);
+    }
+    \draw[->] (3.4,0.15) -- (3.4,1.25) node[above] {$\bm X_i(t)$};
+    \draw[<->] (0,-0.65) -- (6.8,-0.65)
+      node[midway,below] {$0\leq\sigma\leq\pi$};
+  \end{tikzpicture}
+  \caption{Diskretisierung als Regulator für die offene Saite. Perlenmasse und Federkonstante skalieren mit dem Abstand, bevor der Kontinuumsgrenzfall gebildet wird.}
+  \label{fig:l01-bead-chain-redraw}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_11.png}
+  \caption{Die diskreten kinetischen und Hooke-Terme zusammen, noch vor dem Kontinuumsgrenzfall.}
+  \lectureframe{01:01:30}
+  \label{fig:l01-discrete-energy-board}
+\end{figure}
+
+Mit zunehmender Zahl der Perlen muss jede Perlenmasse \(\mu_N\) gegen null gehen, damit die Saite insgesamt eine endliche Trägheit behält. Zugleich muss die Federkonstante \(k_N\) wachsen. Ein langes Stück Gummi lässt sich bei gleicher Dehnung leichter auseinanderziehen als ein winziges Stück desselben Materials. Näher zusammenrückende Punkte müssen daher steifer verbunden sein, wenn das Kontinuumsmaterial dasselbe bleiben soll.
+
+Wir führen eine Koordinate \(\sigma\) entlang der Saite ein. Ihr Zahlenbereich ist eine Konvention. Die Wahl
+
+\begin{equation}
+  0\leq\sigma\leq\pi
+\end{equation}
+
+ist zweckmäßig, weil sich eine geschlossene Saite später von \(0\) bis \(2\pi\) parametrisieren lässt. Die Summe wird zu einem Integral, und die Differenz zwischen benachbarten Punkten zu einer Ableitung:
+
+\begin{equation}
+  \sum_i\longrightarrow\int_0^\pi d\sigma,
+  \qquad
+  \bm X_{i+1}-\bm X_i
+  \longrightarrow
+  \partial_\sigma\bm X.
+  \label{eq:l01-continuum-replacements}
+\end{equation}
+
+Nach Absorption der abstandsabhängigen Konstanten in die Normierung von \(t\), \(\sigma\) und \(\bm X\) hat der Hamiltonoperator im Kontinuum die Form
+
+\begin{equation}
+  H_{\mathrm{string}}=
+  \frac12\int_0^\pi d\sigma
+  \left[
+    \left(\partial_t\bm X\right)^2
+    +\left(\partial_\sigma\bm X\right)^2
+  \right].
+  \label{eq:l01-continuum-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_12.png}
+  \caption{Der Übergang auf der Tafel von der Summe über die Perlen zum Integral \(\int_0^\pi d\sigma\), wobei die Differenz benachbarter Punkte durch \(\partial_\sigma\bm X\) ersetzt wird.}
+  \lectureframe{01:05:00}
+  \label{fig:l01-continuum-board}
+\end{figure}
+
+Der erste Term ist die kinetische Energie in den beiden transversalen Richtungen. Der zweite beschreibt die Dehnung entlang der Saite. Beide Terme haben ein positives Vorzeichen, denn es handelt sich um den Hamiltonoperator. In der Lagrangefunktion hätte der Potentialterm ein negatives Vorzeichen. Die genauen Koeffizienten hängen von den Konventionen ab und wurden an dieser Stelle nicht festgelegt; entscheidend ist die Struktur aus kinetischem Term und Dehnungsterm.
+
+Wir trennen die Schwerpunktbewegung von der Relativbewegung. Werden alle Punkte um denselben Betrag verschoben, bewegt sich das Teilchen als Ganzes. Schwingungen, Biegungen und relative Dehnungen sind innere Bewegungen. Ein Proton, ein Atom oder jedes andere zusammengesetzte Objekt kann als Teilchen bezeichnet werden, obwohl sich seine Bestandteile intern bewegen. In dieser Hinsicht verhält sich die Saite nicht anders.
+
+\section{Warum der Hamiltonoperator das Quadrat der Masse misst}
+
+Bei einem langsam bewegten Objekt ist die Ruheenergie proportional zu seiner Masse. In der Beschreibung im unendlichen Impulsrahmen tritt der innere Beitrag dagegen als \(M^2/(2P_z)\) auf. Sobald der gemeinsame longitudinale Impuls und die damit verbundene Zeitskalierung festgelegt sind, ist der innere Hamiltonoperator der Saite proportional zum invarianten Quadrat der Masse des gesamten Objekts:
+
+\begin{equation}
+  H_{\mathrm{int}}\propto M^2.
+  \label{eq:l01-hint-mass-squared}
+\end{equation}
+
+\editorialnote{Genauer ergibt sich aus der Lichtkegelkinematik eine invariante Beziehung der Form \(M^2=2P^+P^- - \bm P_\perp^2\). Im transversalen Schwerpunktsystem und bei festem \(P^+\) ist der Lichtkegel-Hamiltonoperator \(P^-\) daher proportional zu \(M^2\). In der Vorlesung werden diese Normierungsdetails unterdrückt; für das Argument genügt die Proportionalität.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_13.png}
+  \caption{Die Tafel setzt die innere Energie der Saite mit dem Quadrat der Masse des vollständigen Saitenzustands gleich.}
+  \lectureframe{01:10:30}
+  \label{fig:l01-mass-squared-board}
+\end{figure}
+
+Eine schwingende Saite ist eine Ansammlung gekoppelter Oszillatoren. Ihre vollständige Quantisierung wird auf später verschoben, doch die wichtige spektrale Eigenschaft ist bereits erkennbar. Die Energien harmonischer Oszillatoren steigen in diskreten Stufen an. Da diese inneren Energien zu \(M^2\) beitragen, führen Saitenanregungen auf natürliche Weise zu diskreten Stufen des quadrierten Massenwerts. Genau diese Struktur kündigten die Regge-Diagramme zu Beginn an.
+
+\begin{classroomqa}
+\audiencequestion{Ist \(M\) die Masse der gesamten Saite, und würde eine Verdopplung dieser Masse den entsprechenden Beitrag zu \(M^2\) vervierfachen?
+\lecturetimestamp{01:12:10}}
+\lecturerresponse{Ja. \(M\) ist die Ruhemasse des vollständigen Saitenzustands, einschließlich Schwingungen, Dehnung und aller sonstigen inneren Beiträge. Der effektive Hamiltonoperator im geboosteten System ist proportional zu \(M^2\); ein Zustand mit doppelter Masse hat daher den vierfachen Wert des quadrierten Massenwerts.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie kann diese Beschreibung ein Photon einschließen, dessen Ruhemasse null ist?
+\lecturetimestamp{01:12:52}}
+\lecturerresponse{Ein masseloser Zustand entspricht \(M=0\). Wie sich die positiven Beiträge der Oszillatoren zu einem solchen Zustand verbinden können, ist eine wichtige Frage der quantisierten Theorie und wird hier durch das klassische Modell nicht beantwortet. An dieser Stelle bezeichnet \(M\) lediglich die gesamte Ruhemasse; die Quantenmechanik wurde noch nicht eingeführt.}
+\end{classroomqa}
+
+Nun dehnen wir eine ruhende Saite gleichmäßig auf die physikalische Länge \(L\). Der kinetische Term verschwindet, und über das Parameterintervall der Länge \(\pi\),
+
+\begin{equation}
+  \left|\partial_\sigma\bm X\right|\simeq\frac{L}{\pi}.
+\end{equation}
+
+Folglich,
+
+\begin{align}
+  H_{\mathrm{stretch}}
+  &\propto
+  \int_0^\pi d\sigma
+    \left(\partial_\sigma\bm X\right)^2
+  \notag\\
+  &\simeq
+  \pi\left(\frac{L}{\pi}\right)^2
+  \propto L^2.
+  \label{eq:l01-hooke-l2}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_14.png}
+  \caption{Die gleichmäßig gedehnte Konfiguration, anhand derer \(H_{\mathrm{stretch}}\propto L^2\) und damit \(M\propto L\) hergeleitet werden.}
+  \lectureframe{01:15:30}
+  \label{fig:l01-length-relation-board}
+\end{figure}
+
+Dies entspricht einem Hooke’schen Gesetz für die effektive transversale Mechanik. Die Größe auf der linken Seite ist jedoch proportional zu \(M^2\), nicht zu \(M\). Daraus folgt:
+
+\begin{equation}
+  M^2\propto L^2,
+  \qquad
+  M\propto L.
+  \label{eq:l01-mass-length}
+\end{equation}
+
+Im Ruhesystem beträgt die Energie \(E_{\mathrm{rest}}=M\), in Einheiten mit \(c=1\). Bezeichnen wir die Proportionalitätskonstante mit der Saitenspannung \(T\),
+
+\begin{equation}
+  E_{\mathrm{rest}}=TL.
+  \label{eq:l01-string-tension}
+\end{equation}
+
+Das Ergebnis stimmt mit dem Bild eines Flussröhrenmodells überein. Ein homogenes elektrisches oder magnetisches Feld besitzt eine konstante Energiedichte. Ist sein Fluss auf eine Röhre mit konstantem Querschnitt beschränkt, trägt jede zusätzliche Längeneinheit denselben Energiebetrag bei. Äquivalent dazu hat ein Konstituentenbild, in dem neu geöffnete Zwischenräume jeweils mit neuen Freiheitsgraden gefüllt werden, eine konstante Energie pro Längeneinheit. Die Saitenspannung ist diese Energie pro Längeneinheit.
+
+Diese Schlussfolgerung ist indirekt. Sie behauptet nicht, dass ein beliebiges Gummiband, das auf relativistische Geschwindigkeiten gebracht wird, automatisch \(E=TL\) erhält. Die Argumentation geht von der transversalen nichtrelativistischen Beschreibung aus, die sich aus dem großen Boost ergibt, identifiziert deren innere Energie mit \(M^2\) und überträgt das Ergebnis erst anschließend zurück auf die Energie im Ruhesystem.
+
+\section{Dasselbe Objekt in zwei Bezugssystemen}
+
+Die Unterscheidung zwischen \(M\) und \(M^2\) geht leicht verloren; deshalb lohnt es sich, die beiden Entwicklungen nebeneinanderzustellen. Für \(c=1\) gilt:
+
+\begin{align}
+  E&=\sqrt{p^2+M^2}
+  \simeq M+\frac{p^2}{2M},
+  &&p\ll M,
+  \label{eq:l01-rest-expansion-again}\\
+  E&=\sqrt{P_z^2+M^2}
+  \simeq P_z+\frac{M^2}{2P_z},
+  &&P_z\gg M.
+  \label{eq:l01-boost-expansion-again}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_15.png}
+  \caption{Die nach der Unterbrechung wiederholte Entwicklung für kleine Impulse, in der die innere Ruheenergie als \(M\) gelesen wird.}
+  \lectureframe{01:28:00}
+  \label{fig:l01-rest-expansion-board-again}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_16.png}
+  \caption{Die komplementäre Entwicklung für große Impulse, in der die verbleibende Energie proportional zu \(M^2/(2P_z)\) ist.}
+  \lectureframe{01:31:00}
+  \label{fig:l01-boost-expansion-board-again}
+\end{figure}
+
+Die erste Entwicklung setzt die Ruheenergie mit der Masse und die gewöhnliche Trägheit mit \(M\) gleich. In der zweiten wird der erhaltene Term \(P_z\) abgezogen, die transversale Trägheit beträgt \(P_z\), und die innere Energie wird durch \(M^2/(2P_z)\) dargestellt. In beiden Bezugssystemen bleibt die Masse proportional zur Saitenlänge. Was sich ändert, ist, welche Funktion der Masse im verbleibenden Hamiltonoperator auftritt.
+
+\begin{classroomqa}
+\audiencequestion{Ein Lorentz-Boost sollte die Physik nicht ändern. Warum scheint die geboostete Saite einem anderen Energiegesetz zu folgen?
+\lecturetimestamp{01:25:35}}
+\lecturerresponse{Sie folgt keinem anderen physikalischen Gesetz. In beiden Beschreibungen gilt \(M\propto L\) und \(M^2\propto L^2\). Im Ruhesystem ist die relevante Energie \(M\); nach einem großen Boost wird der erhaltene Term \(P_z\) abgespalten, und der verbleibende Hamiltonoperator ist proportional zu \(M^2\). Der Boost ändert die zweckmäßige Beschreibung, nicht die invariante Beziehung zwischen Masse und Länge--.}
+\end{classroomqa}
+
+\section{Ein supraleitendes Modell des Confinements}
+
+Ein Supraleiter verdrängt das Magnetfeld aus seinem Inneren. Wird magnetischer Fluss durch einen hinreichend engen Kanal eingeschlossen, bevor das Material supraleitend wird, kann sich der Fluss nicht seitlich ausbreiten und bleibt in einer Röhre gefangen. Ein nützliches Gedankenexperiment besteht darin, eine schmale Bohrung durch eine Probe im normalleitenden Zustand zu treiben, einen langen Stabmagneten hindurchzustecken, die Probe abzukühlen und den Magneten anschließend herauszuziehen. Diese Anordnung ist schematisch und keine praktische Versuchsanleitung. Sie soll eine Flusslinie isolieren, deren Feldstärke und Energiedichte entlang ihrer Länge näherungsweise konstant sind.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_17.png}
+  \caption{Die Konstruktion einer supraleitenden Flusslinie und das entsprechende Bild des Confinements von Monopolen und Antimonopolen.--}
+  \lectureframe{01:35:30}
+  \label{fig:l01-superconductor-board}
+\end{figure}
+
+Nehmen wir als weiteres Gedankenexperiment an, ein magnetischer Monopol und ein Antimonopol ließen sich im supraleitenden Medium platzieren und voneinander entfernen. Der magnetische Fluss zwischen ihnen würde in eine Röhre zusammengedrückt. Da jede Längeneinheit der Röhre dieselbe Energie trägt,
+
+\begin{equation}
+  V(R)=T_{\mathrm{flux}}R.
+  \label{eq:l01-linear-confinement}
+\end{equation}
+
+Die Kraft \(F=-dV/dR\) hat einen konstanten Betrag. Das Paar weiter auseinanderzuziehen wird zunehmend aufwendiger, sodass es eingeschlossen ist. Dieses Verhalten soll für Quarks in einem Hadron erklärt werden.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[blue!8,rounded corners=5pt] (-4,-1.35) rectangle (4,1.35);
+    \node[blue!55!black] at (0,1.65) {superconducting medium};
+    \fill[red!75!black] (-2.8,0) circle (0.17);
+    \fill[blue!70!black] (2.8,0) circle (0.17);
+    \node[below] at (-2.8,-0.22) {monopole};
+    \node[below] at (2.8,-0.22) {antimonopole};
+    \fill[orange!18,rounded corners=7pt] (-2.65,-0.42) rectangle (2.65,0.42);
+    \draw[orange!85!black,thick,rounded corners=7pt]
+      (-2.65,-0.42) rectangle (2.65,0.42);
+    \foreach \y in {-0.22,0,0.22}
+      \draw[->,orange!85!black] (-2.55,\y) -- (2.55,\y);
+    \draw[<->] (-2.8,-1.00) -- (2.8,-1.00) node[midway,below] {$R$};
+  \end{tikzpicture}
+  \caption{Flusskonfinierung erzeugt eine homogene Röhre und ein lineares Potential \(V(R)=T_{\mathrm{flux}}R\).}
+  \label{fig:l01-superconductor-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was übernimmt im Hadron die Rolle des supraleitenden Mediums?\lecturetimestamp{01:36:57}}
+\lecturerresponse{Die vorgeschlagene Analogie vertauscht die elektrischen und magnetischen Rollen. Ein gewöhnliches supraleitendes Kondensat ist elektrisch geladen und schließt magnetischen Fluss ein. Im Bild eines Dualsupraleiters in der QCD schließt ein Kondensat chromomagnetischer Objekte die chromoelektrische Ladung der Quarks ein. Solche Objekte treten nicht als isolierte Teilchen auf, da sie als im Vakuum kondensiert dargestellt werden.}
+\end{classroomqa}
+
+\editorialnote{Die Beschreibung durch einen Dualsupraleiter ist ein einflussreicher Mechanismus zur Erklärung des Confinements und wird hier in der historischen Sprache der Vorlesung dargestellt. Sie ist als physikalisches Bild des QCD-Vakuums zu verstehen, nicht als vollständige Herleitung des Confinements aus ersten Prinzipien.}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Energie proportional zur Länge eine allgemeine Regel für jede gewöhnliche Saite, die hochrelativistisch wird?\lecturetimestamp{01:38:10}}
+\lecturerresponse{Nein. Zunächst bräuchte man eine konsistente relativistische Theorie des betreffenden Materials, und sein Verhalten hinge von den Einzelheiten ab. Eine lineare Energiezunahme ist typisch für eine Konfiguration, deren Dichte beim Verlängern konstant bleibt, oder für Fluss, der sich nicht transversal ausbreiten kann. Beim Auseinanderziehen entstehen mehr Konstituenten oder mehr gleichmäßig feldgefüllte Länge, statt lediglich den Abstand einer festen Anzahl von Molekülen zu vergrößern.}
+\end{classroomqa}
+
+\section{Transversale Freiheitsgrade und die Größe eines Teilchens}
+
+Die Lichtkegel-Konstruktion beschreibt die Saite direkt durch ihre transversalen Koordinaten. Es gibt keinen eigenständigen, frei festlegbaren longitudinalen Oszillator, der jedem transversalen Oszillator entspräche. Diese Reduktion um eine direkte räumliche Dimension ist ein bemerkenswertes Merkmal des Formalismus; die vollständige Theorie muss dennoch die Lorentz-Invarianz erfüllen.
+
+\begin{classroomqa}
+\audiencequestion{Was geschieht mit der verbleibenden Bewegung entlang der \(z\)-Richtung?
+\lecturetimestamp{01:40:10}}
+\lecturerresponse{In der Lichtkegelbeschreibung wird longitudinale Bewegung nicht als unabhängiger Freiheitsgrad eingeführt. Die physikalischen Schwingungen werden transversal beschrieben, während Zwangsbedingungen die longitudinalen Informationen festlegen. Diese Reduktion ähnelt dem Gedanken, dass gravitative Systeme möglicherweise eine Beschreibung mit einer direkten Dimension weniger zulassen, auch wenn dieser Zusammenhang hier nicht hergeleitet wird.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie viele Punkte sind in den Regge-Diagrammen tatsächlich bekannt?
+\lecturetimestamp{01:41:15}}
+\lecturerresponse{Die genaue Höchstzahl hängt von der Familie ab; grob sind es etwa sieben. Die Folge ist experimentell nicht endlos. Entscheidend ist, dass die bekannten Punkte kein deutliches Versagen oder Zerfallsende zeigen, wie man es von gewöhnlichen makroskopischen Materialien kennt.}
+\end{classroomqa}
+
+Die Hadronenphänomenologie lieferte die historische Motivation, doch die mathematische Stringtheorie muss Hadronen nicht in jedem Detail reproduzieren. Sobald der Formalismus entwickelt ist, fragt man, was er tatsächlich beschreibt. Sein masseloser Spin-2-Zustand und weitere Eigenschaften weisen eher auf die Gravitation hin.
+
+Der scheinbare Gegensatz zwischen Hadronen und Elektronen lässt sich anhand der Energie einer starren Rotation quantifizieren:
+
+\begin{equation}
+  E_{\mathrm{rot}}=\frac{J^2}{2I},
+  \qquad
+  I\sim MR^2.
+  \label{eq:l01-rotational-energy}
+\end{equation}
+
+Der Drehimpuls ist quantisiert. Schreiben wir \(J^2\) schematisch als \(\hbar^2 n^2\), so ist der erste Rotationsschritt von der Größenordnung
+
+\begin{equation}
+  \Delta E_{0\to1}\sim\frac{\hbar^2}{2I}.
+  \label{eq:l01-first-rotational-step}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_18.png}
+  \caption{Die Abschätzung über das Trägheitsmoment für die erste Rotationsanregung, \(\Delta E\sim\hbar^2/(2I)\).}
+  \lectureframe{01:44:00}
+  \label{fig:l01-rotational-board}
+\end{figure}
+
+Bei fester Masse bedeutet ein kleinerer Radius ein viel kleineres Trägheitsmoment und eine viel höhere Anregungsenergie. Hadronen sind im Maßstab ihrer inneren Dynamik groß, sodass eine Rotationsanregung etwa ein GeV kostet und bei Teilchenkollisionen zugänglich ist. Falls Elektronen eine räumliche Substruktur besitzen, muss deren Skala aufgrund experimenteller Schranken viel kleiner sein; Rotationsanregungen lägen dann weit jenseits der verfügbaren Energien. Am entgegengesetzten Extrem steht ein Basketball: Sein Trägheitsmoment ist so groß, dass ein Quant Drehimpuls eine unmerklich kleine Energie kostet. Rotations- oder Orbitalschritte in Atomen liegen zwischen diesen Extremen und haben häufig eine Größenordnung von Elektronenvolt.
+
+\begin{classroomqa}
+\audiencequestion{Könnte ein scheinbar elementares Elektron dennoch eine räumliche Struktur und Rotationsanregungen besitzen?\lecturetimestamp{01:42:04}}
+\lecturerresponse{Sie könnten sich nur bei sehr hohen Energien verbergen. Die Kosten für eine Einheit Drehimpuls skalieren wie \(1/I\), und es gilt \(I\sim MR^2\). Ein äußerst kleiner Radius verschiebt die erste Anregung daher auf der Massensquared-Darstellung sehr weit nach oben. Dass keine Elektronenanregungen beobachtet wurden, bedeutet entweder, dass das Elektron punktförmig ist, oder dass eine mögliche Kompositheitsskala viel kleiner ist, als heutige Experimente auflösen können.}
+\end{classroomqa}
+
+Das eingangs gezeigte Regge-Diagramm lässt sich nun dynamisch verstehen. Hadronen zeigen zugängliche Rotations- und Schwingungszustände, weil sie ausgedehnt sind. Die gleichen Schritte in ihrem Massenspektrum zum Quadrat sind das erwartete Kennzeichen, wenn ein Oszillator-Hamiltonoperator mit \(M^2\) identifiziert wird. Ihre näherungsweise lineare Energiezunahme mit der Länge ist das Kennzeichen einer Flussröhre mit konstanter Spannung. Spektroskopie, Streudualität, Weltflächengeometrie und Lichtkegelmechanik sind vier Beschreibungen derselben ordnenden Idee: eines ausgedehnten relativistischen Objekts, dessen natürliche innere Variable das Massenquadrat ist.
