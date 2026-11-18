@@ -1,0 +1,652 @@
+\chapter{局域性、連續態與動量}
+
+\lectureoverview{糾纏可以透過可逆動力學建立並解除；然而，當糾纏系統的一部分脫離我們的控制時，測量便會呈現有效不可逆性。這項區別引出一項精確的局域性檢驗：Bob 可以在自己的鄰域施加任意么正操作，但 Alice 的約化密度矩陣，以及她單獨能取得的所有統計量，都不會改變。接著，一個經典模擬的思想實驗將真正非經典的部分凸顯出來。單一自旋很容易模仿，中央電腦也能模仿一對糾纏粒子；但彼此分離的局域機器，若不透過不當通訊，或採用最終會失敗的貝爾局域隱變數模型，就無法重現所有糾纏關聯。接下來，本講從自旋轉向直線上的粒子。離散總和變成積分，克羅內克 delta 變成狄拉克 delta，波函數則成為無限維空間中的向量。以 \(x\) 相乘得到位置；微分算符是反厄米的；再乘以 \(-i\)，便得到厄米的動量算符。最後的計算 \([x,p]=i\hbar\) 將量子對易子與經典卜瓦松括號重新連結起來，並引向波包、傅立葉變換，以及 Schr\"odinger 演化。}
+
+\section{糾纏並非不可逆性}
+
+先從一項在討論測量時容易被忽略的區別談起。假設兩個自旋以乘積態進入，相互作用後分開，離開時成為糾纏態。糾纏必須永遠維持下去嗎？不必。這段相互作用是酉的，因此另一段適當的相互作用可以將它逆轉。我們可以反射兩個自旋，讓它們再次相遇，並安排一段逆向演化，使這對自旋回復為乘積態。沒有任何定律規定糾纏本身只會增加。
+
+當這對自旋中的一個被丟棄時，實際操作的情況就不同了。如果一個電子飛入不受控制的環境，留在附近的另一個電子仍與某些東西糾纏，但那些遺失的自由度已無法用來施行逆向操作。原則上，遠處的電子或許能被反射回來；實際上，它已經不在我們掌控之中。這就是測量\emph{對我們而言}不可逆的意思：關聯已擴散到我們無法控制的自由度中。
+
+\begin{classroomqa}
+\audiencequestion{兩個系統如果變得糾纏，之後還能解除糾纏嗎？}
+\lecturerresponse{可以。酉演化是可逆的。第二次相互作用可以實現第一次相互作用的逆操作，讓系統回復為乘積態。不可逆性來自相關自由度遭到丟棄，或被不受控制的環境吸收，而不是單由糾纏造成。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{那麼，為什麼測量完成後看起來會不可逆？}
+\lecturerresponse{因為被測量的系統已與儀器、觀察者，最終也與龐大的環境產生關聯。要逆轉完整狀態，就必須控制所有這些紀錄。微觀演化仍可能是酉的，但從觀察者的約化描述來看，這項操作已無法實行。}
+\end{classroomqa}
+
+\section{Alice 能取得的狀態}
+
+將複合系統分成 Alice 的自由度 \(a\) 與 Bob 的自由度 \(b\)，其純態係數為
+\begin{equation}
+\Psi(a,b)=\braket{a,b}{\Psi}.
+\end{equation}
+Alice 無法接觸 Bob 的實驗室，因此，她完整的局域描述一般不是波函數，而是約化密度矩陣
+\begin{equation}
+\rho_A(a',a)
+=
+\sum_b \Psi^*(a',b)\Psi(a,b).
+\label{eq:l8-reduced-density}
+\end{equation}
+求和消去了 Bob 的標記。留下的量對 Alice 各有一個 bra 指標和 ket 指標，並包含 Alice 完全在自己鄰域內進行實驗所能取得的所有機率分布。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_01.png}
+\caption{Alice 的約化密度矩陣，將聯合波函數對 Bob 的基底標記求和而得。}
+\lectureframe{00:04:34}
+\end{figure}
+
+此處的 Alice 鄰域與 Bob 鄰域應作廣義理解。各自的鄰域都可以包括儀器、磁場、技術人員，以及該觀察者能與之交互作用的其他自由度。局域性的主張並不是 Bob 不能改變自己的系統；他可以用許多方式改變它。主張的是：只要 Bob 身在遠處，他在局部所做的一切都不會改變方程~\eqref{eq:l8-reduced-density}。
+
+\section{Bob 的局域酉變換}
+
+先暫且不考慮 Alice，只描述 Bob 的操作。如果 Bob 改變磁場，或以其他方式改變局域哈密頓量，他的波函數係數會經歷酉變換，
+\begin{equation}
+\psi_M(b)
+=
+\sum_{b'}U_{bb'}\psi(b').
+\label{eq:l8-bob-unitary}
+\end{equation}
+以複合系統的記號來說，Alice 的指標不受影響：
+\begin{equation}
+\Psi_M(a,b)
+=
+\sum_{b'}U_{bb'}\Psi(a,b').
+\label{eq:l8-composite-unitary}
+\end{equation}
+取複共軛後，ket 的變換便對應到相應的 bra 變換，
+\begin{equation}
+\Psi_M^*(a',b)
+=
+\sum_{b''}\Psi^*(a',b'')U^\dagger_{b''b}.
+\label{eq:l8-composite-bra}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_02.png}
+\caption{酉矩陣作用於 Bob 的 ket 指標，其厄米共軛矩陣則作用於相應的 bra 指標。}
+\lectureframe{00:12:54}
+\end{figure}
+
+現在重新計算 Alice 的密度矩陣：
+\begin{align}
+\rho_{A,M}(a',a)
+&=
+\sum_b\Psi_M^*(a',b)\Psi_M(a,b) \notag\\
+&=
+\sum_{b,b',b''}
+\Psi^*(a',b'')
+U^\dagger_{b''b}U_{bb'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')
+(U^\dagger U)_{b''b'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')\delta_{b''b'}\Psi(a,b') \notag\\
+&=
+\sum_{b'}\Psi^*(a',b')\Psi(a,b') \notag\\
+&=
+\rho_A(a',a).
+\label{eq:l8-locality-proof}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_03.png}
+\caption{黑板上的局域性計算：\(U^\dagger U\) 在 Alice 的約化態中化簡為單位矩陣。}
+\lectureframe{00:14:27}
+\end{figure}
+
+整個證明就在這個縮併運算中：
+\begin{equation}
+\sum_bU^\dagger_{b''b}U_{bb'}
+=(U^\dagger U)_{b''b'}
+=\delta_{b''b'}.
+\label{eq:l8-unitarity-contraction}
+\end{equation}
+這裡沒有用到任何因式分解的假設。方程~\eqref{eq:l8-locality-proof}無論聯合態是乘積態還是最大糾纏態，都成立。因此，每一個只涉及 Alice 的期望值，
+\begin{equation}
+\expect{L_A}
+=
+\operatorname{Tr}_A(\rho_A L_A),
+\end{equation}
+在 Bob 的局域酉變換下都保持不變。
+
+\begin{classroomqa}
+\audiencequestion{如果 Bob 對自己的自旋做了某些操作，為什麼這不算違反酉性？}
+\lecturerresponse{有所操作，不代表施加了非酉映射。Bob 可以轉動磁鐵、改變局域哈密頓量，或讓自己的自旋進動。這些都是一般的酉演化。它們會改變 Bob 自己的狀態和結果機率，但上面的計算表明，並不會改變 Alice 的約化態。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{因此，量子力學遵守局域性嗎？}
+\lecturerresponse{量子力學遵守此處所說的操作性局域性：Bob 只在自己的鄰域內操作，無法影響 Alice 可取得的測量統計。糾纏的聯合關聯仍是非經典的，但無法用來傳送可控制的訊號。}
+\end{classroomqa}
+
+\subsection{酉性為何重要}
+
+酉性並非可有可無。它提供了方程~\eqref{eq:l8-unitarity-contraction}中的單位矩陣。用先前的說法來看，酉性代表區別的守恆：兩個可區分的態向量經過可逆演化後仍然可區分。若 Bob 有哪怕稍微非酉的確定性演化，\(U^\dagger U\)就不會是單位矩陣。如此一來，Alice 的約化密度矩陣就可能立即改變，讓 Bob 得以超光速傳送訊息。
+
+這種緊密的關聯，是量子力學難以逐項修改的原因之一。改變演化定律，表面上遙遠的原理也可能跟著失效。局域性、機率守恆與態的可逆演化，都是同一套架構的組成部分。
+
+\begin{classroomqa}
+\audiencequestion{非酉操作如何能傳送超光速訊號？}
+\lecturerresponse{Bob 可以選擇是否施加這項操作。如果這個映射會改變 \(\rho_A\)，Alice 就能透過對一個系綜反覆進行局域測量，分辨 Bob 的兩種選擇。這項改變在沒有訊號從 Bob 傳來的情況下發生；酉性所帶來的抵消正是為了避免這種情況。}
+\end{classroomqa}
+
+\section{坍縮改變的是條件態，不是遠方的邊際分布}
+
+分束器的例子具體呈現了這種不安。一個單光子處於兩條路徑的疊加態，一條通往 Alice，另一條通往 Bob。如果 Alice 的探測器發出訊號，以此為條件的狀態便會把 Bob 那條路徑之後被探測到的振幅設為零。人們很容易因此說，Alice 瞬間改變了 Bob 那邊的光子。
+
+Bob 在沒有 Alice 的測量紀錄時能觀察到的情況則不同。在收到任何訊息之前，他必須對 Alice 所有可能的結果取平均。這個未經條件化的平均由他的約化密度矩陣描述，而約化密度矩陣不會改變。Alice 的探測結果會改變的是：得知結果後，哪個條件子系綜描述這次實驗；它不會改變 Bob 局域的邊際分布。
+\begin{equation}
+\rho_B
+\qquad\text{and}\qquad
+\rho_{B\mid A=\text{click}}
+\end{equation}
+兩者之間的差別，就是無訊號與可利用關聯之間的差別。
+
+\begin{classroomqa}
+\audiencequestion{一個探測器發出訊號時，另一條臂上的波函數不會瞬間坍縮為零嗎？}
+\lecturerresponse{以該探測結果為條件的狀態會改變，但遠方的觀察者必須等到一般訊息送達，才會知道這個條件。Bob 的未經條件化密度矩陣，以及所有局域平均統計，都保持不變。坍縮不能用來傳送訊息。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這種混淆是否部分源自把狀態與關於狀態的資訊混為一談？}
+\lecturerresponse{這種說法頗有啟發性，但仍不夠精確。具體來說，必須區分聯合態、約化態，以及以已報告結果為條件的狀態。把這三個數學對象分開，比只用「資訊」一詞試圖解決問題更穩妥。}
+\end{classroomqa}
+
+然而，愛因斯坦--—波多爾斯基--—羅森的困惑依然存在。單態讓我們能對\emph{整體}掌握最多資訊，但兩個組成部分各自都沒有純局域態。這與經典預期相反---—知道整體，卻不為各部分指定確定的純態---。這不是訊號傳遞效應，卻確實十分奇特。要更清楚地呈現這個特點，就把量子力學轉化成一個程式設計問題。
+
+\section{單一自旋的經典模擬器}
+
+在電腦螢幕上畫出一個自旋裝置。使用者可以調整裝置的方向，按下測量按鈕 \(M\)，並讀取 \(+1\) 或 \(-1\)。在古典電腦內部儲存兩個複振幅，
+\begin{equation}
+\alpha_u,\qquad \alpha_d,
+\qquad
+|\alpha_u|^2+|\alpha_d|^2=1.
+\label{eq:l8-one-spin-amplitudes}
+\end{equation}
+兩次測量之間，電腦對相應的 Schr\"odinger 方程進行積分。模擬磁場可以讓振幅像真實自旋態一樣精確地進動。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_04.png}
+\caption{單一自旋的模擬器：可調整方向的裝置和測量按鈕，連接到一台儲存兩個振幅的電腦。}
+\lectureframe{00:27:47}
+\end{figure}
+
+使用者按下 \(M\) 時，偽隨機數產生器會依照玻恩機率選出一個結果：
+\begin{equation}
+P(+1)=|\alpha_u|^2,
+\qquad
+P(-1)=|\alpha_d|^2.
+\label{eq:l8-one-spin-born}
+\end{equation}
+電腦顯示選出的正負號，然後更新狀態。結果為 \(+1\) 時，
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(1,0),
+\end{equation}
+結果為 \(-1\) 時，
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(0,1).
+\end{equation}
+接著，電腦從測量後的狀態繼續進行酉演化。如果使用者在按下 \(M\) 之前轉動裝置，電腦就會改變基底，並計算新軸方向所對應的機率。
+
+硬體不必具備任何量子特性。確定性的偽隨機演算法就足以產生一串對使用者看來隨機的數列。對單一自旋而言，這種經典模擬在操作上可以和實驗室中的實驗無從區分。
+
+\begin{classroomqa}
+\audiencequestion{測量按鈕有什麼作用？按下按鈕前經過的時間重要嗎？}
+\lecturerresponse{按鈕標示模擬器抽樣玻恩分布並更新所儲存振幅的時刻。等待期間，振幅依哈密頓量演化。如果哈密頓量為零，狀態就不隨時間改變；若有磁場，模擬的自旋會在測量前進動。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{由誰決定何時按下按鈕，以及裝置要朝哪個方向？}
+\lecturerresponse{在這個模型中，實驗者負責提供這些設定。模擬器持續追蹤狀態，並在按下按鈕時使用選定的軸向與測量時間。稍後的討論會再回到這項假設：測量設定可以獨立於預先製備的粒子對而選定。}
+\end{classroomqa}
+
+\section{兩個自旋：局域模擬失效之處}
+
+兩個自旋若處於乘積態，仍然很容易模擬。讓 Alice 的電腦儲存振幅 \(\alpha_u,\alpha_d\)，Bob 的另一台電腦儲存振幅 \(\beta_u,\beta_d\)。每台機器各自演化並測量自己的自旋。不需要通訊，因為聯合態係數可以因式分解：
+\begin{equation}
+\Psi(a,b)=\alpha_a\beta_b.
+\end{equation}
+
+任意的雙自旋態都需要四個係數，
+\begin{equation}
+\alpha_{uu},\qquad
+\alpha_{ud},\qquad
+\alpha_{du},\qquad
+\alpha_{dd},
+\qquad
+\sum_{a,b}|\alpha_{ab}|^2=1.
+\label{eq:l8-four-amplitudes}
+\end{equation}
+中央電腦可以儲存這些數值，並依四維的 Schr\"odinger 方程演化它們。任一觀察者進行測量時，中央機器會抽樣取得正確的邊際機率、捨去不相容的分量、將留下的分量重新歸一化，再從條件態繼續演化。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_05.png}
+\caption{中央模擬器儲存任意雙自旋態的四個振幅，並與兩個測量站保持連線。}
+\lectureframe{00:37:47}
+\end{figure}
+
+只要中央處理器仍與兩側相連，這種架構就能完美地模擬糾纏。問題出在把四個振幅複製到兩台機器，將機器分開、切斷連線，再讓它們各自使用隨機數產生器。對單態而言，
+\begin{equation}
+\ket{\Psi^-}
+=
+\frac{1}{\sqrt2}
+\left(
+\ket{u}_A\ket{d}_B-\ket{d}_A\ket{u}_B
+\right),
+\label{eq:l8-singlet}
+\end{equation}
+沿相同軸測量時，結果必須相反。各自獨立的隨機選擇卻可能產生 \(++\) 或 \(--\)，於是關聯消失，儘管兩台機器一開始都複製了聯合態係數。
+
+\begin{classroomqa}
+\audiencequestion{兩台機器能不能在分開前共用同一個隨機數來源？}
+\lecturerresponse{共用隨機變數可以強制產生某一個固定測量軸上指定的關聯。更深一層的貝爾問題要求找出一種局域方案，能對每一對獨立選定的軸重現量子關聯。預先載入的共享變數也屬於貝爾局域模型；不存在能重現完整量子關聯函數的這類模型。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這四個振幅彼此獨立嗎？}
+\lecturerresponse{它們是一個歸一化聯合態的四個座標，不是四個彼此獨立的局域態。對糾纏態而言，這些係數無法寫成 \(\alpha_a\beta_b\)。選定一個局域測量結果後，留下的聯合係數必須相干地更新；兩份互不相連的拷貝不會自動進行相互配合的更新。}
+\end{classroomqa}
+
+\subsection{隱藏連線代表什麼}
+
+一個同時連接兩個測量站的中央隨機數產生器可以協調輸出。在一般的經典模擬器中，這些連線也會是通訊通道。Bob 可以刻意傳送一個位元給 Alice；如果連線是瞬時的，這台機器就會違反局域性。
+
+量子系統不允許 Bob 這麼做。他能施行的局域變換都是酉變換，而約化密度矩陣的證明已表明，這類變換都不會改變 Alice 的邊際統計。因此，模擬器中的連線顯示的是一般經典記帳方式的架構不對，並不表示自然界存在可供使用的超光速纜線。
+
+\begin{classroomqa}
+\audiencequestion{經典模擬器所需的連線，代表物理上的非局域性嗎？}
+\lecturerresponse{這些連線代表樸素經典模型所需的額外協調。如果它們是一般可用的連線，就能傳送訊號，因此無法模擬量子實驗。較穩妥的結論是，局域經典模擬與量子力學具有不同的邏輯架構，而不是我們發現了隱藏的通訊連線。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果 Alice 和 Bob 各收到一個隨機位元，而兩個位元完全相關，有什麼奇怪之處？}
+\lecturerresponse{預先安排好的單一關聯並不奇怪；相同的信封或共用的隨機種子都能產生這種關聯。非經典之處在於：Alice 和 Bob 各自獨立地從互不相容的設定中選擇，所得關聯違反貝爾不等式，但每一方的局域結果仍是隨機的。}
+\end{classroomqa}
+
+這個思想實驗還包含一項值得明確說出的前提：測量設定被視為獨立選擇。Alice 和 Bob 各自決定何時按下按鈕、如何調整裝置方向，而這些選擇並未被來源變數暗中預先決定。一旦把觀察者及其決策機制納入同一個封閉物理系統，自由選擇的哲學論述就變得微妙。操作性的貝爾實驗將所需條件表述為測量獨立性，並安排時空分離、由外部產生的設定。本講不對形上學問題下定論，但保留這項實驗前提。
+
+\begin{classroomqa}
+\audiencequestion{把 Alice 和 Bob 納入物理系統，會不會形成漏洞？}
+\lecturerresponse{這會凸顯一項假設：測量設定不得事先與用來製備這對粒子的隱變數相關。自由意志可以討論，但可檢驗的陳述是測量獨立性。邏輯上可以放棄這項假設，但這麼做只是改變了解釋所需承擔的責任，並未提出一般的局域模擬。}
+\end{classroomqa}
+
+\section{從自旋到直線上的粒子}
+
+自旋帶領我們從有限維向量談到糾纏與局域性。現在讓希爾伯特空間擴大。考慮一個在無限長直線上運動的粒子。位置本徵態記為
+\begin{equation}
+\ket{x},
+\end{equation}
+這表示粒子的位置確定為 \(x\)。這些 ket 構成一組以連續變數標記的基底。一般狀態是這些 ket 的疊加，其位置表象波函數為
+\begin{equation}
+\psi(x)=\braket{x}{\Psi}.
+\label{eq:l8-position-wavefunction}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_06.png}
+\caption{位置表象波函數是抽象態在基底 ket \(\ket{x}\) 上的投影。}
+\lectureframe{00:56:51}
+\end{figure}
+
+此處以位置作為完整的基底標記。這並不表示經典狀態只需位置就能指定，也不表示粒子同時具有確定的位置和動量。它表示每個量子態向量都能在位置基底中展開。動量會以作用於位置表象係數的算符形式出現。
+
+現在，玻恩定則給出機率\emph{密度}：
+\begin{equation}
+\rho(x)=|\psi(x)|^2.
+\label{eq:l8-probability-density}
+\end{equation}
+對連續變數而言，粒子位於某個精確點的機率通常為零。在一段區間內找到粒子的機率為
+\begin{equation}
+P(x_1<x<x_2)
+=
+\int_{x_1}^{x_2}|\psi(x)|^2\,dx,
+\end{equation}
+歸一化條件則是
+\begin{equation}
+\int_{-\infty}^{\infty}|\psi(x)|^2\,dx=1.
+\label{eq:l8-continuous-normalization}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{經典粒子需要位置和動量兩者，為什麼只用位置就能構成完備基底？}
+\lecturerresponse{此處的完備性是指量子向量的表示方式。對所有 \(x\) 而言，係數 \(\psi(x)\) 完整決定了狀態；動量資訊則編碼在這些係數的相位與空間變化中。位置基底和動量基底彼此不同，稍後會用傅立葉變換將兩者連結；它們不是同時成立的經典標記。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(|\psi(x)|^2\)是粒子位於精確位置 \(x\) 的機率嗎？}
+\lecturerresponse{這是機率密度。乘上小區間 \(dx\)，可得粒子位於該區間內的近似機率；積分則可得粒子位於有限區域內的精確機率。即使粒子位於某個單獨點的機率為零，機率密度仍然可以非零。}
+\end{classroomqa}
+
+\section{連續正交歸一與 delta 函數}
+
+對離散正交歸一基底而言，
+\begin{equation}
+\braket{a}{a'}=\delta_{aa'}.
+\end{equation}
+連續基底的對應關係是
+\begin{equation}
+\braket{x}{x'}=\delta(x-x'),
+\label{eq:l8-delta-normalization}
+\end{equation}
+當 \(x\neq x'\) 時，狄拉克 delta 為零，且其總面積為一：
+\begin{equation}
+\int_{-\infty}^{\infty}\delta(x-x')\,dx'=1.
+\end{equation}
+可以將它想像成寬度為 \(\epsilon\)、高度為 \(1/\epsilon\)、面積固定的窄尖峰，然後取極限 \(\epsilon\to0\)。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{黑板上以窄尖峰表示狄拉克 delta：寬度 \(\epsilon\)、高度 \(1/\epsilon\)，面積為一。}
+\lectureframe{01:01:57}
+\end{figure}
+
+這種記號是分布意義下的簡寫。位置本徵 ket 不是一般平方可積希爾伯特空間中的可歸一化向量；它是廣義向量，其 delta 歸一化只有在積分下才有意義。基本的運算規則是
+\begin{equation}
+\int_{-\infty}^{\infty}
+\delta(x-x')f(x')\,dx'
+=f(x).
+\label{eq:l8-delta-sampling}
+\end{equation}
+delta 會取出自變數為零時的函數值。
+
+現在寫出連續展開式：
+\begin{equation}
+\ket{\Psi}
+=
+\int_{-\infty}^{\infty}
+\psi(x')\ket{x'}\,dx'.
+\label{eq:l8-continuous-expansion}
+\end{equation}
+以 \(\bra{x}\) 作用於此式，得到
+\begin{align}
+\braket{x}{\Psi}
+&=
+\int dx'\,\psi(x')\braket{x}{x'} \notag\\
+&=
+\int dx'\,\psi(x')\delta(x-x') \notag\\
+&=
+\psi(x).
+\label{eq:l8-expansion-consistency}
+\end{align}
+因此，展開式中的係數和投影 \(\braket{x}{\Psi}\) 是同一個函數，就像離散基底的情況一樣。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_08.png}
+\caption{連續態的展開式，以及用 \(\braket{x}{x'}=\delta(x-x')\) 所作的一致性檢查。}
+\lectureframe{01:07:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\psi(x')\)的作用和有限維向量中的振幅相同嗎？}
+\lecturerresponse{相同。基底標記 \(a'\) 變成連續標記 \(x'\)，總和變成積分，係數 \(\psi(a')\) 則變成函數 \(\psi(x')\)。底層的向量空間概念並未改變。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{狄拉克 delta 真的是在某一點取無限值的函數嗎？}
+\lecturerresponse{這種圖像有助於理解，但不能按字面解讀。嚴格來說，delta 是由它在積分中的作用所定義的分布，見方程~\eqref{eq:l8-delta-sampling}。面積為一的窄尖峰，是一列普通函數，其極限符合相同的取樣規則。}
+\end{classroomqa}
+
+\section{函數作為向量}
+
+先回顧離散情況下的內積計算：
+\begin{align}
+\braket{\psi}{\phi}
+&=
+\sum_{a',a}
+\psi^*(a')\braket{a'}{a}\phi(a) \notag\\
+&=
+\sum_a\psi^*(a)\phi(a).
+\label{eq:l8-discrete-inner-product}
+\end{align}
+複共軛係數屬於 bra，而正交歸一性使雙重總和化簡。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{以基底展開的離散內積；此時總和還未改寫成積分。}
+\lectureframe{01:11:11}
+\end{figure}
+
+將基底標記換成位置，並將總和換成積分：
+\begin{equation}
+\braket{\psi}{\phi}
+=
+\int_{-\infty}^{\infty}\psi^*(x)\phi(x)\,dx.
+\label{eq:l8-continuous-inner-product}
+\end{equation}
+交換兩個向量的位置，結果便取複共軛：
+\begin{equation}
+\braket{\phi}{\psi}
+=
+\braket{\psi}{\phi}^*,
+\end{equation}
+範數則為
+\begin{equation}
+\|\psi\|^2=\braket{\psi}{\psi}
+=\int |\psi(x)|^2\,dx.
+\end{equation}
+
+因此，函數就是向量：可以相加、乘以複數純量、歸一化，也可以透過內積配對。無限長直線上的物理波函數都是平方可積函數，因此會排除在無限遠處無界增長的函數。廣義基底函數 \(\delta(x-x_0)\) 雖不屬於該希爾伯特空間，仍是不可或缺的分布型基底向量。
+
+\begin{classroomqa}
+\audiencequestion{省略的積分上下限應該是 \(-\infty\) 和 \(+\infty\) 嗎？}
+\lecturerresponse{是，對無限長直線而言。這些積分上下限也說明，為什麼可歸一化的波函數必須充分衰減：否則總機率積分將不存在。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{黑板上的一個式子漏了一條豎線。這會改變它的意思嗎？}
+\lecturerresponse{那只是記號上的疏漏。基底態的內積是 \(\braket{a'}{a}\)，左側是 bra，右側是 ket。補上豎線後，就能看出這是內積，不再像含糊不清的行向量或列向量。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{大多數時候，幾乎所有事物都與環境糾纏在一起嗎？}
+\lecturerresponse{在現實的宏觀條件下，是的。系統不斷受到光子、空氣分子和其他自由度的撞擊，使相位資訊擴散到環境中。與環境糾纏是退相干的核心，也解釋了為什麼宏觀替代狀態之間的干涉難以觀察。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{分佈論的數學理論改變了物理學，還是只讓 delta 函數獲得了正當地位？}
+\lecturerresponse{它最直接的作用，是讓物理學家早已在使用的操作有了嚴謹的數學基礎。它為廣義函數提供精確的語言，也減少了物理學家與數學家之間的爭論；不過，它本身並未解決量子場論中所有與分佈有關的困難。}
+\end{classroomqa}
+
+\section{波函數上的線性算符}
+
+線性算符會將一個函數映射為另一個函數，同時保留疊加性：
+\begin{equation}
+L(c_1\psi+c_2\phi)
+=
+c_1L\psi+c_2L\phi.
+\end{equation}
+可觀測量必須以厄米算符表示。用目前的記號來說，條件是
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{L\phi}{\psi},
+\label{eq:l8-hermitian-condition}
+\end{equation}
+或者等價地
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{\psi}{L\phi}^*.
+\end{equation}
+對於無界算符，這項敘述還涉及定義域與邊界條件；以下積分都假設波函數使邊界項消失。
+
+\subsection{位置算符以乘法作用}
+
+最簡單的算符是以座標乘上波函數：
+\begin{equation}
+(x\psi)(x)=x\psi(x).
+\label{eq:l8-position-operator}
+\end{equation}
+它是線性的，而且
+\begin{align}
+\braket{\phi}{x\psi}
+&=
+\int dx\,\phi^*(x)x\psi(x), \notag\\
+\braket{x\phi}{\psi}
+&=
+\int dx\,[x\phi(x)]^*\psi(x) \notag\\
+&=
+\int dx\,\phi^*(x)x\psi(x),
+\end{align}
+因為 \(x\) 是實數。因此，以 \(x\) 相乘的算符是厄米算符，代表位置這個可觀測量。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_10.png}
+\caption{位置算符的厄米性檢驗：此算符以實變數 \(x\) 乘上波函數。}
+\lectureframe{01:26:47}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{在 \(x\psi(x)\) 中，\(x\) 是算符，還是只是一個實數？}
+\lecturerresponse{在每個點上，它都是實座標值；但將整個函數 \(\psi(x)\) 映射為新函數 \(x\psi(x)\) 的規則才是算符。它是實數，正是厄米性檢驗中的兩個內積會相等的原因。}
+\end{classroomqa}
+
+\subsection{微分算符是反厄米的}
+
+考慮微分算符
+\begin{equation}
+D=\frac{d}{dx}.
+\end{equation}
+它是線性的，但分部積分給出
+\begin{align}
+\braket{\phi}{D\psi}
+&=
+\int dx\,\phi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+\left[\phi^*(x)\psi(x)\right]_{-\infty}^{\infty}
+-
+\int dx\,\frac{d\phi^*}{dx}\psi(x) \notag\\
+&=
+-\braket{D\phi}{\psi},
+\label{eq:l8-derivative-adjoint}
+\end{align}
+其中邊界項為零。因此
+\begin{equation}
+D^\dagger=-D.
+\end{equation}
+微分算符是反厄米的，而非厄米的。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_11.png}
+\caption{分部積分將微分算符從一個波函數移到另一個波函數，並帶出關鍵的負號。}
+\lectureframe{01:32:30}
+\end{figure}
+
+乘上 \(-i\)：
+\begin{equation}
+p=-i\frac{d}{dx}.
+\label{eq:l8-momentum-natural-units}
+\end{equation}
+複共軛會將 \(-i\) 變成 \(+i\)，而分部積分又帶來一個負號。兩個負號相消，因此 \(p^\dagger=p\)。恢復單位後，
+\begin{equation}
+p=-i\hbar\frac{d}{dx}.
+\label{eq:l8-momentum-operator}
+\end{equation}
+
+期望值清楚顯示其實數性：
+\begin{align}
+\expect{p}_\psi
+&=
+-i\int dx\,\psi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+i\int dx\,\frac{d\psi^*}{dx}\psi(x) \notag\\
+&=
+\expect{p}_\psi^*.
+\label{eq:l8-momentum-expectation-real}
+\end{align}
+任何等於自身複共軛的數都是實數；可觀測量的期望值也必須是實數。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_12.png}
+\caption{動量期望值在分部積分前後的形式；兩者互為複共軛，且彼此相等。}
+\lectureframe{01:39:44}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{為什麼含有 \(i\) 的算符能代表實可觀測量？}
+\lecturerresponse{厄米性關乎內積下的整個算符，而不是座標表示式中的每個符號是否為實數。因子 \(i\) 抵消了分部積分移動微分算符時產生的負號，因此所有期望值都是實數。}
+\end{classroomqa}
+
+\section{正則對易關係}
+
+再做一項計算，就能看出方程式~\eqref{eq:l8-momentum-operator}中的算符為何值得注意。在 \(\hbar=1\) 的單位制下，先作用 \(x\)，再作用 \(p\)：
+\begin{align}
+(px\psi)(x)
+&=
+-i\frac{d}{dx}\bigl(x\psi(x)\bigr) \notag\\
+&=
+-i\psi(x)-ix\frac{d\psi}{dx}.
+\label{eq:l8-px}
+\end{align}
+將作用順序反過來：
+\begin{equation}
+(xp\psi)(x)
+=
+-ix\frac{d\psi}{dx}.
+\label{eq:l8-xp}
+\end{equation}
+以方程式~\eqref{eq:l8-px}減去方程式~\eqref{eq:l8-xp}，
+\begin{equation}
+\bigl([x,p]\psi\bigr)(x)
+=
+\bigl(xp-px\bigr)\psi(x)
+=
+i\psi(x).
+\end{equation}
+由於這對算符定義域中的每個波函數都成立，
+\begin{equation}
+[x,p]=i,
+\end{equation}
+恢復單位後，則為
+\begin{equation}
+[x,p]=i\hbar.
+\label{eq:l8-canonical-commutator}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_13.png}
+\caption{完整的算符論證：若對每個波函數都有 \(([x,p]-i)\psi=0\)，則 \([x,p]=i\)。}
+\lectureframe{01:46:24}
+\end{figure}
+
+經典力學中的對應關係是
+\begin{equation}
+\{x,p\}_{\mathrm{PB}}=1.
+\end{equation}
+狄拉克當年的推理方向與此處的推導相反。他從反對稱泊松括號與對易子的代數相似性出發，假設兩者有如下對應關係：
+\begin{equation}
+[A,B]\longleftrightarrow i\hbar\{A,B\}_{\mathrm{PB}},
+\end{equation}
+接著推論，動量算符必須與位置滿足正則對易關係。這裡則是先修正微分算符不具厄米性的問題，從而得到 \(-i\,d/dx\)，之後才發現相同的代數關係。
+
+\begin{classroomqa}
+\audiencequestion{僅憑對易關係，就能證明 \(-i\hbar\,d/dx\) 代表物理動量嗎？}
+\lecturerresponse{這是有力的證據，但還不足以完整確認它的物理意義。我們仍須證明此算符能生成空間平移；存在平移對稱性時，其期望值會守恆；此外，在適當的非相對論系統中，波包會以群速度 \(\expect{p}/m\) 運動。}
+\end{classroomqa}
+
+\section{接下來的內容}
+
+從自旋轉向粒子的過程，保留了原有架構，只是尺度改變了。連續標記的基底取代了有限數量的基底向量。求和變成積分，克羅內克 delta 變成狄拉克 delta，列向量則變成平方可積函數。位置以乘法作用，動量則以微分作用。
+
+接下來要處理的是物理問題，而不只是記號問題。要計算動量機率，必須引入動量基底與傅立葉變換。時間演化則需要描述 \(\psi(x,t)\) 的 Schr\"odinger 方程。接著，波包會把抽象算符 \(p=-i\hbar\,d/dx\) 與運動連結起來：波包的群速度將與動量除以質量有關，而平移對稱性則會說明動量為何守恆。因此，對易關係 \([x,p]=i\hbar\) 並非孤立的技巧，而是連結已建立的向量空間力學與粒子量子動力學的樞紐。

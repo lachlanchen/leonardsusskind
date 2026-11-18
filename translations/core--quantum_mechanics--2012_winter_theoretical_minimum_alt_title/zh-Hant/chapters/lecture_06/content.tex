@@ -1,0 +1,524 @@
+\chapter{複合系統、糾纏與單態}
+
+\lectureoverview{光子發射的問題揭示了量子事件與系綜平均之間的差異。這項差異自然引出測量、坍縮，以及必須將系統與測量儀器一併處理的問題。因此，我們先建構兩個系統的張量積態空間，再聚焦於兩個自旋的情形，區分乘積態與糾纏態，並將每個單自旋可觀測量嵌入複合空間。接著，單態提供了關鍵範例：每個自旋在局域上都沒有極化，但相同方向的分量卻完全反相關。單態與基底無關的形式，為貝爾定理，以及非經典關聯與超光速訊號傳遞之間的區別，奠定了基礎。}
+
+\section{疊加態自旋的離散躍遷}
+
+先考慮處於沿 \(z\) 軸方向磁場中的一個自旋。在 \(\hbar=1\) 的單位制下，
+\begin{equation}
+H=\frac{\omega}{2}\sigma_z,
+\qquad
+E_+=+\frac{\omega}{2},
+\qquad
+E_-=-\frac{\omega}{2}.
+\label{eq:l6-spin-hamiltonian}
+\end{equation}
+兩個能級的能量差為
+\begin{equation}
+\Delta E=E_+-E_-=\omega.
+\label{eq:l6-energy-gap}
+\end{equation}
+將輻射場納入考量後，處於上能級的自旋可能躍遷至下能級，並放出能量為 \(\omega\) 的光子。已經處於下能級的自旋，沒有更低的自旋態可供躍遷並放射。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_01.png}
+\caption{兩個自旋能級及其能量差 \(\omega\)，其中 \(\hbar=1\)。}
+\lectureframe{00:02:35}
+\end{figure}
+
+較微妙的情形是橫向製備的自旋。經典磁性轉子的能量會隨它與磁場夾角的餘弦連續變化。它以角頻率 \(\omega\) 進動，也以相同頻率輻射，並逐漸趨向能量最低的取向。總輻射能量隨初始角度連續變化：初始處於水平位置的轉子，釋放的能量是從頂端開始的轉子的一半。
+
+量子力學只在平均值上保留了這個經典結果。寫成
+\begin{equation}
+\ket{\psi}=\alpha\ket{u}+\beta\ket{d},
+\qquad
+|\alpha|^2+|\beta|^2=1,
+\label{eq:l6-superposed-spin}
+\end{equation}
+其中 \(\ket{u}\) 和 \(\ket{d}\) 分別是上、下能量本徵態。上態分量可以衰變，下態分量則不能。因此
+\begin{equation}
+P(\text{one photon})=|\alpha|^2,
+\qquad
+P(\text{no photon})=|\beta|^2.
+\end{equation}
+如果發射了光子，其能量就是完整的能級差 \(\omega\)，而不是其中的一部分。不過，平均發射能量仍為
+\begin{equation}
+\expect{E_{\rm emitted}}=|\alpha|^2\omega.
+\end{equation}
+對於沿 \(x\) 方向的自旋，\(|\alpha|^2=|\beta|^2=1/2\)，因此平均能量為 \(\omega/2\)。每個個別事件仍然不是發射一個能量為 \(\omega\) 的光子，就是沒有光子發射。連續變化的經典結果屬於系綜平均；離散性則體現在每個事件中。
+
+\begin{classroomqa}
+\audiencequestion{被吸收的光子必須多精確地符合能級差？}
+\lecturerresponse{共振具有有限的線寬。若激發態的壽命為 \(\tau\)，其特徵能量寬度約為 \(\Delta E\sim\hbar/\tau\)。磁偶極矩越大，通常與輻射場的耦合越強，壽命越短，譜線也越寬。這就是能量－時間不確定關係在不穩定能級問題中的具體形式。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{光子發射本身能否作為測量自旋的儀器？}
+\lecturerresponse{它可以揭示是否發生了衰變，但不是此處所需的理想可重複測量模型。測量自旋分量後，自旋應留在與記錄值相對應的本徵態中。衰變卻會使每個發射光子的分支都進入下能級，因此它並非只是記錄兩種可能的輸入值，同時保留各自對應的本徵態。}
+\end{classroomqa}
+
+\section{坍縮與複合系統的必要性}
+
+在受到干預之前，孤立系統的態依 Schr\"odinger 方程演化。測量通常被視為一條額外規則。令 \(L\) 具有正交歸一本徵向量 \(\ket{\lambda_i}\)，並將態展開為
+\begin{equation}
+\ket{\psi}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+L\ket{\lambda_i}=\lambda_i\ket{\lambda_i}.
+\label{eq:l6-measurement-expansion}
+\end{equation}
+測量以機率 \(|\alpha_k|^2\) 得到數值 \(\lambda_k\)；此後，系統的態為
+\begin{equation}
+\ket{\psi}\longrightarrow\ket{\lambda_k}.
+\label{eq:l6-collapse}
+\end{equation}
+測量後的描述中，其他分量消失，這稱為坍縮。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_02.png}
+\caption{在可觀測量 \(L\) 的本徵基底中展開的態；此時尚未選出任何測量結果。}
+\lectureframe{00:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{坍縮規則有什麼問題？}
+\lecturerresponse{作為預測測量結果的操作規則，它並沒有問題。概念上的張力在於，儀器本身也是物理系統。如果物件和儀器都遵循量子力學，為什麼兩者的交互作用除了么正的 Schr\"odinger 演化之外，還需要另一條動力學定律？這裡採取的做法，是將物件與儀器描述為一個更大的量子系統。}
+\end{classroomqa}
+
+系統與儀器之間明確的界線，是歷史上爭論的核心問題之一。我們不打算逕自宣告來平息爭論，而是先了解量子系統如何組合。建立複合態空間後，就能將測量視為使系統與儀器相關聯的交互作用來研究。因此，眼前的數學問題是：
+\begin{quote}
+給定兩個量子系統，整體的態空間是什麼？
+\end{quote}
+
+\section{張量積態空間}
+
+將兩個系統稱為 \(A\) 和 \(I\)，其希爾伯特空間分別為 \(\mathcal S_A\) 和 \(\mathcal S_I\)。複合系統的空間為
+\begin{equation}
+\mathcal S_{AI}=\mathcal S_A\otimes\mathcal S_I.
+\label{eq:l6-tensor-space}
+\end{equation}
+為兩個因子分別選取正交歸一基底 \(\{\ket{a}\}\) 和 \(\{\ket{i}\}\)。將第一個系統的每個基底向量，與第二個系統的每個基底向量配對：
+\begin{equation}
+\ket{a}\otimes\ket{i}\equiv\ket{a\,i}.
+\end{equation}
+若兩個因子空間的維度分別為 \(D_A\) 和 \(D_I\)，則
+\begin{equation}
+\dim\mathcal S_{AI}=D_A D_I.
+\end{equation}
+內積可分解為兩個因子的內積，
+\begin{equation}
+\braket{b\,j}{a\,i}
+=\braket{b}{a}\braket{j}{i}
+=\delta_{ba}\delta_{ji}.
+\label{eq:l6-tensor-inner-product}
+\end{equation}
+因此，只要任一子系統的標記不同，兩個複合基底態就互相正交。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}
+\caption{個別的態空間、它們的張量積，以及配對而成的正交歸一基底。}
+\lectureframe{00:24:05}
+\end{figure}
+
+配對而成的基底向量並未涵蓋整個空間。它們的線性組合所張成的完整空間是：
+\begin{equation}
+\ket{\Psi}=\sum_{a,i}c_{ai}\ket{a\,i},
+\qquad
+\sum_{a,i}|c_{ai}|^2=1.
+\label{eq:l6-general-tensor-state}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{\(\ket{a}\) 和 \(\ket{i}\) 是任意向量嗎？}
+\lecturerresponse{這裡它們是所選正交歸一基底中的向量。每個因子都可以使用任意正交歸一基底。將兩組基底向量配對，就能構成複合空間的一組正交歸一基底；之後，便可如式~\eqref{eq:l6-general-tensor-state}所示，透過線性組合得到任意向量。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{張量積是否取決於所選的基底？}
+\lecturerresponse{座標表示會隨基底而變，但空間本身不會。在任一子系統中更換基底，只會改變用來描述 \(\mathcal S_A\otimes\mathcal S_I\) 中相同向量的誘導基底。}
+\end{classroomqa}
+
+\section{兩個自旋與乘積態}
+
+現在考慮兩個自旋。將第一個自旋的分量記為 \(\sigma_x,\sigma_y,\sigma_z\)，第二個自旋的分量記為 \(\tau_x,\tau_y,\tau_z\)。在 \(z\) 基底下，複合基底為
+\begin{equation}
+\ket{uu},\qquad \ket{ud},\qquad \ket{du},\qquad \ket{dd}.
+\label{eq:l6-two-spin-basis}
+\end{equation}
+第一個位置一律代表 \(\sigma\)，第二個位置一律代表 \(\tau\)。一般態可寫為
+\begin{equation}
+\ket{\Psi}
+=c_{uu}\ket{uu}+c_{ud}\ket{ud}
++c_{du}\ket{du}+c_{dd}\ket{dd}.
+\label{eq:l6-general-two-spin}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{如果兩個自旋互相作用，基底向量本身會改變嗎？}
+\lecturerresponse{追蹤系統的動力學不需要固定基底。在所選基底中，交互作用改變的是係數 \(c_{ab}(t)\)，而不是 \(\ket{uu},\ket{ud},\ket{du},\ket{dd}\) 的定義。初始為 \(\ket{uu}\) 的態可以演化成疊加態，甚至演化成 \(\ket{dd}\)，而座標基底仍保持不變。}
+\end{classroomqa}
+
+這個建構也必須通過一致性檢驗。如果兩個自旋相距很遠，且只測量 \(\sigma\)，預測就必須與引入 \(\tau\) 之前建立的單自旋理論一致。張量積正是為了保留這套局域理論而設計的。
+
+有些雙自旋態描述的是分別獨立製備的自旋。例如，令
+\begin{equation}
+\ket{R}=\frac{\ket{u}+\ket{d}}{\sqrt2}
+\end{equation}
+為 \(x\) 分量的 \(+1\) 本徵態。則
+\begin{equation}
+\ket{u}_{\sigma}\otimes\ket{R}_{\tau}
+=\frac{\ket{uu}+\ket{ud}}{\sqrt2}.
+\label{eq:l6-up-right-product}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{兩個因子可以沿不同的軸製備嗎？}
+\lecturerresponse{可以。每個因子都可以是任意單自旋態。式~\eqref{eq:l6-up-right-product}中，第一個自旋沿 \(z\) 方向具有確定值，第二個自旋則沿 \(x\) 方向具有確定值。將第二個因子以 \(z\) 基底展開，只是用複合基底重新表示同一個乘積態。}
+\end{classroomqa}
+
+最一般的乘積態為
+\begin{align}
+\ket{\Psi_{\rm prod}}
+&=(\alpha_u\ket{u}+\alpha_d\ket{d})
+\otimes(\beta_u\ket{u}+\beta_d\ket{d})\\
+&=\alpha_u\beta_u\ket{uu}
++\alpha_u\beta_d\ket{ud}
+\\
+&\quad
++\alpha_d\beta_u\ket{du}
++\alpha_d\beta_d\ket{dd}.
+\label{eq:l6-product-expansion}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_04.png}
+\caption{在四個複合基底態中展開的因子化雙自旋態。}
+\lectureframe{00:37:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{式~\eqref{eq:l6-product-expansion}中的向量乘積是哪一種？}
+\lecturerresponse{整體空間是兩個希爾伯特空間的張量積。如果一個向量可分解為兩個因子空間各自的一個向量，就稱為乘積態或簡單張量。張量積空間中的大多數向量都是這類乘積態的和，無法寫成單一乘積。}
+\end{classroomqa}
+
+從係數可以直接看出這項限制：
+\begin{equation}
+c_{uu}c_{dd}=c_{ud}c_{du}
+\qquad\text{for every product state}.
+\label{eq:l6-rank-one-condition}
+\end{equation}
+等價地說，\(2\times2\) 係數矩陣的秩為一。參數計數也會得到相同結論。四個複數係數包含八個實參數；正規化條件去掉一個參數，無關緊要的整體相位再去掉一個，因此一般純雙自旋態有六個實參數。每個純單自旋態需要兩個實參數，所以分別指定兩個自旋只需要四個。由此可見，乘積態只占雙自旋六參數態空間中的一個特殊四參數子集，其餘態都是糾纏態。
+
+\section{複合空間中的局域可觀測量}
+
+熟悉的單自旋可觀測量也必須能在更大的系統中表述。更明確地說，
+\begin{equation}
+\sigma_m\equiv\sigma_m\otimes I,
+\qquad
+\tau_n\equiv I\otimes\sigma_n,
+\qquad
+m,n\in\{x,y,z\}.
+\label{eq:l6-local-operators}
+\end{equation}
+一旦固定了槽位約定，這種簡寫就不會造成問題。使用
+\begin{equation}
+\begin{aligned}
+\sigma_x&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.4em]
+\sigma_y&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.4em]
+\sigma_z&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\end{aligned}
+\end{equation}
+第一個自旋的算符作用時，第二個標記保持不變：
+\begin{align}
+\sigma_x\ket{u\,i}&=\ket{d\,i},
+&
+\sigma_x\ket{d\,i}&=\ket{u\,i},\\
+\sigma_z\ket{u\,i}&=\ket{u\,i},
+&
+\sigma_z\ket{d\,i}&=-\ket{d\,i}.
+\end{align}
+作用於第二個自旋時，第一個標記則保持不變：
+\begin{align}
+\tau_x\ket{a\,u}&=\ket{a\,d},
+&
+\tau_x\ket{a\,d}&=\ket{a\,u},\\
+\tau_z\ket{a\,u}&=\ket{a\,u},
+&
+\tau_z\ket{a\,d}&=-\ket{a\,d}.
+\label{eq:l6-spectator-action}
+\end{align}
+\(y\) 分量也會翻轉其作用的槽位，其中
+\(\sigma_y\ket{u}=i\ket{d}\)而
+\(\sigma_y\ket{d}=-i\ket{u}\)。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_05.png}
+\caption{第二個自旋的作用表：第一個指標保持不變。}
+\lectureframe{00:47:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{作用 \(\sigma_x\) 是否表示已經進行了 \(x\) 測量？為什麼結果不是疊加態？}
+\lecturerresponse{算符作用本身並不是測量。將矩陣 \(\sigma_x\) 作用於 \(z\) 基底向量 \(\ket{u}\)，會得到 \(\ket{d}\)。這不是本徵值方程：算符作用於本徵向量時，本徵向量的方向會保持不變。事實上，\(\ket{u}\) 會被映射至與它正交的態；這也說明了為什麼對 \(z\) 本徵態進行 \(x\) 測量時，結果會完全隨機。對非本徵向量作用，通常只是中間的代數步驟；其物理意義取決於所計算的整體物理量。}
+\end{classroomqa}
+
+作用於不同因子的算符彼此對易。例如，
+\begin{equation}
+\sigma_x\tau_x\ket{uu}
+=\ket{dd}
+=\tau_x\sigma_x\ket{uu}.
+\end{equation}
+同一等式對每個複合基底向量都成立，因此也對每個態成立：
+\begin{equation}
+[\sigma_m,\tau_n]=0
+\qquad\text{for all }m,n.
+\label{eq:l6-local-commutation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_06.png}
+\caption{算符分別作用於不同槽位，因此對易子 \([\sigma_x,\tau_x]\) 為零。}
+\lectureframe{00:56:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{為什麼只檢查一個基底向量，還不足以證明兩個算符對易？}
+\lecturerresponse{算符相等，表示它們對每個向量的作用都相同。只要檢查一組基底中的每個向量就足夠，因為利用線性性即可將結果推廣到所有疊加態。對局域算符而言，只要檢查全部四個基底態，論證就很直接：每個算符改變不同的槽位，因此作用順序不影響結果。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{有沒有真正屬於雙自旋系統的可觀測量？}
+\lecturerresponse{有。例如 \(\sigma_x\tau_x\)、\(\sigma_x\tau_y\) 這類乘積，以及這些乘積的線性組合，都能探測聯合性質。局域可觀測量描述各個因子；關聯可觀測量則揭示因子彼此之間的關係。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{獨立製備的乘積態已經是糾纏態了嗎？}
+\lecturerresponse{不是。乘積態的每個因子都有自己的態向量，而且局域期望值會因子化。只有當複合態無法分解為分別屬於 \(\sigma\) 和 \(\tau\) 的兩個態時，才有糾纏。}
+\end{classroomqa}
+
+\section{單態}
+
+一個最大糾纏態的例子是
+\begin{equation}
+\ket{S}
+=\frac{1}{\sqrt2}\bigl(\ket{ud}-\ket{du}\bigr).
+\label{eq:l6-singlet}
+\end{equation}
+這兩項已經顯示出沿 \(z\) 方向的完美反相關：一個自旋向上時，另一個必定向下。更深一層的重點是，不能為任一自旋指定各自的純態。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_07.png}
+\caption{這個反對稱雙自旋態之後會被認定為單態。}
+\lectureframe{01:09:25}
+\end{figure}
+
+對於單自旋純態，總存在一個單位向量 \(\bm n\)，使得
+\begin{equation}
+(\bm\sigma\cdot\bm n)\ket{\psi}=\ket{\psi}.
+\end{equation}
+等價地說，純單自旋態的 Bloch 向量
+\begin{equation}
+\bm r
+=\bigl(\expect{\sigma_x},\expect{\sigma_y},\expect{\sigma_z}\bigr)
+\end{equation}
+長度為一。因此，它的三個分量不可能同時為零。給定該態，若將探測器沿 \(\bm r\) 方向取向，測量結果必定是 \(+1\)。熟悉的例子包括：\(\ket{u}\) 對應 \(z\)，\((\ket{u}+\ket{d})/\sqrt2\) 對應 \(x\)，而 \((\ket{u}+i\ket{d})/\sqrt2\) 對應 \(y\) 方向之一。
+
+現在計算單態中的一個局域平均值：
+\begin{align}
+\expect{\sigma_z}_S
+&=\frac12
+(\bra{ud}-\bra{du})\sigma_z
+(\ket{ud}-\ket{du})\\
+&=\frac12
+(\bra{ud}-\bra{du})
+(\ket{ud}+\ket{du})\\
+&=0.
+\end{align}
+對於 \(\sigma_x\)，
+\begin{equation}
+\sigma_x\ket{S}
+=\frac{\ket{dd}-\ket{uu}}{\sqrt2},
+\end{equation}
+它與 \(\ket{S}\) 正交，因此 \(\expect{\sigma_x}_S=0\)。\(\sigma_y\) 所帶來的相位不會改變正交性，所以
+\begin{equation}
+\expect{\sigma_x}_S
+=\expect{\sigma_y}_S
+=\expect{\sigma_z}_S=0.
+\label{eq:l6-zero-local-sigma}
+\end{equation}
+由對稱性可得
+\begin{equation}
+\expect{\tau_x}_S
+=\expect{\tau_y}_S
+=\expect{\tau_z}_S=0.
+\label{eq:l6-zero-local-tau}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_08.png}
+\caption{板書記下了局域自旋平均值皆為零，以及用來完成檢驗的 \(y\) 分量翻轉。}
+\lectureframe{01:14:20}
+\end{figure}
+
+整個雙自旋態是純態，而且完全已知；但每個部分在局域上都沒有極化。由於任何單自旋純態的 Bloch 向量都不為零，\(\ket{S}\) 不可能是乘積態。
+
+\begin{classroomqa}
+\audiencequestion{一般的乘積態是否仍有某個方向具有非零的局域極化？}
+\lecturerresponse{有。單自旋的證明適用於相關的因子，另一個因子只是旁觀者。因此，純乘積態的每個因子都有一個單位 Bloch 向量。單態對兩個自旋都不符合這項乘積態性質。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如何製備兩個自旋的單態？}
+\lecturerresponse{使兩個自旋趨於反平行的耦合，可以讓單態成為能量最低的態。讓兩個自旋互相作用，並使這對自旋能向周遭環境釋放能量；它們便可能弛豫至單態。這個結論取決於交互作用的形式。對於各向同性的反鐵磁哈密頓量 \(H_{\rm int}=J\,\bm\sigma\cdot\bm\tau\)，若 \(J>0\)，單態的能量低於三個三重態。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這種弛豫需要多久？}
+\lecturerresponse{時間尺度取決於兩個自旋之間的距離、彼此耦合的強度、磁矩，以及與帶走能量的電磁環境之間的耦合。耦合越強，通常弛豫越快。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼反對稱組合的能量可以低於對稱組合？}
+\lecturerresponse{對於兩個自旋為 \(\tfrac12\) 的粒子，反對稱態的總自旋為零，而三個對稱態則構成總自旋為一的三重態。正比於 \(+\bm\sigma\cdot\bm\tau\) 的交互作用，對單態給予本徵值 \(-3\)，對三重態給予本徵值 \(+1\)；因此，正耦合會使單態的能量較低。其他哈密頓量未必會以相同方式排列能級。}
+\end{classroomqa}
+
+\subsection{各種自旋基底中的同一個態}
+
+改用更方便的局域基底，並不會消除糾纏。稍後會介紹糾纏熵，作為一種與基底無關的度量。單態還呈現出更強的對稱性。將
+\begin{equation}
+\ket{u}=\frac{\ket{R}+\ket{L}}{\sqrt2},
+\qquad
+\ket{d}=\frac{\ket{R}-\ket{L}}{\sqrt2},
+\end{equation}
+代入式~\eqref{eq:l6-singlet}，可得
+\begin{equation}
+\ket{S}
+=\frac{\ket{LR}-\ket{RL}}{\sqrt2}.
+\label{eq:l6-singlet-x-basis}
+\end{equation}
+在任一共同的正交歸一自旋基底 \(\{\ket{\rm in},\ket{\rm out}\}\) 中，
+\begin{equation}
+\ket{S}
+=\frac{\ket{{\rm in}\,{\rm out}}-\ket{{\rm out}\,{\rm in}}}{\sqrt2},
+\label{eq:l6-singlet-any-basis}
+\end{equation}
+兩者至多相差一個無關緊要的整體相位。共同旋轉會使三個三重態彼此混合；一維的單態子空間則只能映回自身。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_09.png}
+\caption{從上下基底換成左右基底，或其他共同自旋基底，反對稱形式仍保持不變。}
+\lectureframe{01:21:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{糾纏只是寫出態時所選基底造成的假象嗎？}
+\lecturerresponse{不是。局域基底變換會改變係數，卻不會改變態是否能因子化；糾纏熵則量化了這項不隨基底改變的性質。對單態而言，共同旋轉尤其清楚地顯示了這種不變性：在每一種自旋基底中，都會得到相同的反對稱形式。}
+\end{classroomqa}
+
+\section{關聯可觀測量}
+
+局域平均值都為零，因此單態中的資訊必然存在於聯合可觀測量中。先看
+\begin{equation}
+\sigma_z\tau_z\ket{ud}=-\ket{ud},
+\qquad
+\sigma_z\tau_z\ket{du}=-\ket{du}.
+\end{equation}
+因此
+\begin{equation}
+\sigma_z\tau_z\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_z\tau_z}_S=-1.
+\label{eq:l6-zz-correlation}
+\end{equation}
+這不只是平均值的結果：單態是該乘積算符的本徵態，因此沿相同 \(z\) 方向測量時，兩個自旋分量的符號總是相反。
+
+兩個 \(x\) 算符都會翻轉各自的槽位：
+\begin{equation}
+\sigma_x\tau_x\ket{ud}=\ket{du},
+\qquad
+\sigma_x\tau_x\ket{du}=\ket{ud}.
+\end{equation}
+交換兩項會使反對稱態變號：
+\begin{equation}
+\sigma_x\tau_x\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_x\tau_x}_S=-1.
+\end{equation}
+\(y\) 算符產生的兩個相位也同樣抵消，因此
+\begin{equation}
+\expect{\sigma_y\tau_y}_S=-1.
+\end{equation}
+相較之下，不同笛卡兒方向的分量，其期望值為零。例如，
+\begin{equation}
+\sigma_x\tau_z\ket{S}
+=-\frac{\ket{dd}+\ket{uu}}{\sqrt2},
+\qquad
+\expect{\sigma_x\tau_z}_S=0.
+\end{equation}
+以上結果可總結為
+\begin{equation}
+\expect{\sigma_m\tau_n}_S=-\delta_{mn},
+\qquad
+\expect{(\bm\sigma\cdot\bm a)(\bm\tau\cdot\bm b)}_S
+=-\bm a\cdot\bm b.
+\label{eq:l6-singlet-correlation-tensor}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_10.png}
+\caption{關聯計算記錄了 \(\expect{\sigma_x\tau_x}=-1\) 以及混合軸的結果 \(\expect{\sigma_x\tau_z}=0\)。}
+\lectureframe{01:32:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{兩個可觀測量的乘積在物理上代表什麼？這表示先後進行兩次測量嗎？}
+\lecturerresponse{一般而言，厄米算符的乘積是複合空間中的另一個可觀測量。這裡每個 \(\sigma_m\) 都與每個 \(\tau_n\) 對易，因此可以同時測量兩個局域分量，再將測得的數值相乘。乘積算符代表這個聯合測量結果，不涉及先後順序。}
+\end{classroomqa}
+
+對於乘積態，聯合平均值會因子化：
+\begin{equation}
+\expect{\sigma_m\tau_n}_{\rm prod}
+=\expect{\sigma_m}_{\sigma}\expect{\tau_n}_{\tau}.
+\end{equation}
+單態以最大的程度違反了這項因子化關係。右側的兩個因子都會是零，但左側沿相同方向的分量乘積為 \(-1\)。單獨來看，兩個自旋的結果完全隨機；聯合來看，相同方向的分量必定相反。
+
+\begin{classroomqa}
+\audiencequestion{兩個自旋之間的任何交互作用都會產生糾纏嗎？}
+\lecturerresponse{一般的耦合可以使原本因子化的態產生糾纏，許多常見的交互作用也確實如此。但這並非絕對必然：特別選定的乘積本徵態可能只增加一個相位，而純局域哈密頓量則無法使兩個因子產生糾纏。關鍵在於，非平凡的耦合作用於一個不會被它保留為乘積態的態。}
+\end{classroomqa}
+
+\section{從關聯到貝爾的問題}
+
+完美反相關本身並不矛盾。想像口袋裡有一枚便士和一枚一角硬幣，將兩枚硬幣分別在不讓人看見的情況下交給愛麗絲和鮑勃，再把兩人送到相距很遠的地方。愛麗絲一看到自己拿到哪枚硬幣，就立刻知道鮑勃拿到哪枚。這種關聯是在兩枚硬幣還放在一起時就建立的；得知其中一個結果並沒有向另一地傳送訊號。
+
+單態也具有這種基本特性，卻多了一項關鍵自由：愛麗絲和鮑勃可以選擇任意測量方向，而量子力學預測的關聯 \(-\bm a\cdot\bm b\) 會連續變化。貝爾定理探討的是，這些關聯能否全由粒子預先攜帶的局域經典指令所產生。
+
+\begin{classroomqa}
+\audiencequestion{貝爾定理用的就是這個態嗎？}
+\lecturerresponse{是的。貝爾類型的論證採用單態這類糾纏粒子對，而非確定的乘積態 \(\ket{ud}\)。這項區別很重要：乘積態提供各自獨立的局域描述；單態則在每一個共同基底中都帶有不可分割的關聯結構。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{既然沿相同方向測量的結果總是相反，為什麼還把這種反相關稱為統計性的？}
+\lecturerresponse{每一個局域結果都是隨機的：愛麗絲無法預測自己會得到 \(+1\) 還是 \(-1\)。但條件關係是確定的：只要知道沿相同方向測得的一個結果，另一個結果就必定與它相反。關聯指的是聯合機率分布，而不是相同方向的分量乘積具有不確定性。}
+\end{classroomqa}
+
+透過模擬可以更清楚地說明這個問題。一台經典電腦就能模擬單一自旋的所有實驗：儲存其狀態，依 Schr\"odinger 方程演化，計算所要求的機率，再用亂數產生器選出結果。重複測量與磁場中的進動都能如此重現。
+
+現在將糾纏粒子對分給兩台經典電腦。讓兩台電腦在粒子對製備期間互相作用；之後切斷兩者的聯繫，並讓它們在相距遙遠的地點各自選擇測量方向。即使事先固定了共享的隨機性，任何一對彼此分離的局域經典程式，都無法對所有方向選擇重現量子關聯。全域性的經典模擬仍然可行，但必須持續存取聯合態，或以其他方式協調兩側；這樣的模擬便不屬於局域隱變數模型。
+
+局域經典描述的這項限制，並未提供超光速通訊管道。愛麗絲的局域測量結果仍是隨機的，因此她無法控制訊息，讓鮑勃不必事後比對兩人的記錄就能讀取。非定域性相關術語的用法不盡相同，但操作層面的區別很明確：貝爾關聯排除了局域經典解釋，同時仍符合無訊號原理。
+
+複合態的建構因此帶來了真正的新內容。張量積在局域上保留了原有的單自旋物理，但其中一般的向量無法分解為各自獨立的態。在單態中，所有局域極化都為零，而聯合自旋分量則呈現完美且與基底無關的反相關。接下來，我們將運用這種結構，定量檢驗貝爾對經典推理提出的問題。
