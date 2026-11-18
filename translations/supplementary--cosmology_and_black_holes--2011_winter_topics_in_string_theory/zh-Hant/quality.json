@@ -1,0 +1,59 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 213,
+  "outline_entries": 135,
+  "target_characters": 64011,
+  "image_placements": 82,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "弦理論專題",
+  "pdf_sha256": "f08690de4b8002a771870407ce109dd650b9d4cbdb6459ed702991759bc952ea",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 37,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "6592e7be02406b78941e966007d7ef5d3f91be70b15324c6d5f0c600b527e860",
+    "chapters/lecture_01/content.tex": "8295da41b20b8fe639a6b6ebcaf9f81194680958f32415b2a76fea8abee925aa",
+    "chapters/lecture_02/content.tex": "1a5fe36d38a36ad51d0069610fb1ac8ab69f14cc7a57d1ac0c19eacf4f058b82",
+    "chapters/lecture_03/content.tex": "52bcf38d284c5fde864dc366906b67fc87a7472ba75b16f3048bd2f8f90acebd",
+    "chapters/lecture_04/content.tex": "f7e368a9e55c8a8c105debead221515f0f8f7a1091ce6e57221bd9a214907f3d",
+    "chapters/lecture_05/content.tex": "2afcdd8fce96cd39f3c6d4ccef48eab053cbde1930d320cec0148f633d4465ee",
+    "chapters/lecture_06/content.tex": "ea9d85f2f30c09c7ac2df7f24c337b6a0236eefdada03de3fd484e4633d05d9c",
+    "chapters/lecture_07/content.tex": "53c25cbe3d36395ddeb29e1dad8212d5c81acd9f9b2774dd4ed81ba001e77718",
+    "chapters/lecture_08/content.tex": "b307efef02e5a4eab97cead86f1755d7e64506b5384af703142f4f45f5ef9514",
+    "chapters/lecture_09/content.tex": "6d96f0d89b97e61c1a84163fc5abc50bb80a34a16fd012e2e5294381e0977f95"
+  },
+  "source_files": {
+    "course.tex": "5813fa3876488c0990af4bf15a855abc4eb833dd1e1b4a173b02a8742570c935",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "567923e017f5afbf8d6b82d2b0341bbeabbe06ae28165837759d891dfd670e56",
+    "chapters/lecture_02/content.tex": "df3935948d623649fa1bd4adf69a53f8defeec0fc0c65f1c370452d8403326bf",
+    "chapters/lecture_03/content.tex": "7eeac70ea5e86a155890a459eafd007f8d02b28f119664d2df6502ebc7f4e969",
+    "chapters/lecture_04/content.tex": "280798e99eea6e71529164540437c8fdbe22e752c03c6c39baaa153278b0060c",
+    "chapters/lecture_05/content.tex": "8fce7d01e02b32819996400e347bbc0c596655cc9a35f92f7fdd056a3b17b5fb",
+    "chapters/lecture_06/content.tex": "2ebe6be0dd8eed3ab446d3a7baebea39f33a6b1d97e5026135fdea0e9a0854aa",
+    "chapters/lecture_07/content.tex": "ad35584cafd776fe8bbde8625c31a325f7465d5507753dfefc7f06356991b9c3",
+    "chapters/lecture_08/content.tex": "28c531b7e4cf9483f0bb78491ff0f2a11411be6fee0d4aa70f68b44e949b04a6",
+    "chapters/lecture_09/content.tex": "1c889082ea6d02f33411d3bbdfd9b39ce29e5910b3708a80799a0c4e9a38bae7"
+  },
+  "translated_tex": {
+    "cover.tex": "02066cabd0f0442b1c2268f5117a92560201cd0df928c3879d5e25e78eee204a",
+    "common_preamble.tex": "027b19f7758e185be15105ab914de76a632b0780f1ce683e7d06d67ed99fd50f",
+    "course.tex": "82cd82d833b2e3776a5f6a2bffa71862b09863e643065dcd8aff2194c29596b9",
+    "chapters/lecture_07/content.tex": "27b61200d375a9f3c2e0f28a99b1f554138cf1b7eb35cb258e0eb1cd811b3307",
+    "chapters/lecture_02/content.tex": "5b346947e1a33815a1e0c26b4026da6ccf060e0becc3533c64c044756855d0d7",
+    "chapters/lecture_09/content.tex": "a5890ae961fe8837f5044121f151aa07aba2b1003e1b01b65a224eb7aa305494",
+    "chapters/lecture_01/content.tex": "67c8cd1294086341d764d4a20917ebac1e9e4b5569bceff917429e8a4156508b",
+    "chapters/lecture_03/content.tex": "9bc0ca73be7f0045cb4fc72bba91caff1665c2ea5e2e8f2a5b0a41652175302d",
+    "chapters/lecture_08/content.tex": "5009c059041676b62c4aef7c67f2f914be416fe5df8b10b9636cf896ee04739c",
+    "chapters/lecture_05/content.tex": "0f10add17b011481684b709fc5ae56162a04ea5c89ad8a901da27307b4945a19",
+    "chapters/lecture_04/content.tex": "12a4867596578b3c1e13eb05e27617f13db1d1d58d8119f598f11b4e91b454c5",
+    "chapters/lecture_06/content.tex": "a573a2e7a381062c7da221f7aa3bd699f65a6bf5e1d78fb118400fdd03fa70da"
+  }
+}

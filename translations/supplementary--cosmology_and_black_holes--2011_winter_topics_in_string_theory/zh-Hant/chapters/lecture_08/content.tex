@@ -1,0 +1,569 @@
+\chapter{真空能量與德西特視界}
+
+\lectureoverview{真空能量不同於普通物質：它既不選定優先慣性參考系，也不會隨宇宙膨脹而稀釋。將引力納入考量後，這個看似無害的能量零點便會改變時空幾何。我們將推導物質主導的膨脹律\(a(t)\propto t^{2/3}\)，與真空主導的膨脹律\(a(t)\propto e^{Ht}\)比較，接著以共形座標重寫德西特時空。由此得到的因果圖揭示了觀測者所依賴、且固有距離固定的事件視界。}
+
+\section{真空中的量子漲落}
+
+我們先從貫穿整場講座的問題談起。量子場論認為空無一物的空間也有能量。這是否表示真實的電子--正電子對不斷從虛無中冒出？
+
+\begin{classroomqa}
+\audiencequestion{電子--正電子對是否真的會在真空中產生並湮滅，還是這只是一種記帳方式？\lecturetimestamp{00:00:06}}
+\lecturerresponse{虛粒子對會貢獻真空能量，但它們並非能被觀察到從空無一物的空間中冒出的普通粒子。它們是量子基態的漲落，只會在虛過程所適用的範圍內存在。}
+\end{classroomqa}
+
+諧振子是最簡明的模型。經典力學中，它可以靜止在位能最低點；量子力學中，位置精確落在最低點與動量精確為零彼此不相容。基態在兩者之間取得折衷，並保有零點能
+\begin{equation}
+E_0=\frac{1}{2}\hbar\omega.
+\label{eq:l08-zero-point}
+\end{equation}
+這是諧振子所能具有的最低能量。它不是激發態，也不代表有一群可觀測的粒子。
+
+自由場可分解為簡正模，每個模的行為都像一個諧振子。腔體中的電磁場就是熟悉的例子。每個模都貢獻一個形如方程式~\eqref{eq:l08-zero-point}的項；電子、夸克及其他量子場也各自貢獻基態漲落。將這些貢獻加總，就得到所謂的真空能量。粗略微觀估算與觀測到的宇宙學尺度之間確實存在眾所周知的巨大差異，但這不是本講的主題。
+
+\begin{classroomqa}
+\audiencequestion{大約\(120\)個數量級的差異還會再談到嗎？\lecturetimestamp{00:02:59}}
+\lecturerresponse{本講不會討論這個差異。我們現在要理解的是宇宙學視界：宇宙學方程如何導致加速膨脹，以及加速膨脹為何會產生事件視界。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{上一講提到的紫外--紅外關係也會納入今晚的討論嗎？\lecturetimestamp{00:03:59}}
+\lecturerresponse{之後或許會再談到，但不在今晚預定的論述範圍內。目前的脈絡是從真空能量談到宇宙學，再談到視界。}
+\end{classroomqa}
+
+\section{真空能量為何具有洛倫茲不變性}
+
+接下來的問題看似簡單，卻點出了真空能量的關鍵性質。若空無一物的空間具有正的能量密度，為什麼它不像光學介質那樣改變光速？
+
+\begin{classroomqa}
+\audiencequestion{正的真空能量密度難道不會產生折射效應，讓光的傳播速度稍微變慢嗎？\lecturetimestamp{00:04:35}}
+\lecturerresponse{普通物質會造成這種效應，因為它定義了優先靜止系。真空能量則不同：它不選定這樣的參考系，而且所有慣性觀測者測得的真空能量密度都相同。因此，對光所作的局域測量仍會得到不變速度\(c\)。}
+\end{classroomqa}
+
+我們必須區分定律的對稱性與特定狀態的對稱性。物理方程可以具有平移不變性，儘管史丹佛不等於柏克萊，地球也不等於星際空間。將\emph{整個}物理配置平移，定律仍保持不變；但物質的實際配置不必在每個位置都相同。同樣地，方程具有旋轉不變性，並不代表這間教室具有旋轉對稱性。
+
+洛倫茲變換也有同樣的區別。氣體有自己的靜止系。相對氣體運動的觀測者會看到運動中的分子，也會測得不同的能量密度，因此氣體狀態不具有洛倫茲不變性，儘管支配它的方程具有這種不變性。普通物質、輻射場和實驗室裝置，都會藉由選定特殊的運動狀態或方向而破壞這種對稱性。
+
+真空能則是物質中不會如此的特殊形式。設想有一個探測器測量真空能量密度。它靜止時測得某個值\(\rho_{\rm vac}\)。讓探測器加速後再測量，結果仍不變。在相對論記號中，這項性質表現在與度規成正比的應力張量上：
+\begin{equation}
+T_{\mu\nu}^{\rm vac}=-\rho_{\rm vac}g_{\mu\nu},
+\qquad
+p_{\rm vac}=-\rho_{\rm vac}.
+\label{eq:l08-vacuum-stress}
+\end{equation}
+\editorialnote{黑板上並未推導壓力關係。這個協變陳述表達了本講所說的兩項關鍵性質：洛倫茲不變性，以及膨脹期間密度維持不變。}
+
+「局域」這項限定很重要。光線經過觀測者時，以附近的鐘和尺測量，其速度為\(c\)。在膨脹的幾何中，要詢問遙遠光線相對於我們的速度，必須選定座標並規定如何比較相距遙遠的事件。這種座標速度不一定等於\(c\)，即使每位局域觀測者測得的都是\(c\)。
+
+\begin{classroomqa}
+\audiencequestion{在這裡的討論中，真空能與宇宙常數是同義詞嗎？\lecturetimestamp{00:11:57}}
+\lecturerresponse{是。它們是愛因斯坦方程中同一項的兩種寫法：可以將它描述為幾何側的宇宙常數，也可以將它描述為源項側具有洛倫茲不變性的真空應力能量。}
+\end{classroomqa}
+
+\section{哪些會稀釋，哪些不會}
+
+在一大片區域中填入質量為\(m\)的非相對論性粒子。在足以對星系與星系團取平均的尺度上，假設粒子分布均勻。若一個共動體積中有\(N\)個粒子，其物質密度為
+\begin{equation}
+\rho_m=\frac{Nm}{V}.
+\end{equation}
+每個線性尺度加倍時，體積會增為\(2^3=8\)倍，而\(N\)與\(m\)維持不變。因此密度降為原來的八分之一。普通物質會稀釋，是因為相同數量的粒子分布在更大的物理體積中。
+
+輻射也會稀釋，而且稀釋得更快。輻射的數密度隨體積增大而下降；同時，每個光子的波長被拉長，能量也因紅移而降低。我們稍後會列出結果\(\rho_r\propto a^{-4}\)，但今晚不會求解輻射主導的宇宙學。
+
+真空能則是例外：
+\begin{equation}
+\rho_{\rm vac}(t)=\text{constant}.
+\label{eq:l08-rho-vac-constant}
+\end{equation}
+它不會聚集成團、不會選定方向或慣性參考系，也不會隨空間膨脹而降低密度。共動盒子變大時，其中所含的真空能也會按體積成比例增加。
+
+\editorialnote{密度不變，不代表膨脹中的共動盒子所含真空能總量不變。真空能具有負壓\(p_{\rm vac}=-\rho_{\rm vac}\)，因此協變應力能量守恆式
+\(\dot\rho+3H(\rho+p)=0\)得以成立。功項恰好補上盒子內真空能總量的變化。}
+
+\section{引力會感受到能量零點}
+
+在不涉及引力的實驗室物理中，將所有能量同時加上一個常數，通常不會改變任何結果。光譜取決於能量差，例如激發態原子與未激發態原子之間的能量差，或有粒子與無粒子的狀態之間的能量差。真空似乎沒有可供參照的基準，讓我們測量它的絕對能量。
+
+引力改變了這個問題。質量就是能量，而能量會產生引力，因此真空能也會產生引力。一個在原子躍遷中無法察覺的常數，卻能使時空彎曲。
+
+愛因斯坦方程將幾何與源項分開：
+\begin{equation}
+G_{\mu\nu}=8\pi G_N T_{\mu\nu},
+\label{eq:l08-einstein}
+\end{equation}
+單位制取\(c=1\)。愛因斯坦張量\(G_{\mu\nu}\)由度規\(g_{\mu\nu}(x)\)及其導數構成。應力張量\(T_{\mu\nu}\)則包含物質與非引力場的能量密度、動量密度、壓力和應力。真空能和普通物質一樣，屬於源項側。\editorialnote{口頭介紹中簡短地將\(8\pi/3\)與張量方程聯繫起來。因子\(1/3\)屬於下文的空間平坦弗里德曼方程，不屬於方程式~\eqref{eq:l08-einstein}。}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_08_figure_02.png}
+\caption{愛因斯坦方程的幾何側，由時空度規\(g_{\mu\nu}(x)\)構成。}
+\lectureframe{00:21:58.820}
+\end{figure}
+
+\section{將幾何簡化為尺度因子}
+
+現在選取最簡單的均勻膨脹幾何，其空間切片為平坦空間：
+\begin{equation}
+ds^2=-dt^2+a(t)^2\,d\mathbf{x}^2,
+\qquad
+d\mathbf{x}^2=dx^2+dy^2+dz^2.
+\label{eq:l08-frw-metric}
+\end{equation}
+座標標記\(\mathbf{x}\)畫在一張無限延伸的橡膠片上。標記本身不必移動，但標記之間的物理距離會改變。兩個共動點相距\(\Delta\mathbf{x}\)時，在固定\(t\)的情況下，其固有距離為
+\begin{equation}
+D(t)=a(t)\lvert\Delta\mathbf{x}\rvert.
+\label{eq:l08-proper-distance}
+\end{equation}
+因此，這個高度對稱幾何的所有時間變化都收納在單一函數——尺度因子\(a(t)\)之中。若\(a\)為常數，經過空間重新縮放後便得到平坦的閔可夫斯基時空。若\(a\)隨時間變化，即使每個空間切片仍然平坦，整個時空也可能是彎曲的。
+
+\begin{classroomqa}
+\audiencequestion{若座標標記分別為\(x=7\)和\(x=13\)，它們的座標間距是\(4\)嗎？\lecturetimestamp{00:27:40}}
+\lecturerresponse{不是。座標間距是\(13-7=6\)，所以它們的物理距離是\(6a(t)\)。這項修正很有用：\(x\)標示共動位置，乘上\(a(t)\)才得到物理距離。}
+\end{classroomqa}
+
+對於這個度規和均勻分布的能量密度，愛因斯坦方程的一個分量化為空間平坦的弗里德曼方程：
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N}{3}\rho(t).
+\label{eq:l08-friedmann}
+\end{equation}
+比值
+\begin{equation}
+H(t)\equiv\frac{\dot a(t)}{a(t)}
+\label{eq:l08-hubble-definition}
+\end{equation}
+定義為哈勃參數。此處它只是定義，仍可能隨時間改變。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_03.png}
+\caption{黑板上補回遺漏的因子\(1/a^2\)後，平坦膨脹度規與弗里德曼方程的寫法。}
+\lectureframe{00:30:30.000}
+\end{figure}
+
+\paragraph{能量平衡的圖像。}
+以能量平衡的圖像來看，方程式~\eqref{eq:l08-friedmann}可示意地寫成
+\begin{equation}
+-\frac{3}{8\pi G_N}H^2+\rho=0.
+\label{eq:l08-energy-heuristic}
+\end{equation}
+物質能量為正，而以膨脹尺度因子表示的引力自由度則帶有負的動能項。在這個約化問題中，「負引力能加上正物質能量等於零」是有用的記憶方式。
+
+\editorialnote{方程式~\eqref{eq:l08-energy-heuristic}是高度對稱的迷你超空間模型中的哈密頓約束，並不是一項座標無關的定理，不能據此斷言任意宇宙都具有等於零、且全域守恆的總能量。本講將它作為理解弗里德曼約束的啟發式圖像。}
+
+\section{物質主導的膨脹}
+
+回到一個座標邊長為\(\Delta x=1\)的共動數學盒子。其物理邊長為\(a(t)\)，所以物理體積為\(a(t)^3\)。若盒中有\(N\)個質量為\(m\)的非相對論性粒子，則
+\begin{equation}
+\rho_m(t)=\frac{Nm}{a(t)^3}
+=\frac{\rho_0}{a(t)^3}.
+\label{eq:l08-matter-density}
+\end{equation}
+粒子本身不會膨脹；膨脹的是它們之間的平均距離。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_08_figure_04.png}
+\caption{逐步建立共動盒子論證時所用的度規與弗里德曼方程。}
+\lectureframe{00:36:07.940}
+\end{figure}
+
+代入方程式~\eqref{eq:l08-friedmann}，得到
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N\rho_0}{3a^3}.
+\end{equation}
+令\(K=8\pi G_N\rho_0/3\)，並取膨脹分支：
+\begin{align}
+\dot a^2&=\frac{K}{a},\\
+\dot a&=\sqrt{K}\,a^{-1/2},\\
+a^{1/2}\,da&=\sqrt{K}\,dt.
+\label{eq:l08-matter-separated}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{如何求解分離變數後的方程？\lecturetimestamp{00:38:15}}
+\lecturerresponse{將等式兩邊積分。\(a^{1/2}\,da\)的積分是\(\frac{2}{3}a^{3/2}\)，不是\(\frac{3}{2}a^{3/2}\)；\(\frac{3}{2}\)是新的冪次，而\(\frac{2}{3}\)才是係數。}
+\end{classroomqa}
+
+因此，
+\begin{equation}
+\frac{2}{3}a^{3/2}
+=\sqrt{K}\,(t-t_B),
+\end{equation}
+其中\(t_B\)是積分常數，用來決定所選的時間原點。除去歸一化和時間平移的差異，
+\begin{equation}
+a(t)\propto (t-t_B)^{2/3}.
+\label{eq:l08-matter-solution}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_05.png}
+\caption{代入物質密度並分離變數，得到\(a^{1/2}da\propto dt\)。}
+\lectureframe{00:38:30.000}
+\end{figure}
+
+曲線\(t^{2/3}\)的增長比直線慢，斜率也逐漸減小，因此物質主導的宇宙會減速。在本講採用的牛頓力學圖像中，粒子起初彼此遠離，而彼此間的引力吸引會不斷降低它們分離的速度。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_06.png}
+\caption{黑板上比較線性膨脹與向下凹的物質主導膨脹律\(a(t)\propto t^{2/3}\)。}
+\lectureframe{00:40:00.000}
+\end{figure}
+
+作為參考，輻射場的密度為
+\begin{equation}
+\rho_r\propto a^{-4},
+\end{equation}
+而非\(a^{-3}\)：體積稀釋帶來三個次方，宇宙學紅移再多帶來一個次方。相應的尺度因子也可以求解，但本講刻意不處理這項計算。
+
+\section{真空主導的膨脹}
+
+現在只在弗里德曼方程的右側保留真空能。由於\(\rho_{\rm vac}\)是常數，
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N}{3}\rho_{\rm vac}
+\equiv H^2.
+\label{eq:l08-de-sitter-friedmann}
+\end{equation}
+\(H\)有兩種用法必須區分。方程~\eqref{eq:l08-hubble-definition}定義了可能隨時間變化的量\(\dot a/a\)。方程~\eqref{eq:l08-de-sitter-friedmann}則表示，在純真空能宇宙中，它的值是常數
+\begin{equation}
+H=\sqrt{\frac{8\pi G_N\rho_{\rm vac}}{3}}.
+\end{equation}
+取膨脹分支可得
+\begin{equation}
+\dot a=Ha,
+\end{equation}
+因此
+\begin{equation}
+a(t)=C e^{Ht}.
+\label{eq:l08-exponential-solution}
+\end{equation}
+積分常數\(C\)決定了共動座標任意的正規化。與\(a\)的當前值成正比的增長，就是指數增長。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{真空主導方程\((\dot a/a)^2=H^2\)、其一階形式\(\dot a=Ha\)與指數解。}
+\lectureframe{00:47:45.000}
+\end{figure}
+
+共動物體遵循的哈勃定律為
+\begin{equation}
+v_{\rm rec}=HD.
+\label{eq:l08-hubble-law}
+\end{equation}
+在純德西特情形下，退行速度等於\(c\)處的固有距離是固定的：
+\begin{equation}
+D_H=\frac{c}{H},
+\label{eq:l08-hubble-radius}
+\end{equation}
+以黑板所用的\(c=1\)單位表示，則為\(D_H=H^{-1}\)。這個固定尺度將以德西特事件視界半徑的形式再次出現。\editorialnote{在任意隨時間變化的宇宙學中，哈勃半徑不一定就是事件視界。此處兩者相等，是因為精確德西特空間中的\(H\)為常數。}
+
+本講用一個思想實驗說明真空能探測器。將兩個極輕的測試物體放在遠離其他源的位置，讓它們起初相對於共動流靜止，並使兩者之間的引力可忽略。它們的距離會按指數增長。這種效應小到地面上的裝置無法測量，但在宇宙尺度的距離和回望時間下，同樣的物理效應便可觀測。
+
+\section{從物質主導轉為真空主導}
+
+本講考慮的實際宇宙學模型同時包含兩項：
+\begin{equation}
+H(t)^2
+=\frac{8\pi G_N}{3}
+\left(\frac{\rho_0}{a(t)^3}+\rho_{\rm vac}\right).
+\label{eq:l08-mixed-friedmann}
+\end{equation}
+當\(a\)較小時，由於\(a^{-3}\)很大，物質項占主導，解的形式近似\(t^{2/3}\)。隨著宇宙膨脹，物質密度逐漸稀釋，真空能則維持不變。最後，常數項占上風，尺度因子向上彎曲，趨近\(e^{Ht}\)。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.87\textwidth]{lecture_08_figure_08.png}
+\caption{本講描繪的定性轉變：早期物質主導、膨脹減速；晚期真空主導、指數增長。}
+\lectureframe{00:53:30.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{指數解含有一個積分常數。我們怎麼知道它不是小得微不足道？\lecturetimestamp{00:52:41}}
+\lecturerresponse{我們可以測量它。觀測越遙遠的宇宙，就越是在觀測過去。因此，從不同距離的觀測資料可以重建膨脹曲線較早期的部分，而不只是得知它今天的數值。}
+\end{classroomqa}
+
+本講指出，當時可取得的晚期觀測結果大致在百分之五的精度內符合指數分支，並認為證據令人信服；不過，這些證據仍不如電子性質等精密測量準確。這應視為本講當時的評估，而不是對現今測量精度的描述。
+
+\begin{classroomqa}
+\audiencequestion{向上彎曲的膨脹曲線，最終會不會讓我們無法將觀測追溯到大爆炸或宇宙微波背景？\lecturetimestamp{00:55:05}}
+\lecturerresponse{本講不打算把這當作外推圖形的問題來討論。關鍵的不變性問題是事件視界是否存在；這正是我們接下來要探討的因果問題。}
+\end{classroomqa}
+
+\section{束縛系統與遙遠的未來}
+
+若指數膨脹持續下去，所有會稀釋的成分相較於\(\rho_{\rm vac}\)都將變得微不足道。但這不表示原子、太陽系或星系本身會被拉開。只要束縛夠強，系統就不會隨哈伯流膨脹。
+
+\begin{classroomqa}
+\audiencequestion{今天沒有膨脹的星系，等真空能占主導後，最終也會膨脹嗎？\lecturetimestamp{00:57:44}}
+\lecturerresponse{束縛系統會繼續保持束縛。銀河系與仙女座星系屬於會維持在一起的近鄰結構；至於已經隨宇宙膨脹而運動的遙遠星系，則會繼續遠離，最終超出我們的視界。}
+\end{classroomqa}
+
+\emph{受到吸引}與\emph{受到束縛}是重要的區別。火箭以高於逃逸速度發射後，仍受地球引力吸引，卻不會返回。同樣地，普通引力可能是兩個星系間最大的局域作用力，但它們的相對軌道仍可能不受束縛。
+
+\begin{classroomqa}
+\audiencequestion{我們的星系在引力上屬於一個星系群。加速膨脹最終會克服這種吸引嗎？\lecturetimestamp{00:59:17}}
+\lecturerresponse{只有局域結構中真正受束縛的部分會維持在一起。光是稱作星系團並不足以判定它受束縛；受束縛表示相對運動低於逃逸速度。更遙遠的星系即使受到吸引，也仍可能以超過逃逸速度的速度退行。}
+\end{classroomqa}
+
+為了建立直觀圖像，本講將相對徑向加速度示意性地寫成吸引性的平方反比項，加上一個與距離成正比的真空項：
+\begin{equation}
+\ddot r\sim-\frac{G_NM}{r^2}+H^2r.
+\label{eq:l08-newtonian-vacuum}
+\end{equation}
+在理想化的德西特極限下，這些係數不隨時間改變。第二項增大只是因為\(r\)變大；這並非\(G_N\)逐漸減弱所致。
+
+\editorialnote{方程式~\eqref{eq:l08-newtonian-vacuum}是用牛頓力學描述相對加速度的啟發式圖像，並非廣義相對論中額外的基本力定律。在精確的德西特空間中，相鄰自由落體世界線的相對加速度正比於\(H^2r\)。}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{黑板上比較平方反比的引力吸引，以及隨距離線性增加的有效真空斥力。}
+\lectureframe{01:04:10.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{向外的效應本身會隨時間增強嗎？\lecturetimestamp{01:01:18}}
+\lecturerresponse{在距離固定時不會，因為它的係數是常數。自由退行的物體彼此相距越來越遠，因此正比於\(r\)的項會因距離增加而變大。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{能否將淨效應描述為牛頓引力常數逐漸減小？\lecturetimestamp{01:02:30}}
+\lecturerresponse{不能。\(G_N\)維持不變。在指定距離下，兩個係數都不變；隨距離改變的只有\(1/r^2\)引力吸引與正比於\(r\)的項各自所占的重要性。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{在真空能變得重要之前的早期宇宙中，這些星系就已經受到引力束縛了嗎？\lecturetimestamp{01:05:03}}
+\lecturerresponse{普通引力吸引占主導，並不表示系統必然受束縛。當時許多星系彼此分離的速度已接近或超過逃逸速度。後來，真空能決定大尺度膨脹會減速並走向再坍縮，還是加速擴張；但作用力最大，與軌道受束縛，是兩件不同的事。}
+\end{classroomqa}
+
+因此，在遙遠的未來，觀測者可能身處已合併的局域結構中，而所有未受束縛的星系都已無法觀測。若沒有歷史紀錄，這位觀測者或許會合理地推斷宇宙幾乎空無一物。這種因果上的孤立，而非局域天體遭到摧毀，正是引出視界概念的物理背景。
+
+\section{事件視界的意義}
+
+休息後，令
+\begin{equation}
+a(t)=e^{Ht}
+\end{equation}
+並將度規寫成
+\begin{equation}
+ds^2=-dt^2+e^{2Ht}d\mathbf{x}^2.
+\label{eq:l08-de-sitter-metric}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{這個度規描述的時空稱為什麼？\lecturetimestamp{01:08:13}}
+\lecturerresponse{這是德西特時空，通常簡稱德西特空間。真空主導的宇宙在晚期會趨近這種幾何，因此其中的視界十分重要。}
+\end{classroomqa}
+
+在繪製因果結構之前，先回顧彭羅斯圖的用途。它將無限區間壓縮到有限圖形中，同時讓零射線仍以\(45^\circ\)前進。在平直時空中，有質量物體終止於未來類時無限遠，零射線終止於零無限遠；慣性觀測者即使能無限期等待，也沒有事件視界將某個永遠無法觀測的時空區域排除在外。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_08_figure_10.png}
+\caption{介紹視界之前，用來區分類時與零方向終點的平直時空彭羅斯圖。}
+\lectureframe{01:10:35.000}
+\end{figure}
+
+黑洞圖提供了對照。外部觀測者只能接收到來自其未來世界線之因果過去的訊號。即使觀測時間趨近無限，內部區域仍然無法被觀測。能與該觀測者通訊的事件，與永遠無法通訊的事件之間的邊界，就是事件視界。
+
+\begin{definition}
+觀測者的未來事件視界，是一組事件的邊界：從這些事件出發，未來指向的因果訊號都能抵達該觀測者的世界線。
+\label{def:l08-event-horizon}
+\end{definition}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_08_figure_11.png}
+\caption{黑洞的對照圖：從任意晚的外部觀測點向後延伸光錐，都不會涵蓋事件視界另一側的區域。}
+\lectureframe{01:13:50.000}
+\end{figure}
+
+因此，事件視界是全域的因果邊界，不只是某個物體今天看起來很暗的距離。要找出它的位置，必須知道即使等待任意長的時間，哪些訊號仍能抵達。
+
+\section{壓縮無限的未來}
+
+方程式~\eqref{eq:l08-de-sitter-metric}中的空間座標已涵蓋無限延伸的平坦空間切片。我們保持空間座標不變，只壓縮時間。引入共形時間\(T\)，使其滿足
+\begin{equation}
+dt^2=e^{2Ht}dT^2.
+\label{eq:l08-conformal-definition}
+\end{equation}
+取指向未來的平方根並整理後，得到
+\begin{equation}
+dT=e^{-Ht}dt.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{積分結果為何？包括正負號在內。\lecturetimestamp{01:17:25}}
+\lecturerresponse{結果是\(-H^{-1}e^{-Ht}\)。加上一個常數只會平移\(T\)的原點，因此可選定這個常數，讓無限遠的未來對應到\(T=0\)。}
+\end{classroomqa}
+
+因此
+\begin{equation}
+T=-\frac{1}{H}e^{-Ht},
+\qquad -\infty<T<0.
+\label{eq:l08-conformal-time}
+\end{equation}
+當\(t\to-\infty\)時，\(T\to-\infty\)。當固有時間\(t\to+\infty\)時，\(T\to0^{-}\)。如此一來，無限遠的未來被映射到有限的水平線\(T=0\)；沒有觀測者能在有限固有時間內抵達那裡。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_12.png}
+\caption{共形時間積分，以及將無限遠的未來\(t\to+\infty\)映射到\(T=0^{-}\)的關係。}
+\lectureframe{01:19:10.000}
+\end{figure}
+
+由方程式~\eqref{eq:l08-conformal-time}可得
+\begin{equation}
+HT=-e^{-Ht},
+\qquad
+e^{2Ht}=\frac{1}{H^2T^2}.
+\label{eq:l08-conformal-factor}
+\end{equation}
+再將\(dt=e^{Ht}dT\)代入方程式~\eqref{eq:l08-de-sitter-metric}，得到
+\begin{equation}
+ds^2=\frac{1}{H^2T^2}
+\left(-dT^2+d\mathbf{x}^2\right).
+\label{eq:l08-conformal-metric}
+\end{equation}
+括號中的量就是閔可夫斯基度規。現在，德西特幾何全都收納在同一個共形因子中；當\(T\to0^{-}\)時，這個因子會發散。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.87\textwidth]{lecture_08_figure_13.png}
+\caption{將\(e^{2Ht}\)與\(1/(H^2T^2)\)關聯起來的代數運算，為寫出度規的共形形式作準備。}
+\lectureframe{01:22:50.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{這個度規中的光線路徑由什麼條件決定？\lecturetimestamp{01:23:49}}
+\lecturerresponse{光線沿零路徑傳播，即\(ds^2=0\)。因此共同的共形因子會相消；沿選定的空間方向，剩下\(dT=\pm dx\)。}
+\end{classroomqa}
+
+在\((T,x)\)圖中，光線是傾角為\(45^\circ\)的直線：
+\begin{equation}
+\frac{dx}{dT}=\pm1.
+\label{eq:l08-null-lines}
+\end{equation}
+在\(T=0\)附近，座標圖被高度壓縮，但仍完整保留我們所需的資訊：哪些事件彼此能夠通訊。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_14.png}
+\caption{在使用零條件\(ds^2=0\)推得\(45^\circ\)光線時的共形度規。}
+\lectureframe{01:24:05.000}
+\end{figure}
+
+\section{德西特空間中的 Alice 與 Bob}
+
+將 Alice 放在固定的共動位置 \(x=0\)。她的世界線垂直向上延伸，並在圖中終止於 \(T=0\)，但她的腕錶要經過無限長的固有時間才能到達那裡。從該端點畫出指向過去的零測地線。這些零測地線界定了 Alice 永遠能接收到訊號的最大區域。區域之外的事件永遠無法到達她。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_15.png}
+\caption{Alice 的極限過去光錐。其零邊界是依觀測者而異的德西特事件視界。}
+\lectureframe{01:28:50.000}
+\end{figure}
+
+這個視界是觀測者各自獨有的。不同觀測者有不同的未來端點，因此也有不同的極限過去光錐。假設 Bob 曾位於 Alice 的因果區域內，兩人也曾互相傳送訊息。如果 Bob 之後隨哈勃流越過 Alice 的視界，那麼越過之後發出的訊號便無法到達 Alice，無論她等多久都一樣。Bob 也有自己的視界，最後也會失去接收 Alice 晚期訊號的能力。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_16.png}
+\caption{Alice 與 Bob 各自具有不同的因果邊界。共動的 Bob 可以離開 Alice 的因果過去，儘管兩人先前曾交換訊號。}
+\lectureframe{01:30:20.000}
+\end{figure}
+
+如果 Alice 和 Bob 手牽手，或者更實際地說，彼此束縛而保持固定的固有距離，那麼隨著 \(a^{-1}\)，他們之間的共動座標距離會縮小。在共形圖中，他們的曲線彼此靠近，但這不代表他們的固有距離趨近於零。共形因子的增長抵銷了座標間距的縮小，因此兩人可以一直保持聯絡。
+
+\begin{classroomqa}
+\audiencequestion{在視界將他們分隔之後，Bob 還能同時看見 Alice 嗎？\lecturetimestamp{01:31:43}}
+\lecturerresponse{沒有觀測者能以那種字面意義同時看見遠方事件；觀測到的總是過去光錐中的事件。更精確地說，越過視界之後，從另一條世界線新發出的訊號便無法抵達。}
+\end{classroomqa}
+
+在遙遠未來的宇宙學情境中，Alice 代表我們受束縛的局部殘存結構，Bob 則代表每一個未受束縛的遙遠星系。這些星系不會在 Alice 時鐘上的某個有限時刻突然消失。它們後續發出的訊號會被拉長至更大的時間間隔，並紅移至更長的波長，直到在物理上無法探測。
+
+\begin{classroomqa}
+\audiencequestion{理論真的表示遙遠未來將看不見任何遙遠星系嗎？\lecturetimestamp{01:33:38}}
+\lecturerresponse{未受束縛的星系會越過局部觀測者的事件視界。它們最後可見的訊號會愈來愈延遲、紅移愈嚴重，實際上最後只剩受束縛的局部結構仍可觀測。}
+\end{classroomqa}
+
+\section{視界處的紅移}
+
+仍然可以畫出一束很早以前由 Bob 發出的光，在很晚的共形時刻抵達 Alice；這會讓人以為她仍看得見 Bob。物理上關鍵的是這些訊號的間隔與能量。Bob 時鐘上相等的時間間隔所發出的訊號，抵達時彼此相隔的 Alice 固有時間會愈來愈長。頻率和光子能量都會下降：
+\begin{equation}
+\nu_{\rm received}\longrightarrow0,
+\qquad
+E_{\rm received}=h\nu_{\rm received}\longrightarrow0.
+\end{equation}
+Bob 的影像變得愈來愈慢、愈來愈紅，最後逐漸淡去。極限訊號所攜帶的可用資訊趨近於零。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.89\textwidth]{lecture_08_figure_17.png}
+\caption{後期板書狀態，比較德西特視界的紅移與熟悉的黑洞視界外部觀測圖像。}
+\lectureframe{01:36:20.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{這和黑洞的情形類似嗎？外部觀測者永遠看不到落入黑洞的物體穿越視界。\lecturetimestamp{01:36:09}}
+\lecturerresponse{是的。兩種情形中，觀測者接收到的訊號都會愈來愈紅移，也都永遠無法直接看到穿越完成。因果圖說明哪些後續發射永遠無法抵達；紅移則解釋最後可觀測到的資訊如何逐漸淡去。}
+\end{classroomqa}
+
+這個類比引出了一個關於溫度的問題。
+
+\begin{classroomqa}
+\audiencequestion{Alice 要如何測量視界附近的溫度？\lecturetimestamp{01:39:34}}
+\lecturerresponse{實際上，她可以用纜繩放下一支溫度計，確保溫度計不穿越視界，再把它拉回來。德西特觀測者也可以設想在宇宙學視界附近進行類似的實驗。在量子理論中，視界是熱的；但本講只討論經典幾何，將這項計算留待之後處理。}
+\end{classroomqa}
+
+此處沒有推導德西特溫度的公式。霍金輻射只在此預告，作為對這幅經典圖像的量子修正。
+
+\section{固定的視界半徑}
+
+可以將共形圖轉回原本的時間座標。兩個共動點的座標間距若保持固定，則有
+\begin{equation}
+D(t)=e^{Ht}\lvert\Delta x\rvert,
+\end{equation}
+因此它們的固有距離會呈指數增長。
+
+\begin{classroomqa}
+\audiencequestion{同樣的運動在原本未經變換的時間座標中看起來如何？\lecturetimestamp{01:41:14}}
+\lecturerresponse{對固定的共動座標而言，整個空間度規會隨 \(e^{2Ht}\) 增長，因此固有距離會按 \(e^{Ht}\) 增長。反轉座標變換後，這種膨脹便清楚呈現出來。}
+\end{classroomqa}
+
+視界的情形不同，因為 Alice 與視界之間的共動座標距離並非固定。從終止於 \(T=0\) 的 \(45^\circ\) 零測地線可得，在 \(T<0\) 的等時切片上，視界距離為
+\begin{equation}
+\Delta x_H=-T=\frac{1}{H}e^{-Ht}.
+\label{eq:l08-coordinate-horizon}
+\end{equation}
+乘上尺度因子後得到
+\begin{equation}
+D_H(t)=a(t)\Delta x_H
+=e^{Ht}\frac{e^{-Ht}}{H}
+=\frac{1}{H}.
+\label{eq:l08-fixed-horizon}
+\end{equation}
+恢復單位後，\(D_H=c/H\)。座標間距縮小，度規尺度增大，兩者的乘積則保持不變。
+
+\begin{classroomqa}
+\audiencequestion{隨著時間流逝，Alice 到視界的距離會增大、縮小，還是保持不變？\lecturetimestamp{01:42:42}}
+\lecturerresponse{距離保持不變。座標距離雖然縮小，共形因子卻隨之增大，因此在 \(c=1\) 的單位制下，固有視界半徑固定為 \(H^{-1}\)。}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_18.png}
+\caption{最後的板書狀態：隨時間推移，各水平切片上到視界的座標距離逐漸縮小，但固有距離保持不變。}
+\lectureframe{01:43:20.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{舊影像始終沒有完全消失，所以 Alice 會繼續看到投影在視界上的過去嗎？\lecturetimestamp{01:43:45}}
+\lecturerresponse{從經典觀點來看，影像只是在極限意義下持續存在：由於紅移無界增大，影像會變得愈來愈難以探測。這種說法沒有納入視界相關的霍金輻射；霍金輻射會改變量子描述。}
+\end{classroomqa}
+
+因此，本講在一個明確的界線上結束。真空能造成指數膨脹；指數膨脹形成固定且依觀測者而異的事件視界；視界附近的訊號則被紅移至頻率趨近於零。視界溫度與霍金輻射將留待後續討論。正如 Susskind 所說，假設我們不會越過彼此的視界，那麼下一講再見。

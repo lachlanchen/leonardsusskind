@@ -1,0 +1,492 @@
+\chapter{平直座標中的視界與蒸發熱力學}
+
+\lectureoverview{Schwarzschild 度規在視界處似乎變得奇異，但自由落體觀測者理應不會在那裡察覺任何異常。我們將近視界度規改寫為雙曲極座標下的平直 Minkowski 時空，化解這個表面上的矛盾。同一幾何也由此呈現 Alice 的墜落描述與 Bob 在外部加速的描述。講座後半部討論熵與溫度，推導 Hawking 溫度與質量成反比的關係及 \(M^3\) 蒸發定律，最後探討資訊守恆對引力微觀理論的要求。}
+
+\section{\texorpdfstring{\(r=2GM\)}{r=2GM}處的疑問}
+
+先考慮一個非常大的黑洞。它的視界曲率可以小到讓穿越視界的觀測者，在任何不太大的實驗室尺度區域內，都只看到近乎空無一物的平直時空。觀測者不會撞上任何牆，也不會有局部警報宣告他已穿越視界。然而，Schwarzschild 度規似乎指出，恰好在那個半徑處發生了奇異事件。本講前半部要說明這兩種說法如何相容。
+
+我們採用「主要為正」的號差約定。在平直時空中，
+\begin{equation}
+ds^2=-dt^2+dx^2+dy^2+dz^2,
+\end{equation}
+因此類時世界線滿足 \(ds^2<0\)，固有時間則滿足 \(d\tau^2=-ds^2\)。這與上一講採用的約定整體符號相反；這項選擇不影響任何可觀測量。
+
+取 \(c=1\)，Schwarzschild 線元素為
+\begin{equation}
+\begin{aligned}
+ds^2={}&-\left(1-\frac{2GM}{r}\right)dt^2
++\frac{dr^2}{1-\frac{2GM}{r}}
++r^2d\Omega_2^2,\\
+d\Omega_2^2={}&d\theta^2+\sin^2\theta\,d\phi^2 .
+\end{aligned}
+\label{eq:l03-schwarzschild}
+\end{equation}
+Schwarzschild 半徑為 \(R_s=2GM\)；恢復 \(c\) 後，則為 \(R_s=2GM/c^2\)。在遠處，\(r\gg R_s\)，兩個徑向係數都趨近平直空間中的值。然而在 \(r=R_s\) 處，\(dt^2\) 的係數為零，\(dr^2\) 的係數則發散。這看起來很驚人。問題是，驚人的究竟是幾何，還是只有座標？
+
+\section{座標帶來的兩點啟示}
+
+\subsection{極座標原點並無奇異之處}
+
+在普通的歐幾里得平面上，
+\begin{equation}
+ds^2=dx^2+dy^2.
+\end{equation}
+引入極座標
+\begin{equation}
+x=\rho\cos\theta,
+\qquad
+y=\rho\sin\theta .
+\end{equation}
+微小位移的徑向長度為 \(d\rho\)，橫向長度為 \(\rho\,d\theta\)，因此
+\begin{equation}
+ds^2=d\rho^2+\rho^2d\theta^2.
+\label{eq:l03-polar}
+\end{equation}
+在 \(\rho=0\) 處，角向係數為零。這不代表平面中心有奇異之處，只表示那裡所有 \(\theta\) 值都指向同一個點。因此，奇特的度規係數反映的可能是奇特的座標系，而非奇特的物理。
+
+\subsection{雙曲極座標}
+
+現在將歐幾里得平面換成 \(1+1\) 維 Minkowski 時空：
+\begin{equation}
+ds^2=-dT^2+dX^2.
+\end{equation}
+在右側楔形區域 \(X>|T|\) 中，定義
+\begin{equation}
+X=\rho\cosh\omega,
+\qquad
+T=\rho\sinh\omega,
+\qquad \rho>0 .
+\label{eq:l03-rindler-transform}
+\end{equation}
+普通的恆等式 \(\cos^2\theta+\sin^2\theta=1\) 在此換成
+\begin{equation}
+\cosh^2\omega-\sinh^2\omega=1.
+\end{equation}
+因此，固定 \(\rho\) 所得的曲線是雙曲線：
+\begin{equation}
+X^2-T^2=\rho^2.
+\end{equation}
+與週期性的角座標 \(\theta\) 不同，類似快度的座標 \(\omega\) 從 \(-\infty\) 延伸至 \(+\infty\)。當 \(\omega\) 為很大的正值時，\(\cosh\omega\) 與 \(\sinh\omega\) 幾乎相等，雙曲線也就趨近未來零射線 \(X=T\)。
+
+對式~\eqref{eq:l03-rindler-transform}求導，得到
+\begin{align}
+dX&=\cosh\omega\,d\rho+\rho\sinh\omega\,d\omega,\\
+dT&=\sinh\omega\,d\rho+\rho\cosh\omega\,d\omega .
+\end{align}
+交叉項相消後，剩下
+\begin{equation}
+ds^2=-\rho^2d\omega^2+d\rho^2.
+\label{eq:l03-rindler-metric}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_02.png}
+\caption{完成的雙曲座標板書：\(X=\rho\cosh\omega\)、\(T=\rho\sinh\omega\)、單位雙曲線的構造，以及寫成 \(ds^2=-\rho^2d\omega^2+d\rho^2\) 形式的平直度規。}
+\lectureframe{00:16:55.000}
+\end{figure}
+
+式~\eqref{eq:l03-rindler-metric}描述的仍是完全平直的時空。它的時間係數在 \(\rho=0\) 處為零，正如式~\eqref{eq:l03-polar}的角向係數在原點處為零。退化的是座標圖，不是時空。
+
+\section{放大檢視 Schwarzschild 視界}
+
+回到式~\eqref{eq:l03-schwarzschild}中的徑向與時間部分：
+\begin{align}
+ds^2
+&=-\frac{r-2GM}{r}\,dt^2
++\frac{r}{r-2GM}\,dr^2 .
+\label{eq:l03-rewritten-schwarzschild}
+\end{align}
+現在只考察 \(r=2GM\) 附近的一小段區域。在變化緩慢的因子中，可以用 \(2GM\) 取代 \(r\)。但必須保留因子 \(r-2GM\)，因為它在視界處為零，並在視界兩側改變符號。因此，
+\begin{equation}
+ds^2\approx
+-\frac{r-2GM}{2GM}\,dt^2
++\frac{2GM}{r-2GM}\,dr^2 .
+\label{eq:l03-near-horizon-r}
+\end{equation}
+
+選擇新的徑向座標 \(\rho\)，使第二項簡化為 \(d\rho^2\)：
+\begin{equation}
+d\rho^2=\frac{2GM}{r-2GM}\,dr^2.
+\end{equation}
+在視界外取正平方根，並從 \(r=2GM\) 開始積分，得到
+\begin{align}
+d\rho&=\sqrt{\frac{2GM}{r-2GM}}\,dr,\\
+\rho&=2\sqrt{2GM}\sqrt{r-2GM},\\
+\rho^2&=8GM(r-2GM),
+\qquad
+r-2GM=\frac{\rho^2}{8GM}.
+\label{eq:l03-rho-r}
+\end{align}
+將結果代入式~\eqref{eq:l03-near-horizon-r}，可得
+\begin{equation}
+ds^2\approx
+-\frac{\rho^2}{16G^2M^2}\,dt^2+d\rho^2.
+\end{equation}
+最後重新縮放 Schwarzschild 時間，
+\begin{equation}
+\omega=\frac{t}{4GM},
+\qquad
+d\omega^2=\frac{dt^2}{16G^2M^2},
+\label{eq:l03-omega}
+\end{equation}
+便得到
+\begin{equation}
+\boxed{ds^2\approx-\rho^2d\omega^2+d\rho^2.}
+\label{eq:l03-near-horizon-rindler}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_03_figure_03.png}
+\caption{時間重新縮放後的板書：近視界 Schwarzschild 度規已成為與平直 Minkowski 時空相同的雙曲極座標度規。}
+\lectureframe{00:31:35.000}
+\end{figure}
+
+考察區域越靠近視界，這項近似就越準確，極限下可任意精確。這證明了我們要的局部結論：對足夠大的黑洞而言，視界處是用特殊座標描述的普通時空。有限質量 Schwarzschild 黑洞的曲率並非真的為零，但在視界處有限，而且隨 \(M\) 增大，視界處的曲率可以任意小。\editorialnote{局部曲率尺度約為 \(R_s^{-2}\)。Rindler 度規是近視界局部展開的首項，並不表示整個 Schwarzschild 幾何在全域上都是平直的。}
+
+\begin{classroomqa}
+\audiencequestion{當 \(r<2GM\) 時，式~\eqref{eq:l03-rho-r}會使這個外部的 \(\rho\) 成為虛數。這是否表示物理上出了問題？\lecturetimestamp{00:32:30}}
+\lecturerresponse{這只是以另一種形式重現相同的座標失效。目前的座標圖是為外部楔形區域構造的；若要延伸穿過視界，就需要另一個座標圖。這個特定 \(\rho\) 失效，並不代表視界處發生了物理事件。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{在近視界改寫中，近似後的式子如何從前一個精確式子得出？\lecturetimestamp{00:39:21}}
+\lecturerresponse{只有 \(r\) 中變化緩慢的部分被設為 \(2GM\)；小差值 \(r-2GM\) 則保留不變。這就是所採用的近似；當 \(r\) 趨近 \(2GM\) 時，近似會越來越準確。}
+\end{classroomqa}
+
+\section{座標的物理意義}
+
+這個變換指出
+\begin{equation}
+\rho=0\quad\Longleftrightarrow\quad r=2GM.
+\end{equation}
+外部區域 \(r>2GM\) 對應右側 Rindler 楔形區域 \(X>|T|\)。固定 \(\rho\) 的雙曲線代表停留在固定 Schwarzschild 半徑上的觀測者。從該楔形區域內任何位置發出的外向光線，都會穿越每一條半徑更大的 \(\rho\) 世界線，因此外部觀測者可以向外傳送訊息。未來零邊界之外的點無法將光訊號送回右側楔形區域。這條零邊界就是視界。
+
+\begin{classroomqa}
+\audiencequestion{這裡畫出的雙曲座標圖是否總是描述視界外的區域？\lecturetimestamp{00:35:22}}
+\lecturerresponse{是。在這個構造中，\(r>2GM\) 表示 \(\rho^2>0\)，事件位於右側外部楔形區域。零邊界 \(\rho=0\) 就是視界；目前的座標無法以實數外部座標延伸至視界之外。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{固定 \(\rho\) 的雙曲線代表一個時間，還是一個距離？\lecturetimestamp{00:37:21}}
+\lecturerresponse{在近視界近似下，它代表到視界的固定固有距離，因此也對應固定的 Schwarzschild 半徑。觀測者沿雙曲線運動，代表駐留於該處的觀測者經歷時間。}
+\end{classroomqa}
+
+沿固定 \(\rho\) 軌跡，式~\eqref{eq:l03-rindler-metric}給出
+\begin{equation}
+d\tau=\rho\,d\omega.
+\label{eq:l03-proper-time-rindler}
+\end{equation}
+因此 \(\omega\) 本身不是觀測者的固有時間，而是整個雙曲線族共用的角時間。每位觀測者都要乘上自己的 \(\rho\)，才得到固有時間；這就像弧長等於角度乘以圓的半徑。
+
+\begin{classroomqa}
+\audiencequestion{\(\omega\)是加速觀測者的固有時間嗎？\lecturetimestamp{00:51:45}}
+\lecturerresponse{差不多。在固定 \(\rho\) 下，固有時間增量為 \(\rho\,d\omega\)。其中的 \(\rho\) 因子不可省略。}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_04.png}
+\caption{近視界因果圖板：交叉的零邊界、外部楔形區域中的定半徑雙曲線，以及 \(\rho\) 與 \(r-2GM\) 之間的座標關係。}
+\lectureframe{00:34:35.000}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.04,>=Latex]
+  \draw[->] (-0.3,0) -- (4.6,0) node[right] {\(X\)};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {\(T\)};
+  \draw[very thick,blue!55!black] (0,0) -- (3,3);
+  \draw[very thick,blue!55!black] (0,0) -- (3,-3);
+  \node[blue!55!black,rotate=45] at (0.72,1.02) {future horizon};
+  \draw[thick,domain=-1.45:1.45,samples=80] plot ({0.75*cosh(\x)},{0.75*sinh(\x)});
+  \draw[thick,domain=-1.25:1.25,samples=80] plot ({1.25*cosh(\x)},{1.25*sinh(\x)});
+  \draw[very thick,domain=-1.05:1.05,samples=80] plot ({2.0*cosh(\x)},{2.0*sinh(\x)});
+  \node at (3.64,2.18) {Bob: \(\rho=\mathrm{const.}\)};
+  \draw[very thick,red!65!black,->] (1.2,-2.9) -- (1.2,2.9);
+  \node[red!65!black] at (1.58,-1.75) {Alice};
+  \fill[red!65!black] (1.2,1.2) circle (1.7pt);
+  \draw[dashed,->] (1.2,0) -- (2.27,1.07);
+  \node[align=left] at (3.18,0.80) {\small pre-crossing\\[-0.2em]\small light signal};
+\end{tikzpicture}
+\caption{與圖板配套的排版示意圖。Bob 沿固定 \(\rho\) 的加速雙曲線運動；Alice 沿局部慣性直線穿越未來視界。零邊界限制 Bob 的因果可達範圍，但不會成為 Alice 遭遇的局部障礙。}
+\end{figure}
+
+\section{Alice 下落，Bob 懸停}
+
+假設 Bob 與視界保持固定距離，Alice 則放開他的手並開始下落。Bob 的世界線是雙曲線，因此他處於加速狀態。Alice 的局部世界線近似為直線。她會在有限固有時間內穿越零邊界，穿越時不會遇到任何局部的不連續。
+
+兩人的因果描述並不對稱。Alice 穿越視界後，她發出的光無法到達 Bob；但有一段時間，Bob 發出的光仍能到達 Alice。Bob 收到的訊號來自 Alice 下落過程中愈來愈早的時刻。訊號抵達的間隔愈拉愈長，頻率發生紅移，強度也逐漸減弱。以 Schwarzschild 時間描述，Bob 永遠看不到穿越本身；Alice 看起來會漸漸靠近視界，並在那裡逐漸扁平化。這不是說她的鼻子扁了，而後腦仍維持原狀；來自她身體各處的訊號都被壓縮到同一個極限層中。
+
+\begin{classroomqa}
+\audiencequestion{Alice 穿越視界後還看得到 Bob，是因為 Bob 的光子朝她向內傳播嗎？\lecturetimestamp{00:42:48}}
+\lecturerresponse{是。重點就在這種單向的因果關係：Bob 發出的向內訊號可以進入，Alice 之後發出的向外訊號則無法逃回 Bob 那裡。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果 Alice 的腳先穿越視界，而眼睛仍在外面，她會暫時看不見自己的腳嗎？\lecturetimestamp{00:43:03}}
+\lecturerresponse{正常下落時不會出現視覺上的閃斷。光從腳傳到眼睛需要時間；相關訊號抵達時，她的眼睛也已經穿越視界。只有在猛烈地試圖讓頭留在外面、同時讓腳繼續向內時，才會造成另一種具有破壞性的情況。}
+\end{classroomqa}
+
+維持固定位置是一種非慣性運動。Bob 需要火箭推力，正如站在地板上的人需要地板向上的力，才能避免自由落體。Bob 懸停的位置愈靠近視界，所需的固有加速度就愈大；在局部 Rindler 近似下，其大小為 \(a=1/\rho\)，單位制取 \(c=1\)。\editorialnote{恢復單位後，局部 Rindler 觀測者的加速度為 \(a=c^2/\rho\)。對於嚴格靜止的 Schwarzschild 觀測者，越接近視界，固有加速度就越發散。}
+
+\begin{classroomqa}
+\audiencequestion{我們站在講堂裡時也在加速嗎？\lecturetimestamp{00:45:40}}
+\lecturerresponse{是，相對於自由落體參考系而言。我們受到地板支撐；若沒有地板，也沒有噴射背包，我們就會下落。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bob 最後能看到 Alice 到達距視界一個 Planck 長度之內嗎？那之後會發生什麼事？\lecturetimestamp{00:49:24}}
+\lecturerresponse{到那個尺度時，經典幾何描述就不再足夠。Planck 長度涉及 \(\hbar\)，所以要回答 Bob 在那裡能分辨什麼，必須用到量子力學。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{定半徑曲線似乎在一個近似直角的座標轉角處與視界相接。那裡可以取導數嗎？\lecturetimestamp{00:51:12}}
+\lecturerresponse{那個位置的座標圖確實有某種奇異之處，但局部物理並沒有奇異。涵蓋其他楔形區域的座標圖可以消除這個人為的轉角。就目前討論外部區域而言，Rindler 圖像已包含所需的因果資訊。}
+\end{classroomqa}
+
+因此，若不指明觀測者，問 Alice 是否\emph{真的}穿越視界，並沒有明確意義。Alice 的時鐘會在有限固有時間內到達視界；Bob 收到的訊號序列則永遠不會包含她穿越視界的事件。物理學關心的是各觀測者測量到什麼，以及如何比較他們的紀錄。
+
+\begin{classroomqa}
+\audiencequestion{更精確地說，Bob 自己的觀測時間雖然沒有上限，卻只能看到 Alice 未來有限的一段，對嗎？\lecturetimestamp{00:53:33}}
+\lecturerresponse{對。Alice 走完她下落過程中可被看見的那段時間，只需有限的固有時間。在理想化的永恆幾何中，Bob 會永遠收到延遲愈久、紅移愈強的訊號，但看不到 Alice 穿越視界後繼續變老。}
+\end{classroomqa}
+
+\section{加速視界已足以說明問題}
+
+這種因果結構不需要黑洞。一枚永遠保持勻加速的火箭，在平直時空中沿著 Rindler 雙曲線運動；它有一道零邊界，邊界之外的訊號無法追上火箭。對火箭上的觀測者而言，這就是加速視界，儘管慣性觀測者會把同一區域視為普通的 Minkowski 時空。
+
+\begin{classroomqa}
+\audiencequestion{這種現象是黑洞特有的，還是任何視界都會出現？\lecturetimestamp{00:55:25}}
+\lecturerresponse{勻加速觀測者也會遇到同樣的現象。他們有加速視界，無法看見視界之外的事件。就局部而言，黑洞視界在物理上與這種情形並無不同。}
+\end{classroomqa}
+
+這正是等效原理的作用：先理解勻加速，再認出引力場中的相同局部結構。回頭來看，甚至在黑洞受到認可之前，人們就可以從加速視界預想到引力視界。愛因斯坦本人並不接受黑洞會在物理上形成，儘管他所提出的理論推導出了黑洞幾何。對自由落體觀測者而言，視界平淡無奇；對堅持留在外部的觀測者而言，視界卻影響重大。這是兩種有效描述之間的張力，但還不是悖論。
+
+\section{回到熱與熵}
+
+休息之後，讓我們換上熱力學的觀點。在前面的說明中，黑洞像浴缸一樣一滴一滴地被填滿，只不過每一滴都是攜帶約一個位元的光子。每增加一個位元，視界面積就增加約一個 Planck 面積。精確的熵為
+\begin{equation}
+S_{\mathrm{BH}}=\frac{k_B A}{4\ell_P^2}.
+\end{equation}
+講座開玩笑說，如果 Planck 當初換一種方式定義長度，因子 \(1/4\) 就可以免去。嚴肅的重點是：量綱分析可以確定尺度，卻無法決定數值係數；Hawking 的計算則給出這個係數。\editorialnote{Planck 長度的標準定義為 \(\ell_P=\sqrt{G\hbar/c^3}\)。採用這項慣例及通常的熱力學熵後，因子 \(1/4\) 就是物理結果；重新定義長度的說法只是關於慣例的課堂玩笑。}
+
+溫度似乎很基本，因為手指和溫度計都能直接感受到它。熵往往顯得更抽象。講座把這種層次倒轉過來：把熵和能量視為基本變數，再根據熵改變時能量必須如何變化來定義溫度：
+\begin{equation}
+dE=T\,dS.
+\end{equation}
+在講座採用的位元單位中，\(\Delta S=1\)，因此增加或抹除一個位元所需的最小能量稱為 \(T\)。若草率地抹除---，也就是用邏輯上相當於大錘的方式---，耗散的能量可以任意大。這裡的定義談的是：將缺失的資訊轉移到環境的微觀自由度時，可能達到的最小耗散。在慣用單位中，一個二進位位元對應 \(\Delta S=k_B\ln2\) 的熵，而可逆抹除至少耗散 \(k_BT\ln2\)。\editorialnote{講座選擇以能量為基礎的自然單位來測量熵與溫度，因此省略了這個 Landauer 歸一化因子。}
+
+\subsection{單光子估算}
+
+選擇一個波長與 Schwarzschild 半徑相當的光子：
+\begin{equation}
+\lambda\sim R_s=\frac{2GM}{c^2}.
+\end{equation}
+按照區分 \(h\) 與 \(\hbar\) 的 \(2\pi\) 慣例，其能量約為
+\begin{equation}
+\Delta E\sim \frac{\hbar c}{\lambda}.
+\end{equation}
+這就是增加該位元所需的能量，因此
+\begin{equation}
+k_BT_H\sim\frac{\hbar c}{R_s}
+\sim\frac{\hbar c^3}{GM}.
+\label{eq:l03-hawking-scale}
+\end{equation}
+這種啟發式論證無法確定 \(2\)、\(\pi\) 等數值因子。精確的 Hawking 結果為
+\begin{equation}
+\boxed{k_BT_H=\frac{\hbar c^3}{8\pi GM}.}
+\label{eq:l03-hawking-exact}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_05.png}
+\caption{完整的溫度板書：\(R_s=2GM/c^2\)、單一位元的能量尺度 \(\hbar c/R_s\)，以及 Hawking 溫度的精確歸一化因子 \(8\pi\)。}
+\lectureframe{01:07:48.000}
+\end{figure}
+
+有兩個結論立即可得。第一，溫度隨 \(\hbar\) 趨零，因此這是量子效應。第二，
+\begin{equation}
+T_H\propto\frac{1}{M}.
+\end{equation}
+大型黑洞的溫度很低。以一個太陽質量為例，
+\begin{equation}
+T_H\approx6\times10^{-8}\ {\rm K},
+\end{equation}
+其溫度與講座估算的 \(10^{-8}\,\mathrm{K}\) 同量級，遠低於約 \(2.7\,\mathrm{K}\) 的宇宙微波背景溫度。
+
+\subsection{負熱容}
+
+將這樣的黑洞置於較暖的環境中。它會吸收能量，質量增加，而方程~\eqref{eq:l03-hawking-exact}指出它會變得更冷。於是它更容易吸收能量。若將它置於較冷的環境中，則會開始反向失控：它輻射並失去質量，因而變得更熱，輻射也更快。形式上，
+\begin{equation}
+C_{\mathrm{BH}}
+=\frac{dE}{dT_H}
+=c^2\frac{dM}{dT_H}
+<0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{這就是所謂的負比熱嗎？\lecturetimestamp{01:14:08}}
+\lecturerresponse{正是。自引力系統可能在失去能量時升溫。恆星也有類似現象：輻射使壓力降低，恆星因此收縮，而引力壓縮會使溫度升高。}
+\end{classroomqa}
+
+孤立黑洞並不因此違反物理。在當今宇宙中，恆星級黑洞比周遭環境冷，主要會吸收能量。隨著宇宙膨脹、背景溫度下降，吸收與放射的平衡最終可能反轉，由蒸發占主導。黑洞與有效上無限大的熱浴達成的簡單平衡並不穩定。\editorialnote{邊界條件很重要。黑洞可以在有限的反射腔中穩定下來；對某些足夠大的黑洞而言，在反德西特時空中也可以穩定。這裡所說的不穩定性，適用於漸近平直時空中的普通熱浴。}
+
+\section{蒸發定律}
+
+為了推導尺度關係，假設手邊沒有參考書，於是選用能讓記得的方程最簡潔的單位：
+\begin{equation}
+c=\hbar=G=k_B=1.
+\end{equation}
+這就是 Planck 單位。講座所列的特徵尺度為
+\begin{equation}
+\ell_P\sim10^{-35}\ {\rm m},
+\qquad
+t_P\sim10^{-43}\ {\rm s},
+\qquad
+m_P\sim10^{-8}\ {\rm kg}.
+\end{equation}
+Planck 質量大約相當於一粒肉眼可見的塵埃；Planck 長度和時間則小得驚人。由於 \(c=1\)，\(t_P\) 就是光穿越 \(\ell_P\) 所需的時間。
+
+把黑洞視為黑體，也就是會發出熱輻射的物體，而不是必須完全黑暗的物體。它可以發出電磁輻射，原則上也可以發出其他可產生的粒子，包括引力子。輻射功率與發射面積成正比，因為輻射由表面向外傳出。Stefan--Boltzmann 標度關係為
+\begin{equation}
+L=-\frac{dE}{dt}\sim A T^4.
+\end{equation}
+在 Planck 單位下，\(E=M\)、\(R_s\sim M\)、\(A\sim R_s^2\sim M^2\)、\(T\sim R_s^{-1}\sim M^{-1}\)。因此
+\begin{align}
+-\frac{dM}{dt}
+&\sim R_s^2\left(\frac{1}{R_s}\right)^4
+\sim\frac{1}{R_s^2}
+\sim\frac{1}{M^2},\\
+-M^2\frac{dM}{dt}&\sim1,\\
+-\frac{d(M^3)}{dt}&\sim1.
+\label{eq:l03-evap-scaling}
+\end{align}
+忽略量級為一的係數，蒸發壽命為
+\begin{equation}
+\boxed{t_{\mathrm{evap}}\sim M^3.}
+\label{eq:l03-lifetime}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_06.png}
+\caption{蒸發過程一覽：光度給出 \(-dM/dt\sim1/M^2\)，因此 \(M^3\) 均勻減少，壽命則與初始質量的三次方成正比。}
+\lectureframe{01:23:20.000}
+\end{figure}
+
+這種示意性的 Stefan--Boltzmann 估算忽略了灰體因子和粒子種類的數目。若採用最簡單的無質量粒子放射近似，對中性且不旋轉的黑洞恢復常數後可得
+\begin{equation}
+t_{\mathrm{evap}}
+=\frac{5120\pi G^2M_0^3}{\hbar c^4}.
+\label{eq:l03-exact-lifetime}
+\end{equation}
+這裡補上該數值係數，是編者所作的補充；講座推導的只有穩健的 \(M_0^3\) 依賴關係。
+
+\subsection{太陽、山岳與公斤尺度}
+
+太陽質量為 \(M_\odot\sim10^{30}\,\mathrm{kg}\sim10^{38}m_P\)。將質量取三次方，再乘上一個 Planck 時間，可得講座中刻意粗略的估算：
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{114}t_P
+\sim10^{71}\ {\rm s}
+\sim10^{64}\ {\rm yr}.
+\end{equation}
+兩種估算的結果都遠遠超過宇宙約 \(10^{10}\) 年的年齡。恢復式~\eqref{eq:l03-exact-lifetime}中的係數後，標準的太陽質量黑洞壽命估算約為 \(2\times10^{67}\) 年。\editorialnote{這個差異在預期之中：黑板上的計算省略了所有數值常數，並將 Planck 尺度取整為十的冪次。這裡要呈現的是質量三次方的標度關係，而不是精確的黑洞壽命估算。}
+
+接著，課堂試算一個\emph{山岳質量}的黑洞，最後採用粗略的課堂數值 \(M\sim10^{10}\,\mathrm{kg}\)，因此 \(M\sim10^{18}m_P\)，得到
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{54}t_P
+\sim10^{11}\ {\rm s}
+\sim10^4\ {\rm yr}.
+\end{equation}
+這裡保留了黑板上實際進行的算術。用來說明這個質量的口頭比喻---約 \(100\,\mathrm{km}^3\) 的岩石---，實際上會重得多；而精確的壽命係數也會大幅改變結果。\editorialnote{以普通岩石的密度計算，\(100\,\mathrm{km}^3\)的質量約為 \(10^{14}\,\mathrm{kg}\)，而非 \(10^{10}\,\mathrm{kg}\)。若質量為 \(10^{10}\,\mathrm{kg}\)，式~\eqref{eq:l03-exact-lifetime}給出的壽命約為 \(10^6\) 年。這些修正不影響講座要說明的重點：壽命隨質量的三次方降低。}
+
+\begin{classroomqa}
+\audiencequestion{質量只有一公斤的黑洞會非常小嗎？\lecturetimestamp{01:29:14}}
+\lecturerresponse{會。由於半徑與質量成正比，而一個太陽質量的 Schwarzschild 半徑約為數公里，一公斤黑洞的 Schwarzschild 半徑約為 \(10^{-27}\,\mathrm{m}\)。這種黑洞也會極熱，壽命極短。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這些蒸發估算是否假設環境溫度為零？\lecturetimestamp{01:29:53}}
+\lecturerresponse{這些估算適用於周遭環境比黑洞冷、使淨能量向外流出的情形。若環境較熱，能量反而會流入黑洞。至於 Hawking 溫度與目前背景溫度相同時的黑洞質量，留作練習。}
+\end{classroomqa}
+
+作為參考，令 \(T_H=2.7\,\mathrm{K}\)，可得 \(M\) 約為 \(10^{22}\,\mathrm{kg}\)，Schwarzschild 半徑約為 \(10^{-4}\,\mathrm{m}\)。\editorialnote{這是講座所留練習的解答，不屬於口頭推導的一部分。}
+
+\section{度規之下必須有什麼？}
+
+\begin{classroomqa}
+\audiencequestion{是什麼機制讓光子從黑洞中出來？\lecturetimestamp{01:30:53}}
+\lecturerresponse{在說明輻射的微觀機制之前，必須先找出產生熵的自由度。熱力學論證可以約束這些自由度必須具備的性質，但尚未明確呈現它們是什麼。}
+\end{classroomqa}
+
+這裡可以用流體力學來類比。流體力學以平滑的密度場和速度場描述流體，而不逐一追蹤分子；然而，熵揭示了同一平滑狀態背後有許多隱藏的微觀組態。同樣地，經典廣義相對論描述平滑的度規，卻沒有呈現黑洞熵所計數的眾多微觀自由度。面積定律和 Hawking 輻射都提供了線索，顯示 Einstein 理論是一種有效的宏觀描述。
+
+\begin{classroomqa}
+\audiencequestion{如果黑洞會放射能量，是否就等於它也放射資訊，也就是說，黑洞增長時吞入的資訊會在蒸發時回來？\lecturetimestamp{01:33:27}}
+\lecturerresponse{這正是我們要求的：若完整演化過程守恆資訊，出射輻射最終就必須能區分形成黑洞的不同可能狀態。這一要求仍須與物質穿越視界的因果圖像相協調。}
+\end{classroomqa}
+
+只有能量通量還不足以說明資訊。一個完全熱態的密度矩陣可以攜帶能量，卻遺失初始狀態的細節。在么正描述中，所需資訊編碼於放射量子之間的細微關聯中。\editorialnote{這個區分點明了資訊問題在現代物理中的形式，也讓講座提出的問題更加明確，而沒有改變原本的問題。}
+
+\section{資訊守恆作為結構原理}
+
+\begin{classroomqa}
+\audiencequestion{資訊守恆真的是一項基本原理嗎？\lecturetimestamp{01:34:13}}
+\lecturerresponse{它是最根本的原理之一。若不同的初始狀態能演化成完全相同的末態，定律就會抹去自身的過去。通常的守恆定律不只仰賴對稱性，也仰賴可逆的哈密頓演化或酉演化。}
+\end{classroomqa}
+
+如同講座中所設想的，假設有一條虛構的基本定律，會讓每一塊滑動的橡皮都停下來。不同的初始速度最終都到達同一狀態。末態的橡皮已無法區分自身的歷史：資訊遭到摧毀。動量和機械能也隨之消失。真實的摩擦在微觀層面並非如此；動量和能量會傳遞到桌面、空氣及熱自由度中。
+
+即使桌面完全均勻且無限延伸，也具有平移對稱性；然而，虛構的阻尼定律仍可能使橡皮停下。因此，僅憑平移對稱性，無法從這種非哈密頓規則推導出動量守恆。諾特定理假設存在作用量原理，以及與之相關的可逆動力學。用這裡的說法，對稱性加上保資訊的動力學，便會導出守恆定律。
+
+\begin{classroomqa}
+\audiencequestion{資訊守恆比因果性更根本嗎？\lecturetimestamp{01:37:00}}
+\lecturerresponse{它們是處於相近基礎層次的不同原理。因果性必須先精確界定---例如，訊號不能在允許的因果結構之外向後傳播---但任何一項原理都不能簡單取代另一項。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{哈密頓力學中所說的相空間面積守恆，是這個概念的經典版本嗎？\lecturetimestamp{01:37:38}}
+\lecturerresponse{是。劉維爾定理指出，哈密頓流會保持相空間體積。一群可能的初始狀態不會塌縮成較小的體積，因而抹去彼此的差異。在量子力學中，相應的敘述是酉性：內積得以保持，因此正交態之間的差異也會保留。}
+\end{classroomqa}
+
+在經典力學中，哈密頓流所輸運的相空間區域滿足
+\begin{equation}
+\frac{d}{dt}\,\mathrm{Vol}_{\Gamma}=0,
+\end{equation}
+在量子力學中，
+\begin{equation}
+\begin{aligned}
+\ket{\psi(t)}&=U(t)\ket{\psi(0)},\\
+U^\dagger U&=I,\\
+\braket{\psi(t)}{\phi(t)}
+&=\braket{\psi(0)}{\phi(0)}.
+\end{aligned}
+\end{equation}
+這些是「微觀差異在時間演化中得以保留」這項主張的精確表述。
+
+\section{熵取決於什麼？}
+
+最後的問答回到資訊理論中的熵。給定微觀可能狀態的機率\(p_i\)，
+\begin{equation}
+S=-k_B\sum_i p_i\ln p_i
+\label{eq:l03-shannon}
+\end{equation}
+熵便以熱力學單位表示；若不含\(k_B\)，則為無量綱的夏農熵。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_07.png}
+\caption{結尾的板書公式\(S=-\sum_i p_i\log p_i\)，寫出了由機率分佈計算出的單一熵值，並藉此區分兩者。}
+\lectureframe{01:40:32.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{是最大化熵來決定機率分佈，而不是由機率來決定熵嗎？\lecturetimestamp{01:38:33}}
+\lecturerresponse{機率分佈會透過式~\eqref{eq:l03-shannon}決定一個熵值；單一數值無法還原所有\(p_i\)。只有在給定歸一化條件及其他約束（例如固定平均能量）後，最大化熵才會選出一個分佈。}
+\end{classroomqa}
+
+這項區分讓講座恰好在正確的前沿告一段落。平滑幾何引出視界；視界引出熱力學；熱力學揭示隱藏的自由度；而資訊守恆如今要求這些自由度在演化時，不得抹去進入黑洞時帶有的差異。機制尚未提出。幾何與資訊的整理反而已清楚指出，任何成功的微觀理論都必須解釋這些自由度如何運作。
