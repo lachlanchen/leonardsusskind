@@ -1,0 +1,59 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 249,
+  "outline_entries": 101,
+  "target_characters": 189612,
+  "image_placements": 90,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Entrelazamiento cuántico, parte 1",
+  "pdf_sha256": "56919abe1833546b5e964fbcb344f4589e8e779ab283405f8c564d8393b64125",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 40,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "03ca8133d56074b65b8d0389231d61ca0d8d560dc4de578afd20e863827e5d9e",
+    "chapters/lecture_01/content.tex": "cb202e044a4ad23033119887a18b134844d76e2bc30d968f9c76bb65ef0eb326",
+    "chapters/lecture_02/content.tex": "5b73532aef49a0d4d79538a98e4260d2a90388acf2b734ffffd8ac2917fd3829",
+    "chapters/lecture_03/content.tex": "36fb850ca7eff370a35c9e8a7cc809df62cd7b5951ff7c99a01ebec4c6cc7d6c",
+    "chapters/lecture_04/content.tex": "4df05928faa8b490f8c7e0c4aabe534aec39aec3ff3e922716ab6372b7258d63",
+    "chapters/lecture_05/content.tex": "4757d6ea9dae4ac5e497c651703ccf194dfb3a137ee0411d1d6e298c25423b37",
+    "chapters/lecture_06/content.tex": "cffba40215a2563a545be749b74c922c2037f8179bfbd6f05f7cb34c44e38855",
+    "chapters/lecture_07/content.tex": "f2fa7ad7cd848b2f6d949948368d47e61054adc8672499a667aadb227dd8dbad",
+    "chapters/lecture_08/content.tex": "87b654cc4f70238829f4df38cc48f4adeab9071dfb0cf56f21da17e4451f3aeb",
+    "chapters/lecture_09/content.tex": "7e7acf5c9046cb7d97e0399a5b4cad2695a225aa730f4901864771fb11bb30e3"
+  },
+  "source_files": {
+    "course.tex": "72a1e515725a97fc2e253f5996bfc155ee3d469ec6acfa6e8636c7dc6f828086",
+    "common_preamble.tex": "9a36daedbd92b8869451acb618151d3f62c4b9aecc9569096f722f8c432366b3",
+    "chapters/lecture_01/content.tex": "069fdca92e038c3f0e678910c9e7fa39437c3bdc8329d3bb7d7262245820af0d",
+    "chapters/lecture_02/content.tex": "98737d8eccf4e76ab91b5dd5fa5cd3cbb20d2dcbc3f272efc59ef19441cce9ce",
+    "chapters/lecture_03/content.tex": "87927d5f4be2e8dd2bbf77e1a7473572ca289c80fc71e1aa1a5c1992a9e25707",
+    "chapters/lecture_04/content.tex": "6a8de00105505d81664e4ab2820bb31a9b0862a6a6f9ee19afc11413d9b695e1",
+    "chapters/lecture_05/content.tex": "13f18bf22fa8be72b88f59096fc375e96e954b21fdc9f71f1f021d528e91dce8",
+    "chapters/lecture_06/content.tex": "9f27bd0781909a5a7b615fb4f060f75291de1fd7ec68520635f7f42db18d0f76",
+    "chapters/lecture_07/content.tex": "13eb78c5b87a5465f536eeecc2ea14c594c27a293f6c2e32d74763dbb4be5ca4",
+    "chapters/lecture_08/content.tex": "2e0a5f5e29d73b1c9b4dad133027efb75433caeeab15f8181704d845afcb7c8c",
+    "chapters/lecture_09/content.tex": "73f786d1b5b2646d232b86c2dbd3093bb9446c1c35505f2363f8ca218c6deed2"
+  },
+  "translated_tex": {
+    "cover.tex": "86304a8522102b328431b488f8a7a726d06efccda4f59f24333095d3df752ac9",
+    "common_preamble.tex": "f95eaf6d525f758f278ca40231fac33b1db6166975d06fa2e170802c3cef137f",
+    "course.tex": "74a10635a8ed1253d55f57ec3da0de1b8c65e6906b3fdbff4636bd58eb0a81a5",
+    "chapters/lecture_07/content.tex": "083a2d83592905d21cea2a0f41f345e8985e4a13bdc45d4d415c2a6960c7b3a1",
+    "chapters/lecture_02/content.tex": "079231180d51fb194ef061502642f410962f58c4da780a06cd05a779325ae3ed",
+    "chapters/lecture_09/content.tex": "b3e9cd69e2fb30575dc893e0caa574a090a575d45658ffeff0f59f192b60421f",
+    "chapters/lecture_01/content.tex": "389b313cc2cc995846bcd5319840359acc937b1b660a60dc4941d49c1d04d704",
+    "chapters/lecture_03/content.tex": "5652afe3b85d58de78c407c597d9ce17993401dd4aaba40c3ce5501ee14d0c7c",
+    "chapters/lecture_08/content.tex": "e576ced3a8b5c3727cc652bd7c60304f20700e49a083f50c36d39cb03c8b1652",
+    "chapters/lecture_05/content.tex": "c802c67a5e53f553f20623a796ccc75aa3544272108358eafa9edb1a7fa2a3d1",
+    "chapters/lecture_04/content.tex": "5323121b8dafd1a7e0dd90ee088a4d7eda27829a0c67e4d1f756ce9b0c30e24b",
+    "chapters/lecture_06/content.tex": "fa82d0ce426627b1b8095d312ebe8c824da5f30f579a75eda8371b6d9eae2d3f"
+  }
+}

@@ -1,0 +1,723 @@
+\chapter{Geometría del espín y primer estado entrelazado}
+
+\lectureoverview{El entrelazamiento corresponde a sistemas con partes, pero no es posible abordar con rigor el problema de dos espines hasta completar el formalismo de un espín. Por eso empezamos con el espín a lo largo de un eje arbitrario, deducimos la probabilidad de transición entre dos direcciones, interpretamos la medición como un filtro e identificamos la conmutación como criterio de compatibilidad entre observables. Un argumento de conteo revela entonces que dos espines tienen más estados puros de los que pueden obtenerse preparando por separado cada espín. Los estados adicionales están entrelazados, y el ejemplo más sencillo ya presenta correlaciones definidas entre el par, aunque cada electrón, por separado, esté completamente despolarizado.}
+
+\section{Completar el problema de un espín}
+
+El teorema de Bell puede esperar. El entrelazamiento en sí comienza con dos electrones, pero la estructura restante de un electrón intervendrá en todos los cálculos. Terminemos, pues, el sistema de dos estados antes de combinar dos copias de este.
+
+Elijamos un vector unitario espacial ordinario
+\begin{equation}
+  \hat n=(n_1,n_2,n_3),
+  \qquad
+  n_1^2+n_2^2+n_3^2=1.
+  \label{eq:l04-unit-pointer}
+\end{equation}
+Las etiquetas \(1,2,3\) también pueden llamarse \(x,y,z\). Lo importante es que los ejes formen un único sistema de coordenadas coherente y dextrógiro.
+
+\begin{classroomqa}
+\lecturetimestamp{00:02:33}
+\audiencequestion{¿La terna de coordenadas dibujada en la pizarra es dextrógira?}
+\lecturerresponse{El primer dibujo es levógiro. Invertir el segundo eje, o intercambiar coherentemente las etiquetas de dos ejes, lo corrige. El cálculo que sigue solo emplea una convención dextrógira fija; la orientación accidental del dibujo no tiene contenido físico.}
+\end{classroomqa}
+
+El espín tiene tres componentes observables, representadas por las matrices de Pauli
+\begin{equation}
+  \begin{aligned}
+    \sigma_1&=
+    \begin{pmatrix}0&1\\1&0\end{pmatrix},
+    &
+    \sigma_2&=
+    \begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.5em]
+    \sigma_3&=
+    \begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+  \end{aligned}
+\end{equation}
+La componente a lo largo de \(\hat n\) es el producto escalar espacial ordinario del vector indicador con este vector de matrices:
+\begin{equation}
+  \sigma_{\hat n}
+  \equiv
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3.
+  \label{eq:l04-sigma-dot-n}
+\end{equation}
+Este producto escalar se calcula en el espacio físico tridimensional. No es el producto interno de dos vectores de estado.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_02.png}
+\caption{La componente espacial a lo largo de \(\hat n\) se convierte en una combinación lineal de tres observables matriciales.}
+\lectureframe{00:05:09}
+\end{figure}
+
+Al sustituir las matrices de Pauli se obtiene
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3 & n_1-in_2\\
+    n_1+in_2 & -n_3
+  \end{pmatrix}.
+  \label{eq:l04-sigma-n-matrix}
+\end{equation}
+Conviene abreviar
+\begin{equation}
+  n_-=n_1-in_2,
+  \qquad
+  n_+=n_1+in_2=n_-^*,
+\end{equation}
+de modo que
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}.
+\end{equation}
+Las entradas diagonales reales y las entradas conjugadas fuera de la diagonal hacen que el operador sea hermítico.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_03.png}
+\caption{El observable de espín a lo largo de un eje arbitrario, expresado explícitamente como matriz de dos por dos.}
+\lectureframe{00:07:34}
+\end{figure}
+
+En términos operativos, medir \(\sigma_{\hat n}\) significa orientar un campo magnético intenso a lo largo de \(\hat n\) y observar la respuesta dependiente del espín, representada en la clase por la emisión o no de un fotón. La matriz y la pregunta experimental describen la misma medición de dos maneras.
+
+Dos identidades sencillas nos servirán en el resto del cálculo. Primero,
+\begin{equation}
+  \sigma_{\hat n}^{\,2}=I.
+  \label{eq:l04-sigma-n-square}
+\end{equation}
+Esto se deduce multiplicando por sí misma la Ecuación~\eqref{eq:l04-sigma-n-matrix} o utilizando
+\begin{equation}
+  \sigma_i^2=I,
+  \qquad
+  \sigma_i\sigma_j=-\sigma_j\sigma_i
+  \quad(i\ne j).
+\end{equation}
+Por tanto, todo valor propio \(\lambda\) de \(\sigma_{\hat n}\) satisface \(\lambda^2=1\), así que los únicos resultados posibles son
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+Segundo,
+\begin{equation}
+  n_+n_-
+  =n_1^2+n_2^2
+  =1-n_3^2
+  =(1-n_3)(1+n_3).
+  \label{eq:l04-nplus-nminus}
+\end{equation}
+No se trata de un teorema profundo, pero esta identidad mantiene bajo control el álgebra de los vectores propios.
+
+\section{De la preparación a la probabilidad}
+
+Preparemos el electrón con espín \(+1\) a lo largo de \(\hat n\) y midámoslo después a lo largo de otra dirección, \(\hat m\). La pregunta central sobre un espín es
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  P(\sigma_{\hat m}=+1\mid\sigma_{\hat n}=+1).
+  \label{eq:l04-central-probability}
+\end{equation}
+La simetría sugiere que la respuesta debería depender únicamente del ángulo entre \(\hat n\) y \(\hat m\) y que intercambiar las dos direcciones no debería cambiarla. Estas expectativas sirven como comprobaciones, pero no sustituyen el postulado de probabilidad.
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:03}
+\audiencequestion{¿La mecánica cuántica nos dice por sí misma que las tres matrices de Pauli son operadores de espín, o eso se aprende mediante experimentos?}
+\lecturerresponse{La identificación forma parte de la estructura empírica acumulada de la mecánica cuántica; no es el resultado de un único experimento aislado. Los experimentos repetidos con espines revelan regularidades probabilísticas, y Einstein, Born, Heisenberg, Dirac y otros desarrollaron el formalismo matricial para representarlas. Los postulados son conjeturas extraordinariamente acertadas, condicionadas por los datos.}
+\end{classroomqa}
+
+Sea
+\begin{equation}
+  \sigma_{\hat n}\ket{n,+}=\ket{n,+},
+  \qquad
+  \sigma_{\hat m}\ket{m,+}=\ket{m,+}.
+  \label{eq:l04-nm-eigenstates}
+\end{equation}
+Los símbolos \(n,+\) y \(m,+\) son etiquetas dentro de los kets. Identifican los estados propios cuyo valor propio es \(+1\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_04.png}
+\caption{Los estados propios de \(+1\) para el espín a lo largo de \(\hat n\) y \(\hat m\).}
+\lectureframe{00:17:36}
+\end{figure}
+
+Lo primero que hay que calcular es la amplitud de probabilidad
+\begin{equation}
+  \mathcal A(m,+\mid n,+)=\braket{m,+}{n,+}.
+\end{equation}
+La probabilidad es su módulo al cuadrado:
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \left|\braket{m,+}{n,+}\right|^2.
+  \label{eq:l04-born-nm}
+\end{equation}
+Primero la amplitud y luego la probabilidad: ese orden es el paso cuántico esencial.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_04_figure_05.png}
+\caption{El solapamiento entre el estado \(n\) preparado y el estado \(m\) sometido a prueba es la amplitud de probabilidad.}
+\lectureframe{00:19:59}
+\end{figure}
+
+\subsection{Cálculo del estado propio}
+
+Escribamos un vector propio candidato de \(+1\) para \(\sigma_{\hat n}\) como
+\begin{equation}
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix}.
+\end{equation}
+Podemos dejar la normalización para después; una fase global no tiene efectos físicos. Fuera del parche de coordenadas del polo sur, podemos elegir \(\alpha=1\) y escribir \(\beta=z\). La componente superior de
+\begin{equation}
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}
+  \begin{pmatrix}1\\z\end{pmatrix}
+  =
+  \begin{pmatrix}1\\z\end{pmatrix}
+\end{equation}
+da
+\begin{equation}
+  n_3+n_-z=1,
+  \qquad
+  z=\frac{1-n_3}{n_-}.
+  \label{eq:l04-z-solution}
+\end{equation}
+La componente inferior conduce a la misma condición una vez que se utiliza la Ecuación~\eqref{eq:l04-nplus-nminus}.
+
+El vector sin normalizar tiene norma al cuadrado
+\begin{align}
+  \begin{pmatrix}
+    1&\dfrac{1-n_3}{n_+}
+  \end{pmatrix}
+  \begin{pmatrix}
+    1\\[3pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}
+  &=
+  1+\frac{(1-n_3)^2}{n_+n_-}
+  \notag\\
+  &=
+  1+\frac{1-n_3}{1+n_3}
+  =
+  \frac{2}{1+n_3}.
+  \label{eq:l04-unnormalized-norm}
+\end{align}
+Por tanto, una elección normalizada es
+\begin{equation}
+  \ket{n,+}
+  =
+  \sqrt{\frac{1+n_3}{2}}
+  \begin{pmatrix}
+    1\\[5pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}.
+  \label{eq:l04-normalized-n-state}
+\end{equation}
+En \(n_3=-1\), esta expresión en coordenadas es singular, aunque el estado no lo sea: el estado propio es simplemente \(\ket d=(0,1)^T\). La singularidad pertenece a la convención de fase, no al espín.
+
+Al sustituir \(n\) por \(m\) y tomar el conjugado se obtiene
+\begin{equation}
+  \bra{m,+}
+  =
+  \sqrt{\frac{1+m_3}{2}}
+  \begin{pmatrix}
+    1&
+    \dfrac{1-m_3}{m_+}
+  \end{pmatrix}.
+\end{equation}
+El solapamiento tiene un aspecto poco manejable, y multiplicarlo por su conjugado parece aún peor. El uso repetido de la Ecuación~\eqref{eq:l04-nplus-nminus} reduce el resultado a
+\begin{equation}
+  \begin{aligned}
+    P(m,+\mid n,+)
+    &=\frac{1+n_1m_1+n_2m_2+n_3m_3}{2}\\
+    &=\frac{1+\hat n\cdot\hat m}{2}.
+  \end{aligned}
+  \label{eq:l04-spin-transition-probability}
+\end{equation}
+Si \(\theta_{nm}\) es el ángulo entre las dos direcciones espaciales,
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \frac{1+\cos\theta_{nm}}{2}
+  =
+  \cos^2\frac{\theta_{nm}}{2}.
+  \label{eq:l04-half-angle-probability}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:32:47}
+\audiencequestion{¿El solapamiento debe anularse porque los dos estados son ortogonales?}
+\lecturerresponse{No. Las etiquetas \(m,+\) y \(n,+\) se refieren a distintos ejes de medición, no a distintos valores propios de un mismo observable fijo. Si \(m=n\), los dos estados coinciden y su solapamiento es uno. Solo son ortogonales cuando las direcciones físicas son opuestas, de modo que un estado es el estado \(+1\) y el otro es el estado \(-1\) de la misma componente del espín.}
+\end{classroomqa}
+
+\section{Qué significa la fórmula de probabilidad}
+
+La Ecuación~\eqref{eq:l04-spin-transition-probability} supera tres comprobaciones inmediatas:
+\begin{align}
+  \hat m=\hat n
+  &\quad\Longrightarrow\quad P=1,
+  \notag\\
+  \hat m=-\hat n
+  &\quad\Longrightarrow\quad P=0,
+  \notag\\
+  \hat m\cdot\hat n=0
+  &\quad\Longrightarrow\quad P=\frac12.
+\end{align}
+La respuesta depende únicamente del ángulo relativo y es simétrica al intercambiar \(m\leftrightarrow n\). Girar todo el aparato no cambia ninguna predicción.
+
+Este es el notable compromiso que ofrece el espín de uno medio. A lo largo de cualquier eje, el resultado observado sigue siendo \(+1\) o \(-1\); nunca es un valor de espín fraccionario. La dependencia continua con la rotación aparece, en cambio, en las probabilidades de esos dos resultados discretos.
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:20}
+\audiencequestion{¿Cómo sabemos que los ensayos repetidos corresponden al mismo electrón, y cómo se mide una probabilidad?}
+\lecturerresponse{Se puede confinar un electrón en una cavidad y monitorizar la carga conservada mediante su flujo eléctrico, volver a prepararlo a lo largo de \(\hat n\) y repetir la medición a lo largo de \(\hat m\). También se puede preparar de la misma manera un conjunto grande de electrones y medir cada uno una sola vez. En ambos procedimientos, la proporción a largo plazo de resultados positivos y negativos es la misma, dentro del error estadístico.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:41:29}
+\audiencequestion{¿Es necesario medir a todos los miembros del conjunto en un único experimento colectivo?}
+\lecturerresponse{No. Cada miembro se prepara con el mismo protocolo y se mide por separado. Un millón de ensayos de este tipo constituyen un único experimento estadístico solo en el sentido de que sus frecuencias de resultados estiman la misma probabilidad.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:42:23}
+\audiencequestion{Si se reutiliza un electrón, ¿cuántos fotones puede emitir?}
+\lecturerresponse{No hay una cuota fija de por vida. Cada ciclo implica trabajo externo al encender el campo magnético. Si el espín tiene la orientación de mayor energía, esa energía suministrada puede salir en forma de un fotón durante la relajación. En principio, el aparato puede repetir indefinidamente el ciclo de preparación y emisión.}
+\end{classroomqa}
+
+Una vez conocida la invariancia rotacional, la fórmula se obtiene muy rápidamente: elijamos \(\hat n\) como tercer eje, de modo que \(\ket{n,+}=(1,0)^T\), y leamos la probabilidad en la componente superior de \(\ket{m,+}\). Pero recurrir a ese atajo desde el principio supondría dar por sentada la simetría que acaba de demostrar el cálculo explícito.
+
+\begin{classroomqa}
+\lecturetimestamp{00:43:33}
+\audiencequestion{¿Una elección de base mejor podría eliminar esos engorrosos vectores propios de eje arbitrario?}
+\lecturerresponse{Sí. Una vez que dispongamos de rotaciones y transformaciones unitarias, podremos alinear un eje de coordenadas con una de las direcciones y simplificar el cálculo. En esta etapa, el cálculo explícito cumple una función: verifica que las matrices de Pauli elegidas producen realmente una respuesta invariante bajo rotaciones, en vez de suponerlo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:48:30}
+\audiencequestion{¿Cuál es la razón física de que la respuesta dependa únicamente del ángulo?}
+\lecturerresponse{La respuesta estructural pertenece a la teoría cuántica de la simetría: las rotaciones espaciales se representan mediante transformaciones unitarias que actúan sobre los estados y los observables de espín. Ese lenguaje se introducirá más adelante. Por ahora, la dependencia angular es un resultado que nos hemos ganado con el cálculo de las matrices de Pauli.}
+\end{classroomqa}
+
+\section{La medición es un filtro}
+
+Una medición hace más que comunicar un número. Si se mide \(\sigma_{\hat m}\) y el resultado es \(+1\), el electrón queda en \(\ket{m,+}\). El aparato actúa como detector y preparador de estados a la vez, de forma parecida a como un polarizador pone a prueba un fotón y deja al fotón transmitido polarizado a lo largo de su propio eje.
+
+Esta regla de cambio de estado concreta el problema de la medición simultánea. Dos observables solo pueden tener juntos valores definidos reproducibles si existen estados que sean vectores propios de ambos.
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:29}
+\audiencequestion{¿Puede una medición determinar simultáneamente dos componentes distintas del espín, como \(\sigma_1\) y \(\sigma_2\)?}
+\lecturerresponse{No. Sus vectores propios son distintos. La medición de una componente deja el electrón en un estado propio de esa componente, pero ese estado no es propio de la otra. Por tanto, la primera medición destruye la definición necesaria para la segunda.}
+\end{classroomqa}
+
+La afirmación general en dimensión finita se expresa de la forma más clara para operadores hermíticos.
+
+\begin{theorem}
+Dos operadores hermíticos \(A\) y \(B\) son diagonalizables simultáneamente si y solo si conmutan:
+\begin{equation}
+  [A,B]\equiv AB-BA=0.
+  \label{eq:l04-commutator}
+\end{equation}
+De manera equivalente, admiten una base ortonormal completa de vectores propios comunes.
+\end{theorem}
+
+Para demostrar la implicación sencilla, supongamos que
+\begin{equation}
+  A\ket{\alpha_i}=\lambda_i\ket{\alpha_i},
+  \qquad
+  B\ket{\alpha_i}=\mu_i\ket{\alpha_i}
+\end{equation}
+para una base completa. Entonces
+\begin{align}
+  AB\ket{\alpha_i}
+  &=\lambda_i\mu_i\ket{\alpha_i},
+  \notag\\
+  BA\ket{\alpha_i}
+  &=\mu_i\lambda_i\ket{\alpha_i},
+\end{align}
+por lo que \(AB\) y \(BA\) coinciden sobre cada vector de la base. Así, \(AB=BA\). A la inversa, si los operadores hermíticos \(A\) y \(B\) conmutan, \(B\) conserva cada subespacio propio de \(A\); diagonalizar \(B\) dentro de cualquier subespacio propio degenerado produce una base común de vectores propios.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_06.png}
+\caption{Dos observables pueden compartir los mismos vectores propios y asignarles valores propios distintos.}
+\lectureframe{00:55:45}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:53:56}
+\audiencequestion{¿Podríamos aplicar simultáneamente campos magnéticos a lo largo de \(x\) y \(y\) y llamarlo una medición simultánea?}
+\lecturerresponse{Los campos se combinan en una única dirección resultante. Entonces, el aparato mide el espín a lo largo de ese eje resultante, quizá a \(45^\circ\), en lugar de medir \(\sigma_x\) y \(\sigma_y\) por separado. El intento produce un tercer observable, no dos lecturas compatibles.}
+\end{classroomqa}
+
+\section{Todo estado puro de un espín tiene un eje}
+
+Invirtamos ahora el problema de los vectores propios. Dado un espinor normalizado arbitrario
+\begin{equation}
+  \ket\psi=
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix},
+  \qquad
+  |\alpha|^2+|\beta|^2=1,
+  \label{eq:l04-general-spinor}
+\end{equation}
+¿existe alguna dirección espacial \(\hat n\) tal que satisfaga
+\begin{equation}
+  \sigma_{\hat n}\ket\psi=\ket\psi?
+  \label{eq:l04-reverse-eigenproblem}
+\end{equation}
+Sí. En la clase, primero vemos por qué mediante un conteo. Las dos componentes complejas contienen cuatro números reales. La normalización elimina uno, y la fase global físicamente irrelevante elimina otro, de modo que quedan dos. Un vector indicador unitario también tiene dos parámetros reales independientes, como la longitud y la latitud.
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:52}
+\audiencequestion{¿Cómo puede el estado tener solo dos grados de libertad si tanto \(\alpha\) como \(\beta\) son complejos?}
+\lecturerresponse{Al principio, el estado tiene cuatro componentes reales. La condición de normalización elimina un grado de libertad real, y multiplicar todo el estado por \(e^{i\theta}\) no cambia ninguna probabilidad, por lo que la fase común elimina otro. Quedan dos parámetros físicamente significativos, que corresponden a los dos ángulos de un vector indicador unitario.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:20}
+\audiencequestion{¿También hay que resolver el valor propio?}
+\lecturerresponse{Aquí el valor propio buscado está fijado en \(+1\). Solo buscamos la dirección cuyo estado de espín arriba es el espinor dado. El vector indicador opuesto describiría el mismo rayo como estado de espín abajo con valor propio \(-1\).}
+\end{classroomqa}
+
+El conteo explica por qué debería existir esa correspondencia. Una construcción directa la confirma. Definamos
+\begin{align}
+  n_1&=\bra\psi\sigma_1\ket\psi
+      =2\operatorname{Re}(\alpha^*\beta),
+  \notag\\
+  n_2&=\bra\psi\sigma_2\ket\psi
+      =2\operatorname{Im}(\alpha^*\beta),
+  \notag\\
+  n_3&=\bra\psi\sigma_3\ket\psi
+      =|\alpha|^2-|\beta|^2.
+  \label{eq:l04-bloch-components}
+\end{align}
+La normalización da \(n_1^2+n_2^2+n_3^2=1\) y la sustitución directa da la Ecuación~\eqref{eq:l04-reverse-eigenproblem}. Así, todo estado puro de un espín es un estado de espín arriba a lo largo de algún eje espacial.
+
+La afirmación también tiene una versión operativa. Preparemos muchas copias del mismo estado puro desconocido. Midamos grupos de copias a lo largo de direcciones de prueba, ajustemos el imán y busquemos la dirección para la que todos los resultados sean de espín arriba. Los datos finitos determinan la dirección solo con cierta incertidumbre, pero el estado ideal tiene un eje exacto.
+
+Las preguntas forman parte de este método; no lo interrumpen. Un breve aparte de clase recuerda que niños de diez años preguntaban libremente sobre la teoría de cuerdas, las dimensiones adicionales y si los neutrinos que nos rodean causan dolor de cabeza. El detalle de una pregunta puede ser erróneo; sigue siendo valioso estar dispuesto a exponer el punto de confusión.
+
+\section{Dos espines y operadores locales}
+
+Antes de combinar dos espines, anotemos cómo actúan las matrices de Pauli sobre la base de \(\sigma_3\):
+\begin{align}
+  \sigma_1\ket u&=\ket d,
+  &
+  \sigma_1\ket d&=\ket u,
+  \notag\\
+  \sigma_2\ket u&=i\ket d,
+  &
+  \sigma_2\ket d&=-i\ket u,
+  \notag\\
+  \sigma_3\ket u&=\ket u,
+  &
+  \sigma_3\ket d&=-\ket d.
+  \label{eq:l04-pauli-action-table}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\linewidth]{lecture_04_figure_07.png}
+\caption{La tabla de acción de Pauli reformula las matrices como reglas sobre la base de espín arriba y abajo.}
+\lectureframe{01:09:35}
+\end{figure}
+
+Imaginemos ahora dos electrones en posiciones distinguibles, de modo que solo varíen sus espines. Los cuatro estados de la base son
+\begin{equation}
+  \ket{uu},
+  \qquad
+  \ket{du},
+  \qquad
+  \ket{ud},
+  \qquad
+  \ket{dd}.
+  \label{eq:l04-two-spin-basis}
+\end{equation}
+La primera etiqueta corresponde al electrón \(1\) y la segunda, al electrón \(2\). Son mutuamente ortonormales porque representan resultados conjuntos distintos de las dos mediciones de la tercera componente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_08.png}
+\caption{Las cuatro etiquetas de la base producto generan el espacio de estados de dos espines.}
+\lectureframe{01:11:40}
+\end{figure}
+
+Llamemos \(\sigma_i\) a los operadores del electrón \(1\) y \(\tau_i\) a los del electrón \(2\). Más explícitamente,
+\begin{equation}
+  \sigma_i\equiv\sigma_i\otimes I,
+  \qquad
+  \tau_i\equiv I\otimes\sigma_i.
+\end{equation}
+El primer conjunto actúa solo sobre la primera etiqueta y el segundo, solo sobre la segunda:
+\begin{align}
+  \sigma_1\ket{ud}&=\ket{dd},
+  &
+  \sigma_1\ket{dd}&=\ket{ud},
+  \notag\\
+  \sigma_3\ket{dd}&=-\ket{dd},
+  &
+  \tau_2\ket{ud}&=-i\ket{uu}.
+  \label{eq:l04-local-operator-examples}
+\end{align}
+Una vez conocida la acción de un operador sobre los cuatro estados de la base, la linealidad determina su acción sobre cualquier estado de dos espines.
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:47}
+\audiencequestion{¿Por qué aparece el factor \(-i\) fuera del ket? ¿Actúa sobre ambos electrones?}
+\lecturerresponse{Los símbolos que aparecen dentro del ket son etiquetas de una configuración de la base. Un escalar complejo multiplica el vector de estado completo, por eso la notación habitual lo coloca fuera. En este caso, el factor procede de la acción de \(\tau_2\) sobre la segunda etiqueta; escribirlo fuera no significa que se haya aplicado una operación física por separado a ambos electrones.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:44}
+\audiencequestion{¿La multiplicación por \(i\) representa una rotación del electrón en el espacio ordinario?}
+\lecturerresponse{No por sí sola. Es una multiplicación por un escalar complejo en el espacio de estados. Más adelante, las rotaciones espaciales se representarán mediante ciertos operadores unitarios; un factor \(i\) aislado en esta tabla de acción no representa un giro literal en el espacio real.}
+\end{classroomqa}
+
+\section{Seis parámetros, no cuatro}
+
+Un estado puro general del par es
+\begin{equation}
+  \ket\Psi
+  =
+  c_{uu}\ket{uu}
+  +c_{du}\ket{du}
+  +c_{ud}\ket{ud}
+  +c_{dd}\ket{dd}.
+  \label{eq:l04-general-two-spin-state}
+\end{equation}
+Cuatro coeficientes complejos proporcionan ocho números reales. La normalización elimina uno y la fase global elimina otro:
+\begin{equation}
+  8-1-1=6.
+  \label{eq:l04-two-spin-parameter-count}
+\end{equation}
+Un estado puro preparado por separado para el electrón \(1\) requiere dos parámetros reales, y el electrón \(2\) necesita otros dos: solo hay cuatro. Los dos parámetros que faltan no son un error de contabilidad. Indican que hay estados puros del par que no pueden asignarse como estados puros separados de sus partes.
+
+Identifiquemos primero los estados que sí proceden de preparaciones separadas. Si
+\begin{equation}
+  \ket{\psi_1}=\alpha_1\ket u+\beta_1\ket d,
+  \qquad
+  \ket{\psi_2}=\alpha_2\ket u+\beta_2\ket d,
+\end{equation}
+entonces
+\begin{align}
+  \ket{\psi_1}\otimes\ket{\psi_2}
+  &=
+  \alpha_1\alpha_2\ket{uu}
+  +\alpha_1\beta_2\ket{ud}
+  \notag\\
+  &\quad
+  +\beta_1\alpha_2\ket{du}
+  +\beta_1\beta_2\ket{dd}.
+  \label{eq:l04-product-expansion}
+\end{align}
+Esto es un \emph{estado producto}. Cada electrón tiene su propio eje de polarización, como ocurriría si las dos preparaciones magnéticas se llevaran a cabo de manera independiente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_09.png}
+\caption{El producto de dos estados de un espín da un estado producto restringido de cuatro términos.}
+\lectureframe{01:25:15}
+\end{figure}
+
+Si se disponen los cuatro coeficientes en la forma
+\begin{equation}
+  C=
+  \begin{pmatrix}
+    c_{uu}&c_{ud}\\
+    c_{du}&c_{dd}
+  \end{pmatrix},
+\end{equation}
+el estado es producto si y solo si \(C\) tiene rango uno, lo cual equivale a
+\begin{equation}
+  c_{uu}c_{dd}-c_{ud}c_{du}=0.
+  \label{eq:l04-product-condition}
+\end{equation}
+La mayoría de las elecciones de cuatro amplitudes no satisface esta condición. Son estados entrelazados.
+
+\section{El primer estado entrelazado}
+
+El primer ejemplo de la clase es
+\begin{equation}
+  \ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}+\ket{du}\right).
+  \label{eq:l04-psi-plus}
+\end{equation}
+No puede factorizarse en un estado para el electrón \(1\) y otro para el electrón \(2\). Si una medición de la tercera componente encuentra abajo al electrón \(2\), el electrón \(1\) está arriba; si encuentra arriba al electrón \(2\), el electrón \(1\) está abajo. El par contiene información definida que ninguna de las partículas posee por separado.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_10.png}
+\caption{La primera superposición entrelazada contiene un espín arriba y otro abajo, pero no asigna de antemano ninguno de los resultados a una partícula concreta.}
+\lectureframe{01:29:30}
+\end{figure}
+
+Para ver cómo es cada electrón por separado, calculemos los tres valores esperados locales. Para la primera componente,
+\begin{equation}
+  \sigma_1\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{dd}+\ket{uu}\right),
+\end{equation}
+que es ortogonal a \(\ket{\psi_+}\). Por tanto,
+\begin{equation}
+  \bra{\psi_+}\sigma_1\ket{\psi_+}=0.
+\end{equation}
+De manera análoga,
+\begin{equation}
+  \sigma_2\ket{\psi_+}
+  =
+  \frac{i}{\sqrt2}
+  \left(\ket{dd}-\ket{uu}\right),
+\end{equation}
+por lo que
+\begin{equation}
+  \bra{\psi_+}\sigma_2\ket{\psi_+}=0.
+\end{equation}
+Para la tercera componente,
+\begin{equation}
+  \sigma_3\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right),
+\end{equation}
+y las dos contribuciones diagonales se cancelan:
+\begin{equation}
+  \bra{\psi_+}\sigma_3\ket{\psi_+}
+  =\frac12(1-1)=0.
+\end{equation}
+Así,
+\begin{equation}
+  \begin{aligned}
+    \bra{\psi_+}\sigma_i\ket{\psi_+}&=0,\\
+    \bra{\psi_+}\tau_i\ket{\psi_+}&=0,
+    \qquad i=1,2,3.
+  \end{aligned}
+  \label{eq:l04-zero-local-spin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_11.png}
+\caption{El estado transformado y la cancelación \(1-1=0\) establecen que los valores esperados locales del espín se anulan.}
+\lectureframe{01:35:50}
+\end{figure}
+
+Para cualquier dirección,
+\begin{equation}
+  \bra{\psi_+}\sigma_{\hat n}\ket{\psi_+}=0,
+  \qquad
+  \bra{\psi_+}\tau_{\hat n}\ket{\psi_+}=0.
+  \label{eq:l04-zero-arbitrary-local-spin}
+\end{equation}
+Como cada medición local solo puede dar los resultados \(\pm1\), un valor esperado nulo significa que
+\begin{equation}
+  P(\sigma_{\hat n}=+1)
+  =
+  P(\sigma_{\hat n}=-1)
+  =
+  \frac12,
+\end{equation}
+y lo mismo se cumple para el segundo electrón. Ninguna dirección polariza por sí sola a ninguno de los dos electrones. Esto es imposible para un estado puro de un espín, pero perfectamente posible para una parte de un estado puro entrelazado.
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:23}
+\audiencequestion{¿El resultado local mitad y mitad y el hecho de que medir un electrón nos informe sobre el otro son la misma afirmación?}
+\lecturerresponse{No. Primero, dejemos de lado el electrón \(2\): al medir por separado el electrón \(1\) en cualquier dirección, se obtiene una distribución mitad y mitad. Eso demuestra que no hay polarización local. La correlación es una afirmación conjunta distinta sobre la relación entre los resultados registrados de ambos electrones. El entrelazamiento produce las dos características, pero no hay que utilizar una como sustituto de la demostración de la otra.}
+\end{classroomqa}
+
+\section{Correlación antes de Bell}
+
+La correlación por sí sola no es exclusivamente cuántica. Mezclemos una moneda de un centavo y otra de diez, separémoslas sin mirar y examinemos una. Antes de inspeccionar ninguna, cada una tiene una probabilidad de cincuenta por ciento de ser la de un centavo, pero encontrar aquí la de un centavo nos dice que la moneda distante es la de diez. El par contiene información definida aunque ninguna de sus partes la contenga por sí sola.
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:45}
+\audiencequestion{¿La inferencia sobre las monedas solo funciona si sabemos que la pareja original contenía exactamente una de cada tipo?}
+\lecturerresponse{Exactamente. La inferencia clásica depende de una preparación fiable. Del mismo modo, una predicción de correlación cuántica solo se aplica cuando el sistema de dos electrones se ha preparado en el estado conjunto especificado.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:09}
+\audiencequestion{Para \(\ket{\psi_+}\), ¿la probabilidad de que las dos mediciones de la tercera componente den arriba es cero? ¿Eso demuestra que los espines son opuestos a lo largo de cualquier eje?}
+\lecturerresponse{La probabilidad de \(uu\) en la base del tercer eje es cero, y los dos resultados de la tercera componente son opuestos. Pero la segunda conclusión es demasiado fuerte para este estado con signo más. Su espín local es nulo en todas las direcciones, mientras que su correlación conjunta depende de la dirección. Los resultados siempre opuestos corresponden al singlete con signo menos que se introduce al final de la clase.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:51}
+\audiencequestion{¿Podría imaginarse la pareja clásica como dos monedas soldadas de modo que una cara siempre quede opuesta a la otra?}
+\lecturerresponse{Ese es un posible mecanismo clásico para una anticorrelación fija, siempre que al agitarlas no se altere el vínculo. Sigue siendo una disposición clásica oculta, establecida durante la preparación. La analogía es deliberadamente provisional; el teorema de Bell pondrá a prueba dónde falla cualquier explicación clásica de ese tipo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:32}
+\audiencequestion{¿Dónde interviene la ley de los grandes números si el resultado de un lado ya determina el resultado del otro?}
+\lecturerresponse{La certeza condicional es una afirmación sobre un ensayo, una vez especificados el estado conjunto y uno de los resultados. Aun así, hacen falta ensayos repetidos para verificar experimentalmente que la correlación prevista es fiable y para estimar los valores esperados y las probabilidades no ideales. La ley de los grandes números relaciona esas frecuencias repetidas con la distribución teórica.}
+\end{classroomqa}
+
+Los dos observadores pueden estar separados por una distancia enorme. Observar un resultado cambia lo que el observador local sabe sobre el otro, pero no envía un mensaje controlable al observador distante. En esta etapa, la situación aún se parece a la de las monedas separadas.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:46}
+\audiencequestion{¿Es correcto pensar en el par cuántico como en las dos monedas separadas?}
+\lecturerresponse{Es la comparación clásica inicial adecuada, pero no la explicación cuántica definitiva. El teorema de Bell trata de la diferencia observable entre un par que posee propiedades clásicas preexistentes y un par cuántico entrelazado. Dejaremos esa distinción para más adelante, cuando hayamos calculado las correlaciones necesarias.}
+\end{classroomqa}
+
+\section{El singlete y su preparación}
+
+Al final del cálculo en la pizarra, sustituyamos el signo más por un signo menos:
+\begin{equation}
+  \ket{\psi_-}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right).
+  \label{eq:l04-singlet}
+\end{equation}
+El cambio mantiene en cero los valores esperados locales de la Ecuación~\eqref{eq:l04-zero-local-spin} y conserva los resultados opuestos en el tercer eje. Sí modifica las correlaciones conjuntas transversales. Este estado con signo menos es el singlete de espín, el estado invariante bajo rotaciones en el que los dos espines son opuestos a lo largo de cualquier eje de medición común.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_12.png}
+\caption{El último cambio en la pizarra sustituye la superposición simétrica por el singlete con signo menos, sin alterar la anulación del espín local.}
+\lectureframe{01:47:25}
+\end{figure}
+
+En la imagen física simplificada que usamos aquí, acercar lo suficiente dos momentos magnéticos electrónicos localizados para que interactúen permite que la alineación de mayor energía se relaje mediante la emisión de un fotón. Si no hay un eje externo preferente, el estado de espín de menor energía se representa mediante el singlete simétrico bajo rotaciones. Para calcular la interacción exacta y entender por qué la fase relativa debe ser negativa se necesita un desarrollo adicional.
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:02}
+\audiencequestion{¿La preparación práctica consiste simplemente en acercar dos electrones y esperar?}
+\lecturerresponse{En este modelo idealizado, sí: dejamos actuar la interacción entre los espines y permitimos que la relajación radiativa conduzca al estado de menor energía. Basta con que los electrones estén lo bastante cerca y durante el tiempo suficiente para que su interacción magnética sea efectiva. En un protocolo de preparación real también hay que controlar el estado orbital y las interacciones que compiten con ella.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:16}
+\audiencequestion{¿Se trata simplemente del principio de exclusión de Pauli?}
+\lecturerresponse{No. A los dos electrones se les han asignado ubicaciones espaciales distinguibles, así que el análisis de sus espines todavía no exige antisimetrizar funciones de onda orbitales que se solapen. La exclusión cobra importancia cuando electrones idénticos ocupan estados de una partícula que se solapan; el argumento de entrelazamiento que se presenta aquí ya funciona para sitios separados.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:31}
+\audiencequestion{¿Un haz ordinario de electrones contendría de forma natural pares que interactúan así?}
+\lecturerresponse{Por lo general, no. Un haz es poco denso, y los electrones típicos permanecen demasiado separados para que se produzca una interacción apreciable entre sus espines durante el tiempo de vuelo disponible. Las colisiones o una interacción de confinamiento deliberada pueden crear pares entrelazados, pero el mero hecho de pertenecer al mismo haz no basta.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:51:45}
+\audiencequestion{¿A qué distancia se requiere que estén para que haya interacción magnética?}
+\lecturerresponse{No existe un límite universal bien definido; la magnitud decisiva es la escala de tiempo de la interacción. La conferencia ofrece una estimación microscópica aproximada, del orden de \(10^{-11}\,\mathrm{cm}\), para un acoplamiento rápido. A mayor separación, menor es la diferencia de energía, mayor la longitud de onda del fotón emitido y mucho más lenta la relajación. En principio, una espera suficientemente larga puede compensarlo, mientras que un haz ordinario ofrece demasiado poco tiempo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:53:10}
+\audiencequestion{¿Por qué el singlete debe llevar un signo menos y no un signo más?}
+\lecturerresponse{Esto no resulta evidente a partir de las estadísticas locales, que asignan una probabilidad de una mitad a cada resultado, pues son idénticas para ambas fases relativas. La respuesta está en cómo se transforma el estado bajo rotaciones y en cómo la interacción selecciona el espín total cero. La derivación corresponde a la próxima conferencia.}
+\end{classroomqa}
+
+El curso ha cruzado ya el umbral previsto. Un espín puro siempre tiene un eje definido respecto del cual está orientado hacia arriba. Un par puro no tiene por qué asignar un estado puro a cada uno de sus componentes y, aun así, puede codificar relaciones exactas entre sus resultados. Esa estructura adicional es el entrelazamiento; el teorema de Bell determinará por qué ninguna explicación clásica basada en monedas y monedas de diez centavos puede reproducirlo todo.

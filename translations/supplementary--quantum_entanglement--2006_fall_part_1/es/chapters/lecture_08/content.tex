@@ -1,0 +1,770 @@
+\chapter{Estados reducidos, entropía de entrelazamiento y evolución unitaria}
+
+La matriz de densidad aparece primero como la descripción natural de una preparación incompleta: se ha preparado un sistema cuántico, pero no sabemos exactamente cómo. El entrelazamiento confiere a ese mismo objeto matemático un papel más profundo. Aunque conozcamos por completo el estado de un sistema compuesto, en general un subsistema no tiene un vector de estado independiente que lo describa. Su matriz de densidad reducida contiene todo lo que puede predecirse localmente. Deduciremos esta afirmación componente a componente, la pondremos a prueba con dos estados de espín y usaremos la entropía para distinguir los estados producto de los entrelazados. Después abordaremos una segunda pregunta: cómo cambia con el tiempo un estado cuántico. La conservación de los productos internos nos llevará a la unitariedad, a un generador hermítico y a la ecuación Schr\"odinger.
+
+\section{Matrices de densidad y preparación incompleta}
+
+Supongamos que se ha colocado un electrón en un campo magnético intenso y se ha dejado que se alinee con él. Otra persona eligió la dirección del campo y preparó el electrón, pero no nos dijo cuál era esa dirección. Por tanto, el espín puede estar en un estado puro perfectamente definido, aunque no sepamos cuál. Quizá conozcamos una distribución de probabilidades sobre las preparaciones posibles, o quizá no sepamos nada en absoluto. La matriz de densidad \(\rho\) es la descripción cuántica precisamente de este tipo de información incompleta.
+
+El análogo clásico es una densidad de probabilidad en el espacio de fases o una distribución de probabilidad sobre configuraciones discretas. El objeto cuántico es un operador con tres propiedades esenciales:
+\begin{equation}
+\rho^\dagger=\rho,
+\qquad
+\operatorname{Tr}\rho=1,
+\qquad
+\lambda_i\geq 0,
+\end{equation}
+donde los \(\lambda_i\) son los valores propios de \(\rho\). La hermiticidad hace que los valores propios sean reales y proporciona una base ortonormal de vectores propios. La positividad hace que sean probabilidades admisibles, y la normalización da
+\begin{equation}
+\sum_{i=1}^{n}\lambda_i=1.
+\end{equation}
+En la base propia de \(\rho\), \(\lambda_i\) es la probabilidad asignada al \(i\)-ésimo estado propio.
+
+La ignorancia completa corresponde al caso en que ninguna dirección del espacio de Hilbert tiene preferencia:
+\begin{equation}
+\rho_{\mathrm{max}}=\frac{1}{n}I.
+\end{equation}
+Todos los valores propios son \(1/n\). En el extremo opuesto, el conocimiento completo se representa mediante un estado normalizado \(\ket{\psi}\), para el que se cumple
+\begin{equation}
+\rho_\psi=\ket{\psi}\bra{\psi}.
+\end{equation}
+Este es el proyector sobre el subespacio unidimensional generado por \(\ket{\psi}\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:47}
+\audiencequestion{¿Puede describirse una preparación como una elección al cincuenta por ciento entre dos estados que no son ortogonales, por ejemplo dos direcciones de espín separadas por \(45^\circ\)?}
+\lecturerresponse{Ese procedimiento de preparación es posible, pero, en general, esos dos pesos no son los valores propios de la matriz de densidad resultante. Primero se forma la suma ponderada de proyectores y luego se diagonaliza. La interpretación directa de los valores propios como probabilidades corresponde a la base ortonormal propia de \(\rho\), que no tiene por qué estar formada por los estados no ortogonales que nombró quien preparó el sistema.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:07:47}
+\audiencequestion{¿Qué distingue un estado puro de uno mixto?}
+\lecturerresponse{La matriz de densidad de un estado puro tiene un único valor propio distinto de cero, igual a \(1\). Un estado mixto tiene más de un valor propio distinto de cero. En la literatura antigua se usaba la palabra alemana \emph{Gemisch}; hoy se emplea simplemente el término \emph{estado mixto}.}
+\end{classroomqa}
+
+Verifiquemos el espectro del proyector sobre un estado puro. La normalización implica que
+\begin{equation}
+\rho_\psi\ket{\psi}
+=\ket{\psi}\braket{\psi}{\psi}
+=\ket{\psi},
+\end{equation}
+por lo que \(\ket{\psi}\) es un vector propio con valor propio \(1\). Si \(\ket{\phi}\) es ortogonal a \(\ket{\psi}\), entonces
+\begin{equation}
+\rho_\psi\ket{\phi}
+=\ket{\psi}\braket{\psi}{\phi}
+=0.
+\end{equation}
+Por tanto, todas las direcciones ortogonales a \(\ket{\psi}\) tienen valor propio cero.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_08_figure_06.png}
+\caption{La matriz de densidad de un estado puro actúa como proyector: \(\rho\ket{\psi}=\ket{\psi}\).}
+\lectureframe{00:09:32}
+\end{figure}
+
+\section{Valores esperados a partir de la traza}
+
+La regla operativa para una matriz de densidad es
+\begin{equation}
+\overline{M}=\operatorname{Tr}(\rho M),
+\end{equation}
+donde \(M\) es un observable. Para dos factores, la propiedad cíclica de la traza da
+\begin{equation}
+\operatorname{Tr}(\rho M)=\operatorname{Tr}(M\rho),
+\end{equation}tanto si \(\rho\) conmuta con \(M\) como si no.
+
+En cualquier base ortonormal \(\{\ket{i}\}\),
+\begin{equation}
+\operatorname{Tr}X=\sum_i\bra{i}X\ket{i}.
+\end{equation}
+El valor numérico no depende de la base. Para un estado puro,
+\begin{align}
+\overline{M}
+&=\operatorname{Tr}\!\left(\ket{\psi}\bra{\psi}M\right) \\
+&=\sum_i\braket{i}{\psi}\bra{\psi}M\ket{i} \\
+&=\bra{\psi}M\left(\sum_i\ket{i}\bra{i}\right)\ket{\psi} \\
+&=\bra{\psi}M\ket{\psi}.
+\end{align}
+La resolución de la identidad,
+\begin{equation}
+\sum_i\ket{i}\bra{i}=I,
+\end{equation}
+convierte la regla de la matriz de densidad en el valor esperado habitual de un estado puro.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_07.png}
+\caption{Cálculo de la traza para un proyector de estado puro y resolución de la identidad.}
+\lectureframe{00:14:25}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:38}
+\audiencequestion{¿La cantidad de la izquierda debería ser \(\overline{M}\), el promedio de \(M\)?}
+\lecturerresponse{Sí. La traza no es el operador \(M\) en sí, sino el valor esperado escalar \(\overline{M}\).}
+\end{classroomqa}
+
+Para una matriz de densidad general, elijamos su base propia:
+\begin{equation}
+\rho\ket{j}=\lambda_j\ket{j}.
+\end{equation}
+Insertamos un conjunto completo de estados entre \(\rho\) y \(M\):
+\begin{align}
+\overline{M}
+&=\sum_i\bra{i}\rho M\ket{i} \\
+&=\sum_{i,j}\bra{i}\rho\ket{j}\bra{j}M\ket{i} \\
+&=\sum_{i,j}\lambda_j\delta_{ij}\bra{j}M\ket{i} \\
+&=\sum_j\lambda_j\bra{j}M\ket{j}.
+\end{align}
+Se trata de un promedio ponderado ordinario: \(\lambda_j\) es la probabilidad del \(j\)-ésimo estado propio, y \(\bra{j}M\ket{j}\) es el valor esperado de \(M\) en ese estado.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:12}
+\audiencequestion{¿Por qué los dos índices del último elemento de matriz pasan a ser \(j\), y cuál es el índice que todavía se suma?}
+\lecturerresponse{Como \(\rho\) es diagonal en esta base, \(\bra{i}\rho\ket{j}=\lambda_j\delta_{ij}\), de modo que solo sobreviven los términos para los que \(i=j\). La suma doble original se reduce a una sola suma, que puede describirse como una suma sobre \(j\). El nombre de un índice mudo de suma no tiene significado físico.}
+\end{classroomqa}
+
+\section{La entropía como información ausente}
+
+Para una distribución de probabilidad clásica \(\{p_i\}\), definimos
+\begin{equation}
+S=-\sum_i p_i\log p_i,
+\end{equation}
+donde \(0\log 0\) se entiende como su valor límite \(0\). Si una probabilidad es igual a \(1\) y todas las demás se anulan, entonces \(S=0\): se conoce el estado. Si las \(n\) posibilidades son todas igual de probables,
+\begin{equation}
+p_i=\frac{1}{n},
+\qquad
+S=-n\left(\frac{1}{n}\log\frac{1}{n}\right)=\log n.
+\end{equation}
+Así, la entropía aumenta a medida que la distribución de probabilidad se extiende sobre un mayor número de posibilidades significativas. En términos aproximados, \(e^S\) es el número efectivo de estados con pesos comparables cuando se usan logaritmos naturales.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_08_figure_08.png}
+\caption{Entropía de una distribución de probabilidad y valor para probabilidades iguales \(S=\log n\).}
+\lectureframe{00:21:08}
+\end{figure}
+
+Para una matriz de densidad, se aplica la misma definición a sus valores propios:
+\begin{equation}
+S(\rho)=-\sum_i\lambda_i\log\lambda_i
+=-\operatorname{Tr}(\rho\log\rho).
+\end{equation}
+La primera expresión es la que necesitamos ahora; la forma con la traza destaca que el resultado es independiente de la base.
+
+\section{Un sistema compuesto y un experimento local}
+
+Consideremos dos subsistemas, \(A\) y \(B\). Un vector de base se escribe \(\ket{a,b}\). Si \(A\) tiene \(N\) estados de base y \(B\) tiene \(n\), el sistema compuesto tiene \(Nn\) estados de base. Los dos sistemas no tienen por qué ser iguales: uno podría ser un espín de dos estados y el otro, un átomo de tres estados.
+
+El estado puro más general del par es
+\begin{equation}
+\ket{\Psi}
+=\sum_{a,b}\psi(a,b)\ket{a,b},
+\qquad
+\sum_{a,b}|\psi(a,b)|^2=1.
+\end{equation}
+Ahora supongamos que Alicia mide un observable \(M_A\) que actúa únicamente sobre el subsistema \(A\). En el espacio de Hilbert compuesto, el operador es \(M_A\otimes I_B\). Sus elementos de matriz son
+\begin{equation}
+\bra{a',b'}M_A\otimes I_B\ket{a,b}
+=\bra{a'}M_A\ket{a}\,\delta_{b'b}.
+\end{equation}
+El índice \(B\) es pasivo.
+
+Escribamos el valor esperado en detalle:
+\begin{align}
+\expect{M_A}
+&=\bra{\Psi}M_A\otimes I_B\ket{\Psi} \\
+&=\sum_{a',b'}\sum_{a,b}
+\psi^*(a',b')\psi(a,b)
+\bra{a'}M_A\ket{a}\delta_{b'b} \\
+&=\sum_{a',a,b}
+\psi^*(a',b)\psi(a,b)
+\bra{a'}M_A\ket{a}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:12}
+\audiencequestion{¿Por qué los índices del bra llevan primas y los del ket no?}
+\lecturerresponse{Antes de evaluar el elemento de matriz, las sumas del bra y del ket son independientes, así que necesitan índices mudos distintos. Las primas distinguen los índices del bra de los del ket. El operador y los productos internos determinan después cuáles de esos índices deben coincidir.}
+\end{classroomqa}
+
+Fijemos \(a\) y \(a'\) y efectuemos la suma sobre \(b\). El resultado es una matriz para el subsistema \(A\):
+\begin{equation}
+\boxed{
+\rho_A(a,a')
+=\sum_b\psi(a,b)\psi^*(a',b)
+}.
+\end{equation}
+Esta es la matriz de densidad reducida de \(A\), o, de forma equivalente, la traza parcial del proyector sobre el estado puro respecto de \(B\):
+\begin{equation}
+\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}.
+\end{equation}
+El valor esperado local queda entonces
+\begin{equation}
+\expect{M_A}
+=\sum_{a,a'}\rho_A(a,a')\bra{a'}M_A\ket{a}
+=\operatorname{Tr}_A(\rho_A M_A).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_09.png}
+\caption{La suma sobre el índice \(B\) elimina ese índice y deja una matriz con los dos índices \(A\).}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:35:39}
+\audiencequestion{¿El observable local es simplemente la identidad en el subsistema \(B\)?}
+\lecturerresponse{Exactamente. \(M_A\otimes I_B\) puede cambiar la coordenada \(A\), pero ni cambia ni depende de otro modo de \(b\). Por eso, su elemento de matriz en el espacio de \(B\) es \(\delta_{b'b}\).}
+\end{classroomqa}
+
+Toda predicción de los experimentos limitados a \(A\) está, por tanto, contenida en \(\rho_A\). Bob no necesita medir su subsistema. El mero hecho de no utilizar los grados de libertad de \(B\) obliga a que la descripción de Alice adopte la forma de una matriz de densidad.
+
+\section{Un todo puro puede tener partes mixtas}
+
+El sistema combinado está en el estado puro \(\ket{\Psi}\), pero \(\rho_A\) tendrá, en general, varios valores propios distintos de cero. Conocer por completo el todo no implica que cada parte tenga un vector de estado. El gato y el arma pueden tener un único vector de estado entrelazado; el gato por sí solo se describe entonces mediante una matriz de densidad reducida.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:25}
+\audiencequestion{¿Se puede sustituir \(\operatorname{Tr}(M\rho)\) por \((\operatorname{Tr}M)(\operatorname{Tr}\rho)\)?}
+\lecturerresponse{No. En general, la traza de un producto no es el producto de las trazas. La ciclicidad permite escribir \(\operatorname{Tr}(M\rho)=\operatorname{Tr}(\rho M)\), pero no factoriza la traza.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:49}
+\audiencequestion{¿Partimos únicamente del estado de base \(\ket{a,b}\) o del estado puro más general?}
+\lecturerresponse{Partimos del estado puro más general del sistema compuesto: \(\ket{\Psi}=\sum_{a,b}\psi(a,b)\ket{a,b}\). Un solo \(\ket{a,b}\) es apenas un vector de base. Lo sorprendente es que incluso este vector compuesto, especificado por completo, puede dar lugar a un estado reducido mixto.}
+\end{classroomqa}
+
+El contraste con la mecánica clásica es marcado. La información clásica completa sobre un sistema compuesto fija cada una de sus coordenadas y, por tanto, cada subsistema. Desde luego, se puede marginalizar una distribución de probabilidad clásica; pero si la distribución original se concentra en un único punto del espacio de fases, cada marginal también se concentra en un único valor definido. Los estados puros cuánticos no tienen por qué cumplir esa propiedad.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:46}
+\audiencequestion{¿En qué se diferencia sumar sobre \(B\) de integrar una distribución clásica de posición--velocidad sobre la velocidad?}
+\lecturerresponse{Las operaciones se parecen, pero sus límites para estados puros son distintos. Un punto del espacio de fases conocido por completo fija tanto la posición como la velocidad, por lo que cualquiera de las dos distribuciones marginales sigue siendo definida. Un estado cuántico entrelazado conocido por completo puede dar un estado mixto no trivial para cualquiera de los subsistemas. Así, la traza parcial revela que en mecánica cuántica falla la implicación clásica que va de un todo puro a partes puras.}
+\end{classroomqa}
+
+\section{Estados producto: el caso excepcional}
+
+¿Cuándo permanece puro \(\rho_A\)? La respuesta es que la función de onda debe factorizarse:
+\begin{equation}
+\psi(a,b)=\phi(a)\chi(b).
+\end{equation}
+Supongamos que \(\phi\) y \(\chi\) están normalizadas por separado. Al sustituir en la matriz de densidad reducida se obtiene
+\begin{align}
+\rho_A(a,a')
+&=\sum_b\phi(a)\chi(b)\phi^*(a')\chi^*(b) \\
+&=\phi(a)\phi^*(a')\sum_b|\chi(b)|^2 \\
+&=\phi(a)\phi^*(a').
+\end{align}
+Por tanto,
+\begin{equation}
+\rho_A=\ket{\phi}\bra{\phi}.
+\end{equation}
+Tiene un valor propio igual a \(1\), todos los demás son \(0\), y su entropía es cero.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_10.png}
+\caption{Para una función de onda factorizada, la suma sobre \(B\) se reduce a la condición de normalización de \(\chi\).}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:44:17}
+\audiencequestion{¿Es \(\phi(a)\) el estado del sistema \(A\)?}
+\lecturerresponse{Es la componente de la función de onda de ese estado. Más explícitamente, \(\ket{\phi}=\sum_a\phi(a)\ket{a}\) y, de forma análoga, \(\ket{\chi}=\sum_b\chi(b)\ket{b}\). Factorizar significa que \(\ket{\Psi}=\ket{\phi}\otimes\ket{\chi}\), un estado producto sin entrelazamiento entre \(A\) y \(B\).}
+\end{classroomqa}
+
+Para todo observable local,
+\begin{equation}
+\expect{M_A}
+=\operatorname{Tr}(\rho_A M_A)
+=\bra{\phi}M_A\ket{\phi}.
+\end{equation}
+El subsistema \(A\) se comporta exactamente como un estado puro \(\ket{\phi}\). Por tanto, en un estado puro bipartito, la entropía de \(\rho_A\) sirve para comprobar si hay estructura de producto: si es cero, el estado es producto; si es distinta de cero, hay entrelazamiento. Los valores próximos a cero indican un entrelazamiento débil; los próximos al máximo indican un estado alejado de cualquier estado producto en esta bipartición.
+
+\section{El singlete: un todo puro y máxima ignorancia local}
+
+Consideremos el singlete de dos espines
+\begin{equation}
+\ket{\Psi^-}
+=\frac{1}{\sqrt{2}}
+\left(
+\ket{\uparrow\downarrow}
+-\ket{\downarrow\uparrow}
+\right).
+\end{equation}
+Sus componentes de función de onda distintas de cero son
+\begin{equation}
+\psi(\uparrow,\downarrow)=\frac{1}{\sqrt{2}},
+\qquad
+\psi(\downarrow,\uparrow)=-\frac{1}{\sqrt{2}},
+\end{equation}
+mientras que \(\psi(\uparrow,\uparrow)=\psi(\downarrow,\downarrow)=0\).
+
+Tomemos la traza sobre el espín \(2\). Los elementos diagonales son
+\begin{align}
+\rho_1(\uparrow,\uparrow)
+&=|\psi(\uparrow,\uparrow)|^2
+ +|\psi(\uparrow,\downarrow)|^2
+=\frac{1}{2}, \\
+\rho_1(\downarrow,\downarrow)
+&=|\psi(\downarrow,\uparrow)|^2
+ +|\psi(\downarrow,\downarrow)|^2
+=\frac{1}{2}.
+\end{align}
+El elemento no diagonal es
+\begin{align}
+\rho_1(\uparrow,\downarrow)
+&=\psi(\uparrow,\uparrow)\psi^*(\downarrow,\uparrow)
+ +\psi(\uparrow,\downarrow)\psi^*(\downarrow,\downarrow) \\
+&=0,
+\end{align}
+y su conjugado también se anula. Por tanto,
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&0\\[2pt]
+0&\frac12
+\end{pmatrix}
+=\frac12 I.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_11.png}
+\caption{Los cuatro elementos de la matriz de densidad reducida de un espín en el singlete.}
+\lectureframe{00:55:35}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:58}
+\audiencequestion{¿Cuál es la entropía del estado reducido de un solo espín?}
+\lecturerresponse{Sus dos valores propios son ambos \(1/2\), por lo que
+\[
+S_1=-2\left(\frac12\log\frac12\right)=\log 2.
+\]
+Esta es la entropía máxima posible para un subsistema de dos estados. Los valores propios \emph{iguales}, y no que los elementos de la matriz sean iguales en una base arbitraria, caracterizan el estado máximamente mixto.}
+\end{classroomqa}
+
+El valor esperado del espín se anula a lo largo de cualquier eje:
+\begin{equation}
+\expect{\bm{\sigma}\cdot\hat{\bm n}}
+=\operatorname{Tr}\!\left(
+\rho_1\,\bm{\sigma}\cdot\hat{\bm n}
+\right)
+=\frac12\operatorname{Tr}
+\left(\bm{\sigma}\cdot\hat{\bm n}\right)
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:58:37}
+\audiencequestion{¿Por qué la traza de \(\bm{\sigma}\cdot\hat{\bm n}\) es cero para cualquier dirección?}
+\lecturerresponse{Cada matriz de Pauli tiene traza nula. Como \(\bm{\sigma}\cdot\hat{\bm n}=n_1\sigma_1+n_2\sigma_2+n_3\sigma_3\), la linealidad de la traza da cero para todo vector unitario \(\hat{\bm n}\). Por tanto, la probabilidad de encontrar el espín paralelo o antiparalelo a cualquier eje elegido es la misma.}
+\end{classroomqa}
+
+El par completo tiene un estado puro definido y entropía cero. Cada espín por separado está en un estado máximamente mixto. Esto no se debe a la ignorancia provocada por un registro de preparación defectuoso; es el estado local que implica el entrelazamiento.
+
+\section{Un estado producto de amplitudes iguales}
+
+Consideremos ahora
+\begin{equation}
+\ket{\Phi}
+=\frac12\left(
+\ket{\uparrow\uparrow}
++\ket{\uparrow\downarrow}
++\ket{\downarrow\uparrow}
++\ket{\downarrow\downarrow}
+\right).
+\end{equation}
+Las cuatro amplitudes son iguales a \(1/2\), así que la normalización resulta de sumar cuatro contribuciones de \(1/4\). Al tomar la traza sobre el espín \(2\) se obtiene
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}.
+\end{equation}
+Su traza es \(1\), pero
+\begin{equation}
+\det\rho_1
+=\frac14-\frac14
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:23}
+\audiencequestion{¿Cómo determinan aquí la traza y el determinante los dos valores propios?}
+\lecturerresponse{Para una matriz \(2\times2\), la suma de los valores propios es la traza y su producto es el determinante. Por tanto, \(\lambda_1+\lambda_2=1\) y \(\lambda_1\lambda_2=0\), lo que obliga a que el par sea \(\{1,0\}\). El estado reducido es puro y su entropía es cero.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:18}
+\audiencequestion{¿Qué están haciendo en realidad los dos espines no entrelazados?}
+\lecturerresponse{Ambos están alineados con el eje \(x\) positivo. La respuesta se reconoce mediante la factorización,
+\[
+\ket{\Phi}
+=\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2}
+\otimes
+\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2},
+\]
+o se establece experimentalmente calculando los valores esperados de las matrices de Pauli.}
+\end{classroomqa}
+
+Para la componente \(z\),
+\begin{equation}
+\sigma_3=
+\begin{pmatrix}
+1&0\\[2pt]
+0&-1
+\end{pmatrix},
+\qquad
+\operatorname{Tr}(\rho_1\sigma_3)=0.
+\end{equation}
+Para la componente \(x\),
+\begin{equation}
+\sigma_1=
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix},
+\end{equation}y
+\begin{align}
+\rho_1\sigma_1
+&=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}, \\
+\operatorname{Tr}(\rho_1\sigma_1)&=1.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_03.png}
+\caption{Cálculo matricial con \(\sigma_1\) para el estado reducido de amplitudes iguales.}
+\lectureframe{01:05:13}
+\end{figure}
+
+Así, \(\expect{\sigma_1}=1\), mientras que \(\expect{\sigma_2}=\expect{\sigma_3}=0\). En general, una perturbación de las amplitudes que las aparte de la factorización exacta hace que los valores propios pasen de \(\{1,0\}\) a dos valores distintos de cero. La pequeña entropía resultante mide una pequeña cantidad de entrelazamiento.
+
+\section{¿De quién es la entropía?}
+
+La entropía que acabamos de calcular corresponde a un subsistema. En el ejemplo del singlete,
+\begin{equation}
+S(\rho_{12})=0,
+\qquad
+S(\rho_1)=S(\rho_2)=\log 2.
+\end{equation}
+El todo es puro, mientras que cada parte es mixta. Por tanto, la entropía de entrelazamiento no sigue la regla aditiva ingenua \(S_{12}=S_1+S_2\). En un estado puro bipartito, las dos matrices de densidad reducidas tienen los mismos valores propios distintos de cero, así que sus entropías son iguales, aunque la entropía del todo sea nula.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:03}
+\audiencequestion{¿Toda matriz de densidad es, en última instancia, una matriz de densidad de entrelazamiento?}
+\lecturerresponse{Desde el punto de vista operativo, se puede describir la incertidumbre ordinaria sin llevar la cuenta de aquello que conserva el registro ausente. Si se incluyen el aparato de preparación, el entorno o el observador, esa incertidumbre puede entenderse a menudo como entrelazamiento con grados de libertad no observados. La idea matemática es exacta: toda matriz de densidad admite una purificación en un espacio de Hilbert mayor, aunque esa purificación no identifica de manera única una historia física de preparación.}
+\end{classroomqa}
+
+\section{Del movimiento clásico discreto al movimiento cuántico}
+
+Dejemos por ahora el entrelazamiento y preguntémonos cómo cambian los estados con el tiempo. Para un sistema clásico con un número finito de configuraciones, la evolución reversible es una permutación. Cada estado tiene un sucesor y un predecesor; el movimiento se descompone en ciclos.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_12.png}
+\caption{Evolución clásica reversible representada por flechas entre configuraciones discretas.}
+\lectureframe{01:11:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:11:51}
+\audiencequestion{Si las configuraciones son discretas, ¿por qué también deben ser discretos los pasos de tiempo?}
+\lecturerresponse{Un modelo clásico estrictamente de dos estados no contiene configuraciones intermedias por las que pueda pasar una trayectoria continua. Hacer girar lentamente una moneda física introduce su orientación como una coordenada continua adicional, de modo que deja de ser un modelo de dos configuraciones. Un sistema cuántico de dos estados es distinto: su espacio de Hilbert contiene una familia continua de superposiciones, aunque una base ortonormal solo tenga dos elementos.}
+\end{classroomqa}
+
+Un estado de espín \(\tfrac12\) puede evolucionar continuamente de \(\ket{\uparrow}\) a \(\ket{\downarrow}\) mediante superposiciones. Una dimensión finita no implica un conjunto finito de vectores de estado. Esto permite una evolución temporal continua en un sistema cuántico discreto.
+
+La dinámica microscópica reversible también conserva las distinciones. Dos condiciones iniciales clásicas distintas no confluyen en un mismo estado microscópico, pues eso borraría cuál de las dos condiciones iniciales se dio. En la mecánica hamiltoniana, esta invertibilidad va acompañada del teorema de Liouville: el volumen del espacio de fases se conserva.
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:26}
+\audiencequestion{¿Qué ocurre con las bifurcaciones no lineales en las que varias condiciones iniciales se acercan al mismo estado estacionario?}
+\lecturerresponse{Los atractores aparecen en descripciones disipativas efectivas, en las que se han descartado los grados de libertad del entorno. La evolución hamiltoniana microscópica fundamental sigue siendo invertible; la información puede transferirse a variables no observadas, pero estados completos distintos no se convierten literalmente en un mismo estado completo.}
+\end{classroomqa}
+
+La afirmación cuántica es la unitariedad. Los estados iniciales ortogonales evolucionan a estados finales ortogonales y, más en general, se conserva todo producto interno.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:50}
+\audiencequestion{¿Debe actuar exactamente la misma influencia sobre los dos estados? ¿Qué ocurre con los estados iniciales de espín \(z\) hacia arriba y \(z\) hacia abajo en un campo magnético dirigido según \(x\)?}
+\lecturerresponse{El mismo operador de evolución debe actuar sobre ambos estados. En el campo transversal, los dos espines precesan, pero sus vectores de Bloch siguen siendo opuestos y los vectores de estado siguen siendo ortogonales. Aplicar historias externas distintas equivaldría a comparar operadores de evolución diferentes.}
+\end{classroomqa}
+
+\section{Linealidad y unitariedad}
+
+El primer principio de la evolución cuántica en el tiempo es la linealidad:
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+El operador depende del tiempo transcurrido y satisface
+\begin{equation}
+U(0)=I.
+\end{equation}
+Al igual que la propia linealidad de la mecánica cuántica, esta regla está justificada por su éxito empírico.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_13.png}
+\caption{El estado en el instante \(t\) se obtiene mediante la acción del operador lineal \(U(t)\) sobre el estado inicial.}
+\lectureframe{01:19:00}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:01}
+\audiencequestion{¿Qué debe ser \(U(t)\) en \(t=0\)?}
+\lecturerresponse{Debe ser la identidad. Cuando el tiempo transcurrido es cero, el estado no cambia, sea cual sea el vector inicial.}
+\end{classroomqa}
+
+El segundo principio es la conservación de los productos internos:
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Cuando \(\phi=\psi\), esto conserva la normalización y, por tanto, la probabilidad total. Si los estados iniciales son ortogonales, se conserva su perfecta distinguibilidad. Para estados arbitrarios se conserva toda su relación geométrica.
+
+El bra evoluciona según
+\begin{equation}
+\bra{\phi(t)}
+=\bra{\phi(0)}U^\dagger(t),
+\end{equation}
+por lo que
+\begin{align}
+\braket{\phi(t)}{\psi(t)}
+&=\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)} \\
+&=\braket{\phi(0)}{\psi(0)}.
+\end{align}
+Como esta igualdad se cumple para cualquier par de vectores iniciales,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_04.png}
+\caption{Evolución del ket, evolución del bra y condición sobre el producto interno que conduce a \(U^\dagger U=I\).}
+\lectureframe{01:23:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:22:10}
+\audiencequestion{¿Por qué el bra adquiere \(U^\dagger\) en lugar de \(U\)?}
+\lecturerresponse{Al tomar el conjugado hermítico se invierte el orden de los factores y se sustituye cada operador por su conjugado hermítico:
+\[
+\bigl(U\ket{\phi}\bigr)^\dagger
+=\bra{\phi}U^\dagger.
+\]
+Esa es la acción dual necesaria para que los productos internos sean coherentes.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:34}
+\audiencequestion{Si \(U\) fuera un número complejo, ¿qué significaría \(U^\dagger U=1\)?}
+\lecturerresponse{Significaría \(|U|=1\), así que \(U=e^{i\theta}\) pertenece al círculo unitario. Una matriz unitaria es el análogo operador de una fase pura: conserva las longitudes y los productos internos.}
+\end{classroomqa}
+
+\section{Evolución infinitesimal y hamiltoniano}
+
+Sea \(\epsilon\) un intervalo de tiempo muy pequeño. Como \(U(0)=I\), escribimos el desarrollo de primer orden
+\begin{equation}
+U(\epsilon)=I-i\epsilon h+O(\epsilon^2).
+\end{equation}
+El signo menos y el factor \(i\) son convenciones prácticas. Al tomar el conjugado hermítico se obtiene
+\begin{equation}
+U^\dagger(\epsilon)
+=I+i\epsilon h^\dagger+O(\epsilon^2).
+\end{equation}
+La unitariedad exige entonces que
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon) \\
+&=\left(I+i\epsilon h^\dagger\right)
+\left(I-i\epsilon h\right)+O(\epsilon^2) \\
+&=I+i\epsilon(h^\dagger-h)+O(\epsilon^2).
+\end{align}
+El término de primer orden debe anularse:
+\begin{equation}
+\boxed{h^\dagger=h}.
+\end{equation}
+El generador infinitesimal es hermítico.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_14.png}
+\caption{La unitariedad a primer orden obliga a que el generador infinitesimal sea hermítico.}
+\lectureframe{01:29:35}
+\end{figure}
+
+En la convención provisional anterior, \(h\) tiene unidades de frecuencia angular. Al restablecer las unidades físicas, definimos el operador de energía
+\begin{equation}
+H=\hbar h.
+\end{equation}
+Este operador hermítico es el hamiltoniano, y sus valores propios son niveles de energía.
+
+Apliquemos el operador infinitesimal a un estado:
+\begin{equation}
+\ket{\psi(\epsilon)}
+=\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(0)}
++O(\epsilon^2).
+\end{equation}
+Restemos el estado inicial, dividamos por \(\epsilon\) y tomemos el límite:
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+De forma equivalente,
+\begin{equation}
+\boxed{
+i\hbar\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+Esta es la ecuación general de Schr\"odinger.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_15.png}
+\caption{El cociente incremental infinitesimal se convierte en la derivada temporal del estado.}
+\lectureframe{01:32:18}
+\end{figure}
+
+El hamiltoniano depende de la configuración física. Puede variar con el tiempo si cambia un campo magnético externo u otro control. Cuando la configuración no depende del tiempo, \(H\) es un operador hermítico fijo.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:30}
+\audiencequestion{¿La conservación de los productos internos implica que los sistemas inicialmente no entrelazados deban seguir sin entrelazarse?}
+\lecturerresponse{No. La unitariedad conserva los productos internos entre vectores de estado completos, no la estructura de producto de una partición elegida. Un hamiltoniano de interacción puede transformar un estado producto en uno entrelazado. Si las transformaciones unitarias no pudieran hacerlo, las mediciones no podrían correlacionar un sistema con un aparato.}
+\end{classroomqa}
+
+\section{Las unidades de la entropía}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:08}
+\audiencequestion{¿Tiene el entrelazamiento una unidad física, como los julios?}
+\lecturerresponse{La entropía de entrelazamiento es una medida de información, no de energía. Con logaritmos naturales se mide en nats; con logaritmos en base dos, en bits. Ambos son convenciones adimensionales de conteo.}
+\end{classroomqa}
+
+La notación termodinámica puede oscurecer este punto porque la constante de Boltzmann convierte la temperatura medida en kelvin en energía:
+\begin{equation}
+\expect{K}_{\mathrm{monatomic}}
+=\frac32 k_{\mathrm B}T.
+\end{equation}
+La relación para el calor reversible es
+\begin{equation}
+\delta Q_{\mathrm{rev}}=T\,\mathrm dS_{\mathrm{th}}.
+\end{equation}
+Si la entropía informacional es
+\begin{equation}
+S_{\mathrm{info}}=-\sum_i p_i\log p_i,
+\end{equation}
+la entropía termodinámica convencional es
+\begin{equation}
+S_{\mathrm{th}}=k_{\mathrm B}S_{\mathrm{info}}.
+\end{equation}
+Al fijar \(k_{\mathrm B}=1\), la temperatura se mide en unidades de energía y la entropía queda adimensional. Así, se reconoce que la constante de Boltzmann es un factor de conversión, no una nueva clase de unidad de entrelazamiento. La nota histórica que relaciona las ideas estadísticas de Boltzmann con el trabajo de Einstein de 1905 sobre el movimiento browniano no altera la definición informacional.
+
+\section{Estados propios de energía y fase}
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:54}
+\audiencequestion{¿Por qué se identifica el generador hermítico \(H\) con la energía?}
+\lecturerresponse{La unitariedad solo demuestra que el generador es hermítico. Identificarlo con la energía es una afirmación física adicional: la energía genera las traslaciones temporales. Para un hamiltoniano independiente del tiempo, el mismo operador que rige la evolución se conserva, y sus valores propios son los niveles de energía estacionarios. Los hamiltonianos concretos aportan el contenido experimental de esa identificación.}
+\end{classroomqa}
+
+La relación entre las constantes de Planck y la frecuencia es
+\begin{equation}
+E=h\nu=\hbar\omega,
+\qquad
+\omega=2\pi\nu,
+\qquad
+h=2\pi\hbar.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:30}
+\audiencequestion{¿Debe contener la ecuación de evolución \(h\), \(\hbar\) o un factor adicional de \(2\pi\)?}
+\lecturerresponse{Usando la frecuencia angular \(\omega\), la ecuación es \(E=\hbar\omega\), y la ecuación de Schr\"odinger contiene \(\hbar\). Usando la frecuencia ordinaria \(\nu\), la relación equivalente es \(E=h\nu\). El factor \(2\pi\) queda completamente explicado por \(\omega=2\pi\nu\) y \(h=2\pi\hbar\).}
+\end{classroomqa}
+
+Supongamos que el estado inicial es un vector propio de la energía:
+\begin{equation}
+H\ket{\psi(0)}=E\ket{\psi(0)}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:18}
+\audiencequestion{Si el estado sigue siendo un vector propio de la energía, ¿significa eso que no cambia?}
+\lecturerresponse{Puede adquirir un factor complejo dependiente del tiempo y seguir siendo un vector propio con el mismo autovalor. La unitariedad restringe ese factor a una fase. Así, el rayo permanece estacionario aunque el ket rote en fase.}
+\end{classroomqa}
+
+Escribamos
+\begin{equation}
+\ket{\psi(t)}=f(t)\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_05.png}
+\caption{Un estado propio de la energía permanece en la misma dirección del espacio de Hilbert, salvo por un factor escalar \(f(t)\).}
+\lectureframe{01:43:54}
+\end{figure}
+
+Al sustituir en la ecuación de Schr\"odinger se obtiene
+\begin{align}
+i\hbar\frac{\mathrm d f}{\mathrm dt}\ket{\psi(0)}
+&=f(t)H\ket{\psi(0)} \\
+&=E f(t)\ket{\psi(0)}.
+\end{align}
+Cancelamos el vector común:
+\begin{equation}
+\frac{\mathrm d f}{\mathrm dt}
+=-\frac{iE}{\hbar}f(t).
+\end{equation}
+Con \(f(0)=1\),
+\begin{equation}
+f(t)=e^{-iEt/\hbar},
+\qquad
+\ket{\psi(t)}=e^{-iEt/\hbar}\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_16.png}
+\caption{La ecuación de autovalores de la energía y la evolución de fase resultante.}
+\lectureframe{01:46:10}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{¿Cuál es el coeficiente de \(t\) en la fase \(e^{-iEt/\hbar}\)?}
+\lecturerresponse{Es la frecuencia angular,
+\[
+\omega=\frac{E}{\hbar}.
+\]
+De manera equivalente, \(E=\hbar\omega\). Un coeficiente exponencial real describiría una tasa de crecimiento o decrecimiento; el exponente imaginario de aquí describe una rotación unitaria de fase.}
+\end{classroomqa}
+
+Esta relación entre fase y frecuencia y la ecuación de Schr\"odinger son dos formas de expresar la misma ley de evolución temporal. La ecuación es general; una partícula libre, una partícula en un potencial y un espín en un campo magnético se distinguen por sus respectivos hamiltonianos. El siguiente paso consiste en elegir y resolver esos hamiltonianos.

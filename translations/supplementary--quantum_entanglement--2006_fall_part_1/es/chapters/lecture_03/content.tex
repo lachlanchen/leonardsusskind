@@ -1,0 +1,541 @@
+\chapter{Observables hermíticos, espín y regla de probabilidad}
+
+\lectureoverview{La mecánica cuántica es un cálculo de probabilidades. Para usarla sin sustituir la comprensión por consignas, necesitamos una cadena matemática compacta: fases complejas, estados normalizados, observables hermíticos, valores y vectores propios, ortogonalidad y la regla de Born. Las tres matrices de Pauli convierten luego esa cadena en predicciones concretas para el espín del electrón.}
+
+\section{Números complejos en forma polar}
+
+Empecemos eliminando una pequeña fuente de fricción algebraica. Un número complejo
+\begin{equation}
+  z=x+iy
+\end{equation}
+es un punto del plano complejo, con \(x\) sobre el eje real y \(y\) sobre el eje imaginario. Si el punto tiene coordenadas polares \((r,\theta)\), entonces
+\begin{equation}
+  x=r\cos\theta,
+  \qquad
+  y=r\sin\theta,
+\end{equation}
+y, por tanto,
+\begin{equation}
+  z=r(\cos\theta+i\sin\theta)=re^{i\theta}.
+  \label{eq:l03-polar-form}
+\end{equation}
+La notación de Euler es útil porque las fórmulas de adición de ángulos quedan expresadas en la ley exponencial
+\begin{equation}
+  e^{i\theta}e^{i\phi}
+  =e^{i(\theta+\phi)}.
+  \label{eq:l03-phase-product}
+\end{equation}
+En efecto, al multiplicar las dos expresiones trigonométricas se obtiene
+\begin{align}
+& (\cos\theta+i\sin\theta)(\cos\phi+i\sin\phi)
+\notag\\
+&\qquad=\cos(\theta+\phi)+i\sin(\theta+\phi).
+\end{align}
+Las fórmulas conocidas para la suma están todas contenidas en esta única multiplicación.
+
+La conjugación compleja refleja el punto respecto del eje real:
+\begin{equation}
+  z^*=x-iy,
+  \qquad
+  (e^{i\theta})^*=e^{-i\theta}.
+\end{equation}
+En consecuencia,
+\begin{equation}
+  e^{i\theta}e^{-i\theta}=1.
+\end{equation}
+Los números de la forma \(e^{i\theta}\) están sobre el círculo unitario y se llaman \emph{fases puras}. Todo número complejo distinto de cero es el producto de un módulo positivo por una fase pura:
+\begin{equation}
+  z=|z|e^{i\theta},
+  \qquad
+  |z|^2=z^*z=x^2+y^2.
+  \label{eq:l03-modulus-phase}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:36}
+\audiencequestion{¿Cambiar \(\theta\) por \(-\theta\) corresponde a invertir el sentido de rotación en el plano complejo?}
+\lecturerresponse{Sí. Los ángulos de fase positivos y negativos recorren el círculo unitario en sentidos opuestos. La conjugación compleja transforma \(e^{i\theta}\) en \(e^{-i\theta}\), que es el punto reflejado y la fase inversa.}
+\end{classroomqa}
+
+Eso es todo lo que necesitamos hoy sobre números complejos: módulo, fase, conjugación y círculo unitario.
+
+\section{La mecánica cuántica como cálculo de probabilidades}
+
+Pasemos ahora a los postulados. Se prepara un sistema físico en un \emph{estado}; una medición pregunta por el valor de un \emph{observable}; la mecánica cuántica proporciona las probabilidades de las respuestas posibles.
+
+Los estados son vectores de un espacio vectorial complejo. Para un sistema de espín de dos niveles,
+\begin{equation}
+  \ket\psi=\alpha\ket{u}+\beta\ket{d},
+  \qquad
+  \ket{u}=\begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{d}=\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-two-level-state}
+\end{equation}
+Los coeficientes determinan las probabilidades de espín arriba y abajo,
+\begin{equation}
+  P(u)=|\alpha|^2,
+  \qquad
+  P(d)=|\beta|^2,
+\end{equation}
+por lo que el estado debe estar normalizado:
+\begin{equation}
+  \braket{\psi}{\psi}
+  =|\alpha|^2+|\beta|^2
+  =1.
+  \label{eq:l03-state-normalization}
+\end{equation}
+La dimensión se refiere al número de alternativas independientes en el espacio de estados, no a la dimensión del espacio ordinario. Un sistema con tres estados de base mutuamente excluyentes requeriría tres columnas ortonormales y tres amplitudes.
+
+Las probabilidades no determinan por completo las amplitudes. Multiplicar por una fase pura no cambia el módulo:
+\begin{equation}
+  |e^{i\theta}\alpha|^2=|\alpha|^2.
+\end{equation}
+Por tanto, las amplitudes contienen información que va más allá de las probabilidades para esta base. Su papel se hará visible al considerar distintas mediciones y, más adelante, la evolución temporal.
+
+Los estados de la base son ortonormales:
+\begin{equation}
+  \braket{u}{u}=\braket{d}{d}=1,
+  \qquad
+  \braket{u}{d}=\braket{d}{u}=0.
+\end{equation}
+Su ortogonalidad pertenece al espacio complejo de estados. Todavía no debe confundirse con dos flechas perpendiculares en el espacio ordinario tridimensional; esta distinción será decisiva hacia el final de la clase.
+
+\section{Por qué los observables son hermíticos}
+
+Los resultados experimentales pueden registrarse como números reales. Por comodidad, podemos agrupar dos números reales en un único número complejo, pero las lecturas de los instrumentos siempre pueden expresarse por separado como cantidades reales. En dimensión finita, los observables cuánticos se representan mediante una clase especial de operadores lineales: las matrices hermíticas.
+
+Para definirlas, primero se transpone una matriz intercambiando filas y columnas:
+\begin{equation}
+  (M^T)_{ij}=M_{ji}.
+  \label{eq:l03-transpose}
+\end{equation}
+Una matriz real que cumple \(M^T=M\) es simétrica. Para las matrices complejas, la operación correspondiente es la conjugación hermítica,
+\begin{equation}
+  M^\dagger=(M^T)^*,
+  \qquad
+  (M^\dagger)_{ij}=M_{ji}^*.
+  \label{eq:l03-dagger}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\linewidth]{lecture_03_figure_02.png}
+\caption{La transposición, la simetría y la transición a la conjugación hermítica comparten una misma disposición en la pizarra.}
+\lectureframe{00:23:06}
+\end{figure}
+
+\begin{definition}
+Una matriz \(M\) es \emph{hermítica} si
+\begin{equation}
+  M^\dagger=M,
+  \qquad\text{equivalently}\qquad
+  M_{ij}=M_{ji}^*.
+  \label{eq:l03-hermitian}
+\end{equation}
+\end{definition}
+
+Las entradas diagonales son reales, ya que \(M_{ii}=M_{ii}^*\). Las entradas reflejadas fuera de la diagonal forman pares conjugados. Así, la forma general de una matriz de dos por dos es
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    a&z\\
+    z^*&b
+  \end{pmatrix},
+  \qquad a,b\in\mathbb R.
+  \label{eq:l03-hermitian-two}
+\end{equation}
+La hermiticidad es el análogo matricial de una condición de realidad; no exige que cada entrada sea real por separado.
+
+La primera consecuencia se obtiene de dos identidades elementales de conjugación:
+\begin{equation}
+  \braket{B}{A}=\braket{A}{B}^*,
+  \label{eq:l03-inner-conjugation}
+\end{equation}
+y, para cualquier \(M\),
+\begin{equation}
+  \bra B M\ket A
+  =
+  \bigl(\bra A M^\dagger\ket B\bigr)^*.
+  \label{eq:l03-matrix-element-conjugation}
+\end{equation}
+La expresión \(\bra B M\ket A\) es un número: el elemento de matriz \(BA\) de \(M\). Si \(M\) es hermítica y \(B=A\), entonces
+\begin{equation}
+  \bra A M\ket A
+  =
+  \bigl(\bra A M\ket A\bigr)^*.
+\end{equation}
+Por tanto, es real.
+
+\begin{proposition}
+Para toda matriz hermítica \(M\), el valor esperado
+\begin{equation}
+  \expect{M}_A=\bra A M\ket A
+  \label{eq:l03-expectation}
+\end{equation}
+es real en cualquier estado normalizado \(\ket A\).
+\end{proposition}
+
+Más adelante desarrollaremos el significado probabilístico del valor esperado, pero el hecho de que sea real ya explica por qué los operadores hermíticos son candidatos naturales a observables.
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:22}
+\audiencequestion{¿La notación de corchetes angulares para un promedio procede de la notación de bra--ket?}
+\lecturerresponse{Sí. La notación de Dirac utiliza los mismos corchetes. En \(\bra A M\ket A\), el operador queda entre el bra y el ket que representan el estado, y el resultado es el valor esperado.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:31}
+\audiencequestion{¿Puede una magnitud física tener por sí misma un valor medido imaginario? Si las mediciones dan resultados reales, ¿por qué se necesitan los números complejos en mecánica cuántica?}
+\lecturerresponse{Un conjunto de resultados medidos siempre puede registrarse mediante números reales, aunque decidamos agrupar un par como un único número complejo. La pregunta más precisa es por qué la teoría nos lleva a usar amplitudes complejas. Dejemos esta pregunta pendiente: la respuesta está relacionada con la evolución temporal reversible, que aún no se ha introducido. Restringir la teoría a vectores reales haría perder posibilidades importantes.}
+\end{classroomqa}
+
+Las matemáticas no son un adorno. Sin ellas, se puede hacer que el entrelazamiento suene misterioso sin llegar a definirlo. Seguimos en el marco más sencillo posible, un único sistema de dos niveles, para poder combinar honestamente dos sistemas de este tipo más adelante.
+
+\section{Los valores propios son resultados posibles de una medición}
+
+\begin{definition}
+Un vector no nulo \(\ket a\) es un vector propio de \(M\) con valor propio \(\lambda_a\) si
+\begin{equation}
+  M\ket a=\lambda_a\ket a.
+  \label{eq:l03-eigenvalue-equation}
+\end{equation}
+\end{definition}
+La matriz puede cambiar la longitud o la fase del vector, pero no lo convierte en una dirección distinta en el espacio de estados.
+
+Para una matriz hermítica, el valor propio es real. Multiplicar la ecuación~\eqref{eq:l03-eigenvalue-equation} por la izquierda por \(\bra a\) da
+\begin{equation}
+  \bra a M\ket a
+  =\lambda_a\braket{a}{a}.
+\end{equation}
+El lado izquierdo es real por la hermiticidad, y la norma del lado derecho es real y positiva. Por tanto,
+\begin{equation}
+  \lambda_a
+  =
+  \frac{\bra a M\ket a}{\braket{a}{a}}
+  \in\mathbb R.
+  \label{eq:l03-real-eigenvalue}
+\end{equation}
+
+Ahora viene la afirmación física: cuando \(M\) representa un observable, sus valores propios son los valores que puede dar una medición de \(M\). El vector propio correspondiente a \(\lambda_a\) es un estado en el que ese valor se obtiene con certeza.
+
+El ejemplo más sencillo es una matriz diagonal:
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    m_{11}&0\\
+    0&m_{22}
+  \end{pmatrix}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_03.png}
+\caption{La ecuación abstracta de valores propios aparece sobre el primer ejemplo diagonal.}
+\lectureframe{00:44:04}
+\end{figure}
+
+La multiplicación directa da
+\begin{align}
+  M\begin{pmatrix}1\\0\end{pmatrix}
+  &=m_{11}\begin{pmatrix}1\\0\end{pmatrix},
+  \notag\\
+  M\begin{pmatrix}0\\1\end{pmatrix}
+  &=m_{22}\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-diagonal-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_04.png}
+\caption{El vector de base inferior vuelve multiplicado por la entrada diagonal inferior.}
+\lectureframe{00:45:58}
+\end{figure}
+
+Para una matriz diagonal de mayor tamaño se cumple la misma regla: sus entradas diagonales son valores propios y sus columnas canónicas, con una única entrada no nula, son vectores propios.
+
+\section{Las tres matrices de espín}
+
+Para el espín del electrón a lo largo del tercer eje, elijamos
+\begin{equation}
+  \sigma_3=
+  \begin{pmatrix}
+    1&0\\
+    0&-1
+  \end{pmatrix}.
+\end{equation}
+Sus estados propios son \(\ket u=(1,0)^T\), con valor propio \(+1\), y \(\ket d=(0,1)^T\), con valor propio \(-1\). Así, los dos valores posibles del detector son los dos valores propios.
+
+La matriz de espín a lo largo del primer eje es
+\begin{equation}
+  \sigma_1=
+  \begin{pmatrix}
+    0&1\\
+    1&0
+  \end{pmatrix}.
+\end{equation}
+Primero escribimos sus vectores propios candidatos sin normalizar, ya que multiplicar un vector propio por cualquier escalar no nulo no deja de ser un vector propio. Sin embargo, los estados físicos deben estar normalizados:
+\begin{align}
+  \ket{x+}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},
+  &
+  \sigma_1\ket{x+}&=+\ket{x+},
+  \notag\\
+  \ket{x-}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix},
+  &
+  \sigma_1\ket{x-}&=-\ket{x-}.
+  \label{eq:l03-sigma-one-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_05.png}
+\caption{La matriz no diagonal y el candidato con pesos iguales aparecen antes de completar el producto.}
+\lectureframe{00:50:29}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:45}
+\audiencequestion{¿Pueden interpretarse geométricamente los vectores propios de \(\sigma_1\) en lugar de hallarse mediante álgebra?}
+\lecturerresponse{En la representación real de dos componentes, \(\sigma_1\) intercambia las direcciones de base \(E_1\) y \(E_2\). La dirección diagonal \((1,1)^T\) permanece fija, mientras que la otra diagonal, \((1,-1)^T\), invierte su sentido. Por tanto, son vectores propios con valores propios \(+1\) y \(-1\). Esta representación corresponde al espacio de componentes; todavía no es una afirmación sobre la orientación del puntero de espín físico.}
+\end{classroomqa}
+
+La matriz restante es
+\begin{equation}
+  \sigma_2=
+  \begin{pmatrix}
+    0&-i\\
+    i&0
+  \end{pmatrix},
+\end{equation}
+con vectores propios normalizados
+\begin{equation}
+  \ket{y+}=\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix},
+  \qquad
+  \ket{y-}=\frac{1}{\sqrt2}\begin{pmatrix}1\\-i\end{pmatrix}.
+  \label{eq:l03-sigma-two-eigenvectors}
+\end{equation}
+Sus valores propios vuelven a ser \(+1\) y \(-1\).
+
+Las tres matrices al cuadrado dan la identidad:
+\begin{equation}
+  \sigma_1^2=\sigma_2^2=\sigma_3^2=I.
+  \label{eq:l03-pauli-squares}
+\end{equation}
+Si \(\sigma_i\ket a=\lambda\ket a\), aplicar \(\sigma_i\) dos veces da \(\lambda^2=1\), de modo que \(\lambda=\pm1\). Los espectros idénticos son el primer indicio de que estas matrices representan componentes del espín a lo largo de ejes espaciales equivalentes.
+
+\section{Resultados distintos requieren estados ortogonales}
+
+Antes de demostrar el siguiente teorema, expliquemos su significado. Si un observable da dos respuestas definidas diferentes en dos estados, una medición de ese observable puede distinguirlos perfectamente. La mecánica cuántica expresa esta distinguibilidad perfecta mediante la ortogonalidad.
+
+\begin{theorem}
+Sea \(M\) hermítica, con
+\begin{equation}
+  M\ket A=\lambda_A\ket A,
+  \qquad
+  M\ket B=\lambda_B\ket B.
+\end{equation}
+Si \(\lambda_A\ne\lambda_B\), entonces
+\begin{equation}
+  \braket{B}{A}=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Multiplicar la primera ecuación de valores propios por \(\bra B\) da
+\begin{equation}
+  \bra B M\ket A=\lambda_A\braket{B}{A}.
+\end{equation}
+La hermiticidad y la segunda ecuación de valores propios dan el mismo elemento de matriz:
+\begin{equation}
+  \bra B M\ket A=\lambda_B\braket{B}{A},
+\end{equation}
+ya que \(\lambda_B\) es real. Al restar, se obtiene
+\begin{equation}
+  (\lambda_A-\lambda_B)\braket{B}{A}=0.
+\end{equation}
+Los valores propios son distintos, así que el producto interno debe anularse.
+\end{proof}
+
+Los vectores propios de \(\sigma_1\) permiten comprobarlo de inmediato:
+\begin{equation}
+  \braket{x+}{x-}
+  =
+  \frac12
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\-1\end{pmatrix}
+  =\frac12-\frac12=0.
+\end{equation}
+A la inversa, para dos estados ortogonales existe una medición que los distingue. Por tanto, la ortogonalidad no es solo un término geométrico: tiene un significado operacional.
+
+\section{El postulado de probabilidad}
+
+Supongamos que se prepara el sistema en un estado normalizado \(\ket B\). Sea \(M\) un observable, y sea \(\ket A\) un vector propio normalizado de \(M\) con valor propio \(\lambda_A\). Entonces, la probabilidad de que al medir \(M\) se obtenga \(\lambda_A\) es
+\begin{equation}
+  P(\lambda_A\mid B)
+  =
+  |\braket{A}{B}|^2
+  =
+  \braket{A}{B}\braket{B}{A}.
+  \label{eq:l03-born-rule}
+\end{equation}
+El producto es real y no negativo. Para vectores normalizados, no supera la unidad.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_06.png}
+\caption{La regla de probabilidad se expresa como el producto de un solapamiento por su conjugado.}
+\lectureframe{01:16:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:19}
+\audiencequestion{¿Es esto el coseno al cuadrado del ángulo entre los dos estados?}
+\lecturerresponse{Para vectores unitarios reales en el espacio euclídeo ordinario, el producto interno es el coseno de un ángulo. Aquí, el producto interno suele ser complejo, así que no existe un ángulo espacial ordinario cuyo coseno sea ese producto. La analogía útil es el módulo del solapamiento; la probabilidad es su cuadrado.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:20:18}
+\audiencequestion{¿Qué ocurre si el estado preparado es otro vector propio de \(M\) con un valor propio distinto?}
+\lecturerresponse{Entonces los dos vectores propios son ortogonales. Su solapamiento es cero, por lo que la probabilidad de obtener \(\lambda_A\) es cero. Preparar un estado con un valor definido excluye otro valor definido de ese mismo observable.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:23}
+\audiencequestion{¿Puede aplicarse la misma regla a una preparación en la que ningún resultado sea seguro?}
+\lecturerresponse{Sí. Ese es el caso general: \(\ket B\) no tiene por qué ser un estado propio de \(M\). Sus solapamientos con los vectores propios normalizados dan las probabilidades de los resultados correspondientes. Empezamos con un ejemplo de dos resultados antes de abordar distribuciones más complejas.}
+\end{classroomqa}
+
+En esta clase aplicamos la regla a varias preparaciones, en lugar de ocultarla dentro de una única fórmula.
+
+Primero preparemos \(\sigma_3=+1\):
+\begin{equation}
+  \ket B=\ket{u}=\begin{pmatrix}1\\0\end{pmatrix}.
+\end{equation}
+Midamos \(\sigma_1\). Para su vector propio de \(+1\),
+\begin{equation}
+  \braket{x+}{u}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\0\end{pmatrix}
+  =\frac{1}{\sqrt2},
+\end{equation}
+por lo que
+\begin{equation}
+  P(\sigma_1=+1\mid\sigma_3=+1)=\frac12.
+\end{equation}
+Si sustituimos \(\ket{x+}\) por \(\ket{x-}\), se obtiene la misma probabilidad. Invertir el orden de preparación y medición también da un medio, porque el cuadrado absoluto del solapamiento es simétrico.
+
+Para un ejemplo genuinamente complejo, preparemos \(\ket{x+}\) y midamos \(\sigma_2\). Entonces,
+\begin{align}
+  \braket{y+}{x+}
+  &=
+  \frac12
+  \begin{pmatrix}1&-i\end{pmatrix}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =\frac{1-i}{2},
+  \notag\\
+  P(\sigma_2=+1\mid\sigma_1=+1)
+  &=\left|\frac{1-i}{2}\right|^2
+  =\frac14+\frac14
+  =\frac12.
+  \label{eq:l03-complex-probability-example}
+\end{align}
+Por tanto, preparar el espín a lo largo de un eje y medirlo a lo largo de un eje perpendicular da probabilidades iguales para los dos resultados.
+
+\section{Punteros, estados y ejes arbitrarios}
+
+La frase anterior puede malinterpretarse si no afinamos la terminología. Un momento magnético tiene una dirección espacial, que llamaremos \emph{puntero}. Un ket es un vector del espacio complejo de estados. Dos punteros espaciales pueden ser perpendiculares, mientras que dos vectores de estado pueden ser ortogonales. Son afirmaciones distintas en espacios distintos.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:25}
+\audiencequestion{Si dos direcciones físicas de espín forman un ángulo recto, ¿deberían ser ortogonales sus vectores de estado?}
+\lecturerresponse{No. Los estados de espín hacia arriba a lo largo de ejes espaciales perpendiculares tienen un solapamiento al cuadrado de \(1/2\), no cero. El estado ortogonal al de espín hacia arriba a lo largo de un eje es el de espín hacia abajo a lo largo de ese mismo eje. Reservamos \emph{perpendicular} para los punteros en el espacio ordinario y \emph{ortogonal} para los estados perfectamente distinguibles.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:25}
+\audiencequestion{¿Podríamos usar \emph{independiente} en vez de \emph{ortogonal}?}
+\lecturerresponse{No. La independencia lineal solo significa que ningún vector es múltiplo escalar de los demás; no exige que los productos internos sean cero. La ortogonalidad es una condición más fuerte y, en este caso, tiene el significado físico de distinguibilidad perfecta.}
+\end{classroomqa}
+
+Sea \(\hat n=(n_1,n_2,n_3)\) un puntero unitario en el espacio ordinario:
+\begin{equation}
+  n_1^2+n_2^2+n_3^2=1.
+\end{equation}
+El operador para el espín a lo largo de esa dirección es el análogo matricial de un producto escalar:
+\begin{equation}
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3
+  =
+  \begin{pmatrix}
+    n_3&n_1-in_2\\
+    n_1+in_2&-n_3
+  \end{pmatrix}.
+  \label{eq:l03-spin-arbitrary-axis}
+\end{equation}
+Es hermítico: las entradas diagonales son reales y las entradas fuera de la diagonal son conjugadas entre sí.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_03_figure_07.png}
+\caption{La dirección espacial unitaria del puntero, la suma de operadores y su matriz hermítica explícita se desarrollan conjuntamente.}
+\lectureframe{01:38:00}
+\end{figure}
+
+Para hallar sus valores posibles, elevémoslo al cuadrado antes de sustituir las entradas de la matriz. El orden de las matrices importa, por lo que los términos cruzados aparecen como anticonmutadores:
+\begin{align}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  &=
+  n_1^2\sigma_1^2+n_2^2\sigma_2^2+n_3^2\sigma_3^2
+  \notag\\
+  &\quad
+  +n_1n_2(\sigma_1\sigma_2+\sigma_2\sigma_1)
+  \notag\\
+  &\quad
+  +n_2n_3(\sigma_2\sigma_3+\sigma_3\sigma_2)
+  \notag\\
+  &\quad
+  +n_1n_3(\sigma_1\sigma_3+\sigma_3\sigma_1).
+  \label{eq:l03-axis-square-expanded}
+\end{align}
+Las distintas matrices de Pauli anticonmutan:
+\begin{equation}
+  \sigma_i\sigma_j+\sigma_j\sigma_i=0
+  \qquad(i\ne j).
+  \label{eq:l03-pauli-anticommutation}
+\end{equation}
+La clase comprueba explícitamente un caso:
+\begin{equation}
+  \sigma_1\sigma_3
+  =
+  \begin{pmatrix}0&-1\\1&0\end{pmatrix},
+  \qquad
+  \sigma_3\sigma_1
+  =
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  =-\sigma_1\sigma_3.
+  \label{eq:l03-order-check}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_03_figure_08.png}
+\caption{Multiplicar \(\sigma_1\) y \(\sigma_3\) en órdenes opuestos produce matrices que difieren en un signo menos.}
+\lectureframe{01:44:50}
+\end{figure}
+
+Los términos cruzados de la ecuación~\eqref{eq:l03-axis-square-expanded} se anulan, mientras que \(\sigma_i^2=I\). Por tanto,
+\begin{equation}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  =(n_1^2+n_2^2+n_3^2)I
+  =I.
+\end{equation}
+Todo valor propio cumple entonces \(\lambda^2=1\):
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+Sea cual sea el eje espacial que elija el aparato, el detector sigue teniendo solo dos resultados: \(+1\) y \(-1\). La relación entre direcciones próximas no aparece como un valor medido intermedio, sino en las probabilidades de esas dos respuestas fijas.

@@ -1,0 +1,690 @@
+\chapter{Evolución temporal, conservación y espines acoplados}
+
+Un estado cuántico no es un punto fijo en el espacio de Hilbert. A medida que pasa el tiempo, evoluciona, pero debe hacerlo sin perder la normalización, las probabilidades ni la distinguibilidad codificada en los productos internos. Estos requisitos determinan casi por completo la forma de la dinámica cuántica. La linealidad da lugar a un operador de evolución temporal; la conservación de la probabilidad hace que ese operador sea unitario, y una transformación unitaria infinitesimal está generada por un operador hermítico. Ese operador es el hamiltoniano. Deduciremos la ecuación de Schr\"odinger a partir de estas afirmaciones, veremos cómo los autoestados de energía acumulan fase y, después, aplicaremos el formalismo a dos cálculos concretos: la precesión de un espín en un campo magnético y la oscilación entre dos estados de un par de espines acoplados.
+
+\section{Movimiento lineal en el espacio de Hilbert}
+
+Sea \(t\) el estado \(\ket{\psi(t)}\). Suponemos que la relación con el estado en el instante cero es lineal:
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+La linealidad es un postulado, no un teorema deducido de algo más elemental. Es un aspecto de la mecánica cuántica que ha tenido éxito experimental, y los intentos de sustituirla suelen poner en peligro la probabilidad o las leyes de conservación. En una base elegida, \(U(t)\) es simplemente una matriz que depende del tiempo.
+
+El vector dual obedece la regla conjugada. Si
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)},
+\end{equation}
+entonces
+\begin{equation}
+\bra{\phi(t)}=\bra{\phi(0)}U^\dagger(t).
+\end{equation}
+Para una matriz, la daga indica conjugación compleja seguida de transposición. Por tanto, el bra sigue la misma ley de evolución que el ket, expresada en el espacio dual.
+
+\subsection{La conservación de la probabilidad implica unitariedad}
+
+Un estado normalizado representa una probabilidad total igual a uno:
+\begin{equation}
+\braket{\psi(t)}{\psi(t)}=1.
+\end{equation}
+La evolución temporal debe conservar esta norma. De hecho, una aplicación lineal que conserva la norma de todo vector también conserva todos los productos internos. Geométricamente, conservar las longitudes de dos vectores y de su diferencia conserva el triángulo que forman y, por tanto, su ángulo. En un espacio vectorial complejo se llega a la misma conclusión considerando también combinaciones con un factor \(i\).
+
+Así, para \(\ket{\phi}\) y \(\ket{\psi}\) arbitrarios,
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Al sustituir las leyes de evolución se obtiene
+\begin{equation}
+\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Como esta ecuación se cumple para todo par de vectores,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+Un operador así es unitario. El análogo escalar es un número complejo de módulo unitario:
+\begin{equation}
+e^{i\theta}\bigl(e^{i\theta}\bigr)^*=1.
+\end{equation}
+Un operador unitario es la generalización matricial de una fase pura: puede rotar un estado en el espacio de Hilbert, pero no puede estirarlo ni encogerlo.
+
+\section{El generador infinitesimal}
+
+La evolución finita se construye a partir de pasos temporales muy pequeños. Sea \(\epsilon\) el tiempo transcurrido, lo bastante pequeño como para poder despreciar los términos de orden \(\epsilon^2\). Si el tiempo transcurrido es cero, no ocurre nada, de modo que
+\begin{equation}
+U(0)=I.
+\end{equation}
+La corrección dominante debe ser proporcional a \(\epsilon\). La escribimos en la forma convencional
+\begin{equation}
+\boxed{U(\epsilon)=I-\frac{i\epsilon}{\hbar}H}.
+\end{equation}
+En esta etapa, solo queda fijado el factor \(\epsilon\). Se eligen \(i\), \(\hbar\) y el símbolo \(H\) para que el objeto resultante tenga la normalización estándar y sea hermítico.
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:46}
+\audiencequestion{¿Por qué la constante de Planck es un número tan extraordinariamente pequeño en las unidades habituales?}
+\lecturerresponse{Su valor numérico refleja las unidades escogidas por los seres humanos. Los químicos eligieron cantidades macroscópicas que caben en recipientes del tamaño de una mano, mientras que los átomos son muchísimo más pequeños que las personas. En unidades adaptadas a esas escalas macroscópicas, un cuanto atómico de acción tiene que parecer diminuto. No se trata de un misterio dinámico aparte; se debe, en gran medida, a la escala humana e histórica incorporada en las unidades.}
+\end{classroomqa}
+
+Al tomar el conjugado hermítico,
+\begin{equation}
+U^\dagger(\epsilon)
+=I+\frac{i\epsilon}{\hbar}H^\dagger.
+\end{equation}
+Ahora multiplicamos y conservamos solo los términos de primer orden:
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(I+\frac{i\epsilon}{\hbar}H^\dagger\right)
+\left(I-\frac{i\epsilon}{\hbar}H\right) \\
+&=
+I+\frac{i\epsilon}{\hbar}\left(H^\dagger-H\right)
++O(\epsilon^2).
+\end{align}
+La unitariedad exige que este producto sea igual a \(I\), por lo que
+\begin{equation}
+\boxed{H^\dagger=H}.
+\end{equation}
+El generador infinitesimal de la evolución temporal es hermítico. Como los operadores hermíticos representan observables, todo sistema dinámico posee un observable que genera su evolución temporal: el hamiltoniano. Usamos \(H\) para el operador y reservamos \(E\) para sus posibles valores medidos, los autovalores.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:34}
+\audiencequestion{¿Por qué llamar energía a este generador? ¿No es la energía \(p^2/2m\), o la capacidad de realizar trabajo?}
+\lecturerresponse{Son descripciones útiles en ciertos contextos clásicos, pero no una definición general. La expresión \(p^2/2m\) es solo la energía cinética de una partícula libre no relativista y no define conceptos como la energía almacenada en un campo electromagnético. Para un sistema abstracto, la primera propiedad universal que exigimos de la energía es que se conserve. Enseguida demostraremos que el valor esperado de \(H\) se conserva, y las fases de sus autoestados también satisfarán \(E=\hbar\omega\). Estos dos hechos identifican el generador con la energía.}
+\end{classroomqa}
+
+\section{De un paso pequeño a la ecuación de Schr\"odinger}
+
+La actualización infinitesimal ya contiene, de forma encubierta, una ecuación diferencial. Para un origen de tiempo arbitrario,
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+\lim_{\epsilon\to0}
+\frac{\ket{\psi(t+\epsilon)}-\ket{\psi(t)}}{\epsilon}.
+\end{equation}
+En la pizarra primero se escribe esta expresión para \(t=0\); al desplazar el origen se obtiene la forma general anterior.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_03.png}
+\caption{El cociente incremental que convierte la evolución infinitesimal en una ecuación diferencial.}
+\lectureframe{00:22:15}
+\end{figure}
+
+Tomemos
+\begin{equation}
+\ket{\psi(t+\epsilon)}
+=
+\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}.
+\end{equation}
+Entonces
+\begin{align}
+\frac{d}{dt}\ket{\psi(t)}
+&=
+\lim_{\epsilon\to0}
+\frac{\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}
+-\ket{\psi(t)}}{\epsilon} \\
+&=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{align}
+Equivalentemente,
+\begin{equation}
+\boxed{
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+Esta es la ecuación de Schr\"odinger. Una vez conocidos \(H\) y el estado en un instante, la ecuación determina los estados en instantes posteriores. Las probabilidades de mediciones futuras se obtienen entonces mediante las reglas habituales de medición.
+
+\section{Autoestados de energía y fase rotatoria}
+
+La solución más sencilla parte de un autovector del hamiltoniano:
+\begin{equation}
+H\ket{\psi_E}=E\ket{\psi_E}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_09_figure_04.png}
+\caption{La ecuación de autovalores de energía en la pizarra.}
+\lectureframe{00:28:22}
+\end{figure}
+
+Como \(H\) devuelve \(\ket{\psi_E}\) a la misma dirección unidimensional, la evolución temporal no puede mezclarlo con otro autovector. Solo puede multiplicarlo por un escalar:
+\begin{equation}
+\ket{\psi_E(t)}=f(t)\ket{\psi_E}.
+\end{equation}
+Al sustituir en la ecuación de Schr\"odinger se obtiene
+\begin{align}
+i\hbar\,\dot f(t)\ket{\psi_E}
+&=
+f(t)H\ket{\psi_E} \\
+&=
+E f(t)\ket{\psi_E}.
+\end{align}
+Por tanto,
+\begin{equation}
+\dot f(t)=-\frac{iE}{\hbar}f(t),
+\qquad
+f(t)=e^{-iEt/\hbar},
+\end{equation}
+y
+\begin{equation}
+\boxed{
+\ket{\psi_E(t)}
+=e^{-iEt/\hbar}\ket{\psi_E(0)}
+}.
+\end{equation}
+Un autoestado de energía es estacionario en el sentido de que su rayo en el espacio de Hilbert no se mueve. Sin embargo, su ket acumula fase.
+
+La exponencial puede escribirse como
+\begin{equation}
+e^{-iEt/\hbar}
+=
+\cos\!\left(\frac{Et}{\hbar}\right)
+-i\sin\!\left(\frac{Et}{\hbar}\right).
+\end{equation}
+Durante el cálculo en la pizarra se corrigieron el signo menos y la ausencia de un factor \(i\) adicional dentro del seno. La frecuencia angular es
+\begin{equation}
+\omega=\frac{E}{\hbar},
+\qquad
+\boxed{E=\hbar\omega}.
+\end{equation}
+Equivalentemente, usando la frecuencia ordinaria \(\nu=\omega/(2\pi)\), se tiene \(E=h\nu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_09_figure_05.png}
+\caption{La solución de fase y la relación entre energía y frecuencia-- angular se desarrollan en pizarras contiguas.}
+\lectureframe{00:36:19}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:43}
+\audiencequestion{¿Por qué se introdujeron los factores \(i\) y \(\hbar\) en el operador infinitesimal antes de que el cálculo los exigiera?}
+\lecturerresponse{Son convenciones elegidas teniendo presente el resultado. Sin \(i\), la unitariedad haría que el generador fuera antihermítico. La multiplicación por \(i\) lo convierte en un observable hermítico con autovalores reales. El factor \(\hbar\) da a esos autovalores las unidades y la convención de normalización de la energía. La afirmación física es la unitariedad; estos factores ponen su generador en la forma estándar.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:18}
+\audiencequestion{¿\(E=\hbar\omega\) corresponde únicamente a las ondas electromagnéticas y los fotones?}
+\lecturerresponse{No. Los fotones son un caso importante, pero la relación es más general. Todo autoestado del hamiltoniano adquiere una fase con frecuencia angular \(E/\hbar\). Relacionar la frecuencia de un modo del campo electromagnético con la frecuencia de su fotón requiere más física, pero la relación entre energía y fase -- ya se deduce de la evolución temporal cuántica.}
+\end{classroomqa}
+
+\section{Superposición en la base de energía}
+
+Un único autoestado de energía solo cambia por una fase global, y una fase global no puede afectar a ninguna probabilidad. La dinámica interesante comienza cuando un estado contiene varios autovectores de energía. Como un hamiltoniano hermítico tiene una base propia ortonormal completa,
+\begin{equation}
+H\ket{\psi_n}=E_n\ket{\psi_n},
+\qquad
+\ket{\psi(0)}=\sum_n\alpha_n\ket{\psi_n}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_06.png}
+\caption{Desarrollo de un estado arbitrario en autovectores del hamiltoniano.}
+\lectureframe{00:38:35}
+\end{figure}
+
+La linealidad permite que cada componente evolucione por separado:
+\begin{equation}
+\boxed{
+\ket{\psi(t)}
+=
+\sum_n\alpha_n e^{-iE_n t/\hbar}\ket{\psi_n}
+}.
+\end{equation}
+Las componentes de alta energía giran rápidamente en el plano complejo; las de baja energía lo hacen más despacio. Lo que modifica las probabilidades medibles no es una fase común a todo el estado, sino las fases relativas cambiantes entre componentes con distintos \(E_n\).
+
+En la base de energía,
+\begin{equation}
+\begin{aligned}
+H&=
+\begin{pmatrix}
+E_1&0&\cdots\\
+0&E_2&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix},\\[0.6em]
+U(t)&=
+\begin{pmatrix}
+e^{-iE_1t/\hbar}&0&\cdots\\
+0&e^{-iE_2t/\hbar}&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix}.
+\end{aligned}
+\end{equation}
+Para un hamiltoniano independiente del tiempo, la misma afirmación se resume, sin elegir una base, como
+\begin{equation}
+\boxed{U(t)=e^{-iHt/\hbar}},
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:17}
+\audiencequestion{¿Esta descomposición es, en esencia, una serie de Fourier? ¿Es análoga a las descomposiciones que se usan en la conducción del calor?}
+\lecturerresponse{En efecto, es una descomposición parecida a la de Fourier en el tiempo: cada autovector de energía tiene una frecuencia definida. Los métodos de Fourier y Laplace también separan modos en muchas ecuaciones clásicas, incluidas las de difusión. La semejanza matemática es real, pero hay que comprobar caso por caso qué magnitud física corresponde a la frecuencia. En mecánica cuántica, la relación específica viene fijada por la ecuación de Schr\"odinger.}
+\end{classroomqa}
+
+\subsection{Combinación de sistemas}
+
+Para dos sistemas no interactuantes \(A\) y \(B\), el hamiltoniano combinado es la suma de los generadores de cada sistema en el espacio producto:
+\begin{equation}
+H_{AB}
+=
+H_A\otimes I_B+I_A\otimes H_B.
+\end{equation}
+Si
+\begin{equation}
+H_A\ket{a}=E_a\ket{a},
+\qquad
+H_B\ket{b}=E_b\ket{b},
+\end{equation}
+entonces
+\begin{equation}
+H_{AB}\ket{a,b}=(E_a+E_b)\ket{a,b}.
+\end{equation}
+En sistemas separados y no interactuantes, las energías y, por tanto, las frecuencias de fase, se suman. La interacción aporta otro término, \(H_{\mathrm{int}}\), por lo que esta suma sencilla deja de representar la energía total.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:20}
+\audiencequestion{Si dos sistemas separados tienen componentes con la misma frecuencia, ¿qué ocurre cuando se juntan?}
+\lecturerresponse{En sistemas no interactuantes, los autovalores de energía combinados son las sumas de los autovalores de cada sistema. La igualdad de dos frecuencias puede producir degeneración, pero por sí sola no mezcla los autovectores correspondientes. Para que haya mezcla hace falta un término de interacción o elegir una base dentro de un subespacio degenerado. Cuando los sistemas interactúan, hay que diagonalizar el hamiltoniano ampliado como un problema nuevo.}
+\end{classroomqa}
+
+\section{Valores esperados y conmutadores}
+
+Hemos seguido la evolución del estado manteniendo fijos los observables. Este es el cuadro de Schr\"odinger. Sea \(A\) un observable sin dependencia explícita del tiempo. Su valor esperado es
+\begin{equation}
+\langle A\rangle_t
+=
+\bra{\psi(t)}A\ket{\psi(t)}.
+\end{equation}
+Derivemos respecto del tiempo tanto el bra como el ket:
+\begin{equation}
+\frac{d}{dt}\langle A\rangle_t
+=
+\bra{\dot\psi}A\ket{\psi}
++
+\bra{\psi}A\ket{\dot\psi}.
+\end{equation}
+La ecuación de Schr\"odinger y su conjugada hermítica dan
+\begin{equation}
+\ket{\dot\psi}
+=-\frac{i}{\hbar}H\ket{\psi},
+\qquad
+\bra{\dot\psi}
+=\frac{i}{\hbar}\bra{\psi}H.
+\end{equation}
+Por tanto,
+\begin{align}
+\frac{d}{dt}\langle A\rangle_t
+&=
+\frac{i}{\hbar}\bra{\psi}HA\ket{\psi}
+-\frac{i}{\hbar}\bra{\psi}AH\ket{\psi} \\
+&=
+\frac{i}{\hbar}\bra{\psi}(HA-AH)\ket{\psi}.
+\end{align}
+Definimos el conmutador
+\begin{equation}
+[H,A]=HA-AH.
+\end{equation}
+Entonces, la ecuación de movimiento de un valor esperado es
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle A\rangle_t
+=
+\frac{i}{\hbar}\langle[H,A]\rangle_t
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_07.png}
+\caption{La ecuación del valor esperado y el conmutador \(AB-BA=[A,B]\).}
+\lectureframe{00:51:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:13}
+\audiencequestion{¿Por qué aparece el conmutador dentro de un valor esperado en esta ecuación?}
+\lecturerresponse{El conmutador es un operador. Todo operador situado entre \(\bra{\psi}\) y \(\ket{\psi}\) tiene un valor esperado, así que \(\bra{\psi}[H,A]\ket{\psi}\) es simplemente el promedio de ese conmutador en el estado actual.}
+\end{classroomqa}
+
+\subsection{Leyes de conservación}
+
+Tomemos \(A=H\). Un operador siempre conmuta consigo mismo:
+\begin{equation}
+[H,H]=HH-HH=0.
+\end{equation}
+Por tanto,
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle H\rangle_t=0
+}.
+\end{equation}
+El valor esperado del hamiltoniano se conserva. Esta es la razón estructural prometida para identificar \(H\) con la energía. Todo sistema aislado tiene un hamiltoniano, y todo hamiltoniano independiente del tiempo proporciona esta ley de conservación.
+
+Más generalmente,
+\begin{equation}
+[H,A]=0
+\quad\Longrightarrow\quad
+\frac{d}{dt}\langle A\rangle_t=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:41}
+\audiencequestion{¿Cuál es la interpretación física del conjunto de todos los operadores que conmutan con \(H\)? ¿Incluye magnitudes además de la energía?}
+\lecturerresponse{Son los observables conservados del sistema. Cuáles aparecen depende del hamiltoniano. Una partícula libre conserva el momento, mientras que una fuerza puede destruir esa conservación. La energía siempre está presente porque \(H\) conmuta consigo mismo; otros operadores que conmutan expresan simetrías y leyes de conservación adicionales.}
+\end{classroomqa}
+
+\section{Un espín en un campo magnético}
+
+Consideremos un espín con operadores de Pauli
+\begin{equation}
+\boldsymbol{\sigma}
+=(\sigma_1,\sigma_2,\sigma_3)
+\end{equation}
+en un campo magnético externo fijo \(\mathbf B\). El momento magnético es proporcional al espín. Con la convención usada aquí,
+\begin{equation}
+\boxed{
+H=\frac{\mu}{2}\boldsymbol{\sigma}\cdot\mathbf B
+}.
+\end{equation}
+El factor \(1/2\), el signo y la escala dependiente de la carga pueden incorporarse a la definición de \(\mu\). Tratamos el campo clásicamente: un imán grande y estable proporciona \(\mathbf B\) y no modelamos el estado cuántico de ese imán.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_09_figure_08.png}
+\caption{El operador de momento magnético se acopla al campo magnético externo.}
+\lectureframe{01:01:45}
+\end{figure}
+
+Orientemos el campo a lo largo del tercer eje:
+\begin{equation}
+\mathbf B=B\hat{\mathbf z},
+\qquad
+H=\frac{\mu B}{2}\sigma_3.
+\end{equation}
+Seguiremos los valores esperados de las tres componentes del espín. Para abreviar las ecuaciones, escribimos
+\begin{equation}
+s_i(t)=\langle\sigma_i\rangle_t.
+\end{equation}
+La componente longitudinal obedece
+\begin{equation}
+\dot s_3
+=
+\frac{i}{\hbar}\langle[H,\sigma_3]\rangle
+=0,
+\end{equation}
+porque \(H\) es proporcional a \(\sigma_3\). La proyección del espín a lo largo del campo es constante. Geométricamente, la punta del espín medio debe permanecer sobre un cono de ángulo de abertura fijo alrededor del eje del campo.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_09_figure_09.png}
+\caption{El espín longitudinal fijo restringe el movimiento a un cono alrededor del eje del campo magnético.}
+\lectureframe{01:04:45}
+\end{figure}
+
+Para la primera componente transversal,
+\begin{equation}
+\dot s_1
+=
+\frac{i\mu B}{2\hbar}
+\langle[\sigma_3,\sigma_1]\rangle.
+\end{equation}
+El conmutador puede comprobarse directamente a partir de
+\begin{equation}
+\begin{aligned}
+\sigma_3&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+&
+\sigma_1&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.5em]
+\sigma_2&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix}.
+\end{aligned}
+\end{equation}
+En efecto,
+\begin{equation}
+\sigma_3\sigma_1=i\sigma_2,
+\qquad
+\sigma_1\sigma_3=-i\sigma_2,
+\end{equation}
+por lo que
+\begin{equation}
+[\sigma_3,\sigma_1]=2i\sigma_2.
+\end{equation}
+En consecuencia,
+\begin{equation}
+\dot s_1=-\frac{\mu B}{\hbar}s_2.
+\end{equation}
+De igual modo, usando \([\sigma_3,\sigma_2]=-2i\sigma_1\),
+\begin{equation}
+\dot s_2=\frac{\mu B}{\hbar}s_1.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_10.png}
+\caption{El cálculo del conmutador de Pauli que conduce a la ecuación de movimiento transversal.}
+\lectureframe{01:09:35}
+\end{figure}
+
+Sea
+\begin{equation}
+\Omega=\frac{\mu B}{\hbar}.
+\end{equation}
+Las tres ecuaciones son
+\begin{equation}
+\dot s_1=-\Omega s_2,
+\qquad
+\dot s_2=\Omega s_1,
+\qquad
+\dot s_3=0.
+\end{equation}
+Una solución con amplitud transversal \(s_\perp\) es
+\begin{equation}
+s_1(t)=s_\perp\cos(\Omega t+\varphi),
+\qquad
+s_2(t)=s_\perp\sin(\Omega t+\varphi),
+\end{equation}
+donde \(s_3\) es constante.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_09_figure_11.png}
+\caption{Las componentes transversales del espín forman un par seno--coseno con frecuencia angular \(\mu B/\hbar\).}
+\lectureframe{01:11:45}
+\end{figure}
+
+Por tanto, el espín medio precesa alrededor del campo magnético como un giroscopio. Elegir el campo a lo largo de \(z\) era solo una conveniencia. Para un campo en cualquier dirección, la componente paralela a \(\mathbf B\) se conserva y la componente perpendicular gira alrededor de él.
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:02}
+\audiencequestion{¿La solución con seno y coseno debería incluir una fase adicional?}
+\lecturerresponse{Sí. La fase \(\varphi\) especifica la dirección inicial en el plano transversal o, equivalentemente, la elección del instante que llamamos \(t=0\). Fijarla en cero simplemente supone que el espín empieza sobre un eje transversal particular.}
+\end{classroomqa}
+
+\subsection{Preparación y medición}
+
+Supongamos que se prepara un conjunto en el autoestado \(+1\) de \(\sigma_1\). En \(t=0\), una medición de \(\sigma_1\) dará con certeza \(+1\), mientras que las mediciones de \(\sigma_2\) o \(\sigma_3\) tienen probabilidades iguales de dar \(\pm1\). Tras un cuarto de período de precesión, el estado ha rotado al autoestado \(+1\) de \(\sigma_2\): entonces \(\sigma_2\) se determina con certeza y \(\sigma_1\) es totalmente incierto. Tras otro cuarto de período, llega al autoestado \(-1\) de \(\sigma_1\). Por tanto, los valores esperados rotatorios tienen un significado operacional directo.
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:04}
+\audiencequestion{Si para obtener valores esperados hacen falta muchos electrones, ¿no tendrán los miembros del conjunto fases distintas que anulen la precesión?}
+\lecturerresponse{No, si se realiza el mismo experimento con cada uno. Una preparación idéntica da a todos los electrones el mismo estado inicial y, por tanto, la misma evolución de fase. Si sus fases iniciales no están controladas, el conjunto no está preparado en un estado puro; es un estado mixto, y la pérdida de coherencia puede reducir el promedio transversal.}
+\end{classroomqa}
+
+\section{Dos espines acoplados}
+
+Consideremos ahora dos espines. Decir simplemente que están entrelazados no basta para predecir qué harán. La dinámica requiere un hamiltoniano.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:49}
+\audiencequestion{Si dos electrones están entrelazados de modo que se obtienen resultados opuestos al medirlos a lo largo de cualquier eje común, ¿significa eso que sus movimientos están siempre desfasados \(180^\circ\)?}
+\lecturerresponse{Del entrelazamiento por sí solo no se deduce ninguna conclusión dinámica. La anticorrelación descrita corresponde al estado singlete, pero su evolución posterior depende del operador de energía. Primero debemos especificar si hay un campo externo, una interacción entre los espines o ambas cosas.}
+\end{classroomqa}
+
+Tomemos la interacción isotrópica sencilla en la que cada espín proporciona el campo efectivo que siente el otro:
+\begin{equation}
+\boxed{
+H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}
+=
+J\left(
+\sigma_1\tau_1+\sigma_2\tau_2+\sigma_3\tau_3
+\right)
+}.
+\end{equation}
+Los operadores \(\boldsymbol{\sigma}\) actúan sobre el primer espín y \(\boldsymbol{\tau}\), sobre el segundo. El acoplamiento \(J\) fija la escala de energía; su valor y su signo no se especifican.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_09_figure_12.png}
+\caption{La interacción isotrópica entre dos espines \(H\propto\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\).}
+\lectureframe{01:19:20}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:49}
+\audiencequestion{¿Poner dos electrones entrelazados en un campo magnético uniforme los desenredaría necesariamente?}
+\lecturerresponse{No necesariamente. Un campo modifica el hamiltoniano y puede tender a alinear los espines, sobre todo si es intenso, pero la evolución unitaria en un campo uniforme no garantiza por sí sola la pérdida del entrelazamiento. La respuesta depende del hamiltoniano completo y del estado inicial.}
+\end{classroomqa}
+
+\subsection{Energías del triplete y del singlete}
+
+El espacio de Hilbert de los dos espines tiene dimensión cuatro. La interacción es diagonal en la base del triplete--singlete:
+\begin{align}
+\ket{T_+}&=\ket{\uparrow\uparrow}, \\
+\ket{T_0}&=
+\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt2}, \\
+\ket{T_-}&=\ket{\downarrow\downarrow}, \\
+\ket{S}&=
+\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt2}.
+\end{align}
+Los tres estados triplete comparten una energía \(E_T\); el singlete tiene otra energía, \(E_S\). Así, hay cuatro autovectores independientes, pero solo dos niveles de energía distintos. El nivel del triplete tiene degeneración triple.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_13.png}
+\caption{El hamiltoniano de los espines acoplados tiene un nivel triplete degenerado y un nivel singlete separado.}
+\lectureframe{01:20:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:16}
+\audiencequestion{¿Qué ocurre si el estado inicial ya es el autoestado de energía singlete?}
+\lecturerresponse{Permanece en el estado singlete y solo adquiere la fase \(e^{-iE_St/\hbar}\). Como ocurre con cualquier autoestado de energía, sus propiedades medibles no cambian por el mero hecho de multiplicar todo el ket por esa fase común.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:54}
+\audiencequestion{¿Un campo magnético externo aporta energía al sistema de dos espines durante este cálculo?}
+\lecturerresponse{En el ejemplo que estamos resolviendo no hay ningún campo externo. El único campo del que hablamos es el de la interacción mutua representada por \(J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\). Añadir un campo externo añadiría otro término a \(H\) y definiría un problema distinto.}
+\end{classroomqa}
+
+\subsection{Comencemos con un espín arriba y otro abajo}
+
+Un autoestado de energía solo acumularía una fase, así que elijamos un estado producto que no sea un autoestado de energía:
+\begin{equation}
+\ket{\psi(0)}=\ket{\uparrow\downarrow}.
+\end{equation}
+Descompongámoslo en los dos autovectores pertinentes:
+\begin{equation}
+\boxed{
+\ket{\uparrow\downarrow}
+=
+\frac{1}{\sqrt2}\ket{T_0}
++
+\frac{1}{\sqrt2}\ket{S}
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_14.png}
+\caption{El estado producto \(\ket{\uparrow\downarrow}\) descompuesto en componentes de triplete y singlete.}
+\lectureframe{01:24:30}
+\end{figure}
+
+Ahora cada componente de energía adquiere su propia fase:
+\begin{equation}
+\ket{\psi(t)}
+=
+\frac{e^{-iE_Tt/\hbar}}{\sqrt2}\ket{T_0}
++
+\frac{e^{-iE_St/\hbar}}{\sqrt2}\ket{S}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:25:59}
+\audiencequestion{¿Cuál es mayor, la energía del triplete \(E_T\) o la del singlete \(E_S\)?}
+\lecturerresponse{Depende del signo del acoplamiento. Para \(H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\) con \(J>0\), el singlete tiene menor energía y el triplete, mayor; al invertir el signo, se invierte el orden. Añadir una constante a ambas energías solo cambia una fase global, así que se puede fijar cualquiera de los niveles en cero sin cambiar las probabilidades de transición.}
+\end{classroomqa}
+
+Volvamos a la base producto:
+\begin{align}
+\ket{\psi(t)}
+&=
+\frac12
+\left(
+e^{-iE_Tt/\hbar}+e^{-iE_St/\hbar}
+\right)\ket{\uparrow\downarrow} \\
+&\quad+
+\frac12
+\left(
+e^{-iE_Tt/\hbar}-e^{-iE_St/\hbar}
+\right)\ket{\downarrow\uparrow}.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_15.png}
+\caption{El estado evolucionado, expresado de nuevo en la base \(\ket{\uparrow\downarrow}\), \(\ket{\downarrow\uparrow}\).}
+\lectureframe{01:30:40}
+\end{figure}
+
+En \(t=0\), el coeficiente de \(\ket{\downarrow\uparrow}\) se anula, como debe ser. En instantes posteriores, la fase relativa entre las componentes singlete y triplete hace que este coeficiente crezca. Definamos la energía media y la separación entre niveles:
+\begin{equation}
+\overline E=\frac{E_T+E_S}{2},
+\qquad
+\Delta E=E_T-E_S.
+\end{equation}
+Al factorizar la fase de la energía media se obtiene
+\begin{equation}
+\boxed{
+\begin{aligned}
+\ket{\psi(t)}
+&=e^{-i\overline E t/\hbar}\Biggl[
+\cos\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\uparrow\downarrow}
+\\
+&\qquad
+-i\sin\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\downarrow\uparrow}
+\Biggr]
+\end{aligned}
+}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_16.png}
+\caption{La energía media se convierte en una fase común, mientras que la separación entre los estados singlete--triplete aparece en las amplitudes del seno y del coseno.}
+\lectureframe{01:35:15}
+\end{figure}
+
+El factor \(e^{-i\overline E t/\hbar}\) es común a todo el ket y desaparece de todas las probabilidades. Las probabilidades medibles son
+\begin{equation}
+P_{\uparrow\downarrow}(t)
+=
+\cos^2\!\left(\frac{\Delta E\,t}{2\hbar}\right),
+\qquad
+P_{\downarrow\uparrow}(t)
+=
+\sin^2\!\left(\frac{\Delta E\,t}{2\hbar}\right).
+\end{equation}
+El estado oscila de \(\ket{\uparrow\downarrow}\) a \(\ket{\downarrow\uparrow}\) y vuelve, a una tasa determinada únicamente por la diferencia de energía. En instantes intermedios, ambas amplitudes son distintas de cero y, salvo en instantes especiales, los dos espines están entrelazados.
+
+Este cálculo ilustra un método general. Se elige la base en la que se plantea la pregunta física, se desarrolla el estado inicial en autovectores del hamiltoniano, se deja que cada autovector adquiera su propia fase y luego se recombinan las componentes en la base de medición. La dinámica cuántica se vuelve sistemática una vez diagonalizado el hamiltoniano: todo movimiento observable se debe a las fases relativas.

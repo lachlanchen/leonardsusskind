@@ -1,0 +1,446 @@
+\chapter{Información clásica, dinámica reversible y matrices}
+
+\lectureoverview{La mecánica cuántica nos pide razonar más allá del ámbito para el que se formó nuestra intuición ordinaria. Por eso empezamos un paso antes, con la información clásica: bits, configuraciones y leyes de actualización reversibles. Esta misma exposición conduce de forma natural a los vectores y las matrices, que nos proporcionarán el lenguaje de los bits cuánticos.}
+
+\section{Una intuición formada para un mundo distinto}
+
+Nuestra intuición física es antigua. Mucho antes de que alguien escribiera una ecuación, un animal que perseguía una presa tenía que estimar la velocidad relativa y la dirección. Si un león se acerca a una gacela, está respondiendo a una separación cambiante y, por tanto, de manera implícita, a la velocidad relativa. Se favoreció a los sistemas nerviosos que resolvían bien esos juicios; los que los resolvían mal dejaron pocos descendientes. Gran parte de lo que llamamos sentido común sobre el movimiento se formó en este mundo cotidiano.
+
+Esa herencia es útil, pero limitada. Nada en la vida cotidiana se mueve cerca de la velocidad de la luz, así que la evolución no nos dotó de un instinto para el espacio-tiempo relativista. Un físico aprende primero la geometría abstracta y solo después adquiere una nueva intuición para ella. La mecánica cuántica es aún más difícil. Nuestra imagen habitual de una partícula proviene de las piedras y las flechas: en cada instante el objeto tiene una posición, la sucesión de posiciones forma una trayectoria y los cambios de posición definen una velocidad. Un electrón no se ajusta a esa imagen. La incertidumbre en la posición y la ausencia de una trayectoria clásica no tienen equivalente en la experiencia que moldeó nuestros sentidos.
+
+Este fallo de la intuición no tiene nada de paradójico. Solo habría una paradoja si los instintos adaptados a las piedras, los animales y las velocidades moderadas supieran de antemano algo sobre los electrones. La respuesta adecuada es construir una intuición distinta a partir de un pequeño conjunto de reglas precisas. Aquí no seguiremos la ruta habitual de la mecánica ondulatoria y la ecuación Schr\"odinger. Nos centraremos en la estructura lógica de la mecánica cuántica y en la información cuántica. Antes de preguntarnos qué es un bit cuántico, debemos entender exactamente qué hace un bit ordinario.
+
+\section{Bits y cantidad de información}
+
+La física es inseparable de la información. A veces esa información se expresa mediante un número real, pero la unidad de información más sencilla posible es la respuesta a una pregunta con solo dos alternativas: sí o no, cara o cruz, arriba o abajo.
+
+\begin{definition}Un \emph{bit clásico} es una pregunta física con exactamente dos respuestas posibles.
+\end{definition}
+
+Podemos asignar a esas respuestas las etiquetas \(0\) y \(1\). Las etiquetas no tienen significado intrínseco; serviría cualquier par de símbolos distintos. Como la notación de Dirac pronto será indispensable, la introducimos aunque por ahora sea redundante:
+\begin{equation}
+  \ket{0},
+  \qquad
+  \ket{1}.
+\end{equation}
+La barra vertical y el corchete angular forman un \emph{ket}, la mitad derecha de un bra--ket. El mero cambio de notación no introduce nada cuántico.
+
+Para varios bits distinguibles, escribimos las respuestas en un orden fijo. Por ejemplo, seis monedas distinguibles pueden tener la configuración
+\begin{equation}
+  \ket{0\,1\,1\,0\,1\,0}.
+\end{equation}
+Una vez establecido el orden, se pueden omitir las comas. Un bit tiene dos estados posibles, dos bits tienen cuatro, y cada bit adicional duplica la cantidad. Así, un sistema de \(n\) bits tiene
+\begin{equation}
+  N_s=2^n
+  \label{eq:l01-state-count}
+\end{equation}
+estados. A la inversa,
+\begin{equation}
+  n=\log_2 N_s.
+  \label{eq:l01-bits-from-states}
+\end{equation}
+
+La ecuación~\eqref{eq:l01-bits-from-states} sugiere una definición útil incluso cuando la cantidad de estados no es una potencia de dos:
+\begin{equation}
+  I=\log_2 N_s.
+  \label{eq:l01-information}
+\end{equation}
+Por tanto, un dado de seis caras contiene \(\log_2 6\) bits de información. La respuesta no tiene por qué ser un entero. Los sistemas construidos literalmente con interruptores binarios serán ejemplos prácticos, pero el logaritmo es la medida más general.
+
+\section{Codificar un mundo aparentemente continuo}
+
+Los bits no se limitan a las monedas. Cualquier magnitud medida con precisión finita se puede escribir como una cadena binaria finita. Supongamos, por ejemplo, que solo se necesita conocer la temperatura de una habitación con una cantidad determinada de cifras significativas. Expresamos el valor medido en base dos y conservamos las cifras necesarias para esa precisión. Una mayor precisión requiere una cadena más larga, pero no cambia el principio.
+
+Se puede tratar de manera similar un campo que varía con la posición. Dividimos la habitación en una retícula ordenada y fina de celdas, registramos con precisión finita el valor del campo en cada celda y concatenamos las cadenas binarias resultantes. Reducir el tamaño de las celdas mejora la resolución espacial; conservar más cifras binarias mejora la resolución de los valores del campo. Así se pueden codificar campos de temperatura, eléctricos y magnéticos con cualquier precisión finita especificada.
+
+Las configuraciones de partículas ofrecen una imagen binaria aún más literal. Subdividimos el espacio en celdas suficientemente pequeñas para que cada una contenga como máximo una partícula. Asignamos
+\begin{equation}
+  n_i=
+  \begin{cases}
+    1,&\text{cell \(i\) is occupied},\\
+    0,&\text{cell \(i\) is empty}.
+  \end{cases}
+  \label{eq:l01-occupancy-bit}
+\end{equation}
+La configuración completa es la cadena ordenada
+\begin{equation}
+  \ket{n_1n_2n_3\cdots}.
+\end{equation}
+Es una respuesta muy larga a una secuencia de preguntas de sí o no: ¿hay una partícula en la primera celda?, ¿en la segunda?, y así sucesivamente. Es la versión física del juego \emph{Veinte preguntas}, salvo que la cantidad de preguntas puede ser enorme.
+
+Esta construcción explica por qué las computadoras digitales pueden simular la física. Una computadora almacena cadenas finitas, y la resolución finita convierte las magnitudes y los campos medidos precisamente en ese tipo de cadenas. La aproximación se puede mejorar sistemáticamente refinando la retícula, el paso temporal o la cantidad de cifras conservadas.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:43}
+\audiencequestion{¿Es arbitraria la precisión de la representación de la temperatura?}
+\lecturerresponse{Se elige según la aproximación que queramos. Una cadena finita proporciona una precisión finita; conservar más cifras binarias da una aproximación más precisa. No afirmamos aquí que una cadena finita especifique exactamente un número real clásico arbitrario.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:30:11}
+\audiencequestion{¿Qué ocurre con un número real general, en especial si es irracional?}
+\lecturerresponse{Un número real exacto puede requerir infinitos bits. Algunas expansiones binarias de números racionales son periódicas, mientras que una expansión irracional genérica no termina nunca. Una computadora real siempre conserva una cantidad finita de cifras. La cuestión es que se puede codificar cualquier precisión finita especificada, no que todo número real clásico tenga una descripción exacta finita.}
+\end{classroomqa}
+
+\section{Un estado y una ley de movimiento}
+
+Hasta ahora hemos descrito un sistema en un instante. Para describir el movimiento hace falta un segundo elemento.
+
+\begin{definition}Una \emph{configuración} es el estado completo de un sistema en un instante especificado. Una ley de movimiento en tiempo discreto es una regla que asigna a cada configuración la configuración correspondiente un paso temporal después.
+\end{definition}
+
+La distinción es elemental, pero esencial. Una instantánea de la distribución de electrones es una configuración; todavía no es una órbita. Si sustituimos el espacio por una retícula y el tiempo por una secuencia \(t_0,t_1,t_2,\ldots\), el movimiento es la sucesión
+\begin{equation}
+  \ket{s(t_0)}
+  \longmapsto
+  \ket{s(t_1)}
+  \longmapsto
+  \ket{s(t_2)}
+  \longmapsto\cdots.
+  \label{eq:l01-discrete-motion}
+\end{equation}
+Por tanto, un modelo físico requiere tanto un conjunto de estados posibles como una regla de actualización.
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:12}
+\audiencequestion{¿Cómo describe esta representación por celdas el movimiento de un electrón en una órbita?}
+\lecturerresponse{Primero especificamos solo la configuración en un instante: qué celdas están ocupadas, con el núcleo fijo si eso forma parte del modelo. Después discretizamos el tiempo. El movimiento orbital es la regla que actualiza una cadena de ocupación a la siguiente. La regla puede ser complicada debido al orden de las celdas, pero sigue siendo una actualización de información.}
+\end{classroomqa}
+
+Conviene dibujar un \emph{espacio de estados} abstracto. Cada punto de este espacio representa una configuración completa, no una posición en el espacio ordinario. Una retícula de ocupación de \(10\times10\) bits contiene \(2^{100}\) configuraciones posibles.\editorialnote{En el desarrollo del ejemplo, la exposición oral dice brevemente \(10^{100}\); el recuento de bits fija el valor previsto como \(2^{100}\).} Cada una de esas configuraciones es un punto único del espacio de estados.
+
+Para un bit solo hay dos puntos. La ley identidad deja ambos fijos:
+\begin{equation}
+  0\mapsto0,
+  \qquad
+  1\mapsto1.
+  \label{eq:l01-identity-update}
+\end{equation}
+La otra posibilidad reversible los intercambia:
+\begin{equation}
+  0\mapsto1,
+  \qquad
+  1\mapsto0.
+  \label{eq:l01-flip-update}
+\end{equation}
+Esto es un flip-flop. Cuesta más encontrar un ejemplo físico que evolucione libremente que un interruptor de luz accionado a mano, porque la intervención ampliaría el sistema. El día y la noche forman un ciclo aproximado de dos estados; un péndulo también alterna entre sus extremos, aunque su estado completo incluye todas las posiciones y velocidades intermedias.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:38}
+\audiencequestion{¿Sería un interruptor de luz ordinario un ejemplo de la ley del flip-flop?}
+\lecturerresponse{No si una persona lo acciona, porque entonces el interruptor no evoluciona por sí mismo; la persona forma parte del sistema dinámico ampliado. Buscamos un sistema cerrado cuya propia ley alterne sus estados. El día y la noche sugieren la idea, mientras que el péndulo nos recuerda que un ejemplo real suele tener más de dos estados.}
+\end{classroomqa}
+
+Un sistema de dos bits tiene cuatro configuraciones. Una ley de actualización puede hacerlas recorrer un único ciclo. Otra puede consistir en dos ciclos separados de dos estados. Estos son ciclos en el espacio lógico de las configuraciones, no necesariamente en el espacio físico. Las flechas especifican la ley: sea cual sea el estado inicial del sistema, seguir las flechas indica su historia posterior.
+
+\section{Reversibilidad y conservación de las distinciones}
+
+No todos los diagramas de flechas tienen el mismo significado físico. Consideremos una regla en la que dos estados distintos confluyen en el mismo estado siguiente:
+\begin{equation}
+  a\mapsto c,
+  \qquad
+  b\mapsto c.
+  \label{eq:l01-merging-update}
+\end{equation}
+El estado siguiente queda definido tanto si partimos de \(a\) como de \(b\), pero, una vez alcanzado \(c\), no podemos determinar cuál de los dos pasados ocurrió. Ha desaparecido la distinción entre \(a\) y \(b\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_01_figure_02.png}
+\caption{Durante la exposición sobre reversibilidad permanecen en la pizarra varios diagramas de actualización. Coexisten ciclos cerrados con un patrón de confluencia, y junto a ellos aparece escrito el término cuántico \emph{unitariedad}.}
+\lectureframe{00:53:21}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Latex,thick,node distance=1.15cm]
+  \node[circle,fill,inner sep=1.8pt,label=above:\(1\)] (r1) {};
+  \node[circle,fill,inner sep=1.8pt,right=of r1,label=above:\(2\)] (r2) {};
+  \node[circle,fill,inner sep=1.8pt,below=of r2,label=below:\(3\)] (r3) {};
+  \node[circle,fill,inner sep=1.8pt,left=of r3,label=below:\(4\)] (r4) {};
+  \draw[->] (r1) -- (r2);
+  \draw[->] (r2) -- (r3);
+  \draw[->] (r3) -- (r4);
+  \draw[->] (r4) -- (r1);
+  \node[below=0.5cm of r4,anchor=north west] {\small reversible cycle};
+
+  \node[circle,fill,inner sep=1.8pt,right=4.2cm of r1,label=above:\(a\)] (a) {};
+  \node[circle,fill,inner sep=1.8pt,below=1.25cm of a,label=below:\(b\)] (b) {};
+  \node[circle,fill,inner sep=1.8pt,right=1.6cm of a,yshift=-0.625cm,label=above:\(c\)] (c) {};
+  \node[circle,fill,inner sep=1.8pt,right=of c,label=above:\(d\)] (d) {};
+  \draw[->] (a) -- (c);
+  \draw[->] (b) -- (c);
+  \draw[->] (c) -- (d);
+  \node[below=0.55cm of b,anchor=north west] {\small information-losing merge};
+\end{tikzpicture}
+\caption{Una regla reversible asigna a cada estado un único predecesor y un único sucesor. Una regla con confluencia tiene un futuro único, pero un pasado ambiguo.}
+\end{figure}
+
+La dinámica clásica fundamental no permite esta pérdida si se conservan todos los grados de libertad. La propiedad requerida tiene dos partes:
+\begin{equation}
+  \boxed{\begin{gathered}
+    \text{one unique future and one unique past}\\
+    \text{for every state}
+  \end{gathered}.}
+  \label{eq:l01-reversibility}
+\end{equation}
+Por tanto, en un espacio de estados finito, la actualización debe ser una permutación. Cada estado tiene exactamente una flecha saliente y una entrante, de modo que el diagrama se descompone en ciclos disjuntos.
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:32}
+\audiencequestion{¿Qué diferencia hay en el diagrama con confluencia?}
+\lecturerresponse{No está compuesto exclusivamente por ciclos. Más fundamentalmente, encontrar el sistema en el estado de confluencia no nos dice cuál era su predecesor. Podemos determinar el futuro, pero no reconstruir el pasado. Se ha perdido una distinción histórica de un bit.}
+\end{classroomqa}
+
+Esta noción es la \emph{reversibilidad temporal}, que no implica necesariamente simetría exacta bajo inversión temporal. Un ciclo horario tiene una orientación definida hacia delante. La ley original no hace que el sistema recorra el ciclo en sentido antihorario, pero existe una ley inversa que sí lo hace. La simetría exacta bajo inversión temporal plantea una pregunta adicional: después de aplicar la operación de inversión apropiada, ¿se obtienen las mismas leyes dinámicas? La reversibilidad solo pregunta si la historia se puede recorrer hacia atrás de forma única.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:58}
+\audiencequestion{¿Que el pasado sea único es lo mismo que tener simetría bajo inversión temporal?}
+\lecturerresponse{No exactamente. Las flechas de un ciclo pueden apuntar en una sola dirección, de modo que la ley tiene una orientación. Reversibilidad significa que se puede construir una ley inversa bien definida invirtiendo todas las flechas. Eso no significa por sí solo que la ley inversa sea idéntica a la ley original.}
+\end{classroomqa}
+
+Tampoco debemos reparar un diagrama irreversible colocando dos flechas salientes en el estado de confluencia. Eso haría ambiguo el movimiento hacia atrás de otra manera: el sistema necesitaría una instrucción probabilística, tal vez elegir una rama \(30\%\) del tiempo y la otra \(70\%\). Seguimos construyendo una dinámica clásica determinista, en la que un estado presente determina un futuro y un pasado únicos.
+
+En última instancia, todo sistema real es cuántico. Por qué los objetos grandes parecen clásicos y por qué resulta difícil observar sus alternativas cuánticas es una cuestión para más adelante. El principio cuántico correspondiente conservará el mismo núcleo lógico. Medio en broma, se podría llamar \emph{unicidad} a la unicidad del pasado y del futuro. Su nombre real es \emph{unitariedad}: la evolución cuántica se puede recorrer de forma única hacia delante o hacia atrás.
+
+\section{Pérdida aparente de información y coarse-graining}
+
+La experiencia macroscópica parece contradecir la reversibilidad. Juntamos todas las moléculas de un gas en una esquina de una habitación cerrada y las soltamos. Al poco tiempo, el gas llena la habitación. Si empezamos, en cambio, desde la esquina opuesta, el estado macroscópico final parece el mismo. ¿Han confluido los dos estados iniciales distintos?
+
+Solo después de descartar detalles. Un estado microscópico especifica cada molécula. Si pudiéramos seguir con suficiente precisión todas las posiciones y velocidades, al invertir esos movimientos distinguiríamos las dos preparaciones. En la práctica, el cálculo es prohibitivamente difícil y la precisión necesaria aumenta rápidamente, pero la incapacidad práctica no equivale a una eliminación fundamental. La afirmación macroscópica \emph{el aire llena la habitación} identifica un número enorme de configuraciones microscópicas distintas como un único estado coarse-grained.
+
+Aquí es donde entra en juego la segunda ley de la termodinámica. Perdemos la capacidad de distinguir los estados detallados porque no hacemos un seguimiento de todas las variables microscópicas. La información parece desaparecer porque nuestra descripción es aproximada, no porque la ley determinista de grano fino haga confluir puntos distintos.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:11}
+\audiencequestion{¿Haría falta una cantidad infinita de bits para seguir todas las moléculas de una habitación clásica?}
+\lecturerresponse{Sí, para una descripción clásica exacta. Las posiciones y las velocidades son números reales, y seguir durante más tiempo un sistema caótico de muchas partículas exige cada vez más precisión. La mecánica cuántica cambia esta conclusión: para una región cerrada con energía acotada, la descripción de lo físicamente distinguible puede ser discreta en vez de una lista arbitraria de números reales clásicos exactos.}
+\end{classroomqa}
+
+La cuestión no es meramente académica. Durante décadas se debatió si un agujero negro podía destruir información; al principio, Stephen Hawking sostuvo que sí. La controversia plantea si la confluencia aparente es otra descripción coarse-grained o una auténtica violación de la unitariedad cuántica. No la resolveremos antes de contar con el lenguaje preciso de la mecánica cuántica, pero muestra cuánto depende de esos sencillos diagramas de flechas.
+
+\section{Filas, columnas y productos internos}
+
+Antes de sustituir los bits clásicos por bits cuánticos, necesitamos algunos conceptos de álgebra lineal. Por ahora, podemos tratar un vector simplemente como una lista ordenada finita de números reales. Un vector de cuatro componentes se puede escribir en horizontal,
+\begin{equation}
+  A^{\mathsf T}=(A_1,A_2,A_3,A_4),
+  \label{eq:l01-row-vector}
+\end{equation}
+o en vertical,
+\begin{equation}
+  A=
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}.
+  \label{eq:l01-column-vector}
+\end{equation}
+El término \emph{cuatridimensional} solo significa que hay cuatro componentes. No hace falta imaginar una flecha en el espacio ordinario. El objeto horizontal es un vector fila, y el vertical, un vector columna.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\linewidth]{lecture_01_figure_03.png}
+\caption{Los mismos componentes se escriben como fila y como columna. En esta etapa son números reales, así que no interviene ninguna conjugación compleja.}
+\lectureframe{01:03:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:14}
+\audiencequestion{¿No es el vector fila el adjunto del vector columna?}
+\lecturerresponse{Ese será el lenguaje adecuado cuando los componentes sean complejos. Entonces, la transposición debe ir acompañada de la conjugación compleja. Por ahora, las entradas son reales, así que solo necesitamos distinguir la disposición en fila de la disposición en columna.}
+\end{classroomqa}
+
+Sea
+\begin{equation}
+  B=(B_1,B_2,B_3,B_4)
+\end{equation}
+una fila con la misma cantidad de entradas que la columna \(A\). Su producto se define emparejando las posiciones correspondientes y sumando:
+\begin{align}
+  BA
+  &=
+  (B_1,B_2,B_3,B_4)
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}\\
+  &=B_1A_1+B_2A_2+B_3A_3+B_4A_4.
+  \label{eq:l01-inner-product}
+\end{align}
+El resultado es un número, no otro vector ni una matriz. En un espacio vectorial abstracto, esta operación se denomina producto interno.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:44}
+\audiencequestion{¿Es este el producto escalar?}
+\lecturerresponse{Sí. Para los vectores ordinarios en el espacio tridimensional, es el conocido producto escalar. El nombre \emph{producto interno} destaca que la misma operación de fila por columna se aplica en espacios vectoriales de cualquier dimensión finita.}
+\end{classroomqa}
+
+\section{Las matrices como máquinas de actualización de estados}
+
+Una matriz es una matriz cuadrada de números que actúa sobre un vector y produce otro vector. Podemos pensar en ella como una máquina: introducimos la columna anterior, aplicamos una regla fija y obtenemos una nueva columna. En cuatro dimensiones,
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}&M_{13}&M_{14}\\
+    M_{21}&M_{22}&M_{23}&M_{24}\\
+    M_{31}&M_{32}&M_{33}&M_{34}\\
+    M_{41}&M_{42}&M_{43}&M_{44}
+  \end{pmatrix}.
+  \label{eq:l01-general-matrix}
+\end{equation}
+El primer índice indica la fila y el segundo, la columna. Podemos considerar \(M\) como un conjunto de columnas o como un conjunto de filas; ambos puntos de vista serán útiles.
+
+Para calcular \(A'=MA\), tomamos el producto interno de cada fila de \(M\) con la columna de entrada:
+\begin{equation}
+  A'_i=(MA)_i=\sum_{j=1}^{4}M_{ij}A_j.
+  \label{eq:l01-matrix-vector}
+\end{equation}
+Por ejemplo,
+\begin{align}
+  A'_1&=M_{11}A_1+M_{12}A_2+M_{13}A_3+M_{14}A_4,\\
+  A'_2&=M_{21}A_1+M_{22}A_2+M_{23}A_3+M_{24}A_4.
+\end{align}
+Las entradas tercera y cuarta se obtienen siguiendo el mismo patrón.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_01_figure_04.png}
+\caption{Una matriz actúa sobre un vector columna fila por fila. En la pizarra se desarrollan explícitamente los dos primeros componentes de salida.}
+\lectureframe{01:12:45}
+\end{figure}
+
+\subsection{Codificación de una configuración clásica}
+
+Supongamos que un sistema tiene cuatro estados posibles. Los representamos mediante las columnas unitarias
+\begin{equation}
+  e_1=
+  \begin{pmatrix}1\\0\\0\\0\end{pmatrix},
+  \quad
+  e_2=
+  \begin{pmatrix}0\\1\\0\\0\end{pmatrix},
+  \quad
+  e_3=
+  \begin{pmatrix}0\\0\\1\\0\end{pmatrix},
+  \quad
+  e_4=
+  \begin{pmatrix}0\\0\\0\\1\end{pmatrix}.
+  \label{eq:l01-one-hot}
+\end{equation}
+La posición del único \(1\) nos indica qué configuración clásica está presente.
+
+Consideremos la actualización cíclica
+\begin{equation}
+  1\longrightarrow2\longrightarrow3\longrightarrow4\longrightarrow1.
+  \label{eq:l01-four-cycle}
+\end{equation}
+Está representada por
+\begin{equation}
+  P=
+  \begin{pmatrix}
+    0&0&0&1\\
+    1&0&0&0\\
+    0&1&0&0\\
+    0&0&1&0
+  \end{pmatrix}.
+  \label{eq:l01-permutation-matrix}
+\end{equation}
+En efecto,
+\begin{equation}
+  \begin{aligned}
+    Pe_1&=e_2, & Pe_2&=e_3,\\
+    Pe_3&=e_4, & Pe_4&=e_1.
+  \end{aligned}
+\end{equation}
+La construcción en la pizarra se corrige mientras se escribe: primero se consideran cinco estados y luego cuatro. La ecuación~\eqref{eq:l01-permutation-matrix} recoge la regla cíclica definitiva, no la matriz provisional descartada.
+
+La misma matriz actúa sobre una columna arbitraria:
+\begin{equation}
+  P
+  \begin{pmatrix}A\\B\\C\\D\end{pmatrix}
+  =
+  \begin{pmatrix}D\\A\\B\\C\end{pmatrix}.
+  \label{eq:l01-cyclic-shift}
+\end{equation}
+Para un estado clásico, solo un componente es \(1\), pero permitir entradas generales pone de manifiesto la operación lineal subyacente. Las actualizaciones clásicas deterministas usan matrices especiales de ceros y unos con un \(1\) en cada fila y cada columna. La mecánica cuántica conservará la evolución matricial y ampliará considerablemente las entradas permitidas.
+
+\subsection{La composición es la multiplicación de matrices}
+
+Si un paso temporal es
+\begin{equation}
+  V'=MV,
+\end{equation}
+una segunda aplicación da
+\begin{equation}
+  V''=MV'=M(MV)=M^2V.
+  \label{eq:l01-two-updates}
+\end{equation}
+Por tanto, la multiplicación de matrices no es un pasatiempo algebraico arbitrario. Compone actualizaciones físicas. Cinco pasos temporales se representan mediante \(M^5\).
+
+Para dos matrices \(2\times2\)
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}\\
+    M_{21}&M_{22}
+  \end{pmatrix},
+  \qquad
+  N=
+  \begin{pmatrix}
+    N_{11}&N_{12}\\
+    N_{21}&N_{22}
+  \end{pmatrix},
+\end{equation}
+el producto \(C=MN\) tiene entradas
+\begin{equation}
+  C_{ij}=\sum_k M_{ik}N_{kj}.
+  \label{eq:l01-matrix-product}
+\end{equation}
+En particular,
+\begin{align}
+  C_{11}&=M_{11}N_{11}+M_{12}N_{21},\\
+  C_{12}&=M_{11}N_{12}+M_{12}N_{22},\\
+  C_{21}&=M_{21}N_{11}+M_{22}N_{21},\\
+  C_{22}&=M_{21}N_{12}+M_{22}N_{22}.
+\end{align}
+Cada entrada se obtiene multiplicando una fila de la matriz de la izquierda por una columna de la matriz de la derecha. De forma equivalente, aplicamos \(M\) a cada columna de \(N\) y colocamos las columnas resultantes una junto a otra.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\linewidth]{lecture_01_figure_05.png}
+\caption{La multiplicación de matrices se organiza como multiplicaciones repetidas de columnas por la matriz--. Se señalan la primera fila y las columnas de la segunda matriz para mostrar de dónde procede cada entrada del producto.}
+\lectureframe{01:26:30}
+\end{figure}
+
+Un vector fila también puede actuar desde la izquierda. Si \(B=(B_1,\ldots,B_4)\), entonces \(BM\) es otro vector fila, cuyas componentes son
+\begin{equation}
+  (BM)_j=\sum_i B_iM_{ij}.
+  \label{eq:l01-row-times-matrix}
+\end{equation}
+De nuevo, la regla consiste en multiplicar una fila por una columna. Las dimensiones indican la forma del resultado:
+\begin{equation}
+\begin{array}{c@{\qquad}c}
+\text{row}\times\text{column}&=\text{number},\\
+\text{matrix}\times\text{column}&=\text{column},\\
+\text{row}\times\text{matrix}&=\text{row},\\
+\text{matrix}\times\text{matrix}&=\text{matrix}.
+\end{array}
+\label{eq:l01-shape-rules}
+\end{equation}
+
+Vale la pena practicar estas operaciones con ejemplos numéricos pequeños de \(2\times2\) y \(3\times3\). Junto con algo de cálculo, la multiplicación fila--columna es el principal hábito matemático nuevo que se necesita para la mecánica cuántica que viene.
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:50}
+\audiencequestion{¿Qué restricción impone la reversibilidad a la matriz de actualización?}
+\lecturerresponse{Debe tener inversa. La matriz inversa implementa la actualización inversa y devuelve cada estado a su único predecesor. No todas las matrices son invertibles, así que el álgebra reproduce la distinción que establecimos antes con los diagramas de flechas. Para el ejemplo cíclico, \(P^{-1}=P^3\) y \(P^4=\mathbb{1}\).}
+\end{classroomqa}
+
+\section{¿Por qué preparar el álgebra antes de introducir el cúbit?}
+
+La primera hora ofreció una descripción cualitativa de la física clásica determinista en términos de bits y flechas reversibles. Las matemáticas restantes traducen esa descripción a una forma que puede mantenerse al pasar a la mecánica cuántica. Una configuración se convierte en una columna; una ley de un paso, en una matriz; la evolución temporal repetida, en un producto de matrices; y la reversibilidad, en la existencia de una inversa.
+
+Todavía no hemos usado ninguna regla cuántica. La demora es deliberada. A continuación sustituiremos las alternativas clásicas \(\ket{0}\) y \(\ket{1}\) por un cúbit y preguntaremos qué estados nuevos son posibles. Los vectores fila y columna, los productos internos y las matrices que hemos introducido mostrarán entonces por qué la información cuántica difiere tanto de una cadena clásica de bits.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:00}
+\audiencequestion{¿Por qué introducir todo este álgebra matricial antes de explicar para qué sirve?}
+\lecturerresponse{Primero planteamos el problema cualitativo: ¿cómo se deben representar la física determinista mediante estados y las leyes de actualización? El álgebra prepara el siguiente paso. Una vez introducidos los cúbits, estas manipulaciones dejarán de parecer desvinculadas: serán el lenguaje natural de los estados cuánticos y de su evolución.}
+\end{classroomqa}

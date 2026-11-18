@@ -1,0 +1,427 @@
+\chapter{Qubits, vectores de estado complejos y observables}
+
+\lectureoverview{El espín de un único electrón es el primer bit genuinamente cuántico. Puede prepararse con respecto a cualquier dirección espacial y, sin embargo, un detector fijo solo da dos resultados. Dejaremos que fracase la imagen magnética clásica y, a continuación, construiremos el espacio vectorial complejo, la regla de probabilidad y el lenguaje matricial que necesitamos para describir lo que realmente hace el experimento.}
+
+\section{Un espín y dos significados de vector}
+
+Un bit clásico tiene dos estados posibles y nada entre ellos. Podemos llamarlos \(0\) y \(1\), cara y cruz, o arriba y abajo; esos nombres designan dos puntos distintos de un espacio de estados clásico. Al medir un bit cuántico de una manera fija también se obtienen dos alternativas, pero no basta con describirlo mediante dos puntos del espacio de estados. El ejemplo más sencillo es el espín de un electrón.
+
+En este ejemplo hay dos nociones distintas de vector, y confundirlas vuelve innecesariamente misterioso todo lo que sigue. Primero está el \emph{vector espacial} ordinario: una flecha en el espacio tridimensional, con módulo y dirección. El electrón tiene un momento magnético que, para lo que nos interesa aquí, se comporta como un imán diminuto. Su módulo es fijo, mientras que en un procedimiento de preparación se le puede asignar una dirección espacial.
+
+El segundo objeto es un vector abstracto de un espacio vectorial complejo. Este \emph{vector de estado} describirá el estado cuántico. No es simplemente la flecha magnética escrita con otra notación. La relación entre las direcciones espaciales y los vectores de estado es real e importante, pero no son el mismo objeto. Iremos estableciendo esa relación poco a poco.
+
+\section{Dejar que fracase la imagen clásica}
+
+Empecemos deliberadamente con una explicación clásica. Coloquemos un imán diminuto en un campo magnético externo intenso. A menos que ya esté alineado, precesará alrededor del campo. Al radiar energía, la precesión se amortigua y el imán termina en la orientación de menor energía. Al elegir la dirección del campo aplicado, esperar a que se relaje y luego retirar el campo, parece que podemos preparar el momento magnético en cualquier dirección deseada.
+
+El mismo aparato sugiere un método de detección. Activemos un campo en una dirección elegida y observemos la radiación que se produce mientras el pequeño imán se estabiliza. Un imán clásico alineado con el campo no debería emitir energía. Uno inicialmente orientado en sentido opuesto al campo debería emitir la cantidad máxima, y un ángulo intermedio debería producir una cantidad intermedia. Según esta imagen, la energía radiada varía continuamente con el ángulo.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[>=Latex,thick,scale=0.92]
+  \draw[rounded corners] (-0.2,-0.2) rectangle (3.0,3.4);
+  \node at (1.4,3.05) {\small preparation};
+  \draw[->,very thick] (1.4,0.45) -- (1.4,2.55);
+  \node[right] at (1.4,2.35) {\small applied field};
+  \fill (1.4,1.35) circle (2.3pt);
+  \draw[->,very thick] (1.4,1.35) -- (2.25,1.95);
+  \node[below] at (1.4,0.15) {\small choose a direction and wait};
+
+  \draw[->] (3.25,1.6) -- (4.25,1.6);
+
+  \draw[rounded corners] (4.5,-0.2) rectangle (8.8,3.4);
+  \node at (6.65,3.05) {\small measurement in a fixed direction};
+  \draw[->,very thick] (5.15,0.45) -- (5.15,2.55);
+  \fill (5.15,1.35) circle (2.3pt);
+  \node[anchor=west] at (5.7,2.0) {no photon};
+  \node[anchor=west] at (5.7,1.25) {one photon of fixed energy};
+\node[anchor=west] at (5.7,0.5) {no intermediate outcome};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{El enigma operativo. A una preparación que puede variar continuamente le sigue un detector con solo dos posibles resultados.}
+\end{figure}
+
+Esa predicción clásica es falsa para un electrón. Al activar el campo del detector, solo se dan dos resultados:
+\begin{enumerate}
+  \item no se emite ningún fotón;
+  \item se emite un fotón con la energía fija que separa los niveles abajo y arriba.
+\end{enumerate}
+Nunca se emite un fotón que transporte una fracción arbitraria de esa energía. La respuesta clásica continua se ha reducido a una respuesta cuántica binaria.
+
+La dirección empleada en la preparación no se ha vuelto irrelevante. Determina las \emph{probabilidades} de los dos resultados. Si preparamos el electrón arriba con respecto al detector, el resultado arriba se obtiene con certeza. Si lo preparamos abajo, la transición se produce con certeza. Si lo preparamos horizontalmente, un detector vertical da ambos resultados con igual frecuencia:
+\begin{equation}
+  P(\text{up})=\frac12,
+  \qquad
+  P(\text{down})=\frac12.
+  \label{eq:l02-horizontal-probabilities}
+\end{equation}
+Así, una familia continua de preparaciones conduce a una medición de dos valores cuyas estadísticas varían continuamente.
+
+\begin{classroomqa}
+\lecturetimestamp{00:21:23}
+\audiencequestion{¿Podría otro objeto pequeño, quizá un segundo electrón, proporcionar el campo magnético en lugar de un imán macroscópico?}
+\lecturerresponse{Podría, pero entonces los dos electrones formarían un sistema cuántico conjunto y podrían entrelazarse. Precisamente hacia eso nos dirigimos en este curso. Lo dejaremos para más adelante, cuando hayamos entendido el espacio de estados de un solo electrón.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:22:17}
+\audiencequestion{¿Hay que repetir toda la preparación y la medición para obtener la distribución de probabilidad? ¿Qué pasa si medimos de nuevo el mismo electrón?}
+\lecturerresponse{Sí, para obtener la distribución original se necesitan ensayos repetidos con preparaciones idénticas. Después de la primera medición, repetir la misma medición sobre ese electrón da el mismo resultado: la medición lo ha preparado con respecto a ese detector. Esperar a que se produzca una transición radiativa es, por sí mismo, un posible procedimiento de preparación.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:23:48}
+\audiencequestion{¿Estamos imaginando un electrón libre? ¿Y se deja el campo magnético encendido continuamente?}
+\lecturerresponse{Aislamos el grado de libertad de espín e ignoramos la posición del electrón, tanto si se mueve libremente como si está sujeto a alguna otra restricción. Se puede encender rápidamente un electroimán grande para preparar o detectar el espín. El experimento simplificado está diseñado para plantear preguntas únicamente sobre el espín.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:25:22}
+\audiencequestion{Si el electrón se prepara exactamente abajo y se invierte el campo, ¿se emite un fotón con certeza? ¿De dónde procede su energía?}
+\lecturerresponse{Si la orientación inicial es exactamente opuesta, la transición se produce con probabilidad uno. Para una preparación oblicua, la probabilidad es menor. En última instancia, la energía procede del trabajo realizado al establecer o invertir el campo magnético externo; el aparato forma parte del balance energético.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:27:31}
+\audiencequestion{¿Cuándo aparece el fotón? ¿Es instantánea la transición?}
+\lecturerresponse{El instante de emisión es aleatorio, como el tiempo de desintegración de un estado inestable. Se puede especificar una vida media característica o un semiperiodo, y un campo más intenso acorta esa escala temporal. La incertidumbre entre energía--tiempo interviene en una descripción más detallada, pero los hechos operativos que nos interesan ahora son los dos resultados posibles y sus frecuencias medidas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:17}
+\audiencequestion{¿Un haz con un millón de electrones preparados de forma idéntica produciría simplemente una intensidad luminosa medible?}
+\lecturerresponse{Sí. La intensidad del conjunto revela la probabilidad media de transición, mientras que el instante de emisión de cada electrón particular sigue siendo aleatorio. Un conjunto muestra la distribución que no puede revelar un ensayo individual.}
+\end{classroomqa}
+
+Este es nuestro punto de partida. Dos puntos clásicos aislados pueden codificar los resultados del detector, pero no todas las preparaciones que modifican las probabilidades de esos resultados. Necesitamos otro espacio de estados.
+
+\section{Números complejos y geometría del espacio de estados}
+
+El espacio de estados que necesitamos es lineal: sus elementos se pueden sumar y multiplicar por escalares. Sus escalares son números complejos. Escribamos
+\begin{equation}
+  z=a+ib,
+  \qquad
+  i^2=-1,
+  \qquad
+  z^*=a-ib,
+  \label{eq:l02-complex-number}
+\end{equation}
+donde \(a\) y \(b\) son números reales. La conjugación compleja produce la cantidad positiva
+\begin{align}
+  z^*z
+  &=(a-ib)(a+ib) \notag\\
+  &=a^2+b^2.
+  \label{eq:l02-complex-norm}
+\end{align}
+Esta sencilla cancelación es la semilla algebraica de la regla de probabilidad.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\linewidth]{lecture_02_figure_02.png}
+\caption{La conjugación compleja y \(z^*z\) se desarrollan en la pizarra antes de interpretar las amplitudes como probabilidades.}
+\lectureframe{00:37:10}
+\end{figure}
+
+Un espacio vectorial complejo contiene objetos \(\ket a,\ket b,\ldots\) tales que
+\begin{equation}
+  c\ket a,
+  \qquad
+  \ket a+\ket b
+\end{equation}
+también son vectores cuando \(c\) es complejo. Los vectores columna ofrecen una realización concreta:
+\begin{equation}
+  \begin{aligned}
+    \ket a&=
+    \begin{pmatrix}
+      a_1\\a_2\\ \vdots\\a_n
+    \end{pmatrix},
+    &
+    c\ket a&=
+    \begin{pmatrix}
+      ca_1\\ca_2\\ \vdots\\ca_n
+    \end{pmatrix},\\[0.7em]
+    \ket a+\ket b&=
+    \begin{pmatrix}
+      a_1+b_1\\a_2+b_2\\ \vdots\\a_n+b_n
+    \end{pmatrix}.
+  \end{aligned}
+  \label{eq:l02-vector-operations}
+\end{equation}
+Incluso los propios números complejos forman un espacio vectorial complejo de una dimensión. Para el espín del electrón necesitaremos dos dimensiones.
+
+A cada vector columna ket le asociamos un bra fila conjugado:
+\begin{equation}
+  \ket a=
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  \quad\longleftrightarrow\quad
+  \bra a=
+  \begin{pmatrix}a_1^*&a_2^*\end{pmatrix}.
+  \label{eq:l02-bra-ket-components}
+\end{equation}
+El producto interno es entonces
+\begin{equation}
+  \braket{b}{a}=b_1^*a_1+b_2^*a_2,
+  \label{eq:l02-inner-product}
+\end{equation}
+y el cuadrado de la norma es
+\begin{equation}
+  \braket{a}{a}=|a_1|^2+|a_2|^2.
+  \label{eq:l02-norm}
+\end{equation}
+Es real y no negativo porque cada término tiene la forma \(z^*z\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:24}
+\audiencequestion{¿Por qué no aparece un asterisco explícito en el símbolo bra?}
+\lecturerresponse{Convertir un ket en su bra ya significa trasponer y tomar el conjugado complejo. La inversión del corchete es la notación de esa operación, así que escribir otro asterisco repetiría algo que ya está implícito.}
+\end{classroomqa}
+
+\section{La base del cúbit y la regla de Born}
+
+Volvamos ahora al detector. Denotemos por \(\ket{+}\) su estado arriba y por \(\ket{-}\) su estado abajo. Un estado de espín general es una combinación lineal
+\begin{equation}
+  \ket\psi=a_+\ket{+}+a_-\ket{-}
+  \quad\longleftrightarrow\quad
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-general-qubit}
+\end{equation}
+Los signos más y menos dentro de los kets son etiquetas, no operaciones aritméticas. Una vez elegida esta base ordenada,
+\begin{equation}
+  \ket{+}=
+  \begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{-}=
+  \begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l02-basis-columns}
+\end{equation}
+En efecto,
+\begin{equation}
+  a_+\begin{pmatrix}1\\0\end{pmatrix}
+  +a_-\begin{pmatrix}0\\1\end{pmatrix}
+  =
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-basis-expansion}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_02_figure_03.png}
+\caption{Los estados del detector se fijan como las dos columnas de la base estándar.}
+\lectureframe{00:58:10}
+\end{figure}
+
+Los coeficientes son amplitudes de probabilidad. La probabilidad de cada resultado del detector es el módulo al cuadrado de la amplitud correspondiente:
+\begin{equation}
+  P(+)=|a_+|^2,
+  \qquad
+  P(-)=|a_-|^2.
+  \label{eq:l02-born-rule}
+\end{equation}
+Como estos son los únicos resultados,
+\begin{equation}
+  \begin{gathered}
+    |a_+|^2+|a_-|^2=1,\\
+    \text{or equivalently}\qquad \braket{\psi}{\psi}=1.
+  \end{gathered}
+  \label{eq:l02-normalization}
+\end{equation}
+Por tanto, un vector de estado físico está normalizado.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:54}
+\audiencequestion{¿Tienen los signos más y menos un significado algebraico en las componentes?}
+\lecturerresponse{Aquí etiquetan los dos estados de la base y sus coeficientes. Podríamos llamarlos \(1\) y \(2\), o arriba y abajo. En particular, \(-\ket{+}\) es un múltiplo escalar válido de \(\ket{+}\); no es el estado \(\ket{-}\).}
+\end{classroomqa}
+
+Multiplicar un estado por un número complejo de módulo uno deja inalteradas todas sus probabilidades:
+\begin{equation}
+  \ket\psi\longmapsto e^{i\phi}\ket\psi,
+  \qquad
+  |e^{i\phi}a_\pm|^2=|a_\pm|^2.
+  \label{eq:l02-global-phase}
+\end{equation}
+Así pues, dos vectores que solo difieren en una fase global representan el mismo estado físico. Una fase \emph{relativa} es distinta. Por ejemplo, sustituir solo \(a_-\) por \(-a_-\) no se puede eliminar, en general, multiplicando el vector entero por una sola fase; puede cambiar los resultados de las mediciones en otra base.
+
+\begin{classroomqa}
+\lecturetimestamp{00:59:54}
+\audiencequestion{¿Son \(\ket{+}\), \(-\ket{+}\) y \(e^{i\phi}\ket{+}\) estados distintos? ¿Qué ocurre si se cambia el signo de un término de una superposición?}
+\lecturerresponse{Son vectores matemáticos distintos, pero, cuando el factor multiplica el vector entero y tiene módulo uno, describen el mismo estado físico. Un signo o una fase relativos entre los términos arriba y abajo se pueden observar con mediciones adecuadas y, por tanto, cambian el estado.}
+\end{classroomqa}
+
+La base es ortonormal:
+\begin{align}
+  \braket{+}{+}&=1,
+  &\braket{-}{-}&=1,
+  \notag\\
+  \braket{+}{-}&=0,
+  &\braket{-}{+}&=0.
+  \label{eq:l02-orthonormality}
+\end{align}
+Por ejemplo,
+\begin{equation}
+  \braket{+}{-}
+  =
+  \begin{pmatrix}1&0\end{pmatrix}
+  \begin{pmatrix}0\\1\end{pmatrix}
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_02_figure_04.png}
+\caption{En la pizarra se comprueban directamente los cuatro productos internos de la base arriba/abajo.}
+\lectureframe{01:05:00}
+\end{figure}
+
+Un estado con pesos iguales sirve para hacer la primera corrección útil en la pizarra. La columna
+\begin{equation}
+  \begin{pmatrix}1\\1\end{pmatrix}
+\end{equation}
+tiene norma al cuadrado \(2\), no \(1\), así que no está normalizada. Dividirla por \(\sqrt2\) la normaliza:
+\begin{equation}
+  \ket{\rightarrow}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =
+  \frac{\ket{+}+\ket{-}}{\sqrt2}.
+  \label{eq:l02-horizontal-state}
+\end{equation}
+Da \(P(+)=P(-)=1/2\) en el detector vertical y corresponde a una preparación horizontal. La corrección de \((1,1)^T\) a \(2^{-1/2}(1,1)^T\) no es cosmética: la normalización es lo que convierte las amplitudes al cuadrado en una distribución de probabilidad completa.
+
+Después del descanso conviene volver a los dos significados de vector. Una flecha espacial tiene tres componentes reales. Un vector de estado de un cúbit tiene dos componentes complejas y, por tanto, cuatro números reales antes de imponer la normalización e identificar la fase global. Los objetos están relacionados, pero uno no es simplemente una versión del otro con etiquetas distintas. Aún no necesitamos el mapa geométrico completo entre ambos.
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:56}
+\audiencequestion{¿Cómo sabemos cuál es la dimensión del espacio de estados de otro sistema cuántico?}
+\lecturerresponse{Los experimentos nos dicen cuántos resultados mutuamente excluyentes puede distinguir una medición completa. El espín del electrón tiene dos resultados de ese tipo, así que requiere un espacio de estados complejo de dos dimensiones. Un sistema de espín uno tiene tres resultados en la medición correspondiente y requiere tres componentes.}
+\end{classroomqa}
+
+\section{Observables clásicos y promedios de conjuntos}
+
+Una vez descritos los estados, pasemos a las cantidades medibles. En un sistema clásico con estados discretos \(n\), un observable es una función de valores reales \(f_n\) definida sobre esos estados. Si el estado es incierto y se describe mediante las probabilidades \(p_n\), su promedio de conjunto es
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =\sum_n p_n f_n.
+  \label{eq:l02-classical-expectation}
+\end{equation}
+Esta notación no implica que una medición individual tenga que dar alguna vez ese número.
+
+Para una moneda, asignemos \(f_+=+1\) y \(f_-=-1\). Entonces
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =p_+-p_-.
+  \label{eq:l02-coin-expectation}
+\end{equation}
+Una moneda equilibrada tiene un promedio igual a cero. Si \(p_+=3/4\) y \(p_-=1/4\), el promedio es \(1/2\). Ni \(0\) ni \(1/2\) son resultados de un único lanzamiento; cada uno resume muchos resultados \(+1\) y \(-1\).
+
+\begin{classroomqa}
+\lecturetimestamp{01:23:30}
+\audiencequestion{¿Cómo puede ser cero o un medio el valor esperado si ninguno de esos valores puede aparecer en un ensayo individual?}
+\lecturerresponse{La expresión «valor esperado» puede inducir a error. Se refiere al promedio de un conjunto grande, no al valor que cabría esperar observar en la siguiente ejecución. Una secuencia equilibrada de resultados \(+1\) y \(-1\) tiene promedio cero, mientras que una proporción de tres a uno da un promedio de un medio.}
+\end{classroomqa}
+
+Un observable especialmente útil es la función indicadora de un estado:
+\begin{equation}
+  \chi_k(n)=
+  \begin{cases}
+    1,&n=k,\\
+    0,&n\ne k.
+  \end{cases}
+\end{equation}
+Su promedio es
+\begin{equation}
+  \langle\chi_k\rangle_{\mathrm{ens}}=p_k.
+\end{equation}
+Así pues, conocer los promedios de todos los observables clásicos incluye, en particular, conocer la distribución de probabilidad.
+
+\section{Matrices y observables cuánticos}
+
+En mecánica cuántica, los observables se representan mediante operadores lineales, no mediante funciones definidas sobre puntos del espacio de estados. En un espacio de estados de dimensión finita, esos operadores son matrices. Una matriz \(M\) transforma un vector en otro:
+\begin{equation}
+  M\ket a=\ket{a'}.
+  \label{eq:l02-matrix-action}
+\end{equation}
+Para dos componentes,
+\begin{equation}
+  \begin{pmatrix}
+    m_{11}&m_{12}\\
+    m_{21}&m_{22}
+  \end{pmatrix}
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  =
+  \begin{pmatrix}
+    m_{11}a_1+m_{12}a_2\\
+    m_{21}a_1+m_{22}a_2
+  \end{pmatrix}.
+  \label{eq:l02-matrix-components}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_02_figure_05.png}
+\caption{La acción de la matriz se desarrolla fila por fila en las dos componentes del vector transformado.}
+\lectureframe{01:32:10}
+\end{figure}
+
+Los vectores reales bidimensionales hacen visible la geometría. Las matrices
+\begin{equation}
+  \begin{pmatrix}2&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}1&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}2&0\\0&1\end{pmatrix}
+\end{equation}
+respectivamente, estiran todas las direcciones de manera uniforme, estiran solo la componente \(y\) y estiran solo la componente \(x\). La matriz
+\begin{equation}
+  \begin{pmatrix}0&1\\1&0\end{pmatrix}
+\end{equation}
+intercambia las componentes y refleja el plano respecto de \(x=y\). Mientras tanto,
+\begin{equation}
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  \begin{pmatrix}v_x\\v_y\end{pmatrix}
+  =
+  \begin{pmatrix}v_y\\-v_x\end{pmatrix}
+  \label{eq:l02-quarter-turn}
+\end{equation}
+rota los vectores un cuarto de vuelta en sentido horario, según la convención usada en la pizarra. Un cizallamiento ofrece otro ejemplo lineal, aunque su matriz se deja como ejercicio. La condición esencial es la linealidad: no toda transformación imaginable del plano se representa mediante una matriz.
+
+Los observables cuánticos pertenecen a una clase especial.
+
+\begin{definition}
+Una matriz \(M\) es \emph{hermítica} cuando
+\begin{equation}
+  M_{ij}=M_{ji}^*.
+  \label{eq:l02-hermitian-condition}
+\end{equation}
+\end{definition}
+
+La condición diagonal \(M_{ii}=M_{ii}^*\) obliga a que todos los elementos de la diagonal sean reales. Los elementos fuera de la diagonal aparecen en pares conjugados. Por ejemplo,
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    r&4+i\\
+    4-i&s
+  \end{pmatrix},
+  \qquad r,s\in\mathbb R,
+  \label{eq:l02-hermitian-example}
+\end{equation}
+es hermítica. Si todos sus elementos son reales, hermítica equivale a simétrica.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\linewidth]{lecture_02_figure_06.png}
+\caption{Al final de la clase se destaca la conjugación que define la condición a través de la diagonal, \(M_{ij}=M_{ji}^*\).}
+\lectureframe{01:42:50}
+\end{figure}
+
+Las matrices hermíticas representarán cantidades medibles, incluido el espín en las direcciones \(x\), \(y\) y \(z\). No deben confundirse con los operadores que describen un impulso físico o la evolución temporal.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:49}
+\audiencequestion{Si una matriz transforma el estado en otro estado, ¿tiene que conservar la normalización? ¿Lo hace una matriz hermítica?}
+\lecturerresponse{Un impulso físico debe conservar la longitud del vector de estado, pero una matriz hermítica general no lo hace. Las transformaciones que conservan la longitud son unitarias. Los operadores hermíticos representan observables; los operadores unitarios representan las transformaciones reversibles que actúan sobre los estados. Veremos en el paso siguiente la relación detallada entre ellos.}
+\end{classroomqa}
+
+Hemos llegado al lenguaje mínimo necesario para dar el siguiente paso. Un cúbit es un vector normalizado en un espacio vectorial complejo de dos dimensiones; las amplitudes determinan las probabilidades, y los observables son matrices hermíticas. Con estos elementos, podemos hablar del espín en direcciones arbitrarias y, más adelante, de pares entrelazados, sin volver a la imagen clásica que ya ha fracasado.
