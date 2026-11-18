@@ -1,0 +1,511 @@
+\chapter{帶電粒子、場的變換與相對論性波動}
+
+上次我們開始探討：在相對論原理的限制下，帶電粒子如何在電場和磁場中運動。熟悉的洛倫茲力定律已經透露了線索：磁力項取決於粒子的速度，因此不同觀測者無法各自對電場與磁場的區分達成一致。我們的任務是重新表述這條定律，使所有慣性觀測者使用的方程形式相同，儘管場和粒子的速度會隨參考系而改變。
+
+除非另有說明，我們採用\(c=1\)的單位制，度規號差為\((-,-,-,+)\)。時空分量依照空間分量在前的順序排列：
+\begin{equation}
+  \mu=(1,2,3,0)=(x,y,z,t).
+\end{equation}
+拉丁指標\(m,n\)只取三個空間方向。
+
+\section{牛頓力定律中能保留下來的部分}
+
+在牛頓力學中，
+\begin{equation}
+  \boldsymbol F=m\boldsymbol a
+\end{equation}
+在每個慣性系中形式都相同，因為伽利略觀測者對加速度的判定一致。他們對粒子的質量和所受的力也有相同的判定。運動學一旦改變，就沒有理由預期力與普通加速度之間的這種特定關係仍會原封不動地成立。
+
+電磁學和引力已經提醒我們，相對論性的推廣不必彼此相似。庫侖定律和牛頓萬有引力定律都是平方反比定律，但若不更深入地改變時空幾何，引力就無法自然地納入狹義相對論。電磁學則可以。事實上，磁性本身就是一種相對論效應：恢復\(c\)的因子後，磁力項會帶有速度除以\(c\)的因子，並在形式極限\(c\to\infty\)下消失。
+
+牛頓定律中能持續保留下來的，是力等於動量的變化率這項陳述。對於靜止質量不變的粒子，
+\begin{equation}
+  \boldsymbol F
+  =m\frac{d\boldsymbol v}{dt}
+  =\frac{d}{dt}(m\boldsymbol v)
+  =\frac{d\boldsymbol p}{dt}.
+\end{equation}
+相對論會改變動量與速度之間的關係，但會保留這種組織方程的方式。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_01.png}
+\caption{黑板上正在將力改寫為\(d\boldsymbol p/dt\)，同時寫出洛倫茲定律中的電場項。}
+\lectureframe{00:08:20}
+\end{figure}
+
+在\(c=1\)的單位制下，前相對論形式的洛倫茲力定律為
+\begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr).
+  \label{eq:lorentz-three}
+\end{equation}
+電場和磁場都可能依賴位置與時間。現在的非相對論極限是\(v\ll 1\)，而不是數值常數\(c=1\)以某種方式改變的極限。\eqref{eq:lorentz-three}中的電場項已經是普通向量。若要把磁力項寫成能帶入時空的形式，我們就必須重新檢視叉積。
+
+\section{以反對稱張量表示叉積}
+
+取兩個三維向量\(\boldsymbol A\)和\(\boldsymbol B\)。它們的外積
+\begin{equation}
+  T_{mn}=A_mB_n
+\end{equation}
+是具有九個分量的二階張量，一般而言沒有對稱性。將它反對稱化後，得到
+\begin{equation}
+  K_{mn}=A_mB_n-A_nB_m,
+  \qquad K_{mn}=-K_{nm}.
+  \label{eq:antisym-product}
+\end{equation}
+對角元為零，而對角線以下的每個元素都由其上方對應的元素決定。因此，\(3\times3\)反對稱張量只有三個獨立分量。
+
+這個數目很有啟發性，但光靠它還不足以得出結論。三個量不會自動依照向量的方式變換。不過在三維中，\eqref{eq:antisym-product}的三個獨立元素可以對應到叉積\(\boldsymbol C=\boldsymbol A\times\boldsymbol B\)的分量。黑板上先暫時把\(C_2\)放在右上方：
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_02.png}
+\caption{反對稱乘積的三個獨立元素，正逐一對應到\(\boldsymbol C\)的分量。此處右上方的標記仍是暫定的。}
+\lectureframe{00:17:33}
+\end{figure}
+
+依序輪換\(1\to2\to3\to1\)，可得分量公式
+\begin{align}
+  C_3 &= A_1B_2-A_2B_1, \\
+  C_1 &= A_2B_3-A_3B_2, \\
+  C_2 &= A_3B_1-A_1B_3.
+  \label{eq:cross-components}
+\end{align}
+最後一行顯示，右上方的元素是\(-C_2\)，而不是\(C_2\)。這項修正是論證的一部分，不應當作細節略過。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_03.png}
+\caption{完整的循環分量恆等式，確定了反對稱陣列中的暫定符號。}
+\lectureframe{00:21:54}
+\end{figure}
+
+因此得到的矩陣為
+\begin{equation}
+  K_{mn}=
+  \begin{pmatrix}
+    0 & C_3 & -C_2 \\
+    -C_3 & 0 & C_1 \\
+    C_2 & -C_1 & 0
+  \end{pmatrix}.
+  \label{eq:cross-matrix}
+\end{equation}
+
+這種記號背後有一個實用的幾何圖像。指標為\(1,2\)的分量自然屬於\(xy\)平面，並對應到沿垂直的\(z\)軸方向的向量分量。同一個有向物件可以用平面表示，也可以用垂直於該平面的箭頭表示。箭頭的描述只適用於三維；在更高維中，反對稱二階張量依然存在，但其分量數不再等於向量的分量數。因此，能夠推廣叉積的是張量，而不是垂直箭頭。
+
+等價地，選定一種定向後，
+\begin{equation}
+  C_k=\frac12\epsilon_{kmn}K_{mn}.
+\end{equation}
+必須選定定向，這正是右手定則，以及極向量與軸向量之間熟悉區別的由來。
+\editorialnote{Levi--Civita 公式與軸向量一詞，是表述講課中明確闡述的平面與法向量幾何的標準記號。}
+
+\section{磁場的張量形式}
+
+磁場也可以採用同樣的對偶描述。我們將其反對稱空間張量定義為
+\begin{equation}
+  B_{mn}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 \\
+    B_3 & 0 & -B_1 \\
+    -B_2 & B_1 & 0
+  \end{pmatrix}.
+  \label{eq:magnetic-tensor}
+\end{equation}
+相較於\eqref{eq:cross-matrix}，此處多出的整體負號是一種約定。約定一旦選定，就必須前後一致；若將向量的三個分量全部變號，表示的是採用相反定向約定時，同一種由張量對應到向量的方式。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_04.png}
+\caption{磁場既以反對稱空間陣列表示，也以其三個向量分量表示。}
+\lectureframe{00:24:40}
+\end{figure}
+
+現在取叉積的第三個分量：
+\begin{align}
+  (\boldsymbol v\times\boldsymbol B)_3
+  &=v_1B_2-v_2B_1 \\
+  &=v_1B_{13}+v_2B_{23}+v_3B_{33}.
+\end{align}
+可以加上最後一項，因為\(B_{33}=0\)。輪換自由分量後，可得簡潔的規則
+\begin{equation}
+  (\boldsymbol v\times\boldsymbol B)_m=v_nB_{nm},
+  \label{eq:cross-contraction}
+\end{equation}
+其中重複指標\(n\)依愛因斯坦求和約定加總。因此，磁力為
+\begin{equation}
+  F_m^{(B)}=qv_nB_{nm}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_07_figure_05.png}
+\caption{\(\boldsymbol v\times\boldsymbol B\)的第三個分量，以及它以\(B_{nm}\)縮併表示的一般形式。}
+\lectureframe{00:28:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{自由指標\(m\)是否標記力的某個磁力分量？}
+\lecturerresponse{不是。它標記的是正在計算的那個力的空間分量。目前的論證只是把電場設為零，而此處每個指標都只取三個空間方向。}
+\end{classroomqa}
+
+張量記號讓磁場不做功這項性質幾乎可直接看出。對速率平方微分：
+\begin{align}
+  \frac{d}{dt}(v_mv_m)
+  &=2\dot v_m v_m \\
+  &\propto 2(\boldsymbol v\times\boldsymbol B)_m v_m \\
+  &=2v_nB_{nm}v_m.
+  \label{eq:speed-derivative}
+\end{align}
+含有\(m=n\)的項會消失，因為\(B_{nm}\)的對角元為零。每個非對角項都與另一項成對，兩項中的\(m\)和\(n\)互換；由於\(v_nv_m\)是對稱的，而\(B_{nm}\)是反對稱的，兩項便互相抵消。
+因此
+\begin{equation}
+  \frac{d}{dt}(v_mv_m)=0.
+\end{equation}
+純磁力會使軌跡彎曲，卻不改變粒子的速率或動能。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_06.png}
+\caption{\(v_nB_{nm}v_m\)中的配對項會互相抵消，因為磁張量的指標互換時，符號會改變。}
+\lectureframe{00:35:40}
+\end{figure}
+
+這個證明刻意比「叉積垂直於它的第一個因子」這種說法更繁複。後者只適用於三維向量表示。真正能延伸到四維的論證，是對稱二階張量與反對稱張量的縮併為零。
+
+\begin{classroomqa}
+\audiencequestion{磁場必須與時間無關，速率才會保持不變嗎？}
+\lecturerresponse{上面的代數推導從未對磁場微分，因此不要求\(\partial_t\boldsymbol B=0\)。單獨的磁力項仍然不做功。不過在電動力學中，變化的磁場會產生電場，而電場可以改變粒子的速率。}
+\end{classroomqa}
+
+\section{電場與磁場為何必須混合}
+
+無須進行任何四維計算，就能看出\(\boldsymbol E\)與\(\boldsymbol B\)會混合。考慮低速運動，此時對加速度使用普通的牛頓力學描述已經足夠。設磁場沿\(y\)軸，帶電粒子沿\(x\)軸運動。磁力則沿\(z\)軸：
+\begin{equation}
+  \boldsymbol F=q\boldsymbol v\times\boldsymbol B.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_07.png}
+\caption{粒子橫越磁場運動的黑板示意圖；圖中的三個方向用來比較實驗室系與共動系的描述。}
+\lectureframe{00:42:20}
+\end{figure}
+
+不用教室裡的透視畫法，也可以重新畫出這個幾何關係：
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.05,>=Stealth]
+  \draw[->] (0,0) -- (3.8,0) node[right] {\(x\)};
+  \draw[->] (0,0) -- (-1.9,2.4) node[above left] {\(y\)};
+  \draw[->] (0,0) -- (0,3.1) node[above] {\(z\)};
+  \draw[->,very thick] (0,0) -- (2.7,0)
+    node[midway,below] {\(\boldsymbol v\)};
+  \draw[->,very thick] (0,0) -- (-1.35,1.7)
+    node[midway,above left] {\(\boldsymbol B\)};
+  \draw[->,very thick] (0,0) -- (0,2.35)
+    node[midway,right] {\(\boldsymbol F,\ \boldsymbol E'\)};
+\end{tikzpicture}
+\caption{在實驗室系中，沿\(z\)方向的力是磁力；在瞬時共動系中，同一個力必須是電力。}
+\end{figure}
+
+現在考慮一位在該瞬間與粒子一起運動的觀測者。粒子在新參考系中的速度為零，因此磁力項\(q\boldsymbol v'\times\boldsymbol B'\)消失。然而在低速極限下，兩位觀測者都必須同意粒子具有沿\(z\)方向的加速度。若洛倫茲力定律在兩個參考系中形式相同，共動觀測者就必須將這個力歸因於沿\(z\)方向的電場\(\boldsymbol E'\)。因此，在實驗室系中純為磁性的場，到了運動參考系中便不再是純磁場。
+
+這就是我們要尋找一個其分量同時包含兩種場的物件的物理原因。參考系改變時，\(\boldsymbol E\)的三個分量和\(\boldsymbol B\)的三個分量不只是各自旋轉；兩組分量也會彼此混合。
+
+\section{電磁場張量}
+
+電場與磁場合計有六個分量。四維反對稱張量也有六個獨立分量，因為
+\begin{equation}
+  \frac{4(4-1)}{2}=6.
+\end{equation}
+這並不表示反對稱張量是唯一能由六個量組成的集合；六個純量，或一個向量加上兩個純量，也同樣包含六個數。反對稱張量是其分量能以所需方式混合的自然幾何物件。
+
+為了明確呈現黑板上的約定，我們依照空間分量在前的順序\((1,2,3,0)\)，寫出逆變張量：
+\begin{equation}
+  F^{\mu\nu}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 & E_1 \\
+    B_3 & 0 & -B_1 & E_2 \\
+    -B_2 & B_1 & 0 & E_3 \\
+    -E_1 & -E_2 & -E_3 & 0
+  \end{pmatrix}.
+  \label{eq:l07-field-tensor}
+\end{equation}
+左上角的\(3\times3\)區塊正是磁張量\eqref{eq:magnetic-tensor}；一個空間指標和一個時間指標所構成的分量則包含電場。其餘元素由反對稱性決定。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_08.png}
+\caption{磁場的空間區塊與電場的時間—空間欄，一同組成四維場張量。}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{這些場分量應該使用上標還是下標？}
+\lecturerresponse{只看三個空間指標時，黑板上有時會省略上標與下標的區別，以便辨認熟悉的馬克士威--法拉第場。在協變計算中，則必須恢復這項區別：依照所選的度規約定，升高或降低空間指標會改變符號。}
+\end{classroomqa}
+
+不變的不是黑板上某種特定的符號排列，而是反對稱時空張量，以及一套前後一致的度規與指標約定。記號\(F\)可能讓人聯想到法拉第，不過本講並未有把握地宣稱這項歷史歸屬。愛因斯坦在1905年推導出電場與磁場分量的變換；簡潔的四維張量語言則隨後來與閔可夫斯基相關的時空表述而出現。
+
+\section{四維速度與四維力}
+
+方程中描述粒子的部分也必須寫成協變形式。固有時\(\tau\)是不變量，因此以固有時對位置四維向量微分，會得到另一個四維向量：
+\begin{equation}
+  u^\mu=\frac{dx^\mu}{d\tau}
+  =\gamma(v_x,v_y,v_z,1),
+  \qquad
+  \gamma=\frac{1}{\sqrt{1-v^2}}.
+  \label{eq:four-velocity}
+\end{equation}
+最後一個分量由\(dt/d\tau=\gamma\)得出。四維動量為
+\begin{equation}
+  p^\mu=mu^\mu,
+\end{equation}
+其空間部分就是相對論動量
+\(\boldsymbol p=m\gamma\boldsymbol v\)。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_09.png}
+\caption{四維速度及其分量、洛倫茲因子與四維動量。}
+\lectureframe{00:50:30}
+\end{figure}
+
+由於\(p^\mu\)是四維向量，而\(\tau\)是純量，相對論中自然的方程左側為
+\begin{equation}
+  f^\mu\equiv\frac{dp^\mu}{d\tau}.
+  \label{eq:four-force-def}
+\end{equation}
+四維力不能任意選取。四維速度的模固定為
+\begin{equation}
+  u_\mu u^\mu=1.
+\end{equation}
+沿世界線微分可得
+\begin{align}
+  0
+  &=\frac{d}{d\tau}(u_\mu u^\mu) \\
+  &=\frac{du_\mu}{d\tau}u^\mu
+    +u_\mu\frac{du^\mu}{d\tau} \\
+  &=2u_\mu\frac{du^\mu}{d\tau}.
+\end{align}
+質量不變時，這表示
+\begin{equation}
+  f^\mu u_\mu=0.
+  \label{eq:force-orthogonal}
+\end{equation}
+因此四維力與四維速度在閔可夫斯基度規下正交。這是由\(u^\mu\)的歸一化所導出的純運動學限制，並非電磁學特有的性質。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_10.png}
+\caption{四維速度的單位模，以及由此導出的四維力與四維速度正交關係。}
+\lectureframe{00:56:50}
+\end{figure}
+
+三維磁力的計算已經提供了滿足\eqref{eq:force-orthogonal}的方法。將反對稱張量與一個速度向量縮併：
+\begin{equation}
+  \boxed{
+  \frac{dp^\mu}{d\tau}=qF^{\mu\nu}u_\nu.}
+  \label{eq:covariant-lorentz}
+\end{equation}
+確實，
+\begin{equation}
+  f^\mu u_\mu
+  =qF^{\mu\nu}u_\nu u_\mu=0,
+\end{equation}
+這是因為\(F^{\mu\nu}\)具有反對稱性，而\(u_\nu u_\mu\)具有對稱性。這不是唯一可能的相對論性力律，但它是同時對電磁場與速度呈線性的最簡單力律。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_11.png}
+\caption{左側是協變形式的洛倫茲力方程；右側顯示它與另一個四維速度縮併後為零。}
+\lectureframe{01:00:00}
+\end{figure}
+
+\section{還原為通常的洛倫茲力定律}
+
+看起來具有協變形式的方程，仍必須重現已知的力定律。採用開頭所述的度規約定，
+\begin{equation}
+  u_\mu=\gamma(-v_x,-v_y,-v_z,1).
+\end{equation}
+考慮\(x\)分量，\eqref{eq:l07-field-tensor}與\eqref{eq:covariant-lorentz}給出
+\begin{align}
+  \frac{dp^1}{d\tau}
+  &=q\bigl(F^{12}u_2+F^{13}u_3+F^{10}u_0\bigr) \\
+  &=q\gamma\bigl(B_3v_y-B_2v_z+E_1\bigr) \\
+  &=q\gamma\bigl[\boldsymbol E+\boldsymbol v\times
+    \boldsymbol B\bigr]_x.
+  \label{eq:x-force}
+\end{align}
+其餘空間分量只要循環置換指標即可得到。
+
+\begin{classroomqa}
+\audiencequestion{分量展開中的\(qE_x\)項在哪裡？}
+\lecturerresponse{它就是\(qF^{10}u_0\)這一項。含有一個空間指標與一個時間指標的場張量分量，代表電場分量，而\(u_0=\gamma\)。}
+\end{classroomqa}
+
+右側的\(\gamma\)因子不是額外的力。由於
+\begin{equation}
+  \frac{dp^i}{d\tau}=\frac{dt}{d\tau}\frac{dp^i}{dt}
+  =\gamma\frac{dp^i}{dt},
+\end{equation}
+它會從\eqref{eq:x-force}的兩側約去。因此，精確的空間方程仍然是
+\begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr),
+  \qquad
+  \boldsymbol p=m\gamma\boldsymbol v.
+  \label{eq:exact-three-force}
+\end{equation}
+熟悉的形式保留下來，相對論效應則包含在動量之中。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_12.png}
+\caption{約去共同的固有時因子後，便還原為三維洛倫茲力定律；動量仍帶有\(\gamma\)因子。}
+\lectureframe{01:06:30}
+\end{figure}
+
+時間分量則給出相應的能量關係，
+\begin{equation}
+  \frac{dp^0}{dt}=q\boldsymbol E\cdot\boldsymbol v,
+\end{equation}
+因此磁場不做功，而電場可能改變粒子的能量。
+\editorialnote{時間分量的檢驗直接對應到講課中的空間分量計算；列出這項檢驗，是為了以四維記號呈現同樣的不做功性質。}
+
+\begin{classroomqa}
+\audiencequestion{這個推導屬於數學還是物理？}
+\lecturerresponse{兩者皆是。張量代數提供了簡潔的形式，但其中也包含重要的物理內容：所有慣性系都遵守相同定律的原理，以及運動方程為二階方程的假設。二階定律根據位置與速度預測未來；三階定律則需要把加速度也列為額外的初始資料。自然界採用哪一種定律，取決於實驗，而不是記號。}
+\end{classroomqa}
+
+\section{場的變換方式}
+
+方程\eqref{eq:covariant-lorentz}在每個參考系中形式都相同，因為等式兩側都是四維向量。場張量本身的變換方式是每個指標各乘上一個洛倫茲矩陣：
+\begin{equation}
+  F'^{\mu\nu}
+  =\Lambda^\mu{}_{\rho}\Lambda^\nu{}_{\sigma}F^{\rho\sigma}.
+  \label{eq:tensor-transform}
+\end{equation}
+黑板上先從變換簡單乘積\(A^\mu B^\nu\)推導這條規則。一旦知道向量乘積如何變換，再利用線性性，就能得到任意二階張量的變換規則。
+
+沿\(1\)軸的推動，其座標變換為
+\begin{align}
+  x'^1&=\gamma(x^1-vx^0), &
+  x'^0&=\gamma(x^0-vx^1), \\
+  x'^2&=x^2, & x'^3&=x^3.
+\end{align}
+對張量的兩個指標分別施加相同的變換。對於平行於推動方向的分量，黑板上先從一個乘積開始：
+\begin{align}
+  (A'^0B'^1)
+  =\gamma^2\bigl(
+     A^0B^1-vA^0B^0-vA^1B^1+v^2A^1B^0
+   \bigr).
+\end{align}
+將各個乘積換成相應的張量分量，再利用反對稱性\(F^{00}=F^{11}=0\)和\(F^{10}=-F^{01}\)，可得
+\begin{equation}
+  F'^{01}
+  =\gamma^2(1-v^2)F^{01}
+  =F^{01}.
+\end{equation}
+因此，平行於運動方向的電場分量不變。平行的磁場分量也有類似的行為。
+
+橫向分量則不同。按照黑板上帶撇參考系與符號的約定，
+\begin{align}
+  F'^{02}
+  &=\gamma\bigl(F^{02}-vF^{12}\bigr), \\
+  E'_2
+  &=\gamma(E_2+vB_3).
+  \label{eq:e-transform}
+\end{align}
+橫向電場分量會包含一部分磁場分量的貢獻。其餘變換定律可依照同一套雙指標規則推導，講課中將它們留作練習。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_07_figure_13.png}
+\caption{橫向張量變換式中，\(E'_2\)分量包含一項正比於\(vB_3\)。}
+\lectureframe{01:23:40}
+\end{figure}
+
+\eqref{eq:e-transform}中的符號取決於哪個參考系被視為以\(+v\)運動，也取決於指標與度規的約定。不受這些選擇影響的是：橫向電場與磁場分量會彼此混合，而變換後的協變力方程依然成立。
+
+\begin{classroomqa}
+\audiencequestion{對於導線中的電流，有沒有某個運動速度能讓磁場消失？}
+\lecturerresponse{只跟著傳導電子一起運動並不足夠，因為在新參考系中，正電荷晶格也會運動。因此，中性載流導線的情況比單一電荷團的運動複雜。純磁場無法經由參考系變換完全消除。若電場與磁場同時存在，兩者變換後的部分在某些特殊情況下可以相消；對於單一勻速運動的電荷，電荷的靜止系就是能讓其磁場消失的簡單例子。}
+\end{classroomqa}
+
+精確的不變量判據涉及
+\begin{equation}
+  \boldsymbol B^2-\boldsymbol E^2,
+  \qquad
+  \boldsymbol E\cdot\boldsymbol B.
+\end{equation}
+只有電場佔主導且\(\boldsymbol E\cdot\boldsymbol B=0\)時，才可能存在滿足\(\boldsymbol B'=0\)的參考系。在某個參考系中呈現為純磁場的場是磁場佔主導，因此無法滿足這項條件。
+\editorialnote{這些不變量判據精確表達了課堂討論中得出的限定條件；其推導留待之後處理。}
+
+\begin{classroomqa}
+\audiencequestion{電純量位勢和磁向量位勢會組成四維向量嗎？}
+\lecturerresponse{會。依照符號約定不同，它們組合成四維位勢\(A^\mu\)。麥克斯威方程組會系統性地運用這個物件。}
+\end{classroomqa}
+
+\section{場的導數}
+
+現在我們不再只考慮單一粒子的軌跡，而要考慮遍布時空的場。設
+\begin{equation}
+  \phi=\phi(x^1,x^2,x^3,x^0)
+\end{equation}
+它是一個純量場。這個場的四個偏導數構成四維向量的協變分量：
+\begin{equation}
+  \partial_\mu\phi
+  \equiv\frac{\partial\phi}{\partial x^\mu}
+  =\left(
+    \frac{\partial\phi}{\partial x},
+    \frac{\partial\phi}{\partial y},
+    \frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+對洛倫茲座標變換應用鏈鎖律，即可證明這項協變變換定律。升高指標會使空間分量變號，而時間分量的符號保持不變：
+\begin{equation}
+  \partial^\mu\phi
+  =\left(
+    -\frac{\partial\phi}{\partial x},
+    -\frac{\partial\phi}{\partial y},
+    -\frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+
+每次微分都會引入一個下標。因此，\(\partial_\nu V^\mu\)是具有一個上標和一個下標的二階張量；對張量微分，會得到多出一個下標的物件。這是寫出不選定任何慣性系的場方程所需的基本規則。
+
+\section{不變的純量波動方程}
+
+最簡單的波動方程含有二階導數。若要讓方程在每個慣性系中都維持相同形式，左側就應該是純量。將導數的指標縮併，可得最簡單且唯一的選擇：
+\begin{equation}
+  \boxed{\partial^\mu\partial_\mu\phi=0.}
+  \label{eq:wave-covariant}
+\end{equation}
+依照目前的度規號差，將它展開為各分量：
+\begin{equation}
+  \frac{\partial^2\phi}{\partial t^2}
+  -\frac{\partial^2\phi}{\partial x^2}
+  -\frac{\partial^2\phi}{\partial y^2}
+  -\frac{\partial^2\phi}{\partial z^2}=0.
+  \label{eq:wave-components}
+\end{equation}
+\eqref{eq:wave-covariant}中的縮併明確顯示了洛倫茲不變性；方程\eqref{eq:wave-components}則是將同一陳述逐分量寫出。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_14.png}
+\caption{純量波動方程的導數縮併形式，以及時間項減去空間項的分量展開。}
+\lectureframe{01:39:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{波動方程右側一定要是零嗎？}
+\lecturerresponse{不一定。右側可以是任何與問題相容的純量。以常數乘上\(\phi\)，或使用與\(\phi^2\)成正比的非線性純量函數，都仍然符合協變性。取零則得到最簡單的自由波動方程。}
+\end{classroomqa}
+
+這個純量範例是為了鋪陳後續內容。馬克斯威方程組中電場與磁場的混合更為複雜，但同樣可以寫成由指標結構直接顯示洛倫茲不變性的形式。下次我們會回到這個問題。
