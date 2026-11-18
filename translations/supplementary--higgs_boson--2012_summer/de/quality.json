@@ -1,0 +1,35 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 35,
+  "outline_entries": 19,
+  "target_characters": 30010,
+  "image_placements": 14,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Das Higgs-Boson verstehen",
+  "pdf_sha256": "112551e8d2a6c4efe34c54d4b04802b1ac1e1b7369fbd8d9fe7d47659c5a4691",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 4,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "61f2996069b79cd82c6439adc912063e16037ec7ef623efe95e92a4e5b9749df",
+    "chapters/lecture_01/content.tex": "94d953496b94cd1e92b3e7a61c37be8bd86761c8f1e61c2af9a8a569a5a456df"
+  },
+  "source_files": {
+    "course.tex": "8618bd1a9d6c91833ba00f7be31dcb20fcc6727f03cd9160273f418737e819fd",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "0dce2f6c0fcca244ee59848cdffaf66f43d412a86a2f3e89cf16984c5f46430c"
+  },
+  "translated_tex": {
+    "cover.tex": "aa85459d7d11c57800df0ef0ba8e2d25fb46477392415bba7e9aea9656f1790f",
+    "common_preamble.tex": "c346eb70948a33b871342919d08bb4f98b56090dded1c813525fc6fce08586bd",
+    "course.tex": "96c100b1337dc5f1ad4952fe8ea8be4f35867e4ad97aef3bf3189217c96a6577",
+    "chapters/lecture_01/content.tex": "18f217270668322f5f77555d4c15d108929813150752a75c6414aa84dd9b0a84"
+  }
+}

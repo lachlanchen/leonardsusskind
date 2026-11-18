@@ -1,0 +1,452 @@
+\chapter{Das Higgs-Boson verstehen}
+
+\lectureoverview{Der Higgs-Mechanismus lässt sich am besten in der Reihenfolge verstehen, in der seine einzelnen Bestandteile benötigt werden. Wir beginnen mit quantisierter Bewegung und Feldern, formen eine gewöhnliche Schüssel zu einem Mexican-Hat-Potential um und nutzen das daraus entstehende Kondensat, um zu verstehen, warum Fermionen und schwache Bosonen massereich sein können. Erst dann identifizieren wir das physikalische Higgs-Boson als radiale Schwingung dieses Kondensats und verfolgen die Produktions- und Zerfallsprozesse, durch die es in 2012 nachgewiesen wurde.}
+
+\section{Der Mechanismus hinter den Schlagzeilen}
+
+Die Entdeckung eines neuen Teilchens in der Nähe von $125\,\mathrm{GeV}$ war zu Recht aufregend, doch Begeisterung bedeutet noch nicht Verständnis. Die zielführende Frage lautet weder, ob das Higgs wichtig ist, noch, ob es sich rhetorisch mit dem Ursprung des Universums verknüpfen lässt. Die zielführende Frage ist viel enger gefasst: Was sind die grundlegenden Bausteine des Phänomens, und warum brauchte das Standardmodell es?
+
+Auch die Bezeichnung bedarf einer kurzen Einordnung. Peter Higgs war einer von mehreren, die die Physik dahinter erkannten, und Fran\c{c}ois Englert und Robert Brout gelangten unabhängig voneinander auf die zentrale Idee. Der Ausdruck \emph{Brout--Englert--Higgs-Mechanismus} gibt daher die historische Entwicklung getreuer wieder, auch wenn im Folgenden die kürzere Bezeichnung verwendet wird.
+
+Die Erklärung ist modular aufgebaut. Zunächst brauchen wir zwei grundlegende Einsichten der Quantenmechanik und eine Idee aus der klassischen Feldtheorie. Als Nächstes benötigen wir ein Vakuum, dessen energieärmster Zustand ein von null verschiedenes Feld enthält. Danach können wir die Teilchen des Standardmodells überblicken und sehen, warum eine nackte Version der Theorie die betreffenden Teilchen masselos lässt. Das Higgs-Boson selbst kommt erst gegen Ende ins Spiel. Es ist nicht der ganze Mechanismus, sondern eine bestimmte Schwingung, die übrig bleibt, nachdem der Mechanismus wirksam geworden ist.
+
+\section{Zwei quantenmechanische Tatsachen und ein Feld}
+
+Die erste quantenmechanische Tatsache ist die Quantisierung. Der Drehimpuls ist ein anschauliches Beispiel, denn er tritt in diskreten Einheiten auf,
+\begin{equation}
+L=n\hbar,
+\qquad
+n=0,\pm1,\pm2,\ldots .
+\end{equation}
+Auch halbzahlige Drehimpulse kommen vor, doch für das unmittelbare Argument spielen sie keine Rolle. Entscheidend ist, dass eine kontinuierlich veränderliche klassische Bewegung zu einer Folge von Quantenzuständen wird.
+
+Die zweite Tatsache ist die Unschärferelation. Wir werden sie zurückstellen, bis ein kontinuierlicher Kreis möglicher Vakuumzustände auftritt. Dann wird sie uns daran hindern, das Vakuum als kleine klassische Kugel zu behandeln, die bewegungslos an einem genau festgelegten Punkt sitzt.
+
+Zwischen diesen beiden quantenmechanischen Tatsachen liegt der klassische Begriff des Feldes. Ein Feld ordnet jedem Punkt der Raumzeit eine Größe zu. Elektrische, magnetische und Gravitationsfelder sind vertraute Beispiele. Eine Region kann leer erscheinen und dennoch ein Feld enthalten. Man stelle sich zwei geladene Platten vor, die so weit entfernt sind, dass keine von beiden zu sehen ist. Das nahezu gleichförmige elektrische Feld zwischen ihnen ist trotzdem lokal real. Daher muss ``leerer Raum'' nicht bedeuten, dass ``jedes Feld null ist.'' Es bedeutet, dass sich die Felder in ihrem energieärmsten verfügbaren Zustand befinden.
+
+Nehmen wir an, die Energie eines Feldes ist bei einem bestimmten Wert am kleinsten und steigt, wenn das Feld ausgelenkt wird. Wird das Feld gestört, schwingt es um das Minimum. Die Quantenmechanik quantisiert diese Schwingungen; ihre einzelnen Quanten sind Teilchen. Das ist das feldtheoretische Wörterbuch, das wir während des gesamten Vortrags benötigen:
+\begin{equation}
+\text{particle}
+\quad\longleftrightarrow\quad
+\text{quantum of a field vibration}.
+\end{equation}
+
+\section{Eine Schüssel im Feldraum}
+
+Für eine einzelne reelle Feldkomponente $\phi$ ist die einfachste Energielandschaft eine Schüssel,
+\begin{equation}
+V(\phi)=\frac{1}{2}m^{2}\phi^{2}.
+\end{equation}
+Der Schüsselboden liegt bei $\phi=0$. Kleine Schwingungen um den Boden haben eine bestimmte Frequenz, und ihre Quanten verhalten sich wie Teilchen der Masse $m$.
+
+Ersetzen wir nun das einzelne Feld durch zwei Komponenten, $(\phi_1,\phi_2)$. Die Energie kann allein vom Radius in dieser internen Ebene abhängen,
+\begin{equation}
+r^{2}=\phi_1^{2}+\phi_2^{2},
+\qquad
+V=V(r).
+\end{equation}
+Das ist eine Schüssel über dem \emph{Feldraum}, keine Vertiefung im gewöhnlichen Raum. Eine Drehung des Paares $(\phi_1,\phi_2)$ lässt die Energie unverändert. Der im Vortrag verwendete Hut macht dieselbe Symmetrie anschaulich: Dreht man ihn um seine Achse, sieht er weiterhin gleich aus.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_02.png}
+\caption{Die gewöhnliche symmetrische Schüssel und der physische Hut, mit dem die Rotationssymmetrie im Feldraum anschaulich gemacht wird.}
+\lectureframe{00:10:02}
+\end{figure}
+
+Die Analogie wird mehr als reine Geometrie, sobald sich das Feld bewegt. Man lenkt es vom Zentrum aus und lässt es um die Schüssel kreisen. Diese Kreisbewegung trägt Drehimpuls im Feldraum. Es handelt sich nicht um den Drehimpuls eines Gegenstands, der sich im Labor dreht, sondern um einen internen Drehimpuls. Nach der Quantisierung liefert er ein Modell für eine erhaltene Ladung,
+\begin{equation}
+Q=nq_0,
+\qquad
+n\in\mathbb{Z}.
+\end{equation}
+Die Gleichung ist schematisch. Die zentrale physikalische Idee lautet, dass man sich eine geladene Feldanregung als Drehung in einer internen Ebene vorstellen kann. Positive und negative Ladung entsprechen entgegengesetzten Drehsinnen; ohne Drehung ist die Ladung null.
+
+\section{Den Hut umdrehen}
+
+Die gewöhnliche Schüssel hat nur einen tiefsten Punkt. Die Higgs-Physik beginnt, wenn man den Hut umdreht. Das Zentrum ist nun instabil, während eine ganze kreisförmige Mulde dieselbe minimale Energie aufweist. Eine übliche mathematische Realisierung ist
+\begin{equation}
+V(\phi_1,\phi_2)
+=
+\lambda
+\left(
+  \phi_1^{2}+\phi_2^{2}-v^{2}
+\right)^{2},
+\qquad \lambda>0,
+\end{equation}
+Die Minima erfüllen dann
+\begin{equation}
+\phi_1^{2}+\phi_2^{2}=v^{2}.
+\end{equation}
+\editorialnote{Das explizite quartische Potential ist die übliche analytische Ergänzung der im Vortrag gezeichneten Mexican-Hat-Geometrie; es wurde nicht von einer Tafelgleichung abgeschrieben.}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_03.png}
+\caption{Der zentrale Gipfel und die kreisförmige Mulde des umgedrehten Hutpotentials. Die vollständige Tafelskizze ersetzt einen früheren Ausschnitt, der den größten Teil der Geometrie nicht zeigte.}
+\lectureframe{00:13:10}
+\end{figure}
+
+Das Vakuum hat nun kein verschwindendes Feld mehr. Es muss irgendwo auf der Mulde liegen,
+\begin{equation}
+(\phi_1,\phi_2)
+=
+v(\cos\theta,\sin\theta).
+\end{equation}
+Die Gleichungen behalten ihre Rotationssymmetrie, doch jedes konkrete Vakuum wählt einen Winkel $\theta$ aus. Das ist spontane Symmetriebrechung: Das Gesetz ist symmetrisch, der gewählte energieärmste Zustand hingegen nicht.
+
+Nun gibt es zwei qualitativ unterschiedliche Bewegungen. Eine radiale Bewegung nach innen oder außen führt das Feld das Potential hinauf und kostet Energie. Eine Bewegung entlang der Mulde verändert nur $\theta$ und kostet auf klassischer Ebene keine potentielle Energie. Daher kann eine große ladungsartige Winkelbewegung mit nur sehr wenig zusätzlicher potentieller Energie verbunden sein.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_04.png}
+\caption{Ein markierter Punkt in der Mulde steht für ein bestimmtes Vakuum, das aus dem kontinuierlichen Kreis gleichwertiger Minima ausgewählt wurde.}
+\lectureframe{00:16:14}
+\end{figure}
+
+\section{Die Unschärfe macht das Vakuum zum Kondensat}
+
+Klassisch könnte man das Feld an einem Punkt des Randes platzieren, seine Winkelgeschwindigkeit auf null setzen und die Sache für erledigt erklären. Die Quantenmechanik erlaubt keine derart scharfe Festlegung. Ort und Impuls erfüllen
+\begin{equation}
+\Delta x\,\Delta p\gtrsim\frac{\hbar}{2}.
+\end{equation}
+Die entsprechende Aussage für die kreisförmige Mulde lautet: Wird der Winkel des Feldes lokalisiert, wird sein konjugierter interner Drehimpuls unscharf. In der schematischen Sprache des Vortrags gilt
+\begin{equation}
+\Delta\theta\,\Delta L_{\mathrm{int}}
+\gtrsim
+\frac{\hbar}{2}.
+\end{equation}
+\editorialnote{Winkeloperatoren weisen technische Feinheiten auf. Diese Relation ist daher ein lokaler semiklassischer Ausdruck des Unschärfearguments im Vortrag und keine global exakte Operatoridentität.}
+
+Ein Vakuum, das nahe einem Punkt der Mulde konzentriert ist, ist daher kein Zustand mit bestimmter interner Ladung. Es enthält eine breite Überlagerung von Ladungseigenzuständen. Der Vortrag präzisiert dies anhand einer experimentellen Prüfung: Fügt man eine Ladungseinheit hinzu oder entfernt man eine, ändert sich der Zustand kaum. Schematisch lässt sich das so darstellen:
+\begin{align}
+\ket{\Omega}
+&\sim
+\sum_n c_n\ket{n},
+\\
+c_{n+1}
+&\simeq
+c_n
+\quad\text{within the occupied range}.
+\end{align}
+Eine Verschiebung von $n$ um eins etikettiert dann größtenteils bereits vorhandene Terme lediglich neu. In diesem Sinn ist das Vakuum ein \emph{Kondensat}: Es enthält eine unbestimmte Zahl der betreffenden Quanten, sodass ein Quantum mehr oder weniger keinen beobachtbar anderen makroskopischen Zustand ergibt.
+
+Das reale elektroschwache Vakuum ist kein Kondensat gewöhnlicher elektrischer Ladung. Wäre es das, würde sich das elektromagnetische Verhalten des leeren Raums grundlegend unterscheiden. Ein Supraleiter liefert jedoch ein konkretes Beispiel eines geladenen Kondensats. Er bildet daher eine nützliche physikalische Brücke zwischen dem abstrakten Mexican-Hat-Bild und der Vorstellung, dass ein Vakuum eine kohärente Quantenstruktur tragen kann.
+
+Damit ist das erste Modul abgeschlossen. Wir haben gelernt, dass der energieärmste Zustand nicht bei einem verschwindenden Feld liegen muss und dass quantenmechanische Unschärfe diesen Zustand gegenüber dem Hinzufügen oder Entfernen einzelner Quanten unempfindlich machen kann. Nun fragen wir, welche Teilchen einen solchen Hintergrund benötigen.
+
+\section{Das nackte Standardmodell}
+
+Die Planck-Masse bildet eine natürliche obere Vergleichsgröße für Massen elementarer Teilchen. Erhöht man eine lokalisierte Energie weit genug, lässt sich die Gravitation nicht mehr vernachlässigen; irgendwann ist das Objekt eher als Schwarzes Loch denn als gewöhnliches elementares Teilchen zu betrachten. Numerisch gilt
+\begin{equation}
+m_{\mathrm P}
+=
+\sqrt{\frac{\hbar c}{G}}
+\approx
+2.2\times10^{-8}\,\mathrm{kg},
+\end{equation}
+etwa die Masse eines winzigen Staubkorns. Die bekannten elementaren Teilchen sind unfassbar viel leichter. In der im Vortrag verwendeten Größenschätzung erreichen ihre Massen nur ungefähr $10^{-17}$ der Planck-Masse.
+
+Diese Beobachtung beweist nicht, dass es keine schwereren elementaren Teilchen gibt. Beschleuniger weisen bevorzugt Teilchen nach, die sich mit der verfügbaren Energie erzeugen lassen. Das bekannte Spektrum wird daher teilweise durch die Reichweite der Maschinen geprägt, mit denen danach gesucht wird. Jenseits der heutigen Möglichkeiten könnte es viele schwerere Teilchen geben.
+
+Die beobachteten Teilchen teilen sich in Fermionen und Bosonen auf. Zu den Fermionen gehören das Elektron, das Myon, das Tau-Lepton, ihre Neutrinos und die sechs Quarkflavours. Zu den Bosonen gehören das Photon, die Gluonen und die schwachen $W$- und $Z$-Bosonen. Gluonen binden Quarks zu Protonen und Neutronen und sind deshalb für den Aufbau gewöhnlicher Atomkerne zentral.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_05.png}
+\caption{Das erste Inventar des Standardmodells im Vortrag, mit dem enormen Massenbereich oberhalb der Spalten für Fermionen und Bosonen.}
+\lectureframe{00:24:22}
+\end{figure}
+
+Die Theorie ist nicht bloß eine Liste, sondern eine Menge zulässiger Wechselwirkungen. Ein Elektron kann ein Photon emittieren,
+\begin{equation}
+e\longrightarrow e+\gamma.
+\end{equation}
+Ein Quark trägt sowohl elektrische Ladung als auch Farbladung und kann daher entweder ein Photon oder ein Gluon emittieren,
+\begin{equation}
+q\longrightarrow q+\gamma,
+\qquad
+q\longrightarrow q+g.
+\end{equation}
+Ein Elektron kann kein Gluon emittieren, und ein Neutrino emittiert weder ein Photon noch ein Gluon. Fermionen mit den passenden schwachen Quantenzahlen können über das $Z$ wechselwirken,
+\begin{equation}
+f\longrightarrow f+Z.
+\end{equation}
+Die $W$-Bosonen und Reaktionen mit geladenem Strom gehören ebenfalls zum Standardmodell, werden im Vortrag jedoch ausgeklammert, damit ein einziges neutrales schwaches Boson das Argument tragen kann.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_06.png}
+\caption{Emissionsvertex für Photonen, Gluonen und $Z$ neben dem Wort ``masselos.'' Diese Prozesse fassen die nackte Theorie zusammen, bevor das Kondensat eingeführt wird.}
+\lectureframe{00:29:20}
+\end{figure}
+
+Das Photon ist masselos. In einer ungebrochenen Eichtheorie derselben allgemeinen Art sind auch die Gluonen und die schwachen Eichbosonen masselos. Ebenso kann man in der unveränderten elektroschwachen Theorie Fermionmassen nicht einfach von Hand einsetzen und zugleich die Eichsymmetrie bewahren. Eine Zutat fehlt. Bevor wir sie hinzufügen, müssen wir in einem einfacheren Zusammenhang sehen, wie ein Hintergrundfeld die Masse eines Teilchens verändern kann, ohne wie Reibung zu wirken.
+
+\section{Wie ein Hintergrundfeld die Masse verändern kann}
+
+Betrachten wir ein Wassermolekül als elektrischen Dipol: Ein Ende ist leicht positiv, das andere leicht negativ. Im leeren Raum sind zwei entgegengesetzte Ausrichtungen energetisch gleichwertig. Der Vortrag gibt ihnen spielerisch unterschiedliche Namen, ``Wasser'' und ``Whisky,'' damit sie sich als verschiedene interne Zustände verfolgen lassen.
+
+Bringt man das Molekül zwischen Kondensatorplatten, so ist die Wechselwirkungsenergie, wenn sein Dipolmoment $\bm d$ und das elektrische Feld $\bm E$ beträgt,
+\begin{equation}
+U=-\bm d\mathbin{\cdot}\bm E.
+\end{equation}
+Für die beiden ausgerichteten Orientierungen ergibt sich
+\begin{equation}
+U_{\parallel}=-dE,
+\qquad
+U_{\mathrm{anti}}=+dE.
+\end{equation}
+Einsteins Beziehung $E=mc^2$ macht aus der Energiedifferenz eine Massendifferenz,
+\begin{equation}
+m_{\mathrm{anti}}-m_{\parallel}
+=
+\frac{2dE}{c^{2}}.
+\end{equation}
+Nichts hat an dem Molekül gerieben. Ein interner Zustand hat bei vorhandenem Hintergrundfeld einfach mehr Energie und damit mehr Masse als der andere.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_07.png}
+\caption{Entgegengesetzte Molekülorientierungen im Kondensatorfeld. Das Feld spaltet ihre Energien auf, ohne eine Reibungskraft einzuführen.}
+\lectureframe{00:34:35}
+\end{figure}
+
+Damit sind zwei irreführende Analogien ausgeräumt. Das Higgs-Feld ist keine Melasse, durch die Teilchen sich hindurchkämpfen müssen, und ein massereiches Teilchen ist kein Schneepflug, der durch vor ihm angesammeltes Material gebremst wird. In einem räumlich gleichförmigen Feld muss überhaupt keine resultierende Kraft wirken. Der Effekt ist eine Verschiebung der inneren Energie, keine Reibung und kein Impulsverlust.
+
+Dasselbe Beispiel lässt sich in der Sprache der Quantenmechanik wiedergeben. Ein klassisches elektrisches Feld ist ein kohärenter Zustand, der sich für den hier betrachteten Zweck als Kondensat von Photonen beschreiben lässt. Das Molekül kann ein Photon in diesen Hintergrund emittieren oder eines aus ihm absorbieren. Da das Hinzufügen oder Entfernen eines einzelnen Quants einen hoch besetzten kohärenten Zustand kaum verändert, kann die Photonlinie im Kondensat enden. Das Kreuz auf der Tafel bezeichnet dieses Verschwinden im Hintergrund, nicht eine Verletzung der Energieerhaltung.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_08.png}
+\caption{Das Kondensatorfeld, neu dargestellt als Photonenkondensat. Ein vom Dipol emittiertes Photon wird von einem Hintergrund absorbiert, der gegenüber einem zusätzlichen Quant unempfindlich ist.}
+\lectureframe{00:38:45}
+\end{figure}
+
+Das ist die Vorlage, die wir benötigen. Kann ein Kondensat die Differenz der Quantenzahlen zweier interner Zustände aufnehmen, kann es diese Zustände mischen. Ihre daraus entstehende Schwingung kann als Masse erscheinen.
+
+\section{Warum das Higgs nicht jede Masse erklärt}
+
+Bevor wir diese Vorlage anwenden, müssen wir ein Missverständnis ausräumen. Es ist falsch, dass jeder massereiche Gegenstand seine gesamte Masse vom Higgs-Feld erhält.
+
+Strahlung in einem perfekt reflektierenden Kasten einzuschließen, genügt. Die einzelnen Photonen sind masselos, doch der geschlossene Kasten besitzt ein Ruhesystem und speichert Energie. Seine Masse nimmt um
+\begin{equation}
+\Delta M=\frac{E_{\mathrm{radiation}}}{c^{2}}.
+\end{equation}
+Masse kann also auch aus eingeschlossener kinetischer Energie und Feldenergie entstehen, selbst wenn die Bestandteile keine Ruhemasse haben.
+
+Ein Proton ist das wichtige reale Beispiel. Es enthält Quarks, Antiquarks und Gluonen in einem stark wechselwirkenden Zustand. Der größte Teil der Protonenmasse stammt aus ihrer kinetischen Energie und Bindungsenergie und nicht daraus, dass man einfach die vom Higgs-Feld erzeugten Massen einiger Quarks addiert. Nach der im Vortrag hervorgehobenen Schätzung würde eine masselose Setzung der leichten Quarks die Protonenmasse nur in der Größenordnung eines Prozents verändern. Schwarze Löcher machen den logischen Punkt noch deutlicher: Ein Schwarzes Loch kann aufgrund der Gesamtenergie, aus der es entstand, massereich sein, ohne dass jeder Energiebeitrag zuvor vom Higgs-Feld in die Ruhemasse eines elementaren Teilchens umgewandelt worden sein muss.
+
+Der Higgs-Mechanismus hat eine genauere Aufgabe. Er ermöglicht Massen für elementare Fermionen und für die schwachen Eichbosonen und bewahrt zugleich die Konsistenz der zugrunde liegenden Eichtheorie.
+
+\section{Chiralität: Masse als Mischung von Links-- und Rechts}
+
+Betrachten wir zunächst das Elektron. Der Spin ist ein intrinsischer Drehimpuls. Für ein bewegtes Teilchen kann man die Richtung seines Spins mit seinem Impuls vergleichen. In der geometrischen Sprache des Vortrags unterscheiden sich ein rechtshändiges und ein linkshändiges Elektron durch die Beziehung zwischen diesen Richtungen. Bei einem masselosen Teilchen stimmen Helizität und Chiralität in der für das Argument benötigten einfachen Weise überein; bei einem massiven Teilchen müssen die Begriffe genau unterschieden werden.
+
+Man stelle sich vor, man würde ein massereiches Elektron immer wieder überholen. In einem anderen Inertialsystem kehrt sich sein Impuls um, während sein Spin unverändert bleibt; dadurch kann sich die scheinbare Händigkeit, die sich aus der Bewegungsrichtung ergibt, umkehren. Kein Beobachter kann ein streng masseloses Teilchen überholen, denn es bewegt sich stets mit Lichtgeschwindigkeit. Daraus leitet der Vortrag heuristisch ab: Ein masseloses Elektron bleibt in einem chiralen Zustand, während sich bei einem massereichen Elektron Links- und Rechtshändigkeit ständig mischen.
+
+Die genaue feldtheoretische Aussage lautet, dass ein Dirac-Massenterm die beiden chiralen Felder koppelt,
+\begin{equation}
+\mathcal L_m
+=
+-m_e\bar e e
+=
+-m_e
+\left(
+  \bar e_L e_R
+  +
+  \bar e_R e_L
+\right).
+\end{equation}
+\editorialnote{Der Dirac-Massenterm ist die übliche mathematische Ausformulierung des im Vortrag verwendeten Bildes einer ``Umschlagrate''. Die Mischung der Chiralitäten ist proportional zur Masse; die tatsächliche zeitliche Rate hängt vom Zustand und von der relativistischen Zeitdilatation ab.}
+
+Für $m_e=0$ entwickeln sich das linke und das rechte Feld unabhängig voneinander. Für $m_e\ne0$ koppeln sie die Gleichungen. In diesem präzisen Sinn misst die Masse die Stärke der Mischung von Links-- und Rechts.
+
+\section{Das Erhaltungsgesetz, das eine nackte Masse verbietet}
+
+Warum schreibt man den Mischungsterm nicht einfach von Anfang an hin? Die schwache Wechselwirkung behandelt $e_L$ und $e_R$ unterschiedlich. Susskind gibt dem entscheidenden Unterschied einen bewusst einfachen Namen: \emph{Zilch}. In der im Vortrag verwendeten Normierung gilt
+\begin{equation}
+z(e_L)=1,
+\qquad
+z(e_R)=0.
+\end{equation}
+Die beiden Chiralitäten haben dieselbe elektrische Ladung, aber unterschiedliche schwache Quantenzahlen. Ein direkter Übergang
+\begin{equation}
+e_L\longrightarrow e_R
+\end{equation}
+würde daher die von der schwachen Wechselwirkung getragene Größe nicht erhalten. In der ungebrochenen Theorie ist der nackte Massenterm verboten.
+
+\editorialnote{``Zilch'' ist eine didaktische Kurzbezeichnung. Im Standardmodell gehören links- und rechtshändige Fermionen zu unterschiedlichen Darstellungen von $SU(2)_L\times U(1)_Y$; ein direkter Dirac-Massenterm ist daher nicht eichinvariant. Die Zuordnungen $1$ und $0$ im Vortrag kodieren diesen Unterschied, ohne die vollständige elektroschwache Ladungstabelle wiederzugeben.}
+
+Die Tafel stellt das Hindernis als Abfolge dar. Ein rechtshändiges Elektron kann nur dann linkshändig werden, wenn etwas anderes die Differenz des Zilchs davonträgt. Dasselbe Hindernis betrifft Quarks, Myonen und Tau-Leptonen; sobald das fehlende Feld hinzukommt, hängt die Stärke von der jeweiligen Teilchenart ab.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_09.png}
+\caption{Die chirale Abfolge auf der Tafel: Ein am grünen Kreuz eingefügtes Kondensatquant erlaubt es, dass sich die Zilch-Kennzeichnung beim Übergang zwischen rechts- und linkshändiger Ausbreitung ändert.}
+\lectureframe{00:50:15}
+\end{figure}
+
+\section{Das Kondensat der ``Ziggs'' und die Fermionmasse}
+
+Führen wir ein Feld ein, dessen Quanten genau die fehlende schwache Quantenzahl tragen. Um Verwechslungen mit dem physikalischen Higgs-Teilchen zu vermeiden, nennt der Vortrag das betreffende Quant \emph{Ziggs}. Nehmen wir an, das Ziggs-Feld habe ein Mexican-Hat-Potential und sein Vakuum sei ein Kondensat. Dann kann ein linkshändiges Elektron ein Ziggs-Quant emittieren und rechtshändig werden,
+\begin{equation}
+e_L\longrightarrow e_R+\text{Ziggs},
+\end{equation}
+oder ein rechtshändiges Elektron kann eines absorbieren und linkshändig werden,
+\begin{equation}
+e_R+\text{Ziggs}\longrightarrow e_L.
+\end{equation}
+Das Kondensat nimmt die Differenz der Quantenzahlen auf oder liefert sie, ohne seinen makroskopischen Zustand zu ändern. Was im leeren, ungebrochenen Vakuum verboten war, wird im Vakuum mit gebrochener Symmetrie erlaubt.
+
+Wiederholte Emission und Absorption mischen $e_L$ und $e_R$. Das Elektron breitet sich daher als massereiches Teilchen aus. Derselbe Mechanismus gilt für geladene Leptonen und Quarks. Jede Teilchenart koppelt mit eigener Stärke an das Kondensat, sodass sich die Stärke des Umschlags und damit die Masse von Teilchenart zu Teilchenart unterscheiden kann.
+
+In moderner Schreibweise ist die eichinvariante Wechselwirkung eine Yukawa-Kopplung. Nachdem das Higgs-Feld den Vakuumerwartungswert $v$ angenommen hat, ergibt sich
+\begin{equation}
+\mathcal L_Y
+\supset
+-\frac{y_f}{\sqrt{2}}
+(v+h)\bar f f,
+\end{equation}
+und damit
+\begin{equation}
+m_f=\frac{y_fv}{\sqrt{2}},
+\qquad
+g_{hff}=\frac{y_f}{\sqrt{2}}
+=
+\frac{m_f}{v}.
+\end{equation}
+\editorialnote{Diese Formeln liefern die übliche elektroschwache Schreibweise für das Argument des Vortrags zur Kopplung an das Kondensat. Sie machen außerdem ausdrücklich sichtbar, warum dieselbe Kopplung sowohl die Fermionmasse als auch den Higgs-Zerfall in dieses Fermion bestimmt.}
+
+Der Vortrag beschreibt dies als spontane Brechung einer chiralen Symmetrie. Auf der Ebene des Beispiels bringt das die Geschichte von Links-- und Rechts auf den Punkt. Genauer gesagt bricht der Erwartungswert des Higgs-Feldes die elektroschwache Eichsymmetrie auf die elektromagnetische Untergruppe; die Yukawa-Wechselwirkungen werden dadurch zu Fermionmassentermen.
+
+\section{Wie das schwache Boson Masse erhält}
+
+Das Kondensat verändert auch die schwachen Eichbosonen. Eine Ziggs-Anregung kann ein $Z$-Boson emittieren; umgekehrt kann sich das $Z$ in die entsprechende vom Kondensat gestützte Anregung und wieder zurück umwandeln. Das $Z$ breitet sich somit durch ein Vakuum aus, in dem es sich mit dem Winkelbereich des Higgs-Feldes mischt. Das Ergebnis ist ein massives Vektorboson mit einer longitudinalen Polarisation, die ein masseloses Vektorboson nicht hätte.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_10.png}
+\caption{Die vervollständigte Abfolge auf der Tafel zum Mechanismus der schwachen Bosonen: Die chirale Kette bleibt oben, während das $Z$ unten Quantenzahlen mit dem vom Kondensat gestützten Bereich austauscht.}
+\lectureframe{00:53:40}
+\end{figure}
+
+Das ist das Brout--Englert--Higgs-Phänomen in seiner Form für Eichbosonen. Im vollständigen Standardmodell erhalten sowohl die $W$-Bosonen als auch das $Z$ Masse, während eine Kombination der ursprünglichen neutralen Eichfelder als masseloses Photon erhalten bleibt. Hätte das Vakuum stattdessen die gewöhnliche elektromagnetische Eichsymmetrie gebrochen, wäre das Photon massereich geworden, wie es in einem Supraleiter faktisch der Fall ist. Der leere Raum hätte dann ein völlig anderes elektromagnetisches Verhalten über große Entfernungen.
+
+Die schwachen Bosonen lieferten bereits lange vor der Isolierung des physikalischen Higgs-Teilchens starke Hinweise auf diesen Mechanismus. Ihre Massen und Wechselwirkungen zeigten, dass die elektroschwache Symmetrie auf die erforderliche Weise gebrochen war. Deshalb kann der Vortrag in einem lockeren operationalen Sinn sagen, dass der ``Ziggs''-Sektor bereits bekannt war: Als experimentelles Objekt fehlte noch die unabhängige radiale Schwingung.
+
+\editorialnote{Der improvisierte Verweis des Vortrags auf eine Entdeckung am SLAC um 1980 fasst mehrere Ereignisse zusammen. Neutrale schwache Ströme wurden in 1973 beobachtet, die Paritätsverletzung bei der Elektronenstreuung am SLAC wurde gegen Ende der 1970er-Jahre berichtet, und die $W$- und $Z$-Bosonen wurden in 1983 am CERN direkt entdeckt. Der physikalische Punkt ist die frühere experimentelle Bestätigung der elektroschwachen Symmetriebrechung.}
+
+\section{Was das Higgs-Boson tatsächlich ist}
+
+Kehren wir zum Mexican-Hat-Potential zurück. Eine Bewegung entlang der Mulde ändert den Winkel, aber nicht den Radius. Dieser Winkelbereich liefert die Moden, die von den massereichen schwachen Bosonen aufgenommen werden. Das physikalische Higgs-Boson entspricht der anderen Bewegung: einer Schwingung nach innen und außen, die an den Wänden des Potentials hinauf- und hinabführt.
+
+Schreiben wir das Feld schematisch als
+\begin{equation}
+\Phi(x)
+=
+\frac{v+h(x)}{\sqrt{2}}
+\exp\!\left(
+  \frac{i\theta(x)}{v}
+\right).
+\end{equation}
+Die Variable $\theta$ beschreibt die Bewegung entlang der Mulde. Die Variable $h$ verändert den Radius. In einer Eichtheorie werden die entsprechenden Winkelmoden zu den longitudinalen Komponenten der massereichen schwachen Bosonen, während $h$ als propagierendes skalares Teilchen erhalten bleibt: das Higgs-Boson.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_11.png}
+\caption{Beide Potentiale sind erneut auf der Tafel zu sehen; in der Mulde des Mexican-Hat-Potentials ist eine radiale Auslenkung markiert. Diese Schwingung nach innen und außen ist der physikalische Higgs-Modus.}
+\lectureframe{00:56:30}
+\end{figure}
+
+Es gibt auch ein gleichwertiges Vielteilchenbild. Das Vakuum ist ein Kondensat, und eine radiale Schwingung verändert dessen Dichte. Das Higgs-Boson ähnelt daher einer Kompressionswelle in diesem Quantenmedium. Die Analogie ist nützlich, solange man daraus nicht schließt, dass die Welle stabil sein muss. Gewöhnliche Schallwellen können zerfallen, und auch die Higgs-Anregung kann zerfallen.
+
+Dieser Unterschied erklärt, warum die Entdeckung des Higgs-Bosons das letzte fehlende Puzzlestück war und nicht der erste Hinweis auf den Mechanismus. Das gebrochene Vakuum und die massereichen schwachen Bosonen waren bereits indirekt sichtbar. Die radiale Dichtewelle musste als Teilchen erzeugt und anhand ihrer Zerfallsprodukte identifiziert werden.
+
+\section{Zerfall, Produktion und der Vorteil schwerer Fermionen}
+
+Das Higgs koppelt proportional zur Masse eines Fermions an dieses. Es kann in ein Fermion-Antifermion-Paar zerfallen,
+\begin{equation}
+H\longrightarrow f+\bar f,
+\end{equation}
+und dasselbe Diagramm lässt sich umgekehrt als Produktion lesen,
+\begin{equation}
+f+\bar f\longrightarrow H.
+\end{equation}
+Eine Elektron-Positron-Annihilation ist also grundsätzlich möglich. Historisch fehlte frühen Beschleunigern jedoch zunächst die nötige Energie, um das Higgs zu erzeugen; spätere Maschinen standen vor dem grundsätzlicheren Problem, dass die Yukawa-Kopplung des Elektrons äußerst klein ist. Die Annihilation leichter Quarks ist ähnlich schwach.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_12.png}
+\caption{Der Zerfallsvertex des Higgs auf der Tafel. Liest man die Pfeile umgekehrt, erhält man die Fusion eines Fermions und eines Antifermions zu einem Higgs-Boson.}
+\lectureframe{00:59:40}
+\end{figure}
+
+Je schwerer das Fermion, desto größer ist seine Yukawa-Kopplung. Dadurch rückt das Top-Quark mit seiner Masse von etwa $173\,\mathrm{GeV}$ besonders hervor: Sie entspricht ungefähr $180$ Protonenmassen. In der Vorlesung wird als runder Wert etwa $170$ Protonenmassen verwendet. Ein Higgs-Boson mit einer Masse nahe $125\,\mathrm{GeV}$ ist jedoch zu leicht, um in ein Paar reeller $t\bar t$-Quarks zu zerfallen,
+\begin{equation}
+m_H<2m_t.
+\end{equation}
+Auch einen brauchbaren Strahl aus Top-Quarks kann man nicht erzeugen: Das Top-Quark zerfällt, bevor es zu einem langlebigen Strahlteilchen hadronisieren kann.
+
+Die Quantenmechanik bietet einen Ausweg aus beiden Schwierigkeiten. Zwei Gluonen können über eine virtuelle Top-Quark-Schleife fluktuieren und als Higgs-Boson hervorgehen,
+\begin{equation}
+g+g\longrightarrow H.
+\end{equation}
+Die virtuellen Top-Quark-Linien müssen nicht die Schwelle für den Massenschalen-Zustand erfüllen, die für die Erzeugung eines realen Top-Quark-Paares maßgeblich wäre. Protonen sind voller Gluonen, daher liefern hochenergetische Proton-Proton-Kollisionen am Large Hadron Collider eine intensive Quelle der benötigten Gluonenpaare.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_13.png}
+\caption{Gluonfusion über eine virtuelle Top-Quark-Schleife. Zwei Gluonen aus den kollidierenden Protonen treffen in der Schleife aufeinander und erzeugen das Higgs-Boson.}
+\lectureframe{01:06:35}
+\end{figure}
+
+Deshalb wurde trotz der komplexen Trümmer aus Protonenkollisionen ein Protonenkollider zur entscheidenden Higgs-Fabrik. Das Proton koppelt nicht als einzelnes Elementarteilchen an das Higgs-Boson; seine Gluonbestandteile erzeugen das Higgs-Boson über eine Schleife, die von der starken Kopplung des schweren Top-Quarks dominiert wird.
+
+\section{2012-Teilchen und sein Diphotonentest}
+
+Das in 2012 gemeldete Teilchen hatte eine Masse nahe
+\begin{equation}
+m_H\simeq125\,\mathrm{GeV}.
+\end{equation}
+Im anschaulichen Vergleich der Vorlesung entspricht das ungefähr $127$ Protonenmassen. Mit seiner Entdeckung war die Liste der Teilchen vervollständigt, die das minimale Standardmodell verlangt. Offen blieb die Frage, ob seine quantitativen Eigenschaften genau den Vorhersagen des Standardmodells entsprachen.
+
+Die Logik der Top-Quark-Schleife lässt sich umkehren. Das Higgs-Boson koppelt an die virtuellen geladenen Teilchen in einer Schleife, und diese Schleife kann zwei Photonen abstrahlen,
+\begin{equation}
+H\longrightarrow\gamma+\gamma.
+\end{equation}
+Dieser Zerfall ist selten, doch Photonen sind in einem Hadronenkollider besonders gut identifizierbare Teilchen. Ein schmaler Überschuss in ihrer Verteilung nach invarianter Masse kann daher ein Higgs-Boson sichtbar machen, selbst wenn häufigere Zerfälle experimentell schwerer auszuwerten sind.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.95\textwidth]{lecture_144_figure_14.png}
+\caption{Das Diphoton-Dreieck rechts an der Tafel, zusammen mit der zuvor gezeigten Gluonfusionsschleife links. Die beiden Prozesse untersuchen dieselbe Schleifenlogik, jedoch in entgegengesetzter Richtung.}
+\lectureframe{01:09:00}
+\end{figure}
+
+Zum Zeitpunkt der Vorlesung schien die gemeldete Diphotonrate vielleicht beim Eineinhalbfachen der einfachsten Erwartung des Standardmodells zu liegen; ihre Signifikanz betrug jedoch nur etwa zwei Standardabweichungen. Eine solche Fluktuation war für sich genommen kein Beleg. Hätte sie angehalten, hätte sie allerdings auf ein zusätzliches geladenes Teilchen in der Schleife hindeuten können, vielleicht eines, das mit Supersymmetrie oder einer anderen Erweiterung des Standardmodells zusammenhängt.
+
+Diese Aussage gehört in den historischen Kontext von 2012. Sie hält fest, worauf Experimentalphysiker als Nächstes achten sollten, und erhebt keinen Anspruch auf eine gegenwärtige Anomalie. Die Entdeckung selbst bestätigte weitgehend ein bereits durch die Daten zu den schwachen Bosonen gestütztes Modell. Die aussagekräftigeren wissenschaftlichen Prüfungen betrafen die Zerfallsraten: Koppelte das neue Skalarteilchen an jedes Teilchen entsprechend dem von der Higgs-Mechanik vorhergesagten massenabhängigen Muster?
+
+\section{Fragen aus dem Publikum}
+
+\begin{classroomqa}
+\audiencequestion{Wodurch wird bestimmt, warum ein Fermion schneller als ein anderes zwischen links und rechts wechselt und deshalb eine andere Masse hat?\lecturetimestamp{01:12:00}}
+\lecturerresponse{Jede Fermionart besitzt ihre eigene Kopplung an das Higgs-Kondensat. Eine stärkere Kopplung führt zu stärkerer Mischung zwischen links--rechts und zu einer größeren Masse. Dieselbe Kopplung bestimmt, wie stark das physikalische Higgs-Boson in dieses Fermion zerfällt. Deshalb koppeln schwerere Fermionen im Allgemeinen stärker. Das Standardmodell parametrisiert diese Yukawa-Kopplungen, erklärt aber nicht ihre auffällige Hierarchie. Zu sagen, dass das Elektron eine kleine und das Top-Quark eine große Kopplung hat, ist eine zutreffende Beschreibung, aber noch keine tiefergehende Herleitung.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kennen wir den Betrag des Higgs-Feldes im Vakuum?\lecturetimestamp{01:13:36}}
+\lecturerresponse{Ja. In der hier verwendeten Konvention beträgt der Vakuumerwartungswert ungefähr $240\,\mathrm{GeV}$; der genauere Standardwert liegt bei etwa $246\,\mathrm{GeV}$. Man kann ihn sich entweder als radiale Verschiebung des Feldes vom Ursprung oder als Dichte des Kondensats vorstellen. Ein physikalisches Higgs-Quant ist eine kleine radiale Schwingung dieses Wertes, gleichbedeutend mit einer lokalen Dichtefluktuation des Kondensats.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bedeutet der von null verschiedene Vakuumwert des Higgs-Feldes, dass der leere Raum eine Energiedichte besitzt?\lecturetimestamp{01:14:12}}
+\lecturerresponse{Ja. Das Higgs-Potential trägt zur Vakuumenergie bei, ebenso wie viele andere Sektoren der Quantenfeldtheorie. Die beobachtete resultierende Vakuumenergie ist im Vergleich zu den natürlichen Größen dieser Beiträge außerordentlich klein; sie müssen sich daher nahezu aufheben. Keine anerkannte Theorie erklärt diese Aufhebung. Das ist das Problem der kosmologischen Konstante, eines der tiefsten ungelösten Probleme der Grundlagenphysik.}
+\end{classroomqa}
+
+\section{Was die Konstruktion erreicht hat}
+
+Die Argumentation lässt sich nun vom Anfang bis zum Ende nachvollziehen, ohne einen klebrigen Äther heranzuziehen. Die quantisierte innere Rotation liefert das Modell für die Ladung. Wird die Schale in einen Mexikanerhut verwandelt, erhält das Feld einen von null verschiedenen Vakuumwert. Das Unschärfeprinzip macht aus einem klassisch scharf festgelegten Vakuum ein Kondensat, das unempfindlich gegenüber einzelnen Quanten ist. Das Kondensat kann dann die Differenz der schwachen Quantenzahlen zwischen links- und rechtshändigen Fermionen tragen und dadurch ihre Mischung und somit ihre Massen ermöglichen. Es liefert außerdem die longitudinalen Moden, die es $W$ und $Z$ ermöglichen, sich als massive Vektorbosonen auszubreiten, während das Photon masselos bleibt.
+
+Das physikalische Higgs-Boson ist die radiale Schwingung, die nach dieser Umordnung übrig bleibt. Es ist nicht ``Masse selbst,'' und es ist nicht für den größten Teil der Protonenmasse verantwortlich. Es ist die beobachtbare Dichtewelle des symmetriebrechenden Feldes. Seine Kopplungen spiegeln die von diesem Feld erzeugten Massen wider; deshalb dominieren schwere Teilchen seine Erzeugung und seinen Zerfall. Die Gluonfusionsschleife, der Diphotonkanal und die abschließende Frage des Publikums zur Vakuumenergie sind daher keine voneinander unabhängigen Kuriositäten. Sie sind Folgen, Prüfungen und noch offene Implikationen desselben nichttrivialen Vakuums.
