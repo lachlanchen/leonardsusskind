@@ -7,13 +7,13 @@
 # Kho Lưu Trữ Ghi Chú Bài Giảng Leonard Susskind
 
 <!-- reading-languages:start -->
-## Đọc bằng tiếng Anh, tiếng Nhật và tiếng Trung
+## Đọc các ấn bản đa ngôn ngữ
 
-Có bản tiếng Nhật và tiếng Trung giản thể cho 16 sách đã hiệu đính, bên cạnh bản gốc tiếng Anh. PDF là sách độc lập theo từng ngôn ngữ; Bunko cho phép chọn các lớp ngôn ngữ tương ứng.
+Cả 16 cuốn đều có bản tiếng Anh, Nhật, Trung giản thể, Pháp, Tây Ban Nha và Đức. [Bảng PDF theo sách và ngôn ngữ](../README.md#final-polished-translations) cũng cho biết cuốn nào đã có bản tiếng Trung phồn thể, Hàn, Việt, Nga hoặc Ả Rập. Chọn **Available PDF** để mở bản đã xuất bản; **In preparation** nghĩa là chưa có bản tải xuống.
 
 PDF dịch mới dùng giấy 177.6 × 252 mm (mỗi chiều A5 × 1.2), chữ 12 pt, giữ nguyên công thức và hình. “pocket 1.2x” cũ chỉ cỡ chữ phóng lớn, không phải khổ giấy này.
 
-Chúng tôi đang mở rộng thư viện đa ngôn ngữ. Mời đóng góp ngôn ngữ mới, hiệu đính khoa học, khả năng tiếp cận và dàn trang qua issue hoặc bản sửa có nguồn. Các ngôn ngữ khác đang được lên kế hoạch, chưa xuất bản.
+Vui lòng gửi qua issue các bản sửa có căn cứ về vật lý, khả năng tiếp cận hoặc dàn trang.
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

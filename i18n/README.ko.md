@@ -7,13 +7,13 @@
 # Leonard Susskind 강의 노트 저장소
 
 <!-- reading-languages:start -->
-## 영어·일본어·중국어로 읽기
+## 다국어판 읽기
 
-최종 교정된 16권의 일본어판과 중국어 간체판을 영어 원본과 함께 제공합니다. PDF는 언어별 독립판이며 Bunko에서는 정렬된 언어 층을 선택할 수 있습니다.
+총 16권 모두 영어, 일본어, 중국어 간체, 프랑스어, 스페인어, 독일어로 읽을 수 있습니다. [책과 언어별 PDF 목록](../README.md#final-polished-translations)에서 중국어 번체, 한국어, 베트남어, 러시아어, 아랍어판의 출간 여부도 확인할 수 있습니다. **Available PDF**를 누르면 출간된 책이 열립니다. **In preparation**은 아직 내려받을 수 없다는 뜻입니다.
 
 새 번역 PDF는 A5의 가로·세로를 각각 1.2배 한 177.6 × 252 mm 용지와 12 pt 본문을 사용하며 수식과 원본 그림을 유지합니다. 기존 “pocket 1.2x”는 글자 확대율로, 이 용지 크기와 다릅니다.
 
-다국어 서가를 확장하고 있습니다. 추가 언어, 과학 교정, 접근성, 조판에 참여해 주세요. 근거가 있는 수정이나 이슈를 환영합니다. 다른 언어판은 계획 중이며 아직 공개되지 않았습니다.
+물리 내용, 접근성, 조판에 관한 근거 있는 수정은 Issue로 보내 주세요.
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

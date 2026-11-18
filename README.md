@@ -5,13 +5,13 @@
 # Leonard Susskind Lecture Notes Repository
 
 <!-- reading-languages:start -->
-## Read in English, Japanese and Chinese
+## Choose a book language
 
-Japanese and Simplified Chinese editions are available for 16 final polished books, alongside the English originals. Read each language independently in PDF, or select aligned language layers in Bunko.
+All 16 books are available in English, Japanese, Simplified Chinese, French, Spanish and German. The [PDF table by book and language](#final-polished-translations) also tracks Traditional Chinese, Korean, Vietnamese, Russian and Arabic. Choose **Available PDF** to read a published edition; **In preparation** means there is no download yet.
 
 New translated PDFs use 1.2 × A5 paper (177.6 × 252 mm), with 12 pt text, clear spacing, equations and original figures. The older “pocket 1.2x” files refer to enlarged type, not this paper size.
 
-We are expanding this multilingual library. Help with additional languages, scientific proofreading, accessibility or layout: open an issue or contribute a source-backed correction. More languages are planned, not yet published.
+Help with scientific proofreading, accessibility or layout by opening an issue or contributing a source-backed correction.
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

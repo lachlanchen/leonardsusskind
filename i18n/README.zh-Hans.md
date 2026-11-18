@@ -7,13 +7,13 @@
 # Leonard Susskind 讲义笔记仓库
 
 <!-- reading-languages:start -->
-## 用英语、日语和中文阅读
+## 阅读多语言版本
 
-16册最终润色讲义已有日文版与简体中文版，并保留英文原版。PDF是各语言独立成书的版本；Bunko可选择对应的语言层阅读。
+全套 16 册均有英语、日语、简体中文、法语、西班牙语和德语版。[各册 PDF 语言对照表](../README.md#final-polished-translations)也列出了繁体中文、韩语、越南语、俄语和阿拉伯语版的出版进度。点击 **Available PDF** 即可阅读；**In preparation** 表示尚未开放下载。
 
 新译本默认使用A5长宽各放大1.2倍的纸张（177.6 × 252 mm）、12 pt正文和舒适行距，保留公式与原图。旧版“pocket 1.2x”指字号放大，并非此纸张尺寸。
 
-我们正拓展这座多语言书库，欢迎参与其他语言翻译、科学内容校对、无障碍阅读与排版改进。请通过Issue或附有来源依据的修订协作。其他语言版本仍在规划中，尚未发布。
+欢迎通过 Issue 提交有依据的科学内容校订、无障碍改进或排版修正。
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

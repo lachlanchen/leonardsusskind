@@ -5,13 +5,13 @@
 # Repository für Leonard-Susskind-Vorlesungsnotizen
 
 <!-- reading-languages:start -->
-## Auf Englisch, Japanisch und Chinesisch lesen
+## Mehrsprachige Ausgaben lesen
 
-Für 16 abschließend redigierte Bücher sind japanische und vereinfachte chinesische Ausgaben neben den englischen Originalen verfügbar. PDFs sind eigenständige Sprachausgaben; Bunko bietet ausgerichtete Sprachebenen.
+Alle 16 Bände sind auf Englisch, Japanisch, Chinesisch (Kurzzeichen), Französisch, Spanisch und Deutsch erschienen. Die [PDF-Übersicht nach Band und Sprache](../README.md#final-polished-translations) zeigt auch den Stand für Chinesisch (Langzeichen), Koreanisch, Vietnamesisch, Russisch und Arabisch. **Available PDF** öffnet die veröffentlichte Ausgabe; **In preparation** bedeutet, dass noch kein Download verfügbar ist.
 
 Neue übersetzte PDFs verwenden 177.6 × 252 mm (beide A5-Seiten × 1.2), 12 pt Schrift und erhalten Formeln und Abbildungen. Das ältere „pocket 1.2x“ bezeichnet größere Schrift, nicht dieses Papierformat.
 
-Wir erweitern die mehrsprachige Bibliothek. Beiträge zu weiteren Sprachen, Physik-Korrekturlesen, Barrierefreiheit und Layout sind willkommen. Bitte ein Issue oder eine belegte Korrektur einreichen. Weitere Sprachen sind geplant, noch nicht veröffentlicht.
+Belegte Korrekturen zu Physik, Barrierefreiheit oder Satz sind als Issue willkommen.
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

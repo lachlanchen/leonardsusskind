@@ -5,13 +5,13 @@
 # Dépôt des notes de cours de Leonard Susskind
 
 <!-- reading-languages:start -->
-## Lire en anglais, japonais et chinois
+## Lire les éditions multilingues
 
-Les éditions japonaises et chinoises simplifiées de 16 livres révisés sont disponibles avec les originaux anglais. Les PDF sont des éditions autonomes ; Bunko permet de choisir des couches linguistiques alignées.
+Les 16 livres sont disponibles en anglais, japonais, chinois simplifié, français, espagnol et allemand. Le [tableau des PDF par livre et par langue](../README.md#final-polished-translations) indique aussi où en sont les éditions en chinois traditionnel, coréen, vietnamien, russe et arabe. **Available PDF** ouvre une édition publiée ; **In preparation** signifie que le PDF n’est pas encore disponible.
 
 Les nouveaux PDF traduits utilisent du papier de 177.6 × 252 mm (chaque dimension A5 × 1.2), un corps de 12 pt et conservent équations et figures. L’ancien « pocket 1.2x » désigne des caractères agrandis, pas ce format de papier.
 
-Nous élargissons la bibliothèque multilingue. Traductions supplémentaires, relecture scientifique, accessibilité et mise en page : vos contributions sont bienvenues via une issue ou une correction sourcée. Les autres langues sont prévues, pas encore publiées.
+Les corrections documentées concernant la physique, l’accessibilité ou la mise en page sont les bienvenues via une issue.
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

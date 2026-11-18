@@ -5,13 +5,13 @@
 # Repositorio de apuntes de las conferencias de Leonard Susskind
 
 <!-- reading-languages:start -->
-## Leer en inglés, japonés y chino
+## Leer las ediciones multilingües
 
-Hay ediciones japonesas y en chino simplificado de 16 libros revisados, junto con los originales ingleses. Los PDF son ediciones independientes; Bunko permite elegir capas de idiomas alineadas.
+Los 16 libros están disponibles en inglés, japonés, chino simplificado, francés, español y alemán. En la [tabla de PDF por libro e idioma](../README.md#final-polished-translations) también puedes consultar las ediciones en chino tradicional, coreano, vietnamita, ruso y árabe. **Available PDF** abre una edición publicada; **In preparation** indica que aún no se puede descargar.
 
 Los nuevos PDF traducidos usan papel de 177.6 × 252 mm (ambas dimensiones de A5 × 1.2), texto de 12 pt y conservan ecuaciones e ilustraciones. El antiguo «pocket 1.2x» amplía la tipografía, no indica este tamaño de papel.
 
-Estamos ampliando la biblioteca multilingüe. Colabora con otros idiomas, revisión científica, accesibilidad o maquetación mediante una incidencia o corrección documentada. Otros idiomas están previstos, aún no publicados.
+Se agradecen correcciones documentadas de física, accesibilidad o maquetación mediante una incidencia.
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

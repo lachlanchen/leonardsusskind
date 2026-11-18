@@ -5,13 +5,13 @@
 # Leonard Susskind 講義ノートリポジトリ
 
 <!-- reading-languages:start -->
-## 英語・日本語・中国語で読む
+## 多言語版を読む
 
-最終推敲済みの16冊に日本語版と簡体字中国語版があり、英語原版と併せて読めます。PDFは各言語の独立版、Bunkoでは対応する言語を選択して読めます。
+全16冊を英語、日本語、中国語（簡体字）、フランス語、スペイン語、ドイツ語で読めます。[書名・言語別のPDF一覧](../README.md#final-polished-translations)には、中国語（繁体字）、韓国語、ベトナム語、ロシア語、アラビア語の公開状況も掲載しています。**Available PDF** は公開済み、**In preparation** は準備中です。
 
 新しい翻訳PDFはA5の縦横を1.2倍にした177.6 × 252 mm、本文12 ptです。数式・原図を保持しています。従来の「pocket 1.2x」は文字の拡大率であり、この用紙寸法とは異なります。
 
-多言語ライブラリを拡充しています。新しい言語への翻訳、物理内容の校閲、アクセシビリティ、組版への協力を歓迎します。根拠を添えてIssueや修正案をお寄せください。他言語版は計画中で、まだ公開していません。
+物理内容、アクセシビリティ、組版について、根拠のある修正をIssueでお寄せください。
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

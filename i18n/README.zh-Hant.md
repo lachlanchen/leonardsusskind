@@ -7,13 +7,13 @@
 # Leonard Susskind 講義筆記儲存庫
 
 <!-- reading-languages:start -->
-## 用英語、日語和中文閱讀
+## 閱讀多語言版本
 
-16冊最終潤色講義已有日文版與簡體中文版，並保留英文原版。PDF是各語言獨立成書的版本；Bunko可選擇對應的語言層閱讀。
+全套 16 冊均有英語、日語、簡體中文、法語、西班牙語和德語版。[各冊 PDF 語言對照表](../README.md#final-polished-translations)也列出繁體中文、韓語、越南語、俄語和阿拉伯語版的出版進度。點選 **Available PDF** 即可閱讀；**In preparation** 表示尚未開放下載。
 
 新譯本預設使用A5長寬各放大1.2倍的紙張（177.6 × 252 mm）、12 pt正文和舒適行距，保留公式與原圖。舊版「pocket 1.2x」指字號放大，並非此紙張尺寸。
 
-我們正拓展多語言書庫，歡迎參與其他語言翻譯、科學內容校對、無障礙閱讀與排版改進。請透過Issue或附有來源依據的修訂協作。其他語言版本仍在規劃中，尚未發布。
+歡迎透過 Issue 提交有依據的科學內容校訂、無障礙改進或排版修正。
 
 [Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
 <!-- reading-languages:end -->

@@ -60,6 +60,19 @@ class CoverTableTests(unittest.TestCase):
             self.assertIn('?book=sample&amp;lang=' + lang, table)
         self.assertIn('Closing paragraph.\n\nAnother paragraph.', text)
 
+    def test_published_readmes_point_to_the_same_pdf_table(self):
+        root = catalog.ROOT / 'README.md'
+        self.assertIn('\n## Final Polished Translations\n', root.read_text())
+        self.assertEqual(len(catalog.NOTICES), 11)
+        for locale in catalog.NOTICES:
+            with self.subTest(locale=locale):
+                path = root if locale == 'en' else root.parent / 'i18n' / f'README.{locale}.md'
+                notice = catalog.language_notice(locale)
+                self.assertIn(notice, path.read_text())
+                table_path = '' if locale == 'en' else '../README.md'
+                self.assertIn(f']({table_path}#final-polished-translations)', notice)
+                self.assertIn('**In preparation**', notice)
+
     def test_every_validated_language_is_linked(self):
         self.data['books']['sample']['editions'].update({'fr': {}, 'zh-Hant': {}, 'ar': {}})
         table = self.assert_valid_cover_table(self.decorate())
