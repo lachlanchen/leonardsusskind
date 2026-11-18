@@ -154,6 +154,25 @@ reference glue may follow natural target-language word order. Math can pass
 around a complete emphasis group, but not into or out of its braces. Duplicate
 tokens, missing figures, structural movement, and changed equations still fail.
 
+Before requesting a new translation, the queue rechecks saved, unaccepted
+drafts against the current validator. For example, Korean `0이 아닌` can
+express “nonzero”, and `0이 된다` can express “vanishes”. The check matches
+these predicates one for one within corresponding sentences and TeX token
+boundaries. It does not treat a mention of zero as permission to introduce
+other quantities. Passages accepted on this basis are always included in
+semantic review before publication.
+
+Run `python scripts/polished_translation.py recheck --language ko --dry-run`
+to count recoverable drafts without making model calls or changing files.
+Repair sweeps apply the recheck automatically under the queue lock. It
+preserves the original wording and attempt counts. Unresolved drafts still
+require a source-backed repair.
+
+After a controlled stop, the queue driver accepts `--resume-from ko` to
+resume Korean and continue in the original language order. It first checks
+that both remotes match the local commit and that each skipped edition has
+a validated PDF, a committed file and a published README link.
+
 Use `repair --repairs PATH.json` for reviewed corrections. The packet records
 the book ID and per-row language, source file, segment ID, source hash, complete
 restored source, masked translation, and review reason. The tool validates the

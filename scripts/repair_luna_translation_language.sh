@@ -8,6 +8,11 @@ python="${TRANSLATION_PYTHON:-python}"
 cd "$root"
 case "$language" in fr|es|de|zh-Hant|ko|vi|ru|ar) ;; *) exit 2 ;; esac
 [[ "$round" =~ ^[1-3]$ ]] || exit 2
+[[ ! -e .translation-work/STOP ]] || exit 1
+
+# The normal worker has exited. Retry cached content under the same queue lock
+# before spending a model call; recovered passages still go to semantic review.
+"$python" scripts/polished_translation.py recheck --language "$language"
 
 export TRANSLATION_QUOTA_HELPER="${TRANSLATION_QUOTA_HELPER:-$root/scripts/translation_quota.py}"
 PYTHONPATH="$root/scripts${PYTHONPATH:+:$PYTHONPATH}" "$python" - <<'PY'
@@ -55,6 +60,12 @@ Do not weaken, suppress, bypass or fabricate quality gates, alter request budget
 invent adjudications, delete failed material, or label an unvalidated PDF available.
 Do not print credentials, inspect private sessions, change other repositories,
 force-push, or rewrite existing commits. Do not change the model or reasoning.
+
+The local recheck has already reconsidered saved drafts without using inference.
+Passages it recovered are in review_ids and must pass normal semantic review.
+For remaining numerical errors, compare the English and the saved draft in
+context, including sign, negation, magnitude, and limiting language. Do not
+spell out an unsupported quantity merely to get it through the digit check.
 
 Only one build at a time. Stop on auth/payment/quota failure; do not retry those.
 The shared workstation resource policy applies. Do not launch GUI desktops.

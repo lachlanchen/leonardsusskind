@@ -13,6 +13,36 @@ if [[ -f .translation-work/STOP ]]; then
 fi
 export TRANSLATION_QUOTA_HELPER="${TRANSLATION_QUOTA_HELPER:-$root/scripts/translation_quota.py}"
 
+if [[ $# != 0 ]]; then
+  [[ $# == 2 && $1 == --resume-from ]] || exit 2
+  case "$2" in fr|es|de|zh-Hant|ko|vi|ru|ar) ;; *) exit 2 ;; esac
+  prior=()
+  while [[ ${languages[0]} != "$2" ]]; do
+    prior+=("${languages[0]}")
+    languages=("${languages[@]:1}")
+  done
+  # A resume may skip only editions both validated locally and linked by the
+  # published commit. Do not mistake a finished private cache for a release.
+  remotes="$(git remote get-url --push --all origin)"
+  [[ -n "$remotes" ]] || exit 1
+  while IFS= read -r remote; do
+    [[ "$(git ls-remote "$remote" refs/heads/main | cut -f1)" == "$(git rev-parse HEAD)" ]] || exit 1
+  done <<< "$remotes"
+  PYTHONPATH="$root/scripts" "$python" - "${prior[@]}" <<'PY'
+import subprocess
+import sys
+import polished_translation as p
+readme = subprocess.check_output(['git', 'show', 'HEAD:README.md'], text=True)
+for lang in sys.argv[1:]:
+    for book in p.read(p.MANIFEST)['books']:
+        folder = f'translations/{book["id"]}/{lang}'
+        if not p.validated_output(book, lang) or f']({folder}/book.pdf)' not in readme:
+            raise SystemExit(f'Cannot skip unpublished edition: {folder}')
+        subprocess.run(['git', 'cat-file', '-e', f'HEAD:{folder}/book.pdf'], check=True)
+        subprocess.run(['git', 'diff', '--quiet', 'HEAD', '--', folder], check=True)
+PY
+fi
+
 for language in "${languages[@]}"; do
   printf '[%s] Starting %s\n' "$(date -Is)" "$language" | tee -a .translation-work/luna-queue.log
   for repair_round in 0 1 2 3; do

@@ -365,7 +365,35 @@ def caption_escapes(source, translated, protected):
     return moves
 
 
-def validate(source, translated, lang, protected=None):
+# Match a mathematical predicate, not just a free-standing digit in the paragraph.
+KO_NONZERO = re.compile(r'(?<![\w.+/−-])0이\s+아(?:닌|니\w*|닐|님|닙\w*)(?!\w)')
+KO_VANISH = re.compile(r'(?<![\w.+/−-])0(?:이다|입니다|인|이고|이며|이면|이므로|이어야|'
+                       r'이\s+(?:된다|됩니다|되어|되는|되면|되므로|된다면|되고|된|될))(?!\w)')
+CLAUSE_BREAK = re.compile(r'(?<!\d)[.!?;:](?!\d)\s*')
+
+
+def matched_korean_zero_predicates(source, translated):
+    if TOKEN.findall(source) != TOKEN.findall(translated):
+        return 0
+    matches = 0
+    for en_span, ko_span in zip(TOKEN.split(source), TOKEN.split(translated)):
+        en_parts, ko_parts = CLAUSE_BREAK.split(en_span), CLAUSE_BREAK.split(ko_span)
+        if len(en_parts) != len(ko_parts):
+            continue
+        for en, ko in zip(en_parts, ko_parts):
+            # Don't infer zero from a negation, approximation, or limiting process.
+            if re.search(r'\b(?:not|never|no|almost|nearly|approach\w*|limit\w*|without|'
+                         r'negligibl\w*|asymptot\w*)\b|n[\x27’]t\b', en, re.I):
+                continue
+            negative = len(KO_NONZERO.findall(ko))
+            if negative == len(re.findall(r'아니|아닌|아닐|아닙|아님', ko)) and not re.search(r'않|못', ko):
+                matches += min(len(re.findall(r'\bnonzero\b', en, re.I)), negative)
+            if not re.search(r'않|못|거의|가까|아니|아닌|아닐|아닙|아님', ko):
+                matches += min(len(re.findall(r'\bvanish(?:es|ed)?\b', en, re.I)), len(KO_VANISH.findall(ko)))
+    return matches
+
+
+def validate(source, translated, lang, protected=None, *, number_evidence=None):
     if not isinstance(translated, str) or not translated.strip():
         return 'empty translation'
     if re.search(r'[\ufffd\ud800-\udfff\x00-\x08\x0b\x0c\x0e-\x1f]', translated):
@@ -438,8 +466,13 @@ def validate(source, translated, lang, protected=None):
         candidate_numbers = Counter(str(Fraction(n)) for n in re.findall(r'\d+(?:\.\d+)?(?:/\d+)?', number_text))
     except ZeroDivisionError:
         return 'invalid numerical fraction'
-    if candidate_numbers - normalized_source:
-        return 'introduced unprotected number'
+    excess = candidate_numbers - normalized_source
+    if excess:
+        if (lang != 'ko' or set(excess) != {'0'} or normalized_source['0']
+                or matched_korean_zero_predicates(source, translated) < excess['0']):
+            return 'introduced unprotected number'
+        if number_evidence is not None:
+            number_evidence.append('source-matched Korean zero predicate')
     source_prose = TOKEN.sub('', source).strip()
     if len(source_prose) > 60:
         script = LANGUAGE_SPECS[lang].get('script')
@@ -823,7 +856,8 @@ def accept_candidates(prepared, result, rows, translations, lang, stage):
     errors = {}
     for key, source in rows.items():
         translated = translations.get(key)
-        issue = validate(source, translated, lang, prepared['protected'])
+        evidence = []
+        issue = validate(source, translated, lang, prepared['protected'], number_evidence=evidence)
         if isinstance(translated, str):
             result.setdefault('candidates', {})[key] = translated
         if issue:
@@ -833,11 +867,51 @@ def accept_candidates(prepared, result, rows, translations, lang, stage):
             if previous is not None and previous != translated:
                 result.setdefault('superseded', {}).setdefault(key, []).append(previous)
             result['accepted'][key] = translated
-            if (stage != 'writer' or result.get('attempts', {}).get(key, {}).get('writer', 0) > 1
+            if (evidence or stage != 'writer' or result.get('attempts', {}).get(key, {}).get('writer', 0) > 1
                     or TOKEN.findall(source) != TOKEN.findall(translated)):
                 result['review_ids'] = sorted(set(result.get('review_ids', []) + [key]), key=int)
             result.get('candidates', {}).pop(key, None)
     return errors
+
+
+def recheck_candidates(prepared, result, lang):
+    """Revalidate only missing translations. Never spend attempts or replace accepted text."""
+    saved = {k: v for k, v in result.get('candidates', {}).items() if k not in result['accepted']}
+    rows = {k: prepared['parts'][int(k)] for k in saved
+            if k.isdecimal() and str(int(k)) == k and int(k) < len(prepared['parts'])
+            and needs_translation(prepared['parts'][int(k)])}
+    rejected = accept_candidates(prepared, result, rows, saved, lang, 'cache-recheck')
+    for k in rows:
+        if k not in rejected:
+            result.setdefault('cache_rechecks', {})[k] = digest(result['accepted'][k])
+            result.get('last_errors', {}).pop(k, None)
+    return len(rows) - len(rejected)
+
+
+def recheck_language(lang, dry_run):
+    recovered = 0
+    for book in read(MANIFEST)['books']:
+        quality = OUT / book['id'] / lang / 'quality.json'
+        if quality.is_file() and read(quality).get('status') == 'validated':
+            continue
+        verify_sources(book)
+        for rel, sha in book['source_files'].items():
+            dest = result_path(book, lang, rel)
+            if not dest.is_file():
+                continue
+            result = read(dest)
+            if not (result.get('candidates', {}).keys() - result['accepted'].keys()):
+                continue
+            prepared = read(WORK / 'prepared' / book['id'] / (rel + '.json'))
+            if sha != prepared['source_sha256'] or sha != result['source_sha256']:
+                raise ValueError(f'Stale repair source: {book["id"]}/{rel}')
+            if result.get('inflight'):
+                continue  # Owned by the normal run/resume path.
+            n = recheck_candidates(prepared, result, lang)
+            if n and not dry_run:
+                write(dest, result)
+            recovered += n
+    return recovered
 
 
 def request_segments(book, lang, rel, prepared, result, rows, args, stage, errors, prompt=None):
@@ -858,7 +932,9 @@ def request_segments(book, lang, rel, prepared, result, rows, args, stage, error
             'inline math may move only within its existing braces or prose block. Do not repeat '
             'expressions: use pronouns when needed. Keep translated titles inside their braces. '
             'No new TeX syntax. Do not introduce Arabic digits for indefinite articles or per-unit '
-            'expressions; use natural words instead. Keep display equations and figures untouched. '
+            'expressions; use natural words instead. Do not copy digits out of formulas or add '
+            'a numeric paraphrase for an implicit quantity. Preserve affirmative and negative '
+            'predicates (such as vanishes versus nonzero). Keep display equations and figures untouched. '
             'Repair the concrete error without rewriting correct content. Return ONLY JSON '
             '{"translations": {"id": "complete corrected masked paragraph"}}.\n'
             + json.dumps({'book': book['titles']['en'], 'paragraphs': eligible,
@@ -922,6 +998,8 @@ def translate_file(book, lang, rel, args):
     p = read(WORK / 'prepared' / book['id'] / (rel + '.json'))
     result = load_results(book, lang, rel, p)
     recover_inflight(book, lang, rel, p, result)
+    if recheck_candidates(p, result, lang):
+        write(result_path(book, lang, rel), result)
     todo = [(str(i), text) for i, text in enumerate(p['parts'])
             if needs_translation(text) and str(i) not in result['accepted']]
     batches, batch, size = [], [], 0
@@ -936,7 +1014,8 @@ def translate_file(book, lang, rel, args):
     unresolved = {}
     for index, rows in enumerate(batches):
         pending = dict(rows)
-        errors = {}
+        errors = {k: validate(s, result['candidates'][k], lang, p['protected'])
+                  for k, s in pending.items() if k in result.get('candidates', {})}
         for attempt in range(2):
             eligible = {k: s for k, s in pending.items()
                         if result.get('attempts', {}).get(k, {}).get('writer', 0) < REQUEST_LIMIT}
@@ -982,6 +1061,8 @@ def translate_file(book, lang, rel, args):
                 'pronoun or restructure the sentence instead. English spelled-out numbers up to '
                 'ninety-nine and unity may use equivalent Arabic numerals. Never add explanatory quantities. '
                 'Translate a/an/per-unit expressions with natural words, not extra Arabic digits. '
+                'Do not copy digits out of frozen formulas or add numerical glosses for verbal '
+                'predicates such as vanishes or nonzero. Preserve their polarity and qualifiers. '
                 + json.dumps(payload, ensure_ascii=False))
             request_segments(book, lang, rel, p, result, eligible, args, 'writer', errors, prompt)
             pending = {k: s for k, s in pending.items() if k not in result['accepted']}
@@ -1805,7 +1886,7 @@ def run_with_transport_recovery(args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['prepare', 'run', 'status', 'compile', 'approve-pilot', 'readme', 'repair', 'review'])
+    parser.add_argument('command', choices=['prepare', 'run', 'status', 'compile', 'approve-pilot', 'readme', 'repair', 'review', 'recheck'])
     parser.add_argument('--workers', type=int, default=5)
     parser.add_argument('--ramp-seconds', type=float, default=1)
     parser.add_argument('--provider', choices=['deepseek', 'codex'], default='deepseek')
@@ -1823,6 +1904,7 @@ def main():
     parser.add_argument('--language', choices=list(LANGS))
     parser.add_argument('--evidence', help='Human review note; required for approving the pilot')
     parser.add_argument('--repairs', type=Path, help='Source-bound reviewed repair JSON')
+    parser.add_argument('--dry-run', action='store_true', help='Preview a cache recheck without writes or model calls')
     args = parser.parse_args()
     if not 1 <= args.workers <= 5:
         parser.error('Use 1 to 5 workers')
@@ -1833,7 +1915,10 @@ def main():
     if args.batch_chars < 1000:
         parser.error('Batch size must be at least 1000 characters')
     with ExitStack() as stack:
-        if args.command in {'prepare', 'compile', 'approve-pilot', 'repair', 'review'}:
+        if args.dry_run and args.command != 'recheck':
+            parser.error('--dry-run is only supported with recheck')
+        if args.command in {'prepare', 'compile', 'approve-pilot', 'repair', 'review'} or (
+                args.command == 'recheck' and not args.dry_run):
             WORK.mkdir(parents=True, exist_ok=True)
             lock = stack.enter_context((WORK / 'queue.lock').open('w'))
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -1849,6 +1934,11 @@ def main():
             if not args.repairs:
                 parser.error('--repairs is required')
             apply_reviewed_repairs(args.repairs)
+        elif args.command == 'recheck':
+            if not args.language or args.book:
+                parser.error('recheck requires --language and operates on the entire language')
+            print(json.dumps({'language': args.language, 'dry_run': args.dry_run,
+                              'recoverable' if args.dry_run else 'recovered': recheck_language(args.language, args.dry_run)}))
         elif args.command == 'review':
             book = next(b for b in read(MANIFEST)['books'] if b['id'] == args.book)
             verify_sources(book)

@@ -542,6 +542,75 @@ class TranslationTests(unittest.TestCase):
             self.assertEqual(result['accepted'], {'0': '年という時間。', '2': '単純な文。'})
             self.assertIn('0', result['review_ids'])
 
+    def test_korean_zero_predicates_are_local_counted_and_polarity_sensitive(self):
+        for source, candidate in [
+                ('The field vanishes.', '장이 0이 된다.'),
+                ('There is a nonzero field.', '0이 아닌 장이 있다.')]:
+            evidence = []
+            self.assertIsNone(p.validate(source, candidate, 'ko', [], number_evidence=evidence))
+            self.assertTrue(evidence)
+        for source, candidate in [
+                ('The field vanishes.', '장이 0이 아니다.'),
+                ('The field never vanishes.', '장이 0이 된다.'),
+                ('The field nearly vanishes.', '장이 0이 된다.'),
+                ('The field vanishes.', '장이 0이고 힘도 0이다.'),
+                ('The field is nonzero.', '장이 0이다.'),
+                ('It is nonzero.', '값이 0이 아닌 것은 아니다.'),
+                ('The field vanishes.', '장이 0.1이 된다.'),
+                ('The field vanishes.', '장이 -0이 된다.'),
+                ('The field vanishes.', '장이 0이 되고 힘은 7이다.'),
+                ('It vanishes. Another observation.', '장이 사라진다. 힘은 0이다.'),
+                ('It is nonzero@@T000000@@here.', '여기에@@T000000@@0이 아닌 값이 있다.'),
+                ('It is so.', '장이 0이다.')]:
+            with self.subTest(candidate=candidate, source=source):
+                self.assertEqual(p.validate(source, candidate, 'ko', ['$x$']), 'introduced unprotected number')
+        self.assertIsNotNone(p.validate('The field vanishes.', '장이 0이 된다.', 'ja'))
+
+    def test_korean_numeric_recovery_never_spends_or_replaces_accepted_text(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
+            book = {'id': 'fixture', 'titles': {'en': 'Physics'}}
+            rel = 'chapter.tex'
+            prepared = {'source_sha256': 'test', 'parts': ['First passage.', 'A nonzero factor.'], 'protected': []}
+            p.write(p.WORK / 'prepared/fixture' / (rel + '.json'), prepared)
+            attempts = {'1': {'writer': 2, 'repair': 2}}
+            dest = p.result_path(book, 'ko', rel)
+            p.write(dest, {'source_sha256': 'test', 'accepted': {'0': '첫 문단.'}, 'attempts': attempts,
+                           'candidates': {'0': '교체하지 말 것.', '1': '0이 아닌 인자.'}})
+            with patch.object(p, 'chat') as chat:
+                for _ in range(2):
+                    p.translate_file(book, 'ko', rel, SimpleNamespace())
+                chat.assert_not_called()
+            r = p.read(dest)
+            self.assertEqual(r['attempts'], attempts)
+            self.assertEqual(r['review_ids'], ['1'])
+            self.assertEqual(r['accepted'], {'0': '첫 문단.', '1': '0이 아닌 인자.'})
+            self.assertEqual(r['cache_rechecks'], {'1': p.digest(r['accepted']['1'])})
+            fresh = {'accepted': {}}
+            p.accept_candidates(prepared, fresh, {'1': prepared['parts'][1]}, {'1': r['accepted']['1']}, 'ko', 'writer')
+            self.assertEqual(fresh['review_ids'], ['1'])
+
+    def test_language_recheck_refuses_stale_source_and_dry_run_never_writes(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with patch.object(p, 'WORK', root), patch.object(p, 'OUT', root/'out'), \
+                    patch.object(p, 'MANIFEST', root/'manifest'), patch.object(p, 'verify_sources') as verify:
+                book = {'id': 'demo', 'source_files': {'file.tex': 'hash'}}
+                p.write(p.MANIFEST, {'books': [book]})
+                src = root/'prepared/demo/file.tex.json'
+                p.write(src, {'source_sha256': 'hash', 'parts': ['A nonzero factor.'], 'protected': []})
+                dest = p.result_path(book, 'ko', 'file.tex')
+                original = {'source_sha256': 'hash', 'accepted': {}, 'candidates': {'0': '0이 아닌 인자.'}}
+                p.write(dest, original)
+                self.assertEqual(p.recheck_language('ko', True), 1)
+                self.assertEqual(p.read(dest), original)
+                verify.assert_called_once_with(book)
+                p.write(dest, {**original, 'source_sha256': 'other'})
+                with self.assertRaisesRegex(ValueError, 'Stale repair source'):
+                    p.recheck_language('ko', False)
+                p.write(dest, original)
+                self.assertEqual(p.recheck_language('ko', False), 1)
+                self.assertEqual(p.recheck_language('ko', False), 0)
+
     def test_persistent_budget_prevents_resume_retry_amplification(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
             book = {'id': 'fixture', 'titles': {'en': 'Physics', 'ja': '物理'}}

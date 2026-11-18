@@ -47,6 +47,10 @@ elif args[0] == 'ls-remote':
     print(('stale' if os.environ.get('MISMATCH') else 'abc123') + '\\trefs/heads/main')
 elif args[0] == 'rev-parse':
     print('abc123')
+elif args[0] == 'show':
+    print(' '.join(f'](translations/demo/{lang}/book.pdf)' for lang in ('fr', 'es', 'de', 'zh-Hant')))
+elif args[0] in {'cat-file', 'diff'}:
+    pass
 elif args[0] != 'status':
     raise SystemExit('Unexpected git call: ' + str(args))
 ''')
@@ -56,10 +60,10 @@ elif args[0] != 'status':
         path.write_text('#!' + sys.executable + '\n' + code)
         path.chmod(0o700)
 
-    def run_queue(self, **overrides):
+    def run_queue(self, *args, **overrides):
         env = {**os.environ, 'PATH': str(self.bin) + os.pathsep + os.environ['PATH'],
                'TRANSLATION_PYTHON': str(self.bin / 'python'), **overrides}
-        return subprocess.run(['bash', 'scripts/run_luna_translation_languages.sh'],
+        return subprocess.run(['bash', 'scripts/run_luna_translation_languages.sh', *args],
                               cwd=self.root, env=env, capture_output=True, text=True, timeout=30)
 
     def test_all_languages_finish_in_order(self):
@@ -67,6 +71,27 @@ elif args[0] != 'status':
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual((self.root / '.translation-work/runs.log').read_text().splitlines(),
                          ['fr', 'es', 'de', 'zh-Hant', 'ko', 'vi', 'ru', 'ar'])
+
+    def test_resume_refuses_unknown_language_or_stale_remote(self):
+        self.assertEqual(self.run_queue('--resume-from', 'de ko').returncode, 2)
+        self.assertNotEqual(self.run_queue('--resume-from', 'ko', MISMATCH='1').returncode, 0)
+        self.assertFalse((self.root / '.translation-work/runs.log').exists())
+
+    def test_resume_refuses_unpublished_prior_editions(self):
+        (self.root/'scripts/polished_translation.py').write_text(
+            "MANIFEST = None\ndef read(_): return {'books': [{'id': 'demo'}]}\n"
+            "def validated_output(book, lang): return False\n")
+        result = self.run_queue('--resume-from', 'ko')
+        self.assertIn('Cannot skip unpublished edition', result.stderr)
+        self.assertFalse((self.root / '.translation-work/runs.log').exists())
+
+    def test_resume_keeps_subsequent_languages_in_order(self):
+        (self.root/'scripts/polished_translation.py').write_text(
+            "MANIFEST = None\ndef read(_): return {'books': [{'id': 'demo'}]}\n"
+            "def validated_output(book, lang): return True\n")
+        result = self.run_queue('--resume-from', 'ko')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual((self.root / '.translation-work/runs.log').read_text().splitlines(), ['ko', 'vi', 'ru', 'ar'])
 
     def test_blocked_language_gets_repaired_before_the_next_language(self):
         result = self.run_queue(SCENARIO='once')
