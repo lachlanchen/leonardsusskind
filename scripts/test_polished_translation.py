@@ -626,6 +626,14 @@ class TranslationTests(unittest.TestCase):
                 sleep.assert_not_called()
             self.assertEqual(p.read(p.WORK / 'status.json')['state'], 'paused')
 
+    def test_transport_budget_resets_only_after_measurable_progress(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)), \
+             patch.object(p, 'transport_progress', side_effect=[(0, 0), (1, 0), (2, 0), (2, 0), (2, 0)]), \
+             patch.object(p, 'run', side_effect=p.ProviderUnavailable('APIConnectionError')) as run:
+            with self.assertRaises(p.ProviderUnavailable):
+                p.run_with_transport_recovery(SimpleNamespace(transport_resumes=2, transport_retry_seconds=0))
+            self.assertEqual(run.call_count, 4)
+
     def test_publication_pushes_and_verifies_each_remote_with_retry(self):
         attempts = {}
 

@@ -18,16 +18,19 @@ WORK = Path(__file__).resolve().parents[1] / '.translation-work'
 def quota_error(message):
     message = str(message)[:1000]
     if not re.search(r'\b(?:401|402|403)\b|unauthor|authenticat|insufficient|quota.*(?:exceed|exhaust|deplet)|usage.limit.*(?:reach|exceed)', message, re.I):
-        if re.search(r'\b(?:408|425|429|5\d\d)\b|timed? out|temporar|connect|network|TLS|DNS|unavailable', message, re.I):
+        if re.search(r'\b(?:408|425|429|5\d\d)\b|timed? out|temporar|connect|network|TLS|DNS|unavailable|error sending request', message, re.I):
             return 'APIConnectionError: quota telemetry transport: ' + message
     return 'Quota telemetry rejected: ' + message
 
 
 def read_limits(timeout=20):
-    process = subprocess.Popen([os.environ.get('TRANSLATION_CODEX_BIN', 'codex'),
-                                'app-server', '--disable', 'hooks', '--stdio'],
-                               stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-                               stderr=subprocess.DEVNULL, text=True, bufsize=1)
+    try:
+        process = subprocess.Popen([os.environ.get('TRANSLATION_CODEX_BIN', 'codex'),
+                                    'app-server', '--disable', 'hooks', '--stdio'],
+                                   stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                   stderr=subprocess.DEVNULL, text=True, bufsize=1)
+    except FileNotFoundError as exc:
+        raise RuntimeError('APIConnectionError: quota app-server launcher unavailable') from exc
     messages = queue.Queue()
 
     def receive():

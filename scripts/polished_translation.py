@@ -1681,20 +1681,40 @@ def run(args):
               ('pilot_ready' if args.pilot_only else 'complete')), 'blocked_books': blocked, 'updated_at': time.time()})
 
 
+def transport_progress(args):
+    languages = [args.language] if getattr(args, 'language', None) else BASE_LANGS
+    accepted = validated = 0
+    for lang in languages:
+        accepted += sum(len(read(path).get('accepted', {}))
+                        for path in (WORK / 'results').glob(f'*/{lang}/**/*.json'))
+        validated += sum(read(path).get('status') == 'validated'
+                         for path in OUT.glob(f'*/{lang}/quality.json'))
+    return accepted, validated
+
+
 def run_with_transport_recovery(args):
-    for attempt in range(args.transport_resumes + 1):
+    attempt = 0
+    progress = transport_progress(args)
+    while True:
         try:
             return run(args)
         except ProviderUnavailable as exc:
             state = read(WORK / 'status.json') if (WORK / 'status.json').exists() else {}
             write(WORK / 'status.json', {**state, 'state': 'provider_blocked', 'error': str(exc)})
             retryable = re.search(r'status=(?:408|409|425|429|5\d\d)\b|API(?:Connection|Timeout)Error', str(exc))
-            if not retryable or attempt == args.transport_resumes:
+            if not retryable:
+                raise
+            current = transport_progress(args)
+            if current > progress:
+                attempt = 0
+                progress = current
+            if attempt >= args.transport_resumes:
                 raise
             remaining = args.transport_retry_seconds * 2 ** attempt
+            attempt += 1
             state = read(WORK / 'status.json')
             write(WORK / 'status.json', {**state, 'state': 'waiting_for_provider',
-                  'retry_at': time.time() + remaining, 'resume_attempt': attempt + 1})
+                  'retry_at': time.time() + remaining, 'resume_attempt': attempt})
             while remaining > 0:
                 if (WORK / 'STOP').exists():
                     write(WORK / 'status.json', {**state, 'state': 'paused'})

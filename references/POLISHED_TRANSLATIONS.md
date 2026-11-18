@@ -122,6 +122,10 @@ queue twice after five- and ten-minute cooldowns. No calls run during the wait;
 STOP is checked every five seconds. Authentication/payment failures stop for
 owner attention, never automatic charging or endless credit checks. Override
 with `--transport-resumes` and `--transport-retry-seconds`.
+Separate transport incidents receive a fresh bounded allowance only after the
+queue accepts new segments or validates another PDF. Repeated failures with no
+measurable progress still exhaust the allowance and stop. Quota/authentication
+failures cannot use this progress-based reset.
 
 ## Validation Repairs
 

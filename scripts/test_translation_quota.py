@@ -26,6 +26,12 @@ class TranslationQuotaTests(unittest.TestCase):
 
     def test_explicit_server_failure_is_transport_not_quota(self):
         self.assertTrue(q.quota_error('quota endpoint returned HTTP 502').startswith('APIConnectionError:'))
+        self.assertTrue(q.quota_error('failed to fetch codex rate limits: error sending request for url').startswith('APIConnectionError:'))
+
+    def test_missing_launcher_is_a_transport_failure(self):
+        with patch.object(q.subprocess, 'Popen', side_effect=FileNotFoundError):
+            with self.assertRaisesRegex(RuntimeError, 'APIConnectionError: quota app-server launcher'):
+                q.read_limits()
 
     def test_auth_and_exhaustion_cannot_enter_transport_retries(self):
         for message in ('HTTP 403 connection refused', 'quota exhausted HTTP 429', 'authentication failed'):
