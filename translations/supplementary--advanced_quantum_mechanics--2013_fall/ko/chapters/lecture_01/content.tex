@@ -1,0 +1,501 @@
+\chapter{상태 벡터, 유니터리 시간발전, 그리고 병진 대칭}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+
+두 분기 동안 공백이 있었으므로 양자역학을 빠르게 복습해 두면 좋다. 다만 복습이 한 분기 전체를 차지할 수는 없다. 이제 다룰 내용은 양자역학이 애초에 개발된 문제들, 즉 원자와 전자 및 관련 입자, 광자에 양자역학을 적용하는 것이다.
+
+먼저 원자를 다룬다. 전자가 원자의 구성 요소인데 어떻게 원자를 전자보다 먼저 다룰 수 있을까? 처음에는 수소 원자의 기본 방정식을 세우는 데 필요한 만큼만 전자 역학을 다루면 된다. 전자와 비슷한 입자에 대한 더 자세한 연구는 그 뒤에 할 수 있다. 이 응용 전반에서 대칭성은 반복해서 쓰이는 도구다. 양자역학에서 대칭성이 어떻게 표현되는지, 또 대칭성이 계에 대해 무엇을 함의하는지를 살펴본다.
+
+\section{상태, 관측 가능량, 직교성}
+
+고전역학에서 상태는 위상 공간의 한 점으로 나타낸다. 양자역학에서는 복소 벡터 공간의 벡터로 나타낸다. 이것은 추상적인 벡터이지, 보통의 3차원 공간에 있는 화살표가 아니다. 상태 벡터는 서로 더하거나 복소수를 곱할 수 있으며, 상태 벡터가 속한 공간의 차원은 특정한 유한값일 필요가 없다.
+
+디랙 표기법에서는 상태 벡터를 켓으로 쓰고,
+\begin{equation}
+\ket{\psi},
+\end{equation}
+이에 대응하는 브라를 정의한다.
+\begin{equation}
+\bra{\psi}.
+\end{equation}
+브라와 켓은 에르미트 켤레 관계에 있다. 브라와 켓을 결합하면 내적을 얻는다.
+\begin{equation}
+\langle\phi|\psi\rangle,
+\end{equation}
+내적은 일반적으로 복소수다.
+
+관측 가능량은 측정할 수 있는 양이다. 위치, 운동량, 에너지 또는 그 밖의 측정 가능한 물리량이 이에 해당한다. 양자역학에서 관측 가능량은 선형 에르미트 연산자 \(A\)로 나타낸다.
+\begin{equation}
+A^\dagger=A.
+\end{equation}
+에르미트성은 연산자에서 실수성에 해당한다. 특히 에르미트 연산자의 고윳값은 실수다.
+
+\(A\)의 고유벡터는 다음을 만족한다.
+\begin{equation}
+A\ket{\alpha}=\alpha\ket{\alpha}.
+\end{equation}
+가능한 고윳값은 \(A\)을 측정했을 때 얻을 수 있는 결과다. 예를 들어 관측 가능량의 측정값이 \(1\), \(3\) 또는 \(7\)뿐이라면, 이 수들이 그 관측 가능량의 고윳값이다. 고유벡터는 측정 결과가 통계적 분포가 아니라 확정적으로 정해지는 상태다. \(\ket{\alpha}\) 상태에서는 \(A\)을 측정하면 반드시 \(\alpha\)를 얻는다.
+
+내적은 상태들 사이의 중요한 논리적 관계를 나타낸다. \(\ket{\phi}\)와 \(\ket{\psi}\)를 확실하게 구별하는 측정이 있다고 하자. 그러면 두 상태는 직교한다.
+\begin{equation}
+\langle\phi|\psi\rangle=0.
+\end{equation}
+직교성은 두 상태를 물리적으로 모호함 없이 구별할 수 있음을 뜻한다. 정규화된 상태라면
+\begin{equation}
+\langle\psi|\psi\rangle=1.
+\end{equation}
+
+\section{위치 표현에서의 입자}
+
+먼저 직선 위를 움직이는 입자를 생각하자. 위치 \(x\)는 관측 가능량이다. 가능한 각 위치 \(x_0\)마다, 위치를 측정하면 반드시 \(x_0\)가 나오는 상태 \(\ket{x_0}\)가 있다.
+
+서로 다른 위치에 대응하는 상태들은 구별할 수 있으므로 직교한다.
+\begin{equation}
+x\neq x'
+\quad\Longrightarrow\quad
+\langle x'|x\rangle=0.
+\end{equation}
+임의의 상태 \(\ket{\psi}\)와 위치 상태의 겹침으로 파동함수를 정의한다.
+\begin{equation}
+\psi(x)=\langle x|\psi\rangle.
+\end{equation}
+이것이 상태 벡터의 위치 표현이다.
+
+파동함수 자체는 확률이 아니다. 파동함수는 양수, 음수, 허수 또는 완전한 복소수일 수 있다. 위치 확률 밀도는 다음과 같다.
+\begin{equation}
+P(x)=\psi^*(x)\psi(x)=|\psi(x)|^2.
+\end{equation}
+확률 밀도여야 하므로 이 곱은 음이 아닌 값이다. 정규화된 파동함수라면
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,|\psi(x)|^2=1.
+\end{equation}
+
+위치 표현에서 위치 연산자는 곱셈으로 작용한다.
+\begin{equation}
+(\hat x\psi)(x)=x\psi(x).
+\end{equation}
+그 고유함수는 한 점에 집중된 이상화된 함수다. 형식적으로 디랙 델타 함수, 즉 위치 고윳값을 중심으로 한 매우 좁은 뾰족한 함수로 표현한다. 이번 복습에서는 그 분포로서의 정확한 정의까지 다룰 필요는 없다.
+
+3차원에서는 위치가 \(x\), \(y\), \(z\)의 세 성분을 가지며, 위치 상태는 3차원 공간의 한 점을 나타낸다. 두 점의 좌표 가운데 하나라도 다르면 그 점들에 해당하는 두 상태는 직교한다. 여기서는 보통 1차원 표기법을 사용하되, 이에 대응하는 3차원 확장을 이해하고 있다고 하자.
+
+\section{운동량과 운동량이 확정된 상태}
+
+위치의 각 성분에는 그에 대응하는 운동량 성분이 있다. 위치 표현에서 \(x\)축 방향의 운동량 연산자는 다음과 같다.
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+따라서 추상적인 에르미트 연산자를 파동함수에 작용하는 구체적인 연산으로도 볼 수 있다.
+
+운동량이 \(p_0\)로 확정된 상태는 다음 고윳값 방정식을 만족한다.
+\begin{equation}
+\hat p_x\psi_{p_0}(x)=p_0\psi_{p_0}(x).
+\end{equation}
+\(\hat p_x\)의 미분형을 대입하면 다음을 얻는다.
+\begin{equation}
+-i\hbar\frac{d\psi_{p_0}(x)}{dx}
+=p_0\psi_{p_0}(x).
+\end{equation}
+파동함수의 미분이 파동함수 자체에 비례하므로 해는 지수 함수 형태다.
+\begin{equation}
+\psi_{p_0}(x)\propto
+\exp\left(\frac{ip_0x}{\hbar}\right).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:24:26}
+\audiencequestion{이 미분 방정식은 어떤 파동함수에 대해서나 성립하나요?}
+\lecturerresponse{아니요. 이 식은 운동량이 확정된 상태의 고윳값 방정식입니다. 대부분의 파동함수는 이 식을 만족하지 않으며, 이 방정식은 운동량 고유함수만 골라냅니다.}
+\end{classroomqa}
+
+위치 고유상태와 운동량 고유상태의 차이는 뚜렷하다. 위치 고유함수는 한 점에 집중된다. 운동량 고유함수는 다음 성질을 갖는다.
+\begin{equation}
+\left|\exp\left(\frac{ip_0x}{\hbar}\right)\right|^2=1.
+\end{equation}
+따라서 그 절댓값은 직선 전체에서 일정하다. 이 이상화된 의미에서 운동량이 확정되면 위치는 완전히 불확정하며, 위치가 확정되면 운동량도 완전히 불확정하다. 이것은 위치--운동량 불확정성 관계가 극단적으로 나타나는 경우다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:26:36}
+\audiencequestion{운동량이 \(p_0\)로 알려져 있다면, 왜 여전히 확률 분포가 있나요?}
+\lecturerresponse{여기에 제시된 양은 운동량을 다시 측정한 결과가 아니라 위치를 측정한 결과에 관한 것입니다. 위치와 운동량은 서로 다른 관측 가능량입니다. 이상화된 운동량 고유상태에서 위치 진폭의 절댓값은 직선 전체에서 일정합니다. 운동량 진폭은 운동량 표현에 속하며, 푸리에 변환으로 위치 파동함수와 연결됩니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:02}
+\audiencequestion{파동함수가 디랙 델타 함수일 때 위치 확률은 어떤 모양인가요?}
+\lecturerresponse{지정된 위치에 집중되어 있습니다. 이상화된 뾰족한 함수는 위치가 확정되어 있음을 나타냅니다.}
+\end{classroomqa}
+
+\editorialnote{정확한 위치 고유상태와 운동량 고유상태는 일반화된 상태다. 디랙 델타 함수와 평면파는 직선 전체에서 제곱 적분 가능하고 정규화된 보통의 파동함수가 아니며, 델타 함수의 제곱은 보통의 분포가 아니다. 앞서 한 설명은 이 상태들의 이상화된 국소화와 일정한 절댓값에 관한 것이다.}
+
+파동함수는 형식적으로 \(x\)의 각 값에 하나씩 대응하는 성분을 가진 벡터로 볼 수 있다. 하지만 보통의 유한 차원 열벡터와 달리 성분이 연속적으로 무한히 많다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:53}
+\audiencequestion{상태 벡터는 열벡터로 나타내나요?}
+\lecturerresponse{그렇게 나타낼 수는 있지만, 위치 파동함수는 \(x\)가 연속적으로 무한히 많은 값을 취하므로 보통의 열벡터로 쓰기에는 불편합니다. 형식적으로는 연속 열벡터로 볼 수 있으며, 이에 대응하는 브라는 연속 행벡터로 볼 수 있습니다.}
+\end{classroomqa}
+
+\section{시간발전과 유니터리성}
+
+상태는 시간에 따라 어떻게 변할까? 시간발전은 상태 공간에 작용하는 변환이다. 경과 시간 \(t\) 동안의 시간발전을 \(U(t)\)로 나타내자. 그러면
+\begin{equation}
+U(t)\ket{\psi(t_1)}=\ket{\psi(t_1+t)}.
+\end{equation}
+특히
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)},
+\qquad
+U(0)=\mathbf 1.
+\end{equation}
+
+\(U(t)\)에 대한 조건은 정보 보존에서 나온다. 두 초기 상태를 구별할 수 있다면 시간발전이 그 구별을 없애서는 안 된다. 직교 상태는 시간발전 후에도 직교 상태로 남아야 한다. 더 일반적으로 임의의 두 상태 사이의 내적이 보존되어야 한다.
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|\psi\rangle.
+\end{equation}
+그리고
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|U^\dagger(t)U(t)|\psi\rangle,
+\end{equation}
+모든 내적이 보존되려면 다음 조건이 필요하다.
+\begin{equation}
+U^\dagger(t)U(t)=\mathbf 1.
+\end{equation}
+이 조건을 만족하는 연산자를 유니터리 연산자라고 한다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:36}
+\audiencequestion{모든 내적의 보존은 직교성만 보존하는 것보다 더 강한 조건인가요?}
+\lecturerresponse{여기서 다루는 선형 상태 변환에서는 직교성의 보존으로부터 내적의 보존이 따라옵니다. 익숙한 예인 보통의 회전도 직교성과 내적을 보존합니다.}
+\end{classroomqa}
+
+\editorialnote{엄밀히 말하면, 직교성의 보존만으로는 전체적으로 영이 아닌 배율을 곱하는 자유도가 허용된다. 물리적 시간 진화에 이미 요구되는 정규화의 보존은 이 자유도를 없애며, 내적의 보존을 보장한다.}
+
+유니터리 연산자와 에르미트 관측 가능량은 혼동하지 않아야 한다. 위치와 운동량은 에르미트이지만 일반적으로 유니터리는 아니다. 유니터리 연산자의 고윳값은 단위원 위에 놓이는 \(e^{i\theta}\) 꼴의 위상이다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:12}
+\audiencequestion{유니터리가 아닌 변환의 예로는 무엇이 있나요?}
+\lecturerresponse{위치 연산자와 운동량 연산자가 그 예입니다. 이들은 에르미트 관측 가능량이지만 유니터리는 아닙니다. 유니터리 연산자의 고윳값은 크기가 1인 위상이므로, 그 고윳값은 위상입니다.}
+\end{classroomqa}
+
+\section{해밀토니안과 Schr\"odinger 방정식}
+
+시간발전은 연속적이라고 가정한다. 따라서 매우 짧은 시간 간격 \(\epsilon\) 동안의 시간발전 연산자는 항등 연산자에 가까워야 한다.
+\begin{equation}
+U(\epsilon)=\mathbf 1+\epsilon G+\mathcal O(\epsilon^2).
+\end{equation}
+유니터리성을 사용하면
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(\mathbf 1+\epsilon G^\dagger\right)
+\left(\mathbf 1+\epsilon G\right)
++\mathcal O(\epsilon^2)
+\\
+&=
+\mathbf 1+\epsilon(G^\dagger+G)
++\mathcal O(\epsilon^2).
+\end{align}
+1차까지 고려하면
+\begin{equation}
+G^\dagger=-G.
+\end{equation}
+따라서 \(G\)는 반에르미트 연산자다. 이를 다음과 같이 쓸 수 있다.
+\begin{equation}
+G=-\frac{i}{\hbar}H,
+\end{equation}
+여기서 \(H\)는 에르미트 연산자다.
+\begin{equation}
+H^\dagger=H.
+\end{equation}
+따라서 무한소 시간발전 연산자는 다음과 같다.
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+에르미트 연산자 \(H\)가 해밀토니안이다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:48}
+\audiencequestion{\(\epsilon^2\) 항을 무시할 수 있는 근거는 무엇인가요?}
+\lecturerresponse{계산은 \(\epsilon\)의 1차까지 일관되게 수행하고 있습니다. 2차 계산을 하려면 \(-\epsilon^2H^2/(2\hbar^2)\)에 비례하는 항을 포함해 모든 2차 항을 고려해야 합니다. 근사는 \(U(\epsilon)\)을 절단한 식에 있는 것이지, \(H\)의 에르미트성에 있는 것이 아닙니다.}
+\end{classroomqa}
+
+짧은 시간 간격을 여러 번 거치면 유한한 시간 간격의 시간발전을 구성할 수 있다. \(t\)를 길이가 \(t/N\)인 \(N\)개의 단계로 나누자. 무한소 변환을 반복하면 다음을 얻는다.
+\begin{equation}
+U(t)
+=
+\lim_{N\to\infty}
+\left(
+\mathbf 1-\frac{itH}{N\hbar}
+\right)^N
+=
+\exp\left(-\frac{iHt}{\hbar}\right).
+\end{equation}
+지수 함수는 무한소 변환을 유한한 시간으로 확장한 것이다.
+
+이제 상태를 \(t\)에서 \(t+\epsilon\)까지 시간발전시키자.
+\begin{align}
+\ket{\psi(t+\epsilon)}
+&=
+U(\epsilon)\ket{\psi(t)}
+\\
+&=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)\ket{\psi(t)}
++\mathcal O(\epsilon^2).
+\end{align}
+\(\ket{\psi(t)}\)를 빼고 \(\epsilon\)로 나눈 뒤 극한을 취하면 다음을 얻는다.
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+동등하게
+\begin{equation}
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=
+H\ket{\psi(t)}.
+\end{equation}
+이것이 시간 의존 Schr\"odinger 방정식이다. 위치 표현에서는 다음과 같다.
+\begin{equation}
+i\hbar\frac{\partial}{\partial t}\psi(x,t)
+=
+H\psi(x,t),
+\end{equation}
+여기서 \(H\)는 파동함수에 작용하는 연산자다.
+
+시간 독립 Schr\"odinger 방정식은 해밀토니안의 고윳값 방정식이다.
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+고윳값 \(E\)는 측정 가능한 에너지, 즉 에너지 준위다. 따라서 같은 해밀토니안이 허용되는 에너지와 상태의 시간발전을 모두 결정한다.
+
+초기 상태가 에너지 고유상태라면 그 시간발전은 다음과 같다.
+\begin{equation}
+\ket{E;t}
+=
+\exp\left(-\frac{iEt}{\hbar}\right)\ket{E}.
+\end{equation}
+에너지 고유벡터는 그대로 유지되고 위상만 얻는다.\footnote{마이너스 부호는 앞서 \(U(t)=\exp(-iHt/\hbar)\)를 유도한 결과로 정해진다. 뒤에 위상을 말로 설명하는 대목에서는 부호가 반대로 되어 있으며, 앞선 유도와 일치하지 않는다.}
+
+\begin{classroomqa}
+\lecturetimestamp{01:01:05}
+\audiencequestion{에너지 고유벡터는 시간 의존 Schr\"odinger 방정식에 따라 어떻게 시간발전하나요?}
+\lecturerresponse{켓을 그대로 두세요. \(H\ket{E}=E\ket{E}\)이므로 시간발전은 에너지 고유벡터에 에너지로 정해지는 위상 \(\exp(-iEt/\hbar)\)를 곱합니다.}
+\end{classroomqa}
+
+\section{대칭성이란 무엇인가?}
+
+시간발전은 상태 공간에서 일어나는 하나의 유니터리 변환이다. 대칭 변환도 중요한 변환의 한 종류다.
+
+회전 대칭성은 원자 물리학의 핵심이다. 수소 원자에서 전자는 중심 쿨롱 퍼텐셜 안에서 움직인다. 좌표계를 회전해도 방정식은 바뀌지 않으며, 원자를 물리적으로 회전시켜도 같은 방정식으로 기술되는 수소 원자가 남는다. 회전에 따라 상태는 바뀔 수 있지만 운동 법칙은 바뀌지 않는다.
+
+병진도 또 다른 예다. 외부와 고립된 계는 계의 모든 부분을 같은 양만큼 이동한 뒤에도 똑같이 거동해야 한다. 단, 이 조건에는 단서가 있다. 용광로가 있는데 계만 용광로 쪽으로 더 가까이 옮기면 계의 거동이 달라질 수 있다. 용광로가 병진 대칭성을 깨기 때문이다. 계와 용광로를 함께 병진시키면 둘 사이의 원래 관계가 복원된다.
+
+모든 연산이 대칭인 것은 아니다. 암염 결정을 절반 크기로 압축하면 대개 그 거동이 달라진다. 압축은 잘 정의된 변환이지만, 일반적으로 대칭은 아니다.
+
+따라서 대칭성은 동역학의 형식을 보존하는 상태 변환이다. 이를 \(V\)로 나타내자. 대칭 변환은 구별 가능성도 보존해야 한다. 두 직교 상태는 변환한 뒤에도 직교 상태로 남아야 한다. 이에 따라
+\begin{equation}
+V^\dagger V=\mathbf 1,
+\end{equation}
+가 성립하므로 \(V\)는 유니터리다.
+
+\section{대칭 변환과 시간발전의 교환}
+
+초기 상태 \(\ket{\psi_1}\)가 시간발전을 거쳐 \(\ket{\psi_2}\)가 된다고 하자.
+\begin{equation}
+\ket{\psi_2}=U(t)\ket{\psi_1}.
+\end{equation}
+제안된 대칭 변환 \(V\)을 두 상태에 적용하면
+\begin{equation}
+\ket{\psi_1'}=V\ket{\psi_1},
+\qquad
+\ket{\psi_2'}=V\ket{\psi_2}.
+\end{equation}
+\(V\)가 동역학의 대칭이라면, 변환된 초기 상태는 시간발전 후 변환된 최종 상태가 되어야 한다.
+\begin{equation}
+\ket{\psi_2'}=U(t)\ket{\psi_1'}.
+\end{equation}
+정의를 대입하면
+\begin{equation}
+VU(t)\ket{\psi_1}
+=
+U(t)V\ket{\psi_1}.
+\end{equation}
+이 관계는 모든 초기 상태에 대해 성립해야 한다. 따라서
+\begin{equation}
+VU(t)=U(t)V.
+\end{equation}
+
+두 가지 동등한 경로는 가환도식으로 나타낼 수 있다.\footnote{이 도식은 01:10:30와 01:16:34 사이에서 전개한 두 경로 논증을 재구성한다.}
+\begin{figure}\centering
+\begin{tikzpicture}[>=Stealth]
+\node (a) at (0,0) {$\ket{\psi_1}$};
+\node (b) at (4.2,0) {$\ket{\psi_2}=U(t)\ket{\psi_1}$};
+\node (c) at (0,-2.0) {$V\ket{\psi_1}$};
+\node (d) at (4.2,-2.0) {$V\ket{\psi_2}=U(t)V\ket{\psi_1}$};
+
+\draw[->] (a) -- node[above] {$U(t)$} (b);
+\draw[->] (c) -- node[below] {$U(t)$} (d);
+\draw[->] (a) -- node[left] {$V$} (c);
+\draw[->] (b) -- node[right] {$V$} (d);
+\end{tikzpicture}\caption{대칭 연산과 시간 진화는 어느 순서로 적용해도 같은 최종 상태를 준다.}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:38}
+\audiencequestion{대칭 변환은 모든 시간에 대해 시간발전과 교환해야 하나요?}
+\lecturerresponse{그렇습니다. 동역학의 대칭이라면 전체 시간발전에 대해 교환 조건을 만족해야 합니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:13}
+\audiencequestion{먼저 회전한 뒤 기다리거나, 먼저 기다린 뒤 회전해도 된다는 뜻인가요?}
+\lecturerresponse{맞습니다. 회전이 대칭이라면 두 순서 모두 같은 변환된 최종 상태를 만듭니다.}
+\end{classroomqa}
+
+짧은 시간 간격에서는
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+교환 조건은 다음과 같이 된다.
+\begin{equation}
+V\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)
+=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)V
++\mathcal O(\epsilon^2).
+\end{equation}
+항등 연산자 항을 소거하면
+\begin{equation}
+VH=HV,
+\end{equation}
+또는
+\begin{equation}
+[V,H]=0.
+\end{equation}
+따라서 유니터리 연산이 동역학의 대칭일 필요충분조건은 해밀토니안과 교환하는 것이다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:29}
+\audiencequestion{대칭 연산자 \(V\)가 유니터리여야 하는 이유는 무엇인가요?}
+\lecturerresponse{대칭은 상태들 사이의 논리적 구별을 보존해야 합니다. 서로 배타적이고 직교하는 두 상태를 더는 구별할 수 없는 상태들로 보내서는 안 됩니다. 이러한 관계를 보존하려면 유니터리 변환이어야 합니다.}
+\end{classroomqa}
+
+시간에 명시적으로 의존하지 않으면서 \(H\)와 교환하는 연산자는 보존량이다. 이는 대칭성과 보존의 관계를 보여 준다. 고전역학에서는 이 관계를 뇌터 정리로 나타낸다. 여기서 다루는 양자역학적 형태에서는 해밀토니안과의 교환자가 핵심 판정 기준이다.
+
+\section{이산 대칭과 연속 대칭}
+
+대칭성은 이산적일 수도 있고 연속적일 수도 있다. 거울 반사는 이산 대칭이다. 왼쪽과 오른쪽을 맞바꾸며, 그 사이에 무한소 반사들의 연속적인 과정은 없다. 서로 동일한 두 입자의 교환도 또 다른 이산 변환이다. 표식이 없는 양면 물체를 뒤집는 것도 같은 종류의 예다.
+
+회전은 연속 변환이다. \(90^\circ\)만큼의 회전은 같은 축을 중심으로 한 작은 회전들을 여러 번 적용해 구성할 수 있다. 공간 병진도 마찬가지로 연속적이다. 유한한 변위를 아주 작은 변위들을 여러 번 적용해 구성할 수 있기 때문이다.
+
+작은 변환들로 나눌 수 있다는 점 때문에 연속 대칭은 특별한 형태를 갖는다. 항등 변환에 가까운 변환은 다음과 같이 쓸 수 있다.
+\begin{equation}
+V(\epsilon)
+=
+\mathbf 1-i\epsilon G+\mathcal O(\epsilon^2),
+\end{equation}
+여기서 \(\epsilon\)는 변환을 매개변수화한다. 유니터리성으로부터
+\begin{equation}
+G^\dagger=G.
+\end{equation}
+에르미트 연산자 \(G\)를 대칭의 생성자라고 한다.
+
+변환이 대칭이라면
+\begin{equation}
+[H,V(\epsilon)]=0.
+\end{equation}
+1차까지 전개하면
+\begin{equation}
+[H,G]=0.
+\end{equation}
+따라서 연속 대칭은 해밀토니안과 교환하는 에르미트 연산자에 의해 생성된다. 이러한 생성자는 보존량이다.
+
+여기서 ``생성된다''라는 말은 구체적인 뜻을 갖는다. 유한 변환은 무한소 변환을 반복 적용해 구성한다. 유한한 시간의 시간발전을 짧은 시간 단계들을 여러 번 거쳐 구성하는 것과 같다.
+
+\section{병진 대칭성과 운동량}
+
+파동함수를 거리 \(\epsilon\)만큼 오른쪽으로 능동 병진시키는 경우를 생각하자. 원래 파동함수가 \(x_0\)에 봉우리를 가진다면, 병진된 파동함수는 \(x_0+\epsilon\)에 봉우리를 가져야 한다. 따라서 좌표 \(x\)에서 병진된 파동함수의 값은 원래 파동함수를 \(x-\epsilon\)에서 평가한 값이다.
+\begin{equation}
+(T(\epsilon)\psi)(x)=\psi(x-\epsilon).
+\end{equation}
+작은 변위에서는
+\begin{equation}
+\psi(x-\epsilon)
+=
+\psi(x)-\epsilon\frac{d\psi(x)}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+따라서
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\epsilon\frac{d}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+다음을 이용하면
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx},
+\qquad
+\frac{d}{dx}=\frac{i}{\hbar}\hat p_x,
+\end{equation}
+무한소 병진은 다음과 같이 된다.
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}\hat p_x
++\mathcal O(\epsilon^2).
+\end{equation}
+이에 대응하는 유한 병진은 다음과 같다.
+\begin{equation}
+T(\epsilon)
+=
+\exp\left(-\frac{i\epsilon}{\hbar}\hat p_x\right).
+\end{equation}
+\(V(\epsilon)=\mathbf 1-i\epsilon G+\cdots\)라는 규약을 쓰면, 차원을 가진 병진 매개변수는 다음과 같이 나타난다.
+\begin{equation}
+G_{\mathrm{trans}}=\frac{\hat p_x}{\hbar}.
+\end{equation}
+동등하게, 지수 함수 안에 \(\hbar\) 인자를 드러내어 쓸 때 운동량을 공간 병진의 생성자라고 부른다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:08}
+\audiencequestion{병진 유도에서 마이너스 부호가 빠졌나요?}
+\lecturerresponse{문제는 병진된 파동함수의 방향을 어떻게 정했는가에 있습니다. 오른쪽으로 능동 이동시키는 변환은 \(\psi(x-\epsilon)\)로 나타내야 하며, \(\psi(x+\epsilon)\)가 아닙니다. 이를 바로잡으면 \(T(\epsilon)=\mathbf 1-i\epsilon\hat p_x/\hbar+\cdots\)입니다.}
+\end{classroomqa}
+
+운동량의 보존 여부는 해밀토니안에 달려 있다. 1차원에서 움직이는 자유 입자라면
+\begin{equation}
+H=\frac{\hat p_x^2}{2m}.
+\end{equation}
+모든 연산자는 자기 자신의 모든 함수와 교환하므로
+\begin{equation}
+[H,\hat p_x]=0.
+\end{equation}
+따라서 자유 입자의 해밀토니안은 병진에 대해 불변이며 \(\hat p_x\)가 보존된다. 물리적으로는 입자의 초기 위치를 어디로 잡아도 똑같이 거동한다. 초기 조건을 병진시키면 운동 전체가 그대로 병진된다.
+
+3차원에서는
+\begin{equation}
+H
+=
+\frac{\hat p_x^2+\hat p_y^2+\hat p_z^2}{2m}.
+\end{equation}
+각 운동량 성분은 \(H\)와 교환한다.
+\begin{equation}
+[H,\hat p_x]=[H,\hat p_y]=[H,\hat p_z]=0.
+\end{equation}
+각 공간 방향마다 별도의 병진 대칭성이 있다. 운동량은 보존량인 동시에 이러한 병진에 대응하는 생성자다.
+
+다음으로 회전 대칭성을 살펴보자. 서로 다른 축을 중심으로 한 회전은 일반적으로 교환하지 않으므로 회전은 더 복잡하다. \(x\)축 회전 뒤에 \(y\)축 회전을 하는 순서는 그 반대 순서와 같지 않다. 이로부터 서로 교환하지 않는 대칭 생성자와 회전의 군론적 구조가 나온다.

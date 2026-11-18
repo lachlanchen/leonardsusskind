@@ -1,0 +1,467 @@
+\chapter{대칭성, 축퇴, 각운동량 사다리}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+
+\section{대칭성과 축퇴 에너지 준위}
+
+대칭성은 계의 물리적 기술을 바꾸지 않는 연산이다. 대칭 연산은 해밀토니안이나 Schr\"odinger 방정식, 가능한 에너지를 바꾸지 않는다. 유니터리 연산자 \(S\)가 그 연산을 나타낸다면, 불변성은 다음을 뜻한다.
+\begin{equation}
+S H S^\dagger=H,
+\end{equation}
+또는 동등하게
+\begin{equation}
+[S,H]=0.
+\end{equation}
+
+병진은 한 가지 예다. 원자를 한 위치에서 다른 위치로 옮겨도 에너지는 변하지 않는다. 이는 바닥 상태뿐 아니라 모든 원자 상태에 대해 성립한다. 회전도 또 다른 예이며, 여기서 주로 다룰 주제다.
+
+서로 동일한 두 입자를 맞바꾸는 것도 대칭성이다. 두 전자를 전자 1과 전자 2라고 부르든, Harry와 Fred라고 부르든 서로 다른 입자가 되는 것은 아니다. 이름표를 서로 바꾸어도 원자의 성질은 변하지 않는다.
+
+결정에는 또 다른 종류의 병진 대칭성이 있다. 결정 전체를 공간에서 옮기는 것은 보통의 병진이다. 그러나 무한한 결정에서는 격자 간격 하나만큼 병진해도 같은 물리적 배열로 돌아온다. 동등하게, 모든 격자점의 지표를 하나씩 이동해 격자점을 다시 표시할 수도 있다. 유한한 결정에서는 경계 때문에 이 명제가 정확히 성립하지 않지만, 매우 긴 결정의 끝에서 멀리 떨어진 곳에서는 좋은 근사 대칭성이 된다.
+
+공간의 균질성---모든 위치가 서로 동등하다는 사실---은 병진 대칭성이다. 공간의 등방성---모든 방향이 서로 동등하다는 사실---은 회전 대칭성이다.
+
+축퇴는 대칭성과 관련은 있지만 같은 개념은 아니다. 하나의 에너지 준위에 정확히 같은 에너지를 갖는 상태가 둘 이상 있을 때 그 준위는 축퇴되어 있다고 한다. 이산 스펙트럼을 갖는 일반적인 해밀토니안에서 서로 무관한 두 준위의 에너지가 정확히 같다면 이는 놀라운 우연이다. \(10^{15}\)분의 1까지 일치하더라도 정확히 같은 것은 아니다. 정확한 축퇴는 보통 대칭성이 있음을 가리킨다.
+
+대칭성이 축퇴를 뜻하는 경우도 있지만 항상 그런 것은 아니다. 첫 번째 예에서는 대칭성이 축퇴를 일으킬 수 있는 이유와 대칭성 하나만으로는 충분하지 않을 수 있는 이유를 모두 살펴본다.
+
+\section{원 위의 입자}
+
+원형 철사 위에서 움직이도록 구속된 구슬을 생각해 보자. 위치를 직교좌표 \(x\)와 \(y\)로 나타낼 수도 있지만, 각도 좌표 하나면 충분하다.
+\begin{equation}
+\psi=\psi(\theta).
+\end{equation}
+원 위에서의 위치 확률밀도는 \(\psi^*(\theta)\psi(\theta)\)이다.
+
+작은 각도 \(\epsilon\)만큼 반시계 방향으로 능동 회전시키면 다음과 같이 변환된다.
+\begin{equation}
+\psi(\theta)\longrightarrow\psi(\theta-\epsilon).
+\end{equation}
+따라서
+\begin{align}
+\delta\psi(\theta)
+&=\psi(\theta-\epsilon)-\psi(\theta)\\
+&=-\epsilon\frac{d\psi}{d\theta}
++\mathcal O(\epsilon^2).
+\end{align}
+
+연산자
+\begin{equation}
+L_z=-i\hbar\frac{d}{d\theta}
+\end{equation}
+는 주기적 파동함수 위에서 에르미트 연산자다. 이는 다음의 각도에 대응하는 형태다.
+\begin{equation}
+p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+\(i\) 인자는 에르미트성을 위해 반드시 필요하다. \(L_z\)로 나타내면,
+\begin{equation}
+\delta\psi
+=-\frac{i\epsilon}{\hbar}L_z\psi
++\mathcal O(\epsilon^2),
+\end{equation}
+따라서 무한소 회전 연산자는 다음과 같다.
+\begin{equation}
+R(\epsilon)
+=1-\frac{i\epsilon}{\hbar}L_z
++\mathcal O(\epsilon^2).
+\end{equation}
+이로부터 \(L_z\)가 원에 수직인 축 주위 회전의 생성자임을 알 수 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:11:19}
+\audiencequestion{\(i\)가 들어간 인자 가운데 하나는 부호가 반대여야 하지 않나요?}
+\lecturerresponse{부호를 확인하면 위 관계가 나옵니다. \(\psi(\theta)\to\psi(\theta-\epsilon)\)라는 약속에서는 변화가 \(-\epsilon\,d\psi/d\theta\)이며, 이는 \(-i\epsilon L_z\psi/\hbar\)와 같습니다.}
+\end{classroomqa}
+
+이제 각운동량의 고유상태를 구해 보자.
+\begin{equation}
+L_z\psi=M\psi.
+\end{equation}
+미분 연산자를 대입하면 다음을 얻는다.
+\begin{equation}
+-i\hbar\frac{d\psi}{d\theta}=M\psi,
+\end{equation}
+그 해는 다음과 같은 형태다.
+\begin{equation}
+\psi(\theta)=C\exp\left(\frac{iM\theta}{\hbar}\right).
+\end{equation}
+
+무한 직선 위의 운동에는 없는 조건이 하나 더 있다. \(\theta=0\)와 \(\theta=2\pi\)는 같은 점이므로, 단일값 궤도 파동함수는 다음 조건을 만족해야 한다.
+\begin{equation}
+\psi(\theta+2\pi)=\psi(\theta).
+\end{equation}
+위 고유함수에 대해서는 이 조건으로부터 다음을 얻는다.
+\begin{equation}
+\exp\left(\frac{2\pi iM}{\hbar}\right)=1.
+\end{equation}
+따라서
+\begin{equation}
+M=m\hbar,
+\qquad
+m\in\mathbb Z.
+\end{equation}
+원 위에서 가능한 궤도 각운동량은 다음과 같다.
+\begin{equation}
+\ldots,-2\hbar,-\hbar,0,\hbar,2\hbar,\ldots.
+\end{equation}
+
+각운동량 \(m\hbar\)을 가진 상태는 각운동량 \(-m\hbar\)을 가진 상태와 에너지가 같아야 할까요? 각운동량 양자수 \(m\)가 양수인지 음수인지에 따라 회전 방향은 서로 반대입니다. 문제는 회전 대칭성만으로 이 두 운동의 에너지가 같아야 하는가입니다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:22:51}
+\audiencequestion{\(\psi(\theta-\epsilon)\)를 쓴다는 것은 입자가 시계 방향으로 움직인다는 뜻인가요?}
+\lecturerresponse{아닙니다. 그 약속은 어느 방향을 양의 회전으로 부를지만 정합니다. 각위치와 각운동량의 부호를 정의할 뿐, 입자가 실제로 어느 방향으로 움직이는지는 결정하지 않습니다.}
+\end{classroomqa}
+
+원형 궤도면에 수직인 자기장은 반례를 제공한다. 자기장은 양의 각운동량과 음의 각운동량을 서로 반대 방향으로 에너지 이동시켜 두 상태의 축퇴를 깨뜨릴 수 있다. 에너지 이동의 부호는 전하와 방향에 대한 약속에 달려 있지만, 중요한 점은 두 에너지가 갈라진다는 것이다.
+
+그러한 자기장도 수직축 주위의 회전 대칭성은 보존한다. 따라서 회전 대칭성만으로는 다음 관계가 요구되지 않음을 보여 준다.
+\begin{equation}
+E(m)=E(-m).
+\end{equation}
+에너지 분리가 없다면 \(m=1\)와 \(m=-1\)은 한 쌍의 축퇴 상태를 이룰 수 있으며, \(m=2\)와 \(m=-2\)도 마찬가지다. 상태 \(m=0\)에는 이런 종류의 서로 다른 짝 상태가 없다.
+
+\section{반사 대칭성과 \texorpdfstring{\(m,-m\)}{m, -m} 쌍}
+
+이산 반사 대칭성을 더해 보자. \(\mathcal M\)를 원의 지름을 축으로 한 반사라고 하자.
+\begin{equation}
+(\mathcal M\psi)(\theta)=\psi(-\theta).
+\end{equation}
+이 변환은 회전 방향을 뒤집는다.
+\begin{equation}
+\mathcal M\psi_m=\psi_{-m}.
+\end{equation}
+
+반사가 대칭 연산이라면
+\begin{equation}
+[\mathcal M,H]=0.
+\end{equation}
+다음 상태를 생각하자.
+\begin{equation}
+H\ket{m}=E_m\ket{m}.
+\end{equation}
+\(\mathcal M\)를 적용하면
+\begin{align}
+H\mathcal M\ket{m}
+&=\mathcal M H\ket{m}\\
+&=E_m\mathcal M\ket{m}.
+\end{align}
+\(\mathcal M\ket{m}\)는 각운동량이 \(-m\hbar\)인 상태이므로,
+\begin{equation}
+E_{-m}=E_m.
+\end{equation}
+회전 대칭성은 각운동량을 보존하고, 반사 대칭성은 서로 반대인 두 값을 연결한다. 이 둘을 함께 고려하면 두 상태가 축퇴되어야 한다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:54}
+\audiencequestion{\(m\) 모드와 \(-m\) 모드의 확률밀도가 같으니, 그것만으로 두 모드의 에너지가 같다는 것을 보일 수 있지 않나요?}
+\lecturerresponse{아닙니다. 파동함수 \(e^{im\theta}\)와 \(e^{-im\theta}\)는 절댓값의 제곱이 같더라도 서로 다릅니다. 각운동량 고유값 방정식에는 \(\psi^*\psi\)만이 아니라 파동함수 자체가 들어갑니다. 양자역학에서 필요한 것은 진폭이지 확률만이 아닙니다.}
+\end{classroomqa}
+
+자기장은 자기장 축 주위의 회전은 보존하지만, 앞에서 사용한 반사 대칭성은 깨뜨린다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:05}
+\audiencequestion{반사 대칭성은 자기장 방향을 뒤집나요?}
+\lecturerresponse{그렇습니다. 자기장은 축벡터입니다. 판 안쪽을 향하는 자기장을 반사하면 판 바깥쪽을 향하는 자기장이 됩니다. 동등하게, 전류 고리와 그 거울상은 서로 반대 방향으로 전류가 흘러 반대 방향의 자기장을 만듭니다.}
+\end{classroomqa}
+
+회전과 반사의 비가환성은 직접 확인할 수 있습니다. 각운동량 고유함수에 작용시키면
+\begin{align}
+\mathcal M L_z\psi_m
+&=m\hbar\,\psi_{-m},\\
+L_z\mathcal M\psi_m
+&=-m\hbar\,\psi_{-m}.
+\end{align}
+따라서
+\begin{equation}
+[\mathcal M,L_z]\psi_m
+=2m\hbar\,\psi_{-m},
+\end{equation}
+이고, 이는 \(m\neq0\)일 때 영이 아닙니다. 회전한 뒤 반사하는 것과 반사한 뒤 회전하는 것은 같은 연산이 아닙니다.
+
+두 변환이 모두 대칭일 때 두 연산자는 모두 \(H\)와 가환하지만, 서로끼리는 가환하지 않는다. 이것이 축퇴를 일으키는 유형의 관계다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:28}
+\audiencequestion{\(x\)와 \(p\)처럼 서로 가환하지 않는 하이젠베르크 쌍은 모두 축퇴를 만들어 내나요?}
+\lecturerresponse{일반적으로 그렇지는 않습니다. 연산자들이 대칭 연산자이기도 해야 합니다. 즉, 해밀토니안과 가환해야 합니다. 위치와 운동량은 보통 둘 다 보존되지 않습니다. 둘 다 \(H\)와 가환한다면, 두 연산자가 서로 가환하지 않는다는 사실로부터 축퇴가 따라옵니다.}
+\end{classroomqa}
+
+\section{대칭성의 교환자 대수}
+
+\(A\)와 \(B\)가 두 연속 대칭성의 에르미트 생성자라고 하자.
+\begin{equation}
+[A,H]=0,
+\qquad
+[B,H]=0.
+\end{equation}
+이 방정식들에는 \(A\)와 \(B\)가 서로 가환해야 한다는 조건이 없다.
+
+교환자 \([A,B]\)는 반에르미트이므로 다음과 같이 에르미트 연산자를 정의하자.
+\begin{equation}
+C=i[A,B].
+\end{equation}
+수치 인자와 전체 부호는 여기서 중요하지 않다. 중요한 점은 \(C\)도 해밀토니안과 가환한다는 것이다. 실제로
+\begin{equation}
+[AB,H]
+=A[B,H]+[A,H]B=0,
+\end{equation}
+마찬가지로
+\begin{equation}
+[BA,H]=0.
+\end{equation}
+따라서
+\begin{equation}
+[C,H]
+=i\bigl([AB,H]-[BA,H]\bigr)=0.
+\end{equation}
+
+새 생성자 \(C\)는 \(A\)와 \(B\)에 독립적일 수도 있고, 이미 알려진 생성자들의 선형결합에 불과할 수도 있다. 새 생성자라면 목록에 추가하고 더 많은 교환자를 구한다. 이 과정을 반복하면 무한히 계속될 수도 있지만, 흔히 유한한 수의 생성자에서 닫힌다. 즉, 그 뒤의 모든 교환자가 이미 있는 생성자들의 선형결합으로 표현된다. 이렇게 닫힌 체계를 교환자 대수 또는 리 대수라고 한다.
+
+유한 대칭 변환들은 군을 이룬다. 그 무한소 생성자들은 이에 대응하는 리 대수를 이룬다.
+
+축퇴가 중요한 이유는 스펙트럼의 구조를 정리해 주기 때문이다. 두 상태의 에너지가 같으면, 그 에너지 차이에 해당하는 광자를 방출하여 한 상태에서 다른 상태로 붕괴할 수 없다. 원자 분광학에서는 준위의 배열과 축퇴가 가능한 스펙트럼선을 결정한다. 같은 논리는 들뜬 하드론과 그 전이에도 적용된다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:07}
+\audiencequestion{이 교환자들 자체가 대칭군의 원소인가요?}
+\lecturerresponse{여기서 다루는 연산자는 생성자입니다. 생성자와 그 교환자들은 교환자 대수, 즉 리 대수를 이룹니다. 생성자로부터 구성되는 유한 대칭 연산이 군의 원소입니다.}
+\end{classroomqa}
+
+모든 대칭 생성자가 서로 가환하면 그 대칭을 아벨 대칭이라고 합니다. 일부 생성자의 교환자가 영이 아니면 비아벨 대칭이라고 합니다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:50:25}
+\audiencequestion{생성자의 근본적인 정의는 무엇인가요?}
+\lecturerresponse{항등 연산자에 아주 가까운 유니터리 대칭 변환을 택해 \(1-i\epsilon G/\hbar+\cdots\)와 같이 쓴다. 에르미트 연산자 \(G\)가 그 변환의 생성자다. 이에 대응하는 무한소 변환을 반복하면 유한 변환을 만들 수 있다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:52:08}
+\audiencequestion{대칭 생성자의 대수란 무엇을 뜻하나요?}
+\lecturerresponse{더하기와 빼기, 보통 수를 곱하는 연산, 교환자 연산을 할 수 있는 생성자들의 모임이다. 이 대수에서는 교환자가 곱셈의 역할을 하며, 닫혀 있다는 것은 이런 연산을 해도 모임에 없는 생성자가 생기지 않는다는 뜻이다.}
+\end{classroomqa}
+
+\section{서로 다른 축 주위의 회전}
+
+회전은 가장 중요한 비아벨 대칭성의 예다. \(x\)축 주위로 회전한 다음 \(y\)축 주위로 회전하는 것은 일반적으로 그 순서를 반대로 한 연산과 같지 않다. 두 연산의 차이는 그 자체로 세 번째 축 주위의 회전과 관련된다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:54:22}
+\audiencequestion{유한 회전끼리는 가환하지 않는데, 무한소 회전끼리는 가환하나요?}
+\lecturerresponse{두 작은 회전각의 이차항에서 두 연산이 달라집니다. 이것으로 충분합니다. 작은 매개변수를 인수로 묶어 내고 나면 생성자 자체의 교환자가 영이 아니기 때문입니다.}
+\end{classroomqa}
+
+양자 교환자를 계산하기에 앞서, 그에 대응하는 고전적 그림을 생각해 보자. 각운동량이 궤도면에 수직인 원형 행성 궤도를 택한다. 궤도 전체를 \(y\)축 주위로 회전하면 에너지가 정확히 같은 또 다른 허용 궤도가 된다. 그러나 각운동량 벡터의 \(x\) 성분은 달라진다.
+
+따라서 회전 불변성은 각운동량 성분은 다르지만 에너지는 같은 배치를 만든다. 양자역학에서는 이것이 서로 다른 축 주위 회전의 생성자들 사이의 비가환성으로 나타난다.
+
+\section{직교좌표에서의 각운동량}
+
+먼저 원 위로 운동이 제한되지 않은 채 \(xy\) 평면에서 움직이는 입자를 생각하자. 작은 반시계 방향 회전에서는
+\begin{equation}
+\delta x=-\epsilon y,
+\qquad
+\delta y=\epsilon x.
+\end{equation}
+능동적으로 회전시킨 상태의 변환된 파동함수는 회전 변환을 역으로 적용한 좌표에서 계산된다.
+\begin{equation}
+\psi_\epsilon(x,y)
+=\psi(x+\epsilon y,y-\epsilon x).
+\end{equation}
+따라서
+\begin{align}
+\delta\psi
+&=\epsilon\left(
+y\frac{\partial}{\partial x}
+-x\frac{\partial}{\partial y}
+\right)\psi
++\mathcal O(\epsilon^2)\\
+&=-\frac{i\epsilon}{\hbar}
+\left(xp_y-yp_x\right)\psi
++\mathcal O(\epsilon^2).
+\end{align}
+\(z\)축 주위 회전의 생성자는 다음과 같다.
+\begin{equation}
+L_z=xp_y-yp_x.
+\end{equation}
+이는 친숙한 고전적 벡터의 \(z\) 성분이다.
+\begin{equation}
+\mathbf L=\mathbf r\times\mathbf p.
+\end{equation}
+이것은 역학적 각운동량일 뿐 아니라, 양자역학에서 파동함수의 회전을 생성하는 연산자다.\footnote{능동 회전 약속은 앞에서의 변환 \(\psi(\theta)\mapsto\psi(\theta-\epsilon)\) 및 구두 유도 과정에서 부호가 불확실했던 점을 거친 뒤 최종적으로 얻은 \(L_z=xp_y-yp_x\)와 일치하도록 선택했다.}
+
+\(x\to y\to z\to x\)를 순환 치환하면 나머지 성분을 얻는다.\footnote{\(L_x\)와 \(L_y\) 식은 강의에서 명시적으로 지시한 순환 치환 \(x\to y\to z\to x\)을 \(L_z=xp_y-yp_x\)에 적용해 재구성한 것이다.}
+\begin{align}
+L_x&=yp_z-zp_y,\\
+L_y&=zp_x-xp_z,\\
+L_z&=xp_y-yp_x.
+\end{align}
+
+회전 불변 계에서는 이 연산자들이 해밀토니안과 가환한다.
+\begin{equation}
+[H,L_x]=[H,L_y]=[H,L_z]=0.
+\end{equation}
+중심력장에서 움직이는 입자가 대표적인 예다. 이 방정식들은 양자역학에서 각운동량이 보존된다는 것을 나타낸다.
+
+\section{각운동량 리 대수}
+
+정준 교환 관계는 다음과 같다.
+\begin{align}
+[x_i,x_j]&=0,\\
+[p_i,p_j]&=0,\\
+[x_i,p_j]&=i\hbar\,\delta_{ij}.
+\end{align}
+좌표는 서로 다른 방향에 해당하는 운동량 성분과 가환한다. 예를 들어 \(x\)는 \(p_y\)와 가환하지만, \(x\)는 \(p_x\)와 가환하지 않는다.
+
+이제 계산해 봅시다.
+\begin{equation}
+[L_x,L_y]
+=
+[yp_z-zp_y,\;zp_x-xp_z].
+\end{equation}
+대부분의 항은 사라집니다. 영이 아닌 두 항은
+\begin{align}
+[yp_z,zp_x]&=-i\hbar\,yp_x,\\
+[zp_y,xp_z]&=i\hbar\,xp_y.
+\end{align}
+따라서
+\begin{align}
+[L_x,L_y]
+&=i\hbar\left(xp_y-yp_x\right)\\
+&=i\hbar L_z.
+\end{align}
+좌표 이름을 순환시키면
+\begin{align}
+[L_x,L_y]&=i\hbar L_z,\\
+[L_y,L_z]&=i\hbar L_x,\\
+[L_z,L_x]&=i\hbar L_y.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:50}
+\audiencequestion{교환자에서 \(L_z\)가 나오면, \(L_z\)가 \(L_x\)와 \(L_y\)의 선형결합이 아님을 여전히 보여야 하나요?}
+\lecturerresponse{그렇습니다. 독립성을 가정하지 말고 입증해야 합니다. 이 시점에서는 직접적인 대수적 증명을 다루지 않습니다.}
+\end{classroomqa}
+
+여기에 제시된 교환자들은 \(L_x\), \(L_y\), \(L_z\)의 선형생성공간 안에서 닫힌다. 세 연산자를 모두 포함하고 나면, 이후의 교환자에서도 그 공간 밖의 연산자가 나오지 않는다. 이것이 각운동량 리 대수다. 다음 관계와 함께
+\begin{equation}
+[H,L_i]=0,
+\qquad i=x,y,z,
+\end{equation}
+이 관계들은 각운동량 Schr\"odinger 방정식을 직접 풀지 않아도 에너지 스펙트럼에 관한 상당한 정보를 담고 있다.
+
+양자 조화 진동자에도 비슷한 대수적 방법을 사용하며, 그 경우 생성 연산자와 소멸 연산자가 스펙트럼을 만들어 낸다. 여기서 대응하는 연산자들은 에너지가 아니라 각운동량의 \(z\) 성분을 바꾼다.
+
+\(z\)축을 택하는 것은 표현을 선택하는 일일 뿐이다. \(z\)가 \(x\)나 \(y\)보다 물리적으로 더 선호될 이유는 없지만, 한 성분을 택하면 편리한 기저를 얻는다. 다음과 같이 쓰자.
+\begin{equation}
+L_z\ket{m}=m\hbar\ket{m}.
+\end{equation}
+구할 것은 \(m\)가 어떤 값을 가질 수 있는지, 그리고 \(m\)가 서로 다른 상태들이 어떻게 연결되는지다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:02}
+\audiencequestion{이 구성을 조화 진동자와 비교할 때 양자 조화 진동자를 뜻하시는 건가요? 앞선 수업에서는 그 내용을 다루지 않았습니다.}
+\lecturerresponse{네, 양자 조화 진동자와 비교한 것입니다. 여기서 전개하는 각운동량 논증은 자체적으로 완결되어 있으며 조화 진동자에 대한 지식이 필요하지 않습니다. 나중에는 비유를 반대 방향으로 볼 수도 있습니다. 조화 진동자에도 비슷한 대수적 방법이 쓰입니다.}
+\end{classroomqa}
+
+\section{각운동량 올림과 내림}
+
+다음과 같이 정의하자.
+\begin{equation}
+L_+=L_x+iL_y,
+\qquad
+L_-=L_x-iL_y.
+\end{equation}
+각운동량 교환 관계로부터 다음을 얻는다.
+\begin{equation}
+[L_z,L_+]=\hbar L_+,
+\qquad
+[L_z,L_-]=-\hbar L_-.
+\end{equation}
+
+첫 번째 관계를 \(L_z\)의 고유상태에 적용하면
+\begin{align}
+L_zL_+\ket{m}
+&=\left(L_+L_z+[L_z,L_+]\right)\ket{m}\\
+&=(m+1)\hbar\,L_+\ket{m}.
+\end{align}
+\(L_+\ket{m}=0\)가 아니라면, 이는 고유값이 \((m+1)\hbar\)인 \(L_z\)의 또 다른 고유상태다. 마찬가지로
+\begin{equation}
+L_zL_-\ket{m}
+=(m-1)\hbar\,L_-\ket{m}.
+\end{equation}
+따라서 \(L_+\)는 \(m\)를 1만큼 올리고, \(L_-\)는 1만큼 내린다.
+
+어떤 고유값에서 시작해도 대수는 정수 간격으로 떨어진 수열을 만든다. 이 수열은 무한히 이어질 수도 있고, 다음 조건 때문에 끝날 수도 있다.
+\begin{equation}
+L_+\ket{m_{\mathrm{top}}}=0
+\end{equation}
+위쪽 끝에서, 그리고
+\begin{equation}
+L_-\ket{m_{\mathrm{bottom}}}=0
+\end{equation}
+아래쪽 끝에서 끝난다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:11}
+\audiencequestion{원 위의 입자에 대한 논증에서 각운동량이 이미 정수여야 한다고 하지 않았나요?}
+\lecturerresponse{그 논증은 단일값 위치 파동함수로 나타내는 궤도 각운동량이 정수 값임을 증명합니다. 추상적인 각운동량 대수에서 얻는 결과는 더 느슨합니다. 각운동량 사다리에는 정수 값이나 반정수 값이 올 수 있습니다.}
+\end{classroomqa}
+
+사다리가 끝난다면 회전 불변성은 양 끝을 연결한다. \(180^\circ\)만큼 \(z\)에 수직인 축 주위로 회전시키면 다음과 같이 변환된다.
+\begin{equation}
+L_z\longrightarrow-L_z.
+\end{equation}
+따라서 스펙트럼은 0을 중심으로 대칭이어야 한다.
+\begin{equation}
+m_{\mathrm{bottom}}=-m_{\mathrm{top}}.
+\end{equation}
+이웃한 값들의 차이가 1이므로 두 가지 가능성이 있다. 사다리는 다음과 같이 정수로 이루어지거나,
+\begin{equation}
+\ldots,-2,-1,0,1,2,\ldots,
+\end{equation}
+다음과 같이 반정수로 이루어진다.
+\begin{equation}
+\ldots,-\frac{5}{2},-\frac{3}{2},-\frac{1}{2},
+\frac{1}{2},\frac{3}{2},\frac{5}{2},\ldots,
+\end{equation}
+양자 끝점에서는 올림 연산자 또는 내림 연산자가 0이 된다.
+
+원 위의 단일값 파동함수 논증은 궤도 각운동량에서 정수인 경우를 선택한다.
+\begin{equation}
+\mathbf L=\mathbf r\times\mathbf p.
+\end{equation}
+반정수인 경우도 물리적으로 가능하며, 이는 별도로 다룰 스핀 각운동량에 해당한다.
+
+마지막으로 해밀토니안이 회전 불변이면 사다리 상태들은 같은 에너지를 갖는다. 다음을 가정하자.
+\begin{equation}
+H\ket{m}=E\ket{m}.
+\end{equation}
+각 성분 \(L_i\)가 \(H\)와 가환하므로 \(L_+\)와 \(L_-\)도 해밀토니안과 가환한다. 따라서
+\begin{align}
+H L_+\ket{m}
+&=L_+H\ket{m}\\
+&=E L_+\ket{m}.
+\end{align}
+\(L_+\ket{m}\neq0\)인 경우 올림된 상태는 원래 상태와 에너지가 같다. 같은 계산으로 다음도 얻는다.
+\begin{equation}
+H L_-\ket{m}=E L_-\ket{m}.
+\end{equation}
+그러므로 올림과 내림 연산자는 \(L_z\) 고유값은 서로 다르지만 에너지는 정확히 같은 상태들의 집합을 만든다. 이것이 강의 전반에서 다룬 비가환 대칭성과 축퇴의 연결이다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:13}
+\audiencequestion{이 사다리 상태들은 서로 다른 회전축을 선택한 것과 관련이 있나요?}
+\lecturerresponse{이 상태들은 회전으로 연결됩니다. \(L_x\) 또는 \(L_y\)의 고유벡터는 선택한 \(L_z\) 고유벡터들의 선형결합입니다. 상태를 회전시키면 에너지는 그대로인 채 각운동량 성분이 바뀝니다.}
+\end{classroomqa}
+
+\(L_+\)와 \(L_-\)를 택하는 것은 사다리 구조를 직접 드러내므로 편리하다. 이 기법은 양자역학 전반에서 되풀이된다. 교환자 대수가 닫혀 있으면 올림 연산자와 내림 연산자가 그 고유값 스펙트럼을 정리해 주는 경우가 많다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:33}
+\audiencequestion{\(L_+\)가 최대 상태에 작용하면 어떻게 되며, 최대 상태는 어떻게 정의하나요?}
+\lecturerresponse{0이 됩니다. 그것이 끝나는 사다리의 꼭대기를 정의하는 방법입니다. 마찬가지로 아래쪽에서는 \(L_-\)가 0이 됩니다. 추상적인 사다리가 반드시 끝나야 하는 것은 아닙니다. 뒤에서 다룰 원자 각운동량 상태에서는 보통 끝나는 사다리를 볼 수 있습니다.}
+\end{classroomqa}
+
+다음 단계에서는 이 각운동량 구조를 더 전개해 수소를 포함한 원자에 적용한다. 여기서 찾은 회전 다중항은 축퇴 양상의 일부를 설명하며, 더 많은 구조를 이어서 살펴봐야 한다.
