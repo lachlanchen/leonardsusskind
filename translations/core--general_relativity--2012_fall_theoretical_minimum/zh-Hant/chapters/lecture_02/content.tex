@@ -1,0 +1,701 @@
+\chapter{內蘊幾何與張量代數}
+
+張量記號只有在能替我們分擔思考時才有用。設計良好的記號就像一盒機械零件：上指標與下指標相配，不同類型的物件無法相加，而合法的縮並會留下可由剩餘指標判讀其變換律的物件。這套工具眼前的目的是處理幾何。我們要區分真正的曲率，以及僅因座標彎曲而出現的曲率。
+
+\section{從內部觀察曲率}
+
+先從一張普通的紙開始。紙可以不經拉伸或撕裂而捲成圓柱。對周圍房間中的觀察者來說，這張紙顯然是彎曲的；然而，在紙面上測得的距離並未改變。它的外在曲率改變了，內在幾何則沒有改變。
+
+現在設想一隻被限制在紙面上的小生物。牠看不到周圍的空間，只能測量長度、比較相鄰方向、構造三角形，並把量尺從一處移到另一處。幾何所需的一切，都應能由這些內部實驗取得。在引力問題中，相應的問題是：某個場代表的究竟是真正的時空曲率，還是對平直時空的曲線座標描述。
+
+要具體呈現這種內在觀點，可以用由點和連線構成的網路取代曲面。把相鄰的點連起來，記錄每條連線的長度，並讓接點可以轉動。一個等邊三角形網格是平直的。即使彎折接點，所編碼的幾何也不會改變，因為無論如何都能在不改變任何長度的情況下，將網格重新攤回平面。
+
+現在，在周圍連線保持不變的情況下，將連接同一頂點的六條連線加長。若不違反指定的長度，中心頂點就無法繼續留在平面上，而必須隆起。診斷這種曲率不需要從外部觀察：不相容的相鄰距離本身已經包含了這項訊息。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_01.png}
+\caption{內在幾何的三角連線模型。改變某個頂點周圍的連線，會迫使網格隆起；若不改變長度，就無法將它攤平。}
+\lectureframe{00:06:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{那麼，平直空間的精確定義是什麼？}
+\lecturerresponse{操作上的回答是：若能在歐幾里得空間中不失真地實現其內在距離關係，這個空間便是平直的。用下文將建立的語言來說，若在所關注的整個區域內都能找到一組座標，使度規等於常數的克羅內克符號，則黎曼空間是平直的。在單一點上，總能局部做到這一點；能否在整個區域做到，才是非平凡的條件。曲率張量最終會以不依賴特定座標選擇的方式陳述這項條件。
+\lecturetimestamp{00:09:15}}
+\end{classroomqa}
+
+這個回答在我們尚未建立度規之前就用到了度規。因此，我們先暫時從曲率轉向張量分析。這段迂迴不可或缺：必須先確認度規是張量，才能將它對座標的依賴與真正的幾何分開。
+
+\section{場與座標描述}
+
+廣義相對論中的張量通常是張量\emph{場}：每一點都有一個張量，其分量會隨位置改變。標量場是最簡單的例子。曲面上的溫度可以用每個點 \(P\) 上的一個數 \(S(P)\) 表示。兩個人可以用不同座標標記同一點，但必須同意該處的溫度值。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_02.png}
+\caption{同一個標量場，以及標記相同各點的兩組座標。}
+\lectureframe{00:11:25}
+\end{figure}
+
+令 \(x^m\) 和 \(y^m\) 為兩組光滑座標系。每一組都是將點映射到有序數列的函數；在兩組座標重疊的區域內，這兩組數列由互逆函數連結：
+\begin{equation}
+ y^m=y^m(x^1,\ldots,x^d),
+ \qquad
+ x^m=x^m(y^1,\ldots,y^d).
+\label{eq:coordinate-maps}
+\end{equation}
+光滑性允許我們求導，而可逆性則確保改變座標不會使某個點遺失，或把不同的點合而為一。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_03.png}
+\caption{兩個光滑且可逆的座標映射，描述同一個幾何區域。}
+\lectureframe{00:13:10}
+\end{figure}
+
+對標量場而言，變換律很簡單：
+\begin{equation}
+ S'(y)=S(x).
+\label{eq:scalar-law}
+\end{equation}
+兩邊的函數可能因自變數不同而看起來不同，但在對應的點上，其值相同。這是不變性陳述的原型。
+
+\section{斜座標與兩類分量}
+
+在用變換律定義一般張量之前，先理解為什麼向量的上指標和下指標不能視為彼此的裝飾性變體，會很有幫助。
+
+畫一個座標網格，讓座標軸既不互相垂直，也未經歸一化。在某一點，將 \(x^m\) 增加一個座標單位，就會產生基向量 \(\mathbf e_m\)。用座標語言表示：
+\begin{equation}
+ \mathbf e_m=\frac{\partial \mathbf r}{\partial x^m}.
+\label{eq:coordinate-basis}
+\end{equation}
+向量 \(\mathbf e_m\) 不一定是單位長度，也不一定互相正交。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_04.png}
+\caption{斜座標網格及其座標基向量。}
+\lectureframe{00:17:40}
+\end{figure}
+
+每個向量 \(\mathbf V\) 都可以在這組基底下展開：
+\begin{equation}
+ \mathbf V=V^m\mathbf e_m.
+\label{eq:contravariant-expansion}
+\end{equation}
+數值 \(V^m\) 稱為\emph{逆變分量}，是以基向量組成幾何向量所需的係數。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_05.png}
+\caption{向量在非正交座標基底下的展開。}
+\lectureframe{00:19:20}
+\end{figure}
+
+還有另一組自然的數值：
+\begin{equation}
+ V_m=\mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf e_m.
+\label{eq:covariant-projection}
+\end{equation}
+這些數值稱為\emph{協變分量}。在斜基底下，它們並非只是把指標移到下方後仍相同的係數。代入 \eqref{eq:contravariant-expansion} 可得
+\begin{equation}
+ V_m
+ =V^n\bigl(\mathbf e_n\mathbin{\boldsymbol{\cdot}}\mathbf e_m\bigr).
+\label{eq:covariant-from-basis}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_06.png}
+\caption{將向量與座標基向量作內積，得到協變分量。}
+\lectureframe{00:21:10}
+\end{figure}
+
+基向量的內積構成 Gram 矩陣：
+\begin{equation}
+ g_{mn}=\mathbf e_m\mathbin{\boldsymbol{\cdot}}\mathbf e_n.
+\label{eq:metric-gram}
+\end{equation}
+因此，
+\begin{equation}
+ V_m=g_{mn}V^n.
+\label{eq:lower-vector}
+\end{equation}
+度規就在此首次出現。它記錄座標基向量的長度及彼此間的夾角，因此能將展開係數轉換為投影。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_07.png}
+\caption{度規作為基向量的 Gram 矩陣。}
+\lectureframe{00:23:40}
+\end{figure}
+
+同一個矩陣也可以計算長度：
+\begin{align}
+ \mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf V
+ &=(V^m\mathbf e_m)\mathbin{\boldsymbol{\cdot}}
+   (V^n\mathbf e_n) \notag\\
+ &=g_{mn}V^mV^n.
+\label{eq:vector-length}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_08.png}
+\caption{以度規和逆變分量表示的向量範數。}
+\lectureframe{00:25:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{為什麼要在介紹正式變換律之前，先引入這個幾何構造？}
+\lecturerresponse{它讓指標具有具體意義。上指標分量是展開係數，下指標分量是對向量的線性測量，而度規則連結兩者。接著，正式定義會告訴我們，這些角色在任意光滑座標變換下仍然成立。 \lecturetimestamp{00:26:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{協變分量和逆變分量何時具有相同的數值？}
+\lecturerresponse{在正交歸一的歐幾里得基底中，\(g_{mn}=\delta_{mn}\)，因此 \(V_m=V^m\) 逐分量成立。只有正交還不夠：若基向量的長度不是單位長度，對角度規仍會帶入尺度因子。
+\lecturetimestamp{00:26:19}}
+\end{classroomqa}
+
+極座標清楚呈現了這項警示。徑向與角向座標線彼此垂直，但固定的變化量 \(d\theta\) 對應的物理距離為 \(r\,d\theta\)。在平面上，
+\begin{equation}
+ ds^2=dr^2+r^2d\theta^2,
+\label{eq:polar-metric}
+\end{equation}
+因此，這組基底雖然正交，卻不是笛卡兒基底。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_09.png}
+\caption{極座標：座標方向彼此正交，但角向尺度因子會隨半徑增加。}
+\lectureframe{00:28:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{協變向量真的是不同的向量，還是只是列出同一向量的另一種方式？}
+\lecturerresponse{在引入度規之前，向量和餘向量是不同類型的線性物件。向量屬於切空間；餘向量則是定義在該空間上的線性泛函。非退化度規能在兩者之間建立一一對應，以 \(V_m=g_{mn}V^n\) 表示，但不應把這種對應誤認為兩者相同。 \lecturetimestamp{00:29:10}}
+\end{classroomqa}
+
+\section{張量由變換律定義}
+
+最穩妥的形式定義是採取操作上的觀點：若一個陣列的分量依適當的雅可比因子變換，它就是張量。對 \eqref{eq:coordinate-maps} 微分可得
+\begin{equation}
+ dy^m=\frac{\partial y^m}{\partial x^n}\,dx^n.
+\label{eq:differential-law}
+\end{equation}
+任何逆變向量都遵循相同的規則：
+\begin{equation}
+ V'^m(y)
+ =\frac{\partial y^m}{\partial x^n}V^n(x).
+\label{eq:contravariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_10.png}
+\caption{以座標微分的變換方式為範本的逆變變換律。}
+\lectureframe{00:32:50}
+\end{figure}
+
+餘向量依逆雅可比變換：
+\begin{equation}
+ W'_m(y)
+ =\frac{\partial x^n}{\partial y^m}W_n(x).
+\label{eq:covariant-law}
+\end{equation}
+標量的梯度是標準例子。將鏈鎖律應用於 \eqref{eq:scalar-law}，可得
+\begin{equation}
+ \frac{\partial S}{\partial y^m}
+ =\frac{\partial x^n}{\partial y^m}
+  \frac{\partial S}{\partial x^n}.
+\label{eq:gradient-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_11.png}
+\caption{標量梯度依鏈鎖律作為餘向量變換。}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{上指標分量和下指標分量必定具有相同的物理單位嗎？}
+\lecturerresponse{不一定。座標分量的單位與尺度慣例，取決於座標及其基向量。若一個座標代表長度，另一個代表角度，兩者的分量甚至可能具有不同量綱。完整的縮並才是物理量綱不受座標影響的物件。
+\lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼這裡使用的是偏導數，而不是普通導數？}
+\lecturerresponse{場會依賴多個座標。雅可比矩陣要描述的是：當一個自變數改變、其他自變數保持固定時，某個座標函數如何改變，因此矩陣元素是偏導數。
+\lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+這個模式可以依照規則逐步推廣。每個帶撇號的上指標都帶來一個 \(\partial y/\partial x\) 因子；每個帶撇號的下指標都帶來一個 \(\partial x/\partial y\) 因子。混合張量的變換方式為
+\begin{equation}
+ T'^m{}_n
+ =
+ \frac{\partial y^m}{\partial x^p}
+ \frac{\partial x^q}{\partial y^n}
+ T^p{}_q,
+\label{eq:mixed-law}
+\end{equation}
+而二階協變張量的變換方式為
+\begin{equation}
+ W'_{mn}
+ =
+ \frac{\partial x^p}{\partial y^m}
+ \frac{\partial x^q}{\partial y^n}
+ W_{pq}.
+\label{eq:rank-two-covariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_12.png}
+\caption{含一個上指標和一個下指標之張量的變換律。}
+\lectureframe{00:40:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_13.png}
+\caption{二階協變張量的變換律；每個下指標各帶來一個逆雅可比因子。}
+\lectureframe{00:42:15}
+\end{figure}
+
+除非另有說明，重複指標表示求和。這項約定省去求和符號，同時保留重建求和所需的全部資訊。每一項中的重複啞指標必須恰好出現兩次，一次在上、一次在下；自由指標則在方程的每一項中都出現一次。
+
+\begin{classroomqa}
+\audiencequestion{這種求和記號是誰引入的？}
+\lecturerresponse{一般認為這種記號是愛因斯坦引入的，因此稱為愛因斯坦求和慣例。它的價值不在歷史裝飾，而在於指標排列能讓合法的張量運算一目瞭然。 \lecturetimestamp{00:43:21}}
+\end{classroomqa}
+
+\section{張量方程與座標無關的真確性}
+
+分量會隨座標改變，但張量方程在每一組座標中都成立。若兩個相同類型的張量滿足 \(W=T\)，它們的差就是零張量：
+\begin{equation}
+ W^{m\cdots}{}_{\cdots n}
+ -T^{m\cdots}{}_{\cdots n}=0.
+\label{eq:tensor-equality}
+\end{equation}
+變換律是線性的，因此在某一座標系中為零的分量，在其他座標系中也會為零。方程兩側的自由指標必須相符。不同張量類型的物件之間，沒有座標無關的等式可言。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_14.png}
+\caption{指標結構相符，分量相等才構成在每一座標系中都成立的張量方程。}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{如果向量分量正在改變，究竟什麼是不變的？}
+\lecturerresponse{不變的是幾何張量，以及張量方程的真確性；座標列表則會改變。標量是沒有指標的特例，因此它在某點的數值在所有座標系中都相同。 \lecturetimestamp{00:47:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{向量大小是相應的不變量嗎？大小為零是否表示向量為零？}
+\lecturerresponse{給定度規後，縮並 \(g_{mn}V^mV^n\) 是一個標量，因此是不變的範數平方。在正定幾何中，它只有在向量為零時才會消失。在洛倫茲時空中，非零的類光向量也可能具有零範數，因此這兩個陳述必須分開看待。 \lecturetimestamp{00:48:04}}
+\end{classroomqa}
+
+\section{張量的運算}
+
+黑板上列出了接下來會用到的主要運算：乘以標量、將相同類型的張量相加或相減、作張量積、縮並一個上指標和一個下指標，最後還有協變微分。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_15.png}
+\caption{黑板上的張量運算一覽：加法、乘法、縮並與微分。}
+\lectureframe{00:50:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{是對什麼求導？}
+\lecturerresponse{對位置求導，也就是對座標求導。分量的普通導數通常不會像張量那樣變換，因為雅可比本身也會改變。協變微分能修正這個問題，但要等幾何的預備概念建立之後再介紹其構造。 \lecturetimestamp{00:51:49}}
+\end{classroomqa}
+
+標量乘法沒有問題。加法與減法則要求張量類型相同：
+\begin{equation}
+ C^m{}_n=A^m{}_n+B^m{}_n,
+\qquad
+ D^m{}_n=A^m{}_n-B^m{}_n.
+\label{eq:tensor-addition}
+\end{equation}
+向量不能和餘向量相加，二階張量也不能和標量相加；這就像不能把速度與面積相加。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_16.png}
+\caption{只有自由指標排列相同的張量，才能逐分量相加。}
+\lectureframe{00:53:00}
+\end{figure}
+
+張量積會合併各因子中的所有指標。例如，
+\begin{equation}
+ T^{mn}=V^mW^n,
+\qquad
+ S^m{}_n=V^mU_n.
+\label{eq:tensor-products}
+\end{equation}
+在四維中，\(T^{mn}\)有十六個分量。沒有任何指標被求和，因此這是外積，不是點積。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_17.png}
+\caption{一個從每個向量因子保留一個自由指標的張量積。}
+\lectureframe{00:55:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{這裡的兩個向量相乘是點積嗎？}
+\lecturerresponse{不是。點積會縮並一個指標，產生標量。張量積則讓兩個指標都保持自由，因此產生二階張量。在四維中，它有十六個分量，而不是一個。 \lecturetimestamp{00:56:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{既然分量數值可以交換，交換兩個向量因子會沒有差別嗎？}
+\lecturerresponse{對一般的純量分量而言，
+\(V^mW^n=W^nV^m\)。但張量的槽位有順序。交換兩個因子，再把第一個槽位命名為 \(m\)、第二個命名為 \(n\)，得到的就是轉置後的陣列；\(T^{mn}\)不一定等於 \(T^{nm}\)。
+\lecturetimestamp{00:58:52}}
+\end{classroomqa}
+
+\section{縮並與逆雅可比引理}
+
+縮並的關鍵在於鏈鎖律。由於兩個座標映射互為逆映射，
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =
+ \frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\label{eq:inverse-jacobian}
+\end{equation}
+兩個雅可比矩陣互為逆矩陣，因此它們的乘積是克羅內克 delta。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_18.png}
+\caption{作為張量縮並引理基礎的逆雅可比恆等式。}
+\lectureframe{01:02:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{逆雅可比是什麼樣的物件？}
+\lecturerresponse{它是逆座標映射的導數矩陣，元素為 \(\partial x^b/\partial y^m\)。將它與 \(\partial y^m/\partial x^a\) 相乘，根據多變數鏈鎖律便會得到單位矩陣。 \lecturetimestamp{01:02:37}}
+\end{classroomqa}
+
+簡短推導可以讓這套記號更清楚。對任意純量函數 \(f\)，
+\begin{equation}
+ \frac{\partial f}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial f}{\partial x^a}.
+\end{equation}
+令 \(f=x^b\)，即可得到
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_19.png}
+\caption{鏈鎖律使逆雅可比因子相乘後化為克羅內克 delta。}
+\lectureframe{01:04:55}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\delta^b{}_a\)只有在笛卡兒座標中才是單位矩陣嗎？}
+\lecturerresponse{不是。混合張量 \(\delta^b{}_a\) 在任何座標系中都代表恆等映射。以 \(\delta_{ab}\) 表示的歐幾里得度規只適用於正交歸一的笛卡兒座標；不應把混合指標的恆等映射與這個度規混為一談。
+\lecturetimestamp{01:04:58}}
+\end{classroomqa}
+
+現在考慮混合張量 \(T^m{}_n\)。它變換後的跡為
+\begin{align}
+ T'^m{}_m
+ &=
+ \frac{\partial y^m}{\partial x^a}
+ \frac{\partial x^b}{\partial y^m}
+ T^a{}_b \notag\\
+ &=\delta^b{}_aT^a{}_b
+ =T^a{}_a.
+\label{eq:trace-invariant}
+\end{align}
+縮並後不再有自由指標，因此所得量是純量。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_20.png}
+\caption{混合張量在上、下指標縮並之前的變換方式。}
+\lectureframe{01:07:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_21.png}
+\caption{縮並時雅可比因子彼此抵消，因此在任一座標系中都得到相同的純量跡。}
+\lectureframe{01:10:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{縮並之後，結果還帶有指標嗎？}
+\lecturerresponse{只有被縮並的那一對指標會消失。將 \(T^m{}_n\) 唯一的一對上、下指標縮並後，留下的是純量。對較高階的張量而言，所有未縮並的指標仍是自由指標。
+\lecturetimestamp{01:09:00}}
+\end{classroomqa}
+
+例如，
+\begin{equation}
+ A^{mn}{}_{pq}
+ \longmapsto
+ A^{mn}{}_{pn}
+ =B^m{}_p
+\label{eq:higher-rank-contraction}
+\end{equation}
+這項運算縮並 \(n\)，並使張量的階數降低二。具體使用哪些字母只是啞指標標記；結構上的規則是將一個上指標槽位與一個下指標槽位求和。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_22.png}
+\caption{較高階張量的縮並會移除一個上指標和一個下指標，同時保留其餘自由指標。}
+\lectureframe{01:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{為什麼不能用相同方式縮並兩個上指標或兩個下指標？}
+\lecturerresponse{兩個上指標會帶來兩個方向相同的雅可比因子，\(\partial y^m/\partial x^a\) 和 \(\partial y^m/\partial x^b\)。它們相乘不會得到單位矩陣，因此這種求和不符合張量的變換律。可以先用度規降低其中一個指標，之後進行上--下指標縮並才合法；若不引入這個額外張量，該運算就不是座標不變的。 \lecturetimestamp{01:13:03}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_23.png}
+\caption{試圖縮並同類變異度指標時，會留下兩個方向相同的雅可比因子，因此無法化為單位矩陣。}
+\lectureframe{01:14:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{縮並是張量版的內積嗎？}
+\lecturerresponse{縮並是將向量槽位與餘向量槽位配對，是一種基本的不變配對。有了度規，就能把兩個向量轉成這樣的一對，因此熟悉的內積就是先使用度規，再進行縮並。 \lecturetimestamp{01:14:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{被縮並的兩個指標必須取自相同範圍嗎？}
+\lecturerresponse{是的。它們對應同一個 \(d\) 維切空間與餘切空間中的對偶基底。否則，求和與逆雅可比恆等式都無從定義。
+\lecturetimestamp{01:15:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼張量在一個標架中為零，在所有標架中都會為零？}
+\lecturerresponse{每個變換後的分量都是原始分量的線性組合。若所有輸入分量都為零，這些線性組合也全都為零。正是這種簡單的線性性質，使張量方程不依賴座標。 \lecturetimestamp{01:15:31}}
+\end{classroomqa}
+
+\section{由平方距離得到度規}
+
+現在回到幾何。對於分量為 \(dx^m\) 的無窮小位移，定義其平方長度為
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:line-element}
+\end{equation}
+這就是廣義的畢氏定理。度規可以隨位置改變，而非對角項則記錄座標方向之間不正交的情形。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_24.png}
+\caption{由張量運算清單轉向無窮小線元素的二次定義。}
+\lectureframe{01:18:45}
+\end{figure}
+
+由於
+\(dx^m dx^n=dx^n dx^m\)，只有對稱部分會有貢獻。因此我們可以令
+\begin{equation}
+ g_{mn}=g_{nm}.
+\label{eq:metric-symmetry}
+\end{equation}
+在 \(d\) 維空間中，對稱度規有
+\begin{equation}
+ \frac{d(d+1)}{2}
+\label{eq:metric-component-count}
+\end{equation}
+個獨立分量：四維時有十個，三維時有六個，二維時有三個。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_25.png}
+\caption{線元素，以及用來計算度規獨立分量數目的對稱分量陣列。}
+\lectureframe{01:21:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{為什麼四維度規只有十個獨立分量，而不是十六個？}
+\lecturerresponse{它有四個對角項，以及六組不區分順序的非對角項。等價地，
+\(4(4+1)/2=10\)。反對稱部分乘上對稱乘積 \(dx^m dx^n\) 後會相消。 \lecturetimestamp{01:19:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{三維中有多少個獨立分量？}
+\lecturerresponse{六個：三個對角項和三組非對角項，也就是 \(3(3+1)/2\)。 \lecturetimestamp{01:20:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{那麼二維呢？}
+\lecturerresponse{三個：\(g_{11}\)、\(g_{22}\)，以及唯一一組對稱的非對角項 \(g_{12}=g_{21}\)。 \lecturetimestamp{01:22:28}}
+\end{classroomqa}
+
+\subsection{為什麼度規是張量}
+
+平方距離是純量。因此，用兩組座標描述同一個位移時，有
+\begin{equation}
+ g_{mn}(x)\,dx^m dx^n
+ =
+ g'_{pq}(y)\,dy^pdy^q.
+\label{eq:length-invariance}
+\end{equation}
+將
+\begin{equation}
+ dx^m=\frac{\partial x^m}{\partial y^p}\,dy^p
+\end{equation}
+代入兩次：
+\begin{align}
+ ds^2
+ &=
+ g_{mn}(x)
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ dy^pdy^q.
+\label{eq:metric-transform-derivation}
+\end{align}
+將結果與帶撇號的表示式比較，可得
+\begin{equation}
+ g'_{pq}(y)
+ =
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ g_{mn}(x).
+\label{eq:metric-transformation}
+\end{equation}
+這正是二階協變張量的變換律。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_26.png}
+\caption{由純量線元素的不變性推導度規變換律。}
+\lectureframe{01:26:25}
+\end{figure}
+
+這個結論也說明了度規為何有兩個下指標。每個度規下指標都與位移分量所帶的一個上指標配對。座標變換時，\eqref{eq:metric-transformation} 中的兩個逆雅可比因子會抵消微分所帶的兩個正向雅可比因子，使 \(ds^2\) 保持不變。
+
+\section{度規矩陣及其逆矩陣}
+
+在某一點，\(g_{mn}\) 是一個對稱矩陣：
+\begin{equation}
+ [g_{mn}]
+ =
+ \begin{pmatrix}
+ g_{11} & g_{12} & \cdots \\
+ g_{12} & g_{22} & \cdots \\
+ \vdots & \vdots & \ddots
+ \end{pmatrix}.
+\label{eq:metric-matrix}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_27.png}
+\caption{確立度規的張量變換律後，將度規表示為對稱矩陣。}
+\lectureframe{01:28:50}
+\end{figure}
+
+度規必須是非退化的：它沒有零特徵值，因此存在逆矩陣。將此逆矩陣記為 \(g^{mn}\)。以指標記號表示：
+\begin{equation}
+ g_{mn}g^{np}=\delta_m{}^p.
+\label{eq:inverse-metric}
+\end{equation}
+重複的 \(n\) 表示求和，而 \(m\) 和 \(p\) 則標記矩陣乘積的列與行。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_28.png}
+\caption{透過 \(g_{mn}g^{np}=\delta_m{}^p\) 引入逆度規。}
+\lectureframe{01:31:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{一點上的向量和張量實際上屬於哪裡？}
+\lecturerresponse{一點上的向量構成該點的切空間 \(T_P M\)；餘向量則構成對偶空間 \(T_P^*M\)。較高階的張量屬於這些空間的張量積。張量場會將這類物件平滑地指派給每一點。度規是切空間上的雙線性形式，其逆則是餘切空間上相應的雙線性形式。 \lecturetimestamp{01:34:15}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_29.png}
+\caption{畫在彎曲流形上一點的切空間中的向量。}
+\lectureframe{01:35:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(g_{mn}g^{np}=\delta_m{}^p\) 是否只指 \(m=p\) 的情形？}
+\lecturerresponse{不是。這是完整的矩陣方程。對每一個有序對 \((m,p)\)，求和後的乘積在 \(m=p\) 時為一，在 \(m\ne p\) 時為零。所有對角與非對角方程都同時包含在內。 \lecturetimestamp{01:36:50}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_30.png}
+\caption{將逆矩陣關係解讀為完整的混合指標單位矩陣。}
+\lectureframe{01:38:50}
+\end{figure}
+
+在二維中，這表示
+\begin{equation}
+ \begin{pmatrix}
+ g_{11} & g_{12}\\
+ g_{12} & g_{22}
+ \end{pmatrix}
+ \begin{pmatrix}
+ g^{11} & g^{12}\\
+ g^{12} & g^{22}
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+ 1&0\\
+ 0&1
+ \end{pmatrix}.
+\label{eq:two-dimensional-inverse}
+\end{equation}
+例如，
+\begin{align}
+ g_{11}g^{11}+g_{12}g^{12}&=1,\\
+ g_{11}g^{12}+g_{12}g^{22}&=0.
+\end{align}
+另一列會給出其餘兩個方程。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_31.png}
+\caption{將逆度規恆等式展開為明確的二維矩陣乘法。}
+\lectureframe{01:40:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{度規必須是正定的嗎？}
+\lecturerresponse{在一般的黎曼幾何中，正定性可確保每個非零位移的平方長度都為正。時空則採用洛倫茲度規，其中一個符號與另外三個相反。這兩種情形在此都要求非退化，而非正定。
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼要排除零特徵值？}
+\lecturerresponse{零特徵值會使度規矩陣成為奇異矩陣，因此\(g^{mn}\)不存在，度規也就無法在向量與餘向量之間建立一一對應。在通常的微分幾何意義下，度規必須是非退化的。\lecturetimestamp{01:43:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{四維度規的十個獨立分量，和十維弦論有關嗎？}
+\lecturerresponse{沒有。前面所說的十只是\(4(4+1)/2\)，也就是對稱四乘四矩陣中的元素個數。超弦理論出現十個時空維度，則有不同的原因。\lecturetimestamp{01:44:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果洛倫茲時空中有非零向量的長度為零，度規會因此不可逆嗎？}
+\lecturerresponse{不會。零長度向量滿足\(g_{mn}V^mV^n=0\)，這是不定二次型中的抵消結果。它並不是滿足\(g_{mn}V^n=0\)的零特徵值向量。例如，閔可夫斯基度規的特徵值為\(\pm1\)，因此完全可逆，卻仍然容許類光向量。\lecturetimestamp{01:45:02}}
+\end{classroomqa}
+
+\section{接下來}
+
+現在我們可以清楚地陳述這套幾何綱領了。度規記錄無窮小距離，依協變方式變換，並且具有逆度規。度規的分量看起來可能很複雜，原因僅在於座標本身很複雜。要判斷幾何本身是否彎曲，我們必須以不依賴座標的方式，比較鄰近點的度規。
+
+光靠普通導數並不足夠，因為對張量微分時，也會微分其變換律中隨位置變化的雅可比矩陣。因此，下一步是引入協變微分。利用度規的導數可以構造聯絡；再利用聯絡的導數與乘積，可以構造曲率。到了這一步，捲曲書頁的問題才會得到最終的內在解答。

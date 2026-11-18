@@ -1,0 +1,578 @@
+\chapter{量子漲落與結構的起源}
+
+\lectureoverview{最後一講探討的是：一個經暴脹變得平滑的宇宙，如何仍會產生星系得以形成的微小不規則性。答案分幾個階段建立。普適常數先定義出普朗克尺度，並顯示熟悉的粒子物理與量子重力之間存在巨大落差。接著，微波天空提供了目標：溫度與密度變化的量級約為\(10^{-5}\)，分布在許多尺度上。零點運動帶來不可避免的漲落；阻尼說明振盪如何凍結；膨脹宇宙中的波動方程則使暴脹場的每個傅立葉模式都成為這類阻尼振子。當模式的物理波長達到哈勃尺度時，便會凍結。暴脹結束時，凍結的變化使相鄰區域在略有差異的時間再加熱，將微觀量子雜訊轉化為原初密度分布。}
+
+\section{哪些常數是普適的？}
+
+我們有一套極為精確的基本粒子量子理論。其參數包括夸克與輕子的質量、耦合常數、混合參數、電荷，以及粒子種類。若有無限的計算能力，這套理論不僅能說明加速器實驗，也能說明原子、分子與化學；原則上，其推論還延伸至生物學，以及思考所涉及的物理過程。這不代表這些系統容易計算，而是說標準模型旨在作為普通物質的微觀基礎。引力則另由廣義相對論在經典層次描述。兩套理論都很有力，但都無法讓低能物理中出現的每個數值看起來理所當然。
+
+質子與電子的質量比是合理的物理量，但它取決於這兩種特定粒子。若以中子取代質子，或以{\proseunicodefont μ}子取代電子，所得比值就會不同。這類參數或許蘊含我們尚未知曉的深層物理，卻無法彰顯其普適性。三個有量綱的常數則有所不同：
+\[
+c,\qquad \hbar,\qquad G.
+\]
+它們的定義定律一再出現\emph{所有}這個字。所有物質與資訊都遵守由\(c\)決定的極限速度。所有量子系統都服從由\(\hbar\)支配的不確定性關係。所有形式的能量都以同一個牛頓常數\(G\)產生引力。就本講的論證而言，這些常數之所以基本，正是因為它們適用的範圍如此廣泛。
+
+在量子力學的完整意義尚未明朗之前，普朗克便已認識到這個組合的重要性。他的常數最初出現在黑體輻射的描述中。即使當時，量綱上的事實也已清楚可見：利用\(c\)、\(\hbar\)與\(G\)，無須參照任何特定原子或粒子，就能構造出長度、時間與質量的單位。
+
+\section{建立普朗克尺度}
+
+令\(L\)、\(T\)與\(M\)分別表示長度、時間與質量的量綱。光速的量綱為
+\[
+[c]=LT^{-1}.
+\]
+不確定性關係\(\Delta x\,\Delta p\gtrsim\hbar\)與\(p=mv\)合併後給出
+\[
+[\hbar]=ML^2T^{-1}.
+\]
+最後，牛頓方程
+\[
+F=\frac{Gm_1m_2}{r^2},
+\qquad
+F=ma
+\]
+給出
+\[
+[G]=L^3M^{-1}T^{-2}.
+\]
+這項推導之所以重要，是因為量綱分析並非猜測：要求多餘的量綱相消，就能確定每個指數。
+
+設長度具有以下形式：
+\begin{equation}
+\ell=c^\alpha\hbar^\beta G^\gamma.
+\label{eq:c10-length-ansatz}
+\end{equation}
+質量的指數必須為零，因此
+\[
+\beta-\gamma=0.
+\]
+時間的指數必須為零，長度的指數則必須等於一：
+\[
+-\alpha-\beta-2\gamma=0,
+\qquad
+\alpha+2\beta+3\gamma=1.
+\]
+利用\(\gamma=\beta\)，可得
+\[
+\alpha+3\beta=0,
+\qquad
+\alpha+5\beta=1.
+\]
+兩式相減可得\(2\beta=1\)，因此
+\[
+\beta=\gamma=\frac12,
+\qquad
+\alpha=-\frac32.
+\]
+所以，由這三個普適常數構成的唯一長度為
+\begin{equation}
+\ell_{\mathrm P}
+=\sqrt{\frac{\hbar G}{c^3}}
+\approx 1.6\times10^{-35}\,\mathrm m.
+\label{eq:c10-planck-length}
+\end{equation}
+本講只取其數量級\(10^{-35}\,\mathrm m\)，但量綱推導確定了這個組合本身。
+
+相應的時間就是光穿越這段距離所需的時間：
+\begin{equation}
+t_{\mathrm P}
+=\frac{\ell_{\mathrm P}}{c}
+=\sqrt{\frac{\hbar G}{c^5}}
+\approx 5.4\times10^{-44}\,\mathrm s.
+\label{eq:c10-planck-time}
+\end{equation}
+以數量級而言，這是\(10^{-43}\,\mathrm s\)。已知普朗克長度與普適速度後，這個時間便不再是獨立構造出的量。
+
+質量方面，利用量綱關係\(Et\sim\hbar\)與\(E=mc^2\)。令\(t=t_{\mathrm P}\)，可得
+\begin{equation}
+m_{\mathrm P}
+=\frac{\hbar}{c^2t_{\mathrm P}}
+=\sqrt{\frac{\hbar c}{G}}
+\approx 2.2\times10^{-8}\,\mathrm{kg}.
+\label{eq:c10-planck-mass}
+\end{equation}
+以粒子物理的尺度來看，這個質量大得驚人，約等於細小塵埃的質量。其靜能量級為\(10^9\,\mathrm J\)，與一箱燃料所含的化學能相近。一輛汽車只用幾箱燃料便能行駛數百英里，因為燃燒釋出的只是燃料靜能中極小的一部分。若將一個普朗克質量完全轉化為能量，情況就截然不同。微小的質量乘上\(c^2\)，便可代表龐大的能量。
+
+這與加速器物理之間的落差極大。講座當時高能碰撞所探測的最短尺度，量級約為\(10^{-18}\,\mathrm m\)，但仍比普朗克長度大約\(10^{17}\)倍。因此，電弱尺度與普朗克尺度之間尚未探索的領域極為廣闊。核物理提供了恰當的類比：從遠處看，原子核像是基本粒子；但在更短距離下，它會分解為質子與中子，而兩者又可進一步分解為夸克與膠子。低能粒子與原子核相比或許簡單，但相對於普朗克尺度上可能存在的事物，它們仍可能是複雜的湧現客體。從這種層級結構來看，標準模型含有許多參數就不那麼令人意外；然而，這些參數的觀測值與精細調整仍未獲解釋。
+
+\begin{classroomqa}
+\audiencequestion{希格斯粒子的質量比預期輕還是重？為什麼它的質量令人費解？}
+\lecturerresponse{這裡有兩種比較方式。相較於普朗克質量，\(125\,\mathrm{GeV}\)的希格斯粒子極為輕。在缺乏保護機制的理論中，量子修正往往使標量質量對高得多的尺度敏感，因此要得到觀測到的數值，彷彿得讓參數在狹窄的範圍內取得平衡。另一方面，相較於當時討論的某些簡單超對稱理論預期，觀測到的希格斯粒子也可說有些重。表面上的矛盾源於採用了兩種不同的參考尺度；根本的層級問題仍然存在。\lecturetimestamp{00:26:45--00:30:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果希格斯粒子有助於粒子取得質量，暗物質粒子的質量是否也應接近普朗克尺度？}
+\lecturerresponse{不。WIMP是\emph{弱相互作用大質量粒子}；這個名稱指的是可能讓實驗室探測成為可能的相互作用尺度，而不是普朗克質量。在通常的WIMP假設下，這類粒子的質量可以遠大於質子質量，但仍遠低於\(m_{\mathrm P}\)。若它與普通物質的相互作用可以任意微弱，宇宙學允許的質量範圍就寬廣得多，但直接探測也相應地更加困難。質子與中子也提醒我們：它們的大部分質量來自強作用力的束縛能，而不只是希格斯機制產生的夸克質量總和。\lecturetimestamp{00:30:55--00:33:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{普朗克質量代表什麼？每個位元是否有基本能量？}
+\lecturerresponse{一種有用的引力詮釋是：若要維持傳統的半經典黑洞描述，黑洞就無法在參數上小到遠低於普朗克尺度。這種物體的質量約為\(m_{\mathrm P}\)，視界面積約為一個普朗克面積，熵則約為一個單位。在這個有限定義的黑洞情境下，可以把普朗克量級的能量與一個單位量級的資訊量連結起來。這並不表示所有裝置儲存的每個位元都要耗費一個普朗克能量；普通粒子與一般記憶裝置都可以輕得多。\lecturetimestamp{00:33:11--00:35:10}}
+\end{classroomqa}
+
+接下來使用普朗克單位會很方便：
+\begin{equation}
+c=\hbar=G=1.
+\label{eq:c10-planck-units}
+\end{equation}
+如此一來，長度、時間、質量與能量都可表示為相對於方程~\eqref{eq:c10-planck-length}--\eqref{eq:c10-planck-mass}的純數。
+
+\section{幾乎均勻的微波天空}
+
+宇宙學的問題從一幅全天微波圖開始。威爾金森微波各向異性探測器（WMAP）測量了原初等離子體變得透明前後所釋出的輻射。此後，這些光子經歷約一千倍的紅移，如今形成溫度約為\(2.7\,\mathrm K\)、幾乎完美的黑體輻射。向外觀測時，我們看到的並非同一個當下時刻的宇宙；距離越遠，光子發射得越早。微波背景來自遙遠的殼層，光子正是從那裡開始自由地朝我們傳播。
+
+\begin{classroomqa}
+\audiencequestion{WMAP的橢圓圖像究竟呈現什麼？}
+\lecturerresponse{橢圓圖上的每一點都代表天空的一個方向，球面則經由地圖投影攤平。左右兩側的邊緣相接；上半部與下半部分別代表銀道的兩個相對半球；銀道面則橫越圖的中央。我們必須建立模型並扣除來自自身銀河系的前景微波輻射。扣除後的圖像不是附近恆星的分布圖，而是最後散射殼層上的微波溫度方向圖。\lecturetimestamp{00:37:49--00:40:49}}
+\end{classroomqa}
+
+一階近似下，結果具有各向同性：
+\[
+T(\hat{\mathbf n})\simeq 2.7\,\mathrm K
+\]
+對每個觀測方向\(\hat{\mathbf n}\)皆如此。若宇宙圍繞每一點都完全各向同性，就表示它完全均勻。然而，完全均勻的宇宙不會自行形成星系、星系團，以及上一講提到的類焦散宇宙網。宇宙中必定曾存在某種非均勻性，即使其振幅極小。
+
+將沿不同方向的溫度偏差寫成
+\[
+\delta T(\hat{\mathbf n})=T(\hat{\mathbf n})-\bar T.
+\]
+測得的相對變化量級約為
+\begin{equation}
+\frac{\delta T}{T}\sim10^{-5}.
+\label{eq:c10-cmb-anisotropy}
+\end{equation}
+取得這個數值的一種方法是從動力學著手：將今日的物質分布向過去回推，詢問解耦時需要多大的初始對比。另一種方法則是直接觀測：將幾乎毫無特徵的微波圖放大五個數量級，測量其中的斑紋。以本論證所需的精度而言，兩種方法所得結果一致。
+
+斑紋出現在許多角尺度上。大區域內包含較小區域，放大其中一塊，仍會看到統計性質相似的紋理。\emph{尺度不變}並非表示每個尺度都完全相同，而是指在相關範圍內，漲落功率隨尺度的變化很小。這種近似尺度不變性是理論必須解釋的證據之一，不只是整體振幅的問題。
+
+為什麼溫度能反映物質分布？光子逃離引力勢阱時會損失能量。因此，來自較密區域的輻射可能相對於來自較稀疏區域的輻射發生偏移。以本講採用的數量級估算，這便引出了接近解耦時的
+\begin{equation}
+\frac{\delta\rho}{\rho}\sim10^{-5}
+\label{eq:c10-density-target}
+\end{equation}
+。精確計算宇宙微波背景時，還須納入聲學動力學、引力位勢與轉移函數；因此，方程~\eqref{eq:c10-density-target}只是用來估計尺度的簡寫，並非\(\delta T/T\)與\(\delta\rho/\rho\)之間的精確等式。
+
+\begin{classroomqa}
+\audiencequestion{這些斑紋會不會是最後散射時產生的一般微觀雜訊？}
+\lecturerresponse{就觀測到的角尺度而言，不會。到解耦時，這些斑塊已對應到極為巨大的物理區域，而非複合等離子體中的原子尺度擾動。不過，若進一步向過去追溯，它們的物理波長會愈來愈短。暴脹提供了所需的放大機制：起初屬於量子微觀擾動的漲落，可以被拉伸到天文尺度。\lecturetimestamp{00:46:42--00:48:02}}
+\end{classroomqa}
+
+這個機制可從三項物理概念來理解：諧振子的零點運動、振子的阻尼，以及膨脹宇宙中的標量場波動方程。我們依序將它們串連起來。
+
+\section{諧振子的零點運動}
+
+對單位質量的諧振子而言，
+\begin{equation}
+E=\frac12\dot x^{\,2}+\frac12\omega^2x^2,
+\qquad
+\ddot x+\omega^2x=0.
+\label{eq:c10-undamped}
+\end{equation}
+動能與位能不斷互相轉換。對一個週期取平均，兩者各占總能量的一半。
+
+量子力學給出的能階為
+\begin{equation}
+E_n=\left(n+\frac12\right)\hbar\omega.
+\label{eq:c10-oscillator-levels}
+\end{equation}
+基態不可能同時具有\(x=0\)與\(\dot x=0\)，否則位置與動量便能同時確定。基態不可消除的能量
+\[
+E_0=\frac12\hbar\omega,
+\]
+就是零點能。\emph{振盪}這個詞應從統計意義理解：定態基態不會沿著經典正弦軌跡運動，但位置與動量的變異數皆非零。
+
+平均而言，基態能量有一半來自位能項：
+\[
+\frac12\omega^2\langle x^2\rangle
+=\frac14\hbar\omega.
+\]
+因此
+\begin{equation}
+\langle x^2\rangle=\frac{\hbar}{2\omega}
+\sim\frac{\hbar}{\omega}.
+\label{eq:c10-zero-point-position}
+\end{equation}
+忽略二分之一這類因子，可用複數形式表示漲落尺度：
+\[
+x(t)\sim\sqrt{\frac{\hbar}{\omega}}\,e^{i\omega t}.
+\]
+微分後得到
+\begin{equation}
+\langle\dot x^{\,2}\rangle\sim\hbar\omega,
+\label{eq:c10-zero-point-velocity}
+\end{equation}
+這與動能、位能的平均值相等相符。冷卻可以移除\(n>0\)的激發態，但無法消除這些基態變異數。
+
+\section{阻尼、臨界阻尼與凍結}
+
+將振子置於黏滯介質中。彈簧與質量塊在蜂蜜中運動時，滿足
+\begin{equation}
+\ddot x+\gamma\dot x+\omega^2x=0,
+\label{eq:c10-damped}
+\end{equation}
+其中\(\gamma>0\)表示阻力大小。令\(x=e^{\alpha t}\)，可得
+\begin{equation}
+\alpha^2+\gamma\alpha+\omega^2=0,
+\end{equation}
+因此
+\begin{equation}
+\alpha_\pm
+=\frac{-\gamma\pm\sqrt{\gamma^2-4\omega^2}}{2}.
+\label{eq:c10-damped-roots}
+\end{equation}
+這兩個根提供了二階微分方程所需的兩個獨立解。
+
+\begin{classroomqa}
+\audiencequestion{方程~\eqref{eq:c10-damped}中的阻尼項是否應該帶負號？}
+\lecturerresponse{阻力本身為\(F_{\rm drag}=-\gamma\dot x\)。牛頓方程為\(\ddot x=-\gamma\dot x-\omega^2x\)。將兩個力項移至左側後，便得到符號為正的方程~\eqref{eq:c10-damped}。因此，微分方程中的符號與實際作用力的方向一致。\lecturetimestamp{00:59:38--01:00:10}}
+\end{classroomqa}
+
+若\(\gamma^2<4\omega^2\)，根便是複數。定義
+\[
+\Omega=\sqrt{\omega^2-\frac{\gamma^2}{4}}.
+\]
+則
+\begin{equation}
+x(t)=e^{-\gamma t/2}
+\left(A\cos\Omega t+B\sin\Omega t\right).
+\label{eq:c10-underdamped}
+\end{equation}
+振子仍會一再通過平衡點，但振幅包絡會逐漸衰減。這就是欠阻尼情況。
+
+若\(\gamma^2>4\omega^2\)，方程~\eqref{eq:c10-damped-roots}中的兩個根皆為負實數：
+\begin{equation}
+x(t)=A e^{\alpha_+t}+B e^{\alpha_-t}.
+\label{eq:c10-overdamped}
+\end{equation}
+此時不會持續振盪，兩個分量都會衰減。這就是過阻尼情況。在
+\begin{equation}
+\gamma=2\omega
+\label{eq:c10-critical}
+\end{equation}
+時，兩根重合，達到臨界阻尼，亦即兩種行為的轉換點。
+
+有一種極限情況特別重要。若沒有回復力，\(\omega=0\)，
+\[
+\alpha(\alpha+\gamma)=0,
+\]
+因此
+\begin{equation}
+x(t)=c_0+c_1e^{-\gamma t}.
+\label{eq:c10-no-restoring}
+\end{equation}
+速度會逐漸消失，但座標不必回到零，而會凍結在由初始條件決定的常數\(c_0\)。若一塊石頭沒有連接彈簧，卻被推著在蜂蜜中移動，阻力耗盡其運動後，石頭便會停在當下的位置。
+
+現在讓頻率緩慢變化。先從\(\omega\gg\gamma\)開始，此時振子會振盪；在阻尼尺度大致維持不變的情況下，逐漸降低\(\omega(t)\)。振盪會變慢，越過\(\gamma=2\omega\)後進入過阻尼狀態，並在\(\omega\to0\)時趨近無回復力的形式。等價地，也可以提高阻尼相對於回復力的比例。在宇宙學應用中，關鍵變化是有效頻率下降，而哈勃阻尼幾乎維持不變。不能只憑轉換點推得最後的凍結值；它取決於先前的完整演化與初始量子態。
+
+\section{膨脹宇宙中的標量波}
+
+回到暴脹場\(\phi\)。假設其位能包含一段高而寬的平台，接著陡降至較低的極小值。在平台上，重要的近似是
+\begin{equation}
+V'(\phi)\simeq0,
+\label{eq:c10-flat-potential}
+\end{equation}
+而非\(V(\phi)\simeq0\)。斜率很小，但能量密度仍可能足以驅動暴脹。這種位能形狀的具體起源並未交代；它是模型採用的唯象假設。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_02.png}
+\caption{左側仍可看見暴脹場的平台與陡降區，右側則開始寫出平直時空中的波動方程。黑板上可清楚辨認近似條件\(V'(\phi)=0\)及二階導數項的開頭，但講者遮住了尚未完成的方程；方程~\eqref{eq:c10-flat-wave}是依據口頭推導重建的。}
+\label{fig:c10-potential-wave}
+\lectureframe{01:17:17.865}
+\end{figure}
+
+對平直時空中的近自由標量場，
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\nabla^2\phi=0.
+\label{eq:c10-flat-wave}
+\end{equation}
+若位能不是平坦的，右側便會多出\(-V'(\phi)\)。在平台近似下，我們將它略去。若場完全均勻，空間導數便會消失。在膨脹宇宙中，剩下的均勻場方程為
+\[
+\ddot\phi+3H\dot\phi=0,
+\]
+也就是上一講的哈勃摩擦方程。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_03.png}
+\caption{左側標出平台，右側則依序寫出波動方程的各個步驟。上方的平直時空算符可清楚辨認；下方一行寫到\(+3H\)便未完成，因此完整的阻尼項是根據當時的講解補上的。}
+\label{fig:c10-hubble-board}
+\lectureframe{01:18:57.554}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.9cm,>=Latex]
+  \draw[->] (-0.2,0) -- (9.3,0) node[right] {\(\phi\)};
+  \draw[->] (0,-0.2) -- (0,4.6) node[above] {\(V(\phi)\)};
+  \draw[very thick,blue!55!black,smooth]
+    plot coordinates {(0.25,3.9) (1.4,3.88) (2.8,3.8) (4.2,3.6) (5.3,3.25) (6.0,2.6) (6.5,1.45) (6.9,0.45) (7.5,0.28) (8.5,0.7)};
+  \draw[dashed] (6.45,0) -- (6.45,2.0);
+  \draw[->,thick,red!65!black] (2.0,4.25) -- (3.1,3.82);
+  \node[anchor=south west] at (0.8,4.0) {slow-roll plateau: \(V'\simeq0\)};
+  \node[anchor=west] at (6.55,2.05) {end of inflation};
+  \node[anchor=north] at (7.45,0.22) {reheating region};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{整個論證使用的位能形狀重建圖。平緩的斜坡允許場緩慢滾動；\(V\)維持在高值，使\(H\)幾乎不變；陡降則使暴脹結束，並釋出儲存的能量。}
+\label{fig:c10-potential-reconstruction}
+\end{figure}
+
+對非均勻場，必須區分座標距離與物理距離。選用無量綱的共動座標\(\mathbf x\)，則微小的固有距離為
+\[
+d\boldsymbol\ell=a(t)\,d\mathbf x.
+\]
+在固定時間下，
+\[
+\nabla_{\rm proper}=\frac{1}{a}\nabla_{\mathbf x},
+\qquad
+\nabla_{\rm proper}^2=\frac{1}{a^2}\nabla_{\mathbf x}^2.
+\]
+因此標量場方程為
+\begin{equation}
+\ddot\phi+3H\dot\phi-\frac{1}{a^2}\nabla^2\phi=0,
+\label{eq:c10-frw-wave}
+\end{equation}
+其中\(\nabla\)表示對共動座標求導。若改用無量綱的尺度因子，則共動座標會帶有長度量綱；物理內容不變。
+
+\begin{classroomqa}
+\audiencequestion{方程~\eqref{eq:c10-frw-wave}中的空間項應該是正號嗎？}
+\lecturerresponse{不應該。平直時空的波算符本來就帶有相對符號\(\partial_t^2-\nabla^2\)。膨脹會以因子\(a^{-2}\)改變空間導數項，但不會反轉其符號。代入傅立葉模式後，兩個負號相消，模式方程便出現預期的正回復項\(+k^2\phi_k/a^2\)。\lecturetimestamp{01:22:18--01:23:06}}
+\end{classroomqa}
+
+\section{每個傅立葉模式都是阻尼振子}
+
+一次只考察一個空間波：
+\begin{equation}
+\phi(\mathbf x,t)
+=\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-mode-ansatz}
+\end{equation}
+複指數只是表示正弦與餘弦的記號。任意實值分布都可由模式疊加而成，並使\(\mathbf k\)與\(-\mathbf k\)之間滿足適當的實值條件。
+
+時間導數只作用在\(\phi_{\mathbf k}(t)\)上，而
+\[
+\nabla^2e^{i\mathbf k\cdot\mathbf x}
+=-k^2e^{i\mathbf k\cdot\mathbf x}.
+\]
+將它代入方程~\eqref{eq:c10-frw-wave}可得
+\begin{equation}
+\ddot\phi_{\mathbf k}
++3H\dot\phi_{\mathbf k}
++\frac{k^2}{a^2}\phi_{\mathbf k}=0.
+\label{eq:c10-mode-equation}
+\end{equation}
+因此，每個波數都如同一個阻尼振子，其中
+\begin{equation}
+\gamma=3H,
+\qquad
+\omega_k(t)=\frac{k}{a(t)}.
+\label{eq:c10-mode-identification}
+\end{equation}
+物理波數\(k/a\)會隨宇宙膨脹而紅移。因此，有效回復力\(k^2/a^2\)會減小並趨近於零。
+
+起初具有短物理波長的模式符合\(\omega_k\gg H\)，因此會振盪。其波長被拉長，頻率隨之下降，最後由哈勃阻尼主導。此時模式會趨近一個不再振盪的值，而非被拉回零。不同的\(\mathbf k\)模式會在不同時間轉換：在固定\(a\)時，較大的\(k\)對應較短的波長，因此必須經過更多膨脹，物理頻率才會降至哈勃尺度。
+
+\section{視界退出與凍結的真空漲落}
+
+以振子的臨界條件估算轉換點，並取量級為一的係數，
+\[
+\gamma=2\omega_k,
+\]
+將其代入方程~\eqref{eq:c10-mode-identification}可得
+\begin{equation}
+3H=\frac{2k}{a},
+\qquad
+a_{\rm cross}=\frac{2k}{3H}.
+\label{eq:c10-critical-mode}
+\end{equation}
+數值因子並非此處的概念重點。當物理波數\(k/a\)與\(H\)同量級時，便會發生轉換。
+
+令
+\[
+\lambda_{\rm com}=\frac{2\pi}{k},
+\qquad
+\lambda_{\rm phys}=a\lambda_{\rm com}
+=\frac{2\pi a}{k}.
+\]
+量綱檢查可確定\(a\)的位置：由於\(\mathbf x\)無量綱，\(k\)與\(\mathbf k\cdot\mathbf x\)皆無量綱，而\(a\)與\(\lambda_{\rm phys}\)具有長度量綱。因此，方程~\eqref{eq:c10-critical-mode}表示
+\begin{equation}
+\lambda_{\rm phys}\sim H^{-1},
+\label{eq:c10-horizon-crossing}
+\end{equation}
+兩者至多相差\(2\)、\(3\)或\(2\pi\)等因子。
+
+哈勃定律\(v=Hd\)將距離\(H^{-1}\)與量級為\(c=1\)的退行速度相聯繫。暴脹期間，\(H\)很大且近乎不變，因此哈勃長度雖然扮演因果尺度的角色，實際上卻很微小。稱這個事件為\emph{視界退出}是慣用說法：沒有任何物體穿過實際存在的牆。模式的物理波長增長並超過近乎固定的哈勃尺度，其動力學也從快速振盪轉變為振幅幾乎凍結。
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.85cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {cosmic time};
+  \draw[->] (0,0) -- (0,5.0) node[above] {physical length};
+  \draw[dashed,thick] (0.25,2.75) -- (8.75,2.75)
+    node[right] {\(H^{-1}\)};
+  \draw[very thick,blue!55!black]
+    (0.35,0.55) .. controls (3.3,0.75) and (5.3,1.55) .. (8.5,4.55);
+  \node[blue!55!black,anchor=west] at (6.65,4.55) {\(\lambda_{\rm phys}=2\pi a/k\)};
+  \draw[densely dotted] (6.05,0) -- (6.05,2.75);
+  \fill (6.05,2.75) circle (2pt);
+  \node[anchor=north] at (6.05,0) {horizon exit};
+  \node[align=center] at (2.6,1.7) {oscillating\\sub-Hubble mode};
+\end{tikzpicture}
+\end{coursefitfigure}
+在近乎指數膨脹期間，物理波長持續增長，哈勃長度則近乎固定。兩者相交時，模式便從快速振盪轉為凍結，差異至多在量級為一的因子內。\caption{}
+\label{fig:c10-horizon-reconstruction}
+\end{figure}
+
+真空漲落使暴脹無法單純抹去所有波動。每個短波長模式一開始都具有零點運動。膨脹會將一個模式拉伸至哈勃尺度並使它凍結，與此同時，更短波長的真空模式仍在振盪；它們之後也會依序被拉伸並凍結。如此反覆，便形成包含各種波長與方向之凍結成分的場分布。這個結果具有隨機性，卻並非毫無結構：其統計性質取決於量子態與暴脹背景。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_04.png}
+\caption{黑板上畫出長波與短波疊加而成的場波，旁邊則有一幅小型阻尼示意圖，並標示\(\gamma\)與\(3H\)。這張圖呈現的是模式的定性圖像，無法據此讀出精確函數。}
+\label{fig:c10-mode-board}
+\lectureframe{01:45:28.476}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{模式是在某個位置凍結，還是在某個波長凍結？\(H\)本身是否呈指數增長？}
+\lecturerresponse{模式在波長達到哈勃尺度時凍結。在近乎平坦的平台上，\(V\)近乎不變，因此\(H\)也近乎不變；呈指數增長的是尺度因子\(a(t)\)，因此物理波長\(a/k\)也會如此增長。每個共動模式都會在各自的時間達到條件\(k/a\sim H\)。\lecturetimestamp{01:45:06--01:45:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這些是電磁波嗎？}
+\lecturerresponse{不是。這些是暴脹場這個標量場的漲落。電磁真空漲落可作為熟悉的類比，但方程~\eqref{eq:c10-mode-equation}中的變數是\(\phi\)。\lecturetimestamp{01:45:39--01:46:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{波長是連續分布的嗎？}
+\lecturerresponse{是的，對無限空間的理想化情形而言如此。場可表示為傅立葉積分：
+\begin{equation}
+\phi(\mathbf x,t)
+=\int\frac{d^3k}{(2\pi)^3}\,
+\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-fourier-integral}
+\end{equation}
+所有波數都會經歷相同的紅移與凍結機制。\lecturetimestamp{01:46:04--01:46:34}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{有限宇宙中是否只有離散模式？}
+\lecturerresponse{是。有限空間體積上的邊界條件會使允許的波數量子化。若體積遠大於所討論的尺度，波數間距便可能細到足以用方程~\eqref{eq:c10-fourier-integral}中的積分很好地近似總和。連續模式只是理想化，局部機制並沒有不同。\lecturetimestamp{01:46:34--01:47:01}}
+\end{classroomqa}
+
+現在有兩種運動同時存在。空間平均場\(\bar\phi(t)\)沿著位能緩慢而近似經典地向下滾動；其上疊加著微小的量子漲落：
+\[
+\phi(\mathbf x,t)=\bar\phi(t)+\delta\phi(\mathbf x,t),
+\]
+這些漲落由已凍結的模式組成。漲落能量本身太小，無法構成觀測到的物質對比；它的重要性在於會擾動暴脹結束的時間。
+
+完整的單場量子計算能進一步精確化這個振子論證。對輕標量場而言，每個波數的對數區間內，典型漲落量級為
+\begin{equation}
+\delta\phi_{\rm exit}\sim\frac{H}{2\pi}.
+\label{eq:c10-field-amplitude}
+\end{equation}
+推導其歸一化須在暴脹背景中將場模式量子化。振子圖像已呈現關鍵機制：即使處於基態，真空漲落仍然存在；膨脹則將它們轉化為看似經典、並已凍結的圖樣。
+
+\section{陡降區將場的雜訊轉化為密度雜訊}
+
+先抑制\(\delta\phi\)。如此一來，在任一固定時刻，場在各處都具有相同的值；若將空間\(x\)畫在縱軸、場值\(\phi\)畫在橫軸，黑板上便是一條垂直線。隨著時間推進，這條線朝懸崖移動。整個宇宙同時抵達懸崖邊，暴脹場的位能轉化為粒子、輻射和熱，指數膨脹隨之結束，產生的能量密度開始隨一般膨脹而稀釋。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_05.png}
+\caption{黑板上的空間與場值示意圖。縱軸為\(x\)，橫軸為\(\phi\)；淡色的近垂直曲線標示依序出現的場組態，右側帶斜線的邊界則是暴脹結束處的懸崖。}
+\label{fig:c10-cliff-board}
+\lectureframe{01:50:54.502}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.82cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {\(\phi\)};
+  \draw[->] (0,0) -- (0,5.2) node[above] {space \(x\)};
+  \draw[thick,gray!60] (8.2,0.15) rectangle (8.55,4.85);
+  \foreach \y in {0.35,0.85,...,4.55} {
+    \draw[gray!60] (8.2,\y) -- (8.55,{\y+0.25});
+  }
+  \node[anchor=south,rotate=90] at (8.38,2.5) {cliff};
+  \draw[thick,densely dashed,gray!70] (3.2,0.2) -- (3.2,4.75);
+  \draw[thick,blue!45!black,smooth]
+    plot coordinates {(5.0,0.2) (5.12,0.75) (4.9,1.25) (5.18,1.8) (4.94,2.35) (5.2,2.9) (4.88,3.45) (5.12,4.05) (5.0,4.75)};
+  \draw[very thick,red!65!black,smooth]
+    plot coordinates {(7.15,0.2) (7.32,0.7) (7.0,1.2) (7.42,1.75) (7.1,2.3) (7.5,2.85) (7.02,3.35) (7.35,4.0) (7.16,4.75)};
+  \draw[->,thick] (3.55,2.5) -- (4.55,2.5);
+  \draw[->,thick] (5.55,2.5) -- (6.65,2.5);
+  \node[align=center,anchor=south,font=\small] at (3.2,4.8) {uniform\\profile};
+  \node[align=center,anchor=south,font=\small] at (5.0,4.8) {frozen\\ripple};
+  \node[align=center,anchor=south,font=\small] at (7.2,4.8) {near\\reheating};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{空間與場值圖的清晰重繪。平均場朝懸崖移動，同時凍結的空間漣波仍然存在，因此不同位置抵達暴脹終點的時間略有不同。}
+\label{fig:c10-cliff-reconstruction}
+\end{figure}
+
+恢復這個凍結的變化後，線條便略呈波浪狀：相鄰位置的\(\phi\)值略有不同。想像一列人肩並肩地朝懸崖行進，有些人稍微超前，有些人稍微落後。超前的人先掉下去。
+
+這種時間差才是密度對比真正的來源。較早越過懸崖的區域也較早再加熱。該區域的位能轉化為粒子和熱；之後在暴脹後時期，宇宙繼續膨脹，這些能量便有較長時間稀釋。鄰近區域稍晚越過懸崖，也就稍晚再加熱；因此兩者相比時，較晚越過的區域密度較高，單純是因為它稀釋的時間較短。於是，第一批越過懸崖的位置留下了相對高密度的區域。這些區域膨脹之際，較短波長的漣波又使另一批位置越過懸崖，並在較大的圖樣中形成更小的區域。這個過程在凍結模式的整個層級上反覆發生，便形成了層層相套的結構。因此，微小的場漲落之所以重要，不在於它本身的能量，而在於它改變了局部再加熱發生的時間。
+
+這種時間關係可以用示意式表示。若均勻場以\(\dot{\bar\phi}\)的速度到達終值\(\phi_{\rm end}\)，微小的場位移便會改變局部的終止時間：
+\begin{equation}
+\delta t_{\rm end}
+\simeq-\frac{\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-time-delay}
+\end{equation}
+場滾動得越慢，同樣的\(\delta\phi\)所造成的延遲就越長。在這段額外時間裡，較早越過懸崖的區域膨脹得更多，稀釋也更充分。忽略量級為一的轉換因子後，曲率或密度擾動因此由下式決定：
+\begin{equation}
+\mathcal R
+\sim H\,\delta t_{\rm end}
+\sim-\frac{H\,\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-curvature-estimate}
+\end{equation}
+將此結果與方程~\eqref{eq:c10-field-amplitude}合併，可得熟知的慢滾振幅尺度：
+\begin{equation}
+\mathcal P_{\mathcal R}^{1/2}
+\sim\frac{H^2}{2\pi|\dot{\bar\phi}|},
+\label{eq:c10-slow-roll-amplitude}
+\end{equation}
+至於精確的慣例，以及後續如何轉換成\(\delta\rho/\rho\)，則需要更完整的擾動計算。場滾動得越慢，相鄰位置越過懸崖的時間間隔就越長，期間的稀釋也越多。因此，當\(\lvert\dot{\bar\phi}\rvert\)較小時，同樣的場漲落會留下較大的密度印記。
+
+許多模式在不同時間越過哈勃尺度，因此大小各異的許多區域會在略有差異的時間再加熱。由此形成的密度場包含跨越不同尺度、層層相套的過密與欠密區域。這些區域的統計性質取決於暴脹位能的高度、斜率和曲率。適當的慢滾模型自然會產生近乎標度不變、振幅接近
+\[
+\frac{\delta\rho}{\rho}\sim10^{-5},
+\]
+的擾動；詳細的 CMB 譜則讓我們能在許多角尺度上檢驗少數幾個宇宙學參數。
+
+\section{從原初種子回望天空}
+
+現在可以回到位於一系列過去光錐殼中心的觀測者。最後散射球面穿過三維的原初密度場。球面穿越不同重力位能的方向，會呈現略有差異的微波溫度。WMAP 展示的就是這個球面上的二維圖樣。這幅圖既不是宇宙時間零點的照片，也不是球面內所有結構的投影；它呈現的是微波光子最後散射之處，也就是那個特定球面上的溫度分布。
+
+在球面內部，同一批原初擾動仍持續演化。重力放大過密區域，類似焦散的流動使片狀與絲狀結構變得更明顯，氣體聚集，星系形成。因此，CMB 圖樣與後來形成的宇宙網，是同一段歷史的兩個階段：凍結的暴脹漲落最初呈現為微小的密度種子，後來則發展成可見的結構。
+
+\begin{classroomqa}
+\audiencequestion{我們今天看到的微波背景代表哪個時期？}
+\lecturerresponse{這些光子大約經過 \(13\) 十億年才抵達我們，但它們是在熱大爆炸後幾十萬年釋出的；當時電子與質子結合成中性氫，宇宙也因此變得透明。暴脹結束的時間則早得多。再加熱產生了熱物質與輻射；此後宇宙持續膨脹、冷卻，直到最後散射。就這裡的論述而言，穩妥的說法是給出數量級---幾十萬年---，而不是指定精確的復合時刻。 \lecturetimestamp{02:00:38--02:02:19}}
+\end{classroomqa}
+
+\section{一片天空與宇宙方差}
+
+\begin{classroomqa}
+\audiencequestion{暴脹是否預言了 WMAP 報導的優選方向，或南--北不對稱？}
+\lecturerresponse{本文介紹的簡單暴脹圖景並不會導出這類優選方向。當時所報導的大角尺度異常究竟代表什麼尚無定論，前景污染與統計漲落也都是實際需要考慮的因素；若要負責任地評估，必須參考專業文獻，而不能只作聳動的概述。暴脹預言的是一個系綜的統計性質；要判斷天空中某個看似異常的特徵是否代表新物理，則困難得多。 \lecturetimestamp{02:02:19--02:03:26}}
+\end{classroomqa}
+
+小角尺度的特徵在天空中會多次出現，因而提供許多樣本，可用來以統計方法檢驗其分布與各向同性。四極矩尺度的特徵則不同：在可觀測球面上，能容納的獨立大角尺度模式只有少數幾個。因此，即使底層理論正確，測得的功率仍可能與系綜平均值相差甚遠。這種無法消除的取樣不確定性稱為\emph{宇宙方差}。
+
+\begin{classroomqa}
+\audiencequestion{那麼，幾個低多極矩看來彼此對齊，又該如何解讀？}
+\lecturerresponse{這可能是線索、前景污染或分析造成的假象，也可能只是機率不高但仍容許的一種實現。困難在於，我們無法從同一個統計系綜中再抽取另一個可觀測宇宙。擲六次硬幣出現四次正面，不表示硬幣一定有偏；重複多批試驗才能判斷，但在最大尺度上，宇宙學只提供一批資料。這個異常也許值得研究，但單憑一片天空，無法進行決定性顯著性檢驗所需的重複試驗。 \lecturetimestamp{02:05:31--02:07:36}}
+\end{classroomqa}
+
+\section{從量子運動到宇宙結構}
+
+三個普適常數定義了普朗克尺度，也顯示熟悉的粒子物理與量子重力相距多遠。微波天空提供了精確的宇宙學目標：近乎各向同性、約為 \(10^{-5}\) 的漲落振幅，以及分布於許多尺度上的結構。量子力學確保每個場模式都有零點漲落。暴脹會拉伸每個暴脹子模式，直到其物理波長達到\(H^{-1}\)左右；此時哈勃阻尼會抑制其振盪，留下近乎凍結的振幅。
+
+均勻的暴脹場在這些凍結的漲落之下持續滾動。當場到達平臺末端時，相鄰區域的再加熱時間不會完全相同。較早再加熱的區域有較長時間稀釋；較晚再加熱的區域則維持較高密度。這便將\(\delta\phi\)轉化為原初密度與曲率圖樣。之後，重力將這些圖樣放大，形成星系與宇宙網；最後散射球面則在微波天空中保留了它們較早時期的狀態。因此，微觀的零點運動、宇宙膨脹與先後不一的再加熱並非彼此無關的過程。三者共同說明，暴脹宇宙何以既極其平滑，又具有足以讓我們存在的結構。

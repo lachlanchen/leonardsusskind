@@ -1,0 +1,537 @@
+\chapter{重子生成、宇宙平滑性與哈伯摩擦}
+
+\lectureoverview{今晚的內容由兩個小的無量綱數貫串。第一個是倖存下來的物質--反物質不對稱；課程中將它取整為\(10^8\)分之一。要從動力學解釋這種不對稱，必須有重子數破壞、粒子--反粒子不對稱，以及偏離熱平衡，這就是薩哈羅夫的三個條件。第二個是在解耦時量級約為\(10^{-5}\)的原初密度對比。重力會放大這類漣漪，而非將它們抹去；因此，漣漪如此微小，促使我們考慮暴脹。接著，我們推導膨脹宇宙中均勻標量場的運動方程，藉此為理解暴脹的力學作準備，並指出\(3H\dot\phi\)就是哈伯摩擦。}
+
+\section{把熵的問題倒過來問}
+
+今晚我們要開始討論暴脹，但得先把重子生成講完，也就是物質多於反物質的過程。這套架構比任何詳細的數值模型都可靠。因此，儘管核心數值尚未從第一性原理推導出來，仍能簡潔地概述這個主題。
+
+這個問題的歷史脈絡始於1980年。當時，Bob Wagoner 問 Savas Dimopoulos 和 Leonard Susskind，宇宙的熵為何如此之大。換成宇宙學的說法，問題就是：每個倖存的質子為何對應如此多的光子？
+
+在極高溫下，光子、夸克、反夸克、電子和正電子都大量存在，且接近熱平衡。夸克和反夸克各自的數密度，與光子數密度大致處於同一量級。這個觀察已提示我們倒過來問：湮滅之後，為何還留下任何未配對的物質？
+
+這項結構性論證的優先權屬於 Andrei Sakharov。Dimopoulos 和 Susskind 在1980年獨立提出了相近的條件；他們準備一篇歷史回顧時，才找到 Sakharov 在1967年的論文。如今這些條件以 Sakharov 命名，確實恰如其分。
+
+現在可以明確說明熵與光子數的關係。黑體輻射的熵與光子數成正比，兩者只差一個量級為一的固定因子。確實，
+\begin{equation}
+s_\gamma=\frac{4\rho_\gamma}{3T},
+\qquad
+n_\gamma\propto T^3,
+\end{equation}
+因此，共動熱光子氣體滿足\(S_\gamma\propto N_\gamma\)。數值常數並非問題所在；真正的謎題是光子與質子的數量比為何如此巨大。
+
+\begin{classroomqa}
+\audiencequestion{光子的豐度與熵有什麼關係？}
+\lecturerresponse{黑體輻射處於熱狀態，其熵與平均光子數成正比。在這裡，問宇宙熵為何如此之大，實際上就是問宇宙微波背景中每個質子為何對應如此多的光子。這個正比關係包含數值常數，但那些常數不影響這個量級上的謎題。\lecturetimestamp{00:04:49--00:05:55}}
+\end{classroomqa}
+
+宇宙冷卻時，粒子與反粒子彼此湮滅；輻射則留存下來，最後解耦。因此，令人意外的不是光子留了下來，而是湮滅後竟還剩下一小群未配對的物質。
+
+因此，有用的無量綱數是
+\begin{equation}
+\eta_B
+\equiv
+\frac{N_B-N_{\bar B}}{N_\gamma}
+\sim
+\frac{N_p-N_{\bar p}}{N_p+N_{\bar p}}
+\sim 10^{-8},
+\label{eq:c08-baryon-asymmetry}
+\end{equation}
+最後這個數值是課程中採用的約略量級，並非精確測量值。一旦出現一個看似奇特的數字，``它從一開始就是這樣''便不足以作為令人滿意的解釋。定量機制應該能說明答案為何如此小，以及為何具有確定的符號。
+
+將這種過剩稱為\emph{物質}而非\emph{反物質}，部分是約定俗成的：我們由這一方構成。物理上要說的只是，在整個可觀測區域中，某一種符號占了優勢。
+
+\section{重子數與第一個條件}
+
+重子數的歸一化方式是讓質子或中子帶有\(B=1\)。用夸克來表示，
+\begin{equation}
+B=\frac{N_q-N_{\bar q}}{3}.
+\label{eq:c08-baryon-number}
+\end{equation}
+因子\(1/3\)不可或缺，因為每個普通重子都含有三個價夸克。其他強子也可能帶有重子數，但不穩定的強子終究會衰變；淨夸克數的差額則是更一般的記帳方式。
+
+\begin{classroomqa}
+\classquestion{淨夸克數應該乘以三，還是除以三？}
+\lecturerresponse{必須除以三。質子有三個夸克，重子數為一，所以\(3B=N_q-N_{\bar q}\)。黑板上的修正屬於定義的一部分，並未改變物理論證。\lecturetimestamp{00:09:23--00:10:17}}
+\end{classroomqa}
+
+重子數和電荷相似之處，只在於兩者都可能是守恆量。電荷也會產生長程庫侖場；重子數則不會。質子會產生電場，是因為它帶有電荷；中子雖有重子數，淨電荷卻為零。因此，守恆與產生作用力在邏輯上是兩種不同的性質。
+
+\begin{classroomqa}
+\audiencequestion{重子數與電荷有什麼關鍵差異？}
+\lecturerresponse{兩者都能作為記帳用的荷，但目前已知只有電荷會產生長程電磁場。重子數不會產生相應的庫侖力。\lecturetimestamp{00:11:03--00:12:15}}
+\end{classroomqa}
+
+如果\(B\)嚴格守恆，初始的過剩就會永遠凍結不變。粒子對的產生與湮滅可以分別改變\(N_B\)和\(N_{\bar B}\)，但兩者改變的量必定相等，因此它們的差保持不變。所以，若重子數不能改變，從平衡狀態出發的動力學理論便無法產生過剩。
+
+最簡明的示意例子是質子衰變。由於電荷與能量守恆，我們可以設想
+\begin{equation}
+p\longrightarrow e^+ +\gamma,
+\qquad
+\bar p\longrightarrow e^-+\gamma.
+\label{eq:c08-decay-pair}
+\end{equation}
+這些通道只是用來說明重子數破壞的記帳模型，並非預測實驗中占主導的通道。它們會使\(B=+1\)或\(-1\)變為零，同時保持電荷守恆。
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[->,thick] (0,1.7)--(2.0,1.7);
+\draw[->,thick] (2.0,1.7)--(4.1,2.55);
+\draw[->,thick] (2.0,1.7)--(4.1,0.85);
+\node[above] at (0.9,1.7) {\(p,\ B=1\)};
+\node[right] at (4.1,2.55) {\(\gamma\)};
+\node[right] at (4.1,0.85) {\(e^+\)};
+\draw[->,thick] (6.0,1.7)--(8.0,1.7);
+\draw[->,thick] (8.0,1.7)--(10.1,2.55);
+\draw[->,thick] (8.0,1.7)--(10.1,0.85);
+\node[above] at (6.9,1.7) {\(\bar p,\ B=-1\)};
+\node[right] at (10.1,2.55) {\(\gamma\)};
+\node[right] at (10.1,0.85) {\(e^-\)};
+\node at (2.0,0.25) {\(B:1\to0\)};
+\node at (8.0,0.25) {\(B:-1\to0\)};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{電荷共軛的示意通道。兩種過程都會破壞重子數，但若速率相同，就不會偏向任何一種符號。}
+\label{fig:c08-decay-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{質子能不能改為衰變成正電子和中微子？}
+\lecturerresponse{這個由兩個費米子構成的末態，與由一個費米子構成的初態，其費米子宇稱不相符。示意性的末態\(e^++\gamma\)含有一個費米子，足以說明這項對稱性論證。實際的質子衰變理論可能包含其他粒子和通道；此處只需展示\(\Delta B\ne0\)即可。\lecturetimestamp{00:14:39--00:15:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{重子數嚴格守恆是否代表存在某種對稱性？}
+\lecturerresponse{是。守恆量可能與連續相位對稱性相關，但光是替這種對稱性命名，並不能獨立證明自然界遵守它。實際的檢驗仍是重子數改變過程是否發生；若只憑守恆定律推定對稱性，論證就成了循環論證。\lecturetimestamp{00:15:08--00:15:46}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{質子--反質子湮滅本身能不能算是質子衰變？}
+\lecturerresponse{如何稱呼是次要的，守恆定律才是關鍵。在\(p+\bar p\to\text{photons}\)中，初態的重子數為\(1-1=0\)，末態的重子數也為零。湮滅移除了兩個粒子，卻沒有改變淨\(B\)；方程~\eqref{eq:c08-decay-pair}中的單粒子衰變通道則會改變\(B\)。\lecturetimestamp{00:15:48--00:16:47}}
+\end{classroomqa}
+
+目前的質子極其穩定：講課中引用的壽命下限約為\(10^{32}\)--\(10^{34}\)年，遠長於宇宙年齡。這項觀測並不能證明重子數嚴格守恆；它只表示在目前的能量下，重子數改變過程極為緩慢。
+
+\section{離散對稱性與偏向的必要性}
+
+接下來要問的是，物理定律是否區分物質與反物質。三種離散變換可以整理出答案：
+\begin{align}
+C&:\ \text{particle}\longleftrightarrow\text{antiparticle},\\
+P&:\ \mathbf x\longmapsto-\mathbf x,\\
+T&:\ t\longmapsto-t.
+\end{align}
+其中\(P\)會反轉空間的左右手性，\(T\)則會將微觀過程倒帶。宏觀的熱力學第二定律不必呈現時間反演不變性；此處討論的是底層的微觀動力學。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}
+\caption{黑板先帶入修正後的定義\(B=(N_q-N_{\bar q})/3\)，再引入\(C\)，即電荷共軛。charge 一詞後面尚未寫完的內容不作為獨立證據。}
+\label{fig:c08-charge-board}
+\lectureframe{00:20:23.280}
+\end{figure}
+
+相對論性局域量子場論不要求\(C\)、\(P\)或\(T\)各自都是對稱性。但在標準假設下，它確實要求組合變換\(CPT\)是對稱性。如果某個過程可能發生，那麼將每個粒子換成其反粒子、反射空間構形並反轉運動方向後，所得過程也同樣可能發生。
+
+量子力學中的時間反演，比單純改變\(t\)的符號更為微妙。對於處在時間反演不變勢中的無自旋波函數，
+\begin{equation}
+i\hbar\frac{\partial\psi}{\partial t}=H\psi,
+\qquad
+T:\ \psi(\mathbf x,t)\longmapsto\psi^*(\mathbf x,-t).
+\end{equation}
+將\(t\to-t\)反轉會改變時間導數的符號；複共軛也會使\(i\to-i\)，使方程恢復原狀。對有自旋的粒子而言，反么正時間反演算符還有額外結構；不過，即使在這個簡單例子中，也已經看得出複共軛的作用。
+
+\begin{classroomqa}
+\audiencequestion{對波函數作時間反演時，除了\(t\to-t\)，是否也需要複共軛？}
+\lecturerresponse{是。薛丁格方程說明了原因：只反轉時間導數，會使等式兩側的變化不一致；複共軛也會反轉\(i\)的符號。\lecturetimestamp{00:23:58--00:25:04}}
+\end{classroomqa}
+
+現在可以陳述第一個薩哈羅夫條件。若宇宙起初的粒子與反粒子數量相等，粒子對的產生和湮滅便會維持淨重子數為零，除非有某種過程能改變\(B\)：
+\begin{equation}
+\boxed{\text{baryon-number violation}.}
+\end{equation}
+沒有這個條件，對稱的初態就永遠無法產生非零的重子過剩。
+
+質子目前的穩定性與這項條件並不矛盾。在大統一理論的框架中，重子數破壞可以由質量\(M_X\)極大的粒子媒介。在能量遠低於\(M_X\)時，有效振幅會按逆次方受到抑制，示意如下：
+\begin{equation}
+\begin{aligned}
+\mathcal A_{\Delta B\ne0}&\propto \frac{E^2}{M_X^2},\\
+\Gamma_p&\sim \frac{m_p^5}{M_X^4}.
+\end{aligned}
+\label{eq:c08-heavy-suppression}
+\end{equation}
+衰變率的估算具有通常的六維算符標度，另有耦合常數與通道相關因子。\(M_X\)若極大，冷質子便能有效地保持穩定；但在能量足夠高的早期等離子體中，改變重子數的反應仍可能發生。
+
+\begin{classroomqa}
+\audiencequestion{額外的碰撞能量已經算在重粒子的質量\(M_X\)裡了嗎？}
+\lecturerresponse{沒有。\(M_X\)是媒介粒子的靜止質量尺度；\(E\)則是碰撞中可用的能量。當\(E\ll M_X\)時，依\(E/M_X\)作低能展開會受到強烈抑制；隨著熱碰撞能量尺度接近重粒子閾值，這種抑制便會減弱。黑板上啟發式寫下的分母，應從這種有效場論的角度理解。\lecturetimestamp{00:32:32--00:34:02}}
+\end{classroomqa}
+
+假設初態中粒子與反粒子的數量相等。即使有重子數破壞，反應仍不會偏向任何一方。每個衰變\(p\to e^++\gamma\)都會有一個電荷共軛過程\(\bar p\to e^-+\gamma\)；熱等離子體也會促成逆反應。若微觀機率相同，重子數雖會在反應中改變，平均而言卻不會朝任何方向偏移。
+
+\begin{classroomqa}
+\audiencequestion{反質子示意圖中的重子數改變了多少？}
+\lecturerresponse{入射反質子的重子數為\(B=-1\)，電子和光子的重子數則為\(B=0\)；因此，這個通道會使重子數從\(-1\)變為零。它的共軛通道則會使重子數從\(+1\)變為零。兩個通道若同樣常見，就不會產生淨偏向。\lecturetimestamp{00:37:24--00:37:39}}
+\end{classroomqa}
+
+隨機漲落遠不足以解釋觀測到的過剩。若\(N\)個獨立事件對兩種結果的機率相同，則
+\begin{equation}
+\Delta N\sim\sqrt N,
+\qquad
+\frac{\Delta N}{N}\sim N^{-1/2}.
+\end{equation}
+若以課程中對可觀測宇宙重子數的粗略估計\(N\sim10^{80}\)代入，就得到
+\begin{equation}
+\frac{\Delta N}{N}\sim10^{-40},
+\end{equation}
+比\(10^{-8}\)小三十二個數量級。拋硬幣般的漲落，也無法說明為何所有觀測區域都由同一種符號占優勢。
+
+\begin{classroomqa}
+\audiencequestion{如果初始粒子數大得多，例如後來成為我們可觀測宇宙的共動區域中有\(10^{160}\)對粒子，能否藉由漲落得到\(10^{80}\)？}
+\lecturerresponse{平方根的估算確實容許這種刻意設想的粒子數，但它無法解釋觀測到的空間一致性。不受限制的統計漲落自然會形成由物質或反物質占主導的不同區域，而不是讓可見宇宙都由同一種符號占優勢。\lecturetimestamp{00:39:38--00:40:18}}
+\end{classroomqa}
+
+講課時所採用的觀測論證有兩類證據。宇宙射線中觀測得到普通原子核，包括氦核；當時討論的資料則未觀測到反原子核。單看反質子，證據較不具決定性，因為高能碰撞能產生次級反質子。此外，物質星系與反物質星系之間的邊界會產生顯著的湮滅輻射。缺少這種邊界訊號，強烈不利於可觀測區域內的星系與反星系等量混合。這些是講課當時脈絡下的觀測論據，並非對我們視界以外區域的主張。
+
+\begin{classroomqa}
+\audiencequestion{宇宙射線中的氦核本身有被測量到嗎？}
+\lecturerresponse{有。帶電氦核可以直接測量。詳細的宇宙射線統計是另一個專業領域；此處論證的要點，是常見的普通原子核與缺乏相當數量反原子核之間的對比。\lecturetimestamp{00:41:53--00:42:22}}
+\end{classroomqa}
+
+因此，我們需要微觀上的偏向：\(C\)破壞，以及在實際的重子生成討論中也需要\(CP\)破壞。中性\(B\)介子系統提供了實驗室中的例子。中性介子及其反粒子可以衰變至彼此共軛的末態，而部分衰變率並不相等：
+\begin{equation}
+\Gamma(B^0\to f)\ne\Gamma(\bar B^0\to\bar f).
+\label{eq:c08-cp-partial}
+\end{equation}
+黑板上並未確定具體通道或不對稱性的數值；可靠的結論是，弱衰變中的粒子--反粒子不對稱已由實驗確立。
+
+然而，\(CPT\)定理要求真空中的粒子與其反粒子質量相等，總衰變寬度也相等：
+\begin{equation}
+\Gamma_{\rm tot}(p)=\Gamma_{\rm tot}(\bar p).
+\end{equation}
+這並不要求每個分支比都相同。一對共軛通道的差異，可以由其他通道的差異補償，例如示意性的電子與 {\proseunicodefont μ} 子通道，讓各通道的總和仍然相等。
+
+\begin{classroomqa}
+\audiencequestion{既然質子與反質子的總衰變率相等，偏向又如何產生？}
+\lecturerresponse{總衰變寬度相等，不代表每個通道的衰變率都相等。此外，重子生成發生在等離子體中：熱佔據因子、逆反應與散射通道都會進入動力學方程。關鍵並不是介質簡單地規避\(CPT\)，而是當細緻平衡遭到破壞時，\(CP\)不對稱的部分反應能產生源項。\lecturetimestamp{00:49:39--00:51:48; 00:53:22--00:57:14}}
+\end{classroomqa}
+
+這就是第二個薩哈羅夫條件：
+\begin{equation}
+\boxed{C\ \text{and}\ CP\ \text{violation}.}
+\end{equation}
+它為改變重子數的反應提供方向性。薩哈羅夫論文發表前不久，人們發現了\(CP\)破壞，使這項條件有了具體的物理依據。
+
+談到最小標準模型時，必須仔細區分不同情況。它不允許通常的微擾質子衰變，但電弱反常會造成\(B+L\)的非微擾破壞；在高溫下，鞅子躍遷可以讓這種破壞變得有效。這才是黑板上後來自行修正之處的正確內容。至於標準模型的源項單獨能否定量重現宇宙不對稱，則是另一個困難得多的問題。
+
+\section{平衡與第三個條件}
+
+還有一個障礙。在完全熱平衡中，每個反應都由其逆反應平衡。若重子數能改變，其平衡化學勢便無法保留任意的初始\(B\)；細緻平衡也會抹去任何已生成的過剩。講課中用\(CPT\)表達同一個意思：靜態的平衡熱浴沒有宏觀時間箭頭，因此\(T\)因子無法提供過程與其逆過程之間所缺少的區分。
+
+實際的宇宙正在膨脹並冷卻。因此，宏觀狀態能區分時間的正向與反向。但只有當膨脹的影響足以與微觀弛豫競爭時，這才會造成差異：
+\begin{equation}
+\Gamma_{\rm reaction}\lesssim H.
+\label{eq:c08-freezeout-condition}
+\end{equation}
+如果\(\Gamma_{\rm reaction}\gg H\)，碰撞就會迅速恢復平衡，儘管宇宙正在膨脹。若反應速率低於哈伯速率，等離子體便無法重新調整，粒子豐度也就凍結。
+
+\begin{classroomqa}
+\audiencequestion{為什麼光有膨脹，不一定就能讓系統脫離平衡？}
+\lecturerresponse{若熱浴膨脹得極慢，微觀反應會不斷使它重新調整，因此它會任意接近平衡。只有當膨脹或冷卻時間\(H^{-1}\)短於相關的反應時間\(\Gamma^{-1}\)，偏離平衡才會變得顯著。這時，從宏觀狀態的演變便能看出哪個方向是時間的正向。\lecturetimestamp{01:01:22--01:02:26}}
+\end{classroomqa}
+
+現在可以整理薩哈羅夫的三個條件：
+\begin{enumerate}
+\item 重子數破壞，讓\(B\)能夠改變；
+\item \(C\)與\(CP\)破壞，讓這種改變具有偏向；
+\item 偏離熱平衡，使細緻平衡無法抵銷這種偏向。
+\end{enumerate}
+對於此處討論的機制，這些條件是必要的，也提供了一條在結構上足以產生過剩的途徑。但若沒有具體的高能模型、反應網路和宇宙學歷史，就無法確定過剩的大小。
+
+\begin{classroomqa}
+\audiencequestion{不對稱性的測量值能否限制高能理論？}
+\lecturerresponse{原則上可以。實際上，結果取決於許多未知的質量、耦合常數、相位、反應速率，以及早期宇宙的演化特徵。因此，若不採用某個詳細模型，很難從單一測量值推得範圍狹窄的允許區域。\lecturetimestamp{01:04:20--01:04:52}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{重子不對稱與電子不對稱如何相互關聯？}
+\lecturerresponse{電中性使兩者相互關聯。在這個示意通道中，移除一個質子會產生一個正電子；重子不平衡反轉時，輕子不平衡也會朝補償的方向改變。更一般地說，重子生成與輕子生成會透過電荷守恆及標準模型反應彼此耦合；但具體守恆的組合取決於所採用的機制。\lecturetimestamp{01:04:54--01:05:59}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{觀測到的標準模型\(CP\)破壞是否太弱，無法解釋重子過剩？}
+\lecturerresponse{詳細的電弱重子生成分析通常得出這個結論，但講課中特別強調，計算結果依賴模型，而且高能物理仍有許多未知之處。此處可以確定地說，已知的低能\(CP\)破壞確實存在；而要建立成功的數值重子生成模型，通常還需要額外要素。\lecturetimestamp{01:06:01--01:07:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{今天的電子只是來自反質子的消失嗎？}
+\lecturerresponse{這些示意通道容易讓人以為可以如此記帳，但早期等離子體中也有各自獨立、近乎對稱的輕子族群。相關機制可以表述為重子生成或輕子生成，之後再由反應將不對稱轉移到不同部門。歷史上使用的\emph{重子生成}一詞，不應被誤解為每個電子都有一條特定的微觀起源。\lecturetimestamp{01:07:51--01:08:44}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼討論通常聚焦在重子，而不是所有輕子？}
+\lecturerresponse{我們可以透過原子光譜及其他天文觀測盤點重子物質；宇宙中微子部門則難以直接計數。這個名稱既反映了當時觀測上較容易取得的資訊，也反映了這門學科的歷史。\lecturetimestamp{01:08:45--01:09:12}}
+\end{classroomqa}
+
+\section{湮滅留下過剩}
+
+高溫下，粒子對的產生與湮滅會雙向進行：
+\begin{equation}
+\gamma+\gamma\longleftrightarrow p+\bar p,
+\qquad
+E_{\gamma\gamma}\gtrsim2m_pc^2\approx2\,\mathrm{GeV}.
+\end{equation}
+熱浴冷卻時，能量足以產生重子對的光子會按指數快速減少。湮滅在能量上仍然可能發生，但逆向的粒子對產生已無法維持平衡。幾乎每個質子都會遇上反質子而湮滅，最後留下的就是方程~\eqref{eq:c08-baryon-asymmetry}所示的微小過剩。高能湮滅光子會迅速與熱浴交換能量。
+
+\begin{classroomqa}
+\audiencequestion{比值\(10^{-8}\)是現在的數值嗎？大量湮滅又發生在何時？}
+\lecturerresponse{這是課程中所說的當前重子與光子數量比的量級。較早時，重子和反重子都數量龐大。當逆向的粒子對產生變得無效，兩者中對稱的部分便湮滅，只留下淨過剩。\lecturetimestamp{01:09:13--01:11:44}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{質子--反質子湮滅何時停止？}
+\lecturerresponse{反質子的豐度降至可忽略時，湮滅便停止。講課只指出大致時期：當時溫度約為 GeV 量級，遠早於核合成，更遠早於復合。這段討論並未推定確切時間。\lecturetimestamp{01:11:45--01:12:13}}
+\end{classroomqa}
+
+湮滅產生的光子並未消失；它們屬於最終形成微波背景的熱輻射演化歷程。然而，今天輻射對能量收支的貢獻很小，因為
+\begin{equation}
+\rho_{\rm rad}\propto a^{-4},
+\qquad
+\rho_m\propto a^{-3}.
+\end{equation}
+光子數量雖多，但每個光子的能量都會紅移；物質則保有靜止質量能量。
+
+\begin{classroomqa}
+\audiencequestion{湮滅既然產生了這麼多光子，為什麼今天輻射在動力學上可以忽略？}
+\lecturerresponse{光子依然存在，主要以微波背景的形式留存，但其能量密度會多出一個尺度因子的冪次而衰減。宇宙膨脹既稀釋光子數量，也使每個光子的能量紅移。\lecturetimestamp{01:12:14--01:13:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{媒介粒子若極重，是否表示標準模型並不完整？}
+\lecturerresponse{大統一理論中的質子衰變媒介粒子，確實會是最小標準模型以外的新物理。後來對標準模型重子數異常破壞的修正，既沒有提出這類普通的質子衰變粒子，也沒有單獨給出完整的定量重子生成模型。\lecturetimestamp{01:13:20--01:13:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{若兩個示意衰變通道的差異極大，能否將原本只有\(p\)和\(\bar p\)粒子的族群，轉變成觀測到的電子與質子數量相等的狀態？}
+\lecturerresponse{這種記帳方式可以想像，但處於熱平衡的等離子體本來就含有大量所有可參與反應的粒子與反粒子。此外，觀測到的\(CP\)不對稱，並不表示可以任意讓某一個通道占主導。自洽的模型必須演化完整的耦合反應網路，而不是只考慮黑板上的兩個箭頭。\lecturetimestamp{01:13:33--01:15:10}}
+\end{classroomqa}
+
+重子生成的討論到此就告一段落。定性的要素已經知道，但觀測到的數值仍未能推導出來。要得到更完整的答案，還需要更完整的粒子理論，以及對極早期宇宙演化過程的可靠掌握。
+
+\section{第二個數：原初的起伏}
+
+暴脹也試圖解答另一個透過宇宙微波背景觀測而能定量探討的問題：為什麼宇宙在大尺度上如此均勻且各向同性？宇宙微波背景的黑體譜精確得驚人，溫度接近\(2.7\,\mathrm K\)，而且各個方向的溫度幾乎相同。過去只是對宇宙的一般印象，如今已成為精確測量所確立的事實。
+
+引力使宇宙的平滑性更加令人驚訝。擴散會使一滴墨水散開，直到其濃度均勻。吸引性的引力作用恰好相反：過密區域會吸引周圍物質，使自身密度增加，同時使鄰近區域的物質變得稀疏。因此，微小擾動會隨時間增長，成為星系、星系團和宇宙空洞的種子。
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[thick] (-4.2,0) ellipse (1.25 and 0.72);
+\draw[very thick] (0,0) ellipse (1.55 and 0.92);
+\draw[thick] (4.2,0) ellipse (1.25 and 0.72);
+\node at (-4.2,0) {underdense};
+\node at (0,0) {overdense};
+\node at (4.2,0) {underdense};
+\draw[->,thick] (-2.65,0)--(-1.65,0);
+\draw[->,thick] (2.65,0)--(1.65,0);
+\draw[->,thick] (-2.85,0.75)--(-1.45,0.4);
+\draw[->,thick] (2.85,0.75)--(1.45,0.4);
+\draw[->,thick] (-2.85,-0.75)--(-1.45,-0.4);
+\draw[->,thick] (2.85,-0.75)--(1.45,-0.4);
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{引力不穩定性會把物質從周圍低密度區域移入過密區域，放大原有的密度差異，而非將其擴散抹平。}
+\label{fig:c08-gravity-growth}
+\end{figure}
+
+將這種增長過程往回推，意味著早期宇宙平滑得多。完全均勻同樣不可取：若完全對稱，這種狀態就會持續下去，星系便無從形成。描述結構的有用量度是密度對比
+\begin{equation}
+\delta\equiv\frac{\delta\rho}{\rho},
+\end{equation}
+其中，\(\delta\rho\)是局部密度相對於背景密度的偏差。Jim Peebles 等早期宇宙學家所做的結構成長估算指出，在解耦時，原初振幅約為
+\begin{equation}
+\boxed{\frac{\delta\rho}{\rho}\sim10^{-5}}
+\end{equation}
+其中，\(10^{-4}\)--\(10^{-5}\)是文獻中引用的歷史範圍。這個數值再次使問題變得明確，卻仍未解釋它為何取此值。
+
+Alan Guth 於1980年提出的廣義暴脹構想，是指一段極其劇烈、近似指數式膨脹的時期。將一小塊平滑區域拉伸許多個數量級，會稀釋原有曲率，並使不規則結構的尺度超出可觀測區域。皺氣球的比喻有助於理解平滑化的直觀圖像，但不應將它視為空間實際嵌入於某個更高維空間中的描述。
+
+\begin{classroomqa}
+\audiencequestion{附近物質在不同方向上明顯呈現團塊狀，宇宙怎麼還會是各向同性的？}
+\lecturerresponse{各向同性是大尺度上的統計性描述，並不是說這個房間、銀河系或每一條視線看起來都一樣。地球在局部有高山起伏，但相較於其半徑，表面仍極為平滑。同樣地，星系和星系團是疊加在極為平滑的大尺度背景上的局部結構。\lecturetimestamp{01:25:37--01:26:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{隨機過程難道不會偶爾產生極端過密的方向嗎？}
+\lecturerresponse{這些擾動並非彼此獨立、毫無限制的漲落。它們構成一個隨機場，具有特定且近乎均勻、各向同性的統計頻譜。即使波長很大，其振幅仍然很小，量級為\(10^{-5}\)。頻譜及其起源才是接下來要探討的主題；任意大的、如擲硬幣般的偏差並非我們預設的情況。\lecturetimestamp{01:26:26--01:28:23}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{暴脹是由早期宇宙的高溫引起的嗎？}
+\lecturerresponse{溫度並非暴脹期間的主要變數。核心現象是由場的應力能量所驅動的快速指數式膨脹。暴脹結束、其能量轉化為粒子後，熱浴才再次變得重要。\lecturetimestamp{01:28:25--01:29:04}}
+\end{classroomqa}
+
+\section{力學前奏：有阻力時的運動}
+
+為了替暴脹方程做準備，先考慮一塊在黏滯流體中下落、質量為單位值的石頭。將它的垂直座標記為\(\phi\)，以預示接下來會以標量場取代這塊石頭。若其位能為\(V(\phi)\)，則保守力為
+\begin{equation}
+F(\phi)=-\frac{dV}{d\phi},
+\label{eq:c08-force-potential}
+\end{equation}
+若沒有阻力，牛頓方程便是\(\ddot\phi=F\)。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_06.png}
+\caption{落石類比中板書所示的關係\(F=-dV/d\phi\)。向下的箭頭確立了座標約定：\(\phi\)增加的方向朝上。}
+\label{fig:c08-force-board}
+\lectureframe{01:35:09.513}
+\end{figure}
+
+對於線性黏滯阻力，額外的力為\(-\gamma\dot\phi\)，其中\(\gamma>0\)。方程變為
+\begin{equation}
+\ddot\phi+\gamma\dot\phi=F(\phi)
+=-V'(\phi).
+\label{eq:c08-viscous-motion}
+\end{equation}
+石頭靜止時，阻力為零；阻力的方向也總是與速度相反。若\(\phi\)的正方向朝上，則石頭下落時\(F<0\)且\(\dot\phi<0\)；此時\(-\gamma\dot\phi>0\)，因此阻力朝上，符合預期。
+
+\begin{classroomqa}
+\classquestion{為什麼位能力和阻力都帶有負號？它們不是應該指向相反方向嗎？}
+\lecturerresponse{兩者的方向由不同的量決定。位能導出的力是\(-V'(\phi)\)；阻力則是\(-\gamma\dot\phi\)。物體向下運動時，\(F\)和\(\dot\phi\)都為負，因此\(F\)朝下，而\(-\gamma\dot\phi\)朝上。代數式雖然都有負號，所表示的物理方向卻相反，兩個公式都不必改動。\lecturetimestamp{01:34:16--01:35:27}}
+\end{classroomqa}
+
+石頭加速下落時，阻力會逐漸增大，直到各力平衡。當\(F\)近似為定值時，終端運動滿足
+\begin{equation}
+0=F-\gamma\dot\phi_{\rm term},
+\qquad
+\dot\phi_{\rm term}=\frac{F}{\gamma}.
+\end{equation}
+符號是正確的：若\(F\)朝下，其終端速度便為負值。因此，位能曲線較平緩且\(\gamma\)較大時，石頭便會緩慢地下坡運動。
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[->] (0,0)--(7.0,0) node[right] {\(\phi\)};
+\draw[->] (0,0)--(0,4.4) node[above] {\(V(\phi)\)};
+\draw[very thick] plot[smooth] coordinates {(0.5,3.7) (1.6,3.55) (2.8,3.2) (4.0,2.55) (5.1,1.65) (6.3,0.6)};
+\filldraw (1.45,3.58) circle (0.09);
+\draw[->,thick] (1.55,3.48)--(2.25,3.23);
+\node[align=left,anchor=west] at (2.45,3.75) {large drag,\\slow downhill motion};
+\end{tikzpicture}
+\caption{平緩的位能曲線與強阻力。場的類比會以空間均勻的純量振幅取代石頭的座標。}
+\label{fig:c08-shallow-potential}
+\end{figure}
+
+\section{暴脹子與哈勃摩擦}
+
+暴脹假說引入了額外的純量場\(\phi\)，通常稱為暴脹子。從歷史脈絡來看，這是為了解釋宇宙的平滑性而提出的大膽假設。我們先考慮一個在空間中近乎均勻的場，\(\phi=\phi(t)\)。膨脹會拉伸空間中的變化；而先考慮均勻場，則能呈現其中最關鍵的動力學。
+
+對於正則純量場，完整的局部能量密度為
+\begin{equation}
+\rho_\phi
+=
+\frac12\dot\phi^{\,2}
++\frac{1}{2a^2}(\boldsymbol\nabla\phi)^2
++V(\phi).
+\end{equation}
+在均勻近似\(\boldsymbol\nabla\phi=0\)下，這個式子可簡化為
+\begin{equation}
+\rho_\phi=\frac12\dot\phi^{\,2}+V(\phi).
+\label{eq:c08-scalar-density}
+\end{equation}
+第一項是場組態空間中的動能：它衡量場隨時間的變化，而不是場在普通空間中的平移運動。
+
+\begin{classroomqa}
+\audiencequestion{\(\phi\)上方的點代表對時間的偏導數嗎？}
+\lecturerresponse{是的。對均勻場而言，\(\dot\phi=d\phi/dt\)。空間梯度會另外貢獻一項正值，但在目前的假設下，梯度為零。\lecturetimestamp{01:41:08--01:41:34}}
+\end{classroomqa}
+
+考慮一個單位共動座標盒。它的物理體積為\(a^3(t)\)，因此盒內的純量場能量為
+\begin{equation}
+E_\phi
+=a^3(t)
+\left[
+\frac12\dot\phi^{\,2}+V(\phi)
+\right].
+\end{equation}
+明確出現的因子\(a^3(t)\)是新的要素：即使共動座標固定，物理座標盒仍會膨脹。
+
+\begin{classroomqa}
+\audiencequestion{尺度因子\(a\)會隨空間位置改變嗎？}
+\lecturerresponse{在均勻的 FRW 模型中不會。在任一給定的宇宙時間，它在整個空間中都相同，但可以隨時間改變。若\(\phi\)會隨位置改變，就必須把它的空間梯度能量項加回來。\lecturetimestamp{01:44:12--01:44:49}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{儘管現在只寫出一個\(\phi(t)\)，場值仍是定義在空間中的每一點上嗎？}
+\lecturerresponse{是的。場會為每一個時空點指定一個值。均勻性表示在每一個時刻，各處的場值都相同，因此動力學可簡化為由一個共同函數\(\phi(t)\)描述。\lecturetimestamp{01:44:50--01:45:06}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{場的動能項描述哪一種物理運動？場是在增強還是減弱？}
+\lecturerresponse{這取決於運動方程、初始值與初始速度，以及\(V'(\phi)\)的符號。這就像只知道粒子的能量公式，仍無法判斷它朝哪個方向運動。\lecturetimestamp{01:45:07--01:46:08}}
+\end{classroomqa}
+
+均勻場的拉格朗日量等於動能減去位能，
+\begin{equation}
+L_\phi=a^3(t)
+\left[
+\frac12\dot\phi^{\,2}-V(\phi)
+\right].
+\label{eq:c08-scalar-lagrangian}
+\end{equation}
+套用尤拉--拉格朗日方程可得
+\begin{align}
+\frac{d}{dt}\left(\frac{\partial L_\phi}{\partial\dot\phi}\right)
+&=
+\frac{\partial L_\phi}{\partial\phi},\\
+\frac{d}{dt}\left(a^3\dot\phi\right)
+&=-a^3V'(\phi).
+\end{align}
+利用乘積法則可得兩項，
+\begin{equation}
+a^3\ddot\phi+3a^2\dot a\,\dot\phi
+=-a^3V'(\phi).
+\end{equation}
+兩邊除以\(a^3\)，並定義\(H=\dot a/a\)，便得到
+\begin{equation}
+\boxed{
+\ddot\phi+3H\dot\phi+V'(\phi)=0
+}
+\label{eq:c08-hubble-friction}
+\end{equation}
+或者，令\(F=-V'(\phi)\)，則
+\begin{equation}
+\ddot\phi+3H\dot\phi=F.
+\end{equation}
+所有各行結果都源自方程~\eqref{eq:c08-scalar-lagrangian}中的膨脹體積因子。
+
+\begin{classroomqa}
+\audiencequestion{\(H=\dot a/a\)在空間各處都相同嗎？它真的是常數嗎？}
+\lecturerresponse{在均勻模型中，同一宇宙時間切片上的各個空間點，其值都相同。但它不一定隨時間保持不變；``哈勃常數''通常指它目前的值，而\(H(t)\)則表示它在整個演化過程中的哈勃率。\lecturetimestamp{01:50:32--01:50:57}}
+\end{classroomqa}
+
+方程~\eqref{eq:c08-hubble-friction}使這個類比有了精確的數學形式。它與黏滯運動的形式相同，阻尼係數為
+\begin{equation}
+\gamma_{\rm cosmic}=3H.
+\end{equation}
+因此，膨脹會減緩均勻純量場的演化。若\(H\)很大，而\(V(\phi)\)足夠平坦，慣性項便會相對於阻尼項變得很小，場也就趨近於慢滾關係
+\begin{equation}
+3H\dot\phi\simeq-V'(\phi).
+\end{equation}
+就像小球在寒冷而黏稠的油中下滑一樣，即使場受到力的作用，穿越平緩位能曲線仍可能耗時極久。
+
+下一步是將純量場的能量密度代入弗里德曼方程，並讓膨脹率隨緩慢演化的場而改變。這個耦合系統會產生暴脹。目前所需的準備已經完成：場儲存動能與位能，膨脹的體積因子帶來哈勃摩擦，而緩慢滾降的場能讓位能在足夠長的時間內幾乎保持不變，進而驅動快速膨脹。
+
+\section{要記住的重點}
+
+重子不對稱與原初密度對比扮演相似的角色。光是為\(10^{-8}\)或\(10^{-5}\)命名，並不能解釋它們；但兩者都能將模糊的宇宙學印象轉化為定量問題。前者引出薩哈羅夫條件，後者則引向暴脹。
+
+通往暴脹的推導同樣明確。FRW 宇宙中的均勻純量場滿足
+\[
+\ddot\phi+3H\dot\phi+V'(\phi)=0.
+\]
+中間項並非人為加入的唯象黏滯項，而是源自物理體積\(a^3(t)\)的增長。這個結果將構成下一講的主軸：由沿著自身位能緩慢滾降的場所驅動的宇宙。

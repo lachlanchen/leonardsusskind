@@ -1,0 +1,634 @@
+\chapter{弱相互作用、維里修正與非恰當微分}
+
+\lectureoverview{我們先從測量與溫度的操作性意義談起，再探討短程相互作用微弱地開啟時，稀薄氣體如何偏離理想氣體定律。配分函數給出能量與壓力的首階相互作用修正，並指出其適用範圍。最後的數學插曲以恰當微分、閉合迴路和一個具體的理想氣體例子，區分態函數與依賴路徑的熱和功。}
+
+\section{儀器實際測量的是什麼}
+
+沒有任何實驗室儀器能直接探入自然，讀出抽象的數學變數。彈簧秤讀出伸長量；溫度計讀出液柱高度。我們之所以稱前者為力的測量、後者為溫度的測量，只是因為可觀察到的響應與所要測量的量之間，已建立可重複的關係。
+
+這種關係有其適用範圍。彈簧只有在保持彈性時才遵循虎克定律；施加的力夠大時，最終會使彈簧變形或斷裂。更一般地，若平滑的讀值\(R\)取決於物理變數\(X\)，則在選定的操作點附近，
+\begin{equation}
+ \Delta R \simeq
+ \left.\frac{dR}{dX}\right|_{X_0}\Delta X.
+ \label{eq:sm6-local-linear-response}
+\end{equation}
+即使完整的響應曲線是非線性的，讀值的小變化仍與目標變數的小變化成正比。這種局部線性化正是一般校準的原理。
+
+讀值也可能受到干擾變數影響。彈簧可能會微弱地響應溫度或壓力。溫度計中水銀柱的高度可能因重力而隨方向改變，也可能受玻璃性質或材料緩慢變化的影響。測量程序並不能證明這些依賴關係不存在；它會將相關因素固定，或確認這些因素在所需的尺度上可以忽略。
+
+\begin{classroomqa}
+\audiencequestion{局部重力場，或溫度計拿持的方向，會改變讀值嗎？}
+\lecturerresponse{原則上會。如果方向造成的影響不可忽略，將溫度計保持垂直的指示就成為儀器定義的一部分。在地球表面附近，重力場相當穩定，因此剩餘的變化通常可以忽略。
+\lecturetimestamp{00:04:08--00:05:00}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{老化或化學變化會不會逐漸改變校準？}
+\lecturerresponse{有可能。對一般測量而言，水銀和玻璃都足夠惰性；而時間尺度極長的變化，與實驗無關。校準始終是針對特定儀器、範圍、程序和時長所作的說明。
+\lecturetimestamp{00:05:03--00:06:11}}
+\end{classroomqa}
+
+攝氏溫度計以兩個可重複的參考狀態，建立方便的溫標。若\(h_f\)和\(h_b\)分別是水在凝固點和沸點時的液柱高度，則在響應近似線性的範圍內，
+\begin{equation}
+ T_{\mathrm C}=100\,\frac{h-h_f}{h_b-h_f}.
+ \label{eq:sm6-celsius-calibration}
+\end{equation}
+將凝固點定為\(T_{\mathrm C}=0\)是約定俗成的選擇。這並不代表熱能為零，正如冬日的華氏零度並非絕對零度。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}
+\caption{平滑但非線性的溫度計響應；其中一小段區間標示為線性校準範圍。}
+\lectureframe{00:07:55}
+\end{figure}
+
+\section{平衡與作為能量尺度的溫度}
+
+只有當溫度計與周圍介質達到熱平衡後，它測得的才是周遭環境的溫度。在此之前，讀值只是在逐漸趨近平衡。實際的判準很簡單：等到讀值不再變化。這條規則看似簡單，卻掩蓋了決定等待時間的物理過程。
+
+\begin{classroomqa}
+\audiencequestion{達到平衡是否只涉及球泡周圍的邊界層？又該等多久？}
+\lecturerresponse{能量必須穿過玻璃，並與周圍介質交換，因此所需時間取決於溫度計、它的熱導率以及介質。緊鄰溫度計的環境也必須能代表均勻的平衡狀態。實驗上，讀值不再漂移時，就可接受該讀值。
+\lecturetimestamp{00:08:45--00:10:13}}
+\end{classroomqa}
+
+在這段等待時間裡，溫度和密度扮演不同的角色。極稀薄的氣體也可能非常熱：其中少數分子可能具有很大的動能。然而，這些分子很少撞擊溫度計，因此達到平衡可能要花很久。在溫度不變的情況下將密度降低一百倍或一千倍，不會降低分子的能量尺度；降低的是能量傳遞到儀器的速率。
+
+\begin{classroomqa}
+\audiencequestion{房間裡的輻射溫度會與空氣溫度不同嗎？}
+\lecturerresponse{會。物質和輻射只有彼此達到熱平衡時，才會具有相同的溫度。中性空氣與照明房間中的許多光學輻射耦合微弱，因此光子分布不一定是處於空氣溫度下的平衡黑體輻射場。
+\lecturetimestamp{00:11:26--00:12:20}}
+\end{classroomqa}
+
+達到平衡後，最好將溫度視為能量尺度。我們仍採用\(k_B=1\)的單位制，因此\(T\)本身具有能量的量綱。對單原子理想氣體而言，
+\begin{equation}
+ E_0=\frac{3}{2}NT.
+ \label{eq:sm6-ideal-energy}
+\end{equation}
+每個分子的熱能由\(T\)決定；相應的速率仍取決於分子質量。
+
+\section{開啟弱相互作用}
+
+\begin{classroomqa}
+\audiencequestion{理想氣體近似在什麼條件下會失效？能否用數學方式呈現這種失效？}
+\lecturerresponse{從已求解的非相互作用氣體出發，逐漸加入微弱相互作用。對這項變化作展開，計算首階修正，並與理想氣體項比較。當修正不再微小時，近似便會失效。
+\lecturetimestamp{00:12:25--00:14:40}}
+\end{classroomqa}
+
+這是標準的微擾策略。如果一個問題在\(\lambda=0\)時可解，就引入耦合常數\(\lambda\)，寫成
+\begin{equation}
+ F(\lambda)=F(0)+\lambda F_1+\lambda^2F_2+\cdots,
+ \label{eq:sm6-perturbative-template}
+\end{equation}
+再檢視保留的每一項是否都小於前一項。此處的參考問題是理想氣體。物理上的小量來自樣品稀薄、相互作用範圍比平均粒子間距短，以及勢夠弱，使首階相互作用項具有參考價值。即使單次相遇看來影響不大，高密度或長程力仍可能使近似失效。
+
+令\(x_i\in\mathbb R^3\)和\(p_i\in\mathbb R^3\)分別表示分子\(i\)的位置和動量。對質量為\(m\)的相同分子，取
+\begin{equation}
+ H(X,P)=
+ \sum_{i=1}^{N}\frac{p_i^2}{2m}
+ +\sum_{i<j}u\!\left(|x_i-x_j|\right),
+ \label{eq:sm6-interacting-hamiltonian}
+\end{equation}
+其中\(X=(x_1,\ldots,x_N)\)，\(P=(p_1,\ldots,p_N)\)。限制\(i<j\)排除粒子與自身配對，並使每個\((i,j)\)只計算一次：
+\begin{equation}
+ \sum_{i<j}1=\binom{N}{2}=\frac{N(N-1)}{2}.
+ \label{eq:sm6-pair-count}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{為什麼不分別對兩個粒子標籤求和？}
+\lecturerresponse{\((3,7)\)和\((7,3)\)代表同一個物理粒子對，而且粒子不會與自身配對。將求和限制為\(i<j\)，便同時確保這兩點。質量仍以\(m\)表示，而\(i,j\)用來標記粒子，避免\(m\)同時用於兩種用途時產生符號混淆。
+\lecturetimestamp{00:17:52--00:19:12}}
+\end{classroomqa}
+
+總組態勢能寫成
+\begin{equation}
+ U(X)=\sum_{i<j}u\!\left(|x_i-x_j|\right).
+ \label{eq:sm6-total-potential}
+\end{equation}
+假設相互作用具有平移不變性且為短程：當距離\(r\)遠大於分子尺度時，\(u(r)\)可忽略。
+
+\section{積分後的粒子對作用強度}
+
+弱粒子對勢只有一個積分會進入首階修正：
+\begin{equation}
+ U_0\equiv\int_{\mathbb R^3}d^3r\,u(r).
+ \label{eq:sm6-u0-definition}
+\end{equation}
+其單位是能量乘以體積。這個積分結合了相互作用的典型強度，以及相互作用顯著的空間範圍。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}
+\caption{以積分強度\(U_0=\int d^3r\,u(r)\)概括短程粒子對勢。}
+\lectureframe{00:25:15}
+\end{figure}
+
+看看\(U_0\)為何有用，可以先考慮一個粒子對：
+\begin{equation}
+ I_2=\int_V d^3x_1\,d^3x_2\,
+ u\!\left(|x_1-x_2|\right).
+ \label{eq:sm6-two-particle-integral}
+\end{equation}
+引入相對座標\(r=x_2-x_1\)。遠離邊界時，相對座標的積分給出\(U_0\)，而粒子對的共同位置可遍及整個容器。因此
+\begin{equation}
+ I_2=V U_0+\text{surface corrections}.
+ \label{eq:sm6-pair-integral-vu0}
+\end{equation}
+修正來自距離壁面在一個相互作用範圍內的粒子；此時相對座標的鄰域有一部分落在盒子之外。修正的相對大小隨表面積與體積之比而變，並在宏觀極限下趨近於零。
+
+\begin{classroomqa}
+\audiencequestion{\(U_0\)是指選定的一個粒子對嗎？是否讓其中一個粒子與另一個粒子保持固定距離？}
+\lecturerresponse{它指的是任一粒子對都遵循的同一相互作用定律。固定第一個粒子，對第二個粒子的所有相對位置積分；積分時兩者的距離並不固定。只有附近的相互作用區域會有顯著貢獻，因此得到\(U_0\)。
+\lecturetimestamp{00:26:03--00:27:33}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼第二個位置積分給出整個容器體積，第一個卻沒有？}
+\lecturerresponse{將相對構型積分成\(U_0\)後，整個粒子對就能在樣品中平移。這種共同平移帶來大的因子\(V\)。相互作用鄰域的體積只有分子尺度，而且已包含在\(U_0\)中；它不是另一個等於容器體積的因子。
+\lecturetimestamp{00:27:48--00:29:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這個值會不會取決於固定哪個位置，尤其是在壁面附近？}
+\lecturerresponse{平移不變性使體相中的值不受固定位置影響。壁面附近的積分則略有不同，因為某些鄰近位置無法取得。受到影響的只有厚度約一個分子尺度的表層，因此對宏觀尺度的盒子而言，誤差可以忽略。
+\lecturetimestamp{00:29:24--00:31:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這個結果是對所有雙粒子構型積分後的勢能嗎？為什麼它只正比於一個大的體積？}
+\lecturerresponse{是的。它的單位是能量乘以體積平方，因為\(V U_0\)包含一個容器體積和一個分子尺度的相互作用體積。只有前者會隨樣品大小增加。
+\lecturetimestamp{00:31:31--00:32:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{在固定體積下，球形容器的表面積最小；選球形會改變體相答案嗎？}
+\lecturerresponse{只會改變微小的邊界修正。對任何一般的宏觀形狀，距離表面不到一個分子尺度的粒子數，相較於體相中的粒子數可以忽略。只有當容器本身接近分子尺度時，表面效應才會變得重要。
+\lecturetimestamp{00:32:04--00:33:58}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{用勢能取代粒子軌跡，是否就忽略了碰撞？}
+\lecturerresponse{沒有。力是勢能的導數，正是這個力造成碰撞。平衡態統計力學不要求我們逐一追蹤碰撞；碰撞的影響已編碼在能量中，因此也編碼在波茲曼權重中。
+\lecturetimestamp{00:33:59--00:35:29}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{保留粒子對作用力、卻不納入真正的三體相互作用，會漏掉什麼？}
+\lecturerresponse{微觀能量可能包含真正的三體項，而粒子對勢的高階項也會產生多粒子關聯。然而在稀薄氣體中，指定的三個粒子同時位於同一分子尺度鄰域的機率遠低於兩個粒子的情況。因此，粒子對效應給出首階密度修正；更高階的群集項則以更高次的密度冪次出現。
+\lecturetimestamp{00:35:29--00:38:14}}
+\end{classroomqa}
+
+\section{配分函數的直接推導}
+
+統計方法的優勢至此已很清楚。一旦哈密頓量確定，就不必猜測壁面附近或碰撞過程中的詳細速度分布。我們寫下正則配分函數，接著進行代數推導：
+\begin{equation}
+\begin{aligned}
+ Z&=
+ \frac{1}{N!h^{3N}}
+ \int d^{3N}P\,d^{3N}X\\
+ &\qquad{}\times e^{-\beta K(P)}e^{-\beta U(X)},\\
+ K(P)&=\sum_i\frac{p_i^2}{2m}.
+\end{aligned}
+ \label{eq:sm6-full-partition-function}
+\end{equation}
+因子\(h^{3N}\)使經典相空間測度成為無因次量，而\(N!\)則消除全同粒子的置換重複計數。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}
+\caption{多粒子能量，以及配分函數中相應的動能因子和組態因子。}
+\lectureframe{00:40:35}
+\end{figure}
+
+動量和位置變數可以分離。將組態積分乘以並除以\(V^N\)，即可分離出理想氣體的結果：
+\begin{align}
+ Z
+ &=\left[
+ \frac{V^N}{N!h^{3N}}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ \right] \notag\\
+ &\quad\times\left[
+ \frac{1}{V^N}
+ \int d^{3N}X\,e^{-\beta U(X)}
+ \right] \notag\\
+ &\equiv Z_0\,C(\beta,V,N).
+ \label{eq:sm6-z-factorization}
+\end{align}
+熟知的高斯因子為
+\begin{equation}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ =\left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm6-gaussian-factor}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}
+\caption{從正規化的組態因子中分離出的理想氣體配分函數。}
+\lectureframe{00:43:45}
+\end{figure}
+
+因子\(N!\)不會影響正規化比值\(C\)，也不會影響下文所用的特定固定\(N\)偏導數；但它對整體熱力學不可或缺，因為正確的狀態計數和廣延熵都需要它。
+
+取相互作用的一階近似，
+\begin{equation}
+ e^{-\beta U(X)}
+ =1-\beta U(X)+O(U^2).
+ \label{eq:sm6-boltzmann-expansion}
+\end{equation}
+因此，
+\begin{align}
+ C
+ &=
+ 1-\frac{\beta}{V^N}
+ \sum_{i<j}
+ \int d^{3N}X\,u(|x_i-x_j|)
+ +O(U^2) \notag\\
+ &=
+ 1-\frac{\beta}{V^N}
+ \frac{N(N-1)}{2}
+ V^{N-2}(V U_0)+O(U^2) \notag\\
+ &=
+ 1-\beta\frac{N(N-1)}{2V}U_0+O(U^2).
+ \label{eq:sm6-configurational-correction}
+\end{align}
+每個粒子對都有相同的\emph{積分}，但瞬時間距或勢能不必相同。其餘\(N-2\)個位置積分各自貢獻一個\(V\)因子。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}
+\caption{粒子對計數、其餘座標的體積因子，以及首階組態修正\(1-\beta N^2U_0/(2V)\)。}
+\lectureframe{00:53:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{領先項\(1\)是否假設勢能在零距離時為零？}
+\lecturerresponse{不是。它是指數展開中的零階項，與\(u(0)\)的值無關。勢能從下一項\(-\beta U(X)\)才開始出現。
+\lecturetimestamp{00:46:19--00:46:48}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{既然不同粒子對的距離不同，為什麼每一對都可以用同一個表示式代替？}
+\lecturerresponse{這並不是把各粒子的對勢值視為相同。每一項都在相同的完整構型空間上積分，而且粒子標籤不會使某一對異於其他粒子對。因此這些積分的形式和數值都相同。
+\lecturetimestamp{00:50:00--00:51:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{粒子對的數目是\(N(N-1)/2\)還是\(N(N+1)/2\)？}
+\lecturerresponse{是\(N(N-1)/2\)：選定一個粒子後，只有\(N-1\)個不同的夥伴；再除以二，便去除重複計算的反向排列。對宏觀的\(N\)而言，以\(N^2\)取代\(N(N-1)\)只會造成相對於\(1/N\)的修正。
+\lecturetimestamp{00:48:33--00:49:56}}
+\end{classroomqa}
+
+由於\(\log(1-x)=-x-x^2/2-x^3/3-\cdots\)，取對數後的一階修正為
+\begin{equation}
+ \log Z
+ =
+ \log Z_0
+ -\beta\frac{N(N-1)}{2V}U_0
+ +O(U^2).
+ \label{eq:sm6-logz-correction}
+\end{equation}
+當\(N\)很大時，可以用\(N^2\)取代\(N(N-1)\)，因為此處不必區分有限的\(N\)修正。
+
+\begin{remark}
+受控的低密度表述使用 Mayer 函數
+\(f(r)=e^{-\beta u(r)}-1\)和第二維里係數
+\begin{equation}
+ B_2(T)=-\frac{1}{2}\int d^3r\,f(r).
+ \label{eq:sm6-second-virial}
+\end{equation}
+對弱勢而言，\(f(r)\simeq-\beta u(r)\)，因此\(B_2\simeq\beta U_0/2\)，便可得到下文的結果。若勢能具有硬排斥核心，則必須使用這種形式，因為此時直接展開\(e^{-\beta u}\)並不適用。
+\end{remark}
+
+\section{能量、壓力與修正的意義}
+
+\(Z\)的對數很有用，因為它的導數對應可測量的物理量。假設微觀勢能與溫度無關，
+\begin{align}
+ E
+ &=-\left(\frac{\partial\log Z}{\partial\beta}\right)_{V,N} \notag\\
+ &=
+ \frac{3}{2}NT
+ +\frac{N(N-1)}{2V}U_0+O(U^2) \notag\\
+ &\simeq
+ N\left(\frac{3}{2}T+\frac{1}{2}\rho U_0\right),
+ \qquad
+ \rho=\frac{N}{V}.
+ \label{eq:sm6-energy-correction}
+\end{align}
+表面上看似非廣延的\(N^2\)，會與\(1/V\)一同出現。在固定密度下，\(N^2/V=N\rho\)，因此總能量仍與系統大小成正比。每個粒子的額外能量與密度成正比，因為選定的分子只有在附近有另一個分子時，才會獲得粒子對作用能量。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}
+\caption{將首階相互作用修正改寫為廣延能量\(N[3T/2+\rho U_0/2]\)。}
+\lectureframe{01:03:25}
+\end{figure}
+
+壓力比較容易測量。利用前一章的結果，
+\begin{equation}
+ P=T\left(\frac{\partial\log Z}{\partial V}\right)_{T,N},
+ \label{eq:sm6-pressure-from-z}
+\end{equation}
+得到
+\begin{align}
+ P
+ &=
+ \frac{NT}{V}
+ +T\frac{\partial}{\partial V}
+ \left(-\beta\frac{N(N-1)}{2V}U_0\right)
+ +O(U^2) \notag\\
+ &=
+ \rho T+\frac{1}{2}\rho^2U_0
+ +O\!\left(\frac{\rho U_0}{N},U^2\right).
+ \label{eq:sm6-pressure-correction}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}
+\caption{由 Helmholtz 自由能導數得到的壓力，包含首個二次密度修正。}
+\lectureframe{01:09:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{為什麼第一個自然的修正項是\(\rho^2\)，而不是其他冪次？}
+\lecturerresponse{理想氣體項要求有一個粒子出現在小區域內，因此按\(\rho\)標度。相互作用則要求兩個粒子同時位於同一個分子尺度鄰域，其機率按\(\rho^2\)標度。因子\(1/2\)來自粒子對計數，用來避免將\((i,j)\)和\((j,i)\)分別重複計數。
+\lecturetimestamp{01:24:27--01:26:00}}
+\end{classroomqa}
+
+在固定溫度下，可以改變\(V\)、測量\(\rho=N/V\)，並繪出壓力。理想氣體定律給出線性項；\(P(\rho)\)的曲率則顯示首階相互作用修正。在此弱勢近似下，修正沒有顯式的溫度依賴，因為\(T\)與\(\beta=1/T\)在\eqref{eq:sm6-pressure-from-z}中相消。
+
+\begin{classroomqa}
+\audiencequestion{密度增加到多大時，才必須納入三體效應？}
+\lecturerresponse{由密度的次方可知，下一個維里項正比於\(\rho^3\)，但僅憑\(U_0\)無法推得其係數。該係數包含粒子對相互作用相關乘積的貢獻，以及若存在時真正的三體力貢獻。必須計算下一個群集係數，並與\(\rho^2\)項比較；不應將猜測的公式當成結果。
+\lecturetimestamp{01:10:50--01:13:38}}
+\end{classroomqa}
+
+修正量夠小時，理想氣體項便占主導：
+\begin{equation}
+ \begin{aligned}
+ \frac{1}{2}\rho^2|U_0|&\ll \rho T,\\
+ |\rho U_0|&\ll T
+ \qquad\text{(parametrically)}.
+ \end{aligned}
+ \label{eq:sm6-ideal-validity}
+\end{equation}
+第二個不等式兩邊的量綱都是能量。\(\rho U_0\)代表每個粒子的相互作用能量尺度，而\(T\)代表動能尺度。一般稀薄的室溫氣體遠在此適用範圍之內；只有當分子尺度的鄰域經常被占據，使相互作用足以與熱運動抗衡時，才會出現顯著偏離。
+
+\begin{classroomqa}
+\audiencequestion{可以用這個判準估算房間裡的空氣嗎？}
+\lecturerresponse{將\(U_0\)估為分子相互作用能乘以分子體積，再乘上數密度，並與\(k_BT\)比較。粗略的分子尺度數值顯示，一般室內空氣的相互作用尺度小得多。必須大幅壓縮，分子才會頻繁地擠進彼此的相互作用範圍。
+\lecturetimestamp{01:16:24--01:18:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(U_0\)可以是正值，也可以是負值嗎？}
+\lecturerresponse{可以。在此近似下，正的積分相互作用代表淨排斥，會使壓力高於\(\rho T\)；負值代表淨吸引，會使壓力降低。這個符號判準可以直接用來檢查\eqref{eq:sm6-pressure-correction}是否合理。
+\lecturetimestamp{01:18:56--01:20:29}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}
+\caption{定性的排斥與吸引粒子對勢曲線，及其旁邊的壓力公式；修正的正負取決於\(U_0\)的符號。}
+\lectureframe{01:21:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{靜電斥力、重力吸引或真實的分子間作用力能納入這項計算嗎？}
+\lecturerresponse{微觀勢能由原子物理、分子物理或量子物理提供。中性分子通常具有陡峭的短程排斥核心，以及較長程的范德瓦耳斯吸引尾部；示意上常以12--6勢表示。對這類硬核心，應使用完整的 Mayer 函數公式。重力則不同：它是長程力，其空間積分無法以所需的方式收斂，因此此處採用的一般短程熱力學極限不再適用。
+\lecturetimestamp{01:20:40--01:23:03}}
+\end{classroomqa}
+
+這項計算展現了有用的分工：微觀物理提供\(u(r)\)；統計力學將該能量轉換為\(Z\)；\(Z\)的導數則給出宏觀可觀測量。接著以物理推理檢查其正負、密度標度、廣延性和適用範圍。只有選定正確的能量與近似後，形式推導才只是機械運算。
+
+\section{恰當微分與路徑依賴}
+
+現在換一種數學語言。在\emph{恰當微分}一詞中，「恰當」並非指數值精確，而是指一個一形式是某個實際標量函數的微分。
+
+令\(f(x,y)\)表示地形中某點的海拔高度。微小位移會使高度改變
+\begin{equation}
+ df=
+ \frac{\partial f}{\partial x}\,dx+
+ \frac{\partial f}{\partial y}\,dy
+ =f_x\,dx+f_y\,dy.
+ \label{eq:sm6-total-differential}
+\end{equation}
+現在假設給定的只有
+\begin{equation}
+ \omega=F_x(x,y)\,dx+F_y(x,y)\,dy.
+ \label{eq:sm6-one-form}
+\end{equation}
+是否存在標量函數\(f\)，使得\(\omega=df\)？混合偏導數相等的必要條件是
+\begin{equation}
+ \frac{\partial F_y}{\partial x}
+ =
+ \frac{\partial F_x}{\partial y}.
+ \label{eq:sm6-exactness-condition}
+\end{equation}
+在單連通區域上，零旋度條件也是充分條件。此時，分量\((F_x,F_y)\)構成\(f\)的梯度。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}
+\caption{以標量函數表示的海拔高度、其微分，以及恰當性的混合偏導數條件。}
+\lectureframe{01:34:30}
+\end{figure}
+
+同一條件也有積分形式的意義。若\(\omega=df\)，則
+\begin{equation}
+ \int_{\gamma:1\to2}\omega=f(2)-f(1)
+ \label{eq:sm6-path-independent-integral}
+\end{equation}
+只取決於端點，不取決於路徑\(\gamma\)。特別是，
+\begin{equation}
+ \oint_\gamma\omega=0
+ \label{eq:sm6-closed-loop-zero}
+\end{equation}
+對每一條可收縮的閉合曲線都成立。
+
+海拔具有這項性質。沿平坦道路或越過山丘，在同兩點之間行進，海拔的淨變化相同；燃料消耗則不同。多山路線和平坦路線通常耗油量不同，走完一趟閉合路線也不會讓已耗用的燃料恢復。在擴充的狀態描述中，剩餘燃料量當然是定義明確的量，但它不只是汽車位置\((x,y)\)的函數；它還記錄了行經路線。疲勞也是類似的例子：下山通常不會消除上山造成的疲勞。
+
+\begin{classroomqa}
+\audiencequestion{恰當性是否等同於保守力的概念？它和曲率有關嗎？}
+\lecturerresponse{旋度為零的力場在局部是保守場，並且有勢函數，因此兩者的概念密切相關。平行移動和曲率也將沿閉合迴路的變化與局部幾何資料聯繫起來，但那是更廣泛的課題。此處只需要掌握基本陳述：零旋度意味著局部路徑無關，並須滿足通常對定義域的整體條件。
+\lecturetimestamp{01:39:22--01:41:07}}
+\end{classroomqa}
+
+兩個例子可以具體說明這項檢驗。先取
+\begin{equation}
+ F_x=y,\qquad F_y=x.
+ \label{eq:sm6-exact-example}
+\end{equation}
+兩個交叉偏導數都等於\(1\)，而且確實有
+\begin{equation}
+ \omega=y\,dx+x\,dy=d(xy).
+ \label{eq:sm6-exact-example-potential}
+\end{equation}
+現在改變其中一個符號：
+\begin{equation}
+ F_x=y,\qquad F_y=-x.
+ \label{eq:sm6-inexact-example}
+\end{equation}
+於是
+\begin{equation}
+ \frac{\partial F_x}{\partial y}=1,
+ \qquad
+ \frac{\partial F_y}{\partial x}=-1,
+ \label{eq:sm6-inexact-cross-derivatives}
+\end{equation}
+因此，不存在標量函數\(f(x,y)\)能以這兩個分量作為其梯度。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}
+\caption{由\(f=xy\)生成的恰當例子，以及交叉偏導數分別為\(1\)和\(-1\)的非恰當例子。}
+\lectureframe{01:44:50}
+\end{figure}
+
+\section{熱和功不是態函數}
+
+粒子數固定的簡單可壓縮系統，其狀態由兩個獨立的平衡變數決定。我們可以使用\((T,V)\)、\((E,V)\)，或者，對基本關係而言尤其自然的\((S,V)\)。因此
+\begin{equation}
+ E=E(S,V),
+ \end{equation}
+其恰當微分為
+\begin{equation}
+ dE=
+ \left(\frac{\partial E}{\partial S}\right)_V dS+
+ \left(\frac{\partial E}{\partial V}\right)_S dV
+ =T\,dS-P\,dV.
+ \label{eq:sm6-fundamental-relation}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{絕熱是指緩慢、隔熱、可逆，還是等熵？}
+\lecturerresponse{這個術語在不同語境中的用法各異。此處考慮的平衡路徑是準靜態且隔熱的，因此也是可逆且等熵的。只有隔熱條件的不可逆過程仍可能產生熵；量子絕熱定理則著重於參數緩慢變化。
+\lecturetimestamp{01:47:13--01:47:54}}
+\end{classroomqa}
+
+熵固定時，膨脹會使氣體能量改變\(-P\,dV\)。體積固定時，可逆熱傳會使能量改變\(T\,dS\)。因此可寫成
+\begin{equation}
+ \begin{aligned}
+ \delta W_{\mathrm{on}}&=-P\,dV,
+ &\delta Q_{\mathrm{rev}}&=T\,dS,\\
+ dE&=\delta Q_{\mathrm{rev}}+\delta W_{\mathrm{on}}.&&
+ \end{aligned}
+ \label{eq:sm6-first-law-increments}
+\end{equation}
+使用符號\(\delta\)而非\(d\)，是要表明熱和功是沿路徑的增量，而不是態函數的微分。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}
+\caption{活塞系統的第一定律：
+\(dE=-P\,dV+T\,dS\)。}
+\lectureframe{01:50:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(-P\,dV\)表示的是對氣體做的功，還是氣體對外做的功？}
+\lecturerresponse{依照\eqref{eq:sm6-first-law-increments}中的約定，這表示對氣體做的功。氣體膨脹時\(dV>0\)，會對活塞做正功，因此對氣體做的功為負，氣體的能量也隨之減少。這兩種說法大小相等、符號相反。
+\lecturetimestamp{01:51:23--01:52:27}}
+\end{classroomqa}
+
+等式\(\delta Q_{\mathrm{rev}}=T\,dS\)不能原封不動地推廣到任意不可逆加熱。一般而言，
+\begin{equation}
+ dS=\frac{\delta Q}{T_{\mathrm{boundary}}}+dS_{\mathrm{prod}},
+ \qquad dS_{\mathrm{prod}}\ge 0.
+ \label{eq:sm6-entropy-production}
+\end{equation}
+以下關於全微分的論證討論的是準靜態平衡路徑；對這類路徑，適用的是可逆關係。
+
+\begin{classroomqa}
+\audiencequestion{態空間的論證是否假設所有路徑都經過平衡態？}
+\lecturerresponse{是的。操作進行得足夠緩慢，使\(P\)、\(T\)、\(E\)、\(S\)和\(V\)沿著路徑始終都有明確定義。熱和功具有路徑依賴性，並不表示系統必須被驅離平衡態很遠。
+\lecturetimestamp{01:54:30--01:54:39}}
+\end{classroomqa}
+
+要檢驗熱是否為全微分，以\((E,V)\)為座標，並將第一定律改寫為：
+\begin{equation}
+ \delta Q_{\mathrm{rev}}=dE+P(E,V)\,dV.
+ \label{eq:sm6-heat-one-form}
+\end{equation}
+若存在狀態函數\(Q(E,V)\)，使得\(dQ=\delta Q_{\mathrm{rev}}\)，其偏導數就必須為
+\begin{equation}
+ \left(\frac{\partial Q}{\partial E}\right)_V=1,
+ \qquad
+ \left(\frac{\partial Q}{\partial V}\right)_E=P.
+ \label{eq:sm6-hypothetical-heat-derivatives}
+\end{equation}
+因此，混合偏導數相等就要求
+\begin{equation}
+ \begin{aligned}
+ \frac{\partial}{\partial V}
+ \left(\frac{\partial Q}{\partial E}\right)_V
+ &=\frac{\partial}{\partial E}
+ \left(\frac{\partial Q}{\partial V}\right)_E,\\
+ 0&=\left(\frac{\partial P}{\partial E}\right)_V.
+ \end{aligned}
+ \label{eq:sm6-heat-exactness-requirement}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{這是否正是用來檢驗\(F_x\,dx+F_y\,dy\)的同一種旋度測試？}
+\lecturerresponse{是的。\(dE\)和\(dV\)的係數分別是\(1\)和\(P(E,V)\)。它們的交叉偏導數分別是\(0\)和\((\partial P/\partial E)_V\)。只有這些偏導數相等時，熱才會是全微分。
+\lecturetimestamp{01:54:39--01:54:52}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}
+\caption{熱的一形式\(dE+P\,dV\)，以及若它是某個狀態函數的微分時所必須滿足的混合偏導數。}
+\lectureframe{01:58:10}
+\end{figure}
+
+這項要求在物理上已不太可能成立：在定容下對氣體加入能量，通常會使其壓力改變。理想氣體提供了直接的計算：
+\begin{equation}
+ PV=NT,
+ \qquad
+ E=\frac{3}{2}NT
+ \quad\Longrightarrow\quad
+ P=\frac{2E}{3V}.
+ \label{eq:sm6-ideal-pressure-energy}
+\end{equation}
+因此
+\begin{equation}
+ \left(\frac{\partial P}{\partial E}\right)_V
+ =\frac{2}{3V}\ne0.
+ \label{eq:sm6-heat-curl-fails}
+\end{equation}
+旋度測試不成立：\(\delta Q_{\mathrm{rev}}\)不是全微分。功的增量\(\delta W_{\mathrm{on}}=-P\,dV\)也有同樣的問題。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}
+\caption{將理想氣體關係合併，可得\(P=2E/(3V)\)。}
+\lectureframe{02:00:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}
+\caption{完整的論證如下：由於\((\partial P/\partial E)_V\ne0\)，熱的一形式不可能是全微分。}
+\lectureframe{02:00:35}
+\end{figure}
+
+對於封閉的平衡循環，
+\begin{equation}
+ \oint dE=0,
+ \qquad
+ \oint\delta Q_{\mathrm{rev}}
+ =-\oint\delta W_{\mathrm{on}}.
+ \label{eq:sm6-cycle-balance}
+\end{equation}
+系統會回到相同的能量，但熱和功各自不必為零。它們的值取決於系統在態空間中經過的路徑。因此，循環熱機即使使工作物質回到初始熱力學狀態，仍能吸收熱並輸出淨功。
+
+\begin{classroomqa}
+\audiencequestion{這種路徑依賴性與熱機效率、滯後和記憶有關嗎？}
+\lecturerresponse{熱機循環直接運用這種路徑依賴性：循環吸收的熱量與輸出的淨功相平衡，而狀態函數\(E\)則回到初始值。滯後和記憶也涉及路徑依賴性，不過通常還需要額外的內部變數或非平衡物理。此處的結論範圍較窄，但對可逆平衡路徑已經成立：熱和功是傳遞量，而不是儲存在熱力學狀態中的性質。
+\lecturetimestamp{02:02:21--02:03:17}}
+\end{classroomqa}
+
+這項論證的兩個部分如今已會合。只有在指定控制條件和平衡條件後，測量才有意義。只有在指定小參數和失效判準後，近似才有意義。只有通過路徑無關性檢驗的微分，所對應的熱力學量才是狀態函數。在每種情況下，嚴謹的數學都不會取代物理解釋；它會明確指出這種解釋在哪些條件下成立。

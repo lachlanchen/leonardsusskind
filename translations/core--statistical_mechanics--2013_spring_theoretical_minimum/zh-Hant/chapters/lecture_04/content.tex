@@ -1,0 +1,595 @@
+\chapter{玻爾茲曼權重、配分函數與理想氣體}
+
+\lectureoverview{我們在固定歸一化條件與平均能量下，藉由最大化熵推導出平衡機率分佈。接著，對配分函數微分，即可求得平均能量、熵與溫度。理想氣體是第一個完整例子，之後再推廣至引力場，並預告能量漲落的計算。}
+
+\section{受約束的熵問題}
+
+從大量\(\mathcal N\)個相同的子系統複本開始；它們彼此的相互作用極弱。若有\(n_i\)個複本佔據第\(i\)個態，則
+\begin{equation}
+ p_i=\frac{n_i}{\mathcal N},
+ \qquad
+ \sum_i p_i=1.
+ \label{eq:sm4-occupation-probability}
+\end{equation}
+上一講的多項式計數給出每個複本的熵：
+\begin{equation}
+ S[p]=-\sum_i p_i\log p_i.
+ \label{eq:sm4-entropy}
+\end{equation}
+值得將它視為所有變數\(p_1,p_2,\ldots\)的普通函數。正是這種簡單的可加形式，使計算得以進行。
+
+複本集合的總能量固定為\(\mathcal N E\)，其中\(E\)是每個複本的平均能量。因此，第二個約束是
+\begin{equation}
+ \sum_i p_iE_i=E.
+ \label{eq:sm4-energy-constraint}
+\end{equation}
+能階\(E_i\)屬於子系統；右側的\(E\)則是依機率加權的平均值。在\eqref{eq:sm4-entropy}的條件下，最大化熵，同時滿足
+\eqref{eq:sm4-occupation-probability}與
+\eqref{eq:sm4-energy-constraint}，即可選出最可能的佔據比例。
+
+為了方便，改為最小化\(-S=\sum_i p_i\log p_i\)。對每個約束各引入一個拉格朗日乘數：
+\begin{equation}
+ \begin{aligned}
+ \Phi[p;\alpha,\beta]
+ &=\sum_i p_i\log p_i\\
+ &\quad+\alpha\left(\sum_i p_i-1\right)\\
+ &\quad+\beta\left(\sum_i p_iE_i-E\right).
+ \end{aligned}
+ \label{eq:sm4-augmented-functional}
+\end{equation}
+\(\alpha\)和\(\beta\)這兩個名稱目前還不代表任何物理假設。此時它們只是用來施加兩個約束所需的兩個數值。
+
+\begin{classroomqa}
+\audiencequestion{增廣函數也是\(\alpha\)和\(\beta\)的函數嗎？}
+\lecturerresponse{是。對\(\alpha\)和\(\beta\)變分，就會恢復這兩個約束。不過，在眼前的計算中，我們固定這兩個乘數，改為對機率\(p_i\)變分。之後再由歸一化條件和指定的平均能量決定乘數的值。
+\lecturetimestamp{00:09:32--00:09:49}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{lecture_04_figure_02.png}
+\caption{略去對機率變分時為常數的項後，得到的增廣熵泛函。}
+\lectureframe{00:10:56}
+\end{figure}
+
+對機率微分時，\(-\alpha\)和\(-\beta E\)這兩項都沒有貢獻。這就是黑板上簡寫後的泛函。它們仍然是\eqref{eq:sm4-augmented-functional}的一部分，只是在這次微分中不再起作用。
+
+\section{玻爾茲曼分佈}
+
+任選一個機率。本講選的是\(p_7\)，部分原因是\(1\)看起來太特殊，而\(7\)是個幸運數字。選哪一個都不影響結果。所需的微積分只有
+\begin{equation}
+ \frac{d}{dp_i}\bigl(p_i\log p_i\bigr)=\log p_i+1.
+\end{equation}
+因此
+\begin{equation}
+ \frac{\partial\Phi}{\partial p_i}
+ =\log p_i+1+\alpha+\beta E_i=0.
+ \label{eq:sm4-stationarity}
+\end{equation}
+解出\(p_i\)：
+\begin{align}
+ \log p_i&=-(1+\alpha)-\beta E_i,\\
+ p_i&=e^{-(1+\alpha)}e^{-\beta E_i}.
+\end{align}
+第一個因子與態標記無關，將它寫成\(1/Z\)：
+\begin{equation}
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+ \label{eq:sm4-boltzmann-weight}
+\end{equation}
+
+這是第一個出人意料的收穫：一個常規的受約束微分計算，竟然得到指數定律。相對機率滿足
+\begin{equation}
+ \frac{p_i}{p_j}=e^{-\beta(E_i-E_j)}.
+ \label{eq:sm4-relative-weight}
+\end{equation}
+乘數\(\beta\)決定機率隨能量增加而下降的快慢。\(\beta\)為較大的正值時，分佈集中在最低能階附近；\(\beta\)為較小的正值時，較高能階也會分得相當多的權重。我們已經看出，改變\(\beta\)會改變平均能量；不過，還得證明它等於逆溫度。
+
+\section{歸一化與配分函數}
+
+歸一化條件決定與態無關的因子：
+\begin{equation}
+ 1=\sum_i p_i
+ =\frac{1}{Z}\sum_i e^{-\beta E_i},
+\end{equation}
+因此
+\begin{equation}
+ Z(\beta)=\sum_i e^{-\beta E_i}.
+ \label{eq:sm4-partition-function}
+\end{equation}
+這就是正則配分函數。它最初只是作為歸一化常數出現，但這樣描述嚴重低估了它的作用。一旦知道\(Z(\beta)\)，就能透過它的導數求得各種熱力學量。
+
+\eqref{eq:sm4-partition-function}中的能階是已知輸入。它們由系統的力學性質和固定的外部條件決定，例如盒子的體積與形狀、磁場或電場，以及其他控制參數。改變控制參數會改變能譜，因而改變\(Z\)。在目前的計算中，這些參數以及集合\(\{E_i\}\)都保持固定。
+
+\begin{classroomqa}
+\audiencequestion{指數圖的座標軸究竟代表什麼？縱座標是某個特定的\(p_i\)嗎？}
+\lecturerresponse{圖上的高度表示賦予某個能階的機率。橫向的排列可以按態標記\(i\)來讀，也可以從較具物理意義的角度，按能量\(E_i\)來讀。每個態的能量都是固定的。\(\beta\)較大時，機率會隨能量快速下降；當\(\beta=0\)時，各可及能階的權重幾乎相同。
+\lecturetimestamp{00:19:39--00:20:09}}
+\end{classroomqa}
+
+\section{藏在配分函數中的平均能量}
+
+第二個約束決定\(\beta\)：
+\begin{equation}
+ E=\sum_i p_iE_i
+ =\frac{1}{Z}\sum_i E_i e^{-\beta E_i}.
+ \label{eq:sm4-mean-energy}
+\end{equation}
+與其重新計算這個加權總和，不如對\eqref{eq:sm4-partition-function}微分：
+\begin{equation}
+ \frac{dZ}{d\beta}
+ =-\sum_i E_i e^{-\beta E_i}.
+\end{equation}
+與\eqref{eq:sm4-mean-energy}比較，可得
+\begin{equation}
+ E(\beta)
+ =-\frac{1}{Z}\frac{dZ}{d\beta}
+ =-\frac{d\log Z}{d\beta}.
+ \label{eq:sm4-energy-logz}
+\end{equation}
+這裡取自然對數，因為它的導數會帶出因子\(1/Z\)。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_03.png}
+\caption{黑板上同時列出了歸一化條件、平均能量約束，以及配分函數的導數。}
+\lectureframe{00:26:24}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{黑板下方的方程是關於\(Z\)的新方程，還是由上方的定義推導而來？}
+\lecturerresponse{它是對定義\(Z=\sum_i e^{-\beta E_i}\)微分而得。微分會帶出\(-E_i\)。再將結果除以\(Z\)，就會得到定義平均能量的加權總和。
+\lecturetimestamp{00:25:58--00:26:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{
+\(dZ/d\beta=-E Z\)是否讓\(Z\)成為微分運算的本徵函數？}
+\lecturerresponse{不是通常意義下的本徵函數。本徵值方程會是某個常數乘上\(Z\)，但這裡的關係是\(E=E(\beta)\)。這個方程描述平均能量如何隨\(\beta\)變化，並不是固定本徵值問題。
+\lecturetimestamp{00:28:49--00:29:43}}
+\end{classroomqa}
+
+\eqref{eq:sm4-energy-logz}的簡潔形式容易讓人誤以為問題很簡單。能譜可能很複雜，計算\(Z\)也可能很困難；但只要求出這個函數，對它微分一次就能得到平均能量。這種模式在統計力學中一再出現：依照恰當的順序進行簡單運算，就能得到原本難以直接猜出的結果。
+
+\begin{classroomqa}
+\audiencequestion{\(E\)是所有複本的總能量，還是每個盒子的平均能量？}
+\lecturerresponse{它是單一盒子的平均能量。複本集合的總能量是\(\mathcal N E\)。之後，若把整個盒子（內含\(N\)個氣體粒子）當作系統，\(E\)就代表整份氣體樣本的能量。
+\lecturetimestamp{00:30:55--00:31:10}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{可以對\(\sum_i e^{-\beta E_i}\)中的每一項取對數嗎？}
+\lecturerresponse{不可以。對數會把乘積變成總和，卻不會把總和變成對數的總和：
+\[
+ \log\!\left(\sum_i e^{-\beta E_i}\right)
+ \ne \sum_i\log\!\left(e^{-\beta E_i}\right).
+\]
+這個區別之後會派上用場：獨立子系統的配分函數會彼此相乘。
+\lecturetimestamp{00:31:10--00:31:58}}
+\end{classroomqa}
+
+\section{哪些量固定，哪些量可以改變？}
+
+同一組公式中包含好幾層不同的變數；課堂上的討論刻意將它們區分開來。
+
+\begin{itemize}
+ \item 機率\(p_i\)是原先未知的量。
+ \item 系統及其控制參數一經指定，能階\(E_i\)便固定不變。
+ \item 乘數\(\alpha\)已併入歸一化因子\(Z=e^{1+\alpha}\)。
+ \item 給定平均能量\(E\)後，約束會決定一個數值\(\beta\)。然而，在一系列平衡態中，可以用\(E=E(\beta)\)或\(\beta=\beta(E)\)來描述。
+\end{itemize}
+
+\begin{classroomqa}
+\audiencequestion{如果乘數是數值，為什麼現在把\(\beta\)和\(E\)當作變數？}
+\lecturerresponse{在單一受約束問題中，它們確實是數值。不過，我們可以比較能譜相同、指定平均能量不同的許多平衡問題。在這一系列狀態中，\(\beta\)會隨\(E\)改變。固定\(E\)就會決定\(\beta\)；固定\(\beta\)則會決定\(E\)。這是同一關係的兩種讀法。
+\lecturetimestamp{00:31:58--00:33:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\alpha\)不見了嗎？}
+\lecturerresponse{消失的只是它的名稱。定義\(e^{-(1+\alpha)}=1/Z\)已將它併入\(Z\)。若同時保留\(\alpha\)和\(Z\)，就等於把同一個歸一化參數計算兩次。
+\lecturetimestamp{00:33:29--00:33:49}}
+\end{classroomqa}
+
+能量不一定是唯一受約束的守恆量。如果總動量、粒子數、角動量或其他量也受到約束，就要為其期望值另外引入一個乘數。這樣擴充會改變系綜，但不會改變方法。
+
+\begin{classroomqa}
+\audiencequestion{只固定平均能量，是否對系統做了太多假設？}
+\lecturerresponse{這等於假設在目前的問題中，不需要再以其他守恆量為條件。例如，若總動量也固定，就要再加入一個約束和一個拉格朗日乘數。相對地，體積、形狀與外場在這裡是控制參數：它們保持固定，並決定能階本身。
+\lecturetimestamp{00:33:51--00:35:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\alpha\)是否也該列為能量的另一個自變數？\(Z\)是否依賴能階\(E_i\)？}
+\lecturerresponse{\(\alpha\)已包含在\(Z\)中，因此不是獨立的自變數。配分函數除了依賴\(\beta\)，當然也依賴固定的能譜。改變控制參數會改變\(E_i\)，因而改變\(Z\)；在目前對\(\beta\)微分時，能譜保持固定。
+\lecturetimestamp{00:35:52--00:37:10}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{我們改變的是各個能階\(E_i\)，還是平均能量\(E\)？}
+\lecturerresponse{各個能階保持固定。機率改變，平均能量才隨之改變。因此，這一系列平衡態可以用\(E\)或等價的\(\beta\)來參數化，而全程使用的都是同一組能階\(\{E_i\}\)。
+\lecturetimestamp{00:37:12--00:39:04}}
+\end{classroomqa}
+
+實際上，溫度通常比氣體的總能量容易測量得多。我們可以插入溫度計；稱量相對論性的質量差，再援引\(E=mc^2\)，雖然做法正確，卻極不實用。要讓\(\beta\)成為可操作的物理量，現在必須把它和溫度的熱力學定義連結起來。
+
+\section{先有熵，再談溫度}
+
+從邏輯上說，熵的推導先於溫度。將玻爾茲曼機率代入\eqref{eq:sm4-entropy}：
+\begin{equation}
+ \log p_i=-\beta E_i-\log Z.
+\end{equation}
+於是
+\begin{align}
+ S
+ &=-\sum_i p_i\log p_i\\
+ &=\beta\sum_i p_iE_i+\log Z\sum_i p_i\\
+ &=\beta E+\log Z.
+ \label{eq:sm4-entropy-logz}
+\end{align}
+歸一化的總和給出最後的因子一。這也初步顯示出亥姆霍茲自由能的形式，因為稍後在\(k_B=1\)的單位制中，會有\(F_{\mathrm H}=-T\log Z\)。
+
+\begin{classroomqa}
+\audiencequestion{第一項中的因子\(1/Z\)去哪裡了？}
+\lecturerresponse{它已包含在\(p_i\)裡。總和\(\sum_i p_iE_i\)包含完整的歸一化機率；依定義，它就是平均能量\(E\)。
+\lecturetimestamp{00:43:19--00:43:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{在\(S=\beta E+\log Z\)中是不是應該有負號？}
+\lecturerresponse{不需要。熵的定義一開始就有一個負號，而\(\log p_i=-\beta E_i-\log Z\)又包含另外兩個負號。這些負號相乘後，得到\eqref{eq:sm4-entropy-logz}中所示的兩個正項。
+\lecturetimestamp{00:45:53--00:46:03}}
+\end{classroomqa}
+
+溫度的熱力學定義是
+\begin{equation}
+ dE=T\,dS,
+ \qquad
+ \frac{1}{T}=\frac{dS}{dE},
+ \label{eq:sm4-temperature-definition}
+\end{equation}
+並且所有其他控制參數都保持固定。若直接對\eqref{eq:sm4-entropy-logz}關於\(E\)微分，很快就會變得繁雜，因為\(\beta\)也依賴\(E\)。改取全微分會簡潔得多：
+\begin{align}
+ dS
+ &=\beta\,dE+E\,d\beta
+   +\frac{d\log Z}{d\beta}\,d\beta\\
+ &=\beta\,dE+E\,d\beta-E\,d\beta\\
+ &=\beta\,dE.
+ \label{eq:sm4-entropy-differential}
+\end{align}
+這裡的相消用到了\eqref{eq:sm4-energy-logz}。比較\eqref{eq:sm4-entropy-differential}與\eqref{eq:sm4-temperature-definition}，可得
+\begin{equation}
+ T=\frac{1}{\beta},
+ \qquad
+ \beta=\frac{1}{T}.
+ \label{eq:sm4-beta-temperature}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_04.png}
+\caption{兩個\(d\beta\)項相消後，剩下\(dS=\beta\,dE\)。}
+\lectureframe{00:50:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{這樣相消，是否錯誤地假設\(\log Z\)與能量或溫度無關？}
+\lecturerresponse{不會。對固定的能譜而言，只有一個獨立的熱力學參數。我們可以寫成\(Z=Z(\beta)\)，再沿著平衡態系列，把\(\beta=\beta(E)\)視為能量的函數。全微分保留了\(d\beta\)的完整依賴關係，而恆等式\(d\log Z/d\beta=-E\)正是使相消成立的關鍵。
+\lecturetimestamp{00:52:04--00:52:44}}
+\end{classroomqa}
+
+在大部分推導中，溫度以能量為單位表示，因此\(k_B=1\)。換回實驗室常用單位後，
+\begin{equation}
+ \beta=\frac{1}{k_B T_{\mathrm K}},
+ \label{eq:sm4-beta-laboratory}
+\end{equation}
+其中\(T_{\mathrm K}\)是以開爾文表示的絕對溫度。通常也可方便地寫成\(T_{\mathrm e}=k_BT_{\mathrm K}\)，再使用\(\beta=1/T_{\mathrm e}\)。
+
+\begin{classroomqa}
+\audiencequestion{對於一盒氣體，系統是單一分子，還是整個粒子集合？}
+\lecturerresponse{這取決於系統如何定義。這裡將整盒氣體視為系統，因此\(E\)是其中所有分子的能量。對於足夠稀薄的理想氣體，也可以把單一分子視為子系統，因為粒子彼此不相互作用。下文的因子分解會說明這兩種描述之間的關係。
+\lecturetimestamp{00:53:32--00:54:49}}
+\end{classroomqa}
+
+現在可以整理正則系綜的各個關係式：
+\begin{align}
+ p_i&=\frac{e^{-\beta E_i}}{Z},&
+ Z(\beta)&=\sum_i e^{-\beta E_i},\label{eq:sm4-canonical-pair}\\
+ E&=-\frac{d\log Z}{d\beta},&
+ S&=\beta E+\log Z,&
+ T&=\frac{1}{\beta}.
+ \label{eq:sm4-canonical-identities}
+\end{align}
+
+\section{經典理想氣體}
+
+考慮\(N\)個質量為\(m\)的相同點粒子，置於體積為\(V\)的盒子中。當粒子間的相互作用可以忽略時，這就是理想氣體。粒子間的作用力很弱，或是氣體足夠稀薄、粒子很少近距離相遇，都可能使這個近似成立。
+
+經典微觀態由所有粒子的位置和動量指定：
+\begin{equation}
+ (\bm q_1,\ldots,\bm q_N;\bm p_1,\ldots,\bm p_N).
+\end{equation}
+位置座標有\(3N\)個，動量座標也有\(3N\)個，因此微觀態是\(6N\)維相空間中的一個點。在沒有相互作用時，哈密頓量為
+\begin{equation}
+ H(\bm p)=\sum_{a=1}^{N}\frac{\bm p_a^2}{2m}
+ =\sum_{\mu=1}^{3N}\frac{p_\mu^2}{2m}.
+ \label{eq:sm4-ideal-hamiltonian}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{粒子數是\(3N\)嗎？對所有動量分量積分會不會重複計算狀態？}
+\lecturerresponse{粒子數是\(N\)，動量分量則有\(3N\)個。\eqref{eq:sm4-ideal-hamiltonian}中的總和對每個分量各包含一個二次項。接著，相空間積分會對每個獨立分量恰好積分一次，因此這樣的乘積不會造成重複計數。
+\lecturetimestamp{01:02:29--01:04:04}}
+\end{classroomqa}
+
+對連續的經典相空間，態的總和改寫為
+\begin{equation}
+ Z_N
+ =\frac{1}{N!\,h^{3N}}
+ \int_{V^N}d^{3N}q
+ \int_{\mathbb R^{3N}}d^{3N}p\,
+ e^{-\beta H(\bm p)}.
+ \label{eq:sm4-classical-partition}
+\end{equation}
+本講著重在積分，並寫下沒有相空間單元\(h^{3N}\)的同一個表示式。將它補回後，\(Z_N\)便成為無量綱量，也反映出經典態計數源自量子力學。由於\(h\)與\(\beta\)無關，它不會影響下文對能量所取的導數。
+
+位置積分很直接。哈密頓量與位置無關，而每個粒子都可以位於盒子中的任何位置：
+\begin{equation}
+ \int_{V^N}d^{3N}q=V^N.
+\end{equation}
+動量積分則可分解為\(3N\)個相同的一維高斯積分：
+\begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left[
+  \int_{-\infty}^{\infty}dp\,
+  e^{-\beta p^2/(2m)}
+ \right]^{3N}.
+ \label{eq:sm4-factorized-gas}
+\end{equation}
+
+因子\(1/N!\)用來消除僅因相同粒子互換而產生的重複計數。固定\(N\)和\(V\)時，它只會在\(\log Z_N\)中加入與\(\beta\)無關的常數，因此在\(-\partial/\partial\beta\)下便消失。但並非所有問題都能忽略它：它與\(h^{3N}\)一樣，對無量綱配分函數、廣延熵和一致的化學勢都不可或缺。
+
+現在令
+\begin{equation}
+ x=\sqrt{\frac{\beta}{2m}}\,p,
+ \qquad
+ dp=\sqrt{\frac{2m}{\beta}}\,dx.
+\end{equation}
+高斯積分便成為
+\begin{align}
+ \int_{-\infty}^{\infty}dp\,e^{-\beta p^2/(2m)}
+ &=
+ \sqrt{\frac{2m}{\beta}}
+ \int_{-\infty}^{\infty}dx\,e^{-x^2}\\
+ &=\sqrt{\frac{2\pi m}{\beta}}.
+ \label{eq:sm4-gaussian}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_05.png}
+\caption{只需一次變數縮放，就能將動量積分化為標準高斯積分。}
+\lectureframe{01:13:12}
+\end{figure}
+
+代入\eqref{eq:sm4-factorized-gas}，得到
+\begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm4-ideal-partition}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_04_figure_06.png}
+\caption{黑板上寫出了完整的理想氣體配分函數；在\eqref{eq:sm4-ideal-partition}中也補回了相空間單元\(h^{3N}\)。}
+\lectureframe{01:14:38}
+\end{figure}
+
+也可以用熱德布羅意波長將同一結果寫得更精簡：
+\begin{equation}
+ \lambda_T=\frac{h}{\sqrt{2\pi mT}}
+ \qquad (k_B=1).
+\end{equation}
+於是
+\begin{equation}
+ Z_N=\frac{1}{N!}\left(\frac{V}{\lambda_T^3}\right)^N.
+ \label{eq:sm4-thermal-wavelength-form}
+\end{equation}
+
+對宏觀系統的\(N\)，套用斯特林公式可得
+\begin{equation}
+ N!\simeq N^Ne^{-N}\sqrt{2\pi N}.
+\end{equation}
+只保留指數的主導依賴，並定義\(\rho=N/V\)，則
+\begin{equation}
+ \frac{V^N}{N!}
+ \simeq
+ \frac{1}{\sqrt{2\pi N}}
+ \left(\frac{e}{\rho}\right)^N.
+ \label{eq:sm4-density-rewrite}
+\end{equation}
+這是本講簡潔的密度改寫方式。平方根因子對\(\log Z_N\)而言是次領階，但這裡仍將它明確列出，沒有直接略去。
+
+\begin{classroomqa}
+\audiencequestion{如果\(1/N!\)與\(\beta\)無關，是否就完全沒有影響？}
+\lecturerresponse{在目前固定\(N\)與\(V\)的條件下，它不影響平均能量的導數，因為它只會在\(\log Z_N\)中加入與\(\beta\)無關的常數。不過，它會影響絕對熵以及粒子數變動。這裡有限定的導數結論，不應與更廣泛的態計數結論混為一談。
+\lecturetimestamp{01:27:01--01:27:51}}
+\end{classroomqa}
+
+\section{能量與均分定理}
+
+乘積不易微分；取對數就能把乘積轉為總和。由\eqref{eq:sm4-ideal-partition}可得
+\begin{equation}
+ \log Z_N
+ =-\frac{3N}{2}\log\beta+\text{\(\beta\)-independent terms}.
+ \label{eq:sm4-log-ideal-partition}
+\end{equation}
+因此
+\begin{equation}
+ E
+ =-\frac{\partial\log Z_N}{\partial\beta}
+ =\frac{3N}{2\beta}
+ =\frac{3N}{2}T.
+ \label{eq:sm4-ideal-energy}
+\end{equation}
+每個粒子的能量為
+\begin{equation}
+ \frac{E}{N}=\frac{3}{2}T
+ \qquad (k_B=1),
+\end{equation}
+換成實驗室常用單位則為
+\begin{equation}
+ \frac{E}{N}=\frac{3}{2}k_BT_{\mathrm K}.
+ \label{eq:sm4-ideal-energy-lab}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_04_figure_07.png}
+\caption{只有\(-3N\log\beta/2\)這一項對理想氣體的能量有貢獻，因此得到\(E/N=3T/2\)。}
+\lectureframe{01:25:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{能量公式中的玻爾茲曼常數從何而來？}
+\lecturerresponse{理論上使用的溫度\(T\)本身就是能量。若要使用開爾文溫標，就以\(k_BT_{\mathrm K}\)取代它，得到\(E/N=3k_BT_{\mathrm K}/2\)。\(k_B\)的數值很小，因此能把數值上看似宏觀的溫度，轉換成單一分子的微觀能量尺度。
+\lecturetimestamp{01:24:58--01:26:01}}
+\end{classroomqa}
+
+係數三來自空間的三個方向；二分之一則來自每個高斯積分對\(1/\beta\)的平方根依賴。每個獨立的二次動量座標，對平均能量的貢獻都是
+\begin{equation}
+ \frac{1}{2}T
+\end{equation}
+在\(d\)維空間中，同樣的論證會得到\(E/N=dT/2\)。這是均分定理首次出現。
+
+講座最後指定的熵計算可由\(S=\beta E+\log Z_N\)推得。使用斯特林近似，
+\begin{equation}
+ \frac{S}{N}
+ \simeq
+ \log\!\left[
+  \frac{V}{N}
+  \left(\frac{2\pi mT}{h^2}\right)^{3/2}
+ \right]
+ +\frac{5}{2},
+ \label{eq:sm4-sackur-tetrode}
+\end{equation}
+結果準確至次領階的有限\(N\)修正。換回\(k_B\)後，右側要乘上\(k_B\)，並以\(k_BT_{\mathrm K}\)取代\(T\)。這個結果清楚說明，為什麼那些在能量計算中消去的歸一化因子，對熵仍不可或缺。
+
+\section{將氣體置於重力場中}
+
+有人問到把盒子放在中子星上會如何，這引出了引力場中的推廣。在討論中子星之前，先考慮普通房間中的均勻重力場\(g\)。令\(y=0\)位於底面積為\(A\)、高度為\(L\)的盒子底部。哈密頓量變為
+\begin{equation}
+ H=\sum_{a=1}^{N}
+ \left(\frac{\bm p_a^2}{2m}+mgy_a\right).
+ \label{eq:sm4-gravity-hamiltonian}
+\end{equation}
+水平方向的位置積分仍給出\(A^N\)；每個垂直座標則貢獻
+\begin{equation}
+ I_y(L)
+ =\int_0^Ldy\,e^{-\beta mgy}
+ =\frac{1-e^{-\beta mgL}}{\beta mg}.
+ \label{eq:sm4-finite-height-integral}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{垂直方向的積分真的要延伸到無窮遠嗎？還是只積到盒頂就好？}
+\lecturerresponse{對有限高的盒子，積分範圍必須從\(0\)到盒子的高度\(L\)，如\eqref{eq:sm4-finite-height-integral}所示。將上限延伸至無窮遠，是稍後才採用的簡化；它描述的是表面上方的大氣，而不是有限高度的房間。
+\lecturetimestamp{01:30:25--01:31:32}}
+\end{classroomqa}
+
+因此，有限高度下的完整配分函數是
+\begin{equation}
+ Z_N(L)
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  A\,
+  \frac{1-e^{-\beta mgL}}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-finite}
+\end{equation}
+垂直方向的因子依賴\(\beta\)，因此也必須對能量有貢獻。確實，
+\begin{equation}
+ \langle U\rangle
+ =N\left[
+  \frac{1}{\beta}
+  -\frac{mgL}{e^{\beta mgL}-1}
+ \right].
+ \label{eq:sm4-finite-gravity-energy}
+\end{equation}
+至此，講座一開始留下的那段繁瑣積分就完成了。
+
+對無限高的大氣，\(L\to\infty\)，而且
+\begin{equation}
+ I_y(\infty)=\frac{1}{\beta mg}.
+\end{equation}
+配分函數變為
+\begin{equation}
+ Z_N^{(\infty)}
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  \frac{A}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-infinite}
+\end{equation}
+其中依賴\(\beta\)的對數項為
+\begin{equation}
+ \log Z_N^{(\infty)}
+ =-\frac{3N}{2}\log\beta-N\log\beta+\mathrm{const}.
+\end{equation}
+第一項給出動能\(3NT/2\)；第二項給出平均重力位能\(NT\)。因此，對這個理想化的無界大氣而言，
+\begin{equation}
+ E_{\mathrm{tot}}=\frac{5N}{2}T
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.83\textwidth]{lecture_04_figure_08.png}
+\caption{無限高大氣的配分函數在\(\log Z\)中多出一項\(-N\log\beta\)，這項正是平均位能的來源。}
+\lectureframe{01:36:38}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{非常強的重力場是否需要另外引入一個拉格朗日乘數？}
+\lecturerresponse{不會只因為場很強就需要。重力會改變哈密頓量，因此也會改變能階或相空間權重；使用的仍是同一個能量乘數\(\beta\)。中子星還涉及其他物理上的複雜因素，但首先仍是將重力位能納入\(H\)。
+\lecturetimestamp{01:27:58--01:29:24}}
+\end{classroomqa}
+
+\section{結尾的三個問題}
+
+\begin{classroomqa}
+\audiencequestion{哪個方程是玻爾茲曼分佈？它對平衡說明了什麼？}
+\lecturerresponse{分佈為
+\[
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+\]
+這是在歸一化條件與平均能量固定的條件下，使熵最大的分佈。平均能量必須由同一組機率計算；即使最終公式看起來幾乎自動滿足歸一化，仍然必須施加歸一化條件。
+\lecturetimestamp{01:38:14--01:38:45}}
+\end{classroomqa}
+
+這套做法可能顯得機械：寫出配分函數、取對數，再微分。然而，由此得到的方程仍不斷帶來驚喜。熟悉這套方法後，就會知道各種簡單運算該如何依序使用；但這並不會讓這門學科變得不那麼引人好奇。
+
+\begin{classroomqa}
+\audiencequestion{這些熵的概念能用於坍縮中的恆星或黑洞嗎？物質佔據的區域變小，熵怎麼還會增加？}
+\lecturerresponse{恆星問題之所以困難，主要是因為其物質的細節十分複雜。黑洞則提供了較明確的基準：在給定宏觀約束下，貝肯斯坦--霍金熵是引力熵的極限。坍縮過程中熵可以增加，直到達到該黑洞熵值；若要再增加，就必須改變可用能量或物體的尺度。
+\lecturetimestamp{01:39:29--01:40:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{配分函數也能用來計算能量漲落嗎？}
+\lecturerresponse{可以。一階導數給出平均能量，二階導數則給出能量的變異數：
+\begin{align*}
+ \frac{\partial^2\log Z}{\partial\beta^2}
+ &=\langle E^2\rangle-\langle E\rangle^2\\
+ &=\operatorname{Var}(E).
+\end{align*}
+以能量為單位表示時，變異數與熱容量的關係為\(\operatorname{Var}(E)=T^2C_V\)。換成實驗室常用單位，則為\(\operatorname{Var}(E)=k_BT_{\mathrm K}^2C_V\)。接下來就要推導這個漲落關係。
+\lecturetimestamp{01:40:37--01:41:53}}
+\end{classroomqa}
+
+漲落使統計力學有別於純粹連續的熱力學描述。對漲落的系統性研究，尤其與吉布斯和愛因斯坦的工作相關，揭示了平滑宏觀定律背後有限的微觀組成。下一講就從這裡開始。

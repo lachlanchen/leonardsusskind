@@ -1,0 +1,556 @@
+\chapter{復現、非平衡有序與伊辛自旋}
+
+\lectureoverview{從房間一半釋出的氣體會迅速趨近平衡，但可逆力學指出，演化時間足夠長時，系統也必定會返回那個特殊狀態。我們根據相空間體積估算復現時間，區分復現與宇宙低熵起始狀態之謎，並藉此討論玻爾茲曼大腦、彼此連貫的歷史，以及由能量流維持的生命。接著我們轉向磁有序。彼此獨立的兩態自旋提供了一個可精確求解的入門例子：組合計數決定配分函數，而磁化強度呈雙曲正切函數的形式。加入近鄰相互作用後，上--下對稱性便得以恢復，並導向一維伊辛模型。}
+
+\section{一屋子的空氣終將復現}
+
+先讓房間裡的空氣全都位於左半邊。可以用隔板製備這個狀態：將右半邊抽成真空，把空氣留在左半邊，然後移除隔板。氣體迅速擴散至整個房間，並趨近熱平衡。熵增加了。沒有什麼令人意外之處。
+
+現在將房間密封起來，等待下去。連續擲出一百萬次正面的紀錄極不可能發生，但若無限次重複實驗，終究會出現極不可能的紀錄。氣體也是同樣的道理。在某個遙遠的時刻，所有分子會再次出現在左半邊，或某個同樣特殊的區域。這種返回稱為龐加萊復現。
+
+精確的定理比這幅圖像所呈現的情況稍微嚴謹一些。對於相空間中一個測度有限、且動力學保持相空間體積不變的區域，幾乎所有初始點都會任意接近原來的起點。像\emph{所有分子都在左半邊}這樣的宏觀敘述比較容易成立：它只要求軌跡重新進入一個有限的粗粒化區域，不要求每個分子座標都精確地回到原值。實際上要問的是，這需要多久。
+
+\subsection{高維相點}
+
+對\(N\)個經典粒子而言，相空間有\(6N\)個座標，\begin{equation}
+ \Gamma=(\bm x_1,\ldots,\bm x_N;\bm p_1,\ldots,\bm p_N).
+ \label{eq:sm8-phase-point}
+\end{equation}位置受房間範圍限制。在總能量固定時，動量也有界，因為單一粒子若帶有任意大的動量，就必須具有任意大的能量。因此，在復現論證所採用的假設下，允許的能量殼具有有限測度。
+
+相點按照確定性規律演化，但多體氣體中的運動具有混沌性。相鄰軌跡會迅速分離，就像一連串撞球碰撞一樣。經過粗粒化後，漫長軌跡看起來會在可及區域內四處漫遊。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_02.png}
+\caption{相空間區域與在其中曲折漫遊的軌跡示意圖。圖中特意只畫出低維情形；真實氣體所在的是\(6N\)維空間。}
+\lectureframe{00:06:41}
+\end{figure}
+
+這幅低維草圖很容易讓我們立刻犯錯。如果特殊狀態佔據圖中矩形的一半，人們可能會說氣體應有一半時間待在那裡。但\emph{每個分子都位於左半邊}這個條件限制的是每一個位置座標，不只是相點的一個座標。
+
+只考慮在一維空間中運動的兩個粒子，座標為\(x_1\)和\(x_2\)。它們的位形空間是一個正方形。要求\(x_1<L/2\)會選出正方形的一半；若同時要求\(x_1<L/2\)和\(x_2<L/2\)，則會選出四分之一：
+\begin{equation}
+ P_2=\frac{1}{2}\frac{1}{2}=\frac{1}{4}.
+ \label{eq:sm8-two-particle-quarter}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_07.png}
+\caption{對於兩個一維粒子，較小的正方形代表兩個座標都落在房間所選那一半範圍內的組態。}
+\lectureframe{00:07:08}
+\end{figure}
+
+三個粒子的情況給出\(1/2^3\)，而\(N\)個粒子的情況給出
+\begin{equation}
+ P_{\mathrm{half}}(N)
+ =\left(\frac{1}{2}\right)^N.
+ \label{eq:sm8-half-probability}
+\end{equation}
+指數才是關鍵。二分之一這個因子很平常；但把二分之一提升到巨觀粒子數的次方，就超出了日常直覺。
+
+\begin{classroomqa}
+\audiencequestion{答案不應該是\(1/3^N\)嗎？畢竟分子還有其他空間方向。}
+\lecturerresponse{這取決於施加的條件。如果只問每個粒子是否都在分隔牆左側，那麼每個粒子只須符合一個二元條件，答案就是\(2^{-N}\)。若再限制粒子只能位於其可用位置空間中另一個獨立的部分，就會再多出一個因子。
+\lecturetimestamp{00:07:47--00:08:05}}
+\end{classroomqa}
+
+\section{相體積、熵與復現尺度}
+
+同樣的估算也可以不提「一半」來表示。令房間的普通空間體積為\(V\)，並令\(v\)為一個較小的區域，要求所有分子都位於其中。忽略兩種宏觀態共有的動量因子後，可用的位形空間體積為
+\begin{equation}
+ \Omega_{\mathrm{room}}\propto V^N,
+ \qquad
+ \Omega_{\mathrm{small}}\propto v^N.
+ \label{eq:sm8-config-volumes}
+\end{equation}
+因此，長時間內處於小區域宏觀態的比例為
+\begin{equation}
+ P(v)
+ =\frac{\Omega_{\mathrm{small}}}{\Omega_{\mathrm{room}}}
+ =\left(\frac{v}{V}\right)^N.
+ \label{eq:sm8-volume-ratio}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_08.png}
+\caption{黑板上的一般相體積示意圖：可及區域\(V^N\)內的一個小區域\(v^N\)，兩者的比值為\(v^N/V^N\)。}
+\lectureframe{00:10:44}
+\end{figure}
+
+在\(k_B=1\)的單位制中，熵是可及相體積的對數。若\(S_A=\log\Omega_A\)是受約束宏觀態的熵，而\(S_{\rm eq}=\log\Omega_{\rm eq}\)是平衡態的熵，則
+\begin{equation}
+ \begin{aligned}
+ P(A)
+ &=\frac{\Omega_A}{\Omega_{\rm eq}}\\
+ &=\exp\!\left(S_A-S_{\rm eq}\right)\\
+ &=e^{-\Delta S},\\
+ \Delta S&=S_{\rm eq}-S_A.
+ \end{aligned}
+ \label{eq:sm8-entropy-probability}
+\end{equation}
+對於半個房間的條件，\(\Delta S=N\log 2\)，而\eqref{eq:sm8-entropy-probability}恰好化為\(2^{-N}\)。只有在將特殊區域的熵視為固定基準時，簡寫\(P\sim e^{-S_{\rm eq}}\)才合適；具有物理意義的指數是熵差\(\Delta S\)。
+
+\begin{classroomqa}
+\audiencequestion{這裡指的是位形空間體積，而非整個相空間的體積嗎？}
+\lecturerresponse{就這項比較而言，是的。我們施加的是位置條件，而動量分布維持在相同溫度，因此共同的動量空間因子會相消。一般的復現敘述使用相空間；這裡的特定機率則可由位形空間的體積比算出。
+\lecturetimestamp{00:11:21--00:11:40}}
+\end{classroomqa}
+
+假設系統經過微觀關聯時間或混合時間\(\tau_{\rm mix}\)後，便不再保有對細微位置的記憶。那麼，機率為\(P(A)\)的稀有區域，大約會在以下時間尺度上被遇到：
+\begin{equation}
+ \tau_{\rm rec}
+ \sim \frac{\tau_{\rm mix}}{P(A)}
+ \sim \tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-recurrence-time-general}
+\end{equation}
+對於半個房間的條件，
+\begin{equation}
+ \tau_{\rm rec}\sim\tau_{\rm mix}2^N.
+ \label{eq:sm8-recurrence-time-half}
+\end{equation}
+講課中採用了一個刻意粗略、以房間大小為基準的估算\(N\sim10^{30}\)，得到這個令人印象深刻的尺度：
+\(\tau_{\rm rec}/\tau_{\rm mix}\sim2^{10^{30}}\)。在一般大氣密度下，一個房間裡的分子數更接近\(10^{27}\)；不過，把\(10^{30}\)換成\(10^{27}\)，不會改變任何結論：復現時間仍然遠遠超過宇宙年齡，長到難以想像。
+
+\begin{classroomqa}
+\audiencequestion{復現時間用什麼單位表示？若從秒改成小時，或改用極短的時間單位，結論會改變嗎？}
+\lecturerresponse{量綱前因子是\(\tau_{\rm mix}\)；巨大的數值則是無量綱比值\(\tau_{\rm rec}/\tau_{\rm mix}\)。從秒改成小時，只是除以一般的換算因子；與\(2^{10^{30}}\)相比，這個因子微不足道。單次造訪角落的持續時間確實取決於分子速率，但這項估算關心的是這種造訪要隔多久才會開始。量子復現定理也存在，不過此處用不著。
+\lecturetimestamp{00:17:24--00:19:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{計算一段任何實驗都不可能等待的時間，目的是什麼？}
+\lecturerresponse{這是概念上的問題。它告訴我們，封閉力學系統在哪種意義下仍然可逆。系統幾乎所有時間都在平衡態附近，但時間尺度足夠長時，也會發生朝低熵方向的漲落。因此，第二定律是關於特殊初始條件的壓倒性高機率敘述，而不是禁止反向運動的微觀方程式。
+\lecturetimestamp{00:15:12--00:16:35}}
+\end{classroomqa}
+
+\section{可逆性與特殊的起始狀態}
+
+有意讓系統一開始就處於那個小小的半房間區域。幾乎所有鄰近軌跡都會立刻離開，因為外部的相體積遠大於內部。氣體迅速擴散，接著要等極長時間才會返回。快速弛豫與漫長等待之間的這種不對稱，並不違反可逆力學。
+
+快速逃離過程的時間反演，並不是整段等待時間，而是那段短暫、協調得不可思議的過程：看似處於平衡態的分子速度恰巧以恰當方式排列，使氣體\emph{呼地}衝進房間的一半。若在一般逃離過程結束時反轉每個動量，氣體就會沿原路反向重演逃離過程。漫長的等待時間，指的是那種特殊的入射速度排列自發出現所需的時間。
+
+\begin{classroomqa}
+\audiencequestion{時間對稱是否表示緩慢復現到角落所需的時間，會和最初離開角落所需的時間一樣長？}
+\lecturerresponse{不會。請比較逃離過程及其精確的時間反演：兩者都很快。漫長的時間花在平衡態中的等待，等待那種觸發反向衝入過程的精確入射漲落。在極其漫長的紀錄中，系統沿兩個時間方向偏離平衡時，局部歷史是對稱的。
+\lecturetimestamp{00:20:46--00:21:58}}
+\end{classroomqa}
+
+因此，復現論證只能解釋時間箭頭的一部分。它解釋的是：\emph{已知}系統起始於低熵區域時，熵為何通常會上升。它沒有解釋初始條件為何如此特殊。在宇宙學中，這個尚未解答的前提成了核心問題：為什麼可觀測宇宙起始於引力相空間中如此異常狹小的一個區域？
+
+\begin{classroomqa}
+\audiencequestion{復現適用於宇宙學嗎？宇宙膨脹開來之後，若等待足夠長的時間，它會復現嗎？}
+\lecturerresponse{這個問題無法迴避，但答案取決於整體宇宙學。一個真正封閉且平衡態空間有限的系統，會讓人預期發生復現。膨脹時空、引力、視界，以及無限或非定常的狀態空間，都可能改變論證前提。這裡要強調的教訓較為有限：光靠平衡態復現圖像，並不足以為我們所見這個有結構的宇宙提供令人滿意的統計解釋。
+\lecturetimestamp{00:19:59--00:20:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{復現是否取決於一開始將氣體置於小區域中？若房間一開始就在平衡態，空氣最終還是會聚集到某個角落嗎？}
+\lecturerresponse{會。復現關乎封閉系統的長時間動力學，因此，即使初始狀態看似處於平衡，也會發生罕見的低熵漲落。製備半個房間的狀態之所以重要，是另一個原因：這讓我們能以已知的特殊初始狀態為條件，進而追問熵為何在其後立即上升。
+\lecturetimestamp{00:22:04--00:22:20}}
+\end{classroomqa}
+
+\section{隨機漲落為何預言得太少}
+
+我們或許會想據此建立一套宇宙學：宇宙可能幾乎永遠都處於平衡態，而我們現在的世界只是一次罕見漲落。這個提議過不了一項明確的統計檢驗。以觀察者存在為條件，並問這位觀察者還應預期看到什麼。
+
+足以形成一顆行星的漲落極其罕見。若要形成兩顆行星，就需要更大的熵差，因此更為罕見。若要形成恆星、星系、宇宙微波背景，以及彼此吻合、共同記錄漫長過去的紀錄，則罕見程度還會再多出一個巨大的指數因子。因此，平衡態漲落理論預言的是足以產生觀察者的最小漲落，而不是我們實際觀察到的豐富且彼此連貫的世界。在最極端的情況下，這種最小觀察者稱為玻爾茲曼大腦。
+
+這裡的邏輯是條件機率。令\(A\)表示發生一次觀察者尺度漲落的事件，令\(B\)表示另一個獨立結構。如果兩者各自發生的機率都是很小的\(p\)，那麼
+\begin{equation}
+ P(B\mid A)=p,
+ \qquad
+ P(A\cap B)=p^2.
+ \label{eq:sm8-conditional-fluctuations}
+\end{equation}
+得知第一次漲落已經發生，不會讓第二次變得可能。就這個層面而言，彩券的比喻完全貼切：先前的中獎者在下一次獨立抽獎時，並不會有更高的中獎機會。因此，觀察者可以自身存在為條件，但若發現身處的環境另有獨立形成的結構，仍應感到驚訝。
+
+\begin{classroomqa}
+\audiencequestion{既然一顆行星或一位玻爾茲曼觀察者已經存在，另一個出現的機率真的比較低嗎？}
+\lecturerresponse{第二次獨立罕見漲落的條件機率，仍是單次事件的那個小機率，而不是它的平方；兩者同時發生的聯合機率才是平方。這正是為什麼第一位觀察者仍應預期自身之外是一片熱無序。若發現配偶、另一顆行星和有序的天空，就表示「這位觀察者是由一次孤立的平衡態漲落組成」這個前提不太可能成立。
+\lecturetimestamp{00:26:12--00:30:27}}
+\end{classroomqa}
+
+\subsection{關於過去的連貫紀錄}
+
+同樣的論證也適用於歷史。彼此一致的兩本教科書、符合同一宇宙膨脹歷史的天文紀錄、地質地層、記憶和實驗室筆記，都會互相約束。一本隨機生成的教科書可以記載任何故事；一整套彼此吻合、共同指向同一段過去的紀錄網絡，所占的相空間區域則小得多。
+
+課堂上的例子提到一個大家熟悉的故事：喬治·華盛頓砍倒了一棵櫻桃樹。這個故事是否屬實並不重要。重點是，若世界是在當下這一刻因漲落而出現，一本書中的句子便沒有任何動力學上的理由，能讓另一筆紀錄與之吻合。彼此連貫的關聯是共同歷史的證據，而非僅僅一次瞬間意外的證據。
+
+\begin{classroomqa}
+\audiencequestion{這裡所說的\emph{歷史連貫性}是什麼意思？}
+\lecturerresponse{意思是，許多當下的紀錄都能彼此吻合，並可視為共同過去所造成的結果。漲落可以憑空造出紀錄與記憶，但要造出彼此一致的一整套紀錄網絡，所需的漲落遠大於造出一位最小觀察者所需的漲落。因此，復現理論預言，大多數類似觀察者的漲落都缺乏我們實際發現的那種連貫性。
+\lecturetimestamp{00:30:30--00:31:12}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{宇宙是否仍可能是封閉系統，只是其平衡化與復現時間極為漫長？}
+\lecturerresponse{這種可能性並未消除統計問題。若宇宙有無限漫長的歷史，就會有許多類似觀察者的漲落，其中絕大多數都是最小型的漲落，周遭沒有連貫的歷史。從這類漲落中選出一位觀察者，並不應預期會看到我們所觀察到的事物。因此，宇宙學家認真看待玻爾茲曼大腦問題，將它視為檢驗宇宙學測度與晚期宇宙模型的工具，而不是宣稱已經觀測到復現。
+\lecturetimestamp{00:31:13--00:32:42}}
+\end{classroomqa}
+
+\section{以流動維持的生命結構}
+
+生命看似帶來相反的難題：生物能長期維持精巧的組織結構，不像短暫的意外漲落。解答在於，第二定律適用於完整的封閉系統。子系統可以降低或維持自身熵，只要環境中的熵增加更多：
+\begin{equation}
+ \dot S_{\rm total}
+ =\dot S_{\rm subsystem}+\dot S_{\rm environment}\geq 0.
+ \label{eq:sm8-open-system-second-law}
+\end{equation}
+
+地球並未處於熱平衡。在人類的時間尺度上，地球近似定常，但定常不代表靜止。能量持續流經地球。陽光抵達地球，經過許多過程後能量品質降低，最後以較低的有效溫度輻射出去。這種能量流可以在總熵增加的同時，維持局部的組織結構。
+
+水流經管道，是最直接的力學圖像。水流中可以有持續存在的渦流和渦旋。它們是有序結構，但由水流維持。封住管道兩端、停止水流後，隨著水趨近平淡的平衡態，黏性便會抹去這些渦旋。流出的水比流入的水溫度高，因此較大的系統已付出熵增的代價。
+
+\begin{classroomqa}
+\audiencequestion{生命會降低熵嗎？為什麼生命的組織能持續存在，而不是像一般漲落那樣出現後又消失？}
+\lecturerresponse{生命或許會在局部維持或降低熵，但只能藉由排出更多熵來做到。生命能持續存在，靠的是定常的非平衡流動，主要是太陽能流經地球。如果地球對進入和離開的輻射都完全封閉，最終便會趨近熱平衡，有組織的活動也會停止。生命更像溪流中的渦旋，而不是平衡態漲落。
+\lecturetimestamp{00:32:43--00:35:42}}
+\end{classroomqa}
+
+至此，我們離開\emph{有趣的事物}，按照講課中刻意平淡的說法，回到一個乏味的主題：磁體。
+
+\section{冷卻磁體：磁區與選定的方向}
+
+統計力學常把數學模型稱為磁體，即使它並非字面意義上的一塊鐵。這類模型共有的有用特徵，是一群能夠形成有序態的局部自由度。真實磁性材料中的這些自由度，可能來自原子磁矩、電子自旋、軌道電流，或晶體單元的有效磁矩。
+
+高溫下的熱擾動使局部磁矩指向各個方向，因此淨磁化強度很小或為零。若相鄰磁矩排列平行時能量較低，冷卻便能促使小型的平行磁區形成。進一步冷卻會使能量優勢更加顯著，相關聯的磁區也隨之擴大。在能發生鐵磁相變的系統中，相關長度會在有限的臨界溫度下達到巨觀尺度。有序相於是會選定一個取向，儘管零場下的能量原先並未偏好任何特定取向。
+
+\begin{classroomqa}
+\audiencequestion{微觀磁體不是應該因為北極吸引南極，而傾向於反向排列嗎？}
+\lecturerresponse{有效相互作用取決於材料。單靠一般的偶極直覺無法說明完整的微觀問題；交換作用、晶體結構和彼此競爭的相互作用都很重要。鐵磁材料的有效低能傾向是平行有序；其他材料則可能偏好反平行排列。
+\lecturetimestamp{00:39:56--00:40:30}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{材料冷卻時一定要有外加磁場，磁矩才會排列起來嗎？}
+\lecturerresponse{不需要。相互作用本身就能在沒有磁場時產生有序。在完全對稱的理想化情況下，不同方向的能量相同，因此實際形成的方向會由初始漲落、邊界條件或任意微小的雜散磁場選定。從這些等價方向中選定一個方向，稱為自發對稱破缺；巨觀有序開始形成時，便發生磁性相變。
+\lecturetimestamp{00:40:31--00:42:33}}
+\end{classroomqa}
+
+真實材料很複雜，因此現在我們大幅簡化模型。每個局部磁矩只能朝上或朝下：
+\begin{equation}
+ \sigma_i=+1\quad\hbox{or}\quad\sigma_i=-1.
+ \label{eq:sm8-ising-spin}
+\end{equation}
+這個模型沒有東或西。兩種允許的取向是模型的定義，就像正面和反面是擲硬幣的兩種結果。這個模型的價值不在於符合微觀實況，而在於數學形式清晰，且能表現許多系統共有的有序現象。
+
+\begin{classroomqa}
+\audiencequestion{這兩態物件在物理上是什麼？應該把它們想成粒子嗎？}
+\lecturerresponse{可以把它們想成晶格點上的原子，各自具有由自旋或微觀電流產生的有效磁矩。不過在這個模型中，重要的只有這個二值變數。將取向限制為上或下，是為了簡化統計力學。
+\lecturetimestamp{00:44:22--00:45:01}}
+\end{classroomqa}
+
+\section{外加磁場中的獨立自旋}
+
+第一個模型包含\(N\)個互不作用的自旋。外加磁場\(H\)提供唯一的能量尺度，而\(\mu\)表示單一自旋與磁場耦合的強度。我們沿用計算中的符號約定：
+\begin{equation}
+ \epsilon_i=\mu H\sigma_i.
+ \label{eq:sm8-single-spin-energy}
+\end{equation}
+當\(H>0\)時，向上自旋\(\sigma_i=+1\)的能量為\(+\mu H\)，向下自旋\(\sigma_i=-1\)的能量則為\(-\mu H\)。因此，依照此約定，正磁場有利於向下自旋。這與另一種常見的命名約定相反，但只要符號前後一致，物理結果就不受名稱影響。
+
+令\(n\)為向上自旋的數目，\(m\)為向下自旋的數目。於是
+\begin{equation}
+ n+m=N,
+ \qquad
+ E=(n-m)\mu H.
+ \label{eq:sm8-counting-energy}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_03.png}
+\caption{獨立自旋的設定：\(n\)個向上自旋、\(m\)個向下自旋、\(n+m=N\)，以及\(E=(n-m)\mu H\)。}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(H\)、\(\mu\)和\(E\)的量綱為何？\(H\)是數值還是磁場？}
+\lecturerresponse{\(H\)表示外加磁場的強度，\(\mu\)表示磁矩。兩者的乘積\(\mu H\)具有能量量綱。在抽象模型中，通常會將兩者合併為一個具有能量量綱的參數，習慣上也用小寫\(h\)表示。這裡保留兩個因子，以呈現其物理來源；\(E\)則是總能量。
+\lecturetimestamp{00:48:21--00:49:27}}
+\end{classroomqa}
+
+\subsection{組態計數}
+
+固定\(n\)與\(m=N-n\)後，從\(N\)個格點中選出\(n\)個，使其自旋朝上。組態數為
+\begin{equation}
+ \Omega(n,m)=\binom{N}{n}
+ =\frac{N!}{n!\,m!}.
+ \label{eq:sm8-spin-multiplicity}
+\end{equation}
+每一個組態的能量都相同：
+\eqref{eq:sm8-counting-energy}。
+
+\begin{classroomqa}
+\audiencequestion{既然\(n\)與\(m\)並不獨立，兩者可以同時作為求和指標嗎？組合因子又是在哪裡出現的？}
+\lecturerresponse{可以將兩者寫成受\(n+m=N\)約束的一對，也可以對\(n=0,\ldots,N\)求和，再令\(m=N-n\)。玻爾茲曼權重屬於每一個個別組態；把能量相同的所有組態合併計算時，該權重便要乘上組態數\(N!/(n!\,m!)\)。
+\lecturetimestamp{00:52:04--00:53:03}}
+\end{classroomqa}
+
+因此，配分函數為
+\begin{align}
+ Z_N
+ &=\sum_{n+m=N}
+   \frac{N!}{n!\,m!}
+   e^{-\beta\mu H(n-m)}
+ \notag\\
+ &=\sum_{n=0}^{N}
+   \binom{N}{n}
+   \left(e^{-\beta\mu H}\right)^n
+   \left(e^{+\beta\mu H}\right)^{N-n}.
+ \label{eq:sm8-spin-z-sum}
+\end{align}
+令
+\begin{equation}
+ x=e^{-\beta\mu H},
+ \qquad
+ y=e^{+\beta\mu H}.
+ \label{eq:sm8-xy}
+\end{equation}
+接著利用二項式定理即可完成計算：
+\begin{align}
+ Z_N
+ &=\sum_{n=0}^{N}\binom{N}{n}x^n y^{N-n}
+   =(x+y)^N
+ \notag\\
+ &=\left(e^{-\beta\mu H}+e^{+\beta\mu H}\right)^N
+   =\left[2\cosh(\beta\mu H)\right]^N.
+ \label{eq:sm8-spin-z-closed}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_04.png}
+\caption{配分函數的求和、代換\(x\)與\(y\)，以及利用二項式定理化為\(2\cosh(\beta\mu H)\)的次方。}
+\lectureframe{00:56:00}
+\end{figure}
+
+還有一個較簡短的推導。自旋彼此獨立，因此單一自旋的配分函數為
+\begin{equation}
+ z_1=e^{-\beta\mu H}+e^{+\beta\mu H}
+    =2\cosh(\beta\mu H),
+ \label{eq:sm8-one-spin-z}
+\end{equation}
+而\(Z_N=z_1^N\)。儘管如此，組合推導仍值得保留，因為它明確呈現了組態數如何與能量相互競爭。
+
+\section{組態磁化強度與系綜平均磁化強度}
+
+對單一組態，將每個格點的無因次自旋差定義為
+\begin{equation}
+ M_{\rm conf}=\frac{n-m}{N}.
+ \label{eq:sm8-config-magnetization}
+\end{equation}
+自旋全朝上時，此量為\(+1\)；自旋全朝下時則為\(-1\)。這裡所說的熱力學磁化強度，是此量的玻爾茲曼平均：
+\begin{equation}
+ M=\left\langle M_{\rm conf}\right\rangle
+  =\left\langle\frac{n-m}{N}\right\rangle.
+ \label{eq:sm8-average-magnetization}
+\end{equation}
+定義中不應包含\(\mu H\)。計算過程曾一度把它寫在這裡，後來又刪去；\(\mu H\)才是將自旋差轉換為能量的因子。
+
+對每一個組態，
+\begin{equation}
+ E=N\mu H M_{\rm conf}.
+ \label{eq:sm8-energy-config-m}
+\end{equation}
+利用平均運算的線性性，立即可得
+\begin{equation}
+ \langle E\rangle=N\mu H M.
+ \label{eq:sm8-energy-average-m}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_05.png}
+\caption{黑板上的自旋列、修正後的平均磁化強度，以及特別強調的能量關係。}
+\lectureframe{01:01:22}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{磁化強度是指某個特定組態的數值，還是我們在討論平均磁化強度？為什麼平均能量也有相同關係？}
+\lecturerresponse{兩種概念都有出現，必須加以區分。\((n-m)/N\)是單一組態中的數值；\(M\)則是其玻爾茲曼平均。由於\(E=N\mu H M_{\rm conf}\)在每個組態中都分別成立，對兩邊使用相同的機率取平均，便得到\(\langle E\rangle=N\mu H M\)。固定量\(N\)、\(\mu\)與\(H\)可提出平均運算之外。
+\lecturetimestamp{00:59:54--01:03:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這個模型如何讓每個自旋都沿北--南方向排列，卻不偏向向上或向下？}
+\lecturerresponse{模型中沒有東西方向，這是兩態模型本身的設定，也就是對允許自由度的限制。目前的外場模型\emph{確實}偏向向上或向下其中一方：依照我們的符號約定，外場會降低向下自旋的能量。因此，這個模型沒有上--下對稱性。以下要介紹的零場伊辛模型將恢復這種對稱性。
+\lecturetimestamp{01:03:41--01:04:53}}
+\end{classroomqa}
+
+\subsection{由配分函數求能量}
+
+平均能量可由熟知的恆等式求得
+\begin{equation}
+ \langle E\rangle
+ =-\frac{\partial}{\partial\beta}\log Z_N.
+ \label{eq:sm8-energy-identity}
+\end{equation}
+利用\eqref{eq:sm8-spin-z-closed}，
+\begin{align}
+ \log Z_N
+ &=N\log 2+N\log\!\left[\cosh(\beta\mu H)\right],
+ \notag\\
+ \langle E\rangle
+ &=-N\mu H\,
+   \frac{\sinh(\beta\mu H)}{\cosh(\beta\mu H)}
+ \notag\\
+ &=-N\mu H\tanh(\beta\mu H).
+ \label{eq:sm8-average-energy}
+\end{align}
+再與\eqref{eq:sm8-energy-average-m}合併，便得到
+\begin{equation}
+ \boxed{M=-\tanh(\beta\mu H)}.
+ \label{eq:sm8-magnetization-tanh}
+\end{equation}
+
+答案的形式蘊含著物理意義。回想
+\begin{equation}
+ \cosh x=\frac{e^x+e^{-x}}{2},
+ \qquad
+ \sinh x=\frac{e^x-e^{-x}}{2}.
+ \label{eq:sm8-hyperbolic-definitions}
+\end{equation}
+在原點附近，\(\tanh x=x+O(x^3)\)；當正\(x\)很大時，它趨近於\(1\)。由於\(\beta=1/T\)，
+\begin{equation}
+ M\longrightarrow -1
+ \quad (T\longrightarrow0),
+ \qquad
+ M\longrightarrow 0
+ \quad (T\longrightarrow\infty).
+ \label{eq:sm8-magnetization-limits}
+\end{equation}
+在零溫下，每個自旋都處於能量較低的向下態。在無限高溫下，所有構型的權重都相同，外場造成的偏向也隨之消失。反轉\(H\)會使\(M\)反向。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_09.png}
+\caption{雙曲正切曲線在\(\beta\mu H\)很大時趨近常數，在原點附近則呈線性。依照講課採用的慣例，實際的磁化強度是圖中所繪\(\tanh\)的負值。}
+\lectureframe{01:13:14}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{磁化強度是連續變化的。先前提到的相變溫度在哪裡？}
+\lecturerresponse{這個模型中沒有相變。非零外場中的獨立自旋系統過於簡單，而且\(\log Z_N=N\log[2\cosh(\beta\mu H)]\)在所有有限正溫度下都平滑變化。相變需要有相互作用且具對稱性的問題，我們現在就要開始探討；二維零場伊辛模型是這一類模型中第一個具有有限溫度相變的例子。
+\lecturetimestamp{01:14:47--01:15:11}}
+\end{classroomqa}
+
+\section{伊辛模型：相鄰自旋對的能量}
+
+統計開始之前，外場就已選定一個方向。移除外場，讓相鄰自旋彼此提供有效場。如果某個格點的兩個鄰居都朝上，它們就偏好向上；如果兩個都朝下，它們就偏好向下；如果一個朝上、一個朝下，在最簡單的圖像中，兩者的效應便會相互抵消。此時，能量與自旋對相關，而不再是與孤立格點相關。
+
+考慮兩個相鄰自旋，令\(J>0\)，並寫成
+\begin{equation}
+ E_{12}=-J\sigma_1\sigma_2.
+ \label{eq:sm8-pair-energy}
+\end{equation}
+自旋平行時，\(\sigma_1\sigma_2=+1\)，能量為\(-J\)；自旋反平行時，乘積為\(-1\)，能量為\(+J\)。因此，負號正是使這種相互作用具有鐵磁性的關鍵。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_06.png}
+\caption{局域鐵磁相互作用
+\(E_{12}=-J\sigma_1\sigma_2\)。}
+\lectureframe{01:19:59}
+\end{figure}
+
+開放的一維鏈的哈密頓量為
+\begin{equation}
+ {\cal H}=-J\sum_{i=1}^{N-1}\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-ising-chain-open}
+\end{equation}
+若採用週期性邊界條件，則令\(\sigma_{N+1}=\sigma_1\)，並將求和進行到\(N\)。無論採用哪種約定，每一對相鄰自旋都只計算一次；對長鏈而言，兩種約定在邊界上的差異可以忽略。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_10.png}
+\caption{將局域的自旋對能量推廣為最近鄰鏈的哈密頓量。}
+\lectureframe{01:20:46}
+\end{figure}
+
+在無限高溫下，每一種自旋排列的機率都相同。平均而言，一半的鍵上自旋平行，另一半則反平行，因此
+\begin{equation}
+ \left\langle\sigma_i\sigma_{i+1}\right\rangle_{T=\infty}=0,
+ \qquad
+ \left\langle{\cal H}\right\rangle_{T=\infty}=0.
+ \label{eq:sm8-infinite-t-bond}
+\end{equation}
+這裡的零能量並非低能態。所有自旋都平行的基態，其每鍵能量為\(-J\)；因此，無限高溫系綜的能量比基態高出一個廣延量。
+
+\begin{classroomqa}
+\audiencequestion{每個乘積\(\sigma_i\sigma_{i+1}\)不是\(+1\)就是\(-1\)，平均乘積怎麼會是零？}
+\lecturerresponse{平均值不必等於任何單一構型所取的值。在無限高溫下，平行與反平行的鍵出現頻率相同，因此它們的\(+1\)與\(-1\)貢獻彼此抵消。這裡同樣涉及平均值與單一取值的區別；我們在討論磁化強度時也遇過這種情況。
+\lecturetimestamp{01:21:39--01:22:37}}
+\end{classroomqa}
+
+\subsection{兩個基態與一個全域對稱性}
+
+在零溫下，每個鍵都傾向讓兩個自旋平行。因此有兩個基態，
+\begin{equation}
+ (+,+,+,\ldots,+)
+ \qquad\hbox{and}\qquad
+ (-,-,-,\ldots,-).
+ \label{eq:sm8-two-ground-states}
+\end{equation}
+兩者的能量完全相同。從哈密頓量可以清楚看出這種簡併：將所有自旋反轉，
+\begin{equation}
+ \sigma_i\longmapsto-\sigma_i
+ \qquad\hbox{for all }i,
+ \label{eq:sm8-global-flip}
+\end{equation}
+每一個鍵上的乘積都不會改變，
+\begin{equation}
+ (-\sigma_i)(-\sigma_{i+1})
+ =\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-global-flip-invariance}
+\end{equation}
+反轉單一自旋並非對稱變換，因為它會使相鄰鍵上的乘積變號；反轉所有自旋則是對稱變換。這就是零場伊辛模型的全域\(\mathbb Z_2\)對稱性。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_11.png}
+\caption{鏈的哈密頓量與全域變換\(\sigma_i\mapsto-\sigma_i\)並列；此變換使每一對自旋的乘積保持不變。}
+\lectureframe{01:26:31}
+\end{figure}
+
+在嚴格零溫下，對一個自旋施加極微弱的外場。這會打破兩個基態之間的平手，而鐵磁耦合會使這個選擇沿著整條鏈傳遞。選定狀態後再移除外場，大型系統仍可能在很長一段時間內維持原有取向。這是理解自發對稱性破缺的一個直觀起點。
+
+這裡有一項重要的統計限定。對於外場恰為零的有限系統，正則系綜對兩個基態給予相同權重，因此平均磁化強度為零。定義破缺對稱相時，必須先取熱力學極限，再移除用來選擇狀態的外場：
+\begin{equation}
+ M_*=\lim_{H\to0^+}\lim_{N\to\infty}M_N(H).
+ \label{eq:sm8-order-of-limits}
+\end{equation}
+在一維最近鄰模型中，只有在\(T=0\)時，這個極限才非零；任何有限溫度都會破壞無限長鏈中的長程有序。在二維中，低於某個非零臨界溫度時，有序相仍然存在。
+
+\subsection{一項歷史更正}
+
+課堂上的說法在敘述這段歷史時，拿伊辛開了個玩笑。實際的年代順序對伊辛較為公允。威廉·楞次提出這個模型，他的學生恩斯特·伊辛在1924年的論文中求解了一維情形，該論文於1925年發表。伊辛正確地發現，一維系統不存在有限溫度的鐵磁相變，但當時尚未理解高維情形更廣泛的意義。克拉默斯與萬尼爾發展了二維對偶性，並於1941年找出正方晶格的臨界點；昂薩格則於1944年給出著名的零場精確解。
+
+接下來要做的計算已很清楚：我們必須求出\eqref{eq:sm8-ising-chain-open}的配分函數，並確定其關聯性如何隨溫度變化。這項計算將明確說明，為什麼一維鏈沒有有限溫度相變，以及為什麼維度如此重要。
+
+\section{目前進度}
+
+迴歸問題與自旋問題呈現的是同一個統計教訓。在氣體中，熵的缺額會使某個宏觀態的機率呈指數級降低：
+\begin{equation}
+ P(A)=e^{-\Delta S},
+ \qquad
+ \tau_{\rm rec}\sim\tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-summary-recurrence}
+\end{equation}
+可逆力學允許系統迴歸，而巨大的相空間體積比則解釋了為什麼日常經驗中我們只觀察到弛豫。時間箭頭尚待解決的問題，源於特殊的宇宙學初始條件，而非微觀可逆性失效。
+
+對於處在外場中的獨立自旋，
+\begin{equation}
+ Z_N=\left[2\cosh(\beta\mu H)\right]^N,
+ \qquad
+ M=-\tanh(\beta\mu H).
+ \label{eq:sm8-summary-spins}
+\end{equation}
+這個系統明確受到偏置，並隨溫度平滑變化。伊辛相互作用
+\begin{equation}
+ {\cal H}=-J\sum_i\sigma_i\sigma_{i+1}
+ \label{eq:sm8-summary-ising}
+\end{equation}
+移除了外部偏置，恢復全域的上--下對稱性，並提出真正的有序問題：對稱的多體系統能否在非零溫度下選擇兩種有序態之一？

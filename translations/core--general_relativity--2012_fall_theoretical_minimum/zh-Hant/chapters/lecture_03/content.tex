@@ -1,0 +1,625 @@
+\chapter{局部平坦性、協變微分與曲率}
+
+\lectureoverview{在任一選定點，總能透過一階座標變換，將度規化為歐幾里得形式。曲率始於座標自由度無法再消除之處：相鄰局部標架無法彼此吻合的二階偏差。我們分三個階段說明這一點：先介紹正規座標，再介紹協變導數及其聯絡，最後探討兩個協變導數的不對易性。這種不對易性定義了黎曼張量，也賦予潮汐引力不依賴座標的意義。}
+
+\section{指標帶來的必要負擔}
+
+廣義相對論有一種特殊的難處：基本觀念並非晦澀難懂，但計算很快就會塞滿指標、導數和符號。還有一些更精簡的表述方式，例如 vielbein、微分形式、旋量、twistor 等，可將冗長的分量方程收納成精簡的數學物件。然而，學習這些語言本身就相當費力；初次接觸時，精簡的記號也可能掩蓋最需要理解的運算細節。
+
+麥克斯威方程組提供了一個範例。逐分量寫出時，它們由好幾個分立的方程組成；向量記號則將它們整理成散度方程和旋度方程，使其結構更清楚。廣義相對論也有類似的精簡表述，但要實際進行明確計算，分量方法仍是可靠的途徑。因此，我們會把指標保留下來。一旦熟悉指標的語法，概念上的推演就會順暢許多，儘管計算仍可能寫滿好幾頁。
+
+符號計算套件可以協助處理這些計算。給定度規\(g_{mn}(x)\)，套件便能求出克里斯托費爾符號、黎曼張量、里奇張量和愛因斯坦張量，再將這些表示式代入場方程。這並不代表我們可以不必理解這些數學物件的意義；它只是把機械性的展開計算與幾何概念分開。
+
+\begin{classroomqa}
+\audiencequestion{這場講座當時，廣義相對論有哪些活躍的研究領域？}
+\lecturerresponse{講座指出了幾個研究前沿。量子引力和黑洞的量子物理，是基礎理論中的核心問題。經典天體物理和數值相對論則研究黑洞繞行、合併等系統；要在這些系統中求解愛因斯坦方程並預測重力輻射，遠不只是把方程直接交給電腦運算。同樣的數學結構也逐漸應用於凝態物理和流體力學。這段歷史同樣引人注目：廣義相對論已從1960年代規模相對較小的專門領域，發展成理論物理的核心語言之一，並與量子場論緊密相連。
+\lecturetimestamp{00:05:15}}
+\end{classroomqa}
+
+這是最後一場專門討論黎曼幾何本身的講座。從下一講開始，我們將把幾何詮釋為引力。兩者之間的橋樑已經顯現：在數學上，區分真實的重力場與加速座標或曲線座標造成的表觀場，和區分彎曲度規與以不適當座標表示的平坦度規，是同一個問題。
+
+\section{不變量的問題}
+
+如果歐幾里得幾何在內在意義上成立，二維幾何便是平坦的：直線、平行線、三角形關係和距離測量都符合歐幾里得形式。人們很容易說，平坦就表示\(g_{mn}=\delta_{mn}\)；但這種說法依賴座標。即使是普通平面，在極座標中的度規也會隨位置改變。正確的說法是：平坦區域內存在某種座標，使度規在整個區域內保持常數，且呈歐幾里得形式。
+
+反過來說，假設我們拿到的是以任意座標表示的度規。一種不理想的檢驗方法，是逐一搜尋各種座標系，每次都將度規作座標變換，希望最後能找到笛卡兒形式。可能的座標系有無窮多種，因此這不是實用的判準。
+
+正確的做法，是從\(g_{mn}\)及其導數構造一個診斷量。我們要找的物件\(R\)必須具備兩項決定性的性質：
+\[
+\begin{aligned}
+R=0
+&\quad\Longleftrightarrow\quad
+\text{locally flat geometry},\\
+R\neq 0 \text{ at } P
+&\quad\Longrightarrow\quad
+\text{curvature at } P.
+\end{aligned}
+\]
+最重要的是，\(R\)必須是張量。在一個座標系中為零的張量，在所有座標系中都為零，因此無須搜尋座標系。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_01.png}
+\caption{所需的不變量判準：度規不必明顯呈現\(\delta_{mn}\)的形式，但曲率物件若為零，就應能判定幾何在局部是平坦的。}
+\lectureframe{00:18:20}
+\end{figure}
+
+\emph{局部}這個限定很重要。黎曼張量為零，能保證局部幾何是歐幾里得的；但整體識別仍可能形成非平凡的拓撲。例如，平坦圓柱面或平坦環面在局部可以是歐幾里得的，整體上卻不是平面。
+
+\section{小尺度下的度規幾何}
+
+看看幾何隨維度改變的情形會很有幫助。零維空間只有一個點。連通的一維黎曼空間在局部可以拉直成一條直線；在整體上則可能是線段、直線或閉合曲線。若有隻蟲子被限制在一條閉合的一維軌道上，牠可以測量軌道的周長；但從外部空間看，軌道如何彎曲，並不會改變其內在度規。
+
+二維空間的內在幾何豐富得多：平面、球面、起伏不平的地表和環面，即使在局部也未必相同；它們的整體拓撲也可能不同。度規用來記錄這些空間的無窮小距離：
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:l3-line-element}
+\end{equation}
+\(ds^2\)是純量。因此，座標變換下\(dx^m\)的改變，恰好會由\(g_{mn}\)的變換補償。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_02.png}
+\caption{以位置相關的度規表示的不變線元素。}
+\lectureframe{00:19:00}
+\end{figure}
+
+度規非退化，因此存在逆度規：
+\begin{equation}
+ g^{mn}g_{nr}=\delta^m{}_r.
+\label{eq:l3-inverse-metric}
+\end{equation}
+混合克羅內克張量\(\delta^m{}_r\)是恆等映射。在一般的黎曼幾何中，度規也具有正定性：
+\begin{equation}
+ g_{mn}u^m u^n>0
+\qquad\text{for every nonzero }u^m.
+\label{eq:l3-positive}
+\end{equation}
+稍後介紹的洛倫茲時空會放寬正定性條件，但仍保留非退化性。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_03.png}
+\caption{黑板上的逆度規與恆等張量。}
+\lectureframe{00:20:40}
+\end{figure}
+
+度規可以將向量與餘向量相互轉換：
+\begin{equation}
+ V_m=g_{mn}V^n,
+ \qquad
+ V^m=g^{mn}V_n.
+\label{eq:l3-raise-lower}
+\end{equation}
+因此，升降指標是由度規執行的運算，不是單純改變記號的位置。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_04.png}
+\caption{利用度規及其逆度規升降向量的指標。}
+\lectureframe{00:24:40}
+\end{figure}
+
+若某區域內\(g_{mn}\)的所有分量皆為常數，就能透過常係數線性座標變換，在該處將度規對角化並正規化。此時幾何是平坦的。因此，值得關注的資訊必然與度規如何隨位置改變有關。
+
+\section{正規座標：一階上呈平坦}
+
+選定一點\(P\)。正規座標定理指出，可以建構一組以\(P\)為中心的座標，使得
+\begin{align}
+ g_{mn}(P)&=\delta_{mn}, \label{eq:l3-normal-metric}\\
+ \partial_r g_{mn}(P)&=0. \label{eq:l3-normal-first}
+\end{align}
+講義將這些座標稱為高斯正規座標。從幾何上看，就是通過\(P\)畫出座標軸，並盡可能沿著幾何所允許的直線方向延伸座標線。稍後我們會以測地線運動，精確定義這裡所說的直線。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_05.png}
+\caption{選取正規座標，使度規在指定點呈歐幾里得形式。}
+\lectureframe{00:28:50}
+\end{figure}
+
+這樣的標架並不唯一。在\(P\)處進行正交旋轉，仍會保持\(g_{mn}(P)=\delta_{mn}\)不變。重要的不是座標軸的方向，而是存在一組標架，能讓\eqref{eq:l3-normal-metric}和\eqref{eq:l3-normal-first}同時成立。
+
+\begin{classroomqa}
+\audiencequestion{這些條件只在選定點成立，還是在該點的整個鄰域內都成立？}
+\lecturerresponse{這些條件在選定點\(P\)成立。我們可以在任何一點建立以該點為中心的正規標架，但一般而言，無法在一個彎曲區域內使用同一組座標，並使度規處處呈歐幾里得形式、所有一階導數也處處為零。將同一組座標從\(P\)向外延伸，就會顯現度規的高階導數。
+\lecturetimestamp{00:29:53}}
+\end{classroomqa}
+
+在\(P\)處，二階導數一般無法消除：
+\begin{equation}
+ \partial_r\partial_s g_{mn}(P)\neq 0
+ \qquad\text{in general}.
+\label{eq:l3-normal-second}
+\end{equation}
+因此，在一個點上，度規的零階與一階部分不含不依賴座標的曲率資訊，因為座標自由度可以將它們消除。最早可能出現的不變資訊在二階。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_06.png}
+\caption{正規座標的條件：度規呈歐幾里得形式、一階導數為零，而二階導數不一定為零。}
+\lectureframe{00:30:50}
+\end{figure}
+
+\subsection{為何座標自由度足以滿足條件}
+
+令\(P\)為座標\(x^m\)和\(y^m\)的共同原點。先用線性變換調整原點處的度規，再考慮進一步座標變換中的二次項：
+\begin{equation}
+ x^m
+ =y^m+C^m{}_{nr}y^n y^r+O(y^3),
+ \qquad C^m{}_{nr}=C^m{}_{rn}.
+\label{eq:l3-quadratic-transform}
+\end{equation}
+在四維中，對稱指標對\(nr\)有
+\[
+\frac{4(4+1)}{2}=10
+\]
+種獨立取法。對\(m\)的四種取值，各有十個係數\(C^m{}_{nr}\)，合計四十個二次係數。
+
+四維中的對稱度規也有十個獨立分量。每個分量各有四個一階導數，因此條件\(\partial_r g_{mn}(P)=0\)包含四十個方程。兩者數目相符，表示二次座標自由度恰好足以施加這些一階導數條件。正規座標定理保證了這種構造存在；單靠計數只能作為有用的結構檢查，並不足以完整證明任意非線性方程組皆可求解。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_07.png}
+\caption{四維中的二次座標變換，以及十個獨立的二次單項式。}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(x^m=y^m+C^m{}_{nr}y^n y^r+\cdots\)是嘗試進行座標變換嗎？}
+\lecturerresponse{是。選取係數\(C^m{}_{nr}\)，使新座標下的度規一階導數在共同原點處為零。線性部分使雅可比矩陣在該點附近保持可逆；二次部分則用來調整度規的一階導數。\lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這就是說光滑幾何在局部是平坦的意思嗎？}
+\lecturerresponse{這是相關的一階敘述。在足夠小的尺度下，光滑曲面可近似為其切平面；正規座標以\(g_{mn}(P)=\delta_{mn}\)和\(\partial_r g_{mn}(P)=0\)表達了這一點。若要在一個鄰域內精確平坦，條件則更強：曲率張量也必須在該處為零。\lecturetimestamp{00:36:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{係數數目與方程數目都是四十，真的能確保方程可解嗎？}
+\lecturerresponse{計數指出所需的座標自由度，而定理則保證光滑、非退化度規的局部構造存在。講座建議將二維情形作為練習，直接驗證這一點。這個論證不依賴四維；在\(d\)維中，同樣的對稱性與座標自由度也彼此吻合。\lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼展開式沒有常數項？哪一項是一階項？}
+\lecturerresponse{\(y^m\)項是一階項。由於兩組座標的原點刻意選在同一點，所以省略了常數項；\(y=0\)因此表示\(x=0\)。這項選擇不會失去一般性。\lecturetimestamp{00:38:52}}
+\end{classroomqa}
+
+\section{為什麼逐分量微分行不通}
+
+現在考慮協變向量場\(V_m(x)\)。在平坦空間的直線笛卡兒座標中，幾何上保持不變的向量，其分量也保持不變。因此，我們可能會想把它的導數定義為\(\partial_rV_m\)。一旦座標網格彎曲，問題便會出現。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_08.png}
+\caption{曲線座標網格疊加在局部筆直的標架上。}
+\lectureframe{00:40:10}
+\end{figure}
+
+將同一個幾何向量放在相鄰的點上。相對於固定的笛卡兒標架，向量分量不變；但相對於曲線座標基，基底向量會隨位置轉動。因此，即使向量本身沒有改變，其分量列表也會改變。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_09.png}
+\caption{同一向量在相鄰點的分量不同，因為局部座標基發生了轉動。}
+\lectureframe{00:42:30}
+\end{figure}
+
+因此，樸素的條件
+\begin{equation}
+ \partial_rV_m=0
+\label{eq:l3-naive-derivative}
+\end{equation}
+可能在一個座標系中成立，在另一個座標系中卻不成立。若\(\partial_rV_m\)是二階張量，這種情形就不可能發生：它在一個標架中為零，就必定在所有標架中都為零。因此，向量分量的普通偏導數不是張量分量。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_10.png}
+\caption{刻意採用的樸素零導數條件，與變動的曲線座標基並列。}
+\lectureframe{00:44:00}
+\end{figure}
+
+我們需要一種導數，既能消除座標基造成的表觀變化，又能保留向量場本身的真實變化。
+
+\section{定義協變導數}
+
+在\(P\)處求導，只涉及比較\(P\)任意小鄰域內的值。因此，我們可以先採用以該點為中心的正規座標。取相鄰點的一個向量，將它的起點平移回\(P\)，並在平移過程中保持其正規座標分量不變。接著將平移後的向量與原本位於\(P\)的向量相比，再除以兩點間的距離，便得到這個局部筆直標架中的普通導數。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_11.png}
+\caption{局部比較：先在正規座標中平移相鄰點的向量，再取差。}
+\lectureframe{00:46:50}
+\end{figure}
+
+現在將這個依幾何方式定義的導數改用任意座標表示。它有兩項貢獻：分量\(V_m\)可能改變，座標基也可能改變。指標結構決定了修正項的形式：
+\begin{equation}
+ \nabla_rV_m
+ =\partial_rV_m-\Gamma^t{}_{rm}V_t.
+\label{eq:l3-covector-derivative}
+\end{equation}
+\(\Gamma^t{}_{rm}\)稱為聯絡係數，也稱克里斯托費爾符號。對於下指標的向量，修正項前面是負號。在正規座標的中心點\(P\)，
+\begin{equation}
+ \Gamma^t{}_{rm}(P)=0,
+\qquad
+ \nabla_rV_m(P)=\partial_rV_m(P).
+\label{eq:l3-gamma-normal-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_12.png}
+\caption{餘向量的協變導數：分量的普通變化，減去座標基變動造成的變化。}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{在任意座標中，\(\nabla_rV_m=\partial_rV_m-\Gamma^t{}_{rm}V_t\)是否都成立？在正規座標中又會化為什麼？}
+\lecturerresponse{完整公式在任意座標中都成立。在正規座標的選定點上，度規的一階導數為零，因此克里斯托費爾符號也為零，公式只剩下\(\partial_rV_m\)。離開該點後，即使仍使用同一張正規座標圖，聯絡係數通常也不為零。
+\lecturetimestamp{00:50:22}}
+\end{classroomqa}
+
+協變導數之所以如此命名，是因為整個物件\(\nabla_rV_m\)會像張量一樣協變變換；這個名稱不只是指下方的導數指標。克里斯托費爾項正是用來修正偏導數不具張量變換性這一問題。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_13.png}
+\caption{餘向量的完整導數公式及其聯絡修正項。}
+\lectureframe{00:51:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{這和流體力學中的對流導數有關嗎？}
+\lecturerresponse{講座謹慎地回答：兩者確實有所關聯。流體力學也會區分由流動帶著移動的變化，以及在固定座標點觀察到的變化；在彎曲座標或彎曲空間中的流體方程裡，也會用到協變導數。這兩種運算並非依定義相同，但兩者都會修正樸素的導數，以處理隨描述方式而改變的結構。
+\lecturetimestamp{00:52:31}}
+\end{classroomqa}
+
+對於此處採用的無撓聯絡，
+\begin{equation}
+ \Gamma^t{}_{rm}=\Gamma^t{}_{mr}.
+\label{eq:l3-torsion-free}
+\end{equation}
+更一般的幾何可能具有撓率，因此不一定滿足這項對稱性。此處的聯絡適用於廣義相對論的標準度規表述。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_14.png}
+\caption{克里斯托費爾符號是無撓幾何中對稱的聯絡係數。}
+\lectureframe{00:54:30}
+\end{figure}
+
+這裡有個有用的物理類比。正規座標就像某個事件處的自由落體標架：在該處可以消去座標修正。任意曲線座標則像一座加速的電梯，表觀力的出現是因為標架本身在改變。這個類比只適用於局部；曲率將說明，為什麼單一的自由落體標架無法在整個延展區域內消除引力。
+
+\subsection{張量的每個指標各有一項修正}
+
+對協變二階張量\(T_{mn}\)而言，每個下指標都各自有一項聯絡修正：
+\begin{equation}
+ \nabla_sT_{mn}
+ =\partial_sT_{mn}
+ -\Gamma^t{}_{sm}T_{tn}
+ -\Gamma^t{}_{sn}T_{mt}.
+\label{eq:l3-rank-two-derivative}
+\end{equation}
+記住這條規則的方法是：對其中一個指標微分時，把另一個指標固定不動；再對調兩者，處理第二個指標。逆變指標則對應到符號相反的修正項。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_15.png}
+\caption{協變二階張量的協變導數：每個下指標各有一項克里斯托費爾修正。}
+\lectureframe{01:01:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{符號\(\partial_r\)是否只用於正規座標？張量公式是否也只適用於那個標架？}
+\lecturerresponse{不是。記號\(\partial_r=\partial/\partial x^r\)在任何座標系中都有意義，而完整的協變導數公式適用於任意座標。只有在正規標架所選的點上，克里斯托費爾修正項才會消失。\lecturetimestamp{00:57:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{協變導數在正規座標中化為偏導數時，是否只在選定點成立？克里斯托費爾符號是張量嗎？}
+\lecturerresponse{是，這種化簡只在該點成立。克里斯托費爾符號不是張量：它們在正規座標的\(P\)處可以為零，但在另一座標系的同一點上可以非零。正因為它們的變換方式不是張量變換，\eqref{eq:l3-covector-derivative}中的組合才能作為張量變換。
+\lecturetimestamp{00:58:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{協變導數實際上會用來做什麼？}
+\lecturerresponse{用於場方程。重力場會隨位置改變，因此描述它的方程必須包含導數；同時，方程在不同座標系中應有相同的內容。協變微分會將張量映成張量，因此我們可以寫出不受特定參考系影響的微分方程。\lecturetimestamp{01:02:35}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{能否將協變導數乘上座標微分，用來描述相鄰點之間的變化？}
+\lecturerresponse{可以。沿著無窮小位移\(dx^s\)，協變變化為\(dx^s\nabla_sT\)。偏導數項描述分量的變化，聯絡項則處理座標基的變化。即使在極座標表示的平坦空間中，也必須作這項區分。\lecturetimestamp{01:03:22}}
+\end{classroomqa}
+
+\section{度規相容性決定聯絡}
+
+將二階張量的規則套用於度規。在正規座標的\(P\)處，\(\partial_sg_{mn}=0\)且\(\Gamma^t{}_{sm}=0\)，因此\(\nabla_sg_{mn}=0\)。由於協變導數是張量，這個逐點結果在所有座標系中都成立：
+\begin{equation}
+ \nabla_sg_{mn}=0.
+\label{eq:l3-metric-compatibility}
+\end{equation}
+這就是度規相容性。它表示平行移動會保持度規，因而也保持長度與角度。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_16.png}
+\caption{度規相容性方程是從度規推導聯絡的起點。}
+\lectureframe{01:06:20}
+\end{figure}
+
+展開\eqref{eq:l3-metric-compatibility}可得
+\begin{equation}
+ 0
+ =\partial_sg_{mn}
+ -\Gamma^t{}_{sm}g_{tn}
+ -\Gamma^t{}_{sn}g_{mt}.
+\label{eq:l3-compat-expanded}
+\end{equation}
+再將導數指標和度規指標循環置換，寫出另外兩個方程：
+\begin{align}
+ 0
+ &=\partial_mg_{sn}
+ -\Gamma^t{}_{ms}g_{tn}
+ -\Gamma^t{}_{mn}g_{st},
+\label{eq:l3-compat-m}\\
+ 0
+ &=\partial_ng_{sm}
+ -\Gamma^t{}_{ns}g_{tm}
+ -\Gamma^t{}_{nm}g_{st}.
+\label{eq:l3-compat-n}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_17.png}
+\caption{指標置換後的三個度規相容性方程。}
+\lectureframe{01:10:20}
+\end{figure}
+
+將\eqref{eq:l3-compat-m}與\eqref{eq:l3-compat-n}相加，再減去\eqref{eq:l3-compat-expanded}。利用無撓對稱性\eqref{eq:l3-torsion-free}，不需要的聯絡項便會相消：
+\begin{equation}
+ \partial_mg_{sn}+\partial_ng_{sm}-\partial_sg_{mn}
+ =2\Gamma^t{}_{mn}g_{st}.
+\label{eq:l3-isolate-gamma-lowered}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_18.png}
+\caption{將兩個相容性方程相加，再減去第三個，便可消去多餘的克里斯托費爾項。}
+\lectureframe{01:12:10}
+\end{figure}
+
+乘上\(g^{rs}\)即可單獨解出聯絡：
+\begin{equation}
+ \boxed{
+ \Gamma^r{}_{mn}
+ =\frac12 g^{rs}
+ \left(
+ \partial_mg_{sn}
+ +\partial_ng_{sm}
+ -\partial_sg_{mn}
+ \right)}
+\label{eq:l3-christoffel}
+\end{equation}
+因此，列維－奇維塔聯絡由度規及其一階導數構成。這也說明了為何克里斯托費爾符號在正規座標的中心點會消失。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_19.png}
+\caption{逆度規可由降指標後的聯絡方程中解出克里斯托費爾符號。}
+\lectureframe{01:16:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{為什麼三個度規相容性方程都設為零？}
+\lecturerresponse{在正規座標的選定點上，度規的普通導數和克里斯托費爾符號都為零，因此度規的協變導數在該點也為零。若要在其他點證明這項敘述，就以該點為中心建立正規標架，再重複推導。由於\(\nabla_sg_{mn}\)是張量，它是否為零與座標系無關。\lecturetimestamp{01:14:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{度規矩陣和克里斯托費爾陣列的維度各是多少？為什麼四維中有四十個獨立的克里斯托費爾分量？}
+\lecturerresponse{在\(d\)維中，\(g_{mn}\)是對稱的\(d\times d\)矩陣。聯絡有三個指標。對每一個固定的上指標\(r\)，對稱的下指標對\(mn\)有\(d(d+1)/2\)種取法。因此，無撓聯絡有\(d^2(d+1)/2\)個獨立分量；當\(d=4\)時，這個數目是四十。\lecturetimestamp{01:16:18}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_20.png}
+\caption{分量計數討論時的板書：對稱的下指標對有十種取法，上指標則有四種取值。}
+\lectureframe{01:16:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\eqref{eq:l3-christoffel}中使用的是哪個度規？是否每一點都必須使用不同的正規座標度規？}
+\lecturerresponse{公式使用的是計算所選座標系中度規的分量，無論這組座標是整體還是局部的。正規座標只是在一點推導規則時使用的局部工具：先在該點改用正規標架，在那裡微分，再將結果變換回原座標，最後捨去這組輔助標架。一旦知道\eqref{eq:l3-christoffel}，就直接在所關心的任意座標中計算。\lecturetimestamp{01:17:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\nabla_sg_{mn}=0\)或克里斯托費爾公式，是否能告訴我們空間是平坦的？}
+\lecturerresponse{不能。度規相容性對所有列維－奇維塔聯絡都成立，無論空間是否彎曲。即使是用極座標表示的平坦平面，克里斯托費爾符號也可能非零。如果某座標圖中的\(\Gamma^r{}_{mn}\)在整個區域內都為零，那麼該處的座標就是笛卡兒座標，該區域也確實平坦；但克里斯托費爾符號不為零，本身不足以判定曲率。我們仍需要一個由\(\Gamma\)的導數及乘積構成的張量。\lecturetimestamp{01:19:27}}
+\end{classroomqa}
+
+\section{圓錐揭示聯絡無法呈現的資訊}
+
+考慮一個圓滑的圓錐。在遠離尖端處，它可以近似為一般的紙製圓錐：從平面圓盤剪下一個扇形，再將剪開後露出的兩條邊黏合。剩下的紙沒有被拉伸；在局部看來，除了接縫和尖端之外，每一點仍是平坦的。被剪去的扇形以虧角\(\Delta\)表示。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_21.png}
+\caption{這個圓錐呈現一種幾何：遠離尖端處局部平坦，但非平凡曲率集中在尖端。}
+\lectureframe{01:23:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_22.png}
+\caption{從圓盤剪下一個扇形並黏合切口兩邊，就會形成圓錐的虧角。}
+\lectureframe{01:24:20}
+\end{figure}
+
+紙片的構造讓這項區別具體呈現出來。在剪開的紙片上，沿著普通平面中的平行方向移動一個向量。將楔形的兩條邊接合後，沿著環繞尖端的路徑移動，回到起點時，向量的方向會相對於初始方向旋轉。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_23.png}
+\caption{紙錐示範：從平坦紙片上剪去一個楔形，將剪開的兩條邊接合後，紙片便成為圓錐。}
+\lectureframe{01:25:10}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_24.png}
+\caption{接合兩條邊之前，畫在剪開的楔形紙片上的向量。}
+\lectureframe{01:27:40}
+\end{figure}
+
+這種旋轉就是和樂。它不是沿著某一段路徑選錯座標所造成的。每一小段都可以在局部平坦的標架中處理。只有將這些局部比較沿著閉合迴路依序合成後，效應才會顯現。對理想圓錐而言，淨旋轉角等於虧角，至多差一個方向符號。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_25.png}
+\caption{沿著圓錐尖端平行移動後，向量返回時方向已經旋轉：和樂記錄了迴路所圍住的曲率。}
+\lectureframe{01:29:10}
+\end{figure}
+
+\section{繞無窮小迴路的兩條路徑}
+
+將有限迴路換成一個微小的座標矩形。從其中一個角出發，先沿\(r\)方向平行移動，再沿\(s\)方向移動。將這個結果與先沿\(s\)方向、再沿\(r\)方向移動的結果相比。在平坦的笛卡兒座標中，兩條路徑的結果相同；在彎曲幾何中，通常則不相同。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_26.png}
+\caption{沿座標矩形作無窮小平行移動的兩種次序。}
+\lectureframe{01:31:40}
+\end{figure}
+
+其代數度量是協變導數的對易子：
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n.
+\label{eq:l3-commutator}
+\end{equation}
+光滑函數的普通混合偏導數彼此對易。這裡不對易的原因，在於求導時除了向量分量，也必須對聯絡項求導。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_27.png}
+\caption{以兩種協變微分次序之差表示的無窮小迴路。}
+\lectureframe{01:33:20}
+\end{figure}
+
+要計算它，首先將
+\[
+ T_{rn}=\nabla_rV_n
+\]
+視為二階協變張量。接著用\eqref{eq:l3-rank-two-derivative}沿\(s\)方向對\(T_{rn}\)求導。再將\(r\)與\(s\)互換後重做一次，然後相減。這個運算雖然冗長，卻只是機械地展開、套用乘法法則，並消去含有\(V_n\)二階偏導數的項。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_28.png}
+\caption{將\(\nabla_rV_n\)視為二階張量，以此開始計算二重協變導數。}
+\lectureframe{01:35:40}
+\end{figure}
+
+依照黑板上採用的約定，結果為
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n
+ =R_{srn}{}^tV_t.
+\label{eq:l3-riemann-commutator}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_29.png}
+\caption{協變導數的對易子定義了曲率張量對協向量的作用。}
+\lectureframe{01:38:30}
+\end{figure}
+
+對於這種對易子次序，
+\begin{equation}
+\begin{split}
+ R_{srn}{}^t
+={}&
+ \partial_r\Gamma^t{}_{sn}
+ -\partial_s\Gamma^t{}_{rn}\\
+&+\Gamma^p{}_{sn}\Gamma^t{}_{pr}
+ -\Gamma^p{}_{rn}\Gamma^t{}_{ps}.
+\end{split}
+\label{eq:l3-riemann}
+\end{equation}
+其他文獻可能採用相反的符號，或以不同方式排列指標；只要同時寫出\eqref{eq:l3-riemann-commutator}與\eqref{eq:l3-riemann}，約定便已確定。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_30.png}
+\caption{黎曼張量：聯絡的兩個導數項與兩個聯絡的二次項。}
+\lectureframe{01:39:40}
+\end{figure}
+
+方程\eqref{eq:l3-christoffel}說明了為何曲率最早出現在度規的二階導數中。每個\(\Gamma\)都包含\(g\)的一階導數。因此，\eqref{eq:l3-riemann}中的導數項包含\(g\)的二階導數，而二次項則包含一階導數的乘積。在\(P\)處的法座標中，聯絡本身為零，但其導數通常不為零，因此曲率仍然存在：
+\[
+\begin{aligned}
+ \Gamma^t{}_{mn}(P)&=0,\\
+ R_{srn}{}^t(P)
+ &=\partial_r\Gamma^t{}_{sn}(P)
+ -\partial_s\Gamma^t{}_{rn}(P).
+\end{aligned}
+\]
+務必分清導數的階數：黎曼張量涉及\(\Gamma\)的一階導數，而這些量相當於度規的二階導數。
+
+這就是所需的判準。如果黎曼張量在某個區域內的每個分量都為零，該區域便是局部平坦的。如果某一點有任何分量不為零，就沒有任何座標變換能消除該處的曲率。電腦代數系統可以根據解析形式的度規檢驗這些分量；但其概念很簡單：沿著無窮小迴路作平行移動後，向量無法回到原來的方向。
+
+\section{曲率作為潮汐引力}
+
+這個幾何判準有直接的物理意義。想像一個由相連三角形構成的柔性物體。在平坦區域中移動它，不會產生應力。若將它推入內在度規彎曲的區域，連桿各部分便無法同時維持原本偏好的間距和角度。物體必須伸長、受壓或剪切變形。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_31.png}
+\caption{由相連連桿構成的物體從平坦區域移入彎曲隆起處時，必須變形才能順應局部度規。}
+\lectureframe{01:44:10}
+\end{figure}
+
+這種形變在幾何上的對應物就是潮汐力。在引力場中，相鄰的自由落體粒子可能彼此相對加速：一個方向可能被拉伸，另一個方向則受到擠壓。這種相對加速度由黎曼張量控制。用稍後會介紹的測地線偏離來描述，對於切向量\(u^\mu\)與分離向量\(\xi^\mu\)，
+\begin{equation}
+ \frac{D^2\xi^\mu}{D\tau^2}
+ =-R^\mu{}_{\nu\rho\sigma}
+ u^\nu\xi^\rho u^\sigma,
+\label{eq:l3-geodesic-deviation-preview}
+\end{equation}
+整體符號則取決於所採用的曲率約定。這裡不推導這個方程，但它精確表明，講課中所說的曲率與潮汐應力，在局部物理上確實是同一回事。
+
+理想的完全均勻引力場沒有潮汐變化，局部上可以透過改用均勻加速參考系將它消去。孤立質量產生的真實引力場並非完全均勻。地球的引力場近似沿徑向指向，且隨位置改變，因此相鄰的自由落體軌跡會彼此靠近或遠離。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_32.png}
+\caption{徑向引力場在延展物體各處並不相同，因而產生潮汐引力所指的相對加速度。}
+\lectureframe{01:48:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{真正的引力場與加速參考系中所見的表觀引力場，有什麼區別？}
+\lecturerresponse{均勻加速參考系可以在局部實驗中模擬均勻引力場，但不會造成潮汐相對加速度。由真實物質產生的引力場會隨位置改變，因此會產生潮汐力。這些力是不依座標選擇而變的證據，表明該效應不只是座標變換。一個完全均勻的真實引力場只是理想化情況；在大型天體表面附近足夠小的區域內，實際引力場也只能近似均勻。\lecturetimestamp{01:46:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼下落物體的大小會影響潮汐效應？}
+\lecturerresponse{曲率比較的是相鄰位置。若物體遠小於引力場變化的長度尺度，各部分受到的加速度幾乎相同，因此形變很小。延展物體各部分感受到的差異則較大。地球附近自由落體中的細菌所受潮汐應力微不足道；講課中假想的兩千英里高的人則會嚴重變形。曲率有其局部值，但累積形變的大小取決於所比較位置之間的距離。\lecturetimestamp{01:49:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果判定平坦性必須檢查每一點的曲率，這項檢驗仍然是無窮盡的嗎？}
+\lecturerresponse{若度規以解析形式給出，其導數與曲率分量也都是解析表示式。將它們計算成位置的函數後，通常便能看出它們是否恆為零。若度規只以數值表格給出，就必須在取樣區域內估算並檢查曲率，這確實可能耗費大量計算。即使如此，這項工作仍比在每一點搜尋所有可能的座標系明確得多。\lecturetimestamp{01:50:37}}
+\end{classroomqa}
+
+\section{已確立的結果}
+
+現在可以將整個論證串成一條連貫的脈絡：
+\begin{enumerate}
+ \item 在任意選定的點，座標都可以使
+ \(g_{mn}=\delta_{mn}\) 和 \(\partial_rg_{mn}=0\)。
+ \item 張量分量的普通導數不遵循張量的變換方式，因為座標基底會隨位置改變。
+ \item 聯絡修正了基底的這種變化，並定義協變微分。
+ \item 度規相容性與零撓率條件，能由度規唯一決定聯絡。
+ \item 兩個協變導數的對易子由黎曼張量給出。這種不對易量度了和樂、度規的二階變化，以及潮汐引力。
+\end{enumerate}
+
+至此，我們已構造出所需的曲率判準，而不必選定任何特殊的全域座標系。接下來將從正定的黎曼幾何轉向洛倫茲時空，把這些工具應用於恆星或黑洞的施瓦西幾何，並回頭討論本講末尾暫且擱下的測地線。
