@@ -1,0 +1,348 @@
+\chapter{Kugeln, hyperbolischer Raum und die Bedeutung von \(k\)}
+
+Betrachten wir ein wenig Mathematik, einfache Mathematik. Kugeln in beliebig vielen Dimensionen sind besondere Geometrien: Sie sind homogen, und homogen bedeutet hier konstante Krümmung. Zuerst betrachten wir positive Krümmung, dann homogene negative Krümmung und anschließend den Zusammenhang mit den Einsteinschen Feldgleichungen.
+
+Ein kugelförmiges Universum bedeutet, dass \emph{der Raum} kugelförmig ist, nicht die Raumzeit. Es gibt auch die andere Möglichkeit: homogene negative Krümmung. Stellt man diese Fälle einander gegenüber, wird die Rolle der allgemeinen Relativitätstheorie deutlich.
+
+\section{Kugeln und homogene Geometrie}
+
+Eine eindimensionale Kugel ist einfach ein Kreis. Am einfachsten beschreibt man ihn, indem man ihn in einen zweidimensionalen Hilfsraum einbettet und schreibt:
+\begin{equation}
+x^2+y^2=R^2.
+\end{equation}
+Die eindimensionale Einheitskugel ist gegeben durch
+\begin{equation}
+x^2+y^2=1.
+\end{equation}
+
+Eine zweidimensionale Kugel wird genauso beschrieben, nun mit drei Hilfskoordinaten:
+\begin{equation}
+x^2+y^2+z^2=R^2,
+\end{equation}
+Im Einheitsfall gilt
+\begin{equation}
+x^2+y^2+z^2=1.
+\end{equation}
+
+Diese Koordinaten sind lediglich eine Krücke. Die Geometrie, um die es geht, ist nicht der umgebende \(x,y,z\)-Raum. Sie ist die Oberfläche selbst. Ein Lebewesen, das auf einer eindimensionalen Kugel lebt, lebt auf einem Kreis; es hat keinen Zugang zu einem Inneren oder einem Äußeren. Dasselbe gilt für eine zweidimensionale Kugel. Das Kugelinnere und der Außenraum gehören nur zum Hilfsbild.
+
+Mit derselben Konstruktion erhält man eine dreidimensionale Kugel. Man führt eine weitere Koordinate ein, etwa \(w\), und schreibt:
+\begin{equation}
+x^2+y^2+z^2+w^2=R^2,
+\end{equation}
+Im Einheitsfall gilt
+\begin{equation}
+x^2+y^2+z^2+w^2=1.
+\end{equation}
+Eine dreidimensionale Kugel lässt sich schwerer veranschaulichen, denn die Krücke wäre nun vierdimensional. Die Mathematik ist jedoch kaum schwieriger.
+
+Die übliche Schreibweise für die \(n\)-dimensionale Kugel ist \(\Omega_n\). Somit ist \(\Omega_1\) die eindimensionale, \(\Omega_2\) die zweidimensionale und \(\Omega_3\) die dreidimensionale Kugel.
+
+\section{Metriken auf der Kugel}
+
+Nützlicher ist eine intrinsische Beschreibung. Dabei beschreibt man die Kugel durch Koordinaten, die auf der Kugel selbst liegen.
+
+Für die eindimensionale Einheitskugel genügt eine Koordinate \(\phi\) mit \(0\leq \phi \leq 2\pi\). Ihre Metrik lautet
+\begin{equation}
+ds^2=d\phi^2.
+\end{equation}
+Man schreibt auch
+\begin{equation}
+d\Omega_1^2=d\phi^2.
+\end{equation}
+
+Die zweidimensionale Einheitskugel lässt sich als Folge eindimensionaler Kugeln beschreiben. Ein Winkel \(\phi\) läuft weiterhin einmal um jeden Kreis, während ein zweiter Winkel \(\theta\) von einem Ende der Kugel zum anderen verläuft. Dieser zweite Winkel reicht von \(0\) bis \(\pi\). Eine Bewegung in \(\theta\)-Richtung trägt den Term \(d\theta^2\) bei. Die Bewegung in \(\phi\)-Richtung erfolgt auf einem Kreis mit dem Radius \(\sin\theta\). Somit gilt
+\begin{equation}
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\phi^2
+\end{equation}
+oder
+\begin{equation}
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\Omega_1^2.
+\end{equation}
+
+Die dreidimensionale Kugel erhält man auf dieselbe Weise, nun als Folge zweidimensionaler Kugeln. Dazu führt man eine weitere Koordinate \(\alpha\) ein. Dann gilt
+\begin{equation}
+d\Omega_3^2=d\alpha^2+\sin^2\alpha\,d\Omega_2^2.
+\end{equation}
+Ausmultipliziert ergibt sich
+\begin{equation}
+d\Omega_3^2=d\alpha^2+\sin^2\alpha\left(d\theta^2+\sin^2\theta\,d\phi^2\right).
+\end{equation}
+Hier läuft \(\alpha\) von einem Ende mit verschwindender Größe zum anderen, also gilt \(0\leq \alpha \leq \pi\).\editorialnote{Bei 00:17:24 klingt es in der Audioaufnahme kurz wie „``null bis zwei Pi''“. Die umgebende Konstruktion und der ausdrückliche Faktor \(\sin^2\alpha\) erfordern jedoch, dass die neue Koordinate von einem Ende der Familie niedrigerdimensionaler Kugeln mit verschwindender Größe zum anderen läuft.}
+
+Die allgemeine rekursive Form lautet
+\begin{equation}
+d\Omega_n^2=d\alpha^2+\sin^2\alpha\,d\Omega_{n-1}^2.
+\end{equation}
+
+Hat man diese Sichtweise übernommen, kann man das Einbettungsbild vergessen. Eine eindimensionale Kugel wird durch eine Koordinate beschrieben, eine zweidimensionale durch zwei, eine dreidimensionale durch drei und so weiter. Die Geometrie besteht für sich.
+
+Diese Geometrie ist besonders, weil sie homogen ist. Man könnte die Metrik verformen, indem man \(\sin^2\theta\) durch eine andere Funktion ersetzte, die an beiden Enden weiterhin verschwindet. So erhielte man eine verformte geschlossene Fläche, etwa ein Ellipsoid. Sie wäre dann aber nicht mehr homogen. Die Kugel ist homogen, weil jeder Punkt jedem anderen gleicht.
+
+Soll eine Kugel den Radius \(A\) statt Einheitsradius haben, multipliziert man die Einheitsmetrik mit \(A^2\):
+\begin{equation}
+ds^2=A^2\,d\Omega_3^2.
+\end{equation}
+Das Quadrat ist erforderlich, weil die Metrik das Abstandsquadrat misst.
+
+Ein kurzer Einschub betrifft die nulldimensionale Kugel. Geht man einen Schritt zurück, erhält man
+\begin{equation}
+x^2=1,
+\end{equation}
+mit den beiden Lösungen \(x=\pm 1\). Die nulldimensionale Einheitskugel besteht also einfach aus zwei Punkten.
+
+\section{Ein kugelförmiges FRW-Universum}
+
+Nun geht es nicht mehr nur um den Raum, sondern um die Raumzeit. Das relevante Bild ist eine dreidimensionale Kugel, deren Radius sich mit der Zeit ändert.
+
+Dabei ist durchgehend eine Warnung zu beachten: Die Zeit ist etwas anderes. Man sollte sich das expandierende Universum nicht als höherdimensionale Kugel vorstellen, bei der die Zeit die Rolle einer weiteren Einbettungskoordinate spielt.
+
+Mit diesem Vorbehalt lautet das Raumzeitintervall
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\,d\Omega_3^2.
+\end{equation}
+Dies ist die FRW-Metrik für ein räumlich kugelförmiges Universum. Gegenüber der statischen Kugel besteht die einzige Neuerung darin, dass der Radius nun eine zeitabhängige Funktion \(a(t)\) ist.
+
+Praktisch ist es, die Koordinaten so zu wählen, dass wir uns an einem Pol befinden. Dieser Punkt ist nicht besonders; die Wahl ist lediglich eine Konvention. Dann lässt sich \(\alpha\) als radiale Koordinate auf der Einheitskugel, ausgehend von uns, auffassen. Es ist keine radiale Entfernung in Kilometern. Es ist ein dimensionsloses Winkelmaß auf der Einheitskugel, das in der Geometrie jedoch die Rolle einer radialen Entfernung spielt.
+
+Abgesehen von lokalen Ansammlungen wie Galaxien und Sternen ist dies die gesamte Geometrie eines räumlich kugelförmigen FRW-Universums. Seine räumliche Krümmung ist positiv; die Vorzeichenkonvention lautet
+\begin{equation}
+k=+1.
+\end{equation}
+Das bedeutet nicht, dass irgendetwas selbst „``plus eins''“ ist. Es bedeutet lediglich, dass die räumliche Krümmung positiv ist.
+
+\section{Blick von einer Kugel nach außen}
+
+Wie sieht eine solche Kugel aus, wenn man von einem ihrer Punkte nach außen blickt? Hier kommt die stereografische Projektion ins Spiel.
+
+Man betrachte eine zweidimensionale Kugel, die eine unendliche Ebene am Südpol berührt. Wählt man einen Punkt auf der Kugel, zieht man eine Gerade vom Nordpol durch diesen Punkt und verlängert sie, bis sie die Ebene trifft. So wird jedem Punkt auf der Kugel ein Punkt in der Ebene zugeordnet. Der Südpol wird auf den Ursprung der Ebene abgebildet. Der Nordpol ist der Ausnahmefall: Nähert man sich ihm aus verschiedenen Richtungen, wandert sein Bild richtungsabhängig ins Unendliche. Daher behandelt man ihn als den Punkt im Unendlichen.
+
+Platziert man gleich große ``Kontinente'' an verschiedenen Stellen auf der Kugel, werden ihre Bilder auf der Ebene größer, je näher man dem Nordpol kommt. Ein Beobachter am Südpol würde also weit entfernte Objekte unter größeren Winkeln sehen als im flachen Raum. Bei positiver Krümmung erscheint ein Objekt bekannter Größe im Vergleich zur euklidischen Geometrie zu groß.
+
+Das ist der grundlegende Beobachtungspunkt. Auf Krümmung schließt man aus dem Zusammenhang zwischen Entfernung, Größe und Winkelausdehnung. Galaxien eignen sich für sehr große Entfernungen nicht als gute Standardmaßstäbe, aber die Logik ist genau diese.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:54}
+\audiencequestion{Muss man neben der Winkelausdehnung auch die Entfernung kennen?}
+\lecturerresponse{Ja. Der Winkel allein reicht nicht aus. Man braucht den Winkel und die Entfernung.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:18}
+\audiencequestion{Werden Kreise auf der Kugeloberfläche als Kreise projiziert?}
+\lecturerresponse{Ja. Kreise werden als Kreise projiziert. Das ist eine der besonderen Eigenschaften der stereografischen Projektion.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:47:02}
+\audiencequestion{Behält ein Kontinent bei der Projektion seine Form?}
+\lecturerresponse{Hier sind zwei verschiedene Aussagen zu unterscheiden. Die eine besagt, dass Kreise als Kreise projiziert werden. Die andere, schwächere Aussage besagt, dass hinreichend kleine Formen ihre lokale Form behalten, weil die Winkel erhalten bleiben. Die Abbildung ist konform: Sie erhält die Winkel, aber nicht die relativen Größen.}
+\end{classroomqa}
+
+\section{Homogene negative Krümmung}
+
+Der Fall homogener negativer Krümmung wird über seine Metrik eingeführt.
+
+Das Analogon zur Kugel bei negativer Krümmung ist der hyperbolische Raum. Im selben rekursiven Sinn wie zuvor erhält man seine Metrik, indem man \(\sin\alpha\) durch \(\sinh\alpha\) ersetzt:
+\begin{equation}
+d\mathcal H_n^2=d\alpha^2+\sinh^2\alpha\,d\Omega_{n-1}^2.
+\end{equation}
+Der niedrigerdimensionale Winkelanteil bleibt die Metrik der Einheitskugel \(d\Omega_{n-1}^2\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:51}
+\audiencequestion{Ist das niedrigerdimensionale Differential in der Metrik weiterhin das der Kugel?}
+\lecturerresponse{Ja. Dieser niedrigerdimensionale Anteil ist die gewöhnliche Metrik der Einheitskugel. Geändert hat sich der davorstehende Faktor \(\sinh^2\alpha\).}
+\end{classroomqa}
+
+Der hyperbolische Sinus ist
+\begin{equation}
+\sinh\alpha=\frac{e^\alpha-e^{-\alpha}}{2}.
+\end{equation}
+Das Minuszeichen ist wichtig; in der Vorlesung wird es sogleich von einem Studenten korrigiert.
+
+Ein entscheidender Unterschied besteht auch im Wertebereich der Koordinate. Bei der Kugel läuft die neue Koordinate von einem Ende zum anderen und endet bei \(\pi\). Hier gilt
+\begin{equation}
+0\leq \alpha<\infty.
+\end{equation}
+Der gewöhnliche Sinus steigt zunächst an und fällt dann wieder auf null. Der hyperbolische Sinus beginnt bei \(\alpha=0\) auf dieselbe Weise, wächst dann aber exponentiell.
+
+Das bedeutet, dass die niedrigerdimensionalen Kugeln um uns herum immer größer werden, je weiter wir uns nach außen bewegen. In dieser Geometrie wächst der Himmel mit zunehmendem Radius zunächst nicht und schrumpft dann wieder. Er wächst immer weiter.
+
+In drei räumlichen Dimensionen lautet die entsprechende FRW-Form
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\,d\mathcal H_3^2,
+\end{equation}
+und die Vorzeichenangabe lautet
+\begin{equation}
+k=-1.
+\end{equation}
+
+\section{Das Bild der Kreisscheibe und seine Bedeutung}
+
+Negative Krümmung wird im durch Escher berühmt gewordenen Bild der Kreisscheibe anschaulich, besonders in \emph{Grenzkreis IV}. Die Analogie zur stereografischen Projektion ist hilfreich, aber das Verhalten ist umgekehrt.
+
+Bei der Kugel sieht die Projektion unendlich aus, obwohl die tatsächliche Geometrie endlich ist. Bei negativer Krümmung sieht das Bild der Kreisscheibe endlich aus, obwohl die tatsächliche Geometrie unendlich ist. Gleich große ``Kontinente'' oder ``Galaxien'' erscheinen immer kleiner, je näher man sich dem Rand nähert; geometrisch sind sie jedoch alle gleich groß. Misst man die Entfernung, indem man zählt, wie viele gleich große Abschnitte man durchquert, liegt der Rand unendlich weit entfernt.
+
+Ein Objekt bekannter Größe erscheint bei negativer Krümmung also im Vergleich zum flachen Raum zu klein. Es nimmt einen zu kleinen Winkel ein.
+
+Die Geometrie ist weiterhin homogen. Auch wenn im Bild die äußeren Abschnitte winzig erscheinen, würde jeder Beobachter an einem anderen Ort dieselbe intrinsische Geometrie sehen.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:42}
+\audiencequestion{Würde ein Beobachter in einem beliebigen dieser Kreise ein ähnliches Muster sehen?}
+\lecturerresponse{Ja, genau dasselbe. Der Raum ist homogen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:07:03}
+\audiencequestion{Im kugelförmigen Fall erscheinen weit entfernte Dinge also zu groß, hier dagegen zu klein?}
+\lecturerresponse{Ja. Bei positiver Krümmung nimmt ein Objekt bekannter Größe im Vergleich zum flachen Raum einen zu großen Winkel ein. Bei negativer Krümmung nimmt es einen zu kleinen Winkel ein.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:08:09}
+\audiencequestion{Besteht die Bedeutung der Projektion nach Art der stereografischen Projektion darin, dass ein Astronom sie aus Beobachtungen rekonstruieren kann?}
+\lecturerresponse{Ja. Der Astronom ist im Grunde ein Vermesser, der Dreiecke am Himmel vermisst. Um den unmittelbaren geometrischen Punkt zu betrachten, kann man von der Zeitabhängigkeit absehen und sich auf Winkel und Entfernungen konzentrieren.}
+\end{classroomqa}
+
+Es gibt auch ein nützliches Bild für den lokalen Bereich. Eine kleine Fläche negativer Krümmung lässt sich als Sattelfläche im gewöhnlichen dreidimensionalen Raum zeichnen. Auf kleine Flächen ist das jedoch beschränkt; die gesamte hyperbolische Ebene lässt sich nicht global als eine schöne gewöhnliche Fläche im dreidimensionalen euklidischen Raum einbetten.
+
+\section{Der flache Fall}
+
+Zwischen den Fällen positiver und negativer Krümmung liegt der flache Raum. Man kann ihn als Grenzfall betrachten; es genügt aber, ihn einfach als gewöhnlichen flachen euklidischen Raum aufzufassen.
+
+Seine FRW-Form lautet
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\left(dx^2+dy^2+dz^2\right),
+\end{equation}
+mit
+\begin{equation}
+k=0.
+\end{equation}
+
+Dies sind die drei homogenen FRW-Geometrien:
+\begin{align}
+k=+1 &: \text{positive spatial curvature},\\
+k=0 &: \text{flat space},\\
+k=-1 &: \text{negative spatial curvature}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:07}
+\audiencequestion{Wenn man die Geometrie auf eine Ebene projiziert und einem Signal folgt, würde sich dann die projizierte Lichtgeschwindigkeit von Ort zu Ort ändern?}
+\lecturerresponse{Ja, in der Projektion würde sie sich ändern. In der Kugelprojektion schiene das Licht weiter außen immer schneller zu werden; auf der Scheibe mit negativer Krümmung schiene es sich am Rand immer langsamer zu bewegen. Diese Änderung gehört zum Bild, nicht zur zugrunde liegenden Physik.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:05}
+\audiencequestion{Hat man tatsächlich schon einmal weit entfernte Objekte auf diese Weise betrachtet, um festzustellen, ob der Raum flach ist?}
+\lecturerresponse{Ja, aber dabei nutzt man tatsächlich die Winkelinformation. Man bestimmt die Flachheit nicht, indem man zu messen versucht, wie schnell sich Licht in der Projektion zu bewegen scheint.}
+\end{classroomqa}
+
+\section{Zurück zu den kosmologischen Gleichungen}
+
+Nach der Pause folgt der Zusammenhang zwischen den bereits behandelten kosmologischen Gleichungen und den Einsteinschen Feldgleichungen. Zu diesem Zeitpunkt ist an der Tafel noch der Ausschnitt der flachen räumlichen Metrik zu sehen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_05_figure_02.png}
+\caption{Ausschnitt der flachen FRW-Metrik.}
+\lectureframe{01:18:18}
+\end{figure}
+
+Zunächst eine sehr kurze Wiederholung der Newtonschen Betrachtung. Wir befinden uns im Zentrum und betrachten eine Galaxie, die sich gemäß dem Hubble-Gesetz von uns entfernt. Nach dem Newtonschen Theorem für eine kugelsymmetrische Verteilung trägt nur die Masse innerhalb der Kugel, deren Radius der Entfernung der Galaxie entspricht, zur auf sie wirkenden Kraft bei. Dann gibt es drei Möglichkeiten: Die Galaxie bewegt sich mit mehr als der Fluchtgeschwindigkeit, mit weniger als der Fluchtgeschwindigkeit oder genau mit der Fluchtgeschwindigkeit.
+
+Als Nächstes sei in Erinnerung gerufen: Bei gewöhnlicher nichtrelativistischer Materie ist die Dichte proportional zur Masse dividiert durch \(a^3\), bei Strahlung ist sie proportional zu \(1/a^4\), und bei Vakuumenergie ändert sie sich nicht, wenn sich die Kugel verändert.
+
+In der früheren Newtonschen Behandlung enthielt die kosmologische Gleichung einen Dichteterm und, sofern man nicht genau den Fall der Fluchtgeschwindigkeit betrachtete, zusätzlich einen konstanten Term proportional zu \(1/a^2\). In der früheren Diskussion wurde dieser Term meist gleich null gesetzt. Empirisch ist er klein, aber begrifflich gibt es keinen Grund, ihn wegzulassen.
+
+\section{Die Einsteinschen Feldgleichungen und die \(00\)-Komponente}
+
+Als Nächstes kommen die Einsteinschen Feldgleichungen. Auf der linken Seite steht die Geometrie, die durch die Raumzeitkrümmung bestimmt ist. Auf der rechten Seite steht der Energie-Impuls-Tensor, die Quelle des Gravitationsfelds. In der Normierung der Vorlesung schreibt man
+\begin{equation}
+R^{\mu\nu}-\frac{1}{2}g^{\mu\nu}R=4\pi G\,T^{\mu\nu}.
+\end{equation}
+\editorialnote{Der Faktor \(\tfrac12\) ist in der sichtbaren Zeile an der Tafel nicht lesbar, wird aber bei 01:33:36 in der gesprochenen Korrektur wieder eingesetzt. Die Gleichung hier enthält diese Korrektur und behält zugleich die Normierung \(4\pi G\) der Vorlesung bei.}
+
+Hier werden nicht alle zehn unabhängigen Komponenten benötigt. Inzwischen wurde bereits so viel vorausgesetzt --- Homogenität, die FRW-Form und ein einziger zeitabhängiger Skalenfaktor ---, dass nur noch eine freie Funktion übrig ist, nämlich \(a(t)\). Naheliegend ist die Wahl der Zeit-Zeit-Komponente, denn \(T^{00}\) ist die Energiedichte \(\rho\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_05_figure_05.png}
+\caption{Einsteinsche Feldgleichung und ihre \(00\)-Komponente.}
+\lectureframe{01:30:54}
+\end{figure}
+
+Wir konzentrieren uns also auf
+\begin{equation}
+R^{00}-\frac{1}{2}g^{00}R=4\pi G\,\rho.
+\end{equation}
+
+Die rechte Seite ist die Energiedichte. Die linke Seite ist die Geometrie.
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:09}
+\audiencequestion{Was ist mit den anderen Komponenten des Energie-Impuls-Tensors?}
+\lecturerresponse{Sie verschwinden im Allgemeinen nicht. Die Raum-Raum-Komponenten können den Druck darstellen. Im materiedominierten Fall ist der Druck null, im strahlungsdominierten Fall beträgt er ein Drittel der Energiedichte, und für Vakuumenergie schreibt man \(P=w\rho\) mit \(w=-1\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:24}
+\audiencequestion{Würden also bei ausschließlichem Vorhandensein von Materie die anderen Komponenten von \(T^{\mu\nu}\) verschwinden?}
+\lecturerresponse{Bei druckloser Materie verschwinden die Druckkomponenten, ja.}
+\end{classroomqa}
+
+\section{Was die Einsteinsche Rechnung ergibt}
+
+Die vollständige Krümmungsrechnung wird an der Tafel nicht durchgeführt. Entscheidend ist, was sich ergibt, wenn man eine FRW-Metrik in den Einsteintensor einsetzt.
+
+Ein Term entsteht allein dadurch, dass der Skalenfaktor von der Zeit abhängt. Selbst wenn der Raum flach wäre, würde ein zeitabhängiger Skalenfaktor weiterhin Raumzeitkrümmung erzeugen. Dieser Beitrag ist proportional zu
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2.
+\end{equation}
+
+Der zweite Term entsteht durch die räumliche Krümmung selbst. Selbst wenn der Skalenfaktor zeitlich konstant wäre, würde der gekrümmte Raum zur Raumzeitkrümmung beitragen. Bei einer einfachen Geometrie mit konstanter Krümmung ist die Krümmung proportional zum Kehrwert des Krümmungsradius zum Quadrat. Daher trägt sie einen Term proportional zu
+\begin{equation}
+\frac{k}{a^2},
+\end{equation}
+bei: mit positivem Vorzeichen für die Kugel, negativem Vorzeichen für den hyperbolischen Fall und null für den flachen Raum.
+
+\begin{classroomqa}
+\lecturetimestamp{01:36:53}
+\audiencequestion{Müsste es nicht auch einen Faktor wie etwa einen Krümmungsradius geben?}
+\lecturerresponse{Dieser steckt bereits im Faktor \(1/a^2\). Bei diesen einfachen Geometrien mit konstanter Krümmung ist die Krümmung einfach der Kehrwert des Krümmungsradius zum Quadrat.}
+\end{classroomqa}
+
+Die Koeffizienten werden während der Rechnung mitgeführt und teilweise anhand des früheren Newtonschen Ergebnisses überprüft. Am Ende erhält man\footnote{Diese angegebene Friedmann-Form fasst die mündliche, selbst korrigierte Diskussion der Koeffizienten und den Vergleich mit dem früheren Newtonschen Ergebnis bei 01:32:35--01:36:53 zusammen.}
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2+\frac{k}{a^2}=\frac{8\pi G}{3}\rho,
+\end{equation}
+oder äquivalent
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}.
+\end{equation}
+
+Diese Form verknüpft die drei FRW-Geometrien mit der zuvor behandelten kosmologischen Dynamik.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:52}
+\audiencequestion{Könnte \(k\) durch eine Neudefinition von \(a\) jeden beliebigen Wert annehmen?}
+\lecturerresponse{Im flachen Fall gibt es für \(a\) keine ausgezeichnete natürliche Skala, daher kann man es skalieren; \(k\) bleibt dabei jedoch null. In den Fällen positiver und negativer Krümmung gibt es eine natürliche Krümmungsskala. Setzt man \(a(t)\) gleich diesem natürlichen Krümmungsradius, so ist \(k\) einfach \(+1\) oder \(-1\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:00}
+\audiencequestion{Ist \(k\) in der endgültigen Gleichung gleich \(+1\), \(-1\) oder \(0\)?}
+\lecturerresponse{Ja. Für die Kugel ist es \(+1\), für den hyperbolischen Fall \(-1\) und für den flachen Raum \(0\).}
+\end{classroomqa}
+
+Die Newtonsche Behandlung hat uns nicht in die Irre geführt; sie ergab dieselbe grundlegende Gleichung. Was die allgemeine Relativitätstheorie hinzufügt, ist die Interpretation. Aus Newtonscher Sicht unterscheidet die zusätzliche Konstante, ob die Geschwindigkeit über oder unter der Fluchtgeschwindigkeit liegt oder genau dem Grenzfall entspricht. Aus Einsteinscher Sicht gibt dasselbe Vorzeichen die Geometrie des Raums selbst an.
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:46}
+\audiencequestion{Wie funktionierte das, bevor man eine kosmologische Konstante einführte?}
+\lecturerresponse{Vor Einführung der kosmologischen Konstante bestand ein enger Zusammenhang zwischen dem Verhalten bezüglich der Fluchtgeschwindigkeit und der räumlichen Geometrie. Für \(k=+1\) ist der Raum positiv gekrümmt und die Bewegung liegt unter der Fluchtgeschwindigkeit, sodass das Universum expandieren und anschließend wieder kontrahieren kann. Für \(k=-1\) ist der Raum negativ gekrümmt und die Bewegung liegt über der Fluchtgeschwindigkeit, sodass das Universum immer weiter expandiert. Für \(k=0\) liegt der marginale Grenzfall vor.}
+\end{classroomqa}
+
+Dasselbe Vorzeichen \(k\) lässt sich daher auf zwei Arten deuten: als dynamische Klassifikation der Bewegung und als Vorzeichen der räumlichen Krümmung.
