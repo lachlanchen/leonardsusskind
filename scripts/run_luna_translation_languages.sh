@@ -11,7 +11,7 @@ if [[ -f .translation-work/STOP ]]; then
   printf 'STOP marker exists; remove it explicitly before resuming.\n' >&2
   exit 1
 fi
-export TRANSLATION_QUOTA_HELPER="${TRANSLATION_QUOTA_HELPER:-$HOME/.codex/skills/codex-collaboration/scripts/codex_session.py}"
+export TRANSLATION_QUOTA_HELPER="${TRANSLATION_QUOTA_HELPER:-$root/scripts/translation_quota.py}"
 
 for language in "${languages[@]}"; do
   printf '[%s] Starting %s\n' "$(date -Is)" "$language" | tee -a .translation-work/luna-queue.log

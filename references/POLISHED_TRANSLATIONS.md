@@ -99,13 +99,18 @@ semantic and PDF gates. It cannot silently skip a language, publish blocked
 outputs, increase request budgets, or modify the accepted English, Japanese or
 Simplified Chinese editions. Private prompts and results remain under
 `.translation-work/language-repairs/`.
-The launcher configures `TRANSLATION_QUOTA_HELPER` to the installed
-`codex-collaboration` quota helper; an alternative helper path can be supplied
+The launcher configures `TRANSLATION_QUOTA_HELPER` to
+`scripts/translation_quota.py`; an alternative helper path can be supplied
 through that environment variable. Checks reuse the helper's freshness-checked
 snapshot (up to three minutes old) rather than forcing a network request before
 each batch; the in-process check is refreshed at least once per minute.
 Unavailable quota telemetry or less than five percent remaining stops new requests
 and repair sweeps without purchasing credits or repeatedly retrying quota errors.
+The quota reader initializes the account before requesting limits through the
+[official read-only app-server RPC](https://developers.openai.com/codex/app-server/).
+It retains RPC errors so an explicit network/server failure can use the existing
+bounded transport cooldowns. Authentication, exhausted quota, and unclassified
+telemetry failures remain hard stops; no model calls run while transport recovers.
 Each publication verifies the exact commit SHA on every configured push URL;
 one successful mirror push alone does not establish publication completion.
 Transient connection, timeout, rate-limit or server failures may resume the

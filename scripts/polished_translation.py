@@ -669,6 +669,8 @@ def check_codex_quota():
             write(path, data)
         remaining = data.get('remaining_percent')
         if not data.get('ok') or not isinstance(remaining, (int, float)):
+            if str(data.get('error', '')).startswith('APIConnectionError:'):
+                raise ProviderUnavailable(data['error'])
             raise ProviderUnavailable('Codex quota telemetry unavailable; no new requests scheduled: '
                                       + str(data.get('error', 'Invalid quota snapshot')))
         if remaining < 5:

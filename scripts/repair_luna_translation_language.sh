@@ -9,7 +9,7 @@ cd "$root"
 case "$language" in fr|es|de|zh-Hant|ko|vi|ru|ar) ;; *) exit 2 ;; esac
 [[ "$round" =~ ^[1-3]$ ]] || exit 2
 
-export TRANSLATION_QUOTA_HELPER="${TRANSLATION_QUOTA_HELPER:-$HOME/.codex/skills/codex-collaboration/scripts/codex_session.py}"
+export TRANSLATION_QUOTA_HELPER="${TRANSLATION_QUOTA_HELPER:-$root/scripts/translation_quota.py}"
 PYTHONPATH="$root/scripts${PYTHONPATH:+:$PYTHONPATH}" "$python" - <<'PY'
 import polished_translation as p
 p.check_codex_quota()
