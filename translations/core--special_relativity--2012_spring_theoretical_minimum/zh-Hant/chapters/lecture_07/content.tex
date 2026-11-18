@@ -1,0 +1,929 @@
+\chapter{規範不變性與向量勢的必要性}
+
+在開始討論物理之前，先交代兩件實際安排。講師到比利時期間，下一次課程停一次；不過課程會繼續，直到十講全部完成。今晚的手寫筆記也是臨時趕出來的；若有人願意替課程網站掃描，便能把它們從那台慢得驚人的掃描器手中救出來。
+
+上一講的數學內容很密集。與其佯裝不然，我們不如重做一次其中的核心計算。本課程的目標是真正的理論入門最低限度：提供足以繼續進入下一層次的架構。如果去掉數學而不損及物理，當然有充分理由去掉它。但精確定律需要定量敘述，而定量敘述需要數學。記號或許會變得艱澀；這並不表示物理學家想用祭司般的語言把這門學問藏起來。
+
+或許自然界還有更簡明的表述，只是尚待發現。人們可以像費曼開玩笑說的那樣，把物理學的每個方程式都平方，再把這些平方相加，並令總和等於零。這樣確實會得到一個方程式，因為每個平方都必須為零，卻不會帶來新的理解。簡明的關鍵在於找到統整全局的觀念，而不只是把式子排得更緊湊。聽眾有人反對這種觀念必定要由年輕人提出；講師很容易就承認這點：年齡與洞見無關。
+
+\lectureoverview{我們先回顧辨認洛倫茲純量所需的指標記號，再提出建立相對論理論的四項原則，完整重做帶電粒子的推導，最後從兩個角度看出規範不變性：它既是作用量中的端點項，也是電磁場張量的不變性。}
+
+\section{重溫指標記號}
+
+\subsection{為什麼有些指標寫在上方}
+
+設
+\begin{equation}
+x^\mu=(t,x,y,z),
+\qquad
+\mu=0,1,2,3,
+\end{equation}
+度規為
+\begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr7-metric}
+\end{equation}
+座標和座標位移使用上標指標：
+\begin{equation}
+dx^\mu=(dt,dx,dy,dz).
+\end{equation}
+對這些座標微分時，導數帶有下標指標：
+\begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\label{eq:sr7-gradient}
+\end{equation}
+哪一類稱為上、哪一類稱為下，只是約定，就像左右的名稱也是約定一樣。不過，一旦選定，就必須前後一致，因為這兩類指標的變換方式不同。
+
+\begin{classroomqa}
+\audiencequestion{指標什麼時候寫成上標，什麼時候寫成下標？}
+\lecturerresponse{座標、位移，以及變換方式與它們相同的量，使用上標指標。導數，以及變換方式與導數相同的量，則使用下標指標。哪一類稱為上標是約定，但兩種變換律之間的差異並非約定。\lecturetimestamp{00:05:03}}
+\end{classroomqa}
+
+對純量函數 \(s(x)\)，全微分為
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu s\,dx^\mu.
+\label{eq:sr7-total-differential}
+\end{equation}
+展開來寫就是
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial t}\,dt
++\frac{\partial s}{\partial x}\,dx
++\frac{\partial s}{\partial y}\,dy
++\frac{\partial s}{\partial z}\,dz.
+\end{equation}
+這個精簡的寫法表達的內容完全相同。它不是新的定律，而是讓我們不必在每一行都帶著四項，也能看出純量結構的一種記法。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_01.png}
+\caption{由下標梯度與上標位移組成的純量微分。}
+\lectureframe{00:08:20}
+\end{figure}
+
+愛因斯坦求和約定現在一目了然：同一指標若在上標出現一次、在下標出現一次，就對它求和。因此，\eqref{eq:sr7-total-differential}中的縮併是純量。向量與餘向量還有更深入的幾何詮釋；我們留待廣義相對論再談。
+
+\subsection{升降指標}
+
+每個四維向量都有上標與下標兩種形式，兩者由度規相連：
+\begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\end{equation}
+由 \eqref{eq:sr7-metric} 可得
+\begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m,
+\qquad m=1,2,3.
+\label{eq:sr7-lowering}
+\end{equation}
+因此，升降指標會改變時間分量的符號，但不會改變空間分量。導數也遵循相同規則：
+\begin{equation}
+\begin{aligned}
+\partial_\mu
+&=
+\left(
+\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right),\\[0.5em]
+\partial^\mu
+&=
+\left(
+-\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right).
+\end{aligned}
+\label{eq:sr7-raised-gradient}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_02.png}
+\caption{下標與上標導數算符；只有時間分量的符號改變。}
+\lectureframe{00:12:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{偏導數一定帶下標嗎？也可以升指標嗎？}
+\lecturerresponse{算符 \(\partial/\partial x^\mu\) 自然帶有
+\(\partial_\mu\)，也就是一個餘向量。用度規升指標後得到
+\(\partial^\mu=\eta^{\mu\nu}\partial_\nu\)；在平直時空中，這只會反轉時間分量的符號。\lecturetimestamp{00:11:00}}
+\end{classroomqa}
+
+不變間隔就是一個熟悉的例子：
+\begin{equation}
+x_\mu x^\mu
+=
+x^2+y^2+z^2-t^2.
+\label{eq:sr7-interval}
+\end{equation}
+一個上標指標與一個下標指標縮併，會得到洛倫茲純量。之所以如此仔細地使用這套記號，正是為了能輕易辨認這種結構。
+
+\section{建立理論的四項原則}
+
+假設實驗揭示了某種新現象，而我們想為它建立理論。有四項原則可以引導這項工作。日後或許需要修正這些原則，但目前每一個成功的基礎理論都符合它們的架構。
+
+\subsection{作用量原理}
+
+第一項要求是作用量。對粒子力學而言，
+\begin{equation}
+I[x]
+=
+\int dt\,L(x,\dot x),
+\label{eq:sr7-particle-action-general}
+\end{equation}
+在端點固定的變分下，物理路徑使作用量取駐值：
+\begin{equation}
+\delta I=0.
+\end{equation}
+由此得到的方程式為
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr7-EL}
+\end{equation}
+
+作用量原理不是美學上的點綴，而是把對稱性與守恆律連結起來的架構。作用量在時間平移下的對稱性導出能量守恆；空間平移則導出動量守恆；其他相關對稱性也構成其他守恆量的基礎。作用量本身不是守恆律，但它提供了讓對稱性導出守恆律的結構。
+
+\subsection{局域性}
+
+第二項要求是局域性。小提琴弦上的某一點受到擾動時，首先響應的是鄰近的一段；接著，旁邊的一段也會響應，擾動便逐步傳開。影響最終可以傳到整條弦，但短時間內直接發生的作用是局域的。
+
+對粒子而言，局域性體現在沿軌跡取值的拉格朗日量中。它只依賴同一時刻的位置與速度，不依賴任意兩個相隔遙遠的時刻。對場 \(\phi(x)\) 而言，
+\begin{equation}
+I[\phi]
+=
+\int d^4x\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr7-local-field-action}
+\end{equation}
+某個事件處的密度取決於該處的場及其一階導數，不會直接包含此處的場與另一個無關遠處的場相乘。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_03.png}
+\caption{局域性原則下方展示的粒子作用量與場作用量。}
+\lectureframe{00:19:30}
+\end{figure}
+
+因此，局域的運動方程式是微分方程式。導數比較的是無窮接近的值。非局域的定律可能把此刻的加速度與相隔很久的另一時刻所受的力連結起來，或把兩個相隔遙遠時刻的速度與第三個時刻的力連結起來。這類定律在數學上可以想像，但局域性原則會將它們排除。
+
+\begin{classroomqa}
+\audiencequestion{量子糾纏會違反這裡所說的局域性原則嗎？}
+\lecturerresponse{不會違反這裡所採用的動力學意義上的局域性。糾纏會產生關聯，但 Alice 的局域操作不能用來改變 Bob 的約化態，也不能瞬間向他傳送可控制的訊號。硬幣的比喻可以凸顯兩者的差別：看到一枚硬幣，就能知道另一個人手上是哪一枚與之相關的硬幣，但這個觀察並沒有作用在遠處那枚硬幣上。量子關聯比這個古典比喻更豐富，但仍然不能用來超光速傳送訊號。\lecturetimestamp{00:20:02}}
+\end{classroomqa}
+
+\subsection{洛倫茲不變性}
+
+第三項要求是，定律在每個慣性參考系中都具有相同形式。實際的建構原則很簡單：拉格朗日量必須是洛倫茲純量，如此作用量才具有不變性。像 \(\partial_\mu\phi\,\partial^\mu\phi\) 這樣的上、--下標縮併，就是建構時所用的基本元件。
+
+在廣義相對論中，這項要求會進一步擴充。被積函數是純量密度，不變性的範圍也從洛倫茲變換擴及任意座標變換。這項修正並未取代原來的原則，而是它在彎曲時空中的形式。
+
+\begin{classroomqa}
+\audiencequestion{洛倫茲不變性只是狹義相對論的規則，還是更普遍的基本原則？}
+\lecturerresponse{對平直時空中的非重力問題而言，洛倫茲不變性是恰當的說法。在彎曲時空中，則以適當的純量密度取代純量拉格朗日量，並要求理論在任意座標變換下保持不變。除了這項修正之外，建構理論的思路仍然相同。\lecturetimestamp{00:24:16}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{粒子拉格朗日量與場拉格朗日密度的量綱是什麼？}
+\lecturerresponse{粒子拉格朗日量的量綱是能量。在 \(I=\int dt\,d^3x\,\mathcal L\) 中，空間積分測度提供體積，因此 \(\mathcal L\) 的量綱是單位體積的能量。對空間積分後，便得到量綱為能量的普通拉格朗日量。\lecturetimestamp{00:25:49}}
+\end{classroomqa}
+
+\subsection{規範不變性}
+
+第四項要求是規範不變性。此刻先不說明它的含義。聽眾提出了一個很好的預想：也許可以在拉格朗日量中加入某些東西，而不改變物理。這想法已經很接近了，不過關鍵幾乎全在「某些」這個詞。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_04.png}
+\caption{黑板上列出局域性、純量建構、洛倫茲不變性與規範不變性。}
+\lectureframe{00:27:00}
+\end{figure}
+
+我們暫且不下定義，因為帶電粒子的計算已經包含了規範不變性。重做這項計算並非繞遠路；它會說明為什麼向量勢不可或缺，以及引入向量勢後為什麼會出現冗餘自由度。
+
+\section{向量勢為何不可或缺}
+
+對緩慢運動的帶電粒子而言，我們要得到的方程式是熟悉的洛倫茲力定律：
+\begin{equation}
+m\mathbf a
+=
+e\left(
+\mathbf E+\mathbf v\times\mathbf B
+\right).
+\label{eq:sr7-lorentz-target}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_05.png}
+\caption{重新引入向量勢之前，先寫下熟悉的力定律。}
+\lectureframe{00:29:08.870}
+\end{figure}
+
+\eqref{eq:sr7-lorentz-target}中沒有出現向量勢。我們可以直接用 \(\mathbf E\) 和 \(\mathbf B\) 寫出運動方程式。問題在於更根本的結構：在本講採用的局域性與洛倫茲不變性假設下，無法只用這些場、位置和速度，直接寫出帶電粒子交互作用的世界線作用量。要建構局域的純量耦合，就必須引入勢 \(A_\mu\)。
+
+\begin{classroomqa}
+\audiencequestion{既然力定律只包含 \(\mathbf E\) 和 \(\mathbf B\)，為什麼還要引入 \(A_\mu\)？}
+\lecturerresponse{因為運動方程式本身還不是作用量原理。在本講採用的局域洛倫茲不變架構中，帶電粒子的作用量需要四維勢。單靠場可以描述力，但要從純量世界線作用量導出這個力，必須使用勢。\lecturetimestamp{00:29:06}}
+\end{classroomqa}
+
+\subsection{世界線作用量}
+
+候選作用量由自由項與交互作用項組成：
+\begin{equation}
+I[x]
+=
+-m\int d\tau
+-e\int A_\mu(x)\,dx^\mu.
+\label{eq:sr7-worldline-action}
+\end{equation}
+第一項沿軌跡逐段累加無窮小的固有時長度；依其構造，它是純量。第二項則在粒子所在的事件取 \(A_\mu(x)\) 的值，並與位移 \(dx^\mu\) 縮併。這個增量同樣是純量，而且沿世界線局域。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_06.png}
+\caption{帶電粒子作用量的兩個部分，以及局域縮併 \(A_\mu(x)dx^\mu\)。}
+\lectureframe{00:31:20}
+\end{figure}
+
+\subsection{將作用量改寫成普通時間的積分}
+
+若要使用熟悉的 Euler--Lagrange 方程式，就要將世界線的每個微分增量除以 \(dt\)：
+\begin{equation}
+\frac{d\tau}{dt}
+=
+\sqrt{1-\dot{\mathbf x}^{\,2}},
+\qquad
+\dot{\mathbf x}^{\,2}
+=
+\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+\(dx^\mu/dt\) 的四個分量為
+\begin{equation}
+\frac{dx^\mu}{dt}
+=
+\left(1,\dot x,\dot y,\dot z\right).
+\end{equation}
+因此，
+\begin{align}
+I
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_\mu\frac{dx^\mu}{dt}
+\right]
+\notag\\
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-e\left(A_0+A_m\dot x^m\right)
+\right].
+\label{eq:sr7-action-in-t}
+\end{align}
+普通時間下的拉格朗日量便是
+\begin{equation}
+\begin{aligned}
+L(x,\dot x,t)
+&=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+\\
+&\quad -e\left[
+A_0(x,t)+A_m(x,t)\dot x^m
+\right].
+\end{aligned}
+\label{eq:sr7-lagrangian}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_07.png}
+\caption{將世界線作用量改寫為普通時間的積分，並由被積函數讀出拉格朗日量。}
+\lectureframe{00:35:30}
+\end{figure}
+
+到這裡，發揮想像力的部分就結束了。選定拉格朗日量之後，其餘工作便是按部就班地計算。這些計算可能冗長乏味，但並非徒勞：電、磁與相對論的結構正是由此顯現。講師開玩笑說，找出原理是有趣的部分；推導出它的所有結果，則是交給研究生做的事。
+
+\begin{classroomqa}
+\audiencequestion{這項計算中的 \(A_m\) 或 \(\dot x^m\)，其空間指標可以升降嗎？}
+\lecturerresponse{可以。空間度規是單位矩陣，因此升降拉丁字母指標不會改變分量值。需要留意符號的是時間指標。\lecturetimestamp{00:34:10}}
+\end{classroomqa}
+
+\section{Euler--Lagrange 計算}
+
+\subsection{正則動量與即時修正}
+
+選取一個空間分量 \(x^m\)。對 \eqref{eq:sr7-lagrangian} 中的自由項微分，得到
+\begin{equation}
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+=
+m u_m,
+\qquad
+u^\mu\equiv\frac{dx^\mu}{d\tau}.
+\end{equation}
+黑板上的第一次推導到此為止。這時有聽眾指出一個遺漏：交互作用項也依賴 \(\dot x^m\)。完整的微分結果是
+\begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+=
+m u_m-eA_m.
+\label{eq:sr7-canonical-momentum}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{\(\partial L/\partial\dot x^m\) 的第一個表示式是否漏掉了電磁項的貢獻？}
+\lecturerresponse{是的。對 \(-eA_n\dot x^n\) 關於 \(\dot x^m\) 微分，會多出一項 \(-eA_m\)。修正後的正則動量是 \(m u_m-eA_m\)，而不只是機械動量。\lecturetimestamp{00:37:24}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_08.png}
+\caption{修正後的正則動量，同時包含機械項與勢項。}
+\lectureframe{00:38:30}
+\end{figure}
+
+\subsection{沿著運動路徑微分}
+
+Euler--Lagrange 方程式左側為
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+m\frac{du_m}{dt}
+-e\frac{dA_m(x(t),t)}{dt}.
+\end{equation}
+勢的變化有兩個來源：它可能顯式依賴時間，而粒子也會移動穿越勢在空間中的變化。依鏈鎖律，
+\begin{equation}
+\frac{dA_m}{dt}
+=
+\partial_0A_m
++\dot x^n\partial_nA_m.
+\label{eq:sr7-chain-rule}
+\end{equation}
+把第二項完全展開來寫，就是
+\begin{equation}
+\dot x\,\frac{\partial A_m}{\partial x}
++\dot y\,\frac{\partial A_m}{\partial y}
++\dot z\,\frac{\partial A_m}{\partial z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_09.png}
+\caption{ \(A_m\) 對時間微分時，顯式時間變化與隨粒子移動產生的變化。}
+\lectureframe{00:42:10}
+\end{figure}
+
+右側為
+\begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\partial_mA_0
+-e\dot x^n\partial_mA_n.
+\label{eq:sr7-spatial-derivative-L}
+\end{equation}
+自由項沒有顯式的位置依賴。在 \eqref{eq:sr7-spatial-derivative-L} 中，\(m\) 是標記單一方程式的自由指標；\(n\) 是重複出現的虛指標，必須對它求和。虛指標改名不會造成任何變化。講師在合併各項前特別停下來確認這些字母，原因就在於此。
+
+令等式兩側相等並整理，可得
+\begin{equation}
+m\frac{du_m}{dt}
+=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)
++e\dot x^n
+\left(
+\partial_nA_m-\partial_mA_n
+\right).
+\label{eq:sr7-grouped-force}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_10.png}
+\caption{將力分成兩個部分：一項與速度無關，另一項則與速度成正比，且在指標上反對稱。}
+\lectureframe{00:49:30}
+\end{figure}
+
+\subsection{辨認電場與磁場}
+
+第一個括號不含粒子速度。依照這個作用量採用的約定，定義
+\begin{equation}
+E_m
+\equiv
+\partial_0A_m-\partial_mA_0.
+\label{eq:sr7-E-from-A}
+\end{equation}
+它的作用正是電場。第二個括號在空間指標上反對稱：
+\begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n.
+\label{eq:sr7-C}
+\end{equation}
+它有三個獨立分量，對應空間向量勢的旋度；按照本講採用的方向約定，
+\begin{equation}
+\dot x^n C_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\label{eq:sr7-magnetic-identification}
+\end{equation}
+黑板上將詳細驗算各分量，作為練習。其結構已經清楚可見：向量勢的反對稱空間導數有三個分量，正好與 \(\mathbf B\) 的分量數相同，而且這一項乘上了速度。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_11.png}
+\caption{這兩個導數括號分別辨認為洛倫茲力中的電場項與磁場項。}
+\lectureframe{00:52:00}
+\end{figure}
+
+因此，方程式 \eqref{eq:sr7-grouped-force} 從向量勢作用量導出了洛倫茲力。除此之外，它還揭示出更重要的結構：經反對稱化的導數將構成場張量。
+
+\section{從普通時間到四維向量方程式}
+
+\subsection{換算為固有時}
+
+\eqref{eq:sr7-grouped-force} 的左側不是牛頓力學中的加速度 \(d\mathbf v/dt\)，而是四維速度的一個分量對普通時間的導數：
+\begin{equation}
+\frac{du^m}{dt}
+=
+\frac{du^m}{d\tau}\frac{d\tau}{dt}.
+\end{equation}
+將方程式乘上 \(dt/d\tau\)，便有
+\begin{equation}
+\dot x^n\frac{dt}{d\tau}
+=
+\frac{dx^n}{dt}\frac{dt}{d\tau}
+=
+u^n,
+\qquad
+\frac{dt}{d\tau}=u^0.
+\end{equation}
+空間分量的方程式因此變成
+\begin{align}
+m\frac{du^m}{d\tau}
+&=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)u^0
+\notag\\
+&\quad
++e\left(
+\partial_nA_m-\partial_mA_n
+\right)u^n.
+\label{eq:sr7-proper-spatial}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_12.png}
+\caption{因子 \(dt/d\tau\) 將普通速度換算為四維速度的分量。}
+\lectureframe{00:56:30}
+\end{figure}
+
+左側是固有加速度：
+\begin{equation}
+\frac{du^\mu}{d\tau}
+=
+\frac{d^2x^\mu}{d\tau^2}.
+\end{equation}
+它是四維向量。因此，右側也必須由作用在 \(u^\nu\) 上的二階張量組成。
+
+\subsection{場張量與力定律}
+
+採用以下約定：
+\begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\label{eq:sr7-F-definition}
+\end{equation}
+它具有反對稱性：
+\begin{equation}
+F_{\mu\nu}=-F_{\nu\mu}.
+\end{equation}
+依照 \eqref{eq:sr7-worldline-action} 中交互作用項的正負號，緊湊寫法為
+\begin{equation}
+\boxed{
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu
+}.
+\label{eq:sr7-covariant-force}
+\end{equation}
+在定義 \(F_{\mu\nu}\) 之前，也可以寫成
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+e\left(
+\partial_\nu A^\mu-\partial^\mu A_\nu
+\right)u^\nu.
+\end{equation}
+不同的度規、電荷與勢的約定，會使整體正負號出現在不同位置。不變的物理內容是勢的反對稱導數，以及它與四維速度的縮併。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_13.png}
+\caption{將固有時下的方程式寫成二階場張量作用於四維速度的形式。}
+\lectureframe{00:58:25}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{推導得到三個空間方程式，為什麼還可以加入第四個方程式？}
+\lecturerresponse{純量作用量保證結果具有洛倫茲協變性。一旦認出兩側的差是一個四維向量，洛倫茲變換就會混合它的空間分量與時間分量。四維向量方程式若只有三個分量，便無法自洽；時間分量必須與空間分量一同納入。\lecturetimestamp{00:59:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{像 \((1,2,3,4)\) 這樣一組固定的數字，本身就是洛倫茲不變的四維向量嗎？}
+\lecturerresponse{不是。這些數字可以是在某個選定參考系中表示向量的分量，但分量會隨參考系變換。即使在二維中，分量為 \((1,2)\) 的向量，在旋轉後的座標系中也可表示為 \((0,\sqrt5)\)。幾何向量仍然存在，但它的數值分量列表並非不變。\lecturetimestamp{01:00:28}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_14.png}
+\caption{以與向量本身對齊的座標軸，重新表示一個二維向量。}
+\lectureframe{01:02:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{既然目標是以固有時取代普通時間，為什麼 \(\partial_0A_m=\partial A_m/\partial t\) 仍然會出現？}
+\lecturerresponse{目標並不是刪去所有的 \(t\)，而是用明確的四維向量記號寫出動力學。算符 \(\partial_0\) 是協變四維梯度的時間分量，正如 \(\partial_m\) 是它的空間分量。它本來就屬於四維張量。\lecturetimestamp{01:05:10}}
+\end{classroomqa}
+
+講師藉此再次說明局域性。局域方程式將某個事件處的加速度，與同一事件處的場和速度連結起來；它不會把此刻的加速度連結到遙遠時刻的力。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_15.png}
+\caption{用來說明局域性如何以微分動力學表達的協變力方程式。}
+\lectureframe{01:05:50}
+\end{figure}
+
+\subsection{列出電磁場的分量}
+
+對全上標張量，黑板上採用的約定給出
+\begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_x&-E_y&-E_z\\
+E_x&0&B_z&-B_y\\
+E_y&-B_z&0&B_x\\
+E_z&B_y&-B_x&0
+\end{pmatrix}.
+\label{eq:sr7-F-matrix}
+\end{equation}
+列的指標是 \(\mu\)，行的指標是 \(\nu\)。時間--空間位置的混合分量包含電場；空間--空間區塊則包含磁場。由反對稱性可知，對角線元素為零，十六個矩陣元素因此化為六個獨立分量。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_16.png}
+\caption{完整的電磁場張量：電場分量位於時間--空間位置，磁場分量則位於空間區塊。}
+\lectureframe{01:12:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{張量的哪個指標代表行、哪個代表列，有標準規則嗎？}
+\lecturerresponse{這是呈現方式的約定。這裡第一個指標 \(\mu\) 沿垂直方向排列，第二個指標 \(\nu\) 沿水平方向排列。只要先說明這項約定，每個分量就都能明確讀出。升起時間指標會引入一個負號，但不會改變行--列的排列約定。\lecturetimestamp{01:09:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{哪些指標位置的張量仍具有反對稱性？}
+\lecturerresponse{張量 \(F_{\mu\nu}\) 和 \(F^{\mu\nu}\) 都具有反對稱性。混合指標陣列 \(F^\mu{}_\nu\) 對一般矩陣轉置則不具反對稱性：升起一個時間指標會改變電場所在的位置，使時間--空間分量成為對稱的一對；純空間的磁場區塊仍保持反對稱。講師先在黑板上短暫考慮了相反的可能性，隨即排除，才得出這個結論。\lecturetimestamp{01:13:18}}
+\end{classroomqa}
+
+\section{什麼情況算是不變？}
+
+現在才回到第四項原則。不變性是指某種變化不會改變運動方程式。作用量本身可以完全不變，也可以只改變一個不影響變分方程式的邊界項。
+
+\subsection{無質量純量場的常數平移}
+
+考慮一維空間中的無質量純量場方程式：
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
+=0,
+\label{eq:sr7-wave}
+\end{equation}
+這個方程式由下式導出：
+\begin{equation}
+\mathcal L_0
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi.
+\label{eq:sr7-massless-L}
+\end{equation}
+若 \(\phi\) 是解，則
+\begin{equation}
+\phi\longrightarrow\phi+c,
+\label{eq:sr7-constant-shift}
+\end{equation}
+也是解，其中 \(c\) 是常數。\(c\) 的所有導數都為零，因此方程式與只含導數的拉格朗日量都不會改變。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_17.png}
+\caption{無質量波動方程式、只含導數的拉格朗日量，以及常數平移 \(\phi\mapsto\phi+c\)。}
+\lectureframe{01:17:10}
+\end{figure}
+
+現在加入質量項：
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
++\mu^2\phi
+=0,
+\end{equation}
+\begin{equation}
+\mathcal L_\mu
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi
+-\frac{\mu^2}{2}\phi^2.
+\label{eq:sr7-massive-L}
+\end{equation}
+在 \(\phi\mapsto\phi+c\) 下，導數部分仍然不變，但 \(\phi^2\) 不會保持不變。兩種理論都成立；其中一種具有常數平移不變性，另一種則沒有。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_18.png}
+\caption{破壞常數平移不變性的質量項。}
+\lectureframe{01:18:50}
+\end{figure}
+
+\subsection{學生預先想到邊界項}
+
+一位聽眾提出了更嚴格的檢驗：
+\begin{equation}
+\phi(x,t)\longrightarrow\phi(x,t)+x.
+\label{eq:sr7-linear-shift}
+\end{equation}
+\(x\) 的二階導數為零，因此它仍然滿足無質量波動方程式。至於作用量是否保持不變，則需要仔細檢查。由於 \(x\) 和 \(t\) 是彼此獨立的變數，
+\begin{equation}
+\frac{\partial x}{\partial t}=0,
+\qquad
+\frac{\partial x}{\partial x}=1.
+\end{equation}
+空間部分的變化為
+\begin{align}
+-\frac12
+\left[
+\partial_x(\phi+x)
+\right]^2
+&=
+-\frac12
+\left(
+\partial_x\phi+1
+\right)^2
+\notag\\
+&=
+-\frac12(\partial_x\phi)^2
+-\partial_x\phi
+-\frac12.
+\label{eq:sr7-linear-shift-L}
+\end{align}
+新增的項包含一個常數與一個全導數。常數不會改變 Euler--Lagrange 方程式。對 \(\partial_x\phi\) 積分只會留下空間邊界值，因此在通常固定邊界的條件下，也不會改變運動方程式。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_19.png}
+\caption{提出的平移 \(\phi\mapsto\phi+x\)，以及顯示導數平方可拆成常數與全導數的式子。}
+\lectureframe{01:22:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{即使 \(\phi\mapsto\phi+x\) 改變了拉格朗日密度，無質量場方程式仍會保持不變嗎？}
+\lecturerresponse{會。\(x\) 的二階導數為零，因此方程式不變。拉格朗日量只增加了一個常數項與一個空間全導數。在固定邊界條件下，這些項會使作用量的數值增加一個固定的體積項與邊界值，但不會改變 Euler--Lagrange 方程式。\lecturetimestamp{01:20:00}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼 \(\partial x/\partial t\) 等於零？}
+\lecturerresponse{因為 \(x\) 和 \(t\) 是場描述中彼此獨立的座標。對 \(t\) 做偏微分時，\(x\) 保持不變。\lecturetimestamp{01:22:22}}
+\end{classroomqa}
+
+這位學生已經想到電磁學所需的關鍵做法：全導數可以改變作用量的表達式，卻不改變使作用量取駐值的路徑。
+
+\section{帶電粒子的規範不變性}
+
+\subsection{加上一個四維梯度}
+
+回到交互作用項
+\begin{equation}
+I_{\mathrm{int}}
+=
+-e\int A_\mu\,dx^\mu.
+\end{equation}
+令 \(\Lambda(x)\) 為任意足夠光滑的純量，並以下列方式改變勢：
+\begin{equation}
+A_\mu
+\longrightarrow
+A'_\mu
+=
+A_\mu+\partial_\mu\Lambda.
+\label{eq:sr7-gauge-transformation}
+\end{equation}
+梯度 \(\partial_\mu\Lambda\) 與 \(A_\mu\) 具有相同的協變指標形式，因此兩者可以相加。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_20.png}
+\caption{世界線耦合與變換 \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\)。}
+\lectureframe{01:24:50}
+\end{figure}
+
+作用量的改變為
+\begin{align}
+\Delta I_{\mathrm{int}}
+&=
+-e\int \partial_\mu\Lambda\,dx^\mu
+\notag\\
+&=
+-e\int d\Lambda
+\notag\\
+&=
+-e\left[
+\Lambda(x_2)-\Lambda(x_1)
+\right].
+\label{eq:sr7-gauge-boundary}
+\end{align}
+沿著每一段無窮小世界線，\(\partial_\mu\Lambda\,dx^\mu\) 正是增量 \(d\Lambda\)。將這些增量相加後，會逐項相消，最後只剩終點值與起點值之差。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_21.png}
+\caption{沿路徑積分的梯度項，等於端點值之差 \(\Lambda(x_2)-\Lambda(x_1)\)。}
+\lectureframe{01:28:10}
+\end{figure}
+
+變分原理比較的是保持 \(x_1\) 與 \(x_2\) 固定時的鄰近軌跡。因此，\eqref{eq:sr7-gauge-boundary} 中的額外項對所有允許的變分都相同：
+\begin{equation}
+\delta\Delta I_{\mathrm{int}}=0.
+\end{equation}
+駐定軌跡不變。這就是以端點為條件的規範不變性。
+
+\begin{classroomqa}
+\audiencequestion{\(\Lambda\) 可以是任意標量函數嗎？}
+\lecturerresponse{可以，但須符合導數與作用量所需的平滑性及邊界條件。這個變換是局域的，因為參數是時空中的任意函數，而不只是一個全域常數。\lecturetimestamp{01:28:40}}
+\end{classroomqa}
+
+在 \(A_\mu\) 上加上梯度，稱為規範變換。「規範」一詞沿用自歷史傳統；講座以幽默而堅定的口吻提醒大家，不要把它念得像法語。名稱不如這項運算本身重要。
+
+\subsection{直接利用場張量證明}
+
+運動方程取決於 \(F_{\mu\nu}\)，而非勢本身。在 \eqref{eq:sr7-gauge-transformation} 下，
+\begin{align}
+F'_{\mu\nu}
+&=
+\partial_\mu
+\left(
+A_\nu+\partial_\nu\Lambda
+\right)
+-
+\partial_\nu
+\left(
+A_\mu+\partial_\mu\Lambda
+\right)
+\notag\\
+&=
+F_{\mu\nu}
++
+\partial_\mu\partial_\nu\Lambda
+-
+\partial_\nu\partial_\mu\Lambda
+\notag\\
+&=
+F_{\mu\nu}.
+\label{eq:sr7-F-gauge-invariant}
+\end{align}
+在一般平坦時空中，光滑標量函數的偏導數可以交換，因此兩個額外項相消。由此可知，場張量、其中包含的電場與磁場，以及力定律，全都具有規範不變性。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_22.png}
+\caption{規範變換所產生的兩個二階導數會相消，因為偏導數可以交換。}
+\lectureframe{01:33:50}
+\end{figure}
+
+這兩個證明從相反方向說明了同一件事：作用量只在固定端點處改變，而方程只取決於保持不變的場張量。
+
+\section{冗餘代表什麼}
+
+\subsection{為什麼要保留一個不唯一的量？}
+
+自然會立刻產生一個疑問：如果 \(A_\mu\) 不唯一，為什麼還要引入它？因為即使它的分量值包含冗餘資訊，對建立局域、洛倫茲不變的作用量而言，它仍不可或缺。許多勢都代表同一個電磁場：
+\begin{equation}
+A_\mu
+\sim
+A_\mu+\partial_\mu\Lambda.
+\end{equation}
+物理上有意義的是等價類；選擇其中某個代表元，則是描述方式的選擇。
+
+\begin{classroomqa}
+\audiencequestion{改變規範有實際用途嗎？}
+\lecturerresponse{有。選擇適當的 \(\Lambda\)，可以簡化勢的某個分量，或讓問題中的某項特徵更清楚。在局部範圍內，若邊界條件適當，通常可以選擇一種規範，使某個指定分量（包括 \(A_0\)）為零。另一種規範則可能更清楚地呈現其他特徵。\lecturetimestamp{01:35:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{規範不變性是否類似於從兩個洛倫茲參考系描述同一個實驗？}
+\lecturerresponse{不是。洛倫茲變換比較的是不同觀測者所使用、且具有物理意義的參考系。規範變換則是同一種描述中的冗餘：不同的勢描述同一個場。兩者在數學上都是不變性，但詮釋不同。\lecturetimestamp{01:37:07}}
+\end{classroomqa}
+
+兩者在結構上也有差異。旋轉採用固定的全域角度；一般不會在每個位置都用彼此無關的角度旋轉座標軸。規範變換則由整個函數 \(\Lambda(x)\) 來參數化。這種隨位置改變的自由度，正是局域規範不變性的特徵。
+
+\begin{classroomqa}
+\audiencequestion{加上梯度就是規範不變性的一般定義嗎？}
+\lecturerresponse{對阿貝爾電磁理論而言，這就是規範變換。楊--米爾斯理論則有更複雜的非阿貝爾版本，其中的勢帶有額外的內部結構；但相同的概念仍然成立：不同的局域描述代表相同的物理。\lecturetimestamp{01:39:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{規範變換只是一種凸顯問題不同面向的數學手段嗎？}
+\lecturerresponse{它是有用的計算與詮釋工具，但作用有所限制：它可以簡化方程或揭示某項性質，卻不能改變任何最終的規範不變預測。
+\lecturetimestamp{01:40:22}}
+\end{classroomqa}
+
+\subsection{其他場與其他勢}
+
+其他理論中的規範勢通常也以 \(A\) 表示，並帶有時空指標 \(\mu\)。它們的差異在於具有與其他對稱性相關的額外內部結構。本講將留待日後再討論這種結構，不會過早給出公式。
+
+\begin{classroomqa}
+\audiencequestion{其他場論中的向量勢是什麼樣子？}
+\lecturerresponse{它們同樣是時空向量，通常寫作 \(A_\mu\)，但帶有與內部對稱性相關的額外標記及代數結構。這正是通往楊--米爾斯理論的起點，本講刻意將其留待日後再談。\lecturetimestamp{01:41:02}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{真的不可能直接用 \(\mathbf E\) 和 \(\mathbf B\) 寫出局域、洛倫茲不變的帶電粒子作用量嗎？}
+\lecturerresponse{在此處所述假設的範圍內，確實不可能。本講將此視為一條定理提出，但沒有證明。若要保留作用量原理、局域性與洛倫茲不變性，就必須引入勢；引入之後，規範冗餘便會自動出現。
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\subsection{哪些量可以測量？}
+
+\(A_\mu\)的局域值本身不具規範不變性。如果物理測量能唯一確定這個值，那麼將它改變 \(\partial_\mu\Lambda\) 就會改變物理結果，與剛才證明的不變性相矛盾。可測量的預測必須由規範不變量構成；在目前的經典討論中，\(F_{\mu\nu}\) 就是其中一例。
+
+\begin{classroomqa}
+\audiencequestion{為什麼自然界如此偏好規範理論？}
+\lecturerresponse{在經典層次，本講沒有提出最終解釋。量子力學提供了更深一層的觀點，但即使如此，廣義的答案仍未完備。目前已清楚可見的是，以規範冗餘為架構的理論具有非凡的優美、對稱性與簡潔性。
+\lecturetimestamp{01:43:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{向量勢本身可以測量嗎？}
+\lecturerresponse{不能測量依賴規範的局域分量值。測量是一種物理過程，而所有物理預測都必須不受 \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\) 影響。可以測量的是勢與場的規範不變特徵。
+\lecturetimestamp{01:44:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果 \(A_\mu\) 改變的量不是梯度，會發生什麼事？}
+\lecturerresponse{一般而言，\(F_{\mu\nu}\) 會改變，因此這種改變可以被探測到。相較之下，純規範勢 \(A_\mu=\partial_\mu\Lambda\) 滿足 \(F_{\mu\nu}=0\)，不會產生電磁力；此時自由粒子沿直線世界線運動。\lecturetimestamp{01:45:22}}
+\end{classroomqa}
+
+因此，規範不變性不是可以隨意捨棄的技巧。電動力學、楊--米爾斯理論、標準模型與重力，都具有某種形式的規範冗餘。這種結構頗為特別：理論的表述需要一個輔助量，但可以改變這個量的部分內容而不影響物理。這種特別的結構，同時也帶來了組織理論的力量。
+
+\section{規範不變性的邏輯}
+
+本講刻意採取迂迴的推進方式。我們先恢復了上--下指標的表述方式，因為純量縮並是洛倫茲不變作用量的基本語法。接著提出四項原理：作用量、局域性、洛倫茲不變性與規範不變性。在重建帶電粒子的計算過程中，第四項始終尚未定義。
+
+這項計算從局域純量作用量
+\begin{equation}
+I
+=
+-m\int d\tau
+-e\int A_\mu dx^\mu,
+\end{equation}
+開始，接著推導普通時間下的拉格朗日量，逐一計算每個歐拉--拉格朗日導數，最後導出電場與磁場所造成的洛倫茲力。再以固有時將結果整理為
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu,
+\qquad
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{equation}
+
+純量場的例子為最後一步做好了準備：全導數只會透過邊界項改變作用量。因此，
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\Lambda
+\end{equation}
+只會透過固定的端點值改變世界線作用量；由於混合偏導數可以交換，\(F_{\mu\nu}\) 保持不變。因此，向量勢不可或缺，但並不唯一。規範不變性所表明的是，這種不唯一性屬於描述方式，而非物理本身。

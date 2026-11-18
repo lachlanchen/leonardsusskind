@@ -1,0 +1,957 @@
+\chapter{電磁波與麥克斯韋作用量}
+
+\lectureoverview{我們先求解無源麥克斯韋方程組，找出平面波，並由方程決定波的偏振、場的幾何關係與傳播速度。接著探討更深一層的問題：哪一種局域、洛倫茲不變且規範不變的作用量，能產生動力學麥克斯韋方程？答案將電磁場、電荷守恆與規範不變性統整為同一個結構。}
+
+\section{麥克斯韋方程的兩組方程}
+
+我們從平面電磁波談起。這裡的\emph{平面}指的是幾何意義上的平面，並非\emph{平淡無奇}。眼前的問題很具體：這種波是什麼樣子？它的形式又如何由麥克斯韋方程推導出來？
+
+在分析波之前，先將方程分成兩組並列寫出會很有幫助。在真空中，方程如下：
+\begin{align}
+\nabla\cdot\mathbf B&=0,
+&
+\dot{\mathbf B}&=\nabla\times\mathbf E,
+\label{eq:homogeneous-vector}
+\\
+\nabla\cdot\mathbf E&=0,
+&
+\dot{\mathbf E}&=-\,\nabla\times\mathbf B.
+\label{eq:dynamical-vector-vacuum}
+\end{align}
+我們採用負正正正號差度規
+\begin{equation}
+\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)
+\end{equation}
+以及本課程的約定
+\begin{equation}
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\qquad
+F_{0i}=E_i,
+\qquad
+F_{ij}=\epsilon_{ijk}B_k.
+\label{eq:course-f-convention}
+\end{equation}
+於是，這兩組方程也可寫成
+\begin{align}
+\partial_\mu F_{\nu\sigma}
++\partial_\nu F_{\sigma\mu}
++\partial_\sigma F_{\mu\nu}
+&=0,
+\label{eq:bianchi-l9}
+\\
+\partial_\mu F^{\mu\nu}
+&=0.
+\label{eq:vacuum-maxwell-covariant}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_01.png}
+\caption{真空麥克斯韋方程的兩組方程及其協變形式。循環方程是恆等式；縮併方程則是動力學方程。}
+\par\smallskip
+\textit{課程畫面：00:03:30。}
+\end{figure}
+
+兩行方程的區別很重要。方程
+\eqref{eq:bianchi-l9}由勢\(A_\mu\)的存在而必然成立：每一項都是二階導數，彼此成對抵消。因此它是比安基恆等式。相較之下，方程
+\eqref{eq:vacuum-maxwell-covariant}是運動方程。改變電磁拉格朗日量，改變的就是這一組方程。
+
+黑板上的一個小觀察，將在本章發揮兩種作用：麥克斯韋方程中的場都以導數的形式出現。這一點不僅會限制平面波的相對相位，也會讓規範不變性顯得自然而然。
+
+\section{沿\texorpdfstring{\(z\)}{z}軸傳播的平面波}
+
+選擇座標，使波沿\(z\)軸傳播。這不失一般性；只要旋轉座標軸，沿其他方向傳播的波也能化為這種形式。令\(k\)為波數，
+\begin{equation}
+\lambda=\frac{2\pi}{k},
+\end{equation}
+並令\(\omega\)為頻率。在套用任何運動方程之前，先將六個場分量都寫成具有共同相位
+\begin{equation}
+\theta=kz-\omega t:
+\end{equation}
+\begin{align}
+E_x(z,t)&=\epsilon_x\sin\theta,
+&
+B_x(z,t)&=\beta_x\sin\theta,
+\nonumber\\
+E_y(z,t)&=\epsilon_y\sin\theta,
+&
+B_y(z,t)&=\beta_y\sin\theta,
+\label{eq:plane-wave-ansatz}\\
+E_z(z,t)&=\epsilon_z\sin\theta,
+&
+B_z(z,t)&=\beta_z\sin\theta.
+\nonumber
+\end{align}
+這六個希臘字母代表常數振幅。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_02.png}
+\caption{麥克斯韋方程尚未排除不允許的振幅前，六個分量的平面波試探形式。}
+\par\smallskip
+\textit{課程畫面：00:08:45。}
+\end{figure}
+
+為什麼一開始就假設\(\mathbf E\)與\(\mathbf B\)具有相同的正弦依賴？假設一個場具有\(\sin\theta\)的形式，另一個場則具有\(\cos\theta\)的形式。那麼，旋度方程兩側的時間導數與空間導數便會產生不同的三角函數，等式不可能對所有\(z\)和\(t\)都成立。共同的常數相位是允許的，但只要平移\(z\)的原點，就能將它消去。因此，這個試探形式不是額外的動力學定律，而是微分方程所要求的相位關係中最簡單的一種表示。
+
+我們還沒有使用任何麥克斯韋方程，只是選定傳播方向、波長，以及方便的相位原點。接下來由方程決定哪些振幅能夠保留下來。
+
+\subsection{散度條件}
+
+由於場只依賴\(z\)和\(t\)，
+\begin{equation}
+\nabla\cdot\mathbf E
+=
+\partial_xE_x+\partial_yE_y+\partial_zE_z
+=
+\partial_zE_z.
+\end{equation}
+在真空中，這必須對所有相位都等於零，因此
+\begin{equation}
+\epsilon_z=0.
+\label{eq:epsilon-z-zero}
+\end{equation}
+對磁場作同樣的推導可得
+\begin{equation}
+\beta_z=0.
+\label{eq:beta-z-zero}
+\end{equation}
+兩個場都沒有沿傳播方向的分量，因此這是橫波。
+
+在橫向\(xy\)平面內，還有旋轉自由度。\((\epsilon_x,\epsilon_y)\)是一個普通的二維向量，因此可旋轉橫向座標軸，使得
+\begin{equation}
+\epsilon_y=0,
+\qquad
+\epsilon_x\ne0.
+\label{eq:polarization-axis}
+\end{equation}
+這只是選定線偏振方向，並未限制物理情況。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_03.png}
+\caption{縱向振幅已消失，橫向電場的方向也已選定。}
+\par\smallskip
+\textit{課程畫面：00:14:30。}
+\end{figure}
+
+\subsection{旋度方程}
+
+取方程\(\dot{\mathbf E}=-\nabla\times\mathbf B\)的\(x\)分量。由於場只隨\(z\)變化，
+\begin{equation}
+\dot E_x
+=
+-\left(\nabla\times\mathbf B\right)_x
+=
+\partial_zB_y.
+\end{equation}
+代入試探形式後可得
+\begin{align}
+-\omega\epsilon_x\cos\theta
+&=
+k\beta_y\cos\theta,
+\nonumber\\
+\beta_y
+&=
+-\,\epsilon_x\frac{\omega}{k}.
+\label{eq:beta-y-epsilon}
+\end{align}
+同一個麥克斯韋方程的\(y\)分量為
+\begin{equation}
+\dot E_y
+=
+-\left(\partial_zB_x\right).
+\end{equation}
+依照我們選定的偏振方向，左側為零，因此
+\begin{equation}
+\beta_x=0.
+\label{eq:beta-x-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_04.png}
+\caption{分量旋度計算將\(\epsilon_x\)與\(\beta_y\)聯繫起來，並排除剩餘的磁場振幅。}
+\par\smallskip
+\textit{課程畫面：00:20:15。}
+\end{figure}
+
+因此，幾何關係已經確定：
+\begin{equation}
+\mathbf E\parallel\hat{\mathbf x},
+\qquad
+\mathbf B\parallel\hat{\mathbf y},
+\qquad
+\mathbf k\parallel\hat{\mathbf z}.
+\end{equation}
+電場、磁場與傳播方向彼此垂直。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_09_figure_05.png}
+\caption{黑板上的圖示描繪橫向電場與磁場的振盪，並沿\(z\)軸前進。}
+\par\smallskip
+\textit{課程畫面：00:23:15。}
+\end{figure}
+
+另一個旋度方程則給出獨立的振幅關係。它的\(y\)分量為
+\begin{equation}
+\dot B_y=(\nabla\times\mathbf E)_y=\partial_zE_x,
+\end{equation}
+因此
+\begin{align}
+-\omega\beta_y\cos\theta
+&=
+k\epsilon_x\cos\theta,
+\nonumber\\
+\epsilon_x
+&=
+-\,\beta_y\frac{\omega}{k}.
+\label{eq:epsilon-beta-y}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_06.png}
+\caption{橫波示意圖上方所列的互易振幅關係。}
+\par\smallskip
+\textit{課程畫面：00:25:00。}
+\end{figure}
+
+結合方程\eqref{eq:beta-y-epsilon}與\eqref{eq:epsilon-beta-y}，可得色散關係
+\begin{equation}
+\left(\frac{\omega}{k}\right)^2=1.
+\end{equation}
+對於沿選定方向傳播的正頻率波，
+\begin{equation}
+\omega=k
+\qquad
+(c=1).
+\label{eq:omega-k}
+\end{equation}
+因此，共同相位為
+\begin{equation}
+\theta=k(z-t).
+\end{equation}
+恢復通常使用的單位後，可得
+\begin{equation}
+\omega=ck,
+\qquad
+\theta=k(z-ct).
+\label{eq:restore-c-wave}
+\end{equation}
+因此，波形以光速保持形狀向前傳播。在黑板採用的單位制中，電場與磁場的振幅大小相等。兩者之間的負號來自方向約定：它指出所選\(y\)軸的指向，並不表示一個場比另一個場落後四分之一週期。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_07.png}
+\caption{施加\(\omega=k\)後的平面波形式。}
+\par\smallskip
+\textit{課程畫面：00:26:45。}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\omega\)和\(k\)的單位不是不同嗎？}
+\lecturerresponse{在通常的單位制中確實不同：\(\omega\)的單位是時間的倒數，\(k\)的單位是長度的倒數。取\(c=1\)時，時間和長度具有相同的單位。恢復\(c\)後，\(\omega=k\)會變為\(\omega=ck\)，這正是量綱分析所要求的。\lecturetimestamp{00:25:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{平面波中的電場和磁場總是同相嗎？}
+\lecturerresponse{兩者具有相同的相位依賴形式。帶正負號的振幅可以相差一個負號，這可描述為相差\(180^\circ\)；不過，對這個線偏振平面波，麥克斯韋方程不允許出現\(90^\circ\)的正弦--餘弦相位差。圓偏振是由橫向分量組合而成，描述時需要更謹慎，但不會改變這項逐分量的麥克斯韋關係。\lecturetimestamp{00:27:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果兩個場同時經過零點，能量仍然守恆嗎？}
+\lecturerresponse{是的。波經過時，某個固定位置的能量密度會振盪，但能量只是移動了，並未消失。某一時刻位於某個區域的能量，稍後會移至相鄰區域。更完整地說，坡印廷通量描述局域能量傳輸，因而能說明能量密度的變化如何與能量守恆相容。\lecturetimestamp{00:28:15}}
+\end{classroomqa}
+
+麥克斯韋方程是線性的。振幅\(\epsilon_x\)可以很大或很小，\(\beta_y\)由它決定，而且解的任意和或差仍然是解。因此，沿不同方向傳播的波可以疊加。這個簡短的推導值得親自做一遍：講述電磁學時，不該把電磁波留成一句未經解釋的引文。
+
+\begin{classroomqa}
+\audiencequestion{推導一開始就假設\(\mathbf E\)和\(\mathbf B\)具有相同相位嗎？}
+\lecturerresponse{我們在試探形式中寫下共同相位，但這並非獨立的物理假設。旋度方程兩側都對場求導，因此方程會排除非零的相對相位。接著，只要平移原點就能移除共同的相位偏移。\lecturetimestamp{00:29:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{第二個關係\(\epsilon_x=-\beta_y\omega/k\)是怎麼得出的？}
+\lecturerresponse{第一個關係來自\(\dot{\mathbf E}=-\nabla\times\mathbf B\)；第二個則來自相應的方程\(\dot{\mathbf B}=\nabla\times\mathbf E\)，在相同的分量計算中將\(\mathbf E\)與\(\mathbf B\)互換即可得到。要導出\(\omega^2=k^2\)，兩個關係缺一不可。
+\lecturetimestamp{00:30:25}}
+\end{classroomqa}
+
+\section{為什麼光有微分方程還不夠}
+
+現在我們從特定解轉向理論的整體結構。最小作用量原理統整了能量守恆、動量守恆，以及兩者與時空對稱性的關係。人們可以構造出一些微分方程，但其中的能量未必值得稱為守恆量，也未必具有有用的對稱性原理。麥克斯韋方程則應該由拉格朗日量導出。
+
+只需導出動力學方程這一組：
+\begin{equation}
+\partial_\mu F^{\mu\nu}=J^\nu.
+\label{eq:target-sourced-maxwell}
+\end{equation}
+比安基方程這一組已由\(F_{\mu\nu}\)的定義導出。
+以三維向量表示時，我們的約定給出
+\begin{align}
+\nabla\cdot\mathbf E&=\rho,
+\label{eq:gauss-source}
+\\
+\dot{\mathbf E}+\nabla\times\mathbf B&=-\,\mathbf J.
+\label{eq:ampere-course-sign}
+\end{align}
+\eqref{eq:ampere-course-sign}中的負號很重要。它是\eqref{eq:target-sourced-maxwell}在\eqref{eq:course-f-convention}約定下的分量形式；在本章接近結尾時，我們會透過一次即時符號檢查再次確認這個符號。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_08.png}
+\caption{從波動解轉向作用量原理時的完整麥克斯韋方程板書。}
+\par\smallskip
+\textit{課程畫面：00:32:45。}
+\end{figure}
+
+\section{局域相對論場論}
+
+第一項原理是局域性。作用量是對時空積分所得，其密度由場及場在同一點的一階導數構成：
+\begin{equation}
+S=\int d^4x\,\mathcal L(\phi,\phi_{,\mu}),
+\qquad
+\phi_{,\mu}\equiv\partial_\mu\phi.
+\label{eq:local-action}
+\end{equation}
+逗號是簡潔的導數記號。第二項原理是洛倫茲不變性：\(\mathcal L\)必須是純量。
+
+\subsection{標量場的預備練習}
+
+在對四維向量作變分之前，先用一個標量場練習這套方法。局域的洛倫茲純量可以依賴勢能\(U(\phi)\)，以及兩個導數的縮併：
+\begin{equation}
+\mathcal L_\phi
+=
+-\frac12\,\partial_\mu\phi\,\partial^\mu\phi-U(\phi).
+\label{eq:scalar-lagrangian}
+\end{equation}
+採用負正正正號差度規時，
+\begin{equation}
+\partial_\mu\phi\,\partial^\mu\phi
+=
+-\dot\phi^{\,2}+|\nabla\phi|^2,
+\end{equation}
+因此
+\begin{equation}
+\mathcal L_\phi
+=
+\frac12\dot\phi^{\,2}
+-\frac12|\nabla\phi|^2
+-U(\phi).
+\end{equation}
+時間導數的升指標形式與降指標形式符號相反；空間導數的升、降指標形式則符號相同。
+
+\begin{classroomqa}
+\audiencequestion{導數的指標放在上方而不是下方，有什麼意義嗎？}
+\lecturerresponse{有。升高指標表示與逆度規縮併。採用號差\((-+++)\)時，
+\(\partial^0=-\partial_0\)，而
+\(\partial^i=\partial_i\)。因此，時間導數項的符號與三個空間導數項相反。
+\lecturetimestamp{00:38:02}}
+\end{classroomqa}
+
+場的尤拉--拉格朗日方程為
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial\phi_{,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial\phi}.
+\label{eq:field-el}
+\end{equation}
+對於\eqref{eq:scalar-lagrangian}，
+\begin{equation}
+\frac{\partial\mathcal L_\phi}{\partial\phi_{,\mu}}
+=
+-\partial^\mu\phi,
+\qquad
+\frac{\partial\mathcal L_\phi}{\partial\phi}
+=
+-U'(\phi),
+\end{equation}
+因此
+\begin{equation}
+\Box\phi=U'(\phi),
+\qquad
+\Box\equiv\partial_\mu\partial^\mu.
+\end{equation}
+等價地，
+\begin{equation}
+\ddot\phi-\nabla^2\phi=-U'(\phi).
+\label{eq:scalar-wave}
+\end{equation}
+黑板上只寫出\(x\)導數，\(y\)和\(z\)方向的項則省略不寫。結果是熟悉的波動方程，其中包含由勢能所產生的力。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_09.png}
+\caption{局域性、洛倫茲不變的純量拉格朗日量，以及場論的尤拉--拉格朗日方程。}
+\par\smallskip
+\textit{課程畫面：00:41:00。}
+\end{figure}
+
+電磁場的推導採用相同的變分方法，只是有四個場分量，指標也更多。
+
+\section{規範不變性選出麥克斯韋純量}
+
+再加入第三項原理：規範不變性。暫時令\(J^\mu=0\)，考慮自由場。規範變換為
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\chi.
+\label{eq:gauge-transform}
+\end{equation}
+混合二階導數可以交換，因此場張量保持不變：
+\begin{align}
+F_{\mu\nu}
+&\longrightarrow
+F_{\mu\nu}
++\partial_\mu\partial_\nu\chi
+-\partial_\nu\partial_\mu\chi
+\nonumber\\
+&=F_{\mu\nu}.
+\end{align}
+
+只有洛倫茲不變性時，以下純量是允許的：
+\begin{equation}
+A_\mu A^\mu.
+\end{equation}
+然而在麥克斯韋理論中，這個純量不被允許，因為它會在\eqref{eq:gauge-transform}下改變。這個表示式的指標標記的是場分量，不是導數。導數以逗號表示，例如\(A_{\nu,\mu}=\partial_\mu A_\nu\)。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_10.png}
+\caption{規範變換，以及因不具規範不變性而遭排除的洛倫茲純量\(A_\mu A^\mu\)。}
+\par\smallskip
+\textit{課程畫面：00:43:40。}
+\end{figure}
+
+因此，我們應以\(F_{\mu\nu}\)構造自由場的拉格朗日量。線性跡不成立：
+\begin{equation}
+F^\mu{}_\mu=0.
+\end{equation}
+反對稱性使所有對角分量都必須為零：
+\begin{equation}
+F_{00}=F_{11}=F_{22}=F_{33}=0.
+\end{equation}
+升高指標可能改變符號，但零仍然是零。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_11.png}
+\caption{嘗試取線性跡的結果，以及反對稱場張量為零的對角分量。}
+\par\smallskip
+\textit{課程畫面：00:47:00。}
+\end{figure}
+
+第一個不為零的洛倫茲純量是二次形式：
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}.
+\label{eq:f2-scalar}
+\end{equation}
+我們來展開這個縮併，而非直接引用結果。混合分量包含電場；升高其時間指標會帶來負號，且兩種排列\(0i\)與\(i0\)都會出現：
+\begin{equation}
+\sum_i\left(F_{0i}F^{0i}+F_{i0}F^{i0}\right)
+=-2E^2.
+\end{equation}
+純空間分量則包含磁場。升高空間指標不會改變符號，兩種排列同樣都會出現：
+\begin{equation}
+\sum_{i<j}\left(F_{ij}F^{ij}+F_{ji}F^{ji}\right)
+=2B^2.
+\end{equation}
+因此
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}=2(B^2-E^2),
+\qquad
+-F_{\mu\nu}F^{\mu\nu}=2(E^2-B^2).
+\label{eq:f2-eb}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_12.png}
+\caption{以電場和磁場的大小表示完整的縮併結果。}
+\par\smallskip
+\textit{課程畫面：00:51:00。}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(F_{00}\)也等於零嗎？}
+\lecturerresponse{是。反對稱張量的所有對角分量都等於零，包括\(F_{00}\)。只有編碼\(\mathbf E\)的非對角混合分量，以及編碼\(\mathbf B\)的非對角空間分量會有所貢獻。
+\lecturetimestamp{00:51:36}}
+\end{classroomqa}
+
+常用的正規化為
+\begin{equation}
+\boxed{
+\mathcal L_{\mathrm{EM}}
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+}
+\label{eq:maxwell-lagrangian}
+\end{equation}
+或
+\begin{equation}
+\mathcal L_{\mathrm{EM}}
+=
+\frac12(E^2-B^2).
+\label{eq:maxwell-lagrangian-eb}
+\end{equation}
+負號使電場項具有熟悉的正號。因子\(1/4\)補償每一組反對稱分量對出現兩次的情形，留下常用的因子\(1/2\)。將整個自由作用量乘以非零常數，不會改變無源方程；不過，這個正規化方式才能與標準的源耦合相配。
+
+\section{變分自由電磁場}
+
+獨立場為
+\begin{equation}
+A_0,\qquad A_x,\qquad A_y,\qquad A_z.
+\end{equation}
+對每個分量\(A_\nu\)，尤拉--拉格朗日方程為
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial A_{\nu,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial A_\nu},
+\qquad
+A_{\nu,\mu}\equiv\partial_\mu A_\nu.
+\label{eq:vector-el-comma}
+\end{equation}
+逗號記號中的指標位置值得仔細辨認：第一個指標指出\(A\)的哪個分量是場變數；第二個指標指出求導所對應的座標。
+
+用這套記號，
+\begin{equation}
+F_{\mu\nu}
+=
+A_{\nu,\mu}-A_{\mu,\nu}.
+\label{eq:f-comma-consistent}
+\end{equation}
+這正是\eqref{eq:course-f-convention}。若以相反的口頭順序描述逗號後的指標，中間步驟的負號就會改變，因此分量計算很有幫助。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_13.png}
+\caption{將四個勢分量視為獨立場後，以逗號記號表示的場張量。}
+\par\smallskip
+\textit{課程畫面：00:55:30。}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_14.png}
+\caption{以向量勢的導數明確寫出的麥克斯韋拉格朗日量。}
+\par\smallskip
+\textit{課程畫面：00:56:45。}
+\end{figure}
+
+\subsection{一個代表性的導數}
+
+選取導數\(A_{x,y}=\partial_yA_x\)。完整求和中的\(xy\)與\(yx\)兩項會貢獻
+\begin{align}
+\mathcal L_{\mathrm{EM}}
+&\supset
+-\frac14\left(F_{xy}F^{xy}+F_{yx}F^{yx}\right)
+\nonumber\\
+&=
+-\frac12F_{xy}^2
+\nonumber\\
+&=
+-\frac12\left(A_{x,y}-A_{y,x}\right)^2.
+\label{eq:isolated-xy-piece}
+\end{align}
+最後一個等號成立，是因為平方後負號會消失：\(A_{x,y}-A_{y,x}=F_{yx}=-F_{xy}\)。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_15.png}
+\caption{代表性的\(A_{x,y}\)導數，以及分離出的反對稱平方項。}
+\par\smallskip
+\textit{課程畫面：01:00:45。}
+\end{figure}
+
+對它求導：
+\begin{align}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial A_{x,y}}
+&=
+-\left(A_{x,y}-A_{y,x}\right)
+\nonumber\\
+&=
+F_{xy}.
+\label{eq:component-variation}
+\end{align}
+黑板上的總結在張量前加上負號，因為其指標順序是依照板書採用的求導順序。按照本課程一致採用的定義\eqref{eq:course-f-convention}，不變的表示式為
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial(\partial_\mu A_\nu)}
+=
+-F^{\mu\nu}.
+\label{eq:maxwell-canonical-derivative}
+\end{equation}
+以\(\partial_yA_x\)為例，結果為
+\(-F^{yx}=F^{xy}\)，恰好就是
+\eqref{eq:component-variation}。因此，表面上的符號差異只是指標順序上的記帳問題。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_16.png}
+\caption{對勢的一個導數進行微分前，先將選取的平方項展開。}
+\par\smallskip
+\textit{課程畫面：01:03:00。}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{分量微分中的\(1/2\)因子怎麼不見了？}
+\lecturerresponse{對平方項微分會產生因子二，正好與\(1/2\)抵消：
+\[
+\frac{d}{dx}\left[-\frac12x^2\right]=-x.
+\]
+先前從\(1/4\)變成\(1/2\)，是因為張量分量\(xy\)與\(yx\)這兩種排列都出現了。\lecturetimestamp{01:03:29}}
+\end{classroomqa}
+
+真空拉格朗日量不含未經微分的勢：
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}{\partial A_\nu}=0.
+\end{equation}
+代入\eqref{eq:vector-el-comma}後可得
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=0,
+\end{equation}
+或等價地寫成
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=0.}
+\label{eq:free-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_17.png}
+\caption{將分量結果推廣後，代入尤拉--拉格朗日方程。}
+\par\smallskip
+\textit{課程畫面：01:09:00。}
+\end{figure}
+
+對整個作用量作變分，也能得到相同結論，而且過程更簡潔：
+\begin{align}
+\delta S_{\mathrm{EM}}
+&=
+-\frac12\int d^4x\,
+F^{\mu\nu}
+\left(\partial_\mu\delta A_\nu
+-\partial_\nu\delta A_\mu\right)
+\nonumber\\
+&=
+-\int d^4x\,F^{\mu\nu}\partial_\mu\delta A_\nu
+\nonumber\\
+&=
+\int d^4x\,
+\left(\partial_\mu F^{\mu\nu}\right)\delta A_\nu,
+\label{eq:global-maxwell-variation}
+\end{align}
+其中邊界項略去。反對稱性使第一行的兩項合併。由於\(\delta A_\nu\)是任意的，便可得出\eqref{eq:free-maxwell-from-action}。
+
+\begin{classroomqa}
+\audiencequestion{分離出來的平方項，是否假設磁場只沿\(z\)方向？}
+\lecturerresponse{不是。那只是從完整求和中取出來檢視的一項，後面還應接省略號。其餘空間指標對會給出其他磁場分量；時間--空間指標對則會給出電場分量。\lecturetimestamp{01:08:05}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{若選擇一個時間指標，而非兩個空間指標，結果會不同嗎？}
+\lecturerresponse{一般的導數形式相同，度規所帶來的符號則透過升降指標處理。兩個空間指標選出磁場分量；一個時間指標與一個空間指標則選出電場分量。反對稱公式
+\eqref{eq:maxwell-canonical-derivative}涵蓋這兩種情況。
+\lecturetimestamp{01:08:46}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{我們仍然假設\(J^\mu=0\)嗎？}
+\lecturerresponse{只有在這段自由場推導中如此。我們暫時將電流設為零，以便辨識規範不變的動能項。現在恢復電流，並探討必須加入哪一項，才能得到麥克斯韋方程右側的項。\lecturetimestamp{01:09:41}}
+\end{classroomqa}
+
+代數並不困難，但需要親自完整推導，不能只在一旁觀看。單是順著指標的變化推演一遍，並不足以讓推導留在記憶中；親手重做一遍才行。
+
+\section{守恆的四維電流}
+
+源項是四維電流
+\begin{equation}
+J^\mu=(\rho,\mathbf J).
+\end{equation}
+它的時間分量是電荷密度，空間分量則是電荷流率，表示電荷穿過三個彼此垂直的面的情形。等價地，對一個固定的小盒子而言，
+\begin{equation}
+\frac{\partial\rho}{\partial t}
++\nabla\cdot\mathbf J=0.
+\label{eq:continuity-vector-l9}
+\end{equation}
+盒內電荷減少，只可能是因為電荷流出邊界。用協變記號表示，
+\begin{equation}
+\boxed{\partial_\mu J^\mu=0.}
+\label{eq:continuity-covariant-l9}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_18.png}
+\caption{在引入源耦合之前，回顧電荷密度、空間電流，以及以小盒子說明守恆的方式。}
+\par\smallskip
+\textit{課程畫面：01:14:45。}
+\end{figure}
+
+\section{源耦合與規範不變性}
+
+對電流和勢都呈線性、且最簡單的局域洛倫茲純量為
+\begin{equation}
+S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu A_\mu.
+\label{eq:interaction-action}
+\end{equation}
+整體符號是約定的結果。課堂上開玩笑說，電荷符號在歷史上的選擇，最後可以歸咎於班傑明·富蘭克林；真正重要的是，所有地方都必須採用一致的符號約定。
+
+乍看之下，\eqref{eq:interaction-action}似乎不是規範不變的。在\eqref{eq:gauge-transform}下，
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu\partial_\mu\chi.
+\label{eq:gauge-variation-interaction}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_19.png}
+\caption{相互作用作用量，以及它在\(A_\mu\mapsto A_\mu+\partial_\mu\chi\)下的變化。}
+\par\smallskip
+\textit{課程畫面：01:16:45。}
+\end{figure}
+
+為了以基本的方式看出其中的機制，先將縮併展開：
+\begin{equation}
+J^\mu\partial_\mu\chi
+=
+J^0\partial_0\chi
++J^1\partial_1\chi
++J^2\partial_2\chi
++J^3\partial_3\chi.
+\end{equation}
+假設電流局限在一個大型實驗室範圍內，或是衰減得夠快，使它在邊界處為零。接著對每一項作分部積分。以第一個空間座標為例，
+\begin{align}
+-\int d^4x\,J^1\partial_1\chi
+&=
+-\int dt\,dx^2\,dx^3
+\left[J^1\chi\right]_{x^1=-\infty}^{x^1=+\infty}
+\nonumber\\
+&\quad
++\int d^4x\,\chi\,\partial_1J^1
+\nonumber\\
+&=
+\int d^4x\,\chi\,\partial_1J^1.
+\end{align}
+時間項與另外兩個空間項也可同樣處理。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_20.png}
+\caption{分部積分前展開的四個規範變分項。}
+\par\smallskip
+\textit{課程畫面：01:19:15。}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_21.png}
+\caption{一個代表性的分部積分例子：將導數從規範函數移到電流上。}
+\par\smallskip
+\textit{課程畫面：01:20:45。}
+\end{figure}
+
+將四個分量合併後，
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+\int d^4x\,\chi\,\partial_\mu J^\mu.
+\label{eq:gauge-variation-continuity}
+\end{equation}
+因此，
+\begin{equation}
+\partial_\mu J^\mu=0
+\quad\Longrightarrow\quad
+\delta_\chi S_{\mathrm{int}}=0.
+\end{equation}
+在假設的邊界條件下，源相互作用在且僅在電流局域守恆時才具有規範不變性。
+
+\begin{classroomqa}
+\audiencequestion{只要求\(\nabla\cdot\mathbf J=0\)就夠了嗎？}
+\lecturerresponse{不夠，四項都不可少：
+\[
+\partial_\mu J^\mu
+=
+\dot\rho+\nabla\cdot\mathbf J=0.
+\]
+第一項表示固定盒子內電荷密度的變化。空間散度可以不為零，只要它與電荷密度的變化相抵即可。\lecturetimestamp{01:22:00}}
+\end{classroomqa}
+
+\section{有源麥克斯韋方程}
+
+完整的電磁拉格朗日密度為
+\begin{equation}
+\boxed{
+\mathcal L
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+-J^\mu A_\mu.
+}
+\label{eq:full-maxwell-lagrangian}
+\end{equation}
+源項不含\(A_\nu\)的導數，因此不會改變\eqref{eq:maxwell-canonical-derivative}，而會貢獻
+\begin{equation}
+\frac{\partial\mathcal L}{\partial A_\nu}=-J^\nu.
+\end{equation}
+因此，尤拉--拉格朗日方程給出
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=-J^\nu,
+\end{equation}
+也就是
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=J^\nu.}
+\label{eq:sourced-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_22.png}
+\caption{自由場項與源項，以及代表性的尤拉--拉格朗日導數。}
+\par\smallskip
+\textit{課程畫面：01:25:00。}
+\end{figure}
+
+若給定的電流不守恆，將會同時造成兩個問題：相互作用作用量不具規範不變性，而有源麥克斯韋方程也會不一致。若沒有補償性的電流流經邊界，電荷就不能無故從某個區域內消失。
+
+\section{麥克斯韋方程如何導出守恆律}
+
+對\(\partial_\nu\)作用於\eqref{eq:sourced-maxwell-from-action}，可直接從場方程讀出兩者的相容性：
+\begin{equation}
+\partial_\nu J^\nu
+=
+\partial_\nu\partial_\mu F^{\mu\nu}
+=0,
+\label{eq:antisymmetry-implies-continuity}
+\end{equation}
+這是因為導數在交換\(\mu\leftrightarrow\nu\)時呈對稱，而\(F^{\mu\nu}\)呈反對稱。
+
+課堂上也用三維向量形式檢查了這一點，並在推導中發現一個符號錯誤。從高斯定律開始：
+\begin{equation}
+\rho=\nabla\cdot\mathbf E.
+\end{equation}
+對時間微分：
+\begin{equation}
+\dot\rho=\nabla\cdot\dot{\mathbf E}.
+\label{eq:rho-dot-div-edot}
+\end{equation}
+黑板上暫時寫下的方程是
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B+\mathbf J.
+\label{eq:provisional-wrong-source-sign}
+\end{equation}
+對它取散度會得到
+\begin{equation}
+\dot\rho=\nabla\cdot\mathbf J,
+\end{equation}
+因為旋度的散度為零。這與\eqref{eq:continuity-vector-l9}矛盾。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_23.png}
+\caption{黑板上暫時寫下的電流項正號\(\mathbf J\)方程，會導致錯誤的連續性方程符號。}
+\par\smallskip
+\textit{課程畫面：01:27:00。}
+\end{figure}
+
+這項矛盾並未被掩蓋。講者當場重新檢查推導，說明所需的連續性方程；一位聽眾也檢查了方程，指出源項的符號有誤。符合慣例且符號一致的分量方程為
+\begin{equation}
+\boxed{
+\dot{\mathbf E}+\nabla\times\mathbf B=-\,\mathbf J,
+}
+\label{eq:corrected-source-sign}
+\end{equation}
+或寫成
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B-\mathbf J.
+\end{equation}
+現在由方程\eqref{eq:rho-dot-div-edot}與\eqref{eq:corrected-source-sign}可得
+\begin{align}
+\dot\rho
+&=
+\nabla\cdot
+\left(-\nabla\times\mathbf B-\mathbf J\right)
+\nonumber\\
+&=
+-\nabla\cdot\mathbf J,
+\end{align}
+這正是局域電荷守恆。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_24.png}
+\caption{修正源項符號後，得到的連續性方程。}
+\par\smallskip
+\textit{課程畫面：01:31:00。}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{右側的電流項應該是\(-\mathbf J\)嗎？}
+\lecturerresponse{是的。按照本課程始終採用的場張量約定，\(\partial_\mu F^{\mu\nu}=J^\nu\)的空間部分為\(\dot{\mathbf E}+\nabla\times\mathbf B=-\mathbf J\)。這項修正使散度計算得到\(\dot\rho+\nabla\cdot\mathbf J=0\)，也不會改變前面的協變作用量推導。\lecturetimestamp{01:30:17}}
+\end{classroomqa}
+
+\section{哪一項原理才是根本的？}
+
+\begin{classroomqa}
+\audiencequestion{這樣的推理是循環論證嗎？我們先利用電荷守恆使作用量具有規範不變性，再由作用量導出麥克斯韋方程組；而麥克斯韋方程組又蘊含電荷守恆。}
+\lecturerresponse{這些陳述彼此相容，並非預設自身結論的循環證明。可以從觀測到的麥克斯韋方程組出發，推得連續性方程；接著便會看出
+\(-J^\mu A_\mu\) 是一種規範不變的耦合。也可以從局域性、洛倫茲不變性、規範不變性與作用量出發；規範不變性要求電流守恆，而作用量則導出麥克斯韋方程組。或者，也可以將電荷不會在局部消失這項物理事實視為基本出發點。這些途徑都會導向相同的結構。 \lecturetimestamp{01:31:11}}
+\end{classroomqa}
+
+若要尋找最精簡的建構途徑，局域性、洛倫茲不變性、規範不變性與拉格朗日原理相結合，便會選出
+\begin{equation}
+-\frac14F_{\mu\nu}F^{\mu\nu}-J^\mu A_\mu
+\end{equation}
+並因此確定麥克斯韋動力學方程。三者之中哪一項更為基本，有一部分取決於個人偏好。重要的是，這些要素彼此契合。
+
+\section{為什麼使用「\emph{規範}」這個詞？}
+
+\begin{classroomqa}
+\audiencequestion{數學上的推導很清楚，但
+\emph{規範}這個詞在此究竟是什麼意思？}
+\lecturerresponse{這個名稱是歷史留下的時代錯置用語。Gauge 可以指選定的零點，例如以某個基準值為參照來測量壓力。赫爾曼·外爾最初將這個概念與局部的長度標準聯繫起來；那種解釋並非正確的物理詮釋。後來，當這種自由度被正確地理解為與量子波函數的相位有關時，這個術語仍沿用至今。在目前的經典推導中，將
+\(A_\mu\) 改變 \(\partial_\mu\chi\)，會改變描述所用的零點，但不會改變 \(F_{\mu\nu}\)。更深一層的量子意義留待後續討論。
+\lecturetimestamp{01:34:49}}
+\end{classroomqa}
+
+這個歷史名稱不應掩蓋實際的物理陳述：由 \eqref{eq:gauge-transform} 相連的勢，描述的是同一個電磁場。因此，規範自由度是勢的描述中的冗餘，而場張量則具有規範不變性。
+
+\section{為什麼麥克斯韋方程組的兩組方程看起來不對稱}
+
+\begin{classroomqa}
+\audiencequestion{如果電場和磁場如此對稱，為什麼麥克斯韋方程組的一組方程表現為比安基恆等式，另一組卻來自運動方程？}
+\lecturerresponse{在無源電磁學中，可以引入對偶勢來交換兩者的角色：原本的運動方程會變成比安基恆等式，反之亦然。不對稱性來自源項。雖然觀測到電荷，卻尚未觀測到基本磁單極子。如果存在一種精確的普通對稱性，能交換電荷與磁荷，人們便會預期存在具有相應譜的磁荷對應物，但並未觀測到這些對應物。更精緻的理論仍可能包含磁荷或電--磁對偶性，但這已超出本次推導的範圍。 \lecturetimestamp{01:37:11}}
+\end{classroomqa}
+
+因此，無源方程具有電--磁互換的結構，而觀測到的源項則使描述偏向電的一方。這不只是排版上的約定，但也不會抹煞自由平面波所呈現的對稱性。
+
+\section{至此建立的結構}
+
+本講的推導至此告一段落：
+\begin{enumerate}
+\item 麥克斯韋方程組要求平面波是橫波，電場與磁場彼此正交，且色散關係為
+      \(\omega=ck\)。
+\item 比安基方程是由勢導出的恆等式；縮約後的方程則是動力學方程。
+\item 局域性與洛倫茲不變性引導我們構造作用量密度，而規範不變性則排除 \(A_\mu A^\mu\)，並選出由 \(F_{\mu\nu}\) 構成的純量。
+\item 自由作用量
+      \(-\tfrac14F_{\mu\nu}F^{\mu\nu}\) 導出真空中的麥克斯韋方程。
+\item 相互作用項 \(-J^\mu A_\mu\) 恰在電流滿足連續性方程時具有規範不變性。
+\item 含源的作用量導出
+      \(\partial_\mu F^{\mu\nu}=J^\nu\)，而反對稱性又導出
+      \(\partial_\mu J^\mu=0\)。
+\end{enumerate}
+
+這裡匯集了大量結構：拉格朗日力學、相對論場論、電動力學、洛倫茲不變性、規範不變性，以及局域電荷守恆，都納入同一套論證之中。要真正理解這些內容，最可靠的方法就是重新從方程出發，親手逐步推導，仔細檢查每個導數與正負號。

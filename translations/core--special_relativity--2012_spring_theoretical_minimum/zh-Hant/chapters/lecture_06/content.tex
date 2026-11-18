@@ -1,0 +1,793 @@
+\chapter{張量與相對論中的洛倫茲力}
+
+今晚我們從純量場轉向電動力學。前面的討論建立了一種實用的模式：同一個作用量既描述場如何作用於粒子，也描述粒子如何反作用於場。我們最終會把這種模式應用到電磁場；但在此之前，需要足以揭示計算對稱性的記號。
+
+這些準備工作並非裝飾。負號、零、等號和向量記號，各自都濃縮了一個原本必須反覆用文字表達的概念。張量記號在相對論中也有同樣的作用。上、下指標、縮併和變換律一旦就位，電力和磁力就會自然組合成一個四維方程。
+
+\section{四維向量與精簡的指標記法}
+
+\subsection{上、下分量}
+
+希臘指標涵蓋全部四個時空座標，拉丁指標則只涵蓋三個空間座標：
+\begin{equation}
+\mu,\nu,\rho,\sigma=0,1,2,3,
+\qquad
+m,n=1,2,3.
+\end{equation}
+一般的逆變四維向量寫作 \(A^\mu=(A^0,A^1,A^2,A^3)\)。
+依照此處採用的約定，
+\begin{equation}
+\eta_{\mu\nu}
+=
+\begin{pmatrix}
+-1&0&0&0\\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+A_\mu=\eta_{\mu\nu}A^\nu .
+\label{eq:sr6-metric-lowering}
+\end{equation}
+因此，降下指標會改變時間分量的符號，而空間分量則保持不變：
+\begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m.
+\label{eq:sr6-component-lowering}
+\end{equation}
+在平直時空中，這項操作的內容僅此而已；不過，同樣的記號在廣義相對論中會有更豐富的幾何意義。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_01.png}
+\caption{閔可夫斯基度規，以及降下四維向量指標時的分量規則。}
+\lectureframe{00:07:45}
+\end{figure}
+
+當一個指標在上方和下方各重複一次時，採用愛因斯坦求和約定。因此，縮併
+\begin{equation}
+A_\mu B^\mu
+=
+-A^0B^0+A^1B^1+A^2B^2+A^3B^3
+\label{eq:sr6-vector-contraction}
+\end{equation}
+是一個純量。如果求和不符合這種上--下指標重複的形式，我們就會明確寫出求和符號。
+
+\subsection{導數帶有下指標}
+
+四個導數算符可合寫為
+\begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\end{equation}
+作用在純量場 \(\phi(x)\) 上時，它們構成協變向量
+\(\partial_\mu\phi\)。要看出指標為何放在下方，最快的方法是考慮無窮小位移：
+\begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr6-total-differential}
+\end{equation}
+左側是相鄰事件處純量值的差，因此是純量。由於 \(dx^\mu\) 是逆變的，與它縮併的量就必須是協變的。
+
+\begin{classroomqa}
+\audiencequestion{\(x^\mu\)帶有上指標，為什麼對\(x^\mu\)微分會得到下指標？}
+\lecturerresponse{因為微分變化 \(d\phi=\partial_\mu\phi\,dx^\mu\) 是純量。逆變位移只有與協變梯度縮併，才能得到這個純量。因此，導數指標的位置由其變換律決定，而非僅由分式的排版方式決定。\lecturetimestamp{00:10:10}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_02.png}
+\caption{純量微分 \(d\phi\) 顯示 \(\partial_\mu\phi\) 是協變向量。}
+\lectureframe{00:11:05}
+\end{figure}
+
+同一條規則也能構成另一個純量。若 \(B^\mu(x)\) 是四維向量場，則
+\begin{equation}
+\partial_\mu B^\mu
+\label{eq:sr6-four-divergence}
+\end{equation}
+是它的四維散度。它將時間分量對時間的導數，與三個空間分量各自對應的空間導數結合起來。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}
+\caption{兩種純量縮併：\(A_\mu B^\mu\)與四維散度\(\partial_\mu B^\mu(x)\)。}
+\lectureframe{00:14:00}
+\end{figure}
+
+上述內容都有三維類比。在歐幾里得三維空間中，度規是單位矩陣，因此升降拉丁指標不會改變任何東西。方便時，我們會將空間指標上下移動，但仍會仔細區分時空指標。
+
+\section{洛倫茲變換的矩陣形式}
+
+純量和向量是依照它們的變換方式定義的。純量的值保持不變，而逆變四維向量遵循
+\begin{equation}
+(A^\mu)'=L^\mu{}_\nu A^\nu.
+\label{eq:sr6-vector-transform}
+\end{equation}
+可見指標 \(\mu\) 是自由指標，在等式兩側各出現一次。重複指標 \(\nu\) 則表示求和，並從最後的分量方程中消去。
+
+此處的\emph{洛倫茲變換}包括空間旋轉和推動。推動可以沿任意軸進行；旋轉也可以與推動組合，形成一般的變換。單獨的空間旋轉不會改變時間座標。
+
+\begin{classroomqa}
+\audiencequestion{旋轉空間時，時間完全不受影響嗎？}
+\lecturerresponse{是。在一般的空間旋轉中，時間分量保持不變。這類旋轉和混合時間與空間的變換一樣，都包含在洛倫茲群中。\lecturetimestamp{00:16:27}}
+\end{classroomqa}
+
+對於沿 \(x\) 軸、速率為 \(v\) 的推動，且 \(c=1\)，
+\begin{equation}
+L^\mu{}_\nu
+=
+\begin{pmatrix}
+\gamma&-\gamma v&0&0\\
+-\gamma v&\gamma&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr6-boost-matrix}
+\end{equation}
+乘上 \((t,x,y,z)^{\mathsf T}\) 後得到
+\begin{equation}
+\begin{aligned}
+t'&=\gamma(t-vx),\\
+x'&=\gamma(x-vt),\\
+y'&=y,\\
+z'&=z.
+\end{aligned}
+\end{equation}
+課堂上會在黑板上補上矩陣中的零元素和兩個單位元素。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}
+\caption{沿 \(x\) 方向的推動矩陣，作用於列向量 \((t,x,y,z)^{\mathsf T}\)。}
+\lectureframe{00:21:35}
+\end{figure}
+
+在\(y\)--\(z\)平面內旋轉角度\(\theta\)，則有
+\begin{equation}
+R_{yz}(\theta)
+=
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&\cos\theta&\sin\theta\\
+0&0&-\sin\theta&\cos\theta
+\end{pmatrix}.
+\label{eq:sr6-yz-rotation}
+\end{equation}
+這表示
+\begin{equation}
+y'=y\cos\theta+z\sin\theta,
+\qquad
+z'=-y\sin\theta+z\cos\theta,
+\end{equation}
+而 \(t\) 和 \(x\) 保持不變。矩陣 \eqref{eq:sr6-boost-matrix} 和 \eqref{eq:sr6-yz-rotation} 等的乘積，可生成更一般的洛倫茲變換。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}
+\caption{在 \(y\)--\(z\) 平面內的純旋轉；\(t\) 和 \(x\) 保持不變。}
+\lectureframe{00:23:10}
+\end{figure}
+
+協變向量的變換矩陣，其指標位置與逆變向量的相反：
+\begin{equation}
+(A_\mu)'=M_\mu{}^\nu A_\nu.
+\label{eq:sr6-covector-transform}
+\end{equation}
+聽眾在黑板前指出一處暫時重複的自由指標：左側未求和的 \(\mu\)，右側也必須是未求和的指標。這兩個矩陣代表同一個物理上的參考系變換，彼此的關係為
+\begin{equation}
+M=\eta L\eta,
+\qquad
+\eta^{-1}=\eta.
+\label{eq:sr6-M-L-relation}
+\end{equation}
+最後一個恆等式立即成立，因為 \(\eta\) 的每個對角元素都是自己的逆矩陣。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}
+\caption{逆變與協變的變換律，兩者由 \(M=\eta L\eta\) 聯繫起來。}
+\lectureframe{00:25:20}
+\end{figure}
+
+現在可以掌握核心概念了：四維向量是一種分量會隨時空座標同步變換的量。
+
+\section{張量：每個指標各自變換}
+
+\subsection{從向量乘積到張量的定義}
+
+純量是零階張量，向量是一階張量，而帶有兩個指標的量是二階張量。從兩個向量出發，構造
+\begin{equation}
+T^{\mu\nu}=A^\mu B^\nu.
+\label{eq:sr6-simple-tensor}
+\end{equation}
+這個張量共有 \(4\times4=16\) 個分量，從 \(A^0B^0\)、\(A^0B^1\) 一直到 \(A^3B^3\)。
+符號 \(T^{\mu\nu}\) 表示整個陣列，而非其中某一個數。
+
+分別變換兩個向量，得到
+\begin{align}
+(A^\mu)'&=L^\mu{}_\sigma A^\sigma,\\
+(B^\nu)'&=L^\nu{}_\tau B^\tau,
+\end{align}
+因此
+\begin{equation}
+(T^{\mu\nu})'
+=
+L^\mu{}_\sigma L^\nu{}_\tau T^{\sigma\tau}.
+\label{eq:sr6-rank-two-transform}
+\end{equation}
+張量的每個指標都各自帶有一個洛倫茲矩陣。求和用的啞指標 \(\sigma\) 和 \(\tau\) 可以任意更名，只要每一對指標前後一致即可。
+
+\begin{classroomqa}
+\audiencequestion{這樣重新排列，是否假設矩陣與向量分量可以交換次序？}
+\lecturerresponse{這些都是普通的經典數，不是不可交換的量子算符，因此可以交換次序。此外，同一個洛倫茲矩陣同時作用在兩個指標上。這項計算沒有次序上的問題。\lecturetimestamp{00:31:56}}
+\end{classroomqa}
+
+這條規則可以直接推廣到三階：
+\begin{equation}
+(T^{\mu\nu\lambda})'
+=
+L^\mu{}_\sigma
+L^\nu{}_\tau
+L^\lambda{}_\kappa
+T^{\sigma\tau\kappa},
+\label{eq:sr6-rank-three-transform}
+\end{equation}
+其他階數也同樣如此。張量的定義是這條變換律，而非某種特定的向量分解方式。例如，
+\begin{equation}
+A^\mu B^\nu+C^\mu D^\nu
+\end{equation}
+仍然是張量，儘管通常無法將它寫成兩個向量的單一乘積。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}
+\caption{黑板上從向量乘積推導出二階與三階張量變換律。}
+\lectureframe{00:33:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{二階張量的矩陣乘法，逐分量來看代表什麼？}
+\lecturerresponse{固定兩個輸出指標，對兩個隱藏指標求和。例如，
+\[
+(T^{31})'=L^3{}_\sigma L^1{}_\tau T^{\sigma\tau}.
+\]
+由於 \(\sigma\) 和 \(\tau\) 各有四種取值，這一個輸出分量就包含十六項。\lecturetimestamp{00:34:35}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}
+\caption{展開固定分量 \((T^{31})'\)，就能明確看出兩個彼此獨立的求和。}
+\lectureframe{00:35:55}
+\end{figure}
+
+張量方程有一項關鍵優勢：如果兩個張量在某個參考系中的分量相等，依照變換律，它們在所有參考系中都相等。等價地說，若一個張量的所有分量在某個參考系中都為零，則它在所有參考系中都為零。只有一個分量為零還不夠，必須所有分量都為零。因此，張量之間的方程在一個慣性參考系成立，就會在另一個慣性參考系中也成立。
+
+\subsection{張量指標的升降}
+
+降下張量指標的方式與降下向量指標完全相同：
+\begin{equation}
+T^\mu{}_\nu=T^{\mu\sigma}\eta_{\sigma\nu}.
+\label{eq:sr6-tensor-lowering}
+\end{equation}
+在 \eqref{eq:sr6-metric-lowering} 的對角度規中，每降下一個時間指標就會產生一個負號。因此，
+\begin{equation}
+T_{00}=T^{00},
+\qquad
+T_{01}=-T^{01}.
+\label{eq:sr6-tensor-component-signs}
+\end{equation}
+第一個等式涉及兩次符號變換，第二個則只涉及一次。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}
+\caption{降下兩個張量指標的例子：兩個時間指標會產生兩個負號，一個時間指標則產生一個負號。}
+\lectureframe{00:41:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{同時保留協變和逆變形式有什麼用處？除了讓記號更精簡之外，還有其他意義嗎？}
+\lecturerresponse{就目前的計算而言，直接的好處是能精簡地表示縮併，並自動處理閔可夫斯基度規的正負號。向量與餘向量之間還有更深一層的幾何區別，不過更適合留待廣義相對論中討論。在平直時空中，指標規則非常有效，通常直接使用即可。\lecturetimestamp{00:41:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{張量總是有四個分量嗎？這是相對論特有的情況嗎？}
+\lecturerresponse{每個指標的取值範圍由空間的維度決定。四維時空中的一階張量有四個分量，二階張量有十六個。在三維空間中，相應的數目是三個和九個。張量規則本身與維度無關。\lecturetimestamp{00:42:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{協變量和逆變量能否用更具幾何意義的方式來描述？}
+\lecturerresponse{可以，它們確實有幾何詮釋，但現在深入討論會讓電動力學再延後。就本課程而言，變換規則和指標操作規則已經足夠；到了廣義相對論，這項幾何區別就無法迴避了。\lecturetimestamp{00:43:51}}
+\end{classroomqa}
+
+\section{對稱、反對稱與電磁張量}
+
+對一般的二階張量，交換指標會改變分量：
+\begin{equation}
+T^{\mu\nu}\neq T^{\nu\mu}.
+\end{equation}
+確實，\(A^\mu B^\nu\) 和 \(A^\nu B^\mu\) 一般並不相同；具體分量 \(A^0B^1\) 和 \(A^1B^0\) 也不一定相等。
+
+有兩種重要的特殊情況。對稱張量滿足
+\begin{equation}
+T^{\mu\nu}=T^{\nu\mu},
+\end{equation}
+一種具體的對稱組合是
+\begin{equation}
+A^\mu B^\nu+A^\nu B^\mu.
+\end{equation}
+反對稱張量則滿足
+\begin{equation}
+F^{\mu\nu}=-F^{\nu\mu},
+\label{eq:sr6-antisymmetry}
+\end{equation}
+組合
+\begin{equation}
+A^\mu B^\nu-A^\nu B^\mu.
+\end{equation}
+也具有反對稱性。在 \eqref{eq:sr6-antisymmetry} 中令兩個指標相同，可得
+\begin{equation}
+F^{00}=-F^{00},
+\qquad
+F^{00}=0,
+\end{equation}
+同樣的論證也會使所有對角分量為零。因此，\(4\times4\)反對稱張量有六個獨立分量。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}
+\caption{黑板上對照二階對稱張量與反對稱張量。}
+\lectureframe{00:47:20}
+\end{figure}
+
+這六個分量恰好足以表示電場的三個分量和磁場的三個分量。依照黑板上寫下的符號約定，
+\begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_1&-E_2&-E_3\\
+E_1&0&-B_3&B_2\\
+E_2&B_3&0&-B_1\\
+E_3&-B_2&B_1&0
+\end{pmatrix}.
+\label{eq:sr6-em-field-tensor}
+\end{equation}
+沿對角線反射會使所有符號反轉。因此，在相對論中，電場和磁場並非彼此獨立的物理量。推動可以混合電場與磁場，就像它會混合空間與時間一樣：在一個參考系中純電場的場，在另一個參考系中可能帶有磁場分量。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}
+\caption{完成的反對稱陣列，六個獨立分量由 \(\mathbf E\) 和 \(\mathbf B\) 構成。}
+\lectureframe{00:50:20}
+\end{figure}
+
+黑板上的 \eqref{eq:sr6-em-field-tensor} 仍然留在畫面中，討論則轉向粒子動力學。我們現在再次使用符號 \(A_\mu\)，但這次它代表電磁四維勢，而非前面例子中的一般向量。
+
+\section{帶電粒子的作用量}
+
+有兩個可能的出發點：研究場本身的動力學，進而得到麥克斯威方程；或者研究帶電粒子在給定場中的運動，進而得到洛倫茲力。我們先從粒子開始。
+
+在低速情況下，我們要得到的是
+\begin{equation}
+m\mathbf a
+=
+e\left(\mathbf E+\mathbf v\times\mathbf B\right),
+\label{eq:sr6-nonrel-lorentz-force}
+\end{equation}
+在高斯單位制的形式中，磁力項前有一個因子 \(1/c\)。令 \(c=1\)。用三維向量表示時，\eqref{eq:sr6-nonrel-lorentz-force}中的兩項看起來不同；相對論應該能揭示它們其實是同一個物件的組成部分。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}
+\caption{非相對論形式的洛倫茲力；不變作用量必須重現這項結果。}
+\lectureframe{00:54:00}
+\end{figure}
+
+\subsection{自由運動與向量勢}
+
+對自由的相對論粒子，
+\begin{equation}
+S_{\mathrm{free}}
+=
+-m\int_1^2 d\tau
+=
+\int_{t_1}^{t_2}dt\,
+\left[-m\sqrt{1-\dot{\mathbf x}^{\,2}}\right],
+\label{eq:sr6-free-action}
+\end{equation}
+其中
+\begin{equation}
+\dot{\mathbf x}^{\,2}
+=
+(\dot x^1)^2+(\dot x^2)^2+(\dot x^3)^2.
+\end{equation}
+方括號內的是自由粒子的拉格朗日量。其動量和能量先前已經求出；現在保留這個作用量，並探討可以加入哪種依賴場的項。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}
+\caption{自由粒子的作用量，就是沿世界線累積的固有時。}
+\lectureframe{00:55:10}
+\end{figure}
+
+基本的電磁變數是四維向量勢
+\(A_\mu(x)\)。電場和磁場將由此導出。沿世界線的一小段 \(dx^\mu\)，縮併
+\begin{equation}
+A_\mu(x)\,dx^\mu
+\end{equation}
+是一個純量。將這些純量增量從一個端點累加到另一個端點，就得到洛倫茲不變的相互作用項：
+\begin{equation}
+S_{\mathrm{int}}
+=
+-e\int_1^2 A_\mu(x)\,dx^\mu.
+\label{eq:sr6-interaction-action}
+\end{equation}
+係數 \(e\) 是電荷。整體符號取決於歷史上採用的電荷約定；改變約定會改變 \(e\) 的符號，但不會改變理論內容。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}
+\caption{世界線的一段與四維勢縮併，形成純量增量 \(A_\mu dx^\mu\)。}
+\lectureframe{00:59:20}
+\end{figure}
+
+\subsection{普通時間形式}
+
+若要使用熟悉的尤拉--拉格朗日方程，可將 \eqref{eq:sr6-interaction-action} 乘以 \(dt\)，也就是除以並乘上這個量。由於
+\begin{equation}
+\frac{dx^0}{dt}=1,
+\qquad
+\frac{dx^m}{dt}=\dot x^m,
+\end{equation}
+完整的作用量為
+\begin{equation}
+S
+=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_0(x,t)
+-e\dot x^m A_m(x,t)
+\right].
+\label{eq:sr6-complete-particle-action}
+\end{equation}
+因此
+\begin{equation}
+\boxed{
+L
+=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_0
+-e\dot x^mA_m
+}.
+\label{eq:sr6-charged-lagrangian}
+\end{equation}
+目前 \(A_\mu(x,t)\) 是已知的外加場。我們對世界線取變分，而非對場取變分。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}
+\caption{將不變的世界線耦合改寫成普通時間下的拉格朗日量。}
+\lectureframe{01:05:20}
+\end{figure}
+
+\section{逐步推導洛倫茲力}
+
+對空間分量 \(x^m\)，尤拉--拉格朗日方程為
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x^m}
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr6-EL}
+\end{equation}
+對速度微分可得
+\begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m.
+\label{eq:sr6-canonical-momentum}
+\end{equation}
+字母 \(m\) 不巧同時用來表示質量和空間指標。可由上下文判別：\eqref{eq:sr6-canonical-momentum} 中第一個 \(m\) 代表質量；下標 \(m\) 則標示三個空間分量之一。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}
+\caption{動量的導數同時包含力學項和向量勢項。}
+\lectureframe{01:09:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{第一次寫出的左側是否漏了一項？}
+\lecturerresponse{是。若只對自由粒子項微分，就會漏掉 \(-e\dot x^mA_m\) 對速度的依賴。完整的導數是 \(m\dot x_m/\sqrt{1-\dot{\mathbf x}^{\,2}}-eA_m\)。這項修正不可或缺，因為它的時間導數會分別貢獻一部分電力和磁力。\lecturetimestamp{01:08:18}}
+\end{classroomqa}
+
+\eqref{eq:sr6-EL}的右側為
+\begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\,\partial_mA_0
+-e\,\dot x^n\partial_mA_n.
+\label{eq:sr6-position-derivative}
+\end{equation}
+因此
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+\right)
+=
+-e\,\partial_mA_0
+-e\,\dot x^n\partial_mA_n.
+\label{eq:sr6-EL-expanded}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{這項計算是否把協變和逆變的空間分量互換了？}
+\lecturerresponse{這裡確實升降了指標，但對拉丁空間指標而言，度規的歐幾里得空間部分是單位矩陣。因此 \(x_m=x^m\)，且 \(A_m=A^m\)。只有時間指標會造成符號變化。\lecturetimestamp{01:09:29}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{重複的拉丁指標也要加總嗎？}
+\lecturerresponse{要。重複的拉丁指標從 \(1\) 加總到 \(3\)；重複的希臘指標則從 \(0\) 加總到 \(3\)。像 \(m\) 這樣用來標示一個空間方程的單獨指標是自由指標，不作加總。表示質量的符號不是指標。\lecturetimestamp{01:10:00}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_17.png}
+\caption{尚未展開向量勢全時間導數的尤拉--拉格朗日方程。}
+\lectureframe{01:14:20}
+\end{figure}
+
+\subsection{沿運動世界線使用鏈式法則}
+
+即使場不隨時間改變，粒子仍會因為經過不同位置而沿路徑感受到場的變化。全導數為
+\begin{equation}
+\frac{dA_m(x(t),t)}{dt}
+=
+\partial_0A_m+\dot x^n\partial_nA_m.
+\label{eq:sr6-convective-derivative}
+\end{equation}
+第一項表示明確的時間依賴，第二項則表示透過 \(x^n(t)\) 產生的隱含時間依賴。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_18.png}
+\caption{向量勢明確地隨時間變化，也會隨粒子在空間中移動而隱含地變化。}
+\lectureframe{01:17:20}
+\end{figure}
+
+將 \eqref{eq:sr6-convective-derivative} 代入
+\eqref{eq:sr6-EL-expanded}，並把場的項移到右側，可得
+\begin{equation}
+\begin{aligned}
+m\frac{d}{dt}
+\left(
+\frac{\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+\right)
+&=
+e\left(\partial_0A_m-\partial_mA_0\right)
+\\
+&\quad +e\dot x^n
+\left(\partial_nA_m-\partial_mA_n\right).
+\end{aligned}
+\label{eq:sr6-grouped-force}
+\end{equation}
+現在終於看出這項計算的組織原則：第一個括號不含速度，第二個括號則與速度成線性關係。這正是電力與磁力的區分方式。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_19.png}
+\caption{力的各項整理成與速度無關的電場部分，以及與速度相關的反對稱部分。}
+\lectureframe{01:23:40}
+\end{figure}
+
+依照此處推導採用的約定，電場分量定義為
+\begin{equation}
+E_m=\partial_0A_m-\partial_mA_0.
+\label{eq:sr6-electric-from-potential}
+\end{equation}
+空間中的反對稱組合
+\begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n
+\label{eq:sr6-spatial-curl-tensor}
+\end{equation}
+包含向量勢旋度的三個獨立分量。其方向約定選擇為使
+\begin{equation}
+\dot x^nC_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\end{equation}
+因此，方程 \eqref{eq:sr6-grouped-force} 是 \eqref{eq:sr6-nonrel-lorentz-force} 的相對論動量形式。時間導數中的因子是相對論動量除以質量，而不只是牛頓力學中的速度。
+
+這項推導值得親自重做一次：從 \eqref{eq:sr6-charged-lagrangian} 出發，計算 \eqref{eq:sr6-EL} 兩側，使用鏈式法則，再依速度依賴性整理各項。這個練習同時訓練變分力學、多變數微積分和電動力學。
+
+\begin{classroomqa}
+\audiencequestion{為什麼選擇 \(-e\int A_\mu dx^\mu\) 作為電磁相互作用項？}
+\lecturerresponse{耦合形式最終仍須由實驗決定，但有兩項結構要求使這成為自然的首選。作用量由沿軌跡的局部增量組成，每個增量都必須是純量。自由作用量已經由純量 \(dx^\mu dx_\mu=d\tau^2\) 表示。將 \(dx^\mu\) 與場 \(A_\mu\) 縮併，是最簡單的新場依賴純量。雖然也可以寫出更複雜的純量，稍後討論的規範不變性會進一步限制選擇。\lecturetimestamp{01:25:34}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{麥克斯威方程也能從最小作用量原理推導出來嗎？}
+\lecturerresponse{可以。目前的作用量描述粒子在給定電磁場中的運動。若要得到麥克斯威方程，就必須加入場本身的作用量，並對場取變分，這和我們處理純量場的方式相同。\lecturetimestamp{01:28:58}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{整理後的力方程中，求和在哪裡？}
+\lecturerresponse{自由指標 \(m\) 標示三個分量方程中的一個，不作加總。\(\dot x^n(\partial_nA_m-\partial_mA_n)\) 中重複的指標 \(n\) 則對 \(1,2,3\) 加總。若不使用愛因斯坦記號，這一項就會明確寫出 \(\sum_{n=1}^{3}\)。\lecturetimestamp{01:29:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼把 \(\partial_0A_m-\partial_mA_0\) 認定為電場，而不是預先假設通常的公式？}
+\lecturerresponse{作用量導出一個依賴位置和時間、但不依賴粒子速度的力項，這正是電場在操作上的角色。其餘反對稱項乘上速度，因此扮演磁力的角色。可以把這項計算看作從力定律推導出電場和磁場，而不是預先代入各自獨立的定義。\lecturetimestamp{01:31:05}}
+\end{classroomqa}
+
+\section{明確協變的力定律}
+
+\eqref{eq:sr6-grouped-force}的左側尚未寫成明確的四維形式。引入四維速度
+\begin{equation}
+u^\mu=\frac{dx^\mu}{d\tau}.
+\label{eq:sr6-four-velocity}
+\end{equation}
+其空間分量滿足
+\begin{equation}
+u^m
+=
+\frac{dx^m}{d\tau}
+=
+\frac{\dot x^m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}.
+\end{equation}
+將空間方程乘上 \(dt/d\tau\)，便可把 \(d/dt\) 轉換成 \(d/d\tau\)：
+\begin{equation}
+\frac{dt}{d\tau}\frac{d}{dt}
+=
+\frac{d}{d\tau}.
+\end{equation}
+因此，左側成為固有加速度的空間部分：
+\begin{equation}
+m\frac{d^2x^m}{d\tau^2}.
+\end{equation}
+
+右側可以寫成不區分時間和空間的形式：
+\begin{equation}
+m\frac{d^2x^m}{d\tau^2}
+=
+e\left(\partial_\nu A_m-\partial_mA_\nu\right)
+\frac{dx^\nu}{d\tau}.
+\label{eq:sr6-spatial-covariant-force}
+\end{equation}
+當 \(\nu=0\) 時，這會重現電場項；當 \(\nu=1,2,3\) 時，則重現磁場項。
+
+現在等式兩側都具有四維向量的變換性質。因此，三個空間方程是下式的分量：
+\begin{equation}
+\boxed{
+m\frac{d^2x^\mu}{d\tau^2}
+=
+e\left(\partial_\nu A^\mu-\partial^\mu A_\nu\right)u^\nu
+}.
+\label{eq:sr6-covariant-force}
+\end{equation}
+若定義
+\begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\label{eq:sr6-F-from-A}
+\end{equation}
+則依照本講採用的指標順序和相互作用項符號，可得等價的精簡形式
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu.
+\label{eq:sr6-covariant-force-F}
+\end{equation}
+\editorialnote{電動力學教材對符號的安排各有不同，可能分別採用不同的度規號差、\(A_\mu\)定義、電荷符號和\(F_{\mu\nu}\)定義。方程 \eqref{eq:sr6-covariant-force} 和 \eqref{eq:sr6-covariant-force-F}保留了由作用量 \(-e\int A_\mu dx^\mu\) 得到的符號和指標順序；不變的物理內容是勢的反對稱化導數。}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_20.png}
+\caption{以固有時將三個空間方程組合成四維向量方程。}
+\lectureframe{01:42:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{為什麼可以再加入時間分量方程？\(d^2x^0/d\tau^2\)是不是直接等於零？}
+\lecturerresponse{一般並不為零：\(x^0=t\)，但粒子的速率改變時，\(dt/d\tau=\gamma\)也會改變。關鍵理由是協變性。純量作用量保證方程具有洛倫茲不變性；一旦認出空間分量是同一個四維向量方程的分量，洛倫茲變換就會將它們與時間分量混合。因此，時間分量方程必須和另外三個方程一併成立。\lecturetimestamp{01:42:40}}
+\end{classroomqa}
+
+\subsection{第四個分量的物理意義}
+
+三個空間分量表達的是相對論形式的
+\begin{equation}
+\frac{d\mathbf p}{dt}=\mathbf F.
+\end{equation}
+能量和動量本身是四維向量的分量，因此時間分量必須描述相應的能量平衡。用三維向量表示，
+\begin{equation}
+\frac{dK}{dt}=\mathbf F\cdot\mathbf v.
+\label{eq:sr6-work-energy}
+\end{equation}
+這記錄了場對粒子做功的速率。磁力垂直於 \(\mathbf v\)，不會做功；電力則會改變粒子的能量。
+
+\begin{classroomqa}
+\audiencequestion{如果協變性形式上給出了第四個方程，我們怎麼知道它有物理意義？}
+\lecturerresponse{前三個分量表示力會改變動量；第四個分量表示功會改變能量：\(dK/dt=\mathbf F\cdot\mathbf v\)。既然能量和動量構成同一個四維向量，它們對場的響應也必須以四個分量一併描述。\lecturetimestamp{01:45:20}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_21.png}
+\caption{空間力定律 \(d\mathbf p/dt=\mathbf F\) 及其時間分量所對應的功--能關係。}
+\lectureframe{01:47:10}
+\end{figure}
+
+推導方法比最後的精簡形式更重要。我們先要求作用量是純量，再對它取變分。如此得到的方程便能重組成張量形式，無須事後修補對稱性。在現代場論中，這成為一條普遍的設計原則：構造拉格朗日量時，應使它符合問題的對稱性。
+
+\section{局域性、洛倫茲不變性與下一項對稱性}
+
+相對論場論中反覆出現三項原則。我們已經運用其中兩項，接下來將討論第三項。
+
+\subsection{局域性}
+
+局域性原則指出，粒子或場的變化由時空中無窮鄰近處發生的事情所支配。粒子響應的是在其世界線上取值的場，而不是遠處不相關的場值。某點的場則受到該點鄰域內的場及其導數影響，不會直接受到任意遠處的場值或未來資料支配。
+
+因此，場的作用量取局域形式
+\begin{equation}
+S
+=
+\int d^3x\,dt\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr6-local-action}
+\end{equation}
+積分中的每一項都對應一個時空點。一階導數描述場在某點與鄰近點的差異，而變分原理則導出微分方程。也可以設想以非局域乘積耦合相距甚遠的點上的場，但這樣的方程會使此處的響應直接取決於彼處的條件。這並非此處所要求的局域結構。含有高階導數的作用量也是可能的，並且是有趣的研究主題，但目前的構造用不到它們。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_22.png}
+\caption{局域性：將由場及其鄰近導數構成的密度對時空積分。}
+\lectureframe{01:51:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\partial_\mu\phi\)是否表示四個導數分量？}
+\lecturerresponse{是的。它表示\(\phi\)的時間導數和三個空間導數，合在一起構成一個協變四向量。\lecturetimestamp{01:52:25}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{在局域性原理中，\emph{鄰近}的程度如何量化？}
+\lecturerresponse{透過導數來量化。一階導數比較某點的場值與無窮小鄰近點的場值。局域拉格朗日量依賴於場，以及同一時空點上的有限個此類導數。\lecturetimestamp{01:52:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{場論中的局域性如何對應到剛才完成的粒子計算？}
+\lecturerresponse{粒子的拉格朗日量沿世界線是局域的：它透過速度依賴於世界線上鄰近的位置，也依賴於在粒子當前位置取值的電磁勢。此處粒子的加速度不會直接依賴遠處某點的場。\lecturetimestamp{01:53:31}}
+\end{classroomqa}
+
+\subsection{洛倫茲不變性}
+
+洛倫茲不變性是透過以標量構造拉格朗日量來實現的。不同觀測者可以將這些標量分解成不同的時間與空間分量，但對作用量的看法一致。因此，經變分得到的張量方程式在每個慣性參考系中形式都相同。
+
+\subsection{規範不變性}
+
+規範不變性是最後一項原理。這裡提出了這個原理，但尚未加以定義。接下來，它將限制四維勢中哪些特徵具有物理意義，並引導建立能導出麥克斯威方程組的場作用量。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_23.png}
+\caption{三項基本原理：局域性、洛倫茲不變性與規範不變性。}
+\lectureframe{01:55:40}
+\end{figure}
+
+這些原理在廣義相對論、量子電動力學、楊--米爾斯理論和標準模型中一再出現。粒子種類數目等細節因理論而異；局域性與對稱性則構成更深層的架構。因此，實際作業是重新推導尤拉--拉格朗日方程，直到每個指標和每組項都能清楚交代。接著，規範不變性將成為同一電磁作用量的下一項約束。

@@ -1,0 +1,857 @@
+\chapter{粒子力學、四動量與靜止能量}
+
+\section{我們將反覆使用的近似}
+
+相對論性粒子的力學必須以新的語言回答熟悉的問題。粒子如何運動？它的動量和能量為何？為什麼這些量能組成四向量？\(E=mc^2\)又如何從力學的一般架構中導出？在探討這些問題之前，我們需要先掌握一個基本近似，後續計算將會反覆用到。
+
+對任意指數\(p\)，二項級數為
+\begin{equation}
+\begin{aligned}
+(1+\epsilon)^p
+&=1+p\epsilon\\
+&\quad+\frac{p(p-1)}{2!}\epsilon^2\\
+&\quad+\frac{p(p-1)(p-2)}{3!}\epsilon^3
++\cdots .
+\end{aligned}
+\label{eq:sr3-binomial}
+\end{equation}
+指數可以是正數、負數、分數，甚至是複數。當\(\epsilon\)足夠小時，級數收斂很快，而且後續各項的大小依序遞減。因此，我們可以依所需精度，在適當的階數截斷。零階項通常最大，但在下文的應用中，它往往是常數，對動力學沒有影響。運動的效應則從一階修正開始出現。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_01.png}
+\caption{二項級數展開至三次，用來從相對論公式導出非相對論力學。}
+\lectureframe{00:04:24}
+\end{figure}
+
+我們通常令\(c=1\)，因此速度\(v\)表示光速的\(v/c\)。令\(\epsilon=-v^2\)。當\(p=\tfrac12\)時，
+\begin{equation}
+\sqrt{1-v^2}
+=
+1-\frac{v^2}{2}-\frac{v^4}{8}-\cdots
+\approx
+1-\frac{v^2}{2},
+\qquad |v|\ll 1.
+\label{eq:sr3-sqrt-expansion}
+\end{equation}
+當\(p=-\tfrac12\)時，兩個負號相消：
+\begin{equation}
+\frac{1}{\sqrt{1-v^2}}
+=
+1+\frac{v^2}{2}+\frac{3v^4}{8}+\cdots
+\approx
+1+\frac{v^2}{2}.
+\label{eq:sr3-gamma-expansion}
+\end{equation}
+經典力學中的許多\(1/2\)因子，事後都可以看出是這些相對論展開式的一階修正。當\(v\)趨近 1 時，這個近似便會失效；此時無論截斷到多高的有限階，都無法描述精確表達式的奇異行為。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_02.png}
+\caption{這裡列出兩個低速公式：\(\sqrt{1-v^2}\approx1-v^2/2\)與\((1-v^2)^{-1/2}\approx1+v^2/2\)。}
+\lectureframe{00:07:39}
+\end{figure}
+
+\section{什麼才算是粒子？}
+
+力學中的粒子不一定是基本粒子。它可以是電子、太陽、一盒巧克力，或一個甜甜圈。關鍵在於物體能充分維持整體性，使其整體運動可以用質心來描述。甜甜圈提醒我們，質心不一定位於物質本身之內。
+
+在牛頓力學中，質心變數滿足
+\begin{equation}
+\vec p=m\vec v,
+\qquad
+K=\frac12mv^2,
+\qquad
+\vec F=m\vec a.
+\label{eq:sr3-newtonian-particle}
+\end{equation}
+這些公式不因物體是基本粒子或複合物體而異。複合物體也包含內能。例如，運動中的甜甜圈除了質心動能，還有化學能、熱能和束縛能：
+\begin{equation}
+E_{\text{Newtonian}}
+=
+E_{\text{internal}}+\frac12mv^2.
+\label{eq:sr3-newtonian-internal}
+\end{equation}
+內能項與整體質心的速度無關。相對論會保留這項區分，同時揭示內能也會貢獻於整個物體的不變質量。
+
+所需工具與經典力學相同：軌跡、作用量駐值原理、拉格朗日量、正則動量、哈密頓量，以及連續對稱性與守恆定律之間的關係。
+
+\section{世界線與因果分離}
+
+將系統的位置畫在水平方向，時間畫在垂直方向，系統的歷史便形成時空中的一條曲線。對單一粒子而言，這條曲線就是它的\emph{世界線}。牛頓力學中也有這個概念，但到了相對論中，它變得至關重要，因為洛倫茲變換會混合空間與時間。
+
+考慮由下式描述、彼此分離的兩個事件：
+\begin{equation}
+\Delta x^\mu=(\Delta t,\Delta\vec x),
+\qquad
+\Delta\vec x^{\,2}
+=
+(\Delta x)^2+(\Delta y)^2+(\Delta z)^2.
+\end{equation}
+在\(c=1\)單位制下，它們之間的不變間隔為
+\begin{equation}
+(\Delta\tau)^2
+=
+(\Delta t)^2-\Delta\vec x^{\,2}.
+\label{eq:sr3-interval}
+\end{equation}
+
+\subsection{類時分離}
+
+若\((\Delta t)^2>\Delta\vec x^{\,2}\)，則\((\Delta\tau)^2>0\)，這種分離稱為類時分離。存在一個洛倫茲參考系，使兩個事件發生於同一空間位置。在該參考系中，連接兩事件的線是垂直的，時鐘可以從一個事件走到另一個事件。時鐘所經歷的時間讀數就是固有時\(\Delta\tau\)。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_03.png}
+\caption{類時間隔的時間分離大於空間分離；存在一個靜止參考系，使兩個事件位於同一位置。}
+\lectureframe{00:14:42}
+\end{figure}
+
+\subsection{類空間分離}
+
+若\(\Delta\vec x^{\,2}>(\Delta t)^2\)，則該間隔為類空間隔。沒有任何慣性參考系能使兩個事件位於同一空間位置，但存在一個參考系能使它們同時發生。在其他參考系中，它們的時間先後順序甚至可能顛倒。因此，對一對類空分離的事件而言，\emph{事件\(A\)先發生}或\emph{事件\(B\)先發生}，都不是不變的陳述。這就是以幾何形式呈現的同時性相對性。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_04.png}
+\caption{對類空間隔而言，改變慣性參考系可以使兩個事件同時發生，也可以顛倒它們的時間先後順序。}
+\lectureframe{00:17:01}
+\end{figure}
+
+有質量粒子的世界線是類時的：每一段足夠短的線段都滿足\(d\tau^2>0\)。把\(0.9c\)的速度逐次合成，可以讓粒子愈來愈接近\(c\)，但永遠無法超越它。這種趨近情形類似芝諾悖論。這項因果限制不只適用於物質，也適用於訊號和資訊，因為資訊必須由物理系統傳遞。超光速訊號會使不同參考系對其歷史中何者為因、何者為果產生分歧。
+
+\section{四維速度}
+
+先看一小段類時線段。在通常單位制下，
+\begin{equation}
+d\tau
+=
+\sqrt{dt^2-\frac{d\vec x^{\,2}}{c^2}}.
+\label{eq:sr3-proper-time-dimensional}
+\end{equation}
+其中的\(c^2\)因子是由量綱所要求的：\(dt^2\)的量綱是時間平方，而\(d\vec x^{\,2}\)的量綱是長度平方。
+
+\begin{classroomqa}
+\audiencequestion{以通常單位表示間隔時，光速應該放在哪裡？}
+\lecturerresponse{空間項必須除以\(c^2\)，因此得到\(d\tau^2=dt^2-d\vec x^{\,2}/c^2\)。我們通常會改用\(c=1\)，但量綱一致性總能讓我們補回省略的因子。\lecturetimestamp{00:21:23}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_05.png}
+\caption{世界線位移\(\Delta x^\mu=(\Delta t,\Delta\vec x)\)及其對應的固有時增量。}
+\lectureframe{00:21:03}
+\end{figure}
+
+普通速度有三個空間分量，
+\begin{equation}
+v^i=\frac{dx^i}{dt},
+\qquad i=1,2,3.
+\end{equation}
+相對論中的速度則是將完整的時空位移除以不變的固有時而得：
+\begin{equation}
+u^\mu
+=
+\frac{dx^\mu}{d\tau},
+\qquad
+\mu=0,1,2,3.
+\label{eq:sr3-four-velocity-definition}
+\end{equation}
+希臘字母指標涵蓋時空分量；拉丁字母指標涵蓋空間分量。在\(c=1\)單位制下，位置的第零分量為\(x^0=t\)，因此
+\begin{equation}
+u^0=\frac{dt}{d\tau}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_06.png}
+\caption{普通速度以座標時間為分母，計算空間位移；四維速度則以固有時為分母，計算時空四個分量。}
+\lectureframe{00:24:05}
+\end{figure}
+
+為了建立\(u^\mu\)與\(\vec v\)之間的關係，先從間隔中提出因子\(dt^2\)：
+\begin{align}
+d\tau^2
+&=dt^2-d\vec x^{\,2}\\
+&=dt^2\left(1-\frac{d\vec x^{\,2}}{dt^2}\right)
+=dt^2(1-v^2).
+\end{align}
+對於指向未來的世界線，取正平方根，
+\begin{equation}
+\frac{d\tau}{dt}=\sqrt{1-v^2},
+\qquad
+\frac{dt}{d\tau}=\frac{1}{\sqrt{1-v^2}}
+\equiv\gamma.
+\label{eq:sr3-time-component}
+\end{equation}
+對空間分量而言，
+\begin{equation}
+v^i
+=
+\frac{dx^i}{dt}
+=
+\frac{dx^i}{d\tau}\frac{d\tau}{dt}
+=u^i\sqrt{1-v^2}.
+\end{equation}
+因此
+\begin{equation}
+\boxed{
+u^\mu
+=
+\gamma(1,\vec v)
+},
+\qquad
+u^0=\gamma,
+\qquad
+u^i=\gamma v^i.
+\label{eq:sr3-four-velocity-components}
+\end{equation}
+低速時，\(u^0\to1\)且\(u^i\to v^i\)。接近光速時，\(u^0\)和空間四維速度的大小都會變大，儘管\(|\vec v|<1\)。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_07.png}
+\caption{普通速度與\(u^\mu\)的四個分量之間的關係。}
+\lectureframe{00:30:40}
+\end{figure}
+
+\subsection{為什麼只有三個分量彼此獨立}
+
+四維速度有四個分量，但只有三個獨立自由度。將間隔恆等式除以\(d\tau^2\)，得到
+\begin{equation}
+1
+=
+\left(\frac{dt}{d\tau}\right)^2
+-\left(\frac{d\vec x}{d\tau}\right)^2,
+\end{equation}
+也就是
+\begin{equation}
+\boxed{
+(u^0)^2-\vec u^{\,2}=1
+}.
+\label{eq:sr3-four-velocity-normalization}
+\end{equation}
+這項歸一化條件使一個分量不再獨立。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_08.png}
+\caption{不變間隔立即導出歸一化條件\((u^0)^2-\vec u^{\,2}=1\)。}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{固有時本身的微分，能否幫助理解為何少了一個獨立分量？}
+\lecturerresponse{可以。固有時不是獨立的第五個座標，而是由沿世界線的時空間隔所決定。將這個定義關係除以\(d\tau^2\)，便會限制四個導數，使它們落在單位類時雙曲面\((u^0)^2-\vec u^{\,2}=1\)上。\lecturetimestamp{00:34:07}}
+\end{classroomqa}
+
+\section{自由粒子的不變作用量}
+
+什麼定律支配無外力作用的世界線？我們沿用經典力學的兩項要點：
+\begin{enumerate}
+\item 端點固定時，物理路徑使作用量取駐值；
+\item 作用量由路徑上的無窮小線段加總而成。
+\end{enumerate}
+相對論再加上一項要求：所有慣性觀察者都必須對作用量有相同的認定。在類時世界線上，自然可用的無窮小純量是\(d\tau\)。因此，自由粒子的作用量為
+\begin{equation}
+\boxed{
+S=-m\int_a^b d\tau
+}
+\qquad(c=1).
+\label{eq:sr3-invariant-action}
+\end{equation}
+有限和的形式是
+\begin{equation}
+S=-m\lim_{N\to\infty}\sum_{k=1}^{N}\Delta\tau_k.
+\end{equation}
+由於所有觀察者對每個固有時增量的認定都相同，他們也會一致認定哪條路徑使總和取駐值。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_09.png}
+\caption{作用量是沿著端點固定的變分世界線，將不變的固有時增量加總而成。}
+\lectureframe{00:38:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{如果作用量乘上一個任意常數，能量會如何變化？}
+\lecturerresponse{能量不是一開始就指定的不變量；它會從拉格朗日量和哈密頓量導出。將整個作用量乘以非零常數，不會改變使作用量取駐值的路徑，但會按比例改變由該作用量定義的正則量。選擇\(-m\)這項歸一化，是為了使導出的物理量符合既有的牛頓力學慣例。\lecturetimestamp{00:39:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼固有時這種不變量適合用來構造作用量？}
+\lecturerresponse{因為作用量駐值定律應在每個慣性參考系中選出相同的物理路徑。這類似於在歐幾里得平面上尋找最短曲線：旋轉會改變座標分量，卻不改變每一段無窮小長度，因此不會改變哪條曲線最短。以固有時取代歐幾里得長度，就得到相對論中的構造。\lecturetimestamp{00:40:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼固有時要取正平方根，而不取負平方根？}
+\lecturerresponse{固有時定義為時鐘從過去走向未來時所記錄的正值經過時間。一貫地選取負平方根，只會反轉作用量的符號，使最小值變成最大值，而不會改變取駐值的世界線。在時鐘的靜止參考系中，採用正號的慣例會得到\(d\tau=dt\)。\lecturetimestamp{00:42:59}}
+\end{classroomqa}
+
+因子\(-m\)同樣是為了導出牛頓力學而選定的歸一化慣例。恢復通常單位後，慣用的作用量為
+\begin{equation}
+S=-mc^2\int_a^b d\tau.
+\label{eq:sr3-action-dimensional}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_10.png}
+\caption{在自然單位制下，有限固有時的總和成為不變積分\(-m\int d\tau\)。}
+\lectureframe{00:46:23}
+\end{figure}
+
+\section{相對論性拉格朗日量}
+
+為了將作用量寫成標準的力學形式，從\(d\tau\)中提出因子\(dt\)：
+\begin{equation}
+d\tau
+=dt\sqrt{1-\dot{\vec x}^{\,2}},
+\qquad
+\dot{\vec x}^{\,2}
+=\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+於是
+\begin{equation}
+S
+=
+\int_a^b L\,dt,
+\qquad
+\boxed{
+L=-m\sqrt{1-v^2}
+}
+\quad(c=1).
+\label{eq:sr3-relativistic-lagrangian}
+\end{equation}
+在通常單位制下，
+\begin{equation}
+L=-mc^2\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr3-relativistic-lagrangian-c}
+\end{equation}
+這就是自由粒子的拉格朗日量：它依賴速度，但不依賴位置。此處尚未引入任何力或位能。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_11.png}
+\caption{提出\(dt\)後，可看出自由粒子的相對論性拉格朗日量是三個速度分量的函數。}
+\lectureframe{00:49:57}
+\end{figure}
+
+\subsection{導出拉格朗日力學與牛頓力學}
+
+代入\eqref{eq:sr3-sqrt-expansion}：
+\begin{align}
+L
+&=-m\sqrt{1-v^2}\\
+&\approx-m\left(1-\frac{v^2}{2}\right)\\
+&=-m+\frac12mv^2.
+\label{eq:sr3-lagrangian-low-speed}
+\end{align}
+常數\(-m\)與位置和速度都無關。對於端點時間相同的每條路徑，它的貢獻都相同，因此在歐拉--拉格朗日方程中不會產生影響。具有動力學意義的部分正是
+\begin{equation}
+L_{\mathrm{Newton}}=\frac12mv^2.
+\end{equation}
+因此，不變作用量中的符號和質量歸一化選得恰當。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_12.png}
+\caption{低速展開中，一項常數\(-m\)以及牛頓自由粒子的拉格朗日量\(mv^2/2\)仍然保留。}
+\lectureframe{00:53:24}
+\end{figure}
+
+對目前討論的自由粒子而言，歐拉--拉格朗日方程只會說明速度為常數，而且時空中的世界線是直線。更值得探究的是找出守恆的動量和能量。
+
+\section{正則動量}
+
+由於\(L\)不依賴位置，它在空間平移下保持不變。對應的守恆量就是動量。我們不預設牛頓公式\(p_i=mv_i\)，而是採用正則定義：
+\begin{equation}
+p_i=\frac{\partial L}{\partial\dot x^i}.
+\label{eq:sr3-canonical-momentum}
+\end{equation}
+對於\(L=-m\sqrt{1-v^2}\)，
+\begin{align}
+p_i
+&=
+-m\frac{1}{2\sqrt{1-v^2}}
+\frac{\partial}{\partial\dot x^i}(1-v^2)\\
+&=
+-m\frac{1}{2\sqrt{1-v^2}}(-2\dot x^i)\\
+&=
+\frac{mv_i}{\sqrt{1-v^2}}
+=m\gamma v_i.
+\label{eq:sr3-relativistic-momentum}
+\end{align}
+由於\(u^i=\gamma v^i\)，
+\begin{equation}
+\boxed{
+p^i=mu^i
+}.
+\label{eq:sr3-momentum-spatial}
+\end{equation}
+低速時，這會化為\(p^i\approx mv^i\)。接近光速時，分母的影響便至關重要。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_13.png}
+\caption{對平方根形式的拉格朗日量作正則微分，得到\(p_x=mv_x/\sqrt{1-v^2}\)。}
+\lectureframe{00:58:49}
+\end{figure}
+
+\subsection{質量，而非相對論質量}
+
+此處的\(m\)就是粒子的質量，是一個不隨粒子運動而改變的不變量。早期文獻有時稱它為\emph{靜止質量}，並把\(E/c^2\)稱為依賴速度的\emph{相對論質量}。現代用法不再採用這種區分。運動會改變能量和動量，不會改變不變質量。電子的質量參數在所有參考系中都相同。
+
+\section{從三動量到四動量}
+
+關於四向量某一個分量的陳述通常依賴參考系。例如，\(\Delta\vec x=0\)表示兩個事件在某個參考系中位於同一位置，但經過洛倫茲推進後，該間隔會傾斜，並使\(\Delta\vec x'\ne0\)。相對地，
+\begin{equation}
+\Delta x^\mu=0
+\end{equation}
+是不變的：若某參考系中的四個分量全為零，則在所有參考系中也都全為零。同樣地，\(\vec u=0\)只表示粒子處於靜止參考系；這並非對四維速度的不變描述。
+
+對封閉系統而言，普通的動量守恆寫作
+\begin{equation}
+\vec P_{\mathrm{initial}}-\vec P_{\mathrm{final}}=0.
+\label{eq:sr3-three-momentum-conservation}
+\end{equation}
+這是三維向量方程。若要讓守恆律以洛倫茲協變的形式呈現，就需要加入第四個分量，與三個\(p^i=mu^i\)合成四向量。顯然的補法是
+\begin{equation}
+p^\mu=mu^\mu.
+\label{eq:sr3-four-momentum}
+\end{equation}
+在\(c=1\)單位制下，
+\begin{equation}
+p^\mu=(p^0,\vec p)
+=
+m\gamma(1,\vec v).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_14.png}
+\caption{只有在空間分量補上第四個分量後，動量守恆才能寫成不變形式。}
+\lectureframe{01:09:51}
+\end{figure}
+
+缺少的分量本身也必須守恆。粒子力學中已有另一個守恆量：能量。問題是，\(p^0=mu^0=m\gamma\)在自然單位制下是否恰好就是能量。透過哈密頓量的推導，可以有系統地回答這個問題。
+
+\section{哈密頓量就是能量}
+
+對於任何具有這種形式且不顯含時間的拉格朗日量，哈密頓量為
+\begin{equation}
+H=\sum_{i=1}^{3}\dot x^i p_i-L.
+\label{eq:sr3-hamiltonian-definition}
+\end{equation}
+這個公式並非牛頓力學專用，而是將速度轉換為正則動量的一般勒讓德變換；相對論性拉格朗日量也適用。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_15.png}
+\caption{一般的哈密頓量公式\(H=\sum_i\dot x^i p_i-L\)。}
+\lectureframe{01:11:55}
+\end{figure}
+
+代入\(p_i=m\dot x_i/\sqrt{1-v^2}\)和\(L=-m\sqrt{1-v^2}\)：
+\begin{align}
+H
+&=
+\frac{mv^2}{\sqrt{1-v^2}}
++m\sqrt{1-v^2}\\
+&=
+\frac{mv^2+m(1-v^2)}{\sqrt{1-v^2}}\\
+&=
+\boxed{\frac{m}{\sqrt{1-v^2}}}
+=m\gamma.
+\label{eq:sr3-hamiltonian-result}
+\end{align}
+關鍵在於兩項相消。與\(u^0=\gamma\)比較，
+\begin{equation}
+H=mu^0=p^0.
+\end{equation}
+因此，第四個分量就是能量：
+\begin{equation}
+p^\mu=(E,\vec p),
+\qquad
+E=H
+\qquad(c=1).
+\label{eq:sr3-four-momentum-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_16.png}
+\caption{哈密頓量中的兩項通分後合併；其中的\(mv^2\)項相消。}
+\lectureframe{01:14:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{公式\(H=\sum_i\dot x^i p_i-L\)只是經典力學中的哈密頓量公式嗎？}
+\lecturerresponse{這是由拉格朗日量導出的通用勒讓德變換，並非基於某種非相對論假設。\(L\)的形式決定了導出哪一種力學結果。在這裡，相對論性的平方根拉格朗日量導出\(H=m/\sqrt{1-v^2}\)。\lecturetimestamp{01:15:21}}
+\end{classroomqa}
+
+現在，守恆律的不變形式為
+\begin{equation}
+\sum_{\mathrm{initial}}p^\mu
+=
+\sum_{\mathrm{final}}p^\mu,
+\label{eq:sr3-four-momentum-conservation}
+\end{equation}
+這一個四向量方程同時包含能量守恆及動量的三個分量守恆。
+
+\section{靜止能量與牛頓極限}
+
+在自然單位制下，精確能量為
+\begin{equation}
+E=\frac{m}{\sqrt{1-v^2}}.
+\end{equation}
+利用\eqref{eq:sr3-gamma-expansion}，
+\begin{equation}
+E
+\approx
+m+\frac12mv^2+\frac38mv^4+\cdots .
+\label{eq:sr3-energy-natural-expansion}
+\end{equation}
+第二項是熟知的動能。第一項則是質心靜止時仍然存在的能量。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_17.png}
+\caption{在\(c=1\)單位制下，精確能量展開為\(m+mv^2/2+\cdots\)。}
+\lectureframe{01:18:02}
+\end{figure}
+
+在精確表達式中恢復量綱。平方根內的比值必須是\(v^2/c^2\)，而分子的量綱必須是能量：
+\begin{equation}
+\boxed{
+E
+=
+\gamma mc^2
+=
+\frac{mc^2}{\sqrt{1-v^2/c^2}}
+}.
+\label{eq:sr3-energy-exact}
+\end{equation}
+低速展開為
+\begin{equation}
+\boxed{
+E
+=
+mc^2+\frac12mv^2
++\frac38m\frac{v^4}{c^2}
++\cdots
+}.
+\label{eq:sr3-energy-dimensional-expansion}
+\end{equation}
+靜止時，
+\begin{equation}
+\boxed{E_{\mathrm{rest}}=mc^2}.
+\label{eq:sr3-emc2}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_18.png}
+\caption{恢復量綱後，常數項成為\(mc^2\)，接著是牛頓動能\(mv^2/2\)。}
+\lectureframe{01:19:16}
+\end{figure}
+
+這適用於任何封閉物體，不只基本粒子。\emph{靜止}是指質心靜止。物體內部的分子、原子和場仍可能運動並相互作用。它們的內部動能、位能和束縛能都會貢獻於總靜止能量，也因此貢獻於物體的不變質量。
+
+\begin{classroomqa}
+\audiencequestion{轉換因子能不能是\(c^2\)除以某個任意數？}
+\lecturerresponse{量綱只能決定\(c\)的次方，但係數由自然單位制下的結果決定。通常單位制下的公式在\(c=1\)時必須化為\(E=m\)，所以恢復單位後的表達式在靜止時為\(E=mc^2\)，其係數為一。\lecturetimestamp{01:22:08}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{二項展開式的首項 1 在物理上重要嗎？較高階的項代表什麼？}
+\lecturerresponse{重要。在能量展開中，首項 1 會成為靜止能量\(mc^2\)。下一項是牛頓動能，其餘高階項都是相對論修正。對棒球而言，這些修正可以忽略；但當\(v\)趨近\(c\)時，它們就不可或缺。\lecturetimestamp{01:22:37}}
+\end{classroomqa}
+
+當\(v\to c\)時，精確能量和動量都會發散：
+\begin{equation}
+\begin{aligned}
+E&=\gamma mc^2\longrightarrow\infty,\\
+\vec p&=\gamma m\vec v\longrightarrow\infty
+\qquad(m>0).
+\end{aligned}
+\end{equation}
+因此，若要達到光速，就需要無限大的能量和動量。有限的力作用於有限時間，只能提供有限的衝量，所以有質量的粒子可以趨近\(c\)，卻無法達到它。
+
+\begin{classroomqa}
+\audiencequestion{現在是什麼機制阻止物體達到光速？}
+\lecturerresponse{精確的四動量守恆律提供了這項限制。有質量的粒子趨近\(c\)時，能量和動量都會發散，而四動量守恆約束每一次相互作用。先前的四維速度歸一化，則是同一限制在運動學上的表述。\lecturetimestamp{01:24:27}}
+\end{classroomqa}
+
+\section{複合系統的質量}
+
+假設兩個粒子的動量大小相等、方向相反。它們的總三動量為零，因此我們已處於整個系統的靜止參考系。該系統的不變質量\(M\)定義為此參考系中的總能量：
+\begin{equation}
+Mc^2=E_{\mathrm{tot}}
+\qquad
+(\vec P_{\mathrm{tot}}=0).
+\end{equation}
+更一般地，
+\begin{equation}
+M^2c^4
+=
+E_{\mathrm{tot}}^2-c^2\vec P_{\mathrm{tot}}^{\,2}.
+\label{eq:sr3-composite-mass}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{兩個粒子朝相反方向運動時，複合系統的質量會大於兩個粒子的個別質量總和嗎？}
+\lecturerresponse{若兩個粒子彼此自由，是的：在質心動量參考系中，它們的動能會加到總靜止能量上，因此\(M>m_1+m_2\)。反之，吸引性束縛能可以降低總能量，使\(M<m_1+m_2\)。不變質量的定義，是總動量為零的參考系中的總能量。\lecturetimestamp{01:25:06}}
+\end{classroomqa}
+
+這就是為什麼計算複合物體的質量時，不能忽略內部運動和束縛。不變質量屬於整個封閉系統，而不是把各組成粒子的質量簡單相加。
+
+\begin{classroomqa}
+\audiencequestion{靜止能量項對量子態的相位有什麼影響？}
+\lecturerresponse{確定能量的量子態會以相位\(\exp(-iEt/\hbar)\)演化，因此靜止粒子會帶來\(\exp(-imc^2t/\hbar)\)。整體共同相位無法觀測，但能量不同的分量之間的相對相位可以觀測。這項量子後果與此處的經典推導相容，但並非推導所需。\lecturetimestamp{01:26:57}}
+\end{classroomqa}
+
+\section{能量--動量關係}
+
+四維速度的歸一化立即給出四動量的不變範數。在\(c=1\)單位制下，
+\begin{equation}
+(u^0)^2-\vec u^{\,2}=1.
+\end{equation}
+
+將等式兩側乘以\(m^2\)，並利用\(p^\mu=mu^\mu\)，
+\begin{equation}
+\boxed{
+E^2-\vec p^{\,2}=m^2
+}
+\qquad(c=1).
+\label{eq:sr3-mass-shell-natural}
+\end{equation}
+等價地，
+\begin{equation}
+E=\sqrt{\vec p^{\,2}+m^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_19.png}
+\caption{將四維速度的歸一化式乘以\(m^2\)，便得到\(E^2-\vec p^{\,2}=m^2\)。}
+\lectureframe{01:31:48}
+\end{figure}
+
+恢復\(c\)後，
+\begin{equation}
+\boxed{
+E^2
+=
+\vec p^{\,2}c^2+m^2c^4
+},
+\qquad
+E=\sqrt{\vec p^{\,2}c^2+m^2c^4}.
+\label{eq:sr3-mass-shell}
+\end{equation}
+這個公式將能量表示為動量的函數，不必涉及速度。它是牛頓關係式
+\begin{equation}
+K=\frac{\vec p^{\,2}}{2m}.
+\end{equation}的相對論對應形式。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_20.png}
+\caption{恢復量綱後的質殼關係：\(E=\sqrt{\vec p^{\,2}c^2+m^2c^4}\)。}
+\lectureframe{01:32:38}
+\end{figure}
+
+\subsection{無質量粒子}
+
+若\(m=0\)且\(v=c\)，速度公式\(E=\gamma mc^2\)會成為不定型\(0/0\)。因此，速度不適合作為區分無質量粒子的標記：在真空中自由傳播的無質量粒子都以\(c\)運動，但不同光子的能量可以不同。
+
+能量--動量關係在無質量極限下仍然平順：
+\begin{equation}
+m=0
+\quad\Longrightarrow\quad
+\boxed{E=c|\vec p|}.
+\label{eq:sr3-massless-energy}
+\end{equation}
+這適用於光子，也適用於理想化無質量理論中的引力子。只要\(mc^2\ll E\)，這個關係就是高度相對論性粒子的極佳近似；能量足夠高的中微子即使質量微小且非零，也符合此條件。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_21.png}
+\caption{能量--動量關係在無質量極限下給出\(E=c|\vec p|\)。}
+\lectureframe{01:33:48}
+\end{figure}
+
+\section{電子偶素衰變}
+
+考慮由電子與正電子束縛而成的電子偶素。它的不變質量略小於\(2m_e\)：組成粒子的內部動能為正，但束縛能為負，且其絕對值較大。數值為
+\begin{equation}
+m_ec^2\approx0.511\ \mathrm{MeV},
+\qquad
+m_e\approx9.11\times10^{-31}\ \mathrm{kg},
+\end{equation}
+不過，運動學推導不依賴這些數值。
+
+考慮電子偶素在自身靜止參考系中的雙光子衰變道：
+\begin{equation}
+\mathrm{Ps}\longrightarrow\gamma+\gamma.
+\end{equation}
+初態的總動量為零。根據動量守恆，兩個光子必須背向而行，且動量大小相等、方向相反：
+\begin{equation}
+\vec p_1=\vec p,
+\qquad
+\vec p_2=-\vec p.
+\label{eq:sr3-positronium-momentum}
+\end{equation}
+若\(M\)是電子偶素的質量，能量守恆給出
+\begin{equation}
+Mc^2
+=E_1+E_2
+=c|\vec p_1|+c|\vec p_2|
+=2c|\vec p|.
+\end{equation}
+因此
+\begin{equation}
+\boxed{
+|\vec p|=\frac{Mc}{2},
+\qquad
+E_1=E_2=\frac{Mc^2}{2}
+}.
+\label{eq:sr3-positronium-result}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_22.png}
+\caption{靜止的電子偶素態衰變成兩個動量大小相等、方向相反的光子；\(Mc^2=2c|\vec p|\)。}
+\lectureframe{01:40:55}
+\end{figure}
+
+這個過程在牛頓力學中沒有類比，因為粒子質量總和並不守恆。入射態的不變質量非零，而每個出射光子都沒有質量。守恆的是總四動量。原本儲存的靜止能量轉變成傳播中的電磁能量。利用量子關係\(|\vec p|=h/\lambda\)，同一結果也能決定光子的波長；相應的光子能量遠高於可見光範圍。
+
+\begin{classroomqa}
+\audiencequestion{衰變過程中的角動量如何守恆？}
+\lecturerresponse{出射輻射必須帶有與初態相同的總角動量。在雙光子道中，光子的螺旋度與其軌道態會適當組合。更精確地說，自旋單重態的仲電子偶素主要衰變成兩個光子，而自旋三重態的正電子偶素主要衰變成三個光子；允許的衰變道都符合所有量子數守恆。\lecturetimestamp{01:42:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼以光速運動的粒子必須是無質量的？}
+\lecturerresponse{對有限且非零的能量而言，當\(v\to c\)時，因子\(\gamma\)會發散。不變關係式\(E^2-\vec p^{\,2}c^2=m^2c^4\)指出，四動量為類光向量的粒子滿足\(m=0\)。反過來說，自由無質量粒子的世界線是類光的，並以\(c\)傳播。\lecturetimestamp{01:42:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{同一個中性態能否衰變成引力子，而不是光子？}
+\lecturerresponse{原則上，若量子數允許，引力末態也是可能的；但其衰變分支比遠小於電磁衰變分支比。運動學的計算仍使用相同的四動量守恆，而且每個無質量量子都滿足\(E=c|\vec p|\)。\lecturetimestamp{01:43:20}}
+\end{classroomqa}
+
+\subsection{單一衰變頂點}
+
+衰變是局域的：母粒子的世界線終止於一個時空事件，出射光子的世界線則從該事件開始。可以將探測器的交互作用向過去外推，以重建這個共同頂點。若兩個光子是在不同事件發射的，將它們的類光軌跡向過去外推後，就不會交於同一點。
+
+\begin{classroomqa}
+\audiencequestion{兩個光子是否必須在所有參考系中同時發射？}
+\lecturerresponse{它們源自同一個時空事件，而不是兩個空間上分離、其同時性可能因參考系而異的事件。所有洛倫茲參考系都同意，一個事件就是同一個事件。量子力學使母粒子的位置具有有限的不確定性，因此重建出的頂點是一個分佈，而非完全確定的經典點。\lecturetimestamp{01:44:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼四速度的範數等於一？}
+\lecturerresponse{固有時是以\(d\tau^2=dt^2-d\vec x^{\,2}\)在單位\(c=1\)下定義的。將\(d\tau^2\)除以\((dt/d\tau)^2-(d\vec x/d\tau)^2=1\)，得到的正是\((u^0)^2-\vec u^{\,2}=1\)。因此，這個正規化已包含在固有時的定義中。\lecturetimestamp{01:45:38}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(u^0=dt/d\tau\)是否給出了能量更深一層的詮釋？}
+\lecturerresponse{這給出一個有用的恆等式\(E=mc^2\,dt/d\tau=\gamma mc^2\)：靜止時，座標時與固有時之比為一；運動時，則為洛倫茲因子。除了表達這種速度依賴性之外，這個恆等式本身並未增添另一條動力學原理。\lecturetimestamp{01:46:36}}
+\end{classroomqa}
+
+\section{守恆需要封閉系統}
+
+這個陳述
+\begin{equation}
+\sum p^\mu_{\mathrm{initial}}
+=
+\sum p^\mu_{\mathrm{final}}
+\end{equation}
+適用於包含所有能量與動量交換部分的孤立系統。真實實驗室中有雜散電場和磁場、環境粒子、重力、支撐物與探測器。若在帳目中漏掉這些自由度，子系統就可能呈現微小的表觀不平衡；缺少的四動量已流入環境。
+
+\begin{classroomqa}
+\audiencequestion{兩個光子的動量總和是否可能略微偏離零？}
+\lecturerresponse{對完整的孤立系統而言，不會。在實際實驗中，未納入模型的場或裝置的反衝可能帶走那一點差額，因此所選的子系統看起來可能並未封閉。一旦將所有相互作用的部分都納入，總四動量便守恆。\lecturetimestamp{01:47:51}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{不確定性原理會削弱動量守恆嗎？}
+\lecturerresponse{不會。量子態的位置或動量可以具有不確定性；對其中一者掌握得越精確，另一者的分佈就越寬。但對孤立系統而言，平移對稱性仍確保總動量精確守恆。量子不確定性關乎測量結果與機率分佈，並不表示守恆定律失效。\lecturetimestamp{01:49:19}}
+\end{classroomqa}
+
+\section{精確能量與近似能量}
+
+重要的是不要混淆精確公式與它的低速展開：
+\begin{align}
+E_{\mathrm{exact}}
+&=
+\frac{mc^2}{\sqrt{1-v^2/c^2}},
+\label{eq:sr3-exact-repeated}\\
+E_{\mathrm{slow}}
+&=
+mc^2+\frac12mv^2
++O\!\left(\frac{mv^4}{c^2}\right).
+\label{eq:sr3-approx-repeated}
+\end{align}
+第一個公式對所有\(v<c\)都成立。第二個公式只有在\(v/c\ll1\)時才適用。
+
+\begin{classroomqa}
+\audiencequestion{能量公式只是一種近似嗎？}
+\lecturerresponse{\(E=mc^2+mv^2/2+\cdots\)是近似。精確結果是\(E=mc^2/\sqrt{1-v^2/c^2}\)。因子\(v^2/c^2\)使分母成為無量綱，而分子\(mc^2\)則具有能量單位。\lecturetimestamp{01:49:56}}
+\end{classroomqa}
+
+\subsection{重新檢視時空圖像}
+
+黑板最後的草圖再次呈現實驗的幾何圖像。衰變之前，靜止的正電子素沿著一條垂直的類時世界線運動。到了衰變事件，這條世界線終止，兩條光狀光子世界線則沿空間中的相反方向延伸出去。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_23.png}
+\caption{正電子素的世界線終止於一個衰變事件，兩條光狀光子世界線由此延伸而出。}
+\lectureframe{01:53:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{是什麼決定兩個光子射出的軸向？}
+\lecturerresponse{對於非偏極態，量子角分佈會使單次衰變從中隨機選出一個方向。一旦方向確定，動量守恆便要求兩個光子背向而行；但它不會預先決定這個軸向。\lecturetimestamp{01:53:55}}
+\end{classroomqa}
+
+\section{自由運動方程告訴我們什麼}
+
+這個不變作用量並非靠猜測力律而選定；它是最簡單的局域洛倫茲純量，且在低速下可重現牛頓力學的自由粒子拉格朗日量。對作用量作變分可得
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot x^i}\right)=0,
+\end{equation}
+因此
+\begin{equation}
+\frac{dp_i}{dt}=0.
+\end{equation}
+對固定的非零質量而言，這等價於四速度為常數：
+\begin{equation}
+\frac{du^\mu}{d\tau}=0.
+\end{equation}
+因此，世界線在時空中是一條直線。這個幾何陳述同時涵蓋速率均勻與空間方向不變。
+
+\begin{classroomqa}
+\audiencequestion{有沒有一種更從基礎出發的方式來論證相對論作用量，類似於選擇經典作用量以重現牛頓方程？}
+\lecturerresponse{對自由粒子而言，洛倫茲不變性、沿世界線的局域性，以及牛頓力學的低速極限，決定了最簡單的作用量，僅剩一個整體常數未定。其尤拉--拉格朗日方程接著給出動量為常數，這正是無外力時的牛頓力學結果。相互作用則提供進一步的檢驗；稍後會將帶電粒子與電場、磁場耦合。\lecturetimestamp{01:54:27}}
+\end{classroomqa}
+
+\section{兩種彼此獨立的經典極限}
+
+非相對論極限與量子力學的經典極限是兩種不同的取極限方式。相對論修正由比值\(v/c\)決定。量子效應則取決於作用量尺度相對於\(\hbar\)的大小，也與質量、系統大小，以及外力變化是否平滑等性質有關。
+
+\begin{classroomqa}
+\audiencequestion{恢復牛頓力學的低速極限，是否就是量子力學變得經典時所取的同一個極限？}
+\lecturerresponse{不是。相對論極限關乎\(v/c\)；量子到經典的極限則關乎\(\hbar\)相對於特徵作用量的大小，並且通常在質量較大或外力變化平滑時便會顯現。一個系統可以是量子的但非相對論的、相對論的但本質上屬於經典的、兩者兼具，或兩者皆非。\lecturetimestamp{01:57:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{狹義相對論與量子力學是否彼此不相容？}
+\lecturerresponse{不會。相對論量子理論是自洽的，並發展為量子場論。著名的未解難題，是如何將重力納入量子力學，而非如何結合狹義相對論與量子原理。目前對自由粒子的討論尚未涉及重力。\lecturetimestamp{01:59:01}}
+\end{classroomqa}
+
+目前，無外力的情況已完整說明：有質量的粒子沿著直線類時世界線運動，其四動量的範數由不變質量決定；能量與動量則是同一個守恆量的四個分量。接下來將引入電荷與電磁場，探討自由運動之外的情況。
