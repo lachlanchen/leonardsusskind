@@ -1,0 +1,638 @@
+\chapter{Schwache Wechselwirkungen, Virialkorrekturen und unexakte Differentiale}
+
+\lectureoverview{Wir beginnen mit der operationalen Bedeutung von Messung und Temperatur und fragen dann, wie ein verdünntes Gas vom idealen Gasgesetz abweicht, wenn schwache Wechselwirkungen kurzer Reichweite eingeschaltet werden. Die Zustandssumme liefert die ersten Wechselwirkungskorrekturen zu Energie und Druck und gibt ihren Gültigkeitsbereich an. Ein abschließender mathematischer Exkurs unterscheidet Zustandsfunktionen von wegabhängiger Wärme und Arbeit mithilfe exakter Differentiale, geschlossener Wege und eines konkreten Tests am idealen Gas.}
+
+\section{Was ein Messgerät tatsächlich misst}
+
+Kein Laborgerät greift unmittelbar auf die Natur zu und gibt eine abstrakte mathematische Variable aus. Eine Federwaage zeigt eine Auslenkung an, ein Thermometer die Höhe einer Flüssigkeitssäule. Wir bezeichnen das eine als Kraftmessung und das andere als Temperaturmessung, weil eine reproduzierbare Beziehung zwischen der sichtbaren Anzeige und der gesuchten Größe hergestellt wurde.
+
+Diese Beziehung gilt nur in einem begrenzten Bereich. Eine Feder folgt dem Hookeschen Gesetz nur, solange sie elastisch bleibt; bei hinreichend großer Kraft verformt sie sich schließlich oder bricht. Allgemeiner gilt: Wenn eine glatte Anzeige \(R\) von einer physikalischen Variablen \(X\) abhängt, dann gilt in der Nähe eines gewählten Arbeitspunkts
+\begin{equation}
+ \Delta R \simeq
+ \left.\frac{dR}{dX}\right|_{X_0}\Delta X.
+ \label{eq:sm6-local-linear-response}
+\end{equation}
+Kleine Änderungen der Anzeige sind proportional zu kleinen Änderungen der Zielgröße, auch wenn die gesamte Kennlinie nichtlinear ist. Diese lokale Linearisierung ist die übliche Grundlage der Kalibrierung.
+
+Die Anzeige kann auch von Störgrößen abhängen. Eine Feder kann schwach auf Temperatur oder Druck reagieren. Die Höhe des Quecksilbers in einem Thermometer könnte sich durch die Orientierung infolge der Schwerkraft, durch Eigenschaften des Glases oder durch langsame Veränderungen der Materialien ändern. Ein Messverfahren beweist nicht, dass solche Abhängigkeiten fehlen; es hält sie konstant oder zeigt, dass sie auf der benötigten Skala vernachlässigbar sind.
+
+\begin{classroomqa}
+\audiencequestion{Könnten das lokale Gravitationsfeld oder die Richtung, in der das Thermometer gehalten wird, die Anzeige verändern?}
+\lecturerresponse{Ja, grundsätzlich. Wenn die Orientierung einen merklichen Einfluss hat, gehört die Anweisung, das Thermometer senkrecht zu halten, zur Definition des Messgeräts. Nahe der Erdoberfläche ist das Gravitationsfeld hinreichend stabil, sodass die verbleibenden Schwankungen normalerweise vernachlässigbar sind.
+\lecturetimestamp{00:04:08--00:05:00}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Können Alterung oder chemische Veränderungen die Kalibrierung allmählich verändern?}
+\lecturerresponse{Das ist möglich. Quecksilber und Glas sind für gewöhnliche Messungen hinreichend inert; Veränderungen auf unglaublich langen Zeitskalen sind für das Experiment unerheblich. Eine Kalibrierung gilt immer für ein bestimmtes Messgerät, einen bestimmten Bereich, ein bestimmtes Verfahren und eine bestimmte Dauer.
+\lecturetimestamp{00:05:03--00:06:11}}
+\end{classroomqa}
+
+Bei einem Celsius-Thermometer liefern zwei reproduzierbare Referenzzustände eine praktische Skala. Sind \(h_f\) und \(h_b\) die Säulenhöhen an den Gefrier- beziehungsweise Siedepunkten von Wasser, so gilt in einem Bereich, in dem die Anzeige annähernd linear ist,
+\begin{equation}
+ T_{\mathrm C}=100\,\frac{h-h_f}{h_b-h_f}.
+ \label{eq:sm6-celsius-calibration}
+\end{equation}
+Die Festlegung \(T_{\mathrm C}=0\) am Gefrierpunkt ist eine Konvention. Sie bezeichnet nicht den Zustand mit null thermischer Energie, genauso wenig wie null Grad Fahrenheit an einem Wintertag den absoluten Nullpunkt bezeichnet.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}
+\caption{Glatter, aber nichtlinearer Verlauf der Thermometeranzeige mit einem kurzen, für die lineare Kalibrierung markierten Abschnitt.}
+\lectureframe{00:07:55}
+\end{figure}
+
+\section{Gleichgewicht und Temperatur als Energieskala}
+
+Ein Thermometer misst die Temperatur seiner Umgebung erst, wenn es mit dem angrenzenden Medium das thermische Gleichgewicht erreicht hat. Bis dahin ändert sich seine Anzeige lediglich in Richtung des Gleichgewichts. Der praktische Test ist einfach: Man wartet, bis sich die Anzeige nicht mehr ändert. Hinter dieser einfachen Regel stehen physikalische Prozesse, die die Wartezeit bestimmen.
+
+\begin{classroomqa}
+\audiencequestion{Findet der Ausgleich nur in einer Grenzschicht um den Kolben statt, und wie lange sollte man warten?}
+\lecturerresponse{Energie muss das Glas durchqueren und mit dem umgebenden Medium ausgetauscht werden. Die benötigte Zeit hängt daher vom Thermometer, seiner Wärmeleitfähigkeit und dem Medium ab. Auch die unmittelbare Umgebung muss für einen homogenen Gleichgewichtszustand repräsentativ sein. Im Experiment gilt die Anzeige als stabil, wenn sie nicht mehr driftet.
+\lecturetimestamp{00:08:45--00:10:13}}
+\end{classroomqa}
+
+Temperatur und Dichte spielen bei dieser Wartezeit unterschiedliche Rollen. Ein sehr verdünntes Gas kann sehr heiß sein: Die wenigen vorhandenen Moleküle können große kinetische Energien tragen. Sie stoßen jedoch nur selten mit dem Thermometer zusammen, sodass der Temperaturausgleich langsam sein kann. Eine Verringerung der Dichte um den Faktor einhundert oder tausend bei gleichbleibender Temperatur senkt nicht die molekulare Energieskala; sie verringert die Rate, mit der diese Energie an das Messgerät übertragen wird.
+
+\begin{classroomqa}
+\audiencequestion{Kann die Strahlung in einem Raum eine andere Temperatur haben als die Luft?}
+\lecturerresponse{Ja. Materie und Strahlung haben nur dann dieselbe Temperatur, wenn sie miteinander im thermischen Gleichgewicht sind. Neutrale Luft koppelt nur schwach an einen großen Teil der optischen Strahlung in einem beleuchteten Raum; die Photonenzahlverteilung muss daher kein Gleichgewichts-Schwarzkörperfeld mit der Lufttemperatur sein.
+\lecturetimestamp{00:11:26--00:12:20}}
+\end{classroomqa}
+
+Ist das Gleichgewicht erreicht, betrachtet man die Temperatur am besten als Energieskala. Wir verwenden weiterhin Einheiten mit \(k_B=1\), sodass \(T\) selbst die Dimension einer Energie hat. Für ein einatomiges ideales Gas gilt
+\begin{equation}
+ E_0=\frac{3}{2}NT.
+ \label{eq:sm6-ideal-energy}
+\end{equation}
+Die thermische Energie pro Molekül wird durch \(T\) festgelegt; die zugehörige Geschwindigkeit hängt weiterhin von der Molekülmasse ab.
+
+\section{Eine schwache Wechselwirkung einschalten}
+
+\begin{classroomqa}
+\audiencequestion{Unter welchen Bedingungen versagt die Näherung des idealen Gases, und lässt sich dieses Versagen mathematisch zeigen?}
+\lecturerresponse{Man geht vom gelösten wechselwirkungsfreien Gas aus und schaltet eine kleine Wechselwirkung ein. Man entwickelt nach dieser Änderung, berechnet die erste Korrektur und vergleicht sie mit dem idealen Beitrag. Die Näherung versagt, wenn die Korrektur nicht mehr klein ist.
+\lecturetimestamp{00:12:25--00:14:40}}
+\end{classroomqa}
+
+Das ist die übliche Störungsstrategie. Ist ein Problem für \(\lambda=0\) lösbar, führt man eine Kopplung \(\lambda\) ein, schreibt
+\begin{equation}
+ F(\lambda)=F(0)+\lambda F_1+\lambda^2F_2+\cdots,
+ \label{eq:sm6-perturbative-template}
+\end{equation}
+und prüft, ob jeder berücksichtigte Term kleiner ist als der vorhergehende. Hier ist das Referenzproblem das ideale Gas. Die physikalische Kleinheit beruht auf einer verdünnten Probe, einer kurzen Wechselwirkungsreichweite im Vergleich zum mittleren Teilchenabstand und einem hinreichend schwachen Potential, sodass der erste Wechselwirkungsterm brauchbar ist. Hohe Dichte oder eine langreichweitige Kraft können die Näherung ungültig machen, selbst wenn jede einzelne Begegnung harmlos erscheint.
+
+Seien \(x_i\in\mathbb R^3\) und \(p_i\in\mathbb R^3\) Ort und Impuls des Moleküls \(i\). Für identische Moleküle der Masse \(m\) setzen wir
+\begin{equation}
+ H(X,P)=
+ \sum_{i=1}^{N}\frac{p_i^2}{2m}
+ +\sum_{i<j}u\!\left(|x_i-x_j|\right),
+ \label{eq:sm6-interacting-hamiltonian}
+\end{equation}
+wobei \(X=(x_1,\ldots,x_N)\) und \(P=(p_1,\ldots,p_N)\). Die Einschränkung \(i<j\) schließt Selbstpaare aus und zählt \((i,j)\) nur einmal:
+\begin{equation}
+ \sum_{i<j}1=\binom{N}{2}=\frac{N(N-1)}{2}.
+ \label{eq:sm6-pair-count}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Warum summiert man nicht unabhängig über beide Teilchenindizes?}
+\lecturerresponse{Das Paar \((3,7)\) ist dasselbe physikalische Paar wie \((7,3)\), und ein Teilchen bildet kein Paar mit sich selbst. Die Beschränkung auf \(i<j\) berücksichtigt beides. Das Massensymbol bleibt \(m\), während \(i,j\) die Teilchen kennzeichnen, um den möglichen Notationskonflikt zu vermeiden, wenn \(m\) für beide Zwecke verwendet wird.
+\lecturetimestamp{00:17:52--00:19:12}}
+\end{classroomqa}
+
+Das gesamte Konfigurationspotential schreiben wir als
+\begin{equation}
+ U(X)=\sum_{i<j}u\!\left(|x_i-x_j|\right).
+ \label{eq:sm6-total-potential}
+\end{equation}
+Die Wechselwirkung wird als translationsinvariant und kurzreichweitig angenommen: \(u(r)\) wird vernachlässigbar, wenn \(r\) groß gegenüber einer molekularen Längenskala ist.
+
+\section{Die integrierte Paarwechselwirkung}
+
+In die erste Korrektur geht nur ein Integral des schwachen Paarpotentials ein:
+\begin{equation}
+ U_0\equiv\int_{\mathbb R^3}d^3r\,u(r).
+ \label{eq:sm6-u0-definition}
+\end{equation}
+Seine Einheit ist Energie mal Volumen. Es verbindet die typische Stärke der Wechselwirkung mit dem Volumen, über das diese Wechselwirkung merklich ist.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}
+\caption{Das kurzreichweitige Paarpotential, zusammengefasst in der integrierten Stärke \(U_0=\int d^3r\,u(r)\).}
+\lectureframe{00:25:15}
+\end{figure}
+
+Um zu sehen, warum \(U_0\) nützlich ist, betrachten wir ein Teilchenpaar:
+\begin{equation}
+ I_2=\int_V d^3x_1\,d^3x_2\,
+ u\!\left(|x_1-x_2|\right).
+ \label{eq:sm6-two-particle-integral}
+\end{equation}
+Wir führen eine Relativkoordinate \(r=x_2-x_1\) ein. Abseits des Randes liefert das Relativintegral \(U_0\), während sich die gemeinsame Position des Paares über den gesamten Behälter erstreckt. Somit gilt
+\begin{equation}
+ I_2=V U_0+\text{surface corrections}.
+ \label{eq:sm6-pair-integral-vu0}
+\end{equation}
+Die Korrektur stammt von Teilchen, die höchstens eine Wechselwirkungsreichweite von der Wand entfernt sind. Dort liegt ein Teil der Umgebung in der Relativkoordinate außerhalb des Behälters. Ihr relativer Beitrag skaliert wie das Verhältnis von Oberfläche zu Volumen und verschwindet im makroskopischen Grenzfall.
+
+\begin{classroomqa}
+\audiencequestion{Bezieht sich \(U_0\) auf ein ausgewähltes Paar, und wird ein Teilchen in festem Abstand zum anderen gehalten?}
+\lecturerresponse{Gemeint ist das gemeinsame Wechselwirkungsgesetz für ein beliebiges Paar. Man hält das erste Teilchen fest und integriert über alle Relativpositionen des zweiten. Der Abstand bleibt während dieses Integrals nicht konstant. Einen merklichen Beitrag liefert nur der nahe Wechselwirkungsbereich; daraus ergibt sich \(U_0\).
+\lecturetimestamp{00:26:03--00:27:33}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum ergibt das Positionsintegral über das zweite Teilchen das volle Behältervolumen, das über das erste aber nicht?}
+\lecturerresponse{Nachdem die Relativkonfiguration in \(U_0\) integriert wurde, lässt sich das ganze Paar durch die Probe verschieben. Diese gemeinsame Translation liefert den großen Faktor \(V\). Die Wechselwirkungsumgebung hat ein Volumen auf molekularer Skala und ist bereits in \(U_0\) enthalten; sie liefert keinen weiteren Faktor, der dem Behältervolumen entspricht.
+\lecturetimestamp{00:27:48--00:29:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann der Wert davon abhängen, welcher Punkt festgehalten wird, insbesondere in Wandnähe?}
+\lecturerresponse{Aufgrund der Translationsinvarianz ist der Wert im Volumeninneren unabhängig vom festgehaltenen Punkt. In Wandnähe unterscheidet sich das Integral geringfügig, weil einige benachbarte Positionen nicht zugänglich sind. Betroffen ist nur eine Oberflächenschicht von molekularer Dicke; bei einem makroskopischen Behälter ist der Fehler daher vernachlässigbar.
+\lecturetimestamp{00:29:24--00:31:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist das Ergebnis das über alle Konfigurationen zweier Teilchen integrierte Potential, und warum ist es nur einem großen Volumen proportional?}
+\lecturerresponse{Ja. Seine Einheit ist Energie mal Volumen zum Quadrat, denn \(V U_0\) enthält ein Behältervolumen und ein molekulares Wechselwirkungsvolumen. Nur der erste dieser Faktoren wächst mit der Größe der Probe.
+\lecturetimestamp{00:31:31--00:32:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ändert die Wahl einer Kugel, die bei festem Volumen die Oberfläche minimiert, das Ergebnis im Volumeninneren?}
+\lecturerresponse{Sie verändert nur die kleine Randkorrektur. Bei jeder üblichen makroskopischen Form ist die Zahl der Teilchen innerhalb einer molekularen Entfernung von der Oberfläche gegenüber der Zahl im Volumeninneren vernachlässigbar. Die Oberfläche wird erst dann wichtig, wenn der Behälter selbst molekulare Ausmaße erreicht.
+\lecturetimestamp{00:32:04--00:33:58}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Werden Kollisionen vernachlässigt, wenn man Teilchenbahnen durch ein Potential ersetzt?}
+\lecturerresponse{Nein. Die Kraft ist die Ableitung des Potentials und verursacht gerade die Kollisionen. In der Gleichgewichtsstatistik müssen wir diese Kollisionen nicht einzeln verfolgen; ihre Wirkung ist in der Energie und damit im Boltzmann-Faktor enthalten.
+\lecturetimestamp{00:33:59--00:35:29}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Was geht verloren, wenn man Paarwechselwirkungen berücksichtigt, echte Dreikörperwechselwirkungen aber nicht?}
+\lecturerresponse{Eine mikroskopische Energie kann echte Dreikörperterme enthalten; außerdem erzeugen höhere Ordnungen eines Paarpotentials Korrelationen zwischen vielen Teilchen. In einem verdünnten Gas ist es jedoch viel unwahrscheinlicher, dass drei festgelegte Teilchen gleichzeitig dieselbe molekulare Umgebung besetzen, als dass dies zwei Teilchen tun. Paarwechselwirkungen liefern daher die erste Dichtekorrektur; Beiträge höherer Cluster treten bei höheren Potenzen der Dichte auf.
+\lecturetimestamp{00:35:29--00:38:14}}
+\end{classroomqa}
+
+\section{Die Zustandssumme auf Autopilot}
+
+Jetzt zeigt sich der Vorteil der statistischen Methode. Ist der Hamiltonoperator festgelegt, muss man die genaue Geschwindigkeitsverteilung in Wandnähe oder während Kollisionen nicht erraten. Wir schreiben die kanonische Zustandssumme auf und führen die algebraische Rechnung durch:
+\begin{equation}
+\begin{aligned}
+ Z&=
+ \frac{1}{N!h^{3N}}
+ \int d^{3N}P\,d^{3N}X\\
+ &\qquad{}\times e^{-\beta K(P)}e^{-\beta U(X)},\\
+ K(P)&=\sum_i\frac{p_i^2}{2m}.
+\end{aligned}
+ \label{eq:sm6-full-partition-function}
+\end{equation}
+Der Faktor \(h^{3N}\) macht das klassische Phasenraummass dimensionslos; \(N!\) beseitigt die Überzählung durch Permutation identischer Teilchen.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}
+\caption{Die Energie des Vielteilchensystems und die zugehörigen kinetischen und konfigurativen Faktoren in der Zustandssumme.}
+\lectureframe{00:40:35}
+\end{figure}
+
+Impuls und Ort lassen sich separieren. Multiplizieren und dividieren wir das Konfigurationsintegral mit \(V^N\), erhalten wir den Beitrag des idealen Gases isoliert:
+\begin{align}
+ Z
+ &=\left[
+ \frac{V^N}{N!h^{3N}}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ \right] \notag\\
+ &\quad\times\left[
+ \frac{1}{V^N}
+ \int d^{3N}X\,e^{-\beta U(X)}
+ \right] \notag\\
+ &\equiv Z_0\,C(\beta,V,N).
+ \label{eq:sm6-z-factorization}
+\end{align}
+Der bekannte Gaußfaktor lautet
+\begin{equation}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ =\left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm6-gaussian-factor}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}
+\caption{Die Zustandssumme des idealen Gases, getrennt vom normierten Konfigurationsfaktor.}
+\lectureframe{00:43:45}
+\end{figure}
+
+Der Faktor \(N!\) beeinflusst weder das normierte Verhältnis \(C\) noch die unten verwendeten Ableitungen bei festem \(N\). Für die Thermodynamik insgesamt ist er jedoch unverzichtbar: Er ist nötig für die korrekte Zustandszählung und eine extensive Entropie.
+
+In erster Ordnung der Wechselwirkung gilt
+\begin{equation}
+ e^{-\beta U(X)}
+ =1-\beta U(X)+O(U^2).
+ \label{eq:sm6-boltzmann-expansion}
+\end{equation}
+Folglich
+\begin{align}
+ C
+ &=
+ 1-\frac{\beta}{V^N}
+ \sum_{i<j}
+ \int d^{3N}X\,u(|x_i-x_j|)
+ +O(U^2) \notag\\
+ &=
+ 1-\frac{\beta}{V^N}
+ \frac{N(N-1)}{2}
+ V^{N-2}(V U_0)+O(U^2) \notag\\
+ &=
+ 1-\beta\frac{N(N-1)}{2V}U_0+O(U^2).
+ \label{eq:sm6-configurational-correction}
+\end{align}
+Jedes Paar hat dasselbe \emph{Integral}, nicht denselben momentanen Abstand oder dieselbe potentielle Energie. Die übrigen Positionsintegrale über \(N-2\) Teilchen liefern jeweils einen Faktor \(V\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}
+\caption{Paarzählung, Volumina der unbeteiligten Teilchenkoordinaten und die erste Korrektur des Konfigurationsfaktors \(1-\beta N^2U_0/(2V)\).}
+\lectureframe{00:53:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Setzt der führende Term \(1\) voraus, dass das Potential bei verschwindendem Abstand verschwindet?}
+\lecturerresponse{Nein. Er ist der Term nullter Ordnung der Exponentialreihe und unabhängig vom Wert von \(u(0)\). Das Potential geht erst in den nächsten Term ein: \(-\beta U(X)\).
+\lecturetimestamp{00:46:19--00:46:48}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum darf man jedes Paar durch denselben Ausdruck ersetzen, wenn die Paare unterschiedliche Abstände haben?}
+\lecturerresponse{Ihre punktweisen Werte werden nicht gleichgesetzt. Jeder Term wird über denselben vollständigen Konfigurationsraum integriert, und die Teilchenindizes unterscheiden die Paare nicht voneinander. Die Integrale haben dieselbe Form und denselben Wert.
+\lecturetimestamp{00:50:00--00:51:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Zahl der Paare \(N(N-1)/2\) oder \(N(N+1)/2\)?}
+\lecturerresponse{Sie beträgt \(N(N-1)/2\): Nach der Auswahl eines Teilchens bleiben nur \(N-1\) verschiedene Partner, und die Division durch zwei beseitigt die doppelte Zählung in umgekehrter Reihenfolge. Für makroskopisches \(N\) ändert die Ersetzung von \(N(N-1)\) durch \(N^2\) nur einen relativen Korrekturterm der Ordnung \(1/N\).
+\lecturetimestamp{00:48:33--00:49:56}}
+\end{classroomqa}
+
+Da \(\log(1-x)=-x-x^2/2-x^3/3-\cdots\) gilt und es sich nicht um eine alternierende Reihe handelt, lautet der Logarithmus in erster Ordnung
+\begin{equation}
+ \log Z
+ =
+ \log Z_0
+ -\beta\frac{N(N-1)}{2V}U_0
+ +O(U^2).
+ \label{eq:sm6-logz-correction}
+\end{equation}
+Für große \(N\) können wir \(N(N-1)\) durch \(N^2\) ersetzen, sofern keine Unterscheidung von endlicher Ordnung in \(N\) erforderlich ist.
+
+\begin{remark}
+Die kontrollierte Formulierung bei kleiner Dichte verwendet die Mayer-Funktion \(f(r)=e^{-\beta u(r)}-1\) und den zweiten Virialkoeffizienten
+\begin{equation}
+ B_2(T)=-\frac{1}{2}\int d^3r\,f(r).
+ \label{eq:sm6-second-virial}
+\end{equation}
+Für ein schwaches Potential gilt \(f(r)\simeq-\beta u(r)\), sodass \(B_2\simeq\beta U_0/2\) und das unten erhaltene Ergebnis wiedergewonnen wird. Diese Form ist für einen harten repulsiven Kern erforderlich, bei dem eine direkte Entwicklung von \(e^{-\beta u}\) nicht zulässig ist.
+\end{remark}
+
+\section{Energie, Druck und die Bedeutung der Korrektur}
+
+Der Logarithmus von \(Z\) ist nützlich, weil seine Ableitungen messbare Größen sind. Unter der Annahme, dass das mikroskopische Potential nicht von der Temperatur abhängt, gilt
+\begin{align}
+ E
+ &=-\left(\frac{\partial\log Z}{\partial\beta}\right)_{V,N} \notag\\
+ &=
+ \frac{3}{2}NT
+ +\frac{N(N-1)}{2V}U_0+O(U^2) \notag\\
+ &\simeq
+ N\left(\frac{3}{2}T+\frac{1}{2}\rho U_0\right),
+ \qquad
+ \rho=\frac{N}{V}.
+ \label{eq:sm6-energy-correction}
+\end{align}
+Der scheinbar nicht extensive Term \(N^2\) wird von \(1/V\) begleitet. Bei fester Dichte gilt \(N^2/V=N\rho\), sodass die Gesamtenergie weiterhin proportional zur Systemgröße ist. Die zusätzliche Energie pro Teilchen ist proportional zur Dichte, weil ein ausgewähltes Molekül nur dann Paarenergie gewinnt, wenn sich ein anderes Molekül in seiner Nähe befindet.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}
+\caption{Die erste Wechselwirkungskorrektur, umgeschrieben als extensive Energie \(N[3T/2+\rho U_0/2]\).}
+\lectureframe{01:03:25}
+\end{figure}
+
+Der Druck lässt sich leichter messen. Mit dem Ergebnis des vorangegangenen Kapitels
+\begin{equation}
+ P=T\left(\frac{\partial\log Z}{\partial V}\right)_{T,N},
+ \label{eq:sm6-pressure-from-z}
+\end{equation}
+erhalten wir
+\begin{align}
+ P
+ &=
+ \frac{NT}{V}
+ +T\frac{\partial}{\partial V}
+ \left(-\beta\frac{N(N-1)}{2V}U_0\right)
+ +O(U^2) \notag\\
+ &=
+ \rho T+\frac{1}{2}\rho^2U_0
+ +O\!\left(\frac{\rho U_0}{N},U^2\right).
+ \label{eq:sm6-pressure-correction}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}
+\caption{Druck aus der Helmholtz-Ableitung, einschließlich der ersten Korrektur quadratisch in der Dichte.}
+\lectureframe{01:09:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Warum ist \(\rho^2\) die natürliche erste Korrektur und nicht eine andere Potenz?}
+\lecturerresponse{Der ideale Term setzt voraus, dass sich ein Teilchen in einem kleinen Gebiet befindet, und skaliert daher wie \(\rho\). Für eine Wechselwirkung müssen sich zwei Teilchen in derselben molekularen Umgebung befinden; die Wahrscheinlichkeit dafür skaliert wie \(\rho^2\). Der Faktor \(1/2\) ist derselbe Paarzählungsfaktor, der verhindert, dass \((i,j)\) und \((j,i)\) getrennt gezählt werden.
+\lecturetimestamp{01:24:27--01:26:00}}
+\end{classroomqa}
+
+Bei fester Temperatur kann man \(V\) variieren, \(\rho=N/V\) messen und den Druck auftragen. Das ideale Gasgesetz liefert den linearen Term. Die Krümmung von \(P(\rho)\) zeigt die erste Wechselwirkungskorrektur. In dieser Näherung für ein schwaches Potential hängt die Korrektur nicht explizit von der Temperatur ab, weil sich der Faktor \(T\) in \eqref{eq:sm6-pressure-from-z} mit \(\beta=1/T\) herauskürzt.
+
+\begin{classroomqa}
+\audiencequestion{Wie groß darf die Dichte werden, bevor Dreikörpereffekte berücksichtigt werden müssen?}
+\lecturerresponse{Die Dichtezählung zeigt, dass der nächste Virialterm proportional zu \(\rho^3\) ist. Sein Koeffizient lässt sich jedoch nicht allein aus \(U_0\) ableiten. Er erhält Beiträge von korrelierten Produkten paarweiser Wechselwirkungen und, sofern vorhanden, echten Dreikörperkräften. Man muss den nächsten Clusterkoeffizienten berechnen und mit dem Term \(\rho^2\) vergleichen; eine vermutete Formel darf nicht als Ergebnis ausgegeben werden.
+\lecturetimestamp{01:10:50--01:13:38}}
+\end{classroomqa}
+
+Der Beitrag des idealen Gases dominiert, wenn der Betrag der Korrektur klein ist:
+\begin{equation}
+ \begin{aligned}
+ \frac{1}{2}\rho^2|U_0|&\ll \rho T,\\
+ |\rho U_0|&\ll T
+ \qquad\text{(parametrically)}.
+ \end{aligned}
+ \label{eq:sm6-ideal-validity}
+\end{equation}
+Beide Seiten der zweiten Ungleichung haben die Einheit Energie. Die Größe \(\rho U_0\) ist die Wechselwirkungsenergieskala pro Teilchen, während \(T\) die kinetische Energieskala bezeichnet. Ein gewöhnliches verdünntes Gas bei Raumtemperatur liegt weit innerhalb dieses Bereichs. Erhebliche Abweichungen treten erst auf, wenn molekulare Umgebungen so häufig besetzt sind, dass Wechselwirkungen mit der thermischen Bewegung konkurrieren.
+
+\begin{classroomqa}
+\audiencequestion{Lässt sich das Kriterium für die Luft in diesem Raum abschätzen?}
+\lecturerresponse{Man schätzt \(U_0\) als Produkt aus einer molekularen Wechselwirkungsenergie und einem molekularen Volumen, multipliziert es mit der Teilchendichte und vergleicht das Ergebnis mit \(k_BT\). Überschlägige molekulare Größenordnungen zeigen, dass die Wechselwirkungsskala in gewöhnlicher Raumluft viel kleiner ist. Es ist eine beträchtliche Kompression nötig, bevor sich Moleküle häufig in Reichweite ihrer Wechselwirkungen befinden.
+\lecturetimestamp{01:16:24--01:18:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann \(U_0\) beide Vorzeichen haben?}
+\lecturerresponse{Ja. Eine positive integrierte Wechselwirkung ist in dieser Näherung insgesamt repulsiv und erhöht den Druck gegenüber \(\rho T\). Eine negative ist insgesamt attraktiv und senkt ihn. Diese Vorzeichenprobe ist eine unmittelbare physikalische Kontrolle von \eqref{eq:sm6-pressure-correction}.
+\lecturetimestamp{01:18:56--01:20:29}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}
+\caption{Qualitative Profile repulsiver und attraktiver Paarpotentiale neben der Druckformel, deren Korrektur das Vorzeichen von \(U_0\) übernimmt.}
+\lectureframe{01:21:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Kann man elektrostatische Abstoßung, gravitative Anziehung oder reale Molekülkräfte in diese Rechnung einsetzen?}
+\lecturerresponse{Das mikroskopische Potential stammt aus der Atom-, Molekül- oder Quantenphysik. Neutrale Moleküle haben häufig einen steilen repulsiven Kern bei kurzem Abstand und einen weiter reichenden anziehenden van-der-Waals-Schwanz, der oft schematisch durch ein 12--6-Potential dargestellt wird. Für einen solchen harten Kern ist die vollständige Mayer-Funktionsformel zu verwenden. Die Gravitation ist anders: Sie ist langreichweitig, ihr räumliches Integral konvergiert nicht in der erforderlichen Weise, und der hier verwendete gewöhnliche thermodynamische Grenzfall für kurzreichweitige Wechselwirkungen versagt.
+\lecturetimestamp{01:20:40--01:23:03}}
+\end{classroomqa}
+
+Die Rechnung veranschaulicht eine nützliche Arbeitsteilung. Die mikroskopische Physik liefert \(u(r)\). Die statistische Mechanik wandelt diese Energie in \(Z\) um; Ableitungen von \(Z\) ergeben makroskopische Observablen, und physikalische Überlegungen prüfen deren Vorzeichen, Dichteskalierung, Extensivität und Gültigkeitsbereich. Die formale Rechnung läuft erst dann mechanisch ab, wenn die richtige Energie und Näherung gewählt wurden.
+
+\section{Exakte Differentiale und Wegabhängigkeit}
+
+Nun wechseln wir die mathematische Sprache. Im Ausdruck \emph{exaktes Differential} bedeutet „exakt“ nicht numerisch präzise. Es bedeutet, dass eine Einsform das Differential einer echten skalaren Funktion ist.
+
+Sei \(f(x,y)\) die Höhe über einem Punkt in einer Landschaft. Eine kleine Verschiebung ändert sie um
+\begin{equation}
+ df=
+ \frac{\partial f}{\partial x}\,dx+
+ \frac{\partial f}{\partial y}\,dy
+ =f_x\,dx+f_y\,dy.
+ \label{eq:sm6-total-differential}
+\end{equation}
+Stattdessen sei uns lediglich
+\begin{equation}
+ \omega=F_x(x,y)\,dx+F_y(x,y)\,dy.
+ \label{eq:sm6-one-form}
+\end{equation}
+gegeben. Gibt es eine skalare Funktion \(f\) mit \(\omega=df\)? Die Gleichheit der gemischten partiellen Ableitungen verlangt
+\begin{equation}
+ \frac{\partial F_y}{\partial x}
+ =
+ \frac{\partial F_x}{\partial y}.
+ \label{eq:sm6-exactness-condition}
+\end{equation}
+Auf einem einfach zusammenhängenden Gebiet ist diese verschwindende Rotation auch hinreichend. Die Komponenten \((F_x,F_y)\) bilden dann den Gradienten von \(f\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}
+\caption{Höhe als skalare Funktion, ihr Differential und die Bedingung an die gemischten Ableitungen für Exaktheit.}
+\lectureframe{01:34:30}
+\end{figure}
+
+Dieselbe Bedingung hat eine Bedeutung für Integrale. Wenn \(\omega=df\) gilt, dann
+\begin{equation}
+ \int_{\gamma:1\to2}\omega=f(2)-f(1)
+ \label{eq:sm6-path-independent-integral}
+\end{equation}
+hängt das Ergebnis nur von den Endpunkten ab, nicht vom Weg \(\gamma\). Insbesondere gilt
+\begin{equation}
+ \oint_\gamma\omega=0
+ \label{eq:sm6-closed-loop-zero}
+\end{equation}
+für jeden kontrahierbaren geschlossenen Weg.
+
+Für die Höhe gilt diese Eigenschaft. Ob man zwischen denselben beiden Punkten auf einer ebenen Straße oder über einen Hügel fährt, die gesamte Höhenänderung ist gleich. Der Kraftstoffverbrauch ist es nicht. Eine hügelige und eine ebene Strecke verbrauchen im Allgemeinen unterschiedlich viel Kraftstoff, und eine Rundfahrt füllt den verbrauchten Kraftstoff nicht wieder auf. Die verbleibende Kraftstoffmenge ist in einer erweiterten Zustandsbeschreibung durchaus eine wohldefinierte Größe. Sie ist jedoch keine Funktion allein der Fahrzeugposition \((x,y)\); sie hängt auch vom zurückgelegten Weg ab. Müdigkeit bietet eine ähnliche Analogie: Beim Abstieg wird die Ermüdung durch den Aufstieg im Allgemeinen nicht rückgängig gemacht.
+
+\begin{classroomqa}
+\audiencequestion{Ist Exaktheit dasselbe wie die Eigenschaft einer konservativen Kraft, und besteht ein Zusammenhang mit Krümmung?}
+\lecturerresponse{Ein Kraftfeld mit verschwindender Rotation ist lokal konservativ und besitzt ein Potential; die Begriffe hängen also eng zusammen. Auch Paralleltransport und Krümmung verknüpfen Änderungen entlang geschlossener Wege mit lokalen geometrischen Größen, doch das ist ein weiter gefasstes Thema. Hier genügt die elementare Aussage: Verschwindende Rotation bedeutet lokale Wegunabhängigkeit, sofern die übliche globale Bedingung an das Gebiet erfüllt ist.
+\lecturetimestamp{01:39:22--01:41:07}}
+\end{classroomqa}
+
+Zwei Beispiele machen den Test konkret. Betrachten wir zunächst
+\begin{equation}
+ F_x=y,\qquad F_y=x.
+ \label{eq:sm6-exact-example}
+\end{equation}
+Beide gemischten Ableitungen sind gleich \(1\), und tatsächlich gilt
+\begin{equation}
+ \omega=y\,dx+x\,dy=d(xy).
+ \label{eq:sm6-exact-example-potential}
+\end{equation}
+Ändern wir nun ein Vorzeichen:
+\begin{equation}
+ F_x=y,\qquad F_y=-x.
+ \label{eq:sm6-inexact-example}
+\end{equation}
+Dann gilt
+\begin{equation}
+ \frac{\partial F_x}{\partial y}=1,
+ \qquad
+ \frac{\partial F_y}{\partial x}=-1,
+ \label{eq:sm6-inexact-cross-derivatives}
+\end{equation}
+also gibt es keine skalare Funktion \(f(x,y)\), deren Gradient diese beiden Komponenten hat.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}
+\caption{Ein exaktes Beispiel, das von \(f=xy\) erzeugt wird, und ein inexaktes Beispiel mit den gemischten Ableitungen \(1\) und \(-1\).}
+\lectureframe{01:44:50}
+\end{figure}
+
+\section{Wärme und Arbeit sind keine Zustandsfunktionen}
+
+Bei einem einfachen kompressiblen System mit fester Teilchenzahl bestimmen zwei unabhängige Gleichgewichtsvariablen den Zustand. Man kann \((T,V)\), \((E,V)\) oder, insbesondere für die Fundamentalrelation, die natürliche Wahl \((S,V)\) verwenden. Somit gilt
+\begin{equation}
+ E=E(S,V),
+ \end{equation}
+und das exakte Differential lautet
+\begin{equation}
+ dE=
+ \left(\frac{\partial E}{\partial S}\right)_V dS+
+ \left(\frac{\partial E}{\partial V}\right)_S dV
+ =T\,dS-P\,dV.
+ \label{eq:sm6-fundamental-relation}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Bedeutet adiabatisch langsam, wärmeisoliert, reversibel oder isentrop?}
+\lecturerresponse{Die Begriffe werden je nach Zusammenhang unterschiedlich verwendet. Für den hier betrachteten Gleichgewichtspfad verläuft die Änderung quasistatisch und thermisch isoliert, ist also reversibel und isentrop. Ein lediglich isolierter, irreversibler Prozess kann dennoch Entropie erzeugen; der quantenmechanische Adiabatensatz betont hingegen die langsame Änderung von Parametern.
+\lecturetimestamp{01:47:13--01:47:54}}
+\end{classroomqa}
+
+Bei fester Entropie ändert sich die Energie des Gases während einer Expansion um \(-P\,dV\). Bei festem Volumen ändert ein reversibler Wärmetransfer sie um \(T\,dS\). Daher ist die Schreibweise
+\begin{equation}
+ \begin{aligned}
+ \delta W_{\mathrm{on}}&=-P\,dV,
+ &\delta Q_{\mathrm{rev}}&=T\,dS,\\
+ dE&=\delta Q_{\mathrm{rev}}+\delta W_{\mathrm{on}}.&&
+ \end{aligned}
+ \label{eq:sm6-first-law-increments}
+\end{equation}
+Das Symbol \(\delta\) statt \(d\) macht kenntlich, dass Wärme und Arbeit Wegänderungen sind und keine Differentiale von Zustandsfunktionen.
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}
+\caption{Der erste Hauptsatz für ein Kolbensystem:
+\(dE=-P\,dV+T\,dS\).}
+\lectureframe{01:50:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Stellt \(-P\,dV\) die am Gas oder vom Gas verrichtete Arbeit dar?}
+\lecturerresponse{Nach der Konvention in \eqref{eq:sm6-first-law-increments} ist es die am Gas verrichtete Arbeit. Bei der Expansion \(dV>0\) verrichtet das Gas positive Arbeit am Kolben; daher ist die am Gas verrichtete Arbeit negativ, und das Gas verliert Energie. Die beiden Beschreibungen sind gleich groß und entgegengesetzt.
+\lecturetimestamp{01:51:23--01:52:27}}
+\end{classroomqa}
+
+Die Gleichheit \(\delta Q_{\mathrm{rev}}=T\,dS\) darf nicht unverändert auf beliebige irreversible Erwärmung übertragen werden. Allgemein gilt:
+\begin{equation}
+ dS=\frac{\delta Q}{T_{\mathrm{boundary}}}+dS_{\mathrm{prod}},
+ \qquad dS_{\mathrm{prod}}\ge 0.
+ \label{eq:sm6-entropy-production}
+\end{equation}
+Das folgende Argument mit dem exakten Differential bezieht sich auf quasistatische Gleichgewichtspfade, für die die reversible Beziehung die geeignete ist.
+
+\begin{classroomqa}
+\audiencequestion{Wird in dem Zustandsraumargument vorausgesetzt, dass alle Pfade durch Gleichgewichtszustände verlaufen?}
+\lecturerresponse{Ja. Die Vorgänge laufen langsam genug ab, sodass \(P\), \(T\), \(E\), \(S\) und \(V\) entlang des Pfades wohldefiniert bleiben. Die Pfadabhängigkeit von Wärme und Arbeit setzt nicht voraus, dass das System weit vom Gleichgewicht entfernt ist.
+\lecturetimestamp{01:54:30--01:54:39}}
+\end{classroomqa}
+
+Um zu prüfen, ob Wärme exakt ist, verwenden wir \((E,V)\) als Koordinaten und stellen den ersten Hauptsatz um:
+\begin{equation}
+ \delta Q_{\mathrm{rev}}=dE+P(E,V)\,dV.
+ \label{eq:sm6-heat-one-form}
+\end{equation}
+Gäbe es eine Zustandsfunktion \(Q(E,V)\) mit \(dQ=\delta Q_{\mathrm{rev}}\), müssten ihre partiellen Ableitungen lauten:
+\begin{equation}
+ \left(\frac{\partial Q}{\partial E}\right)_V=1,
+ \qquad
+ \left(\frac{\partial Q}{\partial V}\right)_E=P.
+ \label{eq:sm6-hypothetical-heat-derivatives}
+\end{equation}
+Die Gleichheit der gemischten Ableitungen würde dann erfordern:
+\begin{equation}
+ \begin{aligned}
+ \frac{\partial}{\partial V}
+ \left(\frac{\partial Q}{\partial E}\right)_V
+ &=\frac{\partial}{\partial E}
+ \left(\frac{\partial Q}{\partial V}\right)_E,\\
+ 0&=\left(\frac{\partial P}{\partial E}\right)_V.
+ \end{aligned}
+ \label{eq:sm6-heat-exactness-requirement}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Ist das genau derselbe Rotationstest wie für \(F_x\,dx+F_y\,dy\)?}
+\lecturerresponse{Ja. Die Koeffizienten von \(dE\) und \(dV\) sind \(1\) und \(P(E,V)\). Ihre Kreuzableitungen sind \(0\) und \((\partial P/\partial E)_V\). Wärme wäre nur dann exakt, wenn diese Ableitungen übereinstimmten.
+\lecturetimestamp{01:54:39--01:54:52}}
+\end{classroomqa}
+
+\clearpage
+\newpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}
+\caption{Die Wärme-Einform \(dE+P\,dV\) und die gemischten Ableitungen, die erforderlich wären, wenn sie das Differential einer Zustandsfunktion wäre.}
+\lectureframe{01:58:10}
+\end{figure}
+
+Die Forderung ist bereits physikalisch unplausibel: Wird einem Gas bei festem Volumen Energie zugeführt, ändert sich im Allgemeinen sein Druck. Das ideale Gas ermöglicht eine direkte Berechnung:
+\begin{equation}
+ PV=NT,
+ \qquad
+ E=\frac{3}{2}NT
+ \quad\Longrightarrow\quad
+ P=\frac{2E}{3V}.
+ \label{eq:sm6-ideal-pressure-energy}
+\end{equation}
+Daher gilt:
+\begin{equation}
+ \left(\frac{\partial P}{\partial E}\right)_V
+ =\frac{2}{3V}\ne0.
+ \label{eq:sm6-heat-curl-fails}
+\end{equation}
+Der Rotationstest ist nicht erfüllt: \(\delta Q_{\mathrm{rev}}\) ist nicht exakt. Aus demselben Grund ist auch das Arbeitsinkrement \(\delta W_{\mathrm{on}}=-P\,dV\) nicht exakt.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}
+\caption{Die Beziehungen für das ideale Gas, zusammengeführt zu \(P=2E/(3V)\).}
+\lectureframe{02:00:00}
+\end{figure}
+
+\clearpage
+\newpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}
+\caption{Das abgeschlossene Argument: Weil \((\partial P/\partial E)_V\ne0\), kann die Wärme-Einform nicht exakt sein.}
+\lectureframe{02:00:35}
+\end{figure}
+
+Für einen geschlossenen Gleichgewichtskreisprozess gilt:
+\begin{equation}
+ \oint dE=0,
+ \qquad
+ \oint\delta Q_{\mathrm{rev}}
+ =-\oint\delta W_{\mathrm{on}}.
+ \label{eq:sm6-cycle-balance}
+\end{equation}
+Das System kehrt zu derselben Energie zurück, doch Wärme und Arbeit müssen nicht einzeln verschwinden. Ihre Werte hängen vom Weg durch den Zustandsraum ab. Deshalb kann eine Kreisprozessmaschine Wärme aufnehmen und netto Arbeit abgeben, obwohl ihr Arbeitsmedium in seinen ursprünglichen thermodynamischen Zustand zurückkehrt.
+
+\begin{classroomqa}
+\audiencequestion{Hängt diese Pfadabhängigkeit mit dem Wirkungsgrad von Maschinen, Hysterese und Gedächtnis zusammen?}
+\lecturerresponse{Kreisprozesse von Maschinen nutzen sie unmittelbar: Die im geschlossenen Kreisprozess zugeführte Wärme gleicht die abgegebene Nettoarbeit aus, während \(E\) zu seinem Anfangswert zurückkehrt. Auch Hysterese und Gedächtnis weisen Pfadabhängigkeit auf, erfordern jedoch häufig zusätzliche interne Variablen oder eine Beschreibung der Nichtgleichgewichtsphysik. Die vorliegende Schlussfolgerung ist enger gefasst und gilt bereits für reversible Gleichgewichtspfade: Wärme und Arbeit sind Übertragungen und keine Eigenschaften, die im thermodynamischen Zustand gespeichert sind.
+\lecturetimestamp{02:02:21--02:03:17}}
+\end{classroomqa}
+
+Die beiden Teile des Arguments kommen nun zusammen. Eine Messung ist erst dann aussagekräftig, wenn ihre Kontrollbedingungen und Gleichgewichtsbedingungen angegeben sind. Eine Näherung ist erst dann aussagekräftig, wenn ihr kleiner Parameter und das Kriterium für ihr Versagen angegeben sind. Eine thermodynamische Größe ist erst dann eine Zustandsfunktion, wenn ihr Differential den Pfadunabhängigkeitstest besteht. In jedem dieser Fälle ersetzt die disziplinierte Mathematik nicht die physikalische Interpretation; sie zeigt uns genau, wann diese Interpretation gerechtfertigt ist.

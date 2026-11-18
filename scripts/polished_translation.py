@@ -1211,6 +1211,29 @@ def layout_repairs(book, lang, rel, text):
         anchor = '\\begin{figure}[H]\n\\centering\n\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_16.png}'
         # Keep the final large board figure off the page already carrying figures 14 and 15.
         replacements.append((anchor, '\\clearpage\n' + anchor))
+    if (book['id'] == 'core--statistical_mechanics--2013_spring_theoretical_minimum'
+            and lang == 'de' and rel == 'chapters/lecture_04/content.tex'):
+        anchor = 'Gleichgewichts-Wahrscheinlichkeitsverteilung'
+        # The long compound in the run-in overview caused a 5.116 pt overfull line.
+        replacements.append((anchor, 'Gleichgewichts-\\\\Wahrscheinlichkeitsverteilung'))
+    if (book['id'] == 'core--statistical_mechanics--2013_spring_theoretical_minimum'
+            and lang == 'de' and rel == 'chapters/lecture_06/content.tex'):
+        anchor = ('\\begin{figure}[t]\n\\centering\n'
+                  '\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_13.png}')
+        replacement = ('\\clearpage\n\\begin{figure}[H]\n\\centering\n'
+                       '\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_13.png}')
+        # Printed page 153 crowded two board figures and their timestamps near the footer.
+        replacements.append((anchor, replacement))
+        anchor = ('\\begin{figure}[t]\n\\centering\n'
+                  '\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_14.png}')
+        replacement = ('\\clearpage\n\\newpage\n\\begin{figure}[H]\n\\centering\n'
+                       '\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_14.png}')
+        # Keep figure 6.14's timestamp on a separate, unstrained page.
+        replacements.append((anchor, replacement))
+        anchor = ('\\begin{figure}[H]\n\\centering\n'
+                  '\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_16.png}')
+        # Printed page 153 also packed the final two board figures; separate their timestamps.
+        replacements.append((anchor, '\\clearpage\n\\newpage\n' + anchor))
     if (book['id'] == 'core--cosmology--2009_winter_legacy_cosmology'
             and lang == 'es' and rel == 'chapters/lecture_08/content.tex'):
         anchor = '\\section{De la planitud a la estructura}'
@@ -1232,6 +1255,17 @@ def layout_repairs(book, lang, rel, text):
         elif lang == 'ja':
             anchor = '\\eqref{eq:c06-null-ray}と\\eqref{eq:c06-redshift}が結果'
             replacements.append((anchor, '\\eqref{eq:c06-null-ray}\\allowbreak と\\allowbreak\\eqref{eq:c06-redshift}\\allowbreak が結果'))
+    if (book['id'] == 'core--cosmology--2013_winter_theoretical_minimum'
+            and lang == 'de' and rel == 'chapters/lecture_02/content.tex'):
+        anchor = '\\section{Von der Energie zur Krümmung}'
+        # Printed page 37 needs 1 pt more depth; footer and side margins remain clear.
+        replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
+    if (book['id'] == 'supplementary--particle_physics_2_standard_model--2010_winter'
+            and lang == 'de' and rel == 'chapters/lecture_10/content.tex'):
+        anchor = ('\\begin{classroomqa}\n'
+                  '\\audiencequestion{Nähert sich die QED-Ladung bei unendlicher Energie einem endlichen Wert?')
+        # Printed page 301 needs 2 pt more depth for the final response and equation.
+        replacements.append((anchor, '\\enlargethispage{2pt}\n' + anchor))
     for anchor, replacement in replacements:
         if text.count(anchor) != 1:
             raise ValueError('Reviewed page-layout anchor changed')

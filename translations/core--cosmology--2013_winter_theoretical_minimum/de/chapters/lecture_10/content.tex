@@ -1,0 +1,550 @@
+\chapter{Quantenfluktuationen und der Ursprung der Strukturen}
+
+\lectureoverview{In der letzten Vorlesung wird gefragt, wie ein durch Inflation geglättetes Universum dennoch die winzigen Unregelmäßigkeiten erhalten kann, aus denen Galaxien entstehen. Die Antwort setzt sich aus mehreren Schritten zusammen. Zunächst legen universelle Konstanten die Planck-Skalen fest und machen den enormen Abstand zwischen der vertrauten Teilchenphysik und der Quantengravitation sichtbar. Der Mikrowellenhimmel liefert dann den Maßstab: Temperaturschwankungen und Dichteschwankungen der Größenordnung \(10^{-5}\), verteilt über viele Skalen. Die Nullpunktsbewegung liefert unvermeidliche Fluktuationen, die Dämpfung erklärt, wie eine Schwingung einfrieren kann, und die Wellengleichung im expandierenden Universum macht aus jeder Fouriermode des Inflatonfelds genau einen solchen gedämpften Oszillator. Die Moden frieren ein, wenn ihre physikalische Wellenlänge die Hubble-Skala erreicht. Am Ende der Inflation führt die eingefrorene Schwankung dazu, dass benachbarte Regionen zu leicht unterschiedlichen Zeiten wiederaufheizen. So wird mikroskopisches Quantenrauschen in das primordiale Dichtemuster umgewandelt.}
+
+\section{Welche Konstanten sind universell?}
+
+Wir verfügen über eine außergewöhnlich präzise Quantentheorie der Elementarteilchen. Zu ihren Parametern gehören die Massen der Quarks und Leptonen, Kopplungskonstanten, Mischungsdaten, Ladungen und die Liste der Teilchen selbst. Mit unbegrenzter Rechenleistung würde die Theorie nicht nur Beschleunigerexperimente erklären, sondern auch Atome, Moleküle und Chemie; grundsätzlich reichen ihre Folgen bis in die Biologie und zu den physikalischen Prozessen, die dem Denken zugrunde liegen. Das macht solche Systeme nicht leicht berechenbar. Es bedeutet, dass das Standardmodell als mikroskopische Grundlage gewöhnlicher Materie gedacht ist. Die Gravitation wird davon getrennt, auf klassischer Ebene, durch die allgemeine Relativitätstheorie beschrieben. Beide Theorien sind leistungsfähig; keine von beiden lässt jede Zahl, die in der niederenergetischen Physik vorkommt, unvermeidlich erscheinen.
+
+Ein Proton-Elektron-Massenverhältnis ist eine völlig sinnvolle physikalische Größe, bezieht sich aber auf zwei bestimmte Teilchen. Ersetzt man das Proton durch ein Neutron oder das Elektron durch ein Myon, erhält man ein anderes Verhältnis. Solche Parameter können tiefe, uns bislang unbekannte physikalische Zusammenhänge enthalten, lassen ihre Universalität aber nicht erkennen. Drei dimensionsbehaftete Konstanten sind anders:
+\[
+c,\qquad \hbar,\qquad G.
+\]
+In ihren definierenden Gesetzen kommt immer wieder das Wort \emph{alle} vor. Alle Materie und alle Information halten die Grenzgeschwindigkeit \(c\) ein. Alle Quantensysteme gehorchen Unschärferelationen, die durch \(\hbar\) bestimmt sind. Alle Energieformen gravitieren mit derselben Newtonschen Konstante \(G\). Diese Reichweite macht die Konstanten im Rahmen der vorliegenden Argumentation fundamental.
+
+Planck erkannte die Bedeutung dieser Kombination, bevor die volle Tragweite der Quantenmechanik bekannt war. Seine Konstante ging zunächst in die Beschreibung der Schwarzkörperstrahlung ein. Schon damals war jedoch die Dimensionsaussage erkennbar: Aus \(c\), \(\hbar\) und \(G\) lassen sich Einheiten für Länge, Zeit und Masse bilden, ohne auf ein bestimmtes Atom oder Teilchen Bezug zu nehmen.
+
+\section{Die Planck-Skalen herleiten}
+
+Seien \(L\), \(T\) und \(M\) die Dimensionen von Länge, Zeit und Masse. Die Lichtgeschwindigkeit hat die Dimension
+\[
+[c]=LT^{-1}.
+\]
+Aus der Unschärferelation \(\Delta x\,\Delta p\gtrsim\hbar\) folgt zusammen mit \(p=mv\)
+\[
+[\hbar]=ML^2T^{-1}.
+\]
+Schließlich ergeben Newtons Gleichungen
+\[
+F=\frac{Gm_1m_2}{r^2},
+\qquad
+F=ma
+\]
+\[
+[G]=L^3M^{-1}T^{-2}.
+\]
+Diese Herleitung ist wichtig, weil Dimensionsanalyse kein Raten ist: Jeder Exponent ist dadurch festgelegt, dass die nicht gewünschten Dimensionen wegfallen müssen.
+
+Gesucht ist eine Länge der Form
+\begin{equation}
+\ell=c^\alpha\hbar^\beta G^\gamma.
+\label{eq:c10-length-ansatz}
+\end{equation}
+Der Exponent der Masse muss verschwinden, also
+\[
+\beta-\gamma=0.
+\]
+Der Exponent der Zeit muss verschwinden und der der Länge muss eins sein:
+\[
+-\alpha-\beta-2\gamma=0,
+\qquad
+\alpha+2\beta+3\gamma=1.
+\]
+Mit \(\gamma=\beta\) wird daraus
+\[
+\alpha+3\beta=0,
+\qquad
+\alpha+5\beta=1.
+\]
+Aus der Differenz folgt \(2\beta=1\), also
+\[
+\beta=\gamma=\frac12,
+\qquad
+\alpha=-\frac32.
+\]
+Damit ist die einzige Länge, die sich aus den drei universellen Konstanten bilden lässt,
+\begin{equation}
+\ell_{\mathrm P}
+=\sqrt{\frac{\hbar G}{c^3}}
+\approx 1.6\times10^{-35}\,\mathrm m.
+\label{eq:c10-planck-length}
+\end{equation}
+In der Vorlesung wird nur die Größenordnung \(10^{-35}\,\mathrm m\) angegeben, doch die Dimensionsherleitung legt die Kombination selbst fest.
+
+Die zugehörige Zeit ist die Lichtlaufzeit:
+\begin{equation}
+t_{\mathrm P}
+=\frac{\ell_{\mathrm P}}{c}
+=\sqrt{\frac{\hbar G}{c^5}}
+\approx 5.4\times10^{-44}\,\mathrm s.
+\label{eq:c10-planck-time}
+\end{equation}
+Auf Größenordnungsniveau ist das \(10^{-43}\,\mathrm s\). Sie ist keine unabhängige Konstruktion, sobald die Planck-Länge und die universelle Geschwindigkeit bekannt sind.
+
+Für die Masse verwenden wir die Dimensionsbeziehung \(Et\sim\hbar\) und \(E=mc^2\). Setzt man \(t=t_{\mathrm P}\) ein, erhält man
+\begin{equation}
+m_{\mathrm P}
+=\frac{\hbar}{c^2t_{\mathrm P}}
+=\sqrt{\frac{\hbar c}{G}}
+\approx 2.2\times10^{-8}\,\mathrm{kg}.
+\label{eq:c10-planck-mass}
+\end{equation}
+Nach Maßstäben der Teilchenphysik ist das überraschend makroskopisch, ungefähr so viel wie die Masse eines feinen Staubkorns. Seine Ruheenergie liegt in der Größenordnung \(10^9\,\mathrm J\) und ist damit vergleichbar mit der chemischen Energie in einem Kraftstofftank. Ein Auto kann mit nur wenigen Tankfüllungen Hunderte Kilometer fahren, weil bei der Verbrennung nur ein winziger Bruchteil der Ruheenergie des Kraftstoffs frei wird. Eine Planck-Masse vollständig in Energie umzuwandeln, wäre etwas ganz anderes. Eine winzige Masse kann eine enorme Energie darstellen, wenn man sie mit \(c^2\) multipliziert.
+
+Der Unterschied zur Beschleunigerphysik ist drastisch. Eine Distanz der Größenordnung \(10^{-18}\,\mathrm m\), charakteristisch für die kürzesten Skalen, die zur Zeit der Vorlesung bei hochenergetischen Kollisionen untersucht wurden, entspricht immer noch etwa \(10^{17}\) Planck-Längen. Das unbekannte Gebiet zwischen der elektroschwachen und der Planck-Skala ist daher gewaltig. Die Kernphysik bietet eine passende Analogie. Aus großer Entfernung erscheint ein Atomkern elementar, doch auf kürzeren Distanzen löst er sich in Protonen und Neutronen auf, die ihrerseits in Quarks und Gluonen zerfallen. Niederenergetische Teilchen mögen im Vergleich zu Kernen einfach sein, können aber relativ zu dem, was auf der Planck-Skala liegt, dennoch komplexe emergente Objekte sein. Betrachtet man diese Hierarchie, überraschen die vielen Parameter des Standardmodells weniger, doch ihre beobachteten Werte und Feinabstimmungen bleiben unerklärt.
+
+\begin{classroomqa}
+\audiencequestion{Ist das Higgs-Boson leichter oder schwerer als erwartet, und warum gibt seine Masse Rätsel auf?}
+\lecturerresponse{Es gibt zwei Vergleiche. Im Verhältnis zur Planck-Masse ist ein Higgs-Boson mit \(125\,\mathrm{GeV}\) außerordentlich leicht. In einer Theorie ohne schützende Struktur machen Quantenkorrekturen eine skalare Masse typischerweise empfindlich gegenüber viel höheren Skalen. Daher scheint der beobachtete Wert eine Abstimmung der Parameter auf einer schmalen Kante zu erfordern. Im Vergleich zu manchen einfachen supersymmetrischen Erwartungen, die damals diskutiert wurden, könnte man das beobachtete Higgs-Boson dagegen als etwas schwer bezeichnen. Der scheinbare Widerspruch entsteht dadurch, dass zwei verschiedene Bezugsskalen verglichen werden; das zugrunde liegende Hierarchieproblem bleibt bestehen. \lecturetimestamp{00:26:45--00:30:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wenn das Higgs-Teilchen zur Masse von Teilchen beiträgt, sollten Dunkle-Materie-Teilchen dann Massen nahe der Planck-Skala haben?}
+\lecturerresponse{Nein. Ein WIMP ist ein \emph{schwach wechselwirkendes massives Teilchen}; die Bezeichnung verweist auf eine Wechselwirkungsskala, die einen Nachweis im Labor ermöglichen könnte, nicht auf die Planck-Masse. Unter den üblichen WIMP-Annahmen können die Massen deutlich über der Protonenmasse liegen und dennoch weit unter \(m_{\mathrm P}\). Lässt man zu, dass die Wechselwirkung mit gewöhnlicher Materie beliebig schwächer ist, erlaubt die Kosmologie einen viel größeren Massenbereich, doch ein direkter Nachweis wird entsprechend schwieriger. Proton und Neutron mahnen ebenfalls zur Vorsicht: Der größte Teil ihrer Masse stammt aus der Bindungsenergie der starken Wechselwirkung und ist nicht einfach die Summe der durch das Higgs-Feld erzeugten Quarkmassen. \lecturetimestamp{00:30:55--00:33:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wofür steht eine Planck-Masse, und gibt es eine fundamentale Energie pro Bit?}
+\lecturerresponse{Eine nützliche gravitative Deutung lautet, dass ein Schwarzes Loch nicht parametrisch kleiner als die Planck-Skala sein kann und zugleich ein gewöhnliches semiklassisches Schwarzes Loch bleibt. Ein solches Objekt hätte eine Masse der Größenordnung \(m_{\mathrm P}\), eine Horizontfläche von der Größenordnung einer Planck-Fläche und eine Entropie von der Größenordnung einer Einheit. In diesem eingeschränkten Sinn für Schwarze Löcher kann man einer Informationseinheit eine Energie der Planck-Größenordnung zuordnen. Daraus folgt nicht allgemein, dass jedes gespeicherte Bit in jedem Gerät eine Planck-Energie kostet; gewöhnliche Teilchen und gewöhnliche Speicher können sehr viel leichter sein. \lecturetimestamp{00:33:11--00:35:10}}
+\end{classroomqa}
+
+Von hier an ist es bequem, Planck-Einheiten zu verwenden:
+\begin{equation}
+c=\hbar=G=1.
+\label{eq:c10-planck-units}
+\end{equation}
+Längen, Zeiten, Massen und Energien lassen sich dann als reine Zahlen angeben, gemessen anhand der Gleichungen~\eqref{eq:c10-planck-length}--\eqref{eq:c10-planck-mass}.
+
+\section{Der nahezu gleichförmige Mikrowellenhimmel}
+
+Das kosmologische Problem beginnt mit einer Mikrowellenkarte des gesamten Himmels. WMAP, die Wilkinson Microwave Anisotropy Probe, maß die Strahlung, die ungefähr zu der Zeit freigesetzt wurde, als das primordiale Plasma durchsichtig wurde. Seitdem wurden die Photonen ungefähr um den Faktor tausend rotverschoben; heute bilden sie einen nahezu perfekten Schwarzkörper mit einer Temperatur von etwa \(2.7\,\mathrm K\). Wenn wir nach außen blicken, sehen wir das Universum nicht zu einer einzigen gemeinsamen Gegenwartszeit. Größere Entfernung bedeutet frühere Emission, und der Mikrowellenhintergrund stammt von der fernen Schale, von der die Photonen erstmals ungehindert zu uns gelangten.
+
+\begin{classroomqa}
+\audiencequestion{Was genau zeigt das ovale WMAP-Bild?}
+\lecturerresponse{Jeder Punkt im Oval steht für eine Himmelsrichtung; die Kugel ist durch eine Kartenprojektion abgeflacht. Linker und rechter Rand schließen aneinander an, der obere und der untere Teil entsprechen gegenüberliegenden galaktischen Hemisphären, und die galaktische Ebene verläuft quer durch die Mitte. Die Mikrowellenemission unserer eigenen Galaxie, die als Vordergrund auftritt, muss modelliert und herausgerechnet werden. Übrig bleibt keine Karte naher Sterne, sondern eine Richtungsdarstellung der Mikrowellentemperatur auf der Schale der letzten Streuung. \lecturetimestamp{00:37:49--00:40:49}}
+\end{classroomqa}
+
+In erster Näherung ist das Ergebnis isotrop:
+\[
+T(\hat{\mathbf n})\simeq 2.7\,\mathrm K
+\]
+in jeder Blickrichtung \(\hat{\mathbf n}\). Perfekte Isotropie um jeden Punkt würde perfekte Homogenität bedeuten. Ein vollkommen homogenes Universum würde jedoch nicht von selbst Galaxien, Haufen und das kaustikartige kosmische Netz hervorbringen, das in der vorherigen Vorlesung besprochen wurde. Es muss also eine gewisse Inhomogenität gegeben haben, wie klein ihre Amplitude auch gewesen sein mag.
+
+Schreiben wir die Abweichung der Temperatur in einer bestimmten Richtung als
+\[
+\delta T(\hat{\mathbf n})=T(\hat{\mathbf n})-\bar T.
+\]
+Die gemessene relative Schwankung liegt in der Größenordnung
+\begin{equation}
+\frac{\delta T}{T}\sim10^{-5}.
+\label{eq:c10-cmb-anisotropy}
+\end{equation}
+Eine Möglichkeit, diese Zahl zu erhalten, war dynamischer Art: Man entwickelt die heutige Materieverteilung rückwärts und fragt, welche anfängliche Kontraststärke bei der Entkopplung nötig ist. Die andere Möglichkeit war direkt: Man vergrößert die nahezu strukturlose Mikrowellenkarte um fünf Größenordnungen und misst die Flecken selbst. Für die vorliegende Argumentation stimmen beide Verfahren ausreichend gut überein.
+
+Die Flecken treten auf vielen Winkelskalen auf. Große Flecken enthalten kleinere, und bei einer Vergrößerung erhält man eine statistisch ähnliche Struktur. Der Ausdruck \emph{skaleninvariant} bedeutet nicht, dass alle Skalen buchstäblich gleich sind; vielmehr ändert sich die Fluktuationsleistung über den relevanten Bereich nur schwach mit der Skala. Diese annähernde Skaleninvarianz gehört zu den Befunden, die die Theorie erklären muss, und betrifft nicht bloß die Gesamtamplitude.
+
+Warum zeichnet die Temperatur die Materie nach? Ein Photon, das aus einem Gravitationspotentialtopf entkommt, verliert Energie. Strahlung, die aus einer dichteren Region eintrifft, kann daher gegenüber Strahlung aus einer weniger dichten Region verschoben sein. Auf der in der Vorlesung betrachteten Größenordnung ergibt das für die Entkopplung
+\begin{equation}
+\frac{\delta\rho}{\rho}\sim10^{-5}
+\label{eq:c10-density-target}
+\end{equation}
+Eine präzise CMB-Berechnung berücksichtigt akustische Dynamik, Gravitationspotentiale und Übertragungsfunktionen. Gleichung~\eqref{eq:c10-density-target} ist daher eine grobe Angabe der Skala und keine exakte Gleichheit zwischen \(\delta T/T\) und \(\delta\rho/\rho\).
+
+\begin{classroomqa}
+\audiencequestion{Könnte die Fleckenstruktur gewöhnliches mikroskopisches Rauschen sein, das bei der letzten Streuung entstand?}
+\lecturerresponse{Nicht auf den beobachteten Winkelskalen. Bei der Entkopplung entsprachen die Flecken gewaltigen physikalischen Regionen und keinen Störungen auf atomarer Skala im rekombinierenden Plasma. Verfolgt man sie jedoch viel weiter in die Vergangenheit zurück, werden ihre physikalischen Wellenlängen kleiner. Die Inflation liefert die fehlende Vergrößerung: Fluktuationen, die als mikroskopische Quantenstörungen begannen, können auf astronomische Skalen gedehnt werden. \lecturetimestamp{00:46:42--00:48:02}}
+\end{classroomqa}
+
+Der Mechanismus lässt sich anhand dreier physikalischer Bausteine verstehen: der Nullpunktsbewegung eines harmonischen Oszillators, der Dämpfung eines Oszillators und der Wellengleichung eines Skalarfelds in einem expandierenden Universum. Wir setzen sie in dieser Reihenfolge zusammen.
+
+\section{Nullpunktsbewegung eines Oszillators}
+
+Für einen harmonischen Oszillator der Masse eins gilt
+\begin{equation}
+E=\frac12\dot x^{\,2}+\frac12\omega^2x^2,
+\qquad
+\ddot x+\omega^2x=0.
+\label{eq:c10-undamped}
+\end{equation}
+Kinetische und potenzielle Energie werden fortwährend ineinander umgewandelt. Über eine Schwingung gemittelt trägt jede die Hälfte der Gesamtenergie.
+
+Die Quantenmechanik liefert die Energieniveaus
+\begin{equation}
+E_n=\left(n+\frac12\right)\hbar\omega.
+\label{eq:c10-oscillator-levels}
+\end{equation}
+Der Grundzustand kann weder \(x=0\) noch \(\dot x=0\) haben, denn das würde Ort und Impuls gleichzeitig exakt festlegen. Seine unvermeidbare Energie
+\[
+E_0=\frac12\hbar\omega,
+\]
+ist die Nullpunktsenergie. Das Wort \emph{Schwingung} ist hier statistisch zu verstehen: Ein stationärer Grundzustand beschreibt keine klassische sinusförmige Bahn, weist aber von null verschiedene Varianzen von Ort und Impuls auf.
+
+Im zeitlichen Mittel liegt die Hälfte der Grundzustandsenergie im potenziellen Anteil:
+\[
+\frac12\omega^2\langle x^2\rangle
+=\frac14\hbar\omega.
+\]
+Damit gilt
+\begin{equation}
+\langle x^2\rangle=\frac{\hbar}{2\omega}
+\sim\frac{\hbar}{\omega}.
+\label{eq:c10-zero-point-position}
+\end{equation}
+Bis auf Faktoren zwei ergibt sich für die Größenordnung der Fluktuation in komplexer Schreibweise
+\[
+x(t)\sim\sqrt{\frac{\hbar}{\omega}}\,e^{i\omega t}.
+\]
+Durch Ableiten folgt dann
+\begin{equation}
+\langle\dot x^{\,2}\rangle\sim\hbar\omega,
+\label{eq:c10-zero-point-velocity}
+\end{equation}
+im Einklang damit, dass kinetische und potenzielle Energie im Mittel gleich groß sind. Abkühlen kann Anregungen mit \(n>0\) entfernen, aber nicht diese Varianzen des Grundzustands.
+
+\section{Dämpfung, kritische Dämpfung und Einfrieren}
+
+Tauchen wir den Oszillator in ein zähflüssiges Medium ein. Eine Feder-Masse-Anordnung, die sich durch Honig bewegt, gehorcht
+\begin{equation}
+\ddot x+\gamma\dot x+\omega^2x=0,
+\label{eq:c10-damped}
+\end{equation}
+wobei \(\gamma>0\) den Widerstand misst. Mit dem Ansatz \(x=e^{\alpha t}\) erhält man
+\begin{equation}
+\alpha^2+\gamma\alpha+\omega^2=0,
+\end{equation}
+und damit
+\begin{equation}
+\alpha_\pm
+=\frac{-\gamma\pm\sqrt{\gamma^2-4\omega^2}}{2}.
+\label{eq:c10-damped-roots}
+\end{equation}
+Die beiden Wurzeln liefern die zwei unabhängigen Lösungen, die eine Differentialgleichung zweiter Ordnung erfordert.
+
+\begin{classroomqa}
+\audiencequestion{Müsste der Dämpfungsterm in Gleichung~\eqref{eq:c10-damped} ein Minuszeichen haben?}
+\lecturerresponse{Die Reibungskraft selbst ist \(F_{\rm drag}=-\gamma\dot x\). Newtons Gleichung lautet \(\ddot x=-\gamma\dot x-\omega^2x\). Bringt man beide Kraftterme auf die linke Seite, erhält man Gleichung~\eqref{eq:c10-damped} mit Pluszeichen. Das Vorzeichen in der Differentialgleichung stimmt also mit der Richtung der physikalischen Kraft überein. \lecturetimestamp{00:59:38--01:00:10}}
+\end{classroomqa}
+
+Falls \(\gamma^2<4\omega^2\), sind die Wurzeln komplex. Wir definieren
+\[
+\Omega=\sqrt{\omega^2-\frac{\gamma^2}{4}}.
+\]
+Dann gilt
+\begin{equation}
+x(t)=e^{-\gamma t/2}
+\left(A\cos\Omega t+B\sin\Omega t\right).
+\label{eq:c10-underdamped}
+\end{equation}
+Der Oszillator durchläuft weiterhin wiederholt seine Gleichgewichtslage, doch seine Amplitude klingt ab. Dies ist der unterkritisch gedämpfte Fall.
+
+Falls \(\gamma^2>4\omega^2\), sind beide Wurzeln in Gleichung~\eqref{eq:c10-damped-roots} reell und negativ:
+\begin{equation}
+x(t)=A e^{\alpha_+t}+B e^{\alpha_-t}.
+\label{eq:c10-overdamped}
+\end{equation}
+Es gibt keine anhaltende Schwingung; beide Komponenten klingen ab. Dies ist der überkritisch gedämpfte Fall. Bei
+\begin{equation}
+\gamma=2\omega
+\label{eq:c10-critical}
+\end{equation}
+fallen die Wurzeln zusammen. Das ist die kritische Dämpfung und markiert den Übergang zwischen den beiden Verhaltensweisen.
+
+Ein Grenzfall ist besonders wichtig. Ohne rücktreibende Kraft, also bei \(\omega=0\),
+\[
+\alpha(\alpha+\gamma)=0,
+\]
+lautet die Lösung
+\begin{equation}
+x(t)=c_0+c_1e^{-\gamma t}.
+\label{eq:c10-no-restoring}
+\end{equation}
+Die Geschwindigkeit klingt ab, doch die Koordinate muss nicht auf null zurückkehren. Sie friert beim konstanten Wert \(c_0\) ein, der durch die Anfangsbedingungen festgelegt wird. Ein Stein, den man ohne befestigte Feder durch Honig stößt, kommt dort zur Ruhe, wo der Reibungswiderstand seine Bewegung zum Erliegen bringt.
+
+Nun lassen wir die Frequenz langsam variieren. Wir beginnen mit \(\omega\gg\gamma\), sodass eine Schwingung auftritt. Dann verringern wir \(\omega(t)\), während die Dämpfungsskala ungefähr konstant bleibt. Die Schwingung wird langsamer, durchläuft \(\gamma=2\omega\), wird überkritisch gedämpft und nähert sich für \(\omega\to0\) der kraftfreien Form. Entsprechend kann man auch die Dämpfung relativ zur rücktreibenden Kraft erhöhen. In der kosmologischen Anwendung ist entscheidend, dass die effektive Frequenz abnimmt, während die Hubble-Dämpfung nahezu konstant bleibt. Der endgültige eingefrorene Wert lässt sich nicht allein aus dem Übergang ableiten; er ergibt sich aus der gesamten vorherigen Entwicklung und dem anfänglichen Quantenzustand.
+
+\section{Skalarwellen im expandierenden Universum}
+
+Kehren wir zum Inflatonfeld \(\phi\) zurück. Für sein Potenzial wird angenommen, dass es ein hohes, breites Plateau besitzt, auf das ein steiler Abfall in ein tiefer gelegenes Minimum folgt. Auf dem Plateau gilt näherungsweise
+\begin{equation}
+V'(\phi)\simeq0,
+\label{eq:c10-flat-potential}
+\end{equation}
+nicht jedoch \(V(\phi)\simeq0\). Die Steigung ist klein, während die Energiedichte groß genug bleiben kann, um die Inflation anzutreiben. Der Ursprung dieser Form wird nicht angegeben; sie ist eine phänomenologische Voraussetzung des Modells.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_02.png}\caption{Links bleiben das Inflaton-Plateau und der Abhang sichtbar, während rechts die Wellengleichung für den flachen Raum begonnen wird. Die Tafel zeigt eindeutig die Näherungsbedingung \(V'(\phi)=0\) und den Beginn eines Terms mit zweiter Ableitung, doch der Vortragende verdeckt die unvollständige Gleichung; Gleichung~\eqref{eq:c10-flat-wave} wird aus der mündlichen Herleitung rekonstruiert.}\label{fig:c10-potential-wave}\lectureframe{01:17:17.865}\end{figure}
+
+Für ein nahezu freies Skalarfeld in der flachen Raumzeit gilt
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\nabla^2\phi=0.
+\label{eq:c10-flat-wave}
+\end{equation}
+Ein nicht flaches Potenzial würde rechts um \(-V'(\phi)\) ergänzt. In der Näherung für das Plateau lassen wir diesen Term weg. Wäre das Feld vollkommen homogen, verschwände die räumliche Ableitung. In einem expandierenden Universum lautet die verbleibende homogene Gleichung
+\[
+\ddot\phi+3H\dot\phi=0,
+\]
+Sie ist die Hubble-Reibungsgleichung aus der vorherigen Vorlesung.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_03.png}\caption{Links ist das Plateau zu sehen, während rechts nacheinander Teile der Wellengleichung erscheinen. Der obere Operator für den flachen Raum ist lesbar; die untere Zeile reicht bis \(+3H\), ist aber unvollständig. Daher wird der vollständige Dämpfungsterm anhand der Erklärung aus derselben Vorlesung ergänzt.}\label{fig:c10-hubble-board}\lectureframe{01:18:57.554}\end{figure}
+
+\begin{figure}[htbp]\centering
+\begin{coursefitfigure}\begin{tikzpicture}[x=1cm,y=0.9cm,>=Latex]
+  \draw[->] (-0.2,0) -- (9.3,0) node[right] {\(\phi\)};
+  \draw[->] (0,-0.2) -- (0,4.6) node[above] {\(V(\phi)\)};
+  \draw[very thick,blue!55!black,smooth]
+    plot coordinates {(0.25,3.9) (1.4,3.88) (2.8,3.8) (4.2,3.6) (5.3,3.25) (6.0,2.6) (6.5,1.45) (6.9,0.45) (7.5,0.28) (8.5,0.7)};
+  \draw[dashed] (6.45,0) -- (6.45,2.0);
+  \draw[->,thick,red!65!black] (2.0,4.25) -- (3.1,3.82);
+  \node[anchor=south west] at (0.8,4.0) {slow-roll plateau: \(V'\simeq0\)};
+  \node[anchor=west] at (6.55,2.05) {end of inflation};
+  \node[anchor=north] at (7.45,0.22) {reheating region};
+\end{tikzpicture}\end{coursefitfigure}\caption{Saubere Rekonstruktion des im gesamten Argument verwendeten Potenzials. Eine geringe Steigung ermöglicht langsames Rollen, während der hohe Wert von \(V\) dafür sorgt, dass \(H\) nahezu konstant bleibt; der steile Abfall beendet die Inflation und setzt die gespeicherte Energie frei.}\label{fig:c10-potential-reconstruction}\end{figure}
+
+Bei einem inhomogenen Feld müssen Koordinatenabstand und physikalischer Abstand unterschieden werden. Wir wählen dimensionslose komovierende Koordinaten \(\mathbf x\), sodass ein infinitesimales Linienelement lautet
+\[
+d\boldsymbol\ell=a(t)\,d\mathbf x.
+\]
+Bei fester Zeit gilt
+\[
+\nabla_{\rm proper}=\frac{1}{a}\nabla_{\mathbf x},
+\qquad
+\nabla_{\rm proper}^2=\frac{1}{a^2}\nabla_{\mathbf x}^2.
+\]
+Die skalare Feldgleichung lautet daher
+\begin{equation}
+\ddot\phi+3H\dot\phi-\frac{1}{a^2}\nabla^2\phi=0,
+\label{eq:c10-frw-wave}
+\end{equation}
+wobei \(\nabla\) die Ableitung nach den komovierenden Koordinaten bezeichnet. Wählt man stattdessen einen dimensionslosen Skalenfaktor, haben die komovierenden Koordinaten die Dimension einer Länge; die Physik bleibt unverändert.
+
+\begin{classroomqa}
+\audiencequestion{Müsste der räumliche Term in Gleichung~\eqref{eq:c10-frw-wave} positiv sein?}
+\lecturerresponse{Nein. Der d’Alembert-Operator im flachen Raum enthält bereits das relative Vorzeichen \(\partial_t^2-\nabla^2\). Durch die Expansion wird die räumliche Ableitung mit dem Faktor \(a^{-2}\) multipliziert, ihr Vorzeichen kehrt sich dadurch aber nicht um. Nach der Fourier-Substitution heben sich die beiden Minuszeichen gegenseitig auf, und die Modengleichung erhält den erwarteten positiven Rückstellterm \(+k^2\phi_k/a^2\). \lecturetimestamp{01:22:18--01:23:06}}
+\end{classroomqa}
+
+\section{Jede Fouriermode ist ein gedämpfter Oszillator}
+
+Betrachten wir jeweils eine räumliche Welle:
+\begin{equation}
+\phi(\mathbf x,t)
+=\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-mode-ansatz}
+\end{equation}
+Die komplexe Exponentialfunktion dient dazu, Sinus und Kosinus gemeinsam zu behandeln. Ein beliebiges reelles Profil entsteht durch Überlagerung von Moden, zwischen denen die passende Realitätsbedingung für \(\mathbf k\) und \(-\mathbf k\) gilt.
+
+Zeitableitungen wirken nur auf \(\phi_{\mathbf k}(t)\), während
+\[
+\nabla^2e^{i\mathbf k\cdot\mathbf x}
+=-k^2e^{i\mathbf k\cdot\mathbf x}.
+\]
+Einsetzen in Gleichung~\eqref{eq:c10-frw-wave} ergibt
+\begin{equation}
+\ddot\phi_{\mathbf k}
++3H\dot\phi_{\mathbf k}
++\frac{k^2}{a^2}\phi_{\mathbf k}=0.
+\label{eq:c10-mode-equation}
+\end{equation}
+Somit verhält sich jede Wellenzahl wie ein gedämpfter Oszillator mit
+\begin{equation}
+\gamma=3H,
+\qquad
+\omega_k(t)=\frac{k}{a(t)}.
+\label{eq:c10-mode-identification}
+\end{equation}
+Die physikalische Wellenzahl \(k/a\) wird durch die Expansion des Universums rotverschoben. Daher nimmt die effektive rücktreibende Kraft \(k^2/a^2\) gegen null ab.
+
+Eine Mode, die mit kurzer physikalischer Wellenlänge beginnt, erfüllt \(\omega_k\gg H\) und schwingt. Ihre Wellenlänge wird gedehnt, ihre Frequenz sinkt, und schließlich überwiegt die Hubble-Dämpfung. Die Mode nähert sich dann einem nicht oszillierenden Wert, statt auf null zurückgezogen zu werden. Verschiedene Moden \(\mathbf k\) gehen zu verschiedenen Zeiten in diesen Zustand über: Eine größere Wellenzahl \(k\), die bei festem \(a\) einer kürzeren Wellenlänge entspricht, muss mehr Expansion abwarten, bis ihre physikalische Frequenz auf die Hubble-Skala fällt.
+
+\section{Horizontaustritt und eingefrorene Vakuumfluktuationen}
+
+Mit der kritischen Bedingung des Oszillators als Abschätzung der Größenordnung ergibt sich
+\[
+\gamma=2\omega_k,
+\]
+Aus Gleichung~\eqref{eq:c10-mode-identification} folgt
+\begin{equation}
+3H=\frac{2k}{a},
+\qquad
+a_{\rm cross}=\frac{2k}{3H}.
+\label{eq:c10-critical-mode}
+\end{equation}
+Auf die Zahlenfaktoren kommt es begrifflich nicht an. Der Übergang tritt ein, wenn die physikalische Wellenzahl \(k/a\) in der Größenordnung von \(H\) liegt.
+
+Sei
+\[
+\lambda_{\rm com}=\frac{2\pi}{k},
+\qquad
+\lambda_{\rm phys}=a\lambda_{\rm com}
+=\frac{2\pi a}{k}.
+\]
+Eine Dimensionsprüfung legt fest, wo \(a\) stehen muss: Bei dimensionslosem \(\mathbf x\) sind sowohl \(k\) als auch \(\mathbf k\cdot\mathbf x\) dimensionslos, während \(a\) und \(\lambda_{\rm phys}\) die Dimension einer Länge haben. Aus Gleichung~\eqref{eq:c10-critical-mode} folgt daher
+\begin{equation}
+\lambda_{\rm phys}\sim H^{-1},
+\label{eq:c10-horizon-crossing}
+\end{equation}
+bis auf Faktoren wie \(2\), \(3\) und \(2\pi\).
+
+Das Hubble-Gesetz \(v=Hd\) ordnet der Entfernung \(H^{-1}\) eine Fluchtgeschwindigkeit der Größenordnung \(c=1\) zu. Während der Inflation ist \(H\) groß und nahezu konstant, sodass diese Hubble-Länge mikroskopisch ist, obwohl sie als Kausalskala dient. Die Bezeichnung \emph{Horizontaustritt} ist konventionell: Kein materielles Objekt durchquert eine physikalische Wand. Die physikalische Wellenlänge der Mode wächst über die annähernd konstante Hubble-Skala hinaus, und ihre Dynamik geht von rascher Schwingung zu einer nahezu eingefrorenen Amplitude über.
+
+\begin{figure}[htbp]\centering
+\begin{coursefitfigure}\begin{tikzpicture}[x=1cm,y=0.85cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {cosmic time};
+  \draw[->] (0,0) -- (0,5.0) node[above] {physical length};
+  \draw[dashed,thick] (0.25,2.75) -- (8.75,2.75)
+    node[right] {\(H^{-1}\)};
+  \draw[very thick,blue!55!black]
+    (0.35,0.55) .. controls (3.3,0.75) and (5.3,1.55) .. (8.5,4.55);
+  \node[blue!55!black,anchor=west] at (6.65,4.55) {\(\lambda_{\rm phys}=2\pi a/k\)};
+  \draw[densely dotted] (6.05,0) -- (6.05,2.75);
+  \fill (6.05,2.75) circle (2pt);
+  \node[anchor=north] at (6.05,0) {horizon exit};
+  \node[align=center] at (2.6,1.7) {oscillating\\sub-Hubble mode};
+\end{tikzpicture}\end{coursefitfigure}\caption{Während der nahezu exponentiellen Expansion wächst eine physikalische Wellenlänge, während die Hubble-Länge annähernd konstant bleibt. Ihr Schnittpunkt markiert bis auf Faktoren der Größenordnung eins den Übergang von rascher Schwingung zu einer eingefrorenen Mode.}\label{fig:c10-horizon-reconstruction}\end{figure}
+
+Vakuumfluktuationen verhindern, dass die Inflation einfach jede Welle auslöscht. Jede Mode mit kurzer Wellenlänge beginnt mit Nullpunktsbewegung. Die Expansion dehnt eine Mode bis zur Hubble-Skala und friert sie ein, während noch kürzere Vakuummoden weiter schwingen. Auch sie werden anschließend gedehnt und eingefroren. Durch diese Wiederholung entsteht ein Feldprofil mit eingefrorenen Beiträgen über einen großen Bereich von Wellenlängen und Orientierungen. Das Ergebnis ist stochastisch, aber nicht strukturlos: Seine Statistik folgt aus dem Quantenzustand und dem Inflationshintergrund.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_04.png}\caption{Eine tafelbreite Überlagerung lang- und kurzwelligter Feldwellen, daneben eine kleinere Dämpfungsskizze bei den Bezeichnungen \(\gamma\) und \(3H\). Die Abbildung veranschaulicht qualitativ das Bild der Moden; eine exakte Funktion lässt sich daraus nicht ablesen.}\label{fig:c10-mode-board}\lectureframe{01:45:28.476}\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Frieren die Moden an einem Punkt oder bei einer bestimmten Wellenlänge ein, und wächst \(H\) selbst exponentiell?}
+\lecturerresponse{Sie frieren ein, wenn eine Wellenlänge die Hubble-Skala erreicht. Auf dem nahezu flachen Plateau sind \(V\) und damit auch \(H\) annähernd konstant; exponentiell wächst der Skalenfaktor \(a(t)\) und damit die physikalische Wellenlänge \(a/k\). Jede komovierende Mode erreicht die Bedingung \(k/a\sim H\) zu einem eigenen Zeitpunkt. \lecturetimestamp{01:45:06--01:45:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sind das elektromagnetische Wellen?}
+\lecturerresponse{Nein. Es sind Fluktuationen des skalaren Inflatonfelds. Elektromagnetische Vakuumfluktuationen bieten eine vertraute Analogie, doch die Variable in Gleichung~\eqref{eq:c10-mode-equation} ist \(\phi\). \lecturetimestamp{01:45:39--01:46:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Gibt es ein Kontinuum von Wellenlängen?}
+\lecturerresponse{Für die Idealisierung eines unendlichen Raums: ja. Das Feld wird durch ein Fourier-Integral dargestellt:
+\begin{equation}
+\phi(\mathbf x,t)
+=\int\frac{d^3k}{(2\pi)^3}\,
+\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-fourier-integral}
+\end{equation}
+Jede Wellenzahl durchläuft denselben Mechanismus aus Rotverschiebung und Einfrieren. \lecturetimestamp{01:46:04--01:46:34}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hätte ein endliches Universum nur diskrete Moden?}
+\lecturerresponse{Ja. Randbedingungen in einem endlichen räumlichen Volumen quantisieren die zulässigen Wellenzahlen. Ist das Volumen viel größer als die betrachteten Skalen, kann der Abstand der Wellenzahlen so fein sein, dass die Summe gut durch das Integral in Gleichung~\eqref{eq:c10-fourier-integral} angenähert wird. Das kontinuierliche Bild ist eine Idealisierung und kein anderer lokaler Mechanismus. \lecturetimestamp{01:46:34--01:47:01}}
+\end{classroomqa}
+
+Nun bestehen zwei Bewegungen nebeneinander. Das räumlich gemittelte Feld \(\bar\phi(t)\) rollt langsam und klassisch das Potenzial hinunter. Darüber liegt eine kleine Quantenfluktuation,
+\[
+\phi(\mathbf x,t)=\bar\phi(t)+\delta\phi(\mathbf x,t),
+\]
+die aus den eingefrorenen Moden zusammengesetzt ist. Die Energie der Fluktuation selbst ist zu klein, um den beobachteten Materiekontrast zu erklären. Entscheidend ist, dass sie den Zeitpunkt beeinflusst, zu dem die Inflation endet.
+
+Eine vollständige quantenmechanische Rechnung für ein einzelnes Feld präzisiert dieses Oszillatorargument. Ein leichtes Skalarfeld weist pro logarithmischem Wellenzahlintervall eine typische Fluktuation der Größenordnung
+\begin{equation}
+\delta\phi_{\rm exit}\sim\frac{H}{2\pi}.
+\label{eq:c10-field-amplitude}
+\end{equation}
+auf. Für eine Herleitung der Normierung müssen die Feldmoden im Inflationshintergrund quantisiert werden. Das Oszillatorbild liefert bereits den entscheidenden Mechanismus: Selbst im Grundzustand gibt es Vakuumfluktuationen, und die Expansion verwandelt sie in ein klassisch anmutendes, eingefrorenes Muster.
+
+\section{Der Abhang wandelt Feldrauschen in Dichteschwankungen um}
+
+Zunächst unterdrücken wir \(\delta\phi\). Zu jedem festen Zeitpunkt hat das Feld dann überall denselben Wert. In der Darstellung an der Tafel entspricht das einer vertikalen Linie, wenn der Raum \(x\) nach oben und der Feldwert \(\phi\) horizontal aufgetragen wird. Mit fortschreitender Zeit bewegt sich die Linie auf die Klippe zu. Das gesamte Universum erreicht gleichzeitig den Abhang, die potenzielle Energie des Inflatonfeldes wird in Teilchen, Strahlung und Wärme umgewandelt, die exponentielle Expansion endet, und die Energiedichte beginnt sich bei der gewöhnlichen Expansion zu verdünnen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_05.png}
+\caption{Tafelbild zur Darstellung des Feldes in Abhängigkeit vom Raum. Die vertikale Achse zeigt \(x\), die horizontale Richtung \(\phi\). Schwach eingezeichnete, nahezu vertikale Profile markieren aufeinanderfolgende Feldkonfigurationen; die schraffierte Begrenzung rechts ist die Klippe, an der die Inflation endet.}
+\label{fig:c10-cliff-board}
+\lectureframe{01:50:54.502}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.82cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {\(\phi\)};
+  \draw[->] (0,0) -- (0,5.2) node[above] {space \(x\)};
+  \draw[thick,gray!60] (8.2,0.15) rectangle (8.55,4.85);
+  \foreach \y in {0.35,0.85,...,4.55} {
+    \draw[gray!60] (8.2,\y) -- (8.55,{\y+0.25});
+  }
+  \node[anchor=south,rotate=90] at (8.38,2.5) {cliff};
+  \draw[thick,densely dashed,gray!70] (3.2,0.2) -- (3.2,4.75);
+  \draw[thick,blue!45!black,smooth]
+    plot coordinates {(5.0,0.2) (5.12,0.75) (4.9,1.25) (5.18,1.8) (4.94,2.35) (5.2,2.9) (4.88,3.45) (5.12,4.05) (5.0,4.75)};
+  \draw[very thick,red!65!black,smooth]
+    plot coordinates {(7.15,0.2) (7.32,0.7) (7.0,1.2) (7.42,1.75) (7.1,2.3) (7.5,2.85) (7.02,3.35) (7.35,4.0) (7.16,4.75)};
+  \draw[->,thick] (3.55,2.5) -- (4.55,2.5);
+  \draw[->,thick] (5.55,2.5) -- (6.65,2.5);
+  \node[align=center,anchor=south,font=\small] at (3.2,4.8) {uniform\\profile};
+  \node[align=center,anchor=south,font=\small] at (5.0,4.8) {frozen\\ripple};
+  \node[align=center,anchor=south,font=\small] at (7.2,4.8) {near\\reheating};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Rekonstruktion der Darstellung von Raum und Feld. Das mittlere Feld bewegt sich auf die Klippe zu, während eine eingefrorene räumliche Welle bestehen bleibt. Daher erreichen verschiedene Orte das Ende der Inflation zu leicht unterschiedlichen Zeiten.}
+\label{fig:c10-cliff-reconstruction}
+\end{figure}
+
+Wir berücksichtigen nun wieder die eingefrorene Variation. Die Linie ist jetzt leicht wellig: Benachbarte Orte haben geringfügig unterschiedliche Werte von \(\phi\). Man stelle sich eine Reihe von Menschen vor, die Schulter an Schulter auf eine Klippe zumarschieren. Einige sind ein wenig voraus, andere etwas zurück. Die Vorausgehenden stürzen zuerst hinab.
+
+Dieser Zeitversatz ist die eigentliche Ursache des Dichtekontrasts. Eine Region, die zuerst hinabstürzt, wird auch zuerst wieder aufgeheizt. Ihre potenzielle Energie wird in Teilchen und Wärme umgewandelt; anschließend kann sich diese Energie noch verdünnen, während das Universum in der Epoche nach der Inflation expandiert. Eine benachbarte Region, die etwas später hinabstürzt, wird später wieder aufgeheizt. Vergleicht man beide, ist die später hinabgestürzte Region schlicht deshalb dichter, weil sie weniger Zeit hatte, sich zu verdünnen. Die zuerst erfolgten Übergänge hinterlassen somit relativ dichte Bereiche. Während diese Bereiche expandieren, lassen kürzerwelligere Wellen weitere Orte über den Rand gelangen und erzeugen kleinere Bereiche innerhalb des größeren Musters. Wiederholt sich dies über die gesamte Hierarchie eingefrorener Moden, entsteht Struktur innerhalb von Struktur. Die winzige Feldfluktuation ist also nicht wegen ihrer eigenen Energie bedeutsam, sondern weil sie den lokalen Zeitpunkt verschiebt, zu dem die Wiederaufheizung stattfindet.
+
+Der zeitliche Zusammenhang lässt sich schematisch angeben. Erreicht das homogene Feld den Endwert \(\phi_{\rm end}\) mit der Geschwindigkeit \(\dot{\bar\phi}\), so bewirkt eine kleine Feldauslenkung eine Änderung der lokalen Endzeit um
+\begin{equation}
+\delta t_{\rm end}
+\simeq-\frac{\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-time-delay}
+\end{equation}
+Bei langsamerem Rollen entspricht dasselbe \(\delta\phi\) einem größeren Zeitversatz. Während dieser zusätzlichen Zeit expandiert die frühere Region weiter und verdünnt sich stärker. Bis auf Übertragungsfaktoren der Größenordnung eins wird die Krümmungs- oder Dichtefluktuation daher bestimmt durch
+\begin{equation}
+\mathcal R
+\sim H\,\delta t_{\rm end}
+\sim-\frac{H\,\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-curvature-estimate}
+\end{equation}
+Zusammen mit Gleichung~\eqref{eq:c10-field-amplitude} ergibt sich die bekannte Skala im Slow-Roll-Regime:
+\begin{equation}
+\mathcal P_{\mathcal R}^{1/2}
+\sim\frac{H^2}{2\pi|\dot{\bar\phi}|},
+\label{eq:c10-slow-roll-amplitude}
+\end{equation}
+wobei eine präzise Festlegung der Konventionen und die anschließende Übertragung auf \(\delta\rho/\rho\) eine umfassendere Störungsrechnung erfordern. Je langsamer das Feld rollt, desto länger ist der Zeitabstand zwischen benachbarten Übergängen über die Klippe und desto stärker ist die zwischenzeitliche Verdünnung. Dieselbe Feldfluktuation hinterlässt daher einen größeren Abdruck in der Dichte, wenn \(\lvert\dot{\bar\phi}\rvert\) kleiner ist.
+
+Viele Moden überschreiten die Hubble-Skala zu unterschiedlichen Zeiten, sodass viele verschieden große Regionen zu leicht unterschiedlichen Zeiten wieder aufgeheizt werden. Das entstehende Dichtefeld enthält über verschiedene Skalen hinweg ineinander verschachtelte über- und unterdichte Bereiche. Seine statistischen Eigenschaften hängen von Höhe, Steigung und Krümmung des Inflationspotenzials ab. Geeignete Slow-Roll-Modelle ergeben auf natürliche Weise eine nahezu skaleninvariante Amplitude von etwa
+\[
+\frac{\delta\rho}{\rho}\sim10^{-5},
+\]
+und anhand detaillierter CMB-Spektren lässt sich eine kleine Zahl kosmologischer Parameter über viele Winkelskalen hinweg überprüfen.
+
+\section{Von den primordialen Keimen zurück zum Himmel}
+
+Nun können wir zum Beobachter im Zentrum einer Reihe vergangener Lichtschalen zurückkehren. Die Sphäre der letzten Streuung durchschneidet das dreidimensionale primordiale Dichtefeld. In Richtungen, in denen diese Schale unterschiedliche Gravitationspotenziale schneidet, ergeben sich geringfügig unterschiedliche Mikrowellentemperaturen. WMAP zeigt das zweidimensionale Muster auf dieser Sphäre. Die Karte ist weder ein Foto des Zeitpunkts null noch eine Projektion sämtlicher Strukturen innerhalb der Sphäre; sie zeigt die Temperaturstruktur auf der bestimmten Schale, von der die Mikrowellenphotonen zuletzt gestreut wurden.
+
+Innerhalb der Schale entwickeln sich dieselben primordialen Störungen weiter. Die Gravitation verstärkt die Überdichten, caustikartige Strömungen schärfen Blätter und Filamente, Gas sammelt sich, und Galaxien entstehen. Das CMB-Muster und das spätere kosmische Netz sind somit zwei Stadien derselben Geschichte: Eingefrorene Inflationsfluktuationen treten zunächst als winzige Dichtekeime auf und werden später zu sichtbarer Struktur.
+
+\begin{classroomqa}
+\audiencequestion{Welche Epoche zeigt der Mikrowellenhintergrund, den wir heute sehen?}
+\lecturerresponse{Die Photonen waren ungefähr \(13\) Milliarden Jahre unterwegs. Sie wurden jedoch einige Hunderttausend Jahre nach dem heißen Urknall freigesetzt, als sich Elektronen und Protonen zu neutralem Wasserstoff verbanden und das Universum durchsichtig wurde. Die Inflation endete sehr viel früher. Durch die Wiederaufheizung entstanden heiße Materie und Strahlung; anschließend expandierte und kühlte das Universum ab, bis es zur letzten Streuung kam. Für diese Argumentation ist die Größenordnung ---einige Hunderttausend Jahre---aussagekräftig, nicht ein präzises Datum der Rekombination. \lecturetimestamp{02:00:38--02:02:19}}
+\end{classroomqa}
+
+\section{Ein Himmel und kosmische Varianz}
+
+\begin{classroomqa}
+\audiencequestion{Sagt die Inflation die berichtete bevorzugte Richtung oder Nord--Süd-Asymmetrie in WMAP voraus?}
+\lecturerresponse{Aus dem hier entwickelten einfachen Inflationsbild folgt keine solche bevorzugte Richtung. Der Status der berichteten Anomalien auf großen Winkelskalen war ungewiss; Vordergrundbeiträge und statistische Fluktuationen mussten weiterhin berücksichtigt werden. Eine verantwortungsvolle Einschätzung erforderte daher die Fachliteratur statt einer sensationsheischenden Zusammenfassung. Die Inflation sagt statistische Eigenschaften eines Ensembles voraus; zu entscheiden, ob ein ungewöhnlich erscheinendes Merkmal des einen beobachteten Himmels neue Physik darstellt, ist schwieriger. \lecturetimestamp{02:02:19--02:03:26}}
+\end{classroomqa}
+
+Kleine Winkelmerkmale kommen am Himmel vielfach vor. Sie liefern zahlreiche Stichproben, sodass sich ihre Verteilung und Isotropie statistisch prüfen lassen. Bei einem Merkmal von der Größe des Quadrupols ist die Situation anders: Auf der beobachtbaren Sphäre finden nur wenige unabhängige Moden großer Winkelskalen Platz. Daher kann ihre gemessene Leistung erheblich vom Ensemblemittel abweichen, selbst wenn die zugrunde liegende Theorie korrekt ist. Diese unvermeidbare Stichprobenunsicherheit heißt \emph{kosmische Varianz}.
+
+\begin{classroomqa}
+\audiencequestion{Was ist mit der scheinbaren Ausrichtung mehrerer niedriger Multipole?}
+\lecturerresponse{Sie könnte ein Hinweis sein, auf einen Vordergrundbeitrag oder ein Artefakt der Analyse zurückgehen oder eine unwahrscheinliche, aber zulässige Realisierung darstellen. Das Problem ist, dass wir kein weiteres beobachtbares Universum aus demselben statistischen Ensemble ziehen können. Wenn bei sechs Münzwürfen viermal Kopf fällt, muss die Münze nicht gezinkt sein; wiederholte Serien würden Klarheit schaffen, aber in der Kosmologie steht auf den größten Skalen nur eine einzige Serie zur Verfügung. Die Anomalie mag eine Untersuchung verdienen, doch ein einzelner Himmel kann nicht die wiederholten Versuche liefern, die für einen entscheidenden Signifikanztest nötig wären. \lecturetimestamp{02:05:31--02:07:36}}
+\end{classroomqa}
+
+\section{Von der Quantenbewegung zur kosmischen Struktur}
+
+Drei universelle Konstanten legen die Planck-Skalen fest und machen sichtbar, wie weit die vertraute Teilchenphysik von der Quantengravitation entfernt ist. Der Mikrowellenhimmel liefert ein präzises kosmologisches Ziel: nahezu Isotropie, eine Fluktuationsamplitude von etwa \(10^{-5}\) und Strukturen über viele Skalen hinweg. Die Quantenmechanik garantiert, dass jede Feldmode Nullpunktsfluktuationen aufweist. Die Inflation streckt jede Inflatonmode, bis ihre physikalische Wellenlänge von der Größenordnung \(H^{-1}\) ist. Dann dämpft die Hubble-Reibung ihre Oszillation und lässt eine effektive eingefrorene Amplitude zurück.
+
+Das homogene Inflatonfeld rollt unter diesem eingefrorenen Rauschen weiter. Erreicht das Feld das Ende seines Plateaus, werden benachbarte Regionen nicht genau zur selben Zeit wieder aufgeheizt. Frühere Regionen verdünnen sich länger; spätere bleiben dichter. Dadurch wird \(\delta\phi\) in ein primordiales Dichte- und Krümmungsmuster umgewandelt. Die Gravitation verstärkt dieses Muster anschließend zu Galaxien und zum kosmischen Netz, während die Schale der letzten Streuung seinen früheren Zustand im Mikrowellenhimmel bewahrt. Mikroskopische Nullpunktsbewegung, kosmische Expansion und zeitlich versetzte Wiederaufheizung sind somit keine getrennten Geschichten. Zusammengenommen erklären sie, wie ein inflationäres Universum zugleich außerordentlich glatt und strukturiert genug sein kann, damit wir existieren.

@@ -1,0 +1,493 @@
+\chapter{Massiver Austausch schwacher Wechselwirkungen, virtuelle Teilchen und gebrochene Symmetrie}
+
+Die Gruppe des Standardmodells wirkt deutlich weniger rätselhaft, wenn wir sie als Menge zulässiger Bewegungen auf der Fermionentabelle lesen. Farbtransformationen führen vertikal zwischen Rot, Grün und Blau. Geladene schwache Transformationen wirken horizontal innerhalb der Quark- und Lepton-Dubletts. Elektromagnetische Phasentransformationen liefern eine dritte Operation. Die zugehörigen Eichbosonen sind keine nachträglich hinzugefügten Verzierungen der gefundenen Symmetrien: Die Emission eines Eichbosons bewirkt physikalisch dieselbe Zustandsänderung, die ein Erzeuger der Symmetrie beschreibt.
+
+Diese Beobachtung führt zur zentralen Frage dieser Vorlesung. Eine schwache Vertexkopplung ist vergleichbar groß wie eine elektromagnetische, und doch läuft der Betazerfall enorm viel langsamer ab als ein typischer starker oder elektromagnetischer Prozess. Der fehlende Faktor ist die Propagation. Bei kleinem Impuls kostet der Austausch eines massiven \(W\) im Betrag der Amplitude einen Faktor der Größenordnung \(1/m_W^2\). Wir entwickeln diese Aussage zunächst im Ortsraum und dann im Impulsraum, verfolgen ihre Folgen in einer längeren Diskussion realer und virtueller Teilchen und wenden uns schließlich dem ersten qualitativen Modell spontaner Symmetriebrechung zu.
+
+\section{Eichsymmetrie aus der Fermionentabelle ablesen}
+
+\subsection{Farbe wirkt vertikal}
+
+Ordnen wir die sechs Quarkflavours in drei schwache Familien,
+\begin{equation}
+  (u,d),\qquad(c,s),\qquad(t,b),
+\end{equation}
+und versehen wir jedes Quark mit einer Farbbezeichnung: Rot, Grün oder Blau. Die entstehende Quarktabelle hat drei Farbzeilen und sechs Flavourspalten. Die Farbe \(SU(3)\) mischt die drei Einträge jeder Flavourspalte. Ein Erzeuger kann beispielsweise ein rotes Up-Quark in ein grünes Up-Quark umwandeln. In der Sprache der Teilchen geht diese Operation mit der Emission eines Gluons einher, das die kompensierende Farbe und Antifarbe trägt.
+
+Dieselbe Farbtransformation muss auf jeden Flavour wirken. Das Gluon, das ein rotes Up-Quark in ein grünes Up-Quark umwandelt, ist dieselbe Gluonenart wie diejenige, die ein rotes Top-Quark in ein grünes Top-Quark umwandelt. Eine echte Symmetrieoperation wirkt auf die erste Generation nicht anders als auf die übrigen. Die Farbänderung erfolgt also vertikal und universell:
+\begin{equation}
+  q_r\longleftrightarrow q_g\longleftrightarrow q_b,
+  \qquad q\in\{u,d,c,s,t,b\}.
+\end{equation}
+Sie verändert die Farbe, aber nicht den Flavour.
+
+Das ist die charakteristische Beziehung zwischen einer Eichgruppe und ihren Eichbosonen. Die infinitesimalen Erzeuger beschreiben Transformationen zwischen Zuständen; die Emission oder Absorption der entsprechenden Bosonen realisiert diese Transformationen als physikalische Prozesse.
+
+\subsection{Schwache Transformationen wirken horizontal}
+
+Die geladene schwache Wechselwirkung wirkt in die andere Richtung. Ein Quark vom Up-Typ kann ein geladenes schwaches Boson emittieren und so zu seinem Partner vom Down-Typ werden, ohne seine Farbe zu ändern:
+\begin{equation}
+  u_b\longrightarrow d_b+W^+.
+\end{equation}
+Genau dieselbe \(W^+\) tritt in
+\begin{equation}
+  c_g\longrightarrow s_g+W^+,
+  \qquad
+  t_r\longrightarrow b_r+W^+.
+\end{equation}
+auf. Die Bezeichnungen \(r,g,b\) bleiben unberührt. Gluonen führen keine horizontalen Änderungen in der Tabelle aus, und geladene \(W\)-Bosonen durchlaufen die Farben nicht vertikal.
+
+Ergänzen wir die elektromagnetische Phasensymmetrie \(U(1)\), unter der jedes geladene Feld eine Phase annimmt. Als erste Näherung ergibt sich dann die Gruppenstruktur
+\begin{equation}
+  SU(3)\times SU(2)\times U(1).
+\end{equation}
+Die Kreuzzeichen bedeuten, dass es sich um unabhängige Faktoren handelt: Einer wirkt auf die Farbe, einer auf die schwachen Dubletts und einer durch eine Phase. Das ist ein nützliches grobes Bild, aber noch nicht die vollständige elektroschwache Theorie.\editorialnote{Die Eichgruppe des Standardmodells wird konventionell exakt als \(SU(3)_c\times SU(2)_L\times U(1)_Y\) geschrieben. Die schwache \(SU(2)_L\) wirkt nur auf linkshändige Dubletts, und die endgültige elektromagnetische \(U(1)_{\rm em}\) geht nach der Symmetriebrechung aus \(SU(2)_L\times U(1)_Y\) hervor. Die Vorlesung weist ausdrücklich darauf hin, dass die erste Näherung, in der die letzten beiden Faktoren identifiziert werden, noch nicht vollständig konsistent ist; spätere Vorlesungen ergänzen die fehlende chirale und elektroschwache Struktur.}
+
+\subsection{Dasselbe Muster gilt für Leptonen}
+
+Unterhalb der drei Farbzeilen ordnen wir eine farblose Leptonzeile an:
+\begin{equation}
+\begin{array}{c|cc|cc|cc}
+ &u&d&c&s&t&b\\ \hline
+Q&+\frac23&-\frac13&+\frac23&-\frac13&+\frac23&-\frac13\\
+\text{lepton partner}
+ &\nu_e&e^-&\nu_\mu&\mu^-&\nu_\tau&\tau^-\\
+Q&0&-1&0&-1&0&-1
+\end{array}
+\end{equation}
+Innerhalb jedes benachbarten Paars unterscheiden sich die elektrischen Ladungen um eine Einheit. Deshalb kann dasselbe geladene schwache Boson \(u\) mit \(d\), \(c\) mit \(s\), \(t\) mit \(b\) und ein geladenes Lepton mit seinem Neutrino verbinden. Der Vertex des \(W\) hängt von den passenden Quantenzahlen und der Ladungsdifferenz ab, nicht davon, ob das Fermion ein Quark oder ein Lepton ist.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.88\textwidth]{lecture_06_figure_07.png}\caption{Die vollständige Fermionentabelle: drei Quark-Farbzeilen oberhalb der farblosen Leptonzeile; die Quarkladungen und die drei Lepton-Dubletts sind zu sehen.}\lectureframe{00:18:55}\end{figure}
+
+Das Myon hat dieselbe Ladung und dieselben bekannten intrinsischen Quantenzahlen wie das Elektron, ist aber etwa zweihundertmal schwerer. Das Tau ist noch schwerer. Die Neutrinomassen sind sehr klein und waren in der Diskussion der Vorlesung nicht im Einzelnen bekannt. Bislang ergibt sich hier kein Prinzip, das das beobachtete Muster der Familienmassen erklärt.
+
+\begin{classroomqa}\audiencequestion{Warum heißen Leptonen, Baryonen und Mesonen so?\lecturetimestamp{00:19:02}}\lecturerresponse{Die historischen griechischen Wortwurzeln bedeuteten ungefähr leicht, schwer und dazwischenliegend. Diese massenbezogene Namensgebung erwies sich als irreführend. Das Myon wurde früher My-Meson genannt, weil seine Masse zwischen der Elektronen- und der Protonenmasse lag; seine Wechselwirkungen zeigen jedoch, dass es ein Lepton ist und einem Elektron viel ähnlicher als einem Pion. Heute bezeichnet Meson ein Hadron aus Quark--Antiquark und ein Boson; das Myon ist kein Meson.}\end{classroomqa}
+
+\section{Das Rätsel der Schwäche}
+
+\subsection{Ein konkreter geladener Stromprozess}
+
+Betrachten wir den Betazerfall des Neutrons als konkretes Diagramm. Die Zusammensetzung aus Valenzquarks lautet
+\begin{equation}
+  n=udd,\qquad p=uud.
+\end{equation}
+Ein Down-Quark geht in den Prozess
+\begin{equation}
+  d\longrightarrow u+W^-,
+\end{equation}
+über, und das geladene Boson erzeugt
+\begin{equation}
+  W^-\longrightarrow e^-+\bar\nu_e.
+\end{equation}
+Zusammen ergibt sich
+\begin{equation}
+  n\longrightarrow p+e^-+\bar\nu_e.
+\end{equation}
+Die beiden übrigen Valenzquarks laufen als Zuschauerteilchen weiter. Am ersten Vertex wird aus dem Neutron ein Proton; am zweiten wandelt dieselbe schwache Wechselwirkung, die ein Lepton-Dublett verbindet, das \(W^-\) in das beobachtete Elektron und Elektron-Antineutrino um.
+
+\subsection{Drei Kopplungen, drei sehr unterschiedliche Eindrücke}
+
+In der QED ist die Elektronenladung \(e\) die Vertexamplitude. Ihr Quadrat ergibt die charakteristische Emissionswahrscheinlichkeit; die üblichen Faktoren sind in natürlichen Einheiten in
+\begin{equation}
+  \alpha=\frac{e^2}{4\pi}\simeq\frac1{137}
+\end{equation}
+zusammengefasst. Die starke Wechselwirkung hat eine Kopplung \(g_s\), und bei einer typischen hadronischen Energieskala kann ihr Analogon \(\alpha_s\) von der Größenordnung \(0.2\) sein. Das ist viel größer als \(1/137\), deshalb ist die Gluonemission häufig, wenn ein Quark angestoßen wird.
+
+Sei \(g_w\) die Kopplung der geladenen schwachen Wechselwirkung. Ihr Quadrat ist nicht außerordentlich klein; in der hier verwendeten Größenordnungsabschätzung ist es mit der elektromagnetischen Kopplung vergleichbar. Dennoch wartet ein freies Neutron ungefähr fünfzehn Minuten, bevor es zerfällt, während ein starker Zerfall auf einer hadronischen Durchquerungszeit stattfinden kann. Die historische Abschätzung in der Vorlesung verwendet den älteren groben Wert von zwölf Minuten; beide Werte machen das Rätsel gleichermaßen unvermeidlich.\editorialnote{Die moderne mittlere Lebensdauer des freien Neutrons beträgt etwa \(8.8\times10^2\,{\rm s}\); zwischen wichtigen Messmethoden besteht weiterhin eine experimentelle Diskrepanz. Der grobe Wert der Vorlesung dient als pädagogische Größenskala, nicht als Präzisionswert.}
+\begin{quote}
+Wenn \(g_w\) nicht außerordentlich klein ist, wodurch werden schwache Prozesse dann schwach?
+\end{quote}
+
+Die Antwort kann nicht allein bei den Vertizes liegen. Jedes Feynman-Diagramm enthält auch Propagatoren, also Faktoren, die die Zwischenpropagation von einem Vertex zum anderen beschreiben.
+
+\section{Ein massiver Propagator im Ortsraum}
+
+\subsection{Die Vertizes sind nicht das ganze Diagramm}
+
+Das Betazerfallsdiagramm enthält zwei schwache Vertizes, die zwei Potenzen von \(g_w\) beitragen, und eine \(W\)-Linie, die sie verbindet. Bezeichnen wir den Propagator im Ortsraum mit \(\Delta(x-y)\), wobei \(x\) das Emissionsereignis und \(y\) das Absorptions- oder Umwandlungsereignis bezeichnet. Er ist der Amplitudenkern, der zur Übertragung der Feldstörung zwischen diesen Ereignissen gehört.
+
+Der exakte relativistische Propagator enthält mehr Struktur, als wir benötigen. Sein wichtiges qualitatives Merkmal ist seine Massenabhängigkeit. Bei kleinem raumartigem Abstand hat er eine Potenzsingularität, schematisch
+\begin{equation}
+  \Delta(d)\sim\frac1{d^2}.
+\end{equation}
+Ein masseloses Feld behält einen Potenzabfall. Ein massives Feld hingegen wird exponentiell unterdrückt, sobald der Abstand groß gegenüber seiner Compton-Skala wird. Die Kurve fällt dann stark ab.
+
+\subsection{Die natürlichen Einheiten bestimmen den Knick}
+
+Setzen wir
+\begin{equation}
+  c=\hbar=1.
+\end{equation}
+Dann gilt
+\begin{equation}
+  [m]=[E]=[p]=L^{-1}.
+\end{equation}
+Die bekannten Beziehungen erklären die Gleichungen: \(E=mc^2\) setzt Masse und Energie in Beziehung, während \(p\,x\) die Dimension von \(\hbar\) hat, sodass Impuls und Abstand inverse Einheiten besitzen. Die einzige Länge, die sich aus der Masse \(m\) bilden lässt, ist daher
+\begin{equation}
+  d_m\sim\frac1m.
+\end{equation}
+Mit wieder eingesetzten Konstanten ergibt sich die Compton-Wellenlänge
+\begin{equation}
+  d_m\sim\frac{\hbar}{mc},
+\end{equation}
+Ein schwereres Austauschteilchen hat eine kürzere effektive Reichweite.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_02.png}\caption{Dimensionen in natürlichen Einheiten und qualitativer Abfall des Propagators. Die schwarze Kurve setzt sich mit einem Potenzabfall fort; die rote Kurve für ein massives Teilchen knickt nahe der inversen Massenskala nach unten ab.}\lectureframe{00:27:19}\end{figure}
+
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[x=1.0cm,y=0.9cm]
+  \draw[->] (0,0) -- (7,0) node[right] {$d$};
+  \draw[->] (0,0) -- (0,5) node[above] {$|\Delta(d)|$};
+  \draw[thick]
+    plot[smooth] coordinates {(0.45,4.5) (0.9,3.3) (1.6,2.5)
+      (2.5,1.9) (3.7,1.45) (5.1,1.12) (6.4,0.9)};
+  \draw[thick,red]
+    plot[smooth] coordinates {(0.45,4.5) (0.9,3.3) (1.6,2.5)
+      (2.5,1.9) (3.2,1.55) (3.7,0.95) (4.2,0.36) (4.8,0.1)};
+  \draw[dashed] (3.4,0) -- (3.4,1.4);
+  \node at (5.7,1.4) {$m=0$};
+  \node[red] at (4.75,0.72) {$m>0$};
+  \node[below] at (3.4,0) {$d\sim m^{-1}$};
+\end{tikzpicture}\caption{Eine übersichtliche schematische Darstellung der Argumentation an der Tafel. Sie ist keine exakte Formel für einen vierdimensionalen Propagator, sondern veranschaulicht die durch die Masse bestimmte Reichweite.}\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was ist auf der vertikalen Achse aufgetragen?
+\lecturetimestamp{00:28:30}}
+\lecturerresponse{Der Betrag des Propagators, bezeichnet mit \(\Delta\). Sein Quadrat geht in die Wahrscheinlichkeit ein, sobald die vollständige Amplitude, die äußeren Zustände und die Phasenraumfaktoren berücksichtigt werden. Die Abbildung soll zeigen, dass die Amplitude für den Austausch eines massiven Teilchens über große Entfernungen rasch unterdrückt wird.\editorialnote{Ein Propagator für sich genommen ist keine direkt messbare Wahrscheinlichkeitsamplitude für ein Teilchen, das einer klassischen Bahn folgt. Die Formulierung in der Vorlesung liefert eine nützliche Abschätzung der Reichweite: Der Propagator ist ein Faktor in der vollständigen Streuungs- oder Zerfallsamplitude.}}
+\end{classroomqa}
+
+\section{Fourier-Transformation und Fermi-Grenzfall}
+
+\subsection{Experimente geben Impulse vor}
+
+Ein Experiment misst gewöhnlich äußere Impulse und nicht die beiden Raumzeitpunkte, an denen eine interne Linie beginnt und endet. Beim Betazerfall wird der vom \(W\) getragene Impuls aus der Differenz zwischen Neutronen- und Protonenimpuls erschlossen und ist gleich dem Gesamtimpuls von Elektron und Antineutrino. Die Propagatoren im Orts- und Impulsraum sind durch eine Fourier-Transformation miteinander verknüpft.
+\begin{equation}
+  k=p_n-p_p=p_e+p_{\bar\nu_e}.
+\end{equation}
+
+In der an der Tafel verwendeten Konvention mit positivem Nenner gilt
+\begin{equation}
+  \widetilde{\Delta}_W(k)=\frac1{k^2+m_W^2},
+  \qquad
+  \widetilde{\Delta}_\gamma(k)=\frac1{k^2}.
+\end{equation}
+Der Propagator des masselosen Photons wird bei kleinem Impulsübertrag groß. Der Propagator des massiven \(W\) überschreitet niemals eine Skala der Größenordnung \(1/m_W^2\). Beim Betazerfall gilt
+\begin{equation}
+  |k^2|\ll m_W^2,
+\end{equation}
+Daher sind die Einzelheiten von \(k^2\) vernachlässigbar und
+\begin{equation}
+  \widetilde{\Delta}_W(k)\simeq\frac1{m_W^2}.
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{Müsste der relativistische Ausdruck \(k^2\) ein Minuszeichen zwischen Energie und räumlichem Impuls enthalten?\lecturetimestamp{00:35:11}}\lecturerresponse{Ja. Bei einer Minkowski-Metrik mit Signatur meist minus gilt \(k^2=(k^0)^2-\boldsymbol{k}^2\), und der skalare Nenner lautet konventionell \(k^2-m_W^2+i\epsilon\). Die Tafel verwendet den äquivalenten positiven raumartigen oder euklidischen Betrag. Beim niederenergetischen Betazerfall ist der übertragene Viererimpuls klein gegenüber \(m_W\), sodass beide Schreibweisen dieselbe Unterdrückung um den Faktor \(1/m_W^2\) ergeben, bis auf ein für die Amplitude irrelevantes Vorzeichen.}\end{classroomqa}
+
+\subsection{Die Niederenergie-Amplitude}
+
+Zwei schwache Vertizes und ein Propagator ergeben
+\begin{align}
+  \mathcal A_{\rm weak}
+  &\sim g_w\,\widetilde{\Delta}_W(k)\,g_w\\
+  &\sim\frac{g_w^2}{k^2+m_W^2}
+  \simeq\frac{g_w^2}{m_W^2}.
+\end{align}
+Das Quadrieren der Amplitude führt zur charakteristischen Unterdrückung
+\begin{equation}
+  |\mathcal A_{\rm weak}|^2
+  \sim\frac{g_w^4}{m_W^4},
+\end{equation}
+bevor die für den jeweiligen Zerfall passenden kinematischen und Phasenraumfaktoren berücksichtigt werden. Bei Kernenergien ist die schwache Wechselwirkung nicht deshalb schwach, weil ihre elementare Eichkopplung absurd klein wäre, sondern weil ihr Vermittler schwer ist.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}\caption{Der schwache Prozess Neutron--Proton und der vom internen Linienzug getragene Impulsübertrag, wie bei der Klärung des Vorzeichens des Propagators besprochen.}\lectureframe{00:35:40}\end{figure}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_04.png}\caption{Die Topologie des Betazerfalls neben der eingerahmten Niederenergieabschätzung \(g_w^2/m_W^2\).}\lectureframe{00:37:25}\end{figure}
+
+Numerisch ist \(m_W\) nach der Genauigkeit dieser Vorlesung ungefähr hundert Protonenmassen schwer. Ein Faktor \(m_W^{-2}\) in der Amplitude wird zu \(m_W^{-4}\) in der Zerfallsrate. So führt selbst eine Kopplung von gewöhnlicher Größe in einer Eichtheorie zu einer sehr langen Lebensdauer.
+
+\begin{classroomqa}\audiencequestion{Geht es um eine Unterdrückung um den Faktor eine Million oder eine Milliarde, und wie wurde die Masse des \(W\) ursprünglich bestimmt?\lecturetimestamp{00:38:11}}\lecturerresponse{Die grobe Überschlagsrechnung der Vorlesung deutet auf eine Unterdrückung der Wahrscheinlichkeit bei schwachen Niederenergieprozessen um etwa eine Milliarde gegenüber einem nicht unterdrückten hadronischen Prozess hin. Historisch wurden bei Niederenergieexperimenten \(g_w\) und \(m_W\) nicht getrennt gemessen. Gemessen wurde die kleine Kombination \(g_w^2/m_W^2\), die Fermi-Konstante genannt wird. Nachdem die Kopplung mit der elektroschwachen Theorie verknüpft worden war, sagte diese Kombination einen sehr schweren Vermittler voraus; spätere Beschleuniger erzeugten das \(W\) direkt und bestimmten seine Masse.}\end{classroomqa}
+
+Bei Impulsen weit unterhalb von \(m_W\) sieht jedes Experiment nahezu dieselbe Konstante:
+\begin{equation}
+  G_F\sim\frac{g_w^2}{m_W^2}.
+\end{equation}
+Deshalb konnte Fermi den Betazerfall in den 1930er Jahren als punktartige Vier-Fermionen-Wechselwirkung beschreiben, lange bevor der Vermittler beobachtet wurde. Mit steigenden Kollisionsenergien wurden Experimente empfindlich für die im Propagator verborgene Impulsabhängigkeit. So bestätigte sich, dass die effektive Konstante der Niederenergie-Grenzfall eines Austauschs eines massiven Teilchens war.\editorialnote{Bei der üblichen Normierung der elektroschwachen Theorie auf Baumgraphenniveau gilt
+\[
+  \frac{G_F}{\sqrt2}=\frac{g^2}{8m_W^2}.
+\]
+Die Vorlesung lässt Zahlen- und Spinorfaktoren bewusst weg und berücksichtigt nur die Skalierung \(G_F\sim g_w^2/m_W^2\). Das \(W\) und das \(Z\) wurden 1983 am CERN direkt entdeckt; die beiläufige Datierung der Vorlesung auf die mittleren bis späten 1970er Jahre liegt vor ihrer direkten Beobachtung.}
+
+Die Vorstellung, dass schwere Teilchen die schwachen Wechselwirkungen vermitteln könnten, kam in der Mitte des zwanzigsten Jahrhunderts auf. Die Vorlesung nennt Julian Schwinger als einen der Theoretiker, die diese Möglichkeit untersuchten, und merkt an, dass der Buchstabe \(W\) wahrscheinlich für „weak“ stand. Niederenergiedaten ließen bereits darauf schließen, dass ein solcher Vermittler auf der Skala der Kernphysik extrem schwer sein müsste – lange bevor Beschleuniger genügend Energie hatten, um ihn als reales Teilchen zu erzeugen.
+
+\subsection{Drei unabhängige Einflussgrößen auf eine Zerfallsrate}
+
+Eine Frage aus dem Unterricht zur Kernbindung unterscheidet drei logisch verschiedene Einflussgrößen auf einen Übergang:
+\begin{enumerate}\item Vertexkopplungskonstanten;
+\item Propagatoren, einschließlich Massen und Impulsabhängigkeit;
+\item verfügbare Energie vom Anfangs- zum Endzustand und Phasenraum.
+\end{enumerate}
+Bindung kann einen Zerfallskanal schließen, weil der Endzustand eine höhere Energie als der Anfangszustand hätte. Das ist ein kinematisches Verbot, keine zusätzliche Verringerung von \(g_w\) und auch keine Änderung von \(m_W\). Bleibt ein Kanal offen, steht aber nur wenig Energie zur Verfügung, kann sein Phasenraum dennoch stark unterdrückt sein.
+
+\begin{classroomqa}\audiencequestion{Unterdrücken das Feld oder die Bindung eines nahe gelegenen Protons den Betazerfall über denselben Propagatormechanismus?\lecturetimestamp{00:41:13}}\lecturerresponse{Nicht im hier behandelten Beispiel. Die Bindung ist von Bedeutung, weil sie die Energien der Anfangs- und Endzustände des Kerns verändert. Ein Prozess kann nicht stattfinden, wenn der Endzustand energetisch nicht zugänglich ist. Kopplungen, Propagatoren und verfügbare Energie sind drei getrennte Bestandteile.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Sind die Kopplungskonstanten wirklich konstant?\lecturetimestamp{00:42:55}}\lecturerresponse{Nur bei einer festgelegten Skala. Quantenkorrekturen lassen effektive Kopplungen mit dem Impuls oder dem Abstand laufen. In der vorliegenden Argumentation wird jede Kopplung auf der für den Prozess relevanten Skala betrachtet; die Skalenabhängigkeit wird später behandelt.}\end{classroomqa}
+
+\section{Virtueller Austausch ohne Aufgabe der Erhaltungssätze}
+
+\subsection{Warum die schwere Linie auftreten kann}
+
+Beim gewöhnlichen Neutronenzerfall reicht die Energie nicht aus, um ein freies, reelles \(W\) zu erzeugen. Das \(W\) im Diagramm ist intern und liegt außerhalb der Massenschale. Die Vorlesung führt diesen Sachverhalt mit der traditionellen Energie--Zeit-Abschätzung ein:
+\begin{equation}
+  \Delta E\,\Delta t\lesssim\hbar:
+\end{equation}
+Eine Zwischenkonfiguration, deren klassische Energie um \(\Delta E\) falsch zu sein scheint, kann nur während einer Zeitspanne der Größenordnung
+\(\hbar/\Delta E\)
+beitragen.
+
+Die Analogie zum Tunneleffekt macht das gemeinte Bild anschaulich. Man betrachte ein Alphateilchen in einem Kernpotentialtopf. Seine Energie liegt unterhalb des Barrierenmaximums, sodass es klassisch nicht entkommen kann. Quantenmechanisch reicht die Wellenfunktion durch die Barriere, und das Teilchen kann auf der anderen Seite an einem Punkt mit derselben Gesamtenergie austreten wie anfangs. Versuchen wir, das Innere der Barriere als gewöhnliche klassische Bahn zu beschreiben, scheint die potenzielle Energie zu groß; die kinetische Energie müsste negativ sein. Dieses scheiternde klassische Bild ist vergleichbar mit dem Versuch, die interne Linie \(W\) als reales Teilchen zu betrachten.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_06.png}\caption{Die Analogie zum Tunneleffekt: Der Anfangspunkt und der markierte Punkt auf der abfallenden Seite haben dieselbe Gesamtenergie, während die dazwischenliegende Barriere klassisch verboten ist.}\lectureframe{00:46:00}\end{figure}
+
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[x=1.0cm,y=0.9cm]
+  \draw[->] (0,0) -- (7,0) node[right] {$x$};
+  \draw[->] (0,0) -- (0,4.8) node[above] {$V(x)$};
+  \draw[thick]
+    plot[smooth] coordinates {(0.3,1.4) (1.0,0.7) (1.7,0.55)
+      (2.1,0.9) (3.2,3.9) (4.2,2.1) (5.0,0.75) (6.6,0.18)};
+  \draw[dashed] (1.7,0.75) -- (5.0,0.75);
+  \fill (1.7,0.75) circle (0.06);
+  \fill (5.0,0.75) circle (0.06);
+  \node at (3.35,0.35) {$\Delta E\,\Delta t\lesssim\hbar$};
+\end{tikzpicture}\caption{Eine gut lesbare Rekonstruktion der Barriere und der Punkte gleicher Energie.}\end{figure}
+
+Im Bild des Betazerfalls kann das Neutron in ein Proton und ein internes \(W^-\) fluktuieren, doch die schwere Linie muss rasch enden. Das Boson kann reabsorbiert werden, wodurch das Neutron wiederhergestellt wird, oder die Linie kann am zweiten Vertex enden und das viel leichtere Elektron und Antineutrino erzeugen. Die Gesamtenergien von Anfangs- und Endzustand stimmen überein.\editorialnote{An jedem Feynman-Vertex sind Energie und Impuls erhalten. Virtuelle Teilchen leihen sich nicht buchstäblich Energie, um sie später zurückzuzahlen. Präzise gesagt wird über die Viererimpulse einer internen Linie integriert; diese müssen nicht die Massenschalenbedingung für reale Teilchen erfüllen, \(k^2=m_W^2\). Die Sprache der Unschärferelation und des Tunneleffekts bleibt erhalten, weil sie den Erklärungsweg der Vorlesung bildet; die moderne Formulierung der Quantenfeldtheorie lautet jedoch, dass das Teilchen außerhalb der Massenschale liegt.}
+
+\subsection{Reale W-Bosonen}
+
+Ein hinreichend energiereicher Beschleuniger kann ein reales \(W\) erzeugen. Es hat dann eine eigene Ruhelebensdauer, die nichts mit einer vermuteten Unschärfezeit für die virtuelle Linie zu tun hat. Ein geboostetes reales \(W\) lebt im Labor aufgrund der gewöhnlichen relativistischen Zeitdilatation länger. Beim leptonischen Zweikörperzerfall eines ruhenden \(W\) gilt
+\begin{equation}
+  W^-\longrightarrow e^-+\bar\nu_e,
+\end{equation}
+Das Elektron und das Antineutrino tragen große kinetische Energien und fliegen annähernd in entgegengesetzte Richtungen; jede ihrer Energien ist von der Größenordnung \(m_W/2\). Die Ruheenergie ist nicht verschwunden, sondern in Energie des Endzustands übergegangen. Auch Myon- und Taukanäle sowie Quarkkanäle sind möglich.
+
+\begin{classroomqa}
+\audiencequestion{Wie lange lebt ein reales \(W\), und lässt sich seine Lebensdauer aus derselben Kopplung berechnen?
+\lecturetimestamp{00:49:49}}
+\lecturerresponse{Ja. Man berechnet jede erlaubte Zerfallsamplitude, quadriert sie, integriert über den Phasenraum der Endzustände und summiert die partiellen Zerfallsbreiten. Die inverse Gesamtbreite ergibt die Lebensdauer. Die gesprochene numerische Schätzung im Transkript ist verstümmelt; der qualitative Punkt ist jedoch, dass die Eigenlebensdauer extrem kurz ist und sich bei einem bewegten \(W\) wie üblich durch Zeitdilatation verlängert.\editorialnote{Mit der gemessenen Breite
+\(\Gamma_W\simeq2.1\,{\rm GeV}\) ergibt sich
+\(\tau_W=\hbar/\Gamma_W\simeq3.2\times10^{-25}\,{\rm s}\). Diese moderne Zahl bringt Klarheit in den entstellten Zahlenaustausch, ohne sie der Vorlesung zuzuschreiben.}}
+\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Wie wird aus einer quadrierten Amplitude eine Zerfallsrate und damit eine Lebensdauer?\lecturetimestamp{00:50:52}}\lecturerresponse{Das quadrierte Matrixelement wird mit der Dichte der verfügbaren Endzustände, Erhaltungs-Deltafunktionen und Normierungsfaktoren kombiniert. So erhält man eine Übergangswahrscheinlichkeit pro Zeiteinheit, die Zerfallsbreite \(\Gamma\). Die Überlebenswahrscheinlichkeit lautet \(e^{-\Gamma t}\) in Einheiten mit \(\hbar=1\), also \(\tau=1/\Gamma\) oder mit wieder eingesetzten Einheiten \(\tau=\hbar/\Gamma\). Eine kleine schwache Zerfallsbreite bedeutet daher eine lange Lebensdauer.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Kann man einem Teilchen, das durch die Barriere tunnelt, eine Geschwindigkeit zuordnen?\lecturetimestamp{00:52:42}}\lecturerresponse{Man kann eine erschlossene Entfernung durch eine erschlossene Durchquerungszeit teilen, doch diese Größe sollte nicht als Geschwindigkeit eines klassischen Teilchens oder eines Signals gedeutet werden. Der Versuch, eine Bahn im Inneren der Barriere zu messen, verändert den Zustand und zerstört das ursprüngliche Tunnelexperiment.}\end{classroomqa}
+
+\section{Was bedeutet es, ein virtuelles Teilchen zu beobachten?}
+
+\subsection{Äußere Teilchen und interne Linien}
+
+Reale Teilchen sind einlaufende und auslaufende asymptotische Zustände, die sich weit entfernt vom Wechselwirkungsgebiet präparieren oder nachweisen lassen. Virtuelle Teilchen sind interne Linien in einer störungstheoretischen Darstellung der Amplitude. Sie sind keine zusätzlichen, verborgenen Spuren im Detektor.
+
+\begin{classroomqa}\audiencequestion{Gibt es eine klare Definition des Unterschieds zwischen einem realen und einem virtuellen Teilchen?\lecturetimestamp{00:55:05}}\lecturerresponse{Ein reales Teilchen ist ein äußerer Zustand auf der Massenschale, der in das Wechselwirkungsgebiet eintritt oder es verlässt. Ein virtuelles Teilchen ist eine interne Linie außerhalb der Massenschale in einem Feynman-Diagramm. Letztere ist Teil der mathematischen Entwicklung und kein unabhängig beobachtetes Objekt.}\end{classroomqa}
+
+Um einen Prozess aufzulösen, der nur \(\Delta t\) dauert, benötigt eine Sonde Frequenzen der Größenordnung \(1/\Delta t\) und damit eine Energie der Größenordnung \(\hbar/\Delta t\). Ein Photon, dessen Auflösung ausreicht, um ein Alphateilchen unter einer hohen Barriere sichtbar zu machen, kann ihm die Energie zuführen, die es in den Barrierenbereich hebt. Ebenso kann eine Sonde, die energiereich genug ist, um die kurzlebige interne Linie \(W\) aufzulösen, ein reales \(W\) erzeugen. Der Beobachtungsversuch macht aus dem ursprünglichen Prozess ein anderes Experiment.
+
+Die Vorlesung beschreibt dies als wiederkehrende quantenmechanische Frustration: Der Eingriff, der nötig ist, um das verbotene Zwischenbild zu überprüfen, liefert gerade die Energie, durch die die scheinbar verbotene Konfiguration real wird.
+
+\subsection{Fluktuationen eines Protons}
+
+In der Störungstheorie enthält ein Protonenzustand Amplituden für Konfigurationen wie
+\begin{equation}
+  p\longleftrightarrow n+W^+,
+\end{equation}
+und ein Neutron entsprechend
+\begin{equation}
+  n\longleftrightarrow p+W^-.
+\end{equation}
+Greift keine andere Wechselwirkung ein, wird das interne Boson reabsorbiert. Eine harte Sonde kann stattdessen ein \(W\) unter den auslaufenden Teilchen zurücklassen. Man kann das als Herausschlagen einer Fluktuation oder als Erzeugung eines \(W\) bezeichnen. Die Formulierung ist unterschiedlich; die messbare Aussage über die Amplitude des Endzustands ist dieselbe.
+
+\begin{classroomqa}\audiencequestion{Wenn eine harte Sonde ein auslaufendes \(W\) erzeugt, hat sie dann ein bereits vorhandenes Teilchen herausgeschlagen oder ein neues erzeugt?\lecturetimestamp{01:01:20}}\lecturerresponse{Beide Bilder können die mathematische Beschreibung strukturieren. Eine zeitgeordnete Beschreibung besagt, dass das Proton zu \(n+W^+\) fluktuierte und die Sonde das Neutron vor der Reabsorption entfernte; eine andere besagt, dass die Kollision das Endzustands-\(W\) erzeugte. Invariant ist die berechnete Wahrscheinlichkeit für den beobachteten Endzustand, nicht eine eindeutige klassische Erzählung darüber, was vor der Messung vorhanden war.}\end{classroomqa}
+
+Eine Erhöhung der Kollisionsenergie legt keinen festen Bestand von Objekten frei, die zuvor im Target verborgen waren. Sie eröffnet zahlreiche mögliche Endzustände: ein \(W\), mehrere Bosonen, Quarkjets, Hadronen und andere Teilchen, die mit den Erhaltungsbedingungen der Quantenzahlen vereinbar sind. Selbst ein elementares Feld kann bei hinreichend heftigem Stoß Protonen und viele andere zusammengesetzte Objekte hervorbringen. Was herauskommt, muss nicht zuvor als Bestandteil vorhanden gewesen sein. Die Vorlesung treibt den Gedanken bis ins Komische: Wenn Energie und Quantenzahlen es zulassen, sind selbst Tische, Stühle oder ein Wasserstoffatom als geradezu fantastikwahrscheinliche Endanordnungen logisch nicht ausgeschlossen. Der Scherz enthält eine ernsthafte Warnung davor, Elementarität durch eine naive Bestandsaufnahme der Kollisionsprodukte zu definieren.
+
+\subsection{Vakuumfluktuationen und Temperatur}
+
+Eine Fluktuation, die mit einem Proton verbunden ist, ist nicht dasselbe wie ein Vakuumdiagramm. Erstere ist Bestandteil eines wechselwirkenden Protonenzustands; eine Vakuumfluktuation hat keine äußere Protonenlinie. In beiden Fällen kann eine hinreichend energiereiche Sonde reale Teilchen erzeugen, die einem erlaubten Endzustand entsprechen. Zwei energiereiche Photonen können beispielsweise ein Elektron--Positron-Paar erzeugen, wenn die Schwerpunktsenergie über der Schwelle liegt.
+
+\begin{classroomqa}
+\audiencequestion{Sind diese Reaktionen temperaturabhängig?
+\lecturetimestamp{01:05:17}}
+\lecturerresponse{Die elementare Amplitude erfordert kein Wärmebad.
+Die Temperatur ist statistisch von Bedeutung: Ein System mit hoher Temperatur enthält viele
+Teilchen mit hoher kinetischer Energie, sodass Stöße, bei denen die Schwelle überschritten wird, häufig werden.
+Die Erwärmung eines Systems mit einem gebundenen Alphateilchen kann zusätzlich zum Quantentunneln auch
+genügend Energie für einen Austritt über die Barriere liefern.
+Einige wenige isolierte energiereiche Teilchen bilden einen Strahl; viele thermisch
+verteilte energiereiche Teilchen bilden ein heißes Wärmebad.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist das \(W\), das bei einer Fluktuation des Protons emittiert wird, eine Vakuumfluktuation?
+\lecturetimestamp{01:06:56}}
+\lecturerresponse{Nein. Das interne \(W\) in
+\(p\leftrightarrow n+W^+\) ist eine Fluktuation des wechselwirkenden Protonzustands.
+Ein abgeschlossener virtueller Prozess ohne äußeres Proton ist eine Vakuumfluktuation.
+Beide folgen denselben Regeln der Feldtheorie, gehören aber zu unterschiedlichen Amplituden.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum ist das Antineutrino am leptonischen \(W\)-Vertex erforderlich?
+\lecturetimestamp{01:08:51}}
+\lecturerresponse{Es trägt die erhaltenen Leptonenquantenzahlen bei und ist Teil des grundlegenden geladenen Stromvertices, das \(e\), \(\nu_e\) und \(W\) verbindet.
+Der Überstrich unterscheidet das auslaufende Elektron-Antineutrino von einem Neutrino.}
+\end{classroomqa}
+
+\section{Wie weit lässt sich die Energieumwandlung treiben?}
+
+Die Vorlesung treibt nun die Regel, dass Energie Teilchen erzeugen kann, absichtlich bis ins Absurde. Könnte aus einer Kaffeebohne ein Schokoladenkuchen werden?
+Einen praktikablen Prozess dieser Art gibt es nicht, doch die relativistische Quantentheorie schreibt nicht vor, dass die Endmaterie dem anfänglichen Objekt ähneln muss. Erforderlich sind genügend Energie, die richtigen erhaltenen Ladungen und eine von null verschiedene Amplitude. Ein Kilogramm entspricht einer Energie in der Größenordnung von
+\begin{equation}
+  Mc^2\sim9\times10^{16}\ {\rm J},
+\end{equation}
+sodass jeder mikroskopische Stoß, der ein bestimmtes Objekt von der Masse eines Kilogramms zusammensetzen würde, unvorstellbar unwahrscheinlich wäre.
+
+Die Planck-Masse,
+\begin{equation}
+  m_{\rm P}=\sqrt{\frac{\hbar c}{G}}
+  \simeq2.2\times10^{-5}\ {\rm g},
+\end{equation}
+ist keine maximal mögliche Masse. Sie ist die Skala, bei der die Gravitation für ein Quant stark wird, das auf seine Compton-Wellenlänge lokalisiert ist. Ein Kilogramm enthält ungefähr \(5\times10^7\) Planck-Massen.
+
+\begin{classroomqa}
+\audiencequestion{Können bei Stößen oberhalb der Planck-Skala beliebig schwere Objekte wie Stühle oder Planeten entstehen?
+\lecturetimestamp{01:10:37}}
+\lecturerresponse{Bei transplanckscher Schwerpunktsenergie, die auf einen kleinen Raumbereich konzentriert ist, ist der Gravitationskollaps das mit Abstand naheliegendste Ergebnis: ein Schwarzes Loch. Ein stark geordnetes makroskopisches Objekt wäre eine außerordentlich seltene Fluktuation. Die Vorlesung beruft sich auf die Zeitumkehr: Da ein Stuhl in ein Schwarzes Loch fallen kann, ist die umgekehrte Amplitude nicht exakt null. Ihre Wahrscheinlichkeit wird durch einen enormen Entropiefaktor unterdrückt; Möglichkeit darf also nicht mit praktischer Wahrscheinlichkeit verwechselt werden.}
+\end{classroomqa}
+
+Dieser Exkurs bekräftigt die frühere Warnung. Die Quantenfeldtheorie sagt Amplituden zwischen festgelegten Anfangs- und Endzuständen voraus. Die anschauliche Behauptung, jedes Produkt sei vor dem Aufprall buchstäblich im Ziel enthalten gewesen, gehört nicht zur Vorhersage.
+
+\section{Bosonen, ihre Wechselwirkungen und ihre Statistik}
+
+\subsection{Photonen können streuen}
+
+Ein Boson zu sein bedeutet nicht, wechselwirkungsfrei zu sein. Die Bezeichnungen Boson und Fermion legen die Austauschstatistik fest; Wechselwirkungsvertices sind davon unabhängige dynamische Eigenschaften.
+Klassische Lichtstrahlen durchdringen einander normalerweise, weil es in der QED auf Baumebene kein Vier-Photonen-Vertex gibt und die Streuung von Photonen--Photonen bei niedrigen Energien äußerst gering ist. Dennoch können zwei Photonen über eine virtuelle Elektron--Positron-Schleife wechselwirken:
+\begin{equation}
+  \gamma+\gamma
+  \longrightarrow(e^-e^+)_{\rm virtual}
+  \longrightarrow\gamma+\gamma.
+\end{equation}
+Ist die Schwerpunktsenergie hoch genug, können sie stattdessen ein reelles Paar erzeugen,
+\begin{equation}
+  \gamma+\gamma\longrightarrow e^-+e^+.
+\end{equation}
+Optische Photonen haben Energien von einigen Elektronenvolt, während die Paarbildungsschwelle in der Größenordnung von \(2m_e c^2\approx1.02\,{\rm MeV}\) liegt. Der virtuelle Prozess ist bei gewöhnlichen optischen Energien daher stark unterdrückt. Deshalb scheinen sich kreuzende Lichtstrahlen nicht gegenseitig zu beeinflussen.
+
+\begin{classroomqa}
+\audiencequestion{Wechselwirken virtuelle \(W\)-Bosonen mit anderen Bosonen einfach deshalb, weil sie Bosonen sind?
+\lecturetimestamp{01:12:47}}
+\lecturerresponse{Sie können wechselwirken, aber nicht allein deshalb, weil sie der Bose-Statistik folgen. Die Eichvertices legen die dynamischen Wechselwirkungen fest. Die Statistik bestimmt hingegen, wie sich Mehrteilchenamplituden beim Austausch identischer Teilchen verhalten. Photonen wechselwirken schwach über geladene virtuelle Teilchen; außerdem enthält die elektroschwache Theorie direkte nichtabelsche Selbstwechselwirkungen von \(W\)-Bosonen.}
+\end{classroomqa}
+
+\subsection{Bose-Verstärkung ist keine Kraft}
+
+Der Unterschied zwischen Fermionen- und Bosonenstatistik tritt deutlich zutage, wenn sich mehrere identische Teilchen in nahe beieinanderliegenden Quantenzuständen befinden. Bosonen begünstigen die Mehrfachbesetzung; Fermionen schließen eine identische Besetzung aus. Bei einer typischen hochenergetischen Kollision bewegen sich die Teilchen in gut getrennte Impulszustände, sodass dieser statistische Effekt weniger auffällig sein kann als bei einem Laser oder einem Kondensat.
+
+Grundsätzlich unterliegen \(W\)-Bosonen derselben Bose-Verstärkung. Die Vorlesung scherzt, man könne sich ein System vorstellen, das \(W\)-Bosonen lasert. Ihre enorme Masse und extrem kurze Lebensdauer machen ein solches Gerät völlig unpraktikabel, doch ihre Statistik ist tatsächlich bosonisch.
+
+\begin{classroomqa}
+\audiencequestion{Welche Farbe hat ein Proton oder Neutron?
+\lecturetimestamp{01:18:41}}
+\lecturerresponse{Ein physikalisches Hadron ist ein Farbsingulett und wird oft als farblos oder weiß bezeichnet. Die Kurzform besagt, dass ein Baryon ein rotes, ein grünes und ein blaues Quark enthält. Genauer gesagt ist seine Farbwellenfunktion die antisymmetrische Superposition
+\[
+  |{\rm singlet}\rangle
+  =\frac1{\sqrt6}\epsilon_{abc}|q^a q^b q^c\rangle,
+\]
+und keine klassische Zuordnung einer festen Farbe zu jedem namentlich bezeichneten Quark.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wird Bose-Kondensation in dieser Vorlesung behandelt?
+\lecturetimestamp{01:19:25}}
+\lecturerresponse{Ja, im Zusammenhang mit dem Higgs-Phänomen. Ein überall im Vakuum von null verschiedenes Higgs-Feld ist in wichtigen Aspekten einem bosonischen Kondensat ähnlich. Die Analogie wird erläutert, nachdem die spontane Symmetriebrechung eingeführt worden ist.\editorialnote{Der Vakuumerwartungswert des Higgs-Feldes ist nicht wörtlich ein gewöhnliches Gas aus auf der Massenschale liegenden Higgs-Teilchen, die denselben Zustand besetzen. Die Kondensation ist eine aufschlussreiche Analogie für ein kohärentes bosonisches Feld und ein ausgewähltes Vakuum, aber keine vollständige mikroskopische Identifikation.}}
+\end{classroomqa}
+
+\section{Das fehlende neutrale schwache Boson}
+
+Kehren wir nun zur Gruppentabelle zurück. Ist die horizontale schwache Symmetrie \(SU(2)\), so hat sie
+\begin{equation}
+  \dim SU(2)=3
+\end{equation}
+Generatoren und damit drei Eichfelder. Die geladenen Kombinationen \(W^+\) und \(W^-\) entsprechen nur zwei davon. Ein drittes, neutrales Feld ist erforderlich.
+Es ist eng mit dem beobachteten \(Z\)-Boson verwandt, aber nicht einfach das Photon. Die genauen neutralen Kombinationen umfassen sowohl das dritte \(SU(2)_L\)-Feld als auch das \(U(1)_Y\)-Feld. Diese Mischung und die korrekte Definition der elektrischen Ladung werden bewusst auf die nächste Vorlesung verschoben.
+
+\section{Spontane Symmetriebrechung}
+
+\subsection{Eine symmetrische Wahl kann instabiles Schwanken hervorbringen}
+
+Stellen wir uns einen runden Esstisch vor, an jedem Platz liegt links und rechts je ein Besteckteil. Bevor sich jemand bewegt, sind links und rechts gleichwertig. Sobald ein Gast nach rechts greift, ist jede benachbarte Wahl festgelegt, und der ganze Tisch ordnet sich rechtsherum an. Die Regeln waren symmetrisch, doch die tatsächlich verwirklichte Konfiguration wählte eine von zwei Möglichkeiten. Die Geschichte ist nur eine Analogie, veranschaulicht aber genau die Kombination, die wir benötigen: Symmetrie, mehrere gleichwertige Ergebnisse und eine Instabilität, durch die eine beliebig kleine Störung global eines davon auswählt.
+
+\subsection{Das Kopf--Zahl-Gitter}
+
+Betrachten wir als einfacheres Modell ein Gitter mit einer Zwei-Zustands-Variablen \(s_i=\pm1\) an jedem Gitterplatz. Nennen wir \(+1\) Kopf und \(-1\) Zahl. Benachbarte Gitterplätze sollen bevorzugt gleich ausgerichtet sein:
+\begin{equation}
+  H=-J\sum_{\langle ij\rangle}s_i s_j,
+  \qquad J>0.
+\end{equation}
+Parallele Nachbarn tragen weniger zur Energie bei als antiparallele. Daher gibt es zwei entartete Grundzustände,
+\begin{equation}
+\begin{aligned}
+  s_i&=+1\quad\text{for every }i,
+  \\
+  s_i&=-1\quad\text{for every }i.
+\end{aligned}
+\end{equation}
+Der Hamiltonoperator ist unter der globalen Umkehrung \(s_i\to-s_i\) invariant, doch keiner der beiden ausgewählten Grundzustände ist es.
+
+Fixieren wir nun einen sehr weit entfernten Randspin auf Kopf. In einem gewöhnlichen System mit kurzreichweitigen Wechselwirkungen könnte man erwarten, dass ein einzelner, weit entfernter Freiheitsgrad hier keinen Einfluss hat. In der geordneten Phase wählt diese Randbedingung jedoch das Vakuum mit lauter Kopfzuständen aus. Ist es einmal ausgewählt, kostet ein einzelner Zahlzustand im Meer von Kopfzuständen Energie, weil er nicht mit seinen Nachbarn übereinstimmt. Lokale Anregungen werden relativ zum ausgewählten Grundzustand definiert, obwohl die zugrunde liegenden Gleichungen die Kopf--Zahl-Symmetrie bewahren.
+
+\subsection{Explizite Symmetriebrechung und Domänenwände}
+
+Bei expliziter Symmetriebrechung würde ein lokaler Bias hinzugefügt:
+\begin{equation}
+  H_{\rm explicit}
+  =-J\sum_{\langle ij\rangle}s_i s_j-h\sum_i s_i,
+  \qquad h\ne0.
+\end{equation}
+Dann haben Kopf und Zahl bereits an einem einzelnen Gitterplatz unterschiedliche Energien, und es gibt nur ein bevorzugtes Vakuum. Bei spontaner Symmetriebrechung gilt \(h=0\): Die lokalen Regeln sind symmetrisch, und die beiden Vakua bleiben entartet, aber das System befindet sich in einem davon.
+
+Nehmen wir stattdessen an, der äußerste linke Rand bestehe ganz aus Kopfzuständen und der äußerste rechte ganz aus Zahlzuständen. Die Konfiguration niedrigster Energie muss zwischen den beiden Vakua übergehen. Die Grenzfläche ist eine Domänenwand.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.9\textwidth]{lecture_06_figure_08.png}\caption{Das Kopf--Zahl-Gitter, geteilt durch eine gestrichelte Domänenwand. Entgegengesetzte Randbedingungen zwingen das System, eine Grenzfläche zwischen den beiden entarteten geordneten Zuständen zu enthalten.}
+\lectureframe{01:30:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Worin unterscheidet sich spontane Symmetriebrechung von gewöhnlicher expliziter Symmetriebrechung?
+\lecturetimestamp{01:28:36}}
+\lecturerresponse{Bei expliziter Symmetriebrechung weist der lokale Hamiltonoperator Kopf und Zahl bereits unterschiedliche Energien zu; daher gibt es kein Paar symmetrieverwandter Grundzustände. Bei spontaner Symmetriebrechung bleibt die Symmetrie in den Gleichungen erhalten, die Vakua sind entartet, und Randbedingungen oder eine beliebig kleine Störung wählen eines davon aus. Dass eine Domänenwand zwischen verschiedenen Vakua möglich ist, ist ein Kennzeichen der spontanen Symmetriebrechung.}
+\end{classroomqa}
+
+Das Modell ist bewusst äußerst einfach, enthält aber die wesentliche Logik, die wir auf das Higgs-Feld übertragen werden: eine symmetrische Theorie, eine instabile oder entartete Vakuumstruktur, einen ausgewählten Grundzustand und physikalische Konsequenzen, die durch diese Wahl bestimmt werden.
+
+\section{Was diese Vorlesung offenlässt}
+
+Die Fermionentabelle übersetzt die Gruppe des Standardmodells in physikalische Richtungen. Die Farbe \(SU(3)\) bewegt sich vertikal durch Rot, Grün und Blau; geladene schwache Transformationen bewegen sich horizontal durch Quark- und Lepton-Dubletts; eine Phasensymmetrie liefert den vorläufigen Faktor \(U(1)\). Die Emission von Eichbosonen realisiert diese Gruppentransformationen als Wechselwirkungen.
+
+Die Schwäche des Betazerfalls wird damit nicht auf ein außergewöhnlich kleines \(g_w\) zurückgeführt, sondern auf den schweren Vermittler. Im Ortsraum schneidet die Masse den Propagator jenseits der Compton-Skala \(\hbar/(m_Wc)\) ab. Im Impulsraum gilt bei Kernimpulsen
+\begin{equation}
+  \mathcal A_{\rm weak}
+  \sim\frac{g_w^2}{k^2+m_W^2}
+  \simeq\frac{g_w^2}{m_W^2}
+\end{equation}
+Alte Niederenergieexperimente maßen diese Kombination als Fermi-Konstante.
+
+Die ausführliche Diskussion im Hörsaal verdeutlicht, was diese Formel bedeutet und was nicht. Interne \(W\)-Linien sind virtuell und nicht auf der Massenschale; Energie--Impuls bleibt dennoch erhalten. Eine ausreichend energiereiche Sonde kann ein reelles \(W\) erzeugen, doch dann hat sie einen anderen Endzustandsprozess hervorgerufen. Stoßprodukte sind keine wörtliche Liste bereits vorhandener Bestandteile. Die Temperatur verändert die Anzahl energiereicher Geschosse, Photonen können über geladene virtuelle Teilchen wechselwirken, und die Bose-Statistik ist von einer dynamischen Kraft zu unterscheiden.
+
+Schließlich erfordert \(SU(2)\) ein fehlendes neutrales Eichfeld, das mit dem \(Z\) verwandt ist, und das Kopf--Zahl-Gitter liefert das erste Modell der spontanen Symmetriebrechung. Als Nächstes führen wir diese beiden noch offenen Themen zusammen: die elektroschwache Mischung und den Higgs-Mechanismus.

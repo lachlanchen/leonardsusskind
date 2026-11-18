@@ -1,0 +1,62 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 327,
+  "outline_entries": 206,
+  "target_characters": 324376,
+  "image_placements": 60,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Teilchenphysik 2: Das Standardmodell",
+  "pdf_sha256": "22aef18b95f510290bac58c4d491bc06d5efc7fba6e550242e95cd06c891279f",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 72,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "aabfaba15896c8ccc02943b348b58a1b25c26ef2c9870ac452877aaa4c040e25",
+    "chapters/lecture_01/content.tex": "0a79ac966f7e9811c80e8e25d234a7782206f5f4f094a0832a50f73a829c2f52",
+    "chapters/lecture_02/content.tex": "160dbdd3bfb4b7f1751b4800f01c59950586b5ce9a57609758c8fee6117d32c2",
+    "chapters/lecture_03/content.tex": "142fbf867f5d2234fbab7fd15dd49028f82ed5e35192b3c49c8ebc8877ed218a",
+    "chapters/lecture_04/content.tex": "3935ef3aa0dca4a330c50b645d6fca96347cde8ae05ce969d69a1f3171b6f949",
+    "chapters/lecture_05/content.tex": "53e043e520f8bdc88708cfc20ebaca196f7192818aa1580dadcea3db3710ad3f",
+    "chapters/lecture_06/content.tex": "76d600d0125f5bddcd330575200edba0f2504936432feb04b14a5130b8f2d601",
+    "chapters/lecture_07/content.tex": "af9671de7d4b237f75902f90b47a0a129623601c3bb9363ce0e0218604f9aba7",
+    "chapters/lecture_08/content.tex": "a4b44edcdd6b164a29d7048cde88de861b813d1eb9c666d4105e0c200c5ba8a7",
+    "chapters/lecture_09/content.tex": "5bae2379bfdfc5ada39d58d82bebe1c1a1a1a3c0e5dee9feb0536ce6ef8dff67",
+    "chapters/lecture_10/content.tex": "07ab7be1c4eb3611b70d64fbee86ef684a5a7ef222b14f37bee9815af02312aa"
+  },
+  "source_files": {
+    "course.tex": "601c9631a4177e65c2540065aca7a55826a79c6d6d7d16094caad56dbf360e39",
+    "common_preamble.tex": "b03947a1d8477e6412901a7054be843e4caa185bdae595d51223499a07ef4f1c",
+    "chapters/lecture_01/content.tex": "5acd03be30267db168332516ca08e2ec62842d70960634743f9475f82b808291",
+    "chapters/lecture_02/content.tex": "90128952c5be8ad9524c5f2227821da804003f73ac5414e98b62a44880c7324c",
+    "chapters/lecture_03/content.tex": "fc37ef4711193abb1de013320ebe0ee535a74031b50a0fb934fefc258c5d9453",
+    "chapters/lecture_04/content.tex": "437d86501a923d39ad7e8794062ce58916b54e54ea143797db5b8859df60d772",
+    "chapters/lecture_05/content.tex": "68c36d63e8915cc1dfc1ecc52b016694039f2a3287f3dc5d94ef69284ed5c67d",
+    "chapters/lecture_06/content.tex": "aab52d5fde9b12866706849a1b61da4d6d64967e03741a2448ca24a5ff43f14c",
+    "chapters/lecture_07/content.tex": "64bdb72f6e0e8c326177d282a456c43d86004de5339a3f02678a7a71ced2b1f0",
+    "chapters/lecture_08/content.tex": "c36992691f4a393f3294b2c77ee6bf7fc090a94431ea8c5abceb9c678d6eabb4",
+    "chapters/lecture_09/content.tex": "4eaa48c9d62016d66190db349fe073e27c66c7df44e472979fc1c3300af77092",
+    "chapters/lecture_10/content.tex": "47cc344538336f1c94c41ce7190a87f9f00b0a407e5b505cbebe046fc7f17856"
+  },
+  "translated_tex": {
+    "cover.tex": "f9bd554558221795df0695970019ef8f1c581829ffe4480c07a837380b4bf3bd",
+    "common_preamble.tex": "e111bebb2c952307fbd44242e9db2cfe4421e010470485243db699740aac89b8",
+    "course.tex": "aa4e3c607c00f02903d2c16197c7ff6c96beae68f2883fee0fb87875295bbc96",
+    "chapters/lecture_07/content.tex": "59523da25bf85797b5d3b16298a54e70e687c72c6e278102f3766eb665da1698",
+    "chapters/lecture_02/content.tex": "d416d468f991835a5addea05229927d806192f30952e48ae1b3059b6c5f927f4",
+    "chapters/lecture_09/content.tex": "fb59ca44db67ea86e8e3a547bab34a000f91cca1b3ce993106cdf49dd1c581a4",
+    "chapters/lecture_01/content.tex": "d98d247050e743e16d8606702cd3c35454439231626dbbcd6804b9218f52b733",
+    "chapters/lecture_10/content.tex": "6682c8c4d7a564e32f142220b151d3034d18ac0d349d5291e2a830b8eaf50b29",
+    "chapters/lecture_03/content.tex": "f2fe88977ea29256dd61d9d74dd0b65cbb9780f44b9419fa0ca4c034e8748012",
+    "chapters/lecture_08/content.tex": "f1e7e073112aa4a685578f5a5656e99a5f1d6c7733fcc1430c17df73741f1792",
+    "chapters/lecture_05/content.tex": "f3a6cda7cd910107d4bfca7d7c8d49b3d25da597ef071f24e6522e8610fa7d00",
+    "chapters/lecture_04/content.tex": "3fad6c92da20bfa0db98faaa4da3ad373378ce59760762c6f73bcdc825e421ff",
+    "chapters/lecture_06/content.tex": "eeffcf18eb0ed59a2874d60c72a9a1e8a7b733f0cafca14ab9a1000303eaaba2"
+  }
+}

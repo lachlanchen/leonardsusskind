@@ -1,0 +1,570 @@
+\chapter{Boltzmann-Gewichte, Zustandssummen und das ideale Gas}
+
+\lectureoverview{Wir leiten die Gleichgewichts-\\Wahrscheinlichkeitsverteilung her, indem wir die Entropie bei fester Normierung und festem mittlerem Energieinhalt maximieren. Aus der Zustandssumme ergeben sich dann durch Ableiten der mittlere Energieinhalt, die Entropie und die Temperatur. Das ideale Gas liefert das erste vollständige Beispiel; anschließend folgen eine Erweiterung um die Gravitation und ein Ausblick auf Energieschwankungen.}
+
+\section{Das Entropieproblem mit Nebenbedingungen}
+
+Betrachten wir zunächst eine große Ansammlung von \(\mathcal N\) identischen, sehr schwach miteinander wechselwirkenden Replikaten desselben Teilsystems. Besetzen \(n_i\) Replikate den \(i\)-ten Zustand, so gilt
+\begin{equation}
+ p_i=\frac{n_i}{\mathcal N},
+ \qquad
+ \sum_i p_i=1.
+ \label{eq:sm4-occupation-probability}
+\end{equation}
+Die kombinatorische Zählung aus der vorangegangenen Vorlesung ergibt die Entropie pro Replikat:
+\begin{equation}
+ S[p]=-\sum_i p_i\log p_i.
+ \label{eq:sm4-entropy}
+\end{equation}
+Es lohnt sich, dies als gewöhnliche Funktion aller Variablen \(p_1,p_2,\ldots\) aufzufassen. Ihre einfache additive Form macht die Rechnung möglich.
+
+Die Replikatansammlung hat eine feste Gesamtenergie \(\mathcal N E\), wobei \(E\) die mittlere Energie pro Replikat ist. Die zweite Nebenbedingung lautet daher
+\begin{equation}
+ \sum_i p_iE_i=E.
+ \label{eq:sm4-energy-constraint}
+\end{equation}
+Die Energieniveaus \(E_i\) gehören zum Teilsystem; die Zahl \(E\) auf der rechten Seite ist ihr mit den Wahrscheinlichkeiten gewichteter Mittelwert. Die Maximierung von \eqref{eq:sm4-entropy} unter den Nebenbedingungen \eqref{eq:sm4-occupation-probability} und \eqref{eq:sm4-energy-constraint} wählt die mit überwältigender Wahrscheinlichkeit auftretenden Besetzungsanteile aus.
+
+Der Einfachheit halber minimieren wir \(-S=\sum_i p_i\log p_i\). Für jede Nebenbedingung führen wir einen Lagrange-Multiplikator ein:
+\begin{equation}
+ \begin{aligned}
+ \Phi[p;\alpha,\beta]
+ &=\sum_i p_i\log p_i\\
+ &\quad+\alpha\left(\sum_i p_i-1\right)\\
+ &\quad+\beta\left(\sum_i p_iE_i-E\right).
+ \end{aligned}
+ \label{eq:sm4-augmented-functional}
+\end{equation}
+Die Bezeichnungen \(\alpha\) und \(\beta\) beruhen noch auf keinen physikalischen Annahmen. In diesem Stadium sind sie lediglich die beiden Zahlen, die zur Durchsetzung der beiden Nebenbedingungen erforderlich sind.
+
+\begin{classroomqa}
+\audiencequestion{Ist die erweiterte Funktion auch eine Funktion von \(\alpha\) und \(\beta\)?}
+\lecturerresponse{Ja. Durch Variation nach \(\alpha\) und \(\beta\) erhält man wieder die beiden Nebenbedingungen. Für die unmittelbare Rechnung halten wir diese Multiplikatoren jedoch fest und variieren die Wahrscheinlichkeiten \(p_i\). Ihre Werte werden anschließend durch die Normierung und den vorgegebenen mittleren Energieinhalt festgelegt.
+\lecturetimestamp{00:09:32--00:09:49}}
+\end{classroomqa}
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.92\textwidth]{lecture_04_figure_02.png}\caption{}\lectureframe{00:10:56}\end{figure}
+
+Bei der Ableitung nach einer Wahrscheinlichkeit tragen die Terme \(-\alpha\) und \(-\beta E\) nichts bei. Dies ist die verkürzte Form des Funktionals, die an der Tafel zu sehen ist. Sie bleiben Bestandteil von \eqref{eq:sm4-augmented-functional}; für diese konkrete Ableitung sind sie lediglich irrelevant geworden.
+
+\section{Die Boltzmann-Verteilung}
+
+Wir wählen eine beliebige Wahrscheinlichkeit aus. In der Vorlesung wird \(p_7\) gewählt, unter anderem, weil \(1\) zu speziell wirkt und \(7\) eine Glückszahl ist. Von dieser Wahl hängt nichts ab. Die einzige benötigte Ableitung lautet
+\begin{equation}
+ \frac{d}{dp_i}\bigl(p_i\log p_i\bigr)=\log p_i+1.
+\end{equation}
+Damit gilt
+\begin{equation}
+ \frac{\partial\Phi}{\partial p_i}
+ =\log p_i+1+\alpha+\beta E_i=0.
+ \label{eq:sm4-stationarity}
+\end{equation}
+Aufgelöst nach \(p_i\) ergibt sich
+\begin{align}
+ \log p_i&=-(1+\alpha)-\beta E_i,\\
+ p_i&=e^{-(1+\alpha)}e^{-\beta E_i}.
+\end{align}
+Der erste Faktor hängt nicht von der Zustandsbezeichnung ab. Wir schreiben ihn als \(1/Z\):
+\begin{equation}
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+ \label{eq:sm4-boltzmann-weight}
+\end{equation}
+
+Dies ist der erste unmittelbare Ertrag. Eine routinemäßige Ableitung unter Nebenbedingungen hat ein Exponentialgesetz ergeben. Die relativen Wahrscheinlichkeiten erfüllen
+\begin{equation}
+ \frac{p_i}{p_j}=e^{-\beta(E_i-E_j)}.
+ \label{eq:sm4-relative-weight}
+\end{equation}
+Der Multiplikator \(\beta\) bestimmt, wie rasch die Wahrscheinlichkeit mit der Energie abnimmt. Große positive Werte von \(\beta\) konzentrieren die Verteilung auf die niedrigsten Energieniveaus; bei kleinen positiven Werten von \(\beta\) verteilt sich ein merklicher Anteil der Wahrscheinlichkeit weiter über das Spektrum. Wir sehen bereits, dass eine Änderung von \(\beta\) die mittlere Energie verändert, auch wenn noch zu beweisen ist, dass dieser Parameter mit der inversen Temperatur übereinstimmt.
+
+\section{Normierung und Zustandssumme}
+
+Die Normierung bestimmt den zustandsunabhängigen Faktor:
+\begin{equation}
+ 1=\sum_i p_i
+ =\frac{1}{Z}\sum_i e^{-\beta E_i},
+\end{equation}
+also
+\begin{equation}
+ Z(\beta)=\sum_i e^{-\beta E_i}.
+ \label{eq:sm4-partition-function}
+\end{equation}
+Dies ist die kanonische Zustandssumme. Zunächst trat sie als Normierungskonstante auf, doch das wird ihrer Bedeutung kaum gerecht. Ist \(Z(\beta)\) erst einmal bekannt, ergeben sich thermodynamische Größen aus ihren Ableitungen.
+
+Die Energieniveaus in \eqref{eq:sm4-partition-function} sind Eingangsgrößen. Sie ergeben sich aus der Mechanik des Systems und den festgelegten äußeren Bedingungen: Volumen und Form des Behälters, magnetische oder elektrische Felder sowie weitere Kontrollparameter. Eine Änderung eines Kontrollparameters verändert das Spektrum und damit \(Z\). Für die vorliegende Rechnung halten wir diese Parameter und somit auch die Menge \(\{E_i\}\) fest.
+
+\begin{classroomqa}
+\audiencequestion{Was genau stellen die Achsen der Exponentialskizze dar? Ist die vertikale Koordinate ein bestimmtes \(p_i\)?}
+\lecturerresponse{Die eingezeichnete Höhe ist die einem Niveau zugeordnete Wahrscheinlichkeit. Die horizontale Anordnung kann entweder als Zustandsbezeichnung \(i\) oder, physikalisch anschaulicher, als Energie \(E_i\) gelesen werden. Jeder Zustand hat eine feste Energie. Bei großem \(\beta\) nimmt die Wahrscheinlichkeit mit dieser Energie steil ab; in der Nähe von \(\beta=0\) sind die Gewichte über die zugänglichen Niveaus nahezu gleich.
+\lecturetimestamp{00:19:39--00:20:09}}
+\end{classroomqa}
+
+\section{Der im Inneren der Zustandssumme verborgene mittlere Energieinhalt}
+
+Die zweite Nebenbedingung bestimmt \(\beta\):
+\begin{equation}
+ E=\sum_i p_iE_i
+ =\frac{1}{Z}\sum_i E_i e^{-\beta E_i}.
+ \label{eq:sm4-mean-energy}
+\end{equation}
+Statt diese gewichtete Summe erneut auszuwerten, leiten wir \eqref{eq:sm4-partition-function} ab:
+\begin{equation}
+ \frac{dZ}{d\beta}
+ =-\sum_i E_i e^{-\beta E_i}.
+\end{equation}
+Der Vergleich mit \eqref{eq:sm4-mean-energy} ergibt
+\begin{equation}
+ E(\beta)
+ =-\frac{1}{Z}\frac{dZ}{d\beta}
+ =-\frac{d\log Z}{d\beta}.
+ \label{eq:sm4-energy-logz}
+\end{equation}
+Der Logarithmus ist natürlich, weil seine Ableitung den Faktor \(1/Z\) liefert.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_03.png}
+\caption{Normierung, Nebenbedingung für die mittlere Energie und Ableitung der Zustandssumme stehen gemeinsam an der Tafel.}
+\lectureframe{00:26:24}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist die untere Gleichung an der Tafel eine neue Gleichung für \(Z\), oder folgt sie aus der darüberstehenden Definition?}
+\lecturerresponse{Sie ergibt sich durch Ableiten der Definition \(Z=\sum_i e^{-\beta E_i}\). Durch die Ableitung erhält man den Faktor \(-E_i\). Teilt man das Ergebnis durch \(Z\), erhält man wieder die gewichtete Summe, die den mittleren Energieinhalt definiert.
+\lecturetimestamp{00:25:58--00:26:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Macht \(dZ/d\beta=-E Z\) die Funktion \(Z\) zu einer Eigenfunktion der Ableitung?}
+\lecturerresponse{Nicht im üblichen Sinn. In einer Eigenwertgleichung würde eine Konstante mit \(Z\) multipliziert; hier gilt jedoch \(E=E(\beta)\). Die Gleichung gibt den mittleren Energieinhalt als Funktion von \(\beta\) an; es handelt sich nicht um ein Problem mit festem Eigenwert.
+\lecturetimestamp{00:28:49--00:29:43}}
+\end{classroomqa}
+
+Die Einfachheit von \eqref{eq:sm4-energy-logz} täuscht. Das Spektrum kann kompliziert sein, und die Berechnung von \(Z\) kann schwierig sein. Sobald diese eine Funktion jedoch gefunden ist, ergibt sich der mittlere Energieinhalt durch eine einzige Ableitung. Dieses Muster begegnet uns in der gesamten statistischen Mechanik: Richtig aufeinanderfolgende elementare Rechenschritte liefern Ergebnisse, die sich direkt nur schwer erraten ließen.
+
+\begin{classroomqa}
+\audiencequestion{Ist \(E\) die Gesamtenergie aller Replikate oder die mittlere Energie pro Behälter?}
+\lecturerresponse{Es ist die mittlere Energie eines einzelnen Behälters. Die Replikatansammlung hat die Gesamtenergie \(\mathcal N E\). Später, wenn das System selbst als ein ganzer Behälter mit \(N\) Gasteilchen gewählt wird, bezeichnet \(E\) die Energie dieser gesamten Gasprobe.
+\lecturetimestamp{00:30:55--00:31:10}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Können wir den Logarithmus von \(\sum_i e^{-\beta E_i}\) gliedweise nehmen?}
+\lecturerresponse{Nein. Ein Logarithmus macht aus einem Produkt eine Summe, aber aus einer Summe keine Summe von Logarithmen:
+\[
+ \log\!\left(\sum_i e^{-\beta E_i}\right)
+ \ne \sum_i\log\!\left(e^{-\beta E_i}\right).
+\]
+Diese Unterscheidung wird später nützlich, wenn sich die Zustandssummen unabhängiger Teilsysteme multiplizieren.
+\lecturetimestamp{00:31:10--00:31:58}}
+\end{classroomqa}
+
+\section{Was ist festgelegt, und was darf variieren?}
+
+In denselben Formeln kommen mehrere Ebenen von Variablen vor; in der Vorlesung werden sie bewusst getrennt betrachtet.
+
+\begin{itemize}
+ \item Die Wahrscheinlichkeiten \(p_i\) sind die ursprünglich unbekannten Größen.
+ \item Die Energieniveaus \(E_i\) sind festgelegt, sobald das System und seine Kontrollparameter vorgegeben sind.
+ \item Der Multiplikator \(\alpha\) ist in der Normierung \(Z=e^{1+\alpha}\) aufgegangen.
+ \item Bei vorgegebenem mittlerem Energieinhalt \(E\) legt die Nebenbedingung eine Zahl \(\beta\) fest. Betrachtet man jedoch eine Familie von Gleichgewichtszuständen, kann man wahlweise \(E=E(\beta)\) oder \(\beta=\beta(E)\) verwenden.
+\end{itemize}
+
+\begin{classroomqa}
+\audiencequestion{Wenn die Multiplikatoren Zahlen sind, warum werden \(\beta\) und \(E\) jetzt als Variablen behandelt?}
+\lecturerresponse{Für ein einzelnes Problem mit Nebenbedingungen sind es tatsächlich Zahlen. Wir können aber viele Gleichgewichtsprobleme mit demselben Spektrum und unterschiedlichen vorgegebenen mittleren Energieinhalten vergleichen. Innerhalb dieser Familie ändert sich \(\beta\) mit \(E\). Die Festlegung von \(E\) bestimmt \(\beta\); die Festlegung von \(\beta\) bestimmt \(E\). Dies sind zwei Betrachtungsweisen derselben Beziehung.
+\lecturetimestamp{00:31:58--00:33:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist \(\alpha\) verschwunden?}
+\lecturerresponse{Nur seine Bezeichnung ist verschwunden. Die Definition \(e^{-(1+\alpha)}=1/Z\) nimmt es in \(Z\) auf. Würden wir sowohl \(\alpha\) als auch \(Z\) beibehalten, zählten wir denselben Normierungsparameter doppelt.
+\lecturetimestamp{00:33:29--00:33:49}}
+\end{classroomqa}
+
+Energie muss nicht die einzige Erhaltungsgröße sein. Sind der Gesamtimpuls, die Teilchenzahl, der Drehimpuls oder eine andere Größe festgelegt, erhält ihr Erwartungswert jeweils einen eigenen Multiplikator. Diese Erweiterung ändert das Ensemble, nicht aber die Methode.
+
+\begin{classroomqa}
+\audiencequestion{Setzt die Festlegung allein des mittleren Energieinhalts zu viel über das System voraus?}
+\lecturerresponse{Sie setzt voraus, dass im vorliegenden Problem keine weitere Erhaltungsgröße berücksichtigt werden muss. Ist beispielsweise auch der Gesamtimpuls festgelegt, fügen wir eine weitere Nebenbedingung und einen weiteren Lagrange-Multiplikator hinzu. Volumen, Form und äußere Felder sind hier dagegen Kontrollparameter: Sie werden festgehalten und bestimmen die Energieniveaus selbst.
+\lecturetimestamp{00:33:51--00:35:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sollte \(\alpha\) als weiteres Argument der Energie auftreten, und hängt \(Z\) von den Energieniveaus \(E_i\) ab?}
+\lecturerresponse{\(\alpha\) ist bereits in \(Z\) enthalten und daher kein unabhängiges Argument. Die Zustandssumme hängt selbstverständlich sowohl vom festen Spektrum als auch von \(\beta\) ab. Eine Änderung eines Kontrollparameters verändert die \(E_i\) und damit auch \(Z\); bei den Ableitungen nach \(\beta\) in der vorliegenden Rechnung wird das Spektrum festgehalten.
+\lecturetimestamp{00:35:52--00:37:10}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Variieren wir die einzelnen Energieniveaus \(E_i\) oder den mittleren Energieinhalt \(E\)?}
+\lecturerresponse{Die einzelnen Energieniveaus bleiben fest. Der mittlere Energieinhalt ändert sich, weil sich die Wahrscheinlichkeiten ändern. Die Familie wird also durch \(E\) oder, gleichwertig, durch \(\beta\) parametrisiert; dabei wird stets dieselbe Liste von Energieniveaus \(\{E_i\}\) verwendet.
+\lecturetimestamp{00:37:12--00:39:04}}
+\end{classroomqa}
+
+In der Praxis lässt sich die Temperatur oft viel leichter messen als die Gesamtenergie eines Gases. Wir können ein Thermometer einsetzen; den relativistischen Massendifferenz zu messen und \(E=mc^2\) heranzuziehen wäre zwar korrekt, aber ausgesprochen unpraktisch. Um \(\beta\) operational zu definieren, müssen wir es nun mit der thermodynamischen Temperaturdefinition verknüpfen.
+
+\section{Die Entropie kommt vor der Temperatur}
+
+Logisch kommt zuerst die Entropie. Wir setzen die Boltzmann-Wahrscheinlichkeiten in \eqref{eq:sm4-entropy} ein:
+\begin{equation}
+ \log p_i=-\beta E_i-\log Z.
+\end{equation}
+Dann folgt
+\begin{align}
+ S
+ &=-\sum_i p_i\log p_i\\
+ &=\beta\sum_i p_iE_i+\log Z\sum_i p_i\\
+ &=\beta E+\log Z.
+ \label{eq:sm4-entropy-logz}
+\end{align}
+Die Normierungssumme liefert den letzten Faktor eins. Darin zeigt sich auch erstmals die Helmholtzsche freie Energie, denn später gilt \(F_{\mathrm H}=-T\log Z\) in Einheiten mit \(k_B=1\).
+
+\begin{classroomqa}
+\audiencequestion{Was ist mit dem Faktor \(1/Z\) im ersten Term geschehen?}
+\lecturerresponse{Er ist bereits in \(p_i\) enthalten. Die Summe \(\sum_i p_iE_i\) umfasst die vollständige normierte Wahrscheinlichkeit und ist definitionsgemäß der mittlere Energieinhalt \(E\).
+\lecturetimestamp{00:43:19--00:43:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Müsste in \(S=\beta E+\log Z\) ein Minuszeichen stehen?}
+\lecturerresponse{Nein. Die Entropie beginnt mit einem Minuszeichen, während \(\log p_i=-\beta E_i-\log Z\) zwei weitere Minuszeichen enthält. Zusammen ergeben sie die beiden positiven Terme in \eqref{eq:sm4-entropy-logz}.
+\lecturetimestamp{00:45:53--00:46:03}}
+\end{classroomqa}
+
+Die Temperatur wurde thermodynamisch definiert durch
+\begin{equation}
+ dE=T\,dS,
+ \qquad
+ \frac{1}{T}=\frac{dS}{dE},
+ \label{eq:sm4-temperature-definition}
+\end{equation}
+wobei alle anderen Kontrollparameter festgehalten werden. Ein erster Versuch, \eqref{eq:sm4-entropy-logz} direkt nach \(E\) abzuleiten, wird schnell unübersichtlich, weil \(\beta\) ebenfalls von \(E\) abhängt. Übersichtlicher ist das totale Differential:
+\begin{align}
+ dS
+ &=\beta\,dE+E\,d\beta
+   +\frac{d\log Z}{d\beta}\,d\beta\\
+ &=\beta\,dE+E\,d\beta-E\,d\beta\\
+ &=\beta\,dE.
+ \label{eq:sm4-entropy-differential}
+\end{align}
+Bei der Kürzung verwenden wir \eqref{eq:sm4-energy-logz}. Der Vergleich von \eqref{eq:sm4-entropy-differential} mit \eqref{eq:sm4-temperature-definition} ergibt
+\begin{equation}
+ T=\frac{1}{\beta},
+ \qquad
+ \beta=\frac{1}{T}.
+ \label{eq:sm4-beta-temperature}
+\end{equation}
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_04.png}\caption{Die beiden Terme mit \(d\beta\) heben sich auf; es bleibt \(dS=\beta\,dE\).}\lectureframe{00:50:48}\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Setzt diese Kürzung fälschlich voraus, dass \(\log Z\) unabhängig von Energie oder Temperatur ist?}
+\lecturerresponse{Nein. Für ein festes Spektrum gibt es einen unabhängigen thermischen Parameter. Wir können \(Z=Z(\beta)\) schreiben und dann \(\beta=\beta(E)\) entlang der Gleichgewichtsfamilie betrachten. Das totale Differential berücksichtigt die vollständige Abhängigkeit von \(d\beta\), und genau die Identität \(d\log Z/d\beta=-E\) ermöglicht die Kürzung.
+\lecturetimestamp{00:52:04--00:52:44}}
+\end{classroomqa}
+
+Während des größten Teils der Rechnung wird die Temperatur in Energieeinheiten gemessen, sodass \(k_B=1\) gilt. Stellt man die Laboreinheiten wieder her, erhält man
+\begin{equation}
+ \beta=\frac{1}{k_B T_{\mathrm K}},
+ \label{eq:sm4-beta-laboratory}
+\end{equation}
+wobei \(T_{\mathrm K}\) die absolute Temperatur in Kelvin ist. Oft ist es praktisch, \(T_{\mathrm e}=k_BT_{\mathrm K}\) zu schreiben und dann \(\beta=1/T_{\mathrm e}\) zu verwenden.
+
+\begin{classroomqa}
+\audiencequestion{Ist das System bei einem Gasvolumen ein Molekül oder die gesamte Ansammlung?}
+\lecturerresponse{Das hängt davon ab, wie das System definiert wird. Hier ist das System der gesamte Gasbehälter, daher ist \(E\) die Energie aller darin enthaltenen Moleküle. Bei einem hinreichend verdünnten idealen Gas kann auch ein einzelnes Molekül als Teilsystem behandelt werden, da die Teilchen nicht miteinander wechselwirken; die nachfolgende Faktorisierung zeigt den Zusammenhang zwischen den beiden Beschreibungen.
+\lecturetimestamp{00:53:32--00:54:49}}
+\end{classroomqa}
+
+Die kanonischen Beziehungen lassen sich nun zusammenfassen:
+\begin{align}
+ p_i&=\frac{e^{-\beta E_i}}{Z},&
+ Z(\beta)&=\sum_i e^{-\beta E_i},\label{eq:sm4-canonical-pair}\\
+ E&=-\frac{d\log Z}{d\beta},&
+ S&=\beta E+\log Z,&
+ T&=\frac{1}{\beta}.
+ \label{eq:sm4-canonical-identities}
+\end{align}
+
+\section{Ein klassisches ideales Gas}
+
+Wir betrachten \(N\) identische Punktteilchen der Masse \(m\) in einem Behälter mit Volumen \(V\). Das Gas ist ideal, wenn die Wechselwirkungen zwischen den Teilchen vernachlässigt werden können. Das kann eine gute Näherung sein, weil die Kräfte schwach sind oder weil das Gas so verdünnt ist, dass enge Begegnungen selten sind.
+
+Ein klassischer Mikrozustand wird durch sämtliche Orts- und Impulskoordinaten festgelegt:
+\begin{equation}
+ (\bm q_1,\ldots,\bm q_N;\bm p_1,\ldots,\bm p_N).
+\end{equation}
+Es gibt \(3N\) Ortskoordinaten und \(3N\) Impulskoordinaten; der Zustand ist also ein Punkt im \(6N\)-dimensionalen Phasenraum. Ohne Wechselwirkungen lautet der Hamiltonian
+\begin{equation}
+ H(\bm p)=\sum_{a=1}^{N}\frac{\bm p_a^2}{2m}
+ =\sum_{\mu=1}^{3N}\frac{p_\mu^2}{2m}.
+ \label{eq:sm4-ideal-hamiltonian}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Gibt es \(3N\) Teilchen, und werden die Zustände beim Summieren über alle Impulskomponenten doppelt gezählt?}
+\lecturerresponse{Es gibt \(N\) Teilchen und \(3N\) Impulskomponenten. Die Summe in \eqref{eq:sm4-ideal-hamiltonian} enthält für jede Komponente einen quadratischen Term. Das Phasenraumintegral integriert dann jede unabhängige Komponente genau einmal, sodass durch dieses Produkt keine Doppelzählung entsteht.
+\lecturetimestamp{01:02:29--01:04:04}}
+\end{classroomqa}
+
+Für einen kontinuierlichen klassischen Phasenraum wird die Zustandssumme zum Integral
+\begin{equation}
+ Z_N
+ =\frac{1}{N!\,h^{3N}}
+ \int_{V^N}d^{3N}q
+ \int_{\mathbb R^{3N}}d^{3N}p\,
+ e^{-\beta H(\bm p)}.
+ \label{eq:sm4-classical-partition}
+\end{equation}
+In der Vorlesung stehen die Integrale im Mittelpunkt; dabei wird derselbe Ausdruck ohne die Phasenraumzelle \(h^{3N}\) geschrieben. Nimmt man sie wieder hinzu, wird \(Z_N\) dimensionslos, und der quantenmechanische Ursprung der klassischen Zustandszählung wird sichtbar. Da \(h\) nicht von \(\beta\) abhängt, beeinflusst es die nachfolgende Ableitung nach der Energie nicht.
+
+Das Ortsintegral ist unmittelbar auszuwerten. Der Hamiltonian hängt nicht vom Ort ab, und jedes Teilchen kann sich an jeder Stelle des Behälters befinden:
+\begin{equation}
+ \int_{V^N}d^{3N}q=V^N.
+\end{equation}
+Das Impulsintegral faktorisiert in \(3N\) identische eindimensionale Gauß-Integrale:
+\begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left[
+  \int_{-\infty}^{\infty}dp\,
+  e^{-\beta p^2/(2m)}
+ \right]^{3N}.
+ \label{eq:sm4-factorized-gas}
+\end{equation}
+
+Der Faktor \(1/N!\) fasst Konfigurationen zusammen, die sich nur durch eine Permutation identischer Teilchen unterscheiden. Für den mittleren Energieinhalt bei festem \(N\) und \(V\) trägt er zu \(\log Z_N\) lediglich eine von \(\beta\) unabhängige Konstante bei; sie verschwindet daher bei \(-\partial/\partial\beta\). Für andere Fragestellungen kann man ihn nicht weglassen: Zusammen mit \(h^{3N}\) ist er wesentlich für eine dimensionslose Zustandssumme, eine extensive Entropie und ein konsistentes chemisches Potential.
+
+Nun setzen wir
+\begin{equation}
+ x=\sqrt{\frac{\beta}{2m}}\,p,
+ \qquad
+ dp=\sqrt{\frac{2m}{\beta}}\,dx.
+\end{equation}
+Das Gauß-Integral wird damit zu
+\begin{align}
+ \int_{-\infty}^{\infty}dp\,e^{-\beta p^2/(2m)}
+ &=
+ \sqrt{\frac{2m}{\beta}}
+ \int_{-\infty}^{\infty}dx\,e^{-x^2}\\
+ &=\sqrt{\frac{2\pi m}{\beta}}.
+ \label{eq:sm4-gaussian}
+\end{align}
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_05.png}\caption{Mit einer einzigen Skalierung wird das Impulsintegral auf das Standard-Gauß-Integral zurückgeführt.}\lectureframe{01:13:12}\end{figure}
+
+Einsetzen in \eqref{eq:sm4-factorized-gas} ergibt
+\begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm4-ideal-partition}
+\end{equation}
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.78\textwidth]{lecture_04_figure_06.png}\caption{Die vollständige Zustandssumme des idealen Gases an der Tafel. Die Phasenraumzelle \(h^{3N}\) ist in \eqref{eq:sm4-ideal-partition} wieder berücksichtigt.}\lectureframe{01:14:38}\end{figure}
+
+Dasselbe Ergebnis lässt sich übersichtlich mit der thermischen de-Broglie-Wellenlänge schreiben:
+\begin{equation}
+ \lambda_T=\frac{h}{\sqrt{2\pi mT}}
+ \qquad (k_B=1).
+\end{equation}
+Dann gilt
+\begin{equation}
+ Z_N=\frac{1}{N!}\left(\frac{V}{\lambda_T^3}\right)^N.
+ \label{eq:sm4-thermal-wavelength-form}
+\end{equation}
+
+Für makroskopische Werte von \(N\) ergibt die Stirling-Formel
+\begin{equation}
+ N!\simeq N^Ne^{-N}\sqrt{2\pi N}.
+\end{equation}
+Behält man nur die führende exponentielle Abhängigkeit bei und definiert \(\rho=N/V\), so erhält man
+\begin{equation}
+ \frac{V^N}{N!}
+ \simeq
+ \frac{1}{\sqrt{2\pi N}}
+ \left(\frac{e}{\rho}\right)^N.
+ \label{eq:sm4-density-rewrite}
+\end{equation}
+Dies ist die elegante Umformulierung der Vorlesung mithilfe der Dichte. Der Wurzelfaktor ist in \(\log Z_N\) von untergeordneter Ordnung, wird hier aber ausdrücklich angegeben und nicht stillschweigend weggelassen.
+
+\begin{classroomqa}
+\audiencequestion{Wenn \(1/N!\) unabhängig von \(\beta\) ist, macht es dann überhaupt keinen Unterschied?}
+\lecturerresponse{Für die vorliegende Ableitung des mittleren Energieinhalts bei festem \(N\) und \(V\) macht es keinen Unterschied, denn es fügt \(\log Z_N\) eine von \(\beta\) unabhängige Konstante hinzu. Für die absolute Entropie und Änderungen der Teilchenzahl spielt es eine Rolle. Die eingeschränkte Aussage zur Ableitung darf nicht mit der allgemeineren Aussage zur Zustandszählung verwechselt werden.
+\lecturetimestamp{01:27:01--01:27:51}}
+\end{classroomqa}
+
+\section{Energie und Gleichverteilungssatz}
+
+Produkte lassen sich umständlich ableiten; Logarithmen machen daraus Summen. Ausgehend von \eqref{eq:sm4-ideal-partition} gilt
+\begin{equation}
+ \log Z_N
+ =-\frac{3N}{2}\log\beta+\text{\(\beta\)-independent terms}.
+ \label{eq:sm4-log-ideal-partition}
+\end{equation}
+Daher
+\begin{equation}
+ E
+ =-\frac{\partial\log Z_N}{\partial\beta}
+ =\frac{3N}{2\beta}
+ =\frac{3N}{2}T.
+ \label{eq:sm4-ideal-energy}
+\end{equation}
+Die Energie pro Teilchen ist
+\begin{equation}
+ \frac{E}{N}=\frac{3}{2}T
+ \qquad (k_B=1),
+\end{equation}
+oder in Laboreinheiten
+\begin{equation}
+ \frac{E}{N}=\frac{3}{2}k_BT_{\mathrm K}.
+ \label{eq:sm4-ideal-energy-lab}
+\end{equation}
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.84\textwidth]{lecture_04_figure_07.png}\caption{Nur der Term \(-3N\log\beta/2\) trägt zur Energie des idealen Gases bei; damit ergibt sich \(E/N=3T/2\).}\lectureframe{01:25:28}\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Wo tritt die Boltzmann-Konstante in der Energieformel auf?}
+\lecturerresponse{Die Temperatur \(T\) des Theoretikers ist eine Energie. Um Kelvin zu verwenden, ersetzt man sie durch \(k_BT_{\mathrm K}\); dann ergibt sich \(E/N=3k_BT_{\mathrm K}/2\). Der kleine Wert von \(k_B\) wandelt einen makroskopisch erscheinenden Temperaturwert in die mikroskopische Energieskala eines Moleküls um.
+\lecturetimestamp{01:24:58--01:26:01}}
+\end{classroomqa}
+
+Die Drei ergibt sich aus den drei Raumrichtungen. Der Faktor ein halb kommt von der Wurzelabhängigkeit jedes Gauß-Integrals von \(1/\beta\). Jede unabhängige quadratische Impulskoordinate trägt \begin{equation}
+ \frac{1}{2}T
+\end{equation} zum mittleren Energieinhalt bei. In \(d\) Raumdimensionen ergibt dieselbe Überlegung \(E/N=dT/2\). Hier tritt der Gleichverteilungssatz zum ersten Mal auf.
+
+Die Entropieberechnung, die am Ende der Vorlesung angegeben wurde, folgt aus \(S=\beta E+\log Z_N\). Mit der Stirling-Näherung ergibt sich
+\begin{equation}
+ \frac{S}{N}
+ \simeq
+ \log\!\left[
+  \frac{V}{N}
+  \left(\frac{2\pi mT}{h^2}\right)^{3/2}
+ \right]
+ +\frac{5}{2},
+ \label{eq:sm4-sackur-tetrode}
+\end{equation}
+bis auf die untergeordnete Korrektur endlicher \(N\). Stellt man \(k_B\) wieder her, wird die rechte Seite mit \(k_B\) multipliziert und \(T\) durch \(k_BT_{\mathrm K}\) ersetzt. Das Ergebnis zeigt, warum die Normierungsfaktoren, die bei der Energie herausfielen, für die Entropie unverzichtbar sind.
+
+\section{Das Gas in ein Gravitationsfeld bringen}
+
+Die Frage, was geschieht, wenn man den Behälter auf einen Neutronenstern stellt, führt zur Erweiterung um die Gravitation. Bevor wir uns einem Neutronenstern zuwenden, betrachten wir ein homogenes Feld \(g\) in einem gewöhnlichen Raum. Wir wählen \(y=0\) am Boden eines Behälters mit Grundfläche \(A\) und Höhe \(L\). Der Hamiltonian lautet dann
+\begin{equation}
+ H=\sum_{a=1}^{N}
+ \left(\frac{\bm p_a^2}{2m}+mgy_a\right).
+ \label{eq:sm4-gravity-hamiltonian}
+\end{equation}
+Die Ortsintegrale in horizontaler Richtung ergeben weiterhin \(A^N\), während jede vertikale Koordinate den Beitrag
+\begin{equation}
+ I_y(L)
+ =\int_0^Ldy\,e^{-\beta mgy}
+ =\frac{1-e^{-\beta mgL}}{\beta mg}.
+ \label{eq:sm4-finite-height-integral}
+\end{equation} liefert.
+
+\begin{classroomqa}
+\audiencequestion{Sollte das vertikale Integral tatsächlich bis unendlich laufen oder nur bis zur Oberkante des Behälters?}
+\lecturerresponse{Bei einem endlichen Behälter muss es von \(0\) bis zu dessen Höhe \(L\) laufen, wie in \eqref{eq:sm4-finite-height-integral}. Die obere Integrationsgrenze wird erst später auf unendlich gesetzt; dies modelliert eine Atmosphäre über einer Oberfläche statt eines endlichen Raums.
+\lecturetimestamp{01:30:25--01:31:32}}
+\end{classroomqa}
+
+Die vollständige Zustandssumme für endliche Höhe lautet daher
+\begin{equation}
+ Z_N(L)
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  A\,
+  \frac{1-e^{-\beta mgL}}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-finite}
+\end{equation}
+Der vertikale Faktor hängt von \(\beta\) ab und muss somit zur Energie beitragen. Tatsächlich gilt
+\begin{equation}
+ \langle U\rangle
+ =N\left[
+  \frac{1}{\beta}
+  -\frac{mgL}{e^{\beta mgL}-1}
+ \right].
+ \label{eq:sm4-finite-gravity-energy}
+\end{equation}
+Damit ist die kleine Integration ausgeführt, die in der Vorlesung zunächst als lästige Nebenrechnung offenbleibt.
+
+Für eine unendlich hohe Atmosphäre gilt \(L\to\infty\), und
+\begin{equation}
+ I_y(\infty)=\frac{1}{\beta mg}.
+\end{equation}
+Die Zustandssumme wird zu
+\begin{equation}
+ Z_N^{(\infty)}
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  \frac{A}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-infinite}
+\end{equation}
+Ihr von \(\beta\) abhängiger Logarithmus lautet
+\begin{equation}
+ \log Z_N^{(\infty)}
+ =-\frac{3N}{2}\log\beta-N\log\beta+\mathrm{const}.
+\end{equation}
+Der erste Term liefert die kinetische Energie \(3NT/2\); der zweite die mittlere gravitative potenzielle Energie \(NT\). Somit gilt
+\begin{equation}
+ E_{\mathrm{tot}}=\frac{5N}{2}T
+\end{equation}
+für diese idealisierte, unbegrenzte Atmosphäre.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.83\textwidth]{lecture_04_figure_08.png}\caption{Die Zustandssumme der unendlich hohen Atmosphäre ergänzt \(-N\log\beta\) zu \(\log Z\); daraus ergibt sich die mittlere potenzielle Energie.}\lectureframe{01:36:38}\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Erfordert ein sehr starkes Gravitationsfeld einen weiteren Lagrange-Multiplikator?}
+\lecturerresponse{Nicht allein deshalb, weil das Feld stark ist. Die Gravitation verändert den Hamiltonian und damit die Energieniveaus oder das Phasenraumgewicht. Derselbe Energiemultiplikator \(\beta\) bleibt bestehen. Ein Neutronenstern bringt zusätzliche physikalische Komplikationen mit sich; die erste Änderung besteht aber weiterhin darin, die gravitative potenzielle Energie in \(H\) aufzunehmen.
+\lecturetimestamp{01:27:58--01:29:24}}
+\end{classroomqa}
+
+\section{Drei abschließende Fragen}
+
+\begin{classroomqa}
+\audiencequestion{Welche Gleichung ist die Boltzmann-Verteilung, und was sagt sie über das Gleichgewicht aus?}
+\lecturerresponse{Die Verteilung lautet
+\[
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+\]
+Sie ist die Verteilung maximaler Entropie unter den Nebenbedingungen der Normierung und eines festen mittleren Energieinhalts. Der mittlere Energieinhalt muss anhand derselben Wahrscheinlichkeiten berechnet werden, und die Normierung muss weiterhin durchgesetzt werden, auch wenn sie in der endgültigen Formel fast automatisch erfüllt scheint.
+\lecturetimestamp{01:38:14--01:38:45}}
+\end{classroomqa}
+
+Das Verfahren kann mechanisch wirken: Man schreibt eine Zustandssumme auf, bildet den Logarithmus und leitet ab. Dennoch überraschen die resultierenden Gleichungen immer wieder. Vertrautheit lehrt, welcher einfache Rechenschritt auf welchen folgen sollte; dadurch wird das Fach aber nicht weniger faszinierend.
+
+\begin{classroomqa}
+\audiencequestion{Lassen sich diese Überlegungen zur Entropie auf einen kollabierenden Stern oder ein Schwarzes Loch anwenden? Wie kann die Entropie zunehmen, während die Materie einen kleineren Bereich einnimmt?}
+\lecturerresponse{Sterne sind vor allem deshalb schwierig, weil ihre Materialeigenschaften kompliziert sind. Für Schwarze Löcher gibt es einen klareren Richtwert: Ihre Bekenstein--Hawking-Entropie ist die maximale gravitative Entropie bei den gegebenen makroskopischen Nebenbedingungen. Beim Kollaps kann die Entropie zunehmen, bis dieser Wert für das Schwarze Loch erreicht ist; eine weitere Zunahme erfordert eine Änderung der verfügbaren Energie oder der Größe.
+\lecturetimestamp{01:39:29--01:40:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann man mit der Zustandssumme auch Energieschwankungen berechnen?}
+\lecturerresponse{Ja. Eine Ableitung ergibt den mittleren Energieinhalt, eine zweite seine Varianz:
+\begin{align*}
+ \frac{\partial^2\log Z}{\partial\beta^2}
+ &=\langle E^2\rangle-\langle E\rangle^2\\
+ &=\operatorname{Var}(E).
+\end{align*}
+In Energieeinheiten hängt sie über folgende Beziehung mit der Wärmekapazität zusammen:
+\(\operatorname{Var}(E)=T^2C_V\)
+In Laboreinheiten gilt
+\(\operatorname{Var}(E)=k_BT_{\mathrm K}^2C_V\). Diese Beziehung für Schwankungen ist die nächste Rechnung.
+\lecturetimestamp{01:40:37--01:41:53}}
+\end{classroomqa}
+
+Schwankungen unterscheiden die statistische Mechanik von einer rein kontinuierlichen thermodynamischen Beschreibung. Ihre systematische Untersuchung, die besonders mit Gibbs und Einstein verbunden ist, macht die endlichen mikroskopischen Bestandteile sichtbar, die den glatten makroskopischen Gesetzen zugrunde liegen. Damit beginnt die nächste Vorlesung.

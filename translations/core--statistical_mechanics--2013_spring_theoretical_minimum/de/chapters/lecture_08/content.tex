@@ -1,0 +1,559 @@
+\chapter{Wiederkehr, Nichtgleichgewichtsordnung und Ising-Spins}
+
+\lectureoverview{Ein Gas, das aus einer Raumhälfte freigesetzt wird, strömt dem Gleichgewicht entgegen. Die reversible Mechanik besagt jedoch, dass eine hinreichend lange Entwicklung auch Rückkehrzustände zum Ausnahmezustand hervorbringen muss. Wir schätzen die Rückkehrzeit anhand des Phasenraumvolumens ab, trennen die Wiederkehr vom ungeklärten Beginn des Universums mit niedriger Entropie und nutzen das daraus entstehende Rätsel, um Boltzmann-Gehirne, eine kohärente Geschichte und durch einen Energiefluss aufrechterhaltenes Leben zu erörtern. Anschließend wenden wir uns der magnetischen Ordnung zu. Unabhängige Spins mit zwei möglichen Zuständen liefern einen exakt lösbaren Einstieg: Die Kombinatorik bestimmt die Zustandssumme, und die Magnetisierung ist ein hyperbolischer Tangens. Wechselwirkungen zwischen Nachbarn stellen schließlich eine Auf--ab-Symmetrie wieder her und führen zum eindimensionalen Ising-Modell.}
+
+\section{Ein Raum voller Luft, die schließlich zurückkehrt}
+
+Beginnen wir mit der gesamten Luft in der linken Hälfte eines Raums. Diesen Zustand kann man mithilfe einer Trennwand herstellen: Man evakuiert die rechte Hälfte, bringt die Luft links unter und entfernt dann die Wand. Das Gas breitet sich rasch im Raum aus und nähert sich dem thermischen Gleichgewicht. Die Entropie nimmt zu. Nichts Überraschendes ist geschehen.
+
+Nun lassen wir den Raum verschlossen und warten. Eine Serie von einer Million aufeinanderfolgenden Kopfseiten ist beim Münzwurf ein außerordentlich unwahrscheinliches Ergebnis. Bei einem unbegrenzt oft wiederholten Experiment treten jedoch irgendwann außerordentlich unwahrscheinliche Ergebnisse auf. Für das Gas gilt dieselbe Logik. Zu einem weit in der Zukunft liegenden Zeitpunkt werden sich wieder alle Moleküle in der linken Hälfte oder in einem vergleichbar besonderen Bereich befinden. Eine solche Rückkehr heißt Poincaré-Wiederkehr.
+
+Der genaue Satz ist etwas vorsichtiger formuliert als dieses Bild. Für ein Gebiet endlichen Maßes im Phasenraum, dessen Dynamik das Phasenraumvolumen erhält, kehrt fast jeder Anfangspunkt beliebig nahe an seinen Ausgangspunkt zurück. Eine makroskopische Aussage wie \emph{alle Moleküle befinden sich in der linken Hälfte} ist einfacher: Sie verlangt nur, dass die Bahn erneut in einen endlichen grob aufgelösten Bereich eintritt, nicht, dass jede Molekülkoordinate exakt ihren Ausgangswert annimmt. Die praktische Frage lautet: Wie lange dauert das?
+
+\subsection{Ein hochdimensionaler Phasenraumpunkt}
+
+Für \(N\) klassische Teilchen hat der Phasenraum \(6N\) Koordinaten:
+\begin{equation}
+ \Gamma=(\bm x_1,\ldots,\bm x_N;\bm p_1,\ldots,\bm p_N).
+ \label{eq:sm8-phase-point}
+\end{equation}
+Die Positionen sind durch den Raum begrenzt. Bei fester Gesamtenergie sind auch die Impulse beschränkt, denn ein Teilchen kann keinen beliebig großen Impuls haben, ohne zugleich beliebig viel Energie zu tragen. Unter den Voraussetzungen des Wiederkehrarguments hat die zulässige Energieschale daher endliches Maß.
+
+Der Phasenraumpunkt bewegt sich deterministisch, doch die Bewegung eines Vielteilchengases ist chaotisch. Benachbarte Bahnen entfernen sich rasch voneinander, wie bei einer Folge von Billardkugelstößen. Nach der Grobkörnigkeit scheint eine lange Bahn den zugänglichen Bereich zu durchstreifen.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_02.png}
+\caption{Schematischer Phasenraumbereich mit einer komplizierten Bahn, die ihn durchstreift. Die Zeichnung ist absichtlich niedrigdimensional; das reale Gas befindet sich in einem Raum mit \(6N\) Dimensionen.}
+\lectureframe{00:06:41}
+\end{figure}
+
+Die niedrigdimensionale Skizze verleitet uns sofort zu einem Fehler. Würde der besondere Zustand die Hälfte des gezeichneten Rechtecks einnehmen, könnte man sagen, dass das Gas die Hälfte seiner Zeit dort verbringen sollte. Doch die Bedingung \emph{jedes Molekül liegt in der linken Hälfte} schränkt jede Positionskoordinate ein, nicht nur eine Koordinate des Phasenraumpunkts.
+
+Betrachten wir nur zwei Teilchen, die sich eindimensional bewegen, mit den Koordinaten \(x_1\) und \(x_2\). Ihr Konfigurationsraum ist ein Quadrat. Die Bedingung \(x_1<L/2\) wählt die Hälfte des Quadrats aus; die Bedingungen \(x_1<L/2\) und \(x_2<L/2\) wählen ein Viertel aus:
+\begin{equation}
+ P_2=\frac{1}{2}\frac{1}{2}=\frac{1}{4}.
+ \label{eq:sm8-two-particle-quarter}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_07.png}
+\caption{Bei zwei eindimensionalen Teilchen stellt das kleinere Quadrat die Konfigurationen dar, in denen beide Koordinaten in der gewählten Raumhälfte liegen.}
+\lectureframe{00:07:08}
+\end{figure}
+
+Bei drei Teilchen ergibt sich \(1/2^3\), und bei \(N\) Teilchen ergibt sich
+\begin{equation}
+ P_{\mathrm{half}}(N)
+ =\left(\frac{1}{2}\right)^N.
+ \label{eq:sm8-half-probability}
+\end{equation}
+Auf den Exponenten kommt es entscheidend an. Ein Faktor von einem Halb ist gewöhnlich; ein halb hoch einer makroskopischen Teilchenzahl liegt jenseits der gewöhnlichen Vorstellungskraft.
+
+\begin{classroomqa}
+\audiencequestion{Müsste das Ergebnis \(1/3^N\) lauten, da sich die Moleküle auch in anderen Raumrichtungen bewegen?}
+\lecturerresponse{Das hängt von der Bedingung ab, die man vorgibt. Geht es nur darum, ob sich jedes Teilchen links von der Trennwand befindet, erfüllt jedes Teilchen eine binäre Bedingung, und das Ergebnis lautet \(2^{-N}\). Beschränkt man einen weiteren, unabhängigen Anteil des verfügbaren Ortsraums, kommt ein weiterer Faktor hinzu.
+\lecturetimestamp{00:07:47--00:08:05}}
+\end{classroomqa}
+
+\section{Phasenraumvolumen, Entropie und Wiederkehrskala}
+
+Dieselbe Abschätzung lässt sich auch ohne Bezug auf Raumhälften formulieren. Der Raum habe das gewöhnliche räumliche Volumen \(V\), und \(v\) sei ein kleinerer Bereich, in dem sich jedes Molekül befinden soll. Lässt man Impulsfaktoren außer Acht, die beiden Makrozuständen gemeinsam sind, lauten die verfügbaren Konfigurationsraumvolumina:
+\begin{equation}
+ \Omega_{\mathrm{room}}\propto V^N,
+ \qquad
+ \Omega_{\mathrm{small}}\propto v^N.
+ \label{eq:sm8-config-volumes}
+\end{equation}
+Der langfristige Zeitanteil, der im kleinen Makrozustand verbracht wird, beträgt daher
+\begin{equation}
+ P(v)
+ =\frac{\Omega_{\mathrm{small}}}{\Omega_{\mathrm{room}}}
+ =\left(\frac{v}{V}\right)^N.
+ \label{eq:sm8-volume-ratio}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_08.png}
+\caption{Das allgemeine Phasenraumvolumenbild an der Tafel: ein kleiner Bereich \(v^N\) innerhalb eines zugänglichen Bereichs \(V^N\), mit dem Verhältnis \(v^N/V^N\).}
+\lectureframe{00:10:44}
+\end{figure}
+
+In Einheiten mit \(k_B=1\) ist die Entropie der Logarithmus des zugänglichen Phasenraumvolumens. Sind \(S_A=\log\Omega_A\) die Entropie des eingeschränkten Makrozustands und \(S_{\rm eq}=\log\Omega_{\rm eq}\) die des Gleichgewichts, so gilt:
+\begin{equation}
+ \begin{aligned}
+ P(A)
+ &=\frac{\Omega_A}{\Omega_{\rm eq}}\\
+ &=\exp\!\left(S_A-S_{\rm eq}\right)\\
+ &=e^{-\Delta S},\\
+ \Delta S&=S_{\rm eq}-S_A.
+ \end{aligned}
+ \label{eq:sm8-entropy-probability}
+\end{equation}
+Für den Zustand mit der Luft in einer Raumhälfte ist \(\Delta S=N\log 2\), und \eqref{eq:sm8-entropy-probability} vereinfacht sich exakt zu \(2^{-N}\).
+Die Kurzschreibweise \(P\sim e^{-S_{\rm eq}}\) ist nur dann angemessen, wenn die Entropie des besonderen Bereichs als feste Referenz behandelt wird; der physikalisch aussagekräftige Exponent ist das Entropiedefizit \(\Delta S\).
+
+\begin{classroomqa}
+\audiencequestion{Ist das das Volumen des Konfigurationsraums und nicht des gesamten Phasenraums?}
+\lecturerresponse{Für diesen Vergleich: ja. Wir geben eine Positionsbedingung vor und lassen dabei die Impulsverteilung bei derselben Temperatur unverändert, sodass sich der gemeinsame Faktor im Impulsraum herauskürzt. Eine allgemeine Aussage zur Wiederkehr bezieht sich auf den Phasenraum; diese spezielle Wahrscheinlichkeit lässt sich aus dem Verhältnis der Konfigurationsraumvolumina berechnen.
+\lecturetimestamp{00:11:21--00:11:40}}
+\end{classroomqa}
+
+Nehmen wir an, das System verliere sein Gedächtnis an seine genaue Position nach einer mikroskopischen Korrelations- oder Mischungszeit \(\tau_{\rm mix}\). Ein seltener Bereich mit Wahrscheinlichkeit \(P(A)\) wird dann auf der Zeitskala
+\begin{equation}
+ \tau_{\rm rec}
+ \sim \frac{\tau_{\rm mix}}{P(A)}
+ \sim \tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-recurrence-time-general}
+\end{equation}
+angetroffen. Für die Bedingung mit der halben Raumgröße gilt:
+\begin{equation}
+ \tau_{\rm rec}\sim\tau_{\rm mix}2^N.
+ \label{eq:sm8-recurrence-time-half}
+\end{equation}
+In der Vorlesung wird bewusst eine grobe Abschätzung mit einer raumtypischen Größe verwendet:
+\(N\sim10^{30}\). Das ergibt die einprägsame Zeitskala
+\(\tau_{\rm rec}/\tau_{\rm mix}\sim2^{10^{30}}\). Bei gewöhnlicher atmosphärischer Dichte hat ein Raum eher \(10^{27}\) Moleküle. Ersetzt man aber \(10^{30}\) durch \(10^{27}\), ändert das nichts an der Schlussfolgerung: Die Wiederkehrzeit ist weiterhin unvorstellbar viel größer als das Alter des Universums.
+
+\begin{classroomqa}
+\audiencequestion{In welchen Einheiten wird die Wiederkehrzeit gemessen? Könnte ein Wechsel von Sekunden zu Stunden oder zu einer extrem kleinen Zeiteinheit die Schlussfolgerung verändern?}
+\lecturerresponse{Der Vorfaktor mit der Dimension einer Zeit ist \(\tau_{\rm mix}\); die riesige Zahl ist das dimensionslose Verhältnis \(\tau_{\rm rec}/\tau_{\rm mix}\). Ein Wechsel von Sekunden zu Stunden bedeutet eine Division durch einen gewöhnlichen Umrechnungsfaktor, der gegenüber \(2^{10^{30}}\) vernachlässigbar ist. Wie lange ein einzelner Aufenthalt in der Ecke dauert, hängt auch von den Molekülgeschwindigkeiten ab. Die Abschätzung betrifft die Seltenheit, mit der ein solcher Aufenthalt beginnt. Es gibt auch einen quantenmechanischen Wiederkehrsatz, doch er wird hier nicht benötigt.
+\lecturetimestamp{00:17:24--00:19:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Was ist der Zweck einer Berechnung für eine Zeit, auf die kein Experiment jemals warten kann?}
+\lecturerresponse{Es geht um eine begriffliche Einsicht. Die Berechnung zeigt, in welchem Sinn ein abgeschlossenes mechanisches System reversibel bleibt. Es verbringt fast seine gesamte Zeit nahe dem Gleichgewicht, zeigt aber auf hinreichend langen Zeitskalen auch Fluktuationen zu niedrigerer Entropie. Der zweite Hauptsatz ist daher eine überwältigend wahrscheinliche Aussage über besondere Anfangsdaten und kein mikroskopisches Gesetz, das eine Bewegungsumkehr verbietet.
+\lecturetimestamp{00:15:12--00:16:35}}
+\end{classroomqa}
+
+\section{Reversibilität und der besondere Anfang}
+
+Wir beginnen bewusst im kleinen Bereich mit der halben Raumgröße. Fast jede benachbarte Bahn verlässt ihn sofort, denn das Phasenraumvolumen außerhalb ist um ein Vielfaches größer als das innerhalb. Das Gas breitet sich rasch aus und wartet danach sehr lange, bevor es zurückkehrt. Diese Asymmetrie zwischen rascher Relaxation und langem Warten widerspricht der reversiblen Mechanik nicht.
+
+Die Zeitumkehr des raschen Entweichens ist nicht die gesamte Wartezeit. Sie ist der kurze, fantastisch gut koordinierte Vorgang, in dem sich gleichgewichtsähnliche Molekülgeschwindigkeiten zufällig so anordnen, dass das Gas \emph{mit einem Schwung} in eine Raumhälfte strömt. Kehrt man am Ende des gewöhnlichen Entweichens jeden Impuls um, durchläuft das Gas den Entweichvorgang rückwärts. Die lange Wartezeit ist die Zeit, die vergehen muss, bis dieses besondere einlaufende Geschwindigkeitsmuster spontan auftritt.
+
+\begin{classroomqa}
+\audiencequestion{Bedeutet die Zeitsymmetrie, dass die langsame Wiederkehr in die Ecke genauso lange dauert wie das ursprüngliche Entweichen aus ihr?}
+\lecturerresponse{Nein. Vergleichen Sie das Entweichen mit seiner exakten Zeitumkehr. Beide sind rasch. Ungeheuer lange dauert es, im Gleichgewicht auf die genaue einlaufende Fluktuation zu warten, die den umgekehrten Strömungsvorgang auslöst. Betrachtet man einen enorm langen Zeitraum, treten Abweichungen vom Gleichgewicht in beiden Zeitrichtungen mit lokal symmetrischen Verläufen auf.
+\lecturetimestamp{00:20:46--00:21:58}}
+\end{classroomqa}
+
+Das Wiederkehrargument erklärt folglich nur einen Teil des Zeitpfeils. Es erklärt, warum die Entropie gewöhnlich zunimmt, \emph{wenn} das System in einem Bereich niedriger Entropie begonnen hat. Es erklärt nicht, warum die Anfangsbedingung besonders war. In der Kosmologie wird diese fehlende Voraussetzung zur zentralen Frage: Warum begann das beobachtbare Universum in einem so außergewöhnlich kleinen Bereich seines gravitativen Phasenraums?
+
+\begin{classroomqa}
+\audiencequestion{Gilt die Wiederkehr auch für die Kosmologie? Könnte das Universum, nachdem es sich ausgedehnt hat, bei genügend langem Warten wiederkehren?}
+\lecturerresponse{Diese Frage lässt sich nicht umgehen, doch die Antwort hängt von der globalen Kosmologie ab. Für ein tatsächlich abgeschlossenes System mit einem endlichen Gleichgewichtszustandsraum liegt eine Wiederkehr nahe. Eine expandierende Raumzeit, Gravitation, Horizonte und ein unendlicher oder nichtstationärer Zustandsraum können die Voraussetzungen verändern. Die hier wichtige, engere Erkenntnis lautet: Ein Bild der Wiederkehr ins Gleichgewicht reicht für sich genommen nicht als statistische Erklärung des strukturierten Universums, das wir beobachten.
+\lecturetimestamp{00:19:59--00:20:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hängt die Wiederkehr davon ab, dass das Gas zu Beginn in einem kleinen Bereich präpariert wird? Wenn der Raum im Gleichgewicht beginnt, sammelt sich die Luft dann irgendwann trotzdem in einer Ecke?}
+\lecturerresponse{Ja. Bei der Wiederkehr geht es um die Langzeitdynamik des abgeschlossenen Systems. Daher unterliegen auch gleichgewichtsähnliche Anfangszustände seltenen Fluktuationen zu niedriger Entropie. Den Zustand mit der Luft in einer Raumhälfte vorzubereiten ist aus einem anderen Grund wichtig: So können wir von einem bekannten besonderen Anfangszustand ausgehen und fragen, warum die Entropie unmittelbar danach zunimmt.
+\lecturetimestamp{00:22:04--00:22:20}}
+\end{classroomqa}
+
+\section{Warum eine zufällige Fluktuation zu wenig vorhersagt}
+
+Man könnte versuchen, aus der Wiederkehr eine Kosmologie zu entwickeln: Vielleicht verbrachte das Universum fast eine ganze Ewigkeit im Gleichgewicht, und unsere heutige Welt ist eine seltene Fluktuation. Dieser Vorschlag besteht eine scharfe statistische Prüfung nicht. Nehmen wir die Existenz eines Beobachters als Bedingung und fragen wir, was dieser Beobachter sonst noch erwarten sollte.
+
+Eine Fluktuation, die groß genug ist, um einen Planeten hervorzubringen, ist außerordentlich selten. Eine Fluktuation, die zwei Planeten hervorbringt, erfordert ein größeres Entropiedefizit und ist noch seltener. Eine Fluktuation, die Sterne, Galaxien, einen kosmischen Mikrowellenhintergrund und untereinander konsistente Aufzeichnungen einer langen Vergangenheit hervorbringt, ist um einen enormen zusätzlichen Exponentialfaktor seltener. Eine Theorie der Gleichgewichtsfluktuationen sagt daher die kleinste Fluktuation voraus, die für eine Beobachtung ausreicht, und nicht die reichhaltige kohärente Welt, die tatsächlich beobachtet wird. In ihrer extremsten Form heißt der minimale Beobachter Boltzmann-Gehirn.
+
+Die Logik beruht auf bedingten Wahrscheinlichkeiten. Sei \(A\) das Ereignis, dass eine Fluktuation in der Größenordnung eines Beobachters auftritt, und \(B\) eine davon unabhängige zweite Struktur. Haben beide eine geringe Wahrscheinlichkeit \(p\), so gilt:
+\begin{equation}
+ P(B\mid A)=p,
+ \qquad
+ P(A\cap B)=p^2.
+ \label{eq:sm8-conditional-fluctuations}
+\end{equation}
+Zu erfahren, dass die erste Fluktuation aufgetreten ist, macht die zweite nicht wahrscheinlich. Die Analogie zur Lotterie trifft genau auf dieser Ebene zu: Ein früherer Gewinner hat bei der nächsten unabhängigen Ziehung keine besseren Chancen. Der Beobachter kann also seine eigene Anwesenheit als Bedingung setzen, sollte aber weiterhin erstaunt sein, wenn er eine unabhängig strukturierte Umgebung vorfindet.
+
+\begin{classroomqa}
+\audiencequestion{Ist die Wahrscheinlichkeit für einen weiteren Planeten oder einen weiteren Boltzmann-Beobachter wirklich geringer, wenn es bereits einen Planeten oder Boltzmann-Beobachter gibt?}
+\lecturerresponse{Die bedingte Wahrscheinlichkeit für eine zweite, unabhängige seltene Fluktuation ist dieselbe geringe Ein-Ereignis-Wahrscheinlichkeit, nicht deren Quadrat. Die gemeinsame Wahrscheinlichkeit für beide beträgt das Quadrat davon. Genau deshalb sollte der erste Beobachter außerhalb seiner selbst weiterhin thermische Unordnung erwarten. Einen Ehepartner, einen weiteren Planeten und einen geordneten Himmel vorzufinden, ist ein Hinweis gegen die Annahme, dass der Beobachter als isolierte Gleichgewichtsfluktuation entstanden ist.
+\lecturetimestamp{00:26:12--00:30:27}}
+\end{classroomqa}
+
+\subsection{Kohärente Aufzeichnungen einer Vergangenheit}
+
+Dasselbe Argument gilt für die Geschichte. Zwei übereinstimmende Lehrbücher, astronomische Aufzeichnungen, die zu derselben Expansionsgeschichte passen, geologische Schichten, Erinnerungen und Laborbücher schränken einander ein. Ein einzelnes zufälliges Lehrbuch könnte irgendeine Geschichte enthalten. Ein ganzes Netz von Aufzeichnungen, die dieselbe Vergangenheit schildern, nimmt einen viel kleineren Phasenraumbereich ein.
+
+Das Beispiel aus der Vorlesung greift die bekannte Erzählung auf, George Washington habe einen Kirschbaum gefällt. Ob diese Erzählung wahr ist, spielt keine Rolle. Entscheidend ist: In einer Welt, die im gegenwärtigen Augenblick durch eine Fluktuation entstanden wäre, gäbe es keinen dynamischen Grund dafür, dass die Aussage in einem Buch mit einem anderen Zeugnis übereinstimmt. Kohärente Korrelationen sprechen für eine gemeinsame Geschichte und nicht bloß für einen einmaligen Zufall im gegenwärtigen Augenblick.
+
+\begin{classroomqa}
+\audiencequestion{Was bedeutet hier \emph{historische Kohärenz}?}
+\lecturerresponse{Es bedeutet, dass viele gegenwärtige Aufzeichnungen zueinander passen und sich als Folgen einer gemeinsamen Vergangenheit verstehen lassen. Eine Fluktuation könnte Aufzeichnungen und Erinnerungen hervorbringen, doch ein untereinander konsistentes Netz zu erzeugen erfordert eine viel größere Fluktuation als die Hervorbringung eines einzelnen minimalen Beobachters. Die Wiederkehrtheorie sagt daher voraus, dass es den meisten beobachterähnlichen Fluktuationen an der Kohärenz fehlt, die wir tatsächlich vorfinden.
+\lecturetimestamp{00:30:30--00:31:12}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Könnte das Universum dennoch ein abgeschlossenes System sein, dessen Zeit bis zum Gleichgewicht und bis zur Wiederkehr lediglich extrem lang ist?}
+\lecturerresponse{Diese Möglichkeit beseitigt das statistische Problem nicht. Im Verlauf einer unbegrenzt langen Geschichte gäbe es viele beobachterähnliche Fluktuationen, und die überwältigende Mehrheit davon wären minimale Fluktuationen ohne kohärente Umgebungsgeschichte. Ein aus diesem Ensemble ausgewählter Beobachter sollte unsere Beobachtungen nicht erwarten. Kosmologinnen und Kosmologen nehmen das Boltzmann-Gehirn-Problem daher als Prüfung kosmologischer Maße und Spätzeitmodelle ernst, nicht als Behauptung, die Wiederkehr sei bereits beobachtet worden.
+\lecturetimestamp{00:31:13--00:32:42}}
+\end{classroomqa}
+
+\section{Leben als Struktur, die durch einen Fluss aufrechterhalten wird}
+
+Leben scheint die entgegengesetzte Schwierigkeit aufzuwerfen. Organismen erhalten ihre komplexe Organisation lange Zeit aufrecht; sie sehen nicht wie kurzlebige zufällige Fluktuationen aus. Die Auflösung besteht darin, dass der zweite Hauptsatz für ein vollständiges abgeschlossenes System gilt. Ein Teilsystem kann seine Entropie verringern oder aufrechterhalten, sofern in seiner Umgebung eine größere Entropiezunahme stattfindet:
+\begin{equation}
+ \dot S_{\rm total}
+ =\dot S_{\rm subsystem}+\dot S_{\rm environment}\geq 0.
+ \label{eq:sm8-open-system-second-law}
+\end{equation}
+
+Die Erde befindet sich nicht im thermischen Gleichgewicht. Auf menschlichen Zeitskalen ist sie annähernd stationär, doch stationär bedeutet nicht statisch. Energie durchströmt sie. Sonnenlicht trifft ein, wird durch viele Prozesse abgewertet und bei einer niedrigeren effektiven Temperatur wieder abgestrahlt. Dieser Durchsatz kann lokale Ordnung aufrechterhalten, während die Gesamtentropie zunimmt.
+
+Wasser, das durch ein Rohr fließt, liefert ein unmittelbares mechanisches Bild. In der Strömung können beständige Wirbel und Walzen auftreten. Sie sind geordnete Strukturen, werden aber von der Strömung aufrechterhalten. Verschließt man beide Enden und stoppt die Strömung, lässt die Viskosität die Wirbel verschwinden, während sich das Wasser einem wenig aufregenden Gleichgewicht nähert. Das ausströmende Wasser ist wärmer als das einströmende; das größere System hat also den Entropiepreis entrichtet.
+
+\begin{classroomqa}
+\audiencequestion{Verringert das Leben die Entropie, und warum kann seine Organisation fortbestehen, anstatt wie eine gewöhnliche Fluktuation aufzutreten und wieder zu verschwinden?}
+\lecturerresponse{Leben kann die Entropie lokal aufrechterhalten oder verringern, aber nur, indem es noch mehr Entropie exportiert. Es besteht dank eines stationären Nichtgleichgewichtsflusses fort, vor allem dank des Flusses von Sonnenenergie durch die Erde. Wäre die Erde gegen ein- und ausgehende Strahlung abgeschlossen, würde sie sich schließlich dem thermischen Gleichgewicht nähern, und die organisierte Aktivität käme zum Erliegen. Leben ähnelt eher einem Wirbel in einer Strömung als einer Gleichgewichtsfluktuation.
+\lecturetimestamp{00:32:43--00:35:42}}
+\end{classroomqa}
+
+Damit verlassen wir die \emph{interessanten Dinge} und wenden uns, wie es in der bewusst trockenen Formulierung der Vorlesung heißt, etwas Langweiligem zu: Magneten.
+
+\section{Einen Magneten abkühlen: Domänen und eine gewählte Richtung}
+
+In der statistischen Mechanik wird ein mathematisches Modell oft als Magnet bezeichnet, auch wenn es sich nicht um ein Stück Eisen im wörtlichen Sinn handelt. Die nützliche Gemeinsamkeit besteht darin, dass eine Sammlung lokaler Freiheitsgrade Ordnung ausbilden kann. In einem realen magnetischen Material können diese Freiheitsgrade von atomaren magnetischen Momenten, Elektronenspins, orbitalen Strömen oder effektiven Momenten von Kristalleinheiten herrühren.
+
+Bei hoher Temperatur sorgt thermische Unordnung dafür, dass die lokalen Momente in viele Richtungen zeigen, sodass die resultierende Magnetisierung gering ist oder ganz verschwindet. Haben benachbarte Momente eine niedrigere Energie, wenn sie ausgerichtet sind, können sich beim Abkühlen kleine ausgerichtete Domänen bilden. Bei weiterer Abkühlung gewinnt der energetische Vorteil an Bedeutung, und die korrelierten Domänen wachsen. In einem System, das einen ferromagnetischen Übergang aufweist, wird die Korrelationslänge bei einer endlichen kritischen Temperatur makroskopisch. Die geordnete Phase wählt dann eine Orientierung, obwohl die Energie bei verschwindendem Feld keine Orientierung von vornherein bevorzugt hat.
+
+\begin{classroomqa}
+\audiencequestion{Müssten sich mikroskopische Magnete aufgrund der Anziehung zwischen Nord- und Südpol bevorzugt entgegengesetzt ausrichten?}
+\lecturerresponse{Die effektive Wechselwirkung hängt vom Material ab. Die gewöhnliche Dipolvorstellung erfasst das mikroskopische Problem nicht vollständig; Austauschwechselwirkung, Kristallstruktur und konkurrierende Wechselwirkungen spielen ebenfalls eine Rolle. Ferromagnetische Materialien sind solche, bei denen die effektive Tendenz bei niedriger Energie eine parallele Ordnung begünstigt; andere Materialien können eine entgegengesetzte Ausrichtung bevorzugen.
+\lecturetimestamp{00:39:56--00:40:30}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Muss während des Abkühlens des Materials ein äußeres Magnetfeld vorhanden sein, damit sich die Momente ausrichten?}
+\lecturerresponse{Nein. Die Wechselwirkung kann auch ohne Feld Ordnung hervorbringen. In einer exakt symmetrischen Idealisierung sind verschiedene Richtungen energetisch gleichwertig. Welche Richtung sich tatsächlich einstellt, wird daher durch anfängliche Fluktuationen, Randbedingungen oder ein beliebig kleines Streufeld bestimmt. Die Auswahl einer dieser gleichwertigen Richtungen ist spontane Symmetriebrechung; der Beginn makroskopischer Ordnung ist der magnetische Phasenübergang.
+\lecturetimestamp{00:40:31--00:42:33}}
+\end{classroomqa}
+
+Reale Materialien sind kompliziert, deshalb vereinfachen wir jetzt drastisch. Jedes lokale Moment darf nur nach oben oder nach unten zeigen:
+\begin{equation}
+ \sigma_i=+1\quad\hbox{or}\quad\sigma_i=-1.
+ \label{eq:sm8-ising-spin}
+\end{equation}
+In diesem Modell gibt es weder Osten noch Westen. Die beiden erlaubten Orientierungen sind eine Modellannahme, so wie Kopf und Zahl die beiden möglichen Ergebnisse eines Münzwurfs sind. Der Wert des Modells liegt nicht in seiner mikroskopischen Realitätsnähe, sondern in seiner mathematischen Klarheit und darin, dass es Ordnungsphänomene darstellen kann, die viele Systeme gemeinsam haben.
+
+\begin{classroomqa}
+\audiencequestion{Was sind diese Objekte mit zwei Zuständen physikalisch? Sollte man sie sich als Teilchen vorstellen?}
+\lecturerresponse{Man kann sich Atome an den Gitterplätzen eines Kristalls vorstellen, von denen jedes ein effektives magnetisches Moment besitzt, das durch Spin oder mikroskopische Ströme entsteht. Für das Modell zählt jedoch nur die Variable mit zwei möglichen Werten. Die Beschränkung auf oben und unten wird eingeführt, um die statistische Mechanik zu vereinfachen.
+\lecturetimestamp{00:44:22--00:45:01}}
+\end{classroomqa}
+
+\section{Unabhängige Spins in einem äußeren Feld}
+
+Das erste Modell umfasst \(N\) Spins, die nicht miteinander wechselwirken. Ein äußeres Feld \(H\) liefert die einzige Energieskala, und \(\mu\) gibt die Stärke der Kopplung eines einzelnen Spins an dieses Feld an. Wir behalten die in der Rechnung verwendete Vorzeichenkonvention bei:
+\begin{equation}
+ \epsilon_i=\mu H\sigma_i.
+ \label{eq:sm8-single-spin-energy}
+\end{equation}
+Für \(H>0\) hat ein nach oben gerichteter Spin \(\sigma_i=+1\) die Energie \(+\mu H\), während ein nach unten gerichteter Spin \(\sigma_i=-1\) die Energie \(-\mu H\) hat. Nach dieser Konvention begünstigt ein positives Feld also nach unten gerichtete Spins. Das ist die Umkehrung einer anderen verbreiteten Bezeichnungskonvention. Für die Physik sind die Bezeichnungen jedoch unerheblich, solange die Vorzeichen durchgehend konsistent verwendet werden.
+
+Sei \(n\) die Zahl der nach oben gerichteten Spins und \(m\) die Zahl der nach unten gerichteten Spins. Dann gilt:
+\begin{equation}
+ n+m=N,
+ \qquad
+ E=(n-m)\mu H.
+ \label{eq:sm8-counting-energy}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_03.png}
+\caption{Die Konfiguration unabhängiger Spins: \(n\) nach oben gerichtete Spins, \(m\) nach unten gerichtete Spins, \(n+m=N\) und \(E=(n-m)\mu H\).}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Welche Dimensionen haben \(H\), \(\mu\) und \(E\)? Ist \(H\) eine Zahl oder ein Magnetfeld?}
+\lecturerresponse{\(H\) bezeichnet die Stärke des von außen angelegten Feldes und \(\mu\) das magnetische Moment. Ihr Produkt \(\mu H\) hat die Dimension einer Energie. Im abstrakten Modell fasst man sie oft zu einem einzigen Parameter mit Energiedimension zusammen, der üblicherweise ebenfalls mit einem kleinen \(h\) bezeichnet wird. Hier behalten wir beide Faktoren bei, um ihren physikalischen Ursprung zu zeigen, und \(E\) ist die Gesamtenergie.
+\lecturetimestamp{00:48:21--00:49:27}}
+\end{classroomqa}
+
+\subsection{Konfigurationen zählen}
+
+Bei festem \(n\) und \(m=N-n\) wählen wir aus, welche \(n\) der \(N\) Gitterplätze nach oben zeigen. Die Multiplizität beträgt:
+\begin{equation}
+ \Omega(n,m)=\binom{N}{n}
+ =\frac{N!}{n!\,m!}.
+ \label{eq:sm8-spin-multiplicity}
+\end{equation}
+Alle diese Konfigurationen haben dieselbe Energie:
+\eqref{eq:sm8-counting-energy}.
+
+\begin{classroomqa}
+\audiencequestion{Können \(n\) und \(m\) beide Summationsindizes sein, obwohl sie nicht unabhängig sind? Und wo geht der kombinatorische Faktor ein?}
+\lecturerresponse{Man kann sie als Paar mit der Nebenbedingung \(n+m=N\) schreiben oder über \(n=0,\ldots,N\) summieren und \(m=N-n\) setzen. Das Boltzmann-Gewicht gehört zu jeder einzelnen Konfiguration; fasst man alle Konfigurationen gleicher Energie zusammen, wird dieses Gewicht mit \(N!/(n!\,m!)\) multipliziert.
+\lecturetimestamp{00:52:04--00:53:03}}
+\end{classroomqa}
+
+Die Zustandssumme lautet daher:
+\begin{align}
+ Z_N
+ &=\sum_{n+m=N}
+   \frac{N!}{n!\,m!}
+   e^{-\beta\mu H(n-m)}
+ \notag\\
+ &=\sum_{n=0}^{N}
+   \binom{N}{n}
+   \left(e^{-\beta\mu H}\right)^n
+   \left(e^{+\beta\mu H}\right)^{N-n}.
+ \label{eq:sm8-spin-z-sum}
+\end{align}
+Wir führen ein:
+\begin{equation}
+ x=e^{-\beta\mu H},
+ \qquad
+ y=e^{+\beta\mu H}.
+ \label{eq:sm8-xy}
+\end{equation}
+Mit dem binomischen Lehrsatz ist die Rechnung dann abgeschlossen:
+\begin{align}
+ Z_N
+ &=\sum_{n=0}^{N}\binom{N}{n}x^n y^{N-n}
+   =(x+y)^N
+ \notag\\
+ &=\left(e^{-\beta\mu H}+e^{+\beta\mu H}\right)^N
+   =\left[2\cosh(\beta\mu H)\right]^N.
+ \label{eq:sm8-spin-z-closed}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_04.png}
+\caption{Die Summe für die Zustandssumme, die Substitutionen \(x\) und \(y\) sowie die Reduktion mit dem binomischen Lehrsatz auf eine Potenz von \(2\cosh(\beta\mu H)\).}
+\lectureframe{00:56:00}
+\end{figure}
+
+Es gibt auch eine kürzere Herleitung. Da die Spins unabhängig sind, gilt für einen Spin:
+\begin{equation}
+ z_1=e^{-\beta\mu H}+e^{+\beta\mu H}
+    =2\cosh(\beta\mu H),
+ \label{eq:sm8-one-spin-z}
+\end{equation}
+und \(Z_N=z_1^N\). Die kombinatorische Herleitung lohnt sich dennoch, weil sie ausdrücklich zeigt, wie die Multiplizität mit der Energie konkurriert.
+
+\section{Konfigurationsmagnetisierung und Magnetisierung des Ensembles}
+
+Für eine einzelne Konfiguration definieren wir den dimensionslosen Spinüberschuss pro Gitterplatz als:
+\begin{equation}
+ M_{\rm conf}=\frac{n-m}{N}.
+ \label{eq:sm8-config-magnetization}
+\end{equation}
+Er reicht von \(+1\) bei lauter nach oben gerichteten Spins bis \(-1\) bei lauter nach unten gerichteten Spins. Die hier verwendete thermodynamische Magnetisierung ist der Boltzmann-Mittelwert dieser Größe:
+\begin{equation}
+ M=\left\langle M_{\rm conf}\right\rangle
+  =\left\langle\frac{n-m}{N}\right\rangle.
+ \label{eq:sm8-average-magnetization}
+\end{equation}
+Der Faktor \(\mu H\) gehört nicht in diese Definition. Während der Rechnung stand er kurz darin und wurde dann wieder entfernt; \(\mu H\) wandelt den Spinüberschuss in Energie um.
+
+Für jede einzelne Konfiguration gilt:
+\begin{equation}
+ E=N\mu H M_{\rm conf}.
+ \label{eq:sm8-energy-config-m}
+\end{equation}
+Aus der Linearität der Mittelwertbildung folgt unmittelbar:
+\begin{equation}
+ \langle E\rangle=N\mu H M.
+ \label{eq:sm8-energy-average-m}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_05.png}
+\caption{Die Spinreihe, der korrigierte Mittelwert der Magnetisierung und die an der Tafel hervorgehobene Energiebeziehung.}
+\lectureframe{01:01:22}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Wird die Magnetisierung einer bestimmten Konfiguration zugeordnet, oder sprechen wir von einer mittleren Magnetisierung? Warum gilt dieselbe Beziehung auch für die mittlere Energie?}
+\lecturerresponse{Beide Begriffe kommen vor und müssen unterschieden werden. \((n-m)/N\) ist der Wert in einer einzelnen Konfiguration; \(M\) ist der Boltzmann-Mittelwert davon. Da \(E=N\mu H M_{\rm conf}\) in jeder einzelnen Konfiguration gilt, ergibt das Mitteln beider Seiten mit denselben Wahrscheinlichkeiten \(\langle E\rangle=N\mu H M\). Die festen Größen \(N\), \(\mu\) und \(H\) können aus dem Mittelwert herausgezogen werden.
+\lecturetimestamp{00:59:54--01:03:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie kann das Modell alle Spins nach Norden--Süden ausrichten, ohne Aufwärts- gegenüber Abwärtsspinorientierungen zu bevorzugen?}
+\lecturerresponse{Das Fehlen von Ost und West ist im Zweizustandsmodell fest eingebaut; es ist eine Einschränkung der erlaubten Freiheitsgrade. Das vorliegende Modell mit äußerem Feld \emph{ist} zwischen Aufwärts- und Abwärtsspinorientierungen verzerrt: Bei unserer Vorzeichenkonvention senkt das Feld die Energie der Abwärtsspins. Folglich besitzt dieses Modell keine Aufwärts--Abwärts-Symmetrie. Das weiter unten eingeführte Ising-Modell ohne äußeres Feld wird diese Symmetrie wiederherstellen.
+\lecturetimestamp{01:03:41--01:04:53}}
+\end{classroomqa}
+
+\subsection{Energie aus der Zustandssumme}
+
+Die mittlere Energie ergibt sich aus der üblichen Identität
+\begin{equation}
+ \langle E\rangle
+ =-\frac{\partial}{\partial\beta}\log Z_N.
+ \label{eq:sm8-energy-identity}
+\end{equation}
+Mit \eqref{eq:sm8-spin-z-closed} folgt
+\begin{align}
+ \log Z_N
+ &=N\log 2+N\log\!\left[\cosh(\beta\mu H)\right],
+ \notag\\
+ \langle E\rangle
+ &=-N\mu H\,
+   \frac{\sinh(\beta\mu H)}{\cosh(\beta\mu H)}
+ \notag\\
+ &=-N\mu H\tanh(\beta\mu H).
+ \label{eq:sm8-average-energy}
+\end{align}
+Zusammen mit \eqref{eq:sm8-energy-average-m} ergibt sich
+\begin{equation}
+ \boxed{M=-\tanh(\beta\mu H)}.
+ \label{eq:sm8-magnetization-tanh}
+\end{equation}
+
+Die Form des Ergebnisses enthält die Physik. Man erinnere sich:
+\begin{equation}
+ \cosh x=\frac{e^x+e^{-x}}{2},
+ \qquad
+ \sinh x=\frac{e^x-e^{-x}}{2}.
+ \label{eq:sm8-hyperbolic-definitions}
+\end{equation}
+In der Nähe des Ursprungs gilt \(\tanh x=x+O(x^3)\); für große positive Werte von \(x\) nähert sich der Ausdruck \(1\). Da \(\beta=1/T\), gilt
+\begin{equation}
+ M\longrightarrow -1
+ \quad (T\longrightarrow0),
+ \qquad
+ M\longrightarrow 0
+ \quad (T\longrightarrow\infty).
+ \label{eq:sm8-magnetization-limits}
+\end{equation}
+Bei null Temperatur befindet sich jeder Spin im energieärmeren Abwärtszustand. Bei unendlicher Temperatur sind alle Konfigurationen gleich gewichtet, und der Einfluss des Feldes verschwindet. Eine Umkehr von \(H\) kehrt \(M\) um.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_09.png}
+\caption{Die Kurve des hyperbolischen Tangens nähert sich für große Werte von \(\beta\mu H\) einem konstanten Wert und verläuft in der Nähe des Ursprungs linear. Die physikalische Magnetisierung gemäß der Konvention in der Vorlesung ist das Negative der dargestellten Funktion \(\tanh\).}
+\lectureframe{01:13:14}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Die Magnetisierung ändert sich stetig. Wo liegt die zuvor erwähnte Phasenübergangstemperatur?}
+\lecturerresponse{In diesem Modell gibt es keine. Unabhängige Spins in einem von null verschiedenen äußeren Feld sind zu einfach, und \(\log Z_N=N\log[2\cosh(\beta\mu H)]\) ist bei jeder positiven endlichen Temperatur eine glatte Funktion. Ein Phasenübergang erfordert das wechselwirkende, symmetrische Problem, dem wir uns nun zuwenden; das zweidimensionale Ising-Modell ohne äußeres Feld ist das erste Modell dieser Familie mit einem Phasenübergang bei endlicher Temperatur.
+\lecturetimestamp{01:14:47--01:15:11}}
+\end{classroomqa}
+
+\section{Das Ising-Modell: Energie benachbarter Spinpaare}
+
+Das äußere Feld gab eine Richtung vor, noch bevor die statistische Betrachtung begann. Wir entfernen das Feld und lassen die benachbarten Spins einander ein effektives Feld liefern. Zeigen beide Nachbarn eines Gitterplatzes nach oben, begünstigen sie die Aufwärtsrichtung; zeigen beide nach unten, begünstigen sie die Abwärtsrichtung; zeigt einer in jede Richtung, heben sich ihre Wirkungen im einfachsten Bild auf. Die Energie ist nun den Spinpaaren statt einzelnen Gitterplätzen zugeordnet.
+
+Für zwei benachbarte Spins wählen wir \(J>0\) und schreiben
+\begin{equation}
+ E_{12}=-J\sigma_1\sigma_2.
+ \label{eq:sm8-pair-energy}
+\end{equation}
+Parallel ausgerichtete Spins haben \(\sigma_1\sigma_2=+1\) und die Energie \(-J\); antiparallel ausgerichtete Spins haben das Produkt \(-1\) und die Energie \(+J\). Das Minuszeichen sorgt also genau dafür, dass die Wechselwirkung ferromagnetisch ist.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_06.png}
+\caption{Die lokale ferromagnetische Wechselwirkung \(E_{12}=-J\sigma_1\sigma_2\).}
+\lectureframe{01:19:59}
+\end{figure}
+
+Für eine offene eindimensionale Kette lautet der Hamiltonoperator
+\begin{equation}
+ {\cal H}=-J\sum_{i=1}^{N-1}\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-ising-chain-open}
+\end{equation}
+Bei periodischen Randbedingungen setzt man \(\sigma_{N+1}=\sigma_1\) und summiert bis \(N\). Bei beiden Konventionen wird jedes benachbarte Paar genau einmal gezählt; bei einer langen Kette wird der Unterschied an den Rändern vernachlässigbar.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_10.png}
+\caption{Der Hamiltonoperator der Kette mit nächsten Nachbarn ergibt sich aus der lokalen Paarenergie.}
+\lectureframe{01:20:46}
+\end{figure}
+
+Bei unendlicher Temperatur sind alle Spinfolgen gleich wahrscheinlich. Im Mittel ist die Hälfte der Bindungen parallel und die andere Hälfte antiparallel ausgerichtet, also gilt
+\begin{equation}
+ \left\langle\sigma_i\sigma_{i+1}\right\rangle_{T=\infty}=0,
+ \qquad
+ \left\langle{\cal H}\right\rangle_{T=\infty}=0.
+ \label{eq:sm8-infinite-t-bond}
+\end{equation}
+Die Energie null entspricht hier keinem Zustand niedriger Energie. Der vollständig ausgerichtete Grundzustand hat pro Bindung die Energie \(-J\); das Ensemble bei unendlicher Temperatur liegt daher energetisch extensiv oberhalb davon.
+
+\begin{classroomqa}
+\audiencequestion{Wie kann das mittlere Produkt null sein, wenn jedes einzelne Produkt \(\sigma_i\sigma_{i+1}\) entweder \(+1\) oder \(-1\) ist?}
+\lecturerresponse{Ein Mittelwert muss nicht zu den Werten gehören, die eine einzelne Konfiguration annimmt. Bei unendlicher Temperatur treten parallele und antiparallele Bindungen gleich häufig auf, sodass sich ihre Beiträge \(+1\) und \(-1\) aufheben. Dieselbe Unterscheidung beim Mitteln, die für die Magnetisierung wichtig war, gilt auch hier.
+\lecturetimestamp{01:21:39--01:22:37}}
+\end{classroomqa}
+
+\subsection{Zwei Grundzustände und eine globale Symmetrie}
+
+Bei null Temperatur soll jede Bindung parallel ausgerichtet sein. Daher gibt es zwei Grundzustände:
+\begin{equation}
+ (+,+,+,\ldots,+)
+ \qquad\hbox{and}\qquad
+ (-,-,-,\ldots,-).
+ \label{eq:sm8-two-ground-states}
+\end{equation}
+Sie haben exakt dieselbe Energie. Am Hamiltonoperator lässt sich diese Entartung unmittelbar erkennen: Man kehrt alle Spins um,
+\begin{equation}
+ \sigma_i\longmapsto-\sigma_i
+ \qquad\hbox{for all }i,
+ \label{eq:sm8-global-flip}
+\end{equation}
+und jedes Bindungsprodukt bleibt unverändert,
+\begin{equation}
+ (-\sigma_i)(-\sigma_{i+1})
+ =\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-global-flip-invariance}
+\end{equation}
+Das Umklappen eines einzelnen Spins ist keine Symmetrie, weil dadurch das Vorzeichen der benachbarten Bindungsprodukte umgekehrt wird. Das Umklappen aller Spins ist dagegen eine Symmetrie. Es handelt sich um die globale \(\mathbb Z_2\)-Symmetrie des Ising-Modells ohne äußeres Feld.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_11.png}
+\caption{Der Hamiltonoperator der Kette neben der globalen Transformation \(\sigma_i\mapsto-\sigma_i\), die jedes Paarprodukt invariant lässt.}
+\lectureframe{01:26:31}
+\end{figure}
+
+Wir legen bei strikt null Temperatur ein winziges Feld an einen Spin an. Dadurch wird die Entartung der beiden Grundzustände aufgehoben, und die ferromagnetischen Kopplungen übertragen diese Auswahl auf die gesamte Kette. Wird das Feld entfernt, nachdem der Zustand ausgewählt wurde, kann ein großes System seine Ausrichtung sehr lange beibehalten. Dies ist der intuitive Zugang zur spontanen Symmetriebrechung.
+
+Dabei ist eine wesentliche statistische Einschränkung zu beachten. Für ein endliches System bei exakt verschwindendem Feld weist das kanonische Ensemble den beiden Grundzuständen dasselbe Gewicht zu und hat daher eine mittlere Magnetisierung von null. Eine Phase mit gebrochener Symmetrie wird definiert, indem man den thermodynamischen Grenzfall vor dem Entfernen des ausrichtenden Feldes bildet:
+\begin{equation}
+ M_*=\lim_{H\to0^+}\lim_{N\to\infty}M_N(H).
+ \label{eq:sm8-order-of-limits}
+\end{equation}
+Im eindimensionalen Modell mit nächsten Nachbarn ist dieser Grenzwert nur bei \(T=0\) von null verschieden; jede endliche Temperatur zerstört die Fernordnung in der unendlichen Kette. In zwei Dimensionen bleibt die geordnete Phase unterhalb einer von null verschiedenen kritischen Temperatur bestehen.
+
+\subsection{Eine historische Korrektur}
+
+In der Darstellung im Hörsaal wird diese Geschichte mit einem Scherz auf Kosten Isings erzählt. Die tatsächliche Chronologie ist freundlicher. Wilhelm Lenz schlug das Modell vor, und sein Student Ernst Ising löste den eindimensionalen Fall in seiner Dissertation von 1924, die 1925 veröffentlicht wurde. Ising fand korrekt, dass es in einer Dimension keinen ferromagnetischen Phasenübergang bei endlicher Temperatur gibt, auch wenn die größere Bedeutung höherer Dimensionen damals noch nicht verstanden war. Kramers und Wannier entwickelten die zweidimensionale Dualität und bestimmten 1941 den kritischen Punkt des quadratischen Gitters; Onsager gab 1944 die berühmte exakte Lösung ohne äußeres Feld an.
+
+Die nächste Rechnung liegt nun auf der Hand. Wir müssen die Zustandssumme von \eqref{eq:sm8-ising-chain-open} bestimmen und untersuchen, wie ihre Korrelationen von der Temperatur abhängen. Diese Rechnung wird explizit zeigen, warum die eindimensionale Kette keinen Phasenübergang bei endlicher Temperatur besitzt und warum die Dimension eine Rolle spielt.
+
+\section{Zwischenbilanz}
+
+Das Rekurrenzproblem und das Spinproblem veranschaulichen dieselbe statistische Einsicht auf zwei Arten. Im Gas macht ein Entropiedefizit einen Makrozustand exponentiell unwahrscheinlich:
+\begin{equation}
+ P(A)=e^{-\Delta S},
+ \qquad
+ \tau_{\rm rec}\sim\tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-summary-recurrence}
+\end{equation}
+Die reversible Mechanik lässt die Rückkehr zu, während das enorme Verhältnis der Phasenraumvolumina erklärt, warum wir im Alltag nur die Relaxation beobachten. Das verbleibende Problem der Zeitrichtung liegt in der besonderen kosmologischen Anfangsbedingung, nicht in einem Versagen der mikroskopischen Reversibilität.
+
+Für unabhängige Spins in einem Feld gilt
+\begin{equation}
+ Z_N=\left[2\cosh(\beta\mu H)\right]^N,
+ \qquad
+ M=-\tanh(\beta\mu H).
+ \label{eq:sm8-summary-spins}
+\end{equation}
+Dieses System ist ausdrücklich verzerrt und ändert sich glatt mit der Temperatur. Die Ising-Wechselwirkung
+\begin{equation}
+ {\cal H}=-J\sum_i\sigma_i\sigma_{i+1}
+ \label{eq:sm8-summary-ising}
+\end{equation}
+entfernt die äußere Verzerrung, stellt eine globale Aufwärts--Abwärts-Symmetrie wieder her und stellt die eigentliche Frage nach der Ordnung: Kann ein symmetrisches Vielteilchensystem bei einer von null verschiedenen Temperatur einen von zwei geordneten Zuständen auswählen?

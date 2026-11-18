@@ -1,0 +1,779 @@
+\chapter{Die Higgs-Skala, laufende Kopplungen und das Hierarchieproblem}
+
+\lectureoverview{Die letzte Vorlesung blickt über das Standardmodell hinaus auf Vereinheitlichung, Supersymmetrie und das Eichhierarchieproblem. Um zu verstehen, warum das Higgs-Feld im Zentrum dieser Fragen steht, rekonstruieren wir zunächst die Dirac-Lagrangedichte und zeigen, dass eine Fermionmasse linke und rechte Chiralität mischt. Die chirale schwache Wechselwirkung verbietet eine solche Masse als nackten Term; eine eichinvariante Yukawa-Kopplung erzeugt sie erst, nachdem das Higgs-Feld einen Vakuumerwartungswert angenommen hat. Anschließend leiten wir diesen Wert aus dem Higgs-Potential her, fragen, warum jede bekannte Elementarmasse an genau diese eine kleine Skala gebunden ist, und betrachten die Supraleitung als physikalische Analogie. Nach der Pause entwickelt die Vorlesung die Renormierung anhand der Abschirmung in Leitern und Dielektrika, überträgt die Argumentation auf QED und QCD, verfolgt die Eichkopplungen in Richtung Vereinheitlichung und leitet die Planck-Skala aus der Gravitation bei kurzen Abständen her. Damit bleibt die elektroschwache Skala als die eine unerklärte kleine Zahl zurück.}
+
+\section{Die Frage, die über das Standardmodell hinausführt}
+
+Das Standardmodell wird hier nicht als abgeschlossener Katalog präsentiert. Zu Beginn des Abends möchte ich einen Ausblick auf den nächsten Kurs geben. Die Theorie weist Schwierigkeiten auf, aber keine logischen Paradoxien: die Eichhierarchie, die mögliche Rolle der Supersymmetrie und die Frage der Vereinheitlichung. Die drei Eichfaktoren
+\begin{equation}
+  SU(3)_c\times SU(2)_L\times U(1)_Y
+  \label{eq:l10-standard-model-group}
+\end{equation}
+beschreiben starke, schwache und Hyperladung-Wechselwirkungen getrennt. Könnten sie Untergruppen einer einzigen größeren Gruppe sein? Eine häufig untersuchte Möglichkeit ist
+\(SU(5)\), in der Quarks und Leptonen zu gemeinsamen Multipletts gehören. Ob die Natur tatsächlich diese spezielle Konstruktion verwendet, ist eine andere Frage. Der entscheidende Hinweis ist, dass die scheinbar getrennten Strukturen bemerkenswert gut in eine größere mathematische Struktur passen.
+
+Der Large Hadron Collider wurde unter anderem gebaut, um die Physik aufzudecken, die diese Fragen klärt. Im Jahr 2010 war das Higgs-Boson sein unmittelbarstes Ziel. Ein Higgs-Boson zu finden, konnte niemals bedeuten, einfach nur ein Teilchen zu einer Tabelle hinzuzufügen. Ein Higgs-Boson wird durch ein zusammenhängendes Gefüge von Eigenschaften bestimmt: Sein Vakuumerwartungswert verleiht den schwachen Vektorbosonen und Fermionen Masse, während seine Fluktuation mit genau festgelegten Stärken an dieselben Teilchen koppelt. Eine Resonanz mit den falschen Kopplungen wäre nicht das Higgs-Boson des Standardmodells.
+\editorialnote{Die Vorlesung stammt aus der Zeit vor der Entdeckung im Jahr 2012. Das beobachtete skalare Teilchen mit einer Masse von ungefähr \(125\,\mathrm{GeV}\) besitzt innerhalb der heutigen Messgenauigkeit den Spin, die Parität und das Kopplungsmuster, die für das Higgs-Boson des Standardmodells erwartet werden. Bis zum Jahr 2026 wurden keine supersymmetrischen Teilchen bei niedrigen Energien beobachtet. Diese späteren Erkenntnisse ordnen den historischen Kontext neu ein, ändern aber nichts an der Argumentation, die in der Vorlesung entwickelt wird.}
+
+Der Weg zu dieser Argumentation beginnt nicht mit dem Higgs-Potential, sondern mit der Dirac-Gleichung. Bevor wir fragen, woher eine Fermionmasse kommt, müssen wir genau verstehen, was sie bewirkt.
+
+\section{Von der Dirac-Gleichung zu ihrer Lagrangedichte}
+
+\subsection{Die ältere Dirac-Notation}
+
+In der Hamilton-Notation, die bei der ersten Einführung der Dirac-Gleichung verwendet wurde, lautet ihre Struktur
+\begin{equation}
+  i\partial_t\psi
+  =
+  \left(-i\alpha^i\partial_i+\beta m\right)\psi .
+  \label{eq:l10-dirac-hamiltonian}
+\end{equation}
+Vorzeichen und Faktoren von \(i\) hängen von den Konventionen ab; an der Tafel werden einige davon vorübergehend unterdrückt. Der invariante Gehalt liegt in der Trennung zwischen Termen mit Ableitungen und einem Massenterm ohne Ableitungen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_02.png}
+\caption{Die Dirac-Gleichung und die Lagrangedichte in der älteren Notation mit \(\alpha,\beta\). Die Tafel dient der Veranschaulichung der Struktur und legt keine feste Vorzeichenkonvention fest.}
+\lectureframe{00:05:52}
+\label{fig:l10-dirac-alpha-beta}
+\end{figure}
+
+Um eine Wirkung zu erhalten, deren Variation die Dirac-Gleichung ergibt, multiplizieren wir die Gleichung mit \(\psi^\dagger\). Wenn man alle Terme auf eine Seite bringt, entfällt das Gleichheitszeichen. Das gibt Anlass zum kleinen mathematischen Scherz des Abends: Sobald eine Gleichung als verschwindender Ausdruck geschrieben ist, hat das Gleichheitszeichen seine Aufgabe erfüllt. Die entsprechende Lagrangedichte erster Ordnung lässt sich schematisch schreiben als
+\begin{equation}
+  \mathcal L
+  =
+  \psi^\dagger
+  \left(i\partial_t+i\alpha^i\partial_i-\beta m\right)\psi ,
+  \label{eq:l10-dirac-old-lagrangian}
+\end{equation}
+wobei eine konsistente Metrikkonvention die relativen Vorzeichen festlegt.
+
+Die Ableitungsterme bewirken, dass sich eine Anregung von einem Raumzeitpunkt zu einem benachbarten bewegt und dabei ihre Spinorkomponenten dreht. Im Gitterbild sind es Hopping-Terme. Der Massenterm dagegen absorbiert und emittiert das Fermion am selben Punkt. Er enthält keine Ableitung. Diese lokale Operation wird sich gleich als wiederholte Umwandlung zwischen zwei Arten von Händigkeit erweisen.
+
+\begin{classroomqa}
+\audiencequestion{Müsste hinter \(\gamma^0\) ein \(\psi^\dagger\) stehen?\lecturetimestamp{00:05:59}}
+\lecturerresponse{Nicht in der gerade hingeschriebenen nichtkovarianten Form. Die Frage führt jedoch unmittelbar zur kovarianten Notation. Definieren wir das Dirac-adjungierte Spinorfeld durch \(\bar\psi=\psi^\dagger\gamma^0\), dann ist das \(\gamma^0\) tatsächlich bereits im Objekt auf der linken Seite enthalten.}
+\end{classroomqa}
+
+\subsection{Die kovariante Form}
+
+Setzen wir
+\begin{equation}
+  \bar\psi\equiv\psi^\dagger\beta
+  =\psi^\dagger\gamma^0,
+  \qquad
+  \gamma^0\equiv\beta,
+  \qquad
+  \gamma^i\equiv\beta\alpha^i .
+  \label{eq:l10-dirac-adjoint}
+\end{equation}
+Da \(\beta^2=1\) gilt, können wir durch Multiplikation mit \(\beta\) frei zwischen den beiden Notationen wechseln. Die Zeitableitung wird zu
+\(\bar\psi\gamma^0\partial_0\psi\), die räumlichen Ableitungen werden zu
+\(\bar\psi\gamma^i\partial_i\psi\), und damit erhalten wir
+\begin{equation}
+  \boxed{\mathcal L_D
+  =\bar\psi\left(i\gamma^\mu\partial_\mu-m\right)\psi .}
+  \label{eq:l10-covariant-dirac}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_03.png}
+\caption{Die kovariante Umformung: \(\bar\psi=\psi^\dagger\gamma^0\),
+\(\gamma^i=\beta\alpha^i\) und die kompakte Dirac-Lagrangedichte.}
+\lectureframe{00:10:17}
+\label{fig:l10-dirac-covariant}
+\end{figure}
+
+Diese Notation macht den Lorentz-Charakter der einzelnen Bilineare sichtbar.
+\(\bar\psi\psi\) ist ein Skalar, während
+\(\bar\psi\gamma^\mu\psi\) ein Vierervektor ist. Der kompakte Ausdruck ist nicht bloß eleganter als die Form mit \(\alpha,\beta\); er zeigt uns, wie die einzelnen Teile transformieren.
+
+\begin{classroomqa}
+\audiencequestion{Sollte der Spinor ganz links im kompakten Ausdruck \(\bar\psi\) sein?\lecturetimestamp{00:09:39}}
+\lecturerresponse{Ja. Der fehlende Überstrich wird an der Tafel ergänzt. Das ist wichtig:
+\(\bar\psi\) ist nicht \(\psi^\dagger\), sondern
+\(\psi^\dagger\gamma^0\).}
+\end{classroomqa}
+
+\section{Chiralität und die tatsächliche Wirkung einer Dirac-Masse}
+
+Zusätzlich zu \(\gamma^0,\gamma^1,\gamma^2,\gamma^3\) definieren wir
+\begin{equation}
+  \gamma^5
+  =i\gamma^0\gamma^1\gamma^2\gamma^3,
+  \qquad
+  (\gamma^5)^2=1 .
+  \label{eq:l10-gamma-five}
+\end{equation}
+Der hier angegebene Faktor \(i\) entspricht der üblichen Konvention für eine Minkowski-Metrik mit überwiegend negativen Vorzeichen. Die Eigenwerte sind \(+1\) und \(-1\); die zugehörigen Projektoren lauten
+\begin{equation}
+\begin{aligned}
+  P_L&=\frac{1-\gamma^5}{2},
+  &
+  P_R&=\frac{1+\gamma^5}{2},
+  \\
+  \psi_L&=P_L\psi,
+  &
+  \psi_R&=P_R\psi .
+\end{aligned}
+  \label{eq:l10-chiral-projectors}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Warum heißt die zusätzliche Matrix \(\gamma^5\), obwohl es kein \(\gamma^4\) gibt? Und beschreibt ihr Eigenwert die Helizität?\lecturetimestamp{00:10:42}}
+\lecturerresponse{Der Name ist historisch bedingt: Die zusätzliche Matrix entsteht aus dem Produkt der vier Raumzeit-Gammamatrizen. Ihr Eigenwert kennzeichnet die Chiralität, nicht allgemein die Helizität. Bei einem masselosen Teilchen lassen sich beide Begriffe in geeigneter Weise gleichsetzen, weshalb sie leicht verwechselt werden. Für die Eichtheorie der schwachen Wechselwirkung ist jedoch die Chiralität als Kennzeichnung der Lorentz-Darstellung entscheidend.}
+\end{classroomqa}
+
+Der kinetische Term erhält die Chiralität. Eine Möglichkeit, das zu sehen, ist die Beziehung
+\(\{\gamma^\mu,\gamma^5\}=0\), durch die sich der Term wie folgt aufspaltet:
+\begin{equation}
+  \bar\psi i\gamma^\mu\partial_\mu\psi
+  =
+  \bar\psi_L i\gamma^\mu\partial_\mu\psi_L
+  +
+  \bar\psi_R i\gamma^\mu\partial_\mu\psi_R .
+  \label{eq:l10-chiral-kinetic}
+\end{equation}
+Das skalare Bilinear verhält sich anders:
+\begin{equation}
+  \bar\psi\psi
+  =
+  \bar\psi_L\psi_R+\bar\psi_R\psi_L .
+  \label{eq:l10-chiral-mass}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_04.png}
+\caption{Die Tafel zeigt die Zerlegung des skalaren Bilinears in links-nach-rechts und rechts-nach-links gerichtete Anteile.}
+\lectureframe{00:15:38}
+\label{fig:l10-chiral-decomposition}
+\end{figure}
+
+Eine Dirac-Masse ist also eine lokale Operation, die die Chiralität umkehrt:
+\begin{equation}
+  \psi_L\longleftrightarrow\psi_R .
+\end{equation}
+Ein masseloses Fermion kann sich mit festgelegter Chiralität ausbreiten. Ein massives Fermion kann nicht in einem einzelnen chiralen Sektor verbleiben, weil der Massenterm die beiden fortwährend mischt. Es mag überraschend erscheinen, dass diese Umwandlung etwas mit Trägheit zu tun hat, doch sie ist genau die relativistische feldtheoretische Beschreibung der Fermion-Ruhemasse.
+
+\section{Warum die schwache Symmetrie einen nackten Fermion-Massenterm verbietet}
+
+Der geladene schwache Strom ist rein linkschiral. In der Vorlesung wird zunächst \(Z\) genannt, dann aber die Aussage zu \(W^\pm\) berichtigt: Die \(Z\)-Kopplungen sind chiral und ungleich, aber nicht einfach für jedes rechtschirale Fermion abwesend. Die präzise Aussage lautet
+\begin{equation}
+  \mathcal L_{\mathrm{cc}}
+  =
+  -\frac{g}{\sqrt2}
+  \left(\bar u_L\gamma^\mu d_L
+  +\bar\nu_L\gamma^\mu e_L\right)W^+_\mu
+  +\mathrm{h.c.}
+  \label{eq:l10-charged-current}
+\end{equation}
+Die linkshändigen Fermionen transformieren als \(SU(2)_L\)-Dubletts; die rechtshändigen geladenen Fermionen transformieren als Singuletts.
+
+Vergleichen wir nun diese Transformationsregeln mit
+\eqref{eq:l10-chiral-mass}. Ein Term wie
+\(\bar e_L e_R\) absorbiert ein Objekt mit einer bestimmten Menge elektroschwacher Quantenzahlen und emittiert ein Objekt mit einer anderen. Für sich genommen ist er nicht eichinvariant. Die vertraute Dirac-Masse ist daher als nackter Term in der elektroschwachen Lagrangedichte unzulässig.
+
+Das ist die richtige Reihenfolge der Erklärung. Fermionmassen werden nicht zuerst eingefügt und anschließend kosmetisch mit dem Higgs in Verbindung gebracht. Zunächst verbietet die Eichsymmetrie den naheliegenden Massenterm. Dann muss das Higgs-Feld die fehlenden Quantenzahlen tragen.
+
+\subsection{Das Higgs als Träger der Ladung}
+
+Das Higgs-Feld transformiere als \(SU(2)_L\)-Dublett mit der Hyperladung \(+\tfrac12\):
+\begin{equation}
+  H=
+  \begin{pmatrix}
+    H^+\\ H^0
+  \end{pmatrix},
+  \qquad
+  \widetilde H=i\sigma^2H^* .
+  \label{eq:l10-higgs-doublet}
+\end{equation}
+Die Gruppenelemente bleiben in der Vorlesung schematisch; das Feld wird mit \(\phi\) bezeichnet. In dieser Notation hat ein Yukawa-Term die Form
+\begin{equation}
+  \mathcal L_Y
+  =
+  -G_Y\left(
+    \bar\psi_L\phi\psi_R+
+    \bar\psi_R\phi^\dagger\psi_L
+  \right).
+  \label{eq:l10-yukawa-schematic}
+\end{equation}
+Das Higgs-Feld nimmt die schwache Ladung auf, deren Erhaltung bei einer chiralen Umkehr ohne Higgs-Feld verletzt wäre.
+
+Der vollständige Ausdruck des Standardmodells für eine Generation macht dieselbe Zuordnung explizit:
+\begin{equation}
+  \mathcal L_Y
+  =
+  -y_d\bar Q_LHd_R
+  -y_u\bar Q_L\widetilde H u_R
+  -y_e\bar L_LHe_R
+  +\mathrm{h.c.}
+  \label{eq:l10-yukawa-full}
+\end{equation}
+Jeder Term ist eichinvariant, und jede Fermionart hat ihre eigene dimensionslose Yukawa-Kopplung.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{Die durch das Higgs vermittelte Umkehr der Chiralität und das Potential mit spontaner Symmetriebrechung sind gemeinsam an der Tafel zu sehen.}
+\lectureframe{00:18:54}
+\label{fig:l10-yukawa-potential-board}
+\end{figure}
+
+\section{Aus einer Wechselwirkung entstehen sowohl Masse als auch Higgs-Kopplung}
+
+Die Natur wählt ein Vakuum, in dem die neutrale Higgs-Komponente nicht verschwindet. In der schematischen Notation der Vorlesung mit reellen Feldern gilt
+\begin{equation}
+  \phi=F+\mathcal H ,
+  \label{eq:l10-f-plus-h}
+\end{equation}
+wobei \(F\) die nichtfluktuierende Verschiebung des Vakuums und \(\mathcal H\) die sich ausbreitende Higgs-Fluktuation bezeichnet. Setzen wir dies in \eqref{eq:l10-yukawa-schematic} ein, erhalten wir
+\begin{align}
+  \mathcal L_Y
+  ={}&
+  -G_YF
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right)
+  \notag\\
+  &-G_Y\mathcal H
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right).
+  \label{eq:l10-yukawa-split}
+\end{align}
+Die erste Zeile beschreibt eine Dirac-Masse, die zweite eine Wechselwirkung mit einem physikalischen Higgs-Quant:
+\begin{equation}
+  m_f=G_YF
+  \qquad\hbox{in the lecture's normalization.}
+  \label{eq:l10-mass-lecture-normalization}
+\end{equation}
+
+In der üblichen Normierung des Standardmodells gilt
+\begin{equation}
+\begin{aligned}
+  H(x)&=\frac{1}{\sqrt2}
+  \begin{pmatrix}
+    0\\ v+h(x)
+  \end{pmatrix},
+  \\
+  m_f&=\frac{y_fv}{\sqrt2},
+  \\
+  \mathcal L_{hff}&=-\frac{m_f}{v}h\bar f f,
+\end{aligned}
+  \label{eq:l10-standard-higgs-normalization}
+\end{equation}
+wobei \(v\simeq246\,\mathrm{GeV}\) ist. Die grobe Angabe \(F\sim200\,\mathrm{GeV}\) in der Vorlesung bezeichnet dieselbe elektroschwache Skala, lässt aber Normierungsdetails außer Acht.
+
+Aus den gemessenen Massen von \(W\) und \(Z\) ergibt sich die Skala \(F\). Die gemessenen Fermionmassen bestimmen dann die Yukawa-Kopplungen. Die Kopplung des Elektrons ist winzig, die des Top-Quarks von der Größenordnung eins. Wenn dieser Mechanismus nichts Weiteres leistete, hätten wir pro Fermion eine unbekannte Zahl eingeführt und dieselbe Information lediglich wieder abgelesen.
+
+Die zweite Zeile von \eqref{eq:l10-yukawa-split} enthält jedoch neue experimentelle Aussagen. Sie besagt, dass ein Fermion ein Higgs-Boson emittieren oder absorbieren kann, und im gekreuzten Kanal gelesen, dass ein Higgs-Boson in ein Fermion-Antifermion-Paar zerfallen kann. Schematisch gilt
+\begin{equation}
+\begin{aligned}
+  \mathcal M(h\to f\bar f)&\propto y_f,
+  \\
+  \Gamma(h\to f\bar f)
+  &=
+  N_c\frac{y_f^2m_h}{16\pi}
+  \\
+  &\quad\times
+  \left(1-\frac{4m_f^2}{m_h^2}\right)^{3/2},
+\end{aligned}
+  \label{eq:l10-higgs-fermion-width}
+\end{equation}
+in führender Ordnung. Hier ist \(N_c=3\) für Quarks und \(1\) für Leptonen. Eine größere Fermionmasse bedeutet eine größere Yukawa-Kopplung, sofern der Zerfall kinematisch möglich ist. Das bedeutet nicht, dass jeder Zerfallskanal eines schweren Teilchens dominiert: Auch Farb-Faktoren, der Phasenraum, schleifeninduzierte Kanäle und Zerfälle in Vektorbosonen spielen eine Rolle. Es bedeutet, dass die Fermionkopplung selbst proportional zur Masse ist.
+
+\begin{classroomqa}
+\audiencequestion{Wie lässt sich die Zerfallszeit eines Higgs-Bosons tatsächlich vorhersagen, ohne jedes technische Detail zu berechnen?\lecturetimestamp{00:25:32}}
+\lecturerresponse{Die Wechselwirkung liefert ein Hamilton-Matrixelement. Zeichnen Sie das entsprechende Feynman-Diagramm, berechnen Sie die Übergangsamplitude, bilden Sie deren Betragsquadrat und summieren oder integrieren Sie über alle erlaubten Endzustände. Daraus ergibt sich die Zerfallsrate. Die Lebensdauer ist der Kehrwert der Gesamtbreite, \(\tau=\hbar/\Gamma_{\mathrm{tot}}\). Dieselbe quantenmechanische Logik wird in Teilchenrechnungen seit den frühen Jahren der Quantenfeldtheorie verwendet.}
+\end{classroomqa}
+
+Zum Zeitpunkt der Vorlesung waren diese phänomenologischen Vorhersagen zum Higgs noch nicht direkt beobachtet worden. Die Selbstwechselwirkungen von \(W\) und \(Z\) hatten bereits strenge Tests der Eichstruktur ermöglicht; das Higgs-Boson und seine direkten Kopplungen mussten noch entdeckt werden. Diese historische Unsicherheit gehört zur Dokumentation. Ebenso gehört dazu, was später geschah: Ein Higgs-ähnliches Teilchen wurde entdeckt, und Messungen seiner Kopplungen prüfen heute dieselbe hier entwickelte Struktur der Massenerzeugung.
+
+\section{Das Potential, das F auswählt}
+
+Die Verschiebung des Vakuums wird nicht nach dem Aufschreiben der Yukawa-Kopplung von Hand festgelegt. Sie wird durch das Higgs-Potential bestimmt. Betrachten wir einen reellen Querschnitt durch das vollständige Dublett und setzen
+\begin{equation}
+  V(\phi)
+  =
+  -\frac{\mu^2}{2}\phi^2
+  +\frac{\lambda}{4}\phi^4,
+  \qquad
+  \mu^2>0,\quad\lambda>0.
+  \label{eq:l10-real-higgs-potential}
+\end{equation}
+In der Nähe von \(\phi=0\) ergibt der negative quadratische Term eine nach unten geöffnete Parabel. \(\mu\) als imaginäre Masse zu bezeichnen, ist eine Kurzform dafür, dass der Ursprung instabil ist; es bedeutet nicht, dass die physikalische Higgs-Anregung um das wahre Vakuum eine imaginäre Masse hat.
+
+Der quadratische Term allein würde das Feld unbeschränkt anwachsen lassen, sodass es keinen Zustand niedrigster Energie gäbe. Der positive Term vierter Ordnung dominiert schließlich und lässt das Potential wieder ansteigen. Eine ungerade Potenz würde die Spielzeug-Symmetrie \(\phi\mapsto-\phi\) verletzen. Ein Term vierter Ordnung ist die erste stabilisierende Wechselwirkung mit gerader Potenz und in vier Raumzeitdimensionen die höchstgradige polynomiale skalare Wechselwirkung mit dimensionsloser Kopplung.
+
+Leiten wir ab:
+\begin{align}
+  \frac{dV}{d\phi}
+  &=-\mu^2\phi+\lambda\phi^3
+  \notag\\
+  &=\phi\left(-\mu^2+\lambda\phi^2\right).
+  \label{eq:l10-potential-derivative}
+\end{align}
+Der stationäre Punkt \(\phi=0\) ist das instabile Maximum. Die beiden Minima erfüllen
+\begin{equation}
+  \boxed{F^2=\frac{\mu^2}{\lambda}},
+  \qquad
+  F=\frac{\mu}{\sqrt\lambda}
+  \label{eq:l10-vacuum-value}
+\end{equation}
+für diese Konvention mit reellem Feld.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_06.png}
+\caption{Die vollständige Minimierung an der Tafel:
+\(V=-\mu^2\phi^2/2+\lambda\phi^4/4\),
+\(V'=0\) und \(\phi^2=\mu^2/\lambda\).}
+\lectureframe{00:34:32}
+\label{fig:l10-higgs-minimization}
+\end{figure}
+
+Die Faktoren \(1/2\) und \(1/4\) wurden genau so gewählt, dass sie beim Ableiten wegfallen. In der Nähe des Ursprungs ist \(\phi^4\) kleiner als \(\phi^2\); bei großen Feldwerten wächst es schneller und stabilisiert das System. Aus diesem einfachen Zusammenspiel entsteht das Doppelmuldenpotential.
+
+Auch die Dimensionen klären eine kurze Ungenauigkeit in der Mitschrift. \(\lambda\) ist in vier Raumzeitdimensionen dimensionslos, während \(\mu\) und \(F\) die Dimension einer Masse haben. Entwickeln wir \(\phi=F+\mathcal H\), so ergibt die Krümmung des Potentials
+\begin{equation}
+  m_{\mathcal H}^2
+  =
+  \left.\frac{d^2V}{d\phi^2}\right|_{\phi=F}
+  =
+  -\mu^2+3\lambda F^2
+  =
+  2\mu^2
+  =
+  2\lambda F^2.
+  \label{eq:l10-higgs-curvature}
+\end{equation}
+In der vollständigen Notation des Standardmodells gilt entsprechend \(V(H)=-\mu^2H^\dagger H+\lambda(H^\dagger H)^2\) und ebenso \(m_h^2=2\lambda v^2\). Aus der gemessenen Higgs-Masse und \(v\) folgt, dass \(\lambda\) bei der elektroschwachen Skala nahe \(0.13\) liegt. Die Schätzung 2010 in der Vorlesung war bewusst grob; die strukturelle Aussage war, dass \(\lambda\) keine absurd kleine Zahl ist.
+
+\section{Warum sind alle Teilchen, die wir sehen, an diese Skala gebunden?}
+
+Derselbe Wert \(F\) bestimmt die Massen von \(W\) und \(Z\) sowie, multipliziert mit verschiedenen Yukawa-Kopplungen, die Massen aller geladenen Fermionen. Diese empirische Häufung wirft eine interessantere Frage auf als die Algebra: Warum beziehen alle bekannten Elementarteilchen ihre Massen aus demselben Phänomen der Symmetriebrechung?
+
+Es gibt keinen Satz, nach dem jedes mögliche Teilchen dies tun muss. Stellen wir uns ein vektorartiges Fermion vor, dessen links- und rechtschirale Komponenten unter der Eichgruppe gleich transformieren. Dann kann \(\bar\psi_L\psi_R+\mathrm{h.c.}\) eichinvariant sein, ohne ein Higgs-Feld zu benötigen. Auch ein vollständiges Eicheich-Singulett kann eine Masse tragen, die nicht mit der elektroschwachen Symmetriebrechung zusammenhängt. Solche Teilchen könnten ganz natürlich viel schwerer sein als die an \(F\) gebundenen Teilchen. Die von uns entdeckten Teilchen könnten gerade deshalb leicht genug sein, um beobachtet zu werden, weil die Symmetrie sie masselos machen würde, wenn \(F\) verschwände.
+
+Die elektroschwache Skala ist somit die Ausnahme. Das spekulative Bild lautet: Allgemeine, nicht geschützte Massen liegen nahe einer viel größeren fundamentalen Skala, während Teilchen, die durch chirale Eichsymmetrie geschützt sind, mit \(F\) auf niedrige Energien gezogen werden.
+
+\begin{classroomqa}
+\audiencequestion{Ist die Planck-Masse ein möglicher Kandidat für die fundamentale Massenskala, mit der \(F\) verglichen werden sollte?\lecturetimestamp{00:38:43}}
+\lecturerresponse{Ja. Ein weiterer Kandidat ist die Skala, die durch die Vereinheitlichung der Eichkopplungen nahegelegt wird. Beide ergeben sich aus späteren Argumenten in dieser Vorlesung, obwohl Teilchen mit diesen enormen Massen bislang nicht direkt beobachtet wurden.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Was bedeutet es, wenn man sagt, die anderen Skalen lägen etwa fünfzehn Größenordnungen über \(F\), und welche Teilchen entsprechen ihnen?\lecturetimestamp{00:39:54}}
+\lecturerresponse{Die elektroschwache Skala liegt in der Größenordnung von \(10^2\,\mathrm{GeV}\), während eine Vereinheitlichung nahe \(10^{16}\,\mathrm{GeV}\) vermutet wird und die Planck-Skala nahe \(10^{19}\,\mathrm{GeV}\) liegt. Teilchen mit diesen Massen haben wir nicht erzeugt. Wir erschließen die Skalen indirekt: die eine durch Extrapolation der gemessenen Eichkopplungen, die andere durch die Verbindung von Quantenmechanik, Relativitätstheorie und Newtonscher Gravitationskonstante.}
+\end{classroomqa}
+
+\section{Ein geladenes Kondensat im Labor}
+
+Vor der Pause fragt ein Zuhörer nach einem alltäglichen Beispiel aus der Festkörperphysik, das dem Higgs-Mechanismus ähnelt. Die Antwort wird schrittweise entwickelt und erschöpft sich nicht in der Analogie.
+
+\begin{classroomqa}
+\audiencequestion{Gibt es neben ultrakalten Bose-Kondensaten ein verbreitetes Beispiel aus der Festkörperphysik für einen Higgs-ähnlichen Mechanismus?\lecturetimestamp{00:40:50}}
+\lecturerresponse{Ja. Ein neutrales Bosonenfeld kann in einem Bose-Kondensat oder einer Supraflüssigkeit einen von null verschiedenen Erwartungswert annehmen. Ist das kondensierte Objekt geladen, verändert dasselbe Grundphänomen das Eichfeld. Die Supraleitung ist ein bekanntes Beispiel: Geladene Cooper-Paare kondensieren, und elektromagnetische Felder erhalten im Material eine endliche Eindringtiefe.}
+\end{classroomqa}
+
+Auf molekularer Skala kann ein Heliumatom als ein effektives Boson mit einem Feld \(\Phi_{\mathrm{He}}\) behandelt werden. Ein leerer Zustand entspricht einem Feld von null; in der suprafluiden Phase gilt \(\langle\Phi_{\mathrm{He}}\rangle\ne0\), und die entsprechende globale Phasensymmetrie ist spontan gebrochen. Heliumatome sind neutral, daher liegt hier noch nicht der Mechanismus vor, der dem Eichfeld eine Masse verleiht.
+
+In einem Supraleiter bilden Elektronen schwach gebundene Cooper-Paare. Das Paarfeld ist schematisch ein Elektronen-Bilinear,
+\begin{equation}
+  \Delta(x)\sim\langle\psi_\downarrow(x)\psi_\uparrow(x)\rangle,
+  \label{eq:l10-cooper-order-parameter}
+\end{equation}
+und trägt die elektrische Ladung \(2e\). Wenn \(\Delta\) kondensiert, reagiert das elektromagnetische Eichfeld genau so, wie es ein Eichfeld tun muss, das an einen geladenen Ordnungsparameter koppelt. Statische Magnetfelder klingen über die London-Eindringtiefe ab:
+\begin{equation}
+  B(x)\propto e^{-x/\lambda_L}.
+  \label{eq:l10-meissner-screening}
+\end{equation}
+Der Kehrwert der Eindringtiefe spielt im Medium die Rolle einer effektiven Photonmasse. Das ist keine Photonmasse im Vakuum, sondern eine Eigenschaft der supraleitenden Phase.
+
+\begin{classroomqa}
+\audiencequestion{Sind die beiden Elektronen eines Cooper-Paars nicht voneinander getrennt, vielleicht sogar auf gegenüberliegenden Seiten der Fermi-Fläche?\lecturetimestamp{00:43:13}}
+\lecturerresponse{Sie bilden kein winziges Molekül, das an einem Punkt lokalisiert ist. Ein Cooper-Paar ist räumlich ausgedehnt und wird im Impulsraum natürlicherweise durch korrelierte Zustände nahe entgegengesetzter Impulse beschrieben. Für das Symmetrieargument verhält sich das Paar jedoch wie ein einzelner geladener bosonischer Ordnungsparameter. Entscheidend ist, dass er kondensiert.}
+\end{classroomqa}
+
+Historisch ist dieser Zusammenhang mehr als eine didaktische Metapher. Die Supraleitung und Andersons Analyse von Eichfeldern in einer gebrochenen Phase trugen dazu bei, den relativistischen Higgs-Mechanismus verständlich zu machen. Die Konstruktion der Teilchenphysik wurde unabhängig davon in der relativistischen Feldtheorie entwickelt, aber die gemeinsame Mathematik ist real.
+
+\section{Nackte und gemessene Parameter}
+
+Nach der Pause kehren wir zur Lagrangedichte zurück. Sie enthält Parameter, die Massen und Ladungen genannt werden, doch diese Eingangsparameter sind selten identisch mit uneingeschränkt gemessenen Größen. Hochfrequente Moden wechselwirken mit niederfrequenten Moden und kleiden sie ein. Der systematische Zusammenhang zwischen Parametern, die bei einer Auflösung definiert sind, und Observablen bei einer anderen heißt Renormierung.
+
+Die elektrische Ladung veranschaulicht den Zusammenhang ohne Rechnung. Bei großem Abstand legt das Coulomb-Gesetz die beobachtete Ladung fest:
+\begin{equation}
+  V(r)\sim\frac{e_1e_2}{4\pi r},
+  \qquad
+  F(r)\sim\frac{e_1e_2}{4\pi r^2}.
+  \label{eq:l10-coulomb-law}
+\end{equation}
+In der Vorlesung wird \(4\pi\) unterdrückt und \(e^2/r\) oder \(e^2/r^2\) geschrieben. Entscheidend ist, dass der aus einer Kraftmessung erschlossene Koeffizient davon abhängen kann, bei welchem Abstand das System untersucht wird.
+
+\subsection{Ein Leiter: vollständige Abschirmung}
+
+Bringen wir eine positive Testladung in einen idealen Leiter ein. Ihr elektrisches Feld zieht bewegliche negative Ladungen an und stößt positive ab. Es fließt Strom, bis die Quelle lokal von einer entgegengesetzt geladenen Wolke umgeben ist und außerhalb dieser Wolke im Inneren des Leiters kein Feld mehr besteht; die entgegengesetzte Ladung wird zum entfernten Rand verdrängt. Eine negative Quelle bewirkt die umgekehrte Umverteilung. Zwei so eingebrachte Quellen können dann in großem Abstand praktisch keine Kraft mehr aufeinander ausüben, obwohl die mikroskopisch eingebrachten Ladungen von null verschieden waren.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_07.png}
+\caption{Eine Quellenladung, die in der Diskussion über Leiter von einer entgegengesetzt geladenen Abschirmwolke umgeben ist.}
+\lectureframe{00:50:24}
+\label{fig:l10-conductor-screening}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist diese Umverteilung das, was mit Abschirmung gemeint ist?\lecturetimestamp{00:51:25}}
+\lecturerresponse{Ja. Bei Abständen, die größer sind als die Ausdehnung der Wolke, ist die eingebrachte Ladung abgeschirmt. Bringt man eine zweite Testladung innerhalb der Wolke näher heran, kann ein Teil der Abschirmung nicht mehr zwischen Quelle und Testladung liegen; dadurch erscheint die zugrunde liegende Ladung stärker.}
+\end{classroomqa}
+
+Die Wolke hat eine charakteristische Skala, die durch die Dynamik und Dichte der beweglichen Ladungen bestimmt wird. Bei Abständen \(r\), die kleiner als diese Skala sind, dringt die Testladung in die Wolke ein. Daher lässt sich eine laufende Ladung \(e(r)\) definieren durch
+\begin{equation}
+  F(r)\equiv\frac{e^2(r)}{4\pi r^2}.
+  \label{eq:l10-running-charge-definition}
+\end{equation}
+Im idealisierten Leiter nähert sich \(e(r)\) bei sehr großen Abständen null und bei sehr kleinen Abständen dem mikroskopischen Wert.
+
+\subsection{Ein Dielektrikum: teilweise Abschirmung}
+
+In einem Isolator sind Elektronen an Atome gebunden, statt sich frei durch den Körper bewegen zu können. Ein grobes, aber nützliches Modell stellt sich jede Elektronenwolke durch eine Feder an ihr Ion gebunden vor. Ohne äußeres Feld fallen die Schwerpunkte der positiven und negativen Ladung zusammen. Ein angelegtes Feld verschiebt sie geringfügig gegeneinander und induziert einen Dipol.
+
+In der Nähe einer negativen Quelle verschieben sich die Elektronenwolken nach außen, sodass ihre positiven Ionen etwas näher an die Quelle rücken; in der Nähe einer positiven Quelle verschieben sie sich in die andere Richtung. Die gebundenen Ladungen können sich nicht weit genug bewegen, um die Quelle vollständig zu neutralisieren. Deshalb wird das Feld auf große Distanz durch die Dielektrizitätskonstante verringert, aber nicht aufgehoben:
+\begin{equation}
+  V_{\mathrm{medium}}(r)
+  =
+  \frac{1}{\epsilon_r}
+  \frac{e_1e_2}{4\pi\epsilon_0r}.
+  \label{eq:l10-dielectric-coulomb}
+\end{equation}
+Innerhalb der Polarisationswolke sieht die Testladung wieder mehr von der nackten Quelle. Vollständige und teilweise Abschirmung sind zwei Varianten derselben skalenabhängigen Idee.
+
+\section{Das QED-Vakuum als polarisierbares Medium}
+
+Die Quantenelektrodynamik enthält in ihrem Vakuum keine materiellen Atome, aber geladene Quantenfelder. Elektron-Positron-Fluktuationen tragen Schleifen zur Photonenausbreitung bei. In der älteren Sprache des Dirac-Sees verformt das elektrische Feld die besetzten Zustände negativer Energie; in der modernen Sprache kleidet die Vakuumpolarisation den Photon-Propagator ein. Im Bild des Mediums wird ein virtuelles Paar polarisiert: Seine positiven und negativen Bestandteile werden in entgegengesetzte Richtungen verschoben.
+
+Eine positive Quelle ist von einem kleinen Überschuss an negativer Polarisationsladung umgeben, eine negative Quelle von positiver Polarisationsladung. Die aus großer Entfernung gemessene Ladung ist daher kleiner als der Parameter, der einer unaufgelösten Quelle zugeordnet würde. Anders als in gewöhnlichem Material umfasst das Vakuum Fluktuationen über ein Kontinuum von Impulsen. Niedrigenergetische Paare entsprechen Strukturen auf größerer Distanz; hochenergetische Paare sondieren kleinere Abstände. Es gibt keinen endgültigen Radius der Wolke, an dem der Prozess einfach aufhört.
+
+Wenn zwei Elektronen einander näherkommen, passen zunächst die größten Polarisationswolken nicht mehr zwischen sie. Bei weiterer Annäherung werden nach und nach kleinere Wolken abgestreift. Die effektive elektrische Kopplung wächst logarithmisch mit dem Kehrwert des Abstands oder, gleichbedeutend, mit der Energie:
+\begin{equation}
+  \alpha(Q)
+  \simeq
+  \frac{\alpha(\mu)}
+  {1-\dfrac{2\alpha(\mu)}{3\pi}
+  \ln\!\left(\dfrac{Q}{\mu}\right)}
+  \label{eq:l10-qed-running}
+\end{equation}
+für ein geladenes Dirac-Fermion weit oberhalb seiner Schwelle in führender Ordnung. Weitere geladene Teilchen verändern den Koeffizienten, sobald ihre Schwellen überschritten werden.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_08.png}
+\caption{Die effektive QED-Ladung steigt langsam an, wenn die horizontale Skala \(1/R\) und damit die Sondierungsenergie zunimmt.}
+\lectureframe{01:02:13}
+\label{fig:l10-qed-running-board}
+\end{figure}
+
+Die Elektronenstreuung veranschaulicht, wie sich das praktisch auswirkt. Eine höhere Kollisionsenergie bedeutet eine kürzere de-Broglie-Wellenlänge und einen kleineren minimalen Abstand. Daher muss die Amplitude die für diesen Impulsübertrag geltende Kopplung verwenden und nicht dieselbe feste Zahl für jede Skala.
+
+\begin{classroomqa}
+\audiencequestion{Bei welchem Abstand wird das Laufen erstmals messbar?\lecturetimestamp{01:03:54}}
+\lecturerresponse{Die Elektronen-Vakuumpolarisation wird etwa bei der Elektron-Compton-Skala relevant, \(\lambda_C=\hbar/(m_ec)\), was für die reduzierte Wellenlänge ungefähr \(4\times10^{-11}\,\mathrm{cm}\) entspricht. Der Effekt ist klein und logarithmisch, daher sind präzise Messungen erforderlich. Schwerere geladene Teilchen tragen ab ihren jeweiligen Schwellen zum Laufen bei.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Setzt die Rede vom kleinsten Abstand voraus, dass wir bereits wissen, was dort geschieht?\lecturetimestamp{01:04:49}}
+\lecturerresponse{Nein. Wir extrapolieren die Theorie nur so weit, wie ihr Teilcheninhalt und ihre Wechselwirkungen gültig bleiben. Neue Physik kann den Verlauf der Kopplung ändern. Experimente zeigen nicht, dass die QED bis zu beliebig kleinen Abständen die vollständige Beschreibung bleibt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Verläuft die Skalenabhängigkeit bei Gluonen entgegengesetzt? Warum?
+\lecturetimestamp{01:05:03}}
+\lecturerresponse{Ja. Quarkschleifen schirmen die Farbladung ähnlich wie geladene Materie ab. Gluonen tragen jedoch selbst Farbladung und wechselwirken nichtlinear. Ihr Beitrag hat das entgegengesetzte Vorzeichen und dominiert bei der beobachteten Anzahl von Quarkflavors. Das Ergebnis sind Antiscreening und asymptotische Freiheit.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie könnte man eine nackte elektrische Ladung bestimmen, wenn man dafür einen unendlich kleinen Abstand bräuchte?\lecturetimestamp{01:05:28}}
+\lecturerresponse{Eine eindeutige, regulatorunabhängige nackte Ladung lässt sich nicht direkt messen. Man definiert einen Parameter bei einem gewählten kurzen Abstand als Abschneide- oder Renormierungsskala und passt ihn dann so an, dass eine gemessene Niederenergiegröße unverändert bleibt. Die skalenabhängige renormierte Kopplung ist die physikalisch nützliche Größe.}
+\end{classroomqa}
+
+\enlargethispage{2pt}
+\begin{classroomqa}
+\audiencequestion{Nähert sich die QED-Ladung bei unendlicher Energie einem endlichen Wert?\lecturetimestamp{01:05:39}}
+\lecturerresponse{Nicht, wenn man die perturbative QED für sich genommen extrapoliert. Ihre positive Betafunktion lässt die Kopplung logarithmisch weiter anwachsen und führt formal bei einer unglaublich hohen Skala zu einem Landau-Pol. Lange bevor man diesen formalen Pol als physikalisch auffasst, erwartet man, dass die Beschreibung in die elektroschwache Theorie eingebettet und letztlich durch weitere Physik verändert wird.}
+\end{classroomqa}
+
+\subsection{Was die Renormierung ändert und was sie bewahrt}
+
+Wähle eine Abschneidelänge \(a\), nenne den zugehörigen Eingabeparameter \(e(a)\) und berechne eine festgelegte Observable bei großen Abständen. Eine andere Abschneidelänge \(a'\) ist ebenso zulässig, wenn der Eingabeparameter auf \(e(a')\) geändert wird, sodass dieselbe Observable reproduziert wird:
+\begin{equation}
+  \frac{d}{d\ln\mu}\,\mathcal O_{\mathrm{physical}}=0,
+  \qquad
+  \mu\frac{de}{d\mu}=\beta(e).
+  \label{eq:l10-rg-invariance}
+\end{equation}
+Dieser kompensierende Verlauf ist die Renormierungsgruppe.
+
+\begin{classroomqa}
+\audiencequestion{Muss sich das Wort „nackt“ ausdrücklich auf die Planck-Länge beziehen?\lecturetimestamp{01:06:20}}
+\lecturerresponse{Nein. Man kann die Beschreibung bei einer beliebig gewählten Abschneideskala beenden und den dortigen Parameter als nackt bezeichnen. Ändert man die Abschneideskala und passt den Parameter entsprechend an, bleibt die zugängliche Physik unverändert. Die Planck-Länge ist ein plausibler Ort, an dem die gewöhnliche Quantenfeldtheorie ersetzt werden muss, aber keine vorgeschriebene Konvention für die Renormierung.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bedeutet dieses Verfahren, dass man gedanklich hineinzoomt und die Beschreibung abschwächt?
+\lecturetimestamp{01:07:15}}
+\lecturerresponse{Gedanklich zoomt man hinein. Wir fragen, wie sich die Parameter einer Beschreibung mit feinerer Auflösung ändern müssen, damit die Vorhersagen bei einer festen, experimentell zugänglichen Wellenlänge gleich bleiben.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Tritt dasselbe Laufphänomen auch bei der Gravitation auf?\lecturetimestamp{01:08:14}}
+\lecturerresponse{Auch die Gravitation hängt von der Skala ab, allerdings nicht einfach aufgrund desselben Mechanismus der dielektrischen Abschirmung. Für diese Vorlesung genügt eine Dimensionsbetrachtung: Eine stärkere Lokalisierung erhöht die Energie, Energie gravitiert, und die daraus resultierende dimensionslose Gravitationsstärke wächst rasch mit der Energie.}
+\end{classroomqa}
+
+\section{QCD: Antiscreening, Flussschläuche und asymptotische Freiheit}
+
+Auf hadronischen Abständen breiten sich chromoelektrische Feldlinien nicht kugelsymmetrisch wie ein elektromagnetisches Coulomb-Feld aus. Die Selbstwechselwirkungen der Gluonen schnüren sie zwischen einem Quark und einem Antiquark zu einem schmalen Schlauch zusammen. Hat der Schlauch näherungsweise eine konstante Energie pro Längeneinheit \(\sigma\), dann gilt:
+\begin{equation}
+  V_{q\bar q}(r)
+  \simeq
+  -\frac{C_F\alpha_s(r)}{r}
+  +\sigma r .
+  \label{eq:l10-cornell-potential}
+\end{equation}
+Bei großen \(r\) dominiert der lineare Term. Wird das Paar auseinandergezogen, entsteht mehr von dem Schlauch, wie beim Ziehen an einem Strang Toffee, und die Energie wächst, statt gegen null zu gehen. Das ist die Seite des Bildes, die zum Confinement gehört.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{Chromoelektrische Feldlinien sind als Schlauch dargestellt, der getrennte Farbquellen verbindet, statt sich wie ein Coulomb-Feld frei auszubreiten.}
+\lectureframe{01:09:56}
+\label{fig:l10-qcd-flux-tube-board}
+\end{figure}
+
+Bei Abständen unterhalb des Schlauchradius nimmt das Potenzial näherungsweise wieder die Coulomb-Form an, doch die Kopplung nimmt mit der Energie ab. In der Ein-Schleifen-Näherung gilt:
+\begin{equation}
+  \alpha_s(Q)
+  =
+  \frac{4\pi}
+  {\left(11-\frac23n_f\right)
+  \ln(Q^2/\Lambda_{\mathrm{QCD}}^2)} .
+  \label{eq:l10-asymptotic-freedom}
+\end{equation}
+Für \(n_f<17\) ist der Koeffizient positiv, und \(\alpha_s(Q)\to0\) für \(Q\to\infty\). Bei sehr kleinen Abständen ist die QCD schwach, bei großen Abständen stark. Das ist die präzise Formulierung des entgegengesetzten Verhaltens anhand der laufenden Kopplung.
+
+\begin{classroomqa}
+\audiencequestion{Was geschieht mit der schwachen Kopplung zwischen den QED- und QCD-Kurven?\lecturetimestamp{01:11:53}}
+\lecturerresponse{Ihr Verlauf liegt dazwischen und hängt davon ab, welcher elektroschwache Faktor betrachtet wird. Oberhalb der elektroschwachen Skala sind die passenden Größen die Kopplungen \(U(1)_Y\) und \(SU(2)_L\). Die eine steigt, die andere fällt langsam. Zusammen mit der fallenden starken Kopplung kommen ihre extrapolierten Werte bei hohen Energien überraschend nahe zusammen.}
+\end{classroomqa}
+
+\section{Auf dem Weg zur Vereinheitlichung}
+
+Man misst die drei Eichkopplungen nahe der schwachen Skala und verfolgt ihre Entwicklung anhand des Teilcheninhalts einer vorgeschlagenen Theorie. Da jede Betafunktion logarithmisch verläuft, bewirkt eine enorme Änderung der Energie nur eine mäßige Änderung der Kopplung. Die Verläufe im Standardmodell nähern sich einander an, treffen sich aber nicht genau. Mit dem niederenergetischen Teilcheninhalt des minimalen supersymmetrischen Standardmodells treffen sich die Ein-Schleifen-Verläufe viel genauer, ungefähr bei
+\begin{equation}
+  M_{\mathrm{GUT}}\sim10^{16}\,\mathrm{GeV}.
+  \label{eq:l10-gut-scale}
+\end{equation}
+
+Das Diagramm ist ein Indiz, kein Beweis. Schwellen durch unentdeckte Teilchen, Korrekturen höherer Schleifenordnung und Einzelheiten einer vereinheitlichten Theorie verschieben die Kurven. Die Vorlesung von 2010 betont die Annäherung auf ungefähr Prozentniveau in einem supersymmetrischen Spektrum, weil sie die Supersymmetrie bei der schwachen Skala besonders attraktiv machte. Dass bei Kollisionsenergien keine Superpartner gefunden wurden, bedeutet nun, dass die einfachste Version dieses Spektrums nicht wie ursprünglich erwartet verwirklicht ist; die präzise Vereinheitlichung bleibt modellabhängig.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{Die qualitative Kopplungskurvendarstellung an der Tafel: Die starke Kopplungskurve fällt, die elektroschwachen Kurven entwickeln sich langsam auf sie zu, und die Gravitation steigt nahe dem fernen Ultraviolett steil an.}
+\lectureframe{01:16:29}
+\label{fig:l10-unification-board}
+\end{figure}
+
+Warum gilt die Nähe eines gemeinsamen Treffpunkts als fundamental? Dort könnte die Eingabe einfacher werden. Drei voneinander unabhängige Niederenergiekopplungen könnten unterschiedlich renormierte Nachkommen einer einzigen Hochenergiekopplung sein, die zu einer einzigen Eichgruppe gehört. Das ist der zahlenmäßige Hinweis hinter der früheren Frage nach \(SU(5)\).
+
+Die Gravitation erscheint in derselben logarithmischen Skizze als eine viel steiler ansteigende Kurve. Sie schneidet die Eichkurven nicht genau bei der GUT-Skala, wird aber innerhalb weniger Größenordnungen der Energie von der Größenordnung eins. Auf einer logarithmischen Achse ist diese Nähe aufschlussreich: \(10^{16}\), \(10^{17}\), \(10^{18}\) und \(10^{19}\,\mathrm{GeV}\) liegen sehr viel näher beieinander als jeweils an der elektroschwachen Skala.
+
+\section{Warum die Gravitation bei kleinen Abständen stärker wird}
+
+\subsection{Gravitation wirkt auf Energie, nicht nur auf die Ruhemasse}
+
+Die Kraft zwischen zwei langsam bewegten Massen nach Newton lautet:
+\begin{equation}
+  F_G=\frac{Gm_1m_2}{r^2}.
+  \label{eq:l10-newton-force}
+\end{equation}
+Für eine relativistische Dimensionsabschätzung ersetzt man jede Ruhemasse durch die zugehörige Energie geteilt durch \(c^2\):
+\begin{equation}
+  F_G(r)\sim\frac{GE_1E_2}{c^4r^2}.
+  \label{eq:l10-relativistic-gravity-force}
+\end{equation}
+Das ersetzt nicht die allgemeine Relativitätstheorie; auch Spannung, Impulsfluss und Druck sind Quellen der Gravitation. Für die hier gestellte Frage ist es jedoch die richtige Skalierungsabschätzung.
+
+Lokalisiere jedes Teilchen in einem Bereich der Größe \(r\). Die Unschärferelation verlangt:
+\begin{equation}
+  p\sim\frac{\hbar}{r}.
+  \label{eq:l10-localization-momentum}
+\end{equation}
+Bei hinreichend kleinem \(r\) ist der Impuls ultrarelativistisch, also gilt:
+\begin{equation}
+  E\simeq pc\sim\frac{\hbar c}{r}.
+  \label{eq:l10-localization-energy}
+\end{equation}
+Einsetzen zweier solcher Energien in \eqref{eq:l10-relativistic-gravity-force} ergibt:
+\begin{equation}
+  F_G(r)
+  \sim
+  \frac{G\hbar^2}{c^2r^4}.
+  \label{eq:l10-short-distance-gravity-force}
+\end{equation}
+Die entsprechende Größenordnung der potenziellen Energie ist:
+\begin{equation}
+  U_G(r)\sim-\frac{G\hbar^2}{c^2r^3}.
+  \label{eq:l10-short-distance-gravity-potential}
+\end{equation}
+Dies ist die Unterscheidung, die während der Live-Rechnung korrigiert wurde: Das Potenzial skaliert wie \(1/r^3\), die Kraft dagegen wie \(1/r^4\).
+
+\begin{classroomqa}
+\audiencequestion{Ist die Energie eines ultrarelativistischen Teilchens \(p^2/(2m)\)?\lecturetimestamp{01:22:18}}
+\lecturerresponse{Nein. Das ist die nichtrelativistische Formel. Aus \(E^2=p^2c^2+m^2c^4\) folgt im Grenzfall \(pc\gg mc^2\), dass \(E\simeq pc\) gilt. Zusammen mit \(p\sim\hbar/r\) ergibt sich für die Lokalisierungsenergie \(\hbar c/r\).}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_11.png}
+\caption{An der Tafel werden relativistische Energien in das Newtonsche Gesetz eingesetzt, während die Potenzen von \(c\) und \(r\) überprüft werden.}
+\lectureframe{01:23:29}
+\label{fig:l10-gravity-derivation-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Haben sich die Faktoren \(c\) herausgekürzt, und war das behauptete Gesetz \(1/r^3\) ein Kraftgesetz?\lecturetimestamp{01:23:38}}
+\lecturerresponse{Die Rechnung an der Tafel wird in Echtzeit korrigiert. Die beiden effektiven Massen tragen den Faktor \(E_1E_2/c^4\) bei; mit \(E_i\sim\hbar c/r\) bleiben im Nenner zwei Potenzen von \(c\). Die resultierende Kraft ist \(G\hbar^2/(c^2r^4)\). Der Ausdruck \(1/r^3\) gehört zur potenziellen Energie.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Die hier betrachtete Gravitationskraft ist anziehend, richtig?\lecturetimestamp{01:24:42}}
+\lecturerresponse{Ja. Die obigen Gleichungen geben die Beträge an. Das Newtonsche Gravitationspotenzial ist für positive Energien negativ; daher ist die Kraft in dieser Abschätzung anziehend.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wird die Gravitation relativ stärker, weil die Lokalisierung die Energie erhöht, während die elektrische Ladung selbst nicht denselben kinematischen Faktor erhält?\lecturetimestamp{01:25:02}}
+\lecturerresponse{Genau. Energie ist die Gravitationsladung. Wird ein Quantenzustand zusammengedrückt, steigen sein Impuls und seine Energie, also auch die Größe, die als Quelle der Gravitation wirkt. Die elektrische Ladung ist dimensionslos und erhält diesen direkten Faktor \(1/r\) nicht; abgesehen von ihrer viel langsameren logarithmischen Renormierung.}
+\end{classroomqa}
+
+\subsection{Der Übergang bei der Planck-Skala}
+
+Die elektromagnetische Kraft zwischen Ladungen der Größenordnung eins in natürlichen Einheiten hat den Betrag:
+\begin{equation}
+  F_{\mathrm{EM}}(r)
+  \sim
+  \alpha\,\frac{\hbar c}{r^2}.
+  \label{eq:l10-em-force-alpha}
+\end{equation}
+Gleichsetzen mit \eqref{eq:l10-short-distance-gravity-force} ergibt:
+\begin{equation}
+  r^2\sim\frac{G\hbar}{\alpha c^3}.
+  \label{eq:l10-gravity-em-crossing}
+\end{equation}
+In der Vorlesung wird der dimensionslose Eichfaktor als von der Größenordnung eins angenommen, um die fundamentale Gravitationslänge sichtbar zu machen:
+\begin{equation}
+  \boxed{\ell_P=\sqrt{\frac{\hbar G}{c^3}}}
+  \simeq1.616\times10^{-35}\,\mathrm{m}.
+  \label{eq:l10-planck-length}
+\end{equation}
+Berücksichtigt man das tatsächliche \(\alpha\), verschiebt sich der Gleichheitspunkt mit der elektromagnetischen Kraft um einen logarithmischen Skalenfaktor der Größenordnung eins, \(r\sim\ell_P/\sqrt\alpha\). Die fundamentale Aussage ist in natürlichen Einheiten einfacher:
+\begin{equation}
+\begin{aligned}
+  \alpha_G(E)
+  &\equiv\frac{GE^2}{\hbar c^5}
+  =\left(\frac{E}{E_P}\right)^2,
+  \\
+  E_P
+  &=\sqrt{\frac{\hbar c^5}{G}}
+  \simeq1.22\times10^{19}\,\mathrm{GeV}.
+\end{aligned}
+  \label{eq:l10-gravitational-coupling}
+\end{equation}
+Die Gravitation wird stark, wenn \(E\) sich \(E_P\) nähert.
+
+\begin{classroomqa}
+\audiencequestion{Wurde beim Vergleich \(G\) oder die elektrische Kopplung gleich eins gesetzt?\lecturetimestamp{01:27:02}}
+\lecturerresponse{Für die grobe Abschätzung wurde die elektrische Kopplung als Zahl der Größenordnung eins behandelt. Newtons Konstante muss erhalten bleiben: Sie ist die dimensionale Größe, die die Planck-Skala festlegt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Die Zwischenschritte mit Potenzen von \(r\), \(\hbar\) und \(c\) scheinen dimensionsmäßig nicht konsistent zu sein. Wie lautet die korrigierte Rechnung?\lecturetimestamp{01:27:47}}
+\lecturerresponse{Man geht von Anfang an von Energien aus. Die Lokalisierung ergibt \(E\sim\hbar c/r\), also \(U_G\sim GE^2/(c^4r)=G\hbar^2/(c^2r^3)\). Das vergleicht man mit \(U_{\mathrm{EM}}\sim\alpha\hbar c/r\). Setzt man \(\alpha\) von der Größenordnung eins, erhält man \(r^2=G\hbar/c^3\). Die Vorlesung und die Rechnung an der Tafel ergeben \(r=\sqrt{G\hbar/c^3}\), die Planck-Länge.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_12.png}
+\caption{Das korrigierte Ergebnis der Dimensionsprüfung an der Tafel: \(r=\sqrt{\hbar G/c^3}\).}
+\lectureframe{01:32:16}
+\label{fig:l10-planck-length-board}
+\end{figure}
+
+\section{Das Hierarchieproblem stellt sich erneut}
+
+Die Eichkopplungen werden nahe einer sehr hohen Skala vergleichbar, und die Gravitation wird nahe der Planck-Skala stark. Diese enormen Skalen wirken nun weniger wie beliebige große Zahlen und mehr wie Bereiche, in denen sich eine mikroskopische Beschreibung vereinfachen könnte. Im Vergleich dazu ist der elektroschwache Vakuumerwartungswert \(F\) anomal klein:
+\begin{equation}
+  \frac{v}{E_P}\sim2\times10^{-17}
+  \label{eq:l10-electroweak-planck-ratio}
+\end{equation}
+in Einheiten mit \(c=1\). Verwendet man statt der Planck-Skala eine GUT-Skala, ändert sich das genaue Verhältnis, nicht aber das Rätsel.
+
+Ist \(F\) klein, folgen daraus die Massen von \(W\), \(Z\), geladenen Leptonen und Quarks, weil die Eichsymmetrie ihre Massen proportional dazu macht. Teilchen ohne diesen Schutz können schwer bleiben. Die offene Frage lautet daher nicht, warum jede bekannte Masse für sich genommen winzig ist. Sie lautet, warum der Higgs-Sektor gerade diese eine winzige Symmetriebrechungsskala liefert.
+
+\begin{classroomqa}
+\audiencequestion{Wären dann alle übrigen Massen berechenbar, wenn man \(F\) berechnen könnte?\lecturetimestamp{01:34:39}}
+\lecturerresponse{Damit wäre die elektroschwache Skala insgesamt festgelegt und, bei gegebenen Eich- und Yukawa-Kopplungen, auch die entsprechenden Teilchenmassen. Das verbleibende Problem ist, dass eine gewöhnliche, ultraviolettempfindliche Rechnung den Higgs-Massenparameter tendenziell zur hohen fundamentalen Skala treibt, sofern ihn keine Symmetrie oder kein dynamischer Mechanismus schützt.}
+\end{classroomqa}
+
+Das Wort „feinabgestimmt“ verweist auf diese Empfindlichkeit. In einer Beschreibung mit Abschneideskala erhält ein skalares Massenparameter Korrekturen von ungefähr der Form:
+\begin{equation}
+  \delta\mu^2
+  \sim
+  \frac{C}{16\pi^2}\Lambda^2,
+  \label{eq:l10-higgs-quadratic-sensitivity}
+\end{equation}
+wobei \(C\) Eich-, Yukawa- und skalare Kopplungen zusammenfasst und \(\Lambda\) die Skala bezeichnet, bei der die effektive Theorie ersetzt wird. Liegt \(\Lambda\) nahe einer GUT- oder Planck-Skala, scheint für \(\mu^2\sim v^2\) eine sehr genaue Auslöschung zwischen Eingabeparameter und Strahlungskorrekturen erforderlich zu sein. Das ist die Natürlichkeitsform des Eichhierarchieproblems. Es handelt sich um eine redaktionelle Ergänzung der Rechnung, deren Fortsetzung die Vorlesung für das folgende Vierteljahr ankündigt, nicht um die Behauptung, ein bestimmtes Regulatorartefakt sei selbst beobachtbar.
+
+\begin{classroomqa}
+\audiencequestion{Sollte man sich die Planck-Länge als den Radius der abschließenden Abschirmwolke vorstellen?\lecturetimestamp{01:35:03}}
+\lecturerresponse{Nein. Das dielektrische Bild erklärt die Renormierung der Eichladung, doch das Planck-Argument beruht auf Lokalisierungsenergie und der dimensionalen Gravitationskopplung. In dieser Herleitung gibt es keine buchstäbliche Gravitationsabschirmwolke.}
+\end{classroomqa}
+
+\subsection{Die abschließenden Fragen zu Wechselwirkungen}
+
+In den letzten Minuten geht es wieder um das Higgs-Potenzial und darum, welche Terme eine Lagrange-Dichte enthalten darf.
+
+\begin{classroomqa}
+\audiencequestion{Kann das Higgs-Potenzial \(\phi^6\) enthalten und trotzdem symmetrisch bleiben?\lecturetimestamp{01:35:20}}
+\lecturerresponse{Ja. Gerade Potenzen bewahren die Spielzeug-Symmetrie \(\phi\mapsto-\phi\), während \(\phi^5\) sie brechen würde. In vier Dimensionen hat der Koeffizient von \(\phi^6\) eine negative Massendimension, daher wird der Term durch eine hohe Skala unterdrückt, zum Beispiel \(c_6\phi^6/\Lambda^2\). Er ist eine zulässige effektive Wechselwirkung, auch wenn er nach Potenzzählung nicht renormierbar ist.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Stellen die Potenzen des Higgs-Feldes Erzeugungs- und Vernichtungsprozesse dar, sodass \(\phi^4\) Higgs-Higgs-Streuung vorhersagt?\lecturetimestamp{01:35:52}}
+\lecturerresponse{Ja. Entwickelt man um das Vakuum, erzeugen Potenzen des quantisierten Feldes Vertizes. Der quartische Term enthält einen Vier-Higgs-Vertex, und das verschobene Potenzial erzeugt außerdem kubische Wechselwirkungen. Kennt man ihre Koeffizienten, lassen sich Prozesse wie \(hh\to hh\) vorhersagen, vorbehaltlich der üblichen diagrammatischen Rechnung.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Muss eine fundamentale Lagrange-Dichte polynomial in ihren Feldern sein und darf keine Potenz größer als vier enthalten?\lecturetimestamp{01:36:09}}
+\lecturerresponse{Für eine perturbativ renormierbare skalare Theorie in vier Dimensionen bilden Operatoren der Dimension höchstens vier die traditionelle endliche Liste. Die moderne effektive Feldtheorie ist weniger restriktiv: Operatoren höherer Dimension sind zulässig und kodieren kurzreichweitige Physik, doch ihre Effekte werden durch Potenzen der hohen Skala unterdrückt. Die gelegentliche Ausnahme ist also entscheidend für die alte Regel.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wurden Selbstwechselwirkungsterme bei der Diskussion der laufenden Kopplungen ausgelassen?\lecturetimestamp{01:36:44}}
+\lecturerresponse{Sie wurden begrifflich einbezogen. Gerade die Selbstwechselwirkungen der Gluonen kehren das Vorzeichen gegenüber der QED um und führen zum Antiscreening. Auch die Selbstwechselwirkungen des Higgs tragen zum Verlauf der skalaren und anderer Parameter des Standardmodells bei.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Gibt es Kreuzterme, bei denen verschiedene Wechselwirkungen den Verlauf der jeweils anderen beeinflussen?\lecturetimestamp{01:37:23}}
+\lecturerresponse{Ja. In höheren Schleifenordnungen enthalten Betafunktionen gemischte Produkte von Eich-, Yukawa- und skalaren Kopplungen. Die Störungstheorie bleibt nützlich, solange diese dimensionslosen Kopplungen hinreichend klein sind, denn dann sind die Beiträge aufeinanderfolgender Schleifenordnungen entsprechend unterdrückt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Was genau war damit gemeint, dass \(F\) feinabgestimmt ist?\lecturetimestamp{01:37:44}}
+\lecturerresponse{Die vollständige Antwort wird in der Vorlesung zurückgestellt. Es geht um die Instabilität einer leichten Skala des skalaren Feldes gegenüber viel größeren ultravioletten Beiträgen, zusammengefasst durch \eqref{eq:l10-higgs-quadratic-sensitivity}. Supersymmetrie war ein vorgeschlagener Weg, Auslöschungen zu erzwingen; das Hierarchieproblem selbst weist jedoch keine bestätigte Lösung aus.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann die Renormierungsgruppe noch jetzt erklärt werden?
+\lecturetimestamp{01:37:56}}
+\lecturerresponse{Nicht in den verbleibenden Minuten. Ihre wesentliche Aussage ist bereits deutlich geworden: die Auflösung ändern, die Kopplungen sich entwickeln lassen und dabei feste physikalische Vorhersagen bewahren. Eine vollständige Behandlung gehört in den nächsten Kursabschnitt.}
+\end{classroomqa}
+
+An dieser Stelle endet die Vorlesungsfolge sinnvollerweise. Der Higgs-Mechanismus macht das Standardmodell in sich konsistent: Er bewahrt die chirale Eichsymmetrie, verleiht den schwachen Bosonen und Fermionen Massen und sagt physikalische Higgs-Wechselwirkungen voraus. Die Renormierung zeigt dann, wie sich diese Wechselwirkungen mit der Skala ändern, und deutet an, dass die Eichkräfte einen gemeinsamen vereinheitlichten Ursprung haben könnten. Die Gravitation liefert durch ein unabhängiges Argument eine zweite hohe Skala. Keiner dieser Erfolge erklärt, warum der Vakuumerwartungswert des Higgs-Feldes weit unter beiden Skalen liegt. Die letzte Vorlesung schließt das Thema daher nicht ab; sie benennt die kleine Zahl, auf die sich das nächste Thema konzentrieren muss.
