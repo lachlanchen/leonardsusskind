@@ -1,0 +1,492 @@
+\chapter{Der Horizont in flachen Koordinaten und die Thermodynamik der Verdampfung}
+
+\lectureoverview{Die Schwarzschild-Metrik scheint am Horizont singulär zu werden, obwohl ein frei fallender Beobachter dort nichts Außergewöhnliches bemerken sollte. Wir lösen diesen Widerspruch auf, indem wir die Metrik nahe dem Horizont in flache Minkowski-Raumzeit in hyperbolischen Polarkoordinaten umschreiben. Dieselbe Geometrie macht dann den Unterschied zwischen Alices Beschreibung des Hineinfallens und Bobs beschleunigter Beschreibung des Außenbereichs deutlich. In der zweiten Hälfte geht es um Entropie und Temperatur: Wir leiten die umgekehrt massenproportionale Hawking-Temperatur und das Verdampfungsgesetz \(M^3\) her und schließen mit der Frage, was die Erhaltung der Information für die mikroskopische Gravitationstheorie voraussetzt.}
+
+\section{Das Rätsel bei \texorpdfstring{\(r=2GM\)}{r=2GM}}
+
+Betrachten wir zunächst ein sehr großes Schwarzes Loch. Seine Krümmung am Horizont kann so gering sein, dass ein Beobachter, der ihn durchquert, in jedem hinreichend kleinen Laborbereich annähernd leere, flache Raumzeit vorfindet. Er stößt gegen keine Wand, und kein lokaler Alarm meldet die Passage. Dennoch scheint die Schwarzschild-Metrik zu besagen, dass genau bei diesem Radius etwas Singuläres geschieht. In der ersten Hälfte der Vorlesung soll gezeigt werden, wie sich diese beiden Aussagen miteinander vereinbaren lassen.
+
+Wir verwenden die Vorzeichenkonvention mit überwiegend positiven Vorzeichen. In der flachen Raumzeit gilt
+\begin{equation}
+ds^2=-dt^2+dx^2+dy^2+dz^2,
+\end{equation}
+Eine zeitartige Weltlinie erfüllt also \(ds^2<0\), und für die Eigenzeit gilt \(d\tau^2=-ds^2\). Das ist die Umkehrung aller Vorzeichen gegenüber der Konvention der vorherigen Vorlesung; keine beobachtbare Größe hängt von dieser Wahl ab.
+
+Für \(c=1\) lautet das Schwarzschild-Linienelement
+\begin{equation}
+\begin{aligned}
+ds^2={}&-\left(1-\frac{2GM}{r}\right)dt^2
++\frac{dr^2}{1-\frac{2GM}{r}}
++r^2d\Omega_2^2,\\
+d\Omega_2^2={}&d\theta^2+\sin^2\theta\,d\phi^2 .
+\end{aligned}
+\label{eq:l03-schwarzschild}
+\end{equation}
+Der Schwarzschild-Radius ist \(R_s=2GM\) oder, wenn \(c\) wieder eingesetzt wird, \(R_s=2GM/c^2\). Weit entfernt, bei \(r\gg R_s\), nähern sich beide Radialkoeffizienten ihren Werten in der flachen Raumzeit. Bei \(r=R_s\) hingegen verschwindet der Koeffizient von \(dt^2\), während der Koeffizient von \(dr^2\) divergiert. Das wirkt dramatisch. Die Frage ist, ob die Geometrie dramatisch ist oder nur die Koordinaten.
+
+\section{Zwei Lehren über Koordinaten}
+
+\subsection{Der harmlose Ursprung der Polarkoordinaten}
+
+In einer gewöhnlichen euklidischen Ebene gilt
+\begin{equation}
+ds^2=dx^2+dy^2.
+\end{equation}
+Führen wir Polarkoordinaten ein:
+\begin{equation}
+x=\rho\cos\theta,
+\qquad
+y=\rho\sin\theta .
+\end{equation}
+Ein kleines Wegelement hat die radiale Länge \(d\rho\) und die transversale Länge \(\rho\,d\theta\), also
+\begin{equation}
+ds^2=d\rho^2+\rho^2d\theta^2.
+\label{eq:l03-polar}
+\end{equation}
+Bei \(\rho=0\) verschwindet der Winkelkoeffizient. Dadurch wird das Zentrum der Ebene nicht singulär. Es bedeutet lediglich, dass dort jeder Wert von \(\theta\) denselben Punkt bezeichnet. Ein ungewöhnlicher Metrikkoeffizient kann daher auf ein ungewöhnliches Koordinatensystem hindeuten statt auf ungewöhnliche Physik.
+
+\subsection{Hyperbolische Polarkoordinaten}
+
+Ersetzen wir nun die euklidische Ebene durch eine \(1+1\)-dimensionale Minkowski-Raumzeit:
+\begin{equation}
+ds^2=-dT^2+dX^2.
+\end{equation}
+Im rechten Keil \(X>|T|\) definieren wir
+\begin{equation}
+X=\rho\cosh\omega,
+\qquad
+T=\rho\sinh\omega,
+\qquad \rho>0 .
+\label{eq:l03-rindler-transform}
+\end{equation}
+An die Stelle der gewöhnlichen Identität \(\cos^2\theta+\sin^2\theta=1\) tritt
+\begin{equation}
+\cosh^2\omega-\sinh^2\omega=1.
+\end{equation}
+Eine Linie mit konstantem \(\rho\) ist somit die Hyperbel
+\begin{equation}
+X^2-T^2=\rho^2.
+\end{equation}
+Anders als der periodische Winkel \(\theta\) nimmt die rapiditätsähnliche Koordinate \(\omega\) Werte von \(-\infty\) bis \(+\infty\) an. Für große positive Werte von \(\omega\) werden \(\cosh\omega\) und \(\sinh\omega\) nahezu gleich, und die Hyperbel nähert sich dem zukünftigen lichtartigen Strahl \(X=T\).
+
+Durch Ableiten von Gleichung~\eqref{eq:l03-rindler-transform} erhalten wir
+\begin{align}
+dX&=\cosh\omega\,d\rho+\rho\sinh\omega\,d\omega,\\
+dT&=\sinh\omega\,d\rho+\rho\cosh\omega\,d\omega .
+\end{align}
+Die Kreuzterme heben sich auf, sodass bleibt:
+\begin{equation}
+ds^2=-\rho^2d\omega^2+d\rho^2.
+\label{eq:l03-rindler-metric}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_02.png}
+\caption{Die fertig ausgearbeitete Tafel zu den hyperbolischen Koordinaten: \(X=\rho\cosh\omega\), \(T=\rho\sinh\omega\), die Konstruktion mit der Einheitshyperbel und die flache Metrik in der Form \(ds^2=-\rho^2d\omega^2+d\rho^2\).}
+\lectureframe{00:16:55.000}
+\end{figure}
+
+Gleichung~\eqref{eq:l03-rindler-metric} beschreibt weiterhin vollkommen flache Raumzeit. Ihr Zeitkoeffizient verschwindet bei \(\rho=0\), genauso wie der Winkelkoeffizient von Gleichung~\eqref{eq:l03-polar} im Ursprung verschwindet. Dort entartet die Koordinatenkarte, nicht die Raumzeit.
+
+\section{Nahaufnahme des Schwarzschild-Horizonts}
+
+Kehren wir zum radialen und zeitlichen Anteil von Gleichung~\eqref{eq:l03-schwarzschild} zurück:
+\begin{align}
+ds^2
+&=-\frac{r-2GM}{r}\,dt^2
++\frac{r}{r-2GM}\,dr^2 .
+\label{eq:l03-rewritten-schwarzschild}
+\end{align}
+Wir betrachten jetzt nur eine schmale Umgebung von \(r=2GM\). In Faktoren, die sich langsam ändern, können wir \(r\) durch \(2GM\) ersetzen. Der Faktor \(r-2GM\) muss erhalten bleiben, denn er verschwindet am Horizont und wechselt dort sein Vorzeichen. Somit gilt
+\begin{equation}
+ds^2\approx
+-\frac{r-2GM}{2GM}\,dt^2
++\frac{2GM}{r-2GM}\,dr^2 .
+\label{eq:l03-near-horizon-r}
+\end{equation}
+
+Wir wählen eine neue Radialkoordinate \(\rho\) so, dass der zweite Term einfach \(d\rho^2\) lautet:
+\begin{equation}
+d\rho^2=\frac{2GM}{r-2GM}\,dr^2.
+\end{equation}
+Außerhalb des Horizonts nehmen wir die positive Quadratwurzel und integrieren ab \(r=2GM\):
+\begin{align}
+d\rho&=\sqrt{\frac{2GM}{r-2GM}}\,dr,\\
+\rho&=2\sqrt{2GM}\sqrt{r-2GM},\\
+\rho^2&=8GM(r-2GM),
+\qquad
+r-2GM=\frac{\rho^2}{8GM}.
+\label{eq:l03-rho-r}
+\end{align}
+Einsetzen in Gleichung~\eqref{eq:l03-near-horizon-r} ergibt
+\begin{equation}
+ds^2\approx
+-\frac{\rho^2}{16G^2M^2}\,dt^2+d\rho^2.
+\end{equation}
+Schließlich skalieren wir die Schwarzschild-Zeit neu:
+\begin{equation}
+\omega=\frac{t}{4GM},
+\qquad
+d\omega^2=\frac{dt^2}{16G^2M^2},
+\label{eq:l03-omega}
+\end{equation}
+Damit erhalten wir
+\begin{equation}
+\boxed{ds^2\approx-\rho^2d\omega^2+d\rho^2.}
+\label{eq:l03-near-horizon-rindler}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_03_figure_03.png}
+\caption{Die Tafel nach der Neuskalierung der Zeit: Die Schwarzschild-Metrik nahe dem Horizont ist nun dieselbe hyperbolische Polarmetrik wie die flache Minkowski-Raumzeit.}
+\lectureframe{00:31:35.000}
+\end{figure}
+
+Je kleiner die betrachtete Umgebung am Horizont wird, desto genauer wird die Näherung. Damit ist die gewünschte lokale Aussage gezeigt: Bei einem hinreichend großen Schwarzen Loch ist der Horizont gewöhnliche Raumzeit in einer ungewöhnlichen Koordinatenkarte. Für ein Schwarzschild-Loch endlicher Masse ist die Krümmung nicht exakt null, aber am Horizont endlich und lässt sich durch Vergrößern von \(M\) beliebig klein machen.\editorialnote{Die lokale Krümmungsskala ist von der Größenordnung \(R_s^{-2}\). Die Rindler-Metrik ist der führende Term einer lokalen Entwicklung nahe dem Horizont; sie besagt nicht, dass die gesamte Schwarzschild-Geometrie global flach wäre.}
+
+\begin{classroomqa}
+\audiencequestion{Für \(r<2GM\) macht Gleichung~\eqref{eq:l03-rho-r} diesen Außenbereich \(\rho\) imaginär. Ist das ein Hinweis auf ein physikalisches Problem?\lecturetimestamp{00:32:30}}
+\lecturerresponse{Damit zeigt sich dasselbe Versagen der Koordinaten in anderer Form. Die vorliegende Koordinatenkarte wurde für den Außenkeil konstruiert; für eine Fortsetzung durch den Horizont ist eine andere Karte erforderlich. Das Versagen dieser speziellen Koordinate \(\rho\) ist kein physikalisches Ereignis am Horizont.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie folgt in der Umformung nahe dem Horizont die genäherte Zeile aus der vorherigen exakten Zeile?\lecturetimestamp{00:39:21}}
+\lecturerresponse{Nur die langsam veränderlichen Vorkommen von \(r\) wurden gleich \(2GM\) gesetzt. Die kleine Differenz \(r-2GM\) bleibt erhalten. Das ist die Näherung, und sie wird immer genauer, je mehr sich \(r\) dem Wert \(2GM\) nähert.}
+\end{classroomqa}
+
+\section{Die Bedeutung der Koordinaten}
+
+Die Transformation identifiziert
+\begin{equation}
+\rho=0\quad\Longleftrightarrow\quad r=2GM.
+\end{equation}
+Der Außenbereich \(r>2GM\) ist der rechte Rindler-Keil \(X>|T|\). Hyperbeln mit konstantem \(\rho\) beschreiben Beobachter, die sich in festem Schwarzschild-Radius befinden. Ein nach außen laufender Lichtstrahl, der irgendwo in diesem Keil ausgesandt wird, kreuzt jede Weltlinie mit größerem \(\rho\); ein Beobachter im Außenbereich kann also nach außen kommunizieren. Ein Punkt jenseits der zukünftigen lichtartigen Grenze kann kein Lichtsignal zurück in den rechten Keil senden. Diese lichtartige Grenze ist der Horizont.
+
+\begin{classroomqa}
+\audiencequestion{Beschreibt die hier gezeigte Karte mit hyperbolischen Koordinaten immer den Bereich außerhalb des Horizonts?\lecturetimestamp{00:35:22}}
+\lecturerresponse{Ja. In dieser Konstruktion folgt aus \(r>2GM\), dass \(\rho^2>0\) gilt und das Ereignis im rechten Außenkeil liegt. Die lichtartige Grenze \(\rho=0\) ist der Horizont; die hier verwendeten Koordinaten setzen sich jenseits davon nicht als reelle Außenkoordinaten fort.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Beschreibt eine Hyperbel mit konstantem \(\rho\) einen Zeitpunkt oder einen Abstand?\lecturetimestamp{00:37:21}}
+\lecturerresponse{In der Näherung nahe dem Horizont beschreibt sie einen festen Eigenabstand vom Horizont und damit einen festen Schwarzschild-Radius. Die Bewegung entlang der Hyperbel entspricht dem Zeitablauf für den dort stationierten Beobachter.}
+\end{classroomqa}
+
+Entlang einer Bahn mit festem \(\rho\) ergibt Gleichung~\eqref{eq:l03-rindler-metric}
+\begin{equation}
+d\tau=\rho\,d\omega.
+\label{eq:l03-proper-time-rindler}
+\end{equation}
+Somit ist \(\omega\) nicht selbst die Eigenzeit des Beobachters. Es ist eine für die ganze Hyperbelfamilie gemeinsame Winkelzeit; jeder Beobachter multipliziert sie mit seinem eigenen \(\rho\), genauso wie man einen gewöhnlichen Winkel mit dem Radius des Kreises multipliziert, um die Bogenlänge zu erhalten.
+
+\begin{classroomqa}
+\audiencequestion{Ist \(\omega\) die Eigenzeit des beschleunigten Beobachters?\lecturetimestamp{00:51:45}}
+\lecturerresponse{Fast. Bei festem \(\rho\) beträgt das Eigenzeitintervall \(\rho\,d\omega\). Der Faktor \(\rho\) ist wesentlich.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_04.png}
+\caption{Die Kausalstruktur nahe dem Horizont: sich kreuzende lichtartige Grenzen, Hyperbeln konstanten Radius im Außenkeil und die Koordinatenbeziehung zwischen \(\rho\) und \(r-2GM\).}
+\lectureframe{00:34:35.000}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.04,>=Latex]
+  \draw[->] (-0.3,0) -- (4.6,0) node[right] {\(X\)};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {\(T\)};
+  \draw[very thick,blue!55!black] (0,0) -- (3,3);
+  \draw[very thick,blue!55!black] (0,0) -- (3,-3);
+  \node[blue!55!black,rotate=45] at (0.72,1.02) {future horizon};
+  \draw[thick,domain=-1.45:1.45,samples=80] plot ({0.75*cosh(\x)},{0.75*sinh(\x)});
+  \draw[thick,domain=-1.25:1.25,samples=80] plot ({1.25*cosh(\x)},{1.25*sinh(\x)});
+  \draw[very thick,domain=-1.05:1.05,samples=80] plot ({2.0*cosh(\x)},{2.0*sinh(\x)});
+  \node at (3.64,2.18) {Bob: \(\rho=\mathrm{const.}\)};
+  \draw[very thick,red!65!black,->] (1.2,-2.9) -- (1.2,2.9);
+  \node[red!65!black] at (1.58,-1.75) {Alice};
+  \fill[red!65!black] (1.2,1.2) circle (1.7pt);
+  \draw[dashed,->] (1.2,0) -- (2.27,1.07);
+  \node[align=left] at (3.18,0.80) {\small pre-crossing\\[-0.2em]\small light signal};
+\end{tikzpicture}
+\caption{Eine gesetzte Begleitdarstellung zur Tafel. Bob folgt einer beschleunigten Hyperbel mit konstantem \(\rho\); Alice folgt einer lokal inertialen Linie durch den zukünftigen Horizont. Die lichtartige Grenze schränkt Bobs kausalen Zugang ein, ohne für Alice zu einem lokalen Hindernis zu werden.}
+\end{figure}
+
+\section{Alice fällt, Bob hält sich am Horizont}
+
+Bob halte einen festen Abstand vom Horizont, während Alice seine Hand loslässt und fällt. Bobs Weltlinie ist eine Hyperbel, er ist also beschleunigt. Alices lokale Weltlinie ist näherungsweise gerade. Sie überquert die lichtartige Grenze in endlicher Eigenzeit und begegnet dabei keinem lokalen Sprung.
+
+Die kausalen Beschreibungen sind asymmetrisch. Nachdem Alice den Horizont überquert hat, kann kein Licht von ihr Bob erreichen; von Bob ausgesandtes Licht kann Alice jedoch noch eine Zeit lang erreichen. Bob empfängt Signale, die Alice in immer früheren Phasen ihres endlichen Falls ausgesandt hat. Die Abstände zwischen ihren Ankunftszeiten werden immer größer, ihre Frequenz wird rotverschoben und ihre Intensität nimmt ab. In Schwarzschild-Zeit sieht Bob die Überquerung selbst nie; Alice scheint sich dem Horizont asymptotisch zu nähern und an ihm abzuflachen. Dabei wird nicht ihre Nase platt, während ihr Hinterkopf unverändert bleibt: Die Signale von allen Körperteilen werden in dieselbe Grenzschicht zusammengedrängt.
+
+\begin{classroomqa}
+\audiencequestion{Kann Alice Bob nach der Überquerung sehen, weil Bobs Photonen zu ihr nach innen laufen?\lecturetimestamp{00:42:48}}
+\lecturerresponse{Ja. Darum geht es bei der einseitigen Kausalbeziehung: Bobs nach innen laufende Signale können Alice erreichen, ihre späteren nach außen laufenden Signale dagegen nicht zu Bob zurückgelangen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wenn zuerst Alices Füße den Horizont überqueren, während ihre Augen noch außerhalb sind, verliert sie dann vorübergehend den Blick auf ihre eigenen Füße?\lecturetimestamp{00:43:03}}
+\lecturerresponse{Bei einem gewöhnlichen Fall gibt es keinen sichtbaren Blitz. Licht braucht immer Zeit, um von den Füßen zu den Augen zu gelangen; wenn das betreffende Signal eintrifft, haben auch ihre Augen den Horizont überquert. Nur der gewaltsame Versuch, ihren Kopf draußen zu halten, während ihre Füße weiter nach innen fallen, würde eine andere und zerstörerische Situation schaffen.}
+\end{classroomqa}
+
+Seine Position beizubehalten ist die nichtinertiale Wahl. Bob braucht eine Rakete, so wie eine auf dem Boden stehende Person die nach oben gerichtete Kraft des Bodens braucht, um nicht frei zu fallen. Je näher Bob am Horizont schwebt, desto größer muss seine Eigenbeschleunigung sein; in der lokalen Rindler-Näherung beträgt ihr Betrag \(a=1/\rho\) in Einheiten, in denen \(c=1\) gilt.\editorialnote{Mit eingesetzten Einheiten ergibt sich für den lokalen Rindler-Beobachter \(a=c^2/\rho\). Die Eigenbeschleunigung eines exakt statischen Schwarzschild-Beobachters divergiert, wenn er sich dem Horizont nähert.}
+
+\begin{classroomqa}
+\audiencequestion{Beschleunigen wir, wenn wir hier im Hörsaal stehen?\lecturetimestamp{00:45:40}}
+\lecturerresponse{Ja, relativ zu einem frei fallenden Bezugssystem. Der Boden stützt uns; ohne ihn oder ohne ein Düsenrucksack würden wir fallen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wird Bob Alice schließlich in einem Abstand von einer Planck-Länge vom Horizont sehen, und was geschieht danach?\lecturetimestamp{00:49:24}}
+\lecturerresponse{An diesem Punkt reicht die klassische geometrische Beschreibung nicht mehr aus. Die Planck-Länge enthält \(\hbar\), sodass sich die Frage, was Bob dort auflösen kann, nur mithilfe der Quantenmechanik beantworten lässt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Die Kurven konstanten Radius scheinen den Horizont an einer koordinatenbedingten Ecke im rechten Winkel zu treffen. Kann man dort eine Ableitung bilden?\lecturetimestamp{00:51:12}}
+\lecturerresponse{An diesem Punkt geschieht etwas Singuläres mit dieser Koordinatenkarte, nicht aber mit der lokalen Physik. Eine Karte, die auch die anderen Keile abdeckt, beseitigt die künstliche Ecke. Für die vorliegende Betrachtung des Außenbereichs enthält das Rindler-Bild bereits die nötigen kausalen Fakten.}
+\end{classroomqa}
+
+Es ist daher wenig hilfreich, ohne Angabe eines Beobachters zu fragen, ob Alice den Horizont \emph{tatsächlich} überquert. Alices Uhr erreicht den Horizont in endlicher Eigenzeit. Die Folge der von Bob empfangenen Signale enthält das Überquerungsereignis nie. In der Physik fragt man, was die einzelnen Beobachter messen und wie sich ihre Aufzeichnungen vergleichen lassen.
+
+\begin{classroomqa}
+\audiencequestion{Lässt sich präzise sagen, dass Bob nur einen endlichen Teil von Alices Zukunft sehen kann, obwohl seine eigene Beobachtungszeit unbegrenzt ist?\lecturetimestamp{00:53:33}}
+\lecturerresponse{Ja. Alice ordnet dem sichtbaren Teil ihres Falls eine endliche Eigenzeit zu. In der idealisierten ewigen Geometrie empfängt Bob für immer Signale, die immer stärker verzögert und rotverschoben sind; er sieht jedoch nicht, wie sie nach der Überquerung des Horizonts weiter altert.}
+\end{classroomqa}
+
+\section{Beschleunigungshorizonte reichen bereits aus}
+
+Diese Kausalstruktur setzt kein Schwarzes Loch voraus. Eine Rakete, die sich ewig gleichmäßig beschleunigt, folgt in der flachen Raumzeit einer Rindler-Hyperbel und hat jenseits einer lichtartigen Grenze Ereignisse, deren Signale sie nicht erreichen können. Für diesen Beobachter gibt es einen Beschleunigungshorizont, obwohl ein inertialer Beobachter dieselbe Region als gewöhnliche Minkowski-Raumzeit ansieht.
+
+\begin{classroomqa}
+\audiencequestion{Ist dieses Phänomen auf Schwarze Löcher beschränkt, oder tritt es bei jedem Horizont auf?\lecturetimestamp{00:55:25}}
+\lecturerresponse{Dasselbe Phänomen tritt bei einem gleichmäßig beschleunigten Beobachter auf. Ein solcher Beobachter hat einen Beschleunigungshorizont und kann Ereignisse jenseits davon nicht sehen. Lokal unterscheidet sich der Horizont eines Schwarzen Lochs physikalisch nicht von diesem Fall.}
+\end{classroomqa}
+
+Hier wirkt das Äquivalenzprinzip: Zuerst betrachten wir gleichmäßige Beschleunigung und erkennen dann dieselbe lokale Struktur in einem Gravitationsfeld. Rückblickend hätte man Gravitationshorizonte schon vor der Anerkennung Schwarzer Löcher aus Beschleunigungshorizonten vorhersehen können. Einstein selbst akzeptierte die physikalische Entstehung Schwarzer Löcher nicht, obwohl er die Theorie geliefert hatte, aus der ihre Geometrie folgt. Für den frei fallenden Beobachter ist der Horizont belanglos, für den Beobachter, der unbedingt draußen bleiben will, hat er erhebliche Folgen. Das ist ein Spannungsverhältnis zwischen gültigen Beschreibungen, aber noch kein Paradoxon.
+
+\section{Zurück zu Wärme und Entropie}
+
+Nach der Pause setzen wir die thermodynamische Brille auf. In der vorherigen Konstruktion wurde ein Schwarzes Loch wie eine Badewanne gefüllt, Tropfen für Tropfen; nur war jeder Tropfen ein Photon, das ungefähr ein Bit trug. Jedes Bit vergrößerte die Horizontfläche um eine Größenordnung der Planck-Fläche. Die genaue Entropie lautet
+\begin{equation}
+S_{\mathrm{BH}}=\frac{k_B A}{4\ell_P^2}.
+\end{equation}
+In der Vorlesung wird scherzhaft bemerkt, der Faktor \(1/4\) hätte sich vermeiden lassen, wenn Planck seine Länge anders definiert hätte. Der sachliche Punkt ist, dass die Dimensionsanalyse die Skala, aber nicht den numerischen Koeffizienten festlegt; Hawking berechnete diesen Koeffizienten.\editorialnote{Die Planck-Länge ist standardmäßig definiert als \(\ell_P=\sqrt{G\hbar/c^3}\). Sobald diese Konvention und die übliche thermodynamische Entropie festgelegt sind, ist der Faktor \(1/4\) physikalisch; die Bemerkung über eine andere Definition ist ein Scherz im Hörsaal über Konventionen.}
+
+Temperatur erscheint grundlegend, weil Finger und Thermometer sie unmittelbar erfassen. Entropie wirkt oft rätselhafter. Die Vorlesung kehrt diese Rangordnung um: Entropie und Energie werden als Grundgrößen behandelt, während die Temperatur daraus abgeleitet wird, wie stark sich die Energie bei einer Änderung der Entropie ändern muss:
+\begin{equation}
+dE=T\,dS.
+\end{equation}
+In den Ein-Bit-Einheiten der Vorlesung gilt \(\Delta S=1\), daher wird die minimale Energie, die mit dem Hinzufügen oder Löschen eines Bits verbunden ist, als \(T\) bezeichnet. Unachtsames Löschen---mit dem logischen Äquivalent eines Vorschlaghammers---kann beliebig viel mehr Energie dissipieren. Die Definition bezieht sich auf die kleinstmögliche Dissipation, wenn die fehlende Information in mikroskopische Freiheitsgrade der Umgebung übertragen wird. In konventionellen Einheiten trägt ein binäres Bit \(\Delta S=k_B\ln2\), und reversibles Löschen dissipiert mindestens \(k_BT\ln2\).\editorialnote{Dies ist die Landauer-Normierung, die durch die Wahl der Vorlesung unterdrückt wird, Entropie und Temperatur in natürlichen, auf der Energie beruhenden Einheiten zu messen.}
+
+\subsection{Die Abschätzung mit einem Photon}
+
+Wir wählen ein Photon mit einer Wellenlänge, die mit dem Schwarzschild-Radius vergleichbar ist:
+\begin{equation}
+\lambda\sim R_s=\frac{2GM}{c^2}.
+\end{equation}
+Seine Energie beträgt bis auf die Konvention \(2\pi\), die \(h\) von \(\hbar\) unterscheidet,
+\begin{equation}
+\Delta E\sim \frac{\hbar c}{\lambda}.
+\end{equation}
+Das sind die Energiekosten des hinzugefügten Bits, also
+\begin{equation}
+k_BT_H\sim\frac{\hbar c}{R_s}
+\sim\frac{\hbar c^3}{GM}.
+\label{eq:l03-hawking-scale}
+\end{equation}
+Mit dem heuristischen Argument lassen sich Faktoren wie \(2\) und \(\pi\) nicht bestimmen. Das genaue Hawking-Ergebnis lautet
+\begin{equation}
+\boxed{k_BT_H=\frac{\hbar c^3}{8\pi GM}.}
+\label{eq:l03-hawking-exact}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_05.png}
+\caption{Die fertige Temperaturtafel: \(R_s=2GM/c^2\), die Ein-Bit-Skala \(\hbar c/R_s\) und die genaue Hawking-Normierung mit \(8\pi\).}
+\lectureframe{01:07:48.000}
+\end{figure}
+
+Zwei Tatsachen fallen sofort auf. Erstens verschwindet die Temperatur mit \(\hbar\); es handelt sich also um einen Quanteneffekt. Zweitens gilt
+\begin{equation}
+T_H\propto\frac{1}{M}.
+\end{equation}
+Ein großes Schwarzes Loch ist kalt. Für eine Sonnenmasse gilt
+\begin{equation}
+T_H\approx6\times10^{-8}\ {\rm K},
+\end{equation}
+Das liegt in derselben Größenordnung wie die Abschätzung \(10^{-8}\,\mathrm{K}\) aus der Vorlesung und weit unter der Temperatur der kosmischen Mikrowellenhintergrundstrahlung von etwa \(2.7\,\mathrm{K}\).
+
+\subsection{Negative Wärmekapazität}
+
+Setzen wir ein solches Schwarzes Loch einer wärmeren Umgebung aus. Es absorbiert Energie, seine Masse nimmt zu, und Gleichung~\eqref{eq:l03-hawking-exact} besagt, dass es dabei kälter wird. Daraufhin absorbiert es noch leichter weitere Energie. Setzen wir es einer kälteren Umgebung aus, setzt der umgekehrte Prozess mit positiver Rückkopplung ein: Es strahlt, verliert Masse, wird heißer und strahlt stärker. Formal gilt
+\begin{equation}
+C_{\mathrm{BH}}
+=\frac{dE}{dT_H}
+=c^2\frac{dM}{dT_H}
+<0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Ist das mit negativer spezifischer Wärme gemeint?\lecturetimestamp{01:14:08}}
+\lecturerresponse{Genau. Ein selbstgravitierendes System kann sich erwärmen, während es Energie verliert. Bei einem Stern geschieht etwas Ähnliches: Wenn er strahlt, sinkt der Druck und er kann sich zusammenziehen; die gravitative Kompression erhöht dann seine Temperatur.}
+\end{classroomqa}
+
+Ein isoliertes Schwarzes Loch ist deshalb nicht unphysikalisch. Im heutigen Universum ist ein Schwarzes Loch mit Sternmasse kälter als seine Umgebung und absorbiert überwiegend Energie. Wenn sich das Universum ausdehnt und der Hintergrund abkühlt, kann sich das Verhältnis schließlich umkehren und die Verdampfung überwiegen. Das einfache Gleichgewicht mit einem effektiv unendlich großen Wärmebad ist instabil.\editorialnote{Die Randbedingungen sind entscheidend. Ein Schwarzes Loch kann in einem endlichen, reflektierenden Hohlraum oder, bei geeigneten großen Löchern, in einem Anti-de-Sitter-Raum stabilisiert werden; die hier beschriebene Instabilität gilt für den asymptotisch flachen Fall mit einem gewöhnlichen Wärmebad.}
+
+\section{Das Verdampfungsgesetz}
+
+Für die Herleitung der Skalierung stellen wir uns vor, wir hätten kein Nachschlagewerk zur Hand, und wählen Einheiten, in denen die Gleichungen, an die wir uns erinnern, möglichst kurz sind:
+\begin{equation}
+c=\hbar=G=k_B=1.
+\end{equation}
+Dies sind Planck-Einheiten. Die in der Vorlesung angegebenen charakteristischen Skalen sind
+\begin{equation}
+\ell_P\sim10^{-35}\ {\rm m},
+\qquad
+t_P\sim10^{-43}\ {\rm s},
+\qquad
+m_P\sim10^{-8}\ {\rm kg}.
+\end{equation}
+Die Planck-Masse ist ungefähr so groß wie ein mit bloßem Auge sichtbares Staubkorn, während Planck-Länge und Planck-Zeit außerordentlich klein sind. Da \(c=1\), ist \(t_P\) einfach die Lichtlaufzeit über die Strecke \(\ell_P\).
+
+Wir behandeln das Schwarze Loch als schwarzen Körper, also als thermischen Strahler und nicht als ein Objekt, das vollkommen dunkel bleiben muss. Es kann elektromagnetische Strahlung und grundsätzlich auch andere verfügbare Teilchensorten, darunter Gravitonen, emittieren. Die abgestrahlte Leistung ist proportional zur emittierenden Fläche, weil die Strahlung durch die Oberfläche austritt. Die Stefan--Boltzmann-Skalierung lautet
+\begin{equation}
+L=-\frac{dE}{dt}\sim A T^4.
+\end{equation}
+In Planck-Einheiten gilt \(E=M\), \(R_s\sim M\), \(A\sim R_s^2\sim M^2\) und \(T\sim R_s^{-1}\sim M^{-1}\). Daher
+\begin{align}
+-\frac{dM}{dt}
+&\sim R_s^2\left(\frac{1}{R_s}\right)^4
+\sim\frac{1}{R_s^2}
+\sim\frac{1}{M^2},\\
+-M^2\frac{dM}{dt}&\sim1,\\
+-\frac{d(M^3)}{dt}&\sim1.
+\label{eq:l03-evap-scaling}
+\end{align}
+Wenn wir Faktoren der Größenordnung eins vernachlässigen, ergibt sich für die Lebensdauer
+\begin{equation}
+\boxed{t_{\mathrm{evap}}\sim M^3.}
+\label{eq:l03-lifetime}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_06.png}
+\caption{Die ungestörte Verdampfungstafel: Aus der Leuchtkraft folgt \(-dM/dt\sim1/M^2\), also nimmt \(M^3\) gleichmäßig ab, und die Lebensdauer ist proportional zur dritten Potenz der Anfangsmasse.}
+\lectureframe{01:23:20.000}
+\end{figure}
+
+In der schematischen Stefan--Boltzmann-Behandlung werden Graukörperfaktoren und die Anzahl der Teilchensorten vernachlässigt. Für ein ungeladenes, nicht rotierendes Schwarzes Loch und die einfachste Näherung mit masseloser Emission ergibt sich mit eingesetzten Konstanten
+\begin{equation}
+t_{\mathrm{evap}}
+=\frac{5120\pi G^2M_0^3}{\hbar c^4}.
+\label{eq:l03-exact-lifetime}
+\end{equation}
+Dieser Koeffizient ist eine redaktionelle Ergänzung; in der Vorlesung wird nur die robuste Abhängigkeit von \(M_0^3\) hergeleitet.
+
+\subsection{Skalen von Sonne, Berg und Kilogramm}
+
+Die Sonne hat die Masse \(M_\odot\sim10^{30}\,\mathrm{kg}\sim10^{38}m_P\). Wenn wir diese Größe hoch drei nehmen und mit einer Planck-Zeit multiplizieren, erhalten wir die bewusst grobe Abschätzung aus der Vorlesung:
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{114}t_P
+\sim10^{71}\ {\rm s}
+\sim10^{64}\ {\rm yr}.
+\end{equation}
+Beide Abschätzungen liegen weit über dem Alter des Universums von ungefähr \(10^{10}\) Jahren. Setzt man den Koeffizienten aus Gleichung~\eqref{eq:l03-exact-lifetime} ein, steigt die Standardabschätzung für eine Sonnenmasse auf etwa \(2\times10^{67}\) Jahre.\editorialnote{Der Unterschied ist zu erwarten: Bei der Tafelrechnung werden alle numerischen Konstanten weggelassen und die Planck-Skalen auf Zehnerpotenzen gerundet. Es geht um die Skalierung mit der dritten Potenz der Masse, nicht um eine präzise Berechnung astronomischer Lebensdauern.}
+
+Als Nächstes betrachtet die Klasse ein Schwarzes Loch mit einer \emph{Bergmasse}. Sie einigt sich auf den groben Wert aus der Vorlesung, \(M\sim10^{10}\,\mathrm{kg}\), also \(M\sim10^{18}m_P\), und erhält
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{54}t_P
+\sim10^{11}\ {\rm s}
+\sim10^4\ {\rm yr}.
+\end{equation}
+So bleibt die tatsächlich an der Tafel durchgeführte Rechnung erhalten. Die zur Veranschaulichung beschriebene Geometrie – ---ungefähr \(100\,\mathrm{km}^3\) Gestein--- – hätte tatsächlich eine viel größere Masse; auch der genaue Koeffizient der Lebensdauer würde das Ergebnis erheblich verändern.\editorialnote{Bei gewöhnlicher Gesteinsdichte hat \(100\,\mathrm{km}^3\) eine Masse in der Größenordnung von \(10^{14}\,\mathrm{kg}\), nicht \(10^{10}\,\mathrm{kg}\). Für \(10^{10}\,\mathrm{kg}\) ergibt Gleichung~\eqref{eq:l03-exact-lifetime} eine Lebensdauer in der Größenordnung von \(10^6\) Jahren. Diese Korrekturen ändern nichts an der Lehre der Vorlesung, dass die Lebensdauer mit der dritten Potenz der Masse abnimmt.}
+
+\begin{classroomqa}
+\audiencequestion{Wäre ein Schwarzes Loch mit einer Masse von nur einem Kilogramm extrem klein?\lecturetimestamp{01:29:14}}
+\lecturerresponse{Ja. Da der Radius proportional zur Masse ist und eine Sonnenmasse einem Radius von einigen Kilometern entspricht, beträgt der Schwarzschild-Radius eines Schwarzen Lochs mit einem Kilogramm etwa \(10^{-27}\,\mathrm{m}\). Ein solches Loch wäre zudem extrem heiß und kurzlebig.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Setzen diese Verdampfungsabschätzungen eine Umgebungstemperatur von null voraus?\lecturetimestamp{01:29:53}}
+\lecturerresponse{Sie gelten, wenn die Umgebung kälter als das Schwarze Loch ist, sodass die Nettoenergie nach außen fließt. Eine wärmere Umgebung speist stattdessen Energie in das Schwarze Loch. Die Masse, bei der seine Hawking-Temperatur der heutigen Hintergrundtemperatur entspricht, wird als Übungsaufgabe überlassen.}
+\end{classroomqa}
+
+Zur Orientierung: Für \(T_H=2.7\,\mathrm{K}\) ergibt sich \(M\) in der Größenordnung von \(10^{22}\,\mathrm{kg}\) und ein Schwarzschild-Radius in der Größenordnung von \(10^{-4}\,\mathrm{m}\).\editorialnote{Damit wird die in der Vorlesung gestellte Übungsaufgabe gelöst; Teil der mündlichen Herleitung ist dies nicht.}
+
+\section{Was steckt hinter der Metrik?}
+
+\begin{classroomqa}
+\audiencequestion{Welcher Mechanismus bringt die Photonen aus dem Schwarzen Loch heraus?\lecturetimestamp{01:30:53}}
+\lecturerresponse{Bevor man einen mikroskopischen Mechanismus für die Strahlung angibt, muss man zunächst die Freiheitsgrade bestimmen, die für die Entropie verantwortlich sind. Das thermodynamische Argument schränkt ein, was existieren muss, ohne diese Variablen bereits ausdrücklich anzugeben.}
+\end{classroomqa}
+
+Die Analogie dazu ist die Strömungsmechanik. Die Hydrodynamik beschreibt glatte Dichte- und Geschwindigkeitsfelder, ohne jedes einzelne Molekül zu verfolgen. Dennoch zeigt die Entropie, dass dem gleichen glatten Zustand viele verborgene mikroskopische Konfigurationen zugrunde liegen. Ebenso beschreibt die klassische Allgemeine Relativitätstheorie eine glatte Metrik, legt aber nicht die zahlreichen mikroskopischen Freiheitsgrade offen, die von der Entropie eines Schwarzen Lochs gezählt werden. Flächengesetz und Hawking-Strahlung sind Hinweise darauf, dass Einsteins Theorie eine effektive makroskopische Beschreibung ist.
+
+\begin{classroomqa}
+\audiencequestion{Wenn das Schwarze Loch Energie abstrahlt, bedeutet das dann zugleich, dass es Information abstrahlt, sodass die beim Anwachsen verschluckte Information während der Verdampfung zurückkehrt?\lecturetimestamp{01:33:27}}
+\lecturerresponse{Das ist die Forderung: Wenn die vollständige Entwicklung die Information erhält, muss die ausgehende Strahlung schließlich die möglichen Zustände unterscheiden lassen, aus denen das Schwarze Loch entstanden ist. Dies muss noch mit dem Kausalbild in Einklang gebracht werden, in dem Materie den Horizont überquert.}
+\end{classroomqa}
+
+Ein Energiefluss allein reicht nicht aus, um Information festzulegen. Eine vollkommen thermische Dichtematrix kann Energie tragen und zugleich die Einzelheiten des Anfangszustands vergessen lassen. In einer unitären Beschreibung steckt die erforderliche Information in feinen Korrelationen zwischen den emittierten Quanten.\editorialnote{Diese Unterscheidung macht die moderne Form des Informationsproblems ausdrücklich sichtbar. Sie schärft die in der Vorlesung aufgeworfene Frage, ohne sie zu verändern.}
+
+\section{Die Erhaltung der Information als Strukturprinzip}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Erhaltung der Information wirklich ein fundamentales Prinzip?\lecturetimestamp{01:34:13}}
+\lecturerresponse{Sie gehört zu den fundamentalsten Prinzipien. Könnten sich verschiedene Anfangszustände zu exakt demselben Endzustand entwickeln, würden die Naturgesetze ihre eigene Vergangenheit auslöschen. Die üblichen Erhaltungssätze beruhen nicht nur auf Symmetrien, sondern auch auf einer reversiblen Hamiltonschen oder unitären Form der Zeitentwicklung.}
+\end{classroomqa}
+
+Stellen wir uns wie in der Vorlesung ein fiktives fundamentales Gesetz vor, das jeden gleitenden Radiergummi einfach zum Stillstand bringt. Verschiedene Anfangsgeschwindigkeiten führen alle zum selben Zustand. Der Endzustand des Radiergummis lässt seine Vorgeschichte nicht mehr erkennen: Information ist vernichtet worden. Auch Impuls und mechanische Energie verschwinden. Reibung bewirkt dies auf mikroskopischer Ebene nicht: Impuls und Energie gehen auf den Tisch, die Luft und die thermischen Freiheitsgrade über.
+
+Auch eine vollkommen gleichförmige, unendliche Tischplatte hätte Translationssymmetrie; dennoch könnte das fiktive Dämpfungsgesetz den Radiergummi zum Stillstand bringen. Die Translationssymmetrie allein reicht daher nicht aus, um aus einer solchen nicht-Hamiltonschen Regel die Impulserhaltung herzuleiten. Der Satz von Noether setzt ein Wirkungsprinzip und die damit verbundene reversible Dynamik voraus. In der hier verwendeten Ausdrucksweise ergibt sich das Erhaltungsgesetz aus Symmetrie und informationsbewahrender Dynamik.
+
+\begin{classroomqa}
+\audiencequestion{Ist die Informationserhaltung fundamentaler als die Kausalität?\lecturetimestamp{01:37:00}}
+\lecturerresponse{Es sind unterschiedliche Prinzipien auf vergleichbarem fundamentalen Niveau. Kausalität muss zunächst präzise formuliert werden---zum Beispiel so, dass sich Signale nicht rückwärts außerhalb der zulässigen Kausalstruktur ausbreiten können---doch keines der beiden Prinzipien kann das andere einfach ersetzen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist die in der Hamiltonschen Mechanik besprochene Erhaltung des Phasenraumvolumens die klassische Version dieser Idee?\lecturetimestamp{01:37:38}}
+\lecturerresponse{Ja. Das Liouville-Theorem besagt, dass Hamiltonscher Fluss das Phasenraumvolumen erhält. Eine Wolke möglicher Anfangszustände kann sich nicht auf ein kleineres Volumen zusammenziehen und dabei Unterscheidungen auslöschen. In der Quantenmechanik entspricht dem die Unitarität: Skalarprodukte und damit auch die Unterscheidbarkeit orthogonaler Zustände bleiben erhalten.}
+\end{classroomqa}
+
+Klassisch gilt für ein Phasenraumgebiet, das durch Hamiltonschen Fluss transportiert wird,
+\begin{equation}
+\frac{d}{dt}\,\mathrm{Vol}_{\Gamma}=0,
+\end{equation}
+in der Quantenmechanik gilt
+\begin{equation}
+\begin{aligned}
+\ket{\psi(t)}&=U(t)\ket{\psi(0)},\\
+U^\dagger U&=I,\\
+\braket{\psi(t)}{\phi(t)}
+&=\braket{\psi(0)}{\phi(0)}.
+\end{aligned}
+\end{equation}
+Dies sind präzise Formulierungen der Aussage, dass mikroskopische Unterschiede die Zeitentwicklung überdauern.
+
+\section{Wovon hängt die Entropie ab?}
+
+Für Wahrscheinlichkeiten \(p_i\) der mikroskopischen Alternativen gilt
+\begin{equation}
+S=-k_B\sum_i p_i\ln p_i
+\label{eq:l03-shannon}
+\end{equation}
+in thermodynamischen Einheiten; ohne \(k_B\) erhält man die dimensionslose Shannon-Entropie.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_07.png}
+\caption{Die abschließende Tafelgleichung \(S=-\sum_i p_i\log p_i\), wobei zwischen einer Wahrscheinlichkeitsverteilung und dem daraus berechneten einzelnen Entropiewert unterschieden wird.}
+\lectureframe{01:40:32.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Legt die Maximierung der Entropie die Wahrscheinlichkeitsverteilung fest, statt dass die Wahrscheinlichkeiten die Entropie bestimmen?\lecturetimestamp{01:38:33}}
+\lecturerresponse{Eine Wahrscheinlichkeitsverteilung legt über Gleichung~\eqref{eq:l03-shannon}einen Entropiewert fest; aus einer einzelnen Zahl lassen sich nicht alle \(p_i\) rekonstruieren. Die Maximierung der Entropie kann eine Verteilung nur dann auswählen, wenn auch die Normierung und weitere Bedingungen wie eine festgelegte mittlere Energie vorgegeben sind.}
+\end{classroomqa}
+
+Diese Unterscheidung markiert den passenden Endpunkt der Vorlesung. Aus der glatten Geometrie ist ein Horizont hervorgegangen, aus dem Horizont die Thermodynamik, und die Thermodynamik hat verborgene Freiheitsgrade sichtbar gemacht. Die Informationserhaltung verlangt nun, dass sich diese Freiheitsgrade entwickeln, ohne die Unterscheidungen auszulöschen, die in das Loch gelangt sind. Der Mechanismus ist noch nicht angegeben. Geometrie und Buchführung haben vielmehr deutlich gemacht, was jede erfolgreiche mikroskopische Theorie erklären muss.

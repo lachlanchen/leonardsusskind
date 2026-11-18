@@ -1,0 +1,569 @@
+\chapter{Vakuumenergie und de-Sitter-Horizonte}
+
+\lectureoverview{Vakuumenergie unterscheidet sich von gewöhnlicher Materie: Sie zeichnet weder ein bevorzugtes Inertialsystem aus noch verdünnt sie sich bei der Expansion des Universums. Sobald die Gravitation berücksichtigt wird, verändert dieser scheinbar harmlose Nullpunkt der Energie die Geometrie der Raumzeit. Wir leiten das Materie-dominierte Gesetz \(a(t)\propto t^{2/3}\) her, stellen ihm das Vakuum-dominierte Gesetz \(a(t)\propto e^{Ht}\) gegenüber und schreiben anschließend die de-Sitter-Raumzeit in konformen Koordinaten um. Das daraus entstehende Kausaldiagramm zeigt einen beobachterabhängigen Ereignishorizont in festem Eigenabstand.}
+
+\section{Quantenfluktuationen im Vakuum}
+
+Wir beginnen mit der Frage, die der gesamten Vorlesung zugrunde liegt. Die Quantenfeldtheorie ordnet dem leeren Raum Energie zu. Bedeutet das, dass reale Elektron--Positron-Paare fortwährend aus dem Nichts entstehen?
+
+\begin{classroomqa}
+\audiencequestion{Entstehen und annihilieren Elektron--Positron-Paare im Vakuum tatsächlich, oder ist das lediglich ein Buchhaltungstrick?\lecturetimestamp{00:00:06}}
+\lecturerresponse{Virtuelle Paare tragen zur Vakuumenergie bei, sind aber keine gewöhnlichen Teilchen, deren Entstehen aus dem leeren Raum man beobachten könnte. Sie sind Fluktuationen des quantenmechanischen Grundzustands und bestehen nur innerhalb der für einen virtuellen Prozess geltenden Grenzen.}
+\end{classroomqa}
+
+Der harmonische Oszillator ist das einfachste Modell. Klassisch kann er am Minimum seines Potentials in Ruhe verharren. Quantenmechanisch sind eine exakt bestimmte Position am Minimum und exakt verschwindender Impuls unvereinbar. Der Grundzustand stellt einen Kompromiss zwischen beiden dar und besitzt weiterhin die Nullpunktsenergie
+\begin{equation}
+E_0=\frac{1}{2}\hbar\omega.
+\label{eq:l08-zero-point}
+\end{equation}
+Dies ist die geringste Energie, die der Oszillator haben kann. Es handelt sich weder um einen angeregten Zustand noch stellt sie einen Strom beobachtbarer Teilchen dar.
+
+Ein freies Feld lässt sich in Normalmoden zerlegen, die sich jeweils wie ein Oszillator verhalten. Das elektromagnetische Feld in einem Hohlraum ist ein bekanntes Beispiel. Jede Mode liefert einen Beitrag der Form aus Gleichung~\eqref{eq:l08-zero-point}; Elektronen-, Quark- und andere Quantenfelder tragen ihre eigenen Grundzustandsfluktuationen bei. Die Summe dieser Beiträge ergibt das, was wir Vakuumenergie nennen. Die berüchtigte Diskrepanz zwischen naiven mikroskopischen Abschätzungen und der beobachteten kosmologischen Größenordnung ist real, aber nicht Gegenstand dieser Vorlesung.
+
+\begin{classroomqa}
+\audiencequestion{Wird die Diskrepanz von ungefähr \(120\) Größenordnungen noch einmal besprochen?\lecturetimestamp{00:02:59}}
+\lecturerresponse{Nicht hier. In dieser Vorlesung geht es darum, kosmische Horizonte zu verstehen: wie die kosmologischen Gleichungen beschleunigte Expansion hervorbringen und warum beschleunigte Expansion Ereignishorizonte erzeugt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Gehört die UV--IR-Beziehung aus der vorherigen Vorlesung zur heutigen Diskussion?\lecturetimestamp{00:03:59}}
+\lecturerresponse{Vielleicht kommen wir später noch einmal darauf zurück, aber sie gehört nicht zur geplanten Argumentation. Zunächst führt der Weg von der Vakuumenergie zur Kosmologie und dann zu den Horizonten.}
+\end{classroomqa}
+
+\section{Warum Vakuumenergie Lorentz-invariant ist}
+
+Die nächste Frage wirkt elementar, macht aber die entscheidende Eigenschaft der Vakuumenergie deutlich. Wenn der leere Raum eine positive Energiedichte besitzt, warum verhält er sich dann nicht wie ein optisches Medium und verändert die Lichtgeschwindigkeit?
+
+\begin{classroomqa}
+\audiencequestion{Sollte eine positive Vakuumenergiedichte einen Brechungseffekt haben, sodass sich Licht etwas langsamer ausbreitet?\lecturetimestamp{00:04:35}}
+\lecturerresponse{Gewöhnliche Materie kann das bewirken, weil sie ein bevorzugtes Ruhesystem festlegt. Vakuumenergie ist anders: Sie zeichnet kein solches System aus, und alle Inertialbeobachter messen dieselbe Vakuumenergiedichte. Daher ergibt sich für die lokale Lichtmessung weiterhin die invariante Geschwindigkeit \(c\).}
+\end{classroomqa}
+
+Wir müssen eine Symmetrie der Naturgesetze von einer Symmetrie eines bestimmten Zustands unterscheiden. Die physikalischen Gleichungen können translationsinvariant sein, obwohl Stanford nicht Berkeley und die Erde nicht der interstellare Raum ist. Eine Translation der \emph{gesamten} physikalischen Anordnung lässt die Gesetze unverändert; die tatsächliche Materieverteilung muss nicht an jedem Ort gleich aussehen. Ebenso macht Rotationsinvarianz der Gleichungen diesen Hörsaal nicht rotationssymmetrisch.
+
+Dieselbe Unterscheidung gilt für Lorentz-Transformationen. Ein Gas besitzt ein Ruhesystem. Ein Beobachter, der sich durch das Gas bewegt, sieht bewegte Moleküle und misst eine andere Energiedichte. Der Zustand des Gases ist daher nicht Lorentz-invariant, obwohl seine Bewegungsgleichungen es sind. Gewöhnliche Materie, Strahlungsbäder und Laborgeräte brechen die Symmetrie, indem sie bestimmte Bewegungszustände oder Richtungen auszeichnen.
+
+Vakuumenergie ist die besondere Materieform, die das nicht tut. Stellen wir uns einen Detektor vor, der die Vakuumenergiedichte misst. In Ruhe zeigt er einen Wert \(\rho_{\rm vac}\) an. Beschleunigen wir den Detektor und wiederholen die Messung, bleibt das Ergebnis unverändert. In relativistischer Schreibweise wird diese Eigenschaft durch einen zur Metrik proportionalen Spannungstensor ausgedrückt:
+\begin{equation}
+T_{\mu\nu}^{\rm vac}=-\rho_{\rm vac}g_{\mu\nu},
+\qquad
+p_{\rm vac}=-\rho_{\rm vac}.
+\label{eq:l08-vacuum-stress}
+\end{equation}
+\editorialnote{Die Druckbeziehung wird nicht an der Tafel hergeleitet. Sie ist die kovariante Aussage hinter den beiden definierenden Eigenschaften, um die es in der Vorlesung geht: Lorentz-Invarianz und konstante Dichte während der Expansion.}
+
+Die Einschränkung auf lokale Messungen ist wichtig. Ein Lichtstrahl, der an einem Beobachter vorbeiläuft, wird mit nahe gelegenen Uhren und Maßstäben als Lichtstrahl mit Geschwindigkeit \(c\) gemessen. Die Geschwindigkeit eines weit entfernten Lichtstrahls relativ zu uns in einer expandierenden Geometrie zu bestimmen, erfordert eine Koordinatenwahl und ein Verfahren, um entfernte Ereignisse miteinander zu vergleichen. Diese Koordinatengeschwindigkeit muss nicht \(c\) betragen, obwohl jeder lokale Beobachter \(c\) misst.
+
+\begin{classroomqa}
+\audiencequestion{Sind Vakuumenergie und kosmologische Konstante in dieser Diskussion gleichbedeutend?\lecturetimestamp{00:11:57}}
+\lecturerresponse{Ja. Es handelt sich um zwei Möglichkeiten, denselben Term in Einsteins Gleichungen einzuordnen: Auf der geometrischen Seite kann man ihn als kosmologische Konstante beschreiben, auf der Quellenseite als Lorentz-invariante Vakuumenergie mit Spannung.}
+\end{classroomqa}
+
+\section{Was sich verdünnt und was nicht}
+
+Füllen wir einen großen Bereich mit nichtrelativistischen Teilchen der Masse \(m\). Auf Skalen, die groß genug sind, um über Galaxien und Galaxienhaufen zu mitteln, nehmen wir eine homogene Verteilung an. Enthält ein mitbewegtes Volumen \(N\) Teilchen, so ist seine Materiedichte
+\begin{equation}
+\rho_m=\frac{Nm}{V}.
+\end{equation}
+Verdoppelt sich jede lineare Abmessung, wächst das Volumen um den Faktor \(2^3=8\), während \(N\) und \(m\) unverändert bleiben. Die Dichte sinkt also auf ein Achtel ihres ursprünglichen Werts. Gewöhnliche Materie verdünnt sich, weil sich dieselben Teilchen auf ein größeres physikalisches Volumen verteilen.
+
+Auch Strahlung verdünnt sich, und zwar schneller. Ihre Teilchendichte nimmt mit dem Volumen ab, während zugleich die Wellenlänge jedes Photons gedehnt und seine Energie rotverschoben wird. Später werden wir das Ergebnis \(\rho_r\propto a^{-4}\) festhalten; die strahlungsdominierte Kosmologie lösen wir heute jedoch nicht.
+
+Vakuumenergie ist die Ausnahme:
+\begin{equation}
+\rho_{\rm vac}(t)=\text{constant}.
+\label{eq:l08-rho-vac-constant}
+\end{equation}
+Sie verklumpt nicht, zeichnet weder eine Richtung noch ein Inertialsystem aus und wird bei der Expansion des Raums nicht weniger dicht. Wird ein mitbewegter Kasten größer, wächst die darin enthaltene Vakuumenergie proportional zu seinem Volumen.
+
+\editorialnote{Konstante Dichte bedeutet nicht, dass die gesamte Vakuumenergie in einem expandierenden, mitbewegten Kasten konstant bleibt. Die kovariante Energie-Impuls-Erhaltung,
+\(\dot\rho+3H(\rho+p)=0\), ist erfüllt, weil Vakuumenergie einen negativen Druck \(p_{\rm vac}=-\rho_{\rm vac}\) besitzt. Der Arbeitsbeitrag liefert genau die Änderung der gesamten Vakuumenergie im Kasten.}
+
+\section{Die Gravitation reagiert auf den Nullpunkt der Energie}
+
+In der nichtgravitativen Laborphysik ändert sich meist nichts, wenn man alle Energien um dieselbe Konstante verschiebt. Spektren hängen von Differenzen ab: etwa von der Energiedifferenz zwischen einem angeregten und einem nicht angeregten Atom oder zwischen einem Zustand mit und einem ohne Teilchen. Für den leeren Raum scheint es keinen Bezugspunkt zu geben, an dem sich seine absolute Energie messen ließe.
+
+Mit der Gravitation ändert sich die Frage. Masse ist Energie, Energie wirkt als Gravitationsquelle, und damit gravitiert auch Vakuumenergie. Eine Konstante, die bei einem atomaren Übergang unsichtbar war, kann die Raumzeit krümmen.
+
+Einsteins Gleichung trennt Geometrie und Quellen:
+\begin{equation}
+G_{\mu\nu}=8\pi G_N T_{\mu\nu},
+\label{eq:l08-einstein}
+\end{equation}
+in Einheiten mit \(c=1\). Der Einstein-Tensor \(G_{\mu\nu}\) ist aus der Metrik \(g_{\mu\nu}(x)\) und ihren Ableitungen aufgebaut. Der Spannungstensor \(T_{\mu\nu}\) umfasst Energiedichte, Impulsdichte, Druck und Spannungen von Materie und nichtgravitativen Feldern. Vakuumenergie gehört ebenso auf diese Quellenseite wie gewöhnliche Materie.\editorialnote{In der mündlichen Einleitung wird \(8\pi/3\) kurz mit der Tensorgleichung in Verbindung gebracht. Der Faktor \(1/3\) gehört zur unten angegebenen räumlich flachen Friedmann-Gleichung, nicht zu Gleichung~\eqref{eq:l08-einstein}.}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_08_figure_02.png}
+\caption{Die geometrische Seite von Einsteins Gleichung, aufgebaut aus der Raumzeitmetrik \(g_{\mu\nu}(x)\).}
+\lectureframe{00:21:58.820}
+\end{figure}
+
+\section{Die Geometrie auf einen Skalenfaktor reduziert}
+
+Wir wählen nun die einfachste homogene Geometrie mit flachen räumlichen Schnitten, die expandiert:
+\begin{equation}
+ds^2=-dt^2+a(t)^2\,d\mathbf{x}^2,
+\qquad
+d\mathbf{x}^2=dx^2+dy^2+dz^2.
+\label{eq:l08-frw-metric}
+\end{equation}
+Die Koordinatenmarken \(\mathbf{x}\) sind auf ein unendlich ausgedehntes Gummituch gemalt. Sie müssen sich nicht bewegen, wohl aber ihre physikalischen Abstände. Zwei mitbewegte Punkte mit Abstand \(\Delta\mathbf{x}\) haben bei festem \(t\) den Eigenabstand
+\begin{equation}
+D(t)=a(t)\lvert\Delta\mathbf{x}\rvert.
+\label{eq:l08-proper-distance}
+\end{equation}
+Die gesamte Zeitabhängigkeit dieser hochsymmetrischen Geometrie steckt somit in einer einzigen Funktion, dem Skalenfaktor \(a(t)\). Bei konstantem \(a\) ergibt sich nach einer räumlichen Reskalierung die flache Minkowski-Raumzeit. Ein zeitabhängiges \(a\) kann dagegen dazu führen, dass die gesamte Raumzeit gekrümmt ist, obwohl jeder räumliche Schnitt flach bleibt.
+
+\begin{classroomqa}
+\audiencequestion{Sind bei den Koordinatenmarken \(x=7\) und \(x=13\) ihre Koordinatenabstände \(4\)?\lecturetimestamp{00:27:40}}
+\lecturerresponse{Nein. Sie betragen \(13-7=6\), ihr physikalischer Abstand ist also \(6a(t)\). Die Korrektur ist nützlich: \(x\) bezeichnet die mitbewegte Position, während die Multiplikation mit \(a(t)\) den physikalischen Abstand ergibt.}
+\end{classroomqa}
+
+Für diese Metrik und eine räumlich homogene Energiedichte ergibt eine Komponente von Einsteins Gleichung die räumlich flache Friedmann-Gleichung:
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N}{3}\rho(t).
+\label{eq:l08-friedmann}
+\end{equation}
+Der Quotient
+\begin{equation}
+H(t)\equiv\frac{\dot a(t)}{a(t)}
+\label{eq:l08-hubble-definition}
+\end{equation}
+ist der Hubble-Parameter. An dieser Stelle ist er lediglich definiert und kann sich mit der Zeit ändern.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_03.png}
+\caption{Die flache expandierende Metrik und Friedmann-Gleichung, nachdem der fehlende Faktor \(1/a^2\) an der Tafel ergänzt wurde.}
+\lectureframe{00:30:30.000}
+\end{figure}
+
+\paragraph{Das Bild der Energiebilanz.}
+Für dieses Energiebilanzbild schreiben wir Gleichung~\eqref{eq:l08-friedmann} schematisch als
+\begin{equation}
+-\frac{3}{8\pi G_N}H^2+\rho=0.
+\label{eq:l08-energy-heuristic}
+\end{equation}
+Die Materieenergie ist positiv, während der durch den expandierenden Skalenfaktor dargestellte gravitative Freiheitsgrad einen negativen kinetischen Term besitzt. In diesem reduzierten Problem ist „negative Gravitationsenergie plus positive Materieenergie gleich null“ eine nützliche Merkhilfe.
+
+\editorialnote{Gleichung~\eqref{eq:l08-energy-heuristic} ist die Hamilton-Zwangsbedingung in einem hochsymmetrischen Minisuperspace-Modell und kein koordinatenunabhängiger Lehrsatz, wonach jedes beliebige Universum eine global erhaltene Gesamtenergie gleich null besitzt. Die Vorlesung verwendet sie als heuristische Deutung der Friedmann-Zwangsbedingung.}
+
+\section{Materie-dominierte Expansion}
+
+Betrachten wir wieder einen mitbewegten mathematischen Kasten mit Koordinatenkantenlänge \(\Delta x=1\). Seine physikalische Kantenlänge beträgt \(a(t)\), sein physikalisches Volumen also \(a(t)^3\). Enthält er \(N\) nichtrelativistische Teilchen der Masse \(m\), dann gilt
+\begin{equation}
+\rho_m(t)=\frac{Nm}{a(t)^3}
+=\frac{\rho_0}{a(t)^3}.
+\label{eq:l08-matter-density}
+\end{equation}
+Die Teilchen selbst expandieren nicht; ihr mittlerer Abstand tut es.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_08_figure_04.png}
+\caption{Die Metrik und die Friedmann-Gleichung, während das Argument mit dem mitbewegten Kasten entwickelt wird.}
+\lectureframe{00:36:07.940}
+\end{figure}
+
+Einsetzen in Gleichung~\eqref{eq:l08-friedmann} ergibt
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N\rho_0}{3a^3}.
+\end{equation}
+Wir setzen \(K=8\pi G_N\rho_0/3\) und wählen den expandierenden Zweig:
+\begin{align}
+\dot a^2&=\frac{K}{a},\\
+\dot a&=\sqrt{K}\,a^{-1/2},\\
+a^{1/2}\,da&=\sqrt{K}\,dt.
+\label{eq:l08-matter-separated}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{Wie löst man die separierte Gleichung?\lecturetimestamp{00:38:15}}
+\lecturerresponse{Man integriert beide Seiten. Das Integral von \(a^{1/2}\,da\) ist \(\frac{2}{3}a^{3/2}\), nicht \(\frac{3}{2}a^{3/2}\); \(\frac{3}{2}\) ist die neue Potenz, während \(\frac{2}{3}\) der Vorfaktor ist.}
+\end{classroomqa}
+
+Somit gilt:
+\begin{equation}
+\frac{2}{3}a^{3/2}
+=\sqrt{K}\,(t-t_B),
+\end{equation}
+wobei \(t_B\) eine Integrationskonstante ist, die den gewählten Zeitnullpunkt festlegt. Bis auf Normierung und Zeitverschiebung gilt
+\begin{equation}
+a(t)\propto (t-t_B)^{2/3}.
+\label{eq:l08-matter-solution}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_05.png}
+\caption{Einsetzen der Materiedichte und Variablentrennung führen zu \(a^{1/2}da\propto dt\).}
+\lectureframe{00:38:30.000}
+\end{figure}
+
+Die Kurve \(t^{2/3}\) wächst langsamer als eine Gerade. Ihre Steigung nimmt ab, die materiedominierte Expansion ist also verzögert. In der newtonschen Sprache der Vorlesung begannen die Teilchen, sich voneinander zu entfernen; ihre gegenseitige Gravitationsanziehung verringert fortwährend die Geschwindigkeit, mit der sich ihr Abstand vergrößert.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_06.png}
+\caption{Der Vergleich an der Tafel: lineare Expansion gegenüber dem konkav nach unten verlaufenden Materiegesetz \(a(t)\propto t^{2/3}\).}
+\lectureframe{00:40:00.000}
+\end{figure}
+
+Zur Orientierung: Für ein Strahlungsbad gilt
+\begin{equation}
+\rho_r\propto a^{-4},
+\end{equation}
+statt \(a^{-3}\): Die Verdünnung durch das Volumen trägt drei Potenzen bei, die kosmologische Rotverschiebung eine weitere. Auch der zugehörige Skalenfaktor lässt sich bestimmen, doch die Vorlesung lässt diese Rechnung bewusst aus.
+
+\section{Vakuum-dominierte Expansion}
+
+Betrachten wir nun in der Friedmann-Gleichung auf der rechten Seite ausschließlich Vakuumenergie. Da \(\rho_{\rm vac}\) konstant ist, gilt
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2
+=\frac{8\pi G_N}{3}\rho_{\rm vac}
+\equiv H^2.
+\label{eq:l08-de-sitter-friedmann}
+\end{equation}
+Wir müssen zwei Verwendungen von \(H\) auseinanderhalten. Gleichung~\eqref{eq:l08-hubble-definition} definiert die möglicherweise zeitabhängige Größe \(\dot a/a\). Gleichung~\eqref{eq:l08-de-sitter-friedmann} besagt, dass sie in einem Universum mit ausschließlich Vakuumenergie konstant ist und den Wert
+\begin{equation}
+H=\sqrt{\frac{8\pi G_N\rho_{\rm vac}}{3}}.
+\end{equation}
+besitzt. Wir wählen den expandierenden Zweig und erhalten
+\begin{equation}
+\dot a=Ha,
+\end{equation}
+und damit
+\begin{equation}
+a(t)=C e^{Ht}.
+\label{eq:l08-exponential-solution}
+\end{equation}
+Die Integrationskonstante \(C\) legt die willkürliche Normierung der mitbewegten Koordinaten fest. Ein Wachstum proportional zum momentanen Wert von \(a\) ist exponentielles Wachstum.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{Die vakuumdominierte Gleichung \((\dot a/a)^2=H^2\), ihre Form erster Ordnung \(\dot a=Ha\) und die exponentielle Lösung.}
+\lectureframe{00:47:45.000}
+\end{figure}
+
+Das Hubble-Gesetz für mitbewegte Objekte lautet
+\begin{equation}
+v_{\rm rec}=HD.
+\label{eq:l08-hubble-law}
+\end{equation}
+Im reinen de-Sitter-Fall ist der Eigenabstand, bei dem die Rezessionsgeschwindigkeit \(c\) beträgt, konstant:
+\begin{equation}
+D_H=\frac{c}{H},
+\label{eq:l08-hubble-radius}
+\end{equation}
+oder \(D_H=H^{-1}\) in den an der Tafel verwendeten Einheiten \(c=1\). Diese feste Skala wird geometrisch als Radius des de-Sitter-Ereignishorizonts wiederkehren.\editorialnote{Ein Hubble-Radius ist in einer beliebigen zeitabhängigen Kosmologie nicht automatisch ein Ereignishorizont. Die Identifikation gilt hier, weil \(H\) im exakt de-Sitter-Raum konstant ist.}
+
+Zur Veranschaulichung schlägt die Vorlesung ein Gedankenexperiment mit einem Vakuumenergiedetektor vor. Man platziert zwei sehr leichte Testkörper weit entfernt von anderen Quellen, anfangs in Ruhe relativ zum mitbewegten Fluss, und macht ihre gegenseitige Anziehung vernachlässigbar. Ihr Abstand folgt dem exponentiellen Expansionsgesetz. Der Effekt ist für ein irdisches Gerät viel zu klein, doch bei kosmischen Entfernungen und langen Rückblickzeiten lässt sich dieselbe Physik beobachten.
+
+\section{Vom Materie- zum Vakuumdominierten Universum}
+
+Das in der Vorlesung betrachtete realistische kosmologische Modell enthält beide Terme:
+\begin{equation}
+H(t)^2
+=\frac{8\pi G_N}{3}
+\left(\frac{\rho_0}{a(t)^3}+\rho_{\rm vac}\right).
+\label{eq:l08-mixed-friedmann}
+\end{equation}
+Bei kleinem \(a\) dominiert der Materieterm, weil \(a^{-3}\) groß ist; die Lösung ähnelt dann \(t^{2/3}\). Während das Universum wächst, verdünnt sich die Materie, während die Vakuumenergie konstant bleibt. Schließlich setzt sich der konstante Term durch, und der Skalenfaktor krümmt sich nach oben in Richtung \(e^{Ht}\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.87\textwidth]{lecture_08_figure_08.png}
+\caption{Der in der Vorlesung gezeichnete qualitative Übergang: anfänglich materiedominierte verzögerte Expansion, gefolgt von spätzeitlichem vakuumdominiertem exponentiellem Wachstum.}
+\lectureframe{00:53:30.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Die exponentielle Lösung enthält eine Integrationskonstante. Woher wissen wir, dass sie nicht extrem klein ist?\lecturetimestamp{00:52:41}}
+\lecturerresponse{Wir messen sie. Je weiter wir ins Universum blicken, desto weiter zurück in die Vergangenheit blicken wir. Beobachtungen in unterschiedlichen Entfernungen rekonstruieren daher den früheren Verlauf der Expansionskurve und nicht bloß ihren heutigen Wert.}
+\end{classroomqa}
+
+Laut Vorlesung stimmten die damals verfügbaren Beobachtungen der späten kosmischen Entwicklung auf ungefähr fünf Prozent mit einem exponentiellen Zweig überein. Die Evidenz wird als überzeugend beschrieben, wenn auch nicht als so präzise wie eine Messung von Eigenschaften des Elektrons. Dies ist als historische Einschätzung der Vorlesung zu verstehen, nicht als Aussage über die heutige Messgenauigkeit.
+
+\begin{classroomqa}
+\audiencequestion{Verhindert die nach oben gekrümmte Expansionskurve irgendwann, dass wir Beobachtungen bis zum Urknall oder zur kosmischen Mikrowellenhintergrundstrahlung zurückverfolgen können?\lecturetimestamp{00:55:05}}
+\lecturerresponse{Die Frage, ob sich der Graph extrapolieren lässt, wird hier nicht weiterverfolgt. Entscheidend ist die invariante Frage, ob ein Ereignishorizont existiert; nun wenden wir uns dieser Kausalfrage zu.}
+\end{classroomqa}
+
+\section{Gebundene Systeme und die ferne Zukunft}
+
+Setzt sich die exponentielle Expansion fort, wird jede Komponente, die sich verdünnt, gegenüber \(\rho_{\rm vac}\) vernachlässigbar. Das bedeutet nicht, dass Atome, Sonnensysteme oder Galaxien auseinandergezogen werden. Systeme, die stark genug gebunden sind, folgen dem Hubble-Fluss nicht.
+
+\begin{classroomqa}
+\audiencequestion{Expandieren Galaxien, die heute nicht expandieren, irgendwann doch, wenn Vakuumenergie dominiert?\lecturetimestamp{00:57:44}}
+\lecturerresponse{Gebundene Systeme bleiben gebunden. Die Milchstraße und Andromeda gehören zu der nahen Struktur, die zusammenbleiben wird. Weit genug entfernte Galaxien hingegen, die sich bereits mit der Expansion bewegen, entfernen sich weiter und überschreiten schließlich unseren Horizont.}
+\end{classroomqa}
+
+Entscheidend ist der Unterschied zwischen \emph{angezogen} und \emph{gebunden}. Eine Rakete, die mit mehr als der Fluchtgeschwindigkeit startet, unterliegt weiterhin der Anziehungskraft der Erde, kehrt aber nicht zurück. Ebenso kann die gewöhnliche Gravitationsanziehung die stärkste lokale Kraft zwischen zwei Galaxien sein, ohne dass ihre Relativbahn gebunden ist.
+
+\begin{classroomqa}
+\audiencequestion{Unsere Galaxie ist gravitativ an eine Gruppe gebunden. Überwindet die beschleunigte Expansion diese Anziehung irgendwann?\lecturetimestamp{00:59:17}}
+\lecturerresponse{Nur der tatsächlich gebundene Teil der lokalen Struktur bleibt zusammen. Die Bezeichnung „Galaxienhaufen“ genügt dafür nicht; gebunden bedeutet, dass die Relativbewegung unterhalb der Fluchtgeschwindigkeit liegt. Weiter entfernte Galaxien können angezogen werden und sich dennoch mit mehr als der Fluchtgeschwindigkeit entfernen.}
+\end{classroomqa}
+
+Zur Veranschaulichung stellt die Vorlesung die relative radiale Beschleunigung schematisch als Summe eines anziehenden Terms mit invers quadratischer Abhängigkeit und eines mit dem Abstand linear wachsenden Vakuumterms dar:
+\begin{equation}
+\ddot r\sim-\frac{G_NM}{r^2}+H^2r.
+\label{eq:l08-newtonian-vacuum}
+\end{equation}
+Im idealisierten de-Sitter-Grenzfall sind die Koeffizienten zeitunabhängig. Der zweite Term wächst nur deshalb, weil \(r\) zunimmt; er entsteht nicht dadurch, dass \(G_N\) allmählich schwächer wird.
+
+\editorialnote{Gleichung~\eqref{eq:l08-newtonian-vacuum} ist eine newtonsche Heuristik für die Relativbeschleunigung, kein zusätzliches fundamentales Kraftgesetz der allgemeinen Relativitätstheorie. Im exakten de-Sitter-Raum ist die Relativbeschleunigung benachbarter frei fallender Weltlinien proportional zu \(H^2r\).}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{Vergleich an der Tafel: Anziehung mit invers quadratischer Abhängigkeit gegenüber der effektiven Vakuumabstoßung, die linear mit dem Abstand zunimmt.}
+\lectureframe{01:04:10.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Nimmt der nach außen gerichtete Effekt selbst mit der Zeit zu?\lecturetimestamp{01:01:18}}
+\lecturerresponse{Bei festem Abstand nicht. Sein Koeffizient ist konstant. Frei auseinanderdriftende Objekte entfernen sich weiter voneinander, und dann ist der zu \(r\) proportionale Term größer, weil ihr Abstand größer ist.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Lässt sich der Nettoeffekt als allmähliche Abnahme der Newtonschen Gravitationskonstante beschreiben?\lecturetimestamp{01:02:30}}
+\lecturerresponse{Nein. \(G_N\) bleibt konstant. Bei einem bestimmten Abstand sind beide Koeffizienten unverändert; nur das relative Gewicht der Anziehung mit Abhängigkeit \(1/r^2\) und des proportional zu \(r\) wachsenden Terms ändert sich mit dem Abstand.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Waren dieselben Galaxien im frühen Universum gravitativ gebunden, bevor Vakuumenergie wichtig wurde?\lecturetimestamp{01:05:03}}
+\lecturerresponse{Dass die gewöhnliche Anziehung dominiert, bedeutet für sich genommen nicht, dass ein System gebunden ist. Viele Galaxien entfernten sich bereits mit etwa der Fluchtgeschwindigkeit oder schneller voneinander. Vakuumenergie entscheidet später, ob sich die großräumige Expansion bis zum Wiederkollaps verlangsamt oder beschleunigt fortsetzt. Die stärkste Kraft und eine gebundene Bahn sind jedoch zwei verschiedene Aussagen.}
+\end{classroomqa}
+
+Ein Beobachter in ferner Zukunft könnte also in einer verschmolzenen lokalen Struktur leben, während jede ungebundene Galaxie unbeobachtbar geworden ist. Ohne historische Aufzeichnungen könnte dieser Beobachter vernünftigerweise auf ein nahezu leeres Universum schließen. Diese kausale Vereinsamung und nicht die Zerstörung lokaler Objekte führt physikalisch zum Thema Horizont hin.
+
+\section{Was ein Ereignishorizont bedeutet}
+
+Nach der Pause setzen wir
+\begin{equation}
+a(t)=e^{Ht}
+\end{equation}
+und schreiben die Metrik als
+\begin{equation}
+ds^2=-dt^2+e^{2Ht}d\mathbf{x}^2.
+\label{eq:l08-de-sitter-metric}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Wie heißt die Raumzeit, die durch diese Metrik beschrieben wird?\lecturetimestamp{01:08:13}}
+\lecturerresponse{Es ist die de-Sitter-Raumzeit, kurz auch de-Sitter-Raum genannt. Ihre Horizonte sind wichtig, weil sich ein vakuumdominiertes Universum zu späten Zeiten dieser Geometrie annähert.}
+\end{classroomqa}
+
+Bevor wir ihre Kausalstruktur zeichnen, rufen wir uns die Funktion eines Penrose-Diagramms in Erinnerung. Unendliche Intervalle werden in einem endlichen Bild dargestellt, während lichtartige Strahlen weiterhin unter \(45^\circ\) verlaufen. In der flachen Raumzeit enden massive Objekte an der zukünftigen zeitartigen Unendlichkeit, lichtartige Strahlen an der lichtartigen Unendlichkeit. Ein Inertialbeobachter, der beliebig lange warten kann, hat keinen Ereignishorizont, der einen dauerhaften Bereich der Raumzeit ausschließt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_08_figure_10.png}
+\caption{Penrose-Diagramm der flachen Raumzeit: Es unterscheidet zeitartige und lichtartige Endpunkte, bevor ein Horizont eingeführt wird.}
+\lectureframe{01:10:35.000}
+\end{figure}
+
+Ein Diagramm eines Schwarzen Lochs dient als Gegenbeispiel. Ein äußerer Beobachter kann Signale nur von Ereignissen empfangen, die in der kausalen Vergangenheit seiner zukünftigen Weltlinie liegen. Selbst wenn die Beobachtungszeit gegen unendlich geht, bleibt der innere Bereich ausgeschlossen. Die Grenze zwischen Ereignissen, die mit diesem Beobachter kommunizieren können, und solchen, die das niemals können, ist der Ereignishorizont.
+
+\begin{definition}
+Der zukünftige Ereignishorizont eines Beobachters ist die Grenze der Menge von Ereignissen, von denen aus ein zukünftiges kausales Signal die Weltlinie dieses Beobachters jemals erreichen kann.
+\label{def:l08-event-horizon}
+\end{definition}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_08_figure_11.png}
+\caption{Zum Vergleich das Schwarze Loch: Rückwärts gerichtete Lichtkegel beliebig später Beobachtungen außerhalb des Horizonts umfassen niemals den Bereich jenseits des Ereignishorizonts.}
+\lectureframe{01:13:50.000}
+\end{figure}
+
+Ein Ereignishorizont ist also eine globale kausale Grenze, nicht bloß die Entfernung, in der ein Objekt heute zufällig lichtschwach erscheint. Um ihn zu bestimmen, muss man wissen, welche Signale selbst nach beliebig langem Warten noch eintreffen können.
+
+\section{Die unendliche Zukunft komprimieren}
+
+Die räumlichen Koordinaten in Gleichung~\eqref{eq:l08-de-sitter-metric} durchlaufen bereits eine unendliche flache Fläche. Wir lassen sie unverändert und komprimieren nur die Zeit. Dazu führen wir die konforme Zeit \(T\) ein und verlangen
+\begin{equation}
+dt^2=e^{2Ht}dT^2.
+\label{eq:l08-conformal-definition}
+\end{equation}
+Die Quadratwurzel mit positiver Richtung in der Zukunft nehmen und umstellen ergibt
+\begin{equation}
+dT=e^{-Ht}dt.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Was ist das Integral, einschließlich seines Vorzeichens?\lecturetimestamp{01:17:25}}
+\lecturerresponse{Es ist \(-H^{-1}e^{-Ht}\). Eine additive Konstante verschiebt lediglich den Nullpunkt von \(T\). Wir wählen sie daher so, dass die unendliche Zukunft bei \(T=0\) liegt.}
+\end{classroomqa}
+
+Somit gilt
+\begin{equation}
+T=-\frac{1}{H}e^{-Ht},
+\qquad -\infty<T<0.
+\label{eq:l08-conformal-time}
+\end{equation}
+Für \(t\to-\infty\) gilt \(T\to-\infty\). Wenn die Eigenzeit \(t\to+\infty\), gilt \(T\to0^{-}\). Die unendliche Zukunft liegt nun auf der endlichen horizontalen Linie \(T=0\); kein Beobachter erreicht sie in endlicher Eigenzeit.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_12.png}
+\caption{Das Integral für die konforme Zeit und die Abbildung der unendlichen Zukunft \(t\to+\infty\) auf \(T=0^{-}\).}
+\lectureframe{01:19:10.000}
+\end{figure}
+
+Aus Gleichung~\eqref{eq:l08-conformal-time} folgt
+\begin{equation}
+HT=-e^{-Ht},
+\qquad
+e^{2Ht}=\frac{1}{H^2T^2}.
+\label{eq:l08-conformal-factor}
+\end{equation}
+Mit \(dt=e^{Ht}dT\) in Gleichung~\eqref{eq:l08-de-sitter-metric} ergibt sich
+\begin{equation}
+ds^2=\frac{1}{H^2T^2}
+\left(-dT^2+d\mathbf{x}^2\right).
+\label{eq:l08-conformal-metric}
+\end{equation}
+Der Klammerausdruck ist die Minkowski-Metrik. Die gesamte de-Sitter-Geometrie steckt nun in einem gemeinsamen konformen Faktor, der für \(T\to0^{-}\) divergiert.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.87\textwidth]{lecture_08_figure_13.png}
+\caption{Die Umformung von \(e^{2Ht}\) zu \(1/(H^2T^2)\) bereitet die konforme Form der Metrik vor.}
+\lectureframe{01:22:50.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Welche Bedingung bestimmt den Verlauf eines Lichtstrahls in dieser Metrik?\lecturetimestamp{01:23:49}}
+\lecturerresponse{Ein Lichtstrahl folgt einer Nullkurve, \(ds^2=0\). Der gemeinsame konforme Faktor kürzt sich daher heraus; entlang einer gewählten Raumrichtung bleibt \(dT=\pm dx\).}
+\end{classroomqa}
+
+Lichtstrahlen sind im \((T,x)\)-Diagramm gerade Linien unter \(45^\circ\):
+\begin{equation}
+\frac{dx}{dT}=\pm1.
+\label{eq:l08-null-lines}
+\end{equation}
+Das Koordinatenbild ist in der Nähe von \(T=0\) stark komprimiert, bewahrt aber genau das, worauf es ankommt: welche Ereignisse miteinander kommunizieren können.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_08_figure_14.png}
+\caption{Die konforme Metrik: Aus der Nullbedingung \(ds^2=0\) erhält man wieder Lichtstrahlen unter \(45^\circ\).}
+\lectureframe{01:24:05.000}
+\end{figure}
+
+\section{Alice und Bob im de-Sitter-Raum}
+
+Wir platzieren Alice an der festen komovierenden Position \(x=0\). Ihre Weltlinie verläuft senkrecht nach oben und endet im Diagramm bei \(T=0\), obwohl ihre Armbanduhr unendlich viel Eigenzeit benötigt, um diesen Punkt zu erreichen. Zeichnen wir von diesem Endpunkt aus die in die Vergangenheit gerichteten Nullstrahlen ein. Sie begrenzen den größten Bereich, aus dem Alice jemals ein Signal empfangen kann. Ereignisse außerhalb dieses Bereichs bleiben für sie für immer unzugänglich.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_15.png}
+\caption{Alices asymptotischer vergangenheitsgerichteter Lichtkegel. Seine Nullgrenze ist Alices beobachterabhängiger de-Sitter-Ereignishorizont.}
+\lectureframe{01:28:50.000}
+\end{figure}
+
+Dieser Horizont ist privat. Ein anderer Beobachter hat einen anderen zukünftigen Endpunkt und damit einen anderen asymptotischen vergangenheitsgerichteten Lichtkegel. Angenommen, Bob befindet sich zunächst innerhalb von Alices Kausalbereich und die beiden tauschen Nachrichten aus. Folgt Bob später dem Hubble-Fluss über Alices Horizont hinweg, können Signale, die er nach diesem Übertritt aussendet, Alice nicht mehr erreichen, egal, wie lange sie wartet. Bob hat seinen eigenen Horizont und verliert schließlich entsprechend die Möglichkeit, späte Signale von Alice zu empfangen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_16.png}
+\caption{Alice und Bob mit ihren unterschiedlichen Kausalgrenzen. Ein komovierender Bob kann Alices kausale Vergangenheit verlassen, obwohl die beiden zuvor Signale ausgetauscht haben.}
+\lectureframe{01:30:20.000}
+\end{figure}
+
+Wenn Alice und Bob Händchen halten oder, realistischer, in einem festen Eigenabstand aneinander gebunden bleiben, schrumpft ihr Abstand in komovierenden Koordinaten wie \(a^{-1}\). Ihre Kurven nähern sich im konformen Diagramm einander an, doch das bedeutet nicht, dass ihr Eigenabstand verschwindet. Der wachsende konforme Faktor gleicht den schrumpfenden Koordinatenabstand aus, sodass die Kommunikation unbegrenzt möglich bleibt.
+
+\begin{classroomqa}
+\audiencequestion{Kann Bob Alice zur selben Zeit sehen, nachdem ihre Horizonte sie voneinander getrennt haben?\lecturetimestamp{01:31:43}}
+\lecturerresponse{Kein Beobachter sieht jemals ein entferntes Ereignis zur selben Zeit in diesem wörtlichen Sinn; beobachtet wird stets ein Ereignis im vergangenen Lichtkegel. Präziser gesagt: Nach dem Übertritt über den Horizont kann kein neu ausgesandtes Signal von der jeweils anderen Weltlinie mehr eintreffen.}
+\end{classroomqa}
+
+In der kosmologischen Anwendung auf die ferne Zukunft steht Alice für unseren gravitativ gebundenen lokalen Rest und Bob für jede ungebundene ferne Galaxie. Die Galaxien verschwinden nicht plötzlich zu einem endlichen Zeitpunkt auf Alices Uhr. Ihre späteren Signale verteilen sich über immer längere Zeiträume und werden zu immer längeren Wellenlängen verschoben, bis sie physikalisch nicht mehr nachweisbar sind.
+
+\begin{classroomqa}
+\audiencequestion{Besagt die Theorie wirklich, dass in ferner Zukunft keine weit entfernten Galaxien mehr sichtbar sein werden?\lecturetimestamp{01:33:38}}
+\lecturerresponse{Ungebundene Galaxien überschreiten den Ereignishorizont des lokalen Beobachters. Ihre letzten sichtbaren Signale treffen mit immer größerer Verzögerung und stärkerer Rotverschiebung ein, sodass für praktische Zwecke nur die lokal gebundene Struktur beobachtbar bleibt.}
+\end{classroomqa}
+
+\section{Rotverschiebung am Horizont}
+
+Man kann weiterhin ein altes Lichtsignal einzeichnen, das Bob zu einer sehr späten konformen Zeit bei Alice erreicht; dadurch könnte es so wirken, als könne sie ihn weiterhin sehen. Entscheidend für den physikalischen Gehalt sind die zeitlichen Abstände und die Energie dieser Signale. Gleiche Zeitintervalle auf Bobs Uhr kommen mit immer größeren Abständen nach Alices Eigenzeit an. Frequenzen und Photonenergien nehmen ab:
+\begin{equation}
+\nu_{\rm received}\longrightarrow0,
+\qquad
+E_{\rm received}=h\nu_{\rm received}\longrightarrow0.
+\end{equation}
+Bobs Bild wird langsamer, röter und schwächer. Das Grenzsignal trägt verschwindend wenig nutzbare Information.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.89\textwidth]{lecture_08_figure_17.png}
+\caption{Der spätere Tafelstand vergleicht die Rotverschiebung am de-Sitter-Horizont mit dem vertrauten Blick von außen auf den Horizont eines Schwarzen Lochs.}
+\lectureframe{01:36:20.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist das wie bei einem Schwarzen Loch, bei dem ein äußerer Beobachter niemals sieht, wie ein einfallendes Objekt den Horizont überquert?\lecturetimestamp{01:36:09}}
+\lecturerresponse{Ja. In beiden Fällen empfängt der Beobachter zunehmend rotverschobene Signale und sieht nie unmittelbar, dass der Übertritt abgeschlossen ist. Das Kausaldiagramm zeigt, welche späteren Aussendungen niemals eintreffen können; die Rotverschiebung erklärt, wie die letzten beobachtbaren Informationen verblassen.}
+\end{classroomqa}
+
+Die Analogie wirft die Frage nach der Temperatur auf.
+
+\begin{classroomqa}
+\audiencequestion{Wie könnte Alice die Temperatur knapp oberhalb eines Horizonts messen?\lecturetimestamp{01:39:34}}
+\lecturerresponse{Praktisch könnte sie ein Thermometer an einem Seil hinablassen, es daran hindern, den Horizont zu überschreiten, und es wieder heraufholen. Ein Beobachter im de-Sitter-Raum könnte sich ein entsprechendes Experiment nahe dem kosmologischen Horizont vorstellen. In der Quantentheorie sind Horizonte heiß, doch diese Vorlesung behandelt nur die klassische Geometrie und verschiebt diese Berechnung auf später.}
+\end{classroomqa}
+
+Hier wird keine Formel für die Temperatur des de-Sitter-Raums hergeleitet. Hawking-Strahlung wird lediglich als Ausblick auf die Quantenkorrektur dieses klassischen Bildes erwähnt.
+
+\section{Der feste Horizontabstand}
+
+Das konforme Diagramm lässt sich in die ursprüngliche Zeitkoordinate zurückübersetzen. Für zwei komovierende Punkte mit festem Koordinatenabstand gilt
+\begin{equation}
+D(t)=e^{Ht}\lvert\Delta x\rvert,
+\end{equation}
+sodass ihr Eigenabstand exponentiell wächst.
+
+\begin{classroomqa}
+\audiencequestion{Wie sieht dieselbe Bewegung in der ursprünglichen, nicht transformierten Zeitkoordinate aus?\lecturetimestamp{01:41:14}}
+\lecturerresponse{Bei festen komovierenden Koordinaten wächst die gesamte räumliche Metrik mit \(e^{2Ht}\); daher wachsen die Eigenabstände wie \(e^{Ht}\). Macht man die Koordinatentransformation rückgängig, wird diese Expansion explizit sichtbar.}
+\end{classroomqa}
+
+Beim Horizont ist es anders, denn sein komovierender Koordinatenabstand von Alice ist nicht konstant. Aus der \(45^\circ\)-Nullgeraden, die bei \(T=0\) endet, ergibt sich der Horizontabstand auf einer Hyperfläche konstanter \(T<0\) zu
+\begin{equation}
+\Delta x_H=-T=\frac{1}{H}e^{-Ht}.
+\label{eq:l08-coordinate-horizon}
+\end{equation}
+Multipliziert man mit dem Skalenfaktor, erhält man
+\begin{equation}
+D_H(t)=a(t)\Delta x_H
+=e^{Ht}\frac{e^{-Ht}}{H}
+=\frac{1}{H}.
+\label{eq:l08-fixed-horizon}
+\end{equation}
+Mit wiederhergestellten Einheiten gilt \(D_H=c/H\). Der Koordinatenabstand schrumpft, der Maßstab der Metrik wächst, und ihr Produkt bleibt konstant.
+
+\begin{classroomqa}
+\audiencequestion{Wächst, schrumpft oder bleibt der Abstand zwischen Alice und dem Horizont gleich, wenn die Zeit vergeht?\lecturetimestamp{01:42:42}}
+\lecturerresponse{Er bleibt gleich. Der Koordinatenabstand schrumpft, während der konforme Faktor wächst, sodass der Eigenradius des Horizonts bei \(H^{-1}\) in Einheiten mit \(c=1\) konstant bleibt.}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_18.png}
+\caption{Der abschließende Tafelstand: Aufeinanderfolgende horizontale Schnitte haben einen schrumpfenden Koordinatenabstand zum Horizont, aber denselben Eigenabstand.}
+\lectureframe{01:43:20.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Sieht Alice weiterhin die Vergangenheit auf den Horizont projiziert, weil die alten Bilder nie ganz verschwinden?\lecturetimestamp{01:43:45}}
+\lecturerresponse{Klassisch bleiben die Bilder nur in dem Grenzsinn bestehen, dass sie aufgrund der unbegrenzt zunehmenden Rotverschiebung immer schwerer nachzuweisen sind. Diese Aussage lässt die mit dem Horizont verbundene Hawking-Strahlung außer Acht, die die quantenmechanische Beschreibung verändern wird.}
+\end{classroomqa}
+
+Damit endet die Vorlesung an einer präzisen Grenze. Vakuumenergie hat eine exponentielle Expansion bewirkt; die exponentielle Expansion hat einen festen, beobachterabhängigen Ereignishorizont hervorgebracht; und Signale nahe diesem Horizont sind auf verschwindende Frequenzen abgesunken. Die Temperatur des Horizonts und die Hawking-Strahlung gehören zum nächsten Thema. Unter der Annahme, wie Susskind sagt, dass wir nicht die Horizonte des jeweils anderen überschreiten, sehen wir uns in der nächsten Vorlesung wieder.

@@ -1,0 +1,59 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 279,
+  "outline_entries": 135,
+  "target_characters": 256553,
+  "image_placements": 82,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Themen der Stringtheorie",
+  "pdf_sha256": "ac461e408afe9901fed5c5c17dc21052c2a3b0d5af4e2d37a9ee12fc95f51870",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 34,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "411dc770183b56fbeb4b865df159b25b4a8b9463fab0048dce4dbad5d8a455fe",
+    "chapters/lecture_01/content.tex": "5054c3d749b62ffda8dfcbc77994aa2f498b558a75786b6131d7945603d7c086",
+    "chapters/lecture_02/content.tex": "94b9ab4d69ee3c5a69dda4f01a01127086ffc70cf910fe73e96974f3fa73ce45",
+    "chapters/lecture_03/content.tex": "800cdcf9e76e0a3fbf42f9ce823c57150722ee478a3ecf6f04a4c6fae7eb60f2",
+    "chapters/lecture_04/content.tex": "6ae36047c85c5328685f06032a5ec38a935d4913710d6d54a42a17c7296523e9",
+    "chapters/lecture_05/content.tex": "409d59b18f020cefbededcf000c83198ac6aac97f408d3f0278a58ed1bcfa1af",
+    "chapters/lecture_06/content.tex": "7e336a32584f593531227c7137044bd1392dd3c64420a1a0e6b93e05204c64b3",
+    "chapters/lecture_07/content.tex": "ea27c3cdcc66afaeeb3e969b4b6120747e3bec8635cc4d7a2a37afd88c29d8ea",
+    "chapters/lecture_08/content.tex": "d4425593d7d38bf1fd9b892db1e36c07a315aabb63ee638bba6ad16ff02be175",
+    "chapters/lecture_09/content.tex": "0b17791bf72e7444f68013c8d852f15320f7f59546eac5c77a28152cf9b954a5"
+  },
+  "source_files": {
+    "course.tex": "5813fa3876488c0990af4bf15a855abc4eb833dd1e1b4a173b02a8742570c935",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "567923e017f5afbf8d6b82d2b0341bbeabbe06ae28165837759d891dfd670e56",
+    "chapters/lecture_02/content.tex": "df3935948d623649fa1bd4adf69a53f8defeec0fc0c65f1c370452d8403326bf",
+    "chapters/lecture_03/content.tex": "7eeac70ea5e86a155890a459eafd007f8d02b28f119664d2df6502ebc7f4e969",
+    "chapters/lecture_04/content.tex": "280798e99eea6e71529164540437c8fdbe22e752c03c6c39baaa153278b0060c",
+    "chapters/lecture_05/content.tex": "8fce7d01e02b32819996400e347bbc0c596655cc9a35f92f7fdd056a3b17b5fb",
+    "chapters/lecture_06/content.tex": "2ebe6be0dd8eed3ab446d3a7baebea39f33a6b1d97e5026135fdea0e9a0854aa",
+    "chapters/lecture_07/content.tex": "ad35584cafd776fe8bbde8625c31a325f7465d5507753dfefc7f06356991b9c3",
+    "chapters/lecture_08/content.tex": "28c531b7e4cf9483f0bb78491ff0f2a11411be6fee0d4aa70f68b44e949b04a6",
+    "chapters/lecture_09/content.tex": "1c889082ea6d02f33411d3bbdfd9b39ce29e5910b3708a80799a0c4e9a38bae7"
+  },
+  "translated_tex": {
+    "cover.tex": "73d561cecbd1de5bdeeaf1b2e3deb0d2dae25611a8a71dbb8c7b07560c41a657",
+    "common_preamble.tex": "c346eb70948a33b871342919d08bb4f98b56090dded1c813525fc6fce08586bd",
+    "course.tex": "63e25697e1649557ec8f73342591db922ffb3f8b3f4e85169e7f6c0218fd768d",
+    "chapters/lecture_07/content.tex": "55914cf03037e812e90a8d1e6e89ae11cad4049eca2c23847bb8d67aefd7ec1c",
+    "chapters/lecture_02/content.tex": "92b937919b25e76c555ffa9fbbc106473ec809cc647dbba2e1282e878846d9fa",
+    "chapters/lecture_09/content.tex": "89e68aa6d0d356341df1608920b59522319b1aa770313cc83db278d0060c913e",
+    "chapters/lecture_01/content.tex": "5f62f5b7ce36891815b7269171c89b8152ff660797cec508328994dceaecacae",
+    "chapters/lecture_03/content.tex": "dc5bd00ec8be96e6287a78a0e59b6c0f8da89621cca5ab2b8227ab0b36d92dc8",
+    "chapters/lecture_08/content.tex": "800f5c285c28c48b6b53b7cead769942812eb741fbe436f769486915660da8f7",
+    "chapters/lecture_05/content.tex": "480deebee3f58f30e8ff392e583803e825b53a4e65ed27134f551009990148d8",
+    "chapters/lecture_04/content.tex": "ebae4b313183f38778888521372e54f6686a6fcd3bd9454822667bfcc320f8f3",
+    "chapters/lecture_06/content.tex": "dddde0bf5b28c37e2cd0af45064780d991bee9684016e99616f902e7bee52216"
+  }
+}
