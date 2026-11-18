@@ -1260,6 +1260,13 @@ def layout_repairs(book, lang, rel, text):
         anchor = '\\section{Von der Energie zur Krümmung}'
         # Printed page 37 needs 1 pt more depth; footer and side margins remain clear.
         replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
+    if (book['id'] == 'core--cosmology--2013_winter_theoretical_minimum'
+            and lang == 'zh-Hant' and rel == 'chapters/lecture_03/content.tex'):
+        anchor = (r'方程式~\eqref{eq:c03-hyperboloid}與~'
+                  r'\eqref{eq:c03-ambient-minkowski}')
+        # Printed page 48 overflows at the two adjacent protected references.
+        # Permit a line break after them without changing either equation reference.
+        replacements.append((anchor, anchor + r'\allowbreak'))
     if (book['id'] == 'supplementary--particle_physics_2_standard_model--2010_winter'
             and lang == 'de' and rel == 'chapters/lecture_10/content.tex'):
         anchor = ('\\begin{classroomqa}\n'

@@ -228,6 +228,18 @@ class TranslationTests(unittest.TestCase):
         self.assertEqual(p.layout_repairs(entanglement, 'de', 'chapters/lecture_09/content.tex', row),
                          'Gesamt\\-energie & Räumliche Krümmung & Entwicklung')
 
+    def test_traditional_chinese_overflow_break_is_bound_to_failing_references(self):
+        cosmology = next(b for b in p.read(p.MANIFEST)['books']
+                         if b['id'] == 'core--cosmology--2013_winter_theoretical_minimum')
+        anchor = (r'方程式~\eqref{eq:c03-hyperboloid}與~'
+                  r'\eqref{eq:c03-ambient-minkowski}')
+        self.assertEqual(
+            p.layout_repairs(cosmology, 'zh-Hant', 'chapters/lecture_03/content.tex', anchor),
+            anchor + r'\allowbreak')
+        with self.assertRaisesRegex(ValueError, 'layout anchor changed'):
+            p.layout_repairs(cosmology, 'zh-Hant', 'chapters/lecture_03/content.tex',
+                             'unrelated paragraph')
+
     def test_translation_tex_format_is_isolated(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
             baseline = p.translation_tex_environment()
