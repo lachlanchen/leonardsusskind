@@ -121,6 +121,9 @@ The quota reader initializes the account before requesting limits through the
 It retains RPC errors so an explicit network/server failure can use the existing
 bounded transport cooldowns. Authentication, exhausted quota, and unclassified
 telemetry failures remain hard stops; no model calls run while transport recovers.
+Each read-only quota probe owns an isolated process group. Shutdown escalation
+reaps only that probe and its launcher children; slow shutdown cannot masquerade
+as exhausted quota or overwrite an authentication error.
 Each publication verifies the exact commit SHA on every configured push URL;
 one successful mirror push alone does not establish publication completion.
 Transient connection, timeout, rate-limit or server failures may resume the

@@ -217,6 +217,17 @@ class TranslationTests(unittest.TestCase):
         self.assertEqual(p.layout_repairs(cosmology, 'es', 'chapters/lecture_08/content.tex', heading),
                          '\\enlargethispage{1pt}\n' + heading)
 
+    def test_german_layout_repairs_preserve_prose_and_column_widths(self):
+        books = {book['id']: book for book in p.read(p.MANIFEST)['books']}
+        heading = r'\section{Moden, Orthogonalität und Vollständigkeit}'
+        advanced = books['supplementary--advanced_quantum_mechanics--2013_fall']
+        self.assertEqual(p.layout_repairs(advanced, 'de', 'chapters/lecture_07/content.tex', heading),
+                         '\\enlargethispage{1pt}\n' + heading)
+        row = 'Gesamtenergie & Räumliche Krümmung & Entwicklung'
+        entanglement = books['supplementary--quantum_entanglement--2006_fall_part_3']
+        self.assertEqual(p.layout_repairs(entanglement, 'de', 'chapters/lecture_09/content.tex', row),
+                         'Gesamt\\-energie & Räumliche Krümmung & Entwicklung')
+
     def test_translation_tex_format_is_isolated(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
             baseline = p.translation_tex_environment()

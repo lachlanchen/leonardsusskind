@@ -681,6 +681,8 @@ def check_codex_quota():
                 probe = subprocess.run([sys.executable, helper, 'quota'],
                                        capture_output=True, text=True, timeout=120)
                 data = {**json.loads(probe.stdout), 'checked_at': time.time()}
+            except subprocess.TimeoutExpired as exc:
+                raise ProviderUnavailable('APIConnectionError: Codex quota probe timed out') from exc
             except Exception as exc:
                 raise ProviderUnavailable('Codex quota probe failed; no new requests scheduled') from exc
             write(path, data)
@@ -1214,6 +1216,15 @@ def layout_repairs(book, lang, rel, text):
         anchor = '\\section{De la planitud a la estructura}'
         # Printed page 120 has two timestamp footnotes and needs 0.294 pt more depth.
         replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
+    if (book['id'] == 'supplementary--advanced_quantum_mechanics--2013_fall'
+            and lang == 'de' and rel == 'chapters/lecture_07/content.tex'):
+        anchor = '\\section{Moden, Orthogonalität und Vollständigkeit}'
+        # Printed page 132 needs 0.786 pt more depth beside its timestamp footnote.
+        replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
+    if (book['id'] == 'supplementary--quantum_entanglement--2006_fall_part_3'
+            and lang == 'de' and rel == 'chapters/lecture_09/content.tex'):
+        anchor = 'Gesamtenergie & Räumliche Krümmung &'
+        replacements.append((anchor, 'Gesamt\\-energie & Räumliche Krümmung &'))
     if book['id'] == 'core--cosmology--2013_winter_theoretical_minimum' and rel == 'chapters/lecture_06/content.tex':
         if lang == 'zh':
             anchor = '\\begin{equation}\n\\frac{GM}{r^2}=\\frac{v^2}{r},'

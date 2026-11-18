@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import queue
 import re
+import signal
 import subprocess
 import threading
 import time
@@ -23,12 +24,46 @@ def quota_error(message):
     return 'Quota telemetry rejected: ' + message
 
 
+def stop_probe(process, reader):
+    """Reap only this isolated, read-only probe and its launcher children."""
+    def send(sig):
+        try:
+            if os.name == 'posix':
+                os.killpg(process.pid, sig)
+            elif sig == signal.SIGTERM:
+                process.terminate()
+            else:
+                process.kill()
+        except ProcessLookupError:
+            pass
+
+    try:
+        process.stdin.close()
+    except OSError:
+        pass
+    try:
+        process.wait(timeout=5)
+    except subprocess.TimeoutExpired:
+        send(signal.SIGTERM)
+        try:
+            process.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            send(signal.SIGKILL)
+            process.wait(timeout=5)
+    reader.join(timeout=1)
+    if reader.is_alive():
+        send(signal.SIGKILL)
+        reader.join(timeout=2)
+    process.stdout.close()
+
+
 def read_limits(timeout=20):
     try:
         process = subprocess.Popen([os.environ.get('TRANSLATION_CODEX_BIN', 'codex'),
                                     'app-server', '--disable', 'hooks', '--stdio'],
                                    stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-                                   stderr=subprocess.DEVNULL, text=True, bufsize=1)
+                                   stderr=subprocess.DEVNULL, text=True, bufsize=1,
+                                   start_new_session=os.name == 'posix')
     except FileNotFoundError as exc:
         raise RuntimeError('APIConnectionError: quota app-server launcher unavailable') from exc
     messages = queue.Queue()
@@ -40,10 +75,13 @@ def read_limits(timeout=20):
                     messages.put(json.loads(line))
                 except ValueError:
                     continue
+        except (OSError, ValueError):
+            pass
         finally:
             messages.put(None)
 
-    threading.Thread(target=receive, daemon=True).start()
+    reader = threading.Thread(target=receive, daemon=True)
+    reader.start()
 
     def request(method, request_id, params):
         process.stdin.write(json.dumps({'id': request_id, 'method': method, 'params': params}) + '\n')
@@ -66,6 +104,7 @@ def read_limits(timeout=20):
             return response['result']
         raise RuntimeError('APIConnectionError: quota RPC timed out')
 
+    primary_error = None
     try:
         request('initialize', 1, {'clientInfo': {'name': 'translation-quota', 'version': '1.0'},
                                   'capabilities': {'experimentalApi': True}})
@@ -74,15 +113,15 @@ def read_limits(timeout=20):
         # Await account initialization before asking for account-scoped limits.
         request('account/read', 2, {'refreshToken': False})
         return request('account/rateLimits/read', 3, {})
+    except BaseException as exc:
+        primary_error = exc
+        raise
     finally:
-        process.stdin.close()
         try:
-            process.wait(timeout=5)
-        except subprocess.TimeoutExpired:
-            # This process has no thread/turn or rollout; it only served read-only RPCs.
-            process.terminate()
-            process.wait(timeout=5)
-        process.stdout.close()
+            stop_probe(process, reader)
+        except (OSError, subprocess.TimeoutExpired) as exc:
+            if primary_error is None:
+                raise RuntimeError('APIConnectionError: quota probe cleanup timed out') from exc
 
 
 def normalize(response):
