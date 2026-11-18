@@ -1,0 +1,448 @@
+\chapter{고전 정보, 가역적 동역학, 그리고 행렬}
+
+\lectureoverview{양자역학은 일상적인 직관이 형성된 범위를 벗어나 추론해야 하는 학문이다. 따라서 우리는 한 걸음 앞서 고전적 정보, 즉 비트와 구성, 가역적인 갱신 법칙부터 살펴본다. 이 논의는 자연스럽게 벡터와 행렬로 이어지며, 이는 양자 비트를 기술하는 언어가 된다.}
+
+\section{잘못된 세계에 맞춰 형성된 직관}
+
+우리의 물리적 직관은 오래전부터 형성되어 왔다. 방정식이 쓰이기 훨씬 전부터 먹잇감을 쫓는 동물은 상대 속도와 방향을 가늠해야 했다. 사자가 영양을 따라잡고 있다면, 사자는 둘 사이의 거리가 변하는 데 반응하는 것이며, 따라서 암묵적으로 상대 속도에도 반응하는 셈이다. 이런 판단을 잘하는 신경계를 가진 개체는 선택받았고, 잘하지 못하는 개체는 후손을 많이 남기지 못했다. 운동에 관한 상식이라 부르는 것의 상당 부분은 이런 일상적 세계에 맞춰 형성되었다.
+
+그런 유산은 유용하지만 범위가 좁다. 일상에서 빛의 속도에 가까운 속도로 움직이는 것은 없으므로, 진화는 상대론적 시공간에 대한 본능을 마련해 주지 않았다. 물리학자는 먼저 추상적인 기하학을 배우고, 그 뒤에야 그 기하학에 대한 새로운 직관을 익힌다. 양자역학은 그보다도 더 어렵다. 입자에 대한 익숙한 그림은 돌멩이와 화살에서 비롯된다. 물체는 매 순간 위치를 가지며, 위치들이 이어져 궤적을 이루고, 위치의 변화로 속도를 정의한다. 전자는 이런 그림에 맞춰 주지 않는다. 위치 불확정성과 고전적 궤적의 부재는 우리의 감각을 형성한 경험에 대응하는 것이 없다.
+
+직관이 여기서 실패한다고 해서 역설이 생기는 것은 아니다. 돌과 동물, 그리고 그리 빠르지 않은 속도에 적응한 본능이 전자를 미리 알고 있기라도 하다면 그게 역설일 것이다. 올바른 대응은 몇 가지 정밀한 규칙을 바탕으로 다른 직관을 세우는 것이다. 여기서는 파동역학과 Schr\"odinger 방정식을 거치는 통상적인 경로에 중점을 두지 않는다. 대신 양자역학의 논리적 구조와 양자 정보에 집중한다. 양자 비트가 무엇인지 묻기 전에, 보통 비트가 정확히 어떤 일을 하는지 이해해야 한다.
+
+\section{비트와 정보량}
+
+물리학은 정보와 불가분의 관계에 있다. 정보는 때로 실수로 표현되지만, 가장 단순한 정보는 선택지가 두 개뿐인 질문에 대한 답이다. 예 또는 아니요, 앞면 또는 뒷면, 위 또는 아래가 그 예다.
+
+\begin{definition}
+\emph{고전 비트}란 가능한 답이 정확히 두 개인 물리적 질문이다.
+\end{definition}
+
+그 답을 \(0\)와 \(1\)로 표시할 수 있다. 이 표기에는 본래의 의미가 없으며, 서로 다른 기호라면 무엇이든 쓸 수 있다. 디랙 표기법은 곧 필수적으로 쓰이게 되므로, 아직 중복 표기이기는 하지만 여기서 도입한다.
+\begin{equation}
+  \ket{0},
+  \qquad
+  \ket{1}.
+\end{equation}
+세로 막대와 꺾쇠괄호가 이루는 것은 \emph{켓}이며, 브라--켓의 오른쪽 절반이다. 표기만 바꿨다고 해서 양자적인 것이 들어온 것은 아니다.
+
+구별되는 비트가 여러 개라면 답을 일정한 순서로 쓴다. 예를 들어 구별되는 동전 여섯 개의 구성은 다음과 같을 수 있다.
+\begin{equation}
+  \ket{0\,1\,1\,0\,1\,0}.
+\end{equation}
+순서를 알고 있다면 쉼표는 생략해도 된다. 비트 하나에는 가능한 상태가 두 개, 비트 두 개에는 네 개가 있으며, 비트가 하나 늘 때마다 그 수는 두 배가 된다. 따라서 비트가 \(n\)개인 계에는
+\begin{equation}
+  N_s=2^n
+  \label{eq:l01-state-count}
+\end{equation}
+개의 상태가 있다. 반대로,
+\begin{equation}
+  n=\log_2 N_s.
+  \label{eq:l01-bits-from-states}
+\end{equation}
+
+식~\eqref{eq:l01-bits-from-states}은 상태 수가 2의 거듭제곱이 아닌 경우에도 유용한 정의를 제시한다.
+\begin{equation}
+  I=\log_2 N_s.
+  \label{eq:l01-information}
+\end{equation}
+따라서 육면체 주사위 하나에는 \(\log_2 6\) 비트의 정보가 담겨 있다. 답은 정수일 필요가 없다. 실제로 이진 스위치를 조합한 계는 편리한 예가 되지만, 로그가 더 일반적인 측정량이다.
+
+\section{겉보기에는 연속적인 세계를 부호화하기}
+
+비트는 동전에만 한정되지 않는다. 유한한 정확도로 알려진 측정량은 무엇이든 유한한 이진 문자열로 쓸 수 있다. 예를 들어 방의 온도를 유효숫자 몇 자리까지만 알면 된다고 하자. 측정값을 2진법으로 나타내고 그 정확도에 필요한 자릿수만 남긴다. 정밀도를 높이려면 문자열을 길게 하면 되며, 원리는 달라지지 않는다.
+
+공간에 따라 변하는 장도 비슷한 방식으로 다룰 수 있다. 방을 작은 격자 셀들로 나누어 순서를 정하고, 각 셀의 장 값을 유한한 정밀도로 기록한 뒤, 얻어진 이진 문자열을 이어 붙인다. 셀을 더 작게 나누면 공간 분해능이 높아지고, 이진 자릿수를 더 많이 유지하면 장 값의 분해능이 높아진다. 온도장, 전기장, 자기장은 모두 이렇게 임의로 정한 유한한 정확도로 부호화할 수 있다.
+
+입자 구성은 이진 표현을 더욱 직접적으로 보여 준다. 공간을 각 셀에 입자가 많아야 하나만 들어가도록 충분히 작은 셀들로 나눈다. 다음과 같이 정의하자.
+\begin{equation}
+  n_i=
+  \begin{cases}
+    1,&\text{cell \(i\) is occupied},\\
+    0,&\text{cell \(i\) is empty}.
+  \end{cases}
+  \label{eq:l01-occupancy-bit}
+\end{equation}
+전체 구성은 순서가 정해진 문자열
+\begin{equation}
+  \ket{n_1n_2n_3\cdots}.
+\end{equation}
+이다. 이는 예 또는 아니요로 답하는 질문을 아주 길게 늘어놓은 것과 같다. 첫 번째 셀에 입자가 있는가, 두 번째 셀에는 있는가, 이런 식으로 묻는다. 물리적으로는 \emph{스무고개} 놀이에 해당하지만, 질문 수가 어마어마하게 많을 수 있다.
+
+이 구성은 디지털 컴퓨터가 물리학을 시뮬레이션할 수 있는 이유를 설명한다. 컴퓨터는 유한한 문자열을 저장하며, 유한한 분해능을 적용하면 측정량과 장을 바로 그런 문자열로 나타낼 수 있다. 격자를 더 세밀하게 하거나 시간 간격을 줄이거나 유지하는 자릿수를 늘려 근사 정확도를 체계적으로 높일 수 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:43}
+\audiencequestion{온도 표현의 정확도는 임의로 정할 수 있나요?}
+\lecturerresponse{원하는 근사 수준에 따라 정합니다. 유한한 문자열은 유한한 정확도를 주며, 이진 자릿수를 더 많이 유지하면 더 정밀하게 근사할 수 있습니다. 유한한 문자열이 임의의 고전적 실수를 정확히 나타낸다고 주장하는 것은 아닙니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:30:11}
+\audiencequestion{일반적인 실수, 특히 무리수의 경우에는 어떻게 되는가?}
+\lecturerresponse{정확한 실수를 표현하는 데 무한히 많은 비트가 필요할 수도 있다. 일부 유리수의 이진 전개는 반복되고, 일반적인 무리수의 이진 전개는 끝나지 않는다. 실제 컴퓨터는 언제나 유한한 자릿수만 저장한다. 핵심은 지정된 유한한 정밀도라면 얼마든지 부호화할 수 있다는 것이지, 모든 고전적 실수를 유한한 길이로 정확히 표현할 수 있다는 뜻은 아니다.}
+\end{classroomqa}
+
+\section{상태와 운동 법칙}
+
+지금까지 우리는 한 순간의 계를 기술했다. 운동에는 두 번째 요소가 필요하다.
+
+\begin{definition}
+\emph{구성}이란 지정된 순간에 계가 갖는 완전한 상태다. 이산 시간 운동 법칙은 각 구성을 한 시간 단계 뒤의 구성으로 대응시키는 규칙이다.
+\end{definition}
+
+이 구별은 단순하지만 필수적이다. 전자 분포의 한 순간 모습은 구성이지만, 아직 궤도는 아니다. 공간을 격자로, 시간을 \(t_0,t_1,t_2,\ldots\)의 수열로 바꾸면 운동은 다음과 같은 연속이 된다.
+\begin{equation}
+  \ket{s(t_0)}
+  \longmapsto
+  \ket{s(t_1)}
+  \longmapsto
+  \ket{s(t_2)}
+  \longmapsto\cdots.
+  \label{eq:l01-discrete-motion}
+\end{equation}
+따라서 물리 모형에는 가능한 상태들의 집합과 갱신 규칙이 모두 필요하다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:12}
+\audiencequestion{이 셀 표현으로 궤도를 도는 전자를 어떻게 설명하나요?}
+\lecturerresponse{먼저 한 순간의 구성만 지정합니다. 원자가 모형의 일부라면 원자를 고정해 두고, 어느 셀이 점유되어 있는지를 정합니다. 그런 다음 시간을 이산화합니다. 궤도 운동은 하나의 점유 문자열을 다음 문자열로 갱신하는 규칙입니다. 셀의 순서 때문에 그 규칙이 복잡할 수 있지만, 여전히 정보를 갱신하는 것입니다.}
+\end{classroomqa}
+
+추상적인 \emph{상태 공간}을 그려 보면 도움이 된다. 이 공간의 각 점은 일상적인 공간에서의 위치가 아니라 전체 구성을 나타낸다. 비트 백 개를 담은 \(10\times10\) 점유 격자에는 가능한 구성이 \(2^{100}\)개 있다.\editorialnote{강의에서는 예시를 설명하면서 잠시 \(10^{100}\)이라고 말하지만, 비트 수를 따져 보면 의도한 값은 \(2^{100}\)이다.} 이 구성 하나하나가 상태 공간에서 하나의 점에 해당한다.
+
+비트 하나에는 점이 두 개뿐이다. 항등 법칙은 두 점을 그대로 둔다.
+\begin{equation}
+  0\mapsto0,
+  \qquad
+  1\mapsto1.
+  \label{eq:l01-identity-update}
+\end{equation}
+가역적인 다른 가능성은 두 점을 맞바꾸는 것이다.
+\begin{equation}
+  0\mapsto1,
+  \qquad
+  1\mapsto0.
+  \label{eq:l01-flip-update}
+\end{equation}
+이것은 플립플롭이다. 사람이 조작하는 전등 스위치와 달리, 저절로 진화하는 물리적 예를 들기는 쉽지 않다. 개입하는 사람이 있다면 계를 확장해야 하기 때문이다. 낮과 밤은 두 상태가 반복되는 주기의 근사적 예다. 진자도 양 끝점 사이를 오가지만, 진자의 전체 상태에는 중간 위치와 속도도 모두 포함된다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:38}
+\audiencequestion{일반적인 전등 스위치가 플립플롭 법칙의 예인가요?}
+\lecturerresponse{사람이 스위치를 전환한다면 그렇지 않습니다. 스위치가 스스로 진화하는 것이 아니며, 사람을 더 큰 동역학계에 포함해야 하기 때문입니다. 우리가 찾는 것은 자체 법칙에 따라 상태가 번갈아 바뀌는 닫힌 계입니다. 낮과 밤은 그 발상을 보여 주고, 진자는 실제 사례에 두 상태보다 많은 상태가 있는 경우가 보통임을 일깨워 줍니다.}
+\end{classroomqa}
+
+비트 두 개로 이루어진 계에는 구성이 네 개 있다. 하나의 갱신 법칙은 이 네 구성을 하나의 순환으로 잇는다. 다른 법칙은 두 개의 서로 분리된 2주기로 이루어질 수 있다. 이는 물리 공간에서의 순환이 아니라 구성들의 논리적 공간에서의 순환이다. 화살표는 법칙을 나타낸다. 계가 어디서 시작하든 화살표를 따라가면 그 뒤의 이력을 알 수 있다.
+
+\section{가역성과 구별의 보존}
+
+모든 화살표 도식이 물리적으로 같은 성격을 갖는 것은 아니다. 서로 다른 두 상태가 같은 다음 상태로 합쳐지는 규칙을 생각해 보자.
+\begin{equation}
+  a\mapsto c,
+  \qquad
+  b\mapsto c.
+  \label{eq:l01-merging-update}
+\end{equation}
+\(a\)에서 시작하든 \(b\)에서 시작하든 다음 상태는 정해져 있지만, \(c\)에 도달하고 나면 어떤 과거가 있었는지 알아낼 수 없다. \(a\)와 \(b\)의 차이가 사라진 것이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_01_figure_02.png}
+\caption{가역성을 설명하는 동안 칠판에는 여러 갱신 도식이 남아 있다. 닫힌 순환들과 병합 패턴이 함께 있고, 그 옆에는 양자역학의 용어인 \emph{유니터리성}이 적혀 있다.}
+\lectureframe{00:53:21}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Latex,thick,node distance=1.15cm]
+  \node[circle,fill,inner sep=1.8pt,label=above:\(1\)] (r1) {};
+  \node[circle,fill,inner sep=1.8pt,right=of r1,label=above:\(2\)] (r2) {};
+  \node[circle,fill,inner sep=1.8pt,below=of r2,label=below:\(3\)] (r3) {};
+  \node[circle,fill,inner sep=1.8pt,left=of r3,label=below:\(4\)] (r4) {};
+  \draw[->] (r1) -- (r2);
+  \draw[->] (r2) -- (r3);
+  \draw[->] (r3) -- (r4);
+  \draw[->] (r4) -- (r1);
+  \node[below=0.5cm of r4,anchor=north west] {\small reversible cycle};
+
+  \node[circle,fill,inner sep=1.8pt,right=4.2cm of r1,label=above:\(a\)] (a) {};
+  \node[circle,fill,inner sep=1.8pt,below=1.25cm of a,label=below:\(b\)] (b) {};
+  \node[circle,fill,inner sep=1.8pt,right=1.6cm of a,yshift=-0.625cm,label=above:\(c\)] (c) {};
+  \node[circle,fill,inner sep=1.8pt,right=of c,label=above:\(d\)] (d) {};
+  \draw[->] (a) -- (c);
+  \draw[->] (b) -- (c);
+  \draw[->] (c) -- (d);
+  \node[below=0.55cm of b,anchor=north west] {\small information-losing merge};
+\end{tikzpicture}
+\caption{가역적인 규칙은 모든 상태에 하나의 선행 상태와 하나의 후행 상태를 대응시킨다. 병합 규칙에서는 미래는 하나로 정해져 있지만 과거는 모호하다.}
+\end{figure}
+
+모든 자유도를 유지하는 한, 근본적인 고전 동역학에서는 이런 손실이 허용되지 않는다. 필요한 성질에는 다음 두 조건이 있다.
+\begin{equation}
+  \boxed{\begin{gathered}
+    \text{one unique future and one unique past}\\
+    \text{for every state}
+  \end{gathered}.}
+  \label{eq:l01-reversibility}
+\end{equation}
+상태 공간이 유한하다면 갱신은 순열이어야 한다. 모든 상태에서 나가는 화살표가 정확히 하나이고 들어오는 화살표도 정확히 하나이므로, 도식은 서로 분리된 순환들로 나뉜다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:32}
+\audiencequestion{병합 도식은 무엇이 다른가요?}
+\lecturerresponse{그 도식은 온전히 고리로만 이루어져 있지 않습니다. 더 근본적으로는 병합된 상태를 보고도 어떤 선행 상태에서 왔는지 알 수 없습니다. 미래를 구성할 수는 있지만 과거를 복원할 수는 없습니다. 과거의 구별 하나가 사라진 것입니다.}
+\end{classroomqa}
+
+이 개념은 정확한 시간 반전 대칭이 반드시 성립한다는 뜻이 아니라 \emph{시간 가역성}을 말한다. 시계 방향 순환에는 분명한 진행 방향이 있다. 원래의 법칙은 계를 반시계 방향으로 보내지 않지만, 그렇게 하는 역법칙은 존재한다. 정확한 시간 반전 대칭은 한 가지 질문을 더한다. 적절한 반전 연산을 적용한 뒤에도 동일한 동역학 법칙이 얻어지는가? 가역성이 묻는 것은 이력을 유일하게 거꾸로 따라갈 수 있는가뿐이다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:58}
+\audiencequestion{과거가 유일하다는 것은 시간 반전 대칭과 같은 뜻인가요?}
+\lecturerresponse{정확히 그렇지는 않습니다. 순환의 화살표는 한 방향으로만 향할 수 있으므로 법칙에는 방향성이 있습니다. 가역성이란 모든 화살표를 뒤집어 잘 정의된 역법칙을 만들 수 있다는 뜻입니다. 역법칙이 원래 법칙과 동일하다는 뜻은 그 자체로 포함하지 않습니다.}
+\end{classroomqa}
+
+병합된 상태에서 나가는 화살표를 두 개 그려 비가역적인 도식을 고쳐서도 안 된다. 그렇게 하면 이번에는 역방향 운동이 다른 방식으로 모호해진다. 계에 확률적 지시가 필요해져, 한 분기에는 \(30\%\)의 확률을, 다른 분기에는 \(70\%\)의 확률을 부여할 수도 있다. 여기서는 현재 상태 하나가 미래와 과거를 각각 하나씩 결정하는 결정론적 고전 동역학을 구성하고 있다.
+
+모든 실제 계는 궁극적으로 양자역학적이다. 거시적 물체가 왜 고전적으로 보이는지, 또 양자적 대안들을 왜 관측하기 어려워지는지는 나중에 다룰 문제다. 양자역학의 대응 원리도 이와 같은 논리적 핵심을 보존한다. 반쯤 농담 삼아 과거와 미래의 유일성을 \emph{유일성}이라고 부를 수도 있겠다. 실제 명칭은 \emph{유니터리성}이다. 양자 시간 진화는 정방향으로도 역방향으로도 유일하게 수행할 수 있다.
+
+\section{겉보기 정보 손실과 거친 입자화}
+
+거시적 경험은 가역성과 모순되는 것처럼 보인다. 밀폐된 방의 왼쪽 구석에 기체 분자들을 모두 모아 두었다가 놓아 보자. 곧 기체가 방 전체를 채운다. 이번에는 오른쪽 구석에서 시작해도 최종적인 거시적 모습은 똑같아 보인다. 서로 다른 두 초기 상태가 하나로 합쳐진 것일까?
+
+세부 사항을 버린 뒤에야 그렇다. 미시 상태는 모든 분자를 지정한다. 모든 분자의 위치와 속도를 충분한 정밀도로 추적할 수 있다면, 그 운동을 거꾸로 되짚어 두 준비 상태를 구별할 수 있다. 실제로는 계산이 감당하기 어려울 만큼 복잡하고 필요한 정밀도도 빠르게 높아지지만, 실용상의 한계가 근본적인 소거를 뜻하지는 않는다. 거시적인 진술인 \emph{공기가 방을 채운다}는 서로 다른 수많은 미시 구성을 하나의 거친 입자화 상태로 묶는다.
+
+여기서 열역학 제2법칙이 등장한다. 미시 변수를 모두 추적하지 않기 때문에 세밀한 상태들을 구별할 수 없게 된다. 미세한 수준의 결정론적 법칙이 서로 다른 점들을 병합해서가 아니라, 우리의 기술이 거칠기 때문에 정보가 사라진 것처럼 보인다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:11}
+\audiencequestion{고전적인 방에 있는 모든 분자를 추적하려면 무한히 많은 비트가 필요한가요?}
+\lecturerresponse{정확한 고전적 기술을 위해서는 그렇습니다. 위치와 속도는 실수이며, 혼돈적인 다입자계를 더 오랜 시간 추적하려면 점점 더 높은 정밀도가 필요합니다. 양자역학은 이 결론을 바꿉니다. 에너지가 유계인 밀폐 영역에서는 물리적으로 구별 가능한 기술이 임의의 정확한 고전적 실수들의 목록이 아니라 이산적인 형태일 수 있습니다.}
+\end{classroomqa}
+
+이 문제는 단지 학문적인 논의가 아니다. 블랙홀이 정보를 파괴할 수 있는지를 두고 수십 년 동안 논쟁이 이어졌으며, Stephen Hawking은 처음에 그럴 수 있다고 주장했다. 이 논쟁은 겉보기의 병합이 또 하나의 거친 입자화 기술에 불과한지, 아니면 양자 유니터리성을 실제로 위반하는지를 묻는다. 양자역학이 정밀한 언어를 제공하기 전에 이 문제를 해결하지는 않겠지만, 간단한 화살표 도식에 얼마나 많은 것이 걸려 있는지를 보여 준다.
+
+\section{행, 열, 그리고 내적}
+
+고전 비트를 양자 비트로 바꾸기 전에 선형대수의 몇 가지 개념이 필요하다. 여기서는 벡터를 유한한 순서쌍의 실수 목록으로 생각해도 된다. 성분이 네 개인 벡터는 가로로
+\begin{equation}
+  A^{\mathsf T}=(A_1,A_2,A_3,A_4),
+  \label{eq:l01-row-vector}
+\end{equation}
+또는 세로로 쓸 수 있다.
+\begin{equation}
+  A=
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}.
+  \label{eq:l01-column-vector}
+\end{equation}
+\emph{4차원}이라는 말은 성분이 네 개라는 뜻일 뿐이다. 일상적인 공간의 화살표를 머릿속에 그릴 필요는 없다. 가로로 쓴 것은 행벡터이고 세로로 쓴 것은 열벡터다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\linewidth]{lecture_01_figure_03.png}
+\caption{같은 성분을 행과 열로 썼다. 이 단계에서는 성분이 실수이므로 복소켤레를 취하지 않는다.}
+\lectureframe{01:03:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:14}
+\audiencequestion{행벡터는 열벡터의 대거 연산 결과 아닌가요?}
+\lecturerresponse{성분이 복소수일 때는 그렇게 말하는 것이 맞습니다. 그러면 전치를 하면서 복소켤레도 취해야 합니다. 지금은 성분이 실수이므로 행으로 배열했는지 열로 배열했는지만 구별하면 됩니다.}
+\end{classroomqa}
+
+다음과 같이 두자.
+\begin{equation}
+  B=(B_1,B_2,B_3,B_4)
+\end{equation}
+열벡터 \(A\)와 항목 수가 같은 행벡터다. 두 벡터의 곱은 각 위치의 항을 서로 곱해 더하는 것으로 정의한다.
+\begin{align}
+  BA
+  &=
+  (B_1,B_2,B_3,B_4)
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}\\
+  &=B_1A_1+B_2A_2+B_3A_3+B_4A_4.
+  \label{eq:l01-inner-product}
+\end{align}
+그 결과는 벡터나 행렬이 아니라 수 하나다. 추상 벡터 공간에서 이 연산을 내적이라 부른다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:44}
+\audiencequestion{이것이 점곱인가요?}
+\lecturerresponse{그렇습니다. 3차원 공간의 보통 벡터에서는 익숙한 점곱입니다. \emph{내적}이라는 명칭은 같은 행벡터와 열벡터의 곱이 유한한 차원의 모든 벡터 공간에서 적용됨을 강조합니다.}
+\end{classroomqa}
+
+\section{상태를 갱신하는 장치로서의 행렬}
+
+행렬은 벡터에 작용해 다른 벡터를 만드는 정사각형 숫자 배열이다. 이를 장치라고 생각해 보자. 기존 열벡터를 넣고 정해진 규칙을 적용하면 새 열벡터가 나온다. 4차원에서 행렬은 다음과 같다.
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}&M_{13}&M_{14}\\
+    M_{21}&M_{22}&M_{23}&M_{24}\\
+    M_{31}&M_{32}&M_{33}&M_{34}\\
+    M_{41}&M_{42}&M_{43}&M_{44}
+  \end{pmatrix}.
+  \label{eq:l01-general-matrix}
+\end{equation}
+첫 번째 첨자는 행을, 두 번째 첨자는 열을 나타낸다. \(M\)를 열들의 모음으로 볼 수도, 행들의 모음으로 볼 수도 있으며, 두 관점 모두 유용하다.
+
+\(A'=MA\)를 계산하려면 \(M\)의 각 행과 입력 열벡터의 내적을 구한다.
+\begin{equation}
+  A'_i=(MA)_i=\sum_{j=1}^{4}M_{ij}A_j.
+  \label{eq:l01-matrix-vector}
+\end{equation}
+예를 들어,
+\begin{align}
+  A'_1&=M_{11}A_1+M_{12}A_2+M_{13}A_3+M_{14}A_4,\\
+  A'_2&=M_{21}A_1+M_{22}A_2+M_{23}A_3+M_{24}A_4.
+\end{align}
+세 번째와 네 번째 성분도 같은 방식으로 구한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_01_figure_04.png}
+\caption{행렬은 열벡터에 행별로 작용한다. 첫 번째와 두 번째 출력 성분은 칠판에 구체적으로 전개되어 있다.}
+\lectureframe{01:12:45}
+\end{figure}
+
+\subsection{고전적 구성을 부호화하기}
+
+계에 가능한 상태가 네 개 있다고 하자. 이를 다음의 원-핫 열벡터로 나타낸다.
+\begin{equation}
+  e_1=
+  \begin{pmatrix}1\\0\\0\\0\end{pmatrix},
+  \quad
+  e_2=
+  \begin{pmatrix}0\\1\\0\\0\end{pmatrix},
+  \quad
+  e_3=
+  \begin{pmatrix}0\\0\\1\\0\end{pmatrix},
+  \quad
+  e_4=
+  \begin{pmatrix}0\\0\\0\\1\end{pmatrix}.
+  \label{eq:l01-one-hot}
+\end{equation}
+유일한 \(1\)의 위치를 보면 어떤 고전적 구성이 존재하는지 알 수 있다.
+
+다음 순환 갱신을 생각해 보자.
+\begin{equation}
+  1\longrightarrow2\longrightarrow3\longrightarrow4\longrightarrow1.
+  \label{eq:l01-four-cycle}
+\end{equation}
+이를 나타내는 행렬은 다음과 같다.
+\begin{equation}
+  P=
+  \begin{pmatrix}
+    0&0&0&1\\
+    1&0&0&0\\
+    0&1&0&0\\
+    0&0&1&0
+  \end{pmatrix}.
+  \label{eq:l01-permutation-matrix}
+\end{equation}
+실제로,
+\begin{equation}
+  \begin{aligned}
+    Pe_1&=e_2, & Pe_2&=e_3,\\
+    Pe_3&=e_4, & Pe_4&=e_1.
+  \end{aligned}
+\end{equation}
+칠판의 행렬을 쓰는 도중 구성이 수정된다. 처음에는 상태를 다섯 개로 썼다가 네 개로 고친다. 식~\eqref{eq:l01-permutation-matrix}에는 폐기한 중간 배열이 아니라 최종적으로 정한 순환 규칙이 기록되어 있다.
+
+같은 행렬은 임의의 열벡터에도 작용한다.
+\begin{equation}
+  P
+  \begin{pmatrix}A\\B\\C\\D\end{pmatrix}
+  =
+  \begin{pmatrix}D\\A\\B\\C\end{pmatrix}.
+  \label{eq:l01-cyclic-shift}
+\end{equation}
+고전적 상태에서는 성분 하나만 \(1\)이지만, 일반적인 성분도 허용하면 바탕에 있는 선형 연산이 드러난다. 고전적 결정론적 갱신에는 모든 행과 모든 열에 \(1\)이 하나씩 있는 특별한 0-1 행렬을 쓴다. 양자역학은 행렬 진화를 유지하면서 허용되는 성분을 크게 확장한다.
+
+\subsection{합성은 행렬 곱셈이다}
+
+한 시간 단계가 다음과 같다면,
+\begin{equation}
+  V'=MV,
+\end{equation}
+이를 한 번 더 적용하면
+\begin{equation}
+  V''=MV'=M(MV)=M^2V.
+  \label{eq:l01-two-updates}
+\end{equation}
+행렬 곱셈은 자의적인 대수 놀이가 아니다. 물리적 갱신을 합성하는 연산이다. 다섯 시간 단계는 \(M^5\)으로 나타낸다.
+
+두 \(2\times2\) 행렬
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}\\
+    M_{21}&M_{22}
+  \end{pmatrix},
+  \qquad
+  N=
+  \begin{pmatrix}
+    N_{11}&N_{12}\\
+    N_{21}&N_{22}
+  \end{pmatrix},
+\end{equation}
+의 곱 \(C=MN\)의 성분은 다음과 같다.
+\begin{equation}
+  C_{ij}=\sum_k M_{ik}N_{kj}.
+  \label{eq:l01-matrix-product}
+\end{equation}
+특히,
+\begin{align}
+  C_{11}&=M_{11}N_{11}+M_{12}N_{21},\\
+  C_{12}&=M_{11}N_{12}+M_{12}N_{22},\\
+  C_{21}&=M_{21}N_{11}+M_{22}N_{21},\\
+  C_{22}&=M_{21}N_{12}+M_{22}N_{22}.
+\end{align}
+각 성분은 왼쪽 행렬의 한 행과 오른쪽 행렬의 한 열을 곱해 얻는다. 또는 \(M\)를 \(N\)의 각 열에 작용시킨 뒤, 결과 열들을 나란히 놓아도 된다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\linewidth]{lecture_01_figure_05.png}
+\caption{행렬 곱셈을 행렬--열 곱셈을 반복하는 방식으로 나타냈다. 첫 번째 행렬의 첫 행과 두 번째 행렬의 열들을 표시해 곱의 각 성분이 어디서 나오는지 보여 준다.}
+\lectureframe{01:26:30}
+\end{figure}
+
+행벡터도 왼쪽에서 작용할 수 있다. \(B=(B_1,\ldots,B_4)\)라면 \(BM\)는 다음 성분을 갖는 또 하나의 행벡터다.
+\begin{equation}
+  (BM)_j=\sum_i B_iM_{ij}.
+  \label{eq:l01-row-times-matrix}
+\end{equation}
+여기서도 규칙은 행과 열의 곱이다. 배열 형태에 따라 결과의 형태가 정해진다.
+\begin{equation}
+\begin{array}{c@{\qquad}c}
+\text{row}\times\text{column}&=\text{number},\\
+\text{matrix}\times\text{column}&=\text{column},\\
+\text{row}\times\text{matrix}&=\text{row},\\
+\text{matrix}\times\text{matrix}&=\text{matrix}.
+\end{array}
+\label{eq:l01-shape-rules}
+\end{equation}
+
+이 연산들은 작은 수치 \(2\times2\) 및 \(3\times3\) 예제로 연습해 볼 만하다. 약간의 미적분과 더불어 행--열 곱셈은 앞으로 양자역학을 공부하는 데 필요한 주요한 새로운 수학적 습관이다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:50}
+\audiencequestion{가역성은 갱신 행렬에 어떤 조건을 부과하나요?}
+\lecturerresponse{역행렬이 존재해야 합니다. 역행렬은 역방향 갱신을 구현하며 모든 상태를 유일한 선행 상태로 되돌립니다. 모든 행렬에 역행렬이 있는 것은 아니므로, 대수에서도 앞서 화살표 도식으로 본 구별이 그대로 나타납니다. 순환 예제에서는 \(P^{-1}=P^3\)이고 \(P^4=\mathbb{1}\)입니다.}
+\end{classroomqa}
+
+\section{큐비트를 다루기 전에 대수를 준비하는 이유}
+
+첫 번째 시간에는 비트와 가역적인 화살표를 이용해 결정론적 고전물리학을 정성적으로 설명했다. 남은 수학은 그 설명을 양자역학으로 넘어가도 유지될 수 있는 형태로 바꾼다. 구성은 열벡터가 되고, 한 단계 법칙은 행렬이 되며, 반복되는 시간 진화는 행렬의 곱이 된다. 가역성은 역행렬의 존재로 나타난다.
+
+아직 양자역학의 규칙은 사용하지 않았다. 의도적으로 미뤄 둔 것이다. 다음에는 고전적인 대안 \(\ket{0}\)와 \(\ket{1}\)를 큐비트로 바꾸고 어떤 새로운 상태가 가능한지 묻는다. 여기서 도입한 행벡터와 열벡터, 내적, 행렬은 양자 정보가 고전적 비트 문자열과 왜 그렇게 크게 다른지 드러내 줄 것이다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:00}
+\audiencequestion{이 모든 행렬 대수를 그 쓰임을 말하기도 전에 도입하는 이유가 무엇인가요?}
+\lecturerresponse{먼저 정성적인 문제를 다뤘습니다. 결정론적 물리학을 상태와 갱신 법칙으로 어떻게 나타낼까요? 대수는 그다음 단계를 준비합니다. 큐비트를 도입하고 나면 이러한 연산은 동떨어진 내용으로 보이지 않을 것입니다. 양자 상태와 그 시간 진화를 나타내는 자연스러운 언어가 될 것입니다.}
+\end{classroomqa}

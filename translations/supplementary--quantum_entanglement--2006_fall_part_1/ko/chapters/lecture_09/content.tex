@@ -1,0 +1,690 @@
+\chapter{시간 변화, 보존, 그리고 결합된 스핀}
+
+양자 상태는 힐베르트 공간의 고정된 점이 아니다. 시간이 흐르면 상태는 변하지만, 정규화와 확률, 내적에 담긴 구별 가능성을 잃지 않는 방식으로 변해야 한다. 이러한 조건은 양자 동역학의 형태를 거의 결정한다. 선형성은 시간 진화 연산자를 정하고, 확률 보존은 그 연산자가 유니터리임을 뜻하며, 무한소 유니터리 변환은 에르미트 연산자가 생성한다. 이 연산자가 해밀토니안이다. 이 명제들로부터 Schr\"odinger 방정식을 유도하고, 에너지 고유상태에 위상이 어떻게 누적되는지 살펴본 뒤, 형식론을 두 가지 구체적인 계산에 적용하겠다. 하나는 자기장에서 스핀 하나가 세차하는 경우이고, 다른 하나는 결합된 스핀 쌍의 두 상태 사이에서 진동하는 경우다.
+
+\section{힐베르트 공간에서의 선형 진화}
+
+시간 \(t\)에서의 상태를 \(\ket{\psi(t)}\)라 하자. 시간 0의 상태와 다음과 같은 선형 관계를 갖는다고 가정한다.
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+선형성은 더 기본적인 무언가로부터 유도되는 정리가 아니라 공리다. 이는 실험적으로 성공을 거둔 양자역학의 일부이며, 이를 대체하려는 시도는 대체로 확률이나 보존 법칙을 위태롭게 한다. 선택한 기저에서 \(U(t)\)는 시간에 따라 변하는 행렬일 뿐이다.
+
+쌍대벡터는 켤레 규칙을 따른다. 만약
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)},
+\end{equation}
+라면
+\begin{equation}
+\bra{\phi(t)}=\bra{\phi(0)}U^\dagger(t).
+\end{equation}
+행렬에서 대거 기호는 복소켤레를 취한 뒤 전치한다는 뜻이다. 따라서 브라는 켓과 같은 진화 법칙을 따르되, 쌍대 공간에서 표현된다.
+
+\subsection{확률 보존은 유니터리성을 뜻한다}
+
+정규화된 상태는 전체 확률이 1임을 나타낸다.
+\begin{equation}
+\braket{\psi(t)}{\psi(t)}=1.
+\end{equation}
+시간 진화는 이 노름을 보존해야 한다. 실제로 모든 벡터의 노름을 보존하는 선형 사상은 모든 내적도 보존한다. 기하학적으로는 두 벡터의 길이와 그 차의 길이를 보존하면 두 벡터가 이루는 삼각형과 그 각도도 보존된다. 복소 벡터 공간에서는 \(i\)를 곱한 조합도 함께 고려하면 같은 결론을 얻는다.
+
+따라서 임의의 \(\ket{\phi}\)와 \(\ket{\psi}\)에 대해
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+시간 진화 법칙을 대입하면
+\begin{equation}
+\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+이 식은 모든 벡터 쌍에 대해 성립하므로
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+이러한 연산자를 유니터리 연산자라고 한다. 스칼라의 경우에 해당하는 것은 절댓값이 1인 복소수다.
+\begin{equation}
+e^{i\theta}\bigl(e^{i\theta}\bigr)^*=1.
+\end{equation}
+유니터리 연산자는 순수한 위상의 행렬 일반화다. 상태를 힐베르트 공간에서 회전시킬 수는 있지만, 상태를 늘리거나 줄일 수는 없다.
+
+\section{무한소 생성자}
+
+유한 시간 진화는 매우 짧은 시간 간격을 차례로 적용해 구성한다. 경과 시간을 \(\epsilon\)라 하고, \(\epsilon^2\) 차수의 항은 무시할 수 있을 만큼 작다고 하자. 경과 시간이 0이면 아무 일도 일어나지 않으므로
+\begin{equation}
+U(0)=I.
+\end{equation}
+가장 낮은 차수의 보정항은 \(\epsilon\)에 비례해야 한다. 이를 관례에 따라 다음과 같이 쓴다.
+\begin{equation}
+\boxed{U(\epsilon)=I-\frac{i\epsilon}{\hbar}H}.
+\end{equation}
+이 단계에서 강제되는 것은 \(\epsilon\)라는 인자뿐이다. \(i\), \(\hbar\), 그리고 \(H\)라는 이름은 마지막에 남는 대상이 표준적인 정규화를 따르고 에르미트가 되도록 선택한 것이다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:46}
+\audiencequestion{익숙한 단위계에서 플랑크 상수는 왜 놀라울 만큼 작은 수인가요?}
+\lecturerresponse{그 수치의 크기는 인간이 선택한 단위를 반영한다. 화학자들은 손에 들 만한 용기에 담을 수 있는 거시적인 양을 택했고, 원자는 사람보다 훨씬 작다. 이런 거시적 규모에 맞춘 단위계에서는 원자의 양자 작용량이 아주 작게 보일 수밖에 없다. 이는 별도의 동역학적 수수께끼가 아니다. 대체로 단위에 반영된 역사적·인간적 규모에서 비롯된 것이다.}
+\end{classroomqa}
+
+에르미트 켤레를 취하면
+\begin{equation}
+U^\dagger(\epsilon)
+=I+\frac{i\epsilon}{\hbar}H^\dagger.
+\end{equation}
+이제 곱한 뒤 1차 항까지만 남기면
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(I+\frac{i\epsilon}{\hbar}H^\dagger\right)
+\left(I-\frac{i\epsilon}{\hbar}H\right) \\
+&=
+I+\frac{i\epsilon}{\hbar}\left(H^\dagger-H\right)
++O(\epsilon^2).
+\end{align}
+유니터리성이 이 곱을 \(I\)와 같게 하므로
+\begin{equation}
+\boxed{H^\dagger=H}.
+\end{equation}
+시간 진화의 무한소 생성자는 에르미트다. 에르미트 연산자는 관측량을 나타내므로, 모든 동역학계에는 시간에 따른 진화를 생성하는 관측량이 존재한다. 이것이 해밀토니안이다. 연산자는 \(H\)로 표기하고, 측정될 수 있는 값인 고유값은 \(E\)로 나타내겠다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:34}
+\audiencequestion{왜 이 생성자를 에너지라고 불러야 하나요? 에너지는 \(p^2/2m\), 즉 일을 할 수 있는 능력이 아닌가요?}
+\lecturerresponse{그것들은 특수한 고전적 상황에서 유용한 설명이지, 일반적인 정의는 아니다. 식 \(p^2/2m\)은 비상대론적 자유 입자의 운동에너지만 나타내며, 전자기장에 저장된 에너지 같은 것을 정의하지는 않는다. 추상적인 계에서 에너지에 요구할 첫 번째 보편적 성질은 보존이다. 곧 \(H\)의 기댓값이 보존됨을 증명하고, 고유상태의 위상도 \(E=\hbar\omega\)를 만족함을 보이겠다. 이 두 사실이 생성자를 에너지로 식별해 준다.}
+\end{classroomqa}
+
+\section{짧은 시간 간격에서 Schr\"odinger 방정식으로}
+
+무한소 시간 갱신식에는 미분 방정식이 이미 함축되어 있다. 임의의 시간 원점에서
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+\lim_{\epsilon\to0}
+\frac{\ket{\psi(t+\epsilon)}-\ket{\psi(t)}}{\epsilon}.
+\end{equation}
+칠판에는 먼저 \(t=0\)인 경우를 적었고, 시간 원점을 옮기면 위의 일반형을 얻는다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_03.png}
+\caption{무한소 시간 진화를 미분 방정식으로 바꾸는 차분몫.}
+\lectureframe{00:22:15}
+\end{figure}
+
+다음 식을 이용하자.
+\begin{equation}
+\ket{\psi(t+\epsilon)}
+=
+\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}.
+\end{equation}
+그러면
+\begin{align}
+\frac{d}{dt}\ket{\psi(t)}
+&=
+\lim_{\epsilon\to0}
+\frac{\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}
+-\ket{\psi(t)}}{\epsilon} \\
+&=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{align}
+동등하게
+\begin{equation}
+\boxed{
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+이것이 Schr\"odinger 방정식이다. \(H\)와 한 시점에서의 상태를 알면 이후 시간의 상태가 결정된다. 그러면 이후 측정에서 얻을 확률은 통상적인 측정 규칙에 따라 구할 수 있다.
+
+\section{에너지 고유상태와 회전하는 위상}
+
+가장 간단한 해는 해밀토니안의 고유벡터에서 시작한다.
+\begin{equation}
+H\ket{\psi_E}=E\ket{\psi_E}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_09_figure_04.png}
+\caption{칠판에 적힌 에너지 고유값 방정식.}
+\lectureframe{00:28:22}
+\end{figure}
+
+\(H\)가 \(\ket{\psi_E}\)를 같은 1차원 방향으로 보내므로, 시간 진화는 이 상태를 다른 고유벡터와 섞을 수 없다. 상태에 스칼라만 곱할 수 있다.
+\begin{equation}
+\ket{\psi_E(t)}=f(t)\ket{\psi_E}.
+\end{equation}
+이를 Schr\"odinger 방정식에 대입하면
+\begin{align}
+i\hbar\,\dot f(t)\ket{\psi_E}
+&=
+f(t)H\ket{\psi_E} \\
+&=
+E f(t)\ket{\psi_E}.
+\end{align}
+따라서
+\begin{equation}
+\dot f(t)=-\frac{iE}{\hbar}f(t),
+\qquad
+f(t)=e^{-iEt/\hbar},
+\end{equation}
+그리고
+\begin{equation}
+\boxed{
+\ket{\psi_E(t)}
+=e^{-iEt/\hbar}\ket{\psi_E(0)}
+}.
+\end{equation}
+에너지 고유상태는 힐베르트 공간에서 그 상태가 나타내는 광선이 움직이지 않는다는 의미에서 정상 상태다. 그렇더라도 켓에는 위상이 누적된다.
+
+지수함수는 다음과 같이 쓸 수 있다.
+\begin{equation}
+e^{-iEt/\hbar}
+=
+\cos\!\left(\frac{Et}{\hbar}\right)
+-i\sin\!\left(\frac{Et}{\hbar}\right).
+\end{equation}
+칠판 계산 중 부호가 빠져 있던 마이너스 부호와 사인 안에 추가로 들어가 있던 \(i\)를 바로잡았다. 각주파수는
+\begin{equation}
+\omega=\frac{E}{\hbar},
+\qquad
+\boxed{E=\hbar\omega}.
+\end{equation}
+일반 진동수 \(\nu=\omega/(2\pi)\)를 쓰면 동등하게 \(E=h\nu\)가 성립한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_09_figure_05.png}
+\caption{위상 해와 에너지--진동수 관계를 인접한 두 칠판에 전개했다.}
+\lectureframe{00:36:19}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:43}
+\audiencequestion{계산에서 필요해지기도 전에 무한소 연산자에 \(i\)와 \(\hbar\) 인자를 넣은 이유는 무엇인가요?}
+\lecturerresponse{답을 염두에 두고 정한 관례다. \(i\)가 없으면 유니터리성으로 인해 생성자는 반에르미트가 된다. 여기에 \(i\)를 곱하면 실수 고유값을 갖는 에르미트 관측량이 된다. \(\hbar\) 인자는 고유값에 에너지의 단위와 표준 정규화 관례를 부여한다. 물리적 진술은 유니터리성이고, 이 인자들은 그 생성자를 표준적인 형태로 쓴 것이다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:18}
+\audiencequestion{\(E=\hbar\omega\)는 전자기파와 광자에만 해당하나요?}
+\lecturerresponse{아니다. 광자는 중요한 한 사례지만, 이 관계는 더 일반적이다. 어떤 해밀토니안 고유상태든 각주파수 \(E/\hbar\)로 위상을 얻는다. 전자기장 모드의 진동수와 그 광자의 진동수를 연결하려면 더 많은 물리가 필요하지만, 에너지--위상 관계 자체는 양자 시간 진화에서 이미 따라 나온다.}
+\end{classroomqa}
+
+\section{에너지 기저에서의 중첩}
+
+하나의 에너지 고유상태는 전체 위상만 변하며, 전체 위상은 확률에 영향을 줄 수 없다. 흥미로운 동역학은 상태에 여러 에너지 고유벡터가 포함될 때 시작된다. 에르미트 해밀토니안은 완비 직교 고유기저를 가지므로
+\begin{equation}
+H\ket{\psi_n}=E_n\ket{\psi_n},
+\qquad
+\ket{\psi(0)}=\sum_n\alpha_n\ket{\psi_n}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_06.png}
+\caption{임의의 상태를 해밀토니안 고유벡터로 전개한 식.}
+\lectureframe{00:38:35}
+\end{figure}
+
+선형성에 따라 각 성분은 독립적으로 진화한다.
+\begin{equation}
+\boxed{
+\ket{\psi(t)}
+=
+\sum_n\alpha_n e^{-iE_n t/\hbar}\ket{\psi_n}
+}.
+\end{equation}
+에너지가 높은 성분은 복소평면에서 빠르게 회전하고, 에너지가 낮은 성분은 더 느리게 회전한다. 측정 가능한 확률을 바꾸는 것은 상태 전체에 공통으로 곱해지는 위상이 아니라, 서로 다른 \(E_n\)를 가진 성분들 사이의 상대 위상이 변하는 것이다.
+
+에너지 기저에서는
+\begin{equation}
+\begin{aligned}
+H&=
+\begin{pmatrix}
+E_1&0&\cdots\\
+0&E_2&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix},\\[0.6em]
+U(t)&=
+\begin{pmatrix}
+e^{-iE_1t/\hbar}&0&\cdots\\
+0&e^{-iE_2t/\hbar}&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix}.
+\end{aligned}
+\end{equation}
+시간에 무관한 해밀토니안에 대해서는 기저를 선택하지 않고 다음과 같이 요약할 수 있다.
+\begin{equation}
+\boxed{U(t)=e^{-iHt/\hbar}},
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:17}
+\audiencequestion{이 전개는 본질적으로 푸리에 급수인가요? 열전도에서 쓰는 전개와 비슷한가요?}
+\lecturerresponse{실제로 시간에 관한 푸리에 전개와 비슷하다. 각 에너지 고유벡터가 하나의 특정한 진동수를 갖기 때문이다. 푸리에 및 라플라스 방법은 확산을 비롯한 여러 고전 방정식에서도 모드를 분리한다. 수학적 유사성은 분명하지만, 어떤 물리량이 진동수에 대응하는지에 관한 주장은 경우마다 확인해야 한다. 양자역학에서는 구체적인 관계가 Schr\"odinger 방정식으로 정해진다.}
+\end{classroomqa}
+
+\subsection{계의 결합}
+
+서로 상호작용하지 않는 두 계 \(A\)와 \(B\)에 대해, 결합계의 해밀토니안은 곱공간에서 각 생성자를 따로 작용시킨 항들의 합이다.
+\begin{equation}
+H_{AB}
+=
+H_A\otimes I_B+I_A\otimes H_B.
+\end{equation}
+만약
+\begin{equation}
+H_A\ket{a}=E_a\ket{a},
+\qquad
+H_B\ket{b}=E_b\ket{b},
+\end{equation}
+라면
+\begin{equation}
+H_{AB}\ket{a,b}=(E_a+E_b)\ket{a,b}.
+\end{equation}
+분리되어 있고 상호작용하지 않는 계에서는 에너지가, 따라서 위상의 진동수도 더해진다. 상호작용이 있으면 \(H_{\mathrm{int}}\)라는 항이 추가되므로, 이 단순한 합만으로는 전체 에너지를 나타낼 수 없다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:20}
+\audiencequestion{두 개별 계에 같은 진동수를 갖는 성분이 있다면, 두 계를 결합할 때 어떤 일이 일어나나요?}
+\lecturerresponse{상호작용하지 않는 계에서는 결합계의 에너지 고유값이 각 계의 고유값을 더한 값이다. 두 진동수가 같으면 축퇴가 생길 수는 있지만, 그 사실만으로 해당 고유벡터들이 서로 섞이지는 않는다. 혼합이 일어나려면 상호작용 항이 있거나 축퇴 부분공간 안에서 기저를 선택해야 한다. 계들이 상호작용하기 시작하면 확장된 해밀토니안을 새로운 문제로 보고 대각화해야 한다.}
+\end{classroomqa}
+
+\section{기댓값과 교환자}
+
+관측량은 고정해 둔 채 상태의 진화를 따라왔다. 이는 Schr\"odinger 그림이다. 명시적인 시간 의존성이 없는 관측량을 \(A\)라 하자. 그 기댓값은
+\begin{equation}
+\langle A\rangle_t
+=
+\bra{\psi(t)}A\ket{\psi(t)}.
+\end{equation}
+브라와 켓을 각각 미분하면
+\begin{equation}
+\frac{d}{dt}\langle A\rangle_t
+=
+\bra{\dot\psi}A\ket{\psi}
++
+\bra{\psi}A\ket{\dot\psi}.
+\end{equation}
+Schr\"odinger 방정식과 그 에르미트 켤레에 따라
+\begin{equation}
+\ket{\dot\psi}
+=-\frac{i}{\hbar}H\ket{\psi},
+\qquad
+\bra{\dot\psi}
+=\frac{i}{\hbar}\bra{\psi}H.
+\end{equation}
+따라서
+\begin{align}
+\frac{d}{dt}\langle A\rangle_t
+&=
+\frac{i}{\hbar}\bra{\psi}HA\ket{\psi}
+-\frac{i}{\hbar}\bra{\psi}AH\ket{\psi} \\
+&=
+\frac{i}{\hbar}\bra{\psi}(HA-AH)\ket{\psi}.
+\end{align}
+교환자를 다음과 같이 정의하자.
+\begin{equation}
+[H,A]=HA-AH.
+\end{equation}
+그러면 기댓값의 운동 방정식은 다음과 같다.
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle A\rangle_t
+=
+\frac{i}{\hbar}\langle[H,A]\rangle_t
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_07.png}
+\caption{기댓값 방정식과 교환자 \(AB-BA=[A,B]\).}
+\lectureframe{00:51:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:13}
+\audiencequestion{이 방정식에서 교환자 자체가 왜 기댓값 안에 들어가나요?}
+\lecturerresponse{교환자는 연산자다. \(\bra{\psi}\)와 \(\ket{\psi}\) 사이에 놓인 연산자는 무엇이든 기댓값을 가지므로, \(\bra{\psi}[H,A]\ket{\psi}\)는 현재 상태에서 그 교환자의 평균을 나타낼 뿐이다.}
+\end{classroomqa}
+
+\subsection{보존 법칙}
+
+\(A=H\)로 놓자. 연산자는 언제나 자기 자신과 교환한다.
+\begin{equation}
+[H,H]=HH-HH=0.
+\end{equation}
+그러므로
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle H\rangle_t=0
+}.
+\end{equation}
+해밀토니안의 기댓값은 보존된다. 이것이 \(H\)를 에너지로 식별하는 구조적 근거다. 모든 고립계에는 해밀토니안이 있으며, 시간에 무관한 해밀토니안은 언제나 이 보존 법칙을 준다.
+
+더 일반적으로
+\begin{equation}
+[H,A]=0
+\quad\Longrightarrow\quad
+\frac{d}{dt}\langle A\rangle_t=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:41}
+\audiencequestion{\(H\)와 교환하는 모든 연산자의 집합은 물리적으로 어떻게 해석하나요? 에너지 이외의 양도 포함하나요?}
+\lecturerresponse{그 연산자들은 계의 보존 관측량이다. 어떤 관측량이 있는지는 해밀토니안에 달려 있다. 자유 입자는 운동량을 보존하지만, 힘이 작용하면 그 보존이 깨질 수 있다. \(H\)는 자기 자신과 교환하므로 에너지는 항상 포함되고, 이 밖에 교환하는 연산자는 추가적인 대칭과 보존 법칙을 나타낸다.}
+\end{classroomqa}
+
+\section{자기장에서의 스핀 하나}
+
+파울리 연산자
+\begin{equation}
+\boldsymbol{\sigma}
+=(\sigma_1,\sigma_2,\sigma_3)
+\end{equation}
+를 갖는 스핀이 고정된 외부 자기장 \(\mathbf B\) 안에 있다고 하자. 자기 모멘트는 스핀에 비례한다. 여기서 사용하는 관례는 다음과 같다.
+\begin{equation}
+\boxed{
+H=\frac{\mu}{2}\boldsymbol{\sigma}\cdot\mathbf B
+}.
+\end{equation}
+인자 \(1/2\), 부호, 그리고 전하에 따라 달라지는 크기는 \(\mu\)의 정의에 포함할 수 있다. 자기장은 고전적으로 다룬다. 크고 안정된 자석이 \(\mathbf B\)를 제공하며, 그 자석의 양자 상태는 모형화하지 않는다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_09_figure_08.png}
+\caption{외부 자기장과 결합하는 자기 모멘트 연산자.}
+\lectureframe{01:01:45}
+\end{figure}
+
+자기장이 세 번째 축 방향을 향하도록 잡자.
+\begin{equation}
+\mathbf B=B\hat{\mathbf z},
+\qquad
+H=\frac{\mu B}{2}\sigma_3.
+\end{equation}
+스핀 성분 세 가지의 기댓값을 추적하겠다. 식을 간결하게 쓰기 위해
+\begin{equation}
+s_i(t)=\langle\sigma_i\rangle_t.
+\end{equation}
+종방향 성분은 다음을 만족한다.
+\begin{equation}
+\dot s_3
+=
+\frac{i}{\hbar}\langle[H,\sigma_3]\rangle
+=0,
+\end{equation}
+\(H\)가 \(\sigma_3\)에 비례하기 때문이다. 자기장 방향에 대한 스핀의 투영값은 고정되어 있다. 기하학적으로는 평균 스핀의 끝점이 자기장 축을 중심으로 일정한 꼭짓각을 갖는 원뿔 위에 머물러야 한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_09_figure_09.png}
+\caption{종방향 스핀이 고정되면 자기장 축을 중심으로 한 원뿔 위에서 운동한다.}
+\lectureframe{01:04:45}
+\end{figure}
+
+첫 번째 횡방향 성분에 대해
+\begin{equation}
+\dot s_1
+=
+\frac{i\mu B}{2\hbar}
+\langle[\sigma_3,\sigma_1]\rangle.
+\end{equation}
+교환자는 다음 식으로 직접 확인할 수 있다.
+\begin{equation}
+\begin{aligned}
+\sigma_3&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+&
+\sigma_1&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.5em]
+\sigma_2&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix}.
+\end{aligned}
+\end{equation}
+실제로
+\begin{equation}
+\sigma_3\sigma_1=i\sigma_2,
+\qquad
+\sigma_1\sigma_3=-i\sigma_2,
+\end{equation}
+이므로
+\begin{equation}
+[\sigma_3,\sigma_1]=2i\sigma_2.
+\end{equation}
+따라서
+\begin{equation}
+\dot s_1=-\frac{\mu B}{\hbar}s_2.
+\end{equation}
+마찬가지로 \([\sigma_3,\sigma_2]=-2i\sigma_1\)를 이용하면
+\begin{equation}
+\dot s_2=\frac{\mu B}{\hbar}s_1.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_10.png}
+\caption{횡방향 운동 방정식으로 이어지는 파울리 교환자 계산.}
+\lectureframe{01:09:35}
+\end{figure}
+
+다음과 같이 두자.
+\begin{equation}
+\Omega=\frac{\mu B}{\hbar}.
+\end{equation}
+세 방정식은 다음과 같다.
+\begin{equation}
+\dot s_1=-\Omega s_2,
+\qquad
+\dot s_2=\Omega s_1,
+\qquad
+\dot s_3=0.
+\end{equation}
+횡방향 진폭이 \(s_\perp\)인 해는 다음과 같다.
+\begin{equation}
+s_1(t)=s_\perp\cos(\Omega t+\varphi),
+\qquad
+s_2(t)=s_\perp\sin(\Omega t+\varphi),
+\end{equation}
+여기서 \(s_3\)는 상수다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_09_figure_11.png}
+\caption{횡방향 스핀 성분은 각주파수 \(\mu B/\hbar\)를 갖는 사인--코사인 쌍을 이룬다.}
+\lectureframe{01:11:45}
+\end{figure}
+
+따라서 평균 스핀은 자이로스코프처럼 자기장 주위를 세차한다. 자기장이 \(z\) 방향을 향하도록 잡은 것은 편의를 위한 선택일 뿐이다. 어느 방향의 자기장에 대해서든, \(\mathbf B\)에 평행한 성분은 보존되고 수직 성분은 그 주위를 회전한다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:02}
+\audiencequestion{사인과 코사인 해에 위상이 추가로 들어가야 하나요?}
+\lecturerresponse{그렇다. 위상 \(\varphi\)는 횡방향 평면에서의 초기 방향을 지정하며, 다시 말해 \(t=0\)라고 부를 순간을 선택한다. 위상을 0으로 두는 것은 스핀이 특정 횡방향 축을 따라 시작하도록 선택하는 것일 뿐이다.}
+\end{classroomqa}
+
+\subsection{상태 준비와 측정}
+
+계가 \(+1\)의 \(\sigma_1\) 고유상태로 준비되었다고 하자. \(t=0\)에 \(\sigma_1\)를 측정하면 반드시 \(+1\)을 얻지만, \(\sigma_2\) 또는 \(\sigma_3\)를 측정하면 \(\pm1\)을 얻을 확률은 각각 같다. 세차 주기의 사분의 일이 지난 뒤 상태는 \(\sigma_2\)의 \(+1\) 고유상태로 회전한다. 이때 \(\sigma_2\)은 확정적이고 \(\sigma_1\)은 최대한 불확정하다. 다시 주기의 사분의 일이 지나면 \(\sigma_1\)의 \(-1\) 고유상태에 도달한다. 따라서 회전하는 기댓값은 직접적인 측정 의미를 갖는다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:04}
+\audiencequestion{기댓값을 구하려면 전자가 많이 필요한데, 앙상블의 구성원마다 위상이 달라 세차가 서로 상쇄되지 않나요?}
+\lecturerresponse{모든 구성원에게 같은 실험을 할 때는 그렇지 않다. 동일하게 준비하면 모든 전자는 같은 초기 상태를 가지므로 위상도 똑같이 진화한다. 초기 위상이 통제되지 않았다면 앙상블은 순수 상태로 준비된 것이 아니며, 위상 무작위화로 횡방향 평균이 작아질 수 있다.}
+\end{classroomqa}
+
+\section{결합된 스핀 두 개}
+
+이제 스핀 두 개를 살펴보자. 얽혀 있다고 말하는 것만으로는 이들이 어떻게 움직일지 예측하기에 충분하지 않다. 동역학을 알려면 해밀토니안이 필요하다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:49}
+\audiencequestion{두 전자가 얽혀 있어 공통된 임의의 축을 따라 측정하면 반대 결과가 나온다면, 두 전자의 운동은 언제나 위상이 \(180^\circ\) 어긋난다는 뜻인가요?}
+\lecturerresponse{얽힘만으로는 동역학에 관한 결론을 내릴 수 없다. 여기서 말한 반상관은 싱글렛 상태의 성질이지만, 그 이후의 진화는 에너지 연산자에 달려 있다. 먼저 외부 자기장이 있는지, 두 스핀 사이에 상호작용이 있는지, 또는 둘 다 있는지를 정해야 한다.}
+\end{classroomqa}
+
+각 스핀이 상대방이 느끼는 유효 자기장을 만드는 단순한 등방성 상호작용을 취하자.
+\begin{equation}
+\boxed{
+H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}
+=
+J\left(
+\sigma_1\tau_1+\sigma_2\tau_2+\sigma_3\tau_3
+\right)
+}.
+\end{equation}
+연산자 \(\boldsymbol{\sigma}\)는 첫 번째 스핀에, \(\boldsymbol{\tau}\)는 두 번째 스핀에 작용한다. 결합 상수 \(J\)는 에너지 척도를 정하며, 그 값과 부호는 여기서 지정하지 않는다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_09_figure_12.png}
+\caption{등방성 스핀 두 개의 상호작용 \(H\propto\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\).}
+\lectureframe{01:19:20}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:49}
+\audiencequestion{얽힌 두 전자를 균일한 자기장에 놓으면 반드시 얽힘이 풀리나요?}
+\lecturerresponse{반드시 그렇지는 않다. 자기장은 해밀토니안을 바꾸며, 특히 강한 자기장에서는 스핀을 정렬시키는 경향이 생길 수 있다. 그러나 균일한 자기장에서의 유니터리 진화만으로 얽힘이 반드시 사라지는 것은 아니다. 답은 전체 해밀토니안과 초기 상태에 달려 있다.}
+\end{classroomqa}
+
+\subsection{트립렛과 싱글렛 에너지}
+
+스핀 두 개의 힐베르트 공간은 4차원이다. 이 상호작용은 트립렛--싱글렛 기저에서 대각화되어 있다.
+\begin{align}
+\ket{T_+}&=\ket{\uparrow\uparrow}, \\
+\ket{T_0}&=
+\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt2}, \\
+\ket{T_-}&=\ket{\downarrow\downarrow}, \\
+\ket{S}&=
+\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt2}.
+\end{align}
+세 트립렛 상태는 같은 에너지 \(E_T\)를 갖고, 싱글렛은 다른 에너지 \(E_S\)를 갖는다. 따라서 서로 독립인 고유벡터는 네 개지만 서로 다른 에너지 준위는 두 개뿐이다. 트립렛 준위는 세 겹으로 축퇴되어 있다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_13.png}
+\caption{결합된 스핀의 해밀토니안에는 축퇴된 트립렛 준위와 별도의 싱글렛 준위가 있다.}
+\lectureframe{01:20:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:16}
+\audiencequestion{초기 상태가 이미 싱글렛 에너지 고유상태라면 어떻게 되나요?}
+\lecturerresponse{그 상태는 싱글렛으로 남고 위상 \(e^{-iE_St/\hbar}\)만 얻는다. 하나의 에너지 고유상태에서는 켓 전체에 공통 위상을 곱해도 측정 가능한 성질은 변하지 않는다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:54}
+\audiencequestion{이 계산에서 외부 자기장이 스핀 두 개로 이루어진 계에 에너지를 공급하나요?}
+\lecturerresponse{여기서 풀고 있는 예에는 외부 자기장이 없다. 논의 중인 유일한 장은 \(J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\)로 나타낸 상호작용이다. 외부 자기장을 추가하면 \(H\)에 항이 하나 더해져 다른 문제가 된다.}
+\end{classroomqa}
+
+\subsection{스핀 하나는 업, 다른 하나는 다운인 상태에서 시작하기}
+
+에너지 고유상태는 위상만 얻으므로, 에너지 고유상태가 아닌 곱 상태를 택하자.
+\begin{equation}
+\ket{\psi(0)}=\ket{\uparrow\downarrow}.
+\end{equation}
+이를 관련된 두 고유벡터로 분해하면
+\begin{equation}
+\boxed{
+\ket{\uparrow\downarrow}
+=
+\frac{1}{\sqrt2}\ket{T_0}
++
+\frac{1}{\sqrt2}\ket{S}
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_14.png}
+\caption{곱 상태 \(\ket{\uparrow\downarrow}\)를 트립렛과 싱글렛 성분으로 분해한 식.}
+\lectureframe{01:24:30}
+\end{figure}
+
+이제 각 에너지 성분은 서로 다른 위상을 얻는다.
+\begin{equation}
+\ket{\psi(t)}
+=
+\frac{e^{-iE_Tt/\hbar}}{\sqrt2}\ket{T_0}
++
+\frac{e^{-iE_St/\hbar}}{\sqrt2}\ket{S}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:25:59}
+\audiencequestion{트립렛 에너지 \(E_T\)와 싱글렛 에너지 \(E_S\) 중 어느 쪽이 더 큰가요?}
+\lecturerresponse{결합 상수의 부호에 달려 있다. \(H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\)에서 \(J>0\)이면 싱글렛 에너지가 더 낮고 트립렛 에너지가 더 높다. 부호를 반대로 바꾸면 순서도 뒤바뀐다. 두 에너지에 같은 상수를 더하면 전체 위상만 달라지므로, 전이 확률을 바꾸지 않고 어느 한 준위를 0으로 둘 수 있다.}
+\end{classroomqa}
+
+곱 기저로 되돌아가면
+\begin{align}
+\ket{\psi(t)}
+&=
+\frac12
+\left(
+e^{-iE_Tt/\hbar}+e^{-iE_St/\hbar}
+\right)\ket{\uparrow\downarrow} \\
+&\quad+
+\frac12
+\left(
+e^{-iE_Tt/\hbar}-e^{-iE_St/\hbar}
+\right)\ket{\downarrow\uparrow}.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_15.png}
+\caption{시간 진화한 상태를 \(\ket{\uparrow\downarrow}\), \(\ket{\downarrow\uparrow}\) 기저로 다시 표현한 식.}
+\lectureframe{01:30:40}
+\end{figure}
+
+\(t=0\)에서는 \(\ket{\downarrow\uparrow}\)의 계수가 사라지며, 그래야 한다. 이후에는 단일항 성분과 삼중항 성분 사이의 상대 위상 때문에 이 계수가 커진다. 평균 에너지와 에너지 차를 다음과 같이 정의하자.
+\begin{equation}
+\overline E=\frac{E_T+E_S}{2},
+\qquad
+\Delta E=E_T-E_S.
+\end{equation}
+평균 에너지에 해당하는 위상 인자를 묶어 내면 다음을 얻는다.
+\begin{equation}
+\boxed{
+\begin{aligned}
+\ket{\psi(t)}
+&=e^{-i\overline E t/\hbar}\Biggl[
+\cos\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\uparrow\downarrow}
+\\
+&\qquad
+-i\sin\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\downarrow\uparrow}
+\Biggr]
+\end{aligned}
+}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_16.png}
+\caption{평균 에너지는 공통 위상이 되고, 싱글렛--트립렛 에너지 차는 사인과 코사인 진폭에 나타난다.}
+\lectureframe{01:35:15}
+\end{figure}
+
+인자 \(e^{-i\overline E t/\hbar}\)는 전체 켓에 공통으로 곱해져 있으므로 모든 확률에서 소거된다. 측정 가능한 확률은 다음과 같다.
+\begin{equation}
+P_{\uparrow\downarrow}(t)
+=
+\cos^2\!\left(\frac{\Delta E\,t}{2\hbar}\right),
+\qquad
+P_{\downarrow\uparrow}(t)
+=
+\sin^2\!\left(\frac{\Delta E\,t}{2\hbar}\right).
+\end{equation}
+상태는 에너지 차이만으로 정해지는 속도로 \(\ket{\uparrow\downarrow}\)에서 \(\ket{\downarrow\uparrow}\)으로 진동한 뒤 되돌아온다. 중간 시각에는 두 진폭이 모두 존재하며, 특별한 순간을 제외하면 두 스핀은 얽혀 있다.
+
+이 계산은 일반적인 방법을 보여 준다. 물리적 질문이 제기된 기저를 선택하고, 초기 상태를 해밀토니안의 고유벡터로 전개한 다음, 각 고유벡터에 각자의 위상이 쌓이도록 진화시키고, 마지막으로 측정 기저에서 성분들을 다시 합친다. 해밀토니안을 대각화하면 양자 동역학은 체계적으로 다룰 수 있으며, 관측 가능한 운동은 모두 상대 위상에 담긴다.

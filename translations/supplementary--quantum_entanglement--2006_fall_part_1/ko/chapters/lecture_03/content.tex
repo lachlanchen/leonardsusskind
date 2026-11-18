@@ -1,0 +1,376 @@
+\chapter{에르미트 관측량, 스핀, 확률 규칙}
+
+\lectureoverview{양자역학은 확률을 계산하는 체계다. 이해를 구호로 대신하지 않고 이를 사용하려면 복소 위상, 정규화된 상태, 에르미트 관측량, 고윳값과 고유벡터, 직교성, 보른 규칙을 간결한 수학적 흐름으로 살펴봐야 한다. 이어 세 파울리 행렬을 이용해 이 흐름을 전자 스핀에 대한 구체적인 예측으로 바꿔 보자.}
+
+\section{극형식으로 나타낸 복소수}
+
+먼저 대수 계산에서 작은 걸림돌 하나를 없애자. 복소수 \begin{equation}
+  z=x+iy
+\end{equation}는 복소평면의 한 점이다. 여기서 \(x\)는 실수축 위에, \(y\)는 허수축 위에 놓인다. 이 점의 극좌표가 \((r,\theta)\)라면, \begin{equation}
+  x=r\cos\theta,
+  \qquad
+  y=r\sin\theta,
+\end{equation} 따라서 \begin{equation}
+  z=r(\cos\theta+i\sin\theta)=re^{i\theta}.
+  \label{eq:l03-polar-form}
+\end{equation}오일러 표기법은 각의 덧셈 공식을 지수법칙 하나로 나타낼 수 있어 유용하다. \begin{equation}
+  e^{i\theta}e^{i\phi}
+  =e^{i(\theta+\phi)}.
+  \label{eq:l03-phase-product}
+\end{equation} 실제로 삼각함수 형태로 나타낸 두 수를 곱하면 다음과 같다. \begin{align}
+& (\cos\theta+i\sin\theta)(\cos\phi+i\sin\phi)
+\notag\\
+&\qquad=\cos(\theta+\phi)+i\sin(\theta+\phi).
+\end{align}익숙한 덧셈 공식은 모두 이 한 번의 곱셈에 담겨 있다.
+
+복소켤레를 취하면 점은 실수축에 대해 반사된다. \begin{equation}
+  z^*=x-iy,
+  \qquad
+  (e^{i\theta})^*=e^{-i\theta}.
+\end{equation}따라서 \begin{equation}
+  e^{i\theta}e^{-i\theta}=1.
+\end{equation}형태가 \(e^{i\theta}\)인 수는 단위원 위에 있으며 \emph{순수 위상}이라 부른다. 영이 아닌 모든 복소수는 양의 절댓값과 순수 위상의 곱으로 나타낼 수 있다. \begin{equation}
+  z=|z|e^{i\theta},
+  \qquad
+  |z|^2=z^*z=x^2+y^2.
+  \label{eq:l03-modulus-phase}
+\end{equation}
+
+\begin{classroomqa}\lecturetimestamp{00:06:36}\audiencequestion{\(\theta\)을 \(-\theta\)로 바꾸면 복소평면에서 회전 방향이 반대로 바뀌나요?}\lecturerresponse{네. 양의 위상각과 음의 위상각은 단위원을 서로 반대 방향으로 돈다. 복소켤레를 취하면 \(e^{i\theta}\)가 \(e^{-i\theta}\)로 바뀌는데, 이는 반사된 점이자 역위상이다.}\end{classroomqa}
+
+오늘 필요한 복소수의 기초는 이것으로 충분하다. 절댓값, 위상, 복소켤레, 그리고 단위원이다.
+
+\section{확률 계산 체계로서의 양자역학}
+
+이제 공리로 넘어가자. 물리계는 \emph{상태}로 준비되고, 측정은 \emph{관측량}의 값을 묻는다. 양자역학은 가능한 답에 대한 확률을 제시한다.
+
+상태는 복소 벡터 공간의 벡터다. 두 준위 스핀계의 경우, \begin{equation}
+  \ket\psi=\alpha\ket{u}+\beta\ket{d},
+  \qquad
+  \ket{u}=\begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{d}=\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-two-level-state}
+\end{equation}계수는 위와 아래 상태를 얻을 확률을 정한다. \begin{equation}
+  P(u)=|\alpha|^2,
+  \qquad
+  P(d)=|\beta|^2,
+\end{equation}따라서 상태는 정규화되어야 한다. \begin{equation}
+  \braket{\psi}{\psi}
+  =|\alpha|^2+|\beta|^2
+  =1.
+  \label{eq:l03-state-normalization}
+\end{equation}차원은 보통 공간의 차원이 아니라 상태 공간에서 서로 독립인 대안의 개수를 뜻한다. 서로 배타적인 기저 상태가 세 개라면 서로 직교하는 세 개의 열벡터와 세 개의 진폭을 사용한다.
+
+확률만으로 진폭이 완전히 정해지는 것은 아니다. 순수 위상을 곱해도 크기는 변하지 않는다. \begin{equation}
+  |e^{i\theta}\alpha|^2=|\alpha|^2.
+\end{equation}따라서 진폭에는 이 한 기저에서 얻는 확률을 넘어서는 정보가 담겨 있다. 그 역할은 서로 다른 측정과, 이후에 살펴볼 시간 발달을 고려할 때 드러난다.
+
+기저 상태들은 서로 직교 정규다. \begin{equation}
+  \braket{u}{u}=\braket{d}{d}=1,
+  \qquad
+  \braket{u}{d}=\braket{d}{u}=0.
+\end{equation}이 직교성은 복소 상태 공간에서 성립한다. 아직은 이를 보통 3차원 공간에서 서로 직각인 두 화살표와 혼동해서는 안 된다. 이 구분은 강의 끝부분에서 결정적으로 중요해진다.
+
+\section{관측량은 왜 에르미트 연산자인가}
+
+실험 결과는 실수로 기록할 수 있다. 편의상 두 실수를 하나의 복소수로 묶어 나타낼 수는 있지만, 검출기의 눈금값 자체는 언제나 실수량으로 나누어 표현할 수 있다. 유한 차원에서 양자 관측량은 선형 연산자 가운데 특별한 부류인 에르미트 행렬로 나타낸다.
+
+먼저 행과 열을 서로 바꾸어 행렬을 전치해 보자. \begin{equation}
+  (M^T)_{ij}=M_{ji}.
+  \label{eq:l03-transpose}
+\end{equation}\(M^T=M\)를 만족하는 실수 행렬은 대칭 행렬이다. 복소 행렬에서는 이에 대응하는 연산이 에르미트 켤레다. \begin{equation}
+  M^\dagger=(M^T)^*,
+  \qquad
+  (M^\dagger)_{ij}=M_{ji}^*.
+  \label{eq:l03-dagger}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.88\linewidth]{lecture_03_figure_02.png}\caption{전치와 대칭에서 에르미트 켤레로 넘어가는 과정은 칠판의 한 도식에 담겨 있다.}\lectureframe{00:23:06}\end{figure}
+
+\begin{definition}\(M\)가 \emph{에르미트 행렬}이라는 것은 다음을 뜻한다. \begin{equation}
+  M^\dagger=M,
+  \qquad\text{equivalently}\qquad
+  M_{ij}=M_{ji}^*.
+  \label{eq:l03-hermitian}
+\end{equation}\end{definition}
+
+대각 성분은 \(M_{ii}=M_{ii}^*\)이므로 실수다. 서로 반사되는 비대각 성분은 복소켤레 쌍이다. 따라서 일반적인 이차 정사각 행렬의 형태는 다음과 같다. \begin{equation}
+  M=
+  \begin{pmatrix}
+    a&z\\
+    z^*&b
+  \end{pmatrix},
+  \qquad a,b\in\mathbb R.
+  \label{eq:l03-hermitian-two}
+\end{equation}에르미트 조건은 행렬에 대한 실수성 조건에 해당하지만, 모든 성분이 각각 실수여야 한다는 뜻은 아니다.
+
+첫 번째로 얻는 결과는 켤레에 관한 두 가지 기본 항등식에서 나온다. \begin{equation}
+  \braket{B}{A}=\braket{A}{B}^*,
+  \label{eq:l03-inner-conjugation}
+\end{equation}그리고 임의의 \(M\)에 대해 \begin{equation}
+  \bra B M\ket A
+  =
+  \bigl(\bra A M^\dagger\ket B\bigr)^*.
+  \label{eq:l03-matrix-element-conjugation}
+\end{equation}\(\bra B M\ket A\)는 수, 즉 \(BA\) 원소인 \(M\)의 행렬 성분이다. \(M\)가 에르미트 행렬이고 \(B=A\)라면, \begin{equation}
+  \bra A M\ket A
+  =
+  \bigl(\bra A M\ket A\bigr)^*.
+\end{equation}따라서 이 값은 실수다.
+
+\begin{proposition}\(M\)가 에르미트 행렬이면, 기대값 \begin{equation}
+  \expect{M}_A=\bra A M\ket A
+  \label{eq:l03-expectation}
+\end{equation}는 모든 정규화된 상태 \(\ket A\)에서 실수다.\end{proposition}
+
+기대값의 확률론적 의미는 뒤에서 더 살펴보겠지만, 이 값이 실수라는 사실만으로도 에르미트 연산자가 관측량의 자연스러운 후보인 이유를 알 수 있다.
+
+\begin{classroomqa}\lecturetimestamp{00:33:22}\audiencequestion{평균을 나타내는 꺾쇠 괄호 표기는 브라-켓 표기법에서 온 건가요?-- }\lecturerresponse{네. 디랙의 브라-켓 표기법에 같은 괄호가 쓰입니다. \(\bra A M\ket A\)에서는 상태를 나타내는 브라와 켓 사이에 연산자가 놓이며, 그 결과가 기대값입니다.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{00:34:31}\audiencequestion{물리량 자체가 허수인 측정값을 가질 수 있나요? 측정값이 실수라면 양자역학에는 왜 복소수가 필요한가요?}\lecturerresponse{측정 결과의 집합은 언제나 실수로 기록할 수 있습니다. 두 실수를 하나의 복소수로 묶어 나타내기로 하더라도 마찬가지입니다. 더 핵심적인 질문은 이론이 왜 복소 진폭을 필요로 하는가입니다. 이 질문은 잠시 남겨 두자. 그 답은 아직 도입하지 않은 가역적인 시간 발달과 관련이 있다. 이론을 실수 벡터로만 제한하면 중요한 가능성을 잃게 된다.}\end{classroomqa}
+
+수학은 장식이 아니다. 수학이 없으면 얽힘을 신비로운 것처럼 말하면서도 그 의미를 정의하지 못할 수 있다. 이후 두 계를 제대로 결합할 수 있도록, 가장 단순한 경우인 두 준위 계 하나부터 계속 살펴보자.
+
+\section{고윳값은 가능한 측정 결과다}
+
+\begin{definition}\(\ket a\)가 영벡터가 아니고, \(M\)에 대해 \(\lambda_a\)을 고윳값으로 하는 고유벡터라는 것은 다음을 뜻한다. \begin{equation}
+  M\ket a=\lambda_a\ket a.
+  \label{eq:l03-eigenvalue-equation}
+\end{equation}\end{definition}행렬은 벡터의 길이나 위상을 바꿀 수 있지만, 상태 공간에서 그 벡터를 다른 방향으로 바꾸지는 않는다.
+
+에르미트 행렬의 고윳값은 실수다. 식~\eqref{eq:l03-eigenvalue-equation}의 왼쪽에 \(\bra a\)를 곱하면 \begin{equation}
+  \bra a M\ket a
+  =\lambda_a\braket{a}{a}.
+\end{equation}왼쪽은 에르미트 조건에 의해 실수이고, 오른쪽의 노름은 실수이자 양수다. 따라서 \begin{equation}
+  \lambda_a
+  =
+  \frac{\bra a M\ket a}{\braket{a}{a}}
+  \in\mathbb R.
+  \label{eq:l03-real-eigenvalue}
+\end{equation}
+
+이제 물리적 의미를 말해 보자. \(M\)가 관측량을 나타내면, 그 고윳값은 \(M\)를 측정했을 때 나올 수 있는 값이다. \(\lambda_a\)에 해당하는 고유벡터는 그 값이 확실하게 나오는 상태다.
+
+가장 간단한 예는 대각 행렬이다. \begin{equation}
+  M=
+  \begin{pmatrix}
+    m_{11}&0\\
+    0&m_{22}
+  \end{pmatrix}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_03.png}\caption{첫 번째 대각 행렬 예시 위에 추상적인 고윳값 방정식이 놓여 있다.}\lectureframe{00:44:04}\end{figure}
+
+직접 곱해 보면 다음과 같다. \begin{align}
+  M\begin{pmatrix}1\\0\end{pmatrix}
+  &=m_{11}\begin{pmatrix}1\\0\end{pmatrix},
+  \notag\\
+  M\begin{pmatrix}0\\1\end{pmatrix}
+  &=m_{22}\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-diagonal-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_04.png}\caption{아래 기저 벡터에 아래쪽 대각 성분을 곱한 결과가 나온다.}\lectureframe{00:45:58}\end{figure}
+
+더 큰 대각 행렬에서도 같은 규칙이 성립한다. 대각 성분은 고윳값이고, 표준 원-핫 열벡터는 고유벡터다.
+
+\section{세 스핀 행렬}
+
+제3축 방향 전자 스핀에는 다음 행렬을 택하자. \begin{equation}
+  \sigma_3=
+  \begin{pmatrix}
+    1&0\\
+    0&-1
+  \end{pmatrix}.
+\end{equation}고유상태는 고윳값 \(+1\)를 갖는 \(\ket u=(1,0)^T\)와 고윳값 \(-1\)을 갖는 \(\ket d=(0,1)^T\)다. 따라서 검출기가 측정할 수 있는 값은 이 두 고윳값이다.
+
+제1축 방향 스핀 행렬은 다음과 같다. \begin{equation}
+  \sigma_1=
+  \begin{pmatrix}
+    0&1\\
+    1&0
+  \end{pmatrix}.
+\end{equation}임의의 영이 아닌 스칼라를 고유벡터에 곱해도 고유벡터로 남으므로, 먼저 정규화하지 않은 후보 고유벡터를 적자. 다만 물리적 상태는 정규화되어야 한다. \begin{align}
+  \ket{x+}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},
+  &
+  \sigma_1\ket{x+}&=+\ket{x+},
+  \notag\\
+  \ket{x-}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix},
+  &
+  \sigma_1\ket{x-}&=-\ket{x-}.
+  \label{eq:l03-sigma-one-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_05.png}\caption{비대각 행렬과 동일한 가중치의 후보 벡터를 곱셈을 마치기 전에 제시한다.}\lectureframe{00:50:29}\end{figure}
+
+\begin{classroomqa}\lecturetimestamp{00:56:45}\audiencequestion{\(\sigma_1\)의 고유벡터를 대수적으로 구하지 않고 기하학적으로 볼 수 있나요?}\lecturerresponse{실수 2성분 그림에서 \(\sigma_1\)은 기저 방향 \(E_1\)와 \(E_2\)를 서로 맞바꾼다. 대각선 방향 \((1,1)^T\)는 그대로 유지되고, 다른 대각선 방향 \((1,-1)^T\)는 부호가 바뀐다. 따라서 이들은 각각 고윳값 \(+1\)과 \(-1\)을 갖는 고유벡터다. 이는 성분 공간에서의 그림이며, 물리적인 스핀 검출기의 방향에 관한 설명은 아니다.}\end{classroomqa}
+
+나머지 행렬은 다음과 같다. \begin{equation}
+  \sigma_2=
+  \begin{pmatrix}
+    0&-i\\
+    i&0
+  \end{pmatrix},
+\end{equation}정규화된 고유벡터는 다음과 같다. \begin{equation}
+  \ket{y+}=\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix},
+  \qquad
+  \ket{y-}=\frac{1}{\sqrt2}\begin{pmatrix}1\\-i\end{pmatrix}.
+  \label{eq:l03-sigma-two-eigenvectors}
+\end{equation}고윳값은 여기서도 \(+1\)와 \(-1\)이다.
+
+세 행렬을 각각 제곱하면 항등 행렬이 된다. \begin{equation}
+  \sigma_1^2=\sigma_2^2=\sigma_3^2=I.
+  \label{eq:l03-pauli-squares}
+\end{equation}\(\sigma_i\ket a=\lambda\ket a\)라면 \(\sigma_i\)을 두 번 적용한 결과는 \(\lambda^2=1\)이므로, \(\lambda=\pm1\)이다. 스펙트럼이 같다는 사실은 이 행렬들이 서로 동등한 공간축 방향의 스핀 성분을 나타낸다는 첫 번째 단서다.
+
+\section{서로 다른 결과에는 직교 상태가 필요하다}
+
+다음 정리를 증명하기 전에 그 의미부터 말해 보자. 하나의 관측량이 두 상태에서 서로 다른 확정적인 답을 준다면, 그 관측량을 측정해 두 상태를 완벽하게 구별할 수 있다. 양자역학에서는 이러한 완벽한 구별 가능성을 직교성으로 나타낸다.
+
+\begin{theorem}\(M\)를 에르미트 행렬이라 하고, \begin{equation}
+  M\ket A=\lambda_A\ket A,
+  \qquad
+  M\ket B=\lambda_B\ket B.
+\end{equation}라 하자. \(\lambda_A\ne\lambda_B\)이면, \begin{equation}
+  \braket{B}{A}=0.
+\end{equation}\end{theorem}
+
+\begin{proof}첫 번째 고윳값 방정식의 왼쪽에 \(\bra B\)를 곱하면 \begin{equation}
+  \bra B M\ket A=\lambda_A\braket{B}{A}.
+\end{equation}에르미트 조건과 두 번째 고윳값 방정식에 따르면 같은 행렬 성분을 다음처럼 쓸 수 있다. \begin{equation}
+  \bra B M\ket A=\lambda_B\braket{B}{A},
+\end{equation}이는 \(\lambda_B\)가 실수이기 때문이다. 두 식을 빼면 \begin{equation}
+  (\lambda_A-\lambda_B)\braket{B}{A}=0.
+\end{equation}고윳값이 서로 다르므로 내적은 영이어야 한다.\end{proof}
+
+\(\sigma_1\)의 고유벡터로 바로 확인할 수 있다. \begin{equation}
+  \braket{x+}{x-}
+  =
+  \frac12
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\-1\end{pmatrix}
+  =\frac12-\frac12=0.
+\end{equation}반대로, 직교하는 두 상태를 구별하는 측정이 존재한다. 따라서 직교성은 단순한 기하학 용어가 아니라 조작적 의미를 갖는다.
+
+\section{확률 공리}
+
+계가 정규화된 상태 \(\ket B\)로 준비되었다고 하자. \(M\)를 관측량이라 하고, \(M\)의 정규화된 고유벡터 \(\ket A\)가 고윳값 \(\lambda_A\)에 대응한다고 하자. \(M\)를 측정해 \(\lambda_A\)를 얻을 확률은 다음과 같다. \begin{equation}
+  P(\lambda_A\mid B)
+  =
+  |\braket{A}{B}|^2
+  =
+  \braket{A}{B}\braket{B}{A}.
+  \label{eq:l03-born-rule}
+\end{equation}이 곱은 실수이며 음이 아니다. 정규화된 벡터의 경우 이 값은 1을 넘지 않는다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_06.png}\caption{확률 규칙은 겹침 진폭과 그 복소켤레의 곱으로 쓰여 있다.}\lectureframe{01:16:40}\end{figure}
+
+\begin{classroomqa}\lecturetimestamp{01:19:19}\audiencequestion{두 상태 사이 각의 코사인 제곱인가요?}\lecturerresponse{보통의 유클리드 공간에서 실수 단위 벡터의 내적은 어떤 각의 코사인이다. 여기서 내적은 일반적으로 복소수이므로, 그 코사인이 되는 보통의 공간 각도는 없다. 이에 대응하는 유용한 양은 겹침 진폭의 크기이며, 확률은 그 절댓값의 제곱이다.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{01:20:18}\audiencequestion{준비된 상태가 다른 고윳값을 갖는 \(M\)의 또 다른 고유벡터라면 어떻게 되나요?}\lecturerresponse{그러면 두 고유벡터는 직교한다. 둘의 겹침 진폭이 영이므로 \(\lambda_A\)를 얻을 확률도 영이다. 하나의 확정된 값으로 상태를 준비하면 같은 관측량의 다른 확정값은 배제된다.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{01:21:23}\audiencequestion{어떤 결과도 확실하지 않은 상태로 준비하는 경우에도 같은 규칙을 쓸 수 있나요?}\lecturerresponse{네. 일반적으로는 그런 경우다. \(\ket B\)가 \(M\)의 고유상태일 필요는 없다. 이 상태와 정규화된 고유벡터들의 겹침 진폭이 각 결과를 얻을 확률을 준다. 더 복잡한 확률 분포를 다루기 전에 두 결과가 가능한 예부터 살펴보고 있다.}\end{classroomqa}
+
+이 강의에서는 규칙을 하나의 공식에 감추지 않고, 여러 준비 상태를 이용해 살펴본다.
+
+먼저 \(\sigma_3=+1\)로 준비하자. \begin{equation}
+  \ket B=\ket{u}=\begin{pmatrix}1\\0\end{pmatrix}.
+\end{equation}\(\sigma_1\)를 측정한다. 그중 고윳값 \(+1\)에 대응하는 고유벡터에 대해 \begin{equation}
+  \braket{x+}{u}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\0\end{pmatrix}
+  =\frac{1}{\sqrt2},
+\end{equation}이므로, \begin{equation}
+  P(\sigma_1=+1\mid\sigma_3=+1)=\frac12.
+\end{equation}\(\ket{x+}\) 대신 \(\ket{x-}\)를 써도 확률은 같다. 준비와 측정의 순서를 바꾸어도 겹침 진폭의 절댓값 제곱은 대칭이므로 확률은 1/2이다.
+
+실제로 복소수인 예를 보자. \(\ket{x+}\)로 준비하고 \(\sigma_2\)를 측정하면, \begin{align}
+  \braket{y+}{x+}
+  &=
+  \frac12
+  \begin{pmatrix}1&-i\end{pmatrix}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =\frac{1-i}{2},
+  \notag\\
+  P(\sigma_2=+1\mid\sigma_1=+1)
+  &=\left|\frac{1-i}{2}\right|^2
+  =\frac14+\frac14
+  =\frac12.
+  \label{eq:l03-complex-probability-example}
+\end{align}한 축 방향으로 스핀을 준비한 뒤 그 축에 수직인 축 방향으로 측정하면 두 결과가 나올 확률은 같다.
+
+\section{검출기 방향, 상태, 임의의 축}
+
+앞 문장은 용어를 바로잡지 않으면 오해할 수 있다. 자기 모멘트에는 공간상의 방향이 있으며, 이를 \emph{포인터}라고 부르겠다. 켓은 복소 상태 공간의 벡터다. 공간에서 두 포인터는 서로 수직일 수 있고, 두 상태 벡터는 서로 직교할 수 있다. 이는 서로 다른 공간에서 성립하는 서로 다른 설명이다.
+
+\begin{classroomqa}\lecturetimestamp{01:29:25}\audiencequestion{두 물리적 스핀 방향이 서로 90도라면, 그 상태 벡터는 직교해야 하나요?}\lecturerresponse{아니다. 서로 수직인 공간축 방향의 스핀 업 상태는 겹침 진폭 절댓값의 제곱이 \(1/2\)이지 영이 아니다. 한 축의 스핀 업 상태에 직교하는 상태는 바로 그 축 방향의 스핀 다운 상태다. 보통 공간의 포인터에는 \emph{수직}을, 완벽하게 구별 가능한 상태에는 \emph{직교}를 사용하자.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{01:31:25}\audiencequestion{\emph{독립}이라는 말을 \emph{직교} 대신 써도 될까요?}\lecturerresponse{안 된다. 선형 독립은 어떤 벡터도 다른 벡터의 스칼라배가 아니라는 뜻일 뿐, 내적이 영이어야 한다는 뜻은 아니다. 직교성은 더 강한 조건이며, 여기서는 완벽한 구별 가능성이라는 물리적 의미를 갖는다.}\end{classroomqa}
+
+\(\hat n=(n_1,n_2,n_3)\)를 보통 공간의 단위 포인터라 하자. \begin{equation}
+  n_1^2+n_2^2+n_3^2=1.
+\end{equation}그 방향의 스핀 연산자는 내적을 행렬값으로 확장한 것에 해당한다. \begin{equation}
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3
+  =
+  \begin{pmatrix}
+    n_3&n_1-in_2\\
+    n_1+in_2&-n_3
+  \end{pmatrix}.
+  \label{eq:l03-spin-arbitrary-axis}
+\end{equation}이 연산자는 에르미트 행렬이다. 대각 성분은 실수이고 비대각 성분은 서로 복소켤레다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\linewidth]{lecture_03_figure_07.png}\caption{공간상의 단위 포인터, 연산자 합, 그리고 이를 구체적으로 나타낸 에르미트 행렬을 함께 전개한다.}\lectureframe{01:38:00}\end{figure}
+
+가능한 값을 구하려면 행렬 성분을 대입하기 전에 먼저 제곱하자. 행렬의 곱에서는 순서가 중요하므로 교차항은 반교환자로 나타난다. \begin{align}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  &=
+  n_1^2\sigma_1^2+n_2^2\sigma_2^2+n_3^2\sigma_3^2
+  \notag\\
+  &\quad
+  +n_1n_2(\sigma_1\sigma_2+\sigma_2\sigma_1)
+  \notag\\
+  &\quad
+  +n_2n_3(\sigma_2\sigma_3+\sigma_3\sigma_2)
+  \notag\\
+  &\quad
+  +n_1n_3(\sigma_1\sigma_3+\sigma_3\sigma_1).
+  \label{eq:l03-axis-square-expanded}
+\end{align}서로 다른 파울리 행렬은 반교환한다. \begin{equation}
+  \sigma_i\sigma_j+\sigma_j\sigma_i=0
+  \qquad(i\ne j).
+  \label{eq:l03-pauli-anticommutation}
+\end{equation}강의에서는 한 가지 경우를 직접 확인한다. \begin{equation}
+  \sigma_1\sigma_3
+  =
+  \begin{pmatrix}0&-1\\1&0\end{pmatrix},
+  \qquad
+  \sigma_3\sigma_1
+  =
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  =-\sigma_1\sigma_3.
+  \label{eq:l03-order-check}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.82\linewidth]{lecture_03_figure_08.png}\caption{\(\sigma_1\)과 \(\sigma_3\)을 서로 반대 순서로 곱하면 부호만 다른 행렬이 나온다.}\lectureframe{01:44:50}\end{figure}
+
+식~\eqref{eq:l03-axis-square-expanded}의 교차항은 사라지고, \(\sigma_i^2=I\)이다. 따라서 \begin{equation}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  =(n_1^2+n_2^2+n_3^2)I
+  =I.
+\end{equation}모든 고윳값은 \(\lambda^2=1\)을 만족한다. \begin{equation}
+  \lambda=\pm1.
+\end{equation}장치가 어느 공간축을 선택하든 검출 결과는 여전히 \(+1\)와 \(-1\), 두 가지뿐이다. 서로 가까운 방향 사이의 관계는 중간 측정값이 아니라 이 두 고정된 결과의 확률에 나타난다.

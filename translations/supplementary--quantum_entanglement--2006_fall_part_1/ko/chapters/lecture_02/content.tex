@@ -1,0 +1,427 @@
+\chapter{큐비트, 복소 상태 벡터와 관측량}
+
+\lectureoverview{전자 스핀 하나는 진정한 양자 비트의 첫 사례다. 공간의 어느 방향을 기준으로든 전자를 준비할 수 있지만, 고정된 검출기는 두 가지 결과만 내놓는다. 고전적인 자기 모형이 성립하지 않는 지점을 살펴본 뒤, 실험에서 실제로 일어나는 일을 기술하는 데 필요한 복소 벡터 공간, 확률 규칙, 행렬 언어를 구성한다.}
+
+\section{하나의 스핀과 벡터의 두 가지 의미}
+
+고전 비트에는 두 가지 상태만 있으며, 그 사이의 상태는 없다. 이를 \(0\)과 \(1\), 앞면과 뒷면, 또는 위와 아래라고 부를 수 있다. 이 이름들은 고전적 상태 공간에서 서로 구별되는 두 점을 가리키는 표지다. 양자 비트도 정해진 방식으로 측정하면 두 가지 결과 중 하나를 내놓지만, 상태 공간의 점 두 개만으로 기술할 수는 없다. 가장 간단한 예는 전자의 스핀이다.
+
+이 예에는 서로 다른 두 가지 벡터 개념이 있다. 이를 혼동하면 이후 내용이 필요 이상으로 이해하기 어려워진다. 첫째는 보통의 \emph{공간 벡터}다. 크기와 방향을 갖는 3차원 공간의 화살표다. 전자는 자기 모멘트를 가지며, 여기서는 작은 자석처럼 거동한다고 보면 된다. 그 크기는 고정되어 있지만, 준비 과정에서 공간상의 방향을 정할 수 있다.
+
+두 번째 대상은 복소 벡터 공간의 추상 벡터다. 이 \emph{상태 벡터}가 양자 상태를 기술한다. 이것은 자기 화살표를 다른 표기법으로 쓴 것에 불과하지 않다. 공간상의 방향과 상태 벡터 사이에는 실재하는 중요한 관계가 있지만, 두 대상이 동일한 것은 아니다. 그 관계는 차근차근 밝혀 나가겠다.
+
+\section{고전적 모형이 성립하지 않는 지점}
+
+의도적으로 고전적인 이야기부터 시작해 보자. 작은 자석을 강한 외부 자기장 안에 둔다. 이미 정렬되어 있지 않다면 자기장 주위를 세차 운동한다. 복사를 통해 에너지를 방출하면서 세차 운동은 감쇠하고, 자석은 에너지가 가장 낮은 방향으로 안착한다. 인가하는 자기장의 방향을 정하고, 이완될 때까지 기다린 뒤 자기장을 제거하면 자기 모멘트를 원하는 방향으로 준비할 수 있는 듯하다.
+
+같은 장치로 검출하는 방법도 떠올릴 수 있다. 정해진 방향으로 자기장을 켜고 작은 자석이 안착하면서 방출하는 복사를 관찰한다. 자기장과 정렬된 고전적 자석은 에너지를 방출하지 않아야 한다. 자기장과 처음에 반대 방향인 자석은 최대량의 에너지를 방출하고, 중간 각도에서는 중간 정도의 에너지를 방출해야 한다. 이 모형에서는 방출 에너지가 각도에 따라 연속적으로 변한다.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[>=Latex,thick,scale=0.92]
+  \draw[rounded corners] (-0.2,-0.2) rectangle (3.0,3.4);
+  \node at (1.4,3.05) {\small preparation};
+  \draw[->,very thick] (1.4,0.45) -- (1.4,2.55);
+  \node[right] at (1.4,2.35) {\small applied field};
+  \fill (1.4,1.35) circle (2.3pt);
+  \draw[->,very thick] (1.4,1.35) -- (2.25,1.95);
+  \node[below] at (1.4,0.15) {\small choose a direction and wait};
+
+  \draw[->] (3.25,1.6) -- (4.25,1.6);
+
+  \draw[rounded corners] (4.5,-0.2) rectangle (8.8,3.4);
+  \node at (6.65,3.05) {\small measurement in a fixed direction};
+  \draw[->,very thick] (5.15,0.45) -- (5.15,2.55);
+  \fill (5.15,1.35) circle (2.3pt);
+  \node[anchor=west] at (5.7,2.0) {no photon};
+  \node[anchor=west] at (5.7,1.25) {one photon of fixed energy};
+\node[anchor=west] at (5.7,0.5) {no intermediate outcome};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{작동 원리상의 수수께끼. 연속적으로 조절할 수 있는 준비 과정 뒤에 가능한 출력이 두 가지뿐인 검출기가 놓여 있다.}
+\end{figure}
+
+이 고전적 예측은 전자에 대해서는 틀렸다. 검출기 자기장을 켜면 두 가지 결과만 나타난다.
+\begin{enumerate}
+  \item 광자가 방출되지 않는다.
+  \item 다운 준위와 업 준위 사이의 간격에 해당하는 고정된 에너지를 가진 광자 하나가 방출된다.
+\end{enumerate}
+그 에너지의 임의의 일부만 가진 광자가 나오는 일은 없다. 연속적인 고전적 반응은 두 가지 중 하나를 택하는 양자적 결과로 바뀐다.
+
+준비에 사용한 방향이 무의미해진 것은 아니다. 그 방향은 두 결과의 \emph{확률}을 결정한다. 검출기를 기준으로 전자를 업 상태로 준비하면 업 결과가 확실히 나온다. 다운 상태로 준비하면 전이는 확실히 일어난다. 수평 방향으로 준비하면 수직 방향 검출기에서 두 결과가 같은 빈도로 나온다.
+\begin{equation}
+  P(\text{up})=\frac12,
+  \qquad
+  P(\text{down})=\frac12.
+  \label{eq:l02-horizontal-probabilities}
+\end{equation}
+따라서 연속적으로 변하는 준비 상태들의 계열은 통계가 연속적으로 변하는 두 값 측정으로 이어진다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:21:23}
+\audiencequestion{작은 물체, 이를테면 두 번째 전자를 써서 거시적 자석 대신 자기장을 만들 수 있을까요?}
+\lecturerresponse{가능하다. 다만 그러면 두 전자는 하나의 양자 합성계가 되어 얽힐 수 있다. 바로 그 주제를 다루게 될 것이다. 먼저 전자 하나의 상태 공간부터 제대로 이해한 다음에 살펴보자.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:22:17}
+\audiencequestion{확률 분포를 구하려면 준비와 측정을 통째로 반복해야 하나요? 같은 전자를 다시 측정하면 어떻게 되나요?}
+\lecturerresponse{그렇다. 원래의 분포를 알려면 동일하게 준비한 시행을 반복해야 한다. 첫 측정 뒤에 같은 전자를 다시 측정하면 같은 결과가 나온다. 그 측정이 전자를 해당 검출기 기준으로 준비한 셈이기 때문이다. 복사 전이가 일어날 때까지 기다리는 것도 가능한 준비 절차 가운데 하나다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:23:48}
+\audiencequestion{자유 전자를 상정하는 건가요? 자기장은 계속 켜 두나요?}
+\lecturerresponse{전자 위치 자유도는 무시하고 스핀 자유도만 분리해 다룬다. 전자가 자유롭게 움직이는지, 다른 방식으로 구속되어 있는지는 고려하지 않는다. 준비나 검출을 위해 대형 전자석을 빠르게 켤 수 있다. 이 단순화된 실험은 스핀에 관한 질문만 다루도록 설계되었다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:25:22}
+\audiencequestion{전자를 정확히 다운 상태로 준비하고 자기장 방향을 뒤집으면 광자가 반드시 방출되나요? 에너지는 어디서 오나요?}
+\lecturerresponse{정확히 반대 방향으로 준비했다면 전이는 확률 1로 일어난다. 비스듬한 방향으로 준비했다면 확률은 더 낮다. 에너지는 궁극적으로 외부 자기장을 만들거나 방향을 뒤집는 데 한 일에서 온다. 에너지 출납을 따질 때는 장치도 포함해야 한다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:27:31}
+\audiencequestion{광자는 언제 나타나나요? 전이는 순간적으로 일어나나요?}
+\lecturerresponse{광자 방출 시각은 불안정한 상태의 붕괴 시각처럼 무작위다. 특성 수명이나 반감기를 지정할 수 있으며, 자기장이 강할수록 그 시간 척도는 짧아진다. 에너지--시간 불확정성은 더 정밀한 기술에서 다루지만, 지금 다루는 작동 원리상의 사실은 가능한 출력이 두 가지이고 그 빈도를 측정할 수 있다는 점이다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:17}
+\audiencequestion{똑같이 준비된 전자가 백만 개 들어 있는 빔이라면 측정 가능한 광도만 생기나요?}
+\lecturerresponse{그렇다. 앙상블의 세기로 평균 전이 확률을 알 수 있지만, 특정 전자 하나가 방출하는 시각은 여전히 무작위다. 단일 시행으로는 볼 수 없는 분포가 앙상블에서는 드러난다.}
+\end{classroomqa}
+
+여기서부터 출발한다. 고전적인 점 두 개로 검출 결과는 부호화할 수 있지만, 그 결과의 확률을 바꾸는 모든 준비 상태까지 부호화할 수는 없다. 다른 상태 공간이 필요하다.
+
+\section{복소수와 상태 공간의 기하}
+
+필요한 상태 공간은 선형이다. 그 원소들은 서로 더할 수 있고 스칼라를 곱할 수 있다. 이 공간의 스칼라는 복소수다. 다음과 같이 쓰자.
+\begin{equation}
+  z=a+ib,
+  \qquad
+  i^2=-1,
+  \qquad
+  z^*=a-ib,
+  \label{eq:l02-complex-number}
+\end{equation}
+여기서 \(a\)와 \(b\)는 실수다. 복소켤레를 취하면 다음과 같은 양의 값이 나온다.
+\begin{align}
+  z^*z
+  &=(a-ib)(a+ib) \notag\\
+  &=a^2+b^2.
+  \label{eq:l02-complex-norm}
+\end{align}
+이 간단한 소거가 확률 규칙의 대수적 씨앗이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\linewidth]{lecture_02_figure_02.png}
+\caption{진폭을 확률로 해석하기에 앞서 칠판에서 복소켤레와 \(z^*z\)를 다룬다.}
+\lectureframe{00:37:10}
+\end{figure}
+
+복소 벡터 공간에는 \(\ket a,\ket b,\ldots\)와 같은 대상이 들어 있으며, 다음과 같은 것들도 벡터다.
+\begin{equation}
+  c\ket a,
+  \qquad
+  \ket a+\ket b
+\end{equation}
+단, \(c\)는 복소수다. 열벡터로 구체적인 표현을 얻을 수 있다.
+\begin{equation}
+  \begin{aligned}
+    \ket a&=
+    \begin{pmatrix}
+      a_1\\a_2\\ \vdots\\a_n
+    \end{pmatrix},
+    &
+    c\ket a&=
+    \begin{pmatrix}
+      ca_1\\ca_2\\ \vdots\\ca_n
+    \end{pmatrix},\\[0.7em]
+    \ket a+\ket b&=
+    \begin{pmatrix}
+      a_1+b_1\\a_2+b_2\\ \vdots\\a_n+b_n
+    \end{pmatrix}.
+  \end{aligned}
+  \label{eq:l02-vector-operations}
+\end{equation}
+복소수 자체도 1차원 복소 벡터 공간을 이룬다. 전자 스핀에는 2차원이 필요하다.
+
+각 열 켓에 대응하는 켤레 행 브라를 둔다.
+\begin{equation}
+  \ket a=
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  \quad\longleftrightarrow\quad
+  \bra a=
+  \begin{pmatrix}a_1^*&a_2^*\end{pmatrix}.
+  \label{eq:l02-bra-ket-components}
+\end{equation}
+그러면 내적은 다음과 같다.
+\begin{equation}
+  \braket{b}{a}=b_1^*a_1+b_2^*a_2,
+  \label{eq:l02-inner-product}
+\end{equation}
+노름의 제곱은 다음과 같다.
+\begin{equation}
+  \braket{a}{a}=|a_1|^2+|a_2|^2.
+  \label{eq:l02-norm}
+\end{equation}
+각 항이 \(z^*z\) 꼴이므로 이 값은 실수이며 음이 아닌 값이다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:24}
+\audiencequestion{브라 기호에 별표가 명시적으로 붙지 않는 이유는 무엇인가요?}
+\lecturerresponse{켓을 브라로 바꾸는 것은 이미 전치와 복소켤레를 취한다는 뜻이다. 괄호 방향을 뒤집는 표기가 그 연산을 나타내므로 별표를 또 쓰면 암묵적으로 포함된 내용을 중복해서 쓰게 된다.}
+\end{classroomqa}
+
+\section{큐비트 기저와 보른 규칙}
+
+이제 검출기로 돌아가자. 검출기의 업 상태를 \(\ket{+}\), 다운 상태를 \(\ket{-}\)로 나타내자. 일반적인 스핀 상태는 다음 선형 결합이다.
+\begin{equation}
+  \ket\psi=a_+\ket{+}+a_-\ket{-}
+  \quad\longleftrightarrow\quad
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-general-qubit}
+\end{equation}
+켓 안의 플러스와 마이너스 기호는 표지일 뿐 산술 연산이 아니다. 이 순서로 기저를 정하면 다음과 같다.
+\begin{equation}
+  \ket{+}=
+  \begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{-}=
+  \begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l02-basis-columns}
+\end{equation}
+실제로,
+\begin{equation}
+  a_+\begin{pmatrix}1\\0\end{pmatrix}
+  +a_-\begin{pmatrix}0\\1\end{pmatrix}
+  =
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-basis-expansion}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_02_figure_03.png}
+\caption{검출기 상태는 표준 기저 열벡터 두 개로 정한다.}
+\lectureframe{00:58:10}
+\end{figure}
+
+계수는 확률 진폭이다. 각 검출 결과의 확률은 해당 진폭의 절댓값을 제곱한 값이다.
+\begin{equation}
+  P(+)=|a_+|^2,
+  \qquad
+  P(-)=|a_-|^2.
+  \label{eq:l02-born-rule}
+\end{equation}
+가능한 결과는 이 둘뿐이므로,
+\begin{equation}
+  \begin{gathered}
+    |a_+|^2+|a_-|^2=1,\\
+    \text{or equivalently}\qquad \braket{\psi}{\psi}=1.
+  \end{gathered}
+  \label{eq:l02-normalization}
+\end{equation}
+따라서 물리적 상태 벡터는 정규화되어 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:54}
+\audiencequestion{성분에 있는 플러스와 마이너스 기호는 대수적인 의미가 있나요?}
+\lecturerresponse{여기서는 두 기저 상태와 각 상태의 계수를 표시한다. \(1\)와 \(2\), 또는 업과 다운이라고 불러도 된다. 특히 \(-\ket{+}\)는 \(\ket{+}\)에 스칼라를 곱한 유효한 상태이지, \(\ket{-}\) 상태가 아니다.}
+\end{classroomqa}
+
+상태에 크기가 1인 복소수를 곱해도 확률은 변하지 않는다.
+\begin{equation}
+  \ket\psi\longmapsto e^{i\phi}\ket\psi,
+  \qquad
+  |e^{i\phi}a_\pm|^2=|a_\pm|^2.
+  \label{eq:l02-global-phase}
+\end{equation}
+따라서 전체 위상만 다른 두 벡터는 같은 물리적 상태를 나타낸다. \emph{상대} 위상은 다르다. 예를 들어 \(a_-\)만 \(-a_-\)로 바꾸는 것은 일반적으로 벡터 전체에 하나의 위상을 곱해 제거할 수 없다. 이런 변화는 다른 기저에서 측정한 결과를 바꿀 수 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:59:54}
+\audiencequestion{\(\ket{+}\), \(-\ket{+}\), \(e^{i\phi}\ket{+}\)는 서로 다른 상태인가요? 중첩 상태에서 한 항의 부호를 바꾸면 어떻습니까?}
+\lecturerresponse{이들은 수학적으로는 서로 다른 벡터다. 하지만 인자가 벡터 전체에 곱해지고 크기가 1이라면 같은 물리적 상태를 나타낸다. 업 항과 다운 항 사이의 상대 부호나 위상은 적절한 측정에서 관측할 수 있으므로 상태를 바꾼다.}
+\end{classroomqa}
+
+기저는 정규 직교한다.
+\begin{align}
+  \braket{+}{+}&=1,
+  &\braket{-}{-}&=1,
+  \notag\\
+  \braket{+}{-}&=0,
+  &\braket{-}{+}&=0.
+  \label{eq:l02-orthonormality}
+\end{align}
+예를 들면,
+\begin{equation}
+  \braket{+}{-}
+  =
+  \begin{pmatrix}1&0\end{pmatrix}
+  \begin{pmatrix}0\\1\end{pmatrix}
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_02_figure_04.png}
+\caption{업/다운 기저의 네 내적을 칠판에서 직접 확인한다.}
+\lectureframe{01:05:00}
+\end{figure}
+
+같은 가중치를 갖는 상태는 칠판에서 첫 번째로 바로잡아 볼 만한 예다. 열벡터
+\begin{equation}
+  \begin{pmatrix}1\\1\end{pmatrix}
+\end{equation}
+의 노름 제곱은 \(2\)이지 \(1\)가 아니므로 정규화되어 있지 않다. \(\sqrt2\)로 나누면 정규화된다.
+\begin{equation}
+  \ket{\rightarrow}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =
+  \frac{\ket{+}+\ket{-}}{\sqrt2}.
+  \label{eq:l02-horizontal-state}
+\end{equation}
+이 상태는 수직 검출기에서 \(P(+)=P(-)=1/2\)를 주며, 하나의 수평 방향 준비 상태에 해당한다. \((1,1)^T\)에서 \(2^{-1/2}(1,1)^T\)로 고치는 것은 겉치레가 아니다. 제곱 진폭이 완전한 확률 분포가 되려면 정규화가 필요하다.
+
+휴식 뒤에는 벡터라는 말의 두 가지 의미를 다시 살펴보면 좋다. 공간 화살표에는 실수 성분이 세 개 있다. 큐비트 상태 벡터에는 복소 성분이 두 개 있으므로, 정규화 조건을 부과하고 전체 위상을 같은 것으로 보면 그 전에는 실수 네 개가 필요하다. 두 대상은 관련되어 있지만, 하나가 다른 하나의 이름만 바꾼 것은 아니다. 아직 둘 사이의 완전한 기하학적 대응은 필요하지 않다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:56}
+\audiencequestion{다른 양자계의 상태 공간 차원은 어떻게 알 수 있나요?}
+\lecturerresponse{완전한 측정으로 서로 배타적인 결과를 몇 개 구별할 수 있는지는 실험으로 알 수 있다. 전자 스핀에는 그런 결과가 두 개이므로 2차원 복소 상태 공간이 필요하다. 스핀 1 계에는 해당 측정에서 결과가 세 개 있으므로 성분이 세 개 필요하다.}
+\end{classroomqa}
+
+\section{고전적 관측량과 앙상블 평균}
+
+상태를 기술했으니 이제 측정 가능한 양을 살펴보자. 이산 상태 \(n\)를 갖는 고전계에서 관측량은 각 상태에 실수값을 대응시키는 함수 \(f_n\)다. 상태가 불확실하고 확률 \(p_n\)로 기술된다면 앙상블 평균은 다음과 같다.
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =\sum_n p_n f_n.
+  \label{eq:l02-classical-expectation}
+\end{equation}
+이 표기법은 단일 측정값이 반드시 이 수와 같아야 한다는 뜻이 아니다.
+
+동전의 경우 \(f_+=+1\)와 \(f_-=-1\)로 정하자. 그러면
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =p_+-p_-.
+  \label{eq:l02-coin-expectation}
+\end{equation}
+공정한 동전의 평균은 0이다. \(p_+=3/4\)이고 \(p_-=1/4\)이면 평균은 \(1/2\)다. \(0\)도 \(1/2\)도 한 번 던졌을 때 나오는 결과는 아니다. 각각은 많은 \(+1\) 결과와 \(-1\) 결과를 요약한다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:23:30}
+\audiencequestion{한 번의 시행에서는 어느 값도 나올 수 없는데, 기댓값은 어떻게 영이나 이분의 일이 될 수 있나요?}
+\lecturerresponse{‘기댓값’이라는 표현은 오해를 부를 수 있습니다. 이는 다음 시행에서 보게 되리라고 예상해야 할 값이 아니라, 큰 앙상블의 평균을 뜻합니다. \(+1\)와 \(-1\)의 결과가 공정한 비율로 나오는 수열의 평균은 영이고, 셋 대 하나의 불균형이 있는 수열의 평균은 이분의 일입니다.}
+\end{classroomqa}
+
+특히 유용한 관측량은 한 상태에 대한 지시 함수다.
+\begin{equation}
+  \chi_k(n)=
+  \begin{cases}
+    1,&n=k,\\
+    0,&n\ne k.
+  \end{cases}
+\end{equation}
+그 평균은 다음과 같다.
+\begin{equation}
+  \langle\chi_k\rangle_{\mathrm{ens}}=p_k.
+\end{equation}
+따라서 모든 고전적 관측량의 평균을 알면 확률 분포도 알 수 있다.
+
+\section{행렬과 양자 관측량}
+
+양자역학에서 관측량은 상태 공간의 점들에 정의된 함수가 아니라 선형 연산자로 나타낸다. 유한 차원 상태 공간에서 이 연산자는 행렬이다. 행렬 \(M\)는 한 벡터를 다른 벡터로 보낸다.
+\begin{equation}
+  M\ket a=\ket{a'}.
+  \label{eq:l02-matrix-action}
+\end{equation}
+성분이 두 개인 경우에는 다음과 같다.
+\begin{equation}
+  \begin{pmatrix}
+    m_{11}&m_{12}\\
+    m_{21}&m_{22}
+  \end{pmatrix}
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  =
+  \begin{pmatrix}
+    m_{11}a_1+m_{12}a_2\\
+    m_{21}a_1+m_{22}a_2
+  \end{pmatrix}.
+  \label{eq:l02-matrix-components}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_02_figure_05.png}
+\caption{행렬의 작용을 행별로 전개해 변환된 벡터의 두 성분을 구한다.}
+\lectureframe{01:32:10}
+\end{figure}
+
+실수 이차원 벡터를 사용하면 기하학적 의미가 드러납니다. 다음 행렬들은
+\begin{equation}
+  \begin{pmatrix}2&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}1&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}2&0\\0&1\end{pmatrix}
+\end{equation}
+각각 모든 방향을 균일하게 늘이고, \(y\) 성분만 늘이며, \(x\) 성분만 늘입니다. 다음 행렬은
+\begin{equation}
+  \begin{pmatrix}0&1\\1&0\end{pmatrix}
+\end{equation}
+성분을 서로 바꾸고 평면을 \(x=y\)을 기준으로 반사합니다. 한편,
+\begin{equation}
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  \begin{pmatrix}v_x\\v_y\end{pmatrix}
+  =
+  \begin{pmatrix}v_y\\-v_x\end{pmatrix}
+  \label{eq:l02-quarter-turn}
+\end{equation}
+은 여기서 칠판에 사용한 관례에 따라 벡터를 시계 방향으로 직각 회전시키는 변환입니다. 전단 변환도 또 하나의 선형 사례이지만, 그 행렬은 연습 문제로 남겨 둡니다. 핵심 제약은 선형성입니다. 평면에서 상상할 수 있는 모든 변환이 행렬로 표현되는 것은 아닙니다.
+
+양자 관측량은 특별한 행렬 부류에 속한다.
+
+\begin{definition}
+행렬 \(M\)는 다음을 만족할 때 \emph{에르미트} 행렬이라고 한다.
+\begin{equation}
+  M_{ij}=M_{ji}^*.
+  \label{eq:l02-hermitian-condition}
+\end{equation}
+\end{definition}
+
+대각 성분 조건 \(M_{ii}=M_{ii}^*\)은 모든 대각 원소가 실수여야 함을 뜻한다. 대각선 밖 원소들은 서로 켤레인 쌍을 이룬다. 예를 들어,
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    r&4+i\\
+    4-i&s
+  \end{pmatrix},
+  \qquad r,s\in\mathbb R,
+  \label{eq:l02-hermitian-example}
+\end{equation}
+는 에르미트 행렬이다. 모든 원소가 우연히 실수라면 에르미트 행렬은 대칭 행렬과 같다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\linewidth]{lecture_02_figure_06.png}
+\caption{대각선을 가로질러 켤레를 취하는 정의 \(M_{ij}=M_{ji}^*\)를 강의 마지막에 따로 살펴본다.}
+\lectureframe{01:42:50}
+\end{figure}
+
+에르미트 행렬은 \(x\), \(y\), \(z\) 방향의 스핀을 포함해 측정 가능한 양을 나타낸다. 이를 물리적 충격이나 시간 발전을 기술하는 연산자와 혼동해서는 안 된다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:49}
+\audiencequestion{행렬이 상태에 작용해 다른 상태로 바꾼다면 정규화를 보존해야 하나요? 에르미트 행렬도 그렇게 하나요?}
+\lecturerresponse{물리적 충격은 상태 벡터의 길이를 보존해야 하지만, 일반적인 에르미트 행렬은 그렇지 않다. 길이를 보존하는 변환은 유니터리 변환이다. 에르미트 연산자는 관측량을 나타내고, 유니터리 연산자는 상태에 작용하는 가역 변환을 나타낸다. 둘 사이의 자세한 관계는 다음에 다룬다.}
+\end{classroomqa}
+
+다음 단계로 나아가는 데 필요한 최소한의 언어를 갖추었다. 큐비트는 2차원 복소 벡터 공간의 정규화된 벡터이고, 확률은 진폭으로 결정되며, 관측량은 에르미트 행렬이다. 이제 이 요소들을 바탕으로 임의의 방향을 따른 스핀과, 나아가 얽힌 입자쌍을 이미 성립하지 않는 것으로 드러난 고전적 모형으로 되돌아가지 않고 논할 수 있다.

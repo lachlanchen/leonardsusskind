@@ -1,0 +1,724 @@
+\chapter{축약 상태, 얽힘 엔트로피와 유니터리 시간 발전}
+
+밀도 행렬은 처음에는 불완전한 준비를 자연스럽게 기술하는 대상으로 등장한다. 양자계가 준비되었지만, 어떻게 준비되었는지 정확히 알지 못하는 경우다. 얽힘은 같은 수학적 대상에 더 깊은 역할을 부여한다. 복합계의 상태를 완전히 알고 있더라도, 부분계에는 일반적으로 그 자체의 상태 벡터가 없다. 축약 밀도 행렬에는 국소적으로 예측할 수 있는 모든 것이 담겨 있다. 이를 성분으로 유도하고, 두 스핀 상태에 적용해 확인한 뒤, 엔트로피를 이용해 곱 상태와 얽힌 상태를 구분해 보겠다. 그런 다음 두 번째 질문, 즉 양자 상태가 시간에 따라 어떻게 변하는지 살펴보겠다. 내적의 보존으로부터 유니터리성, 에르미트 생성자, 그리고 Schr\"odinger 방정식을 얻는다.
+
+\section{밀도 행렬과 불완전한 준비}
+
+전자를 강한 자기장에 놓고 자기장 방향으로 정렬되도록 했다고 하자. 다른 사람이 자기장 방향을 정해 전자를 준비했지만, 그 방향을 우리에게 알려주지 않았다. 따라서 어떤 상태인지는 모르더라도 스핀은 완전히 확정된 순수 상태에 있을 수 있다. 가능한 준비 방법에 대한 확률 분포를 알고 있을 수도 있고, 아무것도 모를 수도 있다. 밀도 행렬 \(\rho\)은 바로 이런 종류의 불완전한 정보를 양자역학적으로 기술한다.
+
+이에 대응하는 고전적 대상은 위상 공간의 확률 밀도 또는 이산적인 배치들에 대한 확률 분포다. 양자적 대상은 다음 세 가지 핵심 성질을 갖는 연산자다.
+\begin{equation}
+\rho^\dagger=\rho,
+\qquad
+\operatorname{Tr}\rho=1,
+\qquad
+\lambda_i\geq 0,
+\end{equation}
+여기서 \(\lambda_i\)는 \(\rho\)의 고윳값이다. 에르미트성에 따라 고윳값은 실수이고 정규직교 고유기저가 존재한다. 양의 정부호성에 따라 고윳값은 확률로 해석할 수 있으며, 정규화 조건은 다음과 같다.
+\begin{equation}
+\sum_{i=1}^{n}\lambda_i=1.
+\end{equation}
+\(\rho\)의 고유기저에서 \(\lambda_i\)은 \(i\)번째 고유상태에 부여된 확률이다.
+
+완전한 무지는 힐베르트 공간에서 어느 방향도 특별히 선호되지 않는 경우다.
+\begin{equation}
+\rho_{\mathrm{max}}=\frac{1}{n}I.
+\end{equation}
+모든 고윳값은 \(1/n\)이다. 반대 극단인 완전한 지식은 정규화된 상태 \(\ket{\psi}\)로 나타내며,
+\begin{equation}
+\rho_\psi=\ket{\psi}\bra{\psi}.
+\end{equation}
+이는 \(\ket{\psi}\)가 생성하는 1차원 부분공간으로의 사영 연산자다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:47}
+\audiencequestion{서로 직교하지 않는 두 상태, 예를 들어 스핀 방향이 \(45^\circ\)만큼 벌어진 두 상태 중 하나를 절반씩 선택하는 준비로 기술할 수 있나요?}
+\lecturerresponse{그런 준비 절차는 가능하지만, 그 두 가중치가 결과 밀도 행렬의 고윳값이 되는 것은 일반적으로 아니다. 먼저 사영 연산자들의 가중합을 만든 다음 대각화한다. 고윳값을 확률로 해석하는 명확한 의미는 \(\rho\)의 정규직교 고유기저에 해당하며, 준비자가 지정한 비직교 상태들에 반드시 대응하는 것은 아니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:07:47}
+\audiencequestion{순수 상태와 혼합 상태는 무엇으로 구별되는가?}
+\lecturerresponse{순수 상태의 밀도 행렬에는 0이 아닌 고윳값이 하나 있으며, 그 값은 \(1\)이다. 혼합 상태에는 0이 아닌 고윳값이 둘 이상 있다. 오래된 문헌에서는 독일어 \emph{Gemisch}라는 단어를 사용했으며, 현대에는 간단히 \emph{혼합 상태}라고 한다.}
+\end{classroomqa}
+
+순수 상태 사영 연산자의 스펙트럼을 확인해 보자. 정규화 조건에 따라
+\begin{equation}
+\rho_\psi\ket{\psi}
+=\ket{\psi}\braket{\psi}{\psi}
+=\ket{\psi},
+\end{equation}
+따라서 \(\ket{\psi}\)는 고윳값이 \(1\)인 고유벡터다. \(\ket{\phi}\)가 \(\ket{\psi}\)와 직교하면,
+\begin{equation}
+\rho_\psi\ket{\phi}
+=\ket{\psi}\braket{\psi}{\phi}
+=0.
+\end{equation}
+그러므로 \(\ket{\psi}\)에 직교하는 모든 방향의 고윳값은 0이다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_08_figure_06.png}\caption{순수 상태 밀도 행렬의 사영 연산자 작용: \(\rho\ket{\psi}=\ket{\psi}\)}\lectureframe{00:09:32}\end{figure}
+
+\section{트레이스로부터 기대값 구하기}
+
+밀도 행렬에 적용하는 조작적 규칙은 다음과 같다.
+\begin{equation}
+\overline{M}=\operatorname{Tr}(\rho M),
+\end{equation}
+여기서 \(M\)는 관측량이다. 두 인자에 대해 트레이스의 순환 성질을 적용하면 다음을 얻는다.
+\begin{equation}
+\operatorname{Tr}(\rho M)=\operatorname{Tr}(M\rho),
+\end{equation}
+이는 \(\rho\)와 \(M\)가 가환하는지 여부와 관계없다.
+
+임의의 정규직교 기저 \(\{\ket{i}\}\)에서
+\begin{equation}
+\operatorname{Tr}X=\sum_i\bra{i}X\ket{i}.
+\end{equation}
+수치 값은 기저에 의존하지 않는다. 순수 상태의 경우,
+\begin{align}
+\overline{M}
+&=\operatorname{Tr}\!\left(\ket{\psi}\bra{\psi}M\right) \\
+&=\sum_i\braket{i}{\psi}\bra{\psi}M\ket{i} \\
+&=\bra{\psi}M\left(\sum_i\ket{i}\bra{i}\right)\ket{\psi} \\
+&=\bra{\psi}M\ket{\psi}.
+\end{align}
+항등 연산자의 분해식
+\begin{equation}
+\sum_i\ket{i}\bra{i}=I,
+\end{equation}
+을 대입하면 밀도 행렬 규칙은 익숙한 순수 상태 기대값으로 돌아간다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_07.png}\caption{순수 상태 사영 연산자에 대한 트레이스 계산과 항등 연산자의 분해식.}\lectureframe{00:14:25}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:38}
+\audiencequestion{왼쪽에 있는 양은 \(\overline{M}\), 즉 \(M\)의 평균인가요?}
+\lecturerresponse{그렇다. 트레이스는 연산자 \(M\) 자체가 아니라 스칼라인 기대값 \(\overline{M}\)이다.}
+\end{classroomqa}
+
+일반적인 밀도 행렬의 고유기저를 택하자.
+\begin{equation}
+\rho\ket{j}=\lambda_j\ket{j}.
+\end{equation}
+\(\rho\)와 \(M\) 사이에 완비 상태 집합을 삽입하면
+\begin{align}
+\overline{M}
+&=\sum_i\bra{i}\rho M\ket{i} \\
+&=\sum_{i,j}\bra{i}\rho\ket{j}\bra{j}M\ket{i} \\
+&=\sum_{i,j}\lambda_j\delta_{ij}\bra{j}M\ket{i} \\
+&=\sum_j\lambda_j\bra{j}M\ket{j}.
+\end{align}
+이는 보통의 가중 평균이다. \(\lambda_j\)는 \(j\)번째 고유상태일 확률이고, \(\bra{j}M\ket{j}\)은 그 상태에서 \(M\)의 기대값이다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:12}
+\audiencequestion{마지막 행렬 원소의 두 지표가 왜 모두 \(j\)가 되며, 여전히 합을 취하는 지표는 무엇인가요?}
+\lecturerresponse{\(\rho\)는 이 기저에서 대각 행렬이므로 \(\bra{i}\rho\ket{j}=\lambda_j\delta_{ij}\)이고, 따라서 \(i=j\)인 항만 남는다. 원래의 이중 합은 단일 합으로 줄어들며, 이를 \(j\)에 대한 합이라고 할 수 있다. 더미 합산 지표의 이름에는 물리적 의미가 없다.}
+\end{classroomqa}
+
+\section{정보의 결핍으로서의 엔트로피}
+
+고전적 확률 분포 \(\{p_i\}\)에 대해 다음과 같이 정의하자.
+\begin{equation}
+S=-\sum_i p_i\log p_i,
+\end{equation}
+여기서 \(0\log 0\)는 극한값 \(0\)으로 이해한다. 확률 하나가 \(1\)이고 나머지는 모두 사라지면 \(S=0\)이다. 즉, 상태를 알고 있는 것이다. 가능한 \(n\)가지 경우의 확률이 모두 같다면
+\begin{equation}
+p_i=\frac{1}{n},
+\qquad
+S=-n\left(\frac{1}{n}\log\frac{1}{n}\right)=\log n.
+\end{equation}
+따라서 확률 분포가 더 많은 유의미한 가능성에 걸쳐 퍼질수록 엔트로피가 커진다. 대략적으로 말해, 자연로그를 사용할 때 \(e^S\)은 비슷한 가중치를 갖는 상태의 유효 개수이다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.68\textwidth]{lecture_08_figure_08.png}\caption{확률 분포의 엔트로피와 확률이 균등할 때의 값 \(S=\log n\).}\lectureframe{00:21:08}\end{figure}
+
+밀도 행렬의 경우에도 같은 정의를 고윳값에 적용한다.
+\begin{equation}
+S(\rho)=-\sum_i\lambda_i\log\lambda_i
+=-\operatorname{Tr}(\rho\log\rho).
+\end{equation}
+첫 번째 표현이 당장 필요한 식이고, 트레이스로 쓴 형태는 결과가 기저에 무관함을 강조한다.
+
+\section{복합계와 국소 실험}
+
+두 부분계 \(A\)와 \(B\)를 생각하자. 기저 벡터는 \(\ket{a,b}\)로 쓴다. \(A\)에 기저 상태가 \(N\)개 있고 \(B\)에 \(n\)개 있으면, 복합계에는 기저 상태가 \(Nn\)개 있다. 두 계가 서로 비슷할 필요는 없다. 하나는 두 상태를 가진 스핀이고 다른 하나는 세 상태를 가진 원자일 수 있다.
+
+두 부분계의 가장 일반적인 순수 상태는 다음과 같다.
+\begin{equation}
+\ket{\Psi}
+=\sum_{a,b}\psi(a,b)\ket{a,b},
+\qquad
+\sum_{a,b}|\psi(a,b)|^2=1.
+\end{equation}
+이제 앨리스가 부분계 \(A\)에만 작용하는 관측량 \(M_A\)를 측정한다고 하자. 복합 힐베르트 공간에서 그 연산자는 \(M_A\otimes I_B\)이다. 행렬 원소는 다음과 같다.
+\begin{equation}
+\bra{a',b'}M_A\otimes I_B\ket{a,b}
+=\bra{a'}M_A\ket{a}\,\delta_{b'b}.
+\end{equation}
+\(B\) 지표는 연산자의 작용 대상이 아니다.
+
+기대값을 전개해 쓰면 다음과 같다.
+\begin{align}
+\expect{M_A}
+&=\bra{\Psi}M_A\otimes I_B\ket{\Psi} \\
+&=\sum_{a',b'}\sum_{a,b}
+\psi^*(a',b')\psi(a,b)
+\bra{a'}M_A\ket{a}\delta_{b'b} \\
+&=\sum_{a',a,b}
+\psi^*(a',b)\psi(a,b)
+\bra{a'}M_A\ket{a}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:12}
+\audiencequestion{브라의 지표에는 프라임이 붙고 켓의 지표에는 붙지 않는 이유가 무엇인가요?}
+\lecturerresponse{행렬 원소를 계산하기 전에는 브라와 켓의 합이 서로 독립적이므로 각각 다른 더미 지표가 필요하다. 프라임은 브라의 지표와 켓의 지표를 구분한다. 그다음 연산자와 내적에 따라 어떤 지표들이 일치해야 하는지가 정해진다.}
+\end{classroomqa}
+
+\(a\)와 \(a'\)를 고정하고 \(b\)에 대한 합을 계산하자. 그 결과는 부분계 \(A\)의 행렬이다.
+\begin{equation}
+\boxed{
+\rho_A(a,a')
+=\sum_b\psi(a,b)\psi^*(a',b)
+}.
+\end{equation}
+이것은 \(A\)의 축약 밀도 행렬이며, 동등하게는 순수 상태 사영 연산자를 \(B\)에 대해 부분 트레이스한 것이다.
+\begin{equation}
+\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}.
+\end{equation}
+그러면 국소 기대값은 다음과 같이 된다.
+\begin{equation}
+\expect{M_A}
+=\sum_{a,a'}\rho_A(a,a')\bra{a'}M_A\ket{a}
+=\operatorname{Tr}_A(\rho_A M_A).
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_09.png}\caption{\(B\) 지표를 합산해 없애면 \(A\) 지표 두 개를 가진 행렬이 남는다.}\lectureframe{00:33:50}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:35:39}
+\audiencequestion{국소 관측량은 부분계 \(B\)에 대한 항등 연산자일 뿐인가요?}
+\lecturerresponse{그렇다. \(M_A\otimes I_B\)는 \(A\) 좌표를 바꿀 수 있지만, \(b\)를 바꾸지도 않고 그 값에 의존하지도 않는다. 그래서 \(B\) 공간에서의 행렬 원소는 \(\delta_{b'b}\)이다.}
+\end{classroomqa}
+
+따라서 \(A\)에 국한된 실험에 대한 모든 예측은 \(\rho_A\)에 담겨 있다. 밥은 자신의 부분계를 측정할 필요가 없다. \(B\) 자유도를 사용하지 않기로 하는 것만으로도 앨리스의 기술은 밀도 행렬 형식이 된다.
+
+\section{순수한 전체계와 혼합된 부분계}
+
+결합된 계는 순수 상태 \(\ket{\Psi}\)에 있지만, \(\rho_A\)에는 일반적으로 0이 아닌 고윳값이 여러 개 있다. 전체를 완전히 알고 있다고 해서 각 부분의 상태 벡터까지 알 수 있는 것은 아니다. 고양이와 총은 하나의 얽힌 상태 벡터로 기술될 수 있으며, 이때 고양이만은 축약 밀도 행렬로 기술된다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:25}
+\audiencequestion{\(\operatorname{Tr}(M\rho)\)를 \((\operatorname{Tr}M)(\operatorname{Tr}\rho)\)로 바꿔 써도 되나요?}
+\lecturerresponse{안 된다. 곱의 트레이스는 일반적으로 각 인자의 트레이스를 곱한 것과 같지 않다. 순환성에 따라 \(\operatorname{Tr}(M\rho)=\operatorname{Tr}(\rho M)\)라고 쓸 수는 있지만, 트레이스가 인자별로 분해되지는 않는다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:49}
+\audiencequestion{처음에 기저 상태 \(\ket{a,b}\)만으로 시작했나요, 아니면 가장 일반적인 순수 상태로 시작했나요?}
+\lecturerresponse{복합계의 가장 일반적인 순수 상태로 시작했다. \(\ket{\Psi}=\sum_{a,b}\psi(a,b)\ket{a,b}\). 하나의 \(\ket{a,b}\)는 기저 벡터 하나일 뿐이다. 놀라운 점은 이렇게 완전히 지정된 복합계의 벡터조차 혼합된 축약 상태를 만들 수 있다는 것이다.}
+\end{classroomqa}
+
+고전역학과의 차이는 뚜렷하다. 복합계에 대한 고전적 정보를 완전히 알면 각 좌표가 정해지고, 따라서 각 부분계도 정해진다. 물론 고전적 확률 분포를 주변화할 수 있지만, 원래 분포가 위상 공간의 한 점에 집중되어 있으면 모든 주변 분포도 하나의 확정된 값에 집중된다. 양자 순수 상태는 반드시 이런 성질을 갖지는 않는다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:46}
+\audiencequestion{\(B\)에 대해 합을 취하는 것은 고전적인 위치--속도 분포를 속도에 대해 적분하는 것과 어떻게 다른가요?}
+\lecturerresponse{두 연산은 비슷해 보이지만 순수 상태일 때의 결과가 다르다. 완전히 알려진 고전적 위상 공간 점은 위치와 속도를 모두 정하므로, 어느 쪽으로 주변화해도 확정된 값이 남는다. 완전히 알려진 얽힌 양자 상태는 어느 한 부분계에 대해서든 자명하지 않은 혼합 상태를 만들 수 있다. 따라서 부분 트레이스는 전체가 순수하면 각 부분도 순수하다는 고전적 함의가 양자역학에서는 성립하지 않음을 보여준다.}
+\end{classroomqa}
+
+\section{곱 상태: 예외적인 경우}
+
+\(\rho_A\)가 순수 상태로 남는 경우는 언제인가? 파동 함수가 인수분해되어야 한다.
+\begin{equation}
+\psi(a,b)=\phi(a)\chi(b).
+\end{equation}
+\(\phi\)와 \(\chi\)가 각각 정규화되어 있다고 하자. 이를 축약 밀도 행렬에 대입하면
+\begin{align}
+\rho_A(a,a')
+&=\sum_b\phi(a)\chi(b)\phi^*(a')\chi^*(b) \\
+&=\phi(a)\phi^*(a')\sum_b|\chi(b)|^2 \\
+&=\phi(a)\phi^*(a').
+\end{align}
+따라서
+\begin{equation}
+\rho_A=\ket{\phi}\bra{\phi}.
+\end{equation}
+고윳값은 \(1\) 하나이고 나머지는 모두 \(0\)이며, 엔트로피는 0이다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_10.png}\caption{파동 함수가 인수분해되면 \(B\)에 대한 합은 \(\chi\)의 정규화 조건으로 줄어든다.}\lectureframe{00:46:35}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:44:17}
+\audiencequestion{\(\phi(a)\) 자체가 \(A\) 계의 상태인가요?}
+\lecturerresponse{그 상태를 이루는 파동 함수 성분이다. 더 명확히 쓰면 \(\ket{\phi}=\sum_a\phi(a)\ket{a}\)이고, \(\ket{\chi}=\sum_b\chi(b)\ket{b}\)도 마찬가지다. 인수분해란 \(\ket{\Psi}=\ket{\phi}\otimes\ket{\chi}\), 즉 \(A\)와 \(B\) 사이에 얽힘이 없는 곱 상태라는 뜻이다.}
+\end{classroomqa}
+
+모든 국소 관측량에 대해
+\begin{equation}
+\expect{M_A}
+=\operatorname{Tr}(\rho_A M_A)
+=\bra{\phi}M_A\ket{\phi}.
+\end{equation}
+부분계 \(A\)은 순수 상태 \(\ket{\phi}\)와 정확히 똑같이 거동한다. 따라서 이분계의 순수 상태에서 \(\rho_A\)의 엔트로피는 곱 상태인지 판별하는 기준이 된다. 엔트로피가 영이면 곱 상태이고, 영이 아니면 얽힌 상태이다. 엔트로피가 영에 가까우면 얽힘이 약하고, 최댓값에 가까우면 이 분할에서 어떤 곱 상태와도 거리가 먼 상태이다.
+
+\section{싱글렛: 순수한 전체계와 최대의 국소적 무지}
+
+두 스핀의 싱글렛 상태를 보자.
+\begin{equation}
+\ket{\Psi^-}
+=\frac{1}{\sqrt{2}}
+\left(
+\ket{\uparrow\downarrow}
+-\ket{\downarrow\uparrow}
+\right).
+\end{equation}
+파동함수에서 0이 아닌 성분은 다음과 같다.
+\begin{equation}
+\psi(\uparrow,\downarrow)=\frac{1}{\sqrt{2}},
+\qquad
+\psi(\downarrow,\uparrow)=-\frac{1}{\sqrt{2}},
+\end{equation}
+반면 \(\psi(\uparrow,\uparrow)=\psi(\downarrow,\downarrow)=0\).
+
+스핀 \(2\)에 대해 부분 추적을 취하자. 대각 성분은
+\begin{align}
+\rho_1(\uparrow,\uparrow)
+&=|\psi(\uparrow,\uparrow)|^2
+ +|\psi(\uparrow,\downarrow)|^2
+=\frac{1}{2}, \\
+\rho_1(\downarrow,\downarrow)
+&=|\psi(\downarrow,\uparrow)|^2
+ +|\psi(\downarrow,\downarrow)|^2
+=\frac{1}{2}.
+\end{align}
+비대각 성분은
+\begin{align}
+\rho_1(\uparrow,\downarrow)
+&=\psi(\uparrow,\uparrow)\psi^*(\downarrow,\uparrow)
+ +\psi(\uparrow,\downarrow)\psi^*(\downarrow,\downarrow) \\
+&=0,
+\end{align}
+이며, 그 켤레 성분도 사라진다. 따라서
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&0\\[2pt]
+0&\frac12
+\end{pmatrix}
+=\frac12 I.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_11.png}\caption{싱글렛에서 한 스핀의 축약 밀도 행렬을 이루는 네 성분.}\lectureframe{00:55:35}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:58}
+\audiencequestion{스핀 하나의 축약 상태 엔트로피는 얼마인가요?}
+\lecturerresponse{두 고윳값은 모두 \(1/2\)이므로,
+\[
+S_1=-2\left(\frac12\log\frac12\right)=\log 2.
+\]
+이는 두 상태 부분계가 가질 수 있는 최대 엔트로피다. 최대 혼합 상태의 특징은 \emph{고윳값}이 같다는 것이지, 임의의 기저에서 행렬 성분이 같다는 것이 아니다.}
+\end{classroomqa}
+
+모든 축 방향에서 스핀의 기댓값은 0이다.
+\begin{equation}
+\expect{\bm{\sigma}\cdot\hat{\bm n}}
+=\operatorname{Tr}\!\left(
+\rho_1\,\bm{\sigma}\cdot\hat{\bm n}
+\right)
+=\frac12\operatorname{Tr}
+\left(\bm{\sigma}\cdot\hat{\bm n}\right)
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:58:37}
+\audiencequestion{\(\bm{\sigma}\cdot\hat{\bm n}\)의 자취가 어떤 방향에서나 0인 이유는 무엇인가?}
+\lecturerresponse{각 파울리 행렬은 자취가 없다. \(\bm{\sigma}\cdot\hat{\bm n}=n_1\sigma_1+n_2\sigma_2+n_3\sigma_3\)이므로 자취의 선형성에 따라 모든 단위 벡터 \(\hat{\bm n}\)에 대해 자취는 0이다. 따라서 스핀을 측정하면 선택한 축과 평행하거나 반평행한 방향으로 나올 확률이 같다.}
+\end{classroomqa}
+
+전체 스핀쌍은 확정된 순수 상태에 있고 엔트로피는 0이다. 각 스핀은 하나씩 보면 최대 혼합 상태다. 이는 준비 기록이 부실해서 생긴 무지가 아니라, 얽힘이 함의하는 국소 상태다.
+
+\section{진폭이 같은 곱 상태}
+
+이제 다음 상태를 생각하자.
+\begin{equation}
+\ket{\Phi}
+=\frac12\left(
+\ket{\uparrow\uparrow}
++\ket{\uparrow\downarrow}
++\ket{\downarrow\uparrow}
++\ket{\downarrow\downarrow}
+\right).
+\end{equation}
+네 진폭은 모두 \(1/2\)이므로, \(1/4\)인 항이 네 개 있어 정규화가 성립한다. 스핀 \(2\)에 대해 트레이스를 취하면
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}.
+\end{equation}
+트레이스는 \(1\)이지만,
+\begin{equation}
+\det\rho_1
+=\frac14-\frac14
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:23}
+\audiencequestion{여기서 트레이스와 행렬식으로 두 고윳값을 어떻게 구하나요?}
+\lecturerresponse{\(2\times2\) 행렬에서 고윳값의 합은 트레이스이고 곱은 행렬식이다. 따라서 \(\lambda_1+\lambda_2=1\)이고 \(\lambda_1\lambda_2=0\)이므로, 고윳값 쌍은 \(\{1,0\}\)일 수밖에 없다. 축약 상태는 순수하고 엔트로피는 0이다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:18}
+\audiencequestion{얽히지 않은 두 스핀은 실제로 어떤 상태인가요?}
+\lecturerresponse{두 스핀 모두 양의 \(x\)축을 따라 정렬되어 있다. 이는 인수분해를 통해 알아볼 수 있고,
+\[
+\ket{\Phi}
+=\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2}
+\otimes
+\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2},
+\]
+파울리 기대값을 계산해 실험적으로 확인할 수도 있다.}
+\end{classroomqa}
+
+\(z\) 성분의 경우,
+\begin{equation}
+\sigma_3=
+\begin{pmatrix}
+1&0\\[2pt]
+0&-1
+\end{pmatrix},
+\qquad
+\operatorname{Tr}(\rho_1\sigma_3)=0.
+\end{equation}
+\(x\) 성분의 경우,
+\begin{equation}
+\sigma_1=
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix},
+\end{equation}
+그리고
+\begin{align}
+\rho_1\sigma_1
+&=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}, \\
+\operatorname{Tr}(\rho_1\sigma_1)&=1.
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_03.png}\caption{진폭이 같은 축약 상태에 대한 \(\sigma_1\) 행렬 계산.}\lectureframe{01:05:13}\end{figure}
+
+따라서 \(\expect{\sigma_1}=1\)인 반면 \(\expect{\sigma_2}=\expect{\sigma_3}=0\)이다. 진폭을 정확한 인수분해 상태에서 벗어나도록 섭동하면 고윳값은 일반적으로 \(\{1,0\}\)에서 0이 아닌 두 값으로 바뀐다. 그 결과 생기는 작은 엔트로피는 얽힘이 조금 있음을 나타낸다.
+
+\section{누구의 엔트로피인가?}
+
+방금 계산한 엔트로피는 부분계의 엔트로피이다. 싱글렛의 경우,
+\begin{equation}
+S(\rho_{12})=0,
+\qquad
+S(\rho_1)=S(\rho_2)=\log 2.
+\end{equation}
+전체계는 순수 상태인 반면 각 부분계는 혼합 상태이다. 따라서 얽힘 엔트로피에는 단순한 가법 법칙 \(S_{12}=S_1+S_2\)이 성립하지 않는다. 이분계의 순수 상태에서는 두 축약 밀도 행렬의 0이 아닌 고윳값이 같으므로, 전체계의 엔트로피가 0이어도 두 부분계의 엔트로피는 같다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:03}
+\audiencequestion{모든 밀도 행렬은 궁극적으로 얽힘 밀도 행렬인가요?}
+\lecturerresponse{조작적 관점에서는 무엇이 정보의 누락을 일으켰는지 추적하지 않고도 보통의 불확실성을 기술할 수 있다. 준비 장치나 환경 또는 관찰자를 포함하면, 그러한 불확실성을 관측하지 않은 자유도와의 얽힘으로 보는 경우가 많다. 수학적으로는 이 생각이 정확하다. 모든 밀도 행렬은 더 큰 힐베르트 공간에서 순화할 수 있지만, 그 순화가 실제 준비 과정의 이력을 유일하게 밝혀 주는 것은 아니다.}
+\end{classroomqa}
+
+\section{이산적인 고전적 운동에서 양자적 운동으로}
+
+이제 잠시 얽힘을 떠나 상태가 시간에 따라 어떻게 변하는지 묻자. 유한 개의 배치를 가진 고전계에서 가역적 시간 발전은 순열이다. 각 상태에는 다음 상태와 이전 상태가 하나씩 있으며, 운동은 순환들로 분해된다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_12.png}\caption{이산 배치들 사이의 화살표로 나타낸 고전적 가역 시간 발전.}\lectureframe{01:11:40}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:11:51}
+\audiencequestion{배치들이 이산적이면 시간 간격도 이산적이어야 하나요?}
+\lecturerresponse{엄밀한 고전적 두 상태 모형에는 연속적인 경로가 지나갈 중간 배치가 없다. 실제 동전을 천천히 돌리면 방향이라는 연속 좌표를 추가하게 되므로 더는 두 배치만으로 이루어진 모형이 아니다. 양자 두 상태 계는 다르다. 정규직교 기저에는 두 원소만 있지만, 힐베르트 공간에는 중첩 상태가 연속적으로 존재한다.}
+\end{classroomqa}
+
+스핀-\(\tfrac12\) 상태는 중첩을 거치며 \(\ket{\uparrow}\)에서 \(\ket{\downarrow}\) 쪽으로 연속적으로 회전할 수 있다. 유한 차원이라고 해서 상태 벡터의 집합도 유한한 것은 아니다. 따라서 이산적인 양자계에서도 시간에 따른 연속적인 시간 발전이 가능하다.
+
+가역적인 미시적 동역학은 구별되는 상태도 보존한다. 서로 다른 두 고전적 초기 조건이 하나의 미시 상태로 합쳐지지는 않는다. 그렇게 되면 어느 초기 조건에서 출발했는지에 대한 정보가 사라지기 때문이다. 해밀턴 역학에서는 이 가역성과 함께 리우빌 정리에 따라 위상 공간 부피도 보존된다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:26}
+\audiencequestion{여러 초기 조건이 같은 정상 상태로 접근하는 비선형 분기 현상은 어떻게 설명하나요?}
+\lecturerresponse{흡인자는 환경 자유도를 버린 유효 소산 기술에서 나타난다. 근본적인 미시 해밀턴 시간 발전은 여전히 가역적이다. 정보가 관측되지 않는 변수로 옮겨갈 수는 있지만, 서로 다른 완전한 상태들이 문자 그대로 하나의 완전한 상태가 되지는 않는다.}
+\end{classroomqa}
+
+양자역학에서 이에 해당하는 명제가 유니터리성이다. 직교하는 초기 상태들은 시간 발전 후에도 직교하며, 더 일반적으로 모든 내적이 보존된다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:50}
+\audiencequestion{두 상태가 정확히 같은 영향을 받아야 하나요? \(z\) 방향 자기장 속의 초기 \(z\)-스핀 업 상태와 다운 상태는 어떻게 되나요?\(x\)}
+\lecturerresponse{두 상태에 같은 시간 발전 연산자가 작용해야 한다. 횡방향 자기장 속에서 두 스핀은 세차하지만, 블로흐 벡터는 서로 반대 방향을 유지하고 상태 벡터는 계속 직교한다. 서로 다른 외부 이력을 적용한다면 서로 다른 시간 발전 연산자를 비교하는 셈이다.}
+\end{classroomqa}
+
+\section{선형성과 유니터리성}
+
+양자 시간 발전의 첫 번째 원리는 선형성이다.
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+이 연산자는 경과 시간에 의존하며 다음을 만족한다.
+\begin{equation}
+U(0)=I.
+\end{equation}
+양자역학 자체의 선형성과 마찬가지로, 이 규칙도 경험적 성공으로 정당화된다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_13.png}\caption{시간 \(t\)에서의 상태는 선형 연산자 \(U(t)\)가 초기 상태에 작용해 얻어진다.}\lectureframe{01:19:00}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:01}
+\audiencequestion{\(U(t)\)는 \(t=0\)에서 무엇이어야 하나요?}
+\lecturerresponse{항등 연산자여야 한다. 경과 시간이 0일 때는 어떤 초기 벡터도 변하지 않는다.}
+\end{classroomqa}
+
+두 번째 원리는 내적의 보존이다.
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+\(\phi=\psi\)일 때 이는 정규화를 보존하므로 전체 확률도 보존한다. 초기 상태들이 직교하면 완전한 구별 가능성이 보존된다. 임의의 상태 쌍에 대해서는 그 기하학적 관계 전체가 보존된다.
+
+브라는 다음과 같이 시간 발전한다.
+\begin{equation}
+\bra{\phi(t)}
+=\bra{\phi(0)}U^\dagger(t),
+\end{equation}
+따라서
+\begin{align}
+\braket{\phi(t)}{\psi(t)}
+&=\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)} \\
+&=\braket{\phi(0)}{\psi(0)}.
+\end{align}
+이 등식이 모든 초기 벡터 쌍에 대해 성립하므로,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_04.png}\caption{켓과 브라의 시간 발전 및 내적 조건으로부터 \(U^\dagger U=I\)를 얻는다.}\lectureframe{01:23:30}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:22:10}
+\audiencequestion{브라에는 왜 \(U^\dagger\)가 아니라 \(U\)가 붙나요?}
+\lecturerresponse{에르미트 켤레를 취하면 인자의 순서가 뒤집히고 각 연산자는 자신의 에르미트 켤레로 바뀐다.
+\[
+\bigl(U\ket{\phi}\bigr)^\dagger
+=\bra{\phi}U^\dagger.
+\]
+이는 내적이 일관되도록 필요한 쌍대 작용이다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:34}
+\audiencequestion{\(U\)가 복소수라면 \(U^\dagger U=1\)은 무엇을 뜻하나요?}
+\lecturerresponse{\(|U|=1\)를 뜻하므로 \(U=e^{i\theta}\)는 단위원 위에 놓인다. 유니터리 행렬은 순수 위상에 대응하는 연산자다. 길이와 내적을 보존한다.}
+\end{classroomqa}
+
+\section{무한소 시간 발전과 해밀토니안}
+
+매우 짧은 시간 간격 \(\epsilon\)을 두자. \(U(0)=I\)이므로 일차 전개를 다음과 같이 쓸 수 있다.
+\begin{equation}
+U(\epsilon)=I-i\epsilon h+O(\epsilon^2).
+\end{equation}
+마이너스 부호와 \(i\) 인자는 편리한 관례이다. 에르미트 켤레를 취하면
+\begin{equation}
+U^\dagger(\epsilon)
+=I+i\epsilon h^\dagger+O(\epsilon^2).
+\end{equation}
+유니터리성은 다음을 요구한다.
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon) \\
+&=\left(I+i\epsilon h^\dagger\right)
+\left(I-i\epsilon h\right)+O(\epsilon^2) \\
+&=I+i\epsilon(h^\dagger-h)+O(\epsilon^2).
+\end{align}
+일차 항은 사라져야 한다.
+\begin{equation}
+\boxed{h^\dagger=h}.
+\end{equation}
+무한소 생성자는 에르미트 연산자이다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_14.png}\caption{1차 유니터리성 조건은 무한소 생성자가 에르미트 연산자임을 강제한다.}\lectureframe{01:29:35}\end{figure}
+
+위에서 임시로 정한 관례에서는 \(h\)의 단위가 각진동수다. 물리적 단위를 복원해 에너지 연산자를 정의하면
+\begin{equation}
+H=\hbar h.
+\end{equation}
+이 에르미트 연산자가 해밀토니안이며, 그 고윳값은 에너지 준위다.
+
+무한소 연산자를 상태에 작용시키면
+\begin{equation}
+\ket{\psi(\epsilon)}
+=\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(0)}
++O(\epsilon^2).
+\end{equation}
+초기 상태를 빼고 \(\epsilon\)로 나눈 뒤 극한을 취하면
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+동등하게,
+\begin{equation}
+\boxed{
+i\hbar\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+이것이 일반적인 Schr\"odinger 방정식이다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_15.png}\caption{무한소 차분몫은 상태의 시간 미분이 된다.}\lectureframe{01:32:18}\end{figure}
+
+해밀토니안은 물리적 설정에 따라 달라진다. 외부 자기장이나 다른 제어 변수가 변하면 시간에 따라 달라질 수 있다. 설정이 시간에 무관하면 \(H\)는 고정된 에르미트 연산자다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:30}
+\audiencequestion{내적의 보존은 처음에 얽히지 않았던 계들이 계속 얽히지 않은 채로 남는다는 뜻인가요?}
+\lecturerresponse{아니다. 유니터리성은 완전한 상태 벡터들 사이의 내적을 보존하지만, 선택한 분할에 따른 곱 구조까지 보존하지는 않는다. 상호작용 해밀토니안은 곱 상태를 얽힌 상태로 바꿀 수 있다. 유니터리 연산으로 이런 변화가 불가능하다면 측정에서 계와 측정 장치가 상관관계를 맺을 수 없을 것이다.}
+\end{classroomqa}
+
+\section{엔트로피의 단위}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:08}
+\audiencequestion{얽힘에도 줄처럼 물리적 단위가 있나요?}
+\lecturerresponse{얽힘 엔트로피는 에너지가 아니라 정보의 척도다. 자연로그를 쓰면 냇 단위로, 밑이 2인 로그를 쓰면 비트 단위로 잰다. 둘 다 계수 방식을 나타내는 무차원 단위다.}
+\end{classroomqa}
+
+볼츠만 상수가 켈빈으로 잰 온도와 에너지 사이의 변환을 나타내므로, 열역학 표기법은 이 점을 흐릴 수 있다.
+\begin{equation}
+\expect{K}_{\mathrm{monatomic}}
+=\frac32 k_{\mathrm B}T.
+\end{equation}
+가역 열의 관계식은
+\begin{equation}
+\delta Q_{\mathrm{rev}}=T\,\mathrm dS_{\mathrm{th}}.
+\end{equation}
+정보 엔트로피가
+\begin{equation}
+S_{\mathrm{info}}=-\sum_i p_i\log p_i,
+\end{equation}
+라면, 관례적인 열역학적 엔트로피는
+\begin{equation}
+S_{\mathrm{th}}=k_{\mathrm B}S_{\mathrm{info}}.
+\end{equation}
+이다. \(k_{\mathrm B}=1\)로 두면 온도를 에너지 단위로 나타내고 엔트로피는 무차원으로 남는다. 이때 볼츠만 상수는 새로운 종류의 얽힘 단위가 아니라 변환 인자로 이해된다. 볼츠만의 통계적 발상과 아인슈타인의 브라운 운동에 관한 1905 연구를 연결하는 역사적 언급은 정보 이론적 정의를 바꾸지 않는다.
+
+\section{에너지 고유상태와 위상}
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:54}
+\audiencequestion{에르미트 생성자 \(H\)를 에너지와 동일시하는 이유는 무엇인가요?}
+\lecturerresponse{유니터리성만으로 증명되는 것은 생성자가 에르미트 연산자라는 사실뿐이다. 이를 에너지와 동일시하는 것은 추가적인 물리적 진술, 즉 에너지가 시간 병진을 생성한다는 명제다. 시간에 무관한 해밀토니안에서는 시간 발전을 지배하는 바로 그 연산자가 보존되며, 그 고윳값은 정지 상태의 에너지 준위다. 구체적인 해밀토니안은 이 동일시의 실험적 내용을 제공한다.}
+\end{classroomqa}
+
+플랑크 상수와 진동수 사이의 관계는 다음과 같다.
+\begin{equation}
+E=h\nu=\hbar\omega,
+\qquad
+\omega=2\pi\nu,
+\qquad
+h=2\pi\hbar.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:30}
+\audiencequestion{시간 진화 방정식에는 \(h\)를 써야 할까요, \(\hbar\)를 써야 할까요, 아니면 여기에 \(2\pi\)라는 인자를 더 곱해야 할까요?}
+\lecturerresponse{각진동수 \(\omega\)를 사용하면 방정식은 \(E=\hbar\omega\)이고, Schr\"odinger 방정식에는 \(\hbar\)가 들어갑니다. 보통 진동수 \(\nu\)를 사용하면 이에 대응하는 관계는 \(E=h\nu\)입니다. 인자 \(2\pi\)는 전적으로 \(\omega=2\pi\nu\)와 \(h=2\pi\hbar\)로 설명됩니다.}
+\end{classroomqa}
+
+초기 상태가 에너지 고유벡터라고 하자.
+\begin{equation}
+H\ket{\psi(0)}=E\ket{\psi(0)}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:18}
+\audiencequestion{상태가 에너지 고유벡터로 유지된다면, 상태가 변하지 않는다는 뜻인가요?}
+\lecturerresponse{시간에 따라 변하는 복소 인자를 얻으면서도 같은 고윳값을 갖는 고유벡터로 남을 수 있습니다. 유니터리성에 따라 그 인자는 위상으로 제한됩니다. 따라서 켓의 위상이 회전하는 동안에도 광선은 정지해 있습니다.}
+\end{classroomqa}
+
+다음과 같이 쓰자.
+\begin{equation}
+\ket{\psi(t)}=f(t)\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_05.png}
+\caption{에너지 고유상태는 스칼라 인자 \(f(t)\)를 제외하면 힐베르트 공간에서 같은 방향을 유지한다.}
+\lectureframe{01:43:54}
+\end{figure}
+
+Schr\"odinger 방정식에 대입하면 다음을 얻는다.
+\begin{align}
+i\hbar\frac{\mathrm d f}{\mathrm dt}\ket{\psi(0)}
+&=f(t)H\ket{\psi(0)} \\
+&=E f(t)\ket{\psi(0)}.
+\end{align}
+양변에서 공통 벡터를 약분하면 다음과 같다.
+\begin{equation}
+\frac{\mathrm d f}{\mathrm dt}
+=-\frac{iE}{\hbar}f(t).
+\end{equation}
+\(f(0)=1\)일 때,
+\begin{equation}
+f(t)=e^{-iEt/\hbar},
+\qquad
+\ket{\psi(t)}=e^{-iEt/\hbar}\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_16.png}
+\caption{에너지 고윳값 방정식과 그에 따른 위상 진화.}
+\lectureframe{01:46:10}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{위상 \(e^{-iEt/\hbar}\)에서 \(t\)의 계수는 무엇인가요?}
+\lecturerresponse{각진동수입니다.
+\[
+\omega=\frac{E}{\hbar}.
+\]
+즉 \(E=\hbar\omega\)입니다. 실수 지수 계수는 증가율이나 감쇠율을 나타내지만, 여기서 허수 지수는 유니터리 위상 회전을 나타냅니다.}
+\end{classroomqa}
+
+이 위상과 진동수의 관계와 Schr\"odinger 방정식은 시간 진화의 같은 법칙을 두 가지 형태로 나타낸 것입니다. 이 방정식은 일반적이며, 자유 입자, 퍼텐셜 속의 입자, 자기장 속의 스핀은 해밀토니안이 서로 다릅니다. 다음 단계는 이 해밀토니안을 선택하고 푸는 것입니다.

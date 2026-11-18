@@ -1,0 +1,721 @@
+\chapter{스핀의 기하와 첫 얽힘 상태}
+
+\lectureoverview{얽힘은 부분들로 이루어진 계에서 나타나지만, 한 스핀에 관한 이론적 틀을 완성하기 전에는 두 스핀 문제를 제대로 다룰 수 없다. 따라서 임의의 축을 따른 스핀에서 출발해 두 방향 사이의 전이 확률을 유도하고, 측정을 필터로 해석하며, 가환성을 관측량의 양립 가능성 기준으로 살펴본다. 이어지는 계수 논증은 두 스핀 계가 서로 따로 준비한 두 스핀으로는 만들 수 없는 순수 상태를 더 많이 가진다는 점을 보여 준다. 그 여분의 상태들이 얽힘 상태이며, 가장 단순한 예에서도 각 전자는 개별적으로 완전히 무편극 상태인 반면 두 전자 사이에는 확정된 상관관계가 존재한다.}
+
+\section{한 스핀 문제의 마무리}
+
+벨 정리는 나중에 다루어도 된다. 얽힘 자체는 두 전자에서 시작하지만, 한 전자에 관한 나머지 구조가 모든 계산에 들어간다. 그러므로 두 개를 결합하기 전에 두 상태 계를 먼저 마무리하자.
+
+일반적인 공간 단위벡터를 택하자.
+\begin{equation}
+  \hat n=(n_1,n_2,n_3),
+  \qquad
+  n_1^2+n_2^2+n_3^2=1.
+  \label{eq:l04-unit-pointer}
+\end{equation}
+\(1,2,3\)을 \(x,y,z\)이라고 불러도 된다. 중요한 점은 축들이 일관된 하나의 오른손 좌표계를 이룬다는 것이다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:02:33}
+\audiencequestion{칠판에 그린 좌표축 삼중항은 오른손 좌표계인가요?}
+\lecturerresponse{첫 번째 그림은 왼손 좌표계다. 두 번째 축의 방향을 바꾸거나 두 축의 이름을 일관되게 맞바꾸면 바로잡을 수 있다. 아래 계산은 고정된 오른손 좌표계 규약만 사용하므로, 그림의 방향이 우연히 잘못된 것은 물리적 의미가 없다.}
+\end{classroomqa}
+
+스핀에는 관측 가능한 성분이 세 개 있으며, 파울리 행렬로 나타낸다.
+\begin{equation}
+  \begin{aligned}
+    \sigma_1&=
+    \begin{pmatrix}0&1\\1&0\end{pmatrix},
+    &
+    \sigma_2&=
+    \begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.5em]
+    \sigma_3&=
+    \begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+  \end{aligned}
+\end{equation}
+\(\hat n\) 방향의 성분은 이 행렬값 벡터와 포인터의 일반적인 공간 내적이다.
+\begin{equation}
+  \sigma_{\hat n}
+  \equiv
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3.
+  \label{eq:l04-sigma-dot-n}
+\end{equation}
+이 내적은 물리적 3차원 공간에서 정의된다. 두 상태 벡터 사이의 내적은 아니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_02.png}
+\caption{\(\hat n\) 방향의 공간 성분은 세 행렬 관측량의 선형결합이 된다.}
+\lectureframe{00:05:09}
+\end{figure}
+
+파울리 행렬을 대입하면 다음을 얻는다.
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3 & n_1-in_2\\
+    n_1+in_2 & -n_3
+  \end{pmatrix}.
+  \label{eq:l04-sigma-n-matrix}
+\end{equation}
+표기를 간단히 하기 위해 다음과 같이 놓자.
+\begin{equation}
+  n_-=n_1-in_2,
+  \qquad
+  n_+=n_1+in_2=n_-^*,
+\end{equation}
+그러면
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}.
+\end{equation}
+대각 성분은 실수이고 비대각 성분은 서로 켤레이므로, 이 연산자는 에르미트 연산자다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_03.png}
+\caption{임의의 축을 따른 스핀 관측량을 명시적인 2×2 형태로 나타냈다.}
+\lectureframe{00:07:34}
+\end{figure}
+
+실제로 \(\sigma_{\hat n}\)를 측정한다는 것은 \(\hat n\) 방향으로 강한 자기장을 정렬한 뒤 스핀에 따른 반응을 관측한다는 뜻이다. 강의에서는 그 반응을 광자가 방출되는지 여부로 나타낸다. 행렬과 실험실에서 던지는 질문은 같은 측정을 서로 다르게 표현한 것이다.
+
+계산의 나머지 부분에 사용할 간단한 항등식 두 가지를 살펴보자. 먼저,
+\begin{equation}
+  \sigma_{\hat n}^{\,2}=I.
+  \label{eq:l04-sigma-n-square}
+\end{equation}
+이는 식~\eqref{eq:l04-sigma-n-matrix}에 나온 행렬을 그 행렬 자체와 곱해도 얻을 수 있고, 다음 항등식을 이용해도 얻을 수 있다.
+\begin{equation}
+  \sigma_i^2=I,
+  \qquad
+  \sigma_i\sigma_j=-\sigma_j\sigma_i
+  \quad(i\ne j).
+\end{equation}
+따라서 \(\sigma_{\hat n}\)의 모든 고윳값 \(\lambda\)은 \(\lambda^2=1\)를 만족하므로, 가능한 측정 결과는 다음뿐이다.
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+두 번째로,
+\begin{equation}
+  n_+n_-
+  =n_1^2+n_2^2
+  =1-n_3^2
+  =(1-n_3)(1+n_3).
+  \label{eq:l04-nplus-nminus}
+\end{equation}
+깊은 정리는 아니지만 고유벡터 계산을 간결하게 유지해 주는 항등식이다.
+
+\section{상태 준비에서 확률까지}
+
+전자 스핀을 \(\hat n\) 방향으로 \(+1\)가 되도록 준비한 뒤, 다른 방향 \(\hat m\)을 따라 측정하자. 한 스핀에 관한 핵심 질문은 다음과 같다.
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  P(\sigma_{\hat m}=+1\mid\sigma_{\hat n}=+1).
+  \label{eq:l04-central-probability}
+\end{equation}
+대칭성에 따르면 답은 \(\hat n\)과 \(\hat m\) 사이의 각도에만 의존하고, 두 방향을 맞바꾸어도 달라지지 않을 것이다. 이런 예상은 유용한 점검 기준이지만, 확률 공리를 대신하지는 않는다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:03}
+\audiencequestion{양자역학에서 파울리 행렬 세 개를 스핀 연산자로 보는 것은 이론 자체에서 알 수 있나요, 아니면 실험으로 배우나요?}
+\lecturerresponse{이러한 동일시는 단 하나의 실험에서 나온 결론이 아니라, 축적된 양자역학의 경험적 구조에 속한다. 반복적인 스핀 실험에서 확률적 규칙성이 드러났고, 아인슈타인, 보른, 하이젠베르크, 디랙을 비롯한 여러 사람의 연구를 거쳐 그 규칙성을 담아내도록 행렬 형식이 만들어졌다. 공리는 데이터에 의해 제약받으며 놀라울 만큼 성공을 거둔 가설들이다.}
+\end{classroomqa}
+
+다음과 같이 놓자.
+\begin{equation}
+  \sigma_{\hat n}\ket{n,+}=\ket{n,+},
+  \qquad
+  \sigma_{\hat m}\ket{m,+}=\ket{m,+}.
+  \label{eq:l04-nm-eigenstates}
+\end{equation}
+기호 \(n,+\)과 \(m,+\)는 켓 안에 붙인 표지다. 이들은 고윳값이 \(+1\)인 고유상태를 가리킨다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_04.png}
+\caption{\(\hat n\)과 \(\hat m\) 방향 스핀의 \(+1\) 고유상태.}
+\lectureframe{00:17:36}
+\end{figure}
+
+먼저 계산할 것은 확률진폭이다.
+\begin{equation}
+  \mathcal A(m,+\mid n,+)=\braket{m,+}{n,+}.
+\end{equation}
+확률은 그 절댓값의 제곱이다.
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \left|\braket{m,+}{n,+}\right|^2.
+  \label{eq:l04-born-nm}
+\end{equation}
+먼저 진폭을 구하고 다음에 확률을 구한다. 이 순서가 양자역학에서 핵심이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_04_figure_05.png}
+\caption{준비한 \(n\) 상태와 측정할 \(m\) 상태 사이의 내적이 확률진폭이다.}
+\lectureframe{00:19:59}
+\end{figure}
+
+\subsection{고유상태 구하기}
+
+\(\sigma_{\hat n}\)의 후보 \(+1\) 고유벡터를 다음과 같이 쓰자.
+\begin{equation}
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix}.
+\end{equation}
+정규화는 나중에 해도 되고 전체 위상은 물리적 효과가 없다. 따라서 남극에 해당하는 좌표 패치 바깥에서는 \(\alpha=1\)로 둘 수 있고, \(\beta=z\)라고 쓸 수 있다. 다음 식의 첫 번째 성분에서
+\begin{equation}
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}
+  \begin{pmatrix}1\\z\end{pmatrix}
+  =
+  \begin{pmatrix}1\\z\end{pmatrix}
+\end{equation}
+다음 관계를 얻는다.
+\begin{equation}
+  n_3+n_-z=1,
+  \qquad
+  z=\frac{1-n_3}{n_-}.
+  \label{eq:l04-z-solution}
+\end{equation}
+식~\eqref{eq:l04-nplus-nminus}를 이용하면 두 번째 성분에서도 같은 조건이 나온다.
+
+정규화되지 않은 벡터의 노름 제곱은
+\begin{align}
+  \begin{pmatrix}
+    1&\dfrac{1-n_3}{n_+}
+  \end{pmatrix}
+  \begin{pmatrix}
+    1\\[3pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}
+  &=
+  1+\frac{(1-n_3)^2}{n_+n_-}
+  \notag\\
+  &=
+  1+\frac{1-n_3}{1+n_3}
+  =
+  \frac{2}{1+n_3}.
+  \label{eq:l04-unnormalized-norm}
+\end{align}
+이다. 따라서 정규화된 상태는 다음과 같이 택할 수 있다.
+\begin{equation}
+  \ket{n,+}
+  =
+  \sqrt{\frac{1+n_3}{2}}
+  \begin{pmatrix}
+    1\\[5pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}.
+  \label{eq:l04-normalized-n-state}
+\end{equation}
+\(n_3=-1\)에서는 이 좌표 표현이 특이해지지만 상태 자체는 특이하지 않다. 고유상태는 그저 \(\ket d=(0,1)^T\)이다. 특이성은 스핀 자체가 아니라 위상 규약에서 비롯된다.
+
+\(n\)을 \(m\)로 바꾸고 켤레를 취하면 다음을 얻는다.
+\begin{equation}
+  \bra{m,+}
+  =
+  \sqrt{\frac{1+m_3}{2}}
+  \begin{pmatrix}
+    1&
+    \dfrac{1-m_3}{m_+}
+  \end{pmatrix}.
+\end{equation}
+내적은 복잡해 보이고, 여기에 켤레를 곱하면 더 복잡해 보인다. 식~\eqref{eq:l04-nplus-nminus}을 거듭 이용하면 결과를 다음처럼 간단히 쓸 수 있다.
+\begin{equation}
+  \begin{aligned}
+    P(m,+\mid n,+)
+    &=\frac{1+n_1m_1+n_2m_2+n_3m_3}{2}\\
+    &=\frac{1+\hat n\cdot\hat m}{2}.
+  \end{aligned}
+  \label{eq:l04-spin-transition-probability}
+\end{equation}
+두 공간 방향 사이의 각도가 \(\theta_{nm}\)라면,
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \frac{1+\cos\theta_{nm}}{2}
+  =
+  \cos^2\frac{\theta_{nm}}{2}.
+  \label{eq:l04-half-angle-probability}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:32:47}
+\audiencequestion{두 상태가 서로 직교하므로 겹침은 반드시 사라져야 하나요?}
+\lecturerresponse{아닙니다. \(m,+\)와 \(n,+\)라는 표기는 하나의 고정된 관측가능량에서 서로 다른 고윳값을 가리키는 것이 아니라, 서로 다른 측정축을 가리킵니다. \(m=n\)이면 두 상태는 일치하며 겹침은 1입니다. 물리적 방향이 서로 반대여서 한 상태는 같은 스핀 성분의 \(+1\) 상태이고 다른 상태는 \(-1\) 상태일 때에만 두 상태가 직교합니다.}
+\end{classroomqa}
+
+\section{확률 공식의 의미}
+
+식~\eqref{eq:l04-spin-transition-probability}은 곧바로 다음 세 가지 검사를 통과한다.
+\begin{align}
+  \hat m=\hat n
+  &\quad\Longrightarrow\quad P=1,
+  \notag\\
+  \hat m=-\hat n
+  &\quad\Longrightarrow\quad P=0,
+  \notag\\
+  \hat m\cdot\hat n=0
+  &\quad\Longrightarrow\quad P=\frac12.
+\end{align}
+답은 상대각에만 의존하며 \(m\leftrightarrow n\)에 대해 대칭이다. 실험 장치 전체를 회전해도 예측은 달라지지 않는다.
+
+스핀 1/2가 이룬 놀라운 절충이 여기에 있다. 어느 축을 따라 측정하든 결과는 \(+1\) 또는 \(-1\)이며, 그 중간에 해당하는 스핀값은 나오지 않는다. 대신 이산적인 두 결과가 나올 확률이 회전에 따라 매끄럽게 변한다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:20}
+\audiencequestion{반복 측정에서 같은 전자를 다루고 있다는 것을 어떻게 확인하고, 확률은 어떻게 측정하나요?}
+\lecturerresponse{전자 하나를 공동 안에 가두고 전기 플럭스로 보존되는 전하를 감시할 수 있다. 그 전자를 \(\hat n\) 방향으로 다시 준비한 뒤 \(\hat m\) 방향으로 측정하는 과정을 반복하면 된다. 또는 전자들로 큰 앙상블을 만들어 모두 같은 방식으로 준비하고 각각 한 번씩 측정해도 된다. 어느 방법에서든 반복 측정으로 얻는 플러스와 마이너스 결과의 비율은 통계적 오차 범위 안에서 같다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:41:29}
+\audiencequestion{앙상블의 모든 구성원을 한 번의 집단 측정으로 측정해야 하나요?}
+\lecturerresponse{아니다. 각 구성원을 같은 절차로 준비하고 따로 측정한다. 이렇게 백만 번 시행한 결과를 하나의 통계 실험이라고 하는 것은, 결과의 빈도가 같은 확률을 추정하기 때문이다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:42:23}
+\audiencequestion{전자 하나를 재사용한다면 그 전자는 광자를 몇 개나 방출할 수 있나요?}
+\lecturerresponse{정해진 수명 할당량은 없다. 각 주기에는 자기장을 켤 때 외부에서 가한 일이 포함된다. 스핀이 더 높은 에너지 방향에 놓여 있으면, 공급된 에너지는 이완 과정에서 광자로 나올 수 있다. 따라서 원리적으로는 장치가 상태 준비와 방출을 무한히 반복할 수 있다.}
+\end{classroomqa}
+
+회전 불변성을 알고 있다면 이 공식은 아주 빠르게 얻을 수 있다. \(\hat n\)을 세 번째 축으로 택하면 \(\ket{n,+}=(1,0)^T\)이 되어, \(\ket{m,+}\)의 위쪽 성분에서 확률을 읽으면 된다. 하지만 처음부터 이런 지름길을 쓰면 방금 명시적 계산으로 입증한 대칭성을 미리 가정하게 된다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:43:33}
+\audiencequestion{기저를 더 잘 고르면 임의의 축 고유벡터가 복잡해 보이는 문제를 없앨 수 있나요?}
+\lecturerresponse{회전과 유니터리 변환을 사용할 수 있게 되면 좌표축 하나를 두 방향 중 하나에 맞춰 계산을 간단히 할 수 있다. 하지만 지금은 명시적 계산이 제 역할을 한다. 선택한 파울리 행렬이 회전 불변인 답을 내놓는지 가정하지 않고 직접 확인하는 것이다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:48:30}
+\audiencequestion{답이 각도에만 의존하는 물리적 이유는 무엇인가요?}
+\lecturerresponse{구조적인 답은 대칭성의 양자 이론에 속한다. 공간 회전은 스핀 상태와 관측량에 작용하는 유니터리 변환으로 나타난다. 이 표현 방식은 나중에 다룬다. 지금은 파울리 행렬 계산을 통해 각도 의존성을 직접 얻었다.}
+\end{classroomqa}
+
+\section{측정은 필터다}
+
+측정은 숫자를 알려 주는 데 그치지 않는다. \(\sigma_{\hat m}\)를 측정해 결과가 \(+1\)이면 전자는 \(\ket{m,+}\) 상태에 놓인다. 측정 장치는 검출기이자 상태 준비 장치로 작용한다. 광자를 검사하는 편광자가 투과된 광자를 자기 축 방향으로 편광시키는 것과 비슷하다.
+
+이 상태 변화 규칙을 이용하면 두 관측량의 동시 측정 문제를 구체적으로 다룰 수 있다. 두 관측량이 함께 재현 가능한 확정값을 가지려면, 두 관측량 모두의 고유벡터인 상태가 있어야 한다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:29}
+\audiencequestion{\(\sigma_1\)과 \(\sigma_2\)처럼 서로 다른 두 스핀 성분을 동시에 측정할 수 있나요?}
+\lecturerresponse{할 수 없다. 두 성분의 고유벡터가 서로 다르다. 한 성분을 측정하면 전자는 그 성분의 고유상태에 놓이지만, 그 상태는 다른 성분의 고유상태가 아니다. 따라서 첫 측정은 두 번째 측정에 필요한 확정성을 없앤다.}
+\end{classroomqa}
+
+유한 차원 계에서의 일반적인 명제는 에르미트 연산자를 사용하면 가장 간결하게 나타낼 수 있다.
+
+\begin{theorem}
+두 에르미트 연산자 \(A\)와 \(B\)는 다음 조건을 만족할 때, 그리고 그때에만 동시에 대각화할 수 있다.
+\begin{equation}
+  [A,B]\equiv AB-BA=0.
+  \label{eq:l04-commutator}
+\end{equation}
+다시 말해, 두 연산자는 완전한 공통 정규직교 고유기저를 가진다.
+\end{theorem}
+
+쉬운 방향부터 보자. 완전한 기저에 대해 다음이 성립한다고 하자.
+\begin{equation}
+  A\ket{\alpha_i}=\lambda_i\ket{\alpha_i},
+  \qquad
+  B\ket{\alpha_i}=\mu_i\ket{\alpha_i}
+\end{equation}
+그러면
+\begin{align}
+  AB\ket{\alpha_i}
+  &=\lambda_i\mu_i\ket{\alpha_i},
+  \notag\\
+  BA\ket{\alpha_i}
+  &=\mu_i\lambda_i\ket{\alpha_i},
+\end{align}
+따라서 \(AB\)와 \(BA\)는 모든 기저 벡터에서 같은 작용을 한다. 그러므로 \(AB=BA\)이다. 반대로 에르미트 연산자 \(A\)와 \(B\)가 가환하면, \(B\)는 \(A\)의 각 고유공간을 보존한다. 각 축퇴 고유공간 안에서 \(B\)를 대각화하면 공통 고유기저를 얻는다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_06.png}
+\caption{두 관측량은 고유벡터가 같으면서도 각 벡터에 서로 다른 고윳값을 부여할 수 있다.}
+\lectureframe{00:55:45}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:53:56}
+\audiencequestion{자기장을 \(x\)과 \(y\) 방향으로 동시에 가해 동시 측정이라고 할 수 있나요?}
+\lecturerresponse{두 자기장은 합쳐져 하나의 합성 방향을 이룬다. 그러면 장치는 \(\sigma_x\)와 \(\sigma_y\)를 따로 측정하는 대신, 아마 \(45^\circ\)일 그 합성축을 따라 스핀을 측정한다. 이 방식으로 구성한 것은 양립 가능한 두 측정값이 아니라 세 번째 관측량이다.}
+\end{classroomqa}
+
+\section{모든 순수한 한 스핀 상태에는 축이 있다}
+
+이제 고유벡터 문제를 거꾸로 풀어 보자. 임의의 정규화된 스핀 \begin{equation}
+  \ket\psi=
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix},
+  \qquad
+  |\alpha|^2+|\beta|^2=1,
+  \label{eq:l04-general-spinor}
+\end{equation}가 주어졌을 때, 어떤 공간 방향 \(\hat n\)가 다음을 만족할까?
+\begin{equation}
+  \sigma_{\hat n}\ket\psi=\ket\psi?
+  \label{eq:l04-reverse-eigenproblem}
+\end{equation}
+그렇다. 강의에서는 먼저 계수로 그 이유를 살펴본다. 복소 성분 두 개에는 실수 네 개가 들어 있다. 정규화 조건으로 하나가 정해지고, 물리적으로 의미 없는 전체 위상으로 또 하나가 정해지므로 두 개가 남는다. 단위 포인터에도 경도와 위도처럼 독립적인 실수 매개변수가 두 개 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:52}
+\audiencequestion{\(\alpha\)과 \(\beta\)가 모두 복소수인데 상태의 자유도는 어떻게 두 개뿐인가요?}
+\lecturerresponse{처음에는 실수 성분 네 개가 있다. 정규화 조건이 실수 자유도 하나를 없애고, 상태 전체에 \(e^{i\theta}\)를 곱해도 확률은 변하지 않으므로 공통 위상으로 자유도 하나가 더 없어진다. 물리적으로 의미 있는 매개변수 두 개가 남으며, 이는 단위 포인터의 두 각도에 해당한다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:20}
+\audiencequestion{고윳값도 구해야 하나요?}
+\lecturerresponse{여기서는 목표 고윳값이 \(+1\)으로 고정되어 있다. 주어진 스핀 상태가 위 상태가 되는 방향만 찾으면 된다. 반대 방향 포인터는 같은 광선을 고윳값 \(-1\)을 갖는 아래 상태로 나타낸다.}
+\end{classroomqa}
+
+계수 계산은 이러한 대응이 존재해야 하는 이유를 보여 준다. 직접 구성하면 이를 확인할 수 있다. 다음과 같이 정의하자.
+\begin{align}
+  n_1&=\bra\psi\sigma_1\ket\psi
+      =2\operatorname{Re}(\alpha^*\beta),
+  \notag\\
+  n_2&=\bra\psi\sigma_2\ket\psi
+      =2\operatorname{Im}(\alpha^*\beta),
+  \notag\\
+  n_3&=\bra\psi\sigma_3\ket\psi
+      =|\alpha|^2-|\beta|^2.
+  \label{eq:l04-bloch-components}
+\end{align}
+정규화 조건에서 \(n_1^2+n_2^2+n_3^2=1\)가 성립하고, 직접 대입하면 식~\eqref{eq:l04-reverse-eigenproblem}을 얻는다. 따라서 모든 순수한 한 스핀 상태는 어떤 공간축을 따른 스핀 위 상태다.
+
+이 명제에는 실험적 방법으로 확인하는 방식도 있다. 같은 미지의 순수 상태를 여러 개 준비한다. 여러 묶음을 시험 방향에 따라 측정하면서 자석 방향을 조정해, 모든 결과가 위 상태가 되는 방향을 찾는다. 유한한 데이터로는 불확실성이 남지만, 이상적인 상태에는 정확한 축 하나가 있다.
+
+질문은 이 방법을 방해하는 것이 아니라 방법의 일부다. 강의에서 잠깐 나온 일화를 보면, 열 살 아이들이 끈 이론과 여분 차원, 주변의 중성미자 때문에 두통이 생기는지를 거리낌 없이 물었다. 질문의 세부 내용은 틀릴 수 있어도, 혼란스러운 지점을 드러내려는 태도는 여전히 가치가 있다.
+
+\section{두 스핀과 국소 연산자}
+
+두 스핀을 결합하기에 앞서 파울리 행렬이 \(\sigma_3\) 기저에 어떻게 작용하는지 정리하자.
+\begin{align}
+  \sigma_1\ket u&=\ket d,
+  &
+  \sigma_1\ket d&=\ket u,
+  \notag\\
+  \sigma_2\ket u&=i\ket d,
+  &
+  \sigma_2\ket d&=-i\ket u,
+  \notag\\
+  \sigma_3\ket u&=\ket u,
+  &
+  \sigma_3\ket d&=-\ket d.
+  \label{eq:l04-pauli-action-table}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\linewidth]{lecture_04_figure_07.png}
+\caption{파울리 행렬의 작용표는 행렬을 위/아래 기저에 작용하는 규칙으로 다시 나타낸 것이다.}
+\lectureframe{01:09:35}
+\end{figure}
+
+이제 두 전자를 서로 구별되는 위치에 두고 스핀만 변한다고 하자. 네 기저 상태는 다음과 같다.
+\begin{equation}
+  \ket{uu},
+  \qquad
+  \ket{du},
+  \qquad
+  \ket{ud},
+  \qquad
+  \ket{dd}.
+  \label{eq:l04-two-spin-basis}
+\end{equation}
+첫 번째 표지는 전자 \(1\)에, 두 번째 표지는 전자 \(2\)에 해당한다. 이 상태들은 두 번째 성분을 각각 측정해 얻는 서로 다른 공동 결과를 나타내므로 서로 정규직교한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_08.png}
+\caption{곱기저의 네 표지가 두 스핀 상태 공간을 생성한다.}
+\lectureframe{01:11:40}
+\end{figure}
+
+전자 \(1\)에 작용하는 연산자를 \(\sigma_i\), 전자 \(2\)에 작용하는 연산자를 \(\tau_i\)라 하자. 더 구체적으로는,
+\begin{equation}
+  \sigma_i\equiv\sigma_i\otimes I,
+  \qquad
+  \tau_i\equiv I\otimes\sigma_i.
+\end{equation}
+첫 번째 집합은 첫 번째 표지에만 작용하고, 두 번째 집합은 두 번째 표지에만 작용한다.
+\begin{align}
+  \sigma_1\ket{ud}&=\ket{dd},
+  &
+  \sigma_1\ket{dd}&=\ket{ud},
+  \notag\\
+  \sigma_3\ket{dd}&=-\ket{dd},
+  &
+  \tau_2\ket{ud}&=-i\ket{uu}.
+  \label{eq:l04-local-operator-examples}
+\end{align}
+연산자가 네 기저 상태에 어떻게 작용하는지만 알면, 선형성에 따라 모든 두 스핀 상태에서의 작용이 정해진다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:47}
+\audiencequestion{\(-i\) 인자는 왜 켓 바깥에 쓰나요? 두 전자 모두에 작용하나요?}
+\lecturerresponse{켓 안의 기호는 기저 배치에 붙인 표지다. 복소 스칼라는 상태 벡터 전체를 곱하므로 표준 표기에서는 바깥에 쓴다. 이 경우 그 스칼라는 \(\tau_2\)가 두 번째 표지에 작용한 데서 나온다. 바깥에 썼다고 해서 전자 두 개에 각각 물리적 작용을 가했다는 뜻은 아니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:44}
+\audiencequestion{\(i\)를 곱하면 전자가 보통 공간에서 회전한다는 뜻인가요?}
+\lecturerresponse{그 자체로는 아니다. 이는 상태 공간에서 일어나는 복소 스칼라 곱셈이다. 나중에 공간 회전을 특정한 유니터리 연산자로 나타낼 것이다. 이 작용표에서 독립적으로 나타나는 \(i\) 인자는 실제 공간에서의 회전을 뜻하지 않는다.}
+\end{classroomqa}
+
+\section{네 개가 아니라 여섯 개의 매개변수}
+
+두 스핀 계의 일반적인 순수 상태는 다음과 같다.
+\begin{equation}
+  \ket\Psi
+  =
+  c_{uu}\ket{uu}
+  +c_{du}\ket{du}
+  +c_{ud}\ket{ud}
+  +c_{dd}\ket{dd}.
+  \label{eq:l04-general-two-spin-state}
+\end{equation}
+복소 계수 네 개에는 실수 여덟 개가 들어 있다. 정규화로 하나가, 전체 위상으로 또 하나가 사라진다.
+\begin{equation}
+  8-1-1=6.
+  \label{eq:l04-two-spin-parameter-count}
+\end{equation}
+전자 \(1\)의 순수 상태를 따로 준비하는 데는 실수 매개변수 두 개가 필요하고, 전자 \(2\)에도 두 개가 더 필요하므로 총 네 개뿐이다. 빠진 두 매개변수는 단순한 계수 오류가 아니다. 각 부분에 별도의 순수 상태를 할당할 수 없는 두 스핀 계의 순수 상태가 있음을 나타낸다.
+
+각자 따로 준비한 상태에서 나오는 경우부터 살펴보자. 만약
+\begin{equation}
+  \ket{\psi_1}=\alpha_1\ket u+\beta_1\ket d,
+  \qquad
+  \ket{\psi_2}=\alpha_2\ket u+\beta_2\ket d,
+\end{equation}
+라면,
+\begin{align}
+  \ket{\psi_1}\otimes\ket{\psi_2}
+  &=
+  \alpha_1\alpha_2\ket{uu}
+  +\alpha_1\beta_2\ket{ud}
+  \notag\\
+  &\quad
+  +\beta_1\alpha_2\ket{du}
+  +\beta_1\beta_2\ket{dd}.
+  \label{eq:l04-product-expansion}
+\end{align}
+이것은 \emph{곱 상태}다. 각 전자에는 자기 편극축이 있다. 두 전자를 서로 독립적으로 자기장 안에서 준비했을 때와 같다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_09.png}
+\caption{한 스핀 상태 두 개를 곱하면 네 항으로 이루어진 제한된 곱 상태가 된다.}
+\lectureframe{01:25:15}
+\end{figure}
+
+네 계수를 다음 행렬로 배열하자.
+\begin{equation}
+  C=
+  \begin{pmatrix}
+    c_{uu}&c_{ud}\\
+    c_{du}&c_{dd}
+  \end{pmatrix},
+\end{equation}
+이 상태가 곱 상태일 필요충분조건은 \(C\)의 계수가 1인 것이다. 이는 다음 조건과 동치다.
+\begin{equation}
+  c_{uu}c_{dd}-c_{ud}c_{du}=0.
+  \label{eq:l04-product-condition}
+\end{equation}
+계수 네 개의 대부분은 이 조건을 만족하지 않는다. 그런 상태들은 얽혀 있다.
+
+\section{첫 번째 얽힘 상태}
+
+강의에서 처음 든 예는 다음과 같다.
+\begin{equation}
+  \ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}+\ket{du}\right).
+  \label{eq:l04-psi-plus}
+\end{equation}
+이 상태는 전자 \(1\)의 상태 하나와 전자 \(2\)의 상태 하나로 분해할 수 없다. 세 번째 축 방향 측정에서 전자 \(2\)가 아래 상태로 나오면 전자 \(1\)는 위 상태다. 전자 \(2\)가 위 상태로 나오면 전자 \(1\)는 아래 상태다. 두 전자의 쌍에는 각 입자에 따로 존재하지 않는 확정된 정보가 담겨 있다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_10.png}
+\caption{첫 얽힘 중첩에는 위 상태 하나와 아래 상태 하나가 있지만, 어느 입자가 어느 결과를 낼지는 미리 정해져 있지 않다.}
+\lectureframe{01:29:30}
+\end{figure}
+
+전자 하나만 따로 보았을 때 어떤 상태인지 알아보기 위해 국소 기댓값 세 개를 계산하자. 첫 번째 성분은
+\begin{equation}
+  \sigma_1\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{dd}+\ket{uu}\right),
+\end{equation}
+\(\ket{\psi_+}\)와 직교한다. 따라서
+\begin{equation}
+  \bra{\psi_+}\sigma_1\ket{\psi_+}=0.
+\end{equation}
+마찬가지로,
+\begin{equation}
+  \sigma_2\ket{\psi_+}
+  =
+  \frac{i}{\sqrt2}
+  \left(\ket{dd}-\ket{uu}\right),
+\end{equation}
+이므로
+\begin{equation}
+  \bra{\psi_+}\sigma_2\ket{\psi_+}=0.
+\end{equation}
+세 번째 성분은
+\begin{equation}
+  \sigma_3\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right),
+\end{equation}
+이며 두 대각 성분의 기여가 상쇄된다.
+\begin{equation}
+  \bra{\psi_+}\sigma_3\ket{\psi_+}
+  =\frac12(1-1)=0.
+\end{equation}
+따라서
+\begin{equation}
+  \begin{aligned}
+    \bra{\psi_+}\sigma_i\ket{\psi_+}&=0,\\
+    \bra{\psi_+}\tau_i\ket{\psi_+}&=0,
+    \qquad i=1,2,3.
+  \end{aligned}
+  \label{eq:l04-zero-local-spin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_11.png}
+\caption{변환된 상태와 상쇄 \(1-1=0\)는 국소 스핀 기댓값이 사라짐을 보여 줍니다.}
+\lectureframe{01:35:50}
+\end{figure}
+
+임의의 방향에 대해서도,
+\begin{equation}
+  \bra{\psi_+}\sigma_{\hat n}\ket{\psi_+}=0,
+  \qquad
+  \bra{\psi_+}\tau_{\hat n}\ket{\psi_+}=0.
+  \label{eq:l04-zero-arbitrary-local-spin}
+\end{equation}
+각 국소 측정의 결과는 \(\pm1\)뿐이므로 기댓값이 0이라는 것은 다음을 뜻한다.
+\begin{equation}
+  P(\sigma_{\hat n}=+1)
+  =
+  P(\sigma_{\hat n}=-1)
+  =
+  \frac12,
+\end{equation}
+두 번째 전자에 대해서도 마찬가지다. 어떤 방향으로 측정해도 전자 하나만 편극되지는 않는다. 이는 순수한 한 스핀 상태에서는 불가능하지만, 얽힌 순수 상태의 한 부분에서는 충분히 가능하다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:23}
+\audiencequestion{전자 하나를 측정해 다른 전자에 대해 알게 되는 것과 각 전자의 결과가 반반씩 나온다는 것은 같은 주장인가요?}
+\lecturerresponse{아니다. 먼저 전자 \(2\)는 고려하지 말자. 전자 \(1\)만 어느 방향으로 측정해도 결과는 반반씩 나온다. 이는 국소 편극이 없음을 보여 준다. 상관관계는 두 측정 결과가 서로 어떻게 연결되는지에 대한 별도의 공동 명제다. 얽힘은 두 특징 모두를 만들어 내지만, 하나를 다른 하나의 증명 대신 사용해서는 안 된다.}
+\end{classroomqa}
+
+\section{벨 정리에 앞서 상관관계부터}
+
+상관관계 자체가 양자적인 것은 아니다. 페니와 다임 동전을 한 쌍으로 섞은 뒤 보지 않은 채 서로 떼어 놓고 하나를 살펴보자. 확인하기 전에는 어느 쪽이 페니인지 확률이 반반이지만, 여기서 페니를 찾으면 멀리 떨어진 쪽은 다임이라는 것을 알 수 있다. 각 부분만 따로 보면 알 수 없어도 두 부분의 쌍에는 확정된 정보가 담겨 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:45}
+\audiencequestion{원래 한 쌍에 페니와 다임이 하나씩 들어 있었다는 것을 알아야만 페니와 다임으로부터 추론할 수 있나요?}
+\lecturerresponse{그렇다. 고전적 추론은 믿을 수 있는 준비에 달려 있다. 마찬가지로 양자 상관관계 예측도 두 전자 계를 지정된 공동 상태로 준비했을 때만 성립한다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:09}
+\audiencequestion{\(\ket{\psi_+}\)의 경우, 두 전자를 모두 위 상태로 측정할 확률은 0인가요? 이로부터 모든 축에서 두 스핀이 서로 반대라고 결론 내릴 수 있나요?}
+\lecturerresponse{세 번째 축 기저에서 \(uu\)일 확률은 0이고, 세 번째 축 방향의 두 측정 결과는 서로 반대다. 그러나 두 번째 결론은 이 플러스 부호 상태에 대해서는 지나치게 강한 주장이다. 이 상태는 모든 방향에서 국소 스핀이 0이지만, 공동 상관관계는 방향에 따라 달라진다. 모든 축에서 결과가 서로 반대인 상태는 강의 마지막에 소개하는 마이너스 부호 싱글렛이다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:51}
+\audiencequestion{고전적인 쌍을 동전 두 개를 서로 용접해 항상 한쪽 면이 반대로 나오도록 한 것으로 생각할 수 있나요?}
+\lecturerresponse{흔들어도 연결이 풀리지 않는다면, 고정된 반상관관계를 만드는 고전적 장치로 생각할 수 있다. 그래도 이는 준비 과정에서 정해진 숨은 고전적 배치다. 이 비유는 잠정적인 설명일 뿐이다. 벨 정리는 그런 고전적 설명이 모두 어디에서 실패하는지 검증할 것이다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:32}
+\audiencequestion{한 결과로 상대편 결과가 이미 정해지는데, 대수의 법칙은 어디에 쓰이나요?}
+\lecturerresponse{한 결과가 주어졌을 때의 조건부 확실성은 단일 시행에 대한 명제다. 약속된 상관관계가 실제로 안정적인지 실험으로 확인하고 기댓값과 불완전한 확률을 추정하려면 시행을 반복해야 한다. 대수의 법칙은 반복해서 얻은 빈도가 이론적 분포에 수렴하도록 해 준다.}
+\end{classroomqa}
+
+두 관측자는 엄청나게 멀리 떨어져 있을 수도 있다. 한쪽 결과를 보면 그 관측자는 다른 쪽 결과에 대해 알게 되지만, 멀리 떨어진 관측자에게 제어 가능한 메시지를 보내는 것은 아니다. 이 단계에서 상황은 여전히 서로 떨어진 페니와 다임의 경우와 비슷하다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:46}
+\audiencequestion{떨어져 있는 페니와 다임 그림이 양자 쌍을 이해하는 올바른 방식인가요?}
+\lecturerresponse{그것은 처음 비교해 볼 고전적 사례로는 적절하지만, 양자적 설명의 최종 형태는 아니다. 벨 정리가 다루는 것은 미리 존재하는 고전적 성질을 지닌 쌍과 얽힌 양자 쌍 사이의 측정 가능한 차이다. 필요한 상관관계를 계산한 뒤에 그 차이를 다룬다.}
+\end{classroomqa}
+
+\section{싱글렛과 그 준비}
+
+칠판 계산의 마지막에서 플러스 부호를 마이너스 부호로 바꾸자.
+\begin{equation}
+  \ket{\psi_-}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right).
+  \label{eq:l04-singlet}
+\end{equation}
+이렇게 바꿔도 식~\eqref{eq:l04-zero-local-spin}에서 보았던 국소 기댓값 0과 세 번째 축 방향에서 서로 반대인 결과는 그대로다. 횡방향 공동 상관관계는 달라진다. 이 마이너스 부호 상태가 스핀 싱글렛이다. 이는 같은 측정축을 공유할 때 두 스핀이 모든 축에서 서로 반대인 회전 대칭 상태다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_12.png}
+\caption{칠판 계산의 마지막 단계에서 대칭 중첩을 마이너스 부호 싱글렛으로 바꾸어도 국소 스핀은 0으로 유지된다.}
+\lectureframe{01:47:25}
+\end{figure}
+
+여기서 사용하는 단순화된 물리적 그림에서는 국소화된 두 전자의 자기 모멘트를 서로 충분히 가까이 두면 상호작용이 일어나고, 에너지가 더 높은 정렬 상태는 광자를 방출하며 이완된다. 우선하는 외부 축이 없으므로 가장 낮은 스핀 상태는 회전 대칭인 싱글렛으로 나타난다. 정확한 상호작용과 상대 위상이 음수가 되어야 하는 이유를 알려면 계산을 더 해야 한다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:02}
+\audiencequestion{실제로 두 전자를 가까이 가져와 기다리기만 하면 준비가 되나요?}
+\lecturerresponse{이 이상화된 모형에서는 그렇다. 스핀-스핀 상호작용이 작용하도록 두고 복사 이완을 거쳐 더 낮은 에너지 상태로 가게 하면 된다. 자기적 상호작용이 효과를 낼 만큼만 두 전자를 충분히 가까이, 충분히 오래 두면 된다. 실제 준비 절차에서는 궤도 상태와 경쟁하는 상호작용도 제어해야 한다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:16}
+\audiencequestion{이것은 그저 파울리 배타 원리인가요?}
+\lecturerresponse{아닙니다. 두 전자에는 서로 구별되는 공간적 위치가 지정되어 있으므로, 스핀을 논하는 데 아직 겹치는 궤도 파동함수를 반대칭화할 필요는 없습니다. 동일한 전자들이 겹치는 1입자 상태를 차지할 때 배타 원리가 중요해지지만, 여기서 다루는 얽힘 논증은 서로 떨어진 위치에 있는 경우에도 이미 성립합니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:31}
+\audiencequestion{일반적인 전자 빔에는 이런 상호작용하는 쌍이 자연스럽게 들어 있나요?}
+\lecturerresponse{대개 그렇지 않습니다. 빔은 희박하고, 전형적인 전자들은 주어진 비행 시간 동안 유의미한 스핀-스핀 상호작용을 할 만큼 서로 가까이 있지 않습니다. 충돌이나 의도적으로 가둬 두는 상호작용으로 얽힌 쌍을 만들 수는 있지만, 단지 같은 빔에 속해 있다는 것만으로는 얽히지 않습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:51:45}
+\audiencequestion{자기 상호작용이 일어나려면 어느 정도 거리가 필요한가요?}
+\lecturerresponse{보편적으로 적용되는 명확한 한계 거리는 없습니다. 결정적인 양은 상호작용의 시간 척도입니다. 강한 결합이 빠르게 일어날 수 있는 미시적 거리를 강의에서는 대략 \(10^{-11}\,\mathrm{cm}\) 정도로 추산합니다. 거리가 더 멀어지면 에너지 분할은 작아지고 방출되는 광자의 파장은 길어지며, 이완에는 훨씬 더 오랜 시간이 걸립니다. 충분히 오래 기다리면 원칙적으로 이를 보완할 수 있지만, 일반적인 빔에서는 시간이 너무 짧습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:53:10}
+\audiencequestion{싱글렛에 플러스 부호가 아니라 마이너스 부호가 있어야 하는 이유는 무엇인가요?}
+\lecturerresponse{각 입자에서 절반씩 나오는 국소 통계만으로는 그 이유가 분명하지 않습니다. 두 상대 위상 모두 동일한 통계를 주기 때문입니다. 답은 상태가 회전 아래에서 어떻게 변환되는지, 그리고 상호작용이 전체 스핀 0을 어떻게 선택하는지에 있습니다. 그 유도는 다음 강의에서 다룹니다.}
+\end{classroomqa}
+
+이제 강의는 의도한 문턱을 넘어섰습니다. 하나의 순수 스핀 상태에는 언제나 스핀이 위를 향하는 축이 정해져 있습니다. 순수한 쌍 상태는 두 구성원 각각에 순수 상태를 지정하지 않으면서도, 두 측정 결과 사이의 정확한 관계를 담을 수 있습니다. 이런 추가적인 구조가 얽힘입니다. 벨의 정리는 어떤 고전적인 동전과 다임 이야기로도 그 모든 것을 재현할 수 없는 이유를 밝혀 줄 것입니다.
