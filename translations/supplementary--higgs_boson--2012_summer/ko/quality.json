@@ -1,0 +1,35 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 31,
+  "outline_entries": 19,
+  "target_characters": 10239,
+  "image_placements": 14,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "힉스 보손의 이해",
+  "pdf_sha256": "1ac2a2c92ae6b34b0500b1c26925711be5fe99c60eba5c6bf2b8b1b0564a4d64",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 9,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "25bac1cd8211426b9e67683bd4529f3f7cea10e107b82a39303404b8a1a8cbea",
+    "chapters/lecture_01/content.tex": "5e2ff727d1e25f904634d65727e96bce29fc5e6649f06b8958ef35e8987ae65d"
+  },
+  "source_files": {
+    "course.tex": "8618bd1a9d6c91833ba00f7be31dcb20fcc6727f03cd9160273f418737e819fd",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "0dce2f6c0fcca244ee59848cdffaf66f43d412a86a2f3e89cf16984c5f46430c"
+  },
+  "translated_tex": {
+    "cover.tex": "e078c4976213359a7c2941559cf5025053cbb03ecd449b3ed7357876622794f7",
+    "common_preamble.tex": "3f04e9a23dc8d6a2cc9e22a038c877295be4ba6fe121b3e036bc9752971022d7",
+    "course.tex": "75f7ff941375a21529f80e94097fdbc3f20e149f3b9e70b497195e0f8c08dd95",
+    "chapters/lecture_01/content.tex": "26cad5f4ac6ab7b316480108c53543ec0313b14607b87cc3f05dc4532b68f171"
+  }
+}
