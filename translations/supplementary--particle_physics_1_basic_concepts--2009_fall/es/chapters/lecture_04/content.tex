@@ -1,0 +1,614 @@
+\chapter{Funciones delta, campos cuánticos y leyes de conservación}
+
+El sencillo campo cuántico introducido anteriormente basta para describir, a grandes rasgos, la dispersión, la creación y la aniquilación, pero aún podemos extraer más de él. En particular, muestra cómo intervienen las leyes de conservación en los procesos de partículas. Un curso completo de teoría cuántica de campos requiere mucho más que unas pocas clases; aquí el objetivo es más acotado. Usaremos el campo más sencillo para ver, de forma mecánica, de dónde surge la conservación de la energía, por qué un blanco fijo no tiene por qué conservar el momento de la partícula dispersada y cómo la invariancia de fase codifica la conservación de la carga.
+
+Antes de volver al campo, necesitamos dos elementos matemáticos: la función delta de Dirac y la acción de los operadores de creación y aniquilación sobre los vectores bra.
+
+\section{La función delta de Dirac}
+
+Llamemos \(y\) a la coordenada, sin decidir si más adelante representará una posición, un número de onda u otra cosa. Empecemos con una función ordinaria, con forma de montículo, concentrada cerca de \(y=a\). Hagamos el montículo cada vez más estrecho. Si mantuviéramos fija su altura, su área tendería a cero; por tanto, aumentemos la altura a medida que disminuye la anchura, de modo que el producto de ambas siga siendo uno. El objeto límite es la función delta de Dirac \(\delta(y-a)\).
+
+Se anula fuera de \(y=a\), está infinitamente concentrada en \(y=a\) y tiene área unitaria:
+\begin{equation}
+\delta(y-a)=0\quad (y\neq a),
+\qquad
+\int_{-\infty}^{\infty}dy\,\delta(y-a)=1.
+\end{equation}
+Lo importante es la combinación de localización y área fija. Al estrecharse el pico, este no desaparece, porque su altura aumenta al mismo tiempo.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_04_figure_02.png}
+\caption{Pico de la función delta, de área unitaria y centrado en \(y=a\).}\lectureframe{00:05:50}\end{figure}
+
+La misma imagen puede idealizarse como un pico vertical:
+\begin{figure}[h]\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.1,0) -- (3.3,0) node[right] {$y$};
+\draw[very thick] (0,0) -- (0,2.9);
+\draw (0,-0.15) node[below] {$y=a$};
+\node at (1.35,1.65) {$\delta(y-a)$};
+\end{tikzpicture}\caption{Localización idealizada de \(\delta(y-a)\) en el cero de su argumento.}\end{figure}
+
+La función delta aparece de forma natural en las integrales de Fourier. Volvamos por un momento a un intervalo espacial periódico de longitud total \(L\). Un modo periódico es
+\begin{equation}
+e^{ikx},
+\end{equation}
+donde \(k\) es uno de los números de onda permitidos
+\begin{equation}
+k_n=\frac{2\pi n}{L},
+\qquad n\in\mathbb Z.
+\end{equation}
+El intervalo puede representarse como \(0\leq x<L\), pero resulta más simétrico situar el origen en el centro y usar
+\begin{equation}
+-\frac L2\leq x<\frac L2.
+\end{equation}
+Los extremos se identifican: al cruzar \(L/2\) se vuelve a \(-L/2\).
+
+Integramos un modo permitido sobre todo el intervalo periódico:
+\begin{equation}
+I_L(k)=\int_{-L/2}^{L/2}dx\,e^{ikx}.
+\end{equation}
+Si \(k=0\), el integrando es idénticamente igual a uno y el resultado es \(L\). Si \(k\neq0\) es un valor permitido, las partes positiva y negativa de la oscilación se cancelan a lo largo del número entero de períodos. Por tanto,
+\begin{equation}
+I_L(k)=
+\begin{cases}
+L,&k=0,\\[4pt]
+0,&k\neq0,
+\end{cases}
+\qquad
+k=\frac{2\pi n}{L}.
+\end{equation}
+
+Consideremos ahora \(I_L(k)\) como función sobre el conjunto discreto de valores permitidos de \(k\). La separación entre valores vecinos es
+\begin{equation}
+\Delta k=\frac{2\pi}{L}.
+\end{equation}
+En \(k=0\) la función tiene altura \(L\); en cualquier otro valor permitido es cero. Para representar gráficamente el pico discreto, démosle una anchura igual a una separación de \(k\). Su área es entonces
+\begin{equation}
+(\text{height})(\text{width})
+=L\frac{2\pi}{L}=2\pi.
+\end{equation}
+A medida que \(L\) aumenta, la altura crece y la separación disminuye, mientras que el área se mantiene en \(2\pi\). En el límite de volumen infinito, el pico se convierte en \(2\pi\delta(k)\), lo que da la identidad formal de Fourier
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,e^{ikx}=2\pi\delta(k).
+\end{equation}
+Las variables \(x\) y \(k\) aparecen simétricamente en la exponencial. Al intercambiar sus papeles se obtiene la identidad complementaria
+\begin{equation}
+\int_{-\infty}^{\infty}dk\,e^{ikx}=2\pi\delta(x).
+\end{equation}
+Estas dos reglas elementales pronto convertirán una integral sobre todos los tiempos de interacción en una condición de conservación de la energía.
+
+\section{Bras, kets y operadores que actúan por la izquierda}
+
+Un ket es una notación simbólica para un estado cuántico. Para lo que necesitamos aquí, escribiremos el estado inicial como un ket y el estado final como un bra. Al combinar un bra y un ket se obtiene un producto interno, que es un número. Esos números, o sus cuadrados de módulo, son en última instancia las magnitudes que pueden compararse con los experimentos.
+
+\begin{classroomqa}\lecturetimestamp{00:15:30}\audiencequestion{¿De verdad se había introducido antes la palabra ``ket''}\lecturerresponse{Sí. Un ket es una mitad de la notación bra-ket; la otra mitad, que introducimos ahora, es el bra.}\end{classroomqa}
+
+Para el oscilador armónico, los estados de número de ocupación pueden escribirse como kets \(\lvert n\rangle\) o como bras \(\langle n\rvert\). Su producto interno es
+\begin{equation}
+\langle m\vert n\rangle=\delta_{mn}
+=\begin{cases}
+1,&m=n,\\
+0,&m\neq n.
+\end{cases}
+\end{equation}
+La delta de Kronecker \(\delta_{mn}\) es el análogo discreto de la función delta de Dirac.
+
+Los operadores de creación y aniquilación actúan sobre los kets de la manera habitual:
+\begin{align}
+a^\dagger\lvert n\rangle&=\sqrt{n+1}\,\lvert n+1\rangle,\\
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle.
+\end{align}
+Los operadores de creación y aniquilación también pueden denotarse \(a^+\) y \(a^-\); aquí usaremos siempre \(a^\dagger\) y \(a\).
+
+¿Cómo deben actuar estos mismos operadores sobre los bras? La notación coloca un operador a la derecha del bra cuando actúa por la izquierda. La definición se elige de modo que un elemento de matriz tenga el mismo valor tanto si primero se aplica el operador al ket como si primero se aplica al bra. Consideremos
+\begin{equation}
+\langle n\rvert a^\dagger\lvert m\rangle.
+\end{equation}
+Al actuar sobre el ket se obtiene
+\begin{align}
+\langle n\rvert a^\dagger\lvert m\rangle
+&=\sqrt{m+1}\,\langle n\vert m+1\rangle\\
+&=\sqrt{m+1}\,\delta_{n,m+1}.
+\end{align}
+Esto solo es distinto de cero si \(n=m+1\), o, equivalentemente, si \(m=n-1\). Para reproducir la misma condición al actuar sobre el bra, \(a^\dagger\) debe reducir su etiqueta:
+\begin{equation}
+\langle n\rvert a^\dagger
+=\sqrt n\,\langle n-1\rvert.
+\end{equation}
+El factor numérico es \(\sqrt n\), ya que para el elemento de matriz no nulo se cumple \(n=m+1\). El operador de aniquilación obedece la regla complementaria
+\begin{equation}
+\langle n\rvert a
+=\sqrt{n+1}\,\langle n+1\rvert.
+\end{equation}
+Así, \(a^\dagger\) aumenta el número de un ket, pero lo reduce en un bra, mientras que \(a\) lo reduce en un ket, pero lo aumenta en un bra.
+
+La ventaja se aprecia en el elemento de matriz del operador número
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle.
+\end{equation}
+Al actuar hacia la derecha,
+\begin{align}
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle,\\
+a^\dagger\lvert n-1\rangle&=\sqrt n\,\lvert n\rangle,
+\end{align}
+por lo que
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle
+=n\langle n\vert n\rangle=n.
+\end{equation}
+Si, en cambio, actúa hacia la izquierda,
+\begin{align}
+\langle n\rvert a^\dagger&=\sqrt n\,\langle n-1\rvert,\\
+\langle n-1\rvert a&=\sqrt n\,\langle n\rvert,
+\end{align}
+se obtiene el mismo resultado. No hace falta decidir qué dirección es más fundamental; el cálculo está dispuesto de modo que ambas den el mismo número.
+
+\section{Un campo cuántico en el espacio y el tiempo}
+
+La razón de este formalismo es la física de partículas. A escalas microscópicas, el principal recurso experimental consiste en hacer colisionar partículas y observar qué emerge. Un estado inicial con una o dos partículas puede convertirse en un estado con cuatro, cinco, siete, nueve o algún otro número de partículas. Los campos cuánticos, construidos a partir de operadores de creación y aniquilación, proporcionan un lenguaje para describir estos procesos.
+
+Trabajemos primero en una dimensión espacial. Nada esencial impide usar tres dimensiones: \(x\) y \(k\) simplemente pasan a ser vectores de tres componentes. También resulta conveniente usar unidades en las que
+\begin{equation}
+\hbar=1.
+\end{equation}
+Entonces, el momento y el vector de onda tienen el mismo valor numérico,
+\begin{equation}
+\vec p=\vec k.
+\end{equation}
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.58\textwidth]{lecture_04_figure_03.png}\caption{Unidades naturales \(\hbar=1\) e identificación \(\vec p=\vec k\).}\lectureframe{00:36:56}\end{figure}
+
+Adoptemos la convención de que \(\psi\) aniquila y \(\psi^\dagger\) crea:
+\begin{align}
+\psi(x)&=\sum_k a(k)e^{ikx},\\
+\psi^\dagger(x)&=\sum_k a^\dagger(k)e^{-ikx}.
+\end{align}
+La suma se extiende sobre \(k=2\pi n/L\) en el espacio periódico y se vuelve continua en el espacio infinito. La segunda ecuación es la conjugada hermítica de la primera. También puede considerarse el análogo operatorial de la conjugación compleja.\footnote{En la pizarra, durante un momento, se asigna a \(\Psi\) la expansión del campo de creación \(\sum_k a^\dagger(k)e^{-ikx}\) y luego se duda sobre la asignación de la daga. Aquí las etiquetas se fijan de manera uniforme, de modo que \(\psi\) aniquila y \(\psi^\dagger\) crea, tal como ocurre en el cálculo de dispersión posterior.}
+
+¿Por qué se define así? En esta etapa, la mejor respuesta es que resulta útil. Es una suma sencilla sobre modos de momento, y sus coeficientes son precisamente los operadores que eliminan o añaden partículas. La justificación detallada proviene de la dinámica y de los cálculos que esta definición permite realizar.
+
+\editorialnote{Un breve fragmento de la fuente, inmediatamente después de introducir el campo espacial conjugado, no es lo bastante inteligible como para sustentar una afirmación adicional sobre la normalización o la interpretación. El contenido seguro se reanuda con la utilidad de la definición.}
+
+Hasta ahora, los campos dependen de la posición, pero no del tiempo. Los campos oscilan, y a cada número de onda \(k\) le corresponde una frecuencia \(\omega(k)\). Un objeto de frecuencia definida \(\omega\) tiene dependencia temporal
+\begin{equation}
+e^{i\omega t}=\cos(\omega t)+i\sin(\omega t).
+\end{equation}
+Asociemos las fases conjugadas a las dos expansiones del campo:
+\begin{align}
+\psi(x,t)&=\sum_k a(k)e^{ikx}e^{-i\omega(k)t},\\
+\psi^\dagger(x,t)&=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+Ahora cada modo espacial oscila con la frecuencia que corresponde a su número de onda, y el campo depende tanto del espacio como del tiempo.
+
+\section{La ecuación no relativista del campo}
+
+La relación entre \(\omega\) y \(k\) determina la ecuación diferencial que satisface el campo. Para una sola partícula, las relaciones de onda y partícula son
+\begin{equation}
+E=\hbar\omega,
+\qquad
+p=\hbar k.
+\end{equation}
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.62\textwidth]{lecture_04_figure_04.png}\caption{Relaciones entre energía y frecuencia, y entre momento y número de onda: \(E=\hbar\omega\) y \(p=\hbar k\).}\lectureframe{00:41:28}\end{figure}
+
+Con \(\hbar=1\), la energía es la frecuencia y el momento es el número de onda:
+\begin{equation}
+E=\omega,
+\qquad
+p=k.
+\end{equation}
+Para una partícula no relativista que se mueve mucho más despacio que la luz, la energía cinética y el momento obedecen
+\begin{equation}
+E=\frac{p^2}{2m}.
+\end{equation}
+Esta es la misma relación que se obtiene de \(E=\tfrac12 mv^2\) y \(p=mv\). Al combinar estas relaciones se obtiene la relación de dispersión no relativista
+\begin{equation}
+\omega(k)=\frac{k^2}{2m}.
+\end{equation}
+
+Para el campo de creación, la expansión en modos es
+\begin{equation}
+\psi^\dagger(x,t)=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.66\textwidth]{lecture_04_figure_05.png}\caption{Expansión en modos dependiente del tiempo utilizada para empezar a derivar la ecuación no relativista del campo.}\lectureframe{00:43:23}\end{figure}
+
+Derivemos respecto del tiempo:
+\begin{equation}
+\dot\psi^\dagger(x,t)
+=\sum_k i\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+Derivemos una vez respecto de la posición:
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial x}
+=\sum_k(-ik)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+No hay una relación directa de primer orden entre estas derivadas, porque la derivada temporal introduce \(\omega(k)\), mientras que una derivada espacial introduce \(k\). Para ver explícitamente la diferencia, imaginemos la relación de dispersión lineal
+\begin{equation}
+\omega(k)=k.
+\end{equation}
+En ese caso, la derivada temporal introduciría \(i\omega=ik\), mientras que la primera derivada espacial introduciría \(-ik\). Modo a modo,
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{\partial\psi^\dagger}{\partial x}.
+\end{equation}
+Ese campo hipotético satisfaría una ecuación de primer orden. Aquí, sin embargo, \(\omega=k^2/(2m)\), por lo que se necesita una segunda derivada espacial:
+\begin{align}
+\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=\sum_k(-k^2)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}\\
+&=-2m\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+
+\begin{classroomqa}\lecturetimestamp{00:47:14}\audiencequestion{¿De verdad debe aparecer el signo menos procedente de las derivadas espaciales?}\lecturerresponse{Sí. Cada derivada respecto de \(x\) de \(e^{-ikx}\) introduce \(-ik\), y dos derivadas dan \((-ik)^2=-k^2\). Al sustituir \(k^2=2m\omega\), se obtiene, por tanto, \(-2m\omega\).}\end{classroomqa}
+
+Al multiplicar la derivada temporal por \(i\) se obtiene el mismo coeficiente de modo que al dividir la segunda derivada espacial por \(2m\):
+\begin{align}
+i\dot\psi^\dagger
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t},\\
+\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+Por tanto,
+\begin{equation}
+i\frac{\partial\psi^\dagger}{\partial t}
+=\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2},
+\end{equation}
+o, de forma equivalente,
+\begin{equation}
+-i\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}.
+\end{equation}
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.72\textwidth]{lecture_04_figure_06.png}\caption{Derivadas temporales y espaciales de la expansión en modos del campo de creación.}\lectureframe{00:49:06}\end{figure}
+
+\begin{classroomqa}\lecturetimestamp{00:49:43}\audiencequestion{¿El coeficiente es \(1/(2m)^2\)?}\lecturerresponse{No. Es \(1/(2m)\).}\end{classroomqa}
+
+El campo de aniquilación conjugado obedece la conocida forma de Schr\"odinger
+\begin{equation}
+i\frac{\partial\psi}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi}{\partial x^2}.
+\end{equation}
+Las dos ecuaciones de campo son conjugadas hermíticas.\footnote{Durante la comprobación del signo, en la pizarra apareció brevemente el término espacial con el signo opuesto. La derivación directa de las fases de modo mostradas da el par de ecuaciones conjugadas que se escribe aquí.}
+
+La ecuación tiene la misma forma que la ecuación de Schr\"odinger de la mecánica cuántica elemental, pero el objeto que la satisface es distinto. En la mecánica cuántica elemental, la función de onda es una función de valores complejos cuyo cuadrado de módulo se interpreta de forma probabilística. Aquí, \(\psi\) y \(\psi^\dagger\) son operadores: \(\psi\) elimina una partícula y \(\psi^\dagger\) añade una. El par conjugado establece un vínculo directo entre partículas y campos.
+
+Cuando muchos cuantos ocupan los modos pertinentes, un campo puede comportarse aproximadamente de forma clásica, igual que un oscilador armónico muy excitado puede parecer clásico, mientras que uno con un solo cuanto no. Una ocupación grande hace posible una escala clásica grande y puede hacer pequeñas las fluctuaciones relativas pertinentes.
+
+\editorialnote{Una ocupación grande, por sí sola, no basta para que un campo sea clásico. También se necesita un estado semiclasico coherente en fase; un estado propio del número no tiene una fase definida y no necesariamente presenta un valor medio del campo distinto de cero.}
+
+\section{Un blanco fijo y una amplitud de dispersión}
+
+¿Cómo se usan estos campos? Consideremos el proceso de dispersión más sencillo posible. Una partícula encuentra un blanco tan pesado que ignoraremos su retroceso. El blanco permanece fijo en el espacio para siempre. La partícula puede reflejarse, transmitirse o desviarse; en tres dimensiones, su dirección de salida puede diferir de la dirección de entrada.
+
+El momento de la partícula no tiene por qué ser el mismo antes y después de la colisión. El momento se conserva para el sistema físico completo, pero el blanco absorbe el momento que falta. Una vez que se omite el movimiento del blanco en la descripción matemática, el momento de la partícula por sí sola no se conserva.
+
+En este modelo idealizado, la energía se comporta de otra manera. Imaginemos que lanzamos una pelota de tenis contra una pared. Una pelota real se calienta y se deforma, pero si ignoramos esos efectos, rebota con la misma energía cinética, aunque su momento se invierta. El modelo de blanco fijo está pensado para reproducir esa distinción: la energía de la partícula se conserva, aunque su momento pueda cambiar.
+
+Representemos el espacio en horizontal y el tiempo en vertical. El blanco es la línea vertical \(x=0\). Un estado inicial de una partícula con momento \(k_i\) llega al blanco y de él sale un estado final de una partícula con momento \(k_f\).
+
+\begin{figure}[h]\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.2,0) -- (3.2,0) node[right] {space};
+\draw[->] (0,-0.3) -- (0,4.2) node[above] {time};
+\draw[very thick] (0,0) -- (0,3.8);
+\node[left] at (-0.15,3.55) {$x=0$};
+\draw[thick,->] (-2.2,0.8) -- (0,2.0);
+\node[below] at (-1.45,1.05) {$k_i$};
+\draw[thick,->] (0,2.0) -- (2.2,3.2);
+\node[above] at (1.5,2.9) {$k_f$};
+\fill (0,2.0) circle (1.4pt);
+\end{tikzpicture}\caption{Una partícula con momento \(k_i\) se dispersa en un blanco fijo en \(x=0\) y emerge con momento \(k_f\).}\end{figure}
+
+Usemos el lenguaje de absorción y reemisión. El blanco aniquila la partícula incidente y crea inmediatamente la partícula saliente, posiblemente con un momento distinto. Se trata solo de un modelo matemático del suceso de dispersión; un átomo real, por ejemplo, puede absorber un fotón, permanecer excitado durante un tiempo y emitirlo después.
+
+\begin{classroomqa}\lecturetimestamp{01:02:28}\audiencequestion{¿Por qué la partícula debe absorberse y reemitirse de inmediato?}\lecturerresponse{En la naturaleza no tiene por qué ocurrir así. La absorción y reemisión instantáneas en un mismo punto son la simplificación que se adopta aquí.}\end{classroomqa}
+
+El estado inicial contiene una partícula en el modo \(k_i\) y ninguna en los demás modos. En el lenguaje de los números de ocupación, todas las entradas son cero salvo la correspondiente a \(k_i\), que vale uno. Basta abreviar la lista completa así:
+\begin{equation}
+\lvert k_i\rangle=a^\dagger(k_i)\lvert0\rangle.
+\end{equation}
+De manera análoga,
+\begin{equation}
+\langle k_f\rvert=\langle0\rvert a(k_f).
+\end{equation}
+
+La aniquilación en el blanco y en el instante \(t\) se representa mediante \(\psi(0,t)\); la recreación inmediata en el mismo punto y en el mismo instante, mediante \(\psi^\dagger(0,t)\). No hay un instante preferente en el que ocurra el suceso. Puede ocurrir siempre que la partícula incidente llegue al blanco, con la misma intensidad de interacción en todo momento. Para expresar que no hay un instante especial, integremos sobre todos los valores de \(t\):
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,\psi^\dagger(0,t)\psi(0,t).
+\end{equation}
+Al actuar sobre el ket inicial, este operador produce un estado. Su solapamiento con el bra final es la amplitud de la transición especificada. La probabilidad se obtiene solo después de tomar el cuadrado del módulo de la amplitud.
+
+Hace falta un número más. Sea \(g\) una medida de la intensidad de la interacción entre la partícula y el blanco. En este modelo esquemático, escribamos la amplitud principal de forma esquemática como\footnote{Se omiten los factores de normalización de los estados y el factor global convencional de la teoría de perturbaciones de primer orden; el cálculo utiliza únicamente las reglas de selección de los operadores y el soporte que impone la conservación de la energía.}
+\begin{equation}
+\mathcal A_{i\to f}
+=g\left\langle k_f\left|
+\int_{-\infty}^{\infty}dt\,
+\psi^\dagger(0,t)\psi(0,t)
+\right|k_i\right\rangle.
+\end{equation}
+El coeficiente \(g\) se denomina constante de acoplamiento. Para la dispersión de un fotón por un blanco cargado, la carga eléctrica proporciona la medida pertinente de la intensidad de interacción: al aumentar la carga, aumenta la tendencia a dispersar.
+
+Las distintas interacciones tienen constantes de acoplamiento muy diferentes. Un mesón que llega a un protón experimenta una interacción fuerte y tiene una intensidad de dispersión relativamente grande. Un fotón dispersado por un protón cargado tiene un acoplamiento electromagnético menor. Un neutrino que interactúa con un protón tiene un acoplamiento aún menor.
+
+\begin{classroomqa}\lecturetimestamp{01:09:09}\audiencequestion{¿Es válido este modelo sencillo para un electrón?}\lecturerresponse{Solo como sustituto simplificado de varios tipos de dispersión. Aún no debe interpretarse como una teoría realista del electrón ni de ningún blanco concreto.}\end{classroomqa}
+
+La dispersión gravitatoria de un gravitón por un núcleo sería extraordinariamente débil. Estos ejemplos no comparten una única \(g\) universal; la física de partículas comprende muchas constantes de acoplamiento.
+
+Tampoco es necesario que un acoplamiento efectivo sea siempre independiente de la frecuencia.
+
+\begin{classroomqa}\lecturetimestamp{01:10:31}\audiencequestion{¿Por qué considerar \(g\) una constante en lugar de una función de \(\omega\) o \(k\)?}\lecturerresponse{No tiene por qué ser siempre constante. Si un átomo absorbe un fotón, permanece excitado durante un tiempo y luego lo emite, la dispersión efectiva puede depender de la frecuencia. La constante \(g\) corresponde al modelo instantáneo que estamos usando.}\end{classroomqa}
+
+Por ahora, mantengamos \(g\) constante y calculemos las consecuencias de esta elección tan sencilla.
+
+\begin{classroomqa}\lecturetimestamp{01:12:32}\audiencequestion{Si \(g=1\), ¿la probabilidad de dispersión debe ser uno?}\lecturerresponse{No. La expresión que calculamos es solo la aproximación principal para valores pequeños de \(g\). Si el acoplamiento no es pequeño, se requiere teoría de perturbaciones de orden superior; una probabilidad mayor que uno indicaría que la aproximación de un solo paso deja de ser válida, no que exista una probabilidad física así.}\end{classroomqa}
+
+\section{Reducción de las sumas sobre modos}
+
+En \(x=0\), las fases espaciales valen uno, de modo que
+\begin{align}
+\psi(0,t)&=\sum_k a(k)e^{-i\omega(k)t},\\
+\psi^\dagger(0,t)&=\sum_\ell a^\dagger(\ell)e^{i\omega(\ell)t}.
+\end{align}
+
+\begin{classroomqa}\lecturetimestamp{01:13:58}\audiencequestion{Como el blanco está en \(x=0\), ¿debe omitirse la exponencial espacial?}\lecturerresponse{Sí. En el blanco se cumple \(e^{ikx}=e^{ik0}=1\), y el factor espacial conjugado también vale uno.}\end{classroomqa}
+
+Usemos etiquetas mudas distintas, \(k\) y \(\ell\), en las dos sumas. Al sustituir, se obtiene
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt
+\sum_{\ell,k}
+e^{i\omega(\ell)t}e^{-i\omega(k)t}
+\langle k_f\rvert a^\dagger(\ell)a(k)\lvert k_i\rangle.
+\end{align}
+¿Qué término de la suma sobre \(k\) puede sobrevivir? Un operador de aniquilación da cero en todos los modos vacíos. El estado inicial contiene una partícula únicamente en el modo \(k_i\), así que \(k=k_i\). ¿Qué término de la suma sobre \(\ell\) puede sobrevivir? Al actuar por la izquierda, \(a^\dagger(\ell)\) debe eliminar la partícula representada por el bra final, de modo que \(\ell=k_f\). Ambas sumas se reducen a un único término:
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+\langle k_f\rvert a^\dagger(k_f)a(k_i)\lvert k_i\rangle.
+\end{align}
+El operador de aniquilación convierte el ket inicial de una partícula en el vacío,
+\begin{equation}
+a(k_i)\lvert k_i\rangle=\lvert0\rangle,
+\end{equation}
+y el operador de creación, al actuar por la izquierda, convierte el bra final de una partícula en el bra del vacío,
+\begin{equation}
+\langle k_f\rvert a^\dagger(k_f)=\langle0\rvert.
+\end{equation}
+Por tanto, su elemento de matriz es
+\begin{equation}
+\langle0\vert0\rangle=1.
+\end{equation}
+Todo el formalismo de operadores se reduce a uno; el acoplamiento aporta \(g\), y lo único no trivial que queda es la integral temporal:
+\begin{equation}
+\mathcal A_{i\to f}
+=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}.
+\end{equation}
+
+\editorialnote{Una breve pregunta del público en 01:18:40 no puede recuperarse de la fuente. La respuesta distingue este cálculo de una partícula de una cuestión relativista o de muchos cuerpos; no es posible reconstruir con certeza un intercambio más preciso.}
+
+Ahora podemos aplicar directamente la identidad de la función delta obtenida antes:
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+=2\pi\delta(\omega_f-\omega_i).
+\end{equation}
+Por tanto,
+\begin{equation}
+\boxed{
+\mathcal A_{i\to f}
+=2\pi g\,\delta(\omega_f-\omega_i)
+}.
+\end{equation}
+La amplitud se anula salvo que
+\begin{equation}
+\omega_f=\omega_i.
+\end{equation}
+Como \(\hbar=1\), esto equivale a \(E_f=E_i\). La conservación de la energía ha surgido porque se ha tratado por igual todo instante de interacción. Si la integral temporal se restringiera a un intervalo finito, produciría una función ensanchada en lugar de una función delta exacta. La invariancia exacta bajo traslaciones temporales es lo que impone la condición exacta de conservación de la energía.
+
+\begin{classroomqa}\lecturetimestamp{01:21:30}\audiencequestion{Para obtener una probabilidad, hay que elevar al cuadrado la amplitud. ¿Qué ocurre con la función delta al elevarla al cuadrado?}\lecturerresponse{El cuadrado de la función delta requiere más cuidado. El resultado que necesitamos aquí es seguro: se anula salvo que las energías inicial y final sean iguales. Sobre el soporte que satisface la conservación de la energía, el prefactor esquemático al cuadrado contiene \(4\pi^2g^2\).}\end{classroomqa}
+
+\editorialnote{No se puede obtener una probabilidad de transición normalizada ni una tasa descartando sin más \(\delta(\omega_f-\omega_i)^2\). Se requieren una regularización de tiempo finito y una normalización coherente de los estados. Por tanto, \(4\pi^2g^2\) se conserva únicamente como el prefactor esquemático al cuadrado destacado en la fuente.}
+
+En esta interacción con un blanco puntual, nada distingue un momento final de otro salvo la condición energética. Por tanto, en tres dimensiones, el modelo asigna el mismo peso principal a todos los momentos salientes que tienen la misma energía---o, de forma equivalente, a todas las direcciones de salida de la esfera de energía fija. Esta isotropía es una propiedad de este dispersor puntual tan sencillo, no de todos los blancos reales.
+
+El cálculo ha proporcionado tres ideas relacionadas. El coeficiente \(g\) mide la intensidad de la interacción. Una expresión bra-operador-ket es una amplitud de dispersión, cuyo cuadrado de módulo interviene en la probabilidad. Y, sobre todo, la integración sobre todos los tiempos produce la función delta de la energía: la simetría bajo traslaciones temporales impone la conservación de la energía.
+
+\section{¿Qué cambia si cambia el blanco o el acoplamiento?}
+
+El origen \(x=0\) se eligió solo por comodidad. Situemos el blanco en \(x=x_{\mathrm T}\). Los factores espaciales de \(\psi^\dagger(x_{\mathrm T},t)\psi(x_{\mathrm T},t)\) dan
+\begin{equation}
+e^{-ik_f x_{\mathrm T}}e^{ik_i x_{\mathrm T}}
+=e^{i(k_i-k_f)x_{\mathrm T}}.
+\end{equation}
+Así, la amplitud pasa a ser
+\begin{equation}
+\mathcal A_{i\to f}(x_{\mathrm T})
+=e^{i(k_i-k_f)x_{\mathrm T}}
+\mathcal A_{i\to f}(0).
+\end{equation}
+
+\begin{classroomqa}\lecturetimestamp{01:24:37}\audiencequestion{¿Se puede redefinir siempre la posición para que el blanco esté en \(x=0\)?}\lecturerresponse{Para este único blanco fijo, sí. Si permanece en \(x_{\mathrm T}\neq0\), su posición aparece en la amplitud como la fase \(e^{i(k_i-k_f)x_{\mathrm T}}\). Al multiplicar por la fase conjugada compleja, esta desaparece de la probabilidad.}\end{classroomqa}
+
+En efecto,
+\begin{equation}
+\left|e^{i(k_i-k_f)x_{\mathrm T}}\right|^2=1.
+\end{equation}
+La amplitud conserva la información sobre la posición del blanco, pero esta probabilidad para un solo blanco no.
+
+Invirtamos ahora la asimetría. Supongamos que la interacción puede ocurrir en cualquier posición, pero solo en un instante determinado. Una integral sobre la posición daría
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,
+e^{i(k_i-k_f)x}
+=2\pi\delta(k_i-k_f),
+\end{equation}
+mientras que fijar el instante eliminaría la función delta de la energía.
+
+\begin{classroomqa}\lecturetimestamp{01:26:41}\audiencequestion{Si no importara dónde ocurre la interacción, pero esta sucediera en un único instante fijo, ¿se conservaría otra magnitud?}\lecturerresponse{Sí. La integración sobre todas las posiciones impondría la conservación del momento, mientras que el instante de interacción determinado eliminaría la conservación exacta de la energía. En un problema completo de dos partículas, la interacción puede ocurrir en cualquier instante y en cualquier lugar.}\end{classroomqa}
+
+Esto también permite interpretar físicamente la dependencia temporal explícita. Si el acoplamiento es \(g(t)\), o una intervención externa hace que la dispersión sea posible de repente, no todos los instantes son equivalentes. La descripción reducida puede entonces intercambiar energía con la dinámica externa que se omitió.
+
+\begin{classroomqa}\lecturetimestamp{01:28:29}\audiencequestion{¿Las constantes de acoplamiento se determinan principalmente mediante experimentos y qué significa que un acoplamiento dependa del tiempo?}\lecturerresponse{Sí, sus valores se determinan experimentalmente. La dependencia temporal explícita suele indicar que se ha omitido alguna parte móvil o cambiante del sistema, igual que en el modelo de blanco fijo se omitió el retroceso del blanco. La energía que parece faltar pertenece a esos grados de libertad omitidos.}\end{classroomqa}
+
+Un blanco en movimiento es el ejemplo más sencillo.
+
+\begin{classroomqa}\lecturetimestamp{01:29:23}\audiencequestion{¿Golpear un blanco en movimiento es un ejemplo en el que no se conserva la energía de la partícula?}\lecturerresponse{Sí. Si se omite de la contabilidad de la energía el movimiento prescrito del blanco, este puede suministrar energía a la partícula o quitársela.}\end{classroomqa}
+
+El carácter puntual del blanco es otra simplificación.
+
+\begin{classroomqa}\lecturetimestamp{01:29:43}\audiencequestion{¿Cuándo hay que comparar el tamaño del blanco con el tamaño o la longitud de onda de la onda incidente?}\lecturerresponse{En el modelo actual, el tamaño del blanco es cero. Un tamaño finito del blanco sí produce efectos adicionales en comparación con la longitud de onda, pero dejaremos ese refinamiento para más adelante.}\end{classroomqa}
+
+Volvamos ahora al blanco en movimiento. Imaginemos una pared que se mueve hacia una pelota de tenis. La pared puede transferir energía a la pelota. Si se prescribe el movimiento de la pared y se omite su energía, la energía de la pelota por sí sola no se conserva. Matemáticamente, esto corresponde a una dependencia temporal de la posición del blanco, y no necesariamente de \(g\).
+
+Por tanto, los operadores de creación y aniquilación han hecho exactamente lo que se buscaba: describen una transición de un estado de partícula a otro, mientras que la dependencia espaciotemporal de los campos determina qué condiciones de conservación acompañan esa transición.
+
+\section{Conteo de cargas e invariancia de fase}
+
+Cada especie de partícula tiene su propio campo. Los electrones y los fotones, por ejemplo, no se describen mediante el mismo \(\psi\). Para mostrar cómo se cuenta la carga con el álgebra disponible, tomemos temporalmente \(\psi\) como un campo similar al del electrón: \(\psi\) aniquila una partícula cargada de ese tipo y \(\psi^\dagger\) crea una. Es un sustituto bosónico para llevar la cuenta; el verdadero campo fermiónico del electrón requiere un álgebra que aún no hemos introducido.
+
+El factor para blanco fijo
+\begin{equation}
+\psi^\dagger\psi
+\end{equation}
+aniquila una partícula y crea una. Entra un electrón y sale uno, así que la carga transportada por esta especie no cambia.
+
+Imaginemos ahora que un electrón entra y que dos salen del mismo punto. El producto de operadores correspondiente contendría un campo de aniquilación y dos campos de creación,
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+En el caso de un campo electrónico, esto crearía un electrón neto y violaría la conservación de la carga eléctrica. En cambio, dos electrones entrantes y dos salientes pueden representarse mediante
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+que contiene el mismo número de campos de creación y de aniquilación. Para dos partículas entrantes y tres salientes se necesitaría
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+y, de nuevo, cambiaría la carga neta. La regla inmediata es sencilla: una interacción que conserva la carga contiene el mismo número de campos \(\psi\) y \(\psi^\dagger\).
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:27}
+\audiencequestion{¿Importa el orden de los operadores de campo para esta prueba de conservación de la carga?}
+\lecturerresponse{La prueba inmediata se refiere al número de factores \(\psi\) y \(\psi^\dagger\), no a su orden. Si los productos escritos en distinto orden son idénticos en otros aspectos es una cuestión aparte.}
+\end{classroomqa}
+
+Hay un criterio matemático más profundo que el simple recuento. Multipliquemos el campo por una fase constante:
+\begin{equation}
+\psi\longrightarrow e^{i\alpha}\psi.
+\end{equation}
+Como \(\psi^\dagger\) es el conjugado hermítico, se transforma con la fase conjugada,
+\begin{equation}
+\psi^\dagger\longrightarrow e^{-i\alpha}\psi^\dagger.
+\end{equation}
+Una expresión con el mismo número de ambos campos no cambia. Por ejemplo,
+\begin{align}
+\psi^\dagger\psi
+&\longrightarrow
+e^{-i\alpha}e^{i\alpha}\psi^\dagger\psi
+=\psi^\dagger\psi,\\
+\psi^\dagger\psi^\dagger\psi\psi
+&\longrightarrow
+e^{-2i\alpha}e^{2i\alpha}
+\psi^\dagger\psi^\dagger\psi\psi
+=\psi^\dagger\psi^\dagger\psi\psi.
+\end{align}
+Una expresión con cantidades desiguales sí cambia. Así,
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi
+\longrightarrow
+e^{-i\alpha}\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+Las interacciones permitidas que conservan la carga son precisamente las invariantes bajo este cambio global de fase. En este sencillo lenguaje de campos, la invariancia de fase y la conservación de la carga son dos maneras de describir la misma regla.
+
+La combinación
+\begin{equation}
+\psi+\psi^\dagger
+\end{equation}
+no es invariante bajo una rotación de fase arbitraria.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:53}
+\audiencequestion{¿No es eso la parte real de \(\psi\)?}
+\lecturerresponse{Sí. Es proporcional a la parte real de \(\psi\), y multiplicar \(\psi\) por una fase cambia esa parte real. Por tanto, no es invariante bajo cambios de fase.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:05}
+\audiencequestion{Si un electrón choca contra un blanco y se emiten muchos electrones secundarios, ¿cómo puede conservarse la carga?}
+\lecturerresponse{En ese proceso, el blanco no es pasivo. Si un átomo emite muchos electrones, el propio átomo cambia de carga y de estado. Hay que incluir su dinámica y describir también el blanco mediante campos cuánticos.}
+\end{classroomqa}
+
+En este punto se distinguen tres correspondencias. La invariancia bajo traslaciones temporales corresponde a la conservación de la energía. La invariancia global de fase corresponde a la conservación de la carga. La invariancia bajo traslaciones espaciales corresponde a la conservación del momento, aunque aún queda por realizar el cálculo espacial completo.
+
+\section{Orden de los operadores y límites del modelo de orden más bajo}
+
+Por simplicidad, en los productos anteriores todos los campos de creación aparecen a la izquierda y todos los de aniquilación, a la derecha. Un producto con factores intercalados también puede contener cantidades iguales y, por tanto, superar la prueba de recuento de carga, pero el orden de los operadores puede afectar a la expresión de otras maneras.
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:02}
+\audiencequestion{¿Podría escribirse el mismo tipo de proceso con factores intercalados, como \(\psi\psi^\dagger\psi\psi^\dagger\)?}
+\lecturerresponse{Sigue habiendo la misma cantidad de ambos tipos y, por tanto, se cumple la regla de carga, pero en general la expresión no es la misma que cuando todos los operadores con daga están a la izquierda. Dejaremos para más adelante el estudio de cómo reordenar los factores.}
+\end{classroomqa}
+
+\editorialnote{La formulación de una pregunta del público en 01:41:10 está demasiado dañada para reconstruirla. La respuesta que sí puede recuperarse repite que cantidades iguales de \(\psi\) y \(\psi^\dagger\) implican invariancia de fase y conservación de la carga, mientras que cantidades desiguales no implican ninguna de las dos.}
+
+Estas conexiones entre simetrías y leyes de conservación son casos particulares del teorema de Noether. En mecánica clásica, ese teorema proporciona el marco general; aquí, la misma conexión se ha mostrado directamente mediante las fases y las funciones delta de los campos cuánticos.
+
+El resultado principal para blanco fijo también tiene un dominio de validez evidente. No se puede confiar en un prefactor esquemático de probabilidad como \(4\pi^2g^2\) cuando se acerca a la unidad o la supera.
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:33}
+\audiencequestion{¿Significa el resultado esquemático que \(g\) debe ser menor, más o menos, que \(1/(2\pi)\)?}
+\lecturerresponse{O bien \(g\) es lo bastante pequeño para que este primer término resulte útil, o bien el modelo está incompleto. Una partícula puede dispersarse una vez, regresar y dispersarse dos veces, luego tres, y así sucesivamente. La amplitud completa es una serie infinita. Solo cuando \(g\) es pequeño domina el término más sencillo; de lo contrario, hay que sumar muchos diagramas de Feynman.}
+\end{classroomqa}
+
+Las sencillas representaciones espaciotemporales son el comienzo de los diagramas de Feynman. Sus vértices especifican posibilidades elementales: una partícula entrante y una saliente corresponden a un factor como \(\psi^\dagger\psi\); dos entrantes y dos salientes corresponden a un factor como \(\psi^\dagger\psi^\dagger\psi\psi\). La repetición de vértices genera potencias más altas de la constante de acoplamiento y términos de orden superior en la serie.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{¿Puede una constante de acoplamiento tener una componente imaginaria?}
+\lecturerresponse{Puede haber constantes de acoplamiento complejas. Las combinaciones irreducibles de fases impares bajo \(T\) pueden indicar una violación de la invariancia bajo inversión temporal: el proceso con inversión temporal no tiene por qué tener la amplitud relacionada por simetría.}
+\end{classroomqa}
+
+\editorialnote{En este intercambio se mencionó el parámetro \(\theta\) de la QCD, pero se trata de un coeficiente real que multiplica una interacción impar bajo \(T\), no de una componente imaginaria de un acoplamiento. Una fase que pueda eliminarse o una fase compleja debida a absorción no demuestra por sí sola una violación de \(T\). La inferencia solo se aplica a combinaciones irreducibles de fases impares bajo \(T\).}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:02}
+\audiencequestion{¿Puede emitirse la partícula saliente antes o después de que se absorba la entrante, en vez de ocurrir ambas cosas en el mismo instante?}
+\lecturerresponse{Es una pregunta razonable, pero el modelo instantáneo no permite responderla. Dejaremos para más adelante el orden temporal más general.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:44}
+\audiencequestion{¿Cómo se hace relativista esta construcción?}
+\lecturerresponse{La indicación breve es combinar las partes conjugadas e incluir un denominador que contenga la raíz cuadrada de \(\omega(k)\). La construcción completa se deja para más adelante.}
+\end{classroomqa}
+
+\editorialnote{No se puede recuperar con suficiente seguridad la breve fórmula relativista expresada oralmente como para escribirla en notación matemática. Se conservan únicamente los elementos mencionados y el hecho de que su desarrollo se deja para más adelante.}
+
+También hay que distinguir claramente la conservación de la carga de la conservación de la masa en reposo.
+
+\begin{classroomqa}
+\lecturetimestamp{01:48:22}
+\audiencequestion{¿Se conserva la masa en reposo en el mismo sentido estructural que la carga eléctrica?}
+\lecturerresponse{No. En la mecánica galileana no relativista, la masa es una cantidad aditiva que se conserva. En las reacciones relativistas, la suma de las masas en reposo de las partículas individuales no tiene por qué conservarse. Un electrón y un positrón pueden aniquilarse y producir dos fotones, mientras la carga eléctrica se conserva.}
+\end{classroomqa}
+
+\editorialnote{En un sistema relativista cerrado completo se conserva el cuadrimomento total, por lo que la masa invariante de ese sistema es fija. El ejemplo de aniquilación se refiere a la suma de las masas en reposo de las partículas individuales, no a la masa invariante del sistema cerrado.}
+
+Por tanto, la conservación de la masa aditiva es un hecho efectivo de la física no relativista, no una regla fundamental en pie de igualdad con la conservación de la carga eléctrica. La invariancia de fase hallada antes expresa la simetría más profunda asociada a la carga.
+
+Los siguientes pasos consisten en sustituir el campo bosónico provisional por campos fermiónicos y admitir varias especies de partículas---electrones, muones, quarks, fotones y otras---, cada una con su propio campo y sus propias interacciones permitidas.
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:39}
+\audiencequestion{¿Era legítimo llamar campo electrónico al ejemplo anterior, si hasta ahora solo se han desarrollado campos bosónicos?}
+\lecturerresponse{Solo como una versión bosónica o un sustituto de un electrón. Aún no se ha introducido la teoría fermiónica auténtica.}
+\end{classroomqa}

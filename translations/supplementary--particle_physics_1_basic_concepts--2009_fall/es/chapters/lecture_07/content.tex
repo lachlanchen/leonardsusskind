@@ -1,0 +1,660 @@
+\chapter{Momento angular, espín y estadística}
+
+\section{De la rotación ordinaria al espín intrínseco}
+
+El tema formal es el momento angular, pero el objetivo de fondo es el espín. El espín es una de las propiedades más sencillas y, a la vez, menos intuitivas de las partículas elementales, y su estructura se deriva de las matemáticas del momento angular.
+
+El momento angular es un vector. Su dirección sigue el eje de rotación. Hay dos sentidos posibles a lo largo de ese eje, así que hace falta una convención para elegir entre ellos: curva los dedos de la mano derecha en el sentido de rotación y el pulgar apunta en la dirección del vector de momento angular. Esto es una definición, no un teorema.
+
+La magnitud depende de cuánta masa hay, de cómo está distribuida, del tamaño del sistema y de su velocidad angular. La distribución de masa y el tamaño quedan recogidos en el momento de inercia. Por tanto, un objeto grande y uno pequeño pueden tener el mismo momento angular aunque giren a ritmos muy distintos y tengan energías muy diferentes.
+
+Un objeto compuesto ordinario puede tener dos tipos conceptualmente distintos de momento angular. Una taza que se mueve en círculo alrededor de un eje externo tiene momento angular porque su centro de masas se mueve en torno a ese eje, aunque la taza no gire alrededor de ningún eje que pase por ella. Esto es momento angular orbital. El espín es la rotación alrededor de un eje interno.
+
+La definición precisa se formula en el sistema de referencia del centro de masas. Pasemos al sistema en que el centro de masas está en reposo, de modo que el momento lineal total ordinario se anule. Todo momento angular que persista en ese sistema es momento angular de espín. El objeto no tiene por qué estar en reposo internamente; solo está en reposo su centro de masas.
+
+En el caso de una pelota de baloncesto, esta distinción no plantea dificultades. Es evidente que una pelota de baloncesto en reposo y la misma pelota puesta a girar son el mismo objeto en dos estados distintos. La mecánica cuántica complica esta imagen porque el momento angular es discreto. No hay una sucesión continua de valores permitidos de momento angular que conecte un estado con momento angular nulo con el primer estado rotatorio. Por tanto, cabe preguntarse si ese primer estado rotatorio es el mismo objeto en movimiento o un objeto completamente distinto.
+
+La formulación es en parte convencional, pero la pregunta física es precisa: ¿cuánta energía hace falta para alcanzar el primer estado rotatorio no nulo? Si la diferencia de energía es pequeña, el objeto excitado sigue siendo fácilmente reconocible. Si es enorme, la excitación puede cambiar radicalmente el objeto. Si se intenta dar a un átomo demasiada excitación rotatoria, pueden desprenderse sus electrones y destruirse el átomo, en vez de dejarlo girando tranquilamente sin dejar de ser el mismo átomo.
+
+Consideremos ahora un electrón, dejando de lado por el momento su espín intrínseco conocido. ¿Se puede hacer girar un electrón alrededor de un eje interno? Un punto matemático no tiene estructura interna visible que pueda ponerse a girar, pero los experimentos no determinan el tamaño del electrón proporcionándole una pequeña superficie rígida cuyo giro podamos observar. Si el electrón tiene un tamaño finito extremadamente pequeño, su primera excitación rotatoria adicional podría requerir una energía sencillamente inalcanzable. Como la energía aumenta al disminuir el tamaño, la energía necesaria podría ser astronómica, quizá incluso del orden de la energía de Planck. Esta estimación es deliberadamente tentativa.\footnote{Un breve pasaje que sigue inmediatamente a esta estimación no es lo bastante inteligible como para justificar una reconstrucción sustantiva adicional.}
+
+Por consiguiente, la magnitud del espín se trata como una característica fija de una partícula elemental. Los electrones no presentan una serie de magnitudes de espín intrínseco cada vez mayores. Si una excitación que por lo demás se pareciera a un electrón tuviera otro espín total, se clasificaría como una partícula distinta.
+
+La magnitud fija no determina la dirección. Imaginemos una partícula llamada \emph{espintrón}, identificada en parte por la magnitud de su momento angular. Si su espín apunta a lo largo de un eje, la invariancia rotacional exige que también pueda haber una partícula del mismo tipo cuyo espín apunte a lo largo de otro eje. Ninguna dirección espacial tiene preferencia intrínseca. La magnitud del espín permanece fija, mientras que su orientación puede cambiar. Así pues, el problema reúne dos elementos que parecen contradictorios: una magnitud cuantizada y direcciones que pueden rotar libremente. El álgebra del momento angular mostrará cómo coexisten.
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:25}
+\audiencequestion{¿Por qué hace falta energía para hacer girar una partícula pequeña?}
+\lecturerresponse{Para un objeto de masa \(M\) y radio característico \(R\), el momento de inercia es del orden de
+\begin{equation}
+I\sim cMR^2,
+\end{equation}
+donde el factor numérico \(c\) depende de la forma y de cómo se distribuye la masa. Si el material cercano a la periferia se mueve con rapidez \(v\), su momento lineal ordinario es del orden de \(Mv\), y el momento angular es el momento lineal multiplicado por la distancia:
+\begin{equation}
+L\sim MvR.
+\end{equation}
+De manera equivalente, \(L=I\omega\) con \(v\sim\omega R\). La energía cinética de rotación es
+\begin{equation}
+E_{\mathrm{rot}}=\frac{L^2}{2I}.
+\end{equation}
+A \(M\) y \(L\) fijos,
+\begin{equation}
+E_{\mathrm{rot}}\sim\frac{L^2}{2cMR^2}\propto\frac{1}{R^2}.
+\end{equation}
+Cuanto menor es el objeto, mayor es la energía que cuesta un momento angular dado. Esa dependencia inversamente proporcional al cuadrado es clásica. El hecho adicional de la mecánica cuántica es que el momento angular cambia en pasos discretos, así que el primer paso permitido no puede hacerse arbitrariamente pequeño.}
+\end{classroomqa}
+
+Las matemáticas que vamos a utilizar son abstractas y, al principio, bastante poco intuitivas. Su interés reside en que de un pequeño conjunto de reglas algebraicas se derivan hechos que pueden comprobarse experimentalmente.
+
+\section{Momento angular orbital}
+
+Empecemos con una partícula que se mueve en una órbita circular alrededor de un origen. La magnitud de su momento angular es el momento lineal multiplicado por la distancia perpendicular al origen. En un plano, podemos llamar positivo a uno de los sentidos de circulación y negativo al sentido contrario. El signo indica la dirección del vector de momento angular con respecto al eje elegido.
+
+Esto todavía no es espín. La partícula tiene momento angular porque tiene momento lineal ordinario. Coloquemos ahora dos partículas en extremos opuestos de un diámetro y hagamos que se muevan en el mismo sentido de rotación. Sus momentos lineales ordinarios se anulan, de modo que el centro de masas está en reposo, pero sus momentos angulares apuntan en la misma dirección y se suman. El sistema tiene momento lineal total nulo y momento angular total no nulo: un modelo clásico del espín.
+
+Sea la posición de una partícula respecto al origen
+\begin{equation}
+\vec r=(x,y,z)=(x_1,x_2,x_3),
+\end{equation}
+y sea su momento lineal
+\begin{equation}
+\vec p=(p_x,p_y,p_z)=(p_1,p_2,p_3).
+\end{equation}
+El momento angular es el producto vectorial
+\begin{equation}
+\vec L=\vec r\times\vec p.
+\end{equation}
+Al invertir los factores, se invierte el vector: \(\vec p\times\vec r=-\vec r\times\vec p\). La convención estándar es \(\vec r\times\vec p\), cuya dirección queda fijada por la regla de la mano derecha.\footnote{\raggedright Fotograma del video de la clase \nolinkurl{lecture_07_figure_02.png}, 00:18:49.\par}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_02.png}
+\par
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-0.6,0) -- (4.8,0) node[right] {$x$};
+\draw[->] (0,-0.6) -- (0,3.8) node[above] {$y$};
+\coordinate (P) at (3.2,2.3);
+\draw[->,thick] (0,0) -- (P) node[midway,above left] {$\vec r$};
+\draw[dashed] (P) -- (3.2,0);
+\draw[dashed] (P) -- (0,2.3);
+\draw[->,thick] (P) -- ++(-1.0,1.25) node[above] {$\vec p$};
+\node at (4.15,2.75) {$\vec L=\vec r\times\vec p$};
+\end{tikzpicture}
+\caption{Para una partícula en la posición \(\vec r\) con momento lineal \(\vec p\), el momento angular \(\vec L=\vec r\times\vec p\) es perpendicular al plano que forman.}
+\lectureframe{00:18:49}
+\end{figure}
+
+En componentes cartesianas,
+\begin{equation}
+\begin{aligned}
+L_x&=yp_z-zp_y,\qquad
+L_y=zp_x-xp_z,\\
+L_z&=xp_y-yp_x.
+\end{aligned}
+\end{equation}
+Basta con recordar la primera fórmula y hacer ciclar las etiquetas
+\[
+x\longrightarrow y\longrightarrow z\longrightarrow x.
+\]
+Al hacer ciclar tanto la etiqueta de la componente como las etiquetas de la derecha, se obtiene la fórmula siguiente sin cambiar el signo relativo. Esta regla mnemotécnica es útil precisamente porque es fácil invertir el signo por accidente.
+
+Para una partícula puntual, \(\vec r\times\vec p\) es el momento angular orbital respecto al origen elegido. Para un sistema compuesto, sumamos vectorialmente los momentos angulares de todos sus constituyentes:
+\begin{equation}
+\vec L_{\mathrm{tot}}=\sum_a \vec r_a\times\vec p_a.
+\end{equation}
+Al calcular esta suma en el sistema de referencia del centro de masas, puede seguir siendo distinta de cero aunque
+\[
+\sum_a\vec p_a=0.
+\]
+Ese momento angular restante es el espín del sistema compuesto.
+
+\section{Operadores cuánticos y conmutadores canónicos}
+
+En mecánica cuántica, las magnitudes observables se representan mediante operadores. Por tanto, la posición, el momento lineal y cada componente del momento angular son operadores. Aquí no necesitamos su realización detallada como operadores diferenciales. Las relaciones de conmutación contienen información suficiente para deducir el espectro del momento angular.
+
+Para dos operadores \(A\) y \(B\),
+\begin{equation}
+[A,B]=AB-BA.
+\end{equation}
+Si dos observables conmutan, pueden especificarse simultáneamente. Si no conmutan, la mecánica cuántica impide especificarlos simultáneamente con precisión.
+
+Las tres coordenadas de posición pueden medirse a la vez, así que las componentes de la posición conmutan:
+\begin{equation}
+[x_i,x_j]=0.
+\end{equation}
+En particular, todo operador conmuta consigo mismo. No tendría sentido que un observable fuera incompatible con otra medición de ese mismo observable.
+
+Las componentes del momento lineal también conmutan:
+\begin{equation}
+[p_i,p_j]=0.
+\end{equation}
+Una componente de la posición conmuta con una componente del momento lineal en otra dirección, pero no con la componente correspondiente del momento lineal. Las tres relaciones canónicas pueden escribirse juntas así:
+\begin{equation}
+[x_i,x_j]=0,\qquad
+[p_i,p_j]=0,\qquad
+[x_i,p_j]=i\hbar\,\delta_{ij}.
+\end{equation}
+Así, por ejemplo,
+\[
+[x,p_y]=0,\qquad [x,p_x]=i\hbar,
+\]
+y al invertir el orden se invierte el signo:
+\begin{equation}
+[p_j,x_i]=-i\hbar\,\delta_{ij}.
+\end{equation}
+
+El momento angular y la constante de Planck tienen las mismas dimensiones. El momento angular es la distancia multiplicada por el momento lineal, mientras que la relación de incertidumbre tiene la forma dimensional
+\begin{equation}
+\Delta x\,\Delta p\sim\hbar
+\end{equation}
+salvo por el conocido factor numérico de la desigualdad precisa. Por tanto, es natural que el momento angular se cuantice en unidades de \(\hbar\), aunque todavía no hemos deducido esa cuantización.
+
+\section{Deducción del álgebra del momento angular}
+
+La primera tarea consiste en calcular el conmutador de dos componentes del momento angular. A partir de
+\[
+L_x=yp_z-zp_y,\qquad
+L_y=zp_x-xp_z,
+\]
+se obtiene
+\begin{align}
+[L_x,L_y]
+&=[yp_z-zp_y,\;zp_x-xp_z] \\
+&=[yp_z,zp_x]-[yp_z,xp_z] \notag\\
+&\quad{}-[zp_y,zp_x]+[zp_y,xp_z].
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:41}
+\audiencequestion{¿Se pueden recordar las fórmulas de las componentes haciendo ciclar los símbolos de izquierda a derecha, en vez de hacer ciclar las tres ecuaciones de arriba abajo?}
+\lecturerresponse{Sí. Cualquiera de las dos reglas mnemotécnicas de ciclado es válida. Su único propósito es generar las componentes en el orden cíclico correcto sin perder de vista el signo.}
+\end{classroomqa}
+
+Podemos entender un conmutador preguntándonos si los factores de un producto pueden hacerse pasar a través de los factores del otro. En
+\[
+[yp_z,xp_z],
+\]
+el operador \(y\) conmuta tanto con \(x\) como con \(p_z\), mientras que \(p_z\) conmuta tanto con \(x\) como consigo mismo. No hay ningún impedimento, así que este término se anula. El mismo razonamiento da
+\[
+[zp_y,zp_x]=0.
+\]
+Solo quedan dos pares de productos distintos de cero.
+
+Para el primero, el único impedimento es que \(p_z\) pase a través de \(z\):
+\begin{align}
+[yp_z,zp_x]
+&=yp_zzp_x-zp_xyp_z \\
+&=y(p_zz-zp_z)p_x \\
+&=y[p_z,z]p_x \\
+&=-i\hbar\,yp_x.
+\end{align}
+El orden del conmutador canónico importa:
+\[
+[p_z,z]=-[z,p_z]=-i\hbar.
+\]
+
+Para el otro par que no se anula, los signos menos en las definiciones de \(L_x\) y \(L_y\) se multiplican y dan un signo más. El único impedimento es que \(z\) pase a través de \(p_z\):
+\begin{align}
+[zp_y,xp_z]
+&=zp_yxp_z-xp_zzp_y \\
+&=x(zp_z-p_zz)p_y \\
+&=x[z,p_z]p_y \\
+&=i\hbar\,xp_y.
+\end{align}
+Al combinar las dos contribuciones,
+\begin{align}
+[L_x,L_y]
+&=-i\hbar\,yp_x+i\hbar\,xp_y \\
+&=i\hbar(xp_y-yp_x) \\
+&=i\hbar L_z.
+\end{align}
+
+Esta es la simplificación importante. El conmutador de dos componentes del momento angular da la tercera componente; no queda ningún operador de posición ni de momento lineal. La permutación cíclica da
+\begin{equation}
+\begin{aligned}
+[L_x,L_y]&=i\hbar L_z,\qquad
+[L_y,L_z]=i\hbar L_x,\\
+[L_z,L_x]&=i\hbar L_y.
+\end{aligned}
+\end{equation}
+De manera equivalente,
+\begin{equation}
+[L_i,L_j]=i\hbar\,\epsilon_{ijk}L_k.
+\end{equation}
+
+El álgebra se cierra sobre los propios operadores del momento angular. Una vez obtenidas estas relaciones, podemos dejar de lado los \(x_i\) y \(p_i\) que usamos para deducirlas. El mismo álgebra se aplica cuando el momento angular total es una suma sobre muchos constituyentes. En particular, se aplica en el sistema de referencia del centro de masas, donde el momento angular restante es el espín. Por tanto, los conmutadores del momento angular pueden usarse de forma abstracta, sin construir primero el espín como movimiento de pequeños componentes constituyentes.
+
+La elección de los ejes \(x\), \(y\) y \(z\) es arbitraria. Si giramos a cualquier otro conjunto de ejes cartesianos inerciales mutuamente perpendiculares, las componentes con prima obedecen las mismas relaciones:
+\begin{equation}
+[L'_x,L'_y]=i\hbar L'_z,
+\end{equation}
+y también las relaciones cíclicas correspondientes. El álgebra es invariante bajo rotaciones, así que las predicciones físicas no pueden depender de los ejes inerciales elegidos para el cálculo.
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:09}
+\audiencequestion{¿El momento angular de espín es independiente de las traslaciones, además de las rotaciones de los ejes de coordenadas?}
+\lecturerresponse{Sí. El espín intrínseco es independiente de las traslaciones. El momento angular orbital respecto a un origen puede cambiar si se traslada el origen, pero el espín que queda en el sistema de referencia del centro de masas no depende de esa traslación.}
+\end{classroomqa}
+
+El álgebra abstracta puede generar identidades sin fin, la mayoría de escaso interés físico. Su valor se manifiesta cuando una identidad se convierte en un hecho medible o revela algo sobre el significado operacional de la medición. Hasta aquí, la construcción es principalmente algebraica. El siguiente paso permite extraer la estructura discreta del espín.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:42}
+\audiencequestion{¿Qué ocurre si los ejes \(x\), \(y\) y \(z\) elegidos giran junto con las partículas?}
+\lecturerresponse{La discusión se limita a sistemas de referencia inerciales. Un sistema de coordenadas en rotación es no inercial e introduce efectos como las fuerzas centrífuga y de Coriolis. El momento angular no es invariante ante un cambio a un sistema que gira con el objeto: un sistema que gira de forma visible en un sistema inercial puede parecer en reposo en un sistema que rota con él. La invariancia rotacional que usamos aquí se refiere a ejes cartesianos inerciales con orientaciones distintas, no a ejes que rotan con el tiempo.}
+\end{classroomqa}
+
+\section{Operadores escalera y eje de cuantización}
+
+Introduzcamos las dos combinaciones
+\begin{equation}
+L_+=L_x+iL_y,
+\qquad
+L_-=L_x-iL_y.
+\end{equation}
+Son análogas a los operadores de creación y aniquilación del oscilador armónico. Su función es elevar y reducir una componente elegida del momento angular.
+
+El eje \(z\) no tiene nada de especial, pero hay que elegir un eje para especificar una componente. Tomemos \(z\) como eje de cuantización y escribamos
+\begin{equation}
+L_z\lvert m\rangle=m\hbar\,\lvert m\rangle.
+\end{equation}
+Así, \(m\) es la componente \(z\) medida en unidades de \(\hbar\). Durante los cálculos suele ser práctico fijar \(\hbar=1\); aquí la conservaremos explícita.
+
+El conmutador \([L_+,L_-]\) es proporcional a \(L_z\), pero no hace falta para el argumento inmediato. Lo primero que importa es el conmutador de cada operador escalera con \(L_z\). A partir de
+\[
+[L_x,L_z]=-i\hbar L_y,
+\qquad
+[L_y,L_z]=i\hbar L_x,
+\]
+se obtiene
+\begin{align}
+[L_+,L_z]
+&=[L_x+iL_y,L_z] \\
+&=[L_x,L_z]+i[L_y,L_z] \\
+&=-i\hbar L_y+i(i\hbar L_x) \\
+&=-\hbar(L_x+iL_y) \\
+&=-\hbar L_+.
+\end{align}
+Al cambiar el signo del término \(iL_y\), resulta
+\begin{equation}
+[L_-,L_z]=+\hbar L_-.
+\end{equation}
+De manera equivalente, invirtiendo el orden de cada conmutador,
+\begin{equation}
+[L_z,L_+]=\hbar L_+,
+\qquad
+[L_z,L_-]=-\hbar L_-.
+\end{equation}
+
+El valor preciso de una sola componente del momento angular puede conocerse a la vez. Cualquier par de componentes distintas no conmuta, así que no se pueden especificar simultáneamente. La componente elegida con precisión define el eje de cuantización; elegir \(z\) es una conveniencia, no una preferencia física.
+
+Apliquemos ahora \(L_+\) a un autoestado de \(L_z\). Podemos reescribir el conmutador como
+\begin{equation}
+L_zL_+=L_+L_z+\hbar L_+.
+\end{equation}
+Por tanto,
+\begin{align}
+L_z\bigl(L_+\lvert m\rangle\bigr)
+&=\bigl(L_+L_z+\hbar L_+\bigr)\lvert m\rangle \\
+&=m\hbar L_+\lvert m\rangle+\hbar L_+\lvert m\rangle \\
+&=(m+1)\hbar\,L_+\lvert m\rangle.
+\end{align}
+Siempre que no sea nulo, \(L_+\lvert m\rangle\) es un autoestado de \(L_z\) cuyo autovalor ha aumentado en una unidad de \(\hbar\). Del mismo modo,
+\begin{equation}
+L_z\bigl(L_-\lvert m\rangle\bigr)
+=(m-1)\hbar\,L_-\lvert m\rangle.
+\end{equation}
+Así, \(L_-\) reduce \(m\) en una unidad.
+
+Esto ya es una conclusión no trivial. Sea cual sea el espectro de \(L_z\), los valores vecinos están separados por números enteros:
+\begin{equation}
+\ldots,\ m-2,\ m-1,\ m,\ m+1,\ m+2,\ \ldots
+\end{equation}
+Aún no hemos determinado los extremos.
+
+\section{Multipletes finitos y etiqueta de espín}
+
+Un tipo determinado de partícula tiene una magnitud fija de momento angular. Su momento angular puede reorientarse, pero aumentarlo sin límite acabaría produciendo un objeto distinto. Por tanto, debe haber un valor máximo posible de la componente \(z\) para esa partícula.
+
+¿Cómo puede una escalera con operador de subida tener un extremo superior? El oscilador armónico ofrece el modelo. Su operador de aniquilación da cero al llegar al estado inferior. Aquí, el operador de subida debe dar cero al llegar al estado superior:
+\begin{equation}
+L_+\lvert m_{\max}\rangle=0.
+\end{equation}
+La afirmación de que \(L_+\) eleva un autovalor solo se aplica cuando el vector que produce no es nulo. El estado de peso máximo es precisamente el estado excepcional en el que termina la sucesión de subidas.
+
+La invariancia rotacional fija el extremo inferior. Si el momento angular puede apuntar en la dirección \(+z\) con su valor máximo, el mismo objeto físico puede rotarse para que apunte en la dirección \(-z\) también con su valor máximo. De ahí que
+\begin{equation}
+m_{\min}=-m_{\max}.
+\end{equation}
+El espectro es simétrico respecto de cero y tiene separación unitaria. Hay dos familias posibles.
+
+En la primera familia aparece el cero:
+\begin{equation}
+\begin{aligned}
+m={}&-m_{\max},-m_{\max}+1,\ldots,-1,0,\\
+&1,\ldots,m_{\max}-1,m_{\max}.
+\end{aligned}
+\end{equation}
+Entonces \(m_{\max}\) es un entero y el número de estados es
+\begin{equation}
+2m_{\max}+1.
+\end{equation}
+El valor máximo caracteriza a la partícula y se llama su espín. En la notación convencional,
+\begin{equation}
+s\equiv m_{\max},
+\qquad
+\lvert s,m\rangle\equiv\lvert m\rangle
+\end{equation}
+dentro de un multiplete de espín fijo.\footnote{\raggedright Fotograma del video de la clase \nolinkurl{lecture_07_figure_03.png}, 01:01:08.\par}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_07_figure_03.png}
+\caption{La condición de peso máximo pone fin a la sucesión de subidas, y los valores permitidos de \(m\) forman una escalera finita con separación unitaria.}
+\lectureframe{01:01:08}
+\end{figure}
+
+Una partícula de espín cero solo tiene \(m=0\). Una partícula de espín uno tiene
+\[
+m=1,0,-1,
+\]
+y una de espín dos tiene cinco valores posibles para la componente. El bosón de Higgs es un ejemplo de espín cero. El fotón y el bosón \(Z\) tienen espín uno. Un gravitón, si existe, tiene espín dos. Los objetos compuestos pueden tener espín tres o mucho mayor: los núcleos pueden tenerlo, al igual que objetos giratorios suficientemente macroscópicos, como las pelotas de baloncesto y las galaxias, que pueden tener un momento angular arbitrariamente grande. Lo que no figura en la lista habitual de partículas elementales es una partícula elemental de espín tres.
+
+La otra familia, también simétrica y con separación unitaria, no contiene el cero. Empieza por
+\[
+m=\frac12,-\frac12
+\]
+y continúa en pasos unitarios:
+\begin{equation}
+\begin{aligned}
+m={}&-m_{\max},-m_{\max}+1,\ldots,-\frac32,-\frac12,\\
+&\frac12,\frac32,\ldots,m_{\max}.
+\end{aligned}
+\end{equation}
+Aquí \(m_{\max}\) es un semientero. El caso más sencillo tiene espín \(\tfrac12\), seguido de espín \(\tfrac32\), espín \(\tfrac52\), y así sucesivamente. Por tanto, los multipletes de momento angular se dividen en familias de espín entero y semientero.
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:46}
+\audiencequestion{¿También tiene un valor máximo un multiplete de espín semientero?}
+\lecturerresponse{Sí. La escalera vuelve a tener un valor máximo. Para una partícula de espín \(\tfrac32\), el máximo es \(m_{\max}=\tfrac32\); para una de espín \(\tfrac52\), es \(m_{\max}=\tfrac52\). La única diferencia es que el máximo y todos los demás valores del multiplete son semienteros.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:04}
+\audiencequestion{¿No hay partículas elementales de espín tres o superior?}
+\lecturerresponse{En el marco de la teoría cuántica relativista que estamos considerando, los espines de las partículas elementales de la lista habitual son \(0,\tfrac12,1,\tfrac32,\) y \(2\). Los objetos compuestos no están limitados a este intervalo y pueden tener espín tres o mucho mayor.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:50}
+\audiencequestion{¿Los valores negativos de la escalera representan un espín negativo?}
+\lecturerresponse{No. Un valor negativo de \(m\) es el valor de una componente: indica que el momento angular apunta en sentido opuesto respecto del eje elegido. El espín de la partícula es el valor máximo no negativo \(s=m_{\max}\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:05:10}
+\audiencequestion{Si los valores de la componente son discretos, ¿qué ocurre con todas las orientaciones intermedias?}
+\lecturerresponse{No hay solo dos o tres orientaciones espaciales posibles. Las orientaciones intermedias se representan mediante superposiciones cuánticas de los estados de la base \(m\). La construcción de espín \(\tfrac12\) que sigue lo muestra explícitamente.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:05:42}
+\audiencequestion{¿Y qué ocurre con el movimiento en sacacorchos o las ondas con polarización circular?}
+\lecturerresponse{Una onda electromagnética con polarización circular está formada por fotones con polarización circular, y esos fotones llevan momento angular a lo largo del eje de propagación. La palabra ``sacacorchos'' combina rotación con movimiento hacia delante, así que no es la descripción adecuada para un objeto considerado en reposo. Para una partícula en movimiento, la magnitud pertinente es la helicidad: la orientación de su espín con respecto a su dirección de movimiento.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:07:10}
+\audiencequestion{¿Hay alguna partícula elemental conocida de espín \(\tfrac32\)?}
+\lecturerresponse{No se ha confirmado directamente ninguna partícula elemental de espín \(\tfrac32\). La supersimetría conjetura la existencia de un compañero del gravitón de espín \(\tfrac32\) llamado gravitino, pero no se ha detectado directamente.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:08:01}
+\audiencequestion{¿Han dejado de actuar los operadores de momento angular sobre la función de onda original o el espacio de kets?}
+\lecturerresponse{Todavía no se había especificado ningún espacio de espín original. Estamos usando el álgebra para determinar ese espacio. Para un espín fijo \(s\), su base consta de vectores etiquetados por los valores permitidos
+\[
+\lvert s,m\rangle,\qquad m=-s,-s+1,\ldots,s.
+\]
+Este espacio de espín intrínseco es distinto del espacio ordinario de funciones de onda espaciales, sobre el que el momento angular orbital actúa como \(\mathbf r\times\mathbf p\), aunque ambos realizan la misma álgebra del momento angular.}
+\end{classroomqa}
+
+\section{La magnitud del momento angular}
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:32}
+\audiencequestion{¿Es observable la magnitud del vector de momento angular?}
+\lecturerresponse{Sí. Lo más práctico es usar su cuadrado,
+\[
+L^2=L_x^2+L_y^2+L_z^2.
+\]
+Su valor en el estado de peso máximo no es simplemente \(s^2\hbar^2\). Aunque \(L_z\) tenga un valor preciso y máximo, las componentes transversales, que no conmutan, no pueden ser ambas exactamente nulas, por lo que aportan una contribución cuántica adicional.}
+\end{classroomqa}
+
+Para calcular esa contribución, multipliquemos los operadores escalera en el orden en que el operador de subida actúa primero sobre un ket:
+\begin{align}
+L_-L_+
+&=(L_x-iL_y)(L_x+iL_y) \\
+&=L_x^2+L_y^2+iL_xL_y-iL_yL_x \\
+&=L_x^2+L_y^2+i[L_x,L_y] \\
+&=L_x^2+L_y^2-\hbar L_z.
+\end{align}
+El último paso utiliza \([L_x,L_y]=i\hbar L_z\). Por tanto,
+\begin{equation}
+L_x^2+L_y^2=L_-L_++\hbar L_z,
+\end{equation}
+y, de ahí,
+\begin{equation}
+L^2=L_-L_++L_z^2+\hbar L_z.
+\end{equation}
+
+Apliquemos esta identidad al estado de peso máximo \(\lvert s,s\rangle=\lvert m_{\max}\rangle\):
+\begin{align}
+L^2\lvert s,s\rangle
+&=\left(L_-L_++L_z^2+\hbar L_z\right)\lvert s,s\rangle \\
+&=L_-L_+\lvert s,s\rangle
++s^2\hbar^2\lvert s,s\rangle
++s\hbar^2\lvert s,s\rangle.
+\end{align}
+El primer término se anula porque \(L_+\lvert s,s\rangle=0\). Así,
+\begin{equation}
+L^2\lvert s,s\rangle
+=s(s+1)\hbar^2\lvert s,s\rangle.
+\end{equation}
+El término adicional \(+s\) es la corrección cuántica asociada a las fluctuaciones transversales inevitables. Clásicamente, esperaríamos solo \(s^2\hbar^2\).
+
+Los primeros valores permiten apreciar la diferencia:
+\begin{align}
+s=0 &: \qquad L^2=0,\\
+s=1 &: \qquad L^2=2\hbar^2,\\
+s=\frac12 &: \qquad L^2=\frac34\hbar^2.
+\end{align}
+Para \(s=1000\), el factor adimensional es \(1000\times1001\), que difiere poco de \(1000^2\) en la escala de un momento angular tan grande. En general,
+\begin{equation}
+s(s+1)=s^2\left(1+\frac1s\right),
+\end{equation}
+así que la corrección cuántica relativa se vuelve despreciable para valores muy grandes de \(s\). Así se obtiene el resultado clásico \(s^2\).
+
+Todos los estados \(m\) de un multiplete de espín fijo tienen este mismo autovalor de \(L^2\). Cambiar \(m\) modifica la componente a lo largo del eje elegido, no la magnitud total. Esta es la versión cuántica de girar un vector de momento angular sin cambiar su longitud.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:43}
+\audiencequestion{¿Se pueden conocer simultáneamente \(L^2\) y la componente \(z\)?}
+\lecturerresponse{Sí. El cuadrado del momento angular total conmuta con cada componente del momento angular:
+\[
+[L^2,L_i]=0,\qquad i=x,y,z.
+\]
+Así, se pueden especificar a la vez \(L^2\) y una componente elegida, como \(L_z\), aunque no se puedan especificar dos componentes distintas. Por ejemplo, todos los electrones tienen \(L^2=\tfrac34\hbar^2\), independientemente de su orientación.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:41}
+\audiencequestion{¿Es \(L^2\) cero para el espín uno, o solo para el espín cero?}
+\lecturerresponse{Solo para el espín cero se cumple \(L^2=0\). El espín uno da
+\[
+L^2=1(1+1)\hbar^2=2\hbar^2,
+\]
+mientras que el espín tres da
+\[
+L^2=3(3+1)\hbar^2=12\hbar^2.
+\]}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:18:13}
+\audiencequestion{¿Por qué todos los niveles \(m\) del multiplete tienen el mismo autovalor de \(L^2\)?}
+\lecturerresponse{Partamos del estado de peso máximo y apliquemos el operador de bajada. Como \(L^2\) conmuta con todas las componentes, también conmuta con \(L_-\):
+\[
+[L^2,L_-]=0.
+\]
+Si
+\[
+L^2\lvert s,s\rangle=s(s+1)\hbar^2\lvert s,s\rangle,
+\]
+entonces
+\begin{align}
+L^2\bigl(L_-\lvert s,s\rangle\bigr)
+&=L_-L^2\lvert s,s\rangle \\
+&=s(s+1)\hbar^2\,L_-\lvert s,s\rangle.
+\end{align}
+Así, el siguiente estado inferior tiene el mismo autovalor de \(L^2\). Si repetimos el argumento, ese autovalor se conserva a lo largo de toda la escalera.}
+\end{classroomqa}
+
+Por tanto, los valores discretos de \(m\) no significan que solo exista un conjunto discreto de orientaciones espaciales. La invariancia rotacional sigue exigiendo estados correspondientes a direcciones rotadas. Para el espín \(\tfrac12\), esas direcciones aparecerán como superposiciones de los dos estados de la base \(L_z\).
+
+\section{Estados de espín \texorpdfstring{\(\tfrac12\)}{1/2} y orientación}
+
+La invariancia rotacional exige más que los estados propios discretos de \(L_z\). Un espín puede apuntar en cualquier dirección, aunque la medición de su componente a lo largo de un eje elegido solo dé los valores discretos permitidos. Las direcciones intermedias entre los estados propios del eje \(z\) se representan mediante superposiciones.
+
+Para una partícula de espín \(\tfrac12\), nos limitaremos a los grados de libertad de espín. Un electrón también tiene estados orbitales, así que, desde luego, no tiene solo dos estados en total; su espacio de espín por sí solo es bidimensional. Elijamos la base del eje \(z\):
+\begin{equation}
+L_z\lvert+\rangle=\frac{\hbar}{2}\lvert+\rangle,
+\qquad
+L_z\lvert-\rangle=-\frac{\hbar}{2}\lvert-\rangle.
+\end{equation}
+Un estado de espín general es
+\begin{equation}
+\lvert\psi\rangle
+=
+\alpha\lvert+\rangle+\beta\lvert-\rangle,
+\end{equation}
+donde \(\alpha\) y \(\beta\) son números complejos. Al medir \(L_z\), se obtiene \(+\hbar/2\) con probabilidad \(|\alpha|^2\) y \(-\hbar/2\) con probabilidad \(|\beta|^2\), por lo que la normalización exige
+\begin{equation}
+|\alpha|^2+|\beta|^2=1.
+\end{equation}
+
+Una fase común no tiene efecto físico:
+\begin{equation}
+(\alpha,\beta)\longrightarrow
+e^{i\chi}(\alpha,\beta).
+\end{equation}
+Las dos amplitudes complejas comienzan con cuatro parámetros reales. La normalización elimina uno, y la fase global irrelevante elimina otro, de modo que quedan dos parámetros reales físicos. Ese es exactamente el número necesario para especificar una dirección mediante sus ángulos polar y azimutal. Al variar \(\alpha\) y \(\beta\), cambia la orientación del espín.
+
+Una componente medida y su valor esperado son cosas distintas. El valor esperado es un promedio de conjunto. Prepare muchos electrones exactamente en el mismo estado, mida \(L_z\) una vez en cada electrón, sume los resultados y divida por el número de experimentos. Cada resultado individual sigue siendo \(+\hbar/2\) o \(-\hbar/2\), pero el promedio puede tomar cualquier valor entre ambos:
+\begin{equation}
+\langle L_z\rangle
+=
+\frac{\hbar}{2}\bigl(|\alpha|^2-|\beta|^2\bigr).
+\end{equation}
+
+Amplitudes iguales para los estados arriba y abajo corresponden a un espín dirigido según una de las orientaciones del eje \(x\). Los representantes normalizados son\footnote{Las razones entre coeficientes determinan las direcciones. Los factores \(1/\sqrt2\) proporcionan la normalización exigida por \( |\alpha|^2+|\beta|^2=1\). Las fases relativas \(+i\) y \(-i\) dan orientaciones opuestas del eje \(y\); asignar uno u otro signo a la dirección positiva de \(y\) depende de la convención elegida para el eje.}
+\begin{equation}
+\lvert x;+\rangle
+=
+\frac{\lvert+\rangle+\lvert-\rangle}{\sqrt2},
+\qquad
+\lvert x;-\rangle
+=
+\frac{\lvert+\rangle-\lvert-\rangle}{\sqrt2}.
+\end{equation}
+Para cualquiera de los dos estados, una medición a lo largo de \(z\) da los dos resultados posibles con igual probabilidad y, por tanto,
+\begin{equation}
+\langle L_z\rangle
+=
+\frac12\left(\frac{\hbar}{2}\right)
++
+\frac12\left(-\frac{\hbar}{2}\right)
+=0.
+\end{equation}
+Los signos relativos más y menos corresponden a direcciones opuestas a lo largo del eje \(x\). De manera similar,
+\begin{equation}
+\frac{\lvert+\rangle+i\lvert-\rangle}{\sqrt2},
+\qquad
+\frac{\lvert+\rangle-i\lvert-\rangle}{\sqrt2}
+\end{equation}
+dan las dos orientaciones opuestas del eje \(y\). Los valores normalizados generales de \(\alpha\) y \(\beta\) describen ejes arbitrarios. Decir que un espín apunta a lo largo de un eje determinado significa que la medición de la componente a lo largo de ese eje da un resultado definido. Con respecto a otro eje, el mismo estado es, por lo general, una superposición.
+
+Los resultados de las mediciones individuales siguen estando cuantizados. Lo que varía continuamente son sus promedios de conjunto, que reproducen la geometría familiar de un vector clásico.
+
+\section{Espín, estadística y partículas compuestas}
+
+La masa, la carga eléctrica y el espín están entre las principales propiedades que se usan para caracterizar una partícula. El espín también está relacionado con la estadística. La relación entre espín y estadística es un teorema de la mecánica cuántica relativista, aunque aquí no se demostrará:
+\begin{equation}
+\begin{aligned}
+\text{half-integer spin} &\quad\Longleftrightarrow\quad \text{fermion},\\
+\text{integer spin} &\quad\Longleftrightarrow\quad \text{boson}.
+\end{aligned}
+\end{equation}
+Dos fermiones idénticos no pueden ocupar el mismo estado cuántico completo. Los bosones idénticos sí pueden ocupar el mismo estado, y un gran número de ellos en un mismo estado puede comportarse colectivamente como una onda clásica. Así, las partículas de espín \(\tfrac12,\tfrac32,\tfrac52,\ldots\) son fermiones, mientras que las de espín \(0,1,2,\ldots\) son bosones.
+
+La regla se extiende de inmediato a los sistemas compuestos. Al sumar dos momentos angulares semienteros se obtiene un momento angular entero. En términos más generales, un número par de constituyentes fermiónicos da lugar a un compuesto bosónico, mientras que un número impar da lugar a un compuesto fermiónico. Añadir constituyentes bosónicos no cambia esta regla de paridad.
+
+El hidrógeno ordinario contiene un protón de espín \(\tfrac12\) y un electrón de espín \(\tfrac12\). Por tanto, contiene un número par de fermiones y, como conjunto, es bosónico. Un deuterón contiene un protón y un neutrón, ambos fermiones, y también es un bosón. Un átomo de deuterio añade un electrón al deuterón, lo que da tres constituyentes fermiónicos en este nivel de descripción; por tanto, el deuterio es un fermión.
+
+Las partículas y las antipartículas tienen la misma masa y el mismo espín, pero cargas eléctricas opuestas. El positronio está formado por un electrón y un positrón ligados entre sí. Contiene dos fermiones y, por tanto, es bosónico.
+
+\begin{classroomqa}
+\lecturetimestamp{01:33:08}
+\audiencequestion{¿Los bosones atraviesan la materia, y está relacionada la superconductividad con el comportamiento bosónico de los electrones apareados?}
+\lecturerresponse{La propiedad pertinente no es simplemente la capacidad de atravesar la materia, sino la capacidad de los bosones para ocupar el mismo estado. El helio superfluido ofrece un ejemplo más sencillo. Un átomo ordinario de helio-\(4\) contiene dos protones, dos neutrones y dos electrones: un número par de constituyentes fermiónicos, así que el átomo es un bosón. Muchos átomos de helio pueden ocupar un mismo estado cuántico y moverse colectivamente. Entonces, puede imaginarse aproximadamente un superfluido como una onda clásica formada al acumular muchos átomos en el mismo estado. Esa imagen no es exacta, pero recoge la idea que necesitamos aquí. Un electrón en un metal es un fermión y no puede compartir un estado completo con otro electrón. Sin embargo, los pares de electrones son compuestos bosónicos, y esa es la conexión con la superconductividad. Esto plantea una paradoja: si los electrones constituyentes no pueden ocupar el mismo estado, ¿cómo pueden varios pares compuestos ocupar un mismo estado? Para resolverla se necesita una explicación más cuidadosa de los estados compuestos, que se deja para más adelante.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:46}
+\audiencequestion{Si los protones y los neutrones son compuestos, ¿por qué tienen espín semientero?}
+\lecturerresponse{Cada uno está formado por un número impar de quarks de espín \(\tfrac12\). Tres constituyentes fermiónicos forman un compuesto fermiónico, de modo que los protones y los neutrones pueden tener espín semientero.}
+\end{classroomqa}
+
+\section{Exclusión de Pauli y orbitales atómicos}
+
+La tabla periódica ofrece una motivación inmediata para el principio de exclusión de Pauli. La regla no dice que dos electrones nunca puedan tener el mismo movimiento orbital. Dice que dos electrones no pueden ocupar el mismo estado cuántico completo.
+
+Esta distinción importa incluso en los átomos más simples. Partiendo del hidrógeno, aumentemos la carga nuclear y añadamos un segundo electrón. Los dos electrones pueden ocupar el mismo orbital espacial, pero sus estados de espín deben ser distintos. Con respecto al eje elegido, uno puede tener espín hacia arriba y el otro hacia abajo. Cuando dos electrones ocupan un orbital, sus espines se combinan en el estado singlete de espín, de modo que su espín total se anula. No pueden ocupar un mismo orbital espacial más de dos electrones, porque solo hay dos estados de espín independientes disponibles.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:53}
+\audiencequestion{¿Se puede imaginar que los espines opuestos de dos electrones en un mismo orbital son como engranajes acoplados?}
+\lecturerresponse{Como imagen aproximada, sí: los engranajes acoplados giran en sentidos opuestos. Es solo una analogía de las direcciones opuestas de los espines, no un modelo mecánico literal de los electrones.}
+\end{classroomqa}
+
+La palabra ``orbital'' puede usarse en dos sentidos distintos. En sentido amplio, un estado de movimiento orbital es el estado que se obtiene al resolver la ecuación de Schrödinger ignorando el espín. Contiene más información que la mera capa que ocupa el electrón.
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:09}
+\audiencequestion{¿Un orbital significa algo más que la capa que ocupa el electrón?}
+\lecturerresponse{Sí. Aquí, el movimiento orbital se refiere al estado del electrón descrito por la ecuación de Schrödinger sin tener en cuenta el espín. Incluye el número cuántico principal \(n\), que aporta información radial y determina, de manera aproximada, la distancia del electrón al núcleo, así como los números cuánticos del momento angular orbital. En la notación espectroscópica que usan los químicos, \(S\), \(P\), \(D\) y \(F\) corresponden, respectivamente, al momento angular orbital \(l=0,1,2,3\).}
+\end{classroomqa}
+
+Así pues, el número cuántico principal y el momento angular orbital describen aspectos distintos del movimiento. Las etiquetas \(S,P,D,F\) se refieren al valor de \(l\), mientras que \(n\) aporta información radial por separado. La regla de Pauli establece que dos electrones no pueden tener iguales todos sus números cuánticos, incluido el número cuántico de espín.
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:42}
+\audiencequestion{¿Se puede determinar, a partir de los números cuánticos, cuántos electrones pueden ocupar cada capa de un átomo?}
+\lecturerresponse{Sí. Permiten determinar el número máximo posible, aunque no cuántos electrones contiene realmente un átomo particular en esa capa. Aquí no se abordará el problema general de contar los electrones por capa.}
+\end{classroomqa}
+
+Para un momento angular orbital fijo \(l\), el número cuántico de la componente tiene
+\begin{equation}
+2l+1
+\end{equation}
+valores posibles. Este es el mismo recuento de momentos angulares que ya usamos para el espín. Un estado \(S\) tiene \(l=0\), así que tiene un estado orbital. Un estado \(P\) tiene \(l=1\), así que tiene tres estados orbitales. Un estado \(D\) tiene \(l=2\), así que tiene cinco.
+
+El espín duplica cada cantidad de estados orbitales, porque cada orbital espacial puede alojar un electrón en cada uno de los dos estados de espín opuestos.
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:54}
+\audiencequestion{¿El estado \(S\) puede alojar dos electrones y los tres estados \(P\) alojan seis más?}
+\lecturerresponse{Sí. El único estado orbital \(S\) puede alojar como máximo dos electrones. Los tres estados orbitales \(P\) alojan dos cada uno, lo que suma seis más. Por tanto, los estados \(S\) y \(P\) en cuestión pueden alojar \(2+6=8\) electrones en total.}
+\end{classroomqa}
+
+La misma estructura de momento angular que organiza los orbitales atómicos vuelve a aparecer, con algunas diferencias, cuando los quarks se mueven en sistemas ligados y orbitan unos alrededor de otros.
