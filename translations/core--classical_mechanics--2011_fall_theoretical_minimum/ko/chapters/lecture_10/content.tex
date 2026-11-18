@@ -1,0 +1,572 @@
+\chapter{게이지 불변성과 하전 입자의 운동}
+
+\lectureoverview{자기장은 발산이 없으므로 벡터 퍼텐셜로 나타낼 수 있다. 이 표현은 유일하지 않지만, 바로 이 성질 덕분에 자기력이 작용 원리에 들어갈 수 있다. 로런츠 힘을 유도하고, 정준 운동량과 역학적 운동량을 구별하며, 해밀토니안을 구성한 뒤 서로 다른 두 게이지를 사용해 균일한 자기장 속에서의 운동을 푼다. 강의는 입자 역학을 맥스웰 이론, 자기 홀극, 위상 공간 동역학이라는 더 큰 주제 안에 자리매김하며 마무리된다.}
+
+\section{역학 강의의 마지막 단계}
+
+강의는 일정에 관한 작은 반전으로 시작한다. 하전 입자가 자기장에서 움직이는 문제를 마무리하고, 시간이 되면 전기장도 덧붙인 다음, 남은 내용은 다음 시간에 다루기로 한다. 청중은 이것이 이미 열 번째 강의라고 지적한다. 그렇다면 목표는 더 분명해진다. 자기장 문제를 마무리하고, 이를 통해 고전역학의 형식적 구조를 매듭짓는 것이다.
+
+간단히 복습하면서 시작하자. 자기장은 벡터장이다.
+\begin{equation}
+  \mathbf B=\mathbf B(\mathbf x),
+  \qquad
+  B_i(\mathbf x)=(B_x,B_y,B_z),
+\end{equation}
+이 장은 모든 점에서 크기와 방향을 갖는다. 이번 강의에서는 외부 전기장과 자기장이 정적이라고 가정한다. 이는 설명을 명확히 하기 위한 제한이지, 전자기장이 항상 시간에 따라 변하지 않아야 한다는 뜻은 아니다.
+
+또한 다음 제약 조건이 있다.
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+유체의 비유로 말하면, 자기 플럭스가 흘러나오는 관의 끝도 없고 자기 플럭스가 사라져 들어가는 배수구도 없다는 뜻이다. 통상적인 고전 전기역학에는 자기 원천이나 흡수원이 없다. 실험으로 기본적인 자기 단극자가 확립된 적은 없지만, 더 완전한 이론에는 자기 단극자가 포함될 가능성을 강의에서는 거듭 열어 둔다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_02.png}
+\caption{장 성분, 원천이 없는 조건 \(\nabla\cdot\mathbf B=0\), 그리고 벡터 퍼텐셜 표현이 강의 초반에 함께 제시된다.}
+\lectureframe{00:04:56}
+\end{figure}
+
+장 후보가 나올 때마다 발산을 확인하는 대신, 제약 조건을 자동으로 만족시키면 된다. 다음과 같이 쓰자.
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+그러면 항등식
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0
+\end{equation}
+이 계산을 대신 처리해 준다. 새 장 \(\mathbf A\)이 벡터 퍼텐셜이다.
+
+\section{자동 제약 조건의 대가}
+
+\(\mathbf A\)을 도입하면 한 문제는 해결되지만 다른 문제가 생긴다. 벡터 퍼텐셜은 유일하지 않다. 임의의 스칼라 함수 \(S(\mathbf x)\)에 대해,
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla S
+\end{equation}
+는 같은 회전을 갖는다. 왜냐하면
+\begin{equation}
+  \nabla\times(\nabla S)=0.
+\end{equation}
+이기 때문이다. 따라서 \(\mathbf A\)와 \(\mathbf A'\)는 같은 자기장을 나타낸다. 충분히 단순한 영역에서는 이것이 국소적으로 가능한 모호성의 전부다. 두 벡터 퍼텐셜의 회전이 같으면 그 차이는 국소적으로 기울기장이다. 전역적인 위상 구조 때문에 여러 패치가 필요하거나 추가적인 미묘함이 생길 수 있지만, 여기서 다루는 장에는 그런 사항이 필요하지 않다.
+
+특정한 대표를 \emph{게이지}라고 하고, 대표를 바꾸는 것을 \emph{게이지 변환}이라고 한다. 장 \(\mathbf B\)은 변하지 않으므로 게이지 불변이다. 여기서 적용할 원칙은 관측 가능한 물리가 어떤 대표를 선택했는지에 좌우되어서는 안 된다는 것이다. \(\mathbf A\)을 도입해 기술을 확장한 다음, 게이지 불변인 예측을 요구해 기술상의 중복을 제거했다.
+
+\subsection{하나의 균일한 장을 나타내는 세 가지 게이지}
+
+강의에서는 곧바로 구체적인 예를 든다. 균일한 자기장이 \(z\)축 방향을 향하도록 좌표를 정하자.
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=B,
+\end{equation}
+여기서 \(B\)은 상수다. 첫 번째 벡터 퍼텐셜은 다음과 같다.
+\begin{equation}
+  \mathbf A^{(1)}=(0,Bx,0).
+\end{equation}
+실제로,
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -
+  \frac{\partial A_x^{(1)}}{\partial y}
+  =B.
+\end{equation}
+두 번째 선택은 다음과 같다.
+\begin{equation}
+  \mathbf A^{(2)}=(-By,0,0),
+\end{equation}
+이때는
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-By)}{\partial y}
+  =B.
+\end{equation}
+
+두 선택을 서로 변환하려면 다음을 취하면 된다.
+\begin{equation}
+  S=Cxy,
+  \qquad
+  \nabla S=(Cy,Cx,0).
+\end{equation}
+\(\mathbf A^{(1)}\)에서 시작하면 변환된 성분은 다음과 같다.
+\begin{equation}
+  A_x'=Cy,
+  \qquad
+  A_y'=(B+C)x,
+  \qquad
+  A_z'=0.
+\end{equation}
+\(C=-B\)로 두면 \(\mathbf A^{(2)}\)를 얻는다. \(C=-B/2\)로 두면 대칭 게이지가 된다.
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \left(-\frac{B}{2}y,\frac{B}{2}x,0\right)
+  =
+  \frac12\,\mathbf B\times\mathbf r.
+\end{equation}
+세 벡터 퍼텐셜은 모두 같은 회전을 갖는다. 뒤에서 첫 번째와 두 번째 게이지로 다시 돌아올 텐데, 각 게이지가 서로 다른 병진 대칭을 명확하게 드러내기 때문이다.
+
+\begin{classroomqa}\audiencequestion{벡터 퍼텐셜도 균일한 자기장과 같은 대칭성을 가질 수 있나요?}\lecturerresponse{자기장처럼 공간적으로 일정한 벡터 퍼텐셜은 될 수 없다. 상수 벡터 퍼텐셜의 회전은 0이기 때문이다. 또한 하나의 게이지에서 비영 균일 자기장의 모든 병진 대칭을 명시적으로 드러낼 수도 없다. 대칭 게이지는 \(z\)축을 중심으로 하는 회전 대칭을 명시적으로 드러낸다. 따라서 정확한 교훈은 \(\mathbf A\)에 모든 대칭이 반드시 없어야 한다는 것이 아니라, 퍼텐셜 하나가 물리적 장의 모든 대칭성을 한꺼번에 드러낼 필요는 없다는 것이다.}
+\end{classroomqa}
+
+\(S=Cxy\)라는 형태는 한 예에 불과하다. 더 일반적으로는 적절한 영역에서 \(\mathbf A\)의 한 성분이 사라지도록 하는 것처럼 유용한 게이지 조건을 부과할 수 있다. \emph{게이지}라는 이름은 이러한 자유도를 국소적인 단위 변화로 해석하려던 역사적 시도에서 비롯되었다. 그 해석은 폐기되었지만 이름은 남았다.
+
+\begin{classroomqa}\audiencequestion{게이지 변환은 항상 스칼라의 기울기를 더하는 것을 뜻하나요?}\lecturerresponse{여기서 정적 전자기 벡터 퍼텐셜에 사용하는 변환은 그렇다. 다른 게이지 이론에서는 더 복잡한 변환을 사용한다. 중력에서는 물리적 기하가 좌표 표지에 좌우될 수 없으므로 좌표 변환을 게이지 변환이라고 부르기도 한다. 하지만 이 장에서 게이지 변환은 \(\mathbf A\mapsto\mathbf A+\nabla S\)을 뜻한다.}
+\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{계산에는 어떤 게이지가 더 유리할 수도 있나요?}\lecturerresponse{그런 경우가 매우 많다. 대칭성이나 보존 법칙이 한 게이지에서는 명시적으로 드러나지만 다른 게이지에서는 숨겨질 수 있다. 이는 단순한 가능성에 그치지 않는다. 이 강의의 뒷부분에서 한 게이지는 \(y\)를 순환 좌표로 만들고, 다른 게이지는 \(x\)를 순환 좌표로 만든다. 두 계산은 같은 궤도를 나타낸다.}
+\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{이 모호성은 고유공간을 선택하거나 고윳값을 구하는 것과 관련이 있나요?}\lecturerresponse{여기서 필요한 직접적인 관련성은 없다. 두 주제 모두 유용한 수학적 선택을 포함하지만, 고유기저의 변경과 전자기 게이지 변환은 서로 다른 구조다.}
+\end{classroomqa}
+
+\section{자기장 속 입자의 라그랑지안}
+
+이제 역학으로 돌아가자. 여기서 다루는 것은 주어진 자기장 속에서 움직이는 점 입자의 라그랑지안이지, 아직 전자기장 자체의 라그랑지안은 아니다. 강의에서 사용한 단위 관례에서는
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{e}{c}
+  \left(
+    A_x\dot x+A_y\dot y+A_z\dot z
+  \right).
+\end{equation}
+벡터 표기로 쓰면
+\begin{equation}
+  \boxed{
+  L=\frac12 m\mathbf v^2+\frac{e}{c}\mathbf A(\mathbf x)\cdot\mathbf v
+  }.
+\end{equation}
+계수 \(e\)는 입자의 전하다. 명시적인 \(c\)의 포함 여부는 단위 관례에 달려 있다. 구조적으로 중요한 것은 속도에 의존하는 결합 \(\mathbf A\cdot\mathbf v\)이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_03.png}
+\caption{자기장 속 입자의 라그랑지안을 성분별로 써서 세 속도 결합 항을 드러낸다.}
+\lectureframe{00:25:29}
+\end{figure}
+
+처음에는 이 항을 유도하지 않고 제안한다. 이 항을 넣고 어떤 운동 방정식이 나오는지 살펴보자고 한다. \(\mathbf B\)에서 직접 만든 항을 시도할 수도 있지만, 그러면 로런츠 힘이 아니라 \(\mathbf B\)의 미분이 생긴다. 경로와 올바르게 결합하는 국소적인 대상은 벡터 퍼텐셜이다.
+
+\subsection{게이지 이동이 궤도를 바꾸지 않는 이유}
+
+작용을 변분하기 전에 게이지 변환이 작용에 어떤 영향을 주는지 확인하자. 초기 시공간 점과 최종 시공간 점을 고정하면,
+\begin{equation}
+  \mathcal S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L\,dt.
+\end{equation}
+\(\mathbf A\mapsto\mathbf A+\nabla S\)에 따라 작용의 변화는 다음과 같다.
+\begin{align}
+  \Delta\mathcal S
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}
+  \nabla S(\mathbf x)\cdot\dot{\mathbf x}\,dt\\
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}\frac{dS(\mathbf x(t))}{dt}\,dt\\
+  &=
+  \frac{e}{c}
+  \left[
+    S(\mathbf x_f)-S(\mathbf x_i)
+  \right].
+\end{align}
+따라서 작용의 수치값은 변한다. 그러나 더해진 항은 고정된 끝점에만 의존하며, 변분하는 경로의 내부에는 의존하지 않는다. 이 항의 변분은 0이므로 정지 궤도를 바꿀 수 없다.
+
+\begin{classroomqa}\audiencequestion{방정식이 게이지 불변이라는 말은 무슨 뜻인가요?}\lecturerresponse{오일러--라그랑주 계산을 마친 뒤에는 \(\mathbf A\)가 \(\mathbf B\)의 성분으로 식별되는 회전 조합으로만 나타나야 한다. 퍼텐셜 자체는 변할 수 있고 작용은 끝점 항만큼 달라질 수 있지만, 물리적 궤도와 힘 법칙은 변하지 않아야 한다.}
+\end{classroomqa}
+
+\section{두 가지 운동량 개념}
+
+오일러--라그랑주 방정식은 다음과 같이 쓸 수 있다.
+\begin{equation}
+  \dot p_i=\frac{\partial L}{\partial x_i},
+  \qquad
+  p_i=\frac{\partial L}{\partial\dot x_i}.
+\end{equation}
+여기서는 두 운동량을 구별해야 한다. 익숙한 역학적 운동량은
+\begin{equation}
+  \boldsymbol{\pi}=m\mathbf v.
+\end{equation}
+라그랑지안으로 정의되는 정준 운동량은 다음과 같다.
+\begin{equation}
+  p_i
+  =
+  m\dot x_i+\frac{e}{c}A_i.
+\end{equation}
+따라서
+\begin{equation}
+  \boxed{
+  \boldsymbol{\pi}
+  =
+  \mathbf p-\frac{e}{c}\mathbf A
+  =
+  m\mathbf v
+  }.
+\end{equation}
+자유 입자나 통상적인 위치 의존 퍼텐셜에서는 정준 운동량과 역학적 운동량이 같다. 자기 상호작용은 속도에 의존하므로 두 운동량은 더 이상 같지 않다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_04.png}
+\caption{칠판에서는 정준 운동량의 정의 \(p_i=\partial L/\partial\dot x_i\)를 \(m\dot x_i\)와 구별하고, 궤도를 따라 그 시간 미분을 구하기 시작한다.}
+\lectureframe{00:37:33}
+\end{figure}
+
+이 구별은 단지 용어상의 문제가 아니다. 정준 운동량은 해밀턴 방정식과 푸아송 괄호, 순환 좌표에 대응하는 보존 법칙에 들어가는 양이다. 역학적 운동량은 질량과 속도의 곱으로 직접 측정할 수 있다.
+
+\begin{classroomqa}\audiencequestion{\((e/c)\mathbf A\cdot\mathbf v\)은 운동 에너지인가요, 퍼텐셜 에너지인가요? 더할지 뺄지는 어떻게 판단하나요?}\lecturerresponse{통상적인 운동 에너지도, 위치에만 의존하는 통상적인 퍼텐셜도 아니다. 속도 의존 상호작용이다. 현재 단계에서는 제안된 결합 항의 부호가 정해져 있다. 그 부호를 바꾸는 것은 전하 또는 \(\mathbf A\)의 부호를 반대로 하는 것과 같다. 결정적인 확인 방법은 여기서 얻는 힘 법칙이다.}
+\end{classroomqa}
+
+\section{계산을 따라 로런츠 힘 얻기}
+
+강의에서는 한 성분을 천천히 계산한다. \(p_x\)에 대해,
+\begin{equation}
+  p_x=m\dot x+\frac{e}{c}A_x(\mathbf x).
+\end{equation}
+외부 장은 정적이지만 입자가 움직이면 \(A_x(\mathbf x(t))\)는 변한다. 그 전미분은 다음과 같다.
+\begin{equation}
+  \frac{dA_x}{dt}
+  =
+  \frac{\partial A_x}{\partial x}\dot x
+  +
+  \frac{\partial A_x}{\partial y}\dot y
+  +
+  \frac{\partial A_x}{\partial z}\dot z.
+\end{equation}
+따라서
+\begin{equation}
+  \dot p_x
+  =
+  m\ddot x
+  +
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_yA_x\,\dot y
+    +
+    \partial_zA_x\,\dot z
+  \right).
+\end{equation}
+오일러--라그랑주 방정식의 우변은
+\begin{equation}
+  \frac{\partial L}{\partial x}
+  =
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_xA_y\,\dot y
+    +
+    \partial_xA_z\,\dot z
+  \right).
+\end{equation}
+항 \(\partial_xA_x\,\dot x\)가 소거된다. 남은 항을 속도 성분별로 묶으면
+\begin{align}
+  m\ddot x
+  &=
+  \frac{e}{c}
+  \left[
+    \left(\partial_xA_y-\partial_yA_x\right)\dot y
+    +
+    \left(\partial_xA_z-\partial_zA_x\right)\dot z
+  \right].
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{완성된 \(x\)성분 계산. 벡터 퍼텐셜의 미분 항들이 회전 조합으로 모인다.}
+\lectureframe{00:46:41}
+\end{figure}
+
+다음 관계를 이용하면
+\begin{align}
+  B_y&=\partial_zA_x-\partial_xA_z,\\
+  B_z&=\partial_xA_y-\partial_yA_x,
+\end{align}
+다음 결과를 얻는다.
+\begin{equation}
+  m a_x
+  =
+  \frac{e}{c}
+  \left(B_zv_y-B_yv_z\right)
+  =
+  \frac{e}{c}
+  (\mathbf v\times\mathbf B)_x.
+\end{equation}
+\(y\)와 \(z\)에 대해서도 같은 계산을 하면
+\begin{equation}
+  \boxed{
+  m\mathbf a=\frac{e}{c}\,\mathbf v\times\mathbf B
+  }.
+\end{equation}
+이것이 자기장에 대한 로런츠 힘 법칙이다. 강의에서는 전체 방정식을 뉴턴--로런츠 방정식이라고 부른다. 뉴턴 항은 \(m\mathbf a\)를, 로런츠 항은 자기력을 나타낸다.
+
+이 결과는 계산에 앞서 제시한 세 가지 검증 기준을 모두 만족한다. 새 항은 영이 아닌 힘을 만든다. \(\nabla\times\mathbf A=\mathbf B\)만 남으므로 힘은 게이지 불변이다. 또한 중복성이 있는 벡터 퍼텐셜 덕분에 자기력에 작용 원리를 부여할 수 있었다. 상호작용에서 \(\mathbf A\)를 \(\mathbf B\)로 바꾸면 \(\mathbf B\)의 컬이 포함된 조합이 생겨 이 법칙을 재현하지 못한다.
+
+\section{해밀토니안과 에너지의 의미}
+
+다음 질문은 같은 계를 해밀토니안으로도 기술할 수 있는가이다. 우선
+\begin{align}
+  p_x&=m\dot x+\frac{e}{c}A_x,\\
+  p_y&=m\dot y+\frac{e}{c}A_y,\\
+  p_z&=m\dot z+\frac{e}{c}A_z.
+\end{align}
+이 관계들을 역으로 풀면
+\begin{align}
+  \dot x&=\frac{1}{m}\left(p_x-\frac{e}{c}A_x\right),\\
+  \dot y&=\frac{1}{m}\left(p_y-\frac{e}{c}A_y\right),\\
+  \dot z&=\frac{1}{m}\left(p_z-\frac{e}{c}A_z\right).
+\end{align}
+르장드르 변환은
+\begin{equation}
+  H=\sum_i p_i\dot x_i-L.
+\end{equation}
+이를 대입하고 소거하면 다음을 얻는다.
+\begin{equation}
+  \boxed{
+  H(\mathbf x,\mathbf p)
+  =
+  \frac{1}{2m}
+  \left(
+    \mathbf p-\frac{e}{c}\mathbf A(\mathbf x)
+  \right)^2
+  }.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_06.png}\caption{완성된 해밀토니안 구성에서는 왼쪽의 세 정준 운동량과 오른쪽의 최소 결합 제곱항이 그대로 유지된다.}\lectureframe{00:53:05}\end{figure}
+
+정준 변수로 쓰면 이 해밀토니안은 자유 입자의 해밀토니안과 다르다. 그러나 물리적 속도로 쓰면
+\begin{equation}
+  H=\frac{\boldsymbol{\pi}^{\,2}}{2m}
+  =\frac12m\mathbf v^2.
+\end{equation}
+모순은 없다. 같은 수치적 에너지를 \((\mathbf x,\mathbf p)\)의 다른 함수로 나타낸 것이므로, 에너지가 여전히 통상적인 운동 에너지와 같더라도 해밀턴 방정식은 달라진다.
+
+장이 정적이므로 \(H\)는 보존된다. 따라서 속력은 일정하다. 로런츠 힘을 이용하면 이 사실을 더 분명히 확인할 수 있다.
+\begin{equation}
+  \frac{d}{dt}\left(\frac12mv^2\right)
+  =
+  m\mathbf v\cdot\mathbf a
+  =
+  \frac{e}{c}\,
+  \mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+자기장은 운동 방향을 바꾸지만 속도의 크기는 바꾸지 않는다. 궤도를 휘게 하지만 일을 하지는 않는다.
+
+\section{게이지를 바꾸어 푸는 균일 자기장 문제}
+
+휴식 뒤에 균일한 장
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z}.
+\end{equation}
+으로 다시 돌아가자. 목표는 익숙한 궤도를 구하는 데 그치지 않는다. 게이지를 선택하면 대칭성 계산이 얼마나 간단해지는지 보여 주는 것이다.
+
+\subsection{첫 번째 게이지: y와 z 좌표가 순환 좌표인 경우}
+
+다음을 택하자.
+\begin{equation}
+  A_x=A_z=0,
+  \qquad
+  A_y=Bx.
+\end{equation}
+그러면
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{eB}{c}x\dot y.
+\end{equation}
+좌표 \(y\)와 \(z\)는 명시적으로 나타나지 않는다. 이들은 순환 좌표이므로 해당 정준 운동량이 보존된다. \(z\)에 대해서는
+\begin{equation}
+  p_z=m\dot z,
+  \qquad
+  \dot p_z=0,
+\end{equation}
+따라서
+\begin{equation}
+  a_z=0.
+\end{equation}
+입자는 자기장 방향을 따라 등속으로 움직인다.
+
+\(y\)에 대해서는
+\begin{equation}
+  p_y=m\dot y+\frac{eB}{c}x,
+  \qquad
+  \dot p_y=0.
+\end{equation}
+그러므로
+\begin{equation}
+  m a_y+\frac{eB}{c}v_x=0,
+  \qquad
+  \boxed{m a_y=-\frac{eB}{c}v_x}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_07.png}\caption{\(A_y=Bx\)이 게이지에서 칠판에는 보존되는 \(p_z\)와 \(p_y\), 그리고 그 결과인 로런츠 힘의 \(y\) 성분이 기록되어 있다.}\lectureframe{01:03:50}\end{figure}
+
+\subsection{두 번째 게이지: x 좌표가 순환 좌표인 경우}
+
+이제 다음으로 바꾸자.
+\begin{equation}
+  A_x=-By,
+  \qquad
+  A_y=A_z=0.
+\end{equation}
+라그랑지안은 다음과 같이 된다.
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  -
+  \frac{eB}{c}y\dot x.
+\end{equation}
+이번에는 \(x\)가 순환 좌표다.
+\begin{equation}
+  p_x=m\dot x-\frac{eB}{c}y,
+  \qquad
+  \dot p_x=0.
+\end{equation}
+따라서
+\begin{equation}
+  \boxed{m a_x=\frac{eB}{c}v_y}.
+\end{equation}
+첫 번째 게이지에서 얻은 결과와 \(a_z=0\)를 함께 쓰면 정확히
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times B\hat{\mathbf z}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_08.png}\caption{게이지를 바꾸면 로런츠 힘의 두 횡방향 성분이 모두 드러난다. 각 성분은 서로 다른 게이지에서 정준 운동량 보존 법칙으로 나타났다.}\lectureframe{01:08:05}\end{figure}
+
+물리적인 병진 대칭은 처음부터 줄곧 존재했다. 게이지 선택은 그 대칭의 어떤 부분이 보통의 순환 좌표로 명시되는지만 바꾸었다. 따라서 한 게이지에서는 정준 운동량이 보존되고 다른 게이지에서는 다른 형태를 취할 수 있지만, 측정 가능한 가속도는 동일하다.
+
+\begin{classroomqa}\audiencequestion{정준 운동량의 성분은 게이지 불변인가요? 직접 물리적으로 관측할 수 있나요?}\lecturerresponse{아니다. \(\mathbf A\mapsto\mathbf A+\nabla S\)에 따라 정준 운동량은 \((e/c)\nabla S\)만큼 변한다. 역학적 운동량 \(m\mathbf v=\mathbf p-(e/c)\mathbf A\)은 게이지 불변이며 입자의 속도와 직접 연결된다. 그래도 정준 운동량은 해밀턴 방정식과 푸아송 괄호에서 사용하는 변수이므로 반드시 필요하다.}
+\end{classroomqa}
+
+\section{균일한 자기장 속 궤도}
+
+형식적인 계산은 끝났다. 이제 운동을 살펴보자. 먼저 \(v_z=0\)라고 하여 입자가 \(xy\)평면 안에 머문다고 하자. 가속도는 속도에 수직이고 크기는 일정하다.
+\begin{equation}
+  |\mathbf a|
+  =
+  \frac{|e|}{mc}vB.
+\end{equation}
+속력이 일정하고 가속도 크기도 일정하며 가속도가 항상 속도에 수직인 입자는 원운동을 한다.
+
+\(r\)가 반지름이면 구심 가속도는 \(v^2/r\)이다. 크기를 같게 놓으면
+\begin{equation}
+  m\frac{v^2}{r}
+  =
+  \frac{|e|}{c}vB,
+\end{equation}
+따라서
+\begin{equation}
+  \boxed{
+  r=\frac{mcv}{|e|B}
+  }.
+\end{equation}
+강의에서는 먼저 \(c\) 없이 식을 쓰고, 선택한 로런츠 힘 부호 관례와 맞지 않음을 확인한 뒤 이를 복원한다. \(eB\)의 부호가 회전 방향을 결정하며, 반지름 자체는 양수다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}\caption{빠져 있던 \(c\) 인자를 복원한 뒤의 원운동 궤도, 접선 방향 속도, 반지름 관계.}\lectureframe{01:16:50}\end{figure}
+
+자기장은 속력과 반지름 사이의 관계를 정하지만 원의 중심은 정하지 않는다. 원의 중심은 횡단면 어디에나 있을 수 있다. 횡방향 속력이 클수록 궤도는 커지고, 전하량이나 자기장이 클수록 궤도는 더 작아진다.
+
+\(v_z\neq0\)이면 횡방향 운동은 원운동을 유지하면서 \(z\)는 등속으로 증가한다. 이 두 운동을 합치면 자기장 방향을 축으로 하는 나선 궤도가 된다.\editorialnote{강의에서는 두 요소를 각각 유도한다. \(a_z=0\)와 횡방향 원운동이다. 이 둘을 결합하면 앞서 말한 나선 궤도가 된다.}
+
+\section{결합 항은 어디서 왔는가?}
+
+궤도를 계산한 뒤 청중은 처음으로 돌아가 질문한다. 항 \((e/c)\mathbf A\cdot\mathbf v\)는 그냥 미리 알고 있었던 것인가? 솔직한 답은 논리적으로 일관된 출발점이 여러 가지라는 것이다.
+
+\begin{classroomqa}\audiencequestion{자기장 속 입자의 라그랑지안을 이미 알고 그냥 쓴 것인가요?}\lecturerresponse{이 강의에서는 그렇다. 속도에 선형인 결합 항을 써 놓고 이를 살펴본다. 그 항에서 출발해 게이지 불변성을 발견하고, 방정식에 나타나는 회전 조합이 자기장처럼 작용한다는 점을 알아낸다. 관측된 로런츠 힘에서 출발해 작용을 찾거나, 현대적인 게이지 불변성 요구에서 시작할 수도 있다. 역사적으로는 여러 요소가 이보다 덜 직접적인 순서로 발견되었다.}
+\end{classroomqa}
+
+제안된 라그랑지안이 통상적인 해밀토니안 구성을 허용하는지 확인하는 유용한 방법도 있다. 방정식
+\begin{equation}
+  p_i=\frac{\partial L}{\partial\dot x_i}
+\end{equation}
+을 적어도 여기서 고려하는 정칙 계에서는 속도에 관해 역으로 풀 수 있어야 한다. 더 정확히 말하면 속도 헤시안
+\begin{equation}
+  \frac{\partial^2L}
+       {\partial\dot x_i\,\partial\dot x_j}
+\end{equation}
+이 특이하지 않아야 한다. 이 입자에서는 그 행렬이 단순히 \(m\delta_{ij}\)이므로 르장드르 변환이 모호하지 않다.
+
+\begin{classroomqa}\audiencequestion{제안된 라그랑지안이 타당하려면 무엇이 필요한가요?}\lecturerresponse{여기서 다루는 통상적인 역학에서는 운동 방정식이 모호하지 않아야 하고, 운동량으로부터 속도를 구한 뒤 유일한 해밀토니안을 얻을 수 있어야 한다. 특이 라그랑지안은 게이지 장 이론에 실제로 나타나지만, 그 제약 조건을 다루려면 이 강의의 범위를 넘어서는 방법이 필요하다.}
+\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{게이지 대칭 자체가 보존량을 주나요?}\lecturerresponse{주어진 배경장에서 움직이는 입자 문제만으로는 그렇지 않다. 이에 대응하는 보존 법칙을 제대로 논하려면 전자기장을 동역학 변수에 포함해야 한다. 완전한 장 이론에서는 게이지 불변성이 전하 보존과 연결되지만, 그러려면 장의 작용과 맥스웰 방정식이 필요하다.}
+\end{classroomqa}
+
+\section{고정 배경장과 맥스웰 동역학}
+
+지금까지 전자기장이 어떻게 진화하는지는 다루지 않았다. 장은 고정된 배경으로 주어졌고, 질문은 \(\mathbf E\)와 \(\mathbf B\)가 주어졌을 때 입자가 어떻게 움직이는가뿐이었다.
+
+\begin{classroomqa}\audiencequestion{이 내용은 맥스웰 방정식과 어떻게 연결되나요?}\lecturerresponse{맥스웰 방정식을 유도하려면 전자기장 자체의 작용을 더하고, 입자 궤도뿐 아니라 장도 변분해야 한다. 결합 항 \((e/c)\int\mathbf A\cdot d\mathbf x\)은 전체 작용의 일부다. 배경장을 고정해 두면 장 항은 입자에 대한 변분에 영향을 주지 않지만, 장 자체를 동역학적으로 다룰 때는 필수적이다.}
+\end{classroomqa}
+
+고전적으로는 작용 형식을 무시하고 다음을 공리로 둘 수도 있다.
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times\mathbf B.
+\end{equation}
+시험 입자 역학에서는 이 미분방정식만으로도 충분히 의미가 있다. 하지만 벡터 퍼텐셜이 직접 들어가는 양자역학에서는 라그랑지안과 해밀토니안 구조가 반드시 필요해진다.
+
+\section{자기 단극자와 가느다란 솔레노이드 그림}
+
+다음과 같은 경우를 생각해 보자.
+\begin{equation}
+  \nabla\cdot\mathbf B\neq0?
+\end{equation}
+그러면 \(\mathbf B\)는 어디서나 하나의 매끄러운 벡터 퍼텐셜로 나타낼 수 없다. 모든 컬의 발산은 사라지기 때문이다. 이 장에서 사용한 간단한 전역 구성은 성립하지 않는다.
+
+강의에서는 아주 길고 극도로 가는 막대자석이나 솔레노이드를 상상해 이 문제를 설명한다. 한쪽 끝 가까이에서 다른 쪽 끝을 한없이 멀리 보내면, 외부 장은 하나의 자기극이 만드는 장과 비슷해진다. 돌아오는 플럭스가 사라진 것은 아니다. 가느다란 관 안에 갇혀 있다. 그 관을 이상적인 것으로 만들어 관측할 수 없게 한다면, 겉보기 단극자에 붙은 끈 역할을 하게 된다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+칠판에 그린 가느다란 솔레노이드 그림. 자기력선은 겉보기 극에서 퍼져 나오고, 돌아오는 플럭스는 좁은 관 안에 갇혀 있다.\caption{
+}
+\lectureframe{01:27:35}
+\end{figure}
+
+통상적인 고전 전자기학에서는 고정된 플럭스를 단면적이 사라지는 곳에 몰아넣으면 장의 세기와 장 에너지가 커진다. 강의에서는 무한 에너지라는 과장된 답을 일부러 사용해, 현실적인 자기 단극자라면 보통의 솔레노이드를 계속 가늘게 만드는 것만으로는 안 되고 새로운 물리가 필요하다는 점을 강조한다. 양자 이론에서는 적절히 양자화된 플럭스 관이 핵 바깥에서 관측 불가능해질 수 있다. 이것이 디랙 끈 구성의 발상이다. 다만 완전한 단극자 이론은 이 강의의 범위를 넘어선다.
+
+\begin{classroomqa}\audiencequestion{점 입자도 자기 모멘트를 가질 수 있나요? 그것이 단극자인가요?}\lecturerresponse{아니다. 자기 모멘트는 쌍극자이므로 서로 반대인 두 극의 성격을 갖는다. 단극자라면 순자기전하를 하나 갖는다. 보통 자석을 잘라도 극 하나만 분리되지는 않는다. 각 조각에는 북극과 남극이 생긴다.}
+\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{두 끝을 분리하기 어렵다는 점은 쿼크 가둠과 비슷한가요?}\lecturerresponse{유용한 비유다. 갇힌 쿼크를 서로 떼어 놓아도 통상적인 관측에서는 고립된 쿼크를 얻지 못한다. 연결된 장이 새로운 결합 물체를 만들어 내기 때문이다. 여기서 두 메커니즘을 동일시하는 것은 아니지만, 끝점이 피할 수 없는 플럭스 구조로 이어져 있다는 그림은 비슷하다.}
+\end{classroomqa}
+
+강의의 결론은 신중하다. 유도에 사용한 통상적인 고전 이론에는 자기 단극자가 포함되지 않지만, 여러 고에너지 이론에는 단극자가 등장한다. 기본 입자로 존재한다면 그 에너지 규모는 이 강의실에서 다루는 역학의 범위를 훨씬 넘어설 것으로 예상된다.
+
+\section{해밀턴의 다른 대수와 미처 다루지 못한 주제}
+
+마지막 청중 질문은 해밀턴의 사원수에 관한 것이다. 사원수는 해밀토니안 역학과는 역사적으로 별개의 주제다. 해밀턴은 복소수가 평면 회전에서 하는 역할과 비슷한 역할을 3차원 회전에 대해 할 수 있는 대수를 찾고자 했다. 그 결과는 세 허수 단위 \(i,j,k\)를 사용하며,
+\begin{equation}
+  i^2=j^2=k^2=ijk=-1,
+\end{equation}
+예를 들어
+\begin{equation}
+  ij=k,
+  \qquad
+  ji=-k.
+\end{equation}
+를 만족한다. 단위 사원수는 3차원 회전을 효율적으로 나타낸다. 양자역학에서는 적절한 보통의 허수 단위 인자를 곁들여 같은 대수 구조를 파울리 행렬로 나타낼 수 있다. 이 연결은 실제로 존재하지만, 이 강의에서 다룬 정준 운동량이나 해밀토니안의 기원은 아니다.
+
+마지막 주제는 혼돈이다. 이를 전개할 시간은 남아 있지 않다. 강의는 이미 세운 방법을 짚으며 끝난다. 동역학은 위상 공간에서 궤도를 따라 일어나는 운동이며, 이 표현이 규칙적 거동과 혼돈 거동을 연구하는 출발점이다. 고전역학의 형식적 구조는 청중이 그 지점부터 계속 탐구할 수 있을 만큼 완성되었다.

@@ -1,0 +1,570 @@
+\chapter{자기력, 벡터 퍼텐셜, 작용 원리}
+
+\lectureoverview{정전기력은 익숙한 보존력의 형태를 따르지만, 자기력은 속도에 의존합니다. 이를 라그랑주 역학에 포함하기 위해 먼저 필요한 벡터 미적분을 살펴보고, 자기장이 원천이 없다는 성질을 이용해 벡터 퍼텐셜을 도입한 뒤, 그 게이지 자유도를 검토하고 작용에 들어가는 자기 항을 구성합니다.}
+
+\section{새로운 종류의 힘}
+
+앞서 각운동량, 자이로스코프, 푸아송 괄호를 논의하면서 몇 가지 주제가 한데 모였습니다. 특히 자기장 속에서 회전하는 대전 물체는 자이로스코프와 매우 비슷하게 세차 운동을 합니다. 이제 그 유비에서 벗어나 개별 대전 입자의 운동을 살펴보겠습니다.
+
+정전기력에는 새로운 역학이 필요하지 않습니다. \(U(\mathbf x)\)이 퍼텐셜 에너지라면,
+\begin{equation}
+  \mathbf F=-\nabla U(\mathbf x),
+\end{equation}
+익숙한 논증을 통해 운동 에너지와 퍼텐셜 에너지의 합이 보존됨을 알 수 있습니다. 정전기 퍼텐셜 \(V(\mathbf x)\) 속에서 전하 \(e\)를 띤 입자의 경우,
+\begin{equation}
+  U(\mathbf x)=eV(\mathbf x),
+  \qquad
+  \mathbf F_{\mathrm{el}}=-e\nabla V.
+\end{equation}
+자기력은 형태가 다릅니다. 입자의 속도에 의존하므로 보통의 퍼텐셜 에너지를 하나 더하는 것만으로는 도입할 수 없습니다. 그럼에도 자기력은 작용 원리에서 유도되며 라그랑지안과 해밀토니안으로 기술할 수 있습니다. 이를 위해서는 벡터 미적분을 짧지만 꼭 필요한 중간 과정으로 살펴봐야 합니다.
+
+\section{장과 국소 연산}
+
+\subsection{장이 나타내는 것}
+
+장은 공간의 모든 점에, 일반적으로는 모든 시각에 물리량을 대응시킵니다. 온도와 압력은 스칼라장이고, 바람의 속도는 벡터장입니다. 전기장과 자기장도 벡터장입니다. 다른 이론에는 미시적 규모에서도 스칼라장이 등장하고, 중력은 텐서장으로 기술됩니다. 여기서는 시간에 따른 변화는 생략하고 장을 \(\mathbf x\)의 함수로 나타내겠습니다.
+
+장에서 실질적으로 중요한 점은 국소성입니다. 어떤 영역이 가방 안에 가려져 있다고 상상해 봅시다. 그 영역의 전기장을 측정하려면 작은 시험 전하를 그곳에 놓고 가속도를 관측하면 됩니다. 힘은 전하가 놓인 곳의 장으로 정해지며, 멀리 떨어진 모든 원천에 따로 문의해야 하는 것이 아닙니다. 자기장과 움직이는 시험 전하에도 같은 설명이 적용됩니다. 뒤에서 벡터 퍼텐셜을 다룰 때 이 단순한 그림에 단서를 붙이겠지만, 여기서 출발하는 것이 적절합니다.
+
+\subsection{미분 연산자}
+
+미분하면 장에서 다른 장을 얻습니다. 세 공간 미분을 다음과 같이 모아 씁니다.
+\begin{equation}
+  \nabla
+  =
+  \left(
+    \frac{\partial}{\partial x},
+    \frac{\partial}{\partial y},
+    \frac{\partial}{\partial z}
+  \right).
+\end{equation}
+이 기호는 \emph{델} 또는 \emph{나블라}라고 읽습니다. 거꾸로 된 삼각형 모양은 기억하기 쉽지만, 진짜 의미는 성분이 미분 연산자인 벡터처럼 형식적으로 작용한다는 데 있습니다.
+
+이는 보통의 3차원 물리 공간이지, 위상 공간도 아니고 다입자 배치 공간도 아닙니다. 더구나 \(\nabla\)는 그 자체로 놓일 수 있는 벡터장이 아닙니다. 반드시 어떤 대상에 작용해야 합니다. \(T(\mathbf x)\)가 스칼라 온도장이라면,
+\begin{equation}
+  \nabla T
+  =
+  \left(
+    \frac{\partial T}{\partial x},
+    \frac{\partial T}{\partial y},
+    \frac{\partial T}{\partial z}
+  \right)
+\end{equation}
+는 그 기울기, 즉 진짜 벡터장입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_01.png}
+\caption{\(\nabla\)를 공간 미분 연산자의 벡터로 소개하고 스칼라장 \(T(\mathbf x)\)에 적용하기 시작한다.}
+\lectureframe{00:11:30}
+\end{figure}
+
+스칼라는 단지 성분 하나로 적는 양이 아닙니다. 좌표축의 방향과 무관하게 값이 정해지는 양입니다. 온도가 대표적인 예입니다. 벡터장 \(\mathbf E\)가 주어졌을 때 국소적인 표현 \(\mathbf E\cdot\mathbf E\)도 스칼라입니다. 반면 장을 적분하여 퍼텐셜을 구성하는 일은 비국소 연산입니다. 경로를 따라 여러 지점의 값을 사용합니다.
+
+\subsection{발산}
+
+벡터장 \(\mathbf A=(A_x,A_y,A_z)\)에 대해 스칼라
+\begin{equation}
+  \nabla\cdot\mathbf A
+  =
+  \frac{\partial A_x}{\partial x}
+  +\frac{\partial A_y}{\partial y}
+  +\frac{\partial A_z}{\partial z}
+\end{equation}
+를 발산이라고 합니다. 유체의 관점에서 양의 발산은 국소적으로 바깥쪽으로 흘러나가려는 경향을, 음의 발산은 안쪽으로 모여들려는 경향을 나타냅니다. 유체의 원천에서는 발산이 양수이고, 흡수원에서는 음수입니다. 이는 정성적인 그림이지만, 자기장에 원천이 없다는 성질을 분명하게 보여 줄 것입니다.
+
+\section{외적, 엡실론 기호, 회전}
+
+\subsection{성분으로 나타낸 외적}
+
+두 벡터 \(\mathbf V\)와 \(\mathbf A\)의 외적 성분 하나는 다음과 같습니다.
+\begin{equation}
+  (\mathbf V\times\mathbf A)_x
+  =
+  V_yA_z-V_zA_y.
+\end{equation}
+나머지 두 성분은 \(x\to y\to z\to x\)의 순환에 따라 얻습니다. \(x,y,z\) 대신 \(1,2,3\) 지표를 쓰면 편리합니다. 크로네커 기호는
+\begin{equation}
+  \delta_{ij}
+  =
+  \begin{cases}
+    1,&i=j,\\
+    0,&i\ne j,
+  \end{cases}
+\end{equation}
+이고 레비--치비타 기호는 다음과 같이 정의됩니다.
+\begin{equation}
+  \epsilon_{123}=\epsilon_{231}=\epsilon_{312}=1,
+  \qquad
+  \epsilon_{132}=\epsilon_{321}=\epsilon_{213}=-1,
+\end{equation}
+두 지표가 같으면 \(\epsilon_{ijk}=0\)입니다. 세 시간 시계 방향의 순환 순서는 양의 부호를, 그 반대 방향은 음의 부호를 줍니다. 두 지표를 맞바꾸면 부호가 바뀌므로 \(\epsilon_{ijk}\)는 완전 반대칭입니다.
+
+또한 합산 규약을 사용합니다. 항 안에서 반복되는 지표는 \(1\)부터 \(3\)까지 합산합니다. 그러면 외적의 세 성분 방정식은 다음과 같이 됩니다.
+\begin{equation}
+  (\mathbf V\times\mathbf A)_i
+  =
+  \epsilon_{ijk}V_jA_k.
+\end{equation}
+예를 들어 \(i=1\)로 놓으면 \((j,k)=(2,3)\)와 \((3,2)\)만 남습니다.
+\begin{equation}
+  (\mathbf V\times\mathbf A)_1
+  =
+  \epsilon_{123}V_2A_3
+  +\epsilon_{132}V_3A_2
+  =
+  V_2A_3-V_3A_2.
+\end{equation}
+따라서 간결한 표기에는 익숙한 성분 규칙이 그대로 담겨 있습니다.
+
+\subsection{반대칭 행렬로 나타낸 벡터}
+
+두 번째 표현은 다음과 같습니다.
+\begin{equation}
+  V_iA_j-V_jA_i
+  =
+  \epsilon_{ijk}(\mathbf V\times\mathbf A)_k.
+\end{equation}
+왼쪽은 두 개의 첨자를 가지며 \(i\leftrightarrow j\)에 대해 반대칭입니다. 행렬로 쓰면 다음과 같은 형태입니다.
+\begin{equation}
+  M_{ij}
+  =
+  \begin{pmatrix}
+    0&M_{12}&M_{13}\\
+    -M_{12}&0&M_{23}\\
+    -M_{13}&-M_{23}&0
+  \end{pmatrix}.
+\end{equation}
+대각 성분은 모두 사라지고, 아래쪽 삼각 부분은 위쪽 삼각 부분에 의해 정해집니다. 따라서 독립적인 성분은 세 개입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_02.png}
+\caption{외적의 한 성분과 독립적인 성분을 세기 위한 도식적인 \(3\times3\) 반대칭 배열. 칸 안의 표시는 기억을 돕기 위한 것이며 별도의 기호가 아니다.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{외적이나 이를 다른 벡터와 동일시하는 것이 3차원 밖에서도 성립하나요?}
+\lecturerresponse{두 지표를 가진 반대칭 대상은 어떤 차원에서도 정의되지만, 이를 벡터와 동일시하는 것은 3차원에만 특별히 성립합니다. 3차원 벡터의 성분 수는 세 개이고, 반대칭 \(3\times3\) 행렬의 독립 성분 수도 세 개입니다. 4차원에서는 각각 네 개와 여섯 개인데, \(4(4-1)/2=6\)이기 때문입니다. 반대칭 대상은 여전히 존재하며 자연스럽게 2형식으로 볼 수 있지만, 또 하나의 4-벡터는 아닙니다.}
+\end{classroomqa}
+
+\subsection{회전}
+
+\(\mathbf V\)를 \(\nabla\)로 바꾸면 회전을 정의합니다.
+\begin{equation}
+  (\nabla\times\mathbf A)_i
+  =
+  \epsilon_{ijk}\frac{\partial A_k}{\partial x_j}.
+\end{equation}
+일반적인 성분으로 쓰면 다음과 같습니다.
+\begin{align}
+  (\nabla\times\mathbf A)_x
+  &=
+  \frac{\partial A_z}{\partial y}
+  -\frac{\partial A_y}{\partial z},\\
+  (\nabla\times\mathbf A)_y
+  &=
+  \frac{\partial A_x}{\partial z}
+  -\frac{\partial A_z}{\partial x},\\
+  (\nabla\times\mathbf A)_z
+  &=
+  \frac{\partial A_y}{\partial x}
+  -\frac{\partial A_x}{\partial y}.
+\end{align}
+발산이 국소적으로 퍼져 나가는 정도를 측정한다면, 회전은 국소적인 순환을 측정합니다. 축을 중심으로 회전하는 유체는 그 축 방향으로 회전을 가집니다. 이 그림은 특히 속도장에서 선명하게 드러나지만, 이 정의는 모든 벡터장에 적용됩니다.
+
+\section{두 가지 구조적 항등식}
+
+수학적 전개의 대부분은 다음 두 사실로 해결됩니다.
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0,
+  \qquad
+  \nabla\times(\nabla s)=0.
+\end{equation}
+첫 번째는 이계 도함수는 대칭인 반면 \(\epsilon_{ijk}\)는 반대칭이라는 점에서 나옵니다.
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)
+  =
+  \epsilon_{ijk}\partial_i\partial_j A_k
+  =0.
+\end{equation}
+두 번째는 혼합 편미분의 순서를 바꿔도 같다는 데서 나옵니다.
+\begin{equation}
+  \bigl[\nabla\times(\nabla s)\bigr]_i
+  =
+  \epsilon_{ijk}\partial_j\partial_k s
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_03.png}
+\caption{칠판에 적힌 첫 번째 항등식: 모든 회전의 발산은 사라집니다.}
+\lectureframe{00:38:26}
+\end{figure}
+
+이 두 방향은 간단하므로, 강의에서 예고한 숙제나 쪽지 시험에 적합합니다. 역방향 명제에는 좀 더 주의가 필요합니다. 국소적으로, 또는 적절하게 단일연결이거나 수축 가능한 영역 전체에서,
+\begin{align}
+  \nabla\cdot\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla\times\mathbf A,\\
+  \nabla\times\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla s.
+\end{align}
+영역에 대한 단서를 붙이지 않으면 구멍이나 다른 전역 위상적 특성이 이러한 결론을 막을 수 있습니다. 여기서는 아래에서 필요한 바로 그 국소적 형태를 사용합니다.
+
+\section{자기장은 왜 회전으로 나타내는가}
+
+\subsection{관측된 자기 원천은 없다}
+
+자기장 \(\mathbf B\)은 대전 입자와 전류에 미치는 영향으로 조작적으로 정의됩니다. 자기 홀극이 없는 보통의 전자기학에서는,
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+이는 발산이 전하 밀도에 비례하는 전기장과 다릅니다. 전하는 전기 선속의 원천이자 흡수원입니다. 자기 선속의 고립된 원천이나 흡수원은 관측된 적이 없습니다.
+
+자기 홀극이 있다면 이 방정식은 달라질 것입니다. 통일장 이론은 이런 물체가 존재할 것이라는 이론적 근거를 제시하는 경우가 많지만, 실제로 존재하더라도 현재 가능한 실험에서 만들어 내기에는 질량이 너무 클 수 있습니다. 따라서 여기서는 자기 전하 밀도가 0인 이론을 다룹니다.
+
+\begin{classroomqa}
+\audiencequestion{자기 홀극이란 무엇인가요? 보통 자석에도 이미 북극과 남극이 있잖아요.}
+\lecturerresponse{고립된 홀극은 전하와 비슷하게 자기장의 진짜 원천 또는 흡수원입니다. 보통의 막대자석은 다릅니다. 북극 근처에서 나오는 자기력선은 공간을 지나 남극으로 되돌아오고, 자석 물질 내부를 계속 이어서 통과합니다. 외부에서 원천과 흡수원처럼 보이는 것은 숨겨진 관을 통해 흐르는 유체처럼 서로 이어져 있습니다. 자기 선속이 순생성되거나 소멸하지 않습니다.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_04.png}
+\caption{그림은 북극과 남극이 원천처럼 보이는 모습을 대비하면서, 자석 안쪽에서 자기력선을 이어 자기 선속이 그곳에서 시작하거나 끝나지 않음을 강조한다.}
+\lectureframe{00:44:56}
+\end{figure}
+
+\(\mathbf B\)의 발산이 없으므로, 역정리를 이용해 적어도 국소적으로는 다음과 같이 쓸 수 있습니다.
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+장 \(\mathbf A\)를 벡터 퍼텐셜이라고 합니다. 처음에는 측정 가능한 장 \(\mathbf B\)을 불필요하게 다시 표현한 것처럼 보일 수 있습니다. 벡터 퍼텐셜의 목적은 작용을 구성할 때 비로소 분명해집니다.
+
+\subsection{벡터 퍼텐셜은 유일하지 않다}
+
+\(\mathbf A\)가 벡터 퍼텐셜이라면,
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla s
+\end{equation}
+도 다른 벡터 퍼텐셜입니다. 왜냐하면
+\begin{equation}
+  \nabla\times\mathbf A'
+  =
+  \nabla\times\mathbf A+\nabla\times(\nabla s)
+  =
+  \mathbf B.
+\end{equation}
+이 치환을 \emph{게이지 변환}이라고 합니다. 자기장은 게이지 불변입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_05.png}
+\caption{정의 관계 \(\mathbf B=\nabla\times\mathbf A\)와 게이지 변환 \(\mathbf A'=\mathbf A+\nabla s\)가 칠판에 함께 나타나 있다.}
+\lectureframe{01:03:01}
+\end{figure}
+
+\emph{게이지}라고 발음하며, \emph{과슈}나 \emph{게이지}--라고 읽지 않습니다. 강의에서는 이를 과장되게 엄격한 태도로 바로잡습니다. 이 단어의 어원은 역사적입니다. 서로 다른 위치의 길이 표준을 비교하는 방식으로 이 자유도를 설명하려던 초기 시도에서 비롯되었습니다. 그 해석은 살아남지 못했지만 이름은 남았습니다.
+
+\begin{classroomqa}
+\audiencequestion{이 논의에서 게이지 변환이란 구체적으로 \(\mathbf A\mapsto\mathbf A+\nabla s\)를 뜻하나요?}
+\lecturerresponse{그렇습니다. 여기서 사용하는 전자기 변환은 그것뿐입니다. 양--밀스 이론과 다른 장 이론의 게이지 변환은 같은 개념을 일반화하지만, 전자기학에는 스칼라의 기울기를 더하는 것만 필요합니다.}
+\end{classroomqa}
+
+유일하지 않다는 점은 직접 측정할 수 있는 것이 무엇인지도 분명히 해 줍니다. 작은 영역에 있는 대전 입자는 그곳의 국소적인 \(\mathbf B\)에 반응하며, 게이지 변환으로 서로 연결된 모든 벡터 퍼텐셜은 그곳에서 같은 힘을 예측합니다. 이 고전적 방식의 국소 실험으로 \(\mathbf A\)의 유일한 값을 정할 수는 없습니다.
+
+\begin{classroomqa}
+\audiencequestion{기울기를 더하는 것이 비유일성을 완전히 설명하나요?}
+\lecturerresponse{단순한 영역에서는 국소적으로 그렇습니다. \(\nabla\times\mathbf A'=\nabla\times\mathbf A\)이면 \(\nabla\times(\mathbf A'-\mathbf A)=0\)이므로, 그 차이는 기울기입니다. 전역적으로는 다중 연결 영역에 추가적인 미묘함이 있을 수 있습니다. 상수 벡터를 더하는 경우도 이미 여기에 포함됩니다. 상수 벡터는 선형 스칼라 함수의 기울기이기 때문입니다. \(s\) 자체에 상수를 더해도 기울기가 사라지므로 아무런 변화가 없습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{게이지 자유도에 근본적인 물리적 이유가 있다면 무엇인가요?}
+\lecturerresponse{강의에서는 그 더 깊은 해석을 뒤로 미룹니다. 우선은 이 자유도를 다루며 작용에 어떻게 들어가는지 살펴보는 것이 유용합니다. 형식에 익숙해지고 나면 게이지 기술이 왜 필수적인지 그 이유를 더 쉽게 알아볼 수 있습니다.}
+\end{classroomqa}
+
+\section{하나의 자기장, 여러 벡터 퍼텐셜}
+
+가능한 가장 간단한 예를 생각해 봅시다.
+\begin{equation}
+  \mathbf B=b\,\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=b,
+\end{equation}
+여기서 \(b\)는 상수입니다. 벡터 퍼텐셜 하나는 다음과 같습니다.
+\begin{equation}
+  \mathbf A^{(1)}=(0,bx,0).
+\end{equation}
+실제로,
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -\frac{\partial A_x^{(1)}}{\partial y}
+  =b,
+\end{equation}
+이며 나머지 회전 성분은 사라집니다.
+
+이 선택은 물리적 장이 \(x\)-\(y\) 평면에서 회전 대칭인데도 \(y\) 방향을 특별하게 취급하는 것처럼 보입니다. 임의성을 분명하게 보여 주는 두 번째 선택은 다음과 같습니다.
+\begin{equation}
+  \mathbf A^{(2)}=(-by,0,0).
+\end{equation}
+이 선택은 다음을 줍니다.
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-by)}{\partial y}
+  =b.
+\end{equation}
+두 퍼텐셜의 차이는
+\begin{equation}
+  \mathbf A^{(2)}-\mathbf A^{(1)}
+  =
+  (-by,-bx,0)
+  =
+  \nabla(-bxy).
+\end{equation}
+이므로 둘은 게이지 동등합니다. 회전 대칭인 선택,
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \frac12\,\mathbf B\times\mathbf r
+  =
+  \left(-\frac{by}{2},\frac{bx}{2},0\right),
+\end{equation}
+도 같은 계열에 속합니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_06.png}
+\caption{칠판의 두 패널은 선택 \(A_y=bx\)와 \(A_x=-by\)를 보여 주며, 둘 다 같은 균일한 장 \(B_z=b\)를 만든다.}
+\lectureframe{01:07:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{이건 자기장을 만들기 위해 전류가 흐르는 코일을 서로 다르게 배치하는 것과 같은 모호성인가요?}
+\lecturerresponse{아닙니다. 전류의 배치가 다르면 물리적 원천도 다르며, 어떤 영역에서는 자기장이 같더라도 다른 곳의 자기장은 다를 수 있습니다. 게이지 자유도는 자기장을 모든 곳에서 지정한 뒤에도 남습니다. 하나의 물리적 \(\mathbf B\)에 벡터 퍼텐셜은 여럿 존재합니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{기울기를 더하는 것은 꼬임을 더하지 않으면서 늘이거나 압축하는 것으로 그려 볼 수 있나요?}
+\lecturerresponse{그것은 유용한 기하학적 직관입니다. 회전은 국소적인 비틀림 성분을 검출하고, 순수한 기울기의 회전은 0입니다. 이 명제는 정확히 \(\nabla\times\nabla s=0\)에 담겨 있습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\mathbf A\)의 방향과 \(\mathbf B\)의 방향 사이에 일정한 관계가 있나요?}
+\lecturerresponse{게이지와 무관하게 성립하는 관계는 없습니다. 위의 예에서는 우연히 \(A_z=0\)이지만, 미분값을 바꾸지 않고 상수 \(A_z\)를 더할 수 있습니다. 그러면 \(\mathbf A\)는 더 이상 \(\mathbf B\)에 수직이지 않습니다. 이 고전적 논의에서 물리적 의미가 변하지 않는 것은 회전뿐입니다.}
+\end{classroomqa}
+
+정전기학에도 조금 비슷한 점이 있습니다. \(\mathbf E=-\nabla V\)이므로 \(V\)를 \(V+C\)로 바꾸어도 \(\mathbf E\)는 달라지지 않습니다. \emph{벡터 퍼텐셜}이라는 용어는 보통의 스칼라 퍼텐셜에서도 퍼텐셜을 바꾸어 물리적 장을 그대로 유지할 수 있다는 자유도에 부분적으로 착안해 붙였습니다.
+
+\section{로런츠 힘}
+
+이제 작용 원리로 재현해야 할 힘의 법칙을 쓸 수 있습니다. 여기서 사용하는 규약에서는,
+\begin{equation}
+  \boxed{
+  \mathbf F
+  =
+  e\left(
+    \mathbf E+\frac{\mathbf v}{c}\times\mathbf B
+  \right)
+  =
+  -e\nabla V+\frac{e}{c}\mathbf v\times\mathbf B
+  }.
+\end{equation}
+기호 \(e\)는 입자의 전하이고, \(\mathbf v=\dot{\mathbf x}\)는 속도이며, \(V\)는 스칼라 퍼텐셜입니다. 표기 때문에 \(V\)와 \(\mathbf v\)를 혼동해서는 안 됩니다. SI 단위로는 \(V\)를 볼트로, \(e\)를 쿨롱으로 측정합니다. 식에 표시된 \(1/c\)는 강의에서 사용한 단위 규약에 따른 것입니다. 물리적 구조는 단위와 무관합니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_07.png}
+\caption{로런츠 힘의 전기 항과 자기 항이 함께 표시되어 있다. 자기 기여분은 \(\mathbf v\times\mathbf B\)에 비례한다.}
+\lectureframe{00:58:54}
+\end{figure}
+
+전기 항은 보존력이며 이미 익숙합니다. 자기 항은 새롭습니다. 정지한 입자에서는 이 항이 사라지고, \(\mathbf v\)와 \(\mathbf B\) 모두에 수직입니다. 따라서,
+\begin{equation}
+  \mathbf v\cdot\mathbf F_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+정적인 자기장은 입자의 궤적을 굽히지만 입자에 일을 하지는 않습니다. 이는 속도의 반대 방향으로 작용하여 운동 에너지를 빼앗는 점성 항력과 다릅니다.
+
+계수 \(v/c\)는 이 규약에서 장의 크기가 비슷할 때 느리게 움직이는 입자에 대한 자기 효과가 전기 효과보다 흔히 작다는 점도 나타냅니다. 전자는 질량이 작아 큰 속도에 도달할 수 있으므로 자기 편향은 여전히 쉽게 관측할 수 있습니다.
+
+역사적으로는 개별 전하에 작용하는 힘이 분리되어 확인되기 전에 전류가 흐르는 도선에 작용하는 힘이 알려졌습니다. 로런츠는 움직이는 각 전하에 속도 의존 항을 적용하면 도선에 작용하는 힘을 이해할 수 있음을 알아냈습니다. 전기 항과 자기 항을 모두 포함하는 식은 이제 로런츠 힘 법칙이라고 부르지만, 여기서 새롭게 다루는 부분은 자기 항입니다.
+
+\begin{classroomqa}
+\audiencequestion{전체 식에 별도의 기호가 있나요, 아니면 자기 항만 로런츠 힘인가요?}
+\lecturerresponse{전체 식은 그저 힘 \(\mathbf F=m\mathbf a\)이며, 흔히 로런츠 힘이라고 부릅니다. 역사적으로 로런츠와 가장 직접적으로 관련된 부분은 자기 항입니다. 전기장과 자기장은 상대론적으로 깊이 연결되어 있지만, 여기서 다루는 역학 문제에는 그 통일성이 필요하지 않습니다.}
+\end{classroomqa}
+
+\subsection{코리올리 힘과의 유비}
+
+고정된 벡터와 외적을 이루는 속도는 앞서 살펴본 적이 있습니다. 각속도 \(\boldsymbol\omega\)로 회전하는 좌표계에서 코리올리 힘은 다음과 같이 쓸 수 있습니다.
+\begin{equation}
+  \mathbf F_{\mathrm{Cor}}
+  =
+  2m\,\mathbf v\times\boldsymbol\omega.
+\end{equation}
+이는 자기력과 대수적으로 같은 형태입니다.
+\begin{equation}
+  2m\boldsymbol\omega
+  \quad\longleftrightarrow\quad
+  \frac{e}{c}\mathbf B.
+\end{equation}
+따라서 평면에 수직인 균일한 자기장은 회전 좌표계가 움직이는 물체의 운동 방향을 바꾸는 것과 거의 같은 방식으로 대전 입자의 궤적을 굽힙니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_08.png}
+\caption{로런츠 힘은 좌변에 남아 있고, 칠판에는 이에 대응하는 코리올리 힘의 형태 \(2m\,\mathbf v\times\boldsymbol\omega\)가 추가되어 있다.}
+\lectureframe{01:02:08}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{코리올리 힘을 가상력이라고 합니다. 속도에 의존한다는 이유로 자기력보다 덜 실재하는 힘인가요?}
+\lecturerresponse{속도 의존성은 쟁점이 아닙니다. 회전하는 플랫폼 위의 사람은 움직이는 물체를 붙들고 코리올리 힘을 느낄 수 있습니다. 관성계에서는 사라지기 때문에 가상력이라고 부릅니다. 회전 좌표계는 바로 이런 관성항이 존재하는 것으로 정의됩니다. 무엇이 \emph{실재하는지}를 따지는 것보다 어떤 좌표계와 방정식을 사용하는지 명시하는 편이 흔히 더 유용합니다.}
+\end{classroomqa}
+
+이 유비를 간단한 사고 실험으로 더 밀고 나갈 수 있습니다. 회전 플랫폼에서 적절한 정전기장을 설정하면 선택한 입자에 대한 원심항을 상쇄할 수 있고, 적절한 균일 자기장을 설정하면 코리올리 항을 상쇄할 수 있습니다. 이 상쇄는 선택한 전하 대 질량비에서만 성립합니다. 전기력과 자기력은 \(e\)에 비례하는 반면 관성력은 \(m\)에 비례하기 때문입니다. 전자에 맞춰 조정한 장의 배치는 \(e/m\)가 다른 입자에 대해서는 같은 항을 상쇄하지 못합니다.
+
+\section{대전 입자의 작용 구성}
+
+\subsection{고정된 끝점에서의 정지 작용}
+
+이제 핵심 질문을 던져 보겠습니다. 로런츠 힘을 작용 원리에서 유도할 수 있을까요? 가능합니다. 다만 벡터 퍼텐셜이 반드시 필요합니다. 입자와 \(\mathbf B\)만을 사용해 국소적으로 구성한 라그랑지안으로는 필요한 자기력을 얻을 수 없습니다. 이 부정적 명제를 증명하는 대신, 성공하는 작용을 직접 구성하겠습니다.
+
+궤적 \(\mathbf x(t)\)에 대해 다음과 같이 씁니다.
+\begin{equation}
+  S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L(\mathbf x,\dot{\mathbf x},t)\,dt.
+\end{equation}
+강의에서는 작용과 벡터 퍼텐셜에 같은 손글씨 기호를 쓰지만, 여기서는 작용에 \(S\)를, 벡터 퍼텐셜에 \(\mathbf A\)를 사용합니다. 물리적 경로에서는 양 끝점을 고정한 변분에 대해 \(S\)가 정지합니다. 전통적인 표현인 \emph{최소 작용}은 편리하지만, 극값이 반드시 최소일 필요는 없으므로 정지 작용이 더 정확합니다.
+
+끝점을 고정하는 것이 중요합니다. 경로의 양 끝을 칠판에 못으로 고정하고 가운데 부분을 흔드는 모습을 상상해도 좋습니다. 이는 보통 역학에서의 궤적이지 끈 이론의 대상이 아닙니다. 끈의 이미지는 변분을 시각화하는 방법일 뿐입니다.
+
+\subsection{라그랑지안에는 무엇이 들어갈 수 있는가?}
+
+모든 장을 끄면 라그랑지안은 운동 에너지입니다.
+\begin{equation}
+  L_0=\frac{m}{2}\dot{\mathbf x}^{\,2}.
+\end{equation}
+정전기 항도 표준적인 형태입니다.
+\begin{equation}
+  L_{\mathrm{el}}=-eV(\mathbf x).
+\end{equation}
+자기 항은 몇 가지 조건을 만족해야 합니다.
+\begin{enumerate}
+  \item 전하 \(e\)에 비례해야 한다.
+  \item 강의의 단위에서 계수 \(1/c\)를 포함해야 한다.
+  \item 속도를 포함해야 한다.
+  \item 회전 스칼라여야 한다.
+\end{enumerate}
+
+매력적으로 보이는 시도 \(\mathbf B\cdot\dot{\mathbf x}\)는 스칼라이며 속도도 포함하지만, 운동 방정식이 틀리게 나옵니다. 올바른 항에는 벡터 퍼텐셜이 들어갑니다.
+\begin{equation}
+  L_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  =
+  \frac{e}{c}A_i(\mathbf x)\dot x_i.
+\end{equation}
+따라서 시간에 무관한 전자기 라그랑지안 전체는 다음과 같습니다.
+\begin{equation}
+  \boxed{
+  L
+  =
+  \frac{m}{2}\dot{\mathbf x}^{\,2}
+  +\frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  -eV(\mathbf x)
+  }.
+\end{equation}
+강의 10에서는 오일러--라그랑주 방정식을 적용해 이 식이 로런츠 힘을 실제로 만들어 냄을 명시적으로 보이겠습니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_09.png}
+\caption{작용의 완성된 칠판 구성: 자유 입자의 운동 항에 \((e/c)A_i\dot x_i\)를 더한다.}
+\lectureframe{01:26:36}
+\end{figure}
+
+\section{게이지 변환은 끝점만 바꾼다}
+
+작용에서 자기 기여분은 다음과 같습니다.
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}
+  \int_{t_i}^{t_f}A_i(\mathbf x)\dot x_i\,dt.
+\end{equation}
+\(\dot x_i\,dt=dx_i\)이므로 입자의 경로 \(\gamma\)를 따라 하는 선적분입니다.
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}\int_\gamma A_i\,dx_i
+  =
+  \frac{e}{c}\int_\gamma\mathbf A\cdot d\mathbf x.
+\end{equation}
+경로를 짧은 구간들로 나누고 각 구간을 따라가는 \(\mathbf A\)의 성분에 구간 길이를 곱한 뒤 모두 더합니다. 이것이 이 적분의 기하학적 의미입니다.
+
+이제 게이지 변환을 적용합니다.
+\begin{equation}
+  A_i\longmapsto A_i+\partial_i s.
+\end{equation}
+작용은 다음만큼 변합니다.
+\begin{align}
+  \Delta S
+  &=
+  \frac{e}{c}\int_\gamma \partial_i s\,dx_i\\
+  &=
+  \frac{e}{c}\int_\gamma ds\\
+  &=
+  \frac{e}{c}
+  \left[
+    s(\mathbf x_f)-s(\mathbf x_i)
+  \right].
+\end{align}
+각 미소 구간은 한쪽 끝의 \(s\) 값에서 다른 쪽 끝의 값을 뺀 만큼 기여합니다. 모두 더하면 내부 항들이 망원 합처럼 상쇄되어 양 끝점의 항만 남습니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_10.png}
+\caption{선적분, 경로를 작은 구간들로 나누는 모습, 끝점에만 의존하는 결과 \(s(\mathbf x_f)-s(\mathbf x_i)\).}
+\lectureframe{01:32:31}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{게이지 변환으로 작용이 바뀐다면 궤적은 왜 바뀌지 않나요?}
+\lecturerresponse{작용 원리는 처음점과 끝점이 고정된 경로들을 비교합니다. 더해지는 양은 그 끝점에만 의존하므로 비교하는 모든 경로에서 같은 값을 가집니다. 따라서 그 변분은 0입니다. 수치로서의 작용은 엄밀히 불변이 아니지만 오일러--라그랑주 방정식과 물리적 궤적은 게이지 불변입니다.}
+\end{classroomqa}
+
+이 구분이 이 강의의 핵심 개념적 결과입니다.
+\begin{equation}
+  \begin{aligned}
+    S&\ \hbox{may shift by an endpoint term},\\
+    \delta S&\ \hbox{and the equations of motion do not}.
+  \end{aligned}
+\end{equation}
+따라서 게이지 자유도는 작용 원리와 양립합니다. 자기장이 유일한 \(\mathbf A\)를 정하지 않더라도 벡터 퍼텐셜은 라그랑지안에 들어갈 수 있습니다.
+
+\section{논의의 다음 단계}
+
+이번 강의에서는 필요한 도구와 작용을 마련했지만, 의도적으로 작용을 변분하는 단계 직전에 멈춥니다. 다음 단계는 이제 정해졌습니다.
+\begin{enumerate}
+  \item 오일러--라그랑주 방정식을 적용해 다음을 얻는다.
+  \(\mathbf F_{\mathrm{mag}}=(e/c)\mathbf v\times\mathbf B\)
+  \item 정준 운동량을 계산한다. 이는 \(m\mathbf v\)와 다르다.
+  \item 해밀토니안을 구성한다.
+  \item 보존 법칙을 확인한다.
+  \item 균일한 자기장 속 대전 입자의 운동을 푼다.
+\end{enumerate}
+
+이 결과에 이르는 과정은 벡터 퍼텐셜을 도입한 이유를 설명해 줍니다. 자기장은 국소적으로 측정할 수 있는 회전이지만, 벡터 퍼텐셜은 입자의 경로와 자연스럽게 결합하는 대상입니다. 게이지 변환은 그 결합을 고정된 끝점에서만 바꾸므로 역학은 달라지지 않습니다.

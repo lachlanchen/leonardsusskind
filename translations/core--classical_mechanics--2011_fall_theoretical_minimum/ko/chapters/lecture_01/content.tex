@@ -1,0 +1,518 @@
+\chapter{상태, 가역성, 운동학}
+
+고전역학은 낙하하는 물체, 공전하는 행성, 대전 입자에 관한 방정식만 모아 놓은 학문이 아니다. 특정한 방정식을 고르기에 앞서, 운동 법칙이 고전 법칙으로 인정되려면 어떤 형태여야 하는지 더 일반적인 질문을 던질 수 있다. 가능한 모든 역사를 칠판에 그려 볼 수 있을 만큼 단순한 계부터 살펴보자. 그런 계에서 상태, 결정론, 가역성, 보존의 개념을 분명히 한 뒤, 일상적인 공간을 움직이는 입자로 돌아오겠다.
+
+\section{두 가지 질문}
+
+역학에는 두 가지 질문이 있다. 하나는 특정한 계를 지배하는 구체적인 법칙을 묻는다. 거대한 물체의 중력장 속에서 움직이는 행성은 한 법칙을 따르고, 자기장 속에서 움직이는 전하 입자는 다른 법칙을 따른다. 이는 자연의 세부 법칙에 관한 질문이다.
+
+다른 질문은 이런 모든 사례에 공통된 틀에 관한 것이다. 허용 가능한 모든 법칙이 따라야 하는 규칙이 있는가? 연구 대상인 힘이나 물체와 무관하게 고전역학 자체에 속하는 특징은 무엇인가? 구체적인 사례들이 답을 보여 주겠지만, 이 두 번째 질문이 학문의 체계를 이룬다.
+
+가장 유용한 첫 사례는 추상적인 탁자 위의 추상적인 동전이다. 동전의 성질 가운데 하나만 남긴다. 앞면이나 뒷면이 나올 수 있다는 성질이다. 따라서 가능한 배치들의 공간은
+\begin{equation}
+  \mathcal C=\{H,T\}.
+\end{equation}
+여기서 \emph{배치}란 계가 취할 수 있는 가능한 상태 가운데 하나를 뜻한다. 초기 조건은 그중 하나를 선택하는 것이다. 한쪽 면만 있는 동전은 더 단순하겠지만, 배치가 하나뿐이라 아무 일도 일어날 수 없다. 두 상태면 동역학이 가능해진다.
+
+\section{동전: 상태, 법칙, 역사}
+
+마치 세계가 스트로보스코프로 비추는 것처럼 시간을 정수 단계로 진행시키자:
+\begin{equation}
+  t=\ldots,-2,-1,0,1,2,\ldots .
+\end{equation}
+운동 법칙은 갱신 규칙이다. 이 규칙은 시간 \(t\)의 상태에 시간 \(t+1\)의 상태를 대응시킨다. 가장 단순한 규칙은 아무것도 바꾸지 않는다:
+\begin{equation}
+  H\longmapsto H,
+  \qquad
+  T\longmapsto T.
+  \label{eq:coin-identity}
+\end{equation}
+\(H\)에서 시작하면 전체 역사는 \(H,H,H,\ldots\)이고, \(T\)에서 시작하면 \(T,T,T,\ldots\)이다. 이 규칙은 재미없지만 완전히 예측 가능하다.
+
+다른 가역 규칙은 두 상태를 맞바꾼다:
+\begin{equation}
+  H\longmapsto T,
+  \qquad
+  T\longmapsto H.
+  \label{eq:coin-flip}
+\end{equation}
+이제 역사는 번갈아 나타난다:
+\begin{equation}
+  H,T,H,T,\ldots,
+  \qquad
+  T,H,T,H,\ldots .
+\end{equation}
+화살표는 갱신 전 상태에서 갱신 후 상태로 향한다. 따라서 화살표의 꼬리는 계가 어디서 시작하는지를, 화살촉은 어디로 가는지를 나타낸다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_02.png}
+  \caption{동전의 두 배치와 방향이 표시된 뒤집기 법칙을 강의 칠판에 그린 그림. 깔끔하게 정리한 갱신 규칙은 식 ~\eqref{eq:coin-flip}에 제시되어 있다.}
+  \lectureframe{00:06:50}
+  \label{fig:coin-board}
+\end{figure}
+
+면을 두 값만 갖는 변수로 나타낼 수 있다,
+\begin{equation}
+  \sigma=
+  \begin{cases}
+    +1,&H,\\
+    -1,&T.
+  \end{cases}
+\end{equation}
+물리학에서는 두 값만 갖는 양을 나타낼 때 전통적으로 \(\sigma\)를 쓴다. 특히 스핀을 설명할 때 그렇지만, 여기서는 스핀에 관한 지식이 필요하지 않다. 이 표기법을 쓰면 두 규칙은 운동 방정식이 된다:
+\begin{align}
+  \sigma(t+1)&=\sigma(t),
+  &&\text{identity law},\label{eq:sigma-identity}\\
+  \sigma(t+1)&=-\sigma(t),
+  &&\text{flip law}.\label{eq:sigma-flip}
+\end{align}
+이 변수는 새로운 물리를 더하지 않는다. 배치를 간결하게 표시하고 그래프를 방정식으로 나타내게 해 준다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_03.png}
+  \caption{뒤집기 법칙을 \(\sigma(t+1)=-\sigma(t)\)로 나타냈다. 상자 안의 값 \(\sigma=\pm1\)은 앞면과 뒷면을 표시한다.}
+  \lectureframe{00:08:58}
+  \label{fig:sigma-board}
+\end{figure}
+
+어느 규칙에서든 초기 상태와 법칙을 알면 이후 모든 시점의 상태가 정해진다. 이 진술은 계가 \emph{닫혀 있음}을 전제로 한다. 누군가 손을 뻗어 동전을 돌리면, 그 손은 우리의 기술에 포함되지 않은 외부 영향이다. 결정론을 반증한 것이 아니라 계를 바꾼 것이다. 고전 법칙은 계의 시간 변화에 관련된 모든 영향을 포함한 닫힌 계를 지배하도록 정식화된다.
+
+두 원소 집합에서 자기 자신으로 가는 수학적 함수는 네 가지다. 위에 쓰지 않은 나머지 두 함수는 두 입력 모두를 \(H\)에, 또는 두 입력 모두를 \(T\)에 대응시킨다. 이 함수들은 미래 방향으로는 결정론적이지만, 가능한 두 과거의 구별을 없앤다. 아래에서 가역성을 요구하면 식 ~\eqref{eq:coin-identity}과 \eqref{eq:coin-flip}가 허용되는 정확히 두 사상이 된다.
+
+\section{주사위: 궤도와 보존량}
+
+동전을 주사위로 바꾸자. 여기서 주사위에 관해 중요한 사실은 가능한 배치가 여섯 가지라는 점뿐이다,
+\begin{equation}
+  \mathcal C=\{1,2,3,4,5,6\}.
+\end{equation}
+초기 조건은 숫자 하나를 고르는 것이다. 다시 모든 상태를 그대로 두는 규칙을 택할 수도 있지만, 덜 단순한 규칙을 살펴볼 때는 방향 그래프가 더 유용하다. 다음을 보자:
+\begin{equation}
+  1\longmapsto2\longmapsto3\longmapsto4
+  \longmapsto5\longmapsto6\longmapsto1.
+  \label{eq:six-cycle}
+\end{equation}
+예를 들어 \(4\)에서 시작하면 역사는 다음과 같다.
+
+\[
+  4,5,6,1,2,3,4,\ldots .
+\]
+여섯 상태가 하나의 순환을 이룬다.\footnote{자료 주: 화살표를 처음 읽을 때 한 구절에서는 \(6\)가 \(6\)로 돌아온다고 말한다. 바로 뒤의 구절과 그려진 순환, 나열된 역사는 모두 의도된 갱신 규칙 \(6\mapsto1\)을 나타낸다.}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_06.png}
+  \caption{여섯 상태가 이루는 하나의 순환. 스트로보스코프의 각 단계마다 상태가 다음 상태로 옮겨 가며, 여섯 번 갱신한 뒤 처음으로 돌아온다.}
+  \lectureframe{00:12:40}
+  \label{fig:six-cycle-board}
+\end{figure}
+
+규칙은 더 복잡해 보일 수 있지만 구조적으로는 달라지지 않을 수 있다. 예를 들어
+\begin{equation}
+  1\to2\to5\to3\to4\to6\to1
+  \label{eq:relabeled-cycle}
+\end{equation}
+이 규칙도 여전히 하나의 여섯 상태 순환이다. 꼭짓점을 \(1,2,5,3,4,6\) 순서로 페이지 둘레에 배치하면 식 ~\eqref{eq:six-cycle}와 같은 그림이 된다. \(1\)이나 \(5\) 같은 표지는 이름일 뿐이며, 순환 구조는 그 이름에 좌우되지 않는다.
+
+실제로 다른 법칙은 여섯 상태를 두 순환으로 나눈다. 예를 들면
+\begin{equation}
+  1\to2\to3\to1,
+  \qquad
+  4\to6\to5\to4.
+  \label{eq:two-cycles}
+\end{equation}
+주사위 하나와 법칙 하나는 그대로지만, 한 순환에서 시작한 궤적은 다른 순환에 절대 도달할 수 없다. 순환마다 숫자 \(Q\)를 붙일 수 있다:
+\begin{equation}
+  Q=
+  \begin{cases}
+    0,&\text{on the cycle }\{1,2,3\},\\
+    1,&\text{on the cycle }\{4,5,6\}.
+  \end{cases}
+\end{equation}
+상태는 매 단계 바뀌지만 \(Q\)는 바뀌지 않는다.
+
+\begin{definition}
+보존량은 운동 법칙에 따라 값이 바뀌지 않는 상태의 함수다.
+\end{definition}
+
+같은 생각으로 고정점 하나, 두 상태 순환 하나, 세 상태 순환 하나를 둘 수도 있다. 보존되는 표지는 계가 어느 궤도에 있는지를 나타내지만, 그 궤도 안에서 어떤 상태인지는 알려 주지 않아도 된다. 따라서 보존은 운동과 양립한다. 보존되는 것이 반드시 전체 배치일 필요는 없으며, 가능한 배치들 사이의 어떤 구별만 보존될 수도 있다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_07.png}
+  \caption{칠판에 그린 서로 분리된 여러 순환: 고정점, 두 상태 순환, 세 상태 순환. 상태가 순환을 따라 움직이는 동안에도 순환 표지는 보존된다.}
+  \lectureframe{00:18:40}
+  \label{fig:conserved-cycles-board}
+\end{figure}
+
+유한한 가역계에서는 모든 궤적이 순환이다. 하나의 순환에서는 궤적이 결국 모든 상태를 방문하므로, 이 기초적인 의미에서 비상수 보존 표지를 둘 수 없다. 여러 순환이 있으면 상태가 한 구성 요소에서 다른 구성 요소로 이동하지 않기 때문에 그런 표지를 둘 수 있다.
+
+\section{상태에 무엇을 포함해야 하는가?}
+
+동전 사례에서는 다음 면이 현재 면에만 의존하는 한 단계 규칙을 사용했다. 청중의 질문 하나가 이러한 제한이 꼭 필요한지 살펴본다.
+
+\begin{classroomqa}
+\audiencequestion{다음 결과가 바로 눈에 보이는 면을 넘어, 이전 결과 한 번이나 여러 번에 의존하는 앞면과 뒷면의 수열을 만들 수 있을까요?\lecturetimestamp{00:19:27--00:21:23}}
+
+\lecturerresponse{그렇다. 그런 경우 \(H\)이나 \(T\)만으로는 완전한 상태가 아니다. 이전 면 하나가 필요하다면 상태 공간을 다음과 같이 확장하면 된다:
+\(
+  \{HH,HT,TH,TT\}.
+\)
+순서쌍 하나하나는 현재 면과 그 직전 면을 기록한다. 그러면 이 네 상태 공간에서 한 단계 규칙으로 다시 시간 변화를 나타낼 수 있다. 더 많은 과거 정보가 필요하다면 그것도 포함하면 된다.}
+\end{classroomqa}
+
+이 답변은 상태의 조작적 의미를 알려 준다.
+
+\begin{definition}
+한 시점에서 계의 상태란 운동 법칙과 함께 계의 미래를 예측하는 데 필요한 모든 정보로 이루어진다.
+\end{definition}
+
+그러므로 상태는 단순한 사진이 아니다. 시간 변화를 확정하는 완전한 자료 전체가 상태다. 나중에 뉴턴 입자를 기술할 때는 위치만으로 충분하지 않고, 초기 자료에 속도도 포함되어야 한다. 기억을 가진 동전은 같은 원리를 가장 단순하게 보여 주는 사례다.
+
+\section{무한 상태 공간}
+
+상태가 무한히 많다고 해서 물체가 무한히 많이 필요한 것은 아니다. 무한한 직선 위의 정수 격자점들에 갇힌 입자 하나를 생각하자. 입자의 상태는 정수다
+\[
+  n\in\mathbb Z.
+\]
+한 법칙은 매 단계 입자를 오른쪽으로 한 칸씩 움직인다:
+\begin{equation}
+  n(t+1)=n(t)+1.
+  \label{eq:lattice-one}
+\end{equation}
+이 궤도는 닫히지 않지만, 미래와 과거 양쪽으로 계속 따라가면 모든 정수를 지난다. 이런 확장된 의미에서 이 궤도는 끝없이 이어지는 하나의 순환 역할을 한다.
+
+다른 법칙은 한 번에 두 칸씩 움직인다:
+\begin{equation}
+  n(t+1)=n(t)+2.
+  \label{eq:lattice-two}
+\end{equation}
+이제 짝수 상태는 짝수 상태만 거쳐 변하고, 홀수 상태는 홀수 상태만 거쳐 변한다. 홀짝성이 보존된다:
+\begin{equation}
+  \begin{aligned}
+    Q_{\rm parity}(n)&=n\bmod 2,\\
+    Q_{\rm parity}(n(t+1))&=Q_{\rm parity}(n(t)).
+  \end{aligned}
+\end{equation}
+유한 상태 공간에서 무한 상태 공간으로 넘어가면 반복되지 않는 역사가 가능해지지만, 상태, 궤도, 보존의 의미는 달라지지 않는다.
+
+\section{결정론만으로 가역성이 보장되지는 않는다}
+
+이제 미래를 유일하게 예측하지만 고전역학의 두 번째 요건은 만족하지 않는 규칙을 그려 보자. 세 면 동전의 상태를 앞면, 뒷면, 모서리로 두고 다음과 같이 정의하자:
+\begin{equation}
+  H\to T,
+  \qquad
+  T\to E,
+  \qquad
+  E\to T.
+  \label{eq:nonreversible-map}
+\end{equation}
+\(H\)에서 시작하면 역사는
+\[
+  H,T,E,T,E,\ldots;
+\]
+이 된다. \(T\)나 \(E\)에서 시작해도 그 뒤의 교대는 마찬가지로 모호하지 않다. 각 상태에서 나가는 화살표가 정확히 하나이므로, 이 규칙은 미래 방향으로 결정론적이다.
+
+현재 상태에서 과거를 되짚으려 할 때 문제가 생긴다. 현재 상태가 \(T\)이라면 직전 상태는 \(H\)일 수도 \(E\)일 수도 있다. 두 역사가 합쳐진 것이다. 모든 화살표의 방향을 뒤집으면 결함이 바로 드러난다. \(T\)에서 역방향 그래프는 두 가지 이동을 허용한다. 역방향 규칙은 결정론적이지 않다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_08.png}
+  \caption{가역적이지 않은 \(H,T,E\) 규칙과 대표적인 역사들. \(H\)와 \(E\)가 모두 \(T\)로 이어지므로, 현재 상태만으로는 과거를 하나로 정할 수 없다.}
+  \lectureframe{00:28:50}
+  \label{fig:nonreversible-board}
+\end{figure}
+
+\begin{definition}이산 법칙이 가역적이려면 현재 상태가 유일한 다음 상태와 유일한 이전 상태를 모두 결정해야 한다. 상태 그래프에서는 각 상태에서 나가는 화살표와 들어오는 화살표가 각각 정확히 하나씩 있어야 한다.
+\end{definition}
+
+유한 상태 공간에서 가역 갱신은 상태들의 순열이다. 상태들 사이의 구별을 새로 만들거나 없애지 않고, 그저 재배열한다. 그래서 그래프가 순환들로 분해된다. 식 ~\eqref{eq:nonreversible-map}의 사상은 함수이지만 일대일 함수는 아니므로 역함수가 없다.
+
+\begin{classroomqa}
+\audiencequestion{입자의 확률을 나타내는 상태라면 이런 종류의 규칙을 허용할 수 있을까요?\lecturetimestamp{00:29:46--00:31:17}}
+
+\lecturerresponse{그렇다면 다른 틀이 된다. 여기서 정식화한 근본적인 고전역학은 확률적 갱신 규칙이 아니라 결정론적 법칙을 사용한다. 그런 규칙을 만들어 연구하는 것은 물론 가능하지만, 이 의미에서 고전역학 법칙이라고 하지는 않는다. 양자역학은 같은 의미에서 결정론적이지 않으면서도 가역적 시간 변화에 해당하는 성질을 가지며, 이는 나중에 따로 논의해야 한다. 고전 통계역학도 확률을 사용하지만, 그 출발점은 기저에 있는 역학 법칙이며, 확률은 초기 자료에 대한 불완전한 지식을 나타낸다.}
+\end{classroomqa}
+
+이 구별은 중요하다. 정확한 고전 상태를 알지 못해 사용하는 확률분포는 비결정론적 운동 법칙이 아니다. 그것은 미시적 시간 변화가 여전히 결정론적이고 가역적이라고 보는 계에 관해 우리가 가진 정보를 나타낸다.
+
+\section{정확한 법칙과 불완전한 지식}
+
+예측에는 두 가지 요소가 필요하다:
+\begin{enumerate}
+  \item 운동 법칙;
+  \item 초기 상태.
+\end{enumerate}
+정확한 법칙이 있어도 초기 조건을 근사적으로만 알면 정확한 예측을 얻을 수 없다. 동전의 경우 탁자를 보고 면을 정확히 알아내는 일을 쉽게 상상할 수 있다. 실제 역학 변수는 연속적이다. 위치와 속도는 임의의 실숫값을 취할 수 있으며, 측정으로 소수점 아래 자릿수를 무한히 알아낼 수는 없다.
+
+실제 초기 상태가 가능한 상태들의 작은 영역 안에 있다고 하자. 어떤 동역학에서는 그 영역이 오랫동안 작게 유지되지만, 다른 동역학에서는 서로 가까운 초기 상태들이 빠르게 벌어진다. 혼돈계에서는 초기 상태의 작은 불확실성이 결국 큰 차이로 자란다. 대기가 익숙한 사례다. 측정이 더 정확하면 유용한 예측 기간을 늘릴 수 있지만, 측정 정확도가 아무리 정해져 있어도 예측을 신뢰할 수 없게 되는 시점은 충분히 먼 미래에 반드시 온다.
+
+이러한 실제적 한계가 방정식에 모호성을 끌어들이는 것은 아니다. 초기 조건을 정확히 안다면 고전적인 가역 법칙은 미래와 과거를 모두 결정한다. 정밀도가 유한할 때 정량적으로 물어야 할 것은 다음이다. 주어진 기간 동안 예측하려면 초기 상태를 얼마나 정확히 알아야 하는가?
+
+이제 그래프를 이용한 검사는 간결한 결론을 준다. 모든 상태에서 들어오는 화살표와 나가는 화살표가 하나씩 있는 법칙은 결정론적이며 가역적이다. 입자에 관한 대응되는 진술은 이보다 덜 단순하지만, 같은 고전적 구조를 나타낸다.
+
+\section{추상적 상태에서 공간상의 점으로}
+
+이제 동전과 주사위에서 점입자로 넘어가자. 입자는 1차원, 3차원, 5차원 또는 다른 임의의 차원에서 움직일 수 있지만, 보통의 공간이 곧바로 떠올릴 수 있는 사례다. 점을 정량적으로 기술하려면 다음을 정한다:
+\begin{itemize}
+  \item 원점;
+  \item 서로 수직인 세 축;
+  \item 그 축들의 방향;
+  \item 길이의 단위.
+\end{itemize}
+원점은 관례로 정한다. 팔로앨토나 다른 어느 곳에 두어도 되며, 물리적 결론은 그 선택에 좌우되지 않아야 한다. 축은 \(x,y,z\) 또는 \(x_1,x_2,x_3\)으로 표기할 수 있다. \(x\) 방향과 \(y\) 방향을 정한 뒤에는 \(z\)축이 서로 수직인 두 방향 가운데 어느 쪽을 향하게 할 수도 있다. 오른손 좌표계를 택하자. 오른손 엄지를 \(x\) 방향으로, 검지를 \(y\) 방향으로 뻗으면 중지가 \(z\) 방향을 가리키도록 한다.
+
+축 위에 같은 간격의 눈금을 표시하려면 미터, 피트, 인치, 광년 같은 단위가 필요하다. 이런 관례를 정하고 나면 모든 점을 세 수로 표시할 수 있다,
+\begin{equation}
+  (x,y,z).
+\end{equation}
+원점에서 세 축을 따라 변위하면 해당 점에 도달할 수 있다. 입자가 여러 개인 계를 기술하려면 입자마다 이런 삼중항 하나가 필요하다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_09.png}
+  \caption{데카르트 좌표축과 점의 세 좌표. 그림은 좌표 관례를 정한다. 점 자체는 원점과 축을 어디에 두기로 했는지에 좌우되지 않는다.}
+  \lectureframe{00:43:00}
+  \label{fig:coordinates-board}
+\end{figure}
+
+\section{벡터와 그 성분}
+
+벡터는 크기와 방향을 가진 대상이다. 원점에서 한 점까지의 변위는 벡터지만, 벡터는 속도, 가속도, 전기장과 그 밖의 여러 물리량도 나타낸다. 벡터는 \(\mathbf v\)처럼 굵은 글씨로 쓰고, 크기는 \(\lvert\mathbf v\rvert\)로 쓴다. 크기는 음이 아닌 값이며 영벡터일 때에만 0이 된다.
+
+기하학적으로 벡터는 자유롭게 옮길 수 있는 화살표다. 화살표의 길이와 방향을 바꾸지 않고 평행이동해도 벡터는 변하지 않는다. 특정한 문제에서는 벡터를 점에 붙여 나타낼 수 있다. 예를 들어 주어진 위치에서의 전기장을 지정할 때가 그렇다. 하지만 점에 붙어 있다는 것은 추가 정보이지, 추상적 벡터 자체에 속하는 성질은 아니다.
+
+데카르트 좌표축을 기준으로 하면 벡터의 성분은 다음과 같다:
+\begin{equation}
+  \mathbf v=(v_x,v_y,v_z).
+\end{equation}
+성분은 축에 사영하여 얻는 부호 있는 수다. 성분은 크기와 방향을 모두 나타낸다. 3차원 피타고라스 정리에 따라
+\begin{equation}
+  \lvert\mathbf v\rvert^2
+  =v_x^2+v_y^2+v_z^2,
+  \qquad
+  \lvert\mathbf v\rvert
+  =\sqrt{v_x^2+v_y^2+v_z^2}.
+  \label{eq:vector-magnitude}
+\end{equation}
+성분들의 비가 방향을 정한다. 성분이 음수라면 벡터가 해당 축의 음의 방향 성분을 가진다는 뜻이다.
+
+\subsection{스칼라배와 벡터 덧셈}
+
+실수배는 벡터의 길이를 바꾸며, 실수가 음수이면 방향도 뒤집는다. \(c>0\)일 때 \(c\mathbf A\)은 \(\mathbf A\)과 같은 방향을 가리키고 크기는 \(c\lvert\mathbf A\rvert\)이다. 특히 \(-\mathbf A\)은 \(\mathbf A\)와 길이가 같고 반대 방향을 가리킨다.
+
+벡터 덧셈을 나타내는 방법은 서로 동등한 세 가지가 있다. 첫째, \(\mathbf B\)의 꼬리를 \(\mathbf A\)의 화살촉에 놓는다. \(\mathbf A\)의 꼬리에서 \(\mathbf B\)의 화살촉으로 향하는 화살표가 \(\mathbf A+\mathbf B\)이다. 둘째, 두 벡터의 꼬리를 한곳에 맞추고 평행사변형을 완성한다. 대각선이 합벡터다. 이 방법에서는 교환법칙이 눈에 드러난다:
+\begin{equation}
+  \mathbf A+\mathbf B=\mathbf B+\mathbf A.
+\end{equation}
+셋째, 대응하는 성분끼리 더한다:
+\begin{equation}
+  C_i=A_i+B_i,
+  \qquad i=x,y,z,
+  \label{eq:component-addition}
+\end{equation}
+여기서 \(\mathbf C=\mathbf A+\mathbf B\)이다. 이 규칙들은 \(a\mathbf A+b\mathbf B\) 같은 임의의 선형결합도 정의한다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_10.png}
+  \caption{벡터 덧셈을 나타내는 삼각형 구성과 평행사변형 구성. 두 구성은 같은 벡터 \(\mathbf A+\mathbf B\)를 준다.}
+  \lectureframe{00:53:00}
+  \label{fig:vector-addition-board}
+\end{figure}
+
+일반적으로 한 벡터를 다른 벡터로 나누는 연산은 없다. 하지만 표준적인 벡터곱은 두 가지가 있다. 벡터곱은 다음 강의에서 다루고, 여기서는 스칼라곱이 필요하다.
+
+\subsection{스칼라곱}
+
+\(\mathbf A\)를 \(\mathbf B\)가 정하는 축에 사영하자. 두 벡터 사이의 각이 \(\theta\)이면, \(\mathbf A\)을 \(\mathbf B\) 방향으로 사영한 부호 있는 성분은 \(\lvert\mathbf A\rvert\cos\theta\)이다. 이 사영값에 \(\lvert\mathbf B\rvert\)을 곱해 다음을 정의한다:
+\begin{equation}
+  \mathbf A\cdot\mathbf B
+  =\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert\cos\theta.
+  \label{eq:dot-geometric}
+\end{equation}
+결과는 다른 벡터가 아니라 스칼라다. 식 ~\eqref{eq:dot-geometric}은 \(\mathbf A\)와 \(\mathbf B\)에 대해 대칭이므로 \(\mathbf A\cdot\mathbf B=\mathbf B\cdot\mathbf A\)이다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_11.png}
+  \caption{사영을 이용한 스칼라곱의 칠판 구성. 조판된 식은 \(\mathbf A\cdot\mathbf B=AB\cos\theta\)이다.}
+  \lectureframe{00:58:30}
+  \label{fig:dot-product-board}
+\end{figure}
+
+부호에는 기하학적 정보가 담겨 있다. 예각에서는 스칼라곱이 양수이고, 둔각에서는 음수이며, 수직인 벡터에서는 0이다. 따라서
+\begin{equation}
+  \mathbf A\perp\mathbf B
+  \quad\Longleftrightarrow\quad
+  \mathbf A\cdot\mathbf B=0
+\end{equation}
+이며, 벡터는 영벡터가 아니라고 하자.
+
+성분으로 나타내면
+\begin{equation}
+  \mathbf A\cdot\mathbf B
+  =A_xB_x+A_yB_y+A_zB_z.
+  \label{eq:dot-components}
+\end{equation}
+이 식을 사용하면 계산을 바로 할 수 있다. 특히
+\begin{equation}
+  \mathbf A\cdot\mathbf A
+  =A_x^2+A_y^2+A_z^2
+  =\lvert\mathbf A\rvert^2.
+  \label{eq:self-dot}
+\end{equation}
+두 벡터의 성분을 알면 식 ~\eqref{eq:dot-geometric}과 \eqref{eq:dot-components}로 두 벡터 사이의 각을 구할 수 있다:
+\begin{equation}
+  \cos\theta
+  =\frac{\mathbf A\cdot\mathbf B}
+  {\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert}.
+\end{equation}
+
+같은 대수적 계산에서 코사인 법칙이 나온다. \(\mathbf A\)와 \(\mathbf B\)가 삼각형의 한 꼭짓점에서 다른 두 꼭짓점으로 향한다고 하자. 세 번째 변은 \(\mathbf C=\mathbf A-\mathbf B\)이지 \(\mathbf A+\mathbf B\)가 아니다. 따라서
+\begin{align}
+  C^2
+  &=(\mathbf A-\mathbf B)\cdot(\mathbf A-\mathbf B)\notag\\
+  &=A^2+B^2-2\mathbf A\cdot\mathbf B\notag\\
+  &=A^2+B^2-2AB\cos\theta.
+  \label{eq:law-of-cosines}
+\end{align}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_04.png}
+  \caption{코사인 법칙을 유도할 때 사용하는 삼각형. 칠판에서 수정한 결과 닫는 변은 \(\mathbf C=\mathbf A-\mathbf B\)로 확인되며, 이에 따라 식 ~\eqref{eq:law-of-cosines}가 나온다.}
+  \lectureframe{01:04:29}
+  \label{fig:law-cosines-board}
+\end{figure}
+
+\section{위치, 속도, 가속도}
+
+원점을 정하고, \(\mathbf r\)를 원점에서 입자까지 향하는 위치 벡터로 두자. 그 성분은 데카르트 좌표다:
+\begin{equation}
+  \mathbf r=(x,y,z),
+  \qquad
+  \lvert\mathbf r\rvert=\sqrt{x^2+y^2+z^2}.
+\end{equation}
+원점을 바꾸면 \(\mathbf r\)가 어떻게 바뀌는지는 뒤에서 다루겠다. 원점을 정한 뒤에는 시간에 따라 변하는 위치로 운동을 기술한다,
+\begin{equation}
+  \mathbf r(t)=\bigl(x(t),y(t),z(t)\bigr).
+\end{equation}
+따라서 궤적은 시간의 함수 세 개로 나타난다.
+
+속도는 위치의 시간 미분이다:
+\begin{equation}
+  \mathbf v(t)=\frac{d\mathbf r}{dt}
+  =\dot{\mathbf r}(t),
+  \qquad
+  v_i=\frac{dx_i}{dt}=\dot x_i.
+  \label{eq:velocity}
+\end{equation}
+점 표기는 언제나 시간에 대한 미분을 뜻한다. 크기 \(\lvert\mathbf v\rvert\)는 속력이다. 일반적으로 위치와 속도는 서로 독립적인 방향을 가진다. 한 위치에 있는 입자는 문제에서 허용하는 어느 방향으로든 움직일 수 있다.
+
+가속도는 속도의 변화율이므로 위치의 이계 시간 미분이다:
+\begin{equation}
+  \mathbf a(t)=\frac{d\mathbf v}{dt}
+  =\dot{\mathbf v}(t)
+  =\frac{d^2\mathbf r}{dt^2}
+  =\ddot{\mathbf r}(t),
+  \qquad
+  a_i=\ddot x_i.
+  \label{eq:acceleration}
+\end{equation}
+가속도 역시 벡터다. 양의 \(x\) 방향으로 움직이는 입자의 속력이 증가하면 \(a_x>0\)이다. 속력이 감소하면 \(a_x<0\)이다. 흔히 감속이라고 부르는 것은 현재 속도와 반대 방향인 가속도일 뿐이다. 더 일반적으로는 크기가 일정해도 방향이 바뀌면서 속도가 변할 수 있다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_05.png}
+  \caption{위치 성분의 시간 미분으로 쓴 속도 성분. 간결한 벡터 표기에서는 \(\mathbf v=d\mathbf r/dt\)이다.}
+  \lectureframe{01:14:24}
+  \label{fig:velocity-board}
+\end{figure}
+
+\subsection{직선 위의 등가속도 운동}
+
+1차원 운동에서는 다음과 같이 쓰자:
+\begin{equation}
+  x(t)=a+bt+ct^2.
+  \label{eq:quadratic-motion}
+\end{equation}
+\(t=0\)일 때 입자의 위치는 \(x=a\)이다. 한 번, 이어서 두 번 미분하면 다음을 얻는다:
+\begin{align}
+  v(t)=\dot x(t)&=b+2ct,\label{eq:line-velocity}\\
+  a(t)=\ddot x(t)&=2c.\label{eq:line-acceleration}
+\end{align}
+따라서 \(b\)는 초기 속도이고 \(2c\)는 일정한 가속도다. \(c>0\)이면 속도가 선형적으로 증가하고, \(c<0\)이면 선형적으로 감소한다. 이 이차 위치 법칙은 지표면 근처에서 낙하하는 물체의 이상화된 운동처럼 일정한 가속도 아래에서 나타나는 운동의 형태다.
+
+\section{등속 원운동}
+
+마지막 예로 입자가 단위원 위의 \(x\)-\(y\) 평면에서 움직인다고 하자. 입자는 양의 \(x\)축 위의 \(t=0\)에서 출발하고, 각좌표는 일정한 비율로 증가한다:
+\begin{equation}
+  \theta(t)=\omega t.
+\end{equation}
+상수 \(\omega\)은 각진동수다. 한 바퀴 돌면 각도가 \(2\pi\)만큼 증가하므로 주기는
+\begin{equation}
+  T=\frac{2\pi}{\omega}.
+  \label{eq:circular-period}
+\end{equation}
+이다. 각도가 \(2\pi\)를 넘어 계속 증가하도록 둘 수 있다. 연속적으로 기록하는 각도는 초기화되지 않더라도 위치는 반복된다.
+
+단위원 위에서는
+\begin{equation}
+  \mathbf r(t)
+  =\bigl(\cos\omega t,\,\sin\omega t\bigr).
+  \label{eq:circular-position}
+\end{equation}
+미분하면
+\begin{equation}
+  \mathbf v(t)
+  =\omega\bigl(-\sin\omega t,\,\cos\omega t\bigr).
+  \label{eq:circular-velocity}
+\end{equation}
+속도는 원에 접한다. 그림에 의존하지 않고 반지름과 수직임을 증명할 수 있다:
+\begin{align}
+  \mathbf r\cdot\mathbf v
+  &=\cos\omega t\,(-\omega\sin\omega t)
+    +\sin\omega t\,(\omega\cos\omega t)\notag\\
+  &=0.
+  \label{eq:r-dot-v}
+\end{align}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_12.png}
+  \caption{단위원 위 운동에서의 위치 성분과 속도 성분. \(\mathbf r\cdot\mathbf v\)에서 항들이 상쇄됨을 통해 속도가 원에 접함을 확인할 수 있다.}
+  \lectureframe{01:24:30}
+  \label{fig:circular-velocity-board}
+\end{figure}
+
+한 번 더 미분하면
+\begin{equation}
+  \mathbf a(t)
+  =-\omega^2
+  \bigl(\cos\omega t,\,\sin\omega t\bigr)
+  =-\omega^2\mathbf r(t).
+  \label{eq:centripetal-acceleration}
+\end{equation}
+가속도는 반지름과 평행하지만 반대 방향, 즉 중심 쪽을 향한다. 이것이 구심 가속도다.\footnote{용어 주: 강의의 이 대목에는 ``원심''이라는 단어가 나오지만, 방정식과 함께 제시된 설명은 중심을 향하는 표준적인 구심 가속도를 가리킨다.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_13.png}
+  \caption{원운동 가속도의 성분 계산. 각 성분은 해당 위치 성분에 \(-\omega^2\)를 곱한 값이므로 \(\mathbf a=-\omega^2\mathbf r\)이다.}
+  \lectureframe{01:26:30}
+  \label{fig:circular-acceleration-board}
+\end{figure}
+
+반지름이 1이므로
+\begin{equation}
+  \lvert\mathbf r\rvert=1,
+  \qquad
+  \lvert\mathbf v\rvert=\omega,
+  \qquad
+  \lvert\mathbf a\rvert=\omega^2.
+\end{equation}
+\(\omega\)이 커지면 속력은 선형적으로 증가하고 필요한 안쪽 가속도는 이차적으로 증가한다. 반지름이 \(R\)인 원에서는 같은 계산으로 \(v=\omega R\)과 \(\lvert\mathbf a\rvert=\omega^2R=v^2/R\)를 얻는다. 첫 계산을 간결하게 하기 위해 강의에서는 \(R=1\)로 둔다.
+
+이제 입자역학에 필요한 기초 언어, 즉 상태와 초기 자료, 가역적인 시간 변화, 좌표, 그리고 속도와 가속도를 정의하는 미분을 살펴보았다. 다음 과제는 입자를 규정하는 초기 자료가 정확히 무엇인지 정하고, 그 자료를 한 순간에서 다음 순간으로 옮기는 법칙을 찾는 것이다.
