@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from contextlib import ExitStack
+from decimal import Decimal, InvalidOperation
 from fractions import Fraction
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import Counter
@@ -651,6 +652,22 @@ def _parse_json_message(text):
     return value
 
 
+def existing_translation_credits_allowed(data):
+    policy = WORK / 'spending-policy.json'
+    if not policy.exists() or read(policy).get('allow_existing_paid_credits') is not True:
+        return False
+    credits = data.get('credits') or {}
+    if credits.get('has_credits') is not True:
+        return False
+    if credits.get('unlimited') is True:
+        return True
+    try:
+        balance = Decimal(str(credits.get('balance', '0')))
+        return balance.is_finite() and balance > 0
+    except InvalidOperation:
+        return False
+
+
 def check_codex_quota():
     helper = os.environ.get('TRANSLATION_QUOTA_HELPER')
     if not helper:
@@ -673,8 +690,8 @@ def check_codex_quota():
                 raise ProviderUnavailable(data['error'])
             raise ProviderUnavailable('Codex quota telemetry unavailable; no new requests scheduled: '
                                       + str(data.get('error', 'Invalid quota snapshot')))
-        if remaining < 5:
-            raise ProviderUnavailable('Codex quota below 5%; no new requests scheduled')
+        if remaining < 5 and not existing_translation_credits_allowed(data):
+            raise ProviderUnavailable('Codex quota below 5% and no authorized existing credits; no new requests scheduled')
 
 
 def codex_chat(prompt, dest, args, model):

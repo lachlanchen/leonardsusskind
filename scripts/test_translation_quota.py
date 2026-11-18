@@ -24,6 +24,13 @@ class TranslationQuotaTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 q.normalize({'rateLimits': {'primary': {'usedPercent': value}}})
 
+    def test_existing_credit_evidence_is_preserved_without_spending(self):
+        result = q.normalize({'rateLimits': {
+            'primary': {'usedPercent': 100},
+            'credits': {'hasCredits': True, 'unlimited': False, 'balance': '12.5'}}})
+        self.assertEqual(result['credits'], {'has_credits': True, 'unlimited': False, 'balance': '12.5'})
+        self.assertEqual(result['remaining_percent'], 0)
+
     def test_explicit_server_failure_is_transport_not_quota(self):
         self.assertTrue(q.quota_error('quota endpoint returned HTTP 502').startswith('APIConnectionError:'))
         self.assertTrue(q.quota_error('failed to fetch codex rate limits: error sending request for url').startswith('APIConnectionError:'))

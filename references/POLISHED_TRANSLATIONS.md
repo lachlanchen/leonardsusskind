@@ -110,6 +110,12 @@ snapshot (up to three minutes old) rather than forcing a network request before
 each batch; the in-process check is refreshed at least once per minute.
 Unavailable quota telemetry or less than five percent remaining stops new requests
 and repair sweeps without purchasing credits or repeatedly retrying quota errors.
+The default five-percent floor can be crossed only with explicit project-local
+consent in the ignored `.translation-work/spending-policy.json`
+(`allow_existing_paid_credits: true`) and a fresh positive existing-credit balance.
+Missing credit evidence, an empty balance, or unavailable telemetry still stops
+requests. This policy never purchases credits, enables account auto-top-up,
+changes another project's spending policy, or switches the translation model.
 The quota reader initializes the account before requesting limits through the
 [official read-only app-server RPC](https://developers.openai.com/codex/app-server/).
 It retains RPC errors so an explicit network/server failure can use the existing

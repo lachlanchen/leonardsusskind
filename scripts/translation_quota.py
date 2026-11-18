@@ -95,9 +95,13 @@ def normalize(response):
     if not windows:
         raise ValueError('Quota response has no metered Codex window')
     observed = time.time()
+    credits = snapshot.get('credits') or {}
     return {'ok': True, 'source': 'codex_app_server_account_rate_limits',
             'remaining_percent': min(max(0, min(100, 100 - window['usedPercent'])) for window in windows),
-            'observed_at_epoch': observed}
+            'observed_at_epoch': observed,
+            'credits': {'has_credits': credits.get('hasCredits') is True,
+                        'unlimited': credits.get('unlimited') is True,
+                        'balance': str(credits.get('balance') or '0')}}
 
 
 def status(force=False):

@@ -237,6 +237,28 @@ class TranslationTests(unittest.TestCase):
             with self.assertRaisesRegex(p.ProviderUnavailable, 'telemetry unavailable.*RPC rejected'):
                 p.check_codex_quota()
 
+    def test_existing_credits_require_project_local_consent_and_positive_balance(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
+            data = {'credits': {'has_credits': True, 'balance': '12.5'}}
+            self.assertFalse(p.existing_translation_credits_allowed(data))
+            p.write(p.WORK / 'spending-policy.json', {'allow_existing_paid_credits': True})
+            self.assertTrue(p.existing_translation_credits_allowed(data))
+            for balance in ('0', '-1', 'NaN', 'Infinity', 'unknown'):
+                self.assertFalse(p.existing_translation_credits_allowed({
+                    'credits': {'has_credits': True, 'balance': balance}}))
+            self.assertFalse(p.existing_translation_credits_allowed({}))
+
+    def test_authorized_existing_credits_can_continue_below_quota_floor(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)), \
+             patch.dict(p.os.environ, {'TRANSLATION_QUOTA_HELPER': '/quota-helper'}):
+            p.write(p.WORK / 'spending-policy.json', {'allow_existing_paid_credits': True})
+            p.write(p.WORK / 'quota-check.json', {
+                'ok': True, 'remaining_percent': 0, 'checked_at': p.time.time(),
+                'credits': {'has_credits': True, 'balance': '12.5'}})
+            with patch.object(p.subprocess, 'run') as probe:
+                p.check_codex_quota()
+            probe.assert_not_called()
+
     def test_temporary_codex_installation_gap_uses_bounded_transport_recovery(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)), \
              patch.object(p, 'check_codex_quota'), \
