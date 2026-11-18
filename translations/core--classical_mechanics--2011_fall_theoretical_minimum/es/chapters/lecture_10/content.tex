@@ -1,0 +1,614 @@
+\chapter{Invariancia gauge y movimiento de partículas cargadas}
+
+\lectureoverview{Un campo magnético no tiene divergencia, por lo que puede representarse mediante un potencial vectorial. Esa representación no es única, pero precisamente esa libertad permite incorporar las fuerzas magnéticas al principio de acción. Deducimos la fuerza de Lorentz, distinguimos el momento canónico del mecánico, construimos el hamiltoniano y usamos dos gauges distintos para resolver el movimiento en un campo magnético uniforme. La lección concluye situando esta mecánica de partículas en el marco más amplio de la teoría de Maxwell, los monopolos magnéticos y la dinámica del espacio de fases.}
+
+\section{El último paso del curso de mecánica}
+
+La lección comienza con una pequeña sorpresa en la programación. El plan es terminar el tema de las partículas cargadas en campos magnéticos, quizá añadir los campos eléctricos y luego decidir qué queda para otra sesión. El público señala que esta ya es la décima lección. En ese caso, la tarea queda más definida: terminar el problema magnético y aprovecharlo para cerrar la estructura formal de la mecánica clásica.
+
+Empezamos con un breve repaso. Un campo magnético es un campo vectorial,
+\begin{equation}
+  \mathbf B=\mathbf B(\mathbf x),
+  \qquad
+  B_i(\mathbf x)=(B_x,B_y,B_z),
+\end{equation}
+con magnitud y dirección en cada punto. En esta lección suponemos que los campos eléctricos y magnéticos externos son estáticos. Esta restricción se introduce por claridad, no porque los campos electromagnéticos tengan que ser siempre independientes del tiempo.
+
+También hay una restricción:
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+En la analogía con un fluido, esto significa que no hay extremos de tuberías de los que el flujo magnético salga a borbotones ni desagües por los que desaparezca. En la electrodinámica clásica ordinaria no hay fuentes ni sumideros magnéticos. Los experimentos no han establecido la existencia de un monopolo magnético elemental, aunque en la lección se deja abierta repetidamente la posibilidad de que una teoría más completa pueda contenerlo.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_02.png}
+\caption{Al comienzo de la lección aparecen juntos las componentes del campo, la condición de ausencia de fuentes \(\nabla\cdot\mathbf B=0\) y la representación mediante el potencial vectorial.}
+\lectureframe{00:04:56}
+\end{figure}
+
+En vez de comprobar la divergencia cada vez que se propone un campo, podemos satisfacer la restricción automáticamente. Escribamos
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+La identidad
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0
+\end{equation}
+se encarga entonces de hacer las cuentas por nosotros. El nuevo campo \(\mathbf A\) es el potencial vectorial.
+
+\section{El precio de imponer automáticamente la restricción}
+
+Introducir \(\mathbf A\) resuelve un problema y crea otro: no es único. Para cualquier función escalar \(S(\mathbf x)\),
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla S
+\end{equation}
+tiene el mismo rotacional, porque
+\begin{equation}
+  \nabla\times(\nabla S)=0.
+\end{equation}
+Así, \(\mathbf A\) y \(\mathbf A'\) describen el mismo campo magnético. En un dominio suficientemente sencillo, esta es toda la ambigüedad local: si dos potenciales vectoriales tienen el mismo rotacional, su diferencia es localmente un gradiente. La topología global puede exigir varios parches o permitir otras sutilezas, pero nada de eso hace falta para los campos que consideramos aquí.
+
+Una representación concreta se denomina \emph{gauge}, y el cambio de una representación a otra es una \emph{transformación gauge}. El campo \(\mathbf B\) no cambia, así que es invariante gauge. El principio de trabajo es que la física observable no debe depender de cuál representación hayamos elegido. Hemos ampliado la descripción al introducir \(\mathbf A\) y luego hemos eliminado la redundancia descriptiva exigiendo predicciones invariantes gauge.
+
+\subsection{Tres gauges para un mismo campo uniforme}
+
+La lección pasa enseguida a un ejemplo concreto. Elijamos las coordenadas de modo que un campo magnético uniforme apunte a lo largo del eje \(z\):
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=B,
+\end{equation}
+donde \(B\) es constante. Un primer potencial vectorial es
+\begin{equation}
+  \mathbf A^{(1)}=(0,Bx,0).
+\end{equation}
+En efecto,
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -
+  \frac{\partial A_x^{(1)}}{\partial y}
+  =B.
+\end{equation}
+Una segunda elección es
+\begin{equation}
+  \mathbf A^{(2)}=(-By,0,0),
+\end{equation}
+para la cual
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-By)}{\partial y}
+  =B.
+\end{equation}
+
+Para pasar de uno a otro, tomemos
+\begin{equation}
+  S=Cxy,
+  \qquad
+  \nabla S=(Cy,Cx,0).
+\end{equation}
+Partiendo de \(\mathbf A^{(1)}\), las componentes transformadas son
+\begin{equation}
+  A_x'=Cy,
+  \qquad
+  A_y'=(B+C)x,
+  \qquad
+  A_z'=0.
+\end{equation}
+La elección \(C=-B\) da \(\mathbf A^{(2)}\). La elección \(C=-B/2\) da el gauge simétrico,
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \left(-\frac{B}{2}y,\frac{B}{2}x,0\right)
+  =
+  \frac12\,\mathbf B\times\mathbf r.
+\end{equation}
+Los tres tienen el mismo rotacional. Más adelante volveremos deliberadamente a los dos primeros, porque cada uno hace evidente una simetría de traslación distinta.
+
+\begin{classroomqa}
+\audiencequestion{¿Puede el potencial vectorial tener la misma simetría que el campo magnético uniforme?}
+\lecturerresponse{No puede ser espacialmente constante como el campo magnético, porque un potencial vectorial constante tiene rotacional nulo. Un solo gauge tampoco puede hacer manifiestas todas las simetrías de traslación de un campo uniforme no nulo. El gauge simétrico sí hace manifiestas las rotaciones alrededor del eje \(z\), así que la lección precisa no es que toda simetría tenga que estar ausente de \(\mathbf A\), sino que el potencial no tiene por qué mostrar simultáneamente todas las simetrías del campo físico.}
+\end{classroomqa}
+
+La familia \(S=Cxy\) es solo un ejemplo. En general, se pueden imponer condiciones gauge útiles, como hacer que una componente de \(\mathbf A\) se anule en una región adecuada. El nombre \emph{gauge} surgió históricamente de un intento fallido de interpretar esta libertad como un cambio local de unidades. Se abandonó esa interpretación, pero el nombre perduró.
+
+\begin{classroomqa}
+\audiencequestion{¿Una transformación gauge siempre consiste en añadir el gradiente de un escalar?}
+\lecturerresponse{Esa es la transformación que usamos aquí para un potencial vectorial electromagnético estático. Otras teorías gauge tienen transformaciones más elaboradas, y en gravitación un cambio de coordenadas suele describirse como un cambio gauge, porque la geometría física no puede depender de las etiquetas de coordenadas. Sin embargo, en este capítulo, transformación gauge significa \(\mathbf A\mapsto\mathbf A+\nabla S\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Puede un gauge ser más conveniente para los cálculos que otro?}
+\lecturerresponse{Muy a menudo. Una simetría o una ley de conservación puede ser manifiesta en un gauge y quedar oculta en otro. No es una mera posibilidad abstracta: más adelante en esta lección un gauge hará que \(y\) sea una coordenada cíclica, mientras que otro hará cíclica a \(x\). Ambos cálculos describen la misma órbita.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Esta ambigüedad tiene relación con elegir subespacios propios o hallar valores propios?}
+Aquí no hace falta establecer una relación directa. Ambos temas implican tomar decisiones matemáticas útiles, pero un cambio de base de vectores propios y una transformación gauge electromagnética son estructuras diferentes.\lecturerresponse{
+}
+\end{classroomqa}
+
+\section{El lagrangiano magnético}
+
+Volvamos ahora a la mecánica. El objeto que nos ocupa es el lagrangiano de una partícula puntual que se mueve en un campo magnético prescrito, no todavía el lagrangiano del propio campo electromagnético. Con la convención de unidades usada en la lección,
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{e}{c}
+  \left(
+    A_x\dot x+A_y\dot y+A_z\dot z
+  \right).
+\end{equation}
+En notación vectorial,
+\begin{equation}
+  \boxed{
+  L=\frac12 m\mathbf v^2+\frac{e}{c}\mathbf A(\mathbf x)\cdot\mathbf v
+  }.
+\end{equation}
+El coeficiente \(e\) es la carga de la partícula. La presencia explícita de \(c\) depende de la convención de unidades; el contenido estructural es el acoplamiento dependiente de la velocidad \(\mathbf A\cdot\mathbf v\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_03.png}
+\caption{El lagrangiano de la partícula en un campo magnético se escribe componente a componente, dejando a la vista los tres términos de acoplamiento con la velocidad.}
+\lectureframe{00:25:29}
+\end{figure}
+
+Al principio este término se propone, no se deduce. Se nos invita a probarlo y ver qué ecuaciones produce. También se podría probar un término construido directamente a partir de \(\mathbf B\), pero produciría derivadas de \(\mathbf B\), no la fuerza de Lorentz. El potencial vectorial es el objeto local que se acopla a la trayectoria de la manera correcta.
+
+\subsection{Por qué un cambio gauge no altera la trayectoria}
+
+Antes de variar la acción, comprobemos qué efecto tiene sobre ella una transformación gauge. Para puntos inicial y final del espacio-tiempo fijos,
+\begin{equation}
+  \mathcal S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L\,dt.
+\end{equation}
+Bajo \(\mathbf A\mapsto\mathbf A+\nabla S\), la variación es
+\begin{align}
+  \Delta\mathcal S
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}
+  \nabla S(\mathbf x)\cdot\dot{\mathbf x}\,dt\\
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}\frac{dS(\mathbf x(t))}{dt}\,dt\\
+  &=
+  \frac{e}{c}
+  \left[
+    S(\mathbf x_f)-S(\mathbf x_i)
+  \right].
+\end{align}
+Por lo tanto, el valor numérico de la acción cambia. Pero el término añadido depende solo de los extremos fijos, no del tramo interior de la trayectoria que se varía. Su variación es nula y no puede alterar la trayectoria estacionaria.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué significa decir que las ecuaciones son invariantes gauge?}
+\lecturerresponse{Después del cálculo de Euler--Lagrange, \(\mathbf A\) debe aparecer solo en combinaciones de rotacionales que se reconocen como componentes de \(\mathbf B\). El potencial mismo puede cambiar y la acción puede desplazarse en un término de extremo, pero la trayectoria física y la ley de fuerza deben permanecer invariantes.}
+\end{classroomqa}
+
+\section{Dos conceptos de momento}
+
+Las ecuaciones de Euler--Lagrange se pueden escribir como
+\begin{equation}
+  \dot p_i=\frac{\partial L}{\partial x_i},
+  \qquad
+  p_i=\frac{\partial L}{\partial\dot x_i}.
+\end{equation}
+En este punto debemos distinguir dos momentos. El momento mecánico habitual es
+\begin{equation}
+  \boldsymbol{\pi}=m\mathbf v.
+\end{equation}
+El momento canónico se define a partir del lagrangiano:
+\begin{equation}
+  p_i
+  =
+  m\dot x_i+\frac{e}{c}A_i.
+\end{equation}
+Por tanto,
+\begin{equation}
+  \boxed{
+  \boldsymbol{\pi}
+  =
+  \mathbf p-\frac{e}{c}\mathbf A
+  =
+  m\mathbf v
+  }.
+\end{equation}
+Para una partícula libre, o con un potencial ordinario que depende de la posición, el momento canónico y el mecánico coinciden. La interacción magnética depende de la velocidad, así que dejan de coincidir.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_04.png}
+\caption{La pizarra distingue la definición canónica \(p_i=\partial L/\partial\dot x_i\) de \(m\dot x_i\) y comienza a derivarla a lo largo de la trayectoria.}
+\lectureframe{00:37:33}
+\end{figure}
+
+La distinción no es una cuestión meramente terminológica. El momento canónico es la magnitud que aparece en las ecuaciones de Hamilton, los corchetes de Poisson y la ley de conservación asociada a una coordenada cíclica. El momento mecánico es el producto de la masa por la velocidad, directamente medible.
+
+\begin{classroomqa}
+\audiencequestion{¿\((e/c)\mathbf A\cdot\mathbf v\) es una energía cinética o potencial, y cómo sabemos si hay que sumarla o restarla?}
+\lecturerresponse{No es ni una energía cinética ordinaria ni un potencial ordinario que dependa de la posición. Es una interacción dependiente de la velocidad. En esta etapa, el signo forma parte del acoplamiento propuesto; cambiarlo equivale a invertir el signo de la carga o el de \(\mathbf A\). La comprobación decisiva es la ley de fuerza que se obtiene.}
+\end{classroomqa}
+
+\section{Siguiendo el álgebra hasta la fuerza de Lorentz}
+
+La lección desarrolla despacio una de las componentes. Para \(p_x\),
+\begin{equation}
+  p_x=m\dot x+\frac{e}{c}A_x(\mathbf x).
+\end{equation}
+Aunque el campo externo sea estático, \(A_x(\mathbf x(t))\) cambia a medida que se mueve la partícula. Su derivada total respecto del tiempo es
+\begin{equation}
+  \frac{dA_x}{dt}
+  =
+  \frac{\partial A_x}{\partial x}\dot x
+  +
+  \frac{\partial A_x}{\partial y}\dot y
+  +
+  \frac{\partial A_x}{\partial z}\dot z.
+\end{equation}
+Por consiguiente,
+\begin{equation}
+  \dot p_x
+  =
+  m\ddot x
+  +
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_yA_x\,\dot y
+    +
+    \partial_zA_x\,\dot z
+  \right).
+\end{equation}
+El lado derecho de la ecuación de Euler--Lagrange es
+\begin{equation}
+  \frac{\partial L}{\partial x}
+  =
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_xA_y\,\dot y
+    +
+    \partial_xA_z\,\dot z
+  \right).
+\end{equation}
+Los términos \(\partial_xA_x\,\dot x\) se cancelan. Al agrupar lo que queda según la componente de la velocidad, obtenemos
+\begin{align}
+  m\ddot x
+  &=
+  \frac{e}{c}
+  \left[
+    \left(\partial_xA_y-\partial_yA_x\right)\dot y
+    +
+    \left(\partial_xA_z-\partial_zA_x\right)\dot z
+  \right].
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{El cálculo completo de la componente \(x\): las derivadas del potencial vectorial se han combinado en expresiones que forman el rotacional.}
+\lectureframe{00:46:41}
+\end{figure}
+
+Usando
+\begin{align}
+  B_y&=\partial_zA_x-\partial_xA_z,\\
+  B_z&=\partial_xA_y-\partial_yA_x,
+\end{align}
+obtenemos
+\begin{equation}
+  m a_x
+  =
+  \frac{e}{c}
+  \left(B_zv_y-B_yv_z\right)
+  =
+  \frac{e}{c}
+  (\mathbf v\times\mathbf B)_x.
+\end{equation}
+El mismo cálculo para \(y\) y \(z\) da
+\begin{equation}
+  \boxed{
+  m\mathbf a=\frac{e}{c}\,\mathbf v\times\mathbf B
+  }.
+\end{equation}
+Esta es la ley de la fuerza magnética de Lorentz. La lección llama ecuación de Newton--Lorentz a la ecuación completa: Newton aporta \(m\mathbf a\) y Lorentz, la fuerza magnética.
+
+El resultado supera las tres pruebas planteadas antes del cálculo. El nuevo término produce una fuerza no nula. La fuerza es invariante gauge porque solo sobrevive \(\nabla\times\mathbf A=\mathbf B\). Y el potencial vectorial, aunque sea redundante, ha proporcionado a la fuerza magnética un principio de acción. Sustituir \(\mathbf A\) por \(\mathbf B\) en la interacción daría combinaciones del rotacional de \(\mathbf B\) y no reproduciría esta ley.
+
+\section{El hamiltoniano y el significado de la energía}
+
+La siguiente pregunta es si el mismo sistema admite una descripción hamiltoniana. Empecemos con
+\begin{align}
+  p_x&=m\dot x+\frac{e}{c}A_x,\\
+  p_y&=m\dot y+\frac{e}{c}A_y,\\
+  p_z&=m\dot z+\frac{e}{c}A_z.
+\end{align}
+Estas relaciones se pueden invertir:
+\begin{align}
+  \dot x&=\frac{1}{m}\left(p_x-\frac{e}{c}A_x\right),\\
+  \dot y&=\frac{1}{m}\left(p_y-\frac{e}{c}A_y\right),\\
+  \dot z&=\frac{1}{m}\left(p_z-\frac{e}{c}A_z\right).
+\end{align}
+La transformada de Legendre es
+\begin{equation}
+  H=\sum_i p_i\dot x_i-L.
+\end{equation}
+Al sustituir y simplificar, se obtiene
+\begin{equation}
+  \boxed{
+  H(\mathbf x,\mathbf p)
+  =
+  \frac{1}{2m}
+  \left(
+    \mathbf p-\frac{e}{c}\mathbf A(\mathbf x)
+  \right)^2
+  }.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_06.png}
+\caption{La construcción completa del hamiltoniano conserva los tres momentos canónicos a la izquierda y los cuadrados con acoplamiento mínimo a la derecha.}
+\lectureframe{00:53:05}
+\end{figure}
+
+Escrito en variables canónicas, difiere del hamiltoniano de la partícula libre. Sin embargo, escrito en términos de la velocidad física,
+\begin{equation}
+  H=\frac{\boldsymbol{\pi}^{\,2}}{2m}
+  =\frac12m\mathbf v^2.
+\end{equation}
+no hay contradicción. La misma energía numérica se representa mediante una función distinta de \((\mathbf x,\mathbf p)\), de modo que las ecuaciones de Hamilton son diferentes, aunque la energía siga siendo igual a la energía cinética ordinaria.
+
+Como el campo es estático, \(H\) se conserva. Por tanto, la rapidez es constante. La fuerza de Lorentz hace que este mismo hecho resulte evidente:
+\begin{equation}
+  \frac{d}{dt}\left(\frac12mv^2\right)
+  =
+  m\mathbf v\cdot\mathbf a
+  =
+  \frac{e}{c}\,
+  \mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+Un campo magnético cambia la dirección del movimiento, no la magnitud de la velocidad. Curva la trayectoria, pero no realiza trabajo.
+
+\section{Resolución de un campo uniforme mediante un cambio de gauge}
+
+Después de la pausa, volvamos a considerar el campo uniforme
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z}.
+\end{equation}
+El objetivo no es solo resolver una órbita conocida, sino mostrar por qué elegir un gauge puede hacer casi trivial un cálculo basado en simetrías.
+
+\subsection{Primer gauge: las coordenadas y y z son cíclicas}
+
+Tomemos
+\begin{equation}
+  A_x=A_z=0,
+  \qquad
+  A_y=Bx.
+\end{equation}
+Entonces
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{eB}{c}x\dot y.
+\end{equation}
+Las coordenadas \(y\) y \(z\) no aparecen explícitamente. Son cíclicas, así que sus momentos canónicos se conservan. Para \(z\),
+\begin{equation}
+  p_z=m\dot z,
+  \qquad
+  \dot p_z=0,
+\end{equation}
+y, por tanto,
+\begin{equation}
+  a_z=0.
+\end{equation}
+La partícula se mueve uniformemente a lo largo del campo.
+
+Para \(y\),
+\begin{equation}
+  p_y=m\dot y+\frac{eB}{c}x,
+  \qquad
+  \dot p_y=0.
+\end{equation}
+Por consiguiente,
+\begin{equation}
+  m a_y+\frac{eB}{c}v_x=0,
+  \qquad
+  \boxed{m a_y=-\frac{eB}{c}v_x}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_07.png}
+\caption{En el gauge \(A_y=Bx\), la pizarra registra la conservación de \(p_z\) y \(p_y\), así como la componente \(y\) resultante de la fuerza de Lorentz.}
+\lectureframe{01:03:50}
+\end{figure}
+
+\subsection{Segundo gauge: la coordenada x es cíclica}
+
+Ahora pasemos a
+\begin{equation}
+  A_x=-By,
+  \qquad
+  A_y=A_z=0.
+\end{equation}
+El lagrangiano queda
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  -
+  \frac{eB}{c}y\dot x.
+\end{equation}
+Esta vez \(x\) es cíclica:
+\begin{equation}
+  p_x=m\dot x-\frac{eB}{c}y,
+  \qquad
+  \dot p_x=0.
+\end{equation}
+Así pues,
+\begin{equation}
+  \boxed{m a_x=\frac{eB}{c}v_y}.
+\end{equation}
+Junto con el resultado del primer gauge y \(a_z=0\), esto da exactamente
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times B\hat{\mathbf z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_08.png}
+\caption{Tras el cambio de gauge, se ven las dos componentes transversales de la fuerza de Lorentz. Cada una apareció como una ley de conservación del momento canónico en un gauge distinto.}
+\lectureframe{01:08:05}
+\end{figure}
+
+La simetría física de traslación estuvo presente en todo momento. La elección del gauge solo cambió qué parte de esa simetría quedaba manifiesta como una coordenada cíclica ordinaria. Por eso el momento canónico puede conservarse en un gauge y adoptar otra forma en otro, mientras que la aceleración medible sigue siendo la misma.
+
+\begin{classroomqa}
+\audiencequestion{¿Las componentes del momento canónico son invariantes gauge? ¿Son directamente físicas?}
+\lecturerresponse{No. Bajo \(\mathbf A\mapsto\mathbf A+\nabla S\), el momento canónico cambia en \((e/c)\nabla S\). El momento mecánico \(m\mathbf v=\mathbf p-(e/c)\mathbf A\) es invariante gauge y está directamente ligado a la velocidad de la partícula. Aun así, el momento canónico es indispensable porque es la variable que se usa en las ecuaciones de Hamilton y en los corchetes de Poisson.}
+\end{classroomqa}
+
+\section{La órbita en un campo magnético uniforme}
+
+El trabajo formal ha terminado; veamos ahora el movimiento. Supongamos primero que \(v_z=0\), de modo que la partícula permanece en el plano \(xy\). La aceleración es perpendicular a la velocidad y su magnitud es constante:
+\begin{equation}
+  |\mathbf a|
+  =
+  \frac{|e|}{mc}vB.
+\end{equation}
+Una partícula que se mueve con rapidez constante y cuya aceleración tiene magnitud constante y es siempre perpendicular a su velocidad describe un círculo.
+
+Si \(r\) es el radio, la aceleración centrípeta es \(v^2/r\). Al igualar las magnitudes se obtiene
+\begin{equation}
+  m\frac{v^2}{r}
+  =
+  \frac{|e|}{c}vB,
+\end{equation}
+y, por tanto,
+\begin{equation}
+  \boxed{
+  r=\frac{mcv}{|e|B}
+  }.
+\end{equation}
+Al principio, la lección escribe la expresión sin \(c\), advierte que no concuerda con la convención elegida para la fuerza de Lorentz y lo restituye. El signo de \(eB\) determina el sentido de giro; el radio es positivo.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{La órbita circular, la velocidad tangencial y la relación del radio una vez restituido el factor \(c\) que faltaba.}
+\lectureframe{01:16:50}
+\end{figure}
+
+El campo determina la relación entre la rapidez y el radio, pero no fija el centro del círculo. El centro puede estar en cualquier lugar del plano transversal. Una mayor rapidez transversal produce una órbita más grande; una carga mayor o un campo magnético más intenso producen una órbita más cerrada.
+
+Si \(v_z\neq0\), el movimiento transversal sigue siendo circular mientras \(z\) avanza uniformemente. Al combinar ambos movimientos se obtiene una hélice alrededor de la dirección del campo magnético.\editorialnote{La lección deduce por separado los dos elementos: \(a_z=0\) y el movimiento circular transversal. Al combinarlos se obtiene la trayectoria helicoidal descrita.}
+
+\section{¿De dónde surgió el acoplamiento?}
+
+El cálculo de la órbita lleva al público a volver al comienzo. ¿Se conocía de antemano el término \((e/c)\mathbf A\cdot\mathbf v\)? La respuesta honesta es que hay varios puntos de partida lógicamente coherentes.
+
+\begin{classroomqa}
+\audiencequestion{¿Simplemente conocíamos el lagrangiano magnético y lo escribimos?}
+\lecturerresponse{Para esta exposición, sí: escribimos el acoplamiento lineal en la velocidad y lo investigamos. Partiendo de ese término, descubrimos la invariancia gauge y luego que las combinaciones de rotacionales en las ecuaciones se comportan como un campo magnético. También se puede partir de la fuerza de Lorentz observada y buscar una acción, o comenzar con la exigencia moderna de invariancia gauge. Históricamente, estos elementos se descubrieron en un orden menos directo.}
+\end{classroomqa}
+
+También hay una prueba útil para determinar si un lagrangiano propuesto admite la construcción hamiltoniana ordinaria. Las ecuaciones
+\begin{equation}
+  p_i=\frac{\partial L}{\partial\dot x_i}
+\end{equation}
+deben poder invertirse para despejar las velocidades, al menos en el sistema regular que aquí se considera. En términos más precisos, el hessiano respecto de las velocidades
+\begin{equation}
+  \frac{\partial^2L}
+       {\partial\dot x_i\,\partial\dot x_j}
+\end{equation}
+debe ser no singular. Para esta partícula es simplemente \(m\delta_{ij}\), así que la transformada de Legendre está bien definida.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué hace legítimo a un lagrangiano propuesto?}
+\lecturerresponse{En la mecánica ordinaria que estamos desarrollando, debe dar ecuaciones de movimiento bien definidas y permitir construir un hamiltoniano único tras expresar las velocidades en función de los momentos. Sí existen lagrangianos singulares en las teorías de campos gauge, pero el tratamiento de sus restricciones requiere herramientas que van más allá de este curso.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La simetría gauge proporciona por sí misma una cantidad conservada?}
+\lecturerresponse{No en el problema de una partícula en un campo de fondo prescrito, considerado por sí solo. Para tratar adecuadamente la ley de conservación correspondiente, hay que incluir el campo electromagnético entre las variables dinámicas. En la teoría completa de campos, la invariancia gauge está ligada a la conservación de la carga, pero para ello se necesitan la acción del campo y las ecuaciones de Maxwell.}
+\end{classroomqa}
+
+\section{Campos de fondo fijos y dinámica de Maxwell}
+
+Hasta ahora, nada nos dice cómo evoluciona el campo electromagnético. El campo se ha proporcionado como un fondo fijo, y la única pregunta ha sido: dados \(\mathbf E\) y \(\mathbf B\), ¿cómo se mueve una partícula?
+
+\begin{classroomqa}
+\audiencequestion{¿Qué relación tiene esto con las ecuaciones de Maxwell?}
+\lecturerresponse{Para deducir las ecuaciones de Maxwell hay que añadir la acción propia del campo electromagnético y variar tanto el campo como la trayectoria de la partícula. El acoplamiento \((e/c)\int\mathbf A\cdot d\mathbf x\) es una parte de la acción completa. Cuando se mantiene fijo el fondo, el término del campo no afecta la variación correspondiente a la partícula, pero es esencial cuando el propio campo pasa a ser dinámico.}
+\end{classroomqa}
+
+Clásicamente, se podría prescindir del formalismo de la acción y postular simplemente
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times\mathbf B.
+\end{equation}
+Para la mecánica de una partícula de prueba, esa es una ecuación diferencial perfectamente válida. Pero las estructuras lagrangiana y hamiltoniana se vuelven indispensables en mecánica cuántica, donde el potencial vectorial interviene directamente.
+
+\section{Monopolos y el modelo del solenoide delgado}
+
+¿Qué ocurriría si
+\begin{equation}
+  \nabla\cdot\mathbf B\neq0?
+\end{equation}
+Entonces \(\mathbf B\) no se podría representar en todas partes mediante un único potencial vectorial suave, porque la divergencia de cualquier rotacional es nula. Fallaría la sencilla construcción global que usamos en este capítulo.
+
+La lección ilustra el problema imaginando un imán de barra o un solenoide enormemente largo y extremadamente delgado. Cerca de un extremo, si el otro se lleva a una distancia arbitrariamente grande, el campo externo se parece al campo de un solo polo magnético. El flujo de retorno no ha desaparecido: está confinado dentro del tubo delgado. Si el tubo se idealizara y no pudiera observarse, cumpliría el papel del hilo unido a un monopolo aparente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{El dibujo en la pizarra del solenoide delgado: las líneas de campo se extienden desde un polo aparente, mientras el flujo de retorno queda confinado en un tubo estrecho.}
+\lectureframe{01:27:35}
+\end{figure}
+
+En el electromagnetismo clásico ordinario, al comprimir un flujo fijo en una sección transversal que tiende a cero aumentan sin límite la intensidad del campo y su energía. La lección recurre deliberadamente a respuestas exageradas sobre una energía infinita para subrayar que un monopolo realista requeriría nueva física, y no solo un solenoide ordinario cada vez más delgado. En teoría cuántica, un tubo de flujo cuantizado de forma adecuada puede volverse inobservable fuera de su núcleo; esta es la idea que subyace a la construcción del hilo de Dirac, aunque una teoría completa del monopolo queda fuera del alcance de este curso.
+
+\begin{classroomqa}
+\audiencequestion{Una partícula puntual puede tener un momento magnético. ¿Es eso un monopolo?}
+\lecturerresponse{No. Un momento magnético es un dipolo: tiene carácter de polo positivo y negativo en igual medida. Un monopolo llevaría una sola carga magnética neta. Si se corta un imán ordinario, no se aíslan sus polos; cada fragmento adquiere sus propios extremos norte y sur.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La dificultad de separar los dos extremos es análoga al confinamiento de quarks?}
+\lecturerresponse{Es una analogía útil. Al separar quarks confinados no se obtiene un quark aislado en las observaciones ordinarias; el campo que los conecta produce nuevos objetos ligados. Aquí no se identifican los mecanismos, pero es similar la imagen de unos extremos unidos por una estructura de flujo ineludible.}
+\end{classroomqa}
+
+La conclusión de la lección es prudente. Los monopolos magnéticos no forman parte de la teoría clásica ordinaria empleada en la deducción, pero muchas teorías de alta energía sí los contienen. Si existen como partículas elementales, se espera que involucren escalas de energía muy superiores a las de esta mecánica introductoria.
+
+\section{La otra álgebra de Hamilton y el tema inconcluso}
+
+Una última pregunta del público se refiere a los cuaterniones de Hamilton. Históricamente son independientes de la mecánica hamiltoniana. Hamilton buscaba un álgebra que pudiera desempeñar, para las rotaciones tridimensionales, un papel parecido al de los números complejos para las rotaciones planas. El resultado utiliza tres unidades imaginarias \(i,j,k\), con
+\begin{equation}
+  i^2=j^2=k^2=ijk=-1,
+\end{equation}
+y, por ejemplo,
+\begin{equation}
+  ij=k,
+  \qquad
+  ji=-k.
+\end{equation}
+Los cuaterniones unitarios proporcionan una representación eficiente de las rotaciones tridimensionales. En mecánica cuántica, la misma estructura algebraica se puede representar mediante matrices de Pauli, con los factores adecuados de la unidad imaginaria ordinaria. Esta conexión existe, pero no es el origen del momento canónico ni del hamiltoniano desarrollados en este curso.
+
+El último tema solicitado es el caos. Ya no queda tiempo para desarrollarlo. La lección concluye remitiéndose a las herramientas que ya se han construido: la dinámica es el movimiento a lo largo de órbitas en el espacio de fases, y ese lenguaje es el punto de partida para estudiar el comportamiento regular y caótico. La estructura formal de la mecánica clásica ya está suficientemente completa para que el público continúe a partir de ahí.
