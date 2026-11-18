@@ -1,0 +1,524 @@
+\chapter{Sistemas compuestos, entrelazamiento y el singlete}
+
+\lectureoverview{Una pregunta sobre la emisión de fotones pone de manifiesto la diferencia entre un suceso cuántico y su promedio de conjunto. Esta distinción conduce de forma natural a la medición, el colapso y la necesidad de tratar un sistema junto con su aparato. Por ello, construimos el espacio de estados producto tensorial de dos sistemas, nos especializamos en dos espines, distinguimos los estados producto de los estados entrelazados e incorporamos cada observable de un espín al espacio compuesto. El estado singlete proporciona entonces el ejemplo decisivo: cada espín está localmente despolarizado, pero las componentes iguales están perfectamente anticorrelacionadas. Su forma independiente de la base prepara el terreno para el teorema de Bell y para distinguir entre la correlación no clásica y la señalización más rápida que la luz.}
+
+\section{Transiciones discretas de un espín en superposición}
+
+Empecemos con un espín en un campo magnético a lo largo del eje \(z\). En unidades en las que \(\hbar=1\),
+\begin{equation}
+H=\frac{\omega}{2}\sigma_z,
+\qquad
+E_+=+\frac{\omega}{2},
+\qquad
+E_-=-\frac{\omega}{2}.
+\label{eq:l6-spin-hamiltonian}
+\end{equation}
+Los dos niveles están separados por
+\begin{equation}
+\Delta E=E_+-E_-=\omega.
+\label{eq:l6-energy-gap}
+\end{equation}
+Al incluir el campo de radiación, un espín en el nivel superior puede caer al inferior y emitir un fotón de energía \(\omega\). Un espín que ya está en el nivel inferior no tiene ningún estado de espín más bajo al que pueda pasar mediante radiación.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_01.png}
+\caption{Los dos niveles de energía del espín y su separación \(\omega\), con \(\hbar=1\).}
+\lectureframe{00:02:35}
+\end{figure}
+
+El caso sutil es el de un espín preparado en dirección transversal. Un rotor magnético clásico tiene una energía que varía continuamente y es proporcional al coseno del ángulo que forma con el campo. Precesa con frecuencia angular \(\omega\), emite radiación a esa misma frecuencia y desciende gradualmente hacia su orientación de energía mínima. La energía total radiada depende continuamente del ángulo inicial: un rotor inicialmente horizontal libera la mitad de energía que uno que parte de la posición más alta.
+
+La mecánica cuántica conserva esa respuesta clásica solo como promedio. Escribamos
+\begin{equation}
+\ket{\psi}=\alpha\ket{u}+\beta\ket{d},
+\qquad
+|\alpha|^2+|\beta|^2=1,
+\label{eq:l6-superposed-spin}
+\end{equation}
+donde \(\ket{u}\) y \(\ket{d}\) son los autoestados de energía superior e inferior. La componente superior puede decaer; la inferior no. Por tanto,
+\begin{equation}
+P(\text{one photon})=|\alpha|^2,
+\qquad
+P(\text{no photon})=|\beta|^2.
+\end{equation}
+Si se emite un fotón, su energía es la separación completa entre niveles \(\omega\), no una fracción de ella. Sin embargo, la energía media emitida es
+\begin{equation}
+\expect{E_{\rm emitted}}=|\alpha|^2\omega.
+\end{equation}
+Para un espín orientado a lo largo de \(x\), \(|\alpha|^2=|\beta|^2=1/2\), así que el promedio es \(\omega/2\). Cada suceso individual sigue produciendo un fotón de energía \(\omega\) o ningún fotón. El resultado clásico continuo corresponde al promedio de conjunto; la discreción corresponde a cada suceso.
+
+\begin{classroomqa}
+\audiencequestion{¿Con qué precisión debe coincidir la energía del fotón absorbido con la separación entre niveles?}
+\lecturerresponse{La resonancia tiene una anchura de línea finita. Si el estado excitado tiene una vida media \(\tau\), su anchura de energía característica es del orden de \(\Delta E\sim\hbar/\tau\). En general, un momento dipolar magnético mayor se acopla con más intensidad al campo de radiación, acorta la vida media y ensancha la línea. Esta es la relación de incertidumbre entre energía y tiempo en la forma pertinente para los niveles inestables.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Puede la propia emisión de fotones servir como aparato para medir el espín?}
+\lecturerresponse{Puede revelar si ocurrió un decaimiento, pero no es el modelo ideal de medición repetible que necesitamos aquí. Una medición de una componente del espín debería dejarlo en el autoestado asociado al valor registrado. En cambio, el decaimiento lleva todas las ramas en las que se emite un fotón al nivel inferior, por lo que no se limita a registrar ambos valores de entrada posibles conservando sus autoestados correspondientes.}
+\end{classroomqa}
+
+\section{El colapso y la necesidad de un sistema compuesto}
+
+Entre intervenciones, el estado de un sistema aislado evoluciona según la ecuación de Schr\"odinger. La medición suele formularse como una regla adicional. Sea \(L\) y sean \(\ket{\lambda_i}\) sus autovectores ortonormales. Desarrollemos el estado:
+\begin{equation}
+\ket{\psi}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+L\ket{\lambda_i}=\lambda_i\ket{\lambda_i}.
+\label{eq:l6-measurement-expansion}
+\end{equation}
+Una medición arroja un valor \(\lambda_k\) con probabilidad \(|\alpha_k|^2\), tras lo cual el estado queda en
+\begin{equation}
+\ket{\psi}\longrightarrow\ket{\lambda_k}.
+\label{eq:l6-collapse}
+\end{equation}
+La desaparición de las demás componentes de la descripción posterior a la medición se denomina colapso.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_02.png}
+\caption{Un estado desarrollado en la base propia del observable \(L\), antes de seleccionar un resultado.}
+\lectureframe{00:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué problema tiene la regla del colapso?}
+\lecturerresponse{Como regla operativa para predecir resultados de mediciones, no tiene ningún problema. La tensión conceptual es que un aparato es, en sí mismo, un sistema físico. Si tanto el objeto como el aparato obedecen la mecánica cuántica, ¿por qué su interacción habría de requerir una segunda ley dinámica además de la evolución unitaria de Schr\"odinger? El enfoque que seguiremos consiste en describir el objeto y el aparato como un único sistema cuántico de mayor tamaño.}
+\end{classroomqa}
+
+La frontera tajante entre sistema y aparato fue un punto central del debate histórico. En lugar de zanjarlo por decreto, primero aprenderemos cómo se combinan los sistemas cuánticos. Una vez disponible el espacio de estados combinado, podremos estudiar la medición como una interacción que correlaciona el sistema con un aparato. Por tanto, la pregunta matemática inmediata es:
+\begin{quote}
+Dados dos sistemas cuánticos, ¿cuál es el espacio de estados del conjunto?
+\end{quote}
+
+\section{El espacio de estados producto tensorial}
+
+Llamemos \(A\) y \(I\) a los sistemas, con espacios de Hilbert \(\mathcal S_A\) y \(\mathcal S_I\). Su espacio compuesto es
+\begin{equation}
+\mathcal S_{AI}=\mathcal S_A\otimes\mathcal S_I.
+\label{eq:l6-tensor-space}
+\end{equation}
+Elijamos bases ortonormales \(\{\ket{a}\}\) y \(\{\ket{i}\}\) para los dos factores. Emparejemos cada vector de la base del primer sistema con cada vector de la base del segundo:
+\begin{equation}
+\ket{a}\otimes\ket{i}\equiv\ket{a\,i}.
+\end{equation}
+Si los espacios de los factores tienen dimensiones \(D_A\) y \(D_I\), entonces
+\begin{equation}
+\dim\mathcal S_{AI}=D_A D_I.
+\end{equation}
+El producto interno se factoriza:
+\begin{equation}
+\braket{b\,j}{a\,i}
+=\braket{b}{a}\braket{j}{i}
+=\delta_{ba}\delta_{ji}.
+\label{eq:l6-tensor-inner-product}
+\end{equation}
+Así, dos estados de la base compuesta son ortogonales siempre que difiera la etiqueta de cualquiera de los subsistemas.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}
+\caption{Los espacios de estados separados, su producto tensorial y la base ortonormal emparejada.}
+\lectureframe{00:24:05}
+\end{figure}
+
+Los vectores de la base emparejada no abarcan por sí solos todo el espacio. Su envolvente lineal completa es:
+\begin{equation}
+\ket{\Psi}=\sum_{a,i}c_{ai}\ket{a\,i},
+\qquad
+\sum_{a,i}|c_{ai}|^2=1.
+\label{eq:l6-general-tensor-state}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Son \(\ket{a}\) y \(\ket{i}\) vectores arbitrarios?}
+\lecturerresponse{Aquí pertenecen a las bases ortonormales elegidas. Se puede usar cualquier base ortonormal en cada factor. Emparejar esos vectores de base construye una base ortonormal del espacio compuesto; a continuación, se obtienen vectores arbitrarios mediante combinaciones lineales, como en la ecuación~\eqref{eq:l6-general-tensor-state}.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Depende el producto tensorial de las bases elegidas?}
+\lecturerresponse{Sí depende de ellas la descripción en coordenadas, pero no el espacio. Cambiar la base de cualquiera de los subsistemas solo cambia la base inducida con la que se describen los mismos vectores de \(\mathcal S_A\otimes\mathcal S_I\).}
+\end{classroomqa}
+
+\section{Dos espines y estados producto}
+
+Consideremos ahora dos espines. Denotemos las componentes del primero por \(\sigma_x,\sigma_y,\sigma_z\) y las del segundo por \(\tau_x,\tau_y,\tau_z\). En una base de \(z\), la base compuesta es
+\begin{equation}
+\ket{uu},\qquad \ket{ud},\qquad \ket{du},\qquad \ket{dd}.
+\label{eq:l6-two-spin-basis}
+\end{equation}
+La primera posición siempre corresponde a \(\sigma\) y la segunda a \(\tau\). Un estado general es
+\begin{equation}
+\ket{\Psi}
+=c_{uu}\ket{uu}+c_{ud}\ket{ud}
++c_{du}\ket{du}+c_{dd}\ket{dd}.
+\label{eq:l6-general-two-spin}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Si los dos espines interactúan, ¿cambian los propios vectores de base?}
+\lecturerresponse{No hace falta una base fija para seguir la dinámica. En la base elegida, la interacción cambia los coeficientes \(c_{ab}(t)\), no la definición de \(\ket{uu},\ket{ud},\ket{du},\ket{dd}\). Un estado que comienza como \(\ket{uu}\) puede evolucionar hasta convertirse en una superposición, o incluso en \(\ket{dd}\), mientras la base de coordenadas permanece igual.}
+\end{classroomqa}
+
+La construcción también debe superar una prueba de coherencia. Si los espines están muy separados y solo se examina \(\sigma\), las predicciones deben concordar con la teoría de un espín desarrollada antes de introducir \(\tau\). Los productos tensoriales están concebidos para conservar esa teoría local.
+
+Algunos estados de dos espines describen espines preparados de manera independiente. Por ejemplo, sea
+\begin{equation}
+\ket{R}=\frac{\ket{u}+\ket{d}}{\sqrt2}
+\end{equation}
+el autoestado de \(+1\) de la componente \(x\). Entonces
+\begin{equation}
+\ket{u}_{\sigma}\otimes\ket{R}_{\tau}
+=\frac{\ket{uu}+\ket{ud}}{\sqrt2}.
+\label{eq:l6-up-right-product}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Se pueden preparar los dos factores a lo largo de ejes distintos?}
+\lecturerresponse{Sí. Cada factor puede ser cualquier estado de un espín. La ecuación~\eqref{eq:l6-up-right-product} tiene el primer espín definido a lo largo de \(z\) y el segundo definido a lo largo de \(x\). Desarrollar el segundo factor en la base de \(z\) solo reescribe el mismo estado producto en la base compuesta.}
+\end{classroomqa}
+
+El estado producto más general es
+\begin{align}
+\ket{\Psi_{\rm prod}}
+&=(\alpha_u\ket{u}+\alpha_d\ket{d})
+\otimes(\beta_u\ket{u}+\beta_d\ket{d})\\
+&=\alpha_u\beta_u\ket{uu}
++\alpha_u\beta_d\ket{ud}
+\\
+&\quad
++\alpha_d\beta_u\ket{du}
++\alpha_d\beta_d\ket{dd}.
+\label{eq:l6-product-expansion}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_04.png}
+\caption{Un estado de dos espines factorizado, desarrollado en la base compuesta de cuatro estados.}
+\lectureframe{00:37:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué tipo de producto de vectores aparece en la ecuación~\eqref{eq:l6-product-expansion}?}
+\lecturerresponse{El espacio ambiente es el producto tensorial de los dos espacios de Hilbert. Un vector que se factoriza en un vector de cada espacio se denomina estado producto o tensor simple. La mayoría de los vectores de un espacio producto tensorial son sumas de esos productos y no se pueden escribir como un solo producto.}
+\end{classroomqa}
+
+La restricción se aprecia directamente en los coeficientes:
+\begin{equation}
+c_{uu}c_{dd}=c_{ud}c_{du}
+\qquad\text{for every product state}.
+\label{eq:l6-rank-one-condition}
+\end{equation}
+De manera equivalente, la matriz de coeficientes \(2\times2\) tiene rango uno. El recuento de parámetros lleva a la misma conclusión. Cuatro coeficientes complejos contienen ocho parámetros reales; la normalización elimina uno y la fase global irrelevante elimina otro, por lo que quedan seis para un estado puro general de dos espines. Cada estado puro de un espín requiere dos parámetros reales, así que para especificar dos espines por separado bastan cuatro. Por tanto, los estados producto ocupan un subconjunto especial de cuatro parámetros dentro del espacio de estados de dos espines, que tiene seis parámetros. Los demás estados están entrelazados.
+
+\section{Observables locales en el espacio compuesto}
+
+Los observables familiares de un espín deben conservarse dentro del sistema mayor. Más explícitamente,
+\begin{equation}
+\sigma_m\equiv\sigma_m\otimes I,
+\qquad
+\tau_n\equiv I\otimes\sigma_n,
+\qquad
+m,n\in\{x,y,z\}.
+\label{eq:l6-local-operators}
+\end{equation}
+La notación abreviada no causa problemas una vez fijada la convención para las posiciones. Usando
+\begin{equation}
+\begin{aligned}
+\sigma_x&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.4em]
+\sigma_y&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.4em]
+\sigma_z&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\end{aligned}
+\end{equation}
+los operadores del primer espín actúan mientras la etiqueta del segundo permanece como espectadora:
+\begin{align}
+\sigma_x\ket{u\,i}&=\ket{d\,i},
+&
+\sigma_x\ket{d\,i}&=\ket{u\,i},\\
+\sigma_z\ket{u\,i}&=\ket{u\,i},
+&
+\sigma_z\ket{d\,i}&=-\ket{d\,i}.
+\end{align}
+Para el segundo espín, la etiqueta del primero es la espectadora:
+\begin{align}
+\tau_x\ket{a\,u}&=\ket{a\,d},
+&
+\tau_x\ket{a\,d}&=\ket{a\,u},\\
+\tau_z\ket{a\,u}&=\ket{a\,u},
+&
+\tau_z\ket{a\,d}&=-\ket{a\,d}.
+\label{eq:l6-spectator-action}
+\end{align}
+La componente de \(y\) también invierte la posición sobre la que actúa, de modo que
+\(\sigma_y\ket{u}=i\ket{d}\) y
+\(\sigma_y\ket{d}=-i\ket{u}\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_05.png}
+\caption{Tabla de acción sobre el segundo espín: el primer índice permanece como espectador.}
+\lectureframe{00:47:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Aplicar \(\sigma_x\) significa que se ha realizado una medición de \(x\) y por qué el resultado no es una superposición?}
+\lecturerresponse{La acción de un operador no constituye por sí misma una medición. Multiplicar la matriz \(\sigma_x\) por el vector de la base de \(z\), \(\ket{u}\), da \(\ket{d}\). No se trata de una ecuación de autovalores: bajo la acción del operador, un autovector conservaría su dirección. De hecho, \(\ket{u}\) se transforma en un estado ortogonal, otra manera de ver por qué una medición de \(x\) sobre un autoestado de \(z\) es completamente aleatoria. Actuar sobre un vector que no es autoestado suele ser un paso algebraico intermedio cuyo significado físico depende de la magnitud completa que se esté calculando.}
+\end{classroomqa}
+
+Los operadores que actúan en factores distintos conmutan. Por ejemplo,
+\begin{equation}
+\sigma_x\tau_x\ket{uu}
+=\ket{dd}
+=\tau_x\sigma_x\ket{uu}.
+\end{equation}
+La misma igualdad se cumple para todos los vectores de la base compuesta y, por tanto, para cualquier estado:
+\begin{equation}
+[\sigma_m,\tau_n]=0
+\qquad\text{for all }m,n.
+\label{eq:l6-local-commutation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_06.png}
+\caption{La acción separada sobre cada posición hace que el conmutador \([\sigma_x,\tau_x]\) se anule.}
+\lectureframe{00:56:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué comprobarlo en un vector de base no basta para demostrar que dos operadores conmutan?}
+\lecturerresponse{La igualdad entre operadores exige que actúen igual sobre todos los vectores. Basta comprobarlo en todos los vectores de una base, porque la linealidad extiende entonces el resultado a cualquier superposición. Para operadores locales, el argumento es inmediato en los cuatro estados de base: cada operador cambia una posición distinta, así que el orden de aplicación no importa.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Hay observables que pertenezcan genuinamente al sistema de dos espines?}
+\lecturerresponse{Sí. Los productos como \(\sigma_x\tau_x\), \(\sigma_x\tau_y\) y las combinaciones lineales de esos productos permiten estudiar propiedades conjuntas. Los observables locales describen cada factor; los observables de correlación revelan cómo se relacionan los factores.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Están ya entrelazados los estados producto de espines preparados de manera independiente?}
+\lecturerresponse{No. En un estado producto, cada factor tiene su propio vector de estado y los valores esperados locales se factorizarán. El entrelazamiento aparece cuando el estado compuesto no se puede separar en un estado para \(\sigma\) y otro para \(\tau\).}
+\end{classroomqa}
+
+\section{El estado singlete}
+
+Un ejemplo de entrelazamiento máximo es
+\begin{equation}
+\ket{S}
+=\frac{1}{\sqrt2}\bigl(\ket{ud}-\ket{du}\bigr).
+\label{eq:l6-singlet}
+\end{equation}
+Los dos términos ya muestran una anticorrelación perfecta a lo largo de \(z\): siempre que un espín está hacia arriba, el otro está hacia abajo. El punto más profundo es que no se puede asignar a ninguno de los dos espines su propio estado puro.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_07.png}
+\caption{El estado antisimétrico de dos espines que identificaremos como el singlete.}
+\lectureframe{01:09:25}
+\end{figure}
+
+Para todo estado puro de un espín existe un vector unitario \(\bm n\) tal que
+\begin{equation}
+(\bm\sigma\cdot\bm n)\ket{\psi}=\ket{\psi}.
+\end{equation}
+De manera equivalente, para un estado puro de un espín, el vector de Bloch
+\begin{equation}
+\bm r
+=\bigl(\expect{\sigma_x},\expect{\sigma_y},\expect{\sigma_z}\bigr)
+\end{equation}
+tiene módulo uno. Por tanto, sus tres componentes no pueden anularse todas a la vez. Dado el estado, orientar el detector a lo largo de \(\bm r\) permite obtener \(+1\) con certeza. Los ejemplos conocidos son \(z\) para \(\ket{u}\), \(x\) para \((\ket{u}+\ket{d})/\sqrt2\) y una de las direcciones \(y\) para \((\ket{u}+i\ket{d})/\sqrt2\).
+
+Calculemos ahora un promedio local en el singlete:
+\begin{align}
+\expect{\sigma_z}_S
+&=\frac12
+(\bra{ud}-\bra{du})\sigma_z
+(\ket{ud}-\ket{du})\\
+&=\frac12
+(\bra{ud}-\bra{du})
+(\ket{ud}+\ket{du})\\
+&=0.
+\end{align}
+Para \(\sigma_x\),
+\begin{equation}
+\sigma_x\ket{S}
+=\frac{\ket{dd}-\ket{uu}}{\sqrt2},
+\end{equation}
+que es ortogonal a \(\ket{S}\), así que \(\expect{\sigma_x}_S=0\). Las fases aportadas por \(\sigma_y\) no alteran esa ortogonalidad; por tanto,
+\begin{equation}
+\expect{\sigma_x}_S
+=\expect{\sigma_y}_S
+=\expect{\sigma_z}_S=0.
+\label{eq:l6-zero-local-sigma}
+\end{equation}
+Por simetría,
+\begin{equation}
+\expect{\tau_x}_S
+=\expect{\tau_y}_S
+=\expect{\tau_z}_S=0.
+\label{eq:l6-zero-local-tau}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_08.png}
+\caption{La pizarra muestra que los promedios locales del espín se anulan y recoge la inversión de la componente \(y\) usada para completar la comprobación.}
+\lectureframe{01:14:20}
+\end{figure}
+
+El estado completo de los dos espines es puro y se conoce perfectamente, pero cada parte está localmente despolarizada. Puesto que ningún estado puro de un espín tiene un vector de Bloch nulo, \(\ket{S}\) no puede ser un estado producto.
+
+\begin{classroomqa}
+\audiencequestion{¿Tendría un estado producto ordinario alguna dirección con polarización local distinta de cero?}
+\lecturerresponse{Sí. La demostración para un espín se aplica al factor pertinente, mientras que el otro factor actúa solo como espectador. Así, cada factor de un estado producto puro tiene un vector de Bloch unitario. El singlete no cumple esta propiedad de los estados producto para ninguno de los dos espines.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo se pueden preparar dos espines en el singlete?}
+\lecturerresponse{Un acoplamiento que favorezca la antialineación puede hacer que el singlete sea el estado de menor energía. Se ponen los espines en interacción y se deja que el par pierda energía hacia su entorno; puede relajarse hasta el singlete. Esta afirmación depende de la interacción. Para el hamiltoniano antiferromagnético isotrópico \(H_{\rm int}=J\,\bm\sigma\cdot\bm\tau\) con \(J>0\), el singlete está por debajo de los tres estados triplete.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cuánto tarda esa relajación?}
+\lecturerresponse{La escala temporal depende de la separación entre los espines, de la intensidad de su acoplamiento mutuo, de sus momentos magnéticos y de su acoplamiento al entorno electromagnético que se lleva la energía. En general, un acoplamiento más intenso implica una relajación más rápida.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué puede tener menor energía la combinación antisimétrica que la simétrica?}
+\lecturerresponse{Para partículas de espín \(\tfrac12\), el estado antisimétrico tiene espín total cero, mientras que los tres estados simétricos forman un triplete de espín total uno. Una interacción proporcional a \(+\bm\sigma\cdot\bm\tau\) asigna el autovalor \(-3\) al singlete y \(+1\) al triplete; por eso, un acoplamiento positivo sitúa al singlete a menor energía. Otros hamiltonianos no tienen por qué ordenar los niveles del mismo modo.}
+\end{classroomqa}
+
+\subsection{El mismo estado en cualquier base de espín}
+
+El entrelazamiento no desaparece al elegir una base local más conveniente. Una medida independiente de la base, que desarrollaremos más adelante, es la entropía de entrelazamiento. El singlete presenta una simetría aún más marcada. Con
+\begin{equation}
+\ket{u}=\frac{\ket{R}+\ket{L}}{\sqrt2},
+\qquad
+\ket{d}=\frac{\ket{R}-\ket{L}}{\sqrt2},
+\end{equation}
+la sustitución en la ecuación~\eqref{eq:l6-singlet} da
+\begin{equation}
+\ket{S}
+=\frac{\ket{LR}-\ket{RL}}{\sqrt2}.
+\label{eq:l6-singlet-x-basis}
+\end{equation}
+En cualquier base de espín ortonormal común \(\{\ket{\rm in},\ket{\rm out}\}\),
+\begin{equation}
+\ket{S}
+=\frac{\ket{{\rm in}\,{\rm out}}-\ket{{\rm out}\,{\rm in}}}{\sqrt2},
+\label{eq:l6-singlet-any-basis}
+\end{equation}
+salvo una fase global irrelevante. Bajo una rotación común, los tres estados triplete se mezclan entre sí; el sector unidimensional del singlete solo puede reproducirse a sí mismo.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_09.png}
+\caption{El patrón antisimétrico se conserva al pasar de las orientaciones arriba-abajo a derecha-izquierda y a otras bases de espín comunes.}
+\lectureframe{01:21:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Es el entrelazamiento un mero artefacto de la base usada para escribir el estado?}
+\lecturerresponse{No. Los cambios locales de base alteran los coeficientes, pero no si el estado se factoriza; la entropía de entrelazamiento cuantifica ese hecho invariante. En el singlete, las rotaciones comunes hacen que la invariancia sea especialmente visible: su forma antisimétrica se reproduce en todas las bases de espín.}
+\end{classroomqa}
+
+\section{Observables de correlación}
+
+Los promedios locales se anulan, así que la información del singlete debe residir en observables conjuntos. Empecemos con
+\begin{equation}
+\sigma_z\tau_z\ket{ud}=-\ket{ud},
+\qquad
+\sigma_z\tau_z\ket{du}=-\ket{du}.
+\end{equation}
+Por tanto,
+\begin{equation}
+\sigma_z\tau_z\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_z\tau_z}_S=-1.
+\label{eq:l6-zz-correlation}
+\end{equation}
+El resultado no es solo un promedio: el singlete es un autoestado del producto, así que las mediciones de \(z\) a lo largo de un mismo eje siempre arrojan signos opuestos.
+
+Ambos operadores de \(x\) invierten las posiciones sobre las que actúan:
+\begin{equation}
+\sigma_x\tau_x\ket{ud}=\ket{du},
+\qquad
+\sigma_x\tau_x\ket{du}=\ket{ud}.
+\end{equation}
+El intercambio de los dos términos invierte el signo del estado antisimétrico:
+\begin{equation}
+\sigma_x\tau_x\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_x\tau_x}_S=-1.
+\end{equation}
+Las dos fases de los operadores de \(y\) se cancelan del mismo modo, lo que da
+\begin{equation}
+\expect{\sigma_y\tau_y}_S=-1.
+\end{equation}
+En cambio, el valor esperado de componentes cartesianas distintas es cero. Por ejemplo,
+\begin{equation}
+\sigma_x\tau_z\ket{S}
+=-\frac{\ket{dd}+\ket{uu}}{\sqrt2},
+\qquad
+\expect{\sigma_x\tau_z}_S=0.
+\end{equation}
+Todos estos resultados quedan resumidos en
+\begin{equation}
+\expect{\sigma_m\tau_n}_S=-\delta_{mn},
+\qquad
+\expect{(\bm\sigma\cdot\bm a)(\bm\tau\cdot\bm b)}_S
+=-\bm a\cdot\bm b.
+\label{eq:l6-singlet-correlation-tensor}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_10.png}
+\caption{El cálculo de la correlación muestra \(\expect{\sigma_x\tau_x}=-1\) y el resultado para ejes distintos \(\expect{\sigma_x\tau_z}=0\).}
+\lectureframe{01:32:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué significado físico tiene el producto de dos observables? ¿Se realiza una medición después de la otra?}
+\lecturerresponse{En general, un producto hermítico es otro observable del espacio compuesto. Aquí, todo \(\sigma_m\) conmuta con todo \(\tau_n\), por lo que las dos componentes locales pueden medirse simultáneamente y multiplicarse sus resultados numéricos. El operador producto representa ese resultado conjunto; no se requiere ningún orden temporal.}
+\end{classroomqa}
+
+En un estado producto, los promedios conjuntos se factorizarán:
+\begin{equation}
+\expect{\sigma_m\tau_n}_{\rm prod}
+=\expect{\sigma_m}_{\sigma}\expect{\tau_n}_{\tau}.
+\end{equation}
+El singlete viola esta factorización al máximo. Cada factor del miembro derecho sería cero, mientras que un producto de componentes a lo largo de un mismo eje en el miembro izquierdo es \(-1\). Por separado, los espines son completamente aleatorios; conjuntamente, sus componentes iguales son con certeza opuestas.
+
+\begin{classroomqa}
+\audiencequestion{¿Toda interacción entre dos espines produce entrelazamiento?}
+\lecturerresponse{Un acoplamiento genérico puede entrelazar un estado inicialmente factorizado, y muchas interacciones ordinarias lo hacen. No es literalmente inevitable: un estado producto elegido especialmente puede adquirir solo una fase, y un hamiltoniano puramente local no puede entrelazar los factores. Lo que importa es que haya un acoplamiento no trivial que actúe sobre un estado al que no conserva como estado producto.}
+\end{classroomqa}
+
+\section{De la correlación a la pregunta de Bell}
+
+La anticorrelación perfecta por sí sola no es paradójica. Imaginemos que metemos una moneda de diez centavos y otra de cinco en un bolsillo, repartimos una moneda sin mirar a Alicia y la otra a Bob y los enviamos lejos el uno del otro. Cuando Alicia ve qué moneda tiene, sabe enseguida cuál tiene Bob. La correlación se estableció cuando las monedas estaban juntas; conocer un resultado no envía ninguna señal al otro lugar.
+
+El singlete comparte esa característica elemental, pero añade una libertad crucial: Alicia y Bob pueden elegir cualquier dirección de medición, y la mecánica cuántica predice la correlación variable de forma continua \(-\bm a\cdot\bm b\). El teorema de Bell plantea si todas esas correlaciones pueden surgir de instrucciones clásicas locales que las partículas llevaban de antemano.
+
+\begin{classroomqa}
+\audiencequestion{¿Es este el estado que se usa en el teorema de Bell?}
+\lecturerresponse{Sí. Los argumentos del tipo de Bell usan pares entrelazados como el singlete, no un estado producto definido \(\ket{ud}\). La distinción importa porque un estado producto proporciona descripciones locales separadas, mientras que el singlete contiene una estructura de correlación inseparable en todas las bases comunes.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué se llama estadística a la anticorrelación si los resultados a lo largo de un mismo eje siempre son opuestos?}
+\lecturerresponse{Cada resultado local es aleatorio: Alicia no puede predecir si obtendrá \(+1\) o \(-1\). La relación condicional es exacta: una vez conocido un resultado para un eje común, el otro queda fijado como su opuesto. La correlación se refiere a la distribución conjunta, no a la incertidumbre del producto para un mismo eje.}
+\end{classroomqa}
+
+Una manera útil de precisar la cuestión es mediante una simulación. Un solo ordenador clásico puede imitar todos los experimentos con un espín: almacenar su estado, hacerlo evolucionar según la ecuación de Schr\"odinger, calcular las probabilidades solicitadas y usar un generador de números aleatorios para seleccionar un resultado. Se pueden reproducir tanto las mediciones repetidas como la precesión magnética.
+
+Dividamos ahora un par entrelazado entre dos ordenadores clásicos. Dejemos que interactúen mientras se prepara el par; después, desconectémoslos y elijamos de forma independiente las direcciones de medición en lugares distantes. Ningún par de programas clásicos locales separados, ni siquiera con aleatoriedad compartida fijada de antemano, puede reproducir las correlaciones cuánticas para todas las elecciones de direcciones. Es posible una simulación clásica global, pero debe conservar acceso al estado conjunto o coordinar de algún otro modo ambos lados, de una forma que no corresponde a un modelo de variables ocultas locales.
+
+Este fallo de la contabilidad clásica local no proporciona un canal de comunicación más rápido que la luz. Los resultados locales de Alicia siguen siendo aleatorios, así que ella no puede controlar un mensaje que Bob pueda leer sin comparar después sus registros. La terminología sobre la no localidad varía, pero la distinción operacional es firme: las correlaciones de Bell descartan las explicaciones clásicas locales y, al mismo tiempo, preservan la ausencia de señalización.
+
+La construcción de estados compuestos ha producido algo realmente nuevo. Los productos tensoriales preservan localmente la antigua física de un espín, pero sus vectores genéricos no se pueden separar en estados independientes. En el singlete, toda polarización local se anula, mientras que las componentes conjuntas del espín presentan una anticorrelación perfecta e independiente de la base. El siguiente paso consiste en convertir esta estructura en la prueba cuantitativa de Bell del razonamiento clásico.

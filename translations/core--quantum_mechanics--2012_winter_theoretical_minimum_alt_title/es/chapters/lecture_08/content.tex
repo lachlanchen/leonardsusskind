@@ -1,0 +1,652 @@
+\chapter{Localidad, estados continuos y momento}
+
+\lectureoverview{El entrelazamiento puede crearse y deshacerse mediante una dinámica reversible; sin embargo, las mediciones se vuelven efectivamente irreversibles cuando una parte del sistema entrelazado escapa a nuestro control. Esta distinción conduce a una prueba precisa de localidad: Bob puede aplicar cualquier operación unitaria en su entorno, pero la matriz de densidad reducida de Alice y, por tanto, todas las estadísticas que ella puede obtener por sí sola, permanecen sin cambios. Un experimento mental de simulación clásica permite aislar entonces lo genuinamente no clásico. Es fácil imitar un espín, y una computadora central puede imitar un par entrelazado, pero máquinas locales separadas no pueden reproducir todas las correlaciones entrelazadas sin comunicación ilícita o un modelo de variables ocultas local en el sentido de Bell, que finalmente falla. Después, la clase deja atrás los espines y pasa a una partícula en una recta. Las sumas discretas se convierten en integrales, las deltas de Kronecker en deltas de Dirac y las funciones de onda en vectores de un espacio de dimensión infinita. La multiplicación por \(x\) da la posición; la derivación es antihermítica; al multiplicarla por \(-i\) se obtiene el operador hermítico de momento. El cálculo final, \([x,p]=i\hbar\), vuelve a relacionar los conmutadores cuánticos con los corchetes de Poisson clásicos y apunta hacia los paquetes de ondas, las transformadas de Fourier y la evolución de Schr\"odinger.}
+
+\section{El entrelazamiento no es irreversibilidad}
+
+Empecemos por una distinción que es fácil perder de vista al hablar de mediciones. Supongamos que dos espines llegan en un estado producto, interactúan, se separan y quedan en un estado entrelazado. ¿Tiene que perdurar el entrelazamiento para siempre? No. La interacción fue unitaria, así que otra interacción adecuada puede deshacerla. Se pueden reflejar los espines, volver a juntarlos y disponer una evolución inversa que devuelva el par a un estado producto. No existe una ley según la cual el entrelazamiento en sí solo pueda aumentar.
+
+La situación cambia en la práctica cuando se descarta uno de los miembros del par. Si un electrón se aleja hacia un entorno no controlado, su compañero, que permanece cerca, sigue entrelazado con algo, pero los grados de libertad ausentes ya no están disponibles para aplicar la operación inversa. En principio, el electrón distante podría reflejarse y volver; en la práctica, ya se ha ido. En este sentido, una medición es irreversible \emph{para nosotros}: las correlaciones se han dispersado entre grados de libertad que no controlamos.
+
+\begin{classroomqa}
+\audiencequestion{Si dos sistemas se entrelazan, ¿pueden después dejar de estarlo?}
+\lecturerresponse{Sí. La evolución unitaria es reversible. Una segunda interacción puede implementar la inversa de la primera y restablecer un estado producto. La irreversibilidad aparece cuando se descartan grados de libertad relevantes o estos quedan absorbidos en un entorno no controlado; no se debe al entrelazamiento por sí solo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Entonces, ¿por qué una medición ya realizada parece irreversible?}
+\lecturerresponse{Porque el sistema medido ha quedado correlacionado con un aparato, un observador y, en última instancia, un entorno grande. Invertir el estado completo exigiría controlar todos esos registros. La evolución microscópica puede seguir siendo unitaria, aunque la operación sea inaccesible desde la descripción reducida del observador.}
+\end{classroomqa}
+
+\section{El estado disponible para Alice}
+
+Dividamos un sistema compuesto en los grados de libertad de Alice \(a\) y los de Bob \(b\), con coeficientes del estado puro
+\begin{equation}
+\Psi(a,b)=\braket{a,b}{\Psi}.
+\end{equation}
+Alice no tiene acceso al laboratorio de Bob. Por tanto, su descripción local completa no suele ser una función de onda. Es la matriz de densidad reducida
+\begin{equation}
+\rho_A(a',a)
+=
+\sum_b \Psi^*(a',b)\Psi(a,b).
+\label{eq:l8-reduced-density}
+\end{equation}
+La suma elimina el índice de Bob. Lo que queda tiene un índice de bra y otro de ket para Alice, y contiene todas las distribuciones de probabilidad que ella puede obtener mediante experimentos realizados enteramente en su entorno.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_01.png}
+\caption{La matriz de densidad reducida de Alice, obtenida al sumar la función de onda conjunta sobre el índice de la base de Bob.}
+\lectureframe{00:04:34}
+\end{figure}
+
+Aquí, el entorno de Alice y el de Bob deben entenderse en sentido amplio. Cada uno puede incluir aparatos, campos magnéticos, técnicos y cualesquiera otros grados de libertad con los que ese observador pueda interactuar. La afirmación de localidad no dice que Bob no pueda cambiar su propio sistema. Puede hacerlo de muchas maneras. Afirma que, mientras permanezca lejos, nada de lo que haga localmente cambia la ecuación~\eqref{eq:l8-reduced-density}.
+
+\section{La unitaria local de Bob}
+
+Primero, dejemos de lado a Alice y describamos únicamente la manipulación de Bob. Si Bob cambia un campo magnético o modifica de otro modo su Hamiltoniano local, los coeficientes de su función de onda experimentan una transformación unitaria,
+\begin{equation}
+\psi_M(b)
+=
+\sum_{b'}U_{bb'}\psi(b').
+\label{eq:l8-bob-unitary}
+\end{equation}
+En la descripción del sistema compuesto, el índice de Alice es un espectador:
+\begin{equation}
+\Psi_M(a,b)
+=
+\sum_{b'}U_{bb'}\Psi(a,b').
+\label{eq:l8-composite-unitary}
+\end{equation}
+La conjugación compleja convierte la transformación del ket en la transformación correspondiente del bra,
+\begin{equation}
+\Psi_M^*(a',b)
+=
+\sum_{b''}\Psi^*(a',b'')U^\dagger_{b''b}.
+\label{eq:l8-composite-bra}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_02.png}
+\caption{Una transformación unitaria actúa sobre el índice del ket de Bob, mientras que la matriz adjunta hermítica actúa sobre el índice correspondiente del bra.}
+\lectureframe{00:12:54}
+\end{figure}
+
+Recalculemos ahora la matriz de densidad de Alice:
+\begin{align}
+\rho_{A,M}(a',a)
+&=
+\sum_b\Psi_M^*(a',b)\Psi_M(a,b) \notag\\
+&=
+\sum_{b,b',b''}
+\Psi^*(a',b'')
+U^\dagger_{b''b}U_{bb'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')
+(U^\dagger U)_{b''b'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')\delta_{b''b'}\Psi(a,b') \notag\\
+&=
+\sum_{b'}\Psi^*(a',b')\Psi(a,b') \notag\\
+&=
+\rho_A(a',a).
+\label{eq:l8-locality-proof}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_03.png}
+\caption{El cálculo de localidad en la pizarra: \(U^\dagger U\) se reduce a la identidad dentro del estado reducido de Alice.}
+\lectureframe{00:14:27}
+\end{figure}
+
+La demostración completa consiste en la contracción
+\begin{equation}
+\sum_bU^\dagger_{b''b}U_{bb'}
+=(U^\dagger U)_{b''b'}
+=\delta_{b''b'}.
+\label{eq:l8-unitarity-contraction}
+\end{equation}
+No se hizo ninguna suposición de factorización. La ecuación~\eqref{eq:l8-locality-proof} se cumple tanto si el estado conjunto es un estado producto como si está máximamente entrelazado. Por tanto, todo valor esperado que Alice pueda medir por sí sola,
+\begin{equation}
+\expect{L_A}
+=
+\operatorname{Tr}_A(\rho_A L_A),
+\end{equation}
+es invariante ante la unitaria local de Bob.
+
+\begin{classroomqa}
+\audiencequestion{Si Bob está haciendo algo a su espín, ¿por qué eso no constituye ya una violación de la unitariedad?}
+\lecturerresponse{Hacer algo no significa aplicar una transformación no unitaria. Bob puede girar un imán, cambiar un Hamiltoniano local o dejar que su espín preceda. Son evoluciones unitarias ordinarias. Modifican su propio estado y las probabilidades de sus propios resultados, pero el cálculo anterior muestra que no alteran el estado reducido de Alice.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Significa entonces que la mecánica cuántica respeta la localidad?}
+\lecturerresponse{Respeta la localidad operacional que usamos aquí: Bob no puede influir en las estadísticas de las mediciones disponibles para Alice actuando únicamente en su entorno. Las correlaciones conjuntas entrelazadas siguen siendo no clásicas, pero no permiten transmitir una señal controlable.}
+\end{classroomqa}
+
+\subsection{Por qué importa la unitariedad}
+
+La unitariedad no era un detalle decorativo. Proporcionó la identidad de la ecuación~\eqref{eq:l8-unitarity-contraction}. En términos usados antes, la unitariedad expresa la conservación de las distinciones: dos vectores de estado distinguibles siguen siéndolo bajo una evolución reversible. Si Bob dispusiera de una evolución determinista siquiera ligeramente no unitaria, \(U^\dagger U\) no sería la identidad. La matriz de densidad reducida de Alice podría cambiar de inmediato, lo que permitiría a Bob enviar señales más rápido que la luz.
+
+Esta conexión estrecha es una de las razones por las que es difícil modificar la mecánica cuántica por partes. Al cambiar la ley de evolución, pueden fallar también principios que parecen remotos. La localidad, la conservación de la probabilidad y la evolución reversible del estado forman parte de una misma estructura.
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo permitiría una operación no unitaria enviar una señal más rápido que la luz?}
+\lecturerresponse{Bob decidiría si aplicarla o no. Si la transformación cambiara \(\rho_A\), Alice podría distinguir entre ambas opciones repitiendo mediciones locales sobre un conjunto de sistemas. El cambio se produciría sin que una señal se propagara desde Bob, precisamente lo que impide la cancelación unitaria.}
+\end{classroomqa}
+
+\section{El colapso cambia las condiciones, no las distribuciones marginales distantes}
+
+El ejemplo del divisor de haz hace vívida la inquietud. Se coloca un solo fotón en una superposición de dos trayectorias: una hacia Alice y otra hacia Bob. Si se activa el detector de Alice, el estado condicionado asigna amplitud cero a una activación posterior en la trayectoria de Bob. Es tentador decir que Alice ha cambiado instantáneamente el fotón de Bob.
+
+Lo que Bob puede observar sin conocer el resultado de Alice es otra cosa. Antes de recibir ningún mensaje, debe promediar sobre los posibles resultados de Alice. Esa media no condicionada se describe mediante su matriz de densidad reducida y no cambia. El clic de Alice determina qué subensemble condicionado describe una ejecución una vez conocido su resultado; no cambia la distribución marginal local de Bob. La distinción entre
+\begin{equation}
+\rho_B
+\qquad\text{and}\qquad
+\rho_{B\mid A=\text{click}}
+\end{equation}
+es la distinción entre no señalización y correlaciones aprovechables.
+
+\begin{classroomqa}
+\audiencequestion{Cuando se activa un detector, ¿no colapsa instantáneamente a cero la función de onda del otro brazo?}
+\lecturerresponse{El estado condicionado por ese clic cambia, pero el observador distante no conoce la condición hasta que recibe un mensaje ordinario. La matriz de densidad no condicionada de Bob y todas sus estadísticas locales promedio permanecen sin cambios. El colapso no puede usarse como telégrafo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Se debe la confusión, en parte, a confundir el estado con la información sobre el estado?}
+\lecturerresponse{Esa formulación resulta sugerente, pero sigue siendo demasiado imprecisa. La distinción concreta es entre un estado conjunto, un estado reducido y un estado condicionado por un resultado comunicado. Es más seguro mantener separados esos tres objetos matemáticos que intentar resolver la cuestión usando únicamente la palabra información.}
+\end{classroomqa}
+
+La inquietud de Einstein--Podolsky--Rosen persiste, sin embargo. Un estado singlete puede darnos conocimiento máximo del \emph{todo}, aunque ninguno de sus constituyentes tenga un estado local puro. Esta inversión de la expectativa clásica---conocer el todo sin asignar estados puros definidos a las partes---no es un efecto de señalización, pero sí es verdaderamente peculiar. Para poner de manifiesto esa peculiaridad con mayor claridad, convirtamos la mecánica cuántica en un problema de programación.
+
+\section{Un simulador clásico para un espín}
+
+Dibujemos en la pantalla de una computadora un aparato de espín. El usuario puede orientarlo, pulsar un botón de medición \(M\) y leer \(+1\) o \(-1\). En la computadora clásica se almacenan dos amplitudes complejas,
+\begin{equation}
+\alpha_u,\qquad \alpha_d,
+\qquad
+|\alpha_u|^2+|\alpha_d|^2=1.
+\label{eq:l8-one-spin-amplitudes}
+\end{equation}
+Entre mediciones, la computadora integra la ecuación de Schr\"odinger correspondiente. Un campo magnético simulado puede hacer que las amplitudes precesen exactamente como lo haría el estado de un espín real.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_04.png}
+\caption{El simulador de un espín: un aparato orientable y un botón de medición conectados a una computadora que almacena dos amplitudes.}
+\lectureframe{00:27:47}
+\end{figure}
+
+Cuando el usuario pulsa \(M\), un generador de números seudoaleatorios selecciona un resultado con probabilidades de Born
+\begin{equation}
+P(+1)=|\alpha_u|^2,
+\qquad
+P(-1)=|\alpha_d|^2.
+\label{eq:l8-one-spin-born}
+\end{equation}
+La computadora muestra el signo seleccionado y luego actualiza el estado. Tras \(+1\),
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(1,0),
+\end{equation}
+mientras que, tras \(-1\),
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(0,1).
+\end{equation}
+A continuación, reanuda la evolución unitaria a partir del estado posterior a la medición. Si el usuario gira el aparato antes de pulsar \(M\), la computadora cambia de base y calcula las probabilidades correspondientes al nuevo eje.
+
+El hardware no requiere nada específicamente cuántico. Basta un algoritmo seudoaleatorio determinista para producir una secuencia que al usuario le parezca aleatoria. Para un solo espín, esta imitación clásica puede ser operacionalmente indistinguible del experimento de laboratorio.
+
+\begin{classroomqa}
+\audiencequestion{¿Para qué sirve el botón de medición? ¿Importa el tiempo transcurrido antes de pulsarlo?}
+\lecturerresponse{El botón marca el instante en que el simulador muestrea la distribución de Born y actualiza las amplitudes almacenadas. Mientras se espera, las amplitudes evolucionan bajo el Hamiltoniano. Si el Hamiltoniano es nulo, no hay cambios con el tiempo; si hay un campo magnético, el espín simulado precesa antes de la medición.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Quién decide cuándo pulsar el botón o cómo orientar el aparato?}
+\lecturerresponse{En este modelo, el experimentador proporciona esos parámetros. El simulador sigue el estado de manera continua y, cuando se pulsa el botón, utiliza el eje elegido y el instante de la medición. Más adelante volveremos al supuesto de que los parámetros pueden elegirse independientemente del par preparado.}
+\end{classroomqa}
+
+\section{Dos espines: dónde falla la simulación local}
+
+Dos espines en un estado producto siguen siendo fáciles de simular. Demos a Alice una computadora que almacene las amplitudes \(\alpha_u,\alpha_d\) y a Bob otra que almacene \(\beta_u,\beta_d\). Cada máquina hace evolucionar y mide su propio espín. No hace falta comunicación porque los coeficientes conjuntos se factorizan:
+\begin{equation}
+\Psi(a,b)=\alpha_a\beta_b.
+\end{equation}
+
+Un estado arbitrario de dos espines requiere cuatro coeficientes,
+\begin{equation}
+\alpha_{uu},\qquad
+\alpha_{ud},\qquad
+\alpha_{du},\qquad
+\alpha_{dd},
+\qquad
+\sum_{a,b}|\alpha_{ab}|^2=1.
+\label{eq:l8-four-amplitudes}
+\end{equation}
+Una sola computadora central puede almacenar estos números y hacerlos evolucionar mediante la ecuación de Schr\"odinger en cuatro dimensiones. Cuando cualquiera de los observadores mide, la máquina central muestrea la probabilidad marginal correcta, descarta las componentes incompatibles, renormaliza las componentes restantes y continúa a partir del estado condicionado.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_05.png}
+\caption{Un simulador central almacena las cuatro amplitudes de un estado arbitrario de dos espines y permanece conectado a ambas estaciones de medición.}
+\lectureframe{00:37:47}
+\end{figure}
+
+Esta construcción simula perfectamente el entrelazamiento mientras el procesador central sigue conectado a ambos lados. El problema empieza cuando se copian las cuatro amplitudes en dos máquinas, se las separa, se desconectan los cables y se deja que cada máquina use su propio generador aleatorio. Para el singlete,
+\begin{equation}
+\ket{\Psi^-}
+=
+\frac{1}{\sqrt2}
+\left(
+\ket{u}_A\ket{d}_B-\ket{d}_A\ket{u}_B
+\right),
+\label{eq:l8-singlet}
+\end{equation}
+las mediciones sobre ejes iguales deben dar resultados opuestos. En cambio, elecciones aleatorias independientes pueden producir \(++\) o \(--\), de modo que se pierde la correlación, aunque ambas máquinas empezaran con una copia de los coeficientes conjuntos.
+
+\begin{classroomqa}
+\audiencequestion{¿Podrían las dos máquinas compartir una fuente de números aleatorios antes de separarse?}
+\lecturerresponse{La aleatoriedad compartida puede imponer una correlación prescrita para un eje de medición fijo. El problema más profundo de Bell pregunta si existe un único esquema local que reproduzca las correlaciones cuánticas para cualquier par de ejes elegidos independientemente. Las variables compartidas cargadas de antemano se incluyen entre los modelos locales de Bell, y ningún modelo de ese tipo reproduce la función de correlación cuántica completa.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Son independientes las cuatro amplitudes?}
+\lecturerresponse{Son cuatro coordenadas de un mismo estado conjunto normalizado, no cuatro estados locales independientes. En un estado entrelazado no pueden escribirse como \(\alpha_a\beta_b\). Una vez seleccionado un resultado local, los coeficientes conjuntos restantes deben actualizarse de manera coherente; dos copias desconectadas no realizan automáticamente actualizaciones concordantes.}
+\end{classroomqa}
+
+\subsection{Qué significan los cables ocultos}
+
+Un generador aleatorio central conectado a ambas estaciones podría coordinar los resultados. En un simulador clásico ordinario, esos cables también serían canales de comunicación. Bob podría enviar deliberadamente un bit a Alice y, si el enlace fuera instantáneo, la máquina violaría la localidad.
+
+El sistema cuántico no le concede esa libertad a Bob. Sus transformaciones locales permitidas son unitarias, y la demostración con la matriz de densidad reducida ya mostró que ninguna de ellas modifica las estadísticas marginales de Alice. Por tanto, los cables del simulador indican que la contabilidad clásica ordinaria tiene una estructura inadecuada, no que la naturaleza contenga cables superlumínicos accesibles.
+
+\begin{classroomqa}
+\audiencequestion{¿Los cables que requiere el simulador clásico representan una no localidad física?}
+\lecturerresponse{Representan la coordinación adicional que necesita un modelo clásico ingenuo. Si fueran cables ordinarios utilizables, permitirían transmitir señales y no modelarían el experimento cuántico. La conclusión más prudente es que la simulación clásica local y la mecánica cuántica tienen estructuras lógicas distintas, no que se hayan descubierto cables ocultos de comunicación.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si Alice y Bob reciben cada uno un bit aleatorio, pero los bits están perfectamente correlacionados, ¿qué tiene eso de extraño?}
+\lecturerresponse{No tiene nada de extraño una correlación preparada de antemano: pueden producirla unos sobres idénticos o semillas aleatorias compartidas. El contenido no clásico aparece cuando Alice y Bob eligen independientemente entre ajustes incompatibles y las correlaciones resultantes violan una desigualdad de Bell, aunque cada resultado local siga siendo aleatorio.}
+\end{classroomqa}
+
+El experimento mental también contiene una premisa que conviene explicitar: se considera que los ajustes de medición son elecciones independientes. Alice y Bob deciden cuándo pulsar sus botones y cómo orientar sus aparatos, sin que esas elecciones estén fijadas en secreto por las variables de la fuente. Cuando se incluye a los observadores y sus mecanismos de decisión dentro de un único sistema físico cerrado, el lenguaje filosófico de la libre elección se vuelve delicado. Los experimentos de Bell operacionales formulan la condición necesaria como independencia de medición y utilizan ajustes generados externamente y separados espacialmente. La clase deja abierta la cuestión metafísica, pero conserva la premisa experimental.
+
+\begin{classroomqa}
+\audiencequestion{¿Incluir a Alice y Bob dentro del sistema físico abre una escapatoria?}
+\lecturerresponse{Pone de manifiesto un supuesto: los ajustes no deben estar correlacionados de antemano con las variables ocultas que preparan el par. Se puede debatir sobre el libre albedrío, pero la afirmación comprobable es la independencia de medición. Es lógicamente posible abandonarla, aunque eso cambia la carga explicativa en vez de proporcionar una simulación local ordinaria.}
+\end{classroomqa}
+
+\section{De los espines a una partícula en una recta}
+
+Los espines han llevado la discusión desde los vectores de dimensión finita hasta el entrelazamiento y la localidad. Ampliemos ahora el espacio de Hilbert. Consideremos una partícula que se mueve sobre una recta infinita. Un autoestado de posición se denota
+\begin{equation}
+\ket{x},
+\end{equation}
+y significa que la partícula tiene una posición definida \(x\). Estos kets forman una base etiquetada de manera continua. Un estado general es una superposición de ellos, y su función de onda en el espacio de posiciones es
+\begin{equation}
+\psi(x)=\braket{x}{\Psi}.
+\label{eq:l8-position-wavefunction}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_06.png}
+\caption{La función de onda en el espacio de posiciones como proyección del estado abstracto sobre el ket de la base \(\ket{x}\).}
+\lectureframe{00:56:51}
+\end{figure}
+
+La posición se usa aquí como etiqueta completa de la base. Esto no significa que un estado clásico pueda especificarse solo mediante la posición, ni que la partícula tenga simultáneamente posición y momento definidos. Significa que todo vector de estado cuántico puede desarrollarse en la base de posiciones. El momento aparecerá como un operador que actúa sobre esos coeficientes en el espacio de posiciones.
+
+La regla de Born da ahora una \emph{densidad} de probabilidad,
+\begin{equation}
+\rho(x)=|\psi(x)|^2.
+\label{eq:l8-probability-density}
+\end{equation}
+Para una variable continua, la probabilidad de un punto exacto suele ser cero. La probabilidad de encontrar la partícula en un intervalo es
+\begin{equation}
+P(x_1<x<x_2)
+=
+\int_{x_1}^{x_2}|\psi(x)|^2\,dx,
+\end{equation}
+y la normalización exige
+\begin{equation}
+\int_{-\infty}^{\infty}|\psi(x)|^2\,dx=1.
+\label{eq:l8-continuous-normalization}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo puede la posición por sí sola constituir una base completa, si una partícula clásica necesita tanto posición como momento?}
+\lecturerresponse{La completitud se refiere aquí a la representación de un vector cuántico. Los coeficientes \(\psi(x)\) para todos los valores de \(x\) especifican el estado, y la información sobre el momento está codificada en sus fases y variación espacial. Las bases de posición y de momento son distintas y más adelante veremos que están relacionadas por una transformada de Fourier; no son etiquetas clásicas simultáneas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es \(|\psi(x)|^2\) la probabilidad de encontrar la partícula en el punto exacto \(x\)?}
+\lecturerresponse{Es una densidad. Multiplicarla por un intervalo pequeño \(dx\) da la probabilidad aproximada en ese intervalo, e integrarla da la probabilidad exacta de una región finita. Una densidad puede ser distinta de cero aunque la probabilidad asignada a un punto aislado sea cero.}
+\end{classroomqa}
+
+\section{Ortonormalidad continua y función delta}
+
+Para una base ortonormal discreta,
+\begin{equation}
+\braket{a}{a'}=\delta_{aa'}.
+\end{equation}
+El análogo para una base continua es
+\begin{equation}
+\braket{x}{x'}=\delta(x-x'),
+\label{eq:l8-delta-normalization}
+\end{equation}
+donde la delta de Dirac se anula si \(x\neq x'\) y tiene área unitaria:
+\begin{equation}
+\int_{-\infty}^{\infty}\delta(x-x')\,dx'=1.
+\end{equation}
+Se puede imaginar como un pico estrecho de anchura \(\epsilon\), altura \(1/\epsilon\) y área fija, seguido del límite \(\epsilon\to0\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{Representación en la pizarra de la delta de Dirac mediante un pico estrecho: anchura \(\epsilon\), altura \(1/\epsilon\) y área unitaria.}
+\lectureframe{01:01:57}
+\end{figure}
+
+La notación es una abreviatura en sentido distribucional. Un eigenket de posición no es un vector normalizable en el espacio de Hilbert ordinario de funciones de cuadrado integrable; es un vector generalizado cuya normalización delta tiene sentido bajo una integral. La regla práctica fundamental es
+\begin{equation}
+\int_{-\infty}^{\infty}
+\delta(x-x')f(x')\,dx'
+=f(x).
+\label{eq:l8-delta-sampling}
+\end{equation}
+La delta selecciona el valor para el cual su argumento se anula.
+
+Escribamos ahora el desarrollo continuo
+\begin{equation}
+\ket{\Psi}
+=
+\int_{-\infty}^{\infty}
+\psi(x')\ket{x'}\,dx'.
+\label{eq:l8-continuous-expansion}
+\end{equation}
+Al actuar con \(\bra{x}\) se obtiene
+\begin{align}
+\braket{x}{\Psi}
+&=
+\int dx'\,\psi(x')\braket{x}{x'} \notag\\
+&=
+\int dx'\,\psi(x')\delta(x-x') \notag\\
+&=
+\psi(x).
+\label{eq:l8-expansion-consistency}
+\end{align}
+Así, el coeficiente del desarrollo y la proyección \(\braket{x}{\Psi}\) son la misma función, exactamente igual que en una base discreta.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_08.png}
+\caption{El desarrollo continuo del estado y su comprobación de consistencia mediante \(\braket{x}{x'}=\delta(x-x')\).}
+\lectureframe{01:07:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Cumple \(\psi(x')\) el mismo papel que las amplitudes de un vector de dimensión finita?}
+\lecturerresponse{Sí. La etiqueta de la base \(a'\) pasa a ser la etiqueta continua \(x'\), la suma se convierte en integral y el coeficiente \(\psi(a')\) pasa a ser la función \(\psi(x')\). La afirmación subyacente sobre el espacio vectorial no cambia.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es realmente la delta de Dirac una función que tiene un valor infinito en un punto?}
+\lecturerresponse{Esa imagen resulta útil, pero no debe tomarse literalmente. Rigurosamente, la delta es una distribución definida por su acción bajo una integral, ecuación~\eqref{eq:l8-delta-sampling}. El pico estrecho de área unitaria es una sucesión de funciones ordinarias que se aproxima a la misma regla de selección.}
+\end{classroomqa}
+
+\section{Las funciones como vectores}
+
+Para ver el producto interno, recordemos primero el cálculo discreto:
+\begin{align}
+\braket{\psi}{\phi}
+&=
+\sum_{a',a}
+\psi^*(a')\braket{a'}{a}\phi(a) \notag\\
+&=
+\sum_a\psi^*(a)\phi(a).
+\label{eq:l8-discrete-inner-product}
+\end{align}
+Los coeficientes conjugados complejos pertenecen al bra, y la ortonormalidad reduce la suma doble.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{El producto interno discreto desarrollado en una base, antes de sustituir las sumas por integrales.}
+\lectureframe{01:11:11}
+\end{figure}
+
+Sustituyamos las etiquetas de la base por posiciones y la suma por una integral:
+\begin{equation}
+\braket{\psi}{\phi}
+=
+\int_{-\infty}^{\infty}\psi^*(x)\phi(x)\,dx.
+\label{eq:l8-continuous-inner-product}
+\end{equation}
+Al intercambiar los vectores, el resultado se conjuga complejamente,
+\begin{equation}
+\braket{\phi}{\psi}
+=
+\braket{\psi}{\phi}^*,
+\end{equation}
+y la norma es
+\begin{equation}
+\|\psi\|^2=\braket{\psi}{\psi}
+=\int |\psi(x)|^2\,dx.
+\end{equation}
+
+Por tanto, las funciones son vectores: se pueden sumar, multiplicar por escalares complejos, normalizar y combinar mediante un producto interno. Las funciones de onda físicas en la recta infinita son de cuadrado integrable, así que se excluyen las funciones que crecen sin límite en el infinito. Las funciones de base generalizadas \(\delta(x-x_0)\) quedan justo fuera de ese espacio de Hilbert, pero siguen siendo indispensables como vectores de base distribucionales.
+
+\begin{classroomqa}
+\audiencequestion{¿Deben ser los límites de integración no indicados \(-\infty\) y \(+\infty\)?}
+\lecturerresponse{Sí, para la recta infinita. Esos límites también explican por qué las funciones de onda normalizables deben decaer con suficiente rapidez: de lo contrario, la integral de probabilidad total no existiría.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Faltaba una barra vertical en una de las expresiones de la pizarra. ¿Eso cambia el significado?}
+\lecturerresponse{Solo era un error de notación. El solapamiento de la base es \(\braket{a'}{a}\), con un bra a la izquierda y un ket a la derecha. Al restituir la barra queda claro que la expresión es un producto interno, no una fila o columna ambigua.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Está casi todo entrelazado con un entorno la mayor parte del tiempo?}
+\lecturerresponse{En condiciones macroscópicas realistas, sí. Los sistemas reciben continuamente impactos de fotones, moléculas de aire y otros grados de libertad, que dispersan la información de fase por el entorno. Ese entrelazamiento con el entorno es fundamental para la decoherencia y para explicar por qué resulta difícil observar interferencia entre alternativas macroscópicas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La teoría matemática de las distribuciones cambió la física, o solo hizo respetable la función delta?}
+\lecturerresponse{Su utilidad inmediata fue dar rigor a manipulaciones que los físicos ya empleaban. Proporcionó un lenguaje preciso para las funciones generalizadas y facilitó el diálogo con los matemáticos, aunque por sí sola no resolvió todas las dificultades relacionadas con las distribuciones en la teoría cuántica de campos.}
+\end{classroomqa}
+
+\section{Operadores lineales sobre funciones de onda}
+
+Un operador lineal transforma una función en otra y respeta la superposición:
+\begin{equation}
+L(c_1\psi+c_2\phi)
+=
+c_1L\psi+c_2L\phi.
+\end{equation}
+Un observable debe representarse mediante un operador hermítico. En la notación que usamos, la condición es
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{L\phi}{\psi},
+\label{eq:l8-hermitian-condition}
+\end{equation}
+o, de manera equivalente,
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{\psi}{L\phi}^*.
+\end{equation}
+Para los operadores no acotados, esta afirmación incluye un dominio y condiciones de contorno; en las integraciones que siguen suponemos funciones de onda para las que se anulan los términos de contorno.
+
+\subsection{Posición por multiplicación}
+
+El operador más sencillo multiplica la función de onda por la coordenada:
+\begin{equation}
+(x\psi)(x)=x\psi(x).
+\label{eq:l8-position-operator}
+\end{equation}
+Es lineal, y
+\begin{align}
+\braket{\phi}{x\psi}
+&=
+\int dx\,\phi^*(x)x\psi(x), \notag\\
+\braket{x\phi}{\psi}
+&=
+\int dx\,[x\phi(x)]^*\psi(x) \notag\\
+&=
+\int dx\,\phi^*(x)x\psi(x),
+\end{align}
+porque \(x\) es real. Por tanto, la multiplicación por \(x\) es hermítica y representa el observable posición.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_10.png}
+\caption{Comprobación de la hermiticidad del operador posición, considerado como la multiplicación de una función de onda por la variable real \(x\).}
+\lectureframe{01:26:47}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{En \(x\psi(x)\), ¿\(x\) es un operador o simplemente un número real?}
+\lecturerresponse{En cada punto es el valor real de la coordenada, pero la regla que transforma la función entera \(\psi(x)\) en la nueva función \(x\psi(x)\) es el operador. Su carácter real es precisamente lo que hace que los dos productos internos de la prueba de hermiticidad coincidan.}
+\end{classroomqa}
+
+\subsection{La derivación es antihermítica}
+
+Consideremos la derivada
+\begin{equation}
+D=\frac{d}{dx}.
+\end{equation}
+Es lineal, pero la integración por partes da
+\begin{align}
+\braket{\phi}{D\psi}
+&=
+\int dx\,\phi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+\left[\phi^*(x)\psi(x)\right]_{-\infty}^{\infty}
+-
+\int dx\,\frac{d\phi^*}{dx}\psi(x) \notag\\
+&=
+-\braket{D\phi}{\psi},
+\label{eq:l8-derivative-adjoint}
+\end{align}
+donde se anula el término de contorno. Así pues,
+\begin{equation}
+D^\dagger=-D.
+\end{equation}
+La derivada es antihermítica, no hermítica.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_11.png}
+\caption{La integración por partes traslada la derivada de una función de onda a la otra e introduce el signo menos decisivo.}
+\lectureframe{01:32:30}
+\end{figure}
+
+Multipliquemos por \(-i\):
+\begin{equation}
+p=-i\frac{d}{dx}.
+\label{eq:l8-momentum-natural-units}
+\end{equation}
+La conjugación compleja transforma \(-i\) en \(+i\), mientras que la integración por partes aporta otro signo menos. Los signos se cancelan, de modo que \(p^\dagger=p\). Al restituir las unidades,
+\begin{equation}
+p=-i\hbar\frac{d}{dx}.
+\label{eq:l8-momentum-operator}
+\end{equation}
+
+El valor esperado muestra explícitamente que es real:
+\begin{align}
+\expect{p}_\psi
+&=
+-i\int dx\,\psi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+i\int dx\,\frac{d\psi^*}{dx}\psi(x) \notag\\
+&=
+\expect{p}_\psi^*.
+\label{eq:l8-momentum-expectation-real}
+\end{align}
+Todo número igual a su propio conjugado complejo es real, como debe ser el valor esperado de un observable.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_12.png}
+\caption{El valor esperado del momento antes y después de integrar por partes; las dos expresiones son conjugadas complejas e iguales.}
+\lectureframe{01:39:44}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué un operador que contiene \(i\) puede representar un observable real?}
+\lecturerresponse{La hermiticidad se refiere al operador completo bajo el producto interno, no a que todos los símbolos de su expresión en coordenadas sean reales. El factor \(i\) compensa el signo menos que aparece al trasladar la derivada mediante integración por partes, y hace que todos los valores esperados sean reales.}
+\end{classroomqa}
+
+\section{El conmutador canónico}
+
+Un cálculo más revela por qué merece atención el operador de la ecuación~\eqref{eq:l8-momentum-operator}. En unidades en las que \(\hbar=1\), apliquemos primero \(x\) y luego \(p\):
+\begin{align}
+(px\psi)(x)
+&=
+-i\frac{d}{dx}\bigl(x\psi(x)\bigr) \notag\\
+&=
+-i\psi(x)-ix\frac{d\psi}{dx}.
+\label{eq:l8-px}
+\end{align}
+Invirtamos el orden:
+\begin{equation}
+(xp\psi)(x)
+=
+-ix\frac{d\psi}{dx}.
+\label{eq:l8-xp}
+\end{equation}
+Al restar la ecuación~\eqref{eq:l8-px} de la ecuación~\eqref{eq:l8-xp},
+\begin{equation}
+\bigl([x,p]\psi\bigr)(x)
+=
+\bigl(xp-px\bigr)\psi(x)
+=
+i\psi(x).
+\end{equation}
+Como esto se cumple para toda función de onda del dominio del operador,
+\begin{equation}
+[x,p]=i,
+\end{equation}
+o, al restituir las unidades,
+\begin{equation}
+[x,p]=i\hbar.
+\label{eq:l8-canonical-commutator}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_13.png}
+\caption{El argumento operatorial completo: si \(([x,p]-i)\psi=0\) para toda función de onda, entonces \([x,p]=i\).}
+\lectureframe{01:46:24}
+\end{figure}
+
+La expresión clásica correspondiente es
+\begin{equation}
+\{x,p\}_{\mathrm{PB}}=1.
+\end{equation}
+El razonamiento histórico de Dirac siguió el camino inverso al de la derivación que acabamos de hacer. Partió del parecido algebraico entre los corchetes de Poisson antisimétricos y los conmutadores, postuló la correspondencia
+\begin{equation}
+[A,B]\longleftrightarrow i\hbar\{A,B\}_{\mathrm{PB}},
+\end{equation}
+y dedujo que el operador momento debía satisfacer el conmutador canónico con la posición. Aquí obtuvimos \(-i\,d/dx\) al corregir la falta de hermiticidad de la derivada y solo después encontramos la misma álgebra.
+
+\begin{classroomqa}
+\audiencequestion{¿El conmutador por sí solo demuestra que \(-i\hbar\,d/dx\) es el momento físico?}
+\lecturerresponse{Es una prueba sólida, pero no basta para establecer por completo esa identificación física. Aún debemos demostrar que el operador genera traslaciones espaciales, que su valor esperado se conserva cuando existe simetría de traslación y que un paquete de ondas se mueve con velocidad de grupo \(\expect{p}/m\) en el sistema no relativista adecuado.}
+\end{classroomqa}
+
+\section{Qué viene a continuación}
+
+El paso de los espines a las partículas ha conservado la estructura, aunque ha cambiado la escala. Una base con etiquetas continuas reemplaza una lista finita de vectores de base. Las sumas se convierten en integrales, las deltas de Kronecker en deltas de Dirac y los vectores columna en funciones de cuadrado integrable. La posición actúa por multiplicación, mientras que el momento actúa mediante derivación.
+
+Las tareas siguientes son físicas, no meramente notacionales. Para obtener las probabilidades del momento necesitamos la base de momento y la transformada de Fourier. La evolución temporal requiere la ecuación de Schr\"odinger para \(\psi(x,t)\). Después, los paquetes de ondas vincularán el operador abstracto \(p=-i\hbar\,d/dx\) con el movimiento: su velocidad de grupo estará relacionada con el momento dividido por la masa, y la simetría de traslación explicará la conservación del momento. Por tanto, el conmutador \([x,p]=i\hbar\) no es un truco aislado. Es el nexo entre la mecánica en espacios vectoriales que ya hemos desarrollado y la dinámica cuántica de las partículas.

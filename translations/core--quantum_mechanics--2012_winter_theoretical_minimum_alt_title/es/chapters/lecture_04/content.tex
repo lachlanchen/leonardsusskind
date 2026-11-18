@@ -1,0 +1,536 @@
+\chapter{Medición, evolución unitaria y dinámica cuántica}
+
+\lectureoverview{Primero reunimos los principios de medición que ya hemos empleado: los observables son operadores hermíticos, sus valores propios son resultados posibles, los estados distinguibles son ortogonales y la regla de Born asigna probabilidades. El nuevo problema es la dinámica. La reversibilidad exige una evolución lineal común que preserve los productos internos; esto hace que el operador de evolución sea unitario y que su generador infinitesimal sea hermítico. El generador es el hamiltoniano, y su acción da la ecuación de Schr\"odinger dependiente del tiempo. A continuación derivamos la fórmula del valor esperado, la ecuación de conmutadores para los promedios, su relación con los corchetes de Poisson clásicos y la conservación de la energía media.}
+
+Por ahora, dejemos de lado el sistema de espín. Volveremos a él una vez establecida la estructura general. Los principios que siguen no se presentan como un conjunto mínimo e independiente. Algunos se refuerzan mutuamente o se implican parcialmente, pero enunciarlos por separado facilita apreciar su contenido físico.
+
+\section{Qué puede dar una medición}
+
+Un \emph{observable} es algo que se puede medir. El término establecido suena algo más grandilocuente de lo necesario; \emph{medible} habría servido igual de bien. A cada observable le asociamos un operador hermítico. Por ahora, sea \(L\) uno de esos operadores:
+\begin{equation}
+L^\dagger=L.
+\end{equation}
+No todo operador lineal es hermítico. A la inversa, determinar si un operador hermítico concreto puede medirse con los materiales y aparatos disponibles puede ser una cuestión experimental difícil. Sin embargo, la regla práctica abstracta es generosa: un operador hermítico representa un posible observable, aunque todavía no se haya inventado la medición práctica.
+
+Si
+\begin{equation}
+L\ket{\lambda}=\lambda\ket{\lambda},
+\end{equation}
+entonces \(\lambda\) es un posible resultado numérico de medir \(L\). Usamos el mismo símbolo para designar el valor propio y su vector propio. Las barras de ket distinguen ambos: \(\lambda\) es un número, mientras que \(\ket{\lambda}\) es un estado.
+
+¿Por qué operadores hermíticos? Un aparato elemental da números reales. Si un instrumento parece dar un número complejo, en realidad está dando dos cantidades reales independientes. Por tanto, los valores propios de los observables deben ser reales. Además, los estados asociados a resultados definidos distintos deben poder distinguirse físicamente y, por consiguiente, ser ortogonales. En el contexto de dimensión finita que empleamos aquí, un operador lineal con una base propia ortonormal completa y valores propios reales es hermítico. Así pues, las afirmaciones físicas y la estructura hermítica concuerdan.
+
+\subsection{La distinguibilidad es ortogonalidad}
+
+La expresión \emph{distinguibles físicamente} tiene un significado operacional. Supongamos que se prepara un espín orientado hacia arriba o hacia abajo. Una medición a lo largo del eje \(z\) separa las posibilidades sin ambigüedad: el estado hacia arriba da \(+1\) y el estado hacia abajo da \(-1\). Del mismo modo, los estados izquierda y derecha pueden distinguirse midiendo a lo largo del eje \(x\).
+
+Supongamos ahora que la preparación es hacia arriba o hacia la derecha. Una medición de \(z\) da \(+1\) con certeza para el estado hacia arriba, pero el estado hacia la derecha también da \(+1\) con probabilidad no nula. Una medición de \(x\) simplemente invierte la asimetría. Inclinar el aparato \(45^\circ\) no elimina el solapamiento entre las distribuciones de resultados. Ninguna orientación produce un resultado que distinga siempre las dos preparaciones.
+
+\begin{definition}
+Dos estados son distinguibles físicamente cuando algún experimento, o conjunto de experimentos, puede determinar sin ambigüedad cuál de las preparaciones se suministró.
+\end{definition}
+
+La mecánica cuántica representa la distinguibilidad completa geométricamente:
+\begin{equation}
+\text{distinguishable states}
+\quad\Longrightarrow\quad
+\text{orthogonal vectors}.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Podría un eje de medición distinto distinguir un estado hacia arriba de uno hacia la derecha?}
+\lecturerresponse{No. Medir a lo largo de \(z\) o \(x\) puede permitir identificar la preparación en algunos casos, pero al menos un resultado sigue siendo compatible con ambas. Un eje intermedio también deja probabilidades solapadas. El obstáculo no es una mala elección del aparato: los dos vectores de estado no son ortogonales.}
+\end{classroomqa}
+
+\section{La regla de Born}
+
+Los valores propios nos dicen qué puede ocurrir, pero no con qué frecuencia. La regla de probabilidad aporta el contenido predictivo. Si se prepara un sistema normalizado en \(\ket{A}\) y un vector propio normalizado \(\ket{\lambda}\) pertenece al observable medido \(L\), entonces
+\begin{equation}
+P(\lambda)=\left|\braket{\lambda}{A}\right|^2.
+\label{eq:l4-born-rule}
+\end{equation}
+El producto interno \(\braket{\lambda}{A}\) es una \emph{amplitud de probabilidad}. En general es complejo, de modo que no puede ser en sí mismo una probabilidad. Su módulo al cuadrado es real y no negativo.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_01.png}
+\caption{La regla de Born junto a los principios de medición: la probabilidad es el módulo al cuadrado de un producto interno.}
+\lectureframe{00:12:40}
+\end{figure}
+
+Elijamos una base propia ortonormal de \(L\) y desarrollemos
+\begin{equation}
+\ket{A}=\sum_i \alpha_i\ket{\lambda_i},
+\qquad
+\alpha_i=\braket{\lambda_i}{A}.
+\end{equation}
+La regla de Born se convierte en
+\begin{equation}
+P(\lambda_i)=|\alpha_i|^2.
+\end{equation}
+La normalización da entonces
+\begin{equation}
+\sum_i P(\lambda_i)=\sum_i|\alpha_i|^2=1.
+\end{equation}
+Los requisitos de positividad y normalización no derivan por sí solos la regla de Born, pero muestran por qué el módulo al cuadrado encaja tan naturalmente en la teoría de probabilidades. En última instancia, la regla se comprueba mediante experimentos.
+
+\begin{classroomqa}
+\audiencequestion{¿También se requiere el módulo al cuadrado para que todas las probabilidades sumen uno?}
+\lecturerresponse{Para un estado normalizado desarrollado en una base ortonormal, las amplitudes al cuadrado sí suman uno. Por tanto, la positividad y la normalización concuerdan perfectamente con la regla de Born. Aquí importa menos cuál de las afirmaciones debe considerarse lógicamente anterior que su coherencia mutua; el experimento determina la regla de probabilidad.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué se escribe dentro de un ket un valor propio, que es un número?}
+\lecturerresponse{La notación \(\ket{\lambda}\) significa el vector propio asociado al valor propio numérico \(\lambda\). Una notación más puntillosa podría introducir otra etiqueta, pero pronto demasiados índices ocultan el cálculo. El símbolo ket mantiene separados el número y el vector.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué principio convierte varios resultados posibles en un único resultado efectivo?}
+\lecturerresponse{La regla de Born asigna las probabilidades. Si el estado preparado ya es un vector propio de \(L\), el resultado correspondiente tiene probabilidad uno. Para una superposición, se obtiene un resultado con las probabilidades de la ecuación~\eqref{eq:l4-born-rule}. La regla asociada de actualización del estado, o de colapso, es una cuestión adicional sobre la medición; volveremos a ella cuando hayamos introducido el entrelazamiento.}
+\end{classroomqa}
+
+\subsection{Resultados degenerados}
+
+Un valor propio puede corresponder a más de un vector propio independiente. Supongamos que
+\begin{align}
+L\ket{\lambda,1}&=\lambda\ket{\lambda,1},\\
+L\ket{\lambda,2}&=\lambda\ket{\lambda,2}.
+\end{align}
+Toda combinación lineal de estos vectores en el subespacio que generan también es un vector propio con valor propio \(\lambda\):
+\begin{equation}
+L\bigl(\alpha\ket{\lambda,1}+\beta\ket{\lambda,2}\bigr)
+=
+\lambda\bigl(\alpha\ket{\lambda,1}+\beta\ket{\lambda,2}\bigr).
+\end{equation}
+Esta libertad nos permite elegir una base ortonormal dentro del subespacio propio degenerado. Si la etiqueta \(a\) recorre esa base, la probabilidad del resultado numérico \(\lambda\) es la suma de las probabilidades de sus canales ortogonales mutuamente excluyentes:
+\begin{equation}
+P(\lambda)=\sum_a\left|\braket{\lambda,a}{A}\right|^2.
+\label{eq:l4-degenerate-born}
+\end{equation}
+De forma equivalente, si \(P_\lambda\) es el proyector sobre todo el subespacio propio, entonces \(P(\lambda)=\bra{A}P_\lambda\ket{A}\). La notación con el proyector es compacta; la ecuación~\eqref{eq:l4-degenerate-born} muestra directamente la suma de probabilidades.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué ocurre si el estado preparado se solapa con varios vectores propios, o si varios vectores propios comparten el mismo valor propio?}
+\lecturerresponse{Para valores propios distintos, cada producto interno da la probabilidad de su propio resultado. Si varios vectores propios ortogonales tienen el mismo valor propio, se elevan al cuadrado los módulos de los productos internos y se suman. Si los vectores elegidos inicialmente en el subespacio degenerado no son ortogonales, primero se sustituyen por una base ortonormal; la probabilidad total no depende de la base.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Se puede obtener una respuesta inequívoca a partir de un espín cuya preparación se desconoce por completo?}
+\lecturerresponse{No con un espécimen arbitrario. Si no se imponen restricciones sobre cómo se preparó, no hay una única medición que identifique sin ambigüedad un estado cuántico desconocido. La información sobre la preparación especifica las alternativas entre las que una medición puede discriminar.}
+\end{classroomqa}
+
+\section{La nueva pregunta: cómo cambian los estados}
+
+Los principios anteriores especifican los estados y las mediciones. La dinámica pregunta qué ocurre entre un instante y otro. La analogía clásica es útil. Una moneda con dos caras podría permanecer igual en cada tic, o alternar cara, cruz, cara, cruz. Un dado de seis caras admite más reglas de actualización, y un espacio de estados continuo admite infinitas. Una ley dinámica lleva el estado presente al siguiente.
+
+Una ley clásica satisfactoria es determinista y reversible. Los estados distintos no confluyen en un mismo estado, pues, de ocurrir así, el presente ya no determinaría el pasado. A veces se llama a esta conservación de la información \emph{ley menos uno}: precede a las leyes de conservación más conocidas.
+
+La versión cuántica parte de un vector de estado \(\ket{\psi(t)}\), considerado explícitamente como función del tiempo. Postulemos un único operador lineal de evolución temporal \(U(t)\) tal que
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\label{eq:l4-time-development}
+\end{equation}
+El mismo \(U(t)\) actúa sobre todos los estados iniciales del sistema. No se elige de nuevo en función del vector de entrada y su acción es lineal. Se pueden imaginar leyes más generales, no lineales o dependientes del estado, pero pronto entran en conflicto con la estructura probabilística, causal y de los sistemas compuestos de la mecánica cuántica.
+
+\subsection{La reversibilidad conserva los productos internos}
+
+Hagamos evolucionar un segundo estado inicial conforme a la misma ley:
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)}.
+\end{equation}
+Si las dos preparaciones son distinguibles inicialmente, deben seguir siéndolo. Por tanto,
+\begin{equation}
+\braket{\psi(0)}{\phi(0)}=0
+\quad\Longrightarrow\quad
+\braket{\psi(t)}{\phi(t)}=0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_02.png}
+\caption{Dos estados evolucionan mediante el mismo \(U(t)\); la ortogonalidad inicial sigue siendo ortogonalidad.}
+\lectureframe{00:34:43}
+\end{figure}
+
+Conservar los estados normalizados y la ortogonalidad basta para conservar todos los productos internos. Para ver cómo ocurre, desarrollemos dos vectores arbitrarios en una base ortonormal. Los vectores de la base siguen siendo ortonormales durante la evolución, por lo que los coeficientes reconstruyen el mismo producto interno en todo instante:
+\begin{equation}
+\braket{\psi(t)}{\phi(t)}=\braket{\psi(0)}{\phi(0)}.
+\label{eq:l4-overlap-conservation}
+\end{equation}
+Así pues, se conserva no solo la distinguibilidad completa, sino también el grado entero de similitud entre dos estados.
+
+El bra correspondiente a la ecuación~\eqref{eq:l4-time-development} se obtiene mediante conjugación hermítica:
+\begin{equation}
+\bra{\psi(t)}=\bra{\psi(0)}U^\dagger(t).
+\end{equation}
+Al sustituir las evoluciones del bra y del ket en la ecuación~\eqref{eq:l4-overlap-conservation} se obtiene
+\begin{equation}
+\bra{\psi(0)}U^\dagger(t)U(t)\ket{\phi(0)}
+=
+\braket{\psi(0)}{\phi(0)}
+\end{equation}
+para todo par de vectores iniciales. Si un operador tiene los mismos elementos de matriz que la identidad entre todos los pares de vectores, es la identidad. Por tanto,
+\begin{equation}
+U^\dagger(t)U(t)=I.
+\label{eq:l4-unitarity}
+\end{equation}
+Un operador que satisface la ecuación~\eqref{eq:l4-unitarity} es \emph{unitario}. En dimensión finita,
+\begin{equation}
+U^\dagger(t)=U^{-1}(t),
+\end{equation}
+por lo que la evolución puede recorrerse en sentido inverso.
+
+\begin{classroomqa}
+\audiencequestion{¿La \(\Phi\) mayúscula y su forma minúscula denotan aquí tipos distintos de estados?}
+\lecturerresponse{No. Eso se debe únicamente a una escritura a mano inconsistente. Usamos \(\ket{\phi}\) de manera sistemática; las matemáticas distinguen los estados por sus etiquetas y valores, no por diferencias accidentales entre mayúsculas y minúsculas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Puede interpretarse \(U^\dagger U=I\) como que un factor es la inversa del otro?}
+\lecturerresponse{Sí. Un operador unitario tiene inversa \(U^{-1}=U^\dagger\). Esta es la expresión algebraica de una evolución reversible que conserva los productos internos.}
+\end{classroomqa}
+
+\section{Tiempo infinitesimal y hamiltoniano}
+
+En tiempo transcurrido nulo no cambia nada, así que \(U(0)=I\). Para un intervalo muy pequeño \(\epsilon\), \(U(\epsilon)\) debe estar cerca de la identidad. En unidades en las que por el momento fijamos \(\hbar=1\), escribimos
+\begin{equation}
+U(\epsilon)=I-i\epsilon H+O(\epsilon^2).
+\label{eq:l4-small-u}
+\end{equation}
+El signo menos y el factor de \(i\) son, en principio, convenciones; mientras desconozcamos \(H\), pueden absorberse en su definición. Su utilidad se hace patente al imponer la unitariedad. La conjugación hermítica da
+\begin{equation}
+U^\dagger(\epsilon)=I+i\epsilon H^\dagger+O(\epsilon^2).
+\end{equation}
+Entonces,
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon)\\
+&=\bigl(I+i\epsilon H^\dagger\bigr)
+  \bigl(I-i\epsilon H\bigr)+O(\epsilon^2)\\
+&=I+i\epsilon(H^\dagger-H)+O(\epsilon^2).
+\end{align}
+El término de primer orden debe anularse:
+\begin{equation}
+H^\dagger=H.
+\label{eq:l4-h-hermitian}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_03.png}
+\caption{El cálculo de unitariedad a primer orden obliga a que el generador infinitesimal sea hermítico.}
+\lectureframe{00:43:38}
+\end{figure}
+
+La letra \(H\) no representa «hermítico», sino el término \emph{hamiltoniano}. Como es hermítico, representa un observable. Se identifica con la energía y, en un sentido más estructural, con el generador de las traslaciones temporales. La identificación no se agota en el nombre: en los sistemas cuyo límite clásico conocemos, el \(H\) cuántico debe reproducir la dinámica del hamiltoniano clásico. La simetría, los grados de libertad, el criterio físico y, en última instancia, los experimentos determinan qué operador hermítico es el hamiltoniano de un sistema concreto.
+
+\begin{classroomqa}
+\audiencequestion{¿Puede usarse cualquier operador hermítico como \(H\)? ¿Qué determina cuál es el operador real?}
+\lecturerresponse{Hasta aquí, la derivación permite cualquier operador hermítico en el espacio de Hilbert del sistema. La física selecciona uno construido a partir de los grados de libertad de ese sistema. Para un espín, debe construirse con operadores de espín y campos externos. La simetría y las interacciones conocidas reducen las posibilidades; los experimentos fijan las constantes restantes y, a veces, la propia forma del operador.}
+\end{classroomqa}
+
+El hamiltoniano puede depender explícitamente del tiempo. Un ejemplo sencillo es un campo magnético cuya corriente se está variando. Si los parámetros externos no dependen del tiempo, entonces \(H\) no tiene dependencia temporal explícita; esto es invariancia ante traslaciones temporales. Si los parámetros varían con el tiempo, la energía no tiene por qué conservarse.
+
+\begin{classroomqa}
+\audiencequestion{En el desarrollo para tiempos pequeños, ¿\(H\) es una constante o debería ser \(H(0)\)?}
+\lecturerresponse{En un problema independiente del tiempo, \(H\) es el mismo operador en todo instante. En general, el paso local que comienza en el instante \(t\) contiene \(H(t)\). La derivación de aquí trata primero el caso invariante ante traslaciones temporales y después señala cómo la dependencia explícita del tiempo modifica la conservación de la energía.}
+\end{classroomqa}
+
+\section{Ecuación de Schr\"odinger dependiente del tiempo}
+
+Apliquemos la ecuación~\eqref{eq:l4-small-u} al estado:
+\begin{equation}
+\ket{\psi(\epsilon)}=(I-i\epsilon H)\ket{\psi(0)}+O(\epsilon^2).
+\end{equation}
+Reordenamos y dividimos por \(\epsilon\):
+\begin{equation}
+\frac{\ket{\psi(\epsilon)}-\ket{\psi(0)}}{\epsilon}
+=-iH\ket{\psi(0)}+O(\epsilon).
+\label{eq:l4-difference-quotient}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_04.png}
+\caption{La actualización infinitesimal del estado, reordenada como un cociente de diferencias con valores vectoriales.}
+\lectureframe{00:51:42}
+\end{figure}
+
+No hay ningún misterio especial en derivar un vector. Se pueden restar dos vectores, dividir su diferencia por un número y tomar el límite para definir otro vector. El instante de referencia llamado cero arriba puede ser cualquier instante. Por tanto, al tomar \(\epsilon\to0\) se obtiene
+\begin{equation}
+\boxed{\frac{d}{dt}\ket{\psi(t)}=-iH\ket{\psi(t)}}
+\qquad(\hbar=1).
+\label{eq:l4-schrodinger-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_05.png}
+\caption{La derivación completa en la pizarra culmina en la ecuación de Schr\"odinger dependiente del tiempo, enmarcada.}
+\lectureframe{00:56:11}
+\end{figure}
+
+Esta es la ecuación general de Schr\"odinger dependiente del tiempo. La ecuación diferencial habitual para la función de onda de una partícula es una representación de esta ecuación abstracta para el vector de estado. Para usarla, hay que conocer \(H\) y el estado inicial.
+
+Para un intervalo finito, se resuelve la ecuación diferencial. Cuando \(H\) es independiente del tiempo, la composición repetida de pasos infinitesimales da
+\begin{equation}
+U(t)=e^{-iHt}
+\qquad(\hbar=1),
+\end{equation}
+que es la versión precisa de componer todos los pasos pequeños. Los hamiltonianos dependientes del tiempo requieren ordenamiento temporal, un refinamiento que dejamos para más adelante.
+
+\begin{classroomqa}
+\audiencequestion{El desarrollo empleó un intervalo infinitesimal. ¿Qué determina el estado después de mucho tiempo?}
+\lecturerresponse{Se aplica repetidamente la actualización infinitesimal o, de forma equivalente, se resuelve la ecuación diferencial. Para \(H\) independiente del tiempo, el producto de los pasos pequeños se convierte en \(e^{-iHt/\hbar}\).}
+\end{classroomqa}
+
+\subsection{Restitución de la constante de Planck}
+
+La ecuación anterior empleaba unidades en las que \(\hbar=1\). El análisis dimensional muestra dónde va \(\hbar\). La derivada tiene dimensiones de inversa del tiempo, mientras que \(H\) tiene dimensiones de energía. Como \(\hbar\) tiene dimensiones de energía por tiempo,
+\begin{equation}
+\boxed{i\hbar\frac{d}{dt}\ket{\psi(t)}=H\ket{\psi(t)}}.
+\label{eq:l4-schrodinger}
+\end{equation}
+De forma equivalente, el operador infinitesimal es \(U(\epsilon)=I-i\epsilon H/\hbar+O(\epsilon^2)\) y la evolución finita independiente del tiempo es \(U(t)=e^{-iHt/\hbar}\).
+
+\begin{classroomqa}
+\audiencequestion{¿Dónde entra exactamente la constante de Planck?}
+\lecturerresponse{La constante de Planck aparece en cualquiera de estas formas equivalentes:
+\begin{align*}
+i\hbar\,\partial_t\ket{\psi}&=H\ket{\psi},\\
+\partial_t\ket{\psi}&=-\frac{i}{\hbar}H\ket{\psi}.
+\end{align*}
+Ambas tienen dimensiones concordantes porque \(\hbar\) tiene unidades de energía por tiempo.}
+\end{classroomqa}
+
+El estado evoluciona de manera determinista conforme a la ecuación~\eqref{eq:l4-schrodinger}; los resultados de medición siguen siendo estadísticos porque la regla de Born los extrae del estado, que cambia continuamente.
+
+\begin{classroomqa}
+\audiencequestion{¿Depende la derivación de la reversibilidad, y cómo puede ser válida si una medición perturba el estado?}
+\lecturerresponse{Depende de la evolución lineal y de la conservación de los productos internos. La ecuación rige un sistema aislado. Un aparato de medición interactúa con el sistema con suficiente intensidad para formar parte del sistema físico, por lo que no puede ignorarse. El sistema combinado y el aparato deben tratarse cuánticamente; su entrelazamiento es precisamente lo que hay que entender antes de analizar la medición.}
+\end{classroomqa}
+
+\section{Valor esperado significa promedio}
+
+Para comparar la dinámica cuántica con las ecuaciones clásicas, necesitamos el valor promedio de un observable. El nombre habitual \emph{valor esperado} puede inducir a error. Para una variable equitativa que toma solo \(+1\) y \(-1\), el promedio es cero, aunque nunca se observa cero. Incluso puede ocurrir que una distribución simétrica se anule en todo un entorno de su media. La media, la mediana y la moda coinciden en algunas distribuciones suaves con un único máximo, pero no en general.
+
+Si \(L\) puede dar los valores \(\lambda_i\) con probabilidades \(P(\lambda_i)\), definimos
+\begin{equation}
+\overline{\lambda}=\sum_i\lambda_iP(\lambda_i).
+\label{eq:l4-probability-average}
+\end{equation}
+Este es el primer momento de la distribución, no una promesa sobre el resultado de un ensayo individual.
+
+\begin{classroomqa}
+\audiencequestion{¿No es el valor más frecuente el que debería esperarse?}
+\lecturerresponse{El valor más frecuente es la moda; el promedio ponderado es la media. Pueden coincidir en una distribución sencilla y estrecha, pero una distribución con dos picos puede tener su media en una región cuya probabilidad es prácticamente nula. El término «esperanza» se refiere a la media matemática, que no es necesariamente el resultado individual más probable.}
+\end{classroomqa}
+
+Los ensayos repetidos conectan la media matemática con los datos. Bajo los supuestos habituales de independencia y momentos finitos, las leyes de los grandes números establecen la convergencia probabilística del promedio muestral. No garantizan que toda secuencia finita esté cerca de la media; sigue siendo posible, aunque improbable, una racha extraordinariamente larga de resultados idénticos de espín. Es la misma sutileza estadística que impide que la segunda ley de la termodinámica sea una prohibición microscópica sin excepciones.
+
+\begin{classroomqa}
+\audiencequestion{Si un experimento con un espín equitativo da un millón de resultados hacia arriba seguidos, ¿su promedio es realmente hacia arriba?}
+\lecturerresponse{El promedio muestral de esa secuencia concreta sí es hacia arriba. La esperanza teórica sigue siendo cero. A medida que aumenta el número de ensayos independientes, el promedio muestral se aproxima a la media teórica con alta probabilidad, pero la teoría de probabilidades nunca descarta todas las secuencias finitas excepcionales.}
+\end{classroomqa}
+
+\subsection{La expresión entre operadores}
+
+Desarrollemos un estado normalizado en una base propia ortonormal de \(L\):
+\begin{equation}
+\ket{A}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+\bra{A}=\sum_j\alpha_j^*\bra{\lambda_j}.
+\end{equation}
+La regla de Born y la ecuación~\eqref{eq:l4-probability-average} dan
+\begin{equation}
+\overline{\lambda}=\sum_i\lambda_i|\alpha_i|^2.
+\end{equation}
+Calculemos ahora
+\begin{align}
+\bra{A}L\ket{A}
+&=\sum_{i,j}\alpha_j^*\alpha_i
+  \bra{\lambda_j}L\ket{\lambda_i}\\
+&=\sum_{i,j}\alpha_j^*\alpha_i\lambda_i
+  \braket{\lambda_j}{\lambda_i}\\
+&=\sum_i\lambda_i|\alpha_i|^2.
+\end{align}
+La suma doble se reduce porque
+\(\braket{\lambda_j}{\lambda_i}=\delta_{ji}\). Por tanto,
+\begin{equation}
+\boxed{\expect{L}_A=\bra{A}L\ket{A}}.
+\label{eq:l4-expectation-sandwich}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_06.png}
+\caption{El desarrollo en la base propia reduce el promedio probabilístico a la expresión entre operadores \(\bra{A}L\ket{A}\).}
+\lectureframe{01:11:50}
+\end{figure}
+
+Usaremos tanto los corchetes angulares como una barra superior para indicar promedios. Cuando evoluciona el estado,
+\begin{equation}
+\expect{L}_t=\bra{\psi(t)}L\ket{\psi(t)}.
+\end{equation}
+El subíndice solo nos recuerda que el estado y, por tanto, el promedio dependen del tiempo. En la presente discusión en la imagen de Schr\"odinger, \(L\) permanece fijo, salvo que se indique una dependencia temporal explícita.
+
+\begin{classroomqa}
+\audiencequestion{¿Debe escribirse \(t\) fuera de los corchetes? ¿Y significa una barra superior que se trata de una media muestral?}
+\lecturerresponse{Se puede añadir a cualquiera de las notaciones una indicación de la dependencia temporal, pero la notación cuántica estándar es \(\expect{L}_t\) o, sencillamente, \(\expect{L}\), dejando que el tiempo se sobreentienda a partir de \(\ket{\psi(t)}\). Aquí la barra superior denota el promedio teórico de probabilidad, el primer momento \(\sum_i\lambda_iP(\lambda_i)\), y no específicamente una media de datos finitos.}
+\end{classroomqa}
+
+\section{Cómo evolucionan los promedios}
+
+Derivemos la expresión entre operadores aplicando la regla del producto:
+\begin{equation}
+\frac{d}{dt}\expect{L}
+=
+\left(\frac{d}{dt}\bra{\psi}\right)L\ket{\psi}
++
+\bra{\psi}L\left(\frac{d}{dt}\ket{\psi}\right).
+\label{eq:l4-product-derivative}
+\end{equation}
+En unidades con \(\hbar=1\), la ecuación del ket y su conjugada hermítica son
+\begin{align}
+\frac{d}{dt}\ket{\psi}&=-iH\ket{\psi},\\
+\frac{d}{dt}\bra{\psi}&=+i\bra{\psi}H.
+\end{align}
+El signo de \(i\) cambia al tomar la conjugada compleja, y \(H^\dagger=H\). Al sustituir en la ecuación~\eqref{eq:l4-product-derivative} se obtiene
+\begin{align}
+\frac{d}{dt}\expect{L}
+&=i\bra{\psi}HL\ket{\psi}
+-i\bra{\psi}LH\ket{\psi}\\
+&=i\bra{\psi}(HL-LH)\ket{\psi}.
+\end{align}
+
+Los operadores no tienen por qué conmutar. Su orden importa, igual que importa el orden de las matrices. Definamos
+\begin{equation}
+[H,L]=HL-LH.
+\end{equation}
+Entonces,
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{L}=i\expect{[H,L]}}
+\qquad(\hbar=1).
+\label{eq:l4-average-evolution-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_07.png}
+\caption{La derivada temporal de un promedio está regida por el valor esperado de un conmutador.}
+\lectureframe{01:22:22}
+\end{figure}
+
+Al restituir las dimensiones,
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{L}
+=\frac{i}{\hbar}\expect{[H,L]}
+=-\frac{i}{\hbar}\expect{[L,H]}}.
+\label{eq:l4-average-evolution}
+\end{equation}
+Si \(L\) depende explícitamente del tiempo, la ecuación general incluye el término adicional \(\expect{\partial L/\partial t}\). Aquí \(L\) es fijo.
+
+\begin{classroomqa}
+\audiencequestion{¿El signo de la ecuación del conmutador es realmente más \(i\)?}
+\lecturerresponse{Sí, con \([H,L]=HL-LH\), el resultado es \(+(i/\hbar)\expect{[H,L]}\). Invertir el orden del conmutador invierte el signo y da la forma equivalente \(-(i/\hbar)\expect{[L,H]}\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Se obtuvo la ecuación del bra mediante conjugación compleja o conjugación hermítica? ¿Y por qué la derivada sigue a la izquierda?}
+\lecturerresponse{Se obtuvo mediante conjugación hermítica. La derivada de un ket es un ket, y el dual de esa derivada es la derivada del bra correspondiente. Se ve directamente a partir del cociente de diferencias: las diferencias de bras son bras, igual que las diferencias de kets son kets. El tiempo es aquí un parámetro, no un operador cuyo orden haya que invertir.}
+\end{classroomqa}
+
+\section{La sombra clásica}
+
+En la mecánica hamiltoniana clásica, una función del espacio de fases \(L(q,p)\) sin dependencia explícita del tiempo satisface
+\begin{equation}
+\frac{dL}{dt}=\{L,H\}_{\mathrm{PB}},
+\label{eq:l4-poisson-evolution}
+\end{equation}
+donde \(\{\cdot,\cdot\}_{\mathrm{PB}}\) es el corchete de Poisson. Comparemos esto con la ecuación~\eqref{eq:l4-average-evolution}. Ambos corchetes son antisimétricos:
+\begin{align}
+\{L,H\}_{\mathrm{PB}}&=-\{H,L\}_{\mathrm{PB}},\\
+[L,H]&=-[H,L].
+\end{align}
+Ambos también actúan como derivadas sobre un producto:
+\begin{align}
+\{LM,H\}_{\mathrm{PB}}
+&=\{L,H\}_{\mathrm{PB}}M+L\{M,H\}_{\mathrm{PB}},\\
+[LM,H]
+&=L[M,H]+[L,H]M.
+\label{eq:l4-commutator-product}
+\end{align}
+La identidad del conmutador se obtiene sumando y restando \(LHM\):
+\begin{align}
+LMH-HLM
+&=(LMH-LHM)\\
+&\quad +(LHM-HLM)\\
+&=L(MH-HM)\\
+&\quad +(LH-HL)M.
+\end{align}
+
+La analogía sugiere la correspondencia
+\begin{equation}
+[A,B]
+\quad\longleftrightarrow\quad
+i\hbar\{A,B\}_{\mathrm{PB}},
+\label{eq:l4-dirac-correspondence}
+\end{equation}
+o, de manera equivalente,
+\begin{equation}
+\{A,B\}_{\mathrm{PB}}
+\quad\longleftrightarrow\quad
+-\frac{i}{\hbar}[A,B].
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_08.png}
+\caption{La ecuación clásica con corchetes de Poisson y la correspondencia cuántica con el conmutador, restituyendo \(\hbar\).}
+\lectureframe{01:32:32}
+\end{figure}
+
+Dirac reconoció esta conexión y la empleó como vía de acceso a la mecánica cuántica. Sin embargo, debe tratarse como una correspondencia, no como una regla universal de sustitución: pueden surgir ambigüedades en el orden de los operadores, y el límite clásico debe derivarse de la dinámica cuántica. Conceptualmente, la mecánica cuántica es lo fundamental; la mecánica clásica es su aproximación para estados y escalas apropiados. Los conmutadores preceden a los corchetes de Poisson, aunque la analogía histórica nos ayude a descubrir la relación.
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué llamar energía a \(H\), y por qué deducir la conservación de la energía antes de imponer un principio de simetría?}
+\lecturerresponse{En esta etapa, \(H\) es rigurosamente el generador hermítico de las traslaciones temporales. Llamarlo energía es una identificación física que debe comprobarse cuando se conoce el límite clásico. Para sistemas grandes o pesados en estados apropiados, los promedios cuánticos deben seguir las ecuaciones clásicas, y el \(H\) cuántico debe estar relacionado con el hamiltoniano clásico. La afirmación de conservación que sigue presupone que este generador no depende explícitamente del tiempo.}
+\end{classroomqa}
+
+\section{Se conserva la energía media}
+
+Tomemos \(L=H\) en la ecuación~\eqref{eq:l4-average-evolution}, con un hamiltoniano independiente del tiempo:
+\begin{equation}
+\frac{d}{dt}\expect{H}
+=\frac{i}{\hbar}\expect{[H,H]}.
+\end{equation}
+Todo operador conmuta consigo mismo:
+\begin{equation}
+[H,H]=HH-HH=0,
+\end{equation}
+por lo que
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{H}=0}.
+\label{eq:l4-energy-conservation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_09.png}
+\caption{La conservación de la energía media se sigue de inmediato, pues el hamiltoniano conmuta consigo mismo.}
+\lectureframe{01:39:30}
+\end{figure}
+
+Esto demuestra una afirmación deliberadamente modesta: la energía media es constante. De la misma dinámica se deducirá una afirmación más fuerte sobre toda la distribución de energía. Si \(H\) depende explícitamente del tiempo, la derivada explícita adicional no tiene por qué anularse, y el sistema sometido a una perturbación externa puede intercambiar energía con aquello que modifica sus parámetros.
+
+Quedan dos cuestiones pendientes. Sigue pendiente el cálculo de la probabilidad de espín para un eje arbitrario, y todavía no se ha derivado el problema de la actualización del estado. Entre intervenciones, un estado aislado evoluciona unitariamente. Durante una medición, el sistema y el aparato interactúan y quedan entrelazados.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué pasó con la probabilidad prometida para medir el espín a lo largo de un eje arbitrario?}
+\lecturerresponse{La dinámica general ocupó el tiempo disponible. El cálculo del espín sigue siendo la próxima aplicación concreta y se retomará después de este marco estructural.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo pueden estar completos los postulados sin un postulado de colapso?}
+\lecturerresponse{Por ahora, «colapso» es una expresión provisional. Una medición establece un entrelazamiento entre el sistema y un aparato. Hasta que se hayan desarrollado los sistemas compuestos y el entrelazamiento, no se puede modelar con rigor el proceso de medición. Ese es el siguiente paso conceptual.}
+\end{classroomqa}
