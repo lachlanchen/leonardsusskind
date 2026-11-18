@@ -32,6 +32,13 @@ Do not monitor yourself or defer work because this same repair invocation is
 visible in ps. Diagnose and repair files directly now, then exit this sweep.
 If no safe repair is possible, report the blocker and exit instead of polling.
 
+For page overflow, correlate the log's open chapter and printed page number
+with the PDF footer. A physical PDF page index is offset by the front matter;
+using it as a printed page number can select the wrong chapter. Inspect the
+actual failing page, locate its text in that chapter, and use a unique source
+anchor there. A small measured page enlargement is allowed when margins remain
+sound, but never hide warnings or move an anchor in an unrelated chapter.
+
 Read AGENTS.md, references/POLISHED_TRANSLATIONS.md, and the publisher-voice skill.
 Inspect .translation-work/status.json, book-state/, build logs, source-bound
 translation caches, reviews, git status, and scripts/polished_translation.py.
@@ -55,6 +62,9 @@ The shared workstation resource policy applies. Do not launch GUI desktops.
 For each repaired book run the normal compile command with --provider codex
 --model gpt-6-luna --review-model gpt-6-luna --reasoning high --language $language
 and --book ID. Run relevant tests and inspect representative PDF pages.
+Run mocked translation tests with TRANSLATION_QUOTA_HELPER unset so that their
+mock subprocesses do not accidentally intercept a real quota probe. The real
+translation and compile commands must retain their normal quota checks.
 Refresh README with the script. Commit only tested pipeline repairs and validated
 $language outputs plus owned README availability changes. Push and verify both
 configured remotes with push_publication_remotes(). No private work/cache files
