@@ -1,0 +1,465 @@
+\chapter{Bezugssysteme, Licht und die Geometrie der Raumzeit}
+
+\section{Der Kurs beginnt erneut mit der Relativitätstheorie}
+
+In diesem Trimester kehren wir zur klassischen Physik zurück, jedoch nicht zum Newtonschen Bild, in dem Raum und Zeit unabhängig und universell sind. Im Mittelpunkt stehen die spezielle Relativitätstheorie und die klassische Feldtheorie, insbesondere der Elektromagnetismus. Die Quantenmechanik kommt nicht zum Einsatz. Der frühere Mechanikkurs behandelte das Wirkungsprinzip sowie die Hamilton- und Lagrange-Beschreibung; der Quantenkurs vermittelte die grundlegenden Prinzipien, auch wenn selbst der harmonische Oszillator auf eine spätere Wiederaufnahme verschoben werden musste. Auch Licht kam weitgehend nicht zur Sprache. Diese Lücke wird nun geschlossen, denn Licht ist von Natur aus relativistisch.
+
+Die meisten im Kurs haben sich bereits mit der speziellen Relativitätstheorie beschäftigt. Dennoch spricht eine Handzeichenabfrage dafür, sie von Grund auf neu aufzubauen. Das ist die sinnvolle Wahl. Die Lorentz-Transformation sollte nicht als auswendig zu lernende Formel eingeführt werden. Sie sollte sich daraus ergeben, dass operative Messungen von Raum und Zeit weder mit der Galilei-Kinematik noch mit dem beobachteten Ausbreitungsgesetz des Lichts zugleich vereinbar sein können.
+
+\subsection{Koordinaten als physikalischer Aufbau}
+
+Man beginne mit einem kartesischen Bezugssystem: einem Ursprung, drei orientierten Achsen und den Koordinaten \(x,y,z\). Eine konkrete Realisierung könnte darin bestehen, den Raum mit einem starren Gitter aus Meterstäben auszufüllen. Damit sich ein Ereignis und nicht nur ein Ort angeben lässt, trägt jeder Gitterpunkt außerdem eine Uhr. Ein Ereignis wird dann bezeichnet durch
+\begin{equation}
+(x,y,z,t).
+\end{equation}
+Die Uhren müssen nach einem angegebenen Verfahren synchronisiert werden; genau das wird sich bald als heikler Teil des Aufbaus erweisen.
+
+\begin{definition}
+Ein Bezugssystem besteht aus einem räumlichen Koordinatengitter und einem verteilten System synchronisierter Uhren. Ein Inertialsystem ist ein nicht rotierendes und nicht beschleunigtes Bezugssystem, in dem sich jedes kräftefreie Teilchen mit konstanter Geschwindigkeit bewegt.
+\end{definition}
+
+Zwei Bezugssysteme in gleichförmiger Relativbewegung ordnen demselben Ereignis unterschiedliche Koordinaten zu. Ein Punkt, der im bewegten Bezugssystem ruht, hat eine konstante Koordinate \(x'\), auch wenn sich seine ungestrichene Koordinate ändert. In der Newtonschen Physik lautet die räumliche Beziehung für eine Bewegung entlang der \(x\)-Richtung
+\begin{equation}
+x'=x-vt.
+\label{eq:sr1-galilean-space}
+\end{equation}
+Die weniger auffällige Newtonsche Annahme lautet, dass alle richtig gehenden Uhren universell synchronisiert bleiben:
+\begin{equation}
+t'=t.
+\label{eq:sr1-absolute-time}
+\end{equation}
+
+\subsection{Das Relativitätsprinzip}
+
+Die Relativitätstheorie beginnt nicht mit Einstein. Schon Galileo und Newton gingen von dem Prinzip aus, dass die Gesetze der Physik in jedem Inertialsystem dieselbe Form haben. Newtons Gesetz \(F=ma\), das Gravitationsgesetz mit dem inversen Quadratgesetz und die Coulomb-Kraft erhalten nicht allein deshalb eine neue Form, weil sich das Labor gleichförmig bewegt.
+
+Der bekannte Test spielt in einem geschlossenen Eisenbahnwagen. Fährt der Zug gleichmäßig und lässt sich durch die Fenster nichts von außen erkennen, funktioniert Jonglieren genauso wie in einem ruhenden Zimmer. Die Bälle steigen auf, fallen herab und kehren wie gewohnt in die Hand zurück. Ein Experiment, das auf den Wagen beschränkt ist, kann seine gleichförmige Geschwindigkeit nicht feststellen. Beschleunigung oder Rotation lassen sich im Inneren erkennen; gleichförmige Translationsbewegung nicht.
+
+Einstein ergänzt dieses ältere Prinzip um ein physikalisches Gesetz: Licht breitet sich im Vakuum mit
+\begin{equation}
+c \simeq 1.86\times 10^5\ {\rm miles/s}
+   \simeq 3.00\times 10^8\ {\rm m/s}.
+\end{equation}
+aus. Ist dies ein Naturgesetz und gelten die Gesetze in jedem Inertialsystem gleich, muss jeder Inertialbeobachter denselben Wert für \(c\) messen.
+
+\section{Warum die Galilei-Transformation scheitert}
+
+Eine Raumdimension genügt, um den Widerspruch offenzulegen. Zeichnen wir ein Raumzeitdiagramm mit der horizontalen Koordinate \(x\) und der vertikalen Koordinate \(t\). Ein am Ursprung ausgesandter Lichtimpuls, der sich nach rechts ausbreitet, folgt der Bahn
+\begin{equation}
+x=ct.
+\label{eq:sr1-light-right}
+\end{equation}
+Der Ursprung eines Bezugssystems, das sich mit der Geschwindigkeit \(v\) nach rechts bewegt, liegt auf
+\begin{equation}
+x=vt,
+\qquad
+x'=0.
+\label{eq:sr1-moving-origin}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_01.png}\caption{Der nach rechts laufende Lichtstrahl und der bewegte Ursprung \(x=vt\), den der gestrichene Beobachter mit \(x'=0\) bezeichnet.}\lectureframe{00:15:24}\end{figure}
+
+Wenden wir die Galilei-Regeln \eqref{eq:sr1-galilean-space}--\eqref{eq:sr1-absolute-time} auf den Lichtstrahl an:
+\begin{align}
+x'&=x-vt=(c-v)t,\\
+t'&=t.
+\end{align}
+Der gestrichene Beobachter würde daraus folgern:
+\begin{equation}
+x'=(c-v)t',
+\end{equation}
+Die Geschwindigkeit des nach rechts laufenden Lichts wäre demnach \(c-v\). Für einen nach links laufenden Strahl \(x=-ct\) gilt
+\begin{equation}
+x'=-(c+v)t',
+\end{equation}
+mit dem Geschwindigkeitsbetrag \(c+v\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_02.png}\caption{Die Galilei-Substitution sagt für den nach rechts laufenden Lichtstrahl \(c-v\) voraus und widerspricht damit der Bezugssystemunabhängigkeit der Lichtgeschwindigkeit.}\lectureframe{00:17:23}\end{figure}
+
+Die gewöhnliche Geschwindigkeitsaddition ist für langsame mechanische Bewegungen eine ausgezeichnete Näherung, doch Messungen an Licht zeigen weder das vorhergesagte \(c-v\) noch das \(c+v\). Nicht das Lichtpostulat, sondern das Transformationsgesetz muss überdacht werden. Der zentrale Verdächtige ist die scheinbar harmlose Aussage \(t'=t\): Sie behauptet einen absoluten Begriff der Gleichzeitigkeit.
+
+\section{Synchronisation räumlich getrennter Uhren}
+
+Die Aussage, dass zwei Uhren an verschiedenen Orten dieselbe Zeit anzeigen, erfordert ein Experiment. Man stellt einen dritten Beobachter genau in ihre Mitte; gleiche Entfernungen werden mithilfe von Meterstäben sichergestellt. Die beiden Uhren an den Enden sollen Lichtblitze aussenden, sobald sie Mittag anzeigen. Treffen die Blitze gleichzeitig in der Mitte ein, gelten die Uhren als synchronisiert.
+
+Das ist keine der Physik übergestülpte philosophische Definition, sondern ein reproduzierbarer Vorgang mit Uhren, Entfernungen und Lichtsignalen.
+
+Nun bewege sich ein Beobachter an der Mitte vorbei. Die Lichtblitze an den Enden, die gleichzeitig an der ruhenden Mitte eintreffen, erreichen den bewegten Beobachter nicht gleichzeitig: Während das Licht unterwegs ist, bewegt sich dieser auf den einen Blitz zu und vom anderen fort. Ereignisse, die nach den ruhenden Uhren gleichzeitig sind, sind daher gemäß dem ebenso gültigen Synchronisationsverfahren des bewegten Bezugssystems nicht gleichzeitig.
+
+Im ungestrichenen Bezugssystem verläuft eine Gerade gleichzeitiger Ereignisse nach
+\begin{equation}
+t=\text{constant}.
+\end{equation}
+Die entsprechende Gerade im gestrichenen Bezugssystem ist im \(x\)-\(t\)-Diagramm geneigt. Bevor wir nach den Transformationsformeln fragen, können wir diese Neigung mithilfe von Lichtsignalen konstruieren.
+
+\section{Das bewegte Bezugssystem mit Licht konstruieren}
+
+Wir setzen \(c=1\). Man kann die Entfernung in Lichtsekunden messen, wenn die Zeit in Sekunden gemessen wird, oder die Zeit anhand der Lichtlaufzeit über eine gewählte Längeneinheit messen. In beiden Konventionen verlaufen die Lichtstrahlen nach
+\begin{equation}
+x=\pm t,
+\label{eq:sr1-light-units}
+\end{equation}
+und bilden daher auf gleich skalierten Achsen Geraden unter \(45^\circ\).
+
+Zuerst zeichnet man die Lichtstrahlen ein. Dann zeichnet man eine Familie von Beobachtern, die im bewegten Bezugssystem ruhen:
+\begin{equation}
+x=vt,\qquad x=vt+1,\qquad x=vt+2.
+\label{eq:sr1-moving-family}
+\end{equation}
+Ihre Weltlinien sind parallel, weil die Beobachter in ihrem eigenen Inertialgitter feste Abstände zueinander einhalten.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_03.png}\caption{Lichtstrahlen unter \(45^\circ\) und die parallelen Weltlinien \(x=vt\), \(x=vt+1\) und \(x=vt+2\) des bewegten Koordinatengitters.}\lectureframe{00:29:55}\end{figure}
+
+\subsection{Fred, Mary und Seymour}
+
+Fred befinde sich bei \(x=vt\), Mary bei \(x=vt+1\) und Seymour bei \(x=vt+2\). Am Ursprung \(O\) sendet Fred ein nach rechts laufendes Lichtsignal zu Mary. Seymour sendet ein nach links laufendes Signal, sodass beide Blitze Mary am selben Ereignis \(a\) erreichen. Nach der Synchronisationsregel für die Mitte im bewegten Bezugssystem ist Seymours Aussendeereignis \(b\) gleichzeitig mit Freds Aussendung bei \(O\). Die Gerade durch \(O\) und \(b\) ist daher \(t'=0\).
+
+Das Ereignis \(a\) liegt sowohl auf
+\begin{equation}
+x=t
+\end{equation}
+als auch auf
+\begin{equation}
+x=vt+1.
+\end{equation}
+Folglich gilt
+\begin{equation}
+t_a=x_a=\frac{1}{1-v}.
+\label{eq:sr1-event-a}
+\end{equation}
+
+Der durch \(a\) verlaufende, nach links laufende Lichtstrahl erfüllt
+\begin{equation}
+x+t=x_a+t_a=\frac{2}{1-v}.
+\label{eq:sr1-ab-light}
+\end{equation}
+Das Ereignis \(b\) liegt außerdem auf Seymours Weltlinie,
+\begin{equation}
+x-vt=2.
+\label{eq:sr1-seymour-line}
+\end{equation}
+Aus \eqref{eq:sr1-ab-light} und \eqref{eq:sr1-seymour-line} folgt
+\begin{align}
+t_b&=\frac{2v}{1-v^2},\\
+x_b&=\frac{2}{1-v^2}.
+\label{eq:sr1-event-b}
+\end{align}
+Die Steigung der Geraden von \(O\) nach \(b\) ist daher
+\begin{equation}
+\frac{t_b}{x_b}=v,
+\end{equation}
+Die Gerade der Gleichzeitigkeit im bewegten Bezugssystem lautet somit
+\begin{equation}
+t=vx,
+\qquad
+t'=0.
+\label{eq:sr1-moving-simultaneity}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.93\textwidth]{lecture_01_figure_04.png}\caption{Die Synchronisationskonstruktion mit Fred--Mary--Seymour. Lichtsignale mit gleicher Laufzeit kennzeichnen \(O\) und \(b\) als im bewegten Bezugssystem gleichzeitig; daraus folgt \(t=vx\).}\lectureframe{00:44:38}\end{figure}
+
+Die beiden Achsen des gestrichenen Bezugssystems haben nun parallele Formen:
+\begin{align}
+x'=0 &\quad\Longleftrightarrow\quad x=vt,\\
+t'=0 &\quad\Longleftrightarrow\quad t=vx.
+\end{align}
+Sie sind Spiegelbilder bezüglich der nach rechts laufenden Lichtgeraden \(x=t\). Die Geometrie hat die universelle Gleichzeitigkeit bereits ersetzt.
+
+\begin{classroomqa}\audiencequestion{Was geschieht mit der Konstruktion für \(v=1\) oder \(v=-1\)?}\lecturerresponse{Die Nenner in \eqref{eq:sr1-event-a}--\eqref{eq:sr1-event-b} verschwinden, und die betreffenden Schnittpunkte wandern ins Unendliche. Bei \(\lvert v\rvert=1\) bewegte sich ein materieller Beobachter auf einem Lichtstrahl und könnte den üblichen Austausch zur Synchronisation der Uhren in der Mitte nicht durchführen. Dieses singuläre Verhalten ist der erste geometrische Hinweis darauf, dass \(c\) eine Grenzgeschwindigkeit ist. \lecturetimestamp{00:40:43}}\end{classroomqa}
+
+\section{Herleitung der Lorentz-Transformation}
+
+Die Bedingung \(x'=0\) auf \(x=vt\) verlangt, dass \(x'\) den Faktor \(x-vt\) enthält. Entsprechend verlangt \(t'=0\) auf \(t=vx\) den Faktor \(t-vx\). Die Homogenität der Raumzeit macht die Transformation linear; wir setzen daher an:
+\begin{align}
+x'&=(x-vt)f(v),\\
+t'&=(t-vx)g(v).
+\label{eq:sr1-linear-ansatz}
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_05.png}\caption{Die lineare Transformation wird aus den beiden Verschwindungsbedingungen aufgebaut; ihre Skalierungsfaktoren \(f(v)\) und \(g(v)\) hängen von der Geschwindigkeit ab.}\lectureframe{00:49:35}\end{figure}
+
+Entlang eines nach rechts laufenden Lichtstrahls \(x=t\) verlangt die Invarianz der Lichtgeschwindigkeit \(x'=t'\). Gleichung~\eqref{eq:sr1-linear-ansatz} wird dann zu
+\begin{align}
+x'&=(1-v)x f(v),\\
+t'&=(1-v)x g(v),
+\end{align}
+und somit zu
+\begin{equation}
+f(v)=g(v).
+\label{eq:sr1-f-equals-g}
+\end{equation}
+Damit bleibt ein gemeinsamer Skalierungsfaktor:
+\begin{align}
+x'&=(x-vt)f(v),\\
+t'&=(t-vx)f(v).
+\label{eq:sr1-direct-unscaled}
+\end{align}
+Im Wesentlichen entspricht dies der knappen Argumentation in Einsteins erster Arbeit zur Relativitätstheorie: Die operationale Definition der Gleichzeitigkeit und die Invarianz der Lichtgeschwindigkeit bestimmen die Transformation.
+
+\subsection{Die Reziprozität legt den Skalierungsfaktor fest}
+
+Es gibt kein ausgezeichnetes Inertialsystem, das sich \emph{wirklich bewegt}. Bewegt sich das gestrichene Bezugssystem relativ zum ungestrichenen mit \(v\), so bewegt sich das ungestrichene relativ zum gestrichenen mit \(-v\). Die inverse Abbildung muss daher dieselbe Form haben, wobei das Vorzeichen von \(v\) umgekehrt wird:
+\begin{align}
+x&=(x'+vt')f(v),\\
+t&=(t'+vx')f(v).
+\label{eq:sr1-inverse-unscaled}
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_06.png}\caption{Die Reziprozität liefert die inverse Transformation, indem die Relativgeschwindigkeit umgekehrt und derselbe Skalierungsfaktor beibehalten wird.}\lectureframe{00:55:12}\end{figure}
+
+Setzen wir \eqref{eq:sr1-direct-unscaled} in die erste Gleichung von \eqref{eq:sr1-inverse-unscaled} ein:
+\begin{align}
+x
+&=\left[(x-vt)f(v)+v(t-vx)f(v)\right]f(v)\\
+&=x(1-v^2)f(v)^2.
+\end{align}
+Da diese Verkettung die Identität ergeben muss,
+\begin{equation}
+(1-v^2)f(v)^2=1,
+\end{equation}
+folgt
+\begin{equation}
+f(v)=\pm\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr1-factor-roots}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_07.png}\caption{Die Verkettung der direkten und der inversen Abbildung legt den Betrag des gemeinsamen Faktors \(f(v)\) fest.}\lectureframe{00:59:31}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Warum wird in \eqref{eq:sr1-factor-roots} die negative Quadratwurzel verworfen?}\lecturerresponse{Bei verschwindender Relativgeschwindigkeit muss sich die Transformation stetig der Identität annähern, also \(x'=x\) und \(t'=t\). Der negative Zweig ergibt dagegen \(x'=-x\) und \(t'=-t\), also eine Umkehrung beider Koordinatenorientierungen. Ihn zu wählen, würde eine abrupte Spiegelung einführen statt eines stetig bewegten Bezugssystems. \lecturetimestamp{00:59:27}}\end{classroomqa}
+
+Mit dem positiven Zweig lautet die Lorentz-Transformation in Einheiten mit \(c=1\):
+\begin{align}
+x'&=\frac{x-vt}{\sqrt{1-v^2}},&
+t'&=\frac{t-vx}{\sqrt{1-v^2}}.
+\label{eq:sr1-lorentz-c1}
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_08.png}\caption{Die vollständige Lorentz-Transformation in Einheiten, in denen die Lichtgeschwindigkeit eins beträgt.}\lectureframe{01:02:05}\end{figure}
+
+\subsection{Rückkehr zu den üblichen Einheiten}
+
+Eine Dimensionsanalyse führt zu den üblichen Einheiten zurück. Der Nenner kann nur von der dimensionslosen Größe \(v^2/c^2\) abhängen, während \(vx\) in der Zeitgleichung zu \(vx/c^2\) werden muss:
+\begin{align}
+x'&=\gamma(x-vt),&
+t'&=\gamma\left(t-\frac{vx}{c^2}\right),
+\label{eq:sr1-lorentz-dimensional}\\
+\gamma&=\frac{1}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr1-gamma}
+\end{align}
+Die inverse Transformation lautet
+\begin{align}
+x&=\gamma(x'+vt'),&
+t&=\gamma\left(t'+\frac{vx'}{c^2}\right).
+\label{eq:sr1-lorentz-inverse-dimensional}
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_09.png}\caption{Die Lorentz-Formeln mit wiederhergestelltem \(c\): \(v^2/c^2\) bestimmt die Skalierung und \(vx/c^2\) mischt den Ort in die Zeit ein.}\lectureframe{01:05:01}\end{figure}
+
+Für \(v\ll c\) gilt
+\begin{equation}
+\gamma=1+\frac{1}{2}\frac{v^2}{c^2}+O\!\left(\frac{v^4}{c^4}\right),
+\end{equation}
+und die Transformation vereinfacht sich zu
+\begin{equation}
+x'\approx x-vt,
+\qquad
+t'\approx t.
+\end{equation}
+Bei irdischen Geschwindigkeiten sind die Verhältnisse gewöhnlich sehr klein; das erklärt den Erfolg der Newtonschen Kinematik. In der Nähe von \(c\) werden die Korrekturen groß.
+
+Die Bewegung wurde entlang der \(x\)-Achse gewählt. Ein quer dazu angeordneter Maßstab kann nicht zwischen den beiden Inertialsystemen unterscheiden, ohne die Reziprozität zu verletzen. Daher gilt
+\begin{equation}
+y'=y,
+\qquad
+z'=z.
+\end{equation}
+
+\section{Messung eines bewegten Stabs}
+
+Länge ist der Abstand zwischen den beiden Endpunkten, gemessen zur selben Zeit im messenden Bezugssystem. Sie ist nicht mit der scheinbaren Winkelgröße eines fotografierten Gegenstands gleichzusetzen, denn die Lichtlaufzeitverzögerungen führen zu einem eigenen optischen Problem.
+
+Ein Stab ruhe im ungestrichenen Bezugssystem; seine Endpunkte seien
+\begin{equation}
+x=0,
+\qquad
+x=1.
+\end{equation}
+Der gestrichene Beobachter misst die Endpunktereignisse auf einem einzigen Schnitt gleicher gestrichener Zeit, etwa bei \(t'=0\). Am entfernten Endpunkt \(x=1\) gilt
+\begin{equation}
+t'=0
+\quad\Longrightarrow\quad
+t=\frac{vx}{c^2}.
+\end{equation}
+Kehren wir vorübergehend zu \(c=1\) zurück. Für dieses Ereignis gilt \(t=v\), und
+\begin{equation}
+x'=\frac{x-vt}{\sqrt{1-v^2}}
+   =\frac{1-v^2}{\sqrt{1-v^2}}
+   =\sqrt{1-v^2}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_10.png}\caption{Die Weltlinien \(x=0\) und \(x=1\) eines im ungestrichenen Bezugssystem ruhenden Stabs; ein bewegter Beobachter muss sie auf einem einzigen \(t'\)-Schnitt vergleichen.}\lectureframe{01:11:14}\end{figure}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_11.png}\caption{Die Messung der Endpunkte bei gleicher gestrichener Zeit ergibt in Einheiten mit \(c=1\) den Kontraktionsfaktor \(\sqrt{1-v^2}\).}\lectureframe{01:16:03}\end{figure}
+
+Stellen wir die Einheiten und eine allgemeine Ruhelänge \(L_0\) wieder her,
+\begin{equation}
+L=\frac{L_0}{\gamma}
+ =L_0\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr1-length-contraction}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{Wenn das entfernte Ende des Stabs bei \(x=1\) liegt, müsste seine Koordinate dann nicht ebenfalls \(x'=1\) sein?}\lecturerresponse{Nein. Der Stab ruht im ungestrichenen Bezugssystem; dort bezeichnen \(x=0\) und \(x=1\) seine festen Endpunkte. Die gestrichene Koordinate des entfernten Endpunkts ändert sich mit der Zeit. Ihr Wert auf dem Messschnitt \(t'=0\) ist genau das, was die Lorentz-Transformation berechnet. \lecturetimestamp{01:14:24}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Wie können beide Inertialbeobachter widerspruchsfrei sagen, dass der Stab des jeweils anderen kürzer ist?}\lecturerresponse{Sie messen unterschiedliche Paare von Endpunktereignissen. Der ungestrichene Beobachter verlangt gleiche \(t\); der gestrichene Beobachter verlangt gleiche \(t'\). Da die Gleichzeitigkeit vom Bezugssystem abhängt, sind diese beiden Endpunktpaare nicht dieselben Ereignisse. Die Reziprozität führt daher zu keinem Widerspruch. \lecturetimestamp{01:16:28}}\end{classroomqa}
+
+Es lohnt sich, die operationale Vorgehensweise ausdrücklich zu beschreiben. Man stellt synchronisierte Uhren auf und verteilt Assistenten entlang des messenden Bezugssystems. Zu einer vorgegebenen Ortszeit notiert jeder Assistent die Position des Endpunkts, der gerade an ihm vorbeikommt. Die Differenz der beiden gleichzeitig aufgezeichneten Positionen ergibt die Länge des Stabs in diesem Bezugssystem. Wie der Stab aussieht, spielt dabei keine Rolle.
+
+\begin{classroomqa}\audiencequestion{Muss ein Einheitsstab eine Lichtsekunde lang sein, wenn \(c=1\) gilt?}\lecturerresponse{Nur wenn die Zeit in Sekunden gemessen wird. Für die Länge kann man stattdessen Meter verwenden und die Zeit anhand der Lichtlaufzeit über einen Meter messen. Die Festlegung \(c=1\) verknüpft Zeit- und Längeneinheiten; sie schreibt nicht vor, welche physikalische Einheit zuerst gewählt werden muss. \lecturetimestamp{01:21:17}}\end{classroomqa}
+
+\section{Eine bewegte Uhr und die Zwillingsfrage}
+
+Betrachten wir nun eine Uhr, die im gestrichenen Bezugssystem ruht. Entlang ihrer Weltlinie gilt
+\begin{equation}
+x'=0.
+\end{equation}
+Vergleichen wir das Ereignis, bei dem sie \(t'=1\) anzeigt, mit dem Ursprung. Die inverse Transformation ergibt
+\begin{equation}
+t=\gamma\left(t'+\frac{vx'}{c^2}\right)=\gamma.
+\end{equation}
+Somit entspricht eine Einheit verstrichener Zeit auf der bewegten Uhr \(\gamma\) Einheiten ungestrichener Koordinatenzeit:
+\begin{equation}
+\Delta t=\gamma\,\Delta\tau,
+\qquad
+\Delta\tau=\frac{\Delta t}{\gamma}.
+\label{eq:sr1-time-dilation}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_12.png}\caption{Eine auf \(x'=0\) mitgeführte Uhr misst zwischen denselben beiden Ereignissen weniger verstrichene Zeit als die stationäre Koordinatenzeit: \(t=\gamma t'\).}\lectureframe{01:26:42}\end{figure}
+
+Der Effekt betrifft alle physikalischen Uhren, nicht nur einen als Uhr bezeichneten Mechanismus. Armbanduhr, atomarer Übergang, Stoffwechsel und biologisches Altern folgen alle derselben Eigenzeit. Eine billige Uhr, die man auf einer Straße in New York gekauft hat, entgeht der Relativitätstheorie nicht, nur weil sie keine hochwertige Rolex ist; sie mag ungenau gehen, aber jeder Prozess, auf dem ihr Gang beruht, unterliegt dennoch derselben Kinematik.
+
+\begin{classroomqa}\audiencequestion{Wenn jeder Inertialbeobachter die Uhr des anderen langsamer gehen sieht, warum kehrt dann der reisende Zwilling jünger zurück?}\lecturerresponse{Eine Rundreise ist kein Vergleich zweier weltweit gleichwertiger Inertialweltlinien. Der Reisende muss umkehren und in ein anderes Inertialsystem wechseln, während der zu Hause gebliebene Zwilling auf einer einzigen Inertialweltlinie bleibt. Durch die Umkehr wird die Symmetrie des Austauschs gebrochen, sodass sich die angesammelten Eigenzeiten unterscheiden können. \lecturetimestamp{01:26:37}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Ist die Beschleunigung während der Umkehr selbst die Ursache des Altersunterschieds?}\lecturerresponse{Die Beschleunigung markiert, wo die Symmetrie gebrochen wird; der Altersunterschied ergibt sich jedoch durch Integration der Eigenzeit entlang der vollständigen Wege. Die Umkehr kann kurz sein oder als Wechsel zwischen Inertialabschnitten behandelt werden; die unterschiedlichen Raumzeitwege haben dennoch unterschiedliche Eigenzeiten. \lecturetimestamp{01:29:20}}\end{classroomqa}
+
+\section{Die invariante Geometrie}
+
+Das Diagramm zur Zeitdilatation wirkt widersinnig, wenn man es mit euklidischer Geometrie liest. Der schräge Weg scheint eine Hypotenuse zu sein, und doch entspricht ihm weniger Eigenzeit als dem vertikalen Weg. Die Auflösung liegt nicht in einem algebraischen Trick. Die Raumzeit besitzt eine andere Metrik.
+
+In der euklidischen Ebene verändert eine Drehung \(x\) und \(y\), erhält aber
+\begin{equation}
+x'^2+y'^2=x^2+y^2.
+\label{eq:sr1-euclidean-invariant}
+\end{equation}
+Es liegt nahe, zu prüfen, ob eine Lorentz-Transformation \(t^2+x^2\) erhält. Das tut sie nicht. In Einheiten mit \(c=1\) gilt
+\begin{align}
+t'^2
+&=\frac{t^2-2vtx+v^2x^2}{1-v^2},\\
+x'^2
+&=\frac{x^2-2vtx+v^2t^2}{1-v^2}.
+\end{align}
+Bei Addition ergeben sich die falschen Koeffizienten. Bei Subtraktion heben sich dagegen die gemischten Terme auf, und man erhält
+\begin{align}
+t'^2-x'^2
+&=
+\frac{t^2-2vtx+v^2x^2-x^2+2vtx-v^2t^2}{1-v^2}\\
+&=t^2-x^2.
+\label{eq:sr1-interval-invariance}
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_13.png}\caption{Durch Subtraktion der quadrierten transformierten Koordinaten heben sich die Kreuzterme auf; so tritt die invariante Größe \(t^2-x^2\) hervor.}\lectureframe{01:38:07}\end{figure}
+
+Koordinaten sind vom Bezugssystem abhängige Komponenten. Die Kombination
+\begin{equation}
+\Delta s^2=c^2\Delta t^2-\Delta x^2
+\label{eq:sr1-spacetime-interval}
+\end{equation}
+ist in jedem Inertialsystem gleich. Mit weiteren Raumdimensionen gilt
+\begin{equation}
+\Delta s^2
+=c^2\Delta t^2-\Delta x^2-\Delta y^2-\Delta z^2.
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{Warum darf man die gewöhnliche geometrische Regel aufgeben, dass die Hypotenuse länger ist?}\lecturerresponse{Diese Regel gilt für die positiv definite euklidische Metrik. Die hier betrachteten Koordinaten wurden operational mithilfe von Stäben, Uhren und Lichtsignalen definiert, und ihre Transformation erhält eine Differenz von Quadraten. Die Minkowski-Geometrie wird nicht vorausgesetzt, um dem Paradoxon auszuweichen, sondern aus diesen Messungen erschlossen. \lecturetimestamp{01:43:21}}\end{classroomqa}
+
+\subsection{Eigenzeit}
+
+Betrachten wir zwei Ereignisse auf der Weltlinie einer Uhr und wählen wir ihr Ruhesystem. Dort gilt \(\Delta x'=0\), sodass aus der Invarianz folgt
+\begin{equation}
+c^2\Delta\tau^2
+=c^2\Delta t^2-\Delta x^2,
+\end{equation}
+oder
+\begin{equation}
+\Delta\tau
+=\sqrt{\Delta t^2-\frac{\Delta x^2}{c^2}}.
+\label{eq:sr1-proper-time}
+\end{equation}
+Dies ist die tatsächlich von der Uhr zwischen den beiden Ereignissen gemessene Zeit.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_14.png}\caption{Im Ruhesystem der Uhr verschwindet der räumliche Abstand; daher ist das invariante Intervall das Quadrat ihrer Eigenzeit.}\lectureframe{01:41:28}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Ist die Eigenzeit \(t^2-x^2/c^2\) oder ihre Quadratwurzel?}\lecturerresponse{Die Differenz der Quadrate ist das Quadrat der Eigenzeit. Die von einer Uhr abgelesene verstrichene Zeit ist \(\tau=\sqrt{t^2-x^2/c^2}\) für Abstände, die von einem gemeinsamen Ursprung aus gemessen werden. In der anfänglichen Formulierung muss die fehlende Quadratwurzel ergänzt werden. \lecturetimestamp{01:51:02}}\end{classroomqa}
+
+\subsection{Zeitartige, lichtartige und raumartige Abstände}
+
+Zwei verschiedene Ereignisse können ein Intervall von null haben. In Einheiten mit \(c=1\) gilt
+\begin{equation}
+\Delta t^2-\Delta x^2=0
+\quad\Longleftrightarrow\quad
+\Delta x=\pm\Delta t.
+\end{equation}
+Solche Ereignisse sind durch einen Lichtstrahl verbunden.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_15.png}\caption{Lichtartig getrennte Ereignisse liegen auf \(x=\pm t\); das Raumzeitintervall und die Eigenzeit des lichtartigen Weges verschwinden.}\lectureframe{01:46:40}\end{figure}
+
+Könnte Licht eine gewöhnliche Uhr mitführen, gäbe es zwischen Aussendung und Absorption keinen Eigenzeittakt. Das ist kein gültiges Ruhesystem für Licht, sondern die Grenzaussage, dass jedes lichtartige Wegstück eine verschwindende Eigenzeit hat.
+
+Die Lichtstrahlen teilen die Raumzeit in drei invariante Klassen:
+\begin{align}
+c^2\Delta t^2-\Delta x^2&>0
+&&\text{timelike},\\
+c^2\Delta t^2-\Delta x^2&=0
+&&\text{null},\\
+c^2\Delta t^2-\Delta x^2&<0
+&&\text{spacelike}.
+\end{align}
+Eine physikalische Uhr kann zeitartig getrennte Ereignisse verbinden; das positive Intervall bestimmt ihre Eigenzeit. Kein Objekt mit Unterlichtgeschwindigkeit kann raumartig getrennte Ereignisse verbinden. Für ein raumartiges Ereignispaar lässt sich ein Bezugssystem wählen, in dem die Ereignisse gleichzeitig sind, und der Eigenabstand definieren:
+\begin{equation}
+\ell_{\rm proper}
+=\sqrt{\Delta x^2-c^2\Delta t^2}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_16.png}\caption{Der Lichtkegel trennt zeitartig getrennte Ereignispaare, die eine Uhr verbinden kann, von raumartig getrennten Paaren, die kein Objekt mit Unterlichtgeschwindigkeit verbinden kann.}\lectureframe{01:48:47}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Wann sollte man die Invariante Eigenzeit nennen und wann Eigenlänge?}\lecturerresponse{Für ein zeitartiges Ereignispaar gibt es ein Ruhesystem, in dem beide Ereignisse am selben Ort stattfinden; das Intervall ergibt dann die Eigenzeit. Für ein raumartiges Ereignispaar gibt es ein Bezugssystem, in dem beide Ereignisse zur selben Zeit stattfinden; die Invariante mit umgekehrtem Vorzeichen ergibt ihren Eigenabstand. Die lichtartige Trennung bildet die Grenze zwischen beiden Fällen. \lecturetimestamp{01:47:22}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Wo gehört \(c\) hin, wenn die Einheiten nicht so gewählt sind, dass \(c=1\) gilt?}\lecturerresponse{Die Invariante lautet \(c^2\Delta t^2-\Delta x^2\) und hat die Dimension einer Länge zum Quadrat. Durch Division durch \(c^2\) erhält man \(\Delta\tau^2=\Delta t^2-\Delta x^2/c^2\) mit der Dimension einer Zeit zum Quadrat. \lecturetimestamp{01:49:56}}\end{classroomqa}
+
+\section{Lorentz-Symmetrie und ihre historische Bedeutung}
+
+\begin{classroomqa}\audiencequestion{Kann man eine Lorentz-Transformation als Drehung auffassen?}\lecturerresponse{Ja, aber nicht als gewöhnliche euklidische Drehung. Sie ist eine hyperbolische Drehung, die \(t^2-x^2\) erhält. Historisch lässt sie sich als Drehung um einen imaginären Winkel beschreiben; die Rapidität liefert die moderne reelle Parametrisierung. \lecturetimestamp{01:51:40}}\end{classroomqa}
+
+Einsteins Zugang war eng mit dem Elektromagnetismus verbunden. Seiner späteren Erinnerung zufolge fragte er sich schon als Jugendlicher, was geschehen würde, wenn er einer Lichtwelle hinterherjagte. Nach der Galileischen Geschwindigkeitsaddition würde die Welle stillzustehen scheinen, doch Maxwells Gleichungen kennen keine entsprechende eingefrorene, oszillierende Lichtwelle im Vakuum. Dieser Konflikt deutete auf die Kinematik hin, nicht auf eine ungewöhnliche mechanische Eigenschaft von Messstäben.
+
+\begin{classroomqa}\audiencequestion{War Einsteins Argument in erster Linie eine Reaktion auf Experimente wie das von Michelson--Morley?}\lecturerresponse{Der experimentelle Hintergrund war historisch von Bedeutung, aber Einstein selbst hob die Struktur der Maxwellschen Gleichungen und das Gedankenexperiment hervor, einem Lichtstrahl nachzujagen. Historisch umstritten ist, wie viel er über bestimmte Interferometer-Ergebnisse wusste oder sich auf sie stützte. Der klare physikalische Punkt ist daher der Symmetrie-Konflikt zwischen den Maxwell-Gleichungen und den Galilei-Transformationen. \lecturetimestamp{01:52:04}}\end{classroomqa}
+
+Maxwells Gleichungen sind unter Lorentz-Transformationen invariant, nicht unter Galilei-Transformationen. Lorentz und FitzGerald hatten bereits verwandte Kontraktionsformeln gefunden, während sie an einem Äther festhielten und die Kontraktion als dynamische Verformung durch die Bewegung hindurch deuteten. Nach dieser Auffassung hätte der Effekt eine näherungsweise Materialreaktion mit weiteren Korrekturen sein können.
+
+Einsteins entscheidender Schritt bestand darin, das Relativitätsprinzip und die Invarianz der Lichtgeschwindigkeit als exakte kinematische Prinzipien zu formulieren. Längenkontraktion und Zeitdilatation gelten damit für alle geeigneten Stäbe und Uhren, weil sie die Geometrie beschreiben, die Inertialsysteme miteinander verbindet, und nicht eine besondere Kraft, die ein Äther ausübt. Als Nächstes ist die Bewegung von Teilchen innerhalb dieser Geometrie zu formulieren.

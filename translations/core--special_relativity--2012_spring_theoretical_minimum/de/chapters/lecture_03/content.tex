@@ -1,0 +1,857 @@
+\chapter{Teilchenmechanik, Viererimpuls und Ruheenergie}
+
+\section{Die Näherung, die wir immer wieder verwenden werden}
+
+Die Mechanik eines relativistischen Teilchens muss vertraute Fragen in einer neuen Sprache beantworten. Wie bewegt sich ein Teilchen? Was sind sein Impuls und seine Energie? Warum bilden diese Größen zusammen einen Vierervektor, und wie ergibt sich \(E=mc^2\) aus den gewöhnlichen Methoden der Mechanik? Bevor wir uns diesen Fragen zuwenden, benötigen wir eine elementare Näherung, die in der gesamten Rechnung immer wieder auftreten wird.
+
+Für jeden Exponenten \(p\) lautet die Binomialreihe
+\begin{equation}
+\begin{aligned}
+(1+\epsilon)^p
+&=1+p\epsilon\\
+&\quad+\frac{p(p-1)}{2!}\epsilon^2\\
+&\quad+\frac{p(p-1)(p-2)}{3!}\epsilon^3
++\cdots .
+\end{aligned}
+\label{eq:sr3-binomial}
+\end{equation}
+Der Exponent kann positiv, negativ, gebrochen oder sogar komplex sein. Für hinreichend kleines \(\epsilon\) konvergiert die Reihe schnell, und jeder folgende Term ist kleiner. Dann können wir die Entwicklung bei derjenigen Ordnung abbrechen, die für die gewünschte Genauigkeit erforderlich ist. Der Term nullter Ordnung ist oft der größte, in den folgenden Anwendungen jedoch häufig eine Konstante und damit dynamisch uninteressant. In der ersten Korrektur kommt die Bewegung zum Ausdruck.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_01.png}
+\caption{Die Binomialreihe bis zur dritten Ordnung, mit der sich die nichtrelativistische Mechanik aus relativistischen Formeln zurückgewinnen lässt.}
+\lectureframe{00:04:24}
+\end{figure}
+
+Wir setzen gewöhnlich \(c=1\), sodass eine Geschwindigkeit \(v\) den Anteil \(v/c\) der Lichtgeschwindigkeit bezeichnet. Setzen wir \(\epsilon=-v^2\). Mit \(p=\tfrac12\) gilt:
+\begin{equation}
+\sqrt{1-v^2}
+=
+1-\frac{v^2}{2}-\frac{v^4}{8}-\cdots
+\approx
+1-\frac{v^2}{2},
+\qquad |v|\ll 1.
+\label{eq:sr3-sqrt-expansion}
+\end{equation}
+Bei \(p=-\tfrac12\) heben sich die beiden Minuszeichen auf:
+\begin{equation}
+\frac{1}{\sqrt{1-v^2}}
+=
+1+\frac{v^2}{2}+\frac{3v^4}{8}+\cdots
+\approx
+1+\frac{v^2}{2}.
+\label{eq:sr3-gamma-expansion}
+\end{equation}
+Viele Faktoren \(1/2\) in der klassischen Mechanik lassen sich im Nachhinein als erste Korrektur einer dieser relativistischen Entwicklungen erkennen. Die Näherung versagt, wenn \(v\) gegen eins geht; dann kann kein Abbruch nach endlich vielen Termen das singuläre Verhalten des exakten Ausdrucks erfassen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_02.png}
+\caption{Beide Formeln für kleine Geschwindigkeiten sind zu sehen: \(\sqrt{1-v^2}\approx1-v^2/2\) und \((1-v^2)^{-1/2}\approx1+v^2/2\).}
+\lectureframe{00:07:39}
+\end{figure}
+
+\section{Was gilt als Teilchen?}
+
+Ein Teilchen in der Mechanik muss nicht elementar sein. Es kann ein Elektron, die Sonne, eine Pralinenschachtel oder ein Donut sein. Entscheidend ist, dass das Objekt hinreichend gut zusammenhält, sodass sich seine Gesamtbewegung durch einen Schwerpunkt beschreiben lässt. Ein Donut erinnert daran, dass der Schwerpunkt nicht im materiellen Teil des Körpers liegen muss.
+
+In der Newtonschen Mechanik erfüllen die Schwerpunktgrößen
+\begin{equation}
+\vec p=m\vec v,
+\qquad
+K=\frac12mv^2,
+\qquad
+\vec F=m\vec a.
+\label{eq:sr3-newtonian-particle}
+\end{equation}
+Diese Formeln gelten unabhängig davon, ob das Objekt elementar oder zusammengesetzt ist. Ein zusammengesetztes Objekt besitzt außerdem innere Energie. Ein bewegter Donut hat zum Beispiel neben der kinetischen Energie seines Schwerpunkts auch chemische, thermische und Bindungsenergie:
+\begin{equation}
+E_{\text{Newtonian}}
+=
+E_{\text{internal}}+\frac12mv^2.
+\label{eq:sr3-newtonian-internal}
+\end{equation}
+Der innere Anteil hängt nicht von der Gesamtgeschwindigkeit des Schwerpunkts ab. Die Relativitätstheorie behält diese Unterscheidung bei, zeigt aber, dass die innere Energie zur invarianten Masse des gesamten Objekts beiträgt.
+
+Wir benötigen dieselben Werkzeuge wie in der klassischen Mechanik: Trajektorien, das Prinzip der stationären Wirkung, Lagrange-Funktionen, kanonische Impulse, Hamilton-Funktionen und den Zusammenhang zwischen kontinuierlichen Symmetrien und Erhaltungssätzen.
+
+\section{Weltlinien und kausale Trennung}
+
+Tragen wir die Position eines Systems horizontal und die Zeit vertikal auf. Seine Geschichte bildet dann eine Kurve in der Raumzeit. Für ein Teilchen heißt diese Kurve seine \emph{Weltlinie}. Das Konzept gibt es bereits in der Newtonschen Mechanik, doch in der Relativitätstheorie wird es grundlegend, weil Lorentz-Transformationen Raum und Zeit miteinander vermischen.
+
+Betrachten wir zwei Ereignisse mit dem Abstand
+\begin{equation}
+\Delta x^\mu=(\Delta t,\Delta\vec x),
+\qquad
+\Delta\vec x^{\,2}
+=
+(\Delta x)^2+(\Delta y)^2+(\Delta z)^2.
+\end{equation}
+In Einheiten \(c=1\) ist ihr invariantes Intervall
+\begin{equation}
+(\Delta\tau)^2
+=
+(\Delta t)^2-\Delta\vec x^{\,2}.
+\label{eq:sr3-interval}
+\end{equation}
+
+\subsection{Zeitartige Trennung}
+
+Wenn \((\Delta t)^2>\Delta\vec x^{\,2}\) gilt, dann gilt \((\Delta\tau)^2>0\), und die Trennung ist zeitartig. Es gibt ein Lorentz-System, in dem die beiden Ereignisse am selben räumlichen Ort stattfinden. In diesem System ist die Verbindungslinie zwischen ihnen vertikal, und eine Uhr kann von einem Ereignis zum anderen gelangen. Ihre verstrichene Anzeige ist die Eigenzeit \(\Delta\tau\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_03.png}
+\caption{Bei einem zeitartigen Intervall ist die zeitliche Trennung größer als die räumliche; es gibt ein Ruhesystem, in dem beide Ereignisse am selben Ort stattfinden.}
+\lectureframe{00:14:42}
+\end{figure}
+
+\subsection{Raumartige Trennung}
+
+Wenn \(\Delta\vec x^{\,2}>(\Delta t)^2\) gilt, ist das Intervall raumartig. Kein Inertialsystem bringt beide Ereignisse an denselben räumlichen Ort, aber es gibt ein System, in dem sie gleichzeitig stattfinden. In anderen Systemen kann sich ihre zeitliche Reihenfolge umkehren. Daher ist für ein raumartiges Ereignispaar weder die Aussage, \emph{Ereignis \(A\) habe zuerst stattgefunden}, noch die Aussage, \emph{Ereignis \(B\) habe zuerst stattgefunden}, invariant. Dies ist die Relativität der Gleichzeitigkeit in geometrischer Form.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_04.png}
+\caption{Bei einem raumartigen Intervall kann ein Wechsel des Inertialsystems die beiden Ereignisse gleichzeitig machen oder ihre zeitliche Reihenfolge umkehren.}
+\lectureframe{00:17:01}
+\end{figure}
+
+Ein massives Teilchen hat eine zeitartige Weltlinie: Jedes hinreichend kurze Segment erfüllt \(d\tau^2>0\). Durch fortgesetztes Zusammensetzen von Geschwindigkeiten der Größe \(0.9c\) kann sich ein Teilchen \(c\) immer weiter nähern, es aber nie überschreiten. Die Annäherung erinnert an Zenons Paradoxon. Diese Kausalitätsbeschränkung gilt nicht nur für materielle Objekte, sondern auch für Signale und Information, denn Information muss von physikalischen Systemen übertragen werden. Ein Signal, das sich schneller als Licht ausbreitet, würde es verschiedenen Bezugssystemen ermöglichen, darüber uneinig zu sein, welches Ende seiner Geschichte Ursache und welches Wirkung ist.
+
+\section{Vierergeschwindigkeit}
+
+Betrachten wir ein kurzes zeitartiges Segment. In konventionellen Einheiten gilt
+\begin{equation}
+d\tau
+=
+\sqrt{dt^2-\frac{d\vec x^{\,2}}{c^2}}.
+\label{eq:sr3-proper-time-dimensional}
+\end{equation}
+Der Faktor \(c^2\) ist durch die Dimensionen vorgegeben: \(dt^2\) hat die Einheit einer Zeit zum Quadrat, während \(d\vec x^{\,2}\) die Einheit einer Länge zum Quadrat hat.
+
+\begin{classroomqa}
+\audiencequestion{Wo muss die Lichtgeschwindigkeit eingesetzt werden, wenn das Intervall in gewöhnlichen Einheiten angegeben wird?}
+\lecturerresponse{Der räumliche Term muss durch \(c^2\) geteilt werden, sodass sich \(d\tau^2=dt^2-d\vec x^{\,2}/c^2\) ergibt. In der Regel verwenden wir wieder \(c=1\), doch aus der Dimensionskonsistenz lassen sich die fehlenden Faktoren stets wiederherstellen. \lecturetimestamp{00:21:23}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_05.png}
+\caption{Eine Weltlinienverschiebung \(\Delta x^\mu=(\Delta t,\Delta\vec x)\) und der zugehörige Eigenzeitabschnitt.}
+\lectureframe{00:21:03}
+\end{figure}
+
+Die gewöhnliche Geschwindigkeit hat drei räumliche Komponenten,
+\begin{equation}
+v^i=\frac{dx^i}{dt},
+\qquad i=1,2,3.
+\end{equation}
+Die relativistische Geschwindigkeit erhält man, indem man die gesamte Raumzeitverschiebung durch die invariante Eigenzeit teilt:
+\begin{equation}
+u^\mu
+=
+\frac{dx^\mu}{d\tau},
+\qquad
+\mu=0,1,2,3.
+\label{eq:sr3-four-velocity-definition}
+\end{equation}
+Griechische Indizes durchlaufen die Raumzeit, lateinische Indizes den Raum. Die nullte Positionskomponente ist in Einheiten \(c=1\) gleich \(x^0=t\), also
+\begin{equation}
+u^0=\frac{dt}{d\tau}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_06.png}
+\caption{Die gewöhnliche Geschwindigkeit ist die räumliche Verschiebung geteilt durch die Koordinatenzeit; die Vierergeschwindigkeit erhält man, indem man alle vier Komponenten durch die Eigenzeit teilt.}
+\lectureframe{00:24:05}
+\end{figure}
+
+Um \(u^\mu\) mit \(\vec v\) in Beziehung zu setzen, klammern wir \(dt^2\) im Intervall aus:
+\begin{align}
+d\tau^2
+&=dt^2-d\vec x^{\,2}\\
+&=dt^2\left(1-\frac{d\vec x^{\,2}}{dt^2}\right)
+=dt^2(1-v^2).
+\end{align}
+Für eine zukunftsgerichtete Weltlinie wählen wir die positive Wurzel:
+\begin{equation}
+\frac{d\tau}{dt}=\sqrt{1-v^2},
+\qquad
+\frac{dt}{d\tau}=\frac{1}{\sqrt{1-v^2}}
+\equiv\gamma.
+\label{eq:sr3-time-component}
+\end{equation}
+Für eine räumliche Komponente gilt
+\begin{equation}
+v^i
+=
+\frac{dx^i}{dt}
+=
+\frac{dx^i}{d\tau}\frac{d\tau}{dt}
+=u^i\sqrt{1-v^2}.
+\end{equation}
+Damit folgt
+\begin{equation}
+\boxed{
+u^\mu
+=
+\gamma(1,\vec v)
+},
+\qquad
+u^0=\gamma,
+\qquad
+u^i=\gamma v^i.
+\label{eq:sr3-four-velocity-components}
+\end{equation}
+Bei kleinen Geschwindigkeiten gilt \(u^0\to1\) und \(u^i\to v^i\). In der Nähe der Lichtgeschwindigkeit werden sowohl \(u^0\) als auch der Betrag der räumlichen Vierergeschwindigkeit groß, obwohl \(|\vec v|<1\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_07.png}
+\caption{Der endgültige Zusammenhang zwischen der gewöhnlichen Geschwindigkeit und allen vier Komponenten von \(u^\mu\).}
+\lectureframe{00:30:40}
+\end{figure}
+
+\subsection{Warum nur drei Komponenten unabhängig sind}
+
+Die Vierergeschwindigkeit hat vier Komponenten, aber nur drei unabhängige Freiheitsgrade. Teilt man die Intervallgleichung durch \(d\tau^2\), erhält man
+\begin{equation}
+1
+=
+\left(\frac{dt}{d\tau}\right)^2
+-\left(\frac{d\vec x}{d\tau}\right)^2,
+\end{equation}
+oder
+\begin{equation}
+\boxed{
+(u^0)^2-\vec u^{\,2}=1
+}.
+\label{eq:sr3-four-velocity-normalization}
+\end{equation}
+Die eine Normierungsbedingung beseitigt eine unabhängige Komponente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_08.png}
+\caption{Aus dem invarianten Intervall folgt unmittelbar die Normierung \((u^0)^2-\vec u^{\,2}=1\).}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Lässt sich der Verlust einer unabhängigen Komponente dadurch verstehen, dass man nach der Eigenzeit selbst ableitet?}
+\lecturerresponse{Ja. Die Eigenzeit ist keine unabhängige fünfte Koordinate; sie wird durch das Raumzeitintervall entlang der Weltlinie festgelegt. Teilt man diese definierende Beziehung durch \(d\tau^2\), so müssen die vier Ableitungen auf dem Einheits-Hyperboloid zeitartiger Vektoren \((u^0)^2-\vec u^{\,2}=1\) liegen. \lecturetimestamp{00:34:07}}
+\end{classroomqa}
+
+\section{Eine invariante Wirkung für ein freies Teilchen}
+
+Welches Gesetz bestimmt eine kraftfreie Weltlinie? Wir übernehmen zwei Erkenntnisse aus der klassischen Mechanik:
+\begin{enumerate}
+\item Der physikalische Weg macht die Wirkung stationär, während die Endpunkte festgehalten werden;
+\item die Wirkung setzt sich additiv aus infinitesimalen Wegsegmenten zusammen.
+\end{enumerate}
+Die Relativitätstheorie stellt eine dritte Forderung: Alle Inertialbeobachter müssen derselben Wirkung zustimmen. Die naheliegende infinitesimale skalare Größe auf einer zeitartigen Weltlinie ist \(d\tau\). Daher lautet die Wirkung eines freien Teilchens
+\begin{equation}
+\boxed{
+S=-m\int_a^b d\tau
+}
+\qquad(c=1).
+\label{eq:sr3-invariant-action}
+\end{equation}
+Das Bild einer endlichen Summe lautet
+\begin{equation}
+S=-m\lim_{N\to\infty}\sum_{k=1}^{N}\Delta\tau_k.
+\end{equation}
+Da alle Beobachter jedem Eigenzeitabschnitt zustimmen, stimmen sie auch darin überein, welcher Weg ihre Summe stationär macht.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_09.png}
+\caption{Die Wirkung wird als Summe invarianten Eigenzeitabschnitte entlang einer variierten Weltlinie mit festen Endpunkten gebildet.}
+\lectureframe{00:38:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was geschieht mit der Energie, wenn die Wirkung mit einer beliebigen Konstante multipliziert wird?}
+\lecturerresponse{Die Energie ist keine Ausgangsinvariante; sie wird aus der Lagrange-Funktion und der Hamilton-Funktion hergeleitet. Wird die gesamte Wirkung mit einer von null verschiedenen Konstante multipliziert, bleiben ihre stationären Wege unverändert, auch wenn sich dadurch die aus dieser Wirkung definierten kanonischen Größen skalieren. Die Normierung \(-m\) wird so gewählt, dass diese abgeleiteten Größen den etablierten Newtonschen Konventionen entsprechen. \lecturetimestamp{00:39:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum eignet sich eine Invariante wie die Eigenzeit als Grundlage für die Wirkung?}
+\lecturerresponse{Ein Gesetz der stationären Wirkung sollte in jedem Inertialsystem denselben physikalischen Weg auswählen. Das ist vergleichbar mit der Suche nach der kürzesten Kurve in einer euklidischen Ebene: Drehungen ändern die Koordinatenkomponenten, aber nicht die infinitesimale Länge und somit auch nicht, welche Kurve die kürzeste ist. Ersetzt man die euklidische Länge durch die Eigenzeit, erhält man die relativistische Konstruktion. \lecturetimestamp{00:40:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum wählen wir für die Eigenzeit die positive statt der negativen Quadratwurzel?}
+\lecturerresponse{Die Eigenzeit ist als positive verstrichene Anzeige einer Uhr definiert, die von der Vergangenheit in die Zukunft getragen wird. Eine konsequente Wahl der negativen Wurzel würde lediglich das Vorzeichen der Wirkung umkehren und aus einem Minimum ein Maximum machen, ohne die stationäre Weltlinie zu ändern. Im Ruhesystem der Uhr ergibt die positive Konvention \(d\tau=dt\). \lecturetimestamp{00:42:59}}
+\end{classroomqa}
+
+Auch der Faktor \(-m\) ist eine Normierungskonvention, die so gewählt wird, dass sich die Newtonsche Mechanik zurückgewinnen lässt. In Einheiten mit Dimensionen lautet die konventionelle Wirkung
+\begin{equation}
+S=-mc^2\int_a^b d\tau.
+\label{eq:sr3-action-dimensional}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_10.png}
+\caption{Die endliche Summe der Eigenzeiten wird in natürlichen Einheiten zum invarianten Integral \(-m\int d\tau\).}
+\lectureframe{00:46:23}
+\end{figure}
+
+\section{Die relativistische Lagrange-Funktion}
+
+Um die Wirkung in die übliche mechanische Form zu bringen, klammern wir \(dt\) aus \(d\tau\) aus:
+\begin{equation}
+d\tau
+=dt\sqrt{1-\dot{\vec x}^{\,2}},
+\qquad
+\dot{\vec x}^{\,2}
+=\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+Dann gilt
+\begin{equation}
+S
+=
+\int_a^b L\,dt,
+\qquad
+\boxed{
+L=-m\sqrt{1-v^2}
+}
+\quad(c=1).
+\label{eq:sr3-relativistic-lagrangian}
+\end{equation}
+In konventionellen Einheiten gilt
+\begin{equation}
+L=-mc^2\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr3-relativistic-lagrangian-c}
+\end{equation}
+Dies ist die Lagrange-Funktion eines freien Teilchens: Sie hängt von der Geschwindigkeit, nicht aber vom Ort ab. Eine Kraft oder ein Potential wurde noch nicht eingeführt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_11.png}
+\caption{Das Ausklammern von \(dt\) macht die freie relativistische Lagrange-Funktion als Funktion der drei Geschwindigkeitskomponenten sichtbar.}
+\lectureframe{00:49:57}
+\end{figure}
+
+\subsection{Lagrange und Newton zurückgewinnen}
+
+Setzen wir \eqref{eq:sr3-sqrt-expansion} ein:
+\begin{align}
+L
+&=-m\sqrt{1-v^2}\\
+&\approx-m\left(1-\frac{v^2}{2}\right)\\
+&=-m+\frac12mv^2.
+\label{eq:sr3-lagrangian-low-speed}
+\end{align}
+Die Konstante \(-m\) hängt weder vom Ort noch von der Geschwindigkeit ab. Sie trägt für jeden Weg mit denselben Endzeitpunkten denselben Betrag bei und fällt daher aus den Euler--Lagrange-Gleichungen heraus. Der dynamisch relevante Anteil ist genau
+\begin{equation}
+L_{\mathrm{Newton}}=\frac12mv^2.
+\end{equation}
+Damit wurden Vorzeichen und Massennormierung in der invarianten Wirkung richtig gewählt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_12.png}
+\caption{Die Entwicklung für kleine Geschwindigkeiten ergibt die Konstante \(-m\) und die Newtonsche Lagrange-Funktion des freien Teilchens \(mv^2/2\).}
+\lectureframe{00:53:24}
+\end{figure}
+
+Für das hier betrachtete freie Teilchen besagen die Euler--Lagrange-Gleichungen lediglich, dass die Geschwindigkeit konstant und die Raumzeit-Weltlinie gerade ist. Aufschlussreicher ist es, den erhaltenen Impuls und die erhaltene Energie zu bestimmen.
+
+\section{Kanonischer Impuls}
+
+Da \(L\) nicht vom Ort abhängt, ist sie unter räumlichen Translationen invariant. Die zugehörige Erhaltungsgröße ist der Impuls. Wir setzen die Newtonsche Formel \(p_i=mv_i\) nicht voraus, sondern verwenden die kanonische Definition
+\begin{equation}
+p_i=\frac{\partial L}{\partial\dot x^i}.
+\label{eq:sr3-canonical-momentum}
+\end{equation}
+Für \(L=-m\sqrt{1-v^2}\) gilt
+\begin{align}
+p_i
+&=
+-m\frac{1}{2\sqrt{1-v^2}}
+\frac{\partial}{\partial\dot x^i}(1-v^2)\\
+&=
+-m\frac{1}{2\sqrt{1-v^2}}(-2\dot x^i)\\
+&=
+\frac{mv_i}{\sqrt{1-v^2}}
+=m\gamma v_i.
+\label{eq:sr3-relativistic-momentum}
+\end{align}
+Da \(u^i=\gamma v^i\),
+\begin{equation}
+\boxed{
+p^i=mu^i
+}.
+\label{eq:sr3-momentum-spatial}
+\end{equation}
+Bei kleinen Geschwindigkeiten vereinfacht sich dies zu \(p^i\approx mv^i\). In der Nähe der Lichtgeschwindigkeit ist der Nenner entscheidend.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_13.png}
+\caption{Die kanonische Ableitung der Wurzel-Lagrange-Funktion ergibt \(p_x=mv_x/\sqrt{1-v^2}\).}
+\lectureframe{00:58:49}
+\end{figure}
+
+\subsection{Masse, nicht relativistische Masse}
+
+Hier ist \(m\) einfach die Masse des Teilchens: eine invariante Kennzeichnung, die sich bei seiner Bewegung nicht ändert. Ältere Texte nennen sie manchmal \emph{Ruhemasse} und bezeichnen \(E/c^2\) als geschwindigkeitsabhängige \emph{relativistische Masse}. Im heutigen Sprachgebrauch vermeidet man diese Unterscheidung. Die Bewegung ändert Energie und Impuls, nicht aber die invariante Masse. Die Masse eines Elektrons ist in jedem Bezugssystem derselbe Parameter.
+
+\section{Vom Dreierimpuls zum Viererimpuls}
+
+Eine Aussage über eine einzelne Komponente eines Vierervektors hängt im Allgemeinen vom Bezugssystem ab. Zum Beispiel besagt \(\Delta\vec x=0\), dass zwei Ereignisse in einem Bezugssystem denselben Ort haben; ein Boost neigt dieses Intervall jedoch und führt zu \(\Delta\vec x'\ne0\). Dagegen ist
+\begin{equation}
+\Delta x^\mu=0
+\end{equation}
+invariant: Wenn alle vier Komponenten in einem Bezugssystem verschwinden, verschwinden sie in jedem Bezugssystem. Ebenso kennzeichnet \(\vec u=0\) lediglich das Ruhesystem des Teilchens; es ist keine invariante Beschreibung der Vierergeschwindigkeit.
+
+Für ein abgeschlossenes System lautet die gewöhnliche Impulserhaltung
+\begin{equation}
+\vec P_{\mathrm{initial}}-\vec P_{\mathrm{final}}=0.
+\label{eq:sr3-three-momentum-conservation}
+\end{equation}
+Dies ist eine Gleichung für Dreiervektoren. Um die Erhaltung manifest lorentzkovariant zu formulieren, benötigen wir eine vierte Komponente, die sich zu den drei Komponenten \(p^i=mu^i\) gesellt. Die naheliegende Ergänzung lautet
+\begin{equation}
+p^\mu=mu^\mu.
+\label{eq:sr3-four-momentum}
+\end{equation}
+In Einheiten \(c=1\) gilt
+\begin{equation}
+p^\mu=(p^0,\vec p)
+=
+m\gamma(1,\vec v).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_14.png}
+\caption{Die Impulserhaltung wird erst invariant, wenn die räumlichen Komponenten durch eine vierte Komponente ergänzt werden.}
+\lectureframe{01:09:51}
+\end{figure}
+
+Die fehlende Komponente muss selbst erhalten sein. Die Teilchenmechanik kennt bereits eine weitere erhaltene Größe: die Energie. Die Frage ist, ob \(p^0=mu^0=m\gamma\) in natürlichen Einheiten genau dieser Energie entspricht. Die systematische Antwort liefert die Hamilton-Funktion.
+
+\section{Die Hamilton-Funktion ist die Energie}
+
+Für jede zeitunabhängige Lagrange-Funktion dieser Form lautet die Hamilton-Funktion
+\begin{equation}
+H=\sum_{i=1}^{3}\dot x^i p_i-L.
+\label{eq:sr3-hamiltonian-definition}
+\end{equation}
+Diese Formel ist nicht spezifisch für die Newtonsche Mechanik. Sie ist die allgemeine Legendre-Transformation von den Geschwindigkeiten zu den kanonischen Impulsen und gilt ebenso für die relativistische Lagrange-Funktion.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_15.png}
+\caption{Die allgemeine Formel für die Hamilton-Funktion \(H=\sum_i\dot x^i p_i-L\).}
+\lectureframe{01:11:55}
+\end{figure}
+
+Setzen wir \(p_i=m\dot x_i/\sqrt{1-v^2}\) und \(L=-m\sqrt{1-v^2}\) ein:
+\begin{align}
+H
+&=
+\frac{mv^2}{\sqrt{1-v^2}}
++m\sqrt{1-v^2}\\
+&=
+\frac{mv^2+m(1-v^2)}{\sqrt{1-v^2}}\\
+&=
+\boxed{\frac{m}{\sqrt{1-v^2}}}
+=m\gamma.
+\label{eq:sr3-hamiltonian-result}
+\end{align}
+Die Aufhebung ist der entscheidende Schritt. Im Vergleich mit \(u^0=\gamma\) gilt
+\begin{equation}
+H=mu^0=p^0.
+\end{equation}
+Damit ist die vierte Komponente die Energie:
+\begin{equation}
+p^\mu=(E,\vec p),
+\qquad
+E=H
+\qquad(c=1).
+\label{eq:sr3-four-momentum-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_16.png}
+\caption{Die beiden Terme der Hamilton-Funktion werden auf einen gemeinsamen Nenner gebracht; die Beiträge \(mv^2\) heben sich auf.}
+\lectureframe{01:14:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Formel \(H=\sum_i\dot x^i p_i-L\) nur die klassische Formel für die Hamilton-Funktion?}
+\lecturerresponse{Sie ist die allgemeine Legendre-Transformation zu einer Lagrange-Funktion und keine besondere nichtrelativistische Annahme. Die Form von \(L\) entscheidet darüber, welche Mechanik sich ergibt. Hier liefert die relativistische Wurzel-Lagrange-Funktion \(H=m/\sqrt{1-v^2}\). \lecturetimestamp{01:15:21}}
+\end{classroomqa}
+
+Die invariante Erhaltungsgleichung lautet nun
+\begin{equation}
+\sum_{\mathrm{initial}}p^\mu
+=
+\sum_{\mathrm{final}}p^\mu,
+\label{eq:sr3-four-momentum-conservation}
+\end{equation}
+Sie enthält die Erhaltung der Energie und aller drei Impulskomponenten in einer einzigen Vierervektorgleichung.
+
+\section{Ruheenergie und Newtonscher Grenzfall}
+
+In natürlichen Einheiten ist die exakte Energie
+\begin{equation}
+E=\frac{m}{\sqrt{1-v^2}}.
+\end{equation}
+Unter Verwendung von \eqref{eq:sr3-gamma-expansion} folgt
+\begin{equation}
+E
+\approx
+m+\frac12mv^2+\frac38mv^4+\cdots .
+\label{eq:sr3-energy-natural-expansion}
+\end{equation}
+Der zweite Term ist die vertraute kinetische Energie. Der erste Term ist die Energie, die verbleibt, wenn der Schwerpunkt ruht.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_17.png}
+\caption{Die Entwicklung der exakten Energie lautet \(m+mv^2/2+\cdots\) in Einheiten \(c=1\).}
+\lectureframe{01:18:02}
+\end{figure}
+
+Stellen wir die Dimensionen im exakten Ausdruck wieder her. Der Quotient unter der Wurzel muss \(v^2/c^2\) sein, und der Zähler muss die Einheit einer Energie haben:
+\begin{equation}
+\boxed{
+E
+=
+\gamma mc^2
+=
+\frac{mc^2}{\sqrt{1-v^2/c^2}}
+}.
+\label{eq:sr3-energy-exact}
+\end{equation}
+Die Entwicklung für kleine Geschwindigkeiten lautet
+\begin{equation}
+\boxed{
+E
+=
+mc^2+\frac12mv^2
++\frac38m\frac{v^4}{c^2}
++\cdots
+}.
+\label{eq:sr3-energy-dimensional-expansion}
+\end{equation}
+In Ruhe gilt
+\begin{equation}
+\boxed{E_{\mathrm{rest}}=mc^2}.
+\label{eq:sr3-emc2}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_18.png}
+\caption{Nach Wiederherstellung der Dimensionen wird der konstante Term zu \(mc^2\), gefolgt von der Newtonschen kinetischen Energie \(mv^2/2\).}
+\lectureframe{01:19:16}
+\end{figure}
+
+Dies gilt für jedes abgeschlossene Objekt, nicht nur für ein elementares Teilchen. \emph{In Ruhe} bedeutet, dass der Schwerpunkt ruht. Moleküle, Atome und Felder im Inneren des Objekts können sich weiterhin bewegen und miteinander wechselwirken. Ihre innere kinetische Energie, potenzielle Energie und Bindungsenergie tragen sämtlich zur gesamten Ruheenergie und damit zur invarianten Masse des Objekts bei.
+
+\begin{classroomqa}
+\audiencequestion{Könnte der Umrechnungsfaktor \(c^2\) durch eine beliebige Zahl geteilt sein?}
+\lecturerresponse{Die Dimensionen allein bestimmen die Potenz von \(c\), doch der Koeffizient wird durch das Ergebnis in natürlichen Einheiten festgelegt. Die Formel in gewöhnlichen Einheiten muss sich für \(c=1\) zu \(E=m\) vereinfachen; deshalb lautet der wiederhergestellte Ausdruck in Ruhe \(E=mc^2\) mit dem Koeffizienten eins. \lecturetimestamp{01:22:08}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist die führende Eins in der Binomialentwicklung physikalisch wichtig, und was bedeuten die höheren Terme?}
+\lecturerresponse{Ja. In der Energieentwicklung wird die führende Eins zur Ruheenergie \(mc^2\). Der nächste Term ist die Newtonsche kinetische Energie, alle höheren Terme sind relativistische Korrekturen. Für einen Baseball sind sie vernachlässigbar, werden aber wesentlich, wenn \(v\) sich \(c\) nähert. \lecturetimestamp{01:22:37}}
+\end{classroomqa}
+
+Die exakte Energie und der exakte Impuls divergieren, wenn \(v\to c\) gilt:
+\begin{equation}
+\begin{aligned}
+E&=\gamma mc^2\longrightarrow\infty,\\
+\vec p&=\gamma m\vec v\longrightarrow\infty
+\qquad(m>0).
+\end{aligned}
+\end{equation}
+Die Lichtgeschwindigkeit zu erreichen würde daher unbeschränkte Energie und unbeschränkten Impuls erfordern. Eine endliche Kraft, die während einer endlichen Zeit wirkt, liefert nur einen endlichen Impulsübertrag. Ein massives Teilchen kann sich daher \(c\) nähern, sie aber nicht erreichen.
+
+\begin{classroomqa}
+\audiencequestion{Was erzwingt nun die Schranke durch die Lichtgeschwindigkeit?}
+\lecturerresponse{Der exakte Viererimpuls tut dies. Wenn sich ein massives Teilchen \(c\) nähert, divergieren sowohl Energie als auch Impuls, während die Erhaltung des Viererimpulses jede Wechselwirkung einschränkt. Die frühere Normierung der Vierergeschwindigkeit bringt dieselbe Aussage in kinematischer Form zum Ausdruck. \lecturetimestamp{01:24:27}}
+\end{classroomqa}
+
+\section{Die Masse eines zusammengesetzten Systems}
+
+Nehmen wir an, zwei Teilchen bewegen sich mit gleich großen, entgegengesetzten Impulsen. Ihr gesamter Dreierimpuls verschwindet, wir befinden uns also bereits im Ruhesystem des Gesamtsystems. Die invariante Masse \(M\) dieses Systems ist durch seine Gesamtenergie in diesem System definiert:
+\begin{equation}
+Mc^2=E_{\mathrm{tot}}
+\qquad
+(\vec P_{\mathrm{tot}}=0).
+\end{equation}
+Allgemeiner gilt
+\begin{equation}
+M^2c^4
+=
+E_{\mathrm{tot}}^2-c^2\vec P_{\mathrm{tot}}^{\,2}.
+\label{eq:sr3-composite-mass}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Masse des Gesamtsystems größer als die Summe der einzelnen Massen, wenn sich zwei Teilchen in entgegengesetzte Richtungen bewegen?}
+\lecturerresponse{Wenn sie frei sind, ja: Im Schwerpunktsystem trägt ihre kinetische Energie zur gesamten Ruheenergie bei, sodass \(M>m_1+m_2\) gilt. Anziehende Bindungsenergie kann die Gesamtmasse stattdessen verringern, sodass \(M<m_1+m_2\) gilt. Die invariante Definition ist die Gesamtenergie in dem System, in dem der Gesamtimpuls verschwindet. \lecturetimestamp{01:25:06}}
+\end{classroomqa}
+
+Darum dürfen die innere Bewegung und die Bindung nicht außer Acht gelassen werden, wenn man ein zusammengesetztes Objekt wiegt. Die invariante Masse gehört zum gesamten abgeschlossenen System, nicht zu einer bloßen Liste der Massen seiner Bestandteile.
+
+\begin{classroomqa}
+\audiencequestion{Welche Rolle spielt der Ruheenergie-Term für die Phase eines Quantenzustands?}
+\lecturerresponse{Ein Zustand mit bestimmter Energie entwickelt sich mit der Phase \(\exp(-iEt/\hbar)\), sodass ein ruhendes Teilchen den Beitrag \(\exp(-imc^2t/\hbar)\) liefert. Eine gemeinsame Gesamtphase ist nicht beobachtbar, relative Phasen zwischen Komponenten mit unterschiedlichen Energien können es jedoch sein. Diese quantenmechanische Folge steht im Einklang mit der klassischen Herleitung hier, wird für sie aber nicht benötigt. \lecturetimestamp{01:26:57}}
+\end{classroomqa}
+
+\section{Die Energie--Impuls-Beziehung}
+
+Die Normierung der Vierergeschwindigkeit ergibt unmittelbar die invariante Norm des Viererimpulses. In Einheiten \(c=1\) gilt
+\begin{equation}
+(u^0)^2-\vec u^{\,2}=1.
+\end{equation}
+
+Multiplizieren wir mit \(m^2\) und verwenden \(p^\mu=mu^\mu\), so ergibt sich
+\begin{equation}
+\boxed{
+E^2-\vec p^{\,2}=m^2
+}
+\qquad(c=1).
+\label{eq:sr3-mass-shell-natural}
+\end{equation}
+Äquivalent dazu gilt
+\begin{equation}
+E=\sqrt{\vec p^{\,2}+m^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_19.png}
+\caption{Die Multiplikation der Normierung der Vierergeschwindigkeit mit \(m^2\) ergibt \(E^2-\vec p^{\,2}=m^2\).}
+\lectureframe{01:31:48}
+\end{figure}
+
+Stellen wir \(c\) wieder her, so ergibt sich
+\begin{equation}
+\boxed{
+E^2
+=
+\vec p^{\,2}c^2+m^2c^4
+},
+\qquad
+E=\sqrt{\vec p^{\,2}c^2+m^2c^4}.
+\label{eq:sr3-mass-shell}
+\end{equation}
+Diese Formel gibt die Energie als Funktion des Impulses an, ohne auf die Geschwindigkeit Bezug zu nehmen. Sie ist das relativistische Analogon zum Newtonschen Zusammenhang
+\begin{equation}
+K=\frac{\vec p^{\,2}}{2m}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_20.png}
+\caption{Die Massenschalenbeziehung mit wiederhergestellten Dimensionen: \(E=\sqrt{\vec p^{\,2}c^2+m^2c^4}\).}
+\lectureframe{01:32:38}
+\end{figure}
+
+\subsection{Masselose Teilchen}
+
+Die Geschwindigkeitsformel \(E=\gamma mc^2\) ergibt einen unbestimmten Ausdruck der Form \(0/0\), wenn \(m=0\) und \(v=c\) gelten. Die Geschwindigkeit eignet sich daher schlecht zur Unterscheidung masseloser Teilchen: Jedes frei propagierende masselose Teilchen bewegt sich im Vakuum mit \(c\), dennoch können verschiedene Photonen unterschiedliche Energien haben.
+
+Die Energie--Impuls-Beziehung hat einen stetigen masselosen Grenzfall:
+\begin{equation}
+m=0
+\quad\Longrightarrow\quad
+\boxed{E=c|\vec p|}.
+\label{eq:sr3-massless-energy}
+\end{equation}
+Dies gilt für Photonen und in der idealisierten Theorie masseloser Teilchen auch für Gravitonen. Für ein hochrelativistisches Teilchen ist es eine ausgezeichnete Näherung, wenn \(mc^2\ll E\) gilt, etwa auch für Neutrinos bei hinreichend hoher Energie, obwohl ihre Massen klein, aber nicht null sind.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_21.png}
+\caption{Im masselosen Grenzfall der Energie--Impuls-Beziehung ergibt sich \(E=c|\vec p|\).}
+\lectureframe{01:33:48}
+\end{figure}
+
+\section{Der Zerfall von Positronium}
+
+Betrachten wir Positronium, einen gebundenen Zustand aus einem Elektron und einem Positron. Seine invariante Masse ist etwas kleiner als \(2m_e\): Die Bestandteile besitzen positive innere kinetische Energie, aber eine betragsmäßig größere negative Bindungsenergie. Numerisch gilt
+\begin{equation}
+m_ec^2\approx0.511\ \mathrm{MeV},
+\qquad
+m_e\approx9.11\times10^{-31}\ \mathrm{kg},
+\end{equation}
+Die Kinematik hängt jedoch nicht vom Zahlenwert ab.
+
+Betrachten wir den Zerfall in zwei Photonen im Ruhesystem des Positroniums:
+\begin{equation}
+\mathrm{Ps}\longrightarrow\gamma+\gamma.
+\end{equation}
+Anfangs ist der Gesamtimpuls null. Die Impulserhaltung verlangt daher, dass die Photonen mit gleich großen, entgegengesetzten Impulsen in entgegengesetzte Richtungen auseinanderfliegen:
+\begin{equation}
+\vec p_1=\vec p,
+\qquad
+\vec p_2=-\vec p.
+\label{eq:sr3-positronium-momentum}
+\end{equation}
+Ist \(M\) die Masse des Positroniums, so ergibt die Energieerhaltung
+\begin{equation}
+Mc^2
+=E_1+E_2
+=c|\vec p_1|+c|\vec p_2|
+=2c|\vec p|.
+\end{equation}
+Daraus folgt
+\begin{equation}
+\boxed{
+|\vec p|=\frac{Mc}{2},
+\qquad
+E_1=E_2=\frac{Mc^2}{2}
+}.
+\label{eq:sr3-positronium-result}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_22.png}
+\caption{Ein ruhender Positroniumzustand zerfällt in zwei Photonen mit gleich großen, entgegengesetzten Impulsen; \(Mc^2=2c|\vec p|\).}
+\lectureframe{01:40:55}
+\end{figure}
+
+Für diesen Prozess gibt es kein Newtonsches Analogon, bei dem die Summe der Teilchenmassen erhalten bleibt. Der Anfangszustand hat eine von null verschiedene invariante Masse, während jedes auslaufende Photon masselos ist. Erhalten bleibt der gesamte Viererimpuls. Die gespeicherte Ruheenergie ist zu propagierender elektromagnetischer Energie geworden. Zusammen mit der Quantenbeziehung \(|\vec p|=h/\lambda\) legt dasselbe Ergebnis die Wellenlänge des Photons fest; die entsprechende Photonenenergie liegt weit oberhalb des optischen Bereichs.
+
+\begin{classroomqa}
+\audiencequestion{Wie bleibt der Drehimpuls beim Zerfall erhalten?}
+\lecturerresponse{Die auslaufende Strahlung muss denselben Gesamtdrehimpuls wie der Anfangszustand tragen. Im Zerfallskanal mit zwei Photonen verbinden sich die Helizitäten der Photonen und ihr Bahndrehimpulszustand in geeigneter Weise. Genauer gesagt zerfällt das Spin-Singulett Para-Positronium überwiegend in zwei Photonen, das Spin-Triplet Ortho-Positronium dagegen überwiegend in drei; der erlaubte Zerfallskanal erfüllt alle Quantenzahlenerhaltungssätze. \lecturetimestamp{01:42:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum muss ein Teilchen, das sich mit Lichtgeschwindigkeit bewegt, masselos sein?}
+\lecturerresponse{Bei endlicher, von null verschiedener Energie divergiert der Faktor \(\gamma\), wenn \(v\to c\) gilt. Die invariante Beziehung \(E^2-\vec p^{\,2}c^2=m^2c^4\) zeigt, dass ein Teilchen mit lichtartigem Viererimpuls \(m=0\) hat. Umgekehrt hat ein freies masseloses Teilchen eine lichtartige Weltlinie und breitet sich mit \(c\) aus. \lecturetimestamp{01:42:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Könnte derselbe neutrale Zustand statt in Photonen in Gravitonen zerfallen?}
+\lecturerresponse{Grundsätzlich sind gravitative Endzustände möglich, wenn die Quantenzahlen dies zulassen; ihr Verzweigungsverhältnis ist jedoch unvorstellbar viel kleiner als das des elektromagnetischen Zerfalls. Die kinematische Bilanz würde weiterhin dieselbe Viererimpulserhaltung und für jedes masselose Quant \(E=c|\vec p|\) verwenden. \lecturetimestamp{01:43:20}}
+\end{classroomqa}
+
+\subsection{Ein Zerfallsvertex}
+
+Ein Zerfall ist lokal: Die Weltlinie des Mutterteilchens endet an einem Raumzeitereignis, und dort beginnen die Weltlinien der auslaufenden Photonen. Aus den Wechselwirkungen in den Detektoren kann man rückwärts extrapolieren, um diesen gemeinsamen Scheitelpunkt zu rekonstruieren. Wären die beiden Photonen an verschiedenen Ereignissen emittiert worden, würden sich ihre rückwärts extrapolierten Nulltrajektorien nicht in einem Punkt treffen.
+
+\begin{classroomqa}
+\audiencequestion{Müssen die beiden Photonen in jedem Bezugssystem gleichzeitig emittiert werden?}
+\lecturerresponse{Sie gehen vom selben Raumzeitereignis aus, nicht von zwei räumlich getrennten Ereignissen, deren Gleichzeitigkeit vom Bezugssystem abhängen könnte. Alle Lorentz-Bezugssysteme stimmen darin überein, dass ein Ereignis ein einzelnes Ereignis ist. In der Quantenmechanik hat die Position des Mutterteilchens eine endliche Unschärfe; daher ist der rekonstruierte Scheitelpunkt eine Verteilung und kein vollkommen genau bekannter klassischer Punkt. \lecturetimestamp{01:44:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum ist die Norm der Vierergeschwindigkeit gleich eins?}
+\lecturerresponse{Die Eigenzeit wurde durch \(d\tau^2=dt^2-d\vec x^{\,2}\) in Einheiten mit \(c=1\) definiert. Teilt man durch \(d\tau^2\), erhält man \((dt/d\tau)^2-(d\vec x/d\tau)^2=1\), also genau \((u^0)^2-\vec u^{\,2}=1\). Die Normierung ist somit bereits in der Definition der Eigenzeit enthalten. \lecturetimestamp{01:45:38}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liefert \(u^0=dt/d\tau\) eine tiefere Deutung der Energie?}
+\lecturerresponse{Es ergibt die nützliche Identität \(E=mc^2\,dt/d\tau=\gamma mc^2\): Im Ruhezustand ist das Verhältnis von Koordinatenzeit zu Eigenzeit eins, bei Bewegung ist es der Lorentzfaktor. Abgesehen davon, dass die Identität diese Geschwindigkeitsabhängigkeit ausdrückt, liefert sie für sich genommen kein zusätzliches dynamisches Prinzip. \lecturetimestamp{01:46:36}}
+\end{classroomqa}
+
+\section{Erhaltung setzt ein abgeschlossenes System voraus}
+
+Die Aussage
+\begin{equation}
+\sum p^\mu_{\mathrm{initial}}
+=
+\sum p^\mu_{\mathrm{final}}
+\end{equation}
+gilt für ein isoliertes System, das alles umfasst, was Energie und Impuls austauscht. In realen Laboren gibt es Streufelder, Umgebungsteilchen, Gravitation, Halterungen und Detektoren. Lässt man diese Freiheitsgrade bei der Bilanzierung außen vor, kann das Teilsystem eine kleine scheinbare Unausgeglichenheit aufweisen; der fehlende Viererimpuls ist an die Umgebung übertragen worden.
+
+\begin{classroomqa}
+\audiencequestion{Kann die Impulssumme der beiden Photonen geringfügig von null abweichen?}
+\lecturerresponse{Nicht für das vollständige isolierte System. In einem tatsächlichen Experiment kann ein nicht modelliertes Feld oder der Rückstoß des Apparats den kleinen Restimpuls aufnehmen, sodass das betrachtete Teilsystem nicht abgeschlossen erscheint. Sobald alle wechselwirkenden Teile einbezogen sind, ist der Gesamtviererimpuls erhalten. \lecturetimestamp{01:47:51}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Schwächt die Unschärferelation die Impulserhaltung?}
+\lecturerresponse{Nein. Ein Quantenzustand kann eine unsichere Position oder einen unsicheren Impuls haben; eine genauere Kenntnis der einen Größe verbreitert die Verteilung der anderen. Die Translationssymmetrie gewährleistet für ein isoliertes System dennoch die exakte Erhaltung des Gesamtimpulses. Quantenunschärfe betrifft Messergebnisse und Verteilungen, nicht ein Versagen des Erhaltungssatzes. \lecturetimestamp{01:49:19}}
+\end{classroomqa}
+
+\section{Exakte und näherungsweise Energie}
+
+Die exakte Formel darf nicht mit ihrer Entwicklung für kleine Geschwindigkeiten verwechselt werden:
+\begin{align}
+E_{\mathrm{exact}}
+&=
+\frac{mc^2}{\sqrt{1-v^2/c^2}},
+\label{eq:sr3-exact-repeated}\\
+E_{\mathrm{slow}}
+&=
+mc^2+\frac12mv^2
++O\!\left(\frac{mv^4}{c^2}\right).
+\label{eq:sr3-approx-repeated}
+\end{align}
+Die erste gilt für jedes \(v<c\). Die zweite ist nur dann nützlich, wenn \(v/c\ll1\).
+
+\begin{classroomqa}
+\audiencequestion{War die Energieformel nur eine Näherung?}
+\lecturerresponse{\(E=mc^2+mv^2/2+\cdots\) ist die Näherung. Das exakte Ergebnis lautet \(E=mc^2/\sqrt{1-v^2/c^2}\). Der Faktor \(v^2/c^2\) macht den Nenner dimensionslos, während der Zähler \(mc^2\) die Einheit einer Energie hat. \lecturetimestamp{01:49:56}}
+\end{classroomqa}
+
+\subsection{Das Raumzeitbild noch einmal}
+
+Die späte Skizze an der Tafel kehrt zur Geometrie des Experiments zurück. Vor dem Zerfall bewegt sich das ruhende Positronium entlang einer vertikalen zeitartigen Weltlinie. Am Zerfallsereignis endet diese Weltlinie, und zwei lichtartige Photonenweltlinien gehen in entgegengesetzte räumliche Richtungen davon aus.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_23.png}
+\caption{Die Weltlinie des Positroniums endet an einem Zerfallsereignis, von dem die beiden lichtartigen Photonenweltlinien ausgehen.}
+\lectureframe{01:53:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was bestimmt die Achse, entlang der die beiden Photonen auseinanderfliegen?}
+\lecturerresponse{Für einen unpolarisierten Zustand gibt es eine quantenmechanische Winkelverteilung; bei einem einzelnen Zerfall wird daraus zufällig eine Richtung ausgewählt. Sobald eine Richtung feststeht, zwingt die Impulserhaltung die Photonen dazu, in entgegengesetzte Richtungen zu fliegen. Sie legt diese Achse nicht im Voraus fest. \lecturetimestamp{01:53:55}}
+\end{classroomqa}
+
+\section{Was die freien Bewegungsgleichungen aussagen}
+
+Die invariante Wirkung wurde nicht durch bloßes Raten eines Kraftgesetzes gewählt. Sie wurde als der einfachste lokale Lorentz-Skalar gewählt, der bei kleinen Geschwindigkeiten die Newtonsche Lagrangefunktion für ein freies Teilchen reproduziert. Ihre Variation ergibt
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot x^i}\right)=0,
+\end{equation}
+also
+\begin{equation}
+\frac{dp_i}{dt}=0.
+\end{equation}
+Bei fester, von null verschiedener Masse ist dies gleichbedeutend mit einer konstanten Vierergeschwindigkeit:
+\begin{equation}
+\frac{du^\mu}{d\tau}=0.
+\end{equation}
+Die Weltlinie ist somit eine gerade Linie in der Raumzeit. In dieser einen geometrischen Aussage sind sowohl die gleichförmige Geschwindigkeit als auch die unveränderte räumliche Richtung enthalten.
+
+\begin{classroomqa}
+\audiencequestion{Gibt es eine stärker von Grund auf entwickelte Begründung für die relativistische Wirkung, ähnlich der Wahl der klassischen Wirkung so, dass sie die Newtonschen Gleichungen reproduziert?}
+\lecturerresponse{Für das freie Teilchen bestimmen Lorentz-Invarianz, Lokalität entlang der Weltlinie und der Newtonsche Grenzfall bei kleinen Geschwindigkeiten die einfachste Wirkung bis auf einen Gesamtfaktor. Ihre Euler--Lagrange-Gleichung ergibt dann einen konstanten Impuls, genau wie im kraftfreien Newtonschen Fall. Wechselwirkungen liefern weitere Prüfungen; später wird ein geladenes Teilchen an elektrische und magnetische Felder gekoppelt. \lecturetimestamp{01:54:27}}
+\end{classroomqa}
+
+\section{Zwei unabhängige klassische Grenzfälle}
+
+Der nichtrelativistische Grenzfall und der klassische Grenzfall der Quantenmechanik sind verschiedene Grenzübergänge. Relativistische Korrekturen werden durch das Verhältnis \(v/c\) bestimmt. Quanteneffekte werden durch das Verhältnis charakteristischer Wirkungen zu \(\hbar\) bestimmt, zusammen mit Eigenschaften wie Masse, Systemgröße und der Glattheit, mit der sich äußere Kräfte ändern.
+
+\begin{classroomqa}
+\audiencequestion{Ist der Grenzfall kleiner Geschwindigkeiten, in dem die Newtonsche Mechanik zurückgewonnen wird, derselbe Grenzfall, in dem die Quantenmechanik klassisch wird?}
+\lecturerresponse{Nein. Der relativistische Grenzfall betrifft \(v/c\); der Übergang von der Quantenmechanik zur klassischen Mechanik betrifft \(\hbar\) im Verhältnis zur charakteristischen Wirkung und wird oft bei großen Massen oder glatt veränderlichen Kräften wirksam. Ein System kann quantenmechanisch, aber nichtrelativistisch sein, relativistisch, aber im Wesentlichen klassisch, beides oder keines von beidem. \lecturetimestamp{01:57:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sind spezielle Relativitätstheorie und Quantenmechanik unvereinbar?}
+\lecturerresponse{Nein. Die relativistische Quantentheorie ist widerspruchsfrei und führt zur Quantenfeldtheorie. Die bekannte ungelöste Spannung betrifft die Einbindung der Gravitation in die Quantenmechanik, nicht die Verbindung der speziellen Relativitätstheorie mit den Prinzipien der Quantenmechanik. In der bisherigen Betrachtung freier Teilchen ist die Gravitation nicht berücksichtigt worden. \lecturetimestamp{01:59:01}}
+\end{classroomqa}
+
+Fürs Erste ist das Ergebnis für den kraftfreien Fall vollständig: Ein massives Teilchen folgt einer geraden zeitartigen Weltlinie, seine invariante Masse legt die Norm seines Viererimpulses fest, und Energie und Impuls sind die vier Komponenten eines einzigen erhaltenen Objekts. Die Einführung von Ladung und elektromagnetischen Feldern wird der nächste Schritt über diese freie Bewegung hinaus sein.

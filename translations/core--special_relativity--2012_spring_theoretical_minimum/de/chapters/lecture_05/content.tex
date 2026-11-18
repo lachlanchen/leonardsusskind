@@ -1,0 +1,813 @@
+\chapter{Teilchen, Felder und relativistische Notation}
+
+\section{Ein Dopplerproblem vor der Vorlesung}
+
+Die Diskussion beginnt mit einer Frage, die aus der vorangegangenen Woche offen geblieben ist. Misst ein Beobachter, der sich annähernd mit Lichtgeschwindigkeit bewegt, immer eine größere Wellenlänge? Nein: Die Antwort hängt von der Bewegungsrichtung ab. Ein Beobachter, der sich mit einer Lichtwelle bewegt, sieht ihre Wellenlänge gedehnt, während ein Beobachter, der sich gegen die Welle bewegt, sie gestaucht sieht. Das ist der relativistische Dopplereffekt.
+
+\begin{classroomqa}
+\audiencequestion{Wird die beobachtete Wellenlänge größer, wenn man sich annähernd mit Lichtgeschwindigkeit bewegt?}
+\lecturerresponse{Nur wenn sich der Beobachter in dieselbe Richtung wie das Licht bewegt. Eine Umkehr der Geschwindigkeit des Beobachters kehrt auch die Verschiebung um. Das Ergebnis lässt sich direkt aus der Lorentz-Geometrie herleiten, ohne eine eigene Formel auswendig zu lernen. \lecturetimestamp{00:00:13}}
+\end{classroomqa}
+
+Wir verwenden Einheiten mit \(c=1\) und lassen das gestrichene Bezugssystem sich mit der Geschwindigkeit \(v\) nach rechts bewegen. Ein nach rechts laufender Lichtberg folgt einer lichtartigen Geraden. Wir normieren die Wellenlänge im ungestrichenen Bezugssystem auf eins und schreiben die Weltlinien zweier aufeinanderfolgender Wellenberge als \begin{equation}
+x=t,
+\qquad
+x=t+1.
+\label{eq:sr5-crest-lines}
+\end{equation} Die Wellenlänge im ungestrichenen Bezugssystem wird zwischen den Wellenbergen bei gleichem \(t\) gemessen. Im gestrichenen Bezugssystem muss sie dagegen bei gleichem \(t'\) gemessen werden. Die Relativität der Gleichzeitigkeit ist somit die gesamte Rechnung.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_01.png}
+\caption{Aufeinanderfolgende, nach rechts laufende Wellenberge, der Lichtkegel und die geneigten Achsen des bewegten Bezugssystems.}
+\lectureframe{00:03:30}
+\end{figure}
+
+An dieser Stelle wird die Herleitung für eine kurze Diskussion über den weiteren Kursverlauf unterbrochen. Im Sommer wird es keinen Kurs geben. Allgemeine Relativitätstheorie und eine ausführlichere Rückkehr zur Quantenmechanik kommen beide als nächster Kurs infrage; der harmonische Oszillator wird als Stoff hervorgehoben, den man vor der Quantenfeldtheorie verstanden haben sollte.
+
+\begin{classroomqa}
+\audiencequestion{Könnte ein zukünftiger Kurs den Zusammenhang zwischen dem Infrarot-- und dem Ultraviolettbereich behandeln?}
+\lecturerresponse{Diese Frage gehört zum Zusammentreffen von Quantenmechanik und Gravitation. Die Klasse kennt genügend Quantenmechanik, um das Problem zu erkennen, muss aber zunächst die Gravitation entwickeln, am naheliegendsten anhand der allgemeinen Relativitätstheorie. \lecturetimestamp{00:05:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Lässt sich das relative Maß der geneigten Achsen einfach aus der Tafelzeichnung ablesen?}
+\lecturerresponse{Nein. Ein Raumzeitdiagramm hält die Geometrie von Kausalität und Gleichzeitigkeit fest, aber ein gewöhnliches euklidisches Lineal an der Zeichnung liefert keine Lorentz-Messung. Man bestimmt die betreffenden Ereignisse und wendet die Lorentz-Transformation an. \lecturetimestamp{00:06:10}}
+\end{classroomqa}
+
+Nun wird die Rechnung fortgesetzt. Wir normieren den Abstand der Wellenberge im ungestrichenen Bezugssystem auf eins und bestimmen die beiden im gestrichenen Bezugssystem gleichzeitigen Ereignisse algebraisch.
+
+Die Lorentz-Transformation lautet \begin{equation}
+t'=\gamma(t-vx),
+\qquad
+x'=\gamma(x-vt),
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr5-lorentz-doppler}
+\end{equation} Wähle die Gleichzeitigkeitsscheibe des gestrichenen Bezugssystems \(t'=0\). Dann ergibt Gleichung \eqref{eq:sr5-lorentz-doppler} \begin{equation}
+t=vx.
+\label{eq:sr5-primed-simultaneity}
+\end{equation} Der erste Wellenberg schneidet diese Scheibe im Ursprung. Für den zweiten Wellenberg gilt \(x=t+1\), also erfüllt sein Schnittpunkt \begin{align}
+x&=vx+1,\\
+x&=\frac{1}{1-v},
+\qquad
+t=\frac{v}{1-v}.
+\end{align} Seine gestrichene Koordinate ist \begin{align}
+x'
+&=\frac{x-vt}{\sqrt{1-v^2}}\\
+&=\frac{1-v^2}{(1-v)\sqrt{1-v^2}}\\
+&=\sqrt{\frac{1+v}{1-v}}.
+\end{align} Da die ursprüngliche Wellenlänge eins war, gilt \begin{equation}
+\boxed{
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{1+\beta}{1-\beta}}
+},
+\qquad
+\beta=\frac{v}{c}.
+\label{eq:sr5-doppler}
+\end{equation} Äquivalent dazu: \begin{equation}
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{c+v}{c-v}}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_02.png}
+\caption{Der Dopplerfaktor nach Wiedereinsetzen von \(c\); bei Umkehr von \(v\) ergibt sich die reziproke Verschiebung.}
+\lectureframe{00:13:40}
+\end{figure}
+
+Für \(v>0\) bewegt sich der Beobachter dem Licht hinterher und misst eine größere Wellenlänge. Ersetzt man \(v\) durch \(-v\), beschreibt das eine Bewegung gegen das Licht und macht den Faktor kleiner als eins. Könnte sich ein Beobachter dem Wert \(c\) nähern, während er dem Lichtstrahl hinterherläuft, würde die Wellenlänge divergieren. Die Frequenzverschiebung ist das inverse Verhältnis.
+
+\section{Warum die Wechselwirkung in einer gemeinsamen Wirkung erscheinen muss}
+
+Nach den einleitenden Fragen geht es nun um Felder und Teilchen. In der Quantenfeldtheorie werden Teilchen und Felder schließlich zu zwei Beschreibungen derselben Anregungen. Hier wird jedoch nicht dieser Rahmen verwendet. Hier folgen Teilchen Weltlinien, und klassische Felder erfüllen die Raumzeit. Die unmittelbarere Frage lautet: Wenn ein Feld auf ein Teilchen einwirkt, wie wirkt das Teilchen dann auf das Feld zurück?
+
+Das Wirkungsprinzip veranschaulicht dies anhand eines Prototyps mit endlich vielen Freiheitsgraden. Seien \(x(t)\) und \(y(t)\) zwei verallgemeinerte Koordinaten. Wenn sich die Lagrangefunktion separieren lässt, \begin{equation}
+L(x,\dot x,y,\dot y)
+=
+L_x(x,\dot x)+L_y(y,\dot y),
+\label{eq:sr5-separable-l}
+\end{equation} sind die beiden Euler--Lagrange-Gleichungen unabhängig voneinander: \begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x}
+=
+\frac{\partial L}{\partial x},
+\qquad
+\frac{d}{dt}\frac{\partial L}{\partial\dot y}
+=
+\frac{\partial L}{\partial y}.
+\end{equation} Die \(x\)-Gleichung enthält kein \(y\), und die \(y\)-Gleichung enthält kein \(x\).
+
+Um die Variablen miteinander wechselwirken zu lassen, fügt man einen Term hinzu, der sich nicht in einen \(x\)-Anteil und einen \(y\)-Anteil zerlegen lässt. Ein einfaches Beispiel ist \begin{equation}
+L
+=
+\frac{\dot x^2}{2}
++\frac{\dot y^2}{2}
+-V(x)-W(y)+\kappa xy.
+\label{eq:sr5-coupled-coordinates}
+\end{equation} Variiert man nun \(x\), entsteht ein Term proportional zu \(y\); bei der Variation von \(y\) entsteht ein Term proportional zu \(x\). Derselbe Mischterm bestimmt beide Wirkungsrichtungen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_03.png}
+\caption{Zwei verallgemeinerte Koordinaten werden dynamisch gekoppelt, wenn ein Term der Lagrangefunktion beide enthält.}
+\lectureframe{00:19:00}
+\end{figure}
+
+Das ist der genaue Rahmen für die hier verwendete Aussage über Wirkung--und Gegenwirkung: Beide Objekte sind dynamisch, und beide werden in einer gemeinsamen Wirkung variiert. Behandelt man ein Feld als vorgegebenen äußeren Hintergrund, kann seine Reaktion verborgen bleiben. Ist das Feld selbst dynamisch, liefert der Kopplungsterm jedoch beide Gleichungen.
+
+\section{Wie ein skalares Feld auf ein Teilchen einwirkt}
+
+\subsection{Die relativistische Kopplung}
+
+Betrachten wir zunächst das skalare Feld \(\phi(\mathbf{x},t)\) als bekannt. Es kann eine Welle oder ein statisches Profil sein; seine eigene Gleichung ist für den Moment unerheblich. Die Wirkung eines freien relativistischen Teilchens lautet \begin{equation}
+S_{\mathrm p}
+=
+-m\int d\tau.
+\end{equation} Für eine Bewegung auf einer Geraden und mit \(c=1\) gilt \begin{equation}
+L_{\mathrm p}^{(0)}
+=
+-m\sqrt{1-\dot x^2}.
+\end{equation} Bei der einfachsten skalaren Kopplung wird der Massenkoeffizient durch einen feldabhängigen ersetzt: \begin{equation}
+\boxed{
+L_{\mathrm p}
+=
+-\bigl[m+g\phi(x,t)\bigr]\sqrt{1-\dot x^2}
+}.
+\label{eq:sr5-particle-coupling}
+\end{equation} Die Kopplungskonstante \(g\) misst, wie stark das Feld auf dieses Teilchen einwirkt. Ihr Vorzeichen ist eine Konvention: Ersetzt man \(g\) durch \(-g\), kehrt sich die Richtung der skalaren Kraft um.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_04.png}
+\caption{Die Wirkung des freien Teilchens, wobei \(m\) durch den lokalen Koeffizienten \(m+g\phi(x,t)\) ersetzt wird.}
+\lectureframe{00:24:10}
+\end{figure}
+
+\subsection{Der Grenzfall langsamer Teilchen}
+
+Wir setzen die Lichtgeschwindigkeit wieder ein, damit der Newtonsche Grenzfall sichtbar wird: \begin{equation}
+L_{\mathrm p}
+=
+-\bigl[mc^2+g\phi(x,t)\bigr]
+\sqrt{1-\frac{\dot x^2}{c^2}}.
+\label{eq:sr5-particle-coupling-c}
+\end{equation} Für \(|\dot x|\ll c\) gilt \begin{equation}
+\sqrt{1-\frac{\dot x^2}{c^2}}
+=
+1-\frac{\dot x^2}{2c^2}
++O\!\left(\frac{\dot x^4}{c^4}\right).
+\end{equation} Setzt man dies in \eqref{eq:sr5-particle-coupling-c} ein, erhält man \begin{align}
+L_{\mathrm p}
+&=
+-mc^2-g\phi
++\frac{m\dot x^2}{2}
++\frac{g\phi\,\dot x^2}{2c^2}
++O(c^{-4})\\
+&\longrightarrow
+\frac{m\dot x^2}{2}-g\phi(x,t),
+\label{eq:sr5-nr-particle}
+\end{align} nach Weglassen der Konstanten \(-mc^2\) und der Terme, die durch \(c^{-2}\) unterdrückt werden. Das Ergebnis hat die gewöhnliche Form \(T-V\), also \begin{equation}
+V_{\mathrm p}(x,t)=g\phi(x,t).
+\label{eq:sr5-scalar-potential}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_05.png}
+\caption{Die Entwicklung der Wurzel ergibt den Newtonschen kinetischen Term und die skalare potenzielle Energie \(g\phi\).}
+\lectureframe{00:28:50}
+\end{figure}
+
+Die große Ruheenergiekonstante geht nicht in die Euler--Lagrange-Gleichung ein. Der feldabhängige Term dagegen schon. In der Elektromagnetik spielt die elektrische Ladung eine analoge Rolle als Kopplungsstärke, auch wenn die eigentliche elektromagnetische Wechselwirkung ein Vierervektorpotential statt dieses skalaren Spielzeugmodells verwendet.
+
+\section{Wie das Teilchen auf das Feld zurückwirkt}
+
+\subsection{Ein Variationsproblem}
+
+Das Feld kann jetzt nicht länger bloß vorgegeben bleiben. Betrachten wir ein Raumzeitgebiet, das sowohl eine Feldkonfiguration als auch eine Teilchenweltlinie enthält. Die physikalische Lösung macht die Gesamtwirkung bei Variationen beider stationär: \begin{equation}
+\delta S[\phi,x]=0.
+\end{equation} Variiert man die Weltlinie bei festgehaltenem Feld, erhält man die Teilchengleichung. Variiert man das Feld bei festgehaltener Weltlinie, erhält man die Feldgleichung. Der beiden gemeinsame Wechselwirkungsterm verbindet sie.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_06.png}
+\caption{Eine Teilchenweltlinie, die durch ein von einem skalaren Feld erfülltes Raumzeitgebiet verläuft.}
+\lectureframe{00:30:30}
+\end{figure}
+
+Für das freie masselose skalare Feld setzen wir \begin{equation}
+S_{\mathrm f}
+=
+\int d^4x\,
+\frac12
+\left[
+(\partial_t\phi)^2
+-(\partial_x\phi)^2
+-(\partial_y\phi)^2
+-(\partial_z\phi)^2
+\right].
+\label{eq:sr5-free-field-action}
+\end{equation} Von jetzt an verwenden wir wieder \(c=1\). Bei expliziten Einheiten trüge der Zeitterm den entsprechenden Faktor \(1/c^2\), abhängig von der Normierung der Koordinaten und des Feldes.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_07.png}
+\caption{Die Feldwirkung, integriert über dasselbe Raumzeitgebiet wie die Teilchenweltlinie.}
+\lectureframe{00:32:10}
+\end{figure}
+
+\subsection{Ein ruhendes Teilchen und ein Integral über seine Weltlinie}
+
+Um die Quelle mit möglichst wenig Algebra sichtbar zu machen, platzieren wir das Teilchen ruhend im Ursprung. Dann ist der Faktor \(d\tau\) gleich \(dt\), und der Wechselwirkungsanteil von \eqref{eq:sr5-particle-coupling} wird zu \begin{equation}
+S_{\mathrm{int}}
+=
+-g\int dt\,\phi(\mathbf{0},t).
+\label{eq:sr5-worldline-interaction}
+\end{equation} Dies ist ein Integral nur entlang der Weltlinie, während \eqref{eq:sr5-free-field-action} ein Integral über die gesamte Raumzeit ist. Um beide zu einem einzigen Raumzeitintegral zusammenzufassen, benötigen wir eine Funktion, die den Ort des Teilchens auswählt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_08.png}
+\caption{Die statische Weltlinie im Feldgebiet und die damit zusammenzufassende Feldwirkung.}
+\lectureframe{00:35:35}
+\end{figure}
+
+\subsection{Die Dirac-Deltafunktion}
+
+Die eindimensionale Deltafunktion ist definiert durch \begin{equation}
+\int_{-\infty}^{\infty}dx\,f(x)\delta(x-a)=f(a).
+\label{eq:sr5-delta-definition}
+\end{equation} Sie verschwindet außerhalb von \(x=a\), ist bei \(x=a\) singulär und hat das Integral eins. Am besten versteht man sie als eine durch \eqref{eq:sr5-delta-definition} charakterisierte Distribution und nicht als gewöhnliche, endlichwertige Funktion.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_09.png}
+\caption{Die Identität für die Deltafunktion, mit der der Feldwert im Ursprung als Raumintegral geschrieben wird.}
+\lectureframe{00:36:45}
+\end{figure}
+
+In drei Dimensionen gilt \begin{equation}
+\delta^3(\mathbf{x})
+=
+\delta(x)\delta(y)\delta(z),
+\end{equation} und damit \begin{align}
+\int d^3x\,
+\phi(\mathbf{x},t)\delta^3(\mathbf{x})
+&=
+\int dx\,dy\,dz\,
+\phi(x,y,z,t)\\
+&\quad\times\delta(x)\delta(y)\delta(z)\\
+&=\phi(\mathbf{0},t).
+\label{eq:sr5-triple-delta}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{Woher kommt das \(d^3x\)?}
+\lecturerresponse{Es ist das gewöhnliche räumliche Volumenelement \(dx\,dy\,dz\). In einer Raumdimension enthält dieselbe Identität nur \(dx\) und eine Deltafunktion. \lecturetimestamp{00:37:09}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_10.png}
+\caption{Die dreidimensionale Deltafunktion, zerlegt in drei eindimensionale Faktoren.}
+\lectureframe{00:39:05}
+\end{figure}
+
+Gleichung \eqref{eq:sr5-worldline-interaction} lässt sich nun schreiben als \begin{equation}
+S_{\mathrm{int}}
+=
+-g\int d^4x\,
+\delta^3(\mathbf{x})\phi(\mathbf{x},t).
+\end{equation} Die vollständige Wirkung mit statischer Quelle lautet \begin{align}
+S
+=
+\int d^4x
+\biggl\{
+&\frac12(\partial_t\phi)^2
+-\frac12|\boldsymbol{\nabla}\phi|^2
+\nonumber\\
+&-g\delta^3(\mathbf{x})\phi
+\biggr\}.
+\label{eq:sr5-combined-action}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{Ist beim Einsetzen der Wechselwirkung in die Raumzeitwirkung ein Minuszeichen verloren gegangen?}
+\lecturerresponse{Die Teilchen-Lagrangefunktion enthält \(-g\phi\), also muss die Raumzeitdichte \(-g\delta^3(\mathbf{x})\phi\) enthalten. Wird dieses Vorzeichen beibehalten, ist das Vorzeichen des Quellterms in der Feldgleichung festgelegt. \lecturetimestamp{00:41:24}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_11.png}
+\caption{Die freie skalare Dichte und die lokalisierte Wechselwirkung, zusammengefasst zu einer Raumzeitwirkung.}
+\lectureframe{00:42:05}
+\end{figure}
+
+\subsection{Die Feldgleichung mit Quelle}
+
+Die Variation von \eqref{eq:sr5-combined-action} nach \(\phi\) ergibt \begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi
+=
+-g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-sourced-wave}
+\end{equation} Außerhalb des Ursprungs ist dies die freie Wellengleichung. Am Ursprung kennzeichnet die Deltafunktion das Teilchen als lokalisierte Quelle.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_12.png}
+\caption{Der Wellenoperator, angetrieben von einer Punktquelle im Ursprung.}
+\lectureframe{00:45:35}
+\end{figure}
+
+Für eine statische Lösung gilt \(\partial_t\phi=0\), also \begin{equation}
+\boxed{
+\nabla^2\phi
+=
+g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-poisson}
+\end{equation} Dies ist die Poisson-Gleichung für eine Punktquelle. Die Analogie ist elektrostatisch, noch nicht elektromagnetisch: Das Feld ist weiterhin das skalare \(\phi\) und nicht das elektromagnetische Viererpotential.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_13.png}
+\caption{Der statische Grenzfall der Wellengleichung mit Quelle, erkennbar als Poisson-Gleichung.}
+\lectureframe{00:47:05}
+\end{figure}
+
+Die Reziprozität ist nun explizit. Der Term \(g\phi\) verleiht dem Teilchen eine potenzielle Energie, und derselbe Term \(g\) macht das Teilchen zu einer Quelle für \(\phi\). Die beiden Effekte sind keine voneinander unabhängigen Annahmen.
+
+\subsection{Bewegte Quellen strahlen}
+
+Ein bei \(\mathbf{a}\) festgehaltenes Teilchen wird dargestellt durch \(\delta^3(\mathbf{x}-\mathbf{a})\). Ändert sich seine Position mit der Zeit, wird die Quelle zu \begin{equation}
+\delta^3\!\left(\mathbf{x}-\mathbf{a}(t)\right).
+\label{eq:sr5-moving-delta}
+\end{equation} Eine zeitabhängige rechte Seite lässt sich nicht durch ein zeitunabhängiges Feld ausgleichen. Der Term \(\partial_t^2\phi\) muss wieder berücksichtigt werden, und eine beschleunigte oder schwingende Quelle kann Wellen im Feld anregen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_14.png}
+\caption{Eine Deltafunktionsquelle, verschoben nach \(\mathbf{a}(t)\), wodurch die Feldgleichung zeitabhängig wird.}
+\lectureframe{00:50:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Wenn die Quelle nichtrelativistisch behandelt wird, wo steckt dann die Relativität in der Feldgleichung?}
+\lecturerresponse{Die relativistische Ausbreitung ist im Raumzeit-Wellenoperator auf der linken Seite kodiert. Eine vollständig relativistische Behandlung des Teilchens würde seine Eigenzeitwirkung und die Geschwindigkeitsfaktoren beibehalten. Auch eine sich langsam bewegende, aber zeitabhängige Quelle kann Wellen anregen. \lecturetimestamp{00:52:14}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Welche Einheiten muss \(g\phi\) haben?}
+\lecturerresponse{Es steht in der Teilchenwirkung neben \(mc^2\) und hat daher die Einheit einer Energie. Bei der hier verwendeten Normierung mit natürlichen Einheiten hat ein Skalar in \(3+1\) Dimensionen die Massendimension eins, und \(g\) kann dimensionslos sein. Die Dimensionen ändern sich mit der Raumzeitdimension und der Feldnormierung. \lecturetimestamp{00:52:55}}
+\end{classroomqa}
+
+\section{Vierervektoren, Skalare und die Metrik}
+
+Die Komponentengleichungen sind so lang geworden, dass eine bessere Notation angebracht ist. Wir schreiben die Raumzeitkoordinaten als \begin{equation}
+x^\mu=(x^0,x^1,x^2,x^3)=(t,x,y,z),
+\label{eq:sr5-four-coordinate}
+\end{equation} wobei die griechischen Indizes alle vier Komponenten durchlaufen. Eine Liste aus vier Komponenten ist nicht automatisch ein Vierervektor. Sie ist nur dann ein Vierervektor, wenn ihre Komponenten sich unter Lorentz-Transformationen so transformieren wie \(x^\mu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_15.png}
+\caption{Die vier Raumzeitkoordinaten, zusammengefasst in \(x^\mu\).}
+\lectureframe{00:55:00}
+\end{figure}
+
+Die Aussage, dass die drei räumlichen Komponenten verschwinden, kann in einem Bezugssystem gelten und in einem anderen nicht. Wenn dagegen alle vier Komponenten verschwinden, stimmen alle Lorentz-Beobachter darin überein, dass der Vektor null ist. Auch Differenzen wie \(dx^\mu\) sind Vierervektoren.
+
+Das invariante Eigenzeitintervall ist \begin{equation}
+d\tau^2
+=
+dt^2-dx^2-dy^2-dz^2.
+\label{eq:sr5-proper-time}
+\end{equation} Es hat einen Wert statt vier bezugssystemabhängiger Komponenten und ist daher ein Skalar.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_16.png}
+\caption{Die Viererverschiebung und das invariante Eigenzeitintervall.}
+\lectureframe{00:57:25}
+\end{figure}
+
+\subsection{Die Minkowski-Metrik}
+
+Wir verwenden die Signatur mit überwiegend positiven Vorzeichen \begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr5-metric}
+\end{equation} Die alternative Konvention mit überwiegend negativen Vorzeichen ist ebenso gültig, doch muss in allen Gleichungen einheitlich dieselbe Konvention verwendet werden. Mit \eqref{eq:sr5-metric} gilt \begin{equation}
+dx^\mu dx_\mu
+=
+-dt^2+dx^2+dy^2+dz^2
+=
+-d\tau^2.
+\end{equation} Das Gesamtvorzeichen ändert nichts an der Invarianz.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_17.png}
+\caption{Die Minkowski-Metrik mit überwiegend positiven Vorzeichen, geschrieben als Diagonalmatrix.}
+\lectureframe{01:00:30}
+\end{figure}
+
+Die Metrik senkt einen Index: \begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\label{eq:sr5-lower-index}
+\end{equation} Für diese kartesische Metrik gilt \begin{equation}
+A^\mu=(A^0,A^1,A^2,A^3),
+\qquad
+A_\mu=(-A^0,A^1,A^2,A^3).
+\label{eq:sr5-upper-lower-components}
+\end{equation} Wendet man dieselbe Metrik erneut an, wird der Index wieder gehoben, denn \(\eta^{\mu\rho}\eta_{\rho\nu}=\delta^\mu{}_\nu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_18.png}
+\caption{Indexsenkung als Matrixmultiplikation mit \(\eta_{\mu\nu}\).}
+\lectureframe{01:03:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Enthält die gewöhnliche Matrixmultiplikation hier tatsächlich eine Summation?}
+\lecturerresponse{Ja. Jede Ausgangskomponente ergibt sich als Skalarprodukt einer Zeile von \(\eta\) mit dem gesamten Vektor, also als Summe über den Spaltenindex. Die Diagonalform der Metrik lässt die Rechnung trivial aussehen, bei einer allgemeinen Matrix wird die Summe jedoch explizit. \lecturetimestamp{01:04:56}}
+\end{classroomqa}
+
+\subsection{Einsteinsche Summenkonvention und freie Indizes}
+
+Nach Einsteinscher Konvention lässt man das Summenzeichen weg, wenn ein Index einmal oben und einmal unten wiederholt auftritt: \begin{equation}
+\eta_{\mu\nu}A^\nu
+\equiv
+\sum_{\nu=0}^{3}\eta_{\mu\nu}A^\nu.
+\end{equation} Hier ist \(\nu\) ein stummer Index: Er wird weggesummiert und kann umbenannt werden. Der Index \(\mu\) ist frei und bezeichnet die vier Komponenten des Ergebnisses. Ein Index sollte in einem Monom gewöhnlich nicht mehr als zweimal auftreten.
+
+Die traditionellen Bezeichnungen lauten \emph{kontravariant} für einen oberen Index und \emph{kovariant} für einen unteren Index. In der Vorlesung werden bewusst die einfacheren Bezeichnungen \emph{oben} und \emph{unten} bevorzugt; beide Begriffspaare beziehen sich jedoch auf dieselben Transformationsregeln.
+
+\section{Kontraktionen und Ableitungen eines Skalars}
+
+\subsection{Das Minkowski-Skalarprodukt}
+
+Die Kontraktion eines Vektors mit seiner indexgesenkten Form ergibt \begin{equation}
+A^\mu A_\mu
+=
+\eta_{\mu\nu}A^\mu A^\nu
+=
+-(A^0)^2+(A^1)^2+(A^2)^2+(A^3)^2.
+\label{eq:sr5-vector-square}
+\end{equation} Man sollte nicht von Hand ein zusätzliches Minuszeichen einfügen; es ergibt sich bereits aus der zeitlichen Komponente mit gesenktem Index.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_19.png}
+\caption{Die Kontraktion \(A^\mu A_\mu\), aufgeschlüsselt nach zeitlichen und räumlichen Komponenten.}
+\lectureframe{01:09:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Sollte man einen Vektor mit unterem Index als Zeile statt als Spalte darstellen?}
+\lecturerresponse{In der elementaren Matrixnotation kann man ihn als Zeile darstellen, doch die Indexnotation verlangt keine solche Festlegung. Entscheidend ist, wie er sich transformiert und wie er mit einem Vektor mit oberem Index kontrahiert. \lecturetimestamp{01:10:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Beziehen sich griechische Indizes immer auf alle vier Komponenten?}
+\lecturerresponse{In dieser Notation ja. Griechische Indizes wie \(\mu,\nu\) durchlaufen die Raumzeit, während lateinische Indizes wie \(i,j\) üblicherweise nur die drei räumlichen Komponenten durchlaufen. \lecturetimestamp{01:12:23}}
+\end{classroomqa}
+
+Dieselbe Konstruktion funktioniert für zwei verschiedene Vierervektoren: \begin{equation}
+A^\mu B_\mu
+\end{equation} ist ein Skalar. Ein kurzer Beweis verwendet die Polarisationsidentität. Da \((A+B)^2\) und \((A-B)^2\) beide Skalare sind, ist auch \begin{equation}
+(A+B)^2-(A-B)^2=4A^\mu B_\mu
+\end{equation} ein Skalar. Dies ist die Minkowski-Version eines gewöhnlichen Skalarprodukts.
+
+\begin{classroomqa}
+\audiencequestion{Ist \(A^\mu B_\mu\) mit dem gewöhnlichen Skalarprodukt vergleichbar?}
+\lecturerresponse{Genau, nur liefert hier die Minkowski-Metrik das relative Vorzeichen zwischen Zeit- und Raumkomponenten. \lecturetimestamp{01:15:44}}
+\end{classroomqa}
+
+\subsection{Der Gradient ist ein Kovektor}
+
+Sei \(\phi(x)\) ein skalares Feld, wobei \(x\) nun für alle vier Raumzeitkoordinaten steht. Zwischen benachbarten Ereignissen gilt \begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr5-dphi}
+\end{equation} Die linke Seite ist ein Skalar, und \(dx^\mu\) ist ein Vierervektor. Daher muss sich der Koeffizient \begin{equation}
+\partial_\mu\phi
+=
+\left(
+\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right)
+\label{eq:sr5-gradient-lower}
+\end{equation} wie ein Kovektor transformieren. Hebt man seinen Index, erhält man \begin{equation}
+\partial^\mu\phi
+=
+\left(
+-\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right).
+\label{eq:sr5-gradient-upper}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_20.png}
+\caption{Das Differential \(d\phi=\partial_\mu\phi\,dx^\mu\), aus dem der Kovektorcharakter des Skalargradienten folgt.}
+\lectureframe{01:20:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Wird der obere Index in \(x^\mu\) zu einem unteren Index, wenn er im Nenner \(\partial/\partial x^\mu\) erscheint?}
+\lecturerresponse{Ja. Das Koordinatendifferential \(dx^\mu\) transformiert kontravariant, sein dualer Ableitungsoperator \(\partial_\mu=\partial/\partial x^\mu\) dagegen kovariant. Dadurch ist \(d\phi=\partial_\mu\phi\,dx^\mu\) ein Skalar. \lecturetimestamp{01:20:00}}
+\end{classroomqa}
+
+\subsection{Eine invariante skalare Felddichte}
+
+Kontrahieren wir die beiden Ableitungsvektoren: \begin{align}
+\partial_\mu\phi\,\partial^\mu\phi
+&=
+-(\partial_t\phi)^2
++(\partial_x\phi)^2
++(\partial_y\phi)^2
++(\partial_z\phi)^2.
+\end{align} Die freie skalare Dichte lässt sich daher kompakt schreiben als \begin{equation}
+\boxed{
+\mathcal L_0
+=
+-\frac12
+\partial_\mu\phi\,\partial^\mu\phi
+}.
+\label{eq:sr5-compact-density}
+\end{equation} Dies ist dieselbe Komponentendichte wie in \eqref{eq:sr5-free-field-action}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_21.png}
+\caption{Die kinetische Dichte des Skalarfelds, verdichtet zu einem kontrahierten Ausdruck.}
+\lectureframe{01:25:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist der kontrahierte Ausdruck aus ersten Ableitungen der Laplace-Operator?}
+\lecturerresponse{Nein. Der Laplace-Operator enthält räumliche Ableitungen zweiter Ordnung. Dieser Ausdruck ist die Lagrangedichte und besteht aus Produkten erster Ableitungen. \lecturetimestamp{01:24:38}}
+\end{classroomqa}
+
+Der Wert einer skalaren Dichte an einem physikalischen Ereignis ist bezugssystemunabhängig. Die eigentliche Lorentz-Transformation hat außerdem den Betrag eins als Determinante, sodass das Maß \(d^4x\) invariant ist. Folglich ist \begin{equation}
+S=\int d^4x\,\mathcal L
+\end{equation} invariant. Eine bezugssystemunabhängige Wirkung liefert Euler--Lagrange-Gleichungen, die in jedem Inertialsystem dieselbe Form haben.
+
+\section{Der Galilei-Grenzfall}
+
+\begin{classroomqa}
+\audiencequestion{Musste auch eine Newtonsche Lagrangefunktion ein Relativitätsprinzip erfüllen?}
+\lecturerresponse{Ja, auch wenn das zuvor nicht betont wurde. Die Newtonschen Gleichungen sind invariant unter Galilei-Transformationen, dem Grenzfall \(c\to\infty\) der Lorentz-Transformationen. In diesem Grenzfall verschwindet die Relativität der Gleichzeitigkeit. \lecturetimestamp{01:27:16}}
+\end{classroomqa}
+
+Um diesen Grenzfall zu betrachten, setzen wir \(c\) in einem Boost entlang \(x\) wieder ein: \begin{equation}
+x'
+=
+\frac{x-vt}{\sqrt{1-v^2/c^2}},
+\qquad
+t'
+=
+\frac{t-vx/c^2}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr5-lorentz-c}
+\end{equation} Für \(c\to\infty\) ergibt sich \begin{equation}
+\boxed{
+x'=x-vt,
+\qquad
+t'=t
+}.
+\label{eq:sr5-galilean}
+\end{equation} Dies sind Galilei-Transformationen. Die Newtonsche Mechanik behält das Relativitätsprinzip bei, nach dem die Gesetze in allen Inertialsystemen dieselbe Form haben, nimmt aber zugleich eine absolute, allen Beobachtern gemeinsame Zeit an.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_22.png}
+\caption{Der Lorentz-Boost vor dem Grenzübergang \(c\to\infty\), der die Galilei-Regeln \(x'=x-vt\) und \(t'=t\) ergibt.}
+\lectureframe{01:29:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Unterscheiden sich die Transformationsgesetze für Vektoren mit oberen und unteren Indizes nur durch einen Vorzeichenwechsel?}
+\lecturerresponse{Bei der hier verwendeten festen kartesischen Metrik ändert das Senken eines bereits bekannten Vektors nur das Vorzeichen seiner Zeitkomponente. Die Lorentz-Transformationsgesetze sind dennoch dual zueinander und nicht bloß eine willkürliche Vorzeichenkonvention; die Metrik überführt das eine Gesetz in das andere. \lecturetimestamp{01:31:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist jede gewöhnlich aussehende Funktion der Koordinaten ein Skalar?}
+\lecturerresponse{Nein. Dass an jedem Koordinatenpunkt eine Zahl steht, genügt nicht; die Zahl muss in jedem Bezugssystem denselben physikalischen Wert am selben Ereignis darstellen. Die Energiedichte ist ein Gegenbeispiel: Ein Boost eines Kastens verändert sowohl die gemessene Energie als auch das gemessene Volumen, sodass die Beobachter nicht dieselbe Dichte zuordnen. \lecturetimestamp{01:33:23}}
+\end{classroomqa}
+
+Eine einzelne Komponente der Vierergeschwindigkeit ist ein weiteres Beispiel. Die gesamte Vierergeschwindigkeit ist ein Vektor, aber ihre Zeitkomponente ändert sich unter einem Boost und ist selbst kein Skalar.
+
+\section{Das Klein--Gordon-Feld}
+
+\subsection{Das Feldanalogon eines harmonischen Oszillators}
+
+Wir kehren zur skalaren Dichte zurück und ergänzen das einfachste quadratische Potential: \begin{equation}
+\boxed{
+\mathcal L
+=
+\frac12
+\left[
+(\partial_t\phi)^2
+-|\boldsymbol{\nabla}\phi|^2
+-\mu^2\phi^2
+\right]
+}.
+\label{eq:sr5-kg-density}
+\end{equation} Dies ist das feldtheoretische Analogon von \begin{equation}
+L_{\mathrm{osc}}
+=
+\frac12\dot q^2-\frac12\mu^2q^2.
+\end{equation} Jeder Raumpunkt verhält sich lokal wie ein Oszillator, während der Gradiententerm benachbarte Punkte koppelt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_23.png}
+\caption{Die quadratische Dichte des Skalarfelds und ihr Prototyp, der harmonische Oszillator.}
+\lectureframe{01:38:20}
+\end{figure}
+
+Die Euler--Lagrange-Gleichung für das Feld lautet \begin{equation}
+\partial_\mu
+\left[
+\frac{\partial\mathcal L}
+{\partial(\partial_\mu\phi)}
+\right]
+-
+\frac{\partial\mathcal L}{\partial\phi}
+=0.
+\label{eq:sr5-field-el}
+\end{equation} Wendet man sie auf \eqref{eq:sr5-kg-density} an, erhält man \begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi+\mu^2\phi=0
+}.
+\label{eq:sr5-kg}
+\end{equation} Dies ist die Klein--Gordon-Gleichung. Mit der Konvention überwiegend positiver Vorzeichen und \(\Box=\partial_\mu\partial^\mu=-\partial_t^2+\nabla^2\) lautet dieselbe Gleichung \((\Box-\mu^2)\phi=0\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_24.png}
+\caption{Die Klein--Gordon-Gleichung, ergänzt unterhalb der Dichte, aus der sie folgt.}
+\lectureframe{01:40:00}
+\end{figure}
+
+Historisch wurde die Gleichung zuerst als relativistische Einteilchen-Wellengleichung untersucht. Diese Deutung brachte Schwierigkeiten mit sich, insbesondere im Hinblick auf eine positive Wahrscheinlichkeitsdichte. Ihr angemessener moderner Rahmen ist die relativistische Feldtheorie, in der sie freie Skalarfelder und den freien Grenzfall wechselwirkender Skalarfelder beschreibt.
+
+\subsection{Ebenen Wellenmoden}
+
+Da \eqref{eq:sr5-kg} linear ist und konstante Koeffizienten hat, suchen wir eine ebene Welle \begin{equation}
+\phi(x)
+=
+\exp\!\left[
+-i\omega t+i\mathbf{k}\cdot\mathbf{x}
+\right].
+\label{eq:sr5-plane-wave}
+\end{equation} Mit \begin{equation}
+k_\mu=(-\omega,k_x,k_y,k_z),
+\end{equation} ist der Exponent gleich \(ik_\mu x^\mu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_25.png}
+\caption{Der Ansatz einer ebenen Welle, in Komponenten und als \(e^{ik_\mu x^\mu}\) geschrieben.}
+\lectureframe{01:44:00}
+\end{figure}
+
+Ableiten ergibt \begin{equation}
+\partial_t^2\phi=-\omega^2\phi,
+\qquad
+\nabla^2\phi=-|\mathbf{k}|^2\phi.
+\end{equation} Eingesetzt in \eqref{eq:sr5-kg} folgt \begin{equation}
+\left(
+-\omega^2+|\mathbf{k}|^2+\mu^2
+\right)\phi=0.
+\end{equation} Eine nichtverschwindende Mode erfordert daher \begin{equation}
+\boxed{
+\omega^2=|\mathbf{k}|^2+\mu^2
+},
+\qquad
+\omega=\pm\sqrt{|\mathbf{k}|^2+\mu^2}.
+\label{eq:sr5-dispersion}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_26.png}
+\caption{Das Einsetzen der ebenen Welle und die daraus folgende relativistische Dispersionsrelation.}
+\lectureframe{01:47:00}
+\end{figure}
+
+In natürlichen Einheiten hat \(\mu\) die Bedeutung einer Masse. Stellt man für eine Quantenanregung die Konstanten wieder her, \begin{equation}
+E=\hbar\omega,
+\qquad
+\mathbf{p}=\hbar\mathbf{k},
+\qquad
+\mu=\frac{mc}{\hbar},
+\end{equation} wird aus \eqref{eq:sr5-dispersion} \begin{equation}
+E^2=p^2c^2+m^2c^4.
+\end{equation} Die Zweige mit positiver und negativer Frequenz gehören beide zum Raum der klassischen Lösungen. Allgemeine Lösungen sind Überlagerungen dieser Moden.
+
+\begin{classroomqa}
+\audiencequestion{Woher stammt die Klein--Gordon-Gleichung?}
+\lecturerresponse{Sie folgt direkt aus der quadratischen Lorentz-Skalardichte mithilfe der Euler--Lagrange-Gleichung für das Feld. Das Beispiel wurde gewählt, weil diese einfache quadratische Dichte eine lineare Feldgleichung ergibt. \lecturetimestamp{01:47:59}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Was in der Natur erfüllt die Klein--Gordon-Gleichung?}
+\lecturerresponse{Ein freies klassisches Skalarfeld tut das. Higgsfeldfluktuationen sind skalar und gehen in der freien Näherung in die Klein--Gordon-Form über, obwohl das tatsächliche Higgsfeld auch Wechselwirkungen und Eichkopplungen besitzt. \lecturetimestamp{01:50:41}}
+\end{classroomqa}
+
+\section{Ein skalarer Hintergrund als Massenverschiebung}
+
+Nun kommt die Teilchenwirkung wieder ins Spiel: \begin{equation}
+S_{\mathrm p}
+=
+-\int d\tau\,
+\bigl[m+g\phi(x)\bigr].
+\label{eq:sr5-final-particle-action}
+\end{equation} Hat \(\phi\) einen konstanten Hintergrundwert \(\phi_0\), bewegt sich das Teilchen so, als hätte es die Masse \begin{equation}
+\boxed{
+m_{\mathrm{eff}}=m+g\phi_0
+}.
+\label{eq:sr5-effective-mass}
+\end{equation} Wenn der nackte Term \(m\) verschwindet, kann der skalare Hintergrund den gesamten Koeffizienten vor der Eigenzeit liefern.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_27.png}
+\caption{Die feldabhängige Teilchenwirkung über der kompakten Euler--Lagrange-Gleichung für das Feld, womit die beiden Seiten der Vorlesung zusammengeführt werden.}
+\lectureframe{01:51:30}
+\end{figure}
+
+Dies ist ein bewusst vereinfachtes Modell für die Entstehung der Higgs-Masse. Im Standardmodell entstehen Fermionmassen durch Yukawa-Kopplungen an den Vakuumerwartungswert des Higgs-Feldes, schematisch \(m_f\propto y_f v\), während die Massen von \(W\) und \(Z\) aus dem eichkovarianten kinetischen Term des Higgs-Feldes hervorgehen. Die Spielzeugkopplung entlang der Weltlinie erfasst die Grundidee--ein nichtverschwindender skalarer Hintergrund verändert die Trägheitsmasse--, ohne die vollständige elektroschwache Theorie wiederzugeben. Die zuvor hergeleitete Reziprozität gilt weiterhin: Variiert man dieselbe Wechselwirkung nach dem Feld, wird das Teilchen zu einer Quelle. Das Feld wirkt auf Teilchen, und Teilchen wirken auf das Feld zurück.
+
+\subsection{Warum komplexe Exponentialfunktionen nützlich sind}
+
+Das Feld muss physikalisch nicht komplex sein. Die Eulersche Formel liefert
+\begin{equation}
+e^{i(\omega t-\mathbf{k}\cdot\mathbf{x})}
+=
+\cos(\omega t-\mathbf{k}\cdot\mathbf{x})
++i\sin(\omega t-\mathbf{k}\cdot\mathbf{x}).
+\end{equation}
+Da die Gleichung reell und linear ist, sind Real- und Imaginärteil jeweils für sich reelle Lösungen. Es sind Wellen, die um ein Viertel einer Periode gegeneinander verschoben sind; jede reelle Linearkombination ist wiederum eine Lösung.
+
+\begin{classroomqa}
+\audiencequestion{Addiert sich der Imaginärteil irgendwie zu null, wenn man den Realteil nimmt?}
+\lecturerresponse{Nein. Die komplexe Exponentialfunktion fasst zwei unabhängige reelle Lösungen zusammen: Kosinus und Sinus. Man kann jeden der beiden Teile beibehalten oder reelle Linearkombinationen bilden. Die Exponentialfunktion wird verwendet, weil Differenzieren dann einer Multiplikation entspricht. \lecturetimestamp{01:53:29}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_28.png}
+\caption{Eine komplexe ebene Welle, zerlegt in Kosinus und Sinus, dargestellt als zwei reelle, phasenverschobene Wellen.}
+\lectureframe{01:56:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Massenerzeugung des elektromagnetischen Feldes in einem Supraleiter dasselbe Phänomen?}
+\lecturerresponse{Sie ist eng damit verwandt: In einem Supraleiter verleiht das Kondensat dem elektromagnetischen Feld im Medium eine effektive Masse und erzeugt so den Meißner-Effekt. Eine vollständige Erklärung erfordert das elektromagnetische Feld und wird später behandelt. \lecturetimestamp{01:56:14}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann man sich den Higgs-Mechanismus so vorstellen, dass ein Higgs-Teilchen durch den Raum fliegt und Masse verteilt?}
+\lecturerresponse{Nein. Entscheidend ist der Hintergrundwert des Higgs-Feldes, nicht ein Strom einzelner Higgs-Teilchen. In der Spielzeugwirkung verändert der Hintergrund lediglich den Koeffizienten, der als Masse des Teilchens wirkt. \lecturetimestamp{01:57:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Können verschiedene Kopplungen an denselben skalaren Hintergrund unterschiedliche Massen erzeugen?}
+\lecturerresponse{Ja. Die Verschiebung ist proportional zur Kopplung \(g\). Im Standardmodell sind die unterschiedlichen Yukawa-Kopplungen genau der Grund dafür, dass verschiedene Fermionen durch denselben Higgs-Hintergrund unterschiedliche Massen erhalten. \lecturetimestamp{01:58:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist \(\phi\) selbst der Massenterm?}
+\lecturerresponse{In diesem Spielzeugmodell wirkt \(g\phi_0\) in jeder mechanischen Hinsicht als Beitrag zum Massenkoeffizienten. Dabei müssen sowohl die Kopplung als auch der Hintergrundwert berücksichtigt werden. \lecturetimestamp{01:58:42}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Würde jedes Teilchen masselos, wenn der Higgs-Hintergrund verschwände?}
+\lecturerresponse{Nein. Elektronen, Quarks und die schwachen Eichbosonen verlören ihre gewöhnlichen elektroschwachen Massenbeiträge; welche Einzelheiten für Neutrinos gelten, hängt vom Mechanismus ab, der ihnen Masse verleiht. Der Skalarsektor selbst muss nicht masselos werden, nur weil sein Hintergrundwert verschwindet. Der größte Teil der Protonen- und Neutronenmasse stammt stattdessen aus der QCD-Bindung und dem Einschluss und wird daher nicht direkt durch das Higgs-Feld erzeugt. \lecturetimestamp{01:58:51}}
+\end{classroomqa}
+
+Die Folgen für Atome wären dennoch drastisch. Die Bohr-Skala verhält sich in natürlichen Einheiten wie
+\begin{equation}
+a_0\sim\frac{1}{\alpha m_e}
+\end{equation}
+Lässt man die Elektronenmasse gegen null gehen, divergiert die gewöhnliche atomare Längenskala; gewöhnliche lokalisierte Atome würden nicht mehr existieren. Protonen und Neutronen wären deutlich weniger direkt betroffen, da ihre Masse überwiegend dynamische QCD-Energie ist.
+
+Die einzelnen Bausteine ergeben nun eine zusammenhängende Argumentation. Die Lorentz-Geometrie bestimmt die beobachteten Wellenlängen. Ein gemischter Term in einer Wirkung lässt zwei dynamische Systeme einander beeinflussen. Ein skalares Feld wird sowohl zum Potenzial für ein Teilchen als auch zu einem Feld, dessen Quelle dieses Teilchen ist. Metrik und Indexnotation machen die Lorentz-Invarianz sichtbar, und die einfachste quadratische invariante Dichte führt zu Klein--Gordon-Wellen. Schließlich bewirkt ein konstanter skalarer Hintergrund durch dieselbe Kopplung eine Massenverschiebung. Durchgehend kommt dieselbe Methode zum Einsatz: Man konstruiert eine invariante Wirkung, variiert jedes dynamische Objekt und erschließt die Wechselwirkungen aus den resultierenden Gleichungen.

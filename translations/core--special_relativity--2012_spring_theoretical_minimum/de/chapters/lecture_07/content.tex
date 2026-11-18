@@ -1,0 +1,933 @@
+\chapter{Eichinvarianz und die Notwendigkeit des Vektorpotentials}
+
+Bevor wir mit der Physik beginnen, gibt es zwei praktische Dinge. Das nächste Treffen fällt aus, während der Dozent in Belgien ist; der Kurs wird jedoch fortgesetzt, bis alle zehn Vorlesungen gehalten worden sind. Die handschriftlichen Notizen für den heutigen Abend sind außerdem kurzfristig vorbereitet worden. Wer sie für die Kurswebsite einscannen möchte, bewahrt sie vor einem bemerkenswert langsamen Scanner.
+
+Die vorige Vorlesung war mathematisch anspruchsvoll. Statt etwas anderes vorzugeben, gehen wir ihre zentrale Rechnung noch einmal durch. Ziel des Kurses ist ein echtes theoretisches Minimum: genug Struktur, um zur nächsten Stufe überzugehen. Ließe sich die Mathematik entfernen, ohne dass dabei Physik verloren ginge, gäbe es allen Grund, sie wegzulassen. Exakte Gesetze erfordern jedoch quantitative Aussagen, und quantitative Aussagen erfordern Mathematik. Die Notation mag mitunter schwer verständlich sein; das ist kein Beleg dafür, dass Physiker versuchen, das Thema hinter einer priesterlichen Sprache zu verbergen.
+
+Vielleicht lässt sich noch eine einfachere Formulierung der Natur finden. Wie Feynman scherzhaft vorschlug, kann man jede Gleichung der Physik quadrieren, die Quadrate addieren und ihre Summe gleich null setzen. So erhält man eine Gleichung, denn dann muss jedes Quadrat verschwinden, aber ein neues Verständnis ergibt sich daraus nicht. Einfachheit bedeutet, die ordnende Idee zu finden, und nicht bloß, die Schreibweise zu komprimieren. Als ein Zuhörer einwendet, eine solche Idee müsse von einem jungen Menschen kommen, wird der Einwand ohne Weiteres eingeräumt: Für Einsicht ist das Alter unerheblich.
+
+\lectureoverview{Zunächst rufen wir die Indexnotation in Erinnerung, die nötig ist, um Lorentzskalare zu erkennen. Dann formulieren wir vier Prinzipien für eine relativistische Theorie, wiederholen die Herleitung für ein geladenes Teilchen vollständig und entdecken schließlich die Eichinvarianz gleich zweimal: als Randterm in der Wirkung und als Invarianz des elektromagnetischen Feldtensors.}
+
+\section{Die Indexnotation noch einmal}
+
+\subsection{Warum manche Indizes oben stehen}
+
+Sei
+\begin{equation}
+x^\mu=(t,x,y,z),
+\qquad
+\mu=0,1,2,3,
+\end{equation}
+mit der Metrik
+\begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr7-metric}
+\end{equation}
+Koordinaten und Koordinatenverschiebungen erhalten obere Indizes:
+\begin{equation}
+dx^\mu=(dt,dx,dy,dz).
+\end{equation}
+Ableitungen nach diesen Koordinaten tragen untere Indizes:
+\begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\label{eq:sr7-gradient}
+\end{equation}
+Welche Familie obere und welche untere Indizes erhält, ist eine Konvention, ähnlich wie die Bezeichnungen links und rechts Konventionen sind. Ist sie einmal gewählt, muss man sie jedoch konsequent einhalten, denn die beiden Familien transformieren sich unterschiedlich.
+
+\begin{classroomqa}
+\audiencequestion{Wann schreibt man einen Index als oberen und wann als unteren Index?}
+\lecturerresponse{Koordinaten, Verschiebungen und Objekte, die wie sie transformieren, erhalten obere Indizes. Ableitungen und Objekte, die wie Ableitungen transformieren, erhalten untere Indizes. Welche Familie obere Indizes erhält, ist Konvention; der Unterschied zwischen den beiden Transformationsgesetzen ist es nicht. \lecturetimestamp{00:05:03}}
+\end{classroomqa}
+
+Für eine skalare Funktion \(s(x)\) lautet das totale Differential
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu s\,dx^\mu.
+\label{eq:sr7-total-differential}
+\end{equation}
+Ausgeschrieben lautet es
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial t}\,dt
++\frac{\partial s}{\partial x}\,dx
++\frac{\partial s}{\partial y}\,dy
++\frac{\partial s}{\partial z}\,dz.
+\end{equation}
+Der kompakte Ausdruck sagt genau dasselbe. Er ist kein neues Gesetz, sondern ein Hilfsmittel, um die skalare Struktur zu erkennen, ohne in jeder Zeile vier Terme mitzuführen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_01.png}
+\caption{Das skalare Differential, gebildet aus einem Gradienten mit unterem Index und einer Verschiebung mit oberem Index.}
+\lectureframe{00:08:20}
+\end{figure}
+
+Damit ist die Einsteinsche Summenkonvention unmittelbar verständlich: Ein Index, der einmal oben und einmal unten vorkommt, wird summiert. Die Kontraktion in
+\eqref{eq:sr7-total-differential} ist daher ein Skalar. Vektoren und Kovektoren haben eine tiefere geometrische Interpretation, doch diese Diskussion verschieben wir bis zur allgemeinen Relativitätstheorie.
+
+\subsection{Einen Index heben}
+
+Die Formen eines jeden Vierervektors mit oberen und unteren Indizes hängen über die Metrik zusammen:
+\begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\end{equation}
+Mit \eqref{eq:sr7-metric} gilt
+\begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m,
+\qquad m=1,2,3.
+\label{eq:sr7-lowering}
+\end{equation}
+Einen Index zu heben oder zu senken ändert also das Vorzeichen der Zeitkomponente und lässt die Raumkomponenten unverändert. Dieselbe Regel gilt für die Ableitung:
+\begin{equation}
+\begin{aligned}
+\partial_\mu
+&=
+\left(
+\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right),\\[0.5em]
+\partial^\mu
+&=
+\left(
+-\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right).
+\end{aligned}
+\label{eq:sr7-raised-gradient}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_02.png}
+\caption{Die Ableitungsoperatoren mit unterem und oberem Index; nur die Zeitkomponente ändert ihr Vorzeichen.}
+\lectureframe{00:12:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Trägt eine partielle Ableitung immer einen unteren Index, und kann man ihn auch heben?}
+\lecturerresponse{Der Operator \(\partial/\partial x^\mu\) hat von Natur aus die Form eines Kovektors, also \(\partial_\mu\). Wendet man die Metrik an, erhält man \(\partial^\mu=\eta^{\mu\nu}\partial_\nu\); in der flachen Raumzeit kehrt dies lediglich das Vorzeichen der Zeitkomponente um. \lecturetimestamp{00:11:00}}
+\end{classroomqa}
+
+Das vertraute Beispiel ist das invariante Intervall:
+\begin{equation}
+x_\mu x^\mu
+=
+x^2+y^2+z^2-t^2.
+\label{eq:sr7-interval}
+\end{equation}
+Eine Kontraktion aus einem oberen und einem unteren Index ergibt einen Lorentzskalar. Diese einfache Erkennungsregel ist der Grund, weshalb wir die Notation so sorgfältig verwenden.
+
+\section{Vier Prinzipien zum Aufbau einer Theorie}
+
+Angenommen, ein Experiment zeigt ein neues Phänomen, und wir wollen eine Theorie dazu formulieren. Vier Prinzipien geben der Suche Struktur. Vielleicht müssen sie später verfeinert werden, doch jede derzeit erfolgreiche fundamentale Theorie entspricht ihrem Muster.
+
+\subsection{Das Wirkungsprinzip}
+
+Die erste Forderung ist eine Wirkung. Für die Teilchenmechanik gilt
+\begin{equation}
+I[x]
+=
+\int dt\,L(x,\dot x),
+\label{eq:sr7-particle-action-general}
+\end{equation}
+Der physikalische Weg ist stationär unter Variationen, bei denen die Endpunkte festgehalten werden:
+\begin{equation}
+\delta I=0.
+\end{equation}
+Daraus ergeben sich die Gleichungen
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr7-EL}
+\end{equation}
+
+Das Wirkungsprinzip ist kein ästhetischer Zierrat. Es ist der Rahmen, der Symmetrien mit Erhaltungssätzen verknüpft. Die Zeittranslationssymmetrie einer Wirkung führt zur Energieerhaltung, räumliche Translationen führen zur Impulserhaltung, und verwandte Symmetrien liegen anderen Erhaltungsgrößen zugrunde. Die Wirkung allein ist nicht der Erhaltungssatz; sie ist aber die Struktur, durch die die Symmetrie zu einem solchen wird.
+
+\subsection{Lokalität}
+
+Die zweite Forderung ist Lokalität. Wird ein Punkt einer Geigensaite ausgelenkt, reagiert zuerst das benachbarte Segment. Danach reagiert das nächste Segment, und die Störung breitet sich aus. Schließlich kann sie die ganze Saite erreichen, doch der unmittelbare Einfluss während kurzer Zeit ist lokal.
+
+Bei einem Teilchen wird Lokalität durch eine Lagrangefunktion ausgedrückt, die entlang der Bahn ausgewertet wird. Sie hängt von Ort und Geschwindigkeit zur selben Zeit ab, nicht von beliebigen Paaren weit auseinanderliegender Zeiten. Für ein Feld \(\phi(x)\) gilt
+\begin{equation}
+I[\phi]
+=
+\int d^4x\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr7-local-field-action}
+\end{equation}
+Die Dichte an einem Ereignis hängt dort vom Feld und seinen ersten Ableitungen ab. Sie enthält kein direktes Produkt des Feldes an diesem Ort mit dem Feld an einem anderen, weit entfernten Punkt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_03.png}
+\caption{Teilchen- und Feldwirkungen, dargestellt unter dem Lokalitätsprinzip.}
+\lectureframe{00:19:30}
+\end{figure}
+
+Deshalb sind lokale Bewegungsgleichungen Differentialgleichungen. Ableitungen vergleichen infinitesimal benachbarte Werte. Eine nichtlokale Alternative könnte etwa die Beschleunigung zum jetzigen Zeitpunkt mit einer Kraft zu einer völlig anderen Zeit verknüpfen oder Geschwindigkeiten zu zwei weit auseinanderliegenden Zeiten mit einer Kraft zu einem dritten Zeitpunkt. Solche Gesetze sind mathematisch denkbar, werden aber durch die Lokalität ausgeschlossen.
+
+\begin{classroomqa}
+\audiencequestion{Widerspricht die quantenmechanische Verschränkung diesem Lokalitätsprinzip?}
+\lecturerresponse{Nicht im dynamischen Sinn, der hier gemeint ist. Verschränkung erzeugt Korrelationen, aber Alice kann durch eine lokale Operation weder Bob's reduzierten Zustand verändern noch ihm augenblicklich ein steuerbares Signal senden. Die Analogie mit den Münzen macht den Unterschied deutlich: Wenn man eine Münze sieht, erfährt man, welche der korrelierten Münzen die andere Person hat; man wirkt dadurch aber nicht auf die entfernte Münze ein. Quantenkorrelationen sind reichhaltiger als diese klassische Analogie, ermöglichen aber dennoch keine überlichtschnelle Signalübertragung. \lecturetimestamp{00:20:02}}
+\end{classroomqa}
+
+\subsection{Lorentzinvarianz}
+
+Die dritte Forderung lautet, dass die Gesetze in jedem Inertialsystem dieselbe Form haben. Die praktische Konstruktionsregel ist einfach: Die Lagrangefunktion muss ein Lorentzskalar sein, sodass die Wirkung invariant ist. Kontraktionen eines oberen mit einem unteren Index, wie --\(\partial_\mu\phi\,\partial^\mu\phi\), liefern die Bausteine.
+
+In der allgemeinen Relativitätstheorie wird diese Aussage erweitert. Der Integrand ist eine skalare Dichte, und die Invarianz gilt nicht nur unter Lorentztransformationen, sondern unter beliebigen Koordinatentransformationen. Diese Verfeinerung ersetzt das gegenwärtige Prinzip nicht, sondern ist seine Form für gekrümmte Raumzeit.
+
+\begin{classroomqa}
+\audiencequestion{Ist Lorentzinvarianz nur eine Regel für die spezielle Relativitätstheorie und kein wirklich allgemeines Prinzip?}
+\lecturerresponse{Für ein nichtgravitativer Problem in flacher Raumzeit ist Lorentzinvarianz die richtige Aussage. In gekrümmter Raumzeit ersetzt man die skalare Lagrangefunktion durch die entsprechende skalare Dichte und fordert Invarianz unter beliebigen Koordinatentransformationen. Abgesehen von dieser Verfeinerung bleibt dieselbe Konstruktionsphilosophie bestehen. \lecturetimestamp{00:24:16}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Welche Dimensionen haben die Teilchen-Lagrangefunktion und die Lagrangedichte des Feldes?}
+\lecturerresponse{Eine Teilchen-Lagrangefunktion hat die Dimension einer Energie. In \(I=\int dt\,d^3x\,\mathcal L\) liefert das räumliche Maß ein Volumen, daher hat \(\mathcal L\) die Dimension Energie pro Volumeneinheit. Über den Raum integriert ergibt sie eine gewöhnliche Lagrangefunktion mit der Dimension einer Energie. \lecturetimestamp{00:25:49}}
+\end{classroomqa}
+
+\subsection{Eichinvarianz}
+
+Die vierte Forderung ist Eichinvarianz. An dieser Stelle bleibt sie absichtlich rätselhaft. Ein Zuhörer nimmt einen hilfreichen Gedanken vorweg: Vielleicht kann man einer Lagrangefunktion bestimmte Dinge hinzufügen, ohne die Physik zu ändern. Das trifft es ungefähr, doch das Wort „bestimmte“ leistet dabei fast die ganze Arbeit.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_04.png}
+\caption{Lokalität, skalarer Aufbau, Lorentzinvarianz und Eichinvarianz gemeinsam an der Tafel.}
+\lectureframe{00:27:00}
+\end{figure}
+
+Wir verschieben die Definition, denn die Rechnung für ein geladenes Teilchen enthält sie bereits. Diese Rechnung zu wiederholen, ist kein Umweg. Sie wird zeigen, weshalb das Vektorpotential unverzichtbar ist und weshalb es nach seiner Einführung eine Redundanz enthält.
+
+\section{Warum das Vektorpotential notwendig ist}
+
+Für ein sich langsam bewegendes geladenes Teilchen lautet die gesuchte Gleichung das vertraute Lorentzkraftgesetz
+\begin{equation}
+m\mathbf a
+=
+e\left(
+\mathbf E+\mathbf v\times\mathbf B
+\right).
+\label{eq:sr7-lorentz-target}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_05.png}
+\caption{Das vertraute Kraftgesetz, dargestellt, bevor das Vektorpotential wieder eingeführt wird.}
+\lectureframe{00:29:08.870}
+\end{figure}
+
+In \eqref{eq:sr7-lorentz-target} kommt kein Vektorpotential vor. Die Bewegungsgleichungen lassen sich direkt mit \(\mathbf E\) und \(\mathbf B\) formulieren. Die Schwierigkeit ist grundsätzlicher Art: Unter den in der Vorlesung verwendeten Annahmen von Lokalität und Lorentzinvarianz lässt sich die Wechselwirkung eines geladenen Teilchens nicht als Weltlinienwirkung unmittelbar allein durch diese Felder, den Ort und die Geschwindigkeit ausdrücken. Das Potential \(A_\mu\) wird benötigt, um die lokale skalare Kopplung zu bilden.
+
+\begin{classroomqa}
+\audiencequestion{Wenn das Kraftgesetz bereits nur \(\mathbf E\) und \(\mathbf B\) enthält, warum führt man dann \(A_\mu\) ein?}
+\lecturerresponse{Weil eine Bewegungsgleichung noch kein Wirkungsprinzip ist. Im lokalen, lorentzinvarianten Rahmen dieser Vorlesung benötigt die Wirkung des geladenen Teilchens das Viererpotential. Mit den Feldern allein lässt sich die Kraft angeben, doch erst das Potential ermöglicht es, die Kraft aus einer skalaren Weltlinienwirkung herzuleiten. \lecturetimestamp{00:29:06}}
+\end{classroomqa}
+
+\subsection{Die Weltlinienwirkung}
+
+Die mögliche Wirkung hat einen freien und einen Wechselwirkungsterm:
+\begin{equation}
+I[x]
+=
+-m\int d\tau
+-e\int A_\mu(x)\,dx^\mu.
+\label{eq:sr7-worldline-action}
+\end{equation}
+Der erste Term addiert die Eigenzeitlänge jedes infinitesimalen Bahnabschnitts. Er ist konstruktionsbedingt ein Skalar. Im zweiten Term wird \(A_\mu(x)\) am Ereignis ausgewertet, an dem sich das Teilchen befindet, und mit der Verschiebung \(dx^\mu\) kontrahiert. Auch dieser Zuwachs ist ein Skalar und entlang der Weltlinie lokal.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_06.png}
+\caption{Die beiden Anteile der Wirkung des geladenen Teilchens und die lokale Kontraktion \(A_\mu(x)dx^\mu\).}
+\lectureframe{00:31:20}
+\end{figure}
+
+\subsection{Die Wirkung in gewöhnlicher Zeit umschreiben}
+
+Um die vertrauten Euler--Lagrange-Gleichungen zu verwenden, teilen wir jeden Weltlinienzuwachs durch \(dt\):
+\begin{equation}
+\frac{d\tau}{dt}
+=
+\sqrt{1-\dot{\mathbf x}^{\,2}},
+\qquad
+\dot{\mathbf x}^{\,2}
+=
+\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+Die vier Komponenten von \(dx^\mu/dt\) lauten
+\begin{equation}
+\frac{dx^\mu}{dt}
+=
+\left(1,\dot x,\dot y,\dot z\right).
+\end{equation}
+Folglich gilt
+\begin{align}
+I
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_\mu\frac{dx^\mu}{dt}
+\right]
+\notag\\
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-e\left(A_0+A_m\dot x^m\right)
+\right].
+\label{eq:sr7-action-in-t}
+\end{align}
+Die Lagrangefunktion in gewöhnlicher Zeit lautet daher
+\begin{equation}
+\begin{aligned}
+L(x,\dot x,t)
+&=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+\\
+&\quad -e\left[
+A_0(x,t)+A_m(x,t)\dot x^m
+\right].
+\end{aligned}
+\label{eq:sr7-lagrangian}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_07.png}
+\caption{Die Weltlinienwirkung, umgeschrieben als Integral über die gewöhnliche Zeit, und die aus ihrem Integranden abgelesene Lagrangefunktion.}
+\lectureframe{00:35:30}
+\end{figure}
+
+An diesem Punkt ist der kreative Teil abgeschlossen. Ist eine Lagrangefunktion gewählt, folgt der Rest nach einem festen Verfahren. Die Rechnung kann lang und mühsam sein, doch diese Mühe ist nicht umsonst: Sie legt die elektrische, magnetische und relativistische Struktur offen. Der Dozent scherzt, die Entdeckung des Prinzips sei der unterhaltsame Teil; alle seine Konsequenzen herzuleiten, überlasse man den Doktoranden.
+
+\begin{classroomqa}
+\audiencequestion{Kann man den räumlichen Index von \(A_m\) oder \(\dot x^m\) bei dieser Rechnung nach oben oder unten setzen?}
+\lecturerresponse{Ja. Die räumliche Metrik ist die Einheitsmatrix, daher ändert das Heben oder Senken eines lateinischen Index dessen Komponentenwert nicht. Beim Zeitindex muss man auf das Vorzeichen achten. \lecturetimestamp{00:34:10}}
+\end{classroomqa}
+
+\section{Die Euler--Lagrange-Rechnung}
+
+\subsection{Kanonischer Impuls und eine Korrektur während der Vorlesung}
+
+Wir wählen eine räumliche Komponente \(x^m\). Die Ableitung des freien Terms aus \eqref{eq:sr7-lagrangian} ergibt
+\begin{equation}
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+=
+m u_m,
+\qquad
+u^\mu\equiv\frac{dx^\mu}{d\tau}.
+\end{equation}
+Beim ersten Tafelansatz bleibt es dabei. Ein Einwurf aus dem Publikum macht auf die Auslassung aufmerksam: Auch der Wechselwirkungsterm hängt von \(\dot x^m\) ab. Die vollständige Ableitung lautet
+\begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+=
+m u_m-eA_m.
+\label{eq:sr7-canonical-momentum}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Fehlt im ersten Ausdruck für \(\partial L/\partial\dot x^m\) der Beitrag des elektromagnetischen Terms?}
+\lecturerresponse{Ja. Die Ableitung von \(-eA_n\dot x^n\) nach \(\dot x^m\) liefert den Beitrag \(-eA_m\). Der korrigierte kanonische Impuls lautet \(m u_m-eA_m\) und umfasst daher mehr als nur den mechanischen Impuls.
+\lecturetimestamp{00:37:24}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_08.png}
+\caption{Der korrigierte kanonische Impuls mit mechanischem Term und Potentialterm.}
+\lectureframe{00:38:30}
+\end{figure}
+
+\subsection{Ableitung entlang der bewegten Bahn}
+
+Die linke Seite der Euler--Lagrange-Gleichung lautet
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+m\frac{du_m}{dt}
+-e\frac{dA_m(x(t),t)}{dt}.
+\end{equation}
+Das Potential ändert sich aus zwei Gründen: Es kann explizit von der Zeit abhängen, und das Teilchen bewegt sich durch seine räumliche Variation. Die Kettenregel ergibt
+\begin{equation}
+\frac{dA_m}{dt}
+=
+\partial_0A_m
++\dot x^n\partial_nA_m.
+\label{eq:sr7-chain-rule}
+\end{equation}
+Ausgeschrieben bedeutet der zweite Term
+\begin{equation}
+\dot x\,\frac{\partial A_m}{\partial x}
++\dot y\,\frac{\partial A_m}{\partial y}
++\dot z\,\frac{\partial A_m}{\partial z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_09.png}
+\caption{Die expliziten und konvektiven Beiträge zur Zeitableitung von \(A_m\).}
+\lectureframe{00:42:10}
+\end{figure}
+
+Auf der rechten Seite steht
+\begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\partial_mA_0
+-e\dot x^n\partial_mA_n.
+\label{eq:sr7-spatial-derivative-L}
+\end{equation}
+Der freie Term hängt nicht explizit vom Ort ab. In \eqref{eq:sr7-spatial-derivative-L} ist \(m\) der freie Index, der eine der Gleichungen auswählt; \(n\) ist ein wiederholter Summationsindex. Eine Umbenennung dieses Summationsindex ändert nichts. Deshalb hält der Dozent inne, um die Buchstaben zu klären, bevor er die Terme zusammenfasst.
+
+Gleichsetzen der beiden Seiten und Umstellen ergibt
+\begin{equation}
+m\frac{du_m}{dt}
+=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)
++e\dot x^n
+\left(
+\partial_nA_m-\partial_mA_n
+\right).
+\label{eq:sr7-grouped-force}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_10.png}
+\caption{Die Kraft, aufgeteilt in eine geschwindigkeitsunabhängige Klammer und eine antisymmetrische Klammer, die linear von der Geschwindigkeit abhängt.}
+\lectureframe{00:49:30}
+\end{figure}
+
+\subsection{Elektrische und magnetische Felder erkennen}
+
+Die erste Klammer enthält keine Teilchengeschwindigkeit. In der Konvention dieser Wirkung definieren wir
+\begin{equation}
+E_m
+\equiv
+\partial_0A_m-\partial_mA_0.
+\label{eq:sr7-E-from-A}
+\end{equation}
+Sie hat genau die operationelle Rolle des elektrischen Feldes. Die zweite Klammer ist antisymmetrisch bezüglich ihrer räumlichen Indizes:
+\begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n.
+\label{eq:sr7-C}
+\end{equation}
+Ihre drei unabhängigen Komponenten sind die Rotation des räumlichen Potentials, wobei die Orientierung gemäß der Konvention der Vorlesung so gewählt ist, dass
+\begin{equation}
+\dot x^n C_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\label{eq:sr7-magnetic-identification}
+\end{equation}
+Die ausführliche Komponentenprüfung bleibt eine Aufgabe an der Tafel. Die strukturelle Identifikation ist bereits sichtbar: Die antisymmetrische räumliche Ableitung eines Vektors hat drei Komponenten, genau so viele wie \(\mathbf B\), und sie multipliziert die Geschwindigkeit.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_11.png}
+\caption{Die beiden Ableitungsklammern, identifiziert als elektrischer und magnetischer Anteil der Lorentzkraft.}
+\lectureframe{00:52:00}
+\end{figure}
+
+Gleichung \eqref{eq:sr7-grouped-force} hat somit die Lorentzkraft aus der Wirkung mit Vektorpotential hergeleitet. Außerdem hat sie etwas noch Wichtigeres geleistet: Sie hat die antisymmetrisierten Ableitungen offengelegt, aus denen der Feldtensor entsteht.
+
+\section{Von gewöhnlicher Zeit zu einer Vierervektorgleichung}
+
+\subsection{Der Übergang zur Eigenzeit}
+
+Die linke Seite von \eqref{eq:sr7-grouped-force} ist nicht die Newtonsche Beschleunigung \(d\mathbf v/dt\). Sie ist die Ableitung einer Komponente der Vierergeschwindigkeit nach der gewöhnlichen Zeit:
+\begin{equation}
+\frac{du^m}{dt}
+=
+\frac{du^m}{d\tau}\frac{d\tau}{dt}.
+\end{equation}
+Multiplizieren wir die Gleichung mit \(dt/d\tau\). Dann gilt
+\begin{equation}
+\dot x^n\frac{dt}{d\tau}
+=
+\frac{dx^n}{dt}\frac{dt}{d\tau}
+=
+u^n,
+\qquad
+\frac{dt}{d\tau}=u^0.
+\end{equation}
+Die räumliche Gleichung wird zu
+\begin{align}
+m\frac{du^m}{d\tau}
+&=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)u^0
+\notag\\
+&\quad
++e\left(
+\partial_nA_m-\partial_mA_n
+\right)u^n.
+\label{eq:sr7-proper-spatial}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_12.png}
+\caption{Die Faktoren \(dt/d\tau\) wandeln gewöhnliche Geschwindigkeiten in Komponenten der Vierergeschwindigkeit um.}
+\lectureframe{00:56:30}
+\end{figure}
+
+Die linke Seite ist die Eigenbeschleunigung:
+\begin{equation}
+\frac{du^\mu}{d\tau}
+=
+\frac{d^2x^\mu}{d\tau^2}.
+\end{equation}
+Sie ist ein Vierervektor. Die rechte Seite muss daher aus einem Rang-zwei-Tensor gebildet werden, der auf \(u^\nu\) wirkt.
+
+\subsection{Der Feldtensor und das Kraftgesetz}
+
+Wir wählen die Konvention
+\begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\label{eq:sr7-F-definition}
+\end{equation}
+Der Tensor ist antisymmetrisch:
+\begin{equation}
+F_{\mu\nu}=-F_{\nu\mu}.
+\end{equation}
+Mit dem Wechselwirkungs-Vorzeichen aus \eqref{eq:sr7-worldline-action} lautet die kompakte Gleichung
+\begin{equation}
+\boxed{
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu
+}.
+\label{eq:sr7-covariant-force}
+\end{equation}
+Äquivalent dazu gilt, bevor \(F_{\mu\nu}\) benannt wird,
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+e\left(
+\partial_\nu A^\mu-\partial^\mu A_\nu
+\right)u^\nu.
+\end{equation}
+Andere Konventionen für Metrik, Ladung und Potential verteilen die Gesamtvorzeichen anders. Der invariante Inhalt ist die antisymmetrisierte Ableitung des Potentials und ihre Kontraktion mit der Vierergeschwindigkeit.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_13.png}
+\caption{Die Gleichung für die Eigenzeit, zusammengefasst als Rang-zwei-Feldtensor, der auf die Vierergeschwindigkeit wirkt.}
+\lectureframe{00:58:25}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Die Herleitung ergab drei räumliche Gleichungen. Warum darf man eine vierte Gleichung hinzufügen?}
+\lecturerresponse{Das skalare Wirkungsprinzip gewährleistet ein Lorentz-kovariantes Ergebnis. Sobald man erkennt, dass die Differenz der beiden Seiten ein Vierervektor ist, wird klar, dass Lorentztransformationen seine räumlichen und zeitlichen Komponenten miteinander mischen. Eine Vierervektorgleichung kann nicht konsistent nur drei Komponenten haben; zu den räumlichen gehört auch die Zeitkomponente. \lecturetimestamp{00:59:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist eine feste Zahlenfolge wie \((1,2,3,4)\) selbst ein Lorentz-invarianter Vierervektor?}
+\lecturerresponse{Nein. Solche Zahlen können in einem ausgewählten Bezugssystem die Komponenten eines Vektors sein, aber die Komponenten transformieren sich. Selbst in zwei Dimensionen lässt sich der Vektor mit den Komponenten \((1,2)\) in einem gedrehten Bezugssystem als \((0,\sqrt5)\) darstellen. Der geometrische Vektor bleibt bestehen, seine numerische Komponentenliste jedoch nicht. \lecturetimestamp{01:00:28}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_14.png}
+\caption{Ein zweikomponentiger Vektor, dargestellt in Achsen, die am Vektor selbst ausgerichtet sind.}
+\lectureframe{01:02:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Wenn das Ziel war, die gewöhnliche Zeit durch die Eigenzeit zu ersetzen, warum kommt \(\partial_0A_m=\partial A_m/\partial t\) dann noch vor?}
+\lecturerresponse{Es ging nicht darum, jeden Buchstaben \(t\) zu beseitigen. Ziel war es, die Dynamik in einer expliziten Vierervektornotation zu schreiben. Der Operator \(\partial_0\) ist die Zeitkomponente des kovarianten Vierergradienten, so wie \(\partial_m\) seine räumlichen Komponenten sind. Er gehört in den vierdimensionalen Tensor. \lecturetimestamp{01:05:10}}
+\end{classroomqa}
+
+Die Vorlesung nutzt diesen Moment, um die Lokalität noch einmal zu betonen. Eine lokale Gleichung verknüpft die Beschleunigung an einem Ereignis mit dem Feld und der Geschwindigkeit an diesem Ereignis. Sie verknüpft die Beschleunigung jetzt nicht mit einer Kraft zu einem entfernten Zeitpunkt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_15.png}
+\caption{Die kovariante Kraftgleichung, mit der Lokalität als Differentialdynamik noch einmal formuliert wird.}
+\lectureframe{01:05:50}
+\end{figure}
+
+\subsection{Die elektromagnetischen Komponenten darstellen}
+
+Für den Tensor mit ausschließlich oberen Indizes ergibt die an der Tafel verwendete Konvention
+\begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_x&-E_y&-E_z\\
+E_x&0&B_z&-B_y\\
+E_y&-B_z&0&B_x\\
+E_z&B_y&-B_x&0
+\end{pmatrix}.
+\label{eq:sr7-F-matrix}
+\end{equation}
+Der Zeilenindex ist \(\mu\), der Spaltenindex \(\nu\). Die gemischten Zeit--Raum-Einträge enthalten das elektrische Feld; der Raum--Raum-Block enthält das magnetische Feld. Wegen der Antisymmetrie sind die Diagonaleinträge null, sodass von den sechzehn dargestellten Einträgen nur sechs unabhängig sind.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_16.png}
+\caption{Der vollständige elektromagnetische Tensor mit den elektrischen Einträgen an den Zeit--Raum-Stellen und den magnetischen Einträgen im räumlichen Block.}
+\lectureframe{01:12:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Gibt es eine Standardregel dafür, welcher Tensorindex die Zeilen und welcher die Spalten bezeichnet?}
+\lecturerresponse{Das ist eine Konvention für die Darstellung. Hier läuft der erste Index \(\mu\) vertikal und der zweite Index \(\nu\) horizontal. Ist diese Konvention einmal angegeben, lässt sich jede Komponente eindeutig ablesen. Einen Zeitindex zu heben bringt ein Vorzeichen mit sich, ändert aber nicht die Konvention für Zeilen und Spalten. --\lecturetimestamp{01:09:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Welche Indexstellungen erhalten die Antisymmetrie?}
+\lecturerresponse{Die Tensoren \(F_{\mu\nu}\) und \(F^{\mu\nu}\) sind antisymmetrisch. Die gemischte Anordnung \(F^\mu{}_\nu\) ist bei gewöhnlicher Matrixtransposition nicht antisymmetrisch: Das Heben eines Zeitindex ändert die elektrischen Einträge, sodass das Zeit--Raum-Paar symmetrisch wird, während der rein räumliche magnetische Block antisymmetrisch bleibt. Der Dozent kommt zu diesem Schluss, nachdem er die entgegengesetzte Möglichkeit an der Tafel kurz geprüft und verworfen hat. \lecturetimestamp{01:13:18}}
+\end{classroomqa}
+
+\section{Was gilt als Invarianz?}
+
+Erst jetzt kehren wir zum vierten Prinzip zurück. Eine Invarianz ist eine Änderung, die die Bewegungsgleichungen unverändert lässt. Die Wirkung selbst kann exakt unverändert bleiben oder sich um einen Randterm ändern, der keinen Einfluss auf die Variationsgleichungen hat.
+
+\subsection{Konstante Verschiebungen eines masselosen Skalarfeldes}
+
+Betrachten wir die Gleichung eines masselosen Skalarfeldes in einer Raumdimension,
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
+=0,
+\label{eq:sr7-wave}
+\end{equation}
+Sie ergibt sich aus
+\begin{equation}
+\mathcal L_0
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi.
+\label{eq:sr7-massless-L}
+\end{equation}
+Ist \(\phi\) eine Lösung, dann ist auch
+\begin{equation}
+\phi\longrightarrow\phi+c,
+\label{eq:sr7-constant-shift}
+\end{equation}
+eine Lösung, wobei \(c\) konstant ist. Jede Ableitung von \(c\) verschwindet, daher ändern sich weder die Gleichung noch die nur von Ableitungen abhängige Lagrangefunktion.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_17.png}
+\caption{Die masselose Wellengleichung, ihre Lagrangefunktion mit Ableitungen und die konstante Verschiebung \(\phi\mapsto\phi+c\).}
+\lectureframe{01:17:10}
+\end{figure}
+
+Nun ergänzen wir einen Massenterm:
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
++\mu^2\phi
+=0,
+\end{equation}
+\begin{equation}
+\mathcal L_\mu
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi
+-\frac{\mu^2}{2}\phi^2.
+\label{eq:sr7-massive-L}
+\end{equation}
+Der Ableitungsterm bleibt unter \(\phi\mapsto\phi+c\) unverändert, \(\phi^2\) dagegen nicht. Beide Theorien sind zulässig; die eine besitzt die Verschiebungsinvarianz, die andere nicht.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_18.png}
+\caption{Der Massenterm, der die Invarianz unter konstanten Verschiebungen bricht.}
+\lectureframe{01:18:50}
+\end{figure}
+
+\subsection{Ein Student nimmt den Randterm vorweg}
+
+Ein Zuhörer schlägt einen präziseren Test vor:
+\begin{equation}
+\phi(x,t)\longrightarrow\phi(x,t)+x.
+\label{eq:sr7-linear-shift}
+\end{equation}
+Die zweiten Ableitungen von \(x\) verschwinden, daher erfüllt das masselose Feld weiterhin die Wellengleichung. Die Wirkung muss genauer betrachtet werden. Da \(x\) und \(t\) unabhängige Variablen sind, gilt
+\begin{equation}
+\frac{\partial x}{\partial t}=0,
+\qquad
+\frac{\partial x}{\partial x}=1.
+\end{equation}
+Der räumliche Anteil ändert sich gemäß
+\begin{align}
+-\frac12
+\left[
+\partial_x(\phi+x)
+\right]^2
+&=
+-\frac12
+\left(
+\partial_x\phi+1
+\right)^2
+\notag\\
+&=
+-\frac12(\partial_x\phi)^2
+-\partial_x\phi
+-\frac12.
+\label{eq:sr7-linear-shift-L}
+\end{align}
+Die neuen Beiträge sind eine Konstante und eine totale Ableitung. Die Konstante ändert die Euler--Lagrange-Gleichung nicht. Das Integrieren von \(\partial_x\phi\) liefert nur räumliche Randwerte und lässt die Bewegungsgleichung unter den üblichen Bedingungen fester Randwerte ebenfalls unverändert.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_19.png}
+\caption{Die vorgeschlagene Verschiebung \(\phi\mapsto\phi+x\) und das Ableitungsquadrat, aus dem eine Konstante und eine totale Ableitung hervorgehen.}
+\lectureframe{01:22:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Erhält \(\phi\mapsto\phi+x\) die Bewegungsgleichung des masselosen Feldes, obwohl sich die Lagrangedichte ändert?}
+\lecturerresponse{Ja. Die zweiten Ableitungen von \(x\) verschwinden, daher bleibt die Gleichung unverändert. Die Lagrangefunktion ändert sich nur um eine Konstante und eine totale räumliche Ableitung. Diese ändern den Zahlenwert der Wirkung um eine feste Volumenkonstante und um Randwerte, nicht aber die Euler--Lagrange-Gleichung bei festen Randbedingungen. \lecturetimestamp{01:20:00}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum ist \(\partial x/\partial t\) null?}
+\lecturerresponse{Weil \(x\) und \(t\) unabhängige Koordinaten der Feldbeschreibung sind. Bei einer partiellen Ableitung nach \(t\) wird \(x\) konstant gehalten. \lecturetimestamp{01:22:22}}
+\end{classroomqa}
+
+Der Student ist damit auf das Hilfsmittel gestoßen, das wir für den Elektromagnetismus brauchen: Eine totale Ableitung kann die geschriebene Wirkung ändern, ohne ihre stationären Bahnen zu ändern.
+
+\section{Eichinvarianz des geladenen Teilchens}
+
+\subsection{Einen Vierergradienten hinzufügen}
+
+Kehren wir zur Wechselwirkung zurück:
+\begin{equation}
+I_{\mathrm{int}}
+=
+-e\int A_\mu\,dx^\mu.
+\end{equation}
+Sei \(\Lambda(x)\) ein hinreichend glatter Skalar, und ändern wir das Potential gemäß
+\begin{equation}
+A_\mu
+\longrightarrow
+A'_\mu
+=
+A_\mu+\partial_\mu\Lambda.
+\label{eq:sr7-gauge-transformation}
+\end{equation}
+Der Gradient \(\partial_\mu\Lambda\) hat dieselbe kovariante Indexstruktur wie \(A_\mu\), daher ist die Summe wohldefiniert.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_20.png}
+\caption{Die Kopplung entlang der Weltlinie und die Transformation \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\).}
+\lectureframe{01:24:50}
+\end{figure}
+
+Die Änderung der Wirkung ist
+\begin{align}
+\Delta I_{\mathrm{int}}
+&=
+-e\int \partial_\mu\Lambda\,dx^\mu
+\notag\\
+&=
+-e\int d\Lambda
+\notag\\
+&=
+-e\left[
+\Lambda(x_2)-\Lambda(x_1)
+\right].
+\label{eq:sr7-gauge-boundary}
+\end{align}
+Entlang jedes infinitesimalen Weltliniensegments ist
+\(\partial_\mu\Lambda\,dx^\mu\) genau das Inkrement
+\(d\Lambda\). Durch Addition der Inkremente teleskopiert die Summe zur Differenz zwischen den Werten an den Endpunkten, dem Anfangs- und dem Endpunkt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_21.png}
+\caption{Die entlang des Weges integrierte Gradientenkontribution ergibt die Differenz der Endpunktwerte \(\Lambda(x_2)-\Lambda(x_1)\).}
+\lectureframe{01:28:10}
+\end{figure}
+
+Das Variationsprinzip vergleicht benachbarte Trajektorien, wobei \(x_1\) und
+\(x_2\) festgehalten werden. Der zusätzliche Term in \eqref{eq:sr7-gauge-boundary} ist
+daher für jede zulässige Variation derselbe:
+\begin{equation}
+\delta\Delta I_{\mathrm{int}}=0.
+\end{equation}
+Die stationäre Trajektorie bleibt unverändert. Dies ist Eichinvarianz als Aussage über die Endpunkte.
+
+\begin{classroomqa}
+\audiencequestion{Darf \(\Lambda\) eine beliebige Skalarfunktion sein?}
+\lecturerresponse{Ja, sofern sie die für die Ableitungen und die Wirkung erforderlichen Glattheits- und Randbedingungen erfüllt. Die Transformation ist lokal, weil der Parameter eine beliebige Funktion der Raumzeit ist und nicht bloß eine einzige globale Konstante. \lecturetimestamp{01:28:40}}
+\end{classroomqa}
+
+Das Hinzufügen eines Gradienten zu \(A_\mu\) heißt Eichtransformation. Das Wort „Eichung“ ist historisch überliefert; in der Vorlesung wird mit Humor, aber nachdrücklich davor gewarnt, es auszusprechen, als wäre es ein französisches Wort. Wichtiger als die Bezeichnung ist die Operation.
+
+\subsection{Der direkte Beweis mit dem Feldtensor}
+
+Die Bewegungsgleichungen hängen von \(F_{\mu\nu}\) ab, nicht vom Potential allein. Unter \eqref{eq:sr7-gauge-transformation} gilt:
+\begin{align}
+F'_{\mu\nu}
+&=
+\partial_\mu
+\left(
+A_\nu+\partial_\nu\Lambda
+\right)
+-
+\partial_\nu
+\left(
+A_\mu+\partial_\mu\Lambda
+\right)
+\notag\\
+&=
+F_{\mu\nu}
++
+\partial_\mu\partial_\nu\Lambda
+-
+\partial_\nu\partial_\mu\Lambda
+\notag\\
+&=
+F_{\mu\nu}.
+\label{eq:sr7-F-gauge-invariant}
+\end{align}
+Für ein glattes Skalarfeld in gewöhnlicher flacher Raumzeit vertauschen partielle Ableitungen miteinander. Die beiden zusätzlichen Terme heben sich auf. Somit sind der Feldtensor, die darin enthaltenen elektrischen und magnetischen Felder sowie das Kraftgesetz eichinvariant.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_22.png}
+\caption{Die beiden bei einer Eichtransformation entstehenden zweiten Ableitungen heben sich auf, weil partielle Ableitungen miteinander vertauschen.}
+\lectureframe{01:33:50}
+\end{figure}
+
+Die beiden Beweise schließen denselben Kreis aus entgegengesetzten Richtungen. Die Wirkung ändert sich nur an den festgehaltenen Endpunkten, während die Gleichungen allein vom unveränderten Feldtensor abhängen.
+
+\section{Was die Redundanz bedeutet}
+
+\subsection{Warum ein nicht eindeutiges Objekt beibehalten?}
+
+Der naheliegende Einwand liegt auf der Hand. Wenn \(A_\mu\) nicht eindeutig ist, warum haben wir es dann eingeführt? Weil es für die lokale Lorentz-invariante Wirkung unverzichtbar ist, obwohl seine Komponentenwerte redundante Information enthalten. Viele Potentiale stellen dasselbe elektromagnetische Feld dar:
+\begin{equation}
+A_\mu
+\sim
+A_\mu+\partial_\mu\Lambda.
+\end{equation}
+Die Äquivalenzklasse ist physikalisch; einen bestimmten Repräsentanten zu wählen, ist eine Entscheidung über die Beschreibung.
+
+\begin{classroomqa}
+\audiencequestion{Hat eine Änderung der Eichung praktischen Nutzen?}
+\lecturerresponse{Ja. Ein geeignetes \(\Lambda\) kann eine Komponente des Potentials vereinfachen oder ein Merkmal eines Problems deutlich hervortreten lassen. Lokal und bei geeigneten Randbedingungen kann man oft eine Eichung wählen, in der eine ausgewählte Komponente, einschließlich \(A_0\), verschwindet. Eine andere Eichung kann ein anderes Merkmal deutlicher zeigen. \lecturetimestamp{01:35:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist Eichinvarianz damit vergleichbar, dasselbe Experiment aus zwei Lorentz-Bezugssystemen zu beschreiben?}
+\lecturerresponse{Nein. Lorentz-Transformationen vergleichen physikalisch bedeutsame Bezugssysteme, die von verschiedenen Beobachtern mitgeführt werden. Eichtransformationen sind Redundanzen innerhalb einer Beschreibung: Verschiedene Potentiale kodieren dasselbe Feld. Mathematisch sind beides Invarianzen, ihre Deutungen unterscheiden sich jedoch. \lecturetimestamp{01:37:07}}
+\end{classroomqa}
+
+Es gibt auch einen strukturellen Unterschied. Bei einer Drehung verwendet man einen festen globalen Winkel; gewöhnlich dreht man die Achsen nicht an jedem Punkt um jeweils einen anderen Winkel. Eine Eichtransformation wird durch die gesamte Funktion \(\Lambda(x)\) parametrisiert. Diese ortsabhängige Freiheit macht sie zu einer lokalen Eichinvarianz.
+
+\begin{classroomqa}
+\audiencequestion{Ist das Hinzufügen eines Gradienten die allgemeine Definition von Eichinvarianz?}
+\lecturerresponse{Für die abelsche elektromagnetische Theorie ist dies die Transformation. Yang--Mills-Theorien besitzen eine ausgefeiltere, nichtabelsche Version, in der das Potential zusätzliche innere Struktur trägt. Die Grundidee bleibt jedoch erhalten: Verschiedene lokale Beschreibungen stellen dieselbe Physik dar. \lecturetimestamp{01:39:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist eine Eichtransformation lediglich ein mathematisches Hilfsmittel, um verschiedene Aspekte eines Problems hervorzuheben?}
+\lecturerresponse{Sie ist ein nützliches Hilfsmittel für Rechnungen und die Interpretation, doch ihre Rolle ist begrenzt: Sie kann die Gleichungen vereinfachen oder eine Eigenschaft sichtbar machen, aber keine eichinvariante Vorhersage ändern.
+\lecturetimestamp{01:40:22}}
+\end{classroomqa}
+
+\subsection{Andere Felder und andere Potentiale}
+
+Eichpotentiale in anderen Theorien werden ebenfalls üblicherweise mit \(A\) bezeichnet und tragen einen Raumzeitindex \(\mu\). Sie unterscheiden sich durch zusätzliche innere Struktur, die mit anderen Symmetrien verbunden ist. Die Vorlesung stellt diese Struktur zurück, anstatt voreilig eine Formel anzugeben.
+
+\begin{classroomqa}
+\audiencequestion{Wie sehen die Vektorpotentiale anderer Feldtheorien aus?}
+\lecturerresponse{Sie verhalten sich weiterhin wie Raumzeitvektoren und werden üblicherweise als \(A_\mu\) geschrieben, tragen aber zusätzliche Indizes und algebraische Struktur, die mit inneren Symmetrien verbunden sind. Damit beginnt die Yang--Mills-Theorie, auf die hier bewusst später eingegangen wird. \lecturetimestamp{01:41:02}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist es wirklich unmöglich, die lokale Lorentz-invariante Wirkung eines geladenen Teilchens direkt mit \(\mathbf E\) und \(\mathbf B\) zu formulieren?}
+\lecturerresponse{Unter den hier genannten Voraussetzungen: ja. Die Vorlesung stellt dies als Satz dar und beweist ihn nicht. Die Forderung, das Wirkungsprinzip, die Lokalität und die Lorentz-Invarianz zu bewahren, erzwingt die Einführung des Potentials; anschließend tritt die Eichredundanz automatisch auf.
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\subsection{Was lässt sich messen?}
+
+Ein lokaler Wert von \(A_\mu\) allein ist nicht eichinvariant. Würde eine physikalische Messung diesen Wert eindeutig bestimmen, würde eine Änderung um \(\partial_\mu\Lambda\) ein physikalisches Ergebnis verändern, im Widerspruch zu der eben bewiesenen Invarianz. Messbare Vorhersagen müssen aus eichinvarianten Größen gebildet werden, etwa aus \(F_{\mu\nu}\) in der vorliegenden klassischen Diskussion.
+
+\begin{classroomqa}
+\audiencequestion{Warum entscheidet sich die Natur so beharrlich für Eichtheorien?}
+\lecturerresponse{Auf klassischer Ebene gibt die Vorlesung darauf keine endgültige Antwort. Die Quantenmechanik eröffnet eine tiefere Perspektive, doch auch dort ist die allgemeine Antwort nicht vollständig geklärt. Schon jetzt treten die ungewöhnliche Schönheit, Symmetrie und Ökonomie von Theorien hervor, die durch Eichredundanz organisiert sind.
+\lecturetimestamp{01:43:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann das Vektorpotential selbst gemessen werden?}
+\lecturerresponse{Nicht als lokaler, eichabhängiger Komponentenwert. Eine Messung ist ein physikalischer Vorgang, und jede physikalische Vorhersage muss unempfindlich gegenüber \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\) sein. Messbar sind eichinvariante Eigenschaften des Potentials und des Feldes.
+\lecturetimestamp{01:44:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Was geschieht, wenn \(A_\mu\) um etwas geändert wird, das kein Gradient ist?}
+\lecturerresponse{Im Allgemeinen ändert sich \(F_{\mu\nu}\), sodass die Änderung nachweisbar ist. Ein reines Eichpotential \(A_\mu=\partial_\mu\Lambda\) hat dagegen \(F_{\mu\nu}=0\) und übt keine elektromagnetische Kraft aus; ein freies Teilchen bewegt sich dann auf einer geraden Weltlinie. \lecturetimestamp{01:45:22}}
+\end{classroomqa}
+
+Eichinvarianz ist somit kein entbehrlicher Kunstgriff. Elektrodynamik, Yang--Mills-Theorie, das Standardmodell und die Gravitation weisen alle Eichredundanzen der einen oder anderen Art auf. Das Muster ist ungewöhnlich: Eine Hilfsgröße ist erforderlich, um die Theorie zu formulieren, doch ein Teil dieser Größe kann geändert werden, ohne die Physik zu verändern. Gerade diese Besonderheit verleiht dem Muster seine ordnende Kraft.
+
+\section{Die Logik der Eichinvarianz}
+
+Die Vorlesung ist bewusst einen indirekten Weg gegangen. Zunächst haben wir die Sprache mit oberen--unteren Indizes wieder eingeführt, denn skalare Kontraktionen bilden die Grammatik Lorentz-invarianter Wirkungen. Anschließend haben wir vier Prinzipien genannt: Wirkung, Lokalität, Lorentz-Invarianz und Eichinvarianz. Das vierte blieb undefiniert, während die Rechnung für das geladene Teilchen neu aufgebaut wurde.
+
+Diese Rechnung begann mit der lokalen skalaren Wirkung
+\begin{equation}
+I
+=
+-m\int d\tau
+-e\int A_\mu dx^\mu,
+\end{equation}
+führte über die Lagrange-Funktion in gewöhnlicher Zeit und sämtliche Euler--Lagrange-Ableitungen und ergab wieder die elektrische und magnetische Lorentz-Kraft. Die Eigenzeit fügte das Ergebnis dann zu
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu,
+\qquad
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{equation}zusammen.
+
+Die Beispiele mit Skalarfeldern bereiteten den letzten Schritt vor: Eine totale Ableitung kann eine Wirkung nur über Randterme verändern. Folglich
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\Lambda
+\end{equation}
+ändert sich die Wirkung entlang der Weltlinie nur um feste Werte an den Endpunkten; \(F_{\mu\nu}\) bleibt unverändert, weil gemischte partielle Ableitungen miteinander vertauschen. Das Vektorpotential ist daher notwendig, aber nicht eindeutig. Eichinvarianz besagt, dass diese Nichteindeutigkeit zur Beschreibung gehört und nicht zur Physik.

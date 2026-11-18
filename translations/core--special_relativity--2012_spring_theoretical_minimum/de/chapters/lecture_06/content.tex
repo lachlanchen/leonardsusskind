@@ -1,0 +1,546 @@
+\chapter{Tensoren und die relativistische Lorentzkraft}
+
+Heute Abend wenden wir uns von Skalarfeldern der Elektrodynamik zu. Die vorangegangene Diskussion hat ein nützliches Muster erkennen lassen: Eine einzige Wirkung beschreibt sowohl, wie ein Feld auf ein Teilchen wirkt, als auch, wie das Teilchen auf das Feld zurückwirkt. Dieses Muster werden wir schließlich auf das elektromagnetische Feld anwenden; zunächst benötigen wir jedoch eine Notation, die die Symmetrie der Rechnung sichtbar macht.
+
+Diese Vorarbeit ist keine bloße Zierde. Ein Minuszeichen, eine Null, ein Gleichheitszeichen und die Vektornotation fassen jeweils eine Idee zusammen, die andernfalls immer wieder in Worten ausgedrückt werden müsste. Die Tensor-Notation leistet dasselbe für die Relativitätstheorie. Sobald obere und untere Indizes, Kontraktionen und Transformationsgesetze eingeführt sind, fügen sich die elektrischen und magnetischen Kräfte zu einer einzigen vierdimensionalen Gleichung zusammen.
+
+\section{Vierervektoren und die Ökonomie der Indizes}
+
+\subsection{Obere und untere Komponenten}
+
+Griechische Indizes laufen über alle vier Raumzeitkoordinaten, lateinische Indizes dagegen nur über die drei räumlichen Koordinaten: \begin{equation}
+\mu,\nu,\rho,\sigma=0,1,2,3,
+\qquad
+m,n=1,2,3.
+\end{equation}Ein allgemeiner kontravarianter Vierervektor ist \(A^\mu=(A^0,A^1,A^2,A^3)\). Mit der hier verwendeten Konvention gilt \begin{equation}
+\eta_{\mu\nu}
+=
+\begin{pmatrix}
+-1&0&0&0\\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+A_\mu=\eta_{\mu\nu}A^\nu .
+\label{eq:sr6-metric-lowering}
+\end{equation}. Das Absenken eines Index ändert also das Vorzeichen der Zeitkomponente, lässt die räumlichen Komponenten aber unverändert: \begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m.
+\label{eq:sr6-component-lowering}
+\end{equation}In der flachen Raumzeit besteht diese Operation lediglich darin; in der allgemeinen Relativitätstheorie erhält dieselbe Notation jedoch eine weiterreichende geometrische Bedeutung.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_01.png}\caption{Die Minkowski-Metrik und die Komponentenregel zum Absenken eines Vierervektorindex.}\lectureframe{00:07:45}\end{figure}
+
+Wir verwenden Einsteins Summenkonvention, wenn ein Index einmal oben und einmal unten wiederholt wird. Die Kontraktion \begin{equation}
+A_\mu B^\mu
+=
+-A^0B^0+A^1B^1+A^2B^2+A^3B^3
+\label{eq:sr6-vector-contraction}
+\end{equation} ist daher ein Skalar. Hat eine Summe nicht diese Form mit einem wiederholten oberen und unteren Index, -- schreiben wir das Summenzeichen ausdrücklich hin.
+
+\subsection{Die Ableitung trägt einen unteren Index}
+
+Die vier Ableitungsoperatoren werden zusammengefasst zu \begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\end{equation}. Auf ein Skalarfeld \(\phi(x)\) angewandt, bilden sie den kovarianten Vektor \(\partial_\mu\phi\). Die Indexstellung lässt sich am schnellsten an einer infinitesimalen Verschiebung erkennen: \begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr6-total-differential}
+\end{equation}Die linke Seite ist die Differenz der Skalarwerte an benachbarten Ereignissen und somit selbst ein Skalar. Da \(dx^\mu\) kontravariant ist, muss das Objekt, mit dem es kontrahiert wird, kovariant sein.
+
+\begin{classroomqa}\audiencequestion{Wenn \(x^\mu\) einen oberen Index hat, warum ergibt die Ableitung nach \(x^\mu\) einen unteren Index?}\lecturerresponse{Weil die differentielle Änderung \(d\phi=\partial_\mu\phi\,dx^\mu\) ein Skalar ist. Eine kontravariante Verschiebung kann diesen Skalar nur durch Kontraktion mit einem kovarianten Gradienten ergeben. Die Stellung des Ableitungsindex wird also durch sein Transformationsgesetz festgelegt, nicht allein durch die Schreibweise des Bruchs. \lecturetimestamp{00:10:10}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_02.png}\caption{Das skalare Differential \(d\phi\) weist \(\partial_\mu\phi\) als kovarianten Vektor aus.}\lectureframe{00:11:05}\end{figure}
+
+Dieselbe Regel liefert einen weiteren Skalar. Ist \(B^\mu(x)\) ein Vierervektorfeld, so ist \begin{equation}
+\partial_\mu B^\mu
+\label{eq:sr6-four-divergence}
+\end{equation} seine Viererdivergenz. Sie verbindet die Zeitableitung der Zeitkomponente mit den drei räumlichen Ableitungen der entsprechenden räumlichen Komponenten.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}\caption{Zwei skalare Kontraktionen: \(A_\mu B^\mu\) und die Viererdivergenz \(\partial_\mu B^\mu(x)\).}\lectureframe{00:14:00}\end{figure}
+
+All dies hat ein Analogon im dreidimensionalen Raum. Im euklidischen dreidimensionalen Raum ist die Metrik die Einheitsmatrix, sodass das Heben oder Senken eines lateinischen Index nichts ändert. Daher werden wir räumliche Indizes bei Bedarf nach oben oder unten verschieben, Raumzeitindizes aber weiterhin sorgfältig unterscheiden.
+
+\section{Lorentz-Transformationen in Matrixform}
+
+Skalare und Vektoren werden durch die Art definiert, wie sie sich transformieren. Ein Skalar behält denselben Wert, während ein kontravarianter Vierervektor dem Gesetz \begin{equation}
+(A^\mu)'=L^\mu{}_\nu A^\nu.
+\label{eq:sr6-vector-transform}
+\end{equation} folgt. Der sichtbare Index \(\mu\) ist frei und steht auf beiden Seiten. Der wiederholte Index \(\nu\) wird summiert und fällt in der endgültigen Komponentengleichung weg.
+
+Hier umfasst eine \emph{Lorentz-Transformation} sowohl räumliche Drehungen als auch Boosts. Ein Boost kann entlang jeder Achse gerichtet sein; durch Kombination von Drehungen und Boosts lässt sich eine allgemeine Transformation erzeugen. Eine räumliche Drehung für sich verändert die Zeitkoordinate nicht.
+
+\begin{classroomqa}\audiencequestion{Bleibt die Zeit bei einer Drehung des Raums völlig unbeeinflusst?}\lecturerresponse{Ja. Bei einer gewöhnlichen räumlichen Drehung bleibt die Zeitkomponente unverändert. Solche Drehungen gehören zur Lorentz-Gruppe, ebenso wie Transformationen, die Zeit und Raum miteinander vermischen. \lecturetimestamp{00:16:27}}\end{classroomqa}
+
+Für einen Boost mit Geschwindigkeit \(v\) entlang der \(x\)-Achse und mit \(c=1\) gilt \begin{equation}
+L^\mu{}_\nu
+=
+\begin{pmatrix}
+\gamma&-\gamma v&0&0\\
+-\gamma v&\gamma&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr6-boost-matrix}
+\end{equation}. Multiplikation mit \((t,x,y,z)^{\mathsf T}\) ergibt \begin{equation}
+\begin{aligned}
+t'&=\gamma(t-vx),\\
+x'&=\gamma(x-vt),\\
+y'&=y,\\
+z'&=z.
+\end{aligned}
+\end{equation}. Beim Vervollständigen der Matrix trägt die Lehrperson die Nullen und die beiden Einträge gleich eins an der Tafel ein.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}\caption{Die Boostmatrix in \(x\)-Richtung wirkt auf die Spalte \((t,x,y,z)^{\mathsf T}\).}\lectureframe{00:21:35}\end{figure}
+
+Eine Drehung um den Winkel \(\theta\) in der \(y\)--\(z\)-Ebene hat dagegen die Form \begin{equation}
+R_{yz}(\theta)
+=
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&\cos\theta&\sin\theta\\
+0&0&-\sin\theta&\cos\theta
+\end{pmatrix}.
+\label{eq:sr6-yz-rotation}
+\end{equation}. Sie besagt \begin{equation}
+y'=y\cos\theta+z\sin\theta,
+\qquad
+z'=-y\sin\theta+z\cos\theta,
+\end{equation}, während \(t\) und \(x\) unverändert bleiben. Produkte von Matrizen wie \eqref{eq:sr6-boost-matrix} und \eqref{eq:sr6-yz-rotation} erzeugen allgemeinere Lorentz-Transformationen.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}\caption{Eine reine Drehung in der \(y\)--\(z\)-Ebene; \(t\) und \(x\) bleiben unverändert.}\lectureframe{00:23:10}\end{figure}
+
+Ein kovarianter Vektor transformiert sich mit einer Matrix, deren Indexstellung entgegengesetzt ist: \begin{equation}
+(A_\mu)'=M_\mu{}^\nu A_\nu.
+\label{eq:sr6-covector-transform}
+\end{equation}Eine Korrektur aus dem Publikum an der Tafel macht auf einen vorübergehend doppelt auftretenden freien Index aufmerksam: Der nicht summierte Index \(\mu\) auf der linken Seite muss auch auf der rechten Seite der nicht summierte Index sein. Die beiden Matrizen beschreiben dieselbe physikalische Änderung des Bezugssystems und hängen durch \begin{equation}
+M=\eta L\eta,
+\qquad
+\eta^{-1}=\eta.
+\label{eq:sr6-M-L-relation}
+\end{equation} zusammen. Die letzte Identität folgt unmittelbar daraus, dass jeder Diagonaleintrag von \(\eta\) sein eigenes Inverses ist.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}\caption{Kontravariante und kovariante Transformationsgesetze, verknüpft durch \(M=\eta L\eta\).}\lectureframe{00:25:20}\end{figure}
+
+Damit steht nun die zentrale Idee zur Verfügung: Ein Vierervektor ist ein Objekt, dessen Komponenten sich parallel zu den Raumzeitkoordinaten transformieren.
+
+\section{Tensoren: eine Transformation für jeden Index}
+
+\subsection{Von Vektorprodukten zur Definition}
+
+Ein Skalar ist ein Tensor vom Rang null, ein Vektor ein Tensor vom Rang eins und ein Objekt mit zwei Indizes ein Tensor vom Rang zwei. Beginnen wir mit zwei Vektoren und bilden \begin{equation}
+T^{\mu\nu}=A^\mu B^\nu.
+\label{eq:sr6-simple-tensor}
+\end{equation}. Es gibt \(4\times4=16\) Komponenten. Sie reichen von \(A^0B^0\) und \(A^0B^1\) bis \(A^3B^3\). Das Symbol \(T^{\mu\nu}\) bezeichnet das gesamte Array, nicht eine einzelne Zahl.
+
+Transformiert man jeden Vektor für sich, erhält man \begin{align}
+(A^\mu)'&=L^\mu{}_\sigma A^\sigma,\\
+(B^\nu)'&=L^\nu{}_\tau B^\tau,
+\end{align} und damit \begin{equation}
+(T^{\mu\nu})'
+=
+L^\mu{}_\sigma L^\nu{}_\tau T^{\sigma\tau}.
+\label{eq:sr6-rank-two-transform}
+\end{equation}. Jeder Tensorindex erhält seine eigene Lorentz-Matrix. Die Summationsindizes \(\sigma\) und \(\tau\) dürfen beliebig umbenannt werden, sofern jedes Indexpaar konsistent bleibt.
+
+\begin{classroomqa}\audiencequestion{Setzt diese Umordnung voraus, dass die Matrizen und Vektorkomponenten kommutieren?}\lecturerresponse{Es handelt sich um gewöhnliche klassische Zahlen, nicht um nichtkommutierende Quantenoperatoren; daher kommutieren sie. Außerdem wirkt auf beide Indizes dieselbe Lorentz-Matrix. Bei dieser Rechnung gibt es kein Problem mit der Reihenfolge. \lecturetimestamp{00:31:56}}\end{classroomqa}
+
+Die Regel lässt sich unmittelbar auf Rang drei erweitern: \begin{equation}
+(T^{\mu\nu\lambda})'
+=
+L^\mu{}_\sigma
+L^\nu{}_\tau
+L^\lambda{}_\kappa
+T^{\sigma\tau\kappa},
+\label{eq:sr6-rank-three-transform}
+\end{equation}und entsprechend auf beliebigen Rang. Dieses Transformationsgesetz, nicht eine bestimmte Zerlegung in Vektoren, ist die Definition eines Tensors. Zum Beispiel ist \begin{equation}
+A^\mu B^\nu+C^\mu D^\nu
+\end{equation} weiterhin ein Tensor, obwohl sich dieser Ausdruck im Allgemeinen nicht als ein einziges Produkt zweier Vektoren schreiben lässt.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}\caption{Die Tafel führt vom Produkt zweier Vektoren zu den Transformationsgesetzen für Tensoren zweiten und dritten Rangs.}\lectureframe{00:33:20}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Was bedeutet die Multiplikation eines Tensors zweiten Rangs mit Matrizen, komponentenweise betrachtet?}\lecturerresponse{Man hält die beiden Ausgabeindizes fest und summiert über die beiden verborgenen Indizes. Zum Beispiel gilt \[
+(T^{31})'=L^3{}_\sigma L^1{}_\tau T^{\sigma\tau}.
+\]. Da \(\sigma\) und \(\tau\) jeweils vier Werte annehmen, enthält diese eine Ausgabekomponente sechzehn Terme. \lecturetimestamp{00:34:35}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}\caption{Die Entwicklung der festgehaltenen Komponente \((T^{31})'\) macht die beiden unabhängigen Summen explizit.}\lectureframe{00:35:55}\end{figure}
+
+Tensor-Gleichungen haben einen entscheidenden Vorteil. Haben zwei Tensoren in einem Bezugssystem gleiche Komponenten, so sind sie aufgrund des Transformationsgesetzes in jedem Bezugssystem gleich. Äquivalent dazu gilt: Verschwinden in einem Bezugssystem alle Komponenten eines Tensors, so verschwindet der gesamte Tensor in jedem Bezugssystem. Eine verschwindende Komponente genügt nicht; alle Komponenten müssen verschwinden. Deshalb überträgt eine Gleichung zwischen Tensoren ihre Gültigkeit von einem Inertialsystem auf ein anderes.
+
+\subsection{Tensorindizes heben und senken}
+
+Ein Tensorindex wird genau wie ein Vektorindex gesenkt: \begin{equation}
+T^\mu{}_\nu=T^{\mu\sigma}\eta_{\sigma\nu}.
+\label{eq:sr6-tensor-lowering}
+\end{equation}Für die diagonale Metrik in \eqref{eq:sr6-metric-lowering} trägt jeder gesenkte Zeitindex ein Minuszeichen bei. Folglich gilt \begin{equation}
+T_{00}=T^{00},
+\qquad
+T_{01}=-T^{01}.
+\label{eq:sr6-tensor-component-signs}
+\end{equation}. In der ersten Gleichheit treten zwei Vorzeichenwechsel auf, in der zweiten nur einer.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}\caption{Beispiele für das Senken zweier Tensorindizes: Zwei Zeitindizes ergeben zwei Minuszeichen, ein Zeitindex ergibt eines.}\lectureframe{00:41:00}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Warum ist es nützlich, sowohl kovariante als auch kontravariante Formen beizubehalten? Geht es dabei um mehr als eine kompakte Notation?}\lecturerresponse{Für die vorliegende Rechnung besteht der unmittelbare Vorteil in der kompakten Kontraktion und dem automatischen Umgang mit den Minkowski-Vorzeichen. Es gibt einen tiefer gehenden geometrischen Unterschied zwischen Vektoren und Kovektoren, der sich aber besser im Rahmen der allgemeinen Relativitätstheorie behandeln lässt. In der flachen Raumzeit sind die Indexregeln so effizient, dass man üblicherweise direkt mit ihnen arbeitet. \lecturetimestamp{00:41:26}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Hat ein Tensor immer vier Komponenten, oder ist das eine Besonderheit der Relativitätstheorie?}\lecturerresponse{Der Wertebereich jedes Index wird durch die Dimension des Raums festgelegt. Ein Tensor ersten Rangs in der vierdimensionalen Raumzeit hat vier Komponenten, ein Tensor zweiten Rangs sechzehn. In drei Dimensionen sind es entsprechend drei und neun. Die Tensorregel selbst ist unabhängig von der Dimension. \lecturetimestamp{00:42:55}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Lassen sich kovariante und kontravariante Objekte auch geometrischer beschreiben?}\lecturerresponse{Ja, sie haben eine geometrische Interpretation; würde man sie jetzt weiterverfolgen, müsste die Elektrodynamik jedoch noch weiter aufgeschoben werden. Für diesen Kurs genügen die Transformations- und Indexmanipulationsregeln; in der allgemeinen Relativitätstheorie wird der geometrische Unterschied unvermeidlich. \lecturetimestamp{00:43:51}}\end{classroomqa}
+
+\section{Symmetrie, Antisymmetrie und der elektromagnetische Tensor}
+
+Bei einem allgemeinen Tensor zweiten Rangs ändert sich die Komponente, wenn man die Indizes vertauscht: \begin{equation}
+T^{\mu\nu}\neq T^{\nu\mu}.
+\end{equation}Tatsächlich sind \(A^\mu B^\nu\) und \(A^\nu B^\mu\) im Allgemeinen verschieden; die konkreten Komponenten \(A^0B^1\) und \(A^1B^0\) müssen nicht übereinstimmen.
+
+Es gibt zwei wichtige Spezialfälle. Ein symmetrischer Tensor erfüllt \begin{equation}
+T^{\mu\nu}=T^{\nu\mu},
+\end{equation}, und eine konkrete symmetrische Kombination ist \begin{equation}
+A^\mu B^\nu+A^\nu B^\mu.
+\end{equation}. Ein antisymmetrischer Tensor erfüllt \begin{equation}
+F^{\mu\nu}=-F^{\nu\mu},
+\label{eq:sr6-antisymmetry}
+\end{equation}, ebenso wie die Kombination \begin{equation}
+A^\mu B^\nu-A^\nu B^\mu.
+\end{equation}. Setzt man in \eqref{eq:sr6-antisymmetry} die Indizes gleich, so folgt \begin{equation}
+F^{00}=-F^{00},
+\qquad
+F^{00}=0,
+\end{equation}; dieselbe Überlegung bringt alle Diagonalkomponenten zum Verschwinden. Ein antisymmetrischer Tensor \(4\times4\) hat daher sechs unabhängige Komponenten.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}\caption{Symmetrische und antisymmetrische Tensoren zweiten Rangs im Vergleich an der Tafel.}\lectureframe{00:47:20}\end{figure}
+
+Diese sechs Komponenten reichen genau für die drei Komponenten eines elektrischen Feldes und die drei Komponenten eines magnetischen Feldes aus. Mit der an der Tafel festgelegten Vorzeichenkonvention gilt \begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_1&-E_2&-E_3\\
+E_1&0&-B_3&B_2\\
+E_2&B_3&0&-B_1\\
+E_3&-B_2&B_1&0
+\end{pmatrix}.
+\label{eq:sr6-em-field-tensor}
+\end{equation}. Die Spiegelung an der Diagonalen kehrt jedes Vorzeichen um. Elektrische und magnetische Felder sind somit keine voneinander unabhängigen relativistischen Objekte. Ein Boost kann sie ebenso miteinander vermischen, wie er Raum und Zeit vermischt: Ein Feld, das in einem Bezugssystem rein elektrisch ist, kann in einem anderen eine magnetische Komponente haben.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}\caption{Das vervollständigte antisymmetrische Array mit den sechs unabhängigen Einträgen \(\mathbf E\) und \(\mathbf B\).}\lectureframe{00:50:20}\end{figure}
+
+Die Tafel mit \eqref{eq:sr6-em-field-tensor} bleibt sichtbar, während die Diskussion zur Teilchendynamik übergeht. Nun verwenden wir das Symbol \(A_\mu\) erneut, diesmal nicht für den allgemeinen Vektor aus den vorangegangenen Beispielen, sondern für das elektromagnetische Viererpotential.
+
+\section{Die Wirkung eines geladenen Teilchens}
+
+Es gibt zwei mögliche Ausgangspunkte. Wir können die Dynamik des Feldes selbst untersuchen, woraus die Maxwell-Gleichungen folgen, oder die Bewegung eines geladenen Teilchens in einem vorgegebenen Feld, woraus die Lorentzkraft folgt. Wir beginnen mit dem Teilchen.
+
+Bei niedriger Geschwindigkeit ist das Ziel \begin{equation}
+m\mathbf a
+=
+e\left(\mathbf E+\mathbf v\times\mathbf B\right),
+\label{eq:sr6-nonrel-lorentz-force}
+\end{equation}, wobei im Gaußschen Einheitensystem ein Faktor \(1/c\) vor dem magnetischen Term steht. Wir setzen \(c=1\). Die beiden Terme in \eqref{eq:sr6-nonrel-lorentz-force} sehen in der dreidimensionalen Vektornotation unterschiedlich aus, doch die Relativitätstheorie sollte sie als Teile eines einzigen Objekts erkennen lassen.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}\caption{Die nichtrelativistische Lorentzkraft, die die invariante Wirkung reproduzieren muss.}\lectureframe{00:54:00}\end{figure}
+
+\subsection{Freie Bewegung und das Vektorpotential}
+
+Für ein freies relativistisches Teilchen gilt \begin{equation}
+S_{\mathrm{free}}
+=
+-m\int_1^2 d\tau
+=
+\int_{t_1}^{t_2}dt\,
+\left[-m\sqrt{1-\dot{\mathbf x}^{\,2}}\right],
+\label{eq:sr6-free-action}
+\end{equation}, wobei \begin{equation}
+\dot{\mathbf x}^{\,2}
+=
+(\dot x^1)^2+(\dot x^2)^2+(\dot x^3)^2.
+\end{equation}. Der Ausdruck in eckigen Klammern ist die Lagrange-Funktion des freien Teilchens. Sein Impuls und seine Energie wurden bereits zuvor bestimmt; wir behalten die Wirkung bei und fragen, welcher feldabhängige Term hinzugefügt werden kann.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}\caption{Die Wirkung des freien Teilchens als entlang einer Weltlinie akkumulierte Eigenzeit.}\lectureframe{00:55:10}\end{figure}
+
+Die grundlegende elektromagnetische Variable ist das Vierervektorpotential \(A_\mu(x)\). Die elektrischen und magnetischen Felder werden daraus hergeleitet. Entlang eines kleinen Weltliniensegments \(dx^\mu\) ist die Kontraktion \begin{equation}
+A_\mu(x)\,dx^\mu
+\end{equation} ein Skalar. Addiert man diese skalaren Beiträge von einem Endpunkt zum anderen, erhält man eine Lorentz-invariante Wechselwirkung: \begin{equation}
+S_{\mathrm{int}}
+=
+-e\int_1^2 A_\mu(x)\,dx^\mu.
+\label{eq:sr6-interaction-action}
+\end{equation}. Der Koeffizient \(e\) ist die elektrische Ladung. Das Gesamtvorzeichen beruht auf der historischen Ladungskonvention; ändert man die Konvention, ändert sich das Vorzeichen von \(e\), nicht aber der Inhalt der Theorie.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}\caption{Ein Weltliniensegment kontrahiert mit dem Viererpotential zum skalaren Beitrag \(A_\mu dx^\mu\).}\lectureframe{00:59:20}\end{figure}
+
+\subsection{Darstellung mit gewöhnlicher Zeit}
+
+Um die vertrauten Euler--Lagrange-Gleichungen zu verwenden, teilen und multiplizieren wir \eqref{eq:sr6-interaction-action} mit \(dt\). Da \begin{equation}
+\frac{dx^0}{dt}=1,
+\qquad
+\frac{dx^m}{dt}=\dot x^m,
+\end{equation} gilt, lautet die vollständige Wirkung \begin{equation}
+S
+=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_0(x,t)
+-e\dot x^m A_m(x,t)
+\right].
+\label{eq:sr6-complete-particle-action}
+\end{equation}. Somit ist \begin{equation}
+\boxed{
+L
+=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_0
+-e\dot x^mA_m
+}.
+\label{eq:sr6-charged-lagrangian}
+\end{equation}. Vorerst ist \(A_\mu(x,t)\) ein bekanntes äußeres Feld. Wir variieren die Weltlinie, nicht das Feld.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}\caption{Die invariante Kopplung entlang der Weltlinie, umgeschrieben als Lagrange-Funktion bezüglich der gewöhnlichen Zeit.}\lectureframe{01:05:20}\end{figure}
+
+\section{Die Lorentzkraft Schritt für Schritt herleiten}
+
+Für eine räumliche Komponente \(x^m\) lautet die Euler--Lagrange-Gleichung \begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x^m}
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr6-EL}
+\end{equation}. Die Ableitung nach der Geschwindigkeit ergibt \begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m.
+\label{eq:sr6-canonical-momentum}
+\end{equation}. Leider steht der Buchstabe \(m\) sowohl für die Masse als auch für einen räumlichen Index. Der Kontext unterscheidet die beiden Verwendungen: Das erste \(m\) in \eqref{eq:sr6-canonical-momentum} steht für die Masse; der Index \(m\) bezeichnet eine der drei räumlichen Komponenten.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}\caption{Die Impulsableitung enthält sowohl den mechanischen Term als auch den Term des Vektorpotentials.}\lectureframe{01:09:20}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Fehlt im ersten Ansatz für die linke Seite ein Term?}\lecturerresponse{Ja. Wenn man nur den Term des freien Teilchens ableitet, bleibt die Geschwindigkeitsabhängigkeit von \(-e\dot x^mA_m\) unberücksichtigt. Die vollständige Ableitung lautet \(m\dot x_m/\sqrt{1-\dot{\mathbf x}^{\,2}}-eA_m\). Diese Korrektur ist wesentlich, weil ihre Zeitableitung sowohl einen Teil der elektrischen als auch der magnetischen Kraft liefert. \lecturetimestamp{01:08:18}}\end{classroomqa}
+
+Die rechte Seite von \eqref{eq:sr6-EL} lautet \begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\,\partial_mA_0
+-e\,\dot x^n\partial_mA_n.
+\label{eq:sr6-position-derivative}
+\end{equation}. Also gilt \begin{equation}
+\frac{d}{dt}
+\left(
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+\right)
+=
+-e\,\partial_mA_0
+-e\,\dot x^n\partial_mA_n.
+\label{eq:sr6-EL-expanded}
+\end{equation}.
+
+\begin{classroomqa}\audiencequestion{Wurden in dieser Rechnung kovariante und kontravariante räumliche Komponenten vertauscht?}\lecturerresponse{Sie wurden nach oben und unten verschoben, doch für räumliche lateinische Indizes ist der euklidische räumliche Block der Metrik die Einheitsmatrix. Daher gilt \(x_m=x^m\) und \(A_m=A^m\). Nur ein Zeitindex bewirkt einen Vorzeichenwechsel. \lecturetimestamp{01:09:29}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Werden wiederholte lateinische Indizes ebenfalls summiert?}\lecturerresponse{Ja. Ein wiederholter lateinischer Index wird von \(1\) bis \(3\) summiert; ein wiederholter griechischer Index von \(0\) bis \(3\). Ein einzelner Index wie \(m\), der eine räumliche Gleichung bezeichnet, ist frei und wird nicht summiert. Das Massensymbol ist kein Index. \lecturetimestamp{01:10:00}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_17.png}\caption{Die Euler--Lagrange-Gleichung, bevor die totale Zeitableitung des Vektorpotentials entwickelt wird.}\lectureframe{01:14:20}\end{figure}
+
+\subsection{Die Kettenregel entlang der bewegten Weltlinie}
+
+Selbst ein zeitunabhängiges Feld ändert sich entlang der Bahn des Teilchens, weil das Teilchen verschiedene Orte durchläuft. Die totale Ableitung lautet \begin{equation}
+\frac{dA_m(x(t),t)}{dt}
+=
+\partial_0A_m+\dot x^n\partial_nA_m.
+\label{eq:sr6-convective-derivative}
+\end{equation}. Der erste Term beschreibt die explizite Zeitabhängigkeit; der zweite die implizite Zeitabhängigkeit über \(x^n(t)\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_18.png}\caption{Das Vektorpotential ändert sich explizit mit der Zeit und implizit dadurch, dass sich das Teilchen durch den Raum bewegt.}\lectureframe{01:17:20}\end{figure}
+
+Setzt man \eqref{eq:sr6-convective-derivative} in \eqref{eq:sr6-EL-expanded} ein und bringt die Feldterme auf die rechte Seite, erhält man \begin{equation}
+\begin{aligned}
+m\frac{d}{dt}
+\left(
+\frac{\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+\right)
+&=
+e\left(\partial_0A_m-\partial_mA_0\right)
+\\
+&\quad +e\dot x^n
+\left(\partial_nA_m-\partial_mA_n\right).
+\end{aligned}
+\label{eq:sr6-grouped-force}
+\end{equation}. Damit hat die Rechnung endlich ihr Ordnungsprinzip gefunden. Die erste Klammer enthält keine Geschwindigkeit; die zweite ist linear in der Geschwindigkeit. Genau darin liegt die Aufteilung in elektrische und magnetische Kräfte.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_19.png}\caption{Die Kraftterme sind in einen geschwindigkeitsunabhängigen elektrischen Anteil und einen geschwindigkeitsabhängigen antisymmetrischen Anteil gruppiert.}\lectureframe{01:23:40}\end{figure}
+
+Definieren wir die elektrischen Komponenten gemäß der Konvention der Herleitung durch \begin{equation}
+E_m=\partial_0A_m-\partial_mA_0.
+\label{eq:sr6-electric-from-potential}
+\end{equation}. Die räumliche antisymmetrische Kombination \begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n
+\label{eq:sr6-spatial-curl-tensor}
+\end{equation} enthält die drei unabhängigen Komponenten der Rotation des Vektorpotentials. Ihre Orientierung ist so gewählt, dass \begin{equation}
+\dot x^nC_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\end{equation}. Gleichung \eqref{eq:sr6-grouped-force} ist somit die relativistische Impulsform von \eqref{eq:sr6-nonrel-lorentz-force}. Der Faktor unter der Zeitableitung ist der relativistische Impuls pro Masseneinheit, nicht allein die Newtonsche Geschwindigkeit.
+
+Es lohnt sich, die Herleitung eigenhändig zu wiederholen: Man beginnt mit \eqref{eq:sr6-charged-lagrangian}, berechnet beide Seiten von \eqref{eq:sr6-EL}, wendet die Kettenregel an und gruppiert die Terme nach ihrer Geschwindigkeitsabhängigkeit. Die Übung dient zugleich der Wiederholung der Variationsmechanik, der mehrdimensionalen Analysis und der Elektrodynamik.
+
+\begin{classroomqa}\audiencequestion{Warum wählen wir \(-e\int A_\mu dx^\mu\) als elektromagnetische Wechselwirkung?}\lecturerresponse{Letztlich entscheidet das Experiment über die Kopplung, doch zwei strukturelle Anforderungen machen dies zum naheliegenden ersten Ansatz. Die Wirkung wird aus lokalen Beiträgen entlang der Bahn zusammengesetzt, und jeder Beitrag muss ein Skalar sein. Der Skalar \(dx^\mu dx_\mu=d\tau^2\) ist bereits durch die freie Wirkung gegeben. Die Kontraktion von \(dx^\mu\) mit dem Feld \(A_\mu\) ist der einfachste neue feldabhängige Skalar. Es lassen sich kompliziertere Skalare bilden, und die Eichinvarianz wird die Wahl später weiter einschränken. \lecturetimestamp{01:25:34}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Lassen sich die Maxwell-Gleichungen ebenfalls aus dem Prinzip der kleinsten Wirkung herleiten?}\lecturerresponse{Ja. Die vorliegende Wirkung beschreibt ein Teilchen in einem gegebenen elektromagnetischen Feld. Um die Maxwell-Gleichungen zu erhalten, müssen wir die Eigenwirkung des Feldes hinzufügen und das Feld selbst variieren, so wie wir es beim Skalarfeld getan haben. \lecturetimestamp{01:28:58}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Wo steckt die Summation in der gruppierten Kraftgleichung?}\lecturerresponse{Der freie Index \(m\) bezeichnet eine der drei Komponentengleichungen und wird nicht summiert. Der wiederholte Index \(n\) in \(\dot x^n(\partial_nA_m-\partial_mA_n)\) wird über \(1,2,3\) summiert. Ohne Einsteinsche Summenkonvention würde dieser Term ein ausdrückliches \(\sum_{n=1}^{3}\) enthalten. \lecturetimestamp{01:29:26}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Warum identifizieren wir \(\partial_0A_m-\partial_mA_0\) als elektrisches Feld, anstatt die übliche Formel von vornherein anzunehmen?}\lecturerresponse{Die Wirkung hat einen Kraftterm hervorgebracht, der von Ort und Zeit, aber nicht von der Geschwindigkeit des Teilchens abhängt. Das ist genau die operative Rolle des elektrischen Feldes. Die übrigen antisymmetrischen Terme multiplizieren die Geschwindigkeit und übernehmen daher die Rolle des magnetischen Feldes. Man kann diese Rechnung als Herleitung der Felder aus dem Kraftgesetz verstehen, statt getrennte Definitionen im Voraus einzusetzen. \lecturetimestamp{01:31:05}}\end{classroomqa}
+
+\section{Das manifest kovariante Kraftgesetz}
+
+Die linke Seite von \eqref{eq:sr6-grouped-force} ist noch nicht in einer offensichtlich vierdimensionalen Form geschrieben. Wir führen die Vierergeschwindigkeit ein: \begin{equation}
+u^\mu=\frac{dx^\mu}{d\tau}.
+\label{eq:sr6-four-velocity}
+\end{equation}Ihre räumlichen Komponenten erfüllen \begin{equation}
+u^m
+=
+\frac{dx^m}{d\tau}
+=
+\frac{\dot x^m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}.
+\end{equation}. Multipliziert man die räumliche Gleichung mit \(dt/d\tau\), so wird \(d/dt\) zu \(d/d\tau\): \begin{equation}
+\frac{dt}{d\tau}\frac{d}{dt}
+=
+\frac{d}{d\tau}.
+\end{equation}. Damit wird die linke Seite zum räumlichen Anteil der Eigenbeschleunigung: \begin{equation}
+m\frac{d^2x^m}{d\tau^2}.
+\end{equation}.
+
+Die rechte Seite lässt sich schreiben, ohne Zeit und Raum getrennt zu behandeln: \begin{equation}
+m\frac{d^2x^m}{d\tau^2}
+=
+e\left(\partial_\nu A_m-\partial_mA_\nu\right)
+\frac{dx^\nu}{d\tau}.
+\label{eq:sr6-spatial-covariant-force}
+\end{equation}. Für \(\nu=0\) ergibt sich die elektrische Klammer, für \(\nu=1,2,3\) die magnetische Klammer.
+
+Beide Seiten haben nun den Transformationscharakter eines Vierervektors. Die drei räumlichen Gleichungen sind daher Komponenten von \begin{equation}
+\boxed{
+m\frac{d^2x^\mu}{d\tau^2}
+=
+e\left(\partial_\nu A^\mu-\partial^\mu A_\nu\right)u^\nu
+}.
+\label{eq:sr6-covariant-force}
+\end{equation}. Definiert man \begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\label{eq:sr6-F-from-A}
+\end{equation}, so ergibt sich in der in dieser Vorlesung verwendeten Indexreihenfolge und mit dem verwendeten Wechselwirkungsvorzeichen die äquivalente kompakte Form \begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu.
+\label{eq:sr6-covariant-force-F}
+\end{equation}. \editorialnote{In Lehrbüchern der Elektrodynamik werden die Vorzeichen unterschiedlich auf die Signatur der Metrik, die Definition von \(A_\mu\), die Ladung und \(F_{\mu\nu}\) verteilt. Die Gleichungen \eqref{eq:sr6-covariant-force} und \eqref{eq:sr6-covariant-force-F} behalten das Vorzeichen und die Indexreihenfolge bei, die sich aus der Wirkung \(-e\int A_\mu dx^\mu\) ergeben; der invariante Inhalt ist die antisymmetrisierte Ableitung des Potentials.}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_20.png}\caption{Die drei räumlichen Gleichungen werden mithilfe der Eigenzeit zu einer Vierervektorgleichung zusammengefügt.}\lectureframe{01:42:40}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Warum darf eine vierte Gleichung für die Zeitkomponente hinzugefügt werden? Ist \(d^2x^0/d\tau^2\) einfach gleich null?}\lecturerresponse{Sie ist im Allgemeinen nicht null: \(x^0=t\), aber \(dt/d\tau=\gamma\) ändert sich, wenn sich die Geschwindigkeit des Teilchens ändert. Ausschlaggebend ist die Kovarianz. Die skalare Wirkung garantiert Lorentz-invariante Gleichungen. Sobald die räumlichen Komponenten als Komponenten einer einzigen Vierervektorgleichung erkannt sind, mischen Lorentz-Transformationen sie mit der Zeitkomponente. Die vierte Gleichung muss die anderen drei ergänzen. \lecturetimestamp{01:42:40}}\end{classroomqa}
+
+\subsection{Die Bedeutung der vierten Komponente}
+
+Die drei räumlichen Komponenten drücken relativistisch aus: \begin{equation}
+\frac{d\mathbf p}{dt}=\mathbf F.
+\end{equation}. Energie und Impuls sind selbst Komponenten eines Vierervektors, daher muss die Zeitkomponente die entsprechende Energiebilanz beschreiben. In der Sprache dreidimensionaler Vektoren gilt \begin{equation}
+\frac{dK}{dt}=\mathbf F\cdot\mathbf v.
+\label{eq:sr6-work-energy}
+\end{equation}. Sie beschreibt die Rate, mit der das Feld Arbeit am Teilchen verrichtet. Der magnetische Beitrag steht senkrecht auf \(\mathbf v\) und verrichtet keine Arbeit; der elektrische Beitrag verändert die Energie des Teilchens.
+
+\begin{classroomqa}\audiencequestion{Wenn die Kovarianz die vierte Gleichung formal vorgibt, woher wissen wir dann, dass sie physikalische Bedeutung hat?}\lecturerresponse{Die ersten drei Komponenten besagen, dass die Kraft den Impuls verändert. Die vierte besagt, dass die Arbeit die Energie verändert: \(dK/dt=\mathbf F\cdot\mathbf v\). Da Energie und Impuls zusammen einen Vierervektor bilden, muss auch ihre Reaktion auf das Feld eine einzige Aussage mit vier Komponenten sein. \lecturetimestamp{01:45:20}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_21.png}\caption{Das räumliche Gesetz \(d\mathbf p/dt=\mathbf F\) und sein zeitliches Gegenstück, die Arbeits--Energie-Beziehung.}\lectureframe{01:47:10}\end{figure}
+
+Die Methode ist wichtiger als die abschließende kompakte Form. Wir haben verlangt, dass die Wirkung ein Skalar ist, bevor wir sie variiert haben. Anschließend ließen sich die resultierenden Gleichungen zu Tensoren umordnen, ohne ihre Symmetrie nachträglich wiederherstellen zu müssen. In der modernen Feldtheorie wird daraus eine allgemeine Konstruktionsregel: Die Lagrange-Funktion soll so gewählt werden, dass sie die Symmetrien des Problems respektiert.
+
+\section{Lokalität, Lorentz-Invarianz und die nächste Symmetrie}
+
+In der relativistischen Feldtheorie kehren drei Prinzipien immer wieder. Zwei davon haben wir bereits verwendet; das dritte behandeln wir als Nächstes.
+
+\subsection{Lokalität}
+
+Lokalität bedeutet, dass die Änderung eines Teilchens oder Feldes davon bestimmt wird, was sich infinitesimal in seiner Nähe in der Raumzeit ereignet. Ein Teilchen reagiert auf das Feld an seinem Ort auf der Weltlinie, nicht auf einen unverbundenen Wert in großer Entfernung. Ein Feld an einem Punkt reagiert auf das Feld und seine Ableitungen in einer Umgebung dieses Punktes, nicht unmittelbar auf beliebige entfernte Werte oder zukünftige Daten.
+
+Für ein Feld nimmt die Wirkung daher die lokale Form an
+\begin{equation}
+S
+=
+\int d^3x\,dt\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr6-local-action}
+\end{equation}
+Das Integral summiert je einen Beitrag über jeden Punkt der Raumzeit. Erste Ableitungen erfassen den Vergleich mit benachbarten Punkten, und das Variationsprinzip liefert Differentialgleichungen. Man könnte sich nichtlokale Produkte vorstellen, die Felder an weit voneinander entfernten Punkten koppeln; dann hinge die Antwort hier in den entsprechenden Gleichungen unmittelbar von den Bedingungen dort ab. Eine solche lokale Struktur wird hier nicht zugrunde gelegt. Wirkungen mit höheren Ableitungen sind möglich und bilden ein interessantes Thema, werden für die vorliegende Konstruktion aber nicht benötigt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_22.png}
+\caption{Lokalität, ausgedrückt als Raumzeitintegral einer Dichte, die aus Feldern und ihren Ableitungen in der unmittelbaren Umgebung aufgebaut ist.}
+\lectureframe{01:51:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Bezeichnet \(\partial_\mu\phi\)vier Ableitungskomponenten?}
+\lecturerresponse{Ja. Es bezeichnet die zeitliche Ableitung und die drei räumlichen Ableitungen von \(\phi\), zusammengefasst zu einem kovarianten Vierervektor. \lecturetimestamp{01:52:25}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie wird im Lokalitätsprinzip quantifiziert, was \emph{nahe} bedeutet?}
+\lecturerresponse{Durch Ableitungen. Eine erste Ableitung vergleicht das Feld an einem Punkt mit seinem Wert an infinitesimal benachbarten Punkten. Eine lokale Lagrange-Dichte hängt von den Feldern und einer endlichen Anzahl solcher Ableitungen am selben Raumzeitpunkt ab. \lecturetimestamp{01:52:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie überträgt sich die feldtheoretische Form der Lokalität auf die gerade abgeschlossene Teilchenrechnung?}
+\lecturerresponse{Die Teilchen-Lagrange-Funktion ist entlang der Weltlinie lokal: Sie hängt über die Geschwindigkeit von benachbarten Positionen auf der Weltlinie ab und außerdem vom elektromagnetischen Potential, ausgewertet an der momentanen Position des Teilchens. Die Beschleunigung des Teilchens hängt hier nicht unmittelbar vom Feld an einem entfernten Punkt ab. \lecturetimestamp{01:53:31}}
+\end{classroomqa}
+
+\subsection{Lorentz-Invarianz}
+
+Die Lorentz-Invarianz wird dadurch umgesetzt, dass die Lagrange-Funktion aus Skalaren aufgebaut wird. Beobachter können diese Skalare in unterschiedliche zeitliche und räumliche Komponenten zerlegen, stimmen aber in der Wirkung überein. Die durch Variation erhaltenen Tensorgleichungen haben folglich in jedem Inertialsystem dieselbe Form.
+
+\subsection{Eichinvarianz}
+
+Die Eichinvarianz ist das verbleibende Prinzip. Sie wird hier angekündigt, aber noch nicht definiert. Im nächsten Schritt wird sie einschränken, welche Eigenschaften des Viererpotentials physikalisch bedeutsam sind, und die Feldwirkung bestimmen, aus der die Maxwell-Gleichungen folgen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_23.png}
+\caption{Die drei leitenden Prinzipien: Lokalität, Lorentz-Invarianz und Eichinvarianz.}
+\lectureframe{01:55:40}
+\end{figure}
+
+Diese Prinzipien treten in der Allgemeinen Relativitätstheorie, der Quantenelektrodynamik, der Yang--Mills-Theorie und dem Standardmodell wieder auf. Einzelheiten wie die Zahl der Teilchenspezies unterscheiden sich von Theorie zu Theorie; Lokalität und Symmetrie bilden den tiefer liegenden Rahmen. Die praktische Aufgabe besteht daher darin, die Euler--Lagrange-Rechnung noch einmal nachzuvollziehen, bis sich jeder Index und jeder zusammengefasste Term nachvollziehen lässt. Anschließend kommt die Eichinvarianz als nächste Einschränkung derselben elektromagnetischen Wirkung hinzu.

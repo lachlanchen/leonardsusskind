@@ -1,0 +1,952 @@
+\chapter{Elektromagnetische Wellen und die Maxwell-Wirkung}
+
+\lectureoverview{Zunächst lösen wir die quellenfreien Maxwell-Gleichungen für eine ebene Welle und lassen die Gleichungen ihre Polarisation, Feldgeometrie und Ausbreitungsgeschwindigkeit bestimmen. Dann stellen wir eine tiefergehende Frage: Welche lokale, Lorentz-invariante und eichinvariante Wirkung führt zu den dynamischen Maxwell-Gleichungen? Die Antwort verbindet das elektromagnetische Feld, die Ladungserhaltung und die Eichinvarianz zu einer gemeinsamen Struktur.}
+
+\section{Zwei Gruppen von Maxwell-Gleichungen}
+
+Wir beginnen mit einer ebenen elektromagnetischen Welle. Hier ist \emph{eben} der geometrische Begriff, nicht \emph{einfach} im Sinne von schmucklos. Die unmittelbaren Fragen sind konkret: Wie sieht eine solche Welle aus, und wie folgt ihre Gestalt aus den Maxwell-Gleichungen?
+
+Bevor wir etwas mit der Welle tun, ist es hilfreich, die Gleichungen in zwei Spalten anzuordnen. Im Vakuum lauten sie
+\begin{align}
+\nabla\cdot\mathbf B&=0,
+&
+\dot{\mathbf B}&=\nabla\times\mathbf E,
+\label{eq:homogeneous-vector}
+\\
+\nabla\cdot\mathbf E&=0,
+&
+\dot{\mathbf E}&=-\,\nabla\times\mathbf B.
+\label{eq:dynamical-vector-vacuum}
+\end{align}
+Wir verwenden die Metrik mit überwiegend positiven Vorzeichen
+\begin{equation}
+\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)
+\end{equation}
+und die im Kurs verwendete Konvention
+\begin{equation}
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\qquad
+F_{0i}=E_i,
+\qquad
+F_{ij}=\epsilon_{ijk}B_k.
+\label{eq:course-f-convention}
+\end{equation}
+Dann lassen sich dieselben beiden Gruppen schreiben als
+\begin{align}
+\partial_\mu F_{\nu\sigma}
++\partial_\nu F_{\sigma\mu}
++\partial_\sigma F_{\mu\nu}
+&=0,
+\label{eq:bianchi-l9}
+\\
+\partial_\mu F^{\mu\nu}
+&=0.
+\label{eq:vacuum-maxwell-covariant}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_01.png}
+\caption{Die beiden Gruppen der Maxwell-Gleichungen im Vakuum und ihre kovarianten Formen. Die zyklische Gleichung ist eine Identität; die kontrahierte Gleichung ist dynamisch.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:03:30.}
+\end{figure}
+
+Der Unterschied zwischen den beiden Zeilen ist wichtig. Gleichung
+\eqref{eq:bianchi-l9} folgt unmittelbar aus der Existenz des Potentials \(A_\mu\): Jeder Term enthält eine zweite Ableitung, und die Terme heben sich paarweise auf. Es handelt sich daher um eine Bianchi-Identität. Gleichung
+\eqref{eq:vacuum-maxwell-covariant} dagegen ist eine Bewegungsgleichung. Ändert man die elektromagnetische Lagrange-Dichte, so ändert sich diese Gleichungsgruppe.
+
+An der Tafel steht eine kleine Beobachtung, die in diesem Kapitel zwei Aufgaben erfüllen wird. In den Maxwell-Gleichungen tritt jedes Feld differenziert auf. Diese Tatsache wird die relativen Phasen einer ebenen Welle einschränken und später die Eichinvarianz selbstverständlich erscheinen lassen.
+
+\section{Eine ebene Welle entlang der \texorpdfstring{\(z\)}{z}-Achse}
+
+Wir wählen die Koordinaten so, dass sich die Welle entlang der \(z\)-Achse ausbreitet. Das ist ohne Beschränkung der Allgemeinheit möglich; eine Welle in einer anderen Richtung lässt sich durch eine Drehung der Achsen in diese Form bringen. Ihr Wellenzahl sei \(k\),
+\begin{equation}
+\lambda=\frac{2\pi}{k},
+\end{equation}
+und ihre Frequenz \(\omega\). Bevor wir eine Bewegungsgleichung auferlegen, schreiben wir alle sechs Feldkomponenten mit einer gemeinsamen Phase
+\begin{equation}
+\theta=kz-\omega t:
+\end{equation}
+\begin{align}
+E_x(z,t)&=\epsilon_x\sin\theta,
+&
+B_x(z,t)&=\beta_x\sin\theta,
+\nonumber\\
+E_y(z,t)&=\epsilon_y\sin\theta,
+&
+B_y(z,t)&=\beta_y\sin\theta,
+\label{eq:plane-wave-ansatz}\\
+E_z(z,t)&=\epsilon_z\sin\theta,
+&
+B_z(z,t)&=\beta_z\sin\theta.
+\nonumber
+\end{align}
+Die sechs griechischen Buchstaben sind konstante Amplituden.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_02.png}
+\caption{Der Ansatz mit sechs Komponenten für eine ebene Welle, bevor die Maxwell-Gleichungen die unzulässigen Amplituden ausschließen.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:08:45.}
+\end{figure}
+
+Warum beginnen wir mit derselben sinusförmigen Abhängigkeit für \(\mathbf E\) und \(\mathbf B\)? Angenommen, ein Feld hätte die Abhängigkeit \(\sin\theta\) und das andere \(\cos\theta\). Eine Zeitableitung auf der einen Seite einer Rotationgleichung und eine räumliche Ableitung auf der anderen Seite ergäben dann verschiedene trigonometrische Funktionen. Die Gleichung könnte nicht für jedes \(z\) und \(t\) gelten. Eine gemeinsame konstante Phase ist zulässig, aber eine Verschiebung des Ursprungs von \(z\) beseitigt sie. Der Ansatz ist also kein zusätzliches dynamisches Gesetz, sondern die einfachste Darstellung der Phasenbeziehung, die die Differentialgleichungen verlangen werden.
+
+Bisher wurde noch keine Maxwell-Gleichung verwendet. Wir haben lediglich eine Richtung, eine Wellenlänge und einen zweckmäßigen Phasenursprung gewählt. Nun entscheiden die Gleichungen, welche Amplituden bestehen bleiben.
+
+\subsection{Die Divergenzbedingungen}
+
+Da die Felder nur von \(z\) und \(t\) abhängen,
+\begin{equation}
+\nabla\cdot\mathbf E
+=
+\partial_xE_x+\partial_yE_y+\partial_zE_z
+=
+\partial_zE_z.
+\end{equation}
+muss dies im Vakuum für jede Phase verschwinden, also gilt
+\begin{equation}
+\epsilon_z=0.
+\label{eq:epsilon-z-zero}
+\end{equation}
+Dasselbe Argument für das Magnetfeld ergibt
+\begin{equation}
+\beta_z=0.
+\label{eq:beta-z-zero}
+\end{equation}
+Keines der beiden Felder hat eine Komponente in Ausbreitungsrichtung. Die Welle ist transversal.
+
+In der transversalen \(xy\)-Ebene bleibt eine Drehungsfreiheit. Das Paar \((\epsilon_x,\epsilon_y)\) ist ein gewöhnlicher zweidimensionaler Vektor. Wir drehen daher die transversalen Achsen so, dass
+\begin{equation}
+\epsilon_y=0,
+\qquad
+\epsilon_x\ne0.
+\label{eq:polarization-axis}
+\end{equation}
+Dies ist eine Wahl der linearen Polarisation, keine Einschränkung der Physik.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_03.png}
+\caption{Die longitudinalen Amplituden sind verschwunden, und die transversale elektrische Achse wurde gewählt.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:14:30.}
+\end{figure}
+
+\subsection{Die Rotationgleichungen}
+
+Betrachten wir die \(x\)-Komponente von
+\(\dot{\mathbf E}=-\nabla\times\mathbf B\). Da die Felder nur von \(z\) abhängen,
+\begin{equation}
+\dot E_x
+=
+-\left(\nabla\times\mathbf B\right)_x
+=
+\partial_zB_y.
+\end{equation}
+Einsetzen des Ansatzes ergibt
+\begin{align}
+-\omega\epsilon_x\cos\theta
+&=
+k\beta_y\cos\theta,
+\nonumber\\
+\beta_y
+&=
+-\,\epsilon_x\frac{\omega}{k}.
+\label{eq:beta-y-epsilon}
+\end{align}
+Die \(y\)-Komponente derselben Maxwell-Gleichung lautet
+\begin{equation}
+\dot E_y
+=
+-\left(\partial_zB_x\right).
+\end{equation}
+Die linke Seite ist aufgrund unserer Polarisationswahl null, also
+\begin{equation}
+\beta_x=0.
+\label{eq:beta-x-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_04.png}
+\caption{Eine komponentenweise Rotationsrechnung verknüpft \(\epsilon_x\) mit \(\beta_y\) und beseitigt die verbleibende magnetische Amplitude.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:20:15.}
+\end{figure}
+
+Damit ist die Geometrie festgelegt:
+\begin{equation}
+\mathbf E\parallel\hat{\mathbf x},
+\qquad
+\mathbf B\parallel\hat{\mathbf y},
+\qquad
+\mathbf k\parallel\hat{\mathbf z}.
+\end{equation}
+Das elektrische Feld, das magnetische Feld und die Ausbreitungsrichtung stehen paarweise senkrecht aufeinander.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_09_figure_05.png}
+\caption{Die Tafelzeichnung der transversalen elektrischen und magnetischen Schwingungen, die sich entlang der \(z\)-Achse ausbreiten.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:23:15.}
+\end{figure}
+
+Die andere Rotationgleichung liefert eine unabhängige Amplitudenbeziehung. Ihre \(y\)-Komponente lautet
+\begin{equation}
+\dot B_y=(\nabla\times\mathbf E)_y=\partial_zE_x,
+\end{equation}
+und damit
+\begin{align}
+-\omega\beta_y\cos\theta
+&=
+k\epsilon_x\cos\theta,
+\nonumber\\
+\epsilon_x
+&=
+-\,\beta_y\frac{\omega}{k}.
+\label{eq:epsilon-beta-y}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_06.png}
+\caption{Die reziproken Amplitudenbeziehungen über der Skizze der Transversalwelle.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:25:00.}
+\end{figure}
+
+Aus den Gleichungen \eqref{eq:beta-y-epsilon} und \eqref{eq:epsilon-beta-y} folgt die Dispersionsrelation
+\begin{equation}
+\left(\frac{\omega}{k}\right)^2=1.
+\end{equation}
+Für die Welle mit positiver Frequenz, die sich in der gewählten Richtung ausbreitet, gilt
+\begin{equation}
+\omega=k
+\qquad
+(c=1).
+\label{eq:omega-k}
+\end{equation}
+Die gemeinsame Phase lautet folglich
+\begin{equation}
+\theta=k(z-t).
+\end{equation}
+Mit wiederhergestellten gewöhnlichen Einheiten gilt
+\begin{equation}
+\omega=ck,
+\qquad
+\theta=k(z-ct).
+\label{eq:restore-c-wave}
+\end{equation}
+Das Wellenprofil bewegt sich somit starr mit Lichtgeschwindigkeit. In den an der Tafel verwendeten Einheiten haben die elektrischen und magnetischen Amplituden denselben Betrag. Ihr relatives Minuszeichen ist eine Orientierungskonvention: Es gibt an, in welche Richtung die gewählte \(y\)-Achse weist, nicht, dass ein Feld dem anderen um eine Viertelperiode nacheilt.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_07.png}
+\caption{Die endgültige Form der ebenen Welle, nachdem \(\omega=k\) auferlegt wurde.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:26:45.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Haben \(\omega\) und \(k\) nicht unterschiedliche Einheiten?}
+\lecturerresponse{In gewöhnlichen Einheiten schon: \(\omega\) hat die Einheit inverse Zeit und \(k\) inverse Länge. Für \(c=1\) haben Zeit und Länge dieselbe Einheit. Stellt man \(c\) wieder her, wird aus \(\omega=k\) genau \(\omega=ck\), wie es die Dimensionsanalyse verlangt. \lecturetimestamp{00:25:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sind die elektrischen und magnetischen Felder in einer ebenen Welle immer phasengleich?}
+\lecturerresponse{Sie haben dieselbe Phasenabhängigkeit. Ihre vorzeichenbehafteten Amplituden können sich um ein Minuszeichen unterscheiden; das lässt sich als \(180^\circ\)-Phasenumkehr beschreiben. Die Maxwell-Gleichungen erlauben für diese linear polarisierte ebene Welle jedoch keine \(90^\circ\)-Phasenverschiebung zwischen Sinus--Kosinus. Zirkulare Polarisation setzt sich aus transversalen Komponenten zusammen und erfordert eine sorgfältigere Ausdrucksweise, ändert aber nichts an dieser komponentenweisen Maxwell-Beziehung. \lecturetimestamp{00:27:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wenn beide Felder gleichzeitig null werden, bleibt die Energie dann erhalten?}
+\lecturerresponse{Ja. Die Energiedichte an einem festen Ort schwingt, während die Welle vorbeizieht; die Energie ist jedoch weitergewandert und nicht verschwunden. Was sich zu einem Zeitpunkt in einem Gebiet befand, befindet sich einen Moment später in einem benachbarten Gebiet. Der lokale Energietransport, der umfassender durch den Poynting-Fluss beschrieben wird, bringt die veränderliche Dichte mit der Erhaltung in Einklang.
+\lecturetimestamp{00:28:15}}
+\end{classroomqa}
+
+Die Maxwell-Gleichungen sind linear. Die Amplitude \(\epsilon_x\) kann groß oder klein sein, \(\beta_y\) ergibt sich aus ihr, und jede Summe oder Differenz von Lösungen ist wiederum eine Lösung. Daher lassen sich Wellen, die sich in verschiedene Richtungen ausbreiten, überlagern. Diese kurze Rechnung lohnt sich: Eine Darstellung des Elektromagnetismus sollte die elektromagnetische Welle nicht als unerklärtes Zitat stehen lassen.
+
+\begin{classroomqa}
+\audiencequestion{Wurde bei der Herleitung von Anfang an angenommen, dass \(\mathbf E\) und \(\mathbf B\) dieselbe Phase haben?}
+\lecturerresponse{Die gemeinsame Phase wurde als Ansatz hingeschrieben, ist aber keine unabhängige physikalische Annahme. Da in den Rotationgleichungen auf beiden Seiten jeweils ein Feld differenziert wird, schließen die Gleichungen eine nichttriviale relative Phase aus. Eine gemeinsame Phasenverschiebung lässt sich anschließend durch Verschieben des Ursprungs beseitigen. \lecturetimestamp{00:29:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Woher stammt die zweite Beziehung \(\epsilon_x=-\beta_y\omega/k\)?}
+\lecturerresponse{Die erste Beziehung folgt aus \(\dot{\mathbf E}=-\nabla\times\mathbf B\). Die zweite stammt aus der zugehörigen Gleichung \(\dot{\mathbf B}=\nabla\times\mathbf E\), wobei bei derselben Komponentenrechnung \(\mathbf E\) und \(\mathbf B\) vertauscht werden. Beide Beziehungen sind nötig, um \(\omega^2=k^2\) zu erhalten.
+\lecturetimestamp{00:30:25}}
+\end{classroomqa}
+
+\section{Warum Differentialgleichungen nicht ausreichen}
+
+Nun wenden wir uns von einer bestimmten Lösung der Struktur der Theorie zu. Das Prinzip der kleinsten Wirkung ordnet die Energieerhaltung, die Impulserhaltung und deren Zusammenhang mit den Raumzeit-Symmetrien. Man kann Differentialgleichungen erfinden, die keine erhaltenswerte Energie und kein nützliches Symmetrieprinzip besitzen. Die Maxwell-Gleichungen sollten stattdessen aus einer Lagrange-Dichte hervorgehen.
+
+Hervorgebracht werden muss nur die dynamische Gleichungsgruppe:
+\begin{equation}
+\partial_\mu F^{\mu\nu}=J^\nu.
+\label{eq:target-sourced-maxwell}
+\end{equation}
+Die Bianchi-Gleichungsgruppe folgt bereits aus der Definition von \(F_{\mu\nu}\). In der Sprache der drei Vektoren ergibt sich mit unserer Konvention
+\begin{align}
+\nabla\cdot\mathbf E&=\rho,
+\label{eq:gauss-source}
+\\
+\dot{\mathbf E}+\nabla\times\mathbf B&=-\,\mathbf J.
+\label{eq:ampere-course-sign}
+\end{align}
+Das Minuszeichen in \eqref{eq:ampere-course-sign} ist wichtig. Es ist die Komponentenform von \eqref{eq:target-sourced-maxwell} unter Verwendung von \eqref{eq:course-f-convention} und wird gegen Ende bei einer Überprüfung des Vorzeichens an der Tafel erneut auftauchen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_08.png}
+\caption{Die vollständigen Maxwell-Gleichungen an der Tafel beim Übergang von der Wellenlösung zum Wirkungsprinzip.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:32:45.}
+\end{figure}
+
+\section{Lokale relativistische Feldtheorie}
+
+Das erste Prinzip ist die Lokalität. Eine Wirkung ist ein Integral über die Raumzeit einer Dichte, die aus Feldern und ihren ersten Ableitungen am selben Punkt aufgebaut ist:
+\begin{equation}
+S=\int d^4x\,\mathcal L(\phi,\phi_{,\mu}),
+\qquad
+\phi_{,\mu}\equiv\partial_\mu\phi.
+\label{eq:local-action}
+\end{equation}
+Das Komma ist eine Kurzschreibweise für Ableitungen. Das zweite Prinzip ist die Lorentz-Invarianz: \(\mathcal L\) muss ein Skalar sein.
+
+\subsection{Eine Wiederholung am Skalarfeld}
+
+Bevor wir einen Vierervektor variieren, wiederholen wir die Methode an einem Skalarfeld. Ein lokaler Lorentz-Skalar darf vom Potential \(U(\phi)\) und von der Kontraktion zweier Ableitungen abhängen:
+\begin{equation}
+\mathcal L_\phi
+=
+-\frac12\,\partial_\mu\phi\,\partial^\mu\phi-U(\phi).
+\label{eq:scalar-lagrangian}
+\end{equation}
+Bei der Metrik mit überwiegend positiven Vorzeichen gilt
+\begin{equation}
+\partial_\mu\phi\,\partial^\mu\phi
+=
+-\dot\phi^{\,2}+|\nabla\phi|^2,
+\end{equation}
+also
+\begin{equation}
+\mathcal L_\phi
+=
+\frac12\dot\phi^{\,2}
+-\frac12|\nabla\phi|^2
+-U(\phi).
+\end{equation}
+Die zeitliche Ableitung mit hochgestelltem Index unterscheidet sich im Vorzeichen von der mit tiefgestelltem Index; bei den räumlichen Ableitungen ist dies nicht der Fall.
+
+\begin{classroomqa}
+\audiencequestion{Hat es eine Bedeutung, den Ableitungsindex nach oben statt nach unten zu setzen?}
+\lecturerresponse{Ja. Das Heben des Index bedeutet, mit der inversen Metrik zu kontrahieren. Für die Signatur \((-+++)\) gilt \(\partial^0=-\partial_0\), während \(\partial^i=\partial_i\). Daher hat der Term mit der Zeitableitung das entgegengesetzte Vorzeichen zu den drei räumlichen Termen.
+\lecturetimestamp{00:38:02}}
+\end{classroomqa}
+
+Die Euler--Lagrange-Gleichung für das Feld lautet
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial\phi_{,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial\phi}.
+\label{eq:field-el}
+\end{equation}
+Für \eqref{eq:scalar-lagrangian} gilt
+\begin{equation}
+\frac{\partial\mathcal L_\phi}{\partial\phi_{,\mu}}
+=
+-\partial^\mu\phi,
+\qquad
+\frac{\partial\mathcal L_\phi}{\partial\phi}
+=
+-U'(\phi),
+\end{equation}
+und somit
+\begin{equation}
+\Box\phi=U'(\phi),
+\qquad
+\Box\equiv\partial_\mu\partial^\mu.
+\end{equation}
+Äquivalent dazu ist
+\begin{equation}
+\ddot\phi-\nabla^2\phi=-U'(\phi).
+\label{eq:scalar-wave}
+\end{equation}
+An der Tafel steht nur die Ableitung nach \(x\); die Terme mit \(y\) und \(z\) bleiben unausgeschrieben. Das Ergebnis ist die bekannte Wellengleichung mit einer Kraft aus dem Potential.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_09.png}
+\caption{Lokalität, eine skalare Lorentz-invariante Lagrange-Dichte und die Euler--Lagrange-Gleichung der Feldtheorie.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:41:00.}
+\end{figure}
+
+Die elektromagnetische Rechnung folgt demselben Variationsverfahren, nun aber mit vier Feldern und mehr Indizes.
+
+\section{Die Eichinvarianz legt den Maxwell-Skalar fest}
+
+Fügen wir ein drittes Prinzip hinzu: die Eichinvarianz. Vorerst setzen wir \(J^\mu=0\) und betrachten das freie Feld. Eine Eichtransformation ist
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\chi.
+\label{eq:gauge-transform}
+\end{equation}
+Der Feldstärketensor ändert sich nicht, weil gemischte zweite Ableitungen vertauschbar sind:
+\begin{align}
+F_{\mu\nu}
+&\longrightarrow
+F_{\mu\nu}
++\partial_\mu\partial_\nu\chi
+-\partial_\nu\partial_\mu\chi
+\nonumber\\
+&=F_{\mu\nu}.
+\end{align}
+
+Allein die Lorentz-Invarianz würde den Skalar
+\begin{equation}
+A_\mu A^\mu.
+\end{equation}
+erlauben. In der Maxwell-Theorie ist er dennoch unzulässig, da er sich unter \eqref{eq:gauge-transform} ändert. Die Indizes in diesem Ausdruck bezeichnen Feldkomponenten; sie sind keine Ableitungen. Eine Ableitung wird durch ein Komma angezeigt, wie in \(A_{\nu,\mu}=\partial_\mu A_\nu\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_10.png}
+\caption{Die Eichtransformation und der Lorentz-Skalar \(A_\mu A^\mu\), der verworfen wird, weil er nicht eichinvariant ist.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:43:40.}
+\end{figure}
+
+Die freie Lagrange-Dichte muss daher aus \(F_{\mu\nu}\) aufgebaut werden. Die lineare Spur scheitert:
+\begin{equation}
+F^\mu{}_\mu=0.
+\end{equation}
+Aufgrund der Antisymmetrie muss jede Diagonalkomponente verschwinden:
+\begin{equation}
+F_{00}=F_{11}=F_{22}=F_{33}=0.
+\end{equation}
+Das Heben eines Index kann zwar ein Vorzeichen ändern, aber aus null kann dadurch kein anderer Wert werden.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_11.png}
+\caption{Der Versuch, eine lineare Spur zu bilden, und die verschwindenden Diagonaleinträge des antisymmetrischen Feldstärketensors.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:47:00.}
+\end{figure}
+
+Der erste von null verschiedene Lorentz-Skalar ist quadratisch:
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}.
+\label{eq:f2-scalar}
+\end{equation}
+Entwickeln wir die Kontraktion, statt sie einfach hinzuschreiben. Die gemischten Komponenten enthalten das elektrische Feld. Das Heben ihres Zeitindex liefert ein Minuszeichen, und sowohl die Anordnungen \(0i\) als auch \(i0\) treten auf:
+\begin{equation}
+\sum_i\left(F_{0i}F^{0i}+F_{i0}F^{i0}\right)
+=-2E^2.
+\end{equation}
+Die rein räumlichen Komponenten enthalten das magnetische Feld. Das Heben räumlicher Indizes ändert kein Vorzeichen, und auch hier treten beide Anordnungen auf:
+\begin{equation}
+\sum_{i<j}\left(F_{ij}F^{ij}+F_{ji}F^{ji}\right)
+=2B^2.
+\end{equation}
+Daher gilt
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}=2(B^2-E^2),
+\qquad
+-F_{\mu\nu}F^{\mu\nu}=2(E^2-B^2).
+\label{eq:f2-eb}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_12.png}
+\caption{Die vollständige Kontraktion ausgedrückt durch die Beträge der elektrischen und magnetischen Felder.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:51:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist auch \(F_{00}\) null?}
+\lecturerresponse{Ja. Jede Diagonalkomponente eines antisymmetrischen Tensors verschwindet, auch \(F_{00}\). Nur die gemischten Komponenten außerhalb der Diagonalen, die \(\mathbf E\) darstellen, und die räumlichen Komponenten außerhalb der Diagonalen, die \(\mathbf B\) darstellen, tragen bei.
+\lecturetimestamp{00:51:36}}
+\end{classroomqa}
+
+Die konventionelle Normierung lautet
+\begin{equation}
+\boxed{
+\mathcal L_{\mathrm{EM}}
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+}
+\label{eq:maxwell-lagrangian}
+\end{equation}
+oder
+\begin{equation}
+\mathcal L_{\mathrm{EM}}
+=
+\frac12(E^2-B^2).
+\label{eq:maxwell-lagrangian-eb}
+\end{equation}
+Das Minuszeichen verleiht dem elektrischen Term das vertraute positive Vorzeichen. Der Faktor \(1/4\) gleicht aus, dass jedes antisymmetrische Komponentenpaar zweimal auftritt, und ergibt so den konventionellen Faktor \(1/2\). Eine Multiplikation der gesamten freien Wirkung mit einer von null verschiedenen Konstante würde die quellenfreien Gleichungen nicht ändern; diese Normierung passt jedoch zur üblichen Quellkopplung.
+
+\section{Variation des freien elektromagnetischen Feldes}
+
+Die unabhängigen Felder sind
+\begin{equation}
+A_0,\qquad A_x,\qquad A_y,\qquad A_z.
+\end{equation}
+Für jede Komponente \(A_\nu\) lautet die Euler--Lagrange-Gleichung
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial A_{\nu,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial A_\nu},
+\qquad
+A_{\nu,\mu}\equiv\partial_\mu A_\nu.
+\label{eq:vector-el-comma}
+\end{equation}
+Die Stellung der Indizes in der Kommaschreibweise sollte man genau beachten: Der erste Index bezeichnet, welche Komponente von \(A\) das Feld ist; der zweite bezeichnet die Koordinate, nach der differenziert wird.
+
+In dieser Schreibweise gilt
+\begin{equation}
+F_{\mu\nu}
+=
+A_{\nu,\mu}-A_{\mu,\nu}.
+\label{eq:f-comma-consistent}
+\end{equation}
+Dies ist genau \eqref{eq:course-f-convention}. Wenn man die Komma-Indizes sprachlich in umgekehrter Reihenfolge wiedergibt, ändert sich in einem Zwischenschritt das Vorzeichen. Deshalb ist eine Rechnung mit Komponenten hilfreich.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_13.png}
+\caption{Der Feldstärketensor in Kommaschreibweise, nachdem die vier Komponenten des Viererpotentials als unabhängige Felder identifiziert wurden.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:55:30.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_14.png}
+\caption{Die Maxwell-Lagrange-Dichte explizit in Ableitungen des Vektorpotentials geschrieben.}
+\par\smallskip
+\textit{Vorlesungszeit: 00:56:45.}
+\end{figure}
+
+\subsection{Eine repräsentative Ableitung}
+
+Wir wählen die Ableitung \(A_{x,y}=\partial_yA_x\). Die Terme \(xy\) und \(yx\) in der vollständigen Summe tragen bei:
+\begin{align}
+\mathcal L_{\mathrm{EM}}
+&\supset
+-\frac14\left(F_{xy}F^{xy}+F_{yx}F^{yx}\right)
+\nonumber\\
+&=
+-\frac12F_{xy}^2
+\nonumber\\
+&=
+-\frac12\left(A_{x,y}-A_{y,x}\right)^2.
+\label{eq:isolated-xy-piece}
+\end{align}
+Die letzte Gleichheit ist zulässig, weil das Vorzeichen beim Quadrieren verschwindet: \(A_{x,y}-A_{y,x}=F_{yx}=-F_{xy}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_15.png}
+\caption{Die repräsentative Ableitung \(A_{x,y}\) und das isolierte antisymmetrische Quadrat.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:00:45.}
+\end{figure}
+
+Wir differenzieren:
+\begin{align}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial A_{x,y}}
+&=
+-\left(A_{x,y}-A_{y,x}\right)
+\nonumber\\
+&=
+F_{xy}.
+\label{eq:component-variation}
+\end{align}
+An der Tafel wird dies zusammengefasst, indem ein Minuszeichen an den Tensor gesetzt wird, dessen Indizes der dort verwendeten Ableitungsreihenfolge folgen. Mit der kursweit geltenden Definition \eqref{eq:course-f-convention} lautet die invariante Aussage
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial(\partial_\mu A_\nu)}
+=
+-F^{\mu\nu}.
+\label{eq:maxwell-canonical-derivative}
+\end{equation}
+Für das Beispiel \(\partial_yA_x\) ergibt sich daraus \(-F^{yx}=F^{xy}\), genau wie in \eqref{eq:component-variation}. Der scheinbare Vorzeichenunterschied beruht also nur auf der Reihenfolge der Indizes bei der Buchführung.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_16.png}
+\caption{Entwicklung des ausgewählten Quadrats vor der Ableitung nach einer Ableitung des Potentials.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:03:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was ist mit dem Faktor \(1/2\) bei der Komponentenableitung geschehen?}
+\lecturerresponse{Beim Ableiten des Quadrats entsteht ein Faktor zwei, der sich mit \(1/2\) kürzt:
+\[
+\frac{d}{dx}\left[-\frac12x^2\right]=-x.
+\]
+Die frühere Änderung von \(1/4\) zu \(1/2\) rührte daher, dass die beiden geordneten Tensor-Komponenten \(xy\) und \(yx\) auftreten. \lecturetimestamp{01:03:29}}
+\end{classroomqa}
+
+In der Lagrange-Dichte des Vakuums kommt kein undifferenziertes Potential vor:
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}{\partial A_\nu}=0.
+\end{equation}
+Einsetzen in \eqref{eq:vector-el-comma} ergibt
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=0,
+\end{equation}
+oder gleichwertig
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=0.}
+\label{eq:free-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_17.png}
+\caption{Das Ergebnis für eine Komponente verallgemeinert und in die Euler--Lagrange-Gleichung eingesetzt.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:09:00.}
+\end{figure}
+
+Dasselbe Ergebnis folgt eleganter, wenn man die gesamte Wirkung variiert:
+\begin{align}
+\delta S_{\mathrm{EM}}
+&=
+-\frac12\int d^4x\,
+F^{\mu\nu}
+\left(\partial_\mu\delta A_\nu
+-\partial_\nu\delta A_\mu\right)
+\nonumber\\
+&=
+-\int d^4x\,F^{\mu\nu}\partial_\mu\delta A_\nu
+\nonumber\\
+&=
+\int d^4x\,
+\left(\partial_\mu F^{\mu\nu}\right)\delta A_\nu,
+\label{eq:global-maxwell-variation}
+\end{align}
+wobei der Randterm verworfen wird. Aufgrund der Antisymmetrie fassen sich die beiden Terme in der ersten Zeile zusammen. Da \(\delta A_\nu\) beliebig ist, folgt \eqref{eq:free-maxwell-from-action}.
+
+\begin{classroomqa}
+\audiencequestion{Hat das isolierte Quadrat vorausgesetzt, dass das Magnetfeld nur in \(z\)-Richtung zeigt?}
+\lecturerresponse{Nein. Zur genaueren Betrachtung wurde ein Term aus der vollständigen Summe herausgegriffen; danach müsste eine Auslassung folgen. Die übrigen räumlichen Paare liefern die anderen magnetischen Komponenten, die Zeit--Raum-Paare die elektrischen Komponenten. \lecturetimestamp{01:08:05}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ändert sich das Ergebnis, wenn man einen Zeitindex statt zweier räumlicher Indizes wählt?}
+\lecturerresponse{Es ergibt dieselbe allgemeine Ableitung, wobei das Vorzeichen der Metrik durch das Heben des Index berücksichtigt wird. Zwei räumliche Indizes wählen eine magnetische Komponente aus; ein zeitlicher und ein räumlicher Index wählen eine elektrische Komponente aus. Die antisymmetrische Formel \eqref{eq:maxwell-canonical-derivative} umfasst beides.
+\lecturetimestamp{01:08:46}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nehmen wir weiterhin \(J^\mu=0\) an?}
+\lecturerresponse{Nur für diese Herleitung des freien Feldes. Die Stromdichte wurde vorübergehend auf null gesetzt, damit der eichinvariante kinetische Term identifiziert werden konnte. Nun nehmen wir sie wieder hinzu und fragen, welcher zusätzliche Term die rechte Seite der Maxwell-Gleichung hervorbringt. \lecturetimestamp{01:09:41}}
+\end{classroomqa}
+
+Die Algebra ist nicht schwierig, aber man muss sie selbst durchrechnen, statt nur zuzusehen. Eine Indexkette einmal mitzuverfolgen macht sie nicht dauerhaft verständlich; sie von Hand nachzuvollziehen schon.
+
+\section{Der erhaltene Viererstrom}
+
+Die Quelle ist der Viererstrom
+\begin{equation}
+J^\mu=(\rho,\mathbf J).
+\end{equation}
+Seine zeitliche Komponente ist die Ladungsdichte, seine räumlichen Komponenten sind die Ladungsströme durch drei zueinander senkrechte Flächen. Äquivalent gilt für eine kleine feste Box
+\begin{equation}
+\frac{\partial\rho}{\partial t}
++\nabla\cdot\mathbf J=0.
+\label{eq:continuity-vector-l9}
+\end{equation}
+Die Ladung in der Box kann nur abnehmen, indem sie durch deren Rand hinausströmt. In kovarianter Schreibweise gilt
+\begin{equation}
+\boxed{\partial_\mu J^\mu=0.}
+\label{eq:continuity-covariant-l9}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_18.png}
+\caption{Ladungsdichte, räumliche Stromdichte und die Deutung anhand einer kleinen Box, bevor die Quellkopplung eingeführt wird.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:14:45.}
+\end{figure}
+
+\section{Die Quellkopplung und die Eichinvarianz}
+
+Der einfachste lokale Lorentz-Skalar, der sowohl im Strom als auch im Potential linear ist, lautet
+\begin{equation}
+S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu A_\mu.
+\label{eq:interaction-action}
+\end{equation}
+Das Gesamtvorzeichen ist eine Konvention. In der Vorlesung wird scherzhaft gesagt, die historische Wahl des Vorzeichens der elektrischen Ladung könne letztlich Benjamin Franklin angelastet werden. Entscheidend ist, dass überall dieselbe Vorzeichenkonvention gilt.
+
+Zunächst scheint \eqref{eq:interaction-action} nicht eichinvariant zu sein. Unter der Transformation \eqref{eq:gauge-transform} gilt
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu\partial_\mu\chi.
+\label{eq:gauge-variation-interaction}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_19.png}
+\caption{Die Wechselwirkungswirkung und ihre Variation unter \(A_\mu\mapsto A_\mu+\partial_\mu\chi\).}
+\par\smallskip
+\textit{Vorlesungszeit: 01:16:45.}
+\end{figure}
+
+Um den Mechanismus auf elementare Weise zu erkennen, entwickeln wir die Kontraktion:
+\begin{equation}
+J^\mu\partial_\mu\chi
+=
+J^0\partial_0\chi
++J^1\partial_1\chi
++J^2\partial_2\chi
++J^3\partial_3\chi.
+\end{equation}
+Nehmen wir an, der Strom sei auf ein großes Labor beschränkt oder falle so schnell ab, dass er am Rand verschwindet. Wir integrieren jeden Term partiell. Zum Beispiel gilt für die erste räumliche Koordinate
+\begin{align}
+-\int d^4x\,J^1\partial_1\chi
+&=
+-\int dt\,dx^2\,dx^3
+\left[J^1\chi\right]_{x^1=-\infty}^{x^1=+\infty}
+\nonumber\\
+&\quad
++\int d^4x\,\chi\,\partial_1J^1
+\nonumber\\
+&=
+\int d^4x\,\chi\,\partial_1J^1.
+\end{align}
+Dasselbe Verfahren lässt sich auf den Zeitterm und die beiden anderen räumlichen Terme anwenden.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_20.png}
+\caption{Die vier Terme der Eichvariation, vor der partiellen Integration ausmultipliziert.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:19:15.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_21.png}
+\caption{Ein repräsentatives Beispiel einer partiellen Integration: Die Ableitung wird von der Eichfunktion auf den Strom übertragen.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:20:45.}
+\end{figure}
+
+Fassen wir alle vier Komponenten zusammen:
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+\int d^4x\,\chi\,\partial_\mu J^\mu.
+\label{eq:gauge-variation-continuity}
+\end{equation}
+Folglich gilt
+\begin{equation}
+\partial_\mu J^\mu=0
+\quad\Longrightarrow\quad
+\delta_\chi S_{\mathrm{int}}=0.
+\end{equation}
+Unter den angenommenen Randbedingungen ist die Quellenwechselwirkung genau dann eichinvariant, wenn der Strom lokal erhalten ist.
+
+\begin{classroomqa}
+\audiencequestion{Genügt es, nur \(\nabla\cdot\mathbf J=0\) zu fordern?}
+\lecturerresponse{Nein. Alle vier Terme sind erforderlich:
+\[
+\partial_\mu J^\mu
+=
+\dot\rho+\nabla\cdot\mathbf J=0.
+\]
+Der erste Term beschreibt die Änderung der Ladungsdichte in der festen Box. Eine von null verschiedene räumliche Divergenz ist zulässig, wenn sie durch diese Änderung ausgeglichen wird. \lecturetimestamp{01:22:00}}
+\end{classroomqa}
+
+\section{Die Maxwell-Gleichung mit Quelle}
+
+Die vollständige elektromagnetische Lagrange-Dichte lautet
+\begin{equation}
+\boxed{
+\mathcal L
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+-J^\mu A_\mu.
+}
+\label{eq:full-maxwell-lagrangian}
+\end{equation}
+Der Quellterm enthält keine Ableitung von \(A_\nu\). Daher lässt er \eqref{eq:maxwell-canonical-derivative} unverändert und trägt bei mit
+\begin{equation}
+\frac{\partial\mathcal L}{\partial A_\nu}=-J^\nu.
+\end{equation}
+Die Euler--Lagrange-Gleichung ergibt somit
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=-J^\nu,
+\end{equation}
+oder
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=J^\nu.}
+\label{eq:sourced-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_22.png}
+\caption{Der freie Term und der Quellterm, zusammen mit den zugehörigen Euler--Lagrange-Ableitungen.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:25:00.}
+\end{figure}
+
+Ein vorgegebener, nicht erhaltener Strom würde gleich zwei Probleme verursachen. Die Wechselwirkungswirkung wäre nicht eichinvariant, und die Maxwell-Gleichungen mit Quelle wären inkonsistent. Ladung kann in einem Gebiet nicht einfach verschwinden, ohne dass ein entsprechender Strom über dessen Rand fließt.
+
+\section{Die Maxwell-Gleichungen führen die Erhaltung wieder her}
+
+Die Verträglichkeit lässt sich unmittelbar an der Feldgleichung ablesen. Anwenden von \(\partial_\nu\) auf \eqref{eq:sourced-maxwell-from-action} ergibt
+\begin{equation}
+\partial_\nu J^\nu
+=
+\partial_\nu\partial_\mu F^{\mu\nu}
+=0,
+\label{eq:antisymmetry-implies-continuity}
+\end{equation}
+weil die Ableitungen unter der Vertauschung \(\mu\leftrightarrow\nu\) symmetrisch sind, während \(F^{\mu\nu}\) antisymmetrisch ist.
+
+Die Vorlesung überprüft dies auch in der Sprache der drei Vektoren, wobei eine Vorzeichenverwechslung an der Tafel zutage tritt. Wir beginnen mit dem Gaußschen Gesetz:
+\begin{equation}
+\rho=\nabla\cdot\mathbf E.
+\end{equation}
+Wir leiten nach der Zeit ab:
+\begin{equation}
+\dot\rho=\nabla\cdot\dot{\mathbf E}.
+\label{eq:rho-dot-div-edot}
+\end{equation}
+Vorläufig stand an der Tafel die Gleichung
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B+\mathbf J.
+\label{eq:provisional-wrong-source-sign}
+\end{equation}
+Ihre Divergenz ergäbe
+\begin{equation}
+\dot\rho=\nabla\cdot\mathbf J,
+\end{equation}
+da die Divergenz einer Rotation verschwindet. Das widerspricht jedoch \eqref{eq:continuity-vector-l9}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_23.png}
+\caption{Die vorläufige Gleichung mit Pluszeichen vor \(\mathbf J\), die das falsche Vorzeichen in der Kontinuitätsgleichung ergibt.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:27:00.}
+\end{figure}
+
+Die Abweichung wird nicht übergangen. Die Rechnung wird live erneut durchgegangen; die erforderliche Kontinuitätsgleichung wird genannt, und ein Mitglied des Publikums überprüft die Gleichung und findet das falsche Vorzeichen der Quelle. Die mit der Konvention verträgliche Komponentengleichung lautet
+\begin{equation}
+\boxed{
+\dot{\mathbf E}+\nabla\times\mathbf B=-\,\mathbf J,
+}
+\label{eq:corrected-source-sign}
+\end{equation}
+oder
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B-\mathbf J.
+\end{equation}
+Nun ergeben die Gleichungen \eqref{eq:rho-dot-div-edot} und \eqref{eq:corrected-source-sign}
+\begin{align}
+\dot\rho
+&=
+\nabla\cdot
+\left(-\nabla\times\mathbf B-\mathbf J\right)
+\nonumber\\
+&=
+-\nabla\cdot\mathbf J,
+\end{align}
+Das ist genau die lokale Ladungserhaltung.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_24.png}
+\caption{Das korrigierte Vorzeichen der Quelle und die wiedergewonnene Kontinuitätsgleichung.}
+\par\smallskip
+\textit{Vorlesungszeit: 01:31:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Müsste der Stromterm auf der rechten Seite \(-\mathbf J\) lauten?}
+\lecturerresponse{Ja. Mit der im gesamten Kurs verwendeten Konvention für den Feldstärketensor lautet der räumliche Anteil von \(\partial_\mu F^{\mu\nu}=J^\nu\) \(\dot{\mathbf E}+\nabla\times\mathbf B=-\mathbf J\).
+Durch diese Korrektur ergibt die Divergenzrechnung wieder \(\dot\rho+\nabla\cdot\mathbf J=0\); die vorangegangene kovariante Herleitung aus der Wirkung bleibt davon unberührt. \lecturetimestamp{01:30:17}}
+\end{classroomqa}
+
+\section{Welches Prinzip ist grundlegend?}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Argumentation zirkulär? Wir haben die Ladungserhaltung verwendet, um die Wirkung eichinvariant zu machen, und dann mithilfe der Wirkung die Maxwell-Gleichungen hergeleitet. Diese implizieren wiederum die Ladungserhaltung.}
+\lecturerresponse{Die Aussagen sind miteinander vereinbar; sie bilden keinen Zirkelschluss, bei dem die Schlussfolgerung bereits vorausgesetzt wird. Man kann von den beobachteten Maxwell-Gleichungen ausgehen und daraus die Kontinuitätsgleichung gewinnen; dann erkennt man \(-J^\mu A_\mu\) als eichinvariante Kopplung. Oder man geht von Lokalität, Lorentz-Invarianz, Eichinvarianz und einer Wirkung aus; die Eichinvarianz verlangt einen erhaltenen Strom, und die Wirkung liefert die Maxwell-Gleichungen. Oder man betrachtet die physikalische Tatsache, dass Ladung nicht lokal verschwinden kann, als Ausgangspunkt. Alle Wege führen zu derselben Struktur. \lecturetimestamp{01:31:11}}
+\end{classroomqa}
+
+Wenn man nach dem sparsamsten konstruktiven Weg fragt, führen Lokalität, Lorentz-Invarianz, Eichinvarianz und das Lagrange-Prinzip gemeinsam auf
+\begin{equation}
+-\frac14F_{\mu\nu}F^{\mu\nu}-J^\mu A_\mu
+\end{equation}
+und damit auf die dynamische Maxwell-Gleichung. Welcher Eintrag in diesem Dreieck als grundlegender gilt, ist teilweise Geschmackssache. Entscheidend ist, dass die Einträge zusammenpassen.
+
+\section{Warum das Wort \emph{Eichung}?}
+
+\begin{classroomqa}
+\audiencequestion{Die Mathematik ist klar, aber was bedeutet das Wort
+\emph{Eichung} hier?}
+\lecturerresponse{Die Bezeichnung ist ein historischer Anachronismus. Eine Eichung kann sich auf einen gewählten Nullpunkt beziehen, wie bei einer Druckmessung relativ zu einem Referenzwert. Hermann Weyl brachte die Idee ursprünglich mit einem lokalen Längenmaßstab in Verbindung; diese Deutung entsprach nicht der richtigen Physik. Der Begriff blieb erhalten, als man den Freiheitsgrad zutreffend mit der Phase einer quantenmechanischen Wellenfunktion verknüpfte. In der vorliegenden klassischen Rechnung ändert eine Änderung von \(A_\mu\) um \(\partial_\mu\chi\) den beschreibenden Nullpunkt, ohne \(F_{\mu\nu}\) zu verändern. Die tiefergehende quantenmechanische Bedeutung wird später behandelt.
+\lecturetimestamp{01:34:49}}
+\end{classroomqa}
+
+Die historische Bezeichnung sollte die entscheidende Aussage nicht verdecken: Potentiale, die durch \eqref{eq:gauge-transform} miteinander verknüpft sind, beschreiben dasselbe elektromagnetische Feld. Eichfreiheit ist daher eine Redundanz der Potentialbeschreibung, während der Feldstärketensor eichinvariant ist.
+
+\section{Warum die beiden Maxwell-Gleichungsfamilien asymmetrisch erscheinen}
+
+\begin{classroomqa}
+\audiencequestion{Wenn elektrische und magnetische Felder so symmetrisch sind, warum erscheint dann eine Maxwell-Gleichungsfamilie als Bianchi-Identität, während die andere aus den Bewegungsgleichungen folgt?}
+\lecturerresponse{In der quellenfreien Elektrodynamik kann man ein duales Potential einführen, sodass die Rollen vertauscht werden: Was zuvor eine Bewegungsgleichung war, wird zu einer Bianchi-Identität und umgekehrt. Die physikalische Asymmetrie kommt durch die Quellen ins Spiel. Elektrische Ladungen werden beobachtet, elementare magnetische Monopole dagegen nicht. Gäbe es eine exakte gewöhnliche Symmetrie, die elektrische und magnetische Ladungen vertauscht, würde man magnetische Gegenstücke mit entsprechenden Spektren erwarten; solche werden jedoch nicht beobachtet. Anspruchsvollere Theorien können dennoch magnetische Ladungen oder elektrisch--magnetische Dualitäten enthalten, doch das geht über die vorliegende Herleitung hinaus. \lecturetimestamp{01:37:11}}
+\end{classroomqa}
+
+Die quellenfreien Gleichungen weisen somit eine Struktur auf, in der elektrische--magnetische Größen vertauscht werden können, während der beobachtete Quellensektor eine Beschreibung mit elektrischen Ladungen vorgibt. Das ist mehr als eine typografische Konvention, entwertet aber nicht die Symmetrie, die in einer freien ebenen Welle sichtbar ist.
+
+\section{Was nun zusammengeführt wurde}
+
+Der Weg durch die Vorlesung ist nun vollständig:
+\begin{enumerate}
+\item Die Maxwell-Gleichungen erzwingen, dass eine ebene Welle transversal ist, mit zueinander orthogonalen elektrischen und magnetischen Feldern und der Dispersionsrelation
+      \(\omega=ck\).
+\item Die Bianchi-Gleichungen sind Identitäten, die aus dem Potential folgen; die kontrahierten Gleichungen sind dynamische Gleichungen.
+\item Lokalität und Lorentz-Invarianz führen zu einer Wirkungsdichte, während die Eichinvarianz \(A_\mu A^\mu\) ausschließt und einen Skalar aus \(F_{\mu\nu}\) auswählt.
+\item Die freie Wirkung
+      \(-\tfrac14F_{\mu\nu}F^{\mu\nu}\) liefert die Maxwell-Gleichung im Vakuum.
+\item Die Wechselwirkung \(-J^\mu A_\mu\) ist genau dann eichinvariant, wenn der Strom die Kontinuitätsgleichung erfüllt.
+\item Die Wirkung mit Quellen liefert
+      \(\partial_\mu F^{\mu\nu}=J^\nu\), und die Antisymmetrie ergibt wieder
+      \(\partial_\mu J^\mu=0\).
+\end{enumerate}
+
+Damit ist eine große Fülle an Struktur zusammengekommen: Lagrange-Mechanik, relativistische Feldtheorie, Elektrodynamik, Lorentz-Invarianz, Eichinvarianz und lokale Ladungserhaltung sind zu Bestandteilen einer einzigen Argumentation geworden. Um das zuverlässig zu verarbeiten, muss man mit den Gleichungen von vorn beginnen und jede Ableitung und jedes Vorzeichen von Hand nachvollziehen.
