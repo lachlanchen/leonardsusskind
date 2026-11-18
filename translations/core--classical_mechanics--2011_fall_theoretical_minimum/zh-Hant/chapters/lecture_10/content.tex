@@ -1,0 +1,613 @@
+\chapter{規範不變性與帶電粒子的運動}
+
+\lectureoverview{磁場的散度為零，因此可以用向量勢表示。這種表示並不唯一，但正是向量勢表示使磁力得以納入作用量原理。我們將推導洛倫茲力，區分正則動量與機械動量，構造哈密頓量，並用兩種不同的規範求解均勻磁場中的運動。本講最後會將這套粒子力學與麥克斯韋理論、磁單極子及相空間動力學等更廣泛的主題連結起來。}
+
+\section{力學課程的最後一步}
+
+本講一開始，課程安排出現了一點小意外。原本計劃講完磁場中的帶電粒子，也許再談電場，然後再決定哪些內容留待下次。聽眾指出，這已經是第十講了。既然如此，任務就更明確了：完成磁場問題，並藉此為經典力學的形式架構畫上句點。
+
+我們先快速回顧一下。磁場是向量場，
+\begin{equation}
+  \mathbf B=\mathbf B(\mathbf x),
+  \qquad
+  B_i(\mathbf x)=(B_x,B_y,B_z),
+\end{equation}
+在每一點都有大小和方向。本講假設外加電場與磁場都是靜態的。這項限制是為了讓討論更清楚，並非因為電磁場必定與時間無關。
+
+此外還有一項限制條件：
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+用流體作類比，這表示磁通不會從管子的末端向外湧出，也不會流入漏口而消失。在一般的經典電動力學中，沒有磁源或磁匯。實驗尚未證實基本磁單極子的存在，不過本講一再保留一種可能性：更完整的理論或許會包含磁單極子。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_02.png}
+\caption{本講一開始便一併呈現場的分量、無源條件\(\nabla\cdot\mathbf B=0\)以及向量勢表示法。}
+\lectureframe{00:04:56}
+\end{figure}
+
+與其每次提出一個場時都檢查它的散度，不如直接讓這項限制條件自動成立。令
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+恆等式
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0
+\end{equation}
+便會自動滿足這項條件。新場\(\mathbf A\)就是向量勢。
+
+\section{自動滿足限制條件的代價}
+
+引入\(\mathbf A\)解決了一個問題，卻也帶來另一個問題：它並不唯一。對任意純量函數\(S(\mathbf x)\)，
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla S
+\end{equation}
+都有相同的旋度，因為
+\begin{equation}
+  \nabla\times(\nabla S)=0.
+\end{equation}
+因此，\(\mathbf A\)和\(\mathbf A'\)描述的是同一個磁場。在足夠簡單的區域內，這就是全部的局部不確定性：若兩個向量勢的旋度相同，兩者之差在局部就是某個梯度。整體拓樸可能要求使用多個區域，或帶來其他細節，但這些都不是此處所討論的場所需處理的。
+
+某一個特定的表示稱為\emph{規範}；改換表示則稱為\emph{規範變換}。場\(\mathbf B\)不會改變，因此是規範不變的。基本原則是：可觀測的物理結果不應取決於我們選擇哪一種表示。我們引入\(\mathbf A\)擴充了描述方式，再要求預測具有規範不變性，以去除描述中的冗餘。
+
+\subsection{同一均勻磁場的三種規範}
+
+本講隨即用具體例子說明這個想法。選擇座標，使均勻磁場沿著\(z\)軸：
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=B,
+\end{equation}
+其中\(B\)是常數。第一種向量勢選擇為
+\begin{equation}
+  \mathbf A^{(1)}=(0,Bx,0).
+\end{equation}
+確實，
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -
+  \frac{\partial A_x^{(1)}}{\partial y}
+  =B.
+\end{equation}
+第二種選擇為
+\begin{equation}
+  \mathbf A^{(2)}=(-By,0,0),
+\end{equation}
+此時
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-By)}{\partial y}
+  =B.
+\end{equation}
+
+若要在兩者之間轉換，令
+\begin{equation}
+  S=Cxy,
+  \qquad
+  \nabla S=(Cy,Cx,0).
+\end{equation}
+從\(\mathbf A^{(1)}\)出發，變換後的分量為
+\begin{equation}
+  A_x'=Cy,
+  \qquad
+  A_y'=(B+C)x,
+  \qquad
+  A_z'=0.
+\end{equation}
+取\(C=-B\)便得到\(\mathbf A^{(2)}\)。取\(C=-B/2\)則得到對稱規範：
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \left(-\frac{B}{2}y,\frac{B}{2}x,0\right)
+  =
+  \frac12\,\mathbf B\times\mathbf r.
+\end{equation}
+三種選擇的旋度都相同。稍後我們會特意回到前兩種選擇，因為它們各自能清楚呈現不同的平移對稱性。
+
+\begin{classroomqa}
+\audiencequestion{向量勢能否具有和均勻磁場相同的對稱性？}
+\lecturerresponse{向量勢無法像磁場那樣在空間中保持常量，因為常向量勢的旋度為零。單一規範也無法讓非零均勻磁場的所有平移對稱性都清楚呈現。對稱規範確實能清楚呈現繞\(z\)軸的旋轉對稱性。因此，精確來說，重點不是所有對稱性都必須在\(\mathbf A\)中消失，而是向量勢不一定會同時呈現物理場的全部對稱性。}
+\end{classroomqa}
+
+\(S=Cxy\)這個族群只是其中一個例子。更一般地，我們可以施加有用的規範條件，例如在適當區域內令\(\mathbf A\)的某個分量為零。\emph{規範}這個名稱源自一項歷史上未成功的嘗試：當時有人試圖將這種自由度解釋為局部的單位變換。這種解釋後來被放棄，但名稱沿用至今。
+
+\begin{classroomqa}
+\audiencequestion{規範變換是否總是指加上純量函數的梯度？}
+\lecturerresponse{此處對靜態電磁向量勢使用的就是這種變換。其他規範理論的變換可能更複雜；在引力理論中，座標變換也常被稱為規範變換，因為物理幾何不應取決於座標標籤。不過，本章所說的規範變換是指\(\mathbf A\mapsto\mathbf A+\nabla S\)。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{某種規範在計算上會比另一種更方便嗎？}
+\lecturerresponse{通常會。某種對稱性或守恆定律可能在一種規範中清楚呈現，在另一種規範中則不明顯。這不只是抽象的可能性：本講稍後會看到，一種規範會讓\(y\)成為循環座標，另一種則會讓\(x\)成為循環座標。兩種計算描述的是同一條軌道。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這種不唯一性和選擇本徵空間或求本徵值有關嗎？}
+\lecturerresponse{此處不需要假設兩者有直接關係。這兩個主題都涉及有用的數學選擇，但改變本徵基底和電磁規範變換是不同的數學結構。}
+\end{classroomqa}
+
+\section{磁場中的拉格朗日量}
+
+現在回到力學。我們討論的是在給定磁場中運動的點粒子之拉格朗日量，還不是電磁場本身的拉格朗日量。按照本講採用的單位制，
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{e}{c}
+  \left(
+    A_x\dot x+A_y\dot y+A_z\dot z
+  \right).
+\end{equation}
+用向量記號表示為
+\begin{equation}
+  \boxed{
+  L=\frac12 m\mathbf v^2+\frac{e}{c}\mathbf A(\mathbf x)\cdot\mathbf v
+  }.
+\end{equation}
+係數\(e\)是粒子的電荷。式中明確出現的\(c\)取決於單位制；其結構上的關鍵是速度相關耦合項\(\mathbf A\cdot\mathbf v\)。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_03.png}
+\caption{磁場中粒子的拉格朗日量以分量形式寫出，讓三個速度耦合項清楚可見。}
+\lectureframe{00:25:29}
+\end{figure}
+
+一開始，這一項是先提出來，而不是推導出來的。我們可以試著採用它，看看會得到什麼方程。也可以直接加入由\(\mathbf B\)構成的項，但那樣會產生\(\mathbf B\)的導數，而不是洛倫茲力。向量勢才是能以正確方式與路徑耦合的局部量。
+
+\subsection{為何規範變換不會改變軌跡}
+
+在變分作用量之前，先檢查規範變換對作用量有何影響。若初始與末端的時空點固定，
+\begin{equation}
+  \mathcal S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L\,dt.
+\end{equation}
+在\(\mathbf A\mapsto\mathbf A+\nabla S\)之下，作用量的改變為
+\begin{align}
+  \Delta\mathcal S
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}
+  \nabla S(\mathbf x)\cdot\dot{\mathbf x}\,dt\\
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}\frac{dS(\mathbf x(t))}{dt}\,dt\\
+  &=
+  \frac{e}{c}
+  \left[
+    S(\mathbf x_f)-S(\mathbf x_i)
+  \right].
+\end{align}
+因此作用量的數值會改變。然而，新增項只取決於固定的端點，與路徑中接受變分的部分無關。它的變分為零，因此不會改變駐定軌跡。
+
+\begin{classroomqa}
+\audiencequestion{說方程具有規範不變性，意思是什麼？}
+\lecturerresponse{完成尤拉--拉格朗日計算後，\(\mathbf A\)必須只以旋度組合的形式出現，而這些組合正是\(\mathbf B\)的分量。向量勢本身可以改變，作用量也可以多出端點項，但物理軌跡和力定律必須保持不變。}
+\end{classroomqa}
+
+\section{兩種動量概念}
+
+尤拉--拉格朗日方程可以寫成
+\begin{equation}
+  \dot p_i=\frac{\partial L}{\partial x_i},
+  \qquad
+  p_i=\frac{\partial L}{\partial\dot x_i}.
+\end{equation}
+此時必須區分兩種動量。熟知的機械動量為
+\begin{equation}
+  \boldsymbol{\pi}=m\mathbf v.
+\end{equation}
+正則動量則由拉格朗日量定義：
+\begin{equation}
+  p_i
+  =
+  m\dot x_i+\frac{e}{c}A_i.
+\end{equation}
+因此
+\begin{equation}
+  \boxed{
+  \boldsymbol{\pi}
+  =
+  \mathbf p-\frac{e}{c}\mathbf A
+  =
+  m\mathbf v
+  }.
+\end{equation}
+對自由粒子，或只有一般位置相關勢能的粒子，正則動量與機械動量相同。磁相互作用與速度相關，因此兩者不再相同。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_04.png}
+\caption{板書將正則動量的定義\(p_i=\partial L/\partial\dot x_i\)與\(m\dot x_i\)區分開來，並開始沿著軌跡對它求導。}
+\lectureframe{00:37:33}
+\end{figure}
+
+這項區分不是為了術語而區分。正則動量會出現在哈密頓方程、泊松括號，以及與循環座標相關的守恆律中。機械動量則是可直接測量的質量乘以速度。
+
+\begin{classroomqa}
+\audiencequestion{\((e/c)\mathbf A\cdot\mathbf v\)是動能還是位能？我們怎麼知道該加上還是減去它？}
+\lecturerresponse{它既不是一般的動能，也不是一般的位置相關位能，而是一種與速度相關的相互作用。在目前的推導中，它的正負號是所提出耦合項的一部分；改變這個符號，等同於反轉電荷或\(\mathbf A\)的符號。關鍵的檢驗在於它所導出的力定律。}
+\end{classroomqa}
+
+\section{循著代數推導出洛倫茲力}
+
+本講逐步推導其中一個分量。對\(p_x\)而言，
+\begin{equation}
+  p_x=m\dot x+\frac{e}{c}A_x(\mathbf x).
+\end{equation}
+即使外場是靜態的，\(A_x(\mathbf x(t))\)仍會隨粒子運動而改變。它對時間的全導數為
+\begin{equation}
+  \frac{dA_x}{dt}
+  =
+  \frac{\partial A_x}{\partial x}\dot x
+  +
+  \frac{\partial A_x}{\partial y}\dot y
+  +
+  \frac{\partial A_x}{\partial z}\dot z.
+\end{equation}
+因此，
+\begin{equation}
+  \dot p_x
+  =
+  m\ddot x
+  +
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_yA_x\,\dot y
+    +
+    \partial_zA_x\,\dot z
+  \right).
+\end{equation}
+尤拉--拉格朗日方程的右側為
+\begin{equation}
+  \frac{\partial L}{\partial x}
+  =
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_xA_y\,\dot y
+    +
+    \partial_xA_z\,\dot z
+  \right).
+\end{equation}
+\(\partial_xA_x\,\dot x\)項會相互抵消。將剩餘項依速度分量分組，可得
+\begin{align}
+  m\ddot x
+  &=
+  \frac{e}{c}
+  \left[
+    \left(\partial_xA_y-\partial_yA_x\right)\dot y
+    +
+    \left(\partial_xA_z-\partial_zA_x\right)\dot z
+  \right].
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{\(x\)分量的推導已完成：向量勢的導數已組合成旋度項。}
+\lectureframe{00:46:41}
+\end{figure}
+
+利用
+\begin{align}
+  B_y&=\partial_zA_x-\partial_xA_z,\\
+  B_z&=\partial_xA_y-\partial_yA_x,
+\end{align}
+可得
+\begin{equation}
+  m a_x
+  =
+  \frac{e}{c}
+  \left(B_zv_y-B_yv_z\right)
+  =
+  \frac{e}{c}
+  (\mathbf v\times\mathbf B)_x.
+\end{equation}
+對\(y\)和\(z\)作相同計算，可得
+\begin{equation}
+  \boxed{
+  m\mathbf a=\frac{e}{c}\,\mathbf v\times\mathbf B
+  }.
+\end{equation}
+這就是磁力的洛倫茲力定律。本講將完整方程稱為牛頓--洛倫茲方程：牛頓項給出\(m\mathbf a\)，洛倫茲項則給出磁力。
+
+推導結果通過了計算前提出的三項檢驗。新項確實產生非零的力。由於只有\(\nabla\times\mathbf A=\mathbf B\)留下來，這個力具有規範不變性。向量勢雖然帶有冗餘，卻讓磁力得以納入作用量原理。若在相互作用項中以\(\mathbf B\)取代\(\mathbf A\)，就會得到\(\mathbf B\)的旋度組合，無法導出這個力定律。
+
+\section{哈密頓量與能量的意義}
+
+接下來要問的是，同一個系統能否用哈密頓量描述。先從
+\begin{align}
+  p_x&=m\dot x+\frac{e}{c}A_x,\\
+  p_y&=m\dot y+\frac{e}{c}A_y,\\
+  p_z&=m\dot z+\frac{e}{c}A_z.
+\end{align}
+開始。這些關係可以反解為
+\begin{align}
+  \dot x&=\frac{1}{m}\left(p_x-\frac{e}{c}A_x\right),\\
+  \dot y&=\frac{1}{m}\left(p_y-\frac{e}{c}A_y\right),\\
+  \dot z&=\frac{1}{m}\left(p_z-\frac{e}{c}A_z\right).
+\end{align}
+勒讓德變換為
+\begin{equation}
+  H=\sum_i p_i\dot x_i-L.
+\end{equation}
+代入並消去相關項後，得到
+\begin{equation}
+  \boxed{
+  H(\mathbf x,\mathbf p)
+  =
+  \frac{1}{2m}
+  \left(
+    \mathbf p-\frac{e}{c}\mathbf A(\mathbf x)
+  \right)^2
+  }.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_06.png}
+\caption{完成的哈密頓量推導在左側保留三個正則動量，右側則是最小耦合形式的平方項。}
+\lectureframe{00:53:05}
+\end{figure}
+
+以正則變數表示時，這個哈密頓量不同於自由粒子的哈密頓量。但若用物理速度表示，則
+\begin{equation}
+  H=\frac{\boldsymbol{\pi}^{\,2}}{2m}
+  =\frac12m\mathbf v^2.
+\end{equation}
+這並不矛盾。同一個數值能量可由\((\mathbf x,\mathbf p)\)的不同函數表示，因此哈密頓方程也會不同；但能量仍等於一般的動能。
+
+由於場是靜態的，\(H\)守恆，因此速率保持不變。洛倫茲力也清楚顯示了這一點：
+\begin{equation}
+  \frac{d}{dt}\left(\frac12mv^2\right)
+  =
+  m\mathbf v\cdot\mathbf a
+  =
+  \frac{e}{c}\,
+  \mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+磁場改變運動方向，不改變速度的大小。它會使軌跡彎曲，但不會作功。
+
+\section{藉由改變規範求解均勻磁場中的運動}
+
+休息過後，我們再來考慮均勻磁場
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z}.
+\end{equation}
+目標不只是求出熟悉的軌道，也要說明為何選擇合適的規範，能讓對稱性的計算幾乎不費吹灰之力。
+
+\subsection{第一種規範：y 與 z 座標是循環座標}
+
+取
+\begin{equation}
+  A_x=A_z=0,
+  \qquad
+  A_y=Bx.
+\end{equation}
+則
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{eB}{c}x\dot y.
+\end{equation}
+式中沒有明確出現\(y\)和\(z\)這兩個座標，因此它們是循環座標，其正則動量守恆。對\(z\)而言，
+\begin{equation}
+  p_z=m\dot z,
+  \qquad
+  \dot p_z=0,
+\end{equation}
+所以
+\begin{equation}
+  a_z=0.
+\end{equation}
+粒子沿磁場方向等速直線運動。
+
+對\(y\)而言，
+\begin{equation}
+  p_y=m\dot y+\frac{eB}{c}x,
+  \qquad
+  \dot p_y=0.
+\end{equation}
+因此
+\begin{equation}
+  m a_y+\frac{eB}{c}v_x=0,
+  \qquad
+  \boxed{m a_y=-\frac{eB}{c}v_x}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_07.png}
+\caption{在規範\(A_y=Bx\)下，板書列出守恆的\(p_z\)和\(p_y\)，以及由此導出的洛倫茲力\(y\)分量。}
+\lectureframe{01:03:50}
+\end{figure}
+
+\subsection{第二種規範：x 座標是循環座標}
+
+現在改用
+\begin{equation}
+  A_x=-By,
+  \qquad
+  A_y=A_z=0.
+\end{equation}
+拉格朗日量變為
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  -
+  \frac{eB}{c}y\dot x.
+\end{equation}
+這次\(x\)是循環座標：
+\begin{equation}
+  p_x=m\dot x-\frac{eB}{c}y,
+  \qquad
+  \dot p_x=0.
+\end{equation}
+所以
+\begin{equation}
+  \boxed{m a_x=\frac{eB}{c}v_y}.
+\end{equation}
+結合第一種規範下的結果和\(a_z=0\)，恰好得到
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times B\hat{\mathbf z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_08.png}
+\caption{切換規範後，兩個橫向洛倫茲力分量都清楚呈現。它們分別在不同規範下以正則動量守恆律的形式導出。}
+\lectureframe{01:08:05}
+\end{figure}
+
+物理上的平移對稱性始終存在。規範的選擇只改變了這種對稱性中，哪一部分會以一般循環座標的形式明確呈現。這就是為何正則動量在一種規範下守恆，在另一種規範下則呈現不同形式，而可測量的加速度仍保持不變。
+
+\begin{classroomqa}
+\audiencequestion{正則動量的各分量具有規範不變性嗎？它們有直接的物理意義嗎？}
+\lecturerresponse{沒有。在\(\mathbf A\mapsto\mathbf A+\nabla S\)之下，正則動量會改變\((e/c)\nabla S\)。機械動量\(m\mathbf v=\mathbf p-(e/c)\mathbf A\)具有規範不變性，而且直接與粒子的速度相關。儘管如此，正則動量仍不可或缺，因為哈密頓方程和泊松括號都以它為變數。}
+\end{classroomqa}
+
+\section{均勻磁場中的軌道}
+
+形式推導已經完成；現在來看看實際運動。先假設\(v_z=0\)，因此粒子一直在\(xy\)平面內運動。加速度垂直於速度，且大小固定：
+\begin{equation}
+  |\mathbf a|
+  =
+  \frac{|e|}{mc}vB.
+\end{equation}
+粒子若以固定速率運動，且加速度大小固定、方向始終垂直於速度，就會沿圓周運動。
+
+若\(r\)是半徑，向心加速度就是\(v^2/r\)。令兩者大小相等，可得
+\begin{equation}
+  m\frac{v^2}{r}
+  =
+  \frac{|e|}{c}vB,
+\end{equation}
+因此
+\begin{equation}
+  \boxed{
+  r=\frac{mcv}{|e|B}
+  }.
+\end{equation}
+本講一開始寫出的式子漏了\(c\)，講者隨即發現它與採用的洛倫茲力慣例不符，便補回這個因子。\(eB\)的正負號決定旋轉方向；半徑本身則為正。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{補回遺漏的\(c\)因子後，得到圓形軌道、切向速度與半徑之間的關係。}
+\lectureframe{01:16:50}
+\end{figure}
+
+磁場決定速率與半徑的關係，卻不決定圓心的位置。圓心可以位於橫向平面上的任何位置。橫向速率越大，軌道半徑越大；電荷量或磁場越大，軌道半徑越小。
+
+若\(v_z\neq0\)，橫向運動仍是圓周運動，而\(z\)則等速前進。兩種運動合起來，便形成繞著磁場方向的螺旋軌跡。\editorialnote{本講分別推導了這兩種運動：\(a_z=0\)以及橫向圓周運動。兩者結合後，便得到所述的螺旋軌跡。}
+
+\section{這個耦合項從何而來？}
+
+軌道的推導讓聽眾回頭追問一開始的問題：\((e/c)\mathbf A\cdot\mathbf v\)這一項是否早已是已知結果？坦白說，這個問題有好幾種邏輯上自洽的出發方式。
+
+\begin{classroomqa}
+\audiencequestion{我們是否只是知道磁場中的拉格朗日量，然後把它寫下來？}
+\lecturerresponse{就本講的呈現方式而言，是的：先寫下與速度成線性的耦合項，再研究它。從這一項出發，可以發現規範不變性，接著發現方程中的旋度組合具有磁場的性質。也可以從觀測到的洛倫茲力出發，尋找相應的作用量；或從現代的規範不變性要求出發。歷史上，這些要素的發現順序並沒有這麼直接。}
+\end{classroomqa}
+
+我們也可以用一項實用的檢驗，判斷所提出的拉格朗日量是否適用於一般的哈密頓量建構。方程
+\begin{equation}
+  p_i=\frac{\partial L}{\partial\dot x_i}
+\end{equation}
+必須能反解出速度，至少對此處所考慮的正則系統而言是如此。更精確地說，速度海森矩陣
+\begin{equation}
+  \frac{\partial^2L}
+       {\partial\dot x_i\,\partial\dot x_j}
+\end{equation}
+必須非奇異。對這個粒子而言，它就是\(m\delta_{ij}\)，因此勒讓德變換有唯一明確的結果。
+
+\begin{classroomqa}
+\audiencequestion{什麼樣的拉格朗日量才算合理？}
+\lecturerresponse{就此處討論的一般力學而言，它應當導出明確的運動方程；而且將速度表示成動量的函數後，應能得到唯一的哈密頓量。奇異拉格朗日量確實會出現在規範場論中，但處理其限制條件所需的工具超出本課程範圍。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{規範對稱性本身會導出守恆量嗎？}
+\lecturerresponse{光憑給定背景場中的粒子問題，還不能回答這個問題。要恰當討論相關的守恆律，必須把電磁場也納入動力學變數。在完整的場論中，規範不變性與電荷守恆相連，但這需要場的作用量和麥克斯韋方程。}
+\end{classroomqa}
+
+\section{固定背景場與麥克斯韋動力學}
+
+到目前為止，我們還沒有說明電磁場如何演化。電磁場是作為固定背景給定的；我們要問的只是：給定\(\mathbf E\)和\(\mathbf B\)，粒子會如何運動？
+
+\begin{classroomqa}
+\audiencequestion{這和麥克斯韋方程有什麼關係？}
+\lecturerresponse{要推導麥克斯韋方程，必須加入電磁場本身的作用量，並同時對場和粒子的軌跡作變分。耦合項\((e/c)\int\mathbf A\cdot d\mathbf x\)是完整作用量的一部分。背景場固定時，場的作用量項不影響粒子軌跡的變分；但若電磁場本身是動力學變數，這一項便不可或缺。}
+\end{classroomqa}
+
+在經典力學中，我們可以略過作用量形式，直接假設
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times\mathbf B.
+\end{equation}
+對於描述試驗粒子的運動而言，這是完全合理的微分方程。但到了量子力學，拉格朗日與哈密頓架構便不可或缺，因為向量勢會直接進入理論。
+
+\section{磁單極子與細螺線管圖像}
+
+若
+\begin{equation}
+  \nabla\cdot\mathbf B\neq0?
+\end{equation}
+則\(\mathbf B\)不可能在所有地方都由單一光滑的向量勢表示，因為任何旋度的散度都為零。本章所用的簡單整體構造便不再適用。
+
+本講以一根極長、極細的條形磁鐵或螺線管來說明這個問題。靠近其中一端，並把另一端移到任意遠處時，外部磁場看起來就像來自單一磁極。回返的磁通並未消失，而是被限制在細管內。若將細管理想化到無法觀測，它便會扮演連接表觀磁單極子的弦。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{黑板上的細螺線管圖像：場線從表觀磁極向外散開，回返磁通則被限制在狹窄的管內。}
+\lectureframe{01:27:35}
+\end{figure}
+
+在一般的經典電磁學中，若將固定磁通擠進橫截面趨近於零的區域，場強與場能就會不斷上升。本講故意以誇張的「能量無限大」回答來強調：真實的磁單極子需要新物理，不能只靠把一般螺線管愈做愈細來實現。在量子理論中，經過適當量子化的通量管可以在核心之外無法被觀測；這正是狄拉克弦構造的概念，儘管完整的磁單極子理論超出本課程的範圍。
+
+\begin{classroomqa}
+\audiencequestion{點粒子可以具有磁矩。磁矩就是磁單極子嗎？}
+\lecturerresponse{不是。磁矩是偶極矩，具有磁極性質相反、大小相等的兩端。磁單極子則會帶有非零的淨磁荷。切開一般磁鐵無法分離出單一磁極；每一塊都會各自形成北極與南極。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{無法分開磁鐵兩端，是否類似夸克禁閉？}
+\lecturerresponse{這是個有用的類比。在一般觀測中，把受禁閉的夸克拉開，並不會得到孤立夸克；連接它們的場會產生新的束縛態。此處並未將兩種機制視為相同，但端點由不可避免的通量結構連接起來，這個圖像確實相似。}
+\end{classroomqa}
+
+本講的結論相當謹慎。推導所採用的一般經典理論並不包含磁單極子，但許多高能理論都包含磁單極子。若磁單極子以基本粒子的形式存在，預期其涉及的能量尺度會遠超課堂力學的範圍。
+
+\section{哈密頓的另一套代數與未及展開的主題}
+
+最後一個聽眾提問談到哈密頓的四元數。四元數在歷史上與哈密頓力學分屬不同脈絡。哈密頓想要尋找一種代數，使它在三維旋轉中的作用，類似複數在平面旋轉中的作用。結果是引入三個虛數單位\(i,j,k\)，滿足
+\begin{equation}
+  i^2=j^2=k^2=ijk=-1,
+\end{equation}
+例如，
+\begin{equation}
+  ij=k,
+  \qquad
+  ji=-k.
+\end{equation}
+單位四元數能有效表示三維旋轉。在量子力學中，適當乘上普通虛數單位的因子後，同一種代數結構也可用泡利矩陣表示。這種關聯確實存在，但它並非本課程所發展的正則動量或哈密頓量的由來。
+
+最後一個尚未展開的主題是混沌，但時間已經不夠了。本講最後回顧已建立的工具：動力學是粒子沿著相空間中的軌道運動，而這正是研究規則運動與混沌運動的起點。經典力學的形式架構已足以讓聽眾從這裡繼續探索。

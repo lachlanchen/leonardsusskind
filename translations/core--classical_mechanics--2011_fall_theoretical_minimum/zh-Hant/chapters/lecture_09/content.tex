@@ -1,0 +1,570 @@
+\chapter{磁力、向量位勢與作用量原理}
+
+\lectureoverview{靜電力符合熟悉的保守力形式，但磁力取決於速度。為了將磁力納入拉格朗日力學，我們先介紹所需的向量微積分，利用磁場無源的性質引入向量位勢，探討其規範自由度，接著在作用量中建構磁力項。}
+
+\section{一種新型態的力}
+
+前面討論角動量、陀螺儀與泊松括號時，幾個主題彼此連結了起來。特別是，帶電剛體在磁場中旋轉時，會像陀螺儀一樣進動。現在我們從這個類比轉向單一帶電粒子的運動。
+
+靜電力不需要新的力學。若 \(U(\mathbf x)\) 是位能，則
+\begin{equation}
+  \mathbf F=-\nabla U(\mathbf x),
+\end{equation}
+通常的論證便可得出動能與位能之和守恆。對於電荷為 \(e\)、處於靜電位勢 \(V(\mathbf x)\) 中的粒子，
+\begin{equation}
+  U(\mathbf x)=eV(\mathbf x),
+  \qquad
+  \mathbf F_{\mathrm{el}}=-e\nabla V.
+\end{equation}
+磁力的形式則不同。磁力取決於粒子的速度，因此不能只靠加入另一個一般位能來描述。儘管如此，磁力確實可以由作用量原理導出，也能以拉格朗日與哈密頓形式描述。要建立這種描述，我們得先簡短但不可或缺地插入一段向量微積分。
+
+\section{場與局域運算}
+
+\subsection{場所記錄的量}
+
+場在空間的每一點（一般而言，也在每一時刻）指定一個物理量。溫度與壓力是標量場；風的速度是向量場。電場與磁場也是向量場。其他理論甚至在微觀尺度上也包含標量場，而引力則以張量場描述。在目前的討論中，我們先略去時間依賴，將場寫成 \(\mathbf x\) 的函數。
+
+場在操作上的意義在於局域性。設想某個區域被藏在袋子裡。若要測量該區域中的電場，就在那裡放入一個小型試驗電荷，觀察它的加速度。電荷所受的力由它所在位置的場決定，不必另外逐一詢問每個遠處的源。磁場對運動試驗電荷也適用同樣的說法。稍後，向量位勢會使我們需要修正這幅簡單圖像，但它仍是恰當的出發點。
+
+\subsection{微分算符}
+
+微分會將場轉換成其他場。我們把三個空間微分合寫為
+\begin{equation}
+  \nabla
+  =
+  \left(
+    \frac{\partial}{\partial x},
+    \frac{\partial}{\partial y},
+    \frac{\partial}{\partial z}
+  \right).
+\end{equation}
+這個符號讀作 \emph{del} 或 \emph{nabla}。它倒三角形的外觀令人印象深刻，但真正重要的是，它在形式上像一個向量，其分量是微分算符。
+
+這裡談的是普通的三維物理空間，不是相空間，也不是多粒子組態空間。此外，\(\nabla\) 並不是能獨立存在的向量場；它必須作用在某個對象上。若 \(T(\mathbf x)\) 是標量溫度場，則
+\begin{equation}
+  \nabla T
+  =
+  \left(
+    \frac{\partial T}{\partial x},
+    \frac{\partial T}{\partial y},
+    \frac{\partial T}{\partial z}
+  \right)
+\end{equation}
+就是它的梯度，也是真正的向量場。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_01.png}
+\caption{黑板上先將 \(\nabla\) 引入為由空間微分算符構成的向量，接著示範它如何作用於標量場 \(T(\mathbf x)\)。}
+\lectureframe{00:11:30}
+\end{figure}
+
+標量不只是以單一分量表示的量；它的數值不因座標軸的取向而改變。溫度就是典型例子。給定向量場 \(\mathbf E\)，局域量 \(\mathbf E\cdot\mathbf E\) 也是一個標量。相較之下，藉由積分場來構造位勢是一種非局域運算，因為它會用到沿途的場值。
+
+\subsection{散度}
+
+對於向量場 \(\mathbf A=(A_x,A_y,A_z)\)，標量
+\begin{equation}
+  \nabla\cdot\mathbf A
+  =
+  \frac{\partial A_x}{\partial x}
+  +\frac{\partial A_y}{\partial y}
+  +\frac{\partial A_z}{\partial z}
+\end{equation}
+稱為它的散度。用流體來說，正散度表示流體在局部有向外流出的趨勢，負散度則表示有向內匯聚的趨勢。流體的源會產生正散度，匯則產生負散度。這只是定性的圖像，但足以清楚說明磁場無源的性質。
+
+\section{叉積、epsilon 符號與旋度}
+
+\subsection{叉積的分量表示法}
+
+對於兩個向量 \(\mathbf V\) 與 \(\mathbf A\)，叉積的一個分量是
+\begin{equation}
+  (\mathbf V\times\mathbf A)_x
+  =
+  V_yA_z-V_zA_y.
+\end{equation}
+另外兩個分量可依照 \(x\to y\to z\to x\) 的循環順序寫出。將 \(x,y,z\) 換成指標 \(1,2,3\) 會更方便。克羅內克符號定義為
+\begin{equation}
+  \delta_{ij}
+  =
+  \begin{cases}
+    1,&i=j,\\
+    0,&i\ne j,
+  \end{cases}
+\end{equation}
+而 Levi--Civita 符號定義為
+\begin{equation}
+  \epsilon_{123}=\epsilon_{231}=\epsilon_{312}=1,
+  \qquad
+  \epsilon_{132}=\epsilon_{321}=\epsilon_{213}=-1,
+\end{equation}
+只要有任意兩個指標相同，便有 \(\epsilon_{ijk}=0\)。沿三點鐘方向循環排列時，符號為正；反向排列時，符號為負。交換任意一對指標都會使符號反轉，因此 \(\epsilon_{ijk}\) 完全反對稱。
+
+我們也採用求和慣例：一個項中重複出現的指標，表示從 \(1\) 到 \(3\) 求和。於是，三個叉積方程可合寫為
+\begin{equation}
+  (\mathbf V\times\mathbf A)_i
+  =
+  \epsilon_{ijk}V_jA_k.
+\end{equation}
+例如，令 \(i=1\)，只剩下 \((j,k)=(2,3)\) 與 \((3,2)\)：
+\begin{equation}
+  (\mathbf V\times\mathbf A)_1
+  =
+  \epsilon_{123}V_2A_3
+  +\epsilon_{132}V_3A_2
+  =
+  V_2A_3-V_3A_2.
+\end{equation}
+因此，這種簡潔記法完整保留了熟悉的分量公式。
+
+\subsection{以反對稱矩陣表示的向量}
+
+還有另一種表示法：
+\begin{equation}
+  V_iA_j-V_jA_i
+  =
+  \epsilon_{ijk}(\mathbf V\times\mathbf A)_k.
+\end{equation}
+左側有兩個指標，並在 \(i\leftrightarrow j\) 下呈反對稱。寫成矩陣時，形式如下：
+\begin{equation}
+  M_{ij}
+  =
+  \begin{pmatrix}
+    0&M_{12}&M_{13}\\
+    -M_{12}&0&M_{23}\\
+    -M_{13}&-M_{23}&0
+  \end{pmatrix}.
+\end{equation}
+對角線元素為零，下三角部分由上三角部分決定，因此只有三個獨立分量。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_02.png}
+\caption{一個叉積分量，以及用來計算其獨立元素數目的示意性 \(3\times3\) 反對稱陣列。格子中的標記只是助記符號，並非額外的符號。}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{叉積，或是把它辨認為另一個向量的做法，在三維以外也有意義嗎？}
+\lecturerresponse{反對稱的二階張量在任何維度都有意義，但把它辨認為向量則是三維的特殊性。三維向量有三個分量，反對稱的 \(3\times3\) 矩陣也有三個獨立分量。到了四維，相應的數目是四與六，因為 \(4(4-1)/2=6\)。反對稱的對象依然存在，而且自然地可視為二形式，但它並不是另一個四維向量。}
+\end{classroomqa}
+
+\subsection{旋度}
+
+將 \(\mathbf V\) 換成 \(\nabla\)，便定義了旋度：
+\begin{equation}
+  (\nabla\times\mathbf A)_i
+  =
+  \epsilon_{ijk}\frac{\partial A_k}{\partial x_j}.
+\end{equation}
+以一般分量表示，
+\begin{align}
+  (\nabla\times\mathbf A)_x
+  &=
+  \frac{\partial A_z}{\partial y}
+  -\frac{\partial A_y}{\partial z},\\
+  (\nabla\times\mathbf A)_y
+  &=
+  \frac{\partial A_x}{\partial z}
+  -\frac{\partial A_z}{\partial x},\\
+  (\nabla\times\mathbf A)_z
+  &=
+  \frac{\partial A_y}{\partial x}
+  -\frac{\partial A_x}{\partial y}.
+\end{align}
+散度描述局部的發散，旋度則描述局部的環流。流體若繞著某個軸旋轉，沿該軸的旋度就不為零。這個圖像用在速度場上特別直觀，但旋度的定義適用於任何向量場。
+
+\section{兩個結構恆等式}
+
+以下兩個性質幾乎涵蓋了全部數學工作：
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0,
+  \qquad
+  \nabla\times(\nabla s)=0.
+\end{equation}
+第一個成立，是因為二階微分的次序可以交換，而 \(\epsilon_{ijk}\) 是反對稱的：
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)
+  =
+  \epsilon_{ijk}\partial_i\partial_j A_k
+  =0.
+\end{equation}
+第二個則來自混合偏導數相等：
+\begin{equation}
+  \bigl[\nabla\times(\nabla s)\bigr]_i
+  =
+  \epsilon_{ijk}\partial_j\partial_k s
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_03.png}
+\caption{黑板上的第一個恆等式：任何旋度的散度都為零。}
+\lectureframe{00:38:26}
+\end{figure}
+
+這兩個方向的證明都很簡單，正好適合作為講課中提到的作業或隨堂測驗。逆命題則需要更仔細處理。在局部，或在適當的單連通或可縮區域上作整體考量時，
+\begin{align}
+  \nabla\cdot\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla\times\mathbf A,\\
+  \nabla\times\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla s.
+\end{align}
+若不加上區域條件，孔洞等整體拓撲特徵可能使這些結論不成立。以下只會用到講課所採用的局部形式。
+
+\section{為什麼磁場可以寫成旋度}
+
+\subsection{沒有觀測到磁源}
+
+磁場 \(\mathbf B\) 是透過它對帶電粒子與電流的作用來操作性定義的。在沒有磁單極子的普通電磁學中，
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+這與電場不同，電場的散度正比於電荷密度。電荷是電通量的源或匯；至今尚未觀測到孤立的磁通量源或匯。
+
+若存在磁單極子，這個方程就會改變。統一場論通常提供理論上的理由，預期這類物體可能存在；但即使存在，它們的質量也可能大到目前的實驗無法產生。因此，現行理論採用磁荷密度為零的假設。
+
+\begin{classroomqa}
+\audiencequestion{磁單極子會是什麼？普通磁鐵不是已經有北極和南極了嗎？}
+\lecturerresponse{孤立的磁單極子會是真正的磁場源或匯，類似電荷。普通條形磁鐵則不同：從北極附近出發的場線會彎曲穿過空間，再由南極返回，並繼續穿過磁鐵材料。外觀看似源與匯的兩端其實彼此相連，就像流體經由看不見的管道流動。磁通量並沒有淨生成或消失。}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_04.png}
+\caption{黑板上對照了看似存在的北極源與南極匯，並將場線畫成穿過磁鐵彼此相連，以強調磁通量並未在兩極起始或終止。}
+\lectureframe{00:44:56}
+\end{figure}
+
+由於 \(\mathbf B\) 的散度為零，利用逆命題，至少在局部可以寫成
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+場 \(\mathbf A\) 稱為向量位勢。乍看之下，這似乎只是以另一種方式描述可測量的場 \(\mathbf B\)，但它的用途要等到建構作用量時才會明朗。
+
+\subsection{向量位勢並不唯一}
+
+若 \(\mathbf A\) 是一個向量位勢，那麼
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla s
+\end{equation}
+也是另一個向量位勢，因為
+\begin{equation}
+  \nabla\times\mathbf A'
+  =
+  \nabla\times\mathbf A+\nabla\times(\nabla s)
+  =
+  \mathbf B.
+\end{equation}
+這種替換稱為\emph{規範變換}。磁場在規範變換下保持不變。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_05.png}
+\caption{黑板上同時寫出定義關係 \(\mathbf B=\nabla\times\mathbf A\) 與規範變換 \(\mathbf A'=\mathbf A+\nabla s\)。}
+\lectureframe{01:03:01}
+\end{figure}
+
+這個字讀作 \emph{gauge}，不是 \emph{gouache}，也不是 \emph{gouge}--——講課時還半開玩笑地嚴格強調了這項區別。這個詞有其歷史由來。它源自早期一種嘗試，試圖將這種自由度與不同位置間長度標準的比較連結起來。原先的詮釋沒有保留下來，但名稱沿用至今。
+
+\begin{classroomqa}
+\audiencequestion{在這裡，規範變換是否專指 \(\mathbf A\mapsto\mathbf A+\nabla s\)？}
+\lecturerresponse{是的，這就是此處使用的完整電磁規範變換。Yang--Mills 理論及其他場論中的規範變換，是同一概念的推廣；但電磁學只需加上一個標量梯度。}
+\end{classroomqa}
+
+向量位勢的不唯一性也說明了哪些量可以直接測量。小區域中的帶電粒子會受到局部 \(\mathbf B\) 的作用，而所有透過規範變換彼此相連的向量位勢，對該處的力都會作出相同預測。這類經典局域實驗無法為 \(\mathbf A\) 指定唯一的數值。
+
+\begin{classroomqa}
+\audiencequestion{加上一個梯度，是否就完整描述了這種不唯一性？}
+\lecturerresponse{在簡單區域的局部範圍內，是的。若 \(\nabla\times\mathbf A'=\nabla\times\mathbf A\)，則 \(\nabla\times(\mathbf A'-\mathbf A)=0\)，因此兩者之差是某個梯度。從整體來看，多連通區域可能還有其他微妙之處。加上一個常向量也已包含在這種形式中，因為常向量是某個線性標量函數的梯度。若對 \(s\) 本身加上一個常數，則不會造成任何改變，因為它的梯度為零。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果規範自由度背後有物理原因，那是什麼？}
+\lecturerresponse{講課中暫且不談這個更深層的詮釋。眼下有用的第一步，是先運用這種自由度，看看它如何進入作用量。熟悉這套形式之後，規範描述何以不可或缺，就會更容易理解。}
+\end{classroomqa}
+
+\section{一個磁場，多種位勢}
+
+考慮最簡單的例子：
+\begin{equation}
+  \mathbf B=b\,\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=b,
+\end{equation}
+其中 \(b\) 是常數。一個向量位勢為
+\begin{equation}
+  \mathbf A^{(1)}=(0,bx,0).
+\end{equation}
+確實，
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -\frac{\partial A_x^{(1)}}{\partial y}
+  =b,
+\end{equation}
+而旋度的其他分量皆為零。
+
+這種選擇似乎特別指定了 \(y\) 方向，儘管物理磁場在 \(x\)-\(y\) 平面內具有旋轉對稱性。另一種選擇則讓這種任意性更明顯：
+\begin{equation}
+  \mathbf A^{(2)}=(-by,0,0).
+\end{equation}
+其旋度為
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-by)}{\partial y}
+  =b.
+\end{equation}
+兩種位勢之差為
+\begin{equation}
+  \mathbf A^{(2)}-\mathbf A^{(1)}
+  =
+  (-by,-bx,0)
+  =
+  \nabla(-bxy).
+\end{equation}
+因此兩者規範等價。具有旋轉對稱性的選擇
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \frac12\,\mathbf B\times\mathbf r
+  =
+  \left(-\frac{by}{2},\frac{bx}{2},0\right),
+\end{equation}
+也是同一族中的另一個成員。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_06.png}
+\caption{黑板的兩個區塊分別列出選擇 \(A_y=bx\) 與 \(A_x=-by\)，兩者都產生相同的均勻磁場 \(B_z=b\)。}
+\lectureframe{01:07:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{這種模糊性，是否等同於用不同方式配置載流線圈來產生磁場？}
+\lecturerresponse{不是。不同的電流配置代表不同的物理源，即使它們在某個區域內產生相同的磁場，在其他地方仍可能產生不同的磁場。即使磁場已在所有地方完全指定，規範自由度依然存在：同一個物理磁場 \(\mathbf B\) 仍可由多種向量位勢描述。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{能不能把加上梯度想成拉伸或壓縮，但不增加扭轉？}
+\lecturerresponse{這是有用的幾何直覺。旋度反映局部的扭轉部分，而純梯度的旋度為零。這項敘述精確地表現在 \(\nabla\times\nabla s=0\) 中。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\mathbf A\) 的方向與 \(\mathbf B\) 的方向之間，有固定的關係嗎？}
+\lecturerresponse{不存在與規範選擇無關的固定關係。上述例子恰好滿足 \(A_z=0\)，但可以再加上一個常數 \(A_z\)，而不改變任何微分。如此一來，\(\mathbf A\) 就不再垂直於 \(\mathbf B\)。在這段經典討論中，只有旋度具有不變的物理意義。}
+\end{classroomqa}
+
+靜電學中也有較簡單的類似情形。由於 \(\mathbf E=-\nabla V\)，將 \(V\) 換成 \(V+C\) 不會改變 \(\mathbf E\)。選用\emph{向量位勢}這個名稱，部分原因是它類比了普通標量位勢的這種自由度：我們可以用某種方式改變位勢，而不改變物理場。
+
+\section{洛倫茲力}
+
+現在可以寫出作用量原理必須導出的力定律。依照此處採用的慣例，
+\begin{equation}
+  \boxed{
+  \mathbf F
+  =
+  e\left(
+    \mathbf E+\frac{\mathbf v}{c}\times\mathbf B
+  \right)
+  =
+  -e\nabla V+\frac{e}{c}\mathbf v\times\mathbf B
+  }.
+\end{equation}
+符號 \(e\) 代表粒子的電荷，\(\mathbf v=\dot{\mathbf x}\) 代表粒子的速度，\(V\) 則是標量位勢。不要因此把 \(V\) 和 \(\mathbf v\) 混為一談。以 SI 制表示，\(V\) 的單位是伏特，\(e\) 的單位是庫侖；式中的 \(1/c\) 則來自講課採用的單位慣例。物理結構上的重點不受單位制影響。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_07.png}
+\caption{黑板上並列展示洛倫茲力的電場項與磁場項。磁力項正比於 \(\mathbf v\times\mathbf B\)。}
+\lectureframe{00:58:54}
+\end{figure}
+
+電場項是保守力，我們已經熟悉；磁場項則是新的。粒子靜止時，磁力項為零，而且磁力同時垂直於 \(\mathbf v\) 與 \(\mathbf B\)。因此，
+\begin{equation}
+  \mathbf v\cdot\mathbf F_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+靜磁場會使粒子的軌跡彎曲，卻不對粒子作功。這與黏滯阻力不同，後者方向與速度相反，並會減少動能。
+
+因子 \(v/c\) 也顯示，依照此處的單位慣例，當場的尺度相當時，慢速粒子受到的磁效應通常小於電效應。電子質量很小，能達到很高的速率，因此磁偏轉仍然很容易觀測。
+
+歷史上，人們先知道載流導線會受力，之後才辨認出單一電荷所受的力。Lorentz 認為，只要把依賴速度的項分配給每個運動電荷，就能理解導線所受的力。完整的電力加磁力表示式如今稱為洛倫茲力定律，不過在目前的討論中，新意主要在磁力部分。
+
+\begin{classroomqa}
+\audiencequestion{整個表示式有專用符號嗎？還是只有磁力部分才稱為洛倫茲力？}
+\lecturerresponse{整個表示式就是力 \(\mathbf F=m\mathbf a\)，通常稱為洛倫茲力。歷史上，磁力項是與 Lorentz 直接相關的部分。電場與磁場透過相對論有深刻的關聯，但要處理目前的力學問題，並不需要用到這種統一。}
+\end{classroomqa}
+
+\subsection{科里奧利力的類比}
+
+我們以前見過速度與固定向量的叉積。在角速度為 \(\boldsymbol\omega\) 的旋轉參考系中，科里奧利力可寫為
+\begin{equation}
+  \mathbf F_{\mathrm{Cor}}
+  =
+  2m\,\mathbf v\times\boldsymbol\omega.
+\end{equation}
+其代數形式與磁力相同：
+\begin{equation}
+  2m\boldsymbol\omega
+  \quad\longleftrightarrow\quad
+  \frac{e}{c}\mathbf B.
+\end{equation}
+因此，垂直於平面的均勻磁場，會以類似旋轉參考系使運動物體偏轉的方式，彎折帶電粒子的軌跡。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_08.png}
+\caption{黑板左側保留洛倫茲力，並補上相應的科里奧利力形式 \(2m\,\mathbf v\times\boldsymbol\omega\)。}
+\lectureframe{01:02:08}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{科里奧利力稱為虛擬力。因為它取決於速度，所以會比磁力更不真實嗎？}
+\lecturerresponse{問題不在於它是否取決於速度。人在旋轉平台上，可以握住運動中的物體，並感受到科里奧利力。它之所以稱為虛擬力，是因為在慣性參考系中它會消失；而旋轉參考系正是以存在這類慣性項為特徵。與其使用\emph{真實}這個詞，說明採用的是哪個參考系與哪個方程，往往更有用。}
+\end{classroomqa}
+
+這個類比還可以透過一個簡短的思想實驗來進一步說明。在旋轉平台上，對某個選定的粒子，適當的靜電場可以抵銷離心力項，適當的均勻磁場則可以抵銷科里奧利力項。這種抵銷只適用於特定的荷質比：電力和磁力隨\(e\)成比例變化，而慣性力則隨\(m\)成比例變化。為電子調整的場配置，無法為具有不同\(e/m\)的粒子抵銷相同的項。
+
+\section{建構帶電粒子的作用量}
+
+\subsection{固定端點下的作用量駐值}
+
+現在來看核心問題：洛倫茲力能否由作用量原理導出？答案是可以，但向量位勢不可或缺。只用粒子與 \(\mathbf B\)，在局部構造出的拉格朗日量無法產生所需的磁力。與其證明這個否定的結論，我們直接建構出可行的作用量。
+
+對於一條軌跡 \(\mathbf x(t)\)，寫成
+\begin{equation}
+  S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L(\mathbf x,\dot{\mathbf x},t)\,dt.
+\end{equation}
+講義以相同的手寫字母表示作用量與向量位勢；為了區別，我們用 \(S\) 表示作用量，用 \(\mathbf A\) 表示向量位勢。在固定兩端點的變分下，物理路徑使 \(S\) 取駐值。傳統上稱為\emph{最小作用量}，這種說法雖然方便，但「作用量駐值」更精確，因為極值不一定是最小值。
+
+固定端點很重要。可以想像把路徑兩端釘在黑板上，再撥動中間部分。這是普通力學中的軌跡，不是弦論中的物件；弦的圖像只是用來想像變分的方式。
+
+\subsection{拉格朗日量可以包含哪些項？}
+
+所有場都關掉時，拉格朗日量就是動能：
+\begin{equation}
+  L_0=\frac{m}{2}\dot{\mathbf x}^{\,2}.
+\end{equation}
+靜電項也很標準：
+\begin{equation}
+  L_{\mathrm{el}}=-eV(\mathbf x).
+\end{equation}
+磁力項必須符合幾項條件：
+\begin{enumerate}
+  \item 必須正比於電荷 \(e\)；
+  \item 必須包含講義所用單位制中的因子 \(1/c\)；
+  \item 必須涉及速度；
+  \item 必須是旋轉純量。
+\end{enumerate}
+
+試探項 \(\mathbf B\cdot\dot{\mathbf x}\) 雖是標量，也含有速度，但會導出錯誤的運動方程。正確的項必須使用向量位勢：
+\begin{equation}
+  L_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  =
+  \frac{e}{c}A_i(\mathbf x)\dot x_i.
+\end{equation}
+因此，時間無關的完整電磁拉格朗日量為
+\begin{equation}
+  \boxed{
+  L
+  =
+  \frac{m}{2}\dot{\mathbf x}^{\,2}
+  +\frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  -eV(\mathbf x)
+  }.
+\end{equation}
+第 10 講會應用 Euler--Lagrange 方程，明確推導出此表示式如何產生洛倫茲力。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_09.png}
+\caption{黑板上完成了作用量的建構：自由粒子的動能項加上 \((e/c)A_i\dot x_i\)。}
+\lectureframe{01:26:36}
+\end{figure}
+
+\section{規範變換只改變作用量的端點項}
+
+作用量中的磁力貢獻為
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}
+  \int_{t_i}^{t_f}A_i(\mathbf x)\dot x_i\,dt.
+\end{equation}
+由於 \(\dot x_i\,dt=dx_i\)，這是沿著粒子路徑 \(\gamma\) 的線積分：
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}\int_\gamma A_i\,dx_i
+  =
+  \frac{e}{c}\int_\gamma\mathbf A\cdot d\mathbf x.
+\end{equation}
+將路徑切分成短線段，取 \(\mathbf A\) 沿著每一線段的分量，乘上線段長度，再將結果相加。這就是該積分的幾何意義。
+
+現在進行規範變換：
+\begin{equation}
+  A_i\longmapsto A_i+\partial_i s.
+\end{equation}
+作用量的改變為
+\begin{align}
+  \Delta S
+  &=
+  \frac{e}{c}\int_\gamma \partial_i s\,dx_i\\
+  &=
+  \frac{e}{c}\int_\gamma ds\\
+  &=
+  \frac{e}{c}
+  \left[
+    s(\mathbf x_f)-s(\mathbf x_i)
+  \right].
+\end{align}
+每一個無窮小線段，都貢獻 \(s\) 在一端與另一端的數值之差。加總時，所有內部項都會首尾相消，最後只剩下兩個端點。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_10.png}
+\caption{線積分、將路徑分成小線段的作法，以及端點結果 \(s(\mathbf x_f)-s(\mathbf x_i)\)。}
+\lectureframe{01:32:31}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{如果規範變換會改變作用量，為什麼軌跡不變？}
+\lecturerresponse{作用量原理比較的是初始點與終點固定的路徑。新增的量只取決於這兩個端點，所以在比較的所有路徑中，它的值都相同，變分也就為零。作用量的數值並非嚴格不變，但 Euler--Lagrange 方程與物理軌跡在規範變換下保持不變。}
+\end{classroomqa}
+
+這項區別是本講最主要的概念性結果：
+\begin{equation}
+  \begin{aligned}
+    S&\ \hbox{may shift by an endpoint term},\\
+    \delta S&\ \hbox{and the equations of motion do not}.
+  \end{aligned}
+\end{equation}
+因此，規範自由度與作用量原理相容。即使磁場無法選出唯一的 \(\mathbf A\)，向量位勢仍然可以出現在拉格朗日量中。
+
+\section{後續推導}
+
+本講已經備妥所需工具並建構出作用量，但刻意停在對作用量作變分之前。接下來的步驟已經確定：
+\begin{enumerate}
+  \item 應用 Euler--Lagrange 方程，導出
+  \(\mathbf F_{\mathrm{mag}}=(e/c)\mathbf v\times\mathbf B\)；
+  \item 計算正則動量；它會不同於 \(m\mathbf v\)；
+  \item 建構哈密頓量；
+  \item 找出守恆律；
+  \item 求解帶電粒子在均勻磁場中的運動。
+\end{enumerate}
+
+這些結果的推導過程，說明了引入向量位勢的原因。磁場是局部可測量的旋度，而向量位勢則能自然地與粒子的路徑耦合。規範變換只會在固定端點處改變這種耦合，因此力學不受影響。

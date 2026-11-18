@@ -1,0 +1,528 @@
+\chapter{狀態、可逆性與運動學}
+
+經典力學不只是一組描述落體、行星繞行或帶電粒子運動的方程式。在選定任何特定方程式之前，我們可以先提出一個更一般的問題：運動定律必須具備什麼形式，才算是經典定律？我們先從簡單到能把每一種可能歷程都畫在黑板上的系統談起。釐清其中的狀態、決定性、可逆性與守恆概念後，我們再回到普通空間中的粒子運動。
+
+\section{兩類問題}
+
+力學中的問題有兩類。一類是詢問支配特定系統的具體定律。行星在大質量物體的引力場中運動，遵循一種定律；帶電粒子在磁場中運動，則遵循另一種定律。這些問題關乎自然界的具體定律。
+
+另一類問題關乎所有這些例子共有的架構。是否有某些規則是每一條容許的定律都必須遵守的？哪些特徵屬於經典力學本身，而與所研究的力或物體無關？具體例子能說明答案，但這門學科是由第二類問題組織起來的。
+
+最適合用來入門的例子，是一枚放在抽象桌面上的抽象硬幣。我們只保留硬幣的一項性質：它可以呈現正面或反面。因此，它的構型空間是
+\begin{equation}
+  \mathcal C=\{H,T\}.
+\end{equation}
+「\emph{構型}」指的是系統可能呈現的狀態之一。初始條件就是選定其中一種狀態。單面硬幣會更簡單，但它只有一種構型，因此什麼都不會發生。兩種狀態就足以讓動力學成為可能。
+
+\section{硬幣：狀態、定律與歷程}
+
+讓時間以整數步進行，就像世界由頻閃燈照亮一樣：
+\begin{equation}
+  t=\ldots,-2,-1,0,1,2,\ldots .
+\end{equation}
+運動定律是一條更新規則，將時刻\(t\)的狀態指定為時刻\(t+1\)的狀態。最簡單的規則是保持原狀：
+\begin{equation}
+  H\longmapsto H,
+  \qquad
+  T\longmapsto T.
+  \label{eq:coin-identity}
+\end{equation}
+從\(H\)出發，完整歷程是\(H,H,H,\ldots\)；從\(T\)出發，則是\(T,T,T,\ldots\)。這條規則雖然乏味，卻能完全預測後續狀態。
+
+另一條可逆規則會交換這兩種狀態：
+\begin{equation}
+  H\longmapsto T,
+  \qquad
+  T\longmapsto H.
+  \label{eq:coin-flip}
+\end{equation}
+現在，歷程會交替出現：
+\begin{equation}
+  H,T,H,T,\ldots,
+  \qquad
+  T,H,T,H,\ldots .
+\end{equation}
+箭頭由更新前的狀態指向更新後的狀態。因此，箭尾表示系統從哪個狀態出發，箭頭則表示它接著進入哪個狀態。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_02.png}
+  \caption{硬幣的兩種構型，以及課堂黑板上的有向翻轉定律。清楚的更新規則見式~\eqref{eq:coin-flip}。}
+  \lectureframe{00:06:50}
+  \label{fig:coin-board}
+\end{figure}
+
+我們可以用一個二值變數來標記硬幣的兩面，
+\begin{equation}
+  \sigma=
+  \begin{cases}
+    +1,&H,\\
+    -1,&T.
+  \end{cases}
+\end{equation}
+物理學中常用字母\(\sigma\)表示二值量，特別是在描述自旋時；不過，這裡不需要任何自旋相關知識。用這套記號，兩條規則可寫成運動方程：
+\begin{align}
+  \sigma(t+1)&=\sigma(t),
+  &&\text{identity law},\label{eq:sigma-identity}\\
+  \sigma(t+1)&=-\sigma(t),
+  &&\text{flip law}.\label{eq:sigma-flip}
+\end{align}
+這個變數沒有引入新的物理內容，只是為構型提供簡潔的標記，並將圖示改寫成方程式。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_03.png}
+  \caption{翻轉定律寫成
+  \(\sigma(t+1)=-\sigma(t)\)。方框中的數值\(\sigma=\pm1\)分別標記正面與反面。}
+  \lectureframe{00:08:58}
+  \label{fig:sigma-board}
+\end{figure}
+
+無論採用哪一條規則，初始狀態與定律都能決定之後每一時刻的狀態。這個說法假設系統是\emph{封閉}的。如果有人伸手進來轉動硬幣，那隻手就是未納入描述的外部影響。這並沒有推翻決定性；我們只是改變了所描述的系統。經典定律旨在支配封閉系統，並將所有會影響其演化的因素都納入考量。
+
+從一個含有兩個元素的集合映射到自身，共有四種數學函數。上面未列出的兩種函數，會把兩個輸入都映至\(H\)，或都映至\(T\)。它們對未來的預測是確定的，卻抹去了兩種可能過去之間的差異。如下文所述，施加可逆性條件後，恰好只有式~\eqref{eq:coin-identity}與\eqref{eq:coin-flip}這兩種映射符合要求。
+
+\section{骰子：軌道與守恆量}
+
+把硬幣換成骰子。就目前的討論而言，骰子唯一重要的性質是它有六種構型，
+\begin{equation}
+  \mathcal C=\{1,2,3,4,5,6\}.
+\end{equation}
+初始條件就是選定其中一個數字。我們也可以再次讓每個狀態保持不變，但要描述較不平凡的規則，有向圖會更有用。考慮
+\begin{equation}
+  1\longmapsto2\longmapsto3\longmapsto4
+  \longmapsto5\longmapsto6\longmapsto1.
+  \label{eq:six-cycle}
+\end{equation}
+例如，從\(4\)出發的歷程是
+
+\[
+  4,5,6,1,2,3,4,\ldots .
+\]
+六個狀態構成一個迴圈。\footnote{來源註記：第一次依箭頭讀圖時，有一句口述說\(6\)會回到\(6\)。緊接著的說明、畫出的迴圈，以及列出的歷程，都表明預期的更新規則是\(6\mapsto1\)。}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_06.png}
+  \caption{單一的六狀態迴圈。每經過一個頻閃時間步，狀態就移至下一個狀態；更新六次後便回到起點。}
+  \lectureframe{00:12:40}
+  \label{fig:six-cycle-board}
+\end{figure}
+
+規則看起來可以更複雜，結構上卻沒有不同。例如，
+\begin{equation}
+  1\to2\to5\to3\to4\to6\to1
+  \label{eq:relabeled-cycle}
+\end{equation}
+仍然是一個六狀態迴圈。如果依照\(1,2,5,3,4,6\)的順序將頂點排列在頁面上，得到的圖就與式~\eqref{eq:six-cycle}相同。像\(1\)和\(5\)這樣的標記只是名稱；迴圈結構不受名稱影響。
+
+另一條在結構上確實不同的定律，會把六個狀態分成兩個迴圈，例如
+\begin{equation}
+  1\to2\to3\to1,
+  \qquad
+  4\to6\to5\to4.
+  \label{eq:two-cycles}
+\end{equation}
+系統仍然只有一顆骰子和一條定律，但從一個迴圈出發的軌跡永遠到不了另一個迴圈。我們可以為這些迴圈指定一個數值\(Q\)，
+\begin{equation}
+  Q=
+  \begin{cases}
+    0,&\text{on the cycle }\{1,2,3\},\\
+    1,&\text{on the cycle }\{4,5,6\}.
+  \end{cases}
+\end{equation}
+狀態每一步都會改變，但\(Q\)保持不變。
+
+\begin{definition}
+守恆量是狀態的一個函數，其值在運動定律作用下保持不變。
+\end{definition}
+
+同樣的想法也容許一個不動點、一個二狀態迴圈和一個三狀態迴圈。守恆標記指出系統位於哪條軌道上，不一定能辨別該軌道內的具體狀態。因此，守恆與運動並不矛盾。保持不變的未必是完整構型，也可以是不同可能構型之間的某種區別。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_07.png}
+  \caption{黑板上有數個互不連通的迴圈：一個不動點、一個二狀態迴圈和一個三狀態迴圈。狀態沿迴圈移動時，迴圈標記仍保持不變。}
+  \lectureframe{00:18:40}
+  \label{fig:conserved-cycles-board}
+\end{figure}
+
+對有限可逆系統而言，每條軌跡都是一個迴圈。單一迴圈不可能有這種簡單意義下的非定值守恆標記，因為軌跡最終會遍歷每個狀態。若有多個迴圈，則可以有這種標記，因為演化不會把狀態從一個部分帶到另一個部分。
+
+\section{狀態必須包含哪些資訊？}
+
+硬幣的例子採用一步規則：下一次呈現的面只取決於目前的面。聽眾提出的問題，正好用來檢驗這項限制是否不可或缺。
+
+\begin{classroomqa}
+\audiencequestion{能不能構造一串正面與反面的結果，使下一次的結果不只取決於眼前看得到的那一面，而是也取決於一個或幾個更早的結果？\lecturetimestamp{00:19:27--00:21:23}}
+
+\lecturerresponse{可以。這種情況下，只有\(H\)或只有\(T\)都不是完整狀態。如果需要知道前一次呈現的面，就把狀態空間擴大為
+\(
+  \{HH,HT,TH,TT\}.
+\)
+每個有序對都記錄目前呈現的面和前一次呈現的面。如此一來，演化仍可寫成這個四狀態空間上的一步規則。如果還需要更多歷程資訊，也一併納入狀態。}
+\end{classroomqa}
+
+這個回答說明了狀態在實際操作上的意義。
+
+\begin{definition}
+系統在某一時刻的狀態，包含了所有必要資訊；這些資訊與運動定律合在一起，足以預測系統的未來。
+\end{definition}
+
+因此，狀態不只是一張快照，而是足以確定演化的完整資料。之後描述牛頓粒子時，光有位置並不足夠；速度也必須列入初始資料。帶有記憶的硬幣，是同一原理最簡單的例子。
+
+\section{無限狀態空間}
+
+狀態有無限多種，不代表需要無限多個物體。考慮一個粒子，它受限於無限直線上的整數格點。它的狀態是一個整數
+\[
+  n\in\mathbb Z.
+\]
+一條定律使它每一步向右移動一格：
+\begin{equation}
+  n(t+1)=n(t)+1.
+  \label{eq:lattice-one}
+\end{equation}
+這條軌道永遠不會閉合，但若沿著未來和過去追蹤，就會經過每一個整數。就這個廣義而言，它扮演著一個無限延伸的迴圈。
+
+另一條定律讓粒子每次移動兩格：
+\begin{equation}
+  n(t+1)=n(t)+2.
+  \label{eq:lattice-two}
+\end{equation}
+此時偶數格點只會在偶數格點之間演化，奇數格點也只會在奇數格點之間演化。奇偶性守恆：
+\begin{equation}
+  \begin{aligned}
+    Q_{\rm parity}(n)&=n\bmod 2,\\
+    Q_{\rm parity}(n(t+1))&=Q_{\rm parity}(n(t)).
+  \end{aligned}
+\end{equation}
+從有限構型空間轉為無限構型空間，雖然容許歷程永不重複，卻不會改變狀態、軌道或守恆的意義。
+
+\section{有決定性仍不代表可逆}
+
+現在來看一條能唯一預測未來，卻不符合另一項經典要求的規則。令一枚三面硬幣有正面、反面和邊緣三種狀態，並定義
+\begin{equation}
+  H\to T,
+  \qquad
+  T\to E,
+  \qquad
+  E\to T.
+  \label{eq:nonreversible-map}
+\end{equation}
+從\(H\)出發，歷程是
+\[
+  H,T,E,T,E,\ldots;
+\]
+從\(T\)或\(E\)出發，之後的交替變化也同樣明確。每個狀態恰有一條出射箭頭，因此這條規則對未來具有決定性。
+
+試圖重建過去時，問題就出現了。如果目前狀態是\(T\)，前一個狀態可能是\(H\)，也可能是\(E\)。兩條歷程合而為一。將所有箭頭反向，問題就一目了然：從\(T\)出發，反向圖有兩種可能的移動方式。反向規則不具決定性。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_08.png}
+  \caption{不可逆的\(H,T,E\)定律與代表性歷程。
+  \(H\)和\(E\)都匯入\(T\)，因此目前狀態無法唯一決定過去。}
+  \lectureframe{00:28:50}
+  \label{fig:nonreversible-board}
+\end{figure}
+
+\begin{definition}
+若目前狀態能唯一決定下一個狀態，也能唯一決定前一個狀態，這條離散定律就是可逆的。在狀態圖中，每個狀態都必須恰有一條出射箭頭和一條入射箭頭。
+\end{definition}
+
+對有限狀態空間而言，可逆更新就是狀態的置換。它不會創造或消除狀態之間的差異，只會重新排列狀態。因此，它的圖會分解成數個迴圈。式~\eqref{eq:nonreversible-map}所示的映射雖然是函數，卻不是一對一函數，所以沒有反函數。
+
+\begin{classroomqa}
+\audiencequestion{如果這種規則描述的是粒子的機率，這樣的規則可以接受嗎？\lecturetimestamp{00:29:46--00:31:17}}
+
+\lecturerresponse{那就屬於不同的架構。本文所述的基本經典力學採用確定性定律，而不是機率性的更新規則。當然可以自行提出並研究這類規則，但就這裡的意義而言，它不是經典力學定律。量子力學的決定方式不同，但仍有類似可逆演化的概念；這需要留待後續討論。經典統計力學也使用機率，但它以底層的力學定律為基礎，並用機率表示我們對初始資料所知不完整。}
+\end{classroomqa}
+
+這項區別很重要。若因為不知道確切的經典狀態而使用機率分布，它就不是非決定性的運動定律。機率分布描述的是我們對系統掌握的資訊；該系統的微觀演化仍假定具有決定性且可逆。
+
+\section{精確定律與不完整的知識}
+
+要作出預測，需要兩項要素：
+\begin{enumerate}
+  \item 運動定律；
+  \item 初始狀態。
+\end{enumerate}
+若初始條件只知道大約值，精確定律也無法給出精確預測。對硬幣來說，要想像看一眼桌面便完全知道它呈現哪一面，並不困難。真實的力學變數是連續的；位置和速度可以取任意實數值，而測量無法提供無限多位小數。
+
+假設真實的初始狀態落在一小片可能狀態的範圍內。在某些動力學下，這片範圍會長時間維持得很小；在另一些動力學下，彼此接近的初始狀態則會迅速分開。在混沌系統中，微小的初始不確定性最終會擴大成顯著差異。大氣就是熟悉的例子。更精確的測量可以延長預測仍有用的時間，但無論測量精度固定為何，總會有某個足夠遙遠的時刻，使預測變得不可靠。
+
+這項實際限制不會使方程產生歧義。若初始條件已知得精確，經典可逆定律便能決定未來與過去。若只能以有限精度掌握初始狀態，定量上要問的則是：若要預測指定長度的時間，初始狀態必須知道得多精確？
+
+圖示檢驗現在可以簡潔地總結：若每個狀態都恰有一條入射箭頭和一條出射箭頭，所表示的定律就具有決定性且可逆。套用到粒子的相應說法會比較不簡單，但表達的是同一種經典架構。
+
+\section{從抽象狀態到空間中的點}
+
+接下來，我們從硬幣和骰子轉向點粒子。粒子可以在一維、三維、五維或任意其他維度中運動；普通空間是最直接的例子。若要定量描述一個點，必須選定：
+\begin{itemize}
+  \item 一個原點；
+  \item 三條彼此垂直的座標軸；
+  \item 這些座標軸的取向；
+  \item 一個長度單位。
+\end{itemize}
+原點的位置是任意約定的，可以設在帕羅奧圖或其他任何地方；物理結論不應取決於這項選擇。座標軸可以標記為\(x,y,z\)，或\(x_1,x_2,x_3\)。確定\(x\)與\(y\)方向後，\(z\)軸仍可指向兩個互相垂直方向中的任一個。我們採用右手定則：右手拇指沿\(x\)方向、食指沿\(y\)方向時，中指便指向\(z\)方向。
+
+座標軸上等距的刻度需要指定長度單位，例如公尺、英尺、英吋或光年。這些約定確定後，每個點便以三個數標記，
+\begin{equation}
+  (x,y,z).
+\end{equation}
+從原點沿三條座標軸移動，就可以到達該點。多粒子系統中的每個粒子，都需要一組這樣的三個座標。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_09.png}
+  \caption{笛卡兒座標軸與一個點的三個座標。圖中採用一套座標約定；點本身則不受原點或座標軸的位置選擇影響。}
+  \lectureframe{00:43:00}
+  \label{fig:coordinates-board}
+\end{figure}
+
+\section{向量及其分量}
+
+向量是具有大小與方向的量。從原點指向某一點的位移是一個向量；速度、加速度、電場及許多其他物理量也都可以用向量描述。我們以粗體表示向量，例如\(\mathbf v\)；其大小則記為\(\lvert\mathbf v\rvert\)。向量大小必為非負數，且只有零向量的大小為零。
+
+從幾何上看，向量是一支可以自由平移的箭頭。只要長度和方向不變，平移箭頭並不會改變向量。在特定應用中，向量可以附著於某個點，例如指定某位置的電場；但附著位置是額外資訊，並非抽象向量本身的一部分。
+
+相對於笛卡兒座標軸，向量的分量為
+\begin{equation}
+  \mathbf v=(v_x,v_y,v_z).
+\end{equation}
+分量是帶正負號的普通數值，可由向量在各軸上的投影得到；它們共同編碼了向量的大小與方向。三維勾股定理給出
+\begin{equation}
+  \lvert\mathbf v\rvert^2
+  =v_x^2+v_y^2+v_z^2,
+  \qquad
+  \lvert\mathbf v\rvert
+  =\sqrt{v_x^2+v_y^2+v_z^2}.
+  \label{eq:vector-magnitude}
+\end{equation}
+分量的比例決定方向。分量為負，表示向量有一部分指向該座標軸的負向。
+
+\subsection{純量乘法與向量加法}
+
+以實數乘向量會改變向量的長度；若該實數為負，方向也會反轉。當\(c>0\)時，\(c\mathbf A\)與\(\mathbf A\)同向，大小為
+\(c\lvert\mathbf A\rvert\)。特別是，\(-\mathbf A\)與\(\mathbf A\)長度相同，但方向相反。
+
+向量加法有三種等價的圖示方式。第一種，將\(\mathbf B\)的箭尾放在\(\mathbf A\)的箭頭處；從\(\mathbf A\)的箭尾指向\(\mathbf B\)的箭頭之向量，就是\(\mathbf A+\mathbf B\)。
+第二種，讓兩個向量的箭尾重合，再補成平行四邊形；其對角線就是兩向量的和。這種畫法清楚呈現交換律：
+\begin{equation}
+  \mathbf A+\mathbf B=\mathbf B+\mathbf A.
+\end{equation}
+第三種，將對應的分量相加：
+\begin{equation}
+  C_i=A_i+B_i,
+  \qquad i=x,y,z,
+  \label{eq:component-addition}
+\end{equation}
+其中\(\mathbf C=\mathbf A+\mathbf B\)。這些規則也定義了\(a\mathbf A+b\mathbf B\)等一般線性組合。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_10.png}
+  \caption{向量加法的三角形與平行四邊形作圖法。兩種作圖法得到相同的向量\(\mathbf A+\mathbf B\)。}
+  \lectureframe{00:53:00}
+  \label{fig:vector-addition-board}
+\end{figure}
+
+一般而言，沒有將一個向量除以另一個向量的運算。不過，向量有兩種標準的乘積。叉積留待之後的課程討論；這裡需要介紹的是點積。
+
+\subsection{點積}
+
+將\(\mathbf A\)投影到由\(\mathbf B\)所定義的軸上。若兩向量的夾角為\(\theta\)，則\(\mathbf A\)沿\(\mathbf B\)方向的帶符號分量為\(\lvert\mathbf A\rvert\cos\theta\)。將這個投影乘以\(\lvert\mathbf B\rvert\)，便定義出
+\begin{equation}
+  \mathbf A\cdot\mathbf B
+  =\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert\cos\theta.
+  \label{eq:dot-geometric}
+\end{equation}
+結果是純量，不是另一個向量。式~\eqref{eq:dot-geometric}對\(\mathbf A\)和\(\mathbf B\)是對稱的，因此\(\mathbf A\cdot\mathbf B=\mathbf B\cdot\mathbf A\)。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_11.png}
+  \caption{黑板上利用投影來構造點積。
+  排版後的形式為
+  \(\mathbf A\cdot\mathbf B=AB\cos\theta\)。}
+  \lectureframe{00:58:30}
+  \label{fig:dot-product-board}
+\end{figure}
+
+點積的正負號包含幾何資訊：兩向量夾銳角時為正，夾鈍角時為負，彼此垂直時為零。因此，對非零向量而言，
+\begin{equation}
+  \mathbf A\perp\mathbf B
+  \quad\Longleftrightarrow\quad
+  \mathbf A\cdot\mathbf B=0
+\end{equation}
+
+用分量表示，
+\begin{equation}
+  \mathbf A\cdot\mathbf B
+  =A_xB_x+A_yB_y+A_zB_z.
+  \label{eq:dot-components}
+\end{equation}
+這個公式讓計算變得直接。特別是，
+\begin{equation}
+  \mathbf A\cdot\mathbf A
+  =A_x^2+A_y^2+A_z^2
+  =\lvert\mathbf A\rvert^2.
+  \label{eq:self-dot}
+\end{equation}
+給定兩向量的分量後，利用式~\eqref{eq:dot-geometric}與\eqref{eq:dot-components}即可求出它們的夾角：
+\begin{equation}
+  \cos\theta
+  =\frac{\mathbf A\cdot\mathbf B}
+  {\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert}.
+\end{equation}
+
+餘弦定理可由相同的代數運算推得。令\(\mathbf A\)和\(\mathbf B\)從同一頂點指向三角形的另外兩個頂點。第三邊的向量是\(\mathbf C=\mathbf A-\mathbf B\)，而不是\(\mathbf A+\mathbf B\)。因此
+\begin{align}
+  C^2
+  &=(\mathbf A-\mathbf B)\cdot(\mathbf A-\mathbf B)\notag\\
+  &=A^2+B^2-2\mathbf A\cdot\mathbf B\notag\\
+  &=A^2+B^2-2AB\cos\theta.
+  \label{eq:law-of-cosines}
+\end{align}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_04.png}
+  \caption{餘弦定理所用的三角形。黑板上的修正指出，閉合邊應為
+  \(\mathbf C=\mathbf A-\mathbf B\)，由此得到式~\eqref{eq:law-of-cosines}。}
+  \lectureframe{01:04:29}
+  \label{fig:law-cosines-board}
+\end{figure}
+
+\section{位置、速度與加速度}
+
+選定一個原點，令\(\mathbf r\)為從原點指向粒子的位置向量。它的分量就是笛卡兒座標：
+\begin{equation}
+  \mathbf r=(x,y,z),
+  \qquad
+  \lvert\mathbf r\rvert=\sqrt{x^2+y^2+z^2}.
+\end{equation}
+改變原點會改變\(\mathbf r\)，這個問題留待之後討論。原點一旦固定，便可用隨時間變化的位置描述運動：
+\begin{equation}
+  \mathbf r(t)=\bigl(x(t),y(t),z(t)\bigr).
+\end{equation}
+因此，軌跡可由三個時間函數表示。
+
+速度是位置對時間的導數：
+\begin{equation}
+  \mathbf v(t)=\frac{d\mathbf r}{dt}
+  =\dot{\mathbf r}(t),
+  \qquad
+  v_i=\frac{dx_i}{dt}=\dot x_i.
+  \label{eq:velocity}
+\end{equation}
+點號一律表示對時間微分。\(\lvert\mathbf v\rvert\)的大小就是速率。一般而言，位置與速度的方向彼此獨立：粒子位於某處時，可以沿問題所容許的任意方向運動。
+
+加速度是速度的變化率，因此也是位置對時間的二階導數：
+\begin{equation}
+  \mathbf a(t)=\frac{d\mathbf v}{dt}
+  =\dot{\mathbf v}(t)
+  =\frac{d^2\mathbf r}{dt^2}
+  =\ddot{\mathbf r}(t),
+  \qquad
+  a_i=\ddot x_i.
+  \label{eq:acceleration}
+\end{equation}
+加速度也是向量。若粒子沿\(x\)正向運動且速度增加，則\(a_x>0\)；若速度減小，則\(a_x<0\)。所謂減速度，就是方向與當前速度相反的加速度。更一般地說，即使速度大小不變，速度也可以因方向改變而改變。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_05.png}
+  \caption{速度分量以位置分量對時間的導數表示。用簡潔的向量記號寫成
+  \(\mathbf v=d\mathbf r/dt\)。}
+  \lectureframe{01:14:24}
+  \label{fig:velocity-board}
+\end{figure}
+
+\subsection{直線上的等加速度運動}
+
+對一維運動，令
+\begin{equation}
+  x(t)=a+bt+ct^2.
+  \label{eq:quadratic-motion}
+\end{equation}
+在\(t=0\)時，粒子位於\(x=a\)。先微分一次，再微分一次，可得
+\begin{align}
+  v(t)=\dot x(t)&=b+2ct,\label{eq:line-velocity}\\
+  a(t)=\ddot x(t)&=2c.\label{eq:line-acceleration}
+\end{align}
+因此，\(b\)是初速度，\(2c\)是固定加速度。若\(c>0\)，速度便線性增加；若\(c<0\)，速度則線性減少。這種位置的二次函數形式，正是等加速度運動的特徵，例如地球表面附近落體運動的理想化描述。
+
+\section{等速率圓周運動}
+
+最後看一個例子：令粒子在\(x\)-\(y\)平面內沿單位圓運動。它在\(t=0\)時從\(x\)軸正向出發，角座標均勻增加：
+\begin{equation}
+  \theta(t)=\omega t.
+\end{equation}
+常數\(\omega\)稱為角頻率。角度增加\(2\pi\)就代表轉完一圈，因此週期為
+\begin{equation}
+  T=\frac{2\pi}{\omega}.
+  \label{eq:circular-period}
+\end{equation}
+角度可以持續增加，超過\(2\pi\)；即使角度不歸零，位置仍會週期性重複。
+
+在單位圓上，
+\begin{equation}
+  \mathbf r(t)
+  =\bigl(\cos\omega t,\,\sin\omega t\bigr).
+  \label{eq:circular-position}
+\end{equation}
+微分後可得
+\begin{equation}
+  \mathbf v(t)
+  =\omega\bigl(-\sin\omega t,\,\cos\omega t\bigr).
+  \label{eq:circular-velocity}
+\end{equation}
+速度與圓相切。我們不必依賴圖示，也能證明速度垂直於半徑：
+\begin{align}
+  \mathbf r\cdot\mathbf v
+  &=\cos\omega t\,(-\omega\sin\omega t)
+    +\sin\omega t\,(\omega\cos\omega t)\notag\\
+  &=0.
+  \label{eq:r-dot-v}
+\end{align}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_12.png}
+  \caption{粒子沿單位圓運動時的位置與速度分量。
+  \(\mathbf r\cdot\mathbf v\)中的相消證明速度與圓相切。}
+  \lectureframe{01:24:30}
+  \label{fig:circular-velocity-board}
+\end{figure}
+
+再微分一次，
+\begin{equation}
+  \mathbf a(t)
+  =-\omega^2
+  \bigl(\cos\omega t,\,\sin\omega t\bigr)
+  =-\omega^2\mathbf r(t).
+  \label{eq:centripetal-acceleration}
+\end{equation}
+加速度與半徑平行，但方向相反，指向圓心。這就是向心加速度。\footnote{術語註記：講課在此處用了「``離心''」一詞，但方程式及其附帶說明所指的是標準的向心加速度，方向朝向圓心。}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_13.png}
+  \caption{圓周運動的加速度分量計算。每個分量都是對應位置分量的\(-\omega^2\)倍，因此
+  \(\mathbf a=-\omega^2\mathbf r\)。}
+  \lectureframe{01:26:30}
+  \label{fig:circular-acceleration-board}
+\end{figure}
+
+因為半徑為一，
+\begin{equation}
+  \lvert\mathbf r\rvert=1,
+  \qquad
+  \lvert\mathbf v\rvert=\omega,
+  \qquad
+  \lvert\mathbf a\rvert=\omega^2.
+\end{equation}
+增加\(\omega\)會使速率按比例增加，而所需的向內加速度則按平方增加。若圓的半徑為\(R\)，同樣的計算會得到\(v=\omega R\)和\(\lvert\mathbf a\rvert=\omega^2R=v^2/R\)；課堂上採用\(R=1\)，是為了讓第一次計算更簡潔。
+
+現在，我們已具備粒子力學所需的基本語言：狀態與初始資料、可逆演化、座標、向量，以及定義速度與加速度的導數。接下來要確切判定，哪些初始資料足以指定一個粒子的狀態，並找出能將這些資料從一個時刻演化到下一個時刻的定律。
