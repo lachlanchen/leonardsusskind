@@ -1204,6 +1204,11 @@ def layout_repairs(book, lang, rel, text):
         anchor = '\\begin{figure}[H]\n\\centering\n\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_16.png}'
         # Flush the earlier float rather than squeeze two large board figures.
         replacements.append((anchor, '\\clearpage\n' + anchor))
+    if (book['id'] == 'core--statistical_mechanics--2013_spring_theoretical_minimum'
+            and lang == 'es' and rel == 'chapters/lecture_06/content.tex'):
+        anchor = '\\begin{figure}[H]\n\\centering\n\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_16.png}'
+        # Keep the final large board figure off the page already carrying figures 14 and 15.
+        replacements.append((anchor, '\\clearpage\n' + anchor))
     if book['id'] == 'core--cosmology--2013_winter_theoretical_minimum' and rel == 'chapters/lecture_06/content.tex':
         if lang == 'zh':
             anchor = '\\begin{equation}\n\\frac{GM}{r^2}=\\frac{v^2}{r},'

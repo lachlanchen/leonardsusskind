@@ -202,6 +202,16 @@ class TranslationTests(unittest.TestCase):
         self.assertIn(r'\fancyfoot[C]', p.page_layout())
         self.assertIn(r'\setlength{\headwidth}{\textwidth}', p.page_layout())
 
+    def test_spanish_page_layout_repairs_are_source_anchored(self):
+        statistical = next(b for b in p.read(p.MANIFEST)['books']
+                           if b['id'] == 'core--statistical_mechanics--2013_spring_theoretical_minimum')
+        figure = ('\\begin{figure}[H]\n\\centering\n'
+                  '\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_16.png}')
+        repaired = p.layout_repairs(statistical, 'es', 'chapters/lecture_06/content.tex', figure)
+        self.assertEqual(repaired, '\\clearpage\n' + figure)
+        with self.assertRaisesRegex(ValueError, 'layout anchor changed'):
+            p.layout_repairs(statistical, 'es', 'chapters/lecture_06/content.tex', 'no figure here')
+
     def test_translation_tex_format_is_isolated(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
             baseline = p.translation_tex_environment()
