@@ -1,0 +1,522 @@
+\chapter{Verbundsysteme, Verschränkung und der Singulettzustand}
+
+\lectureoverview{Eine Frage zur Photonemission macht den Unterschied zwischen einem quantenmechanischen Ereignis und seinem Ensemble-Mittelwert deutlich. Diese Unterscheidung führt auf natürliche Weise zu Messung, Kollaps und der Notwendigkeit, ein System zusammen mit seinem Messapparat zu betrachten. Deshalb konstruieren wir den Tensorproduktraum zweier Systeme, betrachten dann speziell zwei Spins, unterscheiden Produktzustände von verschränkten Zuständen und betten jede Observable eines einzelnen Spins in den zusammengesetzten Raum ein. Der Singulettzustand liefert daraufhin das entscheidende Beispiel: Jeder Spin ist für sich unpolarisiert, dennoch sind gleichgerichtete Komponenten perfekt antikorreliert. Seine basisunabhängige Form bereitet den Boden für den Satz von Bell und für die Unterscheidung zwischen nichtklassischer Korrelation und Überlichtgeschwindigkeitssignalen.}
+
+\section{Diskrete Übergänge bei einem überlagerten Spin}
+
+Betrachten wir zunächst einen Spin in einem Magnetfeld entlang der \(z\)-Achse. In Einheiten mit \(\hbar=1\),
+\begin{equation}
+H=\frac{\omega}{2}\sigma_z,
+\qquad
+E_+=+\frac{\omega}{2},
+\qquad
+E_-=-\frac{\omega}{2}.
+\label{eq:l6-spin-hamiltonian}
+\end{equation}
+Die beiden Energieniveaus liegen um
+\begin{equation}
+\Delta E=E_+-E_-=\omega.
+\label{eq:l6-energy-gap}
+\end{equation}
+auseinander. Wird das Strahlungsfeld mit einbezogen, kann ein Spin im oberen Niveau in das untere übergehen und ein Photon mit der Energie \(\omega\) emittieren. Ein Spin, der sich bereits im unteren Niveau befindet, hat keinen tieferen Spinzustand, in den er unter Emission von Strahlung übergehen könnte.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_01.png}
+\caption{Die beiden Spinenergieniveaus und ihr Abstand \(\omega\) bei \(\hbar=1\).}
+\lectureframe{00:02:35}
+\end{figure}
+
+Der subtile Fall ist ein Spin, der seitwärts ausgerichtet präpariert wurde. Ein klassischer magnetischer Kreisel hat eine stetig veränderliche Energie, die proportional zum Kosinus seines Winkels zum Feld ist. Er präzediert mit der Kreisfrequenz \(\omega\), strahlt mit derselben Frequenz und richtet sich allmählich auf seine Orientierung minimaler Energie aus. Die insgesamt abgestrahlte Energie hängt stetig vom Anfangswinkel ab: Ein anfangs waagerechter Kreisel gibt halb so viel Energie ab wie einer, der oben beginnt.
+
+Die Quantenmechanik erhält dieses klassische Ergebnis nur als Mittelwert. Schreiben wir
+\begin{equation}
+\ket{\psi}=\alpha\ket{u}+\beta\ket{d},
+\qquad
+|\alpha|^2+|\beta|^2=1,
+\label{eq:l6-superposed-spin}
+\end{equation}
+Dabei sind \(\ket{u}\) und \(\ket{d}\) die Eigenzustände der oberen beziehungsweise unteren Energie. Der obere Anteil kann zerfallen, der untere nicht. Daher gilt
+\begin{equation}
+P(\text{one photon})=|\alpha|^2,
+\qquad
+P(\text{no photon})=|\beta|^2.
+\end{equation}
+Wird ein Photon emittiert, hat es die volle Energiedifferenz \(\omega\), nicht einen Bruchteil davon. Die mittlere emittierte Energie ist dennoch
+\begin{equation}
+\expect{E_{\rm emitted}}=|\alpha|^2\omega.
+\end{equation}
+Für einen Spin entlang \(x\) gilt \(|\alpha|^2=|\beta|^2=1/2\), sodass der Mittelwert \(\omega/2\) beträgt. Bei jedem einzelnen Ereignis entsteht weiterhin entweder ein Photon der Energie \(\omega\) oder gar keines. Das stetige klassische Ergebnis gilt für den Ensemble-Mittelwert; die Diskretheit gilt für jedes einzelne Ereignis.
+
+\begin{classroomqa}
+\audiencequestion{Wie genau muss die Energie eines absorbierten Photons mit dem Niveauabstand übereinstimmen?}
+\lecturerresponse{Die Resonanz hat eine endliche Linienbreite. Hat der angeregte Zustand die Lebensdauer \(\tau\), so ist seine charakteristische Energiebreite von der Größenordnung \(\Delta E\sim\hbar/\tau\). Ein größeres magnetisches Dipolmoment koppelt im Allgemeinen stärker an das Strahlungsfeld, verkürzt die Lebensdauer und verbreitert die Linie. Dies ist die Energie-Zeit-Unschärferelation in der für instabile Niveaus relevanten Form.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kann die Photonemission selbst als Messapparat dienen, der den Spin misst?}
+\lecturerresponse{Sie kann zeigen, ob ein Zerfall stattgefunden hat, ist aber nicht das ideale Modell einer wiederholbaren Messung, das wir hier benötigen. Bei einer Messung einer Spin-Komponente sollte der Spin in dem zum registrierten Wert gehörenden Eigenzustand verbleiben. Beim Zerfall hingegen geht jeder Zweig, in dem ein Photon emittiert wird, in das untere Niveau über. Daher registriert der Zerfall nicht einfach beide möglichen Eingangswerte und erhält dabei die jeweils zugehörigen Eigenzustände.}
+\end{classroomqa}
+
+\section{Kollaps und die Notwendigkeit eines zusammengesetzten Systems}
+
+Zwischen Eingriffen entwickelt sich ein isolierter Zustand gemäß der Schr\"odinger-Gleichung. Die Messung wird üblicherweise als zusätzliche Regel formuliert. Sei \(L\) eine Observable mit orthonormalen Eigenvektoren \(\ket{\lambda_i}\) und ihre Entwicklung
+\begin{equation}
+\ket{\psi}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+L\ket{\lambda_i}=\lambda_i\ket{\lambda_i}.
+\label{eq:l6-measurement-expansion}
+\end{equation}
+Eine Messung ergibt einen Wert \(\lambda_k\) mit der Wahrscheinlichkeit \(|\alpha_k|^2\); anschließend ist der Zustand
+\begin{equation}
+\ket{\psi}\longrightarrow\ket{\lambda_k}.
+\label{eq:l6-collapse}
+\end{equation}
+Das Verschwinden der übrigen Anteile aus der Beschreibung nach der Messung nennt man Kollaps.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_02.png}
+\caption{Ein Zustand, entwickelt in der Eigenbasis der Observable \(L\), bevor eines der möglichen Ergebnisse ausgewählt wird.}
+\lectureframe{00:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was ist an der Kollapsregel problematisch?}
+\lecturerresponse{Als operationelle Regel zur Vorhersage von Messergebnissen ist sie nicht problematisch. Die begriffliche Spannung entsteht dadurch, dass ein Messapparat selbst ein physikalisches System ist. Wenn sowohl das Objekt als auch der Messapparat der Quantenmechanik gehorchen, warum sollte ihre Wechselwirkung dann zusätzlich zur unitären Schr\"odinger-Zeitentwicklung ein zweites dynamisches Gesetz erfordern? Der hier gewählte Weg besteht darin, Objekt und Messapparat als ein größeres Quantensystem zu beschreiben.}
+\end{classroomqa}
+
+Die scharfe Trennung zwischen System und Messapparat war ein zentraler Gegenstand der historischen Debatte. Statt diese Debatte durch eine bloße Festlegung zu entscheiden, betrachten wir zunächst, wie Quantensysteme zusammengesetzt werden. Sobald der kombinierte Zustandsraum verfügbar ist, lässt sich die Messung als Wechselwirkung untersuchen, die System und Messapparat miteinander korreliert. Die unmittelbare mathematische Frage lautet daher:
+\begin{quote}
+Wie sieht der Zustandsraum des Ganzen aus, wenn zwei Quantensysteme gegeben sind?
+\end{quote}
+
+\section{Der Tensorproduktraum}
+
+Bezeichnen wir die Systeme mit \(A\) und \(I\) und ihre Hilberträume mit \(\mathcal S_A\) und \(\mathcal S_I\). Ihr zusammengesetzter Raum ist
+\begin{equation}
+\mathcal S_{AI}=\mathcal S_A\otimes\mathcal S_I.
+\label{eq:l6-tensor-space}
+\end{equation}
+Wählen wir für die beiden Faktoren die Orthonormalbasen \(\{\ket{a}\}\) und \(\{\ket{i}\}\). Kombinieren wir jeden Basisvektor des ersten Systems mit jedem Basisvektor des zweiten:
+\begin{equation}
+\ket{a}\otimes\ket{i}\equiv\ket{a\,i}.
+\end{equation}
+Haben die Faktor-Räume die Dimensionen \(D_A\) und \(D_I\), so gilt
+\begin{equation}
+\dim\mathcal S_{AI}=D_A D_I.
+\end{equation}
+Das Skalarprodukt faktorisiert:
+\begin{equation}
+\braket{b\,j}{a\,i}
+=\braket{b}{a}\braket{j}{i}
+=\delta_{ba}\delta_{ji}.
+\label{eq:l6-tensor-inner-product}
+\end{equation}
+Zwei Basiszustände des zusammengesetzten Systems sind also orthogonal, sobald sich die Bezeichnung eines der beiden Teilsysteme unterscheidet.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}
+\caption{Getrennte Zustandsräume, ihr Tensorprodukt und die daraus gebildete gepaarte Orthonormalbasis.}
+\lectureframe{00:24:05}
+\end{figure}
+
+Die gepaarten Basisvektoren spannen nicht den gesamten Raum auf. Ihre vollständige lineare Hülle ist:
+\begin{equation}
+\ket{\Psi}=\sum_{a,i}c_{ai}\ket{a\,i},
+\qquad
+\sum_{a,i}|c_{ai}|^2=1.
+\label{eq:l6-general-tensor-state}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Sind \(\ket{a}\) und \(\ket{i}\) beliebige Vektoren?}
+\lecturerresponse{Hier sind sie Elemente ausgewählter Orthonormalbasen. In jedem Faktor kann eine beliebige Orthonormalbasis verwendet werden. Durch die Paarung dieser Basisvektoren entsteht eine Orthonormalbasis des zusammengesetzten Raums. Beliebige Vektoren erhält man anschließend durch Linearkombinationen wie in Gleichung~\eqref{eq:l6-general-tensor-state}.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hängt das Tensorprodukt von den gewählten Basen ab?}
+\lecturerresponse{Seine Koordinatendarstellung hängt davon ab, der Raum selbst jedoch nicht. Ein Basiswechsel in einem der Teilsysteme ändert lediglich die induzierte Basis, mit der dieselben Vektoren in \(\mathcal S_A\otimes\mathcal S_I\) beschrieben werden.}
+\end{classroomqa}
+
+\section{Zwei Spins und Produktzustände}
+
+Betrachten wir nun zwei Spins. Die Komponenten des ersten bezeichnen wir mit \(\sigma_x,\sigma_y,\sigma_z\), die des zweiten mit \(\tau_x,\tau_y,\tau_z\). In einer \(z\)-Basis lautet die Basis des zusammengesetzten Systems
+\begin{equation}
+\ket{uu},\qquad \ket{ud},\qquad \ket{du},\qquad \ket{dd}.
+\label{eq:l6-two-spin-basis}
+\end{equation}
+Der erste Platz gehört stets zu \(\sigma\), der zweite zu \(\tau\). Ein allgemeiner Zustand ist
+\begin{equation}
+\ket{\Psi}
+=c_{uu}\ket{uu}+c_{ud}\ket{ud}
++c_{du}\ket{du}+c_{dd}\ket{dd}.
+\label{eq:l6-general-two-spin}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Ändern sich die Basisvektoren selbst, wenn die beiden Spins miteinander wechselwirken?}
+\lecturerresponse{Um die Dynamik zu verfolgen, ist keine feste Basis vorgeschrieben. In der gewählten Basis ändert die Wechselwirkung die Koeffizienten \(c_{ab}(t)\), nicht die Definition von \(\ket{uu},\ket{ud},\ket{du},\ket{dd}\). Ein Zustand, der als \(\ket{uu}\) beginnt, kann sich zu einer Superposition oder sogar zu \(\ket{dd}\) entwickeln, während die Koordinatenbasis unverändert bleibt.}
+\end{classroomqa}
+
+Die Konstruktion muss außerdem eine Konsistenzprüfung bestehen. Sind die Spins weit voneinander entfernt und wird nur \(\sigma\) untersucht, müssen die Vorhersagen mit der zuvor entwickelten Theorie eines einzelnen Spins übereinstimmen, bevor \(\tau\) eingeführt wurde. Tensorprodukte sind so konstruiert, dass sie diese lokale Theorie bewahren.
+
+Manche Zustände zweier Spins beschreiben unabhängig präparierte Spins. Sei beispielsweise
+\begin{equation}
+\ket{R}=\frac{\ket{u}+\ket{d}}{\sqrt2}
+\end{equation}
+der \(+1\)-Eigenzustand der \(x\)-Komponente. Dann gilt
+\begin{equation}
+\ket{u}_{\sigma}\otimes\ket{R}_{\tau}
+=\frac{\ket{uu}+\ket{ud}}{\sqrt2}.
+\label{eq:l6-up-right-product}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Können die beiden Faktoren entlang verschiedener Achsen präpariert werden?}
+\lecturerresponse{Ja. Jeder Faktor kann ein beliebiger Ein-Spin-Zustand sein. In Gleichung~\eqref{eq:l6-up-right-product} ist der erste Spin entlang \(z\) und der zweite entlang \(x\) in einem eindeutigen Zustand. Entwickelt man den zweiten Faktor in der \(z\)-Basis, so wird derselbe Produktzustand lediglich in der Basis des zusammengesetzten Systems umgeschrieben.}
+\end{classroomqa}
+
+Der allgemeinste Produktzustand lautet
+\begin{align}
+\ket{\Psi_{\rm prod}}
+&=(\alpha_u\ket{u}+\alpha_d\ket{d})
+\otimes(\beta_u\ket{u}+\beta_d\ket{d})\\
+&=\alpha_u\beta_u\ket{uu}
++\alpha_u\beta_d\ket{ud}
+\\
+&\quad
++\alpha_d\beta_u\ket{du}
++\alpha_d\beta_d\ket{dd}.
+\label{eq:l6-product-expansion}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_04.png}
+\caption{Ein faktorisierter Zustand zweier Spins, entwickelt in der vierdimensionalen Basis des zusammengesetzten Systems.}
+\lectureframe{00:37:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Welche Art von Vektorprodukt tritt in Gleichung~\eqref{eq:l6-product-expansion} auf?}
+\lecturerresponse{Der umfassende Raum ist das Tensorprodukt der beiden Hilberträume. Ein Vektor, der selbst in einen Vektor aus jedem Raum faktorisiert, heißt Produktzustand oder einfacher Tensor. Die meisten Vektoren in einem Tensorproduktraum sind Summen solcher Produkte und lassen sich nicht als ein einzelnes Produkt schreiben.}
+\end{classroomqa}
+
+Die Einschränkung lässt sich direkt an den Koeffizienten erkennen:
+\begin{equation}
+c_{uu}c_{dd}=c_{ud}c_{du}
+\qquad\text{for every product state}.
+\label{eq:l6-rank-one-condition}
+\end{equation}
+Äquivalent dazu hat die \(2\times2\)-Koeffizientenmatrix Rang eins. Dieselbe Schlussfolgerung ergibt die Parameterzählung. Vier komplexe Koeffizienten umfassen acht reelle Parameter; durch die Normierung entfällt einer und durch die irrelevante globale Phase ein weiterer. Damit verbleiben sechs Parameter für einen allgemeinen reinen Zustand zweier Spins. Jeder reine Ein-Spin-Zustand benötigt zwei reelle Parameter, zwei separat festgelegte Spins also nur vier. Produktzustände bilden somit eine besondere vierparametrige Teilmenge des sechsdimensionalen Zustandsraums zweier Spins. Die übrigen Zustände sind verschränkt.
+
+\section{Lokale Observablen im zusammengesetzten Raum}
+
+Die vertrauten Observablen eines einzelnen Spins müssen auch im größeren System erhalten bleiben. Genauer gilt:
+\begin{equation}
+\sigma_m\equiv\sigma_m\otimes I,
+\qquad
+\tau_n\equiv I\otimes\sigma_n,
+\qquad
+m,n\in\{x,y,z\}.
+\label{eq:l6-local-operators}
+\end{equation}
+Die verkürzte Schreibweise ist unproblematisch, sobald die Konvention für die Plätze festgelegt ist. Mit
+\begin{equation}
+\begin{aligned}
+\sigma_x&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.4em]
+\sigma_y&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.4em]
+\sigma_z&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\end{aligned}
+\end{equation}
+wirken die Operatoren des ersten Spins, während die Bezeichnung des zweiten Spins unverändert bleibt:
+\begin{align}
+\sigma_x\ket{u\,i}&=\ket{d\,i},
+&
+\sigma_x\ket{d\,i}&=\ket{u\,i},\\
+\sigma_z\ket{u\,i}&=\ket{u\,i},
+&
+\sigma_z\ket{d\,i}&=-\ket{d\,i}.
+\end{align}
+Beim zweiten Spin bleibt die Bezeichnung des ersten unverändert:
+\begin{align}
+\tau_x\ket{a\,u}&=\ket{a\,d},
+&
+\tau_x\ket{a\,d}&=\ket{a\,u},\\
+\tau_z\ket{a\,u}&=\ket{a\,u},
+&
+\tau_z\ket{a\,d}&=-\ket{a\,d}.
+\label{eq:l6-spectator-action}
+\end{align}
+Auch die \(y\)-Komponente vertauscht ihren aktiven Platz, wobei
+\(\sigma_y\ket{u}=i\ket{d}\) und
+\(\sigma_y\ket{d}=-i\ket{u}\) gelten.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_05.png}
+\caption{Wirkungstabelle für den zweiten Spin: Der erste Index bleibt unverändert.}
+\lectureframe{00:47:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Bedeutet die Anwendung von \(\sigma_x\), dass eine \(x\)-Messung stattgefunden hat, und warum ist das Ergebnis keine Superposition?}
+\lecturerresponse{Die Wirkung eines Operators ist für sich genommen keine Messung. Multipliziert man die Matrix \(\sigma_x\) mit dem \(z\)-Basisvektor \(\ket{u}\), erhält man \(\ket{d}\). Das ist keine Eigenwertgleichung: Ein Eigenvektor behielte bei der Wirkung des Operators seine Richtung. Tatsächlich wird \(\ket{u}\) auf einen orthogonalen Zustand abgebildet. Daran zeigt sich auch, warum eine \(x\)-Messung an einem \(z\)-Eigenzustand maximal zufällig ist. Die Wirkung auf einen Nicht-Eigenvektor ist meist ein algebraischer Zwischenschritt, dessen physikalische Bedeutung sich aus der insgesamt berechneten Größe ergibt.}
+\end{classroomqa}
+
+Operatoren, die auf verschiedene Faktoren wirken, kommutieren. Zum Beispiel gilt
+\begin{equation}
+\sigma_x\tau_x\ket{uu}
+=\ket{dd}
+=\tau_x\sigma_x\ket{uu}.
+\end{equation}
+Dieselbe Gleichheit gilt für jeden Basisvektor des zusammengesetzten Systems und somit für jeden Zustand:
+\begin{equation}
+[\sigma_m,\tau_n]=0
+\qquad\text{for all }m,n.
+\label{eq:l6-local-commutation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_06.png}
+\caption{Getrennte Wirkungen auf die beiden Plätze führen zum verschwindenden Kommutator \([\sigma_x,\tau_x]\).}
+\lectureframe{00:56:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Warum beweist die Prüfung an einem Basisvektor noch nicht, dass zwei Operatoren kommutieren?}
+\lecturerresponse{Für die Gleichheit zweier Operatoren muss ihre Wirkung auf jedem Vektor übereinstimmen. Es genügt, jeden Basisvektor zu prüfen, denn aufgrund der Linearität gilt das Ergebnis dann auch für jede Superposition. Bei lokalen Operatoren ist das Argument für alle vier Basiszustände unmittelbar: Jeder Operator ändert einen anderen Platz, daher ist die Reihenfolge unerheblich.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Gibt es Observablen, die wirklich zum System aus zwei Spins gehören?}
+\lecturerresponse{Ja. Produkte wie \(\sigma_x\tau_x\) und \(\sigma_x\tau_y\) sowie Linearkombinationen solcher Produkte untersuchen gemeinsame Eigenschaften. Die lokalen Observablen beschreiben jeden Faktor für sich; Korrelationsobservablen zeigen, wie die Faktoren zueinander in Beziehung stehen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sind unabhängig präparierte Produktzustände bereits verschränkt?}
+\lecturerresponse{Nein. In einem Produktzustand hat jeder Faktor seinen eigenen Zustandsvektor, und lokale Erwartungswerte faktorisieren. Verschränkung liegt vor, wenn sich der zusammengesetzte Zustand nicht in einen Zustand für \(\sigma\) und einen für \(\tau\) zerlegen lässt.}
+\end{classroomqa}
+
+\section{Der Singulettzustand}
+
+Ein Beispiel maximaler Verschränkung ist
+\begin{equation}
+\ket{S}
+=\frac{1}{\sqrt2}\bigl(\ket{ud}-\ket{du}\bigr).
+\label{eq:l6-singlet}
+\end{equation}
+Die beiden Terme zeigen bereits perfekte Antikorrelation entlang \(z\): Wann immer der eine Spin nach oben weist, weist der andere nach unten. Der tiefere Punkt ist, dass keinem der beiden Spins ein eigener reiner Zustand zugeordnet werden kann.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_07.png}
+\caption{Der antisymmetrische Zustand zweier Spins, der als Singulettzustand identifiziert wird.}
+\lectureframe{01:09:25}
+\end{figure}
+
+Für jeden reinen Zustand eines einzelnen Spins gibt es einen Einheitsvektor \(\bm n\), sodass
+\begin{equation}
+(\bm\sigma\cdot\bm n)\ket{\psi}=\ket{\psi}.
+\end{equation}
+Äquivalent dazu hat der Bloch-Vektor
+\begin{equation}
+\bm r
+=\bigl(\expect{\sigma_x},\expect{\sigma_y},\expect{\sigma_z}\bigr)
+\end{equation}
+bei einem reinen Ein-Spin-Zustand die Länge eins. Daher können seine drei Komponenten nicht alle verschwinden. Ist der Zustand gegeben, ergibt eine Ausrichtung des Detektors entlang \(\bm r\) mit Sicherheit den Messwert \(+1\). Die bekannten Beispiele sind \(z\) für \(\ket{u}\), \(x\) für \((\ket{u}+\ket{d})/\sqrt2\) und eine der \(y\)-Richtungen für \((\ket{u}+i\ket{d})/\sqrt2\).
+
+Berechnen wir nun einen lokalen Mittelwert im Singulettzustand:
+\begin{align}
+\expect{\sigma_z}_S
+&=\frac12
+(\bra{ud}-\bra{du})\sigma_z
+(\ket{ud}-\ket{du})\\
+&=\frac12
+(\bra{ud}-\bra{du})
+(\ket{ud}+\ket{du})\\
+&=0.
+\end{align}
+Für \(\sigma_x\) gilt
+\begin{equation}
+\sigma_x\ket{S}
+=\frac{\ket{dd}-\ket{uu}}{\sqrt2},
+\end{equation}
+und dieser Zustand ist orthogonal zu \(\ket{S}\), also gilt \(\expect{\sigma_x}_S=0\). Die von \(\sigma_y\) herrührenden Phasen ändern nichts an dieser Orthogonalität. Daher gilt
+\begin{equation}
+\expect{\sigma_x}_S
+=\expect{\sigma_y}_S
+=\expect{\sigma_z}_S=0.
+\label{eq:l6-zero-local-sigma}
+\end{equation}
+Aus Symmetriegründen gilt außerdem
+\begin{equation}
+\expect{\tau_x}_S
+=\expect{\tau_y}_S
+=\expect{\tau_z}_S=0.
+\label{eq:l6-zero-local-tau}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_08.png}
+\caption{Die Tafel hält die verschwindenden lokalen Spinmittelwerte sowie den Vertauschungsschritt der \(y\)-Komponente fest, der zum vollständigen Nachweis gehört.}
+\lectureframe{01:14:20}
+\end{figure}
+
+Der Gesamtzustand der beiden Spins ist rein und vollständig bekannt, aber jeder Teil ist lokal unpolarisiert. Da kein reiner Ein-Spin-Zustand einen verschwindenden Bloch-Vektor hat, kann \(\ket{S}\) kein Produktzustand sein.
+
+\begin{classroomqa}
+\audiencequestion{Gibt es auch bei einem gewöhnlichen Produktzustand eine Richtung mit von null verschiedener lokaler Polarisation?}
+\lecturerresponse{Ja. Der Beweis für einen einzelnen Spin gilt für den betreffenden Faktor; der andere Faktor bleibt dabei unbeteiligt. Jeder Faktor eines reinen Produktzustands hat somit einen Bloch-Vektor der Länge eins. Für beide Spins verletzt der Singulettzustand diese Eigenschaft eines Produktzustands.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie lassen sich zwei Spins im Singulettzustand präparieren?}
+\lecturerresponse{Eine Kopplung, die antiparallele Ausrichtung begünstigt, kann den Singulettzustand zum Zustand niedrigster Energie machen. Bringt man die Spins in Wechselwirkung und lässt das Paar Energie an seine Umgebung abgeben, kann es in den Singulettzustand relaxieren. Diese Aussage hängt von der Wechselwirkung ab. Beim isotropen antiferromagnetischen Hamiltonoperator \(H_{\rm int}=J\,\bm\sigma\cdot\bm\tau\) mit \(J>0\) liegt der Singulettzustand unterhalb der drei Triplettzustände.}
+\end{classroomqa}
+
+\begin{classroomqa}Wie lange dauert diese Relaxation?\audiencequestion{
+}\lecturerresponse{Die Zeitskala hängt vom Abstand der Spins, der Stärke ihrer gegenseitigen Kopplung, ihren magnetischen Momenten und ihrer Kopplung an die elektromagnetische Umgebung ab, an die Energie abgegeben wird. Eine stärkere Kopplung bedeutet im Allgemeinen eine schnellere Relaxation.}
+\end{classroomqa}
+
+\begin{classroomqa}Warum kann die antisymmetrische Kombination eine niedrigere Energie als die symmetrische haben?\audiencequestion{
+}\lecturerresponse{Bei Teilchen mit Spin \(\tfrac12\) hat der antisymmetrische Zustand den Gesamtspin null, während die drei symmetrischen Zustände ein Triplett mit Gesamtspin eins bilden. Eine Wechselwirkung proportional zu \(+\bm\sigma\cdot\bm\tau\) ordnet dem Singulett den Eigenwert \(-3\) und dem Triplett den Eigenwert \(+1\) zu. Bei positiver Kopplung liegt das Singulett daher energetisch tiefer. Andere Hamiltonoperatoren müssen die Energieniveaus nicht in derselben Reihenfolge anordnen.}
+\end{classroomqa}
+
+\subsection{Derselbe Zustand in jeder Spinbasis}
+
+Verschränkung verschwindet nicht dadurch, dass man eine geeignetere lokale Basis wählt. Ein später entwickeltes basisunabhängiges Maß dafür ist die Verschränkungsentropie. Der Singulettzustand weist eine noch stärkere Symmetrie auf. Mit
+\begin{equation}
+\ket{u}=\frac{\ket{R}+\ket{L}}{\sqrt2},
+\qquad
+\ket{d}=\frac{\ket{R}-\ket{L}}{\sqrt2},
+\end{equation}
+ergibt das Einsetzen in Gleichung~\eqref{eq:l6-singlet}
+\begin{equation}
+\ket{S}
+=\frac{\ket{LR}-\ket{RL}}{\sqrt2}.
+\label{eq:l6-singlet-x-basis}
+\end{equation}
+In jeder gemeinsamen orthonormalen Spinbasis \(\{\ket{\rm in},\ket{\rm out}\}\) gilt
+\begin{equation}
+\ket{S}
+=\frac{\ket{{\rm in}\,{\rm out}}-\ket{{\rm out}\,{\rm in}}}{\sqrt2},
+\label{eq:l6-singlet-any-basis}
+\end{equation}
+bis auf eine irrelevante globale Phase. Die drei Triplettzustände mischen sich unter einer gemeinsamen Drehung untereinander; der eindimensionale Singulettsektor bleibt dabei bis auf sich selbst unverändert.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_09.png}
+\caption{Das antisymmetrische Muster bleibt beim Wechsel von der Auf-ab-Basis zur Rechts-links-Basis und zu anderen gemeinsamen Spinbasen erhalten.}
+\lectureframe{01:21:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist Verschränkung nur ein Artefakt der Basis, in der der Zustand dargestellt wird?}
+\lecturerresponse{Nein. Lokale Basiswechsel ändern zwar die Koeffizienten, nicht aber, ob der Zustand faktorisiert; die Verschränkungsentropie quantifiziert diese Invarianz. Beim Singulettzustand wird sie durch gemeinsame Drehungen besonders deutlich: Die antisymmetrische Form bleibt in jeder Spinbasis erhalten.}
+\end{classroomqa}
+
+\section{Korrelationsobservablen}
+
+Die lokalen Mittelwerte verschwinden; die Information im Singulettzustand muss daher in gemeinsamen Observablen liegen. Beginnen wir mit
+\begin{equation}
+\sigma_z\tau_z\ket{ud}=-\ket{ud},
+\qquad
+\sigma_z\tau_z\ket{du}=-\ket{du}.
+\end{equation}
+Daraus folgt
+\begin{equation}
+\sigma_z\tau_z\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_z\tau_z}_S=-1.
+\label{eq:l6-zz-correlation}
+\end{equation}
+Das Ergebnis ist nicht bloß ein Mittelwert: Der Singulettzustand ist ein Eigenzustand des Produkts. Gleichgerichtete \(z\)-Messungen liefern daher stets entgegengesetzte Vorzeichen.
+
+Beide \(x\)-Operatoren vertauschen jeweils ihren Platz:
+\begin{equation}
+\sigma_x\tau_x\ket{ud}=\ket{du},
+\qquad
+\sigma_x\tau_x\ket{du}=\ket{ud}.
+\end{equation}
+Der Austausch der beiden Terme kehrt den antisymmetrischen Zustand um:
+\begin{equation}
+\sigma_x\tau_x\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_x\tau_x}_S=-1.
+\end{equation}
+Die beiden Phasen der \(y\)-Operatoren heben sich auf dieselbe Weise auf, sodass
+\begin{equation}
+\expect{\sigma_y\tau_y}_S=-1.
+\end{equation}
+gilt. Dagegen ist der Erwartungswert für verschiedene kartesische Komponenten null. Zum Beispiel
+\begin{equation}
+\sigma_x\tau_z\ket{S}
+=-\frac{\ket{dd}+\ket{uu}}{\sqrt2},
+\qquad
+\expect{\sigma_x\tau_z}_S=0.
+\end{equation}
+Alle diese Ergebnisse sind zusammengefasst durch
+\begin{equation}
+\expect{\sigma_m\tau_n}_S=-\delta_{mn},
+\qquad
+\expect{(\bm\sigma\cdot\bm a)(\bm\tau\cdot\bm b)}_S
+=-\bm a\cdot\bm b.
+\label{eq:l6-singlet-correlation-tensor}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_10.png}
+\caption{Die Korrelationsrechnung hält \(\expect{\sigma_x\tau_x}=-1\) und das Ergebnis für gemischte Achsen \(\expect{\sigma_x\tau_z}=0\) fest.}
+\lectureframe{01:32:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Was bedeutet das Produkt zweier Observablen physikalisch? Wird eine Messung nach der anderen durchgeführt?}
+\lecturerresponse{Im Allgemeinen ist ein hermitesches Produkt eine weitere Observable auf dem zusammengesetzten Raum. Hier kommutiert jeder \(\sigma_m\)-Operator mit jedem \(\tau_n\)-Operator. Daher können die beiden lokalen Komponenten gleichzeitig gemessen und ihre Zahlenwerte miteinander multipliziert werden. Der Produktoperator fasst dieses gemeinsame Ergebnis zusammen; eine zeitliche Reihenfolge ist nicht erforderlich.}
+\end{classroomqa}
+
+Für einen Produktzustand faktorisieren die gemeinsamen Mittelwerte:
+\begin{equation}
+\expect{\sigma_m\tau_n}_{\rm prod}
+=\expect{\sigma_m}_{\sigma}\expect{\tau_n}_{\tau}.
+\end{equation}
+Der Singulettzustand verletzt diese Faktorisierung maximal. Jeder Faktor auf der rechten Seite wäre null, während ein Produkt gleichgerichteter Komponenten auf der linken Seite \(-1\) beträgt. Für sich genommen sind die Spins vollständig zufällig; gemeinsam sind gleichgerichtete Komponenten mit Sicherheit entgegengesetzt.
+
+\begin{classroomqa}
+\audiencequestion{Führt jede Wechselwirkung zwischen zwei Spins zu Verschränkung?}
+\lecturerresponse{Eine allgemeine Kopplung kann einen anfangs faktorisierten Zustand verschränken, und viele gewöhnliche Wechselwirkungen tun dies. Unvermeidlich ist es jedoch nicht: Ein speziell gewählter Produkt-Eigenzustand kann lediglich eine Phase aufnehmen, und ein rein lokaler Hamiltonoperator kann die Faktoren nicht verschränken. Entscheidend ist eine nichttriviale Kopplung, die auf einen Zustand wirkt, den sie nicht als Produktzustand erhält.}
+\end{classroomqa}
+
+\section{Von der Korrelation zu Bells Frage}
+
+Perfekte Antikorrelation ist für sich genommen nicht paradox. Man stelle sich vor, eine Penny- und eine Dime-Münze in eine Tasche zu legen, ungesehen je eine Münze an Alice und Bob zu verteilen und sie weit voneinander entfernt zu positionieren. Sobald Alice sieht, welche Münze sie hat, weiß sie sofort, welche Bob hat. Die Korrelation entstand, als die Münzen beieinander waren; aus der Kenntnis des einen Ergebnisses wird kein Signal an den anderen Ort gesendet.
+
+Das Singulett weist diese einfache Eigenschaft ebenfalls auf, bietet aber zusätzlich eine entscheidende Freiheit: Alice und Bob können beliebige Messrichtungen wählen, und die Quantenmechanik sagt die stetig veränderliche Korrelation \(-\bm a\cdot\bm b\) voraus. Der Satz von Bell fragt, ob all diese Korrelationen aus lokalen klassischen Anweisungen hervorgehen können, die den Teilchen im Voraus mitgegeben wurden.
+
+\begin{classroomqa}
+\audiencequestion{Ist dies der Zustand, der beim Satz von Bell verwendet wird?}
+\lecturerresponse{Ja. Argumente vom Bell-Typ verwenden verschränkte Paare wie das Singulett, nicht einen festgelegten Produktzustand \(\ket{ud}\). Diese Unterscheidung ist wichtig, denn ein Produktzustand liefert getrennte lokale Beschreibungen, während das Singulett in jeder gemeinsamen Basis eine einzige untrennbare Korrelationsstruktur aufweist.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum nennt man die Antikorrelation statistisch, wenn die Ergebnisse gleichgerichteter Messungen stets entgegengesetzt sind?}
+\lecturerresponse{Jedes lokale Ergebnis ist zufällig: Alice kann nicht vorhersagen, ob sie \(+1\) oder \(-1\) erhalten wird. Die bedingte Beziehung ist exakt: Sobald das Ergebnis einer gleichgerichteten Messung bekannt ist, steht das entgegengesetzte Ergebnis der anderen fest. Korrelation bezieht sich auf die gemeinsame Verteilung, nicht auf eine Unsicherheit des Produkts bei gleichgerichteten Messungen.}
+\end{classroomqa}
+
+Eine hilfreiche Möglichkeit, die Frage zu präzisieren, ist die Simulation. Ein einzelner klassischer Computer kann jedes Experiment mit einem einzelnen Spin nachahmen: Er speichert dessen Zustand, entwickelt ihn mit der Schr\"odinger-Gleichung, berechnet die verlangten Wahrscheinlichkeiten und wählt mithilfe eines Zufallszahlengenerators ein Ergebnis aus. Wiederholte Messungen und die magnetische Präzession lassen sich vollständig reproduzieren.
+
+Teilen wir nun ein verschränktes Paar auf zwei klassische Computer auf. Die Computer dürfen miteinander wechselwirken, während das Paar präpariert wird; danach werden sie getrennt, und an weit voneinander entfernten Orten werden die Messrichtungen unabhängig gewählt. Kein Paar getrennter lokaler klassischer Programme kann die quantenmechanischen Korrelationen für jede Wahl der Richtungen reproduzieren, auch nicht, wenn beide über gemeinsam festgelegte Zufallszahlen verfügen. Eine globale klassische Simulation ist möglich, muss jedoch Zugriff auf den gemeinsamen Zustand behalten oder die beiden Seiten auf andere Weise koordinieren, die keinem lokalen Modell verborgener Variablen entspricht.
+
+Dieses Scheitern lokaler klassischer Buchführung eröffnet keinen Kommunikationskanal mit Überlichtgeschwindigkeit. Alices lokale Ergebnisse bleiben zufällig; sie kann daher keine Nachricht kontrollieren, die Bob lesen könnte, ohne später ihre Aufzeichnungen zu vergleichen. Die Begriffe rund um Nichtlokalität werden unterschiedlich verwendet, doch die operationelle Unterscheidung ist eindeutig: Bell-Korrelationen schließen lokale klassische Erklärungen aus, während die Nichtsignalisierung erhalten bleibt.
+
+Die Konstruktion des zusammengesetzten Zustands hat damit etwas wirklich Neues hervorgebracht. Tensorprodukte bewahren lokal die bisherige Physik eines einzelnen Spins, doch ihre allgemeinen Vektoren lassen sich nicht in getrennte Zustände zerlegen. Im Singulett verschwinden alle lokalen Polarisationen, während gemeinsame Spin-Komponenten eine perfekte, basisunabhängige Antikorrelation aufweisen. Als Nächstes machen wir aus dieser Struktur einen quantitativen Test klassischer Überlegungen nach Bell.

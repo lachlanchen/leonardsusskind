@@ -1,0 +1,652 @@
+\chapter{Lokalität, kontinuierliche Zustände und Impuls}
+
+\lectureoverview{Verschränkung kann durch reversible Dynamik erzeugt und wieder aufgehoben werden. Messungen werden jedoch effektiv irreversibel, wenn ein Teil des verschränkten Systems unserer Kontrolle entgleitet. Diese Unterscheidung führt zu einem präzisen Lokalitätstest: Bob kann in seiner Umgebung eine beliebige unitäre Operation ausführen, doch Alices reduzierte Dichtematrix und damit jede Statistik, die ihr allein zugänglich ist, bleiben unverändert. Ein Gedankenexperiment zur klassischen Simulation isoliert anschließend, was tatsächlich nichtklassisch ist. Einen einzelnen Spin nachzuahmen ist einfach, und ein Zentralrechner kann ein verschränktes Paar simulieren. Getrennte lokale Rechner können jedoch nicht alle verschränkten Korrelationen reproduzieren, ohne unzulässig zu kommunizieren oder ein Bell-lokales Modell mit verborgenen Variablen zu verwenden, das letztlich scheitert. Danach wendet sich die Vorlesung von Spins einem Teilchen auf einer Geraden zu. Diskrete Summen werden zu Integralen, Kronecker-Deltas zu Dirac-Deltas und Wellenfunktionen zu Vektoren in einem unendlichdimensionalen Raum. Die Multiplikation mit \(x\) ergibt den Ortsoperator; die Ableitung ist antihermitesch; multipliziert man sie mit \(-i\), erhält man den hermiteschen Impulsoperator. Die abschließende Rechnung \([x,p]=i\hbar\) stellt die Verbindung zwischen quantenmechanischen Kommutatoren und klassischen Poisson-Klammern wieder her und weist auf Wellenpakete, Fourier-Transformationen und die Schr\"odinger-Zeitentwicklung voraus.}
+
+\section{Verschränkung ist nicht Irreversibilität}
+
+Beginnen wir mit einer Unterscheidung, die bei Diskussionen über Messungen leicht verloren geht. Zwei Spins kommen in einem Produktzustand an, wechselwirken miteinander, entfernen sich voneinander und verlassen die Wechselwirkung in einem verschränkten Zustand. Muss die Verschränkung für immer bestehen bleiben? Nein. Die Wechselwirkung war unitär, also kann eine weitere geeignete Wechselwirkung sie rückgängig machen. Man kann die Spins reflektieren, wieder zusammenbringen und eine inverse Entwicklung so einrichten, dass das Paar in einen Produktzustand zurückkehrt. Es gibt kein Gesetz, nach dem die Verschränkung selbst nur zunehmen kann.
+
+Operativ ändert sich die Situation, wenn man ein Mitglied des Paars verwirft. Fliegt ein Elektron in eine unkontrollierte Umgebung davon, ist der nahe gebliebene Partner weiterhin mit etwas verschränkt. Die fehlenden Freiheitsgrade stehen jedoch nicht mehr für die inverse Operation zur Verfügung. Im Prinzip könnte man das entfernte Elektron zurückreflektieren; praktisch ist es fort. In diesem Sinn ist eine Messung \emph{für uns} irreversibel: Die Korrelationen haben sich auf Freiheitsgrade ausgebreitet, die wir nicht kontrollieren.
+
+\begin{classroomqa}
+\audiencequestion{Können zwei Systeme, die miteinander verschränkt wurden, später wieder entflechtet werden?}
+\lecturerresponse{Ja. Unitäre Entwicklung ist reversibel. Eine zweite Wechselwirkung kann die inverse Operation zur ersten ausführen und einen Produktzustand wiederherstellen. Irreversibilität entsteht, wenn relevante Freiheitsgrade verworfen oder in eine unkontrollierte Umgebung aufgenommen werden, nicht allein durch Verschränkung.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Warum erscheint eine abgeschlossene Messung dann irreversibel?}
+\lecturerresponse{Weil das gemessene System mit einem Messgerät, einer beobachtenden Person und letztlich einer großen Umgebung korreliert ist. Für die Umkehrung des vollständigen Zustands müsste man alle diese Aufzeichnungen kontrollieren. Die mikroskopische Entwicklung kann unitär bleiben, während die entsprechende Operation aus der reduzierten Beschreibung der beobachtenden Person nicht zugänglich ist.}
+\end{classroomqa}
+
+\section{Der Alice zugängliche Zustand}
+
+Teilen wir ein zusammengesetztes System in Alices Freiheitsgrade \(a\) und Bobs Freiheitsgrade \(b\) auf. Die Koeffizienten des reinen Zustands seien
+\begin{equation}
+\Psi(a,b)=\braket{a,b}{\Psi}.
+\end{equation}
+Alice hat keinen Zugang zu Bobs Labor. Ihre vollständige lokale Beschreibung ist daher im Allgemeinen keine Wellenfunktion, sondern die reduzierte Dichtematrix
+\begin{equation}
+\rho_A(a',a)
+=
+\sum_b \Psi^*(a',b)\Psi(a,b).
+\label{eq:l8-reduced-density}
+\end{equation}
+Bei der Summe entfällt Bobs Index. Übrig bleiben ein Bra- und ein Ket-Index für Alice; die Matrix enthält alle Wahrscheinlichkeitsverteilungen, die Alice durch Experimente ausschließlich in ihrer Umgebung bestimmen kann.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_01.png}
+\caption{Alices reduzierte Dichtematrix entsteht durch Summation der gemeinsamen Wellenfunktion über Bobs Basisindex.}
+\lectureframe{00:04:34}
+\end{figure}
+
+Alices und Bobs Umgebung sind hier weit zu verstehen. Sie kann jeweils Messgeräte, Magnetfelder, Technikerinnen und Techniker sowie alle anderen Freiheitsgrade umfassen, mit denen die betreffende Person wechselwirken kann. Die Aussage über Lokalität lautet nicht, dass Bob sein eigenes System nicht verändern kann. Das kann er auf viele Arten. Sie besagt, dass nichts, was er lokal tut, Gleichung~\eqref{eq:l8-reduced-density} verändert, solange er sich in räumlicher Entfernung befindet.
+
+\section{Bobs lokale unitäre Operation}
+
+Betrachten wir zunächst Bobs Manipulation für sich, ohne Alice einzubeziehen. Ändert Bob ein Magnetfeld oder auf andere Weise seinen lokalen Hamiltonoperator, durchlaufen seine Wellenfunktionskoeffizienten eine unitäre Transformation:
+\begin{equation}
+\psi_M(b)
+=
+\sum_{b'}U_{bb'}\psi(b').
+\label{eq:l8-bob-unitary}
+\end{equation}
+In der Beschreibung des Gesamtsystems bleibt Alices Index unberührt:
+\begin{equation}
+\Psi_M(a,b)
+=
+\sum_{b'}U_{bb'}\Psi(a,b').
+\label{eq:l8-composite-unitary}
+\end{equation}
+Durch komplexe Konjugation wird aus der Ket-Transformation die entsprechende Bra-Transformation:
+\begin{equation}
+\Psi_M^*(a',b)
+=
+\sum_{b''}\Psi^*(a',b'')U^\dagger_{b''b}.
+\label{eq:l8-composite-bra}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_02.png}
+\caption{Eine unitäre Matrix wirkt auf Bobs Ket-Index, während die hermitesch adjungierte Matrix auf den zugehörigen Bra-Index wirkt.}
+\lectureframe{00:12:54}
+\end{figure}
+
+Berechnen wir nun Alices Dichtematrix erneut:
+\begin{align}
+\rho_{A,M}(a',a)
+&=
+\sum_b\Psi_M^*(a',b)\Psi_M(a,b) \notag\\
+&=
+\sum_{b,b',b''}
+\Psi^*(a',b'')
+U^\dagger_{b''b}U_{bb'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')
+(U^\dagger U)_{b''b'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')\delta_{b''b'}\Psi(a,b') \notag\\
+&=
+\sum_{b'}\Psi^*(a',b')\Psi(a,b') \notag\\
+&=
+\rho_A(a',a).
+\label{eq:l8-locality-proof}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_03.png}
+\caption{Die Lokalitätsrechnung an der Tafel: \(U^\dagger U\) wird in Alices reduziertem Zustand zur Einheitsmatrix.}
+\lectureframe{00:14:27}
+\end{figure}
+
+Der gesamte Beweis besteht aus der Kontraktion
+\begin{equation}
+\sum_bU^\dagger_{b''b}U_{bb'}
+=(U^\dagger U)_{b''b'}
+=\delta_{b''b'}.
+\label{eq:l8-unitarity-contraction}
+\end{equation}
+Es wurde keine Faktorisierungsannahme verwendet. Gleichung~\eqref{eq:l8-locality-proof} gilt unabhängig davon, ob der gemeinsame Zustand ein Produktzustand oder maximal verschränkt ist. Daher bleibt jeder nur für Alice zugängliche Erwartungswert
+\begin{equation}
+\expect{L_A}
+=
+\operatorname{Tr}_A(\rho_A L_A),
+\end{equation}
+unter Bobs lokaler unitärer Operation invariant.
+
+\begin{classroomqa}
+\audiencequestion{Wenn Bob etwas mit seinem Spin macht, ist das nicht bereits eine Verletzung der Unitarität?}
+\lecturerresponse{Etwas zu tun bedeutet nicht, eine nichtunitäre Abbildung anzuwenden. Bob kann einen Magneten drehen, einen lokalen Hamiltonoperator ändern oder seinen Spin präzedieren lassen. Das sind gewöhnliche unitäre Entwicklungen. Sie verändern seinen eigenen Zustand und seine eigenen Ergebniswahrscheinlichkeiten, doch die obige Rechnung zeigt, dass sie Alices reduzierten Zustand nicht verändern.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Befolgt die Quantenmechanik also das Lokalitätsprinzip?}
+\lecturerresponse{Sie befolgt die hier gemeinte operative Lokalität: Bob kann die Statistik der Alice zugänglichen Messungen nicht beeinflussen, indem er ausschließlich in seiner Umgebung handelt. Verschränkte gemeinsame Korrelationen bleiben nichtklassisch, ermöglichen aber kein kontrollierbares Signal.}
+\end{classroomqa}
+
+\subsection{Warum Unitarität wichtig ist}
+
+Die Unitarität war kein bloßes Beiwerk. Sie lieferte die Einheitsmatrix in Gleichung~\eqref{eq:l8-unitarity-contraction}. In der früheren Ausdrucksweise steht Unitarität für die Erhaltung von Unterscheidbarkeit: Zwei unterscheidbare Zustandsvektoren bleiben bei reversibler Entwicklung unterscheidbar. Hätte Bob auch nur eine leicht nichtunitäre deterministische Entwicklung zur Verfügung, wäre \(U^\dagger U\) nicht die Einheitsmatrix. Alices reduzierte Dichtematrix könnte sich dann sofort ändern, sodass Bob schneller als Licht Signale senden könnte.
+
+Dieser enge Zusammenhang ist ein Grund dafür, dass sich die Quantenmechanik nur schwer schrittweise abändern lässt. Ändert man das Entwicklungsgesetz, können damit auch scheinbar unabhängige Prinzipien versagen. Lokalität, die Erhaltung der Wahrscheinlichkeit und die reversible Zustandsentwicklung sind Teile derselben Struktur.
+
+\begin{classroomqa}
+\audiencequestion{Wie könnte eine nichtunitäre Operation ein Signal schneller als Licht ermöglichen?}
+\lecturerresponse{Bob würde entscheiden, ob er sie anwendet. Falls die Abbildung \(\rho_A\) veränderte, könnte Alice die beiden Möglichkeiten unterscheiden, indem sie lokale Messungen an einem Ensemble wiederholt. Die Änderung träte ein, ohne dass sich ein Signal von Bob ausbreitete. Genau das verhindert die unitäre Auslöschung.}
+\end{classroomqa}
+
+\section{Der Kollaps verändert die Bedingungen, nicht die entfernten lokalen Verteilungen}
+
+Das Beispiel mit dem Strahlteiler macht das Unbehagen anschaulich. Ein Photon wird in eine Superposition zweier Wege gebracht: Einer führt zu Alice, der andere zu Bob. Wenn Alices Detektor anspricht, weist der bedingte Zustand einem späteren Ansprechen auf Bobs Weg die Amplitude null zu. Es liegt nahe zu sagen, Alice habe Bobs Photon augenblicklich verändert.
+
+Was Bob ohne Kenntnis von Alices Ergebnis beobachten kann, ist etwas anderes. Bevor er eine Nachricht erhält, muss er über Alices mögliche Ergebnisse mitteln. Diese unbedingte Mittelung wird durch seine reduzierte Dichtematrix beschrieben, die sich nicht ändert. Sobald Alices Ergebnis bekannt ist, legt ihr Ansprechen fest, welche bedingte Teilmenge von Läufen die Situation beschreibt; Bobs lokale Randverteilung ändert es nicht. Die Unterscheidung zwischen
+\begin{equation}
+\rho_B
+\qquad\text{and}\qquad
+\rho_{B\mid A=\text{click}}
+\end{equation}
+ist die Unterscheidung zwischen fehlender Signalübertragung und nutzbaren Korrelationen.
+
+\begin{classroomqa}
+\audiencequestion{Kollabiert bei einem Ansprechen des einen Detektors nicht die Wellenfunktion auf dem anderen Arm augenblicklich zu null?}
+\lecturerresponse{Der auf dieses Ansprechen bedingte Zustand ändert sich, aber die entfernte beobachtende Person kennt die Bedingung erst, wenn eine gewöhnliche Nachricht eintrifft. Bobs unbedingte Dichtematrix und alle seine gemittelten lokalen Statistiken bleiben unverändert. Der Kollaps lässt sich nicht als Telegraph benutzen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Beruht die Verwirrung zum Teil darauf, dass der Zustand mit dem Wissen über den Zustand verwechselt wird?}
+\lecturerresponse{Diese Formulierung weist in die richtige Richtung, ist aber noch zu ungenau. Konkret muss man zwischen einem gemeinsamen Zustand, einem reduzierten Zustand und einem auf ein berichtetes Ergebnis bedingten Zustand unterscheiden. Es ist sicherer, diese drei mathematischen Objekte auseinanderzuhalten, als die Frage allein mit dem Wort Wissen klären zu wollen.}
+\end{classroomqa}
+
+Das Unbehagen von Einstein--, Podolsky-- und Rosen bleibt dennoch bestehen. Ein Singulett kann uns maximale Kenntnis des \emph{Ganzen} verschaffen, obwohl keiner der Bestandteile einen reinen lokalen Zustand hat. Diese Umkehrung der klassischen Erwartung---, das Ganze zu kennen, ohne den Teilen bestimmte reine Zustände zuzuweisen,---ist kein Signalübertragungseffekt, aber ausgesprochen eigenartig. Um diese Eigenart deutlicher herauszuarbeiten, formulieren wir die Quantenmechanik als Programmieraufgabe.
+
+\section{Ein klassischer Simulator für einen Spin}
+
+Zeichnen wir auf einem Computerbildschirm einen Spinapparat. Die Benutzerin oder der Benutzer kann ihn ausrichten, eine Messtaste \(M\) drücken und \(+1\) oder \(-1\) ablesen. Im klassischen Rechner speichern wir zwei komplexe Amplituden:
+\begin{equation}
+\alpha_u,\qquad \alpha_d,
+\qquad
+|\alpha_u|^2+|\alpha_d|^2=1.
+\label{eq:l8-one-spin-amplitudes}
+\end{equation}
+Zwischen den Messungen integriert der Rechner die passende Schr\"odinger-Gleichung. Ein simuliertes Magnetfeld kann die Amplituden genau so präzedieren lassen wie einen realen Spinzustand.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_04.png}
+\caption{Der Simulator für einen Spin: ein ausrichtbarer Apparat und eine Messtaste, verbunden mit einem Rechner, der zwei Amplituden speichert.}
+\lectureframe{00:27:47}
+\end{figure}
+
+Drückt die Benutzerin oder der Benutzer \(M\), wählt ein Pseudozufallszahlengenerator gemäß den Born-Wahrscheinlichkeiten ein Ergebnis aus:
+\begin{equation}
+P(+1)=|\alpha_u|^2,
+\qquad
+P(-1)=|\alpha_d|^2.
+\label{eq:l8-one-spin-born}
+\end{equation}
+Der Rechner zeigt das ausgewählte Vorzeichen an und aktualisiert anschließend den Zustand. Nach \(+1\) gilt
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(1,0),
+\end{equation}
+und nach \(-1\) gilt
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(0,1).
+\end{equation}
+Danach setzt der Rechner die unitäre Entwicklung ausgehend vom Zustand nach der Messung fort. Dreht die Benutzerin oder der Benutzer den Apparat vor dem Drücken von \(M\), wechselt der Rechner die Basis und berechnet die zum neuen Achsenverlauf passenden Wahrscheinlichkeiten.
+
+Die Hardware muss nichts spezifisch Quantenmechanisches enthalten. Ein deterministischer Pseudozufallsalgorithmus reicht aus, um eine Folge zu erzeugen, die für die Benutzerin oder den Benutzer zufällig wirkt. Bei einem einzelnen Spin kann diese klassische Nachahmung operativ ununterscheidbar vom Laborexperiment sein.
+
+\begin{classroomqa}
+\audiencequestion{Wozu dient die Messtaste? Spielt die verstrichene Zeit vor dem Drücken eine Rolle?}
+\lecturerresponse{Die Taste markiert den Zeitpunkt, an dem der Simulator die Born-Verteilung abtastet und die gespeicherten Amplituden aktualisiert. Während der Wartezeit entwickeln sich die Amplituden gemäß dem Hamiltonoperator. Ist der Hamiltonoperator null, ändert sich mit der Zeit nichts; bei einem Magnetfeld präzediert der simulierte Spin vor der Messung.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wer entscheidet, wann die Taste gedrückt wird und wie der Apparat ausgerichtet ist?}
+\lecturerresponse{In diesem Modell gibt die experimentierende Person diese Einstellungen vor. Der Simulator verfolgt den Zustand fortlaufend und verwendet dann die gewählte Achse und den Messzeitpunkt, wenn die Taste gedrückt wird. Später kommen wir auf die Annahme zurück, dass die Einstellungen unabhängig vom vorbereiteten Paar gewählt werden können.}
+\end{classroomqa}
+
+\section{Zwei Spins: Wo die lokale Simulation scheitert}
+
+Zwei Spins in einem Produktzustand lassen sich weiterhin leicht simulieren. Alice erhält einen Rechner, der die Amplituden \(\alpha_u,\alpha_d\) speichert, Bob einen zweiten mit \(\beta_u,\beta_d\). Jeder Rechner entwickelt und misst seinen eigenen Spin. Kommunikation ist nicht nötig, denn die gemeinsamen Koeffizienten faktorisieren:
+\begin{equation}
+\Psi(a,b)=\alpha_a\beta_b.
+\end{equation}
+
+Ein beliebiger Zustand zweier Spins erfordert vier Koeffizienten:
+\begin{equation}
+\alpha_{uu},\qquad
+\alpha_{ud},\qquad
+\alpha_{du},\qquad
+\alpha_{dd},
+\qquad
+\sum_{a,b}|\alpha_{ab}|^2=1.
+\label{eq:l8-four-amplitudes}
+\end{equation}
+Ein einzelner Zentralrechner kann diese Zahlen speichern und sie mit der vierdimensionalen Schr\"odinger-Gleichung entwickeln. Misst eine der beiden Personen, ermittelt der Zentralrechner die korrekte Randwahrscheinlichkeit, verwirft die damit unvereinbaren Komponenten, normiert die verbleibenden Komponenten neu und setzt die Entwicklung ausgehend vom bedingten Zustand fort.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_05.png}
+\caption{Ein zentraler Simulator speichert die vier Amplituden eines beliebigen Zustands zweier Spins und bleibt mit beiden Messstationen verbunden.}
+\lectureframe{00:37:47}
+\end{figure}
+
+Solange der Zentralrechner mit beiden Seiten verbunden bleibt, simuliert diese Konstruktion die Verschränkung perfekt. Problematisch wird es, wenn man die vier Amplituden auf zwei Rechner kopiert, die Rechner voneinander trennt, die Verbindungen kappt und jeden Rechner seinen eigenen Zufallszahlengenerator verwenden lässt. Für das Singulett
+\begin{equation}
+\ket{\Psi^-}
+=
+\frac{1}{\sqrt2}
+\left(
+\ket{u}_A\ket{d}_B-\ket{d}_A\ket{u}_B
+\right),
+\label{eq:l8-singlet}
+\end{equation}
+müssen Messungen entlang derselben Achse entgegengesetzte Ergebnisse liefern. Unabhängige Zufallsentscheidungen können stattdessen \(++\) oder \(--\) ergeben. Die Korrelation geht also verloren, obwohl beide Rechner mit einer Kopie der gemeinsamen Koeffizienten begonnen haben.
+
+\begin{classroomqa}
+\audiencequestion{Könnten die beiden Rechner vor ihrer Trennung dieselbe Quelle für Zufallszahlen verwenden?}
+\lecturerresponse{Gemeinsam genutzte Zufallszahlen können eine vorgegebene Korrelation für eine einzige feste Messachse erzwingen. Das tiefergehende Bell-Problem verlangt ein einziges lokales Verfahren, das die Quantenkorrelationen für alle unabhängig gewählten Achsenpaare reproduziert. Vorab bereitgestellte gemeinsame Variablen sind in Bell-lokalen Modellen enthalten, aber kein solches Modell reproduziert die vollständige Quantenkorrelationsfunktion.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sind die vier Amplituden unabhängig voneinander?}
+\lecturerresponse{Sie sind vier Koordinaten eines einzigen normierten Gesamtzustands, keine vier unabhängigen lokalen Zustände. Bei einem verschränkten Zustand lassen sie sich nicht als \(\alpha_a\beta_b\) schreiben. Sobald ein lokales Ergebnis ausgewählt ist, müssen die verbleibenden gemeinsamen Koeffizienten kohärent aktualisiert werden; zwei voneinander getrennte Kopien führen nicht automatisch übereinstimmende Aktualisierungen aus.}
+\end{classroomqa}
+
+\subsection{Was die verborgenen Leitungen bedeuten}
+
+Ein zentraler Zufallsgenerator, der mit beiden Stationen verbunden ist, könnte die Ergebnisse koordinieren. In einem gewöhnlichen klassischen Simulator wären diese Leitungen zugleich Kommunikationskanäle. Bob könnte Alice absichtlich ein Bit senden; wäre die Verbindung augenblicklich, würde der Rechner das Lokalitätsprinzip verletzen.
+
+Das Quantensystem gewährt Bob diese Freiheit nicht. Seine zulässigen lokalen Transformationen sind unitär, und der Beweis mit der reduzierten Dichtematrix hat bereits gezeigt, dass keine dieser Transformationen Alices Randstatistik verändert. Die Leitungen im Simulator zeigen daher, dass die gewöhnliche klassische Buchführung die falsche Struktur hat. Sie sind kein Beleg dafür, dass die Natur zugängliche überlichtschnelle Kabel enthält.
+
+\begin{classroomqa}
+\audiencequestion{Stehen die für den klassischen Simulator nötigen Leitungen für physikalische Nichtlokalität?}
+\lecturerresponse{Sie stehen für die zusätzliche Koordination, die ein naives klassisches Modell benötigt. Wären es gewöhnliche nutzbare Leitungen, würden sie Signalübertragung ermöglichen und das Quantensystem nicht korrekt simulieren. Die sicherere Schlussfolgerung lautet, dass lokale klassische Simulation und Quantenmechanik unterschiedliche logische Strukturen haben, nicht, dass verborgene Kommunikationsleitungen entdeckt wurden.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Was ist daran seltsam, wenn Alice und Bob jeweils ein Zufallsbit erhalten, die Bits aber perfekt korreliert sind?}
+\lecturerresponse{An einer vorab arrangierten Korrelation ist nichts seltsam; identische Umschläge oder gemeinsame Zufallszahlen können sie erzeugen. Der nichtklassische Gehalt zeigt sich, wenn Alice und Bob unabhängig zwischen inkompatiblen Einstellungen wählen und die resultierenden Korrelationen eine Bell-Ungleichung verletzen, während jedes lokale Ergebnis zufällig bleibt.}
+\end{classroomqa}
+
+Das Gedankenexperiment enthält außerdem eine Voraussetzung, die ausdrücklich erwähnt werden sollte: Die Messeinstellungen werden als unabhängige Entscheidungen behandelt. Alice und Bob entscheiden, wann sie ihre Tasten drücken und wie sie ihre Apparate ausrichten, ohne dass diese Entscheidungen heimlich durch die Variablen der Quelle festgelegt sind. Bezieht man die Beobachtenden und ihre Entscheidungsmechanismen in ein einziges abgeschlossenes physikalisches System ein, wird die philosophische Rede von freier Entscheidung heikel. Operative Bell-Tests formulieren die erforderliche Bedingung als Messunabhängigkeit und verwenden räumlich getrennte, extern erzeugte Einstellungen. Die Vorlesung lässt die Metaphysik offen, behält aber die experimentelle Voraussetzung bei.
+
+\begin{classroomqa}
+\audiencequestion{Entsteht eine Schlupflücke, wenn Alice und Bob in das physikalische System einbezogen werden?}
+\lecturerresponse{Dadurch tritt eine Annahme hervor: Die Einstellungen dürfen nicht vorab mit den verborgenen Variablen korreliert sein, die das Paar präparieren. Über den freien Willen kann man streiten; die experimentell prüfbare Aussage betrifft jedoch die Messunabhängigkeit. Sie aufzugeben ist logisch möglich, ändert aber die Erklärungslast, statt eine gewöhnliche lokale Simulation zu liefern.}
+\end{classroomqa}
+
+\section{Von Spins zu einem Teilchen auf einer Geraden}
+
+Spins haben die Diskussion von endlichdimensionalen Vektoren über Verschränkung bis zur Lokalität geführt. Vergrößern wir nun den Hilbertraum. Betrachten wir ein Teilchen, das sich auf einer unendlichen Geraden bewegt. Ein Eigenzustand des Ortes wird bezeichnet als
+\begin{equation}
+\ket{x},
+\end{equation}
+und bedeutet, dass das Teilchen den bestimmten Ort \(x\) hat. Diese Kets bilden eine kontinuierlich indizierte Basis. Ein allgemeiner Zustand ist eine Superposition dieser Zustände, und seine Wellenfunktion in der Ortsdarstellung lautet
+\begin{equation}
+\psi(x)=\braket{x}{\Psi}.
+\label{eq:l8-position-wavefunction}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_06.png}
+\caption{Die Wellenfunktion in der Ortsdarstellung als Projektion des abstrakten Zustands auf das Basis-Ket \(\ket{x}\).}
+\lectureframe{00:56:51}
+\end{figure}
+
+Der Ort dient als vollständige Basisbezeichnung. Das bedeutet weder, dass sich ein klassischer Zustand allein durch den Ort festlegen lässt, noch, dass das Teilchen gleichzeitig einen bestimmten Ort und einen bestimmten Impuls hat. Es bedeutet, dass sich jeder quantenmechanische Zustandsvektor in der Ortsbasis entwickeln lässt. Der Impuls wird als Operator auftreten, der auf diese Koeffizienten in der Ortsdarstellung wirkt.
+
+Die Born-Regel liefert nun eine Wahrscheinlichkeits\emph{dichte}:
+\begin{equation}
+\rho(x)=|\psi(x)|^2.
+\label{eq:l8-probability-density}
+\end{equation}
+Bei einer kontinuierlichen Variablen ist die Wahrscheinlichkeit für einen einzelnen exakten Punkt gewöhnlich null. Die Wahrscheinlichkeit, das Teilchen in einem Intervall zu finden, lautet
+\begin{equation}
+P(x_1<x<x_2)
+=
+\int_{x_1}^{x_2}|\psi(x)|^2\,dx,
+\end{equation}
+und die Normierung verlangt
+\begin{equation}
+\int_{-\infty}^{\infty}|\psi(x)|^2\,dx=1.
+\label{eq:l8-continuous-normalization}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Wie kann der Ort allein eine vollständige Basis sein, wenn ein klassisches Teilchen sowohl Ort als auch Impuls braucht?}
+\lecturerresponse{Hier bezieht sich Vollständigkeit auf die Darstellung eines quantenmechanischen Vektors. Die Koeffizienten \(\psi(x)\) für alle Werte von \(x\) legen den Zustand fest; die Impulsinformation ist in ihren Phasen und ihrer räumlichen Variation enthalten. Orts- und Impulsdarstellung sind verschiedene Basen, die später durch eine Fourier-Transformation miteinander verknüpft werden. Sie sind keine gleichzeitigen klassischen Bezeichnungen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist \(|\psi(x)|^2\) die Wahrscheinlichkeit, das Teilchen am exakten Ort \(x\) zu finden?}
+\lecturerresponse{Es ist eine Dichte. Multipliziert man sie mit einem kleinen Intervall \(dx\), erhält man näherungsweise die Wahrscheinlichkeit für dieses Intervall; durch Integration ergibt sich die exakte Wahrscheinlichkeit für ein endliches Gebiet. Eine Dichte kann von null verschieden sein, obwohl einem einzelnen isolierten Punkt die Wahrscheinlichkeit null zugeordnet ist.}
+\end{classroomqa}
+
+\section{Kontinuierliche Orthonormalität und die Delta-Funktion}
+
+Für eine diskrete orthonormale Basis gilt
+\begin{equation}
+\braket{a}{a'}=\delta_{aa'}.
+\end{equation}
+Für eine kontinuierliche Basis lautet das entsprechende Analogon
+\begin{equation}
+\braket{x}{x'}=\delta(x-x'),
+\label{eq:l8-delta-normalization}
+\end{equation}
+wobei die Dirac-Delta-Funktion für \(x\neq x'\) verschwindet und die Fläche eins hat:
+\begin{equation}
+\int_{-\infty}^{\infty}\delta(x-x')\,dx'=1.
+\end{equation}
+Man kann sie sich als schmalen Peak mit der Breite \(\epsilon\), der Höhe \(1/\epsilon\) und fester Fläche vorstellen, wobei anschließend der Grenzübergang \(\epsilon\to0\) vorgenommen wird.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{Darstellung der Dirac-Delta-Funktion an der Tafel als schmaler Peak mit der Breite \(\epsilon\), der Höhe \(1/\epsilon\) und der Fläche eins.}
+\lectureframe{01:01:57}
+\end{figure}
+
+Die Schreibweise ist eine Kurzform im Sinn der Distributionentheorie. Ein Ortseigenket ist kein normierbarer Vektor im gewöhnlichen Hilbertraum der quadratintegrablen Funktionen, sondern ein verallgemeinerter Vektor, dessen Delta-Normierung unter einem Integral sinnvoll ist. Die zentrale Rechenregel lautet
+\begin{equation}
+\int_{-\infty}^{\infty}
+\delta(x-x')f(x')\,dx'
+=f(x).
+\label{eq:l8-delta-sampling}
+\end{equation}
+Die Delta-Funktion wählt den Wert aus, für den ihr Argument verschwindet.
+
+Schreiben wir nun die kontinuierliche Entwicklung
+\begin{equation}
+\ket{\Psi}
+=
+\int_{-\infty}^{\infty}
+\psi(x')\ket{x'}\,dx'.
+\label{eq:l8-continuous-expansion}
+\end{equation}
+Die Anwendung von \(\bra{x}\) ergibt
+\begin{align}
+\braket{x}{\Psi}
+&=
+\int dx'\,\psi(x')\braket{x}{x'} \notag\\
+&=
+\int dx'\,\psi(x')\delta(x-x') \notag\\
+&=
+\psi(x).
+\label{eq:l8-expansion-consistency}
+\end{align}
+Damit sind der Koeffizient in der Entwicklung und die Projektion \(\braket{x}{\Psi}\) dieselbe Funktion, genau wie bei einer diskreten Basis.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_08.png}
+\caption{Die Entwicklung des kontinuierlichen Zustands und ihre Konsistenzprüfung mithilfe von \(\braket{x}{x'}=\delta(x-x')\).}
+\lectureframe{01:07:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Spielt \(\psi(x')\) dieselbe Rolle wie die Amplituden eines endlichdimensionalen Vektors?}
+\lecturerresponse{Ja. Die Basisbezeichnung \(a'\) wird durch die kontinuierliche Bezeichnung \(x'\) ersetzt, die Summe durch ein Integral und der Koeffizient \(\psi(a')\) durch die Funktion \(\psi(x')\). Die zugrunde liegende Aussage über Vektorräume bleibt unverändert.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist die Dirac-Delta-Funktion wirklich eine Funktion mit einem unendlichen Wert an einem einzigen Punkt?}
+\lecturerresponse{Diese Vorstellung ist nützlich, aber nicht wörtlich zu verstehen. Genau genommen ist das Delta eine Distribution, die durch ihre Wirkung unter einem Integral definiert ist, Gleichung~\eqref{eq:l8-delta-sampling}. Der schmale Peak mit Fläche eins ist eine Folge gewöhnlicher Funktionen, die sich derselben Auswertungsregel annähert.}
+\end{classroomqa}
+
+\section{Funktionen als Vektoren}
+
+Um das Skalarprodukt zu sehen, rufen wir uns zunächst die diskrete Rechnung in Erinnerung:
+\begin{align}
+\braket{\psi}{\phi}
+&=
+\sum_{a',a}
+\psi^*(a')\braket{a'}{a}\phi(a) \notag\\
+&=
+\sum_a\psi^*(a)\phi(a).
+\label{eq:l8-discrete-inner-product}
+\end{align}
+Die komplex konjugierten Koeffizienten gehören zum Bra, und aufgrund der Orthonormalität fällt die Doppelsumme zusammen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{Das diskrete Skalarprodukt, in einer Basis entwickelt, bevor die Summen durch Integrale ersetzt werden.}
+\lectureframe{01:11:11}
+\end{figure}
+
+Ersetzen wir die Basisbezeichnungen durch Orte und die Summe durch ein Integral:
+\begin{equation}
+\braket{\psi}{\phi}
+=
+\int_{-\infty}^{\infty}\psi^*(x)\phi(x)\,dx.
+\label{eq:l8-continuous-inner-product}
+\end{equation}
+Beim Vertauschen der Vektoren wird das Ergebnis komplex konjugiert:
+\begin{equation}
+\braket{\phi}{\psi}
+=
+\braket{\psi}{\phi}^*,
+\end{equation}
+Die Norm lautet
+\begin{equation}
+\|\psi\|^2=\braket{\psi}{\psi}
+=\int |\psi(x)|^2\,dx.
+\end{equation}
+
+Funktionen sind also Vektoren: Man kann sie addieren, mit komplexen Skalaren multiplizieren, normieren und mit einem Skalarprodukt verknüpfen. Physikalische Wellenfunktionen auf der unendlichen Geraden sind quadratintegrabel; Funktionen, die im Unendlichen unbeschränkt anwachsen, sind daher ausgeschlossen. Die verallgemeinerten Basisfunktionen \(\delta(x-x_0)\) liegen knapp außerhalb dieses Hilbertraums, bleiben aber als distributionelle Basisvektoren unverzichtbar.
+
+\begin{classroomqa}
+\audiencequestion{Müssten die nicht angegebenen Integrationsgrenzen \(-\infty\) und \(+\infty\) lauten?}
+\lecturerresponse{Ja, für die unendliche Gerade. An diesen Grenzen zeigt sich auch, warum normierbare Wellenfunktionen hinreichend schnell abfallen müssen: Andernfalls wäre das Wahrscheinlichkeitsintegral über den gesamten Raum nicht definiert.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{In einem Ausdruck an der Tafel fehlte ein senkrechter Strich. Ändert das die Bedeutung?}
+\lecturerresponse{Das war lediglich ein Notationsfehler. Das Basisüberlapp lautet \(\braket{a'}{a}\), mit einem Bra links und einem Ket rechts. Mit dem ergänzten Strich ist klar, dass es sich um ein Skalarprodukt und nicht um eine mehrdeutige Zeile oder Spalte handelt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist fast alles die meiste Zeit mit einer Umgebung verschränkt?}
+\lecturerresponse{Unter realistischen makroskopischen Bedingungen: ja. Systeme werden ständig von Photonen, Luftmolekülen und anderen Freiheitsgraden getroffen, wodurch sich Phaseninformation in der Umgebung ausbreitet. Diese Verschränkung mit der Umgebung ist wesentlich für Dekohärenz und dafür, warum Interferenz zwischen makroskopischen Alternativen schwer zu beobachten ist.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hat die mathematische Distributionentheorie die Physik verändert oder lediglich die Deltafunktion mathematisch salonfähig gemacht?}
+\lecturerresponse{Ihr unmittelbarer Nutzen bestand darin, Manipulationen zu rechtfertigen, die Physiker bereits verwendeten. Sie stellte eine präzise Sprache für verallgemeinerte Funktionen bereit und verringerte den Rechtfertigungsbedarf gegenüber Mathematikern, löste aber für sich genommen nicht jedes distributionsbezogene Problem in der Quantenfeldtheorie.}
+\end{classroomqa}
+
+\section{Lineare Operatoren auf Wellenfunktionen}
+
+Ein linearer Operator bildet eine Funktion auf eine andere ab und erhält dabei die Superposition:
+\begin{equation}
+L(c_1\psi+c_2\phi)
+=
+c_1L\psi+c_2L\phi.
+\end{equation}
+Eine Observable muss durch einen hermiteschen Operator dargestellt werden. In der vorliegenden Notation lautet die Bedingung
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{L\phi}{\psi},
+\label{eq:l8-hermitian-condition}
+\end{equation}
+oder äquivalent
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{\psi}{L\phi}^*.
+\end{equation}
+Bei unbeschränkten Operatoren gehören zu dieser Aussage ein Definitionsbereich und Randbedingungen; bei den folgenden Integrationen setzen wir Wellenfunktionen voraus, für die die Randterme verschwinden.
+
+\subsection{Der Ortsoperator als Multiplikation}
+
+Der einfachste Operator multipliziert eine Wellenfunktion mit der Koordinate:
+\begin{equation}
+(x\psi)(x)=x\psi(x).
+\label{eq:l8-position-operator}
+\end{equation}
+Er ist linear, und
+\begin{align}
+\braket{\phi}{x\psi}
+&=
+\int dx\,\phi^*(x)x\psi(x), \notag\\
+\braket{x\phi}{\psi}
+&=
+\int dx\,[x\phi(x)]^*\psi(x) \notag\\
+&=
+\int dx\,\phi^*(x)x\psi(x),
+\end{align}
+da \(x\) reell ist. Die Multiplikation mit \(x\) ist daher hermitesch und stellt die Ortsobservable dar.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_10.png}
+\caption{Prüfung der Hermitizität des Ortsoperators, aufgefasst als Multiplikation einer Wellenfunktion mit der reellen Variablen \(x\).}
+\lectureframe{01:26:47}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ist in \(x\psi(x)\) \(x\) ein Operator oder lediglich eine reelle Zahl?}
+\lecturerresponse{An jedem Punkt ist es der reelle Koordinatenwert. Die Abbildungsvorschrift, die die gesamte Funktion \(\psi(x)\) auf die neue Funktion \(x\psi(x)\) abbildet, ist jedoch der Operator. Gerade die Tatsache, dass dieser Wert reell ist, bewirkt, dass die beiden Skalarprodukte im Hermitizitätstest übereinstimmen.}
+\end{classroomqa}
+
+\subsection{Die Ableitung ist antihermitesch}
+
+Betrachten wir die Ableitung
+\begin{equation}
+D=\frac{d}{dx}.
+\end{equation}
+Sie ist linear, doch partielle Integration ergibt
+\begin{align}
+\braket{\phi}{D\psi}
+&=
+\int dx\,\phi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+\left[\phi^*(x)\psi(x)\right]_{-\infty}^{\infty}
+-
+\int dx\,\frac{d\phi^*}{dx}\psi(x) \notag\\
+&=
+-\braket{D\phi}{\psi},
+\label{eq:l8-derivative-adjoint}
+\end{align}
+wobei der Randterm verschwindet. Somit gilt
+\begin{equation}
+D^\dagger=-D.
+\end{equation}
+Die Ableitung ist also antihermitesch und nicht hermitesch.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_11.png}
+\caption{Bei partieller Integration wird die Ableitung von einer Wellenfunktion auf die andere übertragen; dabei entsteht das entscheidende Minuszeichen.}
+\lectureframe{01:32:30}
+\end{figure}
+
+Multiplizieren wir mit \(-i\):
+\begin{equation}
+p=-i\frac{d}{dx}.
+\label{eq:l8-momentum-natural-units}
+\end{equation}
+Die komplexe Konjugation macht aus \(-i\) \(+i\), während die partielle Integration ein weiteres Minuszeichen beiträgt. Die Vorzeichen heben sich auf, also gilt \(p^\dagger=p\). Mit wieder eingesetzten Einheiten erhalten wir
+\begin{equation}
+p=-i\hbar\frac{d}{dx}.
+\label{eq:l8-momentum-operator}
+\end{equation}
+
+Am Erwartungswert wird seine Realität ausdrücklich sichtbar:
+\begin{align}
+\expect{p}_\psi
+&=
+-i\int dx\,\psi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+i\int dx\,\frac{d\psi^*}{dx}\psi(x) \notag\\
+&=
+\expect{p}_\psi^*.
+\label{eq:l8-momentum-expectation-real}
+\end{align}
+Jede Zahl, die ihrer eigenen komplexen Konjugierten entspricht, ist reell, wie es der Erwartungswert einer Observablen sein muss.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_12.png}
+\caption{Der Impulserwartungswert vor und nach partieller Integration; die beiden Formen sind komplex konjugiert und gleich.}
+\lectureframe{01:39:44}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Wie kann ein Operator mit \(i\) eine reelle Observable darstellen?}
+\lecturerresponse{Die Hermitizität bezieht sich auf den gesamten Operator im Skalarprodukt, nicht darauf, ob jedes Symbol in seiner Koordinatendarstellung reell ist. Der Faktor \(i\) gleicht das Minuszeichen aus, das beim Übertragen der Ableitung durch partielle Integration entsteht, sodass alle Erwartungswerte reell sind.}
+\end{classroomqa}
+
+\section{Der kanonische Kommutator}
+
+Eine weitere Rechnung zeigt, warum der Operator in Gleichung~\eqref{eq:l8-momentum-operator}Beachtung verdient. In Einheiten mit \(\hbar=1\) wenden wir zuerst \(x\) und dann \(p\) an:
+\begin{align}
+(px\psi)(x)
+&=
+-i\frac{d}{dx}\bigl(x\psi(x)\bigr) \notag\\
+&=
+-i\psi(x)-ix\frac{d\psi}{dx}.
+\label{eq:l8-px}
+\end{align}
+Vertauschen wir die Reihenfolge:
+\begin{equation}
+(xp\psi)(x)
+=
+-ix\frac{d\psi}{dx}.
+\label{eq:l8-xp}
+\end{equation}
+Subtrahieren wir Gleichung~\eqref{eq:l8-px} von Gleichung~\eqref{eq:l8-xp}, so folgt
+\begin{equation}
+\bigl([x,p]\psi\bigr)(x)
+=
+\bigl(xp-px\bigr)\psi(x)
+=
+i\psi(x).
+\end{equation}
+Da dies für jede Wellenfunktion im Definitionsbereich des Operators gilt,
+\begin{equation}
+[x,p]=i,
+\end{equation}
+oder, mit wieder eingesetzten Einheiten,
+\begin{equation}
+[x,p]=i\hbar.
+\label{eq:l8-canonical-commutator}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_13.png}
+\caption{Das vollständige Operatorargument: Wenn \(([x,p]-i)\psi=0\) für jede Wellenfunktion gilt, dann gilt \([x,p]=i\).}
+\lectureframe{01:46:24}
+\end{figure}
+
+Das klassische Gegenstück lautet
+\begin{equation}
+\{x,p\}_{\mathrm{PB}}=1.
+\end{equation}
+Diracs historische Argumentation verlief entgegengesetzt zu der hier hergeleiteten. Er ging von der algebraischen Ähnlichkeit zwischen antisymmetrischen Poisson-Klammern und Kommutatoren aus, postulierte die Zuordnung
+\begin{equation}
+[A,B]\longleftrightarrow i\hbar\{A,B\}_{\mathrm{PB}},
+\end{equation}
+und folgerte daraus, dass der Impulsoperator mit dem Ort den kanonischen Kommutator erfüllen muss. Hier erhielten wir \(-i\,d/dx\), indem wir das Versagen der Ableitung, hermitesch zu sein, behoben, und fanden erst danach dieselbe Algebra.
+
+\begin{classroomqa}
+\audiencequestion{Beweist der Kommutator allein, dass \(-i\hbar\,d/dx\) der physikalische Impuls ist?}
+\lecturerresponse{Er ist ein starkes Indiz, aber damit ist die physikalische Identifikation noch nicht vollständig. Wir müssen weiterhin zeigen, dass der Operator räumliche Translationen erzeugt, dass sein Erwartungswert bei vorhandener Translationssymmetrie erhalten bleibt und dass sich ein Wellenpaket im geeigneten nichtrelativistischen System mit der Gruppengeschwindigkeit \(\expect{p}/m\) bewegt.}
+\end{classroomqa}
+
+\section{Wie es weitergeht}
+
+Beim Übergang von Spins zu Teilchen ist die Struktur erhalten geblieben, hat aber eine andere Größenordnung angenommen. Eine Basis mit kontinuierlichem Index tritt an die Stelle einer endlichen Liste von Basisvektoren. Summen werden zu Integralen, Kronecker-Deltas zu Dirac-Deltafunktionen und Spaltenvektoren zu quadratintegrierbaren Funktionen. Der Ort wirkt durch Multiplikation, der Impuls durch Ableitung.
+
+Die nächsten Schritte sind physikalischer und nicht bloß notationeller Art. Für Impulswahrscheinlichkeiten brauchen wir die Impulsbasis und die Fourier-Transformation. Die Zeitentwicklung erfordert die Schr\"odinger-Gleichung für \(\psi(x,t)\). Wellenpakete werden dann den abstrakten Operator \(p=-i\hbar\,d/dx\) mit der Bewegung verknüpfen: Ihre Gruppengeschwindigkeit wird mit dem Impuls dividiert durch die Masse zusammenhängen, und die Translationssymmetrie wird die Impulserhaltung erklären. Der Kommutator \([x,p]=i\hbar\) ist daher kein isolierter Kunstgriff. Er bildet das Scharnier zwischen der bereits entwickelten vektorraumartigen Mechanik und der Quantendynamik von Teilchen.

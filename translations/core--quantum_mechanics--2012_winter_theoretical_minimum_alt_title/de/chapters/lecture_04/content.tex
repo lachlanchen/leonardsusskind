@@ -1,0 +1,446 @@
+\chapter{Messung, unitäre Entwicklung und Quantendynamik}
+
+\lectureoverview{Zunächst fassen wir die bereits verwendeten Messprinzipien zusammen: Observablen sind hermitesche Operatoren, ihre Eigenwerte sind mögliche Messergebnisse, unterscheidbare Zustände sind orthogonal, und die Bornsche Regel ordnet Wahrscheinlichkeiten zu. Die neue Frage betrifft die Dynamik. Reversibilität erfordert eine gemeinsame lineare Entwicklung, die Skalarprodukte erhält; dadurch ist der Entwicklungsoperator unitär und sein infinitesimaler Generator hermitesch. Dieser Generator ist der Hamiltonoperator; seine Wirkung führt zur zeitabhängigen Schr\"odinger-Gleichung. Anschließend leiten wir die Formel für den Erwartungswert, die Kommutatorgleichung für Mittelwerte, ihren Zusammenhang mit den klassischen Poisson-Klammern und die Erhaltung des mittleren Energiewerts her.}
+
+Vorerst stellen wir das Spinsystem zurück. Wir werden darauf zurückkommen, sobald die allgemeine Struktur feststeht. Die folgenden Prinzipien werden nicht als minimale, voneinander unabhängige Menge dargestellt. Einige stützen einander oder implizieren einander teilweise, doch wenn man sie getrennt formuliert, wird ihr physikalischer Gehalt deutlicher.
+
+\section{Was eine Messung ergeben kann}
+
+Eine \emph{Observable} ist etwas, das gemessen werden kann. Der etablierte Begriff klingt etwas gewichtiger als nötig; \emph{messbar} hätte ebenso gut genügt. Jeder Observablen ordnen wir einen hermiteschen Operator zu. Bezeichnen wir einen solchen Operator vorerst mit \(L\):
+\begin{equation}
+L^\dagger=L.
+\end{equation}
+Nicht jeder lineare Operator ist hermitesch. Umgekehrt kann es eine schwierige experimentelle Frage sein, ob sich ein bestimmter hermitescher Operator mit den verfügbaren Materialien und Apparaturen messen lässt. Die abstrakte Arbeitsregel ist dennoch großzügig: Ein hermitescher Operator steht für eine mögliche Observable, auch wenn die praktische Messmethode noch nicht erfunden wurde.
+
+Gilt
+\begin{equation}
+L\ket{\lambda}=\lambda\ket{\lambda},
+\end{equation}
+so ist \(\lambda\) ein mögliches numerisches Ergebnis einer Messung von \(L\). Wir verwenden dasselbe Symbol zur Bezeichnung des Eigenwerts und des zugehörigen Eigenvektors. Die Ket-Klammern unterscheiden die beiden: \(\lambda\) ist eine Zahl, während \(\ket{\lambda}\) ein Zustand ist.
+
+Warum hermitesche Operatoren? Ein elementares Messgerät gibt reelle Zahlen aus. Scheint ein Gerät eine komplexe Zahl auszugeben, so misst es in Wirklichkeit zwei unabhängige reelle Größen. Die Eigenwerte von Observablen müssen daher reell sein. Außerdem müssen Zustände, die verschiedenen bestimmten Messergebnissen entsprechen, physikalisch unterscheidbar und somit orthogonal sein. Im hier verwendeten endlichdimensionalen Fall ist ein linearer Operator mit einer vollständigen Orthonormalbasis aus Eigenvektoren und reellen Eigenwerten hermitesch. Die physikalischen Aussagen und die hermitesche Struktur passen also zueinander.
+
+\subsection{Unterscheidbarkeit bedeutet Orthogonalität}
+
+Der Ausdruck \emph{physikalisch unterscheidbar} hat eine operationale Bedeutung. Angenommen, ein Spin wird entweder nach oben oder nach unten präpariert. Eine Messung entlang der \(z\)-Achse unterscheidet die beiden Möglichkeiten eindeutig: Für oben ergibt sich \(+1\), für unten \(-1\). Ebenso lassen sich links und rechts durch eine Messung entlang der \(x\)-Achse unterscheiden.
+
+Angenommen, der Spin wird nun entweder nach oben oder nach rechts präpariert. Eine Messung entlang der \(z\)-Achse ergibt für den Zustand nach oben mit Sicherheit \(+1\), doch auch für den Zustand nach rechts tritt \(+1\) mit von null verschiedener Wahrscheinlichkeit auf. Eine Messung entlang der \(x\)-Achse kehrt die Asymmetrie lediglich um. Auch wenn man die Apparatur um \(45^\circ\) neigt, überlappen die Ergebnisverteilungen weiterhin. Keine Ausrichtung liefert ein Ergebnis, das die beiden Präparationen stets unterscheidet.
+
+\begin{definition}
+Zwei Zustände sind physikalisch unterscheidbar, wenn ein Experiment oder eine Folge von Experimenten eindeutig feststellen kann, welche Präparation vorlag.
+\end{definition}
+
+Die Quantenmechanik stellt vollständige Unterscheidbarkeit geometrisch dar:
+\begin{equation}
+\text{distinguishable states}
+\quad\Longrightarrow\quad
+\text{orthogonal vectors}.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Kann eine andere Messachse einen Zustand nach oben von einem Zustand nach rechts unterscheiden?}
+\lecturerresponse{Nein. Eine Messung entlang der \(z\)- oder \(x\)-Achse kann die Präparation manchmal erkennen lassen, aber mindestens ein Ergebnis ist mit beiden vereinbar. Auch bei einer Zwischenstellung überlappen die Wahrscheinlichkeiten. Das Problem liegt nicht an einer ungünstigen Wahl der Apparatur; die beiden Zustandsvektoren sind nicht orthogonal.}
+\end{classroomqa}
+
+\section{Die Bornsche Regel}
+
+Die Eigenwerte geben an, was geschehen kann, aber nicht, wie häufig es geschieht. Die Wahrscheinlichkeitsregel liefert den prädiktiven Gehalt. Wird ein normiertes System im Zustand \(\ket{A}\) präpariert und gehört der normierte Eigenvektor \(\ket{\lambda}\) zur gemessenen Observablen \(L\), dann gilt
+\begin{equation}
+P(\lambda)=\left|\braket{\lambda}{A}\right|^2.
+\label{eq:l4-born-rule}
+\end{equation}
+Das Skalarprodukt \(\braket{\lambda}{A}\) ist eine \emph{Wahrscheinlichkeitsamplitude}. Im Allgemeinen ist es komplex und kann daher selbst keine Wahrscheinlichkeit sein. Sein Betragsquadrat ist reell und nichtnegativ.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_01.png}\caption{Die Bornsche Regel neben den Messprinzipien: Die Wahrscheinlichkeit ist das Betragsquadrat eines Skalarprodukts.}\lectureframe{00:12:40}\end{figure}
+
+Wählen wir eine Orthonormalbasis aus Eigenvektoren von \(L\) und entwickeln wir den Zustand in dieser Basis:
+\begin{equation}
+\ket{A}=\sum_i \alpha_i\ket{\lambda_i},
+\qquad
+\alpha_i=\braket{\lambda_i}{A}.
+\end{equation}
+Dann lautet die Bornsche Regel
+\begin{equation}
+P(\lambda_i)=|\alpha_i|^2.
+\end{equation}
+Aus der Normierung folgt
+\begin{equation}
+\sum_i P(\lambda_i)=\sum_i|\alpha_i|^2=1.
+\end{equation}
+Die Forderungen nach Positivität und Normierung leiten die Bornsche Regel für sich genommen nicht her, zeigen aber, warum das Betragsquadrat so gut zur Wahrscheinlichkeitstheorie passt. Letztlich wird die Regel experimentell geprüft.
+
+\begin{classroomqa}\audiencequestion{Ist das Betragsquadrat auch deshalb erforderlich, damit sich alle Wahrscheinlichkeiten zu eins addieren?}\lecturerresponse{Bei einem normierten Zustand, der in einer Orthonormalbasis entwickelt wird, addieren sich die Amplitudenquadrate tatsächlich zu eins. Positivität und Normierung sind daher vollkommen mit der Bornschen Regel vereinbar. Welche Aussage logisch Vorrang haben sollte, ist hier weniger wichtig als ihre gegenseitige Vereinbarkeit; die Wahrscheinlichkeitsregel wird experimentell festgelegt.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Warum steht ein Eigenwert, also eine Zahl, in einem Ket?}\lecturerresponse{Die Notation \(\ket{\lambda}\) bezeichnet den Eigenvektor zum numerischen Eigenwert \(\lambda\). Eine pedantischere Notation könnte ein weiteres Symbol einführen, doch zu viele Indizes verschleiern bald die Rechnung. Das Ket-Symbol hält Zahl und Vektor auseinander.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Welches Prinzip macht aus mehreren möglichen Ergebnissen ein tatsächlich eintretendes Ergebnis?}\lecturerresponse{Die Bornsche Regel ordnet die Wahrscheinlichkeiten zu. Ist der präparierte Zustand bereits ein Eigenvektor von \(L\), so tritt das zugehörige Ergebnis mit Wahrscheinlichkeit eins ein. Bei einer Superposition wird ein Ergebnis mit den in Gleichung~\eqref{eq:l4-born-rule} angegebenen Wahrscheinlichkeiten erhalten. Die dazugehörige Zustandsänderungs- oder Kollapsregel ist eine weiterführende Frage der Messung; darauf kommen wir zurück, sobald Verschränkung eingeführt wurde.}\end{classroomqa}
+
+\subsection{Entartete Ergebnisse}
+
+Ein Eigenwert kann zu mehr als einem linear unabhängigen Eigenvektor gehören. Angenommen,
+\begin{align}
+L\ket{\lambda,1}&=\lambda\ket{\lambda,1},\\
+L\ket{\lambda,2}&=\lambda\ket{\lambda,2}.
+\end{align}
+Dann ist auch jede Linearkombination in ihrem Spann ein Eigenvektor zum Eigenwert \(\lambda\):
+\begin{equation}
+L\bigl(\alpha\ket{\lambda,1}+\beta\ket{\lambda,2}\bigr)
+=
+\lambda\bigl(\alpha\ket{\lambda,1}+\beta\ket{\lambda,2}\bigr).
+\end{equation}
+Diese Freiheit erlaubt es, innerhalb des entarteten Eigenraums eine Orthonormalbasis zu wählen. Läuft der Index \(a\) über diese Basis, so ist die Wahrscheinlichkeit des numerischen Ergebnisses \(\lambda\) die Summe über die wechselseitig ausschließenden orthogonalen Kanäle:
+\begin{equation}
+P(\lambda)=\sum_a\left|\braket{\lambda,a}{A}\right|^2.
+\label{eq:l4-degenerate-born}
+\end{equation}
+Äquivalent dazu gilt \(P(\lambda)=\bra{A}P_\lambda\ket{A}\), wenn \(P_\lambda\) der Projektor auf den gesamten Eigenraum ist. Die Projektornotation ist kompakt; Gleichung~\eqref{eq:l4-degenerate-born} zeigt die Addition der Wahrscheinlichkeiten unmittelbar.
+
+\begin{classroomqa}\audiencequestion{Was passiert, wenn sich der präparierte Zustand mit mehreren Eigenvektoren überlappt oder mehrere Eigenvektoren denselben Eigenwert haben?}\lecturerresponse{Bei verschiedenen Eigenwerten liefert jedes Skalarprodukt die Wahrscheinlichkeit für das jeweilige Ergebnis. Bei mehreren orthogonalen Eigenvektoren mit demselben Eigenwert werden die Betragsquadrate der Skalarprodukte addiert. Sind die ursprünglich im entarteten Unterraum gewählten Vektoren nicht orthogonal, ersetzt man sie zunächst durch eine Orthonormalbasis; die summierte Wahrscheinlichkeit ist unabhängig von der gewählten Basis.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Kann man bei einem Spin mit völlig unbekannter Präparation eine eindeutige Antwort erhalten?}\lecturerresponse{Nicht an einem einzelnen beliebigen Exemplar. Ohne Einschränkungen dazu, wie der Spin präpariert wurde, gibt es keine einzelne Messung, die einen unbekannten Quantenzustand eindeutig identifiziert. Die Kenntnis der Präparation legt fest, zwischen welchen Alternativen eine Messung unterscheiden kann.}\end{classroomqa}
+
+\section{Die neue Frage: Wie sich Zustände ändern}
+
+Die bisherigen Prinzipien beschreiben Zustände und Messungen. Die Dynamik fragt danach, was zwischen zwei Zeitpunkten geschieht. Die klassische Analogie ist hilfreich. Eine Münze mit zwei Seiten könnte bei jedem Schritt unverändert bleiben oder abwechselnd Kopf, Zahl, Kopf, Zahl zeigen. Für einen sechsseitigen Würfel gibt es weitere Aktualisierungsregeln, und für einen kontinuierlichen Zustandsraum unendlich viele. Ein dynamisches Gesetz bildet den gegenwärtigen Zustand auf den nächsten ab.
+
+Ein befriedigendes klassisches Gesetz ist deterministisch und reversibel. Verschiedene Zustände gehen nicht in einem einzigen Zustand auf, denn dann ließe sich die Vergangenheit nicht mehr aus der Gegenwart bestimmen. Diese Erhaltung von Information wird manchmal als \emph{nullter Hauptsatz} bezeichnet: Er kommt vor den vertrauteren Erhaltungssätzen.
+
+Die Quantenversion beginnt mit dem Zustandsvektor \(\ket{\psi(t)}\), der ausdrücklich als Funktion der Zeit betrachtet wird. Wir postulieren einen einzigen linearen Zeitentwicklungsoperator \(U(t)\), sodass
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\label{eq:l4-time-development}
+\end{equation}
+Derselbe Operator \(U(t)\) wirkt auf jeden Anfangszustand des Systems. Er wird nicht für jeden Eingangsvektor neu gewählt, und seine Wirkung ist linear. Allgemeinere nichtlineare oder zustandsabhängige Gesetze lassen sich zwar vorstellen, geraten aber rasch in Konflikt mit der probabilistischen, kausalen und auf zusammengesetzte Systeme bezogenen Struktur der Quantenmechanik.
+
+\subsection{Reversibilität erhält Skalarprodukte}
+
+Ein zweiter Anfangszustand entwickle sich nach demselben Gesetz:
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)}.
+\end{equation}
+Waren die beiden Präparationen anfangs unterscheidbar, müssen sie unterscheidbar bleiben. Daher gilt
+\begin{equation}
+\braket{\psi(0)}{\phi(0)}=0
+\quad\Longrightarrow\quad
+\braket{\psi(t)}{\phi(t)}=0.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_02.png}\caption{Zwei Zustände entwickeln sich mit demselben Operator \(U(t)\); anfängliche Orthogonalität bleibt erhalten.}\lectureframe{00:34:43}\end{figure}
+
+Die Erhaltung normierter Zustände und der Orthogonalität reicht aus, um alle Skalarprodukte zu erhalten. Um den Mechanismus zu erkennen, entwickeln wir zwei beliebige Vektoren in einer Orthonormalbasis. Die Basisvektoren bleiben unter der Entwicklung orthonormal, sodass die Koeffizienten zu jedem Zeitpunkt dasselbe Skalarprodukt ergeben:
+\begin{equation}
+\braket{\psi(t)}{\phi(t)}=\braket{\psi(0)}{\phi(0)}.
+\label{eq:l4-overlap-conservation}
+\end{equation}
+Damit bleibt nicht nur die vollständige Unterscheidbarkeit, sondern auch der gesamte Grad der Ähnlichkeit zweier Zustände erhalten.
+
+Das zu Gleichung~\eqref{eq:l4-time-development} gehörige Bra erhält man durch hermitesche Konjugation:
+\begin{equation}
+\bra{\psi(t)}=\bra{\psi(0)}U^\dagger(t).
+\end{equation}
+Setzt man die Entwicklungen des Bra und des Ket in Gleichung~\eqref{eq:l4-overlap-conservation} ein, erhält man
+\begin{equation}
+\bra{\psi(0)}U^\dagger(t)U(t)\ket{\phi(0)}
+=
+\braket{\psi(0)}{\phi(0)}
+\end{equation}
+und zwar für jedes Paar von Anfangsvektoren. Hat ein Operator zwischen jedem Vektorpaar dieselben Matrixelemente wie die Identität, so ist er die Identität. Also gilt
+\begin{equation}
+U^\dagger(t)U(t)=I.
+\label{eq:l4-unitarity}
+\end{equation}
+Ein Operator, der Gleichung~\eqref{eq:l4-unitarity} erfüllt, heißt \emph{unitär}. Im endlichdimensionalen Fall gilt
+\begin{equation}
+U^\dagger(t)=U^{-1}(t),
+\end{equation}
+sodass die Entwicklung rückwärts ablaufen kann.
+
+\begin{classroomqa}\audiencequestion{Bezeichnen Groß- und Kleinbuchstaben \(\Phi\) hier verschiedene Arten von Zuständen?}\lecturerresponse{Nein. Das ist lediglich uneinheitliche Handschrift. Wir verwenden durchgehend \(\ket{\phi}\); in der Mathematik werden Zustände durch ihre Indizes und Werte unterschieden, nicht durch zufällige Groß- oder Kleinschreibung.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Kann man \(U^\dagger U=I\) so lesen, dass der eine Faktor der Inverse des anderen ist?}\lecturerresponse{Ja. Ein unitärer Operator hat den Inversen \(U^{-1}=U^\dagger\). Das ist der algebraische Ausdruck für reversible Entwicklung, die Skalarprodukte erhält.}\end{classroomqa}
+
+\section{Infinitesimale Zeit und der Hamiltonoperator}
+
+Bei verschwindender verstrichener Zeit ändert sich nichts, also gilt \(U(0)=I\). Für ein sehr kleines Zeitintervall \(\epsilon\) muss \(U(\epsilon)\) nahe an der Identität liegen. In Einheiten, in denen vorübergehend \(\hbar=1\) gilt, schreiben wir
+\begin{equation}
+U(\epsilon)=I-i\epsilon H+O(\epsilon^2).
+\label{eq:l4-small-u}
+\end{equation}
+Das Minuszeichen und der Faktor \(i\) sind zunächst Konventionen; ohne Kenntnis von \(H\) lassen sie sich in dessen Definition aufnehmen. Ihr Nutzen zeigt sich, sobald man die Unitarität fordert. Die hermitesch konjugierte Entwicklung lautet
+\begin{equation}
+U^\dagger(\epsilon)=I+i\epsilon H^\dagger+O(\epsilon^2).
+\end{equation}
+Damit ergibt sich
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon)\\
+&=\bigl(I+i\epsilon H^\dagger\bigr)
+  \bigl(I-i\epsilon H\bigr)+O(\epsilon^2)\\
+&=I+i\epsilon(H^\dagger-H)+O(\epsilon^2).
+\end{align}
+Der Term erster Ordnung muss verschwinden:
+\begin{equation}
+H^\dagger=H.
+\label{eq:l4-h-hermitian}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_03.png}\caption{Die Unitaritätsrechnung erster Ordnung erzwingt, dass der infinitesimale Generator hermitesch ist.}\lectureframe{00:43:38}\end{figure}
+
+Der Buchstabe \(H\) steht nicht für hermitesch, sondern für \emph{Hamiltonoperator}. Da er hermitesch ist, steht er für eine Observable. Er wird mit der Energie identifiziert und, struktureller betrachtet, mit dem Generator der Zeittranslationen. Mit einer bloßen Namensgebung ist es nicht getan: In Systemen mit bekanntem klassischem Grenzfall muss der Quantenoperator \(H\) die Dynamik des klassischen Hamiltonoperators reproduzieren. Symmetrie, Freiheitsgrade, physikalisches Urteil und letztlich das Experiment entscheiden, welcher hermitesche Operator der Hamiltonoperator eines bestimmten Systems ist.
+
+\begin{classroomqa}\audiencequestion{Könnte man für \(H\) einen beliebigen hermiteschen Operator verwenden? Wie wird der tatsächliche ausgewählt?}\lecturerresponse{Die bisherige Herleitung lässt jeden hermiteschen Operator im Hilbertraum des Systems zu. Die Physik wählt einen Operator aus, der aus den Freiheitsgraden dieses Systems aufgebaut ist. Für einen Spin muss er aus Spinoperatoren und äußeren Feldern konstruiert sein. Symmetrie und bekannte Wechselwirkungen schränken die Möglichkeiten ein; das Experiment bestimmt die verbleibenden Konstanten und manchmal auch die Form des Operators selbst.}\end{classroomqa}
+
+Der Hamiltonoperator kann explizit von der Zeit abhängen. Ein Magnetfeld, dessen Strom verändert wird, ist ein einfaches Beispiel. Sind die äußeren Parameter zeitunabhängig, hängt \(H\) nicht explizit von der Zeit ab; das entspricht Zeittranslationsinvarianz. Werden die Parameter zeitabhängig angesteuert, muss die Energie nicht erhalten bleiben.
+
+\begin{classroomqa}\audiencequestion{Ist \(H\) in der Entwicklung für kleine Zeiten eine Konstante, oder sollte es \(H(0)\) heißen?}\lecturerresponse{Bei einem zeitunabhängigen Problem ist \(H\) zu jedem Zeitpunkt derselbe Operator. Allgemeiner enthält der lokale Schritt, der zum Zeitpunkt \(t\) beginnt, den Operator \(H(t)\). Die folgende Herleitung behandelt zunächst den zeittranslationsinvarianten Fall und erläutert später, wie explizite Zeitabhängigkeit die Energieerhaltung verändert.}\end{classroomqa}
+
+\section{Die zeitabhängige Schr\"odinger-Gleichung}
+
+Wir wenden Gleichung~\eqref{eq:l4-small-u} auf den Zustand an:
+\begin{equation}
+\ket{\psi(\epsilon)}=(I-i\epsilon H)\ket{\psi(0)}+O(\epsilon^2).
+\end{equation}
+Umgestellt und durch \(\epsilon\) geteilt ergibt sich
+\begin{equation}
+\frac{\ket{\psi(\epsilon)}-\ket{\psi(0)}}{\epsilon}
+=-iH\ket{\psi(0)}+O(\epsilon).
+\label{eq:l4-difference-quotient}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_04.png}\caption{Die infinitesimale Zustandsänderung wird zu einem vektorwertigen Differenzenquotienten umgestellt.}\lectureframe{00:51:42}\end{figure}
+
+Beim Differenzieren eines Vektors gibt es kein besonderes Rätsel. Zwei Vektoren lassen sich voneinander subtrahieren, ihre Differenz lässt sich durch eine Zahl teilen, und der Grenzwert definiert wiederum einen Vektor. Der oben als null bezeichnete Bezugszeitpunkt kann jeder beliebige Zeitpunkt sein. Für \(\epsilon\to0\) folgt daher
+\begin{equation}
+\boxed{\frac{d}{dt}\ket{\psi(t)}=-iH\ket{\psi(t)}}
+\qquad(\hbar=1).
+\label{eq:l4-schrodinger-natural}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_05.png}\caption{Die vollständige Herleitung an der Tafel mündet in die eingerahmte zeitabhängige Schr\"odinger-Gleichung.}\lectureframe{00:56:11}\end{figure}
+
+Dies ist die verallgemeinerte zeitabhängige Schr\"odinger-Gleichung. Die vertraute Differentialgleichung für die Wellenfunktion eines Teilchens ist eine Darstellung dieser abstrakten Gleichung für den Zustandsvektor. Um sie anzuwenden, muss man \(H\) und den Anfangszustand kennen.
+
+Für ein endliches Zeitintervall löst man die Differentialgleichung. Ist \(H\) zeitunabhängig, ergibt wiederholtes Zusammensetzen infinitesimaler Schritte
+\begin{equation}
+U(t)=e^{-iHt}
+\qquad(\hbar=1),
+\end{equation}
+Dies ist die präzise Formulierung dafür, alle kleinen Schritte zusammenzusetzen. Bei zeitabhängigen Hamiltonoperatoren muss die Zeitordnung berücksichtigt werden; auf diese Verfeinerung gehen wir später ein.
+
+\begin{classroomqa}\audiencequestion{Die Entwicklung verwendet ein infinitesimales Zeitintervall. Was bestimmt den Zustand nach langer Zeit?}\lecturerresponse{Man wendet die infinitesimale Zustandsänderung wiederholt an oder löst gleichwertig die Differentialgleichung. Für zeitunabhängiges \(H\) wird das Produkt der kleinen Schritte zu \(e^{-iHt/\hbar}\).}\end{classroomqa}
+
+\subsection{Plancks Konstante wieder einsetzen}
+
+In der vorhergehenden Gleichung wurden Einheiten mit \(\hbar=1\) verwendet. Eine Dimensionsanalyse zeigt, wo \(\hbar\) hingehört. Die Ableitung hat die Dimension einer inversen Zeit, während \(H\) die Dimension einer Energie hat. Da \(\hbar\) die Dimension Energie mal Zeit hat, gilt
+\begin{equation}
+\boxed{i\hbar\frac{d}{dt}\ket{\psi(t)}=H\ket{\psi(t)}}.
+\label{eq:l4-schrodinger}
+\end{equation}
+Äquivalent dazu lautet der infinitesimale Operator \(U(\epsilon)=I-i\epsilon H/\hbar+O(\epsilon^2)\) und die zeitunabhängige Entwicklung über eine endliche Zeit \(U(t)=e^{-iHt/\hbar}\).
+
+\begin{classroomqa}\audiencequestion{Wo genau geht die Plancksche Konstante ein?}\lecturerresponse{Die Plancksche Konstante tritt in den beiden äquivalenten Formen auf:
+\begin{align*}
+i\hbar\,\partial_t\ket{\psi}&=H\ket{\psi},\\
+\partial_t\ket{\psi}&=-\frac{i}{\hbar}H\ket{\psi}.
+\end{align*}
+Beide haben passende Dimensionen, denn \(\hbar\) hat die Einheit Energie mal Zeit.}\end{classroomqa}
+
+Der Zustand entwickelt sich deterministisch gemäß Gleichung~\eqref{eq:l4-schrodinger}; Messergebnisse bleiben statistisch, weil sie gemäß der Bornschen Regel aus dem sich kontinuierlich ändernden Zustand gezogen werden.
+
+\begin{classroomqa}\audiencequestion{Hängt die Herleitung von Reversibilität ab, und wie ist sie mit einer Messung vereinbar, die den Zustand stört?}\lecturerresponse{Sie beruht auf linearer Entwicklung und der Erhaltung der Skalarprodukte. Die Gleichung beschreibt ein isoliertes System. Ein Messgerät wechselwirkt so stark, dass es Teil des physikalischen Systems wird und nicht ignoriert werden kann. Das Gesamtsystem aus System und Messgerät muss quantenmechanisch behandelt werden; seine Verschränkung muss man verstehen, bevor sich die Messung analysieren lässt.}\end{classroomqa}
+
+\section{Erwartungswert bedeutet Mittelwert}
+
+Um die Quantendynamik mit klassischen Gleichungen zu vergleichen, benötigen wir den Mittelwert einer Observablen. Die übliche Bezeichnung \emph{Erwartungswert} kann irreführend sein. Bei einer fairen Zufallsgröße, die nur die Werte \(+1\) und \(-1\) annimmt, beträgt der Mittelwert null, obwohl null niemals beobachtet wird. Eine symmetrische Verteilung kann sogar in einer ganzen Umgebung ihres Mittelwerts verschwinden. Bei manchen glatten, eingipfligen Verteilungen stimmen Mittelwert, Median und Modus überein, im Allgemeinen jedoch nicht.
+
+Kann \(L\) die Werte \(\lambda_i\) mit den Wahrscheinlichkeiten \(P(\lambda_i)\) annehmen, definieren wir
+\begin{equation}
+\overline{\lambda}=\sum_i\lambda_iP(\lambda_i).
+\label{eq:l4-probability-average}
+\end{equation}
+Dies ist das erste Moment der Verteilung, keine Zusage für das Ergebnis eines einzelnen Versuchs.
+
+\begin{classroomqa}\audiencequestion{Ist nicht der häufigste Wert derjenige, den man erwarten sollte?}\lecturerresponse{Der häufigste Wert ist der Modus; der gewichtete Mittelwert ist das arithmetische Mittel. Bei einer einfachen, schmalen Verteilung können beide übereinstimmen, aber bei einer zweigipfligen Verteilung kann der Mittelwert in einem Bereich mit praktisch verschwindender Wahrscheinlichkeit liegen. Mit Erwartungswert ist das mathematische Mittel gemeint, nicht unbedingt das wahrscheinlichste einzelne Ergebnis.}\end{classroomqa}
+
+Wiederholte Versuche verbinden den mathematischen Mittelwert mit den Messdaten. Unter den üblichen Voraussetzungen der Unabhängigkeit und endlicher Momente besagen die Gesetze der großen Zahlen, dass der Stichprobenmittelwert probabilistisch konvergiert. Sie garantieren nicht, dass jede endliche Folge nahe am Mittelwert liegt; eine außergewöhnlich lange Folge gleicher Spin-Ergebnisse bleibt möglich, wenn auch unwahrscheinlich. Dieselbe statistische Feinheit verhindert, dass der zweite Hauptsatz der Thermodynamik ein ausnahmsloses mikroskopisches Verbot ist.
+
+\begin{classroomqa}\audiencequestion{Wenn ein faires Spinexperiment zufällig eine Millionmal hintereinander ein Ergebnis nach oben liefert, ist sein Mittelwert dann wirklich oben?}\lecturerresponse{Der Stichprobenmittelwert dieser konkreten Folge ist tatsächlich oben. Der theoretische Erwartungswert bleibt null. Mit wachsender Zahl unabhängiger Versuche nähert sich der Stichprobenmittelwert mit hoher Wahrscheinlichkeit dem theoretischen Mittelwert an; die Wahrscheinlichkeitstheorie schließt jedoch keine einzelne außergewöhnliche endliche Folge aus.}\end{classroomqa}
+
+\subsection{Die Operator-Sandwichform}
+
+Wir entwickeln einen normierten Zustand in einer Orthonormalbasis aus Eigenvektoren von \(L\):
+\begin{equation}
+\ket{A}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+\bra{A}=\sum_j\alpha_j^*\bra{\lambda_j}.
+\end{equation}
+Die Bornsche Regel und Gleichung~\eqref{eq:l4-probability-average} ergeben
+\begin{equation}
+\overline{\lambda}=\sum_i\lambda_i|\alpha_i|^2.
+\end{equation}
+Berechnen wir nun
+\begin{align}
+\bra{A}L\ket{A}
+&=\sum_{i,j}\alpha_j^*\alpha_i
+  \bra{\lambda_j}L\ket{\lambda_i}\\
+&=\sum_{i,j}\alpha_j^*\alpha_i\lambda_i
+  \braket{\lambda_j}{\lambda_i}\\
+&=\sum_i\lambda_i|\alpha_i|^2.
+\end{align}
+Die Doppelsumme vereinfacht sich, weil
+\(\braket{\lambda_j}{\lambda_i}=\delta_{ji}\). Somit gilt
+\begin{equation}
+\boxed{\expect{L}_A=\bra{A}L\ket{A}}.
+\label{eq:l4-expectation-sandwich}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_06.png}\caption{Die Entwicklung in der Eigenbasis führt den probabilistischen Mittelwert auf die Operator-Sandwichform \(\bra{A}L\ket{A}\) zurück.}\lectureframe{01:11:50}\end{figure}
+
+Für Mittelwerte verwenden wir sowohl spitze Klammern als auch einen Überstrich. Wenn sich der Zustand entwickelt, gilt
+\begin{equation}
+\expect{L}_t=\bra{\psi(t)}L\ket{\psi(t)}.
+\end{equation}
+Der Index erinnert lediglich daran, dass der Zustand und damit auch der Mittelwert von der Zeit abhängen. In der vorliegenden Betrachtung im Schr\"odinger-Bild ist \(L\) selbst fest, sofern keine explizite Zeitabhängigkeit angegeben wird.
+
+\begin{classroomqa}\audiencequestion{Sollte das \(t\) außerhalb der Klammern stehen, und bezeichnet ein Überstrich den Stichprobenmittelwert?}\lecturerresponse{Beide Schreibweisen lassen sich mit einem Hinweis auf die Zeitabhängigkeit versehen, doch die übliche quantenmechanische Notation ist \(\expect{L}_t\) oder einfach \(\expect{L}\), wobei sich die Zeit aus \(\ket{\psi(t)}\) ergibt. Hier bezeichnet der Überstrich den theoretischen Wahrscheinlichkeitsmittelwert, das erste Moment \(\sum_i\lambda_iP(\lambda_i)\), und nicht speziell den Mittelwert einer endlichen Stichprobe.}\end{classroomqa}
+
+\section{Wie sich Mittelwerte entwickeln}
+
+Wir differenzieren die Sandwichform mit der Produktregel:
+\begin{equation}
+\frac{d}{dt}\expect{L}
+=
+\left(\frac{d}{dt}\bra{\psi}\right)L\ket{\psi}
++
+\bra{\psi}L\left(\frac{d}{dt}\ket{\psi}\right).
+\label{eq:l4-product-derivative}
+\end{equation}
+In Einheiten mit \(\hbar=1\) lauten die Ket-Gleichung und ihre hermitesch konjugierte Form
+\begin{align}
+\frac{d}{dt}\ket{\psi}&=-iH\ket{\psi},\\
+\frac{d}{dt}\bra{\psi}&=+i\bra{\psi}H.
+\end{align}
+Bei der komplexen Konjugation ändert sich das Vorzeichen von \(i\), und \(H^\dagger=H\). Setzen wir dies in Gleichung~\eqref{eq:l4-product-derivative} ein, erhalten wir
+\begin{align}
+\frac{d}{dt}\expect{L}
+&=i\bra{\psi}HL\ket{\psi}
+-i\bra{\psi}LH\ket{\psi}\\
+&=i\bra{\psi}(HL-LH)\ket{\psi}.
+\end{align}
+
+Operatoren müssen nicht kommutieren. Ihre Reihenfolge ist ebenso wichtig wie die Reihenfolge bei Matrizen. Wir definieren
+\begin{equation}
+[H,L]=HL-LH.
+\end{equation}
+Dann gilt
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{L}=i\expect{[H,L]}}
+\qquad(\hbar=1).
+\label{eq:l4-average-evolution-natural}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_07.png}\caption{Die Zeitableitung eines Mittelwerts wird durch den Erwartungswert eines Kommutators bestimmt.}\lectureframe{01:22:22}\end{figure}
+
+Mit wiederhergestellten Einheiten gilt
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{L}
+=\frac{i}{\hbar}\expect{[H,L]}
+=-\frac{i}{\hbar}\expect{[L,H]}}.
+\label{eq:l4-average-evolution}
+\end{equation}
+Hängt \(L\) selbst explizit von der Zeit ab, enthält die allgemeine Gleichung zusätzlich den Term \(\expect{\partial L/\partial t}\). Hier ist \(L\) fest.
+
+\begin{classroomqa}\audiencequestion{Ist das Vorzeichen in der Kommutatorgleichung wirklich plus \(i\)?}\lecturerresponse{Ja. Mit der Definition \([H,L]=HL-LH\) ergibt sich \(+(i/\hbar)\expect{[H,L]}\). Kehrt man die Reihenfolge im Kommutator um, ändert sich sein Vorzeichen; man erhält die äquivalente Form \(-(i/\hbar)\expect{[L,H]}\).}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Wurde die Bra-Gleichung durch komplexe oder durch hermitesche Konjugation gewonnen, und warum steht die Ableitung weiterhin links?}\lecturerresponse{Es war die hermitesche Konjugation. Die Ableitung eines Kets ist ein Ket, und das Dual dieser Ableitung ist die Ableitung des entsprechenden Bras. Man kann dies unmittelbar am Differenzenquotienten erkennen: Differenzen von Bras sind Bras, so wie Differenzen von Kets Kets sind. Die Zeit ist hier ein Parameter und kein Operator, dessen Reihenfolge umgekehrt werden müsste.}\end{classroomqa}
+
+\section{Der klassische Schatten}
+
+In der klassischen Hamiltonschen Mechanik erfüllt eine Phasenraumfunktion \(L(q,p)\) ohne explizite Zeitabhängigkeit die Gleichung
+\begin{equation}
+\frac{dL}{dt}=\{L,H\}_{\mathrm{PB}},
+\label{eq:l4-poisson-evolution}
+\end{equation}
+Dabei ist \(\{\cdot,\cdot\}_{\mathrm{PB}}\) die Poisson-Klammer. Vergleichen wir dies mit Gleichung~\eqref{eq:l4-average-evolution}. Beide Klammern sind antisymmetrisch:
+\begin{align}
+\{L,H\}_{\mathrm{PB}}&=-\{H,L\}_{\mathrm{PB}},\\
+[L,H]&=-[H,L].
+\end{align}
+Beide wirken außerdem auf ein Produkt wie Ableitungen:
+\begin{align}
+\{LM,H\}_{\mathrm{PB}}
+&=\{L,H\}_{\mathrm{PB}}M+L\{M,H\}_{\mathrm{PB}},\\
+[LM,H]
+&=L[M,H]+[L,H]M.
+\label{eq:l4-commutator-product}
+\end{align}
+Die Kommutatoridentität folgt, indem man \(LHM\) addiert und wieder subtrahiert:
+\begin{align}
+LMH-HLM
+&=(LMH-LHM)\\
+&\quad +(LHM-HLM)\\
+&=L(MH-HM)\\
+&\quad +(LH-HL)M.
+\end{align}
+
+Der Parallelismus legt die Zuordnung nahe
+\begin{equation}
+[A,B]
+\quad\longleftrightarrow\quad
+i\hbar\{A,B\}_{\mathrm{PB}},
+\label{eq:l4-dirac-correspondence}
+\end{equation}
+oder gleichwertig
+\begin{equation}
+\{A,B\}_{\mathrm{PB}}
+\quad\longleftrightarrow\quad
+-\frac{i}{\hbar}[A,B].
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_08.png}\caption{Die Gleichung mit der klassischen Poisson-Klammer und die Zuordnung zum quantenmechanischen Kommutator, mit wiederhergestelltem \(\hbar\).}\lectureframe{01:32:32}\end{figure}
+
+Dirac erkannte diesen Zusammenhang und nutzte ihn als Zugang zur Quantenmechanik. Dennoch muss man ihn als Zuordnung und nicht als universelle Ersetzungsregel behandeln: Es können Mehrdeutigkeiten bei der Operatorordnung auftreten, und der klassische Grenzfall muss aus der Quantendynamik hergeleitet werden. Konzeptionell steht die Quantenmechanik an erster Stelle; die klassische Mechanik ist ihre Näherung für geeignete Zustände und Skalen. Kommutatoren kommen vor Poisson-Klammern, auch wenn die historische Analogie uns dabei hilft, den Zusammenhang zu entdecken.
+
+\begin{classroomqa}\audiencequestion{Warum wird \(H\) als Energie bezeichnet, und warum folgern wir die Energieerhaltung, bevor wir ein Symmetrieprinzip voraussetzen?}\lecturerresponse{Zum jetzigen Zeitpunkt ist \(H\) streng genommen der hermitesche Generator der Zeittranslationen. Ihn Energie zu nennen, ist eine physikalische Identifikation, die dort überprüft werden muss, wo ein klassischer Grenzfall bekannt ist. Für große oder schwere Systeme in geeigneten Zuständen müssen die quantenmechanischen Mittelwerte den klassischen Gleichungen folgen, und der Quantenoperator \(H\) muss mit dem klassischen Hamiltonoperator verknüpft sein. Die folgende Aussage zur Erhaltung setzt voraus, dass dieser Generator nicht explizit von der Zeit abhängt.}\end{classroomqa}
+
+\section{Der mittlere Energiewert bleibt erhalten}
+
+Wir setzen \(L=H\) in Gleichung~\eqref{eq:l4-average-evolution} ein, wobei der Hamiltonoperator zeitunabhängig ist:
+\begin{equation}
+\frac{d}{dt}\expect{H}
+=\frac{i}{\hbar}\expect{[H,H]}.
+\end{equation}
+Jeder Operator kommutiert mit sich selbst:
+\begin{equation}
+[H,H]=HH-HH=0,
+\end{equation}
+also gilt
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{H}=0}.
+\label{eq:l4-energy-conservation}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_09.png}\caption{Die Erhaltung des mittleren Energiewerts folgt unmittelbar daraus, dass der Hamiltonoperator mit sich selbst kommutiert.}\lectureframe{01:39:30}\end{figure}
+
+Damit ist eine bewusst zurückhaltende Aussage bewiesen: Die mittlere Energie ist konstant. Eine stärkere Aussage über die gesamte Energieverteilung folgt aus derselben Dynamik. Hängt \(H\) explizit von der Zeit ab, muss die zusätzliche explizite Zeitableitung nicht verschwinden, und das angeregte System kann Energie mit dem austauschen, was seine Parameter verändert.
+
+Zwei Fragen sind noch offen. Die Berechnung der Spinwahrscheinlichkeit für eine Messung entlang einer beliebigen Achse steht noch aus, und das Problem der Zustandsänderung wurde noch nicht hergeleitet. Zwischen Eingriffen entwickelt sich ein isolierter Zustand unitär. Während einer Messung wechselwirken System und Messapparat und verschränken sich.
+
+\begin{classroomqa}
+\audiencequestion{Was ist aus der angekündigten Wahrscheinlichkeit für einen Spin geworden, der entlang einer beliebigen Achse gemessen wird?}
+\lecturerresponse{Die allgemeine Dynamik hat die verfügbare Zeit in Anspruch genommen. Die Spinberechnung bleibt die nächste konkrete Anwendung und wird nach diesem strukturellen Rahmen wieder aufgenommen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Wie können die Postulate ohne ein Kollapspostulat vollständig sein?}
+\lecturerresponse{Vorerst ist „Kollaps“ eine vorläufige Ausdrucksweise. Bei einer Messung wird eine Verschränkung zwischen dem System und einem Messapparat hergestellt. Solange zusammengesetzte Systeme und Verschränkung noch nicht behandelt wurden, lässt sich der Messprozess nicht angemessen modellieren. Das ist der nächste konzeptuelle Schritt.}
+\end{classroomqa}
