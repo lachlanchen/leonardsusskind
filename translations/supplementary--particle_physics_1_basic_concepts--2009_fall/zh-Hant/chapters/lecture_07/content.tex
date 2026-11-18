@@ -1,0 +1,660 @@
+\chapter{角動量、自旋與統計}
+
+\section{從一般旋轉到內禀自旋}
+
+角動量是形式上的主題，自旋才是真正要探討的對象。自旋是基本粒子最簡單、也最違反直覺的性質之一，其結構可由角動量的數學推導而來。
+
+角動量是向量，方向沿著旋轉軸。沿著該軸有兩個可能的方向，因此需要約定如何選擇：將右手四指朝旋轉方向彎曲，拇指所指的方向就是角動量向量的方向。這是定義，不是定理。
+
+角動量的大小取決於質量、質量的分布方式、系統的尺寸，以及角速度。質量分布和尺寸的影響可合併反映在轉動慣量中。因此，大物體和小物體可以具有相同的角動量，卻以截然不同的速率旋轉，並具有截然不同的能量。
+
+一般的複合物體可以具有兩種概念上不同的角動量。杯子繞著外部軸作圓周運動時，會具有角動量，因為它的質心繞著該軸運動；即使杯子本身沒有繞任何穿過自身的軸旋轉，也是如此。這是軌道角動量。自旋則指繞內部軸的旋轉。
+
+清楚的定義是採用質心參考系：進入質心靜止的參考系，使總普通動量為零。在該參考系中仍存在的角動量，就是自旋角動量。物體內部不必靜止；靜止的只有它的質心。
+
+對籃球而言，這種區分並不難理解。靜止的籃球和同一顆開始旋轉的籃球，顯然是同一物體處於兩種不同狀態。量子力學讓這幅圖景變得複雜，因為角動量是離散的。允許的角動量值之間不存在連續序列，能把零角動量狀態連到第一個旋轉狀態。因此可以問：第一個旋轉狀態，是同一物體在運動，還是完全不同的物體？
+
+如何措辭有一部分取決於約定，但物理問題很明確：要達到第一個非零的轉動狀態，需要多少能量？如果能階差很小，激發後的物體仍很容易辨認；如果能階差極大，激發可能徹底改變物體。若試圖讓原子獲得過多轉動激發，可能會把電子甩掉、摧毀原子，而不是讓同一個原子安穩地旋轉。
+
+現在考慮電子，暫且不談已知的內禀自旋。能否讓電子繞內部軸旋轉？數學上的點沒有可見的內部結構可供旋轉，但實驗並不是靠提供一個可以觀察其轉動的微小剛性表面，來測定電子的大小。如果電子具有極微小但有限的尺寸，它的第一個額外轉動激發可能需要過多能量，因而無法達到。尺寸愈小，所需能量愈高；這個能量可能大得驚人，甚至可能達到普朗克能量的量級。這項估算刻意保留了不確定性。\footnote{緊接在這項估算後的一小段文字不夠清楚，無法據此進一步重建其實質內容。}
+
+因此，對基本粒子而言，自旋大小被視為固定特徵。電子的內禀自旋大小不會有一系列逐漸增大的取值。如果某種在其他方面類似電子的激發具有不同的總自旋，就會被歸類為另一種粒子。
+
+自旋大小固定，不代表方向也固定。想像一種稱為 \emph{spintron} 的粒子，其身分有一部分由角動量大小決定。如果它的自旋指向某一軸，旋轉不變性就要求，同一種粒子的自旋也可以指向另一軸。沒有任何空間方向是內禀優先的。自旋大小保持不變，方向則可以改變。因此，這裡有兩個表面上互相矛盾的要素：量子化的大小，以及可以自由旋轉的方向。角動量代數將說明兩者如何並存。
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:25}
+\audiencequestion{為什麼讓小粒子旋轉需要能量？}
+\lecturerresponse{質量為\(M\)、特徵半徑為\(R\)的物體，其轉動慣量的量級為
+\begin{equation}
+I\sim cMR^2,
+\end{equation}
+其中數值因子\(c\)取決於物體的形狀和質量分布方式。如果靠近外側的物質以速率\(v\)運動，其普通動量的量級為\(Mv\)；角動量則是動量乘以距離：
+\begin{equation}
+L\sim MvR.
+\end{equation}
+等價地，\(L=I\omega\)，其中\(v\sim\omega R\)。轉動動能為
+\begin{equation}
+E_{\mathrm{rot}}=\frac{L^2}{2I}.
+\end{equation}
+在\(M\)和\(L\)固定時，
+\begin{equation}
+E_{\mathrm{rot}}\sim\frac{L^2}{2cMR^2}\propto\frac{1}{R^2}.
+\end{equation}
+物體愈小，具有給定角動量所需的能量愈大。這種平方反比關係是經典結果。量子力學還多了一項事實：角動量以離散步長變化，因此第一個允許的步長不可能任意小。}
+\end{classroomqa}
+
+接下來要用的數學相當抽象，起初也不太直觀。它的價值在於，少數幾條代數規則就能推出可由實驗檢驗的事實。
+
+\section{軌道角動量}
+
+先考慮一個粒子繞原點作圓周運動。它的角動量大小等於動量乘以粒子到原點的垂直距離。在平面內，可以把一種環繞方向定為正，反方向定為負。這個正負號表示角動量向量相對於所選軸的方向。
+
+這還不是自旋。粒子具有角動量，是因為它具有普通動量。現在將兩個粒子放在一條直徑的兩端，讓它們沿相同的旋轉方向運動。兩者的普通動量互相抵消，所以質心靜止；但它們的角動量方向相同，會彼此相加。這個系統的總動量為零，總角動量卻不為零，是自旋的經典模型。
+
+設粒子相對於原點的位置為
+\begin{equation}
+\vec r=(x,y,z)=(x_1,x_2,x_3),
+\end{equation}
+動量為
+\begin{equation}
+\vec p=(p_x,p_y,p_z)=(p_1,p_2,p_3).
+\end{equation}
+角動量是向量積
+\begin{equation}
+\vec L=\vec r\times\vec p.
+\end{equation}
+交換兩個因子的順序會使向量反向：\(\vec p\times\vec r=-\vec r\times\vec p\)。標準約定是\(\vec r\times\vec p\)，其方向由右手定則決定。\footnote{\raggedright 講座影片畫格 \nolinkurl{lecture_07_figure_02.png}，00：18：49。\par}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_02.png}
+\par
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-0.6,0) -- (4.8,0) node[right] {$x$};
+\draw[->] (0,-0.6) -- (0,3.8) node[above] {$y$};
+\coordinate (P) at (3.2,2.3);
+\draw[->,thick] (0,0) -- (P) node[midway,above left] {$\vec r$};
+\draw[dashed] (P) -- (3.2,0);
+\draw[dashed] (P) -- (0,2.3);
+\draw[->,thick] (P) -- ++(-1.0,1.25) node[above] {$\vec p$};
+\node at (4.15,2.75) {$\vec L=\vec r\times\vec p$};
+\end{tikzpicture}
+\caption{粒子位於\(\vec r\)，動量為\(\vec p\)時，角動量\(\vec L=\vec r\times\vec p\)垂直於兩者所在的平面。}
+\lectureframe{00:18:49}
+\end{figure}
+
+以笛卡兒分量表示，
+\begin{equation}
+\begin{aligned}
+L_x&=yp_z-zp_y,\qquad
+L_y=zp_x-xp_z,\\
+L_z&=xp_y-yp_x.
+\end{aligned}
+\end{equation}
+只要記住第一個公式，再循環置換標籤即可：
+\[
+x\longrightarrow y\longrightarrow z\longrightarrow x.
+\]
+同時循環置換分量標籤和右側的標籤，就能得到下一個公式，且相對符號不變。這個助記法很有用，因為符號很容易不小心弄反。
+
+對點粒子而言，\(\vec r\times\vec p\)是相對於所選原點的軌道角動量。對複合系統而言，則將所有組成粒子的角動量向量相加：
+\begin{equation}
+\vec L_{\mathrm{tot}}=\sum_a \vec r_a\times\vec p_a.
+\end{equation}
+在質心參考系中計算此總和時，即使
+\[
+\sum_a\vec p_a=0.
+\]
+角動量仍可能不為零。這個剩餘角動量就是複合系統的自旋。
+
+\section{量子算符與正則對易關係}
+
+在量子力學中，可觀測量以算符表示。因此，位置、動量以及角動量的各分量都是算符。此處不需要了解它們具體如何實現為微分算符；對易關係所包含的資訊已足以推導角動量譜。
+
+對於兩個算符\(A\)和\(B\)，
+\begin{equation}
+[A,B]=AB-BA.
+\end{equation}
+如果兩個可觀測量對易，就可以同時指定它們的值；若兩者不對易，量子力學便不允許同時精確指定它們。
+
+三個位置座標可以同時測量，因此位置分量彼此對易：
+\begin{equation}
+[x_i,x_j]=0.
+\end{equation}
+尤其是，每個算符都與自身對易。若某個可觀測量竟與對同一可觀測量的另一次測量不相容，就不合理了。
+
+動量分量也彼此對易：
+\begin{equation}
+[p_i,p_j]=0.
+\end{equation}
+某個方向的位置分量與不同方向的動量分量對易，但不與同方向的動量分量對易。三個正則關係可以合寫為
+\begin{equation}
+[x_i,x_j]=0,\qquad
+[p_i,p_j]=0,\qquad
+[x_i,p_j]=i\hbar\,\delta_{ij}.
+\end{equation}
+例如，
+\[
+[x,p_y]=0,\qquad [x,p_x]=i\hbar,
+\]
+若顛倒次序，符號也會反轉：
+\begin{equation}
+[p_j,x_i]=-i\hbar\,\delta_{ij}.
+\end{equation}
+
+角動量和普朗克常數具有相同的量綱。角動量是距離乘以動量，而不確定性關係的量綱形式為
+\begin{equation}
+\Delta x\,\Delta p\sim\hbar
+\end{equation}
+精確的不等式還包含熟知的數值因子。因此，角動量以\(\hbar\)為單位量子化是很自然的想法，雖然目前還沒有推導出這項量子化結果。
+
+\section{推導角動量代數}
+
+首先要計算兩個角動量分量的對易子。由
+\[
+L_x=yp_z-zp_y,\qquad
+L_y=zp_x-xp_z,
+\]
+可得
+\begin{align}
+[L_x,L_y]
+&=[yp_z-zp_y,\;zp_x-xp_z] \\
+&=[yp_z,zp_x]-[yp_z,xp_z] \notag\\
+&\quad{}-[zp_y,zp_x]+[zp_y,xp_z].
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:41}
+\audiencequestion{分量公式能不能靠從左到右輪換符號來記，而不是從上到下輪換三個方程式？}
+\lecturerresponse{可以。這兩種輪換助記法都可以。助記法的目的只有一個：依正確的循環順序寫出各分量，同時留意正負號。}
+\end{classroomqa}
+
+理解對易子時，可以檢查一個乘積中的因子能否移過另一個乘積中的因子。在
+\[
+[yp_z,xp_z],
+\]
+其中，算符 \(y\) 與 \(x\) 和 \(p_z\) 都對易；而 \(p_z\) 與 \(x\) 及自身也都對易。沒有任何障礙，因此這一項為零。同理可得
+\[
+[zp_y,zp_x]=0.
+\]
+最後只有兩對乘積留下非零貢獻。
+
+對第一對而言，唯一的障礙是 \(p_z\) 移過 \(z\)：
+\begin{align}
+[yp_z,zp_x]
+&=yp_zzp_x-zp_xyp_z \\
+&=y(p_zz-zp_z)p_x \\
+&=y[p_z,z]p_x \\
+&=-i\hbar\,yp_x.
+\end{align}
+正則對易關係中的順序很重要：
+\[
+[p_z,z]=-[z,p_z]=-i\hbar.
+\]
+
+對另一對留下的乘積而言，\(L_x\)和\(L_y\)定義中的負號相乘後為正。唯一的障礙是 \(z\) 移過 \(p_z\)：
+\begin{align}
+[zp_y,xp_z]
+&=zp_yxp_z-xp_zzp_y \\
+&=x(zp_z-p_zz)p_y \\
+&=x[z,p_z]p_y \\
+&=i\hbar\,xp_y.
+\end{align}
+合併這兩項貢獻，得到
+\begin{align}
+[L_x,L_y]
+&=-i\hbar\,yp_x+i\hbar\,xp_y \\
+&=i\hbar(xp_y-yp_x) \\
+&=i\hbar L_z.
+\end{align}
+
+這是關鍵的簡化：兩個角動量分量的對易子會產生第三個分量，不再含有位置或動量算符。循環置換可得
+\begin{equation}
+\begin{aligned}
+[L_x,L_y]&=i\hbar L_z,\qquad
+[L_y,L_z]=i\hbar L_x,\\
+[L_z,L_x]&=i\hbar L_y.
+\end{aligned}
+\end{equation}
+等價地，
+\begin{equation}
+[L_i,L_j]=i\hbar\,\epsilon_{ijk}L_k.
+\end{equation}
+
+這套代數只涉及角動量算符本身，因此形成封閉的代數。一旦得到這些關係，推導時用到的\(x_i\)和\(p_i\)就可以先擱置一旁。即使總角動量是許多組成粒子角動量的總和，同樣的代數仍然適用。尤其在質心參考系中，剩餘的角動量就是自旋。因此，不必先把自旋構想成微小組成部分的運動，就能抽象地使用角動量對易關係。
+
+\(x\)、\(y\)和\(z\)軸可以任意選擇。改用另一組彼此垂直的慣性笛卡兒座標軸時，帶撇號的分量也滿足相同關係：
+\begin{equation}
+[L'_x,L'_y]=i\hbar L'_z,
+\end{equation}
+以及相應的循環置換關係。這套代數具有旋轉不變性，因此物理預測不會取決於計算時選用哪一組慣性座標軸。
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:09}
+\audiencequestion{自旋角動量是否不受座標軸平移和旋轉的影響？}
+\lecturerresponse{是。內禀自旋不受平移影響。相對於某個原點的軌道角動量可能因原點平移而改變，但質心系中保留下來的自旋不受這種平移影響。}
+\end{classroomqa}
+
+抽象代數可以產生無窮多個恆等式，其中大多數在物理上並沒有太大意義。當某個恆等式成為可測量的事實，或揭示測量在操作上的意義時，代數的價值才顯現出來。到目前為止，這套構造仍主要停留在代數層次。下一步將推導出自旋的離散結構。
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:42}
+\audiencequestion{如果選定的 \(x\)、\(y\) 和 \(z\) 軸隨粒子一起旋轉，會怎樣？}
+\lecturerresponse{這裡的討論限於慣性參考系。旋轉座標系是非慣性系，會引入離心力和科里奧利力等效應。角動量在變換至共轉參考系後並不保持不變：在慣性系中明顯旋轉的系統，在隨之旋轉的參考系中可能看起來是靜止的。此處所說的旋轉不變性，適用於取向不同的慣性笛卡兒座標軸，而非隨時間旋轉的座標軸。}
+\end{classroomqa}
+
+\section{升降算符與量子化軸}
+
+引入以下兩個組合：
+\begin{equation}
+L_+=L_x+iL_y,
+\qquad
+L_-=L_x-iL_y.
+\end{equation}
+它們類似於諧振子的產生算符和湮滅算符，作用是升高或降低所選的角動量分量。
+
+\(z\)軸並沒有特殊之處，但若要指定一個分量，就必須選定一條軸。選\(z\)為量子化軸，並寫成
+\begin{equation}
+L_z\lvert m\rangle=m\hbar\,\lvert m\rangle.
+\end{equation}
+因此，\(m\)是以\(\hbar\)為單位的\(z\)分量測量值。在代數推導中，常為方便而令\(\hbar=1\)；此處則保留其明確形式。
+
+對易子\([L_+,L_-]\)與\(L_z\)成正比，但眼前的推導還用不到它。首先要看的是各升降算符與\(L_z\)的對易子。由
+\[
+[L_x,L_z]=-i\hbar L_y,
+\qquad
+[L_y,L_z]=i\hbar L_x,
+\]
+可得
+\begin{align}
+[L_+,L_z]
+&=[L_x+iL_y,L_z] \\
+&=[L_x,L_z]+i[L_y,L_z] \\
+&=-i\hbar L_y+i(i\hbar L_x) \\
+&=-\hbar(L_x+iL_y) \\
+&=-\hbar L_+.
+\end{align}
+將\(iL_y\)項的符號改變，得到
+\begin{equation}
+[L_-,L_z]=+\hbar L_-.
+\end{equation}
+等價地，將各對易子的順序顛倒，可得
+\begin{equation}
+[L_z,L_+]=\hbar L_+,
+\qquad
+[L_z,L_-]=-\hbar L_-.
+\end{equation}
+
+角動量只能有一個分量同時具有確定值。任意兩個不同分量都不對易，因此不能同時指定它們的值。選定的確定分量決定量子化軸；選擇\(z\)只是為了方便，並非物理上的偏好。
+
+現在讓\(L_+\)作用在一個\(L_z\)本徵態上。對易子可以改寫為
+\begin{equation}
+L_zL_+=L_+L_z+\hbar L_+.
+\end{equation}
+因此
+\begin{align}
+L_z\bigl(L_+\lvert m\rangle\bigr)
+&=\bigl(L_+L_z+\hbar L_+\bigr)\lvert m\rangle \\
+&=m\hbar L_+\lvert m\rangle+\hbar L_+\lvert m\rangle \\
+&=(m+1)\hbar\,L_+\lvert m\rangle.
+\end{align}
+只要\(L_+\lvert m\rangle\)不為零，它就是一個\(L_z\)本徵態，其本徵值增加\(\hbar\)。同理，
+\begin{equation}
+L_z\bigl(L_-\lvert m\rangle\bigr)
+=(m-1)\hbar\,L_-\lvert m\rangle.
+\end{equation}
+因此\(L_-\)會使\(m\)降低一。
+
+這已經是一項不平凡的結論。不論\(L_z\)的譜最後呈現何種形式，相鄰取值之間都相差整數：
+\begin{equation}
+\ldots,\ m-2,\ m-1,\ m,\ m+1,\ m+2,\ \ldots
+\end{equation}
+不過，端點尚未確定。
+
+\section{有限多重態與自旋標記}
+
+某一種粒子的角動量大小是固定的。角動量可以重新定向，但若大小無限制地增加，最終就會變成另一種物體。因此，該粒子的\(z\)分量必定有一個最大值。
+
+帶有升算符的階梯怎麼會有頂端？諧振子提供了一個例子：到達最低態時，湮滅算符會給出零。這裡的升算符則必須在到達最高態時給出零：
+\begin{equation}
+L_+\lvert m_{\max}\rangle=0.
+\end{equation}
+\(L_+\)能提高本徵值，這個說法只有在它產生的向量不為零時才成立。最高權態正是升階序列終止的特殊態。
+
+旋轉不變性決定了下端。若角動量可以最大程度地指向\(+z\)方向，同一物體也可以經過旋轉，使角動量最大程度地指向\(-z\)方向。因此
+\begin{equation}
+m_{\min}=-m_{\max}.
+\end{equation}
+譜以零為中心對稱，各值相隔一個單位。可能的譜分成兩族。
+
+第一族包含零：
+\begin{equation}
+\begin{aligned}
+m={}&-m_{\max},-m_{\max}+1,\ldots,-1,0,\\
+&1,\ldots,m_{\max}-1,m_{\max}.
+\end{aligned}
+\end{equation}
+此時\(m_{\max}\)是整數，態的數目為
+\begin{equation}
+2m_{\max}+1.
+\end{equation}
+最大值表徵該粒子，稱為自旋。慣用記法為
+\begin{equation}
+s\equiv m_{\max},
+\qquad
+\lvert s,m\rangle\equiv\lvert m\rangle
+\end{equation}
+這是固定自旋多重態中的記法。\footnote{\raggedright 講座影片畫格 \nolinkurl{lecture_07_figure_03.png}，01：01：08。\par}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_07_figure_03.png}
+\caption{最高權條件使升階序列終止，允許的\(m\)值則形成一個有限、間隔為一的階梯。}
+\lectureframe{01:01:08}
+\end{figure}
+
+自旋為零的粒子只有\(m=0\)。自旋為一的粒子有
+\[
+m=1,0,-1,
+\]
+自旋為二的粒子則有五個分量值。希格斯玻色子是自旋為零的例子。光子和\(Z\)玻色子的自旋為一。若引力子存在，其自旋為二。複合物體的自旋可以是三，甚至更大：原子核可以具有這樣的自旋；籃球、星系等足夠宏觀的旋轉物體則可以具有任意大的角動量。一般基本粒子清單中沒有自旋為三的基本粒子。
+
+另一族同樣對稱且各值相隔一個單位，但不包含零。其起始值為
+\[
+m=\frac12,-\frac12
+\]
+並以一為步長延伸：
+\begin{equation}
+\begin{aligned}
+m={}&-m_{\max},-m_{\max}+1,\ldots,-\frac32,-\frac12,\\
+&\frac12,\frac32,\ldots,m_{\max}.
+\end{aligned}
+\end{equation}
+此處\(m_{\max}\)是半整數。最簡單的情形是自旋\(\tfrac12\)，接著是自旋\(\tfrac32\)、自旋\(\tfrac52\)，依此類推。因此，角動量多重態分為整數自旋族與半整數自旋族。
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:46}
+\audiencequestion{半整數自旋的多重態也有最大值嗎？}
+\lecturerresponse{有。這個階梯同樣有最高值。自旋為 \(\tfrac32\) 的粒子，其最大值為 \(m_{\max}=\tfrac32\)；自旋為 \(\tfrac52\) 的粒子，其最大值為 \(m_{\max}=\tfrac52\)。差別只在於最大值以及多重態中的其他所有值都是半整數。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:04}
+\audiencequestion{難道沒有自旋為 3 或更高的基本粒子嗎？}
+\lecturerresponse{在這裡討論的相對論量子框架中，通常列出的基本粒子自旋為 \(0,\tfrac12,1,\tfrac32,\) 和 \(2\)。複合物體不受這個範圍限制，自旋可以是 3，也可以大得多。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:50}
+\audiencequestion{階梯上的負值代表負自旋嗎？}
+\lecturerresponse{不是。負的 \(m\) 是分量值，表示角動量相對於所選座標軸指向相反方向。粒子的自旋則是非負的最大值 \(s=m_{\max}\)。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:05:10}
+\audiencequestion{既然分量值是離散的，那麼它們之間的所有取向又如何表示？}
+\lecturerresponse{空間取向並非只有兩三種可能。中間的取向可由 \(m\) 基底態的量子疊加來表示。下文的自旋 \(\tfrac12\) 構造會明確展示這一點。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:05:42}
+\audiencequestion{那麼，螺旋運動或圓偏振波又如何？}
+\lecturerresponse{圓偏振電磁波由圓偏振光子組成，這些光子沿傳播軸方向攜帶角動量。``螺旋運動''一詞把旋轉和向前運動結合在一起，因此不適合用來描述靜止的物體。對於運動中的粒子，相關的物理量是螺旋度，也就是自旋相對於運動方向的取向。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:07:10}
+\audiencequestion{有已知的基本粒子自旋為 \(\tfrac32\) 嗎？}
+\lecturerresponse{目前還沒有直接確認自旋為 \(\tfrac32\) 的基本粒子。超對稱理論推測，引力子有一個自旋為 \(\tfrac32\) 的伴隨粒子，稱為引力微子，但至今尚未直接探測到。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:08:01}
+\audiencequestion{角動量算符是否已不再作用於原本的波函數或右矢空間？}
+\lecturerresponse{我們尚未指定任何原本的自旋空間。現在正是利用這套代數來確定該空間。對於固定的自旋 \(s\)，其基底向量以允許的數值標記：
+\[
+\lvert s,m\rangle,\qquad m=-s,-s+1,\ldots,s.
+\]
+這個內禀自旋空間不同於一般的空間波函數空間；軌道角動量在後者中以 \(\mathbf r\times\mathbf p\) 的形式作用。不過，兩者都實現了相同的角動量代數。}
+\end{classroomqa}
+
+\section{角動量的大小}
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:32}
+\audiencequestion{角動量向量的大小可以觀測嗎？}
+\lecturerresponse{可以。使用角動量向量的平方最為方便：
+\[
+L^2=L_x^2+L_y^2+L_z^2.
+\]
+它在最高權態上的值並不只是 \(s^2\hbar^2\)。即使 \(L_z\) 的值確定且達到最大，不對易的橫向分量也無法同時確定為零，因此會帶來額外的量子貢獻。}
+\end{classroomqa}
+
+若要計算這項貢獻，須依升算符先作用於右矢的順序，將升降算符相乘：
+\begin{align}
+L_-L_+
+&=(L_x-iL_y)(L_x+iL_y) \\
+&=L_x^2+L_y^2+iL_xL_y-iL_yL_x \\
+&=L_x^2+L_y^2+i[L_x,L_y] \\
+&=L_x^2+L_y^2-\hbar L_z.
+\end{align}
+最後一步用到\([L_x,L_y]=i\hbar L_z\)。因此
+\begin{equation}
+L_x^2+L_y^2=L_-L_++\hbar L_z,
+\end{equation}
+於是
+\begin{equation}
+L^2=L_-L_++L_z^2+\hbar L_z.
+\end{equation}
+
+將這個恆等式用於最高權態\(\lvert s,s\rangle=\lvert m_{\max}\rangle\)：
+\begin{align}
+L^2\lvert s,s\rangle
+&=\left(L_-L_++L_z^2+\hbar L_z\right)\lvert s,s\rangle \\
+&=L_-L_+\lvert s,s\rangle
++s^2\hbar^2\lvert s,s\rangle
++s\hbar^2\lvert s,s\rangle.
+\end{align}
+第一項為零，因為\(L_+\lvert s,s\rangle=0\)。因此
+\begin{equation}
+L^2\lvert s,s\rangle
+=s(s+1)\hbar^2\lvert s,s\rangle.
+\end{equation}
+多出的\(+s\)是無可避免的橫向漲落所帶來的量子修正。經典理論只會預期\(s^2\hbar^2\)。
+
+看幾個較小的值，就能具體看出差異：
+\begin{align}
+s=0 &: \qquad L^2=0,\\
+s=1 &: \qquad L^2=2\hbar^2,\\
+s=\frac12 &: \qquad L^2=\frac34\hbar^2.
+\end{align}
+當\(s=1000\)時，無因次因子為\(1000\times1001\)。對如此大的角動量而言，它與\(1000^2\)相差不大。一般而言，
+\begin{equation}
+s(s+1)=s^2\left(1+\frac1s\right),
+\end{equation}
+所以當\(s\)非常大時，相對量子修正便可忽略。經典的\(s^2\)結果由此浮現。
+
+固定自旋多重態中的每個\(m\)態，都具有相同的\(L^2\)本徵值。改變\(m\)只會改變角動量沿所選軸的分量，不會改變其總大小。這相當於在量子力學中重新定向角動量向量，而不改變它的長度。
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:43}
+\audiencequestion{\(L^2\)與\(z\)分量可以同時確定嗎？}
+\lecturerresponse{可以。角動量平方與每個角動量分量都對易：
+\[
+[L^2,L_i]=0,\qquad i=x,y,z.
+\]
+因此，可以同時指定\(L^2\)和一個選定的分量，例如\(L_z\)；但不能同時指定兩個不同分量。舉例來說，每個電子的\(L^2=\tfrac34\hbar^2\)都相同，不受其取向影響。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:41}
+\audiencequestion{\(L^2\)只在自旋為一時是零，還是只有自旋為零時才是零？}
+\lecturerresponse{只有自旋為零時，\(L^2=0\)才為零。自旋為一時，
+\[
+L^2=1(1+1)\hbar^2=2\hbar^2,
+\]
+自旋為三時，則
+\[
+L^2=3(3+1)\hbar^2=12\hbar^2.
+\]}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:18:13}
+\audiencequestion{為什麼多重態中每個 \(m\) 值對應的狀態，都有相同的 \(L^2\) 本徵值？}
+\lecturerresponse{從最高權態開始，逐步施以降算符。由於 \(L^2\) 與每個分量都對易，它也與 \(L_-\) 對易：
+\[
+[L^2,L_-]=0.
+\]
+若
+\[
+L^2\lvert s,s\rangle=s(s+1)\hbar^2\lvert s,s\rangle,
+\]
+則
+\begin{align}
+L^2\bigl(L_-\lvert s,s\rangle\bigr)
+&=L_-L^2\lvert s,s\rangle \\
+&=s(s+1)\hbar^2\,L_-\lvert s,s\rangle.
+\end{align}
+因此，下一個較低的狀態也有相同的 \(L^2\) 本徵值。重複這個論證，便可將該本徵值一路沿著階梯傳遞到底。}
+\end{classroomqa}
+
+因此，離散的\(m\)值不表示空間取向也只能取離散值。旋轉不變性仍要求存在對應於各種旋轉方向的狀態。對自旋\(\tfrac12\)而言，這些方向會以兩個\(L_z\)基底態的疊加呈現。
+
+\section{自旋\texorpdfstring{\(\tfrac12\)}{1/2}態與取向}
+
+旋轉不變性所要求的不只是離散的\(L_z\)本徵態。自旋可以指向任意軸，但測量其沿所選軸的分量時，只會得到允許的離散值。\(z\)軸本徵態之間的方向，則以疊加表示。
+
+對於自旋為\(\tfrac12\)的粒子，我們只考慮自旋自由度。電子還有軌道態，因此整體而言，電子當然不只有兩個態；只有它的自旋空間是二維的。選取\(z\)軸基底
+\begin{equation}
+L_z\lvert+\rangle=\frac{\hbar}{2}\lvert+\rangle,
+\qquad
+L_z\lvert-\rangle=-\frac{\hbar}{2}\lvert-\rangle.
+\end{equation}
+一般的自旋態為
+\begin{equation}
+\lvert\psi\rangle
+=
+\alpha\lvert+\rangle+\beta\lvert-\rangle,
+\end{equation}
+其中\(\alpha\)和\(\beta\)是複數。測量\(L_z\)時，得到\(+\hbar/2\)的機率為\(|\alpha|^2\)，得到\(-\hbar/2\)的機率為\(|\beta|^2\)，因此歸一化條件為
+\begin{equation}
+|\alpha|^2+|\beta|^2=1.
+\end{equation}
+
+整體相位不會產生物理效應：
+\begin{equation}
+(\alpha,\beta)\longrightarrow
+e^{i\chi}(\alpha,\beta).
+\end{equation}
+兩個複振幅一開始共有四個實參數。歸一化條件去掉一個參數，無關緊要的整體相位再去掉一個，因此剩下兩個物理實參數。這正好是用極角和方位角指定一個方向所需的參數數目。改變\(\alpha\)和\(\beta\)會改變自旋的取向。
+
+測量得到的分量與其期望值並不相同。期望值是系綜平均。將許多電子製備在完全相同的狀態，對每個電子各測量一次\(L_z\)，把結果相加，再除以實驗次數。每次測量的結果仍然只有\(+\hbar/2\)或\(-\hbar/2\)，但平均值可以介於兩者之間，並取任意值：
+\begin{equation}
+\langle L_z\rangle
+=
+\frac{\hbar}{2}\bigl(|\alpha|^2-|\beta|^2\bigr).
+\end{equation}
+
+上下自旋振幅相等時，自旋沿\(x\)軸的某一方向。歸一化的代表態為\footnote{係數比決定方向。因子\(1/\sqrt2\)則提供\( |\alpha|^2+|\beta|^2=1\)所要求的歸一化。相對相位\(+i\)和\(-i\)對應\(y\)軸的相反取向；哪個符號代表\(y\)軸的正向，取決於軸的約定。}
+\begin{equation}
+\lvert x;+\rangle
+=
+\frac{\lvert+\rangle+\lvert-\rangle}{\sqrt2},
+\qquad
+\lvert x;-\rangle
+=
+\frac{\lvert+\rangle-\lvert-\rangle}{\sqrt2}.
+\end{equation}
+對這兩個態中的任一個，沿\(z\)軸測量時，兩種可能結果出現的機率相等，因此
+\begin{equation}
+\langle L_z\rangle
+=
+\frac12\left(\frac{\hbar}{2}\right)
++
+\frac12\left(-\frac{\hbar}{2}\right)
+=0.
+\end{equation}
+相對符號為正或為負，分別對應沿\(x\)軸的相反方向。同樣地，
+\begin{equation}
+\frac{\lvert+\rangle+i\lvert-\rangle}{\sqrt2},
+\qquad
+\frac{\lvert+\rangle-i\lvert-\rangle}{\sqrt2}
+\end{equation}
+對應\(y\)軸的兩個相反取向。\(\alpha\)和\(\beta\)的一般歸一化取值則描述任意方向的軸。說自旋指向某一特定軸，意思是沿該軸測量自旋分量時會得到確定的結果。相對於另一個軸，同一個態通常是疊加態。
+
+單次測量的結果仍然是量子化的；會連續變化並呈現經典向量熟悉幾何形狀的，是這些結果的系綜平均。
+
+\section{自旋、統計與複合粒子}
+
+質量、電荷和自旋是描述粒子的幾項主要性質。自旋也與統計性質相關。自旋統計關係是相對論量子力學中的一項定理，這裡不會證明：
+\begin{equation}
+\begin{aligned}
+\text{half-integer spin} &\quad\Longleftrightarrow\quad \text{fermion},\\
+\text{integer spin} &\quad\Longleftrightarrow\quad \text{boson}.
+\end{aligned}
+\end{equation}
+兩個全同費米子不能佔據同一個完整量子態。全同玻色子則可以佔據同一個態；大量玻色子處於同一態時，集體行為可以像經典波。因此，自旋為\(\tfrac12,\tfrac32,\tfrac52,\ldots\)的粒子是費米子，而自旋為\(0,1,2,\ldots\)的粒子是玻色子。
+
+這項規則可以直接推廣到複合粒子。兩個半整數角動量相加會得到整數角動量。一般而言，含有偶數個費米子組分的複合粒子是玻色子，含有奇數個費米子組分的複合粒子則是費米子。加入玻色子組分不會改變這項奇偶規則。
+
+普通氫原子含有一個自旋為\(\tfrac12\)的質子和一個自旋為\(\tfrac12\)的電子。因此，它含有偶數個費米子，整體而言是玻色子。氘核含有一個質子和一個中子，兩者都是費米子，因此氘核也是玻色子。氘原子在氘核之外還多一個電子；在這個描述層次上，它含有三個費米子組分，所以氘原子是費米子。
+
+粒子和反粒子的質量與自旋相同，電荷則相反。電子偶素是由一個電子和一個正電子束縛而成的系統。它含有兩個費米子，因此是玻色子。
+
+\begin{classroomqa}
+\lecturetimestamp{01:33:08}
+\audiencequestion{玻色子會穿透物體嗎？超導性是否與成對電子表現得像玻色子有關？}
+\lecturerresponse{關鍵性質不只是穿透物質的能力，而是玻色子能夠佔據同一個態。超流氦是較簡單的例子。普通的氦-\(4\)原子含有兩個質子、兩個中子和兩個電子，也就是偶數個費米子組分，因此氦原子是玻色子。許多氦原子可以佔據同一個量子態並集體運動。因此，超流體可以近似地想像成許多原子聚集在同一個態所形成的經典波。這個圖像並不完全精確，但足以說明這裡要點。金屬中的電子是費米子，不能與另一個電子共享完整量子態。然而，電子對是玻色性的複合粒子，這就是它與超導性的關聯。這引出一個悖論：如果組成電子不能佔據同一個態，那麼多個複合電子對如何能佔據同一個態？要解決這個問題，必須更仔細地描述複合態；這裡先不討論。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:46}
+\audiencequestion{既然質子和中子是複合粒子，為什麼它們具有半整數自旋？}
+\lecturerresponse{質子和中子各由奇數個自旋為\(\tfrac12\)的夸克組成。三個費米子組分構成的複合粒子是費米子，因此質子和中子可以具有半整數自旋。}
+\end{classroomqa}
+
+\section{泡利不相容原理與原子軌域}
+
+週期表直接引出了泡利不相容原理。這項原理並不是說兩個電子不能具有相同的軌道運動，而是說兩個電子不能佔據同一個完整量子態。
+
+即使在最簡單的原子中，這項區別也很重要。從氫原子出發，增加原子核的電荷，再加入第二個電子。兩個電子可以佔據同一個空間軌域，但自旋態必須不同。相對於選定的軸，一個電子可以是自旋向上，另一個則是自旋向下。兩個電子佔據同一個軌域時，它們的自旋會組成自旋單態，因此總自旋相消。單一空間軌域最多只能容納兩個電子，因為可用的獨立自旋態只有兩個。
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:53}
+\audiencequestion{可以把同一個軌域中兩個電子的相反自旋想像成互相嚙合的齒輪嗎？}
+\lecturerresponse{作為粗略的比喻，可以這麼想：互相嚙合的齒輪會朝相反方向轉動。這只是用來比喻自旋方向相反，並不是電子的字面機械模型。}
+\end{classroomqa}
+
+``軌域''一詞可以用在兩個不同層次上。廣義而言，軌道運動態是忽略自旋、求解薛丁格方程所得的狀態。它包含的資訊不只電子所在的殼層。
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:09}
+\audiencequestion{軌域的意義是否不只表示電子所在的殼層？}
+\lecturerresponse{是的。這裡所說的軌道運動，是指忽略電子自旋的薛丁格態。它包含主量子數\(n\)，這個量子數提供徑向資訊，並大致決定電子與原子核的距離；也包含軌道角動量量子數。在化學家使用的光譜記號中，\(S\)、\(P\)、\(D\)和\(F\)分別對應軌道角動量\(l=0,1,2,3\)。}
+\end{classroomqa}
+
+因此，主量子數和軌道角動量描述的是運動的不同面向。\(S,P,D,F\)這些標記表示\(l\)的值，而\(n\)則提供另外的徑向資訊。泡利原理指出，任兩個電子的所有量子數都不能完全相同，其中也包括自旋量子數。
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:42}
+\audiencequestion{量子數能決定原子中每個殼層最多可以容納多少電子嗎？}
+\lecturerresponse{可以。量子數能決定可能的最大數目，但不能決定某個特定原子的該殼層實際含有多少電子。這裡不進一步討論一般的殼層計數問題。}
+\end{classroomqa}
+
+對於固定的軌道角動量\(l\)，分量量子數有
+\begin{equation}
+2l+1
+\end{equation}
+個可能值。這與前面計算自旋角動量態數的方式相同。\(S\)態的\(l=0\)，因此有一個軌域態。\(P\)態的\(l=1\)，因此有三個軌域態。\(D\)態的\(l=2\)，因此有五個軌域態。
+
+每個軌域態都可以分別容納一個處於兩種相反自旋態的電子，因此自旋會使每種軌域態數加倍。
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:54}
+\audiencequestion{\(S\)態可以容納兩個電子，而三個\(P\)態還可以再容納六個嗎？}
+\lecturerresponse{可以。單一\(S\)軌域態最多可容納兩個電子。三個\(P\)軌域態各可容納兩個電子，因此一共還能容納六個。也就是說，這裡討論的\(S\)態和\(P\)態總共可容納\(2+6=8\)個電子。}
+\end{classroomqa}
+
+夸克在束縛系統中運動並彼此繞行時，組織原子軌域的同一套角動量結構也會再次出現，只是情況有所不同。

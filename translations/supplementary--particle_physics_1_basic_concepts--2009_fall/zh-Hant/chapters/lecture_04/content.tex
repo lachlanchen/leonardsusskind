@@ -1,0 +1,694 @@
+\chapter{{\proseunicodefont δ}函數、量子場與守恆定律}
+
+前面引入的簡單量子場，已足以概略描述散射、產生與湮滅，但我們還能從中看出更多內容。尤其是，它揭示了守恆定律如何出現在粒子過程中。完整的量子場論課程遠不只幾堂課；這裡的目標較為有限。我們將以最簡單的場為例，具體看出能量守恆從何而來、為什麼固定靶未必使散射粒子的動量守恆，以及相位不變性如何體現電荷守恆。
+
+回到場之前，需要先了解兩項數學工具：狄拉克 {\proseunicodefont δ} 函數，以及產生與湮滅算符對左矢的作用。
+
+\section{狄拉克 {\proseunicodefont δ} 函數}
+
+將座標記為\(y\)，暫且不指定它之後代表位置、波數或其他量。先考慮一個集中在\(y=a\)附近、形狀如隆起的一般函數，再讓這個隆起愈來愈窄。如果高度保持不變，面積便會縮小至零；因此，隨著寬度減小，必須提高高度，使高度與寬度的乘積維持為一。其極限便是狄拉克 {\proseunicodefont δ} 函數\(\delta(y-a)\)。
+
+它在\(y=a\)以外為零，在\(y=a\)處極度集中，且面積為一：
+\begin{equation}
+\delta(y-a)=0\quad (y\neq a),
+\qquad
+\int_{-\infty}^{\infty}dy\,\delta(y-a)=1.
+\end{equation}
+關鍵在於局域性與固定面積並存。峰值變窄並不會使它消失，因為它的高度也同時增加。
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_04_figure_02.png}
+\caption{以\(y=a\)為中心、面積為一的 {\proseunicodefont δ} 函數尖峰。}
+\lectureframe{00:05:50}
+\end{figure}
+
+同樣的圖像也可以理想化為一道垂直尖峰：
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.1,0) -- (3.3,0) node[right] {$y$};
+\draw[very thick] (0,0) -- (0,2.9);
+\draw (0,-0.15) node[below] {$y=a$};
+\node at (1.35,1.65) {$\delta(y-a)$};
+\end{tikzpicture}
+\caption{\(\delta(y-a)\)在其自變數為零處的理想化局域分布。}
+\end{figure}
+
+{\proseunicodefont δ} 函數會自然出現在傅立葉積分中。先暫時回到總長度為\(L\)的週期空間區間。一個週期模態為
+\begin{equation}
+e^{ikx},
+\end{equation}
+其中\(k\)是允許的波數之一：
+\begin{equation}
+k_n=\frac{2\pi n}{L},
+\qquad n\in\mathbb Z.
+\end{equation}
+區間可以表示為\(0\leq x<L\)，不過將原點置於中央，再使用
+\begin{equation}
+-\frac L2\leq x<\frac L2.
+\end{equation}
+會更對稱。兩端視為相接：越過\(L/2\)便會回到\(-L/2\)。
+
+將一個允許的模態在整個週期區間上積分：
+\begin{equation}
+I_L(k)=\int_{-L/2}^{L/2}dx\,e^{ikx}.
+\end{equation}
+若\(k=0\)，被積函數處處等於一，結果便是\(L\)。若\(k\neq0\)是允許值之一，振盪的正負部分會在完整的整數個週期內互相抵消。因此
+\begin{equation}
+I_L(k)=
+\begin{cases}
+L,&k=0,\\[4pt]
+0,&k\neq0,
+\end{cases}
+\qquad
+k=\frac{2\pi n}{L}.
+\end{equation}
+
+現在將\(I_L(k)\)視為定義在允許波數\(k\)所成離散集合上的函數。相鄰波數值之間的間距為
+\begin{equation}
+\Delta k=\frac{2\pi}{L}.
+\end{equation}
+在\(k=0\)處，函數值為\(L\)；在其他每個允許值處則為零。為了畫出這個離散尖峰，令其寬度等於一個\(k\)間距。如此一來，尖峰的面積就是
+\begin{equation}
+(\text{height})(\text{width})
+=L\frac{2\pi}{L}=2\pi.
+\end{equation}
+隨著\(L\)增大，高度升高、間距縮小，面積則維持為\(2\pi\)。在無限體積極限下，尖峰成為\(2\pi\delta(k)\)，於是得到形式上的傅立葉恆等式
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,e^{ikx}=2\pi\delta(k).
+\end{equation}
+變數\(x\)和\(k\)在指數中對稱地出現。交換兩者的角色，便得到相應的恆等式
+\begin{equation}
+\int_{-\infty}^{\infty}dk\,e^{ikx}=2\pi\delta(x).
+\end{equation}
+這兩條基本規則很快就會把對所有相互作用時間的積分轉化為能量守恆條件。
+
+\section{左矢、右矢與向左作用的算符}
+
+右矢是表示量子態的符號。就目前而言，初態以右矢表示，末態則以左矢表示。左矢與右矢合在一起形成內積，其結果是一個數。最終能與實驗比較的，正是這些數或它們的絕對值平方。
+
+\begin{classroomqa}
+\lecturetimestamp{00:15:30}
+\audiencequestion{之前真的介紹過``ket''這個詞嗎？}
+\lecturerresponse{有。ket 是 bra-ket 記號的一半；另一半，也就是 bra，現在才要介紹。}
+\end{classroomqa}
+
+對諧振子而言，佔據數態可以寫成右矢\(\lvert n\rangle\)，也可以寫成左矢\(\langle n\rvert\)。它們的內積為
+\begin{equation}
+\langle m\vert n\rangle=\delta_{mn}
+=\begin{cases}
+1,&m=n,\\
+0,&m\neq n.
+\end{cases}
+\end{equation}
+克羅內克 {\proseunicodefont δ}\(\delta_{mn}\)是狄拉克 {\proseunicodefont δ} 函數的離散類比。
+
+產生與湮滅算符對右矢的作用方式很熟悉：
+\begin{align}
+a^\dagger\lvert n\rangle&=\sqrt{n+1}\,\lvert n+1\rangle,\\
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle.
+\end{align}
+產生與湮滅算符也可以分別記為\(a^+\)和\(a^-\)；本文將一律使用\(a^\dagger\)和\(a\)。
+
+同一組算符應如何作用於左矢？當算符向左作用時，記號會將算符置於左矢右側。這樣定義，是為了讓算符先作用於右矢或先作用於左矢時，矩陣元都相同。考慮
+\begin{equation}
+\langle n\rvert a^\dagger\lvert m\rangle.
+\end{equation}
+先作用於右矢，得到
+\begin{align}
+\langle n\rvert a^\dagger\lvert m\rangle
+&=\sqrt{m+1}\,\langle n\vert m+1\rangle\\
+&=\sqrt{m+1}\,\delta_{n,m+1}.
+\end{align}
+只有在\(n=m+1\)，也就是\(m=n-1\)時，結果才不為零。若要透過作用於左矢得到相同條件，\(a^\dagger\)就必須降低左矢的標號：
+\begin{equation}
+\langle n\rvert a^\dagger
+=\sqrt n\,\langle n-1\rvert.
+\end{equation}
+數值因子為\(\sqrt n\)，因為在矩陣元不為零時，\(n=m+1\)。湮滅算符則遵循互補的規則：
+\begin{equation}
+\langle n\rvert a
+=\sqrt{n+1}\,\langle n+1\rvert.
+\end{equation}
+因此，\(a^\dagger\)會提高右矢的標號、降低左矢的標號；\(a\)則會降低右矢的標號、提高左矢的標號。
+
+數算符的矩陣元清楚顯示了這種做法的優點：
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle.
+\end{equation}
+先讓算符向右作用：
+\begin{align}
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle,\\
+a^\dagger\lvert n-1\rangle&=\sqrt n\,\lvert n\rangle,
+\end{align}
+所以
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle
+=n\langle n\vert n\rangle=n.
+\end{equation}
+改為向左作用：
+\begin{align}
+\langle n\rvert a^\dagger&=\sqrt n\,\langle n-1\rvert,\\
+\langle n-1\rvert a&=\sqrt n\,\langle n\rvert,
+\end{align}
+也會得到相同結果。不必判定哪個方向更根本；這套運算方式使兩種方向都得到相同的數值。
+
+\section{時空中的量子場}
+
+這套記法是為粒子物理學而設。在微觀尺度上，主要的實驗手段是讓粒子碰撞，再觀察產物。含有一個或兩個粒子的初態，可能轉變為含有四個、五個、七個、九個或其他數目粒子的態。由產生與湮滅算符建構的量子場，為描述這類過程提供了一套語言。
+
+先從一維空間開始。使用三維並沒有本質上的障礙：\(x\)和\(k\)只要改成具有三個分量的向量即可。此外，採用
+\begin{equation}
+\hbar=1.
+\end{equation}
+的單位制也很方便。如此一來，動量與波向量的數值相同：
+\begin{equation}
+\vec p=\vec k.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_04_figure_03.png}
+\caption{自然單位制 \(\hbar=1\)與等同關係 \(\vec p=\vec k\)。}
+\lectureframe{00:36:56}
+\end{figure}
+
+採用以下約定：\(\psi\)負責湮滅，\(\psi^\dagger\)負責產生：
+\begin{align}
+\psi(x)&=\sum_k a(k)e^{ikx},\\
+\psi^\dagger(x)&=\sum_k a^\dagger(k)e^{-ikx}.
+\end{align}
+在週期空間中，求和遍歷所有\(k=2\pi n/L\)；在無限空間中，求和則變為連續積分。第二個方程是第一個方程的厄米共軛，也可以視為複共軛在算符上的類比。\footnote{黑板上曾一度將產生場的展開式\(\sum_k a^\dagger(k)e^{-ikx}\)標記為\(\Psi\)，之後又對 dagger 應放在哪裡有所遲疑。此處統一固定記號，使\(\psi\)負責湮滅、\(\psi^\dagger\)負責產生，與接下來的散射計算完全一致。}
+
+為什麼要這樣定義？在這個階段，最好的回答是：這樣做很有用。它是對動量模態的簡單求和，而係數恰好是移除或加入粒子的算符。詳細的理由則要從動力學以及這種定義所能進行的計算中看出。
+
+\editorialnote{引入共軛空間場後，源文緊接的一小段內容無法清楚辨認，因此不足以支持額外的歸一化或詮釋說明。可確定的內容從這項定義的用途繼續。}
+
+目前為止，場依賴位置而不依賴時間。場會振盪，每個波數\(k\)都對應一個頻率\(\omega(k)\)。頻率確定為\(\omega\)的量，其時間依賴為
+\begin{equation}
+e^{i\omega t}=\cos(\omega t)+i\sin(\omega t).
+\end{equation}
+在兩個場的展開式中加入共軛相位：
+\begin{align}
+\psi(x,t)&=\sum_k a(k)e^{ikx}e^{-i\omega(k)t},\\
+\psi^\dagger(x,t)&=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+現在，每個空間模態都以其波數所對應的頻率振盪，場也同時依賴空間與時間。
+
+\section{非相對論場方程}
+
+\(\omega\)與\(k\)之間的關係，決定了場所滿足的微分方程。對單一量子而言，波粒關係為
+\begin{equation}
+E=\hbar\omega,
+\qquad
+p=\hbar k.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_04_figure_04.png}
+\caption{能量與頻率、動量與波數的關係 \(E=\hbar\omega\)和\(p=\hbar k\)。}
+\lectureframe{00:41:28}
+\end{figure}
+
+在\(\hbar=1\)的單位制下，能量等於頻率，動量等於波數：
+\begin{equation}
+E=\omega,
+\qquad
+p=k.
+\end{equation}
+對於運動速度遠低於光速的非相對論粒子，動能與動量滿足
+\begin{equation}
+E=\frac{p^2}{2m}.
+\end{equation}
+這與從\(E=\tfrac12 mv^2\)和\(p=mv\)得到的關係相同。結合這些關係，便得到非相對論色散關係：
+\begin{equation}
+\omega(k)=\frac{k^2}{2m}.
+\end{equation}
+
+產生場的模態展開為
+\begin{equation}
+\psi^\dagger(x,t)=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.66\textwidth]{lecture_04_figure_05.png}
+\caption{用來推導非相對論場方程的時間依賴模態展開。}
+\lectureframe{00:43:23}
+\end{figure}
+
+對時間微分：
+\begin{equation}
+\dot\psi^\dagger(x,t)
+=\sum_k i\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+對位置微分一次：
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial x}
+=\sum_k(-ik)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+這兩個導數之間沒有直接的一階關係，因為時間導數會帶下\(\omega(k)\)，而一次空間導數會帶下\(k\)。為了清楚看出差別，設想色散關係是線性的：
+\begin{equation}
+\omega(k)=k.
+\end{equation}
+此時時間導數會帶下\(i\omega=ik\)，而一次空間導數會帶下\(-ik\)。對每個模態而言，
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{\partial\psi^\dagger}{\partial x}.
+\end{equation}
+那個假想的場便會滿足一階方程。但在此處，\(\omega=k^2/(2m)\)，所以需要取二階空間導數：
+\begin{align}
+\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=\sum_k(-k^2)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}\\
+&=-2m\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:47:14}
+\audiencequestion{空間導數產生的負號真的應該保留嗎？}
+\lecturerresponse{是的。對\(e^{-ikx}\)每做一次\(x\)導數，就會帶下\(-ik\)；做兩次導數則得到\((-ik)^2=-k^2\)。因此代入\(k^2=2m\omega\)，便得到\(-2m\omega\)。}
+\end{classroomqa}
+
+將時間導數乘以\(i\)，所得模態係數便與二階空間導數除以\(2m\)相同：
+\begin{align}
+i\dot\psi^\dagger
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t},\\
+\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+因此
+\begin{equation}
+i\frac{\partial\psi^\dagger}{\partial t}
+=\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2},
+\end{equation}
+或者等價地，
+\begin{equation}
+-i\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_04_figure_06.png}
+\caption{產生場模態展開的時間導數與空間導數。}
+\lectureframe{00:49:06}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:43}
+\audiencequestion{係數是\(1/(2m)^2\)嗎？}
+\lecturerresponse{不是，是\(1/(2m)\)。}
+\end{classroomqa}
+
+共軛的湮滅場遵循熟悉的Schr\"odinger形式：
+\begin{equation}
+i\frac{\partial\psi}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi}{\partial x^2}.
+\end{equation}
+這兩個場方程互為厄米共軛。\footnote{檢查符號時，黑板上的空間項曾短暫地出現相反符號。直接對所示模態相位微分，便會得到此處寫出的共軛方程組。}
+
+這個方程的形式與初等量子力學中的Schr\"odinger方程相同，但滿足方程的對象不同。在初等量子力學中，波函數是複值函數，其絕對值平方具有機率詮釋。在這裡，\(\psi\)與\(\psi^\dagger\)是算符：\(\psi\)移除粒子，\(\psi^\dagger\)加入粒子。這對共軛場直接連結了粒子與場。
+
+當相關模態中佔據了大量量子時，場可以近似呈現經典行為；這就像強烈激發的諧振子看起來可能是經典的，單量子諧振子則不然。高佔據數可以形成較大的經典尺度，也可能使適當定義的相對漲落變小。
+
+\editorialnote{光有高佔據數，還不足以形成經典場。還需要相位相干的半經典態；數目本徵態沒有確定相位，平均場也未必非零。}
+
+\section{固定靶與散射振幅}
+
+這些場要如何使用？來看最簡單的散射過程：一個粒子遇上一個重到可以忽略反沖的靶。靶永遠固定在空間中的同一位置。粒子可以被反射、穿透或偏轉；在三維中，出射方向可能與入射方向不同。
+
+粒子碰撞前後的動量不一定相同。完整物理系統的動量守恆，但靶會吸收差額。若從數學描述中省略靶的運動，粒子本身的動量便不守恆。
+
+在這個理想化模型中，粒子的能量則有不同的表現。想像把網球丟向牆壁。真實的網球會發熱、變形；若忽略這些效應，它彈回時的動能會相同，儘管動量方向反轉。固定靶模型正是為了呈現這種差異：粒子的能量守恆，但動量可以改變。
+
+將空間畫成水平軸、時間畫成垂直軸。靶是垂直線\(x=0\)。動量為\(k_i\)的單粒子入射態抵達靶，動量為\(k_f\)的單粒子出射態則離開靶。
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.2,0) -- (3.2,0) node[right] {space};
+\draw[->] (0,-0.3) -- (0,4.2) node[above] {time};
+\draw[very thick] (0,0) -- (0,3.8);
+\node[left] at (-0.15,3.55) {$x=0$};
+\draw[thick,->] (-2.2,0.8) -- (0,2.0);
+\node[below] at (-1.45,1.05) {$k_i$};
+\draw[thick,->] (0,2.0) -- (2.2,3.2);
+\node[above] at (1.5,2.9) {$k_f$};
+\fill (0,2.0) circle (1.4pt);
+\end{tikzpicture}
+\caption{動量為\(k_i\)的粒子在固定於\(x=0\)的靶上發生散射，並以動量\(k_f\)出射。}
+\end{figure}
+
+我們用吸收與再發射來描述這個過程。靶湮滅入射粒子，隨即產生出射粒子，後者的動量可能不同。這只是散射事件的數學模型；例如，真實的原子可以吸收光子，在激發態停留一段時間，之後才將光子發射出去。
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:28}
+\audiencequestion{粒子為什麼必須立刻被吸收並重新發射？}
+\lecturerresponse{自然界中不必如此。在此採用的簡化模型中，吸收與再發射在同一時刻、同一位置發生。}
+\end{classroomqa}
+
+初態在\(k_i\)模態中有一個粒子，其他模態則都沒有粒子。以佔據數表示，除了對應於\(k_i\)的項目為一，其餘各項皆為零。完整列表可以簡寫為
+\begin{equation}
+\lvert k_i\rangle=a^\dagger(k_i)\lvert0\rangle.
+\end{equation}
+同樣地，
+\begin{equation}
+\langle k_f\rvert=\langle0\rvert a(k_f).
+\end{equation}
+
+在靶上、時間\(t\)發生的湮滅，以\(\psi(0,t)\)表示；同一位置、同一時刻發生的立即再產生，則以\(\psi^\dagger(0,t)\)表示。事件沒有特定的發生時刻；只要入射粒子抵達靶，就可能發生，而且各時刻的相互作用強度相同。為了表達沒有特殊時刻這一點，對所有\(t\)積分：
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,\psi^\dagger(0,t)\psi(0,t).
+\end{equation}
+此算符作用於初態右矢後會產生一個態。這個態與末態左矢的重疊，就是指定躍遷的振幅。取振幅的絕對值平方後，才得到機率。
+
+還需要一個數值。令\(g\)表示粒子與靶之間的相互作用強度。在這個記帳模型中，示意性地將最低階振幅寫為\footnote{此處省略了態的歸一化因子，以及一階微擾論中慣用的整體因子；計算只用到算符選擇規則與能量守恆條件所限定的範圍。}
+\begin{equation}
+\mathcal A_{i\to f}
+=g\left\langle k_f\left|
+\int_{-\infty}^{\infty}dt\,
+\psi^\dagger(0,t)\psi(0,t)
+\right|k_i\right\rangle.
+\end{equation}
+係數\(g\)稱為耦合常數。若帶電靶散射光子，電荷便是衡量相互作用強度的相關量：電荷愈大，散射的傾向也愈強。
+
+不同相互作用的耦合強度差異很大。介子抵達質子時會發生強作用，散射強度相對較大。光子被帶電質子散射時，電磁耦合較小。中微子與質子相互作用時，耦合則更小。
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:09}
+\audiencequestion{這個簡單模型適用於電子嗎？}
+\lecturerresponse{它只能簡化地代表幾種散射過程，目前還不能把它視為電子或任何特定靶的真實理論。}
+\end{classroomqa}
+
+引力子被原子核引力散射的作用會微弱得驚人。這些例子並不共用單一普適的\(g\)；粒子物理學中有許多耦合常數。
+
+有效耦合也不一定總是與頻率無關。
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:31}
+\audiencequestion{為什麼把\(g\)視為常數，而不是\(\omega\)或\(k\)的函數？}
+\lecturerresponse{它不一定總是常數。若原子吸收光子，並在激發態停留一段時間後才發射光子，有效散射就可能依賴頻率。常數\(g\)適用於目前這個瞬時模型。}
+\end{classroomqa}
+
+目前先令\(g\)為常數，並計算這個最簡單選擇所導致的結果。
+
+\begin{classroomqa}
+\lecturetimestamp{01:12:32}
+\audiencequestion{若\(g=1\)，散射機率就必須是一嗎？}
+\lecturerresponse{不是。這裡計算的只是\(g\)很小時的最低階近似。若耦合不小，就需要更高階的微擾論；機率若大於一，表示單步近似已失效，並非代表實際的物理機率。}
+\end{classroomqa}
+
+\section{化簡模態求和}
+
+在\(x=0\)處，空間相位因子等於一，因此
+\begin{align}
+\psi(0,t)&=\sum_k a(k)e^{-i\omega(k)t},\\
+\psi^\dagger(0,t)&=\sum_\ell a^\dagger(\ell)e^{i\omega(\ell)t}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:58}
+\audiencequestion{既然靶位於\(x=0\)，空間指數因子是不是應該省略？}
+\lecturerresponse{是。在靶的位置\(e^{ikx}=e^{ik0}=1\)，共軛的空間因子也等於一。}
+\end{classroomqa}
+
+在兩個求和中分別使用不同的虛標\(k\)與\(\ell\)。代入後得到
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt
+\sum_{\ell,k}
+e^{i\omega(\ell)t}e^{-i\omega(k)t}
+\langle k_f\rvert a^\dagger(\ell)a(k)\lvert k_i\rangle.
+\end{align}
+\(k\)求和中，哪一項可能留下？湮滅算符作用於任何空模態都會給出零。初態只有模態\(k_i\)中有粒子，因此\(k=k_i\)。\(\ell\)求和中，哪一項可能留下？向左作用時，\(a^\dagger(\ell)\)必須移除末態左矢所代表的粒子，因此\(\ell=k_f\)。兩個求和於是都化簡為：
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+\langle k_f\rvert a^\dagger(k_f)a(k_i)\lvert k_i\rangle.
+\end{align}
+湮滅算符將初始的單粒子右矢化為真空：
+\begin{equation}
+a(k_i)\lvert k_i\rangle=\lvert0\rangle,
+\end{equation}
+而產生算符向左作用，將末態的單粒子左矢化為真空左矢：
+\begin{equation}
+\langle k_f\rvert a^\dagger(k_f)=\langle0\rvert.
+\end{equation}
+因此兩者的矩陣元為
+\begin{equation}
+\langle0\vert0\rangle=1.
+\end{equation}
+所有算符運算最後都化為一；耦合帶來\(g\)，剩下的非平凡部分則是時間積分：
+\begin{equation}
+\mathcal A_{i\to f}
+=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}.
+\end{equation}
+
+\editorialnote{在01時，有一段聽眾提問：18：40，但來源內容無法辨認。回答將這個單粒子計算與相對論或多粒子問題區分開來；無法可靠地重建更具體的對話。}
+
+現在可以直接套用前面的 {\proseunicodefont δ} 函數恆等式：
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+=2\pi\delta(\omega_f-\omega_i).
+\end{equation}
+因此
+\begin{equation}
+\boxed{
+\mathcal A_{i\to f}
+=2\pi g\,\delta(\omega_f-\omega_i)
+}.
+\end{equation}
+除非滿足
+\begin{equation}
+\omega_f=\omega_i.
+\end{equation}
+否則振幅為零。由於\(\hbar=1\)，這也就是\(E_f=E_i\)。每個相互作用時刻都受到同等對待，因此能量守恆便隨之出現。若時間積分只涵蓋有限區間，得到的會是展寬函數，而非精確的 {\proseunicodefont δ} 函數。時間平移下的精確不變性，正是精確能量守恆條件的來源。
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:30}
+\audiencequestion{振幅必須平方才能得到機率。{\proseunicodefont δ} 函數平方後會如何？}
+\lecturerresponse{{\proseunicodefont δ} 函數的平方需要額外處理。此處只需確定一點：若初態與末態能量不相等，結果便為零。在滿足能量守恆的範圍內，示意性的平方前因子包含\(4\pi^2g^2\)。}
+\end{classroomqa}
+
+\editorialnote{不能只靠丟掉\(\delta(\omega_f-\omega_i)^2\)，就得到歸一化的躍遷機率或速率；還需要有限時間正則化與一致的態歸一化。因此，\(4\pi^2g^2\)在此僅保留為來源特別強調的示意性平方前因子。}
+
+在這個點靶相互作用中，除了能量條件以外，沒有其他因素能區分不同的末態動量。因此在三維中，模型對所有能量相同的出射動量賦予相同的最低階權重---換句話說，固定能量球面上的所有出射方向都具有相同權重。這種各向同性是這個極簡點散射體的性質，並非所有真實靶都如此。
+
+這項計算帶出三個相互關聯的概念。係數\(g\)衡量相互作用強度。左矢、算符與右矢組成的矩陣元是散射振幅，其絕對值平方會進入機率。最重要的是，對所有時間積分會產生能量 {\proseunicodefont δ} 函數：時間平移對稱性使能量守恆成立。
+
+\section{靶或耦合改變時會如何？}
+
+原點\(x=0\)只是為了方便而選定。現在將靶放在\(x=x_{\mathrm T}\)。\(\psi^\dagger(x_{\mathrm T},t)\psi(x_{\mathrm T},t)\)中的空間因子給出
+\begin{equation}
+e^{-ik_f x_{\mathrm T}}e^{ik_i x_{\mathrm T}}
+=e^{i(k_i-k_f)x_{\mathrm T}}.
+\end{equation}
+因此振幅變為
+\begin{equation}
+\mathcal A_{i\to f}(x_{\mathrm T})
+=e^{i(k_i-k_f)x_{\mathrm T}}
+\mathcal A_{i\to f}(0).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:37}
+\audiencequestion{能不能重新定義位置，讓靶總是在\(x=0\)？}
+\lecturerresponse{若只有這個固定靶，可以。若靶仍位於\(x_{\mathrm T}\neq0\)，它的位置會以相位\(e^{i(k_i-k_f)x_{\mathrm T}}\)的形式出現在振幅中。乘上複共軛相位後，這個相位便會從機率中消失。}
+\end{classroomqa}
+
+確實，
+\begin{equation}
+\left|e^{i(k_i-k_f)x_{\mathrm T}}\right|^2=1.
+\end{equation}
+振幅會保留靶的位置資訊，但這個單靶系統的機率不會。
+
+現在將這種不對稱性反過來。假設相互作用可以發生在任何位置，卻只發生於某個特定時刻。對位置積分會得到
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,
+e^{i(k_i-k_f)x}
+=2\pi\delta(k_i-k_f),
+\end{equation}
+而固定發生時刻則會移除能量 {\proseunicodefont δ} 函數。
+
+\begin{classroomqa}
+\lecturetimestamp{01:26:41}
+\audiencequestion{如果相互作用發生的位置不重要，但它只在一個固定時刻發生，會不會有另一個量守恆？}
+\lecturerresponse{會。對所有位置積分會使動量守恆，而特定的相互作用時刻則會使能量不再精確守恆。在完整的兩粒子問題中，相互作用可以發生於任何時間、任何位置。}
+\end{classroomqa}
+
+這也說明了顯式時間依賴的物理意義。若耦合為\(g(t)\)，或外部干預突然使散射成為可能，就不是每個時刻都等價。如此一來，約化描述可能會與未納入的外部動力學交換能量。
+
+\begin{classroomqa}
+\lecturetimestamp{01:28:29}
+\audiencequestion{耦合常數的數值大多由實驗決定嗎？時間相依的耦合又代表什麼？}
+\lecturerresponse{是，耦合常數的數值由實驗決定。顯式時間依賴通常表示系統中有某個運動或變化的部分未納入描述，就像固定靶模型忽略了靶的反沖。看似缺少的能量屬於那些被省略的自由度。}
+\end{classroomqa}
+
+運動中的靶就是最簡單的例子。
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:23}
+\audiencequestion{撞上運動中的靶，是否會使粒子的能量不守恆？}
+\lecturerresponse{是。若能量帳目中未納入靶的指定運動，靶便可能向粒子供應能量或從粒子取走能量。}
+\end{classroomqa}
+
+靶是點狀物，也是另一項簡化。
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:43}
+\audiencequestion{什麼情況下必須比較靶的大小與入射波的尺寸或波長？}
+\lecturerresponse{在目前的模型中，靶的大小為零。若靶有有限大小，與波長比較時確實會出現額外效應；這部分留待之後再討論。}
+\end{classroomqa}
+
+現在回到運動靶。想像一面牆朝網球移動。牆可以把能量傳給球。若牆的運動是預先指定的，而其能量未列入考量，球本身的能量便不守恆。在數學上，這是靶的位置隨時間變化所造成的效果，不一定是\(g\)隨時間變化。
+
+因此，產生與湮滅算符恰好完成了預期的功能：描述粒子從一個態躍遷到另一個態，而場對時空的依賴則決定這種躍遷伴隨哪些守恆條件。
+
+\section{電荷計數與相位不變性}
+
+每種粒子都有自己的場。例如，電子和光子並非由同一個\(\psi\)描述。為了運用目前已有的代數來說明電荷計數，暫時以\(\psi\)代表類似電子的場：\(\psi\)湮滅一個這類帶電粒子，\(\psi^\dagger\)則產生一個。這只是用來記帳的玻色子替身；真正的費米子電子場需要用到尚未介紹的代數。
+
+固定靶因子
+\begin{equation}
+\psi^\dagger\psi
+\end{equation}
+會湮滅一個粒子並產生一個粒子。進來一個電子，出去一個電子，因此這種粒子所帶的電荷不變。
+
+現在設想一個電子從同一個位置進入，接著有兩個電子離開。相應的算符乘積會包含一個湮滅場和兩個產生場，
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+若這是電子場，就會淨產生一個電子，違反電荷守恆。兩個電子進入、兩個電子離開，則可由
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+表示，其中產生場與湮滅場的數目相等。若兩個電子進入、三個電子離開，則需要
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+同樣會改變淨電荷。直接的規則很簡單：守恆電荷的相互作用中，\(\psi\)和\(\psi^\dagger\)的數目相同。
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:27}
+\audiencequestion{在這項電荷守恆檢驗中，場算符的順序重要嗎？}
+\lecturerresponse{這項直接檢驗看的是\(\psi\)和\(\psi^\dagger\)因子的數目，而不是它們的順序。順序不同的乘積在其他方面是否相同，是另一個問題。}
+\end{classroomqa}
+
+除了單純計數，還有一種更深層的數學判別方法。將場乘上一個常數相位：
+\begin{equation}
+\psi\longrightarrow e^{i\alpha}\psi.
+\end{equation}
+由於\(\psi^\dagger\)是厄米共軛，它會以共軛相位變換，
+\begin{equation}
+\psi^\dagger\longrightarrow e^{-i\alpha}\psi^\dagger.
+\end{equation}
+兩種場的數目相等時，表示式保持不變。例如，
+\begin{align}
+\psi^\dagger\psi
+&\longrightarrow
+e^{-i\alpha}e^{i\alpha}\psi^\dagger\psi
+=\psi^\dagger\psi,\\
+\psi^\dagger\psi^\dagger\psi\psi
+&\longrightarrow
+e^{-2i\alpha}e^{2i\alpha}
+\psi^\dagger\psi^\dagger\psi\psi
+=\psi^\dagger\psi^\dagger\psi\psi.
+\end{align}
+若兩種場的數目不相等，表示式就會改變。因此，
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi
+\longrightarrow
+e^{-i\alpha}\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+允許的電荷守恆相互作用，正是對這種整體相位變換保持不變的相互作用。在這個簡單的場論描述中，相位不變性與電荷守恆是同一條規則的兩種說法。
+
+組合
+\begin{equation}
+\psi+\psi^\dagger
+\end{equation}
+在任意相位旋轉下都不保持不變。
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:53}
+\audiencequestion{那不就是\(\psi\)的實部嗎？}
+\lecturerresponse{是的。它正比於\(\psi\)的實部，而將\(\psi\)乘上一個相位會改變這個實部，因此它不具相位不變性。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:05}
+\audiencequestion{如果電子撞擊靶後放出許多次級電子，電荷怎麼還能守恆？}
+\lecturerresponse{在這個過程中，靶並非被動的。如果原子放出許多電子，原子本身的電荷與狀態也會改變。必須將原子的動力學納入考量，靶也必須以量子場描述。}
+\end{classroomqa}
+
+至此可以看出三種對應關係：時間平移不變性對應能量守恆，整體相位不變性對應電荷守恆，空間平移不變性則對應動量守恆；不過，完整的空間計算仍待完成。
+
+\section{算符順序與最低階模型的適用範圍}
+
+為求簡單，上述乘積都將產生場放在左側，湮滅場放在右側。交錯排列的乘積也可能有相等數目的兩種場，因而通過電荷計數檢驗；但算符順序還可能以其他方式影響表示式。
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:02}
+\audiencequestion{同一種過程能否寫成\(\psi\psi^\dagger\psi\psi^\dagger\)這類因子交錯排列的形式？}
+\lecturerresponse{兩種因子的數目仍然相等，因此符合電荷守恆規則；但一般而言，這種乘積並不等同於所有帶匕首的因子都放在左側的乘積。不同順序的乘積如何重新排列，留待之後討論。}
+\end{classroomqa}
+
+\editorialnote{在01:41:10處，聽眾提問的措辭受損嚴重，無法還原。可辨識的回答重申：\(\psi\)與\(\psi^\dagger\)數目相等，意味著相位不變性與電荷守恆；數目不等則兩者皆不成立。}
+
+對稱性與守恆定律之間的這些關聯，都是諾特定理的例子。在古典力學中，該定理提供一般性的理論架構；在這裡，則直接透過量子場的相位與 {\proseunicodefont δ} 函數展現了相同的關聯。
+
+最低階的固定靶結果也有明確的適用範圍。像\(4\pi^2g^2\)這樣的示意性機率前因子，一旦接近或超過 1，就不能再信賴。
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:33}
+\audiencequestion{這個示意性結果是否表示\(g\)必須小於大約\(1/(2\pi)\)？}
+\lecturerresponse{要嘛\(g\)夠小，使這個首項仍有用；要嘛模型就不完整。粒子可以散射一次，再返回並散射第二次、第三次，如此不斷下去。完整振幅是一個無窮級數。只有在\(g\)很小時，最簡單的項才會占主導地位；否則就必須對許多費曼圖求和。}
+\end{classroomqa}
+
+這些簡單的時空圖像是費曼圖的雛形。圖中的頂點代表基本的可能過程：一個粒子進入、一個粒子離開，對應像\(\psi^\dagger\psi\)這樣的因子；兩個粒子進入、兩個粒子離開，則對應像\(\psi^\dagger\psi^\dagger\psi\psi\)這樣的因子。加入更多頂點，就會產生耦合常數的更高次方，以及級數中的高階項。
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{耦合常數可以有虛部嗎？}
+\lecturerresponse{可以有複數耦合常數。不可約的\(T\)奇相位組合可能表示時間反演不變性受到破壞：時間反演後的過程，不一定具有由對稱性所關聯的振幅。}
+\end{classroomqa}
+
+\editorialnote{這段問答提到了 QCD 的\(\theta\)參數；它是乘在\(T\)奇相互作用上的實係數，不是耦合常數的虛部。可移除的相位或吸收性複相位，本身都不足以證明\(T\)不變性遭到破壞。這項推論只適用於不可約的\(T\)奇相位組合。}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:02}
+\audiencequestion{出射粒子能不能在入射粒子被吸收之前或之後才產生，而不是在同一瞬間產生？}
+\lecturerresponse{這是個合理的問題，但瞬時模型無法處理這一點。更一般的時間排序留待之後討論。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:44}
+\audiencequestion{這個構造要如何納入相對論？}
+\lecturerresponse{簡要來說，須將共軛的部分合併，並納入一個分母，其中含有\(\omega(k)\)的平方根。完整的構造留待之後討論。}
+\end{classroomqa}
+
+\editorialnote{口頭簡述的相對論公式無法可靠還原，因此不足以排版。此處只保留提及的組成要素，並說明完整構造留待之後討論。}
+
+電荷守恆也必須與靜止質量守恆明確區分。
+
+\begin{classroomqa}
+\lecturetimestamp{01:48:22}
+\audiencequestion{靜止質量是否也像電荷一樣，在相同的結構意義上守恆？}
+\lecturerresponse{不是。在伽利略非相對論力學中，質量是可加的守恆量；但在相對論反應中，各粒子的靜止質量總和未必守恆。電子與正電子可以湮滅成兩個光子，同時仍維持電荷守恆。}
+\end{classroomqa}
+
+\editorialnote{對完整的封閉相對論系統而言，總四動量守恆，因此該系統的不變質量固定不變。湮滅的例子涉及的是各個粒子的靜止質量總和，而非封閉系統的不變質量。}
+
+因此，可加質量守恆是非相對論近似下成立的事實，並非與電荷守恆同等地位的基本定律。前面得到的相位不變性，則表現出更深層的電荷對稱性。
+
+接下來要以費米子場取代玻色子替身，並納入多種粒子---，例如電子、{\proseunicodefont μ}子、夸克、光子等---，各自都有自己的場及其允許的相互作用。
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:39}
+\audiencequestion{目前只介紹了玻色子場，先前的例子還能稱為電子場嗎？}
+\lecturerresponse{只能把它稱為電子的玻色子版本或替身。真正的費米子理論尚未介紹。}
+\end{classroomqa}
