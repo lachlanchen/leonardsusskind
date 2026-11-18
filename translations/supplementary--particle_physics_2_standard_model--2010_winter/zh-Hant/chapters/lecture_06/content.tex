@@ -1,0 +1,548 @@
+\chapter{有質量弱交換、虛粒子與對稱性破缺}
+
+把標準模型群看成費米子表上允許的各種變換，許多疑問便不再那麼神秘。色變換在紅、綠、藍之間作垂直變換；帶電弱變換則在夸克與輕子的二重態內作水平變換。電磁相位變換提供第三種操作。相應的規範玻色子並非發現對稱性後才添上的裝飾：發射規範玻色子，在物理上實現的正是對稱性生成元所描述的狀態變換。
+
+這個觀察引出本講的主要問題。弱作用頂點的耦合與電磁作用頂點的耦合大小相近，但{\proseunicodefont β}衰變卻比典型的強作用或電磁過程慢得多。關鍵在於傳播。在低動量下，交換有質量的\(W\)會使振幅乘上一個量級為\(1/m_W^2\)的因子。我們會先在距離空間、再在動量空間推導這個說法，接著透過一段關於實粒子與虛粒子的長篇討論追溯其後果，最後轉向自發對稱性破缺的第一個定性模型。
+
+\section{從費米子表看規範對稱性}
+
+\subsection{色變換沿垂直方向進行}
+
+將六種夸克味排列成三個弱作用家族，
+\begin{equation}
+  (u,d),\qquad(c,s),\qquad(t,b),
+\end{equation}
+再為每個夸克標上紅、綠或藍色。如此得到的夸克表有三列顏色、六欄味。色\(SU(3)\)會混合任一味欄中的三個夸克。例如，一個生成元可以將紅色上夸克變換為綠色上夸克。用粒子語言來說，同一個變換會伴隨一個帶有補償色荷與反色荷的膠子發射。
+
+同一個色變換必須作用於所有味。將紅色上夸克變換為綠色上夸克的膠子，與將紅色頂夸克變換為綠色頂夸克的膠子，屬於同一種粒子。一個真正的對稱變換不會只作用於第一代而忽略其他代。因此，色變換沿垂直方向進行，且普遍作用於所有味：
+\begin{equation}
+  q_r\longleftrightarrow q_g\longleftrightarrow q_b,
+  \qquad q\in\{u,d,c,s,t,b\}.
+\end{equation}
+它改變顏色，不改變味。
+
+這正是規範群與其規範玻色子之間的典型關係。無窮小生成元描述狀態之間的變換，而發射或吸收相應的玻色子，則會在物理過程中實現這些變換。
+
+\subsection{弱變換沿水平方向進行}
+
+帶電弱作用沿另一個方向進行。上型夸克可以發射帶電弱玻色子，轉變為它的下型夥伴，而不改變顏色：
+\begin{equation}
+  u_b\longrightarrow d_b+W^+.
+\end{equation}
+同樣的\(W^+\)也會出現在
+\begin{equation}
+  c_g\longrightarrow s_g+W^+,
+  \qquad
+  t_r\longrightarrow b_r+W^+.
+\end{equation}
+標記\(r,g,b\)不受影響。膠子不會沿表格水平方向變換，帶電的\(W\)玻色子也不會沿顏色方向垂直變換。
+
+再加入電磁相位對稱性\(U(1)\)；在此變換下，每個帶電場都會取得一個相位。初步的群結構便是
+\begin{equation}
+  SU(3)\times SU(2)\times U(1).
+\end{equation}
+叉號表示這些是彼此獨立的因子：一個作用於顏色，一個作用於弱二重態，另一個則透過相位作用。這是有用的粗略圖像，但還不是完整的電弱理論。\editorialnote{標準模型的規範群通常精確寫成
+\(SU(3)_c\times SU(2)_L\times U(1)_Y\)。弱作用的\(SU(2)_L\)只作用於左手二重態，而最終的電磁\(U(1)_{\rm em}\)則在對稱性破缺後由\(SU(2)_L\times U(1)_Y\)湧現。本講特別提醒，初步將最後兩個因子如此對應，仍不完全一致；後續各講會補上缺少的手徵結構與電弱結構。}
+
+\subsection{輕子也遵循同樣的模式}
+
+在三列夸克顏色下方，放上一列不帶色荷的輕子：
+\begin{equation}
+\begin{array}{c|cc|cc|cc}
+ &u&d&c&s&t&b\\ \hline
+Q&+\frac23&-\frac13&+\frac23&-\frac13&+\frac23&-\frac13\\
+\text{lepton partner}
+ &\nu_e&e^-&\nu_\mu&\mu^-&\nu_\tau&\tau^-\\
+Q&0&-1&0&-1&0&-1
+\end{array}
+\end{equation}
+每一對相鄰項目的電荷都相差一個單位。這就是同一個帶電弱玻色子能連接\(u\)與\(d\)、\(c\)與\(s\)、\(t\)與\(b\)，以及帶電輕子與其中微子的原因。\(W\)頂點取決於相應的量子數與電荷差，而不在於費米子是夸克還是輕子。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_06_figure_07.png}
+\caption{完整的費米子表：三列不同顏色的夸克位於不帶色荷的輕子列上方，可清楚看出夸克電荷與三個輕子二重態。}
+\lectureframe{00:18:55}
+\end{figure}
+
+{\proseunicodefont μ}子的電荷與已知內禀量子數都和電子相同，但質量約為電子的兩百倍。{\proseunicodefont τ}子更重。中微子的質量非常小；在本講討論時，相關細節尚未明朗。到目前為止，還沒有任何原理能解釋觀察到的各家族質量模式。
+
+\begin{classroomqa}
+\audiencequestion{為什麼輕子、重子和介子會使用這些名稱？
+\lecturetimestamp{00:19:02}}
+\lecturerresponse{這些名稱的希臘語詞根，歷史上大致分別指輕、重和中間。這種依質量命名的方式後來顯得容易誤導。{\proseunicodefont μ}子曾稱為{\proseunicodefont μ}介子，因為它的質量介於電子與質子之間；但從相互作用來看，它屬於輕子，和電子遠比和{\proseunicodefont π}介子相似。現在，介子是指由夸克--反夸克組成的強子，且屬於玻色子；{\proseunicodefont μ}子不是介子。}
+\end{classroomqa}
+
+\section{弱作用為何如此弱？}
+
+\subsection{一個具體的帶電流過程}
+
+以中子{\proseunicodefont β}衰變作為例子。其價夸克組成為
+\begin{equation}
+  n=udd,\qquad p=uud.
+\end{equation}
+其中一個下夸克發生轉變：
+\begin{equation}
+  d\longrightarrow u+W^-,
+\end{equation}
+帶電玻色子則產生
+\begin{equation}
+  W^-\longrightarrow e^-+\bar\nu_e.
+\end{equation}
+合起來就是
+\begin{equation}
+  n\longrightarrow p+e^-+\bar\nu_e.
+\end{equation}
+另外兩個價夸克在過程中維持不變，作為旁觀者。第一個頂點上，中子轉變為質子；第二個頂點上，將輕子二重態連接起來的同一種弱作用，則把\(W^-\)轉變為觀察到的電子與電子反中微子。
+
+\subsection{三種耦合，三種截然不同的印象}
+
+在量子電動力學（QED）中，電子電荷\(e\)就是頂點振幅。將其平方可得典型的發射機率；採用自然單位制時，慣例因子都收在
+\begin{equation}
+  \alpha=\frac{e^2}{4\pi}\simeq\frac1{137}
+\end{equation}
+之中。強作用的耦合為\(g_s\)；在典型的強子尺度上，相應的量\(\alpha_s\)可能約為\(0.2\)。這遠大於\(1/137\)，所以夸克受到撞擊時，膠子很容易發射。
+
+令\(g_w\)表示帶電弱作用的耦合。它的平方並沒有小得驚人；依這裡採用的數量級估算，它與電磁耦合相當。然而，自由中子平均要等待約十五分鐘才衰變；強衰變則可能在強子穿越自身尺度所需的時間內發生。本講的歷史估算採用較早的粗略數字十二分鐘，但無論採用哪個數字，同一個疑問都無可迴避。\editorialnote{現代測得的自由中子平均壽命約為\(8.8\times10^2\,{\rm s}\)，而主要測量方法之間至今仍存在實驗上的張力。本講保留的粗略壽命是教學用的尺度估計，並非精確值。}
+\begin{quote}
+如果\(g_w\)沒有小得異常，究竟是什麼讓弱過程顯得弱？
+\end{quote}
+
+答案不能只從頂點尋找。每張費曼圖也包含傳播子；這些因子描述從一個頂點到另一個頂點的中間傳播。
+
+\section{距離空間中的有質量傳播子}
+
+\subsection{頂點並非整張圖的全部}
+
+{\proseunicodefont β}衰變圖包含兩個弱作用頂點，各貢獻一個\(g_w\)，以及一條連接兩個頂點的\(W\)線。將位置空間中的傳播子記為\(\Delta(x-y)\)，其中\(x\)是發射事件的位置，\(y\)是吸收或轉換事件的位置。這個振幅核描述場的擾動如何在兩個事件之間傳播。
+
+精確的相對論性傳播子包含許多此處用不著的結構。重要的定性特徵是它對質量的依賴。在短的類空間隔下，它有冪律奇異性，示意如下：
+\begin{equation}
+  \Delta(d)\sim\frac1{d^2}.
+\end{equation}
+無質量場會保留冪律尾端；相較之下，當距離遠大於有質量場的康普頓尺度時，傳播會受到指數抑制。因此，曲線會急遽向下彎折。
+
+\subsection{自然單位制指出彎折位置}
+
+令
+\begin{equation}
+  c=\hbar=1.
+\end{equation}
+則
+\begin{equation}
+  [m]=[E]=[p]=L^{-1}.
+\end{equation}
+熟悉的關係說明了這些等式：\(E=mc^2\)把質量與能量聯繫起來；而\(p\,x\)的量綱是\(\hbar\)，因此動量與距離的單位互為倒數。由質量\(m\)能構成的唯一長度尺度因此是
+\begin{equation}
+  d_m\sim\frac1m.
+\end{equation}
+恢復常數後可得
+\begin{equation}
+  d_m\sim\frac{\hbar}{mc},
+\end{equation}
+也就是康普頓波長。交換粒子的質量越大，有效作用距離越短。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_02.png}
+\caption{自然單位制下的量綱，以及傳播子定性衰減的示意圖。黑色曲線繼續呈現冪律尾端；紅色的有質量曲線則在反質量尺度附近開始急遽下降。}
+\lectureframe{00:27:19}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1.0cm,y=0.9cm]
+  \draw[->] (0,0) -- (7,0) node[right] {$d$};
+  \draw[->] (0,0) -- (0,5) node[above] {$|\Delta(d)|$};
+  \draw[thick]
+    plot[smooth] coordinates {(0.45,4.5) (0.9,3.3) (1.6,2.5)
+      (2.5,1.9) (3.7,1.45) (5.1,1.12) (6.4,0.9)};
+  \draw[thick,red]
+    plot[smooth] coordinates {(0.45,4.5) (0.9,3.3) (1.6,2.5)
+      (2.5,1.9) (3.2,1.55) (3.7,0.95) (4.2,0.36) (4.8,0.1)};
+  \draw[dashed] (3.4,0) -- (3.4,1.4);
+  \node at (5.7,1.4) {$m=0$};
+  \node[red] at (4.75,0.72) {$m>0$};
+  \node[below] at (3.4,0) {$d\sim m^{-1}$};
+\end{tikzpicture}
+\caption{黑板論證的簡明示意圖。這不是四維傳播子的精確公式，而是用來呈現由質量控制的作用距離。}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{縱軸表示什麼？
+\lecturetimestamp{00:28:30}}
+\lecturerresponse{縱軸表示傳播子的大小，記作\(\Delta\)。完整振幅、外部態和相空間因子都納入後，它的平方才會對機率有所貢獻。圖中要表達的是，經由有質量粒子交換的振幅在長距離下會迅速衰減。\editorialnote{傳播子本身並不是可直接測量、描述粒子沿經典路徑運動的機率振幅。本講用這種說法作為有用的作用距離估算：傳播子只是完整散射或衰變振幅中的一個因子。}}
+\end{classroomqa}
+
+\section{傅立葉變換與費米極限}
+
+\subsection{實驗測量的是動量}
+
+實驗通常測量外部粒子的動量，而不是內部線在何處開始、何處結束。在{\proseunicodefont β}衰變中，\(W\)所帶的動量可由中子與質子的動量差推得；這個動量也等於電子與反中微子的總動量。位置空間與動量空間中的傳播子，彼此透過傅立葉變換相連。
+\begin{equation}
+  k=p_n-p_p=p_e+p_{\bar\nu_e}.
+\end{equation}
+
+依照黑板上採用的正分母慣例，
+\begin{equation}
+  \widetilde{\Delta}_W(k)=\frac1{k^2+m_W^2},
+  \qquad
+  \widetilde{\Delta}_\gamma(k)=\frac1{k^2}.
+\end{equation}
+無質量光子的傳播子在動量轉移很小時會變得很大。有質量的\(W\)傳播子則不會超過\(1/m_W^2\)量級。對{\proseunicodefont β}衰變而言，
+\begin{equation}
+  |k^2|\ll m_W^2,
+\end{equation}
+因此，\(k^2\)的細節可以忽略，並且
+\begin{equation}
+  \widetilde{\Delta}_W(k)\simeq\frac1{m_W^2}.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{相對論性記號中的\(k^2\)，在能量與空間動量之間是否應該有一個負號？
+\lecturetimestamp{00:35:11}}
+\lecturerresponse{是的。採用空間分量為負號的閔可夫斯基度規時，
+\(k^2=(k^0)^2-\boldsymbol{k}^2\)；而純量分母通常寫成
+\(k^2-m_W^2+i\epsilon\)。黑板上使用的是與此等價的正值空間類或歐幾里得大小。低能{\proseunicodefont β}衰變中的四動量轉移遠小於\(m_W\)，因此無論採用哪種記號，得到的\(1/m_W^2\)抑制都相同，振幅至多只差一個無關緊要的符號。}
+\end{classroomqa}
+
+\subsection{低能振幅}
+
+兩個弱作用頂點與一個傳播子給出
+\begin{align}
+  \mathcal A_{\rm weak}
+  &\sim g_w\,\widetilde{\Delta}_W(k)\,g_w\\
+  &\sim\frac{g_w^2}{k^2+m_W^2}
+  \simeq\frac{g_w^2}{m_W^2}.
+\end{align}
+將振幅平方後，便得到典型的抑制因子
+\begin{equation}
+  |\mathcal A_{\rm weak}|^2
+  \sim\frac{g_w^4}{m_W^4},
+\end{equation}
+這還沒有納入特定衰變所對應的運動學與相空間因子。弱作用在核能標下之所以弱，不是因為它的基本規範耦合小得離譜，而是因為媒介粒子的質量很大。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}
+\caption{中子--質子弱作用過程，以及內部線所傳遞的動量轉移；這正是確定傳播子符號時所討論的內容。}
+\lectureframe{00:35:40}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_04.png}
+\caption{{\proseunicodefont β}衰變的圖形拓撲，旁邊列有方框中的低能估算\(g_w^2/m_W^2\)。}
+\lectureframe{00:37:25}
+\end{figure}
+
+依照本講使用的精度，\(m_W\)約為質子質量的一百倍。振幅中的\(m_W^{-2}\)因子，在衰變率中會變成\(m_W^{-4}\)；因此，即使耦合大小與一般規範理論相當，也會造成極長的壽命。
+
+\begin{classroomqa}
+\audiencequestion{這裡說的抑制是百萬分之一，還是十億分之一？\(W\)的質量最初又是如何得知的？
+\lecturetimestamp{00:38:11}}
+\lecturerresponse{本講的粗略估算指出，低能弱作用的機率相對於未受抑制的強子過程，小了約十億倍。從歷史上來看，低能實驗並沒有分別測量\(g_w\)與\(m_W\)，而是測量一個較小的組合量：
+\(g_w^2/m_W^2\)
+這個量稱為費米常數。當規範耦合與電弱理論建立關聯後，這個組合量便預測媒介粒子的質量很大；後來，加速器直接產生\(W\)並測得其質量。}
+\end{classroomqa}
+
+當動量遠低於\(m_W\)時，所有實驗測得的結果都幾乎由同一個常數描述：
+\begin{equation}
+  G_F\sim\frac{g_w^2}{m_W^2}.
+\end{equation}
+這就是為什麼費米早在1930年代，就能把{\proseunicodefont β}衰變描述成點狀的四費米子交互作用，遠早於媒介粒子被觀測到。隨著碰撞能量提高，實驗開始能探測到隱藏在傳播子中的動量依賴，證實這個有效常數是有質量粒子交換在低能下留下的影子。\editorialnote{採用標準電弱理論的樹圖階歸一化時，
+\[
+  \frac{G_F}{\sqrt2}=\frac{g^2}{8m_W^2}.
+\]
+本講刻意省略數值因子與旋量因子，只保留標度關係\(G_F\sim g_w^2/m_W^2\)。\(W\)與\(Z\)於1983年在歐洲核子研究組織（CERN）首次直接發現；本講順帶提到的1970年代中後期，對於直接觀測而言還太早。}
+
+從歷史上來看，弱作用可能由重粒子媒介的構想出現在二十世紀中葉。本講提到朱利安・施溫格是曾探討這種可能性的理論物理學家之一，也指出字母\(W\)很可能代表弱作用。早在加速器有足夠能量將這種媒介粒子實際產生出來之前，低能資料便已顯示，它在核能標下必須極其沉重。
+
+\subsection{決定衰變率的三項獨立因素}
+
+課堂上關於核束縛的一個問題，帶出影響躍遷的三項彼此獨立的因素：
+\begin{enumerate}
+  \item 頂點耦合常數；
+  \item 傳播子，包括質量與動量依賴性；
+  \item 初態與末態之間可用的能量，以及相空間。
+\end{enumerate}
+束縛可能使某個衰變道無法發生，因為末態能量會高於初態。這是運動學上的禁止，不是進一步降低\(g_w\)，也不是改變\(m_W\)。若衰變道仍然開放，但可用能量很少，相空間仍可能受到強烈抑制。
+
+\begin{classroomqa}
+\audiencequestion{附近質子的場或束縛，會不會透過相同的傳播子機制抑制{\proseunicodefont β}衰變？
+\lecturetimestamp{00:41:13}}
+\lecturerresponse{在這裡討論的例子中，不會。束縛會造成影響，是因為它改變了初態與末態核態的能量。若末態在能量上無法到達，過程就不能發生。耦合、傳播子與可用能量是三項彼此獨立的因素。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{耦合常數真的不變嗎？
+\lecturetimestamp{00:42:55}}
+\lecturerresponse{只有在固定的能標下才能這麼說。量子修正會使有效耦合隨動量或距離改變，這稱為耦合的跑動。本段論證以該過程相關能標下的耦合為準；後續會進一步討論能標依賴性。}
+\end{classroomqa}
+
+\section{不違反守恆律的虛粒子交換}
+
+\subsection{重粒子線為何能出現在圖中}
+
+普通的中子衰變沒有足夠能量產生自由且在質殼上的\(W\)。圖中的\(W\)是內部線，且處於離殼狀態。本講以傳統的能量--時間估算引入這個概念：
+\begin{equation}
+  \Delta E\,\Delta t\lesssim\hbar:
+\end{equation}
+一個能量看似偏差\(\Delta E\)的中間組態，只能在約
+\(\hbar/\Delta E\)的時間內有所貢獻。
+
+隧穿的類比能讓這個圖像更清楚。設想一個{\proseunicodefont α}粒子處於核勢阱中。它的能量低於勢壘頂，因此按經典力學無法逃逸。量子力學中的波函數可以延伸穿過勢壘，粒子也能在勢壘另一側出現，且總能量與初始時相同。如果試圖以一般的經典軌跡描述勢壘內部，勢能似乎太高，因而必須有負的動能。這種失敗的經典圖像，類似於把內部的\(W\)當成實粒子。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_06_figure_06.png}
+\caption{隧穿類比：起始點與遠側斜坡上的標記點具有相同的總能量，中間的勢壘區則是經典力學所禁止的區域。}
+\lectureframe{00:46:00}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1.0cm,y=0.9cm]
+  \draw[->] (0,0) -- (7,0) node[right] {$x$};
+  \draw[->] (0,0) -- (0,4.8) node[above] {$V(x)$};
+  \draw[thick]
+    plot[smooth] coordinates {(0.3,1.4) (1.0,0.7) (1.7,0.55)
+      (2.1,0.9) (3.2,3.9) (4.2,2.1) (5.0,0.75) (6.6,0.18)};
+  \draw[dashed] (1.7,0.75) -- (5.0,0.75);
+  \fill (1.7,0.75) circle (0.06);
+  \fill (5.0,0.75) circle (0.06);
+  \node at (3.35,0.35) {$\Delta E\,\Delta t\lesssim\hbar$};
+\end{tikzpicture}
+\caption{勢壘與等能量點的清晰重繪示意。}
+\end{figure}
+
+在{\proseunicodefont β}衰變的圖像中，中子可能短暫漲落為質子與內部的\(W^-\)，但這條重粒子線必須很快消失。它可能被重新吸收，使中子恢復原狀；也可能在第二個頂點終止，產生輕得多的電子與反中微子。整體而言，初態與末態的能量相同。\editorialnote{每個費曼頂點都遵守能量與動量守恆。虛粒子並不是先借用能量、稍後再歸還。精確地說，內部線的四動量需要積分，而積分所涵蓋的四動量不一定滿足實粒子的質殼關係\(k^2=m_W^2\)。本講以不確定性原理和隧穿作為解說途徑，因此仍保留這些說法；不過，離殼才是現代量子場論中的精確表述。}
+
+\subsection{實際產生的W玻色子}
+
+能量足夠高的加速器可以產生實際的\(W\)。它有自己的固有壽命，與假想的虛粒子線所對應的不確定時間無關。依照一般的相對論時間膨脹，運動中的\(W\)在實驗室參考系中會存活較久。靜止的\(W\)發生兩體輕子衰變時，
+\begin{equation}
+  W^-\longrightarrow e^-+\bar\nu_e,
+\end{equation}
+電子與反中微子會帶有大量動能，兩者飛行方向幾乎相反，動能各約為\(m_W/2\)。靜止能量並沒有消失，而是轉換為末態能量。{\proseunicodefont μ}子、{\proseunicodefont τ}子與夸克等衰變道也都能發生。
+
+\begin{classroomqa}
+\audiencequestion{實際產生的\(W\)壽命有多長？能用同一個耦合來計算嗎？
+\lecturetimestamp{00:49:49}}
+\lecturerresponse{可以。先計算每個允許衰變的振幅，將其平方後對末態相空間積分，再把各分支寬度加總。總寬度的倒數就是壽命。逐字稿中講者口述的數值估算有誤；定性的重點是，這種粒子的固有壽命極短，而運動中的\(W\)會依照通常的方式發生時間膨脹。\editorialnote{利用測得的衰變寬度\(\Gamma_W\simeq2.1\,{\rm GeV}\)可得
+\(\tau_W=\hbar/\Gamma_W\simeq3.2\times10^{-25}\,{\rm s}\)。這個現代數值可修正逐字稿中受損的數字，且不會將它歸於講者。}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{振幅平方如何轉換成衰變率，進而得到壽命？
+\lecturetimestamp{00:50:52}}
+\lecturerresponse{將矩陣元平方，與末態可用態的密度、守恆{\proseunicodefont δ}函數和歸一化因子合併，便可得到單位時間內的衰變機率，也就是衰變寬度\(\Gamma\)。在\(\hbar=1\)的單位制中，存活機率為\(e^{-\Gamma t}\)，因此\(\tau=1/\Gamma\)；恢復單位後則為\(\tau=\hbar/\Gamma\)。所以弱衰變寬度小，代表弱衰變壽命長。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{可以為隧穿穿過勢壘的粒子指定速度嗎？
+\lecturetimestamp{00:52:42}}
+\lecturerresponse{可以用推算出的距離除以推算出的通過時間，但不應把所得數值解讀為經典粒子的速度或訊號的速度。試圖測量勢壘內部的軌跡會改變系統狀態，並破壞原本的隧穿實驗。}
+\end{classroomqa}
+
+\section{觀測虛粒子是什麼意思？}
+
+\subsection{外部粒子與內部線}
+
+實粒子是入射或出射的漸近態，可在遠離交互作用區域之處製備或探測。虛粒子則是以微擾方式表示振幅時出現的內部線，不是探測器中額外的隱藏軌跡。
+
+\begin{classroomqa}
+\audiencequestion{實粒子與虛粒子的差異，有明確的定義嗎？
+\lecturetimestamp{00:55:05}}
+\lecturerresponse{實粒子是進入或離開交互作用區域的外部在殼態；虛粒子則是費曼圖中的內部離殼線。後者屬於數學展開的一部分，並非獨立觀測到的物體。}
+\end{classroomqa}
+
+若要解析持續時間只有\(\Delta t\)的過程，探針需要具有約\(1/\Delta t\)的頻率，因此能量約為\(\hbar/\Delta t\)。若光子的解析能力足以探測高勢壘下方的{\proseunicodefont α}粒子，它也可能提供足以將粒子提升至勢壘區域的能量。同樣地，若探針的能量足以解析短暫存在的內部\(W\)，便可能產生實際的\(W\)。這種觀測嘗試會把原本的過程變成另一個實驗。
+
+本講將此描述為量子力學中一再出現的挫折：為了檢查那個經典力學禁止的中間狀態而進行的干預，恰恰提供了能量，使看似禁止的組態變成實際可產生的狀態。
+
+\subsection{質子的漲落}
+
+在微擾論中，質子態包含例如下列組態的振幅：
+\begin{equation}
+  p\longleftrightarrow n+W^+,
+\end{equation}
+中子也同樣包含
+\begin{equation}
+  n\longleftrightarrow p+W^-.
+\end{equation}
+如果沒有其他交互作用介入，內部玻色子就會被重新吸收。硬探針則可能使一個\(W\)留在出射粒子中。這可以稱為敲出一個漲落，或產生一個\(W\)。說法雖然不同，可測量的陳述卻相同，都是相應末態的振幅。
+
+\begin{classroomqa}
+\audiencequestion{硬探針產生一個出射的\(W\)時，它是敲出一個原本就存在的粒子，還是創造了一個新粒子？
+\lecturetimestamp{01:01:20}}
+\lecturerresponse{這兩種圖像都可以用來整理數學。一種依時間排序的描述是，質子先漲落為\(n+W^+\)，探針趕在它重新吸收前移走中子；另一種描述則是碰撞產生了末態的\(W\)。不變的是觀察到該末態的計算機率，而不是一個關於測量前究竟存在什麼的唯一經典故事。}
+\end{classroomqa}
+
+提高碰撞能量，不會讓我們看見一份原本藏在靶內、固定不變的粒子清單；它會開啟許多可能的末態：一個\(W\)、多個玻色子、夸克噴流、強子，以及其他符合守恆量子數的粒子。即使撞擊的是基本場，只要能量足夠高，也能產生質子和許多其他複合物體。末態產物不必事先以組成成分的形式存在於靶內。本講把這一點推向滑稽的極端：只要能量與量子數允許，就不能從邏輯上排除桌子、椅子或氫原子這類極不可能的末態。這個玩笑帶出一項嚴肅提醒：不能只憑碰撞產物的直觀清點來定義什麼是基本粒子。
+
+\subsection{真空漲落與溫度}
+
+附著於質子的漲落，不等同於真空圖。前者是交互作用中質子態的一個成分；真空漲落則沒有外部質子線。無論哪種情況，能量足夠高的探針都可能產生符合條件的實粒子。例如，兩個高能光子在質心能量超過閾值時，可以產生電子--正電子對。
+
+\begin{classroomqa}
+\audiencequestion{這些反應是否取決於溫度？
+\lecturetimestamp{01:05:17}}
+\lecturerresponse{基本振幅不需要熱浴。溫度影響的是統計分布：高溫系統中有許多動能很高的粒子，因此跨越閾值的碰撞會變得常見。加熱含有束縛態 {\proseunicodefont α} 粒子的系統，除了量子穿隧之外，也可能提供足夠能量，使粒子越過勢壘逃逸。少數孤立的高能粒子構成一束粒子束；許多按熱分布的高能粒子則構成熱浴。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{質子漲落中發射的 \(W\) 是真空漲落嗎？
+\lecturetimestamp{01:06:56}}
+\lecturerresponse{不是。\(p\leftrightarrow n+W^+\)中的內部 \(W\) 是相互作用質子態的漲落。沒有外部質子的閉合虛過程才是真空漲落。兩者遵循相同的場論規則，但屬於不同的振幅。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼輕子 \(W\) 頂點需要反中微子？
+\lecturetimestamp{01:08:51}}
+\lecturerresponse{它提供守恆的輕子量子數，也是連接 \(e\)、\(\nu_e\) 和 \(W\) 的基本帶電流頂點的一部分。反粒子上的橫線表示出射的是電子反中微子，而非中微子。}
+\end{classroomqa}
+
+\section{能量轉換能推到多遠？}
+
+接下來，課堂要把「能量可以產生粒子」這條規則推到一個刻意荒謬的極限。一顆咖啡豆能變成一塊巧克力蛋糕嗎？實際上沒有這種過程，但相對論量子理論並未規定末態物質必須與初始物體相似。它要求的是能量足夠、守恆荷正確，而且振幅非零。一公斤的能量量級為
+\begin{equation}
+  Mc^2\sim9\times10^{16}\ {\rm J},
+\end{equation}
+因此，任何能組裝出某個公斤尺度特定物體的微觀碰撞，其發生機率都低得難以想像。
+
+普朗克質量
+\begin{equation}
+  m_{\rm P}=\sqrt{\frac{\hbar c}{G}}
+  \simeq2.2\times10^{-5}\ {\rm g},
+\end{equation}
+並非可能的最大質量。當量子局域在其康普頓波長尺度時，引力變得強大的尺度就是普朗克質量。一公斤約相當於 \(5\times10^7\) 個普朗克質量。
+
+\begin{classroomqa}
+\audiencequestion{如果碰撞能量超過普朗克尺度，能否產生椅子或行星等任意重的物體？
+\lecturetimestamp{01:10:37}}
+\lecturerresponse{當超普朗克質心能量集中在一個小區域時，最自然、壓倒性的結果是引力坍縮，形成黑洞。高度有序的宏觀物體則是極其罕見的漲落。講座援引時間反演：既然椅子可以落入黑洞，反向過程的振幅就不會恰好為零。其機率受到巨大熵因子的壓低，因此不能把可能性與實際發生的可能性混為一談。}
+\end{classroomqa}
+
+這段延伸討論再次提醒我們先前的警告。量子場論預測的是指定初態與末態之間的振幅。認為每種產物在碰撞前就已經以字面意義存在於靶中的生動說法，並不屬於這項預測。
+
+\section{玻色子、相互作用與統計}
+
+\subsection{光子可以散射}
+
+是玻色子不代表它不會參與相互作用。玻色子或費米子的分類說明的是交換統計；相互作用頂點則是另一項動力學性質。經典光束通常彼此穿過，因為量子電動力學（QED）沒有樹階四光子頂點，而且低能光子--光子散射極其微弱。儘管如此，兩個光子仍可透過虛電子--正電子迴圈相互作用：
+\begin{equation}
+  \gamma+\gamma
+  \longrightarrow(e^-e^+)_{\rm virtual}
+  \longrightarrow\gamma+\gamma.
+\end{equation}
+質心能量足夠高時，它們也可能產生一對實粒子：
+\begin{equation}
+  \gamma+\gamma\longrightarrow e^-+e^+.
+\end{equation}
+光學光子的能量約為幾電子伏特，而產生電子對的閾值約為 \(2m_e c^2\approx1.02\,{\rm MeV}\)。因此，在一般光學能量下，這個虛過程受到大幅壓低，交叉光束看起來才會像是彼此毫無影響。
+
+\begin{classroomqa}
+\audiencequestion{虛 \(W\) 玻色子會僅僅因為是玻色子，就和其他玻色子相互作用嗎？
+\lecturetimestamp{01:12:47}}
+\lecturerresponse{它們可以相互作用，但原因不是它們服從玻色統計。動力學上的相互作用由規範頂點決定；統計則決定交換全同粒子時，多粒子振幅如何變化。光子會透過帶電虛粒子微弱地相互作用，而電弱理論也包含直接的非阿貝爾 \(W\) 玻色子自相互作用。}
+\end{classroomqa}
+
+\subsection{玻色增強不是一種力}
+
+若干全同粒子佔據彼此接近的量子態時，費米子與玻色子的統計差異便會明顯呈現。玻色子傾向於多重佔據同一態；費米子則禁止全同粒子佔據同一態。在典型的高能碰撞中，粒子會進入彼此相隔甚遠的動量態，因此這種統計效應可能不像在雷射或凝聚體中那樣明顯。
+
+原則上，\(W\) 玻色子也有同樣的玻色增強。講座開玩笑說，可以想像一種能讓 \(W\) 玻色子產生雷射的系統。它們質量極大、壽命極短，使這種裝置實際上極難實現；不過，它們的統計確實是玻色統計。
+
+\begin{classroomqa}
+\audiencequestion{質子或中子是什麼顏色？
+\lecturetimestamp{01:18:41}}
+\lecturerresponse{物理上的強子是色單態，常稱為無色或白色。簡略地說，重子含有一個紅夸克、一個綠夸克和一個藍夸克。更精確地說，它的色波函數是以下反對稱疊加態：
+\[
+  |{\rm singlet}\rangle
+  =\frac1{\sqrt6}\epsilon_{abc}|q^a q^b q^c\rangle,
+\]
+而不是把某種固定顏色經典地指定給每一個具名夸克。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{本課程會談到玻色凝聚嗎？
+\lecturetimestamp{01:19:25}}
+\lecturerresponse{會，會透過希格斯現象談到。遍布真空的非零希格斯場，在一些重要方面類似玻色凝聚體。課程會在介紹自發對稱性破缺後進一步說明這個類比。\editorialnote{希格斯真空期望值並非字面意義上由處於殼上的希格斯粒子佔據同一量子態所構成的普通氣體。凝聚是一個很有啟發性的類比，用來理解相干玻色場與選定的真空，但兩者在微觀上並非完全等同。}}
+\end{classroomqa}
+
+\section{缺少的中性弱玻色子}
+
+現在回到群表。如果水平方向的弱對稱群是 \(SU(2)\)，那麼它有
+\begin{equation}
+  \dim SU(2)=3
+\end{equation}
+個生成元，因此也需要三個規範場。帶電組合 \(W^+\) 和 \(W^-\) 只對應其中兩個，還需要第三個中性場。它與觀測到的 \(Z\) 玻色子密切相關，但並非單純就是光子。精確的中性組合同時涉及第三個 \(SU(2)_L\) 場與 \(U(1)_Y\) 場。這種混合以及電荷的正確定義，刻意留待下一講再談。
+
+\section{自發對稱性破缺}
+
+\subsection{對稱的選擇可能陷入不穩定的猶豫}
+
+想像一張圓桌，每個座位的左側和右側各放一件餐具。在任何人動作之前，左側與右側並無差別。一位客人一旦伸手拿右側的餐具，相鄰座位的選擇便會隨之確定，整張桌子最後都採用右手方向的配置。規則是對稱的，但實際形成的構型選擇了兩種可能之一。這個故事只是類比，卻呈現了我們需要的幾個要素：對稱性、多個等價結果，以及一種不穩定性，使任意微小的擾動都能讓整個系統選定其中一種結果。
+
+\subsection{正面--反面點陣}
+
+為了建立更簡潔的模型，在點陣的每個格點放上一個二態變數 \(s_i=\pm1\)。稱 \(+1\) 為正面，\(-1\) 為反面。令相鄰格點傾向於排列一致：
+\begin{equation}
+  H=-J\sum_{\langle ij\rangle}s_i s_j,
+  \qquad J>0.
+\end{equation}
+平行的相鄰格點比反平行的格點具有更低的能量。因此有兩個簡併基態：
+\begin{equation}
+\begin{aligned}
+  s_i&=+1\quad\text{for every }i,
+  \\
+  s_i&=-1\quad\text{for every }i.
+\end{aligned}
+\end{equation}
+哈密頓量在全域翻轉 \(s_i\to-s_i\) 下保持不變，但任一選定的基態本身並不保持不變。
+
+現在將一個非常遙遠的邊界自旋固定為正面。在一般的短程系統中，我們或許會預期遠方的一個自由度不會影響這裡。然而在有序相中，這個邊界條件會選出全為正面的真空。一旦真空選定，正面排列中單獨出現一個反面就會因與鄰近格點不一致而付出能量代價。局域激發是相對於選定的基態定義的，儘管底層方程仍保有正面--反面對稱性。
+
+\subsection{顯式破缺與疇壁}
+
+顯式破缺會加入局域偏置：
+\begin{equation}
+  H_{\rm explicit}
+  =-J\sum_{\langle ij\rangle}s_i s_j-h\sum_i s_i,
+  \qquad h\ne0.
+\end{equation}
+如此一來，即使在單一孤立格點上，正面與反面的能量也不相等，因此只會有一個偏好的真空。自發破缺則是 \(h=0\)：局域規則保有對稱性，兩個真空仍然簡併，但系統佔據其中一個。
+
+反過來，若堅持最左側邊界全為正面、最右側邊界全為反面，最低能量構型就必須在兩個真空之間平順過渡。這個界面稱為疇壁。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{lecture_06_figure_08.png}
+\caption{以虛線疇壁分隔的正面--反面點陣。相反的邊界條件迫使系統在兩個簡併有序態之間形成界面。}
+\lectureframe{01:30:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{自發對稱性破缺與一般的顯式對稱性破缺有何不同？
+\lecturetimestamp{01:28:36}}
+\lecturerresponse{顯式破缺時，局域哈密頓量已賦予正面與反面不同的能量，因此不存在一對由對稱性互相轉換的基態。自發破缺時，方程仍保有對稱性，真空彼此簡併，而邊界條件或任意微小的擾動會選出其中一個。能否形成在不同真空之間過渡的疇壁，是判別後一種情形的指標。}
+\end{classroomqa}
+
+這個模型刻意設得很簡單，但包含了接下來要套用到希格斯場的核心邏輯：對稱的理論、不穩定或簡併的真空結構、選定的基態，以及由這項選擇所決定的物理後果。
+
+\section{本講的收束}
+
+費米子表將標準模型群的對稱性呈現為一組物理變換方向。色對稱群 \(SU(3)\) 將紅、綠、藍互相轉換；帶電弱變換作用於夸克與輕子的二重態；相位對稱性則提供初步的 \(U(1)\) 因子。規範玻色子的發射使這些群變換以相互作用的形式實現。
+
+因此，{\proseunicodefont β} 衰變之所以微弱，原因不在於 \(g_w\) 特別小，而在於媒介子質量很大。在距離空間中，質量會在康普頓尺度 \(\hbar/(m_Wc)\) 之外抑制傳播子。在動量空間中，
+\begin{equation}
+  \mathcal A_{\rm weak}
+  \sim\frac{g_w^2}{k^2+m_W^2}
+  \simeq\frac{g_w^2}{m_W^2}
+\end{equation}
+在核子動量尺度下成立。早期的低能實驗測得的正是這個組合，並以費米常數表示。
+
+延伸的課堂討論釐清了這個公式的意涵與界限。內部的 \(W\) 線是虛線，且處於殼外；能量--動量仍然守恆。探針能量足夠高時，可以產生實際的 \(W\)，但那已是另一種末態過程。碰撞產物並非碰撞前就存在的組分清單。溫度會改變高能入射粒子的數量；光子可以透過帶電虛粒子相互作用；玻色統計則不同於動力學上的力。
+
+最後，\(SU(2)\) 還需要一個與 \(Z\) 相關的中性規範場，而正面--反面點陣則提供了自發對稱性破缺的第一個模型。接下來要把這兩條尚未完成的線索結合起來：電弱混合與希格斯機制。

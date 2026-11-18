@@ -1,0 +1,781 @@
+\chapter{希格斯尺度、跑動耦合與階層問題}
+
+\lectureoverview{最後一講先從標準模型之外的物理談起，展望統一、超對稱與規範階層問題。為了看清希格斯場為何居於這些問題的核心，我們先重建狄拉克拉格朗日量，說明費米子質量會混合左、右手徵。手徵弱相互作用禁止裸質量項；只有希格斯場取得真空期望值後，規範不變的湯川耦合才會產生質量。接著，我們從希格斯勢推導出這個真空期望值，追問為何所有已知基本粒子的質量都繫於同一個小尺度，並以超導性作為物理上的類比。休息之後，本講從導體與電介質中的遮蔽現象發展出重整化概念，再將論證延伸到量子電動力學與量子色動力學，追蹤規範耦合如何趨向統一，並從短距離引力推導普朗克尺度。最後，電弱尺度再次成為那個尚未解釋的小數值。}
+
+\section{標準模型之外懸而未決的問題}
+
+這裡並不把標準模型呈現為一份封閉的目錄。今晚一開始，我想先談談下一門課將走向何處。這套理論面臨的是難題，而非邏輯悖論：規範階層問題、超對稱可能扮演的角色，以及統一問題。三個規範因子
+\begin{equation}
+  SU(3)_c\times SU(2)_L\times U(1)_Y
+  \label{eq:l10-standard-model-group}
+\end{equation}
+分別描述強、弱與超荷相互作用。它們會不會是一個更大群的子群？一種常受研究的可能構造是
+\(SU(5)\)，其中夸克與輕子屬於共同的多重態。自然界是否採用這種特定構造，是另一個問題。重要的線索在於，這些看似彼此分離的結構，竟能如此整齊地納入一個更大的數學結構之中。
+
+大型強子對撞機的建造目的之一，是找出能解決這些問題的物理。在2010年，它最直接要尋找的是希格斯玻色子。發現希格斯粒子，絕不只是往粒子表格中再添一個粒子。希格斯粒子須由一組彼此關聯的性質來辨認：它的真空期望值賦予弱向量玻色子與費米子質量，而希格斯場的漲落則以特定強度耦合到這些粒子。若某個共振態的耦合不符預期，它就不是標準模型中的希格斯粒子。\editorialnote{本講早於2012年的發現。觀測到的約\(125\,\mathrm{GeV}\)標量粒子，在目前的精度範圍內，具有標準模型希格斯粒子所預期的自旋、宇稱與耦合模式。截至2026年，尚未觀測到低能超對稱粒子。這些後來的事實更新了本講的歷史背景，卻不改變當時在教室裡展開的論證。}
+
+要進入這個論證，起點不是希格斯勢，而是狄拉克方程。我們得先確切了解費米子質量造成什麼作用，才能追問它從何而來。
+
+\section{從狄拉克方程到狄拉克拉格朗日量}
+
+\subsection{早期的狄拉克記號}
+
+在最初引入狄拉克方程時使用的哈密頓量記號中，其結構如下：
+\begin{equation}
+  i\partial_t\psi
+  =
+  \left(-i\alpha^i\partial_i+\beta m\right)\psi .
+  \label{eq:l10-dirac-hamiltonian}
+\end{equation}
+符號以及\(i\)因子取決於所採用的約定，現場板書暫時省略了其中一些。關鍵在於，含導數的項與不含導數的質量項彼此分開。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_02.png}
+\caption{早期\(\alpha,\beta\)記號下的狄拉克方程與拉格朗日量。板書呈現的是結構，不採用固定的符號約定。}
+\lectureframe{00:05:52}
+\label{fig:l10-dirac-alpha-beta}
+\end{figure}
+
+若要得到一個變分後會導出狄拉克方程的作用量，就將方程乘以\(\psi^\dagger\)。把所有項移到等號同一側，便不再需要等號；這引出今晚的一個小小數學玩笑：方程一旦寫成某個表示式等於零，等號就完成了使命。相應的一階拉格朗日量可概略寫成
+\begin{equation}
+  \mathcal L
+  =
+  \psi^\dagger
+  \left(i\partial_t+i\alpha^i\partial_i-\beta m\right)\psi ,
+  \label{eq:l10-dirac-old-lagrangian}
+\end{equation}
+其中相對符號由一致的度規約定決定。
+
+導數項使激發從一個時空點傳播到鄰近的點，同時轉動其旋量分量。用點陣圖像來看，這些項代表躍遷。相較之下，質量項在同一點吸收並重新發射費米子，不含導數。很快便會看到，這個局域作用代表兩種手徵之間的反覆轉換。
+
+\begin{classroomqa}
+\audiencequestion{是否應把\(\gamma^0\)放在\(\psi^\dagger\)後面？\lecturetimestamp{00:05:59}}
+\lecturerresponse{在剛才寫出的非協變形式中不用。但這個問題正好引向協變記號。以\(\bar\psi=\psi^\dagger\gamma^0\)定義狄拉克伴隨；如此一來，\(\gamma^0\)確實已包含在左側的那個物件之中。}
+\end{classroomqa}
+
+\subsection{協變形式}
+
+令
+\begin{equation}
+  \bar\psi\equiv\psi^\dagger\beta
+  =\psi^\dagger\gamma^0,
+  \qquad
+  \gamma^0\equiv\beta,
+  \qquad
+  \gamma^i\equiv\beta\alpha^i .
+  \label{eq:l10-dirac-adjoint}
+\end{equation}
+由於\(\beta^2=1\)，乘上\(\beta\)即可在兩種記號之間轉換。時間導數變為
+\(\bar\psi\gamma^0\partial_0\psi\)，空間導數則變為
+\(\bar\psi\gamma^i\partial_i\psi\)，因此得到
+\begin{equation}
+  \boxed{\mathcal L_D
+  =\bar\psi\left(i\gamma^\mu\partial_\mu-m\right)\psi .}
+  \label{eq:l10-covariant-dirac}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_03.png}
+\caption{協變改寫：\(\bar\psi=\psi^\dagger\gamma^0\)、
+\(\gamma^i=\beta\alpha^i\)，以及簡潔的狄拉克拉格朗日量。}
+\lectureframe{00:10:17}
+\label{fig:l10-dirac-covariant}
+\end{figure}
+
+這種記號呈現出各雙線性量的洛倫茲性質。
+\(\bar\psi\psi\)是純量，而
+\(\bar\psi\gamma^\mu\psi\)是四向量。這個簡潔的表示式不只是比\(\alpha,\beta\)形式更美觀，也說明了各部分如何變換。
+
+\begin{classroomqa}
+\audiencequestion{簡潔表示式最左側的旋量是否應該是\(\bar\psi\)？\lecturetimestamp{00:09:39}}
+\lecturerresponse{是的。黑板上已補回漏掉的橫線。這點很重要：
+\(\bar\psi\)不是\(\psi^\dagger\)，而是
+\(\psi^\dagger\gamma^0\)。}
+\end{classroomqa}
+
+\section{手徵性與狄拉克質量的實際作用}
+
+除了\(\gamma^0,\gamma^1,\gamma^2,\gamma^3\)之外，定義
+\begin{equation}
+  \gamma^5
+  =i\gamma^0\gamma^1\gamma^2\gamma^3,
+  \qquad
+  (\gamma^5)^2=1 .
+  \label{eq:l10-gamma-five}
+\end{equation}
+這裡出現的\(i\)因子，是採用「時間分量為正、空間分量為負」閔可夫斯基度規時的標準約定。本徵值為\(+1\)與\(-1\)，相應的投影算符為
+\begin{equation}
+\begin{aligned}
+  P_L&=\frac{1-\gamma^5}{2},
+  &
+  P_R&=\frac{1+\gamma^5}{2},
+  \\
+  \psi_L&=P_L\psi,
+  &
+  \psi_R&=P_R\psi .
+\end{aligned}
+  \label{eq:l10-chiral-projectors}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{既然沒有\(\gamma^4\)，為什麼這個額外的矩陣稱為\(\gamma^5\)？它的本徵值描述的是螺旋度嗎？\lecturetimestamp{00:10:42}}
+\lecturerresponse{這個名稱源自歷史：它是由四個時空伽馬矩陣相乘而成的額外矩陣。它的本徵值標記手徵性，一般而言並不標記螺旋度。對無質量粒子，兩者在適當條件下可以等同，因此容易混淆；但弱規範理論所需的洛倫茲表示標籤是手徵性。}
+\end{classroomqa}
+
+動能項會保留手徵性。看出這點的一個簡便方式是利用
+\(\{\gamma^\mu,\gamma^5\}=0\)，於是動能項可分解為
+\begin{equation}
+  \bar\psi i\gamma^\mu\partial_\mu\psi
+  =
+  \bar\psi_L i\gamma^\mu\partial_\mu\psi_L
+  +
+  \bar\psi_R i\gamma^\mu\partial_\mu\psi_R .
+  \label{eq:l10-chiral-kinetic}
+\end{equation}
+純量雙線性量的性質則不同：
+\begin{equation}
+  \bar\psi\psi
+  =
+  \bar\psi_L\psi_R+\bar\psi_R\psi_L .
+  \label{eq:l10-chiral-mass}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_04.png}
+\caption{黑板將純量雙線性量分解為左轉右與右轉左兩部分。}
+\lectureframe{00:15:38}
+\label{fig:l10-chiral-decomposition}
+\end{figure}
+
+因此，狄拉克質量是一種局域的手徵翻轉作用：
+\begin{equation}
+  \psi_L\longleftrightarrow\psi_R .
+\end{equation}
+無質量費米子可以以確定的手徵性傳播。有質量的費米子則無法留在單一手徵扇區，因為質量項會不斷混合兩者。這種轉換竟與慣性有關，或許令人意外；但這正是費米子靜止質量在相對論性場論中的形式。
+
+\section{為何弱對稱性禁止裸費米子質量}
+
+帶電弱流是純左手徵的。講座一開始先提到\(Z\)，隨後更正為\(W^\pm\)：\(Z\)耦合具有手徵性且強度不相等，但並非對所有右手徵費米子都完全不存在。較準確的說法是
+\begin{equation}
+  \mathcal L_{\mathrm{cc}}
+  =
+  -\frac{g}{\sqrt2}
+  \left(\bar u_L\gamma^\mu d_L
+  +\bar\nu_L\gamma^\mu e_L\right)W^+_\mu
+  +\mathrm{h.c.}
+  \label{eq:l10-charged-current}
+\end{equation}
+左手費米子以\(SU(2)_L\)二重態變換；右手帶電費米子則以單態變換。
+
+現在將這些變換規則與
+\eqref{eq:l10-chiral-mass}相比。像
+\(\bar e_L e_R\)這樣的項，會吸收一個帶有某組電弱量子數的物件，再放出一個帶有另一組量子數的物件。單獨看這一項並不具規範不變性。因此，熟悉的狄拉克質量不能作為裸項出現在電弱拉格朗日量中。
+
+正確的解釋順序應是這樣：費米子質量不是先被加進去，再與希格斯作表面上的關聯。規範對稱性先排除了顯而易見的質量項；接著，希格斯場必須攜帶缺少的量子數。
+
+\subsection{希格斯場作為電荷載體}
+
+令希格斯場以超荷為\(+\tfrac12\)的\(SU(2)_L\)二重態變換：
+\begin{equation}
+  H=
+  \begin{pmatrix}
+    H^+\\ H^0
+  \end{pmatrix},
+  \qquad
+  \widetilde H=i\sigma^2H^* .
+  \label{eq:l10-higgs-doublet}
+\end{equation}
+講座中群指標只作概略表示，並以\(\phi\)稱呼這個場。用這套記號，湯川項的形式為
+\begin{equation}
+  \mathcal L_Y
+  =
+  -G_Y\left(
+    \bar\psi_L\phi\psi_R+
+    \bar\psi_R\phi^\dagger\psi_L
+  \right).
+  \label{eq:l10-yukawa-schematic}
+\end{equation}
+希格斯場帶走裸手徵翻轉無法守恆的弱荷。
+
+完整的一代標準模型表示式，將相同的量子數配平明確寫出：
+\begin{equation}
+  \mathcal L_Y
+  =
+  -y_d\bar Q_LHd_R
+  -y_u\bar Q_L\widetilde H u_R
+  -y_e\bar L_LHe_R
+  +\mathrm{h.c.}
+  \label{eq:l10-yukawa-full}
+\end{equation}
+每一項都具有規範不變性，而且每種費米子都有自己的無量綱湯川耦合。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{黑板上同時寫出希格斯場參與的手徵翻轉與對稱破缺勢。}
+\lectureframe{00:18:54}
+\label{fig:l10-yukawa-potential-board}
+\end{figure}
+
+\section{同一個相互作用同時產生質量與希格斯耦合}
+
+自然界選擇了一個中性希格斯分量不為零的真空。在講座採用的示意性實場記號中，
+\begin{equation}
+  \phi=F+\mathcal H ,
+  \label{eq:l10-f-plus-h}
+\end{equation}
+其中\(F\)是真空中不發生漲落的位移，\(\mathcal H\)則是會傳播的希格斯漲落。將它代入
+\eqref{eq:l10-yukawa-schematic}，得到
+\begin{align}
+  \mathcal L_Y
+  ={}&
+  -G_YF
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right)
+  \notag\\
+  &-G_Y\mathcal H
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right).
+  \label{eq:l10-yukawa-split}
+\end{align}
+第一行是狄拉克質量，第二行則描述與一個物理希格斯量子的相互作用：
+\begin{equation}
+  m_f=G_YF
+  \qquad\hbox{in the lecture's normalization.}
+  \label{eq:l10-mass-lecture-normalization}
+\end{equation}
+
+在標準模型的慣用歸一化下，
+\begin{equation}
+\begin{aligned}
+  H(x)&=\frac{1}{\sqrt2}
+  \begin{pmatrix}
+    0\\ v+h(x)
+  \end{pmatrix},
+  \\
+  m_f&=\frac{y_fv}{\sqrt2},
+  \\
+  \mathcal L_{hff}&=-\frac{m_f}{v}h\bar f f,
+\end{aligned}
+  \label{eq:l10-standard-higgs-normalization}
+\end{equation}
+其中\(v\simeq246\,\mathrm{GeV}\)。講座中粗略寫作\(F\sim200\,\mathrm{GeV}\)的數值，指的就是同一個電弱尺度，只是省略了歸一化細節。
+
+測得的\(W\)與\(Z\)質量決定了尺度\(F\)。測得的費米子質量則決定湯川耦合。電子的耦合極小；頂夸克的耦合約為單位量級。若這個機制的作用僅止於此，我們就只是為每種費米子各加入一個未知數，再把同一份資訊讀回來。
+
+但\eqref{eq:l10-yukawa-split}的第二行帶來新的實驗內容：它表示費米子可以發射或吸收希格斯粒子；若從交叉道來看，則表示希格斯粒子可以衰變為費米子與反費米子。概略而言，
+\begin{equation}
+\begin{aligned}
+  \mathcal M(h\to f\bar f)&\propto y_f,
+  \\
+  \Gamma(h\to f\bar f)
+  &=
+  N_c\frac{y_f^2m_h}{16\pi}
+  \\
+  &\quad\times
+  \left(1-\frac{4m_f^2}{m_h^2}\right)^{3/2},
+\end{aligned}
+  \label{eq:l10-higgs-fermion-width}
+\end{equation}
+這是在樹階近似下的結果。對夸克，\(N_c=3\)；對輕子，\(1\)。只要衰變在運動學上允許，費米子質量越大，湯川耦合也越大。這不代表所有重粒子衰變道都占主導地位：色因子、相空間、圈圖誘發的衰變道，以及衰變至向量玻色子的道都會產生影響。這裡的意思是，費米子本身的耦合與其質量成正比。
+
+\begin{classroomqa}
+\audiencequestion{如果不逐一處理所有技術細節，實際上要如何預測希格斯的衰變時間？\lecturetimestamp{00:25:32}}
+\lecturerresponse{相互作用決定哈密頓量矩陣元。畫出相應的費曼圖，計算躍遷振幅，將振幅平方，再對所有允許的末態求和或積分，便可得到衰變率。壽命是總衰變寬度的倒數，\(\tau=\hbar/\Gamma_{\mathrm{tot}}\)。自量子場論發展初期以來，粒子物理計算便一直採用這套量子力學邏輯。}
+\end{classroomqa}
+
+講座進行時，這些希格斯唯象學仍屬於預言，尚未直接觀測到。\(W\)與\(Z\)的自相互作用已對規範結構提供嚴格檢驗；希格斯粒子及其直接耦合仍有待發現。這段歷史中的不確定性應予記錄，後來的結果也一樣：一種希格斯型粒子已被發現，對其耦合的測量如今正用來檢驗本講所闡述的同一套質量生成機制。
+
+\section{決定 F 的勢}
+
+真空位移不是寫下湯川耦合後再任意選定的，而是由希格斯勢決定。取穿過完整二重態的一個實場截面，令
+\begin{equation}
+  V(\phi)
+  =
+  -\frac{\mu^2}{2}\phi^2
+  +\frac{\lambda}{4}\phi^4,
+  \qquad
+  \mu^2>0,\quad\lambda>0.
+  \label{eq:l10-real-higgs-potential}
+\end{equation}
+在\(\phi=0\)附近，負的二次項形成倒置的拋物線。把\(\mu\)稱為虛質量，只是簡略地表示原點不穩定；這不代表真實真空附近的物理希格斯激發具有虛質量。
+
+只有二次項時，場會無界增大，因此不會有最低能態。正的四次項最終會占優，使勢能向上升。奇次冪會破壞玩具模型的\(\phi\mapsto-\phi\)對稱性。四次項是第一個能穩定勢能的偶次交互作用；在四維時空中，它也是耦合為無量綱的最高次多項式純量交互作用。
+
+對勢能微分：
+\begin{align}
+  \frac{dV}{d\phi}
+  &=-\mu^2\phi+\lambda\phi^3
+  \notag\\
+  &=\phi\left(-\mu^2+\lambda\phi^2\right).
+  \label{eq:l10-potential-derivative}
+\end{align}
+駐點\(\phi=0\)是不穩定的頂點。兩個極小值滿足
+\begin{equation}
+  \boxed{F^2=\frac{\mu^2}{\lambda}},
+  \qquad
+  F=\frac{\mu}{\sqrt\lambda}
+  \label{eq:l10-vacuum-value}
+\end{equation}
+這是採用此實場記號時的結果。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_06.png}
+\caption{黑板上完成了極小值的求解：
+\(V=-\mu^2\phi^2/2+\lambda\phi^4/4\)、
+\(V'=0\)與\(\phi^2=\mu^2/\lambda\)。}
+\lectureframe{00:34:32}
+\label{fig:l10-higgs-minimization}
+\end{figure}
+
+特意加入\(1/2\)與\(1/4\)這兩個因子，就是為了讓它們在微分時消去。在原點附近，\(\phi^4\)比\(\phi^2\)小；場值很大時，前者增長得更快，因而使系統穩定。這種簡單的競爭便形成雙勢阱。
+
+量綱也能釐清逐字稿中一處短暫的口誤。
+\(\lambda\)在四維時空中是無量綱的，而\(\mu\)與\(F\)具有質量量綱。將\(\phi=F+\mathcal H\)展開，勢能曲率給出
+\begin{equation}
+  m_{\mathcal H}^2
+  =
+  \left.\frac{d^2V}{d\phi^2}\right|_{\phi=F}
+  =
+  -\mu^2+3\lambda F^2
+  =
+  2\mu^2
+  =
+  2\lambda F^2.
+  \label{eq:l10-higgs-curvature}
+\end{equation}
+在完整的標準模型記號中，
+\(V(H)=-\mu^2H^\dagger H+\lambda(H^\dagger H)^2\)，同樣有
+\(m_h^2=2\lambda v^2\)。測得的希格斯質量與\(v\)意味著，在電弱尺度下\(\lambda\)接近\(0.13\)。講義在2010年的估算刻意採用粗略值；其中要強調的結構性主張是，\(\lambda\)並非小得離譜。
+
+\section{為什麼我們觀測到的一切都與這個尺度相關？}
+
+同一個\(F\)決定了\(W\)與\(Z\)的質量；乘上不同的湯川耦合後，也決定所有帶電費米子的質量。這種質量來源集中於同一現象的經驗事實，引出了一個比代數更有意思的問題：為什麼所有已知基本粒子的質量，都來自同一個對稱破缺現象？
+
+並沒有定理要求所有可能的粒子都必須如此。設想一種向量型費米子，其左、右手徵分量在規範群下以相同方式變換。此時，不含希格斯的\(\bar\psi_L\psi_R+\mathrm{h.c.}\)也可以具有規範不變性。完全的規範單態同樣可以具有與電弱對稱破缺無關的質量。這類粒子自然可能遠重於質量與\(F\)相關的粒子。我們發現的粒子之所以輕到足以被觀測，可能正是因為當\(F\)消失時，對稱性會使它們變成無質量粒子。
+
+因此，電弱尺度才是那個特別小的數。這裡提出的推測圖像是：一般未受保護的質量接近大得多的基本尺度，而受手徵規範對稱性保護的粒子則被\(F\)拉低。
+
+\begin{classroomqa}
+\audiencequestion{普朗克質量是否可能是基本質量尺度的候選值，可用來與\(F\)比較？\lecturetimestamp{00:38:43}}
+\lecturerresponse{是。另一個候選尺度是規範耦合統一所暗示的尺度。儘管對應到這些巨大質量的粒子都尚未直接觀測到，本講後面的論證仍會導出這兩個尺度。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{說其他尺度比\(F\)大約高十五個數量級，是什麼意思？這些尺度各對應什麼粒子？\lecturetimestamp{00:39:54}}
+\lecturerresponse{電弱尺度約為\(10^2\,\mathrm{GeV}\)；統一尺度據推測約在\(10^{16}\,\mathrm{GeV}\)附近，普朗克尺度則約在\(10^{19}\,\mathrm{GeV}\)附近。我們並未產生過具有這些質量的粒子。這些尺度是間接推得的：統一尺度來自對已測得規範耦合的外推；普朗克尺度則由量子力學、相對論與牛頓常數共同推得。}
+\end{classroomqa}
+
+\section{實驗室中的帶電凝聚態}
+
+休息之前，有位聽眾提問，想知道有沒有日常凝態物質中的希格斯機制類比。回答分幾個步驟展開，不只停留在類比上。
+
+\begin{classroomqa}
+\audiencequestion{除了超冷玻色凝聚體之外，固態物理中有沒有常見的類希格斯機制例子？\lecturetimestamp{00:40:50}}
+\lecturerresponse{有。中性玻色場可以在玻色凝聚體或超流體中取得非零期望值。若凝聚的對象帶電，同樣的基本現象便會改變規範場。熟悉的例子是超導性：帶電的庫珀對凝聚，使電磁場在材料內部具有有限的穿透長度。}
+\end{classroomqa}
+
+在分子尺度下，可以把氦原子視為一個有效的玻色粒子，其場記為\(\Phi_{\mathrm{He}}\)。真空對應於零場；超流相則具有\(\langle\Phi_{\mathrm{He}}\rangle\ne0\)，並自發破缺相關的整體相位對稱性。氦原子是中性的，因此這還不是規範場質量機制。
+
+在超導體中，電子會形成束縛較弱的庫珀對。對場概略地說是電子的雙線性組合，
+\begin{equation}
+  \Delta(x)\sim\langle\psi_\downarrow(x)\psi_\uparrow(x)\rangle,
+  \label{eq:l10-cooper-order-parameter}
+\end{equation}
+並帶有電荷\(2e\)。當\(\Delta\)凝聚時，電磁規範場的響應，正是規範場與帶電序參量耦合時所預期的響應。靜磁場會在倫敦穿透深度內衰減：
+\begin{equation}
+  B(x)\propto e^{-x/\lambda_L}.
+  \label{eq:l10-meissner-screening}
+\end{equation}
+穿透長度的倒數，在介質內部扮演有效光子質量的角色。這不是光子在真空中的質量，而是超導相的一種性質。
+
+\begin{classroomqa}
+\audiencequestion{庫珀對裡的兩個電子難道不是彼此分開，甚至位於費米面的兩側嗎？\lecturetimestamp{00:43:13}}
+\lecturerresponse{它們不是局域在一點上的微小分子。庫珀對具有延展性，自然應在動量空間中以相反動量附近的相關態來描述。然而，就對稱性論證而言，這一對電子表現為單一的帶電玻色序參量；關鍵在於它是否凝聚。}
+\end{classroomqa}
+
+從歷史來看，這種關聯不只是教學上的比喻。超導性以及安德森對對稱破缺相中規範場的分析，都有助於理解相對論性的希格斯機制。粒子物理中的這套構造是在相對論性場論中獨立發展出來的，但兩者確實共享同一套數學。
+
+\section{裸參數與測得的參數}
+
+休息之後，我們回到拉格朗日量。它含有稱為質量與電荷的參數，但這些輸入參數很少能不加限定地等同於測量所得的量。高頻模式會與低頻模式相互作用，並修飾後者。在不同解析度下定義的參數與觀測量之間，存在一套系統性的關係，這就是重整化。
+
+電荷提供了一個不必計算也能理解的圖像。在大間距下，庫侖定律定義了觀測到的電荷：
+\begin{equation}
+  V(r)\sim\frac{e_1e_2}{4\pi r},
+  \qquad
+  F(r)\sim\frac{e_1e_2}{4\pi r^2}.
+  \label{eq:l10-coulomb-law}
+\end{equation}
+講座省略了\(4\pi\)，並寫成\(e^2/r\)或\(e^2/r^2\)。關鍵是，從力的測量推得的係數，可能取決於探測系統時所採用的距離尺度。
+
+\subsection{導體：完全遮蔽}
+
+將一個正的試探電荷置於理想導體中。它產生的電場會驅使可移動的負電荷向它靠近，並使正電荷遠離。電流持續流動，直到源電荷周圍形成一團異號電荷雲；在電荷雲之外的導體內部不再有電場，而補償電荷則被推到遠處的邊界。若源電荷為負，電荷分布便會反向重排。如此一來，相距甚遠的兩個屏蔽後電荷幾乎不會互相施力，儘管微觀上放入的電荷並非零。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_07.png}
+\caption{導體的討論中，源電荷周圍被一團異號電荷雲遮蔽。}
+\lectureframe{00:50:24}
+\label{fig:l10-conductor-screening}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{這種電荷重排就是所謂的遮蔽嗎？\lecturetimestamp{00:51:25}}
+\lecturerresponse{是。在大於電荷雲尺度的距離上，放入的電荷會被遮蔽。若把另一個探針移到電荷雲內部，就會有部分遮蔽電荷不再位於源與探針之間；於是底層的源電荷看起來就更強。}
+\end{classroomqa}
+
+電荷雲的特徵尺度由可移動電荷的動力學與密度決定。當間距\(r\)小於這個尺度時，探針便會進入電荷雲。因此，可將跑動電荷\(e(r)\)定義為
+\begin{equation}
+  F(r)\equiv\frac{e^2(r)}{4\pi r^2}.
+  \label{eq:l10-running-charge-definition}
+\end{equation}
+對理想化的導體而言，\(e(r)\)在極長距離處趨近於零，在極短距離處則趨近微觀值。
+
+\subsection{電介質：部分遮蔽}
+
+在絕緣體中，電子束縛於原子內，不能自由穿過整個樣品。一個粗略但有用的模型，是把每個電子雲想像成以彈簧連接至其離子。沒有外場時，正、負電荷中心的平均位置重合。施加外場後，兩者會稍微分開，形成誘發偶極矩。
+
+在負源電荷周圍，附近的電子雲會向外偏移，使正離子稍微靠近源電荷；在正源電荷周圍，偏移方向則相反。束縛電荷無法移動得夠遠，因而不能完全中和源電荷；長距離處的電場只會被介電常數削弱，而不會完全消失：
+\begin{equation}
+  V_{\mathrm{medium}}(r)
+  =
+  \frac{1}{\epsilon_r}
+  \frac{e_1e_2}{4\pi\epsilon_0r}.
+  \label{eq:l10-dielectric-coulomb}
+\end{equation}
+在極化電荷雲內部，探針又能看到較多裸源電荷的作用。完全遮蔽與部分遮蔽，都是同一個尺度依賴概念的不同例子。
+
+\section{可極化介質般的 QED 真空}
+
+量子電動力學的真空中沒有物質原子，卻有帶電的量子場。電子與正電子的量子漲落會對光子傳播貢獻圈圖。在較早期的狄拉克海圖像中，電場會扭曲填滿的負能態；用現代語言來說，真空極化修飾了光子傳播子。介質圖像則是：虛粒子對受到極化，其中正、負分量分別向相反方向偏移。
+
+正源電荷周圍會有少量過剩的負極化電荷，負源電荷周圍則會有正極化電荷。因此，遠處測得的電荷會小於描述未解析源電荷的參數。與一般物質不同，真空中的漲落涵蓋連續的動量範圍。低能量粒子對對應較長距離的結構；高能量粒子對則探測較短距離。這個過程沒有一個最終的電荷雲半徑，到達那裡就會停止。
+
+兩個電子逐漸靠近時，最大的極化電荷雲會最先無法容納在它們之間。再靠近一些，更小的電荷雲也會依序被剝除。有效電耦合會隨距離倒數，也就是等價地隨能量，呈對數增長：
+\begin{equation}
+  \alpha(Q)
+  \simeq
+  \frac{\alpha(\mu)}
+  {1-\dfrac{2\alpha(\mu)}{3\pi}
+  \ln\!\left(\dfrac{Q}{\mu}\right)}
+  \label{eq:l10-qed-running}
+\end{equation}
+對單一帶電狄拉克費米子而言，在其閾值遠上方的領先階近似下，結果如此。跨越其他帶電粒子的閾值時，這些粒子也會加入跑動，並改變係數。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_08.png}
+\caption{QED 有效電荷會隨水平尺度\(1/R\)增大而緩慢上升；這也表示探測能量隨之提高。}
+\lectureframe{01:02:13}
+\label{fig:l10-qed-running-board}
+\end{figure}
+
+電子散射提供了實際的說明。較高的碰撞能量代表較短的德布羅意波長，以及較小的最近接距離。因此，計算振幅時必須採用適用於該動量轉移的耦合，而不能在所有尺度上都使用同一個固定值。
+
+\begin{classroomqa}
+\audiencequestion{跑動效應從多短的距離開始變得可測量？\lecturetimestamp{01:03:54}}
+\lecturerresponse{電子真空極化在電子康普頓尺度\(\lambda_C=\hbar/(m_ec)\)附近開始變得重要；對應的約化波長約為\(4\times10^{-11}\,\mathrm{cm}\)。這種效應很小，且只呈對數變化，因此需要高精度測量。更重的帶電粒子則會在各自的閾值處加入跑動。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{談論最短距離，是否預設我們已經知道那裡會發生什麼事？\lecturetimestamp{01:04:49}}
+\lecturerresponse{不。我們只在理論中的粒子內容與相互作用仍然有效時，才將理論外推。新物理可能改變耦合常數隨能標的演化。實驗並未告訴我們，QED 在任意短的距離下仍是完整的描述。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{膠子的能標依賴是否相反？為什麼？\lecturetimestamp{01:05:03}}
+\lecturerresponse{是的。夸克圈圖以類似帶電物質的方式遮蔽色荷，但膠子本身帶有色荷，且會發生非線性相互作用。膠子所貢獻的符號相反；對於觀測到的夸克味數，其效應占主導地位。結果便是反遮蔽與漸近自由。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{如果要確定裸電荷，就得考察無限小的距離，那麼要如何確定它？\lecturetimestamp{01:05:28}}
+\lecturerresponse{我們不會直接測量一個唯一且與正規化方案無關的裸電荷。可以在選定的短距離截斷尺度或重整化能標處定義一個參數，再調整它，使某個已測得的低能可觀測量維持不變。隨能標而變的重整化耦合才是有用的物理量。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{QED 的電荷在能量趨近無限大時，會趨近某個有限值嗎？\lecturetimestamp{01:05:39}}
+\lecturerresponse{若單獨將微擾 QED 外推，答案是否定的。其正的貝塔函數使耦合持續以對數方式增大，並在形式上導致一個位於極高能標的朗道極點。在把這個形式上的極點視為物理現象之前很久，我們就預期這套描述必須納入電弱理論，並最終受到更進一步物理的修正。}
+\end{classroomqa}
+
+\subsection{重整化改變什麼，又保留什麼}
+
+選定截斷長度 \(a\)，並將相應的輸入參數稱為 \(e(a)\)，然後計算一個固定的長距離可觀測量。另一個截斷長度 \(a'\)也同樣可行，只要將輸入參數改為 \(e(a')\)，便能重現同一個可觀測量：
+\begin{equation}
+  \frac{d}{d\ln\mu}\,\mathcal O_{\mathrm{physical}}=0,
+  \qquad
+  \mu\frac{de}{d\mu}=\beta(e).
+  \label{eq:l10-rg-invariance}
+\end{equation}
+這種補償性的變化，就是重整化群所描述的流動。
+
+\begin{classroomqa}
+\audiencequestion{「裸」這個詞一定特指普朗克長度嗎？\lecturetimestamp{01:06:20}}
+\lecturerresponse{不。可以在任意選定的截斷尺度終止這套描述，並將該處的參數稱為裸參數。只要適當調整參數，改變截斷尺度後，可觀測到的物理仍會保持不變。普朗克長度是普通量子場論可能必須被取代的尺度，但並非重整化必須採用的慣例。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這個程序是否就是放大觀察，同時讓描述變得不那麼細緻？\lecturetimestamp{01:07:15}}
+\lecturerresponse{從概念上說，這的確是在放大觀察。我們要問的是：更細緻的描述中，各參數必須如何改變，才能讓固定且實驗可及的波長下，預測仍維持不變。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{引力也會有同樣的耦合常數演化現象嗎？\lecturetimestamp{01:08:14}}
+\lecturerresponse{引力也具有能標依賴，但其機制並非簡單地等同於介電質遮蔽。就本講而言，只需作量綱估算：局域化會提高能量，而能量會產生引力，因此無量綱的引力強度會隨能量迅速增大。}
+\end{classroomqa}
+
+\section{QCD：反遮蔽、通量管與漸近自由}
+
+在強子尺度上，色電場線不像電磁庫侖場那樣向各個方向球對稱地散開。膠子的自相互作用會將它們擠壓成一條狹窄的管，連接夸克與反夸克。若此管的單位長度能量 \(\sigma\) 大致固定，則
+\begin{equation}
+  V_{q\bar q}(r)
+  \simeq
+  -\frac{C_F\alpha_s(r)}{r}
+  +\sigma r .
+  \label{eq:l10-cornell-potential}
+\end{equation}
+在 \(r\) 很大時，線性項占主導地位。拉開夸克與反夸克，便會產生更多通量管，就像拉長一條太妃糖；能量隨之增加，而非趨近於零。這就是禁閉現象的一面。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{圖中將色電場線畫成連接分離色荷源的通量管，而非自由散開的庫侖場。}
+\lectureframe{01:09:56}
+\label{fig:l10-qcd-flux-tube-board}
+\end{figure}
+
+在短於通量管半徑的距離上，位勢近似回復為庫侖形式，但其耦合會隨能量升高而減小。在一圈近似下，
+\begin{equation}
+  \alpha_s(Q)
+  =
+  \frac{4\pi}
+  {\left(11-\frac23n_f\right)
+  \ln(Q^2/\Lambda_{\mathrm{QCD}}^2)} .
+  \label{eq:l10-asymptotic-freedom}
+\end{equation}
+當 \(n_f<17\) 時，係數為正，且 \(Q\to\infty\) 時，\(\alpha_s(Q)\to0\)。QCD 在極短距離下耦合較弱，在長距離下則較強。這正是講座所述相反行為的精確版本，以耦合常數隨能標演化的方式呈現。
+
+\begin{classroomqa}
+\audiencequestion{QED 與 QCD 曲線之間的弱耦合會如何演化？\lecturetimestamp{01:11:53}}
+\lecturerresponse{它的演化介於兩者之間，且取決於追蹤的是哪個電弱規範因子。在電弱能標以上，適當的物理量是 \(U(1)_Y\) 與 \(SU(2)_L\) 耦合常數。一個隨能標升高而增大，另一個則緩慢減小。加上逐漸減小的強耦合，將這些耦合外推至高能量時，它們的數值會意外地接近。}
+\end{classroomqa}
+
+\section{邁向統一}
+
+在弱能標附近測量三個規範耦合常數，再依據某個候選理論的粒子內容推算它們隨能標的演化。每個貝塔函數都呈對數形式，因此能量即使大幅改變，耦合常數也只會適度變化。標準模型的演化軌跡彼此接近，但不會精確交會。若採用最小超對稱標準模型的低能粒子內容，一圈近似下的軌跡會在
+\begin{equation}
+  M_{\mathrm{GUT}}\sim10^{16}\,\mathrm{GeV}.
+  \label{eq:l10-gut-scale}
+\end{equation}
+附近更接近地交會。
+
+這張圖提供的是證據，而非證明。尚未發現的粒子所造成的閾值效應、更高圈修正，以及統一理論的細節，都會使曲線移動。2010講座強調超對稱粒子譜中約百分之一量級的會合，因為這使弱能標超對稱特別具有吸引力。如今，在對撞機能量範圍內仍未發現超伴子，表示當初預期的最簡單粒子譜並未實現；精確的統一程度仍取決於模型。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{黑板上的定性耦合常數圖：強耦合曲線逐漸下降，電弱耦合曲線緩慢演化並趨近於它，而引力耦合則在極高能區急遽上升。}
+\lectureframe{01:16:29}
+\label{fig:l10-unification-board}
+\end{figure}
+
+為什麼要把交會點附近視為基本？因為那裡的輸入參數可能變得最簡單。三個彼此無關的低能耦合常數，可能是同一個高能耦合常數經過不同修正後的結果，而那個高能耦合常數源自單一規範群。這就是先前 \(SU(5)\) 問題背後的數值線索。
+
+在同一張對數示意圖上，引力呈現為一條上升得快得多的曲線。它不會恰好在大統一理論（GUT）能標處與規範耦合曲線交會，但在能量僅相差幾個數量級時，其強度便會達到一的量級。在對數座標軸上，這樣的接近頗具啟發性：\(10^{16}\)、\(10^{17}\)、\(10^{18}\) 與 \(10^{19}\,\mathrm{GeV}\) 彼此之間的差距，遠小於它們各自與電弱能標的差距。
+
+\section{為什麼引力在短距離下會增強}
+
+\subsection{產生引力的是能量，而不只是靜止質量}
+
+兩個緩慢移動的質量之間，牛頓引力為
+\begin{equation}
+  F_G=\frac{Gm_1m_2}{r^2}.
+  \label{eq:l10-newton-force}
+\end{equation}
+要作相對論性的量綱估算，可將每個靜止質量換成相應能量除以 \(c^2\)：
+\begin{equation}
+  F_G(r)\sim\frac{GE_1E_2}{c^4r^2}.
+  \label{eq:l10-relativistic-gravity-force}
+\end{equation}
+這不能取代廣義相對論；應力、動量流與壓力也都是引力源。對於眼前的問題，這是正確的尺度估算。
+
+將每個粒子局域在大小為 \(r\) 的區域內。不確定性原理要求
+\begin{equation}
+  p\sim\frac{\hbar}{r}.
+  \label{eq:l10-localization-momentum}
+\end{equation}
+當 \(r\) 足夠小時，動量便處於超相對論性範圍，因此
+\begin{equation}
+  E\simeq pc\sim\frac{\hbar c}{r}.
+  \label{eq:l10-localization-energy}
+\end{equation}
+將這兩個粒子的能量代入
+\eqref{eq:l10-relativistic-gravity-force}，可得
+\begin{equation}
+  F_G(r)
+  \sim
+  \frac{G\hbar^2}{c^2r^4}.
+  \label{eq:l10-short-distance-gravity-force}
+\end{equation}
+相應的位能尺度為
+\begin{equation}
+  U_G(r)\sim-\frac{G\hbar^2}{c^2r^3}.
+  \label{eq:l10-short-distance-gravity-potential}
+\end{equation}
+這裡要區分的是現場計算中修正的兩個量：位能按 \(1/r^3\) 的比例變化，而力則按 \(1/r^4\) 的比例變化。
+
+\begin{classroomqa}
+\audiencequestion{超相對論性粒子的能量是 \(p^2/(2m)\) 嗎？\lecturetimestamp{01:22:18}}
+\lecturerresponse{不是。那是非相對論公式。由 \(E^2=p^2c^2+m^2c^4\) 可知，在 \(pc\gg mc^2\) 的極限下，
+\(E\simeq pc\)。再結合 \(p\sim\hbar/r\)，局域化所需的能量為 \(\hbar c/r\)。}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_11.png}
+\caption{黑板上的推導將相對論性能量代入牛頓定律，同時檢查 \(c\) 與 \(r\) 的次方。}
+\lectureframe{01:23:29}
+\label{fig:l10-gravity-derivation-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(c\) 的因子是否抵消了？所說的 \(1/r^3\) 定律是力定律嗎？\lecturetimestamp{01:23:38}}
+\lecturerresponse{黑板上的計算當場得到修正。兩個有效質量合起來貢獻 \(E_1E_2/c^4\)；由於 \(E_i\sim\hbar c/r\)，分母中仍有兩個 \(c\) 因子。所得的力為 \(G\hbar^2/(c^2r^4)\)。\(1/r^3\) 所表示的則是位能。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這裡討論的引力是吸引力，對嗎？\lecturetimestamp{01:24:42}}
+\lecturerresponse{是的。上面的方程式表示的是力的大小。對正能量而言，牛頓引力位能帶有負號，因此在這項估算中，引力是吸引力。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{引力的相對強度是否因局域化提高了能量而增大，而電荷本身並不會獲得相同的運動學因子？\lecturetimestamp{01:25:02}}
+\lecturerresponse{正是如此。能量就是引力荷。壓縮量子態會提高其動量與能量，也就提高了引力源的強度。電荷是無量綱量，不會直接獲得 \(1/r\) 因子；它只會受到變化緩慢得多的對數重整化影響。}
+\end{classroomqa}
+
+\subsection{普朗克尺度的交會}
+
+在自然單位制下，量級為一的電荷之間，電磁力的大小為
+\begin{equation}
+  F_{\mathrm{EM}}(r)
+  \sim
+  \alpha\,\frac{\hbar c}{r^2}.
+  \label{eq:l10-em-force-alpha}
+\end{equation}
+令它等於 \eqref{eq:l10-short-distance-gravity-force}，可得
+\begin{equation}
+  r^2\sim\frac{G\hbar}{\alpha c^3}.
+  \label{eq:l10-gravity-em-crossing}
+\end{equation}
+講座中將無量綱規範耦合因子取為一的量級，以顯示基本的引力長度：
+\begin{equation}
+  \boxed{\ell_P=\sqrt{\frac{\hbar G}{c^3}}}
+  \simeq1.616\times10^{-35}\,\mathrm{m}.
+  \label{eq:l10-planck-length}
+\end{equation}
+若保留實際的 \(\alpha\)，引力與電磁力相等的位置會移動一個量級為一的對數尺度因子，即 \(r\sim\ell_P/\sqrt\alpha\)。用自然單位制表示，基本結論更為簡潔：
+\begin{equation}
+\begin{aligned}
+  \alpha_G(E)
+  &\equiv\frac{GE^2}{\hbar c^5}
+  =\left(\frac{E}{E_P}\right)^2,
+  \\
+  E_P
+  &=\sqrt{\frac{\hbar c^5}{G}}
+  \simeq1.22\times10^{19}\,\mathrm{GeV}.
+\end{aligned}
+  \label{eq:l10-gravitational-coupling}
+\end{equation}
+當 \(E\) 接近 \(E_P\) 時，引力便會變強。
+
+\begin{classroomqa}
+\audiencequestion{比較時設為一的是 \(G\)，還是電耦合？\lecturetimestamp{01:27:02}}
+\lecturerresponse{粗略估算中，電耦合被視為量級為一的數。牛頓常數則必須保留，因為它是決定普朗克尺度的有量綱量。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(r\)、\(\hbar\) 與 \(c\) 的中間次方在量綱上似乎不一致。修正後的計算為何？\lecturetimestamp{01:27:47}}
+\lecturerresponse{從一開始就使用能量。局域化給出 \(E\sim\hbar c/r\)，因此 \(U_G\sim GE^2/(c^4r)=G\hbar^2/(c^2r^3)\)。將它與 \(U_{\mathrm{EM}}\sim\alpha\hbar c/r\) 比較。令 \(\alpha\) 為一的量級，可得 \(r^2=G\hbar/c^3\)。課堂上的推導與黑板計算最後得到 \(r=\sqrt{G\hbar/c^3}\)，也就是普朗克長度。}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_12.png}
+\caption{現場量綱檢查修正後的結果：\(r=\sqrt{\hbar G/c^3}\)。}
+\lectureframe{01:32:16}
+\label{fig:l10-planck-length-board}
+\end{figure}
+
+\section{等級問題再現}
+
+規範耦合常數在極高能標附近變得相近，而引力則在普朗克能標附近變強。這些巨大的能標如今看來不只是任意的大數，也可能是微觀描述變得更簡單之處。相較之下，電弱真空期望值 \(F\) 異常地小：
+\begin{equation}
+  \frac{v}{E_P}\sim2\times10^{-17}
+  \label{eq:l10-electroweak-planck-ratio}
+\end{equation}
+以 \(c=1\) 為單位。若改用大統一能標而非普朗克能標，精確比值會有所不同，但這個謎題依然存在。
+
+一旦 \(F\) 很小，\(W\)、\(Z\)、帶電輕子與夸克的質量也隨之變小，因為規範對稱性使這些質量正比於它。沒有這種保護的粒子則可以保持很重。因此，關鍵問題並非為什麼每個已知粒子的質量都各自很小，而是為什麼希格斯部門提供了這個微小的對稱性破缺能標。
+
+\begin{classroomqa}
+\audiencequestion{如果能計算出 \(F\)，其他所有質量是否也就都能計算？\lecturetimestamp{01:34:39}}
+\lecturerresponse{這會確定整體的電弱能標；若再給定規範耦合與湯川耦合，也就能確定相應的粒子質量。剩下的問題是，普通的紫外敏感計算往往會將希格斯質量參數推向高能的基本尺度，除非有對稱性或動力學機制加以保護。}
+\end{classroomqa}
+
+「精細調整」一詞點出了這種敏感性。在截斷描述中，標量質量參數會受到大致如下的修正：
+\begin{equation}
+  \delta\mu^2
+  \sim
+  \frac{C}{16\pi^2}\Lambda^2,
+  \label{eq:l10-higgs-quadratic-sensitivity}
+\end{equation}
+其中 \(C\) 代表規範、湯川與標量耦合的組合，而 \(\Lambda\) 表示有效理論被取代的能標。若 \(\Lambda\) 接近大統一能標或普朗克能標，要得到 \(\mu^2\sim v^2\)，似乎就必須使輸入項與輻射修正彼此極為精確地抵消。這就是規範階層問題以自然性角度呈現的形式。這段內容是編者補足講座所承諾在下一學季進行的計算，並不表示某種特定正規化所造成的人為產物本身是可觀測量。
+
+\begin{classroomqa}
+\audiencequestion{是否該把普朗克長度想像成最終的遮蔽雲半徑？\lecturetimestamp{01:35:03}}
+\lecturerresponse{不。介電質的圖像說明的是規範荷的重整化；普朗克尺度的論證則用到局域化能量與有量綱的引力耦合。在這項推導中，並不存在字面意義上的引力遮蔽雲。}
+\end{classroomqa}
+
+\subsection{關於相互作用的最後幾個問題}
+
+最後幾分鐘回到希格斯位能，以及拉格朗日量可以包含哪些項。
+
+\begin{classroomqa}
+\audiencequestion{希格斯位能能否包含 \(\phi^6\)，而仍保有對稱性？\lecturetimestamp{01:35:20}}
+\lecturerresponse{可以。偶次冪會保留玩具模型的 \(\phi\mapsto-\phi\) 對稱性，而 \(\phi^5\) 則會破壞對稱性。在四維時空中，\(\phi^6\) 的係數具有負的質量量綱，因此這一項會受到高能標壓抑，例如 \(c_6\phi^6/\Lambda^2\)。它是有效相互作用，雖然不具冪次計數可重整性。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{希格斯場的各次方是否代表產生與湮滅過程，因此 \(\phi^4\) 會預測希格斯粒子彼此散射？\lecturetimestamp{01:35:52}}
+\lecturerresponse{是的。在真空附近展開後，量子化場的各次方會產生交互作用頂點。四次項包含一個四希格斯頂點，平移後的位能也會產生三次交互作用。知道這些頂點的係數，就能預測諸如 \(hh\to hh\) 的過程，但仍須進行通常的費曼圖計算。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{基本拉格朗日量是否必須是場的多項式，而且最高只能到四次？\lecturetimestamp{01:36:09}}
+\lecturerresponse{對於可用微擾論重整化的四維純量場論，傳統上只考慮量綱不超過四的有限組算符。現代有效場論的限制較少：它允許更高量綱的算符來表徵短距離物理，但這些算符的效應會受到高能標的次方抑制。因此，舊規則所容許的少數例外至關重要。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{討論耦合常數的演化時，是否省略了自相互作用項？\lecturetimestamp{01:36:44}}
+\lecturerresponse{概念上已經把它們納入。膠子的自相互作用正是使貝塔函數符號相對於 QED 反轉，並產生反遮蔽的關鍵。希格斯自相互作用也會影響純量耦合及其他標準模型參數的演化。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{不同相互作用之間是否存在交叉項，使它們彼此影響對方的耦合演化？\lecturetimestamp{01:37:23}}
+\lecturerresponse{有。在更高圈階的貝塔函數中，會出現規範、湯川與純量耦合的混合乘積。只要這些無量綱耦合夠小，微擾論就仍然有用，因為後續各圈階的貢獻會依序受到抑制。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{說 \(F\) 經過精細調整，究竟是什麼意思？\lecturetimestamp{01:37:44}}
+\lecturerresponse{完整答案留待講座後續說明。問題在於，輕標量的能標會受到大得多的紫外貢獻影響而變得不穩定，這可由 \eqref{eq:l10-higgs-quadratic-sensitivity} 概括。超對稱是曾經提出的一種強制產生抵消的方式，但階層問題本身並未指向任何已獲證實的解決方案。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{現在能解釋重整化群本身嗎？\lecturetimestamp{01:37:56}}
+\lecturerresponse{剩下的幾分鐘不夠說明。重整化群的實際意義已經出現過：改變解析度，讓耦合常數隨之演化，同時維持固定的物理預測。完整討論要留到課程下一階段。}
+\end{classroomqa}
+
+這一系列講座就適合在此告一段落。希格斯機制使標準模型在理論內部保持一致：它保留手徵規範對稱性，賦予弱規範玻色子與費米子質量，並預測可觀測的希格斯相互作用。接著，重整化告訴我們這些相互作用如何隨能標改變，也暗示規範力可能源自同一個統一理論。透過另一套獨立論證，引力則帶來第二個高能標。然而，這些成功都沒有解釋，為什麼希格斯真空期望值遠低於這兩個能標。因此，最後一講並未為這個主題畫下句點，而是指出下一個主題必須聚焦探討的那個小數值。
