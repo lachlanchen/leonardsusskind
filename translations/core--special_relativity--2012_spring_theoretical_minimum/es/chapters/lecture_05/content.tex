@@ -1,0 +1,651 @@
+\chapter{Partículas, campos y notación relativista}
+
+\section{Un problema de corrimiento Doppler antes de la clase}
+
+La discusión comienza con una pregunta pendiente de la semana anterior. ¿Mide siempre una longitud de onda mayor un observador que se mueve casi a la velocidad de la luz? No: la respuesta depende de la dirección del movimiento. Un observador que se mueve en el mismo sentido que la onda luminosa ve que su longitud de onda aumenta, mientras que uno que se mueve en sentido contrario ve que disminuye. Este es el efecto Doppler relativista.
+
+\begin{classroomqa}\audiencequestion{¿El movimiento a una velocidad cercana a la de la luz hace que la longitud de onda observada sea mayor?}\lecturerresponse{Solo cuando el observador se mueve en el mismo sentido que la luz. Invertir la velocidad del observador invierte el corrimiento. El resultado se obtiene directamente de la geometría de Lorentz, sin memorizar una fórmula aparte. \lecturetimestamp{00:00:13}}\end{classroomqa}
+
+Usaremos unidades en las que \(c=1\), y supondremos que el sistema de referencia primado se mueve hacia la derecha con velocidad \(v\). Una cresta luminosa que avanza hacia la derecha sigue una línea nula. Normalicemos a uno la longitud de onda en el sistema sin primas y escribamos las líneas de universo de dos crestas sucesivas como \begin{equation}
+x=t,
+\qquad
+x=t+1.
+\label{eq:sr5-crest-lines}
+\end{equation}La longitud de onda en el sistema sin primas se mide entre las crestas a igual \(t\). En el sistema primado, en cambio, debe medirse entre ellas a igual \(t'\). Por tanto, todo el cálculo se reduce a la relatividad de la simultaneidad.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_01.png}\caption{Crestas sucesivas de la onda que avanzan hacia la derecha, cono de luz y ejes inclinados del sistema móvil.}\lectureframe{00:03:30}\end{figure}
+
+En este punto, la derivación se interrumpe para hablar brevemente de la secuencia del curso. No habrá curso de verano. La relatividad general y una revisión más amplia de la mecánica cuántica son dos opciones para el próximo curso; se destaca que el oscilador armónico es un tema que conviene comprender antes de estudiar teoría cuántica de campos.
+
+\begin{classroomqa}\audiencequestion{¿Podría un curso futuro tratar la conexión entre el infrarrojo--y el ultravioleta?}\lecturerresponse{Esa pregunta corresponde al encuentro entre la mecánica cuántica y la gravedad. La clase sabe suficiente mecánica cuántica para reconocer el problema, pero primero debe desarrollar la gravedad, de la manera más natural, mediante la relatividad general. \lecturetimestamp{00:05:37}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Se puede deducir sin más del dibujo en la pizarra la escala relativa de los ejes inclinados?}\lecturerresponse{No. Un diagrama espaciotemporal representa la geometría causal y la de la simultaneidad, pero una regla euclídea ordinaria aplicada al dibujo no constituye una medición de Lorentz. Hay que localizar los sucesos pertinentes y aplicar la transformación de Lorentz. \lecturetimestamp{00:06:10}}\end{classroomqa}
+
+Ahora se retoma el cálculo. Normalicemos a uno la separación entre las crestas en el sistema sin primas y localicemos algebraicamente los dos sucesos simultáneos en el sistema primado.
+
+La transformación de Lorentz es \begin{equation}
+t'=\gamma(t-vx),
+\qquad
+x'=\gamma(x-vt),
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr5-lorentz-doppler}
+\end{equation}Elijamos la hipersuperficie de simultaneidad primada \(t'=0\). La ecuación \eqref{eq:sr5-lorentz-doppler} da entonces \begin{equation}
+t=vx.
+\label{eq:sr5-primed-simultaneity}
+\end{equation}La primera cresta corta esta hipersuperficie en el origen. La segunda cresta satisface \(x=t+1\), por lo que su intersección cumple \begin{align}
+x&=vx+1,\\
+x&=\frac{1}{1-v},
+\qquad
+t=\frac{v}{1-v}.
+\end{align}Su coordenada primada es \begin{align}
+x'
+&=\frac{x-vt}{\sqrt{1-v^2}}\\
+&=\frac{1-v^2}{(1-v)\sqrt{1-v^2}}\\
+&=\sqrt{\frac{1+v}{1-v}}.
+\end{align}Como la longitud de onda original era uno, \begin{equation}
+\boxed{
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{1+\beta}{1-\beta}}
+},
+\qquad
+\beta=\frac{v}{c}.
+\label{eq:sr5-doppler}
+\end{equation}Equivalentemente, \begin{equation}
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{c+v}{c-v}}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_02.png}\caption{El factor Doppler al restablecer \(c\); invertir \(v\) da el corrimiento recíproco.}\lectureframe{00:13:40}\end{figure}
+
+Para \(v>0\), el observador primado persigue la luz y mide una longitud de onda mayor. Sustituir \(v\) por \(-v\) describe un movimiento en sentido contrario a la luz y hace que el factor sea menor que uno. Si un observador pudiera acercarse a \(c\) mientras persigue el rayo, la longitud de onda divergiría. El corrimiento de frecuencia es la razón inversa.
+
+\section{Por qué la interacción debe aparecer en una acción común}
+
+Tras las preguntas preliminares, el tema pasa a ser los campos y las partículas. En teoría cuántica de campos, las partículas y los campos acabarán siendo dos descripciones de las mismas excitaciones. Ese no es el marco que usaremos aquí. Aquí las partículas siguen líneas de universo y los campos clásicos ocupan el espacio-tiempo. La pregunta inmediata es más modesta: si un campo actúa sobre una partícula, ¿cómo actúa la partícula a su vez sobre el campo?
+
+El principio de acción responde a esta pregunta mediante un modelo prototípico de dimensión finita. Sean \(x(t)\) y \(y(t)\) dos coordenadas generalizadas. Si el lagrangiano se separa, \begin{equation}
+L(x,\dot x,y,\dot y)
+=
+L_x(x,\dot x)+L_y(y,\dot y),
+\label{eq:sr5-separable-l}
+\end{equation}, las dos ecuaciones de Euler--Lagrange son independientes: \begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x}
+=
+\frac{\partial L}{\partial x},
+\qquad
+\frac{d}{dt}\frac{\partial L}{\partial\dot y}
+=
+\frac{\partial L}{\partial y}.
+\end{equation}La ecuación para \(x\) no contiene \(y\), y la ecuación para \(y\) no contiene \(x\).
+
+Para que las variables interactúen, añadamos un término que no pueda separarse en una parte que dependa de \(x\) y otra que dependa de \(y\). Un ejemplo sencillo es \begin{equation}
+L
+=
+\frac{\dot x^2}{2}
++\frac{\dot y^2}{2}
+-V(x)-W(y)+\kappa xy.
+\label{eq:sr5-coupled-coordinates}
+\end{equation}Al variar \(x\) se obtiene ahora un término proporcional a \(y\), mientras que al variar \(y\) se obtiene uno proporcional a \(x\). El mismo término mixto rige ambas direcciones de influencia.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_03.png}\caption{Dos coordenadas generalizadas quedan acopladas dinámicamente cuando un término del lagrangiano depende de ambas.}\lectureframe{00:19:00}\end{figure}
+
+Este es el contexto preciso de la afirmación de acción--reacción que usamos aquí: ambos objetos son dinámicos y ambos se varían en una misma acción común. Tratar un campo como un fondo prescrito externamente puede ocultar su respuesta, pero cuando el propio campo es dinámico, el término de acoplamiento aporta las dos ecuaciones.
+
+\section{Cómo actúa un campo escalar sobre una partícula}
+
+\subsection{El acoplamiento relativista}
+
+Empecemos tratando el campo escalar \(\phi(\mathbf{x},t)\) como conocido. Puede ser una onda o un perfil estático; por ahora, su propia ecuación no importa. La acción de una partícula relativista libre es \begin{equation}
+S_{\mathrm p}
+=
+-m\int d\tau.
+\end{equation}Para el movimiento en una recta y con \(c=1\), \begin{equation}
+L_{\mathrm p}^{(0)}
+=
+-m\sqrt{1-\dot x^2}.
+\end{equation}El acoplamiento escalar más sencillo reemplaza el coeficiente de masa por otro que depende del campo: \begin{equation}
+\boxed{
+L_{\mathrm p}
+=
+-\bigl[m+g\phi(x,t)\bigr]\sqrt{1-\dot x^2}
+}.
+\label{eq:sr5-particle-coupling}
+\end{equation}La constante de acoplamiento \(g\) mide la intensidad con que el campo afecta a esta partícula. Su signo es una convención: cambiar \(g\) por \(-g\) invierte el sentido de la fuerza escalar.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_04.png}\caption{La acción de la partícula libre con \(m\) sustituida por el coeficiente local \(m+g\phi(x,t)\).}\lectureframe{00:24:10}\end{figure}
+
+\subsection{El límite de partícula lenta}
+
+Restablezcamos la velocidad de la luz para que el límite newtoniano sea manifiesto: \begin{equation}
+L_{\mathrm p}
+=
+-\bigl[mc^2+g\phi(x,t)\bigr]
+\sqrt{1-\frac{\dot x^2}{c^2}}.
+\label{eq:sr5-particle-coupling-c}
+\end{equation}Para \(|\dot x|\ll c\), \begin{equation}
+\sqrt{1-\frac{\dot x^2}{c^2}}
+=
+1-\frac{\dot x^2}{2c^2}
++O\!\left(\frac{\dot x^4}{c^4}\right).
+\end{equation}Al sustituir en \eqref{eq:sr5-particle-coupling-c} se obtiene \begin{align}
+L_{\mathrm p}
+&=
+-mc^2-g\phi
++\frac{m\dot x^2}{2}
++\frac{g\phi\,\dot x^2}{2c^2}
++O(c^{-4})\\
+&\longrightarrow
+\frac{m\dot x^2}{2}-g\phi(x,t),
+\label{eq:sr5-nr-particle}
+\end{align}, tras descartar la constante \(-mc^2\) y los términos suprimidos por \(c^{-2}\). El resultado tiene la forma habitual \(T-V\), de modo que \begin{equation}
+V_{\mathrm p}(x,t)=g\phi(x,t).
+\label{eq:sr5-scalar-potential}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_05.png}\caption{La expansión de la raíz cuadrada deja el término cinético newtoniano y la energía potencial escalar \(g\phi\).}\lectureframe{00:28:50}\end{figure}
+
+La gran constante de energía en reposo no interviene en la ecuación de Euler--Lagrange. Sí interviene el término dependiente del campo. En electromagnetismo, la carga eléctrica desempeña un papel análogo como intensidad de acoplamiento, aunque la interacción electromagnética propiamente dicha utiliza un potencial de cuatro componentes, en lugar de este modelo escalar.
+
+\section{Cómo actúa la partícula a su vez sobre el campo}
+
+\subsection{Un único problema variacional}
+
+El campo ya no puede seguir siendo una mera función prescrita. Consideremos una región del espacio-tiempo que contiene tanto una configuración de campo como una línea de universo de una partícula. La solución física hace estacionaria la acción total frente a variaciones de ambas: \begin{equation}
+\delta S[\phi,x]=0.
+\end{equation}Variar la línea de universo manteniendo fijo el campo da la ecuación de la partícula. Variar el campo manteniendo fija la línea de universo da la ecuación del campo. El término de interacción común es lo que las vincula.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_06.png}\caption{Una línea de universo de una partícula que atraviesa una región del espacio-tiempo ocupada por un campo escalar.}\lectureframe{00:30:30}\end{figure}
+
+Para el campo escalar libre sin masa, tomemos \begin{equation}
+S_{\mathrm f}
+=
+\int d^4x\,
+\frac12
+\left[
+(\partial_t\phi)^2
+-(\partial_x\phi)^2
+-(\partial_y\phi)^2
+-(\partial_z\phi)^2
+\right].
+\label{eq:sr5-free-field-action}
+\end{equation}De aquí en adelante, volvamos a usar \(c=1\). Con unidades explícitas, el término temporal llevaría el factor correspondiente \(1/c^2\), según la normalización de las coordenadas y del campo.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_07.png}\caption{La acción del campo integrada sobre la misma región del espacio-tiempo que contiene la línea de universo de la partícula.}\lectureframe{00:32:10}\end{figure}
+
+\subsection{Una partícula estática y una integral sobre la línea de universo}
+
+Para poner de manifiesto la fuente con el mínimo de álgebra, situemos la partícula en reposo en el origen. El factor \(d\tau\) es entonces igual a \(dt\), y la parte de interacción de \eqref{eq:sr5-particle-coupling} queda \begin{equation}
+S_{\mathrm{int}}
+=
+-g\int dt\,\phi(\mathbf{0},t).
+\label{eq:sr5-worldline-interaction}
+\end{equation}Esta integral recorre únicamente la línea de universo, mientras que \eqref{eq:sr5-free-field-action} es una integral sobre todo el espacio-tiempo. Para combinar ambas en una sola integral espaciotemporal, necesitamos una función que seleccione la posición de la partícula.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_08.png}\caption{La línea de universo estática dentro de la región del campo y la acción del campo que hay que combinar con ella.}\lectureframe{00:35:35}\end{figure}
+
+\subsection{La función delta de Dirac}
+
+La función delta unidimensional se define mediante \begin{equation}
+\int_{-\infty}^{\infty}dx\,f(x)\delta(x-a)=f(a).
+\label{eq:sr5-delta-definition}
+\end{equation}Se anula fuera de \(x=a\), es singular en \(x=a\) y su integral vale uno. Conviene entenderla como una distribución caracterizada por \eqref{eq:sr5-delta-definition}, y no como una función ordinaria de valores finitos.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_09.png}\caption{La identidad de la delta que reescribe el valor del campo en el origen como una integral espacial.}\lectureframe{00:36:45}\end{figure}
+
+En tres dimensiones, \begin{equation}
+\delta^3(\mathbf{x})
+=
+\delta(x)\delta(y)\delta(z),
+\end{equation}y, por tanto, \begin{align}
+\int d^3x\,
+\phi(\mathbf{x},t)\delta^3(\mathbf{x})
+&=
+\int dx\,dy\,dz\,
+\phi(x,y,z,t)\\
+&\quad\times\delta(x)\delta(y)\delta(z)\\
+&=\phi(\mathbf{0},t).
+\label{eq:sr5-triple-delta}
+\end{align}
+
+\begin{classroomqa}\audiencequestion{¿De dónde sale \(d^3x\)?}\lecturerresponse{Es el elemento de volumen espacial ordinario \(dx\,dy\,dz\). En una dimensión espacial, la misma identidad solo contiene \(dx\) y una función delta. \lecturetimestamp{00:37:09}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_10.png}\caption{La delta tridimensional expresada como producto de tres factores unidimensionales.}\lectureframe{00:39:05}\end{figure}
+
+La ecuación \eqref{eq:sr5-worldline-interaction} puede escribirse ahora como \begin{equation}
+S_{\mathrm{int}}
+=
+-g\int d^4x\,
+\delta^3(\mathbf{x})\phi(\mathbf{x},t).
+\end{equation}La acción completa de la fuente estática es \begin{align}
+S
+=
+\int d^4x
+\biggl\{
+&\frac12(\partial_t\phi)^2
+-\frac12|\boldsymbol{\nabla}\phi|^2
+\nonumber\\
+&-g\delta^3(\mathbf{x})\phi
+\biggr\}.
+\label{eq:sr5-combined-action}
+\end{align}
+
+\begin{classroomqa}\audiencequestion{¿Se perdió un signo menos al incorporar la interacción a la acción espaciotemporal?}\lecturerresponse{El lagrangiano de la línea de universo contiene \(-g\phi\), así que la densidad espaciotemporal debe contener \(-g\delta^3(\mathbf{x})\phi\). Conservar ese signo fija el término fuente en la ecuación del campo. \lecturetimestamp{00:41:24}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_11.png}\caption{La densidad escalar libre y la interacción localizada, reunidas en una sola acción espaciotemporal.}\lectureframe{00:42:05}\end{figure}
+
+\subsection{La ecuación del campo con fuente}
+
+Variar \eqref{eq:sr5-combined-action} con respecto a \(\phi\) da \begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi
+=
+-g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-sourced-wave}
+\end{equation}Fuera del origen, esta es la ecuación de onda libre. En el origen, la función delta señala la partícula como una fuente localizada.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_12.png}\caption{El operador de onda impulsado por una fuente puntual en el origen.}\lectureframe{00:45:35}\end{figure}
+
+Para una solución estática, \(\partial_t\phi=0\), de modo que \begin{equation}
+\boxed{
+\nabla^2\phi
+=
+g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-poisson}
+\end{equation}Esta es la ecuación de Poisson para una fuente puntual. La analogía es electrostática, pero aún no electromagnética: el campo sigue siendo el escalar \(\phi\), no el potencial electromagnético de cuatro componentes.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_13.png}\caption{El límite estático de la ecuación de onda con fuente, identificado como la ecuación de Poisson.}\lectureframe{00:47:05}\end{figure}
+
+La reciprocidad queda ahora explícita. El término \(g\phi\) proporciona a la partícula una energía potencial, y ese mismo \(g\) hace de la partícula una fuente para \(\phi\). No son dos supuestos independientes.
+
+\subsection{Las fuentes en movimiento irradian}
+
+Una partícula fija en \(\mathbf{a}\) se representa mediante \(\delta^3(\mathbf{x}-\mathbf{a})\). Si su posición cambia con el tiempo, la fuente pasa a ser \begin{equation}
+\delta^3\!\left(\mathbf{x}-\mathbf{a}(t)\right).
+\label{eq:sr5-moving-delta}
+\end{equation}Un miembro derecho dependiente del tiempo no puede equilibrarse con un campo independiente del tiempo. Debe reaparecer el término \(\partial_t^2\phi\), y una fuente acelerada u oscilante puede lanzar ondas al campo.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_14.png}\caption{Una fuente delta desplazada a \(\mathbf{a}(t)\), que hace que la ecuación del campo dependa del tiempo.}\lectureframe{00:50:30}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Si se trata la fuente de manera no relativista, ¿dónde está la relatividad en la ecuación del campo?}\lecturerresponse{La propagación relativista está codificada en el operador de onda espaciotemporal del miembro izquierdo. Un tratamiento plenamente relativista de la partícula conservaría su acción en tiempo propio y los factores de velocidad. Incluso una fuente lenta, pero dependiente del tiempo, puede impulsar ondas. \lecturetimestamp{00:52:14}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Qué unidades debe tener \(g\phi\)?}\lecturerresponse{Aparece junto a \(mc^2\) en la acción de la partícula, así que tiene unidades de energía. En la normalización de unidades naturales que usamos aquí, un escalar en \(3+1\) dimensiones tiene dimensión de masa uno y \(g\) puede ser adimensional. Las dimensiones cambian con la dimensión del espacio-tiempo y con la normalización del campo. \lecturetimestamp{00:52:55}}\end{classroomqa}
+
+\section{Cuadrivectores, escalares y la métrica}
+
+Las ecuaciones por componentes ya son lo bastante largas como para justificar una notación mejor. Escribamos las coordenadas espaciotemporales como \begin{equation}
+x^\mu=(x^0,x^1,x^2,x^3)=(t,x,y,z),
+\label{eq:sr5-four-coordinate}
+\end{equation}donde los índices griegos recorren las cuatro componentes. Una lista de cuatro componentes no es automáticamente un cuadrivector. Solo lo es si sus componentes se transforman bajo transformaciones de Lorentz como lo hace \(x^\mu\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_15.png}\caption{Las cuatro coordenadas espaciotemporales reunidas en \(x^\mu\).}\lectureframe{00:55:00}\end{figure}
+
+La afirmación de que las tres componentes espaciales se anulan puede ser válida en un sistema de referencia y no en otro. En cambio, si se anulan las cuatro componentes, todos los observadores de Lorentz coinciden en que el vector es nulo. Las diferencias como \(dx^\mu\) también son cuadrivectores.
+
+El intervalo invariante de tiempo propio es \begin{equation}
+d\tau^2
+=
+dt^2-dx^2-dy^2-dz^2.
+\label{eq:sr5-proper-time}
+\end{equation}Tiene un único valor, no cuatro componentes dependientes del sistema de referencia, así que es un escalar.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_16.png}\caption{El cuadridesplazamiento y el intervalo invariante de tiempo propio.}\lectureframe{00:57:25}\end{figure}
+
+\subsection{La métrica de Minkowski}
+
+Adoptemos la convención de signos con mayoría positiva: \begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr5-metric}
+\end{equation}La convención alternativa, con mayoría negativa, es igualmente válida, pero todas las ecuaciones deben emplear una sola convención de manera coherente. Con \eqref{eq:sr5-metric}, \begin{equation}
+dx^\mu dx_\mu
+=
+-dt^2+dx^2+dy^2+dz^2
+=
+-d\tau^2.
+\end{equation}El signo global no altera la invariancia.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_17.png}\caption{La métrica de Minkowski con mayoría positiva, escrita como matriz diagonal.}\lectureframe{01:00:30}\end{figure}
+
+La métrica baja un índice: \begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\label{eq:sr5-lower-index}
+\end{equation}Para esta métrica cartesiana, \begin{equation}
+A^\mu=(A^0,A^1,A^2,A^3),
+\qquad
+A_\mu=(-A^0,A^1,A^2,A^3).
+\label{eq:sr5-upper-lower-components}
+\end{equation}La misma métrica, aplicada de nuevo, sube el índice porque \(\eta^{\mu\rho}\eta_{\rho\nu}=\delta^\mu{}_\nu\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_18.png}\caption{Descenso de un índice mediante la multiplicación matricial por \(\eta_{\mu\nu}\).}\lectureframe{01:03:00}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿La multiplicación matricial ordinaria incluye realmente una suma aquí?}\lecturerresponse{Sí. Cada componente de salida es el producto de una fila de \(\eta\) por el vector completo: una suma sobre el índice de columna. La métrica diagonal hace que el cálculo parezca trivial, pero con una matriz general la suma queda explícita. \lecturetimestamp{01:04:56}}\end{classroomqa}
+
+\subsection{Suma de Einstein e índices libres}
+
+La convención de Einstein omite el símbolo de suma cuando un índice aparece repetido una vez arriba y otra abajo: \begin{equation}
+\eta_{\mu\nu}A^\nu
+\equiv
+\sum_{\nu=0}^{3}\eta_{\mu\nu}A^\nu.
+\end{equation}Aquí \(\nu\) es un índice mudo: se suma y desaparece, y se le puede cambiar el nombre. El índice \(\mu\) es libre y etiqueta las cuatro componentes del resultado. Por lo general, un índice no debería aparecer más de dos veces en un mismo monomio.
+
+Los nombres tradicionales son \emph{contravariante} para un índice superior y \emph{covariante} para uno inferior. En la clase se prefiere deliberadamente el lenguaje más sencillo \emph{superior} e \emph{inferior}, pero ambas terminologías se refieren a las mismas leyes de transformación.
+
+\section{Contracciones y derivadas de un escalar}
+
+\subsection{El producto interno de Minkowski}
+
+La contracción de un vector con su forma de índice bajado da \begin{equation}
+A^\mu A_\mu
+=
+\eta_{\mu\nu}A^\mu A^\nu
+=
+-(A^0)^2+(A^1)^2+(A^2)^2+(A^3)^2.
+\label{eq:sr5-vector-square}
+\end{equation}No se debe añadir a mano ningún signo menos adicional: ya está incluido en la componente temporal con el índice bajado.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_19.png}\caption{La contracción \(A^\mu A_\mu\) desarrollada en sus componentes temporal y espaciales.}\lectureframe{01:09:30}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Debe representarse como fila un vector con índice inferior, en vez de como columna?}\lecturerresponse{En la notación matricial elemental puede representarse como una fila, pero la notación de índices no exige esa elección. Lo que lo define es cómo se transforma y cómo se contrae con un vector de índice superior. \lecturetimestamp{01:10:26}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Los índices griegos se refieren siempre a las cuatro componentes?}\lecturerresponse{En esta notación, sí. Los índices griegos, como \(\mu,\nu\), recorren el espacio-tiempo, mientras que los latinos, como \(i,j\), suelen recorrer solo las tres componentes espaciales. \lecturetimestamp{01:12:23}}\end{classroomqa}
+
+La misma construcción se aplica a dos cuadrivectores distintos: \begin{equation}
+A^\mu B_\mu
+\end{equation}es un escalar. Una demostración breve usa la identidad de polarización. Como \((A+B)^2\) y \((A-B)^2\) son ambos escalares, \begin{equation}
+(A+B)^2-(A-B)^2=4A^\mu B_\mu
+\end{equation}también es un escalar. Es la versión de Minkowski del producto escalar ordinario.
+
+\begin{classroomqa}\audiencequestion{¿Es \(A^\mu B_\mu\) análogo al producto escalar ordinario?}\lecturerresponse{Exactamente, salvo que la métrica de Minkowski determina el signo relativo entre las componentes temporales y espaciales. \lecturetimestamp{01:15:44}}\end{classroomqa}
+
+\subsection{El gradiente es un covector}
+
+Sea \(\phi(x)\) un campo escalar, donde \(x\) representa ahora las cuatro coordenadas espaciotemporales. Entre sucesos vecinos, \begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr5-dphi}
+\end{equation}El miembro izquierdo es un escalar y \(dx^\mu\) es un cuadrivector. Por tanto, el coeficiente \begin{equation}
+\partial_\mu\phi
+=
+\left(
+\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right)
+\label{eq:sr5-gradient-lower}
+\end{equation} debe transformarse como un covector. Al subir su índice se obtiene \begin{equation}
+\partial^\mu\phi
+=
+\left(
+-\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right).
+\label{eq:sr5-gradient-upper}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_20.png}\caption{El diferencial \(d\phi=\partial_\mu\phi\,dx^\mu\), del que se deduce el carácter covariante del gradiente de un escalar.}\lectureframe{01:20:00}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿El índice superior de \(x^\mu\) pasa a ser inferior cuando aparece en el denominador \(\partial/\partial x^\mu\)?}\lecturerresponse{Sí. El diferencial de coordenada \(dx^\mu\) se transforma contravariantemente, así que su derivada dual \(\partial_\mu=\partial/\partial x^\mu\) se transforma covariantemente. Por eso \(d\phi=\partial_\mu\phi\,dx^\mu\) es un escalar. \lecturetimestamp{01:20:00}}\end{classroomqa}
+
+\subsection{Una densidad escalar de campo invariante}
+
+Contraigamos los dos vectores derivada: \begin{align}
+\partial_\mu\phi\,\partial^\mu\phi
+&=
+-(\partial_t\phi)^2
++(\partial_x\phi)^2
++(\partial_y\phi)^2
++(\partial_z\phi)^2.
+\end{align}Por tanto, la densidad escalar libre puede escribirse de forma compacta como \begin{equation}
+\boxed{
+\mathcal L_0
+=
+-\frac12
+\partial_\mu\phi\,\partial^\mu\phi
+}.
+\label{eq:sr5-compact-density}
+\end{equation}Esta coincide con la densidad por componentes de \eqref{eq:sr5-free-field-action}.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_21.png}\caption{La densidad cinética del campo escalar, condensada en una expresión contraída.}\lectureframe{01:25:10}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Es la expresión contraída de primeras derivadas el laplaciano?}\lecturerresponse{No. El laplaciano contiene segundas derivadas espaciales. Esta expresión es la densidad lagrangiana, construida con productos de primeras derivadas. \lecturetimestamp{01:24:38}}\end{classroomqa}
+
+El valor de una densidad escalar en un suceso físico es independiente del sistema de referencia. La transformación de Lorentz propia también tiene determinante de módulo uno, por lo que la medida \(d^4x\) es invariante. En consecuencia, \begin{equation}
+S=\int d^4x\,\mathcal L
+\end{equation}es invariante. Una acción independiente del sistema de referencia da lugar a ecuaciones de Euler--Lagrange de la misma forma en todos los sistemas inerciales.
+
+\section{El límite galileano}
+
+\begin{classroomqa}\audiencequestion{¿También debía respetar un principio de relatividad un lagrangiano newtoniano?}\lecturerresponse{Sí, aunque antes no se hizo hincapié en ello. Las ecuaciones newtonianas son invariantes bajo transformaciones galileanas, el límite \(c\to\infty\) de las transformaciones de Lorentz. Lo que desaparece en ese límite es la relatividad de la simultaneidad. \lecturetimestamp{01:27:16}}\end{classroomqa}
+
+Para ver ese límite, restablezcamos \(c\) en un impulso a lo largo de \(x\): \begin{equation}
+x'
+=
+\frac{x-vt}{\sqrt{1-v^2/c^2}},
+\qquad
+t'
+=
+\frac{t-vx/c^2}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr5-lorentz-c}
+\end{equation}Al tomar \(c\to\infty\) se obtiene \begin{equation}
+\boxed{
+x'=x-vt,
+\qquad
+t'=t
+}.
+\label{eq:sr5-galilean}
+\end{equation}Estas son transformaciones galileanas. La mecánica newtoniana conserva el principio de relatividad según el cual las leyes tienen la misma forma en todos los sistemas inerciales, pero también supone un tiempo absoluto compartido por todos los observadores.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_22.png}\caption{El impulso de Lorentz antes de tomar \(c\to\infty\), que da lugar a las reglas galileanas \(x'=x-vt\) y \(t'=t\).}\lectureframe{01:29:40}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Los vectores con índices superior e inferior solo se diferencian por un cambio de signo?}\lecturerresponse{Para la métrica cartesiana fija que usamos aquí, bajar el índice de un vector ya conocido solo cambia el signo de su componente temporal. Sin embargo, sus leyes de transformación de Lorentz son leyes duales, no una mera convención arbitraria de signos: la métrica es lo que convierte una en la otra. \lecturetimestamp{01:31:19}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Es escalar cualquier función de las coordenadas que tenga apariencia ordinaria?}\lecturerresponse{No. No basta con que haya un número en cada punto de coordenadas; ese número debe representar el mismo valor físico en el mismo suceso para todos los sistemas de referencia. La densidad de energía es un contraejemplo: un impulso aplicado a una caja cambia tanto la energía medida como el volumen medido, por lo que los observadores no asignan la misma densidad. \lecturetimestamp{01:33:23}}\end{classroomqa}
+
+La componente temporal de la cuadrivelocidad ofrece otro ejemplo. La cuadrivelocidad completa es un vector, pero su componente temporal cambia bajo un impulso y no es, por sí sola, un escalar.
+
+\section{El campo de Klein--Gordon}
+
+\subsection{El análogo del oscilador armónico para un campo}
+
+Volvamos a la densidad escalar y añadamos el potencial cuadrático más sencillo: \begin{equation}
+\boxed{
+\mathcal L
+=
+\frac12
+\left[
+(\partial_t\phi)^2
+-|\boldsymbol{\nabla}\phi|^2
+-\mu^2\phi^2
+\right]
+}.
+\label{eq:sr5-kg-density}
+\end{equation}Este es el análogo en teoría de campos de \begin{equation}
+L_{\mathrm{osc}}
+=
+\frac12\dot q^2-\frac12\mu^2q^2.
+\end{equation}Cada punto espacial se comporta localmente como un oscilador, mientras que el término del gradiente acopla puntos vecinos.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_23.png}\caption{La densidad cuadrática del campo escalar y su modelo prototípico de oscilador armónico.}\lectureframe{01:38:20}\end{figure}
+
+La ecuación de Euler--Lagrange del campo es \begin{equation}
+\partial_\mu
+\left[
+\frac{\partial\mathcal L}
+{\partial(\partial_\mu\phi)}
+\right]
+-
+\frac{\partial\mathcal L}{\partial\phi}
+=0.
+\label{eq:sr5-field-el}
+\end{equation}Al aplicarla a \eqref{eq:sr5-kg-density} se obtiene \begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi+\mu^2\phi=0
+}.
+\label{eq:sr5-kg}
+\end{equation}Esta es la ecuación de Klein--Gordon. Con la convención de mayoría positiva y \(\Box=\partial_\mu\partial^\mu=-\partial_t^2+\nabla^2\), la misma ecuación es \((\Box-\mu^2)\phi=0\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_24.png}\caption{La ecuación de Klein--Gordon, completada debajo de la densidad de la que se deduce.}\lectureframe{01:40:00}\end{figure}
+
+Históricamente, la ecuación se estudió primero como ecuación de onda relativista de una sola partícula. Esa interpretación presentaba dificultades, especialmente para obtener una densidad de probabilidad positiva. Su marco moderno adecuado es la teoría relativista de campos, donde rige los campos escalares libres y el límite libre de los campos escalares interactuantes.
+
+\subsection{Modos de onda plana}
+
+Como \eqref{eq:sr5-kg} es lineal y tiene coeficientes constantes, busquemos una onda plana \begin{equation}
+\phi(x)
+=
+\exp\!\left[
+-i\omega t+i\mathbf{k}\cdot\mathbf{x}
+\right].
+\label{eq:sr5-plane-wave}
+\end{equation}Con \begin{equation}
+k_\mu=(-\omega,k_x,k_y,k_z),
+\end{equation}, el exponente es \(ik_\mu x^\mu\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_25.png}\caption{La hipótesis de onda plana escrita por componentes y como \(e^{ik_\mu x^\mu}\).}\lectureframe{01:44:00}\end{figure}
+
+La derivación da \begin{equation}
+\partial_t^2\phi=-\omega^2\phi,
+\qquad
+\nabla^2\phi=-|\mathbf{k}|^2\phi.
+\end{equation}Al sustituir en \eqref{eq:sr5-kg} se obtiene \begin{equation}
+\left(
+-\omega^2+|\mathbf{k}|^2+\mu^2
+\right)\phi=0.
+\end{equation}Por tanto, un modo no nulo requiere \begin{equation}
+\boxed{
+\omega^2=|\mathbf{k}|^2+\mu^2
+},
+\qquad
+\omega=\pm\sqrt{|\mathbf{k}|^2+\mu^2}.
+\label{eq:sr5-dispersion}
+\end{equation}.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_26.png}\caption{La sustitución de la onda plana y la relación de dispersión relativista resultante.}\lectureframe{01:47:00}\end{figure}
+
+En unidades naturales, \(\mu\) desempeña el papel de una masa. Para una excitación cuántica, al restablecer las constantes, \begin{equation}
+E=\hbar\omega,
+\qquad
+\mathbf{p}=\hbar\mathbf{k},
+\qquad
+\mu=\frac{mc}{\hbar},
+\end{equation}convierte \eqref{eq:sr5-dispersion} en \begin{equation}
+E^2=p^2c^2+m^2c^4.
+\end{equation}Las ramas de frecuencia positiva y negativa forman parte del espacio de soluciones clásicas. Las soluciones generales son superposiciones de estos modos.
+
+\begin{classroomqa}\audiencequestion{¿De dónde salió la ecuación de Klein--Gordon?}\lecturerresponse{Se deduce directamente de la densidad cuadrática escalar de Lorentz mediante la ecuación de Euler--Lagrange del campo. Se eligió este ejemplo porque esta densidad cuadrática sencilla produce una ecuación de campo lineal. \lecturetimestamp{01:47:59}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Qué hay en la naturaleza que obedezca la ecuación de Klein--Gordon?}\lecturerresponse{Un campo escalar clásico libre. Las fluctuaciones del campo de Higgs son escalares y, en la aproximación libre, satisfacen la forma de Klein--Gordon, aunque el campo de Higgs real también tiene interacciones y acoplamientos de gauge. \lecturetimestamp{01:50:41}}\end{classroomqa}
+
+\section{Un fondo escalar como cambio de masa}
+
+Volvamos a la acción de la partícula: \begin{equation}
+S_{\mathrm p}
+=
+-\int d\tau\,
+\bigl[m+g\phi(x)\bigr].
+\label{eq:sr5-final-particle-action}
+\end{equation}Si \(\phi\) tiene un valor de fondo constante \(\phi_0\), la partícula se mueve como si su masa fuese \begin{equation}
+\boxed{
+m_{\mathrm{eff}}=m+g\phi_0
+}.
+\label{eq:sr5-effective-mass}
+\end{equation}Si el término desnudo \(m\) se anula, el fondo escalar puede aportar todo el coeficiente que multiplica al tiempo propio.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_27.png}\caption{La acción de la partícula, dependiente del campo, sobre la ecuación compacta de Euler--Lagrange del campo, que reúne los dos aspectos tratados en la clase.}\lectureframe{01:51:30}\end{figure}
+
+Este es un modelo deliberadamente simplificado de la generación de masa de Higgs. En el Modelo Estándar, las masas de los fermiones surgen de los acoplamientos de Yukawa con el valor esperado de vacío del Higgs, esquemáticamente \(m_f\propto y_f v\), mientras que las masas de \(W\) y \(Z\) surgen del término cinético del Higgs covariante de gauge. El acoplamiento de juguete sobre la línea de universo recoge la idea central--un fondo escalar no nulo modifica la masa inercial--sin reproducir la teoría electrodébil completa. Sigue vigente la reciprocidad establecida antes: al variar la misma interacción con respecto al campo, la partícula se convierte en una fuente. El campo actúa sobre las partículas, y estas reaccionan sobre el campo.
+
+\subsection{Por qué son útiles las exponenciales complejas}
+
+El campo no tiene por qué ser físicamente complejo. La fórmula de Euler da
+\begin{equation}
+e^{i(\omega t-\mathbf{k}\cdot\mathbf{x})}
+=
+\cos(\omega t-\mathbf{k}\cdot\mathbf{x})
++i\sin(\omega t-\mathbf{k}\cdot\mathbf{x}).
+\end{equation}
+Como la ecuación es real y lineal, las partes real e imaginaria son, por separado, soluciones reales. Son ondas desfasadas un cuarto de ciclo, y cualquier combinación lineal real vuelve a ser una solución.
+
+\begin{classroomqa}
+\audiencequestion{Al tomar la parte real, ¿la parte imaginaria de algún modo se anula?}
+\lecturerresponse{No. La exponencial compleja reúne dos soluciones reales independientes: el coseno y el seno. Puede conservarse cualquiera de las dos partes, o bien formar combinaciones reales. Se usa la exponencial porque la derivación se convierte en una multiplicación. \lecturetimestamp{01:53:29}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_28.png}
+\caption{Una onda plana compleja descompuesta en coseno y seno, representados como dos ondas reales desfasadas.}
+\lectureframe{01:56:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿La adquisición de masa por parte del campo electromagnético en un superconductor es el mismo tipo de fenómeno?}
+\lecturerresponse{Está estrechamente relacionado: en un superconductor, el condensado confiere al campo electromagnético una masa efectiva en el medio, lo que produce el efecto Meissner. Una explicación completa requiere el campo electromagnético y se dejará para más adelante. \lecturetimestamp{01:56:14}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Puede visualizarse el mecanismo de Higgs como una partícula de Higgs que viaja por el espacio repartiendo masa?}
+\lecturerresponse{No. El objeto pertinente es el valor de fondo del campo de Higgs, no un flujo de partículas de Higgs individuales. En la acción de juguete, el fondo simplemente modifica el coeficiente que cumple la función de masa de la partícula. \lecturetimestamp{01:57:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Acoplamientos distintos al mismo fondo escalar pueden producir masas distintas?}
+\lecturerresponse{Sí. El cambio es proporcional al acoplamiento \(g\). En el Modelo Estándar, los distintos acoplamientos de Yukawa son precisamente la razón por la que distintos fermiones adquieren masas diferentes a partir del mismo fondo de Higgs. \lecturetimestamp{01:58:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es \(\phi\) en sí mismo el término de masa?}
+\lecturerresponse{En este modelo de juguete, \(g\phi_0\) funciona, a todos los efectos mecánicos, como una contribución al coeficiente de masa. Hay que tener en cuenta tanto el acoplamiento como el valor de fondo. \lecturetimestamp{01:58:42}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si el fondo de Higgs se anulara, ¿todas las partículas quedarían sin masa?}
+\lecturerresponse{No. Los electrones, los quarks y los bosones gauge débiles perderían sus contribuciones ordinarias a la masa electrodébil; los detalles en el caso de los neutrinos dependerían del mecanismo que les confiere masa. El sector escalar no tiene por qué quedar sin masa solo porque su valor de fondo se anule. La mayor parte de la masa del protón y del neutrón proviene, en cambio, de la energía de enlace y el confinamiento de la QCD, así que no la genera directamente el campo de Higgs. \lecturetimestamp{01:58:51}}
+\end{classroomqa}
+
+La consecuencia atómica es, sin embargo, drástica. La escala de Bohr se comporta como
+\begin{equation}
+a_0\sim\frac{1}{\alpha m_e}
+\end{equation}
+en unidades naturales. Al hacer tender a cero la masa del electrón, la escala de longitud atómica ordinaria diverge; los átomos ordinarios localizados dejarían de existir. El protón y el neutrón se verían mucho menos afectados directamente, porque su masa es predominantemente energía dinámica de la QCD.
+
+Las piezas forman ahora un argumento continuo. La geometría de Lorentz determina las longitudes de onda observadas. Un término mixto en una acción hace que dos sistemas dinámicos se influyan mutuamente. Un campo escalar se convierte a la vez en un potencial para una partícula y en un campo del que esa partícula es fuente. La métrica y la notación de índices hacen visible la invariancia de Lorentz, y la densidad invariante cuadrática más sencilla produce ondas de Klein--Gordon. Por último, un fondo escalar constante convierte el mismo acoplamiento en un cambio de masa. El método a lo largo de todo el argumento es el que se seguirá usando: construir una acción invariante, variar cada objeto dinámico e interpretar la física mutua a partir de las ecuaciones resultantes.

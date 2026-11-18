@@ -1,0 +1,857 @@
+\chapter{Mecánica de partículas, cuadrimomento y energía en reposo}
+
+\section{La aproximación que usaremos repetidamente}
+
+La mecánica de una partícula relativista debe responder a preguntas conocidas con un lenguaje nuevo. ¿Cómo se mueve una partícula? ¿Cuáles son su momento y su energía? ¿Por qué esas magnitudes forman un cuadrivector y cómo se obtiene \(E=mc^2\) a partir de los procedimientos habituales de la mecánica? Antes de abordar esas preguntas, necesitamos una aproximación elemental que aparecerá repetidamente en los cálculos.
+
+Para cualquier exponente \(p\), la serie binomial es
+\begin{equation}
+\begin{aligned}
+(1+\epsilon)^p
+&=1+p\epsilon\\
+&\quad+\frac{p(p-1)}{2!}\epsilon^2\\
+&\quad+\frac{p(p-1)(p-2)}{3!}\epsilon^3
++\cdots .
+\end{aligned}
+\label{eq:sr3-binomial}
+\end{equation}
+El exponente puede ser positivo, negativo, fraccionario e incluso complejo. Para valores suficientemente pequeños de \(\epsilon\), la serie converge rápidamente y cada término sucesivo es menor que el anterior. Podemos truncarla entonces en el orden que requiera la precisión deseada. El término de orden cero suele ser el mayor, pero en las aplicaciones siguientes a menudo es una constante y, por tanto, no tiene interés dinámico. El primer término correctivo es donde aparece el movimiento.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_01.png}
+\caption{La serie binomial hasta el orden cúbico, usada para recuperar la mecánica no relativista a partir de fórmulas relativistas.}
+\lectureframe{00:04:24}
+\end{figure}
+
+Normalmente usamos unidades en las que \(c=1\), de modo que una velocidad \(v\) representa la fracción \(v/c\) de la velocidad de la luz. Tomemos \(\epsilon=-v^2\). Con \(p=\tfrac12\),
+\begin{equation}
+\sqrt{1-v^2}
+=
+1-\frac{v^2}{2}-\frac{v^4}{8}-\cdots
+\approx
+1-\frac{v^2}{2},
+\qquad |v|\ll 1.
+\label{eq:sr3-sqrt-expansion}
+\end{equation}
+Con \(p=-\tfrac12\), los dos signos menos se cancelan:
+\begin{equation}
+\frac{1}{\sqrt{1-v^2}}
+=
+1+\frac{v^2}{2}+\frac{3v^4}{8}+\cdots
+\approx
+1+\frac{v^2}{2}.
+\label{eq:sr3-gamma-expansion}
+\end{equation}
+Muchos factores de \(1/2\) en la mecánica clásica pueden reconocerse, a posteriori, como la primera corrección de una de estas expansiones relativistas. La aproximación deja de ser válida cuando \(v\) se acerca a uno; entonces ningún truncamiento finito reproduce el comportamiento singular de la expresión exacta.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_02.png}
+\caption{Se aprecian las dos fórmulas para velocidades bajas: \(\sqrt{1-v^2}\approx1-v^2/2\) y \((1-v^2)^{-1/2}\approx1+v^2/2\).}
+\lectureframe{00:07:39}
+\end{figure}
+
+\section{¿Qué se considera una partícula?}
+
+En mecánica, una partícula no tiene por qué ser elemental. Puede ser un electrón, el Sol, una caja de bombones o una rosquilla. Lo importante es que el objeto se mantenga lo bastante unido como para describir su movimiento global mediante un centro de masas. Una rosquilla recuerda que el centro de masas no tiene por qué estar dentro del material del objeto.
+
+En mecánica newtoniana, las variables del centro de masas obedecen
+\begin{equation}
+\vec p=m\vec v,
+\qquad
+K=\frac12mv^2,
+\qquad
+\vec F=m\vec a.
+\label{eq:sr3-newtonian-particle}
+\end{equation}
+Estas fórmulas no dependen de que el objeto sea elemental o compuesto. Un objeto compuesto también contiene energía interna. Por ejemplo, una rosquilla en movimiento tiene energía cinética del centro de masas, además de energía química, térmica y de enlace:
+\begin{equation}
+E_{\text{Newtonian}}
+=
+E_{\text{internal}}+\frac12mv^2.
+\label{eq:sr3-newtonian-internal}
+\end{equation}
+El término interno es independiente de la velocidad global del centro de masas. La relatividad conservará esta distinción, pero revelará que la energía interna contribuye a la masa invariante del objeto entero.
+
+Las herramientas necesarias son las mismas que se usan en mecánica clásica: trayectorias, el principio de acción estacionaria, lagrangianos, momentos canónicos, hamiltonianos y la relación entre las simetrías continuas y las leyes de conservación.
+
+\section{Líneas de universo y separación causal}
+
+Representemos horizontalmente la posición de un sistema y verticalmente el tiempo. Su historia será entonces una curva en el espacio-tiempo. Para una partícula, esta curva es su \emph{línea de universo}. El concepto existe en mecánica newtoniana, pero se vuelve fundamental en relatividad porque las transformaciones de Lorentz mezclan el espacio y el tiempo.
+
+Consideremos dos sucesos separados por
+\begin{equation}
+\Delta x^\mu=(\Delta t,\Delta\vec x),
+\qquad
+\Delta\vec x^{\,2}
+=
+(\Delta x)^2+(\Delta y)^2+(\Delta z)^2.
+\end{equation}
+En unidades \(c=1\), su intervalo invariante es
+\begin{equation}
+(\Delta\tau)^2
+=
+(\Delta t)^2-\Delta\vec x^{\,2}.
+\label{eq:sr3-interval}
+\end{equation}
+
+\subsection{Separación temporal}
+
+Si \((\Delta t)^2>\Delta\vec x^{\,2}\), entonces \((\Delta\tau)^2>0\) y la separación es temporal. Existe un sistema de referencia de Lorentz en el que los dos sucesos ocurren en el mismo punto espacial. En ese sistema, la recta que los une es vertical y un reloj puede desplazarse de un suceso al otro. El tiempo transcurrido que marca es el tiempo propio \(\Delta\tau\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_03.png}
+\caption{Un intervalo temporal tiene mayor separación temporal que espacial; existe un sistema en reposo en el que los dos sucesos comparten una posición.}
+\lectureframe{00:14:42}
+\end{figure}
+
+\subsection{Separación espacial}
+
+Si \(\Delta\vec x^{\,2}>(\Delta t)^2\), el intervalo es espacial. Ningún sistema inercial sitúa ambos sucesos en el mismo punto espacial, pero existe un sistema en el que son simultáneos. En otros sistemas puede invertirse su orden temporal. Por tanto, ni \emph{el suceso \(A\) ocurrió primero} ni \emph{el suceso \(B\) ocurrió primero} es una afirmación invariante para un par de sucesos con separación espacial. Esta es la relatividad de la simultaneidad expresada geométricamente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_04.png}
+\caption{Para un intervalo espacial, un cambio de sistema inercial puede hacer que los dos sucesos sean simultáneos o invertir su orden temporal.}
+\lectureframe{00:17:01}
+\end{figure}
+
+Una partícula masiva tiene una línea de universo temporal: todo segmento suficientemente corto satisface \(d\tau^2>0\). La composición sucesiva de velocidades de \(0.9c\) puede acercar cada vez más una partícula a \(c\), pero nunca hacer que la supere. La aproximación recuerda a la paradoja de Zenón. Esta restricción causal se aplica no solo a los objetos materiales, sino también a las señales y a la información, porque la información debe ser transportada por sistemas físicos. Una señal más rápida que la luz permitiría que distintos sistemas discreparan sobre cuál de los extremos de su historia es la causa y cuál el efecto.
+
+\section{Cuadrivelocidad}
+
+Centrémonos en un segmento temporal corto. En unidades convencionales,
+\begin{equation}
+d\tau
+=
+\sqrt{dt^2-\frac{d\vec x^{\,2}}{c^2}}.
+\label{eq:sr3-proper-time-dimensional}
+\end{equation}
+El factor \(c^2\) viene impuesto por las dimensiones: \(dt^2\) tiene unidades de tiempo al cuadrado, mientras que \(d\vec x^{\,2}\) tiene unidades de longitud al cuadrado.
+
+\begin{classroomqa}
+\audiencequestion{¿Dónde debe introducirse la velocidad de la luz cuando se escribe el intervalo en unidades ordinarias?}
+\lecturerresponse{El término espacial debe dividirse por \(c^2\), lo que da \(d\tau^2=dt^2-d\vec x^{\,2}/c^2\). Normalmente volveremos a usar \(c=1\), pero la consistencia dimensional permite recuperar siempre los factores que faltan. \lecturetimestamp{00:21:23}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_05.png}
+\caption{Un desplazamiento de la línea de universo \(\Delta x^\mu=(\Delta t,\Delta\vec x)\) y el incremento de tiempo propio asociado a él.}
+\lectureframe{00:21:03}
+\end{figure}
+
+La velocidad ordinaria tiene tres componentes espaciales,
+\begin{equation}
+v^i=\frac{dx^i}{dt},
+\qquad i=1,2,3.
+\end{equation}
+La velocidad relativista se obtiene dividiendo el desplazamiento completo en el espacio-tiempo por el tiempo propio invariante:
+\begin{equation}
+u^\mu
+=
+\frac{dx^\mu}{d\tau},
+\qquad
+\mu=0,1,2,3.
+\label{eq:sr3-four-velocity-definition}
+\end{equation}
+Los índices griegos recorren el espacio-tiempo; los índices latinos, el espacio. La componente cero de la posición es \(x^0=t\) en unidades \(c=1\), por lo que
+\begin{equation}
+u^0=\frac{dt}{d\tau}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_06.png}
+\caption{La velocidad ordinaria divide el desplazamiento espacial por el tiempo coordenado, mientras que la cuadrivelocidad divide sus cuatro componentes por el tiempo propio.}
+\lectureframe{00:24:05}
+\end{figure}
+
+Para relacionar \(u^\mu\) con \(\vec v\), saquemos factor común \(dt^2\) del intervalo:
+\begin{align}
+d\tau^2
+&=dt^2-d\vec x^{\,2}\\
+&=dt^2\left(1-\frac{d\vec x^{\,2}}{dt^2}\right)
+=dt^2(1-v^2).
+\end{align}
+Tomando la raíz positiva para una línea de universo dirigida hacia el futuro,
+\begin{equation}
+\frac{d\tau}{dt}=\sqrt{1-v^2},
+\qquad
+\frac{dt}{d\tau}=\frac{1}{\sqrt{1-v^2}}
+\equiv\gamma.
+\label{eq:sr3-time-component}
+\end{equation}
+Para una componente espacial,
+\begin{equation}
+v^i
+=
+\frac{dx^i}{dt}
+=
+\frac{dx^i}{d\tau}\frac{d\tau}{dt}
+=u^i\sqrt{1-v^2}.
+\end{equation}
+Así,
+\begin{equation}
+\boxed{
+u^\mu
+=
+\gamma(1,\vec v)
+},
+\qquad
+u^0=\gamma,
+\qquad
+u^i=\gamma v^i.
+\label{eq:sr3-four-velocity-components}
+\end{equation}
+A velocidades bajas, \(u^0\to1\) y \(u^i\to v^i\). Cerca de la velocidad de la luz, tanto \(u^0\) como el módulo de la cuadrivelocidad espacial se hacen grandes, aunque \(|\vec v|<1\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_07.png}
+\caption{La relación ya establecida entre la velocidad ordinaria y las cuatro componentes de \(u^\mu\).}
+\lectureframe{00:30:40}
+\end{figure}
+
+\subsection{Por qué solo hay tres componentes independientes}
+
+La cuadrivelocidad tiene cuatro componentes, pero solo tres grados de libertad independientes. Al dividir por \(d\tau^2\) la identidad del intervalo, se obtiene
+\begin{equation}
+1
+=
+\left(\frac{dt}{d\tau}\right)^2
+-\left(\frac{d\vec x}{d\tau}\right)^2,
+\end{equation}
+o bien
+\begin{equation}
+\boxed{
+(u^0)^2-\vec u^{\,2}=1
+}.
+\label{eq:sr3-four-velocity-normalization}
+\end{equation}
+La única condición de normalización elimina una componente independiente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_08.png}
+\caption{La normalización \((u^0)^2-\vec u^{\,2}=1\) se obtiene directamente del intervalo invariante.}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Se puede entender la pérdida de una componente independiente diferenciando con respecto al propio tiempo propio?}
+\lecturerresponse{Sí. El tiempo propio no es una quinta coordenada independiente; queda determinado por el intervalo del espacio-tiempo a lo largo de la línea de universo. Al dividir esa relación definitoria por \(d\tau^2\), las cuatro derivadas quedan restringidas al hiperboloide temporal unitario \((u^0)^2-\vec u^{\,2}=1\). \lecturetimestamp{00:34:07}}
+\end{classroomqa}
+
+\section{Una acción invariante para una partícula libre}
+
+¿Qué ley rige una línea de universo libre de fuerzas? Conservamos dos enseñanzas de la mecánica clásica:
+\begin{enumerate}
+\item la trayectoria física hace estacionaria la acción mientras se mantienen fijos sus extremos;
+\item la acción se construye sumando las contribuciones de los segmentos infinitesimales de la trayectoria.
+\end{enumerate}
+La relatividad añade una tercera exigencia: todos los observadores inerciales deben coincidir en el valor de la acción. El escalar infinitesimal natural disponible en una línea de universo temporal es \(d\tau\). Por tanto, la acción de la partícula libre es
+\begin{equation}
+\boxed{
+S=-m\int_a^b d\tau
+}
+\qquad(c=1).
+\label{eq:sr3-invariant-action}
+\end{equation}
+La imagen de una suma finita es
+\begin{equation}
+S=-m\lim_{N\to\infty}\sum_{k=1}^{N}\Delta\tau_k.
+\end{equation}
+Como todos los observadores coinciden en cada incremento de tiempo propio, también coinciden en qué trayectoria hace estacionaria su suma.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_09.png}
+\caption{La acción se construye como una suma de incrementos invariantes de tiempo propio a lo largo de una línea de universo que varía entre extremos fijos.}
+\lectureframe{00:38:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué ocurre con la energía si se multiplica la acción por una constante arbitraria?}
+\lecturerresponse{La energía no es el invariante de partida; se deducirá del lagrangiano y del hamiltoniano. Multiplicar toda la acción por una constante no nula deja inalteradas sus trayectorias estacionarias, aunque reescala las magnitudes canónicas definidas a partir de ella. Se elige la normalización \(-m\) para que esas magnitudes deducidas concuerden con las convenciones newtonianas establecidas. \lecturetimestamp{00:39:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué es adecuado un invariante como el tiempo propio para construir la acción?}
+\lecturerresponse{Porque una ley de acción estacionaria debería seleccionar la misma trayectoria física en todos los sistemas inerciales. Esto es análogo a hallar la curva más corta en un plano euclídeo: las rotaciones cambian las componentes de las coordenadas, pero no cada longitud infinitesimal, así que no pueden cambiar qué curva es la más corta. Sustituir la longitud euclídea por el tiempo propio da lugar a la construcción relativista. \lecturetimestamp{00:40:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué se elige la raíz cuadrada positiva para el tiempo propio en vez de la negativa?}
+\lecturerresponse{El tiempo propio se define como el tiempo transcurrido positivo que marca un reloj transportado del pasado al futuro. Elegir de manera coherente la raíz negativa solo invertiría el signo de la acción, convirtiendo un mínimo en un máximo sin cambiar la línea de universo estacionaria. En el sistema de reposo del reloj, la convención positiva da \(d\tau=dt\). \lecturetimestamp{00:42:59}}
+\end{classroomqa}
+
+El factor \(-m\) es también una convención de normalización elegida para recuperar la mecánica newtoniana. Al restablecer las unidades, la acción convencional es
+\begin{equation}
+S=-mc^2\int_a^b d\tau.
+\label{eq:sr3-action-dimensional}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_10.png}
+\caption{La suma finita de tiempos propios se convierte en la integral invariante \(-m\int d\tau\) en unidades naturales.}
+\lectureframe{00:46:23}
+\end{figure}
+
+\section{El lagrangiano relativista}
+
+Para expresar la acción en la forma mecánica habitual, saquemos factor común \(dt\) de \(d\tau\):
+\begin{equation}
+d\tau
+=dt\sqrt{1-\dot{\vec x}^{\,2}},
+\qquad
+\dot{\vec x}^{\,2}
+=\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+Entonces,
+\begin{equation}
+S
+=
+\int_a^b L\,dt,
+\qquad
+\boxed{
+L=-m\sqrt{1-v^2}
+}
+\quad(c=1).
+\label{eq:sr3-relativistic-lagrangian}
+\end{equation}
+En unidades convencionales,
+\begin{equation}
+L=-mc^2\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr3-relativistic-lagrangian-c}
+\end{equation}
+Este es el lagrangiano de una partícula libre: depende de la velocidad, pero no de la posición. Todavía no se ha introducido ninguna fuerza ni potencial.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_11.png}
+\caption{Al sacar factor común \(dt\), aparece el lagrangiano relativista de una partícula libre como función de las tres componentes de la velocidad.}
+\lectureframe{00:49:57}
+\end{figure}
+
+\subsection{Recuperación de Lagrange y Newton}
+
+Sustituyamos \eqref{eq:sr3-sqrt-expansion}:
+\begin{align}
+L
+&=-m\sqrt{1-v^2}\\
+&\approx-m\left(1-\frac{v^2}{2}\right)\\
+&=-m+\frac12mv^2.
+\label{eq:sr3-lagrangian-low-speed}
+\end{align}
+La constante \(-m\) es independiente tanto de la posición como de la velocidad. Aporta la misma cantidad a toda trayectoria con los mismos tiempos en los extremos y, por tanto, desaparece de las ecuaciones de Euler--Lagrange. La parte que contiene la dinámica es precisamente
+\begin{equation}
+L_{\mathrm{Newton}}=\frac12mv^2.
+\end{equation}
+Así pues, el signo y la normalización de la masa en la acción invariante se eligieron correctamente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_12.png}
+\caption{La expansión a bajas velocidades deja una constante \(-m\) y el lagrangiano newtoniano de partícula libre \(mv^2/2\).}
+\lectureframe{00:53:24}
+\end{figure}
+
+Para la partícula libre que nos ocupa, las ecuaciones de Euler--Lagrange solo dirán que la velocidad es constante y que la línea de universo en el espacio-tiempo es recta. La tarea más reveladora consiste en identificar el momento y la energía conservados.
+
+\section{Momento canónico}
+
+Como \(L\) no depende de la posición, es invariante bajo traslaciones espaciales. La magnitud conservada correspondiente es el momento. No suponemos la fórmula newtoniana \(p_i=mv_i\); usamos la definición canónica
+\begin{equation}
+p_i=\frac{\partial L}{\partial\dot x^i}.
+\label{eq:sr3-canonical-momentum}
+\end{equation}
+Para \(L=-m\sqrt{1-v^2}\),
+\begin{align}
+p_i
+&=
+-m\frac{1}{2\sqrt{1-v^2}}
+\frac{\partial}{\partial\dot x^i}(1-v^2)\\
+&=
+-m\frac{1}{2\sqrt{1-v^2}}(-2\dot x^i)\\
+&=
+\frac{mv_i}{\sqrt{1-v^2}}
+=m\gamma v_i.
+\label{eq:sr3-relativistic-momentum}
+\end{align}
+Como \(u^i=\gamma v^i\),
+\begin{equation}
+\boxed{
+p^i=mu^i
+}.
+\label{eq:sr3-momentum-spatial}
+\end{equation}
+A bajas velocidades, esto se reduce a \(p^i\approx mv^i\). Cerca de la velocidad de la luz, el denominador resulta decisivo.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_13.png}
+\caption{La diferenciación canónica del lagrangiano de raíz cuadrada da \(p_x=mv_x/\sqrt{1-v^2}\).}
+\lectureframe{00:58:49}
+\end{figure}
+
+\subsection{Masa, no masa relativista}
+
+Aquí \(m\) es simplemente la masa de la partícula: una propiedad invariante que no cambia cuando la partícula se mueve. En textos antiguos a veces se la llama \emph{masa en reposo} y se denomina a \(E/c^2\) \emph{masa relativista} dependiente de la velocidad. El uso moderno evita esa distinción. El movimiento cambia la energía y el momento, no la masa invariante. La masa de un electrón es el mismo parámetro en todos los sistemas de referencia.
+
+\section{Del momento tridimensional al cuadrimomento}
+
+Una afirmación sobre una componente de un cuadrivector suele depender del sistema de referencia. Por ejemplo, \(\Delta\vec x=0\) indica que dos sucesos comparten una posición en un sistema, pero un boost inclina ese intervalo y hace que \(\Delta\vec x'\ne0\). En cambio,
+\begin{equation}
+\Delta x^\mu=0
+\end{equation}
+es invariante: si las cuatro componentes se anulan en un sistema, se anulan en todos. Del mismo modo, \(\vec u=0\) solo identifica el sistema de reposo de la partícula; no es una descripción invariante de la cuadrivelocidad.
+
+Para un sistema cerrado, la conservación del momento ordinario se escribe
+\begin{equation}
+\vec P_{\mathrm{initial}}-\vec P_{\mathrm{final}}=0.
+\label{eq:sr3-three-momentum-conservation}
+\end{equation}
+Esta es una ecuación de vectores tridimensionales. Para expresar la conservación de manera manifiestamente covariante de Lorentz, necesitamos una cuarta componente que se una a las tres \(p^i=mu^i\). La extensión evidente es
+\begin{equation}
+p^\mu=mu^\mu.
+\label{eq:sr3-four-momentum}
+\end{equation}
+En unidades \(c=1\),
+\begin{equation}
+p^\mu=(p^0,\vec p)
+=
+m\gamma(1,\vec v).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_14.png}
+\caption{La conservación del momento solo se vuelve invariante cuando sus componentes espaciales se completan con una cuarta componente.}
+\lectureframe{01:09:51}
+\end{figure}
+
+La componente que falta también debe conservarse. La mecánica de partículas ya contiene otra magnitud conservada: la energía. La pregunta es si \(p^0=mu^0=m\gamma\) es exactamente esa energía en unidades naturales. El hamiltoniano nos da la respuesta sistemática.
+
+\section{El hamiltoniano es la energía}
+
+Para cualquier lagrangiano independiente del tiempo de esta forma, el hamiltoniano es
+\begin{equation}
+H=\sum_{i=1}^{3}\dot x^i p_i-L.
+\label{eq:sr3-hamiltonian-definition}
+\end{equation}
+Esta fórmula no es específicamente newtoniana. Es la transformada de Legendre general de velocidades a momentos canónicos y se aplica igualmente al lagrangiano relativista.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_15.png}
+\caption{La fórmula general del hamiltoniano \(H=\sum_i\dot x^i p_i-L\).}
+\lectureframe{01:11:55}
+\end{figure}
+
+Sustituyamos \(p_i=m\dot x_i/\sqrt{1-v^2}\) y \(L=-m\sqrt{1-v^2}\):
+\begin{align}
+H
+&=
+\frac{mv^2}{\sqrt{1-v^2}}
++m\sqrt{1-v^2}\\
+&=
+\frac{mv^2+m(1-v^2)}{\sqrt{1-v^2}}\\
+&=
+\boxed{\frac{m}{\sqrt{1-v^2}}}
+=m\gamma.
+\label{eq:sr3-hamiltonian-result}
+\end{align}
+La cancelación es el paso clave. Al comparar con \(u^0=\gamma\),
+\begin{equation}
+H=mu^0=p^0.
+\end{equation}
+vemos que la cuarta componente es la energía:
+\begin{equation}
+p^\mu=(E,\vec p),
+\qquad
+E=H
+\qquad(c=1).
+\label{eq:sr3-four-momentum-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_16.png}
+\caption{Los dos términos del hamiltoniano se combinan con un denominador común; las contribuciones \(mv^2\) se cancelan.}
+\lectureframe{01:14:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿La fórmula \(H=\sum_i\dot x^i p_i-L\) es solo la fórmula clásica del hamiltoniano?}
+\lecturerresponse{Es la transformada de Legendre general asociada a un lagrangiano, no una suposición especial de la mecánica no relativista. La forma de \(L\) determina qué teoría mecánica se obtiene. Aquí, el lagrangiano relativista de raíz cuadrada produce \(H=m/\sqrt{1-v^2}\). \lecturetimestamp{01:15:21}}
+\end{classroomqa}
+
+La afirmación invariante de conservación es ahora
+\begin{equation}
+\sum_{\mathrm{initial}}p^\mu
+=
+\sum_{\mathrm{final}}p^\mu,
+\label{eq:sr3-four-momentum-conservation}
+\end{equation}
+que incluye la conservación de la energía y de las tres componentes del momento en una sola ecuación de cuadrivectores.
+
+\section{Energía en reposo y límite newtoniano}
+
+En unidades naturales, la energía exacta es
+\begin{equation}
+E=\frac{m}{\sqrt{1-v^2}}.
+\end{equation}
+Usando \eqref{eq:sr3-gamma-expansion},
+\begin{equation}
+E
+\approx
+m+\frac12mv^2+\frac38mv^4+\cdots .
+\label{eq:sr3-energy-natural-expansion}
+\end{equation}
+El segundo término es la energía cinética conocida. El primero es la energía que queda cuando el centro de masas está en reposo.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_17.png}
+\caption{La energía exacta se desarrolla como \(m+mv^2/2+\cdots\) en unidades \(c=1\).}
+\lectureframe{01:18:02}
+\end{figure}
+
+Restablezcamos las dimensiones en la expresión exacta. La razón dentro de la raíz cuadrada debe ser \(v^2/c^2\), y el numerador debe tener unidades de energía:
+\begin{equation}
+\boxed{
+E
+=
+\gamma mc^2
+=
+\frac{mc^2}{\sqrt{1-v^2/c^2}}
+}.
+\label{eq:sr3-energy-exact}
+\end{equation}
+Su expansión a bajas velocidades es
+\begin{equation}
+\boxed{
+E
+=
+mc^2+\frac12mv^2
++\frac38m\frac{v^4}{c^2}
++\cdots
+}.
+\label{eq:sr3-energy-dimensional-expansion}
+\end{equation}
+En reposo,
+\begin{equation}
+\boxed{E_{\mathrm{rest}}=mc^2}.
+\label{eq:sr3-emc2}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_18.png}
+\caption{Al restablecer las dimensiones, el término constante se convierte en \(mc^2\), seguido de la energía cinética newtoniana \(mv^2/2\).}
+\lectureframe{01:19:16}
+\end{figure}
+
+Esto se aplica a cualquier objeto cerrado, no solo a una partícula elemental. \emph{En reposo} significa que el centro de masas está en reposo. Las moléculas, los átomos y los campos dentro del objeto pueden seguir moviéndose e interactuando. Su energía cinética interna, energía potencial y energía de enlace contribuyen a la energía total en reposo y, por tanto, a la masa invariante del objeto.
+
+\begin{classroomqa}
+\audiencequestion{¿Podría el factor de conversión ser \(c^2\) dividido por algún número arbitrario?}
+\lecturerresponse{Las dimensiones por sí solas determinan la potencia de \(c\), pero el coeficiente queda fijado por el resultado en unidades naturales. La fórmula en unidades ordinarias debe reducirse a \(E=m\) cuando \(c=1\); por tanto, la expresión restablecida es \(E=mc^2\) en reposo, con coeficiente uno. \lecturetimestamp{01:22:08}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es físicamente importante el uno principal de la expansión binomial y qué significan los términos de orden superior?}
+\lecturerresponse{Sí. En la expansión de la energía, el uno principal se convierte en la energía en reposo \(mc^2\). El término siguiente es la energía cinética newtoniana y todos los de orden superior son correcciones relativistas. Son despreciables para una pelota de béisbol, pero se vuelven esenciales cuando \(v\) se acerca a \(c\). \lecturetimestamp{01:22:37}}
+\end{classroomqa}
+
+La energía y el momento exactos divergen cuando \(v\to c\):
+\begin{equation}
+\begin{aligned}
+E&=\gamma mc^2\longrightarrow\infty,\\
+\vec p&=\gamma m\vec v\longrightarrow\infty
+\qquad(m>0).
+\end{aligned}
+\end{equation}
+Por tanto, alcanzar la velocidad de la luz requeriría energía y momento ilimitados. Una fuerza finita que actúa durante un tiempo finito solo proporciona un impulso finito, así que una partícula masiva puede acercarse a \(c\), pero no alcanzarla.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué impone ahora la barrera de la velocidad de la luz?}
+\lecturerresponse{Lo hace el cuadrimomento exacto. Cuando una partícula masiva se aproxima a \(c\), tanto la energía como el momento divergen, mientras que la conservación del cuadrimomento restringe todas las interacciones. La normalización anterior de la cuadrivelocidad expresa lo mismo en términos cinemáticos. \lecturetimestamp{01:24:27}}
+\end{classroomqa}
+
+\section{La masa de un sistema compuesto}
+
+Supongamos que dos partículas se mueven con momentos iguales y opuestos. Su momento tridimensional total se anula, así que ya estamos en el sistema de reposo del sistema combinado. La masa invariante \(M\) de ese sistema se define mediante su energía total en este sistema:
+\begin{equation}
+Mc^2=E_{\mathrm{tot}}
+\qquad
+(\vec P_{\mathrm{tot}}=0).
+\end{equation}
+En general,
+\begin{equation}
+M^2c^4
+=
+E_{\mathrm{tot}}^2-c^2\vec P_{\mathrm{tot}}^{\,2}.
+\label{eq:sr3-composite-mass}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Para dos partículas que se mueven en direcciones opuestas, ¿es la masa del sistema combinado mayor que la suma de sus masas individuales?}
+\lecturerresponse{Si son libres, sí: en el sistema del centro de momento, su energía cinética se suma a la energía total en reposo, así que \(M>m_1+m_2\). La energía de enlace atractiva puede reducir la masa total y dar \(M<m_1+m_2\). La definición invariante es la energía total en el sistema donde el momento total se anula. \lecturetimestamp{01:25:06}}
+\end{classroomqa}
+
+Por eso no se pueden ignorar el movimiento interno y la energía de enlace al determinar la masa de un objeto compuesto. La masa invariante pertenece al sistema cerrado entero, no a una simple suma aritmética de las masas de sus constituyentes.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué papel desempeña el término de energía en reposo en la fase de un estado cuántico?}
+\lecturerresponse{Un estado de energía definida evoluciona con una fase \(\exp(-iEt/\hbar)\), así que una partícula en reposo aporta \(\exp(-imc^2t/\hbar)\). Una fase global común no es observable, pero sí pueden serlo las fases relativas entre componentes con energías diferentes. Esta consecuencia cuántica concuerda con la derivación clásica de aquí, aunque no es necesaria para ella. \lecturetimestamp{01:26:57}}
+\end{classroomqa}
+
+\section{Relación energía--momento}
+
+La normalización de la cuadrivelocidad da inmediatamente la norma invariante del cuadrimomento. En unidades \(c=1\),
+\begin{equation}
+(u^0)^2-\vec u^{\,2}=1.
+\end{equation}
+
+Multiplicando por \(m^2\) y usando \(p^\mu=mu^\mu\),
+\begin{equation}
+\boxed{
+E^2-\vec p^{\,2}=m^2
+}
+\qquad(c=1).
+\label{eq:sr3-mass-shell-natural}
+\end{equation}
+Equivalentemente,
+\begin{equation}
+E=\sqrt{\vec p^{\,2}+m^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_19.png}
+\caption{Al multiplicar la normalización de la cuadrivelocidad por \(m^2\), se obtiene \(E^2-\vec p^{\,2}=m^2\).}
+\lectureframe{01:31:48}
+\end{figure}
+
+Al restablecer \(c\),
+\begin{equation}
+\boxed{
+E^2
+=
+\vec p^{\,2}c^2+m^2c^4
+},
+\qquad
+E=\sqrt{\vec p^{\,2}c^2+m^2c^4}.
+\label{eq:sr3-mass-shell}
+\end{equation}
+Esta fórmula expresa la energía como función del momento, sin hacer referencia a la velocidad. Es el análogo relativista de la relación newtoniana
+\begin{equation}
+K=\frac{\vec p^{\,2}}{2m}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_20.png}
+\caption{La relación de masa en la capa de masas con las dimensiones restablecidas: \(E=\sqrt{\vec p^{\,2}c^2+m^2c^4}\).}
+\lectureframe{01:32:38}
+\end{figure}
+
+\subsection{Partículas sin masa}
+
+La fórmula de la velocidad \(E=\gamma mc^2\) se vuelve una expresión indeterminada de la forma \(0/0\) si \(m=0\) y \(v=c\). Por tanto, la velocidad es una etiqueta poco adecuada para distinguir partículas sin masa: todas las partículas sin masa que se propagan libremente en el vacío se mueven a \(c\), pero distintos fotones pueden tener energías diferentes.
+
+La relación energía--momento tiene un límite sin masa regular:
+\begin{equation}
+m=0
+\quad\Longrightarrow\quad
+\boxed{E=c|\vec p|}.
+\label{eq:sr3-massless-energy}
+\end{equation}
+Esto se aplica a los fotones y, en la teoría idealizada sin masa, a los gravitones. También es una excelente aproximación para una partícula altamente relativista cuando \(mc^2\ll E\), incluidos los neutrinos a energías suficientemente altas, pese a sus masas pequeñas y no nulas.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_21.png}
+\caption{El límite sin masa de la relación energía--momento da \(E=c|\vec p|\).}
+\lectureframe{01:33:48}
+\end{figure}
+
+\section{Desintegración del positronio}
+
+Consideremos el positronio, un estado ligado de un electrón y un positrón. Su masa invariante es ligeramente menor que \(2m_e\): los constituyentes tienen energía cinética interna positiva, pero una energía de enlace negativa de mayor magnitud. Numéricamente,
+\begin{equation}
+m_ec^2\approx0.511\ \mathrm{MeV},
+\qquad
+m_e\approx9.11\times10^{-31}\ \mathrm{kg},
+\end{equation}
+pero la cinemática no depende del valor numérico.
+
+Consideremos el canal de desintegración en dos fotones en el sistema de reposo del positronio:
+\begin{equation}
+\mathrm{Ps}\longrightarrow\gamma+\gamma.
+\end{equation}
+Inicialmente, el momento total es cero. Por tanto, la conservación del momento exige que los fotones salgan en direcciones opuestas, con momentos iguales y opuestos:
+\begin{equation}
+\vec p_1=\vec p,
+\qquad
+\vec p_2=-\vec p.
+\label{eq:sr3-positronium-momentum}
+\end{equation}
+Si \(M\) es la masa del positronio, la conservación de la energía da
+\begin{equation}
+Mc^2
+=E_1+E_2
+=c|\vec p_1|+c|\vec p_2|
+=2c|\vec p|.
+\end{equation}
+Por tanto,
+\begin{equation}
+\boxed{
+|\vec p|=\frac{Mc}{2},
+\qquad
+E_1=E_2=\frac{Mc^2}{2}
+}.
+\label{eq:sr3-positronium-result}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_22.png}
+\caption{Un estado de positronio en reposo se desintegra en dos fotones con momentos iguales y opuestos; \(Mc^2=2c|\vec p|\).}
+\lectureframe{01:40:55}
+\end{figure}
+
+Este proceso no tiene un análogo newtoniano en el que se conserve la suma de las masas de las partículas. El estado inicial tiene masa invariante no nula, mientras que cada fotón saliente carece de masa. Lo que se conserva es el cuadrimomento total. La energía en reposo almacenada se ha convertido en energía electromagnética que se propaga. Con la relación cuántica \(|\vec p|=h/\lambda\), el mismo resultado determina la longitud de onda del fotón; la energía correspondiente está muy por encima del intervalo óptico.
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo se conserva el momento angular en la desintegración?}
+\lecturerresponse{La radiación saliente debe transportar el mismo momento angular total que el estado inicial. En el canal de dos fotones, las helicidades de los fotones y su estado orbital se combinan de manera adecuada. Más precisamente, el para-positronio, que es un singlete de espín, se desintegra predominantemente en dos fotones, mientras que el orto-positronio, que es un triplete de espín, lo hace predominantemente en tres; el canal permitido respeta todos los números cuánticos. \lecturetimestamp{01:42:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué una partícula que se mueve a la velocidad de la luz debe carecer de masa?}
+\lecturerresponse{Para una energía finita y no nula, el factor \(\gamma\) diverge cuando \(v\to c\). La relación invariante \(E^2-\vec p^{\,2}c^2=m^2c^4\) muestra que una partícula cuyo cuadrimomento es nulo tiene \(m=0\). A la inversa, una partícula libre sin masa tiene una línea de universo nula y se propaga a \(c\). \lecturetimestamp{01:42:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Podría ese mismo estado neutro desintegrarse en gravitones en vez de fotones?}
+\lecturerresponse{En principio, los estados finales gravitacionales están permitidos cuando los números cuánticos lo permiten, pero la fracción de desintegración gravitacional es extraordinariamente menor que la electromagnética. La contabilidad cinemática seguiría usando la misma conservación del cuadrimomento y \(E=c|\vec p|\) para cada cuanto sin masa. \lecturetimestamp{01:43:20}}
+\end{classroomqa}
+
+\subsection{Un vértice de desintegración}
+
+Una desintegración es local: la línea de universo de la partícula madre termina en un suceso del espacio-tiempo y allí comienzan las líneas de universo de los fotones salientes. Las interacciones con los detectores pueden extrapolarse hacia atrás para reconstruir ese vértice común. Si los dos fotones se emitieran en sucesos distintos, sus trayectorias nulas extrapoladas hacia atrás no se encontrarían en un mismo punto.
+
+\begin{classroomqa}
+\audiencequestion{¿Deben emitirse los dos fotones simultáneamente en todos los marcos?}
+\lecturerresponse{Se originan en el mismo suceso del espacio-tiempo, no en dos sucesos separados espacialmente cuya simultaneidad pudiera depender del marco. Todos los marcos de Lorentz concuerdan en que un suceso es un mismo suceso. La mecánica cuántica asigna a la partícula madre una incertidumbre finita en la posición, por lo que el vértice reconstruido es una distribución y no un punto clásico conocido con perfección. \lecturetimestamp{01:44:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué la norma de la cuadrivelocidad es igual a uno?}
+\lecturerresponse{El tiempo propio se definió mediante \(d\tau^2=dt^2-d\vec x^{\,2}\) en unidades \(c=1\). Al dividir por \(d\tau^2\) se obtiene \((dt/d\tau)^2-(d\vec x/d\tau)^2=1\), que es precisamente \((u^0)^2-\vec u^{\,2}=1\). Por tanto, la normalización está incorporada en la definición del tiempo propio. \lecturetimestamp{01:45:38}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Aporta \(u^0=dt/d\tau\) una interpretación más profunda de la energía?}
+\lecturerresponse{Proporciona la útil identidad \(E=mc^2\,dt/d\tau=\gamma mc^2\): en reposo, la razón entre el tiempo coordenado y el tiempo propio es uno, y cuando hay movimiento es el factor de Lorentz. Más allá de expresar esa dependencia de la velocidad, la identidad por sí sola no añade un principio dinámico independiente. \lecturetimestamp{01:46:36}}
+\end{classroomqa}
+
+\section{La conservación requiere un sistema cerrado}
+
+La afirmación
+\begin{equation}
+\sum p^\mu_{\mathrm{initial}}
+=
+\sum p^\mu_{\mathrm{final}}
+\end{equation}
+se aplica a un sistema aislado que contiene todo aquello que intercambia energía y momento. En los laboratorios reales hay campos eléctricos y magnéticos parásitos, partículas del entorno, gravedad, soportes y detectores. Si se dejan fuera del balance esos grados de libertad, el subsistema puede presentar un pequeño desequilibrio aparente; el cuadrimomento que falta ha pasado al entorno.
+
+\begin{classroomqa}
+\audiencequestion{¿Podría la suma de los momentos de los dos fotones diferir ligeramente de cero?}
+\lecturerresponse{No, si se trata del sistema aislado completo. En un experimento real, un campo no modelado o el retroceso del aparato pueden transportar la pequeña cantidad restante, de modo que el subsistema seleccionado quizá no parezca cerrado. Una vez incluidas todas las partes que interactúan, el cuadrimomento total se conserva. \lecturetimestamp{01:47:51}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Debilita el principio de incertidumbre la conservación del momento?}
+\lecturerresponse{No. Un estado cuántico puede tener incertidumbre en la posición o en el momento, y un conocimiento más preciso de uno ensancha la distribución del otro, pero la simetría de traslación sigue implicando la conservación exacta del momento total en un sistema aislado. La incertidumbre cuántica concierne a los resultados y las distribuciones, no a un fallo de la ley de conservación. \lecturetimestamp{01:49:19}}
+\end{classroomqa}
+
+\section{Energía exacta y aproximada}
+
+Es importante no confundir la fórmula exacta con su desarrollo para velocidades bajas:
+\begin{align}
+E_{\mathrm{exact}}
+&=
+\frac{mc^2}{\sqrt{1-v^2/c^2}},
+\label{eq:sr3-exact-repeated}\\
+E_{\mathrm{slow}}
+&=
+mc^2+\frac12mv^2
++O\!\left(\frac{mv^4}{c^2}\right).
+\label{eq:sr3-approx-repeated}
+\end{align}
+La primera es válida para todo \(v<c\). La segunda solo es útil cuando \(v/c\ll1\).
+
+\begin{classroomqa}
+\audiencequestion{¿La fórmula de la energía era solo una aproximación?}
+\lecturerresponse{\(E=mc^2+mv^2/2+\cdots\) es la aproximación. El resultado exacto es \(E=mc^2/\sqrt{1-v^2/c^2}\). El factor \(v^2/c^2\) hace que el denominador sea adimensional, mientras que el numerador \(mc^2\) tiene unidades de energía. \lecturetimestamp{01:49:56}}
+\end{classroomqa}
+
+\subsection{El espacio-tiempo en perspectiva}
+
+El último esquema en la pizarra vuelve a la geometría del experimento. Antes de desintegrarse, el positronio en reposo sigue una línea de universo temporal vertical. En el suceso de desintegración, esa línea termina y de allí parten dos líneas de universo nulas de los fotones en direcciones espaciales opuestas.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_23.png}
+\caption{La línea de universo del positronio termina en un suceso de desintegración, del que emergen las dos líneas de universo nulas de los fotones.}
+\lectureframe{01:53:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué determina el eje a lo largo del cual emergen los dos fotones?}
+\lecturerresponse{Para un estado no polarizado hay una distribución angular cuántica, y cada desintegración individual selecciona aleatoriamente una dirección de esa distribución. Una vez determinada una dirección, la conservación del momento hace que los fotones salgan en sentidos opuestos; no elige ese eje de antemano. \lecturetimestamp{01:53:55}}
+\end{classroomqa}
+
+\section{Lo que dicen las ecuaciones de movimiento libre}
+
+La acción invariante no se eligió suponiendo una ley de fuerzas. Se escogió como el escalar de Lorentz local más sencillo que reproduce el lagrangiano newtoniano de una partícula libre a velocidades bajas. Al variarla se obtiene
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot x^i}\right)=0,
+\end{equation}
+por lo que
+\begin{equation}
+\frac{dp_i}{dt}=0.
+\end{equation}
+Para una masa fija distinta de cero, esto equivale a una cuadrivelocidad constante:
+\begin{equation}
+\frac{du^\mu}{d\tau}=0.
+\end{equation}
+Por tanto, la línea de universo es recta en el espacio-tiempo. Esa única afirmación geométrica contiene tanto la velocidad uniforme como la dirección espacial constante.
+
+\begin{classroomqa}
+\audiencequestion{¿Hay una justificación más gradual, desde los principios básicos, para la acción relativista, análoga a elegir la acción clásica de modo que reproduzca las ecuaciones de Newton?}
+\lecturerresponse{Para la partícula libre, la invariancia de Lorentz, la localidad a lo largo de la línea de universo y el límite newtoniano a bajas velocidades determinan la acción más sencilla salvo por una constante multiplicativa. Su ecuación de Euler--Lagrange da entonces un momento constante, exactamente el resultado newtoniano en ausencia de fuerzas. Las interacciones ofrecen pruebas adicionales; más adelante se acoplará una partícula cargada a campos eléctricos y magnéticos. \lecturetimestamp{01:54:27}}
+\end{classroomqa}
+
+\section{Dos límites clásicos independientes}
+
+El límite no relativista y el límite clásico de la mecánica cuántica son operaciones distintas. Las correcciones relativistas están gobernadas por la razón \(v/c\). Los efectos cuánticos están gobernados por las escalas de acción relativas a \(\hbar\), junto con propiedades como la masa, el tamaño del sistema y la suavidad con que varían las fuerzas externas.
+
+\begin{classroomqa}
+\audiencequestion{¿Es el límite de baja velocidad que recupera la mecánica newtoniana el mismo límite en que la mecánica cuántica se vuelve clásica?}
+\lecturerresponse{No. El límite relativista concierne a \(v/c\); el límite cuántico-clásico concierne a \(\hbar\) en relación con la acción característica, y suele hacerse efectivo para masas grandes o fuerzas que varían suavemente. Un sistema puede ser cuántico pero no relativista, relativista pero esencialmente clásico, ambas cosas o ninguna de las dos. \lecturetimestamp{01:57:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Hay una incompatibilidad entre la relatividad especial y la mecánica cuántica?}
+\lecturerresponse{No. La teoría cuántica relativista es coherente y da lugar a la teoría cuántica de campos. La famosa tensión aún no resuelta concierne a la incorporación de la gravedad a la mecánica cuántica, no a la combinación de la relatividad especial con los principios cuánticos. La gravedad no ha intervenido en la discusión actual sobre partículas libres. \lecturetimestamp{01:59:01}}
+\end{classroomqa}
+
+Por ahora, el resultado para una partícula libre de fuerzas es completo: una partícula masiva sigue una línea de universo temporal recta, su masa invariante fija la norma de su cuadrimomento, y la energía y el momento son las cuatro componentes de un mismo objeto conservado. El siguiente paso, más allá de este movimiento libre, será introducir la carga y los campos electromagnéticos.

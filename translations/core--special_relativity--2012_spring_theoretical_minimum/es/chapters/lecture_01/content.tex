@@ -1,0 +1,529 @@
+\chapter{Marcos de referencia, luz y geometría del espacio-tiempo}
+
+\section{El curso vuelve a empezar con la relatividad}
+
+Este trimestre volvemos a la física clásica, pero no a la visión newtoniana en la que el espacio y el tiempo son independientes y universales. Los temas inmediatos son la relatividad especial y la teoría clásica de campos, en particular el electromagnetismo. No recurriremos a la mecánica cuántica. El curso anterior de mecánica aportó el principio de acción y las formulaciones hamiltoniana y lagrangiana; el curso de cuántica presentó sus principios básicos, aunque incluso hubo que dejar el oscilador armónico para retomarlo más adelante. La luz también estuvo prácticamente ausente. Ahora subsanaremos esa omisión, porque la luz es intrínsecamente relativista.
+
+La mayoría de la clase ya ha estudiado relatividad especial. Aun así, al preguntar a mano alzada, la mayoría prefiere reconstruirla desde el principio. Es una buena elección. La transformación de Lorentz no debe presentarse como una fórmula que haya que memorizar. Debe surgir del hecho de que las mediciones operativas del espacio y el tiempo no pueden satisfacer a la vez la cinemática galileana y la ley observada de propagación de la luz.
+
+\subsection{Las coordenadas como dispositivos físicos}
+
+Empecemos con un sistema cartesiano: un origen, tres ejes orientados y las coordenadas \(x,y,z\). Una realización concreta consistiría en llenar el espacio con una retícula rígida de reglas de un metro. Para identificar un suceso, y no solo un lugar, cada punto de la retícula también lleva un reloj. Así, un suceso queda etiquetado como
+\begin{equation}
+(x,y,z,t).
+\end{equation}
+Los relojes deben sincronizarse mediante un procedimiento explícito; ese requisito pronto será la parte delicada de la construcción.
+
+\begin{definition}
+Un sistema de referencia es una retícula de coordenadas espaciales junto con un sistema distribuido de relojes sincronizados. Un sistema de referencia inercial es un sistema que no rota ni acelera y en el que toda partícula libre de fuerzas se mueve con velocidad constante.
+\end{definition}
+
+Dos sistemas de referencia en movimiento uniforme relativo asignan coordenadas distintas al mismo suceso. Un punto fijo en el sistema en movimiento tiene una coordenada constante \(x'\), aunque su coordenada sin primas cambie. En la física newtoniana, la relación espacial para el movimiento en la dirección \(x\) es
+\begin{equation}
+x'=x-vt.
+\label{eq:sr1-galilean-space}
+\end{equation}
+La hipótesis newtoniana menos evidente es que todos los relojes bien ajustados permanecen sincronizados de manera universal:
+\begin{equation}
+t'=t.
+\label{eq:sr1-absolute-time}
+\end{equation}
+
+\subsection{El principio de relatividad}
+
+La relatividad no empezó con Einstein. Galileo y Newton ya empleaban el principio de que las leyes de la física tienen la misma forma en todos los sistemas de referencia inerciales. La ley de Newton \(F=ma\), la ley de gravitación inversa al cuadrado y la fuerza de Coulomb no adquieren una forma nueva por el mero hecho de que el laboratorio se mueva uniformemente.
+
+La prueba habitual consiste en un vagón de tren cerrado. Si el tren se mueve suavemente y las ventanas no permiten ver el exterior, hacer malabarismos se comporta igual que en una habitación en reposo. Las pelotas suben, caen y vuelven a la mano como de costumbre. Un experimento realizado dentro del vagón no puede revelar su velocidad uniforme. La aceleración o la rotación sí pueden detectarse desde dentro; el movimiento de traslación uniforme, no.
+
+Einstein añade una ley física a este principio anterior: la luz en el vacío se propaga a
+\begin{equation}
+c \simeq 1.86\times 10^5\ {\rm miles/s}
+   \simeq 3.00\times 10^8\ {\rm m/s}.
+\end{equation}
+Si esta es una ley de la naturaleza y las leyes son iguales en todos los sistemas de referencia inerciales, todo observador inercial debe medir el mismo \(c\).
+
+\section{Por qué falla la transformación galileana}
+
+Una sola dimensión espacial basta para mostrar el conflicto. Dibujemos un diagrama del espacio-tiempo con la coordenada horizontal \(x\) y la vertical \(t\). Un pulso de luz emitido desde el origen y que se propaga hacia la derecha sigue la trayectoria
+\begin{equation}
+x=ct.
+\label{eq:sr1-light-right}
+\end{equation}
+El origen de un sistema que se mueve hacia la derecha con rapidez \(v\) está sobre
+\begin{equation}
+x=vt,
+\qquad
+x'=0.
+\label{eq:sr1-moving-origin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_01.png}
+\caption{El rayo de luz que se propaga hacia la derecha y el origen en movimiento \(x=vt\), que el observador con primas etiqueta como \(x'=0\).}
+\lectureframe{00:15:24}
+\end{figure}
+
+Apliquemos al rayo de luz las reglas galileanas \eqref{eq:sr1-galilean-space}--\eqref{eq:sr1-absolute-time}:
+\begin{align}
+x'&=x-vt=(c-v)t,\\
+t'&=t.
+\end{align}
+Por tanto, el observador con primas inferiría
+\begin{equation}
+x'=(c-v)t',
+\end{equation}
+Así, la rapidez de la luz que se propaga hacia la derecha sería \(c-v\). Para un rayo que se propaga hacia la izquierda \(x=-ct\),
+\begin{equation}
+x'=-(c+v)t',
+\end{equation}
+cuya rapidez tiene magnitud \(c+v\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_02.png}
+\caption{La sustitución galileana predice \(c-v\) para el rayo de luz que se propaga hacia la derecha, en contradicción con que la rapidez de la luz sea independiente del sistema de referencia.}
+\lectureframe{00:17:23}
+\end{figure}
+
+La suma ordinaria de velocidades es una excelente aproximación para el movimiento mecánico lento, pero las mediciones de la luz no muestran los valores predichos \(c-v\) y \(c+v\). Hay que reconsiderar la ley de transformación, no el postulado sobre la luz. El principal sospechoso es la afirmación aparentemente inocua \(t'=t\): supone una noción absoluta de simultaneidad.
+
+\section{Sincronización de relojes distantes}
+
+Afirmar que dos relojes situados en lugares distintos marcan la misma hora requiere un experimento. Situemos un tercer observador en el punto medio entre ellos y establezcamos con reglas métricas que las distancias son iguales. Indiquemos a los dos relojes de los extremos que emitan destellos cuando cada uno marque el mediodía. Si los destellos llegan simultáneamente al punto medio, diremos que los relojes están sincronizados.
+
+No se trata de una definición filosófica impuesta a la física. Es una operación reproducible que se realiza con relojes, distancias y señales luminosas.
+
+Ahora supongamos que un observador pasa por el punto medio. Los destellos de los extremos, que llegan simultáneamente al punto medio en reposo, no llegan simultáneamente a ese observador en movimiento: mientras la luz está en camino, el observador se acerca a un destello y se aleja del otro. Por tanto, los sucesos que los relojes en reposo juzgan simultáneos no lo son según el procedimiento de sincronización, igualmente válido, del sistema en movimiento.
+
+En el sistema sin primas, una línea de sucesos simultáneos es
+\begin{equation}
+t=\text{constant}.
+\end{equation}
+La línea correspondiente con primas estará inclinada en el diagrama \(x\)-\(t\). Antes de preguntar por las fórmulas de transformación, podemos construir esa inclinación mediante señales luminosas.
+
+\section{Representación del sistema en movimiento mediante señales luminosas}
+
+Fijemos \(c=1\). Se puede medir la distancia en segundos luz si el tiempo se mide en segundos, o medir el tiempo como el que tarda la luz en recorrer una unidad de longitud elegida. Con cualquiera de estas convenciones, los rayos de luz son
+\begin{equation}
+x=\pm t,
+\label{eq:sr1-light-units}
+\end{equation}
+y, por tanto, forman líneas \(45^\circ\) en ejes con la misma escala.
+
+Dibujemos primero los rayos de luz. Luego tracemos una familia de observadores en reposo en el sistema en movimiento:
+\begin{equation}
+x=vt,\qquad x=vt+1,\qquad x=vt+2.
+\label{eq:sr1-moving-family}
+\end{equation}
+Sus líneas de universo son paralelas porque los observadores mantienen separaciones fijas en su propia retícula inercial.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_03.png}
+\caption{Rayos de luz a \(45^\circ\) y líneas de universo paralelas \(x=vt\), \(x=vt+1\) y \(x=vt+2\) de la retícula de coordenadas en movimiento.}
+\lectureframe{00:29:55}
+\end{figure}
+
+\subsection{Fred, Mary y Seymour}
+
+Supongamos que Fred ocupa \(x=vt\), Mary ocupa \(x=vt+1\) y Seymour ocupa \(x=vt+2\). En el origen \(O\), Fred envía una señal luminosa hacia la derecha, dirigida a Mary. Seymour envía una señal hacia la izquierda, de modo que ambos destellos lleguen a Mary en el mismo suceso \(a\). Según la regla de sincronización del punto medio del sistema en movimiento, el suceso de emisión de Seymour \(b\) es simultáneo con la emisión de Fred en \(O\). Por tanto, la línea que pasa por \(O\) y \(b\) es \(t'=0\).
+
+El suceso \(a\) pertenece tanto a
+\begin{equation}
+x=t
+\end{equation}
+como a
+\begin{equation}
+x=vt+1.
+\end{equation}
+Por consiguiente,
+\begin{equation}
+t_a=x_a=\frac{1}{1-v}.
+\label{eq:sr1-event-a}
+\end{equation}
+
+El rayo de luz que pasa por \(a\) y se propaga hacia la izquierda satisface
+\begin{equation}
+x+t=x_a+t_a=\frac{2}{1-v}.
+\label{eq:sr1-ab-light}
+\end{equation}
+El suceso \(b\) también está en la línea de universo de Seymour,
+\begin{equation}
+x-vt=2.
+\label{eq:sr1-seymour-line}
+\end{equation}
+Al resolver \eqref{eq:sr1-ab-light} y \eqref{eq:sr1-seymour-line} se obtiene
+\begin{align}
+t_b&=\frac{2v}{1-v^2},\\
+x_b&=\frac{2}{1-v^2}.
+\label{eq:sr1-event-b}
+\end{align}
+Por tanto, la pendiente de la recta que va de \(O\) a \(b\) es
+\begin{equation}
+\frac{t_b}{x_b}=v,
+\end{equation}
+y la línea de simultaneidad del sistema en movimiento es
+\begin{equation}
+t=vx,
+\qquad
+t'=0.
+\label{eq:sr1-moving-simultaneity}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.93\textwidth]{lecture_01_figure_04.png}
+\caption{Construcción de sincronización de Fred--Mary--Seymour. Las señales luminosas que llegan a la vez identifican \(O\) y \(b\) como sucesos simultáneos en el sistema en movimiento, lo que da \(t=vx\).}
+\lectureframe{00:44:38}
+\end{figure}
+
+Ahora los dos ejes del sistema con primas tienen formas paralelas:
+\begin{align}
+x'=0 &\quad\Longleftrightarrow\quad x=vt,\\
+t'=0 &\quad\Longleftrightarrow\quad t=vx.
+\end{align}
+Son reflejos el uno del otro respecto de la línea de luz que se propaga hacia la derecha \(x=t\). La geometría ya ha sustituido la simultaneidad universal.
+
+\begin{classroomqa}\audiencequestion{¿Qué ocurre con la construcción cuando \(v=1\) o \(v=-1\)?}\lecturerresponse{Los denominadores de \eqref{eq:sr1-event-a}--\eqref{eq:sr1-event-b} se anulan y las intersecciones pertinentes se alejan hasta el infinito. En \(\lvert v\rvert=1\), un observador material se movería sobre un rayo de luz y no podría completar el intercambio ordinario en el punto medio. Este comportamiento singular es la primera advertencia geométrica de que \(c\) es una rapidez límite. \lecturetimestamp{00:40:43}}\end{classroomqa}
+
+\section{Derivación de la transformación de Lorentz}
+
+La condición \(x'=0\) sobre \(x=vt\) exige que \(x'\) contenga el factor \(x-vt\). Del mismo modo, \(t'=0\) sobre \(t=vx\) exige el factor \(t-vx\). La homogeneidad del espacio-tiempo hace que la transformación sea lineal, así que escribimos
+\begin{align}
+x'&=(x-vt)f(v),\\
+t'&=(t-vx)g(v).
+\label{eq:sr1-linear-ansatz}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_05.png}
+\caption{La transformación lineal se construye a partir de las dos condiciones de anulación, con factores de escala dependientes de la velocidad \(f(v)\) y \(g(v)\).}
+\lectureframe{00:49:35}
+\end{figure}
+
+A lo largo de un rayo de luz que se propaga hacia la derecha \(x=t\), la invariancia de la rapidez de la luz exige que \(x'=t'\). La ecuación~\eqref{eq:sr1-linear-ansatz} pasa entonces a ser
+\begin{align}
+x'&=(1-v)x f(v),\\
+t'&=(1-v)x g(v),
+\end{align}
+y, por tanto,
+\begin{equation}
+f(v)=g(v).
+\label{eq:sr1-f-equals-g}
+\end{equation}
+Así, queda un único factor de escala común:
+\begin{align}
+x'&=(x-vt)f(v),\\
+t'&=(t-vx)f(v).
+\label{eq:sr1-direct-unscaled}
+\end{align}
+Esta es, en esencia, la línea argumental concisa que empleó Einstein en su primer artículo sobre la relatividad: la simultaneidad operacional y la rapidez invariante de la luz determinan la transformación.
+
+\subsection{La reciprocidad fija el factor de escala}
+
+No hay ningún sistema de referencia inercial privilegiado que esté \emph{realmente en movimiento}. Si el sistema con primas se mueve a \(v\) respecto del sistema sin primas, el sistema sin primas se mueve a \(-v\) respecto del sistema con primas. Por tanto, la transformación inversa debe tener la misma forma, pero con el signo de \(v\) invertido:
+\begin{align}
+x&=(x'+vt')f(v),\\
+t&=(t'+vx')f(v).
+\label{eq:sr1-inverse-unscaled}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_06.png}
+\caption{La reciprocidad da la transformación inversa al invertir la velocidad relativa y conservar el mismo factor de escala.}
+\lectureframe{00:55:12}
+\end{figure}
+
+Sustituyamos \eqref{eq:sr1-direct-unscaled} en la primera de \eqref{eq:sr1-inverse-unscaled}:
+\begin{align}
+x
+&=\left[(x-vt)f(v)+v(t-vx)f(v)\right]f(v)\\
+&=x(1-v^2)f(v)^2.
+\end{align}
+Como esta composición debe ser la identidad,
+\begin{equation}
+(1-v^2)f(v)^2=1,
+\end{equation}
+y, por tanto,
+\begin{equation}
+f(v)=\pm\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr1-factor-roots}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_07.png}
+\caption{La composición de las transformaciones directa e inversa fija la magnitud del factor común \(f(v)\).}
+\lectureframe{00:59:31}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Por qué se descarta la raíz cuadrada negativa en \eqref{eq:sr1-factor-roots}?}\lecturerresponse{Con velocidad relativa nula, la transformación debe aproximarse continuamente a la identidad: \(x'=x\) y \(t'=t\). La rama negativa daría, en cambio, \(x'=-x\) y \(t'=-t\), es decir, una inversión de las dos orientaciones de las coordenadas. Elegirla introduciría una reflexión abrupta en lugar de un sistema de referencia que se mueve de manera continua. \lecturetimestamp{00:59:27}}\end{classroomqa}
+
+Con la rama positiva, la transformación de Lorentz en unidades \(c=1\) es
+\begin{align}
+x'&=\frac{x-vt}{\sqrt{1-v^2}},&
+t'&=\frac{t-vx}{\sqrt{1-v^2}}.
+\label{eq:sr1-lorentz-c1}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_08.png}
+\caption{Transformación de Lorentz completa en unidades en las que la rapidez de la luz es uno.}
+\lectureframe{01:02:05}
+\end{figure}
+
+\subsection{Restablecimiento de las unidades habituales}
+
+El análisis dimensional permite restablecer las unidades habituales. El denominador solo puede depender de la razón adimensional \(v^2/c^2\), mientras que \(vx\) en la ecuación temporal debe convertirse en \(vx/c^2\):
+\begin{align}
+x'&=\gamma(x-vt),&
+t'&=\gamma\left(t-\frac{vx}{c^2}\right),
+\label{eq:sr1-lorentz-dimensional}\\
+\gamma&=\frac{1}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr1-gamma}
+\end{align}
+La transformación inversa es
+\begin{align}
+x&=\gamma(x'+vt'),&
+t&=\gamma\left(t'+\frac{vx'}{c^2}\right).
+\label{eq:sr1-lorentz-inverse-dimensional}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_09.png}
+\caption{Fórmulas de Lorentz con \(c\) restablecida: \(v^2/c^2\) controla la escala y \(vx/c^2\) mezcla la posición con el tiempo.}
+\lectureframe{01:05:01}
+\end{figure}
+
+Para \(v\ll c\),
+\begin{equation}
+\gamma=1+\frac{1}{2}\frac{v^2}{c^2}+O\!\left(\frac{v^4}{c^4}\right),
+\end{equation}
+y la transformación se reduce a
+\begin{equation}
+x'\approx x-vt,
+\qquad
+t'\approx t.
+\end{equation}
+A las velocidades terrestres, las razones suelen ser muy pequeñas, lo que explica el éxito de la cinemática newtoniana. Cerca de \(c\), las correcciones se vuelven grandes.
+
+El movimiento se eligió a lo largo del eje \(x\). Un brazo de medición transversal no puede distinguir un sistema inercial del otro sin violar la reciprocidad, por lo que
+\begin{equation}
+y'=y,
+\qquad
+z'=z.
+\end{equation}
+
+\section{Medición de una regla en movimiento}
+
+La longitud es la separación entre los dos extremos medida simultáneamente en el sistema que realiza la medición. No es el tamaño angular aparente de un objeto fotografiado, pues los retrasos de propagación de la luz plantean un problema óptico aparte.
+
+Supongamos que una regla está en reposo en el sistema sin primas y sus extremos están en
+\begin{equation}
+x=0,
+\qquad
+x=1.
+\end{equation}
+El observador con primas mide los sucesos correspondientes a los extremos en una misma sección de simultaneidad con primas, por ejemplo \(t'=0\). En el extremo lejano \(x=1\),
+\begin{equation}
+t'=0
+\quad\Longrightarrow\quad
+t=\frac{vx}{c^2}.
+\end{equation}
+Volvamos por un momento a \(c=1\): este suceso tiene \(t=v\), y
+\begin{equation}
+x'=\frac{x-vt}{\sqrt{1-v^2}}
+   =\frac{1-v^2}{\sqrt{1-v^2}}
+   =\sqrt{1-v^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_10.png}
+\caption{Las líneas de universo \(x=0\) y \(x=1\) de una regla en reposo en el sistema sin primas; un observador en movimiento debe compararlas en una misma sección de \(t'\).}
+\lectureframe{01:11:14}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_11.png}
+\caption{La medición simultánea de los extremos en el sistema con primas da el factor de contracción \(\sqrt{1-v^2}\) en unidades \(c=1\).}
+\lectureframe{01:16:03}
+\end{figure}
+
+Al restablecer las unidades y considerar una longitud propia general \(L_0\),
+\begin{equation}
+L=\frac{L_0}{\gamma}
+ =L_0\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr1-length-contraction}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{Si el extremo lejano de la regla está en \(x=1\), ¿no debería su coordenada ser también \(x'=1\)?}\lecturerresponse{No. La regla está en reposo en el sistema sin primas, así que \(x=0\) y \(x=1\) etiquetan allí sus extremos fijos. La coordenada con primas del extremo lejano cambia con el tiempo. Su valor en la sección de medición \(t'=0\) es justamente lo que calcula la transformación de Lorentz. \lecturetimestamp{01:14:24}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Cómo es posible que cada observador inercial afirme, sin contradicción, que la regla del otro es más corta?}\lecturerresponse{Miden pares distintos de sucesos en los extremos. El observador sin primas exige que \(t\) sea igual; el observador con primas exige que \(t'\) lo sea. Como la simultaneidad depende del sistema de referencia, esos dos pares de sucesos no son el mismo par. Por tanto, la reciprocidad no produce ninguna contradicción. \lecturetimestamp{01:16:28}}\end{classroomqa}
+
+Conviene explicitar la versión operacional. Coloquemos relojes sincronizados y asistentes a lo largo del sistema de medición. En un instante local prefijado, cada asistente registra la posición del extremo que pasa cerca. La diferencia entre esas dos posiciones registradas simultáneamente da la longitud de la regla en ese sistema. Nada depende de cómo se vea la regla.
+
+\begin{classroomqa}\audiencequestion{Cuando \(c=1\), ¿una regla de longitud unitaria tiene que medir un segundo luz?}\lecturerresponse{Solo si el tiempo se mide en segundos. También se puede usar el metro para la longitud y medir el tiempo como el que tarda la luz en recorrer un metro. Fijar \(c=1\) relaciona las unidades de tiempo y longitud; no prescribe cuál de las unidades físicas debe elegirse primero. \lecturetimestamp{01:21:17}}\end{classroomqa}
+
+\section{Un reloj en movimiento y la cuestión de los gemelos}
+
+Sigamos ahora un reloj en reposo en el sistema con primas. A lo largo de su línea de universo,
+\begin{equation}
+x'=0.
+\end{equation}
+Comparemos el suceso en el que marca \(t'=1\) con el del origen. La transformación inversa da
+\begin{equation}
+t=\gamma\left(t'+\frac{vx'}{c^2}\right)=\gamma.
+\end{equation}
+Así, una unidad de tiempo transcurrido en el reloj en movimiento corresponde a \(\gamma\) unidades de tiempo coordenado sin primas:
+\begin{equation}
+\Delta t=\gamma\,\Delta\tau,
+\qquad
+\Delta\tau=\frac{\Delta t}{\gamma}.
+\label{eq:sr1-time-dilation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_12.png}
+\caption{Un reloj transportado sobre \(x'=0\) registra menos tiempo transcurrido entre los mismos dos sucesos que el tiempo coordenado en reposo: \(t=\gamma t'\).}
+\lectureframe{01:26:42}
+\end{figure}
+
+El efecto afecta a todos los relojes físicos, no solo a un mecanismo etiquetado como tal. Un reloj de pulsera, una transición atómica, el metabolismo y el envejecimiento biológico siguen el mismo tiempo propio. Un reloj barato comprado en una calle de Nueva York no eludiría la relatividad por ser un Rolex de mala calidad: podría marcar el tiempo con imprecisión, pero el proceso que empleara seguiría sujeto a la misma cinemática.
+
+\begin{classroomqa}\audiencequestion{Si cada observador inercial ve que el reloj del otro marcha más despacio, ¿por qué el gemelo viajero regresa más joven?}\lecturerresponse{Un viaje de ida y vuelta no compara dos líneas de universo inerciales globalmente equivalentes. El viajero debe dar la vuelta y pasar a otro sistema inercial, mientras que el gemelo que se queda permanece en una única línea de universo inercial. El cambio de sentido rompe la simetría del intercambio, por lo que los tiempos propios acumulados pueden diferir. \lecturetimestamp{01:26:37}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Es la aceleración durante el cambio de sentido lo que causa la diferencia de edad?}\lecturerresponse{La aceleración señala dónde se rompe la simetría, pero la diferencia de edad se calcula integrando el tiempo propio a lo largo de las trayectorias completas. El cambio de sentido puede ser breve o tratarse como un cambio entre tramos inerciales; las trayectorias distintas en el espacio-tiempo siguen teniendo tiempos propios distintos. \lecturetimestamp{01:29:20}}\end{classroomqa}
+
+\section{La geometría invariante}
+
+El diagrama de dilatación temporal parece paradójico si se interpreta con geometría euclidiana. La trayectoria inclinada parece una hipotenusa y, sin embargo, acumula menos tiempo propio que la trayectoria vertical. La solución no es un truco algebraico: el espacio-tiempo tiene una métrica distinta.
+
+En un plano euclidiano, una rotación cambia \(x\) y \(y\), pero conserva
+\begin{equation}
+x'^2+y'^2=x^2+y^2.
+\label{eq:sr1-euclidean-invariant}
+\end{equation}
+Es natural comprobar si una transformación de Lorentz conserva \(t^2+x^2\). No lo hace. En unidades \(c=1\),
+\begin{align}
+t'^2
+&=\frac{t^2-2vtx+v^2x^2}{1-v^2},\\
+x'^2
+&=\frac{x^2-2vtx+v^2t^2}{1-v^2}.
+\end{align}
+Al sumar, quedan coeficientes incorrectos. En cambio, al restar se cancelan los términos mixtos y se obtiene
+\begin{align}
+t'^2-x'^2
+&=
+\frac{t^2-2vtx+v^2x^2-x^2+2vtx-v^2t^2}{1-v^2}\\
+&=t^2-x^2.
+\label{eq:sr1-interval-invariance}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_13.png}
+\caption{Al restar las coordenadas transformadas elevadas al cuadrado se cancelan los términos cruzados y aparece el invariante \(t^2-x^2\).}
+\lectureframe{01:38:07}
+\end{figure}
+
+Las coordenadas son componentes que dependen del sistema de referencia. La combinación
+\begin{equation}
+\Delta s^2=c^2\Delta t^2-\Delta x^2
+\label{eq:sr1-spacetime-interval}
+\end{equation}
+es la misma en todos los sistemas de referencia inerciales. Con más dimensiones espaciales,
+\begin{equation}
+\Delta s^2
+=c^2\Delta t^2-\Delta x^2-\Delta y^2-\Delta z^2.
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{¿Por qué es legítimo abandonar la regla geométrica ordinaria según la cual la hipotenusa es más larga?}\lecturerresponse{Esa regla pertenece a la métrica euclidiana definida positiva. Aquí las coordenadas se definieron operacionalmente con reglas, relojes y señales luminosas, y su transformación conserva una diferencia de cuadrados. La geometría de Minkowski no se supone para esquivar la paradoja: se descubre a partir de esas mediciones. \lecturetimestamp{01:43:21}}\end{classroomqa}
+
+\subsection{Tiempo propio}
+
+Para dos sucesos en la línea de universo de un reloj, elijamos el sistema en reposo del reloj. Allí \(\Delta x'=0\), así que la invariancia implica
+\begin{equation}
+c^2\Delta\tau^2
+=c^2\Delta t^2-\Delta x^2,
+\end{equation}
+o bien
+\begin{equation}
+\Delta\tau
+=\sqrt{\Delta t^2-\frac{\Delta x^2}{c^2}}.
+\label{eq:sr1-proper-time}
+\end{equation}
+Este es el tiempo que realmente registra el reloj entre ambos sucesos.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_14.png}
+\caption{En el sistema en reposo del reloj, la separación espacial se anula, así que el intervalo invariante se convierte en el cuadrado de su tiempo propio.}
+\lectureframe{01:41:28}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿El tiempo propio debería ser \(t^2-x^2/c^2\) o su raíz cuadrada?}\lecturerresponse{La diferencia de cuadrados es el cuadrado del tiempo propio. El tiempo transcurrido que marca un reloj es \(\tau=\sqrt{t^2-x^2/c^2}\) para separaciones medidas desde un origen común. Hay que restituir la raíz cuadrada que faltaba en la formulación inicial. \lecturetimestamp{01:51:02}}\end{classroomqa}
+
+\subsection{Separaciones temporales, nulas y espaciales}
+
+Dos sucesos distintos pueden tener intervalo nulo. En unidades \(c=1\),
+\begin{equation}
+\Delta t^2-\Delta x^2=0
+\quad\Longleftrightarrow\quad
+\Delta x=\pm\Delta t.
+\end{equation}
+Un rayo de luz conecta esos sucesos.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_15.png}
+\caption{Los sucesos con separación nula se encuentran sobre \(x=\pm t\), donde el intervalo espacio-temporal y el tiempo propio de la trayectoria luminosa se anulan.}
+\lectureframe{01:46:40}
+\end{figure}
+
+Si la luz pudiera llevar un reloj convencional, no marcaría ningún intervalo de tiempo propio entre la emisión y la absorción. Esto no constituye un sistema de referencia válido en reposo respecto de la luz; expresa el hecho límite de que todo segmento nulo tiene tiempo propio cero.
+
+Los rayos de luz dividen el espacio-tiempo en tres clases invariantes:
+\begin{align}
+c^2\Delta t^2-\Delta x^2&>0
+&&\text{timelike},\\
+c^2\Delta t^2-\Delta x^2&=0
+&&\text{null},\\
+c^2\Delta t^2-\Delta x^2&<0
+&&\text{spacelike}.
+\end{align}
+Un reloj físico puede conectar sucesos con separación temporal, y el intervalo positivo determina su tiempo propio. Ningún objeto sublumínico puede conectar sucesos con separación espacial. Para un par con separación espacial, se puede elegir un sistema de referencia en el que los sucesos sean simultáneos y definir la distancia propia
+\begin{equation}
+\ell_{\rm proper}
+=\sqrt{\Delta x^2-c^2\Delta t^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_16.png}
+\caption{El cono de luz separa los pares con separación temporal, que un reloj puede conectar, de los pares con separación espacial, que ningún objeto sublumínico puede conectar.}
+\lectureframe{01:48:47}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Cuándo debe llamarse tiempo propio al invariante y cuándo longitud propia?}\lecturerresponse{Para un par con separación temporal existe un sistema en reposo en el que ambos sucesos ocurren en el mismo lugar, y el intervalo da el tiempo propio. Para un par con separación espacial existe un sistema en el que ambos ocurren al mismo tiempo, y el invariante con signo opuesto da la distancia propia entre ellos. La separación nula marca la frontera entre ambos casos. \lecturetimestamp{01:47:22}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Dónde debe aparecer \(c\) si las unidades no se eligen de modo que \(c=1\)?}\lecturerresponse{El invariante es \(c^2\Delta t^2-\Delta x^2\), que tiene dimensiones de longitud al cuadrado. Al dividirlo por \(c^2\) se obtiene \(\Delta\tau^2=\Delta t^2-\Delta x^2/c^2\), que tiene dimensiones de tiempo al cuadrado. \lecturetimestamp{01:49:56}}\end{classroomqa}
+
+\section{Simetría de Lorentz y su significado histórico}
+
+\begin{classroomqa}\audiencequestion{¿Puede considerarse una transformación de Lorentz como una rotación?}\lecturerresponse{Sí, pero no como una rotación euclidiana ordinaria. Es una rotación hiperbólica que conserva \(t^2-x^2\). Históricamente, puede describirse como una rotación a través de un ángulo imaginario; la rapidez hiperbólica proporciona la parametrización real moderna. \lecturetimestamp{01:51:40}}\end{classroomqa}
+
+La vía de Einstein estaba estrechamente ligada al electromagnetismo. Según recordó más tarde, ya de adolescente se preguntaba qué ocurriría si persiguiera una onda luminosa. La sustracción galileana de velocidades haría que la onda pareciera inmóvil, pero las ecuaciones de Maxwell no admiten en el vacío una onda luminosa oscilatoria congelada correspondiente. Ese conflicto señalaba a la cinemática, no a una propiedad mecánica peculiar de las reglas de medición.
+
+\begin{classroomqa}\audiencequestion{¿El argumento de Einstein fue principalmente una respuesta a experimentos como el de Michelson--Morley?}\lecturerresponse{El contexto experimental tuvo importancia histórica, pero el propio testimonio de Einstein destacó la estructura de las ecuaciones de Maxwell y el experimento mental de perseguir un haz de luz. Se debate históricamente cuánto sabía de ciertos resultados interferométricos o cuánto se basó en ellos; por eso, el punto físico claro es el conflicto de simetría entre Maxwell y las transformaciones galileanas. \lecturetimestamp{01:52:04}}\end{classroomqa}
+
+Las ecuaciones de Maxwell son invariantes bajo las transformaciones de Lorentz, no bajo las galileanas. Lorentz y FitzGerald ya habían encontrado fórmulas de contracción relacionadas, pero mantuvieron la hipótesis del éter e interpretaron la contracción como una deformación dinámica causada por el movimiento a través de él. Desde esa perspectiva, el efecto podría haber sido una respuesta aproximada del material, sujeta a otras correcciones.
+
+El paso decisivo de Einstein fue establecer como principios cinemáticos exactos el principio de relatividad y la invariancia de la rapidez de la luz. Así, la contracción de la longitud y la dilatación temporal se aplican a toda regla y todo reloj adecuados, porque expresan la geometría que relaciona los sistemas de referencia inerciales, no una fuerza especial ejercida por un éter. La tarea siguiente es formular el movimiento de las partículas dentro de esta geometría.

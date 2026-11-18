@@ -1,0 +1,662 @@
+\chapter{Tensores y fuerza de Lorentz relativista}
+
+Esta noche pasamos de los campos escalares a la electrodinámica. La discusión anterior estableció un patrón útil: una misma acción describe tanto cómo actúa un campo sobre una partícula como la reacción de la partícula sobre el campo. Más adelante aplicaremos ese patrón al campo electromagnético, pero antes necesitamos una notación que permita poner de manifiesto la simetría del cálculo.
+
+Este trabajo preliminar no es un mero adorno. Un signo menos, un cero, un signo igual y la notación vectorial condensan, cada uno, una idea que de otro modo habría que repetir con palabras. La notación tensorial cumple esa misma función en relatividad. Una vez establecidos los índices superiores e inferiores, las contracciones y las leyes de transformación, las fuerzas eléctrica y magnética se combinarán por sí solas en una ecuación cuatridimensional.
+
+\section{Cuadrivectores y economía de índices}
+
+\subsection{Componentes contravariantes y covariantes}
+
+Los índices griegos recorren las cuatro coordenadas del espacio-tiempo, mientras que los índices latinos recorren solo las tres coordenadas espaciales:
+\begin{equation}
+\mu,\nu,\rho,\sigma=0,1,2,3,
+\qquad
+m,n=1,2,3.
+\end{equation}
+Un cuadrivector contravariante genérico es \(A^\mu=(A^0,A^1,A^2,A^3)\).
+Con la convención que usamos aquí,
+\begin{equation}
+\eta_{\mu\nu}
+=
+\begin{pmatrix}
+-1&0&0&0\\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+A_\mu=\eta_{\mu\nu}A^\nu .
+\label{eq:sr6-metric-lowering}
+\end{equation}
+Así, bajar un índice cambia el signo de la componente temporal y deja intactas las componentes espaciales:
+\begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m.
+\label{eq:sr6-component-lowering}
+\end{equation}
+En el espacio-tiempo plano, esta es toda la operación, aunque en relatividad general la misma notación adquirirá un significado geométrico más rico.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_01.png}\caption{La métrica de Minkowski y la regla para bajar el índice de un cuadrivector en términos de sus componentes.}\lectureframe{00:07:45}\end{figure}
+
+Usamos la convención de suma de Einstein cuando un índice aparece repetido una vez arriba y otra abajo. Por tanto, la contracción
+\begin{equation}
+A_\mu B^\mu
+=
+-A^0B^0+A^1B^1+A^2B^2+A^3B^3
+\label{eq:sr6-vector-contraction}
+\end{equation}
+es un escalar. Si una suma no tiene esta forma de índice repetido arriba--abajo, escribiremos explícitamente el signo de sumación.
+
+\subsection{La derivada lleva un índice inferior}
+
+Los cuatro operadores derivada se agrupan en
+\begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\end{equation}
+Al actuar sobre un campo escalar \(\phi(x)\), forman el vector covariante
+\(\partial_\mu\phi\). La manera más rápida de ver dónde va el índice es considerar un desplazamiento infinitesimal:
+\begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr6-total-differential}
+\end{equation}
+El lado izquierdo es la diferencia entre los valores del escalar en dos sucesos próximos y, por tanto, es un escalar. Como \(dx^\mu\) es contravariante, el objeto con el que se contrae debe ser covariante.
+
+\begin{classroomqa}\audiencequestion{Si \(x^\mu\) tiene un índice superior, ¿por qué la derivación respecto de \(x^\mu\) da un índice inferior?}\lecturerresponse{Porque el cambio diferencial \(d\phi=\partial_\mu\phi\,dx^\mu\) es un escalar. Un desplazamiento contravariante solo puede producir ese escalar al contraerse con un gradiente covariante. La posición del índice de la derivada queda, por tanto, fijada por su ley de transformación, no solo por la tipografía de la fracción. \lecturetimestamp{00:10:10}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_02.png}\caption{El diferencial escalar \(d\phi\) permite identificar \(\partial_\mu\phi\) como un vector covariante.}\lectureframe{00:11:05}\end{figure}
+
+La misma regla da otro escalar. Si \(B^\mu(x)\) es un campo cuadrivectorial, entonces
+\begin{equation}
+\partial_\mu B^\mu
+\label{eq:sr6-four-divergence}
+\end{equation}
+es su divergencia en el espacio-tiempo. Combina la derivada temporal de la componente temporal con las tres derivadas espaciales de las componentes espaciales correspondientes.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}\caption{Dos contracciones escalares: \(A_\mu B^\mu\) y la divergencia en el espacio-tiempo \(\partial_\mu B^\mu(x)\).}\lectureframe{00:14:00}\end{figure}
+
+Todo esto tiene un análogo en tres dimensiones. En el espacio euclídeo tridimensional, la métrica es la matriz identidad, así que subir o bajar un índice latino no cambia nada. Por eso, cuando resulte conveniente, subiremos y bajaremos los índices espaciales, pero seguiremos distinguiendo cuidadosamente los índices del espacio-tiempo.
+
+\section{Transformaciones de Lorentz en forma matricial}
+
+Los escalares y los vectores se definen por la manera en que se transforman. Un escalar conserva el mismo valor, mientras que un cuadrivector contravariante obedece
+\begin{equation}
+(A^\mu)'=L^\mu{}_\nu A^\nu.
+\label{eq:sr6-vector-transform}
+\end{equation}
+El índice visible \(\mu\) es libre y aparece en ambos lados. El índice repetido \(\nu\) se suma y desaparece de la ecuación final para las componentes.
+
+Aquí, \emph{transformación de Lorentz} incluye tanto rotaciones espaciales como impulsos de Lorentz. Un impulso puede tener cualquier dirección; las rotaciones pueden componerse con los impulsos para obtener una transformación general. Una rotación espacial, por sí sola, no altera la coordenada temporal.
+
+\begin{classroomqa}\audiencequestion{Cuando rotamos el espacio, ¿el tiempo queda completamente inalterado?}\lecturerresponse{Sí. En una rotación espacial ordinaria, la componente temporal no cambia. Estas rotaciones forman parte del grupo de Lorentz, junto con las transformaciones que mezclan el tiempo y el espacio. \lecturetimestamp{00:16:27}}\end{classroomqa}
+
+Para un impulso de rapidez \(v\) a lo largo del eje \(x\), con \(c=1\),
+\begin{equation}
+L^\mu{}_\nu
+=
+\begin{pmatrix}
+\gamma&-\gamma v&0&0\\
+-\gamma v&\gamma&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr6-boost-matrix}
+\end{equation}
+La multiplicación por \((t,x,y,z)^{\mathsf T}\) da
+\begin{equation}
+\begin{aligned}
+t'&=\gamma(t-vx),\\
+x'&=\gamma(x-vt),\\
+y'&=y,\\
+z'&=z.
+\end{aligned}
+\end{equation}
+La clase va completando la matriz en la pizarra, añadiendo los ceros y las dos entradas unitarias.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}\caption{La matriz del impulso en la dirección \(x\) aplicada a la columna \((t,x,y,z)^{\mathsf T}\).}\lectureframe{00:21:35}\end{figure}
+
+Una rotación de ángulo \(\theta\) en el plano \(y\)--\(z\) tiene, en cambio,
+\begin{equation}
+R_{yz}(\theta)
+=
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&\cos\theta&\sin\theta\\
+0&0&-\sin\theta&\cos\theta
+\end{pmatrix}.
+\label{eq:sr6-yz-rotation}
+\end{equation}
+Esto indica que
+\begin{equation}
+y'=y\cos\theta+z\sin\theta,
+\qquad
+z'=-y\sin\theta+z\cos\theta,
+\end{equation}
+mientras que \(t\) y \(x\) permanecen fijas. Los productos de matrices como \eqref{eq:sr6-boost-matrix} y \eqref{eq:sr6-yz-rotation} generan transformaciones de Lorentz más generales.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}\caption{Una rotación pura en el plano \(y\)--\(z\), que deja intactas \(t\) y \(x\).}\lectureframe{00:23:10}\end{figure}
+
+Un vector covariante se transforma con una matriz cuyos índices ocupan las posiciones opuestas:
+\begin{equation}
+(A_\mu)'=M_\mu{}^\nu A_\nu.
+\label{eq:sr6-covector-transform}
+\end{equation}
+Una observación del público señala en la pizarra que se ha repetido temporalmente un índice libre: el índice \(\mu\) sin sumar del lado izquierdo también debe ser el índice sin sumar del lado derecho. Las dos matrices representan el mismo cambio físico de sistema de referencia y están relacionadas por
+\begin{equation}
+M=\eta L\eta,
+\qquad
+\eta^{-1}=\eta.
+\label{eq:sr6-M-L-relation}
+\end{equation}
+La última identidad se sigue de inmediato, porque cada elemento diagonal de \(\eta\) es su propio inverso.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}\caption{Leyes de transformación contravariante y covariante, relacionadas por \(M=\eta L\eta\).}\lectureframe{00:25:20}\end{figure}
+
+Ya disponemos de la idea central: un cuadrivector es un objeto cuyas componentes se transforman en paralelo con las coordenadas del espacio-tiempo.
+
+\section{Tensores: una transformación por cada índice}
+
+\subsection{De los productos de vectores a la definición}
+
+Un escalar es un tensor de rango cero, un vector es un tensor de rango uno y un objeto con dos índices es un tensor de rango dos. Empecemos con dos vectores y formemos
+\begin{equation}
+T^{\mu\nu}=A^\mu B^\nu.
+\label{eq:sr6-simple-tensor}
+\end{equation}
+Tiene \(4\times4=16\) componentes, que van desde \(A^0B^0\) y \(A^0B^1\) hasta \(A^3B^3\).
+El símbolo \(T^{\mu\nu}\) designa todo este arreglo, no un solo número.
+
+Transformar cada vector por separado da
+\begin{align}
+(A^\mu)'&=L^\mu{}_\sigma A^\sigma,\\
+(B^\nu)'&=L^\nu{}_\tau B^\tau,
+\end{align}
+y, por tanto,
+\begin{equation}
+(T^{\mu\nu})'
+=
+L^\mu{}_\sigma L^\nu{}_\tau T^{\sigma\tau}.
+\label{eq:sr6-rank-two-transform}
+\end{equation}
+Cada índice tensorial recibe su propia matriz de Lorentz. Los índices mudos \(\sigma\) y \(\tau\) pueden cambiarse de nombre a voluntad, siempre que cada par se mantenga coherente.
+
+\begin{classroomqa}\audiencequestion{¿Este reordenamiento supone que las matrices y las componentes de los vectores conmutan?}\lecturerresponse{Son números clásicos ordinarios, no operadores cuánticos que no conmuten, así que conmutan. Además, la misma matriz de Lorentz actúa sobre ambos índices. En este cálculo no hay ningún problema de orden. \lecturetimestamp{00:31:56}}\end{classroomqa}
+
+La regla se extiende de inmediato al rango tres:
+\begin{equation}
+(T^{\mu\nu\lambda})'
+=
+L^\mu{}_\sigma
+L^\nu{}_\tau
+L^\lambda{}_\kappa
+T^{\sigma\tau\kappa},
+\label{eq:sr6-rank-three-transform}
+\end{equation}
+y de manera análoga a cualquier rango. Esta ley de transformación, y no una factorización particular en vectores, es la definición de tensor.
+Por ejemplo,
+\begin{equation}
+A^\mu B^\nu+C^\mu D^\nu
+\end{equation}
+sigue siendo un tensor, aunque en general no pueda escribirse como un solo producto de dos vectores.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}\caption{La secuencia en la pizarra: de un producto de vectores a las leyes de transformación de tensores de rango dos y tres.}\lectureframe{00:33:20}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Qué significa, componente a componente, la multiplicación matricial por un tensor de rango dos?}\lecturerresponse{Fijamos los dos índices de salida y sumamos sobre los dos índices ocultos. Por ejemplo,
+\[
+(T^{31})'=L^3{}_\sigma L^1{}_\tau T^{\sigma\tau}.
+\]
+Como tanto \(\sigma\) como \(\tau\) toman cuatro valores, esta componente de salida contiene dieciséis términos. \lecturetimestamp{00:34:35}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}\caption{Al desarrollar la componente fija \((T^{31})'\) quedan explícitas las dos sumas independientes.}\lectureframe{00:35:55}\end{figure}
+
+Las ecuaciones tensoriales tienen una ventaja decisiva. Si dos tensores tienen componentes iguales en un sistema de referencia, la ley de transformación garantiza que serán iguales en todos los sistemas. De forma equivalente, si todas las componentes de un tensor se anulan en un sistema de referencia, el tensor entero se anula en todos ellos. No basta con que se anule una componente: deben anularse todas. Por eso, una ecuación entre tensores sigue siendo válida al pasar de un sistema de referencia inercial a otro.
+
+\subsection{Subir y bajar los índices de un tensor}
+
+Un índice de un tensor se baja exactamente igual que el de un vector:
+\begin{equation}
+T^\mu{}_\nu=T^{\mu\sigma}\eta_{\sigma\nu}.
+\label{eq:sr6-tensor-lowering}
+\end{equation}
+Para la métrica diagonal de \eqref{eq:sr6-metric-lowering}, cada índice temporal que se baja aporta un signo menos. En consecuencia,
+\begin{equation}
+T_{00}=T^{00},
+\qquad
+T_{01}=-T^{01}.
+\label{eq:sr6-tensor-component-signs}
+\end{equation}
+La primera igualdad contiene dos cambios de signo; la segunda, solo uno.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}\caption{Ejemplos de cómo bajar dos índices tensoriales: dos índices temporales dan dos signos menos, mientras que uno solo da uno.}\lectureframe{00:41:00}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Por qué resulta útil conservar tanto las formas covariantes como las contravariantes? ¿Hay algo más que una notación compacta?}\lecturerresponse{En este cálculo, la ventaja inmediata es que las contracciones quedan compactas y los signos de Minkowski se manejan automáticamente. Hay una distinción geométrica más profunda entre vectores y covectores, pero conviene desarrollarla en relatividad general. En el espacio-tiempo plano, las reglas de los índices son tan eficaces que se suele trabajar directamente con ellas. \lecturetimestamp{00:41:26}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Un tensor tiene siempre cuatro componentes, o eso es propio de la relatividad?}\lecturerresponse{El rango de valores de cada índice viene determinado por la dimensión del espacio. Un tensor de rango uno en un espacio-tiempo cuatridimensional tiene cuatro componentes; uno de rango dos tiene dieciséis. En tres dimensiones, los valores correspondientes son tres y nueve. La regla tensorial en sí no depende de la dimensión. \lecturetimestamp{00:42:55}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Es posible describir de manera más geométrica los objetos covariantes y contravariantes?}\lecturerresponse{Sí, tienen una interpretación geométrica, pero desarrollarla ahora retrasaría aún más la electrodinámica. Para este curso bastan las reglas de transformación y manipulación de índices; la distinción geométrica se volverá ineludible en relatividad general. \lecturetimestamp{00:43:51}}\end{classroomqa}
+
+\section{Simetría, antisimetría y el tensor electromagnético}
+
+En un tensor de rango dos genérico, intercambiar los índices cambia la componente:
+\begin{equation}
+T^{\mu\nu}\neq T^{\nu\mu}.
+\end{equation}
+En efecto, \(A^\mu B^\nu\) y \(A^\nu B^\mu\) son, en general, distintos; las componentes específicas \(A^0B^1\) y \(A^1B^0\) no tienen por qué coincidir.
+
+Hay dos casos especiales importantes. Un tensor simétrico satisface
+\begin{equation}
+T^{\mu\nu}=T^{\nu\mu},
+\end{equation}
+y una combinación simétrica concreta es
+\begin{equation}
+A^\mu B^\nu+A^\nu B^\mu.
+\end{equation}
+Un tensor antisimétrico satisface
+\begin{equation}
+F^{\mu\nu}=-F^{\nu\mu},
+\label{eq:sr6-antisymmetry}
+\end{equation}
+al igual que la combinación
+\begin{equation}
+A^\mu B^\nu-A^\nu B^\mu.
+\end{equation}
+Al igualar los índices en \eqref{eq:sr6-antisymmetry} se obtiene
+\begin{equation}
+F^{00}=-F^{00},
+\qquad
+F^{00}=0,
+\end{equation}
+y el mismo argumento anula todas las componentes diagonales. Por tanto, un tensor antisimétrico de dimensiones \(4\times4\) tiene seis componentes independientes.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}\caption{Comparación en la pizarra de tensores simétricos y antisimétricos de rango dos.}\lectureframe{00:47:20}\end{figure}
+
+Esas seis componentes son justamente las necesarias para las tres componentes de un campo eléctrico y las tres de un campo magnético. Con la convención de signos escrita en la pizarra,
+\begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_1&-E_2&-E_3\\
+E_1&0&-B_3&B_2\\
+E_2&B_3&0&-B_1\\
+E_3&-B_2&B_1&0
+\end{pmatrix}.
+\label{eq:sr6-em-field-tensor}
+\end{equation}
+La reflexión respecto de la diagonal cambia el signo de cada componente. Por tanto, los campos eléctrico y magnético no son objetos relativistas independientes. Un impulso puede mezclarlos, igual que mezcla el espacio y el tiempo: un campo puramente eléctrico en un sistema de referencia puede tener una componente magnética en otro.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}\caption{El arreglo antisimétrico completo, cuyas seis entradas independientes son \(\mathbf E\) y \(\mathbf B\).}\lectureframe{00:50:20}\end{figure}
+
+La pizarra, con \eqref{eq:sr6-em-field-tensor} todavía visible, permanece a la vista mientras la discusión pasa a la dinámica de partículas. Ahora reutilizamos el símbolo \(A_\mu\), ya no para el vector genérico de los ejemplos anteriores, sino para el cuadripotencial electromagnético.
+
+\section{La acción de una partícula cargada}
+
+Hay dos puntos de partida posibles. Podemos estudiar la dinámica del campo mismo, lo que nos llevará a las ecuaciones de Maxwell, o estudiar una partícula cargada que se mueve en un campo prescrito, lo que nos lleva a la fuerza de Lorentz. Empezaremos por la partícula.
+
+A velocidades bajas, buscamos obtener
+\begin{equation}
+m\mathbf a
+=
+e\left(\mathbf E+\mathbf v\times\mathbf B\right),
+\label{eq:sr6-nonrel-lorentz-force}
+\end{equation}
+con un factor \(1/c\) multiplicando el término magnético en la versión en unidades gaussianas. Fijamos \(c=1\). Los dos términos de \eqref{eq:sr6-nonrel-lorentz-force} parecen distintos en la notación de vectores tridimensionales, pero la relatividad debería revelarnos que forman parte de un mismo objeto.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}\caption{La fuerza de Lorentz no relativista: el resultado que debe reproducir la acción invariante.}\lectureframe{00:54:00}\end{figure}
+
+\subsection{Movimiento libre y potencial vector}
+
+Para una partícula relativista libre,
+\begin{equation}
+S_{\mathrm{free}}
+=
+-m\int_1^2 d\tau
+=
+\int_{t_1}^{t_2}dt\,
+\left[-m\sqrt{1-\dot{\mathbf x}^{\,2}}\right],
+\label{eq:sr6-free-action}
+\end{equation}
+donde
+\begin{equation}
+\dot{\mathbf x}^{\,2}
+=
+(\dot x^1)^2+(\dot x^2)^2+(\dot x^3)^2.
+\end{equation}
+La expresión entre corchetes es el lagrangiano de la partícula libre. Ya se calcularon antes su momento y su energía; conservamos la acción y preguntamos qué término dependiente del campo podemos añadir.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}\caption{La acción libre como tiempo propio acumulado a lo largo de una línea de universo.}\lectureframe{00:55:10}\end{figure}
+
+La variable electromagnética fundamental es el potencial cuadrivectorial
+\(A_\mu(x)\). De él se derivarán los campos eléctrico y magnético.
+A lo largo de un pequeño segmento de línea de universo \(dx^\mu\), la contracción
+\begin{equation}
+A_\mu(x)\,dx^\mu
+\end{equation}
+es un escalar. Sumar esos incrementos escalares de un extremo al otro da una interacción invariante de Lorentz:
+\begin{equation}
+S_{\mathrm{int}}
+=
+-e\int_1^2 A_\mu(x)\,dx^\mu.
+\label{eq:sr6-interaction-action}
+\end{equation}
+El coeficiente \(e\) es la carga eléctrica. El signo global corresponde a la convención histórica para la carga; cambiar la convención cambia el signo asignado a \(e\), pero no el contenido de la teoría.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}\caption{Un segmento de línea de universo contraído con el cuadripotencial para formar el incremento escalar \(A_\mu dx^\mu\).}\lectureframe{00:59:20}\end{figure}
+
+\subsection{Forma en tiempo ordinario}
+
+Para usar las conocidas ecuaciones de Euler--Lagrange, dividimos y multiplicamos \eqref{eq:sr6-interaction-action} por \(dt\). Como
+\begin{equation}
+\frac{dx^0}{dt}=1,
+\qquad
+\frac{dx^m}{dt}=\dot x^m,
+\end{equation}
+la acción completa es
+\begin{equation}
+S
+=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_0(x,t)
+-e\dot x^m A_m(x,t)
+\right].
+\label{eq:sr6-complete-particle-action}
+\end{equation}
+Así,
+\begin{equation}
+\boxed{
+L
+=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_0
+-e\dot x^mA_m
+}.
+\label{eq:sr6-charged-lagrangian}
+\end{equation}
+Por ahora, \(A_\mu(x,t)\) es un campo externo conocido. Variamos la línea de universo, no el campo.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}\caption{El acoplamiento invariante a lo largo de la línea de universo, reescrito como un lagrangiano en tiempo ordinario.}\lectureframe{01:05:20}\end{figure}
+
+\section{Desarrollo de la fuerza de Lorentz}
+
+Para una componente espacial \(x^m\), la ecuación de Euler--Lagrange es
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x^m}
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr6-EL}
+\end{equation}
+Al derivar respecto de la velocidad se obtiene
+\begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m.
+\label{eq:sr6-canonical-momentum}
+\end{equation}
+Por desgracia, la letra \(m\) sirve tanto para la masa como para un índice espacial. El contexto permite distinguirlas: la primera \(m\) en \eqref{eq:sr6-canonical-momentum} representa la masa; el subíndice \(m\) identifica una de las tres componentes espaciales.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}\caption{La derivada del momento contiene tanto el término mecánico como el término del potencial vector.}\lectureframe{01:09:20}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Falta algún término en el primer intento de calcular el lado izquierdo?}\lecturerresponse{Sí. Derivar solo el término de la partícula libre omite la dependencia de \(-e\dot x^mA_m\) respecto de la velocidad. La derivada completa es \(m\dot x_m/\sqrt{1-\dot{\mathbf x}^{\,2}}-eA_m\). Esta corrección es esencial, porque su derivada temporal aporta parte de las fuerzas eléctrica y magnética. \lecturetimestamp{01:08:18}}\end{classroomqa}
+
+El lado derecho de \eqref{eq:sr6-EL} es
+\begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\,\partial_mA_0
+-e\,\dot x^n\partial_mA_n.
+\label{eq:sr6-position-derivative}
+\end{equation}
+Por tanto,
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+\right)
+=
+-e\,\partial_mA_0
+-e\,\dot x^n\partial_mA_n.
+\label{eq:sr6-EL-expanded}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{¿Se han intercambiado en este cálculo las componentes espaciales covariantes y contravariantes?}\lecturerresponse{Se han subido y bajado, pero para los índices espaciales latinos, el bloque espacial euclídeo de la métrica es la identidad. Así, \(x_m=x^m\) y \(A_m=A^m\). Solo un índice temporal produce un cambio de signo. \lecturetimestamp{01:09:29}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿También se suman los índices latinos repetidos?}\lecturerresponse{Sí. Un índice latino repetido se suma desde \(1\) hasta \(3\); uno griego repetido, desde \(0\) hasta \(3\). Un índice aislado, como \(m\), que identifica una ecuación espacial, es libre y no se suma. El símbolo de la masa no es un índice. \lecturetimestamp{01:10:00}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_17.png}\caption{La ecuación de Euler--Lagrange antes de desarrollar la derivada temporal total del potencial vector.}\lectureframe{01:14:20}\end{figure}
+
+\subsection{La regla de la cadena a lo largo de la línea de universo en movimiento}
+
+Incluso un campo independiente del tiempo cambia a lo largo de la trayectoria de la partícula, porque esta pasa por distintas posiciones. La derivada total es
+\begin{equation}
+\frac{dA_m(x(t),t)}{dt}
+=
+\partial_0A_m+\dot x^n\partial_nA_m.
+\label{eq:sr6-convective-derivative}
+\end{equation}
+El primer término representa la dependencia explícita del tiempo; el segundo, la dependencia temporal implícita a través de \(x^n(t)\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_18.png}\caption{El potencial vector cambia explícitamente con el tiempo e implícitamente a medida que la partícula se desplaza por el espacio.}\lectureframe{01:17:20}\end{figure}
+
+Al sustituir \eqref{eq:sr6-convective-derivative} en \eqref{eq:sr6-EL-expanded} y pasar los términos del campo al lado derecho, se obtiene
+\begin{equation}
+\begin{aligned}
+m\frac{d}{dt}
+\left(
+\frac{\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+\right)
+&=
+e\left(\partial_0A_m-\partial_mA_0\right)
+\\
+&\quad +e\dot x^n
+\left(\partial_nA_m-\partial_mA_n\right).
+\end{aligned}
+\label{eq:sr6-grouped-force}
+\end{equation}
+Por fin, el cálculo ha revelado su principio organizador. El primer corchete no depende de la velocidad; el segundo es lineal en ella. Esta es exactamente la separación entre las fuerzas eléctrica y magnética.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_19.png}\caption{Los términos de fuerza agrupados en una parte eléctrica independiente de la velocidad y una parte antisimétrica que depende de ella.}\lectureframe{01:23:40}\end{figure}
+
+Definamos las componentes eléctricas según la convención de la derivación:
+\begin{equation}
+E_m=\partial_0A_m-\partial_mA_0.
+\label{eq:sr6-electric-from-potential}
+\end{equation}
+La combinación antisimétrica espacial
+\begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n
+\label{eq:sr6-spatial-curl-tensor}
+\end{equation}
+contiene las tres componentes independientes del rotacional del potencial vector. Su orientación se elige de modo que
+\begin{equation}
+\dot x^nC_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\end{equation}
+La ecuación \eqref{eq:sr6-grouped-force} es, por tanto, la forma relativista en términos del momento de \eqref{eq:sr6-nonrel-lorentz-force}. El factor dentro de la derivada temporal es el momento relativista por unidad de masa, no simplemente la velocidad newtoniana.
+
+Vale la pena repetir la derivación a mano: partir de \eqref{eq:sr6-charged-lagrangian}, calcular ambos lados de \eqref{eq:sr6-EL}, aplicar la regla de la cadena y agrupar los términos según su dependencia de la velocidad. El ejercicio sirve a la vez para practicar mecánica variacional, cálculo multivariable y electrodinámica.
+
+\begin{classroomqa}\audiencequestion{¿Por qué elegir \(-e\int A_\mu dx^\mu\) como interacción electromagnética?}\lecturerresponse{En última instancia, el acoplamiento lo determina la experimentación, pero dos requisitos estructurales hacen de esta la primera opción natural. La acción se construye a partir de incrementos locales a lo largo de la trayectoria, y cada incremento debe ser un escalar. El escalar \(dx^\mu dx_\mu=d\tau^2\) ya aparece en la acción libre. Contraer \(dx^\mu\) con el campo \(A_\mu\) es la forma más sencilla de obtener un nuevo escalar dependiente del campo. Se pueden escribir escalares más elaborados, y la invariancia gauge permitirá precisar más adelante la elección. \lecturetimestamp{01:25:34}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿También se pueden derivar las ecuaciones de Maxwell a partir del principio de mínima acción?}\lecturerresponse{Sí. La acción que tenemos ahora describe una partícula en un campo electromagnético dado. Para obtener las ecuaciones de Maxwell, debemos añadir la acción propia del campo y variar el campo mismo, igual que hicimos con el campo escalar. \lecturetimestamp{01:28:58}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Dónde está la suma en la ecuación de fuerza agrupada?}\lecturerresponse{El índice libre \(m\) identifica una de las tres ecuaciones para las componentes y no se suma. El índice repetido \(n\) en \(\dot x^n(\partial_nA_m-\partial_mA_n)\) se suma sobre \(1,2,3\). Escrita sin la notación de Einstein, esa expresión llevaría una \(\sum_{n=1}^{3}\) explícita. \lecturetimestamp{01:29:26}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Por qué identificar \(\partial_0A_m-\partial_mA_0\) con el campo eléctrico en vez de suponer de antemano la fórmula habitual?}\lecturerresponse{La acción ha producido un término de fuerza que depende de la posición y del tiempo, pero no de la velocidad de la partícula. Esa es precisamente la función operacional del campo eléctrico. Los demás términos antisimétricos multiplican la velocidad y, por tanto, desempeñan el papel magnético. Puede considerarse que este cálculo descubre los campos a partir de la ley de fuerza, en vez de introducir de antemano definiciones separadas. \lecturetimestamp{01:31:05}}\end{classroomqa}
+
+\section{La ley de fuerza manifiestamente covariante}
+
+El lado izquierdo de \eqref{eq:sr6-grouped-force} todavía no está escrito en una forma que manifieste claramente su carácter cuatridimensional. Introduzcamos la cuadrivelocidad
+\begin{equation}
+u^\mu=\frac{dx^\mu}{d\tau}.
+\label{eq:sr6-four-velocity}
+\end{equation}
+Sus componentes espaciales satisfacen
+\begin{equation}
+u^m
+=
+\frac{dx^m}{d\tau}
+=
+\frac{\dot x^m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}.
+\end{equation}
+Multiplicar la ecuación espacial por \(dt/d\tau\) convierte \(d/dt\) en \(d/d\tau\):
+\begin{equation}
+\frac{dt}{d\tau}\frac{d}{dt}
+=
+\frac{d}{d\tau}.
+\end{equation}
+Por tanto, el lado izquierdo se convierte en la parte espacial de la aceleración propia,
+\begin{equation}
+m\frac{d^2x^m}{d\tau^2}.
+\end{equation}
+
+El lado derecho se puede escribir sin separar el tiempo del espacio:
+\begin{equation}
+m\frac{d^2x^m}{d\tau^2}
+=
+e\left(\partial_\nu A_m-\partial_mA_\nu\right)
+\frac{dx^\nu}{d\tau}.
+\label{eq:sr6-spatial-covariant-force}
+\end{equation}
+Para \(\nu=0\), esto reproduce el corchete eléctrico; para \(\nu=1,2,3\), reproduce el corchete magnético.
+
+Ahora ambos lados tienen el carácter de transformación de un cuadrivector. Por tanto, las tres ecuaciones espaciales son componentes de
+\begin{equation}
+\boxed{
+m\frac{d^2x^\mu}{d\tau^2}
+=
+e\left(\partial_\nu A^\mu-\partial^\mu A_\nu\right)u^\nu
+}.
+\label{eq:sr6-covariant-force}
+\end{equation}
+Si se define
+\begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\label{eq:sr6-F-from-A}
+\end{equation}
+el orden de los índices y el signo de interacción usados en esta lección dan la forma compacta equivalente
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu.
+\label{eq:sr6-covariant-force-F}
+\end{equation}
+\editorialnote{Los textos de electrodinámica distribuyen los signos de distintas maneras entre la signatura de la métrica, la definición de \(A_\mu\), la carga y \(F_{\mu\nu}\). Las ecuaciones \eqref{eq:sr6-covariant-force} y \eqref{eq:sr6-covariant-force-F} conservan el signo y el orden de índices obtenidos a partir de la acción \(-e\int A_\mu dx^\mu\); el contenido invariante es la derivada antisimetrizada del potencial.}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_20.png}\caption{Las tres ecuaciones espaciales reunidas en una ecuación cuadrivectorial usando el tiempo propio.}\lectureframe{01:42:40}\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Por qué es legítimo añadir una cuarta ecuación para la componente temporal? ¿Es \(d^2x^0/d\tau^2\) simplemente cero?}\lecturerresponse{En general, no es cero: \(x^0=t\), pero \(dt/d\tau=\gamma\) cambia cuando cambia la rapidez de la partícula. El argumento decisivo es la covariancia. La acción escalar garantiza que las ecuaciones sean invariantes de Lorentz; una vez reconocidas las componentes espaciales como componentes de una sola ecuación cuadrivectorial, las transformaciones de Lorentz las mezclan con la componente temporal. La cuarta ecuación debe acompañar a las otras tres. \lecturetimestamp{01:42:40}}\end{classroomqa}
+
+\subsection{El significado de la cuarta componente}
+
+Las tres componentes espaciales expresan el enunciado relativista
+\begin{equation}
+\frac{d\mathbf p}{dt}=\mathbf F.
+\end{equation}
+La energía y el momento son, a su vez, componentes de un cuadrivector, así que la componente temporal debe describir el balance de energía correspondiente. En el lenguaje de vectores tridimensionales,
+\begin{equation}
+\frac{dK}{dt}=\mathbf F\cdot\mathbf v.
+\label{eq:sr6-work-energy}
+\end{equation}
+Esta ecuación expresa la tasa a la que el campo realiza trabajo sobre la partícula. La contribución magnética es perpendicular a \(\mathbf v\) y no realiza trabajo; la contribución eléctrica cambia la energía de la partícula.
+
+\begin{classroomqa}\audiencequestion{Si la covariancia proporciona formalmente la cuarta ecuación, ¿cómo sabemos que tiene significado físico?}\lecturerresponse{Las tres primeras componentes indican que la fuerza cambia el momento. La cuarta indica que el trabajo cambia la energía: \(dK/dt=\mathbf F\cdot\mathbf v\). Como la energía y el momento forman un solo cuadrivector, su respuesta al campo también debe expresarse en una única afirmación de cuatro componentes. \lecturetimestamp{01:45:20}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_21.png}\caption{La ley espacial \(d\mathbf p/dt=\mathbf F\) y su compañera temporal: la relación entre trabajo -- y energía.}\lectureframe{01:47:10}\end{figure}
+
+El método importa más que la compresión final. Exigimos que la acción fuera un escalar antes de variarla. Así, las ecuaciones resultantes pudieron reorganizarse en forma tensorial sin tener que corregir su simetría a posteriori. En la teoría moderna de campos, esto se convierte en una regla general de diseño: construir el lagrangiano de modo que respete las simetrías del problema.
+
+\section{Localidad, invariancia de Lorentz y la siguiente simetría}
+
+En toda la teoría relativista de campos reaparecen tres principios. Ya hemos usado dos; el tercero se desarrollará a continuación.
+
+\subsection{Localidad}
+
+La localidad afirma que el cambio de una partícula o un campo está determinado por lo que sucede en sus inmediaciones infinitesimales en el espacio-tiempo. Una partícula responde al valor del campo en su línea de universo, no a un valor sin relación situado muy lejos. El campo en un punto responde al campo y a sus derivadas en las proximidades de ese punto, no directamente a valores remotos arbitrarios ni a datos futuros.
+
+Para un campo, la acción adopta, por tanto, la forma local
+\begin{equation}
+S
+=
+\int d^3x\,dt\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr6-local-action}
+\end{equation}
+La integral suma una contribución de cada punto del espacio-tiempo. Las primeras derivadas codifican la comparación con los puntos vecinos, y el principio variacional produce ecuaciones diferenciales. Se podrían imaginar productos no locales que acoplaran campos en puntos muy distantes, pero sus ecuaciones harían que la respuesta aquí dependiera directamente de las condiciones allí. Esa no es la estructura local que se está imponiendo. Las acciones con derivadas de orden superior son posibles y constituyen un tema interesante, pero no hacen falta para la construcción actual.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_22.png}
+\caption{Localidad expresada como una integral espaciotemporal de una densidad construida a partir de campos y sus derivadas en puntos cercanos.}
+\lectureframe{01:51:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿\(\partial_\mu\phi\) representa cuatro componentes de derivada?}
+\lecturerresponse{Sí. Denota la derivada temporal y las tres derivadas espaciales de \(\phi\), reunidas en un solo cuadrivector covariante. \lecturetimestamp{01:52:25}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo se cuantifica lo \emph{cercano} en el principio de localidad?}
+\lecturerresponse{Mediante derivadas. Una primera derivada compara el campo en un punto con su valor en puntos infinitesimalmente próximos. Un lagrangiano local depende de los campos y de un conjunto finito de esas derivadas en un mismo punto del espacio-tiempo. \lecturetimestamp{01:52:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo se traduce la versión de la localidad para campos al cálculo de partículas que acabamos de completar?}
+\lecturerresponse{El lagrangiano de la partícula es local a lo largo de su línea de universo: depende de las posiciones de puntos vecinos de esta a través de la velocidad, y del potencial electromagnético evaluado en la posición actual de la partícula. La aceleración de la partícula no depende aquí directamente del campo en un punto distante. \lecturetimestamp{01:53:31}}
+\end{classroomqa}
+
+\subsection{Invariancia de Lorentz}
+
+La invariancia de Lorentz se implementa construyendo el lagrangiano a partir de escalares. Los observadores pueden descomponer esos escalares en distintas componentes temporales y espaciales, pero coinciden en la acción. Por consiguiente, las ecuaciones tensoriales obtenidas mediante variación tienen la misma forma en todos los marcos inerciales.
+
+\subsection{Invariancia gauge}
+
+La invariancia gauge es el principio restante. Se anuncia aquí, pero aún no se define. En el siguiente paso, restringirá qué aspectos del cuadripotencial son físicamente significativos y orientará la acción del campo que produce las ecuaciones de Maxwell.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_23.png}
+\caption{Los tres principios organizadores: localidad, invariancia de Lorentz e invariancia gauge.}
+\lectureframe{01:55:40}
+\end{figure}
+
+Estos principios reaparecen en la relatividad general, la electrodinámica cuántica, la teoría de Yang--Mills y el Modelo Estándar. Los detalles, como el número de especies de partículas, varían de una teoría a otra; la localidad y la simetría proporcionan el marco más profundo. Por tanto, la tarea práctica consiste en reconstruir el cálculo de Euler--Lagrange hasta poder dar cuenta de cada índice y de cada término agrupado. A continuación, la invariancia gauge se incorporará como la siguiente restricción sobre la misma acción electromagnética.
