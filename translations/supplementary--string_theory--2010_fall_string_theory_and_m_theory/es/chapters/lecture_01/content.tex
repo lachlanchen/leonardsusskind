@@ -1,0 +1,826 @@
+\chapter{De las trayectorias de Regge hadrónicas a las cuerdas de cono de luz}
+
+\lectureoverview{La teoría de cuerdas no nació como una teoría de la gravedad cuántica.
+Surgió como un intento de comprender el espectro y la dispersión de los hadrones.
+Las trayectorias rectilíneas de Regge sugerían un objeto extendido; la dualidad en
+la dispersión de piones--piones sugería que dos procesos aparentemente distintos eran
+dos cortes de una misma superficie. Seguiremos esas pistas hasta llegar a la imagen
+de la hoja de universo, reinterpretaremos la cuerda hadrónica como un tubo de flujo de QCD y, después, usaremos el
+marco de momento infinito para deducir la mecánica transversal de una cuerda abierta.
+El resultado central es que su Hamiltoniano interno efectivo mide
+el cuadrado de la masa. Por tanto, en esa descripción, una energía de tipo ley de Hooke proporcional a \(L^2\) se convierte en
+una energía en reposo proporcional a \(L\), el comportamiento que define
+una cuerda de tensión constante.}
+
+\section{El origen hadrónico de la teoría de cuerdas}
+
+En torno a 1968--1970, el problema que condujo a las cuerdas tenía que ver con los protones,
+los neutrones y, en particular, los mesones. El modelo de quarks ya era una idea
+seria, pero el contenido de quarks de los hadrones aún no se había establecido
+experimentalmente en el sentido moderno. Los gluones tenían todavía menos presencia en las conversaciones habituales.
+Nambu había propuesto ideas afines sobre campos gauge, pero aún no existía el lenguaje consolidado de
+la cromodinámica cuántica. En su lugar, el punto de partida era un
+espectro inesperadamente rico de partículas que interactúan fuertemente.
+
+Conviene dejar de lado por un momento la distinción entre protón--neutrón y llamar nucleón
+a ambos estados. Además del nucleón, había estados más pesados con mayor
+espín, seguidos de otros aún más pesados y con espín todavía mayor. Chew y
+Frautschi organizaron estas familias en una gráfica con el momento angular en el
+eje vertical y el cuadrado de la masa en el eje horizontal. En las
+unidades históricas de la época, la masa del protón era de aproximadamente un BeV; ahora esa misma unidad se
+llama GeV.
+
+Midamos el momento angular en unidades de \(\hbar\). Para una familia de bariones, los
+valores adimensionales del espín son semienteros,
+
+\begin{equation}
+  J=\frac12,\frac32,\frac52,\ldots,
+\end{equation}
+
+mientras que las familias de mesones tienen espín entero. El notable hecho empírico era
+que ambas familias se situaban aproximadamente sobre una línea recta al representarlas frente a
+\(M^2\). En notación moderna, se escribe
+
+\begin{equation}
+  J\simeq \alpha_0+\alpha' M^2,
+  \label{eq:l01-regge-trajectory}
+\end{equation}
+
+donde \(\alpha_0\) es la ordenada en el origen y \(\alpha'\) es la pendiente de Regge.
+\editorialnote{La conferencia destaca la relación lineal observada y su
+pendiente casi universal. La notación de la ordenada en el origen se introduce solo para expresar esa
+relación de forma compacta; las trayectorias son empíricas y aproximadas.}
+
+La recta original no resultaba convincente porque pasaba por solo
+dos puntos conocidos. Dos puntos cualesquiera definen una recta. La sorpresa llegó después:
+los estados recién descubiertos seguían situándose cerca de la misma recta. Las
+trayectorias de los mesones mostraban la misma organización. El pión empieza cerca de \(J=0\) con
+una masa pequeña en la escala del GeV; el rho empieza en \(J=1\); las excitaciones posteriores
+siguen ascendiendo. En una familia podía haber cinco, seis o siete estados. Aún
+más sorprendente era que las distintas trayectorias de bariones y mesones fueran casi
+paralelas. Así, un aumento de una unidad cuántica del momento angular correspondía
+a aproximadamente el mismo aumento del cuadrado de la masa:
+
+\begin{equation}
+  \Delta J=1
+  \quad\Longrightarrow\quad
+  \Delta M^2\simeq \frac{1}{\alpha'}.
+  \label{eq:l01-regge-spacing}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué significa que distintas trayectorias de Regge sean
+paralelas?\lecturetimestamp{00:09:32}}
+\lecturerresponse{Se elige una familia de partículas y se representan todos sus estados
+excitados; estos quedan alineados sobre una recta. Se repite el procedimiento para otra familia de mesones o bariones.
+Las rectas tienen aproximadamente la misma pendiente, aunque sus
+ordenadas en el origen sean distintas. Por tanto, el mismo incremento del momento angular cuesta
+aproximadamente el mismo incremento de \(M^2\). A esta pendiente común se la llamaba
+pendiente universal de Regge.}
+\end{classroomqa}
+
+La comparación con objetos extendidos ordinarios muestra por qué este patrón era importante.
+Al hacer girar una pelota de baloncesto, esta adquiere energía de rotación, pero su trayectoria
+es curva y, a una velocidad angular suficientemente alta, la pelota se desgarra. Un átomo también tiene excitaciones rotacionales, pero acaba ionizándose; su trayectoria termina. Los
+hadrones mostraban una secuencia mucho más sencilla y, dentro de los datos disponibles, ningún indicio de que la secuencia estuviera llegando a su fin.
+
+Este espectro indicaba que un hadrón no se comportaba como un punto. Un punto no tiene
+estructura espacial que pueda girar o deformarse. No se ha observado una torre de estados internos de espín más alto en el electrón, que por ello es puntual dentro de los límites experimentales actuales. Un hadrón, en cambio, puede adquirir más rotación. Su espectro sugiere que es compuesto, y la relación entre el espín y la masa apunta a que el objeto se deforma al aumentar su momento angular.
+
+\section{Dualidad en la dispersión de piones--piones}
+
+La espectroscopia aportó una pista. La dispersión de piones--piones aportó otra. Dos
+piones pueden combinarse para formar una resonancia de tipo rho y, más tarde, volver a aparecer como dos
+piones. En un diagrama de Feynman convencional, se trata de un proceso de aniquilación y
+recreación, llamado habitualmente proceso del canal \(s\). Al girar el mismo diagrama elemental, se obtiene un proceso cruzado, o del canal \(t\), en el que una partícula de tipo rho se intercambia entre los piones.
+
+El rho no está solo. Pertenece a una familia de Regge, así que, por consistencia, parece necesario incluir el rho y todos sus compañeros excitados en ambos canales. Esquemáticamente,
+
+\begin{equation}
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(s)}_{\rho_n}(s,t),
+  \qquad
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(t)}_{\rho_n}(s,t).
+  \label{eq:l01-channel-sums}
+\end{equation}
+
+Estas expresiones no son dos aproximaciones que simplemente deban sumarse.
+Los estudios numéricos encontraron que la suma de la torre de resonancias en el
+canal de aniquilación ya daba aproximadamente la contribución que se esperaba
+del canal de intercambio. A la inversa, la torre intercambiada podía reproducir
+la descripción en términos de resonancias. Por tanto, sumar ambas torres completas parecía
+contar dos veces la misma física. La contabilidad perturbativa ordinaria indica que, si existen
+dos diagramas, hay que incluir ambos. Sin embargo, las amplitudes hadrónicas
+sugerían que las descripciones de los dos canales eran duales.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth]{lecture_01_figure_01.png}
+  \caption{La pizarra relaciona la gráfica de Chew--Frautschi con los diagramas del canal de aniquilación y del
+  canal cruzado, y reúne así las pistas espectroscópicas y de dispersión en
+  un mismo problema.}
+  \lectureframe{00:14:20}
+  \label{fig:l01-regge-duality-board}
+\end{figure}
+
+Las mismas relaciones pueden presentarse en un esquema más claro. El primer panel
+muestra el espectro lineal; los otros dos representan las expansiones alternativas por canales de la misma amplitud.
+
+\begin{figure}[H]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}[>=Latex,thick]
+    \begin{scope}
+      \draw[->] (0,0) -- (4.2,0) node[right] {$M^2$};
+      \draw[->] (0,0) -- (0,3.4) node[above] {$J$};
+      \draw[blue!65!black] (0.45,0.35) -- (3.55,2.95);
+      \draw[orange!80!black] (0.75,0.20) -- (3.85,2.80);
+      \foreach \x/\y in {0.65/0.52,1.35/1.10,2.05/1.69,2.75/2.27,3.45/2.86}
+        \fill[blue!65!black] (\x,\y) circle (0.07);
+      \foreach \x/\y in {0.95/0.37,1.65/0.95,2.35/1.54,3.05/2.12,3.75/2.71}
+        \fill[orange!80!black] (\x,\y) circle (0.07);
+      \node at (2.1,-0.55) {parallel Regge families};
+    \end{scope}
+    \begin{scope}[xshift=5.7cm]
+      \draw[->] (-1.5,1.2) -- (-0.3,0.25);
+      \draw[->] (-1.5,-1.2) -- (-0.3,-0.25);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.25) -- (0,-0.25);
+      \draw[->] (0.3,0.25) -- (1.5,1.2);
+      \draw[->] (0.3,-0.25) -- (1.5,-1.2);
+      \node at (0,-1.75) {$s$-channel tower};
+    \end{scope}
+    \begin{scope}[xshift=10.5cm]
+      \draw[->] (-1.5,1.2) -- (1.5,1.2);
+      \draw[->] (-1.5,-1.2) -- (1.5,-1.2);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.95) -- (0,-0.95);
+      \node at (0,-1.75) {$t$-channel tower};
+    \end{scope}
+  \end{tikzpicture}}
+  \caption{Familias de Regge paralelas y las dos expansiones por canales que intervienen en
+  la dualidad hadrónica.}
+  \label{fig:l01-regge-duality-redraw}
+\end{figure}
+
+\section{Una hoja de universo, dos cortes}
+
+La respuesta natural fue buscar una única historia geométrica que pudiera leerse
+de ambas maneras. Representemos un pión mediante un par quark--antiquark y hagamos que el tiempo transcurra
+hacia arriba. En lugar de dibujar solo líneas de mundo de partículas unidimensionales, rellenemos la
+región delimitada por las trayectorias de los quarks. Un corte horizontal de esta
+historia bidimensional puede mostrar dos cuerdas entrantes que se unen y luego
+se separan. Un corte distinto muestra una cuerda intercambiada de un lado al
+otro. Las dos imágenes de los canales de Feynman ya no son mecanismos independientes,
+sino descomposiciones distintas de una misma superficie.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_02.png}
+  \caption{La topología de las líneas de quark dibujada en la pizarra. Distintos cortes de la
+  misma historia bidimensional dan lugar a las interpretaciones de resonancia e intercambio.}
+  \lectureframe{00:17:50}
+  \label{fig:l01-worldsheet-topology-board}
+\end{figure}
+
+La región entre un quark y un antiquark aporta otra idea. En un instante dado, el corte contiene dos extremos y algo que ocupa todo el
+intervalo entre ellos. Ese objeto es unidimensional: una cuerda. Durante una
+interacción, la cuerda barre la superficie bidimensional.
+
+\begin{definition}
+La historia espaciotemporal de una partícula puntual es una \emph{línea de mundo}. La
+historia espaciotemporal de una cuerda es una \emph{hoja de universo}. Una cuerda en un instante
+dado es un corte espacial de su hoja de universo.
+\end{definition}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_03.png}
+  \caption{La superficie de la pizarra, rellenada entre las trayectorias de los extremos. Un
+  corte temporal la intersecta en una cuerda unidimensional.}
+  \lectureframe{00:19:15}
+  \label{fig:l01-worldsheet-filled-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex,scale=0.95]
+    \fill[blue!10]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3)
+      -- (2.6,2.3)
+      .. controls (1.0,1.0) and (1.0,0.5) .. (0.2,0)
+      .. controls (1.0,-0.4) and (1.0,-1.0) .. (2.6,-2.3) -- cycle;
+    \draw[blue!65!black]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3);
+    \draw[blue!65!black]
+      (2.6,-2.3) .. controls (1.0,-1.0) and (1.0,-0.4) .. (0.2,0)
+      .. controls (1.0,0.5) and (1.0,1.0) .. (2.6,2.3);
+    \draw[red!75!black,dashed] (-2.9,-1.15) -- (2.9,-1.15)
+      node[right] {time slice};
+    \draw[orange!80!black,dashed] (-1.55,-2.5) -- (1.55,2.5)
+      node[above] {crossed slicing};
+    \draw[->] (3.45,-1.7) -- (3.45,1.8) node[above] {time};
+    \node[blue!65!black] at (0,-2.7) {one world sheet};
+  \end{tikzpicture}
+  \caption{Un esquema claro de la hoja de universo. Distintos cortes organizan la misma
+  superficie en diferentes descripciones de los canales intermedios.}
+  \label{fig:l01-worldsheet-redraw}
+\end{figure}
+
+Esta reconstrucción geométrica era exploratoria, no una deducción de la teoría completa a partir de primeros principios. Distintas personas llegaron a la imagen inicial de la cuerda por caminos diferentes. Su fuerza residía en que un mismo objeto extendido podía dar cuenta de ambas observaciones: una cuerda puede girar y deformarse, y su hoja de universo puede codificar los canales de dispersión duales.
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué introducir un puente similar a una cuerda en lugar de una partícula ordinaria intercambiada entre los quarks?\lecturetimestamp{00:21:20}}
+\lecturerresponse{En un instante dado no hay simplemente una partícula de intercambio localizada. Hay un quark, un antiquark y una estructura que se extiende por todos los puntos entre ambos. Esa estructura podría ser fundamentalmente continua o consistir en un conjunto denso de constituyentes que aproxime un continuo; la imagen inicial no lo determinaba. Lo que importaba era que todo el intervalo estuviera ocupado y que las trayectorias observadas no mostrasen tendencia a terminar como un cordón de zapato corriente con pesos en sus extremos.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Puede el modelo estándar describir la dispersión de piones?
+\lecturetimestamp{00:22:45}}
+\lecturerresponse{Sí, aunque su utilidad depende del régimen de energía. A
+baja energía, el modelo estándar, mediante la QCD y sus descripciones de baja energía,
+da cuenta de gran parte de la dispersión de piones. A energías más altas, donde importan
+familias enteras de intercambios hadrónicos, los cálculos directos se vuelven más
+difíciles y puede resultar más útil una organización similar a la de las cuerdas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Los primeros experimentos demostraron que una trayectoria de Regge
+nunca termina?\lecturetimestamp{00:23:37}}
+\lecturerresponse{No. Solo demostraron que la secuencia observada todavía
+no mostraba un extremo. La inferencia de que podía estirarse indefinidamente era una
+extrapolación sugerente, no una infinitud medida.}
+\end{classroomqa}
+
+\section{Tubos de flujo y cambio de escala}
+
+La QCD moderna da a la imagen antigua una interpretación en términos de teoría de campos. Un quark
+y un antiquark actúan como fuentes opuestas del campo de gluones. En la electrodinámica
+ordinaria, el flujo eléctrico se dispersa lateralmente a medida que se separan las cargas opuestas. El campo se debilita con la distancia, por lo que la región entre las cargas
+no conserva un perfil transversal fijo. La QCD es no lineal. Su dinámica
+puede confinar el flujo cromeléctrico pertinente en un tubo estrecho que une el quark y el antiquark.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_04.png}
+  \caption{Líneas de campo del quark y el antiquark dibujadas como un tubo de flujo estrecho, en lugar de
+  un campo de Coulomb que se dispersa libremente.}
+  \lectureframe{00:25:15}
+  \label{fig:l01-qcd-flux-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[orange!14,rounded corners=8pt] (-3.0,-0.55) rectangle (3.0,0.55);
+    \draw[orange!80!black,thick,rounded corners=8pt]
+      (-3.0,-0.55) rectangle (3.0,0.55);
+    \fill[blue!70!black] (-3.35,0) circle (0.17);
+    \fill[red!75!black] (3.35,0) circle (0.17);
+    \node[below] at (-3.35,-0.22) {$q$};
+    \node[below] at (3.35,-0.22) {$\bar q$};
+    \foreach \y in {-0.30,0,0.30}
+      \draw[->,orange!85!black] (-3.05,\y) -- (3.05,\y);
+    \draw[<->] (-2.9,-1.05) -- (2.9,-1.05) node[midway,below] {$L$};
+    \node at (0,0.92) {approximately fixed transverse profile};
+  \end{tikzpicture}
+  \caption{Un tubo de flujo confinado se alarga sin dispersarse. Una energía fija por
+  unidad de longitud da \(E=TL\).}
+  \label{fig:l01-qcd-flux-redraw}
+\end{figure}
+
+El lenguaje de partículas y el de campos expresan lo mismo de maneras distintas. En
+la descripción de campos, el tubo conserva aproximadamente la misma intensidad de campo y
+la misma área de sección transversal a medida que se separan sus extremos. En una imagen de constituyentes, la energía de estiramiento crea más estructura gluónica entre los extremos.
+Una goma elástica corriente tiene un número fijo de moléculas, que se separan hasta que el material se rompe. Imaginemos, en cambio, que cada vez que se abriese una brecha se insertara una molécula nueva. La densidad a lo largo de la goma podría mantenerse fija
+mientras esta se alarga. Esa es la analogía buscada para el campo de gluones: el tubo gana longitud en lugar de adelgazarse hasta romperse.
+
+\begin{classroomqa}
+\audiencequestion{¿Una cuerda que formara parte de un electrón también estaría compuesta de
+ gluones?\lecturetimestamp{00:28:08}}
+\lecturerresponse{No se deduce tal cosa. La cuerda hadrónica es un objeto de QCD
+a la escala de un protón. Una hipotética cuerda fundamental relevante para
+la gravedad cuántica existiría cerca de la escala de Planck, muchísimo menor, y aquí no hay pruebas de que un electrón sea una cuerda hadrónica de gluones. Lo sorprendente es que aparecieran matemáticas relacionadas en ambas escalas, no que los objetos físicos fueran idénticos.}
+\end{classroomqa}
+
+Los intentos de convertir la imagen hadrónica en una teoría de cuerdas interactuantes completa
+fueron prometedores, pero no llegaron a producir del todo la teoría de los
+hadrones que se buscaba. El modelo matemático contenía una y otra vez una partícula sin masa de
+espín dos. En una teoría hadrónica, ese estado parecía una predicción indeseada; como teoría de la gravedad, tenía exactamente los números cuánticos del gravitón.
+Joel Scherk y John Schwarz hicieron la reinterpretación decisiva: quizá la teoría nos hablaba de gravedad cuántica y no de hadrones. Las aplicaciones hadrónica y fundamental son físicamente distintas, aunque el problema inicial de los hadrones proporcionara el camino hacia las matemáticas.
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo van las líneas de flujo de un extremo positivo a uno
+negativo?\lecturetimestamp{00:31:46}}
+\lecturerresponse{Salen de una fuente y entran en la otra, igual que las líneas de campo magnético van del polo norte al polo sur de un imán de barra. Las etiquetas opuestas de los extremos expresan la orientación del flujo; del mismo modo, un imán de barra tiene dos polos opuestos, no dos polos norte.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La cuerda es continua o discreta?
+\lecturetimestamp{00:32:45}}
+\lecturerresponse{La teoría cuántica vuelve sutil esa distinción. El campo electromagnético se representa como un campo continuo y también tiene cuantos discretos. Del mismo modo, una cuerda puede tratarse como continua mientras sus excitaciones están cuantizadas. Ambas descripciones pueden ser válidas, según la pregunta que se plantee.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si se cambia el ángulo del corte espaciotemporal que atraviesa una hoja de universo,
+¿la intersección sigue siendo una cuerda?\lecturetimestamp{00:34:20}}
+\lecturerresponse{Sí. Cambiar el corte de simultaneidad es una transformación de Lorentz. El nuevo corte intersecta la superficie en una cuerda que se observa en un estado de movimiento distinto. Incluso una cuerda cuyo centro de masas está en reposo no está en reposo internamente; puede vibrar. ``En reposo'' se refiere solo a su
+centro de masas.}
+\end{classroomqa}
+
+\section{Dos desarrollos de la energía relativista}
+
+Una descripción relativista directa de un objeto extendido y vibrante resulta
+poco manejable. La estrategia útil consiste en hallar un marco en el que su movimiento pertinente
+adopte la forma de la mecánica no relativista ordinaria. Empecemos con una sola
+partícula. En el régimen no relativista se escribe
+
+\begin{equation}
+  E_{\mathrm{nr}}=\frac{\bm p^2}{2m}+B,
+  \label{eq:l01-nonrel-energy}
+\end{equation}
+
+donde \(B\) es una energía interna o de ligadura independiente del momento
+total. Para varias partículas que no interactúan, se suman tanto los términos cinéticos como
+las constantes internas. Como el movimiento depende solo de las diferencias de energía, a menudo puede omitirse
+una constante aditiva independiente del estado.
+
+La energía relativista exacta es
+
+\begin{equation}
+  E=\sqrt{\bm p^2c^2+m^2c^4}.
+  \label{eq:l01-rel-energy-c}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_05.png}
+  \caption{La energía cinética no relativista y la raíz cuadrada relativista exacta, con las potencias de \(c\) corregidas durante la explicación.}
+  \lectureframe{00:38:45}
+  \label{fig:l01-relativistic-energy-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿La fórmula relativista debería contener \(p^2c^2\) y
+\(m^2c^4\), en lugar de las potencias que se escribieron inicialmente en la pizarra?
+\lecturetimestamp{00:39:12}}
+\lecturerresponse{Sí. La consistencia dimensional determina que la expresión correcta sea
+\(E^2=p^2c^2+m^2c^4\). Después de recuperar el límite no relativista, fijaremos \(c=1\), pero conservar aquí las potencias hace que el desarrollo resulte transparente.}
+\end{classroomqa}
+
+Cuando \(p^2c^2\ll m^2c^4\), se saca factor común \(m^2c^4\) y se usa
+\(\sqrt{1+\epsilon}\simeq1+\epsilon/2\):
+
+\begin{align}
+  E
+  &=mc^2\sqrt{1+\frac{p^2}{m^2c^2}}
+  \notag\\
+  &\simeq mc^2+\frac{p^2}{2m}.
+  \label{eq:l01-low-momentum-expansion}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_06.png}
+  \caption{El desarrollo para momento pequeño, que recupera la energía en reposo más el
+  término cinético no relativista habitual.}
+  \lectureframe{00:41:30}
+  \label{fig:l01-low-momentum-board}
+\end{figure}
+
+Esta aproximación exige algo más que un centro de masas que se mueva despacio. Una caja puede desplazarse lentamente mientras las partículas de su interior se mueven cerca de la velocidad de la luz. En ese caso, la dinámica interna sigue siendo relativista. El límite no relativista ordinario exige que todas las velocidades pertinentes de los constituyentes sean pequeñas en el marco elegido.
+
+Hay otro límite útil. Impulsemos todo el sistema a lo largo del eje \(z\) hasta que cada constituyente tenga un momento longitudinal positivo \(P_{zi}\) grande.
+Cualquier constituyente que inicialmente se mueva hacia atrás acaba moviéndose hacia delante con un impulso suficientemente grande. Los momentos transversales y las masas en reposo permanecen fijos:
+
+\begin{equation}
+  P_{zi}\gg |p_{xi}|,|p_{yi}|,m_i,
+  \qquad
+  p_{\perp i}^2=p_{xi}^2+p_{yi}^2,
+\end{equation}
+
+donde, a partir de aquí, \(c=1\). Al desarrollar para valores grandes de \(P_{zi}\), se obtiene
+
+\begin{align}
+  E_i
+  &=\sqrt{P_{zi}^2+p_{\perp i}^2+m_i^2}
+  \notag\\
+  &=P_{zi}\sqrt{1+\frac{p_{\perp i}^2+m_i^2}{P_{zi}^2}}
+  \notag\\
+  &\simeq P_{zi}
+  +\frac{p_{\perp i}^2+m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-one-particle}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_07.png}
+  \caption{El desarrollo de la raíz cuadrada para valores grandes de \(P_z\), conservando el momento transversal
+  y la masa como cantidades pequeñas.}
+  \lectureframe{00:46:45}
+  \label{fig:l01-large-pz-board}
+\end{figure}
+
+Para muchos constituyentes,
+
+\begin{equation}
+  E\simeq
+  \sum_i P_{zi}
+  +\sum_i\frac{p_{\perp i}^2}{2P_{zi}}
+  +\sum_i\frac{m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-sum}
+\end{equation}
+
+El primer término es el momento longitudinal total conservado. Es enorme,
+pero también es una contribución aditiva fija. Conservarlo o restarlo
+no cambia ninguna diferencia de energía, del mismo modo que sumar cualquier otro número conservado a un
+Hamiltoniano no cambiaría las ecuaciones de movimiento. Por tanto, la parte dinámica es
+
+\begin{equation}
+  \begin{aligned}
+    H_{\perp}=E-P_z
+    &\simeq
+    \sum_i\left(
+      \frac{p_{\perp i}^2}{2P_{zi}}
+      +\frac{m_i^2}{2P_{zi}}
+    \right),\\
+    P_z&=\sum_iP_{zi}.
+  \end{aligned}
+  \label{eq:l01-transverse-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_08.png}
+  \caption{Descomposición de muchos cuerpos en el momento longitudinal conservado,
+  la energía cinética transversal y los términos internos dependientes de la masa.}
+  \lectureframe{00:49:16}
+  \label{fig:l01-energy-sum-board}
+\end{figure}
+
+\section{El marco de momento infinito}
+
+Históricamente, el límite anterior se llamó marco de momento infinito; hoy suele formularse en coordenadas de cono de luz. Su significado puede leerse directamente en el Hamiltoniano. En mecánica cuántica,
+
+\begin{equation}
+  i\hbar\frac{\partial}{\partial t}\ket{\psi}=H\ket{\psi}.
+  \label{eq:l01-time-evolution}
+\end{equation}
+
+Todos los términos no triviales de \(H_{\perp}\) escalan como \(1/P_z\). A medida que aumenta el impulso, las diferencias de energía se reducen y los cambios ocurren más despacio. Esto es dilatación temporal. Un sistema radiactivo parece desintegrarse más lentamente cuando tiene un impulso elevado; se puede compensar observándolo durante un tiempo proporcionalmente mayor. El enlentecimiento no elimina la dinámica. Reescala su reloj.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_09.png}
+  \caption{La pizarra identifica la energía reducida con el Hamiltoniano que
+  genera la evolución temporal más lenta del sistema impulsado.}
+  \lectureframe{00:52:57}
+  \label{fig:l01-hamiltonian-board}
+\end{figure}
+
+El término transversal tiene exactamente la forma no relativista \(p^2/(2m)\), pero
+el papel de la masa lo desempeña \(P_z\). Esto tiene sentido físico: cuanto mayor es el momento longitudinal,
+más difícil resulta desviar lateralmente una partícula, así que este actúa como inercia transversal. El término \(m_i^2/(2P_{zi})\) no depende del
+estado de movimiento bidimensional y, por tanto, desempeña el papel de una energía interna
+o de ligadura. El movimiento relativista en tres dimensiones espaciales se ha convertido en
+un movimiento de aspecto no relativista en las dos dimensiones perpendiculares al impulso.
+
+Esto permite usar un modelo elemental de masas y resortes para una cuerda relativista. El modelo no pretende que la cuerda se mueva lentamente en su propio marco de reposo. Usa el marco en el que la dinámica transversal tiene la estructura no relativista necesaria.
+
+\section{Una cuerda abierta formada por cuentas y resortes}
+
+Tomemos una cuerda abierta, es decir, una cuerda con dos extremos. Más adelante puede unirse algo a esos extremos, pero ahora nos interesa la cuerda en sí. Aproximémosla mediante cuentas en posiciones transversales
+\(\bm X_i(t)=(X_i(t),Y_i(t))\), unidas por resortes idénticos. Un Hamiltoniano discreto es
+
+\begin{equation}
+  H_N=\sum_{i=1}^{N}
+  \left[
+    \frac{\mu_N}{2}\dot{\bm X}_i^{\,2}
+    +\frac{k_N}{2}
+      \left(\bm X_{i+1}-\bm X_i\right)^2
+  \right].
+  \label{eq:l01-discrete-string}
+\end{equation}
+
+El término cinético por sí solo permitiría que las cuentas se dispersaran. El término de Hooke entre vecinas es lo que hace que formen una cuerda.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{lecture_01_figure_10.png}
+  \caption{El primer esquema de cuentas y resortes para una cuerda abierta con dos
+  coordenadas transversales.}
+  \lectureframe{01:00:30}
+  \label{fig:l01-bead-chain-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \foreach \x in {0,...,8} {
+      \fill[blue!65!black] ({0.85*\x},0) circle (0.09);
+    }
+    \foreach \x in {0,...,7} {
+      \draw[decorate,decoration={zigzag,segment length=4pt,amplitude=2pt}]
+        ({0.85*\x+0.10},0) -- ({0.85*\x+0.75},0);
+    }
+    \draw[->] (3.4,0.15) -- (3.4,1.25) node[above] {$\bm X_i(t)$};
+    \draw[<->] (0,-0.65) -- (6.8,-0.65)
+      node[midway,below] {$0\leq\sigma\leq\pi$};
+  \end{tikzpicture}
+  \caption{Regularización discreta de la cuerda abierta. Antes de tomar el límite continuo, la masa de cada cuenta y
+  la constante elástica escalan con el espaciamiento.}
+  \label{fig:l01-bead-chain-redraw}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_11.png}
+  \caption{Los términos cinético y de Hooke discretos, escritos juntos antes de tomar el
+  límite continuo.}
+  \lectureframe{01:01:30}
+  \label{fig:l01-discrete-energy-board}
+\end{figure}
+
+Al aumentar el número de cuentas, la masa de cada cuenta \(\mu_N\) debe tender a cero
+para que la cuerda completa conserve una inercia finita. Al mismo tiempo, la constante elástica \(k_N\) debe aumentar. Es más fácil estirar una tira larga de goma una cantidad fija que un segmento diminuto del mismo material; por tanto, los puntos vecinos que se acercan entre sí deben estar conectados con mayor rigidez si se quiere que el material continuo siga siendo el mismo.
+
+Introduzcamos una coordenada \(\sigma\) a lo largo de la cuerda. Su intervalo numérico es una
+convención. Elegir
+
+\begin{equation}
+  0\leq\sigma\leq\pi
+\end{equation}
+
+es conveniente porque más adelante se podrá parametrizar una cuerda cerrada desde
+\(0\) hasta \(2\pi\). La suma se convierte en una integral y la diferencia entre puntos vecinos,
+en una derivada:
+
+\begin{equation}
+  \sum_i\longrightarrow\int_0^\pi d\sigma,
+  \qquad
+  \bm X_{i+1}-\bm X_i
+  \longrightarrow
+  \partial_\sigma\bm X.
+  \label{eq:l01-continuum-replacements}
+\end{equation}
+
+Tras incorporar las constantes que dependen del espaciamiento a la normalización de
+\(t\), \(\sigma\) y \(\bm X\), el Hamiltoniano continuo tiene la forma
+
+\begin{equation}
+  H_{\mathrm{string}}=
+  \frac12\int_0^\pi d\sigma
+  \left[
+    \left(\partial_t\bm X\right)^2
+    +\left(\partial_\sigma\bm X\right)^2
+  \right].
+  \label{eq:l01-continuum-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_12.png}
+  \caption{El paso de la suma sobre cuentas a
+  \(\int_0^\pi d\sigma\), sustituyendo la diferencia entre puntos vecinos por
+  \(\partial_\sigma\bm X\).}
+  \lectureframe{01:05:00}
+  \label{fig:l01-continuum-board}
+\end{figure}
+
+El primer término es la energía cinética en las dos direcciones transversales. El segundo mide el estiramiento a lo largo de la cuerda. Ambos términos llevan signo positivo porque se trata del Hamiltoniano. En el lagrangiano, el término potencial llevaría signo negativo. Los coeficientes exactos dependen de las convenciones y aún no se han fijado; lo importante será la estructura de energía cinética más estiramiento.
+
+Separemos el movimiento del centro de masas del movimiento relativo. Trasladar todos los puntos la misma cantidad desplaza el objeto entero. Las oscilaciones, la flexión y el estiramiento relativo son movimientos internos. Se puede llamar partícula a un protón, un átomo o cualquier otro objeto compuesto, aunque sus constituyentes se muevan internamente. En ese sentido, la cuerda no es distinta.
+
+\section{Por qué el Hamiltoniano mide el cuadrado de la masa}
+
+Para un objeto que se mueve lentamente, la energía en reposo es proporcional a su masa. Sin embargo, en la descripción de momento infinito, la contribución interna aparece como \(M^2/(2P_z)\). Una vez fijados el momento longitudinal común y la correspondiente reescala temporal, el Hamiltoniano interno de la cuerda es proporcional al cuadrado de la masa invariante del objeto completo:
+
+\begin{equation}
+  H_{\mathrm{int}}\propto M^2.
+  \label{eq:l01-hint-mass-squared}
+\end{equation}
+
+\editorialnote{Más concretamente, la cinemática de cono de luz da una
+relación invariante de la forma \(M^2=2P^+P^- - \bm P_\perp^2\). En el marco transversal del centro de masas y para \(P^+\) fijo, el Hamiltoniano de cono de luz \(P^-\) es, por tanto, proporcional a \(M^2\). La explicación omite estos detalles de normalización y conserva la proporcionalidad necesaria para el argumento.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_13.png}
+  \caption{La pizarra identifica la energía interna de la cuerda con el cuadrado de la masa
+  del estado completo de la cuerda.}
+  \lectureframe{01:10:30}
+  \label{fig:l01-mass-squared-board}
+\end{figure}
+
+Una cuerda vibrante es un conjunto de osciladores acoplados. La cuantización completa se pospone, pero el hecho espectral importante ya es visible. Las energías de un oscilador armónico aumentan en pasos discretos. Como esas energías internas contribuyen a \(M^2\), las excitaciones de la cuerda producen de forma natural pasos discretos en el cuadrado de la masa. Esta es la estructura que anunciaban las gráficas de Regge al comienzo.
+
+\begin{classroomqa}
+\audiencequestion{¿Es \(M\) la masa de toda la cuerda, y duplicar esa masa cuadruplicaría
+la contribución correspondiente de \(M^2\)?
+\lecturetimestamp{01:12:10}}
+\lecturerresponse{Sí. \(M\) es la masa en reposo del estado completo de la cuerda,
+incluidos la vibración, el estiramiento y cualquier otra contribución interna. El Hamiltoniano efectivo en el marco impulsado es proporcional a \(M^2\), así que un estado con el doble de masa tiene cuatro veces ese valor del cuadrado de la masa.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo puede esta descripción incluir un fotón, cuya masa en reposo
+es cero?\lecturetimestamp{01:12:52}}
+\lecturerresponse{Un estado sin masa corresponde a \(M=0\). La manera en que las contribuciones positivas de los osciladores pueden combinarse para producir ese estado es una cuestión importante de la teoría cuantizada, que el modelo clásico presentado aquí no resuelve. En este punto, \(M\) denota simplemente la masa en reposo total; todavía no se ha introducido la mecánica cuántica.}
+\end{classroomqa}
+
+Ahora estiremos uniformemente una cuerda inmóvil hasta que su longitud física sea \(L\). El término cinético se anula y, en el intervalo paramétrico de longitud \(\pi\),
+
+\begin{equation}
+  \left|\partial_\sigma\bm X\right|\simeq\frac{L}{\pi}.
+\end{equation}
+
+Por consiguiente,
+
+\begin{align}
+  H_{\mathrm{stretch}}
+  &\propto
+  \int_0^\pi d\sigma
+    \left(\partial_\sigma\bm X\right)^2
+  \notag\\
+  &\simeq
+  \pi\left(\frac{L}{\pi}\right)^2
+  \propto L^2.
+  \label{eq:l01-hooke-l2}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_14.png}
+  \caption{La configuración estirada uniformemente que se usa para inferir
+  \(H_{\mathrm{stretch}}\propto L^2\) y, por tanto, \(M\propto L\).}
+  \lectureframe{01:15:30}
+  \label{fig:l01-length-relation-board}
+\end{figure}
+
+Este es el comportamiento de la ley de Hooke en la mecánica transversal efectiva. Sin embargo, la cantidad del miembro izquierdo es proporcional a \(M^2\), no a \(M\). Se deduce que
+
+\begin{equation}
+  M^2\propto L^2,
+  \qquad
+  M\propto L.
+  \label{eq:l01-mass-length}
+\end{equation}
+
+En el sistema de reposo, la energía es \(E_{\mathrm{rest}}=M\), en unidades \(c=1\).
+Si escribimos la constante de proporcionalidad como la tensión de la cuerda \(T\),
+
+\begin{equation}
+  E_{\mathrm{rest}}=TL.
+  \label{eq:l01-string-tension}
+\end{equation}
+
+El resultado concuerda con la imagen del tubo de flujo. Un campo eléctrico o magnético uniforme tiene una densidad de energía uniforme. Si su flujo está confinado en un tubo de sección transversal fija, cada unidad adicional de longitud aporta la misma cantidad de energía. De manera equivalente, en una imagen de constituyentes donde nuevos grados de libertad llenan cada hueco que se abre, la energía por unidad de longitud es constante. La tensión de la cuerda es esa energía por unidad de longitud.
+
+Esta conclusión es indirecta. No afirma que una banda elástica cualquiera, sometida a velocidades relativistas, adquiera automáticamente \(E=TL\). El argumento parte de la descripción transversal no relativista que se obtiene con el gran impulso, identifica su energía interna con \(M^2\) y solo entonces traduce el resultado a la energía en el sistema de reposo.
+
+\section{El mismo objeto en dos sistemas de referencia}
+
+Es fácil perder de vista la distinción entre \(M\) y \(M^2\), así que conviene poner ambas expansiones una junto a la otra. Con \(c=1\),
+
+\begin{align}
+  E&=\sqrt{p^2+M^2}
+  \simeq M+\frac{p^2}{2M},
+  &&p\ll M,
+  \label{eq:l01-rest-expansion-again}\\
+  E&=\sqrt{P_z^2+M^2}
+  \simeq P_z+\frac{M^2}{2P_z},
+  &&P_z\gg M.
+  \label{eq:l01-boost-expansion-again}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_15.png}
+  \caption{La expansión para momentos pequeños, repetida después de la pausa, donde la energía interna en reposo se interpreta como \(M\).}
+  \lectureframe{01:28:00}
+  \label{fig:l01-rest-expansion-board-again}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_16.png}
+  \caption{La expansión complementaria para momentos grandes, donde la energía residual es proporcional a \(M^2/(2P_z)\).}
+  \lectureframe{01:31:00}
+  \label{fig:l01-boost-expansion-board-again}
+\end{figure}
+
+La primera expansión identifica la energía en reposo con la masa y la inercia ordinaria con \(M\). En la segunda, se elimina el término conservado \(P_z\), la inercia transversal es \(P_z\) y la energía interna se representa mediante \(M^2/(2P_z)\). En ambos sistemas de referencia, la masa sigue siendo proporcional a la longitud de la cuerda. Lo que cambia es cuál función de la masa aparece como Hamiltoniano residual.
+
+\begin{classroomqa}
+\audiencequestion{Un impulso de Lorentz no debería cambiar la física. ¿Por qué parece que la cuerda impulsada obedece una ley de energía distinta?
+\lecturetimestamp{01:25:35}}
+\lecturerresponse{No obedece leyes físicas distintas. En ambas descripciones, \(M\propto L\) y \(M^2\propto L^2\). En el sistema de reposo, la energía pertinente es \(M\); después de un gran impulso, se separa el término conservado \(P_z\) y el Hamiltoniano restante es proporcional a \(M^2\). El impulso cambia la descripción más útil, no la relación entre la masa invariante--la longitud.}
+\end{classroomqa}
+
+\section{Un modelo superconductor del confinamiento}
+
+Un superconductor expulsa el campo magnético de su interior. Si el flujo magnético queda atrapado en un canal suficientemente estrecho antes de que el material se vuelva superconductor, no puede dispersarse lateralmente y permanece confinado en un tubo. Un experimento mental útil consiste en perforar una muestra en estado normal con un orificio estrecho, introducir por él una barra larga imantada, enfriar la muestra y luego retirar la barra. La construcción es esquemática, no una receta práctica de laboratorio. Su propósito es aislar una línea de flujo cuyo campo y densidad de energía sean aproximadamente uniformes a lo largo de ella.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_17.png}
+  \caption{La construcción de una línea de flujo superconductora y la imagen correspondiente del confinamiento de un monopolo--antimonopolo.}
+  \lectureframe{01:35:30}
+  \label{fig:l01-superconductor-board}
+\end{figure}
+
+Supongamos, como experimento mental adicional, que fuera posible colocar un monopolo y un antimonopolo magnéticos en el medio superconductor y separarlos. El flujo magnético entre ambos quedaría comprimido en un tubo. Como cada unidad de longitud del tubo contiene la misma cantidad de energía,
+
+\begin{equation}
+  V(R)=T_{\mathrm{flux}}R.
+  \label{eq:l01-linear-confinement}
+\end{equation}
+
+La fuerza \(F=-dV/dR\) tiene módulo constante. Separar el par requiere cada vez más energía, de modo que queda confinado. Este es el comportamiento que se busca para los quarks en un hadrón.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[blue!8,rounded corners=5pt] (-4,-1.35) rectangle (4,1.35);
+    \node[blue!55!black] at (0,1.65) {superconducting medium};
+    \fill[red!75!black] (-2.8,0) circle (0.17);
+    \fill[blue!70!black] (2.8,0) circle (0.17);
+    \node[below] at (-2.8,-0.22) {monopole};
+    \node[below] at (2.8,-0.22) {antimonopole};
+    \fill[orange!18,rounded corners=7pt] (-2.65,-0.42) rectangle (2.65,0.42);
+    \draw[orange!85!black,thick,rounded corners=7pt]
+      (-2.65,-0.42) rectangle (2.65,0.42);
+    \foreach \y in {-0.22,0,0.22}
+      \draw[->,orange!85!black] (-2.55,\y) -- (2.55,\y);
+    \draw[<->] (-2.8,-1.00) -- (2.8,-1.00) node[midway,below] {$R$};
+  \end{tikzpicture}
+  \caption{El confinamiento del flujo produce un tubo uniforme y un potencial lineal
+  \(V(R)=T_{\mathrm{flux}}R\).}
+  \label{fig:l01-superconductor-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué desempeña el papel del medio superconductor en el hadrón?\lecturetimestamp{01:36:57}}
+\lecturerresponse{La analogía propuesta invierte los papeles eléctrico y magnético. Un condensado superconductor ordinario tiene carga eléctrica y confina el flujo magnético. En la imagen del superconductor dual de la QCD, un condensado de objetos cromomagnéticos confina la carga crom eléctrica de los quarks. Esos objetos no aparecen como partículas aisladas, porque se representan como condensados en el vacío.}
+\end{classroomqa}
+
+\editorialnote{La descripción mediante un superconductor dual es un mecanismo de confinamiento influyente, presentado aquí con el lenguaje histórico de la conferencia. Debe entenderse como una imagen física del vacío de la QCD, no como una derivación completa del confinamiento a partir de primeros principios.}
+
+\begin{classroomqa}
+\audiencequestion{¿Es la energía proporcional a la longitud una regla general para cualquier cuerda ordinaria llevada a un régimen altamente relativista?\lecturetimestamp{01:38:10}}
+\lecturerresponse{No. Primero haría falta una teoría relativista coherente de ese material, y su comportamiento dependería de los detalles. La energía lineal es propia de una configuración cuya densidad permanece constante al extenderla, o de un flujo al que se impide dispersarse transversalmente. Al estirarla, se crean más constituyentes o más longitud con un campo uniforme, en vez de limitarse a aumentar la separación entre un conjunto fijo de moléculas.}
+\end{classroomqa}
+
+\section{Grados de libertad transversales y tamaño de una partícula}
+
+La construcción en el cono de luz expresa la cuerda directamente en términos de sus coordenadas transversales. No hay un oscilador longitudinal independiente y libremente especificable análogo a cada oscilador transversal. Esta reducción en una dimensión espacial directa es una de las características notables del formalismo; aun así, la teoría completa debe satisfacer la invariancia de Lorentz.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué ocurre con el movimiento residual a lo largo de la dirección \(z\)?
+\lecturetimestamp{01:40:10}}
+\lecturerresponse{En la descripción en el cono de luz, el movimiento longitudinal no se introduce como un grado de libertad independiente. Las oscilaciones físicas se describen transversalmente, mientras que las restricciones determinan la información longitudinal. Esta economía está relacionada, en espíritu, con la idea de que los sistemas gravitatorios podrían admitir una descripción con una dimensión directa menos, aunque aquí no se deriva esa conexión.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cuántos puntos se conocen realmente en los diagramas de Regge?
+\lecturetimestamp{01:41:15}}
+\lecturerresponse{El máximo exacto depende de la familia; una cifra aproximada es de unos siete. La sucesión no se prolonga indefinidamente en los datos experimentales. Lo relevante es que los puntos conocidos no muestran el tipo de fallo o punto final de ruptura visible que es habitual en la materia macroscópica ordinaria.}
+\end{classroomqa}
+
+La fenomenología de los hadrones aportó la motivación histórica, pero no es necesario que la teoría matemática de cuerdas reproduzca los hadrones en todos sus detalles. Una vez construido el formalismo, cabe preguntarse qué describe realmente. Su estado sin masa y de espín dos, junto con otras propiedades, apunta de manera más natural a la gravedad.
+
+El aparente contraste entre los hadrones y los electrones puede cuantificarse mediante la energía de una rotación rígida,
+
+\begin{equation}
+  E_{\mathrm{rot}}=\frac{J^2}{2I},
+  \qquad
+  I\sim MR^2.
+  \label{eq:l01-rotational-energy}
+\end{equation}
+
+El momento angular está cuantizado. Si escribimos \(J^2\) esquemáticamente como \(\hbar^2 n^2\), el primer escalón rotacional es del orden de
+
+\begin{equation}
+  \Delta E_{0\to1}\sim\frac{\hbar^2}{2I}.
+  \label{eq:l01-first-rotational-step}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_18.png}
+  \caption{La estimación del momento de inercia para la primera excitación rotacional, \(\Delta E\sim\hbar^2/(2I)\).}
+  \lectureframe{01:44:00}
+  \label{fig:l01-rotational-board}
+\end{figure}
+
+A masa fija, un radio menor implica un momento de inercia mucho menor y una energía de excitación mucho mayor. Los hadrones son grandes a la escala de su dinámica interna, así que una excitación rotacional cuesta aproximadamente un GeV y es accesible en colisiones de partículas. Si los electrones tienen alguna subestructura espacial, los límites experimentales sitúan su escala mucho más abajo, y sus excitaciones rotacionales quedarían muy por encima de las energías disponibles. Una pelota de baloncesto representa el extremo opuesto: su momento de inercia es tan grande que un cuanto de momento angular cuesta una energía imperceptiblemente pequeña. Los escalones rotacionales u orbitales atómicos quedan entre estos extremos, por lo común a escala de electronvoltios.
+
+\begin{classroomqa}
+\audiencequestion{¿Podría un electrón aparentemente elemental tener aun así estructura espacial y excitaciones rotacionales?\lecturetimestamp{01:42:04}}
+\lecturerresponse{Solo podría ocultarlas a energías muy altas. El coste de una unidad de momento angular escala como \(1/I\), y \(I\sim MR^2\). Por tanto, un radio extremadamente pequeño desplaza mucho la primera excitación en el diagrama de masa al cuadrado. La ausencia de excitaciones electrónicas observadas significa que el electrón es puntual o que cualquier escala de composición es mucho menor que lo que pueden resolver los experimentos actuales.}
+\end{classroomqa}
+
+Ahora puede leerse dinámicamente el diagrama de Regge inicial. Los hadrones revelan estados rotacionales y vibracionales accesibles porque son objetos extendidos. Los escalones iguales de su espectro de masa al cuadrado son la señal esperada cuando se identifica un Hamiltoniano de oscilador con \(M^2\). Su energía aproximadamente lineal con la longitud es la señal de un tubo de flujo con tensión constante. La espectroscopia, la dualidad de dispersión, la geometría de la hoja de mundo y la mecánica en el cono de luz son cuatro descripciones de una misma idea organizadora: un objeto relativista extendido cuya variable interna natural es la masa al cuadrado.

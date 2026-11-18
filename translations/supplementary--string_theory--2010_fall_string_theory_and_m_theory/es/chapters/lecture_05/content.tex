@@ -1,0 +1,366 @@
+\chapter{Escalas, cuerdas y veintiséis dimensiones}
+
+\lectureoverview{¿Qué determina la separación entre los niveles del espectro de una cuerda? La respuesta es la tensión, una magnitud con dimensiones de masa al cuadrado. Para las cuerdas fundamentales, esta observación conduce a las unidades de Planck, a la imposibilidad práctica de excitarlas directamente y al inicio del régimen de gravedad intensa. Tras una pausa deliberada, volvemos al estado fundamental de la cuerda bosónica abierta. Regular su energía de punto cero proporciona la vía histórica \emph{sencilla} para llegar a veinticuatro direcciones transversales y, por tanto, a veintiséis dimensiones espaciotemporales.}
+
+\section{La escala que habíamos dejado de lado}
+
+Hasta ahora hemos hablado de cuerdas que vibran y giran sin decir qué significa una unidad de excitación. Podemos imaginar un hadrón como una cuerda y excitar sus osciladores, pero ¿cuánto separa un estado del siguiente? ¿Qué determina esa separación?
+
+En el modelo elemental de cuerda hay un solo parámetro dimensional. Para encontrarlo, empecemos con un muelle estirado ordinario. Si sus extremos están separados una distancia \(\ell\), la ley de Hooke da \begin{equation}
+  E_{\mathrm{spring}}=\frac{k\ell^2}{2}.
+  \label{eq:l05-hooke}
+\end{equation} El factor de un medio lo añadió la clase después de que se escribiera la primera versión. En esta estimación inicial, nada esencial dependerá de esos factores numéricos.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_01.png}\caption{El segmento estirado y su energía potencial según la ley de Hooke.}\lectureframe{00:02:28}\label{fig:l05-hooke-board}\end{figure}
+
+La energía de \eqref{eq:l05-hooke} es no relativista. En la descripción de momento infinito que usamos en las clases anteriores, la energía interna no relativista es proporcional a \(m^2\), no a \(m\). Por tanto, escribimos esquemáticamente \begin{equation}
+  m^2\sim k\ell^2,
+  \qquad
+  m\sim \sqrt{k}\,\ell.
+  \label{eq:l05-mass-length}
+\end{equation} En el sistema de referencia en reposo de la cuerda, su masa es su energía, así que la segunda relación toma la forma \begin{equation}
+  E_{\mathrm{rest}}\sim T_s\ell,
+  \qquad
+  T_s\equiv\sqrt{k}.
+  \label{eq:l05-tension}
+\end{equation} El coeficiente \(T_s\) es la tensión de la cuerda: la energía almacenada por unidad de longitud.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_02.png}\caption{La pizarra pasa de \(m^2\sim k\ell^2\) a una masa proporcional a la longitud.}\lectureframe{00:05:42}\label{fig:l05-mass-length-board}\end{figure}
+
+Esta notación se adapta a la analogía del muelle usada en la clase. En la notación relativista estándar para cuerdas suele escribirse \begin{equation}
+  T_s=\frac{1}{2\pi\alpha'},
+  \label{eq:l05-alpha-prime}
+\end{equation}, de modo que los incrementos del nivel de la cuerda producen incrementos de \(m^2\) del orden de \(1/\alpha'\), equivalente al orden de la tensión. \editorialnote{La \(k\) efectiva de la clase se elige de modo que \(\sqrt{k}\) desempeñe el papel de la tensión. La afirmación independiente de la convención es que \(T_s\) tiene dimensiones de masa al cuadrado y que la pendiente de Regge satisface \(\alpha'\propto T_s^{-1}\).}
+
+\subsection{Dimensiones y separación entre niveles del oscilador}
+
+Fijemos \(c=\hbar=1\). La energía tiene entonces dimensiones de inverso de longitud: \begin{equation}
+  [E]=L^{-1}.
+\end{equation} Como la tensión es energía por unidad de longitud, \begin{equation}
+  [T_s]=L^{-2}=E^2.
+  \label{eq:l05-tension-dimension}
+\end{equation} Por eso, la separación entre los niveles del espectro de una cuerda se expresa naturalmente en masa al cuadrado.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_03.png}\caption{Unidades naturales en la pizarra: \(c=\hbar=1\), la energía es el inverso de la longitud y la frecuencia del oscilador está determinada por la escala del muelle.}\lectureframe{00:06:05}\label{fig:l05-natural-units-board}\end{figure}
+
+El oscilador ordinario muestra lo mismo desde otra perspectiva. Para un muelle de masa \(\mu\), \begin{equation}
+  \omega=\sqrt{\frac{k}{\mu}},
+  \qquad
+  \Delta E=\hbar\omega.
+\end{equation} Un muelle más rígido tiene una frecuencia más alta y un mayor salto cuántico de energía. Una cuerda contiene infinitos modos normales de este tipo, pero todos comparten una escala fijada por \(T_s\). Una vez conocida la tensión, queda determinada la separación entre los niveles del espectro de la cuerda.
+
+La tensión también tiene dimensiones de fuerza, porque fuerza por distancia es energía. Imaginemos que fijamos un extremo y colgamos un peso del otro. Una cuerda relativista ideal con \(E=T_s\ell\) puede soportar una fuerza determinada por \(T_s\), independiente de su longitud. La tensión hadrónica inferida de las energías de excitación observadas equivaldría, en esta comparación deliberadamente extravagante, al peso de un camión. Nunca se ha colgado un camión de un mesón: el espectro medido da la tensión, y la tensión permite hacer la comparación mecánica.
+
+Las cuerdas fundamentales serían mucho más rígidas. Si subyacen a los electrones, fotones y gravitones, sus primeras excitaciones del oscilador deben estar muy por encima de las energías de las partículas observadas. En el mismo experimento gravitatorio imaginario, su tensión podría sostener algo con una masa galáctica. La comparación no pretende ilustrar una aplicación de ingeniería. Su propósito es mostrar que una tensión enorme implica tanto una energía de excitación elevada como una fluctuación muy pequeña del estado fundamental.
+
+\section{Unidades construidas a partir de constantes universales}
+
+¿Qué escala es lo bastante grande? La referencia natural es la escala de Planck. En vez de citarla, vamos a construirla.
+
+Los metros, los kilogramos y los segundos son unidades de laboratorio excelentes, pero sus orígenes están a escala humana. El metro es práctico para medir tela o cuerda; el pie lleva el nombre de una parte del cuerpo; el segundo es una fracción manejable de un día. Se podría fijar el radio del protón igual a uno y simplificar algunas fórmulas nucleares, pero el protón es solo una partícula compuesta particular. Esa elección no simplificaría toda la física.
+
+Tres constantes dimensionales tienen un alcance más universal: \begin{itemize}\item \(c\) fija la velocidad límite de todo sistema material; \item \(\hbar\) aparece en las relaciones de incertidumbre de todo sistema cuántico; \item \(G\) acopla la gravedad a toda forma de masa-energía.\end{itemize} Elegir unidades en las que \(c=\hbar=G=1\) equivale a construir unidades de longitud, tiempo y masa a partir de estas constantes.
+
+Sus dimensiones habituales son \begin{equation}
+  \begin{aligned}
+    [c]&=LT^{-1},
+    & [\hbar]&=ML^2T^{-1},\\
+    [G]&=L^3M^{-1}T^{-2}.
+  \end{aligned}
+  \label{eq:l05-dimensions-constants}
+\end{equation} La relación del medio se deduce directamente de \(\Delta x\,\Delta p\gtrsim\hbar\). La última se obtiene, por ejemplo, de \begin{equation}
+  a=\frac{GM}{r^2}.
+\end{equation}
+
+\begin{figure}[H]\centering
+  \begin{minipage}[t]{0.48\textwidth}\centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_04.png}\par\smallskip\footnotesize (a) Unidades de \(c\) y \(\hbar\).\end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}\centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_05.png}\par\smallskip\footnotesize (b) Unidades de \(G\) a partir de la aceleración newtoniana.\end{minipage}\caption{Los elementos del análisis dimensional reunidos en la clase.}\lectureframe{00:25:43--00:26:40}\label{fig:l05-dimensional-analysis-board}\end{figure}
+
+\subsection{Primero, el área de Planck}
+
+Busquemos potencias \(p,q,r\) tales que \begin{equation}
+  G^p\hbar^q c^r
+\end{equation} tenga dimensiones \(L^2\). Empezar por el área evita introducir una raíz cuadrada demasiado pronto y, además, anticipa el papel especial que tendrá el área en la gravedad. A partir de \eqref{eq:l05-dimensions-constants}, la cancelación de la masa y el tiempo da \begin{equation}
+  -p+q=0,
+  \qquad
+  -2p-q-r=0.
+\end{equation} La potencia restante de la longitud debe satisfacer \begin{equation}
+  3p+2q+r=2.
+\end{equation} Así, \(q=p\), \(r=-3p\) y \(p=1\). El área de Planck es \begin{equation}
+  \ell_P^2=\frac{G\hbar}{c^3},
+  \label{eq:l05-planck-area}
+\end{equation} y, en consecuencia, \begin{equation}
+  \ell_P=\sqrt{\frac{G\hbar}{c^3}},
+  \qquad
+  t_P=\frac{\ell_P}{c},
+  \qquad
+  m_P=\sqrt{\frac{\hbar c}{G}}.
+  \label{eq:l05-planck-units}
+\end{equation}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_06.png}\caption{El argumento dimensional completo para el área y la longitud de Planck.}\lectureframe{00:31:34}\label{fig:l05-planck-area-board}\end{figure}
+
+Con precisión de orden de magnitud, \begin{equation}
+  \begin{aligned}
+    \ell_P&\sim10^{-35}\,\mathrm{m},
+    &t_P&\sim10^{-43}\,\mathrm{s},\\
+    m_P&\sim10^{-8}\,\mathrm{kg},
+    &m_Pc^2&\sim10^{19}\,\mathrm{GeV}.
+  \end{aligned}
+  \label{eq:l05-planck-numbers}
+\end{equation}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_07.png}\caption{Las tres escalas de Planck anotadas con precisión de orden de magnitud.}\lectureframe{00:35:12}\label{fig:l05-planck-values-board}\end{figure}
+
+La longitud y el tiempo son inimaginablemente pequeños, mientras que la masa es sorprendentemente macroscópica para los estándares de la física de partículas: aproximadamente la masa de una mota de polvo fino. Su energía en reposo es del orden de unos pocos gigajulios, comparable a la energía química de un tanque de gasolina. En cambio, el universo observable abarca aproximadamente \(10^{60}\) longitudes de Planck y tiene una edad de aproximadamente \(10^{60}\) tiempos de Planck. Estas comparaciones pretenden dar significado físico a las unidades, no aumentar su precisión numérica.
+
+Si la longitud característica de la cuerda \(\ell_s=\sqrt{\alpha'}\) está cerca de \(\ell_P\), entonces el tamaño cuántico de la cuerda está cerca de \(\ell_P\), su período de oscilación cerca de \(t_P\) y su primera excitación masiva cerca de \(m_P\). La clase admite factores de diez, de cien o mayores: se trata de una expectativa, no de una identidad dimensional.
+
+\begin{classroomqa}\audiencequestion{¿La masa de la escala de Planck es el aumento respecto del estado fundamental de la partícula? \lecturetimestamp{00:38:37}}\lecturerresponse{La magnitud que está espaciada uniformemente es la masa al cuadrado. Si el estado fundamental es ligero, el primer estado excitado de la cuerda tiene \(m^2\) mayor en una cantidad del orden de \(m_P^2\), de modo que su masa y la energía necesaria en el sistema del centro de masas son del orden de \(m_P\).}\end{classroomqa}
+
+\section{¿Cuánto deberían aproximarse las dos escalas?}
+
+\begin{classroomqa}\audiencequestion{El análisis dimensional da \(\ell_P\), pero ¿por qué habría de ser esa la longitud de una cuerda? \lecturetimestamp{00:40:21}}\lecturerresponse{Es una conjetura física respaldada por la gravedad y por la ausencia de estructura de cuerda observada, no una consecuencia del análisis dimensional por sí solo. La longitud de la cuerda puede ser mayor que la longitud de Planck, lo que significa que su escala de energía es menor. La clase sostiene únicamente que no debería ser una longitud ordinaria de la física de partículas y que llevarla muy por debajo de la longitud de Planck conduce al colapso gravitatorio.}\end{classroomqa}
+
+La relación entre las dos escalas depende, de hecho, del acoplamiento. En una compactificación completa, \(\ell_P\), \(\ell_s\), el acoplamiento de cuerda y el volumen de compactificación intervienen conjuntamente. No existe una ecuación universal \(\ell_s=\ell_P\). Lo que se mantiene del argumento de la clase es la consideración de escala: los efectos de cuerda deben aparecer a energías muy altas, y no se puede hablar de localización subplanckiana ignorando la gravedad. \editorialnote{Las construcciones modernas de teoría de cuerdas no tienen por qué identificar exactamente la longitud de cuerda con la longitud de Planck en cuatro dimensiones. La relación depende del acoplamiento de cuerda y de los datos de compactificación.}
+
+\begin{classroomqa}\audiencequestion{Si se considera la longitud de Planck como la menor longitud útil, ¿es también la masa de Planck la menor masa posible? \lecturetimestamp{00:43:27}}\lecturerresponse{No. Las partículas ordinarias tienen masas mucho menores. La masa de Planck es la escala a la que un objeto compacto puede tener un radio gravitatorio comparable a su longitud de onda cuántica. En el lenguaje heurístico de la clase, es la escala del agujero negro semiclásico más ligero, con un tiempo de vida del orden del tiempo de Planck; esta última afirmación no debe confundirse con una descripción precisa de un objeto plenamente cuántico.}\end{classroomqa}
+
+\subsection{Lo que pueden decirnos los acoplamientos variables con la escala}
+
+Hay indicios indirectos de que la teoría cuántica de campos convencional sigue siendo válida a escalas muy superiores a las que pueden alcanzarse directamente con aceleradores. Los tres acoplamientos de gauge del modelo estándar se miden a energías accesibles y se puede extrapolar su dependencia con la escala. En el gráfico esquemático de la clase, los acoplamientos \(U(1)\), \(SU(2)\) y \(SU(3)\) se aproximan entre sí a una escala alta de unificación, quizá unos pocos órdenes de magnitud por debajo de la energía de Planck.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_08.png}\caption{El gráfico esquemático de los acoplamientos variables con la escala. Las tres curvas de gauge se aproximan antes de que la intensidad creciente de la gravedad alcance el orden de la unidad.}\lectureframe{00:47:18}\label{fig:l05-running-couplings-board}\end{figure}
+
+Esto es una extrapolación, no un experimento directo en el punto de intersección. Las partículas o umbrales adicionales entre las energías de laboratorio y las de unificación pueden cambiar las pendientes. La única conclusión prudente es que la teoría de campos conocida no muestra indicios de subestructura a escala de cuerda en distancias ordinarias y que una escala de cuerda plausible se encuentra en algún punto del enorme intervalo entre las escalas de unificación inferida y de Planck.
+
+\begin{classroomqa}\audiencequestion{¿Cuáles son los tres acoplamientos que se están extrapolando? \lecturetimestamp{00:48:28}}\lecturerresponse{Son los acoplamientos de gauge asociados a \(U(1)\), \(SU(2)\) y \(SU(3)\): las interacciones de hipercarga, débil y fuerte. El electromagnetismo surge de la mezcla electrodébil, en vez de ser un cuarto factor de gauge independiente en este recuento.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Aumenta la propia constante gravitatoria \(G\) cuando exploramos energías más altas? \lecturetimestamp{00:49:30}}\lecturerresponse{\(G\) es dimensional, así que no es por sí sola la magnitud adecuada para compararla con un acoplamiento de gauge adimensional. A una energía característica \(M\), la intensidad gravitatoria adimensional se comporta esquemáticamente como \(GM^2/(\hbar c)\). Esa combinación crece con la energía y alcanza el orden de la unidad en la escala de Planck.}\end{classroomqa}
+
+Las leyes de fuerza permiten ver la comparación: \begin{equation}
+  F_{\mathrm{em}}\sim\frac{e^2}{r^2},
+  \qquad
+  F_{\mathrm{grav}}\sim\frac{GM^2}{r^2}.
+  \label{eq:l05-force-laws}
+\end{equation} Así, en unidades naturales \(e^2\) se compara con \(GM^2\), no con \(G\).
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_09.png}\caption{Las leyes de fuerza electromagnética y gravitatoria usadas para identificar la intensidad gravitatoria adimensional.}\lectureframe{00:50:50}\label{fig:l05-force-laws-board}\end{figure}
+
+\section{Por qué la espectroscopia directa de cuerdas está fuera de nuestro alcance}
+
+¿Cómo estableceríamos experimentalmente que un electrón es una cuerda? Haríamos lo que se hizo en la espectroscopia de hadrones: lo golpearíamos con suficiente fuerza para excitar sus modos internos y buscaríamos una torre de estados cuyas masas siguieran el patrón de cuerda. Si el primer nivel masivo está cerca de \(10^{19}\,\mathrm{GeV}\), queda muy fuera del alcance de cualquier máquina directa.
+
+La energía total no es el único obstáculo. Hay que concentrarla en un parámetro de impacto minúsculo. Ahí entran en juego los agujeros negros.
+
+\begin{classroomqa}\audiencequestion{A estas energías, ¿empezaría un acelerador a producir agujeros negros pequeños? \lecturetimestamp{00:50:57}}\lecturerresponse{Esa es la expectativa heurística cuando la energía del centro de masas se concentra dentro de su radio gravitatorio. Un agujero negro estelar se forma cuando la energía potencial gravitatoria comprime una estrella masiva. Uno microscópico se formaría, en cambio, al enfocar energía cinética en una región de colisión diminuta. En la gravedad de cuatro dimensiones, la escala necesaria es la de Planck.}\end{classroomqa}
+
+Para ponerlo en perspectiva, la ganancia de energía de un acelerador lineal es aproximadamente proporcional a su longitud. La clase toma unos dos kilómetros para alcanzar aproximadamente \(100\,\mathrm{GeV}\) como referencia sencilla a escala del SLAC. Con el mismo gradiente, llegar a \(10^{19}\,\mathrm{GeV}\) multiplicaría la longitud aproximadamente por \(10^{17}\), dando lugar a una máquina de escala galáctica.
+
+Incluso una máquina así necesitaría luminosidad. Los haces no se apuntan con precisión de longitud de Planck, pareja a pareja; se hacen cruzar cantidades enormes de partículas para que unas pocas colisionen con el parámetro de impacto deseado. Multiplicar una energía de Planck por una tasa de colisión enorme da lugar a un requisito de potencia igualmente absurdo. Las estimaciones son deliberadamente aproximadas, pero su conclusión es firme: no es plausible diseñar un experimento de espectroscopia directa de cuerdas a la escala de Planck.
+
+Las pruebas indirectas tendrían que ser más estructurales: una teoría que produzca las partículas e interacciones observadas a baja energía con suficiente especificidad para poder someterla a prueba, o efectos de la compactificación que persistan muy por debajo de la escala de cuerda. La clase no afirma que ya se disponga de una construcción decisiva de ese tipo.
+
+\subsection{Dimensiones extra y límite de localización}
+
+\begin{classroomqa}\audiencequestion{¿Deberían tener también las dimensiones extra tamaños cercanos a la longitud de Planck? \lecturetimestamp{00:56:23}}\lecturerresponse{En esta imagen elemental se espera que sean extremadamente pequeñas, aunque el argumento no fija su tamaño exacto. Si una dimensión compacta tuviera un tamaño suficiente para explorarla a menor energía, los nuevos modos de Kaluza--Klein y el comportamiento de dimensiones superiores ya habrían alterado la teoría de campos que observamos. Su extrapolación satisfactoria establece, por tanto, un límite superior para el tamaño de esas dimensiones.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Por qué una cuerda o una dimensión compacta no podrían ser muchos órdenes de magnitud más pequeñas que \(\ell_P\)? \lecturetimestamp{00:57:48}}\lecturerresponse{Resolver distancias menores requiere mayor momento. Por encima de la escala de Planck, la energía necesaria para localizar algo tiene un radio gravitatorio comparable a la región explorada y, después, mayor que ella. El experimento forma un agujero negro antes de poder resolver una cuerda ordinaria más pequeña.}\end{classroomqa}
+
+El principio de incertidumbre proporciona la estimación. Localizar algo en una región de tamaño \(\Delta x\) requiere
+
+\begin{classroomqa}\audiencequestion{Una vez elegidos la longitud y el tiempo de Planck, ¿cómo se determina físicamente la masa de Planck? \lecturetimestamp{00:59:04}}\lecturerresponse{Usa \(\hbar\) o \(G\) para convertir la escala de longitud en energía. El principio de incertidumbre indica que localizar dos partículas dentro de \(\ell_P\) requiere un momento del orden de \(\hbar/\ell_P\) y, por tanto, una energía del orden de \(m_Pc^2\). De forma equivalente, es la masa para la que las longitudes cuántica y gravitatoria se vuelven comparables.}\end{classroomqa}
+
+\begin{equation}
+  \Delta p\gtrsim\frac{\hbar}{\Delta x},
+  \qquad
+  E\sim c\,\Delta p.
+  \label{eq:l05-localization}
+\end{equation}Cuando \(\Delta x=\ell_P\), esta energía es \begin{equation}
+  E\sim\frac{\hbar c}{\ell_P}=m_Pc^2.
+\end{equation} Al mismo tiempo, el radio de Schwarzschild \begin{equation}
+  r_s\sim\frac{GE}{c^4}
+\end{equation} es del orden de \(\ell_P\), salvo por factores numéricos. La localización cuántica y el colapso gravitatorio coinciden en la misma escala.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_10.png}\caption{Las fórmulas de la longitud y la masa de Planck retomadas durante el argumento de localización.}\lectureframe{01:00:25}\label{fig:l05-localization-board}\end{figure}
+
+Con esto concluye el argumento que fija la escala.
+
+\section{El estado fundamental debe quedar por debajo del fotón}
+
+Después de la pausa hay dos caminos posibles: empezar con las transformaciones conformes o presentar la ruta más antigua y sencilla hacia la dimensión crítica. Elegimos esta última, con una advertencia. El argumento sencillo no es fácil ni es la explicación más profunda. Aun así, es correcto y se acerca a la forma histórica en que se hizo el descubrimiento.
+
+Volvamos a la cuerda bosónica abierta. Aplicar una vez un operador de creación transversal produce dos estados de polarización. Como no hay un tercer estado longitudinal, la excitación debe ser un vector sin masa. En unidades en las que un cuanto del modo \(1\) aumenta \(m^2\) en una unidad, \begin{equation}
+  m_{\mathrm{ground}}^2=-1,
+  \qquad
+  m_{\mathrm{first}}^2=-1+1=0.
+  \label{eq:l05-open-intercept}
+\end{equation} El estado fundamental taquiónico sigue siendo un problema de la teoría bosónica; lo reconocemos y lo dejamos de lado. La pregunta inmediata es de dónde viene la unidad negativa en \eqref{eq:l05-open-intercept}.
+
+Cada modo de cuerda es un oscilador armónico. Con \(\hbar=1\), su energía de vacío es \begin{equation}
+  E_{0,n}=\frac{\omega_n}{2}.
+\end{equation} Para la cuerda, \(\omega_n=n\), de modo que una coordenada transversal contribuye formalmente \begin{equation}
+  E_0^{(1)}
+  =\frac12\sum_{n=1}^{\infty}n.
+  \label{eq:l05-formal-zero-point}
+\end{equation}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_11.png}\caption{La suma de punto cero \(\sum n/2\) escrita tras recordar las frecuencias de los modos.}\lectureframe{01:06:18}\label{fig:l05-zero-point-board}\end{figure}
+
+Ahora la dificultad queda clara. Todos los términos de \eqref{eq:l05-formal-zero-point} son positivos, y la suma diverge. ¿Cómo puede dar un intercepto negativo finito?
+
+\section{Restar el movimiento antes de leer el espectro}
+
+Antes de regular la suma, recordemos por qué identificamos la energía interna con la masa al cuadrado. Para una partícula con gran momento longitudinal \(P>0\), \begin{equation}
+  E=\sqrt{P^2+m^2}
+   =P+\frac{m^2}{2P}
+   +O(P^{-3}).
+  \label{eq:l05-large-p-energy}
+\end{equation}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_12.png}\caption{La expansión para momento grande \(P\) separa el momento total del término de masa interna.}\lectureframe{01:07:35}\label{fig:l05-fast-energy-board}\end{figure}
+
+El primer término es el movimiento global, poco interesante, a lo largo del eje \(z\). Se conserva y es común a todos los estados internos con el mismo \(P\). Restarlo y reescalar elimina la dilatación cinemática del tiempo: \begin{equation}
+  \begin{aligned}
+    E-P&=\frac{m^2}{2P}+O(P^{-3}),\\
+    2P(E-P)&=m^2+O(P^{-2}).
+  \end{aligned}
+  \label{eq:l05-internal-energy}
+\end{equation}
+
+El átomo da una imagen física. Apliquemos un impulso a un átomo de hidrógeno. Su energía total aumenta, pero la diferencia entre dos niveles internos, medida según el tiempo de laboratorio, disminuye porque el reloj del átomo se dilata. El factor \(1/P\) en \eqref{eq:l05-large-p-energy} es esa supresión. Multiplicar por \(2P\) restablece la diferencia invariante de masa al cuadrado.
+
+Por tanto, la energía bruta del estado fundamental no tiene por qué ser literalmente \(-1\). Puede contener una contribución grande e independiente del estado, asociada a la energía longitudinal global, además de un resto interno finito. La clase reescribe la relación en el sistema con impulso para mostrar ambas contribuciones antes de volver a la suma de osciladores.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_13.png}\caption{El término de masa invariante mostrado junto a la gran contribución longitudinal, independiente del estado.}\lectureframe{01:11:34}\label{fig:l05-infinite-piece-board}\end{figure}
+
+Las energías de vacío infinitas son habituales en teoría cuántica de campos. A menudo se separa una constante divergente independiente del estado de las diferencias de energía observables. La clase compara esto con la energía de punto cero del campo electromagnético en el aula y califica abiertamente el procedimiento de insatisfactorio, pero estándar. Aquí seguimos la misma heurística: aislamos la parte divergente y preguntamos si queda un resto finito definido.
+
+\section{Regular la suma}
+
+Introduzcamos un regulador positivo \(\epsilon\): \begin{equation}
+  S_1(\epsilon)
+  =\sum_{n=1}^{\infty}n e^{-n\epsilon}.
+  \label{eq:l05-regulated-sum}
+\end{equation} Para todo \(\epsilon>0\), el factor exponencial acaba dominando el factor \(n\), así que la suma converge. Hacer que \(\epsilon\) tienda a cero elimina el corte.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_14.png}\caption{El regulador exponencial aplicado término a término a \(1+2+3+\cdots\).}\lectureframe{01:16:42}\label{fig:l05-regulator-board}\end{figure}
+
+El factor \(n\) se puede obtener mediante una derivación: \begin{equation}
+  S_1(\epsilon)
+  =
+  -\frac{d}{d\epsilon}
+  \sum_{n=1}^{\infty}e^{-n\epsilon}.
+  \label{eq:l05-derivative-trick}
+\end{equation}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_15.png}\caption{Derivar con respecto al corte hace aparecer el factor \(-n\).}\lectureframe{01:18:05}\label{fig:l05-derivative-board}\end{figure}
+
+La serie restante es geométrica: \begin{equation}
+  S_0(\epsilon)
+  \equiv
+  \sum_{n=1}^{\infty}e^{-n\epsilon}
+  =
+  \frac{e^{-\epsilon}}{1-e^{-\epsilon}}
+  =
+  \frac{1}{e^\epsilon-1}.
+  \label{eq:l05-geometric-sum}
+\end{equation}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_16.png}\caption{La serie geométrica regularizada expresada en forma cerrada.}\lectureframe{01:19:12}\label{fig:l05-geometric-board}\end{figure}
+
+Desarrollemos para valores pequeños de \(\epsilon\): \begin{equation}
+  S_0(\epsilon)
+  =
+  \frac{1}{\epsilon}
+  -\frac12
+  +\frac{\epsilon}{12}
+  -\frac{\epsilon^3}{720}
+  +O(\epsilon^5).
+  \label{eq:l05-bernoulli-expansion}
+\end{equation} La pizarra obtiene este resultado desarrollando por separado el numerador y el denominador, sacando factor común una potencia de \(\epsilon\) y luego desarrollando el recíproco. En ese cálculo se comprueban varias veces los signos en clase; la expresión compacta \eqref{eq:l05-bernoulli-expansion} es el resultado depurado.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_17.png}\caption{Desarrollos del numerador y del denominador antes de simplificar el recíproco.}\lectureframe{01:23:10}\label{fig:l05-expansion-board}\end{figure}
+
+Al aplicar \(-d/d\epsilon\), se obtiene \begin{equation}
+  S_1(\epsilon)
+  =
+  \frac{1}{\epsilon^2}
+  -\frac{1}{12}
+  +\frac{\epsilon^2}{240}
+  +O(\epsilon^4).
+  \label{eq:l05-regulated-result}
+\end{equation}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_18.png}\caption{El término divergente \(1/\epsilon^2\) y el resto finito \(-1/12\) al final del cálculo con el regulador.}\lectureframe{01:29:48}\label{fig:l05-minus-twelve-board}\end{figure}
+
+A menudo se resume este resultado en tono de broma como \(1+2+3+\cdots=-1/12\). Eso no es convergencia ordinaria. La ecuación \eqref{eq:l05-regulated-result} indica que este regulador particular produce un término divergente más una parte finita independiente del regulador: \begin{equation}
+  \underbrace{\frac{1}{\epsilon^2}}_{\text{divergent}}
+  \;+\;
+  \underbrace{\left(-\frac{1}{12}\right)}_{\text{finite}}
+  \;+\;O(\epsilon^2).
+\end{equation} La clase absorbe el primer término en la contribución independiente del estado que ya estaba presente y conserva el segundo. También mantiene la advertencia atribuida a Pauli: que una cantidad sea infinita no basta, por sí solo, para hacerla cero. Una teoría coherente debe explicar por qué se permite la sustracción.
+
+Al restituir el factor de un medio en \eqref{eq:l05-formal-zero-point}, una coordenada transversal contribuye \begin{equation}
+  E_0^{(1)}=-\frac{1}{24}.
+  \label{eq:l05-one-transverse-zero-point}
+\end{equation}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_19.png}\caption{El factor de un medio convierte la parte finita \(-1/12\) en \(-1/24\) por coordenada transversal.}\lectureframe{01:33:42}\label{fig:l05-minus-twenty-four-board}\end{figure}
+
+\section{Contar las direcciones transversales}
+
+Sea \(D_\perp\) el número de coordenadas transversales de la cuerda. Su contribución total al vacío es \begin{equation}
+  E_0^{\mathrm{open}}
+  =-\frac{D_\perp}{24}.
+  \label{eq:l05-open-vacuum}
+\end{equation} Para que el primer oscilador de la cuerda abierta eleve el estado fundamental de \(-1\) al nivel sin masa, necesitamos \begin{equation}
+  -\frac{D_\perp}{24}=-1.
+\end{equation} Por tanto, \begin{equation}
+  D_\perp=24.
+\end{equation} Estas son las direcciones perpendiculares al gran momento longitudinal. Al añadir esa dirección espacial longitudinal y el tiempo, obtenemos \begin{equation}
+  D=D_\perp+2=26.
+  \label{eq:l05-critical-dimension}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{¿Cuándo entró este argumento en la teoría de cuerdas? \lecturetimestamp{01:35:27}}\lecturerresponse{Pertenece a la época original de las cuerdas hadrónicas, en torno a 1969 y los primeros años de la década de 1970. Las trayectorias de Regge ya se conocían experimentalmente. Cuando se empezó a explorar por sí solo el modelo de osciladores, se vio que el primer estado excitado tenía dos polarizaciones vectoriales, no tres, lo que obligaba a que careciera de masa. El intercepto requerido condujo entonces rápidamente a veinticuatro osciladores transversales.}\end{classroomqa}
+
+En aquel momento, esto parecía casi demasiado extraño para creerlo. ¿Por qué iba a revelar una suma de vacío regularizada la dimensión del espaciotiempo? Sin embargo, las piezas encajaban: el vector sin masa, el intercepto y el número de osciladores transversales seleccionaban todos el mismo número.
+
+\subsection{La cuerda cerrada confirma el recuento}
+
+Una cuerda cerrada necesita un modo de movimiento hacia la izquierda y otro hacia la derecha para alcanzar su primer nivel físico sin masa. Por tanto, su estado fundamental debe empezar dos unidades por debajo de cero.
+
+\begin{classroomqa}\audiencequestion{Si veinticuatro direcciones transversales dan solo \(-1\), ¿debe vivir una cuerda cerrada en cuarenta y ocho direcciones transversales? \lecturetimestamp{01:37:47}}\lecturerresponse{No. Las cuerdas abiertas y cerradas están en el mismo espaciotiempo. Una cuerda cerrada ya tiene el doble de contenido de osciladores: una torre que circula en cada dirección de la hoja de universo. Cada torre aporta \(-24/24=-1\), así que juntas dan \(-2\).}\end{classroomqa}
+
+Por tanto, \begin{equation}
+  E_0^{\mathrm{closed}}
+  =
+  2\left(-\frac{D_\perp}{24}\right)
+  =-2
+  \qquad (D_\perp=24).
+\end{equation} Añadir un oscilador de cada sector eleva el estado dos unidades y lo lleva a masa al cuadrado nula, justo donde apareció el multiplete del gravitón en la clase anterior.
+
+Este acuerdo hace que el argumento resulte más convincente, pero aún no es la explicación profunda. En la cuantización moderna, la constante de orden normal, el cierre del álgebra de Lorentz o de Virasoro y la cancelación de la anomalía conforme forman parte de una única estructura coherente. Esa estructura fija tanto el intercepto como la dimensión crítica; el resto finito del corte es la vía histórica para llegar a ella.
+\editorialnote{El cálculo con el regulador ofrece una visión heurística de la constante de orden normal. La derivación más profunda de \(D=26\) requiere invariancia conforme de la hoja de universo, equivalente a la cancelación de la anomalía conforme y a un álgebra de restricciones coherente.}
+
+A continuación veremos esa vía más profunda. Para empezar, basta con un poco de análisis complejo: coordenadas complejas, funciones analíticas y las ecuaciones de Cauchy--Riemann. La imagen física prometida es la de un caramelo turco---tirado hacia un lado, estirado en otro y remodelado sin destruir la estructura relevante. La matemática que subyace a esa imagen es la invariancia conforme.
