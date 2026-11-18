@@ -1,0 +1,467 @@
+\chapter{Simetría, degeneración y escaleras de momento angular}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+
+\section{Simetrías y niveles de energía degenerados}
+
+Una simetría es una operación que no cambia la descripción física de un sistema. No cambia el hamiltoniano, la ecuación de Schr\"odinger ni las energías posibles. Si un operador unitario \(S\) representa la operación, la invariancia significa
+\begin{equation}
+S H S^\dagger=H,
+\end{equation}
+o, de manera equivalente,
+\begin{equation}
+[S,H]=0.
+\end{equation}
+
+La traslación es un ejemplo. Si se desplaza un átomo de un lugar a otro, su energía no cambia. Esto se cumple para todos los estados atómicos, no solo para el estado fundamental. La rotación es otro ejemplo y será el tema principal de esta sección.
+
+El intercambio de dos partículas idénticas también es una simetría. Llamar electrón uno y electrón dos a dos electrones, o Harry y Fred, no los hace distintos. Intercambiar las etiquetas no puede cambiar las propiedades del átomo.
+
+Un cristal tiene una simetría de traslación adicional. Desplazar todo el cristal por el espacio es una traslación ordinaria. Sin embargo, en un cristal infinito, una traslación de una constante de red también devuelve la misma disposición física. De manera equivalente, los sitios de la red se pueden volver a etiquetar desplazando en una unidad el índice de cada sitio. Los bordes impiden que esta afirmación sea exacta para un cristal finito, pero constituye una buena simetría lejos de los extremos de un cristal muy largo.
+
+La homogeneidad del espacio---el hecho de que toda posición sea como cualquier otra---es la simetría de traslación. La isotropía del espacio---el hecho de que toda dirección sea como cualquier otra---es la simetría de rotación.
+
+La degeneración está relacionada con la simetría, pero no es lo mismo. Un nivel de energía es degenerado cuando más de un estado tiene exactamente esa energía. Para un hamiltoniano genérico con espectro discreto, que dos niveles no relacionados coincidan exactamente sería un accidente asombroso. Una coincidencia de una parte en \(10^{15}\) sigue sin ser una igualdad exacta. Por lo general, las degeneraciones exactas indican la presencia de una simetría.
+
+A veces la simetría implica degeneración, pero no siempre. El primer ejemplo muestra tanto por qué puede hacerlo como por qué una sola simetría quizá no sea suficiente.
+
+\section{Una partícula en una circunferencia}
+
+Consideremos una cuenta obligada a moverse sobre un alambre circular. Su posición podría describirse mediante las coordenadas cartesianas \(x\) y \(y\), pero basta con una coordenada angular:
+\begin{equation}
+\psi=\psi(\theta).
+\end{equation}
+La densidad de probabilidad de posición sobre la circunferencia es \(\psi^*(\theta)\psi(\theta)\).
+
+Una rotación activa en sentido antihorario de un ángulo pequeño \(\epsilon\) transforma
+\begin{equation}
+\psi(\theta)\longrightarrow\psi(\theta-\epsilon).
+\end{equation}
+Por lo tanto,
+\begin{align}
+\delta\psi(\theta)
+&=\psi(\theta-\epsilon)-\psi(\theta)\\
+&=-\epsilon\frac{d\psi}{d\theta}
++\mathcal O(\epsilon^2).
+\end{align}
+
+El operador
+\begin{equation}
+L_z=-i\hbar\frac{d}{d\theta}
+\end{equation}
+es hermítico en el espacio de funciones de onda periódicas. Es el análogo angular de
+\begin{equation}
+p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+El factor \(i\) es esencial para la hermiticidad. En términos de \(L_z\),
+\begin{equation}
+\delta\psi
+=-\frac{i\epsilon}{\hbar}L_z\psi
++\mathcal O(\epsilon^2),
+\end{equation}
+por lo que el operador de rotación infinitesimal es
+\begin{equation}
+R(\epsilon)
+=1-\frac{i\epsilon}{\hbar}L_z
++\mathcal O(\epsilon^2).
+\end{equation}
+Esto identifica \(L_z\) como el generador de rotaciones alrededor del eje perpendicular a la circunferencia.
+
+\begin{classroomqa}
+\lecturetimestamp{00:11:19}
+\audiencequestion{¿No debería tener signo opuesto uno de los factores que contienen \(i\)?}
+\lecturerresponse{Al comprobar los signos se obtiene la relación anterior. Con la convención \(\psi(\theta)\to\psi(\theta-\epsilon)\), la variación es \(-\epsilon\,d\psi/d\theta\), que es igual a \(-i\epsilon L_z\psi/\hbar\).}
+\end{classroomqa}
+
+Ahora hallemos los estados propios del momento angular:
+\begin{equation}
+L_z\psi=M\psi.
+\end{equation}
+Al sustituir el operador diferencial se obtiene
+\begin{equation}
+-i\hbar\frac{d\psi}{d\theta}=M\psi,
+\end{equation}
+cuyas soluciones tienen la forma
+\begin{equation}
+\psi(\theta)=C\exp\left(\frac{iM\theta}{\hbar}\right).
+\end{equation}
+
+Hay una condición adicional que no se presenta para el movimiento sobre una recta infinita. Los puntos \(\theta=0\) y \(\theta=2\pi\) son el mismo punto, así que una función de onda orbital univaluada debe satisfacer
+\begin{equation}
+\psi(\theta+2\pi)=\psi(\theta).
+\end{equation}
+Para la autofunción anterior, esto exige
+\begin{equation}
+\exp\left(\frac{2\pi iM}{\hbar}\right)=1.
+\end{equation}
+En consecuencia,
+\begin{equation}
+M=m\hbar,
+\qquad
+m\in\mathbb Z.
+\end{equation}
+Por tanto, los valores posibles del momento angular orbital sobre la circunferencia son
+\begin{equation}
+\ldots,-2\hbar,-\hbar,0,\hbar,2\hbar,\ldots.
+\end{equation}
+
+¿Debe tener un estado con momento angular \(m\hbar\) la misma energía que un estado con momento angular \(-m\hbar\)? Los valores positivo y negativo de \(m\) describen sentidos de circulación opuestos. La pregunta es si la simetría de rotación por sí sola exige que esos dos movimientos tengan la misma energía.
+
+\begin{classroomqa}
+\lecturetimestamp{00:22:51}
+\audiencequestion{¿Usar \(\psi(\theta-\epsilon)\) significa que la partícula se mueve en sentido horario?}
+\lecturerresponse{No. Esa convención solo fija qué dirección se considera el sentido positivo de rotación. Define los signos de la posición angular y del momento angular, pero no determina la dirección real en que se mueve la partícula.}
+\end{classroomqa}
+
+Un campo magnético perpendicular al plano de la circunferencia proporciona un contraejemplo. Puede desplazar en sentidos opuestos las energías asociadas a momentos angulares positivos y negativos y, por tanto, desdoblar el par. El signo del desplazamiento depende de las convenciones para la carga y la orientación, pero lo importante es el desdoblamiento.
+
+Ese campo sigue preservando las rotaciones alrededor del eje perpendicular. Por tanto, demuestra que la simetría de rotación por sí sola no exige
+\begin{equation}
+E(m)=E(-m).
+\end{equation}
+Si no hay desdoblamiento, \(m=1\) y \(m=-1\) pueden formar un par degenerado, al igual que \(m=2\) y \(m=-2\). El estado \(m=0\) no tiene un compañero distinto de este tipo.
+
+\section{Simetría de reflexión y el par \texorpdfstring{\(m,-m\)}{m, -m}}
+
+Añadamos una simetría discreta de reflexión. Sea \(\mathcal M\) la reflexión respecto de un diámetro de la circunferencia:
+\begin{equation}
+(\mathcal M\psi)(\theta)=\psi(-\theta).
+\end{equation}
+Esta invierte el sentido de circulación:
+\begin{equation}
+\mathcal M\psi_m=\psi_{-m}.
+\end{equation}
+
+Si la reflexión es una simetría, entonces
+\begin{equation}
+[\mathcal M,H]=0.
+\end{equation}
+Supongamos que
+\begin{equation}
+H\ket{m}=E_m\ket{m}.
+\end{equation}
+Al aplicar \(\mathcal M\) se obtiene
+\begin{align}
+H\mathcal M\ket{m}
+&=\mathcal M H\ket{m}\\
+&=E_m\mathcal M\ket{m}.
+\end{align}
+Como \(\mathcal M\ket{m}\) es el estado con momento angular \(-m\hbar\),
+\begin{equation}
+E_{-m}=E_m.
+\end{equation}
+La simetría de rotación conserva el momento angular; la simetría de reflexión relaciona sus dos valores opuestos. Juntas exigen que el par sea degenerado.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:54}
+\audiencequestion{Como los modos \(m\) y \(-m\) tienen la misma densidad de probabilidad, ¿eso basta para demostrar que sus energías son iguales?}
+\lecturerresponse{No. Las funciones de onda \(e^{im\theta}\) y \(e^{-im\theta}\) son diferentes, aunque sus módulos al cuadrado coincidan. La ecuación de valores propios del momento angular depende de la función de onda, no solo de \(\psi^*\psi\). La mecánica cuántica requiere amplitudes, no solo probabilidades.}
+\end{classroomqa}
+
+El campo magnético preserva las rotaciones alrededor de su eje, pero rompe la reflexión utilizada antes.
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:05}
+\audiencequestion{¿La simetría de reflexión invierte el campo magnético?}
+\lecturerresponse{Sí. Un campo magnético es un vector axial. Al reflejar un campo que apunta hacia el interior de la pizarra, se obtiene uno que apunta hacia el exterior. De manera equivalente, una espira de corriente y su imagen especular llevan corrientes en sentidos opuestos y producen campos con direcciones opuestas.}
+\end{classroomqa}
+
+La no conmutatividad de la rotación y la reflexión se ve directamente. Para una autofunción del momento angular,
+\begin{align}
+\mathcal M L_z\psi_m
+&=m\hbar\,\psi_{-m},\\
+L_z\mathcal M\psi_m
+&=-m\hbar\,\psi_{-m}.
+\end{align}
+Así,
+\begin{equation}
+[\mathcal M,L_z]\psi_m
+=2m\hbar\,\psi_{-m},
+\end{equation}
+que es distinto de cero si \(m\neq0\). Rotar y luego reflejar no es la misma operación que reflejar y luego rotar.
+
+Cuando ambas transformaciones son simetrías, los dos operadores conmutan con \(H\), pero no conmutan entre sí. Ese es el patrón responsable de la degeneración.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:28}
+\audiencequestion{¿Cualquier par de Heisenberg que no conmute, como \(x\) y \(p\), genera degeneraciones?}
+\lecturerresponse{Por lo general, no. Los operadores también deben ser simetrías: deben conmutar con el hamiltoniano. Típicamente, la posición y el momento no se conservan ambos. Si ambos conmutaran con \(H\), su no conmutatividad implicaría degeneración.}
+\end{classroomqa}
+
+\section{Álgebras de conmutadores de las simetrías}
+
+Supongamos que \(A\) y \(B\) son los generadores hermíticos de dos simetrías continuas:
+\begin{equation}
+[A,H]=0,
+\qquad
+[B,H]=0.
+\end{equation}
+Estas ecuaciones no exigen que \(A\) y \(B\) conmuten entre sí.
+
+El conmutador \([A,B]\) es antihermítico, así que definamos un operador hermítico
+\begin{equation}
+C=i[A,B].
+\end{equation}
+Aquí los factores numéricos y un signo global son irrelevantes. Lo importante es que \(C\) también conmuta con el hamiltoniano. En efecto,
+\begin{equation}
+[AB,H]
+=A[B,H]+[A,H]B=0,
+\end{equation}
+y, de manera análoga,
+\begin{equation}
+[BA,H]=0.
+\end{equation}
+Por tanto,
+\begin{equation}
+[C,H]
+=i\bigl([AB,H]-[BA,H]\bigr)=0.
+\end{equation}
+
+El nuevo generador \(C\) puede ser independiente de \(A\) y \(B\), o quizá solo sea una combinación lineal de generadores ya conocidos. Si es nuevo, lo añadimos a la lista y calculamos más conmutadores. Este proceso puede continuar indefinidamente, pero a menudo se cierra tras un número finito de generadores: todos los conmutadores posteriores son combinaciones lineales de los que ya están en la lista. Ese sistema cerrado es un álgebra de conmutadores o álgebra de Lie.
+
+Las transformaciones de simetría finitas forman un grupo. Sus generadores infinitesimales forman el álgebra de Lie asociada.
+
+Las degeneraciones son importantes porque organizan los espectros. Si dos estados tienen la misma energía, uno no puede decaer al otro emitiendo un fotón que transporte la diferencia entre sus energías. En la espectroscopia atómica, la disposición y degeneración de los niveles determinan las líneas espectrales posibles. El mismo razonamiento se aplica a los hadrones excitados y sus transiciones.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:07}
+\audiencequestion{¿Son estos conmutadores elementos del grupo de simetría?}
+\lecturerresponse{Los operadores en cuestión son generadores. Los generadores y sus conmutadores forman un álgebra de conmutadores, o álgebra de Lie. Las operaciones de simetría finitas construidas a partir de los generadores son los elementos del grupo.}
+\end{classroomqa}
+
+Si todos los generadores de simetría conmutan entre sí, la simetría se llama abeliana. Si alguno de sus conmutadores no es cero, es no abeliana.
+
+\begin{classroomqa}
+\lecturetimestamp{00:50:25}
+\audiencequestion{¿Cuál es la definición fundamental de un generador?}
+\lecturerresponse{Tomemos una transformación unitaria de simetría muy cercana a la identidad y escribámosla como \(1-i\epsilon G/\hbar+\cdots\). El operador hermítico \(G\) es su generador. Al repetir la transformación infinitesimal correspondiente, se obtiene una transformación finita.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:52:08}
+\audiencequestion{¿Qué se entiende por álgebra de los generadores de simetría?}
+\lecturerresponse{Es una colección de generadores que se pueden sumar, restar, multiplicar por números ordinarios y conmutar. En esta álgebra, el conmutador desempeña el papel de la multiplicación, y el cierre significa que estas operaciones no producen generadores ajenos a la colección.}
+\end{classroomqa}
+
+\section{Rotaciones alrededor de ejes distintos}
+
+Las rotaciones ofrecen el ejemplo más importante de una simetría no abeliana. Una rotación alrededor del eje \(x\) seguida de otra alrededor del eje \(y\) no suele equivaler a efectuarlas en el orden inverso. La diferencia entre ambas está relacionada, a su vez, con una rotación alrededor del tercer eje.
+
+\begin{classroomqa}
+\lecturetimestamp{00:54:22}
+\audiencequestion{¿Las rotaciones infinitesimales conmutan aunque las rotaciones finitas no lo hagan?}
+\lecturerresponse{Difieren en segundo orden con respecto a los dos ángulos pequeños de rotación. Eso basta: una vez factorizados esos parámetros pequeños, los generadores mismos tienen un conmutador distinto de cero.}
+\end{classroomqa}
+
+Antes de calcular los conmutadores cuánticos, consideremos el cuadro clásico correspondiente. Tomemos una órbita planetaria circular cuyo momento angular es perpendicular al plano orbital. Al rotar toda la órbita alrededor del eje \(y\) se obtiene otra órbita permitida con exactamente la misma energía. Sin embargo, el vector momento angular tiene ahora una componente \(x\) distinta.
+
+Así, la invariancia rotacional produce configuraciones de igual energía con componentes distintas del momento angular. En mecánica cuántica, esto se manifiesta como la no conmutatividad entre los generadores de rotaciones alrededor de ejes distintos.
+
+\section{Momento angular en coordenadas cartesianas}
+
+Consideremos primero una partícula que se mueve en el plano \(xy\), sin restringirla a una circunferencia. Bajo una pequeña rotación antihoraria,
+\begin{equation}
+\delta x=-\epsilon y,
+\qquad
+\delta y=\epsilon x.
+\end{equation}
+Para el estado rotado activamente, la función de onda transformada se evalúa en las coordenadas rotadas por el ángulo inverso:
+\begin{equation}
+\psi_\epsilon(x,y)
+=\psi(x+\epsilon y,y-\epsilon x).
+\end{equation}
+Por consiguiente,
+\begin{align}
+\delta\psi
+&=\epsilon\left(
+y\frac{\partial}{\partial x}
+-x\frac{\partial}{\partial y}
+\right)\psi
++\mathcal O(\epsilon^2)\\
+&=-\frac{i\epsilon}{\hbar}
+\left(xp_y-yp_x\right)\psi
++\mathcal O(\epsilon^2).
+\end{align}
+Por tanto, el generador de las rotaciones alrededor del eje \(z\) es
+\begin{equation}
+L_z=xp_y-yp_x.
+\end{equation}
+Esta es la componente \(z\) del conocido vector clásico
+\begin{equation}
+\mathbf L=\mathbf r\times\mathbf p.
+\end{equation}
+No es solo el momento angular mecánico; en mecánica cuántica, es el operador que genera rotaciones de la función de onda.\footnote{La convención de rotación activa se elige para que concuerde con la transformación anterior \(\psi(\theta)\mapsto\psi(\theta-\epsilon)\) y con la identificación final \(L_z=xp_y-yp_x\), tras la duda intermedia sobre el signo en la derivación oral.}
+
+Al permutar cíclicamente \(x\to y\to z\to x\) se obtienen las demás componentes.\footnote{Las fórmulas para \(L_x\) y \(L_y\) se reconstruyen aplicando a \(L_z=xp_y-yp_x\) la sustitución cíclica \(x\to y\to z\to x\), indicada explícitamente en la clase.}
+\begin{align}
+L_x&=yp_z-zp_y,\\
+L_y&=zp_x-xp_z,\\
+L_z&=xp_y-yp_x.
+\end{align}
+
+Para un sistema invariante ante rotaciones, estos operadores conmutan con el hamiltoniano:
+\begin{equation}
+[H,L_x]=[H,L_y]=[H,L_z]=0.
+\end{equation}
+Una partícula en un campo de fuerzas central es el ejemplo típico. Estas ecuaciones expresan la conservación del momento angular en forma cuántica.
+
+\section{El álgebra de Lie del momento angular}
+
+Las relaciones de conmutación canónicas son
+\begin{align}
+[x_i,x_j]&=0,\\
+[p_i,p_j]&=0,\\
+[x_i,p_j]&=i\hbar\,\delta_{ij}.
+\end{align}
+Las coordenadas conmutan con las componentes del momento correspondientes a otras direcciones. Así, por ejemplo, \(x\) conmuta con \(p_y\), mientras que \(x\) no conmuta con \(p_x\).
+
+Calculemos ahora
+\begin{equation}
+[L_x,L_y]
+=
+[yp_z-zp_y,\;zp_x-xp_z].
+\end{equation}
+La mayoría de los términos se anulan. Las dos contribuciones distintas de cero son
+\begin{align}
+[yp_z,zp_x]&=-i\hbar\,yp_x,\\
+[zp_y,xp_z]&=i\hbar\,xp_y.
+\end{align}
+Por lo tanto,
+\begin{align}
+[L_x,L_y]
+&=i\hbar\left(xp_y-yp_x\right)\\
+&=i\hbar L_z.
+\end{align}
+Al permutar cíclicamente las etiquetas de las coordenadas se obtiene
+\begin{align}
+[L_x,L_y]&=i\hbar L_z,\\
+[L_y,L_z]&=i\hbar L_x,\\
+[L_z,L_x]&=i\hbar L_y.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:50}
+\audiencequestion{Cuando el conmutador da como resultado \(L_z\), ¿aún tenemos que demostrar que \(L_z\) no es una combinación lineal de \(L_x\) y \(L_y\)?}
+\lecturerresponse{Sí. Hay que establecer esa independencia, no darla por supuesta. En este punto no se desarrolla una demostración algebraica directa.}
+\end{classroomqa}
+
+Los conmutadores mostrados se cierran sobre el espacio generado por \(L_x\), \(L_y\) y \(L_z\): una vez incluidas las tres, los conmutadores posteriores no producen ningún operador fuera de ese espacio. Este es el álgebra de Lie del momento angular. Junto con
+\begin{equation}
+[H,L_i]=0,
+\qquad i=x,y,z,
+\end{equation}
+estas relaciones contienen información sustancial sobre el espectro de energía, sin necesidad de resolver directamente la ecuación de Schr\"odinger angular.
+
+Se emplea una estrategia algebraica similar para el oscilador armónico cuántico, cuyos operadores de creación y aniquilación generan su espectro. Aquí, los operadores análogos cambiarán la componente \(z\) del momento angular, en vez de la energía.
+
+Elegir el eje \(z\) es solo una elección de representación. No hay razón física para preferir \(z\) a \(x\) o \(y\), pero escoger una componente proporciona una base conveniente. Escribamos
+\begin{equation}
+L_z\ket{m}=m\hbar\ket{m}.
+\end{equation}
+La tarea consiste en determinar qué valores de \(m\) pueden aparecer y cómo se relacionan los estados con distintos valores de \(m\).
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:02}
+\audiencequestion{Al comparar esta construcción con la del oscilador armónico, ¿se refiere al oscilador armónico cuántico? No se trató en la clase anterior.}
+\lecturerresponse{Sí, la comparación es con el oscilador cuántico. El argumento actual sobre el momento angular es autocontenido y no requiere conocer el oscilador. Más adelante, la analogía también puede verse en sentido inverso: el oscilador emplea un método algebraico similar.}
+\end{classroomqa}
+
+\section{Operadores de subida y bajada del momento angular}
+
+Definamos
+\begin{equation}
+L_+=L_x+iL_y,
+\qquad
+L_-=L_x-iL_y.
+\end{equation}
+Las relaciones de conmutación del momento angular implican que
+\begin{equation}
+[L_z,L_+]=\hbar L_+,
+\qquad
+[L_z,L_-]=-\hbar L_-.
+\end{equation}
+
+Apliquemos la primera relación a un estado propio de \(L_z\):
+\begin{align}
+L_zL_+\ket{m}
+&=\left(L_+L_z+[L_z,L_+]\right)\ket{m}\\
+&=(m+1)\hbar\,L_+\ket{m}.
+\end{align}
+Si \(L_+\ket{m}=0\), es otro estado propio de \(L_z\), ahora con valor propio \((m+1)\hbar\). De manera análoga,
+\begin{equation}
+L_zL_-\ket{m}
+=(m-1)\hbar\,L_-\ket{m}.
+\end{equation}
+Así, \(L_+\) aumenta \(m\) en una unidad y \(L_-\) lo disminuye en una unidad.
+
+A partir de cualquier valor propio, el álgebra genera una sucesión cuyos términos difieren en números enteros. La sucesión puede continuar indefinidamente o terminar porque
+\begin{equation}
+L_+\ket{m_{\mathrm{top}}}=0
+\end{equation}
+en el extremo superior y
+\begin{equation}
+L_-\ket{m_{\mathrm{bottom}}}=0
+\end{equation}
+en el extremo inferior.
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:11}
+\audiencequestion{¿No exigía ya el argumento de la circunferencia que el momento angular fuera un entero?}
+\lecturerresponse{Ese argumento demuestra que el momento angular orbital toma valores enteros cuando se representa mediante funciones de onda de posición univaluadas. El álgebra abstracta del momento angular da un resultado menos restrictivo: la escalera puede contener valores enteros o semienteros.}
+\end{classroomqa}
+
+Si una escalera termina, la invariancia rotacional relaciona sus dos extremos. Una rotación de \(180^\circ\) alrededor de un eje perpendicular al eje \(z\) transforma
+\begin{equation}
+L_z\longrightarrow-L_z.
+\end{equation}
+Por tanto, el espectro debe ser simétrico respecto de cero:
+\begin{equation}
+m_{\mathrm{bottom}}=-m_{\mathrm{top}}.
+\end{equation}
+Como los valores consecutivos difieren en una unidad, hay dos posibilidades. La escalera contiene enteros,
+\begin{equation}
+\ldots,-2,-1,0,1,2,\ldots,
+\end{equation}
+o semienteros,
+\begin{equation}
+\ldots,-\frac{5}{2},-\frac{3}{2},-\frac{1}{2},
+\frac{1}{2},\frac{3}{2},\frac{5}{2},\ldots,
+\end{equation}
+y sus extremos corresponden a los valores en los que el operador de subida o el de bajada se anula.
+
+El argumento de la función de onda univaluada sobre la circunferencia selecciona la posibilidad de valores enteros para el momento angular orbital,
+\begin{equation}
+\mathbf L=\mathbf r\times\mathbf p.
+\end{equation}
+La posibilidad de valores semienteros también es física y corresponde al momento angular de espín, que se tratará por separado.
+
+Por último, los estados de la escalera tienen la misma energía si el hamiltoniano es invariante ante rotaciones. Supongamos que
+\begin{equation}
+H\ket{m}=E\ket{m}.
+\end{equation}
+Como cada componente \(L_i\) conmuta con \(H\), \(L_+\) y \(L_-\) también lo hacen. Por tanto,
+\begin{align}
+H L_+\ket{m}
+&=L_+H\ket{m}\\
+&=E L_+\ket{m}.
+\end{align}
+Siempre que \(L_+\ket{m}\neq0\), el estado elevado tiene la misma energía que el estado original. El mismo cálculo da
+\begin{equation}
+H L_-\ket{m}=E L_-\ket{m}.
+\end{equation}
+Así pues, los operadores de subida y bajada generan una familia de estados con distintos valores propios de \(L_z\), pero exactamente la misma energía. Esta es la conexión entre simetrías no conmutativas y degeneración que se ha desarrollado a lo largo de la clase.
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:13}
+\audiencequestion{¿Estos estados de la escalera están asociados a elegir ejes de rotación distintos?}
+\lecturerresponse{Están relacionados mediante rotaciones. Los vectores propios de \(L_x\) o \(L_y\) son combinaciones lineales de los vectores propios elegidos de \(L_z\). Al rotar un estado, cambian sus componentes de momento angular, pero su energía permanece inalterada.}
+\end{classroomqa}
+
+La elección de \(L_+\) y \(L_-\) resulta conveniente porque estas combinaciones ponen de manifiesto la escalera. Este recurso se repite a lo largo de la mecánica cuántica: cuando un álgebra de conmutadores se cierra, los operadores de subida y bajada suelen organizar el espectro de valores propios.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:33}
+\audiencequestion{¿Qué ocurre cuando \(L_+\) actúa sobre el estado máximo, y cómo se define el extremo superior?}
+\lecturerresponse{Da cero. Esa es la definición del extremo superior de una escalera que termina. De igual manera, \(L_-\) da cero en el extremo inferior. Una escalera abstracta no tiene por qué terminar. Para los estados de momento angular atómico que estudiaremos más adelante, lo habitual es encontrar escaleras que sí terminan.}
+\end{classroomqa}
+
+El siguiente paso es desarrollar más esta estructura del momento angular y aplicarla a los átomos, incluido el hidrógeno. Los multipletes rotacionales obtenidos aquí explican parte del patrón de degeneración; aún queda por desarrollar estructura adicional.

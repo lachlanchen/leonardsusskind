@@ -1,0 +1,504 @@
+\chapter{Vectores de estado, evolución unitaria y simetría de traslación}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+
+Tras un receso de dos trimestres, conviene hacer un repaso rápido de mecánica cuántica. No se puede dedicar todo el trimestre a ello. El tema que sigue es la aplicación de la mecánica cuántica a los problemas para los que se desarrolló originalmente: los átomos, los electrones y las partículas relacionadas, y los fotones.
+
+Primero se estudian los átomos. ¿Cómo pueden estudiarse antes que los electrones, si estos forman parte de aquellos? Al principio basta con estudiar la mecánica de los electrones necesaria para escribir las ecuaciones básicas del átomo de hidrógeno. Después se puede estudiar con más detalle el comportamiento de las partículas similares a los electrones. En todas estas aplicaciones, la simetría será una herramienta recurrente: cómo se representan las simetrías en mecánica cuántica y qué implican para un sistema.
+
+\section{Estados, observables y ortogonalidad}
+
+En mecánica clásica, un estado se representa mediante un punto del espacio de fases. En mecánica cuántica, se representa mediante un vector de un espacio vectorial complejo. Se trata de un vector abstracto, no de una flecha en el espacio tridimensional ordinario. Los vectores de estado se pueden sumar y multiplicar por números complejos, y el espacio que los contiene no tiene por qué tener una dimensión finita determinada.
+
+La notación de Dirac escribe un vector de estado como un ket,
+\begin{equation}
+\ket{\psi},
+\end{equation}
+y le asocia un bra,
+\begin{equation}
+\bra{\psi}.
+\end{equation}
+Los bras y los kets se relacionan mediante la conjugación hermítica. Al combinar un bra y un ket se obtiene un producto interno,
+\begin{equation}
+\langle\phi|\psi\rangle,
+\end{equation}
+que, en general, es un número complejo.
+
+Un observable es algo que se puede medir: la posición, el momento, la energía o cualquier otra magnitud medible. En mecánica cuántica, un observable se representa mediante un operador lineal hermítico \(A\),
+\begin{equation}
+A^\dagger=A.
+\end{equation}
+La hermiticidad es el análogo de la realidad para los operadores. En particular, los valores propios de un operador hermítico son reales.
+
+Un vector propio de \(A\) satisface
+\begin{equation}
+A\ket{\alpha}=\alpha\ket{\alpha}.
+\end{equation}
+Los posibles valores propios son los resultados posibles de medir \(A\). Por ejemplo, si un observable solo puede dar \(1\), \(3\) o \(7\), esos números son sus valores propios. Sus vectores propios son los estados en los que el resultado es definido, no estadístico. En el estado \(\ket{\alpha}\), medir \(A\) da \(\alpha\) con certeza.
+
+El producto interno expresa una importante relación lógica entre estados. Supongamos que hay una medición que permite distinguir \(\ket{\phi}\) de \(\ket{\psi}\) con certeza. Entonces los estados son ortogonales:
+\begin{equation}
+\langle\phi|\psi\rangle=0.
+\end{equation}
+La ortogonalidad significa que los estados se pueden distinguir físicamente sin ambigüedad. Para un estado normalizado,
+\begin{equation}
+\langle\psi|\psi\rangle=1.
+\end{equation}
+
+\section{Una partícula en la representación de posición}
+
+Consideremos primero una partícula que se mueve en una recta. Su posición \(x\) es un observable. Para cada posición posible \(x_0\), hay un estado \(\ket{x_0}\) en el que una medición de la posición da \(x_0\) con certeza.
+
+Los estados asociados a posiciones diferentes se pueden distinguir y, por tanto, son ortogonales:
+\begin{equation}
+x\neq x'
+\quad\Longrightarrow\quad
+\langle x'|x\rangle=0.
+\end{equation}
+Para un estado arbitrario \(\ket{\psi}\), su producto interno con un estado de posición define la función de onda:
+\begin{equation}
+\psi(x)=\langle x|\psi\rangle.
+\end{equation}
+Esta es la representación del vector de estado en la posición.
+
+La función de onda no es una probabilidad. Puede ser positiva, negativa, imaginaria o plenamente compleja. La densidad de probabilidad de posición es
+\begin{equation}
+P(x)=\psi^*(x)\psi(x)=|\psi(x)|^2.
+\end{equation}
+El producto es no negativo, como debe ser una densidad de probabilidad. Para una función de onda normalizada,
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,|\psi(x)|^2=1.
+\end{equation}
+
+En la representación de posición, el operador posición actúa mediante multiplicación:
+\begin{equation}
+(\hat x\psi)(x)=x\psi(x).
+\end{equation}
+Sus funciones propias son funciones idealizadas concentradas en un solo punto. Se describen formalmente mediante deltas de Dirac: picos muy estrechos centrados en el valor propio de posición. Para este repaso no hace falta su definición precisa en el sentido de las distribuciones.
+
+En tres dimensiones, la posición tiene tres componentes, \(x\), \(y\) y \(z\), y un estado de posición representa un punto del espacio tridimensional. Dos estados de este tipo son ortogonales si los puntos difieren en al menos una coordenada. Por lo general, se mantendrá la notación unidimensional, dando por entendida la extensión correspondiente a tres dimensiones.
+
+\section{Momento y estados de momento definido}
+
+A cada componente de la posición le corresponde una componente del momento. En la representación de posición, el operador momento a lo largo del eje \(x\) es
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+Así, un operador hermítico abstracto también se puede interpretar concretamente como una operación sobre funciones de onda.
+
+Un estado de momento definido \(p_0\) satisface la ecuación de valores propios
+\begin{equation}
+\hat p_x\psi_{p_0}(x)=p_0\psi_{p_0}(x).
+\end{equation}
+Al sustituir la forma diferencial de \(\hat p_x\) se obtiene
+\begin{equation}
+-i\hbar\frac{d\psi_{p_0}(x)}{dx}
+=p_0\psi_{p_0}(x).
+\end{equation}
+La derivada de la función de onda es proporcional a la función misma, así que la solución tiene forma exponencial:
+\begin{equation}
+\psi_{p_0}(x)\propto
+\exp\left(\frac{ip_0x}{\hbar}\right).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:24:26}
+\audiencequestion{¿Se cumple esta ecuación diferencial para cualquier función de onda?}
+\lecturerresponse{No. Es la ecuación de valores propios de un estado de momento definido. La mayoría de las funciones de onda no la satisface; esta ecuación selecciona las funciones propias del momento.}
+\end{classroomqa}
+
+La diferencia entre los estados propios de posición y los de momento es clara. Una función propia de posición está concentrada en un punto. Una función propia de momento tiene
+\begin{equation}
+\left|\exp\left(\frac{ip_0x}{\hbar}\right)\right|^2=1.
+\end{equation}
+Por lo tanto, su módulo es constante en toda la recta. En este sentido idealizado, un momento definido implica una incertidumbre completa en la posición; del mismo modo, una posición definida implica una incertidumbre completa en el momento. Este es el caso extremo de la relación de incertidumbre entre posición--momento.
+
+\begin{classroomqa}
+\lecturetimestamp{00:26:36}
+\audiencequestion{Si se sabe que el momento es \(p_0\), ¿por qué sigue habiendo una distribución de probabilidad?}
+\lecturerresponse{La cantidad mostrada corresponde a una medición de posición, no a otra medición de momento. El momento y la posición son observables distintos. Para el estado idealizado de momento propio, el módulo de la amplitud de posición es constante en toda la recta. Las amplitudes de momento pertenecen a la representación de momento y se relacionan con la función de onda de posición mediante una transformada de Fourier.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:02}
+\audiencequestion{¿Cómo es la probabilidad de posición cuando la función de onda es una delta de Dirac?}
+\lecturerresponse{Está concentrada en la posición especificada. El pico idealizado expresa certeza en la posición.}
+\end{classroomqa}
+
+\editorialnote{Los estados propios exactos de posición y de momento son estados generalizados. Una delta de Dirac y una onda plana no son funciones de onda ordinarias, normalizables y de cuadrado integrable en toda la recta, y el cuadrado literal de una delta no es una distribución ordinaria. Las afirmaciones anteriores se refieren a su localización idealizada y a su módulo constante.}
+
+Formalmente, una función de onda se puede considerar un vector con una componente para cada valor de \(x\). Sin embargo, a diferencia de un vector columna ordinario de dimensión finita, tiene un continuo infinito de componentes.
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:53}
+\audiencequestion{¿Se representan los vectores de estado mediante vectores columna?}
+\lecturerresponse{Se pueden representar así, pero resulta incómodo escribir una función de onda de posición como un vector columna ordinario porque \(x\) toma continuamente muchos valores. Formalmente, se puede considerar un vector columna continuo, cuyo bra correspondiente se interpreta como un vector fila continuo.}
+\end{classroomqa}
+
+\section{Evolución temporal y unitariedad}
+
+¿Cómo cambia un estado con el tiempo? La evolución temporal es una transformación del espacio de estados. Sea \(U(t)\) la evolución durante un intervalo de tiempo transcurrido \(t\). Entonces
+\begin{equation}
+U(t)\ket{\psi(t_1)}=\ket{\psi(t_1+t)}.
+\end{equation}
+En particular,
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)},
+\qquad
+U(0)=\mathbf 1.
+\end{equation}
+
+La condición sobre \(U(t)\) se desprende de la conservación de la información. Si dos estados iniciales se pueden distinguir, la evolución temporal no debe borrar esa distinción. Los estados ortogonales deben seguir siendo ortogonales. Más en general, se conserva el producto interno entre dos estados cualesquiera:
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|\psi\rangle.
+\end{equation}
+Como
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|U^\dagger(t)U(t)|\psi\rangle,
+\end{equation}
+la conservación de todos los productos internos exige
+\begin{equation}
+U^\dagger(t)U(t)=\mathbf 1.
+\end{equation}
+Un operador que satisface esta ecuación es unitario.
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:36}
+\audiencequestion{¿Conservar todos los productos internos es una condición más fuerte que conservar únicamente la ortogonalidad?}
+\lecturerresponse{Para las transformaciones lineales de estados que estamos considerando, conservar la ortogonalidad implica conservar los productos internos. Las rotaciones ordinarias ofrecen la analogía habitual: conservan la ortogonalidad y los productos escalares.}
+\end{classroomqa}
+
+\editorialnote{En rigor, conservar solo la ortogonalidad permite una reescala global no nula. La conservación de la normalización, que ya se exige para la evolución temporal física, elimina esa libertad y da lugar a la conservación de los productos internos.}
+
+Los operadores unitarios no deben confundirse con los observables hermíticos. La posición y el momento son hermíticos, pero en general no son unitarios. Los valores propios de un operador unitario son fases, números de la forma \(e^{i\theta}\) que están sobre el círculo unidad.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:12}
+\audiencequestion{¿Cuál es un ejemplo de transformación no unitaria?}
+\lecturerresponse{Los operadores posición y momento son ejemplos: son observables hermíticos, pero no son unitarios. Un operador unitario tiene valores propios de módulo unidad; por tanto, sus valores propios son fases.}
+\end{classroomqa}
+
+\section{El hamiltoniano y la ecuación de Schr\"odinger}
+
+Se supone que la evolución temporal es continua. Por tanto, en un intervalo muy corto \(\epsilon\), el operador de evolución debe ser próximo a la identidad:
+\begin{equation}
+U(\epsilon)=\mathbf 1+\epsilon G+\mathcal O(\epsilon^2).
+\end{equation}
+Usando la unitariedad,
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(\mathbf 1+\epsilon G^\dagger\right)
+\left(\mathbf 1+\epsilon G\right)
++\mathcal O(\epsilon^2)
+\\
+&=
+\mathbf 1+\epsilon(G^\dagger+G)
++\mathcal O(\epsilon^2).
+\end{align}
+A primer orden,
+\begin{equation}
+G^\dagger=-G.
+\end{equation}
+Así, \(G\) es antihermítico. Se puede escribir como
+\begin{equation}
+G=-\frac{i}{\hbar}H,
+\end{equation}
+donde \(H\) es hermítico:
+\begin{equation}
+H^\dagger=H.
+\end{equation}
+Por consiguiente, el operador infinitesimal de evolución temporal es
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+El operador hermítico \(H\) es el hamiltoniano.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:48}
+\audiencequestion{¿Qué permite ignorar el término \(\epsilon^2\)?}
+\lecturerresponse{El cálculo se realiza de manera consistente hasta primer orden en \(\epsilon\). Un cálculo de segundo orden requeriría todos los términos de segundo orden, incluido el término proporcional a \(-\epsilon^2H^2/(2\hbar^2)\). La aproximación está en la expresión truncada de \(U(\epsilon)\), no en la hermiticidad de \(H\).}
+\end{classroomqa}
+
+Se puede construir un intervalo de tiempo finito a partir de muchos intervalos pequeños. Dividamos \(t\) en \(N\) pasos de longitud \(t/N\). Al repetir la transformación infinitesimal se obtiene
+\begin{equation}
+U(t)
+=
+\lim_{N\to\infty}
+\left(
+\mathbf 1-\frac{itH}{N\hbar}
+\right)^N
+=
+\exp\left(-\frac{iHt}{\hbar}\right).
+\end{equation}
+La exponencial es la versión finita de la transformación infinitesimal.
+
+Ahora evolucionemos un estado desde \(t\) hasta \(t+\epsilon\):
+\begin{align}
+\ket{\psi(t+\epsilon)}
+&=
+U(\epsilon)\ket{\psi(t)}
+\\
+&=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)\ket{\psi(t)}
++\mathcal O(\epsilon^2).
+\end{align}
+Restando \(\ket{\psi(t)}\), dividiendo por \(\epsilon\) y tomando el límite, se obtiene
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+De manera equivalente,
+\begin{equation}
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=
+H\ket{\psi(t)}.
+\end{equation}
+Esta es la ecuación de Schr\"odinger dependiente del tiempo. En la representación de posición se convierte en
+\begin{equation}
+i\hbar\frac{\partial}{\partial t}\psi(x,t)
+=
+H\psi(x,t),
+\end{equation}
+donde \(H\) actúa como operador sobre la función de onda.
+
+La ecuación de Schr\"odinger independiente del tiempo es la ecuación de valores propios del hamiltoniano:
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+Los valores propios \(E\) son las energías que se pueden medir, o niveles de energía. Por tanto, el mismo hamiltoniano determina tanto las energías permitidas como la evolución del estado.
+
+Si el estado inicial es un estado propio de energía, su evolución es
+\begin{equation}
+\ket{E;t}
+=
+\exp\left(-\frac{iEt}{\hbar}\right)\ket{E}.
+\end{equation}
+Sigue siendo el mismo vector propio de energía y solo adquiere una fase.\footnote{El signo menos queda fijado por la derivación anterior de \(U(t)=\exp(-iHt/\hbar)\). Una formulación oral posterior de la fase lleva el signo opuesto y es incompatible con esa derivación.}
+
+\begin{classroomqa}
+\lecturetimestamp{01:01:05}
+\audiencequestion{¿Cómo evoluciona un vector propio de energía según la ecuación de Schr\"odinger dependiente del tiempo?}
+\lecturerresponse{Conservemos el ket. Dado que \(H\ket{E}=E\ket{E}\), la evolución temporal multiplica el vector propio de energía por una fase determinada por su energía: \(\exp(-iEt/\hbar)\).}
+\end{classroomqa}
+
+\section{¿Qué se considera una simetría?}
+
+La evolución temporal es una transformación unitaria del espacio de estados. Las transformaciones de simetría constituyen otra clase importante.
+
+La simetría de rotación es fundamental en la física atómica. En un átomo de hidrógeno, el electrón se mueve en el potencial central de Coulomb. Una rotación del sistema de coordenadas no cambia las ecuaciones y, al rotar físicamente el átomo, este sigue siendo un átomo de hidrógeno regido por las mismas ecuaciones. El estado puede cambiar con la rotación, pero la ley dinámica no cambia.
+
+La traslación ofrece otro ejemplo. Un sistema aislado en el espacio vacío debería comportarse igual después de desplazar todas sus partes la misma distancia. Esta salvedad es importante. Si hay un horno y solo se acerca el sistema a él, el comportamiento del sistema puede cambiar; el horno rompe esa simetría de traslación. Si se trasladan juntos el sistema y el horno, se restablece la relación original entre ambos.
+
+No toda operación es una simetría. Comprimir un cristal de sal gema a la mitad de su tamaño suele cambiar su comportamiento. La compresión es una transformación bien definida, pero en general no es una simetría.
+
+Así pues, una simetría es una operación sobre los estados que conserva la forma de la dinámica. Denotémosla por \(V\). Debe conservar la distinguibilidad: dos estados ortogonales deben seguir siendo ortogonales después de la transformación. Por tanto,
+\begin{equation}
+V^\dagger V=\mathbf 1,
+\end{equation}
+de modo que \(V\) es unitario.
+
+\section{Las simetrías conmutan con la evolución temporal}
+
+Supongamos que un estado inicial \(\ket{\psi_1}\) evoluciona hasta \(\ket{\psi_2}\):
+\begin{equation}
+\ket{\psi_2}=U(t)\ket{\psi_1}.
+\end{equation}
+Apliquemos a ambos estados una simetría propuesta \(V\):
+\begin{equation}
+\ket{\psi_1'}=V\ket{\psi_1},
+\qquad
+\ket{\psi_2'}=V\ket{\psi_2}.
+\end{equation}
+Si \(V\) es una simetría de la dinámica, el estado inicial transformado debe evolucionar hasta el estado final transformado:
+\begin{equation}
+\ket{\psi_2'}=U(t)\ket{\psi_1'}.
+\end{equation}
+Al sustituir las definiciones se obtiene
+\begin{equation}
+VU(t)\ket{\psi_1}
+=
+U(t)V\ket{\psi_1}.
+\end{equation}
+Esto debe cumplirse para todo estado inicial. Por tanto,
+\begin{equation}
+VU(t)=U(t)V.
+\end{equation}
+
+Las dos vías equivalentes se pueden representar en un diagrama conmutativo.\footnote{El diagrama reconstruye el argumento de las dos vías desarrollado entre 01:10:30 y 01:16:34.}
+\begin{figure}
+\centering
+\begin{tikzpicture}[>=Stealth]
+\node (a) at (0,0) {$\ket{\psi_1}$};
+\node (b) at (4.2,0) {$\ket{\psi_2}=U(t)\ket{\psi_1}$};
+\node (c) at (0,-2.0) {$V\ket{\psi_1}$};
+\node (d) at (4.2,-2.0) {$V\ket{\psi_2}=U(t)V\ket{\psi_1}$};
+
+\draw[->] (a) -- node[above] {$U(t)$} (b);
+\draw[->] (c) -- node[below] {$U(t)$} (d);
+\draw[->] (a) -- node[left] {$V$} (c);
+\draw[->] (b) -- node[right] {$V$} (d);
+\end{tikzpicture}
+\caption{Una operación de simetría y la evolución temporal conducen al mismo estado final, en cualquier orden.}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:38}
+\audiencequestion{¿Debe conmutar la simetría con la evolución temporal para cualquier tiempo?}
+\lecturerresponse{Sí. Una simetría de la dinámica debe satisfacer la condición de conmutación para la evolución temporal completa.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:13}
+\audiencequestion{¿Significa esto que se puede rotar y luego esperar, o esperar y luego rotar?}
+\lecturerresponse{Exactamente. Si la rotación es una simetría, ambos órdenes producen el mismo estado final transformado.}
+\end{classroomqa}
+
+Para un intervalo de tiempo pequeño,
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+La condición de conmutación se convierte en
+\begin{equation}
+V\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)
+=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)V
++\mathcal O(\epsilon^2).
+\end{equation}
+Los términos de identidad se cancelan y queda
+\begin{equation}
+VH=HV,
+\end{equation}
+o bien
+\begin{equation}
+[V,H]=0.
+\end{equation}
+Por tanto, una operación unitaria es una simetría de la dinámica si y solo si conmuta con el hamiltoniano.
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:29}
+\audiencequestion{¿Por qué el operador de simetría \(V\) debe ser unitario?}
+\lecturerresponse{Una simetría debe conservar las distinciones lógicas entre estados. No debe transformar dos estados ortogonales y mutuamente excluyentes en estados que ya no se puedan distinguir. La conservación de esas relaciones exige una transformación unitaria.}
+\end{classroomqa}
+
+Un operador sin dependencia explícita del tiempo que conmuta con \(H\) es una cantidad conservada. Esto relaciona simetría y conservación. En mecánica clásica, la relación se expresa mediante el teorema de Noether. En la formulación cuántica que estamos desarrollando, la prueba central es el conmutador con el hamiltoniano.
+
+\section{Simetrías discretas y continuas}
+
+Las simetrías pueden ser discretas o continuas. Una reflexión especular es discreta: intercambia la izquierda y la derecha, sin que haya una secuencia de reflexiones infinitesimales que conecte ambas. El intercambio de dos partículas idénticas es otra operación discreta. Voltear un objeto sin marcas y con dos caras ofrece un ejemplo del mismo tipo.
+
+Las rotaciones son continuas. Una rotación de \(90^\circ\) se puede construir mediante muchas rotaciones pequeñas alrededor del mismo eje. Por la misma razón, las traslaciones espaciales son continuas: un desplazamiento finito se puede construir a partir de muchos desplazamientos diminutos.
+
+Esta divisibilidad en transformaciones pequeñas da a las simetrías continuas una forma especial. Cerca de la identidad, escribamos
+\begin{equation}
+V(\epsilon)
+=
+\mathbf 1-i\epsilon G+\mathcal O(\epsilon^2),
+\end{equation}
+donde \(\epsilon\) parametriza la transformación. La unitariedad implica
+\begin{equation}
+G^\dagger=G.
+\end{equation}
+El operador hermítico \(G\) se denomina generador de la simetría.
+
+Si la transformación es una simetría, entonces
+\begin{equation}
+[H,V(\epsilon)]=0.
+\end{equation}
+Al desarrollar a primer orden se obtiene
+\begin{equation}
+[H,G]=0.
+\end{equation}
+Por tanto, las simetrías continuas están generadas por operadores hermíticos que conmutan con el hamiltoniano. Esos generadores son cantidades conservadas.
+
+Aquí, la palabra ``generada'' tiene un significado concreto. Una transformación finita se construye aplicando repetidamente la transformación infinitesimal, del mismo modo que la evolución temporal finita se construye a partir de muchos intervalos de tiempo breves.
+
+\section{Simetría de traslación y momento}
+
+Consideremos una traslación activa de una función de onda hacia la derecha una distancia \(\epsilon\). Si la función de onda original presenta un máximo en \(x_0\), la función trasladada debe presentarlo en \(x_0+\epsilon\). Por tanto, su valor en la coordenada \(x\) es el valor de la función de onda original evaluada en \(x-\epsilon\):
+\begin{equation}
+(T(\epsilon)\psi)(x)=\psi(x-\epsilon).
+\end{equation}
+Para un desplazamiento pequeño,
+\begin{equation}
+\psi(x-\epsilon)
+=
+\psi(x)-\epsilon\frac{d\psi(x)}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+De ahí que
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\epsilon\frac{d}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+Usando
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx},
+\qquad
+\frac{d}{dx}=\frac{i}{\hbar}\hat p_x,
+\end{equation}
+la traslación infinitesimal queda
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}\hat p_x
++\mathcal O(\epsilon^2).
+\end{equation}
+La traslación finita correspondiente es
+\begin{equation}
+T(\epsilon)
+=
+\exp\left(-\frac{i\epsilon}{\hbar}\hat p_x\right).
+\end{equation}
+Con la convención \(V(\epsilon)=\mathbf 1-i\epsilon G+\cdots\), el parámetro de traslación con dimensiones da
+\begin{equation}
+G_{\mathrm{trans}}=\frac{\hat p_x}{\hbar}.
+\end{equation}
+De manera equivalente, se dice que el momento es el generador de las traslaciones espaciales cuando se muestra el factor de \(\hbar\) en la exponencial.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:08}
+\audiencequestion{¿Se perdió un signo menos en la derivación de la traslación?}
+\lecturerresponse{La cuestión es qué dirección se asigna a la función de onda trasladada. Un desplazamiento activo hacia la derecha se representa mediante \(\psi(x-\epsilon)\), no mediante \(\psi(x+\epsilon)\). Con esa corrección, \(T(\epsilon)=\mathbf 1-i\epsilon\hat p_x/\hbar+\cdots\).}
+\end{classroomqa}
+
+Que el momento se conserve depende del hamiltoniano. Para una partícula libre que se mueve en una dimensión,
+\begin{equation}
+H=\frac{\hat p_x^2}{2m}.
+\end{equation}
+Como todo operador conmuta con cualquier función de sí mismo,
+\begin{equation}
+[H,\hat p_x]=0.
+\end{equation}
+Por tanto, el hamiltoniano de la partícula libre es invariante ante traslaciones y \(\hat p_x\) se conserva. Físicamente, la partícula se comporta igual cualquiera que sea la posición inicial que se elija. Trasladar la condición inicial simplemente traslada todo el movimiento.
+
+En tres dimensiones,
+\begin{equation}
+H
+=
+\frac{\hat p_x^2+\hat p_y^2+\hat p_z^2}{2m}.
+\end{equation}
+Cada componente del momento conmuta con \(H\):
+\begin{equation}
+[H,\hat p_x]=[H,\hat p_y]=[H,\hat p_z]=0.
+\end{equation}
+Hay una simetría de traslación independiente en cada dirección espacial. El momento es tanto la cantidad conservada como el generador asociado a esas traslaciones.
+
+El siguiente caso es la simetría de rotación. Las rotaciones son más complejas porque, en general, las rotaciones alrededor de ejes distintos no conmutan: una rotación de \(x\) seguida de una de \(y\) no equivale a hacerlas en el orden inverso. Esto conduce a generadores de simetría que no conmutan y a la estructura de grupo de las rotaciones.
