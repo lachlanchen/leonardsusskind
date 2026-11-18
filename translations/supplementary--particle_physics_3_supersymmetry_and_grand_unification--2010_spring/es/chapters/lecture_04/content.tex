@@ -1,0 +1,561 @@
+\chapter{De la simetría ordinaria al álgebra de Grassmann}
+
+\lectureoverview{La supersimetría es una simetría, así que empezaremos por recordar qué significa esa palabra en mecánica cuántica. Una transformación física se representa en el espacio de Hilbert mediante un operador unitario; las transformaciones continuas se generan infinitesimalmente y sus conmutadores codifican cómo se componen. Una simetría genuina conserva la energía, lo que equivale a conmutar con el hamiltoniano. La supersimetría modifica entonces una hipótesis común a todos los ejemplos conocidos: sus generadores transforman bosones en fermiones y fermiones en bosones. Construir tales generadores conduce de forma natural a operadores de creación y aniquilación, anticonmutadores y el álgebra finita de Grassmann, en la que las cantidades impares se elevan al cuadrado y dan cero.}
+
+\section{La simetría relaciona configuraciones distintas}
+
+Una simetría no es una mera regularidad decorativa. Es una operación que relaciona una configuración física con otra. La reflexión izquierda-derecha, por ejemplo, relaciona las dos manos. Si la persona y las leyes que la rodean tuvieran una simetría exacta izquierda-derecha, las propiedades correspondientes de ambas manos coincidirían. En términos más generales, los objetos o estados relacionados por una simetría exacta deben compartir las magnitudes físicas que esta conserva. En física de partículas, eso suele significar que tienen masas iguales; en física atómica, que los estados de un mismo multiplete rotacional tienen las mismas energías.
+
+Nuestro objetivo es la supersimetría, pero conviene recordar primero simetrías continuas como las rotaciones y las traslaciones. Ya resulta incómodo preguntar si la supersimetría es «continua» en el sentido habitual. Sus parámetros infinitesimales no son números reales ordinarios que conmuten. Es mejor entenderla como una extensión graduada de la simetría continua, y la aritmética de Grassmann que introduciremos a continuación precisa esa idea lo suficiente para nuestros fines. \editorialnote{La terminología moderna describe la supersimetría como una simetría continua graduada. Esta precisión explica la advertencia de la clase: la distinción habitual entre continuo y discreto no se aplica limpiamente a la supersimetría.}
+
+\section{Operaciones unitarias en el espacio de Hilbert}
+
+Un sistema cuántico se representa mediante un vector de estado \(\ket{\psi}\). Una operación de simetría física se representa mediante un operador \(U\) que actúa sobre ese estado:
+\begin{equation}
+\ket{\psi}\longmapsto U\ket{\psi}.
+\end{equation}
+En una rotación espacial, el eje y el ángulo determinan \(U\). Si un estado contiene partículas en varias posiciones, el ket transformado representa todas ellas en sus posiciones rotadas. Con una traslación ocurre algo parecido: el estado se transforma en otro que representa la configuración completa desplazada.
+
+\begin{classroomqa}
+\audiencequestion{El vector de estado pertenece a un espacio de Hilbert que a menudo es infinito-dimensional. ¿Estamos rotando el espacio de Hilbert o el espacio tridimensional ordinario? \lecturetimestamp{00:04:20}}
+\lecturerresponse{Ambas descripciones se refieren a la misma operación en niveles distintos. La transformación unitaria actúa sobre el vector del espacio de Hilbert y representa la rotación física de la configuración en el espacio ordinario. No es literalmente una rotación tridimensional del espacio de Hilbert abstracto; es la representación de una rotación espacial en ese espacio.}
+\end{classroomqa}
+
+La condición esencial es la unitariedad:
+\begin{equation}
+U^\dagger U=UU^\dagger=\mathbf 1,
+\qquad
+U^{-1}=U^\dagger.
+\end{equation}
+Esta conserva los productos internos y, por tanto, las probabilidades:
+\begin{equation}
+\braket{U\psi}{U\psi}
+=\bra{\psi}U^\dagger U\ket{\psi}
+=\braket{\psi}{\psi}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.56\textwidth]{lecture_04_figure_02.png}
+\lectureframe{00:05:56.420}
+\caption{Transición inicial en la pizarra desde un estado transformado hasta la condición de unitariedad. Se ven el ket y el producto con el operador adjunto, pero el profesor tapa sus extremos derechos; las ecuaciones completas aparecen en la derivación siguiente.}
+\end{figure}
+
+En sentido estricto, el teorema de Wigner también permite simetrías antiunitarias, como la inversión temporal. Las transformaciones conectadas continuamente con la identidad, que son las que nos ocupan aquí, se representan mediante operadores unitarios. \editorialnote{La posibilidad antiunitaria es una precisión habitual; no altera el análisis de los generadores de rotaciones, traslaciones o supersimetría que hacemos aquí.}
+
+\section{Transformaciones infinitesimales y generadores}
+
+La operación de no hacer nada se representa mediante \(U=\mathbf 1\), no mediante \(U=0\). Una transformación suficientemente pequeña difiere de la identidad en un término lineal en su parámetro pequeño. Para una rotación de ángulo pequeño \(\epsilon\),
+\begin{equation}
+U(\epsilon)=\mathbf 1+i\epsilon L+O(\epsilon^2).
+\end{equation}
+La unitariedad, al primer orden, exige
+\begin{align}
+U^\dagger U
+&=\left(\mathbf 1-i\epsilon L^\dagger\right)
+  \left(\mathbf 1+i\epsilon L\right)+O(\epsilon^2)\\
+&=\mathbf 1+i\epsilon(L-L^\dagger)+O(\epsilon^2),
+\end{align}
+y, por tanto,
+\begin{equation}
+L^\dagger=L.
+\end{equation}
+El operador \(L\) es el generador infinitesimal.
+
+Las rotaciones requieren tres generadores, uno por cada eje independiente:
+\begin{equation}
+L_x,\qquad L_y,\qquad L_z.
+\end{equation}
+Una rotación alrededor de un eje arbitrario \(\widehat{\bm n}\) está generada por
+\begin{equation}
+L_{\widehat{\bm n}}=\widehat{\bm n}\cdot\bm L.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Se pueden sumar los generadores de los ejes \(x\), \(y\) y \(z\) para obtener una rotación alrededor de otro eje? \lecturetimestamp{00:07:50}}
+\lecturerresponse{Sí. Sus combinaciones lineales generan rotaciones alrededor de ejes intermedios. Tres componentes independientes bastan para construir cualquier rotación espacial infinitesimal.}
+\end{classroomqa}
+
+En el caso de las rotaciones, estos generadores son las componentes del momento angular. Esta notación resulta útil en términos más generales, porque toda simetría continua se describe localmente mediante sus generadores.
+
+\section{El conmutador como tabla de multiplicar}
+
+Los generadores de rotación satisfacen
+\begin{align}
+[L_x,L_y]&=iL_z,&
+[L_y,L_z]&=iL_x,&
+[L_z,L_x]&=iL_y,
+\end{align}
+o, de forma compacta,
+\begin{equation}
+[L_i,L_j]=i\epsilon_{ijk}L_k.
+\end{equation}
+El símbolo de Levi-Civita se anula si dos índices coinciden y vale \(+1\) o \(-1\) para permutaciones pares o impares de \(1,2,3\). El hecho estructural importante es el cierre: el conmutador de dos generadores es otro generador.
+
+¿Por qué un conmutador describe la geometría de las rotaciones? Hagamos una rotación pequeña alrededor de \(x\), seguida de otra alrededor de \(y\); deshagamos la rotación alrededor de \(x\) y, por último, la rotación alrededor de \(y\). Las operaciones no se cancelan porque las rotaciones alrededor de ejes distintos no conmutan.
+
+\begin{classroomqa}
+\audiencequestion{¿Se puede ilustrar esta falta de conmutatividad con los movimientos de alabeo, cabeceo y guiñada de un avión? \lecturetimestamp{00:12:36}}
+\lecturerresponse{Sí. Las rotaciones sucesivas alrededor de los ejes del cuerpo muestran de inmediato, desde el punto de vista geométrico, que cambiar el orden cambia la orientación final. El álgebra que veremos a continuación es la versión infinitesimal de ese hecho conocido.}
+\end{classroomqa}
+
+Sea
+\begin{equation}
+U_x(\epsilon)=\mathbf 1+i\epsilon L_x,
+\qquad
+U_y(\delta)=\mathbf 1+i\delta L_y.
+\end{equation}
+Como los operadores actúan sobre los kets de derecha a izquierda, la secuencia indicada se representa mediante
+\begin{equation}
+\mathcal C
+=U_y^{-1}(\delta)U_x^{-1}(\epsilon)
+ U_y(\delta)U_x(\epsilon).
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué se pueden escribir las operaciones inversas como inversas y no como adjuntas? \lecturetimestamp{00:13:25}}
+\lecturerresponse{Porque las transformaciones son unitarias: \(U^\dagger=U^{-1}\). Para una transformación infinitesimal, tomar la inversa simplemente cambia el signo del término de primer orden: \(U_x^{-1}=\mathbf 1-i\epsilon L_x+O(\epsilon^2)\).}
+\end{classroomqa}
+
+Multiplicar los cuatro factores en la pizarra se convirtió en un ejercicio animado: se cancelaron todos los términos lineales en \(\epsilon\) o \(\delta\), la clase siguió los términos mixtos y una confusión momentánea con el factor dos mostró lo fácil que es perder de vista el orden de los operadores. El resultado limpio de segundo orden es
+\begin{align}
+\mathcal C
+&=\mathbf 1+\epsilon\delta[L_x,L_y]
+  +O(\epsilon^2\delta,\epsilon\delta^2)\\
+&=\mathbf 1+i\epsilon\delta L_z
+  +O(\epsilon^2\delta,\epsilon\delta^2).
+\end{align}
+Así, la secuencia cerrada deja una pequeña rotación alrededor de \(z\), con un ángulo proporcional a \(\epsilon\delta\). \editorialnote{La multiplicación mostrada fija el orden y el coeficiente tras el cálculo exploratorio hecho en clase. Invertir la convención de la secuencia cambia el signo, pero no la conclusión: la transformación residual está regida por el conmutador.}
+
+\begin{classroomqa}
+\audiencequestion{¿Cambiar el orden de las operaciones inversas haría que el producto fuese la identidad? \lecturetimestamp{00:25:23}}
+\lecturerresponse{Si cada transformación se coloca inmediatamente junto a su propia inversa, los pares se cancelan. La secuencia no trivial del conmutador separa deliberadamente esos pares; el hecho de que no se reduzca a la identidad mide la dependencia del orden.}
+\end{classroomqa}
+
+Los productos más largos sí se vuelven más complicados, pero no contienen ningún principio nuevo.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué ocurre si hay más de tres generadores o muchas transformaciones pequeñas? \lecturetimestamp{00:25:34}}
+\lecturerresponse{Hay más conmutadores y más cuentas, pero conocer el álgebra cerrada permite determinar cómo se combinan un número arbitrario de transformaciones infinitesimales. Las transformaciones finitas se pueden construir a partir de muchas transformaciones pequeñas.}
+\end{classroomqa}
+
+En este sentido, el álgebra de conmutadores es la tabla de multiplicar de un grupo continuo escrita en las proximidades de la identidad.
+
+\section{Las traslaciones completan el ejemplo espacial}
+
+El momento lineal genera las traslaciones espaciales. Con la convención de signos usada en la clase,
+\begin{equation}
+\begin{aligned}
+T_x(a)&=\mathbf 1+iaP_x+O(a^2),\\
+T_y(b)&=\mathbf 1+ibP_y+O(b^2),
+\end{aligned}
+\end{equation}
+donde \(a\) y \(b\) son distancias, no ángulos.
+
+Dos traslaciones conmutan. Desplacemos un punto en la dirección \(x\), luego en la dirección \(y\), deshagamos la traslación en la dirección \(x\) y, por último, la traslación en la dirección \(y\); el punto vuelve a su origen:
+\begin{equation}
+[P_i,P_j]=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Para trasladar o rotar un objeto físico hacen falta fuerzas que inicien y detengan el movimiento? \lecturetimestamp{00:28:45}}
+\lecturerresponse{Esa no es la operación que estamos definiendo. Una transformación de simetría compara el estado original con el estado matemático en el que se ha desplazado o rotado la configuración entera. No describe una trayectoria dinámica, una aceleración ni el trabajo realizado al mover el aparato.}
+\end{classroomqa}
+
+Una rotación y una traslación no conmutan. Traslademos un punto, rotemoslo alrededor del origen, trasladémoslo de vuelta a lo largo del eje original y deshagamos la rotación; el punto no vuelve a su posición inicial. El álgebra mixta es
+\begin{equation}
+[L_i,P_j]=i\epsilon_{ijk}P_k.
+\end{equation}
+Esta relación indica que el momento lineal se transforma como un vector bajo rotaciones. Aquí importa menos el ejercicio concreto con los índices que la lección general: las transformaciones del espacio euclídeo se codifican en los conmutadores entre los generadores de rotaciones y traslaciones.
+
+\section{Una simetría debe conservar la energía}
+
+Pasemos ahora de la composición de transformaciones a la dinámica. Si \(U\) es realmente una simetría de un sistema, aplicarla no puede cambiar la energía. Sea \(\ket{E}\) un estado propio de la energía:
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+El símbolo \(E\) de la derecha es un número; \(\ket{E}\) es un vector etiquetado por ese valor propio.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{0.43\textwidth}
+\centering
+\includegraphics[width=\linewidth]{lecture_04_figure_03.png}
+\lectureframe{00:34:38.239}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.50\textwidth}
+\centering
+\includegraphics[width=\linewidth]{lecture_04_figure_04.png}
+\lectureframe{00:36:22.376}
+\end{minipage}
+\caption{El ket transformado \(U\ket{E}\) y la ecuación que define el estado propio \(H\ket{E}=E\ket{E}\), aislados en fotogramas sucesivos de la pizarra.}
+\end{figure}
+
+Si \(U\) es una simetría, entonces \(U\ket{E}\) tiene el mismo valor propio:
+\begin{equation}
+HU\ket{E}=EU\ket{E}.
+\end{equation}
+Como \(E\) es un escalar, conmuta con \(U\), y podemos usar la ecuación original del estado propio:
+\begin{align}
+HU\ket{E}
+&=EU\ket{E}\\
+&=UE\ket{E}\\
+&=UH\ket{E}.
+\end{align}
+Por tanto,
+\begin{equation}
+(HU-UH)\ket{E}=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Se puede repetir la derivación desde la primera relación? \lecturetimestamp{00:35:55}}
+\lecturerresponse{Partamos de \(H\ket{E}=E\ket{E}\). La simetría implica que \(U\ket{E}\) tiene la misma energía, de modo que \(HU\ket{E}=EU\ket{E}\). Pasemos el escalar \(E\) a través de \(U\), sustituyamos \(E\ket{E}\) por \(H\ket{E}\) y restemos. El resultado es \((HU-UH)\ket{E}=0\).}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_04_figure_05.png}
+\lectureframe{00:38:51.066}
+\caption{La derivación completa en la pizarra. Unas marcas curvas de guía conectan la igualdad de energías con la sustitución \(E\ket{E}=H\ket{E}\); la última línea es \((HU-UH)\ket{E}=0\).}
+\end{figure}
+
+El argumento vale para todos los estados propios de la energía. Si suponemos que esos estados forman una base completa, un operador que anula cada uno de ellos es el operador nulo:
+\begin{equation}
+[H,U]=0.
+\end{equation}
+Este es el criterio para que una transformación unitaria independiente del tiempo sea una simetría del hamiltoniano.
+
+Para una transformación infinitesimal,
+\begin{equation}
+U(\epsilon)=\mathbf 1+i\epsilon L_i+O(\epsilon^2),
+\end{equation}
+la identidad ya conmuta con \(H\), así que cada generador debe satisfacer
+\begin{equation}
+[L_i,H]=0.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.47\textwidth]{lecture_04_figure_06.png}
+\lectureframe{00:42:14.296}
+\caption{Criterio de simetría resumido en la pizarra: \([U,H]=0\), seguido de su forma para los generadores, normalizada a partir de la etiqueta inferior parcialmente borrosa como \([L_i,H]=0\).}
+\end{figure}
+
+Si \(L_i\) no depende explícitamente del tiempo, la ecuación de Heisenberg da
+\begin{equation}
+\frac{dL_i}{dt}
+=i[H,L_i]=0
+\qquad(\hbar=1).
+\end{equation}
+Por tanto, los generadores de simetría son cargas conservadas. La simetría de traslación espacial implica la conservación del momento lineal; la simetría de rotación, la conservación del momento angular. \editorialnote{La condición de que no haya dependencia temporal explícita es una precisión habitual e implícita en la afirmación de la clase sobre las leyes de conservación.}
+
+\section{Transformar todo el sistema físico}
+
+La expresión «la rotación es una simetría» puede usarse mal si solo se transforma una parte del aparato. Se puede rotar el espín de una partícula libre sin cambiar su energía. Pero si se coloca en un campo magnético fijo y se rota solo el espín, su energía de Zeeman cambia. Eso no refuta la simetría de rotación: significa que el campo se mantuvo fijo mientras el espín se rotaba con respecto a él. Si se rotan juntos el espín y el campo, o se usa un campo externo que sea invariante por sí mismo, la energía no cambia.
+
+Lo mismo sucede en un átomo de hidrógeno. Trasladar solo el electrón con respecto al protón cambia la distancia entre ambos y, por tanto, la energía de Coulomb. La simetría de traslación actúa sobre el sistema electrón-protón completo y desplaza ambos en la misma medida.
+
+\begin{classroomqa}
+\audiencequestion{¿Es necesario que el campo externo tenga la simetría? \lecturetimestamp{00:43:09}}
+\lecturerresponse{El campo externo fijo debe ser invariante bajo la operación, o bien debe transformarse junto con el resto del sistema. Una rotación relativa entre un espín y un campo que no se ha rotado da lugar a una configuración física distinta, no a la transformación de simetría del montaje completo.}
+\end{classroomqa}
+
+La degeneración rotacional de un átomo ofrece un ejemplo positivo claro. Para un momento angular fijo \(l\), las rotaciones mezclan estados con números cuánticos magnéticos
+\begin{equation}
+m=-l,-l+1,\ldots,l.
+\end{equation}
+En ausencia de un campo magnético o eléctrico externo, todos los estados del multiplete tienen la misma energía:
+\begin{equation}
+E_{l,m}=E_l.
+\end{equation}
+La simetría relaciona estados distintos y exige que sean degenerados.
+
+\section{Qué cambia con la supersimetría}
+
+Todas las simetrías conocidas que hemos comentado hasta ahora conservan el carácter bosónico o fermiónico. Una rotación transforma un electrón en otro electrón, no en un fotón. Las rotaciones de color mezclan los tres colores de un quark, pero no lo convierten en un gluón. Las simetrías internas y espaciotemporales ordinarias pueden mezclar componentes o etiquetas cuánticas, pero sus generadores son bosónicos y no cambian la paridad fermiónica.
+
+La supersimetría es distinta:
+\begin{equation}
+Q\ket{B}\sim\ket{F},
+\qquad
+Q\ket{F}\sim\ket{B}.
+\end{equation}
+Sus multipletes cruzan la frontera entre bosones y fermiones. En una teoría supersimétrica exacta, los compañeros de un mismo multiplete tienen la misma masa. Este es precisamente el emparejamiento que necesitábamos de las clases anteriores: los lazos bosónicos y fermiónicos emparejados pueden cancelar las grandes correcciones ultravioleta a las masas de los escalares. La construcción es difícil de visualizar porque ningún movimiento espacial ordinario transforma un estado de espín entero en uno de espín semientero. Por eso procederemos algebraicamente.
+
+\section{Una supercarga prototípica}
+
+Sea \(A,A^\dagger\) el operador que aniquila y crea un bosón, y sea \(C,C^\dagger\) el que aniquila y crea un fermión. El operador hermítico más sencillo que intercambia sus estados de una partícula es
+\begin{equation}
+Q=C^\dagger A+A^\dagger C.
+\end{equation}
+El primer término aniquila un bosón y crea un fermión; el segundo aniquila un fermión y crea un bosón. Si \(Q\) actúa sobre un estado de un bosón, el término \(A^\dagger C\) se anula porque no hay ningún fermión que aniquilar, mientras que \(C^\dagger A\) realiza la conversión. En un estado de un fermión ocurre al revés.
+
+\begin{classroomqa}
+\audiencequestion{¿Esta construcción crea una partícula única que es una superposición de un bosón y un fermión? \lecturetimestamp{00:52:37}}
+\lecturerresponse{\(Q\) es un operador, no un estado. Al actuar sobre un estado puramente bosónico, produce un estado fermiónico; al actuar sobre uno puramente fermiónico, produce un estado bosónico. Si actúa linealmente sobre una superposición ya general, produce otra superposición, como hace cualquier operador lineal.}
+\end{classroomqa}
+
+La clase pone a prueba ahora el vacío. Como ambos operadores de aniquilación lo anulan,
+\begin{equation}
+A\ket{0}=0,\qquad C\ket{0}=0,
+\end{equation}
+tenemos
+\begin{equation}
+Q\ket{0}=0.
+\end{equation}
+El resultado es el vector nulo, no una segunda copia del vacío.
+
+El modelo prototípico es deliberadamente esquemático. Un bosón de espín cero puede transformarse en cualquiera de las componentes de un fermión de espín un medio, así que el generador necesita un índice espinorial:
+\begin{equation}
+Q_\alpha\ket{B}\sim\ket{F_\alpha}.
+\end{equation}
+En la representación simplificada de dos componentes que usamos en la clase,
+\begin{equation}
+Q_\alpha\ket{F_\beta}\sim\delta_{\alpha\beta}\ket{B}.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo pueden coincidir las dimensiones de los espacios de estados si un bosón de espín cero tiene una componente de espín y un fermión de espín un medio tiene dos? \lecturetimestamp{00:55:02}}
+\lecturerresponse{Un \(Q\) sin índice no basta. Hay componentes espinoriales \(Q_\alpha\), cada una capaz de producir una componente de espín del fermión. La supercarga misma tiene espín un medio porque cambia el espín en media unidad.}
+\end{classroomqa}
+
+Las \(Q_\alpha\) son operadores fermiónicos o, más precisamente, impares de Grassmann. Cada uno de sus términos contiene un número impar de operadores fermiónicos, por lo que invierten la paridad fermiónica. Los observables medibles ordinarios son pares. Conviene distinguir una supercarga impar de su parámetro de transformación, también impar: una transformación supersimétrica finita se construye a partir de una combinación par como \(\epsilon^\alpha Q_\alpha+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\), en la que tanto \(\epsilon\) como \(Q\) son impares. \editorialnote{En la clase, el profesor llama informalmente números de Grassmann a los generadores. Más precisamente, las supercargas son operadores impares, mientras que los parámetros anticonmutativos son números de Grassmann; su producto es par y puede aparecer en una transformación finita.}
+
+\section{Álgebras de operadores bosónicos y fermiónicos}
+
+Para modos bosónicos etiquetados por \(i,j\),
+\begin{align}
+[A_i,A_j]&=0,&
+[A_i^\dagger,A_j^\dagger]&=0,&
+[A_i,A_j^\dagger]&=\delta_{ij}.
+\end{align}
+Las etiquetas pueden representar el momento, la posición, el espín o cualquier base completa de una partícula. Como los operadores de creación conmutan,
+\begin{equation}
+A_i^\dagger A_j^\dagger\ket{0}
+=A_j^\dagger A_i^\dagger\ket{0}.
+\end{equation}
+El estado de dos bosones es simétrico al intercambiarlos.
+
+Los operadores fermiónicos satisfacen relaciones de anticonmutación:
+\begin{align}
+\{C_i,C_j\}&=0,&
+\{C_i^\dagger,C_j^\dagger\}&=0,&
+\{C_i,C_j^\dagger\}&=\delta_{ij},
+\end{align}
+donde
+\begin{equation}
+\{X,Y\}=XY+YX.
+\end{equation}
+Para un solo modo,
+\begin{equation}
+\{C^\dagger,C^\dagger\}=2(C^\dagger)^2=0,
+\end{equation}
+y, por tanto,
+\begin{equation}
+(C^\dagger)^2=0.
+\end{equation}
+El operador no es nulo; su cuadrado sí lo es. Puede crear un fermión en ese modo, pero una segunda aplicación da cero. Esta es la exclusión de Pauli expresada en el lenguaje de operadores.
+
+Para etiquetas distintas,
+\begin{equation}
+C_i^\dagger C_j^\dagger\ket{0}
+=-C_j^\dagger C_i^\dagger\ket{0},
+\end{equation}
+que expresa la antisimetría del estado de dos fermiones. La sustitución algebraica
+\begin{equation}
+\begin{gathered}
+\text{bosons: commutators}\\
+\Updownarrow\\
+\text{fermions: anticommutators}
+\end{gathered}
+\end{equation}
+codifica la distinción estadística.
+
+Muchos bosones pueden ocupar un mismo modo. Por eso, una gran ocupación de fotones puede comportarse como un campo electromagnético clásico con una amplitud numérica ordinaria. Los fermiones no pueden acumularse en un mismo modo, y un campo fermiónico impar no adquiere un valor clásico ordinario que conmute. Esto motiva una aritmética distinta para llevar la cuenta de los fermiones.
+
+\section{Números de Grassmann y paridad}
+
+Los números ordinarios conmutan:
+\begin{equation}
+\alpha_i\alpha_j=\alpha_j\alpha_i.
+\end{equation}
+Los generadores de Grassmann anticonmutan:
+\begin{equation}
+\theta_i\theta_j=-\theta_j\theta_i.
+\end{equation}
+Al imponer \(i=j\) en un sistema numérico donde \(2\neq0\), se obtiene
+\begin{equation}
+\theta_i^2=0.
+\end{equation}
+No se puede asignar a \(\theta_i\) ningún valor numérico ordinario, como seis o siete. Estos símbolos forman un álgebra diseñada para llevar la cuenta de los signos fermiónicos.
+
+Los coeficientes ordinarios conmutan con los generadores de Grassmann:
+\begin{equation}
+\alpha\theta_i=\theta_i\alpha.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué tipo de objeto se obtiene al multiplicar un número ordinario por un número de Grassmann? \lecturetimestamp{01:12:32}}
+\lecturerresponse{Sigue siendo impar de Grassmann. Multiplicar por un coeficiente ordinario cambia su escala, no su paridad. El espacio generado por los generadores es un espacio vectorial sobre los números ordinarios.}
+\end{classroomqa}
+
+El álgebra tiene paridad \(\mathbb Z_2\). Los coeficientes ordinarios y los productos de un número par de generadores son pares; un generador o un producto de un número impar de ellos es impar:
+\begin{equation}
+\begin{aligned}
+\text{even}\cdot\text{even}&=\text{even},\\
+\text{even}\cdot\text{odd}&=\text{odd},\\
+\text{odd}\cdot\text{odd}&=\text{even}.
+\end{aligned}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Es esto análogo a las reglas de multiplicación de los números reales e imaginarios, o una generalización como la introducción de \(i\)? \lecturetimestamp{01:14:25}}
+\lecturerresponse{Es una generalización de la aritmética, pero no conviene llevar demasiado lejos la analogía. Los números imaginarios siguen conmutando y satisfacen \(i^2=-1\); las cantidades impares de Grassmann anticonmutan y se elevan al cuadrado dando cero. El hecho de compartir el patrón de multiplicación par-impar no hace que las álgebras sean iguales.}
+\end{classroomqa}
+
+Un producto como \(\theta_1\theta_2\) es par y conmuta con todo elemento homogéneo del álgebra de Grassmann, pero no es un número ordinario. No es nulo, aunque
+\begin{equation}
+(\theta_1\theta_2)^2=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Si \(\theta_1\theta_2\) es par, ¿por qué no es simplemente un número ordinario? \lecturetimestamp{01:17:36}}
+\lecturerresponse{La paridad par significa que conmuta en el álgebra graduada; no significa que sea un escalar real o complejo. Su nilpotencia lo distingue de inmediato de cualquier número ordinario no nulo.}
+\end{classroomqa}
+
+\section{Funciones de variables de Grassmann}
+
+Con un generador, todo polinomio termina en primer orden:
+\begin{equation}
+f(\theta)=\alpha+\beta\theta.
+\end{equation}
+Todas las potencias \(\theta^n\) con \(n\geq2\) se anulan. Con dos generadores, el elemento más general es
+\begin{equation}
+f(\theta_1,\theta_2)
+=\alpha+\beta_1\theta_1+\beta_2\theta_2
++\gamma\theta_1\theta_2.
+\end{equation}
+Escribir el último monomio en orden inverso cambia su signo:
+\begin{equation}
+\theta_2\theta_1=-\theta_1\theta_2.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Multiplicar \(\theta_1\) por un coeficiente \(\beta\) crea una tercera variable de Grassmann independiente? \lecturetimestamp{01:18:39}}
+\lecturerresponse{No. Crea otro vector en el espacio generado por \(\theta_1\), no un nuevo generador de la base. Con dos generadores independientes, todo término lineal impar es de la forma \(\beta_1\theta_1+\beta_2\theta_2\).}
+\end{classroomqa}
+
+Con tres generadores, la base ordenada es
+\begin{equation}
+1,\quad
+\theta_1,\theta_2,\theta_3,\quad
+\theta_1\theta_2,\theta_1\theta_3,\theta_2\theta_3,\quad
+\theta_1\theta_2\theta_3.
+\end{equation}
+En general, \(n\) generadores producen \(2^n\) monomios de base ordenados. Toda función analítica de un número finito de generadores de Grassmann se trunca en un polinomio de este tipo, porque las potencias repetidas de un mismo generador se anulan. \editorialnote{La base de dimensión \(2^n\) muestra explícitamente el patrón que la clase construye para uno, dos y tres generadores.}
+
+\section{Derivación de Grassmann}
+
+Para una variable, definamos
+\begin{equation}
+\frac{\partial}{\partial\theta}\alpha=0,
+\qquad
+\frac{\partial}{\partial\theta}\theta=1,
+\end{equation}
+de modo que
+\begin{equation}
+\frac{\partial}{\partial\theta}
+(\alpha+\beta\theta)=\beta.
+\end{equation}
+Para dos variables, elijamos derivadas por la izquierda y conservemos el orden canónico \(\theta_1\theta_2\):
+\begin{align}
+\frac{\partial^L f}{\partial\theta_1}
+&=\beta_1+\gamma\theta_2,\\
+\frac{\partial^L f}{\partial\theta_2}
+&=\beta_2-\gamma\theta_1.
+\end{align}
+El signo menos de la segunda línea aparece porque la derivada impar debe pasar por \(\theta_1\) antes de derivar respecto de \(\theta_2\).
+
+Esto se expresa mediante la regla del producto graduada. Si \(A\) tiene paridad \(|A|\in\{0,1\}\), entonces
+\begin{equation}
+\frac{\partial^L}{\partial\theta}(AB)
+=\left(\frac{\partial^L A}{\partial\theta}\right)B
++(-1)^{|A|}A
+\left(\frac{\partial^L B}{\partial\theta}\right).
+\end{equation}
+La regla sigue el espíritu de la regla ordinaria, pero incorpora el signo requerido por la anticonmutación. También se puede definir la integración de Grassmann y, como el espacio de funciones es finito, se reduce a una tabla breve. En la clase se deja esa tabla para más adelante.
+
+\section{Se resuelve el enigma de la exponencial}
+
+Con un único generador de Grassmann y un coeficiente ordinario \(a\),
+\begin{equation}
+e^{a\theta}
+=1+a\theta,
+\end{equation}
+porque todas las potencias superiores se anulan. Dos exponenciales que contienen el mismo generador satisfacen
+\begin{align}
+e^{a\theta}e^{b\theta}
+&=(1+a\theta)(1+b\theta)\\
+&=1+(a+b)\theta\\
+&=e^{(a+b)\theta}.
+\end{align}
+
+A continuación, la clase prueba con generadores distintos. La multiplicación directa da
+\begin{equation}
+e^{\theta_1}e^{\theta_2}
+=(1+\theta_1)(1+\theta_2)
+=1+\theta_1+\theta_2+\theta_1\theta_2.
+\end{equation}
+Al principio, el desarrollo en la pizarra parece indicar que el cuadrado de \(\theta_1+\theta_2\) podría dar el último término. Alguien del público advierte el signo:
+\begin{equation}
+(\theta_1+\theta_2)^2
+=\theta_1^2+\theta_1\theta_2
+ +\theta_2\theta_1+\theta_2^2
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Se cancela el término cuadrático porque contiene \(\theta_1\theta_2+\theta_2\theta_1\)? \lecturetimestamp{01:24:00}}
+\lecturerresponse{Sí. Esa corrección cambia la conclusión: \(e^{\theta_1+\theta_2}=1+\theta_1+\theta_2\), mientras que el producto ordenado \(e^{\theta_1}e^{\theta_2}\) también contiene \(\theta_1\theta_2\). La ley ingenua de suma de exponentes no se aplica a exponentes distintos que anticonmutan.}
+\end{classroomqa}
+
+No hay contradicción. Incluso para matrices ordinarias, \(e^Ae^B=e^{A+B}\) solo se cumple cuando \(A\) y \(B\) conmutan. En este caso,
+\begin{equation}
+[\theta_1,\theta_2]
+=\theta_1\theta_2-\theta_2\theta_1
+=2\theta_1\theta_2.
+\end{equation}
+Este conmutador es par y conmuta con ambos generadores, así que la serie de Baker-Campbell-Hausdorff termina:
+\begin{equation}
+e^{\theta_1}e^{\theta_2}
+=\exp\left(
+\theta_1+\theta_2+\frac12[\theta_1,\theta_2]
+\right)
+=e^{\theta_1+\theta_2+\theta_1\theta_2}.
+\end{equation}
+Como el exponente de la derecha es nilpotente, su desarrollo da exactamente
+\(1+\theta_1+\theta_2+\theta_1\theta_2\). \editorialnote{Este cálculo de Baker-Campbell-Hausdorff resuelve la cuestión que queda pendiente en la clase en directo. Allí se descubre correctamente que la ley ingenua falla, pero la clase termina antes de identificar el término de conmutador que falta.}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué tipo de número es \(1+\theta_1\), y se pueden sumar partes ordinarias y de Grassmann? \lecturetimestamp{01:26:16}}
+\lecturerresponse{Es un elemento no homogéneo del álgebra de Grassmann, con una parte par \(1\) y una parte impar \(\theta_1\). Se permiten esas sumas, pero no son ni escalares ordinarios ni elementos impares homogéneos.}
+\end{classroomqa}
+
+Hacia el final se examina otra aparente paradoja:
+\begin{equation}
+(\theta_1+\theta_2)^2=0.
+\end{equation}
+Esto no implica que \(\theta_1\theta_2=0\), porque los dos términos cruzados se cancelan entre sí, en lugar de anularse por separado.
+
+\begin{classroomqa}
+\audiencequestion{Si todo elemento impar de Grassmann se eleva al cuadrado y da cero, ¿significa eso que el producto de dos generadores de Grassmann cualesquiera es cero? \lecturetimestamp{01:32:19}}
+\lecturerresponse{No. La ecuación \((\theta_1+\theta_2)^2=0\) dice que \(\theta_1\theta_2+\theta_2\theta_1=0\). Esto demuestra la anticonmutación, no que alguno de los dos productos ordenados se anule. El producto de generadores distintos puede ser distinto de cero.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Estamos suponiendo la definición habitual mediante series de potencias al escribir estas exponenciales? \lecturetimestamp{01:34:42}}
+\lecturerresponse{Sí, y esa definición es coherente porque todas las series terminan. Lo que falla no es la exponencial en sí, sino la identidad injustificada \(e^Ae^B=e^{A+B}\) para \(A\) y \(B\) que no conmutan. La corrección con el conmutador restablece la ley de composición adecuada.}
+\end{classroomqa}
+
+Este final exploratorio es adecuado. Las simetrías ordinarias nos llevaron de las transformaciones unitarias a los generadores y los conmutadores; la supersimetría nos llevó de los generadores impares a las variables anticonmutativas. En ambos casos, la ley de multiplicación es el objeto central. Para las rotaciones aparece en \([L_i,L_j]\); para las exponenciales de Grassmann, aparece en el término con el conmutador, que impide la suma ingenua. El álgebra es poco familiar, pero es coherente, finita y exactamente la adecuada para las transformaciones fermiónicas que requiere la supersimetría.

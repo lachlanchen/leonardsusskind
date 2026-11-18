@@ -1,0 +1,516 @@
+\chapter{Supersimetría en cuatro dimensiones y el modelo de Wess--Zumino}
+
+\lectureoverview{El álgebra de supersimetría unidimensional de la lección anterior incluía únicamente el Hamiltoniano. La invariancia de Lorentz obliga ahora a reincorporar la energía junto con el momento espacial, y las cargas supersimétricas deben convertirse en espinores de dos componentes. Llegamos a esa álgebra retomando primero un fermión de Weyl sin masa y su Hamiltoniano \(H=\boldsymbol{\sigma}\cdot\mathbf p\). Luego representamos las cargas supersimétricas como operadores diferenciales en el superspacio de cuatro dimensiones, aislamos los supercampos quirales mediante la condición \(\bar D_{\dot\alpha}\Phi=0\) y usamos la integración en superspacio para construir una teoría de campos concreta. Las elecciones sucesivas \(\Phi^\dagger\Phi\), \(\Phi^2\) y \(\Phi^3\) producen propagación, masas iguales para bosones--fermiones, interacciones de Yukawa y una interacción escalar relacionada. El campo auxiliar \(F\) hace transparentes estas relaciones, mientras que los diagramas de lazo finales muestran por qué la supersimetría suaviza la sensibilidad ultravioleta.}
+
+\section{Por qué el hamiltoniano no puede estar solo}
+
+En el modelo de juguete se suprimió el espacio y la relación básica era
+\begin{equation}
+\{Q,Q^\dagger\}=2H.
+\label{eq:l8-time-only-algebra}
+\end{equation}
+Esta forma basta cuando el tiempo es la única coordenada. Sin embargo, en una teoría relativista, \(H=P_0\) es una componente del cuadrimomento \(P_\mu\). Un impulso de Lorentz la mezcla con \(P_i\). Un álgebra cuyo lado derecho destacara \(P_0\) no podría transformarse de manera covariante.
+
+Por tanto, la corrección debe cumplir dos propósitos a la vez. Debe sustituir \(H\) por las cuatro componentes \(P_\mu\) y proporcionar índices en el lado izquierdo que puedan corresponderse con un vector de Lorentz en el lado derecho. La ecuación de Dirac sin masa da la pista necesaria: un fermión relativista puede describirse mediante un espinor de dos componentes, y las matrices \(\sigma^\mu\) convierten un índice vectorial en un par de índices espinoriales.
+
+\section{Fermiones sin masa, helicidad y quiralidad}
+
+Empecemos por la distinción física entre partículas masivas y sin masa. Consideremos una partícula de espín \(\tfrac12\) que se mueve en la dirección de su espín. Como su velocidad es menor que la de la luz, un observador puede adelantarla. En el nuevo sistema de referencia, el momento se invierte, pero el espín no, así que la helicidad cambia de signo. Por consiguiente, una teoría relativista de partículas masivas debe contener ambas helicidades.
+
+Ningún observador puede adelantar una partícula sin masa. Las transformaciones propias de Lorentz no pueden invertir su momento con respecto al espín, de modo que una representación irreducible sin masa puede tener una sola helicidad. Una rotación espacial puede cambiar la dirección del movimiento, pero no convierte una mano derecha en una izquierda.
+
+\begin{classroomqa}
+\audiencequestion{¿El argumento de adelantar a la partícula se refiere realmente a la helicidad y no a la quiralidad? \lecturetimestamp{00:05:42}}
+\lecturerresponse{Sí. La helicidad es la proyección del espín sobre el momento, mientras que la quiralidad es el autovalor de la matriz quiral, convencionalmente \(\gamma^5\). Para un modo sin masa, ambas etiquetas están vinculadas, por eso en este ejemplo pueden parecer intercambiables. Para una partícula masiva son distintas.}
+\end{classroomqa}
+
+El recuento de estados requiere una precisión.\editorialnote{Un único campo de Weyl sin masa tiene una helicidad para la partícula y la helicidad opuesta para la antipartícula. Por tanto, «la mitad de estados» se refiere a la reducción de un campo de Dirac de cuatro componentes a un campo de Weyl de dos componentes; no significa que hayan desaparecido los estados de antipartícula.}
+
+Escribamos el campo de Weyl empleado en este argumento inicial como
+\begin{equation}
+\chi=
+\begin{pmatrix}
+\chi_1\\
+\chi_2
+\end{pmatrix},
+\end{equation}
+En la clase, este campo se denota por \(\psi_\alpha\); aquí lo llamamos \(\chi\) para no confundirlo con la representación de Weyl conjugada que suele incluirse más adelante en un supercampo quiral.
+\begin{equation}
+H\chi=\boldsymbol{\sigma}\cdot\mathbf p\,\chi.
+\label{eq:l8-weyl-hamiltonian}
+\end{equation}
+Para el momento \(\mathbf p\), la matriz \(\boldsymbol{\sigma}\cdot\mathbf p\) tiene autovalores \(\pm|\mathbf p|\). La rama de frecuencia positiva proporciona el modo de partícula; la rama de frecuencia negativa se reinterpreta mediante la construcción de la antipartícula, en vez de conservarse como un espectro no acotado inferiormente.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_02.png}
+\lectureframe{00:07:44.271}
+\caption{El espinor quiral de dos componentes y el hamiltoniano \(H=\boldsymbol{\sigma}\cdot\mathbf p\). El símbolo del momento al final está parcialmente oculto, pero la ecuación pronunciada lo determina.}
+\end{figure}
+
+La etiqueta de quiralidad también depende de la convención.\editorialnote{La pizarra asocia directamente una quiralidad con el autovalor positivo de \(\boldsymbol{\sigma}\cdot\mathbf p\). La quiralidad que recibe ese signo depende de las definiciones de \(\sigma^\mu\), \(\bar\sigma^\mu\) y del campo de Weyl. Conservamos la afirmación sobre el autovalor, pero no le asignamos una etiqueta izquierda/derecha independiente de la convención.}
+
+Al sustituir \(H\) por \(i\partial_t\) y \(\mathbf p\) por \(-i\nabla\), obtenemos
+\begin{equation}
+i\partial_t\chi=-i\boldsymbol{\sigma}\cdot\nabla\chi.
+\end{equation}
+Introduzcamos
+\begin{equation}
+\begin{aligned}
+\sigma^\mu&=(\mathbf 1,\boldsymbol{\sigma}),\\
+\bar\sigma^\mu&=(\mathbf 1,-\boldsymbol{\sigma}),\\
+\eta_{\mu\nu}&=\operatorname{diag}(1,-1,-1,-1).
+\end{aligned}
+\label{eq:l8-sigma-convention}
+\end{equation}
+Entonces, la ecuación que acabamos de obtener es
+\begin{equation}
+i\sigma^\mu\partial_\mu\chi=0.
+\label{eq:l8-weyl-equation}
+\end{equation}
+La representación de Weyl conjugada usa \(\bar\sigma^\mu\). Es esta representación conjugada, que denotaremos \(\psi_\alpha\) más adelante, la que satisface la ecuación libre \(i\bar\sigma^\mu\partial_\mu\psi=0\). Demostrar la covariancia requiere la representación espinorial del grupo de Lorentz, pero aquí importa el hecho estructural: las cuatro matrices \(\sigma^\mu\) enlazan un índice del espacio-tiempo con dos índices espinoriales.
+
+\section{El superálgebra en cuatro dimensiones}
+
+Las coordenadas impares deben transformarse ahora como espinores de Weyl:
+\begin{equation}
+\theta^\alpha=(\theta^1,\theta^2),
+\qquad
+\bar\theta^{\dot\alpha}=(\bar\theta^{\dot1},\bar\theta^{\dot2}).
+\end{equation}
+La barra denota conjugación compleja, y el punto distingue la representación de Lorentz conjugada. Hay dos componentes complejas, o cuatro reales, de Grassmann. Por tanto, un supercampo par general
+\begin{equation}
+\mathcal S=\mathcal S(x^\mu,\theta^\alpha,\bar\theta^{\dot\alpha})
+\end{equation}
+tiene un desarrollo finito en Grassmann. Su monomio de grado máximo es
+\begin{equation}
+\theta^2\bar\theta^2
+\equiv
+(\theta^1\theta^2)(\bar\theta^{\dot1}\bar\theta^{\dot2}),
+\end{equation}
+el producto de las cuatro coordenadas impares independientes. Al coeficiente de este monomio se le llama comúnmente componente \(D\).
+
+Las supercargas también llevan índices espinoriales. En la supersimetría \(N=1\) de cuatro dimensiones, su álgebra es
+\begin{align}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+&=2\sigma^\mu_{\alpha\dot\beta}P_\mu,
+\label{eq:l8-superalgebra-main}\\
+\{Q_\alpha,Q_\beta\}&=0,
+&
+\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}&=0,
+\label{eq:l8-superalgebra-nilpotent}\\
+[P_\mu,Q_\alpha]&=0,
+&
+[P_\mu,\bar Q_{\dot\alpha}]&=0,
+&
+[P_\mu,P_\nu]&=0.
+\label{eq:l8-superalgebra-commutators}
+\end{align}
+El factor dos es convencional. La matriz
+\(\sigma^\mu_{\alpha\dot\beta}\) contrae el índice vectorial de \(P_\mu\) y deja precisamente los dos índices espinoriales que aparecen a la izquierda.
+
+\begin{classroomqa}
+\audiencequestion{¿Son \(\alpha\) y \(\beta\) los índices matriciales de la matriz sigma? \lecturetimestamp{00:22:01}}
+\lecturerresponse{Sí. Más precisamente, uno es un índice de Weyl sin punto y el otro, un índice conjugado con punto; \(\mu\) es el índice de vector del espacio-tiempo. La matriz sigma sirve de puente entre ambas descripciones.}
+\end{classroomqa}
+
+La notación depurada hace explícito ese puente.\editorialnote{En la clase se omiten deliberadamente los índices con punto y se debate en la pizarra el orden \(\alpha\beta\) frente a \(\beta\alpha\). Las ecuaciones~\eqref{eq:l8-superalgebra-main} y \eqref{eq:l8-superalgebra-commutators} restablecen la notación estándar con índices con y sin punto, sin cambiar el argumento.}
+
+La última línea afirma que las supercargas se conservan y son compatibles con las traslaciones. Las componentes del momento conmutan porque sus representantes diferenciales conmutan. En la convención diferencial que usaremos más adelante,
+\begin{equation}
+P_\mu=i\partial_\mu,
+\end{equation}
+por lo que la ecuación~\eqref{eq:l8-superalgebra-main} también puede escribirse como
+\begin{equation}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+=2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu.
+\end{equation}
+
+\section{Supercargas como derivadas en el superspacio}
+
+El momento genera traslaciones de una coordenada ordinaria; una supercarga traslada una coordenada impar y, además, desplaza el espacio-tiempo. Fijemos la convención de derivadas de Grassmann por la izquierda y definamos
+\begin{align}
+Q_\alpha
+&=\partial_\alpha
+-i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-Q}\\
+\bar Q_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
++i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Qbar}
+\end{align}
+La acción de \(\epsilon^\alpha Q_\alpha+
+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\) da la variación infinitesimal de supersimetría de un supercampo. Sus componentes son simplemente los coeficientes de los monomios independientes de Grassmann, y los operadores diferenciales mezclan esos coeficientes.
+
+\begin{classroomqa}
+\audiencequestion{¿A qué derivada respecto de \(x\) se refiere la abreviatura \(\bar\theta\sigma\partial\)? \lecturetimestamp{00:25:40}}
+\lecturerresponse{A las cuatro. El índice \(\mu\) repetido en \(\bar\theta^{\dot\alpha}\sigma^\mu_{\alpha\dot\alpha}\partial_\mu\) está sumado, de modo que cada componente de \(\sigma^\mu\) se empareja con la derivada correspondiente \(\partial/\partial x^\mu\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La carga conjugada debería contener \(\theta\) en vez de otro \(\bar\theta\)? \lecturetimestamp{00:26:16}}
+\lecturerresponse{Sí. \(Q\) deriva con respecto a \(\theta\) y contiene \(\bar\theta\); \(\bar Q\) deriva con respecto a \(\bar\theta\) y contiene \(\theta\). Son operadores conjugados.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es simétrica \(\sigma^\mu\)? \lecturetimestamp{00:27:04}}
+\lecturerresponse{Las matrices de Pauli son hermíticas. Tres de las cuatro matrices de \((\mathbf1,\boldsymbol{\sigma})\) son simétricas, mientras que \(\sigma^2\) es antisimétrica bajo la transposición ordinaria. La propiedad de conjugación relevante es la hermiticidad junto con la posición de los índices con y sin punto.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La matriz sigma de la ecuación conjugada lleva los índices en el orden opuesto? \lecturetimestamp{00:27:13}}
+\lecturerresponse{La conjugación intercambia las representaciones con y sin punto, así que la notación segura es \(\sigma^\mu_{\alpha\dot\alpha}\) y su conjugada \(\bar\sigma^{\mu\,\dot\alpha\alpha}\), en lugar de tratar ambas etiquetas como posiciones matriciales intercambiables.}
+\end{classroomqa}
+
+Las fórmulas de las ecuaciones~\eqref{eq:l8-Q} y \eqref{eq:l8-Qbar} difieren en signos superficiales respecto de la abreviatura usada en la pizarra. Esos signos dependen de si \(P_\mu\) es \(+i\partial_\mu\) o \(-i\partial_\mu\), de si las derivadas actúan por la izquierda o por la derecha y del orden de las variables impares conjugadas. Lo importante es que una misma convención satisfaga toda el álgebra.
+
+\section{Una restricción compatible con la supersimetría}
+
+Un supercampo general contiene muchas componentes. Buscamos una clase más reducida sin destruir la simetría. La clase comienza con una analogía ordinaria. Para un vector \(\mathbf V\), la restricción
+\begin{equation}
+V_x=0
+\end{equation}
+no es invariante bajo rotaciones: después de una rotación, \(V_y\) contribuye a la nueva componente \(x\). En cambio,
+\begin{equation}
+\mathbf V^2=1
+\end{equation}
+es invariante y elimina un grado de libertad independiente. Una restricción útil debe transformar campos que la satisfacen en otros campos que también la satisfagan.
+
+Supongamos que un operador impar lineal \(\bar D_{\dot\alpha}\) define
+\begin{equation}
+\bar D_{\dot\alpha}\Phi=0.
+\label{eq:l8-chiral-constraint}
+\end{equation}
+Después de una variación de supersimetría \(\delta\Phi=Q\Phi\), la misma condición seguirá cumpliéndose si \(\bar D\) anticonmuta con las supercargas:
+\begin{equation}
+\bar D(Q\Phi)=-Q(\bar D\Phi)=0.
+\end{equation}
+Esta es la prueba abstracta de consistencia que motiva la construcción; no se trata de una definición presentada sin explicación.
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué se pueden intercambiar \(Q\) y \(\bar D\) en la última expresión? \lecturetimestamp{00:36:56}}
+\lecturerresponse{Son operadores impares elegidos para anticonmutar. Por tanto, al intercambiar su orden aparece un signo menos; cuando \(\bar D\) llega a \(\Phi\), la restricción original hace que el resultado sea cero.}
+\end{classroomqa}
+
+Las derivadas covariantes necesarias se obtienen invirtiendo los signos de las derivadas del espacio-tiempo con respecto a los de las supercargas:
+\begin{align}
+D_\alpha
+&=\partial_\alpha
++i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-D}\\
+\bar D_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
+-i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Dbar}
+\end{align}
+Satisfacen
+\begin{align}
+\{D_\alpha,\bar D_{\dot\beta}\}
+&=-2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu,\\
+\{D_\alpha,Q_\beta\}
+&=\{D_\alpha,\bar Q_{\dot\beta}\}=0,\\
+\{\bar D_{\dot\alpha},Q_\beta\}
+&=\{\bar D_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{¿El único cambio de \(\bar Q\) a \(\bar D\) es el signo del término con la derivada del espacio-tiempo? \lecturetimestamp{00:37:58}}
+\lecturerresponse{Exactamente. Esa inversión de signo hace que se cancelen los términos cruzados al anticommutar \(D\) con cualquiera de las supercargas.}
+\end{classroomqa}
+
+Imponemos únicamente la ecuación~\eqref{eq:l8-chiral-constraint}. Imponer tanto \(D_\alpha\Phi=0\) como \(\bar D_{\dot\alpha}\Phi=0\) obligaría, por medio de su anticonmutador, a que \(\partial_\mu\Phi=0\), dejando como máximo un resto independiente del espacio-tiempo.
+\editorialnote{La pizarra afirma que imponer ambas restricciones obligaría a que \(\Phi=0\). El álgebra obliga estrictamente a que el campo sea independiente del espacio-tiempo; condiciones adicionales de contorno o sobre las componentes pueden reducirlo aún más.}
+
+\section{Resolución de la restricción quiral}
+
+Definamos la coordenada desplazada
+\begin{equation}
+y^\mu=x^\mu+i\theta\sigma^\mu\bar\theta.
+\label{eq:l8-chiral-coordinate}
+\end{equation}
+Con la convención de derivada por la izquierda establecida antes, una función
+\begin{equation}
+\Phi=\Phi(y,\theta)
+\label{eq:l8-chiral-solution}
+\end{equation}
+satisface \(\bar D_{\dot\alpha}\Phi=0\). La regla de la cadena hace explícita la cancelación. Al derivar a través de \(y^\mu\) aparece el mismo término \(i\theta\sigma^\mu\partial_\mu\Phi\) que figura con el signo opuesto en \(\bar D_{\dot\alpha}\).
+
+Así, un supercampo quiral no tiene dependencia independiente de \(\bar\theta\). Puede contener \(\bar\theta\), pero solo a través de la combinación \(y^\mu\). Su desarrollo finito es
+\begin{equation}
+\Phi(y,\theta)
+=\phi(y)+\sqrt2\,\theta\psi(y)+\theta^2F(y).
+\label{eq:l8-chiral-expansion-y}
+\end{equation}
+Los tres tipos de componentes son un escalar complejo \(\phi\), un fermión de Weyl \(\psi_\alpha\) y un escalar complejo \(F\). El último es auxiliar, no un segundo bosón propagante.
+
+\begin{classroomqa}
+\audiencequestion{¿Se ha sustituido \(x\) por una nueva coordenada \(y\) ortogonal a ella? \lecturetimestamp{00:49:08}}
+\lecturerresponse{No. \(y^\mu\) es una abreviatura de la combinación específica de la ecuación~\eqref{eq:l8-chiral-coordinate}; no es una dirección adicional del espacio-tiempo. Trabajar en \(y\) simplifica la quiralidad, y volvemos a \(x\) al construir la teoría de campos ordinaria.}
+\end{classroomqa}
+
+Al desarrollar la ecuación~\eqref{eq:l8-chiral-expansion-y} a \(x\) fijo, se obtiene
+\begin{align}
+\Phi(x,\theta,\bar\theta)
+={}&\phi
++\sqrt2\,\theta\psi
++\theta^2F
++i\theta\sigma^\mu\bar\theta\,\partial_\mu\phi
+\notag\\
+&-\frac{i}{\sqrt2}\theta^2
+\partial_\mu\psi\,\sigma^\mu\bar\theta
++\frac14\theta^2\bar\theta^2\Box\phi.
+\label{eq:l8-chiral-expansion-x}
+\end{align}
+Todos los campos componentes de la derecha se evalúan en \(x\). El campo antichiral conjugado depende de
+\(\bar y^\mu=x^\mu-i\theta\sigma^\mu\bar\theta\) y \(\bar\theta\). Un supercampo quiral no puede ser real de manera consistente, porque su conjugado satisface la restricción de quiralidad opuesta.
+
+\section{Integrales en el superspacio}
+
+Una acción en el superspacio completo tiene la forma
+\begin{equation}
+S_D=\int d^4x\,d^2\theta\,d^2\bar\theta\;K,
+\label{eq:l8-D-term-action}
+\end{equation}
+donde \(K\) es un supercampo real. La integración de Berezin selecciona su coeficiente \(\theta^2\bar\theta^2\). Tras las integraciones en las variables impares, solo queda una lagrangiana ordinaria del espacio-tiempo.
+
+Hay otra construcción invariante. Si \(W(\Phi)\) es quiral, entonces
+\begin{equation}
+S_F=\int d^4x\,d^2\theta\;W(\Phi)
++\int d^4x\,d^2\bar\theta\;\overline{W}(\Phi^\dagger)
+\label{eq:l8-F-term-action}
+\end{equation}
+es supersimétrica. La primera integral selecciona la componente \(\theta^2\) y la segunda, su conjugada.
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué es legítimo integrar solo sobre \(d^2\theta\) si la expresión no depende de \(\bar\theta\)? \lecturetimestamp{01:16:30}}
+\lecturerresponse{La quiralidad se conserva bajo supersimetría, y la componente de mayor grado en \(\theta\) de un supercampo quiral solo cambia por una derivada total del espacio-tiempo. Por tanto, su integral sobre el espacio-tiempo es invariante, al igual que la integral de la componente \(D\) completa.}
+\end{classroomqa}
+
+\section{El multiplete quiral libre}
+
+Consideremos la expresión aparentemente carente de estructura
+\begin{equation}
+S_{\mathrm{free}}
+=\int d^4x\,d^2\theta\,d^2\bar\theta\;
+\Phi^\dagger\Phi.
+\label{eq:l8-free-superaction}
+\end{equation}
+Los dos factores dependen de coordenadas desplazadas en sentidos opuestos:
+\begin{equation}
+\Phi=\Phi(x+i\theta\sigma\bar\theta,\theta),
+\qquad
+\Phi^\dagger
+=\Phi^\dagger(x-i\theta\sigma\bar\theta,\bar\theta).
+\end{equation}
+Dentro de la integral sobre el espacio-tiempo podemos trasladar la variable muda \(x\). Un desplazamiento puede eliminar el corrimiento de Grassmann de un factor, pero entonces duplica el desplazamiento relativo en el otro. El desarrollo de Taylor en ese desplazamiento nilpotente termina tras un número finito de términos.
+
+De aquí provienen las derivadas. La expresión del superspacio
+\(\Phi^\dagger\Phi\) no contiene ninguna derivada explícita del espacio-tiempo y, sin embargo, los argumentos desplazados generan derivadas primeras y segundas de los campos componentes. Al multiplicar los desarrollos y conservar solo la componente de mayor grado, se obtiene, con la convención de la ecuación~\eqref{eq:l8-sigma-convention},
+\begin{equation}
+\mathcal L_{\mathrm{free}}
+=\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F.
+\label{eq:l8-free-component-lagrangian}
+\end{equation}
+Salvo por integración por partes, la parte escalar también puede escribirse esquemáticamente como \(-\phi^\ast\Box\phi\), que es la forma a la que se aproxima el cálculo en la pizarra.
+
+\begin{classroomqa}
+\audiencequestion{¿De dónde sale la segunda línea del desarrollo de Taylor del supercampo? \lecturetimestamp{01:03:00}}
+\lecturerresponse{Sale del desarrollo en componentes \(\Phi(y,\theta)=\phi(y)+\sqrt2\theta\psi(y)+\theta^2F(y)\). Después se desarrolla cada componente en Taylor, porque \(y\) difiere de \(x\) en un bilineal nilpotente de Grassmann.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Debería llevar \(\theta^2\) esa última componente? \lecturetimestamp{01:04:54}}
+\lecturerresponse{Sí. La componente auxiliar es \(F\theta^2\). Como ya contiene las dos \(\theta\) independientes, cualquier desplazamiento adicional de Taylor que incluya otra \(\theta\) se anula.}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}
+\lectureframe{01:08:57.900}
+\caption{El desarrollo en coordenadas desplazadas se agrupa en términos escalares, fermiónicos y auxiliares de la lagrangiana ordinaria.}
+\end{figure}
+
+Los dos primeros términos de la ecuación~\eqref{eq:l8-free-component-lagrangian} dan las ecuaciones de Klein--Gordon sin masa y de Weyl. El último no contiene derivadas:
+\begin{equation}
+\frac{\partial\mathcal L}{\partial F}=F^\ast=0,
+\qquad
+\frac{\partial\mathcal L}{\partial F^\ast}=F=0.
+\label{eq:l8-free-F-equation}
+\end{equation}
+No introduce datos iniciales ni una partícula en la capa de masa.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_04.png}
+\lectureframe{01:11:32.360}
+\caption{El término auxiliar sin derivadas \(F^\ast F\) al final de la lagrangiana en componentes.}
+\end{figure}
+
+El lenguaje de los propagadores expresa lo mismo. El operador cuadrático inverso para \(F\) es independiente del momento. Su transformada de Fourier es local:
+\begin{equation}
+\langle F(x)F^\ast(y)\rangle
+\propto \delta^{(4)}(x-y).
+\label{eq:l8-F-contact}
+\end{equation}
+Una línea de \(F\) puede servir para organizar un diagrama, pero sus extremos coinciden. Es una contracción de contacto, no la trayectoria de una partícula física.
+
+\section{El superpotencial cuadrático y las masas iguales}
+
+La propagación provino de un término \(D\). La masa proviene de la integral quiral. Elijamos la normalización convencional
+\begin{equation}
+W_2(\Phi)=\frac12m\Phi^2.
+\end{equation}
+La componente \(\theta^2\) es
+\begin{equation}
+\left.W_2(\Phi)\right|_{\theta^2}
+=m\phi F-\frac12m\psi\psi.
+\end{equation}
+Junto con el término conjugado, la lagrangiana en componentes queda
+\begin{align}
+\mathcal L
+={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F
+\notag\\
+&+m\phi F+m^\ast\phi^\ast F^\ast
+-\frac12m\psi\psi
+-\frac12m^\ast\bar\psi\bar\psi.
+\label{eq:l8-mass-offshell}
+\end{align}
+El bilineal fermiónico es una masa de Majorana para el campo de Weyl. Las ecuaciones de \(F\) son algebraicas:
+\begin{equation}
+F^\ast=-m\phi,
+\qquad
+F=-m^\ast\phi^\ast.
+\label{eq:l8-mass-F-equations}
+\end{equation}
+Al sustituirlas, se obtiene
+\begin{equation}
+\begin{aligned}
+\mathcal L_{\mathrm{on\ shell}}={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi\\
+&-|m|^2|\phi|^2\\
+&-\frac12\left(m\psi\psi+m^\ast\bar\psi\bar\psi\right).
+\end{aligned}
+\label{eq:l8-mass-onshell}
+\end{equation}
+Así, tanto la masa escalar como la masa fermiónica son \(|m|\). En el lenguaje diagramático de la pizarra, un escalar se convierte localmente en \(F\) mediante una inserción de \(m\phi F\) y vuelve de inmediato mediante su conjugada. Dos inserciones aportan \(|m|^2|\phi|^2\), exactamente el término de masa escalar que se obtiene al resolver la ecuación~\eqref{eq:l8-mass-F-equations}.
+
+Ahora podemos precisar la normalización.\editorialnote{En la clase se omiten deliberadamente los coeficientes numéricos al multiplicar supercampos. Los factores \(1/2\), \(1/3\) y \(\sqrt2\) que usamos aquí corresponden a la normalización convencional de Wess--Zumino; hacen exactas las masas y los acoplamientos de las componentes, y conservan cada paso cualitativo de la derivación en la pizarra.}
+
+\section{El superpotencial cúbico y las interacciones}
+
+Añadamos ahora
+\begin{equation}
+W(\Phi)=\frac12m\Phi^2+\frac13g\Phi^3.
+\label{eq:l8-superpotential}
+\end{equation}
+Para un \(W\) holomorfo general, la componente \(F\) es
+\begin{equation}
+\left.W(\Phi)\right|_{\theta^2}
+=F W'(\phi)-\frac12W''(\phi)\psi\psi.
+\label{eq:l8-W-components}
+\end{equation}
+Aquí,
+\begin{equation}
+W'(\phi)=m\phi+g\phi^2,
+\qquad
+W''(\phi)=m+2g\phi.
+\end{equation}
+Antes de eliminar \(F\), el término cúbico contiene
+\begin{equation}
+g\phi^2F-g\phi\psi\psi+\text{h.c.}
+\label{eq:l8-cubic-offshell}
+\end{equation}
+El segundo término es un vértice de Yukawa que conecta un escalar con dos líneas fermiónicas. El primero conecta dos escalares con una línea auxiliar.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95,>=Latex]
+  \coordinate (vone) at (0,0);
+  \draw[->,thick] (-2,1.1) -- (vone);
+  \draw[->,thick] (vone) -- (-2,-1.1);
+  \draw[thick,dashed] (vone) -- (2,0);
+  \node[left] at (-2,1.1) {\(\psi\)};
+  \node[left] at (-2,-1.1) {\(\psi\)};
+  \node[right] at (2,0) {\(\phi\)};
+  \node[below=8pt of vone] {\(-g\phi\psi\psi\)};
+\end{tikzpicture}
+\caption{Redibujo pedagógico de la interacción de Yukawa: dos patas fermiónicas y una pata escalar se unen con un acoplamiento proporcional a \(g\).}
+\end{figure}
+
+La ecuación completa del campo auxiliar es
+\begin{equation}
+F^\ast=-W'(\phi)=-(m\phi+g\phi^2).
+\label{eq:l8-general-F-equation}
+\end{equation}
+Al eliminarlo, se obtiene el potencial escalar
+\begin{equation}
+V(\phi)=|W'(\phi)|^2
+=|m\phi+g\phi^2|^2.
+\label{eq:l8-scalar-potential}
+\end{equation}
+Además del término de masa, contiene términos cúbicos escalares proporcionales a \(m^\ast g\) y un término cuártico
+\begin{equation}
+V(\phi)\supset |g|^2|\phi|^4.
+\label{eq:l8-quartic}
+\end{equation}
+En la representación con líneas auxiliares, dos vértices de \(\phi^2F\) se conectan mediante la contracción local de \(F\). Como la ecuación~\eqref{eq:l8-F-contact} obliga a que sus posiciones coincidan, el resultado es precisamente un vértice de contacto de cuatro escalares.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95]
+  \coordinate (vfour) at (0,0);
+  \foreach \angle in {35,145,215,325}
+    \draw[thick,dashed] (vfour) -- (\angle:1.9);
+  \fill (vfour) circle (1.5pt);
+  \node[below=8pt of vfour] {\(-|g|^2|\phi|^4\)};
+\end{tikzpicture}
+\caption{Una vez eliminado el campo auxiliar, dos vértices locales de \(F\) se convierten en una interacción de contacto de cuatro escalares.}
+\end{figure}
+
+La supersimetría ha hecho más que reunir un bosón y un fermión en una misma teoría. Ha obligado a que sus masas coincidan, ha vinculado el acoplamiento de Yukawa con \(g\) y ha fijado el acoplamiento escalar cuártico en \(|g|^2\). Estas relaciones pueden comprobarse mediante las masas, las amplitudes de dispersión y los decaimientos; no son coincidencias numéricas opcionales.
+
+\section{Efectos de lazos emparejados}
+
+Estas relaciones resultan especialmente útiles cuando las interacciones corrigen las masas de las partículas. La autoenergía escalar recibe una contribución de un lazo bosónico procedente del vértice cuártico y otra de un lazo fermiónico procedente de dos vértices de Yukawa. Cada una lleva dos potencias del mismo acoplamiento. Un lazo fermiónico cerrado tiene el signo relativo negativo que exige la estadística de Fermi.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=Latex,scale=0.9]
+  \begin{scope}[xshift=-3.3cm]
+    \draw[thick,dashed] (-2,0)--(0,0)--(2,0);
+    \draw[thick,dashed] (0,0) .. controls (-0.9,1.7) and (0.9,1.7) .. (0,0);
+    \fill (0,0) circle (1.4pt);
+    \node at (0,-0.55) {bosonic loop};
+  \end{scope}
+  \begin{scope}[xshift=3.3cm]
+    \draw[thick,dashed] (-2,0)--(-0.8,0);
+    \draw[thick,dashed] (0.8,0)--(2,0);
+    \draw[->,thick] (-0.8,0) arc[start angle=180,end angle=0,x radius=0.8,y radius=0.8];
+    \draw[->,thick] (0.8,0) arc[start angle=0,end angle=-180,x radius=0.8,y radius=0.8];
+    \fill (-0.8,0) circle (1.4pt);
+    \fill (0.8,0) circle (1.4pt);
+    \node at (0,-1.35) {fermionic loop};
+  \end{scope}
+\end{tikzpicture}
+\caption{Mecanismos emparejados de autoenergía escalar de la clase. La supersimetría fija los acoplamientos relativos, mientras que el lazo fermiónico cerrado aporta el signo opuesto.}
+\end{figure}
+
+A un lazo, las contribuciones bosónica y fermiónica completas cancelan los términos dominantes sensibles al ultravioleta. La misma simetría organiza los órdenes superiores mediante identidades de Ward y propiedades de no renormalización. La afirmación se refiere a sumas relacionadas por la simetría, no a una cancelación literal, diagrama por diagrama, de todos los gráficos; pueden subsistir la renormalización de la función de onda, los efectos finitos y otras correcciones que preservan la simetría. Esta es la utilidad práctica de construir la teoría en el superspacio: la igualdad de las masas y las relaciones entre los acoplamientos quedan impuestas antes de evaluar cualquier integral de Feynman individual.\editorialnote{La pizarra enuncia la cancelación en términos más generales; el texto principal añade la precisión habitual.}
+
+\section{Lo que sigue}
+
+El modelo que hemos construido es la teoría quiral interactuante más sencilla, llamada comúnmente modelo de Wess--Zumino. Es un ejemplo, no la teoría supersimétrica más general, pero el patrón se mantiene: representar los campos mediante supermultipletes, escribir integrales invariantes en el superspacio y dejar que el desarrollo de Grassmann imponga las relaciones entre componentes.
+
+La supersimetría exacta no se observa en el espectro de partículas observado, así que el siguiente problema es cómo romper la simetría conservando suficiente control ultravioleta para que siga siendo útil. La otra dirección anunciada es la gran unificación: cómo
+\begin{equation}
+SU(3)\times SU(2)\times U(1)
+\end{equation}
+puede encajar en un grupo mayor, como \(SU(5)\), y cómo el contenido de partículas supersimétricas modifica esa unificación. A esas preguntas se dedicarán las clases restantes.
