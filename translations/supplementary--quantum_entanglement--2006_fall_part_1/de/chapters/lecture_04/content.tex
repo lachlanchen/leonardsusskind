@@ -1,0 +1,723 @@
+\chapter{Spin-Geometrie und der erste verschränkte Zustand}
+
+\lectureoverview{Verschränkung gibt es bei Systemen mit mehreren Teilen, doch das Problem zweier Spins lässt sich erst dann sinnvoll behandeln, wenn die Grundlagen für einen einzelnen Spin vollständig sind. Wir beginnen daher mit dem Spin entlang einer beliebigen Achse, leiten die Übergangswahrscheinlichkeit zwischen zwei Richtungen her, deuten die Messung als Filter und bestimmen die Kommutativität als Kriterium für kompatible Observablen. Ein Abzählargument zeigt dann, dass zwei Spins mehr reine Zustände besitzen, als sich durch zwei getrennte Präparationen erzeugen lassen. Diese zusätzlichen Zustände sind verschränkt. Schon das einfachste Beispiel weist bestimmte Korrelationen des Paars auf, obwohl jedes Elektron für sich vollständig unpolarisiert ist.}
+
+\section{Abschluss des Problems eines einzelnen Spins}
+
+Der Satz von Bell kann noch warten. Verschränkung beginnt zwar mit zwei Elektronen, doch die verbleibende Struktur eines einzelnen Elektrons wird in jede Rechnung eingehen. Schließen wir daher zunächst das Zweizustandssystem ab, bevor wir zwei Exemplare davon kombinieren.
+
+Wählen wir einen gewöhnlichen räumlichen Einheitsvektor
+\begin{equation}
+  \hat n=(n_1,n_2,n_3),
+  \qquad
+  n_1^2+n_2^2+n_3^2=1.
+  \label{eq:l04-unit-pointer}
+\end{equation}
+Die Bezeichnungen \(1,2,3\) kann man ebenso gut \(x,y,z\) nennen. Entscheidend ist, dass die Achsen ein einheitliches rechtshändiges Koordinatensystem bilden.
+
+\begin{classroomqa}
+\lecturetimestamp{00:02:33}
+\audiencequestion{Ist das an der Tafel gezeichnete Koordinatentripel rechtshändig?}
+\lecturerresponse{Die erste Skizze ist linkshändig. Eine Umkehrung der zweiten Achse oder eine konsistente Vertauschung zweier Achsen behebt das. Die folgende Rechnung verwendet lediglich eine feste rechtshändige Konvention; die versehentliche Orientierung der Skizze hat keine physikalische Bedeutung.}
+\end{classroomqa}
+
+Der Spin hat drei beobachtbare Komponenten, dargestellt durch die Pauli-Matrizen
+\begin{equation}
+  \begin{aligned}
+    \sigma_1&=
+    \begin{pmatrix}0&1\\1&0\end{pmatrix},
+    &
+    \sigma_2&=
+    \begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.5em]
+    \sigma_3&=
+    \begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+  \end{aligned}
+\end{equation}
+Die Komponente entlang \(\hat n\) ist das gewöhnliche räumliche Skalarprodukt des Richtungszeigers mit diesem matrixwertigen Vektor:
+\begin{equation}
+  \sigma_{\hat n}
+  \equiv
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3.
+  \label{eq:l04-sigma-dot-n}
+\end{equation}
+Dieses Skalarprodukt wird im physikalischen dreidimensionalen Raum gebildet. Es ist nicht das Skalarprodukt zweier Zustandsvektoren.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_02.png}
+\caption{Die räumliche Komponente entlang \(\hat n\) wird zu einer Linearkombination dreier Matrixobservablen.}
+\lectureframe{00:05:09}
+\end{figure}
+
+Setzt man die Pauli-Matrizen ein, erhält man
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3 & n_1-in_2\\
+    n_1+in_2 & -n_3
+  \end{pmatrix}.
+  \label{eq:l04-sigma-n-matrix}
+\end{equation}
+Zur Abkürzung setzen wir
+\begin{equation}
+  n_-=n_1-in_2,
+  \qquad
+  n_+=n_1+in_2=n_-^*,
+\end{equation}
+sodass
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}.
+\end{equation}
+Die reellen Diagonaleinträge und die konjugierten Nebendiagonaleinträge machen den Operator hermitesch.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_03.png}
+\caption{Die Spinobservable entlang einer beliebigen Achse in expliziter Zweimal-zwei-Matrixform.}
+\lectureframe{00:07:34}
+\end{figure}
+
+Operativ bedeutet eine Messung von \(\sigma_{\hat n}\), ein starkes Magnetfeld entlang \(\hat n\) auszurichten und die spinabhängige Reaktion zu beobachten, die in der Vorlesung dadurch dargestellt wird, ob ein Photon emittiert wird. Die Matrix und die experimentelle Frage sind zwei Beschreibungen derselben Messung.
+
+Zwei einfache Identitäten tragen den Rest der Rechnung. Zunächst gilt
+\begin{equation}
+  \sigma_{\hat n}^{\,2}=I.
+  \label{eq:l04-sigma-n-square}
+\end{equation}
+Das folgt entweder durch Multiplikation von Gleichung~\eqref{eq:l04-sigma-n-matrix} mit sich selbst oder aus
+\begin{equation}
+  \sigma_i^2=I,
+  \qquad
+  \sigma_i\sigma_j=-\sigma_j\sigma_i
+  \quad(i\ne j).
+\end{equation}
+Jeder Eigenwert \(\lambda\) von \(\sigma_{\hat n}\) erfüllt daher \(\lambda^2=1\), sodass als einzige mögliche Messergebnisse
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+infrage kommen. Zweitens gilt
+\begin{equation}
+  n_+n_-
+  =n_1^2+n_2^2
+  =1-n_3^2
+  =(1-n_3)(1+n_3).
+  \label{eq:l04-nplus-nminus}
+\end{equation}
+Das ist kein tiefer Satz, aber diese Identität hält die Eigenvektorrechnung übersichtlich.
+
+\section{Von der Präparation zur Wahrscheinlichkeit}
+
+Wir präparieren das Elektron mit Spin \(+1\) entlang \(\hat n\) und messen anschließend entlang einer anderen Richtung \(\hat m\). Die zentrale Frage für einen einzelnen Spin lautet
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  P(\sigma_{\hat m}=+1\mid\sigma_{\hat n}=+1).
+  \label{eq:l04-central-probability}
+\end{equation}
+Aufgrund der Symmetrie sollte die Antwort nur vom Winkel zwischen \(\hat n\) und \(\hat m\) abhängen und sich beim Vertauschen der beiden Richtungen nicht ändern. Diese Erwartungen sind nützliche Plausibilitätsprüfungen, ersetzen aber nicht das Wahrscheinlichkeitspostulat.
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:03}
+\audiencequestion{Sagt uns die Quantenmechanik selbst, dass die drei Pauli-Matrizen Spinoperatoren sind, oder lernt man das aus Experimenten?}
+\lecturerresponse{Diese Zuordnung gehört zur gewachsenen empirischen Grundlage der Quantenmechanik; sie ist nicht das Ergebnis eines einzelnen Experiments. Wiederholte Spinexperimente zeigen probabilistische Gesetzmäßigkeiten, und der Matrixformalismus wurde von Einstein, Born, Heisenberg, Dirac und anderen entwickelt, um diese Gesetzmäßigkeiten zu beschreiben. Die Postulate sind außerordentlich erfolgreiche, durch Daten eingeschränkte Annahmen.}
+\end{classroomqa}
+
+Es sei
+\begin{equation}
+  \sigma_{\hat n}\ket{n,+}=\ket{n,+},
+  \qquad
+  \sigma_{\hat m}\ket{m,+}=\ket{m,+}.
+  \label{eq:l04-nm-eigenstates}
+\end{equation}
+Die Symbole \(n,+\) und \(m,+\) sind Bezeichnungen innerhalb der Kets. Sie kennzeichnen die Eigenzustände mit dem Eigenwert \(+1\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_04.png}
+\caption{Die Eigenzustände zum Eigenwert \(+1\) für den Spin entlang \(\hat n\) und \(\hat m\).}
+\lectureframe{00:17:36}
+\end{figure}
+
+Zunächst berechnen wir die Wahrscheinlichkeitsamplitude
+\begin{equation}
+  \mathcal A(m,+\mid n,+)=\braket{m,+}{n,+}.
+\end{equation}
+Die Wahrscheinlichkeit ist ihr Betragsquadrat:
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \left|\braket{m,+}{n,+}\right|^2.
+  \label{eq:l04-born-nm}
+\end{equation}
+Zuerst die Amplitude, dann die Wahrscheinlichkeit: Diese Reihenfolge ist der entscheidende Quantenschritt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_04_figure_05.png}
+\caption{Das Skalarprodukt zwischen dem präparierten Zustand zum Eigenwert \(n\) und dem geprüften Zustand zum Eigenwert \(m\) ist die Wahrscheinlichkeitsamplitude.}
+\lectureframe{00:19:59}
+\end{figure}
+
+\subsection{Bestimmung des Eigenzustands}
+
+Wir schreiben einen möglichen Eigenvektor zum Eigenwert \(+1\) von \(\sigma_{\hat n}\) als
+\begin{equation}
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix}.
+\end{equation}
+Die Normierung kann warten, und eine globale Phase hat keine physikalische Wirkung. Außerhalb der Koordinatenkarte am Südpol können wir daher \(\alpha=1\) wählen und \(\beta=z\) setzen. Die obere Komponente von
+\begin{equation}
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}
+  \begin{pmatrix}1\\z\end{pmatrix}
+  =
+  \begin{pmatrix}1\\z\end{pmatrix}
+\end{equation}
+liefert
+\begin{equation}
+  n_3+n_-z=1,
+  \qquad
+  z=\frac{1-n_3}{n_-}.
+  \label{eq:l04-z-solution}
+\end{equation}
+Unter Verwendung von Gleichung~\eqref{eq:l04-nplus-nminus} ergibt die untere Komponente dieselbe Bedingung.
+
+Der unnormierte Vektor hat das Normquadrat
+\begin{align}
+  \begin{pmatrix}
+    1&\dfrac{1-n_3}{n_+}
+  \end{pmatrix}
+  \begin{pmatrix}
+    1\\[3pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}
+  &=
+  1+\frac{(1-n_3)^2}{n_+n_-}
+  \notag\\
+  &=
+  1+\frac{1-n_3}{1+n_3}
+  =
+  \frac{2}{1+n_3}.
+  \label{eq:l04-unnormalized-norm}
+\end{align}
+Eine normierte Wahl ist daher
+\begin{equation}
+  \ket{n,+}
+  =
+  \sqrt{\frac{1+n_3}{2}}
+  \begin{pmatrix}
+    1\\[5pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}.
+  \label{eq:l04-normalized-n-state}
+\end{equation}
+Bei \(n_3=-1\) ist dieser Koordinatenausdruck singulär, obwohl der Zustand selbst es nicht ist; der Eigenzustand ist schlicht \(\ket d=(0,1)^T\). Die Singularität gehört zur Phasenkonvention, nicht zum Spin.
+
+Ersetzt man \(n\) durch \(m\) und bildet die Konjugierte, erhält man
+\begin{equation}
+  \bra{m,+}
+  =
+  \sqrt{\frac{1+m_3}{2}}
+  \begin{pmatrix}
+    1&
+    \dfrac{1-m_3}{m_+}
+  \end{pmatrix}.
+\end{equation}
+Das Skalarprodukt sieht unschön aus, und seine Multiplikation mit der konjugierten Größe noch schlimmer. Durch wiederholte Anwendung von Gleichung~\eqref{eq:l04-nplus-nminus} vereinfacht sich das Ergebnis zu
+\begin{equation}
+  \begin{aligned}
+    P(m,+\mid n,+)
+    &=\frac{1+n_1m_1+n_2m_2+n_3m_3}{2}\\
+    &=\frac{1+\hat n\cdot\hat m}{2}.
+  \end{aligned}
+  \label{eq:l04-spin-transition-probability}
+\end{equation}
+Ist \(\theta_{nm}\) der Winkel zwischen den beiden räumlichen Richtungen, so gilt
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \frac{1+\cos\theta_{nm}}{2}
+  =
+  \cos^2\frac{\theta_{nm}}{2}.
+  \label{eq:l04-half-angle-probability}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:32:47}
+\audiencequestion{Muss das Skalarprodukt verschwinden, weil die beiden Zustände orthogonal sind?}
+\lecturerresponse{Nein. Die Bezeichnungen \(m,+\) und \(n,+\) beziehen sich auf verschiedene Messachsen, nicht auf verschiedene Eigenwerte derselben festen Observable. Wenn \(m=n\) gilt, stimmen die beiden Zustände überein und ihr Skalarprodukt ist eins. Orthogonal sind sie nur dann, wenn die physikalischen Richtungen entgegengesetzt sind, sodass der eine Zustand der Zustand \(+1\) und der andere der Zustand \(-1\) derselben Spin-Komponente ist.}
+\end{classroomqa}
+
+\section{Bedeutung der Wahrscheinlichkeitsformel}
+
+Gleichung~\eqref{eq:l04-spin-transition-probability} besteht drei unmittelbare Prüfungen:
+\begin{align}
+  \hat m=\hat n
+  &\quad\Longrightarrow\quad P=1,
+  \notag\\
+  \hat m=-\hat n
+  &\quad\Longrightarrow\quad P=0,
+  \notag\\
+  \hat m\cdot\hat n=0
+  &\quad\Longrightarrow\quad P=\frac12.
+\end{align}
+Die Antwort hängt nur vom Relativwinkel ab und ist symmetrisch unter \(m\leftrightarrow n\). Eine Drehung des gesamten Versuchsaufbaus verändert keine Vorhersage.
+
+Das ist der bemerkenswerte Kompromiss des Spin-ein-halben. Entlang jeder Achse bleibt das beobachtete Ergebnis \(+1\) oder \(-1\); einen gebrochenen Spinwert gibt es nie. Die stetige Abhängigkeit von der Drehung zeigt sich stattdessen in den Wahrscheinlichkeiten dieser beiden diskreten Ergebnisse.
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:20}
+\audiencequestion{Woher wissen wir, dass bei wiederholten Versuchen dasselbe Elektron untersucht wird, und wie misst man eine Wahrscheinlichkeit?}
+\lecturerresponse{Man kann ein einzelnes Elektron in einem Hohlraum einschließen und seine erhaltene Ladung anhand des elektrischen Flusses überwachen, dieses Elektron entlang \(\hat n\) erneut präparieren und die Messung entlang \(\hat m\) wiederholen. Alternativ kann man ein großes Ensemble von Elektronen identisch präparieren und jedes einmal messen. Das Verhältnis der Ergebnisse plus und minus ist im Langzeitmittel bei beiden Verfahren innerhalb des statistischen Fehlers gleich.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:41:29}
+\audiencequestion{Müssen alle Mitglieder des Ensembles in einem gemeinsamen Experiment gemessen werden?}
+\lecturerresponse{Nein. Jedes Mitglied wird nach demselben Verfahren präpariert und einzeln gemessen. Eine Million solcher Versuche bilden nur insofern ein statistisches Experiment, als ihre Ergebnishäufigkeiten dieselbe Wahrscheinlichkeit schätzen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:42:23}
+\audiencequestion{Wie viele Photonen kann ein Elektron emittieren, wenn es wiederverwendet wird?}
+\lecturerresponse{Es gibt kein festes Lebenszeitkontingent. Jeder Zyklus erfordert äußere Arbeit, wenn das Magnetfeld eingeschaltet wird. Befindet sich der Spin in der höherenergetischen Ausrichtung, kann die zugeführte Energie bei der Relaxation als Photon abgegeben werden. Das Gerät kann den Präparations- und Emissionszyklus daher prinzipiell unbegrenzt wiederholen.}
+\end{classroomqa}
+
+Wenn die Rotationsinvarianz bekannt ist, lässt sich die Formel sehr schnell gewinnen: Man wählt \(\hat n\) als dritte Achse, sodass \(\ket{n,+}=(1,0)^T\) gilt, und liest die Wahrscheinlichkeit an der oberen Komponente von \(\ket{m,+}\) ab. Würde man diese Abkürzung von Anfang an verwenden, setzte man jedoch genau jene Symmetrie voraus, die soeben durch die explizite Rechnung gezeigt wurde.
+
+\begin{classroomqa}
+\lecturetimestamp{00:43:33}
+\audiencequestion{Könnte man durch eine bessere Basiswahl die unschönen Eigenvektoren für beliebige Achsen vermeiden?}
+\lecturerresponse{Ja. Sobald Drehungen und unitäre Transformationen zur Verfügung stehen, kann man eine Koordinatenachse an einer der Richtungen ausrichten und die Rechnung vereinfachen. An dieser Stelle hat die explizite Rechnung einen Zweck: Sie bestätigt, dass die gewählten Pauli-Matrizen tatsächlich ein rotationsinvariantes Ergebnis liefern, statt dies einfach vorauszusetzen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:48:30}
+\audiencequestion{Warum hängt das Ergebnis physikalisch nur vom Winkel ab?}
+\lecturerresponse{Die strukturelle Antwort gehört zur Quantentheorie der Symmetrie: Räumliche Drehungen werden durch unitäre Transformationen dargestellt, die auf die Spin-Zustände und -Observablen wirken. Diese Sprache kommt später. Für den Augenblick ist die Winkelabhängigkeit ein Ergebnis, das wir uns durch die Pauli-Matrizen-Rechnung erarbeitet haben.}
+\end{classroomqa}
+
+\section{Die Messung wirkt als Filter}
+
+Eine Messung meldet nicht nur einen Zahlenwert. Misst man \(\sigma_{\hat m}\) und erhält \(+1\), so verbleibt das Elektron im Zustand \(\ket{m,+}\). Der Versuchsaufbau wirkt zugleich als Detektor und als Präparationsvorrichtung – ähnlich wie ein Polarisator ein Photon prüft und das durchgelassene Photon entlang seiner eigenen Achse polarisiert zurücklässt.
+
+Durch diese Zustandsänderungsregel wird die Frage nach gleichzeitigen Messungen konkret. Zwei Observablen können nur dann gleichzeitig reproduzierbare, bestimmte Werte haben, wenn es Zustände gibt, die Eigenvektoren beider Observablen sind.
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:29}
+\audiencequestion{Kann eine Messung zwei verschiedene Spin-Komponenten wie \(\sigma_1\) und \(\sigma_2\) gleichzeitig bestimmen?}
+\lecturerresponse{Nein. Ihre Eigenvektoren sind verschieden. Bei der Messung einer Komponente verbleibt das Elektron in einem Eigenzustand dieser Komponente, der jedoch kein Eigenzustand der anderen ist. Die erste Messung zerstört daher die für die zweite erforderliche Bestimmtheit.}
+\end{classroomqa}
+
+Die allgemeine Aussage für endlichdimensionale Räume formuliert man am einfachsten für hermitesche Operatoren.
+
+\begin{theorem}
+Zwei hermitesche Operatoren \(A\) und \(B\) lassen sich genau dann gleichzeitig diagonalisieren, wenn sie kommutieren:
+\begin{equation}
+  [A,B]\equiv AB-BA=0.
+  \label{eq:l04-commutator}
+\end{equation}
+Äquivalent dazu besitzen sie eine vollständige gemeinsame orthonormale Eigenbasis.
+\end{theorem}
+
+Für die einfache Richtung nehmen wir an,
+\begin{equation}
+  A\ket{\alpha_i}=\lambda_i\ket{\alpha_i},
+  \qquad
+  B\ket{\alpha_i}=\mu_i\ket{\alpha_i}
+\end{equation}
+und zwar bezüglich einer vollständigen Basis. Dann gilt
+\begin{align}
+  AB\ket{\alpha_i}
+  &=\lambda_i\mu_i\ket{\alpha_i},
+  \notag\\
+  BA\ket{\alpha_i}
+  &=\mu_i\lambda_i\ket{\alpha_i},
+\end{align}
+Also stimmen \(AB\) und \(BA\) auf jedem Basisvektor überein. Folglich gilt \(AB=BA\). Umgekehrt lässt bei kommutierenden hermiteschen Operatoren \(A\) und \(B\) der Operator \(B\) jeden Eigenraum von \(A\) invariant. Diagonalisiert man \(B\) innerhalb jedes entarteten Eigenraums, erhält man eine gemeinsame Eigenbasis.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_06.png}
+\caption{Zwei Observablen können dieselben Eigenvektoren haben und ihnen dennoch verschiedene Eigenwerte zuordnen.}
+\lectureframe{00:55:45}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:53:56}
+\audiencequestion{Könnten wir Magnetfelder entlang \(x\) und \(y\) gleichzeitig anlegen und das als gleichzeitige Messung bezeichnen?}
+\lecturerresponse{Die Felder addieren sich zu einer resultierenden Richtung. Das Gerät misst dann den Spin entlang dieser resultierenden Achse, vielleicht unter \(45^\circ\), statt \(\sigma_x\) und \(\sigma_y\) getrennt zu messen. Der Versuch ergibt eine dritte Observable, nicht zwei kompatible Messwerte.}
+\end{classroomqa}
+
+\section{Jeder reine Zustand eines einzelnen Spins hat eine Achse}
+
+Drehen wir das Eigenvektorproblem nun um. Ist ein beliebiger normierter Spinor gegeben,
+\begin{equation}
+  \ket\psi=
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix},
+  \qquad
+  |\alpha|^2+|\beta|^2=1,
+  \label{eq:l04-general-spinor}
+\end{equation}
+gibt es dann eine räumliche Richtung \(\hat n\), für die
+\begin{equation}
+  \sigma_{\hat n}\ket\psi=\ket\psi?
+  \label{eq:l04-reverse-eigenproblem}
+\end{equation}
+gilt? Ja. Zunächst wird im Vortrag durch Abzählen deutlich, warum das so sein sollte. Die beiden komplexen Komponenten enthalten vier reelle Zahlen. Die Normierung entfernt eine, und die physikalisch irrelevante globale Phase eine weitere. Es bleiben zwei. Auch ein Einheits-Richtungszeiger hat zwei unabhängige reelle Parameter, etwa Länge und Breite.
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:52}
+\audiencequestion{Wie kann der Zustand nur zwei Freiheitsgrade haben, wenn \(\alpha\) und \(\beta\) beide komplex sind?}
+\lecturerresponse{Zunächst hat er vier reelle Komponenten. Die Normierungsbedingung entfernt einen reellen Freiheitsgrad, und die Multiplikation des gesamten Zustands mit \(e^{i\theta}\) ändert keine Wahrscheinlichkeit. Die gemeinsame Phase entfernt also einen weiteren. Es bleiben zwei physikalisch bedeutsame Parameter, entsprechend den beiden Winkeln eines Einheits-Richtungszeigers.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:20}
+\audiencequestion{Müssen wir auch den Eigenwert bestimmen?}
+\lecturerresponse{Hier ist der gesuchte Eigenwert auf \(+1\) festgelegt. Wir suchen nur die Richtung, zu der der gegebene Spinor der Auf-Zustand gehört. Der entgegengesetzte Richtungszeiger würde denselben Strahl als Ab-Zustand mit Eigenwert \(-1\) beschreiben.}
+\end{classroomqa}
+
+Die Abzählung erklärt, warum diese Zuordnung existieren sollte. Eine direkte Konstruktion bestätigt es. Wir definieren
+\begin{align}
+  n_1&=\bra\psi\sigma_1\ket\psi
+      =2\operatorname{Re}(\alpha^*\beta),
+  \notag\\
+  n_2&=\bra\psi\sigma_2\ket\psi
+      =2\operatorname{Im}(\alpha^*\beta),
+  \notag\\
+  n_3&=\bra\psi\sigma_3\ket\psi
+      =|\alpha|^2-|\beta|^2.
+  \label{eq:l04-bloch-components}
+\end{align}
+Aus der Normierung folgt \(n_1^2+n_2^2+n_3^2=1\), und direktes Einsetzen ergibt Gleichung~\eqref{eq:l04-reverse-eigenproblem}. Somit ist jeder reine Zustand eines einzelnen Spins ein Spin-Auf-Zustand entlang einer räumlichen Achse.
+
+Die Aussage lässt sich auch operativ formulieren. Man präpariert viele Kopien desselben unbekannten reinen Zustands. Dann misst man entlang verschiedener Richtungen, stellt den Magneten ein und sucht die Richtung, entlang der jedes Ergebnis Auf ist. Endliche Daten bestimmen die Richtung nur mit einer gewissen Unsicherheit; der ideale Zustand hat jedoch eine exakte Achse.
+
+Fragen gehören zu dieser Methode und unterbrechen sie nicht. In einer kurzen Bemerkung aus dem Unterricht wird daran erinnert, dass Zehnjährige unbefangen nach Stringtheorie, zusätzlichen Dimensionen und der Frage gefragt haben, ob Neutrinos in der Umgebung Kopfschmerzen verursachen. Der konkrete Inhalt einer Frage mag falsch sein; den eigenen Punkt der Verwirrung offenzulegen, ist dennoch wertvoll.
+
+\section{Zwei Spins und lokale Operatoren}
+
+Bevor wir zwei Spins kombinieren, halten wir fest, wie die Pauli-Matrizen auf der Basis \(\sigma_3\) wirken:
+\begin{align}
+  \sigma_1\ket u&=\ket d,
+  &
+  \sigma_1\ket d&=\ket u,
+  \notag\\
+  \sigma_2\ket u&=i\ket d,
+  &
+  \sigma_2\ket d&=-i\ket u,
+  \notag\\
+  \sigma_3\ket u&=\ket u,
+  &
+  \sigma_3\ket d&=-\ket d.
+  \label{eq:l04-pauli-action-table}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\linewidth]{lecture_04_figure_07.png}
+\caption{Die Wirkungstabelle der Pauli-Matrizen fasst die Matrizen als Regeln auf der Auf/Ab-Basis zusammen.}
+\lectureframe{01:09:35}
+\end{figure}
+
+Stellen wir uns nun zwei Elektronen an unterscheidbaren Orten vor, sodass sich nur ihre Spins ändern. Die vier Basiszustände sind
+\begin{equation}
+  \ket{uu},
+  \qquad
+  \ket{du},
+  \qquad
+  \ket{ud},
+  \qquad
+  \ket{dd}.
+  \label{eq:l04-two-spin-basis}
+\end{equation}
+Das erste Label gehört zum Elektron \(1\), das zweite zum Elektron \(2\). Sie sind paarweise orthonormal, weil sie verschiedene gemeinsame Ergebnisse der Messungen der dritten Komponenten darstellen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_08.png}
+\caption{Die vier Bezeichnungen der Produktbasis spannen den Zustandsraum zweier Spins auf.}
+\lectureframe{01:11:40}
+\end{figure}
+
+Die Operatoren für Elektron \(1\) nennen wir \(\sigma_i\), die für Elektron \(2\) \(\tau_i\). Genauer gesagt gilt
+\begin{equation}
+  \sigma_i\equiv\sigma_i\otimes I,
+  \qquad
+  \tau_i\equiv I\otimes\sigma_i.
+\end{equation}
+Die erste Operatorenfamilie wirkt nur auf das erste Label, die zweite nur auf das zweite:
+\begin{align}
+  \sigma_1\ket{ud}&=\ket{dd},
+  &
+  \sigma_1\ket{dd}&=\ket{ud},
+  \notag\\
+  \sigma_3\ket{dd}&=-\ket{dd},
+  &
+  \tau_2\ket{ud}&=-i\ket{uu}.
+  \label{eq:l04-local-operator-examples}
+\end{align}
+Ist die Wirkung eines Operators auf die vier Basiszustände bekannt, legt die Linearität seine Wirkung auf jeden Zustand zweier Spins fest.
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:47}
+\audiencequestion{Warum steht der Faktor \(-i\) außerhalb des Kets? Wirkt er auf beide Elektronen?}
+\lecturerresponse{Die Symbole innerhalb des Kets bezeichnen eine Basiskonfiguration. Ein komplexer Skalar multipliziert den gesamten Zustandsvektor und steht daher in der üblichen Schreibweise außerhalb. Hier entsteht er durch die Wirkung von \(\tau_2\) auf das zweite Label; dass er außerhalb steht, bedeutet nicht, dass eine separate physikalische Operation auf beide Elektronen ausgeübt wurde.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:44}
+\audiencequestion{Stellt die Multiplikation mit \(i\) eine Drehung des Elektrons im gewöhnlichen Raum dar?}
+\lecturerresponse{Nicht für sich genommen. Es handelt sich um eine Multiplikation des Zustandsraums mit einem komplexen Skalar. Räumliche Drehungen werden später durch bestimmte unitäre Operatoren dargestellt; ein einzelner Faktor \(i\) in dieser Wirkungstabelle ist keine wörtliche Drehung im realen Raum.}
+\end{classroomqa}
+
+\section{Sechs Parameter, nicht vier}
+
+Ein allgemeiner reiner Zustand des Paars lautet
+\begin{equation}
+  \ket\Psi
+  =
+  c_{uu}\ket{uu}
+  +c_{du}\ket{du}
+  +c_{ud}\ket{ud}
+  +c_{dd}\ket{dd}.
+  \label{eq:l04-general-two-spin-state}
+\end{equation}
+Vier komplexe Koeffizienten ergeben acht reelle Zahlen. Die Normierung entfernt eine, die globale Phase eine weitere:
+\begin{equation}
+  8-1-1=6.
+  \label{eq:l04-two-spin-parameter-count}
+\end{equation}
+Ein separat präparierter reiner Zustand des Elektrons \(1\) benötigt zwei reelle Parameter, und das Elektron \(2\) weitere zwei – insgesamt also nur vier. Die zwei fehlenden Parameter sind kein Rechenfehler. Sie weisen auf reine Zustände des Paars hin, denen sich keine separaten reinen Zustände der einzelnen Teile zuordnen lassen.
+
+Betrachten wir zunächst die Zustände, die aus getrennten Präparationen hervorgehen. Wenn
+\begin{equation}
+  \ket{\psi_1}=\alpha_1\ket u+\beta_1\ket d,
+  \qquad
+  \ket{\psi_2}=\alpha_2\ket u+\beta_2\ket d,
+\end{equation}
+dann gilt
+\begin{align}
+  \ket{\psi_1}\otimes\ket{\psi_2}
+  &=
+  \alpha_1\alpha_2\ket{uu}
+  +\alpha_1\beta_2\ket{ud}
+  \notag\\
+  &\quad
+  +\beta_1\alpha_2\ket{du}
+  +\beta_1\beta_2\ket{dd}.
+  \label{eq:l04-product-expansion}
+\end{align}
+Dies ist ein \emph{Produktzustand}. Jedes Elektron besitzt seine eigene Polarisationsachse, wie auch dann, wenn die beiden magnetischen Präparationen unabhängig voneinander durchgeführt worden wären.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_09.png}
+\caption{Das Tensorprodukt zweier Zustände eines einzelnen Spins ergibt einen eingeschränkten Produktzustand mit vier Termen.}
+\lectureframe{01:25:15}
+\end{figure}
+
+Ordnet man die vier Koeffizienten als
+\begin{equation}
+  C=
+  \begin{pmatrix}
+    c_{uu}&c_{ud}\\
+    c_{du}&c_{dd}
+  \end{pmatrix},
+\end{equation}
+an, so ist der Zustand genau dann ein Produktzustand, wenn \(C\) Rang eins hat, was äquivalent ist zu
+\begin{equation}
+  c_{uu}c_{dd}-c_{ud}c_{du}=0.
+  \label{eq:l04-product-condition}
+\end{equation}
+Die meisten Wahlmöglichkeiten für die vier Amplituden erfüllen diese Bedingung nicht. Sie sind verschränkt.
+
+\section{Der erste verschränkte Zustand}
+
+Das erste Beispiel der Vorlesung ist
+\begin{equation}
+  \ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}+\ket{du}\right).
+  \label{eq:l04-psi-plus}
+\end{equation}
+Es lässt sich nicht in einen Zustand für Elektron \(1\) und einen für Elektron \(2\) faktorisieren. Ergibt eine Messung der dritten Komponente für Elektron \(2\) den Zustand Ab, so ist Elektron \(1\) Auf; ergibt sie für Elektron \(2\) den Zustand Auf, so ist Elektron \(1\) Ab. Das Paar enthält bestimmte Information, die keines der Teilchen für sich besitzt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_10.png}
+\caption{Die erste verschränkte Superposition enthält ein Auf und ein Ab, legt aber keines der Ergebnisse im Voraus einem Teilchen zu.}
+\lectureframe{01:29:30}
+\end{figure}
+
+Um zu sehen, wie jedes Elektron für sich aussieht, berechnen wir die drei lokalen Erwartungswerte. Für die erste Komponente gilt
+\begin{equation}
+  \sigma_1\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{dd}+\ket{uu}\right),
+\end{equation}
+Dieser Zustand ist orthogonal zu \(\ket{\psi_+}\). Daher
+\begin{equation}
+  \bra{\psi_+}\sigma_1\ket{\psi_+}=0.
+\end{equation}
+Entsprechend gilt
+\begin{equation}
+  \sigma_2\ket{\psi_+}
+  =
+  \frac{i}{\sqrt2}
+  \left(\ket{dd}-\ket{uu}\right),
+\end{equation}
+sodass
+\begin{equation}
+  \bra{\psi_+}\sigma_2\ket{\psi_+}=0.
+\end{equation}
+Für die dritte Komponente gilt
+\begin{equation}
+  \sigma_3\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right),
+\end{equation}
+und die beiden Diagonalbeiträge heben einander auf:
+\begin{equation}
+  \bra{\psi_+}\sigma_3\ket{\psi_+}
+  =\frac12(1-1)=0.
+\end{equation}
+Somit gilt
+\begin{equation}
+  \begin{aligned}
+    \bra{\psi_+}\sigma_i\ket{\psi_+}&=0,\\
+    \bra{\psi_+}\tau_i\ket{\psi_+}&=0,
+    \qquad i=1,2,3.
+  \end{aligned}
+  \label{eq:l04-zero-local-spin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_11.png}
+\caption{Der transformierte Zustand und die Auslöschung \(1-1=0\) belegen, dass die lokalen Spin-Erwartungswerte verschwinden.}
+\lectureframe{01:35:50}
+\end{figure}
+
+Für eine beliebige Richtung gilt
+\begin{equation}
+  \bra{\psi_+}\sigma_{\hat n}\ket{\psi_+}=0,
+  \qquad
+  \bra{\psi_+}\tau_{\hat n}\ket{\psi_+}=0.
+  \label{eq:l04-zero-arbitrary-local-spin}
+\end{equation}
+Da es bei jeder lokalen Messung nur die Ergebnisse \(\pm1\) gibt, bedeutet ein Erwartungswert von null
+\begin{equation}
+  P(\sigma_{\hat n}=+1)
+  =
+  P(\sigma_{\hat n}=-1)
+  =
+  \frac12,
+\end{equation}
+und ebenso für das zweite Elektron. Keine Richtung polarisiert eines der Elektronen für sich. Bei einem reinen Zustand eines einzelnen Spins ist das unmöglich, für einen Teil eines verschränkten reinen Zustands aber durchaus möglich.
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:23}
+\audiencequestion{Sind das lokale Ergebnis mit gleichen Wahrscheinlichkeiten und die Tatsache, dass die Messung eines Elektrons uns etwas über das andere verrät, dieselbe Aussage?}
+\lecturerresponse{Nein. Betrachten wir zunächst Elektron \(2\) nicht: Eine Messung entlang einer beliebigen Richtung allein an Elektron \(1\) ergibt eine Verteilung mit gleichen Wahrscheinlichkeiten. Damit ist das Fehlen einer lokalen Polarisation festgestellt. Die Korrelation ist eine eigenständige gemeinsame Aussage darüber, wie die beiden aufgezeichneten Ergebnisse zusammenhängen. Verschränkung bewirkt beides, doch man sollte das eine nicht als Ersatz für den Nachweis des anderen verwenden.}
+\end{classroomqa}
+
+\section{Korrelation vor Bell}
+
+Korrelation allein ist nicht spezifisch quantenmechanisch. Man mischt einen Penny und eine Zehn-Cent-Münze, trennt sie, ohne hinzusehen, und betrachtet eine davon. Vor dem Nachsehen beträgt die Wahrscheinlichkeit, hier den Penny zu haben, für jede Münze fünfzig Prozent. Findet man hier den Penny, weiß man, dass die entfernte Münze die Zehn-Cent-Münze ist. Das Paar enthält bestimmte Information, obwohl keines der Teile für sich diese Information trägt.
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:45}
+\audiencequestion{Funktioniert die Folgerung aus dem Penny und der Zehn-Cent-Münze nur, wenn wir wissen, dass das ursprüngliche Paar genau eine Münze von jeder Sorte enthielt?}
+\lecturerresponse{Genau. Die klassische Folgerung setzt eine verlässliche Präparation voraus. Ebenso gilt eine quantenmechanische Vorhersage für Korrelationen nur dann, wenn das Zwei-Elektronen-System im angegebenen gemeinsamen Zustand präpariert wurde.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:09}
+\audiencequestion{Ist für \(\ket{\psi_+}\) die Wahrscheinlichkeit null, dass beide Messungen der dritten Komponente Auf ergeben? Beweist das, dass die Spins entlang jeder Achse entgegengesetzt sind?}
+\lecturerresponse{In der Basis der dritten Achse ist die Wahrscheinlichkeit für \(uu\) null, und die beiden Ergebnisse der Messung entlang dieser Achse sind entgegengesetzt. Die zweite Schlussfolgerung ist für diesen Zustand mit Pluszeichen jedoch zu stark. Sein lokaler Spin ist in jeder Richtung null, seine gemeinsame Korrelation hängt dagegen von der Richtung ab. Entgegengesetzte Ergebnisse entlang jeder Achse ergeben sich beim Singulett mit Minuszeichen, das am Ende der Vorlesung eingeführt wird.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:51}
+\audiencequestion{Könnte man sich das klassische Paar als zwei Münzen vorstellen, die so miteinander verbunden sind, dass stets die eine eine der anderen entgegengesetzte Seite zeigt?}
+\lecturerresponse{Das wäre ein möglicher klassischer Mechanismus für eine feste Antikorrelation, sofern das Schütteln die Verbindung nicht stört. Es bleibt eine verborgene klassische Anordnung, die bei der Präparation festgelegt wird. Die Analogie ist bewusst vorläufig; der Satz von Bell wird prüfen, woran jede solche klassische Erklärung scheitert.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:32}
+\audiencequestion{Welche Rolle spielt das Gesetz der großen Zahlen, wenn ein Ergebnis das Ergebnis des Partners bereits festlegt?}
+\lecturerresponse{Bedingte Gewissheit ist eine Aussage über einen einzelnen Versuch, wenn der gemeinsame Zustand und ein Ergebnis gegeben sind. Wiederholte Versuche sind dennoch nötig, um experimentell zu prüfen, ob die vorhergesagte Korrelation zuverlässig ist, und um Erwartungswerte sowie unvollkommene Wahrscheinlichkeiten zu schätzen. Das Gesetz der großen Zahlen verknüpft diese wiederholten Häufigkeiten mit der theoretischen Verteilung.}
+\end{classroomqa}
+
+Die beiden Beobachter können sehr weit voneinander entfernt sein. Wenn ein Beobachter ein Ergebnis sieht, verändert das, was er über das andere Ergebnis weiß, sendet dem entfernten Beobachter aber keine steuerbare Nachricht. Bis hierher ähnelt die Situation noch der mit der getrennten Zehn-Cent-Münze und dem Penny.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:46}
+\audiencequestion{Ist das Bild der getrennten Zehn-Cent-Münze und des Pennys die richtige Vorstellung vom Quantenpaar?}
+\lecturerresponse{Es ist der passende erste klassische Vergleich, aber nicht die endgültige quantenmechanische Erklärung. Der Satz von Bell betrifft den messbaren Unterschied zwischen einem Paar mit bereits vorhandenen klassischen Eigenschaften und einem verschränkten Quantenpaar. Dieser Unterschied wird erst behandelt, nachdem die nötigen Korrelationen berechnet worden sind.}
+\end{classroomqa}
+
+\section{Das Singulett und seine Präparation}
+
+Am Ende der Rechnung an der Tafel ersetzen wir das Pluszeichen durch ein Minuszeichen:
+\begin{equation}
+  \ket{\psi_-}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right).
+  \label{eq:l04-singlet}
+\end{equation}
+Dadurch bleiben die lokalen Erwartungswerte in Gleichung~\eqref{eq:l04-zero-local-spin} null, ebenso wie die entgegengesetzten Ergebnisse entlang der dritten Achse. Die gemeinsamen transversalen Korrelationen ändern sich jedoch. Dieser Zustand mit Minuszeichen ist das Spin-Singulett: der rotationssymmetrische Zustand, in dem die beiden Spins entlang jeder gemeinsamen Messachse entgegengesetzt sind.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_12.png}
+\caption{Die letzte Änderung an der Tafel ersetzt die symmetrische Superposition durch das Singulett mit Minuszeichen; der lokale Spin bleibt null.}
+\lectureframe{01:47:25}
+\end{figure}
+
+Im hier verwendeten vereinfachten physikalischen Bild können die magnetischen Momente zweier räumlich lokalisierter Elektronen wechselwirken, wenn man sie nahe genug zusammenbringt. Dabei relaxiert die energiehöhere Ausrichtung durch Emission eines Photons. Ohne bevorzugte äußere Achse wird der niedrigere Spinzustand durch das rotationssymmetrische Singulett beschrieben. Die genaue Wechselwirkung und der Grund dafür, dass die relative Phase negativ sein muss, erfordern eine weitere Rechnung.
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:02}
+\audiencequestion{Besteht die praktische Präparation einfach darin, zwei Elektronen nahe zusammenzubringen und zu warten?}
+\lecturerresponse{In diesem idealisierten Modell: ja. Man lässt die Spin-Spin-Wechselwirkung wirken und ermöglicht die radiative Relaxation in den niedrigeren Zustand. Die Elektronen müssen nur lange genug nahe beieinander sein, damit ihre magnetische Wechselwirkung wirksam wird. Bei einer realen Präparation müssen auch der Bahndrehimpulszustand und konkurrierende Wechselwirkungen kontrolliert werden.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:16}
+\audiencequestion{Ist das nicht einfach das Pauli-Ausschlussprinzip?}
+\lecturerresponse{Nein. Den beiden Elektronen wurden unterscheidbare räumliche Orte zugewiesen, sodass die Betrachtung ihres Spins noch keine Antisymmetrisierung überlappender Orbitalwellenfunktionen erfordert. Das Ausschlussprinzip wird relevant, wenn identische Elektronen überlappende Einteilchenzustände besetzen; das hier vorgebrachte Verschränkungsargument gilt bereits für räumlich getrennte Orte.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:31}
+\audiencequestion{Enthält ein gewöhnlicher Elektronenstrahl von selbst solche wechselwirkenden Paare?}
+\lecturerresponse{In der Regel nicht. Ein Strahl ist dünn, und typische Elektronen bleiben während der verfügbaren Flugzeit zu weit voneinander entfernt, als dass eine nennenswerte Spin-Spin-Wechselwirkung auftreten könnte. Stöße oder eine gezielt einschließende Wechselwirkung können verschränkte Paare erzeugen; allein die Zugehörigkeit zum selben Strahl genügt dafür nicht.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:51:45}
+\audiencequestion{Welcher Abstand ist für die magnetische Wechselwirkung erforderlich?}
+\lecturerresponse{Es gibt keine universelle scharfe Grenze; entscheidend ist die Zeitskala der Wechselwirkung. In der Vorlesung wird für eine schnelle Kopplung eine grobe mikroskopische Größenordnung von \(10^{-11}\,\mathrm{cm}\) angegeben. Bei größerem Abstand ist die Energ Aufspaltung kleiner, das emittierte Photon hat eine längere Wellenlänge, und die Relaxation dauert wesentlich länger. Eine ausreichend lange Wartezeit kann dies prinzipiell ausgleichen, während die Zeit in einem gewöhnlichen Strahl dafür zu kurz ist.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:53:10}
+\audiencequestion{Warum muss der Singulettzustand ein Minuszeichen und kein Pluszeichen enthalten?}
+\lecturerresponse{Aus den lokalen Halb-Halb-Statistiken ist das nicht ersichtlich, denn diese sind für beide Relativphasen identisch. Die Antwort liegt darin, wie sich der Zustand unter Drehungen transformiert und wie die Wechselwirkung den Gesamtspin null auswählt. Die Herleitung folgt in der nächsten Vorlesung.}
+\end{classroomqa}
+
+Der Kurs hat nun die vorgesehene Schwelle überschritten. Ein einzelner reiner Spin hat stets eine bestimmte Aufwärtsachse. Ein reines Paar muss seinen beiden Mitgliedern nicht jeweils einen reinen Zustand zuordnen und kann dennoch exakte Beziehungen zwischen ihren Messergebnissen festlegen. Diese zusätzliche Struktur ist Verschränkung; der Satz von Bell wird zeigen, warum sich all das nicht durch eine klassische Geschichte mit Penny und Zehncentstück reproduzieren lässt.

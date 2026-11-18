@@ -1,0 +1,503 @@
+\chapter{Zustandsvektoren, unitäre Zeitentwicklung und Translationssymmetrie}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+
+Nach einer Pause von zwei Quartalen ist eine kurze Wiederholung der Quantenmechanik sinnvoll. Sie kann nicht das ganze Quartal in Anspruch nehmen. Im Folgenden geht es um die Anwendung der Quantenmechanik auf die Probleme, zu deren Lösung sie ursprünglich entwickelt wurde: Atome, Elektronen und verwandte Teilchen sowie Photonen.
+
+Zunächst betrachten wir Atome. Wie können Atome vor den Elektronen kommen, wenn Elektronen Bestandteile von Atomen sind? Am Anfang brauchen wir nur so viel Elektronenmechanik, dass sich die Grundgleichungen des Wasserstoffatoms aufstellen lassen. Eine ausführlichere Untersuchung elektronenartiger Teilchen kann später folgen. Symmetrie wird in diesen Anwendungen immer wieder eine Rolle spielen: Wir fragen, wie Symmetrien in der Quantenmechanik dargestellt werden und was sie über ein System aussagen.
+
+\section{Zustände, Observablen und Orthogonalität}
+
+In der klassischen Mechanik wird ein Zustand durch einen Punkt im Phasenraum dargestellt. In der Quantenmechanik wird er durch einen Vektor in einem komplexen Vektorraum dargestellt. Dabei handelt es sich um einen abstrakten Vektor, nicht um einen Pfeil im gewöhnlichen dreidimensionalen Raum. Zustandsvektoren lassen sich addieren und mit komplexen Zahlen multiplizieren; der Raum, in dem sie liegen, muss keine bestimmte endliche Dimension haben.
+
+In der Dirac-Notation schreibt man einen Zustandsvektor als Ket,
+\begin{equation}
+\ket{\psi},
+\end{equation}
+und ordnet ihm einen Bra zu,
+\begin{equation}
+\bra{\psi}.
+\end{equation}
+Braš und Kets sind durch hermitesche Konjugation miteinander verknüpft. Bildet man aus einem Bra und einem Ket ein Paar, erhält man ein Skalarprodukt,
+\begin{equation}
+\langle\phi|\psi\rangle,
+\end{equation}
+das im Allgemeinen eine komplexe Zahl ist.
+
+Eine Observable ist eine messbare Größe: etwa Ort, Impuls, Energie oder eine andere messbare Größe. In der Quantenmechanik wird eine Observable durch einen linearen hermiteschen Operator \(A\) dargestellt,
+\begin{equation}
+A^\dagger=A.
+\end{equation}
+Hermitizität ist das Gegenstück zur Realität bei Operatoren. Insbesondere sind die Eigenwerte eines hermiteschen Operators reell.
+
+Ein Eigenvektor von \(A\) erfüllt
+\begin{equation}
+A\ket{\alpha}=\alpha\ket{\alpha}.
+\end{equation}
+Die möglichen Eigenwerte sind die möglichen Ergebnisse einer Messung von \(A\). Kann eine Observable beispielsweise nur die Werte \(1\), \(3\) oder \(7\) annehmen, so sind dies ihre Eigenwerte. Ihre Eigenvektoren sind die Zustände, in denen das Messergebnis feststeht und nicht statistisch verteilt ist. Im Zustand \(\ket{\alpha}\) ergibt eine Messung von \(A\) mit Sicherheit den Wert \(\alpha\).
+
+Das Skalarprodukt bringt eine wichtige logische Beziehung zwischen Zuständen zum Ausdruck. Angenommen, es gibt eine Messung, die \(\ket{\phi}\) mit Sicherheit von \(\ket{\psi}\) unterscheiden kann. Dann sind die Zustände orthogonal:
+\begin{equation}
+\langle\phi|\psi\rangle=0.
+\end{equation}
+Orthogonalität bedeutet, dass sich die Zustände physikalisch eindeutig unterscheiden lassen. Für einen normierten Zustand gilt
+\begin{equation}
+\langle\psi|\psi\rangle=1.
+\end{equation}
+
+\section{Ein Teilchen in der Ortsdarstellung}
+
+Betrachten wir zunächst ein Teilchen, das sich auf einer Geraden bewegt. Sein Ort \(x\) ist eine Observable. Zu jedem möglichen Ort \(x_0\) gibt es einen Zustand \(\ket{x_0}\), in dem eine Ortsmessung mit Sicherheit den Wert \(x_0\) ergibt.
+
+Zustände, die verschiedenen Orten zugeordnet sind, lassen sich unterscheiden und sind daher orthogonal:
+\begin{equation}
+x\neq x'
+\quad\Longrightarrow\quad
+\langle x'|x\rangle=0.
+\end{equation}
+Für einen beliebigen Zustand \(\ket{\psi}\) definiert sein Überlapp mit einem Ortszustand die Wellenfunktion:
+\begin{equation}
+\psi(x)=\langle x|\psi\rangle.
+\end{equation}
+Dies ist die Ortsdarstellung des Zustandsvektors.
+
+Die Wellenfunktion ist selbst keine Wahrscheinlichkeit. Sie kann positiv, negativ, imaginär oder allgemein komplex sein. Die Wahrscheinlichkeitsdichte für den Ort lautet
+\begin{equation}
+P(x)=\psi^*(x)\psi(x)=|\psi(x)|^2.
+\end{equation}
+Das Produkt ist nichtnegativ, wie es für eine Wahrscheinlichkeitsdichte sein muss. Für eine normierte Wellenfunktion gilt
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,|\psi(x)|^2=1.
+\end{equation}
+
+In der Ortsdarstellung wirkt der Ortsoperator durch Multiplikation:
+\begin{equation}
+(\hat x\psi)(x)=x\psi(x).
+\end{equation}
+Seine Eigenfunktionen sind idealisierte Funktionen, die an einem einzigen Punkt konzentriert sind. Formal beschreibt man sie als Dirac-Deltafunktionen: sehr schmale Spitzen, deren Zentrum beim Orts-Eigenwert liegt. Ihre genaue distributionelle Definition benötigen wir für diese Wiederholung nicht.
+
+Im dreidimensionalen Fall hat der Ort drei Komponenten, \(x\), \(y\) und \(z\); ein Ortszustand steht für einen Punkt im dreidimensionalen Raum. Zwei solche Zustände sind orthogonal, sobald sich die Punkte in mindestens einer Koordinate unterscheiden. Meist behalten wir die eindimensionale Notation bei und verstehen die entsprechende Erweiterung auf drei Dimensionen als mitgemeint.
+
+\section{Impuls und Zustände mit bestimmtem Impuls}
+
+Zu jeder Ortskomponente gibt es eine entsprechende Impulskomponente. In der Ortsdarstellung lautet der Impulsoperator entlang der \(x\)-Achse
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+Ein abstrakter hermitescher Operator lässt sich also auch konkret als Operation auf Wellenfunktionen auffassen.
+
+Ein Zustand mit bestimmtem Impuls \(p_0\) erfüllt die Eigenwertgleichung
+\begin{equation}
+\hat p_x\psi_{p_0}(x)=p_0\psi_{p_0}(x).
+\end{equation}
+Setzt man die Differentialform von \(\hat p_x\) ein, erhält man
+\begin{equation}
+-i\hbar\frac{d\psi_{p_0}(x)}{dx}
+=p_0\psi_{p_0}(x).
+\end{equation}
+Die Ableitung der Wellenfunktion ist proportional zur Wellenfunktion selbst, daher hat die Lösung eine Exponentialform:
+\begin{equation}
+\psi_{p_0}(x)\propto
+\exp\left(\frac{ip_0x}{\hbar}\right).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:24:26}
+\audiencequestion{Gilt diese Differentialgleichung für jede Wellenfunktion?}
+\lecturerresponse{Nein. Sie ist die Eigenwertgleichung für einen Zustand mit bestimmtem Impuls. Die meisten Wellenfunktionen erfüllen sie nicht; sie legt die Impulseigenfunktionen fest.}
+\end{classroomqa}
+
+Der Unterschied zwischen Orts- und Impulseigenzuständen ist deutlich. Eine Ortseigenfunktion ist an einem Punkt konzentriert. Bei einer Impulseigenfunktion gilt
+\begin{equation}
+\left|\exp\left(\frac{ip_0x}{\hbar}\right)\right|^2=1.
+\end{equation}
+Ihr Betrag ist daher auf der gesamten Geraden konstant. In diesem idealisierten Sinn bedeutet ein bestimmter Impuls vollständige Unbestimmtheit des Ortes; entsprechend bedeutet ein bestimmter Ort vollständige Unbestimmtheit des Impulses. Dies ist die Extremform der Orts--Impuls-Unschärferelation.
+
+\begin{classroomqa}
+\lecturetimestamp{00:26:36}
+\audiencequestion{Wenn der Impuls als \(p_0\) bekannt ist, warum gibt es dann noch eine Wahrscheinlichkeitsverteilung?}
+\lecturerresponse{Die dargestellte Größe bezieht sich auf eine Ortsmessung, nicht auf eine weitere Impulsmessung. Impuls und Ort sind verschiedene Observablen. Beim idealisierten Impulseigenzustand ist der Betrag der Ortsamplitude auf der gesamten Geraden konstant. Amplituden für den Impuls gehören zur Impulsdarstellung und sind über eine Fourier-Transformation mit der Ortswellenfunktion verknüpft.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:02}
+\audiencequestion{Wie sieht die Ortswahrscheinlichkeit aus, wenn die Wellenfunktion eine Dirac-Deltafunktion ist?}
+\lecturerresponse{Sie ist am angegebenen Ort konzentriert. Die idealisierte Spitze bringt die Gewissheit des Ortes zum Ausdruck.}
+\end{classroomqa}
+
+\editorialnote{Exakte Orts- und Impulseigenzustände sind verallgemeinerte Zustände. Eine Dirac-Deltafunktion und eine ebene Welle sind auf der gesamten Geraden keine gewöhnlichen quadratintegrierbaren normierten Wellenfunktionen; auch das gewöhnliche Quadrat einer Deltafunktion ist keine Distribution. Die obigen Aussagen beziehen sich auf ihre idealisierte Lokalisierung beziehungsweise ihren konstanten Betrag.}
+
+Formal lässt sich eine Wellenfunktion als Vektor mit einer Komponente für jeden Wert von \(x\) auffassen. Anders als ein gewöhnlicher Vektor mit endlich vielen Einträgen hat sie jedoch unendlich viele, stetig indizierte Komponenten.
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:53}
+\audiencequestion{Werden Zustandsvektoren durch Spaltenvektoren dargestellt?}
+\lecturerresponse{Das ist möglich, doch eine Ortswellenfunktion lässt sich nur umständlich als gewöhnlicher Spaltenvektor schreiben, denn \(x\) nimmt kontinuierlich viele Werte an. Formal kann man sie als stetigen Spaltenvektor auffassen und den entsprechenden Bra als stetigen Zeilenvektor.}
+\end{classroomqa}
+
+\section{Zeitentwicklung und Unitarität}
+
+Wie ändert sich ein Zustand mit der Zeit? Die Zeitentwicklung ist eine Transformation im Zustandsraum. Bezeichne \(U(t)\) die Entwicklung während einer verstrichenen Zeitspanne \(t\). Dann gilt
+\begin{equation}
+U(t)\ket{\psi(t_1)}=\ket{\psi(t_1+t)}.
+\end{equation}
+Insbesondere gilt
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)},
+\qquad
+U(0)=\mathbf 1.
+\end{equation}
+
+Die Bedingung an \(U(t)\) folgt aus der Erhaltung der Information. Sind zwei Anfangszustände unterscheidbar, darf die Zeitentwicklung diesen Unterschied nicht auslöschen. Orthogonale Zustände müssen orthogonal bleiben. Allgemeiner bleibt das Skalarprodukt beliebiger Zustände erhalten:
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|\psi\rangle.
+\end{equation}
+Da
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|U^\dagger(t)U(t)|\psi\rangle,
+\end{equation}
+erfordert die Erhaltung sämtlicher Skalarprodukte
+\begin{equation}
+U^\dagger(t)U(t)=\mathbf 1.
+\end{equation}
+Ein Operator, der diese Gleichung erfüllt, heißt unitär.
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:36}
+\audiencequestion{Ist die Erhaltung sämtlicher Skalarprodukte eine stärkere Bedingung als die bloße Erhaltung der Orthogonalität?}
+\lecturerresponse{Bei den hier betrachteten linearen Zustandstransformationen folgt aus der Erhaltung der Orthogonalität die Erhaltung der Skalarprodukte. Eine vertraute Analogie sind gewöhnliche Drehungen: Sie erhalten Orthogonalität und Skalarprodukte.}
+\end{classroomqa}
+
+\editorialnote{Genau genommen lässt die bloße Erhaltung der Orthogonalität eine gemeinsame Skalierung mit einem von null verschiedenen Faktor zu. Die Erhaltung der Normierung, die für physikalische Zeitentwicklung ohnehin erforderlich ist, beseitigt diese Freiheit und führt zur Erhaltung der Skalarprodukte.}
+
+Unitäre Operatoren sind nicht mit hermiteschen Observablen zu verwechseln. Ort und Impuls sind hermitesch, aber im Allgemeinen nicht unitär. Die Eigenwerte eines unitären Operators sind Phasen, also Zahlen der Form \(e^{i\theta}\) auf dem Einheitskreis.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:12}
+\audiencequestion{Was ist ein Beispiel für eine nichtunitäre Transformation?}
+\lecturerresponse{Die Orts- und Impulsoperatoren sind Beispiele: Sie sind hermitesche Observablen, aber nicht unitär. Ein unitärer Operator hat Eigenwerte vom Betrag eins, seine Eigenwerte sind also Phasen.}
+\end{classroomqa}
+
+\section{Der Hamiltonoperator und die Schr\"odinger-Gleichung}
+
+Wir nehmen an, dass die Zeitentwicklung stetig verläuft. Über ein sehr kleines Zeitintervall \(\epsilon\) muss der Zeitentwicklungsoperator daher nahe an der Identität liegen:
+\begin{equation}
+U(\epsilon)=\mathbf 1+\epsilon G+\mathcal O(\epsilon^2).
+\end{equation}
+Aus der Unitarität folgt
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(\mathbf 1+\epsilon G^\dagger\right)
+\left(\mathbf 1+\epsilon G\right)
++\mathcal O(\epsilon^2)
+\\
+&=
+\mathbf 1+\epsilon(G^\dagger+G)
++\mathcal O(\epsilon^2).
+\end{align}
+In erster Ordnung ergibt sich
+\begin{equation}
+G^\dagger=-G.
+\end{equation}
+Damit ist \(G\) antihermitesch. Er lässt sich schreiben als
+\begin{equation}
+G=-\frac{i}{\hbar}H,
+\end{equation}
+wobei \(H\) hermitesch ist:
+\begin{equation}
+H^\dagger=H.
+\end{equation}
+Der infinitesimale Zeitentwicklungsoperator lautet somit
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+Der hermitesche Operator \(H\) ist der Hamiltonoperator.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:48}
+\audiencequestion{Was erlaubt es, den Term \(\epsilon^2\) zu vernachlässigen?}
+\lecturerresponse{Die Rechnung wird durchgängig bis zur ersten Ordnung in \(\epsilon\) geführt. Eine Rechnung zweiter Ordnung müsste alle Terme zweiter Ordnung berücksichtigen, einschließlich des Terms proportional zu \(-\epsilon^2H^2/(2\hbar^2)\). Die Näherung liegt im abgeschnittenen Ausdruck für \(U(\epsilon)\), nicht in der Hermitizität von \(H\).}
+\end{classroomqa}
+
+Ein endliches Zeitintervall lässt sich aus vielen kleinen Intervallen zusammensetzen. Zerlegen wir \(t\) in \(N\) Schritte der Länge \(t/N\). Durch wiederholte Anwendung der infinitesimalen Transformation ergibt sich
+\begin{equation}
+U(t)
+=
+\lim_{N\to\infty}
+\left(
+\mathbf 1-\frac{itH}{N\hbar}
+\right)^N
+=
+\exp\left(-\frac{iHt}{\hbar}\right).
+\end{equation}
+Die Exponentialfunktion ist die endliche Form der infinitesimalen Transformation.
+
+Entwickeln wir nun einen Zustand von \(t\) bis \(t+\epsilon\):
+\begin{align}
+\ket{\psi(t+\epsilon)}
+&=
+U(\epsilon)\ket{\psi(t)}
+\\
+&=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)\ket{\psi(t)}
++\mathcal O(\epsilon^2).
+\end{align}
+Subtrahiert man \(\ket{\psi(t)}\), dividiert durch \(\epsilon\) und bildet den Grenzwert, so erhält man
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+Äquivalent dazu gilt
+\begin{equation}
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=
+H\ket{\psi(t)}.
+\end{equation}
+Dies ist die zeitabhängige Schr\"odinger-Gleichung. In der Ortsdarstellung lautet sie
+\begin{equation}
+i\hbar\frac{\partial}{\partial t}\psi(x,t)
+=
+H\psi(x,t),
+\end{equation}
+wobei \(H\) als Operator auf die Wellenfunktion wirkt.
+
+Die zeitunabhängige Schr\"odinger-Gleichung ist die Eigenwertgleichung des Hamiltonoperators:
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+Die Eigenwerte \(E\) sind die möglichen gemessenen Energien, also die Energieniveaus. Derselbe Hamiltonoperator bestimmt somit sowohl die erlaubten Energien als auch die Entwicklung des Zustands.
+
+Ist der Anfangszustand ein Energieeigenzustand, so entwickelt er sich gemäß
+\begin{equation}
+\ket{E;t}
+=
+\exp\left(-\frac{iEt}{\hbar}\right)\ket{E}.
+\end{equation}
+Er bleibt derselbe Energieeigenvektor und erhält lediglich einen Phasenfaktor.\footnote{Das Minuszeichen ergibt sich aus der vorangegangenen Herleitung von \(U(t)=\exp(-iHt/\hbar)\). Eine spätere mündliche Wiedergabe der Phase weist das entgegengesetzte Vorzeichen auf und widerspricht dieser Herleitung.}
+
+\begin{classroomqa}
+\lecturetimestamp{01:01:05}
+\audiencequestion{Wie entwickelt sich ein Energieeigenvektor gemäß der zeitabhängigen Schr\"odinger-Gleichung?}
+\lecturerresponse{Behalte den Ket bei. Da \(H\ket{E}=E\ket{E}\) gilt, multipliziert die Zeitentwicklung den Energieeigenvektor mit einem durch seine Energie bestimmten Phasenfaktor: \(\exp(-iEt/\hbar)\).}
+\end{classroomqa}
+
+\section{Was gilt als Symmetrie?}
+
+Die Zeitentwicklung ist eine unitäre Transformation im Zustandsraum. Symmetrietransformationen bilden eine weitere wichtige Klasse.
+
+Rotationssymmetrie ist für die Atomphysik zentral. Im Wasserstoffatom bewegt sich das Elektron im zentralen Coulomb-Potential. Eine Drehung des Koordinatensystems ändert die Gleichungen nicht; auch wenn man das Atom physikalisch dreht, bleibt es ein Wasserstoffatom, für das dieselben Gleichungen gelten. Der Zustand kann sich unter der Drehung ändern, das dynamische Gesetz jedoch nicht.
+
+Die Translation liefert ein weiteres Beispiel. Ein isoliertes System im leeren Raum sollte sich gleich verhalten, wenn man alle seine Bestandteile um denselben Betrag verschiebt. Diese Einschränkung ist wichtig. Befindet sich ein Ofen in der Nähe und wird nur das System näher an ihn herangerückt, kann es sich anders verhalten; der Ofen bricht diese Translationssymmetrie. Werden dagegen das System und der Ofen gemeinsam verschoben, ist die ursprüngliche Beziehung zwischen ihnen wiederhergestellt.
+
+Nicht jede Operation ist eine Symmetrie. Wird ein Steinsalzkristall um den Faktor zwei zusammengedrückt, ändert sich sein Verhalten im Allgemeinen. Zusammendrücken ist eine wohldefinierte Transformation, aber im Allgemeinen keine Symmetrie.
+
+Eine Symmetrie ist also eine Operation auf Zuständen, die die Form der Dynamik erhält. Bezeichnen wir sie mit \(V\). Sie muss die Unterscheidbarkeit erhalten: Zwei orthogonale Zustände müssen auch nach der Transformation orthogonal bleiben. Daher gilt
+\begin{equation}
+V^\dagger V=\mathbf 1,
+\end{equation}
+also ist \(V\) unitär.
+
+\section{Symmetrien kommutieren mit der Zeitentwicklung}
+
+Angenommen, ein Anfangszustand \(\ket{\psi_1}\) entwickelt sich zu \(\ket{\psi_2}\):
+\begin{equation}
+\ket{\psi_2}=U(t)\ket{\psi_1}.
+\end{equation}
+Wenden wir eine mögliche Symmetrie \(V\) auf beide Zustände an:
+\begin{equation}
+\ket{\psi_1'}=V\ket{\psi_1},
+\qquad
+\ket{\psi_2'}=V\ket{\psi_2}.
+\end{equation}
+Ist \(V\) eine Symmetrie der Dynamik, muss sich der transformierte Anfangszustand zum transformierten Endzustand entwickeln:
+\begin{equation}
+\ket{\psi_2'}=U(t)\ket{\psi_1'}.
+\end{equation}
+Setzen wir die Definitionen ein, erhalten wir
+\begin{equation}
+VU(t)\ket{\psi_1}
+=
+U(t)V\ket{\psi_1}.
+\end{equation}
+Dies muss für jeden Anfangszustand gelten. Folglich gilt
+\begin{equation}
+VU(t)=U(t)V.
+\end{equation}
+
+Die beiden äquivalenten Wege lassen sich in einem kommutativen Diagramm darstellen.\footnote{Das Diagramm rekonstruiert die Argumentation mit den beiden Wegen, die zwischen 01:10:30 und 01:16:34 entwickelt wurde.}
+\begin{figure}
+\centering
+\begin{tikzpicture}[>=Stealth]
+\node (a) at (0,0) {$\ket{\psi_1}$};
+\node (b) at (4.2,0) {$\ket{\psi_2}=U(t)\ket{\psi_1}$};
+\node (c) at (0,-2.0) {$V\ket{\psi_1}$};
+\node (d) at (4.2,-2.0) {$V\ket{\psi_2}=U(t)V\ket{\psi_1}$};
+
+\draw[->] (a) -- node[above] {$U(t)$} (b);
+\draw[->] (c) -- node[below] {$U(t)$} (d);
+\draw[->] (a) -- node[left] {$V$} (c);
+\draw[->] (b) -- node[right] {$V$} (d);
+\end{tikzpicture}
+\caption{Eine Symmetrieoperation und die Zeitentwicklung führen unabhängig von ihrer Reihenfolge zum selben Endzustand.}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:38}
+\audiencequestion{Muss die Symmetrie für alle Zeiten mit der Zeitentwicklung kommutieren?}
+\lecturerresponse{Ja. Eine Symmetrie der Dynamik muss die Kommutationsbedingung für die vollständige Zeitentwicklung erfüllen.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:13}
+\audiencequestion{Bedeutet das, dass man erst drehen und dann warten kann oder erst warten und dann drehen?}
+\lecturerresponse{Genau. Ist die Drehung eine Symmetrie, so führen beide Reihenfolgen zum selben transformierten Endzustand.}
+\end{classroomqa}
+
+Für ein kleines Zeitintervall gilt
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+Die Kommutationsbedingung wird damit zu
+\begin{equation}
+V\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)
+=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)V
++\mathcal O(\epsilon^2).
+\end{equation}
+Die Identitätsterme heben sich auf, sodass
+\begin{equation}
+VH=HV,
+\end{equation}oder
+\begin{equation}
+[V,H]=0.
+\end{equation}
+Eine unitäre Operation ist also genau dann eine Symmetrie der Dynamik, wenn sie mit dem Hamiltonoperator kommutiert.
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:29}
+\audiencequestion{Was erfordert, dass der Symmetrieoperator \(V\) unitär ist?}
+\lecturerresponse{Eine Symmetrie muss die logischen Unterschiede zwischen Zuständen erhalten. Sie sollte nicht zwei zueinander orthogonale, sich gegenseitig ausschließende Zustände in Zustände überführen, die sich nicht mehr unterscheiden lassen. Die Erhaltung dieser Beziehungen erfordert eine unitäre Transformation.}
+\end{classroomqa}
+
+Ein Operator ohne explizite Zeitabhängigkeit, der mit \(H\) kommutiert, ist eine Erhaltungsgröße. Das stellt den Zusammenhang zwischen Symmetrie und Erhaltung her. In der klassischen Mechanik bringt Noethers Theorem diesen Zusammenhang zum Ausdruck. In der hier betrachteten quantenmechanischen Form ist der entscheidende Test der Kommutator mit dem Hamiltonoperator.
+
+\section{Diskrete und kontinuierliche Symmetrien}
+
+Symmetrien können diskret oder kontinuierlich sein. Eine Spiegelung ist diskret: Sie vertauscht links und rechts; zwischen den beiden gibt es keine Folge infinitesimaler Spiegelungen. Die Vertauschung zweier identischer Teilchen ist eine weitere diskrete Operation. Ein unmarkierter, zweiseitiger Gegenstand, den man umdreht, ist ein Beispiel derselben Art.
+
+Drehungen sind kontinuierlich. Eine Drehung um \(90^\circ\) lässt sich aus vielen kleinen Drehungen um dieselbe Achse zusammensetzen. Räumliche Translationen sind aus demselben Grund kontinuierlich: Eine endliche Verschiebung lässt sich aus vielen winzigen Verschiebungen aufbauen.
+
+Diese Zerlegbarkeit in kleine Transformationen verleiht kontinuierlichen Symmetrien eine besondere Form. In der Nähe der Identität schreiben wir
+\begin{equation}
+V(\epsilon)
+=
+\mathbf 1-i\epsilon G+\mathcal O(\epsilon^2),
+\end{equation}
+wobei \(\epsilon\) den Parameter der Transformation bezeichnet. Aus der Unitarität folgt
+\begin{equation}
+G^\dagger=G.
+\end{equation}
+Der hermitesche Operator \(G\) heißt Erzeuger der Symmetrie.
+
+Ist die Transformation eine Symmetrie, gilt
+\begin{equation}
+[H,V(\epsilon)]=0.
+\end{equation}
+Entwickeln wir bis zur ersten Ordnung, erhalten wir
+\begin{equation}
+[H,G]=0.
+\end{equation}
+Kontinuierliche Symmetrien werden somit durch hermitesche Operatoren erzeugt, die mit dem Hamiltonoperator kommutieren. Diese Erzeuger sind Erhaltungsgrößen.
+
+Das Wort ``erzeugt'' hat hier eine konkrete Bedeutung. Eine endliche Transformation entsteht durch wiederholte Anwendung der infinitesimalen Transformation, so wie eine endliche Zeitentwicklung aus vielen kurzen Zeitschritten aufgebaut wird.
+
+\section{Translationssymmetrie und Impuls}
+
+Betrachten wir eine aktive Translation einer Wellenfunktion um die Strecke \(\epsilon\) nach rechts. Hat die ursprüngliche Wellenfunktion ihr Maximum bei \(x_0\), sollte das Maximum der verschobenen Wellenfunktion bei \(x_0+\epsilon\) liegen. Ihr Wert an der Koordinate \(x\) ist daher gleich dem Wert der ursprünglichen Wellenfunktion bei \(x-\epsilon\):
+\begin{equation}
+(T(\epsilon)\psi)(x)=\psi(x-\epsilon).
+\end{equation}
+Für eine kleine Verschiebung gilt
+\begin{equation}
+\psi(x-\epsilon)
+=
+\psi(x)-\epsilon\frac{d\psi(x)}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+Daher
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\epsilon\frac{d}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+Mit
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx},
+\qquad
+\frac{d}{dx}=\frac{i}{\hbar}\hat p_x,
+\end{equation}
+lautet die infinitesimale Translation
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}\hat p_x
++\mathcal O(\epsilon^2).
+\end{equation}
+Die entsprechende endliche Translation ist
+\begin{equation}
+T(\epsilon)
+=
+\exp\left(-\frac{i\epsilon}{\hbar}\hat p_x\right).
+\end{equation}
+Bei der Konvention \(V(\epsilon)=\mathbf 1-i\epsilon G+\cdots\) ergibt sich für den dimensionsbehafteten Translationsparameter
+\begin{equation}
+G_{\mathrm{trans}}=\frac{\hat p_x}{\hbar}.
+\end{equation}
+Äquivalent dazu sagt man, der Impuls sei der Erzeuger räumlicher Translationen, wenn der Faktor \(\hbar\) in der Exponentialfunktion explizit angegeben wird.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:08}
+\audiencequestion{Ist bei der Herleitung der Translation ein Minuszeichen verloren gegangen?}
+\lecturerresponse{Entscheidend ist, welche Richtung der verschobenen Wellenfunktion zugeordnet wird. Eine aktive Verschiebung nach rechts wird durch \(\psi(x-\epsilon)\) dargestellt, nicht durch \(\psi(x+\epsilon)\). Mit dieser Korrektur gilt \(T(\epsilon)=\mathbf 1-i\epsilon\hat p_x/\hbar+\cdots\).}
+\end{classroomqa}
+
+Ob der Impuls erhalten ist, hängt vom Hamiltonoperator ab. Für ein freies Teilchen, das sich eindimensional bewegt, gilt
+\begin{equation}
+H=\frac{\hat p_x^2}{2m}.
+\end{equation}
+Da jeder Operator mit jeder Funktion von sich selbst kommutiert,
+\begin{equation}
+[H,\hat p_x]=0.
+\end{equation}
+ist der Hamiltonoperator des freien Teilchens translationsinvariant, und \(\hat p_x\) ist erhalten. Physikalisch verhält sich das Teilchen unabhängig davon gleich, wo seine Anfangsposition gewählt wird. Eine Translation der Anfangsbedingung verschiebt die gesamte Bewegung entsprechend.
+
+In drei Dimensionen gilt
+\begin{equation}
+H
+=
+\frac{\hat p_x^2+\hat p_y^2+\hat p_z^2}{2m}.
+\end{equation}
+Jede Impulskomponente kommutiert mit \(H\):
+\begin{equation}
+[H,\hat p_x]=[H,\hat p_y]=[H,\hat p_z]=0.
+\end{equation}
+In jeder Raumrichtung gibt es eine eigene Translationssymmetrie. Der Impuls ist sowohl die Erhaltungsgröße als auch der zu diesen Translationen gehörende Erzeuger.
+
+Als Nächstes betrachten wir die Rotationssymmetrie. Drehungen sind komplizierter, weil Drehungen um verschiedene Achsen im Allgemeinen nicht kommutieren: Eine Drehung um die \(x\)-Achse, gefolgt von einer Drehung um die \(y\)-Achse, ergibt nicht dasselbe wie die umgekehrte Reihenfolge. Daraus folgen nichtkommutierende Symmetrieerzeuger und die gruppentheoretische Struktur der Drehungen.

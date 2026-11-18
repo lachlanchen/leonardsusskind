@@ -1,0 +1,56 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 232,
+  "outline_entries": 96,
+  "target_characters": 185565,
+  "image_placements": 98,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Quantenverschränkung, Teil 3",
+  "pdf_sha256": "ef266802f03a3494a588b5d230b2c55df80be7b3d5e20f206e9694e724a182d9",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 28,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "6d488ab563e55030c66b6b1a3dc3768a27d6f4b90335784458e0f8184d75be8d",
+    "chapters/lecture_01/content.tex": "bb7aeea59431686cf82b698179ac2f9f04575c72616422eb1c01a015d32cf643",
+    "chapters/lecture_02_03/content.tex": "a65b825393f476f4a62b2b4ee9dc704e40179d61732ec5c0a99aabae740a19ef",
+    "chapters/lecture_04/content.tex": "2f6ce0a6ca1cc9e2f05e7345ff21a22fe1573796eab0dd78f24eb0f1ef94152b",
+    "chapters/lecture_05/content.tex": "a75fc5a4968885b76f4b14b7dbf84b7fd611fd042a18f67233a2e2838e393e0b",
+    "chapters/lecture_06/content.tex": "47e18c22f02e54546aea8cbb01d2fda1fa1487ae23177d040c7876b53539bfe9",
+    "chapters/lecture_07/content.tex": "dfdf72d36ae135e86905d6b944601a8857ab6cd22a67a0e0cbd2e40e27a282e6",
+    "chapters/lecture_08/content.tex": "13e20fb67e496eb052527394d9716f771ee547f280cccf55ff2126902e51d4b0",
+    "chapters/lecture_09/content.tex": "542d3d76ba43b68d99f8a48015093d0e586fc1a4df7e7cf125bd4c83ebab9e07"
+  },
+  "source_files": {
+    "course.tex": "356d8ce3183a4c7413b9c336e9a2d8bd28af68d0f32fc281411dd6137903070b",
+    "common_preamble.tex": "7230adaa2c872f88056a832b9a230eaf89d97409c06df43c5abd3be7bb7c6e6d",
+    "chapters/lecture_01/content.tex": "8901a5e94b79043b8683ae3c07a6714b79847789e5762c48cd72e9d9f36d025a",
+    "chapters/lecture_02_03/content.tex": "d5f4018fc88275e090e6b4773153254fd7bbd28504c004b454fb444d72fb2f3f",
+    "chapters/lecture_04/content.tex": "b79226daad0aa91b17e4b2afe6d6e4b98fc52396be779aab36de42d64582b3ab",
+    "chapters/lecture_05/content.tex": "3e7b4248a1a92ec5b0838f3fcbd1c70b542ad61307daf8cff5face134ee911b3",
+    "chapters/lecture_06/content.tex": "ed6739fc900e1b83e609422bcf5a0246a4429759b0de1ebc104649c101391284",
+    "chapters/lecture_07/content.tex": "42d787980d2bd997c18034f22e260e9db3610b2b44586bcd1d5557ab67b90c95",
+    "chapters/lecture_08/content.tex": "57e52781307495b368457421b6d78cc41a563bc01a566b789fd9200862518709",
+    "chapters/lecture_09/content.tex": "a2e052c366902368f82b9b8cc60ec34b86f8d7451d0adc06a04c22b71778c74f"
+  },
+  "translated_tex": {
+    "cover.tex": "01196edf2f24e803c4bb9b55eadd089897628979bf0405a0c68dc6f9f73bd978",
+    "common_preamble.tex": "5025876a446246eb36efa34234e109c572d33381f6808f8ac2b2e450666d22d6",
+    "course.tex": "63cebbca5c2784cf732581b320c716dc4347bca7a6fc6096b5864f92d78786bc",
+    "chapters/lecture_07/content.tex": "e31bce75f843bf7fe4b05aec495a26060512ad9486dd13c87a337c2609c9b4d7",
+    "chapters/lecture_09/content.tex": "029e6846ecea5327a7f7c82672bdc3252c6f71aac4085cd2e8f1646857e1bb12",
+    "chapters/lecture_02_03/content.tex": "3ee5eb8a272565d07e47061d74a7e20076e02df42c0dd5769050e4c4a35d54d9",
+    "chapters/lecture_01/content.tex": "77491a3d0ca3a5eb9d7eaed22f70a618667aff50a1f92dc7f7b62ae8d9cd319f",
+    "chapters/lecture_08/content.tex": "a3dc9af1a5bfa8d450ae29ad0925185b0aa28949794f8597ce2b19254bced180",
+    "chapters/lecture_05/content.tex": "bee03610683056777c6cf4ab117c56f65140adc5022b84a6f0c007ec03494f77",
+    "chapters/lecture_04/content.tex": "23348427991461e573ab07de4697b62bc2f6915c8e023036394e1fa124f3ddf4",
+    "chapters/lecture_06/content.tex": "8bc6efb0bd982b0e161c43429bf50e5f5dcb9027959f59021041f90b0ade4acd"
+  }
+}

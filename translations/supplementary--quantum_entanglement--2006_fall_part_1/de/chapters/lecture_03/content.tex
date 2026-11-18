@@ -1,0 +1,541 @@
+\chapter{Hermitesche Observablen, Spin und die Wahrscheinlichkeitsregel}
+
+\lectureoverview{Die Quantenmechanik ist ein Kalkül für Wahrscheinlichkeiten. Um sie anzuwenden, ohne Verständnis durch Schlagworte zu ersetzen, brauchen wir eine kompakte mathematische Kette: komplexe Phasen, normierte Zustände, hermitesche Observablen, Eigenwerte und Eigenvektoren, Orthogonalität und die Bornsche Regel. Die drei Pauli-Matrizen machen daraus konkrete Vorhersagen für den Elektronenspin.}
+
+\section{Komplexe Zahlen in Polarform}
+
+Beginnen wir damit, eine kleine Quelle algebraischer Umständlichkeit zu beseitigen. Eine komplexe Zahl
+\begin{equation}
+  z=x+iy
+\end{equation}
+ist ein Punkt in der komplexen Ebene, wobei \(x\) auf der reellen und \(y\) auf der imaginären Achse liegt. Hat der Punkt die Polarkoordinaten \((r,\theta)\), so gilt
+\begin{equation}
+  x=r\cos\theta,
+  \qquad
+  y=r\sin\theta,
+\end{equation}
+und damit
+\begin{equation}
+  z=r(\cos\theta+i\sin\theta)=re^{i\theta}.
+  \label{eq:l03-polar-form}
+\end{equation}
+Eulers Schreibweise ist nützlich, weil die Additionstheoreme für Winkel in das Exponentialgesetz eingehen:
+\begin{equation}
+  e^{i\theta}e^{i\phi}
+  =e^{i(\theta+\phi)}.
+  \label{eq:l03-phase-product}
+\end{equation}
+Multipliziert man nämlich die beiden trigonometrischen Darstellungen, erhält man
+\begin{align}
+& (\cos\theta+i\sin\theta)(\cos\phi+i\sin\phi)
+\notag\\
+&\qquad=\cos(\theta+\phi)+i\sin(\theta+\phi).
+\end{align}
+In dieser einen Multiplikation sind alle vertrauten Additionsformeln enthalten.
+
+Die komplexe Konjugation spiegelt den Punkt an der reellen Achse:
+\begin{equation}
+  z^*=x-iy,
+  \qquad
+  (e^{i\theta})^*=e^{-i\theta}.
+\end{equation}
+Folglich gilt
+\begin{equation}
+  e^{i\theta}e^{-i\theta}=1.
+\end{equation}
+Zahlen der Form \(e^{i\theta}\) liegen auf dem Einheitskreis und heißen \emph{reine Phasen}. Jede von null verschiedene komplexe Zahl ist das Produkt aus einem positiven Betrag und einer reinen Phase:
+\begin{equation}
+  z=|z|e^{i\theta},
+  \qquad
+  |z|^2=z^*z=x^2+y^2.
+  \label{eq:l03-modulus-phase}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:36}
+\audiencequestion{Entspricht die Änderung von \(\theta\) zu \(-\theta\) einer Umkehr der Drehrichtung in der komplexen Ebene?}
+\lecturerresponse{Ja. Positive und negative Phasenwinkel durchlaufen den Einheitskreis in entgegengesetzter Richtung. Die komplexe Konjugation macht aus \(e^{i\theta}\) den Ausdruck \(e^{-i\theta}\): den gespiegelten Punkt und die inverse Phase.}
+\end{classroomqa}
+
+Damit haben wir alles, was wir heute an komplexen Zahlen brauchen: Betrag, Phase, Konjugation und den Einheitskreis.
+
+\section{Quantenmechanik als Wahrscheinlichkeitskalkül}
+
+Nun wenden wir uns den Postulaten zu. Ein physikalisches System wird in einem \emph{Zustand} präpariert; bei einer Messung wird nach dem Wert einer \emph{Observablen} gefragt; die Quantenmechanik gibt Wahrscheinlichkeiten für die möglichen Ergebnisse an.
+
+Zustände sind Vektoren in einem komplexen Vektorraum. Für ein Zweiniveau-Spinsystem gilt
+\begin{equation}
+  \ket\psi=\alpha\ket{u}+\beta\ket{d},
+  \qquad
+  \ket{u}=\begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{d}=\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-two-level-state}
+\end{equation}
+Die Koeffizienten bestimmen die Wahrscheinlichkeiten für Spin-up und Spin-down,
+\begin{equation}
+  P(u)=|\alpha|^2,
+  \qquad
+  P(d)=|\beta|^2,
+\end{equation}
+der Zustand muss also normiert sein:
+\begin{equation}
+  \braket{\psi}{\psi}
+  =|\alpha|^2+|\beta|^2
+  =1.
+  \label{eq:l03-state-normalization}
+\end{equation}
+Die Dimension bezeichnet die Zahl der unabhängigen Alternativen im Zustandsraum, nicht die Dimension des gewöhnlichen Raums. Ein System mit drei paarweise exklusiven Basiszuständen würde durch drei orthonormale Spalten und drei Amplituden beschrieben.
+
+Wahrscheinlichkeiten legen die Amplituden nicht vollständig fest. Die Multiplikation mit einer reinen Phase lässt den Betrag unverändert:
+\begin{equation}
+  |e^{i\theta}\alpha|^2=|\alpha|^2.
+\end{equation}
+Die Amplituden enthalten daher Informationen, die über die Wahrscheinlichkeiten in dieser einen Basis hinausgehen. Welche Rolle sie spielen, wird sichtbar, wenn wir verschiedene Messungen und später die zeitliche Entwicklung betrachten.
+
+Die Basiszustände sind orthonormal:
+\begin{equation}
+  \braket{u}{u}=\braket{d}{d}=1,
+  \qquad
+  \braket{u}{d}=\braket{d}{u}=0.
+\end{equation}
+Ihre Orthogonalität gilt im komplexen Zustandsraum. Sie darf vorerst nicht mit zwei Pfeilen verwechselt werden, die im gewöhnlichen dreidimensionalen Raum rechtwinklig zueinander stehen; dieser Unterschied wird gegen Ende der Vorlesung entscheidend.
+
+\section{Warum Observablen hermitesch sind}
+
+Messergebnisse lassen sich als reelle Zahlen festhalten. Der Einfachheit halber können wir zwei reelle Zahlen zu einer komplexen Zahl zusammenfassen, aber Zeigerausschläge lassen sich stets in reelle Größen zerlegen. In endlichdimensionalen Räumen werden Quantenobservablen durch eine besondere Klasse linearer Operatoren dargestellt: hermitesche Matrizen.
+
+Um sie zu definieren, transponieren wir zunächst eine Matrix, indem wir Zeilen und Spalten vertauschen:
+\begin{equation}
+  (M^T)_{ij}=M_{ji}.
+  \label{eq:l03-transpose}
+\end{equation}
+Eine reelle Matrix, die \(M^T=M\) erfüllt, ist symmetrisch. Für komplexe Matrizen entspricht dem die hermitesche Konjugation:
+\begin{equation}
+  M^\dagger=(M^T)^*,
+  \qquad
+  (M^\dagger)_{ij}=M_{ji}^*.
+  \label{eq:l03-dagger}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\linewidth]{lecture_03_figure_02.png}
+\caption{Transposition, Symmetrie und der Übergang zur hermiteschen Konjugation werden gemeinsam an der Tafel dargestellt.}
+\lectureframe{00:23:06}
+\end{figure}
+
+\begin{definition}
+Eine Matrix \(M\) heißt \emph{hermitesch}, wenn
+\begin{equation}
+  M^\dagger=M,
+  \qquad\text{equivalently}\qquad
+  M_{ij}=M_{ji}^*.
+  \label{eq:l03-hermitian}
+\end{equation}
+\end{definition}
+
+Die Diagonaleinträge sind reell, denn \(M_{ii}=M_{ii}^*\). Gespiegelte Einträge außerhalb der Diagonale bilden konjugiert komplexe Paare. Die allgemeine Form einer Zweimal-zwei-Matrix lautet daher
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    a&z\\
+    z^*&b
+  \end{pmatrix},
+  \qquad a,b\in\mathbb R.
+  \label{eq:l03-hermitian-two}
+\end{equation}
+Hermitizität ist das Matrixanalogon einer Realitätsbedingung; sie verlangt nicht, dass jeder einzelne Eintrag reell ist.
+
+Die erste unmittelbare Konsequenz folgt aus zwei elementaren Identitäten für die komplexe Konjugation:
+\begin{equation}
+  \braket{B}{A}=\braket{A}{B}^*,
+  \label{eq:l03-inner-conjugation}
+\end{equation}
+und für beliebige \(M\) gilt
+\begin{equation}
+  \bra B M\ket A
+  =
+  \bigl(\bra A M^\dagger\ket B\bigr)^*.
+  \label{eq:l03-matrix-element-conjugation}
+\end{equation}
+Der Ausdruck \(\bra B M\ket A\) ist eine Zahl, das Matrixelement \(BA\) von \(M\). Ist \(M\) hermitesch und gilt \(B=A\), so folgt
+\begin{equation}
+  \bra A M\ket A
+  =
+  \bigl(\bra A M\ket A\bigr)^*.
+\end{equation}
+Der Ausdruck ist also reell.
+
+\begin{proposition}
+Für jede hermitesche Matrix \(M\) ist der Erwartungswert
+\begin{equation}
+  \expect{M}_A=\bra A M\ket A
+  \label{eq:l03-expectation}
+\end{equation}
+in jedem normierten Zustand \(\ket A\) reell.
+\end{proposition}
+
+Die probabilistische Bedeutung des Erwartungswerts werden wir noch genauer entwickeln. Dass er reell ist, erklärt aber bereits, warum hermitesche Operatoren natürliche Kandidaten für Observablen sind.
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:22}
+Stammt die Winkelklammer-Notation für einen Mittelwert von der Bra-Ket-Notation?\audiencequestion{----?}
+\lecturerresponse{Ja. Die Klammernotation von Dirac liefert dieselben Klammern. In \(\bra A M\ket A\) steht der Operator zwischen dem Bra und dem Ket, die den Zustand darstellen; das Ergebnis ist der Erwartungswert.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:31}
+\audiencequestion{Kann eine physikalische Größe selbst einen imaginären Messwert haben? Wenn Messwerte reell sind, warum braucht man dann in der Quantenmechanik komplexe Zahlen?}
+\lecturerresponse{Eine Menge von Messergebnissen lässt sich immer als Folge reeller Zahlen festhalten, auch wenn wir uns entscheiden, jeweils ein Zahlenpaar als eine komplexe Zahl zusammenzufassen. Die entscheidendere Frage ist, warum die Theorie komplexe Amplituden erfordert. Behalten wir diese Frage im Blick: Die Antwort hängt mit der reversiblen Zeitentwicklung zusammen, die noch nicht eingeführt wurde. Beschränkte man die Theorie auf reelle Vektoren, gingen wichtige Möglichkeiten verloren.}
+\end{classroomqa}
+
+Die Mathematik ist kein Schmuckwerk. Ohne sie kann Verschränkung geheimnisvoll klingen, ohne dass klar ist, was sie bedeutet. Wir bleiben beim einfachstmöglichen Fall, einem Zweiniveausystem, damit wir später zwei solcher Systeme sauber zusammensetzen können.
+
+\section{Eigenwerte sind mögliche Messergebnisse}
+
+\begin{definition}
+Ein von null verschiedener Vektor \(\ket a\) heißt Eigenvektor von \(M\) zum Eigenwert \(\lambda_a\), wenn
+\begin{equation}
+  M\ket a=\lambda_a\ket a.
+  \label{eq:l03-eigenvalue-equation}
+\end{equation}
+\end{definition}
+Die Matrix kann die Länge oder Phase des Vektors ändern, aber sie macht daraus keine andere Richtung im Zustandsraum.
+
+Bei einer hermiteschen Matrix ist der Eigenwert reell. Multiplizieren wir Gleichung~\eqref{eq:l03-eigenvalue-equation} von links mit \(\bra a\), so erhalten wir
+\begin{equation}
+  \bra a M\ket a
+  =\lambda_a\braket{a}{a}.
+\end{equation}
+Die linke Seite ist aufgrund der Hermitizität reell, und die Norm auf der rechten Seite ist reell und positiv. Also gilt
+\begin{equation}
+  \lambda_a
+  =
+  \frac{\bra a M\ket a}{\braket{a}{a}}
+  \in\mathbb R.
+  \label{eq:l03-real-eigenvalue}
+\end{equation}
+
+Nun folgt die physikalische Aussage: Wenn \(M\) eine Observable darstellt, sind ihre Eigenwerte die Werte, die eine Messung von \(M\) ergeben kann. Der zum Eigenwert \(\lambda_a\) gehörende Eigenvektor ist ein Zustand, in dem dieser Wert mit Sicherheit auftritt.
+
+Das einfachste Beispiel ist eine Diagonalmatrix:
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    m_{11}&0\\
+    0&m_{22}
+  \end{pmatrix}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_03.png}
+\caption{Die abstrakte Eigenwertgleichung steht über dem ersten Beispiel einer Diagonalmatrix.}
+\lectureframe{00:44:04}
+\end{figure}
+
+Durch direktes Ausmultiplizieren erhält man
+\begin{align}
+  M\begin{pmatrix}1\\0\end{pmatrix}
+  &=m_{11}\begin{pmatrix}1\\0\end{pmatrix},
+  \notag\\
+  M\begin{pmatrix}0\\1\end{pmatrix}
+  &=m_{22}\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-diagonal-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_04.png}
+\caption{Der untere Basisvektor wird auf sich selbst zurückgeführt und mit dem unteren Diagonaleintrag multipliziert.}
+\lectureframe{00:45:58}
+\end{figure}
+
+Für eine größere Diagonalmatrix gilt dieselbe Regel: Ihre Diagonaleinträge sind Eigenwerte, und ihre üblichen Einheitsvektoren sind Eigenvektoren.
+
+\section{Die drei Spinmatrizen}
+
+Für den Elektronenspin entlang der dritten Achse wählen wir
+\begin{equation}
+  \sigma_3=
+  \begin{pmatrix}
+    1&0\\
+    0&-1
+  \end{pmatrix}.
+\end{equation}
+Die Eigenzustände sind \(\ket u=(1,0)^T\) zum Eigenwert \(+1\) und \(\ket d=(0,1)^T\) zum Eigenwert \(-1\). Die beiden möglichen Detektorwerte sind also die beiden Eigenwerte.
+
+Die Spinmatrix für die erste Achse lautet
+\begin{equation}
+  \sigma_1=
+  \begin{pmatrix}
+    0&1\\
+    1&0
+  \end{pmatrix}.
+\end{equation}
+Ihre möglichen Eigenvektoren schreiben wir zunächst unnormiert hin, denn die Multiplikation eines Eigenvektors mit einem beliebigen von null verschiedenen Skalar lässt ihn ein Eigenvektor bleiben. Physikalische Zustände müssen jedoch normiert sein:
+\begin{align}
+  \ket{x+}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},
+  &
+  \sigma_1\ket{x+}&=+\ket{x+},
+  \notag\\
+  \ket{x-}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix},
+  &
+  \sigma_1\ket{x-}&=-\ket{x-}.
+  \label{eq:l03-sigma-one-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_05.png}
+\caption{Die Matrix mit Nichtdiagonalelementen und der Kandidat mit gleichen Gewichten erscheinen, bevor das Produkt vollständig gebildet ist.}
+\lectureframe{00:50:29}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:45}
+Lassen sich die Eigenvektoren von \audiencequestion{\(\sigma_1\) geometrisch erkennen, statt sie algebraisch zu bestimmen?}
+\lecturerresponse{Im Bild mit zwei reellen Komponenten vertauscht \(\sigma_1\) die Basisrichtungen \(E_1\) und \(E_2\). Die Diagonalrichtung \((1,1)^T\) bleibt fest, während die andere Diagonale \((1,-1)^T\) ihr Vorzeichen wechselt. Sie sind daher Eigenvektoren zu den Eigenwerten \(+1\) und \(-1\). Das ist eine Darstellung im Komponentenraum und noch keine Aussage über den physikalischen Spinzeiger.}
+\end{classroomqa}
+
+Die verbleibende Matrix lautet
+\begin{equation}
+  \sigma_2=
+  \begin{pmatrix}
+    0&-i\\
+    i&0
+  \end{pmatrix},
+\end{equation}
+Ihre normierten Eigenvektoren sind
+\begin{equation}
+  \ket{y+}=\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix},
+  \qquad
+  \ket{y-}=\frac{1}{\sqrt2}\begin{pmatrix}1\\-i\end{pmatrix}.
+  \label{eq:l03-sigma-two-eigenvectors}
+\end{equation}
+Die Eigenwerte sind wieder \(+1\) und \(-1\).
+
+Alle drei Matrizen quadrieren zur Einheitsmatrix:
+\begin{equation}
+  \sigma_1^2=\sigma_2^2=\sigma_3^2=I.
+  \label{eq:l03-pauli-squares}
+\end{equation}
+Wenn \(\sigma_i\ket a=\lambda\ket a\) gilt, ergibt zweimalige Anwendung von \(\sigma_i\) den Ausdruck \(\lambda^2=1\), also gilt \(\lambda=\pm1\). Die identischen Spektren sind ein erstes Anzeichen dafür, dass diese Matrizen Spin-Komponenten entlang gleichwertiger räumlicher Achsen darstellen.
+
+\section{Verschiedene Messergebnisse erfordern orthogonale Zustände}
+
+Bevor wir den nächsten Satz beweisen, erläutern wir seine Bedeutung. Liefert dieselbe Observable in zwei Zuständen jeweils ein anderes sicheres Ergebnis, kann eine Messung dieser Observablen die Zustände perfekt unterscheiden. In der Quantenmechanik wird diese perfekte Unterscheidbarkeit durch Orthogonalität ausgedrückt.
+
+\begin{theorem}
+Sei \(M\) hermitesch, mit
+\begin{equation}
+  M\ket A=\lambda_A\ket A,
+  \qquad
+  M\ket B=\lambda_B\ket B.
+\end{equation}
+Wenn \(\lambda_A\ne\lambda_B\) gilt, dann gilt
+\begin{equation}
+  \braket{B}{A}=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Multiplizieren wir die erste Eigenwertgleichung von links mit \(\bra B\), so erhalten wir
+\begin{equation}
+  \bra B M\ket A=\lambda_A\braket{B}{A}.
+\end{equation}
+Aufgrund der Hermitizität und der zweiten Eigenwertgleichung ergibt sich für dasselbe Matrixelement auch
+\begin{equation}
+  \bra B M\ket A=\lambda_B\braket{B}{A},
+\end{equation}
+denn \(\lambda_B\) ist reell. Durch Subtraktion folgt
+\begin{equation}
+  (\lambda_A-\lambda_B)\braket{B}{A}=0.
+\end{equation}
+Die Eigenwerte sind verschieden, also muss das Skalarprodukt verschwinden.
+\end{proof}
+
+Die Eigenvektoren von \(\sigma_1\) liefern eine unmittelbare Überprüfung:
+\begin{equation}
+  \braket{x+}{x-}
+  =
+  \frac12
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\-1\end{pmatrix}
+  =\frac12-\frac12=0.
+\end{equation}
+Umgekehrt gibt es für zwei orthogonale Zustände eine Messung, die sie unterscheidet. Orthogonalität ist also nicht bloß ein geometrischer Begriff, sondern hat eine operationale Bedeutung.
+
+\section{Das Wahrscheinlichkeitspostulat}
+
+Angenommen, das System wird im normierten Zustand \(\ket B\) präpariert. Sei \(M\) eine Observable und \(\ket A\) ein normierter Eigenvektor von \(M\) zum Eigenwert \(\lambda_A\). Dann ist die Wahrscheinlichkeit, dass eine Messung von \(M\) den Wert \(\lambda_A\) ergibt,
+\begin{equation}
+  P(\lambda_A\mid B)
+  =
+  |\braket{A}{B}|^2
+  =
+  \braket{A}{B}\braket{B}{A}.
+  \label{eq:l03-born-rule}
+\end{equation}
+Das Produkt ist reell und nichtnegativ. Für normierte Vektoren ist es höchstens eins.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_06.png}
+\caption{Die Wahrscheinlichkeitsregel wird als Überlappung multipliziert mit ihrer konjugierten Größe geschrieben.}
+\lectureframe{01:16:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:19}
+Ist das das Quadrat des Kosinus des Winkels zwischen den beiden Zuständen?\audiencequestion{}
+\lecturerresponse{Für reelle Einheitsvektoren im gewöhnlichen euklidischen Raum ist das Skalarprodukt der Kosinus eines Winkels. Hier ist das Skalarprodukt im Allgemeinen komplex; es gibt also keinen gewöhnlichen räumlichen Winkel, dessen Kosinus es wäre. Das passende Analogon ist der Betrag der Überlappung, und die Wahrscheinlichkeit ist ihr Betragsquadrat.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:20:18}
+\audiencequestion{Was ist, wenn der vorbereitete Zustand ein anderer Eigenvektor von \(M\) mit einem anderen Eigenwert ist?}
+\lecturerresponse{Dann sind die beiden Eigenvektoren orthogonal. Ihre Überlappung ist null, also ist die Wahrscheinlichkeit, \(\lambda_A\) zu erhalten, null. Die Präparation eines Zustands mit einem bestimmten Wert schließt einen anderen bestimmten Wert derselben Observablen aus.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:23}
+Kann dieselbe Regel auch eine Präparation behandeln, bei der kein Ergebnis sicher ist?\audiencequestion{}
+\lecturerresponse{Ja. Das ist der allgemeine Fall: \(\ket B\) muss kein Eigenzustand von \(M\) sein. Die Überlappungen mit den normierten Eigenvektoren liefern die Wahrscheinlichkeiten der entsprechenden Ergebnisse. Wir beginnen mit einem Beispiel mit zwei möglichen Ergebnissen, bevor wir kompliziertere Verteilungen behandeln.}
+\end{classroomqa}
+
+In der Vorlesung wird die Regel anhand mehrerer Präparationen eingeübt, statt sie in einer einzigen Formel zu verstecken.
+
+Präparieren wir zunächst \(\sigma_3=+1\):
+\begin{equation}
+  \ket B=\ket{u}=\begin{pmatrix}1\\0\end{pmatrix}.
+\end{equation}
+Messen wir \(\sigma_1\). Für den Eigenvektor zum Eigenwert \(+1\) gilt
+\begin{equation}
+  \braket{x+}{u}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\0\end{pmatrix}
+  =\frac{1}{\sqrt2},
+\end{equation}
+also
+\begin{equation}
+  P(\sigma_1=+1\mid\sigma_3=+1)=\frac12.
+\end{equation}
+Ersetzt man \(\ket{x+}\) durch \(\ket{x-}\), erhält man dieselbe Wahrscheinlichkeit. Auch bei umgekehrter Reihenfolge von Präparation und Messung ergibt sich ein Halb, denn das Betragsquadrat der Überlappung ist symmetrisch.
+
+Für ein wirklich komplexes Beispiel präparieren wir \(\ket{x+}\) und messen \(\sigma_2\). Dann gilt
+\begin{align}
+  \braket{y+}{x+}
+  &=
+  \frac12
+  \begin{pmatrix}1&-i\end{pmatrix}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =\frac{1-i}{2},
+  \notag\\
+  P(\sigma_2=+1\mid\sigma_1=+1)
+  &=\left|\frac{1-i}{2}\right|^2
+  =\frac14+\frac14
+  =\frac12.
+  \label{eq:l03-complex-probability-example}
+\end{align}
+Wird der Spin entlang einer Achse präpariert und entlang einer dazu senkrechten Achse gemessen, sind die Wahrscheinlichkeiten für beide Ergebnisse also gleich.
+
+\section{Zeiger, Zustände und beliebige Achsen}
+
+Der vorhergehende Satz kann missverstanden werden, wenn wir die Begriffe nicht präzisieren. Ein magnetisches Moment hat eine räumliche Richtung, die wir \emph{Zeiger} nennen. Ein Ket ist ein Vektor im komplexen Zustandsraum. Zwei räumliche Zeiger können senkrecht zueinander stehen, während zwei Zustandsvektoren orthogonal sein können. Das sind verschiedene Aussagen über verschiedene Räume.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:25}
+Wenn zwei physikalische Spinrichtungen einen Winkel von neunzig Grad einschließen, sollten ihre Zustandsvektoren dann orthogonal sein?\audiencequestion{}
+\lecturerresponse{Nein. Spin-up-Zustände entlang zueinander senkrechter räumlicher Achsen haben das Überlappungsquadrat \(1/2\) und nicht null. Der zu Spin-up entlang einer Achse orthogonale Zustand ist Spin-down entlang derselben Achse. Wir verwenden \emph{senkrecht} für Zeiger im gewöhnlichen Raum und \emph{orthogonal} für perfekt unterscheidbare Zustände.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:25}
+Könnten wir statt \audiencequestion{linear unabhängig\emph{ auch }orthogonal\emph{ sagen?}}
+\lecturerresponse{Nein. Lineare Unabhängigkeit besagt nur, dass kein Vektor ein skalares Vielfaches der anderen ist; verschwindende Skalarprodukte sind dafür nicht erforderlich. Orthogonalität ist eine stärkere Bedingung und hat hier die physikalische Bedeutung perfekter Unterscheidbarkeit.}
+\end{classroomqa}
+
+Sei \(\hat n=(n_1,n_2,n_3)\) ein Einheitszeiger im gewöhnlichen Raum:
+\begin{equation}
+  n_1^2+n_2^2+n_3^2=1.
+\end{equation}
+Der Operator für den Spin entlang dieser Richtung ist das matrixwertige Analogon eines Skalarprodukts:
+\begin{equation}
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3
+  =
+  \begin{pmatrix}
+    n_3&n_1-in_2\\
+    n_1+in_2&-n_3
+  \end{pmatrix}.
+  \label{eq:l03-spin-arbitrary-axis}
+\end{equation}
+Er ist hermitesch: Die Diagonaleinträge sind reell, und die Einträge außerhalb der Diagonale sind komplex konjugiert.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_03_figure_07.png}
+\caption{Der räumliche Einheitsvektor, die Summe der Operatoren und ihre explizite hermitesche Matrix werden gemeinsam hergeleitet.}
+\lectureframe{01:38:00}
+\end{figure}
+
+Um die möglichen Werte zu bestimmen, quadrieren wir den Operator, bevor wir die Matrixeinträge einsetzen. Die Reihenfolge der Matrizen ist wichtig, daher treten die Kreuzterme als Antikommutatoren auf:
+\begin{align}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  &=
+  n_1^2\sigma_1^2+n_2^2\sigma_2^2+n_3^2\sigma_3^2
+  \notag\\
+  &\quad
+  +n_1n_2(\sigma_1\sigma_2+\sigma_2\sigma_1)
+  \notag\\
+  &\quad
+  +n_2n_3(\sigma_2\sigma_3+\sigma_3\sigma_2)
+  \notag\\
+  &\quad
+  +n_1n_3(\sigma_1\sigma_3+\sigma_3\sigma_1).
+  \label{eq:l03-axis-square-expanded}
+\end{align}
+Verschiedene Pauli-Matrizen antikommutieren:
+\begin{equation}
+  \sigma_i\sigma_j+\sigma_j\sigma_i=0
+  \qquad(i\ne j).
+  \label{eq:l03-pauli-anticommutation}
+\end{equation}
+Die Vorlesung prüft einen Fall explizit nach:
+\begin{equation}
+  \sigma_1\sigma_3
+  =
+  \begin{pmatrix}0&-1\\1&0\end{pmatrix},
+  \qquad
+  \sigma_3\sigma_1
+  =
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  =-\sigma_1\sigma_3.
+  \label{eq:l03-order-check}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_03_figure_08.png}
+\caption{Die Multiplikation von \(\sigma_1\) und \(\sigma_3\) in umgekehrter Reihenfolge ergibt Matrizen, die sich durch ein Minuszeichen unterscheiden.}
+\lectureframe{01:44:50}
+\end{figure}
+
+Die Kreuzterme in Gleichung~\eqref{eq:l03-axis-square-expanded} verschwinden, während \(\sigma_i^2=I\) gilt. Daher
+\begin{equation}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  =(n_1^2+n_2^2+n_3^2)I
+  =I.
+\end{equation}
+Für jeden Eigenwert gilt also \(\lambda^2=1\):
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+Unabhängig davon, welche räumliche Achse das Messgerät auswählt, liefert der Detektor weiterhin nur die beiden Ergebnisse \(+1\) und \(-1\). Der Zusammenhang zwischen benachbarten Richtungen zeigt sich nicht in einem Zwischenwert der Messung, sondern in den Wahrscheinlichkeiten dieser beiden festen Ergebnisse.

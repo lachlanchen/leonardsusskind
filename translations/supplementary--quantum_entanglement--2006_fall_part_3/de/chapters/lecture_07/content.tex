@@ -1,0 +1,342 @@
+\chapter{Geladene Teilchen, Feldtransformationen und relativistische Wellen}
+
+Beim letzten Mal haben wir begonnen zu fragen, wie sich ein geladenes Teilchen in elektrischen und magnetischen Feldern bewegt, wenn man die Relativitätsprinzipien zugrunde legt. Schon das vertraute Lorentzkraftgesetz enthält einen Hinweis: Sein magnetischer Term hängt von der Geschwindigkeit des Teilchens ab. Daher können verschiedene Beobachter nicht unabhängig voneinander darin übereinstimmen, was elektrisch und was magnetisch ist. Unsere Aufgabe ist es, das Gesetz so zu formulieren, dass alle Inertialbeobachter dieselbe Gleichung verwenden, auch wenn sich die Felder und die Teilchengeschwindigkeit von Bezugssystem zu Bezugssystem ändern.
+
+Sofern nichts anderes angegeben ist, verwenden wir Einheiten, in denen \(c=1\) gilt, und die Signatur \((-,-,-,+)\). Die Raumzeitkomponenten sind so angeordnet, dass die drei räumlichen Einträge zuerst stehen: \begin{equation}
+  \mu=(1,2,3,0)=(x,y,z,t).
+\end{equation} Die lateinischen Indizes \(m,n\) laufen nur über die drei räumlichen Richtungen.
+
+\section{Was von Newtons Kraftgesetz erhalten bleibt}
+
+In der Newtonschen Mechanik hat \begin{equation}
+  \boldsymbol F=m\boldsymbol a
+\end{equation} in jedem Inertialsystem dieselbe Form, weil sich Galilei-Beobachter über die Beschleunigung einig sind. Sie ordnen dem Teilchen auch dieselbe Masse und dieselbe Kraft zu. Ändert sich die Kinematik, gibt es keinen Grund zu erwarten, dass gerade diese Beziehung zwischen Kraft und gewöhnlicher Beschleunigung unverändert bestehen bleibt.
+
+Elektromagnetismus und Gravitation zeigen bereits, dass relativistische Erweiterungen einander nicht notwendigerweise ähneln. Das Coulombsche Gesetz und das Newtonsche Gravitationsgesetz sind beide inverse-Quadrat-Gesetze, doch lässt sich die Gravitation ohne eine tiefgreifendere Änderung der Raumzeitgeometrie nicht auf natürliche Weise in die spezielle Relativitätstheorie einbeziehen. Das ist beim Elektromagnetismus möglich. Tatsächlich ist der Magnetismus selbst ein relativistischer Effekt: Stellt man die Faktoren \(c\) wieder her, enthält die magnetische Kraft einen Faktor aus Geschwindigkeit geteilt durch \(c\), und im formalen Grenzfall \(c\to\infty\) verschwindet sie.
+
+Der beständige Kern von Newtons Gesetz ist die Aussage, dass die Kraft die zeitliche Änderungsrate des Impulses ist. Bei konstanter Ruhemasse gilt \begin{equation}
+  \boldsymbol F
+  =m\frac{d\boldsymbol v}{dt}
+  =\frac{d}{dt}(m\boldsymbol v)
+  =\frac{d\boldsymbol p}{dt}.
+\end{equation} Die Relativitätstheorie wird die Beziehung zwischen Impuls und Geschwindigkeit ändern, diese Formulierung der Gleichung aber beibehalten.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_01.png}\caption{Kraft in der Form \(d\boldsymbol p/dt\), während der elektrische Anteil des Lorentzgesetzes an die Tafel geschrieben wird.}\lectureframe{00:08:20}\end{figure}
+
+In Einheiten \(c=1\) lautet das Lorentzkraftgesetz vor der Relativitätstheorie \begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr).
+  \label{eq:lorentz-three}
+\end{equation} Beide Felder können von Ort und Zeit abhängen. Der nichtrelativistische Grenzfall ist nun der Grenzfall \(v\ll 1\), nicht ein Grenzfall, in dem sich die Zahlenkonstante \(c=1\) irgendwie ändert. Der elektrische Term in \eqref{eq:lorentz-three} ist bereits ein gewöhnlicher Vektor. Um den magnetischen Term in eine Form zu bringen, die sich auf die Raumzeit übertragen lässt, müssen wir das Kreuzprodukt noch einmal betrachten.
+
+\section{Das Kreuzprodukt als antisymmetrischer Tensor}
+
+Betrachten wir zwei dreidimensionale Vektoren \(\boldsymbol A\) und \(\boldsymbol B\). Ihr äußeres Produkt \begin{equation}
+  T_{mn}=A_mB_n
+\end{equation} ist ein Tensor zweiter Stufe mit neun Komponenten. Im Allgemeinen besitzt er keine Symmetrie. Die Antisymmetrisierung ergibt \begin{equation}
+  K_{mn}=A_mB_n-A_nB_m,
+  \qquad K_{mn}=-K_{nm}.
+  \label{eq:antisym-product}
+\end{equation} Die Diagonaleinträge verschwinden, und jeder Eintrag unterhalb der Diagonalen ist durch den entsprechenden Eintrag oberhalb davon festgelegt. Ein antisymmetrischer \(3\times3\)-Tensor hat daher nur drei unabhängige Komponenten.
+
+Diese Anzahl ist ein Hinweis, reicht für sich genommen aber nicht aus. Drei Größen transformieren nicht automatisch wie ein Vektor. In drei Dimensionen lassen sich die drei unabhängigen Einträge von \eqref{eq:antisym-product} jedoch mit den Komponenten des Kreuzprodukts \(\boldsymbol C=\boldsymbol A\times\boldsymbol B\) identifizieren. Zunächst trägt die Tafel \(C_2\) vorläufig an der Position oben rechts ein:
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_02.png}\caption{Das antisymmetrische Produkt, während seine drei unabhängigen Einträge den Komponenten von \(\boldsymbol C\) zugeordnet werden. Die Beschriftung oben rechts ist hier noch vorläufig.}\lectureframe{00:17:33}\end{figure}
+
+Aus dem zyklischen Vertauschen \(1\to2\to3\to1\) ergeben sich die Komponentenformeln \begin{align}
+  C_3 &= A_1B_2-A_2B_1, \\
+  C_1 &= A_2B_3-A_3B_2, \\
+  C_2 &= A_3B_1-A_1B_3.
+  \label{eq:cross-components}
+\end{align} Die letzte Zeile zeigt, dass der Eintrag oben rechts \(-C_2\) ist, nicht \(C_2\). Diese Korrektur gehört zum Argument und ist kein Detail, das man übergehen sollte.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_03.png}\caption{Die vervollständigten zyklischen Komponentenbeziehungen legen das vorläufige Vorzeichen in der antisymmetrischen Matrix fest.}\lectureframe{00:21:54}\end{figure}
+
+Die resultierende Matrix lautet \begin{equation}
+  K_{mn}=
+  \begin{pmatrix}
+    0 & C_3 & -C_2 \\
+    -C_3 & 0 & C_1 \\
+    C_2 & -C_1 & 0
+  \end{pmatrix}.
+  \label{eq:cross-matrix}
+\end{equation}
+
+Hinter dieser Schreibweise steckt eine nützliche geometrische Vorstellung. Eine Komponente mit den Indizes \(1,2\) gehört natürlicherweise zur \(xy\)-Ebene und wird mit einer Vektorkomponente entlang der dazu senkrechten \(z\)-Achse identifiziert. Dasselbe orientierte Objekt lässt sich entweder durch eine Ebene oder durch einen Pfeil beschreiben, der senkrecht auf ihr steht. Die Beschreibung durch einen Pfeil ist eine Besonderheit des dreidimensionalen Raums; in höheren Dimensionen gibt es weiterhin einen antisymmetrischen Tensor zweiter Stufe, aber seine Komponentenanzahl stimmt dann nicht mehr mit der eines Vektors überein. Verallgemeinerbar ist daher der Tensor, nicht der senkrechte Pfeil.
+
+Äquivalent gilt, nach Wahl einer Orientierung, \begin{equation}
+  C_k=\frac12\epsilon_{kmn}K_{mn}.
+\end{equation} Die Notwendigkeit, eine Orientierung zu wählen, ist der Ursprung der Rechte-Hand-Regel und der bekannten Unterscheidung zwischen polaren und axialen Vektoren. \editorialnote{Die Levi--Civita-Formel und die Bezeichnung „axialer Vektor“ sind die übliche Notation für die in der Vorlesung ausdrücklich entwickelte Geometrie von Ebene und Flächennormale.}
+
+\section{Das Magnetfeld in Tensorform}
+
+Dieselbe Dualbeschreibung gilt für das Magnetfeld. Wir definieren seinen antisymmetrischen räumlichen Tensor durch \begin{equation}
+  B_{mn}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 \\
+    B_3 & 0 & -B_1 \\
+    -B_2 & B_1 & 0
+  \end{pmatrix}.
+  \label{eq:magnetic-tensor}
+\end{equation} Das zusätzliche globale Vorzeichen gegenüber \eqref{eq:cross-matrix} ist eine Konvention. Ist sie einmal festgelegt, muss sie konsequent verwendet werden; eine Umkehr der Vorzeichen aller drei Vektorkomponenten würde dieselbe Zuordnung von Tensor und Vektor mit der entgegengesetzten Orientierungskonvention beschreiben.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_04.png}\caption{Das Magnetfeld sowohl als antisymmetrische räumliche Matrix als auch in seinen drei Vektorkomponenten.}\lectureframe{00:24:40}\end{figure}
+
+Betrachten wir nun die dritte Komponente des Kreuzprodukts: \begin{align}
+  (\boldsymbol v\times\boldsymbol B)_3
+  &=v_1B_2-v_2B_1 \\
+  &=v_1B_{13}+v_2B_{23}+v_3B_{33}.
+\end{align} Der letzte Term darf hinzugefügt werden, weil \(B_{33}=0\) gilt. Zyklisches Vertauschen der freien Komponente ergibt die kompakte Regel \begin{equation}
+  (\boldsymbol v\times\boldsymbol B)_m=v_nB_{nm},
+  \label{eq:cross-contraction}
+\end{equation} Dabei wird über den wiederholten Index \(n\) summiert. Die magnetische Kraft lautet daher \begin{equation}
+  F_m^{(B)}=qv_nB_{nm}.
+\end{equation}
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.78\textwidth]{lecture_07_figure_05.png}\caption{Die dritte Komponente von \(\boldsymbol v\times\boldsymbol B\) und ihr allgemeiner Ausdruck als Kontraktion mit \(B_{nm}\).}\lectureframe{00:28:30}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Bezeichnet der freie Index \(m\) eine eigene magnetische Kraftkomponente?}\lecturerresponse{Nein. Er bezeichnet die räumliche Kraftkomponente, die gerade berechnet wird. Für das vorliegende Argument wurde das elektrische Feld einfach gleich null gesetzt, und alle Indizes hier laufen nur über die drei räumlichen Richtungen.}\end{classroomqa}
+
+Mit der Tensornotation ergibt sich die Eigenschaft, dass ein Magnetfeld keine Arbeit verrichtet, beinahe von selbst. Wir leiten die quadrierte Geschwindigkeit nach der Zeit ab: \begin{align}
+  \frac{d}{dt}(v_mv_m)
+  &=2\dot v_m v_m \\
+  &\propto 2(\boldsymbol v\times\boldsymbol B)_m v_m \\
+  &=2v_nB_{nm}v_m.
+  \label{eq:speed-derivative}
+\end{align} Terme mit \(m=n\) verschwinden, weil die Diagonale von \(B_{nm}\) null ist. Zu jedem Nebendiagonalterm gibt es einen Partner, bei dem \(m\) und \(n\) vertauscht sind; die beiden heben sich auf, weil \(v_nv_m\) symmetrisch und \(B_{nm}\) antisymmetrisch ist. Somit gilt \begin{equation}
+  \frac{d}{dt}(v_mv_m)=0.
+\end{equation} Eine rein magnetische Kraft krümmt die Bahn, ohne die Geschwindigkeit oder die kinetische Energie zu ändern.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_06.png}\caption{Die gepaarten Terme in \(v_nB_{nm}v_m\) heben sich auf, weil der magnetische Tensor beim Vertauschen seiner Indizes das Vorzeichen wechselt.}\lectureframe{00:35:40}\end{figure}
+
+Dieser Beweis ist bewusst ausführlicher als die Aussage, ein Kreuzprodukt stehe senkrecht auf seinem ersten Faktor. Letztere Aussage ist an die dreidimensionale Vektordarstellung gebunden. Die Kontraktion eines symmetrischen Paares mit einem antisymmetrischen Tensor ist das Argument, das sich auf vier Dimensionen übertragen lässt.
+
+\begin{classroomqa}\audiencequestion{Muss das Magnetfeld zeitunabhängig sein, damit die Geschwindigkeit konstant bleibt?}\lecturerresponse{Die obige Rechnung leitet das Feld an keiner Stelle nach der Zeit ab und setzt \(\partial_t\boldsymbol B=0\) nicht voraus. Ein allein wirkender magnetischer Term verrichtet weiterhin keine Arbeit. In der Elektrodynamik erzeugt ein zeitlich veränderliches Magnetfeld jedoch ein elektrisches Feld, und dieses elektrische Feld kann die Geschwindigkeit des Teilchens ändern.}\end{classroomqa}
+
+\section{Warum sich elektrische und magnetische Felder vermischen müssen}
+
+Die Vermischung von \(\boldsymbol E\) und \(\boldsymbol B\) lässt sich erkennen, noch bevor wir eine vierdimensionale Rechnung durchführen. Betrachten wir eine langsame Bewegung, sodass die gewöhnlichen Newtonschen Aussagen über die Beschleunigung ausreichen. Ein Magnetfeld zeige entlang der \(y\)-Achse, und ein geladenes Teilchen bewege sich entlang der \(x\)-Achse. Die magnetische Kraft zeigt dann entlang der \(z\)-Achse: \begin{equation}
+  \boldsymbol F=q\boldsymbol v\times\boldsymbol B.
+\end{equation}
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_07.png}\caption{Skizze an der Tafel zu einem Teilchen, das sich quer zu einem Magnetfeld bewegt; die drei Richtungen dienen zum Vergleich der Beschreibungen im Labor- und im mitbewegten Bezugssystem.}\lectureframe{00:42:20}\end{figure}
+
+Die Geometrie lässt sich auch ohne die Perspektive des Hörsaals darstellen: \begin{figure}[H]\centering
+\begin{tikzpicture}[scale=1.05,>=Stealth]
+  \draw[->] (0,0) -- (3.8,0) node[right] {\(x\)};
+  \draw[->] (0,0) -- (-1.9,2.4) node[above left] {\(y\)};
+  \draw[->] (0,0) -- (0,3.1) node[above] {\(z\)};
+  \draw[->,very thick] (0,0) -- (2.7,0)
+    node[midway,below] {\(\boldsymbol v\)};
+  \draw[->,very thick] (0,0) -- (-1.35,1.7)
+    node[midway,above left] {\(\boldsymbol B\)};
+  \draw[->,very thick] (0,0) -- (0,2.35)
+    node[midway,right] {\(\boldsymbol F,\ \boldsymbol E'\)};
+\end{tikzpicture}\caption{Im Labor ist die Kraft in \(z\)-Richtung magnetisch; im momentanen mitbewegten Bezugssystem muss dieselbe Kraft elektrisch sein.}\end{figure}
+
+Führen wir nun einen Beobachter ein, der sich in diesem Augenblick mit dem Teilchen bewegt. Die Geschwindigkeit des Teilchens im neuen Bezugssystem ist null, daher verschwindet der magnetische Term \(q\boldsymbol v'\times\boldsymbol B'\). Im Grenzfall langsamer Bewegung müssen sich beide Beobachter dennoch darüber einig sein, dass das Teilchen eine Beschleunigung in \(z\)-Richtung hat. Wenn das Lorentzkraftgesetz in beiden Bezugssystemen dieselbe Form hat, muss der mitbewegte Beobachter die Kraft einem elektrischen Feld \(\boldsymbol E'\) entlang \(z\) zuschreiben. Ein Feld, das im Labor rein magnetisch war, ist im mitbewegten Bezugssystem daher nicht rein magnetisch.
+
+Das ist der physikalische Grund für die Suche nach einem einzigen Objekt, dessen Komponenten beide Felder umfassen. Ein Wechsel des Bezugssystems dreht nicht nur \(\boldsymbol E\) unter seinen eigenen drei Komponenten und \(\boldsymbol B\) unter seinen eigenen drei Komponenten; er vermischt die beiden Gruppen.
+
+\section{Der elektromagnetische Feldtensor}
+
+Zusammen haben elektrische und magnetische Felder sechs Komponenten. Ein antisymmetrischer Tensor in vier Dimensionen besitzt ebenfalls sechs unabhängige Komponenten, denn \begin{equation}
+  \frac{4(4-1)}{2}=6.
+\end{equation} Das bedeutet nicht, dass ein antisymmetrischer Tensor die einzige denkbare Zusammenstellung aus sechs Größen ist: Auch sechs Skalare oder ein Vektor und zwei Skalare würden sechs Zahlen enthalten. Er ist das natürliche geometrische Objekt, dessen Komponenten sich auf die erforderliche Weise vermischen können.
+
+Damit die Konvention an der Tafel ausdrücklich festgehalten ist, schreiben wir den kontravarianten Tensor in der Reihenfolge mit den räumlichen Komponenten zuerst, \((1,2,3,0)\): \begin{equation}
+  F^{\mu\nu}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 & E_1 \\
+    B_3 & 0 & -B_1 & E_2 \\
+    -B_2 & B_1 & 0 & E_3 \\
+    -E_1 & -E_2 & -E_3 & 0
+  \end{pmatrix}.
+  \label{eq:l07-field-tensor}
+\end{equation} Der Block \(3\times3\) oben links ist genau der magnetische Tensor \eqref{eq:magnetic-tensor}; Komponenten mit einem räumlichen und einem Zeitindex enthalten das elektrische Feld. Die übrigen Einträge folgen aus der Antisymmetrie.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_08.png}\caption{Der magnetische räumliche Block und die elektrische Zeit-Raum-Spalte werden zum vierdimensionalen Feldtensor zusammengesetzt.}\lectureframe{00:46:35}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Wann sollten diese Feldkomponenten obere statt untere Indizes tragen?}\lecturerresponse{Bei den drei räumlichen Indizes allein lässt die Tafel den Unterschied manchmal außer Acht, wenn die vertrauten Maxwell--Faraday-Felder identifiziert werden. In einer kovarianten Rechnung muss dieser Unterschied wieder berücksichtigt werden: Das Heben oder Senken eines räumlichen Index ändert gemäß der gewählten Metrikkonvention ein Vorzeichen.}\end{classroomqa}
+
+Invariant ist nicht eine bestimmte Vorzeichenanordnung an der Tafel, sondern der antisymmetrische Raumzeittensor zusammen mit einer konsistenten Metrik- und Indexkonvention. Die Schreibweise \(F\) könnte auf Faraday hindeuten, obwohl die Vorlesung diese historische Zuschreibung nicht mit Sicherheit behauptet. Einstein arbeitete die Transformation elektrischer und magnetischer Komponenten in 1905 aus; die kompakte vierdimensionale Tensorsprache kam mit der späteren, mit Minkowski verbundenen Raumzeitformulierung.
+
+\section{Vierergeschwindigkeit und Viererkraft}
+
+Auch die Teilchenseite der Gleichung muss kovariant formuliert werden. Die Eigenzeit \(\tau\) ist invariant, daher ergibt die Ableitung des Ortsvierervektors nach ihr wieder einen Vierervektor: \begin{equation}
+  u^\mu=\frac{dx^\mu}{d\tau}
+  =\gamma(v_x,v_y,v_z,1),
+  \qquad
+  \gamma=\frac{1}{\sqrt{1-v^2}}.
+  \label{eq:four-velocity}
+\end{equation} Die letzte Komponente folgt aus \(dt/d\tau=\gamma\). Der Viererimpuls ist \begin{equation}
+  p^\mu=mu^\mu,
+\end{equation}; sein räumlicher Anteil ist der relativistische Impuls \(\boldsymbol p=m\gamma\boldsymbol v\).
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_09.png}\caption{Vierergeschwindigkeit, ihre Komponenten, der Lorentzfaktor und der Viererimpuls.}\lectureframe{00:50:30}\end{figure}
+
+Da \(p^\mu\) ein Vierervektor und \(\tau\) ein Skalar ist, lautet die natürliche relativistische linke Seite \begin{equation}
+  f^\mu\equiv\frac{dp^\mu}{d\tau}.
+  \label{eq:four-force-def}
+\end{equation} Die Viererkraft kann nicht beliebig gewählt werden. Die Vierergeschwindigkeit hat den festen Betrag \begin{equation}
+  u_\mu u^\mu=1.
+\end{equation} Entlang der Weltlinie abgeleitet ergibt sich \begin{align}
+  0
+  &=\frac{d}{d\tau}(u_\mu u^\mu) \\
+  &=\frac{du_\mu}{d\tau}u^\mu
+    +u_\mu\frac{du^\mu}{d\tau} \\
+  &=2u_\mu\frac{du^\mu}{d\tau}.
+\end{align} Bei konstanter Masse folgt daraus \begin{equation}
+  f^\mu u_\mu=0.
+  \label{eq:force-orthogonal}
+\end{equation} Die Viererkraft steht somit im Minkowski-Sinn senkrecht auf der Vierergeschwindigkeit. Dies ist eine rein kinematische Bedingung, die aus der Normierung von \(u^\mu\) folgt und keine besondere Eigenschaft des Elektromagnetismus ist.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_10.png}\caption{Der Einheitsnorm der Vierergeschwindigkeit und die daraus folgende Orthogonalität von Viererkraft und Vierergeschwindigkeit.}\lectureframe{00:56:50}\end{figure}
+
+Die dreidimensionale Rechnung zum Magnetismus hat bereits den Kniff geliefert, mit dem sich \eqref{eq:force-orthogonal} erfüllen lässt. Kontrahieren wir einen antisymmetrischen Tensor mit einer Kopie der Geschwindigkeit: \begin{equation}
+  \boxed{
+  \frac{dp^\mu}{d\tau}=qF^{\mu\nu}u_\nu.}
+  \label{eq:covariant-lorentz}
+\end{equation} Tatsächlich gilt \begin{equation}
+  f^\mu u_\mu
+  =qF^{\mu\nu}u_\nu u_\mu=0,
+\end{equation} denn \(F^{\mu\nu}\) ist antisymmetrisch und \(u_\nu u_\mu\) symmetrisch. Dies ist nicht das einzig denkbare relativistische Kraftgesetz, aber das einfachste, das sowohl im elektromagnetischen Feld als auch in der Geschwindigkeit linear ist.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_11.png}\caption{Die kovariante Lorentzkraftgleichung links und rechts ihre verschwindende Kontraktion mit einer zweiten Vierergeschwindigkeit.}\lectureframe{01:00:00}\end{figure}
+
+\section{Die gewöhnliche Lorentzkraft wiedergewinnen}
+
+Eine Gleichung, die kovariant aussieht, muss dennoch das bekannte Kraftgesetz ergeben. Bei der eingangs angegebenen Metrikkonvention gilt \begin{equation}
+  u_\mu=\gamma(-v_x,-v_y,-v_z,1).
+\end{equation} Für die \(x\)-Komponente ergeben \eqref{eq:l07-field-tensor} und \eqref{eq:covariant-lorentz} \begin{align}
+  \frac{dp^1}{d\tau}
+  &=q\bigl(F^{12}u_2+F^{13}u_3+F^{10}u_0\bigr) \\
+  &=q\gamma\bigl(B_3v_y-B_2v_z+E_1\bigr) \\
+  &=q\gamma\bigl[\boldsymbol E+\boldsymbol v\times
+    \boldsymbol B\bigr]_x.
+  \label{eq:x-force}
+\end{align} Die übrigen räumlichen Komponenten folgen durch zyklisches Vertauschen der Indizes.
+
+\begin{classroomqa}\audiencequestion{Wo steckt der Term \(qE_x\) in der Komponentenentwicklung?}\lecturerresponse{Er ist der Term \(qF^{10}u_0\). Eine Feldtensor-Komponente mit einem räumlichen und einem Zeitindex ist eine elektrische Feldkomponente, und \(u_0=\gamma\).}\end{classroomqa}
+
+Der Faktor \(\gamma\) auf der rechten Seite ist keine zusätzliche Kraft. Da \begin{equation}
+  \frac{dp^i}{d\tau}=\frac{dt}{d\tau}\frac{dp^i}{dt}
+  =\gamma\frac{dp^i}{dt},
+\end{equation}, kürzt er sich auf beiden Seiten von \eqref{eq:x-force} heraus. Die exakte räumliche Gleichung lautet daher wieder \begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr),
+  \qquad
+  \boldsymbol p=m\gamma\boldsymbol v.
+  \label{eq:exact-three-force}
+\end{equation} Die vertraute Form bleibt erhalten, aber die Relativität steckt im Impuls.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_12.png}\caption{Das dreidimensionale Lorentzkraftgesetz, nachdem der gemeinsame Eigenzeitfaktor gekürzt wurde; im Impuls bleibt der Faktor \(\gamma\) erhalten.}\lectureframe{01:06:30}\end{figure}
+
+Die Zeitkomponente enthält die entsprechende Energieaussage: \begin{equation}
+  \frac{dp^0}{dt}=q\boldsymbol E\cdot\boldsymbol v,
+\end{equation} Ein Magnetfeld verrichtet also keine Arbeit, während ein elektrisches Feld die Energie des Teilchens ändern kann. \editorialnote{Die Überprüfung der Zeitkomponente ergänzt unmittelbar die räumliche Rechnung der Vorlesung; sie macht dieselbe Eigenschaft, dass das Magnetfeld keine Arbeit verrichtet, in der vierdimensionalen Notation sichtbar.}
+
+\begin{classroomqa}\audiencequestion{Ist diese Herleitung Mathematik oder Physik?}\lecturerresponse{Sie ist beides. Die Tensoralgebra liefert die kompakte Form, doch wesentliche Physik steckt im Prinzip, dass alle Inertialsysteme denselben Gesetzen gehorchen, und in der Annahme, dass die Bewegungsgleichungen zweiter Ordnung sind. Ein Gesetz zweiter Ordnung sagt die Zukunft aus Ort und Geschwindigkeit voraus; ein Gesetz dritter Ordnung würde die Beschleunigung als zusätzliche Anfangsangabe erfordern. Nicht die Notation, sondern das Experiment zeigt uns, welche Art von Gesetz die Natur verwendet.}\end{classroomqa}
+
+\section{Wie sich die Felder transformieren}
+
+Gleichung \eqref{eq:covariant-lorentz} hat in jedem Bezugssystem dieselbe Form, weil beide Seiten Vierervektoren sind. Der Feldtensor selbst transformiert sich mit einer Lorentzmatrix für jeden Index: \begin{equation}
+  F'^{\mu\nu}
+  =\Lambda^\mu{}_{\rho}\Lambda^\nu{}_{\sigma}F^{\rho\sigma}.
+  \label{eq:tensor-transform}
+\end{equation} Die Tafel leitet diese Regel her, indem zunächst ein einfaches Produkt \(A^\mu B^\nu\) transformiert wird. Ist die Regel für ein Produkt von Vektoren bekannt, folgt die Regel für jeden Tensor zweiter Stufe aus der Linearität.
+
+Für einen Boost entlang der \(1\)-Achse transformieren sich die Koordinaten gemäß \begin{align}
+  x'^1&=\gamma(x^1-vx^0), &
+  x'^0&=\gamma(x^0-vx^1), \\
+  x'^2&=x^2, & x'^3&=x^3.
+\end{align} Wenden wir dieselbe Transformation getrennt auf beide Tensorindizes an. Für die zum Boost parallele Komponente beginnt die Tafel mit einem Produkt: \begin{align}
+  (A'^0B'^1)
+  =\gamma^2\bigl(
+     A^0B^1-vA^0B^0-vA^1B^1+v^2A^1B^0
+   \bigr).
+\end{align} Ersetzt man jedes Produkt durch die entsprechende Tensor-Komponente und verwendet dann die Antisymmetrie, \(F^{00}=F^{11}=0\) und \(F^{10}=-F^{01}\), so erhält man \begin{equation}
+  F'^{01}
+  =\gamma^2(1-v^2)F^{01}
+  =F^{01}.
+\end{equation} Die elektrische Feldkomponente parallel zur Bewegung bleibt somit unverändert. Die parallele Magnetfeldkomponente verhält sich entsprechend.
+
+Die transversalen Komponenten verhalten sich anders. Mit der Primstrich-Konvention und der Vorzeichenkonvention der Tafel gilt \begin{align}
+  F'^{02}
+  &=\gamma\bigl(F^{02}-vF^{12}\bigr), \\
+  E'_2
+  &=\gamma(E_2+vB_3).
+  \label{eq:e-transform}
+\end{align} Eine transversale elektrische Komponente erhält einen Anteil einer magnetischen Komponente. Die übrigen Transformationsgesetze folgen aus derselben Regel für beide Indizes und bleiben als Übung der Vorlesung überlassen.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.76\textwidth]{lecture_07_figure_13.png}\caption{Die Transformation des transversalen Tensors: Hier zeigt sich, dass die Komponente \(E'_2\) einen Term proportional zu \(vB_3\) enthält.}\lectureframe{01:23:40}\end{figure}
+
+Das Vorzeichen in \eqref{eq:e-transform} hängt davon ab, welches Bezugssystem sich mit \(+v\) bewegt, und ebenso von den Index- und Metrikkonventionen. Sein invarianter Gehalt bleibt davon unberührt: Transversale elektrische und magnetische Komponenten vermischen sich, und die kovariante Kraftgleichung bleibt nach der Transformation gültig.
+
+\begin{classroomqa}\audiencequestion{Kann man sich bei einem Strom in einem Draht mit einer Geschwindigkeit bewegen, bei der das Magnetfeld verschwindet?}\lecturerresponse{Eine Bewegung mit den Leitungselektronen genügt nicht, denn dann bewegen sich im neuen Bezugssystem die positiven Gitterladungen. Ein stromführender, neutraler Draht ist daher komplizierter als eine einzelne bewegte Ladungsansammlung. Ein rein magnetisches Feld lässt sich nicht vollständig wegtransformieren. Sind sowohl elektrische als auch magnetische Felder vorhanden, können sich ihre transformierten Anteile unter besonderen Umständen aufheben; bei einer einzelnen gleichförmig bewegten Ladung ist ihr Ruhesystem das einfache Bezugssystem, in dem ihr Magnetfeld verschwindet.}\end{classroomqa}
+
+Die präzise Invariantenprüfung verwendet \begin{equation}
+  \boldsymbol B^2-\boldsymbol E^2,
+  \qquad
+  \boldsymbol E\cdot\boldsymbol B.
+\end{equation} Ein Bezugssystem mit \(\boldsymbol B'=0\) kann nur bei einem elektrisch dominierten Feld existieren, für das \(\boldsymbol E\cdot\boldsymbol B=0\) gilt; ein Feld, das in einem Bezugssystem rein magnetisch ist, ist magnetisch dominiert und kann diese Bedingung nicht erfüllen. \editorialnote{Diese Invariantenkriterien formulieren genau die Einschränkung, zu der die Diskussion im Hörsaal gelangt; ihre Herleitung wird aufgeschoben.}
+
+\begin{classroomqa}\audiencequestion{Bilden das elektrische Skalarpotential und das magnetische Vektorpotential einen Vierervektor?}\lecturerresponse{Ja. Mit vorzeichenabhängigen Konventionen vereinen sie sich zum Viererpotential \(A^\mu\). Die Maxwell-Gleichungen werden dieses Objekt systematisch verwenden.}\end{classroomqa}
+
+\section{Ableitungen von Feldern}
+
+Wir betrachten nun nicht mehr die Bahn eines einzelnen Teilchens, sondern ein Feld in der gesamten Raumzeit. Sei \begin{equation}
+  \phi=\phi(x^1,x^2,x^3,x^0)
+\end{equation} ein Skalarfeld. Seine vier Ableitungen bilden die kovarianten Komponenten eines Vierervektors: \begin{equation}
+  \partial_\mu\phi
+  \equiv\frac{\partial\phi}{\partial x^\mu}
+  =\left(
+    \frac{\partial\phi}{\partial x},
+    \frac{\partial\phi}{\partial y},
+    \frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation} Die Anwendung der Kettenregel auf die Lorentz-Transformation der Koordinaten beweist dieses kovariante Transformationsgesetz. Durch das Heben des Index wechseln die räumlichen Vorzeichen, das Zeitvorzeichen bleibt dagegen unverändert: \begin{equation}
+  \partial^\mu\phi
+  =\left(
+    -\frac{\partial\phi}{\partial x},
+    -\frac{\partial\phi}{\partial y},
+    -\frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+
+Jede Ableitung fügt einen unteren Index hinzu. Somit ist \(\partial_\nu V^\mu\) ein Tensor zweiter Stufe mit einem oberen und einem unteren Index, und bei der Ableitung eines Tensors entsteht ein Objekt mit einem zusätzlichen unteren Index. Dies ist die grundlegende Regel, mit der sich Feldgleichungen ohne Wahl eines bevorzugten Inertialsystems formulieren lassen.
+
+\section{Die invariante skalare Wellengleichung}
+
+Die einfachsten Wellengleichungen enthalten zwei Ableitungen. Soll die Gleichung in jedem Inertialsystem dieselbe Form haben, sollte ihre linke Seite ein Skalar sein. Die Kontraktion der Ableitungsindizes liefert die einfachste und zugleich eindeutige Wahl: \begin{equation}
+  \boxed{\partial^\mu\partial_\mu\phi=0.}
+  \label{eq:wave-covariant}
+\end{equation} In der hier verwendeten Signatur ausgeschrieben lauten die Komponenten \begin{equation}
+  \frac{\partial^2\phi}{\partial t^2}
+  -\frac{\partial^2\phi}{\partial x^2}
+  -\frac{\partial^2\phi}{\partial y^2}
+  -\frac{\partial^2\phi}{\partial z^2}=0.
+  \label{eq:wave-components}
+\end{equation} Die Kontraktion in \eqref{eq:wave-covariant} macht die Lorentz-Invarianz unmittelbar sichtbar; Gleichung \eqref{eq:wave-components} ist dieselbe Aussage, komponentenweise ausgeschrieben.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_14.png}\caption{Die kontrahierte Ableitungsform der skalaren Wellengleichung und ihre Komponentenentwicklung mit Zeit- minus Raumanteilen.}\lectureframe{01:39:40}\end{figure}
+
+\begin{classroomqa}\audiencequestion{Muss die rechte Seite der Wellengleichung null sein?}\lecturerresponse{Nein. Sie kann ein beliebiger mit dem Problem verträglicher Skalar sein. Eine Konstante mal \(\phi\) oder eine nichtlineare skalare Funktion wie eine, die proportional zu \(\phi^2\) ist, erhält die Kovarianz. Null ergibt die einfachste freie Wellengleichung.}\end{classroomqa}
+
+Dieses skalare Beispiel dient der Vorbereitung. Die Maxwell-Gleichungen verknüpfen elektrische und magnetische Felder auf komplexere Weise, lassen sich aber ebenfalls so formulieren, dass die Lorentz-Invarianz an ihrer Indexstruktur sichtbar wird. Mit dieser Frage beschäftigen wir uns beim nächsten Mal.

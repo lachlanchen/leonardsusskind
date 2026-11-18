@@ -1,0 +1,690 @@
+\chapter{Zeitentwicklung, Erhaltung und gekoppelte Spins}
+
+Ein Quantenzustand ist kein fester Punkt im Hilbertraum. Mit der Zeit entwickelt er sich, muss dabei aber Normierung, Wahrscheinlichkeiten und die in Skalarprodukten enthaltene Unterscheidbarkeit bewahren. Diese Anforderungen legen die Form der Quantendynamik fast vollständig fest. Aus der Linearität folgt ein Zeitentwicklungsoperator, aus der Erhaltung der Wahrscheinlichkeit seine Unitarität, und eine infinitesimale unitäre Transformation wird durch einen hermiteschen Operator erzeugt. Dieser Operator ist der Hamiltonoperator. Wir leiten aus diesen Aussagen die Schr\"odinger-Gleichung her, betrachten, wie Energieeigenzustände eine Phase ansammeln, und wenden den Formalismus dann auf zwei konkrete Berechnungen an: die Präzession eines Spins in einem Magnetfeld und die Oszillation zwischen zwei Zuständen eines gekoppelten Spinpaars.
+
+\section{Lineare Entwicklung im Hilbertraum}
+
+Der Zustand zum Zeitpunkt \(t\) sei \(\ket{\psi(t)}\). Wir nehmen an, dass er mit dem Zustand zum Zeitpunkt null linear zusammenhängt:
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+Die Linearität ist ein Postulat, kein Satz, der sich aus etwas Grundlegenderem herleiten ließe. Sie ist ein experimentell bewährter Bestandteil der Quantenmechanik; Versuche, sie zu ersetzen, gefährden im Allgemeinen entweder die Wahrscheinlichkeitserhaltung oder Erhaltungssätze. In einer gewählten Basis ist \(U(t)\) einfach eine zeitabhängige Matrix.
+
+Für den Dualvektor gilt die konjugierte Regel. Wenn
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)},
+\end{equation}
+dann gilt
+\begin{equation}
+\bra{\phi(t)}=\bra{\phi(0)}U^\dagger(t).
+\end{equation}
+Bei einer Matrix bedeutet das Dagger-Zeichen komplexe Konjugation mit anschließender Transposition. Das Bra folgt also demselben Entwicklungsgesetz wie das Ket, ausgedrückt im Dualraum.
+
+\subsection{Wahrscheinlichkeitserhaltung impliziert Unitarität}
+
+Ein normierter Zustand repräsentiert die Gesamtwahrscheinlichkeit eins:
+\begin{equation}
+\braket{\psi(t)}{\psi(t)}=1.
+\end{equation}
+Die Zeitentwicklung muss diese Norm erhalten. Tatsächlich erhält eine lineare Abbildung, die die Norm jedes Vektors erhält, auch jedes Skalarprodukt. Geometrisch bewahren die Erhaltung der Längen zweier Vektoren und ihrer Differenz das von ihnen gebildete Dreieck und damit auch seinen Winkel. Im komplexen Vektorraum folgt dieselbe Aussage, wenn man zusätzlich Linearkombinationen mit dem Faktor \(i\) betrachtet.
+
+Somit gilt für beliebige \(\ket{\phi}\) und \(\ket{\psi}\):
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Setzt man die Entwicklungsgesetze ein, erhält man
+\begin{equation}
+\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Da diese Gleichung für jedes Vektorpaar gilt,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+Ein solcher Operator ist unitär. Das skalare Analogon ist eine komplexe Zahl mit Betrag eins:
+\begin{equation}
+e^{i\theta}\bigl(e^{i\theta}\bigr)^*=1.
+\end{equation}
+Ein unitärer Operator ist die Verallgemeinerung einer reinen Phase auf Matrizen: Er kann einen Zustand durch den Hilbertraum drehen, ihn aber weder strecken noch stauchen.
+
+\section{Der infinitesimale Generator}
+
+Eine endliche Entwicklung setzt sich aus sehr kleinen Zeitschritten zusammen. Die verstrichene Zeit sei \(\epsilon\) und so klein, dass Terme der Ordnung \(\epsilon^2\) vernachlässigt werden können. Bei einer verstrichenen Zeit von null geschieht nichts, also gilt
+\begin{equation}
+U(0)=I.
+\end{equation}
+Die führende Korrektur muss proportional zu \(\epsilon\) sein. Wir schreiben sie in der üblichen Form
+\begin{equation}
+\boxed{U(\epsilon)=I-\frac{i\epsilon}{\hbar}H}.
+\end{equation}
+An dieser Stelle ist nur der Faktor \(\epsilon\) zwingend vorgegeben. \(i\), \(\hbar\) und die Bezeichnung \(H\) wählen wir so, dass der am Ende erhaltene Operator die übliche Normierung hat und hermitesch ist.
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:46}
+\audiencequestion{Warum ist das Plancksche Wirkungsquantum in den uns geläufigen Einheiten eine so bemerkenswert kleine Zahl?}
+\lecturerresponse{Die Zahlenwerte hängen von den Einheiten ab, die Menschen gewählt haben. Chemiker wählten makroskopische Mengen, die in Gefäße von Handgröße passen, während Atome sehr viel kleiner sind als Menschen. In Einheiten, die auf diese makroskopischen Größenordnungen zugeschnitten sind, muss ein atomares Wirkungsquantum winzig erscheinen. Das ist kein eigenständiges dynamisches Rätsel; es liegt zum großen Teil an der historischen und menschlichen Größenskala, die in den Einheiten steckt.}
+\end{classroomqa}
+
+Bildet man die hermitesch konjugierte Größe, so erhält man
+\begin{equation}
+U^\dagger(\epsilon)
+=I+\frac{i\epsilon}{\hbar}H^\dagger.
+\end{equation}
+Multiplizieren wir nun aus und behalten nur Terme erster Ordnung bei:
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(I+\frac{i\epsilon}{\hbar}H^\dagger\right)
+\left(I-\frac{i\epsilon}{\hbar}H\right) \\
+&=
+I+\frac{i\epsilon}{\hbar}\left(H^\dagger-H\right)
++O(\epsilon^2).
+\end{align}
+Die Unitarität verlangt, dass dieses Produkt gleich \(I\) ist. Daher gilt
+\begin{equation}
+\boxed{H^\dagger=H}.
+\end{equation}
+Der infinitesimale Generator der Zeitentwicklung ist hermitesch. Da hermitesche Operatoren Observablen darstellen, besitzt jedes dynamische System eine Observable, die seine zeitliche Entwicklung erzeugt. Das ist der Hamiltonoperator. Für den Operator schreiben wir \(H\) und für seine möglichen Messwerte, die Eigenwerte, reservieren wir \(E\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:34}
+\audiencequestion{Warum soll dieser Generator Energie heißen? Ist Energie nicht \(p^2/2m\) oder die Fähigkeit, Arbeit zu verrichten?}
+\lecturerresponse{Das sind nützliche Beschreibungen in besonderen klassischen Situationen, aber keine allgemeine Definition. Der Ausdruck \(p^2/2m\) ist lediglich die kinetische Energie eines nichtrelativistischen freien Teilchens und definiert keine Größen wie die in einem elektromagnetischen Feld gespeicherte Energie. Bei einem abstrakten System ist die erste allgemeine Eigenschaft, die wir von der Energie verlangen, ihre Erhaltung. Wir werden gleich beweisen, dass der Erwartungswert von \(H\) erhalten bleibt; außerdem erfüllen die Phasen seiner Eigenzustände \(E=\hbar\omega\). Diese beiden Tatsachen weisen den Generator als Energie aus.}
+\end{classroomqa}
+
+\section{Vom kleinen Zeitschritt zur Schr\"odinger-Gleichung}
+
+In der infinitesimalen Zustandsänderung steckt bereits eine Differentialgleichung. Für einen beliebigen Zeitnullpunkt gilt
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+\lim_{\epsilon\to0}
+\frac{\ket{\psi(t+\epsilon)}-\ket{\psi(t)}}{\epsilon}.
+\end{equation}
+An der Tafel wird dies zunächst für \(t=0\) angeschrieben; eine Verschiebung des Zeitnullpunkts ergibt die allgemeine Form oben.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_03.png}
+\caption{Der Differenzenquotient, der die infinitesimale Zeitentwicklung in eine Differentialgleichung überführt.}
+\lectureframe{00:22:15}
+\end{figure}
+
+Setzen wir
+\begin{equation}
+\ket{\psi(t+\epsilon)}
+=
+\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}.
+\end{equation}
+dann gilt
+\begin{align}
+\frac{d}{dt}\ket{\psi(t)}
+&=
+\lim_{\epsilon\to0}
+\frac{\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}
+-\ket{\psi(t)}}{\epsilon} \\
+&=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{align}
+Äquivalent dazu ist
+\begin{equation}
+\boxed{
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+Dies ist die Schr\"odinger-Gleichung. Sobald \(H\) und der Zustand zu einem Zeitpunkt bekannt sind, legt sie den Zustand zu späteren Zeiten fest. Die Wahrscheinlichkeiten späterer Messungen ergeben sich dann aus den gewöhnlichen Messregeln.
+
+\section{Energieeigenzustände und rotierende Phase}
+
+Die einfachste Lösung geht von einem Eigenvektor des Hamiltonoperators aus:
+\begin{equation}
+H\ket{\psi_E}=E\ket{\psi_E}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_09_figure_04.png}
+\caption{Die Energieeigenwertgleichung an der Tafel.}
+\lectureframe{00:28:22}
+\end{figure}
+
+Da \(H\) \(\ket{\psi_E}\) wieder auf dieselbe eindimensionale Richtung abbildet, kann die Zeitentwicklung diesen Vektor nicht mit einem anderen Eigenvektor mischen. Sie kann ihn nur mit einem Skalar multiplizieren:
+\begin{equation}
+\ket{\psi_E(t)}=f(t)\ket{\psi_E}.
+\end{equation}
+Einsetzen in die Schr\"odinger-Gleichung ergibt
+\begin{align}
+i\hbar\,\dot f(t)\ket{\psi_E}
+&=
+f(t)H\ket{\psi_E} \\
+&=
+E f(t)\ket{\psi_E}.
+\end{align}
+Daraus folgt
+\begin{equation}
+\dot f(t)=-\frac{iE}{\hbar}f(t),
+\qquad
+f(t)=e^{-iEt/\hbar},
+\end{equation}
+und
+\begin{equation}
+\boxed{
+\ket{\psi_E(t)}
+=e^{-iEt/\hbar}\ket{\psi_E(0)}
+}.
+\end{equation}
+Ein Energieeigenzustand ist insofern stationär, als sich sein Strahl im Hilbertraum nicht bewegt. Sein Ket sammelt dennoch eine Phase an.
+
+Die Exponentialfunktion lässt sich schreiben als
+\begin{equation}
+e^{-iEt/\hbar}
+=
+\cos\!\left(\frac{Et}{\hbar}\right)
+-i\sin\!\left(\frac{Et}{\hbar}\right).
+\end{equation}
+Das Minuszeichen und das Fehlen eines zusätzlichen Faktors \(i\) innerhalb des Sinus wurden während der Rechnung an der Tafel korrigiert. Die Kreisfrequenz ist
+\begin{equation}
+\omega=\frac{E}{\hbar},
+\qquad
+\boxed{E=\hbar\omega}.
+\end{equation}
+Äquivalent dazu gilt mit der gewöhnlichen Frequenz \(\nu=\omega/(2\pi)\) die Beziehung \(E=h\nu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_09_figure_05.png}
+\caption{Die Phasenlösung und der Zusammenhang zwischen Energie und--Frequenz werden auf benachbarten Tafeln hergeleitet.}
+\lectureframe{00:36:19}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:43}
+\audiencequestion{Warum wurden die Faktoren \(i\) und \(\hbar\) in den infinitesimalen Operator eingesetzt, bevor die Rechnung sie erforderte?}
+\lecturerresponse{Das sind Konventionen, die mit Blick auf das Ergebnis gewählt wurden. Ohne \(i\) würde die Unitarität den Generator antihermitesch machen. Die Multiplikation mit \(i\) macht daraus eine hermitesche Observable mit reellen Eigenwerten. Der Faktor \(\hbar\) gibt diesen Eigenwerten die Einheiten und die übliche Normierung von Energie. Die physikalische Aussage ist die Unitarität; diese Faktoren bringen ihren Generator in die Standardform.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:18}
+\audiencequestion{Gilt \(E=\hbar\omega\) nur für elektromagnetische Wellen und Photonen?}
+\lecturerresponse{Nein. Photonen sind ein wichtiger Spezialfall, aber der Zusammenhang ist allgemeiner. Jeder Eigenzustand des Hamiltonoperators nimmt eine Phase mit der Kreisfrequenz \(E/\hbar\) an. Um die Frequenz einer elektromagnetischen Feldmode mit der Frequenz ihres Photons zu verknüpfen, braucht man weitere Physik; der Energie--Phasen-Zusammenhang folgt jedoch bereits aus der quantenmechanischen Zeitentwicklung.}
+\end{classroomqa}
+
+\section{Überlagerung in der Energiebasis}
+
+Ein einzelner Energieeigenzustand ändert sich nur um eine Gesamtphase, die keine Wahrscheinlichkeit beeinflussen kann. Eine interessante Dynamik setzt ein, wenn ein Zustand mehrere Energieeigenvektoren enthält. Da ein hermitescher Hamiltonoperator eine vollständige orthonormale Eigenbasis besitzt, gilt
+\begin{equation}
+H\ket{\psi_n}=E_n\ket{\psi_n},
+\qquad
+\ket{\psi(0)}=\sum_n\alpha_n\ket{\psi_n}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_06.png}
+\caption{Entwicklung eines beliebigen Zustands nach Eigenvektoren des Hamiltonoperators.}
+\lectureframe{00:38:35}
+\end{figure}
+
+Aufgrund der Linearität kann sich jede Komponente unabhängig entwickeln:
+\begin{equation}
+\boxed{
+\ket{\psi(t)}
+=
+\sum_n\alpha_n e^{-iE_n t/\hbar}\ket{\psi_n}
+}.
+\end{equation}
+Komponenten hoher Energie rotieren schnell in der komplexen Ebene, solche niedriger Energie langsamer. Messbare Wahrscheinlichkeiten ändern sich nicht durch eine Phase, die der gesamte Zustand gemeinsam trägt, sondern durch die veränderlichen relativen Phasen zwischen Komponenten mit unterschiedlichen \(E_n\).
+
+In der Energiebasis gilt
+\begin{equation}
+\begin{aligned}
+H&=
+\begin{pmatrix}
+E_1&0&\cdots\\
+0&E_2&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix},\\[0.6em]
+U(t)&=
+\begin{pmatrix}
+e^{-iE_1t/\hbar}&0&\cdots\\
+0&e^{-iE_2t/\hbar}&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix}.
+\end{aligned}
+\end{equation}
+Ohne Wahl einer Basis lässt sich dieselbe Aussage für einen zeitunabhängigen Hamiltonoperator zusammenfassen als
+\begin{equation}
+\boxed{U(t)=e^{-iHt/\hbar}},
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:17}
+\audiencequestion{Ist diese Zerlegung im Wesentlichen eine Fourierreihe, und ist sie mit Zerlegungen vergleichbar, die bei der Wärmeleitung verwendet werden?}
+\lecturerresponse{Tatsächlich handelt es sich um eine Fourier-artige Zerlegung bezüglich der Zeit: Jeder Energieeigenvektor trägt eine bestimmte Frequenz. Fourier- und Laplace-Verfahren trennen auch in vielen klassischen Gleichungen Moden, etwa bei der Diffusion. Die mathematische Ähnlichkeit ist real, doch Aussagen darüber, welcher physikalischen Größe eine Frequenz entspricht, müssen von Fall zu Fall geprüft werden. In der Quantenmechanik wird der konkrete Zusammenhang durch die Schr\"odinger-Gleichung festgelegt.}
+\end{classroomqa}
+
+\subsection{Zusammengesetzte Systeme}
+
+Für zwei nicht wechselwirkende Systeme \(A\) und \(B\) ist der Hamiltonoperator des Gesamtsystems die Summe der einzelnen Generatoren im Produktraum:
+\begin{equation}
+H_{AB}
+=
+H_A\otimes I_B+I_A\otimes H_B.
+\end{equation}
+Wenn
+\begin{equation}
+H_A\ket{a}=E_a\ket{a},
+\qquad
+H_B\ket{b}=E_b\ket{b},
+\end{equation}
+dann gilt
+\begin{equation}
+H_{AB}\ket{a,b}=(E_a+E_b)\ket{a,b}.
+\end{equation}
+Bei räumlich getrennten, nicht wechselwirkenden Systemen addieren sich die Energien und damit auch die Phasenfrequenzen. Eine Wechselwirkung fügt einen weiteren Term \(H_{\mathrm{int}}\) hinzu; dann gibt diese einfache Summe nicht mehr die gesamte Energie an.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:20}
+\audiencequestion{Was geschieht, wenn man zwei getrennte Systeme mit Komponenten gleicher Frequenz zusammenbringt?}
+\lecturerresponse{Bei nicht wechselwirkenden Systemen sind die Energieeigenwerte des Gesamtsystems die Summen der jeweiligen Eigenwerte. Gleiche Frequenzen können zu Entartung führen, mischen die zugehörigen Eigenvektoren aber nicht von selbst. Eine Mischung erfordert einen Wechselwirkungsterm oder die Wahl einer Basis innerhalb eines entarteten Unterraums. Sobald die Systeme wechselwirken, muss der erweiterte Hamiltonoperator als neues Problem diagonalisiert werden.}
+\end{classroomqa}
+
+\section{Erwartungswerte und Kommutatoren}
+
+Wir haben die Entwicklung des Zustands verfolgt und dabei die Observablen festgehalten. Das ist das Schr\"odinger-Bild. Sei \(A\) eine Observable ohne explizite Zeitabhängigkeit. Ihr Erwartungswert ist
+\begin{equation}
+\langle A\rangle_t
+=
+\bra{\psi(t)}A\ket{\psi(t)}.
+\end{equation}
+Wir differenzieren sowohl das Bra als auch das Ket:
+\begin{equation}
+\frac{d}{dt}\langle A\rangle_t
+=
+\bra{\dot\psi}A\ket{\psi}
++
+\bra{\psi}A\ket{\dot\psi}.
+\end{equation}
+Die Schr\"odinger-Gleichung und ihre hermitesch konjugierte Gleichung ergeben
+\begin{equation}
+\ket{\dot\psi}
+=-\frac{i}{\hbar}H\ket{\psi},
+\qquad
+\bra{\dot\psi}
+=\frac{i}{\hbar}\bra{\psi}H.
+\end{equation}
+Daraus folgt
+\begin{align}
+\frac{d}{dt}\langle A\rangle_t
+&=
+\frac{i}{\hbar}\bra{\psi}HA\ket{\psi}
+-\frac{i}{\hbar}\bra{\psi}AH\ket{\psi} \\
+&=
+\frac{i}{\hbar}\bra{\psi}(HA-AH)\ket{\psi}.
+\end{align}
+Wir definieren den Kommutator durch
+\begin{equation}
+[H,A]=HA-AH.
+\end{equation}
+Dann lautet die Bewegungsgleichung für einen Erwartungswert
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle A\rangle_t
+=
+\frac{i}{\hbar}\langle[H,A]\rangle_t
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_07.png}
+\caption{Die Gleichung für den Erwartungswert und der Kommutator \(AB-BA=[A,B]\).}
+\lectureframe{00:51:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:13}
+\audiencequestion{Warum steht der Kommutator in dieser Gleichung selbst innerhalb eines Erwartungswerts?}
+\lecturerresponse{Der Kommutator ist ein Operator. Jeder Operator zwischen \(\bra{\psi}\) und \(\ket{\psi}\) hat einen Erwartungswert, daher ist \(\bra{\psi}[H,A]\ket{\psi}\) einfach der Erwartungswert dieses Kommutators im aktuellen Zustand.}
+\end{classroomqa}
+
+\subsection{Erhaltungssätze}
+
+Wir setzen \(A=H\). Ein Operator kommutiert stets mit sich selbst:
+\begin{equation}
+[H,H]=HH-HH=0.
+\end{equation}
+Daher gilt
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle H\rangle_t=0
+}.
+\end{equation}
+Der Erwartungswert des Hamiltonoperators ist erhalten. Darin liegt der angekündigte strukturelle Grund, \(H\) als Energie zu identifizieren. Jedes isolierte System besitzt einen Hamiltonoperator, und jeder zeitunabhängige Hamiltonoperator liefert dieses Erhaltungsgesetz.
+
+Allgemeiner gilt
+\begin{equation}
+[H,A]=0
+\quad\Longrightarrow\quad
+\frac{d}{dt}\langle A\rangle_t=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:41}
+\audiencequestion{Wie sind alle Operatoren zu deuten, die mit \(H\) kommutieren, und umfasst diese Menge auch Größen außer der Energie?}
+\lecturerresponse{Das sind die Erhaltungsgrößen des Systems. Welche davon auftreten, hängt vom Hamiltonoperator ab. Ein freies Teilchen hat erhaltenen Impuls, während eine Kraft diese Erhaltung aufheben kann. Energie ist stets dabei, weil \(H\) mit sich selbst kommutiert; weitere kommutierende Operatoren stehen für zusätzliche Symmetrien und Erhaltungssätze.}
+\end{classroomqa}
+
+\section{Ein Spin in einem Magnetfeld}
+
+Betrachten wir einen Spin mit den Pauli-Operatoren
+\begin{equation}
+\boldsymbol{\sigma}
+=(\sigma_1,\sigma_2,\sigma_3)
+\end{equation}
+in einem festen äußeren Magnetfeld \(\mathbf B\). Das magnetische Moment ist proportional zum Spin. In der hier verwendeten Konvention gilt
+\begin{equation}
+\boxed{
+H=\frac{\mu}{2}\boldsymbol{\sigma}\cdot\mathbf B
+}.
+\end{equation}
+Der Faktor \(1/2\), das Vorzeichen und der von der Ladung abhängige Skalenfaktor können in die Definition von \(\mu\) aufgenommen werden. Das Feld wird klassisch behandelt: Ein großer stabiler Magnet erzeugt \(\mathbf B\), und den Quantenzustand dieses Magneten modellieren wir nicht.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_09_figure_08.png}
+\caption{Der Operator des magnetischen Moments koppelt an das äußere Magnetfeld.}
+\lectureframe{01:01:45}
+\end{figure}
+
+Wir wählen das Feld in Richtung der dritten Achse:
+\begin{equation}
+\mathbf B=B\hat{\mathbf z},
+\qquad
+H=\frac{\mu B}{2}\sigma_3.
+\end{equation}
+Wir verfolgen die Erwartungswerte der drei Spin-Komponenten. Um die Gleichungen kürzer zu schreiben, setzen wir
+\begin{equation}
+s_i(t)=\langle\sigma_i\rangle_t.
+\end{equation}
+Die Komponente in Feldrichtung erfüllt
+\begin{equation}
+\dot s_3
+=
+\frac{i}{\hbar}\langle[H,\sigma_3]\rangle
+=0,
+\end{equation}
+da \(H\) proportional zu \(\sigma_3\) ist. Die Spinprojektion in Feldrichtung ist fest. Geometrisch muss die Spitze des mittleren Spins auf einem Kegel mit festem Öffnungswinkel um die Feldachse bleiben.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_09_figure_09.png}
+\caption{Bei festgehaltener longitudinaler Spin-Komponente verläuft die Bewegung auf einem Kegel um die Magnetfeldachse.}
+\lectureframe{01:04:45}
+\end{figure}
+
+Für die erste transversale Komponente gilt
+\begin{equation}
+\dot s_1
+=
+\frac{i\mu B}{2\hbar}
+\langle[\sigma_3,\sigma_1]\rangle.
+\end{equation}
+Den Kommutator kann man direkt aus
+\begin{equation}
+\begin{aligned}
+\sigma_3&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+&
+\sigma_1&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.5em]
+\sigma_2&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix}.
+\end{aligned}
+\end{equation}
+berechnen. Tatsächlich gilt
+\begin{equation}
+\sigma_3\sigma_1=i\sigma_2,
+\qquad
+\sigma_1\sigma_3=-i\sigma_2,
+\end{equation}
+also
+\begin{equation}
+[\sigma_3,\sigma_1]=2i\sigma_2.
+\end{equation}
+Folglich
+\begin{equation}
+\dot s_1=-\frac{\mu B}{\hbar}s_2.
+\end{equation}
+Ebenso erhält man unter Verwendung von \([\sigma_3,\sigma_2]=-2i\sigma_1\)
+\begin{equation}
+\dot s_2=\frac{\mu B}{\hbar}s_1.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_10.png}
+\caption{Die Berechnung des Pauli-Kommutators führt zur Bewegungsgleichung für die transversale Komponente.}
+\lectureframe{01:09:35}
+\end{figure}
+
+Wir setzen
+\begin{equation}
+\Omega=\frac{\mu B}{\hbar}.
+\end{equation}
+Die drei Gleichungen lauten
+\begin{equation}
+\dot s_1=-\Omega s_2,
+\qquad
+\dot s_2=\Omega s_1,
+\qquad
+\dot s_3=0.
+\end{equation}
+Eine Lösung mit transversaler Amplitude \(s_\perp\) ist
+\begin{equation}
+s_1(t)=s_\perp\cos(\Omega t+\varphi),
+\qquad
+s_2(t)=s_\perp\sin(\Omega t+\varphi),
+\end{equation}
+Dabei ist \(s_3\) konstant.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_09_figure_11.png}
+\caption{Die transversalen Spin-Komponenten bilden ein Sinus--Kosinus-Paar mit der Kreisfrequenz \(\mu B/\hbar\).}
+\lectureframe{01:11:45}
+\end{figure}
+
+Der mittlere Spin präzediert daher wie ein Kreisel um das Magnetfeld. Die Wahl des Feldes entlang \(z\) diente lediglich der Vereinfachung. Bei einem Feld in beliebiger Richtung bleibt die Komponente parallel zu \(\mathbf B\) erhalten, während die senkrechte Komponente darum rotiert.
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:02}
+\audiencequestion{Müssten Sinus und Kosinus in der Lösung nicht eine zusätzliche Phase enthalten?}
+\lecturerresponse{Ja. Die Phase \(\varphi\) legt die Anfangsrichtung in der transversalen Ebene fest oder ist gleichbedeutend mit der Wahl des Zeitpunkts, den wir \(t=0\) nennen. Sie auf null zu setzen, bedeutet lediglich, dass der Spin zu Beginn entlang einer bestimmten transversalen Achse liegt.}
+\end{classroomqa}
+
+\subsection{Präparation und Messung}
+
+Angenommen, ein Ensemble wird im \(+1\)-Eigenzustand von \(\sigma_1\) präpariert. Bei \(t=0\) ergibt eine Messung von \(\sigma_1\) mit Sicherheit \(+1\), während Messungen von \(\sigma_2\) oder \(\sigma_3\) die Ergebnisse \(\pm1\) mit gleicher Wahrscheinlichkeit liefern. Nach einer Viertelperiode der Präzession ist der Zustand in den \(+1\)-Eigenzustand von \(\sigma_2\) übergegangen: Nun ist \(\sigma_2\) sicher, und \(\sigma_1\) maximal unbestimmt. Nach einer weiteren Viertelperiode erreicht er den \(-1\)-Eigenzustand von \(\sigma_1\). Die rotierenden Erwartungswerte haben somit eine direkte operationale Bedeutung.
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:04}
+\audiencequestion{Wenn Erwartungswerte viele Elektronen erfordern, haben die Mitglieder des Ensembles dann nicht unterschiedliche Phasen, die die Präzession ausmitteln?}
+\lecturerresponse{Nicht, wenn an jedem Mitglied dasselbe Experiment durchgeführt wird. Bei identischer Präparation haben alle Elektronen denselben Anfangszustand und damit dieselbe Phasenentwicklung. Sind ihre Anfangsphasen unkontrolliert, liegt keine reine Präparation des Ensembles vor, sondern ein gemischter Zustand; die Dephasierung kann dann den transversalen Mittelwert verringern.}
+\end{classroomqa}
+
+\section{Zwei gekoppelte Spins}
+
+Betrachten wir nun zwei Spins. Die bloße Aussage, dass sie verschränkt sind, reicht nicht aus, um ihre Entwicklung vorherzusagen. Für die Dynamik braucht man einen Hamiltonoperator.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:49}
+\audiencequestion{Wenn zwei Elektronen so verschränkt sind, dass entlang jeder gemeinsamen Achse entgegengesetzte Messergebnisse auftreten, bedeutet das, dass ihre Bewegungen stets um \(180^\circ\) phasenverschoben sind?}
+\lecturerresponse{Aus der Verschränkung allein folgt keine Aussage über die Dynamik. Die angegebene Antikorrelation beschreibt den Singulettzustand; seine weitere Entwicklung hängt jedoch vom Energieoperator ab. Zunächst müssen wir festlegen, ob ein äußeres Feld, eine Wechselwirkung zwischen den Spins oder beides vorliegt.}
+\end{classroomqa}
+
+Betrachten wir die einfache isotrope Wechselwirkung, bei der jeder Spin das effektive Feld erzeugt, das der andere Spin erfährt:
+\begin{equation}
+\boxed{
+H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}
+=
+J\left(
+\sigma_1\tau_1+\sigma_2\tau_2+\sigma_3\tau_3
+\right)
+}.
+\end{equation}
+Die Operatoren \(\boldsymbol{\sigma}\) wirken auf den ersten Spin, \(\boldsymbol{\tau}\) auf den zweiten. Die Kopplung \(J\) legt die Energieskala fest; ihr Wert und Vorzeichen bleiben unbestimmt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_09_figure_12.png}
+\caption{Die isotrope Wechselwirkung zweier Spins \(H\propto\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\).}
+\lectureframe{01:19:20}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:49}
+\audiencequestion{Würde ein homogenes Magnetfeld zwei verschränkte Elektronen zwangsläufig entflechten?}
+\lecturerresponse{Nicht unbedingt. Ein Feld ändert den Hamiltonoperator und kann dazu tendieren, die Spins auszurichten, besonders wenn es stark ist. Die unitäre Entwicklung in einem homogenen Feld allein garantiert jedoch nicht, dass die Verschränkung verloren geht. Die Antwort hängt vom vollständigen Hamiltonoperator und vom Anfangszustand ab.}
+\end{classroomqa}
+
+\subsection{Triplett- und Singulettenergien}
+
+Der Hilbertraum der beiden Spins hat die Dimension vier. In der Triplett--Singulett-Basis ist die Wechselwirkung diagonal:
+\begin{align}
+\ket{T_+}&=\ket{\uparrow\uparrow}, \\
+\ket{T_0}&=
+\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt2}, \\
+\ket{T_-}&=\ket{\downarrow\downarrow}, \\
+\ket{S}&=
+\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt2}.
+\end{align}
+Die drei Triplettzustände haben dieselbe Energie \(E_T\); das Singulett hat eine andere Energie \(E_S\). Es gibt also vier unabhängige Eigenvektoren, aber nur zwei verschiedene Energieniveaus. Das Triplettniveau ist dreifach entartet.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_13.png}
+\caption{Der Hamiltonoperator der gekoppelten Spins besitzt ein entartetes Triplettniveau und ein separates Singulettniveau.}
+\lectureframe{01:20:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:16}
+\audiencequestion{Was geschieht, wenn der Anfangszustand bereits der Energieeigenzustand des Singuletts ist?}
+\lecturerresponse{Er bleibt im Singulettzustand und nimmt lediglich die Phase \(e^{-iE_St/\hbar}\) an. Wie bei jedem einzelnen Energieeigenzustand ändern sich seine messbaren Eigenschaften nicht dadurch, dass das gesamte Ket mit dieser gemeinsamen Phase multipliziert wird.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:54}
+\audiencequestion{Liefert ein äußeres Magnetfeld dem Zwei-Spin-System während dieser Rechnung Energie?}
+\lecturerresponse{Im hier berechneten Beispiel gibt es kein äußeres Feld. Das einzige betrachtete Feld ist die durch \(J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\) dargestellte Wechselwirkung der Spins untereinander. Ein äußeres Feld würde einen weiteren Term zu \(H\) hinzufügen und damit ein anderes Problem definieren.}
+\end{classroomqa}
+
+\subsection{Ausgangspunkt: ein Spin nach oben, einer nach unten}
+
+Ein Energieeigenzustand würde lediglich eine Phase annehmen; wählen wir daher einen Produktzustand, der kein Energieeigenzustand ist:
+\begin{equation}
+\ket{\psi(0)}=\ket{\uparrow\downarrow}.
+\end{equation}
+Zerlegen wir ihn in die beiden relevanten Eigenvektoren:
+\begin{equation}
+\boxed{
+\ket{\uparrow\downarrow}
+=
+\frac{1}{\sqrt2}\ket{T_0}
++
+\frac{1}{\sqrt2}\ket{S}
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_14.png}
+\caption{Der Produktzustand \(\ket{\uparrow\downarrow}\) zerlegt in Triplett- und Singulettanteile.}
+\lectureframe{01:24:30}
+\end{figure}
+
+Jede Energiekomponente nimmt nun ihre eigene Phase an:
+\begin{equation}
+\ket{\psi(t)}
+=
+\frac{e^{-iE_Tt/\hbar}}{\sqrt2}\ket{T_0}
++
+\frac{e^{-iE_St/\hbar}}{\sqrt2}\ket{S}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:25:59}
+\audiencequestion{Welche Energie ist größer, die Triplettenergie \(E_T\) oder die Singulettenergie \(E_S\)?}
+\lecturerresponse{Das hängt vom Vorzeichen der Kopplung ab. Für \(H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\) mit \(J>0\) liegt das Singulett tiefer und das Triplett höher; bei umgekehrtem Vorzeichen kehrt sich die Reihenfolge um. Eine Konstante zu beiden Energien zu addieren, ändert nur eine Gesamtphase. Daher kann man eines der beiden Niveaus auf null setzen, ohne die Übergangswahrscheinlichkeiten zu ändern.}
+\end{classroomqa}
+
+Kehren wir zur Produktbasis zurück:
+\begin{align}
+\ket{\psi(t)}
+&=
+\frac12
+\left(
+e^{-iE_Tt/\hbar}+e^{-iE_St/\hbar}
+\right)\ket{\uparrow\downarrow} \\
+&\quad+
+\frac12
+\left(
+e^{-iE_Tt/\hbar}-e^{-iE_St/\hbar}
+\right)\ket{\downarrow\uparrow}.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_15.png}
+\caption{Der entwickelte Zustand, wieder zusammengesetzt in der Basis \(\ket{\uparrow\downarrow}\), \(\ket{\downarrow\uparrow}\).}
+\lectureframe{01:30:40}
+\end{figure}
+
+Bei \(t=0\) verschwindet der Koeffizient von \(\ket{\downarrow\uparrow}\), wie es sein muss. Zu späteren Zeiten lässt die relative Phase zwischen Singulett- und Triplettanteil diesen Koeffizienten anwachsen. Wir definieren die mittlere Energie und die Aufspaltung durch
+\begin{equation}
+\overline E=\frac{E_T+E_S}{2},
+\qquad
+\Delta E=E_T-E_S.
+\end{equation}
+Klammern wir die Phase der mittleren Energie aus, so erhalten wir
+\begin{equation}
+\boxed{
+\begin{aligned}
+\ket{\psi(t)}
+&=e^{-i\overline E t/\hbar}\Biggl[
+\cos\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\uparrow\downarrow}
+\\
+&\qquad
+-i\sin\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\downarrow\uparrow}
+\Biggr]
+\end{aligned}
+}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_16.png}
+\caption{Die mittlere Energie liefert eine gemeinsame Phase; die Aufspaltung zwischen Singulett und--Triplett tritt in den Sinus- und Kosinusamplituden auf.}
+\lectureframe{01:35:15}
+\end{figure}
+
+Der Faktor \(e^{-i\overline E t/\hbar}\) ist im gesamten Ket gemeinsam und fällt aus jeder Wahrscheinlichkeit heraus. Die messbaren Wahrscheinlichkeiten sind
+\begin{equation}
+P_{\uparrow\downarrow}(t)
+=
+\cos^2\!\left(\frac{\Delta E\,t}{2\hbar}\right),
+\qquad
+P_{\downarrow\uparrow}(t)
+=
+\sin^2\!\left(\frac{\Delta E\,t}{2\hbar}\right).
+\end{equation}
+Der Zustand oszilliert von \(\ket{\uparrow\downarrow}\) zu \(\ket{\downarrow\uparrow}\) und zurück, wobei die Rate allein durch die Energiedifferenz bestimmt wird. Zu Zwischenzeiten sind beide Amplituden von null verschieden, und abgesehen von besonderen Zeitpunkten sind die beiden Spins verschränkt.
+
+Die Rechnung veranschaulicht eine allgemeine Methode. Man wählt die Basis, in der die physikalische Frage formuliert ist, entwickelt den Anfangszustand nach Eigenvektoren des Hamiltonoperators, lässt jeden Eigenvektor seine eigene Phase annehmen und setzt die Komponenten anschließend in der Messbasis wieder zusammen. Sobald der Hamiltonoperator diagonalisiert ist, wird die Quantendynamik systematisch; jede beobachtbare Bewegung steckt in den relativen Phasen.

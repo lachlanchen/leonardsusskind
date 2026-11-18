@@ -1,0 +1,772 @@
+\chapter{Reduzierte Zustände, Verschränkungsentropie und unitäre Zeitentwicklung}
+
+Eine Dichtematrix tritt zunächst als natürliche Beschreibung einer unvollständigen Präparation auf: Ein Quantensystem wurde präpariert, aber wir wissen nicht genau, wie. Durch Verschränkung erhält dasselbe mathematische Objekt eine tiefere Bedeutung. Selbst wenn der Zustand eines zusammengesetzten Systems vollständig bekannt ist, besitzt ein Teilsystem im Allgemeinen keinen eigenen Zustandsvektor. Seine reduzierte Dichtematrix enthält alles, was sich lokal vorhersagen lässt. Wir werden diese Aussage komponentenweise herleiten, an zwei Spinzuständen überprüfen und mithilfe der Entropie Produktzustände von verschränkten Zuständen unterscheiden. Anschließend wenden wir uns einer zweiten Frage zu: Wie ändert sich ein Quantenzustand mit der Zeit? Die Erhaltung der Skalarprodukte führt zur Unitarität, zu einem hermiteschen Generator und zur Schr\"odinger-Gleichung.
+
+\section{Dichtematrizen und unvollständige Präparation}
+
+Nehmen wir an, ein Elektron wurde in ein starkes Magnetfeld gebracht und durfte sich an diesem ausrichten. Jemand anderes hat die Feldrichtung gewählt und das Elektron präpariert, uns die Richtung aber nicht mitgeteilt. Der Spin kann daher in einem vollkommen bestimmten reinen Zustand sein, auch wenn wir nicht wissen, um welchen Zustand es sich handelt. Vielleicht kennen wir eine Wahrscheinlichkeitsverteilung über mögliche Präparationen, oder wir wissen überhaupt nichts. Eine Dichtematrix \(\rho\) ist die quantenmechanische Beschreibung genau dieser Art unvollständiger Information.
+
+Das klassische Analogon ist eine Wahrscheinlichkeitsdichte im Phasenraum oder eine Wahrscheinlichkeitsverteilung über diskrete Konfigurationen. Das quantenmechanische Objekt ist ein Operator mit drei wesentlichen Eigenschaften:
+\begin{equation}
+\rho^\dagger=\rho,
+\qquad
+\operatorname{Tr}\rho=1,
+\qquad
+\lambda_i\geq 0,
+\end{equation}
+Dabei sind die \(\lambda_i\) die Eigenwerte von \(\rho\). Die Hermitizität gewährleistet reelle Eigenwerte und liefert eine Orthonormalbasis aus Eigenvektoren. Die Positivität macht sie zu zulässigen Wahrscheinlichkeiten, und die Normierung ergibt
+\begin{equation}
+\sum_{i=1}^{n}\lambda_i=1.
+\end{equation}
+In der Eigenbasis von \(\rho\) ist \(\lambda_i\) die dem \(i\)-ten Eigenzustand zugeordnete Wahrscheinlichkeit.
+
+Vollständige Unkenntnis liegt vor, wenn keine Richtung im Hilbertraum bevorzugt ist:
+\begin{equation}
+\rho_{\mathrm{max}}=\frac{1}{n}I.
+\end{equation}
+Jeder Eigenwert ist \(1/n\). Am entgegengesetzten Extremfall wird vollständige Kenntnis durch einen normierten Zustand \(\ket{\psi}\) dargestellt, für den gilt:
+\begin{equation}
+\rho_\psi=\ket{\psi}\bra{\psi}.
+\end{equation}
+Dies ist der Projektor auf den von \(\ket{\psi}\) aufgespannten eindimensionalen Unterraum.
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:47}
+\audiencequestion{Kann man eine Präparation als fünfzig-zu-fünfzig-Wahl zwischen zwei nicht orthogonalen Zuständen beschreiben, zum Beispiel zwischen zwei Spinrichtungen, die einen Winkel von \(45^\circ\) einschließen?}
+\lecturerresponse{Ein solches Präparationsverfahren ist möglich, aber diese beiden Gewichte sind im Allgemeinen nicht die Eigenwerte der resultierenden Dichtematrix. Zunächst bildet man die gewichtete Summe der Projektoren und diagonalisiert sie dann. Die klare Wahrscheinlichkeitsinterpretation der Eigenwerte gilt für die Orthonormalbasis aus Eigenvektoren von \(\rho\), nicht unbedingt für die nicht orthogonalen Zustände, die der Präparator benannt hat.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:07:47}
+\audiencequestion{Wodurch unterscheidet sich ein reiner Zustand von einem gemischten Zustand?}
+\lecturerresponse{Die Dichtematrix eines reinen Zustands hat genau einen von null verschiedenen Eigenwert, der gleich \(1\) ist. Ein gemischter Zustand hat mehr als einen von null verschiedenen Eigenwert. In älterer Literatur wurde das deutsche Wort \emph{Gemisch} verwendet; der moderne Begriff lautet schlicht \emph{gemischter Zustand}.}
+\end{classroomqa}
+
+Überprüfen wir das Spektrum des Projektors auf einen reinen Zustand. Aus der Normierung folgt
+\begin{equation}
+\rho_\psi\ket{\psi}
+=\ket{\psi}\braket{\psi}{\psi}
+=\ket{\psi},
+\end{equation}
+also ist \(\ket{\psi}\) ein Eigenvektor zum Eigenwert \(1\). Ist \(\ket{\phi}\) orthogonal zu \(\ket{\psi}\), so gilt
+\begin{equation}
+\rho_\psi\ket{\phi}
+=\ket{\psi}\braket{\psi}{\phi}
+=0.
+\end{equation}
+Jede zu \(\ket{\psi}\) orthogonale Richtung hat daher den Eigenwert null.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_08_figure_06.png}
+\caption{Die Dichtematrix eines reinen Zustands wirkt als Projektor: \(\rho\ket{\psi}=\ket{\psi}\).}
+\lectureframe{00:09:32}
+\end{figure}
+
+\section{Erwartungswerte aus der Spur}
+
+Die Rechenregel für eine Dichtematrix lautet
+\begin{equation}
+\overline{M}=\operatorname{Tr}(\rho M),
+\end{equation}
+Dabei ist \(M\) eine Observable. Für zwei Faktoren ergibt die zyklische Eigenschaft der Spur
+\begin{equation}
+\operatorname{Tr}(\rho M)=\operatorname{Tr}(M\rho),
+\end{equation}
+unabhängig davon, ob \(\rho\) und \(M\) kommutieren.
+
+In jeder Orthonormalbasis \(\{\ket{i}\}\) gilt
+\begin{equation}
+\operatorname{Tr}X=\sum_i\bra{i}X\ket{i}.
+\end{equation}
+Der Zahlenwert hängt nicht von der Basis ab. Für einen reinen Zustand gilt
+\begin{align}
+\overline{M}
+&=\operatorname{Tr}\!\left(\ket{\psi}\bra{\psi}M\right) \\
+&=\sum_i\braket{i}{\psi}\bra{\psi}M\ket{i} \\
+&=\bra{\psi}M\left(\sum_i\ket{i}\bra{i}\right)\ket{\psi} \\
+&=\bra{\psi}M\ket{\psi}.
+\end{align}
+Die Vollständigkeitsrelation
+\begin{equation}
+\sum_i\ket{i}\bra{i}=I,
+\end{equation}
+führt die Regel für die Dichtematrix auf den vertrauten Erwartungswert eines reinen Zustands zurück.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_07.png}
+\caption{Spurberechnung für einen Projektor auf einen reinen Zustand und die Vollständigkeitsrelation.}
+\lectureframe{00:14:25}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:38}
+\audiencequestion{Sollte die linke Seite \(\overline{M}\) sein, also der Mittelwert von \(M\)?}
+\lecturerresponse{Ja. Die Spur ist nicht der Operator \(M\) selbst, sondern der skalare Erwartungswert \(\overline{M}\).}
+\end{classroomqa}
+
+Für eine allgemeine Dichtematrix wählen wir ihre Eigenbasis:
+\begin{equation}
+\rho\ket{j}=\lambda_j\ket{j}.
+\end{equation}
+Fügen wir zwischen \(\rho\) und \(M\) eine vollständige Zustandsbasis ein:
+\begin{align}
+\overline{M}
+&=\sum_i\bra{i}\rho M\ket{i} \\
+&=\sum_{i,j}\bra{i}\rho\ket{j}\bra{j}M\ket{i} \\
+&=\sum_{i,j}\lambda_j\delta_{ij}\bra{j}M\ket{i} \\
+&=\sum_j\lambda_j\bra{j}M\ket{j}.
+\end{align}
+Dies ist ein gewöhnlicher gewichteter Mittelwert: \(\lambda_j\) ist die Wahrscheinlichkeit für den \(j\)-ten Eigenzustand, und \(\bra{j}M\ket{j}\) ist der Erwartungswert von \(M\) in diesem Zustand.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:12}
+\audiencequestion{Warum werden in dem letzten Matrixelement beide Indizes zu \(j\), und über welchen Index wird noch summiert?}
+\lecturerresponse{Da \(\rho\) in dieser Basis diagonal ist, gilt \(\bra{i}\rho\ket{j}=\lambda_j\delta_{ij}\); daher bleiben nur Terme mit \(i=j\) übrig. Die ursprüngliche Doppelsumme fällt zu einer einfachen Summe zusammen, die man als Summe über \(j\) bezeichnen kann. Die Bezeichnung eines stummen Summationsindex hat keine physikalische Bedeutung.}
+\end{classroomqa}
+
+\section{Entropie als fehlende Information}
+
+Für eine klassische Wahrscheinlichkeitsverteilung \(\{p_i\}\) definieren wir
+\begin{equation}
+S=-\sum_i p_i\log p_i,
+\end{equation}
+Dabei verstehen wir \(0\log 0\) als den Grenzwert \(0\). Ist eine Wahrscheinlichkeit gleich \(1\) und sind alle anderen null, so gilt \(S=0\): Der Zustand ist bekannt. Sind alle \(n\) Möglichkeiten gleich wahrscheinlich, gilt
+\begin{equation}
+p_i=\frac{1}{n},
+\qquad
+S=-n\left(\frac{1}{n}\log\frac{1}{n}\right)=\log n.
+\end{equation}
+Die Entropie wächst also, wenn sich die Wahrscheinlichkeitsverteilung über mehr relevante Möglichkeiten verteilt. Grob gesagt ist \(e^S\) bei Verwendung des natürlichen Logarithmus die effektive Anzahl ähnlich stark gewichteter Zustände.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_08_figure_08.png}
+\caption{Entropie einer Wahrscheinlichkeitsverteilung und ihr Wert \(S=\log n\) bei gleichen Wahrscheinlichkeiten.}
+\lectureframe{00:21:08}
+\end{figure}
+
+Für eine Dichtematrix wenden wir dieselbe Definition auf ihre Eigenwerte an:
+\begin{equation}
+S(\rho)=-\sum_i\lambda_i\log\lambda_i
+=-\operatorname{Tr}(\rho\log\rho).
+\end{equation}
+Der erste Ausdruck wird unmittelbar benötigt; die Spurform hebt hervor, dass das Ergebnis basisunabhängig ist.
+
+\section{Ein zusammengesetztes System und ein lokales Experiment}
+
+Betrachten wir zwei Teilsysteme, \(A\) und \(B\). Einen Basisvektor schreiben wir als \(\ket{a,b}\). Hat \(A\) \(N\) Basiszustände und \(B\) \(n\), so hat das zusammengesetzte System \(Nn\) Basiszustände. Die beiden Systeme müssen nicht gleichartig sein: Das eine könnte ein Spin mit zwei Zuständen und das andere ein Atom mit drei Zuständen sein.
+
+Der allgemeinste reine Zustand des Paars lautet
+\begin{equation}
+\ket{\Psi}
+=\sum_{a,b}\psi(a,b)\ket{a,b},
+\qquad
+\sum_{a,b}|\psi(a,b)|^2=1.
+\end{equation}
+Nun messe Alice eine Observable \(M_A\), die nur auf das Teilsystem \(A\) wirkt. Im Hilbertraum des Gesamtsystems lautet der Operator \(M_A\otimes I_B\). Seine Matrixelemente sind
+\begin{equation}
+\bra{a',b'}M_A\otimes I_B\ket{a,b}
+=\bra{a'}M_A\ket{a}\,\delta_{b'b}.
+\end{equation}
+Der Index \(B\) bleibt unberührt.
+
+Schreiben wir den Erwartungswert vollständig aus:
+\begin{align}
+\expect{M_A}
+&=\bra{\Psi}M_A\otimes I_B\ket{\Psi} \\
+&=\sum_{a',b'}\sum_{a,b}
+\psi^*(a',b')\psi(a,b)
+\bra{a'}M_A\ket{a}\delta_{b'b} \\
+&=\sum_{a',a,b}
+\psi^*(a',b)\psi(a,b)
+\bra{a'}M_A\ket{a}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:12}
+\audiencequestion{Warum sind die Indizes am Bra gestrichen, die am Ket aber nicht?}
+\lecturerresponse{Bra und Ket werden vor der Auswertung des Matrixelements unabhängig voneinander summiert, daher benötigen sie unterschiedliche stumme Indizes. Die Striche unterscheiden die Bra-Indizes von den Ket-Indizes. Der Operator und die Skalarprodukte legen dann fest, welche dieser Indizes übereinstimmen müssen.}
+\end{classroomqa}
+
+Halten wir \(a\) und \(a'\) fest und führen die Summe über \(b\) aus. Das Ergebnis ist eine Matrix auf dem Teilsystem \(A\):
+\begin{equation}
+\boxed{
+\rho_A(a,a')
+=\sum_b\psi(a,b)\psi^*(a',b)
+}.
+\end{equation}
+Dies ist die reduzierte Dichtematrix von \(A\), oder gleichbedeutend die partielle Spur des Projektors auf den reinen Zustand über \(B\):
+\begin{equation}
+\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}.
+\end{equation}
+Der lokale Erwartungswert lautet nun
+\begin{equation}
+\expect{M_A}
+=\sum_{a,a'}\rho_A(a,a')\bra{a'}M_A\ket{a}
+=\operatorname{Tr}_A(\rho_A M_A).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_09.png}
+\caption{Der Index \(B\) wird aus der Summe eliminiert; übrig bleibt eine Matrix mit den beiden Indizes \(A\).}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:35:39}
+\audiencequestion{Ist die lokale Observable einfach die Identität auf dem Teilsystem \(B\)?}
+\lecturerresponse{Genau. \(M_A\otimes I_B\) kann die Koordinate \(A\) ändern, ändert aber \(b\) nicht und hängt auch sonst nicht davon ab. Deshalb ist ihr Matrixelement im \(B\)-Raum gleich \(\delta_{b'b}\).}
+\end{classroomqa}
+
+Jede Vorhersage für Experimente, die auf \(A\) beschränkt sind, ist daher in \(\rho_A\) enthalten. Bob muss sein Teilsystem nicht messen. Schon dadurch, dass Alice die Freiheitsgrade von \(B\) nicht nutzt, wird ihre Beschreibung zu einer Dichtematrix.
+
+\section{Ein reines Gesamtsystem kann gemischte Teilsysteme haben}
+
+Das Gesamtsystem befindet sich im reinen Zustand \(\ket{\Psi}\), doch \(\rho_A\) hat im Allgemeinen mehrere von null verschiedene Eigenwerte. Vollständige Kenntnis des Gesamtsystems bedeutet nicht, dass für jeden Teil ein Zustandsvektor existiert. Katze und Gewehr können gemeinsam durch einen verschränkten Zustandsvektor beschrieben werden; die Katze allein wird dann durch eine reduzierte Dichtematrix beschrieben.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:25}
+\audiencequestion{Kann man \(\operatorname{Tr}(M\rho)\) durch \((\operatorname{Tr}M)(\operatorname{Tr}\rho)\) ersetzen?}
+\lecturerresponse{Nein. Die Spur eines Produkts ist im Allgemeinen nicht das Produkt der Spuren. Die Zyklizität erlaubt \(\operatorname{Tr}(M\rho)=\operatorname{Tr}(\rho M)\), aber sie faktorisiert die Spur nicht.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:49}
+\audiencequestion{Sind wir nur vom Basiszustand \(\ket{a,b}\) ausgegangen oder vom allgemeinsten reinen Zustand?}
+\lecturerresponse{Vom allgemeinsten reinen Zustand des zusammengesetzten Systems: \(\ket{\Psi}=\sum_{a,b}\psi(a,b)\ket{a,b}\). Ein einzelnes \(\ket{a,b}\) ist nur ein Basisvektor. Überraschend ist, dass selbst dieser vollständig spezifizierte Vektor des Gesamtsystems einen gemischten reduzierten Zustand ergeben kann.}
+\end{classroomqa}
+
+Der Unterschied zur klassischen Mechanik ist deutlich. Vollständige klassische Information über ein zusammengesetztes System legt jede seiner Koordinaten und damit auch jedes Teilsystem fest. Eine klassische Wahrscheinlichkeitsverteilung lässt sich zwar marginalisieren; ist die ursprüngliche Verteilung aber auf einen einzigen Phasenraumpunkt konzentriert, bleibt auch jede Randverteilung auf einen bestimmten Wert konzentriert. Reine Quantenzustände müssen diese Eigenschaft nicht haben.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:46}
+\audiencequestion{Worin unterscheidet sich die Summation über \(B\) von der Integration einer klassischen Orts--Geschwindigkeitsverteilung über die Geschwindigkeit?}
+\lecturerresponse{Die Operationen sehen ähnlich aus, doch ihre Grenzfälle für reine Zustände unterscheiden sich. Ein vollständig bekannter klassischer Phasenraumpunkt legt sowohl Ort als auch Geschwindigkeit fest, sodass beide Randverteilungen eindeutig bleiben. Ein vollständig bekannter verschränkter Quantenzustand kann für jedes der beiden Teilsysteme einen nichttrivialen gemischten Zustand ergeben. Die partielle Spur zeigt daher, dass in der Quantenmechanik die klassische Folgerung von einem reinen Gesamtsystem auf reine Teile nicht gilt.}
+\end{classroomqa}
+
+\section{Produktzustände: der Ausnahmefall}
+
+Wann bleibt \(\rho_A\) rein? Die Antwort lautet: Die Wellenfunktion muss faktorisieren:
+\begin{equation}
+\psi(a,b)=\phi(a)\chi(b).
+\end{equation}
+Nehmen wir an, \(\phi\) und \(\chi\) seien jeweils separat normiert. Einsetzen in die reduzierte Dichtematrix ergibt
+\begin{align}
+\rho_A(a,a')
+&=\sum_b\phi(a)\chi(b)\phi^*(a')\chi^*(b) \\
+&=\phi(a)\phi^*(a')\sum_b|\chi(b)|^2 \\
+&=\phi(a)\phi^*(a').
+\end{align}
+Also gilt
+\begin{equation}
+\rho_A=\ket{\phi}\bra{\phi}.
+\end{equation}
+Sie hat einen Eigenwert \(1\), alle übrigen Eigenwerte sind \(0\), und ihre Entropie ist null.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_10.png}
+\caption{Bei einer faktorisierten Wellenfunktion reduziert sich die Summe über \(B\) auf die Normierung von \(\chi\).}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:44:17}
+\audiencequestion{Ist \(\phi(a)\) selbst der Zustand des Systems \(A\)?}
+\lecturerresponse{Es ist die Wellenfunktionskomponente dieses Zustands. Genauer gilt \(\ket{\phi}=\sum_a\phi(a)\ket{a}\) und entsprechend \(\ket{\chi}=\sum_b\chi(b)\ket{b}\). Faktorisierung bedeutet \(\ket{\Psi}=\ket{\phi}\otimes\ket{\chi}\), also einen Produktzustand ohne Verschränkung zwischen \(A\) und \(B\).}
+\end{classroomqa}
+
+Für jede lokale Observable gilt
+\begin{equation}
+\expect{M_A}
+=\operatorname{Tr}(\rho_A M_A)
+=\bra{\phi}M_A\ket{\phi}.
+\end{equation}
+Das Teilsystem \(A\) verhält sich genau wie ein reiner Zustand \(\ket{\phi}\). Bei einem bipartiten reinen Zustand ist die Entropie von \(\rho_A\) daher ein Maß für die Produktstruktur: Null bedeutet einen Produktzustand, eine von null verschiedene Entropie bedeutet Verschränkung. Werte nahe null weisen auf schwache Verschränkung hin; Werte nahe dem Maximum auf einen Zustand, der über diese Bipartition weit von jedem Produktzustand entfernt ist.
+
+\section{Der Singulettzustand: reines Gesamtsystem und maximale lokale Unkenntnis}
+
+Betrachten wir das Zwei-Spin-Singulett
+\begin{equation}
+\ket{\Psi^-}
+=\frac{1}{\sqrt{2}}
+\left(
+\ket{\uparrow\downarrow}
+-\ket{\downarrow\uparrow}
+\right).
+\end{equation}
+Seine von null verschiedenen Wellenfunktionskomponenten sind
+\begin{equation}
+\psi(\uparrow,\downarrow)=\frac{1}{\sqrt{2}},
+\qquad
+\psi(\downarrow,\uparrow)=-\frac{1}{\sqrt{2}},
+\end{equation}
+während \(\psi(\uparrow,\uparrow)=\psi(\downarrow,\downarrow)=0\) gilt.
+
+Spuren wir den Spin \(2\) aus. Die Diagonaleinträge sind
+\begin{align}
+\rho_1(\uparrow,\uparrow)
+&=|\psi(\uparrow,\uparrow)|^2
+ +|\psi(\uparrow,\downarrow)|^2
+=\frac{1}{2}, \\
+\rho_1(\downarrow,\downarrow)
+&=|\psi(\downarrow,\uparrow)|^2
+ +|\psi(\downarrow,\downarrow)|^2
+=\frac{1}{2}.
+\end{align}
+Der Nebendiagonaleintrag ist
+\begin{align}
+\rho_1(\uparrow,\downarrow)
+&=\psi(\uparrow,\uparrow)\psi^*(\downarrow,\uparrow)
+ +\psi(\uparrow,\downarrow)\psi^*(\downarrow,\downarrow) \\
+&=0,
+\end{align}
+und auch sein konjugierter Wert verschwindet. Somit gilt
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&0\\[2pt]
+0&\frac12
+\end{pmatrix}
+=\frac12 I.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_11.png}
+\caption{Die vier Einträge der reduzierten Dichtematrix eines Spins im Singulettzustand.}
+\lectureframe{00:55:35}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:58}
+\audiencequestion{Wie groß ist die Entropie des reduzierten Zustands eines einzelnen Spins?}
+\lecturerresponse{Beide Eigenwerte sind \(1/2\), also gilt
+\[
+S_1=-2\left(\frac12\log\frac12\right)=\log 2.
+\]
+Dies ist die maximal mögliche Entropie eines Teilsystems mit zwei Zuständen. Gleiche \emph{Eigenwerte}, nicht gleiche Matrixeinträge in einer beliebigen Basis, kennzeichnen den maximal gemischten Zustand.}
+\end{classroomqa}
+
+Der Erwartungswert des Spins verschwindet entlang jeder Achse:
+\begin{equation}
+\expect{\bm{\sigma}\cdot\hat{\bm n}}
+=\operatorname{Tr}\!\left(
+\rho_1\,\bm{\sigma}\cdot\hat{\bm n}
+\right)
+=\frac12\operatorname{Tr}
+\left(\bm{\sigma}\cdot\hat{\bm n}\right)
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:58:37}
+\audiencequestion{Warum ist die Spur von \(\bm{\sigma}\cdot\hat{\bm n}\) für jede Richtung null?}
+\lecturerresponse{Jede Pauli-Matrix ist spurfrei. Da \(\bm{\sigma}\cdot\hat{\bm n}=n_1\sigma_1+n_2\sigma_2+n_3\sigma_3\) gilt, folgt aus der Linearität der Spur für jeden Einheitsvektor \(\hat{\bm n}\) der Wert null. Der Spin wird daher mit gleicher Wahrscheinlichkeit parallel oder antiparallel zu jeder gewählten Achse gemessen.}
+\end{classroomqa}
+
+Das gesamte Paar befindet sich in einem bestimmten reinen Zustand und hat Entropie null. Jeder Spin für sich ist maximal gemischt. Das ist keine Unkenntnis aufgrund unvollständiger Aufzeichnungen der Präparation, sondern der durch Verschränkung bedingte lokale Zustand.
+
+\section{Ein Produktzustand mit gleichen Amplituden}
+
+Betrachten wir nun
+\begin{equation}
+\ket{\Phi}
+=\frac12\left(
+\ket{\uparrow\uparrow}
++\ket{\uparrow\downarrow}
++\ket{\downarrow\uparrow}
++\ket{\downarrow\downarrow}
+\right).
+\end{equation}
+Alle vier Amplituden sind gleich \(1/2\), daher folgt die Normierung aus vier Beiträgen von jeweils \(1/4\). Das Ausspuren des Spins \(2\) ergibt
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}.
+\end{equation}
+Die Spur ist \(1\), aber
+\begin{equation}
+\det\rho_1
+=\frac14-\frac14
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:23}
+\audiencequestion{Wie bestimmen Spur und Determinante hier die beiden Eigenwerte?}
+\lecturerresponse{Bei einer \(2\times2\)-Matrix ist die Summe der Eigenwerte gleich der Spur und ihr Produkt gleich der Determinante. Also gilt \(\lambda_1+\lambda_2=1\) und \(\lambda_1\lambda_2=0\), woraus zwingend das Paar \(\{1,0\}\) folgt. Der reduzierte Zustand ist rein und seine Entropie ist null.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:18}
+\audiencequestion{Was tun die beiden nicht verschränkten Spins tatsächlich?}
+\lecturerresponse{Sie sind beide entlang der positiven \(x\)-Achse ausgerichtet. Das lässt sich an der Faktorisierung erkennen:
+\[
+\ket{\Phi}
+=\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2}
+\otimes
+\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2},
+\]
+Oder man weist es experimentell durch Berechnung der Erwartungswerte der Pauli-Matrizen nach.}
+\end{classroomqa}
+
+Für die \(z\)-Komponente gilt
+\begin{equation}
+\sigma_3=
+\begin{pmatrix}
+1&0\\[2pt]
+0&-1
+\end{pmatrix},
+\qquad
+\operatorname{Tr}(\rho_1\sigma_3)=0.
+\end{equation}
+Für die \(x\)-Komponente gilt
+\begin{equation}
+\sigma_1=
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix},
+\end{equation}
+und
+\begin{align}
+\rho_1\sigma_1
+&=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}, \\
+\operatorname{Tr}(\rho_1\sigma_1)&=1.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_03.png}
+\caption{Die \(\sigma_1\)-Matrixrechnung für den reduzierten Zustand mit gleichen Amplituden.}
+\lectureframe{01:05:13}
+\end{figure}
+
+Somit gilt \(\expect{\sigma_1}=1\), während \(\expect{\sigma_2}=\expect{\sigma_3}=0\). Eine Abweichung der Amplituden von der exakten Faktorisierung ändert die Eigenwerte im Allgemeinen von \(\{1,0\}\) zu zwei von null verschiedenen Werten. Die daraus resultierende kleine Entropie misst eine geringe Verschränkung.
+
+\section{Wessen Entropie ist das?}
+
+Die gerade berechnete Entropie gehört zu einem Teilsystem. Im Singulettbeispiel gilt
+\begin{equation}
+S(\rho_{12})=0,
+\qquad
+S(\rho_1)=S(\rho_2)=\log 2.
+\end{equation}
+Das Gesamtsystem ist rein, während jeder Teil gemischt ist. Die Verschränkungsentropie folgt daher nicht der naiven Additivitätsregel \(S_{12}=S_1+S_2\). Bei einem bipartiten reinen Zustand haben die beiden reduzierten Dichtematrizen dieselben von null verschiedenen Eigenwerte; folglich sind ihre Entropien gleich, obwohl die Entropie des Gesamtsystems verschwindet.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:03}
+\audiencequestion{Ist letztlich jede Dichtematrix eine Verschränkungsdichtematrix?}
+\lecturerresponse{In der Praxis kann man gewöhnliche Ungewissheit beschreiben, ohne zu verfolgen, worin die fehlende Information aufgezeichnet ist. Bezieht man den Präparationsapparat, die Umgebung oder den Beobachter mit ein, lässt sich diese Ungewissheit oft als Verschränkung mit unbeobachteten Freiheitsgraden auffassen. Mathematisch ist die Aussage exakt: Jede Dichtematrix besitzt eine Purifikation in einem größeren Hilbertraum, auch wenn diese Purifikation nicht eindeutig eine physikalische Präparationsgeschichte festlegt.}
+\end{classroomqa}
+
+\section{Von der diskreten klassischen Bewegung zur Quantenbewegung}
+
+Wir wenden uns nun vorübergehend von der Verschränkung ab und fragen, wie sich Zustände mit der Zeit ändern. Für ein klassisches System mit endlich vielen Konfigurationen ist eine reversible Zeitentwicklung eine Permutation. Jeder Zustand hat genau einen Nachfolger und einen Vorgänger; die Bewegung zerfällt in Zyklen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_12.png}
+\caption{Klassische reversible Zeitentwicklung, dargestellt durch Pfeile zwischen diskreten Konfigurationen.}
+\lectureframe{01:11:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:11:51}
+\audiencequestion{Warum muss auch die Zeit diskrete Schritte machen, wenn die Konfigurationen diskret sind?}
+\lecturerresponse{Ein streng klassisches Modell mit zwei Zuständen enthält keine Zwischenkonfigurationen, durch die ein kontinuierlicher Weg führen könnte. Dreht man eine physikalische Münze langsam, kommt ihre Orientierung als zusätzliche kontinuierliche Koordinate hinzu; damit handelt es sich nicht mehr um ein Modell mit zwei Konfigurationen. Ein quantenmechanisches System mit zwei Zuständen ist anders: Sein Hilbertraum enthält eine kontinuierliche Familie von Überlagerungen, obwohl eine Orthonormalbasis nur zwei Elemente hat.}
+\end{classroomqa}
+
+Ein Zustand mit Spin \(\tfrac12\) kann sich durch Überlagerungen kontinuierlich von \(\ket{\uparrow}\) in Richtung \(\ket{\downarrow}\) drehen. Eine endliche Dimension bedeutet nicht, dass es nur endlich viele Zustandsvektoren gibt. Dadurch ist eine kontinuierliche Zeitentwicklung in einem diskreten Quantensystem möglich.
+
+Auch eine reversible mikroskopische Dynamik erhält Unterscheidungen. Zwei verschiedene klassische Anfangsbedingungen gehen nicht in einem einzigen mikroskopischen Zustand auf, denn dabei ginge verloren, welche Anfangsbedingung vorlag. In der Hamilton-Mechanik geht diese Umkehrbarkeit mit dem Satz von Liouville einher: Das Phasenraumvolumen bleibt erhalten.
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:26}
+\audiencequestion{Was ist mit nichtlinearen Bifurkationen, bei denen sich mehrere Anfangsbedingungen demselben stationären Zustand annähern?}
+\lecturerresponse{Attraktoren treten in effektiven dissipativen Beschreibungen auf, in denen Freiheitsgrade der Umgebung verworfen wurden. Die fundamentale mikroskopische Hamilton-Dynamik bleibt umkehrbar; Information kann auf unbeobachtete Variablen übertragen werden, aber verschiedene vollständige Zustände werden nicht buchstäblich zu einem einzigen vollständigen Zustand.}
+\end{classroomqa}
+
+Die quantenmechanische Aussage lautet Unitarität. Orthogonale Anfangszustände entwickeln sich zu orthogonalen Endzuständen, und allgemeiner bleibt jedes Skalarprodukt erhalten.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:50}
+\audiencequestion{Müssen beide Zustände genau demselben Einfluss ausgesetzt sein? Was geschieht mit anfänglichen Zuständen mit Spin \(z\)-auf und \(z\)-ab in einem Magnetfeld in \(x\)-Richtung?}
+\lecturerresponse{Auf beide Zustände muss derselbe Zeitentwicklungsoperator wirken. Im transversalen Feld präzedieren die beiden Spins, doch ihre Bloch-Vektoren bleiben entgegengesetzt und die Zustandsvektoren orthogonal. Unterschiedliche äußere Einwirkungen zu vergleichen, käme dem Vergleich verschiedener Zeitentwicklungsoperatoren gleich.}
+\end{classroomqa}
+
+\section{Linearität und Unitarität}
+
+Das erste Prinzip der quantenmechanischen Zeitentwicklung ist die Linearität:
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+Der Operator hängt von der verstrichenen Zeit ab und erfüllt
+\begin{equation}
+U(0)=I.
+\end{equation}
+Wie die Linearität der Quantenmechanik selbst wird diese Regel durch ihren empirischen Erfolg gerechtfertigt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_13.png}
+\caption{Der Zustand zum Zeitpunkt \(t\) ergibt sich, indem der lineare Operator \(U(t)\) auf den Anfangszustand wirkt.}
+\lectureframe{01:19:00}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:01}
+\audiencequestion{Was muss \(U(t)\) für \(t=0\) sein?}
+\lecturerresponse{Er muss die Identität sein. Bei verschwindender verstrichener Zeit bleibt der Zustand für jeden möglichen Anfangsvektor unverändert.}
+\end{classroomqa}
+
+Das zweite Prinzip ist die Erhaltung der Skalarprodukte:
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Für \(\phi=\psi\) erhält dies die Normierung und damit die Gesamtwahrscheinlichkeit. Sind die Anfangszustände orthogonal, bleibt ihre perfekte Unterscheidbarkeit erhalten. Für beliebige Zustände bleibt ihre gesamte geometrische Beziehung erhalten.
+
+Das Bra entwickelt sich gemäß
+\begin{equation}
+\bra{\phi(t)}
+=\bra{\phi(0)}U^\dagger(t),
+\end{equation}
+also
+\begin{align}
+\braket{\phi(t)}{\psi(t)}
+&=\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)} \\
+&=\braket{\phi(0)}{\psi(0)}.
+\end{align}
+Da diese Gleichheit für jedes Paar von Anfangsvektoren gilt,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_04.png}
+\caption{Zeitentwicklung von Ket und Bra sowie die Bedingung an das Skalarprodukt, die zu \(U^\dagger U=I\) führt.}
+\lectureframe{01:23:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:22:10}
+\audiencequestion{Warum erhält das Bra den Faktor \(U^\dagger\) statt \(U\)?}
+\lecturerresponse{Die hermitesche Konjugation kehrt die Reihenfolge der Faktoren um und ersetzt jeden Operator durch seine hermitesch konjugierte Version:
+\[
+\bigl(U\ket{\phi}\bigr)^\dagger
+=\bra{\phi}U^\dagger.
+\]
+Das ist die erforderliche duale Wirkung, damit die Skalarprodukte konsistent bleiben.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:34}
+\audiencequestion{Wenn \(U\) nur eine komplexe Zahl wäre, was würde dann \(U^\dagger U=1\) bedeuten?}
+\lecturerresponse{Es würde \(|U|=1\) bedeuten, also liegt \(U=e^{i\theta}\) auf dem Einheitskreis. Eine unitäre Matrix ist das Operatoranalogon einer reinen Phase: Sie erhält Längen und Skalarprodukte.}
+\end{classroomqa}
+
+\section{Infinitesimale Zeitentwicklung und der Hamiltonoperator}
+
+Sei \(\epsilon\) ein sehr kleines Zeitintervall. Da \(U(0)=I\) gilt, schreiben wir die Entwicklung erster Ordnung
+\begin{equation}
+U(\epsilon)=I-i\epsilon h+O(\epsilon^2).
+\end{equation}
+Das Minuszeichen und der Faktor \(i\) sind zweckmäßige Konventionen. Die hermitesche Konjugation ergibt
+\begin{equation}
+U^\dagger(\epsilon)
+=I+i\epsilon h^\dagger+O(\epsilon^2).
+\end{equation}
+Unitarität verlangt dann
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon) \\
+&=\left(I+i\epsilon h^\dagger\right)
+\left(I-i\epsilon h\right)+O(\epsilon^2) \\
+&=I+i\epsilon(h^\dagger-h)+O(\epsilon^2).
+\end{align}
+Der Term erster Ordnung muss verschwinden:
+\begin{equation}
+\boxed{h^\dagger=h}.
+\end{equation}
+Der infinitesimale Generator ist hermitesch.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_14.png}
+\caption{Unitarität erster Ordnung erzwingt, dass der infinitesimale Generator hermitesch ist.}
+\lectureframe{01:29:35}
+\end{figure}
+
+In der vorläufigen Konvention oben hat \(h\) die Einheit einer Kreisfrequenz. Um die physikalischen Einheiten wiederherzustellen, definieren wir den Energieoperator
+\begin{equation}
+H=\hbar h.
+\end{equation}
+Dieser hermitesche Operator ist der Hamiltonoperator; seine Eigenwerte sind die Energieniveaus.
+
+Wir wenden den infinitesimalen Operator auf einen Zustand an:
+\begin{equation}
+\ket{\psi(\epsilon)}
+=\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(0)}
++O(\epsilon^2).
+\end{equation}
+Wir subtrahieren den Anfangszustand, dividieren durch \(\epsilon\) und bilden den Grenzwert:
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+Äquivalent dazu gilt
+\begin{equation}
+\boxed{
+i\hbar\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+Dies ist die allgemeine Schr\"odinger-Gleichung.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_15.png}
+\caption{Der infinitesimale Differenzenquotient wird zur Zeitableitung des Zustands.}
+\lectureframe{01:32:18}
+\end{figure}
+
+Der Hamiltonoperator hängt vom physikalischen Aufbau ab. Er kann sich mit der Zeit ändern, wenn sich ein äußeres Magnetfeld oder eine andere Steuergröße ändert. Ist der Aufbau zeitunabhängig, ist \(H\) ein fester hermitescher Operator.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:30}
+\audiencequestion{Folgt aus der Erhaltung der Skalarprodukte, dass anfangs nicht verschränkte Systeme nicht verschränkt bleiben können?}
+\lecturerresponse{Nein. Unitarität erhält die Skalarprodukte vollständiger Zustandsvektoren, nicht aber die Produktstruktur einer gewählten Zerlegung. Ein Wechselwirkungs-Hamiltonoperator kann einen Produktzustand in einen verschränkten Zustand überführen. Könnten unitäre Transformationen dies nicht bewirken, könnten Messungen keine Korrelationen zwischen einem System und einem Messgerät herstellen.}
+\end{classroomqa}
+
+\section{Die Einheiten der Entropie}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:08}
+\audiencequestion{Hat Verschränkung eine physikalische Einheit wie Joule?}
+\lecturerresponse{Verschränkungsentropie ist ein Informationsmaß, keine Energie. Bei Verwendung des natürlichen Logarithmus wird sie in Nats gemessen, bei Logarithmen zur Basis zwei in Bits. Beides sind dimensionslose Zählkonventionen.}
+\end{classroomqa}
+
+Die thermodynamische Schreibweise kann diesen Punkt verschleiern, weil die Boltzmann-Konstante Temperatur in Kelvin mit Energie verknüpft:
+\begin{equation}
+\expect{K}_{\mathrm{monatomic}}
+=\frac32 k_{\mathrm B}T.
+\end{equation}
+Die Beziehung für die reversible Wärme lautet
+\begin{equation}
+\delta Q_{\mathrm{rev}}=T\,\mathrm dS_{\mathrm{th}}.
+\end{equation}
+Ist die Informationsentropie gegeben durch
+\begin{equation}
+S_{\mathrm{info}}=-\sum_i p_i\log p_i,
+\end{equation}
+so lautet die konventionelle thermodynamische Entropie
+\begin{equation}
+S_{\mathrm{th}}=k_{\mathrm B}S_{\mathrm{info}}.
+\end{equation}
+Setzt man \(k_{\mathrm B}=1\), wird die Temperatur in Energieeinheiten gemessen und die Entropie bleibt dimensionslos. Die Boltzmann-Konstante erweist sich dann als Umrechnungsfaktor und nicht als neue Art von Einheit für Verschränkung. Der historische Exkurs, der Boltzmanns statistische Ideen mit Einsteins Arbeit von 1905 über die Brownsche Bewegung verbindet, ändert nichts an der informationstheoretischen Definition.
+
+\section{Energieeigenzustände und Phase}
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:54}
+\audiencequestion{Warum wird der hermitesche Generator \(H\) mit der Energie identifiziert?}
+\lecturerresponse{Unitarität allein beweist nur, dass der Generator hermitesch ist. Seine Identifikation mit der Energie ist eine zusätzliche physikalische Aussage: Energie erzeugt Zeittranslationen. Bei einem zeitunabhängigen Hamiltonoperator ist derselbe Operator, der die Zeitentwicklung bestimmt, eine Erhaltungsgröße; seine Eigenwerte sind die stationären Energieniveaus. Konkrete Hamiltonoperatoren liefern den experimentellen Gehalt dieser Identifikation.}
+\end{classroomqa}
+
+Die Beziehung zwischen den Planck-Konstanten und der Frequenz lautet
+\begin{equation}
+E=h\nu=\hbar\omega,
+\qquad
+\omega=2\pi\nu,
+\qquad
+h=2\pi\hbar.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:30}
+\audiencequestion{Sollte die Evolutionsgleichung \(h\), \(\hbar\) oder einen zusätzlichen Faktor \(2\pi\) enthalten?}
+\lecturerresponse{Mit der Kreisfrequenz \(\omega\) lautet die Gleichung \(E=\hbar\omega\), und die Schr\"odinger-Gleichung enthält \(\hbar\). Mit der gewöhnlichen Frequenz \(\nu\) lautet die entsprechende Beziehung \(E=h\nu\). Der Faktor \(2\pi\) wird vollständig durch \(\omega=2\pi\nu\) und \(h=2\pi\hbar\) berücksichtigt.}
+\end{classroomqa}
+
+Nehmen wir an, der Anfangszustand sei ein Energieeigenvektor:
+\begin{equation}
+H\ket{\psi(0)}=E\ket{\psi(0)}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:18}
+\audiencequestion{Wenn der Zustand ein Energieeigenvektor bleibt, bedeutet das, dass er sich nicht ändert?}
+\lecturerresponse{Er kann einen zeitabhängigen komplexen Faktor annehmen und dabei ein Eigenvektor mit demselben Eigenwert bleiben. Aufgrund der Unitarität kann dieser Faktor nur eine Phase sein. Der Strahl bleibt daher stationär, auch wenn sich der Ket in seiner Phase dreht.}
+\end{classroomqa}
+
+Wir schreiben
+\begin{equation}
+\ket{\psi(t)}=f(t)\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_05.png}
+\caption{Ein Energieeigenzustand bleibt bis auf einen Skalarfaktor \(f(t)\) in derselben Richtung im Hilbertraum.}
+\lectureframe{01:43:54}
+\end{figure}
+
+Einsetzen in die Schr\"odinger-Gleichung ergibt
+\begin{align}
+i\hbar\frac{\mathrm d f}{\mathrm dt}\ket{\psi(0)}
+&=f(t)H\ket{\psi(0)} \\
+&=E f(t)\ket{\psi(0)}.
+\end{align}
+Kürzen des gemeinsamen Vektors ergibt:
+\begin{equation}
+\frac{\mathrm d f}{\mathrm dt}
+=-\frac{iE}{\hbar}f(t).
+\end{equation}
+Mit \(f(0)=1\) gilt:
+\begin{equation}
+f(t)=e^{-iEt/\hbar},
+\qquad
+\ket{\psi(t)}=e^{-iEt/\hbar}\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_16.png}
+\caption{Die Energieeigenwertgleichung und die daraus folgende Phasenentwicklung.}
+\lectureframe{01:46:10}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{Was ist der Koeffizient von \(t\) in der Phase \(e^{-iEt/\hbar}\)?}
+\lecturerresponse{Es ist die Kreisfrequenz,
+\[
+\omega=\frac{E}{\hbar}.
+\]
+Äquivalent dazu gilt \(E=\hbar\omega\). Ein reeller Koeffizient im Exponenten würde eine Wachstums- oder Abklingrate beschreiben; der imaginäre Exponent steht hier für eine unitäre Phasendrehung.}
+\end{classroomqa}
+
+Diese Phasen-Frequenz-Beziehung und die Schr\"odinger-Gleichung sind zwei Formen desselben Zeitentwicklungsgesetzes. Die Gleichung ist allgemein; ein freies Teilchen, ein Teilchen in einem Potential und ein Spin in einem Magnetfeld unterscheiden sich durch ihre Hamiltonoperatoren. Die Wahl und Lösung dieser Hamiltonoperatoren sind der nächste Schritt.

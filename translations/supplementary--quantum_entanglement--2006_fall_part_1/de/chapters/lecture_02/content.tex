@@ -1,0 +1,354 @@
+\chapter{Qubits, komplexe Zustandsvektoren und Observablen}
+
+\lectureoverview{Der Spin eines einzelnen Elektrons ist das erste wirklich quantenmechanische Bit. Man kann ihn relativ zu jeder beliebigen Raumrichtung präparieren, doch ein fest ausgerichteter Detektor liefert nur zwei mögliche Ergebnisse. Wir lassen das klassische Bild des Magneten scheitern und entwickeln dann den komplexen Vektorraum, die Wahrscheinlichkeitsregel und die Matrixsprache, die nötig sind, um zu beschreiben, was das Experiment tatsächlich bewirkt.}
+
+\section{Ein Spin und zwei Bedeutungen von Vektor}
+
+Ein klassisches Bit hat zwei mögliche Zustände, zwischen denen es keine weiteren gibt. Wir können sie \(0\) und \(1\), Kopf und Zahl oder oben und unten nennen; die Namen bezeichnen zwei verschiedene Punkte in einem klassischen Zustandsraum. Auch ein Quantenbit liefert bei einer festgelegten Messung zwei mögliche Ergebnisse, lässt sich aber nicht durch nur zwei Punkte im Zustandsraum beschreiben. Das einfachste Beispiel ist der Spin eines Elektrons.
+
+In diesem Beispiel gibt es zwei verschiedene Vektorbegriffe. Wer sie verwechselt, findet alles Folgende unnötig rätselhaft. Zunächst gibt es einen gewöhnlichen \emph{räumlichen Vektor}: einen Pfeil im dreidimensionalen Raum mit einem Betrag und einer Richtung. Das Elektron hat ein magnetisches Moment, das sich für unsere Zwecke wie ein winziger Magnet verhält. Sein Betrag ist fest, seine räumliche Richtung lässt sich jedoch durch eine Präparation festlegen.
+
+Das zweite Objekt ist ein abstrakter Vektor in einem komplexen Vektorraum. Dieser \emph{Zustandsvektor} beschreibt den Quantenzustand. Er ist nicht einfach der magnetische Pfeil in einer anderen Schreibweise. Räumliche Richtungen und Zustandsvektoren stehen in einem echten und wichtigen Zusammenhang, sind aber nicht ein und dasselbe Objekt. Diesen Zusammenhang werden wir Schritt für Schritt herleiten.
+
+\section{Das Scheitern des klassischen Bildes}
+
+Beginnen wir bewusst mit einer klassischen Erklärung. Wir bringen einen winzigen Magneten in ein starkes äußeres Magnetfeld. Ist er nicht bereits ausgerichtet, präzediert er um das Feld. Während er Energie abstrahlt, klingt die Präzession ab und der Magnet nimmt seine Orientierung mit der niedrigsten Energie ein. Indem wir die Richtung des angelegten Feldes wählen, die Relaxation abwarten und dann das Feld entfernen, scheinen wir das magnetische Moment in jeder gewünschten Richtung präparieren zu können.
+
+Derselbe Aufbau legt auch ein Nachweisverfahren nahe. Wir schalten ein Feld in einer gewählten Richtung ein und beobachten die Strahlung, die entsteht, während sich der kleine Magnet ausrichtet. Ein klassischer Magnet, der am Feld ausgerichtet ist, sollte keine Energie abstrahlen. Ein zunächst entgegengesetzt ausgerichteter Magnet sollte die größtmögliche Energiemenge abstrahlen; bei einem Zwischenwinkel sollte die Energiemenge dazwischenliegen. In diesem Bild hängt die abgestrahlte Energie kontinuierlich vom Winkel ab.
+
+\begin{figure}[htbp]\centering
+\begin{coursefitfigure}\begin{tikzpicture}[>=Latex,thick,scale=0.92]
+  \draw[rounded corners] (-0.2,-0.2) rectangle (3.0,3.4);
+  \node at (1.4,3.05) {\small preparation};
+  \draw[->,very thick] (1.4,0.45) -- (1.4,2.55);
+  \node[right] at (1.4,2.35) {\small applied field};
+  \fill (1.4,1.35) circle (2.3pt);
+  \draw[->,very thick] (1.4,1.35) -- (2.25,1.95);
+  \node[below] at (1.4,0.15) {\small choose a direction and wait};
+
+  \draw[->] (3.25,1.6) -- (4.25,1.6);
+
+  \draw[rounded corners] (4.5,-0.2) rectangle (8.8,3.4);
+  \node at (6.65,3.05) {\small measurement in a fixed direction};
+  \draw[->,very thick] (5.15,0.45) -- (5.15,2.55);
+  \fill (5.15,1.35) circle (2.3pt);
+  \node[anchor=west] at (5.7,2.0) {no photon};
+  \node[anchor=west] at (5.7,1.25) {one photon of fixed energy};
+\node[anchor=west] at (5.7,0.5) {no intermediate outcome};
+\end{tikzpicture}\end{coursefitfigure}\caption{Das experimentelle Rätsel: Auf eine kontinuierlich variable Präparation folgt ein Detektor mit nur zwei möglichen Ausgaben.}\end{figure}
+
+Für ein Elektron ist diese klassische Vorhersage falsch. Wird das Detektorfeld eingeschaltet, treten nur zwei Ergebnisse auf:
+\begin{enumerate}\item Es wird kein Photon emittiert.
+\item Es wird ein Photon mit der festen Energie emittiert, die dem Energieabstand zwischen dem unteren und oberen Niveau entspricht.\end{enumerate}
+Es gibt nie ein Photon, das einen beliebigen Bruchteil dieser Energie trägt. Die kontinuierliche klassische Reaktion ist auf eine binäre quantenmechanische Antwort zusammengeschrumpft.
+
+Die bei der Präparation verwendete Richtung ist nicht bedeutungslos geworden. Sie bestimmt die \emph{Wahrscheinlichkeiten} der beiden Ergebnisse. Präpariert man das Elektron relativ zum Detektor im Zustand „oben“, tritt das Ergebnis „oben“ mit Sicherheit ein. Präpariert man es im Zustand „unten“, erfolgt der Übergang mit Sicherheit. Präpariert man es horizontal, liefert ein vertikal ausgerichteter Detektor die beiden Ergebnisse gleich häufig:
+\begin{equation}
+  P(\text{up})=\frac12,
+  \qquad
+  P(\text{down})=\frac12.
+  \label{eq:l02-horizontal-probabilities}
+\end{equation}
+Eine kontinuierlich variable Familie von Präparationen führt also zu einer zweiwertigen Messung, deren Statistik sich kontinuierlich verändert.
+
+\begin{classroomqa}\lecturetimestamp{00:21:23}\audiencequestion{Könnte ein anderes kleines Objekt, vielleicht ein zweites Elektron, statt eines makroskopischen Magneten das Magnetfeld erzeugen?}\lecturerresponse{Das wäre möglich, doch dann bildeten die beiden Elektronen ein gemeinsames Quantensystem und könnten verschränkt werden. Genau darum wird es im Kurs gehen. Wir verschieben das, bis wir den Zustandsraum eines einzelnen Elektrons im Griff haben.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{00:22:17}\audiencequestion{Muss man die gesamte Präparation und Messung wiederholen, um die Wahrscheinlichkeitsverteilung zu bestimmen? Was geschieht, wenn wir dasselbe Elektron erneut messen?}\lecturerresponse{Ja. Für die ursprüngliche Verteilung sind wiederholte Versuche mit identischer Präparation erforderlich. Nach der ersten Messung ergibt eine Wiederholung derselben Messung an diesem Elektron dasselbe Resultat; durch die Messung wurde es relativ zu diesem Detektor präpariert. Das Abwarten eines Strahlungsübergangs ist selbst ein mögliches Präparationsverfahren.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{00:23:48}\audiencequestion{Gehen wir von einem freien Elektron aus, und bleibt das Magnetfeld ständig eingeschaltet?}\lecturerresponse{Wir betrachten ausschließlich den Spin-Freiheitsgrad und lassen die Position des Elektrons außer Acht, unabhängig davon, ob es sich frei bewegt oder anderweitig eingeschränkt ist. Ein großer Elektromagnet kann für die Präparation oder den Nachweis rasch eingeschaltet werden. Das vereinfachte Experiment soll ausschließlich Fragen zum Spin beantworten.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{00:25:22}\audiencequestion{Wird mit Sicherheit ein Photon emittiert, wenn das Elektron exakt im Zustand „unten“ präpariert und das Feld umgekehrt wird? Und woher kommt dessen Energie?}\lecturerresponse{Bei exakt entgegengesetzter Ausrichtung erfolgt der Übergang mit Wahrscheinlichkeit eins. Bei einer schrägen Präparation ist die Wahrscheinlichkeit geringer. Die Energie stammt letztlich aus der Arbeit, die beim Erzeugen oder Umkehren des äußeren Magnetfelds verrichtet wird; die Apparatur muss in der Energiebilanz berücksichtigt werden.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{00:27:31}\audiencequestion{Wann wird das Photon emittiert? Erfolgt der Übergang augenblicklich?}\lecturerresponse{Der Emissionszeitpunkt ist zufällig, wie die Zerfallszeit eines instabilen Zustands. Man kann eine charakteristische Lebensdauer oder Halbwertszeit angeben; ein stärkeres Feld verkürzt diese Zeitskala. Die Energie--Zeit-Unschärfe spielt in der genaueren Beschreibung eine Rolle, doch für unsere gegenwärtige Betrachtung zählen die beiden möglichen Ausgaben und ihre gemessenen Häufigkeiten.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{00:29:17}\audiencequestion{Würde ein Strahl aus einer Million identisch präparierter Elektronen einfach eine messbare Lichtintensität erzeugen?}\lecturerresponse{Ja. Die Intensität des Ensembles gibt die mittlere Übergangswahrscheinlichkeit wieder, während der Emissionszeitpunkt jedes einzelnen Elektrons zufällig bleibt. Ein Ensemble zeigt die Verteilung, die sich in einem einzelnen Versuch nicht erkennen lässt.}\end{classroomqa}
+
+Hier setzen wir an. Zwei isolierte klassische Punkte können die Detektorantworten codieren, aber nicht alle Präparationen, die die Wahrscheinlichkeiten dieser Antworten verändern. Wir brauchen einen anderen Zustandsraum.
+
+\section{Komplexe Zahlen und die Geometrie des Zustandsraums}
+
+Der benötigte Zustandsraum ist linear: Seine Elemente lassen sich addieren und mit Skalaren multiplizieren. Die Skalare sind komplexe Zahlen. Wir schreiben
+\begin{equation}
+  z=a+ib,
+  \qquad
+  i^2=-1,
+  \qquad
+  z^*=a-ib,
+  \label{eq:l02-complex-number}
+\end{equation}
+Dabei sind \(a\) und \(b\) reell. Die komplexe Konjugation ergibt die positive Größe
+\begin{align}
+  z^*z
+  &=(a-ib)(a+ib) \notag\\
+  &=a^2+b^2.
+  \label{eq:l02-complex-norm}
+\end{align}
+Diese einfache Aufhebung ist der algebraische Ansatzpunkt für die Wahrscheinlichkeitsregel.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\linewidth]{lecture_02_figure_02.png}
+\caption{Die komplexe Konjugation und \(z^*z\) werden an der Tafel hergeleitet, bevor Amplituden als Wahrscheinlichkeiten interpretiert werden.}
+\lectureframe{00:37:10}
+\end{figure}
+
+Ein komplexer Vektorraum enthält Objekte \(\ket a,\ket b,\ldots\), für die
+\begin{equation}
+  c\ket a,
+  \qquad
+  \ket a+\ket b
+\end{equation}
+wieder Vektoren sind, sofern \(c\) komplex ist. Spaltenvektoren liefern eine konkrete Darstellung:
+\begin{equation}
+  \begin{aligned}
+    \ket a&=
+    \begin{pmatrix}
+      a_1\\a_2\\ \vdots\\a_n
+    \end{pmatrix},
+    &
+    c\ket a&=
+    \begin{pmatrix}
+      ca_1\\ca_2\\ \vdots\\ca_n
+    \end{pmatrix},\\[0.7em]
+    \ket a+\ket b&=
+    \begin{pmatrix}
+      a_1+b_1\\a_2+b_2\\ \vdots\\a_n+b_n
+    \end{pmatrix}.
+  \end{aligned}
+  \label{eq:l02-vector-operations}
+\end{equation}
+Auch die komplexen Zahlen selbst bilden einen eindimensionalen komplexen Vektorraum. Für den Elektronenspin benötigen wir zwei Dimensionen.
+
+Jeder Spaltenvektor-Ket wird einem konjugierten Zeilenvektor-Bra zugeordnet:
+\begin{equation}
+  \ket a=
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  \quad\longleftrightarrow\quad
+  \bra a=
+  \begin{pmatrix}a_1^*&a_2^*\end{pmatrix}.
+  \label{eq:l02-bra-ket-components}
+\end{equation}
+Das Skalarprodukt lautet dann
+\begin{equation}
+  \braket{b}{a}=b_1^*a_1+b_2^*a_2,
+  \label{eq:l02-inner-product}
+\end{equation}
+und das Quadrat der Norm ist
+\begin{equation}
+  \braket{a}{a}=|a_1|^2+|a_2|^2.
+  \label{eq:l02-norm}
+\end{equation}
+Es ist reell und nichtnegativ, weil jeder Term die Form \(z^*z\) hat.
+
+\begin{classroomqa}\lecturetimestamp{00:45:24}\audiencequestion{Warum steht beim Bra-Symbol kein ausdrücklicher Stern?}\lecturerresponse{Einen Ket in sein Bra umzuwandeln bedeutet bereits, ihn zu transponieren und komplex zu konjugieren. Die umgekehrte Klammer kennzeichnet diese Operation in der Notation; ein weiterer Stern würde also das wiederholen, was bereits implizit enthalten ist.}\end{classroomqa}
+
+\section{Die Qubit-Basis und die Bornsche Regel}
+
+Kehren wir nun zum Detektor zurück. Der Zustand „oben“ sei mit \(\ket{+}\) bezeichnet, der Zustand „unten“ mit \(\ket{-}\). Ein allgemeiner Spin-Zustand ist eine Linearkombination
+\begin{equation}
+  \ket\psi=a_+\ket{+}+a_-\ket{-}
+  \quad\longleftrightarrow\quad
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-general-qubit}
+\end{equation}
+Die Plus- und Minuszeichen in den Kets sind Bezeichnungen, keine Rechenoperationen. Sobald diese geordnete Basis gewählt ist, gilt
+\begin{equation}
+  \ket{+}=
+  \begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{-}=
+  \begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l02-basis-columns}
+\end{equation}
+Tatsächlich ist
+\begin{equation}
+  a_+\begin{pmatrix}1\\0\end{pmatrix}
+  +a_-\begin{pmatrix}0\\1\end{pmatrix}
+  =
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-basis-expansion}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\linewidth]{lecture_02_figure_03.png}\caption{Die Detektorzustände sind als die beiden Standardbasis-Spalten festgelegt.}\lectureframe{00:58:10}\end{figure}
+
+Die Koeffizienten sind Wahrscheinlichkeitsamplituden. Die Wahrscheinlichkeit für jedes Detektorergebnis ist der Betrag der entsprechenden Amplitude zum Quadrat:
+\begin{equation}
+  P(+)=|a_+|^2,
+  \qquad
+  P(-)=|a_-|^2.
+  \label{eq:l02-born-rule}
+\end{equation}
+Da dies die einzigen möglichen Ergebnisse sind, gilt
+\begin{equation}
+  \begin{gathered}
+    |a_+|^2+|a_-|^2=1,\\
+    \text{or equivalently}\qquad \braket{\psi}{\psi}=1.
+  \end{gathered}
+  \label{eq:l02-normalization}
+\end{equation}
+Ein physikalischer Zustandsvektor ist daher normiert.
+
+\begin{classroomqa}\lecturetimestamp{00:56:54}\audiencequestion{Haben die Plus- und Minuszeichen in den Komponenten eine algebraische Bedeutung?}\lecturerresponse{Hier kennzeichnen sie die beiden Basiszustände und deren Koeffizienten. Wir könnten sie \(1\) und \(2\) oder „oben“ und „unten“ nennen. Insbesondere ist \(-\ket{+}\) ein gültiges skalares Vielfaches von \(\ket{+}\); es ist nicht der Zustand \(\ket{-}\).}\end{classroomqa}
+
+Multipliziert man einen Zustand mit einer komplexen Zahl vom Betrag eins, bleiben alle seine Wahrscheinlichkeiten unverändert:
+\begin{equation}
+  \ket\psi\longmapsto e^{i\phi}\ket\psi,
+  \qquad
+  |e^{i\phi}a_\pm|^2=|a_\pm|^2.
+  \label{eq:l02-global-phase}
+\end{equation}
+Vektoren, die sich nur durch einen globalen Phasenfaktor unterscheiden, beschreiben somit denselben physikalischen Zustand. Eine \emph{relative} Phase ist etwas anderes. Ersetzt man beispielsweise nur \(a_-\) durch \(-a_-\), lässt sich dies im Allgemeinen nicht durch Multiplikation des gesamten Vektors mit einer einzigen Phase rückgängig machen; die Ergebnisse von Messungen in einer anderen Basis können sich dadurch ändern.
+
+\begin{classroomqa}\lecturetimestamp{00:59:54}\audiencequestion{Sind \(\ket{+}\), \(-\ket{+}\) und \(e^{i\phi}\ket{+}\) verschiedene Zustände? Was ist mit einer Vorzeichenänderung eines Terms in einer Superposition?}\lecturerresponse{Es sind verschiedene mathematische Vektoren. Multipliziert der Faktor jedoch den gesamten Vektor und hat Betrag eins, beschreiben sie denselben physikalischen Zustand. Ein relatives Vorzeichen oder eine relative Phase zwischen den Termen für „oben“ und „unten“ lässt sich mit geeigneten Messungen beobachten und verändert daher den Zustand.}\end{classroomqa}
+
+Die Basis ist orthonormal:
+\begin{align}
+  \braket{+}{+}&=1,
+  &\braket{-}{-}&=1,
+  \notag\\
+  \braket{+}{-}&=0,
+  &\braket{-}{+}&=0.
+  \label{eq:l02-orthonormality}
+\end{align}
+Zum Beispiel gilt
+\begin{equation}
+  \braket{+}{-}
+  =
+  \begin{pmatrix}1&0\end{pmatrix}
+  \begin{pmatrix}0\\1\end{pmatrix}
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\linewidth]{lecture_02_figure_04.png}\caption{Die vier Skalarprodukte der Basiszustände „oben“ und „unten“ werden an der Tafel direkt überprüft.}\lectureframe{01:05:00}\end{figure}
+
+Ein Zustand mit gleichen Gewichten liefert das erste nützliche Beispiel, das wir an der Tafel korrigieren. Die Spalte
+\begin{equation}
+  \begin{pmatrix}1\\1\end{pmatrix}
+\end{equation}
+hat das Normquadrat \(2\), nicht \(1\), und ist daher nicht normiert. Durch Division durch \(\sqrt2\) wird sie normiert:
+\begin{equation}
+  \ket{\rightarrow}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =
+  \frac{\ket{+}+\ket{-}}{\sqrt2}.
+  \label{eq:l02-horizontal-state}
+\end{equation}
+Im vertikalen Detektor ergibt sie \(P(+)=P(-)=1/2\) und entspricht einer horizontalen Präparation. Die Korrektur von \((1,1)^T\) zu \(2^{-1/2}(1,1)^T\) ist keine bloße Formsache: Erst durch die Normierung bilden die quadrierten Amplituden eine vollständige Wahrscheinlichkeitsverteilung.
+
+Nach der Pause lohnt es sich, auf die beiden Bedeutungen von Vektor zurückzukommen. Ein räumlicher Pfeil hat drei reelle Komponenten. Ein Qubit-Zustandsvektor hat zwei komplexe Komponenten, also zunächst vier reelle Zahlen, bevor man die Normierung auferlegt und die globale Phase identifiziert. Die Objekte hängen zusammen, doch das eine ist nicht einfach eine Umbenennung des anderen. Die vollständige geometrische Abbildung zwischen ihnen benötigen wir noch nicht.
+
+\begin{classroomqa}\lecturetimestamp{01:10:56}\audiencequestion{Woher wissen wir, welche Dimension der Zustandsraum eines anderen Quantensystems hat?}\lecturerresponse{Das Experiment zeigt, wie viele unvereinbare Ergebnisse eine vollständige Messung unterscheiden kann. Beim Elektronenspin gibt es in einer solchen Messung zwei Ergebnisse; daher ist der zugehörige komplexe Zustandsraum zweidimensional. Ein Spin-eins-System hat bei der entsprechenden Messung drei Ergebnisse und benötigt drei Komponenten.}\end{classroomqa}
+
+\section{Klassische Observable und Mittelwerte im Ensemble}
+
+Nachdem wir die Zustände beschrieben haben, wenden wir uns den messbaren Größen zu. In einem klassischen System mit diskreten Zuständen \(n\) ist eine Observable eine reellwertige Funktion \(f_n\) dieser Zustände. Ist der Zustand unsicher und durch Wahrscheinlichkeiten \(p_n\) beschrieben, so lautet ihr Mittelwert im Ensemble
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =\sum_n p_n f_n.
+  \label{eq:l02-classical-expectation}
+\end{equation}
+Die Schreibweise bedeutet nicht, dass eine einzelne Messung jemals diesen Wert ergeben muss.
+
+Für eine Münze setzen wir \(f_+=+1\) und \(f_-=-1\). Dann gilt
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =p_+-p_-.
+  \label{eq:l02-coin-expectation}
+\end{equation}
+Bei einer fairen Münze ist der Mittelwert null. Wenn \(p_+=3/4\) und \(p_-=1/4\) gelten, beträgt der Mittelwert \(1/2\). Weder \(0\) noch \(1/2\) ist ein Ergebnis eines einzelnen Münzwurfs; beide fassen viele Ergebnisse \(+1\) und \(-1\) zusammen.
+
+\begin{classroomqa}\lecturetimestamp{01:23:30}\audiencequestion{Wie kann der Erwartungswert null oder ein Halb sein, wenn keiner dieser Werte bei einem einzelnen Versuch auftreten kann?}\lecturerresponse{Der Ausdruck „Erwartungswert“ kann irreführend sein. Gemeint ist der Mittelwert eines großen Ensembles, nicht der Wert, den man beim nächsten Durchgang erwarten sollte. Eine faire Folge von Ergebnissen \(+1\) und \(-1\) hat den Mittelwert null; ein Verhältnis von drei zu eins ergibt den Mittelwert ein Halb.}\end{classroomqa}
+
+Besonders nützlich ist die Indikatorfunktion für einen Zustand:
+\begin{equation}
+  \chi_k(n)=
+  \begin{cases}
+    1,&n=k,\\
+    0,&n\ne k.
+  \end{cases}
+\end{equation}
+Ihr Mittelwert ist
+\begin{equation}
+  \langle\chi_k\rangle_{\mathrm{ens}}=p_k.
+\end{equation}
+Kennt man also die Mittelwerte aller klassischen Observablen, kennt man insbesondere auch die Wahrscheinlichkeitsverteilung.
+
+\section{Matrizen und quantenmechanische Observable}
+
+In der Quantenmechanik werden Observable nicht durch Funktionen auf Punkten des Zustandsraums, sondern durch lineare Operatoren dargestellt. In einem endlichdimensionalen Zustandsraum sind diese Operatoren Matrizen. Eine Matrix \(M\) bildet einen Vektor auf einen anderen ab:
+\begin{equation}
+  M\ket a=\ket{a'}.
+  \label{eq:l02-matrix-action}
+\end{equation}
+Für zwei Komponenten gilt
+\begin{equation}
+  \begin{pmatrix}
+    m_{11}&m_{12}\\
+    m_{21}&m_{22}
+  \end{pmatrix}
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  =
+  \begin{pmatrix}
+    m_{11}a_1+m_{12}a_2\\
+    m_{21}a_1+m_{22}a_2
+  \end{pmatrix}.
+  \label{eq:l02-matrix-components}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.78\linewidth]{lecture_02_figure_05.png}\caption{Die Wirkung der Matrix wird zeilenweise in die beiden Komponenten des transformierten Vektors aufgelöst.}\lectureframe{01:32:10}\end{figure}
+
+Reelle zweidimensionale Vektoren machen die Geometrie anschaulich. Die Matrizen
+\begin{equation}
+  \begin{pmatrix}2&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}1&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}2&0\\0&1\end{pmatrix}
+\end{equation}
+vergrößern gleichmäßig in jeder Richtung, strecken nur die \(y\)-Komponente beziehungsweise nur die \(x\)-Komponente. Die Matrix
+\begin{equation}
+  \begin{pmatrix}0&1\\1&0\end{pmatrix}
+\end{equation}
+vertauscht die Komponenten und spiegelt die Ebene an der Geraden \(x=y\). Dagegen bewirkt
+\begin{equation}
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  \begin{pmatrix}v_x\\v_y\end{pmatrix}
+  =
+  \begin{pmatrix}v_y\\-v_x\end{pmatrix}
+  \label{eq:l02-quarter-turn}
+\end{equation}
+gemäß der an der Tafel verwendeten Konvention eine Drehung der Vektoren um eine Vierteldrehung im Uhrzeigersinn. Eine Scherung liefert ein weiteres lineares Beispiel, ihre Matrix bleibt jedoch eine Übungsaufgabe. Entscheidend ist die Linearität: Nicht jede denkbare Transformation der Ebene lässt sich durch eine Matrix darstellen.
+
+Quantenmechanische Observable gehören zu einer besonderen Klasse.
+
+\begin{definition}\(M\)heißt \emph{hermitesch}, wenn
+\begin{equation}
+  M_{ij}=M_{ji}^*.
+  \label{eq:l02-hermitian-condition}
+\end{equation}\end{definition}
+
+Die Diagonalbedingung \(M_{ii}=M_{ii}^*\) erzwingt, dass jeder Diagonaleintrag reell ist. Die Einträge außerhalb der Diagonale treten paarweise als komplex Konjugierte auf. Zum Beispiel ist
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    r&4+i\\
+    4-i&s
+  \end{pmatrix},
+  \qquad r,s\in\mathbb R,
+  \label{eq:l02-hermitian-example}
+\end{equation}
+hermitesch. Sind alle Einträge reell, bedeutet hermitesch dasselbe wie symmetrisch.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.75\linewidth]{lecture_02_figure_06.png}\caption{Die definierende Konjugation über die Diagonale, \(M_{ij}=M_{ji}^*\), wird am Ende der Vorlesung noch einmal isoliert betrachtet.}\lectureframe{01:42:50}\end{figure}
+
+Hermitesche Matrizen stellen messbare Größen dar, darunter den Spin in \(x\)-, \(y\)- und \(z\)-Richtung. Sie dürfen nicht mit den Operatoren verwechselt werden, die einen physikalischen Stoß oder die zeitliche Entwicklung beschreiben.
+
+\begin{classroomqa}\lecturetimestamp{01:45:49}\audiencequestion{Wenn eine Matrix den Zustand in einen anderen Zustand überführt, muss sie dann die Normierung erhalten? Gilt das für eine hermitesche Matrix?}\lecturerresponse{Ein physikalischer Stoß muss die Länge des Zustandsvektors erhalten; eine allgemeine hermitesche Matrix tut das jedoch nicht. Transformationen, die die Länge erhalten, sind unitär. Hermitesche Operatoren stellen Observable dar; unitäre Operatoren beschreiben die reversiblen Transformationen, die auf Zustände wirken. Ihr genauer Zusammenhang folgt als Nächstes.}\end{classroomqa}
+
+Damit haben wir die minimale Sprache für den nächsten Schritt erreicht. Ein Qubit ist ein normierter Vektor in einem zweidimensionalen komplexen Vektorraum; Amplituden bestimmen die Wahrscheinlichkeiten, und Observable sind hermitesche Matrizen. Mit diesen Bausteinen können wir den Spin in beliebigen Richtungen und schließlich verschränkte Paare behandeln, ohne zu dem klassischen Bild zurückzukehren, das sich bereits als unzureichend erwiesen hat.

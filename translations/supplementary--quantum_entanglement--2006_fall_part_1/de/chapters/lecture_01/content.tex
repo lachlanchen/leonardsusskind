@@ -1,0 +1,444 @@
+\chapter{Klassische Information, reversible Dynamik und Matrizen}
+
+\lectureoverview{Die Quantenmechanik verlangt von uns, außerhalb des Bereichs zu denken, für den unsere gewöhnliche Intuition geschult wurde. Deshalb setzen wir einen Schritt früher an: bei der klassischen Information, also bei Bits, Konfigurationen und reversiblen Entwicklungsgesetzen. Von dort führt die Betrachtung ganz natürlich zu Vektoren und Matrizen, die uns die Sprache für Quantenbits liefern werden.}
+
+\section{Für die falsche Welt geschulte Intuition}
+
+Unsere physikalische Intuition ist alt. Lange bevor jemand eine Gleichung aufschrieb, musste ein Tier, das Beute jagte, deren relative Geschwindigkeit und Richtung abschätzen. Wenn ein Löwe eine Antilope einholt, reagiert er auf den sich ändernden Abstand und damit auf implizite Weise auf die Relativgeschwindigkeit. Nervensysteme, die solche Urteile gut fällten, waren im Vorteil; diejenigen, die darin schlecht waren, hinterließen nicht viele Nachkommen. Ein großer Teil dessen, was wir den gesunden Menschenverstand in Bezug auf Bewegung nennen, wurde in dieser alltäglichen Welt geschult.
+
+Dieses Erbe ist nützlich, aber begrenzt. Im Alltag bewegt sich nichts annähernd mit Lichtgeschwindigkeit, daher hat die Evolution uns keinen Instinkt für die relativistische Raumzeit mitgegeben. Ein Physiker lernt zunächst die abstrakte Geometrie und entwickelt erst später eine neue Intuition dafür. Die Quantenmechanik ist noch schwieriger. Unser vertrautes Bild eines Teilchens stammt von Steinen und Pfeilen: Zu jedem Zeitpunkt hat das Objekt einen Ort, die Abfolge der Orte bildet eine Bahn, und Ortsänderungen definieren eine Geschwindigkeit. Ein Elektron fügt sich diesem Bild nicht einfach. Ortsunschärfe und das Fehlen einer klassischen Bahn haben keine Entsprechung in den Erfahrungen, die unsere Sinne geprägt haben.
+
+Dass die Intuition hier versagt, ist kein Paradoxon. Ein Paradoxon wäre es nur, wenn Instinkte, die sich an Steinen, Tieren und mäßigen Geschwindigkeiten ausgebildet haben, irgendwie schon im Voraus etwas über Elektronen wüssten. Die richtige Antwort besteht darin, aus einer kleinen Zahl präziser Regeln eine andere Intuition aufzubauen. Im Mittelpunkt steht hier nicht der übliche Zugang über die Wellenmechanik und die Gleichung von Schr\"odinger. Wir konzentrieren uns auf die logische Struktur der Quantenmechanik und auf Quanteninformation. Bevor wir fragen, was ein Quantenbit ist, müssen wir genau verstehen, was ein gewöhnliches Bit tut.
+
+\section{Bits und Informationsmenge}
+
+Physik ist untrennbar mit Information verbunden. Manchmal wird diese Information durch eine reelle Zahl ausgedrückt, doch die einfachste Information ist eine Antwort auf eine Frage mit genau zwei Alternativen: Ja oder Nein, Kopf oder Zahl, oben oder unten.
+
+\begin{definition}Ein \emph{klassisches Bit} ist eine physikalische Frage mit genau zwei möglichen Antworten.\end{definition}
+
+Wir können diese Antworten mit \(0\) und \(1\) bezeichnen. Die Bezeichnungen haben keine eigene Bedeutung; zwei beliebige verschiedene Symbole würden genügen. Da die Dirac-Notation bald unverzichtbar sein wird, führen wir sie schon jetzt ein, obwohl sie hier noch keinen zusätzlichen Nutzen hat:
+\begin{equation}
+  \ket{0},
+  \qquad
+  \ket{1}.
+\end{equation}
+Der senkrechte Strich und die spitze Klammer bilden ein \emph{Ket}, die rechte Hälfte eines Bra--Kets. Allein durch die geänderte Notation ist noch nichts Quantenmechanisches hinzugekommen.
+
+Bei mehreren unterscheidbaren Bits schreiben wir die Antworten in einer festgelegten Reihenfolge auf. Sechs unterscheidbare Münzen können beispielsweise die Konfiguration
+\begin{equation}
+  \ket{0\,1\,1\,0\,1\,0}.
+\end{equation}
+haben. Sobald die Reihenfolge feststeht, können wir die Kommas weglassen. Ein Bit hat zwei mögliche Zustände, zwei Bits haben vier, und jedes weitere Bit verdoppelt die Anzahl. Ein System aus \(n\) Bits hat daher
+\begin{equation}
+  N_s=2^n
+  \label{eq:l01-state-count}
+\end{equation}
+Zustände. Umgekehrt gilt:
+\begin{equation}
+  n=\log_2 N_s.
+  \label{eq:l01-bits-from-states}
+\end{equation}
+
+Gleichung~\eqref{eq:l01-bits-from-states} legt eine Definition nahe, die auch dann nützlich ist, wenn die Anzahl der Zustände keine Zweierpotenz ist:
+\begin{equation}
+  I=\log_2 N_s.
+  \label{eq:l01-information}
+\end{equation}
+Ein sechsseitiger Würfel trägt demnach \(\log_2 6\) Bits Information. Die Zahl muss keine ganze Zahl sein. Systeme aus tatsächlichen binären Schaltern sind anschauliche Beispiele, doch der Logarithmus ist das allgemeinere Maß.
+
+\section{Eine scheinbar kontinuierliche Welt codieren}
+
+Bits beschränken sich nicht auf Münzen. Jede Messgröße, die nur mit endlicher Genauigkeit bekannt ist, lässt sich als endliche Binärfolge darstellen. Nehmen wir etwa an, die Temperatur eines Raums werde nur mit einer festgelegten Anzahl signifikanter Stellen benötigt. Wir schreiben den Messwert zur Basis zwei und behalten so viele Stellen, wie für diese Genauigkeit erforderlich sind. Eine höhere Präzision verlangt eine längere Folge, aber kein anderes Prinzip.
+
+Ein räumlich veränderliches Feld lässt sich ähnlich behandeln. Wir teilen den Raum in ein feines, geordnetes Gitter aus Zellen auf, notieren den Feldwert in jeder Zelle mit endlicher Genauigkeit und verketten die entstehenden Binärfolgen. Kleinere Zellen verbessern die räumliche Auflösung; mehr behaltene Binärstellen verbessern die Auflösung der Feldwerte. Temperatur-, elektrische und magnetische Felder lassen sich auf diese Weise mit jeder vorgegebenen endlichen Genauigkeit codieren.
+
+Teilchenkonfigurationen ergeben ein noch anschaulicheres binäres Bild. Wir unterteilen den Raum in Zellen, die so klein sind, dass sich in jeder höchstens ein Teilchen befindet. Wir setzen
+\begin{equation}
+  n_i=
+  \begin{cases}
+    1,&\text{cell \(i\) is occupied},\\
+    0,&\text{cell \(i\) is empty}.
+  \end{cases}
+  \label{eq:l01-occupancy-bit}
+\end{equation}
+Die vollständige Konfiguration ist die geordnete Folge
+\begin{equation}
+  \ket{n_1n_2n_3\cdots}.
+\end{equation}
+Sie ist die sehr lange Antwort auf eine Reihe von Ja-Nein-Fragen: Befindet sich ein Teilchen in der ersten Zelle, in der zweiten und so weiter? Das ist die physikalische Version des Spiels \emph{Zwanzig Fragen}, nur kann die Anzahl der Fragen enorm groß sein.
+
+Diese Konstruktion erklärt, warum digitale Computer Physik simulieren können. Ein Computer speichert endliche Folgen, und endliche Auflösung macht aus Messgrößen und Feldern genau solche Folgen. Die Näherung lässt sich systematisch verbessern, indem man das Gitter oder den Zeitschritt verfeinert oder mehr Stellen beibehält.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:43}
+\audiencequestion{Ist die Genauigkeit der Temperaturdarstellung beliebig?}
+\lecturerresponse{Sie wird entsprechend der gewünschten Näherung gewählt. Eine endliche Folge liefert endliche Genauigkeit; mehr Binärstellen ergeben eine feinere Näherung. Es wird hier nicht behauptet, dass eine endliche Folge eine beliebige klassische reelle Zahl exakt angibt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:30:11}
+\audiencequestion{Was gilt für eine allgemeine reelle Zahl, insbesondere für eine irrationale?}
+\lecturerresponse{Eine exakte reelle Zahl kann unendlich viele Bits erfordern. Manche rationalen Zahlen haben periodische Binärentwicklungen, und die Binärentwicklung einer typischen irrationalen Zahl endet nie. Ein realer Computer speichert stets nur endlich viele Stellen. Entscheidend ist, dass sich jede vorgegebene endliche Genauigkeit codieren lässt, nicht dass jede klassische reelle Zahl eine endliche exakte Darstellung hat.}
+\end{classroomqa}
+
+\section{Ein Zustand und ein Bewegungsgesetz}
+
+Bisher haben wir ein System zu einem einzigen Zeitpunkt beschrieben. Für Bewegung brauchen wir noch eine zweite Zutat.
+
+\begin{definition}Eine \emph{Konfiguration} ist der vollständige Zustand eines Systems zu einem bestimmten Zeitpunkt. Ein Bewegungsgesetz in diskreter Zeit ist eine Vorschrift, die jeder Konfiguration die Konfiguration einen Zeitschritt später zuordnet.\end{definition}
+
+Die Unterscheidung ist einfach, aber wesentlich. Eine Momentaufnahme der Elektronenverteilung ist eine Konfiguration, noch keine Bahn. Ersetzen wir den Raum durch ein Gitter und die Zeit durch eine Folge \(t_0,t_1,t_2,\ldots\), dann ist Bewegung die Abfolge
+\begin{equation}
+  \ket{s(t_0)}
+  \longmapsto
+  \ket{s(t_1)}
+  \longmapsto
+  \ket{s(t_2)}
+  \longmapsto\cdots.
+  \label{eq:l01-discrete-motion}
+\end{equation}
+Ein physikalisches Modell benötigt also sowohl eine Menge möglicher Zustände als auch eine Aktualisierungsvorschrift.
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:12}
+\audiencequestion{Wie beschreibt dieses Zellmodell ein Elektron, das sich auf einer Bahn bewegt?}
+\lecturerresponse{Zunächst legen wir nur die Konfiguration zu einem Zeitpunkt fest: welche Zellen besetzt sind, wobei der Atomkern festgehalten wird, falls das zum Modell gehört. Dann diskretisieren wir die Zeit. Die Bahnbewegung wird durch die Vorschrift beschrieben, die eine Besetzungsfolge in die nächste überführt. Wegen der Anordnung der Zellen kann diese Vorschrift kompliziert sein, aber sie bleibt eine Aktualisierung von Information.}
+\end{classroomqa}
+
+Es hilft, einen abstrakten \emph{Zustandsraum} zu zeichnen. Jeder Punkt in diesem Raum steht für eine vollständige Konfiguration, nicht für einen Ort im gewöhnlichen Raum. Ein \(10\times10\)-Gitter zur Beschreibung der Besetzung enthält hundert Bits und daher \(2^{100}\) mögliche Konfigurationen.\editorialnote{In der gesprochenen Vorlesung fällt beim Entwickeln des Beispiels kurz die Zahl \(10^{100}\); aus der Bitanzahl ergibt sich jedoch der beabsichtigte Wert \(2^{100}\).} Jede dieser Konfigurationen entspricht einem einzelnen Punkt im Zustandsraum.
+
+Für ein Bit gibt es nur zwei Punkte. Die Identitätsvorschrift lässt beide unverändert:
+\begin{equation}
+  0\mapsto0,
+  \qquad
+  1\mapsto1.
+  \label{eq:l01-identity-update}
+\end{equation}
+Die andere reversible Möglichkeit vertauscht sie:
+\begin{equation}
+  0\mapsto1,
+  \qquad
+  1\mapsto0.
+  \label{eq:l01-flip-update}
+\end{equation}
+Das ist ein Flipflop. Ein frei evolvierendes physikalisches Beispiel ist weniger unmittelbar als ein von Hand betätigter Lichtschalter, denn ein Eingriff würde das System vergrößern. Tag und Nacht bilden näherungsweise einen Zweizustandszyklus; auch ein Pendel wechselt zwischen Extrempunkten, obwohl sein vollständiger Zustand alle Zwischenlagen und Geschwindigkeiten umfasst.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:38}
+\audiencequestion{Wäre ein gewöhnlicher Lichtschalter ein Beispiel für das Flipflop-Gesetz?}
+\lecturerresponse{Nicht, wenn ihn eine Person umlegt, denn dann entwickelt sich der Schalter nicht von selbst; die Person gehört zum erweiterten dynamischen System. Gesucht ist ein abgeschlossenes System, dessen eigenes Gesetz den Zustand alternieren lässt. Tag und Nacht veranschaulichen die Idee, während uns ein Pendel daran erinnert, dass ein reales Beispiel meist mehr als zwei Zustände hat.}
+\end{classroomqa}
+
+Ein System aus zwei Bits hat vier Konfigurationen. Eine Aktualisierungsvorschrift kann alle vier in einem einzigen Zyklus durchlaufen. Eine andere kann aus zwei getrennten Zweierzyklen bestehen. Das sind Schleifen im logischen Raum der Konfigurationen, nicht notwendigerweise Schleifen im physikalischen Raum. Die Pfeile geben das Gesetz vor: Wo auch immer das System startet, die Pfeile zeigen seine weitere Entwicklung.
+
+\section{Reversibilität und die Erhaltung von Unterscheidungen}
+
+Nicht jedes Pfeildiagramm hat denselben physikalischen Status. Betrachten wir eine Vorschrift, bei der zwei verschiedene Zustände im selben Folgezustand zusammenlaufen:
+\begin{equation}
+  a\mapsto c,
+  \qquad
+  b\mapsto c.
+  \label{eq:l01-merging-update}
+\end{equation}
+Der Folgezustand ist festgelegt, unabhängig davon, ob wir bei \(a\) oder \(b\) beginnen. Doch nach dem Erreichen von \(c\) können wir nicht mehr feststellen, welche Vergangenheit vorlag. Die Unterscheidung zwischen \(a\) und \(b\) ist verschwunden.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_01_figure_02.png}
+\caption{In der Diskussion der Reversibilität bleiben mehrere Aktualisierungsdiagramme an der Tafel. Geschlossene Zyklen stehen neben einem zusammenlaufenden Muster; daneben steht der quantenmechanische Begriff \emph{Unitarität}.}
+\lectureframe{00:53:21}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Latex,thick,node distance=1.15cm]
+  \node[circle,fill,inner sep=1.8pt,label=above:\(1\)] (r1) {};
+  \node[circle,fill,inner sep=1.8pt,right=of r1,label=above:\(2\)] (r2) {};
+  \node[circle,fill,inner sep=1.8pt,below=of r2,label=below:\(3\)] (r3) {};
+  \node[circle,fill,inner sep=1.8pt,left=of r3,label=below:\(4\)] (r4) {};
+  \draw[->] (r1) -- (r2);
+  \draw[->] (r2) -- (r3);
+  \draw[->] (r3) -- (r4);
+  \draw[->] (r4) -- (r1);
+  \node[below=0.5cm of r4,anchor=north west] {\small reversible cycle};
+
+  \node[circle,fill,inner sep=1.8pt,right=4.2cm of r1,label=above:\(a\)] (a) {};
+  \node[circle,fill,inner sep=1.8pt,below=1.25cm of a,label=below:\(b\)] (b) {};
+  \node[circle,fill,inner sep=1.8pt,right=1.6cm of a,yshift=-0.625cm,label=above:\(c\)] (c) {};
+  \node[circle,fill,inner sep=1.8pt,right=of c,label=above:\(d\)] (d) {};
+  \draw[->] (a) -- (c);
+  \draw[->] (b) -- (c);
+  \draw[->] (c) -- (d);
+  \node[below=0.55cm of b,anchor=north west] {\small information-losing merge};
+\end{tikzpicture}
+\caption{Eine reversible Vorschrift ordnet jedem Zustand genau einen Vorgänger und einen Nachfolger zu. Bei einer zusammenlaufenden Vorschrift ist die Zukunft eindeutig, die Vergangenheit aber mehrdeutig.}
+\end{figure}
+
+In der fundamentalen klassischen Dynamik ist ein solcher Verlust nicht möglich, wenn alle Freiheitsgrade berücksichtigt werden. Die erforderliche Eigenschaft umfasst zwei Teile:
+\begin{equation}
+  \boxed{\begin{gathered}
+    \text{one unique future and one unique past}\\
+    \text{for every state}
+  \end{gathered}.}
+  \label{eq:l01-reversibility}
+\end{equation}
+Bei einem endlichen Zustandsraum muss die Aktualisierung daher eine Permutation sein. Von jedem Zustand geht genau ein Pfeil aus und genau ein Pfeil führt in ihn hinein, sodass sich das Diagramm in disjunkte Zyklen zerlegt.
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:32}
+\audiencequestion{Was ist am zusammenlaufenden Diagramm anders?}
+\lecturerresponse{Es besteht nicht ausschließlich aus Schleifen. Grundlegender ist, dass sich aus dem zusammengeführten Zustand nicht erschließen lässt, welcher Vorgänger vorausging. Wir können die Zukunft bestimmen, aber die Vergangenheit nicht rekonstruieren. Eine historische Unterscheidung, ein Bit Information, ist verloren gegangen.}
+\end{classroomqa}
+
+Das ist \emph{Zeitumkehrbarkeit}, nicht unbedingt exakte Zeitumkehrsymmetrie. Ein Zyklus im Uhrzeigersinn hat eine festgelegte Vorwärtsrichtung. Das ursprüngliche Gesetz führt das System nicht gegen den Uhrzeigersinn, aber es gibt ein inverses Gesetz, das dies tut. Exakte Zeitumkehrsymmetrie stellt eine zusätzliche Frage: Erhält man nach Anwendung der geeigneten Umkehroperation dieselben dynamischen Gesetze? Bei der Reversibilität geht es lediglich darum, ob sich die Entwicklung eindeutig rückwärts ablaufen lässt.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:58}
+\audiencequestion{Ist die Eindeutigkeit der Vergangenheit einfach Zeitumkehrsymmetrie?}
+\lecturerresponse{Nicht ganz. Die Pfeile eines Zyklus können nur in eine Richtung zeigen, das Gesetz hat also eine Orientierung. Reversibilität bedeutet, dass sich ein wohldefiniertes inverses Gesetz konstruieren lässt, indem man alle Pfeile umkehrt. Daraus folgt nicht, dass das inverse Gesetz mit dem ursprünglichen identisch ist.}
+\end{classroomqa}
+
+Wir sollten ein irreversibles Diagramm auch nicht dadurch reparieren, dass wir am zusammengeführten Zustand zwei ausgehende Pfeile einzeichnen. Dadurch würde die Rückwärtsentwicklung auf andere Weise mehrdeutig: Das System bräuchte eine probabilistische Anweisung, etwa mit der Wahl eines Zweigs in \(30\%\) der Fälle und des anderen in \(70\%\). Wir konstruieren weiterhin eine deterministische klassische Dynamik, in der ein gegenwärtiger Zustand eine Zukunft und eine Vergangenheit festlegt.
+
+Jedes reale System ist letztlich quantenmechanisch. Warum große Objekte klassisch erscheinen und warum ihre Quantenalternativen schwer zu beobachten sind, ist eine spätere Frage. Das entsprechende quantenmechanische Prinzip bewahrt denselben logischen Kern. Halb im Scherz könnte man die Eindeutigkeit von Vergangenheit und Zukunft \emph{Eindeutigkeit} nennen. Der tatsächliche Name lautet \emph{Unitarität}: Quantenentwicklung lässt sich eindeutig vorwärts oder rückwärts durchlaufen.
+
+\section{Scheinbarer Informationsverlust und Grobkörnigkeit}
+
+Die makroskopische Erfahrung scheint der Reversibilität zu widersprechen. Sperren wir alle Gasmoleküle in einer Ecke eines abgeschlossenen Raums ein und lassen sie dann frei, füllt das Gas bald den Raum. Beginnen wir stattdessen in der rechten Ecke, scheint das makroskopische Endbild dasselbe zu sein. Sind die zwei verschiedenen Anfangszustände zusammengeführt worden?
+
+Nur nachdem wir Details verworfen haben. Ein mikroskopischer Zustand legt jedes Molekül fest. Könnten wir jede Position und jede Geschwindigkeit hinreichend genau verfolgen, ließen sich die beiden Präparationen durch Umkehrung dieser Bewegungen unterscheiden. In der Praxis ist die Rechnung unerschwinglich schwierig und die erforderliche Genauigkeit nimmt rasch zu; praktische Unfähigkeit bedeutet jedoch keine fundamentale Auslöschung. Die makroskopische Aussage \emph{Luft füllt den Raum} fasst enorm viele verschiedene mikroskopische Konfigurationen zu einem grobkörnigen Zustand zusammen.
+
+Hier kommt der zweite Hauptsatz der Thermodynamik ins Spiel. Wir verlieren die Fähigkeit, detaillierte Zustände zu unterscheiden, weil wir nicht alle mikroskopischen Variablen erfassen. Information scheint zu verschwinden, weil unsere Beschreibung grobkörnig ist, nicht weil das feinkörnige deterministische Gesetz verschiedene Punkte zusammenführt.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:11}
+\audiencequestion{Würde die Verfolgung aller Moleküle in einem klassischen Raum unendlich viele Bits erfordern?}
+\lecturerresponse{Für eine exakte klassische Beschreibung: ja. Orte und Geschwindigkeiten sind reelle Zahlen, und um ein chaotisches Vielteilchensystem über längere Zeit zu verfolgen, ist immer größere Genauigkeit nötig. Die Quantenmechanik ändert diese Schlussfolgerung: Für einen abgeschlossenen Bereich mit beschränkter Energie kann die physikalisch unterscheidbare Beschreibung diskret sein, statt aus einer beliebigen Liste exakter klassischer reeller Zahlen zu bestehen.}
+\end{classroomqa}
+
+Die Frage ist nicht bloß akademisch. Jahrzehntelang wurde darüber gestritten, ob ein Schwarzes Loch Information zerstören kann; Stephen Hawking vertrat ursprünglich die Auffassung, dass dies möglich sei. Dabei geht es darum, ob das scheinbare Zusammenführen lediglich eine weitere grobkörnige Beschreibung ist oder eine echte Verletzung der quantenmechanischen Unitarität darstellt. Wir werden die Frage nicht klären, bevor uns die Quantenmechanik die präzise Sprache dafür geliefert hat. Doch sie zeigt, wie viel von den einfachen Pfeildiagrammen abhängt.
+
+\section{Zeilen, Spalten und Skalarprodukte}
+
+Bevor wir klassische Bits durch Quantenbits ersetzen, brauchen wir ein wenig lineare Algebra. Für unsere Zwecke lässt sich ein Vektor einfach als endliche geordnete Liste reeller Zahlen auffassen. Ein Vektor mit vier Komponenten lässt sich horizontal schreiben,
+\begin{equation}
+  A^{\mathsf T}=(A_1,A_2,A_3,A_4),
+  \label{eq:l01-row-vector}
+\end{equation}
+oder vertikal,
+\begin{equation}
+  A=
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}.
+  \label{eq:l01-column-vector}
+\end{equation}
+Der Ausdruck \emph{vierdimensional} bedeutet lediglich, dass es vier Komponenten gibt. Wir müssen uns keinen Pfeil im gewöhnlichen Raum vorstellen. Das horizontale Objekt ist ein Zeilenvektor, das vertikale ein Spaltenvektor.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\linewidth]{lecture_01_figure_03.png}
+\caption{Dieselben Komponenten sind einmal als Zeile und einmal als Spalte geschrieben. Auf dieser Stufe sind es reelle Zahlen, daher tritt keine komplexe Konjugation auf.}
+\lectureframe{01:03:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:14}
+\audiencequestion{Ist der Zeilenvektor nicht das Dagger des Spaltenvektors?}
+\lecturerresponse{Sobald die Komponenten komplex sind, ist das die passende Sprache. Dann muss die Transposition von komplexer Konjugation begleitet werden. Im Moment sind die Einträge reell; daher müssen wir nur zwischen der Anordnung als Zeile und der als Spalte unterscheiden.}
+\end{classroomqa}
+
+Sei
+\begin{equation}
+  B=(B_1,B_2,B_3,B_4)
+\end{equation}
+eine Zeile mit genauso vielen Einträgen wie die Spalte \(A\). Ihr Produkt ist definiert, indem man die entsprechenden Positionen einander zuordnet und die Produkte aufsummiert:
+\begin{align}
+  BA
+  &=
+  (B_1,B_2,B_3,B_4)
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}\\
+  &=B_1A_1+B_2A_2+B_3A_3+B_4A_4.
+  \label{eq:l01-inner-product}
+\end{align}
+Das Ergebnis ist eine Zahl, kein weiterer Vektor und keine Matrix. In einem abstrakten Vektorraum heißt diese Operation Skalarprodukt.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:44}
+\audiencequestion{Ist das das Punktprodukt?}
+\lecturerresponse{Ja. Für gewöhnliche Vektoren im dreidimensionalen Raum ist es das bekannte Punktprodukt. Der Name \emph{Skalarprodukt} betont, dass dieselbe Zeile-mal-Spalte-Operation auf Vektorräume jeder endlichen Dimension anwendbar ist.}
+\end{classroomqa}
+
+\section{Matrizen als Maschinen zur Zustandsaktualisierung}
+
+Eine Matrix ist ein quadratisches Zahlenfeld, das auf einen Vektor wirkt und einen anderen Vektor hervorbringt. Man kann sie sich als Maschine vorstellen: Man gibt die alte Spalte hinein, wendet eine feste Vorschrift an und erhält eine neue Spalte. In vier Dimensionen gilt:
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}&M_{13}&M_{14}\\
+    M_{21}&M_{22}&M_{23}&M_{24}\\
+    M_{31}&M_{32}&M_{33}&M_{34}\\
+    M_{41}&M_{42}&M_{43}&M_{44}
+  \end{pmatrix}.
+  \label{eq:l01-general-matrix}
+\end{equation}
+Der erste Index bezeichnet die Zeile, der zweite die Spalte. \(M\) lässt sich als eine Sammlung von Spalten oder als eine Sammlung von Zeilen auffassen; beide Sichtweisen sind nützlich.
+
+Um \(A'=MA\) zu berechnen, bilden wir das Skalarprodukt jeder Zeile von \(M\) mit der Eingabespalte:
+\begin{equation}
+  A'_i=(MA)_i=\sum_{j=1}^{4}M_{ij}A_j.
+  \label{eq:l01-matrix-vector}
+\end{equation}
+Zum Beispiel:
+\begin{align}
+  A'_1&=M_{11}A_1+M_{12}A_2+M_{13}A_3+M_{14}A_4,\\
+  A'_2&=M_{21}A_1+M_{22}A_2+M_{23}A_3+M_{24}A_4.
+\end{align}
+Die dritte und vierte Komponente erhält man nach demselben Muster.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_01_figure_04.png}
+\caption{Eine Matrix wirkt zeilenweise auf einen Spaltenvektor. Die ersten beiden Ausgabekomponenten werden an der Tafel ausführlich ausgeschrieben.}
+\lectureframe{01:12:45}
+\end{figure}
+
+\subsection{Eine klassische Konfiguration codieren}
+
+Nehmen wir an, ein System habe vier mögliche Zustände. Wir stellen sie durch die Einheitsvektoren
+\begin{equation}
+  e_1=
+  \begin{pmatrix}1\\0\\0\\0\end{pmatrix},
+  \quad
+  e_2=
+  \begin{pmatrix}0\\1\\0\\0\end{pmatrix},
+  \quad
+  e_3=
+  \begin{pmatrix}0\\0\\1\\0\end{pmatrix},
+  \quad
+  e_4=
+  \begin{pmatrix}0\\0\\0\\1\end{pmatrix}.
+  \label{eq:l01-one-hot}
+\end{equation}
+dar. Die Position der einzigen \(1\) zeigt uns, welche klassische Konfiguration vorliegt.
+
+Betrachten wir die zyklische Aktualisierung
+\begin{equation}
+  1\longrightarrow2\longrightarrow3\longrightarrow4\longrightarrow1.
+  \label{eq:l01-four-cycle}
+\end{equation}
+Sie wird dargestellt durch
+\begin{equation}
+  P=
+  \begin{pmatrix}
+    0&0&0&1\\
+    1&0&0&0\\
+    0&1&0&0\\
+    0&0&1&0
+  \end{pmatrix}.
+  \label{eq:l01-permutation-matrix}
+\end{equation}
+Tatsächlich gilt:
+\begin{equation}
+  \begin{aligned}
+    Pe_1&=e_2, & Pe_2&=e_3,\\
+    Pe_3&=e_4, & Pe_4&=e_1.
+  \end{aligned}
+\end{equation}
+Während die Konstruktion an der Tafel entsteht, wird sie korrigiert: Zunächst sind es fünf Zustände, dann vier. Gleichung~\eqref{eq:l01-permutation-matrix} hält die endgültige zyklische Vorschrift fest, nicht die verworfene Zwischenversion der Matrix.
+
+Dieselbe Matrix wirkt auf eine beliebige Spalte:
+\begin{equation}
+  P
+  \begin{pmatrix}A\\B\\C\\D\end{pmatrix}
+  =
+  \begin{pmatrix}D\\A\\B\\C\end{pmatrix}.
+  \label{eq:l01-cyclic-shift}
+\end{equation}
+Bei einem klassischen Zustand ist nur eine Komponente \(1\), doch allgemeine Einträge machen die zugrunde liegende lineare Operation sichtbar. Klassisch-deterministische Aktualisierungen verwenden spezielle Matrizen mit Nullen und Einsen, in denen jede Zeile und jede Spalte genau eine \(1\) enthält. Die Quantenmechanik behält die Matrixentwicklung bei, erweitert aber die zulässigen Einträge erheblich.
+
+\subsection{Verknüpfung entspricht Matrixmultiplikation}
+
+Wenn ein Zeitschritt
+\begin{equation}
+  V'=MV,
+\end{equation}
+beträgt, ergibt die zweite Anwendung
+\begin{equation}
+  V''=MV'=M(MV)=M^2V.
+  \label{eq:l01-two-updates}
+\end{equation}
+Matrixmultiplikation ist also keine willkürliche algebraische Spielerei. Sie verknüpft physikalische Aktualisierungen. Fünf Zeitschritte werden durch \(M^5\) dargestellt.
+
+Für zwei \(2\times2\)-Matrizen
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}\\
+    M_{21}&M_{22}
+  \end{pmatrix},
+  \qquad
+  N=
+  \begin{pmatrix}
+    N_{11}&N_{12}\\
+    N_{21}&N_{22}
+  \end{pmatrix},
+\end{equation}
+hat das Produkt \(C=MN\) die Einträge
+\begin{equation}
+  C_{ij}=\sum_k M_{ik}N_{kj}.
+  \label{eq:l01-matrix-product}
+\end{equation}
+Insbesondere gilt:
+\begin{align}
+  C_{11}&=M_{11}N_{11}+M_{12}N_{21},\\
+  C_{12}&=M_{11}N_{12}+M_{12}N_{22},\\
+  C_{21}&=M_{21}N_{11}+M_{22}N_{21},\\
+  C_{22}&=M_{21}N_{12}+M_{22}N_{22}.
+\end{align}
+Jeder Eintrag entsteht aus einer Zeile der linken Matrix und einer Spalte der rechten Matrix. Gleichwertig kann man \(M\) auf jede Spalte von \(N\) anwenden und die resultierenden Spalten nebeneinanderstellen.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\linewidth]{lecture_01_figure_05.png}
+\caption{Matrixmultiplikation als wiederholte Matrix--Spaltenmultiplikation. Die erste Zeile und die Spalten der zweiten Matrix sind markiert und zeigen, aus welchen Elementen jeder Eintrag des Produkts entsteht.}
+\lectureframe{01:26:30}
+\end{figure}
+
+Auch ein Zeilenvektor kann von links wirken. Ist \(B=(B_1,\ldots,B_4)\), dann ist \(BM\) ein weiterer Zeilenvektor mit
+\begin{equation}
+  (BM)_j=\sum_i B_iM_{ij}.
+  \label{eq:l01-row-times-matrix}
+\end{equation}
+Auch hier gilt die Regel: Zeile mal Spalte. An den Dimensionen lässt sich die Form des Ergebnisses ablesen:
+\begin{equation}
+\begin{array}{c@{\qquad}c}
+\text{row}\times\text{column}&=\text{number},\\
+\text{matrix}\times\text{column}&=\text{column},\\
+\text{row}\times\text{matrix}&=\text{row},\\
+\text{matrix}\times\text{matrix}&=\text{matrix}.
+\end{array}
+\label{eq:l01-shape-rules}
+\end{equation}
+
+Es lohnt sich, diese Operationen anhand kleiner numerischer Beispiele mit \(2\times2\)- und \(3\times3\)-Matrizen zu üben. Zusammen mit etwas Analysis ist die Zeile--Spalte-Multiplikation die wichtigste neue mathematische Gewohnheit, die wir für die bevorstehende Quantenmechanik brauchen.
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:50}
+\audiencequestion{Welche Einschränkung legt die Reversibilität der Aktualisierungsmatrix auf?}
+\lecturerresponse{Sie muss eine Inverse besitzen. Die inverse Matrix realisiert die umgekehrte Aktualisierung und führt jeden Zustand zu seinem eindeutigen Vorgänger zurück. Nicht jede Matrix ist invertierbar; die Algebra bildet also dieselbe Unterscheidung ab wie zuvor die Pfeildiagramme. Für das zyklische Beispiel gilt \(P^{-1}=P^3\) und \(P^4=\mathbb{1}\).}
+\end{classroomqa}
+
+\section{Warum bereiten wir die Algebra vor, bevor wir das Qubit einführen?}
+
+Die erste Stunde gab einen qualitativen Überblick über die deterministische klassische Physik anhand von Bits und reversiblen Pfeilen. Die weitere Mathematik übersetzt diese Darstellung in eine Form, die den Übergang zur Quantenmechanik übersteht. Eine Konfiguration wird zu einer Spalte, ein Ein-Schritt-Gesetz zu einer Matrix, wiederholte zeitliche Entwicklung zu einem Matrixprodukt und Reversibilität zur Existenz einer Inversen.
+
+Eine quantenmechanische Regel haben wir noch nicht verwendet. Diese Verzögerung ist beabsichtigt. Als Nächstes ersetzen wir die klassischen Alternativen \(\ket{0}\) und \(\ket{1}\) durch ein Qubit und fragen, welche neuen Zustände möglich sind. Die hier eingeführten Zeilen- und Spaltenvektoren, Skalarprodukte und Matrizen werden dann zeigen, warum sich Quanteninformation so deutlich von einer klassischen Bitfolge unterscheidet.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:00}
+\audiencequestion{Warum führen wir die ganze Matrizenalgebra ein, bevor wir sagen, wozu sie dient?}
+\lecturerresponse{Zuerst kam das qualitative Problem: Wie lässt sich die deterministische Physik durch Zustände und Aktualisierungsgesetze darstellen? Die Algebra bereitet den nächsten Schritt vor. Sobald Qubits eingeführt sind, wirken diese Rechenoperationen nicht mehr losgelöst; sie bilden die natürliche Sprache für Quantenzustände und ihre Entwicklung.}
+\end{classroomqa}
