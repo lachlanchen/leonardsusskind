@@ -1,0 +1,684 @@
+\chapter{從強子 Regge 軌跡到光錐弦}
+
+\lectureoverview{弦理論最初並不是量子引力理論，而是為了理解強子的粒子譜與散射而發展出來的。筆直的 Regge 軌跡暗示強子是延展物體；{\proseunicodefont π}介子--{\proseunicodefont π}介子散射中的對偶性則暗示，兩個表面上不同的過程，其實是同一個曲面的兩種切片方式。我們將循著這些線索進入世界面圖像，把強子弦重新詮釋為 QCD 通量管，接著利用無限動量參考系推導開弦的橫向力學。核心結果是，有效內部哈密頓量量度的是質量平方。因此，在這種描述中，與\(L^2\)成正比的胡克定律能量，會轉變成與\(L\)成正比的靜止能量；這正是定張力弦的特徵行為。}
+
+\section{弦理論的強子起源}
+
+大約在1968--1970年，促使弦理論萌生的問題與質子、中子，尤其是介子有關。夸克模型當時已是受到認真看待的想法，但強子的夸克組成尚未以今日的標準由實驗確立。膠子在一般討論中的能見度更低。Nambu 曾提出相關的規範場想法，但量子色動力學的完整理論架構當時尚未形成。當時可供研究的素材，是強作用粒子出乎意料地豐富的粒子譜。
+
+暫且不區分質子--中子，將這兩種狀態都稱為核子，是有用的做法。核子之外，還有自旋較大的較重態；再往上，則有自旋更大、質量也更高的態。Chew 和 Frautschi 將這些粒子族整理在一張圖上，縱軸為角動量，橫軸為質量平方。以當時的單位計，質子質量約為 1 BeV；這個單位如今稱為 GeV。
+
+以\(\hbar\)為單位量度角動量。對重子族而言，無因次自旋值為半整數，
+
+\begin{equation}
+  J=\frac12,\frac32,\frac52,\ldots,
+\end{equation}
+
+而介子族的自旋則為整數。引人注目的經驗事實是，無論哪一族，以\(M^2\)為橫軸作圖時，各態都大致落在一條直線上。以現代記號可寫成
+
+\begin{equation}
+  J\simeq \alpha_0+\alpha' M^2,
+  \label{eq:l01-regge-trajectory}
+\end{equation}
+
+其中\(\alpha_0\)是截距，\(\alpha'\)是 Regge 斜率。\editorialnote{本講強調觀測到的線性關係及其近乎普適的斜率。引入截距記號只是為了簡潔地表示這項關係；這些軌跡是根據經驗得到的近似結果。}
+
+最初那條直線並不令人信服，因為當時已知的點只有兩個，而任意兩點都能決定一條直線。真正令人驚訝的是後來的發現：新發現的態仍持續落在同一條直線附近。介子軌跡也呈現相同的規律。{\proseunicodefont π}介子從\(J=0\)附近開始，在 GeV 尺度上質量很小；{\proseunicodefont ρ}介子從\(J=1\)開始；更高的激發態則繼續往上延伸。一個粒子族中可能出現五、六或七個態。更令人驚訝的是，不同重子與介子的軌跡幾乎互相平行。因此，角動量每增加一個量子，質量平方也大致增加相同的量：
+
+\begin{equation}
+  \Delta J=1
+  \quad\Longrightarrow\quad
+  \Delta M^2\simeq \frac{1}{\alpha'}.
+  \label{eq:l01-regge-spacing}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{不同的 Regge 軌跡彼此平行，代表什麼意思？\lecturetimestamp{00:09:32}}
+\lecturerresponse{選取一個粒子族，將其中所有激發態畫在圖上，它們會落在一條直線上。再對另一個介子族或重子族重複這個做法。雖然截距不同，這些直線的斜率卻大致相同。因此，角動量增加相同的量，所對應的\(M^2\)增量也大致相同。這個共同斜率稱為普適 Regge 斜率。}
+\end{classroomqa}
+
+與一般延展物體的比較，說明了這種規律為何重要。籃球旋轉時會獲得轉動能量，但其軌跡是彎曲的，不是直線；而且角速度高到一定程度，球就會被撕裂。原子也有轉動激發態，但最終會被游離，軌跡也就到此為止。強子呈現的序列簡單得多；在當時可取得的資料範圍內，並未顯示這個序列即將終止。
+
+這個粒子譜顯示，強子的行為不像點粒子。點粒子沒有可供旋轉或形變的空間結構。電子沒有觀測到高自旋內部態的序列，因此在目前的實驗界限內可視為點狀。相較之下，強子可以被加速旋轉。它的粒子譜暗示其具有複合結構，而自旋與質量的關係則暗示，角動量增加時，物體也會發生形變。
+
+\section{{\proseunicodefont π}介子--{\proseunicodefont π}介子散射中的對偶性}
+
+粒子譜學提供了一條線索，{\proseunicodefont π}介子--{\proseunicodefont π}介子散射則提供了另一條線索。兩個{\proseunicodefont π}介子可以結合成類似{\proseunicodefont ρ}介子的共振態，之後再以兩個{\proseunicodefont π}介子的形式出現。在傳統費曼圖中，這是湮滅後再產生的過程，通常稱為\(s\)道過程。將同一個基本圖旋轉過來，就得到交叉的\(t\)道過程；在這個過程中，{\proseunicodefont π}介子之間交換一個類似{\proseunicodefont ρ}介子的粒子。
+
+{\proseunicodefont ρ}介子並非孤立存在。它屬於一個 Regge 粒子族，因此，若要保持一致，似乎就必須在兩個道中都納入{\proseunicodefont ρ}介子及其所有激發態夥伴。示意如下：
+
+\begin{equation}
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(s)}_{\rho_n}(s,t),
+  \qquad
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(t)}_{\rho_n}(s,t).
+  \label{eq:l01-channel-sums}
+\end{equation}
+
+這些表示式並非兩種應直接相加的近似。數值研究發現，對湮滅道中的共振態序列求和，所得結果已大致等於交換道預期的貢獻。反過來，交換態序列也能重現共振態的描述。因此，若將兩個完整的態序列相加，似乎會把同一份物理效應計算兩次。一般的微擾計算會認為，既然有兩種圖，就必須兩者都納入；然而，強子散射振幅卻暗示，這兩種道的描述彼此對偶。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth]{lecture_01_figure_01.png}
+  \caption{這張板書將 Chew--Frautschi 圖與湮滅道及交叉道圖連在一起，呈現粒子譜與散射這兩條線索如何構成同一個問題。}
+  \lectureframe{00:14:20}
+  \label{fig:l01-regge-duality-board}
+\end{figure}
+
+同樣的關係也可以整理成一幅清楚的示意圖。第一個面板呈現線性粒子譜，另外兩個面板則表示同一散射振幅在不同道中的展開。
+
+\begin{figure}[H]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}[>=Latex,thick]
+    \begin{scope}
+      \draw[->] (0,0) -- (4.2,0) node[right] {$M^2$};
+      \draw[->] (0,0) -- (0,3.4) node[above] {$J$};
+      \draw[blue!65!black] (0.45,0.35) -- (3.55,2.95);
+      \draw[orange!80!black] (0.75,0.20) -- (3.85,2.80);
+      \foreach \x/\y in {0.65/0.52,1.35/1.10,2.05/1.69,2.75/2.27,3.45/2.86}
+        \fill[blue!65!black] (\x,\y) circle (0.07);
+      \foreach \x/\y in {0.95/0.37,1.65/0.95,2.35/1.54,3.05/2.12,3.75/2.71}
+        \fill[orange!80!black] (\x,\y) circle (0.07);
+      \node at (2.1,-0.55) {parallel Regge families};
+    \end{scope}
+    \begin{scope}[xshift=5.7cm]
+      \draw[->] (-1.5,1.2) -- (-0.3,0.25);
+      \draw[->] (-1.5,-1.2) -- (-0.3,-0.25);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.25) -- (0,-0.25);
+      \draw[->] (0.3,0.25) -- (1.5,1.2);
+      \draw[->] (0.3,-0.25) -- (1.5,-1.2);
+      \node at (0,-1.75) {$s$-channel tower};
+    \end{scope}
+    \begin{scope}[xshift=10.5cm]
+      \draw[->] (-1.5,1.2) -- (1.5,1.2);
+      \draw[->] (-1.5,-1.2) -- (1.5,-1.2);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.95) -- (0,-0.95);
+      \node at (0,-1.75) {$t$-channel tower};
+    \end{scope}
+  \end{tikzpicture}}
+  \caption{平行的 Regge 粒子族，以及強子對偶所涉及的兩種道展開。}
+  \label{fig:l01-regge-duality-redraw}
+\end{figure}
+
+\section{一個世界面，兩種切片方式}
+
+自然的做法，是尋找一段可以用兩種方式解讀的幾何歷史。以夸克--反夸克對表示一個{\proseunicodefont π}介子，並令時間軸朝上。不要只畫一維的粒子線，而要填滿夸克軌跡所圍出的區域。對這段二維歷史作水平切片，可能會看到兩條入射弦結合，之後又分開。改用另一種切片方式，則會看到一條弦從一側交換到另一側。這兩種費曼圖道的圖像不再是彼此獨立的機制，而是同一個曲面的不同分解方式。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_02.png}
+  \caption{板書上的夸克線拓撲。對同一段二維歷史作不同切片，便得到共振態與交換態兩種解讀。}
+  \lectureframe{00:17:50}
+  \label{fig:l01-worldsheet-topology-board}
+\end{figure}
+
+夸克與反夸克之間的區域帶來另一個想法。在某一固定時刻的切片中，除了兩個端點，還有某種結構填滿兩端之間的整段區間。這個物體是一維的，也就是一條弦。在相互作用過程中，弦會掃出一個二維曲面。
+
+\begin{definition}
+點粒子的時空歷史是一條\emph{世界線}。弦的時空歷史則是一個\emph{世界面}。某一瞬間的弦，是其世界面的一個空間切片。
+\end{definition}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_03.png}
+  \caption{板書中填滿端點軌跡之間的曲面。時間切片與曲面相交，形成一維的弦。}
+  \lectureframe{00:19:15}
+  \label{fig:l01-worldsheet-filled-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex,scale=0.95]
+    \fill[blue!10]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3)
+      -- (2.6,2.3)
+      .. controls (1.0,1.0) and (1.0,0.5) .. (0.2,0)
+      .. controls (1.0,-0.4) and (1.0,-1.0) .. (2.6,-2.3) -- cycle;
+    \draw[blue!65!black]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3);
+    \draw[blue!65!black]
+      (2.6,-2.3) .. controls (1.0,-1.0) and (1.0,-0.4) .. (0.2,0)
+      .. controls (1.0,0.5) and (1.0,1.0) .. (2.6,2.3);
+    \draw[red!75!black,dashed] (-2.9,-1.15) -- (2.9,-1.15)
+      node[right] {time slice};
+    \draw[orange!80!black,dashed] (-1.55,-2.5) -- (1.55,2.5)
+      node[above] {crossed slicing};
+    \draw[->] (3.45,-1.7) -- (3.45,1.8) node[above] {time};
+    \node[blue!65!black] at (0,-2.7) {one world sheet};
+  \end{tikzpicture}
+  \caption{世界面的清晰示意圖。對同一曲面作不同切片，可將它整理成不同的中間道描述。}
+  \label{fig:l01-worldsheet-redraw}
+\end{figure}
+
+這種幾何重構是探索性的，並非從第一性原理推導出完整理論。不同的人以不同方式形成了早期的弦圖像。這個想法的優點在於，同一個延展物體可以同時解釋兩種觀測：弦可以旋轉並形變，而它的世界面則能編碼對偶的散射道。
+
+\begin{classroomqa}
+\audiencequestion{為什麼要引入弦狀的橋接結構，而不是讓夸克之間交換一個普通粒子？\lecturetimestamp{00:21:20}}
+\lecturerresponse{在某一瞬間，存在的不只是局域化的交換粒子，還有一個夸克、一個反夸克，以及遍布兩者之間各處的結構。這種結構可能從根本上是連續的，也可能由大量組分密集排列而成，近似為連續體；早期的圖像並未決定是哪一種。重要的是，整段區間都被占據，而且觀測到的軌跡沒有顯示出像普通鞋帶那樣終止的跡象；普通鞋帶的兩端通常繫著重物。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{標準模型能描述{\proseunicodefont π}介子散射嗎？
+\lecturetimestamp{00:22:45}}
+\lecturerresponse{可以，但是否適用取決於能量範圍。在低能下，標準模型透過 QCD 及其低能描述，能說明許多{\proseunicodefont π}介子散射現象。在較高能量下，整系列強子交換都會變得重要，直接計算也更困難；此時，以弦的方式整理問題可能更有用。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{早期實驗是否證明 Regge 軌跡永不終止？\lecturetimestamp{00:23:37}}
+\lecturerresponse{沒有。實驗只顯示，當時觀測到的序列尚未出現終點。據此推論軌跡可以無限延伸，是一種富有啟發性的外推，並非測得的無限延伸。}
+\end{classroomqa}
+
+\section{通量管與尺度的轉變}
+
+現代 QCD 為早期的圖像提供了場論詮釋。夸克與反夸克是膠子場的相反源。在一般電動力學中，將異號電荷分開時，電通量會向側面擴散。場會隨距離增加而減弱，因此電荷之間的區域不會維持固定的橫向剖面。QCD 則是非線性的，其動力學可以將相關的色電通量限制在連接夸克與反夸克的狹窄管狀區域中。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_04.png}
+  \caption{夸克與反夸克之間的場線呈現為狹窄的通量管，而非自由擴散的庫侖場。}
+  \lectureframe{00:25:15}
+  \label{fig:l01-qcd-flux-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[orange!14,rounded corners=8pt] (-3.0,-0.55) rectangle (3.0,0.55);
+    \draw[orange!80!black,thick,rounded corners=8pt]
+      (-3.0,-0.55) rectangle (3.0,0.55);
+    \fill[blue!70!black] (-3.35,0) circle (0.17);
+    \fill[red!75!black] (3.35,0) circle (0.17);
+    \node[below] at (-3.35,-0.22) {$q$};
+    \node[below] at (3.35,-0.22) {$\bar q$};
+    \foreach \y in {-0.30,0,0.30}
+      \draw[->,orange!85!black] (-3.05,\y) -- (3.05,\y);
+    \draw[<->] (-2.9,-1.05) -- (2.9,-1.05) node[midway,below] {$L$};
+    \node at (0,0.92) {approximately fixed transverse profile};
+  \end{tikzpicture}
+  \caption{受禁閉的通量管伸長時不會擴散。單位長度能量固定，因而有\(E=TL\)。}
+  \label{fig:l01-qcd-flux-redraw}
+\end{figure}
+
+粒子圖像與場圖像只是以不同方式描述同一件事。在場的描述中，端點分開時，通量管仍大致維持相同的場強與橫截面積。在組分圖像中，拉伸能量會在兩端之間形成更多膠子結構。普通橡皮筋中的分子數固定，因此分子間距會增加，直到材料斷裂。試想每當出現空隙時，就插入一個新分子。如此一來，橡皮筋變長時，沿帶的分子密度仍可維持固定。這就是膠子場所要表達的類比：通量管藉由增長而延展，不會逐漸變細直到斷裂。
+
+\begin{classroomqa}
+\audiencequestion{構成電子的弦也會由膠子構成嗎？\lecturetimestamp{00:28:08}}
+\lecturerresponse{這並不能由此推得。強子弦是質子尺度上的 QCD 物體。假設存在、與量子引力相關的基本弦，則會位於小得多的普朗克尺度附近；此處並無證據顯示電子是由強子膠子弦構成。引人注目之處在於，相關的數學架構出現在這兩種尺度上，而非兩種物理物體彼此相同。}
+\end{classroomqa}
+
+將強子圖像發展成完整的交互作用弦理論，雖然很有前景，卻未能完全建立所期待的強子理論。這套數學模型一再包含一個自旋為二的無質量粒子。在強子理論中，這個態看來像是不受歡迎的預言；若將它視為引力理論的一部分，其量子數卻恰好符合引力子。Joel Scherk 和 John Schwarz 作出了關鍵性的重新詮釋：這套理論或許描述的是量子引力，而不是強子。強子應用與基本弦應用在物理上有所不同，儘管早期的強子問題引領人們走向這套數學架構。
+
+\begin{classroomqa}
+\audiencequestion{通量線如何從正端點延伸到負端點？\lecturetimestamp{00:31:46}}
+\lecturerresponse{通量線離開一個源並進入另一個源，就像磁力線從條形磁鐵的北極延伸至南極。兩端相反的標記表示通量的方向；條形磁鐵也有兩個相反的磁極，不會有兩個北極。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{弦是連續的還是離散的？
+\lecturetimestamp{00:32:45}}
+\lecturerresponse{量子理論使這種區分變得微妙。電磁場可以表示為連續場，同時也有離散的量子。同樣地，弦可以用連續的方式描述，而其激發態則是量子化的。應根據所探討的問題，選用適當的描述；兩種描述都可能成立。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{若改變穿過世界面的時空切片角度，交線仍會是一條弦嗎？\lecturetimestamp{00:34:20}}
+\lecturerresponse{會。改變同時性切片就是作洛倫茲變換。新的切片與曲面相交，得到的是一條處於不同運動狀態的弦。即使弦的質心靜止，弦的內部也不是完全靜止的；它仍可能振動。``靜止''只表示其質心靜止。}
+\end{classroomqa}
+
+\section{相對論能量的兩種展開}
+
+直接以相對論方式描述延展且振動的物體並不容易。一種有用的策略，是找出一個參考系，使物體的相關運動呈現普通非相對論力學的形式。先從單一粒子開始。在非相對論情況下，可寫成
+
+\begin{equation}
+  E_{\mathrm{nr}}=\frac{\bm p^2}{2m}+B,
+  \label{eq:l01-nonrel-energy}
+\end{equation}
+
+其中\(B\)是與整體動量無關的內能或束縛能。對多個互不作用的粒子而言，動能項與內能常數項都分別相加。由於運動取決於能量差，與狀態無關的加法常數通常可以省略。
+
+精確的相對論能量為
+
+\begin{equation}
+  E=\sqrt{\bm p^2c^2+m^2c^4}.
+  \label{eq:l01-rel-energy-c}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_05.png}
+  \caption{非相對論動能與精確的相對論平方根式；討論中已修正\(c\)的冪次。}
+  \lectureframe{00:38:45}
+  \label{fig:l01-relativistic-energy-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{相對論公式中的冪次是否應為\(p^2c^2\)和\(m^2c^4\)，而非最初寫在黑板上的冪次？
+\lecturetimestamp{00:39:12}}
+\lecturerresponse{是。由量綱一致性可知，正確的表示式為\(E^2=p^2c^2+m^2c^4\)。推得非相對論極限後，我們會令\(c=1\)；但在此保留這些冪次，能讓展開過程更清楚。}
+\end{classroomqa}
+
+當\(p^2c^2\ll m^2c^4\)時，提出\(m^2c^4\)，並利用\(\sqrt{1+\epsilon}\simeq1+\epsilon/2\)：
+
+\begin{align}
+  E
+  &=mc^2\sqrt{1+\frac{p^2}{m^2c^2}}
+  \notag\\
+  &\simeq mc^2+\frac{p^2}{2m}.
+  \label{eq:l01-low-momentum-expansion}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_06.png}
+  \caption{小動量展開，得到靜止能量加上熟悉的非相對論動能項。}
+  \lectureframe{00:41:30}
+  \label{fig:l01-low-momentum-board}
+\end{figure}
+
+這個近似要求的不只是質心運動緩慢。盒子可以緩慢移動，但其中的粒子仍可能以接近光速運動。在這種情況下，內部動力學依然是相對論性的。要達到一般的非相對論極限，所選參考系中的所有相關組成粒子都必須以低速運動。
+
+還有另一個有用的極限。沿\(z\)軸對整個系統作洛倫茲推進，直到每個組成粒子都具有很大的正縱向動量\(P_{zi}\)。足夠大的推進會使任何原本向後運動的組成粒子也向前運動。橫向動量與靜止質量則保持不變：
+
+\begin{equation}
+  P_{zi}\gg |p_{xi}|,|p_{yi}|,m_i,
+  \qquad
+  p_{\perp i}^2=p_{xi}^2+p_{yi}^2,
+\end{equation}
+
+以下從此處起令\(c=1\)。對大的\(P_{zi}\)作展開，得到
+
+\begin{align}
+  E_i
+  &=\sqrt{P_{zi}^2+p_{\perp i}^2+m_i^2}
+  \notag\\
+  &=P_{zi}\sqrt{1+\frac{p_{\perp i}^2+m_i^2}{P_{zi}^2}}
+  \notag\\
+  &\simeq P_{zi}
+  +\frac{p_{\perp i}^2+m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-one-particle}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_07.png}
+  \caption{在大\(P_z\)下的平方根展開式，將橫向動量與質量視為小量。}
+  \lectureframe{00:46:45}
+  \label{fig:l01-large-pz-board}
+\end{figure}
+
+對多個組成粒子而言，
+
+\begin{equation}
+  E\simeq
+  \sum_i P_{zi}
+  +\sum_i\frac{p_{\perp i}^2}{2P_{zi}}
+  +\sum_i\frac{m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-sum}
+\end{equation}
+
+第一項是守恆的總縱向動量。它非常大，但只是固定的加法項。保留或減去這一項都不會改變任何能量差；同理，在哈密頓量中加上其他守恆量，也不會改變運動方程。因此，具有動力學效應的部分為
+
+\begin{equation}
+  \begin{aligned}
+    H_{\perp}=E-P_z
+    &\simeq
+    \sum_i\left(
+      \frac{p_{\perp i}^2}{2P_{zi}}
+      +\frac{m_i^2}{2P_{zi}}
+    \right),\\
+    P_z&=\sum_iP_{zi}.
+  \end{aligned}
+  \label{eq:l01-transverse-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_08.png}
+  \caption{多粒子能量分解為守恆的縱向動量、橫向動能，以及依賴質量的內部項。}
+  \lectureframe{00:49:16}
+  \label{fig:l01-energy-sum-board}
+\end{figure}
+
+\section{無限動量參考系}
+
+前面討論的極限，過去稱為無限動量參考系；如今通常以光錐座標表述。從哈密頓量可以直接看出它的意義。在量子力學中，
+
+\begin{equation}
+  i\hbar\frac{\partial}{\partial t}\ket{\psi}=H\ket{\psi}.
+  \label{eq:l01-time-evolution}
+\end{equation}
+
+\(H_{\perp}\)中的所有非平凡項都按\(1/P_z\)縮放。隨著推進增強，能量差縮小，變化也變得較慢。這就是時間膨脹。高度推進的放射性系統看起來衰變得較慢；觀測時間若按相同比例延長，就可以補償這種效應。動力學並未因此消失，只是其時間尺度改變了。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_09.png}
+  \caption{板書將約化能量辨識為產生推進後系統緩慢時間演化的哈密頓量。}
+  \lectureframe{00:52:57}
+  \label{fig:l01-hamiltonian-board}
+\end{figure}
+
+橫向項恰好具有非相對論形式\(p^2/(2m)\)，但在此扮演質量角色的是\(P_z\)。這在物理上是合理的：縱向動量越大，粒子就越難被橫向偏轉，因此縱向動量相當於橫向慣性。項\(m_i^2/(2P_{zi})\)與二維運動狀態無關，因此扮演內能或束縛能的角色。於是，三個空間維度中的相對論運動，轉化為垂直於推進方向的兩個維度中呈現非相對論形式的運動。
+
+這正是以簡單的質量與彈簧模型描述相對論弦所需的條件。這個模型並不假設弦在自己的靜止系中運動緩慢，而是採用橫向動力學具有所需非相對論結構的參考系。
+
+\section{以珠子和彈簧構成的開弦}
+
+取一條開弦，也就是有兩個端點的弦。之後或許會有物體連接在端點上，但目前只考慮弦本身。以位於橫向位置\(\bm X_i(t)=(X_i(t),Y_i(t))\)的珠子近似這條弦，並用相同的彈簧將珠子彼此連接。離散哈密頓量為
+
+\begin{equation}
+  H_N=\sum_{i=1}^{N}
+  \left[
+    \frac{\mu_N}{2}\dot{\bm X}_i^{\,2}
+    +\frac{k_N}{2}
+      \left(\bm X_{i+1}-\bm X_i\right)^2
+  \right].
+  \label{eq:l01-discrete-string}
+\end{equation}
+
+只有動能項的話，珠子會彼此飛散。讓它們連成一條弦的，是最近鄰珠子之間的胡克定律項。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{lecture_01_figure_10.png}
+  \caption{以兩個橫向座標表示開弦的第一幅珠子與彈簧示意圖。}
+  \lectureframe{01:00:30}
+  \label{fig:l01-bead-chain-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \foreach \x in {0,...,8} {
+      \fill[blue!65!black] ({0.85*\x},0) circle (0.09);
+    }
+    \foreach \x in {0,...,7} {
+      \draw[decorate,decoration={zigzag,segment length=4pt,amplitude=2pt}]
+        ({0.85*\x+0.10},0) -- ({0.85*\x+0.75},0);
+    }
+    \draw[->] (3.4,0.15) -- (3.4,1.25) node[above] {$\bm X_i(t)$};
+    \draw[<->] (0,-0.65) -- (6.8,-0.65)
+      node[midway,below] {$0\leq\sigma\leq\pi$};
+  \end{tikzpicture}
+  \caption{開弦的離散化調節模型。在取連續極限之前，珠子質量與彈簧常數會隨間距縮放。}
+  \label{fig:l01-bead-chain-redraw}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_11.png}
+  \caption{取連續極限之前，並列寫出的離散動能項與胡克定律項。}
+  \lectureframe{01:01:30}
+  \label{fig:l01-discrete-energy-board}
+\end{figure}
+
+珠子數目增加時，每顆珠子的質量\(\mu_N\)必須趨近於零，才能讓整條弦的慣性保持有限。同時，彈簧常數\(k_N\)必須增大。相較於同種材料的小段橡膠，長條橡膠更容易拉長固定的量；因此，若要使連續材料的性質保持不變，距離更近的相鄰點就必須以更大的勁度連接。
+
+引入沿著弦的座標\(\sigma\)。其取值範圍只是約定。選擇
+
+\begin{equation}
+  0\leq\sigma\leq\pi
+\end{equation}
+
+很方便，因為之後可以用從\(0\)到\(2\pi\)的參數來描述閉弦。求和會轉為積分，最近鄰差分則會轉為導數：
+
+\begin{equation}
+  \sum_i\longrightarrow\int_0^\pi d\sigma,
+  \qquad
+  \bm X_{i+1}-\bm X_i
+  \longrightarrow
+  \partial_\sigma\bm X.
+  \label{eq:l01-continuum-replacements}
+\end{equation}
+
+將依賴間距的常數吸收到\(t\)、\(\sigma\)與\(\bm X\)的正規化中後，連續哈密頓量具有以下形式
+
+\begin{equation}
+  H_{\mathrm{string}}=
+  \frac12\int_0^\pi d\sigma
+  \left[
+    \left(\partial_t\bm X\right)^2
+    +\left(\partial_\sigma\bm X\right)^2
+  \right].
+  \label{eq:l01-continuum-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_12.png}
+  \caption{板書展示了從珠子求和轉為\(\int_0^\pi d\sigma\)的過程，其中最近鄰差分以\(\partial_\sigma\bm X\)取代。}
+  \lectureframe{01:05:00}
+  \label{fig:l01-continuum-board}
+\end{figure}
+
+第一項是兩個橫向方向的動能，第二項量度弦的拉伸。由於這是哈密頓量，兩項的符號都是正的；在拉格朗日量中，勢能項則會帶負號。確切係數取決於所採用的約定，此處尚未確定；此處重要的是動能與拉伸項並存的結構。
+
+將質心運動與相對運動分開。所有位置同時平移相同的量，會讓物體整體移動；振盪、彎曲與相對拉伸則是內部運動。即使內部組成部分彼此運動，質子、原子或其他複合物體仍可稱為粒子。弦在這方面並無不同。
+
+\section{為什麼哈密頓量量度的是質量平方}
+
+對緩慢運動的物體而言，靜止能量與其質量成正比。然而，在無限動量的描述中，內部貢獻表現為\(M^2/(2P_z)\)。固定共同的縱向動量及其所伴隨的時間尺度變換後，弦的內部哈密頓量便與整個物體的不變質量平方成正比：
+
+\begin{equation}
+  H_{\mathrm{int}}\propto M^2.
+  \label{eq:l01-hint-mass-squared}
+\end{equation}
+
+\editorialnote{更明確地說，光錐運動學給出形式如\(M^2=2P^+P^- - \bm P_\perp^2\)的不變關係。在質心的橫向參考系中，並固定\(P^+\)時，光錐哈密頓量\(P^-\)因此與\(M^2\)成正比。本講省略這些正規化細節，只保留論證所需的比例關係。}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_13.png}
+  \caption{板書將弦的內部能量與完整弦態的質量平方連結起來。}
+  \lectureframe{01:10:30}
+  \label{fig:l01-mass-squared-board}
+\end{figure}
+
+振動弦是由耦合振子構成的系統。完整的量子化留待之後討論，但重要的粒子譜特徵已經顯現。諧振子的能量以離散階梯上升。由於這些內部能量會貢獻至\(M^2\)，弦的激發態自然會使質量平方呈現離散的階梯。這正是開頭 Regge 圖所揭示的結構。
+
+\begin{classroomqa}
+\audiencequestion{\(M\)是整條弦的質量嗎？若質量加倍，相應的\(M^2\)貢獻會變成四倍嗎？
+\lecturetimestamp{01:12:10}}
+\lecturerresponse{是。\(M\)是完整弦態的靜止質量，其中包括振動、拉伸與所有其他內部貢獻。有效的推進系哈密頓量與\(M^2\)成正比，因此質量加倍的態，其質量平方值會變成四倍。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{這種描述如何能涵蓋靜止質量為零的光子？\lecturetimestamp{01:12:52}}
+\lecturerresponse{無質量態對應於\(M=0\)。正的振子貢獻如何組合成這種態，是量子化理論中的重要問題，並非此處的經典模型所能解決。在目前的討論中，\(M\)僅表示總靜止質量，且尚未引入量子力學。}
+\end{classroomqa}
+
+現在將一條靜止的弦均勻拉伸至物理長度 \(L\)。動能項消失；在長度為 \(\pi\) 的參數區間內，
+
+\begin{equation}
+  \left|\partial_\sigma\bm X\right|\simeq\frac{L}{\pi}.
+\end{equation}
+
+因此，
+
+\begin{align}
+  H_{\mathrm{stretch}}
+  &\propto
+  \int_0^\pi d\sigma
+    \left(\partial_\sigma\bm X\right)^2
+  \notag\\
+  &\simeq
+  \pi\left(\frac{L}{\pi}\right)^2
+  \propto L^2.
+  \label{eq:l01-hooke-l2}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_14.png}
+  \caption{用來推知 \(H_{\mathrm{stretch}}\propto L^2\)，進而推知 \(M\propto L\) 的均勻拉伸構型。}
+  \lectureframe{01:15:30}
+  \label{fig:l01-length-relation-board}
+\end{figure}
+
+這是有效橫向力學中的胡克定律行為。但左側的量正比於 \(M^2\)，而非 \(M\)。因此，
+
+\begin{equation}
+  M^2\propto L^2,
+  \qquad
+  M\propto L.
+  \label{eq:l01-mass-length}
+\end{equation}
+
+在靜止系中，能量為 \(E_{\mathrm{rest}}=M\)，單位制取 \(c=1\)。將比例常數記為弦張力 \(T\)，
+
+\begin{equation}
+  E_{\mathrm{rest}}=TL.
+  \label{eq:l01-string-tension}
+\end{equation}
+
+結果與通量管的圖像相符。均勻的電場或磁場具有均勻的能量密度。若其通量被限制在截面固定的管中，每增加一單位長度，能量就會等量增加。等價地，在組成成分的圖像中，每個新開出的間隙都填入新的自由度，因此每單位長度的能量固定不變。弦張力就是這個單位長度能量。
+
+這個結論是間接得出的。它並非聲稱，任意一條被加速至相對論速度的橡皮筋都會自動具有 \(E=TL\)。論證先從大幅洛倫茲變換後得到的橫向非相對論描述出發，將其內部能量認定為 \(M^2\)，然後才把結果轉換回靜止系能量。
+
+\section{同一物體在兩個參考系中的描述}
+
+\(M\)和 \(M^2\) 的區別很容易混淆，因此值得將兩種展開並列比較。取 \(c=1\)，
+
+\begin{align}
+  E&=\sqrt{p^2+M^2}
+  \simeq M+\frac{p^2}{2M},
+  &&p\ll M,
+  \label{eq:l01-rest-expansion-again}\\
+  E&=\sqrt{P_z^2+M^2}
+  \simeq P_z+\frac{M^2}{2P_z},
+  &&P_z\gg M.
+  \label{eq:l01-boost-expansion-again}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_15.png}
+  \caption{分隔處之後再次列出的小動量展開；其中內部靜止能量視為 \(M\)。}
+  \lectureframe{01:28:00}
+  \label{fig:l01-rest-expansion-board-again}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_16.png}
+  \caption{互補的大動量展開；其中剩餘能量正比於 \(M^2/(2P_z)\)。}
+  \lectureframe{01:31:00}
+  \label{fig:l01-boost-expansion-board-again}
+\end{figure}
+
+第一種展開將靜止能量等同於質量，並將普通慣性視為 \(M\)。在第二種展開中，守恆的 \(P_z\) 項被分離出去，橫向慣性為 \(P_z\)，內部能量則以 \(M^2/(2P_z)\) 表示。無論在哪個參考系中，質量都與弦長成正比。改變的是哪個質量函數會作為剩餘哈密頓量出現。
+
+\begin{classroomqa}
+\audiencequestion{洛倫茲變換不應改變物理。為什麼經過洛倫茲變換的弦看起來遵循不同的能量定律？
+\lecturetimestamp{01:25:35}}
+\lecturerresponse{它遵循的物理並沒有不同。在兩種描述中，\(M\propto L\) 且 \(M^2\propto L^2\)。在靜止系中，相關能量是 \(M\)；經過大幅洛倫茲變換後，守恆的 \(P_z\) 被分離出去，剩餘哈密頓量則正比於 \(M^2\)。洛倫茲變換改變的是方便使用的描述，而非不變的質量--長度關係。}
+\end{classroomqa}
+
+\section{超導體禁閉模型}
+
+超導體會排斥其內部的磁場。若在材料變成超導體之前，磁通量已被困在足夠狹窄的通道中，磁通量便無法向側面擴散，而會被限制在一條管狀區域內。一個有用的思想實驗是：在常態樣品上鑽一個窄孔，將一根長條磁鐵穿過孔洞，冷卻樣品，再抽出磁鐵。這種構造只是示意，並非可實際操作的實驗室方案。其目的是隔離出一條磁通線，使其場強與能量密度沿線長方向近似均勻。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_17.png}
+  \caption{超導體中的磁通線構造，以及相應的單極子--反單極子禁閉圖像。}
+  \lectureframe{01:35:30}
+  \label{fig:l01-superconductor-board}
+\end{figure}
+
+再設想一個思想實驗：假設可以將一個磁單極子和一個反單極子置於超導介質中，並將兩者分開。它們之間的磁通量會被擠壓成一條管狀區域。由於管狀區域每單位長度的能量都相同，
+
+\begin{equation}
+  V(R)=T_{\mathrm{flux}}R.
+  \label{eq:l01-linear-confinement}
+\end{equation}
+
+力 \(F=-dV/dR\) 的大小為定值。將這對粒子拉得越遠，所需能量越高，因此兩者會受到禁閉。這正是夸克在強子中所需具備的行為。
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[blue!8,rounded corners=5pt] (-4,-1.35) rectangle (4,1.35);
+    \node[blue!55!black] at (0,1.65) {superconducting medium};
+    \fill[red!75!black] (-2.8,0) circle (0.17);
+    \fill[blue!70!black] (2.8,0) circle (0.17);
+    \node[below] at (-2.8,-0.22) {monopole};
+    \node[below] at (2.8,-0.22) {antimonopole};
+    \fill[orange!18,rounded corners=7pt] (-2.65,-0.42) rectangle (2.65,0.42);
+    \draw[orange!85!black,thick,rounded corners=7pt]
+      (-2.65,-0.42) rectangle (2.65,0.42);
+    \foreach \y in {-0.22,0,0.22}
+      \draw[->,orange!85!black] (-2.55,\y) -- (2.55,\y);
+    \draw[<->] (-2.8,-1.00) -- (2.8,-1.00) node[midway,below] {$R$};
+  \end{tikzpicture}
+  \caption{磁通禁閉形成均勻的管狀區域，並導致線性位能 \(V(R)=T_{\mathrm{flux}}R\)。}
+  \label{fig:l01-superconductor-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{在強子中，什麼扮演超導介質的角色？\lecturetimestamp{01:36:57}}
+\lecturerresponse{這個類比將電與磁的角色對調。一般超導凝聚體帶有電荷，會禁閉磁通量。在量子色動力學（QCD）的對偶超導體圖像中，色磁性物體的凝聚體會禁閉夸克的色電荷。這類物體不會以孤立粒子的形式出現，因為在這個描述中，它們已凝聚於真空之中。}
+\end{classroomqa}
+
+\editorialnote{對偶超導體描述是一種頗具影響力的禁閉機制，此處沿用講座中的歷史性說法。應將它視為描述 QCD 真空的物理圖像，而非從第一原理完整推導禁閉的結果。}
+
+\begin{classroomqa}
+\audiencequestion{能量與長度成正比，對任何變得高度相對論性的普通弦來說，都是普遍規則嗎？\lecturetimestamp{01:38:10}}
+\lecturerresponse{不是。首先必須有一套描述該材料且自洽的相對論理論，而其行為會取決於具體細節。能量隨長度線性增加，只是特定構型的性質：其密度在延展時維持不變，或其通量受到限制而無法向橫向擴散。將它拉開，會產生更多組成成分，或增加均勻充滿場的長度，而不只是增加一組固定分子彼此間的距離。}
+\end{classroomqa}
+
+\section{橫向自由度與粒子的大小}
+
+光錐構造直接以弦的橫向座標描述弦。每個橫向振子都沒有一個可獨立指定的縱向振子與之對應。直接描述的空間維度少一個，是這套形式體系的顯著特徵之一；不過，完整理論仍須滿足洛倫茲不變性。
+
+\begin{classroomqa}
+\audiencequestion{沿著 \(z\) 方向的剩餘運動會如何處理？
+\lecturetimestamp{01:40:10}}
+\lecturerresponse{在光錐描述中，縱向運動不作為獨立自由度引入。物理振盪以橫向自由度描述，而縱向資訊則由約束條件決定。這種精簡的做法，在觀念上與引力系統或許能以少一個直接維度描述的想法相關，不過此處並未推導兩者之間的關聯。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{雷吉圖上目前實際已知多少個點？
+\lecturetimestamp{01:41:15}}
+\lecturerresponse{確切的最大值依粒子家族而異，粗略來說約有七個。這些序列並非實驗上無窮無盡。重點是，已知的點沒有呈現普通宏觀材料常見的明顯失效或斷裂終點。}
+\end{classroomqa}
+
+強子現象學提供了歷史上的研究動機，但數學弦理論不必在每個細節上都重現強子。形式體系建立之後，接下來要問的是它實際描述什麼。無質量自旋二態及其他性質，顯示它更自然地指向引力。
+
+強子與電子表面上的差異，可以用剛體轉動的能量加以量化：
+
+\begin{equation}
+  E_{\mathrm{rot}}=\frac{J^2}{2I},
+  \qquad
+  I\sim MR^2.
+  \label{eq:l01-rotational-energy}
+\end{equation}
+
+角動量是量子化的。將 \(J^2\) 概略寫成 \(\hbar^2 n^2\)，第一個轉動能階差的量級為
+
+\begin{equation}
+  \Delta E_{0\to1}\sim\frac{\hbar^2}{2I}.
+  \label{eq:l01-first-rotational-step}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_18.png}
+  \caption{第一個轉動激發的轉動慣量估算：\(\Delta E\sim\hbar^2/(2I)\)。}
+  \lectureframe{01:44:00}
+  \label{fig:l01-rotational-board}
+\end{figure}
+
+在質量固定時，半徑越小，轉動慣量就越小，激發能量也越高。相對於自身內部動力學的尺度，強子相當大，因此一次轉動激發約需一 GeV，在粒子碰撞中可達到。若電子具有任何空間子結構，實驗限制顯示其尺度遠小於強子的尺度，轉動激發所需的能量也會遠超現有可達範圍。籃球則處於另一極端：它的轉動慣量極大，以致一個角動量量子所需的能量小到無法察覺。原子的轉動或軌道能階躍遷則介於兩個極端之間，通常約為電子伏特的量級。
+
+\begin{classroomqa}
+\audiencequestion{看似基本粒子的電子，是否仍可能具有空間結構與轉動激發？\lecturetimestamp{01:42:04}}
+\lecturerresponse{這些特徵只有可能出現在極高能量下，因而尚未被發現。一個單位角動量所需的能量按 \(1/I\) 縮放，而 \(I\sim MR^2\)。因此，半徑極小會使第一個激發態在質量平方圖上遠離目前可見的範圍。尚未觀察到電子激發，表示電子可能是點狀粒子，也可能是其複合尺度遠小於現有實驗所能解析的尺度。}
+\end{classroomqa}
+
+現在可以從動力學角度理解開篇的雷吉圖。強子是延展物體，因此會呈現可達到的轉動與振動態。其質量平方譜中的等間距步進，是振子哈密頓量對應於 \(M^2\) 時所預期的特徵。能量隨長度近似線性增加，則是張力固定的通量管所具有的特徵。光譜學、散射對偶性、世界面幾何與光錐力學，是描述同一核心概念的四種方式：一種延展的相對論物體，其自然的內部變數是質量平方。

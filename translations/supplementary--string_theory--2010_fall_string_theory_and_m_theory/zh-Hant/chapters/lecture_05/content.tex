@@ -1,0 +1,564 @@
+\chapter{尺度、弦與二十六維}
+
+\lectureoverview{弦譜的間距由什麼決定？答案是張力；張力是具有質量平方量綱的物理量。對基本弦而言，這個觀察引向普朗克單位、實際上不可能直接激發弦，以及強引力的出現。短暫休息後，我們回到玻色開弦的基態。對零點能作正則化，便得到歷史上那條\emph{簡單}的途徑，導出二十四個橫向方向，因而得到二十六維時空。}
+
+\section{我們先前略去的尺度}
+
+到目前為止，我們談過弦的振動與旋轉，卻沒有說明一個單位的激發究竟代表什麼。強子可以想像成一根弦，而弦的振子可以被激發；但從一個態躍遷到下一個態的差距有多大？這個差距由什麼決定？
+
+基本弦模型只有一個有量綱的參數。要找出它，先從一根普通的拉伸彈簧談起。若兩端相距\(\ell\)，胡克定律給出
+\begin{equation}
+  E_{\mathrm{spring}}=\frac{k\ell^2}{2}.
+  \label{eq:l05-hooke}
+\end{equation}
+第一版寫出之後，全班才補上二分之一這個因子。在這個初步估算中，這類數值因子不會影響任何本質性的結論。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_01.png}
+  \caption{拉伸線段及其依胡克定律得到的勢能。}
+  \lectureframe{00:02:28}
+  \label{fig:l05-hooke-board}
+\end{figure}
+
+\eqref{eq:l05-hooke}中的能量是非相對論性的。在前幾講採用的無限動量描述中，內部的非相對論性能量正比於的不是\(m\)，而是\(m^2\)。因此我們示意性地寫成
+\begin{equation}
+  m^2\sim k\ell^2,
+  \qquad
+  m\sim \sqrt{k}\,\ell.
+  \label{eq:l05-mass-length}
+\end{equation}
+在弦的靜止系中，弦的質量就是它的能量，因此第二個關係式可寫成
+\begin{equation}
+  E_{\mathrm{rest}}\sim T_s\ell,
+  \qquad
+  T_s\equiv\sqrt{k}.
+  \label{eq:l05-tension}
+\end{equation}
+係數\(T_s\)就是弦張力，也就是單位長度所儲存的能量。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_02.png}
+  \caption{黑板上的推導從\(m^2\sim k\ell^2\)進展到質量正比於長度。}
+  \lectureframe{00:05:42}
+  \label{fig:l05-mass-length-board}
+\end{figure}
+
+這套記號是配合本講的彈簧類比而採用的。在標準的相對論性弦記號中，通常寫成
+\begin{equation}
+  T_s=\frac{1}{2\pi\alpha'},
+  \label{eq:l05-alpha-prime}
+\end{equation}
+因此，弦能級每增加一階，\(m^2\)便增加約\(1/\alpha'\)；換句話說，增量的量級與張力相當。
+\editorialnote{本講採用有效的\(k\)，使\(\sqrt{k}\)扮演張力的角色。與記號約定無關的說法是：\(T_s\)的量綱為質量平方，而雷吉斜率滿足\(\alpha'\propto T_s^{-1}\)。}
+
+\subsection{量綱與振子能隙}
+
+令\(c=\hbar=1\)。此時能量的量綱為長度的倒數：
+\begin{equation}
+  [E]=L^{-1}.
+\end{equation}
+張力是單位長度所具有的能量，因此
+\begin{equation}
+  [T_s]=L^{-2}=E^2.
+  \label{eq:l05-tension-dimension}
+\end{equation}
+這就是弦譜自然以質量平方為間距的原因。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_03.png}
+  \caption{黑板上的自然單位：\(c=\hbar=1\)，能量的量綱為長度倒數，而振子頻率由彈簧的尺度決定。}
+  \lectureframe{00:06:05}
+  \label{fig:l05-natural-units-board}
+\end{figure}
+
+普通振子也能從另一個角度說明同一件事。對質量為\(\mu\)的彈簧，
+\begin{equation}
+  \omega=\sqrt{\frac{k}{\mu}},
+  \qquad
+  \Delta E=\hbar\omega.
+\end{equation}
+彈簧越硬，頻率越高，量子能隙也越大。一根弦包含無窮多個這樣的簡正模，但它們共用的尺度由\(T_s\)決定。一旦知道張力，就知道弦譜的間距。
+
+張力的量綱也和力相同，因為力乘以距離就是能量。想像固定一端，並在另一端懸掛重物。一根理想的相對論性弦若滿足\(E=T_s\ell\)，便能承受由\(T_s\)決定的力，而且這個力與弦長無關。在這個刻意誇張的比喻中，由觀測到的激發能推得的強子張力，相當於一輛卡車的重量。從來沒有人把卡車吊掛在介子上；測得的譜給出張力，而張力則讓我們得以作這種力學上的比較。
+
+基本弦的張力會大得多。若電子、光子與引力子都由基本弦構成，它們最低的振子激發能必定遠高於已觀測到的粒子能量。在同樣誇張的引力實驗中，這種張力甚至能支撐星系質量的物體。這個比喻要表達的不是工程上的可行性，而是巨大的張力同時意味著很高的激發能，以及極小的基態漲落。
+
+\section{由普適常數構成的單位}
+
+要多大的尺度才算巨大？自然的基準是普朗克尺度。與其直接引用，不如讓我們推導它。
+
+公尺、公斤和秒都是很好的實驗室單位，但它們的起源都在人類熟悉的尺度上。公尺適合量布或繩子；英尺得名於身體的一部分；秒則是一天中便於使用的一小段時間。也可以把質子半徑定為一，藉此簡化某些核物理公式，但質子只是某一種複合粒子。這種選擇無法簡化整個物理學。
+
+有三個量綱常數具有更普遍的作用：
+\begin{itemize}
+  \item \(c\)為所有物質系統設定極限速度；
+  \item \(\hbar\)出現在所有量子系統的不確定關係中；
+  \item \(G\)使引力與各種形式的質能耦合。
+\end{itemize}
+選擇單位使\(c=\hbar=G=1\)，等同於用這些常數構造長度、時間與質量的單位。
+
+它們通常的量綱為
+\begin{equation}
+  \begin{aligned}
+    [c]&=LT^{-1},
+    & [\hbar]&=ML^2T^{-1},\\
+    [G]&=L^3M^{-1}T^{-2}.
+  \end{aligned}
+  \label{eq:l05-dimensions-constants}
+\end{equation}
+中間的關係直接來自
+\(\Delta x\,\Delta p\gtrsim\hbar\)。最後一個關係則可由下式得到，例如
+\begin{equation}
+  a=\frac{GM}{r^2}.
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_04.png}
+    \par\smallskip\footnotesize (a) \(c\)與\(\hbar\)的單位。
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_05.png}
+    \par\smallskip\footnotesize (b) 由牛頓加速度推得的\(G\)單位。
+  \end{minipage}
+  \caption{課堂上彙整的量綱分析要素。}
+  \lectureframe{00:25:43--00:26:40}
+  \label{fig:l05-dimensional-analysis-board}
+\end{figure}
+
+\subsection{先求普朗克面積}
+
+尋找冪次\(p,q,r\)，使得
+\begin{equation}
+  G^p\hbar^q c^r
+\end{equation}
+的量綱為\(L^2\)。先求面積可避免太早引入平方根，也預示了面積日後在引力中將扮演的特殊角色。由\eqref{eq:l05-dimensions-constants}可知，消去質量與時間的冪次後得到
+\begin{equation}
+  -p+q=0,
+  \qquad
+  -2p-q-r=0.
+\end{equation}
+剩餘的長度冪次必須滿足
+\begin{equation}
+  3p+2q+r=2.
+\end{equation}
+因此\(q=p\)、\(r=-3p\)，且\(p=1\)。普朗克面積為
+\begin{equation}
+  \ell_P^2=\frac{G\hbar}{c^3},
+  \label{eq:l05-planck-area}
+\end{equation}
+因此
+\begin{equation}
+  \ell_P=\sqrt{\frac{G\hbar}{c^3}},
+  \qquad
+  t_P=\frac{\ell_P}{c},
+  \qquad
+  m_P=\sqrt{\frac{\hbar c}{G}}.
+  \label{eq:l05-planck-units}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_06.png}
+  \caption{普朗克面積與普朗克長度的完整量綱推導。}
+  \lectureframe{00:31:34}
+  \label{fig:l05-planck-area-board}
+\end{figure}
+
+以數量級估算，
+\begin{equation}
+  \begin{aligned}
+    \ell_P&\sim10^{-35}\,\mathrm{m},
+    &t_P&\sim10^{-43}\,\mathrm{s},\\
+    m_P&\sim10^{-8}\,\mathrm{kg},
+    &m_Pc^2&\sim10^{19}\,\mathrm{GeV}.
+  \end{aligned}
+  \label{eq:l05-planck-numbers}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_07.png}
+  \caption{三個普朗克尺度的數量級。}
+  \lectureframe{00:35:12}
+  \label{fig:l05-planck-values-board}
+\end{figure}
+
+長度和時間小得難以想像；以粒子物理的標準來看，質量卻大得出奇，約等於一粒細小塵埃的質量。它的靜止能量約為數吉焦，與一箱汽油所含的化學能相當。相較之下，可觀測宇宙的尺度約為\(10^{60}\)個普朗克長度，宇宙至今的年齡則約為\(10^{60}\)個普朗克時間。這些比較是為了讓這些單位有具體的物理意義，而不是提高數值精度。
+
+若特徵弦長\(\ell_s=\sqrt{\alpha'}\)接近\(\ell_P\)，弦的量子尺度便接近\(\ell_P\)，振動週期接近\(t_P\)，而最低的有質量激發能則接近\(m_P\)。講座指出，這些尺度可以相差十倍、一百倍，甚至更多；兩者相近是一種預期，並非量綱上的必然等式。
+
+\begin{classroomqa}
+\audiencequestion{普朗克尺度的質量，是粒子基態之上的質量增量嗎？\lecturetimestamp{00:38:37}}
+\lecturerresponse{等間距的是質量平方。若基態很輕，第一個弦激發態的\(m^2\)會增加約\(m_P^2\)，因此它的質量以及所需的質心能量都在\(m_P\)的量級。}
+\end{classroomqa}
+
+\section{兩個尺度應該相差多遠？}
+
+\begin{classroomqa}
+\audiencequestion{量綱分析給出\(\ell_P\)，但為什麼這個數值會是弦長？\lecturetimestamp{00:40:21}}
+\lecturerresponse{這是根據引力，以及目前尚未觀測到弦的內部結構所作的物理猜測，並非單靠量綱分析就能推出。弦長可能大於普朗克長度，這表示它的能量尺度較低。講座所論證的只有兩點：弦長不應是普通的粒子物理尺度；若將弦長壓到遠小於普朗克長度，便會遭遇引力坍縮。}
+\end{classroomqa}
+
+兩個尺度的關係實際上取決於耦合。在完整的緊緻化模型中，\(\ell_P\)、\(\ell_s\)、弦耦合與緊緻化體積會共同影響這個關係。因此不存在普適的方程\(\ell_s=\ell_P\)。講座留下的尺度論證是：弦效應必須在極高能量下才會出現；而在討論亞普朗克尺度的局域化時，不能忽略引力。
+\editorialnote{現代弦論構造不必讓弦長恰好等於四維普朗克長度。兩者的關係取決於弦耦合與緊緻化資料。}
+
+\begin{classroomqa}
+\audiencequestion{如果把普朗克長度視為最小的實用長度，那麼普朗克質量是否也是可能的最小質量？\lecturetimestamp{00:43:27}}
+\lecturerresponse{不是。普通粒子的質量遠小於普朗克質量。普朗克質量對應一個尺度，在此尺度下，緻密物體的引力半徑可與其量子波長相當。以講座中的啟發式說法來講，這是最輕的半經典黑洞所處的尺度，其壽命約為一個普朗克時間；但最後這句話不應被當作對完全量子化物體的精確描述。}
+\end{classroomqa}
+
+\subsection{跑動耦合能告訴我們什麼}
+
+有間接證據顯示，傳統量子場論在遠超加速器直接探測能力的尺度上仍然適用。標準模型的三個規範耦合已在可及能量下測得，其隨能量變化的趨勢也可以外推。在講座的示意圖中，\(U(1)\)、\(SU(2)\)與\(SU(3)\)耦合在高能的統一尺度附近趨於一致；該尺度可能比普朗克能量低幾個數量級。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_08.png}
+  \caption{跑動耦合的示意圖。三條規範耦合曲線在引力強度上升至量級一之前逐漸接近。}
+  \lectureframe{00:47:18}
+  \label{fig:l05-running-couplings-board}
+\end{figure}
+
+這是外推，並非在曲線交會處進行的直接實驗。實驗室能量與統一能量之間若存在額外粒子或能量閾值，就可能改變曲線斜率。謹慎的結論只能是：已知場論沒有顯示普通距離上存在弦尺度子結構的跡象；合理的弦尺度則可能落在推定的統一尺度與普朗克尺度之間那段極大的能量範圍內。
+
+\begin{classroomqa}
+\audiencequestion{這裡外推的是哪三種耦合？\lecturetimestamp{00:48:28}}
+\lecturerresponse{它們是與\(U(1)\)、\(SU(2)\)和\(SU(3)\)相關的規範耦合，分別對應超荷、弱相互作用與強相互作用。在這種分類中，電磁作用是由電弱混合產生的，並非獨立的第四個規範因子。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{引力常數\(G\)本身會隨著探測能量升高而增大嗎？\lecturetimestamp{00:49:30}}
+\lecturerresponse{\(G\)具有量綱，因此單獨的它並不是可直接拿來與無量綱規範耦合相比的量。在特徵能量\(M\)下，無量綱引力強度示意性地由\(GM^2/(\hbar c)\)描述。這個組合會隨能量上升，並在普朗克尺度達到量級一。}
+\end{classroomqa}
+
+從力定律可以清楚看出兩者的比較方式：
+\begin{equation}
+  F_{\mathrm{em}}\sim\frac{e^2}{r^2},
+  \qquad
+  F_{\mathrm{grav}}\sim\frac{GM^2}{r^2}.
+  \label{eq:l05-force-laws}
+\end{equation}
+因此，在自然單位制下，\(e^2\)比較的對象不是\(G\)，而是\(GM^2\)。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_09.png}
+  \caption{用來辨認無量綱引力強度的電磁力與引力定律。}
+  \lectureframe{00:50:50}
+  \label{fig:l05-force-laws-board}
+\end{figure}
+
+\section{為什麼無法直接進行弦譜學}
+
+要如何透過實驗證明電子是一根弦？我們會像研究強子譜那樣，將電子猛烈撞擊到足以激發其內部模式，再尋找質量遵循弦譜規律的一系列能級。如果最低的有質量能級接近\(10^{19}\,\mathrm{GeV}\)，就遠超任何直接探測設備的能力。
+
+總能量並非唯一障礙；能量還必須集中在極小的碰撞參數範圍內。這就牽涉到黑洞。
+
+\begin{classroomqa}
+\audiencequestion{在這些能量下，加速器是否會開始產生小黑洞？\lecturetimestamp{00:50:57}}
+\lecturerresponse{啟發式的預期是：若質心能量集中在其引力半徑之內，就會形成黑洞。恆星黑洞是巨大的恆星受到引力作用而坍縮形成的；微觀黑洞則是動能集中在極小的碰撞區域所形成。在四維引力中，所需能量尺度是普朗克尺度。}
+\end{classroomqa}
+
+作為參照，直線加速器所增加的能量大致正比於加速器長度。講座以約兩英里可達約\(100\,\mathrm{GeV}\)作為簡單的 SLAC 尺度參照。若要以相同的加速梯度達到\(10^{19}\,\mathrm{GeV}\)，加速器長度就得增加約\(10^{17}\)倍，成為星系尺度的機器。
+
+即使能建造這樣的機器，也還需要足夠的亮度。粒子束不會一次只瞄準一對粒子，並達到普朗克長度的精度；而是讓數量龐大的粒子束交會，使少數粒子能以所需的碰撞參數發生碰撞。將普朗克能量乘上極高的碰撞率，所需功率也會同樣荒謬。這些估算刻意只求粗略，但結論不變：在普朗克尺度直接進行弦譜學，並不是實際上能合理設計的實驗。
+
+間接證據必須來自更具體的結構：例如一套能以足夠明確的方式導出已觀測到的低能粒子與相互作用，因而可以接受檢驗的理論；或是在遠低於弦尺度的能量下仍可觀測到的緊緻化效應。講座並未聲稱目前已經有這樣一套具決定性的構造。
+
+\subsection{額外維度與局域化極限}
+
+\begin{classroomqa}
+\audiencequestion{額外維度的尺度也應接近普朗克長度嗎？\lecturetimestamp{00:56:23}}
+\lecturerresponse{在這個基本圖像中，額外維度預期極其微小，但這項論證無法精確決定其大小。若某個緊緻維度大到能在較低能量下被探測到，那麼新的 Kaluza--Klein 模式與高維效應早已改變我們觀測到的場論。因此，場論成功外推的結果，為這類維度的大小設下上限。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{為什麼弦長或緊緻維度不可能比\(\ell_P\)小上許多個數量級？\lecturetimestamp{00:57:48}}
+\lecturerresponse{要分辨更短的距離，就需要更大的動量。超過普朗克尺度後，局域化所需能量的引力半徑會與欲探測的區域相當，接著甚至大於該區域。實驗還來不及分辨更小的普通弦，就先形成了黑洞。}
+\end{classroomqa}
+
+不確定性原理給出這項估算。若要將粒子局域化至\(\Delta x\)，就需要
+
+\begin{classroomqa}
+\audiencequestion{選定普朗克長度與普朗克時間後，普朗克質量在物理上如何決定？\lecturetimestamp{00:59:04}}
+\lecturerresponse{可以用\(\hbar\)或\(G\)將長度尺度換算成能量。不確定性原理指出，若要把兩個粒子限制在\(\ell_P\)的範圍內，所需動量約為\(\hbar/\ell_P\)，因此能量約為\(m_Pc^2\)。等價地說，普朗克質量就是量子尺度與引力尺度變得相當時所對應的質量。}
+\end{classroomqa}
+
+\begin{equation}
+  \Delta p\gtrsim\frac{\hbar}{\Delta x},
+  \qquad
+  E\sim c\,\Delta p.
+  \label{eq:l05-localization}
+\end{equation}
+在\(\Delta x=\ell_P\)時，這個能量為
+\begin{equation}
+  E\sim\frac{\hbar c}{\ell_P}=m_Pc^2.
+\end{equation}
+同時，史瓦西半徑
+\begin{equation}
+  r_s\sim\frac{GE}{c^4}
+\end{equation}
+約為\(\ell_P\)，相差數值因子。量子局域化與引力坍縮在同一尺度上相遇。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_10.png}
+  \caption{局域化論證中再次檢視的普朗克長度與普朗克質量公式。}
+  \lectureframe{01:00:25}
+  \label{fig:l05-localization-board}
+\end{figure}
+
+尺度的推導至此完成。
+
+\section{基態的質量必須低於光子}
+
+休息後有兩個方向可選：開始談共形變換，或介紹通往臨界維度較早期、較簡單的推導。我們選擇後者，但先提醒一句：這個簡單的論證其實並不簡單，也不是最深層的理由。不過，它確實正確，而且接近歷史上最初的發現。
+
+回到玻色開弦。以橫向產生算符作用一次，會得到兩個極化態。由於沒有第三個縱向極化態，這個激發必須是無質量向量。在一個模式的\(1\)量子會使\(m^2\)增加一個單位的單位制下，
+\begin{equation}
+  m_{\mathrm{ground}}^2=-1,
+  \qquad
+  m_{\mathrm{first}}^2=-1+1=0.
+  \label{eq:l05-open-intercept}
+\end{equation}
+玻色弦理論的快子基態仍是個問題；我們承認這一點，並暫且擱置。眼前要問的是，負的單位從何而來：\eqref{eq:l05-open-intercept}。
+
+弦的每個模式都是諧振子。令\(\hbar=1\)，其真空能為
+\begin{equation}
+  E_{0,n}=\frac{\omega_n}{2}.
+\end{equation}
+對弦而言，\(\omega_n=n\)，因此每個橫向座標形式上貢獻
+\begin{equation}
+  E_0^{(1)}
+  =\frac12\sum_{n=1}^{\infty}n.
+  \label{eq:l05-formal-zero-point}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_11.png}
+  \caption{回顧各模式的頻率後，寫下零點能總和\(\sum n/2\)。}
+  \lectureframe{01:06:18}
+  \label{fig:l05-zero-point-board}
+\end{figure}
+
+現在問題變得明確了。\eqref{eq:l05-formal-zero-point}中的每一項都是正數，而總和會發散。它怎麼可能給出有限的負截距？
+
+\section{讀取譜之前，先扣除整體運動}
+
+在對總和作正則化之前，先回顧為什麼內部能量會被認作質量平方。對於縱向動量\(P>0\)很大的粒子，
+\begin{equation}
+  E=\sqrt{P^2+m^2}
+   =P+\frac{m^2}{2P}
+   +O(P^{-3}).
+  \label{eq:l05-large-p-energy}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_12.png}
+  \caption{大\(P\)動量展開，將整體動量項與內部質量項分開。}
+  \lectureframe{01:07:35}
+  \label{fig:l05-fast-energy-board}
+\end{figure}
+
+第一項代表沿\(z\)軸的整體運動，與內部狀態無關。對所有具有相同\(P\)的內部態而言，這一項都相同且守恆。將它扣除並重新縮放，就能消去運動學上的時間膨脹：
+\begin{equation}
+  \begin{aligned}
+    E-P&=\frac{m^2}{2P}+O(P^{-3}),\\
+    2P(E-P)&=m^2+O(P^{-2}).
+  \end{aligned}
+  \label{eq:l05-internal-energy}
+\end{equation}
+
+氫原子可以幫助我們理解這個物理圖像。對氫原子作洛倫茲變換，使它高速運動。它的總能量會增加，但以實驗室時間測量的兩個內部能階之間的能量差會縮小，因為原子的時鐘變慢了。\eqref{eq:l05-large-p-energy}中的\(1/P\)因子正是這種抑制。乘以\(2P\)即可恢復不變的質量平方差。
+
+因此，基態的裸能量不一定真的等於\(-1\)。它可能包含一大項與整體縱向能量相關、且不隨狀態改變的部分，另加一個有限的內部剩餘項。講義將高速運動下的關係式改寫，呈現這兩項後，再回頭處理振子總和。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_13.png}
+  \caption{不變質量項與大幅度、且不隨狀態改變的縱向貢獻並列呈現。}
+  \lectureframe{01:11:34}
+  \label{fig:l05-infinite-piece-board}
+\end{figure}
+
+量子場論中，無窮大的真空能並不陌生。人們常將發散且不隨狀態改變的常數，與可觀測的能量差分開。講義把這種做法比作房間中電磁場的零點能，並坦言這種處理方式並不令人滿意，卻是標準做法。在這裡我們採用同樣的啟發式方法：分離發散部分，再問是否能留下確定的有限餘項。
+
+\section{將總和正則化}
+
+引入正值的調節參數\(\epsilon\)：
+\begin{equation}
+  S_1(\epsilon)
+  =\sum_{n=1}^{\infty}n e^{-n\epsilon}.
+  \label{eq:l05-regulated-sum}
+\end{equation}
+只要\(\epsilon>0\)，指數因子最終就會壓過\(n\)，使總和收斂。令\(\epsilon\)趨近於零，就會移除截斷。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_14.png}
+  \caption{對\(1+2+3+\cdots\)逐項乘上指數調節因子。}
+  \lectureframe{01:16:42}
+  \label{fig:l05-regulator-board}
+\end{figure}
+
+對參數微分即可產生因子\(n\)：
+\begin{equation}
+  S_1(\epsilon)
+  =
+  -\frac{d}{d\epsilon}
+  \sum_{n=1}^{\infty}e^{-n\epsilon}.
+  \label{eq:l05-derivative-trick}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_15.png}
+  \caption{對截斷參數微分，便會帶出\(-n\)。}
+  \lectureframe{01:18:05}
+  \label{fig:l05-derivative-board}
+\end{figure}
+
+剩下的是幾何級數：
+\begin{equation}
+  S_0(\epsilon)
+  \equiv
+  \sum_{n=1}^{\infty}e^{-n\epsilon}
+  =
+  \frac{e^{-\epsilon}}{1-e^{-\epsilon}}
+  =
+  \frac{1}{e^\epsilon-1}.
+  \label{eq:l05-geometric-sum}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_16.png}
+  \caption{正則化幾何級數的閉合形式。}
+  \lectureframe{01:19:12}
+  \label{fig:l05-geometric-board}
+\end{figure}
+
+在\(\epsilon\)很小時作展開：
+\begin{equation}
+  S_0(\epsilon)
+  =
+  \frac{1}{\epsilon}
+  -\frac12
+  +\frac{\epsilon}{12}
+  -\frac{\epsilon^3}{720}
+  +O(\epsilon^5).
+  \label{eq:l05-bernoulli-expansion}
+\end{equation}
+黑板上的推導是先分別展開分子與分母，提出一個\(\epsilon\)因子，再展開倒數。這段計算中，課堂上幾次檢查了正負號；整理後的結果則是簡潔的表示式\eqref{eq:l05-bernoulli-expansion}。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_17.png}
+  \caption{化簡倒數之前的分子與分母展開式。}
+  \lectureframe{01:23:10}
+  \label{fig:l05-expansion-board}
+\end{figure}
+
+施以\(-d/d\epsilon\)後得到
+\begin{equation}
+  S_1(\epsilon)
+  =
+  \frac{1}{\epsilon^2}
+  -\frac{1}{12}
+  +\frac{\epsilon^2}{240}
+  +O(\epsilon^4).
+  \label{eq:l05-regulated-result}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_18.png}
+  \caption{正則化計算最後得到的發散項\(1/\epsilon^2\)與有限餘項\(-1/12\)。}
+  \lectureframe{01:29:48}
+  \label{fig:l05-minus-twelve-board}
+\end{figure}
+
+人們常用玩笑的方式將這個結果概括為\(1+2+3+\cdots=-1/12\)。這並非通常意義下的收斂。方程\eqref{eq:l05-regulated-result}指出，這種特定的調節方式會產生一個發散項，以及一個與調節參數無關的有限部分：
+\begin{equation}
+  \underbrace{\frac{1}{\epsilon^2}}_{\text{divergent}}
+  \;+\;
+  \underbrace{\left(-\frac{1}{12}\right)}_{\text{finite}}
+  \;+\;O(\epsilon^2).
+\end{equation}
+講義將第一項吸收到原本就存在、且不隨狀態改變的部分，並保留第二項。講義也保留了歸於泡利的警告：一個量無窮大，並不代表它就是零。自洽的理論必須說明為什麼可以作這種扣除。
+
+在\eqref{eq:l05-formal-zero-point}中恢復二分之一因子後，每個橫向座標的貢獻為
+\begin{equation}
+  E_0^{(1)}=-\frac{1}{24}.
+  \label{eq:l05-one-transverse-zero-point}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_19.png}
+  \caption{二分之一因子將有限項\(-1/12\)轉換為每個橫向座標的\(-1/24\)。}
+  \lectureframe{01:33:42}
+  \label{fig:l05-minus-twenty-four-board}
+\end{figure}
+
+\section{計算橫向方向的數目}
+
+令\(D_\perp\)表示弦的橫向座標數目。它們的總真空能貢獻為
+\begin{equation}
+  E_0^{\mathrm{open}}
+  =-\frac{D_\perp}{24}.
+  \label{eq:l05-open-vacuum}
+\end{equation}
+若要讓第一個開弦振子將基態從\(-1\)提升至無質量能級，必須滿足
+\begin{equation}
+  -\frac{D_\perp}{24}=-1.
+\end{equation}
+因此
+\begin{equation}
+  D_\perp=24.
+\end{equation}
+這些方向都垂直於大縱向動量。再加上縱向空間方向與時間，得到
+\begin{equation}
+  D=D_\perp+2=26.
+  \label{eq:l05-critical-dimension}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{這個論證何時進入弦理論？\lecturetimestamp{01:35:27}}
+\lecturerresponse{這個論證出現在早期強子弦的時代，大約是1969年及1970年代初期。當時實驗上已知雷吉軌跡。振子模型開始被單獨探討後，人們發現第一激發態只有兩個向量極化，而非三個，因此它必須是無質量的。為了得到所需的截距，隨即導出二十四個橫向振子。}
+\end{classroomqa}
+
+當時這個結果看起來怪異得幾乎令人難以置信：正則化後的真空能總和，為什麼會知道時空維度？然而，各個部分恰好相互吻合：無質量向量、截距與橫向振子數目都指向同一個數值。
+
+\subsection{閉弦也印證了這個數目}
+
+閉弦要達到第一個物理的無質量能級，必須各有一個左行模式和右行模式。因此，它的基態必須從零以下兩個單位開始。
+
+\begin{classroomqa}
+\audiencequestion{如果二十四個橫向方向只給出\(-1\)，那閉弦豈不是必須存在於四十八個橫向方向中？\lecturetimestamp{01:37:47}}
+\lecturerresponse{不是。開弦與閉弦存在於同一個時空中。閉弦本來就有兩倍的振子內容：世界面兩個方向各有一個振子塔沿環路傳播。每個振子塔貢獻\(-24/24=-1\)，因此總貢獻為\(-2\)。}
+\end{classroomqa}
+
+因此
+\begin{equation}
+  E_0^{\mathrm{closed}}
+  =
+  2\left(-\frac{D_\perp}{24}\right)
+  =-2
+  \qquad (D_\perp=24).
+\end{equation}
+左右兩個扇區各加入一個振子，會讓狀態提高兩個單位，使質量平方恰好升至零；這正是前一講中引力子多重態出現的位置。
+
+這種吻合讓論證看起來更合理，但仍不是深層的解釋。在現代量子化中，正規序常數、洛倫茲代數或 Virasoro 代數的閉合性，以及共形反常的消除，構成同一個自洽結構。這個結構同時決定截距與臨界維度；有限截斷留下的餘項，則是歷史上通往這個結構的切入點。
+\editorialnote{調節器計算只是理解正規序常數的一種啟發式觀點。\(D=26\)的深入推導需要世界面共形不變性，也就是消除共形反常，並使約束代數保持自洽。}
+
+接下來要談的就是這條更深入的路徑。起步只需要一點複分析：複座標、解析函數，以及 Cauchy--Riemann 方程。所要呈現的物理圖像是土耳其太妃糖---朝一個方向拉伸，再朝另一個方向延展，在不破壞關鍵結構的情況下重新塑形。這個圖像背後的數學就是共形不變性。
