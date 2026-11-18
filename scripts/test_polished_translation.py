@@ -237,6 +237,15 @@ class TranslationTests(unittest.TestCase):
             with self.assertRaisesRegex(p.ProviderUnavailable, 'telemetry unavailable.*RPC rejected'):
                 p.check_codex_quota()
 
+    def test_temporary_codex_installation_gap_uses_bounded_transport_recovery(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)), \
+             patch.object(p, 'check_codex_quota'), \
+             patch.object(p.subprocess, 'run', return_value=SimpleNamespace(
+                 returncode=127, stdout=b'codex wrapper error: real Codex binary not found')):
+            with self.assertRaisesRegex(p.ProviderUnavailable, 'APIConnectionError: Codex installation'):
+                p.codex_chat('prompt', Path(tmp) / 'response.json',
+                             SimpleNamespace(reasoning='high', codex_timeout=60), 'gpt-6-luna')
+
     def test_publication_refuses_an_unvalidated_edition(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'ROOT', Path(tmp)), \
              patch.object(p, 'validated_output', return_value=False), \

@@ -58,7 +58,7 @@ and continue. If a defect cannot be safely repaired, retain the evidence and
 report it rather than claiming completion. This is bounded sweep $round of 3.
 EOF
 
-codex exec --ephemeral --ignore-user-config --skip-git-repo-check \
+"${TRANSLATION_CODEX_BIN:-codex}" exec --ephemeral --ignore-user-config --skip-git-repo-check \
   -C "$root" --sandbox danger-full-access -m gpt-6-luna \
   -c 'model_reasoning_effort="high"' \
   -o "$directory/round-$round-result.md" "$(cat "$packet")" \

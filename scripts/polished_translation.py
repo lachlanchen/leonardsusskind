@@ -686,7 +686,8 @@ def codex_chat(prompt, dest, args, model):
     message = dest.with_suffix('.message.json')
     log = dest.with_suffix('.codex.log')
     command = [
-        'codex', 'exec', '--ephemeral', '--ignore-user-config', '--skip-git-repo-check',
+        os.environ.get('TRANSLATION_CODEX_BIN', 'codex'),
+        'exec', '--ephemeral', '--ignore-user-config', '--skip-git-repo-check',
         '-C', str(cwd), '--sandbox', 'read-only', '-m', model,
         '-c', f'model_reasoning_effort="{args.reasoning}"', '-o', str(message),
         prompt + '\nReturn only the requested valid JSON object, with no Markdown fence or commentary.',
@@ -696,10 +697,14 @@ def codex_chat(prompt, dest, args, model):
                              timeout=args.codex_timeout, env={**os.environ, 'GIT_TERMINAL_PROMPT': '0'})
     except subprocess.TimeoutExpired as exc:
         raise ProviderUnavailable(f'Codex request timed out after {args.codex_timeout}s') from exc
+    except FileNotFoundError as exc:
+        raise ProviderUnavailable('APIConnectionError: Codex launcher temporarily unavailable') from exc
     log.parent.mkdir(parents=True, exist_ok=True)
     log.write_bytes(run.stdout)
     if run.returncode or not message.exists():
         tail = run.stdout.decode(errors='replace')[-2000:]
+        if run.returncode == 127 and 'real Codex binary not found' in tail:
+            raise ProviderUnavailable('APIConnectionError: Codex installation is temporarily unavailable')
         raise ProviderUnavailable(f'Codex request failed ({run.returncode}): {tail}')
     try:
         value = _parse_json_message(message.read_text(encoding='utf-8'))

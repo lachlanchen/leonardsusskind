@@ -3,6 +3,7 @@
 import argparse
 import json
 import math
+import os
 from pathlib import Path
 import queue
 import re
@@ -23,7 +24,8 @@ def quota_error(message):
 
 
 def read_limits(timeout=20):
-    process = subprocess.Popen(['codex', 'app-server', '--disable', 'hooks', '--stdio'],
+    process = subprocess.Popen([os.environ.get('TRANSLATION_CODEX_BIN', 'codex'),
+                                'app-server', '--disable', 'hooks', '--stdio'],
                                stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                                stderr=subprocess.DEVNULL, text=True, bufsize=1)
     messages = queue.Queue()

@@ -86,6 +86,10 @@ before the next starts. At most five isolated Codex calls run simultaneously;
 books and compile jobs remain sequential. `touch .translation-work/STOP` stops
 at the next book boundary. Remove that marker to resume. Accepted caches survive
 interruptions. Check `.translation-work/status.json` and `luna-queue.log` before restarting.
+The launcher passes its verified Codex executable and PATH into the project
+session explicitly, rather than inheriting an older shared tmux server PATH.
+A brief missing-executable window during a shared CLI update uses the same
+bounded transport cooldowns; the queue never reinstalls or copies the shared CLI.
 Per-book failures and publication state are retained under
 `.translation-work/book-state/`. Final queue state distinguishes `complete`,
 `finished_with_blockers`, `provider_blocked`, and user-requested `paused`.
