@@ -1,0 +1,517 @@
+\chapter{Vierdimensionale Supersymmetrie und das Wess--Zumino-Modell}
+
+\lectureoverview{Die eindimensionale Supersymmetriealgebra der vorangegangenen Vorlesung enthielt nur den Hamiltonoperator. Die Lorentz-Invarianz zwingt nun dazu, die Energie wieder mit dem räumlichen Impuls zusammenzufassen; die Superladungen müssen zu Zweikomponentenspinoren werden. Zu dieser Algebra gelangen wir, indem wir zunächst zu einem masselosen Weyl-Fermion und seinem Hamiltonoperator \(H=\boldsymbol{\sigma}\cdot\mathbf p\) zurückkehren. Anschließend stellen wir die Superladungen als Differentialoperatoren im vierdimensionalen Superspace dar, isolieren chirale Superfelder durch die Bedingung \(\bar D_{\dot\alpha}\Phi=0\) und konstruieren mithilfe der Superspace-Integration eine konkrete Feldtheorie. Die aufeinanderfolgenden Ansätze \(\Phi^\dagger\Phi\), \(\Phi^2\) und \(\Phi^3\) führen zu Ausbreitung, gleichen Boson--Fermion-Massen, Yukawa-Wechselwirkungen und einer zugehörigen skalaren Wechselwirkung. Das Hilfsfeld \(F\) macht diese Zusammenhänge deutlich, während die abschließenden Schleifendiagramme zeigen, weshalb Supersymmetrie die Empfindlichkeit gegenüber dem Ultraviolett abschwächt.}
+
+\section{Warum der Hamiltonoperator nicht für sich allein stehen kann}
+
+Im Spielzeugmodell war der Raum unterdrückt, und die grundlegende Relation lautete
+\begin{equation}
+\{Q,Q^\dagger\}=2H.
+\label{eq:l8-time-only-algebra}
+\end{equation}
+Diese Form genügt, wenn die Zeit die einzige Koordinate ist. In einer relativistischen Theorie ist \(H=P_0\) jedoch eine Komponente des Viererimpulses \(P_\mu\). Eine Lorentz-Transformation mischt sie mit \(P_i\). Eine Algebra, deren rechte Seite \(P_0\) heraushebt, könnte sich nicht kovariant transformieren.
+
+Die Korrektur muss daher zwei Dinge zugleich leisten. Sie muss \(H\) durch alle vier Komponenten \(P_\mu\) ersetzen und auf der linken Seite Indizes bereitstellen, die sich auf der rechten Seite mit einem Lorentz-Vektor verknüpfen lassen. Die Dirac-Gleichung für masselose Teilchen liefert den nötigen Hinweis: Ein relativistisches Fermion lässt sich durch einen Zweikomponentenspinor beschreiben, und die Matrizen \(\sigma^\mu\) überführen einen Vektorindex in ein Paar von Spinorindizes.
+
+\section{Masselose Fermionen, Helizität und Chiralität}
+
+Beginnen wir mit dem physikalischen Unterschied zwischen massiven und masselosen Teilchen. Betrachten wir ein Spin-\(\tfrac12\)-Teilchen, das sich in Richtung seines Spins bewegt. Da seine Geschwindigkeit kleiner als die Lichtgeschwindigkeit ist, kann ein Beobachter es überholen. Im neuen Bezugssystem kehrt sich der Impuls um, der Spin jedoch nicht; die Helizität wechselt daher ihr Vorzeichen. Eine lorentzinvariante Theorie massiver Teilchen muss folglich beide Helizitäten enthalten.
+
+Kein Beobachter kann ein masseloses Teilchen überholen. Eigentliche Lorentz-Transformationen können seinen Impuls nicht relativ zu seinem Spin umkehren, sodass eine irreduzible masselose Darstellung eine einzige Helizität tragen kann. Eine räumliche Drehung kann die Flugrichtung umkehren, aber sie macht aus einer rechten Hand keine linke.
+
+\begin{classroomqa}
+\audiencequestion{Geht es beim Überholargument tatsächlich um Helizität und nicht um Chiralität? \lecturetimestamp{00:05:42}}
+\lecturerresponse{Ja. Die Helizität ist die Projektion des Spins auf den Impuls, während die Chiralität der Eigenwert der chiralen Matrix ist, üblicherweise \(\gamma^5\). Bei einem masselosen Modus sind diese beiden Kennzeichnungen miteinander verknüpft, weshalb sie in diesem Beispiel austauschbar klingen können. Bei einem massiven Teilchen sind sie verschieden.}
+\end{classroomqa}
+
+Für die Zustandszahl ist eine Präzisierung nötig.\editorialnote{Ein einzelnes masseloses Weyl-Feld hat eine Teilchenhelizität und die entgegengesetzte Antiteilchenhelizität. Mit „halb so vielen Zuständen“ ist also die Reduktion von einem vierkomponentigen Dirac-Feld auf ein zweikomponentiges Weyl-Feld gemeint; es bedeutet nicht, dass Antiteilchenzustände verschwunden sind.}
+
+Schreiben wir das Weyl-Feld aus diesem einleitenden Argument als
+\begin{equation}
+\chi=
+\begin{pmatrix}
+\chi_1\\
+\chi_2
+\end{pmatrix},
+\end{equation}
+In der Vorlesung wird dieses Feld mit \(\psi_\alpha\) bezeichnet; hier nennen wir es \(\chi\), damit es nicht mit der konjugierten Weyl-Darstellung verwechselt wird, die weiter unten üblicherweise in ein chirales Superfeld eingeht.
+\begin{equation}
+H\chi=\boldsymbol{\sigma}\cdot\mathbf p\,\chi.
+\label{eq:l8-weyl-hamiltonian}
+\end{equation}
+Für den Impuls \(\mathbf p\) hat die Matrix \(\boldsymbol{\sigma}\cdot\mathbf p\) die Eigenwerte \(\pm|\mathbf p|\). Der positivfrequente Zweig liefert den Teilchenmodus; der negativfrequente Zweig wird im Rahmen der Antiteilchenkonstruktion neu interpretiert, statt als nach unten unbeschränktes Spektrum beibehalten zu werden.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_02.png}
+\lectureframe{00:07:44.271}
+\caption{Der chirale Zweikomponentenspinor und der Hamiltonoperator \(H=\boldsymbol{\sigma}\cdot\mathbf p\). Das letzte Impulssymbol ist teilweise verdeckt, aber aus der gesprochenen Gleichung geht es eindeutig hervor.}
+\end{figure}
+
+Auch die Bezeichnung der Händigkeit hängt von der Konvention ab.\editorialnote{An der Tafel wird eine Händigkeit unmittelbar mit dem positiven Eigenwert von \(\boldsymbol{\sigma}\cdot\mathbf p\) verknüpft. Welche Chiralität diesem Vorzeichen entspricht, hängt von den Definitionen von \(\sigma^\mu\), \(\bar\sigma^\mu\) und dem Weyl-Feld ab. Wir behalten die Aussage über den Eigenwert bei, ordnen ihm aber keine konventionsunabhängige Links-rechts-Bezeichnung zu.}
+
+Ersetzt man \(H\) durch \(i\partial_t\) und \(\mathbf p\) durch \(-i\nabla\), erhält man
+\begin{equation}
+i\partial_t\chi=-i\boldsymbol{\sigma}\cdot\nabla\chi.
+\end{equation}
+Führen wir
+\begin{equation}
+\begin{aligned}
+\sigma^\mu&=(\mathbf 1,\boldsymbol{\sigma}),\\
+\bar\sigma^\mu&=(\mathbf 1,-\boldsymbol{\sigma}),\\
+\eta_{\mu\nu}&=\operatorname{diag}(1,-1,-1,-1).
+\end{aligned}
+\label{eq:l8-sigma-convention}
+\end{equation}
+ein. Dann lautet die soeben erhaltene Gleichung
+\begin{equation}
+i\sigma^\mu\partial_\mu\chi=0.
+\label{eq:l8-weyl-equation}
+\end{equation}
+Für die konjugierte Weyl-Darstellung verwendet man \(\bar\sigma^\mu\). Diese konjugierte Darstellung, die weiter unten als \(\psi_\alpha\) bezeichnet wird, erfüllt die freie Gleichung \(i\bar\sigma^\mu\partial_\mu\psi=0\). Zum Beweis der Kovarianz braucht man die Spinordarstellung der Lorentz-Gruppe; entscheidend ist hier jedoch der strukturelle Sachverhalt: Die vier Matrizen \(\sigma^\mu\) verbinden einen Raumzeitindex mit zwei Spinorindizes.
+
+\section{Die vierdimensionale Superalgebra}
+
+Die ungeraden Koordinaten müssen sich nun wie Weyl-Spinoren transformieren:
+\begin{equation}
+\theta^\alpha=(\theta^1,\theta^2),
+\qquad
+\bar\theta^{\dot\alpha}=(\bar\theta^{\dot1},\bar\theta^{\dot2}).
+\end{equation}
+Der Überstrich bezeichnet die komplexe Konjugation, und der Punkt kennzeichnet die konjugierte Lorentz-Darstellung. Es gibt zwei komplexe beziehungsweise vier reelle Grassmann-Komponenten. Ein allgemeines gerades Superfeld
+\begin{equation}
+\mathcal S=\mathcal S(x^\mu,\theta^\alpha,\bar\theta^{\dot\alpha})
+\end{equation}
+hat daher eine endliche Grassmann-Entwicklung. Das Monom höchster Ordnung lautet
+\begin{equation}
+\theta^2\bar\theta^2
+\equiv
+(\theta^1\theta^2)(\bar\theta^{\dot1}\bar\theta^{\dot2}),
+\end{equation}
+und ist das Produkt aller vier unabhängigen ungeraden Koordinaten. Der Koeffizient dieses Monoms wird üblicherweise als \(D\)-Komponente bezeichnet.
+
+Auch die Superladungen tragen Spinorindizes. In der vierdimensionalen Supersymmetrie mit \(N=1\) lautet ihre Algebra
+\begin{align}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+&=2\sigma^\mu_{\alpha\dot\beta}P_\mu,
+\label{eq:l8-superalgebra-main}\\
+\{Q_\alpha,Q_\beta\}&=0,
+&
+\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}&=0,
+\label{eq:l8-superalgebra-nilpotent}\\
+[P_\mu,Q_\alpha]&=0,
+&
+[P_\mu,\bar Q_{\dot\alpha}]&=0,
+&
+[P_\mu,P_\nu]&=0.
+\label{eq:l8-superalgebra-commutators}
+\end{align}
+Der Faktor zwei ist konventionsabhängig. Die Matrix
+\(\sigma^\mu_{\alpha\dot\beta}\) kontrahiert den Vektorindex von \(P_\mu\) und lässt genau die beiden Spinorindizes übrig, die auf der linken Seite auftreten.
+
+\begin{classroomqa}
+\audiencequestion{Sind \(\alpha\) und \(\beta\) an der Sigma-Matrix deren Matrixindizes? \lecturetimestamp{00:22:01}}
+\lecturerresponse{Ja. Genauer gesagt ist einer davon ein ungestrichener Weyl-Index und der andere ein gestrichener konjugierter Index; \(\mu\) ist der Raumzeitvektorindex. Die Sigma-Matrix bildet die Brücke zwischen diesen Beschreibungen.}
+\end{classroomqa}
+
+Die bereinigte Schreibweise macht diese Verbindung ausdrücklich sichtbar.\editorialnote{In der Vorlesung werden die gestrichenen Indizes bewusst unterdrückt; an der Tafel wird die Reihenfolge \(\alpha\beta\) gegenüber \(\beta\alpha\) diskutiert. Die Gleichungen~\eqref{eq:l8-superalgebra-main} und \eqref{eq:l8-superalgebra-commutators} stellen die übliche Schreibweise mit gestrichenen und ungestrichenen Indizes wieder her, ohne die Argumentation zu ändern.}
+
+Die letzte Zeile besagt, dass die Superladungen erhalten sind und mit Translationen verträglich sind. Impulskomponenten kommutieren, weil ihre Differentialoperatoren kommutieren. In der unten verwendeten Differentialoperator-Konvention gilt
+\begin{equation}
+P_\mu=i\partial_\mu,
+\end{equation}
+sodass sich Gl.~\eqref{eq:l8-superalgebra-main} ebenso schreiben lässt als
+\begin{equation}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+=2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu.
+\end{equation}
+
+\section{Superladungen als Superspace-Ableitungen}
+
+Ein Impuls verschiebt eine gewöhnliche Koordinate; eine Superladung verschiebt eine ungerade Koordinate und verändert zugleich die Raumzeitkoordinaten. Legen wir linkswirkende Grassmann-Ableitungen zugrunde und definieren wir
+\begin{align}
+Q_\alpha
+&=\partial_\alpha
+-i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-Q}\\
+\bar Q_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
++i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Qbar}
+\end{align}
+Die Wirkung von \(\epsilon^\alpha Q_\alpha+
+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\) ergibt die infinitesimale Supersymmetrievariation eines Superfelds. Seine Komponenten sind einfach die Koeffizienten der unabhängigen Grassmann-Monome; die Differentialoperatoren mischen diese Koeffizienten.
+
+\begin{classroomqa}
+\audiencequestion{Welche Ableitung nach \(x\) ist mit der Kurzschreibweise \(\bar\theta\sigma\partial\) gemeint? \lecturetimestamp{00:25:40}}
+\lecturerresponse{Alle vier. Das wiederholte \(\mu\) in \(\bar\theta^{\dot\alpha}\sigma^\mu_{\alpha\dot\alpha}\partial_\mu\) wird summiert, sodass jede Komponente von \(\sigma^\mu\) mit der entsprechenden Ableitung \(\partial/\partial x^\mu\) gepaart ist.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Müsste die konjugierte Ladung \(\theta\) enthalten und nicht nochmals \(\bar\theta\)? \lecturetimestamp{00:26:16}}
+\lecturerresponse{Ja. \(Q\) differenziert nach \(\theta\) und enthält \(\bar\theta\); \(\bar Q\) differenziert nach \(\bar\theta\) und enthält \(\theta\). Die beiden sind zueinander konjugierte Operatoren.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ist \(\sigma^\mu\) symmetrisch? \lecturetimestamp{00:27:04}}
+\lecturerresponse{Die Pauli-Matrizen sind hermitesch. Drei der vier Matrizen in \((\mathbf1,\boldsymbol{\sigma})\) sind symmetrisch, während \(\sigma^2\) bezüglich der gewöhnlichen Transposition antisymmetrisch ist. Für die Konjugation sind die Hermitizität sowie die Anordnung der gestrichenen und ungestrichenen Indizes maßgeblich.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Trägt die Sigma-Matrix in der konjugierten Gleichung die Indizes in umgekehrter Reihenfolge? \lecturetimestamp{00:27:13}}
+\lecturerresponse{Bei der Konjugation wechseln gestrichene und ungestrichene Darstellungen; deshalb ist die sichere Schreibweise \(\sigma^\mu_{\alpha\dot\alpha}\) und ihre konjugierte Form \(\bar\sigma^{\mu\,\dot\alpha\alpha}\), statt die beiden Bezeichnungen als austauschbare Matrixplätze zu behandeln.}
+\end{classroomqa}
+
+Die Formeln in den Gleichungen~\eqref{eq:l8-Q} und \eqref{eq:l8-Qbar} unterscheiden sich in Vorzeichen, die auf den ersten Blick von der Kurzschreibweise an der Tafel abweichen. Diese Vorzeichen hängen davon ab, ob \(P_\mu\) gleich \(+i\partial_\mu\) oder \(-i\partial_\mu\) ist, ob die Ableitungen links- oder rechtswirkend sind und in welcher Reihenfolge die konjugierten ungeraden Variablen stehen. Entscheidend ist, dass eine Konvention die gesamte Algebra zugleich erfüllt.
+
+\section{Eine unter Supersymmetrie erhaltene Bedingung}
+
+Ein allgemeines Superfeld enthält viele Komponenten. Wir suchen eine kleinere Klasse, ohne die Symmetrie zu zerstören. Die Vorlesung führt zunächst eine gewöhnliche Analogie an. Für einen Vektor \(\mathbf V\) ist die Bedingung
+\begin{equation}
+V_x=0
+\end{equation}
+nicht rotationsinvariant: Nach einer Drehung trägt \(V_y\) zur neuen \(x\)-Komponente bei. Dagegen ist
+\begin{equation}
+\mathbf V^2=1
+\end{equation}
+invariant und schränkt einen unabhängigen Freiheitsgrad ein. Eine geeignete Bedingung muss eingeschränkte Felder unter der Symmetrie wieder auf eingeschränkte Felder abbilden.
+
+Nehmen wir an, ein linearer ungerader Operator \(\bar D_{\dot\alpha}\) definiere
+\begin{equation}
+\bar D_{\dot\alpha}\Phi=0.
+\label{eq:l8-chiral-constraint}
+\end{equation}
+Nach einer Supersymmetrievariation \(\delta\Phi=Q\Phi\) gilt dieselbe Bedingung weiterhin, sofern \(\bar D\) mit den Superladungen antikommutiert:
+\begin{equation}
+\bar D(Q\Phi)=-Q(\bar D\Phi)=0.
+\end{equation}
+Das ist der abstrakte Konsistenztest, der die Konstruktion begründet, statt eine unbegründete Definition einzuführen.
+
+\begin{classroomqa}
+\audiencequestion{Warum dürfen \(Q\) und \(\bar D\) im letzten Ausdruck vertauscht werden? \lecturetimestamp{00:36:56}}
+\lecturerresponse{Es sind ungerade Operatoren, die antikommutieren. Beim Vertauschen ihrer Reihenfolge entsteht daher ein Minuszeichen; sobald \(\bar D\) auf \(\Phi\) wirkt, wird das Ergebnis durch die ursprüngliche Bedingung gleich null.}
+\end{classroomqa}
+
+Die benötigten kovarianten Ableitungen erhält man, indem man die Vorzeichen der Raumzeit-Ableitung gegenüber den Superladungen umkehrt:
+\begin{align}
+D_\alpha
+&=\partial_\alpha
++i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-D}\\
+\bar D_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
+-i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Dbar}
+\end{align}
+Sie erfüllen
+\begin{align}
+\{D_\alpha,\bar D_{\dot\beta}\}
+&=-2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu,\\
+\{D_\alpha,Q_\beta\}
+&=\{D_\alpha,\bar Q_{\dot\beta}\}=0,\\
+\{\bar D_{\dot\alpha},Q_\beta\}
+&=\{\bar D_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{Ändert sich beim Übergang von \(\bar Q\) zu \(\bar D\) nur das Vorzeichen des Raumzeit-Ableitungsterms? \lecturetimestamp{00:37:58}}
+\lecturerresponse{Genau. Durch diese Vorzeichenumkehr heben sich die gemischten Terme auf, wenn \(D\) mit einer der beiden Superladungen antikommutiert.}
+\end{classroomqa}
+
+Wir fordern nur Gl.~\eqref{eq:l8-chiral-constraint}. Würde man sowohl \(D_\alpha\Phi=0\) als auch \(\bar D_{\dot\alpha}\Phi=0\) fordern, so folgte aus ihrem Antikommutator \(\partial_\mu\Phi=0\); höchstens ein restlicher, raumzeitunabhängiger Anteil bliebe übrig.
+\editorialnote{An der Tafel heißt es, beide Bedingungen würden \(\Phi=0\) erzwingen. Die Algebra erzwingt streng genommen Raumzeitunabhängigkeit; zusätzliche Rand- oder Komponentenbedingungen können das Feld weiter einschränken.}
+
+\section{Lösung der chiralen Bedingung}
+
+Definieren wir die verschobene Koordinate
+\begin{equation}
+y^\mu=x^\mu+i\theta\sigma^\mu\bar\theta.
+\label{eq:l8-chiral-coordinate}
+\end{equation}
+Dann erfüllt eine Funktion
+\begin{equation}
+\Phi=\Phi(y,\theta)
+\label{eq:l8-chiral-solution}
+\end{equation}
+bei der obigen Konvention linkswirkender Ableitungen die Bedingung \(\bar D_{\dot\alpha}\Phi=0\). Die Kettenregel macht die Aufhebung explizit. Beim Ableiten nach \(y^\mu\) entsteht derselbe Term \(i\theta\sigma^\mu\partial_\mu\Phi\), der in \(\bar D_{\dot\alpha}\) mit entgegengesetztem Vorzeichen auftritt.
+
+Ein chirales Superfeld hängt also nicht unabhängig von \(\bar\theta\) ab. Es kann weiterhin von \(\bar\theta\) abhängen, jedoch nur über die Kombination \(y^\mu\). Seine endliche Entwicklung lautet
+\begin{equation}
+\Phi(y,\theta)
+=\phi(y)+\sqrt2\,\theta\psi(y)+\theta^2F(y).
+\label{eq:l8-chiral-expansion-y}
+\end{equation}
+Die drei Komponententypen sind ein komplexes Skalarfeld \(\phi\), ein Weyl-Fermion \(\psi_\alpha\) und ein komplexes Skalarfeld \(F\). Letzteres ist ein Hilfsfeld und kein zweites propagierendes Boson.
+
+\begin{classroomqa}
+\audiencequestion{Wurde \(x\) durch eine neue, dazu orthogonale Koordinate \(y\) ersetzt? \lecturetimestamp{00:49:08}}
+\lecturerresponse{Nein. \(y^\mu\) ist eine Kurzschreibweise für die spezielle Kombination in Gl.~\eqref{eq:l8-chiral-coordinate}; es ist keine zusätzliche Raumzeitrichtung. In \(y\) lässt sich die Chiralität einfach ausdrücken; bei der Konstruktion der gewöhnlichen Feldtheorie wechseln wir zurück zu \(x\).}
+\end{classroomqa}
+
+Entwickelt man Gl.~\eqref{eq:l8-chiral-expansion-y} bei festem \(x\), erhält man
+\begin{align}
+\Phi(x,\theta,\bar\theta)
+={}&\phi
++\sqrt2\,\theta\psi
++\theta^2F
++i\theta\sigma^\mu\bar\theta\,\partial_\mu\phi
+\notag\\
+&-\frac{i}{\sqrt2}\theta^2
+\partial_\mu\psi\,\sigma^\mu\bar\theta
++\frac14\theta^2\bar\theta^2\Box\phi.
+\label{eq:l8-chiral-expansion-x}
+\end{align}
+Alle Komponentenfelder auf der rechten Seite sind bei \(x\) ausgewertet. Das konjugierte antichirale Feld hängt von
+\(\bar y^\mu=x^\mu-i\theta\sigma^\mu\bar\theta\) und \(\bar\theta\) ab. Ein chirales Superfeld kann nicht zugleich reell sein, weil sein konjugiertes Feld die entgegengesetzte Chiralitätsbedingung erfüllt.
+
+\section{Superspace-Integrale}
+
+Eine Wirkung über den gesamten Superspace hat die Form
+\begin{equation}
+S_D=\int d^4x\,d^2\theta\,d^2\bar\theta\;K,
+\label{eq:l8-D-term-action}
+\end{equation}
+wobei \(K\) ein reelles Superfeld ist. Die Berezin-Integration wählt dessen
+\(\theta^2\bar\theta^2\)-Komponente aus. Nach der Integration über die ungeraden Koordinaten bleibt nur eine gewöhnliche Raumzeit-Lagrangedichte übrig.
+
+Es gibt eine zweite invariante Konstruktion. Ist \(W(\Phi)\) chiral, so ist
+\begin{equation}
+S_F=\int d^4x\,d^2\theta\;W(\Phi)
++\int d^4x\,d^2\bar\theta\;\overline{W}(\Phi^\dagger)
+\label{eq:l8-F-term-action}
+\end{equation}
+supersymmetrisch. Das erste Integral wählt die \(\theta^2\)-Komponente aus, das zweite ihre konjugierte Komponente.
+
+\begin{classroomqa}
+\audiencequestion{Warum darf man nur über \(d^2\theta\) integrieren, obwohl der Ausdruck keine Abhängigkeit von \(\bar\theta\) hat? \lecturetimestamp{01:16:30}}
+\lecturerresponse{Die Chiralität bleibt unter Supersymmetrie erhalten, und die Komponente höchster Ordnung in \(\theta\) eines chiralen Superfelds ändert sich nur um eine Raumzeit-Totale Ableitung. Das Raumzeitintegral ist daher invariant, genauso wie das Integral über die vollständige \(D\)-Komponente invariant ist.}
+\end{classroomqa}
+
+\section{Das freie chirale Multiplett}
+
+Betrachten wir den scheinbar strukturlosen Ausdruck
+\begin{equation}
+S_{\mathrm{free}}
+=\int d^4x\,d^2\theta\,d^2\bar\theta\;
+\Phi^\dagger\Phi.
+\label{eq:l8-free-superaction}
+\end{equation}
+Die beiden Faktoren hängen von entgegengesetzt verschobenen Koordinaten ab:
+\begin{equation}
+\Phi=\Phi(x+i\theta\sigma\bar\theta,\theta),
+\qquad
+\Phi^\dagger
+=\Phi^\dagger(x-i\theta\sigma\bar\theta,\bar\theta).
+\end{equation}
+Innerhalb des Raumzeitintegrals können wir die Integrationsvariable \(x\) verschieben. Durch eine Verschiebung lässt sich die Grassmann-Verschiebung aus einem Faktor entfernen; dadurch wird aber die relative Verschiebung im anderen verdoppelt. Die Taylorentwicklung nach dieser nilpotenten Verschiebung bricht nach endlich vielen Termen ab.
+
+Hierher stammen die Ableitungen. Der Superspace-Ausdruck
+\(\Phi^\dagger\Phi\) enthält keine explizite Raumzeit-Ableitung; dennoch erzeugen die verschobenen Argumente erste und zweite Ableitungen der Komponentenfelder. Multipliziert man die Entwicklungen und behält nur die höchste Komponente bei, erhält man in der Konvention von Gl.~\eqref{eq:l8-sigma-convention}
+\begin{equation}
+\mathcal L_{\mathrm{free}}
+=\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F.
+\label{eq:l8-free-component-lagrangian}
+\end{equation}
+Bis auf partielle Integration lässt sich der skalare Anteil stattdessen schematisch als \(-\phi^\ast\Box\phi\) schreiben; dieser Form nähert sich die Rechnung an der Tafel an.
+
+\begin{classroomqa}
+\audiencequestion{Woher stammt die zweite Zeile der Taylorentwicklung des Superfelds? \lecturetimestamp{01:03:00}}
+\lecturerresponse{Sie folgt aus der Komponentenentwicklung \(\Phi(y,\theta)=\phi(y)+\sqrt2\theta\psi(y)+\theta^2F(y)\). Anschließend wird jede Komponente nach Taylor entwickelt, weil sich \(y\) und \(x\) um ein nilpotentes Grassmann-Bilinear unterscheiden.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Müsste diese letzte Komponente \(\theta^2\) enthalten? \lecturetimestamp{01:04:54}}
+\lecturerresponse{Ja. Die Hilfskomponente lautet \(F\theta^2\). Da sie bereits beide unabhängigen \(\theta\) enthält, verschwindet jede weitere Taylor-Verschiebung mit einem zusätzlichen \(\theta\).}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}
+\lectureframe{01:08:57.900}
+\caption{Die Entwicklung in verschobenen Koordinaten wird in skalare, fermionische und Hilfsfeldterme der gewöhnlichen Lagrangedichte sortiert.}
+\end{figure}
+
+Die ersten beiden Terme in Gl.~\eqref{eq:l8-free-component-lagrangian} liefern die masselosen Klein---Gordon- und Weyl-Gleichungen. Der letzte Term enthält keine Ableitung:
+\begin{equation}
+\frac{\partial\mathcal L}{\partial F}=F^\ast=0,
+\qquad
+\frac{\partial\mathcal L}{\partial F^\ast}=F=0.
+\label{eq:l8-free-F-equation}
+\end{equation}
+Er führt weder Anfangsdaten noch ein Teilchen auf der Massenschale ein.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_04.png}
+\lectureframe{01:11:32.360}
+\caption{Der ableitungsfreie Hilfsfeldterm \(F^\ast F\) am Ende der Komponenten-Lagrangedichte.}
+\end{figure}
+
+Auch in der Propagatorsprache zeigt sich dasselbe. Der inverse quadratische Operator für \(F\) ist impulsunabhängig. Seine Fourier-Transformierte ist lokal:
+\begin{equation}
+\langle F(x)F^\ast(y)\rangle
+\propto \delta^{(4)}(x-y).
+\label{eq:l8-F-contact}
+\end{equation}
+Eine \(F\)-Linie kann der Organisation eines Diagramms dienen, doch ihre Endpunkte fallen zusammen. Sie beschreibt eine Kontaktkontraktion, nicht die Bahn eines physikalischen Teilchens.
+
+\section{Das quadratische Superpotential und gleiche Massen}
+
+Die Ausbreitung ergab sich aus einem \(D\)-Term. Die Masse stammt aus dem chiralen Integral. Wählen wir die übliche Normierung
+\begin{equation}
+W_2(\Phi)=\frac12m\Phi^2.
+\end{equation}
+Die \(\theta^2\)-Komponente lautet
+\begin{equation}
+\left.W_2(\Phi)\right|_{\theta^2}
+=m\phi F-\frac12m\psi\psi.
+\end{equation}
+Zusammen mit dem konjugierten Term ergibt sich für die Komponenten-Lagrangedichte
+\begin{align}
+\mathcal L
+={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F
+\notag\\
+&+m\phi F+m^\ast\phi^\ast F^\ast
+-\frac12m\psi\psi
+-\frac12m^\ast\bar\psi\bar\psi.
+\label{eq:l8-mass-offshell}
+\end{align}
+Das Fermionbilinear ist eine Majorana-Masse für das Weyl-Feld. Die Gleichungen für \(F\) sind algebraisch:
+\begin{equation}
+F^\ast=-m\phi,
+\qquad
+F=-m^\ast\phi^\ast.
+\label{eq:l8-mass-F-equations}
+\end{equation}
+Durch Einsetzen erhält man
+\begin{equation}
+\begin{aligned}
+\mathcal L_{\mathrm{on\ shell}}={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi\\
+&-|m|^2|\phi|^2\\
+&-\frac12\left(m\psi\psi+m^\ast\bar\psi\bar\psi\right).
+\end{aligned}
+\label{eq:l8-mass-onshell}
+\end{equation}
+Damit sind sowohl die skalare Masse als auch die Fermionmasse gleich \(|m|\). In der diagrammatischen Sprache an der Tafel geht ein Skalarfeld lokal in \(F\) über: durch eine Einfügung von \(m\phi F\) und unmittelbar darauf durch die konjugierte Einfügung wieder zurück. Zwei Einfügungen ergeben \(|m|^2|\phi|^2\), genau den skalaren Massenterm, der sich aus der Lösung von Gl.~\eqref{eq:l8-mass-F-equations} ergibt.
+
+Die Normierung lässt sich nun genau angeben.\editorialnote{Bei der Multiplikation von Superfeldern unterdrückt die Vorlesung bewusst numerische Koeffizienten. Die hier verwendeten Faktoren \(1/2\), \(1/3\) und \(\sqrt2\) entsprechen der üblichen Wess--Zumino-Normierung; sie machen die Komponenten-Massen und -Kopplungen exakt, ohne einen der qualitativen Schritte der Herleitung an der Tafel zu verändern.}
+
+\section{Das kubische Superpotential und Wechselwirkungen}
+
+Fügen wir nun
+\begin{equation}
+W(\Phi)=\frac12m\Phi^2+\frac13g\Phi^3.
+\label{eq:l8-superpotential}
+\end{equation}
+hinzu. Für ein allgemeines holomorphes \(W\) lautet die \(F\)-Komponente
+\begin{equation}
+\left.W(\Phi)\right|_{\theta^2}
+=F W'(\phi)-\frac12W''(\phi)\psi\psi.
+\label{eq:l8-W-components}
+\end{equation}
+Dabei gilt
+\begin{equation}
+W'(\phi)=m\phi+g\phi^2,
+\qquad
+W''(\phi)=m+2g\phi.
+\end{equation}
+Bevor \(F\) eliminiert wird, enthält der kubische Term
+\begin{equation}
+g\phi^2F-g\phi\psi\psi+\text{h.c.}
+\label{eq:l8-cubic-offshell}
+\end{equation}
+Der zweite Term ist ein Yukawa-Vertex, an dem eine skalare Linie und zwei Fermionlinien zusammentreffen. Der erste verbindet zwei Skalarfelder mit einer Hilfsfeldlinie.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95,>=Latex]
+  \coordinate (vone) at (0,0);
+  \draw[->,thick] (-2,1.1) -- (vone);
+  \draw[->,thick] (vone) -- (-2,-1.1);
+  \draw[thick,dashed] (vone) -- (2,0);
+  \node[left] at (-2,1.1) {\(\psi\)};
+  \node[left] at (-2,-1.1) {\(\psi\)};
+  \node[right] at (2,0) {\(\phi\)};
+  \node[below=8pt of vone] {\(-g\phi\psi\psi\)};
+\end{tikzpicture}
+\caption{Didaktische Neuzeichnung der Yukawa-Wechselwirkung: Zwei Fermionlinien und eine Skalarlinie treffen mit einer Kopplung proportional zu \(g\) aufeinander.}
+\end{figure}
+
+Die vollständige Hilfsfeldgleichung lautet
+\begin{equation}
+F^\ast=-W'(\phi)=-(m\phi+g\phi^2).
+\label{eq:l8-general-F-equation}
+\end{equation}
+Nach dessen Elimination ergibt sich das skalare Potential
+\begin{equation}
+V(\phi)=|W'(\phi)|^2
+=|m\phi+g\phi^2|^2.
+\label{eq:l8-scalar-potential}
+\end{equation}
+Neben dem Massenterm enthält es kubische Skalarterme proportional zu \(m^\ast g\) sowie einen quartischen Term
+\begin{equation}
+V(\phi)\supset |g|^2|\phi|^4.
+\label{eq:l8-quartic}
+\end{equation}
+In der Darstellung mit Hilfsfeldlinien sind zwei \(\phi^2F\)-Vertices durch die lokale \(F\)-Kontraktion verbunden. Da Gl.~\eqref{eq:l8-F-contact} ihre Positionen zwingend zusammenfallen lässt, ergibt sich genau ein lokaler Vier-Skalar-Vertex.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95]
+  \coordinate (vfour) at (0,0);
+  \foreach \angle in {35,145,215,325}
+    \draw[thick,dashed] (vfour) -- (\angle:1.9);
+  \fill (vfour) circle (1.5pt);
+  \node[below=8pt of vfour] {\(-|g|^2|\phi|^4\)};
+\end{tikzpicture}
+\caption{Nach Elimination des Hilfsfelds werden aus zwei lokalen \(F\)-Vertices eine Vier-Skalar-Kontaktwechselwirkung.}
+\end{figure}
+
+Supersymmetrie bringt nicht nur ein Boson und ein Fermion in dieselbe Theorie. Sie erzwingt gleiche Massen, verknüpft die Yukawa-Kopplung mit \(g\) und legt die quartische skalare Kopplung auf \(|g|^2\) fest. Diese Beziehungen lassen sich anhand von Massen, Streuamplituden und Zerfällen prüfen; sie sind keine zufälligen numerischen Übereinstimmungen.
+
+\section{Gekoppelte Schleifeneffekte}
+
+Besonders nützlich werden diese Beziehungen, wenn Wechselwirkungen die Teilchenmassen korrigieren. Zur Selbstenergie des Skalarfelds tragen eine bosonische Schleife des quartischen Vertex und eine fermionische Schleife mit zwei Yukawa-Vertices bei. Beide enthalten zwei Potenzen derselben Kopplung. Eine geschlossene Fermionschleife bringt das von der Fermi-Statistik geforderte relative Minuszeichen mit sich.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=Latex,scale=0.9]
+  \begin{scope}[xshift=-3.3cm]
+    \draw[thick,dashed] (-2,0)--(0,0)--(2,0);
+    \draw[thick,dashed] (0,0) .. controls (-0.9,1.7) and (0.9,1.7) .. (0,0);
+    \fill (0,0) circle (1.4pt);
+    \node at (0,-0.55) {bosonic loop};
+  \end{scope}
+  \begin{scope}[xshift=3.3cm]
+    \draw[thick,dashed] (-2,0)--(-0.8,0);
+    \draw[thick,dashed] (0.8,0)--(2,0);
+    \draw[->,thick] (-0.8,0) arc[start angle=180,end angle=0,x radius=0.8,y radius=0.8];
+    \draw[->,thick] (0.8,0) arc[start angle=0,end angle=-180,x radius=0.8,y radius=0.8];
+    \fill (-0.8,0) circle (1.4pt);
+    \fill (0.8,0) circle (1.4pt);
+    \node at (0,-1.35) {fermionic loop};
+  \end{scope}
+\end{tikzpicture}
+\caption{Die beiden in der Vorlesung gezeigten Mechanismen für die Selbstenergie des Skalarfelds. Supersymmetrie legt die relativen Kopplungen fest; die geschlossene Fermionschleife liefert das entgegengesetzte Vorzeichen.}
+\end{figure}
+
+In einer Schleife heben sich die führenden ultraviolett-empfindlichen Beiträge zwischen den vollständigen bosonischen und fermionischen Anteilen auf. Über Ward-Identitäten und Nicht-Renormierungseigenschaften strukturiert dieselbe Symmetrie auch höhere Ordnungen. Die Aussage betrifft die Symmetrie-verknüpften Summen, nicht eine wörtliche paarweise Aufhebung jedes einzelnen Diagramms; Wellenfunktionsrenormierung, endliche Effekte und weitere symmetrieerhaltende Korrekturen können bestehen bleiben. Darin liegt die praktische Stärke einer Formulierung der Theorie im Superspace: Die Massengleichheit und die Beziehungen zwischen den Kopplungen sind festgelegt, bevor auch nur ein einzelnes Feynman-Integral ausgewertet wird.\editorialnote{An der Tafel wird die Aufhebung allgemeiner formuliert; im Haupttext wird die übliche Präzisierung ergänzt.}
+
+\section{Ausblick}
+
+Das hier konstruierte Modell ist die einfachste wechselwirkende chirale Theorie und wird gemeinhin Wess--Zumino-Modell genannt. Es ist ein Beispiel, nicht die allgemeinste supersymmetrische Feldtheorie; das Muster bleibt jedoch bestehen: Man beschreibt Felder durch Supermultipletts, schreibt invariante Superspace-Integrale auf und lässt die Grassmann-Entwicklung die Beziehungen zwischen den Komponenten erzwingen.
+
+Exakte Supersymmetrie zeigt sich nicht im beobachteten Teilchenspektrum. Die nächste Frage ist daher, wie sich die Symmetrie brechen lässt, ohne so viel von ihrer Kontrolle über das Ultraviolett einzubüßen, dass sie unbrauchbar wird. Die andere angekündigte Richtung ist die große Vereinheitlichung: Wie lassen sich
+\begin{equation}
+SU(3)\times SU(2)\times U(1)
+\end{equation}
+in eine größere Gruppe wie \(SU(5)\) einordnen, und wie verändert der supersymmetrische Teilcheninhalt die Vereinheitlichung? Mit diesen Fragen befassen sich die verbleibenden Vorlesungen.
