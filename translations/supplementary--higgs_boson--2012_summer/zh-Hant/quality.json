@@ -1,0 +1,35 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 28,
+  "outline_entries": 18,
+  "target_characters": 8059,
+  "image_placements": 14,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "揭開希格斯玻色子的奧秘",
+  "pdf_sha256": "e7d55a72452814d9eb87b9ec17eeb02ca762b389949e4be39f88656953d045ed",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 6,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "85f13eb31a58ae3fd149b8a8181eaf0796c80f8ee7f289c3e676c96740566b8d",
+    "chapters/lecture_01/content.tex": "1726453f7823e5840db00b73068fdd5c183b61d9fe7bbdbe2d06c0b703bca72f"
+  },
+  "source_files": {
+    "course.tex": "8618bd1a9d6c91833ba00f7be31dcb20fcc6727f03cd9160273f418737e819fd",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "0dce2f6c0fcca244ee59848cdffaf66f43d412a86a2f3e89cf16984c5f46430c"
+  },
+  "translated_tex": {
+    "cover.tex": "1ccd2040d88bdc49b50a6ca1399cdb53c73dbf440fd8a2e78cb633430ec0a710",
+    "common_preamble.tex": "027b19f7758e185be15105ab914de76a632b0780f1ce683e7d06d67ed99fd50f",
+    "course.tex": "b1f8972cc83bac98b33076c91b0a013fb4feed53d184398a6bf7c03a3f23ed97",
+    "chapters/lecture_01/content.tex": "f730bb13140c3ab26fe5d2fe10962cfa7b71e3a59a51de048e469d85dba43411"
+  }
+}
