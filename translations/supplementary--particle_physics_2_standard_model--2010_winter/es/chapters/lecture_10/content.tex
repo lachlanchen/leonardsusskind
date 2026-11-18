@@ -1,0 +1,745 @@
+\chapter{La escala de Higgs, los acoplamientos que varían con la escala y el problema de la jerarquía}
+
+\lectureoverview{La última clase comienza mirando más allá del modelo estándar, hacia la unificación, la supersimetría y el problema de la jerarquía gauge. Para entender por qué el campo de Higgs ocupa un lugar central en estas cuestiones, primero reconstruimos la lagrangiana de Dirac y mostramos que la masa de un fermión mezcla las quiralidades izquierda y derecha. La interacción débil quiral prohíbe esa masa como término desnudo; un acoplamiento de Yukawa invariante gauge solo la genera después de que el campo de Higgs adquiere un valor de vacío. A continuación, derivamos ese valor de vacío a partir del potencial de Higgs, preguntamos por qué todas las masas elementales conocidas están ligadas a esta pequeña escala y usamos la superconductividad como analogía física. Después del descanso, la clase desarrolla la renormalización a partir del apantallamiento en conductores y dieléctricos, extiende el argumento a la QED y la QCD, sigue los acoplamientos gauge hacia la unificación y deriva la escala de Planck a partir de la gravedad a distancias cortas. La escala electrodébil reaparece entonces como el único número pequeño que sigue sin explicación.}
+
+\section{La pregunta que queda pendiente más allá del modelo estándar}
+
+Aquí no se presenta el modelo estándar como un catálogo cerrado. Al comienzo de esta sesión quiero indicar hacia dónde se dirigirá el próximo curso. La teoría presenta dificultades, no paradojas lógicas: la jerarquía gauge, el posible papel de la supersimetría y la cuestión de la unificación. Los tres factores gauge
+\begin{equation}
+  SU(3)_c\times SU(2)_L\times U(1)_Y
+  \label{eq:l10-standard-model-group}
+\end{equation}
+describen por separado las interacciones fuerte, débil y de hipercarga. ¿Podrían ser subgrupos de un grupo mayor? Una posibilidad estudiada con frecuencia es
+\(SU(5)\), en la que los quarks y los leptones ocupan multipletes comunes. Que la naturaleza utilice esa construcción concreta es otra cuestión. La pista importante es que las estructuras que parecen independientes encajan de manera notablemente ordenada en una estructura matemática mayor.
+
+El Gran Colisionador de Hadrones se construyó, en parte, para revelar la física que resuelva estas cuestiones. En 2010, su objetivo más inmediato era el bosón de Higgs. Encontrar un Higgs nunca podía significar simplemente añadir una partícula a una tabla. Se identifica al Higgs por un conjunto interrelacionado de propiedades: su valor de vacío da masa a los bosones vectoriales débiles y a los fermiones, mientras que sus fluctuaciones se acoplan a esas mismas partículas con intensidades definidas. Una resonancia con acoplamientos incorrectos no sería el Higgs del modelo estándar.
+\editorialnote{La clase es anterior al descubrimiento de 2012. La partícula escalar observada, de aproximadamente \(125\,\mathrm{GeV}\), tiene, dentro de la precisión actual, el espín, la paridad y el patrón de acoplamientos esperados para el Higgs del modelo estándar. Hasta 2026 no se han observado partículas supersimétricas de baja energía. Estos hechos posteriores actualizan el contexto histórico sin alterar el argumento desarrollado en el aula.}
+
+El recorrido hacia ese argumento no comienza con el potencial de Higgs, sino con la ecuación de Dirac. Antes de preguntar de dónde procede la masa de un fermión, necesitamos entender con precisión qué hace.
+
+\section{De la ecuación de Dirac a su lagrangiana}
+
+\subsection{La notación antigua de Dirac}
+
+En la notación hamiltoniana empleada cuando se introdujo por primera vez la ecuación de Dirac, su estructura es
+\begin{equation}
+  i\partial_t\psi
+  =
+  \left(-i\alpha^i\partial_i+\beta m\right)\psi .
+  \label{eq:l10-dirac-hamiltonian}
+\end{equation}
+Los signos y los factores de \(i\) dependen de las convenciones, y en la pizarra se omiten temporalmente algunos. El contenido invariante es la separación entre los términos que contienen derivadas y un término de masa que no contiene ninguna.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_02.png}
+\caption{La ecuación y la lagrangiana de Dirac en la notación antigua de \(\alpha,\beta\). La pizarra se usa para mostrar la estructura, no para fijar una convención de signos.}
+\lectureframe{00:05:52}
+\label{fig:l10-dirac-alpha-beta}
+\end{figure}
+
+Para obtener una acción cuya variación dé la ecuación de Dirac, multiplicamos la ecuación por \(\psi^\dagger\). Al pasar todos los términos a un lado, ya no hace falta un signo igual, lo que da pie a la pequeña broma matemática de la sesión: una vez escrita una ecuación como una expresión que se anula, el signo igual ya ha cumplido su función. La lagrangiana correspondiente de primer orden puede escribirse esquemáticamente como
+\begin{equation}
+  \mathcal L
+  =
+  \psi^\dagger
+  \left(i\partial_t+i\alpha^i\partial_i-\beta m\right)\psi ,
+  \label{eq:l10-dirac-old-lagrangian}
+\end{equation}
+entendiendo que una convención métrica coherente fija los signos relativos.
+
+Los términos con derivadas trasladan una excitación de un punto del espacio-tiempo a otro cercano y, en el proceso, rotan las componentes de su espinor. En una imagen de retículo, son términos de salto. En cambio, el término de masa absorbe y vuelve a emitir el fermión en el mismo punto. No contiene derivadas. Pronto veremos que esta operación local equivale a una conversión repetida entre dos tipos de quiralidad.
+
+\begin{classroomqa}
+\audiencequestion{¿Debería ponerse un \(\gamma^0\) después de
+\(\psi^\dagger\)?\lecturetimestamp{00:05:59}}
+\lecturerresponse{No en la forma no covariante que acabamos de escribir. Pero la pregunta apunta directamente a la notación covariante. Definimos el adjunto de Dirac mediante \(\bar\psi=\psi^\dagger\gamma^0\); así, \(\gamma^0\) sí está incorporada en el objeto que aparece a la izquierda.}
+\end{classroomqa}
+
+\subsection{La forma covariante}
+
+Definamos
+\begin{equation}
+  \bar\psi\equiv\psi^\dagger\beta
+  =\psi^\dagger\gamma^0,
+  \qquad
+  \gamma^0\equiv\beta,
+  \qquad
+  \gamma^i\equiv\beta\alpha^i .
+  \label{eq:l10-dirac-adjoint}
+\end{equation}
+Como \(\beta^2=1\), multiplicar por \(\beta\) permite pasar libremente de una notación a la otra. La derivada temporal se convierte en
+\(\bar\psi\gamma^0\partial_0\psi\), las derivadas espaciales se convierten en
+\(\bar\psi\gamma^i\partial_i\psi\), y se obtiene
+\begin{equation}
+  \boxed{\mathcal L_D
+  =\bar\psi\left(i\gamma^\mu\partial_\mu-m\right)\psi .}
+  \label{eq:l10-covariant-dirac}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_03.png}
+\caption{La reformulación covariante: \(\bar\psi=\psi^\dagger\gamma^0\),
+\(\gamma^i=\beta\alpha^i\) y la forma compacta de la lagrangiana de Dirac.}
+\lectureframe{00:10:17}
+\label{fig:l10-dirac-covariant}
+\end{figure}
+
+Esta notación deja patente el carácter de Lorentz de cada bilineal.
+\(\bar\psi\psi\) es un escalar, mientras que
+\(\bar\psi\gamma^\mu\psi\) es un cuadrivector. La expresión compacta no es solo más elegante que la forma \(\alpha,\beta\): también nos dice cómo se transforman sus componentes.
+
+\begin{classroomqa}
+\audiencequestion{¿Se pretendía que el espinor situado más a la izquierda en la expresión compacta fuera \(\bar\psi\)?\lecturetimestamp{00:09:39}}
+\lecturerresponse{Sí. Se repone la barra que faltaba en la pizarra. Es importante: \(\bar\psi\) no es \(\psi^\dagger\), sino
+\(\psi^\dagger\gamma^0\).}
+\end{classroomqa}
+
+\section{La quiralidad y lo que hace realmente una masa de Dirac}
+
+Además de \(\gamma^0,\gamma^1,\gamma^2,\gamma^3\), definamos
+\begin{equation}
+  \gamma^5
+  =i\gamma^0\gamma^1\gamma^2\gamma^3,
+  \qquad
+  (\gamma^5)^2=1 .
+  \label{eq:l10-gamma-five}
+\end{equation}
+El factor de \(i\) que se muestra aquí corresponde a la convención estándar para la métrica de Minkowski con signatura mayormente negativa. Los valores propios son \(+1\) y \(-1\), y los proyectores correspondientes son
+\begin{equation}
+\begin{aligned}
+  P_L&=\frac{1-\gamma^5}{2},
+  &
+  P_R&=\frac{1+\gamma^5}{2},
+  \\
+  \psi_L&=P_L\psi,
+  &
+  \psi_R&=P_R\psi .
+\end{aligned}
+  \label{eq:l10-chiral-projectors}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué se llama \(\gamma^5\) a la matriz adicional cuando no existe \(\gamma^4\)? ¿Y su valor propio describe la helicidad?\lecturetimestamp{00:10:42}}
+\lecturerresponse{El nombre es histórico: se trata de la matriz adicional que se forma mediante el producto de las cuatro matrices gamma del espacio-tiempo. Su valor propio indica la quiralidad, no, en general, la helicidad. Para una partícula sin masa, ambas nociones pueden identificarse de manera apropiada; por eso es fácil confundirlas, pero la quiralidad es la etiqueta de representación de Lorentz que necesita la teoría gauge débil.}
+\end{classroomqa}
+
+El término cinético conserva la quiralidad. Una forma útil de verlo es que
+\(\{\gamma^\mu,\gamma^5\}=0\), por lo que se descompone en
+\begin{equation}
+  \bar\psi i\gamma^\mu\partial_\mu\psi
+  =
+  \bar\psi_L i\gamma^\mu\partial_\mu\psi_L
+  +
+  \bar\psi_R i\gamma^\mu\partial_\mu\psi_R .
+  \label{eq:l10-chiral-kinetic}
+\end{equation}
+El bilineal escalar se comporta de otra manera:
+\begin{equation}
+  \bar\psi\psi
+  =
+  \bar\psi_L\psi_R+\bar\psi_R\psi_L .
+  \label{eq:l10-chiral-mass}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_04.png}
+\caption{La pizarra descompone el bilineal escalar en componentes que conectan la quiralidad izquierda con la derecha y la derecha con la izquierda.}
+\lectureframe{00:15:38}
+\label{fig:l10-chiral-decomposition}
+\end{figure}
+
+Así pues, una masa de Dirac es una operación local que invierte la quiralidad:
+\begin{equation}
+  \psi_L\longleftrightarrow\psi_R .
+\end{equation}
+Un fermión sin masa puede propagarse con quiralidad definida. Uno masivo no puede permanecer en un solo sector quiral, porque el término de masa mezcla continuamente ambos. Puede parecer sorprendente que esta conversión tenga algo que ver con la inercia, pero es precisamente la forma que adopta la masa en reposo del fermión en la teoría cuántica de campos relativista.
+
+\section{Por qué la simetría débil prohíbe una masa fermiónica desnuda}
+
+La corriente débil cargada tiene quiralidad puramente izquierda. En la clase primero se menciona el \(Z\) y luego se corrige la afirmación: se trata del \(W^\pm\). Los acoplamientos del \(Z\) son quirales y desiguales, pero no están simplemente ausentes para todo fermión de quiralidad derecha. La afirmación precisa es
+\begin{equation}
+  \mathcal L_{\mathrm{cc}}
+  =
+  -\frac{g}{\sqrt2}
+  \left(\bar u_L\gamma^\mu d_L
+  +\bar\nu_L\gamma^\mu e_L\right)W^+_\mu
+  +\mathrm{h.c.}
+  \label{eq:l10-charged-current}
+\end{equation}
+Los fermiones de quiralidad izquierda se transforman como dobletes de \(SU(2)_L\); los fermiones cargados de quiralidad derecha se transforman como singletes.
+
+Comparemos ahora esas reglas de transformación con
+\eqref{eq:l10-chiral-mass}. Un término como
+\(\bar e_L e_R\) absorbe un objeto con un conjunto de números cuánticos electrodébiles y emite otro con un conjunto distinto. Por sí solo, no es invariante gauge. Por tanto, la masa de Dirac habitual no está permitida como término desnudo en la lagrangiana electrodébil.
+
+Este es el orden correcto para explicar el mecanismo. Las masas de los fermiones no se introducen primero para luego asociarlas superficialmente al Higgs. La simetría gauge elimina primero el término de masa evidente. Entonces el campo de Higgs debe llevar los números cuánticos que faltan.
+
+\subsection{El Higgs como portador de carga}
+
+Supongamos que el Higgs se transforma como un doblete de \(SU(2)_L\) con hipercarga
+\(+\tfrac12\):
+\begin{equation}
+  H=
+  \begin{pmatrix}
+    H^+\\ H^0
+  \end{pmatrix},
+  \qquad
+  \widetilde H=i\sigma^2H^* .
+  \label{eq:l10-higgs-doublet}
+\end{equation}
+La clase deja esquemáticos los índices del grupo y llama \(\phi\) al campo. Con esa notación, un término de Yukawa tiene la forma
+\begin{equation}
+  \mathcal L_Y
+  =
+  -G_Y\left(
+    \bar\psi_L\phi\psi_R+
+    \bar\psi_R\phi^\dagger\psi_L
+  \right).
+  \label{eq:l10-yukawa-schematic}
+\end{equation}
+El campo de Higgs transporta la carga débil que no se conservaría si la inversión de quiralidad ocurriera sin más.
+
+La expresión completa del modelo estándar para una generación deja explícita la misma contabilidad:
+\begin{equation}
+  \mathcal L_Y
+  =
+  -y_d\bar Q_LHd_R
+  -y_u\bar Q_L\widetilde H u_R
+  -y_e\bar L_LHe_R
+  +\mathrm{h.c.}
+  \label{eq:l10-yukawa-full}
+\end{equation}
+Cada término es invariante gauge y cada especie de fermión tiene su propio acoplamiento de Yukawa adimensional.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{En la pizarra aparecen juntos la inversión de quiralidad mediada por el Higgs y el potencial de ruptura de simetría.}
+\lectureframe{00:18:54}
+\label{fig:l10-yukawa-potential-board}
+\end{figure}
+
+\section{Una interacción da lugar tanto a la masa como al acoplamiento con el Higgs}
+
+La naturaleza elige un vacío en el que la componente neutra del Higgs no se anula. En la notación esquemática de campo real usada en la clase,
+\begin{equation}
+  \phi=F+\mathcal H ,
+  \label{eq:l10-f-plus-h}
+\end{equation}
+donde \(F\) es el desplazamiento del vacío, que no fluctúa, y \(\mathcal H\) es la fluctuación propagante del Higgs. Al sustituir en
+\eqref{eq:l10-yukawa-schematic} se obtiene
+\begin{align}
+  \mathcal L_Y
+  ={}&
+  -G_YF
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right)
+  \notag\\
+  &-G_Y\mathcal H
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right).
+  \label{eq:l10-yukawa-split}
+\end{align}
+La primera línea es una masa de Dirac y la segunda, una interacción con un cuanto físico de Higgs:
+\begin{equation}
+  m_f=G_YF
+  \qquad\hbox{in the lecture's normalization.}
+  \label{eq:l10-mass-lecture-normalization}
+\end{equation}
+
+En la normalización convencional del modelo estándar,
+\begin{equation}
+\begin{aligned}
+  H(x)&=\frac{1}{\sqrt2}
+  \begin{pmatrix}
+    0\\ v+h(x)
+  \end{pmatrix},
+  \\
+  m_f&=\frac{y_fv}{\sqrt2},
+  \\
+  \mathcal L_{hff}&=-\frac{m_f}{v}h\bar f f,
+\end{aligned}
+  \label{eq:l10-standard-higgs-normalization}
+\end{equation}
+con \(v\simeq246\,\mathrm{GeV}\). La estimación aproximada de \(F\sim200\,\mathrm{GeV}\) que da la clase corresponde a esta misma escala electrodébil, con los detalles de normalización omitidos.
+
+Las masas medidas de \(W\) y \(Z\) determinan la escala \(F\). A partir de las masas fermiónicas medidas se determinan entonces los acoplamientos de Yukawa. El acoplamiento del electrón es diminuto; el del quark top es del orden de la unidad. Si este fuera todo el mecanismo, habríamos introducido un número desconocido por cada fermión y luego habríamos recuperado la misma información.
+
+Pero la segunda línea de \eqref{eq:l10-yukawa-split} aporta información experimental nueva. Indica que un fermión puede emitir o absorber un Higgs y que, al considerar el canal cruzado, un Higgs puede desintegrarse en un par fermión-antifermión. Esquemáticamente,
+\begin{equation}
+\begin{aligned}
+  \mathcal M(h\to f\bar f)&\propto y_f,
+  \\
+  \Gamma(h\to f\bar f)
+  &=
+  N_c\frac{y_f^2m_h}{16\pi}
+  \\
+  &\quad\times
+  \left(1-\frac{4m_f^2}{m_h^2}\right)^{3/2},
+\end{aligned}
+  \label{eq:l10-higgs-fermion-width}
+\end{equation}
+a nivel árbol. Aquí \(N_c=3\) para los quarks y \(1\) para los leptones. Una masa fermiónica mayor implica un acoplamiento de Yukawa mayor, siempre que la desintegración esté permitida cinemáticamente. Esto no significa que todos los canales pesados dominen: también importan los factores de color, el espacio de fases, los canales inducidos por lazos y las desintegraciones en bosones vectoriales. Significa que el acoplamiento fermiónico propiamente dicho es proporcional a la masa.
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo se predeciría en la práctica el tiempo de desintegración de un Higgs sin hacer todos los cálculos técnicos?\lecturetimestamp{00:25:32}}
+\lecturerresponse{La interacción proporciona un elemento de matriz hamiltoniano. Se dibuja el diagrama de Feynman correspondiente, se calcula la amplitud de transición, se eleva al cuadrado y se suma o integra sobre todos los estados finales permitidos. El resultado es la tasa de desintegración. La vida media es la inversa de la anchura total, \(\tau=\hbar/\Gamma_{\mathrm{tot}}\). Esta es la misma lógica de la mecánica cuántica que se emplea en los cálculos de partículas desde los primeros desarrollos de la teoría cuántica de campos.}
+\end{classroomqa}
+
+En la época de la clase, esta fenomenología del Higgs aún era una predicción, no una observación directa. Las autointeracciones de \(W\) y \(Z\) ya habían proporcionado pruebas rigurosas de la estructura gauge; aún faltaba descubrir el Higgs y sus acoplamientos directos. La incertidumbre histórica forma parte del registro, al igual que el desenlace posterior: se encontró una partícula similar al Higgs y las mediciones de sus acoplamientos son ahora pruebas de la misma estructura que genera las masas y que aquí se desarrolla.
+
+\section{El potencial que determina F}
+
+El desplazamiento del vacío no se elige a mano después de escribir el acoplamiento de Yukawa. Lo determina el potencial de Higgs. Para una sección real a través del doblete completo, tomemos
+\begin{equation}
+  V(\phi)
+  =
+  -\frac{\mu^2}{2}\phi^2
+  +\frac{\lambda}{4}\phi^4,
+  \qquad
+  \mu^2>0,\quad\lambda>0.
+  \label{eq:l10-real-higgs-potential}
+\end{equation}
+Cerca de \(\phi=0\), el término cuadrático negativo da una parábola invertida. Decir que \(\mu\) es una masa imaginaria es una forma abreviada de decir que el origen es inestable; no significa que la excitación física del Higgs alrededor del verdadero vacío tenga una masa imaginaria.
+
+El término cuadrático por sí solo haría que el campo creciera sin límite y no dejaría un estado de energía mínima. El término cuártico positivo acaba dominando y hace que el potencial vuelva a crecer. Una potencia impar rompería la simetría de juguete \(\phi\mapsto-\phi\). El término cuártico es la primera interacción estabilizadora par y, en cuatro dimensiones del espacio-tiempo, la interacción escalar polinómica de mayor grado con un acoplamiento adimensional.
+
+Derivemos:
+\begin{align}
+  \frac{dV}{d\phi}
+  &=-\mu^2\phi+\lambda\phi^3
+  \notag\\
+  &=\phi\left(-\mu^2+\lambda\phi^2\right).
+  \label{eq:l10-potential-derivative}
+\end{align}
+El punto estacionario \(\phi=0\) es el máximo inestable. Los dos mínimos cumplen
+\begin{equation}
+  \boxed{F^2=\frac{\mu^2}{\lambda}},
+  \qquad
+  F=\frac{\mu}{\sqrt\lambda}
+  \label{eq:l10-vacuum-value}
+\end{equation}
+para esta convención de campo real.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_06.png}
+\caption{Minimización completa en la pizarra:
+\(V=-\mu^2\phi^2/2+\lambda\phi^4/4\),
+\(V'=0\) y \(\phi^2=\mu^2/\lambda\).}
+\lectureframe{00:34:32}
+\label{fig:l10-higgs-minimization}
+\end{figure}
+
+Los factores \(1/2\) y \(1/4\) se incluyeron precisamente para que desaparezcan al derivar. Cerca del origen, \(\phi^4\) es menor que \(\phi^2\); para valores grandes del campo, crece más deprisa y estabiliza el sistema. Esa sencilla competencia produce el doble pozo.
+
+Las dimensiones también permiten corregir un lapsus verbal momentáneo de la transcripción. En cuatro dimensiones del espacio-tiempo, \(\lambda\) es adimensional, mientras que \(\mu\) y \(F\) tienen dimensiones de masa. Al desarrollar \(\phi=F+\mathcal H\), la curvatura del potencial da
+\begin{equation}
+  m_{\mathcal H}^2
+  =
+  \left.\frac{d^2V}{d\phi^2}\right|_{\phi=F}
+  =
+  -\mu^2+3\lambda F^2
+  =
+  2\mu^2
+  =
+  2\lambda F^2.
+  \label{eq:l10-higgs-curvature}
+\end{equation}
+En la notación completa del modelo estándar,
+\(V(H)=-\mu^2H^\dagger H+\lambda(H^\dagger H)^2\), también se cumple que
+\(m_h^2=2\lambda v^2\). La masa medida del Higgs y \(v\) implican que \(\lambda\) es aproximadamente \(0.13\) a la escala electrodébil. La estimación de 2010 que da la clase era deliberadamente aproximada; la afirmación estructural era que \(\lambda\) no es un número absurdamente pequeño.
+
+\section{¿Por qué todo lo que vemos está ligado a esta escala?}
+
+El mismo \(F\) determina las masas de \(W\) y \(Z\) y, al multiplicarlo por distintos acoplamientos de Yukawa, todas las masas de los fermiones cargados. Esta concentración empírica plantea una pregunta más interesante que el álgebra: ¿por qué todas las partículas elementales conocidas toman prestadas sus masas del mismo fenómeno de ruptura de simetría?
+
+No hay ningún teorema que exija que toda partícula posible lo haga. Imaginemos un fermión vectorial cuyos componentes de quiralidad izquierda y derecha se transformen de la misma manera bajo el grupo gauge. Entonces,
+\(\bar\psi_L\psi_R+\mathrm{h.c.}\) puede ser invariante gauge sin el Higgs. Un singlete gauge completo también puede tener una masa que no esté relacionada con la ruptura electrodébil. Estas partículas podrían ser, de manera natural, mucho más pesadas que las ligadas a \(F\). Puede que las partículas que hemos descubierto sean lo bastante ligeras para poder observarlas precisamente porque la simetría las haría no masivas cuando \(F\) se anula.
+
+Por tanto, la escala electrodébil es el número excepcional. La hipótesis es que las masas genéricas no protegidas se encuentran cerca de una escala fundamental mucho mayor, mientras que las partículas protegidas por la simetría gauge quiral quedan arrastradas hacia abajo junto con \(F\).
+
+\begin{classroomqa}\audiencequestion{¿Es la masa de Planck una posible escala de masa fundamental con la que habría que comparar \(F\)?\lecturetimestamp{00:38:43}}\lecturerresponse{Sí. Otra posibilidad es la escala que sugiere la unificación de los acoplamientos gauge. Ambas se deducirán de argumentos que aparecen más adelante en la clase, aunque no se haya observado directamente ninguna partícula con masas tan enormes.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{¿Qué significa decir que las otras escalas están unos quince órdenes de magnitud por encima de \(F\), y qué partículas corresponden a ellas?\lecturetimestamp{00:39:54}}\lecturerresponse{La escala electrodébil es del orden de \(10^2\,\mathrm{GeV}\), mientras que la unificación se sitúa, según las estimaciones, cerca de \(10^{16}\,\mathrm{GeV}\) y la escala de Planck, cerca de \(10^{19}\,\mathrm{GeV}\). No hemos producido partículas con esas masas. Inferimos las escalas indirectamente: una, extrapolando los acoplamientos gauge medidos; la otra, combinando la mecánica cuántica, la relatividad y la constante de Newton.}\end{classroomqa}
+
+\section{Un condensado cargado en el laboratorio}
+
+Antes del descanso, una pregunta del público pide una analogía habitual, en materia condensada, del mecanismo de Higgs. La respuesta se desarrolla por etapas, y no se limita a presentar una analogía.
+
+\begin{classroomqa}\audiencequestion{Además de los condensados de Bose ultrafríos, ¿hay algún ejemplo común de un mecanismo similar al de Higgs en estado sólido?\lecturetimestamp{00:40:50}}\lecturerresponse{Sí. Un campo bosónico neutro puede adquirir un valor esperado distinto de cero en un condensado de Bose o en un superfluido. Si el objeto condensado está cargado, el mismo fenómeno básico modifica el campo gauge. La superconductividad proporciona el ejemplo conocido: se condensan pares de Cooper cargados y los campos electromagnéticos adquieren una longitud de penetración finita dentro del material.}\end{classroomqa}
+
+A escala molecular, un átomo de helio puede tratarse como una partícula bosónica efectiva con un campo \(\Phi_{\mathrm{He}}\). El espacio vacío corresponde a un campo nulo; una fase superfluida tiene \(\langle\Phi_{\mathrm{He}}\rangle\ne0\) y rompe espontáneamente la simetría de fase global pertinente. Los átomos de helio son neutros, así que todavía no se trata del mecanismo de masa del campo gauge.
+
+En un superconductor, los electrones forman pares de Cooper débilmente ligados. El campo del par es, esquemáticamente, un bilineal de electrones,
+\begin{equation}
+  \Delta(x)\sim\langle\psi_\downarrow(x)\psi_\uparrow(x)\rangle,
+  \label{eq:l10-cooper-order-parameter}
+\end{equation}
+y tiene carga eléctrica \(2e\). Cuando se condensa \(\Delta\), el campo gauge electromagnético responde exactamente como debe hacerlo un campo gauge acoplado a un parámetro de orden cargado. Los campos magnéticos estáticos decaen a lo largo de la profundidad de penetración de London:
+\begin{equation}
+  B(x)\propto e^{-x/\lambda_L}.
+  \label{eq:l10-meissner-screening}
+\end{equation}
+La inversa de la longitud de penetración desempeña el papel de una masa efectiva del fotón dentro del medio. No es una masa del fotón en el vacío, sino una propiedad de la fase superconductora.
+
+\begin{classroomqa}\audiencequestion{¿No están separados los dos electrones de un par de Cooper, incluso situados a lados opuestos de la superficie de Fermi?\lecturetimestamp{00:43:13}}\lecturerresponse{No forman una molécula diminuta localizada en un punto. Un par de Cooper es extenso y se describe naturalmente en el espacio de momentos mediante estados correlacionados cercanos a momentos opuestos. Sin embargo, para el argumento de simetría, el par actúa como un único parámetro de orden bosónico cargado. Lo relevante es su condensación.}\end{classroomqa}
+
+Históricamente, esta relación es más que una metáfora didáctica. La superconductividad y el análisis de Anderson sobre los campos gauge en una fase rota contribuyeron a hacer comprensible el mecanismo relativista de Higgs. La construcción de física de partículas se desarrolló de manera independiente en la teoría relativista de campos, pero las matemáticas comunes son reales.
+
+\section{Parámetros desnudos y parámetros medidos}
+
+Después del descanso volvemos a la lagrangiana. Contiene parámetros llamados masas y cargas, pero esos parámetros de entrada rara vez coinciden sin más con las cantidades medidas. Los modos de alta frecuencia interactúan con los de baja frecuencia y los visten. La relación sistemática entre parámetros definidos a una resolución y observables a otra se llama renormalización.
+
+La carga eléctrica ofrece una imagen que puede construirse sin hacer cálculos. A grandes distancias, la ley de Coulomb define la carga observada:
+\begin{equation}
+  V(r)\sim\frac{e_1e_2}{4\pi r},
+  \qquad
+  F(r)\sim\frac{e_1e_2}{4\pi r^2}.
+  \label{eq:l10-coulomb-law}
+\end{equation}
+En la clase se omite \(4\pi\) y se escribe \(e^2/r\) o \(e^2/r^2\). Lo importante es que el coeficiente inferido a partir de una medición de fuerza puede depender de la distancia a la que se sondea el sistema.
+
+\subsection{Un conductor: apantallamiento completo}
+
+Coloquemos una carga de prueba positiva en un conductor ideal. Su campo eléctrico atrae hacia ella las cargas negativas móviles y repele las positivas. Circula corriente hasta que la fuente local queda rodeada por una nube de carga opuesta y no queda campo en el volumen, fuera de esa nube; la carga compensatoria es empujada hasta el límite lejano. Una fuente negativa provoca un reordenamiento opuesto. Entonces, dos fuentes vestidas muy separadas pueden ejercer prácticamente fuerza nula, aunque las cargas introducidas a escala microscópica fueran distintas de cero.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_07.png}
+\caption{Una carga fuente rodeada por una nube de apantallamiento de carga opuesta, en el análisis del conductor.}
+\lectureframe{00:50:24}
+\label{fig:l10-conductor-screening}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{¿Es este reordenamiento lo que se entiende por apantallamiento?\lecturetimestamp{00:51:25}}\lecturerresponse{Sí. A distancias mayores que el tamaño de la nube, la carga introducida queda apantallada. Si acercamos otra sonda hasta el interior de la nube, parte del apantallamiento ya no puede quedar entre la fuente y la sonda; entonces, la carga subyacente parece más intensa.}\end{classroomqa}
+
+La nube tiene una escala característica determinada por la dinámica y la densidad de las cargas móviles. A separaciones \(r\) menores que esa escala, la sonda penetra en la nube. Por tanto, se puede definir una carga efectiva variable con la escala, \(e(r)\), mediante
+\begin{equation}
+  F(r)\equiv\frac{e^2(r)}{4\pi r^2}.
+  \label{eq:l10-running-charge-definition}
+\end{equation}
+En el conductor idealizado, \(e(r)\) tiende a cero a distancias muy grandes y al valor microscópico a distancias muy pequeñas.
+
+\subsection{Un dieléctrico: apantallamiento parcial}
+
+En un aislante, los electrones están ligados a los átomos, en lugar de poder atravesar libremente la muestra. Un modelo aproximado, pero útil, imagina cada nube electrónica unida a su ion por un resorte. Sin campo externo, los centros medios de las cargas positivas y negativas coinciden. Un campo aplicado los desplaza ligeramente y genera un dipolo.
+
+Alrededor de una fuente negativa, las nubes electrónicas cercanas se desplazan hacia fuera y dejan sus iones positivos un poco más cerca; alrededor de una fuente positiva, se desplazan en sentido contrario. Las cargas ligadas no pueden fluir lo suficiente para neutralizar por completo la fuente, así que el campo a grandes distancias queda reducido por la constante dieléctrica, no eliminado:
+\begin{equation}
+  V_{\mathrm{medium}}(r)
+  =
+  \frac{1}{\epsilon_r}
+  \frac{e_1e_2}{4\pi\epsilon_0r}.
+  \label{eq:l10-dielectric-coulomb}
+\end{equation}
+A distancias dentro de la nube de polarización, la sonda vuelve a percibir en mayor medida la fuente desnuda. El apantallamiento completo y el parcial son dos versiones de la misma idea de dependencia con la escala.
+
+\section{El vacío de la QED como medio polarizable}
+
+La electrodinámica cuántica no tiene átomos materiales en el vacío, pero sí campos cuánticos cargados. Las fluctuaciones electrón-positrón contribuyen con lazos a la propagación de los fotones. En el antiguo lenguaje del mar de Dirac, el campo eléctrico distorsiona los estados ocupados de energía negativa; en el lenguaje moderno, la polarización del vacío viste el propagador del fotón. La imagen del medio dice que un par virtual se polariza: sus componentes positivo y negativo se desplazan en direcciones opuestas.
+
+Una fuente positiva queda rodeada por un pequeño exceso de carga de polarización negativa, y una fuente negativa, por carga positiva. Por tanto, la carga medida a gran distancia es menor que el parámetro que se asociaría a una fuente no resuelta. A diferencia de un material ordinario, el vacío contiene fluctuaciones en un continuo de momentos. Los pares de baja energía corresponden a estructuras de mayor alcance; los de alta energía sondean distancias menores. No hay un radio final de la nube a partir del cual el proceso simplemente se detenga.
+
+Al acercar dos electrones, primero dejan de caber entre ellos las nubes de polarización más grandes. Si se los acerca aún más, se van apartando nubes cada vez más pequeñas. El acoplamiento eléctrico efectivo crece logarítmicamente con la inversa de la distancia, o, equivalentemente, con la energía:
+\begin{equation}
+  \alpha(Q)
+  \simeq
+  \frac{\alpha(\mu)}
+  {1-\dfrac{2\alpha(\mu)}{3\pi}
+  \ln\!\left(\dfrac{Q}{\mu}\right)}
+  \label{eq:l10-qed-running}
+\end{equation}
+para un fermión de Dirac cargado, muy por encima de su umbral y al orden dominante. Las especies cargadas adicionales modifican el coeficiente al cruzar sus umbrales.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_08.png}
+\caption{La carga efectiva de la QED aumenta lentamente al crecer la escala horizontal \(1/R\) y, por tanto, la energía de sondeo.}
+\lectureframe{01:02:13}
+\label{fig:l10-qed-running-board}
+\end{figure}
+
+La dispersión de electrones ofrece la versión operacional. Una energía de colisión mayor implica una longitud de onda de de Broglie menor y una distancia mínima de aproximación más pequeña. Por tanto, la amplitud debe usar el acoplamiento correspondiente a esa transferencia de momento, no un único número fijo para todas las escalas.
+
+\begin{classroomqa}\audiencequestion{¿A qué distancia se vuelve medible por primera vez esta variación con la escala?\lecturetimestamp{01:03:54}}\lecturerresponse{La polarización del vacío debida a los electrones empieza a ser relevante en torno a la escala de Compton del electrón, \(\lambda_C=\hbar/(m_ec)\), aproximadamente \(4\times10^{-11}\,\mathrm{cm}\) para la longitud de onda reducida. El efecto es pequeño y logarítmico, por lo que se necesitan mediciones precisas. Las partículas cargadas más pesadas contribuyen a la variación al alcanzar sus propios umbrales.}\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Hablar de la distancia más pequeña presupone que ya sabemos qué ocurre allí?\lecturetimestamp{01:04:49}}
+\lecturerresponse{No. Extrapolamos la teoría solo mientras sigan siendo válidos su contenido de partículas y sus interacciones. La nueva física puede modificar la evolución de los acoplamientos. Los experimentos no nos dicen que la electrodinámica cuántica siga siendo una descripción completa a distancias arbitrariamente pequeñas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Para los gluones, ¿la dependencia con la escala es la opuesta? ¿Por qué?
+\lecturetimestamp{01:05:03}}
+\lecturerresponse{Sí. Los lazos de quarks apantallan la carga de color de una manera análoga a la materia cargada, pero los propios gluones tienen color e interactúan de forma no lineal. Su contribución tiene el signo opuesto y domina para el número observado de sabores de quark. El resultado es el antiapantallamiento y la libertad asintótica.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo se podría determinar una carga eléctrica desnuda si para hacerlo se necesita una distancia infinitamente pequeña?\lecturetimestamp{01:05:28}}
+\lecturerresponse{No se mide directamente una carga desnuda única e independiente del regulador. Se define un parámetro en un corte de distancia corta o una escala de renormalización elegidos y luego se ajusta para que una cantidad medida a baja energía permanezca fija. El objeto físico útil es el acoplamiento renormalizado, que depende de la escala.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La carga de la electrodinámica cuántica se aproxima a un valor finito a energía infinita?\lecturetimestamp{01:05:39}}
+\lecturerresponse{No, si se extrapola por sí sola la electrodinámica cuántica perturbativa. Su función beta positiva hace que el acoplamiento siga creciendo logarítmicamente y conduce formalmente a un polo de Landau a una escala extraordinariamente alta. Mucho antes de considerar físico ese polo formal, se espera que la descripción quede incorporada en la teoría electrodébil y que, en última instancia, la modifique nueva física.}
+\end{classroomqa}
+
+\subsection{Qué cambia la renormalización y qué conserva}
+
+Elija una longitud de corte \(a\), llame \(e(a)\) al valor de entrada correspondiente y calcule un observable fijo a larga distancia. Otro corte \(a'\) es igualmente aceptable si se cambia el valor de entrada a \(e(a')\) para reproducir el mismo observable:
+\begin{equation}
+  \frac{d}{d\ln\mu}\,\mathcal O_{\mathrm{physical}}=0,
+  \qquad
+  \mu\frac{de}{d\mu}=\beta(e).
+  \label{eq:l10-rg-invariance}
+\end{equation}
+Ese flujo compensatorio es el grupo de renormalización.
+
+\begin{classroomqa}
+\audiencequestion{¿La palabra desnudo debe referirse específicamente a la longitud de Planck?\lecturetimestamp{01:06:20}}
+\lecturerresponse{No. Se puede terminar la descripción en cualquier corte elegido y llamar desnudo al parámetro definido allí. Cambiar el corte y modificar adecuadamente ese parámetro deja inalterada la física accesible. La longitud de Planck es un lugar plausible donde la teoría cuántica de campos ordinaria debe ser reemplazada, pero no es una convención necesaria para la renormalización.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Este procedimiento consiste en acercarse y atenuar la descripción?\lecturetimestamp{01:07:15}}
+\lecturerresponse{Conceptualmente, sí consiste en acercarse. Nos preguntamos cómo deben cambiar los parámetros de una descripción de grano más fino para que las predicciones a una longitud de onda fija y accesible experimentalmente sigan siendo las mismas.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Ocurre el mismo fenómeno de evolución con la gravedad?
+\lecturetimestamp{01:08:14}}
+\lecturerresponse{La gravedad también depende de la escala, pero no mediante el mismo mecanismo de apantallamiento dieléctrico. Para esta clase basta un argumento dimensional: la localización aumenta la energía, la energía gravita y la intensidad gravitatoria adimensional resultante crece rápidamente con la energía.}
+\end{classroomqa}
+
+\section{Cromodinámica cuántica: antiapantallamiento, tubos de flujo y libertad asintótica}
+
+A distancias hadrónicas, las líneas del campo cromoelectrico no se dispersan esféricamente como un campo de Coulomb electromagnético. Las auto-interacciones de los gluones las comprimen en un tubo estrecho entre un quark y un antiquark. Si el tubo tiene aproximadamente una energía fija por unidad de longitud \(\sigma\), entonces
+\begin{equation}
+  V_{q\bar q}(r)
+  \simeq
+  -\frac{C_F\alpha_s(r)}{r}
+  +\sigma r .
+  \label{eq:l10-cornell-potential}
+\end{equation}
+A valores grandes de \(r\), domina el término lineal. Separar el par crea más tubo, como al estirar una hebra de caramelo, y la energía aumenta en vez de tender a cero. Esta es la faceta del confinamiento.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}\caption{Las líneas del campo cromoelectrico se representan formando un tubo que une fuentes de color separadas, en lugar de dispersarse libremente como un campo de Coulomb.}\lectureframe{01:09:56}\label{fig:l10-qcd-flux-tube-board}\end{figure}
+
+A distancias menores que el radio del tubo, el potencial vuelve aproximadamente a tener forma coulombiana, pero su acoplamiento disminuye con la energía. A un bucle,
+\begin{equation}
+  \alpha_s(Q)
+  =
+  \frac{4\pi}
+  {\left(11-\frac23n_f\right)
+  \ln(Q^2/\Lambda_{\mathrm{QCD}}^2)} .
+  \label{eq:l10-asymptotic-freedom}
+\end{equation}
+Para \(n_f<17\), el coeficiente es positivo y
+\(\alpha_s(Q)\to0\) cuando \(Q\to\infty\). La cromodinámica cuántica es débil a distancias muy cortas y fuerte a distancias largas. Esta es la descripción precisa, en términos del acoplamiento variable, del comportamiento opuesto mencionado en la clase.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué ocurre con el acoplamiento débil entre las curvas de la electrodinámica cuántica y la cromodinámica cuántica?\lecturetimestamp{01:11:53}}
+\lecturerresponse{Su evolución es intermedia y depende de cuál de los factores electrodébiles se siga. Por encima de la escala electrodébil, las cantidades apropiadas son los acoplamientos \(U(1)_Y\) y \(SU(2)_L\). Uno aumenta y el otro disminuye lentamente. Junto con el acoplamiento fuerte, que también disminuye, sus valores extrapolados se acercan sorprendentemente a altas energías.}
+\end{classroomqa}
+
+\section{Evolución hacia la unificación}
+
+Se miden los tres acoplamientos de gauge cerca de la escala débil y se los hace evolucionar según el contenido de partículas de una teoría propuesta. Como todas las funciones beta dependen logarítmicamente de la escala, un cambio enorme de energía solo produce un cambio moderado en el acoplamiento. Las trayectorias del modelo estándar se aproximan entre sí, pero no llegan a coincidir exactamente. Con el contenido de partículas de baja energía del modelo estándar mínimo supersimétrico, las trayectorias a un bucle coinciden mucho más cerca, en torno a
+\begin{equation}
+  M_{\mathrm{GUT}}\sim10^{16}\,\mathrm{GeV}.
+  \label{eq:l10-gut-scale}
+\end{equation}
+
+El gráfico es un indicio, no una prueba. Los umbrales de partículas aún no descubiertas, las correcciones de órdenes superiores y los detalles de una teoría unificada desplazan las curvas. La clase de 2010 destaca la convergencia, aproximadamente al nivel del porcentaje, en un espectro supersimétrico, porque hizo especialmente atractiva la supersimetría a la escala débil. La ausencia de supercompañeros a las energías de los colisionadores significa ahora que no se realiza el espectro más sencillo de la manera esperada originalmente; la unificación de precisión sigue dependiendo del modelo.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}\caption{Gráfico cualitativo de los acoplamientos en la pizarra: la curva de la interacción fuerte desciende, las curvas electrodébiles evolucionan lentamente hacia ella y la gravedad crece con rapidez en la región ultravioleta más lejana.}\lectureframe{01:16:29}\label{fig:l10-unification-board}\end{figure}
+
+¿Por qué considerar fundamental la proximidad de un punto de encuentro? Allí los parámetros de entrada podrían adoptar su forma más sencilla. Tres acoplamientos distintos a baja energía podrían ser descendientes, modificados de manera diferente, de un solo acoplamiento a alta energía asociado a un único grupo de gauge. Esta es la pista numérica detrás de la pregunta anterior sobre \(SU(5)\).
+
+La gravedad aparece en el mismo esquema logarítmico como una curva que crece mucho más deprisa. No cruza las curvas de gauge exactamente a la escala de gran unificación, pero su intensidad se vuelve del orden de la unidad a unas pocas décadas de energía de distancia. En un eje logarítmico, esa proximidad es sugerente: \(10^{16}\), \(10^{17}\), \(10^{18}\) y \(10^{19}\,\mathrm{GeV}\) están muchísimo más cerca entre sí de lo que cualquiera de ellas está de la escala electrodébil.
+
+\section{Por qué se intensifica la gravedad a distancias cortas}
+
+\subsection{La energía, y no solo la masa en reposo, gravita}
+
+La fuerza de Newton entre dos masas que se mueven lentamente es
+\begin{equation}
+  F_G=\frac{Gm_1m_2}{r^2}.
+  \label{eq:l10-newton-force}
+\end{equation}
+Para una estimación dimensional relativista, se reemplaza cada masa en reposo por la energía correspondiente dividida por \(c^2\):
+\begin{equation}
+  F_G(r)\sim\frac{GE_1E_2}{c^4r^2}.
+  \label{eq:l10-relativistic-gravity-force}
+\end{equation}
+Esto no sustituye a la relatividad general: la tensión, el flujo de momento y la presión también son fuentes de gravedad. Es la estimación de escala correcta para la cuestión que nos ocupa.
+
+Localice cada partícula en una región de tamaño \(r\). El principio de incertidumbre exige que
+\begin{equation}
+  p\sim\frac{\hbar}{r}.
+  \label{eq:l10-localization-momentum}
+\end{equation}
+A valores suficientemente pequeños de \(r\), el momento es ultrarrelativista, así que
+\begin{equation}
+  E\simeq pc\sim\frac{\hbar c}{r}.
+  \label{eq:l10-localization-energy}
+\end{equation}
+Al sustituir dos energías de ese tipo en \eqref{eq:l10-relativistic-gravity-force} se obtiene
+\begin{equation}
+  F_G(r)
+  \sim
+  \frac{G\hbar^2}{c^2r^4}.
+  \label{eq:l10-short-distance-gravity-force}
+\end{equation}
+La escala correspondiente de energía potencial es
+\begin{equation}
+  U_G(r)\sim-\frac{G\hbar^2}{c^2r^3}.
+  \label{eq:l10-short-distance-gravity-potential}
+\end{equation}
+Esta es la distinción que se corrigió durante el cálculo en directo: el potencial escala como \(1/r^3\), mientras que la fuerza escala como \(1/r^4\).
+
+\begin{classroomqa}
+\audiencequestion{Para una partícula ultrarrelativista, ¿la energía es \(p^2/(2m)\)?\lecturetimestamp{01:22:18}}
+\lecturerresponse{No. Esa es la fórmula no relativista. A partir de \(E^2=p^2c^2+m^2c^4\), el límite \(pc\gg mc^2\) da \(E\simeq pc\). Combinado con \(p\sim\hbar/r\), la energía de localización es \(\hbar c/r\).}
+\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_11.png}\caption{La pizarra sustituye energías relativistas en la ley de Newton mientras comprueba las potencias de \(c\) y \(r\).}\lectureframe{01:23:29}\label{fig:l10-gravity-derivation-board}\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Se cancelaron los factores de \(c\)? ¿Y la ley \(1/r^3\) mencionada era una ley de fuerza?\lecturetimestamp{01:23:38}}
+\lecturerresponse{El cálculo de la pizarra se corrige en tiempo real. Las dos masas efectivas aportan \(E_1E_2/c^4\); con \(E_i\sim\hbar c/r\), quedan dos potencias de \(c\) en el denominador. La fuerza resultante es \(G\hbar^2/(c^2r^4)\). La expresión \(1/r^3\) corresponde a la energía potencial.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{La fuerza gravitatoria de la que hablamos es atractiva, ¿verdad?\lecturetimestamp{01:24:42}}
+\lecturerresponse{Sí. Las ecuaciones anteriores muestran los módulos. El potencial gravitatorio newtoniano tiene signo negativo para energías positivas, así que en esta estimación la fuerza es atractiva.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La gravedad gana intensidad relativa porque la localización aumenta la energía, mientras que la carga eléctrica no adquiere el mismo factor cinemático?\lecturetimestamp{01:25:02}}
+\lecturerresponse{Exactamente. La energía es la carga gravitatoria. Al comprimir un estado cuántico aumentan su momento y su energía, y por tanto también aquello que es fuente de gravedad. La carga eléctrica es adimensional y no adquiere directamente ese factor \(1/r\), salvo por su renormalización logarítmica, mucho más lenta.}
+\end{classroomqa}
+
+\subsection{El cruce de Planck}
+
+La fuerza electromagnética entre cargas de orden unidad en unidades naturales tiene módulo
+\begin{equation}
+  F_{\mathrm{EM}}(r)
+  \sim
+  \alpha\,\frac{\hbar c}{r^2}.
+  \label{eq:l10-em-force-alpha}
+\end{equation}
+Igualarla a \eqref{eq:l10-short-distance-gravity-force} da
+\begin{equation}
+  r^2\sim\frac{G\hbar}{\alpha c^3}.
+  \label{eq:l10-gravity-em-crossing}
+\end{equation}
+La clase toma el factor de gauge adimensional como de orden unidad para poner de manifiesto la longitud gravitatoria fundamental:
+\begin{equation}
+  \boxed{\ell_P=\sqrt{\frac{\hbar G}{c^3}}}
+  \simeq1.616\times10^{-35}\,\mathrm{m}.
+  \label{eq:l10-planck-length}
+\end{equation}
+Conservar el valor real de \(\alpha\) desplaza la igualdad con el electromagnetismo en un factor de escala logarítmica de orden unidad, \(r\sim\ell_P/\sqrt\alpha\). La expresión fundamental es más clara en unidades naturales:
+\begin{equation}
+\begin{aligned}
+  \alpha_G(E)
+  &\equiv\frac{GE^2}{\hbar c^5}
+  =\left(\frac{E}{E_P}\right)^2,
+  \\
+  E_P
+  &=\sqrt{\frac{\hbar c^5}{G}}
+  \simeq1.22\times10^{19}\,\mathrm{GeV}.
+\end{aligned}
+  \label{eq:l10-gravitational-coupling}
+\end{equation}
+La gravedad se vuelve fuerte cuando \(E\) se aproxima a \(E_P\).
+
+\begin{classroomqa}
+\audiencequestion{¿Se estaba fijando \(G\) o el acoplamiento eléctrico igual a uno en la comparación?\lecturetimestamp{01:27:02}}
+\lecturerresponse{Para la estimación aproximada, se trató el acoplamiento eléctrico como un número de orden unidad. La constante de Newton debe conservarse: es la cantidad dimensional que determina la escala de Planck.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Las potencias intermedias de \(r\), \(\hbar\) y \(c\) no parecen dimensionalmente consistentes. ¿Cuál es el cálculo corregido?\lecturetimestamp{01:27:47}}
+\lecturerresponse{Se parte directamente de las energías. La localización da \(E\sim\hbar c/r\), de donde se obtiene \(U_G\sim GE^2/(c^4r)=G\hbar^2/(c^2r^3)\). Se compara con \(U_{\mathrm{EM}}\sim\alpha\hbar c/r\). Al tomar \(\alpha\) de orden unidad, resulta \(r^2=G\hbar/c^3\). La clase y la pizarra llegan a \(r=\sqrt{G\hbar/c^3}\), la longitud de Planck.}
+\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_12.png}\caption{Resultado corregido de la comprobación dimensional en directo: \(r=\sqrt{\hbar G/c^3}\).}\lectureframe{01:32:16}\label{fig:l10-planck-length-board}\end{figure}
+
+\section{Vuelve el problema de la jerarquía}
+
+Los acoplamientos de gauge se vuelven comparables cerca de una escala muy alta, y la gravedad se hace fuerte cerca de la escala de Planck. Estas escalas enormes parecen ahora menos números grandes arbitrarios y más lugares donde una descripción microscópica podría simplificarse. Frente a ellas, el valor del vacío electrodébil \(F\) es anómalamente pequeño:
+\begin{equation}
+  \frac{v}{E_P}\sim2\times10^{-17}
+  \label{eq:l10-electroweak-planck-ratio}
+\end{equation}
+en unidades con \(c=1\). Usar la escala de gran unificación en vez de la escala de Planck cambia la razón precisa, pero no resuelve el enigma.
+
+Una vez que \(F\) es pequeño, las masas de \(W\), \(Z\), los leptones cargados y los quarks también lo son, porque la simetría de gauge hace que sus masas sean proporcionales a ese valor. Las partículas que carecen de esa protección pueden seguir siendo pesadas. Por tanto, la pregunta pendiente no es por qué cada masa conocida es minúscula por separado, sino por qué el sector de Higgs proporciona esta única escala diminuta de ruptura de simetría.
+
+\begin{classroomqa}
+\audiencequestion{Si se pudiera calcular \(F\), ¿se podrían calcular entonces todas las demás masas?\lecturetimestamp{01:34:39}}
+\lecturerresponse{Eso determinaría la escala electrodébil global y, dados los acoplamientos de gauge y de Yukawa, las masas correspondientes de las partículas. El problema pendiente es que un cálculo ordinario sensible al ultravioleta tiende a llevar el parámetro de masa del Higgs hacia la escala fundamental alta, a menos que una simetría o un mecanismo dinámico lo proteja.}
+\end{classroomqa}
+
+El término «ajuste fino» alude a esa sensibilidad. En una descripción con corte, un parámetro de masa escalar recibe correcciones de la forma aproximada
+\begin{equation}
+  \delta\mu^2
+  \sim
+  \frac{C}{16\pi^2}\Lambda^2,
+  \label{eq:l10-higgs-quadratic-sensitivity}
+\end{equation}
+donde \(C\) combina acoplamientos de gauge, de Yukawa y escalares, y \(\Lambda\) marca la escala a la que se reemplaza la teoría efectiva. Si \(\Lambda\) está cerca de la escala de gran unificación o de Planck, obtener \(\mu^2\sim v^2\) parece exigir una cancelación muy precisa entre el valor de entrada y las contribuciones radiativas. Esta es la formulación en términos de naturalidad del problema de la jerarquía de gauge. Es una ampliación editorial del cálculo que la clase promete para el siguiente trimestre, no una afirmación de que un artefacto particular del regulador sea observable por sí mismo.
+
+\begin{classroomqa}
+\audiencequestion{¿Hay que imaginar la longitud de Planck como el radio final de la nube de apantallamiento?\lecturetimestamp{01:35:03}}
+\lecturerresponse{No. La imagen dieléctrica explica la renormalización de la carga de gauge, pero el argumento de Planck empleó la energía de localización y el acoplamiento gravitatorio dimensional. En esta derivación no hay ninguna nube literal de apantallamiento gravitatorio.}
+\end{classroomqa}
+
+\subsection{Las preguntas finales sobre las interacciones}
+
+En los últimos minutos se vuelve al potencial de Higgs y a los términos que puede contener un lagrangiano.
+
+\begin{classroomqa}
+\audiencequestion{¿Podría el potencial de Higgs incluir \(\phi^6\) y seguir siendo simétrico?\lecturetimestamp{01:35:20}}
+\lecturerresponse{Sí. Las potencias pares preservan la simetría modelo \(\phi\mapsto-\phi\), mientras que \(\phi^5\) la rompería. En cuatro dimensiones, el coeficiente de \(\phi^6\) tiene dimensión de masa negativa, así que el término queda suprimido por una escala alta, por ejemplo \(c_6\phi^6/\Lambda^2\). Es una interacción efectiva válida aunque no sea renormalizable según el criterio de conteo de potencias.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Las potencias del campo de Higgs representan procesos de creación y aniquilación, de modo que \(\phi^4\) predice dispersión entre bosones de Higgs?\lecturetimestamp{01:35:52}}
+\lecturerresponse{Sí. Al desarrollar el campo cuantizado alrededor del vacío, las potencias generan vértices. El término cuártico contiene un vértice de cuatro bosones de Higgs, y el potencial desplazado también produce interacciones cúbicas. Conocer sus coeficientes permite predecir procesos como \(hh\to hh\), sujeto al cálculo diagramático habitual.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Un lagrangiano fundamental debe ser polinómico en sus campos, sin potencias mayores que cuatro?\lecturetimestamp{01:36:09}}
+\lecturerresponse{En una teoría escalar perturbativamente renormalizable en cuatro dimensiones, los operadores de dimensión cuatro o menor forman la lista finita tradicional. La teoría moderna de campos efectiva es menos restrictiva: permite operadores de dimensión mayor, que codifican la física de distancias cortas, pero cuyos efectos quedan suprimidos por potencias de la escala alta. Por tanto, la excepción ocasional es esencial para la regla antigua.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Se omitieron los términos de autointeracción al hablar de la evolución de los acoplamientos?\lecturetimestamp{01:36:44}}
+\lecturerresponse{Se incluyeron en el razonamiento. Las autointeracciones de los gluones son precisamente lo que invierte el signo respecto de la electrodinámica cuántica y produce el antiapantallamiento. Las autointeracciones del Higgs también contribuyen a la evolución de los parámetros escalares y de otros parámetros del modelo estándar.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Hay términos cruzados en los que distintas interacciones afectan a la evolución de las demás?\lecturetimestamp{01:37:23}}
+\lecturerresponse{Sí. A órdenes de bucle superiores, las funciones beta contienen productos mixtos de acoplamientos de gauge, de Yukawa y escalares. La teoría de perturbaciones sigue siendo útil mientras esos acoplamientos adimensionales sean suficientemente pequeños, porque los órdenes sucesivos de bucle quedan suprimidos en consecuencia.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué quería decir exactamente que \(F\) está sometido a un ajuste fino?\lecturetimestamp{01:37:44}}
+\lecturerresponse{La clase aplaza la respuesta completa. El problema es la inestabilidad de una escala escalar ligera frente a contribuciones ultravioleta mucho mayores, resumida por \eqref{eq:l10-higgs-quadratic-sensitivity}. La supersimetría fue una propuesta para imponer cancelaciones, pero el problema de la jerarquía en sí no señala ninguna solución confirmada.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Se puede explicar ya el grupo de renormalización?\lecturetimestamp{01:37:56}}
+\lecturerresponse{No en los minutos que quedan. Su contenido operativo ya ha aparecido: cambiar la resolución, dejar que evolucionen los acoplamientos y conservar fijas las predicciones físicas. Un tratamiento completo corresponde a la siguiente etapa del curso.}
+\end{classroomqa}
+
+Ahí es donde corresponde que termine esta secuencia. El mecanismo de Higgs ha dado coherencia interna al modelo estándar: preserva la simetría de gauge quiral, da masa a los bosones débiles y a los fermiones, y predice interacciones físicas del Higgs. La renormalización nos enseña después cómo cambian esas interacciones con la escala y sugiere que las fuerzas de gauge podrían tener un origen unificado. Un argumento independiente proporciona una segunda escala alta mediante la gravedad. Ninguno de esos logros explica por qué el valor del vacío del Higgs está tan por debajo de ambas. La última clase, por tanto, no cierra el tema; identifica el pequeño número en el que deberá centrarse el siguiente.
