@@ -1,0 +1,492 @@
+\chapter{El horizonte en coordenadas planas y la termodinámica de la evaporación}
+
+\lectureoverview{La métrica de Schwarzschild parece hacerse singular en el horizonte, aunque un observador en caída libre no debería notar nada excepcional allí. Resolveremos esta tensión transformando la métrica cerca del horizonte en el espacio plano de Minkowski en coordenadas polares hiperbólicas. Así, la misma geometría permite distinguir la descripción de Alice, que cae, de la de Bob, acelerado y situado en el exterior. La segunda mitad desarrolla la entropía y la temperatura, deduce la temperatura de Hawking inversamente proporcional a la masa y la ley de evaporación \(M^3\), y termina preguntando qué exige la conservación de la información a la teoría microscópica de la gravedad.}
+
+\section{El enigma en \texorpdfstring{\(r=2GM\)}{r=2GM}}
+
+Empecemos con un agujero negro muy grande. Su horizonte puede tener una curvatura tan pequeña que un observador que lo atraviese en caída libre verá un espacio-tiempo casi plano y vacío en cualquier región de tamaño moderado, como un laboratorio. No chocará contra ninguna pared ni una alarma local anunciará que ha cruzado. Sin embargo, la métrica de Schwarzschild parece indicar que justo en ese radio ocurre algo singular. El propósito de la primera mitad de esta lección es hacer compatibles estas dos afirmaciones.
+
+Usaremos la convención de signo mayormente positivo. En el espacio-tiempo plano,
+\begin{equation}
+ds^2=-dt^2+dx^2+dy^2+dz^2,
+\end{equation}
+por lo que una línea de universo temporal cumple \(ds^2<0\) y el tiempo propio satisface \(d\tau^2=-ds^2\). Esta convención invierte globalmente los signos de la utilizada en la lección anterior; ninguna magnitud observable depende de esa elección.
+
+Con \(c=1\), el elemento de línea de Schwarzschild es
+\begin{equation}
+\begin{aligned}
+ds^2={}&-\left(1-\frac{2GM}{r}\right)dt^2
++\frac{dr^2}{1-\frac{2GM}{r}}
++r^2d\Omega_2^2,\\
+d\Omega_2^2={}&d\theta^2+\sin^2\theta\,d\phi^2 .
+\end{aligned}
+\label{eq:l03-schwarzschild}
+\end{equation}
+El radio de Schwarzschild es \(R_s=2GM\), o \(R_s=2GM/c^2\) cuando se restituye \(c\). Lejos del agujero, \(r\gg R_s\), ambos coeficientes radiales se aproximan a sus valores en el espacio plano. Sin embargo, en \(r=R_s\), el coeficiente de \(dt^2\) se anula y el de \(dr^2\) diverge. Parece algo espectacular. La pregunta es si lo espectacular es la geometría o solo las coordenadas.
+
+\section{Dos lecciones sobre coordenadas}
+
+\subsection{El origen inofensivo de las coordenadas polares}
+
+En un plano euclidiano ordinario,
+\begin{equation}
+ds^2=dx^2+dy^2.
+\end{equation}
+Introduzcamos las coordenadas polares
+\begin{equation}
+x=\rho\cos\theta,
+\qquad
+y=\rho\sin\theta .
+\end{equation}
+Un pequeño desplazamiento tiene una longitud radial \(d\rho\) y una longitud transversal \(\rho\,d\theta\); por tanto,
+\begin{equation}
+ds^2=d\rho^2+\rho^2d\theta^2.
+\label{eq:l03-polar}
+\end{equation}
+En \(\rho=0\), el coeficiente angular se anula. Esto no hace que el centro del plano sea singular. Solo significa que allí todos los valores de \(\theta\) designan el mismo punto. Así pues, un coeficiente métrico peculiar puede señalar un sistema de coordenadas peculiar, en vez de una física peculiar.
+
+\subsection{Coordenadas polares hiperbólicas}
+
+Sustituyamos ahora el plano euclidiano por un espacio-tiempo de Minkowski de dimensión \(1+1\),
+\begin{equation}
+ds^2=-dT^2+dX^2.
+\end{equation}
+En la cuña derecha \(X>|T|\), definamos
+\begin{equation}
+X=\rho\cosh\omega,
+\qquad
+T=\rho\sinh\omega,
+\qquad \rho>0 .
+\label{eq:l03-rindler-transform}
+\end{equation}
+La identidad ordinaria \(\cos^2\theta+\sin^2\theta=1\) se sustituye por
+\begin{equation}
+\cosh^2\omega-\sinh^2\omega=1.
+\end{equation}
+Así, una línea de \(\rho\) constante es la hipérbola
+\begin{equation}
+X^2-T^2=\rho^2.
+\end{equation}
+A diferencia del ángulo periódico \(\theta\), la coordenada tipo rapidez \(\omega\) varía entre \(-\infty\) y \(+\infty\). Para valores grandes y positivos de \(\omega\), \(\cosh\omega\) y \(\sinh\omega\) se vuelven casi iguales, y la hipérbola se aproxima al rayo nulo futuro \(X=T\).
+
+Al derivar la ecuación~\eqref{eq:l03-rindler-transform} se obtiene
+\begin{align}
+dX&=\cosh\omega\,d\rho+\rho\sinh\omega\,d\omega,\\
+dT&=\sinh\omega\,d\rho+\rho\cosh\omega\,d\omega .
+\end{align}
+Los términos cruzados se cancelan y queda
+\begin{equation}
+ds^2=-\rho^2d\omega^2+d\rho^2.
+\label{eq:l03-rindler-metric}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_02.png}
+\caption{Esquema completo de las coordenadas hiperbólicas: \(X=\rho\cosh\omega\), \(T=\rho\sinh\omega\), la construcción de la hipérbola unidad y la métrica plana en la forma \(ds^2=-\rho^2d\omega^2+d\rho^2\).}
+\lectureframe{00:16:55.000}
+\end{figure}
+
+La ecuación~\eqref{eq:l03-rindler-metric} sigue describiendo un espacio-tiempo perfectamente plano. Su coeficiente temporal se anula en \(\rho=0\), igual que el coeficiente angular de la ecuación~\eqref{eq:l03-polar} se anula en el origen. Allí se degenera la carta de coordenadas, no el espacio-tiempo.
+
+\section{Ampliación de las proximidades del horizonte de Schwarzschild}
+
+Volvamos a la parte radial y temporal de la ecuación~\eqref{eq:l03-schwarzschild}:
+\begin{align}
+ds^2
+&=-\frac{r-2GM}{r}\,dt^2
++\frac{r}{r-2GM}\,dr^2 .
+\label{eq:l03-rewritten-schwarzschild}
+\end{align}
+Examinaremos ahora únicamente una región estrecha alrededor de \(r=2GM\). En los factores que varían lentamente, podemos sustituir \(r\) por \(2GM\). Debemos conservar el factor \(r-2GM\), porque se anula y cambia de signo en el horizonte. Por tanto,
+\begin{equation}
+ds^2\approx
+-\frac{r-2GM}{2GM}\,dt^2
++\frac{2GM}{r-2GM}\,dr^2 .
+\label{eq:l03-near-horizon-r}
+\end{equation}
+
+Elijamos una nueva coordenada radial \(\rho\) de modo que el segundo término sea simplemente \(d\rho^2\):
+\begin{equation}
+d\rho^2=\frac{2GM}{r-2GM}\,dr^2.
+\end{equation}
+Fuera del horizonte, tomamos la raíz cuadrada positiva e integramos desde \(r=2GM\):
+\begin{align}
+d\rho&=\sqrt{\frac{2GM}{r-2GM}}\,dr,\\
+\rho&=2\sqrt{2GM}\sqrt{r-2GM},\\
+\rho^2&=8GM(r-2GM),
+\qquad
+r-2GM=\frac{\rho^2}{8GM}.
+\label{eq:l03-rho-r}
+\end{align}
+Al sustituir en la ecuación~\eqref{eq:l03-near-horizon-r} se obtiene
+\begin{equation}
+ds^2\approx
+-\frac{\rho^2}{16G^2M^2}\,dt^2+d\rho^2.
+\end{equation}
+Por último, reescalamos el tiempo de Schwarzschild:
+\begin{equation}
+\omega=\frac{t}{4GM},
+\qquad
+d\omega^2=\frac{dt^2}{16G^2M^2},
+\label{eq:l03-omega}
+\end{equation}
+y obtenemos
+\begin{equation}
+\boxed{ds^2\approx-\rho^2d\omega^2+d\rho^2.}
+\label{eq:l03-near-horizon-rindler}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_03_figure_03.png}
+\caption{El esquema después de reescalar el tiempo: la métrica de Schwarzschild cerca del horizonte se ha convertido en la misma métrica polar hiperbólica que el espacio-tiempo plano de Minkowski.}
+\lectureframe{00:31:35.000}
+\end{figure}
+
+La aproximación mejora sin límite a medida que la región examinada se reduce hacia el horizonte. Esto demuestra la afirmación local que buscábamos: para un agujero suficientemente grande, el horizonte es espacio-tiempo ordinario expresado en una carta extraordinaria. La curvatura de un agujero de Schwarzschild de masa finita no es literalmente cero, pero sí es finita en el horizonte y puede hacerse arbitrariamente pequeña allí al aumentar \(M\).\editorialnote{La escala local de curvatura es del orden de \(R_s^{-2}\). La métrica de Rindler es el término dominante en una expansión local cerca del horizonte; no implica que toda la geometría de Schwarzschild sea plana globalmente.}
+
+\begin{classroomqa}
+\audiencequestion{Para \(r<2GM\), la ecuación~\eqref{eq:l03-rho-r} hace que este \(\rho\) exterior sea imaginario. ¿Indica eso un problema físico?\lecturetimestamp{00:32:30}}
+\lecturerresponse{Reproduce el mismo fallo de coordenadas de otra forma. Esta carta se construyó para la cuña exterior; para atravesar el horizonte hay que usar otra carta. El fallo de esta \(\rho\) concreta no corresponde a un suceso físico en el horizonte.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{En la reescritura cerca del horizonte, ¿cómo se obtiene la línea aproximada a partir de la línea exacta anterior?\lecturetimestamp{00:39:21}}
+\lecturerresponse{Solo se han sustituido por \(2GM\) las apariciones de \(r\) que varían lentamente. Se conserva la pequeña diferencia \(r-2GM\). Esa es la aproximación, que se vuelve cada vez más precisa a medida que \(r\) se acerca a \(2GM\).}
+\end{classroomqa}
+
+\section{Qué significan las coordenadas}
+
+La transformación identifica
+\begin{equation}
+\rho=0\quad\Longleftrightarrow\quad r=2GM.
+\end{equation}
+El exterior \(r>2GM\) es la cuña de Rindler derecha \(X>|T|\). Las hipérbolas de \(\rho\) constante representan observadores que permanecen a un radio de Schwarzschild fijo. Un rayo de luz saliente emitido en cualquier punto de esa cuña cruza todas las líneas de universo de \(\rho\) mayor; por eso, un observador exterior puede comunicarse hacia afuera. Un punto situado más allá de la frontera nula futura no puede enviar una señal luminosa de vuelta a la cuña derecha. Esa frontera nula es el horizonte.
+
+\begin{classroomqa}
+\audiencequestion{¿La carta de coordenadas hiperbólicas que se muestra aquí describe siempre la región exterior al horizonte?\lecturetimestamp{00:35:22}}
+\lecturerresponse{Sí. En esta construcción, \(r>2GM\) implica \(\rho^2>0\) y sitúa el suceso en la cuña exterior derecha. El borde nulo \(\rho=0\) es el horizonte; las coordenadas actuales no continúan como coordenadas exteriores reales más allá de él.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Una hipérbola de \(\rho\) constante representa un instante o una distancia?\lecturetimestamp{00:37:21}}
+\lecturerresponse{Representa una distancia propia fija al horizonte en la aproximación cercana a este y, por tanto, un radio de Schwarzschild fijo. El movimiento a lo largo de la hipérbola corresponde al transcurso del tiempo para el observador situado allí.}
+\end{classroomqa}
+
+A lo largo de una trayectoria con \(\rho\) fijo, la ecuación~\eqref{eq:l03-rindler-metric} da
+\begin{equation}
+d\tau=\rho\,d\omega.
+\label{eq:l03-proper-time-rindler}
+\end{equation}
+Por tanto, \(\omega\) no es el tiempo propio del observador. Es un tiempo angular común a la familia de hipérbolas; cada observador lo multiplica por su propio \(\rho\), igual que un ángulo ordinario se multiplica por el radio de un círculo para obtener la longitud de arco.
+
+\begin{classroomqa}
+\audiencequestion{¿Es \(\omega\) el tiempo propio del observador acelerado?\lecturetimestamp{00:51:45}}
+\lecturerresponse{Casi. A \(\rho\) fijo, el incremento del tiempo propio es \(\rho\,d\omega\). El factor \(\rho\) es esencial.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_04.png}
+\caption{Esquema causal cerca del horizonte: fronteras nulas que se cruzan, hipérbolas de radio constante en la cuña exterior y la relación de coordenadas entre \(\rho\) y \(r-2GM\).}
+\lectureframe{00:34:35.000}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.04,>=Latex]
+  \draw[->] (-0.3,0) -- (4.6,0) node[right] {\(X\)};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {\(T\)};
+  \draw[very thick,blue!55!black] (0,0) -- (3,3);
+  \draw[very thick,blue!55!black] (0,0) -- (3,-3);
+  \node[blue!55!black,rotate=45] at (0.72,1.02) {future horizon};
+  \draw[thick,domain=-1.45:1.45,samples=80] plot ({0.75*cosh(\x)},{0.75*sinh(\x)});
+  \draw[thick,domain=-1.25:1.25,samples=80] plot ({1.25*cosh(\x)},{1.25*sinh(\x)});
+  \draw[very thick,domain=-1.05:1.05,samples=80] plot ({2.0*cosh(\x)},{2.0*sinh(\x)});
+  \node at (3.64,2.18) {Bob: \(\rho=\mathrm{const.}\)};
+  \draw[very thick,red!65!black,->] (1.2,-2.9) -- (1.2,2.9);
+  \node[red!65!black] at (1.58,-1.75) {Alice};
+  \fill[red!65!black] (1.2,1.2) circle (1.7pt);
+  \draw[dashed,->] (1.2,0) -- (2.27,1.07);
+  \node[align=left] at (3.18,0.80) {\small pre-crossing\\[-0.2em]\small light signal};
+\end{tikzpicture}
+\caption{Una versión tipográfica del esquema. Bob sigue una hipérbola acelerada de \(\rho\) constante; Alice sigue una línea localmente inercial que atraviesa el horizonte futuro. La frontera nula limita el acceso causal de Bob, pero no constituye un obstáculo local para Alice.}
+\end{figure}
+
+\section{Alice cae y Bob permanece suspendido}
+
+Supongamos que Bob mantiene una distancia fija al horizonte mientras Alice le suelta la mano y cae. La línea de universo de Bob es una hipérbola y, por tanto, está acelerado. La línea de universo local de Alice es aproximadamente recta. Ella atraviesa la frontera nula en un tiempo propio finito y no encuentra ninguna discontinuidad local.
+
+Las descripciones causales son asimétricas. Una vez que Alice cruza, la luz que proviene de ella no puede llegar a Bob, mientras que la luz emitida por Bob todavía puede alcanzar a Alice durante cierto tiempo. Bob recibe señales de Alice emitidas en etapas cada vez más tempranas de su caída finita. El tiempo entre sus llegadas aumenta cada vez más, su frecuencia se corre al rojo y su intensidad disminuye. En tiempo de Schwarzschild, Bob nunca ve el cruce en sí: Alice parece acercarse al horizonte y aplanarse contra él de manera asintótica. No se le aplana la nariz mientras la nuca sigue normal: las señales de todas las partes se comprimen en la misma capa límite.
+
+\begin{classroomqa}
+\audiencequestion{¿Alice puede ver a Bob después de cruzar porque los fotones de Bob viajan hacia ella, hacia el interior?\lecturetimestamp{00:42:48}}
+\lecturerresponse{Sí. Ese es el sentido de la relación causal unidireccional: las señales de Bob dirigidas hacia el interior pueden entrar, mientras que las señales salientes posteriores de Alice no pueden escapar de vuelta hasta Bob.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si los pies de Alice cruzan primero mientras sus ojos permanecen fuera, ¿deja de ver por un momento sus propios pies?\lecturetimestamp{00:43:03}}
+\lecturerresponse{Durante una caída ordinaria no hay ningún destello visual. La luz siempre tarda en viajar de los pies a los ojos; para cuando llega la señal pertinente, sus ojos también han cruzado. Solo un intento violento de mantener la cabeza afuera mientras los pies siguen cayendo hacia el interior crearía una situación distinta y destructiva.}
+\end{classroomqa}
+
+Mantenerse en una posición fija es la opción no inercial. Bob necesita un cohete, igual que una persona de pie en el suelo necesita la fuerza ascendente del piso para evitar la caída libre. Cuanto más cerca del horizonte se mantiene Bob, mayor es la aceleración propia requerida; en la aproximación local de Rindler, su magnitud es \(a=1/\rho\) en unidades \(c=1\).\editorialnote{Al restituir las unidades, para el observador local de Rindler se obtiene \(a=c^2/\rho\). La aceleración propia de un observador de Schwarzschild exactamente estático diverge al acercarse al horizonte.}
+
+\begin{classroomqa}
+\audiencequestion{¿Estamos acelerando mientras permanecemos de pie aquí en el aula?\lecturetimestamp{00:45:40}}
+\lecturerresponse{Sí, respecto de un sistema en caída libre. El suelo nos sostiene; sin él, o sin un propulsor, caeríamos.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Llegará Bob a ver a Alice a menos de una longitud de Planck del horizonte? ¿Y qué ocurre después?\lecturetimestamp{00:49:24}}
+\lecturerresponse{Ahí es donde la descripción geométrica clásica deja de ser suficiente. La longitud de Planck contiene \(\hbar\), así que para responder qué puede resolver Bob allí hace falta la mecánica cuántica.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Las curvas de radio constante parecen encontrarse con el horizonte en una esquina coordenada que forma un ángulo recto. ¿Se puede calcular allí una derivada?\lecturetimestamp{00:51:12}}
+\lecturerresponse{En ese punto ocurre algo singular con esta carta de coordenadas, pero no con la física local. Una carta que cubra las otras cuñas elimina esa esquina artificial. Para la discusión actual del exterior, el diagrama de Rindler ya contiene los hechos causales necesarios.}
+\end{classroomqa}
+
+Por tanto, no sirve de mucho preguntar si Alice cruza \emph{realmente} si no se especifica el observador. El reloj de Alice alcanza el horizonte en un tiempo propio finito. La sucesión de señales que recibe Bob nunca incluye el suceso del cruce. La física pregunta qué mide cada observador y cómo pueden compararse sus registros.
+
+\begin{classroomqa}
+\audiencequestion{¿La afirmación precisa es que Bob solo puede ver una parte finita del futuro de Alice, aunque su propio tiempo de observación no tenga límite?\lecturetimestamp{00:53:33}}
+\lecturerresponse{Sí. Alice asigna un tiempo propio finito a la parte visible de su caída. En la geometría eterna idealizada, Bob recibe indefinidamente las señales con retraso y corrimiento al rojo cada vez mayores, pero no ve cómo sigue envejeciendo Alice después de cruzar el horizonte.}
+\end{classroomqa}
+
+\section{Los horizontes de aceleración bastan}
+
+Esta estructura causal no requiere un agujero negro. Un cohete que acelera uniformemente para siempre sigue una hipérbola de Rindler en el espacio-tiempo plano y tiene una frontera nula más allá de la cual ninguna señal puede alcanzarlo. Para ese observador hay un horizonte de aceleración, aunque un observador inercial considere que la misma región es espacio-tiempo ordinario de Minkowski.
+
+\begin{classroomqa}
+\audiencequestion{¿Este fenómeno es propio de los agujeros negros o se da con cualquier horizonte?\lecturetimestamp{00:55:25}}
+\lecturerresponse{Se da el mismo fenómeno para un observador uniformemente acelerado. Ese observador tiene un horizonte de aceleración y no puede ver los sucesos que quedan más allá. Localmente, el horizonte de un agujero negro no es físicamente distinto de ese caso.}
+\end{classroomqa}
+
+Este es el principio de equivalencia en acción: primero entendemos la aceleración uniforme y luego reconocemos la misma estructura local en un campo gravitatorio. A posteriori, se podrían haber anticipado los horizontes gravitatorios a partir de los horizontes de aceleración, incluso antes de que se aceptara la existencia de los agujeros negros. El propio Einstein no aceptó que los agujeros negros pudieran formarse físicamente, a pesar de haber proporcionado la teoría de la que se deriva su geometría. Para el observador en caída libre, el horizonte es anodino; para quien insiste en permanecer afuera, tiene consecuencias. Se trata de una tensión entre descripciones válidas, no todavía de una paradoja.
+
+\section{Volvamos al calor y la entropía}
+
+Tras la pausa, pongámonos el sombrero de la termodinámica. En la construcción anterior, se llenaba un agujero negro como una bañera, gota a gota, salvo que cada gota era un fotón que llevaba aproximadamente un bit. Cada bit aumentaba el área del horizonte en una cantidad del orden de un área de Planck. La entropía exacta es
+\begin{equation}
+S_{\mathrm{BH}}=\frac{k_B A}{4\ell_P^2}.
+\end{equation}
+En la lección se bromea con que se podría haber evitado el factor \(1/4\) si Planck hubiera definido de otra manera su longitud. La cuestión seria es que el análisis dimensional fija la escala, pero no el coeficiente numérico; el cálculo de Hawking determina ese coeficiente.\editorialnote{La longitud de Planck tiene una definición estándar \(\ell_P=\sqrt{G\hbar/c^3}\). El factor \(1/4\) es físico una vez fijadas esta convención y la entropía termodinámica habitual; la observación sobre redefinirlo es una broma de clase acerca de las convenciones.}
+
+La temperatura parece elemental porque podemos percibirla directamente con los dedos y los termómetros. La entropía suele resultar más misteriosa. La lección invierte esa jerarquía: considera la entropía y la energía como variables básicas, y deriva la temperatura de cuánta energía debe cambiar cuando cambia la entropía:
+\begin{equation}
+dE=T\,dS.
+\end{equation}
+En las unidades de un bit empleadas en la lección, \(\Delta S=1\), por lo que se llama \(T\) a la energía mínima asociada con añadir o borrar un bit. Si se borra sin cuidado---con el equivalente lógico de un mazazo---, se puede disipar una cantidad de energía arbitrariamente mayor. La definición se refiere a la disipación mínima posible cuando la información perdida se transfiere a grados de libertad microscópicos del entorno. En unidades convencionales, un bit binario corresponde a \(\Delta S=k_B\ln2\), y el borrado reversible disipa como mínimo \(k_BT\ln2\).\editorialnote{Esta es la normalización de Landauer que se omite al elegir medir tanto la entropía como la temperatura en unidades naturales basadas en la energía.}
+
+\subsection{La estimación con un fotón}
+
+Elijamos un fotón cuya longitud de onda sea comparable al radio de Schwarzschild:
+\begin{equation}
+\lambda\sim R_s=\frac{2GM}{c^2}.
+\end{equation}
+Su energía es, salvo el factor de convención \(2\pi\) que distingue \(h\) de \(\hbar\),
+\begin{equation}
+\Delta E\sim \frac{\hbar c}{\lambda}.
+\end{equation}
+Ese es el costo energético del bit añadido, así que
+\begin{equation}
+k_BT_H\sim\frac{\hbar c}{R_s}
+\sim\frac{\hbar c^3}{GM}.
+\label{eq:l03-hawking-scale}
+\end{equation}
+El argumento heurístico no permite determinar factores como \(2\) y \(\pi\). El resultado exacto de Hawking es
+\begin{equation}
+\boxed{k_BT_H=\frac{\hbar c^3}{8\pi GM}.}
+\label{eq:l03-hawking-exact}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_05.png}
+\caption{Esquema completo de la temperatura: \(R_s=2GM/c^2\), la escala de un bit \(\hbar c/R_s\) y la normalización exacta de Hawking \(8\pi\).}
+\lectureframe{01:07:48.000}
+\end{figure}
+
+Se deducen inmediatamente dos hechos. Primero, la temperatura se anula con \(\hbar\), por lo que es un efecto cuántico. Segundo,
+\begin{equation}
+T_H\propto\frac{1}{M}.
+\end{equation}
+Un agujero negro grande es frío. Para una masa solar,
+\begin{equation}
+T_H\approx6\times10^{-8}\ {\rm K},
+\end{equation}
+que es del mismo orden que la estimación de la lección de \(10^{-8}\,\mathrm{K}\) y muy inferior a los aproximadamente \(2.7\,\mathrm{K}\) de temperatura del fondo cósmico de microondas.
+
+\subsection{Capacidad calorífica negativa}
+
+Coloquemos ese agujero negro en un entorno más caliente. Absorbe energía, aumenta su masa y, según la ecuación~\eqref{eq:l03-hawking-exact}, se enfría. Entonces absorbe energía con aún más facilidad. Si lo colocamos en un entorno más frío, empieza la inestabilidad en sentido contrario: emite radiación, pierde masa, se calienta y emite más rápidamente. Formalmente,
+\begin{equation}
+C_{\mathrm{BH}}
+=\frac{dE}{dT_H}
+=c^2\frac{dM}{dT_H}
+<0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{¿A esto se le llama calor específico negativo?\lecturetimestamp{01:14:08}}
+\lecturerresponse{Exactamente. Un sistema autogravitante puede calentarse al perder energía. Una estrella presenta algo análogo: al emitir radiación, la menor presión permite que se contraiga, y la compresión gravitatoria eleva su temperatura.}
+\end{classroomqa}
+
+Que esté aislado no hace que un agujero negro sea, por ello, algo no físico. En el universo actual, un agujero negro estelar es más frío que su entorno y, principalmente, absorbe energía. A medida que el universo se expande y el fondo se enfría, el balance puede invertirse con el tiempo y la evaporación puede llegar a dominar. El equilibrio simple con un baño térmico efectivamente infinito es inestable.\editorialnote{Las condiciones de contorno son importantes. Un agujero negro puede estabilizarse en una cavidad reflectante finita o, para agujeros suficientemente grandes, en un espacio-tiempo anti-de Sitter; la inestabilidad descrita aquí corresponde al caso asintóticamente plano con un baño ordinario.}
+
+\section{La ley de evaporación}
+
+Para deducir las dependencias de escala, imaginemos que no tenemos un libro de consulta y elijamos las unidades en las que las ecuaciones que recordamos son más breves:
+\begin{equation}
+c=\hbar=G=k_B=1.
+\end{equation}
+Son unidades de Planck. Las escalas características citadas en la lección son
+\begin{equation}
+\ell_P\sim10^{-35}\ {\rm m},
+\qquad
+t_P\sim10^{-43}\ {\rm s},
+\qquad
+m_P\sim10^{-8}\ {\rm kg}.
+\end{equation}
+La masa de Planck es aproximadamente la de una mota de polvo visible, mientras que la longitud y el tiempo de Planck son extraordinariamente pequeños. Como \(c=1\), \(t_P\) es sencillamente el tiempo que tarda la luz en recorrer \(\ell_P\).
+
+Consideremos el agujero como un cuerpo negro, es decir, un emisor térmico, en vez de un objeto que deba permanecer perfectamente oscuro. Puede emitir radiación electromagnética y, en principio, otras especies disponibles, incluidos los gravitones. La potencia radiada es proporcional al área emisora porque la radiación sale por la superficie. La dependencia de Stefan--Boltzmann es
+\begin{equation}
+L=-\frac{dE}{dt}\sim A T^4.
+\end{equation}
+En unidades de Planck, \(E=M\), \(R_s\sim M\), \(A\sim R_s^2\sim M^2\) y \(T\sim R_s^{-1}\sim M^{-1}\). Por tanto,
+\begin{align}
+-\frac{dM}{dt}
+&\sim R_s^2\left(\frac{1}{R_s}\right)^4
+\sim\frac{1}{R_s^2}
+\sim\frac{1}{M^2},\\
+-M^2\frac{dM}{dt}&\sim1,\\
+-\frac{d(M^3)}{dt}&\sim1.
+\label{eq:l03-evap-scaling}
+\end{align}
+Si ignoramos los coeficientes del orden de uno, la vida es
+\begin{equation}
+\boxed{t_{\mathrm{evap}}\sim M^3.}
+\label{eq:l03-lifetime}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_06.png}
+\caption{Esquema de la evaporación sin obstáculos: la luminosidad da \(-dM/dt\sim1/M^2\) y, por tanto, una disminución uniforme de \(M^3\) y una vida proporcional al cubo de la masa inicial.}
+\lectureframe{01:23:20.000}
+\end{figure}
+
+El tratamiento esquemático de Stefan--Boltzmann omite los factores de cuerpo gris y el número de especies de partículas. Para un agujero neutro y no rotatorio, en la aproximación más sencilla de emisión de partículas sin masa, al restituir las constantes se obtiene
+\begin{equation}
+t_{\mathrm{evap}}
+=\frac{5120\pi G^2M_0^3}{\hbar c^4}.
+\label{eq:l03-exact-lifetime}
+\end{equation}
+Este coeficiente se ha añadido editorialmente; la lección solo deriva la dependencia robusta \(M_0^3\).
+
+\subsection{Escalas solar, de montaña y de kilogramo}
+
+La masa del Sol es \(M_\odot\sim10^{30}\,\mathrm{kg}\sim10^{38}m_P\). Al elevarla al cubo y multiplicarla por un tiempo de Planck, se obtiene la cadena deliberadamente aproximada de la lección:
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{114}t_P
+\sim10^{71}\ {\rm s}
+\sim10^{64}\ {\rm yr}.
+\end{equation}
+Cualquiera de las estimaciones es muchísimo mayor que la edad del universo, de unos \(10^{10}\) años. Al restituir el coeficiente de la ecuación~\eqref{eq:l03-exact-lifetime}, la estimación estándar para una masa solar aumenta hasta unos \(2\times10^{67}\) años.\editorialnote{La diferencia es esperable: el cálculo de la pizarra omite todas las constantes numéricas y redondea las escalas de Planck a potencias de diez. Su propósito es mostrar la dependencia cúbica con la masa, no calcular con precisión astronómica la vida del agujero.}
+
+A continuación, la clase considera un agujero con una masa comparable a la de una \emph{montaña}. Se adopta el valor aproximado de clase \(M\sim10^{10}\,\mathrm{kg}\), de modo que \(M\sim10^{18}m_P\), y se obtiene
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{54}t_P
+\sim10^{11}\ {\rm s}
+\sim10^4\ {\rm yr}.
+\end{equation}
+Así se conserva la aritmética que se llevó a cabo en la pizarra. La analogía geométrica empleada para motivar esa masa---aproximadamente \(100\,\mathrm{km}^3\) de roca---tendría en realidad mucha más masa, y el coeficiente exacto de la vida también cambiaría sustancialmente el resultado.\editorialnote{Con una densidad ordinaria de roca, \(100\,\mathrm{km}^3\) es del orden de \(10^{14}\,\mathrm{kg}\), no de \(10^{10}\,\mathrm{kg}\). Para \(10^{10}\,\mathrm{kg}\), la ecuación~\eqref{eq:l03-exact-lifetime} da una vida del orden de \(10^6\) años. Estas correcciones no alteran la lección de que la vida disminuye con el cubo de la masa.}
+
+\begin{classroomqa}
+\audiencequestion{¿Sería extremadamente pequeño un agujero negro de solo un kilogramo de masa?\lecturetimestamp{01:29:14}}
+\lecturerresponse{Sí. Como el radio es proporcional a la masa y una masa solar corresponde a unos pocos kilómetros, el radio de Schwarzschild de un agujero de un kilogramo es aproximadamente \(10^{-27}\,\mathrm{m}\). Además, un agujero así sería extremadamente caliente y tendría una vida muy corta.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Estas estimaciones de evaporación suponen una temperatura ambiente nula?\lecturetimestamp{01:29:53}}
+\lecturerresponse{Son aplicables cuando el entorno está más frío que el agujero, de modo que la energía neta fluye hacia afuera. Un entorno más caliente, en cambio, alimenta el agujero negro. Se deja como ejercicio hallar la masa cuya temperatura de Hawking coincide con la del fondo actual.}
+\end{classroomqa}
+
+Como referencia, al imponer \(T_H=2.7\,\mathrm{K}\) se obtiene \(M\) del orden de \(10^{22}\,\mathrm{kg}\) y un radio de Schwarzschild del orden de \(10^{-4}\,\mathrm{m}\).\editorialnote{Este cálculo resuelve el ejercicio planteado en la lección; no forma parte de la exposición oral.}
+
+\section{¿Qué subyace a la métrica?}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué mecanismo hace que los fotones salgan del agujero negro?\lecturetimestamp{01:30:53}}
+\lecturerresponse{Antes de proponer un mecanismo microscópico para la radiación, hay que identificar los grados de libertad responsables de la entropía. El argumento termodinámico impone lo que debe existir, aunque todavía no muestre explícitamente esas variables.}
+\end{classroomqa}
+
+La analogía es la mecánica de fluidos. La hidrodinámica describe campos suaves de densidad y velocidad sin seguir cada molécula. Sin embargo, la entropía revela que tras un mismo estado macroscópico suave hay muchas configuraciones microscópicas ocultas. Del mismo modo, la relatividad general clásica describe una métrica suave, pero no revela los numerosos grados de libertad microscópicos que cuenta la entropía de un agujero negro. La ley del área y la radiación de Hawking son indicios de que la teoría de Einstein es una descripción macroscópica efectiva.
+
+\begin{classroomqa}
+\audiencequestion{Si el agujero negro emite energía, ¿equivale eso a decir que emite información, de modo que la información absorbida durante su crecimiento regresa mientras se evapora?\lecturetimestamp{01:33:27}}
+\lecturerresponse{Eso es lo que se exige: si la evolución completa conserva la información, la radiación saliente debe acabar distinguiendo los posibles estados que formaron el agujero. Esto aún debe conciliarse con el cuadro causal en el que la materia atraviesa el horizonte.}
+\end{classroomqa}
+
+El flujo de energía por sí solo no basta para especificar la información. Una matriz de densidad perfectamente térmica puede transportar energía y, a la vez, olvidar los detalles del estado inicial. En una descripción unitaria, la información requerida queda codificada en correlaciones sutiles entre los cuantos emitidos.\editorialnote{Esta distinción hace explícita la formulación moderna del problema de la información. Precisa la pregunta planteada en la lección, sin cambiarla.}
+
+\section{La conservación de la información como principio estructural}
+
+\begin{classroomqa}
+\audiencequestion{¿Es realmente la conservación de la información un principio fundamental?\lecturetimestamp{01:34:13}}
+\lecturerresponse{Es uno de los principios más fundamentales. Si estados iniciales distintos pudieran evolucionar hasta exactamente el mismo estado final, las leyes borrarían su propio pasado. Las leyes de conservación habituales se basan no solo en simetrías, sino también en una evolución hamiltoniana o unitaria reversible.}
+\end{classroomqa}
+
+Imaginemos, como en la clase, una ley fundamental ficticia que simplemente hace que todo borrador que se desliza acabe deteniéndose. Velocidades iniciales distintas conducen al mismo estado final. El borrador ya no permite distinguir sus historias: la información se ha destruido. También desaparecen el momento lineal y la energía mecánica. La fricción real no hace esto a nivel microscópico; el momento lineal y la energía pasan a la mesa, al aire y a los grados de libertad térmicos.
+
+Incluso una mesa infinita y perfectamente uniforme tendría simetría traslacional, pero la ley ficticia de amortiguamiento aún podría hacer que el borrador se detuviera. Por tanto, la simetría traslacional por sí sola no basta para deducir la conservación del momento lineal a partir de una regla no hamiltoniana como esa. El teorema de Noether supone un principio de acción y la dinámica reversible asociada. En los términos usados aquí, la simetría junto con una dinámica que conserva la información da lugar a la ley de conservación.
+
+\begin{classroomqa}
+\audiencequestion{¿Es la conservación de la información más fundamental que la causalidad?\lecturetimestamp{01:37:00}}
+\lecturerresponse{Son principios distintos, con un nivel de fundamentación comparable. Primero hay que formular la causalidad con precisión---por ejemplo, estableciendo que las señales no pueden propagarse hacia atrás fuera de la estructura causal permitida---, pero ninguno de los dos principios puede sustituir sin más al otro.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es la conservación del área en el espacio de fases, tratada en la mecánica hamiltoniana, la versión clásica de esta idea?\lecturetimestamp{01:37:38}}
+\lecturerresponse{Sí. El teorema de Liouville afirma que el flujo hamiltoniano conserva el volumen del espacio de fases. Una nube de estados iniciales posibles no puede contraerse a un volumen menor y borrar las distinciones entre ellos. En mecánica cuántica, la afirmación correspondiente es la unitariedad: se conservan los productos internos y, por tanto, las distinciones entre estados ortogonales.}
+\end{classroomqa}
+
+Clásicamente,
+\begin{equation}
+\frac{d}{dt}\,\mathrm{Vol}_{\Gamma}=0,
+\end{equation}
+para una región del espacio de fases transportada por el flujo hamiltoniano. Cuánticamente,
+\begin{equation}
+\begin{aligned}
+\ket{\psi(t)}&=U(t)\ket{\psi(0)},\\
+U^\dagger U&=I,\\
+\braket{\psi(t)}{\phi(t)}
+&=\braket{\psi(0)}{\phi(0)}.
+\end{aligned}
+\end{equation}
+Estas son formulaciones precisas de la afirmación de que las distinciones microscópicas sobreviven a la evolución temporal.
+
+\section{¿De qué depende la entropía?}
+
+La conversación final vuelve a la entropía de teoría de la información. Dadas las probabilidades \(p_i\) de las alternativas microscópicas,
+\begin{equation}
+S=-k_B\sum_i p_i\ln p_i
+\label{eq:l03-shannon}
+\end{equation}
+en unidades termodinámicas, o sin \(k_B\) para la entropía de Shannon adimensional.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_07.png}
+\caption{La fórmula final de la pizarra \(S=-\sum_i p_i\log p_i\), escrita mientras se distingue una distribución de probabilidad del único valor de entropía que se calcula a partir de ella.}
+\lectureframe{01:40:32.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿La maximización de la entropía define la distribución de probabilidad, en vez de que las probabilidades definan la entropía?\lecturetimestamp{01:38:33}}
+\lecturerresponse{Una distribución de probabilidad determina un valor de entropía mediante la ecuación~\eqref{eq:l03-shannon}; un solo número no puede reconstruir todos los \(p_i\). La maximización de la entropía puede seleccionar una distribución solo cuando también se han especificado la normalización y otras restricciones, como un valor fijo de la energía media.}
+\end{classroomqa}
+
+Esta distinción lleva la clase hasta el límite adecuado. La geometría suave ha conducido a un horizonte; el horizonte, a la termodinámica; la termodinámica ha revelado grados de libertad ocultos; y ahora la conservación de la información exige que esos grados de libertad evolucionen sin borrar las distinciones que entraron en el agujero. Aún no se ha proporcionado el mecanismo. En cambio, la geometría y la contabilidad han dejado claro qué debe explicar cualquier teoría microscópica satisfactoria.

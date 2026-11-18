@@ -1,0 +1,59 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 269,
+  "outline_entries": 135,
+  "target_characters": 241448,
+  "image_placements": 82,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Temas de teoría de cuerdas",
+  "pdf_sha256": "cac575da9e5167d1df37ddc09484ff01abda349fb8959f7d0b9fbed0a7145bdf",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 25,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "c4b87af44783a0929e3750e78a662b5abc1e47a8f51adce0d39e9e0187349af0",
+    "chapters/lecture_01/content.tex": "0a9ac871b61ecdf73d218c97311a84582a5f904b4003a0b71100eef73e4917e5",
+    "chapters/lecture_02/content.tex": "ef8b418c19922bddb2a653edf84f14f32064f3174e82471e69b28a09cf5ae3bc",
+    "chapters/lecture_03/content.tex": "9352b07ba1996dd5acbeae89a55e46bdbcb2b90ce7d97dedf4b2dd5423bbee0a",
+    "chapters/lecture_04/content.tex": "814f3b76f89e900eea21b08f5b7896bfd2ef330c3d44aaf95495cf1b39a3ea79",
+    "chapters/lecture_05/content.tex": "c56c4a7dcc2260160f1b68681d2e254ab57f75ba4d5757188d6970f8645e3696",
+    "chapters/lecture_06/content.tex": "31eccb50aec4004d326566e549fb8207f9303ba67745c1fb68b274a7ea703ea8",
+    "chapters/lecture_07/content.tex": "eb605cf87ab2acadd56e006a418ae50a230a29c5cda600cc882d8d43360be777",
+    "chapters/lecture_08/content.tex": "482febcd2be13410a0de36e51e4c5364d3b464b399555ebe06a5707c94d91e6b",
+    "chapters/lecture_09/content.tex": "ed842bb5aad25e99b104c5a95c599302ae4236079af7857fe976f25b199941c1"
+  },
+  "source_files": {
+    "course.tex": "5813fa3876488c0990af4bf15a855abc4eb833dd1e1b4a173b02a8742570c935",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "567923e017f5afbf8d6b82d2b0341bbeabbe06ae28165837759d891dfd670e56",
+    "chapters/lecture_02/content.tex": "df3935948d623649fa1bd4adf69a53f8defeec0fc0c65f1c370452d8403326bf",
+    "chapters/lecture_03/content.tex": "7eeac70ea5e86a155890a459eafd007f8d02b28f119664d2df6502ebc7f4e969",
+    "chapters/lecture_04/content.tex": "280798e99eea6e71529164540437c8fdbe22e752c03c6c39baaa153278b0060c",
+    "chapters/lecture_05/content.tex": "8fce7d01e02b32819996400e347bbc0c596655cc9a35f92f7fdd056a3b17b5fb",
+    "chapters/lecture_06/content.tex": "2ebe6be0dd8eed3ab446d3a7baebea39f33a6b1d97e5026135fdea0e9a0854aa",
+    "chapters/lecture_07/content.tex": "ad35584cafd776fe8bbde8625c31a325f7465d5507753dfefc7f06356991b9c3",
+    "chapters/lecture_08/content.tex": "28c531b7e4cf9483f0bb78491ff0f2a11411be6fee0d4aa70f68b44e949b04a6",
+    "chapters/lecture_09/content.tex": "1c889082ea6d02f33411d3bbdfd9b39ce29e5910b3708a80799a0c4e9a38bae7"
+  },
+  "translated_tex": {
+    "cover.tex": "6fa829b93e13f05bdcd37711eabe8e5301de07363ea80584120be8ec5cb57eed",
+    "common_preamble.tex": "ba6baed6e0ccfaffc059dc8550a7ae85e8975a0feba22d1ce16e1bfa6ded79f0",
+    "course.tex": "6a82b4b89812b0e8be6695c355f685134bfcbeee91a5b2bc7af153bd488d09c0",
+    "chapters/lecture_07/content.tex": "c8db61052301d4ab0f1bd7b2371c5653472c9c2a4354a45c0c5ba300a34c78a1",
+    "chapters/lecture_02/content.tex": "6b3ab013dac18f8c712fc1508b55a6d3a452decc34132adfc638a2adace3b951",
+    "chapters/lecture_09/content.tex": "f2663f321725dd2d351d815d474ea47040c27cf1c0531c9b13ad63d0e88f004c",
+    "chapters/lecture_01/content.tex": "32b5991ec712dbb1f4bc8b1139600a630798c0e61b819884ca93cb4ea47b1cd2",
+    "chapters/lecture_03/content.tex": "eabfc303ef118adb7987f49980136f2ee42153ef96d6ffb9da7a111fb251ed04",
+    "chapters/lecture_08/content.tex": "544e0e46eeb077bc182268eb48dcdaf11a07dd605118428b7b3e1cde5762c253",
+    "chapters/lecture_05/content.tex": "1f6f38d3dd8eb3088633c96a46469801ec7e7b1f592f324ca0f2c6e83cfadd36",
+    "chapters/lecture_04/content.tex": "21f0db809e156b6a19979558ee1030ff531df827305ea48756f8b1e1436f84f3",
+    "chapters/lecture_06/content.tex": "68fc28797262e17252b86344f1690bf2f1751bdaeb2db17efbe77257ff873c28"
+  }
+}
