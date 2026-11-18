@@ -1,0 +1,551 @@
+\chapter{Fluctuaciones cuánticas y origen de la estructura}
+
+\lectureoverview{La última lección pregunta cómo un universo alisado por la inflación puede adquirir, pese a ello, las diminutas irregularidades a partir de las cuales crecen las galaxias. La respuesta se construye por etapas. Primero, las constantes universales definen las escalas de Planck y ponen de manifiesto la enorme brecha entre la física de partículas conocida y la gravedad cuántica. Después, el cielo de microondas proporciona el objetivo: variaciones de temperatura y densidad del orden de \(10^{-5}\), distribuidas en muchas escalas. El movimiento de punto cero aporta fluctuaciones inevitables; el amortiguamiento explica cómo una oscilación puede congelarse, y la ecuación de ondas en un universo en expansión convierte cada modo de Fourier del inflatón en un oscilador amortiguado de ese tipo. Los modos se congelan cuando su longitud de onda física alcanza la escala de Hubble. Cuando termina la inflación, las variaciones congeladas hacen que regiones vecinas se recalienten en momentos ligeramente distintos, convirtiendo el ruido cuántico microscópico en el patrón primordial de densidad.}
+
+\section{¿Qué constantes son universales?}
+
+Disponemos de una teoría cuántica extraordinariamente precisa de las partículas elementales. Entre sus parámetros figuran las masas de los quarks y los leptones, las constantes de acoplamiento, los datos de mezcla, las cargas y la lista misma de partículas. Con capacidad de cálculo ilimitada, la teoría daría cuenta no solo de los experimentos con aceleradores, sino también de los átomos, las moléculas y la química; en principio, sus consecuencias llegan hasta la biología y los procesos físicos que subyacen al pensamiento. Eso no significa que calcular tales sistemas sea fácil. Significa que el Modelo Estándar pretende ser el fundamento microscópico de la materia ordinaria. La gravedad se describe por separado, en el nivel clásico, mediante la relatividad general. Ambas teorías son poderosas, pero ninguna hace que todos los números que aparecen en la física de bajas energías parezcan inevitables.
+
+La razón entre las masas del protón y el electrón es un número físico perfectamente válido, pero está ligada a dos partículas concretas. Si se sustituye el protón por un neutrón o el electrón por un muón, se obtiene una razón distinta. Esos parámetros pueden codificar física profunda que aún desconocemos, pero no manifiestan su universalidad. Tres constantes dimensionales son diferentes:
+\[
+c,\qquad \hbar,\qquad G.
+\]
+En las leyes que las definen aparece una y otra vez la palabra \emph{todos}. Toda la materia y toda la información respetan la velocidad límite \(c\). Todos los sistemas cuánticos obedecen relaciones de incertidumbre regidas por \(\hbar\). Todas las formas de energía gravitan con la misma constante de Newton \(G\). Esa amplitud es lo que hace fundamentales a estas constantes en el argumento que nos ocupa.
+
+Planck reconoció la importancia de esta combinación antes de que se conociera el significado pleno de la mecánica cuántica. Su constante apareció primero en la descripción de la radiación del cuerpo negro. Incluso entonces, el hecho dimensional era evidente: a partir de \(c\), \(\hbar\) y \(G\) se pueden construir unidades de longitud, tiempo y masa sin recurrir a ningún átomo o partícula concretos.
+
+\section{Construcción de las escalas de Planck}
+
+Sean \(L\), \(T\) y \(M\) las dimensiones de longitud, tiempo y masa. La velocidad de la luz tiene dimensiones
+\[
+[c]=LT^{-1}.
+\]
+La relación de incertidumbre \(\Delta x\,\Delta p\gtrsim\hbar\), junto con \(p=mv\), da
+\[
+[\hbar]=ML^2T^{-1}.
+\]
+Por último, las ecuaciones de Newton
+\[
+F=\frac{Gm_1m_2}{r^2},
+\qquad
+F=ma
+\]
+dan
+\[
+[G]=L^3M^{-1}T^{-2}.
+\]
+Esta derivación importa porque el análisis dimensional no es una conjetura: cada exponente queda fijado al exigir que se cancelen las dimensiones no deseadas.
+
+Busquemos una longitud de la forma
+\begin{equation}
+\ell=c^\alpha\hbar^\beta G^\gamma.
+\label{eq:c10-length-ansatz}
+\end{equation}
+El exponente de la masa debe anularse, así que
+\[
+\beta-\gamma=0.
+\]
+El exponente del tiempo debe anularse y el de la longitud debe ser igual a uno:
+\[
+-\alpha-\beta-2\gamma=0,
+\qquad
+\alpha+2\beta+3\gamma=1.
+\]
+Usando \(\gamma=\beta\), resulta
+\[
+\alpha+3\beta=0,
+\qquad
+\alpha+5\beta=1.
+\]
+La diferencia entre ambas ecuaciones da \(2\beta=1\); por tanto,
+\[
+\beta=\gamma=\frac12,
+\qquad
+\alpha=-\frac32.
+\]
+Así, la única longitud que se puede formar con las tres constantes universales es
+\begin{equation}
+\ell_{\mathrm P}
+=\sqrt{\frac{\hbar G}{c^3}}
+\approx 1.6\times10^{-35}\,\mathrm m.
+\label{eq:c10-planck-length}
+\end{equation}
+La lección conserva solo el orden de magnitud, \(10^{-35}\,\mathrm m\), pero la derivación dimensional determina la combinación misma.
+
+El tiempo asociado es el tiempo que tarda la luz en recorrer esa longitud:
+\begin{equation}
+t_{\mathrm P}
+=\frac{\ell_{\mathrm P}}{c}
+=\sqrt{\frac{\hbar G}{c^5}}
+\approx 5.4\times10^{-44}\,\mathrm s.
+\label{eq:c10-planck-time}
+\end{equation}
+Con precisión de orden de magnitud, es \(10^{-43}\,\mathrm s\). Una vez conocidas la longitud de Planck y la velocidad universal, no hace falta construirlo de manera independiente.
+
+Para la masa, usemos la relación dimensional \(Et\sim\hbar\) y \(E=mc^2\). Al tomar \(t=t_{\mathrm P}\) se obtiene
+\begin{equation}
+m_{\mathrm P}
+=\frac{\hbar}{c^2t_{\mathrm P}}
+=\sqrt{\frac{\hbar c}{G}}
+\approx 2.2\times10^{-8}\,\mathrm{kg}.
+\label{eq:c10-planck-mass}
+\end{equation}
+Según los estándares de la física de partículas, esta masa es sorprendentemente macroscópica: es aproximadamente la masa de una partícula fina de polvo. Su energía en reposo es del orden de \(10^9\,\mathrm J\), comparable a la energía química de un depósito de combustible. Un coche puede recorrer cientos de millas con apenas unos pocos depósitos porque la combustión libera solo una fracción minúscula de la energía en reposo del combustible. Convertir por completo una masa de Planck en energía sería algo muy distinto. Una masa diminuta puede representar una energía enorme al multiplicarla por \(c^2\).
+
+El contraste con la física de aceleradores es enorme. Una distancia del orden de \(10^{-18}\,\mathrm m\), característica de las escalas más cortas estudiadas en colisiones de alta energía en la época de la lección, sigue siendo aproximadamente \(10^{17}\) longitudes de Planck. Por tanto, el territorio desconocido entre las escalas electrodébil y de Planck es vastísimo. La física nuclear ofrece una analogía adecuada. Desde lejos, un núcleo parece elemental, pero a distancias menores se resuelve en protones y neutrones, que a su vez se resuelven en quarks y gluones. Las partículas de baja energía pueden ser simples en comparación con los núcleos y, aun así, resultar objetos emergentes complejos respecto de lo que sea que exista en la escala de Planck. La multitud de parámetros del Modelo Estándar sorprende menos cuando se contempla esta jerarquía, aunque sus valores observados y sus ajustes finos siguen sin explicación.
+
+\begin{classroomqa}
+\audiencequestion{¿Es el Higgs más ligero o más pesado de lo esperado, y por qué resulta desconcertante su masa?}
+\lecturerresponse{Hay dos comparaciones. Frente a la masa de Planck, un Higgs de \(125\,\mathrm{GeV}\) es extraordinariamente ligero. En una teoría sin una estructura que lo proteja, las correcciones cuánticas tienden a hacer que la masa de un escalar sea sensible a escalas mucho mayores; por eso, obtener el valor observado parece exigir equilibrar los parámetros en un margen muy estrecho. En cambio, frente a algunas expectativas supersimétricas sencillas que se comentaban entonces, el Higgs observado podría considerarse algo pesado. La aparente contradicción se debe a que se compara con dos escalas de referencia distintas; el problema de jerarquía subyacente permanece. \lecturetimestamp{00:26:45--00:30:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si el Higgs contribuye a dar masa a las partículas, ¿deberían tener las partículas de materia oscura masas cercanas a la escala de Planck?}
+\lecturerresponse{No. Un WIMP es una \emph{partícula masiva de interacción débil}; la expresión alude a una escala de interacción que podría hacer posible su detección en el laboratorio, no a la masa de Planck. Bajo las hipótesis habituales sobre los WIMP, sus masas pueden superar ampliamente la masa del protón y seguir siendo muchísimo menores que \(m_{\mathrm P}\). Si se permite que la interacción con la materia ordinaria sea arbitrariamente más débil, la cosmología admite un intervalo de masas mucho más amplio, pero su descubrimiento directo se vuelve, en correspondencia, más difícil. El protón y el neutrón también sirven de advertencia: la mayor parte de su masa es energía de enlace de la interacción fuerte, y no simplemente la suma de las masas de los quarks generadas por el Higgs. \lecturetimestamp{00:30:55--00:33:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué representa una masa de Planck y existe una energía fundamental por bit?}
+\lecturerresponse{Una interpretación gravitatoria útil es que un agujero negro no puede ser paramétricamente menor que la escala de Planck y seguir siendo un agujero negro semiclásico convencional. Un objeto así tendría una masa del orden de \(m_{\mathrm P}\), un área de horizonte del orden de un área de Planck y una entropía del orden de una unidad. En ese sentido restringido, propio de los agujeros negros, se puede asociar una energía del orden de la energía de Planck con una cantidad de información del orden de una unidad. Esto no significa que cada bit almacenado en cualquier dispositivo cueste una energía de Planck: las partículas ordinarias y las memorias ordinarias pueden tener masas mucho menores. \lecturetimestamp{00:33:11--00:35:10}}
+\end{classroomqa}
+
+A partir de aquí conviene usar unidades de Planck,
+\begin{equation}
+c=\hbar=G=1.
+\label{eq:c10-planck-units}
+\end{equation}
+Las longitudes, los tiempos, las masas y las energías pueden expresarse entonces como números puros medidos con respecto a las ecuaciones~\eqref{eq:c10-planck-length}--\eqref{eq:c10-planck-mass}.
+
+\section{El cielo de microondas casi uniforme}
+
+El problema cosmológico comienza con un mapa de microondas de todo el cielo. WMAP, la sonda Wilkinson de anisotropía de microondas, midió la radiación emitida cerca de la época en que el plasma primordial se volvió transparente. Desde entonces, los fotones han sufrido un corrimiento al rojo de un factor aproximado de mil y ahora forman un cuerpo negro casi perfecto a unos \(2.7\,\mathrm K\). Al mirar hacia el espacio no vemos el universo en un único tiempo presente. Cuanto mayor es la distancia, más temprana es la emisión, y el fondo cósmico de microondas es la capa distante desde la que los fotones comenzaron a propagarse libremente hacia nosotros.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué representa exactamente la imagen ovalada de WMAP?}
+\lecturerresponse{Cada punto del óvalo representa una dirección del cielo, y la proyección cartográfica aplana la esfera. Los bordes izquierdo y derecho se unen; las partes superior e inferior representan hemisferios galácticos opuestos, y el plano galáctico cruza el centro. Hay que modelar y restar la emisión de microondas en primer plano procedente de nuestra propia galaxia. Lo que queda no es un mapa de estrellas cercanas, sino un mapa direccional de la temperatura de microondas en la capa de última dispersión. \lecturetimestamp{00:37:49--00:40:49}}
+\end{classroomqa}
+
+En primera aproximación, el resultado es isótropo:
+\[
+T(\hat{\mathbf n})\simeq 2.7\,\mathrm K
+\]
+para toda dirección de observación \(\hat{\mathbf n}\). Una isotropía perfecta en torno a todos los puntos implicaría una homogeneidad perfecta. Pero un universo perfectamente homogéneo no produciría espontáneamente galaxias, cúmulos y la red cósmica con aspecto de cáusticas comentada en la lección anterior. Debieron existir algunas inhomogeneidades, por pequeña que fuera su amplitud.
+
+Escribamos la desviación direccional de la temperatura como
+\[
+\delta T(\hat{\mathbf n})=T(\hat{\mathbf n})-\bar T.
+\]
+La variación fraccionaria medida es del orden de
+\begin{equation}
+\frac{\delta T}{T}\sim10^{-5}.
+\label{eq:c10-cmb-anisotropy}
+\end{equation}
+Una vía para obtener este número fue dinámica: hacer evolucionar hacia atrás la distribución actual de materia y preguntar qué contraste inicial se necesita en el desacoplamiento. La otra fue directa: amplificar cinco órdenes de magnitud el mapa de microondas casi uniforme y medir sus variaciones. Ambas vías concuerdan con la precisión que requiere este argumento.
+
+Las variaciones aparecen en muchas escalas angulares. Las regiones grandes contienen otras más pequeñas, y al ampliar una región se observa una textura estadísticamente similar. El término \emph{invariante de escala} no significa que todas las escalas sean literalmente idénticas, sino que la potencia de las fluctuaciones cambia muy poco con la escala en el intervalo pertinente. Esa invariancia de escala aproximada es parte de lo que la teoría debe explicar, no solo la amplitud global.
+
+¿Por qué la temperatura debería reflejar la materia? Un fotón que escapa de un pozo de potencial gravitatorio pierde energía. Por eso, la radiación que llega desde una región más densa puede estar desplazada con respecto a la que llega desde una región menos densa. En el nivel de orden de magnitud de la lección, esto motiva
+\begin{equation}
+\frac{\delta\rho}{\rho}\sim10^{-5}
+\label{eq:c10-density-target}
+\end{equation}
+cerca del desacoplamiento. Un cálculo preciso del CMB incluye la dinámica acústica, los potenciales gravitatorios y las funciones de transferencia; por eso, la ecuación~\eqref{eq:c10-density-target} es una forma abreviada de establecer la escala, no una igualdad exacta entre \(\delta T/T\) y \(\delta\rho/\rho\).
+
+\begin{classroomqa}
+\audiencequestion{¿Podrían las variaciones observadas ser ruido microscópico ordinario generado durante la última dispersión?}
+\lecturerresponse{No en las escalas angulares observadas. En la época del desacoplamiento, las regiones correspondían a extensiones físicas enormes, no a perturbaciones de escala atómica en el plasma en recombinación. Sin embargo, si se rastrean mucho más atrás en el tiempo, sus longitudes de onda físicas se vuelven menores. La inflación aporta la magnificación que falta: las fluctuaciones que comenzaron como perturbaciones cuánticas microscópicas pueden estirarse hasta escalas astronómicas. \lecturetimestamp{00:46:42--00:48:02}}
+\end{classroomqa}
+
+El mecanismo se entiende a partir de tres elementos de la física: el movimiento de punto cero de un oscilador armónico, el amortiguamiento de un oscilador y la ecuación de ondas de un campo escalar en un universo en expansión. Los reuniremos en ese orden.
+
+\section{Movimiento de punto cero de un oscilador}
+
+Para un oscilador armónico de masa unidad,
+\begin{equation}
+E=\frac12\dot x^{\,2}+\frac12\omega^2x^2,
+\qquad
+\ddot x+\omega^2x=0.
+\label{eq:c10-undamped}
+\end{equation}
+Las energías cinética y potencial se intercambian continuamente. Promediada durante una oscilación, cada una aporta la mitad de la energía total.
+
+La mecánica cuántica da los niveles de energía
+\begin{equation}
+E_n=\left(n+\frac12\right)\hbar\omega.
+\label{eq:c10-oscillator-levels}
+\end{equation}
+El estado fundamental no puede tener a la vez \(x=0\) y \(\dot x=0\), pues eso supondría asignar valores exactos simultáneamente a la posición y al momento. Su energía irreducible,
+\[
+E_0=\frac12\hbar\omega,
+\]
+es la energía de punto cero. La palabra \emph{oscilación} debe entenderse en sentido estadístico: el estado fundamental estacionario no recorre una órbita sinusoidal clásica, pero tiene varianzas no nulas de posición y momento.
+
+En promedio, la mitad de la energía del estado fundamental está en el término potencial:
+\[
+\frac12\omega^2\langle x^2\rangle
+=\frac14\hbar\omega.
+\]
+Por tanto,
+\begin{equation}
+\langle x^2\rangle=\frac{\hbar}{2\omega}
+\sim\frac{\hbar}{\omega}.
+\label{eq:c10-zero-point-position}
+\end{equation}
+Si se ignoran los factores de dos, se puede usar una notación compleja para representar la escala de la fluctuación:
+\[
+x(t)\sim\sqrt{\frac{\hbar}{\omega}}\,e^{i\omega t}.
+\]
+Al derivar se obtiene
+\begin{equation}
+\langle\dot x^{\,2}\rangle\sim\hbar\omega,
+\label{eq:c10-zero-point-velocity}
+\end{equation}
+en concordancia con la igualdad de las energías cinética y potencial medias. El enfriamiento puede eliminar las excitaciones con \(n>0\), pero no puede eliminar estas varianzas del estado fundamental.
+
+\section{Amortiguamiento, criticidad y congelación}
+
+Sumerjamos el oscilador en un medio viscoso. Un muelle y una masa que se mueven en miel obedecen
+\begin{equation}
+\ddot x+\gamma\dot x+\omega^2x=0,
+\label{eq:c10-damped}
+\end{equation}
+donde \(\gamma>0\) mide la resistencia viscosa. Si se busca una solución de la forma \(x=e^{\alpha t}\), se obtiene
+\begin{equation}
+\alpha^2+\gamma\alpha+\omega^2=0,
+\end{equation}
+y, por tanto,
+\begin{equation}
+\alpha_\pm
+=\frac{-\gamma\pm\sqrt{\gamma^2-4\omega^2}}{2}.
+\label{eq:c10-damped-roots}
+\end{equation}
+Las dos raíces dan las dos soluciones independientes que requiere una ecuación diferencial de segundo orden.
+
+\begin{classroomqa}
+\audiencequestion{¿Debería llevar un signo menos el término de resistencia en la ecuación~\eqref{eq:c10-damped}?}
+\lecturerresponse{La fuerza de resistencia misma es \(F_{\rm drag}=-\gamma\dot x\). La ecuación de Newton es \(\ddot x=-\gamma\dot x-\omega^2x\). Al pasar ambos términos de fuerza al miembro izquierdo se obtiene la ecuación~\eqref{eq:c10-damped} con signos positivos. Por tanto, el signo de la ecuación diferencial y la dirección de la fuerza física son coherentes. \lecturetimestamp{00:59:38--01:00:10}}
+\end{classroomqa}
+
+Si \(\gamma^2<4\omega^2\), las raíces son complejas. Definamos
+\[
+\Omega=\sqrt{\omega^2-\frac{\gamma^2}{4}}.
+\]
+Entonces,
+\begin{equation}
+x(t)=e^{-\gamma t/2}
+\left(A\cos\Omega t+B\sin\Omega t\right).
+\label{eq:c10-underdamped}
+\end{equation}
+El oscilador sigue cruzando repetidamente la posición de equilibrio, pero su envolvente decae. Este es el régimen subamortiguado.
+
+Si \(\gamma^2>4\omega^2\), ambas raíces de la ecuación~\eqref{eq:c10-damped-roots} son reales y negativas:
+\begin{equation}
+x(t)=A e^{\alpha_+t}+B e^{\alpha_-t}.
+\label{eq:c10-overdamped}
+\end{equation}
+No hay oscilación sostenida; ambos componentes decaen. Este es el régimen sobreamortiguado. En
+\begin{equation}
+\gamma=2\omega
+\label{eq:c10-critical}
+\end{equation}
+las raíces coinciden, lo que marca el amortiguamiento crítico, es decir, el paso de un comportamiento al otro.
+
+Un caso límite es especialmente importante. Sin fuerza restauradora, \(\omega=0\),
+\[
+\alpha(\alpha+\gamma)=0,
+\]
+de modo que
+\begin{equation}
+x(t)=c_0+c_1e^{-\gamma t}.
+\label{eq:c10-no-restoring}
+\end{equation}
+La velocidad se anula, pero la coordenada no tiene por qué volver a cero. Se congela en el valor constante \(c_0\), determinado por las condiciones iniciales. Una piedra empujada por miel sin un muelle acoplado acaba en reposo allí donde la resistencia agota su movimiento.
+
+Consideremos ahora una frecuencia que varía lentamente. Empecemos con \(\omega\gg\gamma\), de modo que el movimiento sea oscilatorio. Reduzcamos \(\omega(t)\) manteniendo aproximadamente fija la escala de amortiguamiento. La oscilación se ralentiza, cruza \(\gamma=2\omega\), pasa a ser sobreamortiguada y se aproxima a la forma sin fuerza restauradora cuando \(\omega\to0\). De forma equivalente, se puede aumentar el amortiguamiento con respecto a la fuerza restauradora. En la aplicación cosmológica, el cambio decisivo será la disminución de la frecuencia efectiva mientras el amortiguamiento de Hubble permanece casi constante. El valor final congelado no puede deducirse solo del cruce; se obtiene de la evolución previa completa y del estado cuántico inicial.
+
+\section{Ondas escalares en un universo en expansión}
+
+Volvamos al inflatón \(\phi\). Se supone que su potencial tiene una meseta alta y ancha, seguida de un descenso pronunciado hacia un mínimo más bajo. En la meseta, la aproximación importante es
+\begin{equation}
+V'(\phi)\simeq0,
+\label{eq:c10-flat-potential}
+\end{equation}
+y no \(V(\phi)\simeq0\). La pendiente es pequeña, mientras que la densidad de energía puede seguir siendo suficientemente grande para impulsar la inflación. No se especifica el origen detallado de esta forma; es un requisito fenomenológico del modelo.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_02.png}\caption{La meseta y el precipicio del potencial del inflatón siguen visibles a la izquierda mientras a la derecha se inicia la ecuación de ondas en el espacio plano. La pizarra permite confirmar la condición aproximada \(V'(\phi)=0\) y el comienzo de un término con una segunda derivada, pero el docente oculta la ecuación inconclusa; la ecuación~\eqref{eq:c10-flat-wave} se reconstruye a partir de la explicación oral.}\label{fig:c10-potential-wave}\lectureframe{01:17:17.865}\end{figure}
+
+Para un campo escalar casi libre en el espacio-tiempo plano,
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\nabla^2\phi=0.
+\label{eq:c10-flat-wave}
+\end{equation}
+Un potencial no plano añadiría \(-V'(\phi)\) en el miembro derecho. En la aproximación de la meseta, lo omitimos. Si el campo fuera perfectamente homogéneo, la derivada espacial se anularía. En un universo en expansión, la ecuación homogénea restante sería
+\[
+\ddot\phi+3H\dot\phi=0,
+\]
+la ecuación de fricción de Hubble de la lección anterior.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_03.png}\caption{A la izquierda se indica la meseta, mientras que a la derecha aparecen las etapas sucesivas de la ecuación de ondas. El operador de espacio plano de la parte superior se distingue; la línea inferior llega hasta \(+3H\), pero queda incompleta, así que el término de amortiguamiento completo se proporciona a partir de la explicación contemporánea.}\label{fig:c10-hubble-board}\lectureframe{01:18:57.554}\end{figure}
+
+\begin{figure}[htbp]\centering
+\begin{coursefitfigure}\begin{tikzpicture}[x=1cm,y=0.9cm,>=Latex]
+  \draw[->] (-0.2,0) -- (9.3,0) node[right] {\(\phi\)};
+  \draw[->] (0,-0.2) -- (0,4.6) node[above] {\(V(\phi)\)};
+  \draw[very thick,blue!55!black,smooth]
+    plot coordinates {(0.25,3.9) (1.4,3.88) (2.8,3.8) (4.2,3.6) (5.3,3.25) (6.0,2.6) (6.5,1.45) (6.9,0.45) (7.5,0.28) (8.5,0.7)};
+  \draw[dashed] (6.45,0) -- (6.45,2.0);
+  \draw[->,thick,red!65!black] (2.0,4.25) -- (3.1,3.82);
+  \node[anchor=south west] at (0.8,4.0) {slow-roll plateau: \(V'\simeq0\)};
+  \node[anchor=west] at (6.55,2.05) {end of inflation};
+  \node[anchor=north] at (7.45,0.22) {reheating region};
+\end{tikzpicture}\end{coursefitfigure}\caption{Reconstrucción limpia del potencial empleado en todo el argumento. Una pendiente suave permite el rodamiento lento, mientras que el valor alto de \(V\) mantiene \(H\) casi constante; el descenso pronunciado pone fin a la inflación y libera la energía almacenada.}\label{fig:c10-potential-reconstruction}\end{figure}
+
+Para un campo inhomogéneo hay que distinguir la distancia coordenada de la distancia física. Elijamos etiquetas comóviles adimensionales \(\mathbf x\), de modo que la distancia propia infinitesimal sea
+\[
+d\boldsymbol\ell=a(t)\,d\mathbf x.
+\]
+A tiempo fijo,
+\[
+\nabla_{\rm proper}=\frac{1}{a}\nabla_{\mathbf x},
+\qquad
+\nabla_{\rm proper}^2=\frac{1}{a^2}\nabla_{\mathbf x}^2.
+\]
+Por tanto, la ecuación escalar es
+\begin{equation}
+\ddot\phi+3H\dot\phi-\frac{1}{a^2}\nabla^2\phi=0,
+\label{eq:c10-frw-wave}
+\end{equation}
+donde \(\nabla\) deriva con respecto a las etiquetas comóviles. Si, en cambio, se elige un factor de escala adimensional, las coordenadas comóviles tienen dimensiones de longitud; la física no cambia.
+
+\begin{classroomqa}
+\audiencequestion{¿Debería ser positivo el término espacial de la ecuación~\eqref{eq:c10-frw-wave}?}
+\lecturerresponse{No. El operador de ondas en el espacio plano ya tiene el signo relativo \(\partial_t^2-\nabla^2\). La expansión modifica la derivada espacial por el factor \(a^{-2}\), pero no invierte su signo. Tras sustituir una serie de Fourier, los dos signos menos se combinan y la ecuación del modo adquiere el término restaurador positivo esperado \(+k^2\phi_k/a^2\). \lecturetimestamp{01:22:18--01:23:06}}
+\end{classroomqa}
+
+\section{Cada modo de Fourier es un oscilador amortiguado}
+
+Estudiemos una onda espacial cada vez:
+\begin{equation}
+\phi(\mathbf x,t)
+=\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-mode-ansatz}
+\end{equation}
+La exponencial compleja sirve para representar senos y cosenos. Un perfil real arbitrario se construye superponiendo modos con la relación de realidad adecuada entre \(\mathbf k\) y \(-\mathbf k\).
+
+Las derivadas temporales actúan solo sobre \(\phi_{\mathbf k}(t)\), mientras que
+\[
+\nabla^2e^{i\mathbf k\cdot\mathbf x}
+=-k^2e^{i\mathbf k\cdot\mathbf x}.
+\]
+Al sustituir en la ecuación~\eqref{eq:c10-frw-wave} se obtiene
+\begin{equation}
+\ddot\phi_{\mathbf k}
++3H\dot\phi_{\mathbf k}
++\frac{k^2}{a^2}\phi_{\mathbf k}=0.
+\label{eq:c10-mode-equation}
+\end{equation}
+Así, cada número de onda se comporta como un oscilador amortiguado con
+\begin{equation}
+\gamma=3H,
+\qquad
+\omega_k(t)=\frac{k}{a(t)}.
+\label{eq:c10-mode-identification}
+\end{equation}
+El número de onda físico \(k/a\) disminuye con la expansión del universo. En consecuencia, la fuerza restauradora efectiva \(k^2/a^2\) tiende a cero.
+
+Un modo que empieza con una longitud de onda física corta tiene \(\omega_k\gg H\) y oscila. Su longitud de onda se estira, su frecuencia disminuye y, finalmente, el amortiguamiento de Hubble pasa a dominar. Entonces se aproxima a un valor no oscilatorio en lugar de ser atraído de vuelta a cero. Los distintos modos \(\mathbf k\) realizan la transición en momentos distintos: a un valor mayor de \(k\), que a \(a\) fijo corresponde a una longitud de onda más corta, le hace falta más expansión para que su frecuencia física disminuya hasta la escala de Hubble.
+
+\section{Salida del horizonte y fluctuaciones de vacío congeladas}
+
+Si se usa la condición crítica del oscilador como estimación de orden unidad,
+\[
+\gamma=2\omega_k,
+\]
+la ecuación~\eqref{eq:c10-mode-identification} da
+\begin{equation}
+3H=\frac{2k}{a},
+\qquad
+a_{\rm cross}=\frac{2k}{3H}.
+\label{eq:c10-critical-mode}
+\end{equation}
+Los factores numéricos no son lo esencial desde el punto de vista conceptual. La transición ocurre cuando el número de onda físico \(k/a\) es del orden de \(H\).
+
+Sea
+\[
+\lambda_{\rm com}=\frac{2\pi}{k},
+\qquad
+\lambda_{\rm phys}=a\lambda_{\rm com}
+=\frac{2\pi a}{k}.
+\]
+Una comprobación dimensional fija la posición de \(a\): si \(\mathbf x\) es adimensional, tanto \(k\) como \(\mathbf k\cdot\mathbf x\) son adimensionales, mientras que \(a\) y \(\lambda_{\rm phys}\) tienen dimensiones de longitud. Por tanto, la ecuación~\eqref{eq:c10-critical-mode} implica
+\begin{equation}
+\lambda_{\rm phys}\sim H^{-1},
+\label{eq:c10-horizon-crossing}
+\end{equation}
+salvo factores como \(2\), \(3\) y \(2\pi\).
+
+La ley de Hubble \(v=Hd\) asocia la distancia \(H^{-1}\) con una velocidad de recesión del orden de \(c=1\). Durante la inflación, \(H\) es grande y casi constante, de modo que esta longitud de Hubble es microscópica aunque desempeñe el papel de escala causal. El nombre \emph{salida del horizonte} para este suceso es convencional: ningún objeto material atraviesa una pared física. La longitud de onda física del modo crece más allá de la escala de Hubble, aproximadamente fija, y su dinámica pasa de una oscilación rápida a una amplitud casi congelada.
+
+\begin{figure}[htbp]\centering
+\begin{coursefitfigure}\begin{tikzpicture}[x=1cm,y=0.85cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {cosmic time};
+  \draw[->] (0,0) -- (0,5.0) node[above] {physical length};
+  \draw[dashed,thick] (0.25,2.75) -- (8.75,2.75)
+    node[right] {\(H^{-1}\)};
+  \draw[very thick,blue!55!black]
+    (0.35,0.55) .. controls (3.3,0.75) and (5.3,1.55) .. (8.5,4.55);
+  \node[blue!55!black,anchor=west] at (6.65,4.55) {\(\lambda_{\rm phys}=2\pi a/k\)};
+  \draw[densely dotted] (6.05,0) -- (6.05,2.75);
+  \fill (6.05,2.75) circle (2pt);
+  \node[anchor=north] at (6.05,0) {horizon exit};
+  \node[align=center] at (2.6,1.7) {oscillating\\sub-Hubble mode};
+\end{tikzpicture}\end{coursefitfigure}\caption{Durante una expansión casi exponencial, la longitud de onda física crece mientras la longitud de Hubble permanece aproximadamente fija. Su cruce marca la transición de un modo que oscila rápidamente a uno congelado, salvo por factores de orden unidad.}\label{fig:c10-horizon-reconstruction}\end{figure}
+
+Las fluctuaciones del vacío impiden que la inflación simplemente borre todas las ondas. Cada modo de longitud de onda corta comienza con movimiento de punto cero. La expansión estira un modo hasta la escala de Hubble y lo congela, mientras los modos de vacío aún más cortos siguen oscilando. A su vez, estos se estiran y se congelan. La repetición forma un perfil de campo que contiene contribuciones congeladas en un amplio intervalo de longitudes de onda y orientaciones. El resultado es estocástico, pero no carece de estructura: sus estadísticas se derivan del estado cuántico y del fondo inflacionario.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_04.png}\caption{Superposición, a lo ancho de la pizarra, de ondas de campo largas y cortas, con un pequeño esquema de amortiguamiento junto a las etiquetas \(\gamma\) y \(3H\). La imagen documenta el esquema cualitativo de los modos; no se utiliza para deducir una función exacta.}\label{fig:c10-mode-board}\lectureframe{01:45:28.476}\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Se congelan los modos en un punto o a una longitud de onda? ¿Está \(H\) mismo creciendo exponencialmente?}
+\lecturerresponse{Se congelan cuando una longitud de onda alcanza la escala de Hubble. En la meseta casi plana, \(V\) y, por tanto, \(H\) son aproximadamente constantes; lo que crece exponencialmente es el factor de escala \(a(t)\) y, con él, la longitud de onda física \(a/k\). Cada modo comóvil alcanza la condición \(k/a\sim H\) en su propio momento. \lecturetimestamp{01:45:06--01:45:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Son ondas electromagnéticas?}
+\lecturerresponse{No. Son fluctuaciones del campo escalar del inflatón. Las fluctuaciones electromagnéticas del vacío proporcionan una analogía familiar, pero la variable de la ecuación~\eqref{eq:c10-mode-equation} es \(\phi\). \lecturetimestamp{01:45:39--01:46:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Existe un continuo de longitudes de onda?}
+\lecturerresponse{Sí, en la idealización de un espacio infinito. El campo se representa mediante una integral de Fourier,
+\begin{equation}
+\phi(\mathbf x,t)
+=\int\frac{d^3k}{(2\pi)^3}\,
+\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-fourier-integral}
+\end{equation}
+Todos los números de onda experimentan el mismo mecanismo de corrimiento al rojo y congelación. \lecturetimestamp{01:46:04--01:46:34}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Tendría un universo finito solo modos discretos?}
+\lecturerresponse{Sí. Las condiciones de contorno en un volumen espacial finito cuantizan los números de onda permitidos. Si el volumen es mucho mayor que las escalas consideradas, la separación puede ser tan pequeña que la suma quede bien aproximada por la integral de la ecuación~\eqref{eq:c10-fourier-integral}. La descripción continua es una idealización, no un mecanismo local diferente. \lecturetimestamp{01:46:34--01:47:01}}
+\end{classroomqa}
+
+Ahora coexisten dos movimientos. El campo promediado espacialmente \(\bar\phi(t)\) rueda lentamente y de forma clásica por el potencial. Sobre él se superpone una pequeña fluctuación cuántica,
+\[
+\phi(\mathbf x,t)=\bar\phi(t)+\delta\phi(\mathbf x,t),
+\]
+formada por los modos congelados. La energía de la propia fluctuación es demasiado pequeña para dar cuenta del contraste de materia observado. Su importancia reside en que perturba el momento en que termina la inflación.
+
+Un cálculo cuántico completo de un solo campo precisa este argumento del oscilador. Un escalar ligero adquiere una fluctuación típica por intervalo logarítmico del número de onda del orden de
+\begin{equation}
+\delta\phi_{\rm exit}\sim\frac{H}{2\pi}.
+\label{eq:c10-field-amplitude}
+\end{equation}
+Para derivar la normalización hay que cuantizar los modos del campo en el fondo inflacionario. El cuadro del oscilador ya ha proporcionado el mecanismo esencial: existen fluctuaciones del vacío incluso en el estado fundamental, y la expansión las convierte en un patrón congelado de aspecto clásico.
+
+\section{El precipicio convierte el ruido del campo en ruido de densidad}
+
+Primero suprimamos \(\delta\phi\). En cualquier instante fijo, el campo tiene entonces un único valor en todas partes, representado en la pizarra por una línea vertical cuando el espacio \(x\) se representa hacia arriba y el valor del campo \(\phi\), horizontalmente. A medida que avanza el tiempo, la línea se desplaza hacia el acantilado. Todo el universo llega a la vez al borde: la energía potencial del inflatón se convierte en partículas, radiación y calor; la expansión exponencial termina y la densidad de energía resultante empieza a diluirse con la expansión ordinaria.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_05.png}
+\caption{Diagrama de la pizarra del espacio frente al campo. El eje vertical representa \(x\), la dirección horizontal representa \(\phi\), los perfiles casi verticales tenues indican configuraciones sucesivas del campo y el límite rayado de la derecha es el acantilado donde termina la inflación.}
+\label{fig:c10-cliff-board}
+\lectureframe{01:50:54.502}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.82cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {\(\phi\)};
+  \draw[->] (0,0) -- (0,5.2) node[above] {space \(x\)};
+  \draw[thick,gray!60] (8.2,0.15) rectangle (8.55,4.85);
+  \foreach \y in {0.35,0.85,...,4.55} {
+    \draw[gray!60] (8.2,\y) -- (8.55,{\y+0.25});
+  }
+  \node[anchor=south,rotate=90] at (8.38,2.5) {cliff};
+  \draw[thick,densely dashed,gray!70] (3.2,0.2) -- (3.2,4.75);
+  \draw[thick,blue!45!black,smooth]
+    plot coordinates {(5.0,0.2) (5.12,0.75) (4.9,1.25) (5.18,1.8) (4.94,2.35) (5.2,2.9) (4.88,3.45) (5.12,4.05) (5.0,4.75)};
+  \draw[very thick,red!65!black,smooth]
+    plot coordinates {(7.15,0.2) (7.32,0.7) (7.0,1.2) (7.42,1.75) (7.1,2.3) (7.5,2.85) (7.02,3.35) (7.35,4.0) (7.16,4.75)};
+  \draw[->,thick] (3.55,2.5) -- (4.55,2.5);
+  \draw[->,thick] (5.55,2.5) -- (6.65,2.5);
+  \node[align=center,anchor=south,font=\small] at (3.2,4.8) {uniform\\profile};
+  \node[align=center,anchor=south,font=\small] at (5.0,4.8) {frozen\\ripple};
+  \node[align=center,anchor=south,font=\small] at (7.2,4.8) {near\\reheating};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Reconstrucción limpia del diagrama del espacio frente al campo. El campo medio se desplaza hacia el acantilado mientras persiste una ondulación espacial congelada, de modo que distintas posiciones llegan al final de la inflación en momentos ligeramente diferentes.}
+\label{fig:c10-cliff-reconstruction}
+\end{figure}
+
+Restablezcamos la variación congelada. Ahora la línea es ligeramente ondulada: lugares vecinos tienen valores de \(\phi\) ligeramente distintos. Imaginemos una fila de personas que intenta marchar hombro con hombro hacia un acantilado. Algunas van un poco adelantadas y otras, un poco rezagadas. Las que van delante caen primero.
+
+Ese desfase temporal es la verdadera fuente del contraste de densidad. Una región que cae primero se recalienta primero. Su energía potencial se transforma en partículas y calor, y esa energía tiene entonces tiempo para diluirse mientras el universo se expande en la era posterior a la inflación. Una región cercana que cae un poco más tarde se recalienta más tarde; por eso, al comparar ambas, la región tardía es más densa, simplemente porque ha tenido menos tiempo para diluirse. Así, el primer conjunto de cruces deja bolsas relativamente densas. Mientras esas bolsas se expanden, las ondulaciones de longitud de onda más corta hacen que otro conjunto de posiciones cruce el borde y forme bolsas más pequeñas dentro del patrón mayor. La repetición de este proceso a lo largo de toda la jerarquía de modos congelados produce estructura dentro de estructura. Por tanto, la pequeña fluctuación del campo no importa por su propia energía, sino porque desplaza el instante local en que se produce el recalentamiento.
+
+La relación temporal puede expresarse esquemáticamente. Si el campo homogéneo alcanza el valor final \(\phi_{\rm end}\) con velocidad \(\dot{\bar\phi}\), un pequeño desplazamiento del campo cambia el tiempo final local en
+\begin{equation}
+\delta t_{\rm end}
+\simeq-\frac{\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-time-delay}
+\end{equation}
+Una evolución más lenta hace que el mismo \(\delta\phi\) corresponda a un retraso mayor. Durante ese tiempo adicional, la región que cruzó antes se expande y se diluye más. Hasta factores de transferencia de orden unidad, la perturbación de curvatura o de densidad queda, por tanto, determinada por
+\begin{equation}
+\mathcal R
+\sim H\,\delta t_{\rm end}
+\sim-\frac{H\,\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-curvature-estimate}
+\end{equation}
+Al combinar esto con la ecuación~\eqref{eq:c10-field-amplitude} se obtiene la escala habitual de evolución lenta
+\begin{equation}
+\mathcal P_{\mathcal R}^{1/2}
+\sim\frac{H^2}{2\pi|\dot{\bar\phi}|},
+\label{eq:c10-slow-roll-amplitude}
+\end{equation}
+; una descripción precisa de las convenciones y de la transferencia posterior a \(\delta\rho/\rho\) requiere un cálculo más completo de las perturbaciones. Cuanto más lentamente evoluciona el campo, más tiempo transcurre entre cruces vecinos del acantilado y mayor es la dilución durante ese intervalo. Por tanto, la misma fluctuación del campo deja una huella de densidad mayor cuando \(\lvert\dot{\bar\phi}\rvert\) es menor.
+
+Muchos modos cruzan la escala de Hubble en momentos distintos, de modo que muchas regiones de tamaños diferentes se recalientan en momentos ligeramente distintos. El campo de densidad resultante contiene bolsas sobredensas e infradensas anidadas a distintas escalas. Sus estadísticas dependen de la altura, la pendiente y la curvatura del potencial inflacionario. Los modelos de evolución lenta adecuados producen de manera natural una amplitud casi invariante de escala, cercana a
+\[
+\frac{\delta\rho}{\rho}\sim10^{-5},
+\]
+y los espectros detallados del CMB permiten contrastar un pequeño número de parámetros cosmológicos con muchas escalas angulares.
+
+\section{De las semillas primordiales de vuelta al cielo}
+
+Ahora podemos volver al observador situado en el centro de un conjunto de capas de luz pasada. La esfera de última dispersión atraviesa el campo de densidad primordial tridimensional. Las direcciones en que esa esfera intersecta potenciales gravitatorios distintos presentan temperaturas de microondas ligeramente diferentes. WMAP muestra el patrón bidimensional de esa esfera. El mapa no es una fotografía del instante inicial ni una proyección de todas las estructuras dentro de la esfera; representa la distribución de temperaturas en la capa concreta desde la que los fotones de microondas se dispersaron por última vez.
+
+Dentro de la capa, las mismas perturbaciones primordiales continúan evolucionando. La gravedad amplifica las sobredensidades, los flujos similares a cáusticas afilan láminas y filamentos, el gas se acumula y se forman galaxias. Así, el patrón del CMB y la red cósmica posterior son dos etapas de una misma historia: las fluctuaciones inflacionarias congeladas aparecen primero como diminutas semillas de densidad y más tarde se convierten en estructuras visibles.
+
+\begin{classroomqa}
+\audiencequestion{¿A qué época corresponde el fondo de microondas que vemos hoy?}
+\lecturerresponse{Los fotones han viajado durante aproximadamente \(13\) mil millones de años, pero fueron emitidos unos cientos de miles de años después del Big Bang caliente, cuando los electrones y los protones se combinaron para formar hidrógeno neutro y el universo se volvió transparente. La inflación terminó muchísimo antes. El recalentamiento creó la materia caliente y la radiación; después, el universo se expandió y enfrió hasta la última dispersión. Para este argumento, la afirmación sólida es el orden de magnitud---unos cientos de miles de años---y no una fecha precisa de recombinación. \lecturetimestamp{02:00:38--02:02:19}}
+\end{classroomqa}
+
+\section{Un solo cielo y la varianza cósmica}
+
+\begin{classroomqa}
+\audiencequestion{¿Predice la inflación la dirección preferente o la asimetría norte--sur observada en WMAP?}
+\lecturerresponse{La imagen inflacionaria sencilla que hemos desarrollado aquí no implica una dirección preferente de ese tipo. El estado de las anomalías observadas a grandes ángulos era incierto, las emisiones de primer plano y las fluctuaciones estadísticas seguían siendo motivos de preocupación, y una valoración responsable requería consultar la bibliografía especializada en vez de ofrecer un resumen sensacionalista. La inflación predice propiedades estadísticas de un conjunto; determinar si un rasgo inusual del cielo apunta a nueva física es más difícil. \lecturetimestamp{02:02:19--02:03:26}}
+\end{classroomqa}
+
+Los rasgos de pequeña escala angular aparecen muchas veces en el cielo. Proporcionan numerosas muestras, por lo que su distribución e isotropía pueden someterse a pruebas estadísticas. Un rasgo de tamaño cuadrupolar es distinto: en la esfera observable caben solo unos pocos modos independientes de gran ángulo. Por ello, la potencia medida puede diferir sustancialmente de la media del conjunto incluso cuando la teoría subyacente es correcta. Esta incertidumbre irreducible de muestreo se llama \emph{varianza cósmica}.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué ocurre con la aparente alineación de varios multipolos bajos?}
+\lecturerresponse{Podría ser una pista, un artefacto de primer plano o de análisis, o una realización improbable pero permitida. La dificultad es que no podemos extraer otro universo observable del mismo conjunto estadístico. Que salgan cuatro caras en seis lanzamientos no implica que la moneda esté sesgada; se decidiría con tandas repetidas, pero la cosmología solo proporciona una tanda en las escalas mayores. La anomalía merece estudio, quizá, pero un solo cielo no puede aportar por sí mismo los ensayos repetidos necesarios para una prueba concluyente de significación. \lecturetimestamp{02:05:31--02:07:36}}
+\end{classroomqa}
+
+\section{Del movimiento cuántico a la estructura cósmica}
+
+Tres constantes universales definen las escalas de Planck y ponen de manifiesto cuán lejos queda la física de partículas conocida de la gravedad cuántica. El cielo de microondas proporciona un objetivo cosmológico preciso: isotropía aproximada, una amplitud de fluctuación del orden de \(10^{-5}\) y estructura distribuida en muchas escalas. La mecánica cuántica garantiza que cada modo del campo tiene fluctuaciones de punto cero. La inflación estira cada modo del inflatón hasta que su longitud de onda física es del orden de \(H^{-1}\); entonces, el amortiguamiento de Hubble suprime sus oscilaciones y deja una amplitud efectivamente congelada.
+
+El inflatón homogéneo continúa evolucionando bajo ese ruido congelado. Cuando el campo alcanza el final de su meseta, las regiones vecinas no se recalientan exactamente al mismo tiempo. Las regiones que lo hacen antes se diluyen durante más tiempo; las que lo hacen después permanecen más densas. Así se transforma \(\delta\phi\) en un patrón primordial de densidad y curvatura. La gravedad amplifica después ese patrón hasta formar galaxias y la red cósmica, mientras que la capa de última dispersión conserva su estado anterior en el cielo de microondas. El movimiento microscópico de punto cero, la expansión cósmica y el recalentamiento escalonado no son, por tanto, historias separadas. En conjunto explican cómo un universo inflacionario puede ser extraordinariamente uniforme y, a la vez, tener suficiente estructura para que existamos.

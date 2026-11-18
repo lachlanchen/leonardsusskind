@@ -1,0 +1,537 @@
+\chapter{Bariogénesis, homogeneidad cósmica y fricción de Hubble}
+
+\lectureoverview{Dos números adimensionales pequeños organizan la sesión de esta tarde. El primero es el exceso de materia--antimateria que sobrevivió, redondeado en el curso a una parte en \(10^8\). Su explicación dinámica requiere violación del número bariónico, asimetría entre partículas--antipartículas y alejamiento del equilibrio térmico: las tres condiciones de Sakharov. El segundo es el contraste primordial de densidad, del orden de \(10^{-5}\) en el desacoplamiento. La gravedad amplifica esas ondulaciones en vez de borrarlas, de modo que su pequeñez motiva la inflación. A continuación, preparamos la mecánica de la inflación derivando la ecuación de movimiento de un campo escalar homogéneo en un universo en expansión e identificando \(3H\dot\phi\) como fricción de Hubble.}
+
+\section{La pregunta sobre la entropía, al revés}
+
+Esta noche comenzaremos con la inflación, pero antes debemos terminar con la bariogénesis: la creación del exceso de materia sobre antimateria. El marco conceptual es más sólido que cualquier modelo numérico detallado. Por eso, el tema puede resumirse de manera concisa, aunque su número central no se haya derivado a partir de primeros principios.
+
+La vía histórica para abordar el problema comenzó en 1980, cuando Bob Wagoner preguntó a Savas Dimopoulos y Leonard Susskind por qué la entropía del universo es tan grande. En términos cosmológicos, la pregunta era por qué hay tantos fotones por cada protón que ha sobrevivido.
+
+A temperaturas muy altas, los fotones, los quarks, los antiquarks, los electrones y los positrones eran abundantes y estaban cerca del equilibrio térmico. Las densidades numéricas de quarks y antiquarks eran, cada una, del mismo orden general que la densidad de fotones. Esa observación ya sugiere invertir la pregunta: ¿por qué la aniquilación dejó materia sin pareja?
+
+La prioridad del argumento estructural corresponde a Andrei Sakharov. Dimopoulos y Susskind llegaron de manera independiente a condiciones muy similares en 1980, y luego encontraron el artículo de Sakharov de 1967 mientras preparaban una contribución histórica. Hoy, con razón, las condiciones llevan el nombre de Sakharov.
+
+Ahora podemos hacer explícita la relación con la entropía. Para la radiación de cuerpo negro, la entropía es proporcional al número de fotones, salvo un factor fijo de orden unidad. En efecto,
+\begin{equation}
+s_\gamma=\frac{4\rho_\gamma}{3T},
+\qquad
+n_\gamma\propto T^3,
+\end{equation}
+de modo que un gas térmico de fotones comóvil tiene \(S_\gamma\propto N_\gamma\). Las constantes numéricas no son lo esencial; el enigma es la enorme razón entre el número de fotones y el de protones.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué relación hay entre la abundancia de fotones y la entropía?}
+\lecturerresponse{La radiación de cuerpo negro es térmica y su entropía es proporcional al número medio de fotones. En este contexto, preguntar por qué la entropía cósmica es grande equivale, en esencia, a preguntar por qué la radiación cósmica de fondo contiene tantos fotones por protón. La proporcionalidad incluye constantes numéricas, pero estas no son relevantes para el enigma de orden de magnitud. \lecturetimestamp{00:04:49--00:05:55}}
+\end{classroomqa}
+
+A medida que el universo se enfriaba, las partículas y las antipartículas se aniquilaban, mientras la radiación permanecía y, con el tiempo, se desacopló. Por tanto, lo sorprendente no es que sobrevivieran los fotones, sino que la aniquilación dejara una pequeña población de materia sin pareja.
+
+Por tanto, el número adimensional útil es
+\begin{equation}
+\eta_B
+\equiv
+\frac{N_B-N_{\bar B}}{N_\gamma}
+\sim
+\frac{N_p-N_{\bar p}}{N_p+N_{\bar p}}
+\sim 10^{-8},
+\label{eq:c08-baryon-asymmetry}
+\end{equation}
+donde el último valor es el orden redondeado que se usa en el curso, no una determinación de precisión. Cuando aparece un número extraño, ``simplemente empezó así'' deja de ser una respuesta satisfactoria. Un mecanismo cuantitativo debería explicar por qué el resultado es pequeño y por qué tiene un signo definido.
+
+Llamar \emph{materia} a un miembro de la pareja y \emph{antimateria} al otro es, en parte, convencional: la materia es el miembro del que estamos hechos. La afirmación física se limita a que un signo domina en toda la región observable.
+
+\section{El número bariónico y la primera condición}
+
+El número bariónico se normaliza de modo que un protón o un neutrón tenga \(B=1\). En términos de quarks,
+\begin{equation}
+B=\frac{N_q-N_{\bar q}}{3}.
+\label{eq:c08-baryon-number}
+\end{equation}
+El factor \(1/3\) es esencial porque cada barión ordinario contiene tres quarks de valencia. Otros hadrones pueden tener número bariónico, pero los inestables acaban desintegrándose; el exceso neto de quarks es el instrumento contable más general.
+
+\begin{classroomqa}
+\classquestion{¿Hay que multiplicar o dividir entre tres el número neto de quarks?}
+\lecturerresponse{Hay que dividirlo entre tres. Un protón tiene tres quarks y número bariónico uno, así que \(3B=N_q-N_{\bar q}\). La corrección en la pizarra forma parte de la definición; no cambia el argumento físico. \lecturetimestamp{00:09:23--00:10:17}}
+\end{classroomqa}
+
+El número bariónico se parece a la carga eléctrica solo en cuanto posible cantidad conservada. La carga eléctrica también es fuente de un campo de Coulomb de largo alcance; el número bariónico, no. Un protón crea un campo eléctrico porque tiene carga eléctrica, mientras que un neutrón tiene número bariónico, pero carga eléctrica neta nula. Por tanto, la conservación y la generación de fuerzas son propiedades lógicamente independientes.
+
+\begin{classroomqa}
+\audiencequestion{¿Cuál es la diferencia pertinente entre el número bariónico y la carga eléctrica?}
+\lecturerresponse{Ambos pueden servir como cargas contables, pero solo se sabe que la carga eléctrica es fuente del campo electromagnético de largo alcance. El número bariónico no produce una fuerza de Coulomb correspondiente. \lecturetimestamp{00:11:03--00:12:15}}
+\end{classroomqa}
+
+Si \(B\) se conservara exactamente, un exceso inicial permanecería congelado para siempre. La creación y la aniquilación de pares podrían cambiar \(N_B\) y \(N_{\bar B}\) por separado, pero solo en cantidades iguales, por lo que su diferencia no cambiaría. Así pues, una teoría dinámica que parta de un estado equilibrado no puede funcionar a menos que el número bariónico pueda cambiar.
+
+El ejemplo esquemático más sencillo es la desintegración del protón. La carga eléctrica y la energía permiten considerar
+\begin{equation}
+p\longrightarrow e^+ +\gamma,
+\qquad
+\bar p\longrightarrow e^-+\gamma.
+\label{eq:c08-decay-pair}
+\end{equation}
+Estos canales son modelos contables de violación bariónica, no predicciones del canal experimental dominante. Hacen que \(B=+1\) o \(-1\) pase a cero, conservando la carga eléctrica.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[->,thick] (0,1.7)--(2.0,1.7);
+\draw[->,thick] (2.0,1.7)--(4.1,2.55);
+\draw[->,thick] (2.0,1.7)--(4.1,0.85);
+\node[above] at (0.9,1.7) {\(p,\ B=1\)};
+\node[right] at (4.1,2.55) {\(\gamma\)};
+\node[right] at (4.1,0.85) {\(e^+\)};
+\draw[->,thick] (6.0,1.7)--(8.0,1.7);
+\draw[->,thick] (8.0,1.7)--(10.1,2.55);
+\draw[->,thick] (8.0,1.7)--(10.1,0.85);
+\node[above] at (6.9,1.7) {\(\bar p,\ B=-1\)};
+\node[right] at (10.1,2.55) {\(\gamma\)};
+\node[right] at (10.1,0.85) {\(e^-\)};
+\node at (2.0,0.25) {\(B:1\to0\)};
+\node at (8.0,0.25) {\(B:-1\to0\)};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Canales esquemáticos conjugados por carga. Ambos procesos violan el número bariónico, pero las mismas tasas no crearían preferencia por ningún signo.}
+\label{fig:c08-decay-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Podría el protón desintegrarse, en cambio, en un positrón y un neutrino?}
+\lecturerresponse{Ese estado final de dos fermiones no tiene la misma paridad fermiónica que el estado inicial de un fermión. El estado final esquemático \(e^++\gamma\) contiene un fermión y basta para el argumento de simetría. Una teoría realista de la desintegración del protón puede incluir otras partículas y canales, pero aquí solo se pretende mostrar \(\Delta B\ne0\). \lecturetimestamp{00:14:39--00:15:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La conservación exacta del número bariónico correspondería a una simetría?}
+\lecturerresponse{Sí. Una cantidad conservada puede estar asociada a una simetría continua de fase, aunque limitarse a nombrar esa simetría no demuestra por separado que la naturaleza la respete. La prueba operativa sigue siendo si ocurren procesos que cambian el número bariónico, así que el argumento se vuelve circular si la simetría se infiere únicamente de la ley de conservación. \lecturetimestamp{00:15:08--00:15:46}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Puede considerarse la aniquilación de un protón--antiprotón como una desintegración del protón?}
+\lecturerresponse{La terminología es secundaria; la ley de conservación, no. En \(p+\bar p\to\text{photons}\), el número bariónico inicial es \(1-1=0\), y el número bariónico final también es cero. La aniquilación elimina dos partículas sin cambiar el valor neto de \(B\), mientras que el canal de una partícula de la ecuación~\eqref{eq:c08-decay-pair} cambia \(B\). \lecturetimestamp{00:15:48--00:16:47}}
+\end{classroomqa}
+
+Los protones actuales son extraordinariamente estables: la clase cita límites del orden de \(10^{32}\)--\(10^{34}\) años, muchísimo mayores que la edad del universo. Esta observación no demuestra que la conservación sea exacta; solo nos dice que los procesos que cambian el número bariónico son sumamente lentos a las energías actuales.
+
+\section{Simetrías discretas y necesidad de un sesgo}
+
+La siguiente pregunta es si las leyes distinguen la materia de la antimateria. Tres transformaciones discretas organizan la respuesta:
+\begin{align}
+C&:\ \text{particle}\longleftrightarrow\text{antiparticle},\\
+P&:\ \mathbf x\longmapsto-\mathbf x,\\
+T&:\ t\longmapsto-t.
+\end{align}
+Aquí \(P\) invierte la quiralidad espacial y \(T\) invierte una película microscópica. La segunda ley macroscópica no tiene por qué parecer invariante bajo inversión temporal; la pregunta se refiere a la dinámica microscópica subyacente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}
+\caption{La definición corregida \(B=(N_q-N_{\bar q})/3\) que aparece en la pizarra da paso a la introducción de \(C\), la conjugación de carga. Lo que quedó escrito sin terminar después de la palabra carga no se usa como evidencia independiente.}
+\label{fig:c08-charge-board}
+\lectureframe{00:20:23.280}
+\end{figure}
+
+La teoría cuántica de campos local y relativista no exige que \(C\), \(P\) o \(T\) sean simetrías por separado. Bajo sus hipótesis estándar, sí exige la transformación combinada \(CPT\). Si un proceso es posible, sustituir cada partícula por su antipartícula, reflejar la configuración espacial e invertir el movimiento da lugar a otro proceso permitido.
+
+La inversión temporal en mecánica cuántica es más sutil que limitarse a cambiar el signo de \(t\). Para una función de onda sin espín en un potencial invariante bajo inversión temporal,
+\begin{equation}
+i\hbar\frac{\partial\psi}{\partial t}=H\psi,
+\qquad
+T:\ \psi(\mathbf x,t)\longmapsto\psi^*(\mathbf x,-t).
+\end{equation}
+Cambiar \(t\to-t\) invierte la derivada temporal; la conjugación compleja también transforma \(i\to-i\), con lo que se restablece la ecuación. Para las partículas con espín, el operador antiunitario de inversión temporal tiene una estructura adicional, pero la conjugación compleja ya se aprecia en este caso elemental.
+
+\begin{classroomqa}
+\audiencequestion{Para una función de onda, ¿la inversión temporal requiere conjugación compleja además de \(t\to-t\)?}
+\lecturerresponse{Sí. La ecuación de Schrödinger muestra por qué: invertir solo la derivada temporal cambia de manera incoherente uno de los lados, mientras que la conjugación compleja también invierte el signo de \(i\). \lecturetimestamp{00:23:58--00:25:04}}
+\end{classroomqa}
+
+Ahora podemos enunciar la primera condición de Sakharov. Si el universo comenzó con igual número de partículas y antipartículas, la creación y la aniquilación de pares conservarían un número bariónico neto nulo, salvo que algún proceso pudiera cambiar \(B\):
+\begin{equation}
+\boxed{\text{baryon-number violation}.}
+\end{equation}
+Sin ella, un estado inicial simétrico nunca podría adquirir un exceso bariónico distinto de cero.
+
+La estabilidad actual del protón es compatible con esta condición. En el razonamiento de las teorías de gran unificación, la violación bariónica puede estar mediada por una partícula muy pesada, de masa \(M_X\). A energías muy inferiores a \(M_X\), la amplitud efectiva queda suprimida, esquemáticamente, por potencias inversas:
+\begin{equation}
+\begin{aligned}
+\mathcal A_{\Delta B\ne0}&\propto \frac{E^2}{M_X^2},\\
+\Gamma_p&\sim \frac{m_p^5}{M_X^4}.
+\end{aligned}
+\label{eq:c08-heavy-suppression}
+\end{equation}
+La estimación de la tasa de desintegración sigue el escalamiento habitual de dimensión seis, salvo por los acoplamientos y los factores que dependen del canal. Un valor muy grande de \(M_X\) puede hacer que un protón frío sea prácticamente permanente y, a la vez, permitir reacciones que cambian el número bariónico en un plasma primordial suficientemente energético.
+
+\begin{classroomqa}
+\audiencequestion{¿La energía adicional de la colisión ya está incluida en la masa pesada \(M_X\)?}
+\lecturerresponse{No. \(M_X\) es la escala de masa en reposo del mediador; \(E\) es la energía disponible en la colisión. La expansión de baja energía en \(E/M_X\) está fuertemente suprimida cuando \(E\ll M_X\), mientras que la supresión disminuye a medida que la escala térmica de las colisiones se acerca al umbral de la partícula pesada. El denominador literal escrito de manera heurística en la pizarra debe entenderse en este sentido de la teoría efectiva de campos. \lecturetimestamp{00:32:32--00:34:02}}
+\end{classroomqa}
+
+Supongamos que el estado inicial contuviera igual número de partículas y antipartículas. La violación bariónica por sí sola seguiría sin favorecer ningún signo. Cada desintegración \(p\to e^++\gamma\) tendría un proceso conjugado por carga, \(\bar p\to e^-+\gamma\), y el plasma caliente también impulsaría las reacciones inversas. Probabilidades microscópicas iguales producirían transiciones que cambiarían el número bariónico, pero ninguna tendencia neta.
+
+\begin{classroomqa}
+\audiencequestion{¿Cuál es el cambio del número bariónico en el diagrama del antiprotón?}
+\lecturerresponse{El antiprotón entrante tiene \(B=-1\), mientras que el electrón y el fotón tienen \(B=0\), así que el canal cambia el número bariónico de \(-1\) a cero. Su conjugado lo cambia de \(+1\) a cero. Si ambos canales ocurren con la misma frecuencia, ninguno resulta favorecido. \lecturetimestamp{00:37:24--00:37:39}}
+\end{classroomqa}
+
+Las fluctuaciones aleatorias son demasiado pequeñas para explicar el exceso observado. Si \(N\) sucesos independientes tienen la misma probabilidad de dar dos resultados, entonces
+\begin{equation}
+\Delta N\sim\sqrt N,
+\qquad
+\frac{\Delta N}{N}\sim N^{-1/2}.
+\end{equation}
+Al usar la estimación aproximada del curso, \(N\sim10^{80}\) bariones en el universo observable, se obtiene
+\begin{equation}
+\frac{\Delta N}{N}\sim10^{-40},
+\end{equation}
+cuarenta órdenes de magnitud por debajo de \(10^{-8}\). Además, una fluctuación de lanzamientos de moneda tampoco explica por qué el mismo signo debería dominar en todas las regiones observadas.
+
+\begin{classroomqa}
+\audiencequestion{¿Podría una población inicial mucho mayor, quizá \(10^{160}\) pares en la región comóvil que llegó a ser nuestro universo observable, fluctuar en \(10^{80}\)?}
+\lecturerresponse{La aritmética de la raíz cuadrada permite imaginar esa cantidad, pero no explica la coherencia espacial observada. Una fluctuación estadística sin restricciones produciría de manera natural regiones dominadas por materia y otras dominadas por antimateria, no un único signo en todo el universo visible. \lecturetimestamp{00:39:38--00:40:18}}
+\end{classroomqa}
+
+El argumento observacional de la época del curso se apoya en dos tipos de evidencia. En los rayos cósmicos hay núcleos ordinarios, incluido el helio, mientras que en los datos analizados no se observaron antinúcleos. Los antiprotones por sí solos son menos concluyentes, porque las colisiones de alta energía pueden producir antiprotones secundarios. Además, las fronteras entre galaxias de materia y galaxias de antimateria generarían una radiación de aniquilación muy llamativa. La ausencia de la señal de frontera necesaria desfavorece claramente que haya una mezcla de galaxias y antiggalaxias en la región observable. Estos son argumentos observacionales en el contexto histórico del curso, no afirmaciones sobre regiones más allá de nuestro horizonte.
+
+\begin{classroomqa}
+\audiencequestion{¿Se miden directamente núcleos de helio en los rayos cósmicos?}
+\lecturerresponse{Sí. Los núcleos de helio con carga eléctrica se miden directamente. Las estadísticas detalladas de los rayos cósmicos pertenecen a un campo especializado, pero el argumento se centra en el contraste entre la abundancia de núcleos ordinarios y la ausencia de una población comparable de antinúcleos. \lecturetimestamp{00:41:53--00:42:22}}
+\end{classroomqa}
+
+Por tanto, necesitamos un sesgo microscópico: violación de \(C\) y, en los análisis realistas de la bariogénesis, de \(CP\). Los sistemas de mesones neutros \(B\) ofrecen un ejemplo experimental. Un mesón neutro y su antipartícula pueden desintegrarse en estados finales conjugados con tasas parciales distintas:
+\begin{equation}
+\Gamma(B^0\to f)\ne\Gamma(\bar B^0\to\bar f).
+\label{eq:c08-cp-partial}
+\end{equation}
+En la pizarra no se fijaron ni el canal exacto ni la asimetría numérica; la conclusión sólida es la existencia, establecida experimentalmente, de asimetría entre partículas--antipartículas en desintegraciones débiles.
+
+Sin embargo, el teorema de \(CPT\) exige que una partícula y su antipartícula tengan la misma masa y la misma anchura de desintegración total en el vacío:
+\begin{equation}
+\Gamma_{\rm tot}(p)=\Gamma_{\rm tot}(\bar p).
+\end{equation}
+Esto no obliga a que coincida cada fracción de desintegración. Las diferencias entre un par de canales conjugados pueden compensarse con diferencias en otros, como los canales esquemáticos del electrón y el muón, de modo que las sumas sigan siendo iguales.
+
+\begin{classroomqa}
+\audiencequestion{Si las tasas de desintegración totales del protón y el antiprotón son iguales, ¿cómo puede surgir un sesgo?}
+\lecturerresponse{La igualdad de las anchuras totales no implica igualdad canal por canal. Además, la bariogénesis ocurre en un plasma: los factores de ocupación térmica, las reacciones inversas y los canales de dispersión intervienen en las ecuaciones cinéticas. La afirmación decisiva no es que un medio simplemente eluda \(CPT\), sino que los procesos con asimetría \(CP\) pueden generar un término fuente cuando se pierde el balance detallado. \lecturetimestamp{00:49:39--00:51:48; 00:53:22--00:57:14}}
+\end{classroomqa}
+
+Esta es la segunda condición de Sakharov:
+\begin{equation}
+\boxed{C\ \text{and}\ CP\ \text{violation}.}
+\end{equation}
+Aporta direccionalidad a las reacciones que cambian el número bariónico. El descubrimiento de la violación de \(CP\) poco antes del artículo de Sakharov dio contenido físico concreto a esta condición.
+
+El modelo estándar mínimo requiere una distinción cuidadosa. No permite la desintegración ordinaria del protón en el régimen perturbativo, pero su anomalía electrodébil permite la violación no perturbativa de \(B+L\); a altas temperaturas, las transiciones de esfalérones pueden hacer que esta violación sea eficiente. Este es el contenido corregido de la revisión posterior que el profesor hizo en la pizarra. Determinar si las fuentes del modelo estándar por sí solas reproducen cuantitativamente la asimetría cósmica es una cuestión distinta y mucho más difícil.
+
+\section{Equilibrio y tercera condición}
+
+Queda un obstáculo. En equilibrio térmico completo, cada reacción queda compensada por su inversa. Si el número bariónico puede cambiar, su potencial químico de equilibrio no puede preservar un \(B\) inicial arbitrario, y el balance detallado borra cualquier exceso generado. El curso expresa la misma idea mediante \(CPT\): un baño estático en equilibrio carece de una flecha macroscópica del tiempo, por lo que el factor \(T\) no puede aportar la distinción que falta entre un proceso y su inverso.
+
+El universo real se expande y se enfría. Por tanto, el estado macroscópico distingue entre el tiempo hacia delante y hacia atrás. Esto solo importa si la expansión logra competir con la relajación microscópica:
+\begin{equation}
+\Gamma_{\rm reaction}\lesssim H.
+\label{eq:c08-freezeout-condition}
+\end{equation}
+Si \(\Gamma_{\rm reaction}\gg H\), las colisiones restablecen rápidamente el equilibrio a pesar de la expansión. Si la tasa de reacción cae por debajo de la tasa de Hubble, el plasma no puede reajustarse y la abundancia queda congelada.
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué la expansión por sí sola no basta automáticamente para sacar al sistema del equilibrio?}
+\lecturerresponse{Un baño que se expande muy lentamente permanece arbitrariamente cerca del equilibrio, porque las reacciones microscópicas lo reajustan continuamente. El alejamiento del equilibrio solo se vuelve efectivo cuando el tiempo de expansión o enfriamiento \(H^{-1}\) es corto comparado con el tiempo de reacción pertinente \(\Gamma^{-1}\). Entonces, al observar una película del estado macroscópico, se puede identificar qué dirección corresponde al futuro. \lecturetimestamp{01:01:22--01:02:26}}
+\end{classroomqa}
+
+Ahora podemos reunir las tres condiciones de Sakharov:
+\begin{enumerate}
+\item violación del número bariónico, de modo que \(B\) pueda cambiar;
+\item \(C\) y violación de \(CP\), de modo que el cambio tenga un signo preferido;
+\item alejamiento del equilibrio térmico, de modo que el balance detallado no pueda cancelar la preferencia.
+\end{enumerate}
+Son necesarias para el mecanismo que estamos considerando y ofrecen una vía estructuralmente suficiente para generar un exceso. Sin un modelo concreto de alta energía, una red de reacciones y una historia cosmológica, no determinan su magnitud.
+
+\begin{classroomqa}
+\audiencequestion{¿El valor medido de la asimetría permite restringir las teorías de alta energía?}
+\lecturerresponse{En principio, sí. En la práctica, el resultado depende de muchas masas, acoplamientos, fases y tasas de reacción desconocidos, así como de características de la cosmología temprana. Por eso, es difícil traducir el único número medido en una región permitida estrecha sin comprometerse con un modelo detallado. \lecturetimestamp{01:04:20--01:04:52}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo se relacionan las asimetrías bariónica y electrónica?}
+\lecturerresponse{La neutralidad eléctrica las vincula. En el canal esquemático, al eliminar un protón se crea un positrón; invertir el desequilibrio bariónico desplaza el desequilibrio leptónico en el sentido compensatorio. De manera más general, la bariogénesis y la leptogénesis están acopladas por la conservación de la carga y las reacciones del modelo estándar, aunque las combinaciones conservadas dependen del mecanismo. \lecturetimestamp{01:04:54--01:05:59}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es demasiado pequeña la violación de \(CP\) observada en el modelo estándar para explicar el exceso bariónico?}
+\lecturerresponse{Esa es la conclusión habitual de los análisis detallados de bariogénesis electrodébil, pero el curso subraya que el cálculo depende del modelo y que hay muchas incógnitas a altas energías. La afirmación defendible aquí es que existe una violación conocida de \(CP\) a bajas energías, mientras que un modelo cuantitativo de bariogénesis que tenga éxito suele requerir ingredientes adicionales. \lecturetimestamp{01:06:01--01:07:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Los electrones actuales proceden simplemente de la destrucción de antiprotones?}
+\lecturerresponse{Los canales esquemáticos hacen tentadora esa interpretación contable, pero el plasma temprano también contenía poblaciones leptónicas independientes y casi simétricas. Se pueden formular mecanismos relacionados como bariogénesis o leptogénesis, con reacciones posteriores que transfieren la asimetría entre sectores. La palabra histórica \emph{bariogénesis} no debe confundirse con una genealogía microscópica única de cada electrón. \lecturetimestamp{01:07:51--01:08:44}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué suele plantearse la discusión en términos de bariones y no de todos los leptones?}
+\lecturerresponse{La materia bariónica se contabiliza mediante los espectros atómicos y otras observaciones astronómicas, mientras que el sector cósmico de neutrinos es mucho más difícil de contar directamente. El nombre refleja tanto aquello que era accesible a la observación como la historia del tema. \lecturetimestamp{01:08:45--01:09:12}}
+\end{classroomqa}
+
+\section{La aniquilación deja el exceso}
+
+A altas temperaturas, la creación y la aniquilación de pares ocurren en ambos sentidos:
+\begin{equation}
+\gamma+\gamma\longleftrightarrow p+\bar p,
+\qquad
+E_{\gamma\gamma}\gtrsim2m_pc^2\approx2\,\mathrm{GeV}.
+\end{equation}
+A medida que el baño se enfría, los fotones con energía suficiente para crear un par bariónico se vuelven exponencialmente escasos. La aniquilación sigue siendo energéticamente posible, pero la producción inversa ya no puede mantener el equilibrio. Casi todos los protones encuentran un antiprotón, y lo que queda es el pequeño exceso de la ecuación~\eqref{eq:c08-baryon-asymmetry}. Los fotones energéticos de la aniquilación transfieren rápidamente su energía al baño térmico.
+
+\begin{classroomqa}
+\audiencequestion{¿La razón \(10^{-8}\) es un valor actual y cuándo ocurrió la gran aniquilación?}
+\lecturerresponse{Es el orden de magnitud actual, usado en el curso, de la razón entre bariones y fotones. Antes, tanto los bariones como los antibariones eran numerosos. Cuando la creación inversa de pares dejó de ser eficaz, se aniquiló su componente simétrica y quedó el exceso neto. \lecturetimestamp{01:09:13--01:11:44}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cuándo cesó la aniquilación de protones--antiprotones?}
+\lecturerresponse{Cesó cuando la abundancia de antiprotones quedó reducida a un valor despreciable. El curso solo sitúa el suceso de manera aproximada: a temperaturas del orden del GeV, mucho antes de la nucleosíntesis y, desde luego, mucho antes de la recombinación. De esta discusión no se deduce ningún tiempo preciso. \lecturetimestamp{01:11:45--01:12:13}}
+\end{classroomqa}
+
+Los fotones de la aniquilación no han desaparecido. Forman parte de la historia térmica de la radiación que acaba alimentando el fondo de microondas. Aun así, hoy la radiación contribuye poco al balance energético porque
+\begin{equation}
+\rho_{\rm rad}\propto a^{-4},
+\qquad
+\rho_m\propto a^{-3}.
+\end{equation}
+El número de fotones es grande, pero la energía de cada uno sufre corrimiento al rojo; la materia conserva su energía de masa en reposo.
+
+\begin{classroomqa}
+\audiencequestion{Si la aniquilación produjo tantos fotones, ¿por qué la radiación tiene hoy una importancia dinámica despreciable?}
+\lecturerresponse{Los fotones siguen presentes, principalmente como fondo de microondas, pero su densidad de energía adquiere una potencia adicional del factor de escala en su dependencia. La expansión diluye su número y, además, desplaza al rojo la energía de cada fotón. \lecturetimestamp{01:12:14--01:13:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La existencia de un mediador muy pesado implica que el modelo estándar está incompleto?}
+\lecturerresponse{Un mediador de desintegración del protón propio de una teoría de gran unificación sería, en efecto, nueva física más allá del modelo estándar mínimo. La corrección posterior sobre la violación bariónica anómala del modelo estándar no aporta una partícula ordinaria de desintegración del protón ni, por sí sola, un modelo cuantitativo completo de bariogénesis. \lecturetimestamp{01:13:20--01:13:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Una gran desigualdad entre los dos canales de desintegración esquemáticos podría convertir una población inicialmente pura de \(p\)-\(\bar p\) en el número igual observado de electrones y protones?}
+\lecturerresponse{Se puede inventar esa contabilidad, pero un plasma caliente en equilibrio ya contiene grandes poblaciones de todas las partículas y antipartículas accesibles. Además, las asimetrías \(CP\) observadas no justifican hacer que un canal domine de manera arbitraria. Un modelo coherente debe seguir la evolución de toda la red de reacciones acopladas, no solo las dos flechas de la pizarra. \lecturetimestamp{01:13:33--01:15:10}}
+\end{classroomqa}
+
+Aquí termina, con franqueza, la discusión sobre la bariogénesis. Se conocen los ingredientes cualitativos, pero no se ha derivado el número observado. Para una respuesta más completa hacen falta tanto una teoría de partículas más completa como una descripción controlada de la historia del universo muy temprano.
+
+\section{El segundo número: la irregularidad primordial}
+
+La inflación aborda otra pregunta que pudo cuantificarse gracias a la radiación cósmica de fondo de microondas: ¿por qué es el universo homogéneo e isótropo a gran escala? El fondo cósmico de microondas tiene un espectro de cuerpo negro extraordinariamente preciso, con una temperatura cercana a \(2.7\,\mathrm K\), y esa temperatura es casi igual en todas las direcciones. Lo que antes había sido una impresión cosmológica general se convirtió en un hecho de gran precisión.
+
+La gravedad hace aún más sorprendente la homogeneidad. La difusión dispersa una gota de tinta hasta que su concentración se vuelve uniforme. La gravedad atractiva produce el efecto contrario: una región sobredensa atrae la materia circundante, aumenta su densidad y vacía las regiones vecinas. Por tanto, las pequeñas perturbaciones dan origen a galaxias, cúmulos y vacíos al crecer con el tiempo.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[thick] (-4.2,0) ellipse (1.25 and 0.72);
+\draw[very thick] (0,0) ellipse (1.55 and 0.92);
+\draw[thick] (4.2,0) ellipse (1.25 and 0.72);
+\node at (-4.2,0) {underdense};
+\node at (0,0) {overdense};
+\node at (4.2,0) {underdense};
+\draw[->,thick] (-2.65,0)--(-1.65,0);
+\draw[->,thick] (2.65,0)--(1.65,0);
+\draw[->,thick] (-2.85,0.75)--(-1.45,0.4);
+\draw[->,thick] (2.85,0.75)--(1.45,0.4);
+\draw[->,thick] (-2.85,-0.75)--(-1.45,-0.4);
+\draw[->,thick] (2.85,-0.75)--(1.45,-0.4);
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{La inestabilidad gravitatoria transfiere materia de las regiones subdensas circundantes a una región sobredensa, y amplifica el contraste inicial en lugar de difuminarlo.}
+\label{fig:c08-gravity-growth}
+\end{figure}
+
+Si se extrapola este crecimiento hacia atrás, se deduce que el universo primitivo era mucho más homogéneo. Una homogeneidad exacta tampoco sería aceptable: la simetría exacta persistiría y no podrían formarse galaxias. La medida útil es el contraste de densidad
+\begin{equation}
+\delta\equiv\frac{\delta\rho}{\rho},
+\end{equation}
+donde \(\delta\rho\) es la desviación local respecto de la densidad de fondo. Las estimaciones del crecimiento de estructuras asociadas con Jim Peebles y otros cosmólogos de los primeros tiempos exigían una amplitud primordial del orden de
+\begin{equation}
+\boxed{\frac{\delta\rho}{\rho}\sim10^{-5}}
+\end{equation}
+en el momento del desacoplamiento, y se citaba \(10^{-4}\)--\(10^{-5}\) como intervalo histórico. Una vez más, el número precisa la pregunta, pero aún no explica su valor.
+
+La propuesta general de la inflación, introducida por Alan Guth en 1980, plantea un período de expansión enorme y aproximadamente exponencial. Al estirar una pequeña región homogénea en muchos órdenes de magnitud, se diluye la curvatura preexistente y las irregularidades se desplazan a escalas mayores que la región observable. La analogía del globo arrugado permite hacerse una idea de esta homogeneización, aunque no debe interpretarse como una inmersión literal del espacio.
+
+\begin{classroomqa}
+\audiencequestion{¿Cómo puede ser isotrópico el universo si la materia cercana forma grumos visibles en distintas direcciones?}
+\lecturerresponse{La isotropía es una afirmación estadística a gran escala; no significa que esta sala, la Galaxia o todas las líneas de visión sean idénticas. La Tierra tiene montañas a escala local, pero es extremadamente lisa en comparación con su radio. Del mismo modo, las galaxias y los cúmulos son estructuras locales superpuestas a un fondo muy homogéneo a gran escala. \lecturetimestamp{01:25:37--01:26:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿No podría un proceso aleatorio producir de vez en cuando direcciones con una sobredensidad enorme?}
+\lecturerresponse{Las perturbaciones no son fluctuaciones independientes sin restricción. Forman un campo aleatorio con un espectro estadístico particular, casi homogéneo e isotrópico. Sus amplitudes son pequeñas, del orden de \(10^{-5}\), incluso cuando sus longitudes de onda son grandes. El espectro y su origen son los temas que se desarrollarán; no se presupone que haya desviaciones arbitrariamente grandes como las que producirían lanzamientos de moneda. \lecturetimestamp{01:26:26--01:28:23}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La inflación fue causada por la alta temperatura característica de los primeros tiempos?}
+\lecturerresponse{La temperatura no es la variable principal durante la inflación. El fenómeno central es la rápida expansión exponencial impulsada por la energía y el momento de un campo. El baño térmico vuelve a ser importante cuando termina la inflación y su energía se convierte en partículas. \lecturetimestamp{01:28:25--01:29:04}}
+\end{classroomqa}
+
+\section{Preludio mecánico: movimiento con arrastre}
+
+Como preparación para las ecuaciones de la inflación, consideremos una piedra de masa unidad que cae a través de un fluido viscoso. Llamemos \(\phi\) a su coordenada vertical, anticipando el campo escalar que pronto reemplazará a la piedra. Si su energía potencial es \(V(\phi)\), la fuerza conservativa es
+\begin{equation}
+F(\phi)=-\frac{dV}{d\phi},
+\label{eq:c08-force-potential}
+\end{equation}
+y, en ausencia de arrastre, la ecuación de Newton es \(\ddot\phi=F\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_06.png}
+\caption{Relación legible en la pizarra: \(F=-dV/d\phi\) para la analogía de la piedra en caída. La flecha hacia abajo fija la convención según la cual un aumento de \(\phi\) apunta hacia arriba.}
+\label{fig:c08-force-board}
+\lectureframe{01:35:09.513}
+\end{figure}
+
+Para un arrastre viscoso lineal, la fuerza adicional es \(-\gamma\dot\phi\), con \(\gamma>0\). La ecuación queda
+\begin{equation}
+\ddot\phi+\gamma\dot\phi=F(\phi)
+=-V'(\phi).
+\label{eq:c08-viscous-motion}
+\end{equation}
+El arrastre se anula cuando el cuerpo está en reposo y siempre se opone a la velocidad. Si \(\phi\) aumenta hacia arriba, una piedra que cae tiene \(F<0\) y \(\dot\phi<0\); entonces \(-\gamma\dot\phi>0\), por lo que el arrastre apunta hacia arriba, como debe ser.
+
+\begin{classroomqa}
+\classquestion{¿Por qué aparecen con el mismo signo menos la fuerza potencial y la fuerza de arrastre? ¿No deberían apuntar en direcciones opuestas?}
+\lecturerresponse{Sus direcciones dependen de magnitudes distintas. La fuerza potencial es \(-V'(\phi)\). El arrastre es \(-\gamma\dot\phi\). Durante el movimiento hacia abajo, tanto \(F\) como \(\dot\phi\) son negativos, así que \(F\) apunta hacia abajo, mientras que \(-\gamma\dot\phi\) apunta hacia arriba. Por tanto, el álgebra da direcciones físicas opuestas sin modificar ninguna de las dos fórmulas. \lecturetimestamp{01:34:16--01:35:27}}
+\end{classroomqa}
+
+A medida que la piedra acelera, el arrastre aumenta hasta que las fuerzas se equilibran. Para un valor aproximadamente constante de \(F\), el movimiento terminal satisface
+\begin{equation}
+0=F-\gamma\dot\phi_{\rm term},
+\qquad
+\dot\phi_{\rm term}=\frac{F}{\gamma}.
+\end{equation}
+El signo es correcto: si \(F\) apunta hacia abajo, la velocidad terminal es negativa. Por tanto, un potencial poco inclinado y un valor grande de \(\gamma\) producen un movimiento lento cuesta abajo.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[->] (0,0)--(7.0,0) node[right] {\(\phi\)};
+\draw[->] (0,0)--(0,4.4) node[above] {\(V(\phi)\)};
+\draw[very thick] plot[smooth] coordinates {(0.5,3.7) (1.6,3.55) (2.8,3.2) (4.0,2.55) (5.1,1.65) (6.3,0.6)};
+\filldraw (1.45,3.58) circle (0.09);
+\draw[->,thick] (1.55,3.48)--(2.25,3.23);
+\node[align=left,anchor=west] at (2.45,3.75) {large drag,\\slow downhill motion};
+\end{tikzpicture}
+\caption{Un potencial poco inclinado con un arrastre intenso. En la analogía con el campo, la amplitud escalar homogénea en el espacio reemplazará a la coordenada de la piedra.}
+\label{fig:c08-shallow-potential}
+\end{figure}
+
+\section{El inflatón y la fricción de Hubble}
+
+La inflación postula un campo escalar adicional \(\phi\), llamado convencionalmente inflatón. Históricamente, fue una hipótesis audaz, introducida para explicar la homogeneidad cósmica. Empezaremos con un campo aproximadamente uniforme en el espacio, \(\phi=\phi(t)\). La expansión estira las variaciones espaciales, mientras que el caso homogéneo permite ver la dinámica esencial.
+
+Para un campo escalar canónico, la densidad de energía local completa es
+\begin{equation}
+\rho_\phi
+=
+\frac12\dot\phi^{\,2}
++\frac{1}{2a^2}(\boldsymbol\nabla\phi)^2
++V(\phi).
+\end{equation}
+Bajo la aproximación homogénea \(\boldsymbol\nabla\phi=0\), se reduce a
+\begin{equation}
+\rho_\phi=\frac12\dot\phi^{\,2}+V(\phi).
+\label{eq:c08-scalar-density}
+\end{equation}
+El primer término es energía cinética en el espacio de configuraciones del campo: mide su variación temporal, no el movimiento de traslación por el espacio ordinario.
+
+\begin{classroomqa}
+\audiencequestion{¿El punto sobre \(\phi\) indica una derivada parcial respecto del tiempo?}
+\lecturerresponse{Sí. Para el campo homogéneo, \(\dot\phi=d\phi/dt\). Los gradientes espaciales aportarían un término positivo aparte, pero se anulan bajo el supuesto actual. \lecturetimestamp{01:41:08--01:41:34}}
+\end{classroomqa}
+
+Consideremos una caja de coordenadas comóviles de volumen unidad. Su volumen físico es \(a^3(t)\), así que la energía escalar contenida en ella es
+\begin{equation}
+E_\phi
+=a^3(t)
+\left[
+\frac12\dot\phi^{\,2}+V(\phi)
+\right].
+\end{equation}
+El factor explícito \(a^3(t)\) es el nuevo ingrediente: la caja física se expande aunque sus coordenadas comóviles permanezcan fijas.
+
+\begin{classroomqa}
+\audiencequestion{¿El factor de escala \(a\) depende de la posición espacial?}
+\lecturerresponse{No, en el modelo FRW homogéneo. Es el mismo en todo el espacio en un instante de tiempo cósmico dado, aunque puede variar con el tiempo. Si \(\phi\) dependiera de la posición, habría que volver a incluir la energía de gradiente espacial. \lecturetimestamp{01:44:12--01:44:49}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿El valor del campo está definido en cada punto del espacio, aunque ahora escribamos un único \(\phi(t)\)?}
+\lecturerresponse{Sí. Un campo asigna un valor a cada punto del espacio-tiempo. La homogeneidad significa que, en cada instante, esos valores son iguales en todos los puntos del espacio, con lo que la dinámica se reduce a una única función común \(\phi(t)\). \lecturetimestamp{01:44:50--01:45:06}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué movimiento físico describe el término cinético del campo? ¿El campo se hace más intenso o más débil?}
+\lecturerresponse{Eso lo determinan la ecuación de movimiento, el valor y la velocidad iniciales, y el signo de \(V'(\phi)\). La analogía es la de una partícula cuya dirección de movimiento no puede conocerse solo a partir de su fórmula de energía. \lecturetimestamp{01:45:07--01:46:08}}
+\end{classroomqa}
+
+El lagrangiano homogéneo es la energía cinética menos la energía potencial,
+\begin{equation}
+L_\phi=a^3(t)
+\left[
+\frac12\dot\phi^{\,2}-V(\phi)
+\right].
+\label{eq:c08-scalar-lagrangian}
+\end{equation}
+Al aplicar la ecuación de Euler--Lagrange se obtiene
+\begin{align}
+\frac{d}{dt}\left(\frac{\partial L_\phi}{\partial\dot\phi}\right)
+&=
+\frac{\partial L_\phi}{\partial\phi},\\
+\frac{d}{dt}\left(a^3\dot\phi\right)
+&=-a^3V'(\phi).
+\end{align}
+La regla del producto da dos términos,
+\begin{equation}
+a^3\ddot\phi+3a^2\dot a\,\dot\phi
+=-a^3V'(\phi).
+\end{equation}
+Al dividir por \(a^3\) y definir \(H=\dot a/a\), obtenemos
+\begin{equation}
+\boxed{
+\ddot\phi+3H\dot\phi+V'(\phi)=0
+}
+\label{eq:c08-hubble-friction}
+\end{equation}
+o, con \(F=-V'(\phi)\),
+\begin{equation}
+\ddot\phi+3H\dot\phi=F.
+\end{equation}
+Cada línea se deduce del factor de volumen en expansión de la ecuación~\eqref{eq:c08-scalar-lagrangian}.
+
+\begin{classroomqa}
+\audiencequestion{¿\(H=\dot a/a\) es igual en todas partes y es realmente una constante?}
+\lecturerresponse{En el modelo homogéneo, tiene el mismo valor en todos los puntos espaciales de una hipersuperficie de tiempo cósmico. No tiene por qué ser constante en el tiempo; ``constante de Hubble'' suele designar su valor actual, mientras que \(H(t)\) es la tasa de Hubble durante toda la evolución. \lecturetimestamp{01:50:32--01:50:57}}
+\end{classroomqa}
+
+La ecuación~\eqref{eq:c08-hubble-friction} precisa la analogía. Tiene la misma forma que el movimiento viscoso, con coeficiente de arrastre
+\begin{equation}
+\gamma_{\rm cosmic}=3H.
+\end{equation}
+Por tanto, la expansión ralentiza la evolución de un campo escalar homogéneo. Si \(H\) es grande y \(V(\phi)\) es suficientemente plano, el término inercial se vuelve pequeño frente al término de arrastre y el campo se aproxima a la relación de rodadura lenta
+\begin{equation}
+3H\dot\phi\simeq-V'(\phi).
+\end{equation}
+Como una bola que desciende por aceite frío y viscoso, el campo puede tardar un tiempo extraordinariamente largo en recorrer un potencial poco inclinado, aunque actúe una fuerza sobre él.
+
+El siguiente paso consiste en sustituir la densidad de energía escalar en la ecuación de Friedmann y permitir que la tasa de expansión responda a la evolución lenta del campo. Ese sistema acoplado produce la inflación. Por ahora, la preparación esencial está completa: el campo almacena energía cinética y potencial, el volumen en expansión genera fricción de Hubble y un campo que rueda lentamente puede mantener casi constante su energía potencial durante el tiempo suficiente para impulsar una expansión rápida.
+
+\section{Qué hay que recordar}
+
+La asimetría bariónica y el contraste de densidad primordial cumplen funciones paralelas. Ni \(10^{-8}\) ni \(10^{-5}\) se explican simplemente con darles un nombre, pero cada uno transforma una impresión cosmológica vaga en un problema cuantitativo. El primero conduce a las condiciones de Sakharov; el segundo, hacia la inflación.
+
+El puente hacia la inflación también es preciso. Un campo escalar homogéneo en un universo FRW obedece
+\[
+\ddot\phi+3H\dot\phi+V'(\phi)=0.
+\]
+El término central no es una viscosidad fenomenológica añadida a mano. Se deduce del crecimiento del volumen físico \(a^3(t)\). Este único resultado servirá de hilo conductor para la exposición de la próxima clase sobre un universo impulsado por un campo que rueda lentamente por su potencial.
