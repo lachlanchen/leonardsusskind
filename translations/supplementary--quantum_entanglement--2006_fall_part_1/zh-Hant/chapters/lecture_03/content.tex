@@ -1,0 +1,541 @@
+\chapter{厄米可觀測量、自旋與機率規則}
+
+\lectureoverview{量子力學是一套機率演算。若要運用它而不把理解化約為口號，就需要一條精簡的數學脈絡：複相位、歸一化態、厄米可觀測量、本徵值與本徵向量、正交性，以及玻恩規則。接著，三個泡利矩陣會將這條脈絡化為對電子自旋的具體預測。}
+
+\section{複數的極式}
+
+先來消除一個小小的代數障礙。複數
+\begin{equation}
+  z=x+iy
+\end{equation}
+是複平面上的一個點，其中\(x\)位於實軸上，\(y\)位於虛軸上。若此點的極座標為\((r,\theta)\)，則
+\begin{equation}
+  x=r\cos\theta,
+  \qquad
+  y=r\sin\theta,
+\end{equation}
+因此
+\begin{equation}
+  z=r(\cos\theta+i\sin\theta)=re^{i\theta}.
+  \label{eq:l03-polar-form}
+\end{equation}
+尤拉記號很有用，因為角度相加公式可寫成指數律
+\begin{equation}
+  e^{i\theta}e^{i\phi}
+  =e^{i(\theta+\phi)}.
+  \label{eq:l03-phase-product}
+\end{equation}
+事實上，將兩個三角形式相乘可得
+\begin{align}
+& (\cos\theta+i\sin\theta)(\cos\phi+i\sin\phi)
+\notag\\
+&\qquad=\cos(\theta+\phi)+i\sin(\theta+\phi).
+\end{align}
+熟悉的和角公式都包含在這一次乘法之中。
+
+複共軛會將該點對實軸反射：
+\begin{equation}
+  z^*=x-iy,
+  \qquad
+  (e^{i\theta})^*=e^{-i\theta}.
+\end{equation}
+因此，
+\begin{equation}
+  e^{i\theta}e^{-i\theta}=1.
+\end{equation}
+形如\(e^{i\theta}\)的數位於單位圓上，稱為\emph{純相位}。每個非零複數都可表示為正模長乘上純相位：
+\begin{equation}
+  z=|z|e^{i\theta},
+  \qquad
+  |z|^2=z^*z=x^2+y^2.
+  \label{eq:l03-modulus-phase}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:36}
+\audiencequestion{將\(\theta\)改成\(-\theta\)，是否相當於反轉複平面中的旋轉方向？}
+\lecturerresponse{是。正相位角和負相位角沿相反方向繞行單位圓。複共軛會將\(e^{i\theta}\)變成\(e^{-i\theta}\)，也就是反射後的點，亦即相位的倒數。}
+\end{classroomqa}
+
+今天所需的複數數學準備就到這裡：模長、相位、共軛與單位圓。
+
+\section{量子力學作為機率演算}
+
+現在來看公設。物理系統會被製備在某個\emph{態}；測量則是詢問某個\emph{可觀測量}的值；量子力學為可能的答案提供機率。
+
+態是複向量空間中的向量。對於二能級自旋系統，
+\begin{equation}
+  \ket\psi=\alpha\ket{u}+\beta\ket{d},
+  \qquad
+  \ket{u}=\begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{d}=\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-two-level-state}
+\end{equation}
+係數決定自旋向上與向下的機率，
+\begin{equation}
+  P(u)=|\alpha|^2,
+  \qquad
+  P(d)=|\beta|^2,
+\end{equation}
+因此態必須歸一化：
+\begin{equation}
+  \braket{\psi}{\psi}
+  =|\alpha|^2+|\beta|^2
+  =1.
+  \label{eq:l03-state-normalization}
+\end{equation}
+此處的維度指態空間中彼此獨立的可能態數目，而不是一般空間的維度。若系統有三個互斥的基底態，就會用到三個正交歸一的列向量和三個振幅。
+
+機率無法完全決定振幅。乘上純相位不會改變其模長：
+\begin{equation}
+  |e^{i\theta}\alpha|^2=|\alpha|^2.
+\end{equation}
+因此，振幅所含的資訊不僅是這個基底下的機率。當我們考慮不同的測量，以及之後的時間演化時，就會看出它的作用。
+
+基底態彼此正交歸一：
+\begin{equation}
+  \braket{u}{u}=\braket{d}{d}=1,
+  \qquad
+  \braket{u}{d}=\braket{d}{u}=0.
+\end{equation}
+它們的正交性是指態所在的複向量空間中的正交性。此時不能把它和一般三維空間中兩支互相垂直的箭頭混為一談；到了本講接近尾聲時，這項區別就會變得關鍵。
+
+\section{可觀測量為何是厄米的}
+
+實驗結果可以記錄為實數。為了方便，我們可以把兩個實數合併成一個複數，但指針的讀數本身總能分別表示為實數。在有限維空間中，量子可觀測量以一類特殊的線性算符表示：厄米矩陣。
+
+要定義厄米矩陣，先將矩陣的列與欄互換，也就是作轉置：
+\begin{equation}
+  (M^T)_{ij}=M_{ji}.
+  \label{eq:l03-transpose}
+\end{equation}
+滿足\(M^T=M\)的實矩陣稱為對稱矩陣。對複矩陣，相應的運算是厄米共軛，
+\begin{equation}
+  M^\dagger=(M^T)^*,
+  \qquad
+  (M^\dagger)_{ij}=M_{ji}^*.
+  \label{eq:l03-dagger}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\linewidth]{lecture_03_figure_02.png}
+\caption{轉置、對稱，以及從轉置到厄米共軛的轉換，都呈現在同一幅黑板圖示中。}
+\lectureframe{00:23:06}
+\end{figure}
+
+\begin{definition}
+矩陣 \(M\) 若滿足下式，便稱為\emph{厄米}矩陣：
+\begin{equation}
+  M^\dagger=M,
+  \qquad\text{equivalently}\qquad
+  M_{ij}=M_{ji}^*.
+  \label{eq:l03-hermitian}
+\end{equation}
+\end{definition}
+
+對角元素為實數，因為\(M_{ii}=M_{ii}^*\)。關於對角線互為反射的非對角元素，則互為共軛。因此，一般的二乘二形式為
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    a&z\\
+    z^*&b
+  \end{pmatrix},
+  \qquad a,b\in\mathbb R.
+  \label{eq:l03-hermitian-two}
+\end{equation}
+厄米性是矩陣版的實數條件；它不要求每個元素都各自為實數。
+
+第一個結果來自兩個基本的共軛恆等式：
+\begin{equation}
+  \braket{B}{A}=\braket{A}{B}^*,
+  \label{eq:l03-inner-conjugation}
+\end{equation}
+以及對任意\(M\)，
+\begin{equation}
+  \bra B M\ket A
+  =
+  \bigl(\bra A M^\dagger\ket B\bigr)^*.
+  \label{eq:l03-matrix-element-conjugation}
+\end{equation}
+\(\bra B M\ket A\)是一個數，也就是\(M\)的\(BA\)矩陣元素。若\(M\)是厄米的，且\(B=A\)，則
+\begin{equation}
+  \bra A M\ket A
+  =
+  \bigl(\bra A M\ket A\bigr)^*.
+\end{equation}
+因此它是實數。
+
+\begin{proposition}
+對任意厄米\(M\)，期望值
+\begin{equation}
+  \expect{M}_A=\bra A M\ket A
+  \label{eq:l03-expectation}
+\end{equation}
+在任何歸一化態\(\ket A\)中都是實數。
+\end{proposition}
+
+期望值的機率意義還會進一步說明；不過，光是它為實數這點，就已經解釋了為什麼厄米算符自然適合作為可觀測量。
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:22}
+\audiencequestion{表示平均值的尖括號記號，是否來自 bra--ket 記號？}
+\lecturerresponse{是。狄拉克括號記號正好提供了同樣的括號。在\(\bra A M\ket A\)中，算符夾在代表該態的 bra 和 ket 之間，所得的結果就是期望值。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:31}
+\audiencequestion{物理量本身可能有虛數的測量值嗎？如果測量結果都是實數，量子力學為什麼還需要複數？}
+\lecturerresponse{一組測量結果總能記錄為實數，即使我們選擇把其中兩個合併成一個複數。更根本的問題是，為什麼理論必須採用複振幅。先把這個問題留著：答案與可逆的時間演化有關，而我們尚未介紹時間演化。若將理論限制於實向量，就會失去一些重要的可能性。}
+\end{classroomqa}
+
+數學不是裝飾。若沒有數學，糾纏就可能被說得神祕莫測，卻始終沒有明確定義。我們先從最簡單的情況出發，只考慮一個二能級系統，這樣之後才能嚴謹地組合兩個這類系統。
+
+\section{本徵值是可能的測量結果}
+
+\begin{definition}
+若非零向量\(\ket a\)是\(M\)的本徵向量，對應的本徵值為\(\lambda_a\)，則
+\begin{equation}
+  M\ket a=\lambda_a\ket a.
+  \label{eq:l03-eigenvalue-equation}
+\end{equation}
+\end{definition}
+矩陣可以改變該向量的長度或相位，卻不會使它變成態空間中的另一個方向。
+
+對厄米矩陣而言，本徵值是實數。將方程~\eqref{eq:l03-eigenvalue-equation}左乘\(\bra a\)，可得
+\begin{equation}
+  \bra a M\ket a
+  =\lambda_a\braket{a}{a}.
+\end{equation}
+由厄米性可知左側為實數；右側的範數則是正的實數。因此
+\begin{equation}
+  \lambda_a
+  =
+  \frac{\bra a M\ket a}{\braket{a}{a}}
+  \in\mathbb R.
+  \label{eq:l03-real-eigenvalue}
+\end{equation}
+
+現在來看物理意義：當\(M\)代表可觀測量時，它的本徵值就是測量\(M\)可能得到的值。對應於\(\lambda_a\)的本徵向量，代表一個測得該值的機率為一的態。
+
+最簡單的例子是對角矩陣：
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    m_{11}&0\\
+    0&m_{22}
+  \end{pmatrix}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_03.png}
+\caption{抽象的本徵值方程列在第一個對角矩陣例子之前。}
+\lectureframe{00:44:04}
+\end{figure}
+
+直接相乘可得
+\begin{align}
+  M\begin{pmatrix}1\\0\end{pmatrix}
+  &=m_{11}\begin{pmatrix}1\\0\end{pmatrix},
+  \notag\\
+  M\begin{pmatrix}0\\1\end{pmatrix}
+  &=m_{22}\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-diagonal-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_04.png}
+\caption{下方的基底向量經作用後，會乘上較低位置的對角元素，再返回原處。}
+\lectureframe{00:45:58}
+\end{figure}
+
+對較大的對角矩陣，同樣的規則也成立：對角元素是本徵值，而標準基底中的單位列向量是本徵向量。
+
+\section{三個自旋矩陣}
+
+考慮電子自旋沿第三軸的分量，取
+\begin{equation}
+  \sigma_3=
+  \begin{pmatrix}
+    1&0\\
+    0&-1
+  \end{pmatrix}.
+\end{equation}
+它的本徵態為\(\ket u=(1,0)^T\)，本徵值為\(+1\)；以及\(\ket d=(0,1)^T\)，本徵值為\(-1\)。因此，探測器可能測得的兩個值就是這兩個本徵值。
+
+第一軸方向的自旋矩陣為
+\begin{equation}
+  \sigma_1=
+  \begin{pmatrix}
+    0&1\\
+    1&0
+  \end{pmatrix}.
+\end{equation}
+先寫出它的候選本徵向量，不作歸一化，因為本徵向量乘上任意非零純量後仍是本徵向量。然而，物理態必須歸一化：
+\begin{align}
+  \ket{x+}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},
+  &
+  \sigma_1\ket{x+}&=+\ket{x+},
+  \notag\\
+  \ket{x-}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix},
+  &
+  \sigma_1\ket{x-}&=-\ket{x-}.
+  \label{eq:l03-sigma-one-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_05.png}
+\caption{非對角矩陣與等權重的候選向量，出現在乘積完成之前。}
+\lectureframe{00:50:29}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:45}
+\audiencequestion{能否從幾何上看出 \(\sigma_1\) 的本徵向量，而不必透過代數求解？}
+\lecturerresponse{在實數二分量的圖像中，\(\sigma_1\)會交換基底方向 \(E_1\)與 \(E_2\)。對角線方向 \((1,1)^T\)保持不變，另一個對角線方向 \((1,-1)^T\)則反向。因此，這兩個方向都是本徵向量，本徵值分別為 \(+1\)與 \(-1\)。這只是分量空間中的圖像，尚未描述物理上的自旋指針。}
+\end{classroomqa}
+
+剩下的矩陣是
+\begin{equation}
+  \sigma_2=
+  \begin{pmatrix}
+    0&-i\\
+    i&0
+  \end{pmatrix},
+\end{equation}
+其歸一化本徵向量為
+\begin{equation}
+  \ket{y+}=\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix},
+  \qquad
+  \ket{y-}=\frac{1}{\sqrt2}\begin{pmatrix}1\\-i\end{pmatrix}.
+  \label{eq:l03-sigma-two-eigenvectors}
+\end{equation}
+它們的本徵值同樣是\(+1\)和\(-1\)。
+
+這三個矩陣的平方都等於單位矩陣：
+\begin{equation}
+  \sigma_1^2=\sigma_2^2=\sigma_3^2=I.
+  \label{eq:l03-pauli-squares}
+\end{equation}
+若\(\sigma_i\ket a=\lambda\ket a\)，則將\(\sigma_i\)作用兩次會得到\(\lambda^2=1\)，所以\(\lambda=\pm1\)。三者具有相同的譜，這是第一個跡象，顯示它們代表沿空間中等價軸向的自旋分量。
+
+\section{不同的測量結果對應正交態}
+
+在證明下一個定理之前，先說明它的意義。如果同一可觀測量在兩個態中分別給出不同的確定答案，測量就能完美地區分這兩個態。量子力學以正交性來表達這種完美可區分性。
+
+\begin{theorem}
+令\(M\)為厄米矩陣，且
+\begin{equation}
+  M\ket A=\lambda_A\ket A,
+  \qquad
+  M\ket B=\lambda_B\ket B.
+\end{equation}
+若\(\lambda_A\ne\lambda_B\)，則
+\begin{equation}
+  \braket{B}{A}=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+將第一個本徵值方程左乘\(\bra B\)，可得
+\begin{equation}
+  \bra B M\ket A=\lambda_A\braket{B}{A}.
+\end{equation}
+利用厄米性和第二個本徵值方程，可得同一矩陣元素也等於
+\begin{equation}
+  \bra B M\ket A=\lambda_B\braket{B}{A},
+\end{equation}
+因為\(\lambda_B\)是實數。兩式相減可得
+\begin{equation}
+  (\lambda_A-\lambda_B)\braket{B}{A}=0.
+\end{equation}
+兩個本徵值不同，因此內積必須為零。
+\end{proof}
+
+\(\sigma_1\)本徵向量可立即驗證這一點：
+\begin{equation}
+  \braket{x+}{x-}
+  =
+  \frac12
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\-1\end{pmatrix}
+  =\frac12-\frac12=0.
+\end{equation}
+反過來說，對任意兩個正交態，都存在一種測量可以區分它們。因此，正交性不只是幾何用語，也有操作上的物理意義。
+
+\section{機率公設}
+
+假設系統被製備在歸一化態\(\ket B\)中。令\(M\)為可觀測量，並令\(\ket A\)為\(M\)的一個歸一化本徵向量，其本徵值為\(\lambda_A\)。測量\(M\)得到\(\lambda_A\)的機率為
+\begin{equation}
+  P(\lambda_A\mid B)
+  =
+  |\braket{A}{B}|^2
+  =
+  \braket{A}{B}\braket{B}{A}.
+  \label{eq:l03-born-rule}
+\end{equation}
+此乘積是非負實數。若向量均已歸一化，機率不會大於一。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_06.png}
+\caption{機率公式寫成態之間的重疊乘上其複共軛。}
+\lectureframe{01:16:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:19}
+\audiencequestion{這是兩個態之間夾角的餘弦平方嗎？}
+\lecturerresponse{在普通歐幾里得空間中，實數單位向量的內積就是兩者夾角的餘弦。但這裡的內積一般是複數，因此不存在一個普通空間中的夾角，其餘弦等於這個內積。可用來類比的是重疊的模，而機率則是其絕對值平方。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:20:18}
+\audiencequestion{如果製備的態是 \(M\) 的另一個本徵向量，而且本徵值不同，會怎樣？}
+\lecturerresponse{那麼這兩個本徵向量彼此正交，重疊為零，因此得到 \(\lambda_A\) 的機率也是零。製備出具有某個確定值的態，就排除了同一可觀測量的另一個不同確定值。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:23}
+\audiencequestion{同一條規則能處理沒有任何結果是確定的製備情形嗎？}
+\lecturerresponse{可以。一般情形正是如此：\(\ket B\)不必是 \(M\) 的本徵態。它與各個歸一化本徵向量的重疊，給出相應結果的機率。我們先從一個有兩種可能結果的例子開始，再討論更複雜的分佈。}
+\end{classroomqa}
+
+本講將這條規則用於好幾種製備情況，而不是只把它藏在一個公式裡。
+
+首先製備\(\sigma_3=+1\)：
+\begin{equation}
+  \ket B=\ket{u}=\begin{pmatrix}1\\0\end{pmatrix}.
+\end{equation}
+接著測量\(\sigma_1\)。對應於它的\(+1\)本徵向量，
+\begin{equation}
+  \braket{x+}{u}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\0\end{pmatrix}
+  =\frac{1}{\sqrt2},
+\end{equation}
+因此
+\begin{equation}
+  P(\sigma_1=+1\mid\sigma_3=+1)=\frac12.
+\end{equation}
+若將\(\ket{x+}\)換成\(\ket{x-}\)，會得到相同的機率。反過來，以該態作為製備態並測量原本的自旋分量，得到的機率也是二分之一，因為重疊的絕對值平方具有對稱性。
+
+來看一個確實涉及複數的例子：製備\(\ket{x+}\)，並測量\(\sigma_2\)。於是
+\begin{align}
+  \braket{y+}{x+}
+  &=
+  \frac12
+  \begin{pmatrix}1&-i\end{pmatrix}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =\frac{1-i}{2},
+  \notag\\
+  P(\sigma_2=+1\mid\sigma_1=+1)
+  &=\left|\frac{1-i}{2}\right|^2
+  =\frac14+\frac14
+  =\frac12.
+  \label{eq:l03-complex-probability-example}
+\end{align}
+因此，若沿一個軸製備自旋，再沿與其垂直的軸測量，兩種結果出現的機率相同。
+
+\section{指針、態與任意方向}
+
+若不釐清用語，前一句話可能會造成誤解。磁矩有一個空間方向，我們稱之為\emph{指針}。而 ket 是複態空間中的向量。兩個空間指針可以互相垂直；兩個態向量則可以互相正交。這是在不同空間中的兩種不同陳述。
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:25}
+\audiencequestion{如果兩個物理自旋方向在空間中相差九十度，它們對應的態向量應該正交嗎？}
+\lecturerresponse{不應該。沿著空間中互相垂直的軸向上的自旋向上態，其重疊的絕對值平方為 \(1/2\)，而不是零。與沿某軸自旋向上態正交的，是沿同一軸的自旋向下態。我們用\emph{垂直}描述普通空間中的指針方向，用\emph{正交}描述可完美區分的態。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:25}
+\audiencequestion{能用\emph{線性獨立}代替\emph{正交}嗎？}
+\lecturerresponse{不能。線性獨立只表示沒有任何一個向量是其他向量的純量倍數，並不要求內積為零。正交是更強的條件，在這裡也代表了可完美區分的物理意義。}
+\end{classroomqa}
+
+令\(\hat n=(n_1,n_2,n_3)\)為一般空間中的單位指針：
+\begin{equation}
+  n_1^2+n_2^2+n_3^2=1.
+\end{equation}
+沿此方向的自旋算符，是點積的矩陣值類比：
+\begin{equation}
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3
+  =
+  \begin{pmatrix}
+    n_3&n_1-in_2\\
+    n_1+in_2&-n_3
+  \end{pmatrix}.
+  \label{eq:l03-spin-arbitrary-axis}
+\end{equation}
+它是厄米的：對角元素為實數，非對角元素則互為共軛。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_03_figure_07.png}
+\caption{空間中的單位指針、算符的總和及其明確寫出的厄米矩陣一併推導。}
+\lectureframe{01:38:00}
+\end{figure}
+
+要找出它可能的測量值，先將它平方，再代入矩陣元素。矩陣乘法的次序很重要，因此交叉項會以反對易子的形式出現：
+\begin{align}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  &=
+  n_1^2\sigma_1^2+n_2^2\sigma_2^2+n_3^2\sigma_3^2
+  \notag\\
+  &\quad
+  +n_1n_2(\sigma_1\sigma_2+\sigma_2\sigma_1)
+  \notag\\
+  &\quad
+  +n_2n_3(\sigma_2\sigma_3+\sigma_3\sigma_2)
+  \notag\\
+  &\quad
+  +n_1n_3(\sigma_1\sigma_3+\sigma_3\sigma_1).
+  \label{eq:l03-axis-square-expanded}
+\end{align}
+不同的泡利矩陣彼此反對易：
+\begin{equation}
+  \sigma_i\sigma_j+\sigma_j\sigma_i=0
+  \qquad(i\ne j).
+  \label{eq:l03-pauli-anticommutation}
+\end{equation}
+本講明確驗算其中一種情況：
+\begin{equation}
+  \sigma_1\sigma_3
+  =
+  \begin{pmatrix}0&-1\\1&0\end{pmatrix},
+  \qquad
+  \sigma_3\sigma_1
+  =
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  =-\sigma_1\sigma_3.
+  \label{eq:l03-order-check}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_03_figure_08.png}
+\caption{以相反次序相乘 \(\sigma_1\) 和 \(\sigma_3\)，所得矩陣只差一個負號。}
+\lectureframe{01:44:50}
+\end{figure}
+
+式~\eqref{eq:l03-axis-square-expanded}中的交叉項消失，而\(\sigma_i^2=I\)。因此
+\begin{equation}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  =(n_1^2+n_2^2+n_3^2)I
+  =I.
+\end{equation}
+每個本徵值都必須滿足\(\lambda^2=1\)：
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+無論儀器選取哪個空間軸，探測器仍然只有\(+1\)和\(-1\)兩種測量結果。相近方向之間的差異不會表現為介於兩者之間的測量值，而是反映在這兩種固定結果各自出現的機率上。

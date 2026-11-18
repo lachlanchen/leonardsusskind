@@ -1,0 +1,427 @@
+\chapter{量子位元、複數態向量與可觀測量}
+
+\lectureoverview{單一電子的自旋是第一個真正的量子位元。相對於任意空間方向製備電子自旋後，以固定方向測量仍只會得到兩種結果。我們先看見經典磁體圖像如何失效，再建立描述實驗實際結果所需的複向量空間、機率法則與矩陣語言。}
+
+\section{單一自旋與向量的兩種意義}
+
+經典位元有兩種可能狀態，中間沒有其他狀態。我們可以把它們稱為\(0\)和\(1\)、正面和反面，或向上和向下；這些名稱只是經典狀態空間中兩個不同點的標籤。量子位元以固定方式測量時也會得到兩種結果，但不能只用狀態空間中的兩個點來描述。最簡單的例子就是電子自旋。
+
+這個例子涉及兩種不同的向量概念。若把它們混為一談，後續內容就會平白顯得神祕。首先是普通的\emph{空間向量}：三維空間中的箭頭，具有大小和方向。電子有磁矩，就目前的討論而言，它的行為如同一個小磁體。磁矩的大小固定，而在製備過程中可以為它指定一個空間方向。
+
+第二種物件是複向量空間中的抽象向量。這個\emph{態向量}用來描述量子態。它並不是把磁箭頭換一套記號來寫。空間方向與態向量確實有重要關聯，但兩者並非同一物件。我們會逐步建立這種關聯。
+
+\section{讓經典圖像失效}
+
+先刻意從一個經典圖像談起。把一個小磁體放進強外磁場中。除非磁體原本已經對齊磁場，否則它會繞著磁場進動。磁體輻射能量時，進動會逐漸衰減，最後穩定在最低能量的取向。選定外加磁場的方向，等待磁體弛豫，再撤去磁場，表面上看來，我們就能把磁矩製備在任意想要的方向。
+
+同一套裝置也提示了一種測量方法：沿選定方向施加磁場，觀察小磁體穩定下來時產生的輻射。依照經典圖像，與磁場對齊的磁體不應放出能量；起初與磁場方向相反的磁體應放出最多能量；初始方向介於兩者之間時，放出的能量也應介於兩者之間。如此一來，輻射能量便會隨角度連續變化。
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[>=Latex,thick,scale=0.92]
+  \draw[rounded corners] (-0.2,-0.2) rectangle (3.0,3.4);
+  \node at (1.4,3.05) {\small preparation};
+  \draw[->,very thick] (1.4,0.45) -- (1.4,2.55);
+  \node[right] at (1.4,2.35) {\small applied field};
+  \fill (1.4,1.35) circle (2.3pt);
+  \draw[->,very thick] (1.4,1.35) -- (2.25,1.95);
+  \node[below] at (1.4,0.15) {\small choose a direction and wait};
+
+  \draw[->] (3.25,1.6) -- (4.25,1.6);
+
+  \draw[rounded corners] (4.5,-0.2) rectangle (8.8,3.4);
+  \node at (6.65,3.05) {\small measurement in a fixed direction};
+  \draw[->,very thick] (5.15,0.45) -- (5.15,2.55);
+  \fill (5.15,1.35) circle (2.3pt);
+  \node[anchor=west] at (5.7,2.0) {no photon};
+  \node[anchor=west] at (5.7,1.25) {one photon of fixed energy};
+\node[anchor=west] at (5.7,0.5) {no intermediate outcome};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{操作上的疑問：製備方向可以連續改變，接續的探測器卻只有兩種可能輸出。}
+\end{figure}
+
+這個經典預測不適用於電子。開啟探測器的磁場後，只會出現兩種結果：
+\begin{enumerate}
+  \item 不發射光子；
+  \item 發射一個光子，其能量恰為下、上能階之間的固定能量差。
+\end{enumerate}
+光子所攜帶的能量絕不會是這個能量差的任意分數。連續變化的經典響應，在量子情況下成了二選一的答案。
+
+製備時選用的方向並沒有因此變得無關緊要；它會影響兩種結果的\emph{機率}。相對於探測器製備為向上的電子，測得向上的結果必然發生；製備為向下時，躍遷也必然發生。若製備方向為水平方向，沿豎直方向測量時，兩種結果出現的機率相等：
+\begin{equation}
+  P(\text{up})=\frac12,
+  \qquad
+  P(\text{down})=\frac12.
+  \label{eq:l02-horizontal-probabilities}
+\end{equation}
+因此，連續可變的一系列製備，會對應到結果為二值、而統計分布連續變化的測量。
+
+\begin{classroomqa}
+\lecturetimestamp{00:21:23}
+\audiencequestion{能不能用另一個小物體，例如第二個電子，來提供磁場，取代宏觀磁體？}
+\lecturerresponse{可以，但如此一來，兩個電子便構成聯合量子系統，而且可能彼此糾纏。這正是本課程接下來要談的內容；我們會等到掌握單一電子的狀態空間後再討論。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:22:17}
+\audiencequestion{是否必須重複整個製備與測量過程，才能求得機率分布？如果再次測量同一個電子，會發生什麼事？}
+\lecturerresponse{是的，要得到原本的機率分布，必須反覆進行製備方式相同的試驗。第一次測量之後，若對同一個電子重複相同的測量，會得到相同結果；這次測量已使電子相對於該探測器處於相應的製備狀態。等待輻射躍遷，本身也是一種可能的製備方式。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:23:48}
+\audiencequestion{這裡想像的是自由電子嗎？磁場會一直保持開啟嗎？}
+\lecturerresponse{我們只考慮自旋自由度，忽略電子的位置；電子可以自由移動，也可以受到其他方式的拘束。為了製備或測量，可以迅速開啟大型電磁鐵。這個簡化實驗只探討自旋。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:25:22}
+\audiencequestion{如果電子的自旋恰好製備為向下，然後反轉磁場，是否必定會發射光子？光子的能量從何而來？}
+\lecturerresponse{若製備方向恰好與磁場相反，躍遷發生的機率為一；若製備方向與磁場斜交，機率則較小。能量最終來自建立或反轉外部磁場時所做的功；計算能量時也必須把實驗裝置納入考量。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:27:31}
+\audiencequestion{光子何時出現？躍遷是瞬間發生的嗎？}
+\lecturerresponse{發射時間是隨機的，就像不穩定態的衰變時間一樣。我們可以指定特徵壽命或半衰期，而較強的磁場會縮短這個時間尺度。能量--時間不確定性會納入更精細的描述；但目前實驗上關注的是兩種可能輸出，以及測得的出現頻率。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:17}
+\audiencequestion{如果一束電子包含一百萬個以相同方式製備的電子，是否會產生可測量的光強？}
+\lecturerresponse{會。這群電子的光強能反映平均躍遷機率，但個別電子的發射時間仍然是隨機的。單次試驗無法呈現的機率分布，可以從整群電子的結果看出來。}
+\end{classroomqa}
+
+問題就從這裡開始。兩個彼此分離的經典點足以表示探測器的兩種答案，卻無法表示所有會改變這兩種答案機率的製備方式。我們需要另一種狀態空間。
+
+\section{複數與態空間的幾何}
+
+我們需要的態空間具有線性結構：其中的元素可以相加，也可以乘上純量，而純量是複數。寫成
+\begin{equation}
+  z=a+ib,
+  \qquad
+  i^2=-1,
+  \qquad
+  z^*=a-ib,
+  \label{eq:l02-complex-number}
+\end{equation}
+其中 \(a\) 和 \(b\) 是實數。取複共軛後，會得到正值
+\begin{align}
+  z^*z
+  &=(a-ib)(a+ib) \notag\\
+  &=a^2+b^2.
+  \label{eq:l02-complex-norm}
+\end{align}
+這個簡單的相消，正是機率法則在代數上的起點。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\linewidth]{lecture_02_figure_02.png}
+\caption{在把振幅解讀為機率之前，先在黑板上推導複共軛與 \(z^*z\)。}
+\lectureframe{00:37:10}
+\end{figure}
+
+複向量空間包含 \(\ket a,\ket b,\ldots\) 這類物件。只要 \(c\) 是複數，
+\begin{equation}
+  c\ket a,
+  \qquad
+  \ket a+\ket b
+\end{equation}
+仍然是向量。列向量提供了一種具體的表示方式：
+\begin{equation}
+  \begin{aligned}
+    \ket a&=
+    \begin{pmatrix}
+      a_1\\a_2\\ \vdots\\a_n
+    \end{pmatrix},
+    &
+    c\ket a&=
+    \begin{pmatrix}
+      ca_1\\ca_2\\ \vdots\\ca_n
+    \end{pmatrix},\\[0.7em]
+    \ket a+\ket b&=
+    \begin{pmatrix}
+      a_1+b_1\\a_2+b_2\\ \vdots\\a_n+b_n
+    \end{pmatrix}.
+  \end{aligned}
+  \label{eq:l02-vector-operations}
+\end{equation}
+甚至複數本身也構成一維複向量空間。描述電子自旋時，我們需要二維空間。
+
+對每個列向量右矢，都可以對應一個取共軛轉置的行向量左矢：
+\begin{equation}
+  \ket a=
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  \quad\longleftrightarrow\quad
+  \bra a=
+  \begin{pmatrix}a_1^*&a_2^*\end{pmatrix}.
+  \label{eq:l02-bra-ket-components}
+\end{equation}
+因此，內積為
+\begin{equation}
+  \braket{b}{a}=b_1^*a_1+b_2^*a_2,
+  \label{eq:l02-inner-product}
+\end{equation}
+而範數平方為
+\begin{equation}
+  \braket{a}{a}=|a_1|^2+|a_2|^2.
+  \label{eq:l02-norm}
+\end{equation}
+它是非負實數，因為每一項都具有 \(z^*z\) 的形式。
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:24}
+\audiencequestion{為什麼左矢符號上沒有明寫星號？}
+\lecturerresponse{把右矢轉為左矢，就表示要先轉置再取複共軛。括號方向反轉的記號已表示這項運算；再加一個星號，就把隱含的操作重複寫了一次。}
+\end{classroomqa}
+
+\section{量子位元的基底與波恩定則}
+
+現在回到探測器。令 \(\ket{+}\) 表示探測器的向上態，\(\ket{-}\) 表示向下態。一般的自旋態可以寫成線性組合
+\begin{equation}
+  \ket\psi=a_+\ket{+}+a_-\ket{-}
+  \quad\longleftrightarrow\quad
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-general-qubit}
+\end{equation}
+右矢中的加號與減號是標籤，不是算術運算。選定這組有序基底後，
+\begin{equation}
+  \ket{+}=
+  \begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{-}=
+  \begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l02-basis-columns}
+\end{equation}
+確實，
+\begin{equation}
+  a_+\begin{pmatrix}1\\0\end{pmatrix}
+  +a_-\begin{pmatrix}0\\1\end{pmatrix}
+  =
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-basis-expansion}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_02_figure_03.png}
+\caption{探測器的兩個態固定表示為兩個標準基底列向量。}
+\lectureframe{00:58:10}
+\end{figure}
+
+係數是機率振幅。探測器測得各結果的機率，等於相應振幅的模平方：
+\begin{equation}
+  P(+)=|a_+|^2,
+  \qquad
+  P(-)=|a_-|^2.
+  \label{eq:l02-born-rule}
+\end{equation}
+由於結果只有這兩種，
+\begin{equation}
+  \begin{gathered}
+    |a_+|^2+|a_-|^2=1,\\
+    \text{or equivalently}\qquad \braket{\psi}{\psi}=1.
+  \end{gathered}
+  \label{eq:l02-normalization}
+\end{equation}
+物理態向量因此必須歸一化。
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:54}
+\audiencequestion{分量中的加號和減號有代數意義嗎？}
+\lecturerresponse{在這裡，它們是兩個基底態及其係數的標籤。我們也可以稱它們為 \(1\) 和 \(2\)，或稱向上和向下。特別是，\(-\ket{+}\) 是 \(\ket{+}\) 的有效純量倍數；它並不是態 \(\ket{-}\)。}
+\end{classroomqa}
+
+將態乘上模長為一的複數，不會改變任何機率：
+\begin{equation}
+  \ket\psi\longmapsto e^{i\phi}\ket\psi,
+  \qquad
+  |e^{i\phi}a_\pm|^2=|a_\pm|^2.
+  \label{eq:l02-global-phase}
+\end{equation}
+因此，只相差整體相位的兩個向量代表同一個物理態。\emph{相對}相位則不同。例如，只把 \(a_-\) 換成 \(-a_-\)，一般無法靠將整個向量乘上一個相位來消除這項改變；它可能改變以另一組基底進行測量的結果。
+
+\begin{classroomqa}
+\lecturetimestamp{00:59:54}
+\audiencequestion{\(\ket{+}\)、\(-\ket{+}\)和\(e^{i\phi}\ket{+}\)代表不同的態嗎？如果只改變疊加中的一項符號，又會如何？}
+\lecturerresponse{它們是不同的數學向量；但若因子乘上整個向量，且模長為一，它們就代表同一個物理態。向上項與向下項之間的相對符號或相位，可以透過適當的測量觀察到，因此會改變物理態。}
+\end{classroomqa}
+
+這組基底是正交歸一的：
+\begin{align}
+  \braket{+}{+}&=1,
+  &\braket{-}{-}&=1,
+  \notag\\
+  \braket{+}{-}&=0,
+  &\braket{-}{+}&=0.
+  \label{eq:l02-orthonormality}
+\end{align}
+例如，
+\begin{equation}
+  \braket{+}{-}
+  =
+  \begin{pmatrix}1&0\end{pmatrix}
+  \begin{pmatrix}0\\1\end{pmatrix}
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_02_figure_04.png}
+\caption{在黑板上直接逐一驗算向上、向下基底的四個內積。}
+\lectureframe{01:05:00}
+\end{figure}
+
+在黑板上修正等權重態，是第一個實用的例子。列向量
+\begin{equation}
+  \begin{pmatrix}1\\1\end{pmatrix}
+\end{equation}
+的範數平方為 \(2\)，不是 \(1\)，因此尚未歸一化。除以 \(\sqrt2\) 即可修正：
+\begin{equation}
+  \ket{\rightarrow}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =
+  \frac{\ket{+}+\ket{-}}{\sqrt2}.
+  \label{eq:l02-horizontal-state}
+\end{equation}
+這個態以豎直方向的探測器測量時，向上與向下的機率為 \(P(+)=P(-)=1/2\)，對應於一次水平方向的製備。從 \((1,1)^T\) 修正為 \(2^{-1/2}(1,1)^T\)，並非只是表面形式上的調整：歸一化才能使振幅平方構成完整的機率分布。
+
+課間休息後，不妨再回到向量的兩種意義。空間箭頭有三個實分量。量子位元態向量有兩個複分量，也就是四個實數；施加歸一化條件並將整體相位視為相同狀態後，情況才會改變。兩種物件彼此相關，但其中一種並不是另一種的單純改名。目前我們還不需要完整的幾何對應關係。
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:56}
+\audiencequestion{我們如何得知其他量子系統的態空間維度？}
+\lecturerresponse{實驗會告訴我們，一次完備測量能區分多少個互斥結果。電子自旋有兩種這樣的結果，因此其態空間是二維複向量空間。自旋一系統在相應的測量中有三種結果，因此需要三個分量。}
+\end{classroomqa}
+
+\section{經典可觀測量與系綜平均}
+
+描述完態之後，接著來看可測量的物理量。在具有離散狀態 \(n\) 的經典系統中，可觀測量是定義在這些狀態上的實值函數 \(f_n\)。若狀態不確定，並以機率 \(p_n\) 描述，其系綜平均為
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =\sum_n p_n f_n.
+  \label{eq:l02-classical-expectation}
+\end{equation}
+這個記號並不表示單次測量一定會得到這個數值。
+
+以硬幣為例，指定 \(f_+=+1\) 和 \(f_-=-1\)。於是
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =p_+-p_-.
+  \label{eq:l02-coin-expectation}
+\end{equation}
+公平硬幣的平均值為零。若 \(p_+=3/4\) 且 \(p_-=1/4\)，平均值就是 \(1/2\)。\(0\) 和 \(1/2\) 都不是單次擲硬幣的結果；兩者分別概括許多次 \(+1\) 和 \(-1\) 的結果。
+
+\begin{classroomqa}
+\lecturetimestamp{01:23:30}
+\audiencequestion{如果單次試驗不可能得到這兩個數值，期望值怎麼會是零或二分之一？}
+\lecturerresponse{「期望值」這個詞可能會引起誤解。它指的是大量試驗的平均值，不是下一次試驗預期會看到的數值。公平情況下，\(+1\) 和 \(-1\) 的結果平均為零；若兩者的比例為三比一，平均值就是二分之一。}
+\end{classroomqa}
+
+一個特別有用的可觀測量，是用來判定系統是否處於某個狀態的指示函數：
+\begin{equation}
+  \chi_k(n)=
+  \begin{cases}
+    1,&n=k,\\
+    0,&n\ne k.
+  \end{cases}
+\end{equation}
+它的平均值為
+\begin{equation}
+  \langle\chi_k\rangle_{\mathrm{ens}}=p_k.
+\end{equation}
+因此，知道所有經典可觀測量的平均值，也就包含了機率分布的資訊。
+
+\section{矩陣與量子可觀測量}
+
+在量子力學中，可觀測量不是以定義在狀態空間各點上的函數表示，而是以線性算符表示。在有限維態空間中，這些算符可用矩陣表示。矩陣 \(M\) 將一個向量映射為另一個向量：
+\begin{equation}
+  M\ket a=\ket{a'}.
+  \label{eq:l02-matrix-action}
+\end{equation}
+對於二分量向量，
+\begin{equation}
+  \begin{pmatrix}
+    m_{11}&m_{12}\\
+    m_{21}&m_{22}
+  \end{pmatrix}
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  =
+  \begin{pmatrix}
+    m_{11}a_1+m_{12}a_2\\
+    m_{21}a_1+m_{22}a_2
+  \end{pmatrix}.
+  \label{eq:l02-matrix-components}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_02_figure_05.png}
+\caption{將矩陣作用逐列展開，就得到變換後向量的兩個分量。}
+\lectureframe{01:32:10}
+\end{figure}
+
+實二維向量能讓幾何圖像一目了然。矩陣
+\begin{equation}
+  \begin{pmatrix}2&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}1&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}2&0\\0&1\end{pmatrix}
+\end{equation}
+分別使所有方向等比例伸縮、只伸縮 \(y\) 分量，以及只伸縮 \(x\) 分量。矩陣
+\begin{equation}
+  \begin{pmatrix}0&1\\1&0\end{pmatrix}
+\end{equation}
+會交換兩個分量，並使平面以 \(x=y\) 為對稱軸反射。另一方面，
+\begin{equation}
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  \begin{pmatrix}v_x\\v_y\end{pmatrix}
+  =
+  \begin{pmatrix}v_y\\-v_x\end{pmatrix}
+  \label{eq:l02-quarter-turn}
+\end{equation}
+依照黑板上採用的慣例，會使向量順時針旋轉四分之一圈。剪切也提供另一個線性例子，不過其矩陣留作練習。關鍵限制在於線性：平面上並非所有可以想像的變換都能用矩陣表示。
+
+量子可觀測量屬於一個特殊類別。
+
+\begin{definition}
+矩陣 \(M\) 稱為 \emph{厄米} 矩陣，若滿足下列條件：
+\begin{equation}
+  M_{ij}=M_{ji}^*.
+  \label{eq:l02-hermitian-condition}
+\end{equation}
+\end{definition}
+
+對角條件 \(M_{ii}=M_{ii}^*\) 表示每個對角元素都必須是實數。非對角元素則成對出現，互為複共軛。例如，
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    r&4+i\\
+    4-i&s
+  \end{pmatrix},
+  \qquad r,s\in\mathbb R,
+  \label{eq:l02-hermitian-example}
+\end{equation}
+就是厄米矩陣。如果所有元素都是實數，厄米矩陣也就是對稱矩陣。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\linewidth]{lecture_02_figure_06.png}
+\caption{講座最後特別指出厄米矩陣的定義條件：對角線兩側的元素互為複共軛，\(M_{ij}=M_{ji}^*\)}
+\lectureframe{01:42:50}
+\end{figure}
+
+厄米矩陣用來表示可測量的物理量，包括沿 \(x\)、\(y\) 和 \(z\) 方向的自旋。它們不應與描述物理作用或時間演化的算符混為一談。
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:49}
+\audiencequestion{如果矩陣把態變換成另一個態，它是否必須保持態向量的歸一化？厄米矩陣會保持歸一化嗎？}
+\lecturerresponse{物理作用必須保持態向量的長度，但一般的厄米矩陣並不會。保持長度的變換稱為酉變換。厄米算符表示可觀測量；酉算符則表示作用於態的可逆變換。兩者之間的詳細關係接下來再談。}
+\end{classroomqa}
+
+至此，我們已建立討論下一步所需的基本語言。量子位元是二維複向量空間中的歸一化向量；振幅決定機率；可觀測量則以厄米矩陣表示。有了這些概念，就能討論任意方向上的自旋，最後也能談到糾纏對，而不必再回到已經失效的經典圖像。

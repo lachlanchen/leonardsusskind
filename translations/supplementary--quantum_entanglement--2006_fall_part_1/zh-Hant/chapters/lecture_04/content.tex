@@ -1,0 +1,723 @@
+\chapter{自旋幾何與第一個糾纏態}
+
+\lectureoverview{糾纏出現在由多個部分組成的系統中，但在單自旋的理論架構完備之前，無法如實理解雙自旋問題。因此，我們先考察沿任意軸的自旋，推導兩個方向之間的躍遷機率，將測量理解為濾波器，並指出對易性是可觀測量相容的判準。接著，透過計數可知，兩個自旋的純態數目多於分別製備兩個自旋所能提供的數目。多出來的態就是糾纏態；最簡單的例子已具有確定的成對關聯，但每個電子單獨看來都完全未極化。}
+
+\section{完成單自旋問題}
+
+貝爾定理可以先放一邊。糾纏始於兩個電子，但單一電子尚未討論完的結構會出現在每個計算中。因此，在把兩個兩態系統組合起來之前，讓我們先完成單一系統的討論。
+
+選取一個普通空間中的單位向量
+\begin{equation}
+  \hat n=(n_1,n_2,n_3),
+  \qquad
+  n_1^2+n_2^2+n_3^2=1.
+  \label{eq:l04-unit-pointer}
+\end{equation}
+標籤\(1,2,3\)也可以稱為\(x,y,z\)。重要的是，這些軸構成同一個一致的右手座標系。
+
+\begin{classroomqa}
+\lecturetimestamp{00:02:33}
+\audiencequestion{黑板上畫的座標三軸是右手座標系嗎？}
+\lecturerresponse{第一幅草圖是左手座標系。反轉第二軸，或一致地重新標記兩個軸，就能修正。以下計算只採用固定的右手座標約定；草圖碰巧畫成什麼方向並不涉及任何物理。}
+\end{classroomqa}
+
+自旋有三個可觀測分量，以泡利矩陣表示：
+\begin{equation}
+  \begin{aligned}
+    \sigma_1&=
+    \begin{pmatrix}0&1\\1&0\end{pmatrix},
+    &
+    \sigma_2&=
+    \begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.5em]
+    \sigma_3&=
+    \begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+  \end{aligned}
+\end{equation}
+沿\(\hat n\)方向的分量，是指向量與這個矩陣值向量在普通空間中的點積：
+\begin{equation}
+  \sigma_{\hat n}
+  \equiv
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3.
+  \label{eq:l04-sigma-dot-n}
+\end{equation}
+這個點積是在物理三維空間中計算的，不是兩個態向量的內積。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_02.png}
+\caption{沿\(\hat n\)方向的空間分量，可寫成三個矩陣可觀測量的線性組合。}
+\lectureframe{00:05:09}
+\end{figure}
+
+代入泡利矩陣可得
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3 & n_1-in_2\\
+    n_1+in_2 & -n_3
+  \end{pmatrix}.
+  \label{eq:l04-sigma-n-matrix}
+\end{equation}
+為了方便，記作
+\begin{equation}
+  n_-=n_1-in_2,
+  \qquad
+  n_+=n_1+in_2=n_-^*,
+\end{equation}
+於是
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}.
+\end{equation}
+對角元素為實數，非對角元素互為複共軛，因此這個算符是厄米算符。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_03.png}
+\caption{沿任意軸的自旋可觀測量，其明確的二乘二矩陣形式。}
+\lectureframe{00:07:34}
+\end{figure}
+
+從操作上說，測量\(\sigma_{\hat n}\)，就是讓強磁場沿\(\hat n\)方向，並觀察自旋相關的反應；講座中以是否發射光子來表示這種反應。矩陣表述與實驗室中的問題，是對同一項測量的兩種描述。
+
+接下來的計算會用到兩個簡單的恆等式。首先，
+\begin{equation}
+  \sigma_{\hat n}^{\,2}=I.
+  \label{eq:l04-sigma-n-square}
+\end{equation}
+這可以直接把方程~\eqref{eq:l04-sigma-n-matrix}平方得到，也可以利用
+\begin{equation}
+  \sigma_i^2=I,
+  \qquad
+  \sigma_i\sigma_j=-\sigma_j\sigma_i
+  \quad(i\ne j).
+\end{equation}
+推出。因此，\(\sigma_{\hat n}\)的每個本徵值\(\lambda\)都滿足\(\lambda^2=1\)，所以可能的測量結果只有
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+其次，
+\begin{equation}
+  n_+n_-
+  =n_1^2+n_2^2
+  =1-n_3^2
+  =(1-n_3)(1+n_3).
+  \label{eq:l04-nplus-nminus}
+\end{equation}
+這不是什麼深奧的定理，但這個恆等式能讓本徵向量的代數計算保持簡潔。
+
+\section{從製備到機率}
+
+先將電子製備成自旋沿\(\hat n\)方向、取值為\(+1\)的狀態，再沿另一個方向\(\hat m\)測量。單自旋問題的核心是
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  P(\sigma_{\hat m}=+1\mid\sigma_{\hat n}=+1).
+  \label{eq:l04-central-probability}
+\end{equation}
+對稱性暗示，答案應只取決於\(\hat n\)與\(\hat m\)之間的夾角，而且交換兩個方向後，答案應保持不變。這些預期可作為有用的檢查，但不能取代機率公設。
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:03}
+\audiencequestion{量子力學本身是否告訴我們，三個泡利矩陣就是自旋算符？還是我們從實驗中得知這一點？}
+\lecturerresponse{這項認定是量子力學長期累積的經驗架構之一，並非來自某個單獨實驗。反覆進行的自旋實驗揭示了機率規律；愛因斯坦、玻恩、海森堡、狄拉克等人則建立矩陣形式，將這些規律表述出來。這些公設是受實驗資料約束、且極為成功的假設。}
+\end{classroomqa}
+
+令
+\begin{equation}
+  \sigma_{\hat n}\ket{n,+}=\ket{n,+},
+  \qquad
+  \sigma_{\hat m}\ket{m,+}=\ket{m,+}.
+  \label{eq:l04-nm-eigenstates}
+\end{equation}
+符號\(n,+\)和\(m,+\)是態向量中的標籤，用來標示本徵值為\(+1\)的本徵態。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_04.png}
+\caption{沿\(\hat n\)與\(\hat m\)方向的自旋，其\(+1\)本徵態。}
+\lectureframe{00:17:36}
+\end{figure}
+
+首先要計算的是機率振幅
+\begin{equation}
+  \mathcal A(m,+\mid n,+)=\braket{m,+}{n,+}.
+\end{equation}
+機率則是振幅絕對值的平方：
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \left|\braket{m,+}{n,+}\right|^2.
+  \label{eq:l04-born-nm}
+\end{equation}
+先求振幅，再求機率：這個順序是量子理論的關鍵步驟。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_04_figure_05.png}
+\caption{製備成\(n\)態的狀態，與用來檢驗的\(m\)態之間的重疊，就是機率振幅。}
+\lectureframe{00:19:59}
+\end{figure}
+
+\subsection{求解本徵態}
+
+將\(\sigma_{\hat n}\)的一個候選\(+1\)本徵向量寫成
+\begin{equation}
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix}.
+\end{equation}
+歸一化可以稍後處理，而整體相位不影響物理。因此，只要不在南極點的座標圖中，我們就可以取\(\alpha=1\)，並寫成\(\beta=z\)。
+\begin{equation}
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}
+  \begin{pmatrix}1\\z\end{pmatrix}
+  =
+  \begin{pmatrix}1\\z\end{pmatrix}
+\end{equation}
+比較上方分量可得
+\begin{equation}
+  n_3+n_-z=1,
+  \qquad
+  z=\frac{1-n_3}{n_-}.
+  \label{eq:l04-z-solution}
+\end{equation}
+利用方程~\eqref{eq:l04-nplus-nminus}後，下方分量會給出相同的條件。
+
+這個未歸一化向量的範數平方為
+\begin{align}
+  \begin{pmatrix}
+    1&\dfrac{1-n_3}{n_+}
+  \end{pmatrix}
+  \begin{pmatrix}
+    1\\[3pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}
+  &=
+  1+\frac{(1-n_3)^2}{n_+n_-}
+  \notag\\
+  &=
+  1+\frac{1-n_3}{1+n_3}
+  =
+  \frac{2}{1+n_3}.
+  \label{eq:l04-unnormalized-norm}
+\end{align}
+因此，可以選取以下歸一化向量：
+\begin{equation}
+  \ket{n,+}
+  =
+  \sqrt{\frac{1+n_3}{2}}
+  \begin{pmatrix}
+    1\\[5pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}.
+  \label{eq:l04-normalized-n-state}
+\end{equation}
+在\(n_3=-1\)處，這個座標表示式雖然奇異，態本身卻沒有奇異；該本徵態就是\(\ket d=(0,1)^T\)。奇異性來自相位約定，而非自旋本身。
+
+將\(n\)換成\(m\)並取複共軛，可得
+\begin{equation}
+  \bra{m,+}
+  =
+  \sqrt{\frac{1+m_3}{2}}
+  \begin{pmatrix}
+    1&
+    \dfrac{1-m_3}{m_+}
+  \end{pmatrix}.
+\end{equation}
+這個內積看起來不太簡潔，將它乘上其複共軛後更是如此。反覆使用方程~\eqref{eq:l04-nplus-nminus}，可將結果化簡為
+\begin{equation}
+  \begin{aligned}
+    P(m,+\mid n,+)
+    &=\frac{1+n_1m_1+n_2m_2+n_3m_3}{2}\\
+    &=\frac{1+\hat n\cdot\hat m}{2}.
+  \end{aligned}
+  \label{eq:l04-spin-transition-probability}
+\end{equation}
+若\(\theta_{nm}\)表示兩個空間方向之間的夾角，則
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \frac{1+\cos\theta_{nm}}{2}
+  =
+  \cos^2\frac{\theta_{nm}}{2}.
+  \label{eq:l04-half-angle-probability}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:32:47}
+\audiencequestion{兩個態既然正交，內積不就應該為零嗎？}
+\lecturerresponse{不會。標記\(m,+\)與\(n,+\)指的是不同的測量軸，不是同一個固定可觀測量的不同本徵值。若\(m=n\)，兩個態便相同，內積為一。只有在物理方向相反時，兩個態才正交；此時一個是同一自旋分量的\(+1\)態，另一個是\(-1\)態。}
+\end{classroomqa}
+
+\section{機率公式的意義}
+
+方程~\eqref{eq:l04-spin-transition-probability}立刻通過三項檢驗：
+\begin{align}
+  \hat m=\hat n
+  &\quad\Longrightarrow\quad P=1,
+  \notag\\
+  \hat m=-\hat n
+  &\quad\Longrightarrow\quad P=0,
+  \notag\\
+  \hat m\cdot\hat n=0
+  &\quad\Longrightarrow\quad P=\frac12.
+\end{align}
+答案只取決於相對夾角，並且在\(m\leftrightarrow n\)的交換下保持對稱。將整個裝置旋轉，不會改變任何預測。
+
+這就是自旋二分之一的特殊之處。沿任何軸測量，結果仍只有\(+1\)或\(-1\)，不會是分數自旋值。旋轉方向的連續變化，呈現在這兩種離散結果的機率上。
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:20}
+\audiencequestion{我們怎麼知道重複試驗測量的是同一個電子？機率又是如何測量的？}
+\lecturerresponse{可以把一個電子限制在腔體中，透過其電通量監測守恆電荷；每次都將這個電子重新製備成沿\(\hat n\)方向的自旋態，再沿\(\hat m\)方向重複測量。另一種做法是將大量電子製備成相同狀態，每個電子各測量一次。在統計誤差範圍內，無論採用哪種做法，長期累積的正、負結果比例都相同。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:41:29}
+\audiencequestion{系綜中的所有成員都必須在同一次集體實驗中測量嗎？}
+\lecturerresponse{不必。每個成員都依相同程序製備，再分別測量。一百萬次這樣的試驗之所以構成一個統計實驗，只是因為這些結果的頻率都用來估計同一個機率。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:42:23}
+\audiencequestion{如果重複使用同一個電子，它能發射多少個光子？}
+\lecturerresponse{沒有固定的壽命配額。每個循環在磁場開啟時都需要外界做功。若自旋處於較高能量的取向，輸入的能量就能在弛豫時以光子的形式釋出。因此，原則上，裝置可以無限次重複製備與發射的循環。}
+\end{classroomqa}
+
+知道旋轉不變性後，可以很快得到這個公式：選擇\(\hat n\)作為第三軸，於是\(\ket{n,+}=(1,0)^T\)，再由\(\ket{m,+}\)的上方分量讀出機率。不過，若一開始就用這個捷徑，就會預先假定顯式計算剛剛證明的對稱性。
+
+\begin{classroomqa}
+\lecturetimestamp{00:43:33}
+\audiencequestion{能否選一個更好的基底，免去求解難看的任意軸本徵向量？}
+\lecturerresponse{可以；只要能使用旋轉和么正變換，就能將座標軸對準其中一個方向，簡化計算。在目前這個階段，顯式計算有其必要：它確認所選的泡利矩陣確實導出旋轉不變的答案，而不是預先假定這件事。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:48:30}
+\audiencequestion{答案只取決於夾角，背後的物理原因是什麼？}
+\lecturerresponse{從結構上說，這涉及量子理論中的對稱性：空間旋轉由作用於自旋態和可觀測量的么正變換表示。這套語言稍後才會介紹。目前，夾角依賴性是由泡利矩陣計算推導出來的結果。}
+\end{classroomqa}
+
+\section{測量是一種濾波器}
+
+測量不只是讀出一個數值。若測量\(\sigma_{\hat m}\)並得到\(+1\)，電子就會留在\(\ket{m,+}\)態。測量裝置同時扮演探測器與態製備器的角色，就像偏振器檢驗光子，並使透射的光子沿偏振器自身的軸偏振。
+
+這條態變化規則讓同時測量的問題變得具體。只有當存在同時為兩個可觀測量本徵向量的態時，兩者才可能同時具有可重複測得的確定值。
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:29}
+\audiencequestion{一次測量能否同時確定兩個不同的自旋分量，例如\(\sigma_1\)和\(\sigma_2\)？}
+\lecturerresponse{不能。兩個分量的本徵向量不同。測量其中一個分量後，電子會留在該分量的本徵態中，但這個態不是另一個分量的本徵態。因此，第一次測量會破壞第二次測量所需的確定性。}
+\end{classroomqa}
+
+有限維情形的一般敘述，用厄米算符來表達最為簡潔。
+
+\begin{theorem}
+兩個厄米算符\(A\)和\(B\)可同時對角化，若且唯若兩者對易：
+\begin{equation}
+  [A,B]\equiv AB-BA=0.
+  \label{eq:l04-commutator}
+\end{equation}
+等價地說，兩者存在一組完備的共同正交歸一本徵基底。
+\end{theorem}
+
+先看較直接的一個方向。假設
+\begin{equation}
+  A\ket{\alpha_i}=\lambda_i\ket{\alpha_i},
+  \qquad
+  B\ket{\alpha_i}=\mu_i\ket{\alpha_i}
+\end{equation}
+對一組完備基底成立。那麼
+\begin{align}
+  AB\ket{\alpha_i}
+  &=\lambda_i\mu_i\ket{\alpha_i},
+  \notag\\
+  BA\ket{\alpha_i}
+  &=\mu_i\lambda_i\ket{\alpha_i},
+\end{align}
+所以，\(AB\)與\(BA\)在每個基底向量上的作用相同。因此\(AB=BA\)。反過來，若厄米算符\(A\)和\(B\)對易，\(B\)就會保持\(A\)的每個本徵空間不變；在任一簡併本徵空間內將\(B\)對角化，即可得到一組共同本徵基底。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_06.png}
+\caption{兩個可觀測量可以有相同的本徵向量，卻對這些向量指定不同的本徵值。}
+\lectureframe{00:55:45}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:53:56}
+\audiencequestion{能否同時沿\(x\)和\(y\)方向施加磁場，並將此稱為同時測量？}
+\lecturerresponse{磁場會合成一個方向。因此，裝置測量的是沿合成方向的自旋，可能是在\(45^\circ\)方向，而不是分別測量\(\sigma_x\)和\(\sigma_y\)。這種做法得到的是第三個可觀測量，不是兩個相容的讀值。}
+\end{classroomqa}
+
+\section{每個單自旋純態都對應一個軸}
+
+現在反過來看本徵向量問題。給定任意一個歸一化旋量
+\begin{equation}
+  \ket\psi=
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix},
+  \qquad
+  |\alpha|^2+|\beta|^2=1,
+  \label{eq:l04-general-spinor}
+\end{equation}
+是否存在某個空間方向\(\hat n\)，使得
+\begin{equation}
+  \sigma_{\hat n}\ket\psi=\ket\psi?
+  \label{eq:l04-reverse-eigenproblem}
+\end{equation}
+答案是肯定的。講座先透過計數說明原因：兩個複數分量包含四個實數。歸一化條件去掉一個自由度，物理上無關的整體相位再去掉一個，剩下兩個。單位指向量也有兩個獨立的實參數，例如經度和緯度。
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:52}
+\audiencequestion{既然\(\alpha\)和\(\beta\)都是複數，為什麼這個態只有兩個自由度？}
+\lecturerresponse{一開始有四個實分量。歸一化條件去掉一個實自由度；將整個態乘以\(e^{i\theta}\)不會改變任何機率，因此共同相位又去掉一個自由度。最後剩下兩個有物理意義的參數，正好對應單位指向量的兩個角度。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:20}
+\audiencequestion{我們還需要求出本徵值嗎？}
+\lecturerresponse{這裡的目標本徵值已固定為\(+1\)。我們只要找出一個方向，使給定的旋量是該方向上的自旋向上態。反向的指向量則會將同一條態射線描述為本徵值為\(-1\)的自旋向下態。}
+\end{classroomqa}
+
+計數說明了為何這種對應應該存在；直接構造則確認了這一點。定義
+\begin{align}
+  n_1&=\bra\psi\sigma_1\ket\psi
+      =2\operatorname{Re}(\alpha^*\beta),
+  \notag\\
+  n_2&=\bra\psi\sigma_2\ket\psi
+      =2\operatorname{Im}(\alpha^*\beta),
+  \notag\\
+  n_3&=\bra\psi\sigma_3\ket\psi
+      =|\alpha|^2-|\beta|^2.
+  \label{eq:l04-bloch-components}
+\end{align}
+歸一化條件給出\(n_1^2+n_2^2+n_3^2=1\)，直接代入則得到方程~\eqref{eq:l04-reverse-eigenproblem}。因此，每個單自旋純態都是沿某個空間軸的自旋向上態。
+
+這項敘述也有操作上的做法。製備許多個相同的未知純態副本，沿試探方向分批測量，調整磁鐵，找出讓每次測量結果都為自旋向上的方向。有限筆資料只能在不確定範圍內確定該方向，但理想態對應一個精確的軸。
+
+提問是這種方法的一部分，不是對它的打斷。一段簡短的課堂插話回憶十歲孩子自由提問：弦理論、額外維度，以及周遭的中微子會不會引起頭痛。問題細節可能不正確，但願意指出自己困惑之處，仍然很有價值。
+
+\section{兩個自旋與局域算符}
+
+在組合兩個自旋之前，先記下泡利矩陣作用於\(\sigma_3\)基底的方式：
+\begin{align}
+  \sigma_1\ket u&=\ket d,
+  &
+  \sigma_1\ket d&=\ket u,
+  \notag\\
+  \sigma_2\ket u&=i\ket d,
+  &
+  \sigma_2\ket d&=-i\ket u,
+  \notag\\
+  \sigma_3\ket u&=\ket u,
+  &
+  \sigma_3\ket d&=-\ket d.
+  \label{eq:l04-pauli-action-table}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\linewidth]{lecture_04_figure_07.png}
+\caption{泡利矩陣作用表將矩陣改寫成對自旋向上、向下基底的作用規則。}
+\lectureframe{01:09:35}
+\end{figure}
+
+現在設想兩個電子位於可區分的位置，只有自旋會改變。四個基底態為
+\begin{equation}
+  \ket{uu},
+  \qquad
+  \ket{du},
+  \qquad
+  \ket{ud},
+  \qquad
+  \ket{dd}.
+  \label{eq:l04-two-spin-basis}
+\end{equation}
+第一個標籤屬於電子\(1\)，第二個屬於電子\(2\)。這四個態彼此正交歸一，因為它們代表兩次第三分量測量的不同聯合結果。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_08.png}
+\caption{四個乘積基底態張成雙自旋態空間。}
+\lectureframe{01:11:40}
+\end{figure}
+
+將作用於電子\(1\)的算符記為\(\sigma_i\)，作用於電子\(2\)的算符記為\(\tau_i\)。更明確地說，
+\begin{equation}
+  \sigma_i\equiv\sigma_i\otimes I,
+  \qquad
+  \tau_i\equiv I\otimes\sigma_i.
+\end{equation}
+第一組算符只作用於第一個標籤，第二組則只作用於第二個標籤：
+\begin{align}
+  \sigma_1\ket{ud}&=\ket{dd},
+  &
+  \sigma_1\ket{dd}&=\ket{ud},
+  \notag\\
+  \sigma_3\ket{dd}&=-\ket{dd},
+  &
+  \tau_2\ket{ud}&=-i\ket{uu}.
+  \label{eq:l04-local-operator-examples}
+\end{align}
+只要知道某個算符對四個基底態的作用方式，利用線性性就能確定它對所有雙自旋態的作用。
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:47}
+\audiencequestion{為什麼因子\(-i\)寫在態向量外面？它會作用於兩個電子嗎？}
+\lecturerresponse{態向量內的符號是基底組態的標籤。複數純量乘上整個態向量，因此標準記號會把它寫在外面。這裡的因子來自\(\tau_2\)作用於第二個標籤；將它寫在外面，不表示另有一個物理操作作用於兩個電子。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:44}
+\audiencequestion{乘以\(i\)是否代表電子在普通空間中旋轉？}
+\lecturerresponse{單靠這個因子並不代表。它是態空間中的複數純量乘法。之後會用特定的么正算符表示空間旋轉；作用表中的單獨因子\(i\)並非實空間中的字面轉動。}
+\end{classroomqa}
+
+\section{六個參數，而非四個}
+
+這一對粒子的一般純態為
+\begin{equation}
+  \ket\Psi
+  =
+  c_{uu}\ket{uu}
+  +c_{du}\ket{du}
+  +c_{ud}\ket{ud}
+  +c_{dd}\ket{dd}.
+  \label{eq:l04-general-two-spin-state}
+\end{equation}
+四個複數係數共包含八個實數。歸一化條件去掉一個自由度，整體相位再去掉一個：
+\begin{equation}
+  8-1-1=6.
+  \label{eq:l04-two-spin-parameter-count}
+\end{equation}
+分別製備的電子\(1\)純態需要兩個實參數，電子\(2\)也需要兩個，總共只有四個。少掉的兩個參數並非計數錯誤，而是表示這一對粒子存在某些純態，無法為其中各部分分別指定純態。
+
+先找出哪些態確實能由分別製備得到。若
+\begin{equation}
+  \ket{\psi_1}=\alpha_1\ket u+\beta_1\ket d,
+  \qquad
+  \ket{\psi_2}=\alpha_2\ket u+\beta_2\ket d,
+\end{equation}
+則
+\begin{align}
+  \ket{\psi_1}\otimes\ket{\psi_2}
+  &=
+  \alpha_1\alpha_2\ket{uu}
+  +\alpha_1\beta_2\ket{ud}
+  \notag\\
+  &\quad
+  +\beta_1\alpha_2\ket{du}
+  +\beta_1\beta_2\ket{dd}.
+  \label{eq:l04-product-expansion}
+\end{align}
+這就是\emph{乘積態}。每個電子都有自己的極化軸，就像兩個磁態分別獨立製備時一樣。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_09.png}
+\caption{兩個單自旋態相乘，會得到受限的四項乘積態。}
+\lectureframe{01:25:15}
+\end{figure}
+
+若將四個係數排成
+\begin{equation}
+  C=
+  \begin{pmatrix}
+    c_{uu}&c_{ud}\\
+    c_{du}&c_{dd}
+  \end{pmatrix},
+\end{equation}
+則此態是乘積態，若且唯若\(C\)的秩為一；等價地，
+\begin{equation}
+  c_{uu}c_{dd}-c_{ud}c_{du}=0.
+  \label{eq:l04-product-condition}
+\end{equation}
+大多數四個振幅的取值都不滿足這個條件，因此對應的是糾纏態。
+
+\section{第一個糾纏態}
+
+講座中的第一個例子是
+\begin{equation}
+  \ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}+\ket{du}\right).
+  \label{eq:l04-psi-plus}
+\end{equation}
+這個態無法分解成電子\(1\)的一個態與電子\(2\)的一個態。若第三軸測量發現電子\(2\)自旋向下，電子\(1\)就自旋向上；若測得電子\(2\)自旋向上，電子\(1\)就自旋向下。這一對粒子具有確定的資訊，但各粒子單獨都不具備這些資訊。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_10.png}
+\caption{第一個糾纏疊加態包含一個自旋向上與一個自旋向下的粒子，卻沒有預先把任一結果指定給其中某個粒子。}
+\lectureframe{01:29:30}
+\end{figure}
+
+要了解單獨觀察任一電子時的情況，計算三個局域期望值。先看第一個分量：
+\begin{equation}
+  \sigma_1\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{dd}+\ket{uu}\right),
+\end{equation}
+這個態與\(\ket{\psi_+}\)正交，因此
+\begin{equation}
+  \bra{\psi_+}\sigma_1\ket{\psi_+}=0.
+\end{equation}
+同理，
+\begin{equation}
+  \sigma_2\ket{\psi_+}
+  =
+  \frac{i}{\sqrt2}
+  \left(\ket{dd}-\ket{uu}\right),
+\end{equation}
+所以
+\begin{equation}
+  \bra{\psi_+}\sigma_2\ket{\psi_+}=0.
+\end{equation}
+再看第三個分量：
+\begin{equation}
+  \sigma_3\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right),
+\end{equation}
+兩個對角項互相抵消：
+\begin{equation}
+  \bra{\psi_+}\sigma_3\ket{\psi_+}
+  =\frac12(1-1)=0.
+\end{equation}
+因此
+\begin{equation}
+  \begin{aligned}
+    \bra{\psi_+}\sigma_i\ket{\psi_+}&=0,\\
+    \bra{\psi_+}\tau_i\ket{\psi_+}&=0,
+    \qquad i=1,2,3.
+  \end{aligned}
+  \label{eq:l04-zero-local-spin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_11.png}
+\caption{變換後的態，以及\(1-1=0\)的相消，說明局域自旋期望值為零。}
+\lectureframe{01:35:50}
+\end{figure}
+
+對任意方向，
+\begin{equation}
+  \bra{\psi_+}\sigma_{\hat n}\ket{\psi_+}=0,
+  \qquad
+  \bra{\psi_+}\tau_{\hat n}\ket{\psi_+}=0.
+  \label{eq:l04-zero-arbitrary-local-spin}
+\end{equation}
+由於每次局域測量的結果只有\(\pm1\)，期望值為零就表示
+\begin{equation}
+  P(\sigma_{\hat n}=+1)
+  =
+  P(\sigma_{\hat n}=-1)
+  =
+  \frac12,
+\end{equation}
+第二個電子也一樣。無論選擇哪個方向，都無法使任一電子單獨極化。對單自旋純態而言，這是不可能的；但對糾纏純態中的一個部分而言，完全可能。
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:23}
+\audiencequestion{局域測量結果各占一半，和測量一個電子便能得知另一個電子的結果，是同一個論點嗎？}
+\lecturerresponse{不是。先不考慮電子\(2\)：只測量電子\(1\)，無論選擇哪個方向，結果都各占一半。這表示它沒有局域極化。關聯則是另一項聯合性質，描述兩個測量結果之間的關係。糾纏同時具有這兩個特徵，但不能以其中一項取代對另一項的證明。}
+\end{classroomqa}
+
+\section{貝爾定理之前的關聯}
+
+關聯本身並非量子系統獨有。把一枚便士和一枚角幣混在一起，不看它們就分開，再檢查其中一枚。檢查之前，拿到便士或角幣的機率各半；但若在這裡發現便士，就知道遠處那枚是角幣。即使單獨看任一部分都沒有確定資訊，這一對仍攜帶確定資訊。
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:45}
+\audiencequestion{便士與角幣的推論，是否只有在我們知道原先那一對恰好各有一枚時才成立？}
+\lecturerresponse{正是如此。這項經典推論依賴於可信的製備。同樣地，量子關聯的預測也只有在雙電子系統已製備成指定的聯合態時才適用。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:09}
+\audiencequestion{對於\(\ket{\psi_+}\)，兩次第三分量測量的結果都是自旋向上的機率是否為零？這能證明兩個自旋沿每個軸的方向都相反嗎？}
+\lecturerresponse{在第三軸基底中，測得\(uu\)的機率為零，而且兩個第三軸測量結果相反。但對這個正號態而言，第二個結論說得太強了。它在每個方向上的局域自旋都為零，但聯合關聯會隨方向而變。沿所有方向都得到相反結果的，是講座最後介紹的負號單態。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:51}
+\audiencequestion{能不能把這對經典粒子想成兩枚焊在一起的硬幣，讓兩枚硬幣的朝上面永遠相反？}
+\lecturerresponse{只要搖晃不會破壞兩者的連結，這可以是形成固定反關聯的一種經典機制。它仍是一種在製備時就確立的隱藏經典配置。這個類比是刻意保留為暫時性的；貝爾定理將檢驗這類經典解釋各自在哪裡失效。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:32}
+\audiencequestion{如果一個結果已經決定了另一個粒子的結果，大數定律又在哪裡發揮作用？}
+\lecturerresponse{條件確定性，是給定聯合態與其中一個結果後，對單次試驗所作的敘述。仍須進行重複試驗，才能在實驗上確認預期的關聯是否可靠，並估計期望值與非理想機率。大數定律將重複試驗的頻率與理論分布聯繫起來。}
+\end{classroomqa}
+
+兩位觀察者之間可能相隔極遠。觀察其中一個結果，會改變當地觀察者對另一個結果的認知，但不會向遠方的觀察者傳送可控制的訊息。到目前為止，情況仍類似於分開的便士與角幣。
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:46}
+\audiencequestion{以分開的便士與角幣作為圖像，是理解量子粒子的正確方式嗎？}
+\lecturerresponse{這是合適的第一個經典類比，但不是量子情形的最終解釋。貝爾定理探討的是：一對帶有預先存在之經典性質的粒子，與一對糾纏量子粒子之間可測量的差異。要等必要的關聯都計算出來後，才會討論這項區別。}
+\end{classroomqa}
+
+\section{單態及其製備}
+
+在黑板計算的最後，把加號改成減號：
+\begin{equation}
+  \ket{\psi_-}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right).
+  \label{eq:l04-singlet}
+\end{equation}
+這項改變不影響方程~\eqref{eq:l04-zero-local-spin}中的局域期望值，仍然是零；第三軸測量結果也仍然相反。但橫向的聯合關聯會改變。這個負號態就是自旋單態，是一種旋轉不變態，兩個自旋沿任何共同測量軸的方向都相反。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_12.png}
+\caption{黑板上的最後一步，將對稱疊加態改成負號單態，同時維持局域自旋為零。}
+\lectureframe{01:47:25}
+\end{figure}
+
+在這裡採用的簡化物理圖像中，兩個局域電子磁矩靠得夠近、足以彼此作用時，較高能量的排列會透過發射光子而弛豫。若沒有偏好的外部軸向，能量較低的自旋態就以旋轉對稱的單態表示。要確認確切的交互作用，以及相對相位為何必須為負，還需要進一步計算。
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:02}
+\audiencequestion{實際上只要把兩個電子靠近，然後等待就能製備嗎？}
+\lecturerresponse{在這個理想化模型中，是的：讓自旋—自旋交互作用發生，並使系統經由輻射弛豫到較低能態。只要兩個電子靠得夠近，且維持足夠長的時間，讓磁交互作用發揮作用即可。實際的製備程序也必須控制軌道態及其他競爭性交互作用。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:16}
+\audiencequestion{這只是在說泡利不相容原理嗎？}
+\lecturerresponse{不是。這兩個電子被指定在可區分的空間位置，因此討論它們的自旋時，還不需要將重疊的軌域波函數反對稱化。只有當相同的電子佔據彼此重疊的單粒子態時，不相容原理才會相關；目前的糾纏論證即使對位於分離位置的電子也成立。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:31}
+\audiencequestion{一般的電子束會自然包含這種彼此作用的電子對嗎？}
+\lecturerresponse{通常不會。電子束很稀薄，在可用的飛行時間內，典型電子彼此相距太遠，自旋間的作用不足以產生顯著影響。碰撞或刻意施加的束縛相互作用可以產生糾纏電子對，但僅僅同處一束並不會如此。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:51:45}
+\audiencequestion{磁相互作用需要多近的距離？}
+\lecturerresponse{這沒有普遍適用的明確臨界距離；關鍵在於相互作用的時間尺度。講課中給出的快速耦合粗略微觀估計，量級約為 \(10^{-11}\,\mathrm{cm}\)。距離較遠時，能量分裂較小，放出的光子波長較長，弛豫所需時間也長得多。原則上，等待足夠長的時間可以彌補這點；但一般電子束提供的時間太短。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:53:10}
+\audiencequestion{為什麼單態中必須是負號，而不是正號？}
+\lecturerresponse{單看局部各自呈現的二分之一機率，並不容易看出原因，因為兩種相對相位所呈現的統計結果相同。答案在於這個態在旋轉下如何變換，以及相互作用如何選出總自旋為零的態。推導會在下一講進行。}
+\end{classroomqa}
+
+課程現在已跨過預定的門檻。單一純自旋態總有一個確定的自旋向上軸。純態的電子對不必讓其中任何一個電子各自處於純態，卻能編碼兩者測量結果之間的精確關係。這種額外結構就是糾纏；貝爾定理將說明，為什麼經典的便士與一角硬幣故事無法重現其中所有關係。

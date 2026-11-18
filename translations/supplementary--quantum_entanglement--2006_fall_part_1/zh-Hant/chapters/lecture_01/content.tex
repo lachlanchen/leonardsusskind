@@ -1,0 +1,448 @@
+\chapter{經典資訊、可逆動力學與矩陣}
+
+\lectureoverview{量子力學要求我們在日常直覺無法適用的範圍之外進行推理。因此，我們先退一步，從經典資訊談起：位元、組態與可逆的更新定律。同樣的討論也自然引出向量與矩陣，作為描述量子位元的語言。}
+
+\section{為不適用的世界所塑造的直覺}
+
+我們的物理直覺由來已久。早在有人寫下方程式之前，追逐獵物的動物就必須估計相對速度與方向。獅子若正逼近羚羊，就得對兩者之間不斷變化的距離作出反應，也就是以隱含的方式對相對速度作出反應。善於作出這類判斷的神經系統較有利於生存；不善於判斷的神經系統則很少留下後代。我們所謂的運動常識，大多是在這個日常世界中形成的。
+
+這份遺產很有用，適用範圍卻很有限。日常生活中沒有任何東西以接近光速的速度運動，因此演化並未賦予我們理解相對論時空的本能。物理學家先學習抽象幾何，之後才逐漸建立對它的新直覺。量子力學更難。我們熟悉的粒子圖像來自石頭和箭：物體在每一瞬間都有位置，位置依時間先後連成軌跡，而位置的變化定義了速度。電子並不符合這幅圖像。位置的不確定性與經典軌跡的缺失，在塑造我們感官的經驗中都找不到對應。
+
+直覺失靈並不構成悖論。只有當適應石頭、動物和一般速度的本能竟能預先知曉電子時，才會有悖論。正確的做法，是從少數精確的規則出發，建立另一種直覺。這裡不會採取通常從波動力學和Schr\"odinger方程式入門的路線，而會著重於量子力學的邏輯結構與量子資訊。在探問量子位元是什麼之前，我們必須先確切了解普通位元如何運作。
+
+\section{位元與資訊量}
+
+物理學與資訊密不可分。有時資訊以實數表示，但最簡單的資訊，是對只有兩種可能答案的問題作出回答：是或否、正面或反面、上或下。
+
+\begin{definition}
+\emph{經典位元}是只有兩種可能答案的物理問題。
+\end{definition}
+
+我們可以用\(0\)和\(1\)標記這兩種答案。這些標記本身沒有內在意義；任何兩個不同符號都可以。狄拉克記號很快就會不可或缺，因此即使目前還用不上，我們也先介紹：
+\begin{equation}
+  \ket{0},
+  \qquad
+  \ket{1}.
+\end{equation}
+豎線與尖括號構成一個\emph{右矢}，也就是左矢--右矢記號中的右半部。僅僅更換記號，並不會因此引入任何量子概念。
+
+對多個可區分的位元，依固定順序寫下答案。例如，六枚可區分的硬幣可以有以下組態：
+\begin{equation}
+  \ket{0\,1\,1\,0\,1\,0}.
+\end{equation}
+順序一旦明確，逗號就可以省略。一個位元有兩種可能狀態，兩個位元有四種；每增加一個位元，狀態數就加倍。因此，\(n\)位元系統有
+\begin{equation}
+  N_s=2^n
+  \label{eq:l01-state-count}
+\end{equation}
+種狀態。反過來，
+\begin{equation}
+  n=\log_2 N_s.
+  \label{eq:l01-bits-from-states}
+\end{equation}
+
+式~\eqref{eq:l01-bits-from-states}提示了一個實用的定義，即使狀態數不是二的冪也適用：
+\begin{equation}
+  I=\log_2 N_s.
+  \label{eq:l01-information}
+\end{equation}
+因此，六面骰子所含的資訊量是\(\log_2 6\)位元。這個數值不必是整數。由二進位開關直接組成的系統是方便的例子，但對數才是更一般的度量方式。
+
+\section{編碼看似連續的世界}
+
+位元不限於硬幣。任何以有限精度得知的測量量，都能寫成有限的二進位字串。例如，假設房間溫度只需測量到指定的有效位數。將測得的數值以二進位表示，並保留達到該精度所需的位數即可。精度愈高，字串愈長，但原理不變。
+
+空間中變化的場也可以用類似方式處理。把房間細分為排列有序的格點單元，以有限精度記錄每個單元中的場值，再將所得的二進位字串串接起來。縮小單元可以提高空間解析度；保留更多二進位位數則可以提高場值的解析度。溫度場、電場和磁場都能以這種方式編碼到任意指定的有限精度。
+
+粒子組態提供了更直觀的二進位圖像。把空間細分成足夠小的單元，使每個單元至多容納一個粒子。定義
+\begin{equation}
+  n_i=
+  \begin{cases}
+    1,&\text{cell \(i\) is occupied},\\
+    0,&\text{cell \(i\) is empty}.
+  \end{cases}
+  \label{eq:l01-occupancy-bit}
+\end{equation}
+完整組態就是以下有序字串：
+\begin{equation}
+  \ket{n_1n_2n_3\cdots}.
+\end{equation}
+它是對一連串是非問題所作的極長回答：第一個單元中有粒子嗎？第二個單元中有嗎？依此類推。這就是\emph{二十問}遊戲的物理版本，只不過問題數量可能極其龐大。
+
+這個構造說明了為什麼數位電腦能模擬物理。電腦儲存有限字串，而有限解析度會將測量量和場轉換成這類字串。透過細化格點、縮短時間步長或增加保留的位數，可以有系統地改善近似。
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:43}
+\audiencequestion{溫度表示的精度可以任意選擇嗎？}
+\lecturerresponse{精度取決於我們想要的近似程度。有限字串只能提供有限精度；保留更多二進位位數，就能得到更精細的近似。這裡並不是說有限字串能精確指定任意經典實數。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:30:11}
+\audiencequestion{一般實數，特別是無理數，該怎麼處理？}
+\lecturerresponse{精確表示一個實數可能需要無窮多位。有些有理數的二進位展開會循環；一般的無理數展開則永不終止。實際的電腦總是只保留有限位數。重點在於，任何指定的有限精度都能編碼，而不是每個經典實數都有有限的精確表示。}
+\end{classroomqa}
+
+\section{狀態與運動定律}
+
+到目前為止，我們描述的是系統在某一瞬間的狀態。要描述運動，還需要第二個要素。
+
+\begin{definition}
+\emph{組態}是系統在指定時刻的完整狀態。離散時間運動定律，是將每個組態映射至下一個時間步組態的規則。
+\end{definition}
+
+這項區分看似基本，卻至關重要。電子分布的快照是一個組態，還不是一條軌道。若將空間換成格點、時間換成序列\(t_0,t_1,t_2,\ldots\)，運動便是以下一連串狀態的演變：
+\begin{equation}
+  \ket{s(t_0)}
+  \longmapsto
+  \ket{s(t_1)}
+  \longmapsto
+  \ket{s(t_2)}
+  \longmapsto\cdots.
+  \label{eq:l01-discrete-motion}
+\end{equation}
+因此，物理模型既需要一組可能狀態，也需要一條更新規則。
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:12}
+\audiencequestion{這種格點描述如何說明電子沿軌道運動？}
+\lecturerresponse{先只指定某一瞬間的組態：哪些格點單元被佔據；若模型包含原子核，也指定原子核固定不動。接著將時間離散化。軌道運動就是將一個佔據狀態字串更新為下一個字串的規則。由於格點單元的排列，這條規則可能很複雜，但仍然是資訊的更新。}
+\end{classroomqa}
+
+畫出抽象的\emph{狀態空間}會有所幫助。空間中的每個點代表一個完整組態，而非普通空間中的位置。一個\(10\times10\)佔據格點包含一百個位元，因此有\(2^{100}\)種可能組態。\editorialnote{口頭講課在說明這個例子時曾簡略地說成\(10^{100}\)；根據位元數，正確數值應為\(2^{100}\)。}每一種組態都是狀態空間中的一個點。
+
+一個位元只有兩個狀態。恆等更新定律使兩者都保持不變：
+\begin{equation}
+  0\mapsto0,
+  \qquad
+  1\mapsto1.
+  \label{eq:l01-identity-update}
+\end{equation}
+另一種可逆的可能更新，是將兩者互換：
+\begin{equation}
+  0\mapsto1,
+  \qquad
+  1\mapsto0.
+  \label{eq:l01-flip-update}
+\end{equation}
+這是位元翻轉。要找一個自行演化的物理例子，比手動操作的電燈開關更不容易，因為人為介入會擴大系統。晝夜可以近似看成兩態循環；單擺也會在兩個極端位置之間往復，但其完整狀態還包括所有中間位置與速度。
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:38}
+\audiencequestion{一般的電燈開關可以作為位元翻轉定律的例子嗎？}
+\lecturerresponse{若由人來切換，就不算，因為此時開關並非自行演化；人也屬於擴大後的動力學系統。我們要找的是一個封閉系統，其自身定律會使狀態交替變化。晝夜讓我們看到這個想法，而單擺則提醒我們，真實例子通常不只包含兩種狀態。}
+\end{classroomqa}
+
+兩位元系統有四種組態。一種更新定律可以讓四種組態依序構成單一循環；另一種則可以由兩個互不相連的二態循環構成。這些是組態邏輯空間中的循環，不一定是物理空間中的循環。箭頭表示定律：無論系統從哪個狀態開始，沿著箭頭就能得知它接下來的歷程。
+
+\section{可逆性與區別的保存}
+
+並非所有箭頭圖都代表相同的物理情況。考慮一條更新規則，讓兩個不同狀態合併到同一個後繼狀態：
+\begin{equation}
+  a\mapsto c,
+  \qquad
+  b\mapsto c.
+  \label{eq:l01-merging-update}
+\end{equation}
+無論從\(a\)或\(b\)出發，下一個狀態都很明確；但到達\(c\)之後，我們無法判定先前是哪一種情況。\(a\)與\(b\)之間的區別已經消失。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_01_figure_02.png}
+\caption{討論可逆性時，黑板上保留了幾種更新圖：封閉循環與合併模式並列，旁邊還寫著量子術語\emph{么正性}。}
+\lectureframe{00:53:21}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Latex,thick,node distance=1.15cm]
+  \node[circle,fill,inner sep=1.8pt,label=above:\(1\)] (r1) {};
+  \node[circle,fill,inner sep=1.8pt,right=of r1,label=above:\(2\)] (r2) {};
+  \node[circle,fill,inner sep=1.8pt,below=of r2,label=below:\(3\)] (r3) {};
+  \node[circle,fill,inner sep=1.8pt,left=of r3,label=below:\(4\)] (r4) {};
+  \draw[->] (r1) -- (r2);
+  \draw[->] (r2) -- (r3);
+  \draw[->] (r3) -- (r4);
+  \draw[->] (r4) -- (r1);
+  \node[below=0.5cm of r4,anchor=north west] {\small reversible cycle};
+
+  \node[circle,fill,inner sep=1.8pt,right=4.2cm of r1,label=above:\(a\)] (a) {};
+  \node[circle,fill,inner sep=1.8pt,below=1.25cm of a,label=below:\(b\)] (b) {};
+  \node[circle,fill,inner sep=1.8pt,right=1.6cm of a,yshift=-0.625cm,label=above:\(c\)] (c) {};
+  \node[circle,fill,inner sep=1.8pt,right=of c,label=above:\(d\)] (d) {};
+  \draw[->] (a) -- (c);
+  \draw[->] (b) -- (c);
+  \draw[->] (c) -- (d);
+  \node[below=0.55cm of b,anchor=north west] {\small information-losing merge};
+\end{tikzpicture}
+\caption{可逆規則為每個狀態指定唯一的前驅和後繼。合併規則則有唯一的未來，過去卻無法確定。}
+\end{figure}
+
+保留所有自由度時，基本的經典動力學不允許這種資訊損失。可逆性包含以下兩個條件：
+\begin{equation}
+  \boxed{\begin{gathered}
+    \text{one unique future and one unique past}\\
+    \text{for every state}
+  \end{gathered}.}
+  \label{eq:l01-reversibility}
+\end{equation}
+因此，有限狀態空間中的更新必須是置換。每個狀態恰有一條出箭頭和一條入箭頭，所以圖形會分解成互不相交的循環。
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:32}
+\audiencequestion{合併圖有什麼不同？}
+\lecturerresponse{它並非完全由循環構成。更根本地說，系統到達合併狀態後，我們無法得知它先前來自哪個狀態。我們能推知未來，卻不能重建過去。過去曾有的一項位元區別已經丟失。}
+\end{classroomqa}
+
+這個概念稱為\emph{時間可逆性}，不一定等同於精確的時間反演對稱性。順時針循環有明確的前進方向。原本的定律不會讓系統逆時針運行，但可以構造一條使其逆時針運行的逆定律。精確的時間反演對稱性還會追問：施加適當的反演操作後，得到的動力學定律是否與原來相同？可逆性本身只要求能否唯一地反向重建歷程。
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:58}
+\audiencequestion{過去的唯一性就是時間反演對稱性嗎？}
+\lecturerresponse{不完全是。循環的箭頭可能只朝一個方向，因此定律具有方向性。可逆性是指可以反轉所有箭頭，構造出明確定義的逆定律。但這本身並不表示逆定律與原定律相同。}
+\end{classroomqa}
+
+我們也不該在合併狀態處加上兩條出箭頭，試圖藉此修補不可逆圖。那會以另一種方式使反向演化變得不確定：系統必須有一條機率性指令，例如以\(30\%\)的機率選擇一個分支，以\(70\%\)的機率選擇另一個分支。我們仍在建立確定性的經典動力學；在其中，一個當前狀態會決定唯一的未來和過去。
+
+每個真實系統歸根究柢都是量子系統。為什麼大型物體看起來是經典的，以及為什麼其量子替代狀態難以觀測，都是稍後才要探討的問題。相應的量子原理會保留相同的邏輯核心。半開玩笑地說，過去與未來的唯一性可以稱為\emph{唯一態性}；它的正式名稱是\emph{么正性}：量子演化能唯一地向前或向後進行。
+
+\section{表觀資訊損失與粗粒化}
+
+宏觀經驗似乎與可逆性矛盾。把密封房間中的所有氣體分子集中在左角，再讓它們散開。不久，氣體就會充滿房間。若改從右角開始，最後的宏觀景象看起來也相同。這兩種不同的初始狀態合併了嗎？
+
+只有在我們捨棄細節之後，才會如此。微觀狀態會指定每個分子的位置和速度。若能以足夠精確的方式追蹤每個位置與速度，將這些運動反轉就能分辨出兩種初始狀態。實際上，計算極為困難，所需精度也會迅速提高；但實務上無法做到，不代表資訊在根本上被抹除。宏觀描述\emph{空氣充滿房間}，將數量龐大的不同微觀組態歸為同一個粗粒化狀態。
+
+熱力學第二定律就在這裡發揮作用。我們無法區分詳細狀態，是因為沒有追蹤所有微觀變數。資訊看似消失，是因為描述經過粗粒化，而非細緻的確定性定律將不同狀態合併。
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:11}
+\audiencequestion{追蹤經典房間裡的所有分子，需要無窮多個位元嗎？}
+\lecturerresponse{若要精確描述經典系統，答案是肯定的。位置和速度都是實數；追蹤混沌的多粒子系統愈久，就需要愈高的精度。量子力學改變了這個結論：對於能量有界的封閉區域，物理上可區分的狀態可以是離散的，不必是任意一組精確的經典實數。}
+\end{classroomqa}
+
+這個問題並非只是學術議題。黑洞是否能摧毀資訊，曾經是數十年來的爭論；史蒂芬．霍金最初主張黑洞可以摧毀資訊。這場爭論探問的是，表面上的狀態合併究竟只是另一種粗粒化描述，還是真的違反量子么正性。在量子力學提供精確語言之前，我們無法解決這個問題；但它顯示，簡單的箭頭圖背後牽涉多麼重大的問題。
+
+\section{行、列與內積}
+
+在以量子位元取代經典位元之前，我們需要先認識一些線性代數。就目前而言，向量可以簡單地視為由實數構成的有限有序列表。四個分量的向量可以寫成行向量：
+\begin{equation}
+  A^{\mathsf T}=(A_1,A_2,A_3,A_4),
+  \label{eq:l01-row-vector}
+\end{equation}
+也可以寫成列向量：
+\begin{equation}
+  A=
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}.
+  \label{eq:l01-column-vector}
+\end{equation}
+\emph{四維}只表示向量有四個分量，不必將它想像成普通空間中的箭頭。水平排列的是行向量，垂直排列的是列向量。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\linewidth]{lecture_01_figure_03.png}
+\caption{相同的分量可以排成一行或一列。此時分量都是實數，因此不涉及複共軛。}
+\lectureframe{01:03:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:14}
+\audiencequestion{行向量不就是列向量的伴隨嗎？}
+\lecturerresponse{等到分量是複數時，這種說法才正確。那時轉置還必須伴隨複共軛。目前的元素都是實數，所以只須區分行排列與列排列。}
+\end{classroomqa}
+
+令
+\begin{equation}
+  B=(B_1,B_2,B_3,B_4)
+\end{equation}
+為一個行向量，其元素數目與列向量\(A\)相同。兩者的乘積定義為將對應位置的元素相乘後加總：
+\begin{align}
+  BA
+  &=
+  (B_1,B_2,B_3,B_4)
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}\\
+  &=B_1A_1+B_2A_2+B_3A_3+B_4A_4.
+  \label{eq:l01-inner-product}
+\end{align}
+結果是一個數，而非另一個向量或矩陣。在抽象向量空間中，這項運算稱為內積。
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:44}
+\audiencequestion{這就是點積嗎？}
+\lecturerresponse{是的。對三維空間中的一般向量而言，這就是熟悉的點積。\emph{內積}這個名稱強調，同樣的行乘列運算適用於任何有限維度的向量空間。}
+\end{classroomqa}
+
+\section{以矩陣作為更新狀態的機器}
+
+矩陣是由數字構成的方形陣列，作用於向量後會產生另一個向量。可以把它想成一部機器：輸入舊的列向量，套用固定規則，得到新的列向量。在四維空間中，
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}&M_{13}&M_{14}\\
+    M_{21}&M_{22}&M_{23}&M_{24}\\
+    M_{31}&M_{32}&M_{33}&M_{34}\\
+    M_{41}&M_{42}&M_{43}&M_{44}
+  \end{pmatrix}.
+  \label{eq:l01-general-matrix}
+\end{equation}
+第一個指標標示列，第二個指標標示行。\(M\)既可以視為一組列向量，也可以視為一組行向量；兩種觀點都很有用。
+
+要計算\(A'=MA\)，將\(M\)的每一行分別與輸入列向量取內積：
+\begin{equation}
+  A'_i=(MA)_i=\sum_{j=1}^{4}M_{ij}A_j.
+  \label{eq:l01-matrix-vector}
+\end{equation}
+例如，
+\begin{align}
+  A'_1&=M_{11}A_1+M_{12}A_2+M_{13}A_3+M_{14}A_4,\\
+  A'_2&=M_{21}A_1+M_{22}A_2+M_{23}A_3+M_{24}A_4.
+\end{align}
+第三與第四個分量也依照相同方式計算。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_01_figure_04.png}
+\caption{矩陣逐行作用於列向量。黑板上明確展開了前兩個輸出分量。}
+\lectureframe{01:12:45}
+\end{figure}
+
+\subsection{經典組態的編碼}
+
+假設一個系統有四種可能狀態。以單位向量表示各狀態：
+\begin{equation}
+  e_1=
+  \begin{pmatrix}1\\0\\0\\0\end{pmatrix},
+  \quad
+  e_2=
+  \begin{pmatrix}0\\1\\0\\0\end{pmatrix},
+  \quad
+  e_3=
+  \begin{pmatrix}0\\0\\1\\0\end{pmatrix},
+  \quad
+  e_4=
+  \begin{pmatrix}0\\0\\0\\1\end{pmatrix}.
+  \label{eq:l01-one-hot}
+\end{equation}
+唯一非零分量\(1\)所在的位置，會指出目前是哪一種經典組態。
+
+考慮以下循環更新：
+\begin{equation}
+  1\longrightarrow2\longrightarrow3\longrightarrow4\longrightarrow1.
+  \label{eq:l01-four-cycle}
+\end{equation}
+它可由下列矩陣表示：
+\begin{equation}
+  P=
+  \begin{pmatrix}
+    0&0&0&1\\
+    1&0&0&0\\
+    0&1&0&0\\
+    0&0&1&0
+  \end{pmatrix}.
+  \label{eq:l01-permutation-matrix}
+\end{equation}
+確實，
+\begin{equation}
+  \begin{aligned}
+    Pe_1&=e_2, & Pe_2&=e_3,\\
+    Pe_3&=e_4, & Pe_4&=e_1.
+  \end{aligned}
+\end{equation}
+黑板上的矩陣在書寫時經過修正，先寫成五個狀態，後來改為四個。方程式~\eqref{eq:l01-permutation-matrix}記錄的是最後確定的循環規則，而非已放棄的中間矩陣。
+
+同一個矩陣也作用於任意列向量：
+\begin{equation}
+  P
+  \begin{pmatrix}A\\B\\C\\D\end{pmatrix}
+  =
+  \begin{pmatrix}D\\A\\B\\C\end{pmatrix}.
+  \label{eq:l01-cyclic-shift}
+\end{equation}
+對於經典狀態，只有一個分量等於\(1\)；允許一般分量則能顯示其底層的線性運算。經典確定性更新使用特殊的零一矩陣，每一行和每一列都恰有一個\(1\)。量子力學會保留矩陣演化，同時大幅擴展允許的矩陣元素。
+
+\subsection{複合運算就是矩陣乘法}
+
+若一個時間步的更新為
+\begin{equation}
+  V'=MV,
+\end{equation}
+再更新一次便得到
+\begin{equation}
+  V''=MV'=M(MV)=M^2V.
+  \label{eq:l01-two-updates}
+\end{equation}
+因此，矩陣乘法並非任意的代數遊戲，而是將物理更新複合起來。經過五個時間步的更新以\(M^5\)表示。
+
+對於兩個\(2\times2\)矩陣
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}\\
+    M_{21}&M_{22}
+  \end{pmatrix},
+  \qquad
+  N=
+  \begin{pmatrix}
+    N_{11}&N_{12}\\
+    N_{21}&N_{22}
+  \end{pmatrix},
+\end{equation}
+其乘積\(C=MN\)的元素為
+\begin{equation}
+  C_{ij}=\sum_k M_{ik}N_{kj}.
+  \label{eq:l01-matrix-product}
+\end{equation}
+特別是，
+\begin{align}
+  C_{11}&=M_{11}N_{11}+M_{12}N_{21},\\
+  C_{12}&=M_{11}N_{12}+M_{12}N_{22},\\
+  C_{21}&=M_{21}N_{11}+M_{22}N_{21},\\
+  C_{22}&=M_{21}N_{12}+M_{22}N_{22}.
+\end{align}
+每個元素都是左側矩陣的一行與右側矩陣的一列相乘後加總。等價地，可以用\(M\)分別作用於\(N\)的每一列，再將所得列向量並排組成矩陣。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\linewidth]{lecture_01_figure_05.png}
+\caption{矩陣乘法可以整理成反覆進行的矩陣--列向量乘法。圖中標出了第一行和第二個矩陣的各列，說明乘積中的每個元素如何得到。}
+\lectureframe{01:26:30}
+\end{figure}
+
+行向量也可以從左側作用。若\(B=(B_1,\ldots,B_4)\)，則\(BM\)仍是行向量，且
+\begin{equation}
+  (BM)_j=\sum_i B_iM_{ij}.
+  \label{eq:l01-row-times-matrix}
+\end{equation}
+規則仍是行乘列。依照陣列的形狀，運算結果分別為：
+\begin{equation}
+\begin{array}{c@{\qquad}c}
+\text{row}\times\text{column}&=\text{number},\\
+\text{matrix}\times\text{column}&=\text{column},\\
+\text{row}\times\text{matrix}&=\text{row},\\
+\text{matrix}\times\text{matrix}&=\text{matrix}.
+\end{array}
+\label{eq:l01-shape-rules}
+\end{equation}
+
+值得用小型的數值\(2\times2\)和\(3\times3\)例子練習這些運算。再加上一點微積分，行--列相乘就是接下來學習量子力學所需掌握的主要新數學技巧。
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:50}
+\audiencequestion{可逆性對更新矩陣有什麼限制？}
+\lecturerresponse{更新矩陣必須有逆矩陣。逆矩陣實現反向更新，將每個狀態帶回其唯一的前驅。並非所有矩陣都可逆，因此線性代數也呈現出先前箭頭圖中的那項區別。對於循環的例子，\(P^{-1}=P^3\)且\(P^4=\mathbb{1}\)。}
+\end{classroomqa}
+
+\section{為什麼要在介紹量子位元之前先準備好代數？}
+
+第一個小時以位元和可逆箭頭，定性地說明確定性經典物理。接下來的數學會把這套描述轉化為能延伸至量子力學的形式。組態表示為列向量；單步定律表示為矩陣；重複的時間演化表示為矩陣乘積；可逆性則表示為逆矩陣的存在。
+
+我們還沒有用到任何量子規則。這是刻意安排的。接下來，我們會以量子位元取代經典的兩種可能狀態\(\ket{0}\)和\(\ket{1}\)，並探問還有哪些狀態可能存在。這裡介紹的行向量、列向量、內積與矩陣，將會說明量子資訊為何與經典位元字串大不相同。
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:00}
+\audiencequestion{為什麼要在說明用途之前，先介紹這些矩陣代數？}
+\lecturerresponse{我們先提出定性的問題：如何用狀態和更新定律表示確定性物理？這套代數是為下一步做準備。引入量子位元後，這些運算就不會再顯得無關緊要，而會成為描述量子態及其演化的自然語言。}
+\end{classroomqa}

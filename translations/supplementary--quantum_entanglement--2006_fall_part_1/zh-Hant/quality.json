@@ -1,0 +1,59 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 204,
+  "outline_entries": 101,
+  "target_characters": 51274,
+  "image_placements": 90,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "量子糾纏：第一部分",
+  "pdf_sha256": "5f7ad8a8d1bfd178b3af581e8271a545452f8cd43bf0c422405bd8758fcab7fa",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 54,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "3cfff0873a2680eb1d3a24017cd9299852869a2776620c0574c89b6fd84b8bf3",
+    "chapters/lecture_01/content.tex": "0e99a52718cd3a8f1800854f3957f096d781e64efdce3b35a6e0223515b0f5c7",
+    "chapters/lecture_02/content.tex": "b4aced7cff7af6761b635e132a7b76ebc9eac8715ba61d2e408c9a08229b6b85",
+    "chapters/lecture_03/content.tex": "61f45a5c692681a504cd8e794a7e088f7f590e9ffcd3f9572b68460bfd50292b",
+    "chapters/lecture_04/content.tex": "03b6e252379482819c7f7ceb7eeeb8d842ce2fe3bdfca63ed41065473ee0d3cb",
+    "chapters/lecture_05/content.tex": "42c51b2299cd76c740e50b249dc8fd9c8ac9ad5b229321882422f3ddf9835ca4",
+    "chapters/lecture_06/content.tex": "5d85d68f1c50b720d8d62bd51ff20da192394da265d3a011c9aa89de100a210b",
+    "chapters/lecture_07/content.tex": "3223be50414d6e5bee5775b0105d03f169e73908ab6f28961d307b80d949644c",
+    "chapters/lecture_08/content.tex": "e38849bb13458f67e8edb442940311fbd0972c1b3670ebedd6459608b439fdce",
+    "chapters/lecture_09/content.tex": "5f80b3e437f17c953e6ca9f27acd66b310e9b33387a1c3ae3c56e6122ab048b6"
+  },
+  "source_files": {
+    "course.tex": "72a1e515725a97fc2e253f5996bfc155ee3d469ec6acfa6e8636c7dc6f828086",
+    "common_preamble.tex": "9a36daedbd92b8869451acb618151d3f62c4b9aecc9569096f722f8c432366b3",
+    "chapters/lecture_01/content.tex": "069fdca92e038c3f0e678910c9e7fa39437c3bdc8329d3bb7d7262245820af0d",
+    "chapters/lecture_02/content.tex": "98737d8eccf4e76ab91b5dd5fa5cd3cbb20d2dcbc3f272efc59ef19441cce9ce",
+    "chapters/lecture_03/content.tex": "87927d5f4be2e8dd2bbf77e1a7473572ca289c80fc71e1aa1a5c1992a9e25707",
+    "chapters/lecture_04/content.tex": "6a8de00105505d81664e4ab2820bb31a9b0862a6a6f9ee19afc11413d9b695e1",
+    "chapters/lecture_05/content.tex": "13f18bf22fa8be72b88f59096fc375e96e954b21fdc9f71f1f021d528e91dce8",
+    "chapters/lecture_06/content.tex": "9f27bd0781909a5a7b615fb4f060f75291de1fd7ec68520635f7f42db18d0f76",
+    "chapters/lecture_07/content.tex": "13eb78c5b87a5465f536eeecc2ea14c594c27a293f6c2e32d74763dbb4be5ca4",
+    "chapters/lecture_08/content.tex": "2e0a5f5e29d73b1c9b4dad133027efb75433caeeab15f8181704d845afcb7c8c",
+    "chapters/lecture_09/content.tex": "73f786d1b5b2646d232b86c2dbd3093bb9446c1c35505f2363f8ca218c6deed2"
+  },
+  "translated_tex": {
+    "cover.tex": "87f5e96a3cc88d5718eace2a1e0a738b9e21d0deda0ab3d232986dc1f886cd5e",
+    "common_preamble.tex": "d03b54947f9fa7262c3a8c41f9c9c6f040b44ecaa8c6d46690166e2f7b0acb1c",
+    "course.tex": "b3fa7797913b622cd57c888326da3e5c2c5dbadd738a5fe6c55dbcd59ac62ee9",
+    "chapters/lecture_07/content.tex": "199db725a9a4e2ee6e1532a0f37a979533fb98295261b9abaacc080ad068ea71",
+    "chapters/lecture_02/content.tex": "70db1b279e33a239a6becbe782fe11ad6df536edadb07e9951563f122da0cb0f",
+    "chapters/lecture_09/content.tex": "133d61172da803567ebc72983b48e35aca00ff7da003cb557ea02b6356a73bb1",
+    "chapters/lecture_01/content.tex": "bd4fcdd73ba30eb2c44c45b8cd2dcab5e1fd3685ff9cdcc24e42b7d0850d0555",
+    "chapters/lecture_03/content.tex": "3daa3587f3efdb032914f0d78ce67df409e99f104c40fa3c27731dba9cfac924",
+    "chapters/lecture_08/content.tex": "f771c012db3d19c7aeef1467923fcd4ea5b275ab16baca46e62b24d04c585da3",
+    "chapters/lecture_05/content.tex": "1cc4f9eea27a3b7b8c7e9d400d5f28df706ec307f7c76e72b6caa5ed4b1d6fa8",
+    "chapters/lecture_04/content.tex": "8d3cc2895af0b1d94d64219cd196b5ee3b087b92a5c1cf1989b00c82280b485c",
+    "chapters/lecture_06/content.tex": "df6ecc7b813ba231b3f2f0bc3aada33d6f87bcccc9274b890934349f98ced340"
+  }
+}
