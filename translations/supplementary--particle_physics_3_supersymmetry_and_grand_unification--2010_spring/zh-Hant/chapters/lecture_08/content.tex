@@ -1,0 +1,519 @@
+\chapter{四維超對稱與 Wess--Zumino 模型}
+
+\lectureoverview{上一講的一維超對稱代數只涉及哈密頓量。現在，洛侖茲不變性迫使能量重新與空間動量結合，超荷也必須成為二分量旋量。我們先回到無質量 Weyl 費米子及其哈密頓量 \(H=\boldsymbol{\sigma}\cdot\mathbf p\)，由此導出該代數。接著，我們將超荷表示為四維超空間上的微分算符，以約束 \(\bar D_{\dot\alpha}\Phi=0\) 篩選出手徵超場，並利用超空間積分構造具體的場論。依序選取 \(\Phi^\dagger\Phi\)、\(\Phi^2\) 和 \(\Phi^3\)，便會得到傳播、玻色子--費米子質量相等、Yukawa 相互作用，以及相關的標量相互作用。輔助場 \(F\) 使這些關係一目了然；最後的圈圖則說明超對稱為何能減緩紫外敏感性。}
+
+\section{為什麼哈密頓量不能獨立存在}
+
+在玩具模型中，空間座標被省略，基本關係是
+\begin{equation}
+\{Q,Q^\dagger\}=2H.
+\label{eq:l8-time-only-algebra}
+\end{equation}
+若時間是唯一的座標，這種形式便已足夠。然而在相對論性理論中，\(H=P_0\)是四動量 \(P_\mu\) 的一個分量。洛侖茲推進會使它與 \(P_i\) 混合。若代數右側只特別挑出 \(P_0\)，就不可能以協變的方式變換。
+
+因此，修正必須同時做到兩件事：以四個分量 \(P_\mu\) 取代 \(H\)，並在左側提供能與右側洛侖茲向量相配的指標。無質量 Dirac 方程提供了線索：相對論性費米子可以用二分量旋量描述，而矩陣 \(\sigma^\mu\) 能將向量指標轉換成一對旋量指標。
+
+\section{無質量費米子、螺旋度與手徵性}
+
+先看有質量粒子與無質量粒子之間的物理差異。取一個自旋為 \(\tfrac12\) 的有質量粒子，令它沿著自旋方向運動。由於它的速度小於光速，觀察者可以超越它。在新的參考系中，動量反向而自旋不變，因此螺旋度也反向。所以，洛侖茲不變的有質量理論必須同時包含兩種螺旋度。
+
+沒有觀察者能超越無質量粒子。適當的洛侖茲變換無法使其動量相對於自旋反向，因此一個不可約的無質量表示可以只帶有一種螺旋度。空間旋轉可以轉變粒子的運動方向，卻不會把右手變成左手。
+
+\begin{classroomqa}
+\audiencequestion{超越粒子的論證，說的真的是螺旋度而不是手徵性嗎？\lecturetimestamp{00:05:42}}
+\lecturerresponse{是的。螺旋度是自旋在動量方向上的投影；手徵性則是手徵矩陣的本徵值，通常記為 \(\gamma^5\)。對無質量模式而言，這兩個標籤彼此相連，所以在這個例子中聽起來像是可以互換。對有質量粒子而言，兩者則有所不同。}
+\end{classroomqa}
+
+態數的說法需要加上一項限定。\editorialnote{單一無質量 Weyl 場有一種粒子螺旋度，以及相反的反粒子螺旋度。因此，「態數減半」指的是從四分量 Dirac 場縮減為單一二分量 Weyl 場；這並不表示反粒子態消失了。}
+
+將這段開頭論證所用的 Weyl 場寫成
+\begin{equation}
+\chi=
+\begin{pmatrix}
+\chi_1\\
+\chi_2
+\end{pmatrix},
+\end{equation}
+本講以 \(\psi_\alpha\) 表示這個場；為了避免與下文通常放在手徵超場中的共軛 Weyl 表示混淆，我們在此將它記為 \(\chi\)。
+\begin{equation}
+H\chi=\boldsymbol{\sigma}\cdot\mathbf p\,\chi.
+\label{eq:l8-weyl-hamiltonian}
+\end{equation}
+對動量 \(\mathbf p\) 而言，矩陣 \(\boldsymbol{\sigma}\cdot\mathbf p\) 的本徵值為 \(\pm|\mathbf p|\)。正頻支提供粒子模式；負頻支則透過反粒子構造重新詮釋，而不會被保留為能譜無下界的分支。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_02.png}
+\lectureframe{00:07:44.271}
+\caption{手徵二分量旋量與哈密頓量 \(H=\boldsymbol{\sigma}\cdot\mathbf p\)。末尾的動量符號有一部分被遮住，但口述方程可確定其內容。}
+\end{figure}
+
+手徵性標籤也取決於慣例。\editorialnote{黑板上將 \(\boldsymbol{\sigma}\cdot\mathbf p\) 的正本徵值直接對應到一種手性。哪一種手徵性對應這個符號，取決於 \(\sigma^\mu\)、\(\bar\sigma^\mu\) 和 Weyl 場的定義。我們保留本徵值的陳述，但不將它標記為不受慣例影響的左手或右手。}
+
+以 \(i\partial_t\) 取代 \(H\)，並以 \(-i\nabla\) 取代 \(\mathbf p\)，得到
+\begin{equation}
+i\partial_t\chi=-i\boldsymbol{\sigma}\cdot\nabla\chi.
+\end{equation}
+再定義
+\begin{equation}
+\begin{aligned}
+\sigma^\mu&=(\mathbf 1,\boldsymbol{\sigma}),\\
+\bar\sigma^\mu&=(\mathbf 1,-\boldsymbol{\sigma}),\\
+\eta_{\mu\nu}&=\operatorname{diag}(1,-1,-1,-1).
+\end{aligned}
+\label{eq:l8-sigma-convention}
+\end{equation}
+於是，剛才得到的方程可寫成
+\begin{equation}
+i\sigma^\mu\partial_\mu\chi=0.
+\label{eq:l8-weyl-equation}
+\end{equation}
+共軛 Weyl 表示使用 \(\bar\sigma^\mu\)。下文稱為 \(\psi_\alpha\) 的正是這個共軛表示，其自由場方程為 \(i\bar\sigma^\mu\partial_\mu\psi=0\)。要證明協變性，必須使用洛侖茲群的旋量表示；此處重要的是其結構：四個矩陣 \(\sigma^\mu\) 將一個時空指標連接到兩個旋量指標。
+
+\section{四維超代數}
+
+現在，奇座標必須像 Weyl 旋量一樣變換：
+\begin{equation}
+\theta^\alpha=(\theta^1,\theta^2),
+\qquad
+\bar\theta^{\dot\alpha}=(\bar\theta^{\dot1},\bar\theta^{\dot2}).
+\end{equation}
+上橫線表示複共軛；上方的點則用來區分共軛的洛侖茲表示。這裡有兩個複 Grassmann 分量，也就是四個實分量。因此，一般的偶超場
+\begin{equation}
+\mathcal S=\mathcal S(x^\mu,\theta^\alpha,\bar\theta^{\dot\alpha})
+\end{equation}
+具有有限的 Grassmann 展開。其最高次單項式是
+\begin{equation}
+\theta^2\bar\theta^2
+\equiv
+(\theta^1\theta^2)(\bar\theta^{\dot1}\bar\theta^{\dot2}),
+\end{equation}
+也就是全部四個獨立奇座標的乘積。這個單項式的係數通常稱為 \(D\) 分量。
+
+超荷也帶有旋量指標。在四維 \(N=1\) 超對稱中，代數為
+\begin{align}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+&=2\sigma^\mu_{\alpha\dot\beta}P_\mu,
+\label{eq:l8-superalgebra-main}\\
+\{Q_\alpha,Q_\beta\}&=0,
+&
+\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}&=0,
+\label{eq:l8-superalgebra-nilpotent}\\
+[P_\mu,Q_\alpha]&=0,
+&
+[P_\mu,\bar Q_{\dot\alpha}]&=0,
+&
+[P_\mu,P_\nu]&=0.
+\label{eq:l8-superalgebra-commutators}
+\end{align}
+因子二是慣例上的選擇。矩陣
+\(\sigma^\mu_{\alpha\dot\beta}\)
+將向量指標與 \(P_\mu\) 縮併，恰好留下等式左側出現的兩個旋量指標。
+
+\begin{classroomqa}
+\audiencequestion{\(\alpha\) 和 \(\beta\) 是 sigma 矩陣的矩陣指標嗎？\lecturetimestamp{00:22:01}}
+\lecturerresponse{是的。更精確地說，一個是無點的 Weyl 指標，另一個是有點的共軛指標；\(\mu\) 則是時空向量指標。sigma 矩陣連接了這兩種描述。}
+\end{classroomqa}
+
+整理後的記號清楚呈現了這種連接。\editorialnote{講課時刻意省略了有點指標，並在黑板上討論 \(\alpha\beta\) 與 \(\beta\alpha\) 的順序。方程~\eqref{eq:l8-superalgebra-main}和\eqref{eq:l8-superalgebra-commutators}補回標準的有點與無點記號，但不改變原本的論證。}
+
+最後一行表示超荷守恆，且與平移相容。動量分量彼此對易，因為它們以導數表示時也彼此對易。依照下文採用的微分慣例，
+\begin{equation}
+P_\mu=i\partial_\mu,
+\end{equation}
+因此，式~\eqref{eq:l8-superalgebra-main}也可以寫成
+\begin{equation}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+=2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu.
+\end{equation}
+
+\section{以超空間導數表示超荷}
+
+動量使一般座標平移；超荷則使奇座標平移，同時也會移動時空。採用左作用的 Grassmann 導數，並定義
+\begin{align}
+Q_\alpha
+&=\partial_\alpha
+-i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-Q}\\
+\bar Q_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
++i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Qbar}
+\end{align}
+以 \(\epsilon^\alpha Q_\alpha+
+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\) 作用於超場，便得到無窮小超對稱變換。超場的分量就是各個獨立 Grassmann 單項式的係數，而微分算符會使這些係數彼此混合。
+
+\begin{classroomqa}
+\audiencequestion{簡寫 \(\bar\theta\sigma\partial\) 中指的是哪個 \(x\) 導數？\lecturetimestamp{00:25:40}}
+\lecturerresponse{四個分量全都包括在內。\(\bar\theta^{\dot\alpha}\sigma^\mu_{\alpha\dot\alpha}\partial_\mu\) 中重複出現的 \(\mu\) 表示採用求和約定，因此 \(\sigma^\mu\) 的每個分量都會與相應的導數 \(\partial/\partial x^\mu\) 配對。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{共軛超荷中應該包含 \(\theta\)，而不是另一個 \(\bar\theta\)，對嗎？\lecturetimestamp{00:26:16}}
+\lecturerresponse{對。\(Q\) 對 \(\theta\) 微分，並包含 \(\bar\theta\)；\(\bar Q\) 對 \(\bar\theta\) 微分，並包含 \(\theta\)。兩者是共軛算符。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\sigma^\mu\) 是對稱矩陣嗎？\lecturetimestamp{00:27:04}}
+\lecturerresponse{Pauli 矩陣是 Hermite 矩陣。\((\mathbf1,\boldsymbol{\sigma})\) 中的四個矩陣有三個是對稱的，而 \(\sigma^2\) 在一般轉置下是反對稱的。這裡相關的共軛性質是 Hermite 性質，以及有點與無點指標的配置。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{共軛方程中的 sigma 矩陣，指標順序是否相反？\lecturetimestamp{00:27:13}}
+\lecturerresponse{共軛會交換有點與無點表示，因此穩妥的記法是 \(\sigma^\mu_{\alpha\dot\alpha}\) 及其共軛 \(\bar\sigma^{\mu\,\dot\alpha\alpha}\)，而不是把這兩個標籤視為可以互換的矩陣指標位置。}
+\end{classroomqa}
+
+式~\eqref{eq:l8-Q}和\eqref{eq:l8-Qbar}中的公式，在表面符號上與黑板上的簡寫不同。這些符號差異與 \(P_\mu\) 採用 \(+i\partial_\mu\) 或 \(-i\partial_\mu\)、導數從左側或右側作用，以及共軛奇變數的排列方式有關。重要的是，同一套慣例必須能同時滿足整個代數。
+
+\section{在超對稱下保持成立的約束}
+
+一般超場含有許多分量。我們要找出一個較小的場類別，同時不破壞對稱性。講課時先舉一個普通的類比。對向量 \(\mathbf V\) 而言，約束
+\begin{equation}
+V_x=0
+\end{equation}
+不是旋轉不變的：旋轉後，\(V_y\)會對新的 \(x\) 分量有所貢獻。相較之下，
+\begin{equation}
+\mathbf V^2=1
+\end{equation}
+是旋轉不變的，而且會移除一個獨立自由度。有用的約束必須在對稱變換下，將受約束的場映到仍受約束的場。
+
+假設線性奇算符 \(\bar D_{\dot\alpha}\) 定義了條件
+\begin{equation}
+\bar D_{\dot\alpha}\Phi=0.
+\label{eq:l8-chiral-constraint}
+\end{equation}
+在超對稱變換 \(\delta\Phi=Q\Phi\) 之後，只要 \(\bar D\) 與超荷反對易，同一條件便仍然成立：
+\begin{equation}
+\bar D(Q\Phi)=-Q(\bar D\Phi)=0.
+\end{equation}
+這項抽象的一致性檢驗說明了為何要如此構造，而非毫無解釋地直接給出定義。
+
+\begin{classroomqa}
+\audiencequestion{在最後一個式子中，為什麼可以交換 \(Q\) 和 \(\bar D\) 的順序？\lecturetimestamp{00:36:56}}
+\lecturerresponse{它們是選定為彼此反對易的奇算符。交換順序因此會產生負號；當 \(\bar D\) 作用到 \(\Phi\) 上時，原先的約束便使結果為零。}
+\end{classroomqa}
+
+所需的協變導數，只要將其中時空導數項的符號相對於超荷反轉，即可得到：
+\begin{align}
+D_\alpha
+&=\partial_\alpha
++i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-D}\\
+\bar D_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
+-i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Dbar}
+\end{align}
+它們滿足
+\begin{align}
+\{D_\alpha,\bar D_{\dot\beta}\}
+&=-2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu,\\
+\{D_\alpha,Q_\beta\}
+&=\{D_\alpha,\bar Q_{\dot\beta}\}=0,\\
+\{\bar D_{\dot\alpha},Q_\beta\}
+&=\{\bar D_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{從 \(\bar Q\) 到 \(\bar D\)，唯一的改變是時空導數項的符號嗎？\lecturetimestamp{00:37:58}}
+\lecturerresponse{正是如此。反轉這個符號後，\(D\) 與任一超荷反對易時，交叉項便會相消。}
+\end{classroomqa}
+
+我們只施加式~\eqref{eq:l8-chiral-constraint}。若同時施加 \(D_\alpha\Phi=0\) 和 \(\bar D_{\dot\alpha}\Phi=0\)，兩者的反對易子會迫使 \(\partial_\mu\Phi=0\)，最多只留下與時空無關的部分。
+\editorialnote{黑板上的說法是，同時施加兩個約束會迫使 \(\Phi=0\)。代數嚴格而言只能推出場與時空無關；再加上其他邊界條件或分量條件，才可能進一步限制此場。}
+
+\section{求解手徵約束}
+
+定義平移後的座標
+\begin{equation}
+y^\mu=x^\mu+i\theta\sigma^\mu\bar\theta.
+\label{eq:l8-chiral-coordinate}
+\end{equation}
+在上述左導數慣例下，函數
+\begin{equation}
+\Phi=\Phi(y,\theta)
+\label{eq:l8-chiral-solution}
+\end{equation}
+滿足 \(\bar D_{\dot\alpha}\Phi=0\)。由鏈式法則可直接看出各項如何相消。對 \(y^\mu\) 求導會得到 \(i\theta\sigma^\mu\partial_\mu\Phi\) 項，而 \(\bar D_{\dot\alpha}\) 中也有同一項，但符號相反。
+
+因此，手徵超場不會獨立依賴 \(\bar\theta\)。它仍可包含 \(\bar\theta\)，但只能透過組合 \(y^\mu\) 來依賴。其有限展開為
+\begin{equation}
+\Phi(y,\theta)
+=\phi(y)+\sqrt2\,\theta\psi(y)+\theta^2F(y).
+\label{eq:l8-chiral-expansion-y}
+\end{equation}
+三種分量分別是複標量 \(\phi\)、Weyl 費米子 \(\psi_\alpha\) 和複標量 \(F\)。最後一項是輔助場，不是另一個會傳播的玻色子。
+
+\begin{classroomqa}
+\audiencequestion{\(x\)是否已被與它正交的新座標 \(y\) 取代？\lecturetimestamp{00:49:08}}
+\lecturerresponse{不是。\(y^\mu\)是式~\eqref{eq:l8-chiral-coordinate}中特定組合的簡寫，並非額外的時空方向。在 \(y\) 座標中處理，手徵性會變得簡單；構造一般場論時，再換回 \(x\) 座標。}
+\end{classroomqa}
+
+在固定 \(x\) 的情況下展開式~\eqref{eq:l8-chiral-expansion-y}，得到
+\begin{align}
+\Phi(x,\theta,\bar\theta)
+={}&\phi
++\sqrt2\,\theta\psi
++\theta^2F
++i\theta\sigma^\mu\bar\theta\,\partial_\mu\phi
+\notag\\
+&-\frac{i}{\sqrt2}\theta^2
+\partial_\mu\psi\,\sigma^\mu\bar\theta
++\frac14\theta^2\bar\theta^2\Box\phi.
+\label{eq:l8-chiral-expansion-x}
+\end{align}
+右側的所有分量場都在 \(x\) 取值。共軛的反手徵場則依賴
+\(\bar y^\mu=x^\mu-i\theta\sigma^\mu\bar\theta\) 和 \(\bar\theta\)。手徵超場不可能同時為實，因為它的共軛場滿足相反的手徵約束。
+
+\section{超空間積分}
+
+全超空間作用量的形式為
+\begin{equation}
+S_D=\int d^4x\,d^2\theta\,d^2\bar\theta\;K,
+\label{eq:l8-D-term-action}
+\end{equation}
+其中 \(K\) 是實超場。Berezin 積分會選出其中的
+\(\theta^2\bar\theta^2\)係數。對奇座標積分後，只剩下普通的時空拉格朗日量。
+
+還有另一種不變的構造。若 \(W(\Phi)\) 是手徵超場，則
+\begin{equation}
+S_F=\int d^4x\,d^2\theta\;W(\Phi)
++\int d^4x\,d^2\bar\theta\;\overline{W}(\Phi^\dagger)
+\label{eq:l8-F-term-action}
+\end{equation}
+具有超對稱性。第一個積分選出 \(\theta^2\) 分量，第二個則選出其共軛分量。
+
+\begin{classroomqa}
+\audiencequestion{當表示式不依賴 \(\bar\theta\) 時，為什麼只對 \(d^2\theta\) 積分也可以？\lecturetimestamp{01:16:30}}
+\lecturerresponse{手徵性在超對稱變換下保持不變，而手徵超場的最高次 \(\theta\) 分量只會改變一個時空全導數。因此，對時空積分後仍然不變，正如對完整的 \(D\) 分量積分也保持不變一樣。}
+\end{classroomqa}
+
+\section{自由手徵多重態}
+
+考慮這個看似毫無結構的表示式
+\begin{equation}
+S_{\mathrm{free}}
+=\int d^4x\,d^2\theta\,d^2\bar\theta\;
+\Phi^\dagger\Phi.
+\label{eq:l8-free-superaction}
+\end{equation}
+兩個因子依賴於平移方向相反的座標：
+\begin{equation}
+\Phi=\Phi(x+i\theta\sigma\bar\theta,\theta),
+\qquad
+\Phi^\dagger
+=\Phi^\dagger(x-i\theta\sigma\bar\theta,\bar\theta).
+\end{equation}
+在時空積分中，可以平移作為積分變數的 \(x\)。這樣的平移可以消去其中一個因子的 Grassmann 位移，但另一個因子的相對位移便會加倍。對這個冪零位移作 Taylor 展開，有限項後便會終止。
+
+導數正是由此而來。超空間表示式
+\(\Phi^\dagger\Phi\)
+沒有顯式的時空導數，但平移後的自變數會產生分量場的一階與二階導數。將各項展開相乘，並只保留最高次分量，依照式~\eqref{eq:l8-sigma-convention}的慣例可得
+\begin{equation}
+\mathcal L_{\mathrm{free}}
+=\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F.
+\label{eq:l8-free-component-lagrangian}
+\end{equation}
+經過分部積分，標量項也可寫成概略形式 \(-\phi^\ast\Box\phi\)，這正是黑板推導所採用的形式。
+
+\begin{classroomqa}
+\audiencequestion{超場 Taylor 展開的第二行是怎麼來的？\lecturetimestamp{01:03:00}}
+\lecturerresponse{它來自分量展開 \(\Phi(y,\theta)=\phi(y)+\sqrt2\theta\psi(y)+\theta^2F(y)\)。接著對各個分量作 Taylor 展開，因為 \(y\) 與 \(x\) 相差一個冪零的 Grassmann 雙線性項。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{最後那個分量應該帶有 \(\theta^2\) 嗎？\lecturetimestamp{01:04:54}}
+\lecturerresponse{是的。輔助分量是 \(F\theta^2\)。它已經含有兩個獨立的 \(\theta\)，因此再作一次帶有另一個 \(\theta\) 的 Taylor 平移時，相關項就會消失。}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}
+\lectureframe{01:08:57.900}
+\caption{將平移座標展開整理後，可得一般拉格朗日量中的標量項、費米子項與輔助場項。}
+\end{figure}
+
+式~\eqref{eq:l8-free-component-lagrangian}中的前兩項給出無質量的 Klein--Gordon 方程和 Weyl 方程。最後一項不含導數：
+\begin{equation}
+\frac{\partial\mathcal L}{\partial F}=F^\ast=0,
+\qquad
+\frac{\partial\mathcal L}{\partial F^\ast}=F=0.
+\label{eq:l8-free-F-equation}
+\end{equation}
+它不會引入初始資料，也不對應在殼粒子。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_04.png}
+\lectureframe{01:11:32.360}
+\caption{分量拉格朗日量末尾不含導數的輔助場項 \(F^\ast F\)。}
+\end{figure}
+
+從傳播子的角度看，結論也相同。\(F\)的逆二次算符與動量無關，因此其傅立葉變換是局域的：
+\begin{equation}
+\langle F(x)F^\ast(y)\rangle
+\propto \delta^{(4)}(x-y).
+\label{eq:l8-F-contact}
+\end{equation}
+\(F\)線可以用來組織費曼圖，但它的兩個端點重合。這是接觸收縮，而非物理粒子的運動軌跡。
+
+\section{二次超勢與等質量}
+
+傳播來自 \(D\) 項，質量則來自手徵積分。採用慣用的歸一化
+\begin{equation}
+W_2(\Phi)=\frac12m\Phi^2.
+\end{equation}
+其 \(\theta^2\) 分量為
+\begin{equation}
+\left.W_2(\Phi)\right|_{\theta^2}
+=m\phi F-\frac12m\psi\psi.
+\end{equation}
+再加上共軛項後，分量拉格朗日量為
+\begin{align}
+\mathcal L
+={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F
+\notag\\
+&+m\phi F+m^\ast\phi^\ast F^\ast
+-\frac12m\psi\psi
+-\frac12m^\ast\bar\psi\bar\psi.
+\label{eq:l8-mass-offshell}
+\end{align}
+費米子雙線性項是 Weyl 場的 Majorana 質量項。\(F\)的運動方程是代數方程：
+\begin{equation}
+F^\ast=-m\phi,
+\qquad
+F=-m^\ast\phi^\ast.
+\label{eq:l8-mass-F-equations}
+\end{equation}
+代入後得到
+\begin{equation}
+\begin{aligned}
+\mathcal L_{\mathrm{on\ shell}}={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi\\
+&-|m|^2|\phi|^2\\
+&-\frac12\left(m\psi\psi+m^\ast\bar\psi\bar\psi\right).
+\end{aligned}
+\label{eq:l8-mass-onshell}
+\end{equation}
+因此，標量與費米子的質量都是 \(|m|\)。用黑板上的圖示語言來說，標量經由一次 \(m\phi F\) 插入，在局部轉變為 \(F\)，隨即透過其共軛插入轉變回來。兩次插入產生 \(|m|^2|\phi|^2\)，正好就是求解式~\eqref{eq:l8-mass-F-equations}後得到的標量質量項。
+
+現在可以精確說明歸一化。\editorialnote{講課在相乘超場時刻意省略數值係數。此處採用的因子 \(1/2\)、\(1/3\) 和 \(\sqrt2\) 是慣用的 Wess--Zumino 歸一化；這些因子使分量質量與耦合的係數精確，同時保留黑板推導中的每一個定性步驟。}
+
+\section{三次超勢與相互作用}
+
+現在加入
+\begin{equation}
+W(\Phi)=\frac12m\Phi^2+\frac13g\Phi^3.
+\label{eq:l8-superpotential}
+\end{equation}
+對一般的全純函數 \(W\)，其 \(F\) 分量為
+\begin{equation}
+\left.W(\Phi)\right|_{\theta^2}
+=F W'(\phi)-\frac12W''(\phi)\psi\psi.
+\label{eq:l8-W-components}
+\end{equation}
+其中
+\begin{equation}
+W'(\phi)=m\phi+g\phi^2,
+\qquad
+W''(\phi)=m+2g\phi.
+\end{equation}
+消去 \(F\) 之前，三次項包含
+\begin{equation}
+g\phi^2F-g\phi\psi\psi+\text{h.c.}
+\label{eq:l8-cubic-offshell}
+\end{equation}
+第二項是 Yukawa 頂點，連接一條標量線與兩條費米子線。第一項則將兩條標量線連接到一條輔助場線。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95,>=Latex]
+  \coordinate (vone) at (0,0);
+  \draw[->,thick] (-2,1.1) -- (vone);
+  \draw[->,thick] (vone) -- (-2,-1.1);
+  \draw[thick,dashed] (vone) -- (2,0);
+  \node[left] at (-2,1.1) {\(\psi\)};
+  \node[left] at (-2,-1.1) {\(\psi\)};
+  \node[right] at (2,0) {\(\phi\)};
+  \node[below=8pt of vone] {\(-g\phi\psi\psi\)};
+\end{tikzpicture}
+\caption{Yukawa 相互作用的示意圖：兩條費米子線與一條標量線交會，耦合強度正比於 \(g\)。}
+\end{figure}
+
+完整的輔助場方程為
+\begin{equation}
+F^\ast=-W'(\phi)=-(m\phi+g\phi^2).
+\label{eq:l8-general-F-equation}
+\end{equation}
+消去輔助場後，得到標量勢
+\begin{equation}
+V(\phi)=|W'(\phi)|^2
+=|m\phi+g\phi^2|^2.
+\label{eq:l8-scalar-potential}
+\end{equation}
+除了質量項，標量勢還包含正比於 \(m^\ast g\) 的三次標量項，以及四次項
+\begin{equation}
+V(\phi)\supset |g|^2|\phi|^4.
+\label{eq:l8-quartic}
+\end{equation}
+在輔助場線的圖像中，兩個 \(\phi^2F\) 頂點透過局域的 \(F\) 收縮連接。由於式~\eqref{eq:l8-F-contact}要求兩個頂點位於同一位置，結果恰好是一個四標量接觸頂點。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95]
+  \coordinate (vfour) at (0,0);
+  \foreach \angle in {35,145,215,325}
+    \draw[thick,dashed] (vfour) -- (\angle:1.9);
+  \fill (vfour) circle (1.5pt);
+  \node[below=8pt of vfour] {\(-|g|^2|\phi|^4\)};
+\end{tikzpicture}
+\caption{消去輔助場後，兩個局域的 \(F\) 頂點合併為一個四標量接觸相互作用。}
+\end{figure}
+
+超對稱的作用不只是將玻色子和費米子放進同一個理論。它還使兩者的質量必須相等，將 Yukawa 耦合與 \(g\) 聯繫起來，並將四次標量耦合固定為 \(|g|^2\)。這些關係可以透過質量、散射振幅與衰變來檢驗，並非可有可無的數值巧合。
+
+\section{成對的圈效應}
+
+當相互作用修正粒子質量時，這些關係最能派上用場。標量自能會收到來自四點頂點的玻色子圈，以及來自兩個 Yukawa 頂點的費米子圈。兩者都帶有同一耦合常數的二次方。依照費米統計，閉合費米子圈帶有相對的負號。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=Latex,scale=0.9]
+  \begin{scope}[xshift=-3.3cm]
+    \draw[thick,dashed] (-2,0)--(0,0)--(2,0);
+    \draw[thick,dashed] (0,0) .. controls (-0.9,1.7) and (0.9,1.7) .. (0,0);
+    \fill (0,0) circle (1.4pt);
+    \node at (0,-0.55) {bosonic loop};
+  \end{scope}
+  \begin{scope}[xshift=3.3cm]
+    \draw[thick,dashed] (-2,0)--(-0.8,0);
+    \draw[thick,dashed] (0.8,0)--(2,0);
+    \draw[->,thick] (-0.8,0) arc[start angle=180,end angle=0,x radius=0.8,y radius=0.8];
+    \draw[->,thick] (0.8,0) arc[start angle=0,end angle=-180,x radius=0.8,y radius=0.8];
+    \fill (-0.8,0) circle (1.4pt);
+    \fill (0.8,0) circle (1.4pt);
+    \node at (0,-1.35) {fermionic loop};
+  \end{scope}
+\end{tikzpicture}
+\caption{講課中成對出現的標量自能機制。超對稱固定兩者的相對耦合，而閉合費米子圈則帶來相反的符號。}
+\end{figure}
+
+在一圈階，完整的玻色子與費米子貢獻中，對紫外最敏感的領先項會彼此相消。沃德恆等式與非重整化性質則讓同一對稱性得以約束更高階的修正。這裡說的是與對稱性相關的貢獻加總後相消，而不是每一張圖都逐一完全抵銷；波函數重整化、有限效應，以及其他保留對稱性的修正仍可能存在。這正是以超空間建構理論的實際優勢：在計算任何單一費曼積分之前，對稱性便已要求質量相等，並限制耦合之間的關係。\editorialnote{黑板上的說法較為概括；正文則補上標準的限定。}
+
+\section{接下來}
+
+此處建構的模型是最簡單的交互作用手徵理論，通常稱為 Wess--Zumino 模型。它只是其中一個例子，並非最一般的超對稱場論，但其基本模式仍然適用：以超多重態表示場，寫下不變的超空間積分，再由 Grassmann 展開導出分量之間的關係。
+
+在觀測到的粒子譜中，並未看到精確超對稱性。因此，接下來要探討如何破缺這個對稱性，同時保留足夠的紫外控制，使理論仍有用處。另一個預告的方向是大統一：
+\begin{equation}
+SU(3)\times SU(2)\times U(1)
+\end{equation}
+如何嵌入更大的群，例如 \(SU(5)\)；以及超對稱的粒子內容如何改變大統一的圖像。接下來的課程將探討這些問題。
