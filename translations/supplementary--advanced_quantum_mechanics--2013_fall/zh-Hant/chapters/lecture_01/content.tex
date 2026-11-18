@@ -1,0 +1,504 @@
+\chapter{態向量、么正演化與平移對稱性}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+
+隔了兩個學季，快速回顧量子力學很有幫助，但不能占滿整個學季。接下來要探討的是量子力學最初發展時所要處理的問題：原子、電子及相關粒子，以及光子。
+
+先談原子。電子是原子的組成部分，為什麼要先講原子，再講電子？一開始只需要足以寫出氫原子基本方程的電子力學。之後再深入研究類電子粒子即可。在這些應用中，對稱性會一再派上用場：對稱性在量子力學中如何表示，以及它對系統有什麼意義。
+
+\section{態、可觀測量與正交性}
+
+在經典力學中，態以相空間中的一個點表示；在量子力學中，則以複向量空間中的一個向量表示。這是抽象向量，不是普通三維空間中的箭頭。態向量可以相加，也可以乘以複數；容納這些向量的空間不必是任何特定的有限維空間。
+
+狄拉克記號將態向量寫成右矢，
+\begin{equation}
+\ket{\psi},
+\end{equation}
+並為它配上左矢，
+\begin{equation}
+\bra{\psi}.
+\end{equation}
+左矢與右矢透過厄米共軛相互關聯。將左矢與右矢結合可得內積，
+\begin{equation}
+\langle\phi|\psi\rangle,
+\end{equation}
+其值一般是複數。
+
+可觀測量是可以測量的物理量，例如位置、動量、能量，或其他可測量的量。在量子力學中，可觀測量以線性厄米算符\(A\)表示，
+\begin{equation}
+A^\dagger=A.
+\end{equation}
+厄米性是算符對應於實數性的性質。尤其是，厄米算符的本徵值皆為實數。
+
+\(A\)的本徵向量滿足
+\begin{equation}
+A\ket{\alpha}=\alpha\ket{\alpha}.
+\end{equation}
+測量\(A\)可能得到的結果，就是可能的本徵值。例如，若某個可觀測量只能得到\(1\)、\(3\)或\(7\)，這些數就是它的本徵值。它的本徵向量對應於測量結果確定而非統計分布的態。在態\(\ket{\alpha}\)中，測量\(A\)必定得到\(\alpha\)。
+
+內積表達了態之間一種重要的邏輯關係。假設有一種測量，能確定地區分\(\ket{\phi}\)與\(\ket{\psi}\)，那麼這兩個態便互相正交：
+\begin{equation}
+\langle\phi|\psi\rangle=0.
+\end{equation}
+正交表示這些態在物理上可以毫無歧義地區分。對於歸一化的態，
+\begin{equation}
+\langle\psi|\psi\rangle=1.
+\end{equation}
+
+\section{位置表象中的粒子}
+
+先考慮一個在直線上運動的粒子。位置\(x\)是可觀測量。對每個可能的位置\(x_0\)，都有一個態\(\ket{x_0}\)，在此態中測量位置必定得到\(x_0\)。
+
+與不同位置相對應的態可以區分，因此彼此正交：
+\begin{equation}
+x\neq x'
+\quad\Longrightarrow\quad
+\langle x'|x\rangle=0.
+\end{equation}
+對任意態\(\ket{\psi}\)，它與位置態的內積定義了波函數：
+\begin{equation}
+\psi(x)=\langle x|\psi\rangle.
+\end{equation}
+這就是態向量的位置表象。
+
+波函數本身不是機率。它可以是正數、負數、虛數，或一般的複數。位置機率密度為
+\begin{equation}
+P(x)=\psi^*(x)\psi(x)=|\psi(x)|^2.
+\end{equation}
+這個乘積非負，符合機率密度的要求。對歸一化波函數而言，
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,|\psi(x)|^2=1.
+\end{equation}
+
+在位置表象中，位置算符以乘法作用：
+\begin{equation}
+(\hat x\psi)(x)=x\psi(x).
+\end{equation}
+它的本徵函數是集中於單一點的理想化函數，形式上以狄拉克 {\proseunicodefont δ} 函數描述，也就是以位置本徵值為中心的極窄尖峰。本次回顧不需要用到它們精確的分佈定義。
+
+在三維空間中，位置有三個分量：\(x\)、\(y\)和\(z\)；位置態則表示三維空間中的一點。只要兩點至少有一個座標不同，對應的態便互相正交。以下通常仍採用一維記號，並假定讀者理解相應的三維推廣。
+
+\section{動量與定動量態}
+
+位置的每個分量都有相對應的動量分量。在位置表象中，沿\(x\)軸的動量算符為
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+因此，抽象的厄米算符也可以具體地視為作用於波函數的運算。
+
+具有定動量\(p_0\)的態滿足本徵值方程
+\begin{equation}
+\hat p_x\psi_{p_0}(x)=p_0\psi_{p_0}(x).
+\end{equation}
+代入\(\hat p_x\)的微分形式可得
+\begin{equation}
+-i\hbar\frac{d\psi_{p_0}(x)}{dx}
+=p_0\psi_{p_0}(x).
+\end{equation}
+波函數的導數與波函數本身成正比，因此解具有指數形式：
+\begin{equation}
+\psi_{p_0}(x)\propto
+\exp\left(\frac{ip_0x}{\hbar}\right).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:24:26}
+\audiencequestion{這個微分方程對所有波函數都成立嗎？}
+\lecturerresponse{不成立。這是定動量態的本徵值方程。大多數波函數不滿足這個方程；它選出的是動量本徵函數。}
+\end{classroomqa}
+
+位置本徵態與動量本徵態截然不同。位置本徵函數集中在一點；動量本徵函數則滿足
+\begin{equation}
+\left|\exp\left(\frac{ip_0x}{\hbar}\right)\right|^2=1.
+\end{equation}
+因此其模在整條直線上皆為常數。在這種理想化的意義下，定動量代表位置完全不確定；定位置也同樣代表動量完全不確定。這是位置--動量不確定關係的極端情形。
+
+\begin{classroomqa}
+\lecturetimestamp{00:26:36}
+\audiencequestion{若已知動量為\(p_0\)，為什麼仍然有機率分布？}
+\lecturerresponse{這裡顯示的量涉及位置測量，而非再次測量動量。位置和動量是不同的可觀測量。對理想化的動量本徵態而言，位置振幅的模在整條直線上皆為常數。動量振幅屬於動量表象，並透過傅立葉變換與位置波函數相互關聯。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:02}
+\audiencequestion{波函數若是狄拉克 {\proseunicodefont δ} 函數，位置機率會是什麼樣子？}
+\lecturerresponse{機率集中在指定位置。這個理想化的尖峰表示位置確定。}
+\end{classroomqa}
+
+\editorialnote{精確位置態與定動量態都是廣義態。狄拉克 {\proseunicodefont δ} 函數和平面波都不是定義在整條直線上的普通平方可積、歸一化波函數；而 {\proseunicodefont δ} 函數的平方也不是普通的分佈。前述說法描述的是它們理想化的局域性與常數模。}
+
+形式上，可以把波函數視為一個向量，而\(x\)的每個取值都對應一個分量。不過，它與普通的有限列向量不同，具有連續無窮多個分量。
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:53}
+\audiencequestion{態向量可以用列向量表示嗎？}
+\lecturerresponse{可以，但位置波函數很難寫成普通的列向量，因為\(x\)可以連續取值。形式上可以將它視為連續列向量，並將相應的左矢視為連續行向量。}
+\end{classroomqa}
+
+\section{時間演化與么正性}
+
+態如何隨時間改變？時間演化是態空間上的變換。令\(U(t)\)表示經過時間\(t\)的演化，則
+\begin{equation}
+U(t)\ket{\psi(t_1)}=\ket{\psi(t_1+t)}.
+\end{equation}
+特別是，
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)},
+\qquad
+U(0)=\mathbf 1.
+\end{equation}
+
+對\(U(t)\)的要求源自資訊守恆。若兩個初態可以區分，時間演化就不能抹去這項區別；正交態演化後必須仍然正交。更一般地，任意兩個態之間的內積都保持不變：
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|\psi\rangle.
+\end{equation}
+由於
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|U^\dagger(t)U(t)|\psi\rangle,
+\end{equation}
+要使所有內積都保持不變，就必須滿足
+\begin{equation}
+U^\dagger(t)U(t)=\mathbf 1.
+\end{equation}
+滿足此方程的算符稱為么正算符。
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:36}
+\audiencequestion{保持所有內積是否比只保持正交性更強？}
+\lecturerresponse{對於這裡討論的線性態變換，保持正交性會導致內積也保持不變。熟悉的類比是普通旋轉：旋轉會保持正交性與點積。}
+\end{classroomqa}
+
+\editorialnote{嚴格來說，單獨保持正交性仍容許整體乘上一個非零比例因子。物理時間演化本來就必須保持歸一化；這項要求排除了該自由度，因而使內積保持不變。}
+
+么正算符不可與厄米可觀測量混為一談。位置與動量是厄米算符，但一般不是么正算符。么正算符的本徵值是相位，也就是形如\(e^{i\theta}\)、位於單位圓上的數。
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:12}
+\audiencequestion{非么正變換有哪些例子？}
+\lecturerresponse{位置算符與動量算符就是例子：它們是厄米可觀測量，但不是么正算符。么正算符的本徵值模長為一，因此其本徵值是相位。}
+\end{classroomqa}
+
+\section{哈密頓量與Schr\"odinger方程}
+
+假設時間演化是連續的。那麼在極短時間間隔\(\epsilon\)內，演化算符必須接近恆等算符：
+\begin{equation}
+U(\epsilon)=\mathbf 1+\epsilon G+\mathcal O(\epsilon^2).
+\end{equation}
+利用么正性可得
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(\mathbf 1+\epsilon G^\dagger\right)
+\left(\mathbf 1+\epsilon G\right)
++\mathcal O(\epsilon^2)
+\\
+&=
+\mathbf 1+\epsilon(G^\dagger+G)
++\mathcal O(\epsilon^2).
+\end{align}
+保留一階項後，
+\begin{equation}
+G^\dagger=-G.
+\end{equation}
+因此\(G\)是反厄米算符。它可以寫成
+\begin{equation}
+G=-\frac{i}{\hbar}H,
+\end{equation}
+其中\(H\)是厄米算符：
+\begin{equation}
+H^\dagger=H.
+\end{equation}
+因此，無窮小時間演化算符為
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+厄米算符\(H\)就是哈密頓量。
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:48}
+\audiencequestion{為什麼可以忽略\(\epsilon^2\)項？}
+\lecturerresponse{此處的計算一致地只保留\(\epsilon\)的一階項。若要作二階計算，就必須納入所有二階項，包括正比於\(-\epsilon^2H^2/(2\hbar^2)\)的項。近似來自截斷\(U(\epsilon)\)的表示式，而非\(H\)的厄米性。}
+\end{classroomqa}
+
+有限時間間隔可以拆成許多小間隔。將\(t\)分成\(N\)個步驟，每一步長度為\(t/N\)。重複施行無窮小變換便得到
+\begin{equation}
+U(t)
+=
+\lim_{N\to\infty}
+\left(
+\mathbf 1-\frac{itH}{N\hbar}
+\right)^N
+=
+\exp\left(-\frac{iHt}{\hbar}\right).
+\end{equation}
+指數形式就是無窮小變換對應的有限變換。
+
+現在將態從\(t\)演化至\(t+\epsilon\)：
+\begin{align}
+\ket{\psi(t+\epsilon)}
+&=
+U(\epsilon)\ket{\psi(t)}
+\\
+&=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)\ket{\psi(t)}
++\mathcal O(\epsilon^2).
+\end{align}
+減去\(\ket{\psi(t)}\)，再除以\(\epsilon\)並取極限，可得
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+等價地，
+\begin{equation}
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=
+H\ket{\psi(t)}.
+\end{equation}
+這就是含時Schr\"odinger方程。在位置表象中，它成為
+\begin{equation}
+i\hbar\frac{\partial}{\partial t}\psi(x,t)
+=
+H\psi(x,t),
+\end{equation}
+其中\(H\)作為算符作用於波函數。
+
+定態Schr\"odinger方程是哈密頓量的本徵值方程：
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+本徵值\(E\)是測量能量可能得到的值，也就是能階。因此，同一個哈密頓量既決定允許的能量，也決定態如何演化。
+
+若初態是能量本徵態，其演化為
+\begin{equation}
+\ket{E;t}
+=
+\exp\left(-\frac{iEt}{\hbar}\right)\ket{E}.
+\end{equation}
+它仍是同一個能量本徵向量，只多了一個相位。\footnote{負號由前文推導\(U(t)=\exp(-iHt/\hbar)\)所固定。稍後以口語描述此相位時，符號相反，與該推導不一致。}
+
+\begin{classroomqa}
+\lecturetimestamp{01:01:05}
+\audiencequestion{能量本徵向量依含時Schr\"odinger方程如何演化？}
+\lecturerresponse{保留右矢。由於\(H\ket{E}=E\ket{E}\)，時間演化會將能量本徵向量乘上一個由其能量決定的相位：\(\exp(-iEt/\hbar)\)。}
+\end{classroomqa}
+
+\section{什麼才算對稱性？}
+
+時間演化是態空間上的一種么正變換。對稱變換則是另一類重要的變換。
+
+旋轉對稱性在原子物理中至關重要。在氫原子中，電子在中心庫侖勢中運動。旋轉座標系不會改變方程；將原子實際旋轉後，它仍是由相同方程支配的氫原子。態可能隨旋轉而改變，但動力學定律不變。
+
+平移是另一個例子。在空曠空間中的孤立系統，若將系統各部分都位移相同距離，其行為應該相同。這個條件很重要。若附近有一座爐子，而只將系統移得更靠近爐子，系統的行為可能改變；爐子會破壞平移對稱性。若系統與爐子一起平移，它們原有的相對關係便會恢復。
+
+並非任何操作都是對稱性。將岩鹽晶體壓縮至原來的一半，通常會改變其行為。擠壓是一種定義明確的變換，但一般不具對稱性。
+
+因此，對稱性是作用於態、並保持動力學形式不變的操作。以\(V\)表示此操作。它必須保持態的可區分性：兩個正交態經變換後仍須正交。相應地，
+\begin{equation}
+V^\dagger V=\mathbf 1,
+\end{equation}
+因此\(V\)是么正的。
+
+\section{對稱性與時間演化對易}
+
+假設初態\(\ket{\psi_1}\)演化成\(\ket{\psi_2}\)：
+\begin{equation}
+\ket{\psi_2}=U(t)\ket{\psi_1}.
+\end{equation}
+將候選對稱操作\(V\)作用於這兩個態：
+\begin{equation}
+\ket{\psi_1'}=V\ket{\psi_1},
+\qquad
+\ket{\psi_2'}=V\ket{\psi_2}.
+\end{equation}
+若\(V\)是動力學的對稱性，變換後的初態必須演化成變換後的末態：
+\begin{equation}
+\ket{\psi_2'}=U(t)\ket{\psi_1'}.
+\end{equation}
+代入定義可得
+\begin{equation}
+VU(t)\ket{\psi_1}
+=
+U(t)V\ket{\psi_1}.
+\end{equation}
+此式必須對所有初態成立。因此
+\begin{equation}
+VU(t)=U(t)V.
+\end{equation}
+
+這兩條等價路徑可以用交換圖表示。\footnote{此圖重現了01：10：30至01：16：34之間所建立的兩條路徑論證。}
+\begin{figure}
+\centering
+\begin{tikzpicture}[>=Stealth]
+\node (a) at (0,0) {$\ket{\psi_1}$};
+\node (b) at (4.2,0) {$\ket{\psi_2}=U(t)\ket{\psi_1}$};
+\node (c) at (0,-2.0) {$V\ket{\psi_1}$};
+\node (d) at (4.2,-2.0) {$V\ket{\psi_2}=U(t)V\ket{\psi_1}$};
+
+\draw[->] (a) -- node[above] {$U(t)$} (b);
+\draw[->] (c) -- node[below] {$U(t)$} (d);
+\draw[->] (a) -- node[left] {$V$} (c);
+\draw[->] (b) -- node[right] {$V$} (d);
+\end{tikzpicture}
+\caption{無論先施行對稱操作或先作時間演化，得到的末態都相同。}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:38}
+\audiencequestion{對稱性是否必須在所有時間都與時間演化對易？}
+\lecturerresponse{是。動力學的對稱性必須與完整的時間演化滿足對易條件。}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:13}
+\audiencequestion{這是否表示可以先旋轉再等待，或先等待再旋轉？}
+\lecturerresponse{正是如此。若旋轉是對稱性，無論採用哪個順序，得到的變換後末態都相同。}
+\end{classroomqa}
+
+對於一段很短的時間間隔，
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+對易條件變成
+\begin{equation}
+V\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)
+=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)V
++\mathcal O(\epsilon^2).
+\end{equation}
+恆等算符項相消後，剩下
+\begin{equation}
+VH=HV,
+\end{equation}
+亦即
+\begin{equation}
+[V,H]=0.
+\end{equation}
+因此，么正操作若且唯若與哈密頓量對易，便是動力學的對稱性。
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:29}
+\audiencequestion{為什麼要求對稱算符\(V\)必須是么正的？}
+\lecturerresponse{對稱性必須保留態之間的邏輯區別。它不應將兩個互斥且正交的態變成無法區分的態。要保留這些關係，就必須是么正變換。}
+\end{classroomqa}
+
+不顯含時間且與\(H\)對易的算符是守恆量。這使對稱性與守恆律相連。在經典力學中，這種關係由諾特定理表述。在此處的量子力學形式中，關鍵判準是算符與哈密頓量的對易子。
+
+\section{離散與連續對稱性}
+
+對稱性可以是離散的，也可以是連續的。鏡射是離散對稱操作：它交換左右，但兩者之間不存在一連串無窮小鏡射。交換兩個全同粒子也是離散操作。翻轉一個沒有標記的雙面物體，也是同類例子。
+
+旋轉是連續的。\(90^\circ\)的旋轉可以由許多繞同一軸的小角度旋轉組成。空間平移也基於相同理由而連續：有限位移可以分解成許多微小位移。
+
+能夠分解成小變換，使連續對稱性具有一種特殊形式。在恆等變換附近，可寫成
+\begin{equation}
+V(\epsilon)
+=
+\mathbf 1-i\epsilon G+\mathcal O(\epsilon^2),
+\end{equation}
+其中\(\epsilon\)是描述該變換的參數。么正性要求
+\begin{equation}
+G^\dagger=G.
+\end{equation}
+厄米算符\(G\)稱為此對稱性的生成元。
+
+若此變換是對稱性，則
+\begin{equation}
+[H,V(\epsilon)]=0.
+\end{equation}
+展開至一階可得
+\begin{equation}
+[H,G]=0.
+\end{equation}
+因此，連續對稱性由與哈密頓量對易的厄米算符生成。這些生成元就是守恆量。
+
+``生成''在此有明確的意思：反覆施行無窮小變換，就能構成有限變換；這和以許多短時間步構成有限時間演化相同。
+
+\section{平移對稱性與動量}
+
+考慮將波函數主動向右平移距離\(\epsilon\)。若原波函數在\(x_0\)處有峰值，平移後的波函數便應在\(x_0+\epsilon\)處有峰值。因此，平移後波函數在座標\(x\)處的值，等於原波函數在\(x-\epsilon\)處的值：
+\begin{equation}
+(T(\epsilon)\psi)(x)=\psi(x-\epsilon).
+\end{equation}
+對於小位移，
+\begin{equation}
+\psi(x-\epsilon)
+=
+\psi(x)-\epsilon\frac{d\psi(x)}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+因此
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\epsilon\frac{d}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+利用
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx},
+\qquad
+\frac{d}{dx}=\frac{i}{\hbar}\hat p_x,
+\end{equation}
+無窮小平移便成為
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}\hat p_x
++\mathcal O(\epsilon^2).
+\end{equation}
+相應的有限平移為
+\begin{equation}
+T(\epsilon)
+=
+\exp\left(-\frac{i\epsilon}{\hbar}\hat p_x\right).
+\end{equation}
+採用約定\(V(\epsilon)=\mathbf 1-i\epsilon G+\cdots\)時，有量綱的平移參數給出
+\begin{equation}
+G_{\mathrm{trans}}=\frac{\hat p_x}{\hbar}.
+\end{equation}
+換言之，若在指數中明確寫出\(\hbar\)因子，動量便稱為空間平移的生成元。
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:08}
+\audiencequestion{平移推導是不是漏了一個負號？}
+\lecturerresponse{問題在於如何指定平移後波函數的方向。主動向右平移應以\(\psi(x-\epsilon)\)表示，而非\(\psi(x+\epsilon)\)。修正後可得\(T(\epsilon)=\mathbf 1-i\epsilon\hat p_x/\hbar+\cdots\)。}
+\end{classroomqa}
+
+動量是否守恆取決於哈密頓量。對於在一維運動的自由粒子，
+\begin{equation}
+H=\frac{\hat p_x^2}{2m}.
+\end{equation}
+由於任何算符都與自身的任意函數對易，
+\begin{equation}
+[H,\hat p_x]=0.
+\end{equation}
+因此自由粒子的哈密頓量具有平移不變性，而\(\hat p_x\)守恆。從物理上來說，無論初始位置在哪裡，粒子的行為都相同。平移初始條件只會使整個運動相應平移。
+
+在三維中，
+\begin{equation}
+H
+=
+\frac{\hat p_x^2+\hat p_y^2+\hat p_z^2}{2m}.
+\end{equation}
+每個動量分量都與\(H\)對易：
+\begin{equation}
+[H,\hat p_x]=[H,\hat p_y]=[H,\hat p_z]=0.
+\end{equation}
+每個空間方向各有一種平移對稱性。動量既是守恆量，也是這些平移所對應的生成元。
+
+接下來討論旋轉對稱性。旋轉較為複雜，因為繞不同軸旋轉通常不對易：先繞\(x\)軸旋轉再繞\(y\)軸旋轉，與反過來的順序並不相同。這會導致對稱性生成元不對易，並引出旋轉的群論結構。
