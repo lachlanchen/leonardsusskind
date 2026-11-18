@@ -1209,6 +1209,11 @@ def layout_repairs(book, lang, rel, text):
         anchor = '\\begin{figure}[H]\n\\centering\n\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_16.png}'
         # Keep the final large board figure off the page already carrying figures 14 and 15.
         replacements.append((anchor, '\\clearpage\n' + anchor))
+    if (book['id'] == 'core--cosmology--2009_winter_legacy_cosmology'
+            and lang == 'es' and rel == 'chapters/lecture_08/content.tex'):
+        anchor = '\\section{De la planitud a la estructura}'
+        # Printed page 120 has two timestamp footnotes and needs 0.294 pt more depth.
+        replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
     if book['id'] == 'core--cosmology--2013_winter_theoretical_minimum' and rel == 'chapters/lecture_06/content.tex':
         if lang == 'zh':
             anchor = '\\begin{equation}\n\\frac{GM}{r^2}=\\frac{v^2}{r},'

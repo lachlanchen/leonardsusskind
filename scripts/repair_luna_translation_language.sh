@@ -24,6 +24,14 @@ repair sweep. The owner has authorized completion of all languages, sequentially
 using gpt-6-luna. You own this bounded repair step while the generation queue is
 stopped; do not start another translation queue or background agent.
 
+You ARE the repair worker launched by repair_luna_translation_language.sh.
+Its wrapper PID is $$, and its Codex child with this exact prompt is YOU, not
+a competing repair agent. Your result file is empty until you finish. Never
+wait for your own wrapper, Codex process, log, or result file to complete.
+Do not monitor yourself or defer work because this same repair invocation is
+visible in ps. Diagnose and repair files directly now, then exit this sweep.
+If no safe repair is possible, report the blocker and exit instead of polling.
+
 Read AGENTS.md, references/POLISHED_TRANSLATIONS.md, and the publisher-voice skill.
 Inspect .translation-work/status.json, book-state/, build logs, source-bound
 translation caches, reviews, git status, and scripts/polished_translation.py.

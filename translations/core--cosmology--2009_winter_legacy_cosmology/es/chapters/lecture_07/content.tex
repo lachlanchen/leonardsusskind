@@ -1,0 +1,331 @@
+\chapter{Energía del vacío, inflación y fluctuaciones primordiales}
+
+\section{Energía del vacío y espacio de de Sitter}
+
+En el espacio plano, la ecuación de Friedmann es
+\begin{equation}
+\left(\frac{\dot A}{A}\right)^2=\frac{8\pi G}{3}\rho.
+\end{equation}
+Para la materia, \(\rho\) disminuye como \(A^{-3}\). Para la radiación, \(\rho\) disminuye como \(A^{-4}\). La energía del vacío no se diluye:
+\begin{equation}
+\rho=\rho_0=\text{constant}.
+\end{equation}
+Si el universo no contiene más que esta energía del vacío, el miembro derecho es constante. Si llamamos \(H^2\) a esa constante,
+\begin{equation}
+H^2=\frac{8\pi G}{3}\rho_0,
+\qquad
+H=\sqrt{\frac{8\pi G}{3}\rho_0}.
+\end{equation}
+Entonces la constante de Hubble es verdaderamente constante:
+\begin{equation}
+\frac{\dot A}{A}=H.
+\end{equation}
+Así que
+\begin{equation}
+\dot A=HA,
+\end{equation}
+y la solución es exponencial:
+\begin{equation}
+A(t)=C e^{Ht}.
+\end{equation}
+La distancia entre galaxias lejanas que no están ligadas entre sí crece exponencialmente. Esto es el espacio de de Sitter.
+
+En estas coordenadas, la geometría es
+\begin{equation}
+d\tau^2=dt^2-e^{2Ht}\left(dx^2+dy^2+dz^2\right).
+\end{equation}
+Aquí la energía del vacío es positiva. En el espacio plano tiene que serlo, porque el miembro izquierdo de la ecuación de Friedmann es no negativo. La energía del vacío puede ser negativa solo si se incluyen términos de curvatura, y ese no es el caso que estamos considerando.
+
+Einstein introdujo la constante cosmológica con otro propósito: equilibrar la materia ordinaria y mantener estático el universo.
+
+\section{El universo acelerado actual}
+
+El espacio de de Sitter también es el estado al que tiende el universo actual en tiempos tardíos. Antes, el factor de escala seguía el comportamiento dominado por la materia
+\begin{equation}
+A(t)\propto t^{2/3}.
+\end{equation}
+Hace unos miles de millones de años, la curva se dobló hacia arriba y empezó a crecer más deprisa. Todavía no es una exponencial perfecta, porque siguen presentes otras formas de energía, pero la tendencia apunta hacia ese comportamiento.
+
+Aquí, aceleración significa
+\begin{equation}
+\ddot A>0.
+\end{equation}
+Esta es una característica observada de la expansión en tiempos tardíos.
+
+Consideremos ahora el horizonte. La ley de Hubble dice
+\begin{equation}
+v=HD.
+\end{equation}
+A la distancia donde la velocidad de recesión alcanza la velocidad de la luz,
+\begin{equation}
+D=\frac{c}{H}.
+\end{equation}
+De manera equivalente, esto puede escribirse como \(HD=c\).\editorialnote{Esta es una reformulación algebraica editorial de la relación expresada oralmente \(D=c/H\). La línea superior de la pizarra de la derecha, en la figura~\ref{fig:lecture07-horizon}, solo se alcanza a leer en parte.}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_02.png}
+\caption{Relación del horizonte cósmico \(D=c/H\) en la expansión de de Sitter.}
+\label{fig:lecture07-horizon}
+\lectureframe{00:30:37}
+\end{figure}
+
+Esta distancia es del orden de diez a quince mil millones de años luz; numéricamente, es cercana a la edad del universo una vez que esta se convierte en distancia mediante \(c\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:10}
+\audiencequestion{¿No es que la escala del horizonte y la edad del universo sean casi iguales justamente lo que ocurre si la recta tangente resulta pasar por el origen?}
+\lecturerresponse{Eso sería exactamente cierto para \(A(t)\propto t\). No es cierto en general. En el espacio de de Sitter, \(H\) permanece fijo mientras la edad sigue aumentando, así que la casi igualdad actual no es una identidad matemática.}
+\end{classroomqa}
+
+\section{Qué significa la energía del vacío}
+
+Aquí se describe la energía del vacío con el lenguaje de la mecánica cuántica ordinaria. Para un oscilador armónico, la energía es, esquemáticamente,
+\begin{equation}
+E\sim p^2+x^2.
+\end{equation}
+Clásicamente, el estado fundamental es el punto de equilibrio,
+\begin{equation}
+x=0,\qquad p=0,\qquad E=0.
+\end{equation}
+La mecánica cuántica no permite que \(x\) y \(p\) estén ambos fijados exactamente en cero. El principio de incertidumbre obliga a que haya fluctuaciones, por lo que la energía del estado fundamental es positiva. Para el oscilador se obtiene
+\begin{equation}
+E_0=\frac{1}{2}\hbar\omega.
+\end{equation}
+
+A continuación, la misma idea se aplica a los campos. El universo está lleno de osciladores armónicos: las oscilaciones del campo electromagnético y, del mismo modo, las de todos los demás campos. Cada campo tiene energía de punto cero. Para el campo electromagnético, la densidad de energía es, esquemáticamente,
+\begin{equation}
+u_{\mathrm{EM}}\sim E^2+B^2.
+\end{equation}
+Incluso sin fotones reales, persisten oscilaciones de punto cero irreducibles. Esa es una explicación de la energía del vacío. Aquí solo necesitamos que esta energía está presente y no se diluye a medida que se expande el universo.
+
+\begin{classroomqa}
+\lecturetimestamp{00:16:15}
+\audiencequestion{¿Qué es esta energía del vacío y por qué quedaría algo si se eliminaran la materia y la radiación?}
+\lecturerresponse{Porque el vacío es el estado fundamental de los campos cuánticos, y el estado fundamental cuántico no tiene por qué tener energía cero. Los osciladores armónicos tienen energía positiva en su estado fundamental, y los campos se comportan como conjuntos de osciladores. Así que, incluso sin partículas reales, persiste la energía de punto cero.}
+\end{classroomqa}
+
+Esto no es la radiación de fondo de tres grados. El fondo de microondas es radiación ordinaria. Su densidad de energía disminuye porque los fotones se diluyen y cada uno sufre un corrimiento al rojo. La energía del vacío es la energía de punto cero residual que permanece después de eliminar los fotones reales.
+
+\section{Qué significa \(H^{-1}\)}
+
+Volvamos ahora a la relación entre la inversa de la constante de Hubble y la edad del universo. Si
+\begin{equation}
+A(t)\propto t,
+\end{equation}
+entonces
+\begin{equation}
+H=\frac{\dot A}{A}=\frac{1}{t}.
+\end{equation}
+En términos más generales, si
+\begin{equation}
+A(t)\propto t^p,
+\end{equation}
+entonces
+\begin{equation}
+H=\frac{p}{t}.
+\end{equation}
+Para el caso dominado por la materia, \(p=2/3\),
+\begin{equation}
+H=\frac{2}{3t}.
+\end{equation}
+Así que, en las cosmologías con ley de potencia, \(H^{-1}\) es del mismo orden que la edad, pero no es exactamente la edad.
+
+El espacio de de Sitter es diferente. Allí
+\begin{equation}
+A(t)=C e^{\gamma t},
+\end{equation}
+y, por tanto,
+\begin{equation}
+H=\frac{\dot A}{A}=\gamma,
+\end{equation}
+es una constante verdadera. Aquí \(H^{-1}\) no es la edad del universo. Es la constante de tiempo del crecimiento exponencial: el tiempo en que el factor de escala se multiplica por \(e\). En la exposición oral se dice repetidamente ``el doble'' y luego se corrige; la afirmación precisa es que se multiplica por \(e\). Hoy esa constante de tiempo es del orden de diez mil millones de años.
+
+\begin{classroomqa}
+\lecturetimestamp{00:23:46}
+\audiencequestion{¿Podría volver a explicar la relación entre la edad del universo y la inversa de la constante de Hubble?}
+\lecturerresponse{Para las leyes de potencia se obtiene \(H=p/t\), así que \(H^{-1}\) sigue la edad hasta un factor del orden de la unidad. Pero en el espacio de de Sitter, \(H\) es constante mientras la edad sigue aumentando, así que \(H^{-1}\) es solo la constante de tiempo exponencial, no la edad.}
+\end{classroomqa}
+
+\section{Energía y horizonte cósmico}
+
+Si la densidad de energía del vacío permanece constante mientras el universo se expande, es natural preguntarse si la energía total del vacío está aumentando. La respuesta que se da aquí es limitada. En la relatividad general, el balance de energía incluye una componente gravitatoria, por lo que la noción de energía total es más sutil que en la mecánica elemental. El punto práctico es el relacionado con el horizonte.
+
+En el espacio de de Sitter exacto, el horizonte cósmico tiene un tamaño fijo,
+\begin{equation}
+D=\frac{c}{H}
+=\frac{c}{\sqrt{8\pi G\rho_0/3}}.
+\end{equation}
+Por tanto, el volumen dentro de ese horizonte también es fijo. La energía del vacío que contiene es
+\begin{equation}
+E_{\mathrm{hor}}=\frac{4\pi}{3}D^3\rho_0.
+\end{equation}
+\editorialnote{Esto resume el cálculo expuesto oralmente en 00:31:06--00:32:23: tomar el tamaño del horizonte, calcular el volumen de la esfera y multiplicarlo por \(\rho_0\).}
+Como tanto \(D\) como \(\rho_0\) son constantes, esta cantidad no cambia con el tiempo. La energía del vacío de la parte del universo que un observador dado podrá llegar a ver permanece fija en el espacio de de Sitter exacto.
+
+Las cosas también pueden atravesar el horizonte cósmico, en un sentido muy parecido a como atraviesan el horizonte de un agujero negro. Una vez al otro lado, quedan fuera de nuestro contacto causal.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:27}
+\audiencequestion{Si la densidad de energía del vacío permanece constante mientras el universo se expande, ¿de dónde sale la energía adicional?}
+\lecturerresponse{La conferencia responde en términos de relatividad general, no con el lenguaje newtoniano de una caja. En el espacio de de Sitter exacto, el tamaño del horizonte permanece fijo, así que también permanece fija la energía del vacío dentro de la región que se podrá llegar a ver.}
+\end{classroomqa}
+
+\section{Por qué se introdujo la inflación}
+
+A continuación, se traslada el mismo mecanismo de de Sitter al pasado remoto, pero con una constante de tiempo mucho menor, del orden de
+\begin{equation}
+H^{-1}\sim 10^{-32}\,\mathrm{s}.
+\end{equation}
+Esa es la idea de la inflación: antes de todo lo que podemos observar directamente, el universo pasó por un período de expansión exponencial.
+
+La motivación básica es la planitud y la uniformidad del universo. Las secciones espaciales parecen muy planas. A gran escala, el universo también es muy homogéneo. Y, lo que es más llamativo, la superficie de última dispersión ya era uniforme, así que esa uniformización no pudo producirse únicamente durante la historia visible posterior.
+
+Un globo desinflado está arrugado. Si se infla lo suficiente, cualquier fragmento visible de su superficie se vuelve liso. La analogía de la pasa o la ciruela pasa ilustra lo mismo: un objeto arrugado, estirado por un factor enorme, parece liso en cualquier fragmento visible. Se supone que la inflación hizo exactamente eso.
+
+Esto también resuelve el problema del horizonte en la versión que se presenta aquí. Podemos ver regiones muy distantes entre sí en la superficie de última dispersión, pero la luz no tuvo tiempo de viajar de una a otra durante la historia visible posterior. Por tanto, que sus densidades y temperaturas sean casi uniformes sugiere una prehistoria en la que una región más pequeña se estiró enormemente.
+
+La inflación tiene una virtud ambivalente. Elimina la sensibilidad a las condiciones iniciales y, por la misma razón, borra gran parte de la información sobre cómo comenzó el universo.
+
+La cuestión de la planitud reaparece aquí de forma más precisa. Según las observaciones, el parámetro de curvatura \(k\) parece ser cero, con una precisión de aproximadamente un uno por ciento o mejor. La geometría parece euclidiana en toda la región visible. La inflación lo explica haciendo que el radio de curvatura sea mucho mayor que la región que podemos ver.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:05}
+\audiencequestion{¿Suponemos que había equilibrio antes de la inflación?}
+\lecturerresponse{No. La idea de la inflación es casi la opuesta. Cualquier estructura que hubiera antes se estira tanto que la región visible pierde la memoria de los detalles anteriores.}
+\end{classroomqa}
+
+\section{Un campo escalar y su potencial}
+
+Para explicar cómo la energía del vacío efectiva pudo haber sido mucho mayor en el universo temprano que ahora, introduzcamos un campo escalar. A diferencia de los campos eléctrico y magnético, que son vectores, un campo escalar no tiene dirección. Simplemente tiene un valor en cada punto:
+\begin{equation}
+\phi=\phi(x,y,z,t).
+\end{equation}
+Este campo es hipotético. No se identifica con ningún campo conocido de la naturaleza, ni sus cuantos se identifican con partículas conocidas.
+
+La parte de su energía que nos interesa aquí es la energía potencial,
+\begin{equation}
+V(\phi).
+\end{equation}
+Por ``energía potencial'' se entiende la energía asociada al valor mismo del campo, no a su derivada temporal. Distintos valores de \(\phi\) pueden tener energías diferentes.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_03.png}
+\caption{Potencial escalar cualitativo \(V(\phi)\) que muestra que distintos valores del campo corresponden a energías potenciales diferentes.}
+\label{fig:lecture07-generic-potential}
+\lectureframe{00:47:08}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:34}
+\audiencequestion{¿Qué representa el eje horizontal en el dibujo de \(V(\phi)\)?}
+\lecturerresponse{El eje horizontal representa el valor del campo \(\phi\) y el vertical, la energía potencial \(V\).}
+\end{classroomqa}
+
+Si el campo es constante en el espacio y en el tiempo, o casi constante en la región de interés, entonces \(V(\phi)\) se comporta exactamente como la energía del vacío. No se diluye. Así que se reutilizan las fórmulas anteriores de de Sitter, sustituyendo \(\rho_0\) por \(V(\phi)\). En particular,
+\begin{equation}
+H=\sqrt{\frac{8\pi G}{3}V(\phi)}.
+\end{equation}
+
+Si \(\phi\) varía de un lugar a otro, las distintas regiones se inflan con constantes de tiempo distintas. Pero si el estiramiento es suficientemente grande, cualquier fragmento visible se vuelve casi homogéneo.
+
+\begin{classroomqa}
+\lecturetimestamp{01:05:11}
+\audiencequestion{¿Está actuando \(\phi\) como parámetro temporal aquí?}
+\lecturerresponse{En esta exposición, sí, en el sentido limitado de que, mientras el campo desciende por el potencial, es una función monótona del tiempo.}
+\end{classroomqa}
+
+\section{Una meseta, un precipicio y el recalentamiento}
+
+El potencial necesario para esta historia se vuelve muy plano, aunque no perfectamente plano; luego llega al borde de un precipicio, desciende bruscamente, no llega del todo a cero y vuelve a subir.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_04.png}
+\caption{Potencial inflacionario con una meseta alta, un descenso pronunciado y un mínimo más bajo.}
+\label{fig:lecture07-inflationary-potential}
+\lectureframe{01:02:30}
+\end{figure}
+
+Esta forma es muy artificiosa, pero se introduce porque la historia cosmológica parece requerir algo parecido.
+
+El campo empieza en lo alto de la meseta. Como la pendiente es pequeña y la viscosidad efectiva asociada a la expansión es grande, \(\phi\) cambia muy lentamente. La imagen buscada se parece más a una roca que cae lentamente por miel que a un objeto que se desliza sobre una mesa. Cuanto más deprisa se expande el universo, mayor es esta viscosidad.
+
+\begin{classroomqa}
+\lecturetimestamp{00:59:07}
+\audiencequestion{¿Qué hace que \(\phi\) se mueva?}
+\lecturerresponse{La pendiente del potencial lo impulsa. La pendiente es pequeña y la viscosidad cosmológica es grande, así que la evolución es lenta, no rápida.}
+\end{classroomqa}
+
+Mientras \(\phi\) avanza poco a poco por la meseta, \(V(\phi)\) cambia muy poco. Por eso, el universo se infla casi como si la energía del vacío fuera constante. La constante de tiempo durante esta etapa es del orden de
+\begin{equation}
+H^{-1}\sim 10^{-32}\,\mathrm{s}.
+\end{equation}
+Una estimación aproximada expresada oralmente sitúa la altura de la meseta cerca de \(10^{-14}\) en unidades de Planck.\editorialnote{Esta es la estimación oral de ``mayor probabilidad'' en 01:14:38--01:14:47, no un valor derivado en la conferencia.}
+
+¿Cuánto duró la inflación? No se sabe, porque se desconocen la anchura y la poca inclinación de la meseta. Lo que sí se sabe es que el universo se multiplicó por \(e\) al menos unas cincuenta veces, y sesenta es la cifra que se suele citar.\editorialnote{Reformulación editorial de la exposición oral sobre las expansiones en e en 01:14:05--01:19:27.} Son expansiones en e: cada expansión en e corresponde a una multiplicación por \(e\).
+
+Cuando el campo llega al borde, la energía potencial cambia rápidamente. El campo desciende; su energía potencial se convierte primero en energía cinética y luego en calor y partículas, y el universo se calienta. En esta descripción, el nombre ``recalentamiento'' resulta un tanto engañoso, porque cualquier energía térmica anterior ya se habría diluido durante la inflación.
+
+El mínimo inferior no está en cero. El pequeño valor que queda allí es lo que se asocia con la expansión exponencial lenta actual.
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:48}
+\audiencequestion{¿Podría la meseta ser exactamente plana y que algunas perturbaciones hicieran que el campo se saliera por el borde?}
+\lecturerresponse{No. No puede ser completamente plana. Tiene que tener cierta inclinación. Si fuera demasiado plana, el universo recalentado resultaría demasiado inhomogéneo.}
+\end{classroomqa}
+
+Aquí se usa ``Big Bang'' en dos sentidos cercanos. Puede referirse al propio suceso del recalentamiento. También puede referirse a la etapa más temprana directamente visible, es decir, la superficie de última dispersión. La idea fundamental es que todo lo que se ha observado se encuentra muy por debajo de la meseta inflacionaria.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:42}
+\audiencequestion{¿Es el propio recalentamiento el Big Bang?}
+\lecturerresponse{Si se quiere, sí. Pero en ese momento el universo aún estaba extremadamente caliente y era opaco. La superficie de última dispersión aparece mucho más tarde, cuando el universo se ha enfriado lo suficiente para volverse transparente.}
+\end{classroomqa}
+
+\section{Fluctuaciones cuánticas y semillas de las galaxias}
+
+La inflación hace que el universo visible sea muy homogéneo, pero no perfectamente homogéneo. Sin fluctuaciones cuánticas, el campo se volvería completamente uniforme. Con la mecánica cuántica, sigue variando ligeramente de un lugar a otro.
+
+La imagen central representa el espacio ordinario en vertical y el valor del campo \(\phi\) en horizontal. Si el campo fuera perfectamente homogéneo, todos los puntos del espacio tendrían el mismo \(\phi\) en un instante dado, y todos avanzarían juntos hacia el borde. Entonces, todas las regiones caerían por el precipicio al mismo tiempo. Las fluctuaciones cuánticas rompen esa sincronía perfecta.
+
+Dos imágenes ilustran la idea. Una es una pequeña protuberancia en un campo por lo demás homogéneo. La otra es una fila de soldados que caminan cogidos del brazo hacia un precipicio. Si están perfectamente alineados, caen todos juntos. Si algunos van un poco por delante y otros un poco por detrás, caen en momentos distintos.
+
+Ahora viene el efecto importante. Una región que cae antes se recalienta antes. Para cuando cae una región posterior, la primera ya ha tenido tiempo de expandirse y enfriarse un poco. Esa diferencia produce variaciones en la densidad de energía después del recalentamiento.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:00}
+\audiencequestion{¿Las regiones que se recalientan más tarde están más calientes o más frías que las anteriores?}
+\lecturerresponse{Las anteriores ya han tenido tiempo de expandirse y enfriarse. Por tanto, cuando caen, las regiones posteriores están más calientes, y esa diferencia contribuye a la inhomogeneidad de la densidad.}
+\end{classroomqa}
+
+El efecto observado es pequeño:
+\begin{equation}
+\frac{\delta\rho}{\rho}\sim 10^{-5},
+\end{equation}
+aproximadamente una parte en cien mil. Son fluctuaciones primordiales de densidad, no energía oscura. Este valor no se deriva aquí únicamente a partir del esquema cualitativo; se utiliza para restringir cuán alta y cuán plana puede ser la meseta.
+
+También son necesarias. Sin ellas no habría galaxias. Después del recalentamiento, la gravedad amplifica el patrón inicial. Las regiones sobredensas atraen materia de las regiones subdensas. Las regiones sobredensas se vuelven aún más densas y las subdensas, aún menos densas; el resultado es la estructura posterior de galaxias y estrellas.
+
+No se trata únicamente de una explicación cualitativa. Se pueden calcular las fluctuaciones cuánticas de un campo en un universo en expansión, seguir su evolución a través del recalentamiento y comparar el resultado con el patrón de fluctuaciones reconstruido a partir de la distribución de galaxias. El ajuste es muy bueno.
+
+Esta misma exposición también conduce a una idea sobre la entropía. La aglomeración gravitatoria parece contraintuitiva, pero no viola la segunda ley. La gravedad se comporta de manera peculiar en mecánica estadística: tiende a hacer que las cosas se aglomeren, y esa aglomeración aumenta la entropía en vez de reducirla.
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:24}
+\audiencequestion{¿Cómo se refleja en todo esto el fondo de microondas, dado que \(\phi\) no es un campo electromagnético?}
+\lecturerresponse{El patrón primordial de densidad queda impreso en la superficie de última dispersión. El recalentamiento convierte la energía del campo en partículas ordinarias y fotones, y más tarde el fondo de microondas conserva la huella de esas fluctuaciones primordiales.}
+\end{classroomqa}
+
+\section{Ondas acústicas y el paso siguiente}
+
+Al final, la exposición pasa brevemente a las ondas acústicas. Estas preceden a la aglomeración gravitatoria posterior. Las fluctuaciones primordiales evolucionan hasta convertirse en oscilaciones acústicas, que dejan en el cielo acumulaciones de tamaño físico conocido.
+
+Eso es importante porque un tamaño físico conocido a una distancia conocida proporciona una regla de medición. Una vez medido el ángulo que subtiende en la superficie de última dispersión, se puede recurrir a la geometría para determinar si el espacio es plano, tiene curvatura positiva o tiene curvatura negativa. Los detalles se dejan para más adelante.
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:19}
+\audiencequestion{¿Qué ocurre con las ondas acústicas?}
+\lecturerresponse{Proporcionan una regla de medición en el cielo. Su tamaño físico conocido, junto con su tamaño angular observado en la superficie de última dispersión, permite medir la geometría del espacio. Los detalles se dejan para la próxima conferencia.}
+\end{classroomqa}

@@ -1,0 +1,348 @@
+\chapter{Esferas, espacio hiperbólico y significado de \(k\)}
+
+Veamos un poco de matemáticas, unas matemáticas sencillas. Las esferas de cualquier número de dimensiones son geometrías especiales: son homogéneas, y aquí homogéneo significa de curvatura constante. Primero veremos la curvatura positiva, luego la curvatura negativa uniforme y, después, la conexión con las ecuaciones de Einstein.
+
+Un universo esférico significa que \emph{el espacio} es esférico, no el espacio-tiempo. También existe la posibilidad de una curvatura negativa uniforme. Al poner estos casos uno junto al otro se aclara el papel de la relatividad general.
+
+\section{Esferas y geometría uniforme}
+
+Una esfera de dimensión uno no es más que un círculo. La forma más sencilla de describirla es embeberla en un espacio auxiliar de dos dimensiones y escribir
+\begin{equation}
+x^2+y^2=R^2.
+\end{equation}
+La esfera unitaria de dimensión uno es
+\begin{equation}
+x^2+y^2=1.
+\end{equation}
+
+Una esfera de dimensión dos se describe del mismo modo, ahora con tres coordenadas auxiliares:
+\begin{equation}
+x^2+y^2+z^2=R^2,
+\end{equation}
+En el caso unitario,
+\begin{equation}
+x^2+y^2+z^2=1.
+\end{equation}
+
+Estas coordenadas son solo un recurso auxiliar. La geometría que nos interesa no es la del espacio circundante \(x,y,z\). Es la de la propia superficie. Una criatura que vive en una esfera de dimensión uno vive en un círculo; no tiene acceso a un interior ni a un exterior. La misma idea se aplica a una esfera de dimensión dos. El interior de la esfera y su exterior pertenecen únicamente a la representación auxiliar.
+
+La misma construcción da lugar a una esfera de dimensión tres. Se introduce una coordenada más, por ejemplo \(w\), y se escribe
+\begin{equation}
+x^2+y^2+z^2+w^2=R^2,
+\end{equation}
+En el caso unitario,
+\begin{equation}
+x^2+y^2+z^2+w^2=1.
+\end{equation}
+Una esfera de dimensión tres es más difícil de visualizar, porque el recurso auxiliar tendría ahora cuatro dimensiones, pero las matemáticas no son mucho más difíciles.
+
+La notación estándar es \(\Omega_n\) para la esfera de dimensión \(n\). Así, \(\Omega_1\) es la esfera de dimensión uno, \(\Omega_2\) la de dimensión dos y \(\Omega_3\) la de dimensión tres.
+
+\section{Métricas de la esfera}
+
+La descripción más útil es la intrínseca. Se describe la esfera mediante coordenadas que pertenecen a la propia esfera.
+
+Para la esfera unitaria de dimensión uno basta una coordenada, \(\phi\), con \(0\leq \phi \leq 2\pi\). Su métrica es
+\begin{equation}
+ds^2=d\phi^2.
+\end{equation}
+También se escribe
+\begin{equation}
+d\Omega_1^2=d\phi^2.
+\end{equation}
+
+La esfera unitaria de dimensión dos se describe como una sucesión de círculos. Un ángulo, \(\phi\), sigue dando la vuelta a cada círculo, mientras que un segundo ángulo, \(\theta\), va de un extremo de la esfera al otro. Este segundo ángulo va de \(0\) a \(\pi\). El movimiento en la dirección \(\theta\) aporta \(d\theta^2\). El movimiento alrededor de la dirección \(\phi\) ocurre sobre un círculo cuyo radio es \(\sin\theta\). Por tanto,
+\begin{equation}
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\phi^2
+\end{equation}
+o bien
+\begin{equation}
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\Omega_1^2.
+\end{equation}
+
+La esfera de dimensión tres se obtiene del mismo modo, ahora como una sucesión de esferas de dimensión dos. Se introduce otra coordenada, \(\alpha\). Entonces,
+\begin{equation}
+d\Omega_3^2=d\alpha^2+\sin^2\alpha\,d\Omega_2^2.
+\end{equation}
+Desarrollada, esta expresión es
+\begin{equation}
+d\Omega_3^2=d\alpha^2+\sin^2\alpha\left(d\theta^2+\sin^2\theta\,d\phi^2\right).
+\end{equation}
+Aquí \(\alpha\) va de un extremo de tamaño nulo al otro, de modo que \(0\leq \alpha \leq \pi\).\editorialnote{En 00:17:24 el audio parece decir brevemente ``de cero a dos pi,'' pero la construcción que la rodea y el factor explícito \(\sin^2\alpha\) exigen que la nueva coordenada vaya de un extremo de tamaño nulo de la familia de esferas de dimensión inferior al otro.}
+
+La forma recursiva general es
+\begin{equation}
+d\Omega_n^2=d\alpha^2+\sin^2\alpha\,d\Omega_{n-1}^2.
+\end{equation}
+
+Adoptado este punto de vista, podemos prescindir de la representación por inmersión. Una esfera de dimensión uno se describe con una coordenada, una de dimensión dos con dos, una de dimensión tres con tres, y así sucesivamente. La geometría se sostiene por sí misma.
+
+Esta geometría es especial porque es homogénea. Se podría deformar la métrica sustituyendo \(\sin^2\theta\) por alguna otra función que también se anule en ambos extremos. Se obtendría entonces una superficie cerrada deformada, por ejemplo un elipsoide. Pero ya no sería uniforme. La esfera es homogénea porque todos sus puntos son equivalentes.
+
+Si se quiere una esfera de radio \(A\) en lugar de radio unitario, se multiplica la métrica unitaria por \(A^2\):
+\begin{equation}
+ds^2=A^2\,d\Omega_3^2.
+\end{equation}
+El cuadrado es necesario porque la métrica mide distancias al cuadrado.
+
+Un breve inciso sobre la esfera de dimensión cero. Si se extrapola un paso hacia atrás, se obtiene
+\begin{equation}
+x^2=1,
+\end{equation}
+cuyas soluciones son los dos puntos \(x=\pm 1\). Así pues, la esfera unitaria de dimensión cero no es más que dos puntos.
+
+\section{Un universo FRW esférico}
+
+Ahora no nos interesa solo el espacio, sino el espacio-tiempo. La imagen pertinente es una esfera de dimensión tres cuyo radio cambia con el tiempo.
+
+Hay que tener presente una advertencia durante toda la discusión: el tiempo es diferente. No se debe pensar que el universo en expansión es una esfera de dimensión superior en la que el tiempo hace las veces de una coordenada más de inmersión.
+
+Con esto en mente, el intervalo espacio-temporal es
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\,d\Omega_3^2.
+\end{equation}
+Esta es la métrica FRW de un universo con espacio esférico. Frente a la esfera estática, el único ingrediente nuevo es que el radio pasa a ser una función del tiempo, \(a(t)\).
+
+Es conveniente elegir las coordenadas de modo que estemos en uno de los polos. Ese punto no tiene nada de especial; es solo una convención. Entonces, \(\alpha\) puede interpretarse como una coordenada radial que mide la distancia angular a nosotros sobre la esfera unitaria. No es una distancia radial en kilómetros. Es una medida angular adimensional sobre la esfera unitaria, pero desempeña en la geometría el papel de una distancia radial.
+
+Salvo las concentraciones locales de materia, como galaxias y estrellas, esta es toda la geometría de un universo FRW con espacio esférico. Su curvatura espacial es positiva, y la convención de signos se expresa como
+\begin{equation}
+k=+1.
+\end{equation}
+Nada es en sí mismo ``más uno.'' Simplemente significa que la curvatura espacial es positiva.
+
+\section{Mirar desde una esfera}
+
+¿Qué aspecto tiene una esfera así cuando se mira desde uno de sus puntos? Aquí es donde entra en juego la proyección estereográfica.
+
+Tomemos una esfera de dimensión dos tangente a un plano infinito en el polo sur. Elijamos un punto de la esfera. Tracemos la recta que va del polo norte a ese punto y prolonguémosla hasta que corte el plano. De este modo, cada punto de la esfera se proyecta en un punto del plano. El polo sur se proyecta en el origen del plano. El polo norte es el punto excepcional: al acercarse a él desde distintas direcciones, su imagen se aleja hasta el infinito de una manera que depende de la dirección. Por eso se lo trata como el punto del infinito.
+
+Si se colocan ``continentes'' iguales en distintas posiciones de la esfera, sus imágenes en el plano se hacen más grandes al acercarse al polo norte. Así, un observador situado en el polo sur vería los objetos lejanos con ángulos aparentes mayores que en un espacio plano. Con curvatura positiva, un objeto conocido parece demasiado grande en comparación con la geometría euclídea.
+
+Ese es el principio observacional básico. La curvatura se infiere a partir de la relación entre distancia, tamaño y tamaño angular. Las galaxias no son buenas reglas estándar para distancias muy grandes, pero la lógica es exactamente esa.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:54}
+\audiencequestion{¿También hay que conocer la distancia, y no solo el tamaño angular?}
+\lecturerresponse{Sí. El ángulo por sí solo no basta. Se necesitan tanto el ángulo como la distancia.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:18}
+\audiencequestion{¿Los círculos de la superficie de la esfera se proyectan como círculos?}
+\lecturerresponse{Sí. Los círculos se proyectan como círculos. Esa es una de las propiedades especiales de la proyección estereográfica.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:47:02}
+\audiencequestion{¿Un continente conservaría su forma con la proyección?}
+\lecturerresponse{Hay dos afirmaciones distintas. Una es que los círculos se proyectan como círculos. La otra, más débil, es que las formas suficientemente pequeñas conservan su forma local porque se preservan los ángulos. La transformación es conforme: preserva los ángulos, pero no los tamaños relativos.}
+\end{classroomqa}
+
+\section{Curvatura negativa uniforme}
+
+El caso de curvatura negativa uniforme se introduce mediante su métrica.
+
+El análogo de la esfera con curvatura negativa es el espacio hiperbólico. Siguiendo la misma idea recursiva que antes, su métrica se obtiene sustituyendo \(\sin\alpha\) por \(\sinh\alpha\):
+\begin{equation}
+d\mathcal H_n^2=d\alpha^2+\sinh^2\alpha\,d\Omega_{n-1}^2.
+\end{equation}
+La parte angular de dimensión inferior sigue siendo la métrica de la esfera unitaria, \(d\Omega_{n-1}^2\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:51}
+\audiencequestion{En la métrica, ¿ese diferencial de dimensión inferior sigue siendo el de la esfera?}
+\lecturerresponse{Sí. Esa parte de dimensión inferior es la métrica ordinaria de la esfera unitaria. Lo que cambia es el factor \(\sinh^2\alpha\) que la precede.}
+\end{classroomqa}
+
+El seno hiperbólico es
+\begin{equation}
+\sinh\alpha=\frac{e^\alpha-e^{-\alpha}}{2}.
+\end{equation}
+El signo menos es importante; en la clase, un estudiante lo corrige enseguida.
+
+También hay una diferencia crucial en el intervalo de la coordenada. En la esfera, la nueva coordenada va de un extremo al otro y termina en \(\pi\). Aquí,
+\begin{equation}
+0\leq \alpha<\infty.
+\end{equation}
+El seno ordinario crece y luego vuelve a cero. El seno hiperbólico empieza de la misma manera cerca de \(\alpha=0\), pero después crece exponencialmente.
+
+Eso significa que las esferas de dimensión inferior que nos rodean se hacen cada vez más grandes al alejarnos. En esta geometría, el cielo no se hace primero más grande y luego más pequeño a medida que aumenta el radio. Sigue creciendo.
+
+En tres dimensiones espaciales, la forma FRW correspondiente es
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\,d\mathcal H_3^2,
+\end{equation}
+y la etiqueta del signo es
+\begin{equation}
+k=-1.
+\end{equation}
+
+\section{La representación del disco y su significado}
+
+La curvatura negativa se vuelve intuitiva en la representación del disco que Escher hizo famosa, en especial en \emph{Límite circular número cuatro}. La analogía con la proyección estereográfica es útil, pero el comportamiento es opuesto.
+
+En el caso de la esfera, la proyección parece infinita aunque la geometría real sea finita. En el caso de curvatura negativa, la representación del disco parece finita aunque la geometría real sea infinita. Los ``continentes'' o las ``galaxias'' iguales parecen cada vez más pequeños al acercarse al borde, pero geométricamente todos tienen el mismo tamaño. Si se mide la distancia contando cuántos tramos iguales se recorren, el borde está infinitamente lejos.
+
+Así pues, un objeto conocido con curvatura negativa parece demasiado pequeño en comparación con el espacio plano. Subtiende un ángulo demasiado pequeño.
+
+La geometría sigue siendo homogénea. Aunque la representación haga que las regiones exteriores parezcan diminutas, cualquier observador trasladado a otro lugar vería la misma geometría intrínseca.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:42}
+\audiencequestion{¿Un observador en cualquiera de esos círculos vería un patrón parecido?}
+\lecturerresponse{Sí, exactamente lo mismo. El espacio es homogéneo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:07:03}
+\audiencequestion{En el caso esférico las cosas lejanas parecen demasiado grandes, mientras que aquí parecen demasiado pequeñas?}
+\lecturerresponse{Sí. Con curvatura positiva, un objeto conocido subtiende un ángulo demasiado grande en comparación con el espacio plano. Con curvatura negativa, subtiende un ángulo demasiado pequeño.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:08:09}
+\audiencequestion{¿La utilidad de una proyección del tipo estereográfico es que un astrónomo puede reconstruirla a partir de observaciones?}
+\lecturerresponse{Sí. En la práctica, el astrónomo es un topógrafo que mide triángulos en el cielo. Para entender el punto geométrico inmediato, se puede dejar de lado la dependencia temporal y centrarse en los ángulos y las distancias.}
+\end{classroomqa}
+
+También hay una representación local útil. Una pequeña región de curvatura negativa puede dibujarse como una superficie en forma de silla en el espacio tridimensional ordinario. Pero solo se pueden representar así regiones pequeñas; el plano hiperbólico entero no se puede embeber globalmente como una superficie ordinaria y regular en el espacio euclídeo tridimensional.
+
+\section{El caso plano}
+
+Entre los casos de curvatura positiva y negativa está el espacio plano. Se puede pensar en él como un límite, pero basta con considerarlo simplemente como el espacio euclídeo plano ordinario.
+
+Su forma FRW es
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\left(dx^2+dy^2+dz^2\right),
+\end{equation}
+con
+\begin{equation}
+k=0.
+\end{equation}
+
+Estas son las tres geometrías FRW homogéneas:
+\begin{align}
+k=+1 &: \text{positive spatial curvature},\\
+k=0 &: \text{flat space},\\
+k=-1 &: \text{negative spatial curvature}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:07}
+\audiencequestion{Si se proyecta la geometría en un plano y se sigue una señal, ¿variaría de un lugar a otro la velocidad proyectada de la luz?}
+\lecturerresponse{Sí, en la proyección variaría. En la proyección esférica parecería aumentar cada vez más al alejarse; en el disco de curvatura negativa parecería disminuir cada vez más cerca del borde. Esa variación pertenece a la representación, no a la física subyacente.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:05}
+\audiencequestion{¿Se ha utilizado realmente la observación de objetos lejanos de esta manera para determinar si el espacio es plano?}
+\lecturerresponse{Sí, pero en realidad se utiliza la información angular. La planitud no se determina intentando medir qué velocidad parece tener la luz en la proyección.}
+\end{classroomqa}
+
+\section{Volvamos a las ecuaciones cosmológicas}
+
+Después del descanso viene la conexión entre las ecuaciones cosmológicas que ya se estudiaron y las ecuaciones de Einstein. En este momento, en la pizarra todavía aparece el fragmento de la métrica espacial plana.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_05_figure_02.png}
+\caption{Fragmento de la métrica FRW plana.}
+\lectureframe{01:18:18}
+\end{figure}
+
+Primero, un repaso muy breve de la mecánica newtoniana. Situémonos en el centro. Observemos una galaxia que se aleja según la ley de Hubble. De acuerdo con el teorema de Newton para una distribución esféricamente simétrica, solo contribuye a la fuerza sobre ella la masa contenida dentro de la esfera cuyo radio coincide con la distancia a la galaxia. Entonces hay tres posibilidades: la galaxia se mueve por encima de la velocidad de escape, por debajo de ella o exactamente a la velocidad de escape.
+
+A continuación se recuerda que, para la materia ordinaria no relativista, la densidad es proporcional a la masa dividida por \(a^3\); para la radiación, es proporcional a \(1/a^4\); y, para la energía del vacío, no cambia al cambiar la esfera.
+
+En el tratamiento newtoniano anterior, la ecuación cosmológica contenía un término de densidad y, si no se estaba exactamente en el caso de la velocidad de escape, un término constante adicional proporcional a \(1/a^2\). En la discusión anterior, ese término se hizo cero en su mayor parte. Empíricamente es pequeño, pero desde el punto de vista conceptual no hay razón para omitirlo.
+
+\section{Las ecuaciones de Einstein y la componente \(00\)}
+
+El paso siguiente son las ecuaciones de campo de Einstein. En el lado izquierdo está la geometría, construida a partir de la curvatura del espacio-tiempo. En el lado derecho está el tensor de energía-momento, la fuente del campo gravitatorio. Con la normalización usada en la clase, se escribe
+\begin{equation}
+R^{\mu\nu}-\frac{1}{2}g^{\mu\nu}R=4\pi G\,T^{\mu\nu}.
+\end{equation}
+\editorialnote{En la línea visible de la pizarra no se distingue el factor \(\tfrac12\), pero en torno a 01:33:36 la corrección oral lo restituye. La ecuación aquí incluye esa corrección y conserva la normalización \(4\pi G\) de la clase.}
+
+Aquí no hacen falta las diez componentes independientes. A estas alturas ya se han supuesto tantas cosas --- la homogeneidad, la forma FRW y un único factor de escala dependiente del tiempo --- que solo queda una función arbitraria, a saber, \(a(t)\). La elección natural es la componente tiempo-tiempo, porque \(T^{00}\) es la densidad de energía, \(\rho\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_05_figure_05.png}
+\caption{Ecuación de campo de Einstein y su componente \(00\).}
+\lectureframe{01:30:54}
+\end{figure}
+
+Así que nos centramos en
+\begin{equation}
+R^{00}-\frac{1}{2}g^{00}R=4\pi G\,\rho.
+\end{equation}
+
+El lado derecho es la densidad de energía. El lado izquierdo es la geometría.
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:09}
+\audiencequestion{¿Qué ocurre con las otras componentes del tensor de energía-momento?}
+\lecturerresponse{En general no se anulan. Las componentes espacio-espacio pueden representar la presión. En el caso dominado por la materia, la presión es cero; en el caso dominado por la radiación, es un tercio de la densidad de energía; y, para la energía del vacío, se escribe \(P=w\rho\) con \(w=-1\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:24}
+\audiencequestion{Así que, si solo hubiera materia, ¿se anularían las otras componentes de \(T^{\mu\nu}\)?}
+\lecturerresponse{Para la materia sin presión, sí: las componentes de presión se anulan.}
+\end{classroomqa}
+
+\section{Lo que se obtiene del cálculo de Einstein}
+
+El cálculo completo de la curvatura no se desarrolla en la pizarra. Lo que importa es qué aparece al sustituir una métrica FRW en el tensor de Einstein.
+
+Un tipo de término se debe únicamente al hecho de que el factor de escala depende del tiempo. Aunque el espacio fuera plano, un factor de escala dependiente del tiempo seguiría produciendo curvatura del espacio-tiempo. Esa contribución es proporcional a
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2.
+\end{equation}
+
+El segundo tipo de término se debe a la propia curvatura espacial. Aunque el factor de escala permaneciera constante en el tiempo, el espacio curvo seguiría contribuyendo a la curvatura del espacio-tiempo. En una geometría sencilla de curvatura uniforme, la curvatura es inversamente proporcional al cuadrado del radio de curvatura, así que aporta un término proporcional a
+\begin{equation}
+\frac{k}{a^2},
+\end{equation}
+con signo positivo para la esfera, negativo para el caso hiperbólico y cero para el espacio plano.
+
+\begin{classroomqa}
+\lecturetimestamp{01:36:53}
+\audiencequestion{¿No debería haber también un factor, como el radio de curvatura?}
+\lecturerresponse{Ese factor ya está incluido en \(1/a^2\). En estas geometrías sencillas de curvatura uniforme, la curvatura es simplemente el inverso del radio de curvatura al cuadrado.}
+\end{classroomqa}
+
+Los coeficientes se van calculando sobre la marcha y se comprueban en parte con el resultado newtoniano anterior. El resultado final es\footnote{Esta forma de Friedmann presentada consolida la discusión oral, con sus autocorrecciones, sobre los coeficientes y la comparación con el resultado newtoniano anterior, en torno a 01:32:35--01:36:53.}
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2+\frac{k}{a^2}=\frac{8\pi G}{3}\rho,
+\end{equation}
+o, de forma equivalente,
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}.
+\end{equation}
+
+Esta es la forma que relaciona las tres geometrías FRW con la dinámica cosmológica estudiada antes.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:52}
+\audiencequestion{¿Podría \(k\) tomar cualquier valor si se redefine \(a\)?}
+\lecturerresponse{En el caso plano no hay una escala natural única para \(a\), así que se puede reescalar, pero \(k\) sigue siendo cero. En los casos esférico e hiperbólico hay una escala de curvatura natural. Si se toma \(a(t)\) como ese radio de curvatura natural, entonces \(k\) es simplemente \(+1\) o \(-1\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:00}
+\audiencequestion{En esa ecuación final, ¿\(k\) es igual a \(+1\), \(-1\) o \(0\)?}
+\lecturerresponse{Sí. Para la esfera es \(+1\); para el caso hiperbólico, \(-1\); y para el espacio plano, \(0\).}
+\end{classroomqa}
+
+El tratamiento de Newton no nos llevó por mal camino: dio la misma ecuación básica. Lo que añade la relatividad general es la interpretación. Desde el punto de vista newtoniano, la constante adicional distingue entre superar la velocidad de escape, quedar por debajo de ella y estar justo en el caso límite. Desde el punto de vista de Einstein, el mismo signo nos indica la geometría del propio espacio.
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:46}
+\audiencequestion{¿Cómo funcionaba esto antes de incluir una constante cosmológica?}
+\lecturerresponse{Antes de la constante cosmológica, había una relación estrecha entre el comportamiento de la velocidad de escape y la geometría espacial. Si \(k=+1\), el espacio tiene curvatura positiva y el movimiento está por debajo de la velocidad de escape, así que el universo puede expandirse y después volver a contraerse. Si \(k=-1\), el espacio tiene curvatura negativa y el movimiento está por encima de la velocidad de escape, así que el universo sigue expandiéndose. Si \(k=0\), se tiene el caso límite.}
+\end{classroomqa}
+
+Por tanto, el mismo signo, \(k\), puede interpretarse de dos maneras: como una clasificación dinámica del movimiento y como el signo de la curvatura del espacio.

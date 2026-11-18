@@ -211,6 +211,11 @@ class TranslationTests(unittest.TestCase):
         self.assertEqual(repaired, '\\clearpage\n' + figure)
         with self.assertRaisesRegex(ValueError, 'layout anchor changed'):
             p.layout_repairs(statistical, 'es', 'chapters/lecture_06/content.tex', 'no figure here')
+        cosmology = next(b for b in p.read(p.MANIFEST)['books']
+                        if b['id'] == 'core--cosmology--2009_winter_legacy_cosmology')
+        heading = r'\section{De la planitud a la estructura}'
+        self.assertEqual(p.layout_repairs(cosmology, 'es', 'chapters/lecture_08/content.tex', heading),
+                         '\\enlargethispage{1pt}\n' + heading)
 
     def test_translation_tex_format_is_isolated(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
