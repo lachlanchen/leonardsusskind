@@ -1,0 +1,631 @@
+\chapter{Planitud local, derivación covariante y curvatura}
+
+\lectureoverview{En un punto elegido siempre es posible hacer que la métrica sea euclídea hasta primer orden. La curvatura aparece donde termina esa libertad de coordenadas: en el fallo de segundo orden de los marcos locales vecinos al encajar entre sí. Desarrollaremos esta idea en tres etapas. Primero veremos las coordenadas normales; luego, la derivada covariante y su conexión; por último, la no conmutatividad de dos derivadas covariantes, que define el tensor de Riemann y da un significado invariante a la gravedad de marea.}
+
+\section{La carga necesaria de los índices}
+
+La relatividad general es difícil de una manera muy particular. Sus ideas básicas no son inextricablemente oscuras, pero en cuanto se empieza a calcular, la notación se llena de índices, derivadas y símbolos. Hay lenguajes más compactos: los vielbeines, las formas diferenciales, los espinores, los twistores y otros recursos permiten condensar largas ecuaciones en componentes en objetos compactos. Sin embargo, aprender esos lenguajes supone en sí mismo un esfuerzo considerable, y una notación compacta puede ocultar precisamente los mecanismos que más conviene entender en una primera aproximación.
+
+Las ecuaciones de Maxwell sirven de ejemplo. Escritas componente por componente, equivalen a varias ecuaciones distintas. La notación vectorial las reúne en ecuaciones de divergencia y rotacional, lo que facilita apreciar su estructura. En relatividad general existen simplificaciones análogas, pero cuando hay que hacer un cálculo explícito, el método por componentes sigue siendo la vía más fiable. Por eso mantendremos visibles los índices. Cuando uno se familiariza con su gramática, el camino conceptual se vuelve mucho más fluido, aunque los cálculos todavía puedan ocupar páginas.
+
+Los programas de cálculo simbólico pueden ayudar con esas operaciones. A partir de una métrica \(g_{mn}(x)\), uno de esos programas puede construir los símbolos de Christoffel, los tensores de Riemann, Ricci y Einstein. Después puede sustituir estas expresiones en las ecuaciones de campo. Esto no elimina la necesidad de entender qué significan esos objetos; simplemente separa el desarrollo mecánico de la geometría.
+
+\begin{classroomqa}
+\audiencequestion{¿Qué áreas de investigación en relatividad general estaban activas cuando se impartió esta clase?}
+\lecturerresponse{La clase destacó varios frentes. La gravedad cuántica y la física cuántica de los agujeros negros eran problemas centrales de la teoría fundamental. La astrofísica clásica y la relatividad numérica estudiaban sistemas como los agujeros negros en órbita y en proceso de fusión, para los cuales resolver las ecuaciones de Einstein y predecir la radiación gravitacional exige mucho más que introducir ecuaciones a ciegas en un ordenador. Las mismas estructuras matemáticas empezaban a encontrar aplicaciones también en la física de la materia condensada y en la dinámica de fluidos. El cambio histórico era igualmente notable: la relatividad general había pasado de ser una especialidad relativamente pequeña en los 1960 a convertirse en uno de los lenguajes centrales de la física teórica, estrechamente relacionado con la teoría cuántica de campos.
+\lecturetimestamp{00:05:15}}
+\end{classroomqa}
+
+Esta es la última clase dedicada exclusivamente a la geometría riemanniana. A partir de la próxima, interpretaremos la geometría como gravedad. El vínculo ya se vislumbra: distinguir un campo gravitatorio real de un campo aparente causado por coordenadas aceleradas o curvilíneas es, matemáticamente, el mismo problema que distinguir una métrica curva de una métrica plana expresada en coordenadas poco convenientes.
+
+\section{La cuestión invariante}
+
+Una geometría bidimensional es plana cuando la geometría euclídea se cumple intrínsecamente: las rectas, las paralelas, las relaciones entre los ángulos de un triángulo y las medidas de distancia tienen todas su forma euclídea. Es tentador afirmar que la planitud significa \(g_{mn}=\delta_{mn}\), pero esa afirmación depende de las coordenadas. Incluso un plano ordinario tiene una métrica que depende de la posición si se usan coordenadas polares. La afirmación correcta es que una región plana admite coordenadas en las que la métrica es constante y euclídea en toda la región.
+
+Supongamos, en cambio, que nos dan la métrica en unas coordenadas arbitrarias. Una prueba poco útil consistiría en recorrer distintos sistemas de coordenadas, transformando la métrica cada vez, con la esperanza de encontrar finalmente una forma cartesiana. Hay infinitas posibilidades, así que este criterio no es práctico.
+
+La estrategia correcta es construir un diagnóstico a partir de \(g_{mn}\) y sus derivadas. Buscamos un objeto \(R\) con dos propiedades decisivas:
+\[
+\begin{aligned}
+R=0
+&\quad\Longleftrightarrow\quad
+\text{locally flat geometry},\\
+R\neq 0 \text{ at } P
+&\quad\Longrightarrow\quad
+\text{curvature at } P.
+\end{aligned}
+\]
+La más importante es que \(R\) sea un tensor. Si un tensor se anula en un sistema de coordenadas, se anula en todos, así que no hace falta buscar entre coordenadas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_01.png}
+\caption{La prueba invariante deseada: la métrica no tiene por qué ser manifiestamente igual a \(\delta_{mn}\), mientras que un objeto de curvatura nulo debería identificar una geometría localmente plana.}
+\lectureframe{00:18:20}
+\end{figure}
+
+La precisión \emph{localmente} es importante. Un tensor de Riemann nulo garantiza una geometría euclídea local; aun así, las identificaciones globales pueden dar lugar a una topología no trivial. Por ejemplo, un cilindro plano o un toro plano pueden ser localmente euclídeos sin ser globalmente un plano.
+
+\section{Geometría métrica a pequeña escala}
+
+Conviene ver qué cambia según la dimensión. Un espacio de dimensión cero es un único punto. Una variedad riemanniana conexa de una dimensión puede rectificarse localmente para convertirse en una línea; globalmente puede ser un intervalo, una línea o un lazo. Un insecto confinado a una trayectoria cerrada unidimensional puede medir su circunferencia, pero la curvatura de la trayectoria dentro de una habitación no altera su métrica intrínseca.
+
+En dos dimensiones existe una geometría intrínseca mucho más rica: un plano, una esfera, una superficie terrestre irregular y un toro pueden diferir incluso localmente, y también pueden tener topologías globales distintas. La métrica registra las distancias infinitesimales:
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:l3-line-element}
+\end{equation}
+La cantidad \(ds^2\) es un escalar. Por consiguiente, los cambios de \(dx^m\) bajo una transformación de coordenadas quedan compensados exactamente por la transformación de \(g_{mn}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_02.png}
+\caption{El elemento de línea invariante escrito con una métrica que depende de la posición.}
+\lectureframe{00:19:00}
+\end{figure}
+
+La métrica es no degenerada y, por tanto, tiene inversa:
+\begin{equation}
+ g^{mn}g_{nr}=\delta^m{}_r.
+\label{eq:l3-inverse-metric}
+\end{equation}
+El tensor de Kronecker mixto \(\delta^m{}_r\) es la aplicación identidad. En la geometría riemanniana ordinaria, la métrica también es definida positiva:
+\begin{equation}
+ g_{mn}u^m u^n>0
+\qquad\text{for every nonzero }u^m.
+\label{eq:l3-positive}
+\end{equation}
+Más adelante, el espacio-tiempo lorentziano dejará de exigir esta positividad, pero conservará la no degeneración.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_03.png}
+\caption{La métrica inversa y el tensor identidad en la pizarra.}
+\lectureframe{00:20:40}
+\end{figure}
+
+La métrica establece una correspondencia entre vectores y covectores:
+\begin{equation}
+ V_m=g_{mn}V^n,
+ \qquad
+ V^m=g^{mn}V_n.
+\label{eq:l3-raise-lower}
+\end{equation}
+Por tanto, subir o bajar un índice es una operación que realiza la métrica, no un mero cambio tipográfico.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_04.png}
+\caption{Subir y bajar un índice vectorial con la métrica y su inversa.}
+\lectureframe{00:24:40}
+\end{figure}
+
+Si todas las componentes de \(g_{mn}\) son constantes en una región, una transformación lineal constante puede diagonalizar y normalizar allí la métrica. La geometría es entonces plana. Por tanto, la información interesante debe estar relacionada con la variación de la métrica con la posición.
+
+\section{Coordenadas normales: planitud hasta primer orden}
+
+Elijamos un punto \(P\). El teorema de las coordenadas normales afirma que se pueden construir coordenadas centradas en \(P\) tales que
+\begin{align}
+ g_{mn}(P)&=\delta_{mn}, \label{eq:l3-normal-metric}\\
+ \partial_r g_{mn}(P)&=0. \label{eq:l3-normal-first}
+\end{align}
+La clase las llama coordenadas normales gaussianas. Geométricamente, se trazan ejes que pasan por \(P\) y se prolongan sus líneas coordenadas como rectas hasta donde lo permita la geometría. Más adelante precisaremos la noción de rectitud: será el movimiento geodésico.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_05.png}
+\caption{Coordenadas normales elegidas de modo que la métrica sea euclídea en el punto seleccionado.}
+\lectureframe{00:28:50}
+\end{figure}
+
+Este marco no es único. Una rotación ortogonal en \(P\) conserva \(g_{mn}(P)=\delta_{mn}\). Lo que importa no es la orientación de los ejes, sino que exista un marco en el que se cumplan tanto \eqref{eq:l3-normal-metric} como \eqref{eq:l3-normal-first}.
+
+\begin{classroomqa}
+\audiencequestion{¿Estas condiciones se cumplen solo en el punto seleccionado o en toda una vecindad?}
+\lecturerresponse{Se cumplen en el punto seleccionado \(P\). Se puede centrar un marco normal en cualquier punto, pero, en general, no es posible usar un único sistema de coordenadas en una región curva y mantener la métrica euclídea y todas sus primeras derivadas nulas en todas partes. Al extender las mismas coordenadas fuera de \(P\) aparecen derivadas de orden superior de la métrica.
+\lecturetimestamp{00:29:53}}
+\end{classroomqa}
+
+En \(P\), las segundas derivadas son, en general, inevitables:
+\begin{equation}
+ \partial_r\partial_s g_{mn}(P)\neq 0
+ \qquad\text{in general}.
+\label{eq:l3-normal-second}
+\end{equation}
+Así pues, en un punto, la métrica no contiene información invariante sobre la curvatura ni en orden cero ni en primer orden; la libertad de coordenadas puede eliminarla. La primera información invariante posible aparece en segundo orden.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_06.png}
+\caption{Las condiciones de las coordenadas normales: la métrica es euclídea, sus primeras derivadas se anulan y sus segundas derivadas no tienen por qué anularse.}
+\lectureframe{00:30:50}
+\end{figure}
+
+\subsection{Por qué basta la libertad de coordenadas}
+
+Tomemos \(P\) como origen común de las coordenadas \(x^m\) y \(y^m\). Tras usar una transformación lineal para fijar la métrica en el origen, consideremos la parte cuadrática de una transformación de coordenadas adicional:
+\begin{equation}
+ x^m
+ =y^m+C^m{}_{nr}y^n y^r+O(y^3),
+ \qquad C^m{}_{nr}=C^m{}_{rn}.
+\label{eq:l3-quadratic-transform}
+\end{equation}
+En cuatro dimensiones, el par simétrico \(nr\) tiene
+\[
+\frac{4(4+1)}{2}=10
+\]
+posibilidades independientes. Para cada uno de los cuatro valores de \(m\) hay diez coeficientes \(C^m{}_{nr}\), es decir, cuarenta coeficientes cuadráticos.
+
+En cuatro dimensiones, la métrica simétrica también tiene diez componentes independientes. Cada componente tiene cuatro primeras derivadas, así que las condiciones \(\partial_r g_{mn}(P)=0\) forman un sistema de cuarenta ecuaciones. La coincidencia en el número de ecuaciones muestra que la libertad cuadrática de coordenadas tiene exactamente el grado de libertad necesario para imponer las condiciones sobre las primeras derivadas. El teorema de las coordenadas normales garantiza la existencia; este recuento sirve como comprobación estructural, pero no constituye una demostración completa de que un sistema no lineal arbitrario tenga solución.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_07.png}
+\caption{La transformación de coordenadas cuadrática y los diez monomios cuadráticos independientes en cuatro dimensiones.}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Se pretende que \(x^m=y^m+C^m{}_{nr}y^n y^r+\cdots\) sea una transformación de coordenadas?}
+\lecturerresponse{Sí. Se eligen los coeficientes \(C^m{}_{nr}\) para que, en las coordenadas nuevas, las primeras derivadas de la métrica se anulen en el origen común. La parte lineal mantiene invertible el jacobiano en las proximidades de ese punto, mientras que la parte cuadrática ajusta las primeras derivadas de la métrica. \lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es esto lo que significa decir que una geometría suave es localmente plana?}
+\lecturerresponse{Es la afirmación pertinente en primer orden. A una escala suficientemente pequeña, una superficie suave se aproxima por su plano tangente, y las coordenadas normales expresan ese hecho mediante \(g_{mn}(P)=\delta_{mn}\) y \(\partial_r g_{mn}(P)=0\). La planitud exacta en una vecindad es una condición más fuerte: también requiere que el tensor de curvatura se anule allí.
+\lecturetimestamp{00:36:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿La igualdad entre cuarenta coeficientes y cuarenta ecuaciones garantiza realmente que las ecuaciones puedan resolverse?}
+\lecturerresponse{El recuento identifica la libertad de coordenadas necesaria, mientras que el teorema garantiza la construcción local para una métrica suave y no degenerada. La clase propone comprobar directamente el caso bidimensional como ejercicio. El argumento no depende de que haya cuatro dimensiones; en \(d\) dimensiones, la misma simetría y la misma libertad de coordenadas encajan entre sí. \lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué no hay un término constante en el desarrollo y cuál es el término de primer orden?}
+\lecturerresponse{El término \(y^m\) es el de primer orden. Se omitió el término constante porque los dos orígenes de coordenadas se eligieron deliberadamente para representar el mismo punto, de modo que \(y=0\) implica \(x=0\). Esta elección no supone ninguna pérdida de generalidad. \lecturetimestamp{00:38:52}}
+\end{classroomqa}
+
+\section{Por qué falla la derivación componente a componente}
+
+Consideremos ahora un campo vectorial covariante \(V_m(x)\). En coordenadas cartesianas rectilíneas de un espacio plano, un vector geométricamente constante tiene componentes constantes. Por ello, podríamos intentar definir su derivada como \(\partial_rV_m\). El problema aparece en cuanto se curva la cuadrícula de coordenadas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_08.png}
+\caption{Una cuadrícula de coordenadas curvilíneas superpuesta a un marco localmente rectilíneo.}
+\lectureframe{00:40:10}
+\end{figure}
+
+Coloquemos el mismo vector geométrico en puntos vecinos. Con respecto a un marco cartesiano fijo, sus componentes no cambian. Sin embargo, con respecto a una base curvilínea, los propios vectores de la base giran al desplazarnos, de modo que la lista de componentes cambia aunque el vector no lo haga.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_09.png}
+\caption{El mismo vector adquiere componentes distintas en puntos vecinos porque ha girado la base local de coordenadas.}
+\lectureframe{00:42:30}
+\end{figure}
+
+Por tanto, la condición ingenua
+\begin{equation}
+ \partial_rV_m=0
+\label{eq:l3-naive-derivative}
+\end{equation}
+puede cumplirse en un sistema de coordenadas y no en otro. Si \(\partial_rV_m\) fuera un tensor de rango dos, esto sería imposible: su anulación en un marco implicaría que se anula en todos. En consecuencia, las derivadas parciales ordinarias de las componentes de un vector no son componentes de un tensor.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_10.png}
+\caption{La condición, deliberadamente ingenua, de derivada nula junto a la base curvilínea cambiante.}
+\lectureframe{00:44:00}
+\end{figure}
+
+Necesitamos una derivada que elimine el cambio aparente causado por la base y conserve el cambio real del campo vectorial.
+
+\section{Definición de la derivada covariante}
+
+La derivación en \(P\) solo compara valores en una vecindad arbitrariamente pequeña de \(P\). Por tanto, podemos empezar en coordenadas normales centradas allí. Tomemos un vector en un punto vecino, desplacemos su origen hasta \(P\) y mantengamos fijas durante el desplazamiento sus componentes en coordenadas normales. Al comparar el vector transportado con el que ya se encuentra en \(P\) y dividir por la separación, obtenemos la derivada ordinaria en ese marco localmente rectilíneo.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_11.png}
+\caption{La comparación local: antes de calcular la diferencia, se traslada el vector vecino en coordenadas normales.}
+\lectureframe{00:46:50}
+\end{figure}
+
+Expresemos ahora esa derivada, definida geométricamente, en coordenadas arbitrarias. Hay dos contribuciones: pueden cambiar las componentes \(V_m\) y puede cambiar la base de coordenadas. La estructura de los índices determina la forma de la corrección:
+\begin{equation}
+ \nabla_rV_m
+ =\partial_rV_m-\Gamma^t{}_{rm}V_t.
+\label{eq:l3-covector-derivative}
+\end{equation}
+Las cantidades \(\Gamma^t{}_{rm}\) son los coeficientes de conexión, también llamados símbolos de Christoffel. El signo menos corresponde a un índice covariante. En el centro \(P\) de las coordenadas normales,
+\begin{equation}
+ \Gamma^t{}_{rm}(P)=0,
+\qquad
+ \nabla_rV_m(P)=\partial_rV_m(P).
+\label{eq:l3-gamma-normal-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_12.png}
+\caption{La derivada covariante de un covector: cambio ordinario de las componentes menos el cambio inducido por la base móvil.}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿La expresión \(\nabla_rV_m=\partial_rV_m-\Gamma^t{}_{rm}V_t\) es válida en coordenadas arbitrarias, y qué forma adopta en coordenadas normales?}
+\lecturerresponse{La fórmula completa es válida en coordenadas arbitrarias. En el punto seleccionado de las coordenadas normales, las primeras derivadas de la métrica, y por tanto los símbolos de Christoffel, se anulan; solo queda \(\partial_rV_m\). Fuera de ese punto, incluso el mismo sistema de coordenadas normales suele tener coeficientes de conexión distintos de cero.
+\lecturetimestamp{00:50:22}}
+\end{classroomqa}
+
+La derivada covariante se llama así porque el objeto completo \(\nabla_rV_m\) se transforma covariantemente como un tensor; el nombre no alude simplemente al índice inferior de la derivada. El término de Christoffel es precisamente lo que corrige la transformación no tensorial de la derivada parcial.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_13.png}
+\caption{La derivada covariante completa del covector y su corrección de conexión.}
+\lectureframe{00:51:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Tiene esto relación con la derivada convectiva que se usa en la dinámica de fluidos?}
+\lecturerresponse{La respuesta de la clase es cauta: existe una relación. En mecánica de fluidos también se distingue entre el cambio que acompaña al flujo y el cambio observado en un punto de coordenadas fijo; además, las ecuaciones de fluidos en coordenadas o espacios curvos incluyen derivadas covariantes. Por definición, los operadores no son idénticos, pero ambos corrigen una derivada ingenua para tener en cuenta una estructura móvil ligada a la descripción.
+\lecturetimestamp{00:52:31}}
+\end{classroomqa}
+
+Para la conexión sin torsión que usamos aquí,
+\begin{equation}
+ \Gamma^t{}_{rm}=\Gamma^t{}_{mr}.
+\label{eq:l3-torsion-free}
+\end{equation}
+Las geometrías más generales pueden tener torsión y no tienen por qué satisfacer esta simetría. La conexión considerada aquí es la pertinente para la formulación métrica estándar de la relatividad general.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_14.png}
+\caption{Los símbolos de Christoffel identificados como los coeficientes simétricos de conexión de la geometría sin torsión.}
+\lectureframe{00:54:30}
+\end{figure}
+
+Existe una analogía física útil. Las coordenadas normales desempeñan el papel de un marco en caída libre en un suceso: allí se puede hacer desaparecer la corrección de coordenadas. Las coordenadas curvilíneas arbitrarias se parecen a un ascensor acelerado, donde aparecen fuerzas aparentes porque cambia el propio marco. La analogía es local, y la curvatura medirá por qué un único marco en caída libre no puede eliminar la gravedad en toda una región extensa.
+
+\subsection{Una corrección por cada índice tensorial}
+
+Para un tensor covariante de rango dos \(T_{mn}\), cada índice inferior recibe su propia corrección de conexión:
+\begin{equation}
+ \nabla_sT_{mn}
+ =\partial_sT_{mn}
+ -\Gamma^t{}_{sm}T_{tn}
+ -\Gamma^t{}_{sn}T_{mt}.
+\label{eq:l3-rank-two-derivative}
+\end{equation}
+Para recordar la regla, se mantiene fijo un índice como espectador mientras se deriva con respecto al otro y luego se repite el proceso para el segundo índice. Los índices contravariantes reciben términos correspondientes con el signo opuesto.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_15.png}
+\caption{La derivada covariante de un tensor covariante de rango dos, con una corrección de Christoffel por cada índice inferior.}
+\lectureframe{01:01:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿El símbolo \(\partial_r\) se refiere exclusivamente a coordenadas normales? ¿La fórmula tensorial está restringida a ese marco?}
+\lecturerresponse{No. La notación \(\partial_r=\partial/\partial x^r\) tiene sentido en cualquier sistema de coordenadas, y la fórmula completa de la derivada covariante se escribe para coordenadas arbitrarias. Solo en el punto elegido de un marco normal se anulan las correcciones de Christoffel. \lecturetimestamp{00:57:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Cuando la derivada covariante se reduce a la derivada parcial en coordenadas normales, ¿esta reducción solo vale en el punto seleccionado? ¿Son tensores los símbolos de Christoffel?}
+\lecturerresponse{Sí, la reducción es puntual. Los símbolos de Christoffel no son tensores: pueden anularse en \(P\) en coordenadas normales y ser distintos de cero en ese mismo punto en otro sistema de coordenadas. Su transformación no tensorial es precisamente lo que permite que la combinación de \eqref{eq:l3-covector-derivative} se transforme como un tensor.
+\lecturetimestamp{00:58:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Para qué se usará realmente la derivada covariante?}
+\lecturerresponse{Para las ecuaciones de campo. Los campos gravitatorios varían de un punto a otro, así que sus ecuaciones deben incluir derivadas. Al mismo tiempo, las ecuaciones deben tener el mismo contenido en todos los sistemas de coordenadas. La derivación covariante transforma tensores en tensores y, por tanto, permite formular ecuaciones diferenciales cuya validez no depende de un sistema de referencia particular. \lecturetimestamp{01:02:35}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Se puede multiplicar la derivada covariante por un diferencial de coordenadas para describir el cambio entre puntos vecinos?}
+\lecturerresponse{Sí. A lo largo de un desplazamiento infinitesimal \(dx^s\), el cambio covariante es \(dx^s\nabla_sT\). El término parcial mide el cambio de las componentes, mientras que los términos de conexión tienen en cuenta el cambio de la base de coordenadas. Incluso en el espacio plano, si se usan coordenadas polares hay que distinguir ambos efectos. \lecturetimestamp{01:03:22}}
+\end{classroomqa}
+
+\section{La compatibilidad métrica determina la conexión}
+
+Apliquemos la regla para tensores de rango dos a la métrica. En \(P\), en coordenadas normales, se cumplen \(\partial_sg_{mn}=0\) y \(\Gamma^t{}_{sm}=0\); por tanto, \(\nabla_sg_{mn}=0\). Como la derivada covariante es un tensor, este resultado puntual vale en todos los sistemas de coordenadas:
+\begin{equation}
+ \nabla_sg_{mn}=0.
+\label{eq:l3-metric-compatibility}
+\end{equation}
+Esto es la compatibilidad métrica. Significa que el transporte paralelo conserva la métrica y, por consiguiente, las longitudes y los ángulos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_16.png}
+\caption{La ecuación de compatibilidad métrica inicia la deducción de la conexión a partir de la métrica.}
+\lectureframe{01:06:20}
+\end{figure}
+
+Al desarrollar \eqref{eq:l3-metric-compatibility} se obtiene
+\begin{equation}
+ 0
+ =\partial_sg_{mn}
+ -\Gamma^t{}_{sm}g_{tn}
+ -\Gamma^t{}_{sn}g_{mt}.
+\label{eq:l3-compat-expanded}
+\end{equation}
+Escribamos otras dos copias permutando cíclicamente los índices de derivación y de la métrica:
+\begin{align}
+ 0
+ &=\partial_mg_{sn}
+ -\Gamma^t{}_{ms}g_{tn}
+ -\Gamma^t{}_{mn}g_{st},
+\label{eq:l3-compat-m}\\
+ 0
+ &=\partial_ng_{sm}
+ -\Gamma^t{}_{ns}g_{tm}
+ -\Gamma^t{}_{nm}g_{st}.
+\label{eq:l3-compat-n}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_17.png}
+\caption{Tres ecuaciones de compatibilidad métrica con los índices permutados.}
+\lectureframe{01:10:20}
+\end{figure}
+
+Sumemos \eqref{eq:l3-compat-m} y \eqref{eq:l3-compat-n}, y restemos \eqref{eq:l3-compat-expanded}. Al usar la simetría sin torsión \eqref{eq:l3-torsion-free}, se cancelan los términos de conexión que no interesan:
+\begin{equation}
+ \partial_mg_{sn}+\partial_ng_{sm}-\partial_sg_{mn}
+ =2\Gamma^t{}_{mn}g_{st}.
+\label{eq:l3-isolate-gamma-lowered}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_18.png}
+\caption{Al sumar dos ecuaciones de compatibilidad y restar la tercera, se cancelan los términos de Christoffel que no interesan.}
+\lectureframe{01:12:10}
+\end{figure}
+
+Multiplicar por \(g^{rs}\) permite aislar la conexión:
+\begin{equation}
+ \boxed{
+ \Gamma^r{}_{mn}
+ =\frac12 g^{rs}
+ \left(
+ \partial_mg_{sn}
+ +\partial_ng_{sm}
+ -\partial_sg_{mn}
+ \right)}
+\label{eq:l3-christoffel}
+\end{equation}
+Así, la conexión de Levi-Civita se construye a partir de la métrica y sus primeras derivadas. Esta es la razón prometida por la que los símbolos de Christoffel se anulan en el centro de las coordenadas normales.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_19.png}
+\caption{La métrica inversa permite aislar el símbolo de Christoffel a partir de la ecuación de conexión con el índice bajado.}
+\lectureframe{01:16:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué se igualaron a cero las tres ecuaciones de compatibilidad métrica?}
+\lecturerresponse{En el punto seleccionado, en coordenadas normales, las derivadas ordinarias de la métrica se anulan, al igual que los símbolos de Christoffel. Por eso, allí la derivada covariante de la métrica es cero. Para establecer la afirmación en cualquier otro punto, se centra un marco normal en ese punto y se repite el razonamiento. Como \(\nabla_sg_{mn}\) es un tensor, su anulación es independiente de las coordenadas. \lecturetimestamp{01:14:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cuáles son las dimensiones de la métrica y de la matriz de Christoffel, y por qué hay cuarenta componentes independientes de Christoffel en cuatro dimensiones?}
+\lecturerresponse{En \(d\) dimensiones, \(g_{mn}\) es una matriz simétrica de tamaño \(d\times d\). La conexión tiene tres índices. Para cada índice superior fijo \(r\), el par inferior simétrico \(mn\) tiene \(d(d+1)/2\) posibilidades. Así, una conexión sin torsión tiene \(d^2(d+1)/2\) componentes independientes, que son cuarenta cuando \(d=4\).
+\lecturetimestamp{01:16:18}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_20.png}
+\caption{La pizarra durante el recuento de componentes: diez posibilidades para el par inferior simétrico y cuatro para el índice superior.}
+\lectureframe{01:16:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué métrica aparece en \eqref{eq:l3-christoffel}? ¿Hay que usar una métrica distinta en coordenadas normales en cada punto?}
+\lecturerresponse{La fórmula usa las componentes de la métrica en las coordenadas, globales o locales, que se hayan elegido para el cálculo. Las coordenadas normales son solo el recurso local que se usa para deducir la regla: se pasa a un marco normal en un punto, se deriva allí, se transforma el resultado de vuelta y luego se prescinde de ese marco auxiliar. Una vez conocida \eqref{eq:l3-christoffel}, se evalúa directamente en las coordenadas arbitrarias de interés. \lecturetimestamp{01:17:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Alguna de las expresiones \(\nabla_sg_{mn}=0\) o la fórmula de Christoffel indica que el espacio es plano?}
+\lecturerresponse{No. La compatibilidad métrica se cumple para toda conexión de Levi-Civita, sea curva o plana. Los símbolos de Christoffel pueden ser distintos de cero incluso en un plano expresado en coordenadas polares. Si todos los símbolos \(\Gamma^r{}_{mn}\) se anulan en toda una región en una misma carta, esa carta es cartesiana allí y la región es plana; pero el hecho de que no se anulen no basta para diagnosticar curvatura. Sigue haciendo falta un tensor construido a partir de derivadas y productos de \(\Gamma\). \lecturetimestamp{01:19:27}}
+\end{classroomqa}
+
+\section{Un cono revela lo que la conexión no puede hacer}
+
+Consideremos un cono redondeado. Lejos de su vértice, puede aproximarse por un cono ordinario hecho de papel. Se recorta un sector de un disco plano y se pegan los bordes expuestos. El papel restante no se ha estirado; localmente, todos los puntos alejados de la unión y del vértice siguen siendo planos. El sector eliminado queda reflejado en un ángulo de déficit \(\Delta\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_21.png}
+\caption{El cono se presenta como una geometría localmente plana fuera del vértice, pero con curvatura no trivial concentrada en él.}
+\lectureframe{01:23:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_22.png}
+\caption{Al recortar un sector de un disco e identificar sus bordes se obtiene el ángulo de déficit cónico.}
+\lectureframe{01:24:20}
+\end{figure}
+
+La construcción de papel hace tangible la distinción. Sobre la hoja recortada, transporta un vector manteniéndolo paralelo en el plano ordinario. Después de unir los bordes de la cuña, un recorrido que rodea la punta devuelve el vector al punto de partida con una rotación respecto de su dirección inicial.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_23.png}
+\caption{La demostración del cono de papel: una hoja plana a la que se le ha quitado una cuña se convierte en un cono al unir los bordes del corte.}
+\lectureframe{01:25:10}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_24.png}
+\caption{Vectores dibujados sobre la cuña recortada antes de unir los bordes.}
+\lectureframe{01:27:40}
+\end{figure}
+
+Esta rotación es la holonomía. No se debe a una mala elección de coordenadas a lo largo de un segmento. Cada segmento pequeño puede tratarse en un sistema localmente plano. El efecto solo aparece al componer esas comparaciones locales alrededor de un lazo cerrado. Para el cono ideal, la rotación neta es igual al ángulo de déficit, salvo por la orientación.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_25.png}
+\caption{El transporte paralelo alrededor de la punta cónica devuelve un vector con la dirección rotada: la holonomía registra la curvatura encerrada.}
+\lectureframe{01:29:10}
+\end{figure}
+
+\section{Dos recorridos alrededor de un lazo infinitesimal}
+
+Sustituyamos el lazo finito por un rectángulo coordenado diminuto. Desde una esquina, transportamos primero en la dirección \(r\) y luego en la dirección \(s\). Comparemos ese resultado con el transporte primero en \(s\) y después en \(r\). En coordenadas cartesianas planas, ambos recorridos coinciden. En una geometría curva, por lo general no.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_26.png}
+\caption{Dos órdenes de transporte infinitesimal alrededor de un rectángulo coordenado.}
+\lectureframe{01:31:40}
+\end{figure}
+
+La medida algebraica es el conmutador de derivadas covariantes:
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n.
+\label{eq:l3-commutator}
+\end{equation}
+Las derivadas parciales mixtas ordinarias conmutan sobre funciones suaves. En este caso, la falta de conmutatividad se debe a que se derivan los términos de la conexión, además de las componentes del vector.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_27.png}
+\caption{El lazo infinitesimal representado por la diferencia entre los dos órdenes de derivación covariante.}
+\lectureframe{01:33:20}
+\end{figure}
+
+Para calcularlo, primero consideramos
+\[
+ T_{rn}=\nabla_rV_n
+\]
+como un tensor covariante de rango dos. Luego usamos
+\eqref{eq:l3-rank-two-derivative} para derivar \(T_{rn}\) en la dirección
+\(s\). Repetimos el procedimiento intercambiando \(r\) y \(s\) y restamos. La operación es larga, pero mecánica: desarrollamos, aplicamos la regla del producto y cancelamos los términos que contienen derivadas parciales segundas de \(V_n\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_28.png}
+\caption{Inicio de la doble derivada covariante al tratar \(\nabla_rV_n\) como un tensor de rango dos.}
+\lectureframe{01:35:40}
+\end{figure}
+
+Con la convención adoptada en la pizarra, el resultado es
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n
+ =R_{srn}{}^tV_t.
+\label{eq:l3-riemann-commutator}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_29.png}
+\caption{El conmutador de derivadas covariantes define la acción del tensor de curvatura sobre un covector.}
+\lectureframe{01:38:30}
+\end{figure}
+
+Para este orden del conmutador,
+\begin{equation}
+\begin{split}
+ R_{srn}{}^t
+={}&
+ \partial_r\Gamma^t{}_{sn}
+ -\partial_s\Gamma^t{}_{rn}\\
+&+\Gamma^p{}_{sn}\Gamma^t{}_{pr}
+ -\Gamma^p{}_{rn}\Gamma^t{}_{ps}.
+\end{split}
+\label{eq:l3-riemann}
+\end{equation}
+Otros textos pueden invertir el signo o disponer los índices de otra manera; la convención queda fijada al escribir tanto \eqref{eq:l3-riemann-commutator} como \eqref{eq:l3-riemann}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_30.png}
+\caption{El tensor de Riemann: dos derivadas de la conexión y dos términos cuadráticos de conexión.}
+\lectureframe{01:39:40}
+\end{figure}
+
+La ecuación \eqref{eq:l3-christoffel} muestra por qué la curvatura aparece por primera vez en segundo orden respecto de la métrica. Cada \(\Gamma\) contiene una derivada primera de \(g\). Por tanto, los términos derivativos de \eqref{eq:l3-riemann} contienen derivadas segundas de \(g\), mientras que los términos cuadráticos contienen productos de derivadas primeras. En coordenadas normales en \(P\), la conexión misma se anula, pero sus derivadas, en general, no; por eso la curvatura persiste:
+\[
+\begin{aligned}
+ \Gamma^t{}_{mn}(P)&=0,\\
+ R_{srn}{}^t(P)
+ &=\partial_r\Gamma^t{}_{sn}(P)
+ -\partial_s\Gamma^t{}_{rn}(P).
+\end{aligned}
+\]
+Es importante mantener claro el orden de las derivadas: el tensor de Riemann usa derivadas primeras de \(\Gamma\), que son de segundo orden respecto de la métrica.
+
+Este es el diagnóstico que buscábamos. Si todas las componentes del tensor de Riemann se anulan en toda una región, esa región es localmente plana. Si alguna componente es distinta de cero en un punto, ningún cambio de coordenadas puede eliminar allí la curvatura. Un sistema de álgebra computacional puede evaluar estas componentes a partir de una métrica analítica, pero el concepto consiste simplemente en que el transporte paralelo no se cierra al recorrer un lazo infinitesimal.
+
+\section{La curvatura como gravedad de marea}
+
+El diagnóstico geométrico tiene un significado físico directo. Imaginemos un objeto flexible formado por triángulos enlazados. En una región plana, puede moverse sin sufrir tensiones. Si lo empujamos hacia una región donde se curva la métrica intrínseca, las distintas partes del entramado no pueden conservar todas sus distancias y ángulos preferidos. El objeto debe estirarse, comprimirse o deformarse por cizallamiento.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_31.png}
+\caption{Un objeto enlazado que pasa de una región plana a una protuberancia curva debe deformarse para adaptarse a la métrica local.}
+\lectureframe{01:44:10}
+\end{figure}
+
+Esa deformación es la contraparte geométrica de la fuerza de marea. En un campo gravitatorio, partículas vecinas en caída libre pueden acelerarse unas respecto de otras: una dirección puede estirarse mientras otra se comprime. El tensor de Riemann determina esta aceleración relativa. En el lenguaje que más adelante introduciremos como desviación geodésica, para el vector tangente \(u^\mu\) y el vector de separación \(\xi^\mu\),
+\begin{equation}
+ \frac{D^2\xi^\mu}{D\tau^2}
+ =-R^\mu{}_{\nu\rho\sigma}
+ u^\nu\xi^\rho u^\sigma,
+\label{eq:l3-geodesic-deviation-preview}
+\end{equation}
+donde el signo global depende de la convención de curvatura elegida. Aquí no se deriva esta ecuación, pero precisa la afirmación de la clase: la curvatura y la tensión de marea son literalmente la misma física local.
+
+Un campo gravitatorio ideal y perfectamente uniforme no tiene variaciones de marea, y puede eliminarse localmente al pasar a un sistema de referencia con aceleración uniforme. Los campos reales producidos por masas aisladas no son perfectamente uniformes. El campo terrestre apunta aproximadamente en dirección radial y cambia con la posición, por lo que las trayectorias vecinas en caída libre convergen o se separan.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_32.png}
+\caption{Un campo gravitatorio radial varía a lo largo de un cuerpo extenso y produce la aceleración relativa identificada como gravedad de marea.}
+\lectureframe{01:48:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué distingue un campo gravitatorio genuino del campo aparente observado en un sistema de referencia acelerado?}
+\lecturerresponse{Un sistema de referencia con aceleración uniforme puede imitar un campo gravitatorio uniforme en experimentos locales, pero no produce aceleración relativa de marea. Un campo generado por materia real varía de un lugar a otro y, por tanto, produce fuerzas de marea. Estas fuerzas son evidencia invariante de que el efecto no es meramente una transformación de coordenadas. Un campo real perfectamente uniforme es una idealización; cerca de una región suficientemente pequeña de la superficie de un cuerpo grande, el campo real solo puede ser aproximadamente uniforme. \lecturetimestamp{01:46:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué importa el tamaño del objeto en caída para los efectos de marea?}
+\lecturerresponse{La curvatura compara posiciones vecinas. Un objeto mucho más pequeño que la escala de longitud en la que cambia el campo experimenta casi la misma aceleración en todas sus partes y sufre poca deformación. Un objeto extenso experimenta una diferencia mayor. Una bacteria en caída libre cerca de la Tierra siente una tensión de marea despreciable, mientras que la persona imaginaria de dos mil millas de altura mencionada en la clase sufriría una distorsión grave. La curvatura tiene un valor local, pero la deformación acumulada depende de la separación que se compara.
+\lecturetimestamp{01:49:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si para establecer la planitud hay que comprobar la curvatura en cada punto, ¿sigue siendo una tarea infinita?}
+\lecturerresponse{Si la métrica se da analíticamente, sus derivadas y las componentes de la curvatura son expresiones analíticas. Se calculan una vez como funciones de la posición y a menudo se puede determinar si se anulan idénticamente. Si la métrica se proporciona solo como una tabla numérica, hay que estimar e inspeccionar la curvatura en toda la región muestreada, lo cual sí puede resultar costoso. Aun así, está mucho mejor definido que buscar todos los sistemas de coordenadas posibles en cada punto.
+\lecturetimestamp{01:50:37}}
+\end{classroomqa}
+
+\section{Lo establecido hasta aquí}
+
+Ahora podemos leer el argumento como una única secuencia continua:
+\begin{enumerate}
+ \item En cualquier punto elegido, las coordenadas pueden hacer que
+ \(g_{mn}=\delta_{mn}\) y \(\partial_rg_{mn}=0\).
+ \item Las derivadas ordinarias de las componentes de un tensor no se transforman como tensores porque las bases coordenadas varían de un punto a otro.
+ \item La conexión corrige esa variación de la base y define la derivación covariante.
+ \item La compatibilidad con la métrica y la torsión nula determinan la conexión de manera única a partir de la métrica.
+ \item Dos derivadas covariantes no conmutan; su conmutador viene dado por el tensor de Riemann. Esa falta de conmutatividad mide la holonomía, la variación de la métrica de segundo orden y la gravedad de marea.
+\end{enumerate}
+
+Así, hemos construido el diagnóstico de curvatura prometido sin elegir un sistema de coordenadas global privilegiado. El siguiente paso es pasar de la geometría riemanniana definida positiva al espaciotiempo lorentziano, aplicar estas herramientas a la geometría de Schwarzschild de una estrella o un agujero negro y volver a las geodésicas que dejamos para más adelante al final de esta clase.

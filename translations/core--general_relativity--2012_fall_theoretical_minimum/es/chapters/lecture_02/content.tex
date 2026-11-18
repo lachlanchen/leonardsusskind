@@ -1,0 +1,706 @@
+\chapter{Geometría intrínseca y álgebra de tensores}
+
+La notación tensorial solo es útil cuando nos ayuda a hacer parte del razonamiento. Una notación bien diseñada funciona como un conjunto de piezas mecánicas: un índice superior encaja con uno inferior, los objetos de distinto tipo no pueden sumarse y una contracción válida deja un objeto cuya ley de transformación puede leerse a partir de los índices restantes. El propósito inmediato de este mecanismo es geométrico. Queremos distinguir la curvatura genuina de la que aparece únicamente porque se han deformado las coordenadas.
+
+\section{La curvatura vista desde dentro}
+
+Empecemos con una hoja de papel corriente. Se puede enrollar hasta formar un cilindro sin estirarla ni rasgarla. Para quien la observa desde la habitación que la rodea, la hoja está claramente curvada; sin embargo, las distancias medidas dentro de ella no cambian. Su curvatura extrínseca ha cambiado, pero su geometría intrínseca no.
+
+Imaginemos ahora un pequeño ser confinado a la hoja. No puede mirar el espacio ambiente. Puede medir longitudes, comparar direcciones vecinas, construir triángulos y transportar reglas de un lugar a otro. La geometría solo debería requerir esos experimentos internos. En gravitación, la pregunta correspondiente es si un campo representa una verdadera curvatura del espacio-tiempo o solo una descripción curvilínea de un espacio-tiempo plano.
+
+Una forma de concretar este punto de vista intrínseco consiste en sustituir la superficie por una red de puntos y enlaces. Unimos puntos vecinos, registramos la longitud de cada enlace y permitimos que las uniones giren. Una red triangular equilátera es plana. Cambiar la inclinación de las uniones no altera la geometría codificada, porque siempre se puede devolver la red al plano sin cambiar ninguna longitud.
+
+Alarguemos ahora los seis enlaces que confluyen en un vértice y mantengamos fijos los enlaces circundantes. El vértice central ya no puede permanecer en el plano sin que se incumplan las longitudes prescritas. Tiene que elevarse y formar una protuberancia. No hace falta observar desde fuera para diagnosticar esta curvatura: las distancias incompatibles entre puntos vecinos ya la revelaban.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_01.png}
+\caption{Modelo de geometría intrínseca mediante enlaces triangulares. Al modificar los enlaces alrededor de un vértice, se forma una protuberancia que no puede aplanarse sin cambiar las longitudes.}
+\lectureframe{00:06:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Entonces, ¿cuál es la definición precisa de un espacio plano?}
+\lecturerresponse{La respuesta operacional es que sus relaciones de distancia intrínsecas pueden representarse sin distorsión en una disposición euclídea. En el lenguaje que desarrollaremos más adelante, un espacio riemanniano es plano si se pueden encontrar coordenadas, en toda la región de interés, en las que la métrica sea la delta de Kronecker constante. Esto siempre puede hacerse localmente en un punto; hacerlo en toda una región es la condición no trivial. El tensor de curvatura expresará finalmente esa condición sin recurrir a una elección especial de coordenadas.
+\lecturetimestamp{00:09:15}}
+\end{classroomqa}
+
+Esta respuesta utiliza la métrica antes de que hayamos justificado su uso. Por eso, dejamos temporalmente la curvatura y pasamos al análisis tensorial. Este rodeo es imprescindible: debemos reconocer la métrica como un tensor antes de poder separar su dependencia de las coordenadas de la geometría genuina.
+
+\section{Campos y descripciones coordenadas}
+
+En relatividad general, un tensor suele ser un \emph{campo} tensorial: en cada punto hay un tensor, y sus componentes varían de un punto a otro. Un campo escalar es el ejemplo más sencillo. La temperatura sobre una superficie puede representarse mediante un número \(S(P)\) en cada punto \(P\). Dos personas pueden asignar coordenadas distintas al punto, pero deben coincidir en la temperatura que hay allí.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_02.png}
+\caption{Un campo escalar junto con dos sistemas de coordenadas para los mismos puntos.}
+\lectureframe{00:11:25}
+\end{figure}
+
+Sean \(x^m\) y \(y^m\) dos sistemas de coordenadas suaves. Cada uno es una aplicación de los puntos a listas ordenadas de números y, en un parche de coordenadas común, ambas listas están relacionadas por funciones mutuamente inversas,
+\begin{equation}
+ y^m=y^m(x^1,\ldots,x^d),
+ \qquad
+ x^m=x^m(y^1,\ldots,y^d).
+\label{eq:coordinate-maps}
+\end{equation}
+La suavidad permite derivar y la invertibilidad garantiza que el cambio de coordenadas no pierda ningún punto ni identifique unos con otros.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_03.png}
+\caption{Dos aplicaciones coordenadas suaves e invertibles que describen la misma región geométrica.}
+\lectureframe{00:13:10}
+\end{figure}
+
+Para un campo escalar, la ley de transformación es sencillamente
+\begin{equation}
+ S'(y)=S(x).
+\label{eq:scalar-law}
+\end{equation}
+Las funciones de ambos lados pueden parecer distintas porque sus argumentos difieren, pero sus valores coinciden en los puntos correspondientes. Este es el prototipo de un enunciado invariante.
+
+\section{Coordenadas oblicuas y dos tipos de componentes}
+
+Antes de definir los tensores generales mediante leyes de transformación, conviene ver por qué los índices superiores e inferiores de un vector no son simples variantes decorativas entre sí.
+
+Dibujemos una cuadrícula coordenada cuyos ejes no sean perpendiculares ni estén normalizados. En un punto, aumentar \(x^m\) en una unidad coordenada produce un vector de base \(\mathbf e_m\). En lenguaje de coordenadas,
+\begin{equation}
+ \mathbf e_m=\frac{\partial \mathbf r}{\partial x^m}.
+\label{eq:coordinate-basis}
+\end{equation}
+Los vectores \(\mathbf e_m\) no tienen por qué ser unitarios ni ortogonales.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_04.png}
+\caption{Una cuadrícula coordenada oblicua y sus vectores de la base coordenada.}
+\lectureframe{00:17:40}
+\end{figure}
+
+Todo vector \(\mathbf V\) puede desarrollarse en esta base:
+\begin{equation}
+ \mathbf V=V^m\mathbf e_m.
+\label{eq:contravariant-expansion}
+\end{equation}
+Los números \(V^m\) son las \emph{componentes contravariantes}. Son los coeficientes necesarios para construir el vector geométrico a partir de los vectores de la base.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_05.png}
+\caption{Desarrollo de un vector en una base coordenada no ortogonal.}
+\lectureframe{00:19:20}
+\end{figure}
+
+Hay otro conjunto natural de números:
+\begin{equation}
+ V_m=\mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf e_m.
+\label{eq:covariant-projection}
+\end{equation}
+Son las \emph{componentes covariantes}. En una base oblicua, no son simplemente los mismos coeficientes con el índice cambiado de posición. Al sustituir \eqref{eq:contravariant-expansion}, obtenemos
+\begin{equation}
+ V_m
+ =V^n\bigl(\mathbf e_n\mathbin{\boldsymbol{\cdot}}\mathbf e_m\bigr).
+\label{eq:covariant-from-basis}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_06.png}
+\caption{Componentes covariantes obtenidas mediante productos escalares con los vectores de la base coordenada.}
+\lectureframe{00:21:10}
+\end{figure}
+
+Los productos escalares de los vectores de la base forman la matriz de Gram
+\begin{equation}
+ g_{mn}=\mathbf e_m\mathbin{\boldsymbol{\cdot}}\mathbf e_n.
+\label{eq:metric-gram}
+\end{equation}
+Por consiguiente,
+\begin{equation}
+ V_m=g_{mn}V^n.
+\label{eq:lower-vector}
+\end{equation}
+Esta es la primera aparición de la métrica. Convierte los coeficientes del desarrollo en proyecciones porque registra tanto las longitudes como los ángulos mutuos de la base coordenada.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_07.png}
+\caption{La métrica como matriz de Gram de los vectores de la base.}
+\lectureframe{00:23:40}
+\end{figure}
+
+La misma matriz permite calcular la longitud:
+\begin{align}
+ \mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf V
+ &=(V^m\mathbf e_m)\mathbin{\boldsymbol{\cdot}}
+   (V^n\mathbf e_n) \notag\\
+ &=g_{mn}V^mV^n.
+\label{eq:vector-length}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_08.png}
+\caption{La norma del vector expresada mediante la métrica y sus componentes contravariantes.}
+\lectureframe{00:25:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué introducir esta construcción geométrica antes que las leyes formales de transformación?}
+\lecturerresponse{Da un significado concreto a los índices. Las componentes superiores son coeficientes del desarrollo, las inferiores son mediciones lineales del vector y la métrica conecta unas con otras. La definición formal nos dirá entonces que estas funciones se conservan ante cambios arbitrarios y suaves de coordenadas. \lecturetimestamp{00:26:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cuándo tienen los componentes covariantes y contravariantes los mismos valores numéricos?}
+\lecturerresponse{En una base euclídea ortonormal,
+\(g_{mn}=\delta_{mn}\), así que \(V_m=V^m\) componente a componente. La mera ortogonalidad no basta: si los vectores de la base no son unitarios, la métrica diagonal sigue aportando factores de escala.
+\lecturetimestamp{00:26:19}}
+\end{classroomqa}
+
+Las coordenadas polares ofrecen una advertencia clara. Las líneas coordenadas radial y angular se cortan ortogonalmente, pero un cambio fijo \(d\theta\) corresponde a una distancia física \(r\,d\theta\). En el plano,
+\begin{equation}
+ ds^2=dr^2+r^2d\theta^2,
+\label{eq:polar-metric}
+\end{equation}
+por lo que la base es ortogonal, pero no cartesiana.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_09.png}
+\caption{Coordenadas polares: direcciones coordenadas ortogonales con un factor de escala angular que aumenta con el radio.}
+\lectureframe{00:28:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Son los vectores covariantes realmente distintos de los vectores, o son solo otra forma de expresar el mismo vector?}
+\lecturerresponse{Antes de introducir una métrica, un vector y un covector son tipos distintos de objeto lineal. Un vector pertenece al espacio tangente; un covector es un funcional lineal sobre ese espacio. Una métrica no degenerada establece una correspondencia biunívoca entre ambos, representada por \(V_m=g_{mn}V^n\), pero no se debe confundir correspondencia con identidad. \lecturetimestamp{00:29:10}}
+\end{classroomqa}
+
+\section{Las leyes de transformación definen el tensor}
+
+La definición formal más segura es operacional: un conjunto de componentes es un tensor si sus componentes se transforman con los factores jacobianos adecuados. Al derivar \eqref{eq:coordinate-maps}, obtenemos
+\begin{equation}
+ dy^m=\frac{\partial y^m}{\partial x^n}\,dx^n.
+\label{eq:differential-law}
+\end{equation}
+Todo vector contravariante obedece la misma regla,
+\begin{equation}
+ V'^m(y)
+ =\frac{\partial y^m}{\partial x^n}V^n(x).
+\label{eq:contravariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_10.png}
+\caption{La ley de transformación contravariante, basada en la transformación de los diferenciales de coordenadas.}
+\lectureframe{00:32:50}
+\end{figure}
+
+Un covector se transforma con el jacobiano inverso:
+\begin{equation}
+ W'_m(y)
+ =\frac{\partial x^n}{\partial y^m}W_n(x).
+\label{eq:covariant-law}
+\end{equation}
+El gradiente de un escalar es el ejemplo estándar. Al aplicar la regla de la cadena a \eqref{eq:scalar-law},
+\begin{equation}
+ \frac{\partial S}{\partial y^m}
+ =\frac{\partial x^n}{\partial y^m}
+  \frac{\partial S}{\partial x^n}.
+\label{eq:gradient-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_11.png}
+\caption{El gradiente de un escalar se transforma como un covector según la regla de la cadena.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Tienen necesariamente las componentes superiores e inferiores las mismas unidades físicas?}
+\lecturerresponse{No. Las componentes coordenadas heredan las unidades y las convenciones de escala de las coordenadas y de sus vectores de base. Si una coordenada es una longitud y otra es un ángulo, sus componentes ni siquiera tienen por qué compartir dimensiones. La contracción completa es el objeto cuyas dimensiones físicas son independientes de las coordenadas.
+\lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué son derivadas parciales y no derivadas ordinarias?}
+\lecturerresponse{Un campo depende de varias coordenadas. El jacobiano pregunta cómo cambia una función coordenada cuando varía uno de sus argumentos y los demás se mantienen fijos; por eso, sus entradas son derivadas parciales.
+\lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+El patrón se extiende ahora de forma mecánica. Cada índice primado superior aporta un factor de \(\partial y/\partial x\); cada índice primado inferior aporta un factor de \(\partial x/\partial y\). Un tensor mixto se transforma según
+\begin{equation}
+ T'^m{}_n
+ =
+ \frac{\partial y^m}{\partial x^p}
+ \frac{\partial x^q}{\partial y^n}
+ T^p{}_q,
+\label{eq:mixed-law}
+\end{equation}
+y un tensor covariante de rango dos, según
+\begin{equation}
+ W'_{mn}
+ =
+ \frac{\partial x^p}{\partial y^m}
+ \frac{\partial x^q}{\partial y^n}
+ W_{pq}.
+\label{eq:rank-two-covariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_12.png}
+\caption{Regla de transformación de un tensor con un índice superior y otro inferior.}
+\lectureframe{00:40:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_13.png}
+\caption{Ley de transformación covariante de rango dos, con un jacobiano inverso por cada índice inferior.}
+\lectureframe{00:42:15}
+\end{figure}
+
+Salvo que se indique lo contrario, los índices repetidos se suman. Esta convención elimina los signos de sumatoria y conserva toda la información necesaria para reconstruirlos. En un término, un índice mudo repetido debe aparecer exactamente dos veces: una arriba y otra abajo. Un índice libre aparece una vez en cada término de una ecuación.
+
+\begin{classroomqa}
+\audiencequestion{¿Quién introdujo esta notación de sumatoria?}
+\lecturerresponse{Se atribuye tradicionalmente a Einstein; de ahí que se llame convención de sumación de Einstein. Su valor no es un mero detalle histórico: el patrón de índices permite reconocer de un vistazo qué operaciones tensoriales son válidas. \lecturetimestamp{00:43:21}}
+\end{classroomqa}
+
+\section{Ecuaciones tensoriales y verdad independiente de las coordenadas}
+
+Las componentes varían con las coordenadas, pero una ecuación tensorial sigue siendo verdadera en cualquier sistema de coordenadas. Si dos tensores del mismo tipo satisfacen \(W=T\), su diferencia es el tensor nulo:
+\begin{equation}
+ W^{m\cdots}{}_{\cdots n}
+ -T^{m\cdots}{}_{\cdots n}=0.
+\label{eq:tensor-equality}
+\end{equation}
+La ley de transformación es lineal, por lo que las componentes nulas en un sistema también lo son en todos los demás. Los índices libres correspondientes a ambos lados son indispensables. Una ecuación entre objetos de tipos tensoriales distintos carece de significado independiente de las coordenadas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_14.png}
+\caption{La coincidencia de la estructura de índices hace que la igualdad de componentes sea una ecuación tensorial válida en cualquier sistema de coordenadas.}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué es exactamente lo invariante si cambian las componentes del vector?}
+\lecturerresponse{El tensor geométrico y la verdad de una ecuación tensorial son invariantes; la lista de coordenadas no lo es. Un escalar es el caso especial sin índices, por lo que su valor numérico en un punto es el mismo en cualquier sistema de coordenadas. \lecturetimestamp{00:47:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Es el módulo del vector el análogo invariante? ¿Y un módulo nulo significa que el vector es nulo?}
+\lecturerresponse{Una vez dada una métrica, la contracción \(g_{mn}V^mV^n\) es un escalar y, por tanto, una norma al cuadrado invariante. En una geometría definida positiva, solo se anula para el vector nulo. En el espacio-tiempo lorentziano, un vector nulo no nulo puede tener norma cero; por tanto, hay que mantener separadas ambas afirmaciones. \lecturetimestamp{00:48:04}}
+\end{classroomqa}
+
+\section{El álgebra permitida de los tensores}
+
+La pizarra reúne las principales operaciones que necesitaremos: multiplicar por un escalar, sumar o restar tensores del mismo tipo, formar productos tensoriales, contraer un índice superior con uno inferior y, más adelante, derivar covariantemente.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_15.png}
+\caption{La lista de operaciones tensoriales de la pizarra: suma, multiplicación, contracción y derivación.}
+\lectureframe{00:50:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Respecto de qué se deriva?}
+\lecturerresponse{Respecto de la posición y, por tanto, de las coordenadas. En general, las derivadas ordinarias de las componentes no se transforman como tensores, porque los propios jacobianos varían. La derivación covariante corrige esto, pero aplazaremos su construcción hasta haber establecido los preliminares geométricos. \lecturetimestamp{00:51:49}}
+\end{classroomqa}
+
+La multiplicación por un escalar es inmediata. La suma y la resta requieren que los tensores sean del mismo tipo:
+\begin{equation}
+ C^m{}_n=A^m{}_n+B^m{}_n,
+\qquad
+ D^m{}_n=A^m{}_n-B^m{}_n.
+\label{eq:tensor-addition}
+\end{equation}
+No se puede sumar un vector a un covector ni un tensor de rango dos a un escalar, del mismo modo que no se puede sumar una velocidad a un área.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_16.png}
+\caption{La suma se define componente a componente solo para tensores con el mismo patrón de índices libres.}
+\lectureframe{00:53:00}
+\end{figure}
+
+El producto tensorial combina todos los índices de sus factores. Por ejemplo,
+\begin{equation}
+ T^{mn}=V^mW^n,
+\qquad
+ S^m{}_n=V^mU_n.
+\label{eq:tensor-products}
+\end{equation}
+En cuatro dimensiones, \(T^{mn}\) tiene dieciséis componentes. No se ha sumado ningún índice, por lo que se trata de un producto exterior y no de un producto escalar.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_17.png}
+\caption{Producto tensorial que conserva un índice libre de cada factor vectorial.}
+\lectureframe{00:55:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿La multiplicación de dos vectores es aquí el producto escalar?}
+\lecturerresponse{No. Un producto escalar contrae un índice y produce un escalar. El producto tensorial deja libres ambos índices y, por tanto, produce un tensor de rango dos. En cuatro dimensiones tiene dieciséis componentes, no una. \lecturetimestamp{00:56:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Como los números que representan las componentes conmutan, ¿intercambiar los dos factores vectoriales no cambia nada?}
+\lecturerresponse{Para componentes escalares ordinarias,
+\(V^mW^n=W^nV^m\). Pero las posiciones tensoriales están ordenadas. Si se intercambian los factores y luego se llama \(m\) a la primera posición y \(n\) a la segunda, se obtiene la matriz transpuesta; \(T^{mn}\) no tiene por qué ser igual a \(T^{nm}\).
+\lecturetimestamp{00:58:52}}
+\end{classroomqa}
+
+\section{Contracción y lema del jacobiano inverso}
+
+La clave de la contracción está en la regla de la cadena. Como las aplicaciones coordenadas son inversas,
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =
+ \frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\label{eq:inverse-jacobian}
+\end{equation}
+Las dos matrices jacobianas son inversas, y su producto es la delta de Kronecker.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_18.png}
+\caption{La identidad del jacobiano inverso, que servirá como lema para la contracción tensorial.}
+\lectureframe{01:02:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Qué tipo de objeto es el jacobiano inverso?}
+\lecturerresponse{Es la matriz de derivadas de la aplicación coordenada inversa. Sus entradas son \(\partial x^b/\partial y^m\), y la multiplicación matricial por \(\partial y^m/\partial x^a\) da la identidad según la regla de la cadena multivariable. \lecturetimestamp{01:02:37}}
+\end{classroomqa}
+
+Una demostración breve hace transparente la notación. Para cualquier función escalar \(f\),
+\begin{equation}
+ \frac{\partial f}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial f}{\partial x^a}.
+\end{equation}
+Al elegir \(f=x^b\), se obtiene
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_19.png}
+\caption{La regla de la cadena reduce los jacobianos inversos a la delta de Kronecker.}
+\lectureframe{01:04:55}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿\(\delta^b{}_a\) es la identidad solo en coordenadas cartesianas?}
+\lecturerresponse{No. El tensor mixto \(\delta^b{}_a\) representa la aplicación identidad en cualquier sistema de coordenadas. Una métrica euclídea escrita como \(\delta_{ab}\) es propia de las coordenadas cartesianas ortonormales, pero no se debe confundir con esa métrica la identidad con índices mixtos.
+\lecturetimestamp{01:04:58}}
+\end{classroomqa}
+
+Consideremos ahora un tensor mixto \(T^m{}_n\). Su traza transformada es
+\begin{align}
+ T'^m{}_m
+ &=
+ \frac{\partial y^m}{\partial x^a}
+ \frac{\partial x^b}{\partial y^m}
+ T^a{}_b \notag\\
+ &=\delta^b{}_aT^a{}_b
+ =T^a{}_a.
+\label{eq:trace-invariant}
+\end{align}
+La cantidad contraída no tiene índices libres y, por tanto, es un escalar.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_20.png}
+\caption{Transformación de un tensor mixto antes de contraer los índices superior e inferior.}
+\lectureframe{01:07:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_21.png}
+\caption{Al contraer, los jacobianos se cancelan y queda la misma traza escalar en ambos sistemas de coordenadas.}
+\lectureframe{01:10:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Después de una contracción, ¿el resultado sigue teniendo índices?}
+\lecturerresponse{Solo desaparece el par contraído. Al contraer los únicos índices superior e inferior de \(T^m{}_n\), queda un escalar. En un tensor de rango mayor, todos los índices no contraídos permanecen libres.
+\lecturetimestamp{01:09:00}}
+\end{classroomqa}
+
+Por ejemplo,
+\begin{equation}
+ A^{mn}{}_{pq}
+ \longmapsto
+ A^{mn}{}_{pn}
+ =B^m{}_p
+\label{eq:higher-rank-contraction}
+\end{equation}
+contrae \(n\) y reduce el rango en dos. Las letras concretas son etiquetas mudas; la regla estructural es que se suman una posición superior y otra inferior.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_22.png}
+\caption{Una contracción de rango mayor elimina un índice superior y uno inferior, y conserva los índices libres restantes.}
+\lectureframe{01:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué no contraer dos índices superiores, o dos inferiores, de la misma manera?}
+\lecturerresponse{Los dos índices superiores proporcionan jacobianos con la misma orientación,
+\(\partial y^m/\partial x^a\) y
+\(\partial y^m/\partial x^b\). Al multiplicarse, no dan la identidad, por lo que la suma propuesta no obedece una ley de transformación tensorial. Una métrica puede bajar primero uno de los índices, tras lo cual es legítimo contraer un índice superior--inferior; sin ese tensor adicional, la operación no es invariante bajo cambios de coordenadas. \lecturetimestamp{01:13:03}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_23.png}
+\caption{El intento de contraer índices con la misma varianza deja dos jacobianos con la misma orientación, por lo que no se reducen a la identidad.}
+\lectureframe{01:14:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Es la contracción el análogo tensorial de un producto interno?}
+\lecturerresponse{La contracción empareja una posición vectorial con una posición covectorial y constituye el emparejamiento invariante básico. Con una métrica, dos vectores pueden convertirse en un par de ese tipo, de modo que el producto interno habitual consiste en aplicar la métrica y luego contraer. \lecturetimestamp{01:14:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Deben recorrer el mismo rango los dos índices contraídos?}
+\lecturerresponse{Sí. Se refieren a bases duales del mismo espacio tangente y espacio cotangente, ambos de dimensión \(d\). De lo contrario, ni la suma ni la identidad del jacobiano inverso estarían definidas.
+\lecturetimestamp{01:15:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué un tensor que se anula en un marco se anula en todos los marcos?}
+\lecturerresponse{Cada componente transformada es una combinación lineal de las componentes originales. Todas esas combinaciones se anulan cuando todas las componentes de partida son cero. Esta sencilla linealidad es lo que hace que las ecuaciones tensoriales sean independientes de las coordenadas. \lecturetimestamp{01:15:31}}
+\end{classroomqa}
+
+\section{La métrica a partir de la distancia al cuadrado}
+
+Volvamos ahora a la geometría. Para un desplazamiento infinitesimal con componentes \(dx^m\), definimos su longitud al cuadrado mediante
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:line-element}
+\end{equation}
+Este es el teorema de Pitágoras generalizado. La métrica puede variar de un punto a otro, y los términos no diagonales registran la falta de ortogonalidad de las direcciones coordenadas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_24.png}
+\caption{La lista de operaciones tensoriales da paso a la definición cuadrática del elemento de línea infinitesimal.}
+\lectureframe{01:18:45}
+\end{figure}
+
+Solo contribuye la parte simétrica, porque
+\(dx^m dx^n=dx^n dx^m\). Por tanto, podemos tomar
+\begin{equation}
+ g_{mn}=g_{nm}.
+\label{eq:metric-symmetry}
+\end{equation}
+En \(d\) dimensiones, una métrica simétrica tiene
+\begin{equation}
+ \frac{d(d+1)}{2}
+\label{eq:metric-component-count}
+\end{equation}
+componentes independientes: diez en cuatro dimensiones, seis en tres y tres en dos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_25.png}
+\caption{El elemento de línea y la matriz simétrica de componentes que permite contar las entradas independientes de la métrica.}
+\lectureframe{01:21:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué hay diez componentes independientes de la métrica en cuatro dimensiones y no dieciséis?}
+\lecturerresponse{Hay cuatro entradas diagonales y seis pares no diagonales sin ordenar. Equivalentemente,
+\(4(4+1)/2=10\). La parte antisimétrica multiplicaría el producto simétrico \(dx^m dx^n\) y se cancelaría. \lecturetimestamp{01:19:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Cuántas componentes independientes hay en tres dimensiones?}
+\lecturerresponse{Seis: tres entradas diagonales y tres pares no diagonales, o \(3(3+1)/2\). \lecturetimestamp{01:20:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Y en dos dimensiones?}
+\lecturerresponse{Tres: \(g_{11}\), \(g_{22}\) y el único par simétrico \(g_{12}=g_{21}\). \lecturetimestamp{01:22:28}}
+\end{classroomqa}
+
+\subsection{Por qué la métrica es un tensor}
+
+La distancia al cuadrado es un escalar. Por tanto, al expresar el mismo desplazamiento en dos sistemas de coordenadas, se obtiene
+\begin{equation}
+ g_{mn}(x)\,dx^m dx^n
+ =
+ g'_{pq}(y)\,dy^pdy^q.
+\label{eq:length-invariance}
+\end{equation}
+Usamos
+\begin{equation}
+ dx^m=\frac{\partial x^m}{\partial y^p}\,dy^p
+\end{equation}
+dos veces:
+\begin{align}
+ ds^2
+ &=
+ g_{mn}(x)
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ dy^pdy^q.
+\label{eq:metric-transform-derivation}
+\end{align}
+Al comparar con la expresión primada, se identifica
+\begin{equation}
+ g'_{pq}(y)
+ =
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ g_{mn}(x).
+\label{eq:metric-transformation}
+\end{equation}
+Esta es exactamente la ley de transformación de un tensor covariante de rango dos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_26.png}
+\caption{Derivación de la ley de transformación de la métrica a partir de la invariancia del elemento de línea escalar.}
+\lectureframe{01:26:25}
+\end{figure}
+
+La conclusión también explica los dos índices inferiores. Cada índice inferior de la métrica se empareja con un índice superior de una componente del desplazamiento. En un cambio de coordenadas, los dos jacobianos inversos de \eqref{eq:metric-transformation} cancelan los dos jacobianos directos de los diferenciales, de modo que \(ds^2\) no cambia.
+
+\section{La matriz métrica y su inversa}
+
+En un punto, \(g_{mn}\) es una matriz simétrica:
+\begin{equation}
+ [g_{mn}]
+ =
+ \begin{pmatrix}
+ g_{11} & g_{12} & \cdots \\
+ g_{12} & g_{22} & \cdots \\
+ \vdots & \vdots & \ddots
+ \end{pmatrix}.
+\label{eq:metric-matrix}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_27.png}
+\caption{La métrica representada como matriz simétrica tras establecer su ley de transformación tensorial.}
+\lectureframe{01:28:50}
+\end{figure}
+
+La métrica debe ser no degenerada: no tiene valores propios nulos y, por tanto, posee inversa. Denotemos esa inversa por \(g^{mn}\). En notación de índices,
+\begin{equation}
+ g_{mn}g^{np}=\delta_m{}^p.
+\label{eq:inverse-metric}
+\end{equation}
+Se suma el índice repetido \(n\), mientras que \(m\) y \(p\) indican la fila y la columna del producto.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_28.png}
+\caption{La métrica inversa se introduce mediante
+\(g_{mn}g^{np}=\delta_m{}^p\).}
+\lectureframe{01:31:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Dónde están realmente los vectores y tensores en un punto?}
+\lecturerresponse{Los vectores de un punto forman su espacio tangente \(T_P M\); los covectores forman el espacio dual \(T_P^*M\). Los tensores de orden superior pertenecen a productos tensoriales de estos espacios. Un campo tensorial asigna suavemente un objeto de ese tipo a cada punto. La métrica es una forma bilineal en el espacio tangente, y su inversa es la forma bilineal correspondiente en el espacio cotangente. \lecturetimestamp{01:34:15}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_29.png}
+\caption{Un vector dibujado en el espacio tangente asociado a un punto de una variedad curva.}
+\lectureframe{01:35:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿Se refiere
+\(g_{mn}g^{np}=\delta_m{}^p\) únicamente al caso \(m=p\)?}
+\lecturerresponse{No. Es la ecuación matricial completa. Para cada par ordenado \((m,p)\), el producto sumado vale uno si \(m=p\) y cero si \(m\ne p\). Todas las ecuaciones diagonales y no diagonales están incluidas simultáneamente. \lecturetimestamp{01:36:50}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_30.png}
+\caption{La relación de inversión interpretada como la matriz identidad completa con índices mixtos.}
+\lectureframe{01:38:50}
+\end{figure}
+
+En dos dimensiones, esto significa
+\begin{equation}
+ \begin{pmatrix}
+ g_{11} & g_{12}\\
+ g_{12} & g_{22}
+ \end{pmatrix}
+ \begin{pmatrix}
+ g^{11} & g^{12}\\
+ g^{12} & g^{22}
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+ 1&0\\
+ 0&1
+ \end{pmatrix}.
+\label{eq:two-dimensional-inverse}
+\end{equation}
+Por ejemplo,
+\begin{align}
+ g_{11}g^{11}+g_{12}g^{12}&=1,\\
+ g_{11}g^{12}+g_{12}g^{22}&=0.
+\end{align}
+La otra fila proporciona las dos ecuaciones restantes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_31.png}
+\caption{La identidad de la métrica inversa desarrollada como un producto matricial explícito en dos dimensiones.}
+\lectureframe{01:40:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{¿La métrica debe ser definida positiva?}
+\lecturerresponse{En geometría riemanniana ordinaria, la definición positiva hace que toda longitud al cuadrado de un vector no nulo sea positiva. En el espacio-tiempo se usa, en cambio, una métrica lorentziana, con un signo opuesto a los otros tres. En este caso, ambas situaciones requieren no degeneración, no positividad.
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Por qué excluir un valor propio nulo?}
+\lecturerresponse{Un valor propio nulo hace singular la matriz de la métrica, por lo que \(g^{mn}\) no existe y la métrica no puede establecer una correspondencia biunívoca entre vectores y covectores. Una métrica, en el sentido habitual de la geometría diferencial, debe ser no degenerada. \lecturetimestamp{01:43:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{¿Tienen algo que ver las diez componentes independientes de una métrica cuatridimensional con la teoría de cuerdas en diez dimensiones?}
+\lecturerresponse{No. El primer diez es simplemente \(4(4+1)/2\), el número de entradas de una matriz simétrica de cuatro por cuatro. La aparición de diez dimensiones espaciotemporales en la teoría de supercuerdas tiene otro origen. \lecturetimestamp{01:44:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Si el espacio-tiempo lorentziano tiene vectores no nulos de norma cero, ¿significa eso que la métrica no es invertible?}
+\lecturerresponse{No. Un vector nulo satisface \(g_{mn}V^mV^n=0\), lo que corresponde a una cancelación dentro de una forma cuadrática indefinida. No es un vector asociado a un valor propio nulo que satisfaga \(g_{mn}V^n=0\). Por ejemplo, la métrica de Minkowski tiene valores propios \(\pm1\) y es perfectamente invertible, aunque admite vectores de tipo luz. \lecturetimestamp{01:45:02}}
+\end{classroomqa}
+
+\section{Lo que viene a continuación}
+
+Ahora podemos exponer con claridad el programa geométrico. La métrica registra la distancia infinitesimal, se transforma de manera covariante y tiene una inversa. Sus componentes pueden parecer complicadas simplemente porque las coordenadas lo son. Para decidir si la geometría misma está curvada, debemos comparar la métrica en puntos vecinos de una manera independiente de las coordenadas.
+
+Las derivadas ordinarias no bastan, porque al derivar un tensor también se derivan los jacobianos, dependientes de la posición, que aparecen en su ley de transformación. El siguiente paso es, por tanto, la derivación covariante. A partir de las derivadas de la métrica se construye una conexión; a partir de las derivadas y los productos de esa conexión se construye la curvatura. Solo entonces obtendremos la respuesta intrínseca definitiva a la cuestión de la página curvada.
