@@ -1,0 +1,522 @@
+\chapter{복합계, 얽힘, 그리고 싱글렛}
+
+\lectureoverview{광자 방출에 관한 질문은 양자 사건과 앙상블 평균의 차이를 드러낸다. 이 구분에서 측정과 붕괴, 그리고 계를 측정 장치와 함께 다뤄야 할 필요성이 자연스럽게 이어진다. 따라서 두 계의 텐서곱 상태 공간을 구성하고, 이를 두 스핀의 경우로 구체화한다. 곱상태와 얽힌 상태를 구분하고, 각 한 스핀 관측량을 복합 공간에 포함한다. 이어서 싱글렛 상태를 결정적인 예로 살펴본다. 각 스핀은 국소적으로 편극되지 않았지만, 같은 방향 성분들은 완벽한 반상관을 보인다. 기저에 무관한 싱글렛의 형태를 살펴보면 벨 정리의 토대가 마련되며, 비고전적 상관관계와 광속보다 빠른 신호 전달의 차이도 분명해진다.}
+
+\section{중첩된 스핀의 불연속적 전이}
+
+먼저 \(z\)축 방향 자기장 속에 놓인 스핀 하나를 생각하자. \(\hbar=1\) 단위계에서
+\begin{equation}
+H=\frac{\omega}{2}\sigma_z,
+\qquad
+E_+=+\frac{\omega}{2},
+\qquad
+E_-=-\frac{\omega}{2}.
+\label{eq:l6-spin-hamiltonian}
+\end{equation}
+두 에너지 준위의 간격은 다음과 같다.
+\begin{equation}
+\Delta E=E_+-E_-=\omega.
+\label{eq:l6-energy-gap}
+\end{equation}
+복사장을 포함하면, 높은 준위에 있는 스핀은 낮은 준위로 내려오면서 에너지 \(\omega\)인 광자를 방출할 수 있다. 이미 낮은 준위에 있는 스핀에는 복사 전이를 일으킬 더 낮은 스핀 상태가 없다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_01.png}
+\caption{두 스핀 에너지 준위와 그 사이의 간격 \(\omega\), 여기서 \(\hbar=1\).}
+\lectureframe{00:02:35}
+\end{figure}
+
+미묘한 경우는 옆 방향으로 준비된 스핀이다. 고전적인 자기 쌍극자 회전자는 자기장과 이루는 각의 코사인에 비례하는 에너지를 연속적으로 갖는다. 각주파수 \(\omega\)로 세차하면서 같은 진동수의 복사를 방출하고, 점차 에너지가 가장 낮은 방향으로 향한다. 방출되는 총 에너지는 초기 각도에 따라 연속적으로 달라진다. 처음에 수평인 회전자는 꼭대기에서 출발한 회전자 에너지의 절반을 방출한다.
+
+양자역학에서 이 고전적 결과는 평균으로서만 성립한다. 다음과 같이 쓰자.
+\begin{equation}
+\ket{\psi}=\alpha\ket{u}+\beta\ket{d},
+\qquad
+|\alpha|^2+|\beta|^2=1,
+\label{eq:l6-superposed-spin}
+\end{equation}
+여기서 \(\ket{u}\)와 \(\ket{d}\)는 각각 에너지가 높은 상태와 낮은 상태의 고유상태다. 높은 에너지 성분은 붕괴할 수 있지만 낮은 에너지 성분은 붕괴할 수 없다. 따라서
+\begin{equation}
+P(\text{one photon})=|\alpha|^2,
+\qquad
+P(\text{no photon})=|\beta|^2.
+\end{equation}
+광자가 방출된다면 그 에너지는 준위 간격 전체인 \(\omega\)이지, 그 일부가 아니다. 그러나 방출 에너지의 평균은 다음과 같다.
+\begin{equation}
+\expect{E_{\rm emitted}}=|\alpha|^2\omega.
+\end{equation}
+\(x\) 방향의 스핀에서는 \(|\alpha|^2=|\beta|^2=1/2\)이므로 평균은 \(\omega/2\)이다. 개별 사건에서는 여전히 에너지가 \(\omega\)인 광자 하나가 방출되거나 광자가 전혀 방출되지 않는다. 연속적인 고전적 결과는 앙상블 평균에 해당하고, 불연속성은 각각의 사건에 나타난다.
+
+\begin{classroomqa}
+\audiencequestion{흡수된 광자의 에너지는 준위 간격과 얼마나 정확히 일치해야 하나요?}
+\lecturerresponse{공명선에는 유한한 선폭이 있습니다. 들뜬 상태의 수명이 \(\tau\)라면, 그 특성 에너지 폭은 대략 \(\Delta E\sim\hbar/\tau\)입니다. 일반적으로 자기 쌍극자 모멘트가 클수록 복사장과 더 강하게 결합하고, 수명은 짧아지며, 선폭은 넓어집니다. 이것이 불안정한 준위에 적용되는 에너지-시간 불확정성 관계입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{광자 방출 자체를 스핀을 측정하는 장치로 쓸 수 있나요?}
+\lecturerresponse{붕괴가 일어났는지는 알 수 있지만, 여기서 필요한 이상적인 반복 측정 모형은 아닙니다. 스핀 성분을 측정했다면 기록된 값에 해당하는 고유상태에 스핀이 남아 있어야 합니다. 반면 붕괴가 일어난 각 가지는 모두 낮은 준위로 이행하므로, 가능한 두 입력값을 각각의 대응 고유상태를 보존한 채 단순히 기록하는 과정이 아닙니다.}
+\end{classroomqa}
+
+\section{붕괴와 복합계가 필요한 이유}
+
+외부 개입이 없는 동안 고립계의 상태는 Schr\"odinger 방정식에 따라 진화한다. 측정은 보통 여기에 추가되는 규칙으로 제시된다. \(L\)의 정규직교 고유벡터가 \(\ket{\lambda_i}\)라고 하고, 상태를 다음과 같이 전개하자.
+\begin{equation}
+\ket{\psi}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+L\ket{\lambda_i}=\lambda_i\ket{\lambda_i}.
+\label{eq:l6-measurement-expansion}
+\end{equation}
+측정값 하나인 \(\lambda_k\)가 확률 \(|\alpha_k|^2\)로 나오며, 그 뒤 상태는 다음과 같다.
+\begin{equation}
+\ket{\psi}\longrightarrow\ket{\lambda_k}.
+\label{eq:l6-collapse}
+\end{equation}
+측정 후의 기술에서 나머지 성분들이 사라지는 것을 붕괴라고 한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_02.png}
+\caption{관측량 \(L\)의 고유기저로 전개한 상태. 하나의 결과가 선택되기 전이다.}
+\lectureframe{00:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{붕괴 규칙에 문제가 있나요?}
+\lecturerresponse{측정 결과를 예측하는 조작적 규칙으로서는 문제가 없습니다. 개념적인 긴장은 측정 장치도 물리계라는 데서 생깁니다. 대상과 장치가 모두 양자역학을 따른다면, 두 계의 상호작용에 유니터리 Schr\"odinger 진화 외에 왜 두 번째 운동 법칙이 필요할까요? 여기서는 대상과 장치를 하나의 더 큰 양자계로 기술하는 방법을 택합니다.}
+\end{classroomqa}
+
+계와 측정 장치 사이에 명확한 경계를 긋는 문제는 역사적인 논쟁의 핵심이었다. 선언만으로 그 논쟁을 끝내기보다, 먼저 양자계를 어떻게 결합하는지 살펴보자. 결합된 상태 공간을 마련하면, 계와 장치 사이에 상관관계를 만드는 상호작용으로 측정을 연구할 수 있다. 따라서 당장 답해야 할 수학적 질문은 다음과 같다.
+\begin{quote}
+양자계 두 개가 주어졌을 때, 전체 계의 상태 공간은 무엇인가?
+\end{quote}
+
+\section{텐서곱 상태 공간}
+
+두 계를 \(A\)와 \(I\)라 하고, 각각의 힐베르트 공간을 \(\mathcal S_A\)와 \(\mathcal S_I\)라고 하자. 복합계의 공간은 다음과 같다.
+\begin{equation}
+\mathcal S_{AI}=\mathcal S_A\otimes\mathcal S_I.
+\label{eq:l6-tensor-space}
+\end{equation}
+두 인자 공간의 정규직교기저를 각각 \(\{\ket{a}\}\)와 \(\{\ket{i}\}\)로 택하자. 첫 번째 계의 각 기저벡터를 두 번째 계의 모든 기저벡터와 짝짓는다.
+\begin{equation}
+\ket{a}\otimes\ket{i}\equiv\ket{a\,i}.
+\end{equation}
+인자 공간의 차원이 각각 \(D_A\)와 \(D_I\)이면,
+\begin{equation}
+\dim\mathcal S_{AI}=D_A D_I.
+\end{equation}
+내적은 인자별로 분해된다.
+\begin{equation}
+\braket{b\,j}{a\,i}
+=\braket{b}{a}\braket{j}{i}
+=\delta_{ba}\delta_{ji}.
+\label{eq:l6-tensor-inner-product}
+\end{equation}
+따라서 두 복합계 기저 상태는 어느 한 부분계의 표지가 다르기만 해도 서로 직교한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}
+\caption{각 상태 공간과 그 텐서곱, 그리고 짝지은 정규직교기저.}
+\lectureframe{00:24:05}
+\end{figure}
+
+짝지은 기저벡터만으로 공간 전체가 이루어지는 것은 아니다. 이 벡터들의 완전한 선형생성공간은 다음과 같다.
+\begin{equation}
+\ket{\Psi}=\sum_{a,i}c_{ai}\ket{a\,i},
+\qquad
+\sum_{a,i}|c_{ai}|^2=1.
+\label{eq:l6-general-tensor-state}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{\(\ket{a}\)와 \(\ket{i}\)는 임의의 벡터인가요?}
+\lecturerresponse{여기서는 선택한 정규직교기저의 원소입니다. 각 인자 공간에서 어떤 정규직교기저를 택해도 됩니다. 그 기저벡터들을 짝지으면 복합계 공간의 정규직교기저가 만들어지고, 그 뒤에는 식~\eqref{eq:l6-general-tensor-state}처럼 선형결합을 취해 임의의 벡터를 얻습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{텐서곱은 선택한 기저에 따라 달라지나요?}
+\lecturerresponse{좌표로 나타내는 방식은 달라지지만 공간 자체는 달라지지 않습니다. 어느 부분계에서 기저를 바꾸더라도 \(\mathcal S_A\otimes\mathcal S_I\)의 동일한 벡터를 나타내는 유도 기저만 바뀝니다.}
+\end{classroomqa}
+
+\section{두 스핀과 곱상태}
+
+이제 스핀 두 개를 생각하자. 첫 번째 스핀의 성분은 \(\sigma_x,\sigma_y,\sigma_z\), 두 번째 스핀의 성분은 \(\tau_x,\tau_y,\tau_z\)로 나타내자. \(z\) 기저에서 복합계 기저는 다음과 같다.
+\begin{equation}
+\ket{uu},\qquad \ket{ud},\qquad \ket{du},\qquad \ket{dd}.
+\label{eq:l6-two-spin-basis}
+\end{equation}
+첫 번째 자리는 항상 \(\sigma\), 두 번째 자리는 \(\tau\)를 가리킨다. 일반적인 상태는 다음과 같다.
+\begin{equation}
+\ket{\Psi}
+=c_{uu}\ket{uu}+c_{ud}\ket{ud}
++c_{du}\ket{du}+c_{dd}\ket{dd}.
+\label{eq:l6-general-two-spin}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{두 스핀이 상호작용하면 기저벡터 자체도 바뀌나요?}
+\lecturerresponse{동역학을 기술할 때 고정된 기저를 사용할 필요는 없습니다. 선택한 기저에서는 상호작용에 따라 계수 \(c_{ab}(t)\)가 바뀌지만, \(\ket{uu},\ket{ud},\ket{du},\ket{dd}\)의 정의는 바뀌지 않습니다. \(\ket{uu}\)로 시작한 상태는 진화하면서 중첩 상태, 심지어 \(\ket{dd}\)가 될 수도 있지만, 좌표 기저는 그대로 유지됩니다.}
+\end{classroomqa}
+
+이 구성은 일관성 검사도 통과해야 한다. 두 스핀이 멀리 떨어져 있고 \(\sigma\)만 살펴본다면, 예측은 \(\tau\)를 도입하기 전에 전개한 한 스핀 이론과 일치해야 한다. 텐서곱은 이 국소 이론을 보존하도록 고안되었다.
+
+두 스핀 상태 중에는 서로 독립적으로 준비된 스핀을 나타내는 상태가 있다. 예를 들어 다음 상태를 생각하자.
+\begin{equation}
+\ket{R}=\frac{\ket{u}+\ket{d}}{\sqrt2}
+\end{equation}
+이는 \(+1\)인 \(x\) 성분의 고유상태다. 그러면
+\begin{equation}
+\ket{u}_{\sigma}\otimes\ket{R}_{\tau}
+=\frac{\ket{uu}+\ket{ud}}{\sqrt2}.
+\label{eq:l6-up-right-product}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{두 인자를 서로 다른 축 방향으로 준비해도 되나요?}
+\lecturerresponse{그렇습니다. 각 인자는 임의의 한 스핀 상태일 수 있습니다. 식~\eqref{eq:l6-up-right-product}에서 첫 번째 스핀은 \(z\) 방향으로, 두 번째 스핀은 \(x\) 방향으로 확정되어 있습니다. 두 번째 인자를 \(z\) 기저로 전개하는 것은 복합계 기저에서 같은 곱상태를 다시 쓰는 것일 뿐입니다.}
+\end{classroomqa}
+
+가장 일반적인 곱상태는 다음과 같다.
+\begin{align}
+\ket{\Psi_{\rm prod}}
+&=(\alpha_u\ket{u}+\alpha_d\ket{d})
+\otimes(\beta_u\ket{u}+\beta_d\ket{d})\\
+&=\alpha_u\beta_u\ket{uu}
++\alpha_u\beta_d\ket{ud}
+\\
+&\quad
++\alpha_d\beta_u\ket{du}
++\alpha_d\beta_d\ket{dd}.
+\label{eq:l6-product-expansion}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_04.png}
+\caption{네 상태로 이루어진 복합계 기저로 전개한 인수분해된 두 스핀 상태.}
+\lectureframe{00:37:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{식~\eqref{eq:l6-product-expansion}에는 어떤 종류의 벡터곱이 나오나요?}
+\lecturerresponse{전체 공간은 두 힐베르트 공간의 텐서곱입니다. 각 공간에서 가져온 벡터 하나씩의 곱으로 인수분해되는 벡터를 곱상태 또는 단순 텐서라고 합니다. 텐서곱 공간의 대부분의 벡터는 이런 곱들의 합이며, 하나의 곱으로 쓸 수 없습니다.}
+\end{classroomqa}
+
+계수에서 이 제약을 직접 확인할 수 있다.
+\begin{equation}
+c_{uu}c_{dd}=c_{ud}c_{du}
+\qquad\text{for every product state}.
+\label{eq:l6-rank-one-condition}
+\end{equation}
+다시 말해, 계수 행렬 \(2\times2\)의 계수는 1이다. 매개변수의 개수를 세어도 같은 결론에 이른다. 복소 계수 네 개에는 실수 매개변수가 여덟 개 있다. 정규화 조건으로 하나가, 무관한 전체 위상으로 하나가 제거되어 일반적인 순수 두 스핀 상태에는 여섯 개가 남는다. 순수 한 스핀 상태에는 실수 매개변수가 두 개 필요하므로, 별도로 정해지는 스핀 두 개에는 네 개만 필요하다. 따라서 곱상태는 여섯 매개변수로 이루어진 두 스핀 상태 공간 안의 특별한 네 매개변수 부분집합이다. 나머지 상태는 얽혀 있다.
+
+\section{복합 공간의 국소 관측량}
+
+익숙한 한 스핀 관측량은 더 큰 계 안에서도 그대로 성립해야 한다. 구체적으로,
+\begin{equation}
+\sigma_m\equiv\sigma_m\otimes I,
+\qquad
+\tau_n\equiv I\otimes\sigma_n,
+\qquad
+m,n\in\{x,y,z\}.
+\label{eq:l6-local-operators}
+\end{equation}
+자리를 나타내는 약식 표기법을 정해 두면 간결한 표기를 써도 문제가 없다. 다음을 사용하면
+\begin{equation}
+\begin{aligned}
+\sigma_x&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.4em]
+\sigma_y&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.4em]
+\sigma_z&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\end{aligned}
+\end{equation}
+첫 번째 스핀에 작용하는 연산자는 두 번째 스핀의 표지를 바꾸지 않는다.
+\begin{align}
+\sigma_x\ket{u\,i}&=\ket{d\,i},
+&
+\sigma_x\ket{d\,i}&=\ket{u\,i},\\
+\sigma_z\ket{u\,i}&=\ket{u\,i},
+&
+\sigma_z\ket{d\,i}&=-\ket{d\,i}.
+\end{align}
+두 번째 스핀에 대해서는 첫 번째 표지가 바뀌지 않는다.
+\begin{align}
+\tau_x\ket{a\,u}&=\ket{a\,d},
+&
+\tau_x\ket{a\,d}&=\ket{a\,u},\\
+\tau_z\ket{a\,u}&=\ket{a\,u},
+&
+\tau_z\ket{a\,d}&=-\ket{a\,d}.
+\label{eq:l6-spectator-action}
+\end{align}
+\(y\) 성분도 작용하는 자리를 뒤집으며,
+\(\sigma_y\ket{u}=i\ket{d}\)와
+\(\sigma_y\ket{d}=-i\ket{u}\)가 성립한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_05.png}
+\caption{두 번째 스핀의 작용표. 첫 번째 지표는 바뀌지 않는다.}
+\lectureframe{00:47:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\sigma_x\)를 적용하면 \(x\) 측정이 이루어지나요? 결과는 왜 중첩 상태가 아닌가요?}
+\lecturerresponse{연산자의 작용 자체가 측정은 아닙니다. 행렬 \(\sigma_x\)를 \(z\) 기저벡터 \(\ket{u}\)에 곱하면 \(\ket{d}\)를 얻습니다. 이것은 고유값 방정식이 아닙니다. 고유벡터라면 연산자의 작용 뒤에도 방향이 유지되어야 합니다. 실제로 \(\ket{u}\)는 직교 상태로 변환되며, 이는 \(z\) 고유상태에 대한 \(x\) 측정이 최대한 무작위적인 이유를 보여 주는 또 다른 방식입니다. 고유벡터가 아닌 상태에 연산자를 작용시키는 것은 대개 중간 단계의 대수 계산이며, 그 물리적 의미는 계산하는 전체 물리량에 따라 정해집니다.}
+\end{classroomqa}
+
+서로 다른 인자에 작용하는 연산자들은 교환한다. 예를 들어,
+\begin{equation}
+\sigma_x\tau_x\ket{uu}
+=\ket{dd}
+=\tau_x\sigma_x\ket{uu}.
+\end{equation}
+같은 등식은 모든 복합계 기저벡터에서 성립하므로 모든 상태에서도 성립한다.
+\begin{equation}
+[\sigma_m,\tau_n]=0
+\qquad\text{for all }m,n.
+\label{eq:l6-local-commutation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_06.png}
+\caption{서로 다른 자리에 작용하므로 교환자가 사라진다: \([\sigma_x,\tau_x]\).}
+\lectureframe{00:56:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{기저벡터 하나만 확인해서는 왜 두 연산자가 교환한다는 증명이 되지 않나요?}
+\lecturerresponse{연산자가 같으려면 모든 벡터에 동일하게 작용해야 합니다. 기저의 모든 벡터에서 확인하면 충분한데, 선형성에 의해 그 결과가 모든 중첩 상태로 확장되기 때문입니다. 국소 연산자의 경우 네 기저 상태 모두에서 논증은 즉시 성립합니다. 각 연산자가 서로 다른 자리를 바꾸므로 작용 순서는 중요하지 않습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{두 스핀계 자체에 속하는 관측량도 있나요?}
+\lecturerresponse{있습니다. \(\sigma_x\tau_x\), \(\sigma_x\tau_y\) 같은 곱과 그러한 곱들의 선형결합은 두 스핀의 공동 성질을 조사합니다. 국소 관측량은 각 인자의 성질을 기술하고, 상관 관측량은 두 인자가 어떻게 연관되어 있는지를 드러냅니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{독립적으로 준비한 곱상태도 이미 얽혀 있나요?}
+\lecturerresponse{아닙니다. 곱상태에서는 각 인자가 자체 상태벡터를 가지며, 국소 기댓값들은 인자별로 분해됩니다. 복합계 상태를 \(\sigma\)에 해당하는 상태 하나와 \(\tau\)에 해당하는 상태 하나로 분리할 수 없을 때 얽힘이 생깁니다.}
+\end{classroomqa}
+
+\section{싱글렛 상태}
+
+최대로 얽힌 상태의 한 예는 다음과 같다.
+\begin{equation}
+\ket{S}
+=\frac{1}{\sqrt2}\bigl(\ket{ud}-\ket{du}\bigr).
+\label{eq:l6-singlet}
+\end{equation}
+두 항만 보아도 \(z\) 방향에서 완벽한 반상관이 드러난다. 한 스핀이 위쪽이면 다른 스핀은 아래쪽이다. 더 중요한 점은 어느 스핀에도 개별적인 순수 상태를 부여할 수 없다는 것이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_07.png}
+\caption{이후 싱글렛으로 확인할 반대칭 두 스핀 상태.}
+\lectureframe{01:09:25}
+\end{figure}
+
+한 스핀의 순수 상태에는 다음 식을 만족하는 단위벡터 \(\bm n\)가 항상 존재한다.
+\begin{equation}
+(\bm\sigma\cdot\bm n)\ket{\psi}=\ket{\psi}.
+\end{equation}
+다시 말해, 한 스핀의 순수 상태에서 블로흐 벡터 \begin{equation}
+\bm r
+=\bigl(\expect{\sigma_x},\expect{\sigma_y},\expect{\sigma_z}\bigr)
+\end{equation}의 길이는 단위 길이이다. 따라서 세 성분이 모두 사라질 수는 없다. 상태가 주어지면 검출기를 \(\bm r\) 방향으로 정렬해 확실하게 \(+1\)를 얻을 수 있다. 익숙한 예로는 상태 \(\ket{u}\)에 대한 \(z\) 방향, 상태 \((\ket{u}+\ket{d})/\sqrt2\)에 대한 \(x\) 방향, 상태 \((\ket{u}+i\ket{d})/\sqrt2\)에 대한 \(y\) 방향 중 하나가 있다.
+
+이제 싱글렛의 국소 평균을 계산하자.
+\begin{align}
+\expect{\sigma_z}_S
+&=\frac12
+(\bra{ud}-\bra{du})\sigma_z
+(\ket{ud}-\ket{du})\\
+&=\frac12
+(\bra{ud}-\bra{du})
+(\ket{ud}+\ket{du})\\
+&=0.
+\end{align}
+\(\sigma_x\)에 대해서는,
+\begin{equation}
+\sigma_x\ket{S}
+=\frac{\ket{dd}-\ket{uu}}{\sqrt2},
+\end{equation}
+이는 \(\ket{S}\)와 직교하므로 \(\expect{\sigma_x}_S=0\)이다. \(\sigma_y\)가 더하는 위상은 직교성에 영향을 주지 않으므로,
+\begin{equation}
+\expect{\sigma_x}_S
+=\expect{\sigma_y}_S
+=\expect{\sigma_z}_S=0.
+\label{eq:l6-zero-local-sigma}
+\end{equation}
+대칭성에 따라,
+\begin{equation}
+\expect{\tau_x}_S
+=\expect{\tau_y}_S
+=\expect{\tau_z}_S=0.
+\label{eq:l6-zero-local-tau}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_08.png}
+\caption{칠판에는 사라지는 국소 스핀 평균과 계산을 마무리할 때 사용한 \(y\) 성분의 뒤집힘이 기록되어 있다.}
+\lectureframe{01:14:20}
+\end{figure}
+
+두 스핀 전체의 상태는 순수하며 완전히 알려져 있지만, 각 부분은 국소적으로 편극되지 않았다. 순수 한 스핀 상태의 블로흐 벡터는 0일 수 없으므로 \(\ket{S}\)는 곱상태일 수 없다.
+
+\begin{classroomqa}
+\audiencequestion{보통의 곱 상태에서도 국소 편극이 0이 아닌 방향이 있을까?}
+\lecturerresponse{그렇다. 한 스핀에 대한 증명은 해당 인자에 적용되고, 다른 인자는 부수적인 역할만 한다. 따라서 순수 곱 상태의 각 인자에는 단위 블로흐 벡터가 있다. 싱글렛은 두 스핀 모두에서 이러한 곱 상태의 성질을 만족하지 않는다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{두 스핀을 싱글렛 상태로 어떻게 준비하나요?}
+\lecturerresponse{반평행 정렬을 선호하는 결합은 싱글렛을 최저 에너지 상태로 만들 수 있습니다. 두 스핀을 상호작용하도록 가까이 둔 다음 주변으로 에너지를 잃게 하면 싱글렛 상태로 이완될 수 있습니다. 이 설명은 상호작용에 따라 달라집니다. 등방성 반강자성 해밀토니안 \(H_{\rm int}=J\,\bm\sigma\cdot\bm\tau\)에서 \(J>0\)이면, 싱글렛은 세 트립렛 상태보다 낮은 에너지를 갖습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{그 이완에는 시간이 얼마나 걸리나요?}
+\lecturerresponse{시간 척도는 스핀 사이의 거리, 상호 결합의 세기, 자기 모멘트, 그리고 에너지를 가져가는 전자기 환경과의 결합에 따라 달라집니다. 일반적으로 결합이 강할수록 이완은 빨라집니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{반대칭 조합의 에너지가 대칭 조합보다 낮을 수 있는 이유는 무엇인가요?}
+\lecturerresponse{스핀 \(\tfrac12\) 입자 두 개의 경우, 반대칭 상태의 총스핀은 0이고 대칭 상태 세 개는 총스핀 1인 트립렛을 이룹니다. \(+\bm\sigma\cdot\bm\tau\)에 비례하는 상호작용은 싱글렛에 고유값 \(-3\)을, 트립렛에 \(+1\)를 부여하므로, 결합상수가 양수이면 싱글렛의 에너지가 더 낮습니다. 다른 해밀토니안에서는 준위의 순서가 다를 수 있습니다.}
+\end{classroomqa}
+
+\subsection{모든 스핀 기저에서 같은 상태}
+
+더 편리한 국소 기저를 택한다고 해서 얽힘이 사라지지는 않는다. 뒤에서 다룰 기저 독립적인 척도로는 얽힘 엔트로피가 있다. 싱글렛은 그보다 더 강한 대칭성을 보인다. 다음을 사용하면,
+\begin{equation}
+\ket{u}=\frac{\ket{R}+\ket{L}}{\sqrt2},
+\qquad
+\ket{d}=\frac{\ket{R}-\ket{L}}{\sqrt2},
+\end{equation}
+이를 식~\eqref{eq:l6-singlet}에 대입하여 다음을 얻는다.
+\begin{equation}
+\ket{S}
+=\frac{\ket{LR}-\ket{RL}}{\sqrt2}.
+\label{eq:l6-singlet-x-basis}
+\end{equation}
+공통의 임의 정규직교 스핀 기저 \(\{\ket{\rm in},\ket{\rm out}\}\)에서도,
+\begin{equation}
+\ket{S}
+=\frac{\ket{{\rm in}\,{\rm out}}-\ket{{\rm out}\,{\rm in}}}{\sqrt2},
+\label{eq:l6-singlet-any-basis}
+\end{equation}
+전체 위상은 무관하므로 이를 제외한 결과다. 공통 회전 아래에서 세 트립렛 상태는 서로 섞이지만, 1차원 싱글렛 부분공간은 자기 자신으로만 변환된다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_09.png}
+\caption{위쪽-아래쪽 기저에서 오른쪽-왼쪽 기저 및 다른 공통 스핀 기저로 바꾸어도 반대칭 형태는 유지된다.}
+\lectureframe{01:21:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{얽힘은 상태를 쓰는 데 사용한 기저가 만들어 낸 착시일 뿐인가요?}
+\lecturerresponse{아닙니다. 국소 기저를 바꾸면 계수는 달라지지만 상태가 인수분해되는지는 달라지지 않습니다. 얽힘 엔트로피는 이 불변 성질을 정량화합니다. 싱글렛에서는 공통 회전을 통해 이 불변성이 특히 뚜렷하게 드러납니다. 모든 스핀 기저에서 반대칭 형태가 그대로 재현됩니다.}
+\end{classroomqa}
+
+\section{상관 관측량}
+
+국소 평균은 사라지므로 싱글렛의 정보는 공동 관측량에 담겨 있어야 한다. 다음에서 시작하자.
+\begin{equation}
+\sigma_z\tau_z\ket{ud}=-\ket{ud},
+\qquad
+\sigma_z\tau_z\ket{du}=-\ket{du}.
+\end{equation}
+따라서
+\begin{equation}
+\sigma_z\tau_z\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_z\tau_z}_S=-1.
+\label{eq:l6-zz-correlation}
+\end{equation}
+이는 단순한 평균 결과가 아니다. 싱글렛은 이 곱 연산자의 고유상태이므로, 같은 축을 따라 \(z\)을 측정하면 부호는 항상 서로 반대다.
+
+두 \(x\) 연산자는 각각 자신의 자리를 뒤집는다.
+\begin{equation}
+\sigma_x\tau_x\ket{ud}=\ket{du},
+\qquad
+\sigma_x\tau_x\ket{du}=\ket{ud}.
+\end{equation}
+두 항이 서로 바뀌면서 반대칭 상태의 부호가 뒤집힌다.
+\begin{equation}
+\sigma_x\tau_x\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_x\tau_x}_S=-1.
+\end{equation}
+\(y\) 연산자에서 생기는 두 위상도 같은 방식으로 상쇄되어 다음을 얻는다.
+\begin{equation}
+\expect{\sigma_y\tau_y}_S=-1.
+\end{equation}
+이와 달리 서로 다른 데카르트 성분들의 기댓값은 0이다. 예를 들면,
+\begin{equation}
+\sigma_x\tau_z\ket{S}
+=-\frac{\ket{dd}+\ket{uu}}{\sqrt2},
+\qquad
+\expect{\sigma_x\tau_z}_S=0.
+\end{equation}
+이 모든 결과는 다음과 같이 요약된다.
+\begin{equation}
+\expect{\sigma_m\tau_n}_S=-\delta_{mn},
+\qquad
+\expect{(\bm\sigma\cdot\bm a)(\bm\tau\cdot\bm b)}_S
+=-\bm a\cdot\bm b.
+\label{eq:l6-singlet-correlation-tensor}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_10.png}
+\caption{상관 계산에서 얻은 \(\expect{\sigma_x\tau_x}=-1\)와 서로 다른 축 성분에 대한 결과 \(\expect{\sigma_x\tau_z}=0\).}
+\lectureframe{01:32:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{두 관측량의 곱은 물리적으로 무엇을 뜻하나요? 측정을 차례로 하나씩 하는 건가요?}
+\lecturerresponse{일반적으로 에르미트 연산자의 곱은 복합계의 또 다른 관측량입니다. 여기서는 모든 \(\sigma_m\)가 모든 \(\tau_n\)와 교환하므로, 두 국소 성분을 동시에 측정해 그 수치 결과를 곱할 수 있습니다. 곱 연산자는 그 공동 결과를 나타내며, 측정 순서를 정할 필요는 없습니다.}
+\end{classroomqa}
+
+곱상태에서는 공동 기댓값이 인자별 기댓값의 곱으로 분해된다.
+\begin{equation}
+\expect{\sigma_m\tau_n}_{\rm prod}
+=\expect{\sigma_m}_{\sigma}\expect{\tau_n}_{\tau}.
+\end{equation}
+싱글렛에서는 이 분해가 최대한 깨진다. 우변의 각 인자는 0이지만, 좌변의 같은 축 성분의 곱은 \(-1\)이다. 각 스핀은 개별적으로 완전히 무작위이지만, 공동으로 보면 같은 성분은 확실히 서로 반대다.
+
+\begin{classroomqa}
+\audiencequestion{두 스핀 사이의 모든 상호작용은 얽힘을 일으키나요?}
+\lecturerresponse{일반적인 결합은 처음에 인수분해되어 있던 상태를 얽히게 할 수 있으며, 흔한 상호작용 중에도 그런 경우가 많습니다. 그렇다고 문자 그대로 반드시 그런 것은 아닙니다. 특별히 선택한 곱 고유상태는 위상만 얻을 수 있고, 국소 항만으로 이루어진 해밀토니안은 인자들을 얽히게 할 수 없습니다. 중요한 것은 곱상태로 보존되지 않는 상태에 비자명한 결합이 작용하는가입니다.}
+\end{classroomqa}
+
+\section{상관관계에서 벨의 질문으로}
+
+완벽한 반상관 자체는 역설적이지 않다. 동전 하나와 10센트 동전을 주머니에 넣고, 보지 않은 채 하나씩 앨리스와 밥에게 나누어 준 다음 두 사람을 멀리 떨어뜨린다고 하자. 앨리스가 자신의 동전을 확인하면 밥의 동전도 즉시 알 수 있다. 상관관계는 동전들이 함께 있을 때 이미 정해졌으므로, 한쪽 결과를 알게 되어도 다른 위치로 신호가 전달되지는 않는다.
+
+싱글렛에도 이런 단순한 특징이 있지만, 중요한 자유도가 더해진다. 앨리스와 밥은 측정 방향을 임의로 선택할 수 있고, 양자역학은 연속적으로 변하는 상관관계 \(-\bm a\cdot\bm b\)를 예측한다. 벨 정리는 이 모든 상관관계가 입자들이 미리 지니고 온 국소적인 고전적 지시로 설명될 수 있는지를 묻는다.
+
+\begin{classroomqa}
+\audiencequestion{벨 정리에서 사용하는 상태가 이 상태인가요?}
+\lecturerresponse{그렇습니다. 벨 유형의 논증에서는 확정된 곱상태 \(\ket{ud}\)가 아니라 싱글렛 같은 얽힌 쌍을 사용합니다. 이 차이가 중요한 이유는 곱상태는 서로 분리된 국소 기술을 제공하는 반면, 싱글렛은 모든 공통 기저에 걸친 분리 불가능한 상관 구조를 담기 때문입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{같은 축 측정 결과는 항상 반대인데 왜 반상관을 통계적이라고 하나요?}
+\lecturerresponse{각각의 국소 결과는 무작위입니다. 앨리스는 \(+1\)와 \(-1\) 중 어떤 결과를 얻을지 예측할 수 없습니다. 조건부 관계는 정확합니다. 같은 축 측정에서 한쪽 결과를 알면 다른 쪽 결과는 그 반대값으로 정해집니다. 상관관계는 같은 축 성분의 곱에 불확실성이 있다는 뜻이 아니라, 공동 확률분포를 가리킵니다.}
+\end{classroomqa}
+
+이 문제를 구체적으로 살펴보는 유용한 방법은 시뮬레이션이다. 고전 컴퓨터 한 대로 스핀 하나에 대한 모든 실험을 모사할 수 있다. 상태를 저장하고, Schr\"odinger 방정식에 따라 시간에 따라 변화시키고, 요청된 확률을 계산한 다음, 난수 생성기로 결과 하나를 선택하면 된다. 반복 측정과 자기장에 의한 세차도 모두 재현할 수 있다.
+
+이제 얽힌 쌍을 고전 컴퓨터 두 대에 나누어 주자. 쌍이 준비되는 동안 두 컴퓨터가 상호작용하도록 한 뒤 연결을 끊고, 멀리 떨어진 각 위치에서 측정 방향을 독립적으로 선택한다. 미리 정해 둔 공유 난수를 사용하더라도, 분리된 국소 고전 프로그램 두 개로 모든 측정 방향 선택에 대한 양자 상관관계를 재현할 수는 없다. 전역적인 고전 시뮬레이션은 가능하지만, 공동 상태에 계속 접근할 수 있어야 하거나 다른 방식으로 두 측면을 조정해야 한다. 이는 국소 숨은 변수 모형이 아니다.
+
+국소적인 고전 장부 맞추기가 실패한다고 해서 광속보다 빠른 통신 경로가 생기는 것은 아니다. 앨리스의 국소 측정 결과는 여전히 무작위이므로, 나중에 기록을 서로 대조하지 않고 밥이 읽을 수 있는 메시지를 앨리스가 제어할 수 없다. 비국소성에 관한 용어는 여러 방식으로 쓰이지만, 조작적 구분은 명확하다. 벨 상관관계는 국소 고전적 설명을 배제하면서 무신호성을 보존한다.
+
+이로써 복합계 상태의 구성에서 새로운 것이 드러났다. 텐서곱은 국소적으로 이전의 한 스핀 물리를 보존하지만, 그 공간의 일반적인 벡터는 각 스핀의 상태로 나눌 수 없다. 싱글렛에서는 모든 국소 편극이 사라지고, 공동 스핀 성분은 완벽하고 기저에 무관한 반상관을 지닌다. 다음 단계에서는 이 구조를 바탕으로 고전적 추론을 시험하는 벨의 정량적 검사를 세운다.

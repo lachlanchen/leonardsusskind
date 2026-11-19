@@ -1,0 +1,652 @@
+\chapter{국소성, 연속 상태, 운동량}
+
+\lectureoverview{얽힘은 가역적 동역학으로 생성되었다가 풀릴 수 있지만, 얽힌 계의 일부가 우리의 통제에서 벗어나면 측정은 사실상 비가역적이 된다. 이 구분을 바탕으로 국소성을 정확히 검증할 수 있다. 밥은 자신이 있는 곳에서 임의의 유니터리 연산을 할 수 있지만, 앨리스의 축약 밀도 행렬은 변하지 않으며 따라서 앨리스 혼자 얻을 수 있는 모든 통계량도 그대로다. 이어지는 고전적 모의실험 사고실험은 무엇이 진정 비고전적인지 분명히 드러낸다. 스핀 하나는 쉽게 모방할 수 있고 중앙 컴퓨터는 얽힌 쌍도 모방할 수 있지만, 떨어진 곳에 있는 국소 기계들은 부당한 통신을 하거나 결국 성립하지 않는 벨 국소 숨은 변수 모형을 쓰지 않고서는 얽힘의 모든 상관관계를 재현할 수 없다. 이후 강의는 스핀에서 벗어나 직선 위의 입자를 다룬다. 이산 합은 적분으로, 크로네커 델타는 디랙 델타로 바뀌며, 파동 함수는 무한 차원 공간의 벡터가 된다. \(x\)를 곱하는 연산은 위치를 나타내고, 미분 연산은 반에르미트이며, 여기에 \(-i\)를 곱하면 에르미트 운동량 연산자가 된다. 마지막 계산인 \([x,p]=i\hbar\)은 양자 교환자를 고전적 푸아송 괄호와 다시 연결하고 파동 묶음, 푸리에 변환, Schr\"odinger 방정식의 시간 발전으로 이어진다.}
+
+\section{얽힘은 비가역성이 아니다}
+
+측정에 관한 논의에서 놓치기 쉬운 구분부터 살펴보자. 두 스핀이 곱상태로 들어와 서로 상호작용하고, 분리된 뒤 얽힌 상태로 나간다고 하자. 얽힘은 영원히 남아야 할까? 그렇지 않다. 상호작용은 유니터리였으므로, 적절한 상호작용을 다시 가하면 얽힘을 되돌릴 수 있다. 스핀들을 반사해 다시 가까이 가져오고, 역시간발전을 일으키도록 배치하면 쌍을 곱상태로 되돌릴 수 있다. 얽힘 자체가 반드시 증가한다는 법칙은 없다.
+
+쌍의 한 구성원을 버리면 실질적인 상황이 달라진다. 전자가 통제할 수 없는 환경 속으로 날아가 버리면, 근처에 남은 짝은 여전히 어떤 대상과 얽혀 있지만, 사라진 자유도는 역연산에 더는 쓸 수 없다. 원칙적으로는 멀리 있는 전자를 반사해 돌아오게 할 수도 있지만, 실제로는 이미 사라졌다. 이것이 측정이 \emph{우리에게는} 비가역적이라는 뜻이다. 상관관계가 우리가 통제하지 못하는 자유도로 퍼져 나간 것이다.
+
+\begin{classroomqa}
+\audiencequestion{두 계가 얽힌 뒤 나중에 얽힘이 풀릴 수도 있나요?}
+\lecturerresponse{네. 유니터리 시간발전은 가역적입니다. 두 번째 상호작용으로 첫 번째 상호작용의 역연산을 구현하면 곱상태를 되찾을 수 있습니다. 비가역성은 얽힘 자체에서 생기는 것이 아니라, 관련 자유도를 버리거나 통제할 수 없는 환경에 흡수시킬 때 생깁니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{그렇다면 측정이 끝나면 왜 비가역적으로 보이나요?}
+\lecturerresponse{측정된 계가 장치, 관찰자, 그리고 궁극적으로는 큰 환경과 상관관계를 맺기 때문입니다. 전체 상태를 되돌리려면 그 모든 기록을 통제해야 합니다. 미시적 시간발전은 여전히 유니터리일 수 있지만, 관찰자가 보는 축약된 기술에서는 그 연산을 할 수 없습니다.}
+\end{classroomqa}
+
+\section{앨리스가 알 수 있는 상태}
+
+복합계를 앨리스의 자유도 \(a\)와 밥의 자유도 \(b\)로 나누고, 순수 상태의 계수를 다음과 같이 두자.
+\begin{equation}
+\Psi(a,b)=\braket{a,b}{\Psi}.
+\end{equation}
+앨리스는 밥의 실험실에 접근할 수 없다. 따라서 앨리스의 완전한 국소 기술은 일반적으로 파동 함수가 아니다. 그것은 축약 밀도 행렬이다.
+\begin{equation}
+\rho_A(a',a)
+=
+\sum_b \Psi^*(a',b)\Psi(a,b).
+\label{eq:l8-reduced-density}
+\end{equation}
+합을 취하면 밥의 첨자가 사라진다. 앨리스의 브라 첨자와 켓 첨자만 남으며, 이 행렬에는 앨리스가 자기 주변에서만 수행하는 실험으로 얻을 수 있는 모든 확률분포가 담겨 있다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_01.png}
+\caption{밥의 기저 첨자에 대해 결합 파동 함수의 합을 취해 구한 앨리스의 축약 밀도 행렬.}
+\lectureframe{00:04:34}
+\end{figure}
+
+여기서 앨리스와 밥의 주변 영역은 넓은 의미로 이해해야 한다. 각 영역에는 해당 관찰자가 상호작용할 수 있는 장치, 자기장, 기술자와 그 밖의 모든 자유도가 포함될 수 있다. 국소성의 주장은 밥이 자기 계를 바꿀 수 없다는 뜻이 아니다. 밥은 여러 방식으로 자기 계에 작용할 수 있다. 주장은 밥이 멀리 떨어져 있는 동안 밥의 국소적 행위가 식~\eqref{eq:l8-reduced-density}을 바꾸지 않는다는 것이다.
+
+\section{밥의 국소 유니터리 변환}
+
+우선 앨리스를 제외하고 밥의 조작만 기술하자. 밥이 자기장을 바꾸거나 다른 방식으로 국소 해밀토니안을 바꾸면, 밥의 파동 함수 계수는 유니터리 변환을 따른다.
+\begin{equation}
+\psi_M(b)
+=
+\sum_{b'}U_{bb'}\psi(b').
+\label{eq:l8-bob-unitary}
+\end{equation}
+복합계 표기에서는 앨리스의 첨자가 그대로 유지된다.
+\begin{equation}
+\Psi_M(a,b)
+=
+\sum_{b'}U_{bb'}\Psi(a,b').
+\label{eq:l8-composite-unitary}
+\end{equation}
+복소켤레를 취하면 켓의 변환에 대응하는 브라의 변환을 얻는다.
+\begin{equation}
+\Psi_M^*(a',b)
+=
+\sum_{b''}\Psi^*(a',b'')U^\dagger_{b''b}.
+\label{eq:l8-composite-bra}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_02.png}
+\caption{유니터리 변환은 밥의 켓 첨자에 작용하고, 이에 대응하는 브라 첨자에는 에르미트 켤레 행렬이 작용한다.}
+\lectureframe{00:12:54}
+\end{figure}
+
+이제 앨리스의 밀도 행렬을 다시 계산하자.
+\begin{align}
+\rho_{A,M}(a',a)
+&=
+\sum_b\Psi_M^*(a',b)\Psi_M(a,b) \notag\\
+&=
+\sum_{b,b',b''}
+\Psi^*(a',b'')
+U^\dagger_{b''b}U_{bb'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')
+(U^\dagger U)_{b''b'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')\delta_{b''b'}\Psi(a,b') \notag\\
+&=
+\sum_{b'}\Psi^*(a',b')\Psi(a,b') \notag\\
+&=
+\rho_A(a',a).
+\label{eq:l8-locality-proof}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_03.png}
+\caption{칠판의 국소성 계산에서 \(U^\dagger U\)가 앨리스의 축약 상태 안에서 항등 연산자로 정리된다.}
+\lectureframe{00:14:27}
+\end{figure}
+
+증명은 전부 다음 수축 계산에 담겨 있다.
+\begin{equation}
+\sum_bU^\dagger_{b''b}U_{bb'}
+=(U^\dagger U)_{b''b'}
+=\delta_{b''b'}.
+\label{eq:l8-unitarity-contraction}
+\end{equation}
+어떤 인수분해 가정도 사용하지 않았다. 식~\eqref{eq:l8-locality-proof}은 결합 상태가 곱상태든 최대 얽힘 상태든 성립한다. 따라서 앨리스만 측정하는 모든 기댓값
+\begin{equation}
+\expect{L_A}
+=
+\operatorname{Tr}_A(\rho_A L_A),
+\end{equation}
+은 밥의 국소 유니터리 변환에 불변이다.
+
+\begin{classroomqa}
+\audiencequestion{밥이 자기 스핀에 어떤 작용을 하고 있다면, 그것만으로 이미 유니터리성이 깨지는 것 아닌가요?}
+\lecturerresponse{무언가를 한다고 해서 비유니터리 사상을 적용하는 것은 아닙니다. 밥은 자석을 돌리거나, 국소 해밀토니안을 바꾸거나, 스핀이 세차하도록 둘 수 있습니다. 이런 작용은 모두 통상적인 유니터리 시간발전입니다. 밥 자신의 상태와 측정 결과 확률은 바뀌지만, 앞의 계산이 보였듯 앨리스의 축약 상태는 바뀌지 않습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{그렇다면 양자역학은 국소성을 따르나요?}
+\lecturerresponse{여기서 사용한 조작적 의미의 국소성은 따릅니다. 밥은 자기 주변에서만 작용해 앨리스가 측정할 수 있는 통계량에 영향을 줄 수 없습니다. 얽힌 계의 결합 상관관계는 비고전적이지만, 이를 이용해 조절 가능한 신호를 보낼 수는 없습니다.}
+\end{classroomqa}
+
+\subsection{유니터리성이 중요한 이유}
+
+유니터리성은 장식적인 조건이 아니었다. 식~\eqref{eq:l8-unitarity-contraction}에서 항등 연산자를 보장한 것이 바로 유니터리성이었다. 앞서 설명한 표현을 쓰면, 유니터리성은 구별의 보존을 뜻한다. 구별 가능한 두 상태 벡터는 가역적 시간발전 뒤에도 구별 가능한 상태로 남는다. 밥에게 조금이라도 비유니터리한 결정론적 시간발전이 허용된다면, \(U^\dagger U\)는 항등 연산자가 아닐 것이다. 그러면 앨리스의 축약 밀도 행렬이 즉시 바뀔 수 있어, 밥에게 빛보다 빠른 신호를 보내는 수단이 생긴다.
+
+이러한 긴밀한 연결은 양자역학의 일부만 바꾸기 어려운 이유 가운데 하나다. 시간발전 법칙을 바꾸면 겉보기에 멀리 떨어져 있던 원리들도 함께 무너질 수 있다. 국소성, 확률 보존, 가역적인 상태 시간발전은 하나의 구조를 이루는 요소다.
+
+\begin{classroomqa}
+\audiencequestion{비유니터리 연산은 어떻게 빛보다 빠른 신호를 가능하게 하나요?}
+\lecturerresponse{밥이 그 연산을 적용할지 말지 선택할 수 있게 됩니다. 그 사상이 \(\rho_A\)를 바꾼다면, 앨리스는 국소 측정을 앙상블에 반복해 두 선택을 구별할 수 있습니다. 밥에게서 신호가 전파되지 않았는데도 변화가 생기는 셈이며, 유니터리 변환에서의 상쇄가 바로 이런 일을 막습니다.}
+\end{classroomqa}
+
+\section{붕괴는 먼 곳의 주변분포가 아니라 조건을 바꾼다}
+
+빔 분할기 예를 보면 이 불편함이 선명해진다. 단일 광자를 두 경로의 중첩 상태에 두고, 하나는 앨리스 쪽으로, 다른 하나는 밥 쪽으로 향하게 한다. 앨리스의 검출기가 클릭하면, 그 결과에 조건부인 상태에서는 밥의 경로에서 나중에 클릭이 일어날 진폭이 0이라고 할당된다. 앨리스가 밥의 광자를 순간적으로 바꿨다고 말하고 싶어지기 쉽다.
+
+앨리스의 기록을 모르는 밥이 관측할 수 있는 것은 다르다. 어떤 메시지도 받기 전에는 앨리스가 얻을 수 있는 결과들에 대해 평균을 내야 한다. 이 무조건부 평균은 밥의 축약 밀도 행렬로 기술되며, 그 행렬은 변하지 않는다. 앨리스의 클릭 결과를 알게 되면 해당 시행을 기술하는 조건부 부분앙상블이 달라지지만, 밥의 국소 주변분포는 바뀌지 않는다. 다음 두 상태의 구분이
+\begin{equation}
+\rho_B
+\qquad\text{and}\qquad
+\rho_{B\mid A=\text{click}}
+\end{equation}
+신호를 보낼 수 있는지와 유용한 상관관계가 있는지의 차이다.
+
+\begin{classroomqa}
+\audiencequestion{검출기 하나가 클릭하면 다른 쪽 팔의 파동 함수는 순간적으로 0으로 붕괴하는 것 아닌가요?}
+\lecturerresponse{그 클릭 결과에 조건부인 상태는 달라지지만, 먼 곳의 관찰자는 통상적인 메시지가 도착하기 전까지 그 조건을 알 수 없습니다. 밥의 무조건부 밀도 행렬과 밥이 얻는 모든 평균 국소 통계량은 그대로입니다. 붕괴를 전보처럼 이용할 수는 없습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{혼란의 일부는 상태와 상태에 관한 정보의 혼동에서 비롯되나요?}
+\lecturerresponse{그 표현은 생각할 거리를 주지만 여전히 너무 느슨합니다. 구체적으로 구분해야 할 것은 결합 상태, 축약 상태, 보고된 결과에 조건부인 상태입니다. 이 세 수학적 대상을 따로 유지하는 편이 정보라는 말만으로 문제를 해결하려는 것보다 안전합니다.}
+\end{classroomqa}
+
+아인슈타인--포돌스키--로젠의 불편함은 여전히 남아 있다. 단일항 상태는 \emph{전체}에 대한 최대한의 지식을 제공하면서도, 어느 구성 요소도 순수한 국소 상태를 갖지 않는다. 전체에 대해서는 알면서 부분들에 확정된 순수 상태를 부여하지 않는다는 고전적 기대의 이러한 역전------은 신호 전달 효과는 아니지만, 분명히 기묘하다. 이 기묘함을 더 뚜렷이 드러내기 위해 양자역학을 프로그래밍 문제로 바꾸어 보자.
+
+\section{스핀 하나를 모의하는 고전적 시뮬레이터}
+
+컴퓨터 화면에 스핀 장치를 그려 보자. 사용자는 장치의 방향을 맞추고, 측정 버튼 \(M\)을 누른 뒤 \(+1\) 또는 \(-1\) 결과를 확인할 수 있다. 고전 컴퓨터 안에는 두 개의 복소 진폭을 저장한다.
+\begin{equation}
+\alpha_u,\qquad \alpha_d,
+\qquad
+|\alpha_u|^2+|\alpha_d|^2=1.
+\label{eq:l8-one-spin-amplitudes}
+\end{equation}
+측정 사이에는 컴퓨터가 적절한 Schr\"odinger 방정식을 적분한다. 모의 자기장을 가하면 실제 스핀 상태와 똑같이 진폭이 세차하도록 할 수 있다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_04.png}
+\caption{스핀 하나의 시뮬레이터: 방향을 조절할 수 있는 장치와 측정 버튼이 두 진폭을 저장하는 컴퓨터에 연결되어 있다.}
+\lectureframe{00:27:47}
+\end{figure}
+
+사용자가 \(M\)을 누르면 의사난수 생성기가 보른 확률에 따라 결과를 선택한다.
+\begin{equation}
+P(+1)=|\alpha_u|^2,
+\qquad
+P(-1)=|\alpha_d|^2.
+\label{eq:l8-one-spin-born}
+\end{equation}
+컴퓨터는 선택된 부호를 표시한 다음 상태를 갱신한다. \(+1\) 결과 뒤에는
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(1,0),
+\end{equation}
+반면 \(-1\) 결과 뒤에는
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(0,1).
+\end{equation}
+그런 다음 측정 후 상태에서 유니터리 시간발전을 다시 시작한다. 사용자가 \(M\)을 누르기 전에 장치를 돌리면 컴퓨터는 기저를 바꾸고 새 축에 맞는 확률을 계산한다.
+
+하드웨어에 특별히 양자적인 요소는 필요하지 않다. 사용자가 보기에는 무작위처럼 보이는 수열을 만들기에 결정론적 의사난수 알고리즘이면 충분하다. 스핀 하나만 놓고 보면, 이러한 고전적 모방은 실험실 실험과 조작적으로 구별할 수 없다.
+
+\begin{classroomqa}
+\audiencequestion{측정 버튼은 무슨 역할을 하나요? 버튼을 누르기 전까지 흐르는 시간도 중요한가요?}
+\lecturerresponse{버튼은 시뮬레이터가 보른 분포에서 표본을 뽑고 저장된 진폭을 갱신하는 순간을 표시합니다. 기다리는 동안 진폭은 해밀토니안에 따라 시간발전합니다. 해밀토니안이 0이면 시간에 따라 아무것도 변하지 않지만, 자기장이 있으면 측정 전에 모의 스핀이 세차합니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{버튼을 누를 때와 장치의 방향은 누가 정하나요?}
+\lecturerresponse{이 모형에서는 실험자가 설정을 정합니다. 시뮬레이터는 상태를 계속 추적하다가 버튼을 누르면 선택한 축과 측정 시각을 사용합니다. 뒤에서 선택 설정이 준비된 쌍과 독립적일 수 있다는 가정을 다시 살펴보겠습니다.}
+\end{classroomqa}
+
+\section{두 스핀: 국소 시뮬레이션이 실패하는 지점}
+
+곱상태의 두 스핀은 여전히 쉽게 다룰 수 있다. 앨리스에게 진폭 \(\alpha_u,\alpha_d\)을 저장하는 컴퓨터를 하나 주고, 밥에게는 \(\beta_u,\beta_d\)을 저장하는 컴퓨터를 하나 준다. 각 기계는 자기 스핀을 시간발전시키고 측정한다. 결합 계수의 인수분해가 가능하므로 통신은 필요 없다.
+\begin{equation}
+\Psi(a,b)=\alpha_a\beta_b.
+\end{equation}
+
+임의의 두 스핀 상태에는 네 개의 계수가 필요하다.
+\begin{equation}
+\alpha_{uu},\qquad
+\alpha_{ud},\qquad
+\alpha_{du},\qquad
+\alpha_{dd},
+\qquad
+\sum_{a,b}|\alpha_{ab}|^2=1.
+\label{eq:l8-four-amplitudes}
+\end{equation}
+중앙 컴퓨터 하나로 이 값들을 저장하고 4차원 Schr\"odinger 방정식에 따라 시간발전시킬 수 있다. 두 관찰자 가운데 한쪽이 측정하면 중앙 기계는 올바른 주변확률을 표본 추출하고, 양립하지 않는 성분을 버린 뒤 살아남은 성분을 재규격화하고, 조건부 상태에서 계산을 계속한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_05.png}
+\caption{중앙 시뮬레이터는 임의의 두 스핀 상태를 나타내는 네 진폭을 저장하며 두 측정 지점 모두와 연결되어 있다.}
+\lectureframe{00:37:47}
+\end{figure}
+
+중앙 처리 장치가 두 쪽 모두와 계속 연결되어 있는 동안에는 이 방식으로 얽힘을 완벽하게 모의할 수 있다. 네 진폭을 두 기계에 복사해 서로 떨어뜨리고, 연결선을 끊은 뒤 각 기계가 자체 난수 생성기를 사용하게 하면 문제가 생긴다. 단일항 상태에서는
+\begin{equation}
+\ket{\Psi^-}
+=
+\frac{1}{\sqrt2}
+\left(
+\ket{u}_A\ket{d}_B-\ket{d}_A\ket{u}_B
+\right),
+\label{eq:l8-singlet}
+\end{equation}
+같은 축을 따라 측정할 때 결과가 반대여야 한다. 그러나 독립적인 무작위 선택으로는 \(++\) 또는 \(--\)가 나올 수도 있으므로 상관관계가 사라진다. 두 기계가 처음에는 결합 계수의 복사본을 가지고 있었는데도 그렇다.
+
+\begin{classroomqa}
+\audiencequestion{두 기계가 분리되기 전에 난수원 하나를 함께 쓸 수는 없나요?}
+\lecturerresponse{공유 무작위성으로 고정된 측정 축 하나에 대해 미리 정한 상관관계를 만들 수는 있습니다. 더 근본적인 벨 문제는 독립적으로 선택한 모든 축의 짝에 대해 양자 상관관계를 재현하는 단일 국소 방식이 있는지를 묻습니다. 미리 공유한 변수도 벨 국소 모형에 포함되며, 그런 모형은 양자 상관함수 전체를 재현할 수 없습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{네 진폭은 서로 독립인가요?}
+\lecturerresponse{네 진폭은 하나의 정규화된 결합 상태를 나타내는 네 좌표이지, 서로 독립인 네 국소 상태가 아닙니다. 얽힘 상태에서는 이들을 \(\alpha_a\beta_b\) 꼴로 쓸 수 없습니다. 국소 측정 결과가 선택되면 살아남은 결합 계수를 서로 일관되게 갱신해야 합니다. 연결이 끊긴 복사본 두 개가 저절로 일치하는 갱신을 수행하지는 않습니다.}
+\end{classroomqa}
+
+\subsection{숨은 연결선의 의미}
+
+두 측정 지점에 모두 연결된 중앙 난수 생성기는 결과를 조정할 수 있다. 보통의 고전적 시뮬레이터에서 그런 연결선은 통신 채널이기도 하다. 밥은 앨리스에게 의도적으로 비트를 보낼 수 있고, 연결이 순간적이라면 기계는 국소성을 위반하게 된다.
+
+양자계는 밥에게 그런 자유를 주지 않는다. 밥이 할 수 있는 국소 변환은 유니터리이며, 축약 밀도 행렬에 대한 증명에서 그런 변환은 앨리스의 주변 통계량을 바꾸지 않는다는 점을 이미 보였다. 그러므로 시뮬레이터의 연결선은 자연에 접근 가능한 초광속 케이블이 있다는 증거가 아니라, 통상적인 고전적 계산 방식이 양자계와 다른 구조를 가졌다는 신호다.
+
+\begin{classroomqa}
+\audiencequestion{고전적 시뮬레이터에 필요한 연결선은 물리적 비국소성을 뜻하나요?}
+\lecturerresponse{그 연결선은 단순한 고전 모형에 필요한 추가 조정을 나타냅니다. 실제로 쓸 수 있는 보통의 연결선이라면 신호 전달을 가능하게 하므로 양자 실험을 모형화하지 못합니다. 더 안전한 결론은 국소 고전 시뮬레이션과 양자역학의 논리 구조가 서로 다르다는 것이지, 숨은 통신 연결선을 발견했다는 것이 아닙니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{앨리스와 밥이 무작위 비트를 하나씩 받는데 두 비트가 완벽히 상관되어 있다면, 무엇이 이상한가요?}
+\lecturerresponse{미리 정해 둔 상관관계 하나는 이상할 것이 없습니다. 같은 내용의 봉투나 공유 난수 시드만으로도 만들 수 있습니다. 비고전적인 내용은 앨리스와 밥이 양립하지 않는 설정 가운데 하나를 각각 독립적으로 선택하고, 각자의 국소 결과는 여전히 무작위인데도 그 결과의 상관관계가 벨 부등식을 위반할 때 드러납니다.}
+\end{classroomqa}
+
+이 사고실험에는 분명히 드러내고 살펴볼 전제가 하나 더 있다. 측정 설정은 독립적인 선택으로 취급된다. 앨리스와 밥은 그 선택이 광원 변수에 의해 은밀하게 미리 정해지지 않은 채, 언제 버튼을 누를지와 장치의 방향을 결정한다. 관찰자와 그들의 의사결정 메커니즘까지 하나의 닫힌 물리계 안에 포함하면 자유로운 선택이라는 철학적 표현은 미묘해진다. 조작적 벨 검증에서는 필요한 조건을 측정 독립성으로 정식화하고, 시공간적으로 분리된 곳에서 외부적으로 생성된 설정을 사용한다. 이 강의는 형이상학적 문제는 열어 둔 채 실험적 전제를 유지한다.
+
+\begin{classroomqa}
+\audiencequestion{앨리스와 밥을 물리계 안에 넣으면 허점이 생기나요?}
+\lecturerresponse{여기서 드러나는 것은 하나의 가정입니다. 설정이 쌍을 준비하는 숨은 변수와 미리 상관되어 있어서는 안 됩니다. 자유 의지를 논할 수는 있지만, 검증 가능한 진술은 측정 독립성입니다. 이를 버리는 것은 논리적으로 가능하지만, 보통의 국소 시뮬레이션을 제공하는 대신 설명의 부담을 바꿉니다.}
+\end{classroomqa}
+
+\section{스핀에서 직선 위의 입자로}
+
+스핀을 다루면서 유한 차원 벡터에서 얽힘과 국소성까지 살펴보았다. 이제 힐베르트 공간을 확장하자. 무한 직선 위에서 움직이는 입자 하나를 생각하자. 위치 고유 켓은 다음과 같이 쓴다.
+\begin{equation}
+\ket{x},
+\end{equation}
+이는 입자의 위치가 \(x\)로 정해져 있음을 뜻한다. 이 켓들은 연속 변수로 표지되는 기저를 이룬다. 일반적인 상태는 이들의 중첩이며, 위치 공간 파동 함수는 다음과 같다.
+\begin{equation}
+\psi(x)=\braket{x}{\Psi}.
+\label{eq:l8-position-wavefunction}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_06.png}
+\caption{추상 상태를 기저 켓 \(\ket{x}\)에 투영해 얻는 위치 공간 파동 함수.}
+\lectureframe{00:56:51}
+\end{figure}
+
+여기서는 위치를 완전한 기저의 표지자로 사용한다. 이것은 고전 상태를 위치만으로 지정할 수 있다거나 입자가 위치와 운동량을 동시에 확정적으로 가진다는 뜻이 아니다. 모든 양자 상태 벡터를 위치 기저로 전개할 수 있다는 뜻이다. 운동량은 위치 공간 계수에 작용하는 연산자로 나타난다.
+
+이제 보른 규칙은 확률 \emph{밀도}를 준다.
+\begin{equation}
+\rho(x)=|\psi(x)|^2.
+\label{eq:l8-probability-density}
+\end{equation}
+연속 변숫값 하나에 정확히 해당하는 확률은 보통 0이다. 입자를 구간 안에서 찾을 확률은
+\begin{equation}
+P(x_1<x<x_2)
+=
+\int_{x_1}^{x_2}|\psi(x)|^2\,dx,
+\end{equation}
+이며, 정규화 조건은 다음과 같다.
+\begin{equation}
+\int_{-\infty}^{\infty}|\psi(x)|^2\,dx=1.
+\label{eq:l8-continuous-normalization}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{고전 입자를 기술할 때는 위치와 운동량이 모두 필요한데, 어떻게 위치만으로 완전한 기저를 이룰 수 있나요?}
+\lecturerresponse{여기서 완전성은 양자 벡터의 표현에 관한 것입니다. 모든 \(x\)에 대한 계수 \(\psi(x)\)가 상태를 지정하고, 운동량에 관한 정보는 그 위상과 공간적 변화에 담겨 있습니다. 위치 기저와 운동량 기저는 서로 다른 기저이며 나중에 푸리에 변환으로 연결됩니다. 이들은 고전역학의 동시 표지자가 아닙니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(|\psi(x)|^2\)는 입자를 정확히 \(x\)에서 발견할 확률인가요?}
+\lecturerresponse{이는 확률 밀도입니다. 작은 구간의 폭 \(dx\)를 곱하면 그 구간 안에서 입자를 발견할 확률의 근삿값을 얻고, 적분하면 유한한 영역에서 입자를 발견할 정확한 확률을 얻습니다. 고립된 한 점에 부여되는 확률은 0이어도 그 점에서 밀도는 0이 아닐 수 있습니다.}
+\end{classroomqa}
+
+\section{연속 정규직교성과 델타 함수}
+
+이산 정규직교 기저에서는
+\begin{equation}
+\braket{a}{a'}=\delta_{aa'}.
+\end{equation}
+연속 기저에서는 이에 대응하는 관계가 다음과 같습니다.
+\begin{equation}
+\braket{x}{x'}=\delta(x-x'),
+\label{eq:l8-delta-normalization}
+\end{equation}
+여기서 디랙 델타 함수는 \(x\neq x'\)일 때 0이며, 단위 면적을 갖습니다.
+\begin{equation}
+\int_{-\infty}^{\infty}\delta(x-x')\,dx'=1.
+\end{equation}
+이를 폭이 \(\epsilon\)이고 높이가 \(1/\epsilon\)인, 면적이 일정한 좁은 봉우리로 생각한 뒤 \(\epsilon\to0\)의 극한을 취할 수 있습니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{디랙 델타 함수를 좁은 봉우리로 나타낸 칠판 그림: 폭은 \(\epsilon\), 높이는 \(1/\epsilon\)이며 면적은 단위값이다.}
+\lectureframe{01:01:57}
+\end{figure}
+
+이 표기는 분포론적 의미를 간략히 나타낸 것입니다. 위치 고유켓은 통상적인 제곱적분 가능 힐베르트 공간에서 정규화할 수 있는 벡터가 아닙니다. 대신 적분 아래에서 델타 함수에 의한 정규화가 의미를 갖는 일반화 벡터입니다. 핵심적으로 사용할 관계는 다음과 같습니다.
+\begin{equation}
+\int_{-\infty}^{\infty}
+\delta(x-x')f(x')\,dx'
+=f(x).
+\label{eq:l8-delta-sampling}
+\end{equation}
+델타 함수는 그 인수가 0이 되는 값을 골라냅니다.
+
+이제 연속 전개를 쓰자.
+\begin{equation}
+\ket{\Psi}
+=
+\int_{-\infty}^{\infty}
+\psi(x')\ket{x'}\,dx'.
+\label{eq:l8-continuous-expansion}
+\end{equation}
+\(\bra{x}\)를 작용시키면 다음을 얻는다.
+\begin{align}
+\braket{x}{\Psi}
+&=
+\int dx'\,\psi(x')\braket{x}{x'} \notag\\
+&=
+\int dx'\,\psi(x')\delta(x-x') \notag\\
+&=
+\psi(x).
+\label{eq:l8-expansion-consistency}
+\end{align}
+따라서 전개의 계수와 투영 \(\braket{x}{\Psi}\)는 이산 기저에서와 마찬가지로 같은 함수다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_08.png}
+\caption{연속 상태 전개와 \(\braket{x}{x'}=\delta(x-x')\)를 사용한 일관성 확인.}
+\lectureframe{01:07:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\psi(x')\)는 유한 차원 벡터의 진폭과 같은 역할을 하나요?}
+\lecturerresponse{네. 기저 표지자 \(a'\)가 연속 표지자 \(x'\)로 바뀌고, 합은 적분으로 바뀌며, 계수 \(\psi(a')\)는 함수 \(\psi(x')\)가 됩니다. 벡터 공간에 관한 근본적인 진술은 그대로입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{디랙 델타는 한 점에서 무한한 값을 갖는 실제 함수인가요?}
+\lecturerresponse{그런 그림은 유용하지만 문자 그대로 받아들여서는 안 됩니다. 엄밀히 말해 델타는 식~\eqref{eq:l8-delta-sampling}처럼 적분 아래에서 작용하는 방식으로 정의되는 분포입니다. 면적이 1인 좁은 봉우리는 같은 표본 추출 규칙에 가까워지는 보통 함수들의 열입니다.}
+\end{classroomqa}
+
+\section{벡터로서의 함수}
+
+내적을 이해하기 위해 먼저 이산 기저에서의 계산을 떠올려 보자.
+\begin{align}
+\braket{\psi}{\phi}
+&=
+\sum_{a',a}
+\psi^*(a')\braket{a'}{a}\phi(a) \notag\\
+&=
+\sum_a\psi^*(a)\phi(a).
+\label{eq:l8-discrete-inner-product}
+\end{align}
+복소켤레를 취한 계수는 브라에 속하고, 정규직교성에 의해 이중 합이 하나의 합으로 줄어든다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{합을 적분으로 바꾸기 전, 기저로 전개해 쓴 이산 내적.}
+\lectureframe{01:11:11}
+\end{figure}
+
+기저 표지자를 위치로, 합을 적분으로 바꾸면 다음과 같다.
+\begin{equation}
+\braket{\psi}{\phi}
+=
+\int_{-\infty}^{\infty}\psi^*(x)\phi(x)\,dx.
+\label{eq:l8-continuous-inner-product}
+\end{equation}
+두 벡터의 순서를 바꾸면 결과는 복소켤레가 된다.
+\begin{equation}
+\braket{\phi}{\psi}
+=
+\braket{\psi}{\phi}^*,
+\end{equation}
+노름은 다음과 같다.
+\begin{equation}
+\|\psi\|^2=\braket{\psi}{\psi}
+=\int |\psi(x)|^2\,dx.
+\end{equation}
+
+따라서 함수는 벡터다. 함수끼리 더하고, 복소 스칼라를 곱하고, 정규화하고, 내적을 취할 수 있다. 무한 직선 위의 물리적 파동 함수는 제곱적분 가능해야 하므로 무한대에서 한없이 커지는 함수는 제외된다. 일반화 기저 함수 \(\delta(x-x_0)\)는 그 힐베르트 공간에 속하지 않지만, 분포적 의미의 기저 벡터로서 여전히 꼭 필요하다.
+
+\begin{classroomqa}
+\audiencequestion{표시되지 않은 적분 구간은 \(-\infty\)부터 \(+\infty\)까지인가요?}
+\lecturerresponse{네, 무한 직선 전체를 적분할 때는 그렇습니다. 이 구간은 정규화 가능한 파동함수가 왜 충분히 빠르게 감소해야 하는지도 설명해 줍니다. 그렇지 않으면 전체 확률 적분이 존재하지 않습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{칠판에 쓴 식 가운데 하나에서 수직 막대가 빠졌습니다. 의미가 달라지나요?}
+\lecturerresponse{표기상의 실수였을 뿐입니다. 기저의 중첩은 \(\braket{a'}{a}\)이며, 왼쪽에는 브라가, 오른쪽에는 켓이 놓입니다. 막대를 복원하면 이 식이 모호한 행이나 열이 아니라 내적임을 분명히 알 수 있습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{대부분의 시간 동안 거의 모든 것이 환경과 얽혀 있나요?}
+\lecturerresponse{현실적인 거시적 조건에서는 그렇습니다. 계는 광자, 공기 분자와 그 밖의 자유도에 끊임없이 부딪히며 위상 정보를 환경으로 퍼뜨립니다. 이런 환경과의 얽힘은 결어긋남의 핵심이며, 거시적인 대안들 사이의 간섭을 관측하기 어려운 이유이기도 합니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{분포의 수학적 이론은 물리학을 바꾸었을까요, 아니면 델타 함수를 정당한 수학적 대상으로 만들어 주기만 했을까요?}
+\lecturerresponse{분포 이론이 당장 해낸 일은 물리학자들이 이미 사용하던 조작을 엄밀하게 만드는 것이었습니다. 일반화 함수에 정확한 언어를 제공하고 수학자들과의 논의를 간결하게 해 주었지만, 그 자체로 양자장론의 모든 분포 관련 난제를 해결한 것은 아닙니다.}
+\end{classroomqa}
+
+\section{파동함수에 작용하는 선형 연산자}
+
+선형 연산자는 중첩을 보존하면서 한 함수를 다른 함수로 사상합니다:
+\begin{equation}
+L(c_1\psi+c_2\phi)
+=
+c_1L\psi+c_2L\phi.
+\end{equation}
+관측가능량은 에르미트 연산자로 나타내야 합니다. 여기서 사용하는 표기로는 조건이 다음과 같습니다.
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{L\phi}{\psi},
+\label{eq:l8-hermitian-condition}
+\end{equation}
+또는 동등하게
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{\psi}{L\phi}^*.
+\end{equation}
+비유계 연산자의 경우 이 서술에는 정의역과 경계 조건이 포함됩니다. 아래 적분에서는 경계항이 사라지는 파동함수를 가정합니다.
+
+\subsection{위치 연산자: 곱셈}
+
+가장 간단한 연산자는 파동함수에 좌표를 곱합니다:
+\begin{equation}
+(x\psi)(x)=x\psi(x).
+\label{eq:l8-position-operator}
+\end{equation}
+이 연산자는 선형이며,
+\begin{align}
+\braket{\phi}{x\psi}
+&=
+\int dx\,\phi^*(x)x\psi(x), \notag\\
+\braket{x\phi}{\psi}
+&=
+\int dx\,[x\phi(x)]^*\psi(x) \notag\\
+&=
+\int dx\,\phi^*(x)x\psi(x),
+\end{align}
+\(x\)가 실수이므로 성립합니다. 따라서 \(x\)에 의한 곱셈은 에르미트이며 위치 관측가능량을 나타냅니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_10.png}
+\caption{위치 연산자는 실수 변수 \(x\)를 파동함수에 곱하는 연산자이며, 그림은 이 연산자가 에르미트임을 확인하는 과정을 보여 줍니다.}
+\lectureframe{01:26:47}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(x\psi(x)\)에서 \(x\)는 연산자일까요, 아니면 단순한 실수일까요?}
+\lecturerresponse{각 점에서 그것은 실수인 좌표값입니다. 하지만 함수 전체 \(\psi(x)\)를 새로운 함수 \(x\psi(x)\)로 사상하는 규칙이 연산자입니다. 그 값이 실수라는 점이 에르미트 조건을 확인할 때 두 내적이 일치하는 바로 그 이유입니다.}
+\end{classroomqa}
+
+\subsection{미분 연산자는 반에르미트}
+
+미분 연산자를 생각해 봅시다.
+\begin{equation}
+D=\frac{d}{dx}.
+\end{equation}
+이 연산자는 선형이지만, 부분적분하면 다음을 얻습니다.
+\begin{align}
+\braket{\phi}{D\psi}
+&=
+\int dx\,\phi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+\left[\phi^*(x)\psi(x)\right]_{-\infty}^{\infty}
+-
+\int dx\,\frac{d\phi^*}{dx}\psi(x) \notag\\
+&=
+-\braket{D\phi}{\psi},
+\label{eq:l8-derivative-adjoint}
+\end{align}
+여기서 경계항은 사라집니다. 따라서
+\begin{equation}
+D^\dagger=-D.
+\end{equation}
+미분 연산자는 에르미트가 아니라 반에르미트입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_11.png}
+\caption{부분적분을 하면 두 파동함수 사이에서 미분 연산자가 옮겨 가며, 결정적인 마이너스 부호가 생깁니다.}
+\lectureframe{01:32:30}
+\end{figure}
+
+\(-i\)를 곱하면:
+\begin{equation}
+p=-i\frac{d}{dx}.
+\label{eq:l8-momentum-natural-units}
+\end{equation}
+복소켤레를 취하면 \(-i\)가 \(+i\)로 바뀌고, 부분적분으로 마이너스 부호가 하나 더 생깁니다. 두 부호가 상쇄되므로 \(p^\dagger=p\)입니다. 단위를 복원하면,
+\begin{equation}
+p=-i\hbar\frac{d}{dx}.
+\label{eq:l8-momentum-operator}
+\end{equation}
+
+기댓값을 계산하면 실수임이 명확해집니다:
+\begin{align}
+\expect{p}_\psi
+&=
+-i\int dx\,\psi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+i\int dx\,\frac{d\psi^*}{dx}\psi(x) \notag\\
+&=
+\expect{p}_\psi^*.
+\label{eq:l8-momentum-expectation-real}
+\end{align}
+자기 자신의 복소켤레와 같은 수는 실수이며, 관측가능량의 기댓값도 그래야 합니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_12.png}
+\caption{부분적분 전후의 운동량 기댓값입니다. 두 표현은 서로 복소켤레이면서 같은 값입니다.}
+\lectureframe{01:39:44}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{왜 \(i\)를 포함하는 연산자가 실수값을 갖는 관측량을 나타낼 수 있습니까?}
+\lecturerresponse{에르미트성은 좌표 표현식의 각 기호가 실수인지가 아니라, 내적에 대한 연산자 전체의 성질입니다. 미분 연산자를 부분적분으로 옮길 때 생기는 마이너스 부호를 \(i\) 인자가 보상하므로 모든 기댓값이 실수가 됩니다.}
+\end{classroomqa}
+
+\section{정준 교환자}
+
+한 번 더 계산해 보면 ~\eqref{eq:l8-momentum-operator}의 연산자가 왜 주목할 만한지 알 수 있습니다. \(\hbar=1\)인 단위계에서 먼저 \(x\)를 작용시킨 다음 \(p\)를 작용시킵니다:
+\begin{align}
+(px\psi)(x)
+&=
+-i\frac{d}{dx}\bigl(x\psi(x)\bigr) \notag\\
+&=
+-i\psi(x)-ix\frac{d\psi}{dx}.
+\label{eq:l8-px}
+\end{align}
+작용 순서를 바꾸면:
+\begin{equation}
+(xp\psi)(x)
+=
+-ix\frac{d\psi}{dx}.
+\label{eq:l8-xp}
+\end{equation}
+~\eqref{eq:l8-px}의 결과에서 ~\eqref{eq:l8-xp}의 결과를 빼면,
+\begin{equation}
+\bigl([x,p]\psi\bigr)(x)
+=
+\bigl(xp-px\bigr)\psi(x)
+=
+i\psi(x).
+\end{equation}
+이 식이 연산자의 정의역에 속하는 모든 파동함수에 대해 성립하므로,
+\begin{equation}
+[x,p]=i,
+\end{equation}
+단위를 복원하면,
+\begin{equation}
+[x,p]=i\hbar.
+\label{eq:l8-canonical-commutator}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_13.png}
+\caption{연산자 논증의 결론: 모든 파동함수에 대해 \(([x,p]-i)\psi=0\)이면 \([x,p]=i\)입니다.}
+\lectureframe{01:46:24}
+\end{figure}
+
+고전역학에서 이에 대응하는 식은
+\begin{equation}
+\{x,p\}_{\mathrm{PB}}=1.
+\end{equation}
+디랙의 역사적 추론은 여기서 전개한 유도와는 반대 방향으로 진행되었습니다. 그는 반대칭 푸아송 괄호와 교환자 사이의 대수적 유사성에서 출발해 다음 대응을 가정했고,
+\begin{equation}
+[A,B]\longleftrightarrow i\hbar\{A,B\}_{\mathrm{PB}},
+\end{equation}
+운동량 연산자가 위치와 정준 교환자 관계를 만족해야 한다고 추론했습니다. 여기서는 미분 연산자가 에르미트가 되지 않는 문제를 바로잡는 과정에서 \(-i\,d/dx\)를 발견했고, 그 뒤에야 같은 대수적 관계를 확인했습니다.
+
+\begin{classroomqa}
+\audiencequestion{교환자만으로 \(-i\hbar\,d/dx\)가 물리적 운동량임을 증명할 수 있습니까?}
+\lecturerresponse{이는 강력한 근거이지만, 물리적 동일성을 확립하기에는 충분하지 않습니다. 이 연산자가 공간 병진을 생성하고, 병진 대칭이 있을 때 그 기댓값이 보존되며, 적절한 비상대론적 계에서 파동 묶음이 군속도 \(\expect{p}/m\)로 움직인다는 점도 보여야 합니다.}
+\end{classroomqa}
+
+\section{다음 내용}
+
+스핀에서 입자로 넘어오면서 체계의 규모는 달라졌지만 그 구조는 유지되었습니다. 유한한 기저 벡터 목록 대신 연속적으로 표지되는 기저가 들어섭니다. 합은 적분으로, 크로네커 델타는 디랙 델타로, 열벡터는 제곱적분 가능한 함수로 바뀝니다. 위치는 곱셈으로 작용하고 운동량은 미분으로 작용합니다.
+
+다음 단계는 단순한 표기법의 문제가 아니라 물리적인 문제입니다. 운동량 확률을 구하려면 운동량 기저와 푸리에 변환이 필요합니다. 시간 진화에는 Schr\"odinger 방정식을 \(\psi(x,t)\)에 대해 풀어야 합니다. 그러면 파동묶음을 통해 추상적인 연산자 \(p=-i\hbar\,d/dx\)와 운동이 연결됩니다. 파동묶음의 군속도는 질량으로 나눈 운동량과 관련되고, 병진 대칭은 운동량 보존을 설명합니다. 따라서 교환자 \([x,p]=i\hbar\)는 고립된 요령이 아닙니다. 지금까지 전개한 벡터 공간 역학과 입자의 양자 동역학을 이어 주는 핵심 고리입니다.

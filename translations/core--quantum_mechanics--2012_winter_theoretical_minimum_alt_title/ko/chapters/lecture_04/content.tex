@@ -1,0 +1,360 @@
+\chapter{측정, 유니터리 시간 발전, 그리고 양자 동역학}
+
+\lectureoverview{먼저 이미 사용하고 있는 측정 원리를 모아 보자. 관측 가능량은 에르미트 연산자이고, 그 고윳값은 가능한 측정 결과이며, 구별 가능한 상태는 서로 직교하고, 보른 규칙은 확률을 정한다. 새롭게 다룰 문제는 동역학이다. 가역성이 성립하려면 모든 상태에 공통으로 작용하는 선형 시간 발전이 내적을 보존해야 한다. 그러면 시간 발전 연산자는 유니터리이고, 그 무한소 생성자는 에르미트 연산자이다. 이 생성자가 해밀토니안이며, 해밀토니안의 작용으로 시간 의존 Schr\"odinger 방정식이 얻어진다. 이어서 기댓값 공식, 평균값에 대한 교환자 방정식, 그 방정식과 고전 푸아송 괄호의 관계, 평균 에너지 보존을 유도한다.}
+
+일단 스핀 계는 잠시 제쳐 두자. 일반적인 구조를 살펴본 뒤 다시 돌아오겠다. 아래 원리들은 서로 독립적인 최소 공리 집합으로 제시하는 것이 아니다. 어떤 원리들은 다른 원리들을 뒷받침하거나 부분적으로 함축하지만, 각각 따로 서술하면 그 물리적 내용을 더 분명히 볼 수 있다.
+
+\section{측정으로 얻을 수 있는 것}
+
+\emph{관측 가능량}은 측정할 수 있는 것이다. 통용되는 용어는 필요 이상으로 거창하다. \emph{측정 가능량}이라고 해도 충분했을 것이다. 각 관측 가능량에는 에르미트 연산자를 대응시킨다. 일단 그러한 연산자를 \(L\)라고 하자. \begin{equation}
+L^\dagger=L.
+\end{equation}모든 선형 연산자가 에르미트인 것은 아니다. 반대로, 특정 에르미트 연산자를 현재 이용 가능한 재료와 장치로 측정할 수 있는지는 실험적으로 까다로운 문제일 수 있다. 그래도 추상적인 작업 규칙은 폭넓게 적용된다. 에르미트 연산자는 가능한 관측 가능량을 나타내며, 실제 측정 방법이 아직 발명되지 않았더라도 마찬가지다.
+
+\begin{equation}
+L\ket{\lambda}=\lambda\ket{\lambda},
+\end{equation}이면 \(\lambda\)는 \(L\)를 측정했을 때 가능한 수치 결과이다. 고윳값과 그 고유벡터를 같은 기호로 나타낸다. 켓 표기가 둘을 구별해 준다. \(\lambda\)은 수이고, \(\ket{\lambda}\)은 상태이다.
+
+왜 에르미트 연산자를 쓰는가? 기본적인 측정 장치는 실수를 출력한다. 기기가 복소수 하나를 출력하는 것처럼 보여도 실제로는 서로 독립인 두 실숫값을 출력하는 것이다. 따라서 관측 가능량의 고윳값은 실수여야 한다. 또한 서로 다른 확정 결과에 대응하는 상태들은 물리적으로 구별 가능해야 하므로 서로 직교해야 한다. 여기서 다루는 유한 차원 공간에서는 완비 직교 정규 고유기저를 갖고 고윳값이 실수인 선형 연산자는 에르미트이다. 따라서 물리적 진술과 에르미트 구조는 서로 부합한다.
+
+\subsection{구별 가능성은 직교성이다}
+
+\emph{물리적으로 구별 가능하다}는 말은 조작적으로 정의할 수 있다. 스핀을 위쪽 또는 아래쪽으로 준비했다고 하자. \(z\)축 방향으로 측정하면 두 가능성을 모호함 없이 구별할 수 있다. 위쪽 상태에서는 \(+1\)이, 아래쪽 상태에서는 \(-1\)가 나온다. 마찬가지로 \(x\)축 방향으로 측정하면 왼쪽과 오른쪽을 구별할 수 있다.
+
+이제 준비 상태가 위쪽 상태이거나 오른쪽 상태라고 하자. \(z\)-측정을 하면 위쪽 상태에서는 확실히 \(+1\)을 얻지만, 오른쪽 상태에서도 영이 아닌 확률로 \(+1\)을 얻는다. \(x\)-측정은 비대칭을 반대로 바꿀 뿐이다. 장치를 \(45^\circ\)만큼 기울여도 두 결과 분포의 겹침은 사라지지 않는다. 어떤 방향에서도 두 준비 상태를 언제나 구별해 주는 결과는 얻을 수 없다.
+
+\begin{definition}두 상태를 물리적으로 구별할 수 있는 것은 어떤 실험이나 실험들의 집합으로 주어진 준비 상태가 무엇인지 모호함 없이 판별할 수 있을 때이다.\end{definition}
+
+양자역학에서는 완전한 구별 가능성을 기하학적으로 나타낸다. \begin{equation}
+\text{distinguishable states}
+\quad\Longrightarrow\quad
+\text{orthogonal vectors}.
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{측정축을 다르게 잡으면 위쪽 상태와 오른쪽 상태를 구별할 수 있나요?}\lecturerresponse{아니요. \(z\) 또는 \(x\) 방향으로 측정하면 준비 상태를 알아낼 때도 있지만, 적어도 하나의 결과는 두 상태 모두와 양립한다. 중간 방향의 축을 택해도 확률 분포가 겹친다. 문제는 장치를 잘못 선택한 데 있지 않다. 두 상태 벡터가 서로 직교하지 않는 것이 원인이다.}\end{classroomqa}
+
+\section{보른 규칙}
+
+고윳값은 무엇이 일어날 수 있는지를 알려 주지만, 얼마나 자주 일어나는지는 알려 주지 않는다. 확률 규칙이 예측 내용을 제공한다. 정규화된 계를 \(\ket{A}\)로 준비하고, 측정하는 관측 가능량 \(L\)의 정규화된 고유벡터가 \(\ket{\lambda}\)라면 \begin{equation}
+P(\lambda)=\left|\braket{\lambda}{A}\right|^2.
+\label{eq:l4-born-rule}
+\end{equation}중첩 \(\braket{\lambda}{A}\)은 \emph{확률 진폭}이다. 일반적으로 복소수이므로 그 자체가 확률일 수는 없다. 그 절댓값의 제곱은 실수이며 음이 아니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_01.png}\caption{측정 원리와 나란히 쓴 보른 규칙: 확률은 중첩의 절댓값 제곱이다.}\lectureframe{00:12:40}\end{figure}
+
+\(L\)의 직교 정규 고유기저를 택하고 다음과 같이 전개하자. \begin{equation}
+\ket{A}=\sum_i \alpha_i\ket{\lambda_i},
+\qquad
+\alpha_i=\braket{\lambda_i}{A}.
+\end{equation}\begin{equation}
+P(\lambda_i)=|\alpha_i|^2.
+\end{equation}그러면 보른 규칙은 다음과 같다. \begin{equation}
+\sum_i P(\lambda_i)=\sum_i|\alpha_i|^2=1.
+\end{equation}정규화 조건을 적용하면 다음을 얻는다. 양의 확률과 확률의 정규화만으로 보른 규칙을 유도할 수는 없다. 하지만 절댓값 제곱이 확률 이론에 자연스럽게 들어맞는 이유는 알 수 있다. 궁극적으로 이 규칙은 실험으로 검증된다.
+
+\begin{classroomqa}\audiencequestion{확률의 합이 1이 되려면 절댓값 제곱을 써야 하나요?}\lecturerresponse{정규화된 상태를 직교 정규 기저로 전개하면 진폭의 제곱은 실제로 1이 된다. 따라서 양의 확률과 정규화 조건은 보른 규칙에 완벽히 들어맞는다. 어떤 진술을 논리적으로 먼저 놓아야 하는지는 여기서 그다지 중요하지 않다. 중요한 것은 두 조건이 서로 일관된다는 점이며, 확률 규칙은 실험으로 정해진다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{수인 고윳값을 왜 켓 안에 쓰나요?}\lecturerresponse{\(\ket{\lambda}\)은 수치 고윳값 \(\lambda\)에 대응하는 고유벡터를 뜻한다. 꼼꼼하게 표기하려면 별도의 표지를 도입할 수도 있지만, 첨자는 너무 많아지면 계산을 곧 가리게 된다. 켓 표기는 수와 벡터를 구별해 준다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{가능한 결과 가운데 하나가 실제 결과가 되게 하는 원리는 무엇인가요?}\lecturerresponse{보른 규칙이 확률을 정한다. 준비된 상태가 이미 \(L\)의 고유벡터라면 그에 대응하는 결과가 나올 확률은 1이다. 중첩 상태라면 ~\eqref{eq:l4-born-rule} 방정식에 주어진 확률에 따라 결과 하나가 얻어진다. 이에 수반되는 상태 갱신 또는 붕괴 규칙은 측정에 관한 별도의 문제이며, 얽힘을 다룰 수 있게 된 뒤 다시 살펴보겠다.}\end{classroomqa}
+
+\subsection{축퇴된 결과}
+
+하나의 고윳값에 서로 독립인 고유벡터가 둘 이상 대응할 수 있다. 다음과 같다고 하자. \begin{align}
+L\ket{\lambda,1}&=\lambda\ket{\lambda,1},\\
+L\ket{\lambda,2}&=\lambda\ket{\lambda,2}.
+\end{align}이 벡터들이 생성하는 부분공간의 모든 선형결합 역시 고윳값 \(\lambda\)에 대응하는 고유벡터이다. \begin{equation}
+L\bigl(\alpha\ket{\lambda,1}+\beta\ket{\lambda,2}\bigr)
+=
+\lambda\bigl(\alpha\ket{\lambda,1}+\beta\ket{\lambda,2}\bigr).
+\end{equation}이 자유도를 이용하면 축퇴 고유공간 안에서 직교 정규 기저를 선택할 수 있다. 표지 \(a\)가 그 기저를 훑을 때, 수치 결과 \(\lambda\)를 얻을 확률은 서로 배타적인 직교 채널들의 확률을 합한 값이다. \begin{equation}
+P(\lambda)=\sum_a\left|\braket{\lambda,a}{A}\right|^2.
+\label{eq:l4-degenerate-born}
+\end{equation}또는 \(P_\lambda\)가 전체 고유공간으로의 사영 연산자라면 \(P(\lambda)=\bra{A}P_\lambda\ket{A}\)이다. 사영 연산자 표기는 간결하고, ~\eqref{eq:l4-degenerate-born} 방정식은 확률을 직접 더하는 과정을 보여 준다.
+
+\begin{classroomqa}\audiencequestion{준비된 상태가 여러 고유벡터와 중첩되거나, 여러 고유벡터가 같은 고윳값을 공유하면 어떻게 하나요?}\lecturerresponse{고윳값이 서로 다르면 각 중첩이 해당 결과의 확률을 준다. 같은 고윳값을 갖는 여러 직교 고유벡터가 있으면 중첩들의 절댓값 제곱을 더한다. 축퇴 부분공간에서 처음 택한 벡터들이 서로 직교하지 않으면, 먼저 직교 정규 기저로 바꾼다. 확률의 합은 기저 선택과 무관하다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{준비 상태를 전혀 모르는 스핀에서 모호함 없는 답을 얻을 수 있나요?}\lecturerresponse{임의의 표본 하나만으로는 얻을 수 없다. 준비 방법에 아무런 제약도 두지 않으면, 미지의 양자 상태를 모호함 없이 식별해 주는 단일 측정은 없다. 준비에 관한 정보가 있어야 측정으로 구별할 대안들을 정할 수 있다.}\end{classroomqa}
+
+\section{새로운 질문: 상태는 어떻게 변하는가}
+
+앞의 원리들은 상태와 측정을 규정한다. 동역학은 한 시점에서 다른 시점으로 가는 동안 무슨 일이 일어나는지를 묻는다. 고전적 비유가 도움이 된다. 두 상태를 갖는 동전은 매 순간 그대로일 수도 있고, 앞면과 뒷면이 번갈아 나올 수도 있다. 여섯 면 주사위에는 더 많은 갱신 규칙이 가능하고, 연속 상태 공간에는 무한히 많은 규칙이 가능하다. 동역학 법칙은 현재 상태를 다음 상태로 사상한다.
+
+만족스러운 고전 법칙은 결정론적이고 가역적이다. 서로 다른 상태가 하나의 상태로 합쳐지지는 않는다. 그렇게 되면 현재 상태로 과거를 정할 수 없기 때문이다. 이러한 정보 보존을 때로는 \emph{마이너스 제1 법칙}이라고 부른다. 이는 더 잘 알려진 보존 법칙보다 먼저 성립한다.
+
+양자역학에서는 상태 벡터 \(\ket{\psi(t)}\)를 시간의 함수로 명시해 다루는 것에서 출발한다. 하나의 선형 시간 발전 연산자 \(U(t)\)가 있어 다음을 만족한다고 가정하자. \begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\label{eq:l4-time-development}
+\end{equation}\(U(t)\)는 같은 계의 모든 초기 상태에 작용한다. 입력 벡터에 따라 새로 정하는 연산자가 아니며, 그 작용은 선형이다. 더 일반적인 비선형 법칙이나 상태 의존 법칙도 상상할 수 있지만, 그런 법칙은 양자역학의 확률적 구조, 인과 구조, 복합계 구조와 빠르게 충돌한다.
+
+\subsection{가역성은 중첩을 보존한다}
+
+두 번째 초기 상태도 같은 법칙에 따라 시간 발전한다고 하자. \begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)}.
+\end{equation}두 준비 상태가 처음에 구별 가능하다면 이후에도 구별 가능해야 한다. 따라서 \begin{equation}
+\braket{\psi(0)}{\phi(0)}=0
+\quad\Longrightarrow\quad
+\braket{\psi(t)}{\phi(t)}=0.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_02.png}\caption{두 상태는 같은 \(U(t)\)에 따라 시간 발전하며, 처음에 직교했던 상태는 이후에도 직교한다.}\lectureframe{00:34:43}\end{figure}
+
+정규화된 상태와 직교성을 보존하면 모든 내적도 보존된다. 그 원리를 보려면 임의의 두 벡터를 직교 정규 기저로 전개하자. 시간 발전 중에도 기저 벡터들은 직교 정규 상태를 유지하므로, 계수들을 조합하면 어느 시점에서나 같은 중첩이 나온다. \begin{equation}
+\braket{\psi(t)}{\phi(t)}=\braket{\psi(0)}{\phi(0)}.
+\label{eq:l4-overlap-conservation}
+\end{equation}따라서 완전한 구별 가능성뿐 아니라 두 상태 사이의 유사성 정도 전체가 보존된다.
+
+~\eqref{eq:l4-time-development} 방정식에 대응하는 브라는 에르미트 켤레를 취해 얻는다. \begin{equation}
+\bra{\psi(t)}=\bra{\psi(0)}U^\dagger(t).
+\end{equation}브라와 켓의 시간 발전식을 ~\eqref{eq:l4-overlap-conservation} 방정식에 대입하면 다음을 얻는다. \begin{equation}
+\bra{\psi(0)}U^\dagger(t)U(t)\ket{\phi(0)}
+=
+\braket{\psi(0)}{\phi(0)}
+\end{equation}이는 모든 초기 벡터 쌍에 대해 성립한다. 연산자의 모든 행렬 원소가 항등 연산자의 행렬 원소와 같다면 그 연산자는 항등 연산자이다. 그러므로 \begin{equation}
+U^\dagger(t)U(t)=I.
+\label{eq:l4-unitarity}
+\end{equation}~\eqref{eq:l4-unitarity} 방정식을 만족하는 연산자는 \emph{유니터리}이다. 유한 차원에서는 \begin{equation}
+U^\dagger(t)=U^{-1}(t),
+\end{equation}이므로 시간 발전을 역으로 되돌릴 수 있다.
+
+\begin{classroomqa}\audiencequestion{여기서 대문자 \(\Phi\)와 소문자는 서로 다른 종류의 상태를 나타내나요?}\lecturerresponse{아니요. 표기가 일관되지 않을 뿐이다. 우리는 항상 \(\ket{\phi}\)를 사용한다. 수학에서 상태를 구별하는 것은 우연히 대문자나 소문자를 쓴 것이 아니라 상태의 표지와 값이다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(U^\dagger U=I\)를 한 인자가 다른 인자의 역원이라는 뜻으로 읽을 수 있나요?}\lecturerresponse{그렇다. 유니터리 연산자의 역원은 \(U^{-1}=U^\dagger\)이다. 이것이 가역적이고 중첩을 보존하는 시간 발전의 대수적 표현이다.}\end{classroomqa}
+
+\section{무한소 시간과 해밀토니안}
+
+경과 시간이 0이면 아무것도 변하지 않으므로 \(U(0)=I\)이다. 아주 짧은 시간 간격 \(\epsilon\) 동안에는 \(U(\epsilon)\)가 항등 연산자에 가까워야 한다. 잠시 \(\hbar=1\)로 놓는 단위계에서 다음과 같이 쓴다.
+\begin{equation}
+U(\epsilon)=I-i\epsilon H+O(\epsilon^2).
+\label{eq:l4-small-u}
+\end{equation}
+마이너스 부호와 \(i\)를 곱하는 인자는 우선 관례일 뿐이다. \(H\)를 알지 못하는 상태에서는 이들을 그 정의에 흡수할 수 있다. 이 관례가 유용해지는 것은 유니터리성을 부과할 때다. 에르미트 켤레를 취하면 다음을 얻는다.
+\begin{equation}
+U^\dagger(\epsilon)=I+i\epsilon H^\dagger+O(\epsilon^2).
+\end{equation}
+그러면
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon)\\
+&=\bigl(I+i\epsilon H^\dagger\bigr)
+  \bigl(I-i\epsilon H\bigr)+O(\epsilon^2)\\
+&=I+i\epsilon(H^\dagger-H)+O(\epsilon^2).
+\end{align}
+1차 항은 사라져야 한다.
+\begin{equation}
+H^\dagger=H.
+\label{eq:l4-h-hermitian}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_03.png}\caption{일차 유니터리 조건 계산으로 무한소 생성자가 에르미트임을 알 수 있다.}\lectureframe{00:43:38}\end{figure}
+
+기호 \(H\)는 에르미트를 뜻하는 것이 아니라 \emph{해밀토니안}을 뜻한다. 에르미트 연산자이므로 관측 가능량을 나타낸다. 해밀토니안은 에너지로 식별되며, 더 구조적으로는 시간 병진의 생성자이다. 이 식별은 이름을 붙이는 데서 끝나지 않는다. 알려진 고전적 극한이 있는 계에서는 양자 \(H\)가 고전 해밀토니안의 동역학을 재현해야 한다. 대칭성, 자유도, 물리적 판단, 그리고 궁극적으로는 실험을 통해 특정 계의 해밀토니안에 해당하는 에르미트 연산자를 정한다.
+
+\begin{classroomqa}\audiencequestion{\(H\)로 어떤 에르미트 연산자든 쓸 수 있나요? 실제 해밀토니안은 무엇으로 정하나요?}\lecturerresponse{지금까지의 유도에서는 계의 힐베르트 공간에 작용하는 임의의 에르미트 연산자를 허용한다. 물리학에서는 그 계의 자유도로 구성되는 연산자 하나를 선택한다. 스핀 계라면 스핀 연산자와 외부장으로 만들어야 한다. 대칭성과 알려진 상호작용으로 가능성을 좁히고, 남은 상수와 때로는 연산자 형태 자체를 실험으로 정한다.}\end{classroomqa}
+
+해밀토니안은 시간에 명시적으로 의존할 수 있다. 전류를 변화시키는 자기장이 간단한 예다. 외부 매개변수가 시간에 따라 변하지 않으면 \(H\)에는 명시적 시간 의존성이 없다. 이것이 시간 병진 대칭성이다. 매개변수를 시간에 따라 조절하면 에너지가 보존되지 않을 수 있다.
+
+\begin{classroomqa}\audiencequestion{짧은 시간 전개에서 \(H\)는 상수인가요, 아니면 \(H(0)\)로 써야 하나요?}\lecturerresponse{시간에 무관한 문제에서는 \(H\)가 모든 시점에 같은 연산자다. 더 일반적으로는 시각 \(t\)에 시작하는 국소 시간 발전 단계에 \(H(t)\)가 들어간다. 여기서는 먼저 시간 병진 불변인 경우를 유도한 뒤, 명시적 시간 의존성이 에너지 보존을 어떻게 바꾸는지 살펴본다.}\end{classroomqa}
+
+\section{Schr\"odinger 시간 의존 방정식}
+
+상태에 ~\eqref{eq:l4-small-u}를 적용하면 다음과 같다. \begin{equation}
+\ket{\psi(\epsilon)}=(I-i\epsilon H)\ket{\psi(0)}+O(\epsilon^2).
+\end{equation}식을 정리하고 \(\epsilon\)로 나누면 \begin{equation}
+\frac{\ket{\psi(\epsilon)}-\ket{\psi(0)}}{\epsilon}
+=-iH\ket{\psi(0)}+O(\epsilon).
+\label{eq:l4-difference-quotient}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_04.png}\caption{무한소 상태 갱신식을 벡터값 차분몫 형태로 정리했다.}\lectureframe{00:51:42}\end{figure}
+
+벡터를 미분하는 데 특별한 수수께끼는 없다. 두 벡터를 뺄 수 있고, 그 차이를 수로 나눌 수 있으며, 그 극한으로 또 다른 벡터를 정의할 수 있다. 앞에서 0이라 부른 기준 시각은 임의의 순간으로 잡아도 된다. 따라서 \(\epsilon\to0\)일 때 다음을 얻는다. \begin{equation}
+\boxed{\frac{d}{dt}\ket{\psi(t)}=-iH\ket{\psi(t)}}
+\qquad(\hbar=1).
+\label{eq:l4-schrodinger-natural}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_05.png}\caption{칠판 유도의 마지막에 상자 안에 표시한 시간 의존 Schr\"odinger 방정식이 나온다.}\lectureframe{00:56:11}\end{figure}
+
+이것이 일반적인 시간 의존 Schr\"odinger 방정식이다. 입자 파동함수의 익숙한 미분 방정식은 이 추상적인 상태 벡터 방정식을 한 가지 표현으로 나타낸 것이다. 이 방정식을 사용하려면 \(H\)와 초기 상태를 알아야 한다.
+
+유한한 시간 간격에 대해서는 미분 방정식을 푼다. \(H\)가 시간에 무관할 때 무한소 단계들을 반복해서 합성하면 다음을 얻는다. \begin{equation}
+U(t)=e^{-iHt}
+\qquad(\hbar=1),
+\end{equation}이는 작은 단계들을 모두 합성한 결과를 정확하게 나타낸다. 시간 의존 해밀토니안에는 시간 순서화가 필요하며, 이 세부 사항은 뒤로 미룬다.
+
+\begin{classroomqa}\audiencequestion{전개에는 무한소 시간 간격을 썼는데, 긴 시간이 지난 뒤의 상태는 어떻게 구하나요?}\lecturerresponse{무한소 갱신을 반복해서 적용하거나 미분 방정식을 풀면 된다. 시간에 무관한 \(H\)의 경우, 작은 단계들의 곱은 \(e^{-iHt/\hbar}\)가 된다.}\end{classroomqa}
+
+\subsection{플랑크 상수 복원하기}
+
+앞의 방정식은 \(\hbar=1\)인 단위를 사용했다. 차원 분석을 하면 \(\hbar\)가 들어갈 자리를 알 수 있다. 시간 미분의 차원은 역시간이고 \(H\)의 차원은 에너지다. \(\hbar\)의 차원은 에너지와 시간의 곱이므로 \begin{equation}
+\boxed{i\hbar\frac{d}{dt}\ket{\psi(t)}=H\ket{\psi(t)}}.
+\label{eq:l4-schrodinger}
+\end{equation}동등하게, 무한소 연산자는 \(U(\epsilon)=I-i\epsilon H/\hbar+O(\epsilon^2)\)이고 시간에 무관한 유한 시간 발전은 \(U(t)=e^{-iHt/\hbar}\)이다.
+
+\begin{classroomqa}\audiencequestion{플랑크 상수는 정확히 어디에 들어가나요?}\lecturerresponse{플랑크 상수는 서로 동등한 다음 두 형태에 들어간다. \begin{align*}
+i\hbar\,\partial_t\ket{\psi}&=H\ket{\psi},\\
+\partial_t\ket{\psi}&=-\frac{i}{\hbar}H\ket{\psi}.
+\end{align*}둘의 차원이 맞는 것은 \(\hbar\)의 단위가 에너지와 시간의 곱이기 때문이다.}\end{classroomqa}
+
+상태는 ~\eqref{eq:l4-schrodinger} 방정식에 따라 결정론적으로 시간 발전한다. 측정 결과는 보른 규칙에 따라 연속적으로 변하는 상태에서 추출되므로 통계적 성격을 유지한다.
+
+\begin{classroomqa}\audiencequestion{이 유도는 가역성에 의존하나요? 상태를 교란하는 측정이 일어나도 어떻게 성립하나요?}\lecturerresponse{이 유도는 선형 시간 발전과 내적 보존에 의존한다. 이 방정식은 고립계를 다룬다. 측정 장치는 물리계의 일부로 포함해야 할 만큼 강하게 상호작용하므로 무시할 수 없다. 계와 장치의 결합계를 양자역학적으로 다뤄야 한다. 측정을 분석하기 전에 이해해야 하는 것이 바로 이들의 얽힘이다.}\end{classroomqa}
+
+\section{기댓값은 평균을 뜻한다}
+
+양자 동역학을 고전 방정식과 비교하려면 관측량의 평균값이 필요하다. 표준 명칭인 \emph{기댓값}은 오해를 부를 소지가 있다. \(+1\)와 \(-1\)만을 취하는 공정한 확률변수의 평균은 영이지만, 영은 관측되지 않는다. 대칭 분포는 평균값 주변의 어떤 구간 전체에서조차 영일 수 있다. 매끄럽고 단봉형인 일부 분포에서는 평균, 중앙값, 최빈값이 일치하지만, 일반적으로 그렇지는 않다.
+
+\(L\)가 확률 \(P(\lambda_i)\)로 값 \(\lambda_i\)를 가질 수 있다면 다음과 같이 정의한다. \begin{equation}
+\overline{\lambda}=\sum_i\lambda_iP(\lambda_i).
+\label{eq:l4-probability-average}
+\end{equation}이는 분포의 제1 모멘트이지, 한 번의 시행에서 얻을 결과를 보장하는 값이 아니다.
+
+\begin{classroomqa}\audiencequestion{가장 자주 나오는 값이 기대해야 할 값 아닌가요?}\lecturerresponse{가장 자주 나오는 값은 최빈값이고, 가중 평균은 평균값이다. 단순하고 폭이 좁은 분포에서는 둘이 일치할 수 있지만, 봉우리가 두 개인 분포에서는 평균이 확률이 사실상 0인 영역에 놓일 수 있다. ‘기댓값’이라는 말은 수학적 평균을 뜻하며, 가장 가능성 높은 단일 결과를 반드시 뜻하지는 않는다.}\end{classroomqa}
+
+반복 시행을 하면 수학적 평균과 데이터가 연결된다. 통상적인 독립성 및 유한 모멘트 가정 아래에서 대수의 법칙은 표본 평균의 확률적 수렴을 말해 준다. 유한한 모든 시행열이 평균에 가까워진다고 보장하는 것은 아니다. 스핀 측정 결과가 매우 긴 연속 시행 동안 전부 같을 수도 있지만, 그럴 가능성은 매우 낮다. 이는 열역학 제2법칙이 예외 없는 미시적 금지 법칙이 아닌 것과 같은 통계적 미묘함이다.
+
+\begin{classroomqa}\audiencequestion{공정한 스핀 실험에서 우연히 위쪽 결과가 백만 번 연속 나왔다면, 그 실험의 평균은 정말 위쪽인가요?}\lecturerresponse{그 시행열의 표본 평균은 실제로 위쪽이다. 이론적 기댓값은 여전히 0이다. 독립 시행 횟수가 늘어나면 표본 평균은 높은 확률로 이론적 평균에 가까워지지만, 확률 이론이 예외적인 유한 시행열을 모두 배제하는 것은 아니다.}\end{classroomqa}
+
+\subsection{연산자 샌드위치}
+
+\(L\)의 직교 정규 고유기저로 정규화된 상태를 전개하자. \begin{equation}
+\ket{A}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+\bra{A}=\sum_j\alpha_j^*\bra{\lambda_j}.
+\end{equation}보른 규칙과 ~\eqref{eq:l4-probability-average} 방정식으로부터 다음을 얻는다. \begin{equation}
+\overline{\lambda}=\sum_i\lambda_i|\alpha_i|^2.
+\end{equation}이제 다음을 계산하자. \begin{align}
+\bra{A}L\ket{A}
+&=\sum_{i,j}\alpha_j^*\alpha_i
+  \bra{\lambda_j}L\ket{\lambda_i}\\
+&=\sum_{i,j}\alpha_j^*\alpha_i\lambda_i
+  \braket{\lambda_j}{\lambda_i}\\
+&=\sum_i\lambda_i|\alpha_i|^2.
+\end{align}합에서 \(\braket{\lambda_j}{\lambda_i}=\delta_{ji}\)이므로 이중 합은 하나의 합으로 줄어든다. 따라서 \begin{equation}
+\boxed{\expect{L}_A=\bra{A}L\ket{A}}.
+\label{eq:l4-expectation-sandwich}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_06.png}\caption{고유기저 전개를 이용하면 확률적 평균을 연산자 샌드위치 \(\bra{A}L\ket{A}\)로 나타낼 수 있다.}\lectureframe{01:11:50}\end{figure}
+
+평균을 나타낼 때는 꺾쇠 괄호와 윗줄 표기를 모두 사용한다. 상태가 시간에 따라 변하면 \begin{equation}
+\expect{L}_t=\bra{\psi(t)}L\ket{\psi(t)}.
+\end{equation}아래첨자는 상태가, 따라서 평균도 시간에 의존함을 상기시키는 표기일 뿐이다. 여기서 다루는 Schr\"odinger 그림에서 \(L\) 자체는 명시적인 시간 의존성이 주어지지 않는 한 고정되어 있다.
+
+\begin{classroomqa}\audiencequestion{\(t\)를 괄호 바깥에 써야 하나요? 윗줄 표기는 표본 평균을 뜻하나요?}\lecturerresponse{시간 의존성을 나타내기 위해 어느 표기에든 첨자를 붙일 수 있지만, 표준 양자 표기는 \(\expect{L}_t\) 또는 시간 정보가 \(\ket{\psi(t)}\)에 담겨 있다고 보고 간단히 \(\expect{L}\)라고 쓰는 것이다. 여기서 윗줄은 이론적 확률 평균, 즉 제1 모멘트 \(\sum_i\lambda_iP(\lambda_i)\)를 나타내며, 유한 데이터의 표본 평균만을 뜻하지는 않는다.}\end{classroomqa}
+
+\section{평균값의 시간 변화}
+
+곱의 미분 법칙으로 샌드위치 식을 미분하면 다음과 같다. \begin{equation}
+\frac{d}{dt}\expect{L}
+=
+\left(\frac{d}{dt}\bra{\psi}\right)L\ket{\psi}
++
+\bra{\psi}L\left(\frac{d}{dt}\ket{\psi}\right).
+\label{eq:l4-product-derivative}
+\end{equation}\(\hbar=1\) 단위에서 켓 방정식과 그 에르미트 켤레는 다음과 같다. \begin{align}
+\frac{d}{dt}\ket{\psi}&=-iH\ket{\psi},\\
+\frac{d}{dt}\bra{\psi}&=+i\bra{\psi}H.
+\end{align}복소켤레를 취하면 \(i\)의 부호가 바뀌며, \(H^\dagger=H\)이다. 이를 ~\eqref{eq:l4-product-derivative} 방정식에 대입하면 다음을 얻는다. \begin{align}
+\frac{d}{dt}\expect{L}
+&=i\bra{\psi}HL\ket{\psi}
+-i\bra{\psi}LH\ket{\psi}\\
+&=i\bra{\psi}(HL-LH)\ket{\psi}.
+\end{align}
+
+연산자는 서로 교환되지 않을 수 있다. 행렬의 곱과 마찬가지로 순서가 중요하다. 다음과 같이 정의하자. \begin{equation}
+[H,L]=HL-LH.
+\end{equation}그러면 \begin{equation}
+\boxed{\frac{d}{dt}\expect{L}=i\expect{[H,L]}}
+\qquad(\hbar=1).
+\label{eq:l4-average-evolution-natural}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_07.png}\caption{평균의 시간 미분은 교환자의 기댓값으로 정해진다.}\lectureframe{01:22:22}\end{figure}
+
+차원을 복원하면 다음과 같다. \begin{equation}
+\boxed{\frac{d}{dt}\expect{L}
+=\frac{i}{\hbar}\expect{[H,L]}
+=-\frac{i}{\hbar}\expect{[L,H]}}.
+\label{eq:l4-average-evolution}
+\end{equation}\(L\) 자체가 시간에 명시적으로 의존하면 일반식에 추가 항 \(\expect{\partial L/\partial t}\)이 들어간다. 여기서는 \(L\)가 고정되어 있다.
+
+\begin{classroomqa}\audiencequestion{교환자 방정식에서 부호는 정말 플러스 \(i\)인가요?}\lecturerresponse{그렇다. \([H,L]=HL-LH\)이면 결과는 \(+(i/\hbar)\expect{[H,L]}\)이다. 교환자의 순서를 바꾸면 부호도 바뀌므로 동등한 형태인 \(-(i/\hbar)\expect{[L,H]}\)를 쓸 수 있다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{브라 방정식은 복소켤레를 취해 얻었나요, 에르미트 켤레를 취해 얻었나요? 미분이 왼쪽에 그대로 있는 이유는 무엇인가요?}\lecturerresponse{에르미트 켤레를 취했다. 켓의 미분은 켓이고, 그 미분의 쌍대는 해당 브라의 미분이다. 차분몫을 보면 이를 직접 확인할 수 있다. 브라의 차이도 브라이며, 켓의 차이가 켓인 것과 같다. 여기서 시간은 매개변수이지, 순서를 바꾸어야 하는 연산자가 아니다.}\end{classroomqa}
+
+\section{고전역학과의 대응}
+
+고전 해밀턴 역학에서 시간에 명시적으로 의존하지 않는 위상 공간 함수 \(L(q,p)\)는 다음을 만족한다. \begin{equation}
+\frac{dL}{dt}=\{L,H\}_{\mathrm{PB}},
+\label{eq:l4-poisson-evolution}
+\end{equation}여기서 \(\{\cdot,\cdot\}_{\mathrm{PB}}\)는 푸아송 괄호다. 이를 ~\eqref{eq:l4-average-evolution} 방정식과 비교하자. 두 괄호 모두 반대칭이다. \begin{align}
+\{L,H\}_{\mathrm{PB}}&=-\{H,L\}_{\mathrm{PB}},\\
+[L,H]&=-[H,L].
+\end{align}또한 둘 다 곱에 대해 미분 법칙처럼 작용한다. \begin{align}
+\{LM,H\}_{\mathrm{PB}}
+&=\{L,H\}_{\mathrm{PB}}M+L\{M,H\}_{\mathrm{PB}},\\
+[LM,H]
+&=L[M,H]+[L,H]M.
+\label{eq:l4-commutator-product}
+\end{align}교환자 항등식은 \(LHM\)를 더하고 빼면 얻어진다. \begin{align}
+LMH-HLM
+&=(LMH-LHM)\\
+&\quad +(LHM-HLM)\\
+&=L(MH-HM)\\
+&\quad +(LH-HL)M.
+\end{align}
+
+이 평행성은 다음 대응을 시사한다. \begin{equation}
+[A,B]
+\quad\longleftrightarrow\quad
+i\hbar\{A,B\}_{\mathrm{PB}},
+\label{eq:l4-dirac-correspondence}
+\end{equation}또는 동등하게 \begin{equation}
+\{A,B\}_{\mathrm{PB}}
+\quad\longleftrightarrow\quad
+-\frac{i}{\hbar}[A,B].
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_08.png}\caption{고전 푸아송 괄호 방정식과 양자 교환자 대응식. \(\hbar\)를 복원해 표시했다.}\lectureframe{01:32:32}\end{figure}
+
+디랙은 이 연관성을 알아보고 이를 양자역학으로 들어가는 길로 이용했다. 그럼에도 이를 보편적인 대입 규칙이 아니라 대응 관계로 다루어야 한다. 연산자 순서의 모호성이 생길 수 있으며, 고전적 극한은 양자 동역학으로부터 유도해야 한다. 개념적으로 양자역학이 먼저이고, 고전역학은 적절한 상태와 규모에서의 근사다. 역사적 비유가 관계를 발견하는 데 도움을 주기는 하지만, 교환자가 푸아송 괄호보다 먼저다.
+
+\begin{classroomqa}\audiencequestion{\(H\)를 왜 에너지라고 부르나요? 대칭성 원리를 먼저 적용하지 않고 에너지 보존을 왜 추론하나요?}\lecturerresponse{이 단계에서 \(H\)는 엄밀히 말해 시간 병진의 에르미트 생성자다. 이를 에너지라고 부르는 것은 고전적 극한이 알려진 경우 검증해야 하는 물리적 식별이다. 적절한 상태에 있는 큰 계나 무거운 계에서는 양자 평균이 고전 방정식을 따라야 하며, 양자 \(H\)는 고전 해밀토니안과 연결되어야 한다. 아래의 보존 진술은 이 생성자가 시간에 명시적으로 의존하지 않는다는 가정에 따른다.}\end{classroomqa}
+
+\section{평균 에너지는 보존된다}
+
+시간에 무관한 해밀토니안에 대해 \(L=H\)를 ~\eqref{eq:l4-average-evolution} 방정식에 대입하자. \begin{equation}
+\frac{d}{dt}\expect{H}
+=\frac{i}{\hbar}\expect{[H,H]}.
+\end{equation}모든 연산자는 자기 자신과 교환하므로 \begin{equation}
+[H,H]=HH-HH=0,
+\end{equation}따라서 \begin{equation}
+\boxed{\frac{d}{dt}\expect{H}=0}.
+\label{eq:l4-energy-conservation}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_09.png}\caption{해밀토니안은 자기 자신과 교환하므로 평균 에너지 보존이 곧바로 따른다.}\lectureframe{01:39:30}\end{figure}
+
+이는 의도적으로 제한적인 명제, 즉 평균 에너지가 일정하다는 것을 증명한다. 에너지 분포 전체에 관한 더 강한 명제도 같은 동역학에서 따라온다. \(H\)가 시간에 명시적으로 의존하면 추가적인 명시적 미분항이 반드시 사라지는 것은 아니며, 구동되는 계는 그 계의 매개변수를 변화시키는 대상과 에너지를 주고받을 수 있다.
+
+아직 남아 있는 문제는 두 가지다. 임의의 축을 따른 스핀 확률 계산은 여전히 남아 있고, 상태 갱신 문제도 아직 유도하지 않았다. 개입이 없는 동안 고립된 상태는 유니터리하게 진화한다. 측정 중에는 계와 장치가 상호작용하여 얽힌다.
+
+\begin{classroomqa}
+\audiencequestion{임의의 축을 따라 측정한 스핀의 확률을 구하겠다던 약속은 어떻게 되었나요?}
+\lecturerresponse{주어진 시간은 일반적인 동역학을 다루는 데 쓰였습니다. 스핀 계산은 다음 구체적인 응용으로 남아 있으며, 이 구조적 틀을 살펴본 뒤에 다시 다루겠습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{붕괴 공리 없이 어떻게 공준이 완전할 수 있나요?}
+\lecturerresponse{현재로서는 붕괴라는 말은 잠정적인 표현입니다. 측정은 계와 장치 사이에 얽힘을 형성합니다. 복합계와 얽힘을 다루기 전까지는 측정 과정을 정직하게 모형화할 수 없습니다. 그것이 다음 개념적 단계입니다.}
+\end{classroomqa}
