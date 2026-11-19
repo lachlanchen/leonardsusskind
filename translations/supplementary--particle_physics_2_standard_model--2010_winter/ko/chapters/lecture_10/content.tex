@@ -1,0 +1,778 @@
+\chapter{힉스 척도, 결합 상수의 에너지에 따른 변화, 계층성 문제}
+
+\lectureoverview{마지막 강의는 표준모형 너머의 통일, 초대칭, 게이지 계층성 문제를 살펴보며 시작한다. 힉스장이 왜 이런 질문들의 중심에 놓이는지 이해하기 위해 먼저 디랙 라그랑지안을 다시 구성하고, 페르미온 질량이 왼손 카이랄리티와 오른손 카이랄리티를 혼합한다는 점을 보인다. 카이랄 약한 상호작용은 질량을 맨몸 항으로 두는 것을 허용하지 않는다. 게이지 불변인 유카와 결합은 힉스장이 진공 기댓값을 얻은 뒤에야 질량을 만들어 낸다. 이어 힉스 퍼텐셜에서 그 진공 기댓값을 유도하고, 알려진 모든 기본 입자의 질량이 왜 이 하나의 작은 척도에 묶여 있는지 묻는다. 그리고 초전도 현상을 물리적 유비로 활용한다. 휴식 후에는 도체와 유전체의 차폐 현상에서 재규격화를 발전시키고, 논의를 양자전기역학과 양자색역학으로 확장하며, 게이지 결합 상수가 통일을 향해 어떻게 변하는지 살펴본다. 마지막으로 짧은 거리 중력에서 플랑크 척도를 유도한다. 그러고 나면 전약 척도가 여전히 설명되지 않은 작은 수로 다시 남는다.}
+
+\section{표준모형 너머에서 기다리는 질문}
+
+여기서 표준모형을 완결된 목록으로 제시하는 것은 아니다. 오늘 저녁 강의를 시작하며 다음 강의가 어디로 이어질지 말해 두고자 한다. 이 이론의 문제들은 논리적 역설이라기보다 어려운 과제들이다. 게이지 계층성, 초대칭의 가능성, 통일 문제가 그것이다. 세 게이지 인자
+\begin{equation}
+  SU(3)_c\times SU(2)_L\times U(1)_Y
+  \label{eq:l10-standard-model-group}
+\end{equation}
+는 강한 상호작용, 약한 상호작용, 약한 초전하 상호작용을 각각 기술한다. 이들이 하나의 더 큰 군의 부분군일 수 있을까? 자주 연구되는 가능성 가운데 하나는
+\(SU(5)\)이며, 이때 쿼크와 렙톤은 공통 다중항에 속한다. 자연이 실제로 이 특정 구성을 택했는지는 별개의 문제다. 중요한 단서는 서로 분리된 듯 보이는 구조들이 더 큰 하나의 수학적 구조 안에 놀라울 만큼 잘 들어맞는다는 점이다.
+
+대형 강입자 충돌기는 이런 질문에 답해 줄 물리 현상을 밝혀내려는 목적도 염두에 두고 건설되었다. 2010 당시 가장 직접적으로 찾아 나선 대상은 힉스 보손이었다. 힉스를 발견한다는 것은 입자 하나를 표에 추가하는 일만을 뜻할 수 없었다. 힉스는 서로 맞물리는 일련의 성질로 판별된다. 힉스의 진공 기댓값은 약한 벡터 보손과 페르미온에 질량을 주고, 힉스장의 요동은 이 같은 입자들과 정해진 세기로 결합한다. 결합 세기가 맞지 않는 공명 입자는 표준모형의 힉스가 아니다.
+\editorialnote{이 강의는 2012 발견보다 앞서 이루어졌다. 관측된 약 \(125\,\mathrm{GeV}\)인 스칼라 입자는 현재의 정밀도 범위에서 표준모형 힉스에 기대되는 스핀, 패리티, 결합 양상을 보인다. 2026 현재까지 저에너지 초대칭 입자는 관측되지 않았다. 후대에 밝혀진 이런 사실들은 당시의 역사적 맥락을 갱신하지만, 강의에서 전개된 논증을 바꾸지는 않는다.}
+
+이 논증으로 들어가는 길은 힉스 퍼텐셜이 아니라 디랙 방정식에서 시작한다. 페르미온 질량이 정확히 무엇을 하는지 이해한 뒤에야 그 질량이 어디서 비롯되는지 물을 수 있다.
+
+\section{디랙 방정식에서 라그랑지안으로}
+
+\subsection{초기 디랙 표기법}
+
+디랙 방정식을 처음 소개할 때 사용한 해밀토니안 표기로 쓰면 그 구조는 다음과 같다.
+\begin{equation}
+  i\partial_t\psi
+  =
+  \left(-i\alpha^i\partial_i+\beta m\right)\psi .
+  \label{eq:l10-dirac-hamiltonian}
+\end{equation}
+부호와 \(i\)의 인자는 규약에 따라 달라지며, 강의 중 칠판 표기에서는 잠시 그중 일부를 생략한다. 규약과 무관한 핵심은 미분을 포함하는 항들과 미분이 전혀 없는 질량 항이 구분된다는 점이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_02.png}
+\caption{초기 \(\alpha,\beta\) 표기법으로 쓴 디랙 방정식과 라그랑지안. 칠판 표기는 부호 규약을 고정하기보다 구조를 보여 주는 데 초점을 둔다.}
+\lectureframe{00:05:52}
+\label{fig:l10-dirac-alpha-beta}
+\end{figure}
+
+변분하면 디랙 방정식이 나오는 작용을 얻으려면 방정식에 \(\psi^\dagger\)를 곱한다. 모든 항을 한쪽으로 옮기면 등호가 필요 없어진다. 여기서 그날 저녁의 소소한 수학 농담이 나온다. 방정식을 영이 되는 식으로 쓰고 나면 등호는 제 역할을 다한 셈이다. 이에 해당하는 일차 라그랑지안은 개략적으로 다음과 같이 쓸 수 있다.
+\begin{equation}
+  \mathcal L
+  =
+  \psi^\dagger
+  \left(i\partial_t+i\alpha^i\partial_i-\beta m\right)\psi ,
+  \label{eq:l10-dirac-old-lagrangian}
+\end{equation}
+일관된 계량 규약을 택하면 상대적인 부호가 정해진다.
+
+미분 항은 들뜸을 시공간의 한 점에서 인접한 점으로 이동시키면서 스피너 성분을 회전시킨다. 격자 관점에서는 이 항들이 홉핑 항이다. 이에 비해 질량 항은 같은 점에서 페르미온을 흡수했다가 다시 방출한다. 이 항에는 미분이 없다. 이 국소 작용은 곧 두 종류의 손잡이성 사이를 거듭 전환하는 작용으로 드러난다.
+
+\begin{classroomqa}
+\audiencequestion{\(\gamma^0\)를 \(\psi^\dagger\) 뒤에 붙여야 하나요?\lecturetimestamp{00:05:59}}
+\lecturerresponse{방금 쓴 비공변 표기에서는 그렇지 않습니다. 하지만 이 질문은 공변 표기로 바로 이어집니다. 디랙 수반을 \(\bar\psi=\psi^\dagger\gamma^0\)로 정의하면, 왼쪽에 놓이는 대상 안에 \(\gamma^0\)가 실제로 포함되어 있습니다.}
+\end{classroomqa}
+
+\subsection{공변 표기}
+
+다음과 같이 둔다.
+\begin{equation}
+  \bar\psi\equiv\psi^\dagger\beta
+  =\psi^\dagger\gamma^0,
+  \qquad
+  \gamma^0\equiv\beta,
+  \qquad
+  \gamma^i\equiv\beta\alpha^i .
+  \label{eq:l10-dirac-adjoint}
+\end{equation}
+\(\beta^2=1\)이므로, \(\beta\)를 곱하면 두 표기법 사이를 자유롭게 오갈 수 있다. 시간 미분 항은
+\(\bar\psi\gamma^0\partial_0\psi\)가 되고, 공간 미분 항은
+\(\bar\psi\gamma^i\partial_i\psi\)가 되어, 최종적으로 다음을 얻는다.
+\begin{equation}
+  \boxed{\mathcal L_D
+  =\bar\psi\left(i\gamma^\mu\partial_\mu-m\right)\psi .}
+  \label{eq:l10-covariant-dirac}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_03.png}
+\caption{공변 표기로 다시 쓰기: \(\bar\psi=\psi^\dagger\gamma^0\),
+\(\gamma^i=\beta\alpha^i\), 그리고 간결한 디랙 라그랑지안.}
+\lectureframe{00:10:17}
+\label{fig:l10-dirac-covariant}
+\end{figure}
+
+이 표기법에서는 각 쌍선형식의 로런츠 변환 성질이 드러난다.
+\(\bar\psi\psi\)는 스칼라이고,
+\(\bar\psi\gamma^\mu\psi\)는 4-벡터다. 간결한 표현은 \(\alpha,\beta\) 표기보다 단지 보기 좋을 뿐 아니라, 각 항이 어떻게 변환하는지도 알려 준다.
+
+\begin{classroomqa}
+\audiencequestion{간결한 식 맨 왼쪽의 스피너에는 \(\bar\psi\)가 붙어야 하나요?\lecturetimestamp{00:09:39}}
+\lecturerresponse{그렇습니다. 칠판에 빠진 바가 다시 표시되었습니다. 이 표시는 중요합니다.
+\(\bar\psi\)는 \(\psi^\dagger\)가 아니라 \(\psi^\dagger\gamma^0\)입니다.}
+\end{classroomqa}
+
+\section{카이랄리티와 디랙 질량의 실제 작용}
+
+\(\gamma^0,\gamma^1,\gamma^2,\gamma^3\)에 더해 다음을 정의한다.
+\begin{equation}
+  \gamma^5
+  =i\gamma^0\gamma^1\gamma^2\gamma^3,
+  \qquad
+  (\gamma^5)^2=1 .
+  \label{eq:l10-gamma-five}
+\end{equation}
+여기에 보인 \(i\) 인자는 공간 성분의 계량 부호가 음수인 민코프스키 계량에서 쓰는 표준 규약이다. 고윳값은 \(+1\)와 \(-1\)이며, 이에 대응하는 사영 연산자는 다음과 같다.
+\begin{equation}
+\begin{aligned}
+  P_L&=\frac{1-\gamma^5}{2},
+  &
+  P_R&=\frac{1+\gamma^5}{2},
+  \\
+  \psi_L&=P_L\psi,
+  &
+  \psi_R&=P_R\psi .
+\end{aligned}
+  \label{eq:l10-chiral-projectors}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{여기에는 \(\gamma^4\)가 없는데 왜 여분의 행렬을 \(\gamma^5\)라고 부르나요? 또 그 고윳값은 헬리시티를 나타내나요?\lecturetimestamp{00:10:42}}
+\lecturerresponse{이름은 역사적 관습에서 왔습니다. 네 개의 시공간 감마 행렬의 곱으로 만드는 추가 행렬입니다. 이 행렬의 고윳값은 일반적으로 헬리시티가 아니라 카이랄리티를 나타냅니다. 질량이 없는 입자에서는 두 개념을 적절한 방식으로 동일시할 수 있어 혼동하기 쉽습니다. 하지만 약한 게이지 이론에 필요한 것은 로런츠 표현의 표지인 카이랄리티입니다.}
+\end{classroomqa}
+
+운동 항은 카이랄리티를 보존한다. 이를 확인하는 한 가지 방법은
+\(\{\gamma^\mu,\gamma^5\}=0\)라는 점을 이용하는 것이다. 따라서 운동 항은 다음과 같이 나뉜다.
+\begin{equation}
+  \bar\psi i\gamma^\mu\partial_\mu\psi
+  =
+  \bar\psi_L i\gamma^\mu\partial_\mu\psi_L
+  +
+  \bar\psi_R i\gamma^\mu\partial_\mu\psi_R .
+  \label{eq:l10-chiral-kinetic}
+\end{equation}
+스칼라 쌍선형식은 다르게 작용한다.
+\begin{equation}
+  \bar\psi\psi
+  =
+  \bar\psi_L\psi_R+\bar\psi_R\psi_L .
+  \label{eq:l10-chiral-mass}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_04.png}
+\caption{칠판에서는 스칼라 쌍선형식을 왼쪽에서 오른쪽으로, 오른쪽에서 왼쪽으로 가는 항으로 분해한다.}
+\lectureframe{00:15:38}
+\label{fig:l10-chiral-decomposition}
+\end{figure}
+
+따라서 디랙 질량은 국소적인 카이랄리티 전환 작용이다.
+\begin{equation}
+  \psi_L\longleftrightarrow\psi_R .
+\end{equation}
+질량이 없는 페르미온은 정해진 카이랄리티를 유지하며 전파될 수 있다. 질량이 있는 페르미온은 한 카이랄 부문에 머무를 수 없다. 질량 항이 두 부문을 계속 혼합하기 때문이다. 이 전환이 관성과 무슨 관계가 있는지 의아할 수 있지만, 이것이 바로 페르미온 정지 질량을 나타내는 상대론적 장론의 표현이다.
+
+\section{약한 대칭성이 맨몸 페르미온 질량을 금지하는 이유}
+
+전하를 띤 약한 전류는 순수한 왼손 카이랄 성분으로 이루어진다. 강의에서는 먼저 \(Z\)를 언급한 뒤, \(W^\pm\)로 표현을 바로잡는다. \(Z\) 결합은 카이랄에 따라 달라지지만, 모든 오른손 카이랄 페르미온과 결합하지 않는 것은 아니다. 정확하게 말하면 다음과 같다.
+\begin{equation}
+  \mathcal L_{\mathrm{cc}}
+  =
+  -\frac{g}{\sqrt2}
+  \left(\bar u_L\gamma^\mu d_L
+  +\bar\nu_L\gamma^\mu e_L\right)W^+_\mu
+  +\mathrm{h.c.}
+  \label{eq:l10-charged-current}
+\end{equation}
+왼손 페르미온은 \(SU(2)_L\) 이중항으로 변환하고, 전하를 띤 오른손 페르미온은 단일항으로 변환한다.
+
+이제 이 변환 법칙을 \eqref{eq:l10-chiral-mass}와 비교해 보자. \(\bar e_L e_R\)와 같은 항은 한 종류의 전약 양자수를 지닌 대상을 흡수하고 다른 종류의 양자수를 지닌 대상을 방출한다. 이 항만으로는 게이지 불변이 아니다. 따라서 익숙한 디랙 질량을 전약 라그랑지안의 맨몸 항으로 둘 수 없다.
+
+이것이 설명을 전개하는 올바른 순서다. 먼저 페르미온 질량을 넣고 나서 힉스와 외관상 연결하는 것이 아니다. 먼저 게이지 대칭성이 자명해 보이는 질량 항을 금지한다. 그러면 힉스장이 그 항에 빠진 양자수를 지니도록 해야 한다.
+
+\subsection{전하 운반체로서의 힉스}
+
+힉스장이 약한 초전하 \(+\tfrac12\)를 지닌 \(SU(2)_L\) 이중항으로 변환한다고 하자.
+\begin{equation}
+  H=
+  \begin{pmatrix}
+    H^+\\ H^0
+  \end{pmatrix},
+  \qquad
+  \widetilde H=i\sigma^2H^* .
+  \label{eq:l10-higgs-doublet}
+\end{equation}
+강의에서는 군 지수를 개략적으로 처리하고 장을 \(\phi\)라고 부른다. 이 표기에서 유카와 항은 다음 꼴을 갖는다.
+\begin{equation}
+  \mathcal L_Y
+  =
+  -G_Y\left(
+    \bar\psi_L\phi\psi_R+
+    \bar\psi_R\phi^\dagger\psi_L
+  \right).
+  \label{eq:l10-yukawa-schematic}
+\end{equation}
+힉스장은 맨몸 카이랄리티 전환만으로는 보존될 수 없는 약한 전하를 받아 간다.
+
+한 세대 표준모형의 전체 식을 쓰면 같은 양자수 대응 관계가 명시적으로 드러난다.
+\begin{equation}
+  \mathcal L_Y
+  =
+  -y_d\bar Q_LHd_R
+  -y_u\bar Q_L\widetilde H u_R
+  -y_e\bar L_LHe_R
+  +\mathrm{h.c.}
+  \label{eq:l10-yukawa-full}
+\end{equation}
+각 항은 게이지 불변이며, 각 페르미온 종은 고유한 무차원 유카와 결합 상수를 갖는다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{칠판에는 힉스장을 매개로 한 카이랄리티 전환과 대칭성 깨짐 퍼텐셜이 함께 나타나 있다.}
+\lectureframe{00:18:54}
+\label{fig:l10-yukawa-potential-board}
+\end{figure}
+
+\section{하나의 상호작용이 질량과 힉스 결합을 함께 만든다}
+
+자연은 중성 힉스 성분이 영이 아닌 진공을 택한다. 강의에서 사용한 개략적인 실수장 표기에서는
+\begin{equation}
+  \phi=F+\mathcal H ,
+  \label{eq:l10-f-plus-h}
+\end{equation}
+여기서 \(F\)는 변동하지 않는 진공 이동량이고, \(\mathcal H\)는 전파하는 힉스 요동이다. \eqref{eq:l10-yukawa-schematic}에 대입하면
+\begin{align}
+  \mathcal L_Y
+  ={}&
+  -G_YF
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right)
+  \notag\\
+  &-G_Y\mathcal H
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right).
+  \label{eq:l10-yukawa-split}
+\end{align}
+첫 항은 디랙 질량이고 둘째 항은 물리적 힉스 양자와의 상호작용이다.
+\begin{equation}
+  m_f=G_YF
+  \qquad\hbox{in the lecture's normalization.}
+  \label{eq:l10-mass-lecture-normalization}
+\end{equation}
+
+표준모형의 통상적인 정규화에서는
+\begin{equation}
+\begin{aligned}
+  H(x)&=\frac{1}{\sqrt2}
+  \begin{pmatrix}
+    0\\ v+h(x)
+  \end{pmatrix},
+  \\
+  m_f&=\frac{y_fv}{\sqrt2},
+  \\
+  \mathcal L_{hff}&=-\frac{m_f}{v}h\bar f f,
+\end{aligned}
+  \label{eq:l10-standard-higgs-normalization}
+\end{equation}
+이며, \(v\simeq246\,\mathrm{GeV}\)이다. 강의에서 개략적으로 제시한
+\(F\sim200\,\mathrm{GeV}\)는 정규화 세부 사항을 생략한 같은 전약 척도다.
+
+측정된 \(W\) 및 \(Z\) 질량으로 척도 \(F\)를 정할 수 있다. 측정된 페르미온 질량으로부터 유카와 결합 상수를 구한다. 전자의 결합 상수는 매우 작고, 톱 쿼크의 결합 상수는 1 정도다. 이 메커니즘이 하는 일이 여기까지라면 페르미온마다 미지의 수 하나를 넣고 같은 정보를 되찾은 셈이었을 것이다.
+
+하지만 \eqref{eq:l10-yukawa-split}의 둘째 줄은 새로운 실험적 내용을 담고 있다. 페르미온이 힉스를 방출하거나 흡수할 수 있으며, 교차 채널로 해석하면 힉스가 페르미온-반페르미온 쌍으로 붕괴할 수 있다는 뜻이다. 개략적으로, 최상위 차수에서는
+\begin{equation}
+\begin{aligned}
+  \mathcal M(h\to f\bar f)&\propto y_f,
+  \\
+  \Gamma(h\to f\bar f)
+  &=
+  N_c\frac{y_f^2m_h}{16\pi}
+  \\
+  &\quad\times
+  \left(1-\frac{4m_f^2}{m_h^2}\right)^{3/2},
+\end{aligned}
+  \label{eq:l10-higgs-fermion-width}
+\end{equation}
+이다. 여기서 쿼크에 대해서는 \(N_c=3\)이고 렙톤에 대해서는 \(1\)이다. 붕괴가 운동학적으로 허용된다면 페르미온 질량이 클수록 유카와 결합 상수도 크다. 그렇다고 모든 무거운 붕괴 채널이 지배적이라는 뜻은 아니다. 색 인자, 위상 공간, 루프 유도 채널, 벡터 보손으로의 붕괴도 영향을 준다. 여기서 말하는 것은 페르미온 결합 자체가 질량에 비례한다는 점이다.
+
+\begin{classroomqa}
+\audiencequestion{세부 계산을 모두 하지 않고 힉스 붕괴 시간을 실제로 어떻게 예측할 수 있나요?\lecturetimestamp{00:25:32}}
+\lecturerresponse{상호작용은 해밀토니안 행렬 원소를 준다. 이에 해당하는 파인만 도표를 그리고 전이 진폭을 계산한 다음, 그 진폭의 제곱을 구하고 가능한 모든 최종 상태에 대해 합하거나 적분한다. 그 결과가 붕괴율이다. 수명은 전체 붕괴 폭의 역수인 \(\tau=\hbar/\Gamma_{\mathrm{tot}}\)이다. 양자장론 초기부터 입자 계산에 사용해 온 것과 같은 양자역학적 논리다.}
+\end{classroomqa}
+
+강의 당시 힉스 현상론은 직접 관측된 사실이 아니라 아직 예측이었다. \(W\) 및 \(Z\) 자기 상호작용은 이미 게이지 구조를 엄격하게 검증하는 수단이 되었지만, 힉스와 힉스의 직접 결합은 아직 발견되지 않았다. 당시의 불확실성도 기록에 남겨야 한다. 이후의 결과 역시 마찬가지다. 힉스와 유사한 입자가 발견되었으며, 이제 그 결합 측정은 여기서 전개한 같은 질량 생성 구조를 검증하는 수단이 되었다.
+
+\section{진공 기댓값을 정하는 퍼텐셜}
+
+유카와 결합 항을 쓴 뒤에 진공 변위를 임의로 정하는 것이 아니다. 진공 변위는 힉스 퍼텐셜로 결정된다. 전체 이중항을 가로지르는 한 실수 단면을 생각해 다음과 같이 두자.
+\begin{equation}
+  V(\phi)
+  =
+  -\frac{\mu^2}{2}\phi^2
+  +\frac{\lambda}{4}\phi^4,
+  \qquad
+  \mu^2>0,\quad\lambda>0.
+  \label{eq:l10-real-higgs-potential}
+\end{equation}
+\(\phi=0\) 부근에서는 음의 이차항 때문에 위로 볼록한 포물선이 생긴다. \(\mu\)를 허수 질량이라 부르는 것은 원점이 불안정하다는 뜻을 줄여 말한 것이다. 참된 진공 주변의 물리적 힉스 들뜸이 허수 질량을 갖는다는 뜻은 아니다.
+
+이차항만 있으면 장은 한계 없이 커지고 최저 에너지 상태도 존재하지 않는다. 양의 사차항이 결국 우세해져 퍼텐셜을 위쪽으로 돌린다. 홀수 차수 항은 모형의 \(\phi\mapsto-\phi\) 대칭성을 깨뜨린다. 사차항은 안정화를 일으키는 가장 낮은 차수의 짝수 상호작용이며, 4차원 시공간에서 무차원 결합상수를 갖는 다항식 스칼라 상호작용 가운데 가장 높은 차수이다.
+
+미분하면 다음과 같다.
+\begin{align}
+  \frac{dV}{d\phi}
+  &=-\mu^2\phi+\lambda\phi^3
+  \notag\\
+  &=\phi\left(-\mu^2+\lambda\phi^2\right).
+  \label{eq:l10-potential-derivative}
+\end{align}
+정지점 \(\phi=0\)는 불안정한 꼭대기다. 두 최솟값은 이 실수장 규약에서 다음 조건을 만족한다.
+\begin{equation}
+  \boxed{F^2=\frac{\mu^2}{\lambda}},
+  \qquad
+  F=\frac{\mu}{\sqrt\lambda}
+  \label{eq:l10-vacuum-value}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_06.png}
+\caption{칠판에서 퍼텐셜의 최솟값을 구하는 과정을 마무리하면 다음과 같다.
+\(V=-\mu^2\phi^2/2+\lambda\phi^4/4\),
+\(V'=0\), 그리고 \(\phi^2=\mu^2/\lambda\).}
+\lectureframe{00:34:32}
+\label{fig:l10-higgs-minimization}
+\end{figure}
+
+인자 \(1/2\)와 \(1/4\)는 미분할 때 정확히 소거되도록 넣었다. 원점 부근에서는 \(\phi^4\)가 \(\phi^2\)보다 작다. 장이 커지면 전자가 더 빠르게 증가해 계를 안정화한다. 이 단순한 경쟁이 이중 우물을 만든다.
+
+차원 분석으로도 녹취록에서 잠시 나온 말실수를 바로잡을 수 있다. 4차원 시공간에서 \(\lambda\)은 무차원인 반면, \(\mu\)와 \(F\)는 질량 차원을 갖는다. \(\phi=F+\mathcal H\)를 전개하면 퍼텐셜의 곡률은 다음과 같다.
+\begin{equation}
+  m_{\mathcal H}^2
+  =
+  \left.\frac{d^2V}{d\phi^2}\right|_{\phi=F}
+  =
+  -\mu^2+3\lambda F^2
+  =
+  2\mu^2
+  =
+  2\lambda F^2.
+  \label{eq:l10-higgs-curvature}
+\end{equation}
+표준모형의 전체 표기법에서도 \(V(H)=-\mu^2H^\dagger H+\lambda(H^\dagger H)^2\)이며, 마찬가지로 \(m_h^2=2\lambda v^2\)이다. 측정된 힉스 질량과 \(v\)를 이용하면 전약 규모에서 \(\lambda\)는 \(0.13\)에 가깝다. 강의에서 제시한 2010의 추정값은 의도적으로 대략적인 값이었다. 핵심은 \(\lambda\)가 터무니없이 작은 수는 아니라는 구조적 주장이다.
+
+\section{우리가 보는 모든 것이 왜 이 척도에 묶여 있는가?}
+
+같은 \(F\)가 \(W\) 및 \(Z\) 질량을 결정하며, 각기 다른 유카와 결합 상수와 곱해져 전하를 띤 모든 페르미온의 질량을 결정한다. 이러한 경험적 집중은 대수보다 더 흥미로운 질문을 불러일으킨다. 알려진 모든 기본 입자는 왜 같은 대칭성 깨짐 현상에서 질량을 얻는가?
+
+가능한 모든 입자가 반드시 그래야 한다는 정리는 없다. 왼손 및 오른손 카이랄 성분이 게이지 군 아래에서 같은 방식으로 변환하는 벡터형 페르미온을 생각해 보자. 그러면 \(\bar\psi_L\psi_R+\mathrm{h.c.}\)는 힉스 없이도 게이지 불변일 수 있다. 완전한 게이지 단일항도 전약 대칭성 깨짐과 무관한 질량을 가질 수 있다. 이런 입자들은 \(F\)에 묶인 입자보다 자연스럽게 훨씬 더 무거울 수 있다. 우리가 발견한 입자들은 \(F\)가 사라질 때 대칭성 때문에 질량이 없어지므로, 볼 수 있을 만큼 가벼울 수 있다.
+
+따라서 전약 척도는 특별한 수다. 추측에 따르면 보호받지 못하는 일반적인 질량은 훨씬 더 큰 기본 척도 부근에 놓이고, 카이랄 게이지 대칭성으로 보호되는 입자들은 \(F\)와 함께 낮은 질량대로 끌려 내려온다.
+
+\begin{classroomqa}
+\audiencequestion{\(F\)와 비교할 기본 질량 척도 후보로 플랑크 질량을 들 수 있나요?\lecturetimestamp{00:38:43}}
+\lecturerresponse{그렇습니다. 게이지 결합 상수의 통일이 시사하는 척도도 후보입니다. 강의 뒷부분의 논증에서 두 척도가 모두 나타나겠지만, 이처럼 엄청난 질량을 지닌 입자는 직접 관측된 적이 없습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(F\)보다 약 15자릿수 큰 척도라는 말은 무슨 뜻이며, 이에 해당하는 입자는 무엇인가요?\lecturetimestamp{00:39:54}}
+\lecturerresponse{전약 척도는 \(10^2\,\mathrm{GeV}\) 정도이고, 통일은 \(10^{16}\,\mathrm{GeV}\) 부근에서 일어날 가능성이 제기되며, 플랑크 척도는 \(10^{19}\,\mathrm{GeV}\) 부근에 있습니다. 그런 질량의 입자를 만들어 낸 적은 없습니다. 척도는 간접적으로 추론합니다. 하나는 측정된 게이지 결합 상수를 높은 에너지까지 외삽해 구하고, 다른 하나는 양자역학, 상대론, 뉴턴 상수를 결합해 구합니다.}
+\end{classroomqa}
+
+\section{실험실의 전하 응축체}
+
+휴식 전 청중의 질문은 힉스 메커니즘에 대응하는 응집물질 물리의 일상적인 사례가 있는지 묻는다. 답은 단순한 비유에 그치지 않고 단계적으로 전개된다.
+
+\begin{classroomqa}
+\audiencequestion{초저온 보스 응축체 외에, 힉스 메커니즘과 유사한 현상을 보여 주는 흔한 고체물리학 사례가 있나요?\lecturetimestamp{00:40:50}}
+\lecturerresponse{네. 보스 응축체나 초유체에서는 중성 보손장이 영이 아닌 기댓값을 가질 수 있습니다. 응축된 대상이 전하를 띠면 같은 기본 현상이 게이지장을 변화시킵니다. 익숙한 사례는 초전도입니다. 전하를 띤 쿠퍼쌍이 응축하고, 물질 내부에서 전자기장의 침투 길이가 유한해집니다.}
+\end{classroomqa}
+
+분자 수준에서 헬륨 원자는 장 \(\Phi_{\mathrm{He}}\)로 기술되는 하나의 유효 보손 입자로 취급할 수 있다. 빈 공간은 장이 0인 상태에 해당하고, 초유체 상태에서는 \(\langle\Phi_{\mathrm{He}}\rangle\ne0\)가 되어 관련 전역 위상 대칭성이 자발적으로 깨진다. 헬륨 원자는 중성이므로, 이것만으로는 아직 게이지장 질량 메커니즘이 되지 않는다.
+
+초전도체에서는 전자들이 약하게 결합한 쿠퍼 쌍을 이룬다. 쌍 장은 개략적으로 전자 쌍선형식이며,
+\begin{equation}
+  \Delta(x)\sim\langle\psi_\downarrow(x)\psi_\uparrow(x)\rangle,
+  \label{eq:l10-cooper-order-parameter}
+\end{equation}
+전하 \(2e\)를 지닌다. \(\Delta\)가 응축하면 전자기 게이지장은 전하를 띤 질서 매개변수와 결합된 게이지장에 요구되는 방식 그대로 반응한다. 정자기장은 런던 침투 깊이를 따라 감소한다.
+\begin{equation}
+  B(x)\propto e^{-x/\lambda_L}.
+  \label{eq:l10-meissner-screening}
+\end{equation}
+침투 길이의 역수는 매질 내부에서 유효 광자 질량 역할을 한다. 이는 진공의 광자 질량이 아니라 초전도 상태의 성질이다.
+
+\begin{classroomqa}
+\audiencequestion{쿠퍼 쌍의 두 전자는 서로 떨어져 있지 않나요? 페르미 표면의 서로 반대쪽에 놓이기도 하지 않나요?\lecturetimestamp{00:43:13}}
+\lecturerresponse{쿠퍼 쌍은 한 점에 국소화된 작은 분자가 아닙니다. 공간적으로 퍼져 있으며, 운동량 공간에서 서로 반대인 운동량 부근의 상관된 상태로 기술하는 것이 자연스럽습니다. 하지만 대칭성 논증에서는 이 쌍이 하나의 전하를 띤 보손 질서 매개변수처럼 작용합니다. 중요한 것은 이 매개변수의 응축입니다.}
+\end{classroomqa}
+
+역사적으로 이 관계는 단순한 교육용 비유 이상이다. 초전도 현상과 깨진 대칭 상태에서의 게이지장에 관한 앤더슨의 분석은 상대론적 힉스 메커니즘을 이해하기 쉽게 만드는 데 도움이 되었다. 입자물리의 구성은 상대론적 장론에서 독립적으로 발전했지만, 두 현상에 공통된 수학적 구조는 실제로 존재한다.
+
+\section{맨몸 매개변수와 측정 매개변수}
+
+휴식 후 라그랑지안으로 돌아간다. 라그랑지안에는 질량과 전하라고 부르는 매개변수가 들어 있지만, 입력 매개변수가 조건을 붙이지 않고 측정한 양과 동일한 경우는 드물다. 고주파 모드는 저주파 모드와 상호작용하며 저주파 모드에 드레싱 효과를 준다. 서로 다른 분해능에서 정의한 매개변수와 관측량 사이의 체계적인 관계가 재규격화다.
+
+계산 없이도 전하를 예로 들면 이 점을 이해할 수 있다. 큰 거리에서는 쿨롱 법칙으로 관측 전하를 정의한다.
+\begin{equation}
+  V(r)\sim\frac{e_1e_2}{4\pi r},
+  \qquad
+  F(r)\sim\frac{e_1e_2}{4\pi r^2}.
+  \label{eq:l10-coulomb-law}
+\end{equation}
+강의에서는 \(4\pi\)를 생략해 \(e^2/r\) 또는 \(e^2/r^2\)라고 쓴다. 중요한 점은 힘 측정에서 추론하는 계수가 계를 조사하는 거리에 따라 달라질 수 있다는 것이다.
+
+\subsection{도체: 완전 차폐}
+
+이상적인 도체에 양의 시험 전하를 놓는다고 하자. 그 전기장은 움직일 수 있는 음전하를 시험 전하 쪽으로, 양전하를 그 반대쪽으로 움직인다. 전류는 국소적인 전하원이 반대 부호의 전하 구름으로 둘러싸이고, 그 구름 바깥의 도체 내부에는 전기장이 남지 않을 때까지 흐른다. 이를 보상하는 전하는 멀리 떨어진 경계로 밀려난다. 음전하원을 놓으면 반대 방향으로 재배열된다. 그러면 서로 멀리 떨어진 두 차폐 전하원은 미시적으로 삽입된 전하가 영이 아니더라도 사실상 힘을 주고받지 않을 수 있다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_07.png}
+\caption{도체에서 반대 부호의 차폐 구름으로 둘러싸인 전하원.}
+\lectureframe{00:50:24}
+\label{fig:l10-conductor-screening}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{이런 재배치가 차폐라는 뜻인가요?\lecturetimestamp{00:51:25}}
+\lecturerresponse{그렇습니다. 구름의 크기보다 큰 거리에서는 삽입한 전하가 차폐됩니다. 다른 시험 전하를 구름 안쪽으로 가져오면 전하원과 시험 전하 사이에 놓일 수 있는 차폐 전하가 줄어들어, 바탕 전하가 더 강하게 드러납니다.}
+\end{classroomqa}
+
+구름의 특성 길이 척도는 움직이는 전하의 동역학과 밀도로 정해진다. 이 척도보다 작은 거리 \(r\)에서는 시험 전하가 구름 안으로 들어간다. 따라서 다음 관계로 거리마다 달라지는 전하 \(e(r)\)를 정의할 수 있다.
+\begin{equation}
+  F(r)\equiv\frac{e^2(r)}{4\pi r^2}.
+  \label{eq:l10-running-charge-definition}
+\end{equation}
+이상적인 도체에서는 아주 먼 거리에서 \(e(r)\)가 0에 가까워지고, 아주 짧은 거리에서는 미시적인 전하값에 가까워진다.
+
+\subsection{유전체: 부분 차폐}
+
+절연체에서 전자는 시료 전체를 자유롭게 이동하지 않고 원자에 묶여 있다. 유용하지만 거친 모형에서는 각 전자 구름이 스프링으로 이온에 연결되어 있다고 본다. 외부 전기장이 없으면 양전하와 음전하의 중심은 평균적으로 일치한다. 전기장을 가하면 두 중심이 조금씩 벌어져 쌍극자가 유도된다.
+
+음전하원 주위에서는 인근 전자 구름이 밀려나고 양이온이 조금 더 가까이 남는다. 양전하원 주위에서는 반대 방향으로 변위가 생긴다. 속박 전하는 전하원을 완전히 중화할 만큼 멀리 흐를 수 없으므로, 장거리에 걸친 전기장은 사라지는 대신 유전율에 따라 약해진다.
+\begin{equation}
+  V_{\mathrm{medium}}(r)
+  =
+  \frac{1}{\epsilon_r}
+  \frac{e_1e_2}{4\pi\epsilon_0r}.
+  \label{eq:l10-dielectric-coulomb}
+\end{equation}
+분극 구름 안쪽의 거리에서는 시험 전하가 바탕 전하의 더 많은 부분을 다시 보게 된다. 완전 차폐와 부분 차폐는 같은 거리 의존적 개념의 두 가지 사례다.
+
+\section{분극 가능한 매질로서의 양자전기역학 진공}
+
+양자전기역학의 진공에는 물질을 이루는 원자가 없지만 전하를 띤 양자장이 있다. 전자-양전자 요동은 광자 전파에 루프 기여를 한다. 옛 디랙 바다 관점에서는 전기장이 음의 에너지 상태로 채워진 바다를 변형시킨다. 현대적 관점에서는 진공 분극이 광자 전파자를 드레싱한다. 매질 모형에서는 가상 쌍이 분극되어 양전하 성분과 음전하 성분이 서로 반대 방향으로 이동한다고 본다.
+
+양전하원 주위에는 약간의 음전하 분극 전하가 남고, 음전하원 주위에는 양전하 분극 전하가 남는다. 따라서 멀리서 측정한 전하는 분해되지 않은 전하원에 대응시키는 매개변수보다 작다. 보통 물질과 달리 진공에는 운동량 연속체 전반에 걸친 요동이 있다. 저에너지 쌍은 더 긴 거리의 구조에 해당하고 고에너지 쌍은 더 짧은 거리를 조사한다. 이 과정이 단순히 멈추는 마지막 구름 반경은 없다.
+
+두 전자를 서로 가까이 가져가면 가장 큰 분극 구름부터 두 전자 사이에 들어갈 수 없게 된다. 더 가까이 가져갈수록 점점 더 작은 구름도 차례로 걷어 낸다. 유효 전자기 결합은 역거리, 또는 이에 대응하는 에너지에 따라 로그 형태로 커진다.
+\begin{equation}
+  \alpha(Q)
+  \simeq
+  \frac{\alpha(\mu)}
+  {1-\dfrac{2\alpha(\mu)}{3\pi}
+  \ln\!\left(\dfrac{Q}{\mu}\right)}
+  \label{eq:l10-qed-running}
+\end{equation}
+이는 문턱 에너지보다 훨씬 높은 에너지에서 전하를 띤 디랙 페르미온 한 종만 고려하고 최저 차수까지만 계산한 결과다. 추가로 전하를 띤 입자 종이 있으면 각 문턱을 지날 때 계수가 달라진다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_08.png}
+\caption{수평 척도 \(1/R\), 즉 조사 에너지가 커짐에 따라 양자전기역학 유효 전하도 서서히 증가한다.}
+\lectureframe{01:02:13}
+\label{fig:l10-qed-running-board}
+\end{figure}
+
+전자 산란을 생각하면 이 내용을 실제 측정에 적용할 수 있다. 충돌 에너지가 높을수록 드브로이 파장은 짧아지고 최근접 거리는 작아진다. 따라서 진폭을 계산할 때는 모든 척도에 동일한 하나의 상수가 아니라 해당 운동량 전달에 맞는 결합을 써야 한다.
+
+\begin{classroomqa}
+\audiencequestion{결합 상수가 처음 측정 가능하게 달라지는 거리는 어느 정도인가요?\lecturetimestamp{01:03:54}}
+\lecturerresponse{전자 진공 분극은 전자 콤프턴 척도인 \(\lambda_C=\hbar/(m_ec)\), 즉 줄인 파장으로 대략 \(4\times10^{-11}\,\mathrm{cm}\)인 거리에서 중요해진다. 효과는 작고 로그 형태로 나타나므로 정밀한 측정이 필요하다. 더 무거운 전하 입자는 각자의 문턱에서 이 변화에 기여하기 시작한다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{가장 짧은 거리를 말할 때, 그 거리에서 무슨 일이 일어나는지 이미 알고 있다고 가정하는 것인가요?\lecturetimestamp{01:04:49}}
+\lecturerresponse{아닙니다. 입자 구성과 상호작용이 유효한 동안에만 이론을 외삽합니다. 새로운 물리는 결합상수의 에너지 의존성을 바꿀 수 있습니다. 실험은 QED가 임의로 짧은 거리까지 완전한 설명으로 남는다는 것을 알려 주지 않습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{글루온의 경우에는 에너지 척도에 따른 변화가 반대인가요? 왜 그런가요?
+\lecturetimestamp{01:05:03}}
+\lecturerresponse{그렇습니다. 쿼크 루프는 전하를 띤 물질의 경우와 비슷한 방식으로 색전하를 차폐하지만, 글루온 자체도 색전하를 띠며 비선형적으로 상호작용합니다. 글루온의 기여는 부호가 반대이고, 관측된 쿼크 맛의 수에서는 그 기여가 지배적입니다. 그 결과 반차폐와 점근적 자유가 나타납니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{맨전하를 측정하려면 무한히 짧은 거리가 필요하다면, 맨전하는 어떻게 정할 수 있나요?\lecturetimestamp{01:05:28}}
+\lecturerresponse{규제 방식에 의존하지 않는 유일한 맨전하를 직접 측정하지는 않습니다. 선택한 짧은 거리 차단 척도 또는 재규격화 척도에서 매개변수를 정의한 다음, 측정된 저에너지 물리량이 그대로 유지되도록 그 값을 조정합니다. 척도에 따라 달라지는 재규격화 결합상수가 유용한 물리적 대상입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{QED의 전하는 무한대 에너지에서 유한한 값에 접근하나요?\lecturetimestamp{01:05:39}}
+\lecturerresponse{QED를 섭동론적으로 외삽하는 것만으로는 그렇지 않습니다. 양의 베타 함수 때문에 결합상수는 로그에 따라 계속 커지고, 형식적으로는 엄청나게 높은 척도에서 란다우 극에 이릅니다. 이 형식적인 극을 물리적인 것으로 다루기 훨씬 전부터, 이 설명은 전약 이론에 포함되고 궁극적으로는 추가적인 물리에 의해 바뀔 것으로 예상됩니다.}
+\end{classroomqa}
+
+\subsection{재규격화가 바꾸는 것과 보존하는 것}
+
+차단 길이 \(a\)를 정하고, 그에 대응하는 입력값을 \(e(a)\)이라 한 뒤, 장거리에서 고정된 관측량을 계산합니다. 다른 차단 길이 \(a'\)를 선택해도 무방합니다. 입력값을 \(e(a')\)로 바꾸어 같은 관측량을 재현하면 됩니다.
+\begin{equation}
+  \frac{d}{d\ln\mu}\,\mathcal O_{\mathrm{physical}}=0,
+  \qquad
+  \mu\frac{de}{d\mu}=\beta(e).
+  \label{eq:l10-rg-invariance}
+\end{equation}
+이러한 보상적 변화가 재규격화군입니다.
+
+\begin{classroomqa}
+\audiencequestion{맨이라는 말은 반드시 플랑크 길이를 가리켜야 하나요?\lecturetimestamp{01:06:20}}
+\lecturerresponse{아닙니다. 원하는 어느 차단 척도에서든 설명을 끝내고 그곳의 매개변수를 맨 매개변수라고 부를 수 있습니다. 매개변수를 적절히 바꾸면서 차단 척도를 바꾸면 접근 가능한 물리는 달라지지 않습니다. 플랑크 길이는 통상적인 양자장론을 다른 이론으로 대체해야 할 법한 지점이지, 재규격화에서 반드시 따라야 하는 관례는 아닙니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{이 절차는 안으로 확대해 보면서 설명을 약화시키는 것인가요?\lecturetimestamp{01:07:15}}
+\lecturerresponse{개념적으로는 안으로 확대해 보는 것입니다. 더 세밀한 기술에서 매개변수들이 어떻게 바뀌어야 고정된, 실험으로 접근 가능한 파장에서 예측이 그대로 유지되는지 묻는 것입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{중력에서도 같은 결합상수 변화가 일어나나요?\lecturetimestamp{01:08:14}}
+\lecturerresponse{중력도 척도에 따라 달라지지만, 유전체 차폐와 단순히 같은 메커니즘을 따르는 것은 아닙니다. 여기서는 차원 분석만으로 충분합니다. 국소화하면 에너지가 증가하고, 에너지는 중력의 원천이므로, 그 결과 무차원 중력 세기는 에너지와 함께 빠르게 커집니다.}
+\end{classroomqa}
+
+\section{QCD: 반차폐, 플럭스 튜브, 점근적 자유}
+
+하드론 크기의 거리에서 색전기장 선은 전자기 쿨롱장의 전기장처럼 구형으로 퍼지지 않습니다. 글루온 자기상호작용은 쿼크와 반쿼크 사이의 전기장 선을 좁은 튜브로 압축합니다. 이 튜브의 단위 길이당 에너지가 대략 일정한 \(\sigma\)이라면,
+\begin{equation}
+  V_{q\bar q}(r)
+  \simeq
+  -\frac{C_F\alpha_s(r)}{r}
+  +\sigma r .
+  \label{eq:l10-cornell-potential}
+\end{equation}
+큰 \(r\)에서는 선형항이 지배적입니다. 쌍을 늘리면 엿가락을 잡아당기듯 튜브가 더 길어지고, 에너지는 0으로 줄어드는 대신 증가합니다. 이것이 구속을 설명하는 측면입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{색전하를 띤 원천들이 떨어져 있을 때, 색전기장 선은 자유롭게 퍼지는 쿨롱장이 아니라 두 원천을 잇는 튜브로 그려진다.}
+\lectureframe{01:09:56}
+\label{fig:l10-qcd-flux-tube-board}
+\end{figure}
+
+튜브 반지름보다 짧은 거리에서는 퍼텐셜이 대략 쿨롱 형태로 돌아오지만, 결합상수는 에너지가 높아질수록 작아집니다. 1루프 근사에서는
+\begin{equation}
+  \alpha_s(Q)
+  =
+  \frac{4\pi}
+  {\left(11-\frac23n_f\right)
+  \ln(Q^2/\Lambda_{\mathrm{QCD}}^2)} .
+  \label{eq:l10-asymptotic-freedom}
+\end{equation}
+\(n_f<17\)일 때 계수는 양수이며, \(\alpha_s(Q)\to0\)\(Q\to\infty\)입니다. QCD는 매우 짧은 거리에서는 약하고 긴 거리에서는 강합니다. 이것이 강의에서 설명한 반대 거동을 결합상수의 변화로 정확히 표현한 것입니다.
+
+\begin{classroomqa}
+\audiencequestion{QED 곡선과 QCD 곡선 사이의 약한 결합상수는 어떻게 되나요?\lecturetimestamp{01:11:53}}
+\lecturerresponse{그 변화는 중간 정도이며, 어떤 전약 상호작용 인자를 따라가느냐에 달려 있습니다. 전약 척도보다 높은 에너지에서는 적절한 물리량이 \(U(1)_Y\) 결합상수와 \(SU(2)_L\) 결합상수입니다. 하나는 증가하고 다른 하나는 천천히 감소합니다. 감소하는 강한 결합상수와 함께 외삽하면, 이들의 값은 높은 에너지에서 놀라울 만큼 서로 가까워집니다.}
+\end{classroomqa}
+
+\section{대통일을 향한 변화}
+
+약한 상호작용 척도 근처에서 세 게이지 결합상수를 측정하고, 제안된 이론의 입자 구성에 따라 그 값을 변화시킵니다. 모든 베타 함수가 로그 형태이므로 에너지가 엄청나게 바뀌어도 결합상수의 변화는 그보다 완만합니다. 표준모형의 궤적은 서로 가까워지지만 정확히 만나지는 않습니다. 최소 초대칭 표준모형의 저에너지 입자 구성을 적용하면, 1루프 궤적은 다음 값 부근에서 훨씬 더 가깝게 만납니다.
+\begin{equation}
+  M_{\mathrm{GUT}}\sim10^{16}\,\mathrm{GeV}.
+  \label{eq:l10-gut-scale}
+\end{equation}
+
+이 그래프는 증거이지 증명은 아닙니다. 아직 발견되지 않은 입자들의 문턱 효과, 고차 루프 보정, 대통일 이론의 세부 사항에 따라 곡선은 달라집니다. 2010 강의에서는 초대칭 입자 스펙트럼에서 결합상수들이 대략 퍼센트 수준으로 수렴한다는 점을 강조합니다. 이것이 약한 척도의 초대칭을 특히 매력적으로 만들었기 때문입니다. 현재까지 충돌기 에너지에서 초대칭 입자짝이 발견되지 않았으므로, 그 스펙트럼의 가장 단순한 형태는 애초 예상했던 대로 실현되지 않습니다. 정밀한 대통일 여부는 여전히 모형에 따라 달라집니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{칠판에 그린 결합상수의 정성적 그래프. 강한 결합상수 곡선은 감소하고, 전약 결합상수 곡선들은 천천히 변하며 그쪽으로 가까워진다. 중력은 매우 높은 자외선 에너지 영역에서 가파르게 증가한다.}
+\lectureframe{01:16:29}
+\label{fig:l10-unification-board}
+\end{figure}
+
+만나는 점 근처를 왜 근본적인 지점으로 볼까요? 그곳에서는 입력이 가장 단순해질 수 있기 때문입니다. 서로 무관해 보이는 세 저에너지 결합상수가 하나의 게이지군에 속하는 고에너지 결합상수 하나에서 서로 다르게 옷 입은 결과일 수도 있습니다. 이것이 앞서 나온 \(SU(5)\) 질문의 수치적 실마리입니다.
+
+중력은 같은 로그 그래프에서 훨씬 더 빠르게 증가하는 곡선으로 나타납니다. 정확히 GUT 척도에서 게이지 결합상수 곡선과 교차하지는 않지만, 수십 배의 에너지 변화 안에서 1 정도가 됩니다. 로그 축에서 보면 이러한 근접성은 시사적입니다. \(10^{16}\), \(10^{17}\), \(10^{18}\), \(10^{19}\,\mathrm{GeV}\)는 각각 전약 척도보다 서로 훨씬 더 가깝습니다.
+
+\section{짧은 거리에서 중력이 강해지는 이유}
+
+\subsection{정지 질량만이 아니라 에너지가 중력을 만든다}
+
+느리게 움직이는 두 질량 사이의 뉴턴 중력은 다음과 같습니다.
+\begin{equation}
+  F_G=\frac{Gm_1m_2}{r^2}.
+  \label{eq:l10-newton-force}
+\end{equation}
+상대론적 차원 추산에서는 각 정지 질량을 해당 에너지를 \(c^2\)로 나눈 값으로 바꾸면,
+\begin{equation}
+  F_G(r)\sim\frac{GE_1E_2}{c^4r^2}.
+  \label{eq:l10-relativistic-gravity-force}
+\end{equation}
+이는 일반상대성이론을 대신하는 것이 아닙니다. 응력, 운동량 흐름, 압력도 중력의 원천입니다. 여기서 다루는 질문에는 이 스케일링 추산이 적절합니다.
+
+각 입자를 크기 \(r\)인 영역에 국소화합니다. 불확정성 원리에 따라
+\begin{equation}
+  p\sim\frac{\hbar}{r}.
+  \label{eq:l10-localization-momentum}
+\end{equation}
+충분히 작은 \(r\)에서는 운동량이 초상대론적이므로,
+\begin{equation}
+  E\simeq pc\sim\frac{\hbar c}{r}.
+  \label{eq:l10-localization-energy}
+\end{equation}
+이 에너지 두 개를 \eqref{eq:l10-relativistic-gravity-force}에 대입하면
+\begin{equation}
+  F_G(r)
+  \sim
+  \frac{G\hbar^2}{c^2r^4}.
+  \label{eq:l10-short-distance-gravity-force}
+\end{equation}
+이에 대응하는 퍼텐셜 에너지 척도는
+\begin{equation}
+  U_G(r)\sim-\frac{G\hbar^2}{c^2r^3}.
+  \label{eq:l10-short-distance-gravity-potential}
+\end{equation}
+실시간 계산 중 바로잡은 구분은 다음과 같습니다. 퍼텐셜은 \(1/r^3\)에 비례하고, 힘은 \(1/r^4\)에 비례합니다.
+
+\begin{classroomqa}
+\audiencequestion{초상대론적 입자의 에너지는 \(p^2/(2m)\)인가요?\lecturetimestamp{01:22:18}}
+\lecturerresponse{아닙니다. 그것은 비상대론적 공식입니다. \(E^2=p^2c^2+m^2c^4\)에서 \(pc\gg mc^2\)인 극한을 취하면
+\(E\simeq pc\)입니다. 여기에 \(p\sim\hbar/r\)를 결합하면 국소화 에너지는 \(\hbar c/r\)입니다.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_11.png}
+\caption{칠판에서 뉴턴 법칙에 상대론적 에너지를 대입하고 \(c\)와 \(r\)의 거듭제곱을 확인한다.}
+\lectureframe{01:23:29}
+\label{fig:l10-gravity-derivation-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(c\) 인자는 약분되었나요? 또 주장한 \(1/r^3\) 법칙은 힘에 관한 법칙이었나요?\lecturetimestamp{01:23:38}}
+\lecturerresponse{칠판 계산을 실시간으로 바로잡습니다. 유효 질량 두 개에서 \(E_1E_2/c^4\)가 나오고, \(E_i\sim\hbar c/r\)를 대입하면 분모에 \(c\)의 제곱 두 개가 남습니다. 따라서 힘은 \(G\hbar^2/(c^2r^4)\)입니다. \(1/r^3\)인 식은 퍼텐셜 에너지에 해당합니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{여기서 다루는 중력은 인력인 것이 맞나요?\lecturetimestamp{01:24:42}}
+\lecturerresponse{그렇습니다. 위 식들은 크기를 나타냅니다. 양의 에너지에 대한 뉴턴 중력 퍼텐셜에는 음의 부호가 있으므로, 이 추산에서 힘은 인력입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{국소화로 에너지가 증가해 중력이 상대적으로 강해지는 반면, 전하 자체에는 같은 운동학적 인자가 붙지 않기 때문인가요?\lecturetimestamp{01:25:02}}
+\lecturerresponse{정확합니다. 중력 전하는 에너지입니다. 양자 상태를 좁은 영역에 국소화하면 운동량과 에너지가 증가하고, 따라서 중력을 만드는 원천도 증가합니다. 전하는 무차원량이므로, 훨씬 느린 로그형 재규격화를 제외하면 그에 직접적으로 \(1/r\) 인자가 붙지 않습니다.}
+\end{classroomqa}
+
+\subsection{플랑크 척도에서의 교차}
+
+자연 단위계에서 1 정도의 전하 사이 전자기력의 크기는
+\begin{equation}
+  F_{\mathrm{EM}}(r)
+  \sim
+  \alpha\,\frac{\hbar c}{r^2}.
+  \label{eq:l10-em-force-alpha}
+\end{equation}
+이를 \eqref{eq:l10-short-distance-gravity-force}와 같게 놓으면
+\begin{equation}
+  r^2\sim\frac{G\hbar}{\alpha c^3}.
+  \label{eq:l10-gravity-em-crossing}
+\end{equation}
+강의에서는 근본적인 중력 길이 척도를 드러내기 위해 무차원 게이지 인자를 1 정도로 둡니다.
+\begin{equation}
+  \boxed{\ell_P=\sqrt{\frac{\hbar G}{c^3}}}
+  \simeq1.616\times10^{-35}\,\mathrm{m}.
+  \label{eq:l10-planck-length}
+\end{equation}
+실제 \(\alpha\)를 그대로 두면 전자기력과의 등식이 로그 척도에서 1 정도의 인자만큼 이동하여, \(r\sim\ell_P/\sqrt\alpha\)가 됩니다. 자연 단위계로 쓰면 근본적인 내용이 더 명료합니다.
+\begin{equation}
+\begin{aligned}
+  \alpha_G(E)
+  &\equiv\frac{GE^2}{\hbar c^5}
+  =\left(\frac{E}{E_P}\right)^2,
+  \\
+  E_P
+  &=\sqrt{\frac{\hbar c^5}{G}}
+  \simeq1.22\times10^{19}\,\mathrm{GeV}.
+\end{aligned}
+  \label{eq:l10-gravitational-coupling}
+\end{equation}
+\(E\)가 \(E_P\)에 가까워지면 중력이 강해집니다.
+
+\begin{classroomqa}
+\audiencequestion{비교할 때 \(G\) 또는 전기 결합상수 중 어느 쪽을 1로 둔 건가요?\lecturetimestamp{01:27:02}}
+\lecturerresponse{대략적인 추산에서는 전기 결합상수를 1 정도의 수로 취급했습니다. 뉴턴 상수는 그대로 두어야 합니다. 뉴턴 상수는 플랑크 척도를 정하는 차원을 가진 물리량이기 때문입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{중간 계산에서 \(r\), \(\hbar\), \(c\)의 거듭제곱은 차원상 일관되지 않아 보입니다. 어떻게 바로잡아 계산해야 하나요?\lecturetimestamp{01:27:47}}
+\lecturerresponse{처음부터 에너지를 사용합니다. 국소화하면 \(E\sim\hbar c/r\)이므로,
+\(U_G\sim GE^2/(c^4r)=G\hbar^2/(c^2r^3)\)가 됩니다. 이를 \(U_{\mathrm{EM}}\sim\alpha\hbar c/r\)와 비교합니다. \(\alpha\)를 1 정도로 두면
+\(r^2=G\hbar/c^3\)를 얻습니다. 수업과 칠판 계산은 \(r=\sqrt{G\hbar/c^3}\), 즉 플랑크 길이에 도달합니다.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_12.png}
+\caption{차원 검산을 실시간으로 바로잡은 뒤 얻은 최종 결과:
+\(r=\sqrt{\hbar G/c^3}\)}
+\lectureframe{01:32:16}
+\label{fig:l10-planck-length-board}
+\end{figure}
+
+\section{계층성 문제의 귀환}
+
+게이지 결합상수들은 매우 높은 척도에서 비슷한 크기가 되고, 플랑크 척도 부근에서 중력이 강해집니다. 이제 이 엄청난 척도들은 자의적으로 큰 수라기보다 미시적 기술이 단순해질 수 있는 지점처럼 보입니다. 이에 비해 전약 진공 기댓값 \(F\)는 유난히 작습니다.
+\begin{equation}
+  \frac{v}{E_P}\sim2\times10^{-17}
+  \label{eq:l10-electroweak-planck-ratio}
+\end{equation}
+\(c=1\)인 단위계에서의 값입니다. 플랑크 척도 대신 GUT 척도를 사용하면 정확한 비율은 달라지지만, 의문은 그대로 남습니다.
+
+\(F\)가 작으면 게이지 대칭성 때문에 \(W\), \(Z\) 보손과 하전 렙톤, 쿼크의 질량은 이에 비례하게 됩니다. 그런 보호를 받지 않는 입자는 무거운 상태로 남을 수 있습니다. 따라서 핵심 질문은 알려진 질량이 각각 왜 모두 작은가가 아닙니다. 힉스 부문이 제공하는 이 하나의 대칭성 깨짐 척도가 왜 그렇게 작은가입니다.
+
+\begin{classroomqa}
+\audiencequestion{\(F\)를 계산할 수 있다면 다른 모든 질량도 계산할 수 있나요?\lecturetimestamp{01:34:39}}
+\lecturerresponse{게이지 결합상수와 유카와 결합상수를 주면, 전약 척도의 전반적인 크기와 그에 따른 입자 질량이 정해집니다. 남은 문제는 보통의 자외선 민감 계산에서 어떤 대칭성이나 동역학적 메커니즘이 보호하지 않는 한 힉스 질량 매개변수가 높은 근본 척도 쪽으로 끌려간다는 것입니다.}
+\end{classroomqa}
+
+미세 조정이라는 말은 이러한 민감성을 가리킵니다. 차단 척도로 기술하면 스칼라 질량 매개변수는 대략 다음 형태의 보정을 받습니다.
+\begin{equation}
+  \delta\mu^2
+  \sim
+  \frac{C}{16\pi^2}\Lambda^2,
+  \label{eq:l10-higgs-quadratic-sensitivity}
+\end{equation}
+여기서 \(C\)는 게이지, 유카와, 스칼라 결합상수의 조합이고, \(\Lambda\)는 유효 이론이 대체되는 척도를 나타냅니다. \(\Lambda\)가 GUT 척도나 플랑크 척도에 가깝다면, \(\mu^2\sim v^2\)를 얻으려면 입력값과 복사 보정 사이에 매우 정밀한 상쇄가 필요한 것으로 보입니다. 이것이 게이지 계층성 문제를 자연성 관점에서 표현한 것입니다. 이는 다음 학기에 계산을 다루겠다는 강의의 약속을 편집 과정에서 보완한 내용이지, 특정 규제 방식에서 생긴 인공물이 그 자체로 관측 가능하다는 주장은 아닙니다.
+
+\begin{classroomqa}
+\audiencequestion{플랑크 길이를 마지막 차폐 구름의 반지름으로 그려야 하나요?\lecturetimestamp{01:35:03}}
+\lecturerresponse{아닙니다. 유전체 그림은 게이지 전하의 재규격화를 설명하지만, 플랑크 척도에 대한 논증은 국소화 에너지와 차원을 가진 중력 결합상수를 이용합니다. 이 유도에는 문자 그대로의 중력 차폐 구름이 없습니다.}
+\end{classroomqa}
+
+\subsection{상호작용에 관한 마무리 질문}
+
+마지막 몇 분은 힉스 퍼텐셜과 라그랑지안에 어떤 항들이 들어갈 수 있는지로 돌아갑니다.
+
+\begin{classroomqa}
+\audiencequestion{힉스 퍼텐셜에 \(\phi^6\)를 포함해도 대칭성을 유지할 수 있나요?\lecturetimestamp{01:35:20}}
+\lecturerresponse{그렇습니다. 짝수 거듭제곱은 모형의 \(\phi\mapsto-\phi\) 대칭성을 보존하지만, \(\phi^5\)는 대칭성을 깨뜨립니다. 4차원에서 \(\phi^6\)의 계수는 음의 질량 차원을 가지므로, 예를 들어 \(c_6\phi^6/\Lambda^2\)와 같은 항은 높은 척도로 억제됩니다. 거듭제곱 계수 재규격화 가능 항은 아니더라도 유효 상호작용으로는 허용됩니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{힉스장의 거듭제곱은 생성과 소멸 과정을 나타내므로, \(\phi^4\)는 힉스-힉스 산란을 예측하나요?\lecturetimestamp{01:35:52}}
+\lecturerresponse{그렇습니다. 진공 주위에서 전개하면 양자화된 장의 거듭제곱이 꼭짓점을 만듭니다. 4차항에는 힉스 네 개가 만나는 꼭짓점이 들어 있고, 평행 이동한 퍼텐셜은 세차 상호작용도 만들어 냅니다. 그 계수를 알면 통상적인 파인먼 도표 계산을 거쳐 \(hh\to hh\)와 같은 과정을 예측할 수 있습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{근본 라그랑지안은 장에 대해 다항식이어야 하며, 4차를 넘는 항은 없어야 하나요?\lecturetimestamp{01:36:09}}
+\lecturerresponse{섭동론적으로 재규격화 가능한 4차원 스칼라 이론에서는 차원이 4 이하인 연산자들이 전통적으로 고려하는 유한한 목록을 이룹니다. 현대 유효장론은 제약이 덜 엄격합니다. 더 높은 차원의 연산자도 허용되며 짧은 거리 물리를 담지만, 그 효과는 높은 척도의 거듭제곱에 따라 억제됩니다. 따라서 때때로 언급되는 예외는 기존 규칙을 이해하는 데 필수적입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{결합상수의 변화에 관한 논의에서 자기상호작용 항은 빠져 있었나요?\lecturetimestamp{01:36:44}}
+\lecturerresponse{개념적으로 포함되어 있었습니다. 글루온 자기상호작용이 바로 QED와 부호를 반대로 만들고 반차폐를 일으킵니다. 힉스 자기상호작용 역시 스칼라 매개변수와 표준모형의 다른 매개변수들이 에너지 척도에 따라 변하는 데 기여합니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{서로 다른 상호작용이 상대의 결합상수 변화에 영향을 주는 교차항도 있나요?\lecturetimestamp{01:37:23}}
+\lecturerresponse{그렇습니다. 더 높은 루프 차수에서는 베타 함수에 게이지, 유카와, 스칼라 결합상수의 혼합 곱이 들어갑니다. 무차원 결합상수들이 충분히 작으면 섭동론은 여전히 유효합니다. 각 루프 차수가 높아질수록 그 기여가 그만큼 억제되기 때문입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(F\)가 미세 조정되었다는 말은 정확히 무슨 뜻인가요?\lecturetimestamp{01:37:44}}
+\lecturerresponse{완전한 답은 강의 뒤로 미룹니다. 핵심은 큰 자외선 기여에 비해 가벼운 스칼라 척도가 불안정하다는 것이며, 이를 \eqref{eq:l10-higgs-quadratic-sensitivity}로 요약할 수 있습니다. 초대칭은 상쇄를 강제하는 방법으로 제안된 여러 방안 가운데 하나였지만, 계층성 문제 자체가 확인된 해법을 지목하지는 않습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{재규격화군 자체를 지금 설명할 수 있나요?
+\lecturetimestamp{01:37:56}}
+\lecturerresponse{남은 시간으로는 어렵습니다. 핵심 작동 원리는 이미 나왔습니다. 분해능을 바꾸고 결합상수가 흐르게 하되, 고정된 물리적 예측은 보존하는 것입니다. 이를 온전히 다루는 것은 강의의 다음 단계에 해당합니다.}
+\end{classroomqa}
+
+강의의 전개는 여기서 마무리됩니다. 힉스 메커니즘은 표준모형의 내부적 일관성을 갖추게 했습니다. 카이랄 게이지 대칭성을 보존하면서 약한 보손과 페르미온에 질량을 부여하고, 물리적 힉스 상호작용을 예측합니다. 이어서 재규격화는 이러한 상호작용이 척도에 따라 어떻게 변하는지 알려 주며, 게이지 힘들이 통일된 기원을 공유할 가능성을 시사합니다. 별개의 논증을 통해 중력은 또 하나의 높은 척도를 제공합니다. 그러나 이러한 성과로도 힉스 진공 기댓값이 두 척도보다 훨씬 작은 이유는 설명되지 않습니다. 따라서 마지막 강의는 주제를 끝맺는 대신, 다음 주제가 주목해야 할 작지만 중요한 수를 짚어 냅니다.
