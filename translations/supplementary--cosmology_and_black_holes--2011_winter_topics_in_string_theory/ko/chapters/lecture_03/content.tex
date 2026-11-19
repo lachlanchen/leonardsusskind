@@ -1,0 +1,422 @@
+\chapter{평탄 좌표계에서 본 지평선과 증발의 열역학}
+
+\lectureoverview{슈바르츠실트 계량은 지평선에서 특이해지는 듯 보이지만, 자유 낙하하는 관측자는 그곳에서 아무런 특별한 점도 알아차리지 못해야 한다. 이 긴장은 지평선 근처의 계량을 쌍곡 극좌표로 표현한 평탄한 민코프스키 공간으로 바꾸어 해소한다. 그러면 같은 기하가 낙하하는 앨리스의 서술과 가속하는 외부 관측자 밥의 서술을 구분해 준다. 강의 후반부에서는 엔트로피와 온도를 다루고, 호킹 온도가 질량에 반비례함을 유도한 뒤 \(M^3\) 증발 법칙을 도출하며, 중력의 미시 이론이 정보 보존을 위해 어떤 조건을 만족해야 하는지 묻는 것으로 마무리한다.}
+
+\section{\texorpdfstring{\(r=2GM\)}{r=2GM}에서의 수수께끼}
+
+아주 큰 블랙홀에서 시작하자. 그 지평선의 곡률은 너무 작아서, 그곳을 통과하는 관측자는 실험실 크기 정도의 어느 작은 영역에서도 거의 텅 빈 평탄한 시공간을 보게 된다. 벽에 부딪히지도 않고, 통과 사실을 알리는 국소적인 경보도 울리지 않는다. 그런데 슈바르츠실트 계량은 바로 그 반지름에서 무언가 특이한 일이 일어나는 듯 말한다. 강의 전반부의 목적은 이 두 진술이 양립할 수 있음을 보이는 것이다.
+
+부호 규약은 시간 성분에 음의 부호를 두는 규약을 사용한다. 평탄한 시공간에서는
+\begin{equation}
+ds^2=-dt^2+dx^2+dy^2+dz^2,
+\end{equation}
+따라서 시간꼴 세계선은 \(ds^2<0\)를 만족하고, 고유시간은 \(d\tau^2=-ds^2\)을 만족한다. 이는 앞 강의에서 사용한 규약의 전체 부호를 뒤집은 것이며, 어떤 관측 가능량도 이 선택에 의존하지 않는다.
+
+\(c=1\)일 때 슈바르츠실트 선요소는 다음과 같다.
+\begin{equation}
+\begin{aligned}
+ds^2={}&-\left(1-\frac{2GM}{r}\right)dt^2
++\frac{dr^2}{1-\frac{2GM}{r}}
++r^2d\Omega_2^2,\\
+d\Omega_2^2={}&d\theta^2+\sin^2\theta\,d\phi^2 .
+\end{aligned}
+\label{eq:l03-schwarzschild}
+\end{equation}
+슈바르츠실트 반지름은 \(R_s=2GM\) 또는 \(R_s=2GM/c^2\)이며, 후자는 \(c\)를 복원했을 때의 값이다. 멀리 떨어진 곳에서는 \(r\gg R_s\)이므로 두 방사 방향 계수는 모두 평탄한 공간에서의 값에 가까워진다. 그러나 \(r=R_s\)에서는 \(dt^2\)의 계수가 0이 되고 \(dr^2\)의 계수는 발산한다. 이는 극적인 변화처럼 보인다. 문제는 기하 자체가 극적인 것인지, 아니면 좌표만 그런 것인지이다.
+
+\section{두 가지 좌표에 관한 교훈}
+
+\subsection{극좌표의 무해한 원점}
+
+보통의 유클리드 평면에서는
+\begin{equation}
+ds^2=dx^2+dy^2.
+\end{equation}
+극좌표를 도입하면
+\begin{equation}
+x=\rho\cos\theta,
+\qquad
+y=\rho\sin\theta .
+\end{equation}
+미소 변위의 방사 방향 길이는 \(d\rho\)이고 횡방향 길이는 \(\rho\,d\theta\)이므로,
+\begin{equation}
+ds^2=d\rho^2+\rho^2d\theta^2.
+\label{eq:l03-polar}
+\end{equation}
+\(\rho=0\)에서는 각도 항의 계수가 0이 된다. 그렇다고 평면의 중심에 특이점이 생기는 것은 아니다. 그곳에서는 \(\theta\)의 모든 값이 같은 점을 나타낼 뿐이다. 따라서 기묘한 계량 계수는 기묘한 물리 현상이 아니라 기묘한 좌표계를 나타낼 수 있다.
+
+\subsection{쌍곡 극좌표}
+
+이제 유클리드 평면을 \(1+1\)차원 민코프스키 시공간으로 바꾸자.
+\begin{equation}
+ds^2=-dT^2+dX^2.
+\end{equation}
+오른쪽 쐐기 영역 \(X>|T|\)에서 다음과 같이 정의한다.
+\begin{equation}
+X=\rho\cosh\omega,
+\qquad
+T=\rho\sinh\omega,
+\qquad \rho>0 .
+\label{eq:l03-rindler-transform}
+\end{equation}
+보통의 항등식 \(\cos^2\theta+\sin^2\theta=1\)은 다음 식으로 대체된다.
+\begin{equation}
+\cosh^2\omega-\sinh^2\omega=1.
+\end{equation}
+따라서 \(\rho\)가 일정한 선은 다음 쌍곡선이다.
+\begin{equation}
+X^2-T^2=\rho^2.
+\end{equation}
+주기적인 각도 \(\theta\)와 달리, 급속도와 비슷한 좌표 \(\omega\)는 \(-\infty\)에서 \(+\infty\)까지 이어진다. \(\omega\)가 큰 양수일 때 \(\cosh\omega\)와 \(\sinh\omega\)는 거의 같아지며, 쌍곡선은 미래 방향의 빛꼴 광선 \(X=T\)에 가까워진다.
+
+식~\eqref{eq:l03-rindler-transform}을 미분하면 다음을 얻는다.
+\begin{align}
+dX&=\cosh\omega\,d\rho+\rho\sinh\omega\,d\omega,\\
+dT&=\sinh\omega\,d\rho+\rho\cosh\omega\,d\omega .
+\end{align}
+교차항이 상쇄되어 다음 식이 남는다.
+\begin{equation}
+ds^2=-\rho^2d\omega^2+d\rho^2.
+\label{eq:l03-rindler-metric}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_02.png}\caption{쌍곡좌표 구성을 완성한 그림: \(X=\rho\cosh\omega\), \(T=\rho\sinh\omega\), 단위 쌍곡선을 이용한 구성, 그리고 \(ds^2=-\rho^2d\omega^2+d\rho^2\) 형태로 쓴 평탄 계량.}\lectureframe{00:16:55.000}\end{figure}
+
+식~\eqref{eq:l03-rindler-metric}은 여전히 완전히 평탄한 시공간을 나타낸다. 시간 항의 계수는 \(\rho=0\)에서 사라지는데, 이는 식~\eqref{eq:l03-polar}의 각도 항 계수가 원점에서 사라지는 것과 같다. 그곳에서 퇴화하는 것은 좌표도표이지 시공간이 아니다.
+
+\section{슈바르츠실트 지평선 확대해 보기}
+
+식~\eqref{eq:l03-schwarzschild}의 방사 방향과 시간 방향 부분으로 돌아가 보자.
+\begin{align}
+ds^2
+&=-\frac{r-2GM}{r}\,dt^2
++\frac{r}{r-2GM}\,dr^2 .
+\label{eq:l03-rewritten-schwarzschild}
+\end{align}
+이제 \(r=2GM\)의 아주 좁은 근방만 살펴본다. 천천히 변하는 인자에서는 \(r\)를 \(2GM\)로 근사해도 된다. \(r-2GM\)는 지평선에서 0이 되고 부호가 바뀌므로 그대로 두어야 한다. 따라서
+\begin{equation}
+ds^2\approx
+-\frac{r-2GM}{2GM}\,dt^2
++\frac{2GM}{r-2GM}\,dr^2 .
+\label{eq:l03-near-horizon-r}
+\end{equation}
+
+두 번째 항이 단순히 \(d\rho^2\)가 되도록 새 방사 좌표 \(\rho\)를 선택하자.
+\begin{equation}
+d\rho^2=\frac{2GM}{r-2GM}\,dr^2.
+\end{equation}
+지평선 바깥에서 양의 제곱근을 취하고 \(r=2GM\)부터 적분하면 다음을 얻는다.
+\begin{align}
+d\rho&=\sqrt{\frac{2GM}{r-2GM}}\,dr,\\
+\rho&=2\sqrt{2GM}\sqrt{r-2GM},\\
+\rho^2&=8GM(r-2GM),
+\qquad
+r-2GM=\frac{\rho^2}{8GM}.
+\label{eq:l03-rho-r}
+\end{align}
+이를 식~\eqref{eq:l03-near-horizon-r}에 대입하면 다음과 같다.
+\begin{equation}
+ds^2\approx
+-\frac{\rho^2}{16G^2M^2}\,dt^2+d\rho^2.
+\end{equation}
+마지막으로 슈바르츠실트 시간을 다음과 같이 재조정하면,
+\begin{equation}
+\omega=\frac{t}{4GM},
+\qquad
+d\omega^2=\frac{dt^2}{16G^2M^2},
+\label{eq:l03-omega}
+\end{equation}
+다음 식을 얻는다.
+\begin{equation}
+\boxed{ds^2\approx-\rho^2d\omega^2+d\rho^2.}
+\label{eq:l03-near-horizon-rindler}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_03_figure_03.png}
+시간 재조정 후의 판서: 지평선 근처의 슈바르츠실트 계량이 평탄한 민코프스키 시공간의 쌍곡 극좌표 계량과 같은 형태가 되었다.\caption{}
+\lectureframe{00:31:35.000}
+\end{figure}
+
+살펴보는 영역을 지평선 쪽으로 좁혀 갈수록 근사는 한없이 정확해진다. 이로써 원했던 국소적 진술이 증명된다. 질량이 충분히 큰 블랙홀의 지평선은 특이한 좌표 도표로 표현된 보통의 시공간이다. 질량이 유한한 슈바르츠실트 블랙홀에서 곡률이 문자 그대로 0인 것은 아니지만, 지평선에서 유한하며 \(M\)를 늘리면 그곳의 곡률을 임의로 작게 만들 수 있다.\editorialnote{국소 곡률의 규모는 대략 \(R_s^{-2}\)이다. 린들러 계량은 지평선 근처 국소 전개의 선도항이지, 슈바르츠실트 기하 전체가 전역적으로 평탄하다는 주장이 아니다.}
+
+\begin{classroomqa}\audiencequestion{\(r<2GM\)일 때, 식~\eqref{eq:l03-rho-r}에 따르면 이 외부 영역의 \(\rho\)는 허수가 됩니다. 이것은 물리적 문제가 있다는 신호인가요?\lecturetimestamp{00:32:30}}\lecturerresponse{다른 방식으로 같은 좌표상의 실패를 나타낼 뿐입니다. 현재 좌표계는 외부 쐐기 영역에 맞게 구성되었으므로, 지평선을 통과해 확장하려면 다른 좌표계가 필요합니다. 이 특정한 \(\rho\)가 실패한다고 해서 지평선에서 물리적 사건이 일어나는 것은 아닙니다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{지평선 근처에서 다시 쓴 식의 근사식은 앞의 정확한 식에서 어떻게 나오는 건가요?\lecturetimestamp{00:39:21}}\lecturerresponse{천천히 변하는 항에서만 \(r\)를 \(2GM\)로 놓았습니다. 작은 차이인 \(r-2GM\)는 그대로 둡니다. 이것이 근사이며, \(r\)가 \(2GM\)에 가까워질수록 점점 더 정확해집니다.}\end{classroomqa}
+
+\section{좌표가 뜻하는 것}
+
+이 좌표 변환은 다음 관계를 준다.
+\begin{equation}
+\rho=0\quad\Longleftrightarrow\quad r=2GM.
+\end{equation}
+외부 영역 \(r>2GM\)는 오른쪽 린들러 쐐기 영역 \(X>|T|\)이다. \(\rho\)가 일정한 쌍곡선은 슈바르츠실트 반지름을 일정하게 유지하는 관측자를 나타낸다. 그 쐐기 안 어디서든 방출된 바깥쪽 진행 빛은 더 큰 \(\rho\)의 세계선을 모두 가로지르므로, 외부 관측자는 바깥쪽으로 신호를 보낼 수 있다. 미래의 빛꼴 경계 너머의 점에서는 오른쪽 쐐기 영역으로 신호를 되돌려 보낼 수 없다. 그 빛꼴 경계가 지평선이다.
+
+\begin{classroomqa}\audiencequestion{여기에 표시된 쌍곡 좌표 패치는 항상 지평선 바깥 영역을 나타내나요?\lecturetimestamp{00:35:22}}\lecturerresponse{그렇습니다. 이 구성에서는 \(r>2GM\)가 \(\rho^2>0\)을 뜻하므로 사건은 오른쪽 외부 쐐기 영역에 놓입니다. 빛꼴 경계 \(\rho=0\)가 지평선이며, 현재 좌표는 그 너머에서 실수인 외부 좌표로 이어지지 않습니다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(\rho\)가 일정한 쌍곡선은 한 시각을 나타내나요, 한 거리를 나타내나요?\lecturetimestamp{00:37:21}}\lecturerresponse{지평선 근처 근사에서 지평선까지의 고유거리가 일정한 것을 나타내며, 따라서 슈바르츠실트 반지름도 일정합니다. 쌍곡선을 따라 움직이는 것은 그곳에 머무는 관측자에게 시간의 경과를 뜻합니다.}\end{classroomqa}
+
+\(\rho\)가 일정한 궤적을 따라 식~\eqref{eq:l03-rindler-metric}은 다음을 준다.
+\begin{equation}
+d\tau=\rho\,d\omega.
+\label{eq:l03-proper-time-rindler}
+\end{equation}
+따라서 \(\omega\) 자체가 관측자의 고유시간은 아니다. 이는 쌍곡선들의 무리 전체에 공통인 각도형 시간이며, 각 관측자는 보통 각도에 원의 반지름을 곱해 호의 길이를 구하듯 자신의 \(\rho\)를 곱한다.
+
+\begin{classroomqa}\audiencequestion{\(\omega\)가 가속 관측자의 고유시간인가요?\lecturetimestamp{00:51:45}}\lecturerresponse{거의 그렇습니다. \(\rho\)가 일정할 때 고유시간 증분은 \(\rho\,d\omega\)입니다. \(\rho\)라는 인자는 꼭 필요합니다.}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_04.png}\caption{지평선 근처의 인과관계 판서: 교차하는 빛꼴 경계, 외부 쐐기 영역의 일정 반지름 쌍곡선, 그리고 \(\rho\)와 \(r-2GM\) 사이의 좌표 관계.}\lectureframe{00:34:35.000}\end{figure}
+
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[scale=1.04,>=Latex]
+  \draw[->] (-0.3,0) -- (4.6,0) node[right] {\(X\)};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {\(T\)};
+  \draw[very thick,blue!55!black] (0,0) -- (3,3);
+  \draw[very thick,blue!55!black] (0,0) -- (3,-3);
+  \node[blue!55!black,rotate=45] at (0.72,1.02) {future horizon};
+  \draw[thick,domain=-1.45:1.45,samples=80] plot ({0.75*cosh(\x)},{0.75*sinh(\x)});
+  \draw[thick,domain=-1.25:1.25,samples=80] plot ({1.25*cosh(\x)},{1.25*sinh(\x)});
+  \draw[very thick,domain=-1.05:1.05,samples=80] plot ({2.0*cosh(\x)},{2.0*sinh(\x)});
+  \node at (3.64,2.18) {Bob: \(\rho=\mathrm{const.}\)};
+  \draw[very thick,red!65!black,->] (1.2,-2.9) -- (1.2,2.9);
+  \node[red!65!black] at (1.58,-1.75) {Alice};
+  \fill[red!65!black] (1.2,1.2) circle (1.7pt);
+  \draw[dashed,->] (1.2,0) -- (2.27,1.07);
+  \node[align=left] at (3.18,0.80) {\small pre-crossing\\[-0.2em]\small light signal};
+\end{tikzpicture}\caption{판서와 함께 보는 조판 그림. 밥은 가속하는 \(\rho\) 일정 쌍곡선을 따르고, 앨리스는 미래 지평선을 통과하는 국소 관성 직선을 따른다. 빛꼴 경계는 앨리스에게 국소적인 장애물이 되지 않으면서 밥의 인과적 접근을 제한한다.}\end{figure}
+
+\section{앨리스는 낙하하고 밥은 제자리에 머문다}
+
+밥이 지평선에서 일정한 거리를 유지하는 동안 앨리스가 그의 손을 놓고 낙하한다고 하자. 밥의 세계선은 쌍곡선이므로 가속 운동이다. 앨리스의 국소 세계선은 거의 직선이다. 그녀는 유한한 고유시간 안에 빛꼴 경계를 통과하며, 그때 국소적인 불연속을 겪지 않는다.
+
+두 관측자의 인과적 서술은 비대칭적이다. 앨리스가 경계를 통과한 뒤에는 그녀의 빛이 밥에게 도달할 수 없지만, 밥이 보낸 빛은 한동안 앨리스에게 계속 도달할 수 있다. 밥은 앨리스가 유한한 낙하 과정에서 점점 더 이른 시점에 보낸 신호를 받는다. 신호의 도착 간격은 점점 더 벌어지고, 주파수는 적색편이되며, 세기는 약해진다. 슈바르츠실트 시간으로 보면 밥은 앨리스가 경계를 통과하는 모습을 결코 보지 못한다. 앨리스는 점근적으로 지평선에 다가가며 납작해지는 듯 보인다. 그렇다고 머리 뒤쪽은 멀쩡한데 코만 납작해지는 것은 아니다. 몸의 모든 부분에서 온 신호가 같은 극한층 안에 압축된다.
+
+\begin{classroomqa}\audiencequestion{앨리스가 지평선을 통과한 뒤에도 밥이 보낸 광자가 그녀 쪽으로 안쪽을 향해 이동하므로, 그녀는 밥을 볼 수 있나요?\lecturetimestamp{00:42:48}}\lecturerresponse{그렇습니다. 일방향 인과관계가 핵심입니다. 밥이 안쪽으로 보낸 신호는 안으로 들어갈 수 있지만, 앨리스가 그 뒤에 바깥쪽으로 보낸 신호는 밥에게 빠져나가지 못합니다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{앨리스의 발이 먼저 지평선을 통과하고 눈은 아직 바깥에 있다면, 잠시 자기 발을 보지 못하게 되나요?\lecturetimestamp{00:43:03}}\lecturerresponse{보통의 낙하 중에는 시야가 순간적으로 번쩍 끊기는 일이 없습니다. 빛이 발에서 눈까지 이동하는 데는 언제나 시간이 걸리며, 관련 신호가 도착할 때쯤이면 눈도 이미 지평선을 통과한 뒤입니다. 발은 계속 안쪽으로 가게 두면서 머리만 바깥에 붙들어 두려는 폭력적인 상황이라면 전혀 다른 파괴적인 일이 벌어질 것입니다.}\end{classroomqa}
+
+제자리에 머무르는 것은 비관성적인 선택이다. 밥에게는 로켓이 필요하다. 자유 낙하를 피하려고 바닥이 위쪽으로 힘을 가해야 하는 사람과 마찬가지다. 밥이 지평선에 더 가까이 머물수록 필요한 고유가속도는 커진다. 국소 린들러 근사에서 그 크기는 \(a=1/\rho\)이며, 단위는 \(c=1\)이다.\editorialnote{단위를 복원하면 국소 린들러 관측자에 대해 \(a=c^2/\rho\)이다. 정지한 슈바르츠실트 관측자의 고유가속도는 지평선에 다가갈수록 발산한다.}
+
+\begin{classroomqa}\audiencequestion{강의실에 서 있는 우리도 가속하고 있나요?\lecturetimestamp{00:45:40}}\lecturerresponse{자유 낙하하는 기준계에 대해서는 그렇습니다. 바닥이 우리를 받쳐 주고 있습니다. 바닥이나 제트팩이 없다면 우리는 떨어질 것입니다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{밥은 결국 지평선에서 플랑크 길이만큼 떨어진 곳에 있는 앨리스를 보게 되나요? 그 뒤에는 어떻게 되나요?\lecturetimestamp{00:49:24}}\lecturerresponse{그 지점에서는 고전적인 기하학적 서술만으로는 충분하지 않습니다. 플랑크 길이에는 \(\hbar\)가 들어 있으므로, 밥이 그곳에서 무엇을 분해해 볼 수 있는지 답하려면 양자역학이 필요합니다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{일정 반지름 곡선들이 지평선에서 직각처럼 보이는 좌표 모서리로 만나는 듯합니다. 그곳에서 미분할 수 있나요?\lecturetimestamp{00:51:12}}\lecturerresponse{그 지점에서 이 좌표 도표에는 무언가 특이한 일이 생기지만, 국소 물리에는 그렇지 않습니다. 다른 쐐기 영역까지 덮는 좌표계를 쓰면 그 인위적인 모서리가 사라집니다. 지금 다루는 외부 영역에서는 린들러 그림만으로도 필요한 인과관계의 사실을 충분히 알 수 있습니다.}\end{classroomqa}
+
+그러므로 관측자를 밝히지 않은 채 앨리스가 \emph{정말로} 지평선을 통과하는지 묻는 것은 유익하지 않다. 앨리스의 시계로는 유한한 고유시간 안에 지평선에 도달한다. 밥이 받는 신호의 연속에는 통과 사건이 나타나지 않는다. 물리학은 각 관측자가 무엇을 측정하는지, 그리고 그들의 기록을 어떻게 비교할 수 있는지 묻는다.
+
+\begin{classroomqa}\audiencequestion{밥의 관측 시간은 한없이 길어지는데도 앨리스의 미래 중 유한한 부분만 볼 수 있다는 것이 정확한 진술인가요?\lecturetimestamp{00:53:33}}\lecturerresponse{그렇습니다. 앨리스는 밥에게 보이는 낙하 구간에 유한한 고유시간을 부여합니다. 이상화된 영원한 기하에서는 밥이 점점 더 지연되고 적색편이된 신호를 영원히 받지만, 앨리스가 지평선을 통과한 뒤에도 나이를 먹어 가는 모습은 보지 못합니다.}\end{classroomqa}
+
+\section{가속 지평선만으로도 충분하다}
+
+이 인과 구조에 블랙홀은 필요하지 않다. 영원히 균일 가속하는 로켓은 평탄한 시공간에서 린들러 쌍곡선을 따라 움직이며, 그 너머에서는 어떤 신호도 따라잡을 수 없는 빛꼴 경계를 가진다. 관성 관측자에게 같은 영역은 평범한 민코프스키 시공간이지만, 그 관측자에게는 가속 지평선이 있다.
+
+\begin{classroomqa}\audiencequestion{이 현상은 블랙홀에만 해당하나요, 아니면 어떤 지평선에서나 일어나나요?\lecturetimestamp{00:55:25}}\lecturerresponse{균일 가속 관측자에게도 같은 현상이 일어납니다. 그런 관측자에게는 가속 지평선이 있어 그 너머의 사건을 볼 수 없습니다. 국소적으로 블랙홀 지평선은 그 경우와 물리적으로 다르지 않습니다.}\end{classroomqa}
+
+여기서 작용하는 것이 등가 원리다. 먼저 균일 가속을 이해한 다음, 중력장에서도 같은 국소 구조를 알아보면 된다. 돌이켜 보면 블랙홀의 존재가 받아들여지기 전에도 가속 지평선으로부터 중력 지평선을 예상할 수 있었다. 아인슈타인은 블랙홀의 기하를 이끌어 내는 이론을 제시했지만, 블랙홀이 물리적으로 형성된다는 사실은 받아들이지 않았다. 자유 낙하 관측자에게 지평선은 별일 없는 곳이지만, 바깥에 계속 머물려는 관측자에게는 중대한 의미를 갖는다. 이는 서로 타당한 두 서술 사이의 긴장이지, 아직 역설은 아니다.
+
+\section{열과 엔트로피로 돌아가기}
+
+휴식 후에는 열역학의 관점에서 보자. 앞서 살펴본 구성에서는 블랙홀을 욕조에 한 방울씩 채웠는데, 각 방울은 대략 한 비트를 운반하는 광자였다. 비트 하나가 더해질 때마다 지평선 면적은 플랑크 면적 정도만큼 증가했다. 정확한 엔트로피는 다음과 같다.
+\begin{equation}
+S_{\mathrm{BH}}=\frac{k_B A}{4\ell_P^2}.
+\end{equation}
+강의에서는 플랑크 길이를 다르게 정의했다면 \(1/4\) 인자를 피할 수 있었을 것이라고 농담한다. 핵심은 차원 분석으로 척도는 정할 수 있지만 수치 계수는 정할 수 없으며, 그 계수를 정하는 것은 호킹의 계산이라는 점이다.\editorialnote{플랑크 길이는 표준적으로 \(\ell_P=\sqrt{G\hbar/c^3}\)로 정의한다. 이 규약과 통상적인 열역학적 엔트로피를 정하면 \(1/4\) 인자는 물리적인 값이다. 이를 다르게 정의할 수 있다는 말은 규약에 관한 강의실 농담이다.}
+
+손가락과 온도계로 온도를 직접 감지할 수 있으므로 온도는 기초적인 개념처럼 느껴진다. 엔트로피는 더 신비롭게 느껴질 때가 많다. 강의에서는 이 위계를 뒤집어 엔트로피와 에너지를 기본 변수로 놓고, 엔트로피가 변할 때 에너지가 얼마나 변해야 하는지로 온도를 유도한다.
+\begin{equation}
+dE=T\,dS.
+\end{equation}
+강의의 비트 단위에서는 \(\Delta S=1\)이므로, 비트 하나를 더하거나 지우는 데 수반되는 최소 에너지를 \(T\)라고 부른다. 부주의하게 지우면---논리적으로 큰 망치로 내리치는 것과 마찬가지로---임의로 더 많은 에너지를 소산시킬 수 있다. 이 정의는 사라진 정보를 환경의 미시적 자유도로 옮길 때 가능한 최소 소산량에 관한 것이다. 통상적인 단위에서는 이진 비트 하나가 \(\Delta S=k_B\ln2\)를 가지며, 가역적으로 지울 때도 최소 \(k_BT\ln2\)가 소산된다.\editorialnote{이는 엔트로피와 온도를 에너지 기반 자연 단위로 재는 강의의 선택에서 생략된 란다우어 정규화이다.}
+
+\subsection{광자 하나를 이용한 추정}
+
+파장이 슈바르츠실트 반지름과 비슷한 광자를 택하자.
+\begin{equation}
+\lambda\sim R_s=\frac{2GM}{c^2}.
+\end{equation}
+그 에너지는 \(2\pi\)를 써서 \(h\)와 \(\hbar\)를 구분하는 규약에 따라 다음 정도다.
+\begin{equation}
+\Delta E\sim \frac{\hbar c}{\lambda}.
+\end{equation}
+이것이 비트 하나를 더하는 데 드는 에너지이므로,
+\begin{equation}
+k_BT_H\sim\frac{\hbar c}{R_s}
+\sim\frac{\hbar c^3}{GM}.
+\label{eq:l03-hawking-scale}
+\end{equation}
+이 휴리스틱한 논증으로는 \(2\)나 \(\pi\) 같은 인자를 결정할 수 없다. 호킹의 정확한 결과는 다음과 같다.
+\begin{equation}
+\boxed{k_BT_H=\frac{\hbar c^3}{8\pi GM}.}
+\label{eq:l03-hawking-exact}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_05.png}\caption{온도 판서 완성: \(R_s=2GM/c^2\), 1비트의 에너지 척도 \(\hbar c/R_s\), 그리고 정확한 \(8\pi\) 호킹 정규화.}\lectureframe{01:07:48.000}\end{figure}
+
+두 가지 사실은 즉시 알 수 있다. 첫째, 온도는 \(\hbar\)에 비례하므로 사라지며, 따라서 양자 효과이다. 둘째,
+\begin{equation}
+T_H\propto\frac{1}{M}.
+\end{equation}
+큰 블랙홀은 차갑다. 태양 질량에 해당하는 블랙홀의 경우,
+\begin{equation}
+T_H\approx6\times10^{-8}\ {\rm K},
+\end{equation}
+이는 강의에서 제시한 \(10^{-8}\,\mathrm{K}\) 추정치와 같은 정도이며, 약 \(2.7\,\mathrm{K}\)인 우주 마이크로파 배경 복사 온도보다 훨씬 낮다.
+
+\subsection{음의 열용량}
+
+그런 블랙홀을 더 따뜻한 환경에 놓아 보자. 에너지를 흡수해 질량이 늘고, 식~\eqref{eq:l03-hawking-exact}에 따르면 온도는 낮아진다. 그러면 에너지를 더 쉽게 흡수한다. 더 차가운 환경에 놓으면 반대 방향의 폭주가 시작된다. 복사하고 질량을 잃으며 온도가 올라가고, 복사는 더 빨라진다. 형식적으로는
+\begin{equation}
+C_{\mathrm{BH}}
+=\frac{dE}{dT_H}
+=c^2\frac{dM}{dT_H}
+<0.
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{이것을 비열이 음수라고 하는 건가요?\lecturetimestamp{01:14:08}}\lecturerresponse{맞습니다. 자체 중력을 가진 계는 에너지를 잃으면서 가열될 수 있습니다. 별에서도 비슷한 일이 일어납니다. 복사하면서 압력이 감소하면 별은 수축하고, 중력에 의한 압축으로 온도가 올라갑니다.}\end{classroomqa}
+
+고립된 블랙홀이 그렇다고 해서 비물리적인 것은 아니다. 오늘날 우주에서 항성 질량 블랙홀은 주변보다 차가우므로 주로 에너지를 흡수한다. 우주가 팽창하고 배경 온도가 내려가면, 언젠가는 균형이 뒤집혀 증발이 우세해질 수 있다. 유효 열용량이 무한대인 열저장고와 이루는 단순한 평형은 불안정하다.\editorialnote{경계 조건이 중요하다. 유한한 반사 공동 안의 블랙홀은 안정화할 수 있고, 적절히 큰 블랙홀은 반더시터 시공간에서도 안정화할 수 있다. 여기서 설명한 불안정성은 점근적으로 평탄한 시공간의 보통 열저장고에 해당한다.}
+
+\section{증발 법칙}
+
+척도 관계를 유도하기 위해 참고 서적이 없다고 상상하고, 기억하는 방정식이 가장 간단해지는 단위를 택하자.
+\begin{equation}
+c=\hbar=G=k_B=1.
+\end{equation}
+이것이 플랑크 단위다. 강의에서 인용한 대표적인 척도는 다음과 같다.
+\begin{equation}
+\ell_P\sim10^{-35}\ {\rm m},
+\qquad
+t_P\sim10^{-43}\ {\rm s},
+\qquad
+m_P\sim10^{-8}\ {\rm kg}.
+\end{equation}
+플랑크 질량은 눈에 보이는 먼지 알갱이 정도지만, 플랑크 길이와 시간은 상상하기 어려울 만큼 작다. \(c=1\)이므로 \(t_P\)는 단순히 \(\ell_P\)를 빛이 가로지르는 데 걸리는 시간이다.
+
+블랙홀을 흑체로 취급하자. 즉 완벽하게 어두워야 하는 물체가 아니라 열복사체로 본다. 블랙홀은 전자기 복사를 방출할 수 있고, 원리상 중력자를 비롯해 방출 가능한 다른 입자종도 방출할 수 있다. 복사는 표면을 통해 빠져나가므로 방출 전력은 방출 면적에 비례한다. 스테판--볼츠만 법칙의 척도 관계는 다음과 같다.
+\begin{equation}
+L=-\frac{dE}{dt}\sim A T^4.
+\end{equation}
+플랑크 단위에서는 \(E=M\), \(R_s\sim M\), \(A\sim R_s^2\sim M^2\), \(T\sim R_s^{-1}\sim M^{-1}\)이다. 따라서
+\begin{align}
+-\frac{dM}{dt}
+&\sim R_s^2\left(\frac{1}{R_s}\right)^4
+\sim\frac{1}{R_s^2}
+\sim\frac{1}{M^2},\\
+-M^2\frac{dM}{dt}&\sim1,\\
+-\frac{d(M^3)}{dt}&\sim1.
+\label{eq:l03-evap-scaling}
+\end{align}
+1 정도의 계수는 무시하면 수명은 다음과 같다.
+\begin{equation}
+\boxed{t_{\mathrm{evap}}\sim M^3.}
+\label{eq:l03-lifetime}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_06.png}\caption{방해 요소 없이 증발하는 블랙홀의 판서: 광도에서 \(-dM/dt\sim1/M^2\)가 나오므로 \(M^3\)가 일정한 비율로 감소하며, 수명은 초기 질량의 세제곱에 비례한다.}\lectureframe{01:23:20.000}\end{figure}
+
+도식적인 스테판--볼츠만 계산에서는 회색체 인자와 입자종의 수를 생략한다. 질량이 없는 입자 방출만 고려하는 가장 단순한 근사에서, 전하도 회전도 없는 블랙홀의 상수를 복원하면 다음을 얻는다.
+\begin{equation}
+t_{\mathrm{evap}}
+=\frac{5120\pi G^2M_0^3}{\hbar c^4}.
+\label{eq:l03-exact-lifetime}
+\end{equation}
+이 계수는 편집 과정에서 보완한 것이다. 강의에서 유도하는 것은 견고한 \(M_0^3\) 의존성뿐이다.
+
+\subsection{태양·산·킬로그램의 척도}
+
+태양의 질량은 \(M_\odot\sim10^{30}\,\mathrm{kg}\sim10^{38}m_P\)이다. 이를 세제곱하고 플랑크 시간 하나를 곱하면 강의의 의도적으로 거친 계산은 다음과 같다.
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{114}t_P
+\sim10^{71}\ {\rm s}
+\sim10^{64}\ {\rm yr}.
+\end{equation}
+어느 추산값이든 우주의 나이인 약 \(10^{10}\)년보다 엄청나게 길다. 식~\eqref{eq:l03-exact-lifetime}의 계수를 복원하면 태양 질량 블랙홀의 표준 수명 추산값은 약 \(2\times10^{67}\)년이 된다.\editorialnote{예상되는 차이다. 칠판 계산에서는 모든 수치 상수를 버리고 플랑크 척도를 10의 거듭제곱으로 반올림했다. 목적은 질량 세제곱에 따른 척도 관계를 보이는 것이지, 정밀한 천체 수명을 계산하는 것이 아니다.}
+
+다음으로 수강생들은 산 질량 정도의 블랙홀을 생각한다.\emph{수강생들은}대략적인 강의실 추산값 \(M\sim10^{10}\,\mathrm{kg}\)에 합의하고, 따라서 \(M\sim10^{18}m_P\)로 놓아 다음을 얻는다.
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{54}t_P
+\sim10^{11}\ {\rm s}
+\sim10^4\ {\rm yr}.
+\end{equation}
+이는 칠판에서 실제로 진행한 계산을 그대로 보존한 것이다. 그 질량을 설명할 때 말로 제시한 지형 규모---대략 \(100\,\mathrm{km}^3\)의 암석---라면 실제로는 훨씬 더 무거울 것이며, 정확한 수명 계수를 적용해도 결과가 크게 달라진다.\editorialnote{일반적인 암석 밀도에서 \(100\,\mathrm{km}^3\)의 규모는 \(10^{14}\,\mathrm{kg}\)이지 \(10^{10}\,\mathrm{kg}\)가 아니다. \(10^{10}\,\mathrm{kg}\)일 때 식~\eqref{eq:l03-exact-lifetime}에 따르면 수명은 \(10^6\)년 정도다. 이러한 수정은 수명이 질량의 세제곱에 따라 감소한다는 강의의 요점을 바꾸지 않는다.}
+
+\begin{classroomqa}\audiencequestion{질량이 겨우 킬로그램인 블랙홀은 아주 작을까요?\lecturetimestamp{01:29:14}}\lecturerresponse{그렇습니다. 반지름은 질량에 비례하고 태양 질량은 몇 킬로미터에 해당하므로, 킬로그램 하나인 블랙홀의 슈바르츠실트 반지름은 약 \(10^{-27}\,\mathrm{m}\)입니다. 그런 블랙홀은 또한 매우 뜨겁고 수명이 짧을 것입니다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{이 증발 추산은 주변 온도가 0이라고 가정하나요?\lecturetimestamp{01:29:53}}\lecturerresponse{주변이 블랙홀보다 차가워 순에너지가 바깥으로 흐르는 경우에 적용됩니다. 주변이 더 뜨거우면 오히려 블랙홀에 에너지를 공급합니다. 호킹 온도가 현재의 배경 온도와 같아지는 질량은 연습문제로 남겨 둡니다.}\end{classroomqa}
+
+감으로 파악하기 위해 \(T_H=2.7\,\mathrm{K}\)로 두면 \(M\)는 \(10^{22}\,\mathrm{kg}\) 정도이고, 슈바르츠실트 반지름은 \(10^{-4}\,\mathrm{m}\) 정도다.\editorialnote{이는 강의에서 제시한 연습문제의 답을 계산한 것이며, 강의 중 유도 과정에는 포함되지 않는다.}
+
+\section{계량 아래에는 무엇이 있어야 하는가?}
+
+\begin{classroomqa}\audiencequestion{광자가 블랙홀에서 빠져나오게 하는 메커니즘은 무엇인가요?\lecturetimestamp{01:30:53}}\lecturerresponse{복사의 미시적 메커니즘을 제시하기 전에, 엔트로피를 담당하는 자유도가 무엇인지 밝혀야 합니다. 열역학적 논증은 그 변수를 아직 명시적으로 드러내지 않은 채 무엇이 존재해야 하는지를 제약합니다.}\end{classroomqa}
+
+비유하자면 유체역학이다. 유체역학은 모든 분자를 하나씩 추적하지 않고도 매끄러운 밀도장과 속도장을 기술한다. 그런데도 엔트로피는 같은 매끄러운 상태의 밑바탕에 많은 미시적 배치가 있음을 드러낸다. 마찬가지로 고전 일반상대성이론은 매끄러운 계량을 기술하지만 블랙홀 엔트로피가 세는 수많은 미시적 자유도는 드러내지 않는다. 면적 법칙과 호킹 복사는 아인슈타인 이론이 유효한 거시적 기술이라는 단서다.
+
+\begin{classroomqa}\audiencequestion{블랙홀이 에너지를 복사한다는 말은 정보를 복사한다는 뜻이며, 블랙홀이 자라는 동안 삼킨 정보가 증발 과정에서 돌아온다는 뜻인가요?\lecturetimestamp{01:33:27}}\lecturerresponse{그것이 요구되는 조건입니다. 전체 시간 전개가 정보를 보존한다면, 방출되는 복사는 결국 블랙홀을 형성한 여러 가능한 상태를 구별할 수 있어야 합니다. 물질이 지평선을 통과하는 인과적 그림과 이 조건을 여전히 조화시켜야 합니다.}\end{classroomqa}
+
+에너지 흐름만으로는 정보를 특정하기에 충분하지 않다. 완전히 열적인 밀도행렬은 에너지를 담으면서도 초기 상태의 세부 정보를 잊을 수 있다. 유니터리한 서술에서 필요한 정보는 방출된 양자들 사이의 미세한 상관관계에 부호화되어 있다.\editorialnote{이 구분은 정보 문제를 현대적인 형태로 명확히 드러낸다. 강의에서 제기한 질문을 바꾸는 것이 아니라 더 정밀하게 다듬는다.}
+
+\section{구조적 원리로서의 정보 보존}
+
+\begin{classroomqa}
+\audiencequestion{정보 보존은 정말 근본 원리인가요?\lecturetimestamp{01:34:13}}
+\lecturerresponse{정보 보존은 가장 근본적인 원리 가운데 하나입니다. 서로 다른 초기 상태가 시간에 따라 진화해 정확히 같은 최종 상태가 될 수 있다면, 물리 법칙이 스스로 과거를 지워 버리는 셈입니다. 통상적인 보존 법칙은 대칭성뿐 아니라 가역적인 해밀토니안 또는 유니터리 형태의 시간 진화에도 의존합니다.}
+\end{classroomqa}
+
+강의에서처럼, 미끄러지는 지우개가 모두 멈추게 하는 가상의 근본 법칙을 생각해 봅시다. 초기 속도가 서로 달라도 모두 같은 상태로 끝납니다. 최종 상태에서는 지우개가 어떤 경로로 그 상태에 이르렀는지 구별할 수 없으므로 정보가 파괴된 것입니다. 운동량과 역학적 에너지도 사라집니다. 실제 마찰은 미시적 수준에서 이런 일을 하지 않습니다. 운동량과 에너지는 책상, 공기, 열적 자유도로 전달됩니다.
+
+완벽하게 균일하고 무한한 탁자에도 병진 대칭성이 있지만, 가상의 감쇠 법칙은 여전히 지우개를 멈추게 할 수 있습니다. 따라서 병진 대칭성만으로는 이런 비해밀토니안 법칙에서 운동량 보존을 도출하기에 충분하지 않습니다. 뇌터 정리는 작용 원리와 그에 수반되는 가역적 동역학을 전제로 합니다. 여기서 사용한 표현으로 말하면, 대칭성과 정보를 보존하는 동역학이 함께 보존 법칙을 낳습니다.
+
+\begin{classroomqa}
+\audiencequestion{정보 보존은 인과율보다 더 근본적인가요?\lecturetimestamp{01:37:00}}
+\lecturerresponse{두 원리는 서로 다른 원리이며, 기초성의 수준은 비슷합니다. 먼저 인과율을 정확히 진술해야 합니다---예를 들어, 신호는 허용된 인과 구조를 벗어나 과거 방향으로 전파될 수 없다는 식으로 말입니다---그러나 어느 한 원리도 다른 원리를 그대로 대신할 수는 없습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{해밀턴 역학에서 논의한 위상 공간의 면적 보존이 이 생각의 고전적 형태인가요?\lecturetimestamp{01:37:38}}
+\lecturerresponse{그렇습니다. 리우빌 정리에 따르면 해밀턴 흐름은 위상 공간의 부피를 보존합니다. 가능한 초기 상태들의 집합은 부피가 더 작은 영역으로 수축해 서로의 차이를 지워 버릴 수 없습니다. 양자역학에서 이에 대응하는 진술은 유니터리성입니다. 즉, 내적이 보존되고, 따라서 서로 직교하는 상태 사이의 구별도 보존됩니다.}
+\end{classroomqa}
+
+고전역학에서는 해밀턴 흐름에 따라 이동하는 위상 공간 영역에 대해,
+\begin{equation}
+\frac{d}{dt}\,\mathrm{Vol}_{\Gamma}=0,
+\end{equation}
+양자역학에서는,
+\begin{equation}
+\begin{aligned}
+\ket{\psi(t)}&=U(t)\ket{\psi(0)},\\
+U^\dagger U&=I,\\
+\braket{\psi(t)}{\phi(t)}
+&=\braket{\psi(0)}{\phi(0)}.
+\end{aligned}
+\end{equation}
+이 식들은 미시적인 차이가 시간 진화 뒤에도 보존된다는 주장을 정확히 나타냅니다.
+
+\section{엔트로피는 무엇에 의존하는가}
+
+마지막 문답은 정보 이론적 엔트로피로 돌아갑니다. 미시적 가능성들의 확률 \(p_i\)가 주어지면,
+\begin{equation}
+S=-k_B\sum_i p_i\ln p_i
+\label{eq:l03-shannon}
+\end{equation}
+열역학적 단위로 표현할 때는, 무차원 샤논 엔트로피로 표현할 때는 \(k_B\)를 사용합니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_07.png}
+\caption{칠판에 마지막으로 적힌 식 \(S=-\sum_i p_i\log p_i\)은 확률분포와 그 분포에서 계산되는 하나의 엔트로피 값을 구별하면서 쓰였습니다.}
+\lectureframe{01:40:32.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{확률이 엔트로피를 정하는 것이 아니라, 엔트로피를 최대화해 확률분포를 정하나요?\lecturetimestamp{01:38:33}}
+\lecturerresponse{확률분포가 주어지면 식~\eqref{eq:l03-shannon}으로 엔트로피 값 하나가 정해집니다. 숫자 하나만으로 모든 \(p_i\)를 복원할 수는 없습니다. 엔트로피 최대화로 확률분포를 선택하려면 정규화 조건과 평균 에너지 고정 같은 다른 제약 조건도 함께 주어져야 합니다.}
+\end{classroomqa}
+
+이 구별과 함께 강의는 적절한 경계에서 끝납니다. 매끄러운 기하학에서 지평선으로, 지평선에서 열역학으로 나아갔고, 열역학은 숨겨진 자유도를 드러냈습니다. 이제 정보 보존 원리에 따르면 그 자유도는 블랙홀 안으로 들어간 차이를 지워 버리지 않도록 시간에 따라 진화해야 합니다. 그 구체적인 메커니즘은 아직 제시되지 않았습니다. 대신 기하학과 정보의 장부 정리는 성공적인 미시 이론이라면 무엇을 설명해야 하는지를 분명히 보여 주었습니다.

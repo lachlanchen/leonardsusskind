@@ -1,0 +1,59 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 227,
+  "outline_entries": 136,
+  "target_characters": 84760,
+  "image_placements": 82,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "끈 이론의 주요 주제",
+  "pdf_sha256": "52af4cdfec0712f3f3afc6b3e41d4971f73dfb600207a95383a4744b42bdba2d",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 61,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "7f7db1e3b9813d6bab4a5c447800fb30ea97d5344c4d5f8cdb2697d3437e5a9e",
+    "chapters/lecture_01/content.tex": "a0de0f41983e4dbb3814afacb0c9da1e184ae34f1e9588ca92673a8e8cd6fdc5",
+    "chapters/lecture_02/content.tex": "13ba9e10154febaf429199a1778f971ecd47f8b1402950351b54310085ae7a00",
+    "chapters/lecture_03/content.tex": "b278dfa0ef2bbe1303bf10aa0baa46471194e76bfffdf75c5bbb8881d82c0164",
+    "chapters/lecture_04/content.tex": "e4fbd09108bf013af615b95a8b367008824051f0be308e096425ce34169809cd",
+    "chapters/lecture_05/content.tex": "d883085d9a83bc9350c48f0d025f4fccada67d324426d3b9774eab5a22633d4b",
+    "chapters/lecture_06/content.tex": "ce672d0db76c9f5c3449bf7eeac4137a5d7a9f015d6eed18fae3e75a17721b56",
+    "chapters/lecture_07/content.tex": "b28bf605689f3156833ebfda88a41a2bd013dec7699c33436704a90db72b84b6",
+    "chapters/lecture_08/content.tex": "e6fc2964796075ef37e5ccc871b9423069fc7b7f7d2d84d43c29b455b26cc6e0",
+    "chapters/lecture_09/content.tex": "8d6dc643d12b5559ba1ba51b70392e7d5ae66b5ff07602bb5a27e8dc27aaa0bd"
+  },
+  "source_files": {
+    "course.tex": "5813fa3876488c0990af4bf15a855abc4eb833dd1e1b4a173b02a8742570c935",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "567923e017f5afbf8d6b82d2b0341bbeabbe06ae28165837759d891dfd670e56",
+    "chapters/lecture_02/content.tex": "df3935948d623649fa1bd4adf69a53f8defeec0fc0c65f1c370452d8403326bf",
+    "chapters/lecture_03/content.tex": "7eeac70ea5e86a155890a459eafd007f8d02b28f119664d2df6502ebc7f4e969",
+    "chapters/lecture_04/content.tex": "280798e99eea6e71529164540437c8fdbe22e752c03c6c39baaa153278b0060c",
+    "chapters/lecture_05/content.tex": "8fce7d01e02b32819996400e347bbc0c596655cc9a35f92f7fdd056a3b17b5fb",
+    "chapters/lecture_06/content.tex": "2ebe6be0dd8eed3ab446d3a7baebea39f33a6b1d97e5026135fdea0e9a0854aa",
+    "chapters/lecture_07/content.tex": "ad35584cafd776fe8bbde8625c31a325f7465d5507753dfefc7f06356991b9c3",
+    "chapters/lecture_08/content.tex": "28c531b7e4cf9483f0bb78491ff0f2a11411be6fee0d4aa70f68b44e949b04a6",
+    "chapters/lecture_09/content.tex": "1c889082ea6d02f33411d3bbdfd9b39ce29e5910b3708a80799a0c4e9a38bae7"
+  },
+  "translated_tex": {
+    "cover.tex": "cdd205755fcbdc975ccdf5e71ba486a7a55270494fe26dee2e67f875a1beecec",
+    "common_preamble.tex": "e17d06992ebf1145fd0919d3791f19fdfd0df68a107a49adbe990ed8549bc981",
+    "course.tex": "97ed96b2102261b633c98fb4860a26441a12320b4b8462867a539b329e095436",
+    "chapters/lecture_07/content.tex": "5c4763f25a9a258ddf94aed6f2390cd9b8947076b9a9a1612e566c72f8380cb1",
+    "chapters/lecture_02/content.tex": "72911de0c3a3454c625f3314e1c0b0d189e458460df4ea613d62cfdcca2b9f1a",
+    "chapters/lecture_09/content.tex": "6e90e1dc93c00c65a8e157f1d5a70509727acf2c7a5f38f83763da751093aa9e",
+    "chapters/lecture_01/content.tex": "2fbda65c8a924d179b602fc66143d0e8acc926035536c7893b126494845490f7",
+    "chapters/lecture_03/content.tex": "2b2ab1ad30c7d4e0308da5f9e361ffe3bb3a56242dbf26576ed3fe3909280229",
+    "chapters/lecture_08/content.tex": "b2c9350222e70b521d6a11bcfd9b30d54be52433f30c66656f3d9bbd8c07973c",
+    "chapters/lecture_05/content.tex": "5dd7845b8652e1c864a99b546e7b3bdf8690df05f7790ee49ea272c1dac37787",
+    "chapters/lecture_04/content.tex": "742165f08a7ccd95bed52fc642d2bd38dc25c995f86bdd333865bb280f820898",
+    "chapters/lecture_06/content.tex": "1ee5f549f6b63f8c03908cf06785c751c8410b77452b4f73e28b3f44ebcb295d"
+  }
+}
