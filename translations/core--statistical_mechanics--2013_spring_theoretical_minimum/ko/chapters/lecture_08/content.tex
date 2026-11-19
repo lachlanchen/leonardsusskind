@@ -1,0 +1,545 @@
+\chapter{재귀, 비평형 질서, 그리고 이징 스핀}
+
+\lectureoverview{방의 절반에서 방출된 기체는 평형을 향해 급속히 퍼져 나가지만, 가역역학에 따르면 충분히 긴 시간 동안 진화하면 예외적인 상태로 되돌아오는 일도 반드시 일어난다. 위상공간 부피로 그 재귀 시간을 추정하고, 재귀 현상과 설명되지 않은 우주의 저엔트로피 초기 상태를 구분한 뒤, 이로부터 생기는 난제를 바탕으로 볼츠만 뇌, 일관된 역사, 에너지 흐름으로 유지되는 생명을 논의한다.
+그런 다음 자성 질서로 넘어간다. 서로 독립인 2상태 스핀은 정확히 풀 수 있는 예비 모형이다. 조합론으로 분배함수를 구하고, 자화가 쌍곡탄젠트 함수임을 보인다. 이웃한 스핀 사이의 상호작용을 도입하면 마침내 위아래-- 대칭성이 회복되고 1차원 이징 모형으로 이어진다.}
+
+\section{언젠가 되돌아오는 방 안의 공기}
+
+방의 왼쪽 절반에 공기가 모두 모여 있는 상태에서 시작하자. 칸막이를 이용해 이 상태를 만들 수 있다. 오른쪽 절반의 공기를 빼내고 왼쪽에 공기를 둔 다음, 벽을 없애면 된다. 기체는 방 안으로 빠르게 퍼져 열평형에 가까워진다. 엔트로피는 증가한다. 특별할 것은 없다.
+
+이제 방을 밀폐한 채 그대로 두고 기다리자. 동전을 던져 백만 번 연속 앞면이 나오는 것은 극히 드문 기록이지만, 실험을 무한히 반복하면 결국 극히 드문 기록도 나타난다. 기체에도 같은 논리가 적용된다. 아주 먼 미래의 어느 시점에는 모든 분자가 다시 왼쪽 절반에, 또는 그와 비슷하게 특별한 영역에 놓이게 된다. 이러한 재귀를 푸앵카레 재귀라고 한다.
+
+정확한 정리는 그림으로 설명한 것보다 조금 더 세심하게 표현해야 한다. 위상공간 부피를 보존하는 동역학이 작용하는 유한 측도의 위상공간 영역에서는 거의 모든 초기점이 시작점에 임의로 가까운 곳으로 되돌아온다. \emph{모든 분자가 방의 왼쪽 절반에 있다}와 같은 거시적 명제는 더 다루기 쉽다. 모든 분자의 좌표가 정확히 되돌아와야 하는 것이 아니라, 궤적이 유한한 거친 격자 영역에 다시 들어오기만 하면 되기 때문이다. 관건은 얼마나 오래 걸리는가이다.
+
+\subsection{고차원 위상공간의 한 점}
+
+\(N\)개의 고전 입자에 대해 위상공간은 \(6N\)개의 좌표로 이루어지며,
+\begin{equation}
+ \Gamma=(\bm x_1,\ldots,\bm x_N;\bm p_1,\ldots,\bm p_N).
+ \label{eq:sm8-phase-point}
+\end{equation}
+위치는 방의 경계 안에 제한된다. 전체 에너지가 고정되어 있으면 운동량도 제한되는데, 입자 하나가 임의로 큰 운동량을 가지려면 그만큼 임의로 큰 에너지도 가져야 하기 때문이다. 따라서 재귀 논증의 가정 아래 허용되는 에너지 껍질의 측도는 유한하다.
+
+위상공간의 점은 결정론적으로 움직이지만, 다체 기체에서 그 운동은 혼돈적이다. 당구공이 잇달아 충돌하는 경우처럼 가까운 궤적들은 빠르게 서로 멀어진다. 거친 격자화 뒤에는 긴 궤적이 접근 가능한 영역 전체를 헤매는 것처럼 보인다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_02.png}
+\caption{위상공간 영역과 그 안을 복잡하게 헤매는 궤적을 개략적으로 나타낸 그림이다. 그림은 의도적으로 저차원으로 그렸다. 실제 기체는 \(6N\)차원 공간에 놓여 있다.}
+\lectureframe{00:06:41}
+\end{figure}
+
+저차원 그림을 보면 곧바로 잘못된 생각이 들기 쉽다. 특수한 상태가 그려진 직사각형의 절반을 차지한다면 기체가 그곳에서 절반의 시간을 보내리라고 생각할 수 있다. 그러나 \emph{모든 분자가 왼쪽 절반에 있다}는 조건은 위상공간 점의 좌표 하나만이 아니라 모든 위치 좌표를 제한한다.
+
+한 공간 차원에서 움직이는 두 입자만 고려하고, 좌표를 \(x_1\)와 \(x_2\)로 두자. 이들의 구성공간은 정사각형이다. \(x_1<L/2\)라는 조건은 정사각형의 절반을 선택하고, \(x_1<L/2\)와 \(x_2<L/2\)를 모두 요구하면 정사각형의 사분의 일이 선택된다:
+\begin{equation}
+ P_2=\frac{1}{2}\frac{1}{2}=\frac{1}{4}.
+ \label{eq:sm8-two-particle-quarter}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_07.png}
+\caption{공간 차원이 1인 입자 두 개의 경우, 작은 정사각형은 두 좌표가 모두 방에서 지정한 절반 안에 놓이는 배치를 나타낸다.}
+\lectureframe{00:07:08}
+\end{figure}
+
+입자가 세 개이면 \(1/2^3\)이고, \(N\)개의 입자이면
+\begin{equation}
+ P_{\mathrm{half}}(N)
+ =\left(\frac{1}{2}\right)^N.
+ \label{eq:sm8-half-probability}
+\end{equation}
+핵심은 지수에 있다. 2분의 1이라는 인자는 평범하지만, 이를 거시적인 입자 수만큼 거듭제곱하면 일반적인 직관을 넘어선다.
+
+\begin{classroomqa}
+\audiencequestion{입자들이 다른 공간 방향에도 있으므로 답은 \(1/3^N\)이어야 하지 않나요?}
+\lecturerresponse{부과하는 조건에 따라 다릅니다. 모든 입자가 분할 벽의 왼쪽에 있는지만 묻는다면 입자마다 하나의 이진 조건을 만족하면 되므로 답은 \(2^{-N}\)입니다. 입자의 가용 위치공간에서 독립적인 비율을 추가로 제한하면 그에 해당하는 인자가 하나 더 곱해집니다.
+\lecturetimestamp{00:07:47--00:08:05}}
+\end{classroomqa}
+
+\section{위상공간 부피, 엔트로피, 재귀 시간의 척도}
+
+같은 추정은 절반을 언급하지 않고도 쓸 수 있다. 방의 통상적인 공간 부피를 \(V\)라 하고, 모든 분자가 그 안에 있기를 요구하는 더 작은 영역을 \(v\)라 하자. 두 거시상태에서 공통인 운동량 인자를 무시하면, 이용 가능한 배치공간 부피는 다음과 같다.
+\begin{equation}
+ \Omega_{\mathrm{room}}\propto V^N,
+ \qquad
+ \Omega_{\mathrm{small}}\propto v^N.
+ \label{eq:sm8-config-volumes}
+\end{equation}
+따라서 작은 거시상태에 머무르는 장시간 비율은 다음과 같다.
+\begin{equation}
+ P(v)
+ =\frac{\Omega_{\mathrm{small}}}{\Omega_{\mathrm{room}}}
+ =\left(\frac{v}{V}\right)^N.
+ \label{eq:sm8-volume-ratio}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_08.png}
+\caption{칠판에 그린 일반적인 위상공간 부피 그림이다. 접근 가능한 영역 \(V^N\) 안에 작은 영역 \(v^N\)이 있고, 두 영역의 비는 \(v^N/V^N\)이다.}
+\lectureframe{00:10:44}
+\end{figure}
+
+\(k_B=1\)인 단위계에서 엔트로피는 접근 가능한 위상공간 부피의 로그이다. 제한된 거시상태의 엔트로피가 \(S_A=\log\Omega_A\)이고 평형상태의 엔트로피가 \(S_{\rm eq}=\log\Omega_{\rm eq}\)이면,
+\begin{equation}
+ \begin{aligned}
+ P(A)
+ &=\frac{\Omega_A}{\Omega_{\rm eq}}\\
+ &=\exp\!\left(S_A-S_{\rm eq}\right)\\
+ &=e^{-\Delta S},\\
+ \Delta S&=S_{\rm eq}-S_A.
+ \end{aligned}
+ \label{eq:sm8-entropy-probability}
+\end{equation}
+방 절반에 해당하는 상태에서는 \(\Delta S=N\log 2\)이고, \eqref{eq:sm8-entropy-probability}은 정확히 \(2^{-N}\)로 환원된다.
+간략한 표현 \(P\sim e^{-S_{\rm eq}}\)은 특수 영역의 엔트로피를 고정된 기준값으로 취급할 때만 적절하다. 물리적으로 의미 있는 지수는 엔트로피 결손 \(\Delta S\)이다.
+
+\begin{classroomqa}
+\audiencequestion{이것은 전체 위상공간이 아니라 배치공간의 부피인가요?}
+\lecturerresponse{이 비교에서는 그렇습니다. 운동량 분포는 같은 온도로 유지하고 위치 조건만 부과하므로, 공통인 운동량공간 인자는 약분됩니다. 일반적인 재귀 명제는 위상공간을 사용하지만, 이 특정 확률은 배치공간 부피의 비로 계산할 수 있습니다.
+\lecturetimestamp{00:11:21--00:11:40}}
+\end{classroomqa}
+
+계가 미시적 상관 시간 또는 혼합 시간 \(\tau_{\rm mix}\) 뒤에 세부 위치에 관한 기억을 잃는다고 하자. 확률이 \(P(A)\)인 희귀 영역은 다음 시간 척도로 나타난다.
+\begin{equation}
+ \tau_{\rm rec}
+ \sim \frac{\tau_{\rm mix}}{P(A)}
+ \sim \tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-recurrence-time-general}
+\end{equation}
+방 절반에 해당하는 조건에서는
+\begin{equation}
+ \tau_{\rm rec}\sim\tau_{\rm mix}2^N.
+ \label{eq:sm8-recurrence-time-half}
+\end{equation}
+강의에서는 의도적으로 거칠게 방 크기를 추정하여 \(N\sim10^{30}\)으로 두고, 기억하기 쉬운 척도 \(\tau_{\rm rec}/\tau_{\rm mix}\sim2^{10^{30}}\)을 얻는다. 통상적인 대기 밀도에서 방 안의 분자 수는 \(10^{27}\)개에 가깝지만, \(10^{30}\)을 \(10^{27}\)으로 바꾸어도 결론은 달라지지 않는다. 재귀 시간은 여전히 우주의 나이보다 상상할 수 없을 만큼 길다.
+
+\begin{classroomqa}
+\audiencequestion{재귀 시간은 어떤 단위로 측정하나요? 초를 시간으로 바꾸거나 매우 짧은 단위를 쓰면 결론이 달라질 수 있나요?}
+\lecturerresponse{차원을 지닌 앞인자는 \(\tau_{\rm mix}\)이고, 엄청나게 큰 수는 무차원 비 \(\tau_{\rm rec}/\tau_{\rm mix}\)입니다. 초를 시간으로 바꾸면 통상적인 환산 인자만큼 나누게 되는데, 이는 \(2^{10^{30}}\)에 비하면 무시할 수 있습니다. 분자들의 속도에 따라 방의 구석을 한 번 방문하는 지속 시간은 달라집니다. 여기서 추정하는 것은 그런 방문이 얼마나 드물게 시작되는가입니다. 양자 재귀 정리도 있지만, 여기서는 필요하지 않습니다.
+\lecturetimestamp{00:17:24--00:19:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{실험으로는 도저히 기다릴 수 없는 시간을 계산하는 목적이 무엇인가요?}
+\lecturerresponse{개념적인 의미가 있습니다. 닫힌 역학계가 어떤 의미에서 가역성을 유지하는지 알려 주기 때문입니다. 계는 거의 모든 시간을 평형 근처에서 보내지만, 충분히 긴 시간 척도에서는 낮은 엔트로피를 향한 요동도 일으킵니다. 따라서 열역학 제2법칙은 특수한 초기 자료에 관한 압도적으로 높은 확률의 명제이지, 역방향 운동을 금지하는 미시적 방정식은 아닙니다.
+\lecturetimestamp{00:15:12--00:16:35}}
+\end{classroomqa}
+
+\section{가역성과 특수한 초기 상태}
+
+처음에 특수한 방 절반 영역에 의도적으로 둔다고 하자. 안쪽보다 바깥쪽의 위상공간 부피가 훨씬 크므로, 거의 모든 인접 궤적은 곧 그 영역을 벗어난다. 기체는 빠르게 퍼진 뒤, 되돌아오기까지 엄청나게 긴 시간을 기다린다. 빠른 이완과 긴 대기 시간 사이의 이러한 비대칭은 가역역학에 어긋나지 않는다.
+
+빠져나오는 과정의 시간 역전은 그 전체 대기 시간이 아니다. 평형처럼 보이는 분자 속도들이 우연히 조율되어 기체가 방의 한쪽 절반으로 \emph{쏜살같이 모여드는} 짧고 기묘하게 정교한 과정이 시간 역전이다. 보통의 탈출이 끝난 시점에 모든 운동량의 방향을 뒤집으면 기체는 탈출 경로를 거꾸로 되짚는다. 그 특수한 유입 속도 배열이 저절로 생길 때까지 기다리는 데 긴 시간이 걸린다.
+
+\begin{classroomqa}
+\audiencequestion{시간 대칭성에 따르면 구석으로 천천히 재귀하는 데 처음 빠져나올 때만큼 오래 걸리나요?}
+\lecturerresponse{아닙니다. 탈출 과정과 그 정확한 시간 역전을 비교해 보십시오. 둘 다 빠릅니다. 엄청나게 오래 걸리는 것은 평형 상태에서 역방향의 급격한 모임을 시작하게 할 정확한 유입 요동을 기다리는 일입니다. 엄청나게 긴 시간 기록을 보면, 평형에서 벗어나는 요동은 양쪽 시간 방향에서 국소적인 역사가 대칭을 이루며 일어납니다.
+\lecturetimestamp{00:20:46--00:21:58}}
+\end{classroomqa}
+
+따라서 재귀 논증은 시간의 화살에 관한 설명의 일부만 제공한다. 계가 저엔트로피 영역에서 시작했다는 \emph{조건 아래} 왜 엔트로피가 보통 증가하는지를 설명한다. 하지만 초기 조건이 왜 특수했는지는 설명하지 못한다. 우주론에서 이 누락된 전제가 핵심 질문이 된다. 관측 가능한 우주는 왜 중력 위상공간에서 그토록 예외적으로 작은 영역에서 시작했는가?
+
+\begin{classroomqa}
+\audiencequestion{재귀는 우주론에도 적용되나요? 우주가 퍼진 뒤 충분히 오래 기다리면 재귀가 일어날 수도 있나요?}
+\lecturerresponse{피할 수 없는 질문이지만, 답은 전반적인 우주론에 달려 있습니다. 유한한 평형 상태공간을 갖는 진정한 닫힌 계라면 재귀를 예상할 수 있습니다. 팽창하는 시공간, 중력, 지평선, 그리고 무한하거나 정상 상태가 아닌 상태공간은 전제를 바꿀 수 있습니다. 여기서의 핵심 교훈은 더 제한적입니다. 평형 재귀라는 그림만으로는 우리가 보는 구조화된 우주를 통계역학적으로 충분히 설명할 수 없습니다.
+\lecturetimestamp{00:19:59--00:20:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{재귀는 기체를 처음에 작은 영역에 준비하는 데 달려 있나요? 방이 평형 상태에서 시작해도 공기가 언젠가 한쪽 구석에 모이나요?}
+\lecturerresponse{그렇습니다. 재귀는 닫힌 계의 장시간 동역학에 관한 것이므로, 평형처럼 보이는 초기 상태에서도 드문 저엔트로피 요동이 일어납니다. 방 절반 상태로 준비하는 것은 다른 이유에서 중요합니다. 알려진 특수한 초기 상태를 조건으로 삼아 그 직후 엔트로피가 왜 증가하는지 물을 수 있게 해 주기 때문입니다.
+\lecturetimestamp{00:22:04--00:22:20}}
+\end{classroomqa}
+
+\section{무작위 요동으로는 설명이 부족한 이유}
+
+재귀를 우주론으로 발전시켜 보려는 생각이 들 수도 있다. 우주가 영겁에 가까운 시간 동안 대부분 평형 상태에 있었고, 현재 세계가 드문 요동으로 생겨났다고 가정하는 것이다. 그러나 이 가설은 명확한 통계적 검증을 통과하지 못한다. 관측자가 존재한다는 조건을 두고 그 관측자가 또 무엇을 보리라고 예상해야 하는지 물어보자.
+
+행성 하나를 만들어 낼 만큼 큰 요동은 극히 드물다. 행성 두 개를 만드는 요동에는 더 큰 엔트로피 결손이 필요하므로 그보다도 드물다. 항성, 은하, 우주 마이크로파 배경, 그리고 먼 과거에 관한 서로 일치하는 기록까지 만들어 내는 요동은 그보다도 훨씬 큰 추가 지수 인자만큼 더 드물다. 따라서 평형 요동 이론은 실제로 관측되는 풍부하고 일관된 세계가 아니라, 관측에 필요한 최소한의 요동을 예측한다. 가장 극단적인 형태에서 최소한의 관측자를 볼츠만 뇌라고 부른다.
+
+논리는 조건부 확률에 관한 것이다. \(A\)을 관측자 크기의 요동 하나가 일어나는 사건, \(B\)을 독립적인 두 번째 구조가 생기는 사건이라고 하자. 둘의 확률이 모두 매우 작은 \(p\)라면,
+\begin{equation}
+ P(B\mid A)=p,
+ \qquad
+ P(A\cap B)=p^2.
+ \label{eq:sm8-conditional-fluctuations}
+\end{equation}
+첫 번째 요동이 일어났다는 사실을 알게 되어도 두 번째 요동의 가능성이 커지지는 않는다. 복권에 비유하면 이 수준에서 정확히 같다. 이전 회차의 당첨자는 다음 독립 추첨에서 더 높은 당첨 확률을 갖지 않는다. 그러므로 관측자는 자신이 존재한다는 조건을 둘 수 있지만, 독립적으로 구조화된 환경을 발견한다면 여전히 놀라야 한다.
+
+\begin{classroomqa}
+\audiencequestion{행성 하나나 볼츠만 관측자 하나가 이미 존재한다면, 다른 하나가 생길 확률은 정말 더 작은가요?}
+\lecturerresponse{독립적인 두 번째 희귀 요동의 조건부 확률은 사건 하나의 확률을 제곱한 값이 아니라, 그 작은 확률 그대로입니다. 두 사건이 모두 일어날 결합 확률이 제곱값입니다. 바로 그렇기 때문에 첫 번째 관측자는 자신 바깥의 열적 무질서가 여전히 대다수일 것으로 예상해야 합니다. 배우자, 또 다른 행성, 질서 있는 하늘을 발견하는 것은 관측자가 고립된 평형 요동으로 조립되었다는 전제에 반하는 증거입니다.
+\lecturetimestamp{00:26:12--00:30:27}}
+\end{classroomqa}
+
+\subsection{과거의 일관된 기록}
+
+같은 논리는 역사에도 적용된다. 서로 의견이 일치하는 교과서 두 권, 하나의 우주 팽창 역사에 부합하는 천문학 기록, 지층, 기억, 실험실 노트는 모두 서로를 제약한다. 무작위로 생겨난 교과서 한 권에는 어떤 이야기든 들어 있을 수 있다. 같은 과거를 두고 서로 일치하는 기록의 전체 연결망은 훨씬 작은 위상공간 영역을 차지한다.
+
+수업에서 든 예시는 조지 워싱턴이 벚나무를 베었다는 익숙한 이야기다. 그 이야기가 사실인지 여부는 중요하지 않다. 현재 순간에 요동으로 생겨난 세계에서는 한 책의 문장이 다른 기록과 일치할 동역학적 이유를 제공하지 않는다는 점이 핵심이다. 서로 일관된 상관관계는 한순간의 우연이 아니라 공유된 역사의 증거다.
+
+\begin{classroomqa}
+\audiencequestion{\emph{역사의 일관성}은 여기서 무엇을 뜻하나요?}
+\lecturerresponse{현재의 여러 기록이 공통된 과거의 결과로서 서로 부합한다는 뜻입니다. 요동이 기록과 기억을 꾸며낼 수는 있지만, 서로 일치하는 기록의 연결망을 꾸며내려면 최소한의 관측자 하나를 만들어내는 것보다 훨씬 큰 요동이 필요합니다. 따라서 재귀 이론에 따르면 관측자와 비슷한 요동의 대부분에는 우리가 실제로 발견하는 일관성이 없습니다.
+\lecturetimestamp{00:30:30--00:31:12}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{우주가 여전히 닫힌 계이고, 평형화와 재귀에 걸리는 시간만 엄청나게 길 수도 있지 않나요?}
+\lecturerresponse{그 가능성으로도 통계적 문제는 해소되지 않습니다. 무한히 긴 역사에서는 관측자와 비슷한 요동이 많이 일어날 것이며, 그 압도적 다수는 일관된 주변 역사 없이 최소한의 형태로만 존재할 것입니다. 그 집단에서 뽑힌 관측자는 우리가 관측하는 것과 같은 모습을 기대해서는 안 됩니다. 따라서 우주론자들은 볼츠만 뇌 문제를 재귀가 이미 관측되었다는 주장으로 보지 않고, 우주론적 측도와 후기 우주 모형을 검증하는 중요한 문제로 다룹니다.
+\lecturetimestamp{00:31:13--00:32:42}}
+\end{classroomqa}
+
+\section{흐름으로 유지되는 구조로서의 생명}
+
+생명은 반대 방향의 어려움을 제기하는 듯하다. 생명체는 복잡한 조직을 오랜 시간 유지하므로, 짧게 나타나는 우연한 요동처럼 보이지 않는다. 해결의 실마리는 열역학 제2법칙이 완전히 닫힌 계에 적용된다는 데 있다. 더 큰 엔트로피 증가가 주변 환경에서 일어나는 한, 부분계의 엔트로피는 낮아지거나 일정하게 유지될 수 있다.
+\begin{equation}
+ \dot S_{\rm total}
+ =\dot S_{\rm subsystem}+\dot S_{\rm environment}\geq 0.
+ \label{eq:sm8-open-system-second-law}
+\end{equation}
+
+지구는 열평형 상태가 아니다. 인간의 시간 척도에서는 대략 정상 상태처럼 보이지만, 정상 상태라고 해서 정지해 있다는 뜻은 아니다. 지구를 통과하는 에너지 흐름이 있다. 햇빛이 들어오고 여러 과정을 거치며 에너지가 분산된 뒤, 더 낮은 유효 온도에서 복사되어 나간다. 이러한 에너지 통과 흐름은 전체 엔트로피를 증가시키면서 국소적인 질서를 유지할 수 있다.
+
+관을 흐르는 물은 이를 곧바로 떠올리게 하는 역학적 그림이다. 물의 흐름에는 지속되는 와류와 소용돌이가 생길 수 있다. 그런 구조는 질서가 있지만 흐름에 의해 유지된다. 양쪽 끝을 막아 흐름을 멈추면, 물이 무미건조한 평형에 가까워지는 동안 점성이 와류를 없앤다. 나가는 물은 들어오는 물보다 따뜻하므로, 더 큰 계가 엔트로피 비용을 치른 셈이다.
+
+\begin{classroomqa}
+\audiencequestion{생명은 엔트로피를 낮추나요? 생명의 조직은 왜 보통의 요동처럼 생겼다 사라지는 대신 지속될 수 있나요?}
+\lecturerresponse{생명은 국소적으로 엔트로피를 유지하거나 낮출 수 있지만, 그러려면 그보다 더 많은 엔트로피를 밖으로 내보내야 합니다. 생명은 지구를 통과하는 태양 에너지의 흐름을 주로 하는 정상 비평형 흐름으로 지속됩니다. 지구를 드나드는 복사를 차단해 밀폐하면, 지구는 결국 열평형에 가까워지고 조직화된 활동도 멈출 것입니다. 생명은 평형 요동보다 흐름 속의 와류에 더 가깝습니다.
+\lecturetimestamp{00:32:43--00:35:42}}
+\end{classroomqa}
+
+이제 \emph{흥미로운 이야기}는 접어 두고, 강의에서 일부러 무미건조하게 표현한 주제, 즉 자석으로 돌아가자.
+
+\section{자석 냉각하기: 영역과 선택된 방향}
+
+통계역학에서는 실제 쇳조각이 아니더라도 수학적 모형을 자석이라고 부르는 경우가 많다. 여기서 공통으로 중요한 특징은 질서를 이룰 수 있는 국소 자유도가 모여 있다는 점이다. 실제 자성 물질에서 이러한 자유도는 원자의 자기 모멘트, 전자 스핀, 궤도 전류, 또는 결정 단위의 유효 모멘트에서 비롯될 수 있다.
+
+온도가 높으면 열적 무질서로 인해 국소 모멘트가 여러 방향을 향하므로, 순자화는 거의 없거나 전혀 없다. 이웃한 모멘트가 나란할 때 에너지가 낮아진다면, 냉각 과정에서 작은 정렬 영역이 생길 수 있다. 더 냉각하면 에너지상의 이점이 더 중요해져 상관된 영역이 커진다. 강자성 상전이가 일어나는 계에서는 유한한 임계 온도에서 상관 길이가 거시적 규모에 이른다. 그러면 질서상은 방향을 선택한다. 자기장이 없을 때의 에너지는 미리 어느 한 방향도 선호하지 않았는데도 그렇다.
+
+\begin{classroomqa}
+\audiencequestion{북극이 남극을 끌어당기므로 미시적인 자석들은 서로 반대 방향을 향하려 하지 않나요?}
+\lecturerresponse{유효 상호작용은 물질에 따라 다릅니다. 쌍극자에 관한 일반적인 직관만으로 미시적 문제를 모두 설명할 수는 없습니다. 교환 상호작용, 결정 구조, 경쟁하는 상호작용도 중요합니다. 강자성 물질은 유효 저에너지 경향이 평행 정렬을 선호하는 물질이고, 다른 물질에서는 반평행 정렬이 선호될 수 있습니다.
+\lecturetimestamp{00:39:56--00:40:30}}
+\end{classroomqa}
+
+\begin{classroomqa}물질을 냉각하는 동안 모멘트가 정렬되려면 외부 자기장이 있어야 하나요?\audiencequestion{}\lecturerresponse{아닙니다. 자기장이 없어도 상호작용만으로 질서가 생길 수 있습니다. 완전히 대칭인 이상화에서는 서로 다른 방향들의 에너지가 동등하므로, 실제로 구현되는 방향은 초기 요동, 경계 조건 또는 아무리 작더라도 존재하는 외부 잡음 자기장에 의해 선택됩니다. 에너지가 동등한 방향 가운데 하나를 선택하는 것이 자발적 대칭성 깨짐이며, 거시적 질서가 나타나는 것은 자기 상전이입니다.
+\lecturetimestamp{00:40:31--00:42:33}}
+\end{classroomqa}
+
+실제 물질은 복잡하므로, 이제 과감하게 단순화하자. 모든 국소 모멘트는 위나 아래만 향할 수 있다.
+\begin{equation}
+ \sigma_i=+1\quad\hbox{or}\quad\sigma_i=-1.
+ \label{eq:sm8-ising-spin}
+\end{equation}
+이 모형에는 동쪽이나 서쪽이 없다. 앞면과 뒷면이 동전 던지기의 두 결과이듯, 두 방향만 허용하는 것이 모형의 정의다. 이 모형의 가치는 미시적 현실을 그대로 재현하는 데 있는 것이 아니라, 수학적으로 명료하고 여러 계에 공통된 질서 현상을 나타낼 수 있다는 데 있다.
+
+\begin{classroomqa}
+\audiencequestion{이 2상태 물체들은 물리적으로 무엇인가요? 입자라고 생각해야 하나요?}\lecturerresponse{결정 격자점에 놓인 원자를 떠올릴 수 있습니다. 각 원자에는 스핀이나 미시 전류에서 생기는 유효 자기 모멘트가 있습니다. 그러나 모형에서는 두 값을 갖는 변수만 중요합니다. 위와 아래만 허용하는 것은 통계역학을 단순하게 만들기 위한 가정입니다.
+\lecturetimestamp{00:44:22--00:45:01}}
+\end{classroomqa}
+
+\section{외부 자기장 속의 독립 스핀}
+
+첫 번째 모형에는 서로 상호작용하지 않는 스핀이 \(N\)개 있다. 외부 자기장 \(H\)만이 에너지 척도를 제공하고, \(\mu\)은 자기장과 스핀 하나 사이의 결합 세기를 나타낸다. 계산에서 사용한 부호 규약을 그대로 따르자.
+\begin{equation}
+ \epsilon_i=\mu H\sigma_i.
+ \label{eq:sm8-single-spin-energy}
+\end{equation}
+\(H>0\)일 때 위쪽 스핀 \(\sigma_i=+1\)의 에너지는 \(+\mu H\)이고, 아래쪽 스핀 \(\sigma_i=-1\)의 에너지는 \(-\mu H\)이다. 따라서 이 규약에서는 양의 자기장이 아래쪽 스핀을 선호한다. 이는 흔히 쓰이는 다른 명명 규약과 반대이지만, 부호를 일관되게 쓰면 이름에는 어떤 물리적 의미도 없다.
+
+위쪽 스핀의 수를 \(n\), 아래쪽 스핀의 수를 \(m\)이라 하자. 그러면
+\begin{equation}
+ n+m=N,
+ \qquad
+ E=(n-m)\mu H.
+ \label{eq:sm8-counting-energy}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_03.png}
+\caption{독립 스핀의 설정이다. 위쪽 스핀은 \(n\)개, 아래쪽 스핀은 \(m\)개이며, \(n+m=N\)이고 \(E=(n-m)\mu H\)이다.}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(H\), \(\mu\), \(E\)의 차원은 무엇인가요? \(H\)는 수인가요, 자기장인가요?}\lecturerresponse{\(H\)는 외부에서 가하는 자기장 세기를 나타내고, \(\mu\)는 자기 모멘트입니다. 두 양의 곱 \(\mu H\)은 에너지 차원을 가집니다. 추상적인 모형에서는 이 둘을 에너지 차원의 매개변수 하나로 묶어 쓰는 경우가 많고, 그 기호로 흔히 소문자 \(h\)을 씁니다. 여기서는 물리적 기원을 드러내기 위해 두 인자를 따로 두며, \(E\)는 전체 에너지입니다.
+\lecturetimestamp{00:48:21--00:49:27}}
+\end{classroomqa}
+
+\subsection{배치 세기 세기}
+
+\(n\)와 \(m=N-n\)가 주어졌을 때, \(N\)개의 격자점 가운데 어느 \(n\)개가 위를 향하는지 고른다. 배치 수는 다음과 같다.
+\begin{equation}
+ \Omega(n,m)=\binom{N}{n}
+ =\frac{N!}{n!\,m!}.
+ \label{eq:sm8-spin-multiplicity}
+\end{equation}
+이 배치들은 모두 같은 에너지 \eqref{eq:sm8-counting-energy}를 갖는다.
+
+\begin{classroomqa}\audiencequestion{\(n\)와 \(m\)는 서로 독립적이지 않은데 합의 지표로 둘 다 쓸 수 있나요? 조합 인자는 어디에 들어가나요?}\lecturerresponse{\(n+m=N\)이라는 제약 조건을 붙인 쌍으로 쓸 수 있고, 아니면 \(n=0,\ldots,N\)에 대해 합한 뒤 \(m=N-n\)로 두어도 됩니다. 볼츠만 가중치는 각 배치에 적용됩니다. 같은 에너지를 갖는 배치들을 묶으면 그 가중치에 \(N!/(n!\,m!)\)가 곱해집니다.
+\lecturetimestamp{00:52:04--00:53:03}}
+\end{classroomqa}
+
+따라서 분배함수는 다음과 같다.
+\begin{align}
+ Z_N
+ &=\sum_{n+m=N}
+   \frac{N!}{n!\,m!}
+   e^{-\beta\mu H(n-m)}
+ \notag\\
+ &=\sum_{n=0}^{N}
+   \binom{N}{n}
+   \left(e^{-\beta\mu H}\right)^n
+   \left(e^{+\beta\mu H}\right)^{N-n}.
+ \label{eq:sm8-spin-z-sum}
+\end{align}
+다음을 도입하자.
+\begin{equation}
+ x=e^{-\beta\mu H},
+ \qquad
+ y=e^{+\beta\mu H}.
+ \label{eq:sm8-xy}
+\end{equation}
+그러면 이항정리로 계산을 마칠 수 있다.
+\begin{align}
+ Z_N
+ &=\sum_{n=0}^{N}\binom{N}{n}x^n y^{N-n}
+   =(x+y)^N
+ \notag\\
+ &=\left(e^{-\beta\mu H}+e^{+\beta\mu H}\right)^N
+   =\left[2\cosh(\beta\mu H)\right]^N.
+ \label{eq:sm8-spin-z-closed}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_04.png}
+\caption{분배함수의 합, 치환 \(x\)와 \(y\), 그리고 이항정리를 이용해 \(2\cosh(\beta\mu H)\)의 거듭제곱으로 나타내는 과정이다.}
+\lectureframe{00:56:00}
+\end{figure}
+
+더 짧은 유도도 있다. 스핀들이 서로 독립이므로 스핀 하나의 분배함수는 다음과 같다.
+\begin{equation}
+ z_1=e^{-\beta\mu H}+e^{+\beta\mu H}
+    =2\cosh(\beta\mu H),
+ \label{eq:sm8-one-spin-z}
+\end{equation}
+그리고 \(Z_N=z_1^N\)이다. 그래도 조합론을 이용한 유도를 남겨둘 만하다. 배치 수와 에너지의 경쟁을 명시적으로 보여 주기 때문이다.
+
+\section{배치의 자화와 앙상블 자화}
+
+한 배치의 무차원 스핀 초과량을 격자점당 값으로 다음과 같이 정의하자.
+\begin{equation}
+ M_{\rm conf}=\frac{n-m}{N}.
+ \label{eq:sm8-config-magnetization}
+\end{equation}
+모든 스핀이 위를 향할 때는 \(+1\), 모두 아래를 향할 때는 \(-1\)이다. 여기서 사용하는 열역학적 자화는 이 값의 볼츠만 평균이다.
+\begin{equation}
+ M=\left\langle M_{\rm conf}\right\rangle
+  =\left\langle\frac{n-m}{N}\right\rangle.
+ \label{eq:sm8-average-magnetization}
+\end{equation}
+이 정의에는 인자 \(\mu H\)가 들어가지 않는다. 계산 도중 잠시 이 인자를 넣었다가 나중에 뺐다. \(\mu H\)는 스핀 초과량을 에너지로 변환한다.
+
+배치마다 다음 관계가 성립한다.
+\begin{equation}
+ E=N\mu H M_{\rm conf}.
+ \label{eq:sm8-energy-config-m}
+\end{equation}
+평균의 선형성에 따라 곧바로 다음을 얻는다.
+\begin{equation}
+ \langle E\rangle=N\mu H M.
+ \label{eq:sm8-energy-average-m}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_05.png}
+\caption{스핀 배열, 수정된 평균 자화, 그리고 칠판에서 강조한 에너지 관계이다.}
+\lectureframe{01:01:22}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{자화는 특정 배치에 대해 정의되나요, 아니면 평균 자화를 말하나요? 평균 에너지에도 같은 관계가 성립하는 이유는 무엇인가요?}\lecturerresponse{두 개념이 모두 나오므로 구분해야 합니다. \((n-m)/N\)은 한 배치에서의 값이고, \(M\)은 그 볼츠만 평균입니다. \(E=N\mu H M_{\rm conf}\)은 모든 배치에서 각각 성립하므로, 양변을 동일한 확률로 평균하면 \(\langle E\rangle=N\mu H M\)를 얻습니다. 고정된 양인 \(N\), \(\mu\), \(H\)는 평균 바깥으로 뺄 수 있습니다.
+\lecturetimestamp{00:59:54--01:03:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{모형은 위와 아래를 어느 한쪽으로 편향시키지 않으면서 어떻게 모든 스핀을 남북 방향으로 정렬할 수 있나요?--}
+\lecturerresponse{동쪽과 서쪽이 없는 것은 두 상태 모형에 내재되어 있습니다. 허용되는 자유도를 제한한 결과입니다. 현재의 외부장 모형은 위와 아래 사이에 \emph{편향되어} 있습니다. 우리가 택한 부호 규약에서는 장이 아래를 향한 스핀의 에너지를 낮춥니다. 따라서 이 모형에는 위--아래 대칭성이 없습니다. 아래에서 소개할 영장 이징 모형은 그 대칭성을 되살립니다.
+\lecturetimestamp{01:03:41--01:04:53}}
+\end{classroomqa}
+
+\subsection{분배함수로부터 구하는 에너지}
+
+평균 에너지는 다음의 표준 항등식으로 구할 수 있습니다.
+\begin{equation}
+ \langle E\rangle
+ =-\frac{\partial}{\partial\beta}\log Z_N.
+ \label{eq:sm8-energy-identity}
+\end{equation}
+\eqref{eq:sm8-spin-z-closed}을 이용하면,
+\begin{align}
+ \log Z_N
+ &=N\log 2+N\log\!\left[\cosh(\beta\mu H)\right],
+ \notag\\
+ \langle E\rangle
+ &=-N\mu H\,
+   \frac{\sinh(\beta\mu H)}{\cosh(\beta\mu H)}
+ \notag\\
+ &=-N\mu H\tanh(\beta\mu H).
+ \label{eq:sm8-average-energy}
+\end{align}
+이를 \eqref{eq:sm8-energy-average-m}과 결합하면 다음을 얻습니다.
+\begin{equation}
+ \boxed{M=-\tanh(\beta\mu H)}.
+ \label{eq:sm8-magnetization-tanh}
+\end{equation}
+
+답의 형태에 물리가 담겨 있습니다. 다음을 떠올려 봅시다.
+\begin{equation}
+ \cosh x=\frac{e^x+e^{-x}}{2},
+ \qquad
+ \sinh x=\frac{e^x-e^{-x}}{2}.
+ \label{eq:sm8-hyperbolic-definitions}
+\end{equation}
+원점 근처에서는 \(\tanh x=x+O(x^3)\)이고, 양의 \(x\)가 클 때는 \(1\)에 가까워집니다. \(\beta=1/T\)이므로,
+\begin{equation}
+ M\longrightarrow -1
+ \quad (T\longrightarrow0),
+ \qquad
+ M\longrightarrow 0
+ \quad (T\longrightarrow\infty).
+ \label{eq:sm8-magnetization-limits}
+\end{equation}
+온도가 영이면 모든 스핀이 에너지가 더 낮은 아래 상태에 있습니다. 온도가 무한대이면 모든 배열의 가중치가 같아져 장에 의한 편향이 사라집니다. \(H\)의 방향을 바꾸면 \(M\)의 방향도 바뀝니다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_09.png}
+\caption{쌍곡탄젠트 곡선은 \(\beta\mu H\)가 클 때 일정한 값에 가까워지고, 원점 근처에서는 선형입니다. 강의에서 사용한 규약에 따른 물리적 자화는 그래프에 표시된 \(\tanh\)의 음수입니다.}\lectureframe{01:13:14}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{자화는 연속적으로 변합니다. 앞서 언급한 상전이 온도는 어디에 있나요?}
+\lecturerresponse{이 모형에는 그런 온도가 없습니다. 영이 아닌 외부장에 놓인 독립 스핀은 너무 단순한 계이며, \(\log Z_N=N\log[2\cosh(\beta\mu H)]\)은 유한한 양의 온도에서 모두 매끄럽게 변합니다. 상전이가 일어나려면 이제 살펴볼 상호작용하는 대칭 계가 필요합니다. 2차원 영장 이징 모형은 이 계열에서 유한한 온도의 상전이를 보이는 첫 번째 모형입니다.
+\lecturetimestamp{01:14:47--01:15:11}}
+\end{classroomqa}
+
+\section{이징 모형: 이웃한 쌍의 에너지}
+
+외부장은 통계를 시작하기도 전에 방향을 정해 놓았습니다. 그 장을 없애고 이웃한 스핀들이 서로에게 유효한 장을 제공하게 합시다. 한 위치의 양쪽 이웃이 모두 위를 향하면 위를 선호하고, 둘 다 아래를 향하면 아래를 선호합니다. 가장 단순하게 보면 한쪽씩 향할 때는 두 효과가 상쇄됩니다. 이제 에너지는 고립된 위치가 아니라 쌍에 연결됩니다.
+
+이웃한 두 스핀에 대해 \(J>0\)을 택하고 다음과 같이 씁니다.
+\begin{equation}
+ E_{12}=-J\sigma_1\sigma_2.
+ \label{eq:sm8-pair-energy}
+\end{equation}
+정렬된 스핀은 \(\sigma_1\sigma_2=+1\)이므로 에너지는 \(-J\)입니다. 반정렬된 스핀은 곱이 \(-1\)이므로 에너지는 \(+J\)입니다. 따라서 마이너스 부호가 상호작용을 강자성으로 만드는 것입니다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_06.png}
+\caption{국소 강자성 상호작용 \(E_{12}=-J\sigma_1\sigma_2\).}\lectureframe{01:19:59}
+\end{figure}
+
+열린 1차원 사슬의 해밀토니안은 다음과 같습니다.
+\begin{equation}
+ {\cal H}=-J\sum_{i=1}^{N-1}\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-ising-chain-open}
+\end{equation}
+주기적 경계 조건에서는 \(\sigma_{N+1}=\sigma_1\)로 놓고 \(N\)까지 합산합니다. 어느 규약을 쓰더라도 이웃한 각 쌍은 한 번씩 셉니다. 사슬이 길어지면 경계에서 생기는 차이는 무시할 수 있습니다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_10.png}
+\caption{국소 쌍 에너지를 최근접 이웃 사슬의 해밀토니안으로 확장한 모습.}\lectureframe{01:20:46}
+\end{figure}
+
+온도가 무한대이면 모든 스핀 배열의 확률이 같습니다. 평균적으로 결합의 절반은 정렬되어 있고 절반은 반정렬되어 있으므로,
+\begin{equation}
+ \left\langle\sigma_i\sigma_{i+1}\right\rangle_{T=\infty}=0,
+ \qquad
+ \left\langle{\cal H}\right\rangle_{T=\infty}=0.
+ \label{eq:sm8-infinite-t-bond}
+\end{equation}
+여기서 에너지가 영이라는 것은 낮은 에너지 상태라는 뜻이 아닙니다. 모든 스핀이 정렬된 바닥 상태의 결합당 에너지는 \(-J\)이므로, 무한 온도 앙상블의 에너지는 바닥 상태보다 계의 크기에 비례해 더 큽니다.
+
+\begin{classroomqa}
+\audiencequestion{각각의 곱 \(\sigma_i\sigma_{i+1}\)은 \(+1\) 또는 \(-1\)인데, 평균이 어떻게 영일 수 있나요?}
+\lecturerresponse{평균이 개별 배열에서 취하는 값 가운데 하나일 필요는 없습니다. 무한 온도에서는 정렬된 결합과 반정렬된 결합이 같은 빈도로 나타나므로, 이들의 \(+1\) 기여와 \(-1\) 기여가 상쇄됩니다. 자화를 논할 때 중요했던 평균의 구분이 여기서도 중요합니다.
+\lecturetimestamp{01:21:39--01:22:37}}
+\end{classroomqa}
+
+\subsection{두 바닥 상태와 하나의 전역 대칭성}
+
+온도가 영이면 모든 결합이 정렬되려 합니다. 따라서 바닥 상태는 두 가지입니다.
+\begin{equation}
+ (+,+,+,\ldots,+)
+ \qquad\hbox{and}\qquad
+ (-,-,-,\ldots,-).
+ \label{eq:sm8-two-ground-states}
+\end{equation}
+두 상태의 에너지는 정확히 같습니다. 해밀토니안은 모든 스핀을 뒤집는 변환,
+\begin{equation}
+ \sigma_i\longmapsto-\sigma_i
+ \qquad\hbox{for all }i,
+ \label{eq:sm8-global-flip}
+\end{equation}
+이 결합의 모든 곱을 그대로 둔다는 점에서 이 퇴 degeneracy를 명확히 보여 줍니다.
+\begin{equation}
+ (-\sigma_i)(-\sigma_{i+1})
+ =\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-global-flip-invariance}
+\end{equation}
+스핀 하나만 뒤집으면 인접한 결합 곱의 부호가 바뀌므로 대칭 변환이 아닙니다. 모든 스핀을 뒤집는 것은 대칭 변환입니다. 이것이 영장 이징 모형의 전역 \(\mathbb Z_2\) 대칭성입니다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_11.png}
+\caption{모든 쌍의 곱을 불변으로 두는 전역 변환 \(\sigma_i\mapsto-\sigma_i\)과 나란히 나타낸 사슬의 해밀토니안.}\lectureframe{01:26:31}
+\end{figure}
+
+온도가 엄밀히 영일 때 한 스핀에 아주 작은 장을 가해 봅시다. 그러면 두 바닥 상태의 동률이 깨지고, 강자성 결합이 그 선택을 사슬 전체로 전달합니다. 상태가 선택된 뒤 장을 제거해도 큰 계는 아주 오랫동안 그 방향을 유지할 수 있습니다. 이것이 자발적 대칭성 깨짐을 이해하는 직관적인 출발점입니다.
+
+여기에는 반드시 짚고 넘어가야 할 통계적 조건이 하나 있습니다. 유한한 계에 정확히 영인 장을 가하면 정준 앙상블은 두 바닥 상태에 같은 가중치를 부여하므로 평균 자화는 영입니다. 대칭성이 깨진 상은 선택을 유도하는 장을 제거하기 전에 열역학적 극한을 취해 정의합니다.
+\begin{equation}
+ M_*=\lim_{H\to0^+}\lim_{N\to\infty}M_N(H).
+ \label{eq:sm8-order-of-limits}
+\end{equation}
+1차원 최근접 이웃 모형에서 이 극한이 영이 아닌 값이 되는 것은 \(T=0\)일 때뿐입니다. 유한한 온도에서는 무한 사슬의 장거리 질서가 사라집니다. 2차원에서는 영이 아닌 임계 온도 아래에서 질서상이 유지됩니다.
+
+\subsection{역사에 관한 정정}
+
+강의에서는 이 역사를 이징을 곤란하게 만드는 농담과 함께 소개합니다. 실제 연대는 이징에게 더 온화합니다. 빌헬름 렌츠가 모형을 제안했고, 그의 제자 에른스트 이징은 1924년 논문에서 1차원 사례를 풀었으며, 이 논문은 1925년에 출판되었습니다. 이징은 1차원에서 유한 온도의 강자성 상전이가 없다는 것을 올바르게 밝혔지만, 더 높은 차원의 폭넓은 의미는 당시 아직 이해되지 않았습니다. 크라머스와 바니에르는 2차원 쌍대성을 발전시키고 정사각 격자의 임계점을 확인했으며, 그 결과는 1941년에 나왔습니다. 온도가 영인 경우의 유명한 정확해는 온사거가 1944년에 제시했습니다.
+
+이제 다음 계산은 분명합니다. \eqref{eq:sm8-ising-chain-open}의 분배함수를 구하고, 상관관계가 온도에 따라 어떻게 달라지는지 밝혀야 합니다. 이 계산을 통해 1차원 사슬에 유한 온도 상전이가 없는 이유와 차원이 중요한 이유를 명시적으로 확인할 수 있습니다.
+
+\section{지금까지 살펴본 내용}
+
+재귀 문제와 스핀 문제는 같은 통계적 교훈을 두 가지 방식으로 보여 줍니다. 기체에서는 엔트로피 결손 때문에 거시 상태가 지수적으로 드물어집니다.
+\begin{equation}
+ P(A)=e^{-\Delta S},
+ \qquad
+ \tau_{\rm rec}\sim\tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-summary-recurrence}
+\end{equation}
+가역 역학에서는 되돌아갈 수 있지만, 위상 공간 부피의 엄청난 비율 때문에 일상적인 경험에서는 이완만 관찰됩니다. 남아 있는 시간의 화살 문제는 미시적 가역성의 실패가 아니라 우주의 특수한 초기 조건에 있습니다.
+
+장 속의 독립 스핀은 다음과 같습니다.
+\begin{equation}
+ Z_N=\left[2\cosh(\beta\mu H)\right]^N,
+ \qquad
+ M=-\tanh(\beta\mu H).
+ \label{eq:sm8-summary-spins}
+\end{equation}
+이 계는 명시적으로 편향되어 있으며 온도에 따라 매끄럽게 변합니다. 이징 상호작용
+\begin{equation}
+ {\cal H}=-J\sum_i\sigma_i\sigma_{i+1}
+ \label{eq:sm8-summary-ising}
+\end{equation}
+은 외부 편향을 없애고 전역 위--아래 대칭성을 되살립니다. 그러면 핵심적인 질서 문제, 즉 대칭적인 다체 계가 영이 아닌 온도에서도 두 질서 상태 가운데 하나를 선택할 수 있는가라는 질문이 제기됩니다.

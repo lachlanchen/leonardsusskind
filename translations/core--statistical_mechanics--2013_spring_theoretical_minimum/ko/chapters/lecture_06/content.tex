@@ -1,0 +1,637 @@
+\chapter{약한 상호작용, 비리얼 보정, 그리고 비정확 미분}
+
+\lectureoverview{측정과 온도의 조작적 의미에서 출발해, 짧은 거리 상호작용을 약하게 켰을 때 희박 기체가 이상기체 법칙에서 어떻게 벗어나는지 살펴본다. 분배함수로 에너지와 압력에 대한 첫 상호작용 보정을 구하고, 그 유효 범위를 확인한다. 마지막 수학적 논의에서는 정확 미분, 닫힌 경로, 구체적인 이상기체 사례를 통해 상태함수와 경로에 따라 달라지는 열 및 일을 구별한다.}
+
+\section{측정 장치가 실제로 측정하는 것}
+
+실험실의 어떤 장치도 자연에 직접 손을 뻗어 추상적인 수학 변수의 값을 알려 주지는 않는다. 용수철저울은 늘어난 길이를 표시하고, 온도계는 액체 기둥의 높이를 표시한다. 눈에 보이는 반응과 알고자 하는 물리량 사이에 재현 가능한 관계가 성립하기 때문에, 전자를 힘의 측정이라 하고 후자를 온도의 측정이라 부른다.
+
+그 관계가 유효한 범위는 한정되어 있다. 용수철은 탄성 한계 안에서만 후크 법칙을 따르며, 힘이 충분히 커지면 결국 변형되거나 부러진다. 더 일반적으로, 매끄러운 표시값 \(R\)이 물리량 \(X\)에 의존한다면, 선택한 작동점 근방에서는
+\begin{equation}
+ \Delta R \simeq
+ \left.\frac{dR}{dX}\right|_{X_0}\Delta X.
+ \label{eq:sm6-local-linear-response}
+\end{equation}
+전체 반응 곡선이 비선형이어도 표시값의 작은 변화는 목표 물리량의 작은 변화에 비례한다. 이러한 국소 선형화는 통상적인 보정의 원리다.
+
+표시값은 교란 변수에도 의존할 수 있다. 용수철은 온도나 압력에 약하게 반응할 수 있다. 온도계의 수은 높이는 중력에 따른 방향, 유리의 성질, 또는 재료의 느린 변화에도 영향을 받을 수 있다. 측정 절차만으로 이런 의존성이 없음을 증명할 수는 없다. 대신 해당 변수를 고정하거나 필요한 정밀도에서 그 영향이 무시할 만함을 보인다.
+
+\begin{classroomqa}
+\audiencequestion{국소 중력장이나 온도계를 들고 있는 방향에 따라 눈금이 달라질 수 있나요?}
+\lecturerresponse{원칙적으로는 그렇습니다. 방향이 무시할 수 없을 만큼 영향을 준다면 온도계를 수직으로 들라는 지침도 장치의 정의에 포함됩니다. 지구 표면 근처에서는 중력장이 충분히 안정적이므로, 보통 남는 변동은 무시할 만합니다.
+\lecturetimestamp{00:04:08--00:05:00}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{시간이 지나면서 노화나 화학적 변화가 보정을 서서히 바꿀 수 있나요?}
+\lecturerresponse{그럴 수 있습니다. 수은과 유리는 일반적인 측정에 쓸 만큼 충분히 불활성이며, 상상하기 어려울 만큼 긴 시간에 걸친 변화는 실험과 무관합니다. 보정은 언제나 특정 장치와 범위, 절차, 지속 시간을 전제로 하는 진술입니다.
+\lecturetimestamp{00:05:03--00:06:11}}
+\end{classroomqa}
+
+섭씨 온도계에서는 재현 가능한 두 기준 상태로 편리한 눈금을 정한다. 물의 어는점과 끓는점에서 액체 기둥의 높이를 각각 \(h_f\)과 \(h_b\)라 하면, 반응이 거의 선형인 범위 안에서
+\begin{equation}
+ T_{\mathrm C}=100\,\frac{h-h_f}{h_b-h_f}.
+ \label{eq:sm6-celsius-calibration}
+\end{equation}
+어는점에서 \(T_{\mathrm C}=0\)로 정한 것은 관례다. 이는 열에너지가 0인 상태가 아니다. 추운 날 화씨 0도도 절대영도가 아닌 것과 같다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}
+선형 보정을 위해 짧은 구간을 표시한, 매끄럽지만 비선형인 온도계 반응.\caption{
+}
+\lectureframe{00:07:55}
+\end{figure}
+
+\section{평형과 에너지 척도로서의 온도}
+
+온도계와 주변 매질이 열평형에 도달한 뒤에야 온도계는 주변의 온도를 측정한다. 그전의 눈금은 평형을 향해 변하고 있을 뿐이다. 실용적인 확인 방법은 간단하다. 눈금의 변화가 멈출 때까지 기다리면 된다. 이 간단한 규칙 뒤에는 대기 시간을 결정하는 물리 과정이 숨어 있다.
+
+\begin{classroomqa}
+\audiencequestion{평형화는 온도계 구 주위의 경계층에서만 일어나나요? 얼마나 기다려야 하나요?}
+\lecturerresponse{에너지가 유리를 통과해 주변 매질과 교환되어야 하므로, 걸리는 시간은 온도계와 그 열전도율, 매질에 따라 달라집니다. 바로 주변 환경도 균일한 평형 상태를 대표해야 합니다. 실험에서는 눈금이 더는 변하지 않을 때 측정값을 받아들입니다.
+\lecturetimestamp{00:08:45--00:10:13}}
+\end{classroomqa}
+
+온도와 밀도는 이 대기 시간에 서로 다른 역할을 한다. 매우 희박한 기체도 매우 뜨거울 수 있다. 존재하는 분자 수는 적더라도 각 분자는 큰 운동에너지를 지닐 수 있기 때문이다. 그러나 분자들이 온도계에 드물게 충돌하므로 평형화는 느릴 수 있다. 온도를 고정한 채 밀도를 100배 또는 1000배 낮춰도 분자 에너지 척도는 낮아지지 않는다. 낮아지는 것은 그 에너지가 장치에 전달되는 속도다.
+
+\begin{classroomqa}
+\audiencequestion{실내의 복사 온도가 공기의 온도와 다를 수 있나요?}
+\lecturerresponse{그렇습니다. 물질과 복사가 열평형을 이룰 때에만 둘의 온도가 같습니다. 중성 공기는 조명이 켜진 실내의 광학 복사 대부분과 약하게 결합하므로, 광자 분포가 공기 온도에 해당하는 평형 흑체 복사장이 아닐 수 있습니다.
+\lecturetimestamp{00:11:26--00:12:20}}
+\end{classroomqa}
+
+평형이 성립한 뒤에는 온도를 에너지 척도로 보는 것이 가장 적절하다. 계속 \(k_B=1\)인 단위를 사용하므로 \(T\) 자체의 차원은 에너지다. 단원자 이상기체에서는
+\begin{equation}
+ E_0=\frac{3}{2}NT.
+ \label{eq:sm6-ideal-energy}
+\end{equation}
+분자당 열에너지는 \(T\)로 정해지지만, 그에 해당하는 속도는 여전히 분자 질량에 의존한다.
+
+\section{약한 상호작용 켜기}
+
+\begin{classroomqa}
+\audiencequestion{어떤 조건에서 이상기체 근사가 무너지며, 그 무너짐을 수학적으로 보일 수 있나요?}
+\lecturerresponse{상호작용하지 않는 기체의 해에서 출발해 작은 상호작용을 켜면 됩니다. 그 변화를 전개해 첫 보정을 계산하고 이상기체 항과 비교합니다. 보정이 더는 작지 않을 때 근사는 실패합니다.
+\lecturetimestamp{00:12:25--00:14:40}}
+\end{classroomqa}
+
+이는 표준 섭동 전략이다. 문제가 \(\lambda=0\)에서 풀린다면 결합상수 \(\lambda\)를 도입하고,
+\begin{equation}
+ F(\lambda)=F(0)+\lambda F_1+\lambda^2F_2+\cdots,
+ \label{eq:sm6-perturbative-template}
+\end{equation}
+각 항을 유지할 때마다 그 항이 앞선 항보다 작은지 묻는다. 여기서 기준 문제는 이상기체다. 희박한 시료, 평균 분리 거리보다 짧은 상호작용 범위, 그리고 첫 상호작용 항이 유용할 만큼 약한 퍼텐셜이 물리적 작은 양을 제공한다. 밀도가 높거나 힘의 작용 범위가 길면 각각의 충돌이 약해 보여도 근사가 무효가 될 수 있다.
+
+분자 \(i\)의 위치와 운동량을 각각 \(x_i\in\mathbb R^3\)과 \(p_i\in\mathbb R^3\)라 하자. 질량이 \(m\)인 동일한 분자에 대해 다음과 같이 둔다.
+\begin{equation}
+ H(X,P)=
+ \sum_{i=1}^{N}\frac{p_i^2}{2m}
+ +\sum_{i<j}u\!\left(|x_i-x_j|\right),
+ \label{eq:sm6-interacting-hamiltonian}
+\end{equation}
+여기서 \(X=(x_1,\ldots,x_N)\)이고 \(P=(p_1,\ldots,p_N)\)이다. \(i<j\)라는 제한은 자기 자신과의 쌍을 제외하고 \((i,j)\)를 한 번만 센다.
+\begin{equation}
+ \sum_{i<j}1=\binom{N}{2}=\frac{N(N-1)}{2}.
+ \label{eq:sm6-pair-count}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{입자 번호를 모두 사용해 각각 합을 구하면 안 되나요?}
+\lecturerresponse{쌍 \((3,7)\)는 같은 물리적 쌍 \((7,3)\)와 같고, 입자는 자기 자신과 쌍을 이루지 않습니다. 합의 범위를 \(i<j\)로 제한하면 이 두 사실이 모두 반영됩니다. 질량 기호는 \(m\)로 두고 \(i,j\)는 입자를 표시하는 데 써서, \(m\)를 두 용도로 쓸 때 생길 수 있는 표기 충돌을 피합니다.
+\lecturetimestamp{00:17:52--00:19:12}}
+\end{classroomqa}
+
+전체 배치 퍼텐셜을 다음과 같이 쓰자.
+\begin{equation}
+ U(X)=\sum_{i<j}u\!\left(|x_i-x_j|\right).
+ \label{eq:sm6-total-potential}
+\end{equation}
+상호작용은 병진 불변이고 짧은 거리 범위를 갖는다고 가정한다. 분자 길이에 비해 \(r\)가 클 때 \(u(r)\)은 무시할 수 있을 만큼 작아진다.
+
+\section{쌍 상호작용 세기의 적분}
+
+첫 번째 보정에는 약한 쌍 퍼텐셜의 적분값 하나만 들어간다.
+\begin{equation}
+ U_0\equiv\int_{\mathbb R^3}d^3r\,u(r).
+ \label{eq:sm6-u0-definition}
+\end{equation}
+단위는 에너지 곱하기 부피다. 상호작용의 전형적인 세기와 그 상호작용이 유효한 부피를 하나로 묶은 양이다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}
+\caption{단거리 쌍 퍼텐셜을 적분된 세기 \(U_0=\int d^3r\,u(r)\)로 압축한 표현}
+\lectureframe{00:25:15}
+\end{figure}
+
+\(U_0\)가 왜 유용한지 알아보기 위해 한 쌍을 생각하자.
+\begin{equation}
+ I_2=\int_V d^3x_1\,d^3x_2\,
+ u\!\left(|x_1-x_2|\right).
+ \label{eq:sm6-two-particle-integral}
+\end{equation}
+상대좌표 \(r=x_2-x_1\)를 도입하자. 경계에서 멀리 떨어진 곳에서는 상대좌표 적분이 \(U_0\)를 주고, 쌍의 공통 위치는 용기 전체를 훑는다. 따라서
+\begin{equation}
+ I_2=V U_0+\text{surface corrections}.
+ \label{eq:sm6-pair-integral-vu0}
+\end{equation}
+상호작용 범위 안에 있는 입자에서 보정이 생긴다. 이때 상대좌표의 이웃 영역 일부가 상자 밖에 놓인다. 보정의 상대적 크기는 표면적 대 부피 비율에 따라 정해지므로, 거시적 한계에서는 사라진다.
+
+\begin{classroomqa}
+\audiencequestion{\(U_0\)는 임의로 고른 한 쌍을 뜻하나요? 한 입자를 다른 입자로부터 일정한 거리에 고정하나요?}
+\lecturerresponse{어떤 한 쌍에도 적용되는 공통 상호작용 법칙을 뜻합니다. 첫 번째 입자를 고정하고 두 번째 입자의 모든 상대 위치에 대해 적분합니다. 이 적분 동안 두 입자 사이 거리는 고정되지 않습니다. 가까운 상호작용 영역만 실질적으로 기여해 \(U_0\)를 만듭니다.
+\lecturetimestamp{00:26:03--00:27:33}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{왜 두 번째 위치 적분은 용기 전체 부피를 주지만 첫 번째 적분은 그렇지 않나요?}
+\lecturerresponse{상대 배치를 \(U_0\)에 반영해 적분한 뒤에는 쌍 전체를 시료 안에서 평행이동할 수 있습니다. 이 공통 평행이동이 큰 인자 \(V\)를 제공합니다. 상호작용 이웃 영역은 분자 크기의 부피로 이미 \(U_0\) 안에 포함되어 있으며, 용기 부피와 같은 인자가 하나 더 생기는 것은 아닙니다.
+\lecturetimestamp{00:27:48--00:29:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{특히 벽 근처에서는 어느 지점을 고정하느냐에 따라 값이 달라질 수 있나요?}
+\lecturerresponse{병진 불변성 때문에 벌크 값은 고정한 지점에 무관합니다. 벽 근처에서는 이웃 위치 중 일부가 허용되지 않아 적분값이 약간 달라집니다. 분자 크기의 두께를 가진 표면층만 영향을 받으므로 상자가 거시적이면 오차는 무시할 수 있습니다.
+\lecturetimestamp{00:29:24--00:31:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{이 결과는 두 입자의 모든 배치에 걸쳐 퍼텐셜 에너지를 적분한 값인가요? 왜 큰 부피 하나에만 비례하나요?}
+\lecturerresponse{그렇습니다. \(V U_0\)에는 용기 부피 하나와 분자 크기의 상호작용 부피 하나가 들어 있으므로 단위는 에너지 곱하기 부피의 제곱입니다. 이 가운데 시료 크기에 따라 커지는 것은 첫 번째 부피뿐입니다.
+\lecturetimestamp{00:31:31--00:32:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{부피가 고정되었을 때 표면적을 최소화하는 구를 택하면 벌크 답이 달라지나요?}
+\lecturerresponse{작은 경계 보정만 달라집니다. 일반적인 거시적 모양에서는 표면에서 분자 거리 이내에 있는 입자 수가 벌크의 입자 수에 비해 무시할 만큼 적습니다. 용기 자체의 크기가 분자 규모에 가까워질 때에만 표면이 중요해집니다.
+\lecturetimestamp{00:32:04--00:33:58}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{입자 궤적을 퍼텐셜로 바꾸면서 충돌을 생략한 건가요?}
+\lecturerresponse{아닙니다. 힘은 퍼텐셜의 미분이며, 바로 그 힘이 충돌을 일으킵니다. 평형 통계역학에서는 충돌을 하나씩 따라갈 필요가 없습니다. 충돌의 효과는 에너지, 따라서 볼츠만 가중치에 담겨 있습니다.
+\lecturetimestamp{00:33:59--00:35:29}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{쌍 힘은 유지하면서 실제 삼체 상호작용은 제외하면 무엇이 빠지나요?}
+\lecturerresponse{미시적 에너지에는 실제 삼체 항이 포함될 수 있고, 쌍 퍼텐셜의 고차 항도 다입자 상관을 만들어 냅니다. 그러나 희박 기체에서는 지정한 세 입자가 하나의 분자 이웃 영역에 함께 있을 가능성이 두 입자가 함께 있을 가능성보다 훨씬 낮습니다. 그러므로 쌍 효과가 첫 밀도 보정을 주고, 더 높은 클러스터는 밀도의 더 높은 거듭제곱 차수에 나타납니다.
+\lecturetimestamp{00:35:29--00:38:14}}
+\end{classroomqa}
+
+\section{분배함수를 따라가는 계산}
+
+통계적 방법의 장점이 이제 분명해진다. 해밀토니안이 주어지면 벽 근처나 충돌 중의 자세한 속도 분포를 추측할 필요가 없다. 정준 분배함수를 쓰고 그 대수를 따라가면 된다.
+\begin{equation}
+\begin{aligned}
+ Z&=
+ \frac{1}{N!h^{3N}}
+ \int d^{3N}P\,d^{3N}X\\
+ &\qquad{}\times e^{-\beta K(P)}e^{-\beta U(X)},\\
+ K(P)&=\sum_i\frac{p_i^2}{2m}.
+\end{aligned}
+ \label{eq:sm6-full-partition-function}
+\end{equation}
+인자 \(h^{3N}\)는 고전 위상공간 측도를 무차원으로 만들고, \(N!\)는 동일 입자의 순열로 인한 중복 계산을 제거한다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}
+다입자 에너지와 이에 대응하는 분배함수의 운동 및 배치 인자.\caption{
+}
+\lectureframe{00:40:35}
+\end{figure}
+
+운동량과 위치는 분리된다. 배치 적분에 \(V^N\)를 곱했다가 나누면 이상기체 결과를 분리해 낼 수 있다.
+\begin{align}
+ Z
+ &=\left[
+ \frac{V^N}{N!h^{3N}}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ \right] \notag\\
+ &\quad\times\left[
+ \frac{1}{V^N}
+ \int d^{3N}X\,e^{-\beta U(X)}
+ \right] \notag\\
+ &\equiv Z_0\,C(\beta,V,N).
+ \label{eq:sm6-z-factorization}
+\end{align}
+익숙한 가우스 인자는 다음과 같다.
+\begin{equation}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ =\left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm6-gaussian-factor}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}
+정규화한 배치 인자에서 분리해 낸 이상기체 분배함수.\caption{
+}
+\lectureframe{00:43:45}
+\end{figure}
+
+인자 \(N!\)는 정규화된 비율 \(C\)이나 아래에서 사용할 특정한 고정-\(N\) 미분에는 영향을 주지 않는다. 그러나 열역학 전체에서 뺄 수 있는 인자는 아니다. 올바른 상태 수 계산과 계에 비례하는 엔트로피를 위해 필수적이다.
+
+상호작용의 1차까지는
+\begin{equation}
+ e^{-\beta U(X)}
+ =1-\beta U(X)+O(U^2).
+ \label{eq:sm6-boltzmann-expansion}
+\end{equation}
+따라서
+\begin{align}
+ C
+ &=
+ 1-\frac{\beta}{V^N}
+ \sum_{i<j}
+ \int d^{3N}X\,u(|x_i-x_j|)
+ +O(U^2) \notag\\
+ &=
+ 1-\frac{\beta}{V^N}
+ \frac{N(N-1)}{2}
+ V^{N-2}(V U_0)+O(U^2) \notag\\
+ &=
+ 1-\beta\frac{N(N-1)}{2V}U_0+O(U^2).
+ \label{eq:sm6-configurational-correction}
+\end{align}
+각 쌍은 같은 \emph{적분}을 갖지만, 순간적인 입자 간 거리나 퍼텐셜 에너지가 같은 것은 아니다. 나머지 \(N-2\)개의 위치 적분은 각각 \(V\) 인자 하나씩을 준다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}
+\caption{쌍의 개수 세기, 나머지 좌표들의 부피, 그리고 첫 번째 배치 보정 \(1-\beta N^2U_0/(2V)\)}
+\lectureframe{00:53:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(1\)의 선도항은 퍼텐셜이 영분리에서 사라진다고 가정하나요?}
+\lecturerresponse{아닙니다. 이는 지수함수 전개의 0차 항이므로 \(u(0)\)의 값과 무관합니다. 퍼텐셜은 다음 항 \(-\beta U(X)\)에 들어갑니다.
+\lecturetimestamp{00:46:19--00:46:48}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{쌍마다 거리가 다른데 왜 모든 쌍을 같은 식으로 바꿔 써도 되나요?}
+\lecturerresponse{각 위치에서의 값이 서로 같다고 하는 것이 아닙니다. 모든 항은 동일한 전체 배치 공간에 대해 적분되며, 입자 번호는 어느 쌍이냐를 구별하지 않습니다. 적분식의 형태와 값이 모두 같습니다.
+\lecturetimestamp{00:50:00--00:51:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{쌍의 수는 \(N(N-1)/2\)인가요, \(N(N+1)/2\)인가요?}
+\lecturerresponse{\(N(N-1)/2\)입니다. 입자 하나를 고르면 서로 다른 짝은 \(N-1\)개뿐이며, 2로 나누어 순서를 뒤집은 경우를 제거합니다. 거시적인 \(N\)에 대해 \(N(N-1)\)를 \(N^2\)로 바꾸어도 상대적인 \(1/N\) 보정만 달라집니다.
+\lecturetimestamp{00:48:33--00:49:56}}
+\end{classroomqa}
+
+\(\log(1-x)=-x-x^2/2-x^3/3-\cdots\)이므로, 번갈아 부호가 바뀌는 급수가 아니다. 로그의 1차 근사는
+\begin{equation}
+ \log Z
+ =
+ \log Z_0
+ -\beta\frac{N(N-1)}{2V}U_0
+ +O(U^2).
+ \label{eq:sm6-logz-correction}
+\end{equation}
+\(N\)가 클 때는 유한한 \(N\) 차수의 구별이 필요하지 않으므로 \(N(N-1)\)을 \(N^2\)로 바꾸어도 된다.
+
+\begin{remark}저밀도에서 제어 가능한 정식화에는 메이어 함수
+\(f(r)=e^{-\beta u(r)}-1\)와 두 번째 비리얼 계수
+\begin{equation}
+ B_2(T)=-\frac{1}{2}\int d^3r\,f(r).
+ \label{eq:sm6-second-virial}
+\end{equation}를 사용한다. 약한 퍼텐셜에서는 \(f(r)\simeq-\beta u(r)\)이므로 \(B_2\simeq\beta U_0/2\)가 되고, 아래의 결과를 얻는다. 직접 \(e^{-\beta u}\)를 전개하는 것이 유효하지 않은 단단한 반발 코어에는 이 형식이 필요하다.
+\end{remark}
+
+\section{에너지, 압력, 그리고 보정의 의미}
+
+\(Z\)의 로그가 유용한 이유는 그 미분값을 측정할 수 있기 때문이다. 미시적 퍼텐셜이 온도에 의존하지 않는다고 가정하면,
+\begin{align}
+ E
+ &=-\left(\frac{\partial\log Z}{\partial\beta}\right)_{V,N} \notag\\
+ &=
+ \frac{3}{2}NT
+ +\frac{N(N-1)}{2V}U_0+O(U^2) \notag\\
+ &\simeq
+ N\left(\frac{3}{2}T+\frac{1}{2}\rho U_0\right),
+ \qquad
+ \rho=\frac{N}{V}.
+ \label{eq:sm6-energy-correction}
+\end{align}
+겉보기에는 계에 비례하지 않는 \(N^2\)에는 \(1/V\)이 함께 곱해져 있다. 밀도를 고정하면 \(N^2/V=N\rho\)이므로 전체 에너지는 여전히 계의 크기에 비례한다. 입자당 추가 에너지가 밀도에 비례하는 것은 선택한 분자가 가까이에 다른 분자를 만날 때에만 쌍 에너지를 얻기 때문이다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}
+\caption{첫 번째 상호작용 보정을 계에 비례하는 에너지로 다시 나타낸 식 \(N[3T/2+\rho U_0/2]\)}
+\lectureframe{01:03:25}
+\end{figure}
+
+압력은 더 쉽게 측정할 수 있다. 앞 장의 결과를 사용하면,
+\begin{equation}
+ P=T\left(\frac{\partial\log Z}{\partial V}\right)_{T,N},
+ \label{eq:sm6-pressure-from-z}
+\end{equation}
+다음과 같이 얻는다.
+\begin{align}
+ P
+ &=
+ \frac{NT}{V}
+ +T\frac{\partial}{\partial V}
+ \left(-\beta\frac{N(N-1)}{2V}U_0\right)
+ +O(U^2) \notag\\
+ &=
+ \rho T+\frac{1}{2}\rho^2U_0
+ +O\!\left(\frac{\rho U_0}{N},U^2\right).
+ \label{eq:sm6-pressure-correction}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}
+첫 번째 밀도 제곱 보정을 포함해 헬름홀츠 자유에너지의 부피 미분으로 구한 압력.\caption{
+}
+\lectureframe{01:09:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{왜 첫 보정으로 \(\rho^2\)가 자연스럽고 다른 거듭제곱은 아닌가요?}
+\lecturerresponse{이상기체 항은 작은 영역에 입자 하나가 있을 때 생기므로 \(\rho\)에 비례합니다. 상호작용에는 분자 크기의 이웃 영역에 입자 둘이 함께 있어야 하므로 그 확률은 \(\rho^2\)에 비례합니다. 인자 \(1/2\)는 쌍을 셀 때 \((i,j)\)와 \((j,i)\)를 따로 세지 않도록 하는 것과 같은 계수입니다.
+\lecturetimestamp{01:24:27--01:26:00}}
+\end{classroomqa}
+
+온도를 고정한 채 \(V\)를 바꾸면서 \(\rho=N/V\)을 측정해 압력을 그래프로 그릴 수 있다. 이상기체 법칙은 선형 항이다. \(P(\rho)\)의 곡률이 첫 상호작용 보정을 드러낸다. 이 약한 퍼텐셜 근사에서는 \eqref{eq:sm6-pressure-from-z}의 인자 \(T\)가 \(\beta=1/T\)를 상쇄하므로 보정에 온도가 명시적으로 나타나지 않는다.
+
+\begin{classroomqa}
+\audiencequestion{삼체 효과를 포함해야 할 만큼 밀도가 커지는 시점은 어떻게 정하나요?}
+\lecturerresponse{밀도 차수로 볼 때 다음 비리얼 항은 \(\rho^3\)에 비례하지만, 계수는 \(U_0\)만으로 추론할 수 없습니다. 쌍 상호작용의 상관된 곱과, 존재한다면 실제 삼체 힘도 기여합니다. 다음 클러스터 계수를 계산해 \(\rho^2\) 항과 비교해야 합니다. 추측한 식을 결과인 것처럼 제시해서는 안 됩니다.
+\lecturetimestamp{01:10:50--01:13:38}}
+\end{classroomqa}
+
+보정의 크기가 작을 때 이상기체 항이 우세하다.
+\begin{equation}
+ \begin{aligned}
+ \frac{1}{2}\rho^2|U_0|&\ll \rho T,\\
+ |\rho U_0|&\ll T
+ \qquad\text{(parametrically)}.
+ \end{aligned}
+ \label{eq:sm6-ideal-validity}
+\end{equation}
+두 번째 부등식의 양변은 모두 에너지다. \(\rho U_0\)은 입자당 상호작용 에너지 척도이고, \(T\)은 운동에너지 척도다. 보통의 희박한 실온 기체는 이 영역 안쪽에 훨씬 여유 있게 놓인다. 분자 이웃 영역이 충분히 자주 점유되어 상호작용이 열운동과 맞먹을 때에야 상당한 편차가 나타난다.
+
+\begin{classroomqa}
+\audiencequestion{이 방의 공기에 대해 이 기준을 어림할 수 있나요?}
+\lecturerresponse{\(U_0\)을 분자 상호작용 에너지와 분자 부피의 곱으로 어림하고, 이를 수밀도와 곱한 결과를 \(k_BT\)와 비교하면 됩니다. 대략적인 분자 값을 대입하면 일반적인 실내 공기에서는 상호작용 척도가 훨씬 작음을 알 수 있습니다. 분자들이 서로의 상호작용 범위 안에 자주 들어갈 정도로 밀집하려면 상당한 압축이 필요합니다.
+\lecturetimestamp{01:16:24--01:18:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(U_0\)은 양수나 음수가 될 수 있나요?}
+\lecturerresponse{그렇습니다. 이 근사에서 적분된 상호작용이 양수이면 순반발성이므로 압력이 \(\rho T\)보다 높아집니다. 음수이면 순인력이므로 압력이 낮아집니다. 이 부호 검사는 \eqref{eq:sm6-pressure-correction}의 물리적 타당성을 바로 확인해 줍니다.
+\lecturetimestamp{01:18:56--01:20:29}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}
+\caption{반발성 및 인력 쌍 퍼텐셜의 정성적 형태와, 보정항이 \(U_0\)의 부호를 따르는 압력 공식}
+\lectureframe{01:21:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{정전기적 반발력, 중력에 의한 인력, 또는 실제 분자력을 이 계산에 넣을 수 있나요?}
+\lecturerresponse{미시적 퍼텐셜은 원자물리학, 분자물리학 또는 양자물리학에서 주어진다. 중성 분자에는 흔히 짧은 거리에서 급격히 반발하는 코어와 더 긴 거리까지 미치는 인력성 반데르발스 꼬리가 있으며, 이를 개략적으로 12--6 퍼텐셜로 나타내기도 한다. 이런 단단한 코어에는 전체 메이어 함수 공식을 사용해야 한다. 중력은 다르다. 장거리 힘이고 공간 적분이 필요한 방식으로 수렴하지 않으므로, 여기서 사용하는 통상적인 단거리 열역학적 극한이 성립하지 않는다.
+\lecturetimestamp{01:20:40--01:23:03}}
+\end{classroomqa}
+
+이 계산은 역할 분담의 유용한 예를 보여 준다. 미시물리학이 \(u(r)\)을 제공한다. 통계역학은 이 에너지로 \(Z\)를 구성하고, \(Z\)의 미분으로 벌크 관측량을 구하며, 물리적 추론으로 그 부호와 밀도 의존성, 계에 대한 비례성, 유효 범위를 점검한다. 올바른 에너지와 근사를 선택하고 나면 형식적인 계산은 기계적으로 진행된다.
+
+\section{정확 미분과 경로 의존성}
+
+이제 수학적 표현을 바꾸어 보자. \emph{정확 미분}에서 정확은 수치적으로 정밀하다는 뜻이 아니다. 1-형식이 실제 스칼라 함수의 미분이라는 뜻이다.
+
+\(f(x,y)\)를 풍경 속 한 지점의 고도라고 하자. 작은 변위에 따른 고도 변화는
+\begin{equation}
+ df=
+ \frac{\partial f}{\partial x}\,dx+
+ \frac{\partial f}{\partial y}\,dy
+ =f_x\,dx+f_y\,dy.
+ \label{eq:sm6-total-differential}
+\end{equation}
+대신 다음과 같은 식만 주어졌다고 하자.
+\begin{equation}
+ \omega=F_x(x,y)\,dx+F_y(x,y)\,dy.
+ \label{eq:sm6-one-form}
+\end{equation}
+\(\omega=df\)를 만족하는 스칼라 \(f\)가 존재할까? 혼합 편미분이 같아야 하므로
+\begin{equation}
+ \frac{\partial F_y}{\partial x}
+ =
+ \frac{\partial F_x}{\partial y}.
+ \label{eq:sm6-exactness-condition}
+\end{equation}
+단일 연결 영역에서는 이 컬 조건이 충분조건이기도 하다. 그러면 성분 \((F_x,F_y)\)는 \(f\)의 기울기를 이룬다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}
+스칼라 함수로서의 고도, 그 미분, 그리고 정확성에 대한 혼합 편미분 조건.\caption{
+}
+\lectureframe{01:34:30}
+\end{figure}
+
+같은 조건은 적분으로도 해석할 수 있다. \(\omega=df\)라면,
+\begin{equation}
+ \int_{\gamma:1\to2}\omega=f(2)-f(1)
+ \label{eq:sm6-path-independent-integral}
+\end{equation}
+는 경로 \(\gamma\)가 아니라 양 끝점에만 의존한다. 특히,
+\begin{equation}
+ \oint_\gamma\omega=0
+ \label{eq:sm6-closed-loop-zero}
+\end{equation}
+모든 수축 가능한 닫힌 경로에 대해 성립한다.
+
+고도는 이 성질을 갖는다. 같은 두 지점 사이를 평탄한 길로 가든 언덕을 넘어가든 고도의 순변화는 같다. 연료 소비량은 그렇지 않다. 언덕길과 평탄한 길은 일반적으로 연료를 서로 다른 양만큼 소비하고, 한 바퀴 돌아도 소모된 연료는 돌아오지 않는다. 남은 연료량은 상태를 더 자세히 기술하면 분명 잘 정의된 물리량이지만, 자동차의 위치 \((x,y)\)만의 함수는 아니다. 이동 경로의 이력이 반영된다. 피로도 마찬가지다. 언덕을 내려온다고 해서 올라가며 쌓인 피로가 대개 없어지지는 않는다.
+
+\begin{classroomqa}
+\audiencequestion{정확성은 보존력과 같은 개념인가요? 곡률과도 관련이 있나요?}
+\lecturerresponse{컬이 0인 힘장은 국소적으로 보존적이며 퍼텐셜을 갖습니다. 따라서 두 개념은 밀접하게 관련되어 있습니다. 평행이동과 곡률도 닫힌 경로를 따라 생기는 변화와 국소 기하학적 자료를 연결하지만, 이는 더 넓은 주제입니다. 여기서는 기본적인 내용만 필요합니다. 통상적인 영역 조건 아래 컬이 0이면 국소적으로 경로에 무관합니다.
+\lecturetimestamp{01:39:22--01:41:07}}
+\end{classroomqa}
+
+두 사례로 판정법을 구체화해 보자. 먼저 다음을 택한다.
+\begin{equation}
+ F_x=y,\qquad F_y=x.
+ \label{eq:sm6-exact-example}
+\end{equation}
+두 교차 편미분은 모두 \(1\)이며, 실제로
+\begin{equation}
+ \omega=y\,dx+x\,dy=d(xy).
+ \label{eq:sm6-exact-example-potential}
+\end{equation}
+이다. 이제 부호 하나를 바꾸자.
+\begin{equation}
+ F_x=y,\qquad F_y=-x.
+ \label{eq:sm6-inexact-example}
+\end{equation}
+그러면
+\begin{equation}
+ \frac{\partial F_x}{\partial y}=1,
+ \qquad
+ \frac{\partial F_y}{\partial x}=-1,
+ \label{eq:sm6-inexact-cross-derivatives}
+\end{equation}
+이므로 두 성분을 기울기로 갖는 스칼라 \(f(x,y)\)는 존재하지 않는다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}
+\caption{\(f=xy\)로부터 얻은 완전미분인 예와, 교차 편미분이 \(1\) 및 \(-1\)인 완전미분이 아닌 예}
+\lectureframe{01:44:50}
+\end{figure}
+
+\section{열과 일은 상태함수가 아니다}
+
+입자 수가 고정된 단순 압축성 계에서는 서로 독립인 두 평형 변수가 상태를 결정한다. \((T,V)\) 또는 \((E,V)\)를 사용할 수 있고, 기본 관계를 표현하기에는 특히 자연스러운 \((S,V)\)를 쓸 수도 있다. 따라서
+\begin{equation}
+ E=E(S,V),
+ \end{equation}
+이고, 그 정확 미분은
+\begin{equation}
+ dE=
+ \left(\frac{\partial E}{\partial S}\right)_V dS+
+ \left(\frac{\partial E}{\partial V}\right)_S dV
+ =T\,dS-P\,dV.
+ \label{eq:sm6-fundamental-relation}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{단열은 느린 과정, 열적으로 절연된 과정, 가역 과정, 또는 엔트로피가 일정한 과정 중 무엇을 뜻하나요?}
+\lecturerresponse{문맥에 따라 용어를 다르게 씁니다. 여기서 다루는 평형 경로에서는 변화가 준정적이고 열적으로 절연되어 있으므로 가역적이며 등엔트로피입니다. 단순히 열적으로 절연된 비가역 과정에서도 엔트로피가 생성될 수 있는 한편, 양자 단열 정리는 매개변수의 느린 변화를 강조합니다.
+\lecturetimestamp{01:47:13--01:47:54}}
+\end{classroomqa}
+
+엔트로피가 고정된 팽창에서는 기체의 에너지가 \(-P\,dV\)만큼 변한다. 부피를 고정한 가역적 열 전달에서는 에너지가 \(T\,dS\)만큼 변한다. 따라서 다음과 같이 쓰면 편리하다.
+\begin{equation}
+ \begin{aligned}
+ \delta W_{\mathrm{on}}&=-P\,dV,
+ &\delta Q_{\mathrm{rev}}&=T\,dS,\\
+ dE&=\delta Q_{\mathrm{rev}}+\delta W_{\mathrm{on}}.&&
+ \end{aligned}
+ \label{eq:sm6-first-law-increments}
+\end{equation}
+상태함수의 미분이 아니라 경로에 따른 증가량임을 나타내기 위해 \(d\) 대신 기호 \(\delta\)를 쓴다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}
+\caption{피스톤 계에 대한 열역학 제1법칙:
+\(dE=-P\,dV+T\,dS\)}
+\lectureframe{01:50:28}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{
+\(-P\,dV\)은 기체에 가해진 일인가, 기체가 한 일인가?}\lecturerresponse{
+\eqref{eq:sm6-first-law-increments}의 부호 규약에 따르면 기체에 가해진 일이다. 팽창 \(dV>0\) 동안 기체는 피스톤에 양의 일을 하므로, 기체에 가해진 일은 음수이고 기체는 에너지를 잃는다. 두 설명은 크기가 같고 부호가 반대다.
+\lecturetimestamp{01:51:23--01:52:27}}
+\end{classroomqa}
+
+등식 \(\delta Q_{\mathrm{rev}}=T\,dS\)을 임의의 비가역 가열에 그대로 적용해서는 안 된다. 일반적으로는
+\begin{equation}
+ dS=\frac{\delta Q}{T_{\mathrm{boundary}}}+dS_{\mathrm{prod}},
+ \qquad dS_{\mathrm{prod}}\ge 0.
+ \label{eq:sm6-entropy-production}
+\end{equation}
+아래의 완전미분 논증은 준정적 평형 경로에 관한 것으로, 이때는 가역 관계가 적절하다.
+
+\begin{classroomqa}\audiencequestion{
+상태공간 논증에서 모든 경로는 평형 상태들을 지난다고 가정하나요?}\lecturerresponse{
+그렇다. 경로를 따라 \(P\), \(T\), \(E\), \(S\), \(V\)가 잘 정의된 상태로 유지될 만큼 충분히 천천히 조작한다. 열과 일의 경로 의존성은 계를 평형에서 크게 벗어나게 해야만 나타나는 것이 아니다.
+\lecturetimestamp{01:54:30--01:54:39}}
+\end{classroomqa}
+
+열이 완전미분인지 확인하려면 \((E,V)\)를 좌표로 사용하고 열역학 제1법칙을 다음과 같이 정리한다.
+\begin{equation}
+ \delta Q_{\mathrm{rev}}=dE+P(E,V)\,dV.
+ \label{eq:sm6-heat-one-form}
+\end{equation}
+\(Q(E,V)\)라는 상태 함수가 있어서 \(dQ=\delta Q_{\mathrm{rev}}\)라면, 그 편미분은 다음과 같아야 한다.
+\begin{equation}
+ \left(\frac{\partial Q}{\partial E}\right)_V=1,
+ \qquad
+ \left(\frac{\partial Q}{\partial V}\right)_E=P.
+ \label{eq:sm6-hypothetical-heat-derivatives}
+\end{equation}
+혼합 편미분이 같아야 하므로 다음 조건이 필요하다.
+\begin{equation}
+ \begin{aligned}
+ \frac{\partial}{\partial V}
+ \left(\frac{\partial Q}{\partial E}\right)_V
+ &=\frac{\partial}{\partial E}
+ \left(\frac{\partial Q}{\partial V}\right)_E,\\
+ 0&=\left(\frac{\partial P}{\partial E}\right)_V.
+ \end{aligned}
+ \label{eq:sm6-heat-exactness-requirement}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{
+이는 \(F_x\,dx+F_y\,dy\)에 사용하는 컬 테스트와 정확히 같은가요?}\lecturerresponse{
+그렇다. \(dE\)와 \(dV\)의 계수는 각각 \(1\)와 \(P(E,V)\)이다. 이들의 교차 편미분은 각각 \(0\)과 \((\partial P/\partial E)_V\)이다. 열이 완전미분이 되려면 이 편미분들이 같아야 한다.
+\lecturetimestamp{01:54:39--01:54:52}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}
+\caption{\(dE+P\,dV\)인 열 1-형식과 이것이 상태 함수의 미분일 경우 필요한 혼합 편미분}
+\lectureframe{01:58:10}
+\end{figure}
+
+이 조건은 물리적으로도 이미 그럴듯하지 않다. 부피가 일정한 상태에서 기체에 에너지를 더하면 일반적으로 압력이 변한다. 이상기체의 관계식을 이용하면 직접 계산할 수 있다.
+\begin{equation}
+ PV=NT,
+ \qquad
+ E=\frac{3}{2}NT
+ \quad\Longrightarrow\quad
+ P=\frac{2E}{3V}.
+ \label{eq:sm6-ideal-pressure-energy}
+\end{equation}
+따라서
+\begin{equation}
+ \left(\frac{\partial P}{\partial E}\right)_V
+ =\frac{2}{3V}\ne0.
+ \label{eq:sm6-heat-curl-fails}
+\end{equation}
+컬 테스트의 조건을 만족하지 않는다. \(\delta Q_{\mathrm{rev}}\)은 완전미분이 아니다. 같은 이유로 일의 증분 \(\delta W_{\mathrm{on}}=-P\,dV\)도 완전미분이 아니다.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}
+\caption{이상기체 관계식을 결합해 얻은 \(P=2E/(3V)\)}
+\lectureframe{02:00:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}
+\caption{논증의 완결: \((\partial P/\partial E)_V\ne0\)이므로 열 1-형식은 완전미분일 수 없다}
+\lectureframe{02:00:35}
+\end{figure}
+
+닫힌 평형 순환 과정에서는
+\begin{equation}
+ \oint dE=0,
+ \qquad
+ \oint\delta Q_{\mathrm{rev}}
+ =-\oint\delta W_{\mathrm{on}}.
+ \label{eq:sm6-cycle-balance}
+\end{equation}
+계의 에너지는 원래 값으로 돌아오지만, 열과 일은 각각 사라질 필요가 없다. 열과 일의 값은 상태 공간에서 어떤 경로를 거치는지에 따라 달라진다. 이 때문에 순환 기관은 작동 물질이 최초의 열역학적 상태로 돌아오더라도 열을 흡수하고 순일을 외부에 전달할 수 있다.
+
+\begin{classroomqa}\audiencequestion{
+이러한 경로 의존성은 기관 효율, 히스테리시스, 기억 효과와 관련이 있나요?}\lecturerresponse{
+기관의 순환 과정에서는 이 경로 의존성이 직접 작용한다. 순환 과정에서 흡수한 열은 순일의 출력에 해당하며, 상태 함수 \(E\)는 초기값으로 돌아온다. 히스테리시스와 기억 효과에도 경로 의존성이 관여하지만, 이 경우에는 추가 내부 변수나 비평형 물리가 필요한 경우가 많다. 여기서 얻은 결론은 더 제한적이며 가역 평형 경로만으로도 성립한다. 열과 일은 전달되는 양이지, 열역학적 상태에 저장되는 성질이 아니다.
+\lecturetimestamp{02:02:21--02:03:17}}
+\end{classroomqa}
+
+이제 논증의 두 부분이 하나로 이어진다. 측정은 측정 장치의 제어 조건과 평형 조건을 명시해야 의미가 있다. 근사는 작은 매개변수와 근사가 실패하는 기준을 명시해야 의미가 있다. 열역학적 양은 그 미분형식이 경로 독립성 검사를 통과해야 상태 함수가 된다. 어느 경우든 엄밀한 수학은 물리적 해석을 대신하지 않는다. 그 해석이 정당화되는 범위를 정확히 알려준다.

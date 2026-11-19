@@ -1,0 +1,62 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 241,
+  "outline_entries": 155,
+  "target_characters": 86450,
+  "image_placements": 93,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "통계역학",
+  "pdf_sha256": "de966a595598e908915c0b9808a2d55797b388180be0f50606b683958b774597",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 120,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "58100a91560300ee567e45437f36b87677929a458a5aa81a1ba78cd6c77b6702",
+    "chapters/lecture_01/content.tex": "baf5b774b733a778aee7fe5063961889bff023338ac9eab0b5f44e5aa69141a3",
+    "chapters/lecture_02/content.tex": "57b1d3e6cb5b148a52d02098a74b446c6b0aaab74360705022c66c59f8a6327f",
+    "chapters/lecture_03/content.tex": "fb2eb08798b84f6cc04cc963c47694cb0ea3e6f0928ffc2bae853a1ec4a8246e",
+    "chapters/lecture_04/content.tex": "acde9f836e9f7a7f0aa0e54076d954e9e8cbc30c808e063de113d6102c4167ae",
+    "chapters/lecture_05/content.tex": "a64185d9075884441352c82a4348e52db4da0b783aab755c542aaa77dbe5f392",
+    "chapters/lecture_06/content.tex": "88a0312fe2f62ac9647588dd4e7ae63c42344e9a5420c73529417c55c6ee5595",
+    "chapters/lecture_07/content.tex": "b80f753c5ad76a971d5aa256027d520915c681cead22f65bbfa6e6394f74103c",
+    "chapters/lecture_08/content.tex": "39e0d00bd184dc194c968cff6917fd47ae3ff1b438a76ccd0babb932bebf5769",
+    "chapters/lecture_09/content.tex": "9cb5468d4026c23c12f0d7dbe6f248d0f7b0b54254ba173745cf005453aa476d",
+    "chapters/lecture_10/content.tex": "f21d4b15d7d42469f7afafc84eb8ed92ca4571dced092306a123ab38d882704c"
+  },
+  "source_files": {
+    "course.tex": "0f37f9307e89e1bc851fed9dadf235591916024addc7c0826d2309fae7419ee0",
+    "common_preamble.tex": "89eff45b483a8b9b83dda2bbe8dbca5781b177087fdc32856093212e10addabc",
+    "chapters/lecture_01/content.tex": "7083535841c0a2ffc4fa5a7dd1037d7df21fd494f83ad264bb51da5712fde21e",
+    "chapters/lecture_02/content.tex": "23a07ae5c803c858ddd170b8032289025b3222419cd5c98f7768412367c6156b",
+    "chapters/lecture_03/content.tex": "1fc1ce22c0da3a0c60b6d394938028a5503f91d0b0af9fe61a1c010af47d530b",
+    "chapters/lecture_04/content.tex": "369fe2d8e5c2839aa0d4be2e5571bcc07a3daf77a60771bb8c93e6db281faa76",
+    "chapters/lecture_05/content.tex": "8880d4f2ab99d33cd270c3814a574c128c96a94fb701656388b1fc0f10954e45",
+    "chapters/lecture_06/content.tex": "b4cb52efe2b115e47563479ad99d2c2ce18ea8e60114880055618c939e473632",
+    "chapters/lecture_07/content.tex": "3b3360d627b21c7b02c3ab292cf25adb90188f12d2fa7b5f85b221d473bf18c5",
+    "chapters/lecture_08/content.tex": "371ff299543f232e75d00dff2f39008029cdd5b46755c386a12ff0025550677c",
+    "chapters/lecture_09/content.tex": "04c0b75014d3727c451f2dc0b4b33da1b917dd1ac340523f1e3f797902583da1",
+    "chapters/lecture_10/content.tex": "6ddff13d3e3a6411fc83d9a7749ab16d35c202e8ebe66779729ca68142080c03"
+  },
+  "translated_tex": {
+    "cover.tex": "cdbdb60279ce76837f29853b658851de5d5b4a8d5db6d3a7329d584386285bb2",
+    "common_preamble.tex": "438dbe806b2f1276cc89f7664ea31895b073bda79707938f58cf81b007f58af2",
+    "course.tex": "259e96ee28df7d66156db0b30aed7ca15d49e98af4ec945de381556c3ca0c3b1",
+    "chapters/lecture_07/content.tex": "ca90bea89238ca96643f428e54428a04a26d8676a90b78ec28279dee4ef0a3aa",
+    "chapters/lecture_02/content.tex": "e8e1bf66726109f2c8de5452b5579d743df4ea5305867b2a8f0f5ece0bfdf71f",
+    "chapters/lecture_09/content.tex": "0e4b48edaddd7918ef8e2b47ae9d9d7610ff3390ec36f0ae5afe015656c8ba5a",
+    "chapters/lecture_01/content.tex": "0531b703d9487a5bbec9bc38872761b59ef6ef7d6217fbc83b828d24228586c1",
+    "chapters/lecture_10/content.tex": "f7db71162c70748a92aa588f58305fb2c0cbae306090ad804f435d412648680e",
+    "chapters/lecture_03/content.tex": "912ff5b9bf8da0ffec5a6830ff6b7950bd9f699e46f200a2cb911369c0c2384c",
+    "chapters/lecture_08/content.tex": "a06546f8e0b983208ded0616c8706ac7f296fc0c9355db685eef9e61377e807b",
+    "chapters/lecture_05/content.tex": "0a0b462b9e9f5eaf9bf1a3989d4e5f6ec3a171f432707b375d12d5958d83df8f",
+    "chapters/lecture_04/content.tex": "096417cf5bc14fb35ed786f8b4410092fbca9fb6f4d3be7220b72da34453b0c3",
+    "chapters/lecture_06/content.tex": "52691fb55ade507f26953dc512accc930d48410ef5908875a6fd11efd0a233f4"
+  }
+}

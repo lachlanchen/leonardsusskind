@@ -1,0 +1,378 @@
+\chapter{볼츠만 가중치, 분배함수, 이상기체}
+
+\lectureoverview{정규화와 평균 에너지를 고정한 채 엔트로피를 최대화하여 평형 확률 분포를 유도한다. 이어서 분배함수를 미분하면 평균 에너지, 엔트로피, 온도를 얻는다. 이상기체를 첫 번째 완전한 예로 살펴본 뒤, 중력장으로 확장하고 에너지 요동을 간략히 예고한다.}
+
+\section{제약 조건이 있는 엔트로피 문제}
+
+같은 부분계의 상호작용이 매우 약한 복제본 \(\mathcal N\)개가 모인 큰 집합에서 시작하자. \(n_i\)개의 복제본이 \(i\)번째 상태에 있다면, \begin{equation}
+ p_i=\frac{n_i}{\mathcal N},
+ \qquad
+ \sum_i p_i=1.
+ \label{eq:sm4-occupation-probability}
+\end{equation}앞 강의의 다항계수 계산으로 복제본 하나당 엔트로피를 얻는다. \begin{equation}
+ S[p]=-\sum_i p_i\log p_i.
+ \label{eq:sm4-entropy}
+\end{equation}이를 모든 변수 \(p_1,p_2,\ldots\)의 보통 함수로 보는 것이 좋다. 계산을 가능하게 하는 것은 이 함수의 단순한 가법 형태다.
+
+복제본 집합의 전체 에너지는 \(\mathcal N E\)로 고정되어 있으며, 여기서 \(E\)는 복제본 하나당 평균 에너지다. 따라서 두 번째 제약 조건은 \begin{equation}
+ \sum_i p_iE_i=E.
+ \label{eq:sm4-energy-constraint}
+\end{equation}\(E_i\)는 부분계의 에너지 준위이고, 우변의 \(E\)은 확률로 가중한 준위의 평균이다. \eqref{eq:sm4-entropy}을 \eqref{eq:sm4-occupation-probability} 및 \eqref{eq:sm4-energy-constraint}의 조건 아래 최대화하면 점유율 가운데 압도적으로 가장 가능성이 높은 값이 선택된다.
+
+편의상 \(-S=\sum_i p_i\log p_i\)를 최소화하자. 각 제약 조건에 라그랑주 승수를 하나씩 도입하면 다음과 같다. \begin{equation}
+ \begin{aligned}
+ \Phi[p;\alpha,\beta]
+ &=\sum_i p_i\log p_i\\
+ &\quad+\alpha\left(\sum_i p_i-1\right)\\
+ &\quad+\beta\left(\sum_i p_iE_i-E\right).
+ \end{aligned}
+ \label{eq:sm4-augmented-functional}
+\end{equation}\(\alpha\)와 \(\beta\)라는 이름은 아직 물리적 가정을 뜻하지 않는다. 이 단계에서는 두 제약 조건을 부과하는 데 필요한 두 수일 뿐이다.
+
+\begin{classroomqa}\audiencequestion{확장된 함수도 \(\alpha\)와 \(\beta\)의 함수인가요?}\lecturerresponse{그렇습니다. 이 함수에 대해 \(\alpha\)와 \(\beta\)을 변화시키면 두 제약 조건이 다시 얻어집니다. 하지만 지금 계산에서는 승수들을 고정한 채 확률 \(p_i\)를 변화시킵니다. 승수의 값은 정규화 조건과 주어진 평균 에너지로 나중에 정해집니다. \lecturetimestamp{00:09:32--00:09:49}}\end{classroomqa}
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.92\textwidth]{lecture_04_figure_02.png}\caption{확률을 변화시킬 때 상수인 항을 생략한 확장 엔트로피 범함수.}\lectureframe{00:10:56}\end{figure}
+
+확률에 대해 미분할 때 \(-\alpha\)와 \(-\beta E\)는 기여하지 않는다. 칠판에 보이는 식은 이렇게 축약된 범함수다. 이 항들은 여전히 \eqref{eq:sm4-augmented-functional}의 일부지만, 이 특정한 미분에서는 더 이상 영향을 주지 않을 뿐이다.
+
+\section{볼츠만 분포}
+
+확률 하나를 임의로 고르자. 강의에서는 \(p_7\)을 택한다. \(1\)은 너무 특별해 보이고 \(7\)은 행운의 수이기도 해서다. 무엇을 택하든 결과는 달라지지 않는다. 필요한 미적분은 다음뿐이다. \begin{equation}
+ \frac{d}{dp_i}\bigl(p_i\log p_i\bigr)=\log p_i+1.
+\end{equation}따라서 \begin{equation}
+ \frac{\partial\Phi}{\partial p_i}
+ =\log p_i+1+\alpha+\beta E_i=0.
+ \label{eq:sm4-stationarity}
+\end{equation}이다. 이를 \(p_i\)에 대해 풀면 \begin{align}
+ \log p_i&=-(1+\alpha)-\beta E_i,\\
+ p_i&=e^{-(1+\alpha)}e^{-\beta E_i}.
+\end{align}를 얻는다. 첫 번째 인자는 상태 표지자와 무관하다. 이를 \(1/Z\)로 쓰면 다음과 같다. \begin{equation}
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+ \label{eq:sm4-boltzmann-weight}
+\end{equation}
+
+이것이 첫 번째 뜻밖의 성과다. 일상적인 제약 미분에서 지수 법칙이 나왔다. 상대 확률은 \begin{equation}
+ \frac{p_i}{p_j}=e^{-\beta(E_i-E_j)}.
+ \label{eq:sm4-relative-weight}
+\end{equation}를 따른다. 승수 \(\beta\)은 에너지가 커질수록 확률이 얼마나 빠르게 감소하는지를 조절한다. \(\beta\)이 큰 양수이면 분포는 가장 낮은 준위에 집중되고, \(\beta\)이 작은 양수이면 스펙트럼에서 더 높은 준위에도 상당한 가중치가 퍼진다. 이미 \(\beta\)을 바꾸면 평균 에너지가 변한다는 것을 알 수 있지만, 이것이 역온도라는 점은 아직 증명해야 한다.
+
+\section{정규화와 분배함수}
+
+정규화 조건으로 상태와 무관한 인자가 정해진다. \begin{equation}
+ 1=\sum_i p_i
+ =\frac{1}{Z}\sum_i e^{-\beta E_i},
+\end{equation}따라서 \begin{equation}
+ Z(\beta)=\sum_i e^{-\beta E_i}.
+ \label{eq:sm4-partition-function}
+\end{equation}이다. 이것이 정준 분배함수다. 처음에는 정규화 상수로 등장하지만, 그렇게만 부르면 그 역할을 크게 과소평가하게 된다. \(Z(\beta)\)만 알면 그 미분으로 열역학적 물리량을 구할 수 있다.
+
+\eqref{eq:sm4-partition-function}에 들어가는 에너지 준위는 입력값이다. 에너지 준위는 계의 역학과 고정된 외부 조건, 즉 상자의 부피와 모양, 자기장이나 전기장, 그 밖의 제어 변수에 의해 정해진다. 제어 변수를 바꾸면 스펙트럼이 달라지고, 이에 따라 \(Z\)도 달라진다. 지금 계산에서는 그런 변수들과 그에 따른 집합 \(\{E_i\}\)을 고정한다.
+
+\begin{classroomqa}\audiencequestion{지수함수 그래프의 축은 정확히 무엇을 나타내나요? 세로 좌표는 특정한 \(p_i\)인가요?}\lecturerresponse{그래프의 높이는 각 준위에 부여된 확률이고, 가로축의 순서는 상태 표지자 \(i\)로 읽을 수도 있고 물리적으로는 에너지 \(E_i\)로 읽을 수도 있습니다. 모든 상태의 에너지는 고정되어 있습니다. \(\beta\)이 크면 그 에너지에 따라 확률이 가파르게 감소하고, \(\beta=0\)에 가까우면 접근 가능한 준위들에 거의 균일한 가중치가 부여됩니다. \lecturetimestamp{00:19:39--00:20:09}}\end{classroomqa}
+
+\section{분배함수에 감춰진 평균 에너지}
+
+두 번째 제약 조건으로 \(\beta\)이 정해진다. \begin{equation}
+ E=\sum_i p_iE_i
+ =\frac{1}{Z}\sum_i E_i e^{-\beta E_i}.
+ \label{eq:sm4-mean-energy}
+\end{equation}이 가중합을 매번 새로 계산하는 대신 \eqref{eq:sm4-partition-function}을 미분하자. \begin{equation}
+ \frac{dZ}{d\beta}
+ =-\sum_i E_i e^{-\beta E_i}.
+\end{equation}이를 \eqref{eq:sm4-mean-energy}와 비교하면 \begin{equation}
+ E(\beta)
+ =-\frac{1}{Z}\frac{dZ}{d\beta}
+ =-\frac{d\log Z}{d\beta}.
+ \label{eq:sm4-energy-logz}
+\end{equation}을 얻는다. 로그를 취하는 이유는 그 미분이 \(1/Z\) 인자를 주기 때문이다.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_03.png}\caption{정규화 조건, 평균 에너지 제약 조건, 분배함수의 미분이 칠판에 함께 나타나 있다.}\lectureframe{00:26:24}\end{figure}
+
+\begin{classroomqa}\audiencequestion{아래쪽 칠판의 식은 \(Z\)에 관한 새로운 식인가요, 아니면 위 식의 정의에서 얻어지나요?}\lecturerresponse{정의식 \(Z=\sum_i e^{-\beta E_i}\)을 미분해 얻습니다. 미분하면 \(-E_i\)이 내려옵니다. 결과를 \(Z\)로 나누면 평균 에너지를 정의하는 가중합이 다시 나옵니다. \lecturetimestamp{00:25:58--00:26:37}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(dZ/d\beta=-E Z\)은 \(Z\)을 미분 연산의 고유함수로 만드나요?}\lecturerresponse{보통 의미에서는 그렇지 않습니다. 고유값 방정식이라면 \(Z\)에 상수가 곱해져야 하지만, 여기서는 \(E=E(\beta)\)입니다. 이 식은 \(\beta\)에 따른 평균 에너지를 알려줄 뿐, 고정된 고유값 문제는 아닙니다. \lecturetimestamp{00:28:49--00:29:43}}\end{classroomqa}
+
+\eqref{eq:sm4-energy-logz}의 단순함은 착각을 불러일으킬 수 있다. 스펙트럼은 복잡할 수 있고 \(Z\)을 계산하기도 어렵지만, 일단 이 함수 하나만 구하면 미분 한 번으로 평균 에너지를 얻는다. 이런 패턴은 통계역학 전반에서 거듭 나타난다. 간단한 연산을 올바른 순서로 적용하면 직접 예상하기 어려운 결과를 얻을 수 있다.
+
+\begin{classroomqa}\audiencequestion{\(E\)는 복제본 전체의 총에너지인가요, 아니면 상자 하나의 평균 에너지인가요?}\lecturerresponse{상자 하나의 평균 에너지입니다. 복제본 집합의 총에너지는 \(\mathcal N E\)입니다. 나중에 계 자체를 \(N\)개의 기체 입자를 담은 상자 하나 전체로 정하면 \(E\)는 기체 표본 전체의 에너지를 뜻합니다. \lecturetimestamp{00:30:55--00:31:10}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(\sum_i e^{-\beta E_i}\)의 각 항에 로그를 취해도 되나요?}\lecturerresponse{안 됩니다. 로그는 곱을 합으로 바꾸지만, 합을 로그들의 합으로 바꾸지는 않습니다. \[
+ \log\!\left(\sum_i e^{-\beta E_i}\right)
+ \ne \sum_i\log\!\left(e^{-\beta E_i}\right).
+\]독립적인 부분계들의 분배함수가 곱해지는 경우에는 이 구분이 유용해집니다. \lecturetimestamp{00:31:10--00:31:58}}\end{classroomqa}
+
+\section{무엇이 고정되고 무엇이 변할 수 있는가}
+
+같은 식에 여러 층위의 변수가 등장하므로, 강의에서는 이들을 의도적으로 구분한다.
+
+\begin{itemize}\item 확률 \(p_i\)는 처음에 구하려던 미지수다. \item 준위 \(E_i\)는 계와 제어 변수가 정해지면 고정된다. \item 승수 \(\alpha\)는 정규화 인자 \(Z=e^{1+\alpha}\)에 흡수되었다. \item 주어진 평균 에너지 \(E\)에 대해 제약 조건이 하나의 수 \(\beta\)를 정한다. 하지만 평형 상태들의 한 계열을 보면 \(E=E(\beta)\)이나 \(\beta=\beta(E)\)를 매개변수로 사용할 수 있다. \end{itemize}
+
+\begin{classroomqa}\audiencequestion{승수는 수인데 왜 이제 \(\beta\)와 \(E\)를 변수처럼 다루나요?}\lecturerresponse{하나의 제약 문제에서는 실제로 수입니다. 하지만 스펙트럼은 같고 주어진 평균 에너지는 서로 다른 여러 평형 문제를 비교할 수 있습니다. 그 상태들의 계열을 따라가면 \(\beta\)가 \(E\)에 따라 변합니다. \(E\)를 고정하면 \(\beta\)가 정해지고, \(\beta\)를 고정하면 \(E\)가 정해집니다. 이는 같은 관계를 두 가지 방식으로 읽은 것입니다. \lecturetimestamp{00:31:58--00:33:27}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(\alpha\)은 사라졌나요?}\lecturerresponse{이름만 사라졌습니다. 정의식 \(e^{-(1+\alpha)}=1/Z\)에 따라 \(Z\)에 흡수됩니다. \(\alpha\)와 \(Z\)를 모두 남겨두면 같은 정규화 매개변수를 두 번 세게 됩니다. \lecturetimestamp{00:33:29--00:33:49}}\end{classroomqa}
+
+에너지만이 보존량인 것은 아니다. 총운동량, 입자 수, 각운동량 또는 다른 물리량에 제약을 두면 그 기댓값에 각기 고유한 승수를 붙인다. 이렇게 앙상블은 확장되지만 방법은 달라지지 않는다.
+
+\begin{classroomqa}\audiencequestion{평균 에너지만 고정하는 것은 계에 대해 지나친 가정을 하는 것 아닌가요?}\lecturerresponse{현재 문제에서 다른 보존량을 조건으로 둘 필요가 없다고 가정하는 것입니다. 예를 들어 총운동량도 고정한다면 제약 조건과 라그랑주 승수를 하나씩 더하면 됩니다. 반면 부피, 모양, 외부장은 여기서 제어 변수다. 이들은 고정되어 있으며 에너지 준위 자체를 정합니다. \lecturetimestamp{00:33:51--00:35:50}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(\alpha\)를 에너지의 또 다른 변수로 넣어야 하나요? 그리고 \(Z\)는 준위 \(E_i\)에 의존하나요?}\lecturerresponse{\(\alpha\)는 이미 \(Z\)에 포함되어 있으므로 독립적인 변수가 아닙니다. 분배함수는 \(\beta\)뿐 아니라 고정된 스펙트럼에도 분명히 의존합니다. 제어 변수를 바꾸면 \(E_i\)이 바뀌고, 따라서 \(Z\)도 바뀝니다. 현재의 \(\beta\) 미분을 하는 동안에는 스펙트럼을 고정합니다. \lecturetimestamp{00:35:52--00:37:10}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{개별 준위 \(E_i\)를 변화시키나요, 아니면 평균 에너지 \(E\)를 변화시키나요?}\lecturerresponse{개별 준위는 그대로 고정되어 있습니다. 확률이 바뀌기 때문에 평균 에너지가 변합니다. 따라서 같은 준위 목록 \(\{E_i\}\)을 계속 사용하면서 평형 상태들의 계열을 \(E\) 또는 동등하게 \(\beta\)로 매개화합니다. \lecturetimestamp{00:37:12--00:39:04}}\end{classroomqa}
+
+실제로는 기체의 총에너지보다 온도를 측정하는 편이 훨씬 쉽다. 온도계는 넣을 수 있지만, 상대론적 질량 차이를 재어 \(E=mc^2\)을 이용하는 방법은 원리상 옳아도 실용성은 현저히 떨어진다. \(\beta\)을 실제 측정 가능한 물리량으로 만들려면 이제 이를 열역학적 온도 정의와 연결해야 한다.
+
+\section{온도에 앞서 엔트로피}
+
+논리적으로는 엔트로피가 먼저다. 볼츠만 확률을 \eqref{eq:sm4-entropy}에 대입하면 \begin{equation}
+ \log p_i=-\beta E_i-\log Z.
+\end{equation}를 얻는다. 그러면 \begin{align}
+ S
+ &=-\sum_i p_i\log p_i\\
+ &=\beta\sum_i p_iE_i+\log Z\sum_i p_i\\
+ &=\beta E+\log Z.
+ \label{eq:sm4-entropy-logz}
+\end{align}가 된다. 정규화 합이 마지막 인자 1을 준다. 이는 헬름홀츠 자유 에너지의 첫 번째 단서이기도 하다. 나중에 \(F_{\mathrm H}=-T\log Z\)가 되기 때문이다. 여기서는 \(k_B=1\)인 단위를 사용한다.
+
+\begin{classroomqa}\audiencequestion{첫 번째 항에 있던 \(1/Z\) 인자는 어떻게 되었나요?}\lecturerresponse{이미 \(p_i\)에 포함되어 있습니다. 합 \(\sum_i p_iE_i\)에는 정규화된 확률 전체가 들어 있으며, 정의에 따라 평균 에너지 \(E\)입니다. \lecturetimestamp{00:43:19--00:43:26}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(S=\beta E+\log Z\)에 마이너스 부호가 있어야 하지 않나요?}\lecturerresponse{아닙니다. 엔트로피에는 처음에 마이너스 부호가 있고, \(\log p_i=-\beta E_i-\log Z\)에도 마이너스 부호가 두 개 더 있습니다. 이 부호들이 \eqref{eq:sm4-entropy-logz}에 표시된 두 양의 항을 만들어 냅니다. \lecturetimestamp{00:45:53--00:46:03}}\end{classroomqa}
+
+온도는 다른 모든 제어 변수를 고정한 채 \begin{equation}
+ dE=T\,dS,
+ \qquad
+ \frac{1}{T}=\frac{dS}{dE},
+ \label{eq:sm4-temperature-definition}
+\end{equation}로 열역학적으로 정의했다. \eqref{eq:sm4-entropy-logz}을 \(E\)에 대해 직접 미분하려고 하면 \(\beta\)도 \(E\)에 의존하기 때문에 식이 금방 복잡해진다. 전미분을 취하는 편이 더 간결하다. \begin{align}
+ dS
+ &=\beta\,dE+E\,d\beta
+   +\frac{d\log Z}{d\beta}\,d\beta\\
+ &=\beta\,dE+E\,d\beta-E\,d\beta\\
+ &=\beta\,dE.
+ \label{eq:sm4-entropy-differential}
+\end{align}상쇄에는 \eqref{eq:sm4-energy-logz}을 사용한다. \eqref{eq:sm4-entropy-differential}와 \eqref{eq:sm4-temperature-definition}을 비교하면 \begin{equation}
+ T=\frac{1}{\beta},
+ \qquad
+ \beta=\frac{1}{T}.
+ \label{eq:sm4-beta-temperature}
+\end{equation}를 얻는다.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_04.png}\caption{\(d\beta\) 항 두 개가 서로 상쇄되어 \(dS=\beta\,dE\)만 남는다.}\lectureframe{00:50:48}\end{figure}
+
+\begin{classroomqa}\audiencequestion{이 상쇄 과정은 \(\log Z\)가 에너지나 온도와 무관하다고 잘못 가정한 것 아닌가요?}\lecturerresponse{아닙니다. 스펙트럼이 고정되어 있으면 독립적인 열역학 매개변수는 하나입니다. \(Z=Z(\beta)\)로 쓸 수 있고, 평형 상태의 계열을 따라 \(\beta=\beta(E)\)로 볼 수 있습니다. 전미분은 \(d\beta\)에 대한 의존성을 전부 반영하며, 항등식 \(d\log Z/d\beta=-E\)이 바로 상쇄를 가능하게 합니다. \lecturetimestamp{00:52:04--00:52:44}}\end{classroomqa}
+
+계산의 대부분에서는 온도를 에너지 단위로 측정하므로 \(k_B=1\)입니다. 실험실 단위로 되돌리면 \begin{equation}
+ \beta=\frac{1}{k_B T_{\mathrm K}},
+ \label{eq:sm4-beta-laboratory}
+\end{equation}이며, 여기서 \(T_{\mathrm K}\)은 켈빈으로 나타낸 절대온도다. 흔히 \(T_{\mathrm e}=k_BT_{\mathrm K}\)로 쓰고 \(\beta=1/T_{\mathrm e}\)을 사용하면 편리하다.
+
+\begin{classroomqa}\audiencequestion{기체가 차지하는 부피를 계로 삼을 때, 계는 분자 하나인가요 아니면 분자 전체인가요?}\lecturerresponse{계의 정의에 따라 다릅니다. 여기서는 기체가 든 상자 전체를 계로 두므로 \(E\)는 모든 분자의 에너지입니다. 충분히 묽은 이상기체에서는 입자들이 상호작용하지 않으므로 분자 하나도 부분계로 다룰 수 있습니다. 아래의 인수분해식이 두 기술 사이의 관계를 보여줍니다. \lecturetimestamp{00:53:32--00:54:49}}\end{classroomqa}
+
+이제 정준 앙상블의 항등식을 모아 쓰면 다음과 같다. \begin{align}
+ p_i&=\frac{e^{-\beta E_i}}{Z},&
+ Z(\beta)&=\sum_i e^{-\beta E_i},\label{eq:sm4-canonical-pair}\\
+ E&=-\frac{d\log Z}{d\beta},&
+ S&=\beta E+\log Z,&
+ T&=\frac{1}{\beta}.
+ \label{eq:sm4-canonical-identities}
+\end{align}
+
+\section{고전적 이상기체}
+
+부피 \(V\)인 상자 안에 질량 \(m\)인 동일한 점입자 \(N\)개를 두자. 입자 사이의 상호작용을 무시할 수 있으면 기체는 이상기체다. 힘이 약하거나 기체가 충분히 묽어 근접 충돌이 드물면 이 근사가 적절할 수 있다.
+
+고전적 미시 상태는 모든 위치와 운동량으로 정해진다. \begin{equation}
+ (\bm q_1,\ldots,\bm q_N;\bm p_1,\ldots,\bm p_N).
+\end{equation}\(3N\)개의 위치 좌표와 \(3N\)개의 운동량 좌표가 있으므로 상태는 \(6N\)차원 위상 공간의 한 점이다. 상호작용이 없을 때 해밀토니안은 다음과 같다. \begin{equation}
+ H(\bm p)=\sum_{a=1}^{N}\frac{\bm p_a^2}{2m}
+ =\sum_{\mu=1}^{3N}\frac{p_\mu^2}{2m}.
+ \label{eq:sm4-ideal-hamiltonian}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{입자는 \(3N\)개인가요? 모든 운동량 성분에 대해 합을 취하면 상태를 중복 계산하지 않나요?}\lecturerresponse{입자는 \(N\)개이고 운동량 성분은 \(3N\)개입니다. \eqref{eq:sm4-ideal-hamiltonian}에는 각 성분마다 이차항이 하나씩 들어 있습니다. 위상 공간 적분은 각 독립 성분을 정확히 한 번씩 적분하므로, 이 곱 때문에 중복 계산이 생기지는 않습니다. \lecturetimestamp{01:02:29--01:04:04}}\end{classroomqa}
+
+연속적인 고전 위상 공간에서는 상태 합이 다음과 같은 적분으로 바뀐다. \begin{equation}
+ Z_N
+ =\frac{1}{N!\,h^{3N}}
+ \int_{V^N}d^{3N}q
+ \int_{\mathbb R^{3N}}d^{3N}p\,
+ e^{-\beta H(\bm p)}.
+ \label{eq:sm4-classical-partition}
+\end{equation}강의에서는 적분에 집중하기 위해 위상 공간 셀 \(h^{3N}\)을 생략한 같은 식을 쓴다. 이를 복원하면 \(Z_N\)가 무차원이 되고, 고전적 상태 계수의 양자적 기원을 나타낸다. \(h\)은 \(\beta\)과 무관하므로 아래에서 사용하는 에너지 미분에는 영향을 주지 않는다.
+
+위치 적분은 바로 계산된다. 해밀토니안은 위치에 의존하지 않고, 각 입자는 상자의 어디에나 있을 수 있다. \begin{equation}
+ \int_{V^N}d^{3N}q=V^N.
+\end{equation}운동량 적분은 서로 같은 일차원 가우스 적분 \(3N\)개로 인수분해된다. \begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left[
+  \int_{-\infty}^{\infty}dp\,
+  e^{-\beta p^2/(2m)}
+ \right]^{3N}.
+ \label{eq:sm4-factorized-gas}
+\end{equation}
+
+인자 \(1/N!\)는 동일한 입자의 순열만 다른 배치들을 하나로 센다. \(N\)와 \(V\)를 고정하고 평균 에너지를 구할 때 이 인자는 \(\log Z_N\)에 \(\beta\)과 무관한 상수만 더하므로 \(-\partial/\partial\beta\)을 취하면 사라진다. 하지만 모든 문제에서 버려도 되는 것은 아니다. \(h^{3N}\)과 함께 무차원 분배함수, 계의 크기에 비례하는 엔트로피, 일관된 화학 퍼텐셜을 얻는 데 필수적이다.
+
+이제 다음과 같이 놓자. \begin{equation}
+ x=\sqrt{\frac{\beta}{2m}}\,p,
+ \qquad
+ dp=\sqrt{\frac{2m}{\beta}}\,dx.
+\end{equation}그러면 가우스 적분은 다음과 같이 된다. \begin{align}
+ \int_{-\infty}^{\infty}dp\,e^{-\beta p^2/(2m)}
+ &=
+ \sqrt{\frac{2m}{\beta}}
+ \int_{-\infty}^{\infty}dx\,e^{-x^2}\\
+ &=\sqrt{\frac{2\pi m}{\beta}}.
+ \label{eq:sm4-gaussian}
+\end{align}
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_05.png}\caption{단 한 번의 변수 재조정으로 운동량 적분을 표준 가우스 적분으로 바꾼다.}\lectureframe{01:13:12}\end{figure}
+
+이를 \eqref{eq:sm4-factorized-gas}에 대입하면 \begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm4-ideal-partition}
+\end{equation}를 얻는다.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.78\textwidth]{lecture_04_figure_06.png}\caption{완성된 이상기체 분배함수가 칠판에 적혀 있다. \eqref{eq:sm4-ideal-partition}에는 위상 공간 셀 \(h^{3N}\)을 복원했다.}\lectureframe{01:14:38}\end{figure}
+
+열적 드브로이 파장 \begin{equation}
+ \lambda_T=\frac{h}{\sqrt{2\pi mT}}
+ \qquad (k_B=1).
+\end{equation}을 사용해 같은 결과를 간결하게 쓸 수 있다. 그러면 \begin{equation}
+ Z_N=\frac{1}{N!}\left(\frac{V}{\lambda_T^3}\right)^N.
+ \label{eq:sm4-thermal-wavelength-form}
+\end{equation}이다.
+
+거시적인 \(N\)에 대해서는 스털링 공식을 적용하면 \begin{equation}
+ N!\simeq N^Ne^{-N}\sqrt{2\pi N}.
+\end{equation}을 얻는다. 선도 지수 의존성만 남기고 \(\rho=N/V\)를 정의하면 \begin{equation}
+ \frac{V^N}{N!}
+ \simeq
+ \frac{1}{\sqrt{2\pi N}}
+ \left(\frac{e}{\rho}\right)^N.
+ \label{eq:sm4-density-rewrite}
+\end{equation}가 된다. 이것이 강의에서 제시한 간결한 밀도 변수 재표현이다. 제곱근 인자는 \(\log Z_N\)에서 차수가 낮지만, 여기서는 말없이 버리지 않고 표시해 두었다.
+
+\begin{classroomqa}\audiencequestion{\(1/N!\)가 \(\beta\)과 무관하다면 아무런 차이도 없나요?}\lecturerresponse{\(N\)와 \(V\)를 고정했을 때 구하는 평균 에너지 미분에는 차이가 없습니다. \(\beta\)과 무관한 상수를 \(\log Z_N\)에 더할 뿐이기 때문입니다. 하지만 절대 엔트로피와 입자 수 변화에는 영향을 줍니다. 제한된 미분에 대한 설명과 더 넓은 상태 계수의 의미를 혼동해서는 안 됩니다. \lecturetimestamp{01:27:01--01:27:51}}\end{classroomqa}
+
+\section{에너지와 등분배}
+
+곱은 미분하기 불편하지만 로그를 취하면 합으로 바뀐다. \eqref{eq:sm4-ideal-partition}에서 \begin{equation}
+ \log Z_N
+ =-\frac{3N}{2}\log\beta+\text{\(\beta\)-independent terms}.
+ \label{eq:sm4-log-ideal-partition}
+\end{equation}를 얻는다. 따라서 \begin{equation}
+ E
+ =-\frac{\partial\log Z_N}{\partial\beta}
+ =\frac{3N}{2\beta}
+ =\frac{3N}{2}T.
+ \label{eq:sm4-ideal-energy}
+\end{equation}이다. 입자당 에너지는 \begin{equation}
+ \frac{E}{N}=\frac{3}{2}T
+ \qquad (k_B=1),
+\end{equation}이며, 실험실 단위로 쓰면 \begin{equation}
+ \frac{E}{N}=\frac{3}{2}k_BT_{\mathrm K}.
+ \label{eq:sm4-ideal-energy-lab}
+\end{equation}이다.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.84\textwidth]{lecture_04_figure_07.png}\caption{\(-3N\log\beta/2\) 항만 이상기체 에너지에 기여하므로 \(E/N=3T/2\)이 된다.}\lectureframe{01:25:28}\end{figure}
+
+\begin{classroomqa}\audiencequestion{에너지 식에는 볼츠만 상수가 어떻게 들어가나요?}\lecturerresponse{이론에서 쓰는 온도 \(T\)는 에너지다. 켈빈을 사용하려면 이를 \(k_BT_{\mathrm K}\)로 바꾸면 되고, 따라서 \(E/N=3k_BT_{\mathrm K}/2\)을 얻는다. 볼츠만 상수 \(k_B\)의 작은 값은 거시적으로 보이는 수치의 온도를 분자 하나의 미시적 에너지 척도로 바꿔 준다. \lecturetimestamp{01:24:58--01:26:01}}\end{classroomqa}
+
+세라는 수는 공간의 세 방향에서 나온다. 절반이라는 인자는 각 가우스 적분이 \(1/\beta\)의 제곱근에 비례하는 데서 나온다. 서로 독립인 각 운동량의 이차 좌표는 평균 에너지에 \begin{equation}
+ \frac{1}{2}T
+\end{equation}만큼 기여한다. \(d\)차원 공간에서도 같은 논리를 적용하면 \(E/N=dT/2\)을 얻는다. 이것이 등분배 법칙이 처음 등장하는 경우다.
+
+강의 끝에 제시한 엔트로피 계산은 \(S=\beta E+\log Z_N\)에서 나온다. 스털링 근사를 사용하면 \begin{equation}
+ \frac{S}{N}
+ \simeq
+ \log\!\left[
+  \frac{V}{N}
+  \left(\frac{2\pi mT}{h^2}\right)^{3/2}
+ \right]
+ +\frac{5}{2},
+ \label{eq:sm4-sackur-tetrode}
+\end{equation}이며, 차수가 낮은 유한-\(N\) 보정은 제외했다. \(k_B\)를 복원하면 우변에 \(k_B\)가 곱해지고 \(T\)는 \(k_BT_{\mathrm K}\)로 바뀐다. 이 결과는 에너지 계산에서 사라졌던 정규화 인자들이 엔트로피에는 왜 필수적인지 분명히 보여준다.
+
+\section{기체를 중력장에 두기}
+
+상자를 중성자별 위에 놓으면 어떻게 되는지 묻는 질문에서 중력장으로의 확장이 시작된다. 중성자별을 다루기 전에 보통 방 안의 균일한 중력장 \(g\)부터 살펴보자. 밑면 넓이가 \(A\)이고 높이가 \(L\)인 상자의 바닥을 \(y=0\)로 두자. 해밀토니안은 다음과 같이 바뀐다. \begin{equation}
+ H=\sum_{a=1}^{N}
+ \left(\frac{\bm p_a^2}{2m}+mgy_a\right).
+ \label{eq:sm4-gravity-hamiltonian}
+\end{equation}수평 방향 위치 적분은 여전히 \(A^N\)를 주며, 수직 좌표는 각각 다음을 기여한다. \begin{equation}
+ I_y(L)
+ =\int_0^Ldy\,e^{-\beta mgy}
+ =\frac{1-e^{-\beta mgL}}{\beta mg}.
+ \label{eq:sm4-finite-height-integral}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{수직 적분의 상한을 무한대로 잡아야 하나요, 아니면 상자 꼭대기까지만 잡아야 하나요?}\lecturerresponse{상자가 유한하면 \(0\)에서 상자 높이 \(L\)까지 적분해야 하며, 이는 \eqref{eq:sm4-finite-height-integral}과 같습니다. 상한을 무한대로 보내는 것은 나중에 유한한 방이 아니라 표면 위의 대기를 모형화할 때 쓰는 단순화입니다. \lecturetimestamp{01:30:25--01:31:32}}\end{classroomqa}
+
+따라서 유한한 높이에 대한 전체 분배함수는 다음과 같다. \begin{equation}
+ Z_N(L)
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  A\,
+  \frac{1-e^{-\beta mgL}}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-finite}
+\end{equation}수직 방향 인자는 \(\beta\)에 의존하므로 에너지에도 기여해야 한다. 실제로 \begin{equation}
+ \langle U\rangle
+ =N\left[
+  \frac{1}{\beta}
+  -\frac{mgL}{e^{\beta mgL}-1}
+ \right].
+ \label{eq:sm4-finite-gravity-energy}
+\end{equation}이다. 이로써 강의에서 처음에는 성가신 계산으로 남겨 두었던 적분을 마쳤다.
+
+높이가 무한한 대기에서는 \(L\to\infty\)이고 \begin{equation}
+ I_y(\infty)=\frac{1}{\beta mg}.
+\end{equation}이다. 분배함수는 \begin{equation}
+ Z_N^{(\infty)}
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  \frac{A}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-infinite}
+\end{equation}가 된다. \(\beta\)에 의존하는 로그는 \begin{equation}
+ \log Z_N^{(\infty)}
+ =-\frac{3N}{2}\log\beta-N\log\beta+\mathrm{const}.
+\end{equation}이다. 첫 번째 항은 운동 에너지 \(3NT/2\)를 주고, 두 번째 항은 평균 중력 퍼텐셜 에너지 \(NT\)를 준다. 따라서 이 이상화된 무한 대기에 대해 \begin{equation}
+ E_{\mathrm{tot}}=\frac{5N}{2}T
+\end{equation}이다.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.83\textwidth]{lecture_04_figure_08.png}\caption{무한 대기의 분배함수에 \(\log Z\)에 \(-N\log\beta\)가 더해지며, 이것이 평균 퍼텐셜 에너지의 원천이다.}\lectureframe{01:36:38}\end{figure}
+
+\begin{classroomqa}\audiencequestion{중력장이 매우 강하면 라그랑주 승수를 하나 더 도입해야 하나요?}\lecturerresponse{중력장이 강하다는 이유만으로 승수를 더 도입하지는 않습니다. 중력은 해밀토니안을 바꾸므로 에너지 준위 또는 위상 공간 가중치가 달라집니다. 에너지 승수 \(\beta\)는 그대로입니다. 중성자별에는 다른 물리적 복잡성이 더해지지만, 우선 중력 퍼텐셜 에너지를 \(H\)에 포함해야 합니다. \lecturetimestamp{01:27:58--01:29:24}}\end{classroomqa}
+
+\section{마무리하며 던지는 세 가지 질문}
+
+\begin{classroomqa}\audiencequestion{어떤 식이 볼츠만 분포이며, 평형에 대해 무엇을 말하나요?}\lecturerresponse{분포는 다음과 같습니다. \[
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+\]정규화와 평균 에너지 고정 조건 아래에서 엔트로피를 최대화하는 분포입니다. 평균 에너지는 바로 이 확률들로 계산해야 하며, 최종 식에서는 정규화가 거의 저절로 만족되는 것처럼 보여도 여전히 정규화를 부과해야 합니다. \lecturetimestamp{01:38:14--01:38:45}}\end{classroomqa}
+
+과정이 기계적으로 느껴질 수 있다. 분배함수를 쓰고, 로그를 취하고, 미분한다. 그런데도 그 결과로 나오는 식은 계속 놀랍다. 익숙해지면 다음에 어떤 간단한 연산을 해야 할지 알게 되지만, 그렇다고 이 주제가 덜 흥미로워지는 것은 아니다.
+
+\begin{classroomqa}\audiencequestion{붕괴하는 별이나 블랙홀에도 이런 엔트로피 개념을 적용할 수 있나요? 물질이 더 작은 영역을 차지하는데 엔트로피는 어떻게 증가할 수 있나요?}\lecturerresponse{별을 다루기 어려운 주된 이유는 물질의 세부 구조가 복잡하기 때문이다. 블랙홀은 더 명확한 기준을 제공한다. 블랙홀의 베켄슈타인--호킹 엔트로피는 주어진 거시적 제약 조건에서 중력 엔트로피가 도달하는 한계다. 붕괴 과정에서 블랙홀의 엔트로피 값까지 엔트로피가 증가할 수 있으며, 이를 더 높이려면 이용 가능한 에너지나 크기를 바꿔야 한다. \lecturetimestamp{01:39:29--01:40:36}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{분배함수로 에너지 요동도 계산할 수 있나요?}\lecturerresponse{그렇습니다. 한 번 미분하면 평균 에너지를 얻고 두 번 미분하면 그 분산을 얻습니다. \begin{align*}
+ \frac{\partial^2\log Z}{\partial\beta^2}
+ &=\langle E^2\rangle-\langle E\rangle^2\\
+ &=\operatorname{Var}(E).
+\end{align*}에너지 단위에서는 열용량과 다음 관계를 이룬다. \(\operatorname{Var}(E)=T^2C_V\)실험실 단위에서는 \(\operatorname{Var}(E)=k_BT_{\mathrm K}^2C_V\)이다. 다음 강의에서는 이 요동 관계를 계산한다. \lecturetimestamp{01:40:37--01:41:53}}\end{classroomqa}
+
+요동은 통계역학을 연속적인 열역학 기술과 구별해 준다. 특히 깁스와 아인슈타인과 연관된 요동의 체계적 연구는 매끄러운 거시 법칙 뒤에 있는 유한한 미시 구성 요소를 드러낸다. 다음 강의는 바로 이 지점에서 시작한다.
