@@ -1,0 +1,629 @@
+\chapter{국소적 평탄성, 공변 미분, 곡률}
+
+\lectureoverview{한 점을 택하면 그 점에서 1차까지 계량을 유클리드 계량으로 만들 수 있다. 곡률은 그 좌표 자유도가 끝나는 곳, 즉 이웃한 국소 틀들이 서로 맞지 않기 시작하는 2차에서 나타난다. 이 내용을 세 단계로 전개한다. 먼저 법선좌표를 살펴보고, 이어서 공변 미분과 그 접속을 다룬 다음, 두 공변 미분이 서로 교환되지 않는다는 사실을 통해 리만 텐서를 정의하고 조석 중력에 불변적인 의미를 부여한다.}
+
+\section{불가피한 지표 표기}
+
+일반상대성이론은 다소 독특한 방식으로 어렵다. 기본 개념이 이해 불가능할 만큼 난해한 것은 아니지만, 계산을 시작하면 지표와 미분, 기호가 금세 빽빽하게 들어찬다. 더 압축된 표기법도 있다. 비엘바인, 미분형식, 스피너, 트위스터와 같은 도구를 쓰면 긴 성분 방정식을 간결한 대상으로 묶을 수 있다. 하지만 그런 표기법을 익히는 일 자체가 상당한 과제이며, 압축된 표기는 처음 접할 때 가장 이해해야 할 계산 구조를 감출 수도 있다.
+
+맥스웰 방정식이 좋은 예다. 성분별로 쓰면 여러 개의 개별 방정식이 된다. 벡터 표기법은 이를 발산 방정식과 회전 방정식으로 묶어 구조를 더 쉽게 드러낸다. 일반상대성이론에도 이와 비슷하게 압축하는 방법이 있지만, 실제로 명시적인 계산을 해야 할 때는 성분을 쓰는 방법이 여전히 믿을 만한 길이다. 따라서 여기서는 지표를 그대로 드러내 두겠다. 지표의 문법에 익숙해지면 개념을 따라가기가 훨씬 수월해진다. 다만 산술 계산은 여전히 여러 쪽에 걸칠 수 있다.
+
+기호 계산용 컴퓨터 프로그램은 이런 산술 계산을 도울 수 있다. 계량 \(g_{mn}(x)\)를 주면 프로그램은 크리스토펠 기호, 리만 텐서, 리치 텐서, 아인슈타인 텐서를 구할 수 있다. 이어서 이 식들을 장 방정식에 대입할 수도 있다. 그렇다고 각 대상의 의미를 이해해야 할 필요가 없어지는 것은 아니다. 단지 기계적인 전개를 기하학에서 분리해 줄 뿐이다.
+
+\begin{classroomqa}
+\audiencequestion{이 강의가 진행되던 당시 일반상대성이론에서 활발히 연구되던 분야는 무엇이었나요?}
+\lecturerresponse{강의에서는 몇 가지 주요 연구 주제를 꼽았다. 양자 중력과 블랙홀의 양자 물리는 기초 이론의 핵심 문제였다. 고전 천체물리학과 수치 상대론에서는 서로 궤도를 돌고 병합하는 블랙홀 같은 계를 연구했다. 이런 계를 다루고 중력 복사를 예측하려면 방정식을 무작정 컴퓨터에 입력하는 것 이상의 일이 필요하다. 같은 수학적 구조가 응집물질물리학과 유체역학에서도 활용되기 시작했다. 역사적으로도 눈에 띄는 변화가 있었다. 일반상대성이론은 비교적 작은 전문 분야에서 이론물리학의 중심 언어 가운데 하나로 자리 잡았으며, 양자장론과 긴밀히 연결되었다.1960대\lecturetimestamp{00:05:15}}
+\end{classroomqa}
+
+이번 강의는 리만 기하학 자체를 다루는 마지막 강의다. 다음 강의부터는 기하학을 중력으로 해석한다. 그 연결고리는 이미 보인다. 실제 중력장과 가속좌표 또는 곡선좌표 때문에 생기는 겉보기 장을 구별하는 문제는, 곡률을 가진 계량과 불편한 좌표로 표현한 평탄한 계량을 구별하는 문제와 수학적으로 같다.
+
+\section{불변적인 판별 기준}
+
+유클리드 기하학이 내재적으로 성립할 때 2차원 기하학은 평탄하다. 직선, 평행선, 삼각형의 관계, 거리 측정이 모두 유클리드 기하학의 형태를 띤다. 평탄성은 \(g_{mn}=\delta_{mn}\)를 뜻한다고 말하고 싶을 수 있지만, 이는 좌표계에 의존하는 표현이다. 평범한 평면도 극좌표에서는 위치에 따라 달라지는 계량을 갖는다. 올바른 표현은 평탄한 영역에는 그 영역 전체에서 계량이 상수인 유클리드 좌표계가 존재한다는 것이다.
+
+계량이 임의의 좌표계로 주어졌다고 하자. 좌표계를 하나씩 바꾸어 가며 매번 계량을 변환하고, 언젠가 데카르트 형태를 찾기를 기대하는 것은 좋지 않은 판별법이다. 가능한 좌표계가 무한히 많으므로 실용적인 기준이 될 수 없다.
+
+올바른 전략은 \(g_{mn}\)와 그 도함수들로 진단량을 구성하는 것이다. 두 가지 핵심 성질을 갖는 대상 \(R\)을 원한다:
+\[
+\begin{aligned}
+R=0
+&\quad\Longleftrightarrow\quad
+\text{locally flat geometry},\\
+R\neq 0 \text{ at } P
+&\quad\Longrightarrow\quad
+\text{curvature at } P.
+\end{aligned}
+\]
+무엇보다 \(R\)는 텐서여야 한다. 한 좌표계에서 0인 텐서는 모든 좌표계에서 0이므로 좌표계를 찾아다닐 필요가 없다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_01.png}
+\caption{원하는 불변 판정 기준은 다음과 같다. 계량이 겉보기에 \(\delta_{mn}\)와 같지 않더라도, 곡률을 나타내는 대상이 0이면 기하가 국소적으로 평탄함을 알 수 있다.}
+\lectureframe{00:18:20}
+\end{figure}
+
+\emph{국소적으로}라는 한정은 중요하다. 리만 텐서가 0이면 국소적으로 유클리드 기하임이 보장되지만, 전역적인 동일시로 인해 위상이 자명하지 않을 수 있다. 예를 들어 평탄한 원통이나 토러스는 국소적으로 유클리드 공간이면서도 전역적으로는 평면이 아닐 수 있다.
+
+\section{작은 영역에서의 계량 기하학}
+
+차원에 따라 무엇이 달라지는지 살펴보면 도움이 된다. 0차원 공간은 점 하나뿐이다. 연결된 1차원 리만 공간은 국소적으로 직선으로 펴서 나타낼 수 있다. 전역적으로는 구간, 직선, 또는 고리일 수 있다. 닫힌 1차원 궤도에만 사는 벌레는 그 둘레를 잴 수 있지만, 주변 공간 속에서 궤도가 휘어 있다고 해서 내재적인 계량이 달라지지는 않는다.
+
+2차원에서는 내재적인 기하학이 훨씬 다양해진다. 평면, 구면, 울퉁불퉁한 지표면, 토러스는 국소적으로도 서로 다를 수 있고 전역 위상도 서로 다를 수 있다. 계량은 무한소 거리를 기록하는 도구다.
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:l3-line-element}
+\end{equation}
+양 \(ds^2\)은 스칼라다. 따라서 좌표변환 아래에서 \(dx^m\)가 변하는 양은 \(g_{mn}\)의 변환으로 정확히 상쇄된다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_02.png}
+\caption{위치에 따라 달라지는 계량으로 쓴 불변 선요소.}
+\lectureframe{00:19:00}
+\end{figure}
+
+계량은 비퇴화이므로 역계량이 존재한다.
+\begin{equation}
+ g^{mn}g_{nr}=\delta^m{}_r.
+\label{eq:l3-inverse-metric}
+\end{equation}
+혼합 크로네커 텐서 \(\delta^m{}_r\)는 항등 사상이다. 일반적인 리만 기하학에서 계량은 양의 정부호이기도 하다.
+\begin{equation}
+ g_{mn}u^m u^n>0
+\qquad\text{for every nonzero }u^m.
+\label{eq:l3-positive}
+\end{equation}
+뒤에서 시공간을 다룰 때는 비퇴화성은 유지하되 양의 정부호 조건을 완화한다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_03.png}
+\caption{칠판에 적힌 역계량과 항등 텐서.}
+\lectureframe{00:20:40}
+\end{figure}
+
+계량은 벡터와 공변벡터를 서로 대응시킨다.
+\begin{equation}
+ V_m=g_{mn}V^n,
+ \qquad
+ V^m=g^{mn}V_n.
+\label{eq:l3-raise-lower}
+\end{equation}
+따라서 지표를 올리거나 내리는 것은 표기상의 변화가 아니라 계량이 수행하는 연산이다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_04.png}
+\caption{계량과 그 역계량을 이용한 벡터 지표의 올림과 내림.}
+\lectureframe{00:24:40}
+\end{figure}
+
+영역 안에서 \(g_{mn}\)의 모든 성분이 상수라면, 상수 선형 좌표변환으로 그 영역의 계량을 대각화하고 정규화할 수 있다. 그러면 기하학은 평탄하다. 따라서 흥미로운 정보는 계량의 위치에 따른 변화와 관련되어야 한다.
+
+\section{법선좌표: 1차까지 평탄하게}
+
+점 \(P\)를 택하자. 법선좌표 정리에 따르면 \(P\)를 중심으로 좌표계를 구성하여 다음을 만족시킬 수 있다.
+\begin{align}
+ g_{mn}(P)&=\delta_{mn}, \label{eq:l3-normal-metric}\\
+ \partial_r g_{mn}(P)&=0. \label{eq:l3-normal-first}
+\end{align}
+강의에서는 이를 가우스 법선좌표라고 부른다. 기하학적으로는 \(P\)를 지나는 축을 긋고, 기하학이 허용하는 한 그 좌표선을 직선으로 연장한다. 직선이라는 말의 정확한 의미는 나중에 측지선 운동으로 설명한다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_05.png}
+\caption{선택한 점에서 계량이 유클리드 계량이 되도록 정한 법선좌표.}
+\lectureframe{00:28:50}
+\end{figure}
+
+이런 틀은 하나로 정해지지 않는다. \(P\)에서 직교 회전해도 \(g_{mn}(P)=\delta_{mn}\)는 그대로 유지된다. 축의 방향은 중요하지 않다. \eqref{eq:l3-normal-metric}와 \eqref{eq:l3-normal-first}가 모두 성립하는 틀이 존재하는지가 중요하다.
+
+\begin{classroomqa}
+\audiencequestion{이 조건들은 선택한 점에서만 성립하나요, 아니면 근방 전체에서 성립하나요?}
+\lecturerresponse{선택한 점 \(P\)에서 성립합니다. 어느 점에서나 법선 틀을 중심에 둘 수는 있지만, 곡률을 가진 영역 전체에서 계량을 유클리드 계량으로 유지하고 모든 1차 미분을 0으로 만드는 하나의 좌표계를 일반적으로 사용할 수는 없습니다. 같은 좌표계를 \(P\)에서 멀리까지 연장하면 계량의 고계 미분이 드러납니다.
+\lecturetimestamp{00:29:53}}
+\end{classroomqa}
+
+\(P\)에서는 일반적으로 이계 도함수를 피할 수 없다:
+\begin{equation}
+ \partial_r\partial_s g_{mn}(P)\neq 0
+ \qquad\text{in general}.
+\label{eq:l3-normal-second}
+\end{equation}
+따라서 한 점에서 계량은 영차나 일차에서는 불변 곡률 정보를 담지 않는다. 좌표 자유도를 이용해 그 정보를 없앨 수 있기 때문이다. 불변 정보가 처음 나타날 수 있는 차수는 이차이다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_06.png}
+\caption{법선좌표 조건: 계량은 유클리드 계량이고 1차 미분은 사라지지만, 2차 미분은 사라질 필요가 없다.}
+\lectureframe{00:30:50}
+\end{figure}
+
+\subsection{좌표 자유도가 충분한 이유}
+
+\(P\)를 좌표 \(x^m\)와 \(y^m\)의 공통 원점으로 잡자. 선형변환을 사용해 원점에서 계량을 원하는 형태로 맞춘 뒤, 추가 좌표변환의 이차항을 살펴보자.
+\begin{equation}
+ x^m
+ =y^m+C^m{}_{nr}y^n y^r+O(y^3),
+ \qquad C^m{}_{nr}=C^m{}_{rn}.
+\label{eq:l3-quadratic-transform}
+\end{equation}
+4차원에서 대칭인 쌍 \(nr\)는 다음과 같이
+\[
+\frac{4(4+1)}{2}=10
+\]
+독립적인 선택이 있다. \(m\)의 각 값마다 계수 \(C^m{}_{nr}\)가 10개씩 있으므로 이차 계수는 모두 40개다.
+
+대칭 계량은 4차원에서 독립 성분이 10개다. 각 성분에는 1차 미분이 4개씩 있으므로 조건 \(\partial_r g_{mn}(P)=0\)은 방정식 40개를 이룬다. 두 수가 일치한다는 사실은 이차 좌표 자유도의 크기가 1차 미분 조건을 부과하기에 정확히 알맞음을 보여준다. 법선좌표 정리는 해의 존재를 보장한다. 이 개수 세기는 임의의 비선형 연립방정식이 풀린다는 완전한 증명은 아니지만, 구조를 확인하는 유용한 방법이다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_07.png}
+\caption{좌표변환의 이차항과 4차원에서 서로 독립인 이차 단항식 10개.}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(x^m=y^m+C^m{}_{nr}y^n y^r+\cdots\)는 좌표변환을 시도한 식인가요?}
+\lecturerresponse{그렇습니다. 공통 원점에서 새 좌표계의 계량 1차 미분이 사라지도록 계수 \(C^m{}_{nr}\)를 정합니다. 선형항은 그 점 근처에서 야코비 행렬이 가역으로 유지되게 하고, 이차항은 계량의 1차 미분을 조정합니다. \lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{매끄러운 기하가 국소적으로 평탄하다는 말은 이런 뜻인가요?}
+\lecturerresponse{그것은 여기서 중요한 일차 근사에 관한 진술이다. 충분히 작은 규모에서는 매끄러운 곡면을 접평면으로 근사할 수 있으며, 정규좌표에서는 그 사실이 \(g_{mn}(P)=\delta_{mn}\)와
+\(\partial_r g_{mn}(P)=0\)로 표현된다. 어떤 근방에서 정확히 평탄하다는 것은 더 강한 조건이다. 그 근방에서 곡률 텐서도 0이어야 한다.
+\lecturetimestamp{00:36:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{계수 40개와 방정식 40개의 개수가 같다는 사실만으로 방정식을 실제로 풀 수 있다고 보장되나요?}
+\lecturerresponse{이 개수는 필요한 좌표 자유도를 보여주며, 정리는 매끄러운 비퇴화 계량에 대해 국소적인 구성이 가능함을 보장합니다. 강의에서는 2차원인 경우를 직접 확인해 보는 연습문제를 제안합니다. 이 논증은 4차원에만 국한되지 않습니다. \(d\)차원에서도 같은 대칭성과 좌표 자유도가 서로 맞아떨어집니다. \lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{전개식에 상수항이 없는 이유는 무엇이며, 어느 항이 1차항인가요?}
+\lecturerresponse{\(y^m\)가 1차항입니다. 두 좌표계의 원점은 같은 점을 나타내도록 의도적으로 정했으므로 상수항은 생략했습니다. 따라서 \(y=0\)이면 \(x=0\)입니다. 이렇게 정해도 일반성을 잃지 않습니다. \lecturetimestamp{00:38:52}}
+\end{classroomqa}
+
+\section{성분별 미분이 실패하는 이유}
+
+이제 공변벡터장 \(V_m(x)\)를 생각하자. 평탄한 공간의 직선 데카르트 좌표계에서는 기하학적으로 일정한 벡터의 성분도 일정하다. 따라서 미분을 \(\partial_rV_m\)로 정의하고 싶을 수 있다. 좌표 격자가 휘는 순간 문제가 드러난다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_08.png}
+\caption{국소적으로 곧은 틀 위에 겹쳐 그린 곡선좌표 격자.}
+\lectureframe{00:40:10}
+\end{figure}
+
+같은 기하학적 벡터를 이웃한 점들에 놓아 보자. 고정된 데카르트 틀을 기준으로 하면 성분은 변하지 않는다. 그러나 곡선좌표 기저를 기준으로 하면 이동할 때 기저 벡터 자체가 회전하므로, 벡터는 변하지 않았는데도 성분 목록은 달라진다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_09.png}
+\caption{국소 좌표 기저가 회전하므로 같은 벡터도 이웃한 점들에서 서로 다른 성분을 갖는다.}
+\lectureframe{00:42:30}
+\end{figure}
+
+단순한 조건
+\begin{equation}
+ \partial_rV_m=0
+\label{eq:l3-naive-derivative}
+\end{equation}
+은 한 좌표계에서는 참이고 다른 좌표계에서는 거짓일 수 있다. \(\partial_rV_m\)가 이계 텐서라면 이는 불가능하다. 한 기준틀에서 0이면 모든 기준틀에서 0이어야 하기 때문이다. 따라서 벡터 성분의 보통 편미분은 텐서 성분이 아니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_10.png}
+\caption{일부러 단순하게 둔 영미분 조건과 변하는 곡선 기저.}
+\lectureframe{00:44:00}
+\end{figure}
+
+기저 때문에 생기는 겉보기 변화를 제거하면서 벡터장의 실제 변화는 보존하는 미분이 필요하다.
+
+\section{공변 미분의 정의}
+
+\(P\)에서의 미분은 \(P\)의 임의로 작은 근방에 있는 값들만 비교한다. 따라서 먼저 그 점을 중심으로 한 법선좌표계에서 시작해도 된다. 이웃한 점에 있는 벡터를 잡아 그 꼬리점을 \(P\)로 옮기되, 옮기는 동안 법선좌표 성분을 고정한다. 이렇게 평행이동한 벡터와 이미 \(P\)에 놓인 벡터를 비교한 뒤 두 점 사이의 거리로 나누면, 그 국소적으로 곧은 틀에서의 일반 미분을 얻는다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_11.png}
+\caption{국소적인 비교: 차이를 구하기 전에 법선좌표에서 이웃한 벡터를 평행이동한다.}
+\lectureframe{00:46:50}
+\end{figure}
+
+이제 기하학적으로 정의한 미분을 임의의 좌표계로 표현하자. 두 가지 변화가 기여한다. 성분 \(V_m\)가 변할 수 있고 좌표 기저도 변할 수 있다. 지표의 구조에 따라 보정항의 형태가 정해진다.
+\begin{equation}
+ \nabla_rV_m
+ =\partial_rV_m-\Gamma^t{}_{rm}V_t.
+\label{eq:l3-covector-derivative}
+\end{equation}
+양 \(\Gamma^t{}_{rm}\)는 접속 계수, 즉 크리스토펠 기호다. 아래쪽 벡터 지표에는 마이너스 부호가 붙는다. 법선좌표의 중심 \(P\)에서는
+\begin{equation}
+ \Gamma^t{}_{rm}(P)=0,
+\qquad
+ \nabla_rV_m(P)=\partial_rV_m(P).
+\label{eq:l3-gamma-normal-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_12.png}
+\caption{공변벡터의 공변 미분: 성분의 일반적인 변화에서 움직이는 기저가 일으키는 변화를 뺀다.}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\nabla_rV_m=\partial_rV_m-\Gamma^t{}_{rm}V_t\)은 임의의 좌표계에서도 성립하나요? 정규좌표에서는 어떻게 되나요?}
+\lecturerresponse{전체 식은 임의의 좌표계에서 성립한다. 정규좌표를 선택한 점에서는 계량의 일차 도함수가 사라지고, 따라서 크리스토펠 기호도 사라지므로 \(\partial_rV_m\)만 남는다. 그 점에서 벗어나면 같은 정규좌표계에서도 일반적으로 접속 계수는 사라지지 않는다.
+\lecturetimestamp{00:50:22}}
+\end{classroomqa}
+
+공변 미분은 전체 대상 \(\nabla_rV_m\)가 텐서처럼 공변적으로 변환하기 때문에 그렇게 불린다. 이 이름은 아래쪽 미분 지표를 가리키는 말에 그치지 않는다. 크리스토펠 항은 편미분이 텐서가 아니게 변환되는 문제를 정확히 바로잡는다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_13.png}
+\caption{접속 보정항을 포함한 공변벡터의 완전한 미분.}
+\lectureframe{00:51:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{유체 흐름에서 쓰는 대류 미분과 관련이 있나요?}
+\lecturerresponse{강의에서는 관련이 있다고 신중하게 답한다. 유체역학에서도 유동에 실려 움직이는 변화와 고정된 좌표점에서 보이는 변화를 구별하며, 곡선좌표나 곡률을 가진 공간의 유체 방정식에는 공변 미분이 등장한다. 두 연산자의 정의가 같은 것은 아니지만, 둘 다 기술과 함께 움직이는 구조 때문에 생기는 효과를 고려해 단순 미분을 보정한다.
+\lecturetimestamp{00:52:31}}
+\end{classroomqa}
+
+여기서 사용하는 비틀림 없는 접속에서는
+\begin{equation}
+ \Gamma^t{}_{rm}=\Gamma^t{}_{mr}.
+\label{eq:l3-torsion-free}
+\end{equation}
+더 일반적인 기하학에서는 비틀림이 존재할 수 있으므로 이 대칭성을 따를 필요가 없다. 여기서 다루는 접속은 일반상대성이론의 표준 계량 정식화에 쓰이는 접속이다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_14.png}
+\caption{비틀림 없는 기하학의 대칭 접속 계수로 나타낸 크리스토펠 기호.}
+\lectureframe{00:54:30}
+\end{figure}
+
+유용한 물리적 비유가 있다. 법선좌표는 한 사건에서 자유낙하하는 틀의 역할을 한다. 좌표 보정항을 그곳에서 사라지게 할 수 있다. 임의의 곡선좌표는 가속하는 엘리베이터와 비슷하다. 틀 자체가 변하기 때문에 겉보기 힘이 나타난다. 이 비유는 국소적인 것이다. 곡률은 하나의 자유낙하 틀로는 확장된 영역 전체에서 중력을 제거할 수 없는 이유를 나타낸다.
+
+\subsection{텐서의 각 지표에 보정항 하나씩}
+
+공변 계수 2 텐서 \(T_{mn}\)에서는 각 아래쪽 지표마다 접속 보정항이 하나씩 붙는다.
+\begin{equation}
+ \nabla_sT_{mn}
+ =\partial_sT_{mn}
+ -\Gamma^t{}_{sm}T_{tn}
+ -\Gamma^t{}_{sn}T_{mt}.
+\label{eq:l3-rank-two-derivative}
+\end{equation}
+이 규칙을 기억하려면 한 지표를 고정해 둔 채 다른 지표에 대해 미분하고, 이어서 두 번째 지표에 대해서도 같은 과정을 반복하면 된다. 반변 지표에는 부호가 반대인 대응 항이 붙는다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_15.png}
+\caption{각 아래쪽 지표에 크리스토펠 보정항이 하나씩 붙는 공변 계수 2 텐서의 공변 미분.}
+\lectureframe{01:01:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{기호 \(\partial_r\)는 법선좌표만을 가리키나요? 텐서 식도 그 틀에서만 성립하나요?}
+\lecturerresponse{아닙니다. 표기 \(\partial_r=\partial/\partial x^r\)는 모든 좌표계에서 의미가 있으며, 완전한 공변 미분 공식은 임의의 좌표계를 대상으로 씁니다. 선택한 법선좌표계의 점에서만 크리스토펠 보정항이 사라집니다. \lecturetimestamp{00:57:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{정규좌표에서 공변미분이 편미분으로 줄어드는 것은 선택한 점에서만 그런가요? 크리스토펠 기호는 텐서인가요?}
+\lecturerresponse{그렇다. 편미분으로 줄어드는 것은 점에서만 성립한다. 크리스토펠 기호는 텐서가 아니다. 정규좌표에서는 \(P\)에서 사라질 수 있지만, 다른 좌표계에서는 같은 점에서도 사라지지 않을 수 있다. 크리스토펠 기호의 비텐서적 변환 덕분에 \eqref{eq:l3-covector-derivative}의 조합은 텐서처럼 변환된다.
+\lecturetimestamp{00:58:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{공변 미분은 실제로 어디에 쓰이나요?}
+\lecturerresponse{장 방정식에 쓰입니다. 중력장은 점마다 달라지므로 그 방정식에는 미분이 들어가야 합니다. 동시에 방정식은 모든 좌표계에서 같은 내용을 담아야 합니다. 공변 미분은 텐서를 텐서로 바꾸므로 특정한 기준틀에 좌우되지 않는 미분방정식을 세울 수 있게 합니다. \lecturetimestamp{01:02:35}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{이웃한 점들 사이의 변화를 나타내기 위해 공변 미분에 좌표의 미소 변화량을 곱할 수 있나요?}
+\lecturerresponse{네. 무한소 변위 \(dx^s\)를 따라가는 공변 변화는 \(dx^s\nabla_sT\)입니다. 편미분 항은 성분의 변화를 나타내고, 접속 항은 좌표 기저의 변화를 반영합니다. 평탄한 공간도 극좌표로 나타내면 이 구별이 필요합니다. \lecturetimestamp{01:03:22}}
+\end{classroomqa}
+
+\section{계량 적합성이 접속을 결정한다}
+
+계량에 계수 2 규칙을 적용하자. 법선좌표계의 \(P\)에서는 \(\partial_sg_{mn}=0\)이고 \(\Gamma^t{}_{sm}=0\)이므로
+\(\nabla_sg_{mn}=0\)이다. 공변 미분은 텐서이므로 이 점에서 성립하는 결과는 모든 좌표계에서 성립한다.
+\begin{equation}
+ \nabla_sg_{mn}=0.
+\label{eq:l3-metric-compatibility}
+\end{equation}
+이를 계량 적합성이라고 한다. 평행이동이 계량을 보존하고, 따라서 길이와 각도도 보존한다는 뜻이다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_16.png}
+\caption{계량으로부터 접속을 유도하는 출발점인 계량 적합성 방정식.}
+\lectureframe{01:06:20}
+\end{figure}
+
+\eqref{eq:l3-metric-compatibility}를 전개하면 다음과 같다.
+\begin{equation}
+ 0
+ =\partial_sg_{mn}
+ -\Gamma^t{}_{sm}g_{tn}
+ -\Gamma^t{}_{sn}g_{mt}.
+\label{eq:l3-compat-expanded}
+\end{equation}
+미분 지표와 계량 지표를 순환 치환한 식을 두 개 더 쓰자.
+\begin{align}
+ 0
+ &=\partial_mg_{sn}
+ -\Gamma^t{}_{ms}g_{tn}
+ -\Gamma^t{}_{mn}g_{st},
+\label{eq:l3-compat-m}\\
+ 0
+ &=\partial_ng_{sm}
+ -\Gamma^t{}_{ns}g_{tm}
+ -\Gamma^t{}_{nm}g_{st}.
+\label{eq:l3-compat-n}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_17.png}
+\caption{지표를 치환해 얻은 세 개의 계량 적합성 방정식.}
+\lectureframe{01:10:20}
+\end{figure}
+
+\eqref{eq:l3-compat-m}와 \eqref{eq:l3-compat-n}를 더한 다음 \eqref{eq:l3-compat-expanded}를 뺀다. 비틀림 없는 대칭성 \eqref{eq:l3-torsion-free}를 사용하면 원치 않는 접속 항이 상쇄된다.
+\begin{equation}
+ \partial_mg_{sn}+\partial_ng_{sm}-\partial_sg_{mn}
+ =2\Gamma^t{}_{mn}g_{st}.
+\label{eq:l3-isolate-gamma-lowered}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_18.png}
+\caption{두 계량 적합성 방정식을 더하고 세 번째 식을 빼면 원치 않는 크리스토펠 항이 상쇄된다.}
+\lectureframe{01:12:10}
+\end{figure}
+
+\(g^{rs}\)를 곱해 접속을 분리하면 다음과 같다.
+\begin{equation}
+ \boxed{
+ \Gamma^r{}_{mn}
+ =\frac12 g^{rs}
+ \left(
+ \partial_mg_{sn}
+ +\partial_ng_{sm}
+ -\partial_sg_{mn}
+ \right)}
+\label{eq:l3-christoffel}
+\end{equation}
+따라서 레비치비타 접속은 계량과 그 1차 미분으로 구성된다. 이것이 법선좌표의 중심에서 크리스토펠 기호가 사라지는 이유다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_19.png}
+\caption{역계량을 곱해 지표를 내린 접속 방정식에서 크리스토펠 기호를 분리한다.}
+\lectureframe{01:16:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{계량의 세 가지 양립 조건식을 모두 0으로 둔 이유는 무엇인가요?}
+\lecturerresponse{정규좌표에서 선택한 점에서는 계량의 보통 도함수가 사라지고 크리스토펠 기호도 사라진다. 따라서 그 점에서 계량의 공변미분도 사라진다. 다른 점에서도 이 명제가 성립함을 보이려면 그 점을 중심으로 정규좌표계를 잡고 같은 과정을 반복하면 된다. \(\nabla_sg_{mn}\)는 텐서이므로, 그 값이 0이라는 사실은 좌표계와 무관하다. \lecturetimestamp{01:14:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{계량과 크리스토펠 배열의 차원은 어떻게 되며, 4차원에서 독립적인 크리스토펠 성분이 40개인 이유는 무엇인가요?}
+\lecturerresponse{\(d\)차원에서 \(g_{mn}\)는 대칭 \(d\times d\) 행렬입니다. 접속에는 지표가 세 개 있습니다. 위쪽 지표 \(r\)를 하나 고정하면, 대칭인 아래쪽 쌍 \(mn\)에는 다음과 같은 선택이 \(d(d+1)/2\)개 있습니다. 따라서 비틀림 없는 접속의 독립 성분은 \(d^2(d+1)/2\)개이며, \(d=4\)일 때 40개입니다.
+\lecturetimestamp{01:16:18}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_20.png}
+\caption{성분 개수를 세던 중의 칠판: 대칭인 아래쪽 지표 쌍의 선택은 10가지이고 위쪽 지표의 선택은 4가지다.}
+\lectureframe{01:16:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\eqref{eq:l3-christoffel}에는 어떤 계량을 쓰나요? 점마다 다른 법선좌표 계량을 써야 하나요?}
+\lecturerresponse{이 공식에는 계산을 위해 선택한 전역 또는 국소 좌표계에서의 계량 성분을 씁니다. 법선좌표는 한 점에서 규칙을 유도할 때만 쓰는 국소적인 도구입니다. 한 점에서 법선 틀로 이동해 미분하고, 그 결과를 다시 변환한 다음 보조 틀을 버립니다. \eqref{eq:l3-christoffel}를 알면 관심 있는 임의의 좌표계에서 바로 계산할 수 있습니다. \lecturetimestamp{01:17:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\nabla_sg_{mn}=0\)이나 크리스토펠 기호 공식은 공간이 평탄하다는 것을 말해 주나요?}
+\lecturerresponse{아니다. 계량의 양립성은 곡률이 있든 없든 모든 레비치비타 접속에서 성립한다. 평면을 극좌표로 나타내면 크리스토펠 기호가 사라지지 않을 수도 있다. 한 좌표계에서 어떤 영역 전체에 걸쳐 \(\Gamma^r{}_{mn}\)가 모두 사라진다면 그 좌표계는 그 영역에서 데카르트 좌표계이며, 그 영역은 평탄하다. 그러나 크리스토펠 기호가 사라지지 않는다는 사실만으로는 곡률을 판별할 수 없다. 여전히 \(\Gamma\)의 도함수와 곱으로 이루어진 텐서가 필요하다. \lecturetimestamp{01:19:27}}
+\end{classroomqa}
+
+\section{접속만으로는 알아낼 수 없는 것을 보여주는 원뿔}
+
+끝이 둥근 원뿔을 생각하자. 끝점에서 떨어진 곳에서는 종이로 만든 보통 원뿔로 근사할 수 있다. 평평한 원판에서 부채꼴을 잘라 내고 드러난 가장자리를 붙인다. 남은 종이는 늘어나지 않았다. 접합선과 끝점을 제외한 모든 점은 국소적으로 여전히 평탄하다. 잘라 낸 부채꼴의 흔적은 부족각 \(\Delta\)으로 나타난다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_21.png}
+\caption{끝점 밖에서는 국소적으로 평탄하지만 끝점에 곡률이 집중되는, 비자명한 기하학의 예로 원뿔을 도입한다.}
+\lectureframe{01:23:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_22.png}
+\caption{원판에서 부채꼴을 잘라 내고 양쪽 가장자리를 서로 붙이면 원뿔의 부족각이 생긴다.}
+\lectureframe{01:24:20}
+\end{figure}
+
+종이를 이용한 구성은 이 구별을 구체적으로 보여 준다. 쐐기 모양을 잘라 낸 종이에서 벡터를 운반하되, 평면에서 평행을 유지한다. 쐐기의 두 변을 서로 붙인 뒤 끝점을 한 바퀴 도는 경로를 따라가면, 운반된 벡터는 처음 방향에 비해 회전한 상태로 출발점에 돌아온다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_23.png}
+\caption{종이 원뿔 시연: 쐐기 모양을 잘라 낸 평면 종이는 잘린 두 변을 서로 붙이면 원뿔이 된다.}
+\lectureframe{01:25:10}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_24.png}
+\caption{변을 서로 붙이기 전, 잘라 낸 쐐기에 그린 벡터.}
+\lectureframe{01:27:40}
+\end{figure}
+
+이 회전이 홀로노미다. 이는 한 구간에서 좌표를 잘못 선택해서 생기는 현상이 아니다. 각 짧은 구간은 국소적으로 평탄한 틀에서 다룰 수 있다. 이 효과는 닫힌 고리 주위에서 그러한 국소 비교들을 합성한 뒤에야 나타난다. 이상적인 원뿔에서는 순회전량이 방향 부호를 제외하면 결손각과 같다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_25.png}
+\caption{원뿔 꼭짓점 주위를 평행 이동하면 벡터의 방향이 회전한 채 돌아온다. 홀로노미는 둘러싸인 곡률을 기록한다.}
+\lectureframe{01:29:10}
+\end{figure}
+
+\section{무한소 고리를 도는 두 경로}
+
+유한한 고리 대신 작은 좌표 직사각형을 생각하자. 한 꼭짓점에서 출발해 먼저 \(r\) 방향으로, 다음으로 \(s\) 방향으로 평행 이동한다. 이 결과를 먼저 \(s\) 방향으로, 다음으로 \(r\) 방향으로 평행 이동한 결과와 비교하자. 평탄한 데카르트 좌표에서는 두 경로의 결과가 같다. 곡률이 있는 기하에서는 일반적으로 그렇지 않다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_26.png}
+\caption{좌표 직사각형 주위의 무한소 평행 이동에서 두 이동 순서.}
+\lectureframe{01:31:40}
+\end{figure}
+
+대수적으로는 공변미분의 교환자가 그 척도가 된다:
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n.
+\label{eq:l3-commutator}
+\end{equation}
+매끄러운 함수에서는 보통의 혼합 편미분이 서로 교환된다. 여기서 교환되지 않는 까닭은 벡터 성분뿐 아니라 접속 항도 미분하기 때문이다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_27.png}
+\caption{공변미분을 두 가지 순서로 적용했을 때의 차이로 나타나는 무한소 폐곡선.}
+\lectureframe{01:33:20}
+\end{figure}
+
+이를 계산하려면 먼저
+\[
+ T_{rn}=\nabla_rV_n
+\]를 계수 2의 공변 텐서로 본다. 그런 다음 \eqref{eq:l3-rank-two-derivative}를 사용해 \(T_{rn}\)를 \(s\) 방향으로 미분한다. \(r\)와 \(s\)를 서로 바꾸어 반복한 뒤 두 결과를 뺀다. 계산은 길지만 기계적이다. 식을 전개하고 곱의 미분법을 적용한 다음, \(V_n\)의 이계 편미분을 포함하는 항들을 소거하면 된다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_28.png}
+\caption{\(\nabla_rV_n\)를 2계 텐서로 취급하여 이중 공변미분을 시작한다.}
+\lectureframe{01:35:40}
+\end{figure}
+
+칠판에서 채택한 규약을 사용하면 결과는 다음과 같다.
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n
+ =R_{srn}{}^tV_t.
+\label{eq:l3-riemann-commutator}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_29.png}
+\caption{공변미분의 교환자는 곡률 텐서가 공변벡터에 작용하는 방식을 정의한다.}
+\lectureframe{01:38:30}
+\end{figure}
+
+이 교환자 순서에 따르면,
+\begin{equation}
+\begin{split}
+ R_{srn}{}^t
+={}&
+ \partial_r\Gamma^t{}_{sn}
+ -\partial_s\Gamma^t{}_{rn}\\
+&+\Gamma^p{}_{sn}\Gamma^t{}_{pr}
+ -\Gamma^p{}_{rn}\Gamma^t{}_{ps}.
+\end{split}
+\label{eq:l3-riemann}
+\end{equation}
+다른 문헌에서는 부호를 반대로 하거나 지표를 다른 순서로 배열할 수 있다. 규약은 \eqref{eq:l3-riemann-commutator}와 \eqref{eq:l3-riemann}를 함께 적어 고정한다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_30.png}
+\caption{리만 텐서: 접속의 두 미분항과 접속의 두 이차항.}
+\lectureframe{01:39:40}
+\end{figure}
+
+식 \eqref{eq:l3-christoffel}은 곡률이 계량의 2차 미분 차수에서 처음 나타나는 이유를 보여 준다. 각각의 \(\Gamma\)에는 \(g\)의 1차 미분이 들어 있다. 따라서 \eqref{eq:l3-riemann}의 미분항에는 \(g\)의 2차 미분이 들어 있고, 이차항에는 1차 미분들의 곱이 들어 있다. \(P\)에서의 정규좌표에서는 접속 자체는 사라지지만 그 미분은 일반적으로 사라지지 않으므로 곡률은 남는다:
+\[
+\begin{aligned}
+ \Gamma^t{}_{mn}(P)&=0,\\
+ R_{srn}{}^t(P)
+ &=\partial_r\Gamma^t{}_{sn}(P)
+ -\partial_s\Gamma^t{}_{rn}(P).
+\end{aligned}
+\]
+미분 차수를 혼동하지 않는 것이 중요하다. 리만 텐서는 \(\Gamma\)의 1차 미분을 사용하며, 이는 계량의 2차 미분에 해당한다.
+
+이것이 우리가 원하는 진단법이다. 어떤 영역 전체에서 리만 텐서의 모든 성분이 영이면 그 영역은 국소적으로 평탄하다. 한 점에서라도 성분이 영이 아니면 좌표계를 어떻게 바꾸어도 그곳의 곡률을 없앨 수 없다. 컴퓨터 대수 시스템을 이용하면 해석적으로 주어진 계량에서 이 성분들을 계산해 확인할 수 있지만, 핵심 개념은 무한소 폐곡선을 따라 벡터를 평행이동했을 때 원래 벡터로 돌아오지 않는다는 것이다.
+
+\section{조석 중력으로서의 곡률}
+
+이 기하학적 판별법에는 직접적인 물리적 의미가 있다. 서로 연결된 삼각형들로 만든 유연한 물체를 생각해 보자. 평탄한 영역에서는 응력 없이 움직일 수 있다. 내재 계량이 휘어진 영역으로 밀어 넣으면 연결 구조의 각 부분이 선호하는 거리와 각도를 모두 유지할 수 없다. 물체는 늘어나거나 압축되거나 전단 변형되어야 한다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_31.png}
+\caption{연결된 물체가 평탄한 영역에서 곡률이 있는 볼록한 부분으로 이동하면 국소 계량을 따르기 위해 변형되어야 한다.}
+\lectureframe{01:44:10}
+\end{figure}
+
+그 변형은 조석력에 대응하는 기하학적 현상이다. 중력장에서는 서로 이웃한 자유 낙하 입자들이 서로에 대해 가속할 수 있다. 한 방향으로는 늘어나고 다른 방향으로는 압축될 수 있다. 이 상대 가속도를 좌우하는 것이 리만 텐서다. 나중에 측지선 편차라는 이름으로 도입할 언어를 사용하면, 접벡터 \(u^\mu\)와 분리벡터 \(\xi^\mu\)에 대해
+\begin{equation}
+ \frac{D^2\xi^\mu}{D\tau^2}
+ =-R^\mu{}_{\nu\rho\sigma}
+ u^\nu\xi^\rho u^\sigma,
+\label{eq:l3-geodesic-deviation-preview}
+\end{equation}
+전체 부호는 선택한 곡률 규약에 따른다. 여기서는 이 방정식을 유도하지 않지만, 곡률과 조석 응력이 국소적으로 동일한 물리 현상이라는 강의의 설명을 정확히 보여 준다.
+
+완벽히 균일한 이상적 중력장에는 조석 변화가 없으며, 균일하게 가속하는 좌표계로 변환하면 국소적으로 없앨 수 있다. 고립된 질량이 만드는 실제 장은 완벽하게 균일하지 않다. 지구의 중력장은 대략 방사형으로 향하고 위치에 따라 달라지므로, 서로 이웃한 자유 낙하 궤적은 모이거나 벌어진다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_32.png}
+\caption{방사형 중력장은 크기가 있는 물체를 가로질러 달라지며, 그 결과 조석 중력이라고 하는 상대가속도가 생긴다.}
+\lectureframe{01:48:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{진짜 중력장과 가속 좌표계에서 관측되는 겉보기 장은 무엇이 다른가?}
+\lecturerresponse{균일하게 가속하는 좌표계는 국소 실험에서 균일한 중력장을 모방할 수 있지만, 조석 상대 가속도는 만들지 않는다. 실제 물질이 만들어 내는 장은 위치에 따라 달라지므로 조석력이 생긴다. 이 힘은 그 효과가 단순한 좌표 변환이 아님을 보여 주는 불변의 증거다. 완벽하게 균일한 실제 장은 이상화된 경우다. 큰 천체 표면의 충분히 작은 영역 근처에서 실제 장은 근사적으로만 균일할 수 있다. \lecturetimestamp{01:46:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{낙하하는 물체의 크기는 조석 효과에 왜 중요한가?}
+\lecturerresponse{곡률은 서로 이웃한 위치들을 비교한다. 장이 변하는 길이 척도보다 훨씬 작은 물체는 모든 부분에서 거의 같은 가속도를 경험하므로 변형이 거의 없다. 크기가 큰 물체는 더 큰 차이를 경험한다. 지구 근처에서 자유 낙하하는 박테리아는 조석 응력을 거의 느끼지 않지만, 강의에서 상정한 가상의 이천 마일짜리 사람은 심하게 일그러질 것이다. 곡률은 국소적인 값을 갖지만, 누적되는 변형은 비교하는 두 위치 사이의 거리에 따라 커진다.
+\lecturetimestamp{01:49:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{평탄성을 확인하려면 모든 점에서 곡률을 점검해야 하는데, 그래도 무한한 문제인가?}
+\lecturerresponse{계량이 해석식으로 주어지면 미분값과 곡률 성분도 해석식으로 표현된다. 이를 위치의 함수로 한 번 계산하면 항등적으로 영인지 알아볼 수 있는 경우가 많다. 계량이 수치 표로만 주어지면 표본 영역 전체에서 곡률을 추정하고 살펴야 하므로 실제로 계산량이 클 수 있다. 그래도 모든 점에서 가능한 모든 좌표계를 찾아보는 것보다 훨씬 명확하게 규정된 문제다.
+\lecturetimestamp{01:50:37}}
+\end{classroomqa}
+
+\section{확립된 내용}
+
+이제 논증을 하나의 연속된 흐름으로 정리할 수 있다:
+\begin{enumerate}
+ \item 임의로 선택한 한 점에서 좌표를 정하면
+ \(g_{mn}=\delta_{mn}\)와 \(\partial_rg_{mn}=0\)가 되게 할 수 있다.
+ \item 텐서 성분의 보통 미분은 좌표 기저가 점마다 변하기 때문에 텐서처럼 변환하지 않는다.
+ \item 접속은 기저의 변화를 보정하며 공변미분을 정의한다.
+ \item 계량 호환성과 비틀림 없음은 계량으로부터 접속을 유일하게 결정한다.
+ \item 두 공변미분은 리만 텐서만큼 서로 교환되지 않는다. 이 비가환성이 홀로노미, 계량의 이계 변화, 조석 중력을 측정한다.
+\end{enumerate}
+
+이로써 특정한 전역 좌표계를 택하지 않고도 약속했던 곡률 판별법을 구성했다. 다음 단계에서는 양의 정부호 리만 기하에서 로런츠 시공간으로 옮겨 이 도구들을 별이나 블랙홀의 슈바르츠실트 기하에 적용하고, 이 강의 끝에서 미뤄 두었던 측지선으로 돌아간다.

@@ -1,0 +1,704 @@
+\chapter{고유기하와 텐서의 대수}
+
+텐서 표기법은 생각의 일부를 대신해 줄 때에만 유용하다. 잘 설계된 표기법은 기계 부품 상자처럼 작동한다. 위 첨자는 아래 첨자와 짝을 이루고, 종류가 다른 대상은 서로 더할 수 없으며, 적법한 축약을 하면 남은 첨자만으로 그 대상의 변환 법칙을 알 수 있다. 이 장치의 직접적인 목적은 기하학적이다. 진정한 곡률과 좌표계가 휘어 있기 때문에 나타나는 곡률을 구분하려 한다.
+
+\section{내부에서 본 곡률}
+
+평범한 종이 한 장에서 시작해 보자. 종이는 늘이거나 찢지 않고 원통 모양으로 말 수 있다. 주변 공간의 관찰자에게 종이는 분명히 휘어져 있다. 그런데 종이 위에서 측정한 거리는 변하지 않는다. 외재적 곡률은 달라졌지만 내재적 기하학은 달라지지 않았다.
+
+이제 종이 위에 갇혀 있는 작은 생명체를 상상해 보자. 이 생명체는 주변 공간을 들여다볼 수 없다. 길이를 재고, 이웃한 방향들을 비교하고, 삼각형을 만들고, 측정 막대를 여기저기로 옮길 수는 있다. 기하학에 필요한 것은 이 내부 실험뿐이어야 한다. 중력에서 이에 대응하는 질문은 어떤 장이 진정한 시공간 곡률을 나타내는지, 아니면 평탄한 시공간을 곡선좌표로 기술한 것에 불과한지 하는 것이다.
+
+이러한 내재적 관점을 구체화하는 한 방법은 곡면을 점과 연결선의 망으로 바꾸는 것이다. 이웃한 점들을 연결하고, 각 연결선의 길이를 기록한 다음, 이음매가 회전하도록 둔다. 정삼각형 격자는 평평하게 놓여 있다. 이음매를 구부려도 격자를 길이 하나 바꾸지 않고 언제든 평면으로 되돌릴 수 있으므로, 기록된 기하학은 달라지지 않는다.
+
+이제 주변 연결선은 그대로 둔 채 한 꼭짓점에 만나는 여섯 연결선의 길이를 늘려 보자. 중심 꼭짓점은 정해진 길이를 어기지 않고는 더 이상 평면에 머물 수 없다. 중심 꼭짓점은 위로 솟아올라 볼록한 부분을 만들어야 한다. 이 곡률을 알아내는 데 바깥에서 보는 관점은 필요하지 않았다. 서로 양립할 수 없는 이웃 간 거리에 이미 곡률이 담겨 있었다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_01.png}
+\caption{내재적 기하학을 나타내는 삼각형 연결선 모형. 한 꼭짓점 주변의 연결선을 바꾸면 길이를 바꾸지 않고는 평평하게 만들 수 없는 볼록한 부분이 생긴다.}
+\lectureframe{00:06:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{평탄한 공간의 정확한 정의는 무엇인가요?}
+\lecturerresponse{조작적 관점에서 답하면, 그 공간의 내재적 거리 관계를 왜곡 없이 유클리드 배치로 구현할 수 있는 공간이 평탄하다. 아래에서 전개할 언어로 말하면, 관심 영역 전체에서 계량이 상수 크로네커 델타가 되는 좌표를 찾을 수 있을 때 리만 공간은 평탄하다. 한 점에서는 언제나 국소적으로 이렇게 할 수 있다. 이를 어떤 영역 전체에서 할 수 있는지가 자명하지 않은 조건이다. 곡률 텐서는 결국 특별한 좌표 선택에 기대지 않고 이 조건을 표현하게 된다.
+\lecturetimestamp{00:09:15}}
+\end{classroomqa}
+
+이 답은 아직 정당화하지 않은 계량을 사용한다. 그러므로 잠시 곡률에서 텐서 해석으로 방향을 돌린다. 이 우회는 선택 사항이 아니다. 좌표 의존성과 진정한 기하학을 구분하려면 먼저 계량이 텐서임을 확인해야 한다.
+
+\section{장과 좌표 기술}
+
+일반상대성이론에서 텐서는 대개 텐서 \emph{장}이다. 즉, 각 점에 텐서가 하나씩 있고 그 성분은 점에 따라 변한다. 스칼라장은 가장 간단한 예다. 곡면의 온도는 각 점 \(S(P)\)에서 하나의 수 \(P\)로 나타낼 수 있다. 두 사람이 그 점에 서로 다른 좌표를 붙일 수는 있지만, 그 점의 온도에는 동의해야 한다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_02.png}
+\caption{동일한 점들에 대한 좌표 표기 두 가지와 스칼라장.}
+\lectureframe{00:11:25}
+\end{figure}
+
+\(x^m\)와 \(y^m\)를 두 개의 매끄러운 좌표계라고 하자. 각각은 점을 순서가 있는 수의 목록으로 보내는 사상이다. 서로 겹치는 좌표 패치에서는 두 목록이 서로 역함수인 다음 함수들로 연결된다.
+\begin{equation}
+ y^m=y^m(x^1,\ldots,x^d),
+ \qquad
+ x^m=x^m(y^1,\ldots,y^d).
+\label{eq:coordinate-maps}
+\end{equation}
+매끄러움이 있어야 미분할 수 있고, 가역성이 있어야 좌표를 바꾸는 것만으로 어떤 점도 사라지거나 다른 점과 동일시되지 않는다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_03.png}
+\caption{동일한 기하학적 영역을 기술하는 두 개의 매끄러운 가역 좌표 사상.}
+\lectureframe{00:13:10}
+\end{figure}
+
+스칼라장의 변환 법칙은 간단히 다음과 같다.
+\begin{equation}
+ S'(y)=S(x).
+\label{eq:scalar-law}
+\end{equation}
+양변의 함수는 입력값이 다르므로 다르게 보일 수 있지만, 서로 대응하는 점에서의 값은 일치한다. 이것이 불변 명제의 기본형이다.
+
+\section{비스듬한 좌표와 두 종류의 성분}
+
+변환 법칙으로 일반 텐서를 정의하기에 앞서, 벡터의 위 첨자와 아래 첨자를 서로 장식용 표기처럼 취급할 수 없는 이유를 살펴보는 것이 좋다.
+
+축들이 서로 수직도 아니고 정규화되어 있지도 않은 좌표 격자를 그려 보자. 한 점에서 \(x^m\)를 좌표 단위만큼 증가시키면 기저 벡터 \(\mathbf e_m\)가 생긴다. 좌표로 표현하면 다음과 같다.
+\begin{equation}
+ \mathbf e_m=\frac{\partial \mathbf r}{\partial x^m}.
+\label{eq:coordinate-basis}
+\end{equation}
+벡터 \(\mathbf e_m\)는 길이가 1일 필요도, 서로 직교할 필요도 없다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_04.png}
+\caption{비스듬한 좌표 격자와 그 좌표 기저 벡터.}
+\lectureframe{00:17:40}
+\end{figure}
+
+모든 벡터 \(\mathbf V\)는 이 기저로 전개할 수 있다.
+\begin{equation}
+ \mathbf V=V^m\mathbf e_m.
+\label{eq:contravariant-expansion}
+\end{equation}
+수 \(V^m\)는 \emph{반변 성분}이다. 이 성분은 기저 벡터들을 조합해 기하학적 벡터를 만드는 데 필요한 계수다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_05.png}
+\caption{비직교 좌표 기저에서 벡터를 전개한 모습.}
+\lectureframe{00:19:20}
+\end{figure}
+
+또 다른 자연스러운 수의 모임은 다음과 같다.
+\begin{equation}
+ V_m=\mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf e_m.
+\label{eq:covariant-projection}
+\end{equation}
+이는 \emph{공변 성분}이다. 비스듬한 기저에서는 단순히 첨자를 옮긴 동일한 계수가 아니다. \eqref{eq:contravariant-expansion}를 대입하면 다음을 얻는다.
+\begin{equation}
+ V_m
+ =V^n\bigl(\mathbf e_n\mathbin{\boldsymbol{\cdot}}\mathbf e_m\bigr).
+\label{eq:covariant-from-basis}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_06.png}
+\caption{좌표 기저와의 스칼라곱으로 구한 공변 성분.}
+\lectureframe{00:21:10}
+\end{figure}
+
+기저 벡터들의 스칼라곱은 그람 행렬을 이룬다.
+\begin{equation}
+ g_{mn}=\mathbf e_m\mathbin{\boldsymbol{\cdot}}\mathbf e_n.
+\label{eq:metric-gram}
+\end{equation}
+따라서
+\begin{equation}
+ V_m=g_{mn}V^n.
+\label{eq:lower-vector}
+\end{equation}
+여기서 계량이 처음 등장한다. 계량은 좌표 기저의 길이와 벡터들 사이의 각도를 모두 기록하므로 전개 계수를 사영값으로 바꾸어 준다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_07.png}
+\caption{기저 벡터들의 그람 행렬로 나타낸 계량.}
+\lectureframe{00:23:40}
+\end{figure}
+
+같은 행렬로 길이도 계산할 수 있다.
+\begin{align}
+ \mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf V
+ &=(V^m\mathbf e_m)\mathbin{\boldsymbol{\cdot}}
+   (V^n\mathbf e_n) \notag\\
+ &=g_{mn}V^mV^n.
+\label{eq:vector-length}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_08.png}
+\caption{계량과 반변 성분으로 쓴 벡터의 노름.}
+\lectureframe{00:25:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{형식적인 변환 법칙을 정의하기 전에 왜 이런 기하학적 구성을 도입하나요?}
+\lecturerresponse{첨자의 의미를 구체적으로 보여 주기 때문이다. 위 첨자 성분은 전개 계수이고, 아래 첨자 성분은 벡터에 대한 선형 측정값이며, 계량은 둘을 연결한다. 그러면 형식적 정의를 통해 이 역할들이 임의의 매끄러운 좌표변환에서도 유지됨을 알 수 있다. \lecturetimestamp{00:26:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{공변 성분과 반변 성분의 수치가 같아지는 경우는 언제인가요?}
+\lecturerresponse{정규직교 유클리드 기저에서는 \(g_{mn}=\delta_{mn}\)이므로, \(V_m=V^m\)가 성분별로 성립합니다. 직교성만으로는 충분하지 않습니다. 기저 벡터의 길이가 단위 길이가 아니면 대각 계량이 여전히 스케일 인자를 제공하기 때문입니다.
+\lecturetimestamp{00:26:19}}
+\end{classroomqa}
+
+극좌표를 보면 주의할 점이 분명해진다. 반지름 방향과 각도 방향의 좌표선은 서로 직교하지만, 고정된 \(d\theta\)의 변화는 물리적 거리 \(r\,d\theta\)에 해당한다. 평면에서는
+\begin{equation}
+ ds^2=dr^2+r^2d\theta^2,
+\label{eq:polar-metric}
+\end{equation}
+따라서 이 기저는 직교하지만 데카르트 기저는 아니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_09.png}
+\caption{극좌표: 반지름에 따라 각도 방향 척도 인자가 커지는 직교 좌표 방향.}
+\lectureframe{00:28:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{공변 벡터는 실제로 다른 벡터인가요, 아니면 같은 벡터를 나열하는 또 다른 방법인가요?}
+\lecturerresponse{계량을 주기 전에는 벡터와 쌍대벡터는 서로 다른 종류의 선형 대상이다. 벡터는 접공간의 원소이고, 쌍대벡터는 그 공간 위의 선형 함수다. 비퇴화 계량은 둘 사이에 일대일 대응을 정해 주며, 이는 \(V_m=g_{mn}V^n\)로 나타내지만 이 대응을 동일시해서는 안 된다. \lecturetimestamp{00:29:10}}
+\end{classroomqa}
+
+\section{변환 법칙으로 정의하는 텐서}
+
+가장 안전한 형식적 정의는 조작적이다. 배열의 성분이 알맞은 야코비 인자들에 따라 변환하면 그 배열은 텐서다. \eqref{eq:coordinate-maps}를 미분하면
+\begin{equation}
+ dy^m=\frac{\partial y^m}{\partial x^n}\,dx^n.
+\label{eq:differential-law}
+\end{equation}
+모든 반변 벡터는 같은 법칙을 따른다.
+\begin{equation}
+ V'^m(y)
+ =\frac{\partial y^m}{\partial x^n}V^n(x).
+\label{eq:contravariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_10.png}
+\caption{좌표 미분량의 변환을 본보기로 삼은 반변 변환 법칙.}
+\lectureframe{00:32:50}
+\end{figure}
+
+쌍대벡터는 역야코비 행렬에 따라 변환한다.
+\begin{equation}
+ W'_m(y)
+ =\frac{\partial x^n}{\partial y^m}W_n(x).
+\label{eq:covariant-law}
+\end{equation}
+스칼라의 기울기가 대표적인 예다. \eqref{eq:scalar-law}에 연쇄법칙을 적용하면
+\begin{equation}
+ \frac{\partial S}{\partial y^m}
+ =\frac{\partial x^n}{\partial y^m}
+  \frac{\partial S}{\partial x^n}.
+\label{eq:gradient-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_11.png}
+\caption{연쇄법칙에 따라 쌍대벡터로 변환하는 스칼라 기울기.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{위 첨자 성분과 아래 첨자 성분은 반드시 물리적 단위가 같나요?}
+\lecturerresponse{아니다. 좌표 성분은 좌표와 그 기저 벡터의 단위 및 척도 관례를 물려받는다. 한 좌표가 길이이고 다른 좌표가 각도라면 두 성분은 차원조차 같지 않을 수 있다. 물리적 차원이 좌표계와 무관한 대상은 전체 축약이다.
+\lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{왜 보통 미분이 아니라 편미분을 사용하나요?}
+\lecturerresponse{장은 여러 좌표에 의존한다. 야코비 행렬은 한 좌표 함수의 인자 하나만 변하고 나머지는 고정되어 있을 때 그 함수가 어떻게 변하는지를 나타내므로, 그 성분은 편미분이다.
+\lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+이제 규칙은 기계적으로 확장된다. 위 첨자가 있는 각 프라임 첨자는 \(\partial y/\partial x\) 인자를 하나 가져오고, 아래 첨자가 있는 각 프라임 첨자는 \(\partial x/\partial y\) 인자를 하나 가져온다. 혼합 텐서는 다음과 같이 변환한다.
+\begin{equation}
+ T'^m{}_n
+ =
+ \frac{\partial y^m}{\partial x^p}
+ \frac{\partial x^q}{\partial y^n}
+ T^p{}_q,
+\label{eq:mixed-law}
+\end{equation}
+랭크 2 공변 텐서는 다음과 같이 변환한다.
+\begin{equation}
+ W'_{mn}
+ =
+ \frac{\partial x^p}{\partial y^m}
+ \frac{\partial x^q}{\partial y^n}
+ W_{pq}.
+\label{eq:rank-two-covariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_12.png}
+\caption{위 첨자 하나와 아래 첨자 하나를 가진 텐서의 변환 법칙.}
+\lectureframe{00:40:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_13.png}
+\caption{아래 첨자마다 역야코비 인자가 하나씩 들어가는 랭크 2 공변 텐서의 변환 법칙.}
+\lectureframe{00:42:15}
+\end{figure}
+
+별도 언급이 없으면 반복 첨자에 대해 합산한다. 이 관례는 합 기호를 생략하면서도 이를 복원하는 데 필요한 정보를 모두 보존한다. 더미 첨자는 한 항 안에 정확히 두 번, 한 번은 위 첨자로 한 번은 아래 첨자로 나타나야 한다. 자유 첨자는 방정식의 모든 항에서 한 번씩 나타난다.
+
+\begin{classroomqa}
+\audiencequestion{이 합산 표기법은 누가 도입했나요?}
+\lecturerresponse{관례상 아인슈타인에게 공로를 돌리므로 아인슈타인 합산 관례라고 부른다. 이 표기법의 가치는 역사적 장식에 있지 않다. 첨자 배열만 보아도 허용되는 텐서 연산을 곧바로 알 수 있다. \lecturetimestamp{00:43:21}}
+\end{classroomqa}
+
+\section{텐서 방정식과 좌표계에 무관한 진리}
+
+성분은 좌표계에 따라 달라지지만, 텐서 방정식은 모든 좌표계에서 성립한다. 같은 종류의 두 텐서가 \(W=T\)를 만족한다면 그 차는 영 텐서다.
+\begin{equation}
+ W^{m\cdots}{}_{\cdots n}
+ -T^{m\cdots}{}_{\cdots n}=0.
+\label{eq:tensor-equality}
+\end{equation}
+변환 법칙은 선형이므로 한 좌표계에서 성분이 모두 0이면 모든 좌표계에서도 성분이 모두 0이다. 방정식 양변에서 자유 첨자가 일치해야 한다는 점은 필수적이다. 텐서 종류가 다른 대상 사이의 방정식에는 좌표계에 무관한 의미가 없다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_14.png}
+\caption{첨자 구조가 일치해야 성분의 등식이 모든 좌표계에서 성립하는 텐서 방정식이 된다.}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{벡터 성분이 변하는데 정확히 무엇이 불변인가요?}
+\lecturerresponse{기하학적 텐서와 텐서 방정식의 참·거짓은 불변이지만 좌표 성분 목록은 불변이 아니다. 스칼라는 첨자가 하나도 없는 특별한 경우이므로, 한 점에서의 수치는 모든 좌표계에서 같다. \lecturetimestamp{00:47:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{벡터의 크기가 불변량에 해당하나요? 크기가 0이면 벡터도 0인가요?}
+\lecturerresponse{계량이 주어지면 축약 \(g_{mn}V^mV^n\)은 스칼라이므로 불변인 제곱 노름이다. 양의 정부호 기하학에서는 영벡터일 때만 이 값이 0이다. 로런츠 시공간에서는 영이 아닌 널 벡터의 노름도 0일 수 있으므로, 두 명제는 구분해야 한다. \lecturetimestamp{00:48:04}}
+\end{classroomqa}
+
+\section{허용되는 텐서 대수}
+
+칠판에는 앞으로 필요한 주요 연산이 정리되어 있다. 스칼라를 곱하고, 같은 종류의 텐서를 더하거나 빼고, 텐서곱을 만들고, 위 첨자와 아래 첨자를 축약하며, 마지막으로 공변 미분을 한다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_15.png}
+\caption{칠판에 정리한 텐서 연산: 덧셈, 곱셈, 축약, 미분.}
+\lectureframe{00:50:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{무엇에 대한 미분인가요?}
+\lecturerresponse{위치, 따라서 좌표에 대한 미분이다. 성분을 보통 미분한 결과는 일반적으로 텐서처럼 변환하지 않는다. 야코비 행렬 자체가 위치에 따라 변하기 때문이다. 공변 미분은 이를 바로잡지만, 그 구성은 기하학적 기초를 갖춘 뒤로 미룬다. \lecturetimestamp{00:51:49}}
+\end{classroomqa}
+
+스칼라 곱셈은 자명하다. 덧셈과 뺄셈은 텐서 종류가 일치해야 한다.
+\begin{equation}
+ C^m{}_n=A^m{}_n+B^m{}_n,
+\qquad
+ D^m{}_n=A^m{}_n-B^m{}_n.
+\label{eq:tensor-addition}
+\end{equation}
+벡터와 쌍대벡터를 더하거나 랭크 2 텐서와 스칼라를 더할 수는 없다. 속도와 면적을 더할 수 없는 것과 같다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_16.png}
+\caption{자유 첨자 패턴이 같은 텐서끼리만 성분별 덧셈을 정의할 수 있다.}
+\lectureframe{00:53:00}
+\end{figure}
+
+텐서곱은 각 인자의 첨자를 모두 결합한다. 예를 들면
+\begin{equation}
+ T^{mn}=V^mW^n,
+\qquad
+ S^m{}_n=V^mU_n.
+\label{eq:tensor-products}
+\end{equation}
+4차원에서 \(T^{mn}\)에는 성분이 16개 있다. 어떤 첨자도 합산하지 않았으므로 이는 내적이 아니라 외적이다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_17.png}
+\caption{각 벡터 인자에서 자유 첨자 하나씩을 남기는 텐서곱.}
+\lectureframe{00:55:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{여기서 두 벡터의 곱은 내적인가요?}
+\lecturerresponse{아니다. 내적은 첨자를 축약해 스칼라를 만든다. 텐서곱은 두 첨자를 모두 자유롭게 남겨 랭크 2 텐서를 만든다. 4차원에서는 성분이 1개가 아니라 16개다. \lecturetimestamp{00:56:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{성분인 수끼리는 교환할 수 있는데, 두 벡터 인자의 순서를 바꿔도 차이가 없나요?}
+\lecturerresponse{보통의 스칼라 성분에 대해서는
+\(V^mW^n=W^nV^m\)이다. 그러나 텐서의 각 자리는 순서가 있다. 인자를 서로 바꾼 다음 첫 번째 자리를 \(m\), 두 번째 자리를 \(n\)로 이름 붙이면 전치된 배열이 된다. 따라서 \(T^{mn}\)가 \(T^{nm}\)와 같을 필요는 없다.
+\lecturetimestamp{00:58:52}}
+\end{classroomqa}
+
+\section{축약과 역야코비 보조정리}
+
+축약의 핵심은 연쇄법칙이다. 좌표 사상들은 서로 역함수이므로
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =
+ \frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\label{eq:inverse-jacobian}
+\end{equation}
+두 야코비 행렬은 서로 역행렬이며, 그 곱은 크로네커 델타다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_18.png}
+\caption{텐서 축약의 바탕이 되는 보조정리로서 제시한 역야코비 항등식.}
+\lectureframe{01:02:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{역야코비 행렬은 어떤 대상인가요?}
+\lecturerresponse{역좌표 사상의 도함수 행렬이다. 그 성분은 \(\partial x^b/\partial y^m\)이며, 다변수 연쇄법칙에 따라 \(\partial y^m/\partial x^a\)와 행렬곱을 하면 항등 행렬이 된다. \lecturetimestamp{01:02:37}}
+\end{classroomqa}
+
+간단히 증명해 보면 표기가 분명해진다. 임의의 스칼라 함수 \(f\)에 대해
+\begin{equation}
+ \frac{\partial f}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial f}{\partial x^a}.
+\end{equation}
+\(f=x^b\)를 택하면
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_19.png}
+\caption{연쇄법칙에 따라 역야코비 인자들의 곱이 크로네커 델타로 정리된다.}
+\lectureframe{01:04:55}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\delta^b{}_a\)는 데카르트 좌표에서만 항등 행렬인가요?}
+\lecturerresponse{아니다. 혼합 텐서 \(\delta^b{}_a\)는 모든 좌표계에서 항등 사상을 나타낸다. \(\delta_{ab}\)로 쓴 유클리드 계량은 정규직교 데카르트 좌표계에만 특별히 해당하지만, 혼합 첨자를 가진 항등 텐서를 그 계량과 혼동해서는 안 된다.
+\lecturetimestamp{01:04:58}}
+\end{classroomqa}
+
+이제 혼합 텐서 \(T^m{}_n\)를 생각하자. 이 텐서의 변환된 대각합은 다음과 같다.
+\begin{align}
+ T'^m{}_m
+ &=
+ \frac{\partial y^m}{\partial x^a}
+ \frac{\partial x^b}{\partial y^m}
+ T^a{}_b \notag\\
+ &=\delta^b{}_aT^a{}_b
+ =T^a{}_a.
+\label{eq:trace-invariant}
+\end{align}
+축약된 양에는 자유 첨자가 없으므로 스칼라다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_20.png}
+\caption{위 첨자와 아래 첨자를 축약하기 전 혼합 텐서의 변환.}
+\lectureframe{01:07:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_21.png}
+\caption{축약하면 야코비 인자들이 서로 상쇄되어 두 좌표계에서 같은 스칼라 대각합이 남는다.}
+\lectureframe{01:10:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{축약한 뒤에도 결과에 첨자가 남나요?}
+\lecturerresponse{축약한 한 쌍의 첨자만 사라진다. \(T^m{}_n\)의 유일한 위 첨자와 아래 첨자를 축약하면 스칼라가 남는다. 랭크가 더 높은 텐서에서는 축약하지 않은 첨자들이 모두 자유롭게 남는다.
+\lecturetimestamp{01:09:00}}
+\end{classroomqa}
+
+예를 들어
+\begin{equation}
+ A^{mn}{}_{pq}
+ \longmapsto
+ A^{mn}{}_{pn}
+ =B^m{}_p
+\label{eq:higher-rank-contraction}
+\end{equation}
+\(n\)를 축약하여 랭크를 2만큼 낮춘다. 첨자 문자는 더미 표기일 뿐이다. 구조적 규칙은 위 첨자 자리 하나와 아래 첨자 자리 하나를 합산한다는 것이다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_22.png}
+\caption{랭크가 높은 텐서의 축약은 위 첨자 하나와 아래 첨자 하나를 없애면서 나머지 자유 첨자를 보존한다.}
+\lectureframe{01:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{같은 방식으로 위 첨자 둘이나 아래 첨자 둘을 축약할 수 없는 이유는 무엇인가요?}
+\lecturerresponse{위 첨자 둘은 같은 방향의 야코비 인자 둘을 제공한다.
+\(\partial y^m/\partial x^a\)와
+\(\partial y^m/\partial x^b\)이다. 이 둘은 곱해도 항등 행렬이 되지 않으므로, 제안된 합산은 텐서 변환 법칙을 따르지 않는다. 계량으로 먼저 첨자 하나를 내리면 위 첨자와 아래 첨자의 축약이 가능하다. 그러한 추가 텐서가 없으면 이 연산은 좌표에 불변이지 않다. --
+\lecturetimestamp{01:13:03}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_23.png}
+\caption{같은 종류의 첨자를 축약하려 하면 같은 방향의 야코비 인자 둘이 남으므로 항등 행렬로 정리되지 않는다.}
+\lectureframe{01:14:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{축약은 텐서에서 내적에 해당하나요?}
+\lecturerresponse{축약은 벡터 자리와 쌍대벡터 자리를 짝짓는 기본적인 불변 쌍이다. 계량이 있으면 두 벡터를 그런 쌍으로 바꿀 수 있으므로, 익숙한 내적은 계량을 적용한 뒤 축약하는 것이다. \lecturetimestamp{01:14:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{축약하는 두 첨자는 같은 범위에서 변해야 하나요?}
+\lecturerresponse{그렇다. 두 첨자는 동일한 \(d\)차원 접공간과 여접공간의 쌍대 기저를 가리킨다. 그렇지 않으면 합산과 역야코비 항등식이 정의되지 않는다.
+\lecturetimestamp{01:15:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{한 기준계에서 영인 텐서는 왜 모든 기준계에서 영인가요?}
+\lecturerresponse{변환된 각 성분은 원래 성분들의 선형결합입니다. 입력 성분이 모두 영이면 그 모든 선형결합도 영이 됩니다. 이러한 단순한 선형성 덕분에 텐서 방정식은 좌표계와 무관합니다. \lecturetimestamp{01:15:31}}
+\end{classroomqa}
+
+\section{제곱 거리로부터 계량을 정의하기}
+
+이제 다시 기하학으로 돌아가자. 성분이 \(dx^m\)인 무한소 변위의 제곱 길이를 다음과 같이 정의한다.
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:line-element}
+\end{equation}
+이는 피타고라스 정리를 일반화한 것이다. 계량은 점에 따라 변할 수 있고, 비대각 성분은 좌표 방향들이 서로 직교하지 않음을 나타낸다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_24.png}
+\caption{텐서 연산 목록에서 무한소 선요소의 이차형 정의로 넘어간다.}
+\lectureframe{01:18:45}
+\end{figure}
+
+\(dx^m dx^n=dx^n dx^m\)이므로 대칭 부분만 기여한다. 따라서 다음과 같이 둘 수 있다.
+\begin{equation}
+ g_{mn}=g_{nm}.
+\label{eq:metric-symmetry}
+\end{equation}
+\(d\)차원에서 대칭 계량의 독립 성분 수는
+\begin{equation}
+ \frac{d(d+1)}{2}
+\label{eq:metric-component-count}
+\end{equation}
+이다. 4차원에서는 10개, 3차원에서는 6개, 2차원에서는 3개다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_25.png}
+\caption{선요소와 계량의 독립 성분 수를 세는 데 사용하는 대칭 성분 배열.}
+\lectureframe{01:21:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{4차원에서 독립적인 계량 성분이 16개가 아니라 10개인 이유는 무엇인가요?}
+\lecturerresponse{대각 성분이 4개이고, 비대각 성분 쌍이 6개다. 다시 말해
+\(4(4+1)/2=10\)이다. 반대칭 부분은 대칭곱 \(dx^m dx^n\)에 곱해지므로 상쇄된다. \lecturetimestamp{01:19:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{3차원에는 독립 성분이 몇 개 있나요?}
+\lecturerresponse{6개다. 대각 성분 3개와 비대각 성분 쌍 3개이며, 또는 \(3(3+1)/2\)이다. \lecturetimestamp{01:20:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{그럼 2차원에서는요?}
+\lecturerresponse{3개다. \(g_{11}\), \(g_{22}\), 그리고 대칭 성분 한 쌍 \(g_{12}=g_{21}\)이다. \lecturetimestamp{01:22:28}}
+\end{classroomqa}
+
+\subsection{계량이 텐서인 이유}
+
+제곱 거리는 스칼라다. 따라서 같은 변위를 두 좌표계로 쓰면
+\begin{equation}
+ g_{mn}(x)\,dx^m dx^n
+ =
+ g'_{pq}(y)\,dy^pdy^q.
+\label{eq:length-invariance}
+\end{equation}
+다음 식을
+\begin{equation}
+ dx^m=\frac{\partial x^m}{\partial y^p}\,dy^p
+\end{equation}
+두 번 적용하면
+\begin{align}
+ ds^2
+ &=
+ g_{mn}(x)
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ dy^pdy^q.
+\label{eq:metric-transform-derivation}
+\end{align}
+프라임 좌표 표현과 비교하면 다음 관계를 얻는다.
+\begin{equation}
+ g'_{pq}(y)
+ =
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ g_{mn}(x).
+\label{eq:metric-transformation}
+\end{equation}
+이는 랭크 2 공변 텐서의 변환 법칙과 정확히 일치한다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_26.png}
+\caption{스칼라 선요소의 불변성으로부터 계량 변환 법칙을 유도한다.}
+\lectureframe{01:26:25}
+\end{figure}
+
+이 결론은 계량에 아래 첨자가 두 개 있는 이유도 설명한다. 아래에 있는 각 계량 첨자는 변위 성분의 위 첨자 하나와 짝을 이룬다. 좌표를 바꿀 때 \eqref{eq:metric-transformation}에 있는 역야코비 인자 두 개는 미분량의 순야코비 인자 두 개와 상쇄되어 \(ds^2\)를 변하지 않게 한다.
+
+\section{계량 행렬과 그 역행렬}
+
+한 점에서 \(g_{mn}\)는 대칭 행렬이다.
+\begin{equation}
+ [g_{mn}]
+ =
+ \begin{pmatrix}
+ g_{11} & g_{12} & \cdots \\
+ g_{12} & g_{22} & \cdots \\
+ \vdots & \vdots & \ddots
+ \end{pmatrix}.
+\label{eq:metric-matrix}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_27.png}
+\caption{텐서 변환 법칙을 확립한 뒤 대칭 행렬로 나타낸 계량.}
+\lectureframe{01:28:50}
+\end{figure}
+
+계량은 비퇴화여야 한다. 즉, 고윳값이 0인 것이 없으므로 역행렬을 가진다. 그 역행렬을 \(g^{mn}\)로 표기하자. 첨자 표기법으로는
+\begin{equation}
+ g_{mn}g^{np}=\delta_m{}^p.
+\label{eq:inverse-metric}
+\end{equation}
+반복되는 \(n\)에 대해 합산하고, \(m\)과 \(p\)는 곱의 행과 열을 표시한다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_28.png}
+\caption{역계량은 다음 관계를 통해 도입한다.
+\(g_{mn}g^{np}=\delta_m{}^p\)}
+\lectureframe{01:31:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{한 점에서 벡터와 텐서는 실제로 어디에 놓이나요?}
+\lecturerresponse{한 점의 벡터들은 그 점의 접공간 \(T_P M\)을 이루고, 쌍대벡터들은 쌍대공간 \(T_P^*M\)을 이룬다. 고차 텐서는 이 공간들의 텐서곱에 속한다. 텐서장은 각 점에 그러한 대상을 매끄럽게 하나씩 대응시킨다. 계량은 접공간 위의 쌍선형 형식이고, 역계량은 여접공간 위의 대응하는 쌍선형 형식이다. \lecturetimestamp{01:34:15}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_29.png}
+\caption{곡률 다양체의 한 점에 붙은 접공간에 그린 벡터.}
+\lectureframe{01:35:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(g_{mn}g^{np}=\delta_m{}^p\)는 \(m=p\)인 경우만 가리키나요?}
+\lecturerresponse{아니다. 완전한 행렬 방정식이다. 모든 순서쌍 \((m,p)\)에 대해, 합산된 곱은 \(m=p\)이면 1이고 \(m\ne p\)이면 0이다. 대각 방정식과 비대각 방정식이 모두 동시에 들어 있다. \lecturetimestamp{01:36:50}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_30.png}
+\caption{항등 행렬 전체를 나타내는 혼합 첨자 관계로 해석한 역관계.}
+\lectureframe{01:38:50}
+\end{figure}
+
+2차원에서는 다음을 뜻한다.
+\begin{equation}
+ \begin{pmatrix}
+ g_{11} & g_{12}\\
+ g_{12} & g_{22}
+ \end{pmatrix}
+ \begin{pmatrix}
+ g^{11} & g^{12}\\
+ g^{12} & g^{22}
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+ 1&0\\
+ 0&1
+ \end{pmatrix}.
+\label{eq:two-dimensional-inverse}
+\end{equation}
+예를 들면
+\begin{align}
+ g_{11}g^{11}+g_{12}g^{12}&=1,\\
+ g_{11}g^{12}+g_{12}g^{22}&=0.
+\end{align}
+다른 행에서는 나머지 두 방정식을 얻는다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_31.png}
+\caption{2차원 행렬곱으로 명시적으로 전개한 역계량 항등식.}
+\lectureframe{01:40:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{계량은 양의 정부호여야 하나요?}
+\lecturerresponse{보통의 리만 기하학에서는 양의 정부호성이 모든 영이 아닌 벡터의 제곱 길이를 양수로 만든다. 시공간에는 로런츠 계량을 사용하며, 부호 하나가 나머지 세 부호와 반대다. 여기서 두 경우에 공통으로 필요한 것은 양의 정부호성이 아니라 비퇴화성이다.
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{고윳값이 0인 경우는 왜 제외하나요?}
+\lecturerresponse{고윳값이 0이면 계량 행렬이 특이행렬이 되어 \(g^{mn}\)가 존재하지 않으며, 계량은 벡터와 공변벡터 사이에 일대일 대응을 정할 수 없습니다. 통상적인 미분기하학적 의미의 계량은 비퇴화여야 합니다. \lecturetimestamp{01:43:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{4차원 계량의 독립적인 성분 10개는 10차원 끈 이론과 관련이 있나요?}
+\lecturerresponse{아닙니다. 앞의 10은 단지 대칭인 4×4 행렬의 성분 수인 \(4(4+1)/2\)입니다. 초끈 이론에서 시공간 차원이 10으로 나타나는 데에는 다른 기원이 있습니다. \lecturetimestamp{01:44:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{로런츠 시공간에 길이가 0인 영벡터가 있다면, 계량은 역행렬을 갖지 못하게 되나요?}
+\lecturerresponse{아닙니다. 영벡터는 \(g_{mn}V^mV^n=0\)를 만족하는데, 이는 부정부호 이차 형식 안에서 항들이 상쇄된 결과입니다. 이는 \(g_{mn}V^n=0\)을 만족하는 고윳값 0의 벡터와는 다릅니다. 예를 들어, 민코프스키 계량의 고윳값은 \(\pm1\)이며, 빛꼴 벡터를 허용하면서도 역행렬을 완벽하게 갖습니다. \lecturetimestamp{01:45:02}}
+\end{classroomqa}
+
+\section{다음에 다룰 내용}
+
+이제 기하학적 구상을 명료하게 서술할 수 있습니다. 계량은 무한소 거리를 나타내고, 공변적으로 변환되며, 역을 갖습니다. 좌표가 복잡하기만 해도 계량의 성분은 복잡해 보일 수 있습니다. 기하학 자체가 휘어 있는지 판단하려면, 좌표에 무관한 방식으로 이웃한 점들에서의 계량을 비교해야 합니다.
+
+텐서를 미분하면 변환 법칙에 들어 있는 위치 의존 야코비안도 함께 미분되므로, 보통의 미분만으로는 충분하지 않습니다. 따라서 다음 단계는 공변미분입니다. 계량의 미분으로부터 접속을 구성하고, 그 접속의 미분과 곱으로부터 곡률을 구성합니다. 그래야만 말린 페이지에 관한 질문에 기하학 자체에 내재한 최종 답을 얻을 수 있습니다.
