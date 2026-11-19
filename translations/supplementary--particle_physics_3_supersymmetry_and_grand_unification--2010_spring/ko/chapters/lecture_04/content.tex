@@ -1,0 +1,561 @@
+\chapter{일반적인 대칭에서 그라스만 대수까지}
+
+\lectureoverview{초대칭은 대칭의 한 종류이므로, 먼저 양자역학에서 대칭이라는 말이 무엇을 뜻하는지 되짚어 보자. 물리적 변환은 힐베르트 공간에서 유니터리 연산자로 표현된다. 연속 변환은 무한소 생성자로 나타내며, 생성자들의 교환자는 변환들이 어떻게 합성되는지를 담고 있다. 진정한 대칭은 에너지를 보존하며, 이는 해밀토니언과 교환한다는 것과 동등하다. 초대칭은 익숙한 모든 사례가 공유하는 한 가지 가정을 바꾼다. 초대칭 생성자는 보손을 페르미온으로, 페르미온을 보손으로 바꾼다. 이러한 생성자를 구성하다 보면 자연스럽게 생성·소멸 연산자와 반교환자, 그리고 홀수 원소의 제곱이 0이 되는 유한 그라스만 대수에 이르게 된다.}
+
+\section{대칭은 서로 다른 배치를 연결한다}
+
+대칭은 단지 보기 좋게 규칙을 맞춘 것이 아니다. 한 물리적 배치를 다른 배치와 연결하는 작용이다. 예를 들어 좌우 반사는 양손을 서로 연결한다. 사람과 주변의 법칙이 정확한 좌우 대칭을 가진다면, 양손의 대응하는 성질은 같을 것이다. 더 일반적으로, 정확한 대칭으로 연결된 물체나 상태는 그 대칭이 보존하는 물리량을 공유해야 한다. 입자물리학에서는 흔히 질량이 같고, 원자물리학에서는 같은 회전 다중항에 속하는 상태들의 에너지가 같다.
+
+우리가 살펴볼 주제는 초대칭이지만, 먼저 회전이나 병진 같은 연속 대칭을 되짚어 보는 것이 유용하다. 초대칭이 통상적인 의미에서 “연속적”인지 묻는 것부터가 어색하다. 초대칭의 무한소 매개변수는 보통의 가환 실수가 아니기 때문이다. 초대칭은 연속 대칭의 등급화된 확장으로 보는 것이 가장 적절하며, 아래에서 도입할 그라스만 연산을 통해 이 말의 뜻을 지금 필요한 수준으로 정확히 표현할 수 있다. \editorialnote{현대 용어로 초대칭은 연속 등급 대칭이라고 한다. 이 한정어는 통상적인 연속 대 이산이라는 구분이 초대칭에는 깔끔하게 들어맞지 않는다는 강의의 설명을 보충한다.}
+
+\section{힐베르트 공간에서의 유니터리 작용}
+
+양자계는 상태 벡터 \(\ket{\psi}\)로 나타낸다. 물리적 대칭 작용은 그 상태에 작용하는 연산자 \(U\)로 표현된다:
+\begin{equation}
+\ket{\psi}\longmapsto U\ket{\psi}.
+\end{equation}
+공간 회전의 경우, 축과 각도가 \(U\)를 결정한다. 상태에 여러 위치의 입자가 포함되어 있다면, 변환된 켓은 모든 입자가 회전된 위치에 있는 배치를 나타낸다. 병진도 마찬가지로, 전체 배치가 이동된 상태로 원래 상태를 바꾼다.
+
+\begin{classroomqa}
+\audiencequestion{상태 벡터는 흔히 무한 차원인 힐베르트 공간에 속합니다. 힐베르트 공간을 회전하는 건가요, 아니면 보통의 3차원 공간을 회전하는 건가요? \lecturetimestamp{00:04:20}}
+\lecturerresponse{두 설명은 서로 다른 수준에서 같은 작용을 가리킵니다. 유니터리 변환은 힐베르트 공간의 벡터에 작용하며, 보통 공간에서 배치가 물리적으로 회전하는 것을 나타냅니다. 추상적인 힐베르트 공간 자체를 문자 그대로 3차원 회전시키는 것이 아니라, 그 공간에서 공간 회전을 표현하는 것입니다.}
+\end{classroomqa}
+
+핵심 조건은 유니터리성이다:
+\begin{equation}
+U^\dagger U=UU^\dagger=\mathbf 1,
+\qquad
+U^{-1}=U^\dagger.
+\end{equation}
+이 조건은 내적을 보존하므로 확률도 보존한다:
+\begin{equation}
+\braket{U\psi}{U\psi}
+=\bra{\psi}U^\dagger U\ket{\psi}
+=\braket{\psi}{\psi}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.56\textwidth]{lecture_04_figure_02.png}
+\lectureframe{00:05:56.420}
+\caption{변환된 상태에서 유니터리 조건으로 넘어가는 강의 초반의 판서. 켓과 수반 연산자의 곱은 보이지만 오른쪽 끝부분은 강사가 가리고 있다. 완전한 방정식은 아래 유도 과정에 나온다.}
+\end{figure}
+
+엄밀히 말하면 위그너 정리는 시간 반전처럼 반유니터리인 대칭도 허용한다. 여기서 다루는 항등 변환과 연속적으로 이어진 변환은 유니터리로 표현된다. \editorialnote{반유니터리 변환의 가능성은 표준적인 단서다. 이는 회전, 병진 또는 초대칭 생성자에 관한 강의의 설명을 바꾸지 않는다.}
+
+\section{무한소 변환과 생성자}
+
+아무 작용도 하지 않는 경우는 \(U=\mathbf 1\)로 나타내며, \(U=0\)로 나타내지 않는다. 충분히 작은 변환은 항등 연산자에서 작은 매개변수에 선형인 항만큼 달라진다. 작은 각도 \(\epsilon\)만큼 회전하면
+\begin{equation}
+U(\epsilon)=\mathbf 1+i\epsilon L+O(\epsilon^2).
+\end{equation}
+1차까지 유니터리이려면
+\begin{align}
+U^\dagger U
+&=\left(\mathbf 1-i\epsilon L^\dagger\right)
+  \left(\mathbf 1+i\epsilon L\right)+O(\epsilon^2)\\
+&=\mathbf 1+i\epsilon(L-L^\dagger)+O(\epsilon^2),
+\end{align}
+따라서
+\begin{equation}
+L^\dagger=L.
+\end{equation}
+연산자 \(L\)가 무한소 생성자다.
+
+회전에는 서로 독립인 축마다 하나씩, 세 생성자가 필요하다:
+\begin{equation}
+L_x,\qquad L_y,\qquad L_z.
+\end{equation}
+임의의 축 \(\widehat{\bm n}\)를 중심으로 하는 회전의 생성자는 다음과 같다:
+\begin{equation}
+L_{\widehat{\bm n}}=\widehat{\bm n}\cdot\bm L.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{\(x\), \(y\), \(z\)축의 생성자를 더하면 다른 축을 중심으로 하는 회전을 만들 수 있나요? \lecturetimestamp{00:07:50}}
+\lecturerresponse{그렇습니다. 이 생성자들의 선형결합은 그 사이 방향의 축을 중심으로 하는 회전을 생성합니다. 독립적인 성분 세 개면 모든 무한소 공간 회전을 만들 수 있습니다.}
+\end{classroomqa}
+
+회전의 경우 이 생성자는 각운동량의 성분이다. 이 표기가 더 일반적으로도 유용한 까닭은, 모든 연속 대칭을 국소적으로 생성자를 통해 이해하기 때문이다.
+
+\section{곱셈표로서의 교환자}
+
+회전 생성자는 다음 관계를 만족한다.
+\begin{align}
+[L_x,L_y]&=iL_z,&
+[L_y,L_z]&=iL_x,&
+[L_z,L_x]&=iL_y,
+\end{align}
+간결하게 쓰면,
+\begin{equation}
+[L_i,L_j]=i\epsilon_{ijk}L_k.
+\end{equation}
+두 지표가 같으면 레비치비타 기호는 사라지고, \(1,2,3\)의 순열이 짝순열이면 \(+1\), 홀순열이면 \(-1\)이다. 중요한 구조적 성질은 닫힘이다. 두 생성자의 교환자는 또 다른 생성자다.
+
+교환자가 회전의 기하학을 어떻게 나타낼까? \(x\)축을 중심으로 작게 회전한 뒤, \(y\)축을 중심으로 회전하고, \(x\)축 회전을 되돌린 다음, 마지막으로 \(y\)축 회전을 되돌린다고 하자. 서로 다른 축을 중심으로 하는 회전은 가환하지 않으므로 작용들이 상쇄되지 않는다.
+
+\begin{classroomqa}
+\audiencequestion{비행기의 롤, 피치, 요로 이 비가환성을 그려 볼 수 있나요? \lecturetimestamp{00:12:36}}
+\lecturerresponse{그렇습니다. 기체의 축을 중심으로 연속해서 회전하면 순서를 바꿨을 때 최종 방향이 달라진다는 사실을 곧바로 기하학적으로 확인할 수 있습니다. 아래 대수는 익숙한 이 사실의 무한소 형태입니다.}
+\end{classroomqa}
+
+다음을 두자.
+\begin{equation}
+U_x(\epsilon)=\mathbf 1+i\epsilon L_x,
+\qquad
+U_y(\delta)=\mathbf 1+i\delta L_y.
+\end{equation}
+연산자는 켓에 오른쪽에서 왼쪽으로 작용하므로, 말한 순서는 다음과 같이 표현된다:
+\begin{equation}
+\mathcal C
+=U_y^{-1}(\delta)U_x^{-1}(\epsilon)
+ U_y(\delta)U_x(\epsilon).
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{되돌리는 작용을 수반 연산자 대신 역연산자로 써도 되는 이유는 무엇인가요? \lecturetimestamp{00:13:25}}
+\lecturerresponse{변환이 유니터리이기 때문입니다: \(U^\dagger=U^{-1}\). 무한소 변환의 역연산을 취하면 1차 항의 부호만 바뀝니다: \(U_x^{-1}=\mathbf 1-i\epsilon L_x+O(\epsilon^2)\).}
+\end{classroomqa}
+
+칠판에 적힌 네 인수를 곱하는 과정은 활기찬 연습이 되었다. \(\epsilon\) 또는 \(\delta\)에 일차인 항은 모두 상쇄되었고, 강의실에서는 혼합항을 함께 추적했다. 잠시 두 배 인수를 둘러싼 혼란이 생기면서 연산자 순서를 놓치기 얼마나 쉬운지가 드러났다. 정리된 이차 차수 결과는 다음과 같다.
+\begin{align}
+\mathcal C
+&=\mathbf 1+\epsilon\delta[L_x,L_y]
+  +O(\epsilon^2\delta,\epsilon\delta^2)\\
+&=\mathbf 1+i\epsilon\delta L_z
+  +O(\epsilon^2\delta,\epsilon\delta^2).
+\end{align}
+따라서 닫힌 순서를 따라 변환하면 \(z\)축 주위로 \(\epsilon\delta\)에 비례하는 각도만큼 작은 회전이 남는다. \editorialnote{칠판의 곱셈식은 강의실에서 계산을 탐색한 뒤 순서와 계수를 확정해 준다. 순서에 대한 규약을 뒤집으면 부호는 바뀌지만, 남는 변환이 교환자로 결정된다는 결론은 바뀌지 않는다.}
+
+\begin{classroomqa}
+\audiencequestion{역변환의 순서를 바꾸면 곱이 항등 연산자가 되나요? \lecturetimestamp{00:25:23}}
+\lecturerresponse{각 변환을 자기 역변환 바로 옆에 놓으면 쌍마다 상쇄됩니다. 비자명한 교환자 순서에서는 의도적으로 그 쌍을 떨어뜨려 놓습니다. 이 순서에 따라 결과가 달라져 항등 변환으로 줄어들지 않는 정도가 순서 의존성을 나타냅니다.}
+\end{classroomqa}
+
+곱의 길이가 길어지면 계산은 더 복잡해지지만, 새로운 원리가 필요한 것은 아니다.
+
+\begin{classroomqa}
+\audiencequestion{생성자가 세 개보다 많거나 작은 변환을 여러 번 하면 어떻게 되나요? \lecturetimestamp{00:25:34}}
+\lecturerresponse{교환자와 계산은 늘어나지만, 대수가 닫힌다는 것을 알면 무한히 많은 무한소 변환이 어떻게 결합되는지 알아낼 수 있습니다. 유한 변환은 작은 변환을 여러 번 합성해 만들 수 있습니다.}
+\end{classroomqa}
+
+이런 의미에서 교환자 대수는 항등 연산자 근방에서 연속군을 나타내는 곱셈표다.
+
+\section{병진을 더해 공간의 예를 완성하다}
+
+공간 병진의 생성자는 운동량이다. 강의에서 사용한 부호 규약에 따르면
+\begin{equation}
+\begin{aligned}
+T_x(a)&=\mathbf 1+iaP_x+O(a^2),\\
+T_y(b)&=\mathbf 1+ibP_y+O(b^2),
+\end{aligned}
+\end{equation}
+여기서 \(a\)과 \(b\)은 각도가 아니라 거리다.
+
+두 병진은 가환한다. 점을 먼저 \(x\) 방향으로, 다음에 \(y\) 방향으로 옮기고, \(x\) 방향 병진을 되돌린 뒤 \(y\) 방향 병진을 되돌리면 점은 원래 위치로 돌아온다:
+\begin{equation}
+[P_i,P_j]=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{물체를 물리적으로 병진하거나 회전시키려면 운동을 시작하고 멈추게 하는 힘이 필요한가요? \lecturetimestamp{00:28:45}}
+\lecturerresponse{여기서 정의하는 작용은 그런 것이 아닙니다. 대칭 변환은 원래 상태와 전체 배치가 병진 또는 회전한 수학적 상태를 비교합니다. 장치를 실제로 움직일 때의 동역학적 궤적이나 가속, 일의 양을 설명하는 것이 아닙니다.}
+\end{classroomqa}
+
+회전과 병진은 가환하지 않는다. 점을 병진한 뒤 원점을 중심으로 회전하고, 원래 축을 따라 다시 병진한 다음 회전을 되돌리면 점은 처음 위치로 돌아오지 않는다. 두 변환 생성자의 혼합 대수는 다음과 같다:
+\begin{equation}
+[L_i,P_j]=i\epsilon_{ijk}P_k.
+\end{equation}
+이 관계는 운동량 자체가 회전에 따라 벡터처럼 변환된다는 뜻이다. 여기서는 지수 계산을 일일이 따라가는 것보다 일반적인 교훈이 중요하다. 유클리드 공간의 변환은 회전 및 병진 생성자 사이의 교환자로 표현된다.
+
+\section{대칭은 에너지를 보존해야 한다}
+
+이제 변환의 합성에서 동역학으로 넘어가자. \(U\)가 어떤 계의 진정한 대칭이라면, 이를 적용해도 에너지는 바뀌지 않는다. \(\ket{E}\)를 에너지 고유상태라고 하자:
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+우변의 기호 \(E\)는 수이고, \(\ket{E}\)는 그 고윳값으로 표시되는 벡터다.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{0.43\textwidth}
+\centering
+\includegraphics[width=\linewidth]{lecture_04_figure_03.png}
+\lectureframe{00:34:38.239}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.50\textwidth}
+\centering
+\includegraphics[width=\linewidth]{lecture_04_figure_04.png}
+\lectureframe{00:36:22.376}
+\end{minipage}
+\caption{칠판의 연속된 화면에 변환된 켓 \(U\ket{E}\)과 정의를 이루는 고유값 방정식 \(H\ket{E}=E\ket{E}\)을 차례로 제시했다.}
+\end{figure}
+
+\(U\)가 대칭이면 \(U\ket{E}\)도 같은 고윳값을 갖는다:
+\begin{equation}
+HU\ket{E}=EU\ket{E}.
+\end{equation}
+\(E\)는 스칼라이므로 \(U\)와 교환한다. 따라서 원래 고윳값 방정식을 쓸 수 있다:
+\begin{align}
+HU\ket{E}
+&=EU\ket{E}\\
+&=UE\ket{E}\\
+&=UH\ket{E}.
+\end{align}
+그러므로
+\begin{equation}
+(HU-UH)\ket{E}=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{첫 번째 관계부터 유도를 다시 설명해 주시겠어요? \lecturetimestamp{00:35:55}}
+\lecturerresponse{\(H\ket{E}=E\ket{E}\)에서 시작합니다. 대칭이므로 \(U\ket{E}\)도 같은 에너지를 가져서 \(HU\ket{E}=EU\ket{E}\)입니다. 스칼라 \(E\)를 \(U\) 너머로 옮기고, \(E\ket{E}\)를 \(H\ket{E}\)로 바꾼 다음 뺍니다. 그러면 \((HU-UH)\ket{E}=0\)가 됩니다.}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_04_figure_05.png}
+\lectureframe{00:38:51.066}
+\caption{칠판에 전개한 전체 유도 과정. 곡선 안내 표시는 같은 에너지라는 진술에서 치환식 \(E\ket{E}=H\ket{E}\)으로 이어지며, 마지막 줄은 \((HU-UH)\ket{E}=0\)이다.}
+\end{figure}
+
+이 논증은 모든 에너지 고유상태에 대해 성립한다. 그 상태들이 완비 기저를 이룬다고 가정하면, 모든 기저 상태를 0으로 보내는 연산자는 영 연산자다:
+\begin{equation}
+[H,U]=0.
+\end{equation}
+이는 시간에 명시적으로 의존하지 않는 유니터리 변환이 해밀토니언의 대칭일 조건이다.
+
+무한소 변환의 경우
+\begin{equation}
+U(\epsilon)=\mathbf 1+i\epsilon L_i+O(\epsilon^2),
+\end{equation}
+항등 연산자는 이미 \(H\)와 교환하므로, 각 생성자는 다음을 만족해야 한다:
+\begin{equation}
+[L_i,H]=0.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.47\textwidth]{lecture_04_figure_06.png}
+\lectureframe{00:42:14.296}
+\caption{칠판에 간결하게 정리한 대칭 조건은 \([U,H]=0\)이며, 이어서 생성자 형태를 제시했다. 아래쪽 라벨이 일부 흐릿해 \([L_i,H]=0\)로 표준화했다.}
+\end{figure}
+
+\(L_i\)가 시간에 명시적으로 의존하지 않으면 하이젠베르크 방정식은 다음과 같다:
+\begin{equation}
+\frac{dL_i}{dt}
+=i[H,L_i]=0
+\qquad(\hbar=1).
+\end{equation}
+따라서 대칭 생성자는 보존 전하이다. 공간 병진 대칭은 운동량 보존을, 회전 대칭은 각운동량 보존을 준다. \editorialnote{시간에 대한 명시적 편미분이 없다는 조건은 표준적인 단서이며, 강의에서 보존 법칙을 말할 때 암묵적으로 전제되어 있다.}
+
+\section{전체 물리계를 변환하다}
+
+“회전이 대칭이다”라는 말은 장치의 일부만 변환하면 잘못 쓰일 수 있다. 자유 스핀은 회전해도 에너지가 바뀌지 않는다. 그러나 고정된 자기장 안에 두고 스핀만 회전시키면 제만 에너지가 바뀐다. 이는 회전 대칭을 반박하는 것이 아니다. 스핀을 자기장에 대해 회전시키는 동안 자기장을 고정해 두었기 때문이다. 스핀과 자기장을 함께 회전시키거나, 그 자체로 불변인 외부장을 사용하면 에너지는 바뀌지 않는다.
+
+수소 원자에서도 같은 문제가 나타난다. 양성자에 대해 전자만 병진시키면 두 입자 사이 거리가 바뀌므로 쿨롱 에너지도 달라진다. 병진 대칭은 전자와 양성자로 이루어진 전체 계에 작용해 둘을 같은 거리만큼 이동시킨다.
+
+\begin{classroomqa}
+\audiencequestion{외부장 자체도 대칭을 가져야 하나요? \lecturetimestamp{00:43:09}}
+\lecturerresponse{고정된 외부장이 해당 작용에 대해 이미 불변이어야 합니다. 그렇지 않으면 계의 나머지 부분과 함께 외부장도 변환해야 합니다. 회전하지 않은 장에 대한 스핀의 상대적 회전은 전체 장치에 대칭 변환을 적용한 상태가 아니라 다른 물리적 배치입니다.}
+\end{classroomqa}
+
+원자의 회전 축퇴는 명확한 사례다. 각운동량 \(l\)가 고정되어 있으면 회전은 자기양자수가 다음 값을 갖는 상태들을 서로 섞는다:
+\begin{equation}
+m=-l,-l+1,\ldots,l.
+\end{equation}
+외부 자기장이나 전기장이 없을 때 다중항의 모든 상태는 에너지가 같다:
+\begin{equation}
+E_{l,m}=E_l.
+\end{equation}
+대칭은 서로 다른 상태들을 연결하며 이들의 축퇴를 강제한다.
+
+\section{초대칭이 바꾸는 것}
+
+지금까지 살펴본 익숙한 대칭은 모두 보손과 페르미온의 구별을 보존한다. 회전은 전자를 다른 전자로 보내지 광자로 바꾸지 않는다. 색 회전은 쿼크의 세 가지 색을 서로 섞지만 쿼크를 글루온으로 바꾸지는 않는다. 통상적인 내부 대칭과 시공간 대칭은 성분이나 양자수를 섞을 수 있지만, 그 생성자는 보손이며 페르미온 패리티를 바꾸지 않는다.
+
+초대칭은 다르다:
+\begin{equation}
+Q\ket{B}\sim\ket{F},
+\qquad
+Q\ket{F}\sim\ket{B}.
+\end{equation}
+초대칭 다중항은 보손과 페르미온의 경계를 넘나든다. 정확한 초대칭 이론에서는 한 다중항의 초대칭 짝입자들이 같은 질량을 갖는다. 이는 앞선 강의들에서 살펴본 짝짓기 조건과 정확히 일치한다. 짝이 맞는 보손과 페르미온의 루프가 스칼라 질량에 대한 큰 자외선 보정을 상쇄할 수 있다. 보통의 공간 운동으로는 정수 스핀 상태를 반정수 스핀 상태로 바꿀 수 없으므로 초대칭을 시각적으로 그려 보기는 어렵다. 따라서 대수적으로 살펴보자.
+
+\section{초전하의 원형}
+
+\(A,A^\dagger\)를 보손의 소멸·생성 연산자, \(C,C^\dagger\)를 페르미온의 소멸·생성 연산자라고 하자. 보손과 페르미온의 한 입자 상태를 서로 바꾸는 가장 간단한 에르미트 연산자는 다음과 같다.
+\begin{equation}
+Q=C^\dagger A+A^\dagger C.
+\end{equation}
+첫째 항은 보손을 소멸시키고 페르미온을 생성하며, 둘째 항은 페르미온을 소멸시키고 보손을 생성한다. \(Q\)가 보손 하나로 이루어진 상태에 작용하면 소멸시킬 페르미온이 없으므로 \(A^\dagger C\) 항은 사라지고, \(C^\dagger A\)가 두 상태를 서로 바꾼다. 페르미온 하나로 이루어진 상태에서는 두 항의 역할이 서로 바뀐다.
+
+\begin{classroomqa}
+\audiencequestion{이 구성은 보손과 페르미온의 중첩 상태인 입자 하나를 만드는가? \lecturetimestamp{00:52:37}}
+\lecturerresponse{\(Q\)는 상태가 아니라 연산자다. 순수한 보손 상태에 작용하면 페르미온 상태를 만들고, 순수한 페르미온 상태에 작용하면 보손 상태를 만든다. 이미 일반적인 중첩 상태인 벡터에 선형적으로 작용하면 또 다른 중첩 상태를 만든다. 이는 모든 선형 연산자에서 마찬가지다.}
+\end{classroomqa}
+
+이어 수강생들은 진공에 작용시켜 본다. 두 소멸 연산자가 모두 진공을 없애므로
+\begin{equation}
+A\ket{0}=0,\qquad C\ket{0}=0,
+\end{equation}
+따라서
+\begin{equation}
+Q\ket{0}=0.
+\end{equation}
+결과는 진공의 복사본이 아니라 영벡터다.
+
+이 원형은 의도적으로 개략적인 형태다. 스핀 0 보손은 스핀 1/2 페르미온의 두 성분 중 어느 쪽으로도 대응될 수 있으므로 생성자 자체에 스피너 지수가 필요하다:
+\begin{equation}
+Q_\alpha\ket{B}\sim\ket{F_\alpha}.
+\end{equation}
+강의의 단순화된 2성분 그림에서는
+\begin{equation}
+Q_\alpha\ket{F_\beta}\sim\delta_{\alpha\beta}\ket{B}.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{스핀 0 보손에는 스핀 성분이 하나이고 스핀 1/2 페르미온에는 둘인데, 상태 공간의 차원이 어떻게 맞을 수 있나요? \lecturetimestamp{00:55:02}}
+\lecturerresponse{지수가 없는 \(Q\) 하나만으로는 충분하지 않습니다. 스피너 성분 \(Q_\alpha\)가 있어 각 성분이 페르미온의 스핀 성분 하나씩을 만들 수 있습니다. 스핀을 반 단위만큼 바꾸므로 초전하 자체도 스핀을 반 단위만큼 갖습니다.}
+\end{classroomqa}
+
+\(Q_\alpha\)는 페르미온 연산자, 더 정확히는 그라스만 홀수 연산자다. 각 항에는 페르미온 연산자가 홀수 개 들어 있으므로 페르미온 패리티를 뒤집는다. 일반적인 측정 가능 관측량은 짝수다. 홀수 초전하와 홀수 변환 매개변수는 구별해야 한다. 유한 초대칭 변환은 두 항 \(\epsilon\)와 \(Q\)가 모두 홀수인 \(\epsilon^\alpha Q_\alpha+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\) 같은 짝수 조합으로 구성된다. \editorialnote{강의에서는 생성자를 비공식적으로 그라스만 수라고 부른다. 더 정확히 말하면 초전하는 홀수 연산자이고, 반교환하는 매개변수가 그라스만 수다. 이들의 곱은 짝수이므로 유한 변환에 들어갈 수 있다.}
+
+\section{보손과 페르미온 연산자 대수}
+
+\(i,j\)로 표시되는 보손 모드에 대해
+\begin{align}
+[A_i,A_j]&=0,&
+[A_i^\dagger,A_j^\dagger]&=0,&
+[A_i,A_j^\dagger]&=\delta_{ij}.
+\end{align}
+생성 연산자들은 가환하므로
+\begin{equation}
+A_i^\dagger A_j^\dagger\ket{0}
+=A_j^\dagger A_i^\dagger\ket{0}.
+\end{equation}
+두 보손 상태는 서로 바꾸어도 대칭이다.
+
+페르미온 연산자는 반교환 관계를 만족한다.
+\begin{align}
+\{C_i,C_j\}&=0,&
+\{C_i^\dagger,C_j^\dagger\}&=0,&
+\{C_i,C_j^\dagger\}&=\delta_{ij},
+\end{align}
+여기서
+\begin{equation}
+\{X,Y\}=XY+YX.
+\end{equation}
+단일 모드에서는
+\begin{equation}
+\{C^\dagger,C^\dagger\}=2(C^\dagger)^2=0,
+\end{equation}
+따라서
+\begin{equation}
+(C^\dagger)^2=0.
+\end{equation}
+연산자 자체는 영이 아니지만 그 제곱은 영이다. 이 연산자는 해당 모드에 페르미온 하나를 생성할 수 있지만, 두 번째로 작용하면 결과가 영이 된다. 이것이 연산자 언어로 표현한 파울리 배타 원리다.
+
+지수가 서로 다르면
+\begin{equation}
+C_i^\dagger C_j^\dagger\ket{0}
+=-C_j^\dagger C_i^\dagger\ket{0},
+\end{equation}
+이는 두 페르미온 상태의 반대칭성을 뜻한다. 대수적으로 다음과 같이 바꾸면
+\begin{equation}
+\begin{gathered}
+\text{bosons: commutators}\\
+\Updownarrow\\
+\text{fermions: anticommutators}
+\end{gathered}
+\end{equation}
+통계적 차이가 표현된다.
+
+한 모드에 여러 보손이 점유할 수 있다. 따라서 광자가 많이 점유된 상태는 보통의 수치 진폭을 갖는 고전적 전자기장처럼 거동할 수 있다. 페르미온은 한 모드에 쌓일 수 없으며, 페르미온 홀수 장은 보통의 가환하는 고전적 값을 갖지 않는다. 페르미온을 다룰 때는 이를 위해 다른 연산이 필요하다.
+
+\section{그라스만 수와 패리티}
+
+보통의 수는 가환한다:
+\begin{equation}
+\alpha_i\alpha_j=\alpha_j\alpha_i.
+\end{equation}
+그라스만 생성자는 반가환한다:
+\begin{equation}
+\theta_i\theta_j=-\theta_j\theta_i.
+\end{equation}
+\(i=j\)로 놓고, \(2\neq0\)인 수 체계를 쓰면
+\begin{equation}
+\theta_i^2=0.
+\end{equation}
+\(\theta_i\)에는 6이나 7 같은 보통의 수치값을 부여할 수 없다. 이 기호들은 페르미온의 부호를 추적하기 위해 만든 대수를 이룬다.
+
+보통의 계수는 그라스만 생성자와 가환한다:
+\begin{equation}
+\alpha\theta_i=\theta_i\alpha.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{보통의 수에 그라스만 수를 곱하면 어떤 종류의 대상이 되나요? \lecturetimestamp{01:12:32}}
+\lecturerresponse{그 대상은 여전히 그라스만 홀수입니다. 보통의 계수를 곱하면 크기가 달라질 뿐 패리티는 바뀌지 않습니다. 생성자들의 선형생성 공간은 보통의 수를 체로 하는 벡터 공간입니다.}
+\end{classroomqa}
+
+이 대수에는 \(\mathbb Z_2\) 패리티가 있다. 보통의 계수와 생성자를 짝수 개 곱한 것은 짝수이고, 생성자 하나 또는 홀수 개를 곱한 것은 홀수다:
+\begin{equation}
+\begin{aligned}
+\text{even}\cdot\text{even}&=\text{even},\\
+\text{even}\cdot\text{odd}&=\text{odd},\\
+\text{odd}\cdot\text{odd}&=\text{even}.
+\end{aligned}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{이것은 실수와 허수의 곱셈 규칙과 비슷한가요, 아니면 \(i\)를 도입하듯 일반화한 것인가요? \lecturetimestamp{01:14:25}}
+\lecturerresponse{산술의 일반화이기는 하지만, 비유를 지나치게 밀어붙여서는 안 됩니다. 허수는 여전히 가환하고 \(i^2=-1\)를 만족하지만, 그라스만 홀수량은 반가환하며 제곱하면 0입니다. 짝수와 홀수가 곱해지는 양상이 같다고 해서 두 대수가 같은 것은 아닙니다.}
+\end{classroomqa}
+
+\(\theta_1\theta_2\)와 같은 곱은 짝수이며 그래스만 대수의 모든 동차 원소와 교환하지만, 보통의 수는 아니다. 이 곱은 영이 아니지만
+\begin{equation}
+(\theta_1\theta_2)^2=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{\(\theta_1\theta_2\)가 짝수라면 왜 보통의 수가 아닌가? \lecturetimestamp{01:17:36}}
+\lecturerresponse{짝수 패리티란 등급 대수에서 교환한다는 뜻이지, 실수나 복소수 스칼라라는 뜻은 아니다. 이 곱이 멱영원소라는 점만 보아도 영이 아닌 보통의 수와 다르다는 것을 알 수 있다.}
+\end{classroomqa}
+
+\section{그라스만 변수의 함수}
+
+생성자가 하나이면 다항식은 일차항에서 끝난다.
+\begin{equation}
+f(\theta)=\alpha+\beta\theta.
+\end{equation}
+\(\theta^n\)은 \(n\geq2\)일 때 모두 영이다. 생성자가 둘이면 가장 일반적인 원소는 다음과 같다.
+\begin{equation}
+f(\theta_1,\theta_2)
+=\alpha+\beta_1\theta_1+\beta_2\theta_2
++\gamma\theta_1\theta_2.
+\end{equation}
+마지막 단항식의 순서를 뒤집어 쓰면 부호가 바뀐다.
+\begin{equation}
+\theta_2\theta_1=-\theta_1\theta_2.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{\(\theta_1\)에 계수 \(\beta\)를 곱하면 독립적인 그라스만 변수가 하나 더 생기나요? \lecturetimestamp{01:18:39}}
+\lecturerresponse{아닙니다. \(\theta_1\)의 선형생성 공간 안에 벡터가 하나 더 생길 뿐, 새로운 기저 생성자가 추가되는 것은 아닙니다. 독립적인 생성자가 두 개일 때 모든 홀수 선형항은 \(\beta_1\theta_1+\beta_2\theta_2\)입니다.}
+\end{classroomqa}
+
+생성자가 셋이면 순서가 정해진 기저는 다음과 같다.
+\begin{equation}
+1,\quad
+\theta_1,\theta_2,\theta_3,\quad
+\theta_1\theta_2,\theta_1\theta_3,\theta_2\theta_3,\quad
+\theta_1\theta_2\theta_3.
+\end{equation}
+일반적으로 생성자가 \(n\)개이면 순서가 정해진 기저 단항식 \(2^n\)개가 생긴다. 유한 개의 그래스만 생성자로 이루어진 임의의 해석적 함수는 다항식에서 끝난다. 같은 생성자가 반복해서 나타나는 항은 사라지기 때문이다. \editorialnote{\(2^n\)차원 기저는 강의에서 생성자가 하나, 둘, 셋일 때 차례로 구성한 패턴을 명시적으로 보여 준다.}
+
+\section{그라스만 미분}
+
+변수가 하나일 때 다음과 같이 정의한다:
+\begin{equation}
+\frac{\partial}{\partial\theta}\alpha=0,
+\qquad
+\frac{\partial}{\partial\theta}\theta=1,
+\end{equation}
+그러면
+\begin{equation}
+\frac{\partial}{\partial\theta}
+(\alpha+\beta\theta)=\beta.
+\end{equation}
+변수가 둘일 때는 왼쪽 미분을 택하고 표준 순서 \(\theta_1\theta_2\)를 유지하면
+\begin{align}
+\frac{\partial^L f}{\partial\theta_1}
+&=\beta_1+\gamma\theta_2,\\
+\frac{\partial^L f}{\partial\theta_2}
+&=\beta_2-\gamma\theta_1.
+\end{align}
+둘째 줄의 마이너스 부호는 홀수 미분 연산자가 \(\theta_1\)를 지나 \(\theta_2\)를 미분해야 해서 생긴다.
+
+이를 등급화된 곱의 미분 법칙으로 나타낼 수 있다. \(A\)의 패리티가 \(|A|\in\{0,1\}\)라면
+\begin{equation}
+\frac{\partial^L}{\partial\theta}(AB)
+=\left(\frac{\partial^L A}{\partial\theta}\right)B
++(-1)^{|A|}A
+\left(\frac{\partial^L B}{\partial\theta}\right).
+\end{equation}
+이 법칙은 기본적으로 보통의 미분법과 같지만, 반교환성에 따른 부호가 들어간다. 그라스만 적분도 정의할 수 있고, 함수 공간이 유한하므로 간단한 표로 정리된다. 강의에서는 그 표를 뒤로 미룬다.
+
+\section{지수함수의 수수께끼를 풀다}
+
+그래스만 생성자가 하나이고 보통의 계수가 \(a\)일 때,
+\begin{equation}
+e^{a\theta}
+=1+a\theta,
+\end{equation}
+더 높은 거듭제곱은 모두 영이기 때문이다. 같은 생성자를 포함하는 두 지수함수는 다음 관계를 만족한다.
+\begin{align}
+e^{a\theta}e^{b\theta}
+&=(1+a\theta)(1+b\theta)\\
+&=1+(a+b)\theta\\
+&=e^{(a+b)\theta}.
+\end{align}
+
+이어서 수업에서는 서로 다른 생성자들을 다뤄 본다. 직접 곱하면
+\begin{equation}
+e^{\theta_1}e^{\theta_2}
+=(1+\theta_1)(1+\theta_2)
+=1+\theta_1+\theta_2+\theta_1\theta_2.
+\end{equation}
+처음에 칠판의 전개를 보면 \(\theta_1+\theta_2\)의 제곱이 마지막 항을 만들 것처럼 보인다. 한 수강생이 부호를 지적한다:
+\begin{equation}
+(\theta_1+\theta_2)^2
+=\theta_1^2+\theta_1\theta_2
+ +\theta_2\theta_1+\theta_2^2
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{제곱항에 \(\theta_1\theta_2+\theta_2\theta_1\)가 들어 있어서 상쇄되나요? \lecturetimestamp{01:24:00}}
+\lecturerresponse{그렇습니다. 이 수정으로 결론이 달라집니다: \(e^{\theta_1+\theta_2}=1+\theta_1+\theta_2\)인 한편, 순서가 정해진 곱 \(e^{\theta_1}e^{\theta_2}\)에는 \(\theta_1\theta_2\)도 들어 있습니다. 서로 반교환하는 지수의 경우에는 단순한 지수 덧셈 법칙이 성립하지 않습니다.}
+\end{classroomqa}
+
+모순은 없다. 보통의 행렬도 \(e^Ae^B=e^{A+B}\)는 \(A\)과 \(B\)이 가환할 때만 성립한다. 여기서는
+\begin{equation}
+[\theta_1,\theta_2]
+=\theta_1\theta_2-\theta_2\theta_1
+=2\theta_1\theta_2.
+\end{equation}
+이 교환자는 짝수이고 두 생성자 모두와 가환하므로, 바커–캠벨–하우스도르프 급수는 다음에서 끝난다:
+\begin{equation}
+e^{\theta_1}e^{\theta_2}
+=\exp\left(
+\theta_1+\theta_2+\frac12[\theta_1,\theta_2]
+\right)
+=e^{\theta_1+\theta_2+\theta_1\theta_2}.
+\end{equation}
+우변의 지수가 멱영이므로 정확히 다음과 같이 전개된다:
+\(1+\theta_1+\theta_2+\theta_1\theta_2\). \editorialnote{이 BCH 계산은 실시간 강의에서 의문으로 남겨 둔 문제를 해결한다. 강의에서는 단순한 법칙이 성립하지 않는다는 점을 올바르게 알아냈지만, 누락된 교환자 항을 찾기 전에 끝난다.}
+
+\begin{classroomqa}
+\audiencequestion{\(1+\theta_1\)는 어떤 종류의 수인가요? 보통의 부분과 그라스만 부분을 더해도 되나요? \lecturetimestamp{01:26:16}}
+\lecturerresponse{그것은 그라스만 대수의 비동차 원소이며, 짝수 부분 \(1\)와 홀수 부분 \(\theta_1\)를 갖습니다. 이러한 합은 허용되지만, 보통의 스칼라도 아니고 동차 홀수 원소도 아닙니다.}
+\end{classroomqa}
+
+강의가 끝나갈 무렵, 또 다른 겉보기 역설을 살펴본다.
+\begin{equation}
+(\theta_1+\theta_2)^2=0.
+\end{equation}
+그렇다고 해서 \(\theta_1\theta_2=0\)라는 뜻은 아니다. 두 교차항은 각각 사라지는 것이 아니라 서로 상쇄되기 때문이다.
+
+\begin{classroomqa}
+\audiencequestion{모든 홀수 Grassmann 원소의 제곱이 영이라면, 임의의 두 Grassmann 생성자의 곱도 영이라는 뜻인가요? \lecturetimestamp{01:32:19}}
+\lecturerresponse{아닙니다. 방정식 \((\theta_1+\theta_2)^2=0\)은 \(\theta_1\theta_2+\theta_2\theta_1=0\)을 뜻합니다. 이는 반교환 관계를 증명할 뿐, 두 순서 있는 곱 중 어느 하나가 영임을 뜻하지는 않습니다. 서로 다른 생성자끼리의 곱은 영이 아닐 수 있습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{이 지수함수들을 쓸 때 보통의 멱급수 정의를 가정하나요? \lecturetimestamp{01:34:42}}
+\lecturerresponse{그렇습니다. 모든 급수가 유한한 항에서 끝나므로 그 정의는 일관됩니다. 문제가 되는 것은 지수함수 자체가 아니라, 교환하지 않는 \(A\)과 \(B\)에 대해 항등식 \(e^Ae^B=e^{A+B}\)을 정당한 근거 없이 적용하는 것입니다. 교환자 보정항을 포함하면 올바른 합성 법칙이 복원됩니다.}
+\end{classroomqa}
+
+이 탐색적인 마무리는 적절합니다. 보통의 대칭성을 살펴보며 유니터리 변환에서 생성자와 교환자로 나아갔고, 초대칭성을 살펴보며 홀수 생성자에서 반교환 변수로 나아갔습니다. 두 경우 모두 곱셈 법칙이 핵심입니다. 회전에서는 \([L_i,L_j]\)에 나타나고, 그래스만 지수함수에서는 단순한 덧셈을 막는 교환자 항에 나타납니다. 이 대수는 낯설지만, 일관되고 유한하며 초대칭성이 요구하는 페르미온 변환에 정확히 들어맞습니다.

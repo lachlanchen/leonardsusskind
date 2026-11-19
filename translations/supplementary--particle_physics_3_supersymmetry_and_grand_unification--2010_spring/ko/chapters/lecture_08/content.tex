@@ -1,0 +1,466 @@
+\chapter{4차원 초대칭과 웨스--지노 모형}
+
+\lectureoverview{앞 강의의 1차원 초대칭 대수에는 해밀토니안만 등장했다. 이제 로런츠 불변성에 따라 에너지는 공간 운동량과 다시 하나로 묶이고, 초전하들은 2성분 스피너가 되어야 한다. 먼저 질량이 없는 바일 페르미온과 그 해밀토니안 \(H=\boldsymbol{\sigma}\cdot\mathbf p\)으로 돌아가 이 대수에 이른다. 이어 초전하를 4차원 초공간의 미분 연산자로 나타내고, 구속 조건 \(\bar D_{\dot\alpha}\Phi=0\)으로 카이랄 초장을 분리한 다음, 초공간 적분을 사용해 구체적인 장 이론을 구성한다. 차례로 \(\Phi^\dagger\Phi\), \(\Phi^2\), \(\Phi^3\)을 택하면 전파항, 같은 보손--페르미온 질량, 유카와 상호작용, 그리고 이에 연결된 스칼라 상호작용이 생긴다. 보조장 \(F\)을 도입하면 이러한 관계가 명확해지고, 마지막 루프 도표는 초대칭이 자외선 민감도를 완화하는 이유를 보여 준다.}
+
+\section{해밀토니안만으로는 충분하지 않은 이유}
+
+장난감 모형에서는 공간을 생략하고 기본 관계를 다음과 같이 썼다.
+\begin{equation}
+\{Q,Q^\dagger\}=2H.
+\label{eq:l8-time-only-algebra}
+\end{equation}
+시간만이 좌표인 경우에는 이 형태로 충분하다. 그러나 상대론적 이론에서 \(H=P_0\)는 4-운동량 \(P_\mu\)의 한 성분이다. 로런츠 부스트를 하면 \(P_i\)와 섞인다. 따라서 우변에서 \(P_0\)만을 특별히 취하는 대수는 공변적으로 변환될 수 없다.
+
+그러므로 이 문제를 해결하려면 두 가지를 동시에 해야 한다. \(H\)를 네 성분 모두인 \(P_\mu\)로 바꾸고, 우변의 로런츠 벡터와 대응할 수 있는 지표를 좌변에 마련해야 한다. 질량이 없는 디랙 방정식이 필요한 실마리를 준다. 상대론적 페르미온은 2성분 스피너로 기술할 수 있고, 행렬 \(\sigma^\mu\)는 벡터 지표를 두 개의 스피너 지표로 변환한다.
+
+\section{질량 없는 페르미온, 헬리시티, 카이랄성}
+
+먼저 질량이 있는 입자와 질량이 없는 입자의 물리적 차이를 살펴보자. 스핀-\(\tfrac12\) 입자가 스핀 방향으로 움직인다고 하자. 이 입자의 속력은 빛의 속력보다 작으므로 관찰자가 입자를 앞지를 수 있다. 새 기준계에서는 운동량 방향이 뒤집히지만 스핀 방향은 그대로이므로 헬리시티가 뒤집힌다. 따라서 로런츠 불변인 질량 있는 이론에는 두 헬리시티가 모두 포함되어야 한다.
+
+질량이 없는 입자는 어떤 관찰자도 앞지를 수 없다. 적절한 로런츠 변환으로는 스핀에 대한 운동량의 방향을 뒤집을 수 없으므로, 하나의 기약 질량 없는 표현은 한 가지 헬리시티만 가질 수 있다. 공간 회전으로 진행 방향을 반대로 돌릴 수는 있지만, 오른손을 왼손으로 바꾸지는 못한다.
+
+\begin{classroomqa}
+\audiencequestion{앞지르기 논증은 정말 카이랄성이 아니라 헬리시티에 관한 것인가요? \lecturetimestamp{00:05:42}}
+\lecturerresponse{그렇다. 헬리시티는 운동량 방향으로 투영한 스핀인 반면, 카이랄성은 카이랄 행렬의 고윳값이며 통상 \(\gamma^5\)로 표기한다. 질량 없는 모드에서는 두 표지가 서로 연결되어 있어 이 예에서는 두 용어가 서로 바꿔 쓸 수 있는 것처럼 들린다. 질량이 있는 입자에서는 서로 구별된다.}
+\end{classroomqa}
+
+상태 수를 말할 때는 한 가지 단서를 붙여야 한다.\editorialnote{질량 없는 바일 장 하나에는 입자 헬리시티 하나와 그 반대 헬리시티를 가진 반입자가 있다. 따라서 “상태 수가 절반”이라는 말은 4성분 디랙 장에서 2성분 바일 장 하나로 줄어드는 것을 뜻한다. 반입자 상태가 사라졌다는 뜻은 아니다.}
+
+이 도입부 논증에서 사용하는 바일 장을 다음과 같이 쓰자.
+\begin{equation}
+\chi=
+\begin{pmatrix}
+\chi_1\\
+\chi_2
+\end{pmatrix},
+\end{equation}
+강의에서는 이 장을 \(\psi_\alpha\)로 표기한다. 아래에서 카이랄 초장에 통상 포함되는 켤레 바일 표현과 혼동하지 않도록 여기서는 \(\chi\)라고 부르겠다.
+\begin{equation}
+H\chi=\boldsymbol{\sigma}\cdot\mathbf p\,\chi.
+\label{eq:l8-weyl-hamiltonian}
+\end{equation}
+운동량 \(\mathbf p\)에 대해 행렬 \(\boldsymbol{\sigma}\cdot\mathbf p\)의 고윳값은 \(\pm|\mathbf p|\)이다. 양의 주파수 가지는 입자 모드를 제공한다. 음의 주파수 가지는 아래로 무한히 뻗는 스펙트럼으로 남겨 두는 대신 반입자 구성으로 재해석한다.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_02.png}\lectureframe{00:07:44.271}\caption{카이랄 2성분 스피너와 해밀토니안 \(H=\boldsymbol{\sigma}\cdot\mathbf p\). 마지막 운동량 기호 일부가 가려져 있지만, 강의에서 말한 방정식으로 확인할 수 있다.}\end{figure}
+
+손잡이성 표지는 관례에도 좌우된다.\editorialnote{칠판에서는 \(\boldsymbol{\sigma}\cdot\mathbf p\)의 양의 고윳값에 손잡이성을 직접 대응시킨다. 어느 카이랄성에 그 부호를 붙일지는 \(\sigma^\mu\), \(\bar\sigma^\mu\), 바일 장을 어떻게 정의하느냐에 달려 있다. 고윳값에 관한 진술은 유지하되, 관례와 무관한 좌·우 표지는 붙이지 않는다.}
+
+\(H\)를 \(i\partial_t\)로, \(\mathbf p\)를 \(-i\nabla\)로 바꾸면 다음을 얻는다.
+\begin{equation}
+i\partial_t\chi=-i\boldsymbol{\sigma}\cdot\nabla\chi.
+\end{equation}
+이제 다음을 도입하자.
+\begin{equation}
+\begin{aligned}
+\sigma^\mu&=(\mathbf 1,\boldsymbol{\sigma}),\\
+\bar\sigma^\mu&=(\mathbf 1,-\boldsymbol{\sigma}),\\
+\eta_{\mu\nu}&=\operatorname{diag}(1,-1,-1,-1).
+\end{aligned}
+\label{eq:l8-sigma-convention}
+\end{equation}
+그러면 방금 얻은 방정식은 다음과 같다.
+\begin{equation}
+i\sigma^\mu\partial_\mu\chi=0.
+\label{eq:l8-weyl-equation}
+\end{equation}
+켤레 바일 표현에는 \(\bar\sigma^\mu\)를 사용한다. 아래에서 \(\psi_\alpha\)라고 부르는 것이 바로 이 켤레 표현이며, 이 표현의 자유 방정식은 \(i\bar\sigma^\mu\partial_\mu\psi=0\)이다. 공변성을 증명하려면 로런츠 군의 스피너 표현이 필요하지만, 여기서 중요한 점은 구조다. 네 행렬 \(\sigma^\mu\)가 하나의 시공간 지표를 두 개의 스피너 지표와 연결한다.
+
+\section{4차원 초대수}
+
+이제 홀수 좌표는 바일 스피너처럼 변환해야 한다.
+\begin{equation}
+\theta^\alpha=(\theta^1,\theta^2),
+\qquad
+\bar\theta^{\dot\alpha}=(\bar\theta^{\dot1},\bar\theta^{\dot2}).
+\end{equation}
+바는 복소켤레를 나타내며, 점은 켤레 로런츠 표현을 구별한다. 그래스만 성분은 복소수 두 개, 즉 실수 네 개다. 일반적인 짝수 초장
+\begin{equation}
+\mathcal S=\mathcal S(x^\mu,\theta^\alpha,\bar\theta^{\dot\alpha})
+\end{equation}
+은 따라서 유한한 그래스만 전개를 갖는다. 최고차 단항식은
+\begin{equation}
+\theta^2\bar\theta^2
+\equiv
+(\theta^1\theta^2)(\bar\theta^{\dot1}\bar\theta^{\dot2}),
+\end{equation}
+독립적인 홀수 좌표 네 개를 모두 곱한 것이다. 이 단항식의 계수를 통상 \(D\) 성분이라고 부른다.
+
+초전하에도 스피너 지표가 붙는다. 4차원 \(N=1\) 초대칭에서 초전하 대수는 다음과 같다.
+\begin{align}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+&=2\sigma^\mu_{\alpha\dot\beta}P_\mu,
+\label{eq:l8-superalgebra-main}\\
+\{Q_\alpha,Q_\beta\}&=0,
+&
+\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}&=0,
+\label{eq:l8-superalgebra-nilpotent}\\
+[P_\mu,Q_\alpha]&=0,
+&
+[P_\mu,\bar Q_{\dot\alpha}]&=0,
+&
+[P_\mu,P_\nu]&=0.
+\label{eq:l8-superalgebra-commutators}
+\end{align}
+계수 2는 관례에 따른다. 행렬
+\(\sigma^\mu_{\alpha\dot\beta}\)은 \(P_\mu\)의 벡터 지표를 수축해 좌변에 나타나는 두 스피너 지표만 남긴다.
+
+\begin{classroomqa}
+\audiencequestion{시그마 행렬의 \(\alpha\)와 \(\beta\)는 행렬 지표인가요? \lecturetimestamp{00:22:01}}
+\lecturerresponse{그렇다. 더 정확히 말하면 하나는 점 없는 바일 지표이고 다른 하나는 점이 있는 켤레 지표다. \(\mu\)는 시공간 벡터 지표다. 시그마 행렬은 이 두 기술 방식 사이를 이어 준다.}
+\end{classroomqa}
+
+정돈한 표기법은 이 연결을 명시적으로 드러낸다.\editorialnote{강의에서는 점 지표를 의도적으로 생략하고 칠판에서 \(\alpha\beta\)와 \(\beta\alpha\) 중 어느 순서가 맞는지 논의한다. ~\eqref{eq:l8-superalgebra-main}과 \eqref{eq:l8-superalgebra-commutators}은 논증의 내용은 바꾸지 않으면서 표준적인 점 지표·점 없는 지표 표기를 복원한다.}
+
+마지막 줄은 초전하가 보존되고 병진과 양립함을 말한다. 미분 연산자로 나타내면 운동량 성분들은 서로 교환한다. 아래에서 사용하는 미분 표기법에서는
+\begin{equation}
+P_\mu=i\partial_\mu,
+\end{equation}
+따라서 식 ~\eqref{eq:l8-superalgebra-main}은 다음과 같이 써도 된다.
+\begin{equation}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+=2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu.
+\end{equation}
+
+\section{초공간 미분으로 나타낸 초전하}
+
+운동량은 보통 좌표를 병진시키지만, 초전하는 시공간도 함께 이동시키면서 홀수 좌표를 병진시킨다. 왼쪽 그래스만 미분을 택하고 다음과 같이 정의하자.
+\begin{align}
+Q_\alpha
+&=\partial_\alpha
+-i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-Q}\\
+\bar Q_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
++i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Qbar}
+\end{align}
+\(\epsilon^\alpha Q_\alpha+
+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\)를 작용시키면 초장에 대한 무한소 초대칭 변분을 얻는다. 그 성분은 독립적인 그래스만 단항식들의 계수일 뿐이며, 미분 연산자는 이 계수들을 서로 섞는다.
+
+\begin{classroomqa}\audiencequestion{약식 표기 \(\bar\theta\sigma\partial\)에서 어떤 \(x\) 미분을 뜻하나요? \lecturetimestamp{00:25:40}}\lecturerresponse{네 성분 모두를 뜻한다. \(\bar\theta^{\dot\alpha}\sigma^\mu_{\alpha\dot\alpha}\partial_\mu\)에 반복된 \(\mu\) 지표를 합산하므로, \(\sigma^\mu\)의 각 성분은 그에 대응하는 미분 \(\partial/\partial x^\mu\)와 짝을 이룬다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{켤레 전하에는 또 다른 \(\bar\theta\)가 아니라 \(\theta\)가 들어가야 하나요? \lecturetimestamp{00:26:16}}\lecturerresponse{그렇다. \(Q\)는 \(\theta\)에 대해 미분하고 \(\bar\theta\)를 포함한다. \(\bar Q\)는 \(\bar\theta\)에 대해 미분하고 \(\theta\)를 포함한다. 두 연산자는 서로 켤레다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(\sigma^\mu\)는 대칭인가요? \lecturetimestamp{00:27:04}}\lecturerresponse{파울리 행렬은 에르미트다. \((\mathbf1,\boldsymbol{\sigma})\)의 네 행렬 가운데 세 개는 대칭이고, \(\sigma^2\)는 보통 전치에 대해 반대칭이다. 여기서 관련된 켤레 성질은 에르미트성에 점 지표와 점 없는 지표의 배치를 함께 고려한 것이다.}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{켤레 방정식의 시그마 행렬은 지표를 반대 순서로 갖나요? \lecturetimestamp{00:27:13}}\lecturerresponse{켤레화하면 점 지표 표현과 점 없는 지표 표현이 서로 바뀐다. 따라서 두 표지를 서로 바꿔 쓸 수 있는 행렬 슬롯처럼 취급하기보다 \(\sigma^\mu_{\alpha\dot\alpha}\)와 그 켤레 \(\bar\sigma^{\mu\,\dot\alpha\alpha}\)로 표기하는 것이 안전하다.}\end{classroomqa}
+
+식 ~\eqref{eq:l8-Q}와 \eqref{eq:l8-Qbar}의 표기는 칠판의 약식 표기와 겉보기 부호가 다르다. 이 부호는 \(P_\mu\)를 \(+i\partial_\mu\)로 정의하는지 \(-i\partial_\mu\)로 정의하는지, 미분이 왼쪽에서 작용하는지 오른쪽에서 작용하는지, 켤레 홀수 변수를 어떤 순서로 배열하는지에 따라 달라진다. 중요한 것은 하나의 관례가 대수 전체를 일관되게 만족한다는 점이다.
+
+\section{초대칭 아래에서도 유지되는 구속 조건}
+
+일반적인 초장에는 성분이 많다. 대칭성을 깨뜨리지 않으면서 더 작은 종류의 장을 찾고자 한다. 강의에서는 먼저 보통 벡터를 예로 든다. 벡터 \(\mathbf V\)에 대해 구속 조건
+\begin{equation}
+V_x=0
+\end{equation}
+은 회전 불변이 아니다. 회전하면 \(V_y\)가 새로운 \(x\) 성분에 기여한다. 반면
+\begin{equation}
+\mathbf V^2=1
+\end{equation}
+은 불변이며 독립적인 자유도 하나를 없앤다. 유용한 구속 조건은 대칭 변환 후에도 구속된 장을 구속된 장으로 보내야 한다.
+
+선형 홀수 연산자 \(\bar D_{\dot\alpha}\)가 다음을 정의한다고 하자.
+\begin{equation}
+\bar D_{\dot\alpha}\Phi=0.
+\label{eq:l8-chiral-constraint}
+\end{equation}
+초대칭 변분 \(\delta\Phi=Q\Phi\)을 가한 뒤에도 같은 조건이 유지되려면 \(\bar D\)가 초전하와 반가환하면 된다.
+\begin{equation}
+\bar D(Q\Phi)=-Q(\bar D\Phi)=0.
+\end{equation}
+이는 설명 없이 제시하는 정의가 아니라, 이 구성을 이끄는 추상적인 일관성 조건이다.
+
+\begin{classroomqa}\audiencequestion{마지막 식에서 \(Q\)와 \(\bar D\)를 왜 서로 바꿀 수 있나요? \lecturetimestamp{00:36:56}}\lecturerresponse{이들은 반가환하도록 택한 홀수 연산자다. 따라서 순서를 바꾸면 마이너스 부호가 붙는다. \(\bar D\)가 \(\Phi\)에 작용하면 원래 구속 조건에 따라 결과는 0이 된다.}\end{classroomqa}
+
+필요한 공변 미분은 초전하에 비해 시공간 미분의 부호를 뒤집어 얻는다.
+\begin{align}
+D_\alpha
+&=\partial_\alpha
++i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-D}\\
+\bar D_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
+-i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Dbar}
+\end{align}
+이들은 다음 관계를 만족한다.
+\begin{align}
+\{D_\alpha,\bar D_{\dot\beta}\}
+&=-2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu,\\
+\{D_\alpha,Q_\beta\}
+&=\{D_\alpha,\bar Q_{\dot\beta}\}=0,\\
+\{\bar D_{\dot\alpha},Q_\beta\}
+&=\{\bar D_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
+\end{align}
+
+\begin{classroomqa}\audiencequestion{\(\bar Q\)에서 \(\bar D\)로 바뀔 때 시공간 미분항의 부호만 바뀌나요? \lecturetimestamp{00:37:58}}\lecturerresponse{그렇다. 이 부호를 뒤집으면 \(D\)를 어느 초전하와 반교환할 때든 교차항이 상쇄된다.}\end{classroomqa}
+
+식 ~\eqref{eq:l8-chiral-constraint}만 부과한다. \(D_\alpha\Phi=0\)와 \(\bar D_{\dot\alpha}\Phi=0\)를 모두 부과하면 두 식의 반교환자로 인해 \(\partial_\mu\Phi=0\)가 되어, 시공간에 무관한 나머지만 남을 수 있다.
+\editorialnote{칠판에서는 두 구속 조건을 모두 부과하면 \(\Phi=0\)가 된다고 말한다. 대수적으로 엄밀히 따라오는 것은 장이 시공간에 무관하다는 결론이다. 추가적인 경계 조건이나 성분 조건을 부과하면 장을 더 제한할 수 있다.}
+
+\section{카이랄 구속 조건 풀기}
+
+이동된 좌표를 다음과 같이 정의하자.
+\begin{equation}
+y^\mu=x^\mu+i\theta\sigma^\mu\bar\theta.
+\label{eq:l8-chiral-coordinate}
+\end{equation}
+위에서 정한 왼쪽 미분 관례에 따르면 함수
+\begin{equation}
+\Phi=\Phi(y,\theta)
+\label{eq:l8-chiral-solution}
+\end{equation}
+은 \(\bar D_{\dot\alpha}\Phi=0\)을 만족한다. 연쇄 법칙을 적용하면 상쇄가 명확히 드러난다. \(y^\mu\)를 미분하면 \(i\theta\sigma^\mu\partial_\mu\Phi\) 항이 생기며, 이 항은 \(\bar D_{\dot\alpha}\)에 나타나는 같은 항과 부호가 반대다.
+
+따라서 카이랄 초장에는 독립적인 \(\bar\theta\) 의존성이 없다. \(\bar\theta\)는 포함될 수 있지만, 오직 조합 \(y^\mu\)을 통해서만 나타난다. 유한 전개는 다음과 같다.
+\begin{equation}
+\Phi(y,\theta)
+=\phi(y)+\sqrt2\,\theta\psi(y)+\theta^2F(y).
+\label{eq:l8-chiral-expansion-y}
+\end{equation}
+세 가지 성분 유형은 복소 스칼라 \(\phi\), 바일 페르미온 \(\psi_\alpha\), 복소 스칼라 \(F\)다. 마지막 성분은 전파하는 두 번째 보손이 아니라 보조장이다.
+
+\begin{classroomqa}\audiencequestion{\(x\)을 그것과 직교하는 새 좌표 \(y\)로 바꾼 건가요? \lecturetimestamp{00:49:08}}\lecturerresponse{아니다. \(y^\mu\)는 식 ~\eqref{eq:l8-chiral-coordinate}에 나오는 특정 조합을 간단히 나타낸 표기다. 추가적인 시공간 방향이 아니다. \(y\)를 사용하면 카이랄성을 간단히 표현할 수 있고, 보통의 장 이론을 구성할 때는 다시 \(x\)로 돌아간다.}\end{classroomqa}
+
+~\eqref{eq:l8-chiral-expansion-y}에서 \(x\)를 고정한 채 전개하면 다음과 같다.
+\begin{align}
+\Phi(x,\theta,\bar\theta)
+={}&\phi
++\sqrt2\,\theta\psi
++\theta^2F
++i\theta\sigma^\mu\bar\theta\,\partial_\mu\phi
+\notag\\
+&-\frac{i}{\sqrt2}\theta^2
+\partial_\mu\psi\,\sigma^\mu\bar\theta
++\frac14\theta^2\bar\theta^2\Box\phi.
+\label{eq:l8-chiral-expansion-x}
+\end{align}
+우변의 모든 성분장은 \(x\)에서 계산한다. 켤레 안티카이랄 장은 \(\bar y^\mu=x^\mu-i\theta\sigma^\mu\bar\theta\)와 \(\bar\theta\)에 의존한다. 카이랄 초장은 실수일 수 없다. 그 켤레가 반대 카이랄성 구속 조건을 만족하기 때문이다.
+
+\section{초공간 적분}
+
+초공간 전체에 대한 작용은 다음 형태다.
+\begin{equation}
+S_D=\int d^4x\,d^2\theta\,d^2\bar\theta\;K,
+\label{eq:l8-D-term-action}
+\end{equation}
+여기서 \(K\)는 실수 초장이다. 베레진 적분은 그 \(\theta^2\bar\theta^2\) 성분을 선택한다. 홀수 변수에 대한 적분을 마치면 보통의 시공간 라그랑지안만 남는다.
+
+불변인 구성을 하나 더 만들 수 있다. \(W(\Phi)\)가 카이랄이면,
+\begin{equation}
+S_F=\int d^4x\,d^2\theta\;W(\Phi)
++\int d^4x\,d^2\bar\theta\;\overline{W}(\Phi^\dagger)
+\label{eq:l8-F-term-action}
+\end{equation}
+은 초대칭 불변이다. 첫 번째 적분은 \(\theta^2\) 성분을, 두 번째 적분은 그 켤레를 선택한다.
+
+\begin{classroomqa}\audiencequestion{\(\bar\theta\) 의존성이 없는 식을 \(d^2\theta\)에 대해서만 적분해도 되는 이유는 무엇인가요? \lecturetimestamp{01:16:30}}\lecturerresponse{카이랄성은 초대칭 변환 아래에서 보존되며, 카이랄 초장의 최고차 \(\theta\) 성분은 시공간 전미분만큼만 변한다. 따라서 시공간 적분은 불변이다. 이는 초공간 전체에 대한 \(D\) 성분 적분이 불변인 것과 같은 원리다.}\end{classroomqa}
+
+\section{자유 카이랄 다중항}
+
+겉보기에는 구조가 없어 보이는 다음 식을 보자.
+\begin{equation}
+S_{\mathrm{free}}
+=\int d^4x\,d^2\theta\,d^2\bar\theta\;
+\Phi^\dagger\Phi.
+\label{eq:l8-free-superaction}
+\end{equation}
+두 인자는 서로 반대 방향으로 이동된 좌표에 의존한다.
+\begin{equation}
+\Phi=\Phi(x+i\theta\sigma\bar\theta,\theta),
+\qquad
+\Phi^\dagger
+=\Phi^\dagger(x-i\theta\sigma\bar\theta,\bar\theta).
+\end{equation}
+시공간 적분 안에서는 더미 변수 \(x\)를 이동해도 된다. 한 번 이동하면 한 인자에서 그래스만 변위를 없앨 수 있지만, 그러면 다른 인자에서는 상대 변위가 두 배가 된다. 이 닐포턴트 변위에 대한 테일러 전개는 유한한 항 뒤에 끝난다.
+
+미분항은 여기서 생긴다. 초공간 식 \(\Phi^\dagger\Phi\)에는 명시적인 시공간 미분이 없지만, 이동된 논항으로 인해 성분장에 대한 1차 및 2차 미분이 생긴다. 식 ~\eqref{eq:l8-sigma-convention}의 관례에 따라 전개를 곱하고 최고차 성분만 남기면 다음을 얻는다.
+\begin{equation}
+\mathcal L_{\mathrm{free}}
+=\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F.
+\label{eq:l8-free-component-lagrangian}
+\end{equation}
+부분적분을 하면 스칼라 항은 도식적으로 \(-\phi^\ast\Box\phi\)와 같이 쓸 수도 있다. 이는 칠판 계산에서 다루려던 형태다.
+
+\begin{classroomqa}\audiencequestion{초장의 테일러 전개에서 두 번째 줄은 어디서 나오나요? \lecturetimestamp{01:03:00}}\lecturerresponse{성분 전개 \(\Phi(y,\theta)=\phi(y)+\sqrt2\theta\psi(y)+\theta^2F(y)\)에서 나온다. \(y\)가 \(x\)와 닐포턴트 그래스만 쌍선형항만큼 다르므로, 각 성분에 다시 테일러 전개를 적용한다.}\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{그 마지막 성분에도 \(\theta^2\)가 들어가야 하나요? \lecturetimestamp{01:04:54}}
+\lecturerresponse{그렇습니다. 보조 성분은 \(F\theta^2\)입니다. 이미 서로 독립인 \(\theta\)를 모두 포함하므로, 또 다른 \(\theta\)를 동반하는 추가 테일러 이동은 소멸합니다.}
+\end{classroomqa}
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}\lectureframe{01:08:57.900}\caption{이동 좌표 전개를 모아 보통 라그랑지안의 스칼라 항, 페르미온 항, 보조장 항으로 정리하는 과정.}\end{figure}
+
+식 ~\eqref{eq:l8-free-component-lagrangian}의 처음 두 항은 질량 없는 클라인--고든 방정식과 바일 방정식을 준다. 마지막 항에는 미분이 없다.
+\begin{equation}
+\frac{\partial\mathcal L}{\partial F}=F^\ast=0,
+\qquad
+\frac{\partial\mathcal L}{\partial F^\ast}=F=0.
+\label{eq:l8-free-F-equation}
+\end{equation}
+초기 조건을 추가하지 않으며 질량 껍질 위의 입자도 만들지 않는다.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_04.png}\lectureframe{01:11:32.360}\caption{성분 라그랑지안 끝에 있는 미분 없는 보조장 항 \(F^\ast F\).}\end{figure}
+
+전파자 표현으로도 같은 점을 알 수 있다. \(F\)의 역 이차 연산자는 운동량에 무관하다. 그 푸리에 변환은 국소적이다.
+\begin{equation}
+\langle F(x)F^\ast(y)\rangle
+\propto \delta^{(4)}(x-y).
+\label{eq:l8-F-contact}
+\end{equation}
+\(F\)선은 도표를 구성하는 데 쓸 수 있지만, 양 끝점은 일치한다. 이는 물리적 입자의 궤적이 아니라 접촉 수축이다.
+
+\section{이차 초퍼텐셜과 같은 질량}
+
+전파항은 \(D\)항에서 나왔다. 질량은 카이랄 적분에서 생긴다. 통상적인 정규화를 택하자.
+\begin{equation}
+W_2(\Phi)=\frac12m\Phi^2.
+\end{equation}
+\(\theta^2\) 성분은 다음과 같다.
+\begin{equation}
+\left.W_2(\Phi)\right|_{\theta^2}
+=m\phi F-\frac12m\psi\psi.
+\end{equation}
+켤레 항을 더하면 성분 라그랑지안은 다음과 같이 된다.
+\begin{align}
+\mathcal L
+={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F
+\notag\\
+&+m\phi F+m^\ast\phi^\ast F^\ast
+-\frac12m\psi\psi
+-\frac12m^\ast\bar\psi\bar\psi.
+\label{eq:l8-mass-offshell}
+\end{align}
+페르미온 쌍선형항은 바일 장의 마요라나 질량항이다. \(F\) 방정식은 대수적이다.
+\begin{equation}
+F^\ast=-m\phi,
+\qquad
+F=-m^\ast\phi^\ast.
+\label{eq:l8-mass-F-equations}
+\end{equation}
+이를 대입하면 다음을 얻는다.
+\begin{equation}
+\begin{aligned}
+\mathcal L_{\mathrm{on\ shell}}={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi\\
+&-|m|^2|\phi|^2\\
+&-\frac12\left(m\psi\psi+m^\ast\bar\psi\bar\psi\right).
+\end{aligned}
+\label{eq:l8-mass-onshell}
+\end{equation}
+따라서 스칼라 질량과 페르미온 질량은 모두 \(|m|\)이다. 칠판의 도표 표기법으로는 스칼라가 \(m\phi F\) 삽입항 하나를 통해 국소적으로 \(F\)로 바뀐 뒤, 그 켤레 삽입항을 통해 곧바로 다시 스칼라로 돌아간다. 두 삽입항은 \(|m|^2|\phi|^2\)를 제공하며, 이는 식 ~\eqref{eq:l8-mass-F-equations}을 풀어 얻은 스칼라 질량항과 정확히 일치한다.
+
+이제 정규화를 정확히 말할 수 있다.\editorialnote{강의에서는 초장을 곱할 때 수치 계수를 의도적으로 생략한다. 여기서 사용하는 계수 \(1/2\), \(1/3\), \(\sqrt2\)는 통상적인 웨스--지노 정규화다. 이 계수들은 칠판 유도의 모든 정성적 단계를 유지하면서 성분 질량과 결합상수를 정확하게 만든다.}
+
+\section{삼차 초퍼텐셜과 상호작용}
+
+이제 다음 항을 더하자.
+\begin{equation}
+W(\Phi)=\frac12m\Phi^2+\frac13g\Phi^3.
+\label{eq:l8-superpotential}
+\end{equation}
+일반적인 정칙 함수 \(W\)의 \(F\) 성분은 다음과 같다.
+\begin{equation}
+\left.W(\Phi)\right|_{\theta^2}
+=F W'(\phi)-\frac12W''(\phi)\psi\psi.
+\label{eq:l8-W-components}
+\end{equation}
+여기서는
+\begin{equation}
+W'(\phi)=m\phi+g\phi^2,
+\qquad
+W''(\phi)=m+2g\phi.
+\end{equation}
+\(F\)을 제거하기 전에 삼차 항에는 다음 항들이 들어 있다.
+\begin{equation}
+g\phi^2F-g\phi\psi\psi+\text{h.c.}
+\label{eq:l8-cubic-offshell}
+\end{equation}
+두 번째 항은 스칼라 하나와 페르미온 두 선을 잇는 유카와 꼭짓점이다. 첫 번째 항은 스칼라 둘을 보조장 선에 연결한다.
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[scale=0.95,>=Latex]
+  \coordinate (vone) at (0,0);
+  \draw[->,thick] (-2,1.1) -- (vone);
+  \draw[->,thick] (vone) -- (-2,-1.1);
+  \draw[thick,dashed] (vone) -- (2,0);
+  \node[left] at (-2,1.1) {\(\psi\)};
+  \node[left] at (-2,-1.1) {\(\psi\)};
+  \node[right] at (2,0) {\(\phi\)};
+  \node[below=8pt of vone] {\(-g\phi\psi\psi\)};
+\end{tikzpicture}\caption{유카와 상호작용을 설명하기 위해 다시 그린 그림. 페르미온 선 두 개와 스칼라 선 하나가 결합상수에 비례하는 \(g\)로 만난다.}\end{figure}
+
+완전한 보조장 방정식은
+\begin{equation}
+F^\ast=-W'(\phi)=-(m\phi+g\phi^2).
+\label{eq:l8-general-F-equation}
+\end{equation}
+이 방정식에서 보조장을 소거하면 스칼라 퍼텐셜을 얻습니다.
+\begin{equation}
+V(\phi)=|W'(\phi)|^2
+=|m\phi+g\phi^2|^2.
+\label{eq:l8-scalar-potential}
+\end{equation}
+질량 항 외에도 여기에는 \(m^\ast g\)에 비례하는 세제곱 스칼라 항들과 사차 항이 포함됩니다.
+\begin{equation}
+V(\phi)\supset |g|^2|\phi|^4.
+\label{eq:l8-quartic}
+\end{equation}
+보조선 그림에서는 두 \(\phi^2F\) 꼭짓점이 국소적인 \(F\)-축약으로 연결됩니다. 식~\eqref{eq:l8-F-contact}이 두 위치를 일치시키므로, 그 결과는 정확히 네 스칼라 접촉 꼭짓점입니다.
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[scale=0.95]
+  \coordinate (vfour) at (0,0);
+  \foreach \angle in {35,145,215,325}
+    \draw[thick,dashed] (vfour) -- (\angle:1.9);
+  \fill (vfour) circle (1.5pt);
+  \node[below=8pt of vfour] {\(-|g|^2|\phi|^4\)};
+\end{tikzpicture}\caption{보조장을 제거하면 국소적인 \(F\) 꼭짓점 두 개가 하나의 4-스칼라 접촉 상호작용이 된다.}\end{figure}
+
+초대칭은 보손과 페르미온을 같은 이론에 넣는 데 그치지 않습니다. 두 입자의 질량이 같도록 하고, 유카와 결합을 \(g\)에 묶으며, 사차 스칼라 결합을 \(|g|^2\)로 정합니다. 이러한 관계는 질량, 산란 진폭, 붕괴를 통해 검증할 수 있으며, 우연히 수치가 일치한 결과가 아닙니다.
+
+\section{짝을 이루는 루프 효과}
+
+상호작용이 입자 질량을 보정할 때 이러한 관계가 특히 유용해집니다. 스칼라 자기 에너지에는 사차 꼭짓점에서 오는 보손 루프와 두 유카와 꼭짓점에서 오는 페르미온 루프가 기여합니다. 각 루프에는 같은 결합 상수의 제곱이 곱해집니다. 페르미온 고리 루프에는 페르미 통계가 요구하는 상대적 마이너스 부호가 붙습니다.
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[>=Latex,scale=0.9]
+  \begin{scope}[xshift=-3.3cm]
+    \draw[thick,dashed] (-2,0)--(0,0)--(2,0);
+    \draw[thick,dashed] (0,0) .. controls (-0.9,1.7) and (0.9,1.7) .. (0,0);
+    \fill (0,0) circle (1.4pt);
+    \node at (0,-0.55) {bosonic loop};
+  \end{scope}
+  \begin{scope}[xshift=3.3cm]
+    \draw[thick,dashed] (-2,0)--(-0.8,0);
+    \draw[thick,dashed] (0.8,0)--(2,0);
+    \draw[->,thick] (-0.8,0) arc[start angle=180,end angle=0,x radius=0.8,y radius=0.8];
+    \draw[->,thick] (0.8,0) arc[start angle=0,end angle=-180,x radius=0.8,y radius=0.8];
+    \fill (-0.8,0) circle (1.4pt);
+    \fill (0.8,0) circle (1.4pt);
+    \node at (0,-1.35) {fermionic loop};
+  \end{scope}
+\end{tikzpicture}\caption{강의에서 다룬 스칼라 자기 에너지의 짝을 이루는 두 기여. 초대칭이 상대적인 결합상수를 정하고, 닫힌 페르미온 루프가 반대 부호를 준다.}\end{figure}
+
+1루프에서 자외선에 민감한 주요 항은 보손과 페르미온의 모든 기여를 합하면 상쇄된다. 같은 대칭은 와드 항등식과 비재규격화 성질을 통해 고차 보정도 정리한다. 이는 대칭으로 서로 연결된 기여들의 합에 관한 진술이지, 모든 그래프가 하나씩 문자 그대로 상쇄된다는 뜻은 아니다. 파동함수 재규격화, 유한한 효과, 그리고 대칭을 보존하는 다른 보정은 남을 수 있다. 이것이 초공간에서 이론을 구성하는 실질적인 힘이다. 개별 파인먼 적분을 계산하기 전에 질량의 동등성과 결합상수 사이의 관계가 이미 정해진다.\editorialnote{칠판에서는 상쇄를 더 일반적으로 말한다. 본문에는 표준적인 단서가 덧붙어 있다.}
+
+\section{다음 내용}
+
+여기서 구성한 모형은 가장 간단한 상호작용 카이랄 이론으로, 흔히 웨스--지노 모형이라고 부른다. 이는 초대칭 장 이론의 가장 일반적인 형태가 아니라 한 가지 예다. 그러나 기본 구조는 계속 나타난다. 장을 초다중항으로 나타내고, 불변인 초공간 적분을 쓰면 그래스만 전개가 성분 사이의 관계를 정한다.
+
+정확한 초대칭은 관측된 입자 스펙트럼에서 드러나지 않는다. 따라서 다음 문제는 대칭을 어떻게 깨뜨리면서도 유용할 만큼 자외선 제어 능력을 유지할 수 있는가이다. 약속한 또 다른 방향은 대통일이다. 다음과 같은 게이지 군
+\begin{equation}
+SU(3)\times SU(2)\times U(1)
+\end{equation}
+이 \(SU(5)\) 같은 더 큰 군에 어떻게 포함될 수 있는지, 그리고 초대칭 입자 내용이 대통일에 관한 논의를 어떻게 바꾸는지가 남은 강의에서 다룰 질문이다.
