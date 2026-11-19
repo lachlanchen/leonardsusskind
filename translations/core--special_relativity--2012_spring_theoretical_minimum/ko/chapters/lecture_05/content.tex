@@ -1,0 +1,801 @@
+\chapter{입자, 장, 그리고 상대론적 표기법}
+
+\section{강의에 앞서 다루는 도플러 편이 문제}
+
+앞주 강의에서 남은 질문으로 논의를 시작한다. 빛의 속도에 가깝게 움직이는 관측자는 언제나 더 긴 파장을 측정할까? 그렇지는 않다. 답은 운동 방향에 달려 있다. 빛의 파동과 같은 방향으로 움직이는 관측자는 파장이 늘어나는 것을 보고, 파동과 반대 방향으로 움직이는 관측자는 파장이 짧아지는 것을 본다. 이것이 상대론적 도플러 효과다.
+
+\begin{classroomqa}
+\audiencequestion{빛의 속도에 가까운 운동은 관측되는 파장을 길게 만드는가?}
+\lecturerresponse{관측자가 빛과 같은 방향으로 움직일 때만 그렇다. 관측자의 속도 방향을 반대로 바꾸면 편이 방향도 반대가 된다. 별도의 공식을 외우지 않고 로런츠 기하만으로 결과를 직접 구할 수 있다. \lecturetimestamp{00:00:13}}
+\end{classroomqa}
+
+단위계에서 \(c=1\)로 놓고, 프라임 좌표계가 속력 \(v\)로 오른쪽으로 움직인다고 하자. 오른쪽으로 진행하는 빛의 마루는 영 간격선을 따른다. 프라임이 없는 좌표계에서 파장을 1로 정규화하고, 연속하는 두 마루의 세계선을 다음과 같이 쓰자. \begin{equation}
+x=t,
+\qquad
+x=t+1.
+\label{eq:sr5-crest-lines}
+\end{equation} 프라임이 없는 좌표계에서 파장은 \(t\)가 같은 순간에 두 마루 사이의 거리로 측정한다. 프라임 좌표계에서는 \(t'\)가 같은 순간에 두 마루 사이의 거리를 측정해야 한다. 따라서 계산의 핵심은 동시성의 상대성이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_01.png}
+\caption{연속하는 오른쪽 진행 파동 마루, 빛원뿔, 그리고 움직이는 좌표계의 기울어진 축.}
+\lectureframe{00:03:30}
+\end{figure}
+
+이 대목에서 강의 진행 순서에 관해 잠시 이야기한다. 여름 강의는 없다. 다음 강의 주제로는 일반상대성이론과 양자역학을 더 폭넓게 다시 다루는 방안이 모두 후보에 올라 있다. 양자장론을 공부하기 전에 조화진동자는 이해해 두어야 할 내용으로 특별히 언급된다.
+
+\begin{classroomqa}
+\audiencequestion{앞으로 적외선--자외선의 연결 관계를 다루는 강의가 있을까요?}
+\lecturerresponse{그 질문은 양자역학과 중력의 접점에 속한다. 이 수업에서는 그 문제를 알아볼 만큼 양자역학을 다루지만, 먼저 중력을 전개해야 한다. 가장 자연스러운 출발점은 일반상대성이론이다. \lecturetimestamp{00:05:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{기울어진 축 사이의 상대적 크기를 칠판 그림에서 눈대중으로 읽어도 될까요?}
+\lecturerresponse{안 된다. 시공간 도표는 인과관계와 동시성의 기하를 나타내지만, 그림 위에서 보통의 유클리드 자로 잰 길이는 로런츠 측정값이 아니다. 관련 사건들을 정하고 로런츠 변환을 적용해야 한다. \lecturetimestamp{00:06:10}}
+\end{classroomqa}
+
+이제 계산을 이어가자. 프라임이 없는 좌표계에서 마루 사이의 간격을 1로 정규화하고, 대수적으로 프라임 좌표계에서 동시에 일어나는 두 사건을 찾는다.
+
+로런츠 변환은 다음과 같다. \begin{equation}
+t'=\gamma(t-vx),
+\qquad
+x'=\gamma(x-vt),
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr5-lorentz-doppler}
+\end{equation} 프라임 좌표계의 동시성 단면을 \(t'=0\)로 택하자. 그러면 식 \eqref{eq:sr5-lorentz-doppler}에서 다음을 얻는다. \begin{equation}
+t=vx.
+\label{eq:sr5-primed-simultaneity}
+\end{equation} 첫 번째 마루는 이 단면과 원점에서 만난다. 두 번째 마루는 \(x=t+1\)를 만족하므로, 교점은 다음 조건을 만족한다. \begin{align}
+x&=vx+1,\\
+x&=\frac{1}{1-v},
+\qquad
+t=\frac{v}{1-v}.
+\end{align} 그 교점의 프라임 좌표는 다음과 같다. \begin{align}
+x'
+&=\frac{x-vt}{\sqrt{1-v^2}}\\
+&=\frac{1-v^2}{(1-v)\sqrt{1-v^2}}\\
+&=\sqrt{\frac{1+v}{1-v}}.
+\end{align} 원래 파장이 1이었으므로, \begin{equation}
+\boxed{
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{1+\beta}{1-\beta}}
+},
+\qquad
+\beta=\frac{v}{c}.
+\label{eq:sr5-doppler}
+\end{equation}이다. 이를 동치인 형태로 쓰면 다음과 같다. \begin{equation}
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{c+v}{c-v}}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_02.png}
+\caption{\(c\)를 복원한 도플러 인자. \(v\)의 방향을 반대로 하면 편이 인자는 역수가 된다.}
+\lectureframe{00:13:40}
+\end{figure}
+
+\(v>0\)일 때 프라임 좌표계의 관측자는 빛을 따라가므로 더 긴 파장을 측정한다. \(v\)를 \(-v\)로 바꾸면 빛과 반대 방향으로 움직이는 경우가 되어 인자는 1보다 작아진다. 광선을 따라가며 관측자가 \(c\)에 가까워질 수 있다면 파장은 발산할 것이다. 진동수 편이는 그 비의 역수다.
+
+\section{상호작용을 하나의 작용에 담아야 하는 이유}
+
+도입 질문을 마치고 장과 입자를 다룬다. 양자장론에서는 결국 입자와 장이 동일한 들뜸을 기술하는 두 방식이 된다. 여기서는 그런 틀을 사용하지 않는다. 이 강의에서는 입자는 세계선을 따라가고 고전장은 시공간을 채운다. 당장 다룰 질문은 조금 더 소박하다. 장이 입자에 작용한다면, 입자는 어떻게 장에 되작용할까?
+
+작용 원리는 유한 차원 모형을 통해 이 질문에 답한다. \(x(t)\)와 \(y(t)\)를 두 일반화 좌표라고 하자. 라그랑지안이 다음처럼 분리되면, \begin{equation}
+L(x,\dot x,y,\dot y)
+=
+L_x(x,\dot x)+L_y(y,\dot y),
+\label{eq:sr5-separable-l}
+\end{equation} 두 오일러--라그랑주 방정식은 서로 독립이다. \begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x}
+=
+\frac{\partial L}{\partial x},
+\qquad
+\frac{d}{dt}\frac{\partial L}{\partial\dot y}
+=
+\frac{\partial L}{\partial y}.
+\end{equation} \(x\) 방정식에는 \(y\)가 들어 있지 않고, \(y\) 방정식에는 \(x\)가 들어 있지 않다.
+
+두 변수를 상호작용시키려면 \(x\)에 관한 항과 \(y\)에 관한 항으로 분리할 수 없는 항을 더하면 된다. 간단한 예는 다음과 같다. \begin{equation}
+L
+=
+\frac{\dot x^2}{2}
++\frac{\dot y^2}{2}
+-V(x)-W(y)+\kappa xy.
+\label{eq:sr5-coupled-coordinates}
+\end{equation} 이제 \(x\)를 변분하면 \(y\)에 비례하는 항이 나오고, \(y\)을 변분하면 \(x\)에 비례하는 항이 나온다. 두 작용 방향 모두를 지배하는 것은 같은 혼합항이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_03.png}
+\caption{라그랑지안의 한 항에 두 일반화 좌표가 함께 들어 있으면 두 좌표는 동역학적으로 결합된다.}
+\lectureframe{00:19:00}
+\end{figure}
+
+여기서 사용하는 작용--반작용 진술이 정확히 성립하는 조건은 이렇다. 두 대상이 모두 동역학적 변수이고, 하나의 공통 작용을 두 대상에 대해 모두 변분한다. 장을 외부에서 주어진 배경으로 취급하면 장의 반응이 드러나지 않을 수 있다. 하지만 장 자체를 동역학적으로 다루면 결합항이 두 방정식을 모두 만든다.
+
+\section{스칼라장이 입자에 작용하는 방식}
+
+\subsection{상대론적 결합}
+
+먼저 스칼라장 \(\phi(\mathbf{x},t)\)가 알려져 있다고 하자. 파동일 수도 있고 정적인 분포일 수도 있다. 지금은 장 자체의 방정식을 고려하지 않는다. 자유 상대론적 입자의 작용은 다음과 같다. \begin{equation}
+S_{\mathrm p}
+=
+-m\int d\tau.
+\end{equation} 직선 위의 운동에 대해 \(c=1\)로 놓으면, \begin{equation}
+L_{\mathrm p}^{(0)}
+=
+-m\sqrt{1-\dot x^2}.
+\end{equation}이다. 가장 간단한 스칼라 결합은 질량 계수를 장에 의존하는 양으로 바꾸는 것이다. \begin{equation}
+\boxed{
+L_{\mathrm p}
+=
+-\bigl[m+g\phi(x,t)\bigr]\sqrt{1-\dot x^2}
+}.
+\label{eq:sr5-particle-coupling}
+\end{equation} 결합 상수 \(g\)는 장이 이 입자에 미치는 영향의 세기를 나타낸다. 부호는 관례에 따라 정한다. \(g\)를 \(-g\)로 바꾸면 스칼라 힘의 방향이 반대가 된다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_04.png}
+\caption{\(m\)를 국소 계수 \(m+g\phi(x,t)\)로 바꾼 자유 입자 작용.}
+\lectureframe{00:24:10}
+\end{figure}
+
+\subsection{저속 입자 극한}
+
+뉴턴 극한이 드러나도록 빛의 속도를 다시 표시하자. \begin{equation}
+L_{\mathrm p}
+=
+-\bigl[mc^2+g\phi(x,t)\bigr]
+\sqrt{1-\frac{\dot x^2}{c^2}}.
+\label{eq:sr5-particle-coupling-c}
+\end{equation} \(|\dot x|\ll c\)일 때는, \begin{equation}
+\sqrt{1-\frac{\dot x^2}{c^2}}
+=
+1-\frac{\dot x^2}{2c^2}
++O\!\left(\frac{\dot x^4}{c^4}\right).
+\end{equation}이다. 이를 \eqref{eq:sr5-particle-coupling-c}에 대입하면 다음과 같다. \begin{align}
+L_{\mathrm p}
+&=
+-mc^2-g\phi
++\frac{m\dot x^2}{2}
++\frac{g\phi\,\dot x^2}{2c^2}
++O(c^{-4})\\
+&\longrightarrow
+\frac{m\dot x^2}{2}-g\phi(x,t),
+\label{eq:sr5-nr-particle}
+\end{align} 상수항 \(-mc^2\)과 \(c^{-2}\)만큼 작은 항을 버리면 얻는 결과는 보통의 형태 \(T-V\)이므로, \begin{equation}
+V_{\mathrm p}(x,t)=g\phi(x,t).
+\label{eq:sr5-scalar-potential}
+\end{equation}이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_05.png}
+\caption{제곱근을 전개하면 뉴턴 역학의 운동에너지 항과 스칼라 퍼텐셜 에너지 \(g\phi\)가 남는다.}
+\lectureframe{00:28:50}
+\end{figure}
+
+큰 정지 에너지 상수는 오일러--라그랑주 방정식에 들어가지 않는다. 장에 의존하는 항은 방정식에 영향을 준다. 전자기학에서는 전하가 이와 비슷한 결합 세기 역할을 하지만, 실제 전자기 상호작용에는 이 스칼라 모형이 아니라 사벡터 퍼텐셜이 쓰인다.
+
+\section{입자가 장에 되작용하는 방식}
+
+\subsection{하나의 변분 문제}
+
+이제 장을 단지 주어진 것으로 둘 수는 없다. 장의 배치와 입자 세계선이 함께 들어 있는 시공간 영역을 생각하자. 두 가지 모두에 대한 변분에서 전체 작용이 정지할 때 물리적 해를 얻는다. \begin{equation}
+\delta S[\phi,x]=0.
+\end{equation} 장을 고정한 채 세계선을 변분하면 입자 방정식을 얻는다. 세계선을 고정한 채 장을 변분하면 장 방정식을 얻는다. 두 방정식을 이어 주는 것은 두 방정식에 공통으로 들어가는 상호작용항이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_06.png}
+\caption{스칼라장이 차지한 시공간 영역을 지나는 입자의 세계선.}
+\lectureframe{00:30:30}
+\end{figure}
+
+질량이 없는 자유 스칼라장에 대해 다음과 같이 두자. \begin{equation}
+S_{\mathrm f}
+=
+\int d^4x\,
+\frac12
+\left[
+(\partial_t\phi)^2
+-(\partial_x\phi)^2
+-(\partial_y\phi)^2
+-(\partial_z\phi)^2
+\right].
+\label{eq:sr5-free-field-action}
+\end{equation} 여기서부터 다시 \(c=1\)를 사용한다. 단위를 명시하면 좌표와 장을 어떻게 정규화하느냐에 따라 시간 항에 그에 맞는 \(1/c^2\) 인자가 들어간다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_07.png}
+\caption{입자 세계선과 같은 시공간 영역에 걸쳐 쓴 장의 작용.}
+\lectureframe{00:32:10}
+\end{figure}
+
+\subsection{정지한 입자와 세계선 적분}
+
+대수를 최소화하면서 원천항을 드러내기 위해 입자를 원점에 정지시켜 두자. 그러면 인자 \(d\tau\)는 \(dt\)와 같고, \eqref{eq:sr5-particle-coupling}의 상호작용 부분은 다음과 같이 된다. \begin{equation}
+S_{\mathrm{int}}
+=
+-g\int dt\,\phi(\mathbf{0},t).
+\label{eq:sr5-worldline-interaction}
+\end{equation} 이것은 세계선을 따라서만 적분하는 반면, \eqref{eq:sr5-free-field-action}는 전체 시공간에 걸쳐 적분한다. 둘을 하나의 시공간 적분으로 합치려면 입자의 위치를 선택하는 함수가 필요하다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_08.png}
+\caption{장 영역 안에 있는 정지 세계선과, 이 세계선과 합쳐야 하는 장의 작용.}
+\lectureframe{00:35:35}
+\end{figure}
+
+\subsection{디랙 델타 함수}
+
+일차원 델타 함수는 다음과 같이 정의된다.
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,f(x)\delta(x-a)=f(a).
+\label{eq:sr5-delta-definition}
+\end{equation}
+\(x=a\)에서 벗어나면 0이고, \(x=a\)에서 특이하며, 적분하면 단위값을 갖는다.
+이 함수는 보통의 유한한 값을 갖는 함수라기보다 다음 관계로 특징지어지는 분포로 이해하는 것이 가장 적절하다.
+\eqref{eq:sr5-delta-definition}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_09.png}
+\caption{원점에서의 장 값을 공간 적분으로 바꾸는 델타 함수 항등식.}
+\lectureframe{00:36:45}
+\end{figure}
+
+3차원에서는, \begin{equation}
+\delta^3(\mathbf{x})
+=
+\delta(x)\delta(y)\delta(z),
+\end{equation}이므로 다음이 성립한다. \begin{align}
+\int d^3x\,
+\phi(\mathbf{x},t)\delta^3(\mathbf{x})
+&=
+\int dx\,dy\,dz\,
+\phi(x,y,z,t)\\
+&\quad\times\delta(x)\delta(y)\delta(z)\\
+&=\phi(\mathbf{0},t).
+\label{eq:sr5-triple-delta}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{\(d^3x\)는 어디에서 나오는가?}
+\lecturerresponse{보통의 공간 부피 요소 \(dx\,dy\,dz\)이다. 공간 차원이 1차원이면 같은 항등식에는 \(dx\)와 델타 함수 하나만 들어간다. \lecturetimestamp{00:37:09}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_10.png}
+\caption{3차원 델타 함수를 1차원 인자 세 개로 전개한 모습.}
+\lectureframe{00:39:05}
+\end{figure}
+
+이제 식 \eqref{eq:sr5-worldline-interaction}을 다음처럼 쓸 수 있다. \begin{equation}
+S_{\mathrm{int}}
+=
+-g\int d^4x\,
+\delta^3(\mathbf{x})\phi(\mathbf{x},t).
+\end{equation} 정지한 원천을 포함한 전체 작용은 다음과 같다. \begin{align}
+S
+=
+\int d^4x
+\biggl\{
+&\frac12(\partial_t\phi)^2
+-\frac12|\boldsymbol{\nabla}\phi|^2
+\nonumber\\
+&-g\delta^3(\mathbf{x})\phi
+\biggr\}.
+\label{eq:sr5-combined-action}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{상호작용을 시공간 작용에 넣을 때 마이너스 부호를 빠뜨린 건가요?}
+\lecturerresponse{세계선 라그랑지안에는 \(-g\phi\)가 들어 있으므로, 시공간 라그랑지안 밀도에는 \(-g\delta^3(\mathbf{x})\phi\)가 들어가야 한다. 이 부호를 유지해야 장 방정식의 원천항 부호가 정해진다. \lecturetimestamp{00:41:24}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_11.png}
+\caption{자유 스칼라장 밀도와 국소화된 상호작용을 하나의 시공간 작용으로 합친 모습.}
+\lectureframe{00:42:05}
+\end{figure}
+
+\subsection{원천이 있는 장 방정식}
+
+\eqref{eq:sr5-combined-action}을 \(\phi\)에 대해 변분하면 다음을 얻는다. \begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi
+=
+-g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-sourced-wave}
+\end{equation} 원점에서 떨어진 곳에서는 자유 파동 방정식이다. 원점에서는 델타 함수가 입자를 국소화된 원천으로 나타낸다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_12.png}
+\caption{원점의 점 원천이 구동하는 파동 연산자.}
+\lectureframe{00:45:35}
+\end{figure}
+
+정적 해에서는 \(\partial_t\phi=0\)이므로, \begin{equation}
+\boxed{
+\nabla^2\phi
+=
+g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-poisson}
+\end{equation}이다. 이것은 점 원천에 대한 푸아송 방정식이다. 여기서의 비유는 정전기학에 해당하며, 아직 전자기학은 아니다. 장은 여전히 스칼라 \(\phi\)이지 전자기 사퍼텐셜이 아니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_13.png}
+\caption{원천이 있는 파동 방정식의 정적 극한. 이 식은 푸아송 방정식이다.}
+\lectureframe{00:47:05}
+\end{figure}
+
+이제 상호성이 명확해졌다. 항 \(g\phi\)은 입자에 퍼텐셜 에너지를 주고, 같은 \(g\)는 입자를 \(\phi\)의 원천으로 만든다. 이 두 효과를 서로 독립적인 가정으로 두는 것이 아니다.
+
+\subsection{움직이는 원천은 복사한다}
+
+\(\mathbf{a}\)에 고정된 입자는 \(\delta^3(\mathbf{x}-\mathbf{a})\)로 나타낸다. 입자의 위치가 시간에 따라 변하면 원천은 다음과 같이 된다. \begin{equation}
+\delta^3\!\left(\mathbf{x}-\mathbf{a}(t)\right).
+\label{eq:sr5-moving-delta}
+\end{equation} 시간에 따라 변하는 우변은 시간에 무관한 장으로 상쇄할 수 없다. 따라서 \(\partial_t^2\phi\) 항이 다시 필요하고, 가속하거나 진동하는 원천은 장에 파동을 일으킬 수 있다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_14.png}
+\caption{\(\mathbf{a}(t)\)로 옮겨 간 델타 함수 원천. 이에 따라 장 방정식은 시간에 의존한다.}
+\lectureframe{00:50:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{원천을 비상대론적으로 다룬다면 장 방정식에서 상대론은 어디에 들어 있나요?}
+\lecturerresponse{왼쪽의 시공간 파동 연산자에 상대론적 전파가 담겨 있다. 입자까지 완전히 상대론적으로 다루면 고유시간 작용과 속도 인자를 유지해야 한다. 느리게 움직이는 원천이라도 시간에 따라 변하면 파동을 일으킬 수 있다. \lecturetimestamp{00:52:14}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(g\phi\)의 단위는 무엇인가요?}
+\lecturerresponse{입자 작용에서 \(mc^2\)와 나란히 나타나므로 에너지 단위를 갖는다. 여기서 사용하는 자연 단위 정규화에서는 \(3+1\)차원 스칼라의 질량 차원이 1이고 \(g\)는 무차원일 수 있다. 차원은 시공간 차원과 장의 정규화에 따라 달라진다. \lecturetimestamp{00:52:55}}
+\end{classroomqa}
+
+\section{사벡터, 스칼라, 그리고 계량}
+
+성분 방정식이 길어져 더 나은 표기법이 필요해졌다. 시공간 좌표를 다음과 같이 쓰자. \begin{equation}
+x^\mu=(x^0,x^1,x^2,x^3)=(t,x,y,z),
+\label{eq:sr5-four-coordinate}
+\end{equation} 여기서 그리스 지표는 네 성분 전체를 돈다. 네 성분으로 된 목록이라고 해서 저절로 사벡터가 되는 것은 아니다. 성분들이 \(x^\mu\)와 같이 로런츠 변환에 따라 변환할 때만 사벡터다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_15.png}
+\caption{네 시공간 좌표를 \(x^\mu\)로 모아 쓴 모습.}
+\lectureframe{00:55:00}
+\end{figure}
+
+공간 성분 전체가 0이라는 진술은 한 기준계에서는 성립하지만 다른 기준계에서는 성립하지 않을 수 있다. 반면 모든 성분이 0이면 모든 로런츠 관측자가 그 벡터가 영벡터라는 데 동의한다. \(dx^\mu\)와 같은 차분도 사차원 벡터이다.
+
+불변 고유시간 간격은 다음과 같다. \begin{equation}
+d\tau^2
+=
+dt^2-dx^2-dy^2-dz^2.
+\label{eq:sr5-proper-time}
+\end{equation} 이는 좌표계에 따라 달라지는 네 성분을 갖는 것이 아니라 하나의 값만 가지므로 스칼라다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_16.png}
+\caption{사변위와 불변 고유시간 간격.}
+\lectureframe{00:57:25}
+\end{figure}
+
+\subsection{민코프스키 계량}
+
+시간 성분의 부호가 음수인 계량 부호 규약을 채택하자. \begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr5-metric}
+\end{equation} 공간 성분의 부호가 음수인 규약도 똑같이 타당하지만, 모든 방정식에서 한 가지 규약을 일관되게 써야 한다. \eqref{eq:sr5-metric}를 사용하면, \begin{equation}
+dx^\mu dx_\mu
+=
+-dt^2+dx^2+dy^2+dz^2
+=
+-d\tau^2.
+\end{equation}이다. 전체 부호는 불변성에 영향을 주지 않는다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_17.png}
+\caption{시간 성분의 부호가 음수인 민코프스키 계량을 대각 행렬로 쓴 모습.}
+\lectureframe{01:00:30}
+\end{figure}
+
+계량은 지표를 내린다. \begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\label{eq:sr5-lower-index}
+\end{equation} 이 데카르트 계량에서는, \begin{equation}
+A^\mu=(A^0,A^1,A^2,A^3),
+\qquad
+A_\mu=(-A^0,A^1,A^2,A^3).
+\label{eq:sr5-upper-lower-components}
+\end{equation}이다. \(\eta^{\mu\rho}\eta_{\rho\nu}=\delta^\mu{}_\nu\)이므로 같은 계량을 한 번 더 적용하면 지표를 올린다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_18.png}
+\caption{행렬 \(\eta_{\mu\nu}\)를 곱해 지표를 내리는 과정.}
+\lectureframe{01:03:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{여기서 보통의 행렬 곱셈에도 정말 합이 들어 있나요?}
+\lecturerresponse{그렇다. 각 출력 성분은 \(\eta\)의 한 행과 전체 벡터를 곱한 것이며, 열 지표에 대해 합한다. 대각 계량에서는 계산이 자명해 보이지만, 일반 행렬에서는 그 합이 명시적으로 드러난다. \lecturetimestamp{01:04:56}}
+\end{classroomqa}
+
+\subsection{아인슈타인 합산 규약과 자유 지표}
+
+아인슈타인 합산 규약에서는 지표가 한 번은 위에, 한 번은 아래에 반복되면 합 기호를 생략한다. \begin{equation}
+\eta_{\mu\nu}A^\nu
+\equiv
+\sum_{\nu=0}^{3}\eta_{\mu\nu}A^\nu.
+\end{equation} 여기서 \(\nu\)는 더미 지표다. 이 지표는 합산되어 사라지므로 이름을 바꿔도 된다. 지표 \(\mu\)는 자유 지표로, 결과의 네 성분을 가리킨다. 보통 하나의 단항식에서 같은 지표가 세 번 이상 나타나면 안 된다.
+
+전통적인 명칭은 위 지표를 \emph{반변}, 아래 지표를 \emph{공변}이라 한다. 이 강의에서는 일부러 더 쉬운 표현인 \emph{위}와 \emph{아래}를 선호하지만, 두 용어는 같은 변환 규칙을 가리킨다.
+
+\section{수축과 스칼라의 미분}
+
+\subsection{민코프스키 내적}
+
+벡터와 그 지표를 내린 벡터를 수축하면 다음을 얻는다. \begin{equation}
+A^\mu A_\mu
+=
+\eta_{\mu\nu}A^\mu A^\nu
+=
+-(A^0)^2+(A^1)^2+(A^2)^2+(A^3)^2.
+\label{eq:sr5-vector-square}
+\end{equation} 마이너스 부호를 따로 더해서는 안 된다. 그 부호는 이미 지표를 내린 시간 성분에서 나온다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_19.png}
+\caption{시간 성분과 공간 성분으로 전개한 수축 \(A^\mu A_\mu\).}
+\lectureframe{01:09:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{아래 지표 벡터는 행벡터로 그려야 하나요?}
+\lecturerresponse{초등적인 행렬 표기에서는 행벡터로 나타낼 수 있지만, 지표 표기법은 그런 선택을 요구하지 않는다. 그 벡터를 규정하는 것은 변환 방식과 위 지표 벡터와의 수축 방식이다. \lecturetimestamp{01:10:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{그리스 지표는 언제나 네 성분 모두를 가리키나요?}
+\lecturerresponse{이 표기법에서는 그렇다. \(\mu,\nu\)와 같은 그리스 지표는 시공간 성분을 도는 반면, \(i,j\)와 같은 라틴 지표는 대개 공간 성분 세 개만 돈다. \lecturetimestamp{01:12:23}}
+\end{classroomqa}
+
+서로 다른 두 사벡터에도 같은 구성이 성립한다. \begin{equation}
+A^\mu B_\mu
+\end{equation}는 스칼라다. 간단히 보이는 증명에는 편극 항등식을 쓸 수 있다. \((A+B)^2\)와 \((A-B)^2\)가 모두 스칼라이므로, \begin{equation}
+(A+B)^2-(A-B)^2=4A^\mu B_\mu
+\end{equation}도 스칼라다. 이는 보통의 내적에 해당하는 민코프스키 공간의 식이다.
+
+\begin{classroomqa}
+\audiencequestion{\(A^\mu B_\mu\)는 보통의 내적과 비슷한가요?}
+\lecturerresponse{그렇다. 민코프스키 계량이 시간 성분과 공간 성분 사이의 상대적인 부호를 정한다는 점만 다르다. \lecturetimestamp{01:15:44}}
+\end{classroomqa}
+
+\subsection{기울기는 공변벡터다}
+
+\(\phi(x)\)를 스칼라장이라 하고, 여기서 \(x\)는 네 시공간 좌표 전체를 나타낸다고 하자. 이웃한 사건들 사이에서, \begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr5-dphi}
+\end{equation}이다. 좌변은 스칼라이고 \(dx^\mu\)는 사벡터다. 따라서 계수 \begin{equation}
+\partial_\mu\phi
+=
+\left(
+\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right)
+\label{eq:sr5-gradient-lower}
+\end{equation}는 공변벡터처럼 변환해야 한다. 지표를 올리면 다음과 같다. \begin{equation}
+\partial^\mu\phi
+=
+\left(
+-\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right).
+\label{eq:sr5-gradient-upper}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_20.png}
+\caption{\(d\phi=\partial_\mu\phi\,dx^\mu\). 여기서 스칼라의 기울기가 공변벡터라는 점을 알 수 있다.}
+\lectureframe{01:20:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(x^\mu\)의 위 지표가 분모의 \(\partial/\partial x^\mu\)에 나타날 때 아래 지표로 바뀌나요?}
+\lecturerresponse{그렇다. 좌표 미분 \(dx^\mu\)은 반변적으로 변환하므로, 그 쌍대인 미분 연산자 \(\partial_\mu=\partial/\partial x^\mu\)는 공변적으로 변환한다. 이 덕분에 \(d\phi=\partial_\mu\phi\,dx^\mu\)는 스칼라가 된다. \lecturetimestamp{01:20:00}}
+\end{classroomqa}
+
+\subsection{불변 스칼라장 밀도}
+
+두 미분 벡터를 수축하면 다음과 같다. \begin{align}
+\partial_\mu\phi\,\partial^\mu\phi
+&=
+-(\partial_t\phi)^2
++(\partial_x\phi)^2
++(\partial_y\phi)^2
++(\partial_z\phi)^2.
+\end{align} 따라서 자유 스칼라장의 밀도는 간단히 다음처럼 쓸 수 있다. \begin{equation}
+\boxed{
+\mathcal L_0
+=
+-\frac12
+\partial_\mu\phi\,\partial^\mu\phi
+}.
+\label{eq:sr5-compact-density}
+\end{equation} 이는 \eqref{eq:sr5-free-field-action}의 성분별 밀도와 같다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_21.png}
+\caption{수축한 하나의 식으로 간결하게 쓴 스칼라장의 운동에너지 밀도.}
+\lectureframe{01:25:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{수축한 1계 미분식이 라플라시안인가요?}
+\lecturerresponse{아니다. 라플라시안에는 2계 공간 미분이 들어간다. 이 식은 1계 미분들의 곱으로 이루어진 라그랑지안 밀도다. \lecturetimestamp{01:24:38}}
+\end{classroomqa}
+
+물리적 사건에서 스칼라 밀도의 값은 좌표계와 무관하다. proper 로런츠 변환의 행렬식은 절댓값이 1이므로 측도 \(d^4x\)도 불변이다. 따라서 \begin{equation}
+S=\int d^4x\,\mathcal L
+\end{equation}은 불변이다. 좌표계와 무관한 작용에서 얻은 오일러--라그랑주 방정식은 모든 관성계에서 같은 형태를 갖는다.
+
+\section{갈릴레이 극한}
+
+\begin{classroomqa}
+\audiencequestion{뉴턴 역학의 라그랑지안도 상대성 원리를 만족해야 했나요?}
+\lecturerresponse{그렇다. 앞서 강조하지 않았을 뿐이다. 뉴턴 역학의 방정식은 로런츠 변환의 \(c\to\infty\)극한인 갈릴레이 변환에 대해 불변이다. 이 극한에서 사라지는 것은 동시성의 상대성이다. \lecturetimestamp{01:27:16}}
+\end{classroomqa}
+
+그 극한을 살펴보기 위해 \(c\)를 복원하고 \(x\) 방향 부스트를 쓰자. \begin{equation}
+x'
+=
+\frac{x-vt}{\sqrt{1-v^2/c^2}},
+\qquad
+t'
+=
+\frac{t-vx/c^2}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr5-lorentz-c}
+\end{equation} \(c\to\infty\)를 취하면 다음과 같다. \begin{equation}
+\boxed{
+x'=x-vt,
+\qquad
+t'=t
+}.
+\label{eq:sr5-galilean}
+\end{equation} 이것이 갈릴레이 변환이다. 뉴턴 역학은 모든 관성계에서 법칙의 형태가 같다는 상대성 원리를 유지하지만, 모든 관측자가 공유하는 절대 시간도 가정한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_22.png}
+\caption{\(c\to\infty\)를 취하기 전의 로런츠 부스트. 극한에서는 갈릴레이 변환식 \(x'=x-vt\)과 \(t'=t\)가 남는다.}
+\lectureframe{01:29:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{위 지표 벡터와 아래 지표 벡터는 부호만 바뀌어 다르게 변환하나요?}
+\lecturerresponse{여기서 사용하는 고정된 데카르트 계량에서는 이미 알려진 벡터의 지표를 내릴 때 시간 성분의 부호만 바뀐다. 그러나 이들의 로런츠 변환 법칙은 단순히 임의로 정한 부호 규약이 아니라 서로 쌍대인 법칙이다. 계량이 한 법칙을 다른 법칙으로 변환해 준다. \lecturetimestamp{01:31:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{좌표의 일반적인 함수는 무엇이든 스칼라인가요?}
+\lecturerresponse{아니다. 각 좌표점에 숫자 하나가 대응한다는 것만으로는 충분하지 않다. 그 숫자는 모든 좌표계에서 같은 사건에 대해 같은 물리적 값을 나타내야 한다. 에너지 밀도는 반례다. 상자를 부스트하면 측정되는 에너지와 부피가 모두 바뀌므로 관측자들은 같은 밀도값을 얻지 않는다. \lecturetimestamp{01:33:23}}
+\end{classroomqa}
+
+사속도의 한 성분도 또 다른 예다. 사속도 전체는 벡터지만, 시간 성분은 부스트에 따라 달라지므로 그 자체는 스칼라가 아니다.
+
+\section{클라인--고든 장}
+
+\subsection{조화진동자의 장 아날로그}
+
+스칼라장 밀도로 돌아가 가장 간단한 이차 퍼텐셜을 더하자. \begin{equation}
+\boxed{
+\mathcal L
+=
+\frac12
+\left[
+(\partial_t\phi)^2
+-|\boldsymbol{\nabla}\phi|^2
+-\mu^2\phi^2
+\right]
+}.
+\label{eq:sr5-kg-density}
+\end{equation} 이는 장론에서 다음 식에 해당한다. \begin{equation}
+L_{\mathrm{osc}}
+=
+\frac12\dot q^2-\frac12\mu^2q^2.
+\end{equation} 각 공간점은 국소적으로 진동자처럼 작용하고, 기울기 항은 이웃한 점들을 결합한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_23.png}
+\caption{이차 스칼라장 밀도와 그에 해당하는 조화진동자 모형.}
+\lectureframe{01:38:20}
+\end{figure}
+
+장에 대한 오일러--라그랑주 방정식은 다음과 같다. \begin{equation}
+\partial_\mu
+\left[
+\frac{\partial\mathcal L}
+{\partial(\partial_\mu\phi)}
+\right]
+-
+\frac{\partial\mathcal L}{\partial\phi}
+=0.
+\label{eq:sr5-field-el}
+\end{equation} 이를 \eqref{eq:sr5-kg-density}에 적용하면, \begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi+\mu^2\phi=0
+}.
+\label{eq:sr5-kg}
+\end{equation}를 얻는다. 이것이 클라인--고든 방정식이다. 시간 성분의 부호가 음수인 규약과 \(\Box=\partial_\mu\partial^\mu=-\partial_t^2+\nabla^2\)를 사용하면 같은 방정식은 \((\Box-\mu^2)\phi=0\)이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_24.png}
+\caption{이 밀도에서 유도되는 클라인--고든 방정식.}
+\lectureframe{01:40:00}
+\end{figure}
+
+역사적으로 이 방정식은 처음에 상대론적 단입자 파동 방정식으로 연구되었다. 특히 양의 확률 밀도를 얻는 데 어려움이 있어 그 해석에는 문제가 생겼다. 오늘날 적절한 틀은 상대론적 장론이다. 이 틀에서 방정식은 자유 스칼라장과 상호작용하는 스칼라장의 자유 한계를 기술한다.
+
+\subsection{평면파 모드}
+
+\eqref{eq:sr5-kg}는 계수가 상수인 선형 방정식이므로 평면파 해를 다음과 같이 가정하자. \begin{equation}
+\phi(x)
+=
+\exp\!\left[
+-i\omega t+i\mathbf{k}\cdot\mathbf{x}
+\right].
+\label{eq:sr5-plane-wave}
+\end{equation} \begin{equation}
+k_\mu=(-\omega,k_x,k_y,k_z),
+\end{equation}이면 지수부는 \(ik_\mu x^\mu\)이다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_25.png}
+\caption{성분으로 쓴 평면파 가정과 \(e^{ik_\mu x^\mu}\)로 나타낸 형태.}
+\lectureframe{01:44:00}
+\end{figure}
+
+미분하면 다음과 같다. \begin{equation}
+\partial_t^2\phi=-\omega^2\phi,
+\qquad
+\nabla^2\phi=-|\mathbf{k}|^2\phi.
+\end{equation} 이를 \eqref{eq:sr5-kg}에 대입하면 다음을 얻는다. \begin{equation}
+\left(
+-\omega^2+|\mathbf{k}|^2+\mu^2
+\right)\phi=0.
+\end{equation} 따라서 영이 아닌 모드가 존재하려면 다음 조건을 만족해야 한다. \begin{equation}
+\boxed{
+\omega^2=|\mathbf{k}|^2+\mu^2
+},
+\qquad
+\omega=\pm\sqrt{|\mathbf{k}|^2+\mu^2}.
+\label{eq:sr5-dispersion}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_26.png}
+\caption{평면파를 대입한 결과로 얻는 상대론적 분산 관계.}
+\lectureframe{01:47:00}
+\end{figure}
+
+자연 단위계에서 \(\mu\)는 질량에 해당한다. 양자 들뜸에 대해 상수를 복원하면, \begin{equation}
+E=\hbar\omega,
+\qquad
+\mathbf{p}=\hbar\mathbf{k},
+\qquad
+\mu=\frac{mc}{\hbar},
+\end{equation}는 \eqref{eq:sr5-dispersion}을 다음 식으로 바꾼다. \begin{equation}
+E^2=p^2c^2+m^2c^4.
+\end{equation} 양의 진동수 가지와 음의 진동수 가지는 모두 고전적 해 공간에 속한다. 일반해는 이 모드들을 중첩해 얻는다.
+
+\begin{classroomqa}
+\audiencequestion{클라인--고든 방정식은 어디에서 나왔나요?}
+\lecturerresponse{이차 로런츠 스칼라 밀도에 장에 대한 오일러--라그랑주 방정식을 적용하면 바로 얻어진다. 간단한 이차 밀도가 선형 장 방정식을 만들기 때문에 이 예를 택했다. \lecturetimestamp{01:47:59}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{자연계에서 클라인--고든 방정식을 따르는 것은 무엇인가요?}
+\lecturerresponse{자유 고전 스칼라장이 그렇다. 힉스장 요동은 스칼라이므로 자유 근사에서는 클라인--고든 형태를 따른다. 다만 실제 힉스장에는 상호작용과 게이지 결합도 있다. \lecturetimestamp{01:50:41}}
+\end{classroomqa}
+
+\section{질량 편이로서의 스칼라 배경장}
+
+이제 입자 작용을 다시 살펴보자.
+\begin{equation}
+S_{\mathrm p}
+=
+-\int d\tau\,
+\bigl[m+g\phi(x)\bigr].
+\label{eq:sr5-final-particle-action}
+\end{equation}
+\(\phi\)가 일정한 배경값 \(\phi_0\)를 가지면, 입자는 질량이 다음과 같은 것처럼 운동한다.
+\begin{equation}
+\boxed{
+m_{\mathrm{eff}}=m+g\phi_0
+}.
+\label{eq:sr5-effective-mass}
+\end{equation}
+기본 항 \(m\)이 사라지면, 스칼라 배경이 고유시간에 곱해지는 계수 전체를 제공할 수 있다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_27.png}
+\caption{장에 의존하는 입자 작용 위에, 간결한 장 오일러--라그랑주 방정식을 함께 제시해 강의의 두 주제를 연결한다.}
+\lectureframe{01:51:30}
+\end{figure}
+
+이는 힉스 질량 생성을 의도적으로 단순화한 모형이다. 표준 모형에서 페르미온의 질량은 힉스 진공 기댓값과의 유카와 결합에서 생기며, 개략적으로 \(m_f\propto y_f v\)와 같이 나타난다. 한편 \(W\)와 \(Z\)의 질량은 게이지 공변 힉스 운동항에서 생긴다. 이 장난감 모형의 세계선 결합은 핵심 발상을 담고 있다--영이 아닌 스칼라 배경이 관성 질량을 바꾼다는 점을--완전한 전약 이론을 재현하지는 않으면서 말이다. 앞서 확립한 상호성은 여전히 성립한다. 같은 상호작용을 장에 대해 변분하면 입자가 장의 원천이 된다. 장은 입자에 작용하고, 입자도 장에 반작용한다.
+
+\subsection{복소 지수 함수가 유용한 이유}
+
+장이 물리적으로 복소수일 필요는 없다. 오일러 공식에 따르면
+\begin{equation}
+e^{i(\omega t-\mathbf{k}\cdot\mathbf{x})}
+=
+\cos(\omega t-\mathbf{k}\cdot\mathbf{x})
++i\sin(\omega t-\mathbf{k}\cdot\mathbf{x}).
+\end{equation}
+방정식이 실수 계수를 갖는 선형 방정식이므로 실수부와 허수부는 각각 실수해다. 두 해는 위상이 한 주기의 사분의 일만큼 어긋난 파동이며, 이들의 임의의 실수 선형 결합도 다시 해가 된다.
+
+\begin{classroomqa}\audiencequestion{실수부를 취하면 허수부는 어떻게 해서 0이 되는 건가요?}\lecturerresponse{아닙니다. 복소 지수 함수는 코사인과 사인이라는 서로 독립적인 두 실수해를 하나로 나타냅니다. 어느 한쪽만 취해도 되고, 실수 선형결합을 만들어도 됩니다. 미분이 곱셈으로 바뀌기 때문에 지수 함수를 사용하는 것입니다. \lecturetimestamp{01:53:29}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_28.png}\caption{위상이 어긋난 두 실수 파동인 코사인과 사인으로 분해한 복소 평면파.}\lectureframe{01:56:00}\end{figure}
+
+\begin{classroomqa}\audiencequestion{초전도체에서 전자기장이 질량을 얻는 것도 같은 종류의 현상인가요?}\lecturerresponse{밀접하게 관련되어 있습니다. 초전도체에서는 응축체가 매질 안에서 전자기장에 유효 질량을 부여하고, 그 결과 마이스너 효과가 나타납니다. 이를 완전히 설명하려면 전자기장을 다루어야 하므로 여기서는 뒤로 미룹니다. \lecturetimestamp{01:56:14}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{힉스 메커니즘을 힉스 입자가 공간을 날아다니며 질량을 나눠 주는 것으로 그려도 되나요?}\lecturerresponse{아닙니다. 여기서 중요한 것은 힉스장의 배경값이지, 개별 힉스 입자들이 흘러가는 것이 아닙니다. 이 장난감 작용에서는 배경이 입자의 질량 역할을 하는 계수를 바꿀 뿐입니다. \lecturetimestamp{01:57:31}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{같은 스칼라 배경과 결합하더라도 결합 상수가 다르면 질량도 달라질 수 있나요?}\lecturerresponse{그렇습니다. 변화량은 결합 상수 \(g\)에 비례합니다. 표준 모형에서 서로 다른 페르미온이 같은 힉스 배경으로부터 서로 다른 질량을 얻는 이유가 바로 유카와 결합 상수가 서로 다르기 때문입니다. \lecturetimestamp{01:58:04}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(\phi\) 자체가 질량항인가요?}\lecturerresponse{이 장난감 모형에서 \(g\phi_0\)는 역학적으로 모든 면에서 질량 계수에 더해지는 항으로 기능합니다. 결합 상수와 배경값을 모두 고려해야 합니다. \lecturetimestamp{01:58:42}}\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{힉스 배경이 사라지면 모든 입자가 질량이 없어질까요?}
+\lecturerresponse{아닙니다. 전자, 쿼크, 약한 게이지 보손은 보통의 전약 질량 기여분을 잃게 됩니다. 중성미자의 경우에는 중성미자에 질량을 부여하는 메커니즘에 따라 세부 사항이 달라집니다. 배경값이 사라진다고 해서 스칼라 부문 자체도 반드시 질량이 없어지는 것은 아닙니다. 양성자와 중성자 질량의 대부분은 대신 QCD의 결합과 가둠에서 비롯되므로 힉스 장이 직접 만들어 내는 것이 아닙니다. \lecturetimestamp{01:58:51}}\end{classroomqa}
+
+그럼에도 원자에 미치는 결과는 극적이다. 보어 길이 척도는 자연 단위계에서 다음과 같이 주어진다.
+\begin{equation}
+a_0\sim\frac{1}{\alpha m_e}
+\end{equation}
+전자 질량을 0에 가까이 보내면 통상적인 원자 길이 척도는 무한히 커지며, 보통의 국소화된 원자는 더는 존재할 수 없게 된다. 양성자와 중성자는 질량의 대부분이 동역학적인 양자 색역학 에너지에서 비롯되므로 직접적인 영향은 훨씬 작다.
+
+이제 여러 요소가 하나의 연속된 논증을 이룬다. 로런츠 기하가 관측되는 파장을 좌우한다. 하나의 작용에 있는 혼합항 하나가 두 동역학계가 서로 영향을 주게 한다. 스칼라장은 입자의 퍼텐셜인 동시에 그 입자가 원천이 되는 장이 된다. 계량과 지표 표기법은 로런츠 불변성을 드러내며, 가장 단순한 이차 불변 밀도는 클라인--고든 파동을 낳는다. 마지막으로 일정한 스칼라 배경은 같은 결합을 질량 변화로 바꾼다. 처음부터 끝까지 이어지는 방법은 다음과 같다. 불변 작용을 세우고, 모든 동역학적 대상을 변분한 다음, 그 결과로 얻은 방정식에서 상호작용의 물리를 읽어 낸다.

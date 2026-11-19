@@ -1,0 +1,775 @@
+\chapter{게이지 불변성과 벡터 퍼텐셜의 필요성}
+
+물리학을 시작하기 전에 실무적인 사항 두 가지를 말씀드리겠습니다. 강의자가 벨기에에 있는 동안 다음 모임은 쉬지만, 강의는 열 번을 모두 마칠 때까지 계속됩니다. 오늘 저녁 강의의 필기 노트도 촉박하게 준비했습니다. 수업 웹사이트에 올릴 수 있도록 누군가 스캔해 준다면, 유난히 느린 스캐너에서 노트를 구해 주는 셈입니다.
+
+지난 강의는 수학적으로 내용이 빽빽했습니다. 그렇지 않은 척하기보다 핵심 계산을 다시 살펴보겠습니다. 이 강좌의 목표는 다음 단계로 나아가는 데 필요한 구조를 갖춘 진정한 이론적 최소 내용을 다루는 것입니다. 물리학을 잃지 않고 수학을 덜어낼 수 있다면 그렇게 할 이유는 충분합니다. 그러나 정확한 법칙에는 정량적 진술이 필요하고, 정량적 진술에는 수학이 필요합니다. 표기법이 난해해질 수 있지만, 물리학자들이 사제들의 언어로 주제를 숨기려 한다는 뜻은 아닙니다.
+
+자연을 더 간명하게 정식화하는 방법이 아직 발견되지 않았을 수도 있다. 파인먼이 농담했듯이, 물리학의 모든 방정식을 제곱해 그 값을 모두 더한 다음 합을 영으로 두면 된다. 그러면 각 제곱이 0이어야 하므로 방정식 하나가 나오지만, 새로운 이해를 얻지는 못한다. 단순함이란 표기를 압축하는 데 그치지 않고 체계를 조직하는 발상을 찾아내는 것이다. 청중 가운데 누군가 그런 발상은 젊은 사람에게서 나와야 한다는 말에 이의를 제기하자, 그 지적은 기꺼이 받아들여진다. 통찰에는 나이가 중요하지 않다.
+
+\lectureoverview{먼저 로런츠 스칼라를 알아보는 데 필요한 지표 표기법을 되짚겠습니다. 그런 다음 상대론적 이론을 위한 네 가지 원리를 정식화하고, 전하를 띤 입자의 유도를 처음부터 다시 살펴본 뒤, 작용의 끝점 항과 전자기장 텐서의 불변성이라는 두 방식으로 게이지 불변성을 발견하겠습니다.}
+
+\section{지표 표기법 다시 보기}
+
+\subsection{일부 지표를 위 첨자로 쓰는 이유}
+
+다음과 같이 두겠습니다.
+\begin{equation}
+x^\mu=(t,x,y,z),
+\qquad
+\mu=0,1,2,3,
+\end{equation}
+계량은 다음과 같습니다.
+\begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr7-metric}
+\end{equation}
+좌표와 좌표 변위에는 위 첨자를 붙입니다.
+\begin{equation}
+dx^\mu=(dt,dx,dy,dz).
+\end{equation}
+이 좌표에 대한 미분에는 아래 첨자를 붙입니다.
+\begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\label{eq:sr7-gradient}
+\end{equation}
+어느 계열을 위 첨자, 어느 계열을 아래 첨자라고 부를지는 왼쪽과 오른쪽이라는 이름처럼 관례에 따릅니다. 그러나 일단 관례를 정하면 두 계열의 변환 법칙이 서로 다르므로 일관되게 따라야 합니다.
+
+\begin{classroomqa}\audiencequestion{지표를 언제 위 첨자로 쓰고 언제 아래 첨자로 써야 하나요?}\lecturerresponse{좌표와 변위, 그리고 이들과 같은 방식으로 변환하는 대상에는 위 첨자를 붙입니다. 미분과 미분처럼 변환하는 대상에는 아래 첨자를 붙입니다. 어느 계열을 위 첨자라고 부를지는 관례에 따르지만, 두 변환 법칙의 차이는 관례가 아닙니다. \lecturetimestamp{00:05:03}}\end{classroomqa}
+
+스칼라 함수 \(s(x)\)의 전미분은 다음과 같습니다.
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu s\,dx^\mu.
+\label{eq:sr7-total-differential}
+\end{equation}
+풀어 쓰면 다음과 같습니다.
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial t}\,dt
++\frac{\partial s}{\partial x}\,dx
++\frac{\partial s}{\partial y}\,dy
++\frac{\partial s}{\partial z}\,dz.
+\end{equation}
+간결한 표현은 풀어 쓴 식과 정확히 같은 뜻입니다. 새로운 법칙이 아니라, 매번 네 항을 모두 끌고 다니지 않고도 스칼라 구조를 알아볼 수 있게 해 주는 표기법입니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_01.png}\caption{아래 첨자 그래디언트와 위 첨자 변위를 조합해 만든 스칼라 미분.}\lectureframe{00:08:20}\end{figure}
+
+아인슈타인 합산 규약은 이제 자명합니다. 위 첨자와 아래 첨자에 각각 한 번씩 반복되는 지표에 대해 합합니다. 따라서 \eqref{eq:sr7-total-differential}의 축약은 스칼라입니다. 벡터와 쌍대벡터에 대한 더 깊은 기하학적 해석이 있지만, 그 논의는 일반상대성이론에서 다루겠습니다.
+
+\subsection{지표 올리기}
+
+모든 4-벡터는 계량으로 연결되는 위 첨자형과 아래 첨자형을 가집니다.
+\begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\end{equation}
+\eqref{eq:sr7-metric}을 사용하면,
+\begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m,
+\qquad m=1,2,3.
+\label{eq:sr7-lowering}
+\end{equation}
+따라서 지표를 올리거나 내리면 시간 성분의 부호가 바뀌고 공간 성분은 바뀌지 않습니다. 미분 연산자에도 같은 규칙이 적용됩니다.
+\begin{equation}
+\begin{aligned}
+\partial_\mu
+&=
+\left(
+\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right),\\[0.5em]
+\partial^\mu
+&=
+\left(
+-\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right).
+\end{aligned}
+\label{eq:sr7-raised-gradient}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_02.png}\caption{아래 첨자형과 위 첨자형 미분 연산자. 시간 성분의 부호만 바뀐다.}\lectureframe{00:12:30}\end{figure}
+
+\begin{classroomqa}\audiencequestion{편미분에는 항상 아래 첨자를 붙이나요? 위 첨자로 올릴 수도 있나요?}\lecturerresponse{연산자 \(\partial/\partial x^\mu\)는 자연스럽게 \(\partial_\mu\), 즉 공변 벡터로 표현됩니다. 계량을 적용하면 \(\partial^\mu=\eta^{\mu\nu}\partial_\nu\)을 얻습니다. 평탄한 시공간에서는 시간 성분의 부호만 바뀝니다. \lecturetimestamp{00:11:00}}\end{classroomqa}
+
+불변 간격은 익숙한 예입니다.
+\begin{equation}
+x_\mu x^\mu
+=
+x^2+y^2+z^2-t^2.
+\label{eq:sr7-interval}
+\end{equation}
+위 첨자 하나와 아래 첨자 하나를 축약하면 로런츠 스칼라가 됩니다. 표기법을 세심하게 다루는 이유는 이 간단한 식별 규칙 때문입니다.
+
+\section{이론을 세우는 네 가지 원리}
+
+실험에서 새로운 현상이 발견되어 그 이론을 정식화하려 한다고 합시다. 네 가지 원리가 탐색의 틀을 제공합니다. 나중에 다듬어야 할 수도 있지만, 현재까지 성공한 모든 근본 이론은 이 틀에 들어맞습니다.
+
+\subsection{작용 원리}
+
+첫 번째 요구 조건은 작용입니다. 입자 역학에서는
+\begin{equation}
+I[x]
+=
+\int dt\,L(x,\dot x),
+\label{eq:sr7-particle-action-general}
+\end{equation}
+끝점을 고정한 변분에 대해 물리적 경로가 정지값을 가집니다.
+\begin{equation}
+\delta I=0.
+\end{equation}
+그 결과 방정식은 다음과 같습니다.
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr7-EL}
+\end{equation}
+
+작용 원리는 미적 장식이 아닙니다. 대칭과 보존 법칙을 연결하는 틀입니다. 작용의 시간 병진 대칭은 에너지 보존을, 공간 병진 대칭은 운동량 보존을 낳으며, 다른 보존량들도 관련 대칭에서 비롯됩니다. 작용 자체가 보존 법칙인 것은 아니지만, 대칭이 보존 법칙으로 이어지게 하는 구조입니다.
+
+\subsection{국소성}
+
+두 번째 요구 조건은 국소성입니다. 바이올린 현의 한 지점을 건드리면 먼저 인접한 부분이 반응합니다. 그 옆 부분이 다음에 반응하면서 교란이 전파됩니다. 결국 현 전체에 영향이 미칠 수 있지만, 짧은 시간 동안의 직접적인 영향은 국소적입니다.
+
+입자의 경우 국소성은 궤적을 따라 평가되는 라그랑지안으로 표현됩니다. 라그랑지안은 같은 시각의 위치와 속도에 의존하며, 임의로 멀리 떨어진 두 시각의 값에는 의존하지 않습니다. 장 \(\phi(x)\)에 대해서는 다음과 같습니다.
+\begin{equation}
+I[\phi]
+=
+\int d^4x\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr7-local-field-action}
+\end{equation}
+한 사건에서의 밀도는 그 지점의 장과 1계 미분에 의존합니다. 이곳의 장과 아무 관계 없이 멀리 떨어진 지점의 장을 직접 곱한 항은 들어 있지 않습니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_03.png}\caption{국소성 원리 아래 제시한 입자 작용과 장 작용.}\lectureframe{00:19:30}\end{figure}
+
+이 때문에 운동 방정식은 국소 미분 방정식입니다. 미분은 무한소로 가까운 값들을 비교합니다. 국소적이지 않은 대안으로는 현재의 가속도를 전혀 다른 시각의 힘과 연결하거나, 멀리 떨어진 두 시각의 속도를 세 번째 시각의 힘과 연결하는 법칙을 생각할 수 있습니다. 이런 법칙도 수학적으로는 상상할 수 있지만 국소성 원리에 어긋납니다.
+
+\begin{classroomqa}\audiencequestion{양자 얽힘은 이 국소성 원리와 모순되나요?}\lecturerresponse{여기서 말하는 동역학적 의미에서는 그렇지 않습니다. 얽힘은 상관관계를 만들지만, 앨리스가 국소적으로 가한 조작으로 밥의 축약 상태를 바꾸거나 제어 가능한 신호를 순간적으로 보낼 수는 없습니다. 동전 비유는 이 차이를 잘 보여 줍니다. 한 동전을 보면 상대방이 가진 상관된 동전이 무엇인지 알 수 있지만, 멀리 있는 동전에 작용하는 것은 아닙니다. 양자 상관관계는 이 고전적 비유보다 더 풍부하지만, 여전히 초광속 신호 전달을 가능하게 하지는 않습니다. \lecturetimestamp{00:20:02}}\end{classroomqa}
+
+\subsection{로런츠 불변성}
+
+세 번째 요구 조건은 모든 관성계에서 법칙의 형태가 같아야 한다는 것입니다. 실용적인 구성 원리는 간단합니다. 라그랑지안이 로런츠 스칼라여야 하며, 따라서 작용이 불변이어야 합니다. 위--아래 첨자 축약인 \(\partial_\mu\phi\,\partial^\mu\phi\) 등이 기본 구성 요소입니다.
+
+일반상대성이론에서는 이 진술이 확장됩니다. 적분함수는 스칼라 밀도이며, 불변성은 로런츠 변환에서 임의의 좌표 변환으로 확장됩니다. 이러한 정교화는 현재 원리를 대체하는 것이 아니라, 곡률 시공간에서의 형태입니다.
+
+\begin{classroomqa}\audiencequestion{로런츠 불변성은 특수상대성이론에만 적용되는 규칙인가요, 아니면 정말 일반적인 원리인가요?}\lecturerresponse{평탄한 시공간의 비중력 문제에서는 로런츠 불변성이 올바른 진술입니다. 곡률 시공간에서는 스칼라 라그랑지안을 적절한 스칼라 밀도로 바꾸고, 임의의 좌표 변환에 대한 불변성을 요구합니다. 이 정교화를 제외하면 같은 구성 철학이 유지됩니다. \lecturetimestamp{00:24:16}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{입자 라그랑지안과 장 라그랑지안 밀도의 차원은 어떻게 되나요?}\lecturerresponse{입자 라그랑지안의 차원은 에너지입니다. \(I=\int dt\,d^3x\,\mathcal L\)에서 공간 적분 요소가 부피를 제공하므로 \(\mathcal L\)의 차원은 단위 부피당 에너지입니다. 이를 공간에 대해 적분하면 에너지 차원의 보통 라그랑지안을 얻습니다. \lecturetimestamp{00:25:49}}\end{classroomqa}
+
+\subsection{게이지 불변성}
+
+네 번째 요구 조건은 게이지 불변성입니다. 여기서는 일부러 그 의미를 아직 분명히 밝히지 않겠습니다. 청중 한 사람이 유용한 예상을 내놓습니다. 물리를 바꾸지 않고 라그랑지안에 어떤 항들을 더할 수 있는 것 아닐까요? 핵심에 가까운 말이지만, ‘어떤’이라는 단어가 거의 모든 일을 하게 됩니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_04.png}\caption{칠판에 정리한 국소성, 스칼라 구성, 로런츠 불변성, 게이지 불변성.}\lectureframe{00:27:00}\end{figure}
+
+전하 입자 계산에 이미 게이지 불변성이 들어 있으므로 정의는 뒤로 미루겠습니다. 계산을 다시 살펴보는 것은 우회가 아닙니다. 벡터 퍼텐셜이 왜 필연적으로 도입되는지, 또 도입된 뒤 왜 중복성이 생기는지 보여 줄 것입니다.
+
+\section{벡터 퍼텐셜이 필요한 이유}
+
+느리게 움직이는 전하 입자에 대해 얻으려는 식은 익숙한 로런츠 힘 법칙입니다.
+\begin{equation}
+m\mathbf a
+=
+e\left(
+\mathbf E+\mathbf v\times\mathbf B
+\right).
+\label{eq:sr7-lorentz-target}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_05.png}\caption{벡터 퍼텐셜을 다시 도입하기 전에 적은 익숙한 힘 법칙.}\lectureframe{00:29:08.870}\end{figure}
+
+\eqref{eq:sr7-lorentz-target}에는 벡터 퍼텐셜이 나오지 않습니다. \(\mathbf E\)와 \(\mathbf B\)만으로 운동 방정식을 직접 쓸 수 있습니다. 더 근본적인 어려움은 구조에 있습니다. 강의에서 사용한 국소성과 로런츠 불변성의 가정 아래에서는 전하 입자와 장, 위치, 속도 사이의 상호작용을 이들만으로 직접 세계선 작용에 쓸 수 없습니다. 국소 스칼라 결합을 구성하려면 퍼텐셜 \(A_\mu\)이 필요합니다.
+
+\begin{classroomqa}\audiencequestion{\(\mathbf E\)와 \(\mathbf B\)만으로 힘 법칙을 쓸 수 있는데, 왜 \(A_\mu\)을 도입하나요?}\lecturerresponse{운동 방정식이 있다고 해서 작용 원리까지 주어진 것은 아니기 때문입니다. 이 강의에서 다루는 국소적이고 로런츠 불변인 틀 안에서 전하 입자의 작용을 구성하려면 4-퍼텐셜이 필요합니다. 장만으로 힘을 나타낼 수는 있지만, 힘을 스칼라 세계선 작용에서 유도할 수 있게 해 주는 것은 퍼텐셜입니다. \lecturetimestamp{00:29:06}}\end{classroomqa}
+
+\subsection{세계선 작용}
+
+후보 작용은 자유 항과 상호작용 항으로 이루어집니다.
+\begin{equation}
+I[x]
+=
+-m\int d\tau
+-e\int A_\mu(x)\,dx^\mu.
+\label{eq:sr7-worldline-action}
+\end{equation}
+첫째 항은 궤적의 미소 구간마다 고유시간 길이를 더합니다. 구성상 스칼라입니다. 둘째 항에서는 \(A_\mu(x)\)를 입자가 있는 사건에서 평가하고 변위 \(dx^\mu\)와 축약합니다. 이 증분도 스칼라이며 세계선을 따라 국소적입니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_06.png}\caption{전하 입자 작용의 두 항과 국소적인 축약 \(A_\mu(x)dx^\mu\).}\lectureframe{00:31:20}\end{figure}
+
+\subsection{보통 시간으로 작용 다시 쓰기}
+
+익숙한 오일러--라그랑주 방정식을 쓰려면 세계선의 각 증분을 \(dt\)으로 나눕니다.
+\begin{equation}
+\frac{d\tau}{dt}
+=
+\sqrt{1-\dot{\mathbf x}^{\,2}},
+\qquad
+\dot{\mathbf x}^{\,2}
+=
+\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+\(dx^\mu/dt\)의 네 성분은 다음과 같습니다.
+\begin{equation}
+\frac{dx^\mu}{dt}
+=
+\left(1,\dot x,\dot y,\dot z\right).
+\end{equation}
+따라서,
+\begin{align}
+I
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_\mu\frac{dx^\mu}{dt}
+\right]
+\notag\\
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-e\left(A_0+A_m\dot x^m\right)
+\right].
+\label{eq:sr7-action-in-t}
+\end{align}
+보통 시간으로 나타낸 라그랑지안은 다음과 같습니다.
+\begin{equation}
+\begin{aligned}
+L(x,\dot x,t)
+&=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+\\
+&\quad -e\left[
+A_0(x,t)+A_m(x,t)\dot x^m
+\right].
+\end{aligned}
+\label{eq:sr7-lagrangian}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_07.png}\caption{보통 시간에 대한 적분으로 다시 쓴 세계선 작용과 그 피적분함수에서 읽어낸 라그랑지안.}\lectureframe{00:35:30}\end{figure}
+
+이 단계에서는 발상의 과정이 끝났습니다. 라그랑지안을 정하고 나면 나머지는 기계적인 계산입니다. 계산이 길고 지루할 수 있지만, 그 지루함이 헛된 것은 아닙니다. 바로 그 과정에서 전기적, 자기적, 상대론적 구조가 드러납니다. 강의자는 원리를 발견하는 일이 즐거운 부분이고, 그 결과를 모두 유도하는 일은 대학원생들에게 맡기는 일이라고 농담합니다.
+
+\begin{classroomqa}\audiencequestion{\(A_m\)이나 \(\dot x^m\)의 공간 지표는 이 계산에서 위아래로 올리거나 내릴 수 있나요?}\lecturerresponse{그렇습니다. 공간 계량은 항등행렬이므로 라틴 지표를 올리거나 내려도 성분 값은 바뀌지 않습니다. 부호에 주의해야 하는 지표는 시간 지표입니다. \lecturetimestamp{00:34:10}}\end{classroomqa}
+
+\section{오일러--라그랑주 계산}
+
+\subsection{정준 운동량과 현장에서 바로잡은 식}
+
+공간 성분 \(x^m\) 하나를 택합니다. \eqref{eq:sr7-lagrangian}의 자유 항을 미분하면 다음을 얻습니다.
+\begin{equation}
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+=
+m u_m,
+\qquad
+u^\mu\equiv\frac{dx^\mu}{d\tau}.
+\end{equation}
+칠판에 처음 적은 계산은 여기서 멈춥니다. 청중이 누락을 지적하며 바로잡습니다. 상호작용 항도 \(\dot x^m\)에 의존합니다. 전체 미분은 다음과 같습니다.
+\begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+=
+m u_m-eA_m.
+\label{eq:sr7-canonical-momentum}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{\(\partial L/\partial\dot x^m\)의 첫 번째 식에는 전자기 항의 기여가 빠져 있나요?}\lecturerresponse{그렇습니다. \(-eA_n\dot x^n\)를 \(\dot x^m\)에 대해 미분하면 \(-eA_m\)이 기여합니다. 따라서 올바른 정준 운동량은 기계적 운동량만이 아니라 \(m u_m-eA_m\)입니다.
+\lecturetimestamp{00:37:24}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_08.png}\caption{기계적 항과 퍼텐셜 항을 모두 포함한 수정된 정준 운동량.}\lectureframe{00:38:30}\end{figure}
+
+\subsection{움직이는 경로를 따라 미분하기}
+
+오일러--라그랑주 방정식의 좌변은 다음과 같습니다.
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+m\frac{du_m}{dt}
+-e\frac{dA_m(x(t),t)}{dt}.
+\end{equation}
+퍼텐셜이 변하는 이유는 두 가지입니다. 시간에 명시적으로 의존할 수 있고, 입자가 퍼텐셜의 공간적 변화 속을 움직일 수도 있습니다. 연쇄 법칙을 쓰면 다음과 같습니다.
+\begin{equation}
+\frac{dA_m}{dt}
+=
+\partial_0A_m
++\dot x^n\partial_nA_m.
+\label{eq:sr7-chain-rule}
+\end{equation}
+풀어 쓰면 둘째 항은 다음을 뜻합니다.
+\begin{equation}
+\dot x\,\frac{\partial A_m}{\partial x}
++\dot y\,\frac{\partial A_m}{\partial y}
++\dot z\,\frac{\partial A_m}{\partial z}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_09.png}\caption{\(A_m\)의 시간 미분에 들어 있는 명시적 변화 항과 대류 항.}\lectureframe{00:42:10}\end{figure}
+
+우변은 다음과 같습니다.
+\begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\partial_mA_0
+-e\dot x^n\partial_mA_n.
+\label{eq:sr7-spatial-derivative-L}
+\end{equation}
+자유 항은 위치에 명시적으로 의존하지 않습니다. \eqref{eq:sr7-spatial-derivative-L}에서 \(m\)는 방정식 하나를 선택하는 자유 지표이고, \(n\)는 합산되는 반복 더미 지표입니다. 더미 지표의 이름을 바꾸어도 결과는 같습니다. 이 구분을 확인하느라 강의자는 항들을 합치기 전에 지표 문자에 잠시 주의를 기울입니다.
+
+양변을 같게 놓고 정리하면 다음과 같습니다.
+\begin{equation}
+m\frac{du_m}{dt}
+=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)
++e\dot x^n
+\left(
+\partial_nA_m-\partial_mA_n
+\right).
+\label{eq:sr7-grouped-force}
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_10.png}\caption{속도와 무관한 괄호 항과 속도에 선형인 반대칭 괄호 항으로 나눈 힘.}\lectureframe{00:49:30}\end{figure}
+
+\subsection{전기장과 자기장 알아보기}
+
+첫째 괄호에는 입자 속도가 들어 있지 않습니다. 이 작용에서 사용한 관례에 따라 다음과 같이 정의합니다.
+\begin{equation}
+E_m
+\equiv
+\partial_0A_m-\partial_mA_0.
+\label{eq:sr7-E-from-A}
+\end{equation}
+이 항은 전기장과 정확히 같은 작용을 합니다. 둘째 괄호는 공간 지표에 대해 반대칭입니다.
+\begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n.
+\label{eq:sr7-C}
+\end{equation}
+독립 성분 세 개는 공간 퍼텐셜의 컬이며, 강의에서 사용한 방향 관례에 따라 다음과 같이 됩니다.
+\begin{equation}
+\dot x^n C_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\label{eq:sr7-magnetic-identification}
+\end{equation}
+구체적인 성분 확인은 칠판에서 연습 문제로 남겨 둡니다. 구조적 대응은 이미 분명합니다. 벡터의 반대칭 공간 미분에는 성분이 세 개 있으며, 이는 \(\mathbf B\)가 가지는 성분 수와 정확히 같고 속도에 곱해집니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_11.png}\caption{로런츠 힘의 전기적 부분과 자기적 부분으로 식별한 두 미분 괄호 항.}\lectureframe{00:52:00}\end{figure}
+
+따라서 식 \eqref{eq:sr7-grouped-force}은 벡터 퍼텐셜 작용에서 로런츠 힘을 다시 얻었습니다. 더 중요한 결과도 있습니다. 나중에 장 텐서가 될 반대칭 미분을 드러냈습니다.
+
+\section{보통 시간에서 4-벡터 방정식으로}
+
+\subsection{고유시간으로 변환하기}
+
+\eqref{eq:sr7-grouped-force}의 좌변은 뉴턴 역학의 가속도 \(d\mathbf v/dt\)가 아닙니다. 4-속도 성분을 보통 시간에 대해 미분한 것입니다.
+\begin{equation}
+\frac{du^m}{dt}
+=
+\frac{du^m}{d\tau}\frac{d\tau}{dt}.
+\end{equation}
+방정식에 \(dt/d\tau\)을 곱합니다. 그러면
+\begin{equation}
+\dot x^n\frac{dt}{d\tau}
+=
+\frac{dx^n}{dt}\frac{dt}{d\tau}
+=
+u^n,
+\qquad
+\frac{dt}{d\tau}=u^0.
+\end{equation}
+공간 방정식은 다음과 같습니다.
+\begin{align}
+m\frac{du^m}{d\tau}
+&=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)u^0
+\notag\\
+&\quad
++e\left(
+\partial_nA_m-\partial_mA_n
+\right)u^n.
+\label{eq:sr7-proper-spatial}
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_12.png}\caption{인자 \(dt/d\tau\)는 보통 속도를 4-속도 성분으로 바꾸어 준다.}\lectureframe{00:56:30}\end{figure}
+
+좌변은 고유 가속도입니다.
+\begin{equation}
+\frac{du^\mu}{d\tau}
+=
+\frac{d^2x^\mu}{d\tau^2}.
+\end{equation}
+이는 4-벡터입니다. 따라서 우변도 계수 2 텐서가 \(u^\nu\)에 작용하는 형태로 구성되어야 합니다.
+
+\subsection{장 텐서와 힘 법칙}
+
+다음 관례를 택합니다.
+\begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\label{eq:sr7-F-definition}
+\end{equation}
+이 텐서는 반대칭입니다.
+\begin{equation}
+F_{\mu\nu}=-F_{\nu\mu}.
+\end{equation}
+\eqref{eq:sr7-worldline-action}에서 상호작용 항에 사용한 부호를 적용하면 간결한 방정식은 다음과 같습니다.
+\begin{equation}
+\boxed{
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu
+}.
+\label{eq:sr7-covariant-force}
+\end{equation}
+이를 \(F_{\mu\nu}\)라는 이름을 붙이기 전의 형태로 쓰면 다음과 같습니다.
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+e\left(
+\partial_\nu A^\mu-\partial^\mu A_\nu
+\right)u^\nu.
+\end{equation}
+계량, 전하, 퍼텐셜의 관례에 따라 전체 부호는 다르게 배분됩니다. 불변인 내용은 퍼텐셜의 반대칭 미분과 그것을 4-속도와 축약하는 것입니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_13.png}\caption{4-속도에 작용하는 계수 2 장 텐서로 표현한 고유시간 방정식.}\lectureframe{00:58:25}\end{figure}
+
+\begin{classroomqa}\audiencequestion{유도 과정에서는 공간 방정식 세 개를 얻었습니다. 네 번째 방정식도 추가해도 되는 이유는 무엇인가요?}\lecturerresponse{스칼라 작용은 결과가 로런츠 공변적임을 보장합니다. 양변의 차이가 4-벡터임을 알아보면, 로런츠 변환은 그 공간 성분과 시간 성분을 서로 섞습니다. 4-벡터 방정식에 성분이 세 개뿐일 수는 없습니다. 공간 성분에 시간 성분도 함께 있어야 합니다. \lecturetimestamp{00:59:40}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\((1,2,3,4)\)처럼 숫자를 나열한 것 자체가 로런츠 불변인 4-벡터인가요?}\lecturerresponse{아닙니다. 그런 숫자들은 선택한 한 기준계에서 벡터의 성분일 수 있지만, 성분은 변환됩니다. 2차원에서도 성분이 \((1,2)\)인 벡터는 회전한 기준계에서 \((0,\sqrt5)\)로 나타낼 수 있습니다. 기하학적 벡터는 그대로 있지만, 수치로 된 성분 목록은 그렇지 않습니다. \lecturetimestamp{01:00:28}}\end{classroomqa}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_14.png}\caption{벡터와 같은 방향의 축으로 다시 표현한 2성분 벡터.}\lectureframe{01:02:00}\end{figure}
+
+\begin{classroomqa}\audiencequestion{목표가 보통 시간을 고유시간으로 바꾸는 것이었다면, 왜 \(\partial_0A_m=\partial A_m/\partial t\)가 여전히 나오나요?}\lecturerresponse{모든 \(t\) 기호를 없애려는 것이 목표는 아니었습니다. 동역학을 명백한 4-벡터 표기법으로 쓰려는 것이었습니다. 연산자 \(\partial_0\)는 공변 4-그래디언트의 시간 성분이며, \(\partial_m\)는 그 공간 성분입니다. 이 연산자는 4차원 텐서 안에 들어갑니다. \lecturetimestamp{01:05:10}}\end{classroomqa}
+
+강의자는 이 대목에서 국소성을 다시 설명합니다. 국소 방정식은 한 사건에서의 가속도를 같은 사건에서의 장 및 속도와 연결합니다. 현재의 가속도를 멀리 떨어진 시각의 힘과 연결하지는 않습니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_15.png}\caption{미분 방정식으로서의 동역학을 통해 국소성을 다시 설명하는 공변 힘 방정식.}\lectureframe{01:05:50}\end{figure}
+
+\subsection{전자기장 성분 표시하기}
+
+모든 지표를 위에 둔 텐서에 대해 칠판에서 사용한 관례는 다음과 같습니다.
+\begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_x&-E_y&-E_z\\
+E_x&0&B_z&-B_y\\
+E_y&-B_z&0&B_x\\
+E_z&B_y&-B_x&0
+\end{pmatrix}.
+\label{eq:sr7-F-matrix}
+\end{equation}
+행 지표는 \(\mu\)이고, 열 지표는 \(\nu\)입니다. 시간--공간 성분에는 전기장이 들어가고, 공간--공간 블록에는 자기장이 들어갑니다. 반대칭성 때문에 대각 성분은 0이며, 표시된 성분 16개는 서로 독립적인 성분 6개로 줄어듭니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_16.png}\caption{시간--공간 위치에 전기장 성분이, 공간 블록에 자기장 성분이 들어 있는 완성된 전자기장 텐서.}\lectureframe{01:12:10}\end{figure}
+
+\begin{classroomqa}\audiencequestion{텐서의 어느 지표가 행을, 어느 지표가 열을 나타내는지 정하는 표준 규칙이 있나요?}\lecturerresponse{표시 방식의 관례일 뿐입니다. 여기서는 첫째 지표 \(\mu\)를 세로 방향으로, 둘째 지표 \(\nu\)를 가로 방향으로 놓습니다. 이 관례를 밝히고 나면 모든 성분을 모호함 없이 읽을 수 있습니다. 시간 지표를 올리면 부호가 생기지만 행--열 관례는 바뀌지 않습니다. \lecturetimestamp{01:09:01}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{어떤 지표 배치에서 반대칭성이 유지되나요?}\lecturerresponse{텐서 \(F_{\mu\nu}\)와 \(F^{\mu\nu}\)는 반대칭입니다. 혼합 성분 배열 \(F^\mu{}_\nu\)는 보통의 행렬 전치에 대해 반대칭이 아닙니다. 시간 지표 하나를 올리면 전기장 성분의 부호가 바뀌어 시간--공간 쌍은 대칭이 되는 반면, 순수 공간 자기장 블록은 반대칭으로 남습니다. 강의자는 칠판에서 반대 경우를 잠시 검토했다가 기각한 뒤 이 결론에 이릅니다. \lecturetimestamp{01:13:18}}\end{classroomqa}
+
+\section{불변성이란 무엇인가?}
+
+이제야 네 번째 원리로 돌아가겠습니다. 불변성이란 운동 방정식을 바꾸지 않는 변환입니다. 작용 자체가 정확히 그대로일 수도 있고, 변분 방정식에 영향을 주지 않는 경계 항만큼 바뀔 수도 있습니다.
+
+\subsection{질량이 없는 스칼라장의 상수만큼의 이동}
+
+공간 차원이 하나인 질량 없는 스칼라 방정식을 생각해 보자.
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
+=0,
+\label{eq:sr7-wave}
+\end{equation}
+이 방정식은 다음 라그랑지언에서 얻어진다.
+\begin{equation}
+\mathcal L_0
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi.
+\label{eq:sr7-massless-L}
+\end{equation}
+\(\phi\)가 해라면 다음도 해다.
+\begin{equation}
+\phi\longrightarrow\phi+c,
+\label{eq:sr7-constant-shift}
+\end{equation}
+여기서 \(c\)은 상수다. \(c\)의 모든 도함수는 0이므로 방정식도 도함수만으로 이루어진 라그랑지언도 변하지 않는다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_17.png}\caption{질량 없는 파동 방정식, 그 미분 라그랑지안, 그리고 상수만큼의 이동 \(\phi\mapsto\phi+c\).}\lectureframe{01:17:10}\end{figure}
+
+이제 질량 항을 더해 봅시다.
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
++\mu^2\phi
+=0,
+\end{equation}
+\begin{equation}
+\mathcal L_\mu
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi
+-\frac{\mu^2}{2}\phi^2.
+\label{eq:sr7-massive-L}
+\end{equation}
+미분 항은 \(\phi\mapsto\phi+c\) 아래에서 그대로지만, \(\phi^2\)은 그렇지 않습니다. 두 이론 모두 타당하지만, 하나에는 이동 불변성이 있고 다른 하나에는 없습니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_18.png}\caption{상수만큼의 이동 불변성을 깨뜨리는 질량 항.}\lectureframe{01:18:50}\end{figure}
+
+\subsection{한 학생이 경계 항을 먼저 알아보다}
+
+청중 한 사람이 더 날카로운 검증을 제안한다.
+\begin{equation}
+\phi(x,t)\longrightarrow\phi(x,t)+x.
+\label{eq:sr7-linear-shift}
+\end{equation}
+\(x\)의 이계 도함수는 0이므로 질량 없는 파동 방정식은 여전히 성립한다. 작용은 좀 더 자세히 살펴보아야 한다. \(x\)와 \(t\)는 독립 변수이므로,
+\begin{equation}
+\frac{\partial x}{\partial t}=0,
+\qquad
+\frac{\partial x}{\partial x}=1.
+\end{equation}
+공간 방향 항은 다음과 같이 변한다.
+\begin{align}
+-\frac12
+\left[
+\partial_x(\phi+x)
+\right]^2
+&=
+-\frac12
+\left(
+\partial_x\phi+1
+\right)^2
+\notag\\
+&=
+-\frac12(\partial_x\phi)^2
+-\partial_x\phi
+-\frac12.
+\label{eq:sr7-linear-shift-L}
+\end{align}
+새로 생긴 항은 상수항과 전미분항이다. 상수항은 오일러--라그랑주 방정식을 바꾸지 않는다. \(\partial_x\phi\)를 적분하면 공간 경계에서의 값만 남으므로, 통상적인 고정 경계 조건 아래에서는 운동 방정식도 변하지 않는다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_19.png}\caption{제안된 이동 \(\phi\mapsto\phi+x\)과 상수 및 전미분 항을 드러내는 미분의 제곱.}\lectureframe{01:22:40}\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{라그랑지언 밀도는 변하는데도 \(\phi\mapsto\phi+x\)는 질량 없는 장 방정식을 보존하는가?}
+\lecturerresponse{그렇다. \(x\)의 이계 도함수는 0이므로 방정식은 변하지 않는다. 라그랑지언은 상수항과 공간 방향 전미분항만큼 변한다. 이 항들은 작용의 수치에 고정된 벌크 상수와 경계값을 더하지만, 고정 경계 조건 아래에서 오일러--라그랑주 방정식은 바꾸지 않는다. \lecturetimestamp{01:20:00}}
+\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(\partial x/\partial t\)는 왜 0인가요?}\lecturerresponse{\(x\)와 \(t\)는 장을 기술하는 독립 좌표이기 때문입니다. \(t\)에 대한 편미분은 \(x\)를 고정한 채 취합니다. \lecturetimestamp{01:22:22}}\end{classroomqa}
+
+학생은 전자기학에 필요한 도구를 알아냈습니다. 전미분은 작용의 표현을 바꿀 수 있지만, 작용의 정지 경로는 바꾸지 않습니다.
+
+\section{전하 입자의 게이지 불변성}
+
+\subsection{4-그래디언트 더하기}
+
+상호작용 항으로 돌아갑시다.
+\begin{equation}
+I_{\mathrm{int}}
+=
+-e\int A_\mu\,dx^\mu.
+\end{equation}
+충분히 매끄러운 임의의 스칼라를 \(\Lambda(x)\)라 하고, 퍼텐셜을 다음과 같이 바꿉니다.
+\begin{equation}
+A_\mu
+\longrightarrow
+A'_\mu
+=
+A_\mu+\partial_\mu\Lambda.
+\label{eq:sr7-gauge-transformation}
+\end{equation}
+그래디언트 \(\partial_\mu\Lambda\)는 \(A_\mu\)와 같은 공변 지표 구조를 가지므로 두 항의 합은 잘 정의됩니다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_20.png}\caption{세계선 결합과 변환 \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\).}\lectureframe{01:24:50}\end{figure}
+
+작용의 변화는
+\begin{align}
+\Delta I_{\mathrm{int}}
+&=
+-e\int \partial_\mu\Lambda\,dx^\mu
+\notag\\
+&=
+-e\int d\Lambda
+\notag\\
+&=
+-e\left[
+\Lambda(x_2)-\Lambda(x_1)
+\right].
+\label{eq:sr7-gauge-boundary}
+\end{align}
+무한소 세계선 구간마다
+\(\partial_\mu\Lambda\,dx^\mu\)는 정확히
+\(d\Lambda\)만큼의 증가량이다. 이 증가량들을 더하면 중간 항들이 상쇄되어 최종 끝점 값과 초기 끝점 값의 차이만 남는다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_21.png}
+\caption{경로를 따라 적분한 기울기 항은 양 끝점에서의 차이 \(\Lambda(x_2)-\Lambda(x_1)\)이다.}
+\lectureframe{01:28:10}
+\end{figure}
+
+변분 원리는 \(x_1\)과
+\(x_2\)를 고정한 채 서로 가까운 궤적들을 비교한다. 따라서 \eqref{eq:sr7-gauge-boundary}에 있는 추가 항은 허용되는 모든 변분에서 동일하다.
+\begin{equation}
+\delta\Delta I_{\mathrm{int}}=0.
+\end{equation}
+그러므로 정지 궤적은 바뀌지 않는다. 이것이 끝점에 관한 진술로서의 게이지 불변성이다.
+
+\begin{classroomqa}\audiencequestion{\(\Lambda\)는 임의의 스칼라 함수여도 되나요?}\lecturerresponse{네. 단, 도함수와 작용이 잘 정의되려면 필요한 매끄러움과 경계 조건을 만족해야 합니다. 매개변수가 하나의 전역 상수가 아니라 시공간의 임의의 함수이므로 이 변환은 국소적입니다. \lecturetimestamp{01:28:40}}\end{classroomqa}
+
+\(A_\mu\)에 그래디언트를 더하는 것을 게이지 변환이라고 한다. ‘게이지’라는 말은 역사적으로 물려받은 용어다. 강의에서는 이를 프랑스어처럼 발음하지 말라고 유머를 섞어 단호하게 경고한다. 이름보다 중요한 것은 변환의 작용이다.
+
+\subsection{장 텐서를 이용한 직접 증명}
+
+운동 방정식은 퍼텐셜 자체가 아니라 \(F_{\mu\nu}\)에 의존한다. \eqref{eq:sr7-gauge-transformation}에 따라,
+\begin{align}
+F'_{\mu\nu}
+&=
+\partial_\mu
+\left(
+A_\nu+\partial_\nu\Lambda
+\right)
+-
+\partial_\nu
+\left(
+A_\mu+\partial_\mu\Lambda
+\right)
+\notag\\
+&=
+F_{\mu\nu}
++
+\partial_\mu\partial_\nu\Lambda
+-
+\partial_\nu\partial_\mu\Lambda
+\notag\\
+&=
+F_{\mu\nu}.
+\label{eq:sr7-F-gauge-invariant}
+\end{align}
+통상적인 평탄 시공간에서 매끄러운 스칼라 함수의 편미분은 서로 교환된다. 따라서 추가된 두 항은 상쇄된다. 그러므로 장 텐서와 그 안에 포함된 전기장 및 자기장, 그리고 힘의 법칙은 모두 게이지 불변이다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_22.png}\caption{게이지 변환으로 생기는 두 이계 도함수는 편미분의 교환성 때문에 상쇄된다.}\lectureframe{01:33:50}\end{figure}
+
+두 증명은 서로 반대 방향에서 같은 순환 논리를 완성한다. 작용은 끝점이 고정된 경우에만 변하고, 운동 방정식은 변하지 않는 장 텐서에만 의존한다.
+
+\section{중복성이 뜻하는 것}
+
+\subsection{유일하지 않은 대상을 왜 도입하나요?}
+
+자연스럽게 제기되는 의문은 명확하다. \(A_\mu\)가 유일하지 않다면 왜 이를 도입했을까? 성분값에 중복 정보가 들어 있더라도 국소 로런츠 불변 작용에는 꼭 필요하기 때문이다. 여러 퍼텐셜이 같은 전자기장을 나타낸다.
+\begin{equation}
+A_\mu
+\sim
+A_\mu+\partial_\mu\Lambda.
+\end{equation}
+물리적인 것은 동치류이며, 특정한 대표 원소는 기술 방식의 선택이다.
+
+\begin{classroomqa}\audiencequestion{게이지를 바꾸면 실용적인 이점이 있나요?}\lecturerresponse{네. 적절한 \(\Lambda\)를 택하면 퍼텐셜의 한 성분을 간단하게 만들거나 문제의 한 특징을 명확히 드러낼 수 있습니다. 국소적으로, 또 적절한 경계 조건 아래에서는 \(A_0\)를 포함해 특정 성분 하나가 사라지도록 게이지를 선택할 수 있는 경우가 많습니다. 다른 게이지를 택하면 또 다른 특징을 더 명확히 드러낼 수 있습니다. \lecturetimestamp{01:35:43}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{게이지 불변성은 같은 실험을 두 로런츠 기준계에서 기술하는 것과 비슷한가요?}\lecturerresponse{아닙니다. 로런츠 변환은 서로 다른 관찰자가 지닌 물리적으로 의미 있는 기준계를 비교합니다. 게이지 변환은 하나의 기술 방식 안에 있는 중복성입니다. 서로 다른 퍼텐셜이 같은 장을 나타냅니다. 수학적으로 둘 다 불변성이지만, 그 해석은 서로 다릅니다. \lecturetimestamp{01:37:07}}\end{classroomqa}
+
+구조적인 차이도 있다. 회전에는 고정된 전역 각도가 쓰이며, 보통 각 점마다 서로 다른 각도로 축을 회전시키지는 않는다. 게이지 변환은 함수 전체 \(\Lambda(x)\)로 매개화된다. 이처럼 위치에 따라 달라지는 자유도가 게이지 불변성을 국소적으로 만든다.
+
+\begin{classroomqa}\audiencequestion{그래디언트를 더하는 것이 게이지 불변성의 일반적인 정의인가요?}\lecturerresponse{아벨 전자기 이론에서는 그렇습니다. 그것이 변환입니다. 양--밀스 이론에는 퍼텐셜에 추가적인 내부 구조가 있는 더 복잡한 비아벨 버전이 있지만, 같은 발상은 그대로 유지됩니다. 서로 다른 국소 기술 방식이 동일한 물리를 나타냅니다. \lecturetimestamp{01:39:27}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{게이지 변환은 문제의 여러 부분을 부각하는 수학적 도구에 불과한가요?}\lecturerresponse{계산과 해석에 유용한 도구이지만, 그 역할에는 제약이 있습니다. 방정식을 간단하게 만들거나 어떤 성질을 드러낼 수는 있어도 최종적인 게이지 불변 예측은 바꿀 수 없습니다.
+\lecturetimestamp{01:40:22}}\end{classroomqa}
+
+\subsection{다른 장과 다른 퍼텐셜}
+
+다른 이론의 게이지 퍼텐셜도 흔히 \(A\)로 표기하며 시공간 지표 \(\mu\)를 가진다. 이 퍼텐셜들을 구별하는 것은 다른 대칭성과 관련된 추가적인 내부 구조다. 강의에서는 성급한 공식을 제시하지 않고 그 구조에 대한 설명을 뒤로 미룬다.
+
+\begin{classroomqa}\audiencequestion{다른 장 이론의 벡터 퍼텐셜은 어떤 형태인가요?}\lecturerresponse{이 퍼텐셜도 여전히 시공간 벡터처럼 변환하며 흔히 \(A_\mu\)로 쓴다. 다만 내부 대칭성과 관련된 추가 지표와 대수적 구조를 지닌다. 이것이 양--밀스 이론으로 들어가는 출발점이며, 여기서는 의도적으로 다루지 않는다. \lecturetimestamp{01:41:02}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{정말로 \(\mathbf E\)와 \(\mathbf B\)만으로 국소 로런츠 불변인 하전 입자 작용을 직접 쓸 수 없나요?}\lecturerresponse{여기서 밝힌 가정 아래에서는 그렇습니다. 강의는 이를 정리로 제시하지만 증명하지는 않습니다. 작용 원리와 국소성, 로런츠 불변성을 유지하려면 퍼텐셜을 도입해야 하며, 그러면 게이지 중복성은 자동으로 나타납니다.
+\lecturetimestamp{01:42:18}}\end{classroomqa}
+
+\subsection{측정 가능한 것은 무엇인가?}
+
+\(A_\mu\)의 국소적인 값 자체는 게이지 불변이 아니다. 물리적 측정으로 그 값을 유일하게 결정할 수 있다면, 이를 \(\partial_\mu\Lambda\)만큼 바꾸었을 때 물리적 결과도 달라져야 한다. 이는 방금 증명한 불변성에 어긋난다. 측정 가능한 예측은 현재의 고전적 논의에서 \(F_{\mu\nu}\)처럼 게이지 불변인 양으로 구성해야 한다.
+
+\begin{classroomqa}\audiencequestion{자연은 왜 그토록 꾸준히 게이지 이론을 택하나요?}\lecturerresponse{강의에서는 고전적 수준에서 최종적인 이유를 제시하지 않습니다. 양자역학은 더 깊은 관점을 제공하지만, 그 영역에서도 일반적인 답이 완전히 밝혀진 것은 아닙니다. 이미 분명한 점은 게이지 중복성으로 구성된 이론의 독특한 아름다움과 대칭성, 간결성입니다.
+\lecturetimestamp{01:43:36}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{벡터 퍼텐셜 자체를 측정할 수 있나요?}\lecturerresponse{게이지에 따라 달라지는 국소 성분값으로는 측정할 수 없습니다. 측정은 물리적 과정이며, 모든 물리적 예측은 \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\)에 영향을 받지 않아야 합니다. 측정할 수 있는 것은 퍼텐셜과 장의 게이지 불변 특성입니다.
+\lecturetimestamp{01:44:18}}\end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{\(A_\mu\)를 그래디언트가 아닌 양만큼 바꾸면 어떻게 되나요?}\lecturerresponse{일반적으로 \(F_{\mu\nu}\)가 바뀌므로 그 변화는 검출할 수 있습니다. 반면 순수 게이지 퍼텐셜 \(A_\mu=\partial_\mu\Lambda\)는 \(F_{\mu\nu}=0\)를 만족하고 전자기력을 가하지 않습니다. 그러면 자유 입자는 직선 세계선을 따라 움직입니다. \lecturetimestamp{01:45:22}}\end{classroomqa}
+
+따라서 게이지 불변성은 버려도 되는 요령이 아니다. 전기역학과 양--밀스 이론, 표준 모형, 중력에는 모두 어떤 형태로든 게이지 중복성이 있다. 이 양상은 독특하다. 이론을 정식화하려면 보조량이 필요하지만, 그 양의 일부를 바꾸어도 물리는 달라지지 않는다. 이 독특함이 바로 이론을 조직하는 힘이기도 하다.
+
+\section{게이지 불변성의 논리}
+
+강의는 의도적으로 우회적인 경로를 택했다. 먼저 스칼라 수축이 로렌츠 불변 작용의 문법이므로 위--아래 첨자 표기 체계를 되살렸다. 이어 작용, 국소성, 로렌츠 불변성, 게이지 불변성이라는 네 가지 원리를 제시했다. 하전 입자 계산을 다시 구성하는 동안 네 번째 원리는 정의되지 않은 채 남아 있었다.
+
+그 계산은 국소 스칼라 작용으로 시작해
+\begin{equation}
+I
+=
+-m\int d\tau
+-e\int A_\mu dx^\mu,
+\end{equation}
+통상적인 시간의 라그랑지언과 모든 오일러--라그랑주 도함수를 거친 다음 전기력과 자기력에 의한 로런츠 힘을 다시 얻었다. 고유 시간으로 쓰면 결과는 다음과 같이 정리된다.
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu,
+\qquad
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{equation}
+
+스칼라 장의 예들은 마지막 단계를 준비했다. 전미분은 경계에서만 작용을 바꿀 수 있다. 따라서
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\Lambda
+\end{equation}
+는 고정된 끝점 값만큼 세계선 작용을 바꾸며, 혼합 편미분의 교환성 때문에 \(F_{\mu\nu}\)는 바뀌지 않는다. 그러므로 벡터 퍼텐셜은 필요하지만 유일하지는 않다. 게이지 불변성이란 이러한 비유일성이 물리가 아니라 기술 방식에 속한다는 진술이다.

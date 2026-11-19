@@ -1,0 +1,858 @@
+\chapter{입자 역학, 사차원 운동량, 정지 에너지}
+
+\section{반복해서 사용할 근사}
+
+상대론적 입자의 역학은 익숙한 질문에 새로운 언어로 답해야 합니다. 입자는 어떻게 운동할까요? 운동량과 에너지는 무엇일까요? 이 물리량들은 왜 하나의 사차원 벡터를 이루며, \(E=mc^2\)는 역학의 통상적인 틀에서 어떻게 나올까요? 이 질문들을 다루기 전에, 계산 전반에 걸쳐 반복해서 쓰일 기본적인 근사 하나를 살펴보겠습니다.
+
+임의의 지수 \(p\)에 대해 이항급수는 다음과 같다.
+\begin{equation}
+\begin{aligned}
+(1+\epsilon)^p
+&=1+p\epsilon\\
+&\quad+\frac{p(p-1)}{2!}\epsilon^2\\
+&\quad+\frac{p(p-1)(p-2)}{3!}\epsilon^3
++\cdots .
+\end{aligned}
+\label{eq:sr3-binomial}
+\end{equation}
+지수는 양수, 음수, 분수 또는 복소수일 수도 있다. \(\epsilon\)가 충분히 작으면 급수는 빠르게 수렴하고 각 항은 앞 항보다 작아진다. 그러면 원하는 정확도에 필요한 차수에서 급수를 멈출 수 있다. 영차항이 가장 큰 경우가 흔하지만, 아래의 응용에서는 흔히 상수이므로 동역학적으로 중요하지 않다. 운동은 첫 번째 보정항에서 나타난다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_01.png}
+\caption{상대론적 공식에서 비상대론적 역학을 도출할 때 사용하는 삼차항까지의 이항급수.}
+\lectureframe{00:04:24}
+\end{figure}
+
+보통 \(c=1\)로 둡니다. 따라서 속도 \(v\)는 빛의 속도의 \(v/c\)를 뜻합니다. \(\epsilon=-v^2\)로 두고 \(p=\tfrac12\)을 사용하면,
+\begin{equation}
+\sqrt{1-v^2}
+=
+1-\frac{v^2}{2}-\frac{v^4}{8}-\cdots
+\approx
+1-\frac{v^2}{2},
+\qquad |v|\ll 1.
+\label{eq:sr3-sqrt-expansion}
+\end{equation}
+\(p=-\tfrac12\)을 사용하면 두 음수 부호가 서로 상쇄됩니다.
+\begin{equation}
+\frac{1}{\sqrt{1-v^2}}
+=
+1+\frac{v^2}{2}+\frac{3v^4}{8}+\cdots
+\approx
+1+\frac{v^2}{2}.
+\label{eq:sr3-gamma-expansion}
+\end{equation}
+고전역학에서 나타나는 많은 \(1/2\) 인자는 사후에 보면 이러한 상대론적 전개 중 하나의 첫 번째 보정항으로 이해할 수 있습니다. \(v\)가 1에 가까워지면 근사는 성립하지 않습니다. 이때는 유한한 차수에서 급수를 끊어도 정확한 식의 특이 거동을 포착할 수 없습니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_02.png}
+\caption{저속에서 두 공식이 모두 드러납니다. \(\sqrt{1-v^2}\approx1-v^2/2\)와 \((1-v^2)^{-1/2}\approx1+v^2/2\)입니다.}
+\lectureframe{00:07:39}
+\end{figure}
+
+\section{입자란 무엇인가?}
+
+역학에서 입자가 반드시 기본 입자일 필요는 없습니다. 전자일 수도, 태양일 수도, 초콜릿 상자나 도넛일 수도 있습니다. 중요한 것은 물체가 충분히 잘 뭉쳐 있어 전체 운동을 질량중심으로 기술할 수 있다는 점입니다. 도넛은 질량중심이 물질 자체의 내부에 있을 필요는 없다는 사실을 떠올리게 해 줍니다.
+
+뉴턴 역학에서 질량중심 변수는 다음 관계를 따릅니다.
+\begin{equation}
+\vec p=m\vec v,
+\qquad
+K=\frac12mv^2,
+\qquad
+\vec F=m\vec a.
+\label{eq:sr3-newtonian-particle}
+\end{equation}
+이 식들은 물체가 기본 입자인지 복합계인지에 상관하지 않습니다. 복합계에는 내부 에너지도 있습니다. 예를 들어 움직이는 도넛의 에너지는 질량중심의 운동에너지에 화학 에너지, 열에너지, 결합 에너지를 더한 것입니다.
+\begin{equation}
+E_{\text{Newtonian}}
+=
+E_{\text{internal}}+\frac12mv^2.
+\label{eq:sr3-newtonian-internal}
+\end{equation}
+내부 항은 전체 질량중심 속도와 무관합니다. 상대론에서도 이 구분은 유지되지만, 내부 에너지가 물체 전체의 불변 질량에 기여한다는 점이 드러납니다.
+
+필요한 도구는 고전역학에서 쓰는 것과 같습니다. 궤적, 정지 작용 원리, 라그랑지안, 정준 운동량, 해밀토니안, 그리고 연속 대칭과 보존 법칙 사이의 관계입니다.
+
+\section{세계선과 인과적 분리}
+
+계의 위치를 가로축에, 시간을 세로축에 그려 보세요. 그러면 계의 이력은 시공간의 곡선이 됩니다. 입자 하나의 경우 이 곡선을 \emph{세계선}이라고 합니다. 이 개념은 뉴턴 역학에도 있지만, 로런츠 변환이 공간과 시간을 섞기 때문에 상대론에서는 근본적인 역할을 합니다.
+
+두 사건 사이의 간격을 다음과 같이 두겠습니다.
+\begin{equation}
+\Delta x^\mu=(\Delta t,\Delta\vec x),
+\qquad
+\Delta\vec x^{\,2}
+=
+(\Delta x)^2+(\Delta y)^2+(\Delta z)^2.
+\end{equation}
+단위 \(c=1\)에서 두 사건의 불변 간격은 다음과 같습니다.
+\begin{equation}
+(\Delta\tau)^2
+=
+(\Delta t)^2-\Delta\vec x^{\,2}.
+\label{eq:sr3-interval}
+\end{equation}
+
+\subsection{시간꼴 분리}
+
+\((\Delta t)^2>\Delta\vec x^{\,2}\)이면 \((\Delta\tau)^2>0\)이고, 두 사건은 시간꼴로 분리되어 있습니다. 두 사건이 같은 공간 위치에서 일어나는 로런츠 기준계가 존재합니다. 그 기준계에서는 두 사건을 잇는 선이 수직이며, 시계가 한 사건에서 다른 사건으로 이동할 수 있습니다. 그 시계가 기록한 경과 시간이 고유 시간 \(\Delta\tau\)입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_03.png}
+\caption{시간꼴 간격에서는 시간 방향의 분리가 공간 방향의 분리보다 크며, 두 사건이 같은 위치에 있는 정지 기준계가 존재합니다.}
+\lectureframe{00:14:42}
+\end{figure}
+
+\subsection{공간꼴 분리}
+
+\(\Delta\vec x^{\,2}>(\Delta t)^2\)이면 간격은 공간꼴입니다. 두 사건이 같은 공간 위치에서 일어나는 관성계는 없지만, 두 사건이 동시에 일어나는 기준계는 있습니다. 다른 기준계에서는 시간 순서가 뒤바뀔 수도 있습니다. 따라서 공간꼴로 분리된 사건 쌍에 대해 \emph{사건 \(A\)이 먼저 일어났다}거나 \emph{사건 \(B\)이 먼저 일어났다}고 하는 것은 불변인 진술이 아닙니다. 이것이 기하학적 형태로 표현한 동시성의 상대성입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_04.png}
+\caption{공간꼴 간격에서는 관성계를 바꾸면 두 사건이 동시에 일어나게 하거나 시간 순서를 뒤바꿀 수 있습니다.}
+\lectureframe{00:17:01}
+\end{figure}
+
+질량을 가진 입자의 세계선은 시간꼴입니다. 충분히 짧은 모든 구간에서 \(d\tau^2>0\)를 만족합니다. \(0.9c\)인 속도를 차례로 합성하면 입자를 \(c\)에 점점 더 가깝게 만들 수는 있지만, 그보다 빠르게 할 수는 없습니다. 이는 제논의 역설과 비슷한 점이 있습니다. 이러한 인과적 제약은 물질적 물체뿐 아니라 신호와 정보에도 적용됩니다. 정보도 물리적 계를 통해 전달되어야 하기 때문입니다. 빛보다 빠른 신호가 있다면 기준계에 따라 그 신호의 이력에서 어느 쪽이 원인이고 어느 쪽이 결과인지 의견이 달라질 수 있습니다.
+
+\section{사차원 속도}
+
+시간꼴인 짧은 구간을 살펴봅시다. 통상적인 단위로 쓰면,
+\begin{equation}
+d\tau
+=
+\sqrt{dt^2-\frac{d\vec x^{\,2}}{c^2}}.
+\label{eq:sr3-proper-time-dimensional}
+\end{equation}
+\(c^2\) 인자는 차원 일치 조건에 따라 정해집니다. \(dt^2\)의 단위는 시간의 제곱인 반면, \(d\vec x^{\,2}\)의 단위는 길이의 제곱입니다.
+
+\begin{classroomqa}
+\audiencequestion{간격을 통상적인 단위로 쓸 때 빛의 속도는 어디에 넣어야 할까요?}
+\lecturerresponse{공간 항을 \(c^2\)로 나누어야 하므로 \(d\tau^2=dt^2-d\vec x^{\,2}/c^2\)가 됩니다. 보통은 다시 \(c=1\)로 두겠지만, 차원 일치 조건을 따르면 빠진 인자를 언제든 복원할 수 있습니다. \lecturetimestamp{00:21:23}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_05.png}
+\caption{세계선의 변위 \(\Delta x^\mu=(\Delta t,\Delta\vec x)\)와 그에 대응하는 고유 시간의 증가량.}
+\lectureframe{00:21:03}
+\end{figure}
+
+통상적인 속도는 세 개의 공간 성분을 가집니다.
+\begin{equation}
+v^i=\frac{dx^i}{dt},
+\qquad i=1,2,3.
+\end{equation}
+상대론적 속도는 시공간 변위 전체를 불변인 고유 시간으로 나누어 얻습니다.
+\begin{equation}
+u^\mu
+=
+\frac{dx^\mu}{d\tau},
+\qquad
+\mu=0,1,2,3.
+\label{eq:sr3-four-velocity-definition}
+\end{equation}
+그리스 문자 첨자는 시공간 성분을, 라틴 문자 첨자는 공간 성분을 가리킵니다. \(x^0=t\)이며 단위가 \(c=1\)이므로,
+\begin{equation}
+u^0=\frac{dt}{d\tau}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_06.png}
+\caption{통상적인 속도는 공간 변위를 좌표 시간으로 나누지만, 사차원 속도는 네 성분 모두를 고유 시간으로 나눕니다.}
+\lectureframe{00:24:05}
+\end{figure}
+
+\(u^\mu\)와 \(\vec v\)의 관계를 구하기 위해 간격 식에서 \(dt^2\)를 묶어 내면,
+\begin{align}
+d\tau^2
+&=dt^2-d\vec x^{\,2}\\
+&=dt^2\left(1-\frac{d\vec x^{\,2}}{dt^2}\right)
+=dt^2(1-v^2).
+\end{align}
+미래 방향을 향하는 세계선이므로 양의 제곱근을 취하면,
+\begin{equation}
+\frac{d\tau}{dt}=\sqrt{1-v^2},
+\qquad
+\frac{dt}{d\tau}=\frac{1}{\sqrt{1-v^2}}
+\equiv\gamma.
+\label{eq:sr3-time-component}
+\end{equation}
+공간 성분에 대해서는,
+\begin{equation}
+v^i
+=
+\frac{dx^i}{dt}
+=
+\frac{dx^i}{d\tau}\frac{d\tau}{dt}
+=u^i\sqrt{1-v^2}.
+\end{equation}
+따라서,
+\begin{equation}
+\boxed{
+u^\mu
+=
+\gamma(1,\vec v)
+},
+\qquad
+u^0=\gamma,
+\qquad
+u^i=\gamma v^i.
+\label{eq:sr3-four-velocity-components}
+\end{equation}
+저속에서는 \(u^0\to1\)이고 \(u^i\to v^i\)입니다. 빛의 속도에 가까워지면 \(u^0\)와 공간 사차원 속도의 크기는 모두 커지지만, \(|\vec v|<1\)입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_07.png}
+\caption{통상적인 속도와 \(u^\mu\)의 네 성분 사이의 관계를 정리한 식.}
+\lectureframe{00:30:40}
+\end{figure}
+
+\subsection{독립 성분은 왜 세 개뿐인가}
+
+사차원 속도는 성분이 네 개지만 독립 자유도는 세 개뿐입니다. 간격 항등식을 \(d\tau^2\)로 나누면,
+\begin{equation}
+1
+=
+\left(\frac{dt}{d\tau}\right)^2
+-\left(\frac{d\vec x}{d\tau}\right)^2,
+\end{equation}
+또는
+\begin{equation}
+\boxed{
+(u^0)^2-\vec u^{\,2}=1
+}.
+\label{eq:sr3-four-velocity-normalization}
+\end{equation}
+이 하나의 정규화 조건이 독립 성분 하나를 없앱니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_08.png}
+\caption{불변 간격에서 정규화 조건 \((u^0)^2-\vec u^{\,2}=1\)가 바로 얻어집니다.}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{고유 시간 자체에 대해 미분하면 독립 성분 하나가 줄어드는 이유를 이해할 수 있나요?}
+\lecturerresponse{그렇습니다. 고유 시간은 독립적인 다섯 번째 좌표가 아닙니다. 고유 시간은 세계선을 따라 시공간 간격으로 정해집니다. 이 정의 관계를 \(d\tau^2\)로 나누면 네 미분 성분은 단위 시간꼴 쌍곡면 \((u^0)^2-\vec u^{\,2}=1\) 위에 놓인다는 제약을 받습니다. \lecturetimestamp{00:34:07}}
+\end{classroomqa}
+
+\section{자유 입자의 불변 작용}
+
+힘이 작용하지 않는 세계선은 어떤 법칙을 따를까요? 고전역학에서 두 가지 교훈을 이어받습니다.
+\begin{enumerate}
+\item 양 끝점을 고정했을 때 물리적 경로는 작용을 정상값으로 만듭니다.
+\item 작용은 경로를 이루는 무한소 구간들의 합으로 구성됩니다.
+\end{enumerate}
+상대론은 세 번째 조건을 더합니다. 모든 관성 관측자가 작용에 동의해야 합니다. 시간꼴 세계선에서 자연스럽게 사용할 수 있는 무한소 스칼라는 \(d\tau\)입니다. 그러므로 자유 입자의 작용은 다음과 같습니다.
+\begin{equation}
+\boxed{
+S=-m\int_a^b d\tau
+}
+\qquad(c=1).
+\label{eq:sr3-invariant-action}
+\end{equation}
+유한합으로 나타내면,
+\begin{equation}
+S=-m\lim_{N\to\infty}\sum_{k=1}^{N}\Delta\tau_k.
+\end{equation}
+모든 관측자가 각 고유 시간 증가량에 동의하므로, 합이 정상값을 갖게 하는 경로에도 모두 동의합니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_09.png}
+\caption{고정된 양 끝점 사이에서 변분하는 세계선을 따라 불변인 고유 시간 증가량을 더해 작용을 구성합니다.}
+\lectureframe{00:38:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{작용에 임의의 상수를 곱하면 에너지는 어떻게 되는가?}
+\lecturerresponse{에너지는 출발점이 되는 불변량이 아니라 라그랑지안과 해밀토니안으로부터 유도된다. 작용 전체에 영이 아닌 상수를 곱해도 정지 경로는 바뀌지 않지만, 그 작용으로부터 정의되는 정준량의 크기는 달라진다. 유도된 물리량이 확립된 뉴턴 역학의 관례와 일치하도록 정규화 \(-m\)를 선택한다. \lecturetimestamp{00:39:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{고유 시간 같은 불변량은 작용을 구성하는 출발점으로 왜 적절한가요?}
+\lecturerresponse{정지 작용 법칙은 모든 관성계에서 같은 물리적 경로를 골라야 하기 때문입니다. 이는 유클리드 평면에서 최단 곡선을 찾는 것과 비슷합니다. 회전하면 좌표 성분은 바뀌지만 각 무한소 길이는 바뀌지 않으므로, 최단 곡선이 무엇인지도 달라질 수 없습니다. 유클리드 길이를 고유 시간으로 바꾸면 상대론적 구성이 됩니다. \lecturetimestamp{00:40:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{고유 시간에는 왜 음의 제곱근이 아니라 양의 제곱근을 선택하나요?}
+\lecturerresponse{고유 시간은 과거에서 미래로 이동하는 시계가 기록한 양의 경과 시간으로 정의됩니다. 일관되게 음의 제곱근을 택하면 작용의 부호만 뒤집혀 극댓값이 극솟값으로 바뀔 뿐, 정상 세계선은 바뀌지 않습니다. 시계의 정지 기준계에서는 양의 부호를 택했을 때 \(d\tau=dt\)입니다. \lecturetimestamp{00:42:59}}
+\end{classroomqa}
+
+인자 \(-m\) 역시 뉴턴 역학을 되찾기 위해 선택한 정규화 관례입니다. 단위를 복원하면 통상적인 작용은 다음과 같습니다.
+\begin{equation}
+S=-mc^2\int_a^b d\tau.
+\label{eq:sr3-action-dimensional}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_10.png}
+\caption{유한한 고유 시간 합은 자연 단위계에서 불변 적분 \(-m\int d\tau\)이 됩니다.}
+\lectureframe{00:46:23}
+\end{figure}
+
+\section{상대론적 라그랑지안}
+
+작용을 표준적인 역학 형태로 나타내기 위해 \(d\tau\)에서 \(dt\)를 묶어 내면,
+\begin{equation}
+d\tau
+=dt\sqrt{1-\dot{\vec x}^{\,2}},
+\qquad
+\dot{\vec x}^{\,2}
+=\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+그러면,
+\begin{equation}
+S
+=
+\int_a^b L\,dt,
+\qquad
+\boxed{
+L=-m\sqrt{1-v^2}
+}
+\quad(c=1).
+\label{eq:sr3-relativistic-lagrangian}
+\end{equation}
+통상적인 단위로는,
+\begin{equation}
+L=-mc^2\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr3-relativistic-lagrangian-c}
+\end{equation}
+이것이 자유 입자의 라그랑지안입니다. 속도에는 의존하지만 위치에는 의존하지 않습니다. 아직 힘이나 퍼텐셜은 도입하지 않았습니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_11.png}
+\caption{\(dt\)를 묶어 내면 세 속도 성분의 함수인 자유 상대론적 라그랑지안이 드러납니다.}
+\lectureframe{00:49:57}
+\end{figure}
+
+\subsection{라그랑주 역학과 뉴턴 역학의 복원}
+
+\eqref{eq:sr3-sqrt-expansion}을 대입하면,
+\begin{align}
+L
+&=-m\sqrt{1-v^2}\\
+&\approx-m\left(1-\frac{v^2}{2}\right)\\
+&=-m+\frac12mv^2.
+\label{eq:sr3-lagrangian-low-speed}
+\end{align}
+상수 \(-m\)는 위치와 속도 모두에 무관합니다. 양 끝의 시간이 같은 모든 경로에 동일한 값을 더하므로 오일러--라그랑주 방정식에서는 사라집니다. 동역학적 내용을 담는 부분은 바로 다음 식입니다.
+\begin{equation}
+L_{\mathrm{Newton}}=\frac12mv^2.
+\end{equation}
+따라서 불변 작용의 부호와 질량 정규화는 올바르게 선택되었습니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_12.png}
+\caption{저속 전개에는 상수 \(-m\)와 뉴턴 역학의 자유 입자 라그랑지안 \(mv^2/2\)가 남습니다.}
+\lectureframe{00:53:24}
+\end{figure}
+
+지금 다루는 자유 입자의 경우 오일러--라그랑주 방정식은 속도가 일정하고 시공간 세계선이 직선임을 말해 줄 뿐입니다. 더 중요한 과제는 보존되는 운동량과 에너지를 찾아내는 것입니다.
+
+\section{정준 운동량}
+
+\(L\)에는 위치 의존성이 없으므로 공간 병진에 대해 불변입니다. 이에 대응하는 보존량은 운동량입니다. 뉴턴 역학의 공식 \(p_i=mv_i\)를 가정하지 않고, 정준 정의를 사용합니다.
+\begin{equation}
+p_i=\frac{\partial L}{\partial\dot x^i}.
+\label{eq:sr3-canonical-momentum}
+\end{equation}
+\(L=-m\sqrt{1-v^2}\)에 대해,
+\begin{align}
+p_i
+&=
+-m\frac{1}{2\sqrt{1-v^2}}
+\frac{\partial}{\partial\dot x^i}(1-v^2)\\
+&=
+-m\frac{1}{2\sqrt{1-v^2}}(-2\dot x^i)\\
+&=
+\frac{mv_i}{\sqrt{1-v^2}}
+=m\gamma v_i.
+\label{eq:sr3-relativistic-momentum}
+\end{align}
+\(u^i=\gamma v^i\)이므로,
+\begin{equation}
+\boxed{
+p^i=mu^i
+}.
+\label{eq:sr3-momentum-spatial}
+\end{equation}
+저속에서는 \(p^i\approx mv^i\)로 환원됩니다. 빛의 속도에 가까워지면 분모가 결정적으로 중요해집니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_13.png}
+\caption{제곱근 라그랑지안을 정준 방식으로 미분하면 \(p_x=mv_x/\sqrt{1-v^2}\)를 얻습니다.}
+\lectureframe{00:58:49}
+\end{figure}
+
+\subsection{상대론적 질량이 아닌 질량}
+
+여기서 \(m\)는 단순히 입자의 질량입니다. 입자가 움직여도 변하지 않는 불변 표지입니다. 오래된 교재에서는 이를 \emph{정지 질량}이라 하고, \(E/c^2\)를 속도에 따라 달라지는 \emph{상대론적 질량}이라 부르기도 합니다. 현대적 용법에서는 이러한 구분을 피합니다. 운동에 따라 변하는 것은 에너지와 운동량이지 불변 질량이 아닙니다. 전자의 질량을 나타내는 매개변수는 모든 기준계에서 같습니다.
+
+\section{삼차원 운동량에서 사차원 운동량으로}
+
+사차원 벡터의 한 성분에 관한 진술은 일반적으로 기준계에 따라 달라진다. 예를 들어 \(\Delta\vec x=0\)는 한 기준계에서 두 사건의 위치가 같음을 뜻하지만, 부스트를 가하면 그 간격의 방향이 기울어져 \(\Delta\vec x'\ne0\)가 된다. 반면,
+\begin{equation}
+\Delta x^\mu=0
+\end{equation}
+은 불변이다. 한 기준계에서 네 성분이 모두 영이면 모든 기준계에서 네 성분이 모두 영이다. 마찬가지로 \(\vec u=0\)는 입자의 정지계만 특정할 뿐, 사차원 속도에 대한 불변적인 설명은 아니다.
+
+고립계의 통상적인 운동량 보존 법칙은 다음과 같습니다.
+\begin{equation}
+\vec P_{\mathrm{initial}}-\vec P_{\mathrm{final}}=0.
+\label{eq:sr3-three-momentum-conservation}
+\end{equation}
+이는 삼차원 벡터 방정식입니다. 보존을 로런츠 공변적으로 명시하려면 세 \(p^i=mu^i\)와 함께 들어갈 네 번째 성분이 필요합니다. 자연스러운 완성은 다음과 같습니다.
+\begin{equation}
+p^\mu=mu^\mu.
+\label{eq:sr3-four-momentum}
+\end{equation}
+\(c=1\) 단위에서는,
+\begin{equation}
+p^\mu=(p^0,\vec p)
+=
+m\gamma(1,\vec v).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_14.png}
+\caption{공간 성분에 네 번째 성분을 더해야 운동량 보존을 불변인 형태로 나타낼 수 있습니다.}
+\lectureframe{01:09:51}
+\end{figure}
+
+빠진 성분도 보존되어야 합니다. 입자 역학에는 이미 다른 보존량이 있습니다. 바로 에너지입니다. \(p^0=mu^0=m\gamma\)가 자연 단위계에서 에너지와 정확히 같은지 묻는 문제에는 해밀토니안을 통해 체계적으로 답할 수 있습니다.
+
+\section{해밀토니안은 에너지다}
+
+이 형태의 시간 독립 라그랑지안에서 해밀토니안은 다음과 같습니다.
+\begin{equation}
+H=\sum_{i=1}^{3}\dot x^i p_i-L.
+\label{eq:sr3-hamiltonian-definition}
+\end{equation}
+이 공식은 뉴턴 역학에만 해당하는 것이 아닙니다. 이는 속도에서 정준 운동량으로 가는 일반적인 르장드르 변환이며, 상대론적 라그랑지안에도 똑같이 적용됩니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_15.png}
+\caption{일반적인 해밀토니안 공식 \(H=\sum_i\dot x^i p_i-L\).}
+\lectureframe{01:11:55}
+\end{figure}
+
+\(p_i=m\dot x_i/\sqrt{1-v^2}\)와 \(L=-m\sqrt{1-v^2}\)를 대입하면,
+\begin{align}
+H
+&=
+\frac{mv^2}{\sqrt{1-v^2}}
++m\sqrt{1-v^2}\\
+&=
+\frac{mv^2+m(1-v^2)}{\sqrt{1-v^2}}\\
+&=
+\boxed{\frac{m}{\sqrt{1-v^2}}}
+=m\gamma.
+\label{eq:sr3-hamiltonian-result}
+\end{align}
+상쇄가 핵심 단계입니다. \(u^0=\gamma\)와 비교하면,
+\begin{equation}
+H=mu^0=p^0.
+\end{equation}
+따라서 네 번째 성분은 에너지입니다.
+\begin{equation}
+p^\mu=(E,\vec p),
+\qquad
+E=H
+\qquad(c=1).
+\label{eq:sr3-four-momentum-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_16.png}
+\caption{해밀토니안의 두 항을 공통 분모로 통분하면 \(mv^2\) 항들이 상쇄됩니다.}
+\lectureframe{01:14:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{공식 \(H=\sum_i\dot x^i p_i-L\)는 고전 해밀토니안 공식에만 해당하나요?}
+\lecturerresponse{이는 특별한 비상대론적 가정이 아니라 라그랑지안에 대응하는 일반적인 르장드르 변환입니다. 어떤 역학이 나오는지는 \(L\)의 형태가 결정합니다. 여기서는 상대론적 제곱근 라그랑지안으로부터 \(H=m/\sqrt{1-v^2}\)를 얻습니다. \lecturetimestamp{01:15:21}}
+\end{classroomqa}
+
+이제 불변인 보존 법칙은 다음과 같습니다.
+\begin{equation}
+\sum_{\mathrm{initial}}p^\mu
+=
+\sum_{\mathrm{final}}p^\mu,
+\label{eq:sr3-four-momentum-conservation}
+\end{equation}
+이 하나의 사차원 벡터 방정식에 에너지와 운동량의 세 성분 보존이 모두 들어 있습니다.
+
+\section{정지 에너지와 뉴턴 극한}
+
+자연 단위계에서 정확한 에너지는 다음과 같습니다.
+\begin{equation}
+E=\frac{m}{\sqrt{1-v^2}}.
+\end{equation}
+\eqref{eq:sr3-gamma-expansion}을 사용하면,
+\begin{equation}
+E
+\approx
+m+\frac12mv^2+\frac38mv^4+\cdots .
+\label{eq:sr3-energy-natural-expansion}
+\end{equation}
+두 번째 항은 익숙한 운동에너지입니다. 첫 번째 항은 질량중심이 정지해 있을 때도 남는 에너지입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_17.png}
+\caption{단위 \(c=1\)에서 정확한 에너지를 전개하면 \(m+mv^2/2+\cdots\)이 됩니다.}
+\lectureframe{01:18:02}
+\end{figure}
+
+정확한 식에서 차원을 복원해 봅시다. 제곱근 안의 비는 \(v^2/c^2\)이어야 하고, 분자는 에너지 단위를 가져야 합니다.
+\begin{equation}
+\boxed{
+E
+=
+\gamma mc^2
+=
+\frac{mc^2}{\sqrt{1-v^2/c^2}}
+}.
+\label{eq:sr3-energy-exact}
+\end{equation}
+저속 전개는 다음과 같습니다.
+\begin{equation}
+\boxed{
+E
+=
+mc^2+\frac12mv^2
++\frac38m\frac{v^4}{c^2}
++\cdots
+}.
+\label{eq:sr3-energy-dimensional-expansion}
+\end{equation}
+정지 상태에서는,
+\begin{equation}
+\boxed{E_{\mathrm{rest}}=mc^2}.
+\label{eq:sr3-emc2}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_18.png}
+\caption{차원을 복원하면 상수항은 \(mc^2\)가 되고, 그 다음에 뉴턴 역학의 운동에너지 \(mv^2/2\)가 이어집니다.}
+\lectureframe{01:19:16}
+\end{figure}
+
+이는 기본 입자뿐 아니라 모든 고립된 물체에 적용됩니다. \emph{정지 상태}란 질량중심이 정지해 있다는 뜻입니다. 물체 내부의 분자, 원자, 장은 여전히 움직이고 상호작용할 수 있습니다. 이들의 내부 운동에너지, 퍼텐셜 에너지, 결합 에너지는 모두 총 정지 에너지에 기여하며, 따라서 물체의 불변 질량에도 기여합니다.
+
+\begin{classroomqa}
+\audiencequestion{변환 계수가 \(c^2\)를 임의의 수로 나눈 값일 수도 있나요?}
+\lecturerresponse{차원만으로는 \(c\)의 거듭제곱만 정해지지만, 계수는 자연 단위계의 결과로 결정됩니다. 통상적인 단위의 공식은 \(c=1\)일 때 \(E=m\)로 환원되어야 합니다. 따라서 차원을 복원한 식은 정지 상태에서 계수가 1인 \(E=mc^2\)입니다. \lecturetimestamp{01:22:08}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{이항 전개의 첫 번째 1은 물리적으로 중요하며, 고차항은 무엇을 뜻하나요?}
+\lecturerresponse{그렇습니다. 에너지 전개에서 맨 앞의 항은 정지 에너지 \(mc^2\)가 됩니다. 다음 항은 뉴턴 역학의 운동에너지이고, 그보다 높은 차수의 항은 모두 상대론적 보정항입니다. 야구공에서는 무시할 수 있지만 \(v\)가 \(c\)에 가까워지면 반드시 고려해야 합니다. \lecturetimestamp{01:22:37}}
+\end{classroomqa}
+
+\(v\to c\)일 때 정확한 에너지와 운동량은 발산합니다.
+\begin{equation}
+\begin{aligned}
+E&=\gamma mc^2\longrightarrow\infty,\\
+\vec p&=\gamma m\vec v\longrightarrow\infty
+\qquad(m>0).
+\end{aligned}
+\end{equation}
+그러므로 빛의 속도에 도달하려면 에너지와 운동량이 무한대여야 합니다. 유한한 시간 동안 작용하는 유한한 힘은 유한한 충격량만 전달하므로, 질량을 가진 입자는 \(c\)에 가까워질 수는 있어도 도달할 수는 없습니다.
+
+\begin{classroomqa}
+\audiencequestion{이제 무엇이 빛의 속도 장벽을 강제하나요?}
+\lecturerresponse{정확한 사차원 운동량이 그렇게 합니다. 질량을 가진 입자가 \(c\)에 가까워지면 에너지와 운동량이 모두 발산하는 한편, 사차원 운동량 보존은 모든 상호작용을 제약합니다. 앞서 사차원 속도를 정규화한 것도 운동학적 형태로는 같은 내용을 말합니다. \lecturetimestamp{01:24:27}}
+\end{classroomqa}
+
+\section{복합계의 질량}
+
+두 입자가 크기는 같고 방향은 반대인 운동량을 가지고 움직인다고 하자. 두 입자의 총 삼차원 운동량은 영이므로, 우리는 이미 결합계의 정지계에 있다. 이 계의 불변 질량 \(M\)는 이 기준계에서의 총에너지로 정의된다.
+\begin{equation}
+Mc^2=E_{\mathrm{tot}}
+\qquad
+(\vec P_{\mathrm{tot}}=0).
+\end{equation}
+보다 일반적으로는,
+\begin{equation}
+M^2c^4
+=
+E_{\mathrm{tot}}^2-c^2\vec P_{\mathrm{tot}}^{\,2}.
+\label{eq:sr3-composite-mass}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{서로 반대 방향으로 움직이는 두 입자를 합친 계의 질량은 각 입자 질량의 합보다 큰가?}
+\lecturerresponse{두 입자가 자유 입자라면 그렇다. 질량중심계에서는 두 입자의 운동에너지가 총 정지에너지에 더해지므로 \(M>m_1+m_2\)가 된다. 인력에 의한 결합에너지는 반대로 총에너지를 낮출 수 있으며, 이때는 \(M<m_1+m_2\)가 된다. 불변 질량은 총 운동량이 영인 기준계에서의 총에너지로 정의된다. \lecturetimestamp{01:25:06}}
+\end{classroomqa}
+
+복합 물체의 질량을 잴 때 내부 운동과 결합을 무시할 수 없는 이유가 여기에 있습니다. 불변 질량은 구성 입자들의 질량을 단순히 산술적으로 더한 값이 아니라, 고립계 전체에 속합니다.
+
+\begin{classroomqa}
+\audiencequestion{정지 에너지 항은 양자 상태의 위상에서 어떤 역할을 하나요?}
+\lecturerresponse{에너지가 정해진 상태는 시간에 따라 위상 \(\exp(-iEt/\hbar)\)로 진화하므로, 정지한 입자는 \(\exp(-imc^2t/\hbar)\)를 기여합니다. 공통적인 전체 위상은 관측할 수 없지만, 에너지가 다른 성분들 사이의 상대 위상은 관측할 수 있습니다. 이러한 양자적 결과는 여기서의 고전적 유도와 양립하지만, 그 유도에 필요한 것은 아닙니다. \lecturetimestamp{01:26:57}}
+\end{classroomqa}
+
+\section{에너지--운동량 관계}
+
+사차원 속도의 정규화 조건에서 사차원 운동량의 불변 노름이 바로 나옵니다. \(c=1\) 단위계에서는,
+\begin{equation}
+(u^0)^2-\vec u^{\,2}=1.
+\end{equation}
+
+\(m^2\)를 곱하고 \(p^\mu=mu^\mu\)를 사용하면,
+\begin{equation}
+\boxed{
+E^2-\vec p^{\,2}=m^2
+}
+\qquad(c=1).
+\label{eq:sr3-mass-shell-natural}
+\end{equation}
+같은 식을 다음과 같이 쓸 수도 있습니다.
+\begin{equation}
+E=\sqrt{\vec p^{\,2}+m^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_19.png}
+\caption{사차원 속도 정규화 식에 \(m^2\)를 곱하면 \(E^2-\vec p^{\,2}=m^2\)를 얻습니다.}
+\lectureframe{01:31:48}
+\end{figure}
+
+\(c\)를 복원하면,
+\begin{equation}
+\boxed{
+E^2
+=
+\vec p^{\,2}c^2+m^2c^4
+},
+\qquad
+E=\sqrt{\vec p^{\,2}c^2+m^2c^4}.
+\label{eq:sr3-mass-shell}
+\end{equation}
+이 공식은 속도를 언급하지 않고 운동량의 함수로 에너지를 나타냅니다. 이는 뉴턴 역학의 관계식
+\begin{equation}
+K=\frac{\vec p^{\,2}}{2m}.
+\end{equation}
+에 대응하는 상대론적 관계식입니다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_20.png}
+\caption{차원을 복원한 질량껍질 관계식은 \(E=\sqrt{\vec p^{\,2}c^2+m^2c^4}\)입니다.}
+\lectureframe{01:32:38}
+\end{figure}
+
+\subsection{질량이 없는 입자}
+
+속도 공식 \(E=\gamma mc^2\)은 \(m=0\)이고 \(v=c\)일 때 부정형 \(0/0\)이 됩니다. 따라서 질량이 없는 입자를 구별하는 표지로 속도를 쓰기는 어렵습니다. 진공에서 자유롭게 전파되는 질량 없는 입자는 모두 \(c\)로 움직이지만, 광자마다 에너지는 다를 수 있습니다.
+
+에너지--운동량 관계는 질량이 없는 경우에도 연속적으로 성립한다.
+\begin{equation}
+m=0
+\quad\Longrightarrow\quad
+\boxed{E=c|\vec p|}.
+\label{eq:sr3-massless-energy}
+\end{equation}
+이는 광자와 이상화된 질량 없는 이론에서의 중력자에 적용된다. 또한 \(mc^2\ll E\)인 고도로 상대론적인 입자에도 훌륭한 근사로 성립하며, 충분히 높은 에너지의 중성미자도 작은 질량이 영이 아니지만 여기에 해당한다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_21.png}
+\caption{에너지--운동량 관계식에서 질량이 없는 극한을 취하면 \(E=c|\vec p|\)를 얻습니다.}
+\lectureframe{01:33:48}
+\end{figure}
+
+\section{양전자 포지트로늄 붕괴}
+
+전자와 양전자의 결합 상태인 포지트로늄을 생각해 봅시다. 그 불변 질량은 \(2m_e\)보다 약간 작습니다. 구성 입자들의 내부 운동에너지는 양수지만, 결합 에너지는 그보다 더 큰 음수이기 때문입니다. 수치로는,
+\begin{equation}
+m_ec^2\approx0.511\ \mathrm{MeV},
+\qquad
+m_e\approx9.11\times10^{-31}\ \mathrm{kg},
+\end{equation}
+이지만 운동학적 논의는 수치에 의존하지 않습니다.
+
+포지트로늄의 정지 기준계에서 두 광자로 붕괴하는 경로를 생각해 봅시다.
+\begin{equation}
+\mathrm{Ps}\longrightarrow\gamma+\gamma.
+\end{equation}
+처음에는 총 운동량이 0입니다. 따라서 운동량 보존에 따라 광자들은 정반대 방향으로, 크기가 같고 방향이 반대인 운동량을 가지고 나와야 합니다.
+\begin{equation}
+\vec p_1=\vec p,
+\qquad
+\vec p_2=-\vec p.
+\label{eq:sr3-positronium-momentum}
+\end{equation}
+포지트로늄의 질량이 \(M\)라면, 에너지 보존은 다음과 같습니다.
+\begin{equation}
+Mc^2
+=E_1+E_2
+=c|\vec p_1|+c|\vec p_2|
+=2c|\vec p|.
+\end{equation}
+따라서,
+\begin{equation}
+\boxed{
+|\vec p|=\frac{Mc}{2},
+\qquad
+E_1=E_2=\frac{Mc^2}{2}
+}.
+\label{eq:sr3-positronium-result}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_22.png}
+\caption{정지 상태의 포지트로늄은 크기가 같고 방향이 반대인 운동량을 가진 두 광자로 붕괴하며, \(Mc^2=2c|\vec p|\)입니다.}
+\lectureframe{01:40:55}
+\end{figure}
+
+이 과정에는 입자 질량의 합이 보존되는 뉴턴 역학적 대응물이 없다. 초기 상태의 불변 질량은 영이 아니지만, 나가는 광자는 각각 질량이 영이다. 보존되는 것은 총 사차원 운동량이다. 저장되어 있던 정지에너지가 전파하는 전자기 에너지로 바뀐 것이다. 양자 관계 \(|\vec p|=h/\lambda\)를 적용하면 광자의 파장도 같은 결과로 정해진다. 이에 해당하는 광자 에너지는 광학 영역보다 훨씬 높다.
+
+\begin{classroomqa}
+\audiencequestion{붕괴에서 각운동량은 어떻게 보존되나요?}
+\lecturerresponse{나오는 복사가 처음 상태와 같은 총 각운동량을 가져야 합니다. 두 광자 붕괴에서는 광자의 헬리시티와 궤도 상태가 적절히 결합합니다. 더 정확히 말해, 스핀 단일항인 파라 포지트로늄은 주로 두 광자로 붕괴하는 반면, 스핀 삼중항인 오르토 포지트로늄은 주로 세 광자로 붕괴합니다. 허용되는 붕괴 경로는 모든 양자수를 보존합니다. \lecturetimestamp{01:42:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{빛의 속도로 움직이는 입자의 질량은 왜 영이어야 하는가?}
+\lecturerresponse{에너지가 유한하고 영이 아닐 때, 인자 \(\gamma\)는 \(v\to c\)에 발산한다. 불변 관계 \(E^2-\vec p^{\,2}c^2=m^2c^4\)에 따르면 사차원 운동량이 빛꼴인 입자는 \(m=0\)이다. 반대로 자유로운 질량 없는 입자는 빛꼴 세계선을 따라 \(c\)로 전파한다. \lecturetimestamp{01:42:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{같은 중성 상태가 광자 대신 중력자로 붕괴할 수도 있나요?}
+\lecturerresponse{양자수가 허용한다면 원리적으로 중력자 최종 상태도 가능하지만, 중력 붕괴 분기비는 전자기 붕괴의 것보다 터무니없이 작습니다. 운동학적 계산에는 여전히 동일한 사차원 운동량 보존 법칙과 질량 없는 각 양자에 대한 \(E=c|\vec p|\)를 사용합니다. \lecturetimestamp{01:43:20}}
+\end{classroomqa}
+
+\subsection{붕괴 정점 하나}
+
+붕괴는 국소적이다. 부모 입자의 세계선은 하나의 시공간 사건에서 끝나고, 그곳에서 나가는 광자의 세계선들이 시작된다. 검출기에서의 상호작용을 과거 방향으로 외삽하면 두 세계선이 만나는 공통 꼭짓점을 재구성할 수 있다. 두 광자가 서로 다른 사건에서 방출되었다면, 과거 방향으로 외삽한 두 영벡터 궤적은 한 점에서 만나지 않을 것이다.
+
+\begin{classroomqa}
+\audiencequestion{모든 기준계에서 두 광자가 동시에 방출되어야 합니까?}
+\lecturerresponse{두 광자는 공간적으로 떨어져 있어 동시성이 기준계에 따라 달라질 수 있는 두 사건에서 방출되는 것이 아니라, 같은 시공간 사건에서 비롯된다. 모든 로런츠 기준계는 하나의 사건이 하나의 사건이라는 데 동의한다. 양자역학에 따르면 부모 입자의 위치에는 유한한 불확정성이 있으므로, 재구성된 꼭짓점은 완벽히 알려진 고전적 점이 아니라 분포이다. \lecturetimestamp{01:44:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{왜 4-속도의 노름은 1입니까?}
+\lecturerresponse{고유시간은 \(d\tau^2=dt^2-d\vec x^{\,2}\)에서 \(c=1\)인 단위계를 사용해 정의했다. \(d\tau^2\)로 나누면 \((dt/d\tau)^2-(d\vec x/d\tau)^2=1\)를 얻는데, 이는 바로 \((u^0)^2-\vec u^{\,2}=1\)이다. 따라서 이 정규화는 고유시간의 정의에 내재되어 있다. \lecturetimestamp{01:45:38}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(u^0=dt/d\tau\)은 에너지에 대한 더 깊은 해석을 제공합니까?}
+\lecturerresponse{이는 유용한 항등식 \(E=mc^2\,dt/d\tau=\gamma mc^2\)을 준다. 정지 상태에서는 좌표시간과 고유시간의 비가 1이고, 운동 중에는 로런츠 인자이다. 속도 의존성을 나타내는 것 외에, 이 항등식 자체가 별도의 동역학 원리를 더해 주지는 않는다. \lecturetimestamp{01:46:36}}
+\end{classroomqa}
+
+\section{보존 법칙에는 닫힌 계가 필요하다}
+
+다음 진술은
+\begin{equation}
+\sum p^\mu_{\mathrm{initial}}
+=
+\sum p^\mu_{\mathrm{final}}
+\end{equation}
+에너지와 운동량을 주고받는 모든 것을 포함하는 고립계에 적용된다. 실제 실험실에는 미약한 전기장과 자기장, 주변 입자, 중력, 지지 구조물, 검출기가 있다. 이러한 자유도를 장부에 포함하지 않으면, 부분계에서 작은 겉보기 불균형이 나타날 수 있다. 빠진 4-운동량은 환경으로 전달된 것이다.
+
+\begin{classroomqa}
+\audiencequestion{두 광자의 운동량 합은 0에서 아주 조금 벗어날 수 있습니까?}
+\lecturerresponse{완전한 고립계에서는 그렇지 않다. 실제 실험에서는 모형화하지 않은 장이나 장치의 반동이 그 작은 나머지를 가져갈 수 있으므로, 선택한 부분계는 닫혀 있지 않은 것처럼 보일 수 있다. 상호작용하는 모든 부분을 포함하면 전체 4-운동량은 보존된다. \lecturetimestamp{01:47:51}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{불확정성 원리가 운동량 보존을 약화합니까?}
+\lecturerresponse{아니다. 양자 상태에서는 위치나 운동량이 불확정할 수 있고, 한쪽을 더 정밀하게 알수록 다른 쪽의 분포가 넓어지지만, 병진 대칭성은 고립계의 전체 운동량이 정확히 보존됨을 여전히 보장한다. 양자 불확정성은 측정 결과와 분포에 관한 것이지, 보존 법칙이 성립하지 않는다는 뜻이 아니다. \lecturetimestamp{01:49:19}}
+\end{classroomqa}
+
+\section{정확한 에너지와 근사 에너지}
+
+정확한 식과 저속 전개를 혼동하지 않는 것이 중요하다.
+\begin{align}
+E_{\mathrm{exact}}
+&=
+\frac{mc^2}{\sqrt{1-v^2/c^2}},
+\label{eq:sr3-exact-repeated}\\
+E_{\mathrm{slow}}
+&=
+mc^2+\frac12mv^2
++O\!\left(\frac{mv^4}{c^2}\right).
+\label{eq:sr3-approx-repeated}
+\end{align}
+첫 번째 식은 모든 \(v<c\)에서 성립한다. 두 번째 식은 \(v/c\ll1\)일 때만 유용하다.
+
+\begin{classroomqa}
+\audiencequestion{에너지 식은 근사식에 불과했습니까?}
+\lecturerresponse{\(E=mc^2+mv^2/2+\cdots\)가 근사식이다. 정확한 결과는 \(E=mc^2/\sqrt{1-v^2/c^2}\)이다. 인자 \(v^2/c^2\)는 분모를 무차원으로 만들고, 분자 \(mc^2\)는 에너지 단위를 갖는다. \lecturetimestamp{01:49:56}}
+\end{classroomqa}
+
+\subsection{시공간 그림을 다시 살펴보기}
+
+칠판에 마지막으로 그린 그림은 실험의 기하학적 모습으로 돌아간다. 붕괴 전에는 정지한 포지트로늄이 수직인 시간꼴 세계선을 따른다. 붕괴 사건에서 그 세계선은 끝나고, 두 영벡터 광자 세계선이 서로 반대되는 공간 방향으로 뻗어 나간다.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_23.png}
+\caption{포지트로늄의 세계선은 하나의 붕괴 사건에서 끝나며, 그 사건에서 두 영벡터 광자 세계선이 뻗어 나온다.}
+\lectureframe{01:53:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{두 광자가 나오는 축은 무엇으로 정해집니까?}
+\lecturerresponse{비편극 상태에는 양자 각분포가 있으며, 개별 붕괴에서는 그 분포에 따라 방향 하나가 무작위로 선택된다. 한 방향이 정해지고 나면 운동량 보존에 의해 두 광자는 서로 정반대 방향으로 나아가지만, 운동량 보존이 그 축을 미리 선택하는 것은 아니다. \lecturetimestamp{01:53:55}}
+\end{classroomqa}
+
+\section{자유 운동 방정식이 말해 주는 것}
+
+불변 작용은 힘의 법칙을 추측해 정한 것이 아니다. 저속에서 뉴턴 역학의 자유 입자 라그랑지안을 재현하는 가장 단순한 국소 로런츠 스칼라로 택한 것이다. 이를 변분하면
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot x^i}\right)=0,
+\end{equation}
+따라서
+\begin{equation}
+\frac{dp_i}{dt}=0.
+\end{equation}
+질량이 영이 아닌 고정된 값이면, 이는 사원속도가 일정하다는 것과 동치다:
+\begin{equation}
+\frac{du^\mu}{d\tau}=0.
+\end{equation}
+그러므로 세계선은 시공간에서 직선이다. 이 하나의 기하학적 진술에는 등속 운동과 공간 방향이 변하지 않는다는 점이 모두 담겨 있다.
+
+\begin{classroomqa}
+\audiencequestion{뉴턴 방정식을 재현하도록 고전 작용을 정하는 것과 비슷하게, 상대론적 작용을 더 근본적인 원리에서 정당화할 수 있습니까?}
+\lecturerresponse{자유 입자의 경우 로런츠 불변성, 세계선을 따른 국소성, 뉴턴 역학의 저속 극한을 요구하면 가장 단순한 작용이 전체 상수 인자만 제외하고 정해진다. 그 오일러--라그랑주 방정식은 운동량이 일정하다는 결과를 주며, 이는 힘이 없는 경우의 뉴턴 역학 결과와 정확히 같다. 상호작용은 추가 검증을 제공한다. 이후에는 전하를 띤 입자를 전기장과 자기장에 결합할 것이다. \lecturetimestamp{01:54:27}}
+\end{classroomqa}
+
+\section{서로 독립적인 두 고전적 극한}
+
+비상대론적 극한과 양자역학의 고전적 극한은 서로 다른 과정이다. 상대론적 보정은 비 \(v/c\)에 의해 정해진다. 양자 효과는 \(\hbar\)에 대한 작용의 크기와 더불어 질량, 계의 크기, 외력이 얼마나 매끄럽게 변하는지 같은 특성에 따라 정해진다.
+
+\begin{classroomqa}
+\audiencequestion{뉴턴 역학을 되찾는 저속 극한은 양자역학이 고전역학으로 바뀌는 극한과 같은 것입니까?}
+\lecturerresponse{아니다. 상대론적 극한은 \(v/c\)에 관한 것이고, 양자에서 고전으로의 극한은 특성 작용에 대한 \(\hbar\)의 크기에 관한 것이다. 이 극한은 흔히 질량이 크거나 외력이 매끄럽게 변할 때 유효해진다. 어떤 계는 양자적이면서 비상대론적일 수도 있고, 상대론적이면서 사실상 고전적일 수도 있으며, 두 조건을 모두 만족하거나 어느 쪽에도 해당하지 않을 수도 있다. \lecturetimestamp{01:57:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{특수상대성이론과 양자역학은 양립할 수 없습니까?}
+\lecturerresponse{아니다. 상대론적 양자 이론은 일관된 이론이며 양자장론으로 이어진다. 널리 알려진 미해결 긴장은 중력을 양자역학에 포함하는 문제에 관한 것이지, 특수상대성이론과 양자 원리를 결합하는 문제에 관한 것이 아니다. 지금까지의 자유 입자 논의에는 중력이 등장하지 않았다. \lecturetimestamp{01:59:01}}
+\end{classroomqa}
+
+지금까지는 힘이 없는 경우의 결과가 완결되었다. 질량을 가진 입자는 시간꼴 직선 세계선을 따르고, 불변 질량은 4-운동량의 노름을 정하며, 에너지와 운동량은 하나의 보존되는 대상의 네 성분이다. 전하와 전자기장을 도입하는 것이 이 자유 운동에서 다음 단계가 될 것이다.
