@@ -1,0 +1,690 @@
+\chapter{하드론 레제 궤적에서 광원뿔 끈까지}
+
+\lectureoverview{끈 이론은 양자 중력 이론으로 시작하지 않았다.
+하드론의 스펙트럼과 산란을 이해하려는 시도에서 출발했다.
+직선 레제 궤적은 확장된 물체를 시사했고,
+파이온--파이온 산란의 쌍대성은 겉보기에 서로 다른 두 과정이 하나의 표면을 서로 다르게 자른 결과일 수 있음을 시사했다. 이 단서들을 따라 세계면 그림으로 나아가고, 하드론 끈을 QCD 플럭스 튜브로 재해석한 다음, 무한운동량계에서 열린 끈의 횡방향 역학을 유도해 보자.
+핵심 결과는 유효 내부 해밀토니안이 질량 제곱을 측정한다는 것이다. 따라서 그 기술에서 \(L^2\)에 비례하는 훅의 법칙 형태의 에너지는 \(L\)에 비례하는 정지 에너지가 되며, 이것이 일정한 장력을 가진 끈의 특징적인 거동이다.}
+
+\section{끈 이론의 하드론 기원}
+
+1968--1970 무렵 끈 이론의 단초가 된 문제는 양성자, 중성자, 특히 중간자와 관련되어 있었다. 쿼크 모형은 이미 진지하게 고려되는 아이디어였지만, 오늘날의 의미에서 하드론의 쿼크 구성이 실험적으로 확립된 것은 아니었다. 글루온은 일반적인 논의에서 훨씬 덜 두드러졌다. 남부는 관련된 게이지장 아이디어를 제안했지만, 양자색역학이라는 정립된 언어는 아직 존재하지 않았다. 당시의 출발점은 오히려 강하게 상호작용하는 입자들이 보여 준 예상 밖으로 풍부한 스펙트럼이었다.
+
+잠시 양성자--중성자 구분을 접어 두고 두 상태를 모두 핵자라고 부르면 편리하다. 핵자보다 무거운 상태들 가운데는 스핀이 더 큰 상태들이 있었고, 그 뒤로는 더 무거우면서 스핀도 더 큰 상태들이 이어졌다. 츄와 프라우치(Chew와 Frautschi)는 세로축에 각운동량, 가로축에 질량 제곱을 놓은 그래프에 이런 계열을 정리했다. 당시의 단위로 양성자 질량은 약 1 BeV였으며, 이 단위는 오늘날 GeV라고 불린다.
+
+각운동량을 \(\hbar\) 단위로 측정하자. 중입자 계열에서 무차원 스핀 값은 반정수이다.
+
+\begin{equation}
+  J=\frac12,\frac32,\frac52,\ldots,
+\end{equation}
+
+반면 중간자 계열의 스핀은 정수이다. 놀라운 경험적 사실은 어느 계열이든 \(M^2\)에 대해 그래프로 나타내면 대략 직선 위에 놓인다는 점이었다. 현대 표기법으로는 다음과 같이 쓴다.
+
+\begin{equation}
+  J\simeq \alpha_0+\alpha' M^2,
+  \label{eq:l01-regge-trajectory}
+\end{equation}
+
+여기서 \(\alpha_0\)은 절편이고 \(\alpha'\)는 레제 기울기이다.
+\editorialnote{강의에서는 관측된 선형 관계와 거의 보편적인 기울기를 강조한다. 절편 표기는 이 관계를 간결하게 나타내기 위해 제시한 것이며, 궤적은 경험적으로 얻은 근삿값이다.}
+
+처음 발견된 직선 자체는 알려진 두 점만 지났기 때문에 설득력이 크지 않았다. 어떤 두 점도 직선 하나를 정하기 때문이다. 놀라운 점은 이후에 새로 발견된 상태들도 계속 같은 직선 가까이에 놓였다는 사실이었다. 중간자 궤적도 같은 구조를 보였다. 파이온은 \(J=0\)에서 시작하며 GeV 규모로 질량이 작고, 로는 \(J=1\)에서 시작한다. 더 높은 여기 상태들도 계속 이어진다. 한 계열에 입자가 다섯, 여섯, 일곱 개 나타나기도 했다. 더욱 놀라운 점은 서로 다른 중입자와 중간자 궤적들이 거의 평행했다는 것이다. 따라서 각운동량이 양자 하나만큼 증가할 때 질량 제곱도 대략 같은 양만큼 증가했다.
+
+\begin{equation}
+  \Delta J=1
+  \quad\Longrightarrow\quad
+  \Delta M^2\simeq \frac{1}{\alpha'}.
+  \label{eq:l01-regge-spacing}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{서로 다른 레제 궤적이 평행하다는 것은 무슨 뜻인가요?\lecturetimestamp{00:09:32}}
+\lecturerresponse{입자 계열 하나를 골라 여기 상태들을 모두 그래프로 나타내면 한 직선 위에 놓입니다. 다른 중간자 또는 중입자 계열에 대해서도 같은 작업을 해 보세요. 절편은 달라도 직선들의 기울기는 대략 같습니다. 따라서 각운동량의 같은 증가량에는 \(M^2\)의 증가량도 대략 같게 듭니다. 이 공통 기울기를 보편적 레제 기울기라고 불렀습니다.}
+\end{classroomqa}
+
+일반적인 확장 물체와 비교하면 이 패턴이 왜 중요했는지 알 수 있다. 농구공을 회전시키면 회전 에너지가 증가하지만, 궤적은 직선이 아니라 곡선이며 각속도가 충분히 커지면 공은 찢어진다. 원자에도 회전 여기가 있지만, 결국 이온화되어 궤적이 끝난다. 하드론에서는 훨씬 단순한 계열이 나타났고, 당시 얻을 수 있는 자료에서는 그 계열이 끝나려는 기미가 보이지 않았다.
+
+이 스펙트럼은 하드론이 점입자처럼 거동하지 않는다는 것을 보여 주었다. 점입자에는 회전하거나 변형할 공간 구조가 없다. 전자에서는 더 높은 스핀을 가진 내부 상태의 탑이 관측되지 않았으며, 이에 따라 현재 실험 한계 안에서는 점입자로 여겨진다. 반면 하드론은 회전 속도를 높일 수 있다. 그 스펙트럼은 하드론이 복합체임을 시사하고, 스핀과 질량의 관계는 각운동량이 커질수록 물체가 변형됨을 암시한다.
+
+\section{파이온--파이온 산란에서의 쌍대성}
+
+분광학에서 하나의 단서를 얻었다. 파이온--파이온 산란에서도 또 다른 단서를 얻었다. 두 파이온은 로와 비슷한 공명 상태를 이루었다가 나중에 다시 두 파이온으로 나올 수 있다. 표준 파인만 도표에서는 이것이 소멸과 재생성 과정이며, 관례적으로 \(s\)-채널 과정이라 부른다. 같은 기본 도표를 옆으로 돌려 보면 교차된 \(t\)-채널 과정이 되며, 이 경우 로와 비슷한 입자가 두 파이온 사이에서 교환된다.
+
+로만 있는 것은 아니다. 로는 레제 계열에 속하므로, 두 채널 어느 쪽에서든 로와 모든 여기 동반 상태가 포함되어야 할 것처럼 보인다. 개략적으로 쓰면 다음과 같다.
+
+\begin{equation}
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(s)}_{\rho_n}(s,t),
+  \qquad
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(t)}_{\rho_n}(s,t).
+  \label{eq:l01-channel-sums}
+\end{equation}
+
+이 식들은 단순히 더해야 하는 두 근사가 아니다. 수치 연구에 따르면 소멸 채널에서 공명 상태 탑을 합산하는 것만으로도 교환 채널에서 예상되는 기여를 대략 얻을 수 있었다. 반대로 교환 상태들의 탑으로도 공명 상태 기술을 재현할 수 있었다. 따라서 두 탑 전체를 더하면 같은 물리를 두 번 세는 셈인 듯했다. 일반적인 섭동론의 계산 규칙에 따르면 도표가 두 개 있으면 둘 다 포함해야 한다. 그러나 하드론 산란 진폭은 두 채널 기술이 쌍대임을 시사했다.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth]{lecture_01_figure_01.png}
+  \caption{칠판에는 츄--프라우치 그래프와 소멸 및 교차 채널 도표가 함께 그려져 있어, 스펙트럼과 산란의 단서가 하나의 문제로 연결된다.}
+  \lectureframe{00:14:20}
+  \label{fig:l01-regge-duality-board}
+\end{figure}
+
+같은 관계를 간결한 개략도로 분리해 나타낼 수 있다. 첫 번째 패널은 선형 스펙트럼을 나타내고, 나머지 두 패널은 동일한 산란 진폭을 채널별로 전개하는 서로 다른 방식을 나타낸다.
+
+\begin{figure}[H]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}[>=Latex,thick]
+    \begin{scope}
+      \draw[->] (0,0) -- (4.2,0) node[right] {$M^2$};
+      \draw[->] (0,0) -- (0,3.4) node[above] {$J$};
+      \draw[blue!65!black] (0.45,0.35) -- (3.55,2.95);
+      \draw[orange!80!black] (0.75,0.20) -- (3.85,2.80);
+      \foreach \x/\y in {0.65/0.52,1.35/1.10,2.05/1.69,2.75/2.27,3.45/2.86}
+        \fill[blue!65!black] (\x,\y) circle (0.07);
+      \foreach \x/\y in {0.95/0.37,1.65/0.95,2.35/1.54,3.05/2.12,3.75/2.71}
+        \fill[orange!80!black] (\x,\y) circle (0.07);
+      \node at (2.1,-0.55) {parallel Regge families};
+    \end{scope}
+    \begin{scope}[xshift=5.7cm]
+      \draw[->] (-1.5,1.2) -- (-0.3,0.25);
+      \draw[->] (-1.5,-1.2) -- (-0.3,-0.25);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.25) -- (0,-0.25);
+      \draw[->] (0.3,0.25) -- (1.5,1.2);
+      \draw[->] (0.3,-0.25) -- (1.5,-1.2);
+      \node at (0,-1.75) {$s$-channel tower};
+    \end{scope}
+    \begin{scope}[xshift=10.5cm]
+      \draw[->] (-1.5,1.2) -- (1.5,1.2);
+      \draw[->] (-1.5,-1.2) -- (1.5,-1.2);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.95) -- (0,-0.95);
+      \node at (0,-1.75) {$t$-channel tower};
+    \end{scope}
+  \end{tikzpicture}}
+  \caption{평행한 레제 계열과 하드론 쌍대성에 관련된 두 채널 전개.}
+  \label{fig:l01-regge-duality-redraw}
+\end{figure}
+
+\section{하나의 세계면, 두 가지 단면}
+
+자연스러운 대응은 두 가지 방식으로 읽을 수 있는 하나의 기하학적 역사를 찾는 것이었다. 파이온을 쿼크--반쿼크 쌍으로 나타내고 시간을 위쪽으로 흐르게 하자. 입자의 1차원 궤적만 그리는 대신 쿼크의 궤적이 둘러싸는 영역을 채워 넣는다. 이 2차원 역사를 수평으로 자르면 두 개의 들어오는 끈이 합쳐졌다가 다시 갈라지는 모습을 볼 수 있다. 다른 방향으로 자르면 한쪽에서 다른 쪽으로 교환되는 끈이 나타난다. 두 파인만 채널 그림은 더 이상 서로 독립적인 메커니즘이 아니라, 하나의 표면을 서로 다르게 분해해 기술한 결과다.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_02.png}
+  \caption{칠판에 그린 쿼크 선의 위상. 동일한 2차원 역사를 서로 다르게 자르면 공명과 교환이라는 두 가지 해석이 나온다.}
+  \lectureframe{00:17:50}
+  \label{fig:l01-worldsheet-topology-board}
+\end{figure}
+
+쿼크와 반쿼크 사이의 영역에서 한 가지 아이디어가 더 나온다. 특정 시각의 단면에는 양 끝점 둘과 그 사이의 구간 전체를 채우는 무언가가 있다. 그것은 1차원 물체, 즉 끈이다. 상호작용 중에 끈은 2차원 표면을 쓸고 지나간다.
+
+\begin{definition}
+점입자의 시공간 역사는 \emph{세계선}이다. 끈의 시공간 역사는 \emph{세계면}이다. 한 순간의 끈은 그 세계면을 공간적으로 자른 단면이다.
+\end{definition}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_03.png}
+  \caption{끝점 궤적 사이를 채운 칠판의 표면. 시간 단면은 이 표면을 가로질러 1차원 끈을 이룬다.}
+  \lectureframe{00:19:15}
+  \label{fig:l01-worldsheet-filled-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex,scale=0.95]
+    \fill[blue!10]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3)
+      -- (2.6,2.3)
+      .. controls (1.0,1.0) and (1.0,0.5) .. (0.2,0)
+      .. controls (1.0,-0.4) and (1.0,-1.0) .. (2.6,-2.3) -- cycle;
+    \draw[blue!65!black]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3);
+    \draw[blue!65!black]
+      (2.6,-2.3) .. controls (1.0,-1.0) and (1.0,-0.4) .. (0.2,0)
+      .. controls (1.0,0.5) and (1.0,1.0) .. (2.6,2.3);
+    \draw[red!75!black,dashed] (-2.9,-1.15) -- (2.9,-1.15)
+      node[right] {time slice};
+    \draw[orange!80!black,dashed] (-1.55,-2.5) -- (1.55,2.5)
+      node[above] {crossed slicing};
+    \draw[->] (3.45,-1.7) -- (3.45,1.8) node[above] {time};
+    \node[blue!65!black] at (0,-2.7) {one world sheet};
+  \end{tikzpicture}
+  \caption{세계면을 깔끔하게 나타낸 개략도. 서로 다른 단면은 동일한 표면을 서로 다른 중간 채널 기술로 정리한다.}
+  \label{fig:l01-worldsheet-redraw}
+\end{figure}
+
+이러한 기하학적 재구성은 탐색적 시도였으며, 제1원리에서 완전한 이론을 연역한 것은 아니었다. 사람마다 초기 끈 그림에 도달한 경로는 달랐다. 이 그림의 강점은 하나의 확장된 물체가 두 관측 결과를 모두 설명할 수 있다는 데 있었다. 끈은 회전하고 변형될 수 있으며, 그 세계면은 쌍대 산란 채널을 부호화할 수 있다.
+
+\begin{classroomqa}
+\audiencequestion{쿼크 사이를 보통의 교환 입자로 연결하는 대신 끈 같은 다리를 도입하는 이유는 무엇인가요?\lecturetimestamp{00:21:20}}
+\lecturerresponse{한순간에 국소화된 교환 입자만 있는 것이 아닙니다. 쿼크와 반쿼크가 있고, 그 사이의 모든 지점에도 구조가 있습니다. 그 구조가 근본적으로 연속적인지, 아니면 연속체를 근사하는 조밀한 구성 요소들의 집합인지는 첫 그림에서 결정되지 않았습니다. 중요한 점은 구간 전체가 채워져 있고, 관측된 궤적이 양 끝에 추를 단 보통의 구두끈처럼 끝나는 경향을 보이지 않았다는 것입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{표준 모형으로 파이온 산란을 설명할 수 있나요?
+\lecturetimestamp{00:22:45}}
+\lecturerresponse{네, 다만 유용성은 에너지 영역에 따라 달라집니다. 낮은 에너지에서는 QCD와 그 저에너지 기술을 통해 표준 모형이 파이온 산란의 상당 부분을 설명합니다. 여러 하드론 교환 상태들의 탑이 중요한 고에너지에서는 직접 계산이 더 어려워지며, 끈과 같은 체계로 정리하는 편이 더 유용할 수 있습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{초기 실험으로 레제 궤적이 끝나지 않는다는 사실이 확립되었나요?\lecturetimestamp{00:23:37}}
+\lecturerresponse{아닙니다. 관측된 계열에서 아직 끝점이 나타나지 않았다는 사실만 확인되었습니다. 무한히 늘어날 수 있다는 추론은 시사적인 외삽이지, 무한대를 측정한 결과가 아닙니다.}
+\end{classroomqa}
+
+\section{플럭스 튜브와 규모의 변화}
+
+현대 QCD는 오래된 그림에 장론적 해석을 부여한다. 쿼크와 반쿼크는 글루온장의 서로 반대인 원천으로 작용한다. 일반적인 전기역학에서는 전하를 서로 떼어 놓을수록 전기 플럭스가 옆으로 퍼진다. 거리가 멀어지면 장이 약해지므로 전하 사이 영역은 일정한 횡방향 분포를 유지하지 않는다. QCD는 비선형 이론이다. 그 동역학은 관련된 색전기 플럭스를 쿼크와 반쿼크를 잇는 가느다란 튜브 안에 가둘 수 있다.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_04.png}
+  \caption{자유롭게 퍼지는 쿨롱 장이 아니라 가느다란 플럭스 튜브로 그린 쿼크와 반쿼크의 장선.}
+  \lectureframe{00:25:15}
+  \label{fig:l01-qcd-flux-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[orange!14,rounded corners=8pt] (-3.0,-0.55) rectangle (3.0,0.55);
+    \draw[orange!80!black,thick,rounded corners=8pt]
+      (-3.0,-0.55) rectangle (3.0,0.55);
+    \fill[blue!70!black] (-3.35,0) circle (0.17);
+    \fill[red!75!black] (3.35,0) circle (0.17);
+    \node[below] at (-3.35,-0.22) {$q$};
+    \node[below] at (3.35,-0.22) {$\bar q$};
+    \foreach \y in {-0.30,0,0.30}
+      \draw[->,orange!85!black] (-3.05,\y) -- (3.05,\y);
+    \draw[<->] (-2.9,-1.05) -- (2.9,-1.05) node[midway,below] {$L$};
+    \node at (0,0.92) {approximately fixed transverse profile};
+  \end{tikzpicture}
+  \caption{가둔 플럭스 튜브는 퍼지지 않은 채 길어진다. 길이 단위당 에너지가 일정하면 \(E=TL\)가 된다.}
+  \label{fig:l01-qcd-flux-redraw}
+\end{figure}
+
+입자에 관한 언어와 장에 관한 언어는 같은 내용을 다르게 말한다. 장 기술에서는 양 끝점 사이의 거리가 벌어져도 튜브가 대략 같은 장 세기와 단면적을 유지한다. 구성 요소 그림에서는 늘어날 때 생기는 에너지가 양 끝점 사이에 더 많은 글루온 구조를 만들어 낸다. 일반적인 고무줄은 분자 수가 일정하므로 분자들이 서로 멀어지다가 재료가 끊어진다. 틈이 벌어질 때마다 새 분자가 하나씩 끼워진다고 상상해 보자. 그러면 고무줄이 길어져도 길이 방향의 밀도는 일정하게 유지될 수 있다. 이것이 글루온장에 빗댄 의도다. 튜브는 끊어지기 직전까지 가늘어지는 대신 길이를 늘린다.
+
+\begin{classroomqa}
+\audiencequestion{전자를 이루는 끈도 글루온으로 구성되나요?\lecturetimestamp{00:28:08}}
+\lecturerresponse{그런 결론은 나오지 않습니다. 하드론 끈은 양성자 규모의 QCD 물체입니다. 양자 중력과 관련된 가설상의 기본 끈은 훨씬 작은 플랑크 규모에 존재하며, 전자가 하드론 글루온 끈이라는 증거는 없습니다. 놀라운 사실은 두 규모에서 관련된 수학이 나타났다는 것이지, 물리적 대상들이 동일하다는 것이 아닙니다.}
+\end{classroomqa}
+
+강입자 그림을 완전한 상호작용 끈 이론으로 발전시키려는 시도는 유망했지만, 강입자 이론으로서 바라던 이론을 완전히 만들어 내지는 못했다. 수학적 모형에는 질량이 없는 스핀 2 입자가 거듭 등장했다. 강입자 이론에서는 이 상태가 원치 않는 예측처럼 보였지만, 중력 이론에서는 중력자와 양자수가 정확히 일치했다. 조엘 셰르크와 존 슈바르츠는 결정적인 재해석을 했다. 어쩌면 이 이론은 강입자가 아니라 양자 중력에 관해 말해 주고 있었던 것일 수 있다. 초기 강입자 문제는 수학으로 가는 길을 제공했지만, 강입자 이론과 기본 이론으로서의 응용은 물리적으로 서로 다르다.
+
+\begin{classroomqa}
+\audiencequestion{플럭스 선은 양의 끝점에서 음의 끝점으로 어떻게 이어지나요?\lecturetimestamp{00:31:46}}
+\lecturerresponse{막대자석의 자기력선이 북극에서 남극으로 향하듯, 한 원천에서 나와 다른 원천으로 들어갑니다. 양 끝점의 반대 표지는 플럭스의 방향을 나타냅니다. 막대자석에도 북극 두 개가 아니라 서로 반대인 두 극이 있습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{끈은 연속적인가요, 아니면 이산적인가요?
+\lecturetimestamp{00:32:45}}
+\lecturerresponse{양자 이론에서는 이 구분이 미묘합니다. 전자기장은 연속장으로 표현되지만 이산적인 양자도 가집니다. 마찬가지로 끈은 연속적으로 다룰 수 있고, 그 여기 상태는 양자화됩니다. 어떤 질문을 하는지에 따라 두 기술 모두 유효할 수 있습니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{세계면을 가로지르는 시공간 단면의 각도를 바꾸어도 교차선은 여전히 끈인가요?\lecturetimestamp{00:34:20}}
+\lecturerresponse{네. 동시성 단면을 바꾸는 것은 로런츠 변환입니다. 새 단면은 표면과 교차하여 운동 상태가 다르게 보이는 끈을 만듭니다. 질량중심이 정지해 있는 끈도 내부까지 정지한 것은 아니며, 진동할 수 있습니다. ``정지''라는 말은 질량중심에 대해서만 가리킵니다.}
+\end{classroomqa}
+
+\section{상대론적 에너지의 두 가지 전개}
+
+확장되어 진동하는 물체를 상대론적으로 직접 기술하기는 까다롭다. 유용한 전략은 관련 운동이 보통의 비상대론적 역학 형태를 띠는 기준계를 찾는 것이다. 먼저 단일 입자에서 시작하자. 비상대론적으로는 다음과 같이 쓴다.
+
+\begin{equation}
+  E_{\mathrm{nr}}=\frac{\bm p^2}{2m}+B,
+  \label{eq:l01-nonrel-energy}
+\end{equation}
+
+여기서 \(B\)는 전체 운동량과 무관한 내부 에너지 또는 결합 에너지다. 상호작용하지 않는 입자가 여러 개라면 운동 에너지 항과 내부 상수 항을 각각 더한다. 운동을 결정하는 것은 에너지 차이뿐이므로, 상태에 무관한 가산 상수는 흔히 생략할 수 있다.
+
+정확한 상대론적 에너지는 다음과 같다.
+
+\begin{equation}
+  E=\sqrt{\bm p^2c^2+m^2c^4}.
+  \label{eq:l01-rel-energy-c}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_05.png}
+  \caption{비상대론적 운동 에너지와 정확한 상대론적 제곱근. 논의 중 바로잡은 \(c\)의 거듭제곱을 반영했다.}
+  \lectureframe{00:38:45}
+  \label{fig:l01-relativistic-energy-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{상대론적 공식에는 칠판에 처음 쓴 거듭제곱 대신 \(p^2c^2\)와
+\(m^2c^4\)가 들어가야 하나요?
+\lecturetimestamp{00:39:12}}
+\lecturerresponse{네. 차원 일관성을 고려하면 식은 \(E^2=p^2c^2+m^2c^4\)이어야 합니다. 비상대론적 극한을 얻은 다음에는 \(c=1\)로 놓겠지만, 여기서 거듭제곱을 그대로 두면 전개가 어떻게 되는지 분명히 보입니다.}
+\end{classroomqa}
+
+\(p^2c^2\ll m^2c^4\)일 때, \(m^2c^4\)를 인수로 묶고 다음을 이용한다:
+\(\sqrt{1+\epsilon}\simeq1+\epsilon/2\)
+
+\begin{align}
+  E
+  &=mc^2\sqrt{1+\frac{p^2}{m^2c^2}}
+  \notag\\
+  &\simeq mc^2+\frac{p^2}{2m}.
+  \label{eq:l01-low-momentum-expansion}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_06.png}
+  \caption{작은 운동량 전개를 통해 정지 에너지와 익숙한 비상대론적 운동 에너지가 나온다.}
+  \lectureframe{00:41:30}
+  \label{fig:l01-low-momentum-board}
+\end{figure}
+
+이 근사가 성립하려면 질량중심의 운동이 느리기만 해서는 부족하다. 상자 자체는 천천히 움직여도 내부 입자들은 빛의 속도에 가깝게 움직일 수 있다. 이 경우 내부 동역학은 여전히 상대론적이다. 보통의 비상대론적 극한이 성립하려면 선택한 기준계에서 모든 관련 구성 입자의 속도가 작아야 한다.
+
+또 다른 유용한 극한이 있다. 전체 계를 \(z\)축 방향으로 부스트하여 모든 구성 입자가 큰 양의 종방향 운동량 \(P_{zi}\)을 갖게 한다. 처음에 뒤로 움직이던 구성 입자도 충분히 큰 부스트를 가하면 앞으로 움직이게 된다. 횡방향 운동량과 정지 질량은 그대로 유지된다.
+
+\begin{equation}
+  P_{zi}\gg |p_{xi}|,|p_{yi}|,m_i,
+  \qquad
+  p_{\perp i}^2=p_{xi}^2+p_{yi}^2,
+\end{equation}
+
+이제부터는 \(c=1\)로 놓는다. 큰 \(P_{zi}\)에 대해 전개하면 다음을 얻는다.
+
+\begin{align}
+  E_i
+  &=\sqrt{P_{zi}^2+p_{\perp i}^2+m_i^2}
+  \notag\\
+  &=P_{zi}\sqrt{1+\frac{p_{\perp i}^2+m_i^2}{P_{zi}^2}}
+  \notag\\
+  &\simeq P_{zi}
+  +\frac{p_{\perp i}^2+m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-one-particle}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_07.png}
+  \caption{큰 \(P_z\)에 대한 제곱근 전개. 횡방향 운동량과 질량은 작은 양으로 남겨 둔다.}
+  \lectureframe{00:46:45}
+  \label{fig:l01-large-pz-board}
+\end{figure}
+
+구성 입자가 여러 개일 때는 다음과 같다.
+
+\begin{equation}
+  E\simeq
+  \sum_i P_{zi}
+  +\sum_i\frac{p_{\perp i}^2}{2P_{zi}}
+  +\sum_i\frac{m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-sum}
+\end{equation}
+
+첫 번째 항은 보존되는 전체 종방향 운동량이다. 이 값은 매우 크지만 고정된 가산 기여이기도 하다. 이를 유지하거나 빼도 에너지 차이는 변하지 않는다. 해밀토니안에 다른 보존량을 더해도 운동 방정식이 바뀌지 않는 것과 같다. 따라서 동역학을 나타내는 부분은 다음과 같다.
+
+\begin{equation}
+  \begin{aligned}
+    H_{\perp}=E-P_z
+    &\simeq
+    \sum_i\left(
+      \frac{p_{\perp i}^2}{2P_{zi}}
+      +\frac{m_i^2}{2P_{zi}}
+    \right),\\
+    P_z&=\sum_iP_{zi}.
+  \end{aligned}
+  \label{eq:l01-transverse-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_08.png}
+  \caption{여러 입자의 항을 보존되는 종방향 운동량, 횡방향 운동 에너지, 질량에 따른 내부 항으로 분해한 식.}
+  \lectureframe{00:49:16}
+  \label{fig:l01-energy-sum-board}
+\end{figure}
+
+\section{무한운동량계}
+
+앞에서 살펴본 극한은 역사적으로 무한운동량계라고 불렸으며, 오늘날에는 보통 광원뿔 좌표를 이용해 정식화한다. 해밀토니안에서 그 의미를 직접 읽을 수 있다. 양자역학에서는
+
+\begin{equation}
+  i\hbar\frac{\partial}{\partial t}\ket{\psi}=H\ket{\psi}.
+  \label{eq:l01-time-evolution}
+\end{equation}
+
+\(H_{\perp}\)의 모든 비자명한 항은 \(1/P_z\)의 크기만큼 스케일한다. 부스트가 커질수록 에너지 준위 차이는 줄고 변화는 더 느려진다. 이것이 시간 지연이다. 방사성 계는 큰 부스트를 받으면 붕괴가 더 느려지는 것처럼 보이며, 그에 비례해 더 오랫동안 관측하면 이를 보정할 수 있다. 느려져도 동역학이 사라지는 것은 아니다. 동역학의 시계가 재조정되는 것이다.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_09.png}
+  \caption{칠판에서는 감소된 에너지를 부스트된 계의 느려진 시간 변화를 일으키는 해밀토니안으로 본다.}
+  \lectureframe{00:52:57}
+  \label{fig:l01-hamiltonian-board}
+\end{figure}
+
+횡방향 항은 정확히 비상대론적 형태인 \(p^2/(2m)\)를 띠지만, 질량의 역할은 \(P_z\)가 맡는다. 이는 물리적으로 타당하다. 종방향 운동량이 클수록 입자의 옆 방향 편향이 어려워지므로 횡방향 관성처럼 작용한다. 항 \(m_i^2/(2P_{zi})\)는 2차원 운동 상태에 의존하지 않으므로 내부 에너지 또는 결합 에너지 역할을 한다. 3차원 공간의 상대론적 운동은 부스트에 수직인 두 차원에서 비상대론적으로 보이는 운동이 된다.
+
+이제 상대론적 끈에 질량과 용수철로 이루어진 간단한 모형을 사용할 수 있다. 이 모형은 끈이 정지계에서 느리게 움직인다고 가정하는 것이 아니다. 횡방향 동역학이 필요한 비상대론적 구조를 갖는 기준계를 이용하는 것이다.
+
+\section{구슬과 용수철로 만든 열린 끈}
+
+열린 끈, 즉 끝점이 두 개인 끈을 생각하자. 나중에 그 끝점에 무언가를 붙일 수 있지만, 지금은 끈 자체에 관심을 둔다. 횡방향 위치 \(\bm X_i(t)=(X_i(t),Y_i(t))\)에 구슬을 놓고 동일한 용수철로 연결해 근사한다. 이산 해밀토니안은 다음과 같다.
+
+\begin{equation}
+  H_N=\sum_{i=1}^{N}
+  \left[
+    \frac{\mu_N}{2}\dot{\bm X}_i^{\,2}
+    +\frac{k_N}{2}
+      \left(\bm X_{i+1}-\bm X_i\right)^2
+  \right].
+  \label{eq:l01-discrete-string}
+\end{equation}
+
+운동 에너지만 있으면 구슬들은 서로 멀어져 날아간다. 최근접 이웃 사이의 훅 항이 있어야 구슬들이 끈을 이룬다.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{lecture_01_figure_10.png}
+  \caption{횡방향 좌표 두 개를 가진 열린 끈을 구슬과 용수철로 처음 나타낸 그림.}
+  \lectureframe{01:00:30}
+  \label{fig:l01-bead-chain-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \foreach \x in {0,...,8} {
+      \fill[blue!65!black] ({0.85*\x},0) circle (0.09);
+    }
+    \foreach \x in {0,...,7} {
+      \draw[decorate,decoration={zigzag,segment length=4pt,amplitude=2pt}]
+        ({0.85*\x+0.10},0) -- ({0.85*\x+0.75},0);
+    }
+    \draw[->] (3.4,0.15) -- (3.4,1.25) node[above] {$\bm X_i(t)$};
+    \draw[<->] (0,-0.65) -- (6.8,-0.65)
+      node[midway,below] {$0\leq\sigma\leq\pi$};
+  \end{tikzpicture}
+  \caption{열린 끈의 이산 조절자. 연속체 극한을 취하기 전에 구슬 질량과 용수철 상수를 간격에 따라 스케일한다.}
+  \label{fig:l01-bead-chain-redraw}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_11.png}
+  \caption{연속체 극한을 취하기 전에 이산 운동 에너지 항과 훅 항을 함께 쓴 식.}
+  \lectureframe{01:01:30}
+  \label{fig:l01-discrete-energy-board}
+\end{figure}
+
+구슬의 수가 늘어날수록 각 구슬의 질량 \(\mu_N\)는 0으로 가야 끈 전체의 관성이 유한하게 유지된다. 동시에 용수철 상수 \(k_N\)는 커져야 한다. 같은 재료의 짧은 조각보다 긴 고무 띠를 일정한 길이만큼 늘리는 편이 쉽다. 따라서 연속체 재료를 그대로 유지하려면 서로 가까워지는 이웃 점들을 더 강하게 연결해야 한다.
+
+끈을 따라가는 좌표 \(\sigma\)를 도입하자. 그 좌표의 수치 범위는 관례에 따라 정한다. 다음과 같이 택하면
+
+\begin{equation}
+  0\leq\sigma\leq\pi
+\end{equation}
+
+편리하다. 나중에 닫힌 끈을 \(0\)부터 \(2\pi\)까지 매개화할 수 있기 때문이다. 합은 적분이 되고, 최근접 이웃 사이의 차분은 미분이 된다.
+
+\begin{equation}
+  \sum_i\longrightarrow\int_0^\pi d\sigma,
+  \qquad
+  \bm X_{i+1}-\bm X_i
+  \longrightarrow
+  \partial_\sigma\bm X.
+  \label{eq:l01-continuum-replacements}
+\end{equation}
+
+간격에 의존하는 상수들을 \(t\), \(\sigma\), \(\bm X\)의 정규화에 흡수하면 연속체 해밀토니안은 다음 형태가 된다.
+
+\begin{equation}
+  H_{\mathrm{string}}=
+  \frac12\int_0^\pi d\sigma
+  \left[
+    \left(\partial_t\bm X\right)^2
+    +\left(\partial_\sigma\bm X\right)^2
+  \right].
+  \label{eq:l01-continuum-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_12.png}
+  \caption{구슬들의 합에서 \(\int_0^\pi d\sigma\)로 넘어가면서, 최근접 이웃 사이의 차분을 \(\partial_\sigma\bm X\)로 바꾸는 칠판의 전개.}
+  \lectureframe{01:05:00}
+  \label{fig:l01-continuum-board}
+\end{figure}
+
+첫 번째 항은 두 횡방향의 운동 에너지다. 두 번째 항은 끈을 따라 늘어나는 정도를 나타낸다. 해밀토니안이므로 두 항 모두 부호가 양이다. 라그랑지안에서는 퍼텐셜 항 앞에 음의 부호가 붙는다. 정확한 계수는 관례에 따라 달라지며 이 단계에서는 정해지지 않았다. 중요한 것은 운동 에너지와 늘어남 에너지의 구조다.
+
+질량중심 운동과 상대 운동을 분리하자. 모든 점을 같은 양만큼 옮기면 입자 전체가 이동한다. 진동, 굽힘, 상대적인 늘어남은 내부 운동이다. 구성 요소들이 내부적으로 움직여도 양성자나 원자 또는 다른 복합체를 입자라고 부를 수 있다. 이 점에서 끈도 다르지 않다.
+
+\section{해밀토니안이 질량 제곱을 측정하는 이유}
+
+천천히 움직이는 물체의 경우 정지 에너지는 질량에 비례한다. 그러나 무한운동량 기술에서는 내부 기여가 \(M^2/(2P_z)\)의 형태로 나타난다. 공통 종방향 운동량과 그에 따른 시간 재조정을 고정하면, 끈의 내부 해밀토니안은 물체 전체의 불변 질량 제곱에 비례한다.
+
+\begin{equation}
+  H_{\mathrm{int}}\propto M^2.
+  \label{eq:l01-hint-mass-squared}
+\end{equation}
+
+\editorialnote{더 구체적으로, 광원뿔 운동학에서는 \(M^2=2P^+P^- - \bm P_\perp^2\) 형태의 불변 관계가 성립한다. 질량중심 횡방향 기준계에서 \(P^+\)를 고정하면, 광원뿔 해밀토니안 \(P^-\)는 따라서 \(M^2\)에 비례한다. 강의에서는 정규화의 세부 사항을 생략하고 논증에 필요한 비례 관계만 남긴다.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_13.png}
+  \caption{칠판에서는 끈의 내부 에너지를 끈 전체 상태의 질량 제곱과 동일시한다.}
+  \lectureframe{01:10:30}
+  \label{fig:l01-mass-squared-board}
+\end{figure}
+
+진동하는 끈은 서로 결합된 진동자들의 집합이다. 전체 양자화는 뒤로 미루지만, 중요한 스펙트럼 특성은 이미 드러난다. 조화 진동자의 에너지는 이산적인 단계로 증가한다. 이 내부 에너지가 \(M^2\)에 기여하므로 끈의 여기 상태는 자연스럽게 질량 제곱의 이산적인 단계를 만들어 낸다. 바로 이것이 강의 서두에서 살펴본 레제 그래프의 구조다.
+
+\begin{classroomqa}
+\audiencequestion{\(M\)은 끈 전체의 질량인가요? 그 질량을 두 배로 하면 이에 대응하는 \(M^2\) 기여는 네 배가 되나요?
+\lecturetimestamp{01:12:10}}
+\lecturerresponse{네. \(M\)은 진동, 늘어남 및 그 밖의 모든 내부 기여를 포함하는 끈 전체 상태의 정지 질량입니다. 유효 부스트 해밀토니안은 \(M^2\)에 비례하므로, 질량이 두 배인 상태는 그 질량 제곱 값이 네 배입니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{정지 질량이 0인 광자는 이 기술에 어떻게 포함되나요?
+\lecturetimestamp{01:12:52}}
+\lecturerresponse{질량이 없는 상태는 \(M=0\)에 해당합니다. 양의 진동자 기여가 어떻게 합쳐져 그런 상태를 만들 수 있는지는 양자화된 이론에서 중요한 문제이지, 여기서 다루는 고전 모형으로 결론이 난 문제는 아닙니다. 이 단계에서 \(M\)은 단순히 전체 정지 질량을 나타내며, 양자역학은 아직 도입되지 않았습니다.}
+\end{classroomqa}
+
+이제 정지해 있는 끈을 균일하게 늘여 물리적 길이 \(L\)로 만든다. 운동에너지 항은 사라지고, 길이가 \(\pi\)인 매개변수 구간에서
+
+\begin{equation}
+  \left|\partial_\sigma\bm X\right|\simeq\frac{L}{\pi}.
+\end{equation}
+
+따라서,
+
+\begin{align}
+  H_{\mathrm{stretch}}
+  &\propto
+  \int_0^\pi d\sigma
+    \left(\partial_\sigma\bm X\right)^2
+  \notag\\
+  &\simeq
+  \pi\left(\frac{L}{\pi}\right)^2
+  \propto L^2.
+  \label{eq:l01-hooke-l2}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_14.png}
+  \caption{끈을 균일하게 늘인 배치로부터 \(H_{\mathrm{stretch}}\propto L^2\), 따라서 \(M\propto L\)임을 추론한다.}
+  \lectureframe{01:15:30}
+  \label{fig:l01-length-relation-board}
+\end{figure}
+
+이는 유효한 횡방향 역학에서 훅의 법칙과 같은 거동이다. 그러나 왼쪽의 양은 \(M^2\)에 비례하며, \(M\)에는 비례하지 않는다. 따라서
+
+\begin{equation}
+  M^2\propto L^2,
+  \qquad
+  M\propto L.
+  \label{eq:l01-mass-length}
+\end{equation}
+
+정지계에서 에너지는 단위계 \(c=1\)에서 \(E_{\mathrm{rest}}=M\)이다. 비례상수를 끈의 장력 \(T\)로 쓰면,
+
+\begin{equation}
+  E_{\mathrm{rest}}=TL.
+  \label{eq:l01-string-tension}
+\end{equation}
+
+이 결과는 플럭스 튜브 그림과 일치한다. 균일한 전기장이나 자기장은 균일한 에너지 밀도를 갖는다. 플럭스가 일정한 단면적의 튜브 안에 갇혀 있다면, 길이가 한 단위 늘어날 때마다 같은 양의 에너지가 더해진다. 이와 동등하게, 새로 열린 틈마다 새로운 자유도가 채워지는 구성 요소 그림에서는 단위 길이당 에너지가 일정하다. 끈의 장력은 바로 그 단위 길이당 에너지다.
+
+이 결론은 간접적으로 얻은 것이다. 임의의 고무줄을 상대론적 속도로 움직이면 저절로 \(E=TL\)을 갖게 된다는 주장이 아니다. 논증은 큰 부스트로부터 얻어지는 횡방향 비상대론적 기술에서 출발해 내부 에너지를 \(M^2\)와 동일시한 다음에야 그 결과를 정지계 에너지로 다시 옮긴다.
+
+\section{두 기준계에서 본 동일한 물체}
+
+\(M\)과 \(M^2\)의 구분은 놓치기 쉬우므로, 두 전개를 나란히 놓고 살펴볼 만하다. \(c=1\)로 두면,
+
+\begin{align}
+  E&=\sqrt{p^2+M^2}
+  \simeq M+\frac{p^2}{2M},
+  &&p\ll M,
+  \label{eq:l01-rest-expansion-again}\\
+  E&=\sqrt{P_z^2+M^2}
+  \simeq P_z+\frac{M^2}{2P_z},
+  &&P_z\gg M.
+  \label{eq:l01-boost-expansion-again}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_15.png}
+  \caption{분량 뒤에서 다시 제시하는 작은 운동량 전개. 여기서는 내부 정지 에너지를 \(M\)로 읽는다.}
+  \lectureframe{01:28:00}
+  \label{fig:l01-rest-expansion-board-again}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_16.png}
+  \caption{상보적인 큰 운동량 전개. 여기서는 잔여 에너지가 \(M^2/(2P_z)\)에 비례한다.}
+  \lectureframe{01:31:00}
+  \label{fig:l01-boost-expansion-board-again}
+\end{figure}
+
+첫 번째 전개에서는 정지 에너지를 질량과 동일시하고, 보통의 관성은 \(M\)와 동일시한다. 두 번째 전개에서는 보존되는 항 \(P_z\)을 제거하고 횡방향 관성을 \(P_z\)로 나타내며, 내부 에너지는 \(M^2/(2P_z)\)로 표현한다. 어느 기준계에서나 질량은 끈의 길이에 비례한다. 달라지는 것은 질량의 어떤 함수가 잔여 해밀토니안으로 나타나는가이다.
+
+\begin{classroomqa}
+\audiencequestion{로렌츠 부스트는 물리학을 바꾸지 않아야 한다. 그런데 왜 부스트된 끈은 다른 에너지 법칙을 따르는 것처럼 보이는가?
+\lecturetimestamp{01:25:35}}
+\lecturerresponse{물리가 달라지는 것은 아니다. 두 기술 모두에서 \(M\propto L\)이고 \(M^2\propto L^2\)이다. 정지계에서는 관련 에너지가 \(M\)이다. 큰 부스트 뒤에는 보존되는 \(P_z\)을 따로 떼어 내므로, 남은 해밀토니안은 \(M^2\)에 비례한다. 부스트가 바꾸는 것은 유용한 기술 방식이지, 불변 질량--길이 관계가 아니다.}
+\end{classroomqa}
+
+\section{구속을 설명하는 초전도체 모형}
+
+초전도체는 내부에서 자기장을 밀어낸다. 물질이 초전도 상태가 되기 전에 자기 플럭스가 충분히 좁은 통로를 통과하도록 가두면, 플럭스는 옆으로 퍼지지 못하고 튜브 안에 갇힌 채 남는다. 유용한 사고실험은 정상 상태의 시료에 좁은 구멍을 뚫고 긴 막대자석을 그 안에 넣은 뒤 시료를 냉각하고 나서 자석을 빼내는 것이다. 이는 실제 실험을 위한 절차가 아니라 개략적인 구성이다. 그 목적은 자기장 세기와 에너지 밀도가 길이 방향으로 거의 균일한 플럭스 선 하나를 분리해 살펴보는 데 있다.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_17.png}
+  \caption{초전도체에서의 플럭스 선 구성과 이에 대응하는 자기 홀극--반자기 홀극 구속 그림.}
+  \lectureframe{01:35:30}
+  \label{fig:l01-superconductor-board}
+\end{figure}
+
+사고실험을 하나 더 해 보자. 자기 홀극과 반자기 홀극을 초전도체 안에 놓고 서로 떼어 놓을 수 있다고 가정하자. 두 극 사이의 자기 플럭스는 튜브 안으로 압축될 것이다. 튜브의 길이가 한 단위 늘어날 때마다 같은 에너지가 더해지므로,
+
+\begin{equation}
+  V(R)=T_{\mathrm{flux}}R.
+  \label{eq:l01-linear-confinement}
+\end{equation}
+
+힘 \(F=-dV/dR\)의 크기는 일정하다. 두 극을 서로 떼어 놓으려면 점점 더 많은 에너지가 필요하므로, 이 쌍은 구속된다. 이는 하드론 안의 쿼크에서 찾고자 하는 거동이다.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[blue!8,rounded corners=5pt] (-4,-1.35) rectangle (4,1.35);
+    \node[blue!55!black] at (0,1.65) {superconducting medium};
+    \fill[red!75!black] (-2.8,0) circle (0.17);
+    \fill[blue!70!black] (2.8,0) circle (0.17);
+    \node[below] at (-2.8,-0.22) {monopole};
+    \node[below] at (2.8,-0.22) {antimonopole};
+    \fill[orange!18,rounded corners=7pt] (-2.65,-0.42) rectangle (2.65,0.42);
+    \draw[orange!85!black,thick,rounded corners=7pt]
+      (-2.65,-0.42) rectangle (2.65,0.42);
+    \foreach \y in {-0.22,0,0.22}
+      \draw[->,orange!85!black] (-2.55,\y) -- (2.55,\y);
+    \draw[<->] (-2.8,-1.00) -- (2.8,-1.00) node[midway,below] {$R$};
+  \end{tikzpicture}
+  \caption{플럭스의 구속은 균일한 튜브와 선형 퍼텐셜 \(V(R)=T_{\mathrm{flux}}R\)을 만든다.}
+  \label{fig:l01-superconductor-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{강입자에서 초전도 매질의 역할을 하는 것은 무엇인가?\lecturetimestamp{01:36:57}}
+\lecturerresponse{제안된 비유에서는 전기적 역할과 자기적 역할이 뒤바뀐다. 보통의 초전도 응축체는 전하를 띠며 자기 선속을 가둔다. QCD의 쌍대 초전도체 그림에서는 색자기 물체의 응축체가 쿼크의 색전기 전하를 가둔다. 이러한 물체는 진공에서 응축된 것으로 기술되므로 고립된 입자로 나타나지 않는다.}
+\end{classroomqa}
+
+\editorialnote{이중 초전도체 기술은 영향력 있는 구속 메커니즘이며, 여기서는 강의 당시의 역사적 표현으로 소개한다. 이를 제일원리에서 구속을 완전히 유도한 결과가 아니라 QCD 진공에 대한 물리적 그림으로 이해해야 한다.}
+
+\begin{classroomqa}
+\audiencequestion{에너지가 길이에 비례한다는 것은 고도로 상대론적인 상태가 된 모든 보통의 끈에 적용되는 일반 법칙인가?\lecturetimestamp{01:38:10}}
+\lecturerresponse{아니다. 먼저 그 물질에 대한 일관된 상대론적 이론이 필요하며, 물질의 거동은 세부적인 특성에 따라 달라질 것이다. 에너지가 길이에 비례하는 것은 길이가 늘어나도 밀도가 일정하게 유지되는 배열이나, 선속이 횡방향으로 퍼져 나가지 못하는 경우에만 나타나는 특성이다. 끈을 잡아당겨 늘리면 고정된 분자들 사이의 거리만 커지는 것이 아니라, 구성 입자의 수가 늘어나거나 장이 균일하게 채워진 구간의 길이가 늘어난다.}
+\end{classroomqa}
+
+\section{횡방향 자유도와 입자의 크기}
+
+광원뿔 구성에서는 끈을 횡좌표로 직접 나타낸다. 횡방향 진동자 각각에 대응하는, 별도로 자유롭게 정할 수 있는 종방향 진동자는 없다. 직접 다루는 공간 차원이 하나 줄어든다는 점은 이 형식론의 놀라운 특징 가운데 하나다. 그러나 완전한 이론은 여전히 로렌츠 불변성을 만족해야 한다.
+
+\begin{classroomqa}
+\audiencequestion{\(z\) 방향을 따라 남아 있는 운동은 어떻게 되는가?\lecturetimestamp{01:40:10}}
+\lecturerresponse{광원뿔 기술에서는 종방향 운동을 독립적인 자유도로 도입하지 않는다. 물리적 진동은 횡방향으로 기술하고, 종방향 정보는 구속 조건으로 결정한다. 이러한 간결성은 중력계가 직접적인 차원이 하나 더 적은 기술을 허용할 수 있다는 생각과 맥락상 관련이 있지만, 여기서는 그 연관성을 유도하지 않는다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{레제 플롯에서 실제로 알려진 점은 몇 개인가?\lecturetimestamp{01:41:15}}
+\lecturerresponse{정확한 최대 개수는 계열마다 다르지만, 대략 일곱 개다. 실험적으로 그 수열이 끝없이 이어지는 것은 아니다. 중요한 점은 알려진 점들에서 보통의 거시적 물질에서 익숙하게 볼 수 있는 뚜렷한 실패나 분해 종점이 나타나지 않는다는 것이다.}
+\end{classroomqa}
+
+하드론 현상론이 역사적 동기를 제공했지만, 수학적 끈 이론이 하드론의 모든 세부 사항을 재현해야 하는 것은 아니다. 형식론이 구축되고 나면, 이 이론이 실제로 무엇을 기술하는지 묻게 된다. 질량이 없는 스핀 2 상태와 그 밖의 성질은 중력을 더 자연스럽게 가리킨다.
+
+하드론과 전자 사이의 겉보기 차이는 강체 회전의 에너지로 정량화할 수 있다.
+
+\begin{equation}
+  E_{\mathrm{rot}}=\frac{J^2}{2I},
+  \qquad
+  I\sim MR^2.
+  \label{eq:l01-rotational-energy}
+\end{equation}
+
+각운동량은 양자화되어 있다. \(J^2\)를 개략적으로 \(\hbar^2 n^2\)으로 쓰면, 첫 회전 단계의 에너지 규모는
+
+\begin{equation}
+  \Delta E_{0\to1}\sim\frac{\hbar^2}{2I}.
+  \label{eq:l01-first-rotational-step}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_18.png}
+  \caption{첫 회전 들뜸에 대한 관성모멘트 추산, \(\Delta E\sim\hbar^2/(2I)\).}
+  \lectureframe{01:44:00}
+  \label{fig:l01-rotational-board}
+\end{figure}
+
+질량이 고정되어 있을 때 반지름이 작을수록 관성모멘트는 훨씬 작아지고 들뜸 에너지는 훨씬 커진다. 하드론은 내부 동역학의 척도에서 크기 때문에 회전 들뜸에 대략 GeV의 에너지가 들며, 입자 충돌로 접근할 수 있다. 전자가 공간적 하부구조를 갖는다면 그 크기 척도는 실험적 한계에 따라 훨씬 작고, 회전 들뜸은 이용 가능한 에너지 범위를 훨씬 넘어선다. 농구공은 정반대의 극단에 있다. 관성모멘트가 너무 커서 각운동량 양자 하나에 드는 에너지는 거의 감지할 수 없을 만큼 작다. 원자의 회전 또는 궤도 단계는 이 두 극단 사이에 있으며, 보통 전자볼트 규모다.
+
+\begin{classroomqa}
+\audiencequestion{겉보기에는 기본 입자인 전자에도 공간적 구조와 회전 여기 상태가 있을 수 있는가?\lecturetimestamp{01:42:04}}
+\lecturerresponse{그런 구조와 여기 상태가 있다면, 매우 높은 에너지에서야 드러날 수 있다. 각운동량 한 단위에 드는 에너지 비용은 \(1/I\)에 비례하며, \(I\sim MR^2\)이다. 반지름이 극히 작으면 첫 번째 여기 상태는 질량 제곱 플롯에서 매우 높은 곳에 놓인다. 전자 여기 상태가 관측되지 않았다는 것은 전자가 점입자이거나, 복합 구조의 척도가 현재 실험으로 분해할 수 있는 크기보다 훨씬 작다는 뜻이다.}
+\end{classroomqa}
+
+이제 처음에 본 레제 궤적을 동역학의 관점에서 읽을 수 있다. 하드론은 확장된 물체이므로 접근 가능한 회전 및 진동 상태를 드러낸다. 질량 제곱 스펙트럼의 등간격 단계는 진동자 해밀토니안을 \(M^2\)와 동일시할 때 예상되는 특징이다. 에너지가 길이에 대략 선형으로 비례하는 것은 장력이 일정한 플럭스 튜브의 특징이다. 분광학, 산란의 쌍대성, 월드 시트 기하학, 광원뿔 역학은 하나의 구성 원리를 서로 다른 방식으로 기술한다. 그 원리는 자연스러운 내부 변수가 질량 제곱인 확장된 상대론적 물체다.
