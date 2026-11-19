@@ -1,0 +1,693 @@
+\chapter{델타 함수, 양자장, 보존 법칙}
+
+앞서 도입한 단순한 양자장만으로도 산란, 생성, 소멸을 개략적으로 기술할 수 있지만, 이 장에서 더 많은 것을 알아낼 수 있다. 특히 입자 과정에 보존 법칙이 어떻게 들어오는지를 보여 준다. 양자장론 전체를 다루려면 몇 차례 강의보다 훨씬 더 많은 시간이 필요하므로, 여기서는 목표를 좁혀 가장 단순한 장을 이용해 에너지 보존이 어떻게 생겨나는지, 고정된 표적에서는 산란 입자의 운동량이 반드시 보존될 필요가 없는 이유가 무엇인지, 위상 불변성이 전하 보존을 어떻게 나타내는지 살펴보겠다.
+
+장으로 돌아가기 전에 두 가지 수학적 개념이 필요하다. 디랙 델타 함수와 브라 벡터에 대한 생성·소멸 연산자의 작용이다.
+
+\section{디랙 델타 함수}
+
+좌표를 \(y\)라고 하자. 이것이 나중에 위치, 파수 또는 다른 무엇을 나타낼지는 지금 정하지 않는다. 먼저 \(y=a\) 근처에 집중된 보통의 봉우리 모양 함수를 생각하자. 이 봉우리를 점점 좁힌다. 높이를 일정하게 유지하면 면적이 0으로 줄어들므로, 폭이 줄어드는 만큼 높이를 높여 높이와 폭의 곱이 1이 되게 한다. 이때 극한으로 얻는 대상이 디랙 델타 함수 \(\delta(y-a)\)이다.
+
+\(y=a\) 이외의 곳에서는 영이며, \(y=a\)에 무한히 좁게 집중되고, 전체 면적은 단위 면적이다:
+\begin{equation}
+\delta(y-a)=0\quad (y\neq a),
+\qquad
+\int_{-\infty}^{\infty}dy\,\delta(y-a)=1.
+\end{equation}
+중요한 점은 국소화와 고정된 면적이 함께 나타난다는 것이다. 봉우리를 좁혀도 사라지지 않는다. 동시에 높이가 커지기 때문이다.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_04_figure_02.png}
+\caption{\(y=a\)을 중심으로 하는 단위 면적의 델타 함수 봉우리.}
+\lectureframe{00:05:50}
+\end{figure}
+
+같은 모습을 수직으로 솟은 봉우리로 이상화할 수도 있다:
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.1,0) -- (3.3,0) node[right] {$y$};
+\draw[very thick] (0,0) -- (0,2.9);
+\draw (0,-0.15) node[below] {$y=a$};
+\node at (1.35,1.65) {$\delta(y-a)$};
+\end{tikzpicture}
+\caption{인수가 0이 되는 지점에 \(\delta(y-a)\)를 국소화한 이상화된 모습.}
+\end{figure}
+
+델타 함수는 푸리에 적분에서 자연스럽게 나타난다. 잠시 전체 길이가 \(L\)인 주기적 공간 구간으로 돌아가자. 주기적 모드는
+\begin{equation}
+e^{ikx},
+\end{equation}
+이며, 여기서 \(k\)는 허용되는 파수 가운데 하나다.
+\begin{equation}
+k_n=\frac{2\pi n}{L},
+\qquad n\in\mathbb Z.
+\end{equation}
+구간을 \(0\leq x<L\)로 나타낼 수도 있지만, 원점을 가운데에 두고 다음과 같이 쓰는 편이 더 대칭적이다.
+\begin{equation}
+-\frac L2\leq x<\frac L2.
+\end{equation}
+양 끝점은 서로 이어져 있다. \(L/2\)을 넘어가면 다시 \(-L/2\)에서 시작한다.
+
+허용되는 모드 하나를 주기 구간 전체에서 적분하자:
+\begin{equation}
+I_L(k)=\int_{-L/2}^{L/2}dx\,e^{ikx}.
+\end{equation}
+\(k=0\)이면 피적분 함수는 항등적으로 1이므로 결과는 \(L\)이다. \(k\neq0\)가 허용되는 값이면, 진동의 양의 부분과 음의 부분이 전체 주기 수에 걸쳐 상쇄된다. 따라서
+\begin{equation}
+I_L(k)=
+\begin{cases}
+L,&k=0,\\[4pt]
+0,&k\neq0,
+\end{cases}
+\qquad
+k=\frac{2\pi n}{L}.
+\end{equation}
+
+이제 \(I_L(k)\)를 허용되는 \(k\)의 이산 집합 위에 정의된 함수로 보자. 이웃한 값 사이의 간격은
+\begin{equation}
+\Delta k=\frac{2\pi}{L}.
+\end{equation}
+\(k=0\)에서 함수의 높이는 \(L\)이고, 다른 허용값에서는 모두 0이다. 이산적인 뾰족한 봉우리를 그릴 때 폭을 \(k\) 간격 하나로 두자. 그러면 면적은
+\begin{equation}
+(\text{height})(\text{width})
+=L\frac{2\pi}{L}=2\pi.
+\end{equation}
+\(L\)가 커질수록 높이는 커지고 간격은 좁아지지만, 면적은 \(2\pi\)로 유지된다. 무한 부피 극한에서 이 봉우리는 \(2\pi\delta(k)\)가 되어 형식적인 푸리에 항등식
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,e^{ikx}=2\pi\delta(k).
+\end{equation}
+을 얻는다. 지수 함수에서 \(x\)와 \(k\)는 대칭적으로 나타난다. 두 변수의 역할을 바꾸면 이에 대응하는 항등식
+\begin{equation}
+\int_{-\infty}^{\infty}dk\,e^{ikx}=2\pi\delta(x).
+\end{equation}
+을 얻는다. 이 두 가지 기본 규칙은 곧 모든 상호작용 시간에 대한 적분을 에너지 보존 조건으로 바꾸어 줄 것이다.
+
+\section{브라, 켓, 그리고 왼쪽으로 작용하는 연산자}
+
+켓은 양자 상태를 나타내는 기호 표기다. 여기서는 초기 상태를 켓으로, 최종 상태를 브라로 쓰겠다. 브라와 켓을 결합하면 내적이 되며, 그 값은 수다. 궁극적으로 실험과 비교할 수 있는 것은 바로 이 수 또는 그 절댓값의 제곱이다.
+
+\begin{classroomqa}
+\lecturetimestamp{00:15:30}
+\audiencequestion{단어 ``켓''은 앞에서 실제로 소개된 적이 있나요?}
+\lecturerresponse{그렇습니다. 켓은 브라-켓 표기법의 한쪽이고, 다른 쪽인 브라는 지금 소개합니다.}
+\end{classroomqa}
+
+조화 진동자의 점유수 상태는 켓 \(\lvert n\rangle\) 또는 브라 \(\langle n\rvert\)로 쓸 수 있다. 이들의 내적은
+\begin{equation}
+\langle m\vert n\rangle=\delta_{mn}
+=\begin{cases}
+1,&m=n,\\
+0,&m\neq n.
+\end{cases}
+\end{equation}
+크로네커 델타 \(\delta_{mn}\)는 디랙 델타 함수의 이산적인 유사물이다.
+
+생성·소멸 연산자는 익숙한 방식으로 켓에 작용한다:
+\begin{align}
+a^\dagger\lvert n\rangle&=\sqrt{n+1}\,\lvert n+1\rangle,\\
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle.
+\end{align}
+생성·소멸 연산자를 \(a^+\)와 \(a^-\)로 표기하기도 한다. 여기서는 계속 \(a^\dagger\)와 \(a\)를 사용하겠다.
+
+같은 연산자는 브라에 어떻게 작용해야 할까? 연산자가 브라에 왼쪽으로 작용할 때는 브라의 오른쪽에 연산자를 쓴다. 연산자를 켓에 먼저 작용시키든 브라에 먼저 작용시키든 행렬 원소의 값이 같도록 정의한다. 다음을 살펴보자.
+\begin{equation}
+\langle n\rvert a^\dagger\lvert m\rangle.
+\end{equation}
+켓에 작용시키면 다음과 같다.
+\begin{align}
+\langle n\rvert a^\dagger\lvert m\rangle
+&=\sqrt{m+1}\,\langle n\vert m+1\rangle\\
+&=\sqrt{m+1}\,\delta_{n,m+1}.
+\end{align}
+이는 \(n=m+1\)일 때만 영이 아니며, 이는 곧 \(m=n-1\)이라는 뜻이다. 브라에 작용시켜 같은 조건을 얻으려면 \(a^\dagger\)가 브라의 라벨을 낮춰야 한다:
+\begin{equation}
+\langle n\rvert a^\dagger
+=\sqrt n\,\langle n-1\rvert.
+\end{equation}
+수치 인자는 \(\sqrt n\)이다. 영이 아닌 행렬 원소에서는 \(n=m+1\)이기 때문이다. 소멸 연산자는 이에 대응하는 규칙을 따른다.
+\begin{equation}
+\langle n\rvert a
+=\sqrt{n+1}\,\langle n+1\rvert.
+\end{equation}
+따라서 \(a^\dagger\)는 켓의 라벨을 높이지만 브라의 라벨은 낮추고, \(a\)는 켓의 라벨을 낮추지만 브라의 라벨은 높인다.
+
+이점은 수 연산자의 행렬 원소에서 확인할 수 있다.
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle.
+\end{equation}
+오른쪽으로 작용시키면
+\begin{align}
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle,\\
+a^\dagger\lvert n-1\rangle&=\sqrt n\,\lvert n\rangle,
+\end{align}
+이므로
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle
+=n\langle n\vert n\rangle=n.
+\end{equation}
+을 얻는다. 대신 왼쪽으로 작용시키면
+\begin{align}
+\langle n\rvert a^\dagger&=\sqrt n\,\langle n-1\rvert,\\
+\langle n-1\rvert a&=\sqrt n\,\langle n\rvert,
+\end{align}
+같은 결과가 나온다. 어느 방향이 더 근본적인지 정할 필요는 없다. 어느 쪽으로 계산해도 같은 수가 나오도록 계산법이 구성되어 있다.
+
+\section{공간과 시간에서의 양자장}
+
+이러한 표기법을 정리하는 이유는 입자물리학에 있다. 미시적 규모에서 주된 실험 방법은 입자들을 충돌시키고 그 결과를 관측하는 것이다. 입자가 하나 또는 둘인 초기 상태가 입자 넷, 다섯, 일곱, 아홉 또는 다른 수의 입자를 가진 상태로 바뀔 수 있다. 생성·소멸 연산자로 구성된 양자장은 이런 과정을 기술하는 언어를 제공한다.
+
+먼저 공간 차원을 하나로 두자. 세 차원으로 확장하는 데 본질적인 장애는 없다. \(x\)와 \(k\)가 각각 성분이 세 개인 벡터가 될 뿐이다. 다음과 같은 단위를 쓰면 편리하다.
+\begin{equation}
+\hbar=1.
+\end{equation}
+그러면 운동량과 파벡터는 수치상 같아진다.
+\begin{equation}
+\vec p=\vec k.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_04_figure_03.png}
+\caption{자연 단위계 \(\hbar=1\)와 동일시 \(\vec p=\vec k\).}
+\lectureframe{00:36:56}
+\end{figure}
+
+\(\psi\)가 소멸시키고 \(\psi^\dagger\)가 생성한다는 관례를 채택하자:
+\begin{align}
+\psi(x)&=\sum_k a(k)e^{ikx},\\
+\psi^\dagger(x)&=\sum_k a^\dagger(k)e^{-ikx}.
+\end{align}
+합은 주기적 공간에서는 \(k=2\pi n/L\)에 대해 취하며, 무한 공간에서는 연속 합으로 바뀐다. 두 번째 식은 첫 번째 식의 에르미트 켤레다. 복소 켤레에 대응하는 연산자 관계로 생각해도 된다.\footnote{칠판에서는 생성장 전개 \(\sum_k a^\dagger(k)e^{-ikx}\)를 잠시 \(\Psi\)라고 표기한 뒤, 대거 기호의 배정에 관해 망설이는 모습이 나온다. 여기서는 표기를 전체적으로 통일하여 \(\psi\)가 소멸시키고 \(\psi^\dagger\)가 생성하도록 정했으며, 이는 뒤이은 산란 계산과 정확히 일치한다.}
+
+왜 이렇게 정의할까? 지금 단계에서 가장 좋은 답은 이 정의가 유용하다는 것이다. 운동량 모드에 대한 단순한 합이고, 계수는 입자를 제거하거나 더하는 연산자다. 자세한 정당화는 동역학과 이 정의로 가능한 계산에서 나온다.
+
+\editorialnote{켤레 공간장이 도입된 직후의 짧은 원문 구간은 추가적인 정규화나 해석에 관한 설명을 뒷받침할 만큼 명료하지 않다. 확실히 파악되는 내용은 이 정의가 유용하다는 대목부터 이어진다.}
+
+지금까지 장은 위치에는 의존하지만 시간에는 의존하지 않았다. 장은 진동하며, 각 파수 \(k\)에는 대응하는 진동수 \(\omega(k)\)가 있다. 진동수가 \(\omega\)인 대상의 시간 의존성은
+\begin{equation}
+e^{i\omega t}=\cos(\omega t)+i\sin(\omega t).
+\end{equation}
+와 같다. 각 장 전개에 켤레 위상因자를 붙이면
+\begin{align}
+\psi(x,t)&=\sum_k a(k)e^{ikx}e^{-i\omega(k)t},\\
+\psi^\dagger(x,t)&=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+을 얻는다. 이제 각 공간 모드는 그 파수에 알맞은 진동수로 진동하며, 장은 공간과 시간 모두에 의존한다.
+
+\section{비상대론적 장 방정식}
+
+\(\omega\)와 \(k\) 사이의 관계가 장이 따르는 미분 방정식을 결정한다. 단일 양자에 대해 파동-입자 관계는 다음과 같다.
+\begin{equation}
+E=\hbar\omega,
+\qquad
+p=\hbar k.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_04_figure_04.png}
+\caption{에너지-진동수 관계 \(E=\hbar\omega\)와 운동량-파수 관계 \(p=\hbar k\).}
+\lectureframe{00:41:28}
+\end{figure}
+
+\(\hbar=1\)일 때 에너지는 진동수와 같고 운동량은 파수와 같다:
+\begin{equation}
+E=\omega,
+\qquad
+p=k.
+\end{equation}
+빛보다 훨씬 느리게 움직이는 비상대론적 입자의 운동 에너지와 운동량은
+\begin{equation}
+E=\frac{p^2}{2m}.
+\end{equation}
+의 관계를 따른다. 이는 \(E=\tfrac12 mv^2\)와 \(p=mv\)에서 얻은 관계와 같다. 이 관계들을 결합하면 비상대론적 분산 관계
+\begin{equation}
+\omega(k)=\frac{k^2}{2m}.
+\end{equation}
+를 얻는다.
+
+생성장의 모드 전개는 다음과 같다.
+\begin{equation}
+\psi^\dagger(x,t)=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.66\textwidth]{lecture_04_figure_05.png}
+비상대론적 장 방정식의 출발점으로 쓰이는 시간 의존 모드 전개.\caption{}
+\lectureframe{00:43:23}
+\end{figure}
+
+시간에 대해 미분하면
+\begin{equation}
+\dot\psi^\dagger(x,t)
+=\sum_k i\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+을 얻는다. 위치에 대해 한 번 미분하면
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial x}
+=\sum_k(-ik)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+을 얻는다. 이 미분들 사이에는 직접적인 1차 관계가 없다. 시간 미분은 \(\omega(k)\)를 가져오지만 공간 미분 한 번은 \(k\)를 가져오기 때문이다. 이 차이를 명확히 보기 위해 선형 분산 관계
+\begin{equation}
+\omega(k)=k.
+\end{equation}
+를 가정해 보자. 그러면 시간 미분은 \(i\omega=ik\)를 가져오고, 공간 미분 한 번은 \(-ik\)를 가져온다. 모드마다
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{\partial\psi^\dagger}{\partial x}.
+\end{equation}
+가 성립한다. 이 가상의 장은 1차 방정식을 따를 것이다. 그러나 여기서는 \(\omega=k^2/(2m)\)이므로 2차 공간 미분이 필요하다:
+\begin{align}
+\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=\sum_k(-k^2)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}\\
+&=-2m\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:47:14}
+공간 미분에서 나오는 마이너스 부호가 정말 있어야 하나요?\audiencequestion{}
+\lecturerresponse{그렇습니다. \(x\)에 대한 \(e^{-ikx}\)의 미분은 매번 \(-ik\)를 가져오고, 두 번 미분하면 \((-ik)^2=-k^2\)이 됩니다. 따라서 \(k^2=2m\omega\)을 대입하면 \(-2m\omega\)가 나옵니다.}
+\end{classroomqa}
+
+시간 미분에 \(i\)를 곱하면 2차 공간 미분을 \(2m\)로 나눈 것과 같은 모드 계수가 나온다:
+\begin{align}
+i\dot\psi^\dagger
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t},\\
+\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+따라서
+\begin{equation}
+i\frac{\partial\psi^\dagger}{\partial t}
+=\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2},
+\end{equation}
+이며, 이는 다음과 동등하다.
+\begin{equation}
+-i\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_04_figure_06.png}
+생성장 모드 전개의 시간 미분과 공간 미분.\caption{}
+\lectureframe{00:49:06}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:43}
+\audiencequestion{계수는 \(1/(2m)^2\)인가요?}
+\lecturerresponse{아닙니다. \(1/(2m)\)입니다.}
+\end{classroomqa}
+
+켤레 소멸장은 익숙한 Schr\"odinger 형식의 방정식을 따른다.
+\begin{equation}
+i\frac{\partial\psi}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi}{\partial x^2}.
+\end{equation}
+두 장 방정식은 서로 에르미트 켤레다.\footnote{부호를 확인하는 과정에서 칠판에 공간항의 부호가 잠시 반대로 적혔다. 표시된 모드 위상을 직접 미분하면 여기에 쓴 켤레 방정식 쌍이 나온다.}
+
+이 방정식은 기초 양자역학의 Schr\"odinger 방정식과 같은 형식이지만, 이를 만족하는 대상은 다르다. 기초 양자역학에서 파동함수는 복소수값 함수이며, 그 절댓값의 제곱은 확률적으로 해석된다. 여기서 \(\psi\)와 \(\psi^\dagger\)는 연산자다. \(\psi\)는 입자를 제거하고 \(\psi^\dagger\)는 입자를 더한다. 이 켤레 쌍은 입자와 장을 직접 연결한다.
+
+관련 모드에 많은 양자가 점유되어 있으면 장은 고전적으로 근사해 기술될 수 있다. 이는 강하게 들뜬 조화 진동자가 고전적으로 보일 수 있지만 양자 하나만 있는 진동자는 그렇지 않은 것과 같다. 점유수가 크면 큰 고전적 규모가 가능해지고, 적절한 상대 요동이 작아질 수도 있다.
+
+\editorialnote{점유수가 크다는 사실만으로는 고전장이 되기에 충분하지 않다. 위상이 결맞는 준고전 상태도 필요하다. 수 고유상태는 정해진 위상을 갖지 않으며, 평균장이 영일 수도 있다.}
+
+\section{고정 표적과 산란 진폭}
+
+이 장들을 어떻게 사용할까? 가능한 한 가장 단순한 산란 과정을 생각해 보자. 입자가 너무 무거워 반동을 무시할 표적과 만난다. 표적은 공간에서 영원히 고정되어 있다. 입자는 반사되거나 투과되거나 방향이 바뀔 수 있으며, 3차원에서는 나가는 방향이 들어오는 방향과 다를 수 있다.
+
+충돌 전후에 입자의 운동량이 같을 필요는 없다. 전체 물리계에서는 운동량이 보존되지만, 빠진 운동량은 표적이 흡수한다. 표적의 운동을 수학적 기술에서 생략하면 입자만의 운동량은 보존되지 않는다.
+
+이 이상화된 모형에서 입자의 에너지는 다르게 거동한다. 테니스공을 벽에 던지는 상황을 생각해 보자. 실제 테니스공은 가열되고 변형되지만, 그런 효과를 무시하면 운동량의 방향이 반전되더라도 같은 운동 에너지를 유지한 채 되돌아온다. 고정 표적 모형은 바로 이 차이를 재현하도록 만든 것이다. 입자의 에너지는 보존되지만 운동량은 바뀔 수 있다.
+
+공간을 가로축으로, 시간을 세로축으로 그리자. 표적은 수직선 \(x=0\)이다. 운동량 \(k_i\)인 입자 하나의 초기 상태가 표적에 도달하고, 운동량 \(k_f\)인 입자 하나의 최종 상태가 표적에서 나간다.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.2,0) -- (3.2,0) node[right] {space};
+\draw[->] (0,-0.3) -- (0,4.2) node[above] {time};
+\draw[very thick] (0,0) -- (0,3.8);
+\node[left] at (-0.15,3.55) {$x=0$};
+\draw[thick,->] (-2.2,0.8) -- (0,2.0);
+\node[below] at (-1.45,1.05) {$k_i$};
+\draw[thick,->] (0,2.0) -- (2.2,3.2);
+\node[above] at (1.5,2.9) {$k_f$};
+\fill (0,2.0) circle (1.4pt);
+\end{tikzpicture}
+\caption{운동량이 \(k_i\)인 입자가 \(x=0\)에 고정된 표적에 산란되어 운동량 \(k_f\)으로 나간다.}
+\end{figure}
+
+흡수와 재방출이라는 표현을 사용하자. 표적이 들어오는 입자를 소멸시키고, 이어서 운동량이 달라질 수도 있는 나가는 입자를 생성한다. 이는 산란 사건을 수학적으로 모형화한 것일 뿐이다. 예를 들어 실제 원자는 광자를 흡수한 뒤 한동안 들뜬 상태로 있다가 나중에 방출할 수 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:28}
+입자가 왜 즉시 흡수되고 재방출되어야 하나요?\audiencequestion{}
+\lecturerresponse{자연에서 반드시 그런 것은 아닙니다. 한 점에서 일어나는 순간적인 흡수와 재방출은 여기서 사용하는 단순화된 모형입니다.}
+\end{classroomqa}
+
+초기 상태에는 \(k_i\) 모드에 입자 하나가 있고, 다른 모든 모드에는 입자가 없다. 점유수 표현에서는 \(k_i\)에 해당하는 항목만 1이고 나머지는 모두 0이다. 전체 목록은 다음과 같이 줄여 쓸 수 있다.
+\begin{equation}
+\lvert k_i\rangle=a^\dagger(k_i)\lvert0\rangle.
+\end{equation}
+마찬가지로
+\begin{equation}
+\langle k_f\rvert=\langle0\rvert a(k_f).
+\end{equation}
+
+표적과 시간 \(t\)에서의 소멸은 \(\psi(0,t)\)로 나타내고, 같은 위치와 시간에서의 즉각적인 재생성은 \(\psi^\dagger(0,t)\)로 나타낸다. 사건이 일어나는 특정한 시간은 없다. 들어오는 입자가 표적에 도달할 때면 언제든 같은 상호작용 세기로 일어날 수 있다. 특정 시간이 따로 없다는 점을 나타내기 위해 모든 \(t\)에 대해 적분한다:
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,\psi^\dagger(0,t)\psi(0,t).
+\end{equation}
+이 연산자를 초기 켓에 작용시키면 상태가 나온다. 그 상태와 최종 브라의 내적이 지정된 전이에 대한 진폭이다. 확률은 진폭의 절댓값을 제곱한 뒤에야 얻어진다.
+
+수 하나가 더 필요하다. \(g\)를 입자와 표적 사이 상호작용의 세기를 나타내는 양이라고 하자. 이 계산용 모형에서는 선도 진폭을 개략적으로 다음과 같이 쓴다.\footnote{상태 정규화 인자와 1차 섭동론에서 통상 사용하는 전체 인자는 생략했다. 계산에는 연산자의 선택 규칙과 에너지 보존 조건만 사용한다.}
+\begin{equation}
+\mathcal A_{i\to f}
+=g\left\langle k_f\left|
+\int_{-\infty}^{\infty}dt\,
+\psi^\dagger(0,t)\psi(0,t)
+\right|k_i\right\rangle.
+\end{equation}
+계수 \(g\)를 결합 상수라고 한다. 대전된 표적에서 광자가 산란하는 경우에는 전하가 관련 상호작용 세기를 나타낸다. 전하가 커지면 산란 경향도 커진다.
+
+상호작용마다 결합 상수는 크게 다르다. 중간자가 양성자에 도달하면 강한 상호작용을 하므로 산란 세기가 비교적 크다. 대전된 양성자에서 산란하는 광자는 전자기 결합이 더 약하다. 양성자와 상호작용하는 중성미자의 결합은 그보다도 더 약하다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:09}
+이 단순한 모형은 전자에도 유효한가요?\audiencequestion{}몇 가지 산란 과정을 단순화해 대신 나타내는 경우에만 그렇습니다. 아직 실제 전자나 특정한 표적 하나에 대한 현실적인 이론으로 이해해서는 안 됩니다.\lecturerresponse{}
+\end{classroomqa}
+
+원자핵에서 산란하는 중력자의 중력 산란은 극도로 약할 것이다. 이러한 예들에 모두 적용되는 하나의 보편적인 \(g\)가 있는 것은 아니다. 입자물리학에는 여러 결합 상수가 있다.
+
+유효 결합 상수가 언제나 진동수와 무관해야 하는 것도 아니다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:31}
+\audiencequestion{왜 \(g\)를 \(\omega\)나 \(k\)의 함수가 아니라 상수로 두나요?}
+\lecturerresponse{항상 상수일 필요는 없습니다. 광자가 원자에 흡수되면 원자는 한동안 들뜬 상태로 있다가 나중에 광자를 방출하므로, 유효 산란은 진동수에 따라 달라질 수 있습니다. 상수 \(g\)는 여기서 다루는 순간적 모형에 해당합니다.}
+\end{classroomqa}
+
+당분간 \(g\)를 상수로 두고, 가장 단순한 이 선택이 낳는 결과를 계산하자.
+
+\begin{classroomqa}
+\lecturetimestamp{01:12:32}
+\audiencequestion{\(g=1\)이면 산란 확률은 1이어야 하나요?}
+\lecturerresponse{아닙니다. 계산하는 식은 작은 \(g\)에 대한 선도 근사일 뿐입니다. 결합이 작지 않으면 고차 섭동 이론이 필요합니다. 확률이 1보다 크게 나온다면 그것은 물리적 확률이 아니라 한 단계 근사의 적용 범위가 무너졌다는 뜻입니다.}
+\end{classroomqa}
+
+\section{모드 합을 하나로 줄이기}
+
+\(x=0\)에서는 공간 위상因자가 1이므로
+\begin{align}
+\psi(0,t)&=\sum_k a(k)e^{-i\omega(k)t},\\
+\psi^\dagger(0,t)&=\sum_\ell a^\dagger(\ell)e^{i\omega(\ell)t}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:58}
+\audiencequestion{표적이 \(x=0\)에 있으니 공간 지수 인자를 생략해야 하나요?}
+\lecturerresponse{그렇습니다. 표적 위치에서는 \(e^{ikx}=e^{ik0}=1\)이고, 켤레 공간 인자도 하나입니다.}
+\end{classroomqa}
+
+두 합에서 서로 다른 더미 표지 \(k\)와 \(\ell\)를 사용하자. 대입하면
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt
+\sum_{\ell,k}
+e^{i\omega(\ell)t}e^{-i\omega(k)t}
+\langle k_f\rvert a^\dagger(\ell)a(k)\lvert k_i\rangle.
+\end{align}
+\(k\) 합에서 살아남을 항은 무엇인가? 소멸 연산자는 비어 있는 모든 모드에서 0을 준다. 초기 상태에는 \(k_i\) 모드에만 입자가 있으므로 \(k=k_i\)이다. \(\ell\) 합에서는 어떤 항이 살아남을까? 왼쪽으로 작용할 때 \(a^\dagger(\ell)\)는 최종 브라가 나타내는 입자를 제거해야 하므로 \(\ell=k_f\)이다. 두 합은 모두 하나의 항으로 줄어든다:
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+\langle k_f\rvert a^\dagger(k_f)a(k_i)\lvert k_i\rangle.
+\end{align}
+소멸 연산자는 초기의 단일 입자 켓을 진공 상태로 바꾼다.
+\begin{equation}
+a(k_i)\lvert k_i\rangle=\lvert0\rangle,
+\end{equation}
+그리고 생성 연산자는 왼쪽으로 작용하여 최종 단일 입자 브라를 진공 브라로 바꾼다.
+\begin{equation}
+\langle k_f\rvert a^\dagger(k_f)=\langle0\rvert.
+\end{equation}
+따라서 이들의 행렬 원소는
+\begin{equation}
+\langle0\vert0\rangle=1.
+\end{equation}
+이다. 연산자 표기는 모두 1로 줄어들고, 결합 상수는 \(g\)를 제공하며, 남는 비자명한 부분은 시간 적분이다:
+\begin{equation}
+\mathcal A_{i\to f}
+=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}.
+\end{equation}
+
+\editorialnote{01:1840에서 나온 청중 질문은 원문에서 복원할 수 없다. 답변은 이 단일 입자 계산을 상대론적 문제 또는 다입자 문제와 구별하지만, 그보다 구체적인 대화 내용은 신뢰할 만하게 재구성할 수 없다.}
+
+이제 앞서 나온 델타 함수 항등식을 바로 적용할 수 있다:
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+=2\pi\delta(\omega_f-\omega_i).
+\end{equation}
+따라서
+\begin{equation}
+\boxed{
+\mathcal A_{i\to f}
+=2\pi g\,\delta(\omega_f-\omega_i)
+}.
+\end{equation}
+다음 조건이 성립하지 않으면 진폭은 영이다.
+\begin{equation}
+\omega_f=\omega_i.
+\end{equation}
+\(\hbar=1\)이므로 이는 \(E_f=E_i\)이다. 모든 상호작용 시간을 동등하게 취급했기 때문에 에너지 보존이 나타났다. 시간 적분을 유한한 구간으로 제한하면 정확한 델타 함수 대신 폭이 넓어진 함수가 나온다. 시간 병진에 대한 정확한 불변성이 정확한 에너지 보존 조건을 준다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:30}
+\audiencequestion{확률을 구하려면 진폭을 제곱해야 합니다. 델타 함수를 제곱하면 어떻게 되나요?}
+\lecturerresponse{제곱된 델타 함수는 추가적인 주의가 필요합니다. 여기서 필요한 핵심은 분명합니다. 초기 에너지와 최종 에너지가 같지 않으면 결과는 0입니다. 에너지 보존 조건이 성립하는 영역에서 개략적으로 제곱된 계수에는 \(4\pi^2g^2\)가 포함됩니다.}
+\end{classroomqa}
+
+\editorialnote{정규화된 전이 확률이나 전이율은 \(\delta(\omega_f-\omega_i)^2\)를 단순히 버리는 것으로 얻을 수 없다. 유한 시간 정칙화와 일관된 상태 정규화가 필요하다. 따라서 \(4\pi^2g^2\)는 원문에서 강조한 개략적 제곱 전인자로만 남겨 둔다.}
+
+이 점 표적 상호작용에서는 에너지 조건 외에 어떤 것도 최종 운동량들을 구별하지 않는다. 따라서 3차원에서 이 모형은 같은 에너지를 갖는 모든 나가는 운동량에 동일한 선도 가중치를 부여한다---즉 고정 에너지 구면 위의 모든 나가는 방향에 동일한 가중치를 부여한다. 이러한 등방성은 매우 단순한 점 산란체의 성질이지, 모든 실제 표적의 성질은 아니다.
+
+이 계산에서 세 가지 연관된 개념이 나왔다. 계수 \(g\)는 상호작용 세기를 나타낸다. 브라-연산자-켓 식은 산란 진폭이며, 그 절댓값의 제곱이 확률에 들어간다. 무엇보다 모든 시간에 대한 적분이 에너지 델타 함수를 만든다. 시간 병진 대칭성이 에너지 보존을 강제한다.
+
+\section{표적이나 결합 상수가 바뀌면 무엇이 달라질까?}
+
+원점 \(x=0\)는 편의상 선택한 것뿐이다. 표적을 \(x=x_{\mathrm T}\)에 두자. \(\psi^\dagger(x_{\mathrm T},t)\psi(x_{\mathrm T},t)\)의 공간 인자들은
+\begin{equation}
+e^{-ik_f x_{\mathrm T}}e^{ik_i x_{\mathrm T}}
+=e^{i(k_i-k_f)x_{\mathrm T}}.
+\end{equation}
+을 준다. 따라서 진폭은
+\begin{equation}
+\mathcal A_{i\to f}(x_{\mathrm T})
+=e^{i(k_i-k_f)x_{\mathrm T}}
+\mathcal A_{i\to f}(0).
+\end{equation}
+이 된다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:37}
+\audiencequestion{표적이 \(x=0\)에 있도록 위치를 언제나 다시 정할 수 있나요?}
+\lecturerresponse{이 하나의 고정된 표적에 대해서는 그렇습니다. 표적을 \(x_{\mathrm T}\neq0\)에 그대로 두면, 진폭에 표적 위치가 위상 \(e^{i(k_i-k_f)x_{\mathrm T}}\)로 나타납니다. 복소켤레 위상을 곱하면 확률에서는 이 위상이 사라집니다.}
+\end{classroomqa}
+
+실제로
+\begin{equation}
+\left|e^{i(k_i-k_f)x_{\mathrm T}}\right|^2=1.
+\end{equation}
+이다. 진폭에는 표적 위치에 대한 정보가 남지만, 표적 하나에 대한 이 확률에는 그 정보가 남지 않는다.
+
+이제 비대칭을 반대로 생각해 보자. 상호작용은 어느 위치에서나 일어날 수 있지만, 특별히 정해진 한 시각에만 일어난다고 하자. 위치에 대해 적분하면
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,
+e^{i(k_i-k_f)x}
+=2\pi\delta(k_i-k_f),
+\end{equation}
+을 얻고, 시간을 고정하면 에너지 델타 함수는 사라진다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:26:41}
+상호작용이 일어나는 위치는 상관없지만 한 시각에만 일어난다면 다른 물리량이 보존되나요?\audiencequestion{}그렇습니다. 모든 위치에 대한 적분은 운동량 보존을 강제하고, 특별히 정해진 상호작용 시각은 정확한 에너지 보존을 없앱니다. 완전한 두 입자 문제에서는 상호작용이 언제 어디서나 일어날 수 있습니다.\lecturerresponse{}
+\end{classroomqa}
+
+이로써 명시적 시간 의존성도 물리적으로 해석할 수 있다. 결합 상수가 \(g(t)\)이거나 외부 작용으로 산란이 갑자기 가능해지면 모든 시간이 동등하지 않다. 이때 축약된 기술에서는 생략된 외부 동역학과 에너지를 주고받을 수 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:28:29}
+결합 상수는 대체로 실험으로 정해지나요? 시간 의존 결합 상수는 무엇을 뜻하나요?\audiencequestion{}그렇습니다. 결합 상수의 값은 실험으로 결정합니다. 명시적 시간 의존성은 보통 고정 표적 모형에서 표적의 반동을 생략했듯이 계의 움직이거나 변하는 부분을 기술에서 제외했음을 뜻합니다. 빠진 것처럼 보이는 에너지는 생략된 자유도에 속합니다.\lecturerresponse{}
+\end{classroomqa}
+
+움직이는 표적이 가장 단순한 예다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:23}
+\audiencequestion{움직이는 표적을 맞히는 경우는 입자의 에너지가 보존되지 않는 사례인가요?}
+\lecturerresponse{그렇습니다. 표적의 주어진 운동을 에너지 계산에 포함하지 않으면 표적이 입자에 에너지를 주거나 입자로부터 에너지를 가져갈 수 있습니다.}
+\end{classroomqa}
+
+표적을 점으로 보는 것도 또 하나의 단순화다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:43}
+\audiencequestion{입사파의 파장과 비교해 표적의 크기를 고려해야 하는 경우는 언제인가요?}
+\lecturerresponse{현재 모형에서 표적의 크기는 0입니다. 유한한 표적 크기는 파장과 비교할 때 추가 효과를 일으키지만, 그 세부 사항은 뒤로 미룹니다.}
+\end{classroomqa}
+
+이제 움직이는 표적으로 돌아가자. 테니스공을 향해 움직이는 벽을 생각해 보자. 벽은 공에 에너지를 줄 수 있다. 벽의 운동을 주어진 것으로 두고 그 에너지를 생략하면 공만의 에너지는 보존되지 않는다. 수학적으로 이는 반드시 \(g\) 자체에 시간 의존성이 있다는 뜻이 아니라, 표적 위치가 시간에 따라 변한다는 뜻이다.
+
+따라서 생성 연산자와 소멸 연산자는 원하던 일을 정확히 해낸다. 한 입자 상태에서 다른 입자 상태로의 전이를 기술하고, 장의 시공간 의존성은 그 전이에 어떤 보존 조건이 따르는지를 결정한다.
+
+\section{전하 계산과 위상 불변성}
+
+입자 종류마다 고유한 장이 있다. 예를 들어 전자와 광자는 같은 \(\psi\)로 기술되지 않는다. 이미 도입한 대수만으로 전하를 세는 방법을 살펴보기 위해, 잠시 \(\psi\)를 전자와 비슷한 장이라고 하자. \(\psi\)는 그런 하전 입자 하나를 소멸시키고, \(\psi^\dagger\)는 하나를 생성한다. 여기서는 계산을 위한 보손 모형을 사용한다. 실제 전자장은 페르미온 장이며, 아직 도입하지 않은 대수가 필요하다.
+
+고정 표적 인자
+\begin{equation}
+\psi^\dagger\psi
+\end{equation}
+는 입자 하나를 소멸시키고 하나를 생성한다. 전자 하나가 들어와 하나가 나가므로, 이 종류의 입자가 지닌 전하는 변하지 않는다.
+
+이제 전자 하나가 들어와 같은 지점에서 두 개가 나간다고 하자. 이에 해당하는 연산자 곱에는 소멸 장 하나와 생성 장 두 개가 들어간다.
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+전자장이라면 전자 하나가 순생성되어 전하 보존에 어긋난다. 대신 전자 두 개가 들어오고 두 개가 나가는 과정은 다음으로 나타낼 수 있다.
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+여기에는 생성 장과 소멸 장이 같은 수만큼 들어 있다. 전자 두 개가 들어와 세 개가 나가는 과정에는 다음이 필요하다.
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+이 경우에도 순전하가 변한다. 바로 적용할 수 있는 규칙은 간단하다. 전하를 보존하는 상호작용에는 \(\psi\)와 \(\psi^\dagger\)가 같은 수만큼 들어간다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:27}
+\audiencequestion{이 전하 보존 검사를 할 때 장 연산자의 순서도 중요한가요?}
+\lecturerresponse{이 검사의 핵심은 \(\psi\) 인자와 \(\psi^\dagger\) 인자의 개수이지, 순서가 아니다. 순서가 다른 곱들이 다른 면에서도 서로 같은지는 별개의 문제다.}
+\end{classroomqa}
+
+단순히 개수를 세는 것보다 더 깊은 수학적 판별법이 있다. 장에 상수 위상을 곱해 보자.
+\begin{equation}
+\psi\longrightarrow e^{i\alpha}\psi.
+\end{equation}
+\(\psi^\dagger\)는 에르미트 켤레이므로 켤레 위상에 따라 변환한다.
+\begin{equation}
+\psi^\dagger\longrightarrow e^{-i\alpha}\psi^\dagger.
+\end{equation}
+두 장의 개수가 같은 식은 변하지 않는다. 예를 들면,
+\begin{align}
+\psi^\dagger\psi
+&\longrightarrow
+e^{-i\alpha}e^{i\alpha}\psi^\dagger\psi
+=\psi^\dagger\psi,\\
+\psi^\dagger\psi^\dagger\psi\psi
+&\longrightarrow
+e^{-2i\alpha}e^{2i\alpha}
+\psi^\dagger\psi^\dagger\psi\psi
+=\psi^\dagger\psi^\dagger\psi\psi.
+\end{align}
+두 장의 개수가 다르면 식은 변한다. 따라서
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi
+\longrightarrow
+e^{-i\alpha}\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+전하를 보존하는 상호작용은 바로 이 전역 위상 변환에 불변인 상호작용이다. 이 간단한 장의 언어에서는 위상 불변성과 전하 보존이 같은 규칙을 가리키는 두 표현이다.
+
+다음 조합은
+\begin{equation}
+\psi+\psi^\dagger
+\end{equation}
+임의의 위상 회전에 대해 불변이 아니다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:53}
+\audiencequestion{그건 \(\psi\)의 실수부 아닌가요?}
+\lecturerresponse{맞다. \(\psi\)의 실수부에 비례하며, \(\psi\)에 위상을 곱하면 그 실수부가 변한다. 따라서 위상 불변이 아니다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:05}
+\audiencequestion{전자가 표적에 부딪혀 여러 개의 이차 전자를 방출하면 전하는 어떻게 보존되나요?}
+\lecturerresponse{그 과정에서 표적은 수동적인 대상이 아니다. 원자가 전자를 여러 개 방출하면 원자 자체의 전하와 상태가 변한다. 원자의 동역학도 포함해야 하며, 표적 역시 양자장으로 기술해야 한다.}
+\end{classroomqa}
+
+이제 대칭성과 보존 법칙 사이의 대응 관계 세 가지를 볼 수 있다. 시간 병진 불변성은 에너지 보존에 대응한다. 전역 위상 불변성은 전하 보존에 대응한다. 공간 병진 불변성은 운동량 보존에 대응하지만, 공간에 관한 전체 계산은 아직 수행해야 한다.
+
+\section{연산자 순서와 최저차수 모형의 한계}
+
+간단히 하기 위해 앞의 곱에서는 모든 생성 장을 왼쪽에, 모든 소멸 장을 오른쪽에 놓았다. 장을 교차 배치한 곱도 개수가 같다면 전하 계산 검사를 통과할 수 있지만, 연산자의 순서는 다른 방식으로 식에 영향을 줄 수 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:02}
+\audiencequestion{같은 종류의 과정을 \(\psi\psi^\dagger\psi\psi^\dagger\)처럼 인자를 교차 배치해 쓸 수도 있나요?}
+\lecturerresponse{이 곱에도 각 장이 같은 수만큼 들어 있으므로 전하 규칙을 만족한다. 하지만 일반적으로 모든 대거 연산자를 왼쪽에 둔 식과 같은 식은 아니다. 서로 다른 순서의 곱을 어떻게 재배열하는지는 뒤에서 다루겠다.}
+\end{classroomqa}
+
+\editorialnote{01:41:10에 나온 청중 질문은 손상이 심해 복원할 수 없다. 복원 가능한 답변은 \(\psi\)와 \(\psi^\dagger\)가 같은 수만큼 있으면 위상 불변성과 전하 보존이 성립하고, 개수가 다르면 둘 다 성립하지 않는다는 점을 되풀이한다.}
+
+대칭성과 보존 법칙 사이의 이러한 연관성은 뇌터 정리의 사례다. 고전역학에서 이 정리는 일반적인 틀을 제공한다. 여기서는 양자장의 위상과 델타 함수로 같은 연관성을 직접 드러냈다.
+
+선도 고정 표적 결과가 유효한 범위에도 명백한 한계가 있다. \(4\pi^2g^2\)와 같은 개략적인 확률의 앞인자는 값이 1에 가까워지거나 1을 넘으면 신뢰할 수 없다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:33}
+\audiencequestion{이 개략적인 결과는 \(g\)가 대략 \(1/(2\pi)\)보다 작아야 한다는 뜻인가요?}
+\lecturerresponse{이 첫 항을 유용하게 쓸 수 있을 만큼 \(g\)가 작거나, 아니면 모형이 불완전한 것이다. 입자는 한 번 산란한 뒤 되돌아와 두 번 산란하고, 이어서 세 번 산란하는 식으로 산란할 수 있다. 전체 진폭은 무한급수다. \(g\)가 작을 때만 가장 단순한 항이 지배적이다. 그렇지 않으면 파인만 그래프를 여러 개 합해야 한다.}
+\end{classroomqa}
+
+단순한 시공간 그림은 파인만 그래프의 시작이다. 그 꼭짓점은 기본적인 가능성을 나타낸다. 입자 하나가 들어와 하나가 나가는 경우는 \(\psi^\dagger\psi\)와 같은 인자에 대응하고, 입자 두 개가 들어와 두 개가 나가는 경우는 \(\psi^\dagger\psi^\dagger\psi\psi\)와 같은 인자에 대응한다. 꼭짓점이 반복되면 결합 상수의 더 높은 거듭제곱과 급수의 고차항이 생긴다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{결합 상수에 허수 성분이 있을 수 있나요?}
+\lecturerresponse{복소 결합 상수가 나타날 수 있다. 제거할 수 없는 \(T\)-홀수 위상 조합은 시간 반전 불변성의 위반을 나타낼 수 있다. 시간 반전된 과정의 진폭은 대칭성으로 연관된 진폭과 같지 않을 수 있다.}
+\end{classroomqa}
+
+\editorialnote{이 대화에서는 QCD의 \(\theta\) 매개변수가 언급되었지만, 이는 \(T\)-홀수 상호작용에 곱해지는 실수 계수이지 결합 상수의 허수 성분이 아니다. 제거 가능한 위상이나 흡수에 따른 복소 위상만으로는 \(T\) 위반이 성립하지 않는다. 이 추론은 제거할 수 없는 \(T\)-홀수 위상 조합에만 적용된다.}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:02}
+\audiencequestion{들어오는 입자가 흡수되기 전이나 후에 나가는 입자가 방출될 수도 있나요? 두 일이 같은 순간에 일어나지 않고요.}
+\lecturerresponse{타당한 질문이지만, 순간적인 모형은 이 문제를 다루지 않는다. 더 일반적인 시간 순서는 뒤에서 다루겠다.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:44}
+\audiencequestion{이 구성을 어떻게 상대론적으로 만들 수 있나요?}
+\lecturerresponse{간단히 말하면 켤레 항들을 결합하고 \(\omega(k)\)의 제곱근이 들어가는 분모를 포함하면 된다. 전체적인 구성은 뒤에서 다루겠다.}
+\end{classroomqa}
+
+\editorialnote{상대론적 공식은 구두 설명이 충분히 명확하게 남아 있지 않아 확실하게 수식으로 옮길 수 없다. 언급된 구성 요소와 자세한 설명을 뒤로 미룬다는 점만 남겼다.}
+
+전하 보존과 정지 질량 보존은 분명히 구별해야 한다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:48:22}
+\audiencequestion{정지 질량도 전하와 같은 구조적 의미에서 보존되나요?}
+\lecturerresponse{아니다. 갈릴레이 비상대론적 역학에서 질량은 가산적인 보존량이다. 상대론적 반응에서는 개별 입자들의 정지 질량을 합한 값이 보존될 필요가 없다. 전자와 양전자는 두 광자로 소멸할 수 있지만 전하는 여전히 보존된다.}
+\end{classroomqa}
+
+\editorialnote{완전히 고립된 상대론적 계에서는 전체 사차원 운동량이 보존되므로, 그 계의 불변 질량은 일정하다. 소멸의 예에서 말하는 것은 개별 입자들의 정지 질량을 합한 값이지, 고립계의 불변 질량이 아니다.}
+
+따라서 가산적인 질량의 보존은 근본적인 규칙이라기보다 비상대론적 근사에서 성립하는 사실이다. 전하 보존과 같은 근본적인 지위를 갖지는 않는다. 앞서 살펴본 위상 불변성이 더 깊은 전하 대칭성을 나타낸다.
+
+다음 단계에서는 보손 모형을 페르미온 장으로 바꾸고 여러 입자 종류---전자, 뮤온, 쿼크, 광자 등---를 도입한다. 각 입자 종류에는 고유한 장과 허용된 상호작용이 있다.
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:39}
+\audiencequestion{앞에서는 보손 장만 다뤘는데, 앞의 예를 전자장이라고 불러도 괜찮았나요?}
+\lecturerresponse{전자장의 보손 버전, 즉 대용물이라는 뜻으로만 괜찮다. 실제 페르미온 이론은 아직 도입하지 않았다.}
+\end{classroomqa}
