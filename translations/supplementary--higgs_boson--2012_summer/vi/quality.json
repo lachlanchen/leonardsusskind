@@ -1,0 +1,35 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 33,
+  "outline_entries": 19,
+  "target_characters": 24636,
+  "image_placements": 14,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Tìm hiểu về boson Higgs",
+  "pdf_sha256": "b6c30e7fc9a691309de5b89746639de6fb0b87e27852a1440d16b2f7d6a0f9f6",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 7,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "1f8e5f900d504f8162dbbcb37e9f334e5481965982ec889629f160751e15d90d",
+    "chapters/lecture_01/content.tex": "8843f255ae810018b04b86257dcf011fc43cc843ebdcb129006c9e079a11461d"
+  },
+  "source_files": {
+    "course.tex": "8618bd1a9d6c91833ba00f7be31dcb20fcc6727f03cd9160273f418737e819fd",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "0dce2f6c0fcca244ee59848cdffaf66f43d412a86a2f3e89cf16984c5f46430c"
+  },
+  "translated_tex": {
+    "cover.tex": "24c7ae329939ef40e9729280f555fe1344e3603df9640d54cc7d4c4c0ada007f",
+    "common_preamble.tex": "0d02843d67d8dc85c57ded072b4a04f055714bd40e42f0746d0607e443aab616",
+    "course.tex": "e7ca9238d645ca94fd4f3e0476c3542d185797ec684b691850cc9acc2b65edbd",
+    "chapters/lecture_01/content.tex": "e7f1e43aeffd791ad07c7d0166e054647b6688f4e7492279402bc326cba4d141"
+  }
+}
