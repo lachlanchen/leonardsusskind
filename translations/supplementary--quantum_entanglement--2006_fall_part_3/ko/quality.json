@@ -1,0 +1,56 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 195,
+  "outline_entries": 96,
+  "target_characters": 59583,
+  "image_placements": 98,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "양자 얽힘 3부",
+  "pdf_sha256": "1390e25f9961a6aa31980e8d253a09d23592d76a3f3193d0351fbebb0426fe17",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 69,
+  "review_model": "gpt-6-luna",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "a67c0c072c39f8c97f8d701017bc1b5a66e45eec7c59c0d11c67ef61ce93bbc0",
+    "chapters/lecture_01/content.tex": "30c229192847283b9be6ca8aac24d98e0bcd5a0f38f26a0df731a04b06f64065",
+    "chapters/lecture_02_03/content.tex": "a12e51965f5d8c270fd757bbb16f558c140b0c23f6a56c373cbf5611529f8585",
+    "chapters/lecture_04/content.tex": "f22c6b3794ead2bf5b638d75aa1a1ee4f4eb2a096a862a0778a040e19480c76b",
+    "chapters/lecture_05/content.tex": "98c6c72d178aacb3b3c39b3ecf7df6a61a224e52e074a3e9129c5fab35a0e2c8",
+    "chapters/lecture_06/content.tex": "5b717bcc55cdf81d0594aecfe42956d4bd583b2137614d09ad18b0baa4652dc8",
+    "chapters/lecture_07/content.tex": "b9a32f088bce09200090e21c287ea4fa7cc107fc6a64914e0586f95c220fdba0",
+    "chapters/lecture_08/content.tex": "781db069ee533c2fecad0f93cc22fc33a25ee37ffd37473664f477a20833998b",
+    "chapters/lecture_09/content.tex": "49cd23a6a0cb60f51ebbb183741a6df2463ba4d739f943e818c2a2b4ff902be7"
+  },
+  "source_files": {
+    "course.tex": "356d8ce3183a4c7413b9c336e9a2d8bd28af68d0f32fc281411dd6137903070b",
+    "common_preamble.tex": "7230adaa2c872f88056a832b9a230eaf89d97409c06df43c5abd3be7bb7c6e6d",
+    "chapters/lecture_01/content.tex": "8901a5e94b79043b8683ae3c07a6714b79847789e5762c48cd72e9d9f36d025a",
+    "chapters/lecture_02_03/content.tex": "d5f4018fc88275e090e6b4773153254fd7bbd28504c004b454fb444d72fb2f3f",
+    "chapters/lecture_04/content.tex": "b79226daad0aa91b17e4b2afe6d6e4b98fc52396be779aab36de42d64582b3ab",
+    "chapters/lecture_05/content.tex": "3e7b4248a1a92ec5b0838f3fcbd1c70b542ad61307daf8cff5face134ee911b3",
+    "chapters/lecture_06/content.tex": "ed6739fc900e1b83e609422bcf5a0246a4429759b0de1ebc104649c101391284",
+    "chapters/lecture_07/content.tex": "42d787980d2bd997c18034f22e260e9db3610b2b44586bcd1d5557ab67b90c95",
+    "chapters/lecture_08/content.tex": "57e52781307495b368457421b6d78cc41a563bc01a566b789fd9200862518709",
+    "chapters/lecture_09/content.tex": "a2e052c366902368f82b9b8cc60ec34b86f8d7451d0adc06a04c22b71778c74f"
+  },
+  "translated_tex": {
+    "cover.tex": "f7f7e0b2791703fe50796fe22ae96f8cbe2b50ea9226d3c9487521bf66d1ea7f",
+    "common_preamble.tex": "526956fa56eb22f2ca7f36b16e28c9e4cdd8720b914130b8ec37efdc6b3665fc",
+    "course.tex": "29a8ba050bc3a5298ea756103f689d8fb4ae0ffae5cab8e2a9392127c8cb0974",
+    "chapters/lecture_07/content.tex": "13daf207abc7c0e7859968adc5ccc8258a3f53267d5fbe35b79a8d7962f9fd72",
+    "chapters/lecture_09/content.tex": "5e0ae3745504129462c27077dacdd13227d9ed8eafda54bb0e4064937821bf31",
+    "chapters/lecture_02_03/content.tex": "c8a5f58c2c758a9c9876ef0e0b69d5c79d58450dc01aac1e02d60b2fe9f31a3a",
+    "chapters/lecture_01/content.tex": "b9834e6955c496e5755ca28e59e78b45aa2c4b032eaf94387397b71298ca000b",
+    "chapters/lecture_08/content.tex": "c788850fbb573cab6d0f4585f0eb9e92c9c4093a35bf315e541aeb1562c73609",
+    "chapters/lecture_05/content.tex": "0255fbb84c0f3605e3f4858664ea5c0a09cdc78f70e15828534b4714f1bd2c92",
+    "chapters/lecture_04/content.tex": "68e5b18712850858044342be6a77a5dfa7ff2afef97e33c81fb6063697ef99f2",
+    "chapters/lecture_06/content.tex": "c3b8782e1212f732799072e83fd24494344f4e5777d0edaaaba8f9ab8bff8356"
+  }
+}

@@ -1,0 +1,502 @@
+\chapter{전하를 띤 입자, 장의 변환, 상대론적 파동}
+
+지난 시간에는 상대성 원리를 적용하면 전기장과 자기장 속에서 전하를 띤 입자가 어떻게 운동하는지 묻기 시작했습니다. 익숙한 로런츠 힘 법칙에 이미 단서가 들어 있습니다. 자기력 항은 입자의 속도에 의존하므로, 관측자마다 무엇이 전기장이고 무엇이 자기장인지에 따로따로 동의할 수 없습니다. 우리의 과제는 관성계가 바뀔 때마다 장과 입자의 속도가 달라지더라도 모든 관성 관측자가 같은 방정식을 사용하도록 법칙을 정식화하는 것입니다.
+
+별도로 언급하지 않는 한, 단위는 \(c=1\)로 두고 계량 부호 규약은 \((-,-,-,+)\)으로 합니다. 시공간 성분은 세 공간 성분을 먼저 쓰는 순서로 배열합니다.
+\begin{equation}
+  \mu=(1,2,3,0)=(x,y,z,t).
+\end{equation}
+라틴 지표 \(m,n\)는 세 공간 방향에 대해서만 값을 취합니다.
+
+\section{뉴턴의 힘 법칙에서 무엇이 살아남는가}
+
+뉴턴 역학에서는
+\begin{equation}
+  \boldsymbol F=m\boldsymbol a
+\end{equation}
+갈릴레이 관측자들이 가속도에 동의하므로 이 식은 모든 관성계에서 같은 형태를 가집니다. 관측자들은 입자의 질량과 힘도 동일하게 정합니다. 운동학이 달라지면 힘과 보통의 가속도 사이의 이 특정한 관계가 변함없이 유지되리라고 기대할 이유는 없습니다.
+
+전자기학과 중력은 상대론적 확장이 서로 닮을 필요가 없다는 점을 이미 알려 줍니다. 쿨롱 법칙과 뉴턴의 중력 법칙은 모두 역제곱 법칙이지만, 시공간 기하를 더 근본적으로 바꾸지 않고서는 중력을 특수 상대론에 자연스럽게 포함할 수 없습니다. 전자기학은 가능합니다. 실제로 자기 현상 자체가 상대론적 효과입니다. \(c\)의 인자를 복원하면 자기력에는 속도를 \(c\)로 나눈 인자가 들어가며, 형식적인 극한 \(c\to\infty\)에서는 자기력이 사라집니다.
+
+뉴턴 법칙에서 견고하게 살아남는 부분은 힘이 운동량의 변화율이라는 진술입니다. 정지 질량이 일정하면,
+\begin{equation}
+  \boldsymbol F
+  =m\frac{d\boldsymbol v}{dt}
+  =\frac{d}{dt}(m\boldsymbol v)
+  =\frac{d\boldsymbol p}{dt}.
+\end{equation}
+상대론에서는 운동량과 속도의 관계가 달라지지만, 방정식을 구성하는 이 방식은 유지됩니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_01.png}
+\caption{전기 항을 로런츠 법칙에 넣는 동안 힘을 \(d\boldsymbol p/dt\)로 다시 쓴다.}
+\lectureframe{00:08:20}
+\end{figure}
+
+단위 \(c=1\)에서, 상대론 이전의 로런츠 힘 법칙은 다음과 같습니다.
+\begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr).
+  \label{eq:lorentz-three}
+\end{equation}
+두 장 모두 위치와 시간에 따라 달라질 수 있습니다. 이제 비상대론적 극한은 \(v\ll 1\)의 극한이지, 수치 상수 \(c=1\)가 어떻게든 변한다는 극한이 아닙니다. \eqref{eq:lorentz-three}의 전기 항은 이미 보통의 벡터입니다. 자기 항을 시공간으로 가져갈 수 있는 형태로 이해하려면 외적을 다시 살펴봐야 합니다.
+
+\section{반대칭 텐서로서의 외적}
+
+세 차원 벡터 \(\boldsymbol A\)와 \(\boldsymbol B\)를 생각하자.
+이들의 외적
+\begin{equation}
+  T_{mn}=A_mB_n
+\end{equation}
+은 성분이 아홉 개인 2계 텐서다. 일반적으로 대칭성을 갖지 않는다.
+반대칭화하면
+\begin{equation}
+  K_{mn}=A_mB_n-A_nB_m,
+  \qquad K_{mn}=-K_{nm}.
+  \label{eq:antisym-product}
+\end{equation}
+대각 성분은 모두 0이고, 대각선 아래의 각 성분은 이에 대응하는 대각선 위 성분으로 정해진다. 따라서 \(3\times3\) 반대칭 텐서에는 독립 성분이 세 개뿐이다.
+
+이 성분 수는 암시하는 바가 있지만, 그것만으로는 충분하지 않습니다. 양이 세 개라고 해서 자동으로 벡터처럼 변환하는 것은 아닙니다. 그러나 3차원에서는 \eqref{eq:antisym-product}의 독립 성분 세 개를 외적
+\(\boldsymbol C=\boldsymbol A\times\boldsymbol B\)의 성분과 대응시킬 수 있습니다. 칠판에서는 우선 \(C_2\)를 오른쪽 위 위치에 임시로 놓습니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_02.png}
+\caption{반대칭 곱의 독립 성분 세 개를 \(\boldsymbol C\)의 성분에 대응시키는 과정. 여기서 오른쪽 위 표기는 아직 잠정적이다.}
+\lectureframe{00:17:33}
+\end{figure}
+
+\(1\to2\to3\to1\) 순환시키면 성분 공식은 다음과 같습니다.
+\begin{align}
+  C_3 &= A_1B_2-A_2B_1, \\
+  C_1 &= A_2B_3-A_3B_2, \\
+  C_2 &= A_3B_1-A_1B_3.
+  \label{eq:cross-components}
+\end{align}
+마지막 줄은 오른쪽 위 성분이 \(-C_2\)이지 \(C_2\)가 아님을 보여 줍니다. 이 수정은 감춰야 할 사소한 세부 사항이 아니라 논증의 일부입니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_03.png}
+\caption{반대칭 배열의 잠정적인 부호를 바로잡아 주는 완성된 순환 성분 항등식.}
+\lectureframe{00:21:54}
+\end{figure}
+
+그 결과로 얻는 행렬은 다음과 같습니다.
+\begin{equation}
+  K_{mn}=
+  \begin{pmatrix}
+    0 & C_3 & -C_2 \\
+    -C_3 & 0 & C_1 \\
+    C_2 & -C_1 & 0
+  \end{pmatrix}.
+  \label{eq:cross-matrix}
+\end{equation}
+
+이 표기법에는 유용한 기하학적 의미가 있습니다. 지표가 \(1,2\)인 성분은 자연스럽게 \(xy\) 평면에 속하며, 그 성분은 평면에 수직인 \(z\)축 방향의 벡터 성분으로 대응됩니다. 같은 방향성을 가진 대상을 평면으로 나타낼 수도 있고, 그 평면에 수직인 화살표로 나타낼 수도 있습니다. 화살표로 나타내는 방식은 3차원에만 특별한 것입니다. 더 높은 차원에서도 반대칭 2계 텐서는 존재하지만, 벡터와 성분 수가 같지는 않습니다. 따라서 일반화되는 외적의 형태는 수직 화살표가 아니라 텐서입니다.
+
+동등하게, 방향을 하나 선택한 뒤에는
+\begin{equation}
+  C_k=\frac12\epsilon_{kmn}K_{mn}.
+\end{equation}
+방향을 선택해야 한다는 점에서 오른손 법칙과 극벡터 및 축벡터의 익숙한 구분이 비롯됩니다.
+\editorialnote{레비--치비타 공식과 축벡터라는 용어는 강의에서 명시적으로 설명한 평면과 법선 사이의 기하학을 나타내는 표준 표기법이다.}
+
+\section{텐서 형태로 나타낸 자기장}
+
+같은 쌍대적 표현은 자기장에도 적용됩니다. 자기장의 반대칭 공간 텐서를 다음과 같이 정의합니다.
+\begin{equation}
+  B_{mn}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 \\
+    B_3 & 0 & -B_1 \\
+    -B_2 & B_1 & 0
+  \end{pmatrix}.
+  \label{eq:magnetic-tensor}
+\end{equation}
+\eqref{eq:cross-matrix}와 비교했을 때 추가된 전체 부호는 관례에 따른 것입니다. 일단 이 부호를 정하면 일관되게 사용해야 합니다. 벡터 성분 세 개의 부호를 모두 바꾸면, 반대 방향 관례를 사용해 텐서와 벡터를 대응시키는 같은 표현이 됩니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_04.png}
+\caption{반대칭 공간 배열과 세 벡터 성분으로 각각 나타낸 자기장.}
+\lectureframe{00:24:40}
+\end{figure}
+
+이제 외적의 세 번째 성분을 살펴봅시다.
+\begin{align}
+  (\boldsymbol v\times\boldsymbol B)_3
+  &=v_1B_2-v_2B_1 \\
+  &=v_1B_{13}+v_2B_{23}+v_3B_{33}.
+\end{align}
+\(B_{33}=0\)이므로 마지막 항을 더해도 됩니다. 자유 성분 지표를 순환시키면 간결한 규칙을 얻습니다.
+\begin{equation}
+  (\boldsymbol v\times\boldsymbol B)_m=v_nB_{nm},
+  \label{eq:cross-contraction}
+\end{equation}
+여기서 반복 지표 \(n\)에 대해서는 합산합니다. 따라서 자기력은 다음과 같습니다.
+\begin{equation}
+  F_m^{(B)}=qv_nB_{nm}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_07_figure_05.png}
+\caption{\(\boldsymbol v\times\boldsymbol B\)의 세 번째 성분과 \(B_{nm}\)에 대한 수축으로 나타낸 일반식.}
+\lectureframe{00:28:30}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{자유 지표 \(m\)는 힘의 별도 자기 성분을 나타내나요?}
+\lecturerresponse{아닙니다. 계산하려는 힘의 공간 성분이 무엇인지 나타냅니다. 여기서는 현재 논의를 위해 전기장을 0으로 두었을 뿐이며, 여기 나오는 모든 지표는 세 공간 방향에 대해서만 값을 취합니다.}
+\end{classroomqa}
+
+텐서 표기법을 사용하면 자기장이 일을 하지 않는다는 성질은 거의 자동으로 드러납니다. 속력의 제곱을 미분하면 다음과 같습니다.
+\begin{align}
+  \frac{d}{dt}(v_mv_m)
+  &=2\dot v_m v_m \\
+  &\propto 2(\boldsymbol v\times\boldsymbol B)_m v_m \\
+  &=2v_nB_{nm}v_m.
+  \label{eq:speed-derivative}
+\end{align}
+\(m=n\)인 항은 \(B_{nm}\)의 대각 성분이 0이므로 사라집니다. 대각선 밖의 각 항에는 \(m\)와 \(n\)를 맞바꾼 짝이 있습니다. \(v_nv_m\)는 대칭이고 \(B_{nm}\)는 반대칭이므로 두 항은 서로 상쇄됩니다.
+따라서
+\begin{equation}
+  \frac{d}{dt}(v_mv_m)=0.
+\end{equation}
+자기력만 작용하면 궤적은 휘지만 속력이나 운동 에너지는 변하지 않습니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_06.png}
+\caption{\(v_nB_{nm}v_m\)의 짝을 이루는 항들은 자기 텐서가 지표를 서로 바꾸면 부호가 바뀌기 때문에 상쇄된다.}
+\lectureframe{00:35:40}
+\end{figure}
+
+이 증명은 외적이 첫 번째 인자와 수직이라는 말만 하는 것보다 일부러 더 복잡하게 전개했습니다. 후자의 진술은 3차원 벡터 표현에 특유합니다. 대칭인 쌍과 반대칭 텐서의 수축을 이용한 논증은 4차원에서도 그대로 유효합니다.
+
+\begin{classroomqa}\audiencequestion{속력이 일정하게 유지되려면 자기장이 시간에 따라 변하지 않아야 하나요?}
+\lecturerresponse{위의 대수적 전개에서는 자기장을 미분하지 않으며 \(\partial_t\boldsymbol B=0\)일 필요도 없습니다. 자기 항만으로는 여전히 일을 하지 않습니다. 그러나 전기역학에서는 변하는 자기장이 전기장을 만들며, 그 전기장은 입자의 속력을 바꿀 수 있습니다.}
+\end{classroomqa}
+
+\section{전기장과 자기장이 서로 섞여야 하는 이유}
+
+\(\boldsymbol E\)와 \(\boldsymbol B\)가 섞이는 현상은 4차원 계산을 하기 전에도 알 수 있습니다. 보통의 가속도에 관한 뉴턴 역학의 진술이 충분하도록 느린 운동을 생각해 봅시다. 자기장이 \(y\)축 방향이고 전하를 띤 입자가 \(x\)축 방향으로 운동한다고 합시다. 자기력은 \(z\)축 방향을 향합니다.
+\begin{equation}
+  \boldsymbol F=q\boldsymbol v\times\boldsymbol B.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_07.png}
+\caption{자기장을 가로질러 운동하는 입자를 칠판에 스케치한 그림. 실험실과 함께 움직이는 관측자의 기술을 비교하기 위해 세 방향을 사용한다.}
+\lectureframe{00:42:20}
+\end{figure}
+
+교실에서 보는 원근감 없이 기하학을 다시 그리면 다음과 같습니다.
+\begin{figure}[H]\centering
+\begin{tikzpicture}[scale=1.05,>=Stealth]
+  \draw[->] (0,0) -- (3.8,0) node[right] {\(x\)};
+  \draw[->] (0,0) -- (-1.9,2.4) node[above left] {\(y\)};
+  \draw[->] (0,0) -- (0,3.1) node[above] {\(z\)};
+  \draw[->,very thick] (0,0) -- (2.7,0)
+    node[midway,below] {\(\boldsymbol v\)};
+  \draw[->,very thick] (0,0) -- (-1.35,1.7)
+    node[midway,above left] {\(\boldsymbol B\)};
+  \draw[->,very thick] (0,0) -- (0,2.35)
+    node[midway,right] {\(\boldsymbol F,\ \boldsymbol E'\)};
+\end{tikzpicture}\caption{\(z\) 방향의 힘은 실험실에서는 자기력이고, 순간적인 함께 움직이는 계에서는 같은 힘이 전기력이어야 합니다.}
+\end{figure}
+
+이제 그 순간 입자와 함께 움직이는 관측자를 도입해 봅시다. 새 계에서 입자의 속도는 0이므로 자기 항 \(q\boldsymbol v'\times\boldsymbol B'\)은 사라집니다. 그러나 느린 운동의 극한에서 두 관측자는 입자가 \(z\) 가속도를 가진다는 데 동의해야 합니다. 로런츠 힘 법칙이 두 계에서 같은 형태라면, 함께 움직이는 관측자는 그 힘이 \(z\) 방향의 전기장 \(\boldsymbol E'\)에서 비롯된다고 보아야 합니다. 따라서 실험실에서 순수한 자기장이었던 장은 움직이는 계에서는 순수한 자기장이 아닙니다.
+
+이것이 두 장을 모두 성분으로 포함하는 하나의 대상을 찾으려는 물리적 이유입니다. 계를 바꾸면 \(\boldsymbol E\)의 세 성분끼리만, 또 \(\boldsymbol B\)의 세 성분끼리만 회전하는 것이 아니라 두 성분 집합이 서로 섞입니다.
+
+\section{전자기장 텐서}
+
+전기장과 자기장을 합치면 성분은 여섯 개입니다. 4차원 반대칭 텐서도 독립 성분이 여섯 개입니다. 그 이유는 다음과 같습니다.
+\begin{equation}
+  \frac{4(4-1)}{2}=6.
+\end{equation}
+그렇다고 반대칭 텐서만이 상상할 수 있는 여섯 양의 집합이라는 뜻은 아닙니다. 스칼라 여섯 개나 벡터 하나와 스칼라 두 개를 생각해도 수는 여섯입니다. 반대칭 텐서는 필요한 방식으로 성분들이 서로 섞일 수 있는 자연스러운 기하학적 대상입니다.
+
+칠판의 관례를 명확히 하기 위해, 반변 텐서를 공간 성분을 먼저 쓰는 순서 \((1,2,3,0)\)로 나타내겠습니다.
+\begin{equation}
+  F^{\mu\nu}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 & E_1 \\
+    B_3 & 0 & -B_1 & E_2 \\
+    -B_2 & B_1 & 0 & E_3 \\
+    -E_1 & -E_2 & -E_3 & 0
+  \end{pmatrix}.
+  \label{eq:l07-field-tensor}
+\end{equation}
+왼쪽 위의 \(3\times3\) 블록은 정확히 자기 텐서 \eqref{eq:magnetic-tensor}입니다. 공간 지표 하나와 시간 지표 하나를 가진 성분에는 전기장이 들어갑니다. 나머지 성분은 반대칭성으로 정해집니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_08.png}
+\caption{자기장의 공간 블록과 전기장의 시간-공간 열을 조합해 4차원 장 텐서를 구성한다.}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{이 장 성분에는 언제 아래첨자 대신 위첨자를 써야 하나요?}
+\lecturerresponse{공간 지표만 놓고 볼 때 칠판에서는 익숙한 맥스웰--패러데이 장을 대응시키면서 위아래 첨자의 차이를 생략하기도 합니다. 공변 계산에서는 그 차이를 되살려야 합니다. 선택한 계량 부호 규약에서는 공간 지표를 올리거나 내릴 때 부호가 바뀝니다.}
+\end{classroomqa}
+
+불변인 것은 칠판에 적힌 특정한 부호 배열이 아니라, 일관된 계량 및 지표 관례와 함께 쓰이는 반대칭 시공간 텐서입니다. 표기 \(F\)는 패러데이를 떠올리게 할 수 있지만, 강의는 그 역사적 귀속을 확신한다고 주장하지 않습니다. 아인슈타인은 1905년에 전기장과 자기장 성분의 변환을 전개했습니다. 간결한 4차원 텐서 표기는 이후 민코프스키와 연관된 시공간 정식화와 함께 등장했습니다.
+
+\section{4차원 속도와 4차원 힘}
+
+입자에 관한 쪽도 공변적으로 만들어야 합니다. 고유 시간 \(\tau\)는 불변이므로 위치 4-벡터를 고유 시간에 대해 미분하면 또 다른 4-벡터가 됩니다.
+\begin{equation}
+  u^\mu=\frac{dx^\mu}{d\tau}
+  =\gamma(v_x,v_y,v_z,1),
+  \qquad
+  \gamma=\frac{1}{\sqrt{1-v^2}}.
+  \label{eq:four-velocity}
+\end{equation}
+마지막 성분은 \(dt/d\tau=\gamma\)에서 나옵니다. 4-운동량은 다음과 같습니다.
+\begin{equation}
+  p^\mu=mu^\mu,
+\end{equation}
+그 공간 성분은 상대론적 운동량 \(\boldsymbol p=m\gamma\boldsymbol v\)입니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_09.png}
+\caption{4차원 속도와 그 성분, 로런츠 인자, 4-운동량.}
+\lectureframe{00:50:30}
+\end{figure}
+
+\(p^\mu\)는 4-벡터이고 \(\tau\)는 스칼라이므로, 상대론적 좌변은 자연스럽게 다음과 같습니다.
+\begin{equation}
+  f^\mu\equiv\frac{dp^\mu}{d\tau}.
+  \label{eq:four-force-def}
+\end{equation}
+4-힘은 임의로 정할 수 없습니다. 4차원 속도의 노름은 고정되어 있습니다.
+\begin{equation}
+  u_\mu u^\mu=1.
+\end{equation}
+세계선을 따라 미분하면 다음을 얻습니다.
+\begin{align}
+  0
+  &=\frac{d}{d\tau}(u_\mu u^\mu) \\
+  &=\frac{du_\mu}{d\tau}u^\mu
+    +u_\mu\frac{du^\mu}{d\tau} \\
+  &=2u_\mu\frac{du^\mu}{d\tau}.
+\end{align}
+질량이 일정하면 이는 다음을 뜻합니다.
+\begin{equation}
+  f^\mu u_\mu=0.
+  \label{eq:force-orthogonal}
+\end{equation}
+따라서 4-힘은 민코프스키 내적에 대해 4차원 속도와 직교합니다. 이는 \(u^\mu\)의 정규화에서 따라 나오는 순수한 운동학적 제약이지, 전자기학에 특별한 성질이 아닙니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_10.png}
+\caption{4차원 속도의 단위 노름과, 그에 따른 4-힘과 4차원 속도의 직교성.}
+\lectureframe{00:56:50}
+\end{figure}
+
+3차원 자기장 계산에서 이미 \eqref{eq:force-orthogonal}을 만족시키는 방법을 얻었습니다. 반대칭 텐서를 속도 하나와 수축하면 됩니다.
+\begin{equation}
+  \boxed{
+  \frac{dp^\mu}{d\tau}=qF^{\mu\nu}u_\nu.}
+  \label{eq:covariant-lorentz}
+\end{equation}
+실제로,
+\begin{equation}
+  f^\mu u_\mu
+  =qF^{\mu\nu}u_\nu u_\mu=0,
+\end{equation}
+\(F^{\mu\nu}\)가 반대칭이고 \(u_\nu u_\mu\)가 대칭이므로 이 식은 성립합니다. 이것이 생각할 수 있는 유일한 상대론적 힘 법칙은 아니지만, 전자기장과 속도에 각각 선형인 가장 간단한 법칙입니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_11.png}
+\caption{왼쪽에는 공변 로런츠 힘 방정식이, 오른쪽에는 두 번째 사차원 속도와의 수축이 사라짐을 나타낸다.}
+\lectureframe{01:00:00}
+\end{figure}
+
+\section{보통의 로런츠 힘을 되찾기}
+
+공변적으로 보이는 방정식이라도 이미 알고 있는 힘 법칙을 재현해야 합니다. 처음에 제시한 계량 관례를 사용하면,
+\begin{equation}
+  u_\mu=\gamma(-v_x,-v_y,-v_z,1).
+\end{equation}
+\(x\) 성분에 대해 \eqref{eq:l07-field-tensor}과 \eqref{eq:covariant-lorentz}를 적용하면 다음과 같습니다.
+\begin{align}
+  \frac{dp^1}{d\tau}
+  &=q\bigl(F^{12}u_2+F^{13}u_3+F^{10}u_0\bigr) \\
+  &=q\gamma\bigl(B_3v_y-B_2v_z+E_1\bigr) \\
+  &=q\gamma\bigl[\boldsymbol E+\boldsymbol v\times
+    \boldsymbol B\bigr]_x.
+  \label{eq:x-force}
+\end{align}
+다른 공간 성분은 지표를 순환시켜 얻습니다.
+
+\begin{classroomqa}\audiencequestion{성분 전개에서 \(qE_x\) 항은 어디에 있나요?}
+\lecturerresponse{그 항은 \(qF^{10}u_0\)입니다. 공간 지표 하나와 시간 지표 하나를 가진 장 텐서 성분은 전기장 성분이고, \(u_0=\gamma\)입니다.}
+\end{classroomqa}
+
+우변의 인자 \(\gamma\)는 별도의 힘이 아닙니다. \begin{equation}
+  \frac{dp^i}{d\tau}=\frac{dt}{d\tau}\frac{dp^i}{dt}
+  =\gamma\frac{dp^i}{dt},
+\end{equation}이므로 이 인자는 \eqref{eq:x-force}의 양변에서 소거됩니다. 따라서 정확한 공간 방정식은 다시 다음과 같습니다.
+\begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr),
+  \qquad
+  \boldsymbol p=m\gamma\boldsymbol v.
+  \label{eq:exact-three-force}
+\end{equation}
+익숙한 형태는 유지되지만, 상대론적 효과는 운동량에 반영되어 있습니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_12.png}
+\caption{공통 고유 시간 인자를 없애 얻은 3차원 로런츠 법칙. 운동량에는 \(\gamma\) 인자가 남아 있다.}
+\lectureframe{01:06:30}
+\end{figure}
+
+시간 성분은 이에 대응하는 에너지 관계를 담고 있습니다.
+\begin{equation}
+  \frac{dp^0}{dt}=q\boldsymbol E\cdot\boldsymbol v,
+\end{equation}
+따라서 자기장은 일을 하지 않는 반면, 전기장은 입자의 에너지를 바꿀 수 있습니다.
+\editorialnote{시간 성분에 대한 확인은 강의의 공간 성분 계산에 직접 대응하며, 4차원 표기로도 같은 무일 성질이 드러나도록 포함했다.}
+
+\begin{classroomqa}\audiencequestion{이 유도는 수학인가요, 물리학인가요?}
+\lecturerresponse{둘 다입니다. 텐서 대수는 간결한 형태를 제공하지만, 모든 관성계에서 같은 법칙이 성립한다는 원리와 운동 방정식이 2계라는 가정에도 상당한 물리가 담겨 있습니다. 2계 법칙은 위치와 속도로 미래를 예측합니다. 3계 법칙이라면 가속도도 초기 자료로 필요합니다. 자연이 어떤 법칙을 따르는지는 표기법이 아니라 실험이 알려 줍니다.}
+\end{classroomqa}
+
+\section{장의 변환 법칙}
+
+방정식 \eqref{eq:covariant-lorentz}은 양변이 모두 4-벡터이므로 모든 계에서 같은 형태를 가집니다. 장 텐서 자체는 각 지표마다 하나씩 로런츠 행렬을 적용해 변환됩니다.
+\begin{equation}
+  F'^{\mu\nu}
+  =\Lambda^\mu{}_{\rho}\Lambda^\nu{}_{\sigma}F^{\rho\sigma}.
+  \label{eq:tensor-transform}
+\end{equation}
+칠판에서는 먼저 간단한 곱 \(A^\mu B^\nu\)을 변환해 이 규칙을 유도합니다. 벡터의 곱에 대해 규칙을 알면 선형성으로 모든 2계 텐서에 대한 규칙을 얻을 수 있습니다.
+
+\(1\)축 방향 부스트에서는 좌표가 다음과 같이 변환됩니다.
+\begin{align}
+  x'^1&=\gamma(x^1-vx^0), &
+  x'^0&=\gamma(x^0-vx^1), \\
+  x'^2&=x^2, & x'^3&=x^3.
+\end{align}
+같은 변환을 텐서의 두 지표에 각각 적용합니다. 부스트와 평행한 성분은 곱을 전개하는 것부터 시작합니다.
+\begin{align}
+  (A'^0B'^1)
+  =\gamma^2\bigl(
+     A^0B^1-vA^0B^0-vA^1B^1+v^2A^1B^0
+   \bigr).
+\end{align}
+각 곱을 해당 텐서 성분으로 바꾸고 반대칭성 \(F^{00}=F^{11}=0\) 및 \(F^{10}=-F^{01}\)를 이용하면 다음을 얻습니다.
+\begin{equation}
+  F'^{01}
+  =\gamma^2(1-v^2)F^{01}
+  =F^{01}.
+\end{equation}
+따라서 운동 방향과 평행한 전기장 성분은 변하지 않습니다. 평행한 자기장 성분도 마찬가지로 거동합니다.
+
+횡방향 성분은 다릅니다. 칠판에서 사용한 프라임 계와 부호 관례를 따르면,
+\begin{align}
+  F'^{02}
+  &=\gamma\bigl(F^{02}-vF^{12}\bigr), \\
+  E'_2
+  &=\gamma(E_2+vB_3).
+  \label{eq:e-transform}
+\end{align}
+횡방향 전기장 성분에는 자기장 성분의 일부가 더해집니다. 나머지 변환 법칙은 같은 두 지표 변환 규칙으로 얻을 수 있으며, 강의에서는 연습 문제로 남겨 둡니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_07_figure_13.png}
+\caption{\(E'_2\) 성분에 \(vB_3\)에 비례하는 항이 들어 있음을 확인하는 횡방향 텐서 변환.}
+\lectureframe{01:23:40}
+\end{figure}
+
+\eqref{eq:e-transform}의 부호는 어느 계가 \(+v\)로 움직인다고 정하는지뿐 아니라 지표 및 계량 관례에도 달려 있습니다. 그러나 불변인 내용은 같습니다. 횡방향 전기장과 자기장 성분은 서로 섞이며, 변환 뒤에도 공변 힘 방정식은 성립합니다.
+
+\begin{classroomqa}\audiencequestion{도선에 전류가 흐를 때, 어떤 속도로 움직이면 자기장을 없앨 수 있나요?}
+\lecturerresponse{전도 전자와 함께 움직이는 것만으로는 충분하지 않습니다. 새 계에서는 양전하를 띤 격자도 움직이기 때문입니다. 따라서 중성인 전류 도선은 움직이는 전하 덩어리 하나보다 더 복잡합니다. 순수한 자기장은 변환만으로 완전히 없앨 수 없습니다. 전기장과 자기장이 모두 존재하면 특별한 조건에서 변환된 성분들이 서로 상쇄될 수 있습니다. 한 가지 예로, 균일하게 운동하는 전하의 정지 계에서는 그 전하의 자기장이 사라집니다.}
+\end{classroomqa}
+
+정확한 불변량 판정에는 다음을 사용합니다.
+\begin{equation}
+  \boldsymbol B^2-\boldsymbol E^2,
+  \qquad
+  \boldsymbol E\cdot\boldsymbol B.
+\end{equation}
+\(\boldsymbol B'=0\)인 계가 존재하려면 \(\boldsymbol E\cdot\boldsymbol B=0\)인 전기장 우세 장이어야 합니다. 한 계에서 순수하게 자기장인 장은 자기장 우세이므로 이 조건을 만족할 수 없습니다.
+\editorialnote{이 불변량 기준은 강의실 토론에서 도달한 조건을 정확히 서술한다. 그 유도는 뒤로 미룬다.}
+
+\begin{classroomqa}\audiencequestion{전기 스칼라 퍼텐셜과 자기 벡터 퍼텐셜은 4-벡터를 이루나요?}
+\lecturerresponse{그렇습니다. 관례에 따라 부호는 달라질 수 있지만 두 퍼텐셜은 4-퍼텐셜 \(A^\mu\)로 합쳐집니다. 맥스웰 방정식에서는 이 대상을 체계적으로 사용하게 됩니다.}
+\end{classroomqa}
+
+\section{장의 미분}
+
+이제 입자 하나의 궤적에서 벗어나 시공간 전체에 걸친 장을 살펴보겠습니다. 다음과 같은
+\begin{equation}
+  \phi=\phi(x^1,x^2,x^3,x^0)
+\end{equation}
+스칼라장을 생각합시다. 네 미분 성분은 4-벡터의 공변 성분을 이룹니다.
+\begin{equation}
+  \partial_\mu\phi
+  \equiv\frac{\partial\phi}{\partial x^\mu}
+  =\left(
+    \frac{\partial\phi}{\partial x},
+    \frac{\partial\phi}{\partial y},
+    \frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+로런츠 좌표 변환에 연쇄 법칙을 적용하면 이 공변 변환 법칙을 증명할 수 있습니다. 지표를 올리면 공간 성분의 부호는 반전되지만 시간 성분의 부호는 그대로입니다.
+\begin{equation}
+  \partial^\mu\phi
+  =\left(
+    -\frac{\partial\phi}{\partial x},
+    -\frac{\partial\phi}{\partial y},
+    -\frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+
+미분할 때마다 아래 지표가 하나씩 추가됩니다. 따라서
+\(\partial_\nu V^\mu\)는 위 지표 하나와 아래 지표 하나를 가진 2계 텐서이며, 텐서를 미분하면 아래 지표가 하나 더 있는 대상이 됩니다. 이 기본 규칙을 사용하면 특정 관성계를 선택하지 않고 장 방정식을 쓸 수 있습니다.
+
+\section{불변 스칼라 파동 방정식}
+
+가장 간단한 파동 방정식에는 두 번의 미분이 들어갑니다. 방정식이 모든 관성계에서 같은 형태를 가지려면 좌변은 스칼라여야 합니다. 미분 지표를 수축하면 가장 간단하면서 유일한 선택을 얻습니다.
+\begin{equation}
+  \boxed{\partial^\mu\partial_\mu\phi=0.}
+  \label{eq:wave-covariant}
+\end{equation}
+현재의 부호 규약에 따라 성분을 풀어 쓰면,
+\begin{equation}
+  \frac{\partial^2\phi}{\partial t^2}
+  -\frac{\partial^2\phi}{\partial x^2}
+  -\frac{\partial^2\phi}{\partial y^2}
+  -\frac{\partial^2\phi}{\partial z^2}=0.
+  \label{eq:wave-components}
+\end{equation}
+\eqref{eq:wave-covariant}의 수축은 로런츠 불변성을 명시적으로 드러냅니다. 방정식 \eqref{eq:wave-components}는 같은 내용을 성분별로 쓴 것입니다.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_14.png}
+\caption{스칼라 파동 방정식의 미분 수축 형태와 시간 항에서 공간 항들을 뺀 성분 전개.}
+\lectureframe{01:39:40}
+\end{figure}
+
+\begin{classroomqa}\audiencequestion{파동 방정식의 우변은 반드시 0이어야 하나요?}
+\lecturerresponse{아닙니다. 문제에 맞는 임의의 스칼라일 수 있습니다. \(\phi\)에 비례하는 상수배나 \(\phi^2\)에 비례하는 비선형 스칼라 함수도 공변성을 유지합니다. 0을 택하면 가장 간단한 자유 파동 방정식이 됩니다.}
+\end{classroomqa}
+
+이 스칼라 예제는 다음 내용을 준비하기 위한 것입니다. 맥스웰 방정식에서는 전기장과 자기장이 더 복잡하게 얽히지만, 그 방정식도 지표 구조를 통해 로런츠 불변성이 드러나도록 쓸 수 있습니다. 다음 시간에는 이 문제를 다시 다루겠습니다.
