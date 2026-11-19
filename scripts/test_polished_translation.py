@@ -566,6 +566,36 @@ class TranslationTests(unittest.TestCase):
                 self.assertEqual(p.validate(source, candidate, 'ko', ['$x$']), 'introduced unprotected number')
         self.assertIsNotNone(p.validate('The field vanishes.', '장이 0이 된다.', 'ja'))
 
+    def test_korean_zero_predicate_survives_movable_inline_math(self):
+        source, protected = p.protect(r'A nonzero value $x$ is allowed.')
+        token = p.TOKEN.findall(source)[0]
+        translated = token + '0이 아닌 값은 허용된다.'
+        self.assertIsNone(p.validate(source, translated, 'ko', protected))
+        self.assertEqual(p.validate(source, translated + ' 0이 아닌 다른 값도 있다.', 'ko', protected),
+                         'introduced unprotected number')
+        self.assertIsNone(p.validate('the two-thirds law', '3분의 2 법칙', 'ko'))
+        self.assertIsNotNone(p.validate('the two-thirds law', '3분의 1 법칙', 'ko'))
+        self.assertIsNone(p.validate('one sixth of a period', '주기의 6분의 1', 'ko'))
+        self.assertIsNone(p.validate('one third of the acceleration', '가속도의 3분의 1', 'ko'))
+        self.assertIsNone(p.validate('The separation is nonzero, but the set is not finite.',
+                                     '간격은 0이 아니지만 집합은 유한하지 않다.', 'ko'))
+        self.assertIsNone(p.validate('The matrix has a vanishing row.', '행렬에는 0인 행이 있다.', 'ko'))
+        self.assertIsNone(p.validate('The component vanishes although the vector is nonzero.',
+                                     '성분은 0이지만 벡터는 0이 아니다.', 'ko'))
+        self.assertIsNone(p.validate('zeros everywhere else', '나머지 모든 성분은 0이다.', 'ko'))
+        self.assertIsNone(p.validate('zero momentum and nonzero angular momentum',
+                                     '운동량은 0이고 각운동량은 0이 아니다.', 'ko'))
+        self.assertEqual(p.validate('zero momentum and nonzero angular momentum',
+                                     '운동량은 0이고 각운동량은 0이 아니며 에너지도 0이다.', 'ko'),
+                         'introduced unprotected number')
+        self.assertIsNone(p.validate('the following decade', '그 뒤 10년', 'ko'))
+        self.assertIsNone(p.validate('the entropy vanishes even though it is small.',
+                                     '엔트로피가 작아도 0이어도 된다.', 'ko'))
+        source, protected = p.protect('The expectation value vanishes along every axis:\n$x=0$')
+        token = p.TOKEN.findall(source)[0]
+        self.assertIsNone(p.validate(source, '모든 축에서 기댓값은 0이다.\n' + token,
+                                     'ko', protected))
+
     def test_korean_numeric_recovery_never_spends_or_replaces_accepted_text(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
             book = {'id': 'fixture', 'titles': {'en': 'Physics'}}
@@ -808,6 +838,10 @@ class TranslationTests(unittest.TestCase):
         self.assertIn('Noto Serif CJK JP', result)
         self.assertIn('概観。', result)
         self.assertIn(r'\emergencystretch=2em', result)
+        korean = p.translated_preamble(source, 'ko')
+        self.assertIn(r'\usepackage[CJKspace]{xeCJK}', korean)
+        self.assertIn('Noto Serif CJK KR', korean)
+        self.assertNotIn('[CJKspace]', p.translated_preamble(source, 'zh'))
         french = p.translated_preamble(source, 'fr')
         self.assertIn(r'\emergencystretch=6em', french)
         self.assertIn(r'\sectionfont{\raggedright}', french)

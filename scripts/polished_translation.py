@@ -104,7 +104,8 @@ SCALES = {'hundred': 100, 'thousand': 1000, 'million': 10**6, 'billion': 10**9, 
 NUMBER_WORDS.update(dict(zip(
     'first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth nineteenth twentieth'.split(), map(str, range(1, 21)))))
 NUMBER_WORDS.update({'single': '1', 'once': '1', 'penny': '1', 'pennies': '1', 'dime': '10', 'dimes': '10',
-                     'double': '2', 'doubles': '2', 'doubled': '2', 'triple': '3', 'triples': '3', 'tripled': '3'})
+                     'zeros': '0', 'double': '2', 'doubles': '2', 'doubled': '2',
+                     'triple': '3', 'triples': '3', 'tripled': '3'})
 NUMBER_WORD_PATTERN = re.compile(r'\b(?:' + '|'.join(
     re.escape(w) for w in sorted(NUMBER_WORDS, key=len, reverse=True)) + r')\b')
 PROVIDER_STOP = threading.Event()
@@ -368,28 +369,65 @@ def caption_escapes(source, translated, protected):
 # Match a mathematical predicate, not just a free-standing digit in the paragraph.
 KO_NONZERO = re.compile(r'(?<![\w.+/−-])0이\s+아(?:닌|니\w*|닐|님|닙\w*)(?!\w)')
 KO_VANISH = re.compile(r'(?<![\w.+/−-])0(?:이다|입니다|인|이고|이며|이면|이므로|이어야|'
-                       r'이\s+(?:된다|됩니다|되어|되는|되면|되므로|된다면|되고|된|될))(?!\w)')
+                       r'이지만|인데|이\s+(?:된다|됩니다|되어|되는|되면|되므로|된다면|되고|된|될))(?!\w)')
 CLAUSE_BREAK = re.compile(r'(?<!\d)[.!?;:](?!\d)\s*')
+SENTENCE_BREAK = re.compile(r'(?<!\d)[.!?:](?!\d)\s*')
+KO_ZERO_CONCESSIVE = re.compile(r'(?<![\w.+/−-])0이(?:어도|더라도)(?!\w)')
 
 
-def matched_korean_zero_predicates(source, translated):
-    if TOKEN.findall(source) != TOKEN.findall(translated):
+def matched_korean_zero_predicates(source, translated, protected=None):
+    if not token_integrity(source, translated, protected):
         return 0
+
+    def token_spans(text):
+        """Keep structural boundaries while ignoring movable inline tokens."""
+        def replace(match):
+            token = match.group()
+            if protected is not None and movable_token(protected[int(token[3:9])]):
+                return ''
+            return '\uFFFC'
+        return TOKEN.sub(replace, text).split('\uFFFC')
+
     matches = 0
-    for en_span, ko_span in zip(TOKEN.split(source), TOKEN.split(translated)):
-        en_parts, ko_parts = CLAUSE_BREAK.split(en_span), CLAUSE_BREAK.split(ko_span)
-        if len(en_parts) != len(ko_parts):
-            continue
-        for en, ko in zip(en_parts, ko_parts):
-            # Don't infer zero from a negation, approximation, or limiting process.
-            if re.search(r'\b(?:not|never|no|almost|nearly|approach\w*|limit\w*|without|'
-                         r'negligibl\w*|asymptot\w*)\b|n[\x27’]t\b', en, re.I):
-                continue
-            negative = len(KO_NONZERO.findall(ko))
-            if negative == len(re.findall(r'아니|아닌|아닐|아닙|아님', ko)) and not re.search(r'않|못', ko):
-                matches += min(len(re.findall(r'\bnonzero\b', en, re.I)), negative)
-            if not re.search(r'않|못|거의|가까|아니|아닌|아닐|아닙|아님', ko):
-                matches += min(len(re.findall(r'\bvanish(?:es|ed)?\b', en, re.I)), len(KO_VANISH.findall(ko)))
+    source_bad = re.compile(r'\b(?:not|never|no|almost|nearly|approach\w*|limit\w*|without|'
+                            r'negligibl\w*|asymptot\w*)\b|n[\x27’]t\b', re.I)
+
+    def source_count(text, predicate):
+        count = 0
+        for match in re.finditer(predicate, text, re.I):
+            context = text[max(0, match.start() - 24):match.end() + 8]
+            if not source_bad.search(context):
+                count += 1
+        return count
+
+    def target_nonzero_count(text):
+        count = 0
+        for clause in re.split(r'(?<!\d)[,;.!?:](?!\d)\s*', text):
+            predicates = len(KO_NONZERO.findall(clause))
+            negative = len(re.findall(r'아니|아닌|아닐|아닙|아님', clause))
+            if predicates == negative:
+                count += predicates
+        return count
+
+    def target_vanish_count(text):
+        count = 0
+        for match in KO_VANISH.finditer(text):
+            context = text[max(0, match.start() - 10):match.end() + 10]
+            if ('이지만' in match.group()
+                    or not re.search(r'않|못|거의|가까|아니|아닐|아닙|아님', context)):
+                count += 1
+        count += len(KO_ZERO_CONCESSIVE.findall(text))
+        return count
+
+    for en_span, ko_span in zip(token_spans(source), token_spans(translated)):
+        en_parts, ko_parts = SENTENCE_BREAK.split(en_span), SENTENCE_BREAK.split(ko_span)
+        if len(en_parts) == len(ko_parts):
+            for en, ko in zip(en_parts, ko_parts):
+                matches += min(source_count(en, r'\bnonzero\b'), target_nonzero_count(ko))
+                matches += min(source_count(en, r'\bvanish(?:es|ed|ing)?\b'), target_vanish_count(ko))
+        else:
+            matches += min(source_count(en_span, r'\bnonzero\b'), target_nonzero_count(ko_span))
+            matches += min(source_count(en_span, r'\bvanish(?:es|ed|ing)?\b'), target_vanish_count(ko_span))
     return matches
 
 
@@ -436,9 +474,11 @@ def validate(source, translated, lang, protected=None, *, number_evidence=None):
         return ''
     number_prose = re.sub(r'\b(?:(' + CARDINAL_PATTERN + r'|a|an) )?(' + scale_pattern + r')\b',
                          scaled_quantity, number_prose)
-    for denominator, value in {'halves': 2, 'thirds': 3, 'fourths': 4, 'fifths': 5,
-                               'sixths': 6, 'sevenths': 7, 'eighths': 8, 'ninths': 9,
-                               'tenths': 10}.items():
+    for denominator, value in {'half': 2, 'halves': 2, 'third': 3, 'thirds': 3,
+                               'fourth': 4, 'fourths': 4, 'fifth': 5, 'fifths': 5,
+                               'sixth': 6, 'sixths': 6, 'seventh': 7, 'sevenths': 7,
+                               'eighth': 8, 'eighths': 8, 'ninth': 9, 'ninths': 9,
+                               'tenth': 10, 'tenths': 10}.items():
         pattern = r'\b(one|two|three|four|five|six|seven|eight|nine)[ -]' + denominator + r'\b'
         def fraction_word(match):
             source_words[str(Fraction(int(NUMBER_WORDS[match[1]]), value))] += 1
@@ -451,13 +491,15 @@ def validate(source, translated, lang, protected=None, *, number_evidence=None):
         pattern = r'\b' + re.escape(phrase) + r'\b'
         source_words[number] += len(re.findall(pattern, number_prose))
         number_prose = re.sub(pattern, '', number_prose)
+    source_words['10'] += len(re.findall(r'\bdecade\b', number_prose))
+    number_prose = re.sub(r'\bdecade\b', '', number_prose)
     source_words.update(NUMBER_WORDS[m.group()] for m in NUMBER_WORD_PATTERN.finditer(number_prose))
     normalized_source = Counter()
     for number, count in source_words.items():
         normalized_source[str(Fraction(number))] += count
     try:
-        # Japanese names the denominator first: 4分の1 is exactly one quarter.
-        number_text = re.sub(r'(\d+)分の(\d+)', lambda m: m[2] + '/' + m[1], prose)
+        # Japanese and Korean name the denominator first: 4分の1 / 4분의 1.
+        number_text = re.sub(r'(\d+)(?:分の|분의)\s*(\d+)', lambda m: m[2] + '/' + m[1], prose)
         scale_units = {'百': 100, '千': 1000, '万': 10**4, '萬': 10**4,
                        '億': 10**8, '亿': 10**8, '兆': 10**12}
         # 千克/千米/兆帕 are unit names, not powers multiplying the written coefficient.
@@ -468,8 +510,8 @@ def validate(source, translated, lang, protected=None, *, number_evidence=None):
         return 'invalid numerical fraction'
     excess = candidate_numbers - normalized_source
     if excess:
-        if (lang != 'ko' or set(excess) != {'0'} or normalized_source['0']
-                or matched_korean_zero_predicates(source, translated) < excess['0']):
+        if (lang != 'ko' or set(excess) != {'0'}
+                or matched_korean_zero_predicates(source, translated, protected) < excess['0']):
             return 'introduced unprotected number'
         if number_evidence is not None:
             number_evidence.append('source-matched Korean zero predicate')
@@ -1085,7 +1127,8 @@ def translated_preamble(source, lang):
     prefix = r'\usepackage{fontspec}' + '\n'
     language_setup = ''
     if family in {'JP', 'SC', 'TC', 'KR'}:
-        prefix += (r'\usepackage{xeCJK}' '\n' r'\setmainfont{Latin Modern Roman}' '\n'
+        xecjk_options = '[CJKspace]' if lang == 'ko' else ''
+        prefix += (f'\\usepackage{xecjk_options}{{xeCJK}}\n' r'\setmainfont{Latin Modern Roman}' '\n'
                    f'\\setCJKmainfont[ItalicFont={{Noto Serif CJK {family}}},BoldItalicFont={{Noto Serif CJK {family} Bold}}]{{Noto Serif CJK {family}}}\n'
                    f'\\setCJKsansfont{{Noto Sans CJK {family}}}\n'
                    f'\\setCJKmonofont{{Noto Sans Mono CJK {family}}}\n')
