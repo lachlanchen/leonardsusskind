@@ -7,15 +7,24 @@
 # Kho Lưu Trữ Ghi Chú Bài Giảng Leonard Susskind
 
 <!-- reading-languages:start -->
-## Đọc các ấn bản đa ngôn ngữ
+## Sách theo ngôn ngữ
 
-Cả 16 cuốn đều có bản tiếng Anh, Nhật, Trung giản thể, Pháp, Tây Ban Nha và Đức. [Bảng PDF theo sách và ngôn ngữ](../README.md#final-polished-translations) cũng cho biết cuốn nào đã có bản tiếng Trung phồn thể, Hàn, Việt, Nga hoặc Ả Rập. Chọn **Available PDF** để mở bản đã xuất bản; **In preparation** nghĩa là chưa có bản tải xuống.
+16 cuốn từ *Theoretical Minimum* và các bài giảng liên quan. [Chọn PDF theo sách và ngôn ngữ](../README.md#final-polished-translations) hoặc [đọc trên trình duyệt](https://learn.lazying.art/leonardsusskind-reader.html).
 
-PDF dịch mới dùng giấy 177.6 × 252 mm (mỗi chiều A5 × 1.2), chữ 12 pt, giữ nguyên công thức và hình. “pocket 1.2x” cũ chỉ cỡ chữ phóng lớn, không phải khổ giấy này.
+English · 日本語 · 中文（简体） · Français · Español · Deutsch · 中文（繁體） · 한국어 · Tiếng Việt · Русский · العربية
 
-Vui lòng gửi qua issue các bản sửa có căn cứ về vật lý, khả năng tiếp cận hoặc dàn trang.
+## Đọc trong Bunko
 
-[Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
+<a href="https://lachlan.lazying.art/Bunko/"><img src="../figs/bunko/icon.png" alt="Bunko" width="72"></a>
+
+Đọc trên điện thoại hoặc máy tính bảng. Mỗi cuốn hỗ trợ các ngôn ngữ khác nhau.
+
+**[App Store](https://apps.apple.com/app/id6815137919)** · **[Google Play](https://play.google.com/store/apps/details?id=art.lazying.bunko)** · [Bunko Web](https://lachlan.lazying.art/Bunko/)
+
+<p>
+<a href="https://apps.apple.com/app/id6815137919"><img src="../figs/bunko/library-ios.png" alt="Bunko library on iPhone" width="180"></a>
+<a href="https://play.google.com/store/apps/details?id=art.lazying.bunko"><img src="../figs/bunko/reader-android.png" alt="Bunko multilingual reader on Android" width="180"></a>
+</p>
 <!-- reading-languages:end -->
 
 <!-- language-covers:start -->
@@ -386,8 +395,6 @@ Kho này được cấp phép theo Giấy phép Công cộng GNU v3.0. Xem [LICE
 
 ## ❤️ Support
 
-Bạn có bản ghi bài giảng do mình sở hữu hoặc được phép sử dụng không? Chương trình [Bilingual Lecture Pack](https://lazying.art/lecture-pack/?utm_source=github&utm_medium=readme&utm_campaign=leonard_susskind_archive&utm_content=rights_cleared_lecture) riêng chỉ xử lý tài liệu do khách hàng kiểm soát hoặc đã được cấp quyền. Kho lưu trữ Susskind này vẫn miễn phí và không được bán trong dịch vụ đó.
-
 <!-- support:start -->
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 [![LazyingArt Support](https://img.shields.io/badge/LazyingArt-Support-0EA5E9?style=for-the-badge)](https://chat.lazying.art/donate)
@@ -395,17 +402,10 @@ Bạn có bản ghi bài giảng do mình sở hữu hoặc được phép sử 
 [![Stripe Support](https://img.shields.io/badge/Stripe-Support-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400)
 <!-- support:end -->
 
-## Đọc bằng Bunko
-
-[Bunko](https://lachlan.lazying.art/Bunko/) · Có bản tiếng Nhật và tiếng Trung giản thể cho 16 sách đã hiệu đính, bên cạnh bản gốc tiếng Anh. PDF là sách độc lập theo từng ngôn ngữ; Bunko cho phép chọn các lớp ngôn ngữ tương ứng.
-
-
 <!-- polished-translations:start -->
-## Bản dịch từ bản hiệu đính cuối
+## Các bản PDF
 
-Mỗi ấn bản ngôn ngữ dựa trên bản tiếng Anh đã hiệu đính. Bản tiếng Trung phồn thể được chuyển đổi trực tiếp từ bản giản thể đã kiểm định, rồi được trau chuốt đối chiếu với nguyên bản tiếng Anh. Công thức và hình gốc được giữ nguyên; chỉ PDF đã kiểm tra mới được công bố.
-
-[Tình trạng của mọi ấn bản ngôn ngữ](../README.md#final-polished-translations)
+[Các bản PDF](../README.md#pdf-editions)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

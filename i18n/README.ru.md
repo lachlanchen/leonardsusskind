@@ -7,15 +7,24 @@
 # Репозиторий конспектов лекций Леонарда Сасскинда
 
 <!-- reading-languages:start -->
-## Читайте многоязычные издания
+## Книги по языкам
 
-Все 16 книг доступны на английском, японском, упрощённом китайском, французском, испанском и немецком. В [таблице PDF по книгам и языкам](../README.md#final-polished-translations) также можно проверить, вышла ли нужная книга на традиционном китайском, корейском, вьетнамском, русском или арабском. Ссылка **Available PDF** открывает издание; пометка **In preparation** означает, что скачать его пока нельзя.
+16 книг по курсу *Theoretical Minimum* и смежным лекциям. [Выбрать PDF по книге и языку](../README.md#final-polished-translations) или [открыть в браузере](https://learn.lazying.art/leonardsusskind-reader.html).
 
-Новые переводные PDF используют бумагу 177.6 × 252 мм (обе стороны A5 × 1.2), шрифт 12 pt и сохраняют формулы и рисунки. Старое обозначение «pocket 1.2x» означает увеличение шрифта, а не этот формат бумаги.
+English · 日本語 · 中文（简体） · Français · Español · Deutsch · 中文（繁體） · 한국어 · Tiếng Việt · Русский · العربية
 
-Присылайте через issue обоснованные исправления по физике, доступности или вёрстке.
+## Читайте в Bunko
 
-[Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
+<a href="https://lachlan.lazying.art/Bunko/"><img src="../figs/bunko/icon.png" alt="Bunko" width="72"></a>
+
+Читайте на телефоне или планшете. Набор языков зависит от книги.
+
+**[App Store](https://apps.apple.com/app/id6815137919)** · **[Google Play](https://play.google.com/store/apps/details?id=art.lazying.bunko)** · [Bunko Web](https://lachlan.lazying.art/Bunko/)
+
+<p>
+<a href="https://apps.apple.com/app/id6815137919"><img src="../figs/bunko/library-ios.png" alt="Bunko library on iPhone" width="180"></a>
+<a href="https://play.google.com/store/apps/details?id=art.lazying.bunko"><img src="../figs/bunko/reader-android.png" alt="Bunko multilingual reader on Android" width="180"></a>
+</p>
 <!-- reading-languages:end -->
 
 <!-- language-covers:start -->
@@ -386,8 +395,6 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 
 ## ❤️ Support
 
-У вас есть запись собственной лекции или разрешение на её использование? Отдельный пилотный сервис [Bilingual Lecture Pack](https://lazying.art/lecture-pack/?utm_source=github&utm_medium=readme&utm_campaign=leonard_susskind_archive&utm_content=rights_cleared_lecture) работает только с материалами, которыми управляет заказчик или на которые получено разрешение. Этот архив Сасскинда остаётся бесплатным и не продаётся в рамках сервиса.
-
 <!-- support:start -->
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 [![LazyingArt Support](https://img.shields.io/badge/LazyingArt-Support-0EA5E9?style=for-the-badge)](https://chat.lazying.art/donate)
@@ -395,17 +402,10 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 [![Stripe Support](https://img.shields.io/badge/Stripe-Support-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400)
 <!-- support:end -->
 
-## Читать в Bunko
-
-[Bunko](https://lachlan.lazying.art/Bunko/) · Для 16 окончательно отредактированных книг доступны японские и упрощённые китайские издания наряду с английскими оригиналами. PDF выпускаются отдельно для каждого языка; в Bunko можно выбирать выровненные языковые слои.
-
-
 <!-- polished-translations:start -->
-## Переводы окончательной редакции
+## Издания в PDF
 
-Каждое языковое издание основано на окончательно отредактированном английском тексте. Традиционная китайская версия напрямую преобразуется из проверенной упрощённой и затем редактируется с опорой на английский оригинал. Формулы и исходные рисунки сохраняются; публикуются только проверенные PDF.
-
-[Доступность всех языковых изданий](../README.md#final-polished-translations)
+[Издания в PDF](../README.md#pdf-editions)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

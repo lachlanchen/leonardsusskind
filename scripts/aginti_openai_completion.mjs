@@ -37,9 +37,10 @@ try {
         response_format: {type: 'json_object'},
         max_completion_tokens: 16000,
     }, config, 'translation');
-    const result = response.choices?.[0]?.message?.content;
-    if (typeof result !== 'string' || !result.trim() || response.choices[0].finish_reason === 'length') {
-        send({ok: false, reason: 'empty_result'});
+    const choice = response.choices?.[0];
+    const result = choice?.message?.content;
+    if (choice?.finish_reason === 'length' || typeof result !== 'string' || !result.trim()) {
+        send({ok: false, reason: choice?.finish_reason === 'length' ? 'truncated_result' : 'empty_result'});
         process.exitCode = 1;
     } else {
         send({ok: true, provider: 'openai', model, result});

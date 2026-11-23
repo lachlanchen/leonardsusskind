@@ -5,15 +5,24 @@
 # Dépôt des notes de cours de Leonard Susskind
 
 <!-- reading-languages:start -->
-## Lire les éditions multilingues
+## Livres par langue
 
-Les 16 livres sont disponibles en anglais, japonais, chinois simplifié, français, espagnol et allemand. Le [tableau des PDF par livre et par langue](../README.md#final-polished-translations) indique aussi où en sont les éditions en chinois traditionnel, coréen, vietnamien, russe et arabe. **Available PDF** ouvre une édition publiée ; **In preparation** signifie que le PDF n’est pas encore disponible.
+16 livres issus de *Theoretical Minimum* et de cours connexes. [Choisir un PDF par livre et par langue](../README.md#final-polished-translations) ou [lire dans le navigateur](https://learn.lazying.art/leonardsusskind-reader.html).
 
-Les nouveaux PDF traduits utilisent du papier de 177.6 × 252 mm (chaque dimension A5 × 1.2), un corps de 12 pt et conservent équations et figures. L’ancien « pocket 1.2x » désigne des caractères agrandis, pas ce format de papier.
+English · 日本語 · 中文（简体） · Français · Español · Deutsch · 中文（繁體） · 한국어 · Tiếng Việt · Русский · العربية
 
-Les corrections documentées concernant la physique, l’accessibilité ou la mise en page sont les bienvenues via une issue.
+## Lire dans Bunko
 
-[Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
+<a href="https://lachlan.lazying.art/Bunko/"><img src="../figs/bunko/icon.png" alt="Bunko" width="72"></a>
+
+Lisez sur téléphone ou tablette. Les langues proposées varient selon le livre.
+
+**[App Store](https://apps.apple.com/app/id6815137919)** · **[Google Play](https://play.google.com/store/apps/details?id=art.lazying.bunko)** · [Bunko Web](https://lachlan.lazying.art/Bunko/)
+
+<p>
+<a href="https://apps.apple.com/app/id6815137919"><img src="../figs/bunko/library-ios.png" alt="Bunko library on iPhone" width="180"></a>
+<a href="https://play.google.com/store/apps/details?id=art.lazying.bunko"><img src="../figs/bunko/reader-android.png" alt="Bunko multilingual reader on Android" width="180"></a>
+</p>
 <!-- reading-languages:end -->
 
 > Dirigé par [LazyingArt LLC](https://lazying.art). Sites web : [lazying.art](https://lazying.art) et [learn.lazying.art](https://learn.lazying.art).
@@ -396,8 +405,6 @@ Les contributions doivent utiliser des commits ciblés et identifier exactement 
 
 ## ❤️ Soutien
 
-Vous avez l'enregistrement d'un cours qui vous appartient ou que vous êtes autorisé à utiliser ? Le service pilote distinct [Bilingual Lecture Pack](https://lazying.art/lecture-pack/?utm_source=github&utm_medium=readme&utm_campaign=leonard_susskind_archive&utm_content=rights_cleared_lecture) travaille uniquement avec des contenus contrôlés par le client ou dont les droits sont autorisés. Cette archive Susskind reste gratuite et n'est pas vendue dans le cadre de ce service.
-
 <!-- support:start -->
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 [![LazyingArt Support](https://img.shields.io/badge/LazyingArt-Support-0EA5E9?style=for-the-badge)](https://chat.lazying.art/donate)
@@ -409,17 +416,10 @@ Vous avez l'enregistrement d'un cours qui vous appartient ou que vous êtes auto
 
 Ce dépôt est distribué sous licence GNU General Public License v3.0. Voir [LICENSE](../LICENSE).
 
-## Lire dans Bunko
-
-[Bunko](https://lachlan.lazying.art/Bunko/) · Les éditions japonaises et chinoises simplifiées de 16 livres révisés sont disponibles avec les originaux anglais. Les PDF sont des éditions autonomes ; Bunko permet de choisir des couches linguistiques alignées.
-
-
 <!-- polished-translations:start -->
-## Traductions de la version finale
+## Éditions PDF
 
-Chaque édition part du texte anglais révisé. L’édition chinoise traditionnelle est convertie depuis la version simplifiée validée, puis révisée à l’aide de l’original anglais. Les équations et figures d’origine sont conservées ; seuls les PDF vérifiés sont proposés.
-
-[Disponibilité de toutes les éditions](../README.md#final-polished-translations)
+[Éditions PDF](../README.md#pdf-editions)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

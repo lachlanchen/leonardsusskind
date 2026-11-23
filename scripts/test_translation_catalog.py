@@ -62,7 +62,7 @@ class CoverTableTests(unittest.TestCase):
 
     def test_published_readmes_point_to_the_same_pdf_table(self):
         root = catalog.ROOT / 'README.md'
-        self.assertIn('\n## Final Polished Translations\n', root.read_text())
+        self.assertIn('\n## PDF Editions\n', root.read_text())
         self.assertEqual(len(catalog.NOTICES), 11)
         for locale in catalog.NOTICES:
             with self.subTest(locale=locale):
@@ -71,7 +71,22 @@ class CoverTableTests(unittest.TestCase):
                 self.assertIn(notice, path.read_text())
                 table_path = '' if locale == 'en' else '../README.md'
                 self.assertIn(f']({table_path}#final-polished-translations)', notice)
-                self.assertIn('**In preparation**', notice)
+                self.assertIn(catalog.APP_STORE, notice)
+                self.assertIn(catalog.PLAY_STORE, notice)
+                for asset in ('icon.png', 'library-ios.png', 'reader-android.png'):
+                    self.assertIn(f'src="{table_path and "../"}figs/bunko/{asset}"', notice)
+                    self.assertTrue((root.parent / 'figs/bunko' / asset).is_file())
+
+    def test_pdf_table_shows_only_verified_downloads_and_can_mark_completion(self):
+        book = {'id': 'sample', 'course': 'supplementary/higgs_boson/2012_summer',
+                'titles': {'en': 'Higgs Boson'}}
+        row = {lang + '_pdf': 'validated' for lang in catalog.pipeline.LANGS}
+        self.assertIn('All 1 books are available', catalog.pipeline.pdf_editions_block([book], [row]))
+        row['ar_pdf'] = 'blocked'
+        table = catalog.pipeline.pdf_editions_block([book], [row])
+        self.assertIn('**9/10 translated PDFs published.**', table)
+        self.assertIn('In preparation', table)
+        self.assertNotIn('translations/sample/ar/book.pdf', table)
 
     def test_every_validated_language_is_linked(self):
         self.data['books']['sample']['editions'].update({'fr': {}, 'zh-Hant': {}, 'ar': {}})

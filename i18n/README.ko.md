@@ -7,15 +7,24 @@
 # Leonard Susskind 강의 노트 저장소
 
 <!-- reading-languages:start -->
-## 다국어판 읽기
+## 언어별 도서
 
-총 16권 모두 영어, 일본어, 중국어 간체, 프랑스어, 스페인어, 독일어로 읽을 수 있습니다. [책과 언어별 PDF 목록](../README.md#final-polished-translations)에서 중국어 번체, 한국어, 베트남어, 러시아어, 아랍어판의 출간 여부도 확인할 수 있습니다. **Available PDF**를 누르면 출간된 책이 열립니다. **In preparation**은 아직 내려받을 수 없다는 뜻입니다.
+*Theoretical Minimum*과 관련 강의 16권. [책과 언어별로 PDF 선택](../README.md#final-polished-translations) 또는 [브라우저에서 읽기](https://learn.lazying.art/leonardsusskind-reader.html).
 
-새 번역 PDF는 A5의 가로·세로를 각각 1.2배 한 177.6 × 252 mm 용지와 12 pt 본문을 사용하며 수식과 원본 그림을 유지합니다. 기존 “pocket 1.2x”는 글자 확대율로, 이 용지 크기와 다릅니다.
+English · 日本語 · 中文（简体） · Français · Español · Deutsch · 中文（繁體） · 한국어 · Tiếng Việt · Русский · العربية
 
-물리 내용, 접근성, 조판에 관한 근거 있는 수정은 Issue로 보내 주세요.
+## Bunko에서 읽기
 
-[Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
+<a href="https://lachlan.lazying.art/Bunko/"><img src="../figs/bunko/icon.png" alt="Bunko" width="72"></a>
+
+휴대전화나 태블릿에서 읽을 수 있습니다. 선택할 수 있는 언어는 책마다 다릅니다.
+
+**[App Store](https://apps.apple.com/app/id6815137919)** · **[Google Play](https://play.google.com/store/apps/details?id=art.lazying.bunko)** · [Bunko Web](https://lachlan.lazying.art/Bunko/)
+
+<p>
+<a href="https://apps.apple.com/app/id6815137919"><img src="../figs/bunko/library-ios.png" alt="Bunko library on iPhone" width="180"></a>
+<a href="https://play.google.com/store/apps/details?id=art.lazying.bunko"><img src="../figs/bunko/reader-android.png" alt="Bunko multilingual reader on Android" width="180"></a>
+</p>
 <!-- reading-languages:end -->
 
 <!-- language-covers:start -->
@@ -385,8 +394,6 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 
 ## ❤️ Support
 
-직접 소유했거나 사용 허가를 받은 강의 녹화물이 있나요? 별도의 [Bilingual Lecture Pack 파일럿](https://lazying.art/lecture-pack/?utm_source=github&utm_medium=readme&utm_campaign=leonard_susskind_archive&utm_content=rights_cleared_lecture)은 고객이 관리하거나 권리 사용이 허가된 자료만 다룹니다. 이 Susskind 아카이브는 계속 무료이며 해당 서비스에서 판매되지 않습니다.
-
 <!-- support:start -->
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 [![LazyingArt Support](https://img.shields.io/badge/LazyingArt-Support-0EA5E9?style=for-the-badge)](https://chat.lazying.art/donate)
@@ -394,17 +401,10 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 [![Stripe Support](https://img.shields.io/badge/Stripe-Support-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400)
 <!-- support:end -->
 
-## Bunko에서 읽기
-
-[Bunko](https://lachlan.lazying.art/Bunko/) · 최종 교정된 16권의 일본어판과 중국어 간체판을 영어 원본과 함께 제공합니다. PDF는 언어별 독립판이며 Bunko에서는 정렬된 언어 층을 선택할 수 있습니다.
-
-
 <!-- polished-translations:start -->
-## 최종 교정판 번역
+## PDF판
 
-각 언어판은 최종 교정된 영어 강의 노트를 바탕으로 합니다. 번체 중국어판은 검증된 간체 중국어판을 직접 변환한 뒤 영어 원문과 대조해 다듬습니다. 수식과 원본 그림을 유지하며 검증된 PDF만 공개합니다.
-
-[전체 언어판 공개 현황](../README.md#final-polished-translations)
+[PDF판](../README.md#pdf-editions)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

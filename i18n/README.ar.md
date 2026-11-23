@@ -5,15 +5,24 @@
 # مستودع ملاحظات محاضرات Leonard Susskind
 
 <!-- reading-languages:start -->
-## اقرأ الطبعات متعددة اللغات
+## الكتب حسب اللغة
 
-تتوفر الكتب الستة عشر كلها بالإنجليزية واليابانية والصينية المبسطة والفرنسية والإسبانية والألمانية. ويبيّن [جدول ملفات PDF بحسب الكتاب واللغة](../README.md#final-polished-translations) أيضاً ما صدر بالصينية التقليدية والكورية والفيتنامية والروسية والعربية. يفتح رابط **Available PDF** النسخة المنشورة، أما **In preparation** فتعني أنها غير متاحة للتنزيل بعد.
+16 كتاباً من سلسلة *Theoretical Minimum* ومحاضرات ذات صلة. [اختر ملف PDF بحسب الكتاب واللغة](../README.md#final-polished-translations) أو [اقرأ في المتصفح](https://learn.lazying.art/leonardsusskind-reader.html).
 
-تستخدم ملفات PDF المترجمة الجديدة ورقاً بقياس 177.6 × 252 مم (كل بُعد من A5 مضروب في 1.2)، وخطاً بحجم 12 نقطة، مع حفظ المعادلات والرسوم. يشير «pocket 1.2x» القديم إلى تكبير الخط لا إلى حجم الورق هذا.
+English · 日本語 · 中文（简体） · Français · Español · Deutsch · 中文（繁體） · 한국어 · Tiếng Việt · Русский · العربية
 
-نرحب عبر issue بالتصحيحات الموثقة في الفيزياء أو الإتاحة أو التنسيق.
+## اقرأ في Bunko
 
-[Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
+<a href="https://lachlan.lazying.art/Bunko/"><img src="../figs/bunko/icon.png" alt="Bunko" width="72"></a>
+
+اقرأ على الهاتف أو الجهاز اللوحي. تختلف اللغات المتاحة باختلاف الكتاب.
+
+**[App Store](https://apps.apple.com/app/id6815137919)** · **[Google Play](https://play.google.com/store/apps/details?id=art.lazying.bunko)** · [Bunko Web](https://lachlan.lazying.art/Bunko/)
+
+<p>
+<a href="https://apps.apple.com/app/id6815137919"><img src="../figs/bunko/library-ios.png" alt="Bunko library on iPhone" width="180"></a>
+<a href="https://play.google.com/store/apps/details?id=art.lazying.bunko"><img src="../figs/bunko/reader-android.png" alt="Bunko multilingual reader on Android" width="180"></a>
+</p>
 <!-- reading-languages:end -->
 
 > بإشراف [LazyingArt LLC](https://lazying.art). المواقع: [lazying.art](https://lazying.art) و[learn.lazying.art](https://learn.lazying.art).
@@ -396,8 +405,6 @@
 
 ## ❤️ الدعم
 
-هل لديك تسجيل لمحاضرة تملكه أو لديك إذن باستخدامه؟ يعمل برنامج [حزمة المحاضرة ثنائية اللغة التجريبي](https://lazying.art/lecture-pack/?utm_source=github&utm_medium=readme&utm_campaign=leonard_susskind_archive&utm_content=rights_cleared_lecture) المنفصل فقط مع مواد يتحكم فيها العميل أو مصرح باستخدامها. يظل أرشيف Susskind هذا مجانيًا ولا يُباع ضمن تلك الخدمة.
-
 <!-- support:start -->
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 [![LazyingArt Support](https://img.shields.io/badge/LazyingArt-Support-0EA5E9?style=for-the-badge)](https://chat.lazying.art/donate)
@@ -409,17 +416,10 @@
 
 هذا المستودع مرخّص بموجب GNU General Public License v3.0. انظر [LICENSE](../LICENSE).
 
-## اقرأ في Bunko
-
-[Bunko](https://lachlan.lazying.art/Bunko/) · تتوفر طبعات يابانية وصينية مبسطة لعدد 16 من الكتب المنقحة، إلى جانب الأصل الإنجليزي. ملفات PDF طبعات مستقلة لكل لغة، ويتيح Bunko اختيار طبقات لغوية متقابلة.
-
-
 <!-- polished-translations:start -->
-## ترجمات النسخة النهائية
+## طبعات PDF
 
-تستند كل طبعة لغوية إلى النص الإنجليزي المنقح. وتُحوَّل طبعة الصينية التقليدية مباشرة من النسخة المبسطة المتحقق منها، ثم تُصقل بالرجوع إلى الأصل الإنجليزي. تُحفظ المعادلات والرسوم الأصلية، ولا تُنشر إلا ملفات PDF التي اجتازت التحقق.
-
-[حالة جميع الطبعات اللغوية](../README.md#final-polished-translations)
+[طبعات PDF](../README.md#pdf-editions)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

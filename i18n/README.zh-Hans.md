@@ -7,15 +7,24 @@
 # Leonard Susskind 讲义笔记仓库
 
 <!-- reading-languages:start -->
-## 阅读多语言版本
+## 按语言阅读
 
-全套 16 册均有英语、日语、简体中文、法语、西班牙语和德语版。[各册 PDF 语言对照表](../README.md#final-polished-translations)也列出了繁体中文、韩语、越南语、俄语和阿拉伯语版的出版进度。点击 **Available PDF** 即可阅读；**In preparation** 表示尚未开放下载。
+《Theoretical Minimum》及相关讲座共 16 册。[按书名和语言选择 PDF](../README.md#final-polished-translations)，或[在线阅读](https://learn.lazying.art/leonardsusskind-reader.html)。
 
-新译本默认使用A5长宽各放大1.2倍的纸张（177.6 × 252 mm）、12 pt正文和舒适行距，保留公式与原图。旧版“pocket 1.2x”指字号放大，并非此纸张尺寸。
+English · 日本語 · 中文（简体） · Français · Español · Deutsch · 中文（繁體） · 한국어 · Tiếng Việt · Русский · العربية
 
-欢迎通过 Issue 提交有依据的科学内容校订、无障碍改进或排版修正。
+## 在 Bunko 中阅读
 
-[Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
+<a href="https://lachlan.lazying.art/Bunko/"><img src="../figs/bunko/icon.png" alt="Bunko" width="72"></a>
+
+可在手机或平板上阅读。可选语言因书而异。
+
+**[App Store](https://apps.apple.com/app/id6815137919)** · **[Google Play](https://play.google.com/store/apps/details?id=art.lazying.bunko)** · [Bunko Web](https://lachlan.lazying.art/Bunko/)
+
+<p>
+<a href="https://apps.apple.com/app/id6815137919"><img src="../figs/bunko/library-ios.png" alt="Bunko library on iPhone" width="180"></a>
+<a href="https://play.google.com/store/apps/details?id=art.lazying.bunko"><img src="../figs/bunko/reader-android.png" alt="Bunko multilingual reader on Android" width="180"></a>
+</p>
 <!-- reading-languages:end -->
 
 <!-- language-covers:start -->
@@ -381,8 +390,6 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 
 ## ❤️ Support
 
-你有自己拥有或已获许可使用的课程录像吗？独立的 [Bilingual Lecture Pack 试点服务](https://lazying.art/lecture-pack/?utm_source=github&utm_medium=readme&utm_campaign=leonard_susskind_archive&utm_content=rights_cleared_lecture) 只处理客户可控制或已完成权利确认的材料。本 Susskind 档案仍然免费，也不会通过该服务出售。
-
 <!-- support:start -->
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 [![LazyingArt Support](https://img.shields.io/badge/LazyingArt-Support-0EA5E9?style=for-the-badge)](https://chat.lazying.art/donate)
@@ -390,17 +397,10 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 [![Stripe Support](https://img.shields.io/badge/Stripe-Support-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400)
 <!-- support:end -->
 
-## 在 Bunko 阅读
-
-[Bunko](https://lachlan.lazying.art/Bunko/) · 16册最终润色讲义已有日文版与简体中文版，并保留英文原版。PDF是各语言独立成书的版本；Bunko可选择对应的语言层阅读。
-
-
 <!-- polished-translations:start -->
-## 最终润色版译本
+## PDF 版本
 
-各语言版本均以最终润色的英文讲义为依据。繁体中文版由已验证的简体中文版直接转换，再对照英文原文润色。保留公式与原图，仅发布通过检查的 PDF。这些译本未经原讲师认可。
-
-[所有语言版本的发布进度](../README.md#final-polished-translations)
+[PDF 版本](../README.md#pdf-editions)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->

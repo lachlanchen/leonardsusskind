@@ -19,6 +19,7 @@ import subprocess
 import sys
 import threading
 import time
+import unicodedata
 
 from opencc import OpenCC
 
@@ -864,6 +865,8 @@ def aginti_openai_chat(prompt, dest, args, model):
             raise ProviderUnavailable('APIConnectionError: AgInTi OpenAI transport or rate limit')
         if reply.get('reason') == 'empty_result':
             raise InvalidReply('AgInTi returned no text')
+        if reply.get('reason') == 'truncated_result':
+            raise InvalidReply('AgInTi response reached its output limit')
         raise ProviderUnavailable(f'AgInTi OpenAI request failed (exit {run.returncode}, HTTP {reply.get("status") if isinstance(reply.get("status"), int) else "unknown"})')
     if reply.get('provider') != 'openai' or reply.get('model') != model:
         raise ProviderUnavailable('AgInTi did not confirm the requested OpenAI provider and model')
@@ -961,12 +964,19 @@ def book_title(book, lang, args=None):
     return read(path)['translations'][book['id']]
 
 
+def foreign_vietnamese_letters(text):
+    return Counter(c for c in TOKEN.sub('', text) if c.isalpha()
+                   and not unicodedata.name(c, '').startswith(('LATIN ', 'GREEK ')))
+
+
 def accept_candidates(prepared, result, rows, translations, lang, stage):
     errors = {}
     for key, source in rows.items():
         translated = translations.get(key)
         evidence = []
         issue = validate(source, translated, lang, prepared['protected'], number_evidence=evidence)
+        if not issue and lang == 'vi' and foreign_vietnamese_letters(translated) - foreign_vietnamese_letters(source):
+            issue = 'foreign-script text not present in the Vietnamese source passage'
         if isinstance(translated, str):
             result.setdefault('candidates', {})[key] = translated
         if issue:
@@ -1026,8 +1036,9 @@ def recheck_language(lang, dry_run):
 def request_segments(book, lang, rel, prepared, result, rows, args, stage, errors, prompt=None):
     """Persist a source-bound attempt budget before each call, including crash recovery."""
     attempts = result.setdefault('attempts', {})
+    limit = 1 if stage == 'small-batch' else REQUEST_LIMIT
     eligible = {key: source for key, source in rows.items()
-                if attempts.get(key, {}).get(stage, 0) < REQUEST_LIMIT}
+                if attempts.get(key, {}).get(stage, 0) < limit}
     if not eligible:
         return False
     dest = WORK / 'calls' / book['id'] / lang / (rel + f'.{stage}.{time.time_ns()}.json')
@@ -1044,6 +1055,7 @@ def request_segments(book, lang, rel, prepared, result, rows, args, stage, error
             'expressions; use natural words instead. Do not copy digits out of formulas or add '
             'a numeric paraphrase for an implicit quantity. Preserve affirmative and negative '
             'predicates (such as vanishes versus nonzero). Keep display equations and figures untouched. '
+            'When a candidate is missing, translate that paragraph from the supplied source. '
             'Repair the concrete error without rewriting correct content. Return ONLY JSON '
             '{"translations": {"id": "complete corrected masked paragraph"}}.\n'
             + json.dumps({'book': book['titles']['en'], 'paragraphs': eligible,
@@ -1060,6 +1072,7 @@ def request_segments(book, lang, rel, prepared, result, rows, args, stage, error
     print(json.dumps({'event': 'request', 'book': book['id'], 'lang': lang, 'file': rel,
                       'stage': stage, 'segments': list(eligible), 'at': time.time(),
                       'provider': getattr(args, 'provider', 'deepseek')}), flush=True)
+    reply_error = None
     try:
         reply = chat(prompt, dest, args, model=getattr(args, 'review_model', 'deepseek-reasoner')) if stage != 'writer' else chat(prompt, dest, args)
     except ProviderUnavailable:
@@ -1069,17 +1082,25 @@ def request_segments(book, lang, rel, prepared, result, rows, args, stage, error
         result.pop('inflight', None)
         write(result_path(book, lang, rel), result)
         raise
-    except InvalidReply:
+    except InvalidReply as exc:
+        reply_error = str(exc)
+        print(json.dumps({'event': 'invalid_reply', 'book': book['id'], 'lang': lang, 'file': rel,
+                          'stage': stage, 'segments': len(eligible), 'reason': reply_error}), flush=True)
         reply = {}
     translations = reply.get('translations', {})
     if not isinstance(translations, dict):
         translations = {}
     rejected = accept_candidates(prepared, result, eligible, translations, lang, stage)
+    if reply_error:
+        rejected = dict.fromkeys(rejected, reply_error)
     for key in eligible:
         errors.pop(key, None)
     errors.update(rejected)
     result.pop('inflight', None)
-    result['last_errors'] = dict(errors)
+    stored = result.setdefault('last_errors', {})
+    for key in eligible:
+        stored.pop(key, None)
+    stored.update(rejected)
     write(result_path(book, lang, rel), result)
     return True
 
@@ -1104,6 +1125,31 @@ def recover_inflight(book, lang, rel, prepared, result):
     write(result_path(book, lang, rel), result)
 
 
+def segment_batches(items, limit, max_count=None):
+    batch, size = [], 0
+    for item in items:
+        if batch and (size + len(item[1]) > limit or (max_count is not None and len(batch) >= max_count)):
+            yield dict(batch)
+            batch, size = [], 0
+        batch.append(item)
+        size += len(item[1])
+    if batch:
+        yield dict(batch)
+
+
+def recover_missing_batches(book, lang, rel, prepared, result, pending, args, errors):
+    if getattr(args, 'provider', None) != 'aginti-openai' or lang not in {'vi', 'ru', 'ar'}:
+        return
+    attempts = result.get('attempts', {})
+    rows = [(k, source) for k, source in pending.items() if k not in result.get('candidates', {})
+            and attempts.get(k, {}).get('writer', 0) >= REQUEST_LIMIT
+            and attempts.get(k, {}).get('repair', 0) >= REQUEST_LIMIT
+            and not attempts.get(k, {}).get('small-batch', 0)]
+    # A finite, separate response-size recovery; never retry rejected prose here.
+    for batch in segment_batches(rows, 3500, 10):
+        request_segments(book, lang, rel, prepared, result, batch, args, 'small-batch', errors)
+
+
 def translate_file(book, lang, rel, args):
     p = read(WORK / 'prepared' / book['id'] / (rel + '.json'))
     result = load_results(book, lang, rel, p)
@@ -1112,18 +1158,10 @@ def translate_file(book, lang, rel, args):
         write(result_path(book, lang, rel), result)
     todo = [(str(i), text) for i, text in enumerate(p['parts'])
             if needs_translation(text) and str(i) not in result['accepted']]
-    batches, batch, size = [], [], 0
-    for item in todo:
-        if batch and size + len(item[1]) > getattr(args, 'batch_chars', 4800):
-            batches.append(batch)
-            batch, size = [], 0
-        batch.append(item)
-        size += len(item[1])
-    if batch:
-        batches.append(batch)
+    aginti = getattr(args, 'provider', None) == 'aginti-openai'
+    batch_chars = getattr(args, 'batch_chars', 4800)
     unresolved = {}
-    for index, rows in enumerate(batches):
-        pending = dict(rows)
+    for pending in segment_batches(todo, min(batch_chars, 9000) if aginti else batch_chars, 36 if aginti else None):
         errors = {k: validate(s, result['candidates'][k], lang, p['protected'])
                   for k, s in pending.items() if k in result.get('candidates', {})}
         for attempt in range(2):
@@ -1181,9 +1219,14 @@ def translate_file(book, lang, rel, args):
             if not pending:
                 break
         for _ in range(REQUEST_LIMIT):
-            if not pending or not request_segments(book, lang, rel, p, result, pending, args, 'repair', errors):
+            repaired = False
+            for batch in segment_batches(pending.items(), 3500, 10) if aginti else [pending]:
+                repaired = request_segments(book, lang, rel, p, result, batch, args, 'repair', errors) or repaired
+            if not repaired:
                 break
             pending = {k: s for k, s in pending.items() if k not in result['accepted']}
+        recover_missing_batches(book, lang, rel, p, result, pending, args, errors)
+        pending = {k: s for k, s in pending.items() if k not in result['accepted']}
         unresolved.update({k: errors.get(k, 'Persistent attempt budget exhausted') for k in pending})
     if unresolved:
         raise RuntimeError(f'Needs segment repair: {book["id"]}/{lang}/{rel}: {unresolved}')
@@ -1440,6 +1483,11 @@ def layout_repairs(book, lang, rel, text):
             and lang == 'de' and rel == 'chapters/lecture_09/content.tex'):
         anchor = 'Gesamtenergie & Räumliche Krümmung &'
         replacements.append((anchor, 'Gesamt\\-energie & Räumliche Krümmung &'))
+    if (book['id'] == 'supplementary--string_theory--2010_fall_string_theory_and_m_theory'
+            and lang == 'vi' and rel == 'chapters/lecture_03/content.tex'):
+        anchor = '\\section{Các mức thấp nhất của dây mở}'
+        # Printed page 85 needs 0.138 pt more room for three timestamp/editorial footnotes.
+        replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
     if book['id'] == 'core--cosmology--2013_winter_theoretical_minimum' and rel == 'chapters/lecture_06/content.tex':
         if lang == 'zh':
             anchor = '\\begin{equation}\n\\frac{GM}{r^2}=\\frac{v^2}{r},'
@@ -1688,52 +1736,49 @@ def status():
     return rows
 
 
+def pdf_editions_block(books, rows):
+    from publish_generated_course_pdf import CANONICAL_FILENAMES
+
+    labels = ['English', *(LANGUAGE_SPECS[lang]['label'] for lang in LANGS)]
+    table = ['| Book | ' + ' | '.join(labels) + ' |',
+             '| --- | ' + ' | '.join('---' for _ in labels) + ' |']
+    published = 0
+    for book, st in zip(books, rows):
+        english = Path(CANONICAL_FILENAMES[book['course']]).stem
+        cells = [f'[PDF](all_notes/pocket_books_1_2x/{english}_pocket_1_2x.pdf)']
+        for lang in LANGS:
+            if st[lang + '_pdf'] == 'validated':
+                cells.append(f'[PDF](translations/{book["id"]}/{lang}/book.pdf)')
+                published += 1
+            else:
+                cells.append('In preparation')
+        session = ' '.join(book['course'].split('/')[-1].split('_')[:2])
+        table.append(f'| {book["titles"]["en"]} ({session}) | ' + ' | '.join(cells) + ' |')
+    count = len(books) * len(LANGS)
+    status = (f'All {len(books)} books are available in English and all {len(LANGS)} translation languages.'
+              if published == count else f'**{published}/{count} translated PDFs published.**')
+    return ('<!-- polished-translations:start -->\n<a name="final-polished-translations"></a>\n\n'
+            '## PDF Editions\n\n' + status + '\n\n'
+            + '\n'.join(table) + '\n\n[Edition notes](references/POLISHED_TRANSLATIONS.md)\n'
+            '<!-- polished-translations:end -->')
+
+
 def update_readmes():
     if not MANIFEST.exists():
         return
-    rows = status()
-    language_labels = [LANGUAGE_SPECS[lang]['label'] for lang in LANGS]
-    table = [
-        '| Final polished book | ' + ' | '.join(language_labels) + ' |',
-        '| --- | ' + ' | '.join('---' for _ in language_labels) + ' |',
-    ]
-    for book, st in zip(read(MANIFEST)['books'], rows):
-        cells = []
-        for lang in LANGS:
-            if st[lang + '_pdf'] == 'validated':
-                cells.append(f'[Available PDF](translations/{book["id"]}/{lang}/book.pdf)')
-            else:
-                cells.append(f'In preparation ({st[lang]}/{st["segments_per_language"]} segments)')
-        table.append(f'| {book["titles"]["en"]} ({book["course"].split("/")[-1].replace("_", " ")}) | ' + ' | '.join(cells) + ' |')
-    block = ('<!-- polished-translations:start -->\n## Final Polished Translations\n\n'
-             'Each language edition is produced from the accepted final English companion TeX. '
-             'The Traditional Chinese edition is converted from the validated Simplified Chinese text '
-             'and then polished against the English source. These are AI-assisted translations, not '
-             'lecturer-endorsed editions. Equations and original board figures are preserved; labels '
-             'within them remain as in the English source. A download is marked available only after '
-             'complete segment coverage, a clean build, outline and overflow checks, and sampled '
-             'semantic review.\n\n'
-             + '\n'.join(table) + '\n\n[Workflow and limitations](references/POLISHED_TRANSLATIONS.md)\n'
-             '<!-- polished-translations:end -->')
+    block = pdf_editions_block(read(MANIFEST)['books'], status())
+    labels = {
+        'ja': 'PDF版一覧', 'zh-Hans': 'PDF 版本', 'zh-Hant': 'PDF 版本', 'de': 'PDF-Ausgaben',
+        'es': 'Ediciones en PDF', 'fr': 'Éditions PDF', 'ko': 'PDF판', 'ru': 'Издания в PDF',
+        'vi': 'Các bản PDF', 'ar': 'طبعات PDF',
+    }
     for path in [ROOT / 'README.md', *sorted((ROOT / 'i18n').glob('README.*.md'))]:
         content = path.read_text()
         adjusted = block
         if path.parent.name == 'i18n':
-            locale = path.name.removeprefix('README.').removesuffix('.md')
-            heading, notice, label = {
-                'ja': ('最終推敲版の翻訳', '各言語版は最終推敲済みの英語講義ノートに基づきます。繁体字中国語版のみ、検証済みの簡体字中国語版を変換し、英語原文と照合して推敲します。数式・原図を保持し、検証済みのPDFだけを公開します。原講師が公認した翻訳ではありません。', '全言語版の公開状況'),
-                'zh-Hans': ('最终润色版译本', '各语言版本均以最终润色的英文讲义为依据。繁体中文版由已验证的简体中文版直接转换，再对照英文原文润色。保留公式与原图，仅发布通过检查的 PDF。这些译本未经原讲师认可。', '所有语言版本的发布进度'),
-                'zh-Hant': ('最終潤色版譯本', '各語言版本均以最終潤色的英文講義為依據。繁體中文版由已驗證的簡體中文版直接轉換，再對照英文原文潤色。保留公式與原圖，僅發布通過檢查的 PDF。這些譯本未經原講師認可。', '所有語言版本的發布進度'),
-                'de': ('Übersetzungen der finalen Ausgabe', 'Jede Sprachausgabe beruht auf den abschließend redigierten englischen Notizen. Die traditionelle chinesische Ausgabe wird aus der geprüften vereinfachten Fassung konvertiert und anschließend am englischen Text nachbearbeitet. Formeln und Originalabbildungen bleiben erhalten; verlinkt werden nur geprüfte PDFs.', 'Verfügbarkeit aller Sprachausgaben'),
-                'es': ('Traducciones de la edición final', 'Cada edición parte del texto inglés revisado. La edición en chino tradicional se convierte directamente de la versión simplificada validada y después se pule contrastándola con el original inglés. Se conservan las ecuaciones y figuras originales; solo se enlazan los PDF verificados.', 'Disponibilidad de todas las ediciones'),
-                'fr': ('Traductions de la version finale', 'Chaque édition part du texte anglais révisé. L’édition chinoise traditionnelle est convertie depuis la version simplifiée validée, puis révisée à l’aide de l’original anglais. Les équations et figures d’origine sont conservées ; seuls les PDF vérifiés sont proposés.', 'Disponibilité de toutes les éditions'),
-                'ko': ('최종 교정판 번역', '각 언어판은 최종 교정된 영어 강의 노트를 바탕으로 합니다. 번체 중국어판은 검증된 간체 중국어판을 직접 변환한 뒤 영어 원문과 대조해 다듬습니다. 수식과 원본 그림을 유지하며 검증된 PDF만 공개합니다.', '전체 언어판 공개 현황'),
-                'ru': ('Переводы окончательной редакции', 'Каждое языковое издание основано на окончательно отредактированном английском тексте. Традиционная китайская версия напрямую преобразуется из проверенной упрощённой и затем редактируется с опорой на английский оригинал. Формулы и исходные рисунки сохраняются; публикуются только проверенные PDF.', 'Доступность всех языковых изданий'),
-                'vi': ('Bản dịch từ bản hiệu đính cuối', 'Mỗi ấn bản ngôn ngữ dựa trên bản tiếng Anh đã hiệu đính. Bản tiếng Trung phồn thể được chuyển đổi trực tiếp từ bản giản thể đã kiểm định, rồi được trau chuốt đối chiếu với nguyên bản tiếng Anh. Công thức và hình gốc được giữ nguyên; chỉ PDF đã kiểm tra mới được công bố.', 'Tình trạng của mọi ấn bản ngôn ngữ'),
-                'ar': ('ترجمات النسخة النهائية', 'تستند كل طبعة لغوية إلى النص الإنجليزي المنقح. وتُحوَّل طبعة الصينية التقليدية مباشرة من النسخة المبسطة المتحقق منها، ثم تُصقل بالرجوع إلى الأصل الإنجليزي. تُحفظ المعادلات والرسوم الأصلية، ولا تُنشر إلا ملفات PDF التي اجتازت التحقق.', 'حالة جميع الطبعات اللغوية'),
-            }[locale]
-            adjusted = ('<!-- polished-translations:start -->\n## ' + heading + '\n\n' + notice + '\n\n'
-                        f'[{label}](../README.md#final-polished-translations)\n'
+            label = labels[path.name.removeprefix('README.').removesuffix('.md')]
+            adjusted = ('<!-- polished-translations:start -->\n## ' + label + '\n\n'
+                        f'[{label}](../README.md#pdf-editions)\n'
                         '<!-- polished-translations:end -->')
         if '<!-- polished-translations:start -->' in content:
             content = re.sub(r'<!-- polished-translations:start -->.*?<!-- polished-translations:end -->', lambda m: adjusted, content, flags=re.S)

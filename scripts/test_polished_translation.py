@@ -664,6 +664,44 @@ class TranslationTests(unittest.TestCase):
                 self.assertEqual(p.recheck_language('ko', False), 1)
                 self.assertEqual(p.recheck_language('ko', False), 0)
 
+    def test_small_batches_recover_only_missing_replies_once(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
+            book = {'id': 'demo', 'titles': {'en': 'Physics'}}
+            rel = 'chapter.tex'
+            prepared = {'source_sha256': 'test', 'parts': ['A field.'] * 23, 'protected': []}
+            result = {'source_sha256': 'test', 'accepted': {'22': 'Một trường.'},
+                      'attempts': {str(i): {'writer': 2, 'repair': 2} for i in range(23)},
+                      'candidates': {'21': 'Trường 999.'},
+                      'last_errors': {'21': 'introduced unprotected number'}}
+            dest = p.result_path(book, 'vi', rel)
+            p.write(dest, result)
+            p.write(p.WORK / 'prepared/demo/chapter.tex.json', prepared)
+            args = SimpleNamespace(provider='aginti-openai', batch_chars=9000)
+            with patch.object(p, 'chat', side_effect=p.InvalidReply('response reached its output limit')) as chat:
+                for _ in range(2):
+                    with self.assertRaisesRegex(RuntimeError, 'Needs segment repair'):
+                        p.translate_file(book, 'vi', rel, args)
+                self.assertEqual(chat.call_count, 3)
+            data = p.read(dest)
+            self.assertEqual(data['accepted'], result['accepted'])
+            self.assertNotIn('small-batch', data['attempts']['21'])
+            self.assertNotIn('small-batch', data['attempts']['22'])
+            self.assertEqual(data['attempts']['0'], {'writer': 2, 'repair': 2, 'small-batch': 1})
+            self.assertEqual(data['last_errors']['0'], 'response reached its output limit')
+
+    def test_vietnamese_rejects_unexpected_foreign_script(self):
+        source = 'Either field can vanish.'
+        prepared = {'protected': []}
+        result = {'accepted': {}}
+        errors = p.accept_candidates(prepared, result, {'0': source},
+                                     {'0': 'Trường либо có thể triệt tiêu.'}, 'vi', 'writer')
+        self.assertIn('foreign-script', errors['0'])
+        self.assertNotIn('0', result['accepted'])
+        source = 'An original spelling: Атом.'
+        errors = p.accept_candidates(prepared, result, {'0': source},
+                                     {'0': 'Cách viết gốc: Атом.'}, 'vi', 'writer')
+        self.assertEqual(errors, {})
+
     def test_persistent_budget_prevents_resume_retry_amplification(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
             book = {'id': 'fixture', 'titles': {'en': 'Physics', 'ja': '物理'}}

@@ -42,51 +42,45 @@ def citation_block(locale):
             '<!-- reading-citation:end -->\n')
 
 NOTICES = {
- 'en': ('Choose a book language',
-        'All 16 books are available in English, Japanese, Simplified Chinese, French, Spanish and German. The [PDF table by book and language]({table}) also tracks Traditional Chinese, Korean, Vietnamese, Russian and Arabic. Choose **Available PDF** to read a published edition; **In preparation** means there is no download yet.',
-        'New translated PDFs use 1.2 × A5 paper (177.6 × 252 mm), with 12 pt text, clear spacing, equations and original figures. The older “pocket 1.2x” files refer to enlarged type, not this paper size.',
-        'Help with scientific proofreading, accessibility or layout by opening an issue or contributing a source-backed correction.'),
- 'ja': ('多言語版を読む',
-        '全16冊を英語、日本語、中国語（簡体字）、フランス語、スペイン語、ドイツ語で読めます。[書名・言語別のPDF一覧]({table})には、中国語（繁体字）、韓国語、ベトナム語、ロシア語、アラビア語の公開状況も掲載しています。**Available PDF** は公開済み、**In preparation** は準備中です。',
-        '新しい翻訳PDFはA5の縦横を1.2倍にした177.6 × 252 mm、本文12 ptです。数式・原図を保持しています。従来の「pocket 1.2x」は文字の拡大率であり、この用紙寸法とは異なります。',
-        '物理内容、アクセシビリティ、組版について、根拠のある修正をIssueでお寄せください。'),
- 'zh-Hans': ('阅读多语言版本',
-        '全套 16 册均有英语、日语、简体中文、法语、西班牙语和德语版。[各册 PDF 语言对照表]({table})也列出了繁体中文、韩语、越南语、俄语和阿拉伯语版的出版进度。点击 **Available PDF** 即可阅读；**In preparation** 表示尚未开放下载。',
-        '新译本默认使用A5长宽各放大1.2倍的纸张（177.6 × 252 mm）、12 pt正文和舒适行距，保留公式与原图。旧版“pocket 1.2x”指字号放大，并非此纸张尺寸。',
-        '欢迎通过 Issue 提交有依据的科学内容校订、无障碍改进或排版修正。'),
- 'zh-Hant': ('閱讀多語言版本',
-        '全套 16 冊均有英語、日語、簡體中文、法語、西班牙語和德語版。[各冊 PDF 語言對照表]({table})也列出繁體中文、韓語、越南語、俄語和阿拉伯語版的出版進度。點選 **Available PDF** 即可閱讀；**In preparation** 表示尚未開放下載。',
-        '新譯本預設使用A5長寬各放大1.2倍的紙張（177.6 × 252 mm）、12 pt正文和舒適行距，保留公式與原圖。舊版「pocket 1.2x」指字號放大，並非此紙張尺寸。',
-        '歡迎透過 Issue 提交有依據的科學內容校訂、無障礙改進或排版修正。'),
- 'de': ('Mehrsprachige Ausgaben lesen',
-        'Alle 16 Bände sind auf Englisch, Japanisch, Chinesisch (Kurzzeichen), Französisch, Spanisch und Deutsch erschienen. Die [PDF-Übersicht nach Band und Sprache]({table}) zeigt auch den Stand für Chinesisch (Langzeichen), Koreanisch, Vietnamesisch, Russisch und Arabisch. **Available PDF** öffnet die veröffentlichte Ausgabe; **In preparation** bedeutet, dass noch kein Download verfügbar ist.',
-        'Neue übersetzte PDFs verwenden 177.6 × 252 mm (beide A5-Seiten × 1.2), 12 pt Schrift und erhalten Formeln und Abbildungen. Das ältere „pocket 1.2x“ bezeichnet größere Schrift, nicht dieses Papierformat.',
-        'Belegte Korrekturen zu Physik, Barrierefreiheit oder Satz sind als Issue willkommen.'),
- 'es': ('Leer las ediciones multilingües',
-        'Los 16 libros están disponibles en inglés, japonés, chino simplificado, francés, español y alemán. En la [tabla de PDF por libro e idioma]({table}) también puedes consultar las ediciones en chino tradicional, coreano, vietnamita, ruso y árabe. **Available PDF** abre una edición publicada; **In preparation** indica que aún no se puede descargar.',
-        'Los nuevos PDF traducidos usan papel de 177.6 × 252 mm (ambas dimensiones de A5 × 1.2), texto de 12 pt y conservan ecuaciones e ilustraciones. El antiguo «pocket 1.2x» amplía la tipografía, no indica este tamaño de papel.',
-        'Se agradecen correcciones documentadas de física, accesibilidad o maquetación mediante una incidencia.'),
- 'fr': ('Lire les éditions multilingues',
-        'Les 16 livres sont disponibles en anglais, japonais, chinois simplifié, français, espagnol et allemand. Le [tableau des PDF par livre et par langue]({table}) indique aussi où en sont les éditions en chinois traditionnel, coréen, vietnamien, russe et arabe. **Available PDF** ouvre une édition publiée ; **In preparation** signifie que le PDF n’est pas encore disponible.',
-        'Les nouveaux PDF traduits utilisent du papier de 177.6 × 252 mm (chaque dimension A5 × 1.2), un corps de 12 pt et conservent équations et figures. L’ancien « pocket 1.2x » désigne des caractères agrandis, pas ce format de papier.',
-        'Les corrections documentées concernant la physique, l’accessibilité ou la mise en page sont les bienvenues via une issue.'),
- 'ko': ('다국어판 읽기',
-        '총 16권 모두 영어, 일본어, 중국어 간체, 프랑스어, 스페인어, 독일어로 읽을 수 있습니다. [책과 언어별 PDF 목록]({table})에서 중국어 번체, 한국어, 베트남어, 러시아어, 아랍어판의 출간 여부도 확인할 수 있습니다. **Available PDF**를 누르면 출간된 책이 열립니다. **In preparation**은 아직 내려받을 수 없다는 뜻입니다.',
-        '새 번역 PDF는 A5의 가로·세로를 각각 1.2배 한 177.6 × 252 mm 용지와 12 pt 본문을 사용하며 수식과 원본 그림을 유지합니다. 기존 “pocket 1.2x”는 글자 확대율로, 이 용지 크기와 다릅니다.',
-        '물리 내용, 접근성, 조판에 관한 근거 있는 수정은 Issue로 보내 주세요.'),
- 'ru': ('Читайте многоязычные издания',
-        'Все 16 книг доступны на английском, японском, упрощённом китайском, французском, испанском и немецком. В [таблице PDF по книгам и языкам]({table}) также можно проверить, вышла ли нужная книга на традиционном китайском, корейском, вьетнамском, русском или арабском. Ссылка **Available PDF** открывает издание; пометка **In preparation** означает, что скачать его пока нельзя.',
-        'Новые переводные PDF используют бумагу 177.6 × 252 мм (обе стороны A5 × 1.2), шрифт 12 pt и сохраняют формулы и рисунки. Старое обозначение «pocket 1.2x» означает увеличение шрифта, а не этот формат бумаги.',
-        'Присылайте через issue обоснованные исправления по физике, доступности или вёрстке.'),
- 'vi': ('Đọc các ấn bản đa ngôn ngữ',
-        'Cả 16 cuốn đều có bản tiếng Anh, Nhật, Trung giản thể, Pháp, Tây Ban Nha và Đức. [Bảng PDF theo sách và ngôn ngữ]({table}) cũng cho biết cuốn nào đã có bản tiếng Trung phồn thể, Hàn, Việt, Nga hoặc Ả Rập. Chọn **Available PDF** để mở bản đã xuất bản; **In preparation** nghĩa là chưa có bản tải xuống.',
-        'PDF dịch mới dùng giấy 177.6 × 252 mm (mỗi chiều A5 × 1.2), chữ 12 pt, giữ nguyên công thức và hình. “pocket 1.2x” cũ chỉ cỡ chữ phóng lớn, không phải khổ giấy này.',
-        'Vui lòng gửi qua issue các bản sửa có căn cứ về vật lý, khả năng tiếp cận hoặc dàn trang.'),
- 'ar': ('اقرأ الطبعات متعددة اللغات',
-        'تتوفر الكتب الستة عشر كلها بالإنجليزية واليابانية والصينية المبسطة والفرنسية والإسبانية والألمانية. ويبيّن [جدول ملفات PDF بحسب الكتاب واللغة]({table}) أيضاً ما صدر بالصينية التقليدية والكورية والفيتنامية والروسية والعربية. يفتح رابط **Available PDF** النسخة المنشورة، أما **In preparation** فتعني أنها غير متاحة للتنزيل بعد.',
-        'تستخدم ملفات PDF المترجمة الجديدة ورقاً بقياس 177.6 × 252 مم (كل بُعد من A5 مضروب في 1.2)، وخطاً بحجم 12 نقطة، مع حفظ المعادلات والرسوم. يشير «pocket 1.2x» القديم إلى تكبير الخط لا إلى حجم الورق هذا.',
-        'نرحب عبر issue بالتصحيحات الموثقة في الفيزياء أو الإتاحة أو التنسيق.'),
+    'en': ('Books by Language',
+         '16 books from the *Theoretical Minimum* and related lectures. [Choose a PDF by book and language]({table}), or [open the online PDF reader]({reader}).',
+         'Read in Bunko', 'Read on your phone or tablet. The languages you can select depend on the book.'),
+    'ja': ('言語別の書籍',
+         '『Theoretical Minimum』と関連講義の全16冊。[書名と言語からPDFを選ぶ]({table})、または[ブラウザーで読む]({reader})。',
+         'Bunkoで読む', 'スマートフォンやタブレットで読めます。選べる言語は書籍によって異なります。'),
+    'zh-Hans': ('按语言阅读',
+         '《Theoretical Minimum》及相关讲座共 16 册。[按书名和语言选择 PDF]({table})，或[在线阅读]({reader})。',
+         '在 Bunko 中阅读', '可在手机或平板上阅读。可选语言因书而异。'),
+    'zh-Hant': ('依語言閱讀',
+         '《Theoretical Minimum》及相關講座共 16 冊。[依書名與語言選擇 PDF]({table})，或[線上閱讀]({reader})。',
+         '在 Bunko 閱讀', '可在手機或平板上閱讀。各書提供的語言不同。'),
+    'de': ('Bücher nach Sprache',
+         '16 Bücher zu *Theoretical Minimum* und verwandten Vorlesungen. [PDF nach Buch und Sprache wählen]({table}) oder [im Browser lesen]({reader}).',
+         'In Bunko lesen', 'Auf dem Smartphone oder Tablet lesen. Die Sprachauswahl hängt vom Buch ab.'),
+    'es': ('Libros por idioma',
+         '16 libros de *Theoretical Minimum* y cursos relacionados. [Elige un PDF por libro e idioma]({table}) o [lee en el navegador]({reader}).',
+         'Lee en Bunko', 'Lee en el móvil o la tableta. Los idiomas disponibles dependen de cada libro.'),
+    'fr': ('Livres par langue',
+         '16 livres issus de *Theoretical Minimum* et de cours connexes. [Choisir un PDF par livre et par langue]({table}) ou [lire dans le navigateur]({reader}).',
+         'Lire dans Bunko', 'Lisez sur téléphone ou tablette. Les langues proposées varient selon le livre.'),
+    'ko': ('언어별 도서',
+         '*Theoretical Minimum*과 관련 강의 16권. [책과 언어별로 PDF 선택]({table}) 또는 [브라우저에서 읽기]({reader}).',
+         'Bunko에서 읽기', '휴대전화나 태블릿에서 읽을 수 있습니다. 선택할 수 있는 언어는 책마다 다릅니다.'),
+    'ru': ('Книги по языкам',
+         '16 книг по курсу *Theoretical Minimum* и смежным лекциям. [Выбрать PDF по книге и языку]({table}) или [открыть в браузере]({reader}).',
+         'Читайте в Bunko', 'Читайте на телефоне или планшете. Набор языков зависит от книги.'),
+    'vi': ('Sách theo ngôn ngữ',
+         '16 cuốn từ *Theoretical Minimum* và các bài giảng liên quan. [Chọn PDF theo sách và ngôn ngữ]({table}) hoặc [đọc trên trình duyệt]({reader}).',
+         'Đọc trong Bunko', 'Đọc trên điện thoại hoặc máy tính bảng. Mỗi cuốn hỗ trợ các ngôn ngữ khác nhau.'),
+    'ar': ('الكتب حسب اللغة',
+         '16 كتاباً من سلسلة *Theoretical Minimum* ومحاضرات ذات صلة. [اختر ملف PDF بحسب الكتاب واللغة]({table}) أو [اقرأ في المتصفح]({reader}).',
+         'اقرأ في Bunko', 'اقرأ على الهاتف أو الجهاز اللوحي. تختلف اللغات المتاحة باختلاف الكتاب.'),
 }
+
+BUNKO = "https://lachlan.lazying.art/Bunko/"
+APP_STORE = "https://apps.apple.com/app/id6815137919"
+PLAY_STORE = "https://play.google.com/store/apps/details?id=art.lazying.bunko"
+
 
 EDITION_LABELS = {'en': 'English', **{
     lang: spec['label'] for lang, spec in pipeline.LANGUAGE_SPECS.items()}}
@@ -114,13 +108,22 @@ def catalog():
 
 
 def language_notice(locale):
-    heading, available, layout, invitation = NOTICES[locale]
+    heading, description, app_heading, app_description = NOTICES[locale]
+    prefix = '' if locale == 'en' else '../'
     table = ('' if locale == 'en' else '../README.md') + '#final-polished-translations'
-    return ('<!-- reading-languages:start -->\n## ' + heading + '\n\n'
-            + available.format(table=table) + '\n\n' + layout + '\n\n' + invitation + '\n\n'
-            '[Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](' + READER + ') · '
-            '[GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)\n'
-            '<!-- reading-languages:end -->')
+    assets = prefix + 'figs/bunko/'
+    return (
+        f'<!-- reading-languages:start -->\n## {heading}\n\n'
+        + description.format(table=table, reader=READER) + '\n\n'
+        + ' · '.join(EDITION_LABELS[lang] for lang in ('en', *pipeline.LANGS)) + '\n\n'
+        + f'## {app_heading}\n\n'
+        + f'<a href="{BUNKO}"><img src="{assets}icon.png" alt="Bunko" width="72"></a>\n\n'
+        + app_description + '\n\n'
+        + f'**[App Store]({APP_STORE})** · **[Google Play]({PLAY_STORE})** · [Bunko Web]({BUNKO})\n\n'
+        + '<p>\n'
+        + f'<a href="{APP_STORE}"><img src="{assets}library-ios.png" alt="Bunko library on iPhone" width="180"></a>\n'
+        + f'<a href="{PLAY_STORE}"><img src="{assets}reader-android.png" alt="Bunko multilingual reader on Android" width="180"></a>\n'
+        + '</p>\n<!-- reading-languages:end -->')
 
 
 def decorate_readmes():

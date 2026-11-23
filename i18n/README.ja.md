@@ -5,15 +5,24 @@
 # Leonard Susskind 講義ノートリポジトリ
 
 <!-- reading-languages:start -->
-## 多言語版を読む
+## 言語別の書籍
 
-全16冊を英語、日本語、中国語（簡体字）、フランス語、スペイン語、ドイツ語で読めます。[書名・言語別のPDF一覧](../README.md#final-polished-translations)には、中国語（繁体字）、韓国語、ベトナム語、ロシア語、アラビア語の公開状況も掲載しています。**Available PDF** は公開済み、**In preparation** は準備中です。
+『Theoretical Minimum』と関連講義の全16冊。[書名と言語からPDFを選ぶ](../README.md#final-polished-translations)、または[ブラウザーで読む](https://learn.lazying.art/leonardsusskind-reader.html)。
 
-新しい翻訳PDFはA5の縦横を1.2倍にした177.6 × 252 mm、本文12 ptです。数式・原図を保持しています。従来の「pocket 1.2x」は文字の拡大率であり、この用紙寸法とは異なります。
+English · 日本語 · 中文（简体） · Français · Español · Deutsch · 中文（繁體） · 한국어 · Tiếng Việt · Русский · العربية
 
-物理内容、アクセシビリティ、組版について、根拠のある修正をIssueでお寄せください。
+## Bunkoで読む
 
-[Bunko](https://lachlan.lazying.art/Bunko/) · [LazyLearn](https://learn.lazying.art/leonardsusskind-reader.html) · [GitHub Issues](https://github.com/lachlanchen/leonardsusskind/issues)
+<a href="https://lachlan.lazying.art/Bunko/"><img src="../figs/bunko/icon.png" alt="Bunko" width="72"></a>
+
+スマートフォンやタブレットで読めます。選べる言語は書籍によって異なります。
+
+**[App Store](https://apps.apple.com/app/id6815137919)** · **[Google Play](https://play.google.com/store/apps/details?id=art.lazying.bunko)** · [Bunko Web](https://lachlan.lazying.art/Bunko/)
+
+<p>
+<a href="https://apps.apple.com/app/id6815137919"><img src="../figs/bunko/library-ios.png" alt="Bunko library on iPhone" width="180"></a>
+<a href="https://play.google.com/store/apps/details?id=art.lazying.bunko"><img src="../figs/bunko/reader-android.png" alt="Bunko multilingual reader on Android" width="180"></a>
+</p>
 <!-- reading-languages:end -->
 
 > [LazyingArt LLC](https://lazying.art) 主導。Web サイト: [lazying.art](https://lazying.art) および [learn.lazying.art](https://learn.lazying.art)。
@@ -395,8 +404,6 @@ Leonard Susskind 関連の学習資料について、数学的品質、明瞭さ
 
 ## ❤️ 支援
 
-ご自身が所有する、または利用許諾を得た講義録画がありますか？ 別サービスの [Bilingual Lecture Pack パイロット](https://lazying.art/lecture-pack/?utm_source=github&utm_medium=readme&utm_campaign=leonard_susskind_archive&utm_content=rights_cleared_lecture) は、依頼者が管理する素材または権利処理済みの素材だけを対象にします。この Susskind アーカイブは引き続き無料であり、このサービスで販売されることはありません。
-
 <!-- support:start -->
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 [![LazyingArt Support](https://img.shields.io/badge/LazyingArt-Support-0EA5E9?style=for-the-badge)](https://chat.lazying.art/donate)
@@ -408,17 +415,10 @@ Leonard Susskind 関連の学習資料について、数学的品質、明瞭さ
 
 このリポジトリは GNU General Public License v3.0 の下でライセンスされています。[LICENSE](../LICENSE) を参照してください。
 
-## Bunko で読む
-
-[Bunko](https://lachlan.lazying.art/Bunko/) · 最終推敲済みの16冊に日本語版と簡体字中国語版があり、英語原版と併せて読めます。PDFは各言語の独立版、Bunkoでは対応する言語を選択して読めます。
-
-
 <!-- polished-translations:start -->
-## 最終推敲版の翻訳
+## PDF版一覧
 
-各言語版は最終推敲済みの英語講義ノートに基づきます。繁体字中国語版のみ、検証済みの簡体字中国語版を変換し、英語原文と照合して推敲します。数式・原図を保持し、検証済みのPDFだけを公開します。原講師が公認した翻訳ではありません。
-
-[全言語版の公開状況](../README.md#final-polished-translations)
+[PDF版一覧](../README.md#pdf-editions)
 <!-- polished-translations:end -->
 
 <!-- reading-citation:start -->
