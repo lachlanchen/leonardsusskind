@@ -1,0 +1,529 @@
+\chapter{Hạt tích điện, các phép biến đổi trường và sóng tương đối tính}
+
+Lần trước chúng ta bắt đầu đặt câu hỏi về cách một hạt tích điện chuyển động trong điện trường và từ trường khi các nguyên lý của thuyết tương đối được áp đặt. Định luật lực Lorentz quen thuộc đã chứa sẵn đầu mối: hạng từ của nó phụ thuộc vào vận tốc của hạt, nên các quan sát viên khác nhau không thể tách riêng mà nhất trí với nhau về cái gì là điện và cái gì là từ. Nhiệm vụ của chúng ta là phát biểu định luật ấy sao cho mọi quan sát viên quán tính đều dùng cùng một phương trình, dù các trường và vận tốc của hạt thay đổi từ hệ quy chiếu này sang hệ quy chiếu khác.
+
+Trừ khi có nói khác, chúng ta dùng đơn vị trong đó \(c=1\) và chữ ký metric là \((-,-,-,+)\). Các thành phần không-thời gian được sắp theo thứ tự với 3 thành phần không gian đứng trước:
+\begin{equation}
+  \mu=(1,2,3,0)=(x,y,z,t).
+\end{equation}
+Các chỉ số Latin \(m,n\) chỉ chạy trên 3 phương không gian.
+
+\section{Điều gì còn lại của định luật lực Newton}
+
+Trong cơ học Newton,
+\begin{equation}
+  \boldsymbol F=m\boldsymbol a
+\end{equation}
+có cùng dạng trong mọi hệ quy chiếu quán tính vì các quan sát viên Galilei đều thống nhất về gia tốc. Họ cũng gán cho hạt cùng một khối lượng và cùng một lực. Khi động học đã thay đổi, không có lý do gì để kỳ vọng quan hệ cụ thể này giữa lực và gia tốc thông thường sẽ còn nguyên vẹn.
+
+Điện từ học và hấp dẫn đã cảnh báo rằng các mở rộng tương đối tính không nhất thiết phải giống nhau. Định luật Coulomb và định luật hấp dẫn Newton đều là các định luật nghịch đảo bình phương, nhưng hấp dẫn không thể được kết hợp một cách tự nhiên vào thuyết tương đối hẹp nếu không có một thay đổi sâu sắc hơn trong hình học không-thời gian. Điện từ học thì có thể. Thật vậy, từ tính bản thân nó là một hiệu ứng tương đối tính: khi khôi phục các thừa số \(c\), một lực từ mang một thừa số vận tốc chia cho \(c\), và nó biến mất trong giới hạn hình thức \(c\to\infty\).
+
+Phần bền vững của định luật Newton là mệnh đề cho rằng lực là tốc độ biến thiên của động lượng. Với khối lượng nghỉ không đổi,
+\begin{equation}
+  \boldsymbol F
+  =m\frac{d\boldsymbol v}{dt}
+  =\frac{d}{dt}(m\boldsymbol v)
+  =\frac{d\boldsymbol p}{dt}.
+\end{equation}
+Thuyết tương đối sẽ làm thay đổi quan hệ giữa động lượng và vận tốc, nhưng vẫn bảo toàn cách tổ chức phương trình này.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_01.png}
+\caption{Lực được viết lại thành \(d\boldsymbol p/dt\) trong lúc phần điện của định luật Lorentz đang được viết lên bảng.}
+\lectureframe{00:08:20}
+\end{figure}
+
+Trong đơn vị \(c=1\), định luật lực Lorentz trước tương đối tính là
+\begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr).
+  \label{eq:lorentz-three}
+\end{equation}
+Cả hai trường đều có thể phụ thuộc vào vị trí và thời gian. Giới hạn phi tương đối tính bây giờ là giới hạn \(v\ll 1\), chứ không phải một giới hạn mà trong đó hằng số số trị \(c=1\) bằng cách nào đó lại thay đổi. Hạng điện trong \eqref{eq:lorentz-three} vốn đã là một vectơ thông thường. Để hiểu hạng từ dưới một dạng có thể đưa vào không-thời gian, ta phải xem lại tích có hướng.
+
+\section{Tích có hướng như một tensor phản đối xứng}
+
+Xét hai vectơ ba chiều \(\boldsymbol A\) và \(\boldsymbol B\).
+Tích ngoài của chúng
+\begin{equation}
+  T_{mn}=A_mB_n
+\end{equation}
+là một tenxơ hạng hai với chín thành phần. Nói chung, nó không có đối xứng nào.
+Lấy phần phản đối xứng, ta được
+\begin{equation}
+  K_{mn}=A_mB_n-A_nB_m,
+  \qquad K_{mn}=-K_{nm}.
+  \label{eq:antisym-product}
+\end{equation}
+Các phần tử trên đường chéo của nó bằng không, còn mỗi phần tử bên dưới đường chéo được xác định
+bởi phần tử tương ứng phía trên nó. Vì vậy, một tenxơ phản đối xứng \(3\times3\)
+chỉ có ba thành phần độc lập.
+
+Cách đếm đó gợi ý, nhưng tự nó chưa đủ. 3 đại lượng không tự động biến đổi như một vectơ. Tuy nhiên, trong 3 chiều, 3 phần tử độc lập của \eqref{eq:antisym-product} có thể được đồng nhất với các thành phần của tích có hướng \(\boldsymbol C=\boldsymbol A\times\boldsymbol B\). Trên bảng, \(C_2\) trước hết được đặt tạm vào vị trí góc trên bên phải:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_02.png}
+\caption{Tích phản đối xứng trong lúc 3 phần tử độc lập của nó đang được ghép với các thành phần của \(\boldsymbol C\). Nhãn ở góc trên bên phải ở đây vẫn chỉ là tạm thời.}
+\lectureframe{00:17:33}
+\end{figure}
+
+Cho chu trình \(1\to2\to3\to1\) ta được các công thức thành phần
+\begin{align}
+  C_3 &= A_1B_2-A_2B_1, \\
+  C_1 &= A_2B_3-A_3B_2, \\
+  C_2 &= A_3B_1-A_1B_3.
+  \label{eq:cross-components}
+\end{align}
+Dòng cuối cho thấy phần tử ở góc trên bên phải là \(-C_2\), không phải \(C_2\). Sự hiệu chỉnh này là một phần của lập luận chứ không phải là chi tiết cần che đi.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_03.png}
+\caption{Các đồng nhất thức thành phần theo chu kỳ đã hoàn chỉnh, dùng để cố định dấu tạm thời trong mảng phản đối xứng.}
+\lectureframe{00:21:54}
+\end{figure}
+
+Ma trận thu được là
+\begin{equation}
+  K_{mn}=
+  \begin{pmatrix}
+    0 & C_3 & -C_2 \\
+    -C_3 & 0 & C_1 \\
+    C_2 & -C_1 & 0
+  \end{pmatrix}.
+  \label{eq:cross-matrix}
+\end{equation}
+
+Đằng sau ký hiệu này có một hình học hữu ích. Một thành phần mang chỉ số \(1,2\) về tự nhiên gắn với mặt phẳng \(xy\) và được đồng nhất với một thành phần vectơ dọc theo trục vuông góc \(z\). Có thể mô tả cùng một đối tượng có hướng ấy hoặc bằng một mặt phẳng hoặc bằng một mũi tên pháp tuyến với mặt phẳng đó. Cách mô tả bằng mũi tên là đặc thù của 3 chiều; trong các số chiều cao hơn, một tensor phản đối xứng hạng hai vẫn tồn tại, nhưng nó không còn có cùng số thành phần như một vectơ nữa. Vì vậy tensor, chứ không phải mũi tên vuông góc, mới là dạng của tích có hướng có thể tổng quát hóa.
+
+Tương đương, sau khi chọn một định hướng,
+\begin{equation}
+  C_k=\frac12\epsilon_{kmn}K_{mn}.
+\end{equation}
+Nhu cầu phải chọn một định hướng là nguồn gốc của quy tắc bàn tay phải và của sự phân biệt quen thuộc giữa vectơ cực và vectơ trục.
+\editorialnote{Công thức Levi--Civita và thuật ngữ vectơ trục là ký hiệu chuẩn cho hình học mặt phẳng-đối-với-pháp-tuyến đã được triển khai tường minh trong bài giảng.}
+
+\section{Từ trường dưới dạng tensor}
+
+Mô tả đối ngẫu tương tự cũng áp dụng cho từ trường. Ta định nghĩa tensor không gian phản đối xứng của nó bằng
+\begin{equation}
+  B_{mn}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 \\
+    B_3 & 0 & -B_1 \\
+    -B_2 & B_1 & 0
+  \end{pmatrix}.
+  \label{eq:magnetic-tensor}
+\end{equation}
+Dấu tổng thể phụ thêm so với \eqref{eq:cross-matrix} là một quy ước. Một khi đã chọn, nó phải được dùng nhất quán; nếu đổi dấu của cả 3 thành phần vectơ thì sẽ mô tả cùng một sự đồng nhất giữa tensor và vectơ, nhưng với quy ước định hướng ngược lại.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_04.png}
+\caption{Từ trường được viết vừa như một mảng không gian phản đối xứng vừa theo 3 thành phần vectơ của nó.}
+\lectureframe{00:24:40}
+\end{figure}
+
+Bây giờ lấy thành phần thứ 3 của tích có hướng:
+\begin{align}
+  (\boldsymbol v\times\boldsymbol B)_3
+  &=v_1B_2-v_2B_1 \\
+  &=v_1B_{13}+v_2B_{23}+v_3B_{33}.
+\end{align}
+Có thể thêm hạng cuối vì \(B_{33}=0\). Xoay vòng chỉ số tự do cho ta quy tắc gọn
+\begin{equation}
+  (\boldsymbol v\times\boldsymbol B)_m=v_nB_{nm},
+  \label{eq:cross-contraction}
+\end{equation}
+trong đó chỉ số lặp \(n\) được lấy tổng. Vì vậy lực từ là
+\begin{equation}
+  F_m^{(B)}=qv_nB_{nm}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_07_figure_05.png}
+\caption{Thành phần thứ 3 của \(\boldsymbol v\times\boldsymbol B\) và biểu thức tổng quát của nó như một phép co với \(B_{nm}\).}
+\lectureframe{00:28:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Chỉ số tự do \(m\) có gắn nhãn cho một thành phần từ riêng biệt của lực không?}
+\lecturerresponse{Không. Nó gắn nhãn cho bất cứ thành phần không gian nào của lực đang được tính. Điện trường đơn giản là đã được đặt bằng 0 trong lập luận hiện tại, và ở đây mọi chỉ số chỉ chạy trên 3 phương không gian.}
+\end{classroomqa}
+
+Ký hiệu tensor khiến tính chất không sinh công của từ trường gần như trở nên tự động. Lấy đạo hàm của bình phương tốc độ:
+\begin{align}
+  \frac{d}{dt}(v_mv_m)
+  &=2\dot v_m v_m \\
+  &\propto 2(\boldsymbol v\times\boldsymbol B)_m v_m \\
+  &=2v_nB_{nm}v_m.
+  \label{eq:speed-derivative}
+\end{align}
+Các hạng với \(m=n\) triệt tiêu vì đường chéo của \(B_{nm}\) bằng 0. Mỗi hạng ngoài đường chéo đều có một hạng cặp với \(m\) và \(n\) hoán đổi cho nhau; hai hạng triệt tiêu nhau vì \(v_nv_m\) đối xứng còn \(B_{nm}\) phản đối xứng. Do đó
+\begin{equation}
+  \frac{d}{dt}(v_mv_m)=0.
+\end{equation}
+Một lực từ thuần túy bẻ cong quỹ đạo mà không làm thay đổi tốc độ hay động năng của nó.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_07_figure_06.png}
+\caption{Các hạng ghép cặp trong \(v_nB_{nm}v_m\) triệt tiêu vì tensor từ đổi dấu khi hoán đổi các chỉ số của nó.}
+\lectureframe{00:35:40}
+\end{figure}
+
+Chứng minh này được cố ý trình bày công phu hơn là chỉ nói rằng một tích có hướng vuông góc với thừa số thứ nhất của nó. Mệnh đề sau là điều đặc thù của biểu diễn vectơ 3 chiều. Sự co giữa một cặp đối xứng và một tensor phản đối xứng mới là lập luận sẽ còn tồn tại trong 4 chiều.
+
+\begin{classroomqa}
+\audiencequestion{Từ trường có nhất thiết phải độc lập với thời gian để tốc độ giữ không đổi không?}
+\lecturerresponse{Phép đại số ở trên không bao giờ lấy đạo hàm trường và không đòi hỏi \(\partial_t\boldsymbol B=0\). Bản thân một hạng từ vẫn không sinh công. Tuy nhiên, trong điện động lực học, một từ trường biến thiên sinh ra một điện trường, và điện trường đó có thể làm thay đổi tốc độ của hạt.}
+\end{classroomqa}
+
+\section{Vì sao điện trường và từ trường phải trộn lẫn}
+
+Sự trộn lẫn của \(\boldsymbol E\) và \(\boldsymbol B\) có thể thấy ngay cả trước bất kỳ phép tính 4 chiều nào. Hãy xét chuyển động chậm, để các phát biểu Newton thông thường về gia tốc là đủ dùng. Cho một từ trường hướng dọc theo trục \(y\) và cho một hạt tích điện chuyển động dọc theo trục \(x\). Lực từ hướng dọc theo trục \(z\):
+\begin{equation}
+  \boldsymbol F=q\boldsymbol v\times\boldsymbol B.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_07_figure_07.png}
+\caption{Phác họa trên bảng cho một hạt chuyển động ngang qua một từ trường; 3 phương được dùng để so sánh mô tả trong phòng thí nghiệm và mô tả đồng chuyển động.}
+\lectureframe{00:42:20}
+\end{figure}
+
+Hình học này có thể được vẽ lại mà không cần phối cảnh của lớp học:
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.05,>=Stealth]
+  \draw[->] (0,0) -- (3.8,0) node[right] {\(x\)};
+  \draw[->] (0,0) -- (-1.9,2.4) node[above left] {\(y\)};
+  \draw[->] (0,0) -- (0,3.1) node[above] {\(z\)};
+  \draw[->,very thick] (0,0) -- (2.7,0)
+    node[midway,below] {\(\boldsymbol v\)};
+  \draw[->,very thick] (0,0) -- (-1.35,1.7)
+    node[midway,above left] {\(\boldsymbol B\)};
+  \draw[->,very thick] (0,0) -- (0,2.35)
+    node[midway,right] {\(\boldsymbol F,\ \boldsymbol E'\)};
+\end{tikzpicture}
+\caption{Trong hệ phòng thí nghiệm, lực hướng \(z\) là lực từ; trong hệ đồng chuyển động tức thời, chính lực ấy phải là lực điện.}
+\end{figure}
+
+Giờ hãy xét một quan sát viên đồng chuyển động với hạt tại thời điểm đó. Vận tốc của
+hạt trong hệ quy chiếu mới bằng không, nên số hạng từ
+\(q\boldsymbol v'\times\boldsymbol B'\) triệt tiêu. Tuy vậy, trong giới hạn chuyển động chậm,
+cả hai quan sát viên đều phải nhất trí rằng hạt có gia tốc theo \(z\).
+Nếu định luật lực Lorentz có cùng dạng trong cả hai hệ quy chiếu, thì quan sát viên
+đồng chuyển động phải quy lực ấy cho một điện trường \(\boldsymbol E'\)
+dọc theo \(z\). Vì vậy, một trường thuần từ trong hệ phòng thí nghiệm
+không còn thuần từ trong hệ quy chiếu chuyển động.
+
+Đó là lý do vật lý để tìm kiếm một đối tượng duy nhất mà các thành phần của nó bao gồm cả
+hai trường. Một phép đổi hệ quy chiếu không chỉ đơn thuần xoay các thành phần của \(\boldsymbol E\) trong
+nội bộ ba thành phần riêng của nó và các thành phần của \(\boldsymbol B\) trong nội bộ ba thành phần riêng của nó; nó
+trộn lẫn hai bộ đó.
+
+\section{Tensor trường điện từ}
+
+Gộp lại, điện trường và từ trường có 6 thành phần. Một tensor phản đối xứng 4 chiều cũng có 6 thành phần độc lập, vì
+\begin{equation}
+  \frac{4(4-1)}{2}=6.
+\end{equation}
+Điều này không có nghĩa rằng một tensor phản đối xứng, theo nghĩa đen, là bộ sưu tập duy nhất gồm 6 đại lượng mà người ta có thể nghĩ ra: 6 vô hướng, hoặc một vectơ và 2 vô hướng, cũng sẽ chứa 6 con số. Nó là đối tượng hình học tự nhiên mà các thành phần của nó có thể trộn lẫn theo cách được đòi hỏi.
+
+Để giữ cho quy ước trên bảng được tường minh, ta hiển thị tensor phản biến theo thứ tự \((1,2,3,0)\), với phần không gian đứng trước:
+\begin{equation}
+  F^{\mu\nu}=
+  \begin{pmatrix}
+    0 & -B_3 & B_2 & E_1 \\
+    B_3 & 0 & -B_1 & E_2 \\
+    -B_2 & B_1 & 0 & E_3 \\
+    -E_1 & -E_2 & -E_3 & 0
+  \end{pmatrix}.
+  \label{eq:l07-field-tensor}
+\end{equation}
+Khối \(3\times3\) ở góc trên bên trái chính là tensor từ \eqref{eq:magnetic-tensor}; các thành phần có một chỉ số không gian và một chỉ số thời gian chứa điện trường. Tính phản đối xứng cung cấp các phần tử còn lại.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_08.png}
+\caption{Khối không gian từ và cột thời gian-không gian điện đang được ghép lại thành tensor trường 4 chiều.}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Khi nào các thành phần trường này nên mang chỉ số trên thay vì chỉ số dưới?}
+\lecturerresponse{Xét riêng 3 nhãn không gian, trên bảng đôi khi người ta lược bỏ sự phân biệt ấy khi nhận diện các trường Maxwell--Faraday quen thuộc. Trong một phép tính hiệp biến, sự phân biệt phải được khôi phục: nâng hoặc hạ một chỉ số không gian sẽ làm đổi dấu trong quy ước metric đã chọn.}
+\end{classroomqa}
+
+Điều bất biến không phải là một cách sắp dấu cụ thể nào đó trên bảng, mà là tensor phản đối xứng không-thời gian cùng với một metric nhất quán và một quy ước chỉ số nhất quán. Ký hiệu \(F\) có thể gợi nhớ đến Faraday, mặc dù bài giảng không khẳng định quy gán lịch sử ấy một cách chắc chắn. Einstein đã tìm ra phép biến đổi của các thành phần điện và từ vào 1905; ngôn ngữ tensor 4 chiều cô đọng xuất hiện cùng với cách phát biểu không-thời gian về sau gắn với Minkowski.
+
+\section{Bốn-vận tốc và bốn-lực}
+
+Vế hạt của phương trình cũng phải được viết ở dạng hiệp biến. Thời gian riêng \(\tau\) là bất biến, nên lấy đạo hàm bốn-vectơ vị trí theo nó cho ta một bốn-vectơ khác:
+\begin{equation}
+  u^\mu=\frac{dx^\mu}{d\tau}
+  =\gamma(v_x,v_y,v_z,1),
+  \qquad
+  \gamma=\frac{1}{\sqrt{1-v^2}}.
+  \label{eq:four-velocity}
+\end{equation}
+Thành phần cuối cùng suy ra từ \(dt/d\tau=\gamma\). Bốn-động lượng là
+\begin{equation}
+  p^\mu=mu^\mu,
+\end{equation}
+trong đó phần không gian là động lượng tương đối tính \(\boldsymbol p=m\gamma\boldsymbol v\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_09.png}
+\caption{Bốn-vận tốc, các thành phần của nó, hệ số Lorentz và bốn-động lượng.}
+\lectureframe{00:50:30}
+\end{figure}
+
+Vì \(p^\mu\) là một bốn-vectơ và \(\tau\) là một đại lượng vô hướng, vế trái tương đối tính tự nhiên là
+\begin{equation}
+  f^\mu\equiv\frac{dp^\mu}{d\tau}.
+  \label{eq:four-force-def}
+\end{equation}
+Bốn-lực không thể được chọn tùy ý. Bốn-vận tốc có chuẩn cố định,
+\begin{equation}
+  u_\mu u^\mu=1.
+\end{equation}
+Lấy đạo hàm dọc theo đường thế cho
+\begin{align}
+  0
+  &=\frac{d}{d\tau}(u_\mu u^\mu) \\
+  &=\frac{du_\mu}{d\tau}u^\mu
+    +u_\mu\frac{du^\mu}{d\tau} \\
+  &=2u_\mu\frac{du^\mu}{d\tau}.
+\end{align}
+Với khối lượng không đổi, điều này suy ra
+\begin{equation}
+  f^\mu u_\mu=0.
+  \label{eq:force-orthogonal}
+\end{equation}
+Do đó bốn-lực trực giao theo Minkowski với bốn-vận tốc. Đây là một ràng buộc thuần túy động học hệ quả từ sự chuẩn hóa của \(u^\mu\), chứ không phải là một tính chất đặc biệt của điện từ học.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_07_figure_10.png}
+\caption{Chuẩn đơn vị của bốn-vận tốc và hệ quả là sự trực giao giữa bốn-lực và bốn-vận tốc.}
+\lectureframe{00:56:50}
+\end{figure}
+
+Phép tính từ trường ba chiều đã cung cấp mẹo để thỏa mãn \eqref{eq:force-orthogonal}. Hãy co một tensor phản đối xứng với một bản sao của vận tốc:
+\begin{equation}
+  \boxed{
+  \frac{dp^\mu}{d\tau}=qF^{\mu\nu}u_\nu.}
+  \label{eq:covariant-lorentz}
+\end{equation}
+Quả thật,
+\begin{equation}
+  f^\mu u_\mu
+  =qF^{\mu\nu}u_\nu u_\mu=0,
+\end{equation}
+bởi vì \(F^{\mu\nu}\) phản đối xứng còn \(u_\nu u_\mu\) đối xứng.
+Đây không phải là định luật lực tương đối tính duy nhất có thể hình dung, nhưng là định luật đơn giản nhất tuyến tính theo cả trường điện từ lẫn vận tốc.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_07_figure_11.png}
+\caption{Phương trình lực Lorentz hiệp biến ở bên trái và phép co bằng không của nó với một bốn-vận tốc thứ hai ở bên phải.}
+\lectureframe{01:00:00}
+\end{figure}
+
+\section{Khôi phục lực Lorentz thông thường}
+
+Một phương trình mang dáng dấp hiệp biến vẫn phải tái tạo định luật lực đã biết. Với quy ước metric đã nêu ở đầu,
+\begin{equation}
+  u_\mu=\gamma(-v_x,-v_y,-v_z,1).
+\end{equation}
+Đối với thành phần \(x\), \eqref{eq:l07-field-tensor} và
+\eqref{eq:covariant-lorentz} cho
+\begin{align}
+  \frac{dp^1}{d\tau}
+  &=q\bigl(F^{12}u_2+F^{13}u_3+F^{10}u_0\bigr) \\
+  &=q\gamma\bigl(B_3v_y-B_2v_z+E_1\bigr) \\
+  &=q\gamma\bigl[\boldsymbol E+\boldsymbol v\times
+    \boldsymbol B\bigr]_x.
+  \label{eq:x-force}
+\end{align}
+Các thành phần không gian khác suy ra bằng cách hoán vòng các chỉ số.
+
+\begin{classroomqa}
+\audiencequestion{Hạng \(qE_x\) ở đâu trong khai triển theo các thành phần?}
+\lecturerresponse{Đó là hạng \(qF^{10}u_0\). Một thành phần của tensor trường có một chỉ số không gian và một chỉ số thời gian chính là một thành phần điện trường, và \(u_0=\gamma\).}
+\end{classroomqa}
+
+Thừa số \(\gamma\) ở vế phải không phải là một lực bổ sung. Vì
+\begin{equation}
+  \frac{dp^i}{d\tau}=\frac{dt}{d\tau}\frac{dp^i}{dt}
+  =\gamma\frac{dp^i}{dt},
+\end{equation}
+nên nó triệt tiêu ở cả hai vế của \eqref{eq:x-force}. Do đó phương trình không gian chính xác lại là
+\begin{equation}
+  \frac{d\boldsymbol p}{dt}
+  =q\bigl(\boldsymbol E+\boldsymbol v\times\boldsymbol B\bigr),
+  \qquad
+  \boldsymbol p=m\gamma\boldsymbol v.
+  \label{eq:exact-three-force}
+\end{equation}
+Dạng quen thuộc vẫn còn đó, nhưng tính tương đối được ẩn trong động lượng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_12.png}
+\caption{Định luật Lorentz ba chiều được khôi phục sau khi bỏ thừa số thời gian riêng chung; động lượng vẫn giữ thừa số
+\(\gamma\).}
+\lectureframe{01:06:30}
+\end{figure}
+
+Thành phần thời gian mang phát biểu năng lượng tương ứng,
+\begin{equation}
+  \frac{dp^0}{dt}=q\boldsymbol E\cdot\boldsymbol v,
+\end{equation}
+vì thế từ trường không thực hiện công, còn điện trường thì có thể làm thay đổi năng lượng của hạt.
+\editorialnote{Kiểm tra thành phần thời gian là phần đối ứng trực tiếp với phép tính không gian trong bài giảng; nó được đưa vào để làm lộ ra cùng tính chất không sinh công trong ký hiệu bốn chiều.}
+
+\begin{classroomqa}
+\audiencequestion{Phép suy dẫn này là toán học hay vật lý?}
+\lecturerresponse{Là cả hai. Đại số tensor cung cấp dạng cô đọng, nhưng đã có vật lý đáng kể được đưa vào thông qua nguyên lý rằng mọi hệ quy chiếu quán tính đều tuân theo cùng những định luật và thông qua giả thiết rằng các phương trình chuyển động là bậc hai. Một định luật bậc hai dự đoán tương lai từ vị trí và vận tốc; một định luật bậc ba sẽ đòi hỏi gia tốc như dữ liệu ban đầu bổ sung. Thí nghiệm, chứ không phải ký hiệu, cho ta biết tự nhiên dùng loại định luật nào.}
+\end{classroomqa}
+
+\section{Các trường biến đổi như thế nào}
+
+Phương trình \eqref{eq:covariant-lorentz} có cùng dạng trong mọi hệ quy chiếu vì cả hai vế đều là bốn-vectơ. Bản thân tensor trường biến đổi với một ma trận Lorentz cho mỗi chỉ số:
+\begin{equation}
+  F'^{\mu\nu}
+  =\Lambda^\mu{}_{\rho}\Lambda^\nu{}_{\sigma}F^{\rho\sigma}.
+  \label{eq:tensor-transform}
+\end{equation}
+Trên bảng, quy tắc này được suy ra bằng cách trước hết biến đổi một tích đơn giản
+\(A^\mu B^\nu\). Một khi quy tắc đã biết cho tích của các vectơ, tính tuyến tính sẽ cho quy tắc đối với mọi tensor hạng hai.
+
+Đối với một phép boost dọc theo trục \(1\), các tọa độ biến đổi theo
+\begin{align}
+  x'^1&=\gamma(x^1-vx^0), &
+  x'^0&=\gamma(x^0-vx^1), \\
+  x'^2&=x^2, & x'^3&=x^3.
+\end{align}
+Hãy áp dụng cùng phép biến đổi ấy riêng rẽ cho cả hai chỉ số của tensor. Đối với thành phần song song với phép boost, trên bảng bắt đầu từ một tích:
+\begin{align}
+  (A'^0B'^1)
+  =\gamma^2\bigl(
+     A^0B^1-vA^0B^0-vA^1B^1+v^2A^1B^0
+   \bigr).
+\end{align}
+Thay từng tích bằng thành phần tensor tương ứng rồi dùng tính phản đối xứng, \(F^{00}=F^{11}=0\) và \(F^{10}=-F^{01}\), ta được
+\begin{equation}
+  F'^{01}
+  =\gamma^2(1-v^2)F^{01}
+  =F^{01}.
+\end{equation}
+Do đó thành phần điện trường song song với chuyển động không đổi. Thành phần từ trường song song cũng ứng xử tương tự.
+
+Các thành phần vuông góc thì khác. Theo quy ước về hệ có dấu phẩy và về dấu được dùng trên bảng,
+\begin{align}
+  F'^{02}
+  &=\gamma\bigl(F^{02}-vF^{12}\bigr), \\
+  E'_2
+  &=\gamma(E_2+vB_3).
+  \label{eq:e-transform}
+\end{align}
+Một thành phần điện trường vuông góc nhận thêm một phần của một thành phần từ trường. Các định luật biến đổi còn lại tuân theo cùng quy tắc hai chỉ số ấy và được để lại làm bài tập của buổi giảng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_07_figure_13.png}
+\caption{Phép biến đổi tensor của các thành phần vuông góc tại bước mà thành phần
+\(E'_2\) được thấy là chứa một hạng tỉ lệ với \(vB_3\).}
+\lectureframe{01:23:40}
+\end{figure}
+
+Dấu trong \eqref{eq:e-transform} phụ thuộc vào việc hệ nào được quy ước là chuyển động với \(+v\), cũng như vào các quy ước về chỉ số và metric. Nội dung bất biến của nó thì không: các thành phần điện trường và từ trường vuông góc trộn lẫn nhau, và phương trình lực hiệp biến vẫn còn đúng sau phép biến đổi.
+
+\begin{classroomqa}
+\audiencequestion{Đối với dòng điện trong một dây dẫn, liệu ta có thể chuyển động với một vận tốc nào đó để làm cho từ trường triệt tiêu không?}
+\lecturerresponse{Chuyển động cùng các electron dẫn là chưa đủ, vì khi đó các điện tích dương của mạng tinh thể lại chuyển động trong hệ quy chiếu mới. Vì vậy, một dây dẫn mang dòng nhưng trung hòa về điện phức tạp hơn trường hợp một khối điện tích đơn lẻ chuyển động. Một từ trường thuần túy không thể bị biến đổi để triệt tiêu hoàn toàn. Nếu cả điện trường lẫn từ trường đều hiện diện, các phần đã biến đổi của chúng có thể triệt tiêu nhau trong những hoàn cảnh đặc biệt; đối với một điện tích chuyển động thẳng đều, hệ nghỉ của điện tích là hệ đơn giản trong đó từ trường của nó triệt tiêu.}
+\end{classroomqa}
+
+Phép kiểm tra bất biến chính xác dùng
+\begin{equation}
+  \boldsymbol B^2-\boldsymbol E^2,
+  \qquad
+  \boldsymbol E\cdot\boldsymbol B.
+\end{equation}
+Một hệ quy chiếu với \(\boldsymbol B'=0\) chỉ có thể tồn tại đối với một trường điện trội có \(\boldsymbol E\cdot\boldsymbol B=0\); một trường thuần từ trong một hệ quy chiếu nào đó là từ trội và không thể thỏa điều kiện ấy.
+\editorialnote{Các tiêu chuẩn bất biến này phát biểu chính xác điều kiện kèm theo đã đạt tới trong thảo luận trên lớp; phần suy dẫn của chúng được hoãn lại.}
+
+\begin{classroomqa}
+\audiencequestion{Thế vô hướng điện và thế vectơ từ có tạo thành một bốn-vectơ không?}
+\lecturerresponse{Có. Với các dấu phụ thuộc vào quy ước, chúng gộp lại thành bốn-thế \(A^\mu\). Các phương trình Maxwell sẽ sử dụng một cách có hệ thống đối tượng đó.}
+\end{classroomqa}
+
+\section{Đạo hàm của các trường}
+
+Giờ đây ta rời quỹ đạo của một hạt để xét một trường trên toàn bộ không-thời gian. Cho
+\begin{equation}
+  \phi=\phi(x^1,x^2,x^3,x^0)
+\end{equation}
+là một trường vô hướng. Bốn đạo hàm của nó tạo thành các thành phần hiệp biến của một bốn-vectơ:
+\begin{equation}
+  \partial_\mu\phi
+  \equiv\frac{\partial\phi}{\partial x^\mu}
+  =\left(
+    \frac{\partial\phi}{\partial x},
+    \frac{\partial\phi}{\partial y},
+    \frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+Quy tắc dây chuyền áp dụng cho phép biến đổi tọa độ Lorentz chứng minh định luật biến đổi hiệp biến này. Nâng chỉ số lên làm đảo dấu các thành phần không gian nhưng giữ nguyên dấu của thành phần thời gian:
+\begin{equation}
+  \partial^\mu\phi
+  =\left(
+    -\frac{\partial\phi}{\partial x},
+    -\frac{\partial\phi}{\partial y},
+    -\frac{\partial\phi}{\partial z},
+    \frac{\partial\phi}{\partial t}
+  \right).
+\end{equation}
+
+Mỗi phép lấy đạo hàm đóng góp một chỉ số dưới. Do đó
+\(\partial_\nu V^\mu\) là một tensor hạng hai với một chỉ số trên và một chỉ số dưới, còn việc lấy đạo hàm của một tensor tạo ra một đối tượng có thêm một chỉ số dưới. Đây là quy tắc cơ bản cần để viết các phương trình trường mà không phải chọn một hệ quy chiếu quán tính ưu tiên.
+
+\section{Phương trình sóng vô hướng bất biến}
+
+Các phương trình sóng đơn giản nhất chứa hai đạo hàm. Nếu phương trình phải có cùng dạng trong mọi hệ quy chiếu quán tính, thì vế trái của nó nên là một vô hướng. Việc co các chỉ số đạo hàm cho ta lựa chọn đơn giản nhất duy nhất:
+\begin{equation}
+  \boxed{\partial^\mu\partial_\mu\phi=0.}
+  \label{eq:wave-covariant}
+\end{equation}
+Viết tường minh các thành phần theo quy ước dấu hiện tại,
+\begin{equation}
+  \frac{\partial^2\phi}{\partial t^2}
+  -\frac{\partial^2\phi}{\partial x^2}
+  -\frac{\partial^2\phi}{\partial y^2}
+  -\frac{\partial^2\phi}{\partial z^2}=0.
+  \label{eq:wave-components}
+\end{equation}
+Phép co trong \eqref{eq:wave-covariant} làm cho tính bất biến Lorentz hiện ra hiển nhiên; phương trình \eqref{eq:wave-components} là cùng phát biểu ấy được viết theo từng thành phần.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_07_figure_14.png}
+\caption{Dạng đạo hàm đã co của phương trình sóng vô hướng và khai triển theo các thành phần thời gian trừ không gian của nó.}
+\lectureframe{01:39:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vế phải của phương trình sóng có nhất thiết phải bằng không không?}
+\lecturerresponse{Không. Nó có thể là bất kỳ vô hướng nào tương thích với bài toán. Một hằng số nhân với \(\phi\), hoặc một hàm vô hướng phi tuyến chẳng hạn tỉ lệ với \(\phi^2\), vẫn bảo toàn tính hiệp biến. Giá trị bằng không cho phương trình sóng tự do đơn giản nhất.}
+\end{classroomqa}
+
+Mục đích của ví dụ vô hướng này là để chuẩn bị. Các phương trình Maxwell trộn điện trường và từ trường theo cách phức tạp hơn, nhưng chúng cũng có thể được viết sao cho tính bất biến Lorentz hiện rõ từ cấu trúc chỉ số của chúng. Đó là vấn đề mà lần tới ta sẽ quay lại.

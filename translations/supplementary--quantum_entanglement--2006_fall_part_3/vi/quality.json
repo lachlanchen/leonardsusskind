@@ -1,0 +1,56 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 217,
+  "outline_entries": 95,
+  "target_characters": 147117,
+  "image_placements": 98,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Rối lượng tử, Phần 3",
+  "pdf_sha256": "f1247dc032d1f75b4f4d651f65516097dda328547c38f860f27d9acb93a1efa8",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 140,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "df66e95f6546d02ae474cf675d8f8f85575605ef26e5f9a9011893eff34a431c",
+    "chapters/lecture_01/content.tex": "11ff8c2b49af1d50ba5acc54e9a101e757df1c74d95f75d5fe6400b6ef8e5e23",
+    "chapters/lecture_02_03/content.tex": "481d45d85550535efd7f8e6af11ad60c1a20d1b8d9d491a3cd8f71a9e13d8e69",
+    "chapters/lecture_04/content.tex": "deb0f36bb2c11611b924f697ba9c9a896c3601ad9ad2c20c87a1673a3b989f69",
+    "chapters/lecture_05/content.tex": "9f9c2327cb729405bc60915d685de967e9a34b1fb4ecf45693375d69bfead5e0",
+    "chapters/lecture_06/content.tex": "a7c1ead586b6177abe493f01d384cc62fe7d44b3b4bd3496651687c134070336",
+    "chapters/lecture_07/content.tex": "cabe836f5a0559a1adad7355d2fbdcf9e909f5b1dc9e8ee5b917c134803d1281",
+    "chapters/lecture_08/content.tex": "df2b2b9d2225ae5073312f783c397be6deca340f526d60b40dcc122f9d525bb3",
+    "chapters/lecture_09/content.tex": "f5b68609e5f9ebca26d7011502587945d004e294b812ea1c660800ed04279ec8"
+  },
+  "source_files": {
+    "course.tex": "356d8ce3183a4c7413b9c336e9a2d8bd28af68d0f32fc281411dd6137903070b",
+    "common_preamble.tex": "7230adaa2c872f88056a832b9a230eaf89d97409c06df43c5abd3be7bb7c6e6d",
+    "chapters/lecture_01/content.tex": "8901a5e94b79043b8683ae3c07a6714b79847789e5762c48cd72e9d9f36d025a",
+    "chapters/lecture_02_03/content.tex": "d5f4018fc88275e090e6b4773153254fd7bbd28504c004b454fb444d72fb2f3f",
+    "chapters/lecture_04/content.tex": "b79226daad0aa91b17e4b2afe6d6e4b98fc52396be779aab36de42d64582b3ab",
+    "chapters/lecture_05/content.tex": "3e7b4248a1a92ec5b0838f3fcbd1c70b542ad61307daf8cff5face134ee911b3",
+    "chapters/lecture_06/content.tex": "ed6739fc900e1b83e609422bcf5a0246a4429759b0de1ebc104649c101391284",
+    "chapters/lecture_07/content.tex": "42d787980d2bd997c18034f22e260e9db3610b2b44586bcd1d5557ab67b90c95",
+    "chapters/lecture_08/content.tex": "57e52781307495b368457421b6d78cc41a563bc01a566b789fd9200862518709",
+    "chapters/lecture_09/content.tex": "a2e052c366902368f82b9b8cc60ec34b86f8d7451d0adc06a04c22b71778c74f"
+  },
+  "translated_tex": {
+    "cover.tex": "7cdbe4ff263edc4be87f80b00f3c8266e9ef5aa034feb14315fac85bfdadfc1b",
+    "common_preamble.tex": "a6eac6f7feaceb590950e280823cec6a4dbc633a7b7bd10537ddd29cbcd25c2f",
+    "course.tex": "5d42f1ed29e48f0c39196ac5ddc4b6b5df49920afc715c22f2fca97b3a252d89",
+    "chapters/lecture_07/content.tex": "5a6b0f5e9f889f17a8518de888d018e2e31c9871baa0b92950199483d7fe62fa",
+    "chapters/lecture_09/content.tex": "568321804b2ea2eba0766c9388c30cb94809f68cdea8fc700541e35be49db67c",
+    "chapters/lecture_02_03/content.tex": "c73831f33798a6bc7314ace6701aa28ef7ea95a31746817cad46d66131a5f4b5",
+    "chapters/lecture_01/content.tex": "114eccfad6bffe9b68f81ea3489bbe2b2dbb473fe046a8a1c0a665550eb107d9",
+    "chapters/lecture_08/content.tex": "8f2e2e6ca7452c8c8c29b4bceb6d5f703afe2d27b0a62e23dc703e33dce15491",
+    "chapters/lecture_05/content.tex": "f2faf25dc989b144b4d83721eb9c2a0de726c748450bb3e8c43be2de00dc70b2",
+    "chapters/lecture_04/content.tex": "6bfca7fb33fe3115e9726dc343dac6a59a7b0af9d259c29ca0058872beb89d6e",
+    "chapters/lecture_06/content.tex": "02023f4101b94ae8c3f32730c7bf8cdf097ff7a948a2f1fc7b8e056667d9a760"
+  }
+}
