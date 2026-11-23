@@ -1,0 +1,523 @@
+\chapter{Các hệ hợp thành, vướng víu lượng tử, và trạng thái singlet}
+
+\lectureoverview{Một câu hỏi về phát xạ photon phơi bày sự khác biệt giữa một biến cố lượng tử và giá trị trung bình trên tập hợp của nó. Sự phân biệt ấy dẫn tự nhiên đến phép đo, sự sụp đổ, và nhu cầu phải xét một hệ cùng với thiết bị của nó. Vì vậy, ta xây dựng không gian trạng thái tích tensor của hai hệ, chuyên biệt hóa cho hai spin, phân biệt các trạng thái tích với các trạng thái vướng víu, và nhúng mỗi đại lượng quan sát một-spin vào không gian hợp thành. Khi đó trạng thái singlet cung cấp ví dụ quyết định: mỗi spin riêng lẻ đều không phân cực, nhưng các thành phần cùng tên lại phản tương quan hoàn hảo. Dạng độc lập cơ sở của nó đặt nền cho định lý Bell và cho sự phân biệt giữa tương quan phi cổ điển với sự truyền tín hiệu nhanh hơn ánh sáng.}
+
+\section{Các chuyển tiếp rời rạc từ một spin chồng chập}
+
+Bắt đầu với một spin trong từ trường dọc theo trục \(z\). Trong hệ đơn vị với \(\hbar=1\),
+\begin{equation}
+H=\frac{\omega}{2}\sigma_z,
+\qquad
+E_+=+\frac{\omega}{2},
+\qquad
+E_-=-\frac{\omega}{2}.
+\label{eq:l6-spin-hamiltonian}
+\end{equation}
+Hai mức được tách nhau bởi
+\begin{equation}
+\Delta E=E_+-E_-=\omega.
+\label{eq:l6-energy-gap}
+\end{equation}
+Khi kể cả trường bức xạ, một spin ở mức trên có thể rơi xuống mức dưới và phát ra một photon có năng lượng \(\omega\). Một spin đã ở mức dưới thì không có trạng thái spin thấp hơn nào để bức xạ xuống.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_01.png}
+\caption{Hai mức năng lượng spin và độ tách \(\omega\) giữa chúng, với \(\hbar=1\).}
+\lectureframe{00:02:35}
+\end{figure}
+
+Trường hợp tinh tế là một spin được chuẩn bị theo phương ngang. Một rôto từ cổ điển có năng lượng biến thiên liên tục, tỉ lệ với côsin của góc giữa nó và từ trường. Nó tuế sai với tần số góc \(\omega\), bức xạ ở đúng tần số ấy, và dần dần rơi về hướng có năng lượng tối thiểu của nó. Tổng năng lượng bức xạ phụ thuộc liên tục vào góc ban đầu: một rôto ban đầu nằm ngang giải phóng năng lượng chỉ bằng một nửa so với rôto khởi đầu ở phía trên cùng.
+
+Cơ học lượng tử chỉ giữ lại câu trả lời cổ điển đó ở mức trung bình. Viết
+\begin{equation}
+\ket{\psi}=\alpha\ket{u}+\beta\ket{d},
+\qquad
+|\alpha|^2+|\beta|^2=1,
+\label{eq:l6-superposed-spin}
+\end{equation}
+trong đó \(\ket{u}\) và \(\ket{d}\) là các trạng thái riêng năng lượng mức trên và mức dưới. Thành phần trên có thể phân rã; thành phần dưới thì không. Do đó
+\begin{equation}
+P(\text{one photon})=|\alpha|^2,
+\qquad
+P(\text{no photon})=|\beta|^2.
+\end{equation}
+Nếu có một photon được phát ra, năng lượng của nó là toàn bộ độ tách mức \(\omega\), chứ không phải một phần của nó. Tuy vậy, năng lượng phát ra trung bình là
+\begin{equation}
+\expect{E_{\rm emitted}}=|\alpha|^2\omega.
+\end{equation}
+Đối với một spin dọc theo \(x\), ta có \(|\alpha|^2=|\beta|^2=1/2\), nên giá trị trung bình là \(\omega/2\). Mỗi biến cố riêng lẻ vẫn chỉ tạo ra hoặc một photon có năng lượng \(\omega\), hoặc không photon nào cả. Kết quả cổ điển liên tục thuộc về giá trị trung bình trên tập hợp; tính rời rạc thuộc về từng biến cố.
+
+\begin{classroomqa}
+\audiencequestion{Một photon bị hấp thụ phải khớp với độ tách mức chính xác đến mức nào?}
+\lecturerresponse{Cộng hưởng có độ rộng vạch hữu hạn. Nếu trạng thái kích thích có thời gian sống \(\tau\), thì độ rộng năng lượng đặc trưng của nó có bậc cỡ \(\Delta E\sim\hbar/\tau\). Một mômen lưỡng cực từ lớn hơn nói chung ghép mạnh hơn với trường bức xạ, làm ngắn thời gian sống và làm rộng vạch phổ. Đây là hệ thức bất định năng lượng-thời gian dưới dạng thích hợp với các mức không bền.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bản thân sự phát xạ photon có thể đóng vai trò một thiết bị đo spin hay không?}
+\lecturerresponse{Nó có thể cho biết liệu một sự phân rã đã xảy ra hay chưa, nhưng không phải là mô hình phép đo lặp lại lý tưởng cần dùng ở đây. Một phép đo một thành phần spin phải để lại spin trong trạng thái riêng gắn với giá trị đã được ghi nhận. Trái lại, sự phân rã đẩy mọi nhánh có phát xạ về mức dưới, nên nó không đơn thuần ghi lại hai giá trị đầu vào có thể có trong khi vẫn bảo toàn các trạng thái riêng tương ứng của chúng.}
+\end{classroomqa}
+
+\section{Sự sụp đổ và sự cần thiết của một hệ hợp thành}
+
+Giữa các lần can thiệp, một trạng thái cô lập tiến hóa theo phương trình Schr\"odinger. Phép đo thường được phát biểu như một quy tắc bổ sung. Cho \(L\) có các vectơ riêng trực chuẩn \(\ket{\lambda_i}\), và khai triển
+\begin{equation}
+\ket{\psi}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+L\ket{\lambda_i}=\lambda_i\ket{\lambda_i}.
+\label{eq:l6-measurement-expansion}
+\end{equation}
+Một phép đo cho ra một giá trị \(\lambda_k\) với xác suất \(|\alpha_k|^2\), sau đó trạng thái là
+\begin{equation}
+\ket{\psi}\longrightarrow\ket{\lambda_k}.
+\label{eq:l6-collapse}
+\end{equation}
+Sự biến mất của các thành phần còn lại khỏi mô tả sau phép đo được gọi là sự sụp đổ.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_06_figure_02.png}
+\caption{Một trạng thái được khai triển trong cơ sở riêng của đại lượng quan sát \(L\), trước khi một kết quả được chọn ra.}
+\lectureframe{00:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Quy tắc sụp đổ có vấn đề gì?}
+\lecturerresponse{Không có gì sai với nó nếu xem như một quy tắc thao tác để dự đoán kết quả đo. Sự căng thẳng về mặt khái niệm nằm ở chỗ bản thân thiết bị cũng là một hệ vật lý. Nếu cả vật được đo lẫn thiết bị đều tuân theo cơ học lượng tử, thì vì sao tương tác giữa chúng lại đòi hỏi một định luật động lực học thứ hai ngoài sự tiến hóa Schr\"odinger đơn nhất? Con đường được chọn ở đây là mô tả vật và thiết bị như một hệ lượng tử lớn hơn duy nhất.}
+\end{classroomqa}
+
+Ranh giới sắc nét giữa hệ và thiết bị là một điểm trung tâm của cuộc tranh luận lịch sử. Thay vì dàn xếp cuộc tranh luận đó bằng một lời khẳng định, trước hết ta học cách kết hợp các hệ lượng tử. Khi không gian trạng thái kết hợp đã có, phép đo có thể được nghiên cứu như một tương tác làm tương quan hệ với một thiết bị. Vì vậy, câu hỏi toán học trực tiếp là:
+\begin{quote}
+Với hai hệ lượng tử, không gian trạng thái của toàn hệ là gì?
+\end{quote}
+
+\section{Không gian trạng thái tích tensor}
+
+Gọi các hệ là \(A\) và \(I\), với các không gian Hilbert \(\mathcal S_A\) và \(\mathcal S_I\). Không gian hợp thành của chúng là
+\begin{equation}
+\mathcal S_{AI}=\mathcal S_A\otimes\mathcal S_I.
+\label{eq:l6-tensor-space}
+\end{equation}
+Chọn các cơ sở trực chuẩn \(\{\ket{a}\}\) và \(\{\ket{i}\}\) cho hai thừa số. Ghép từng vectơ cơ sở của hệ thứ nhất với từng vectơ cơ sở của hệ thứ hai:
+\begin{equation}
+\ket{a}\otimes\ket{i}\equiv\ket{a\,i}.
+\end{equation}
+Nếu các không gian thừa số có số chiều \(D_A\) và \(D_I\), thì
+\begin{equation}
+\dim\mathcal S_{AI}=D_A D_I.
+\end{equation}
+Tích vô hướng được phân tích thành thừa số,
+\begin{equation}
+\braket{b\,j}{a\,i}
+=\braket{b}{a}\braket{j}{i}
+=\delta_{ba}\delta_{ji}.
+\label{eq:l6-tensor-inner-product}
+\end{equation}
+Vì vậy, hai trạng thái cơ sở hợp thành là trực giao bất cứ khi nào một trong hai nhãn của hệ con khác nhau.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_03.png}
+\caption{Các không gian trạng thái riêng, tích tensor của chúng, và cơ sở trực chuẩn ghép cặp.}
+\lectureframe{00:24:05}
+\end{figure}
+
+Các vectơ cơ sở ghép cặp không phải là toàn bộ không gian. Bao tuyến tính đầy đủ của chúng là:
+\begin{equation}
+\ket{\Psi}=\sum_{a,i}c_{ai}\ket{a\,i},
+\qquad
+\sum_{a,i}|c_{ai}|^2=1.
+\label{eq:l6-general-tensor-state}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{\(\ket{a}\) và \(\ket{i}\) có phải là các vectơ tùy ý không?}
+\lecturerresponse{Ở đây chúng là các phần tử của những cơ sở trực chuẩn đã chọn. Có thể dùng bất kỳ cơ sở trực chuẩn nào trong mỗi thừa số. Ghép các vectơ cơ sở ấy sẽ dựng nên một cơ sở trực chuẩn của không gian hợp thành, sau đó các vectơ tùy ý được thu được bằng cách lấy các tổ hợp tuyến tính như trong Phương trình~\eqref{eq:l6-general-tensor-state}.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Tích tensor có phụ thuộc vào các cơ sở đã chọn không?}
+\lecturerresponse{Mô tả theo tọa độ của nó thì có, nhưng bản thân không gian thì không. Việc đổi cơ sở trong một trong hai hệ con chỉ đơn thuần làm thay đổi cơ sở được suy ra dùng để mô tả cùng các vectơ trong \(\mathcal S_A\otimes\mathcal S_I\).}
+\end{classroomqa}
+
+\section{Hai spin và các trạng thái tích}
+
+Bây giờ xét hai spin. Ký hiệu các thành phần của spin thứ nhất là \(\sigma_x,\sigma_y,\sigma_z\), và của spin thứ hai là \(\tau_x,\tau_y,\tau_z\). Trong một cơ sở \(z\), cơ sở hợp thành là
+\begin{equation}
+\ket{uu},\qquad \ket{ud},\qquad \ket{du},\qquad \ket{dd}.
+\label{eq:l6-two-spin-basis}
+\end{equation}
+Vị trí thứ nhất luôn chỉ \(\sigma\), vị trí thứ hai chỉ \(\tau\). Một trạng thái tổng quát là
+\begin{equation}
+\ket{\Psi}
+=c_{uu}\ket{uu}+c_{ud}\ket{ud}
++c_{du}\ket{du}+c_{dd}\ket{dd}.
+\label{eq:l6-general-two-spin}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Nếu hai spin tương tác, bản thân các vectơ cơ sở có thay đổi không?}
+\lecturerresponse{Không cần một cơ sở cố định nào để theo dõi động lực học. Trong cơ sở đã chọn, tương tác làm thay đổi các hệ số \(c_{ab}(t)\), chứ không thay đổi định nghĩa của \(\ket{uu},\ket{ud},\ket{du},\ket{dd}\). Một trạng thái khởi đầu là \(\ket{uu}\) có thể tiến hóa thành một chồng chập, hoặc thậm chí thành \(\ket{dd}\), trong khi cơ sở tọa độ vẫn giữ nguyên.}
+\end{classroomqa}
+
+Cấu trúc này cũng phải vượt qua một phép kiểm tra nhất quán. Nếu hai spin ở xa nhau và chỉ spin \(\sigma\) được khảo sát, các dự đoán phải phù hợp với lý thuyết một-spin đã được phát triển trước khi \(\tau\) được đưa vào. Tích tensor được thiết kế để duy trì lý thuyết cục bộ ấy.
+
+Một số trạng thái hai-spin mô tả các spin được chuẩn bị độc lập. Chẳng hạn, cho
+\begin{equation}
+\ket{R}=\frac{\ket{u}+\ket{d}}{\sqrt2}
+\end{equation}
+là trạng thái riêng \(+1\) của thành phần \(x\). Khi đó
+\begin{equation}
+\ket{u}_{\sigma}\otimes\ket{R}_{\tau}
+=\frac{\ket{uu}+\ket{ud}}{\sqrt2}.
+\label{eq:l6-up-right-product}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Hai thừa số có thể được chuẩn bị dọc theo các trục khác nhau không?}
+\lecturerresponse{Có. Mỗi thừa số có thể là bất kỳ trạng thái một-spin nào. Phương trình~\eqref{eq:l6-up-right-product} có spin thứ nhất xác định dọc theo \(z\) và spin thứ hai xác định dọc theo \(x\). Khai triển thừa số thứ hai trong cơ sở \(z\) chỉ đơn thuần là viết lại cùng một trạng thái tích trong cơ sở hợp thành.}
+\end{classroomqa}
+
+Trạng thái tích tổng quát nhất là
+\begin{align}
+\ket{\Psi_{\rm prod}}
+&=(\alpha_u\ket{u}+\alpha_d\ket{d})
+\otimes(\beta_u\ket{u}+\beta_d\ket{d})\\
+&=\alpha_u\beta_u\ket{uu}
++\alpha_u\beta_d\ket{ud}
+\\
+&\quad
++\alpha_d\beta_u\ket{du}
++\alpha_d\beta_d\ket{dd}.
+\label{eq:l6-product-expansion}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_04.png}
+\caption{Một trạng thái hai-spin đã phân tích thành nhân tử, được khai triển trong cơ sở hợp thành bốn trạng thái.}
+\lectureframe{00:37:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Loại tích vectơ nào xuất hiện trong Phương trình~\eqref{eq:l6-product-expansion}?}
+\lecturerresponse{Không gian chứa là tích tensor của hai không gian Hilbert. Một vectơ mà bản thân nó phân tích thành một vectơ từ mỗi không gian được gọi là trạng thái tích, hoặc tensor đơn. Phần lớn các vectơ trong một không gian tích tensor là tổng của những tích như vậy và không thể viết thành một tích duy nhất.}
+\end{classroomqa}
+
+Có thể thấy trực tiếp sự hạn chế ấy từ các hệ số:
+\begin{equation}
+c_{uu}c_{dd}=c_{ud}c_{du}
+\qquad\text{for every product state}.
+\label{eq:l6-rank-one-condition}
+\end{equation}
+Tương đương, ma trận hệ số \(2\times2\) có hạng một. Việc đếm tham số cũng cho cùng kết luận. Bốn hệ số phức chứa tám tham số thực; điều kiện chuẩn hóa loại bỏ một và pha tổng thể không liên quan loại bỏ thêm một, còn lại sáu cho một trạng thái thuần hai-spin tổng quát. Mỗi trạng thái thuần một-spin cần hai tham số thực, nên hai spin được chỉ định riêng rẽ chỉ cần bốn. Vì vậy, các trạng thái tích chỉ chiếm một tập con đặc biệt bốn tham số của không gian trạng thái hai-spin sáu tham số. Các trạng thái còn lại là các trạng thái vướng víu.
+
+\section{Các đại lượng quan sát cục bộ trong không gian hợp thành}
+
+Các đại lượng quan sát một-spin quen thuộc phải còn hiện diện bên trong hệ lớn hơn. Nói tường minh hơn,
+\begin{equation}
+\sigma_m\equiv\sigma_m\otimes I,
+\qquad
+\tau_n\equiv I\otimes\sigma_n,
+\qquad
+m,n\in\{x,y,z\}.
+\label{eq:l6-local-operators}
+\end{equation}
+Ký hiệu viết gọn này là vô hại một khi quy ước về vị trí đã được cố định. Dùng
+\begin{equation}
+\begin{aligned}
+\sigma_x&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.4em]
+\sigma_y&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.4em]
+\sigma_z&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\end{aligned}
+\end{equation}
+các toán tử của spin thứ nhất tác dụng trong khi nhãn thứ hai chỉ giữ vai trò thụ động:
+\begin{align}
+\sigma_x\ket{u\,i}&=\ket{d\,i},
+&
+\sigma_x\ket{d\,i}&=\ket{u\,i},\\
+\sigma_z\ket{u\,i}&=\ket{u\,i},
+&
+\sigma_z\ket{d\,i}&=-\ket{d\,i}.
+\end{align}
+Đối với spin thứ hai, nhãn thứ nhất giữ vai trò thụ động:
+\begin{align}
+\tau_x\ket{a\,u}&=\ket{a\,d},
+&
+\tau_x\ket{a\,d}&=\ket{a\,u},\\
+\tau_z\ket{a\,u}&=\ket{a\,u},
+&
+\tau_z\ket{a\,d}&=-\ket{a\,d}.
+\label{eq:l6-spectator-action}
+\end{align}
+Thành phần \(y\) cũng lật trạng thái ở vị trí mà nó tác dụng, với \(\sigma_y\ket{u}=i\ket{d}\) và
+\(\sigma_y\ket{d}=-i\ket{u}\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_05.png}
+\caption{Bảng tác dụng lên spin thứ hai: chỉ số thứ nhất vẫn giữ vai trò thụ động.}
+\lectureframe{00:47:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Việc tác dụng \(\sigma_x\) có nghĩa là đã xảy ra một phép đo \(x\) hay không, và vì sao kết quả lại không phải là một chồng chập?}
+\lecturerresponse{Sự tác dụng của toán tử tự nó không phải là một phép đo. Nhân ma trận \(\sigma_x\) với vectơ \(\ket{u}\) của cơ sở \(z\) cho ta \(\ket{d}\). Đây không phải là một phương trình trị riêng: một vectơ riêng sẽ giữ nguyên phương của nó dưới phép tác dụng. Quả vậy, \(\ket{u}\) được ánh xạ thành một trạng thái trực giao, đây cũng là một cách khác để thấy vì sao một phép đo \(x\) trên một trạng thái riêng \(z\) là ngẫu nhiên cực đại. Tác dụng lên một vectơ không phải vectơ riêng thường chỉ là một bước đại số trung gian, mà ý nghĩa vật lý của nó đến từ toàn bộ đại lượng đang được tính.}
+\end{classroomqa}
+
+Các toán tử trên những thừa số khác nhau thì giao hoán. Chẳng hạn,
+\begin{equation}
+\sigma_x\tau_x\ket{uu}
+=\ket{dd}
+=\tau_x\sigma_x\ket{uu}.
+\end{equation}
+Đẳng thức tương tự đúng trên mọi vectơ cơ sở hợp thành, và do đó đúng trên mọi trạng thái:
+\begin{equation}
+[\sigma_m,\tau_n]=0
+\qquad\text{for all }m,n.
+\label{eq:l6-local-commutation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_06.png}
+\caption{Các tác dụng trên các vị trí tách biệt dẫn đến giao hoán tử triệt tiêu \([\sigma_x,\tau_x]\).}
+\lectureframe{00:56:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao kiểm tra một vectơ cơ sở vẫn chưa phải là một chứng minh rằng hai toán tử giao hoán?}
+\lecturerresponse{Đẳng thức giữa các toán tử đòi hỏi chúng tác dụng như nhau lên mọi vectơ. Chỉ cần kiểm tra mọi vectơ của một cơ sở, vì khi đó tính tuyến tính sẽ mở rộng kết quả đến mọi chồng chập. Đối với các toán tử cục bộ, lập luận này là hiển nhiên trên cả bốn trạng thái cơ sở: mỗi toán tử thay đổi một vị trí khác nhau, nên thứ tự của chúng không quan trọng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có những đại lượng quan sát thực sự thuộc về hệ hai-spin hay không?}
+\lecturerresponse{Có. Những tích như \(\sigma_x\tau_x\), \(\sigma_x\tau_y\), và các tổ hợp tuyến tính của những tích như thế thăm dò các tính chất chung. Các đại lượng quan sát cục bộ mô tả từng thừa số; các đại lượng quan sát tương quan cho biết các thừa số liên hệ với nhau như thế nào.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các trạng thái tích được chuẩn bị độc lập đã là trạng thái vướng víu chưa?}
+\lecturerresponse{Chưa. Trong một trạng thái tích, mỗi thừa số có vectơ trạng thái riêng của nó, và các giá trị kỳ vọng cục bộ phân tích thành tích. Sự vướng víu bắt đầu khi trạng thái hợp thành không thể tách thành một trạng thái cho \(\sigma\) và một trạng thái cho \(\tau\).}
+\end{classroomqa}
+
+\section{Trạng thái singlet}
+
+Một ví dụ vướng víu cực đại là
+\begin{equation}
+\ket{S}
+=\frac{1}{\sqrt2}\bigl(\ket{ud}-\ket{du}\bigr).
+\label{eq:l6-singlet}
+\end{equation}
+Hai hạng tử đã cho thấy sự phản tương quan hoàn hảo dọc theo \(z\): hễ một spin hướng lên thì spin kia hướng xuống. Điểm sâu hơn là không thể gán cho spin nào một trạng thái thuần riêng của nó.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_07.png}
+\caption{Trạng thái hai-spin phản đối xứng sẽ được nhận diện là singlet.}
+\lectureframe{01:09:25}
+\end{figure}
+
+Đối với một trạng thái thuần của một spin, luôn tồn tại một vectơ đơn vị \(\bm n\) sao cho
+\begin{equation}
+(\bm\sigma\cdot\bm n)\ket{\psi}=\ket{\psi}.
+\end{equation}
+Tương đương, vectơ Bloch
+\begin{equation}
+\bm r
+=\bigl(\expect{\sigma_x},\expect{\sigma_y},\expect{\sigma_z}\bigr)
+\end{equation}
+có độ dài bằng 1 đối với một trạng thái một-spin thuần. Vì thế ba thành phần của nó không thể đồng thời triệt tiêu. Với trạng thái đã cho, nếu định hướng đầu dò theo \(\bm r\) thì thu được \(+1\) một cách chắc chắn. Các ví dụ quen thuộc là hướng \(z\) cho \(\ket{u}\), hướng \(x\) cho \((\ket{u}+\ket{d})/\sqrt2\), và một trong các hướng \(y\) cho \((\ket{u}+i\ket{d})/\sqrt2\).
+
+Bây giờ hãy tính một giá trị trung bình cục bộ trong singlet:
+\begin{align}
+\expect{\sigma_z}_S
+&=\frac12
+(\bra{ud}-\bra{du})\sigma_z
+(\ket{ud}-\ket{du})\\
+&=\frac12
+(\bra{ud}-\bra{du})
+(\ket{ud}+\ket{du})\\
+&=0.
+\end{align}
+Với \(\sigma_x\),
+\begin{equation}
+\sigma_x\ket{S}
+=\frac{\ket{dd}-\ket{uu}}{\sqrt2},
+\end{equation}
+trạng thái này trực giao với \(\ket{S}\), nên \(\expect{\sigma_x}_S=0\). Các pha do \(\sigma_y\) cung cấp không làm thay đổi tính trực giao đó, do đó
+\begin{equation}
+\expect{\sigma_x}_S
+=\expect{\sigma_y}_S
+=\expect{\sigma_z}_S=0.
+\label{eq:l6-zero-local-sigma}
+\end{equation}
+Theo đối xứng,
+\begin{equation}
+\expect{\tau_x}_S
+=\expect{\tau_y}_S
+=\expect{\tau_z}_S=0.
+\label{eq:l6-zero-local-tau}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_08.png}
+\caption{Bảng ghi lại các giá trị trung bình spin cục bộ triệt tiêu và phép lật theo thành phần \(y\) được dùng để hoàn tất phép kiểm tra.}
+\lectureframe{01:14:20}
+\end{figure}
+
+Toàn bộ trạng thái hai-spin là thuần và được biết hoàn toàn, nhưng mỗi phần lại không phân cực cục bộ. Vì không có trạng thái một-spin thuần nào có vectơ Bloch bằng 0, \(\ket{S}\) không thể là một trạng thái tích.
+
+\begin{classroomqa}
+\audiencequestion{Liệu một trạng thái tích thông thường vẫn có một hướng mà theo đó độ phân cực cục bộ khác không?}
+\lecturerresponse{Có. Chứng minh cho một spin áp dụng cho thừa số đang xét, còn thừa số kia chỉ đứng ngoài cuộc. Vì vậy, mỗi thừa số của một trạng thái tích thuần đều có một véc-tơ Bloch đơn vị. Trạng thái singlet không thỏa mãn tính chất của trạng thái tích này đối với cả hai spin.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Làm thế nào có thể chuẩn bị hai spin ở trạng thái singlet?}
+\lecturerresponse{Một liên kết ưu tiên sự phản song song có thể khiến singlet trở thành trạng thái năng lượng thấp nhất. Đưa hai spin vào tương tác và để cặp đó mất năng lượng vào môi trường xung quanh; nó có thể thư giãn về singlet. Mệnh đề này phụ thuộc vào tương tác. Đối với Hamiltonian phản sắt từ đẳng hướng \(H_{\rm int}=J\,\bm\sigma\cdot\bm\tau\) với \(J>0\), singlet nằm dưới ba trạng thái triplet.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Quá trình thư giãn đó mất bao lâu?}
+\lecturerresponse{Thang thời gian phụ thuộc vào khoảng cách giữa hai spin, độ mạnh của liên kết tương hỗ giữa chúng, mômen từ của chúng, và sự ghép cặp của chúng với môi trường điện từ mang năng lượng đi. Liên kết mạnh hơn nói chung có nghĩa là thư giãn nhanh hơn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Tại sao tổ hợp phản đối xứng có thể có năng lượng thấp hơn tổ hợp đối xứng?}
+\lecturerresponse{Đối với hai hạt spin-\(\tfrac12\), trạng thái phản đối xứng có tổng spin bằng 0, còn ba trạng thái đối xứng tạo thành một bộ ba có tổng spin bằng 1. Một tương tác tỉ lệ với \(+\bm\sigma\cdot\bm\tau\) gán trị riêng \(-3\) cho singlet và \(+1\) cho triplet, nên hệ số ghép dương đặt singlet thấp hơn. Những Hamiltonian khác không nhất thiết sắp thứ tự các mức theo cùng cách ấy.}
+\end{classroomqa}
+
+\subsection{Cùng một trạng thái trong mọi cơ sở spin}
+
+Sự vướng víu không bị loại bỏ bằng cách chọn một cơ sở cục bộ thuận tiện hơn. Một độ đo độc lập với cơ sở, sẽ được phát triển sau, là entropy vướng víu. Singlet biểu lộ một đối xứng còn mạnh hơn. Với
+\begin{equation}
+\ket{u}=\frac{\ket{R}+\ket{L}}{\sqrt2},
+\qquad
+\ket{d}=\frac{\ket{R}-\ket{L}}{\sqrt2},
+\end{equation}
+thay vào Phương trình~\eqref{eq:l6-singlet} ta được
+\begin{equation}
+\ket{S}
+=\frac{\ket{LR}-\ket{RL}}{\sqrt2}.
+\label{eq:l6-singlet-x-basis}
+\end{equation}
+Trong mọi cơ sở spin trực chuẩn chung \(\{\ket{\rm in},\ket{\rm out}\}\),
+\begin{equation}
+\ket{S}
+=\frac{\ket{{\rm in}\,{\rm out}}-\ket{{\rm out}\,{\rm in}}}{\sqrt2},
+\label{eq:l6-singlet-any-basis}
+\end{equation}
+chỉ khác một pha toàn cục không quan trọng. Ba trạng thái triplet trộn lẫn với nhau dưới một phép quay chung; không gian con singlet một chiều chỉ có thể tái tạo chính nó.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_09.png}
+\caption{Mô thức phản đối xứng vẫn được giữ nguyên khi đổi từ lên-xuống sang phải-trái và các cơ sở spin chung khác.}
+\lectureframe{01:21:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Sự vướng víu có chỉ là một tạo tác của cơ sở dùng để viết trạng thái không?}
+\lecturerresponse{Không. Các phép đổi cơ sở cục bộ làm thay đổi các hệ số nhưng không làm thay đổi việc trạng thái có phân tích thành nhân tử hay không, và entropy vướng víu định lượng sự kiện bất biến đó. Đối với singlet, các phép quay chung làm cho tính bất biến này đặc biệt dễ thấy: dạng phản đối xứng được tái tạo trong mọi cơ sở spin.}
+\end{classroomqa}
+
+\section{Các đại lượng quan sát tương quan}
+
+Các giá trị trung bình cục bộ đều triệt tiêu, nên thông tin trong singlet phải nằm ở các đại lượng quan sát chung. Bắt đầu từ
+\begin{equation}
+\sigma_z\tau_z\ket{ud}=-\ket{ud},
+\qquad
+\sigma_z\tau_z\ket{du}=-\ket{du}.
+\end{equation}
+Do đó
+\begin{equation}
+\sigma_z\tau_z\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_z\tau_z}_S=-1.
+\label{eq:l6-zz-correlation}
+\end{equation}
+Kết quả này không chỉ đơn thuần là một giá trị trung bình: singlet là một trạng thái riêng của tích đó, nên các phép đo theo trục \(z\) luôn cho các dấu trái ngược.
+
+Cả hai toán tử \(x\) đều lật spin ở vị trí của mình:
+\begin{equation}
+\sigma_x\tau_x\ket{ud}=\ket{du},
+\qquad
+\sigma_x\tau_x\ket{du}=\ket{ud}.
+\end{equation}
+Sự hoán đổi hai hạng tử làm đảo dấu trạng thái phản đối xứng:
+\begin{equation}
+\sigma_x\tau_x\ket{S}=-\ket{S},
+\qquad
+\expect{\sigma_x\tau_x}_S=-1.
+\end{equation}
+Hai pha từ các toán tử \(y\) triệt tiêu theo cùng cách đó, cho
+\begin{equation}
+\expect{\sigma_y\tau_y}_S=-1.
+\end{equation}
+Ngược lại, các thành phần Descartes không bằng nhau có kỳ vọng bằng 0. Chẳng hạn,
+\begin{equation}
+\sigma_x\tau_z\ket{S}
+=-\frac{\ket{dd}+\ket{uu}}{\sqrt2},
+\qquad
+\expect{\sigma_x\tau_z}_S=0.
+\end{equation}
+Tất cả các kết quả này được tóm tắt bởi
+\begin{equation}
+\expect{\sigma_m\tau_n}_S=-\delta_{mn},
+\qquad
+\expect{(\bm\sigma\cdot\bm a)(\bm\tau\cdot\bm b)}_S
+=-\bm a\cdot\bm b.
+\label{eq:l6-singlet-correlation-tensor}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_06_figure_10.png}
+\caption{Phép tính tương quan ghi lại \(\expect{\sigma_x\tau_x}=-1\) và kết quả khác trục \(\expect{\sigma_x\tau_z}=0\).}
+\lectureframe{01:32:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Về mặt vật lý, tích của hai đại lượng quan sát có nghĩa là gì? Có phải một phép đo được thực hiện sau phép kia không?}
+\lecturerresponse{Nói chung, một tích Hermite là một đại lượng quan sát khác trên không gian hợp thành. Ở đây mọi \(\sigma_m\) đều giao hoán với mọi \(\tau_n\), nên hai thành phần cục bộ có thể được đo đồng thời và các kết quả số của chúng được nhân với nhau. Toán tử tích gói ghém kết quả chung đó; không cần thứ tự thời gian nào.}
+\end{classroomqa}
+
+Đối với một trạng thái tích, các giá trị trung bình chung phân tích thành tích:
+\begin{equation}
+\expect{\sigma_m\tau_n}_{\rm prod}
+=\expect{\sigma_m}_{\sigma}\expect{\tau_n}_{\tau}.
+\end{equation}
+Singlet vi phạm sự phân tích này một cách cực đại. Mỗi thừa số ở vế phải sẽ bằng 0, trong khi một tích cùng trục ở vế trái là \(-1\). Xét riêng lẻ thì các spin hoàn toàn ngẫu nhiên; xét chung thì các thành phần bằng nhau chắc chắn đối nhau.
+
+\begin{classroomqa}
+\audiencequestion{Có phải mọi tương tác giữa hai spin đều tạo ra sự vướng víu không?}
+\lecturerresponse{Một liên kết tổng quát có thể làm vướng víu một trạng thái ban đầu ở dạng nhân tử, và nhiều tương tác thông thường quả thật làm như vậy. Điều đó không phải theo nghĩa đen là tất yếu: một trạng thái riêng tích được chọn đặc biệt có thể chỉ thu thêm một pha, và một Hamiltonian thuần cục bộ không thể làm vướng víu các thừa số. Điều quan trọng là một liên kết không tầm thường tác dụng lên một trạng thái mà nó không bảo toàn ở dạng tích.}
+\end{classroomqa}
+
+\section{Từ tương quan đến câu hỏi của Bell}
+
+Bản thân phản tương quan hoàn hảo chưa phải là nghịch lý. Hãy tưởng tượng bỏ một đồng penny và một đồng dime vào túi, đưa một đồng xu mà không cho nhìn cho Alice và đồng kia cho Bob, rồi gửi họ ra xa nhau. Khi Alice nhìn xem mình có đồng nào, cô ấy lập tức biết đồng của Bob. Tương quan đã được thiết lập khi hai đồng còn ở cùng nhau; việc biết một kết quả không gửi tín hiệu nào tới vị trí kia.
+
+Singlet có chung đặc trưng sơ đẳng đó nhưng thêm một tự do then chốt: Alice và Bob có thể chọn bất kỳ hướng đo nào, và cơ học lượng tử dự đoán tương quan biến thiên liên tục \(-\bm a\cdot\bm b\). Định lý Bell hỏi liệu mọi tương quan ấy có thể phát sinh từ các chỉ dẫn cổ điển cục bộ mà các hạt mang sẵn từ trước hay không.
+
+\begin{classroomqa}
+\audiencequestion{Đây có phải là trạng thái được dùng trong định lý Bell không?}
+\lecturerresponse{Đúng. Các lập luận kiểu Bell dùng các cặp vướng víu như singlet, chứ không dùng một trạng thái tích xác định \(\ket{ud}\). Sự phân biệt này quan trọng vì một trạng thái tích cung cấp các mô tả cục bộ tách rời, còn singlet mang một cấu trúc tương quan bất khả phân trên mọi cơ sở chung.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Tại sao gọi phản tương quan là có tính thống kê nếu các kết quả cùng trục luôn đối nhau?}
+\lecturerresponse{Mỗi kết quả cục bộ là ngẫu nhiên: Alice không thể dự đoán mình sẽ thu được \(+1\) hay \(-1\). Quan hệ điều kiện là chính xác: một khi đã biết một kết quả cùng trục, kết quả kia được cố định là đối dấu. Tương quan nói về phân bố chung, chứ không phải về độ bất định của tích cùng trục.}
+\end{classroomqa}
+
+Một cách hữu ích để làm sắc nét vấn đề là thông qua mô phỏng. Một máy tính cổ điển có thể bắt chước mọi thí nghiệm trên một spin: lưu trạng thái của nó, cho nó tiến hóa theo phương trình Schr\"odinger, tính các xác suất được yêu cầu, và dùng bộ sinh số ngẫu nhiên để chọn một kết quả. Các phép đo lặp lại và sự tiến động từ đều có thể được tái tạo.
+
+Bây giờ hãy chia một cặp vướng víu cho hai máy tính cổ điển. Cho phép các máy tính tương tác trong khi cặp được chuẩn bị, rồi ngắt kết nối chúng và chọn các hướng đo một cách độc lập ở những vị trí xa nhau. Không cặp chương trình cổ điển cục bộ tách biệt nào, ngay cả khi có ngẫu nhiên dùng chung được ấn định từ trước, có thể tái tạo các tương quan lượng tử cho mọi lựa chọn hướng. Một mô phỏng cổ điển toàn cục là có thể, nhưng nó phải tiếp tục có quyền truy cập vào trạng thái chung hoặc phối hợp hai phía theo một cách khác mà không phải là mô hình biến ẩn cục bộ.
+
+Sự thất bại này của việc ghi sổ cổ điển cục bộ không cung cấp một kênh liên lạc nhanh hơn ánh sáng. Các kết quả cục bộ của Alice vẫn ngẫu nhiên, nên cô ấy không thể điều khiển một thông điệp để Bob đọc được nếu không về sau so sánh các bản ghi của họ. Thuật ngữ xoay quanh tính phi định xứ có khác nhau, nhưng sự phân biệt về mặt thao tác là vững chắc: các tương quan Bell bác bỏ các lời giải thích cổ điển cục bộ đồng thời bảo toàn tính không truyền tín hiệu.
+
+Vì thế, cấu trúc trạng thái hợp thành đã tạo ra một điều gì đó thực sự mới. Các tích tensor bảo toàn cục bộ vật lý một-spin cũ, nhưng các vectơ tổng quát của chúng không thể được chia thành các trạng thái riêng rẽ. Trong singlet, mọi phân cực cục bộ đều triệt tiêu trong khi các thành phần spin chung mang phản tương quan hoàn hảo, độc lập với cơ sở. Bước tiếp theo là biến cấu trúc này thành phép kiểm định định lượng của Bell đối với lối suy luận cổ điển.

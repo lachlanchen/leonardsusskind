@@ -1,0 +1,535 @@
+\chapter{Đo lường, tiến hóa unita và động lực học lượng tử}
+
+\lectureoverview{Trước hết, ta tập hợp các nguyên lý đo lường đã được dùng: các đại lượng quan sát được là các toán tử Hermite, các trị riêng của chúng là những kết quả khả dĩ, các trạng thái phân biệt được là trực giao, và quy tắc Born gán xác suất. Vấn đề mới là động lực học. Tính khả nghịch đòi hỏi một sự tiến hóa tuyến tính chung bảo toàn các độ chồng lấp; điều này khiến toán tử tiến hóa là unita và bộ sinh vô cùng bé của nó là Hermite. Bộ sinh ấy là Hamiltonian, và tác dụng của nó cho phương trình Schr\"odinger phụ thuộc thời gian. Sau đó, ta suy ra công thức giá trị kỳ vọng, phương trình giao hoán tử cho các giá trị trung bình, mối liên hệ của nó với các ngoặc Poisson cổ điển, và sự bảo toàn năng lượng trung bình.}
+
+Tạm thời gác hệ spin sang một bên. Ta sẽ quay lại với nó sau khi cấu trúc tổng quát đã được thiết lập. Các nguyên lý dưới đây không được trình bày như một tập tối thiểu độc lập. Một số củng cố hoặc hàm ý một phần những nguyên lý khác, nhưng việc nêu riêng chúng giúp thấy nội dung vật lý của chúng dễ hơn.
+
+\section{Một phép đo có thể trả về điều gì}
+
+Một \emph{đại lượng quan sát được} là thứ có thể được đo. Từ đã thành thông lệ này hơi trang trọng hơn mức cần thiết; \emph{đo được} cũng đã đủ dùng. Với mỗi đại lượng quan sát được, ta gắn một toán tử Hermite. Tạm thời ký hiệu một toán tử như vậy bởi \(L\):
+\begin{equation}
+L^\dagger=L.
+\end{equation}
+Không phải mọi toán tử tuyến tính đều là Hermite. Ngược lại, việc một toán tử Hermite cụ thể có thể được đo bằng các vật liệu và thiết bị hiện có hay không có thể là một câu hỏi thực nghiệm khó. Dù vậy, quy tắc làm việc trừu tượng này khá rộng rãi: một toán tử Hermite biểu diễn một đại lượng quan sát được khả dĩ, ngay cả khi phép đo thực tế của nó vẫn chưa được phát minh.
+
+Nếu
+\begin{equation}
+L\ket{\lambda}=\lambda\ket{\lambda},
+\end{equation}
+thì \(\lambda\) là một kết quả số khả dĩ của phép đo \(L\). Ta dùng cùng một ký hiệu để gắn nhãn cho trị riêng và vectơ riêng tương ứng của nó. Ký hiệu ket phân biệt hai thứ ấy: \(\lambda\) là một con số, còn \(\ket{\lambda}\) là một trạng thái.
+
+Tại sao là toán tử Hermite? Một thiết bị sơ cấp trả về các số thực. Nếu một dụng cụ có vẻ như báo về một số phức, thì thực ra nó đang báo về hai đại lượng thực độc lập. Vì vậy, các trị riêng quan sát được phải là thực. Hơn nữa, các trạng thái gắn với những kết quả xác định khác nhau phải phân biệt được về mặt vật lý và do đó phải trực giao. Trong bối cảnh hữu hạn chiều dùng ở đây, một toán tử tuyến tính có một cơ sở riêng trực chuẩn đầy đủ và các trị riêng thực thì là Hermite. Vì thế, các phát biểu vật lý và cấu trúc Hermite khớp với nhau.
+
+\subsection{Khả năng phân biệt là tính trực giao}
+
+Cụm \emph{phân biệt được về mặt vật lý} có một nghĩa thao tác. Giả sử một spin được chuẩn bị hoặc là hướng lên hoặc là hướng xuống. Một phép đo theo trục \(z\) tách hai khả năng ấy mà không nhập nhằng: lên cho \(+1\), xuống cho \(-1\). Tương tự, trái và phải có thể được phân biệt bằng phép đo theo trục \(x\).
+
+Bây giờ giả sử phép chuẩn bị là либо lên hoặc phải. Một phép đo \(z\) cho \(+1\) với chắc chắn đối với trạng thái lên, nhưng trạng thái phải cũng cho \(+1\) với xác suất khác không. Một phép đo \(x\) chỉ đơn thuần đảo ngược sự bất đối xứng đó. Nghiêng thiết bị đi \(45^\circ\) cũng không loại bỏ sự chồng lấp giữa các phân bố kết quả. Không có định hướng nào cho ra một kết quả luôn luôn phân biệt được hai cách chuẩn bị ấy.
+
+\begin{definition}
+Hai trạng thái được phân biệt về mặt vật lý khi một thí nghiệm nào đó, hoặc một tập hợp thí nghiệm, có thể xác định một cách không mơ hồ đã dùng cách chuẩn bị nào.
+\end{definition}
+
+Cơ học lượng tử biểu diễn tính phân biệt hoàn toàn bằng ngôn ngữ hình học:
+\begin{equation}
+\text{distinguishable states}
+\quad\Longrightarrow\quad
+\text{orthogonal vectors}.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Liệu một trục đo khác có thể phân biệt một trạng thái lên với một trạng thái phải không?}
+\lecturerresponse{Không. Đo dọc theo \(z\) hoặc \(x\) đôi khi có thể nhận ra cách chuẩn bị, nhưng ít nhất vẫn có một kết quả tương thích với cả hai. Một trục trung gian cũng để lại các xác suất chồng lấp. Trở ngại không phải do chọn thiết bị kém; hai vectơ trạng thái không trực giao.}
+\end{classroomqa}
+
+\section{Quy tắc Born}
+
+Các trị riêng cho biết điều gì có thể xảy ra, nhưng không cho biết điều đó xảy ra thường xuyên đến mức nào. Quy tắc xác suất cung cấp nội dung tiên đoán. Nếu một hệ đã chuẩn hóa được chuẩn bị ở \(\ket{A}\), và một vectơ riêng đã chuẩn hóa \(\ket{\lambda}\) thuộc về đại lượng quan sát được đang được đo \(L\), thì
+\begin{equation}
+P(\lambda)=\left|\braket{\lambda}{A}\right|^2.
+\label{eq:l4-born-rule}
+\end{equation}
+Độ chồng lấp \(\braket{\lambda}{A}\) là một \emph{biên độ xác suất}. Nói chung nó là số phức, nên bản thân nó không thể là một xác suất. Bình phương môđun của nó là số thực và không âm.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_01.png}
+\caption{Quy tắc Born được viết cạnh các nguyên lý đo lường: xác suất là bình phương môđun của một độ chồng lấp.}
+\lectureframe{00:12:40}
+\end{figure}
+
+Chọn một cơ sở riêng trực chuẩn của \(L\) và khai triển
+\begin{equation}
+\ket{A}=\sum_i \alpha_i\ket{\lambda_i},
+\qquad
+\alpha_i=\braket{\lambda_i}{A}.
+\end{equation}
+Khi đó quy tắc Born trở thành
+\begin{equation}
+P(\lambda_i)=|\alpha_i|^2.
+\end{equation}
+Sự chuẩn hóa khi ấy cho
+\begin{equation}
+\sum_i P(\lambda_i)=\sum_i|\alpha_i|^2=1.
+\end{equation}
+Chỉ riêng các yêu cầu tính dương và chuẩn hóa không suy ra quy tắc Born, nhưng chúng cho thấy vì sao bình phương môđun lại phù hợp với lý thuyết xác suất một cách tự nhiên đến vậy. Sau cùng, quy tắc ấy được kiểm nghiệm bằng thực nghiệm.
+
+\begin{classroomqa}
+\audiencequestion{Có phải bình phương môđun còn cần thiết để mọi xác suất cộng lại bằng một không?}
+\lecturerresponse{Đối với một trạng thái đã chuẩn hóa được khai triển theo một cơ sở trực chuẩn, các biên độ bình phương quả thật cộng lại bằng một. Vì thế, tính dương và chuẩn hóa phù hợp hoàn toàn với quy tắc Born. Ở đây, việc nên xem phát biểu nào là đi trước về mặt logic kém quan trọng hơn sự nhất quán lẫn nhau của chúng; thực nghiệm quyết định quy tắc xác suất.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao một trị riêng, vốn là một con số, lại được viết trong một ket?}
+\lecturerresponse{Ký hiệu \(\ket{\lambda}\) có nghĩa là vectơ riêng gắn với trị riêng số \(\lambda\). Một ký hiệu tỉ mỉ hơn có thể đưa vào một nhãn khác, nhưng quá nhiều chỉ số sớm muộn cũng làm mờ phép tính. Ký hiệu ket giữ cho con số và vectơ tách biệt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nguyên lý nào biến nhiều kết quả khả dĩ thành một kết quả thực sự?}
+\lecturerresponse{Quy tắc Born gán các xác suất. Nếu trạng thái được chuẩn bị đã là một vectơ riêng của \(L\), thì kết quả tương ứng của nó có xác suất bằng một. Với một chồng chập, ta thu được một kết quả với các xác suất trong Phương trình~\eqref{eq:l4-born-rule}. Quy tắc cập nhật trạng thái hay quy tắc sụp đổ đi kèm là một vấn đề đo lường tiếp theo; nó sẽ được xét lại sau khi đã có rối lượng tử.}
+\end{classroomqa}
+
+\subsection{Các kết quả suy biến}
+
+Một trị riêng có thể thuộc về nhiều hơn một vectơ riêng độc lập. Giả sử
+\begin{align}
+L\ket{\lambda,1}&=\lambda\ket{\lambda,1},\\
+L\ket{\lambda,2}&=\lambda\ket{\lambda,2}.
+\end{align}
+Mọi tổ hợp tuyến tính trong không gian con do chúng sinh ra cũng là một vectơ riêng với trị riêng \(\lambda\):
+\begin{equation}
+L\bigl(\alpha\ket{\lambda,1}+\beta\ket{\lambda,2}\bigr)
+=
+\lambda\bigl(\alpha\ket{\lambda,1}+\beta\ket{\lambda,2}\bigr).
+\end{equation}
+Sự tự do này cho phép ta chọn một cơ sở trực chuẩn bên trong không gian riêng suy biến. Nếu nhãn \(a\) chạy trên cơ sở ấy, thì xác suất của kết quả số \(\lambda\) là tổng của các kênh trực giao loại trừ nhau tương ứng với nó:
+\begin{equation}
+P(\lambda)=\sum_a\left|\braket{\lambda,a}{A}\right|^2.
+\label{eq:l4-degenerate-born}
+\end{equation}
+Tương đương, nếu \(P_\lambda\) là toán tử chiếu lên toàn bộ không gian riêng đó, thì \(P(\lambda)=\bra{A}P_\lambda\ket{A}\). Ký hiệu toán tử chiếu thì gọn; Phương trình~\eqref{eq:l4-degenerate-born} hiển thị trực tiếp phép cộng xác suất.
+
+\begin{classroomqa}
+\audiencequestion{Nếu trạng thái được chuẩn bị chồng lấp với nhiều vectơ riêng, hoặc nhiều vectơ riêng có cùng một trị riêng, thì sao?}
+\lecturerresponse{Đối với các trị riêng khác nhau, mỗi độ chồng lấp cho xác suất của kết quả riêng của nó. Đối với nhiều vectơ riêng trực giao có cùng một trị riêng, hãy bình phương các độ chồng lấp rồi cộng chúng lại. Nếu các vectơ ban đầu được chọn trong không gian con suy biến không trực giao, trước hết hãy thay chúng bằng một cơ sở trực chuẩn; tổng xác suất là độc lập với cơ sở.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có thể thu được một câu trả lời không mơ hồ từ một spin có cách chuẩn bị hoàn toàn chưa biết không?}
+\lecturerresponse{Không thể nếu chỉ có một mẫu đơn lẻ tùy ý. Nếu không có ràng buộc về cách nó được chuẩn bị, thì không có phép đo đơn lẻ nào xác định một trạng thái lượng tử chưa biết một cách không mơ hồ. Thông tin về phép chuẩn bị chỉ rõ các khả năng mà giữa chúng một phép đo có thể phân biệt.}
+\end{classroomqa}
+
+\section{Câu hỏi mới: các trạng thái thay đổi như thế nào}
+
+Các nguyên lý trước đó xác định trạng thái và phép đo. Động lực học hỏi điều gì xảy ra giữa thời điểm này và thời điểm khác. Sự tương tự cổ điển là hữu ích. Một đồng xu hai trạng thái có thể giữ nguyên ở mọi nhịp, hoặc có thể luân phiên ngửa, sấp, ngửa, sấp. Một con xúc xắc sáu mặt cho phép nhiều quy tắc cập nhật hơn, và một không gian trạng thái liên tục cho phép vô số quy tắc. Một định luật động lực ánh xạ trạng thái hiện tại sang trạng thái kế tiếp.
+
+Một định luật cổ điển thỏa đáng là tất định và khả nghịch. Các trạng thái khác nhau không hợp lại thành một trạng thái, vì nếu có thì hiện tại sẽ không còn quyết định được quá khứ. Sự bảo toàn thông tin này đôi khi được gọi là \emph{định luật âm một}: nó có trước các định luật bảo toàn quen thuộc hơn.
+
+Phiên bản lượng tử bắt đầu với một vectơ trạng thái \(\ket{\psi(t)}\), được xem tường minh là một hàm của thời gian. Hãy đặt ra một toán tử phát triển theo thời gian tuyến tính duy nhất \(U(t)\) sao cho
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\label{eq:l4-time-development}
+\end{equation}
+Cùng một \(U(t)\) tác dụng lên mọi trạng thái đầu của hệ. Nó không được chọn lại từ đầu theo từng vectơ đầu vào, và tác dụng của nó là tuyến tính. Có thể hình dung những định luật tổng quát hơn, phi tuyến hoặc phụ thuộc trạng thái, nhưng chúng nhanh chóng xung đột với cấu trúc xác suất, nhân quả và hệ hợp thành của cơ học lượng tử.
+
+\subsection{Tính khả nghịch bảo toàn các độ chồng lấp}
+
+Cho một trạng thái đầu thứ hai tiến hóa theo cùng định luật:
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)}.
+\end{equation}
+Nếu hai cách chuẩn bị phân biệt được ở ban đầu, thì chúng phải vẫn phân biệt được. Do đó
+\begin{equation}
+\braket{\psi(0)}{\phi(0)}=0
+\quad\Longrightarrow\quad
+\braket{\psi(t)}{\phi(t)}=0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_02.png}
+\caption{Hai trạng thái tiến hóa dưới cùng một \(U(t)\); tính trực giao ban đầu vẫn là tính trực giao.}
+\lectureframe{00:34:43}
+\end{figure}
+
+Việc bảo toàn các trạng thái đã chuẩn hóa và tính trực giao đủ mạnh để bảo toàn mọi tích vô hướng. Để thấy cơ chế đó, hãy khai triển hai vectơ bất kỳ theo một cơ sở trực chuẩn. Các vectơ cơ sở vẫn trực chuẩn dưới phép tiến hóa, nên các hệ số tái tạo cùng một độ chồng lấp ở mọi thời điểm:
+\begin{equation}
+\braket{\psi(t)}{\phi(t)}=\braket{\psi(0)}{\phi(0)}.
+\label{eq:l4-overlap-conservation}
+\end{equation}
+Vì vậy, không chỉ tính phân biệt hoàn toàn mà cả toàn bộ mức độ tương tự giữa hai trạng thái đều được bảo toàn.
+
+Bra tương ứng với Phương trình~\eqref{eq:l4-time-development} thu được bằng phép liên hợp Hermite:
+\begin{equation}
+\bra{\psi(t)}=\bra{\psi(0)}U^\dagger(t).
+\end{equation}
+Thế các biểu thức tiến hóa của bra và ket vào Phương trình~\eqref{eq:l4-overlap-conservation} thu được
+\begin{equation}
+\bra{\psi(0)}U^\dagger(t)U(t)\ket{\phi(0)}
+=
+\braket{\psi(0)}{\phi(0)}
+\end{equation}
+đúng với mọi cặp vectơ đầu. Nếu một toán tử có cùng các phần tử ma trận như toán tử đồng nhất đối với mọi cặp vectơ, thì nó chính là toán tử đồng nhất. Do đó
+\begin{equation}
+U^\dagger(t)U(t)=I.
+\label{eq:l4-unitarity}
+\end{equation}
+Một toán tử thỏa mãn Phương trình~\eqref{eq:l4-unitarity} là \emph{unita}. Trong bối cảnh hữu hạn chiều,
+\begin{equation}
+U^\dagger(t)=U^{-1}(t),
+\end{equation}
+nên ta có thể chạy ngược sự tiến hóa.
+
+\begin{classroomqa}
+\audiencequestion{Liệu \(\Phi\) viết hoa và viết thường ở đây có chỉ những loại trạng thái khác nhau không?}
+\lecturerresponse{Không. Đó chỉ là chữ viết tay không nhất quán. Ta sẽ dùng \(\ket{\phi}\) một cách nhất quán; toán học phân biệt các trạng thái bằng nhãn và giá trị của chúng, chứ không bằng việc vô tình viết hoa.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có thể hiểu \(U^\dagger U=I\) như nói rằng một thừa số là nghịch đảo của thừa số kia không?}
+\lecturerresponse{Có. Một toán tử unita có nghịch đảo là \(U^{-1}=U^\dagger\). Đây là biểu thức đại số của sự tiến hóa khả nghịch, bảo toàn độ chồng lấp.}
+\end{classroomqa}
+
+\section{Thời gian vô cùng bé và Hamiltonian}
+
+Khi thời gian trôi qua bằng không thì không có gì thay đổi, nên \(U(0)=I\). Với một khoảng thời gian rất nhỏ \(\epsilon\), \(U(\epsilon)\) phải gần với toán tử đồng nhất. Trong hệ đơn vị tạm thời lấy \(\hbar=1\), viết
+\begin{equation}
+U(\epsilon)=I-i\epsilon H+O(\epsilon^2).
+\label{eq:l4-small-u}
+\end{equation}
+Dấu trừ và thừa số \(i\) lúc đầu chỉ là quy ước; nếu chưa biết \(H\) là gì, ta có thể hấp thụ chúng vào định nghĩa của nó. Ích lợi của chúng lộ ra khi áp đặt tính unita. Lấy liên hợp Hermite ta được
+\begin{equation}
+U^\dagger(\epsilon)=I+i\epsilon H^\dagger+O(\epsilon^2).
+\end{equation}
+Khi đó
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon)\\
+&=\bigl(I+i\epsilon H^\dagger\bigr)
+  \bigl(I-i\epsilon H\bigr)+O(\epsilon^2)\\
+&=I+i\epsilon(H^\dagger-H)+O(\epsilon^2).
+\end{align}
+Số hạng bậc một phải triệt tiêu:
+\begin{equation}
+H^\dagger=H.
+\label{eq:l4-h-hermitian}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_03.png}
+\caption{Phép tính unita đến bậc một buộc bộ sinh vô cùng bé phải là Hermite.}
+\lectureframe{00:43:38}
+\end{figure}
+
+Chữ \(H\) không phải viết tắt của Hermitian mà của \emph{Hamiltonian}. Vì nó là Hermitian nên nó biểu diễn một đại lượng quan sát được. Nó được đồng nhất với năng lượng và, ở mức cấu trúc hơn, với bộ sinh của các phép tịnh tiến theo thời gian. Sự đồng nhất này không chỉ là một cái tên: trong những hệ có giới hạn cổ điển đã biết, \(H\) lượng tử phải tái tạo động lực học của Hamiltonian cổ điển. Tính đối xứng, các bậc tự do, phán đoán vật lý và sau cùng là thực nghiệm quyết định toán tử Hermitian nào là Hamiltonian của một hệ cụ thể.
+
+\begin{classroomqa}
+\audiencequestion{Có thể dùng bất kỳ toán tử Hermitian nào cho \(H\) được không? Điều gì chọn ra toán tử thực sự?}
+\lecturerresponse{Phép suy ra cho đến đây cho phép bất kỳ toán tử Hermitian nào trên không gian Hilbert của hệ. Vật lý chọn ra một toán tử được xây dựng từ các bậc tự do của chính hệ đó. Với một spin, nó phải được xây dựng từ các toán tử spin và các trường ngoài. Đối xứng và các tương tác đã biết thu hẹp các khả năng; thực nghiệm cố định các hằng số còn lại và đôi khi cả chính dạng của nó.}
+\end{classroomqa}
+
+Hamiltonian có thể phụ thuộc tường minh vào thời gian. Một từ trường có dòng điện đang được thay đổi là một ví dụ đơn giản. Nếu các tham số ngoài độc lập với thời gian, thì \(H\) không có phụ thuộc tường minh vào thời gian; đó là bất biến đối với tịnh tiến theo thời gian. Nếu các tham số bị điều khiển theo thời gian, thì năng lượng không nhất thiết được bảo toàn.
+
+\begin{classroomqa}
+\audiencequestion{Trong khai triển theo thời gian nhỏ, \(H\) là một hằng số hay phải là \(H(0)\)?}
+\lecturerresponse{Đối với một bài toán độc lập thời gian, \(H\) là cùng một toán tử ở mọi thời điểm. Nói tổng quát hơn, bước cục bộ bắt đầu tại thời điểm \(t\) chứa \(H(t)\). Ở đây phép suy ra trước hết xét trường hợp bất biến đối với tịnh tiến theo thời gian rồi sau đó mới lưu ý việc phụ thuộc tường minh vào thời gian làm thay đổi sự bảo toàn năng lượng như thế nào.}
+\end{classroomqa}
+
+\section{Phương trình Schr\"odinger phụ thuộc thời gian}
+
+Áp dụng phương trình~\eqref{eq:l4-small-u} cho trạng thái:
+\begin{equation}
+\ket{\psi(\epsilon)}=(I-i\epsilon H)\ket{\psi(0)}+O(\epsilon^2).
+\end{equation}
+Sắp xếp lại và chia cho \(\epsilon\),
+\begin{equation}
+\frac{\ket{\psi(\epsilon)}-\ket{\psi(0)}}{\epsilon}
+=-iH\ket{\psi(0)}+O(\epsilon).
+\label{eq:l4-difference-quotient}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_04.png}
+\caption{Phép cập nhật trạng thái vô cùng bé được viết lại thành một thương sai phân vectơ.}
+\lectureframe{00:51:42}
+\end{figure}
+
+Không có điều gì bí ẩn đặc biệt trong việc lấy đạo hàm của một vectơ. Hai vectơ có thể được trừ cho nhau, hiệu của chúng có thể được chia cho một số, và giới hạn xác định ra một vectơ khác. Thời điểm mốc được gọi là 0 ở trên có thể là bất kỳ thời điểm nào. Do đó, cho \(\epsilon\to0\) ta được
+\begin{equation}
+\boxed{\frac{d}{dt}\ket{\psi(t)}=-iH\ket{\psi(t)}}
+\qquad(\hbar=1).
+\label{eq:l4-schrodinger-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_05.png}
+\caption{Phép suy ra hoàn chỉnh trên bảng đạt tới phương trình Schr\"odinger phụ thuộc thời gian được đóng khung.}
+\lectureframe{00:56:11}
+\end{figure}
+
+Đây là phương trình Schr\"odinger phụ thuộc thời gian tổng quát. Phương trình vi phân quen thuộc cho hàm sóng của một hạt là một biểu diễn của phương trình vectơ trạng thái trừu tượng này. Để sử dụng nó, ta phải biết \(H\) và trạng thái ban đầu.
+
+Đối với một khoảng thời gian hữu hạn, hãy giải phương trình vi phân. Khi \(H\) độc lập với thời gian, việc lặp lại phép hợp thành các bước vô cùng bé cho
+\begin{equation}
+U(t)=e^{-iHt}
+\qquad(\hbar=1),
+\end{equation}
+đó là phiên bản chính xác của việc ghép tất cả các bước nhỏ lại với nhau. Các Hamiltonian phụ thuộc thời gian đòi hỏi phép sắp thứ tự theo thời gian, một sự tinh chỉnh mà ta tạm hoãn.
+
+\begin{classroomqa}
+\audiencequestion{Khai triển đã dùng một khoảng vô cùng bé. Điều gì xác định trạng thái sau một thời gian dài?}
+\lecturerresponse{Hãy áp dụng lặp đi lặp lại phép cập nhật vô cùng bé, hoặc tương đương là giải phương trình vi phân. Với \(H\) độc lập thời gian, tích của các bước nhỏ trở thành \(e^{-iHt/\hbar}\).}
+\end{classroomqa}
+
+\subsection{Khôi phục hằng số Planck}
+
+Phương trình trước đó dùng đơn vị trong đó \(\hbar=1\). Phân tích thứ nguyên cho thấy \(\hbar\) thuộc vào đâu. Đạo hàm có thứ nguyên nghịch đảo thời gian, còn \(H\) có thứ nguyên năng lượng. Vì \(\hbar\) có thứ nguyên năng lượng nhân thời gian,
+\begin{equation}
+\boxed{i\hbar\frac{d}{dt}\ket{\psi(t)}=H\ket{\psi(t)}}.
+\label{eq:l4-schrodinger}
+\end{equation}
+Tương đương, toán tử vô cùng bé là \(U(\epsilon)=I-i\epsilon H/\hbar+O(\epsilon^2)\), và sự tiến hóa hữu hạn độc lập thời gian là \(U(t)=e^{-iHt/\hbar}\).
+
+\begin{classroomqa}
+\audiencequestion{Chính xác thì hằng số Planck đi vào ở đâu?}
+\lecturerresponse{Hằng số Planck xuất hiện dưới một trong hai dạng tương đương
+\begin{align*}
+i\hbar\,\partial_t\ket{\psi}&=H\ket{\psi},\\
+\partial_t\ket{\psi}&=-\frac{i}{\hbar}H\ket{\psi}.
+\end{align*}
+Cả hai đều có thứ nguyên khớp nhau vì \(\hbar\) có đơn vị năng lượng nhân thời gian.}
+\end{classroomqa}
+
+Trạng thái tiến hóa một cách tất định theo Phương trình~\eqref{eq:l4-schrodinger}; các kết quả đo vẫn mang tính thống kê vì chúng được lấy mẫu từ trạng thái biến đổi liên tục theo quy tắc Born.
+
+\begin{classroomqa}
+\audiencequestion{Phép suy ra có phụ thuộc vào tính thuận nghịch không, và làm sao nó còn đúng qua một phép đo làm nhiễu trạng thái?}
+\lecturerresponse{Nó dựa vào sự tiến hóa tuyến tính và sự bảo toàn các tích vô hướng. Phương trình chi phối một hệ cô lập. Một thiết bị đo tương tác đủ mạnh để trở thành một phần của hệ vật lý và không thể bị bỏ qua. Hệ kết hợp gồm hệ và thiết bị phải được xử lý bằng cơ học lượng tử; chính sự vướng víu của chúng là điều phải được hiểu trước khi có thể phân tích phép đo.}
+\end{classroomqa}
+
+\section{Giá trị kỳ vọng nghĩa là giá trị trung bình}
+
+Để so sánh động lực học lượng tử với các phương trình cổ điển, ta cần giá trị trung bình của một đại lượng quan sát được. Tên gọi chuẩn \emph{giá trị kỳ vọng} có thể gây hiểu lầm. Với một biến công bằng chỉ nhận \(+1\) và \(-1\), giá trị trung bình là 0 mặc dù 0 không bao giờ được quan sát. Một phân bố đối xứng thậm chí có thể triệt tiêu trên cả một lân cận của giá trị trung bình của nó. Giá trị trung bình, trung vị và mốt trùng nhau đối với một số phân bố trơn, đơn đỉnh, nhưng không phải nói chung.
+
+Nếu \(L\) có thể cho các giá trị \(\lambda_i\) với các xác suất \(P(\lambda_i)\), hãy định nghĩa
+\begin{equation}
+\overline{\lambda}=\sum_i\lambda_iP(\lambda_i).
+\label{eq:l4-probability-average}
+\end{equation}
+Đây là moment bậc nhất của phân bố, không phải một lời hứa về kết quả của một lần thử.
+
+\begin{classroomqa}
+\audiencequestion{Chẳng phải giá trị xuất hiện thường xuyên nhất mới là điều ta nên kỳ vọng sao?}
+\lecturerresponse{Giá trị xuất hiện thường xuyên nhất là mốt; trung bình có trọng số là giá trị trung bình. Chúng có thể trùng nhau đối với một phân bố đơn giản, hẹp, nhưng một phân bố hai đỉnh có thể có giá trị trung bình nằm trong một vùng có xác suất về cơ bản bằng 0. Từ expectation nói tới giá trị trung bình toán học, không nhất thiết là kết quả đơn lẻ có khả năng xảy ra cao nhất.}
+\end{classroomqa}
+
+Các phép thử lặp lại nối kết giá trị trung bình toán học với dữ liệu. Dưới các giả thiết thông thường về tính độc lập và moment hữu hạn, các định luật số lớn phát biểu sự hội tụ theo xác suất của trung bình mẫu. Chúng không bảo đảm rằng mọi dãy hữu hạn đều nằm gần giá trị trung bình; một chuỗi rất dài bất thường gồm các kết quả spin giống hệt nhau vẫn có thể xảy ra, chỉ là khó xảy ra. Đây cũng chính là sự tinh tế thống kê ngăn cản định luật hai của nhiệt động lực học trở thành một cấm đoán vi mô không có ngoại lệ.
+
+\begin{classroomqa}
+\audiencequestion{Nếu một thí nghiệm spin công bằng tình cờ cho một triệu kết quả lên liên tiếp, thì giá trị trung bình của nó thực sự là lên sao?}
+\lecturerresponse{Trung bình mẫu của đúng chuỗi đó quả thực là lên. Giá trị kỳ vọng lý thuyết vẫn bằng 0. Khi số phép thử độc lập tăng lên, trung bình mẫu tiến đến trung bình lý thuyết với xác suất cao, nhưng lý thuyết xác suất không bao giờ loại trừ mọi dãy hữu hạn ngoại lệ.}
+\end{classroomqa}
+
+\subsection{Kẹp toán tử}
+
+Khai triển một trạng thái đã chuẩn hóa theo một cơ sở riêng trực chuẩn của \(L\):
+\begin{equation}
+\ket{A}=\sum_i\alpha_i\ket{\lambda_i},
+\qquad
+\bra{A}=\sum_j\alpha_j^*\bra{\lambda_j}.
+\end{equation}
+Quy tắc Born và Phương trình~\eqref{eq:l4-probability-average} cho
+\begin{equation}
+\overline{\lambda}=\sum_i\lambda_i|\alpha_i|^2.
+\end{equation}
+Bây giờ hãy tính
+\begin{align}
+\bra{A}L\ket{A}
+&=\sum_{i,j}\alpha_j^*\alpha_i
+  \bra{\lambda_j}L\ket{\lambda_i}\\
+&=\sum_{i,j}\alpha_j^*\alpha_i\lambda_i
+  \braket{\lambda_j}{\lambda_i}\\
+&=\sum_i\lambda_i|\alpha_i|^2.
+\end{align}
+Tổng kép rút gọn vì \(\braket{\lambda_j}{\lambda_i}=\delta_{ji}\). Do đó
+\begin{equation}
+\boxed{\expect{L}_A=\bra{A}L\ket{A}}.
+\label{eq:l4-expectation-sandwich}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_06.png}
+\caption{Khai triển theo cơ sở riêng rút giá trị trung bình xác suất về biểu thức kẹp toán tử \(\bra{A}L\ket{A}\).}
+\lectureframe{01:11:50}
+\end{figure}
+
+Ký hiệu ngoặc góc và dấu gạch trên đều sẽ được dùng cho các giá trị trung bình. Khi trạng thái tiến hóa,
+\begin{equation}
+\expect{L}_t=\bra{\psi(t)}L\ket{\psi(t)}.
+\end{equation}
+Chỉ số dưới chỉ nhằm nhắc rằng trạng thái, và vì thế cả giá trị trung bình, phụ thuộc vào thời gian. Trong thảo luận hiện tại theo biểu diễn Schr\"odinger, bản thân \(L\) là cố định trừ khi có nói rõ sự phụ thuộc tường minh vào thời gian.
+
+\begin{classroomqa}
+\audiencequestion{Có nên viết \(t\) ở ngoài ngoặc không, và dấu gạch trên có nghĩa là trung bình mẫu không?}
+\lecturerresponse{Cả hai ký hiệu đều có thể được chú thích để thể hiện sự phụ thuộc thời gian, nhưng ký hiệu lượng tử chuẩn là \(\expect{L}_t\), hoặc đơn giản là \(\expect{L}\) với thời gian được hiểu từ \(\ket{\psi(t)}\). Ở đây dấu gạch trên biểu thị giá trị trung bình xác suất lý thuyết, moment bậc nhất \(\sum_i\lambda_iP(\lambda_i)\), chứ không đặc biệt chỉ trung bình mẫu của dữ liệu hữu hạn.}
+\end{classroomqa}
+
+\section{Sự tiến hóa của các giá trị trung bình}
+
+Lấy đạo hàm biểu thức kẹp bằng quy tắc tích:
+\begin{equation}
+\frac{d}{dt}\expect{L}
+=
+\left(\frac{d}{dt}\bra{\psi}\right)L\ket{\psi}
++
+\bra{\psi}L\left(\frac{d}{dt}\ket{\psi}\right).
+\label{eq:l4-product-derivative}
+\end{equation}
+Trong đơn vị \(\hbar=1\), phương trình ket và liên hợp Hermitian của nó là
+\begin{align}
+\frac{d}{dt}\ket{\psi}&=-iH\ket{\psi},\\
+\frac{d}{dt}\bra{\psi}&=+i\bra{\psi}H.
+\end{align}
+Dấu của \(i\) đổi dưới phép liên hợp phức, và \(H^\dagger=H\). Thế vào Phương trình~\eqref{eq:l4-product-derivative} cho
+\begin{align}
+\frac{d}{dt}\expect{L}
+&=i\bra{\psi}HL\ket{\psi}
+-i\bra{\psi}LH\ket{\psi}\\
+&=i\bra{\psi}(HL-LH)\ket{\psi}.
+\end{align}
+
+Các toán tử không nhất thiết giao hoán. Thứ tự của chúng quan trọng cũng như thứ tự của các ma trận là quan trọng. Định nghĩa
+\begin{equation}
+[H,L]=HL-LH.
+\end{equation}
+Khi đó
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{L}=i\expect{[H,L]}}
+\qquad(\hbar=1).
+\label{eq:l4-average-evolution-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_07.png}
+\caption{Đạo hàm theo thời gian của một giá trị trung bình được chi phối bởi giá trị kỳ vọng của một giao hoán tử.}
+\lectureframe{01:22:22}
+\end{figure}
+
+Khôi phục thứ nguyên,
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{L}
+=\frac{i}{\hbar}\expect{[H,L]}
+=-\frac{i}{\hbar}\expect{[L,H]}}.
+\label{eq:l4-average-evolution}
+\end{equation}
+Nếu bản thân \(L\) phụ thuộc tường minh vào thời gian, thì phương trình tổng quát bao gồm thêm hạng \(\expect{\partial L/\partial t}\). Ở đây \(L\) là cố định.
+
+\begin{classroomqa}
+\audiencequestion{Dấu trong phương trình giao hoán tử thực sự là cộng \(i\) sao?}
+\lecturerresponse{Đúng vậy, với \([H,L]=HL-LH\), kết quả là \(+(i/\hbar)\expect{[H,L]}\). Đảo thứ tự trong giao hoán tử sẽ đảo dấu của nó, cho dạng tương đương \(-(i/\hbar)\expect{[L,H]}\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Phương trình bra được nhận bằng liên hợp phức hay liên hợp Hermitian, và vì sao đạo hàm vẫn ở bên trái?}
+\lecturerresponse{Đó là liên hợp Hermitian. Đạo hàm của một ket là một ket, và đối ngẫu của đạo hàm ấy là đạo hàm của bra tương ứng. Có thể thấy điều này trực tiếp từ thương sai phân: hiệu của các bra là các bra, cũng như hiệu của các ket là các ket. Ở đây thời gian là một tham số, không phải một toán tử mà thứ tự của nó phải bị đảo.}
+\end{classroomqa}
+
+\section{Bóng dáng cổ điển}
+
+Trong cơ học Hamilton cổ điển, một hàm không gian pha \(L(q,p)\) không có phụ thuộc tường minh vào thời gian thỏa mãn
+\begin{equation}
+\frac{dL}{dt}=\{L,H\}_{\mathrm{PB}},
+\label{eq:l4-poisson-evolution}
+\end{equation}
+trong đó \(\{\cdot,\cdot\}_{\mathrm{PB}}\) là ngoặc Poisson. Hãy so sánh điều này với Phương trình~\eqref{eq:l4-average-evolution}. Cả hai ngoặc đều phản đối xứng:
+\begin{align}
+\{L,H\}_{\mathrm{PB}}&=-\{H,L\}_{\mathrm{PB}},\\
+[L,H]&=-[H,L].
+\end{align}
+Cả hai cũng tác dụng như đạo hàm lên một tích:
+\begin{align}
+\{LM,H\}_{\mathrm{PB}}
+&=\{L,H\}_{\mathrm{PB}}M+L\{M,H\}_{\mathrm{PB}},\\
+[LM,H]
+&=L[M,H]+[L,H]M.
+\label{eq:l4-commutator-product}
+\end{align}
+Đồng nhất thức của giao hoán tử thu được bằng cách cộng rồi trừ \(LHM\):
+\begin{align}
+LMH-HLM
+&=(LMH-LHM)\\
+&\quad +(LHM-HLM)\\
+&=L(MH-HM)\\
+&\quad +(LH-HL)M.
+\end{align}
+
+Sự song song này gợi ra sự tương ứng
+\begin{equation}
+[A,B]
+\quad\longleftrightarrow\quad
+i\hbar\{A,B\}_{\mathrm{PB}},
+\label{eq:l4-dirac-correspondence}
+\end{equation}
+hoặc tương đương
+\begin{equation}
+\{A,B\}_{\mathrm{PB}}
+\quad\longleftrightarrow\quad
+-\frac{i}{\hbar}[A,B].
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_08.png}
+\caption{Phương trình ngoặc Poisson cổ điển và sự tương ứng giao hoán tử lượng tử, với \(\hbar\) được khôi phục.}
+\lectureframe{01:32:32}
+\end{figure}
+
+Dirac đã nhận ra mối liên hệ này và dùng nó như một con đường đi vào cơ học lượng tử. Tuy vậy, nó phải được xử lý như một sự tương ứng, chứ không phải một quy tắc thế phổ quát: có thể xuất hiện các nhập nhằng về thứ tự toán tử, và giới hạn cổ điển phải được suy ra từ động lực học lượng tử. Về mặt khái niệm, cơ học lượng tử có trước; cơ học cổ điển là phép xấp xỉ của nó đối với những trạng thái và thang đo thích hợp. Giao hoán tử đi trước ngoặc Poisson, dù phép loại suy lịch sử giúp ta phát hiện ra mối quan hệ này.
+
+\begin{classroomqa}
+\audiencequestion{Vì sao gọi \(H\) là năng lượng, và vì sao suy ra sự bảo toàn năng lượng trước khi áp đặt một nguyên lý đối xứng?}
+\lecturerresponse{Ở giai đoạn này \(H\), một cách nghiêm ngặt, là bộ sinh Hermitian của các phép tịnh tiến theo thời gian. Việc gọi nó là năng lượng là một sự đồng nhất vật lý phải được kiểm tra ở những nơi đã biết giới hạn cổ điển. Đối với những hệ lớn hoặc nặng trong các trạng thái thích hợp, các giá trị trung bình lượng tử phải tuân theo các phương trình cổ điển, và \(H\) lượng tử phải nối với Hamiltonian cổ điển. Phát biểu bảo toàn dưới đây giả sử rằng bộ sinh này không có phụ thuộc tường minh vào thời gian.}
+\end{classroomqa}
+
+\section{Năng lượng trung bình được bảo toàn}
+
+Lấy \(L=H\) trong Phương trình~\eqref{eq:l4-average-evolution}, với một Hamiltonian độc lập thời gian:
+\begin{equation}
+\frac{d}{dt}\expect{H}
+=\frac{i}{\hbar}\expect{[H,H]}.
+\end{equation}
+Mọi toán tử đều giao hoán với chính nó,
+\begin{equation}
+[H,H]=HH-HH=0,
+\end{equation}
+nên
+\begin{equation}
+\boxed{\frac{d}{dt}\expect{H}=0}.
+\label{eq:l4-energy-conservation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_04_figure_09.png}
+\caption{Sự bảo toàn năng lượng trung bình suy ra ngay lập tức vì Hamiltonian giao hoán với chính nó.}
+\lectureframe{01:39:30}
+\end{figure}
+
+Điều này chứng minh một mệnh đề có chủ ý khiêm tốn: năng lượng trung bình không đổi. Một khẳng định mạnh hơn về toàn bộ phân bố năng lượng sẽ suy ra từ cùng động lực học đó. Nếu \(H\) phụ thuộc tường minh vào thời gian, đạo hàm tường minh bổ sung ấy không nhất thiết triệt tiêu và hệ được dẫn động có thể trao đổi năng lượng với tác nhân làm thay đổi các tham số của nó.
+
+Vẫn còn 2 mạch vấn đề bỏ ngỏ. Phép tính xác suất spin theo một trục tùy ý vẫn còn chờ, và bài toán cập nhật trạng thái vẫn chưa được suy ra. Giữa các lần can thiệp, trạng thái của một hệ cô lập tiến hóa một cách unita. Trong một phép đo, hệ và thiết bị đo tương tác với nhau và trở nên vướng víu.
+
+\begin{classroomqa}
+\audiencequestion{Thế còn xác suất đã hứa đối với spin được đo theo một trục tùy ý thì sao?}
+\lecturerresponse{Phần động lực học tổng quát đã chiếm hết thời lượng hiện có. Phép tính spin vẫn là ứng dụng cụ thể tiếp theo và sẽ được tiếp tục sau khung cấu trúc này.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Làm sao các tiên đề có thể đầy đủ nếu không có tiên đề sụp đổ?}
+\lecturerresponse{Hiện tại, sụp đổ chỉ là cách nói tạm thời. Một phép đo thiết lập sự vướng víu giữa hệ và một thiết bị đo. Cho đến khi các hệ hợp thành và sự vướng víu được phát triển, quá trình đo không thể được mô hình hóa một cách trung thực. Đó là bước tiếp theo về mặt khái niệm.}
+\end{classroomqa}

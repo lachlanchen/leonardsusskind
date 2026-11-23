@@ -1,0 +1,652 @@
+\chapter{Tính địa phương, các trạng thái liên tục và động lượng}
+
+\lectureoverview{Vướng víu có thể được tạo ra và được gỡ bỏ bởi động lực học khả nghịch, nhưng các phép đo lại trở nên không thể đảo ngược một cách hữu hiệu khi một phần của hệ vướng víu thoát ra ngoài sự kiểm soát của chúng ta. Sự phân biệt đó dẫn tới một phép kiểm tra tính địa phương chính xác: Bob có thể áp dụng bất kỳ phép toán unitary nào trong vùng lân cận của mình, nhưng ma trận mật độ rút gọn của Alice, và vì thế mọi thống kê chỉ riêng cô có thể tiếp cận, vẫn không đổi. Sau đó, một thí nghiệm tưởng tượng về mô phỏng cổ điển làm nổi rõ điều gì thực sự là phi cổ điển. Một spin thì dễ bắt chước, và một máy tính trung tâm có thể bắt chước một cặp vướng víu, nhưng các máy cục bộ tách rời không thể tái tạo mọi tương quan vướng víu nếu không có liên lạc không được phép hoặc một mô hình biến ẩn địa phương theo nghĩa Bell mà rốt cuộc thất bại. Bài giảng sau đó rời khỏi spin để xét một hạt trên một đường thẳng. Các tổng rời rạc trở thành tích phân, các delta Kronecker trở thành delta Dirac, và các hàm sóng trở thành các vectơ trong một không gian vô hạn chiều. Phép nhân với \(x\) cho vị trí; phép vi phân là phản Hermite; nhân nó với \(-i\) cho ra toán tử động lượng Hermite. Phép tính cuối cùng, \([x,p]=i\hbar\), nối lại các giao hoán tử lượng tử với các ngoặc Poisson cổ điển và gợi mở tới các gói sóng, các biến đổi Fourier và sự tiến hóa theo Schr\"odinger.}
+
+\section{Vướng víu không phải là tính không thể đảo ngược}
+
+Hãy bắt đầu bằng một sự phân biệt rất dễ bị bỏ qua trong các thảo luận về phép đo. Giả sử hai spin đến trong một trạng thái tích, tương tác, tách ra, rồi rời đi trong một trạng thái vướng víu. Sự vướng víu ấy có nhất thiết phải tồn tại mãi mãi không? Không. Tương tác đó là unitary, nên một tương tác thích hợp khác có thể đảo ngược nó. Ta có thể phản xạ các spin, đưa chúng lại gần nhau một lần nữa, và sắp đặt một sự tiến hóa nghịch đảo đưa cặp này trở về trạng thái tích. Không có định luật nào nói rằng bản thân sự vướng víu chỉ có thể tăng.
+
+Tình huống thay đổi về mặt thao tác khi một thành viên của cặp bị loại bỏ. Nếu một electron bay đi vào một môi trường ngoài tầm kiểm soát, thì hạt còn lại ở gần vẫn vướng víu với một hệ nào đó, nhưng các bậc tự do đã mất ấy không còn sẵn có cho phép toán nghịch đảo nữa. Về nguyên tắc electron ở xa có thể bị phản xạ quay lại; trong thực tế nó đã mất. Đó là nghĩa mà theo đó một phép đo là không thể đảo ngược \emph{đối với chúng ta}: các tương quan đã lan vào những bậc tự do mà ta không kiểm soát.
+
+\begin{classroomqa}
+\audiencequestion{Nếu hai hệ trở nên vướng víu, về sau chúng có thể hết vướng víu không?}
+\lecturerresponse{Có. Sự tiến hóa unitary là khả nghịch. Một tương tác thứ hai có thể thực hiện phép nghịch đảo của tương tác thứ nhất và khôi phục một trạng thái tích. Tính không thể đảo ngược xuất hiện khi các bậc tự do liên quan bị vứt bỏ hoặc bị hấp thụ vào một môi trường ngoài tầm kiểm soát, chứ không phát sinh chỉ từ riêng sự vướng víu.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vậy tại sao một phép đo đã hoàn tất lại có vẻ không thể đảo ngược?}
+\lecturerresponse{Bởi vì hệ được đo đã trở nên tương quan với một thiết bị, một người quan sát, và cuối cùng là một môi trường lớn. Đảo ngược toàn bộ trạng thái sẽ đòi hỏi kiểm soát tất cả các dấu vết đó. Sự tiến hóa vi mô có thể vẫn là unitary, trong khi thao tác đó không thể tiếp cận được từ mô tả rút gọn của người quan sát.}
+\end{classroomqa}
+
+\section{Trạng thái mà Alice có thể tiếp cận}
+
+Hãy chia một hệ hợp thành thành các bậc tự do của Alice \(a\) và các bậc tự do của Bob \(b\), với các hệ số của trạng thái thuần
+\begin{equation}
+\Psi(a,b)=\braket{a,b}{\Psi}.
+\end{equation}
+Alice không có quyền truy cập vào phòng thí nghiệm của Bob. Vì vậy mô tả địa phương đầy đủ của cô nói chung không phải là một hàm sóng. Nó là ma trận mật độ rút gọn
+\begin{equation}
+\rho_A(a',a)
+=
+\sum_b \Psi^*(a',b)\Psi(a,b).
+\label{eq:l8-reduced-density}
+\end{equation}
+Phép lấy tổng loại bỏ nhãn của Bob. Phần còn lại có một chỉ số bra và một chỉ số ket cho Alice, và nó chứa mọi phân bố xác suất mà Alice có thể thu được bằng các thí nghiệm được thực hiện hoàn toàn trong vùng lân cận của cô.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_01.png}
+\caption{Ma trận mật độ rút gọn của Alice, được tạo thành bằng cách lấy tổng hàm sóng chung theo nhãn cơ sở của Bob.}
+\lectureframe{00:04:34}
+\end{figure}
+
+Ở đây, vùng lân cận của Alice và vùng lân cận của Bob cần được hiểu theo nghĩa rộng. Mỗi bên có thể bao gồm thiết bị, từ trường, kỹ thuật viên, và mọi bậc tự do khác mà người quan sát đó có thể tương tác. Khẳng định về tính địa phương không phải là Bob không thể thay đổi chính hệ của mình. Anh ấy có thể làm điều đó theo nhiều cách. Điều được khẳng định là, chừng nào anh ấy vẫn ở xa, không hành động cục bộ nào của anh ấy làm thay đổi Phương trình~\eqref{eq:l8-reduced-density}.
+
+\section{Phép biến đổi unitary cục bộ của Bob}
+
+Trước hết hãy tạm bỏ qua Alice và chỉ mô tả riêng thao tác của Bob. Nếu Bob thay đổi một từ trường hoặc bằng cách khác thay đổi Hamiltonian cục bộ của mình, các hệ số hàm sóng của anh ấy sẽ chịu một phép biến đổi unitary,
+\begin{equation}
+\psi_M(b)
+=
+\sum_{b'}U_{bb'}\psi(b').
+\label{eq:l8-bob-unitary}
+\end{equation}
+Trong ngôn ngữ của hệ hợp thành, chỉ số của Alice không tham gia vào phép biến đổi:
+\begin{equation}
+\Psi_M(a,b)
+=
+\sum_{b'}U_{bb'}\Psi(a,b').
+\label{eq:l8-composite-unitary}
+\end{equation}
+Lấy liên hợp phức biến phép biến đổi ket thành phép biến đổi bra tương ứng,
+\begin{equation}
+\Psi_M^*(a',b)
+=
+\sum_{b''}\Psi^*(a',b'')U^\dagger_{b''b}.
+\label{eq:l8-composite-bra}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_02.png}
+\caption{Một phép biến đổi unitary tác dụng lên chỉ số ket của Bob, còn ma trận liên hợp Hermite tác dụng lên chỉ số bra tương ứng.}
+\lectureframe{00:12:54}
+\end{figure}
+
+Bây giờ hãy tính lại ma trận mật độ của Alice:
+\begin{align}
+\rho_{A,M}(a',a)
+&=
+\sum_b\Psi_M^*(a',b)\Psi_M(a,b) \notag\\
+&=
+\sum_{b,b',b''}
+\Psi^*(a',b'')
+U^\dagger_{b''b}U_{bb'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')
+(U^\dagger U)_{b''b'}
+\Psi(a,b') \notag\\
+&=
+\sum_{b',b''}
+\Psi^*(a',b'')\delta_{b''b'}\Psi(a,b') \notag\\
+&=
+\sum_{b'}\Psi^*(a',b')\Psi(a,b') \notag\\
+&=
+\rho_A(a',a).
+\label{eq:l8-locality-proof}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_03.png}
+\caption{Phép tính tính địa phương trên bảng: \(U^\dagger U\) thu về đồng nhất trong biểu thức cho trạng thái rút gọn của Alice.}
+\lectureframe{00:14:27}
+\end{figure}
+
+Toàn bộ chứng minh nằm ở phép co chỉ số
+\begin{equation}
+\sum_bU^\dagger_{b''b}U_{bb'}
+=(U^\dagger U)_{b''b'}
+=\delta_{b''b'}.
+\label{eq:l8-unitarity-contraction}
+\end{equation}
+Không hề dùng giả thiết phân tích thành tích nào. Phương trình~\eqref{eq:l8-locality-proof} đúng dù trạng thái chung là trạng thái tích hay vướng víu tối đa. Vì vậy mọi giá trị kỳ vọng chỉ riêng của Alice,
+\begin{equation}
+\expect{L_A}
+=
+\operatorname{Tr}_A(\rho_A L_A),
+\end{equation}
+đều bất biến dưới phép biến đổi unitary cục bộ của Bob.
+
+\begin{classroomqa}
+\audiencequestion{Nếu Bob đang tác động gì đó lên spin của mình, tại sao điều đó chưa phải là vi phạm tính unitary?}
+\lecturerresponse{Tác động gì đó không có nghĩa là áp dụng một ánh xạ không unitary. Bob có thể xoay một nam châm, thay đổi một Hamiltonian cục bộ, hoặc để spin của mình tiến động. Đó đều là những sự tiến hóa unitary thông thường. Chúng làm thay đổi trạng thái riêng của anh ấy và các xác suất kết quả riêng của anh ấy, nhưng phép tính ở trên cho thấy chúng không làm thay đổi trạng thái rút gọn của Alice.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vậy cơ học lượng tử có tuân theo tính địa phương không?}
+\lecturerresponse{Nó tuân theo tính địa phương theo nghĩa thao tác được dùng ở đây: Bob không thể ảnh hưởng đến các thống kê của những phép đo mà Alice có thể thực hiện chỉ bằng cách tác động trong vùng lân cận của mình. Các tương quan chung của trạng thái vướng víu vẫn là phi cổ điển, nhưng chúng không cung cấp một tín hiệu có thể điều khiển được.}
+\end{classroomqa}
+
+\subsection{Vì sao tính unitary quan trọng}
+
+Tính unitary không phải là một chi tiết trang trí. Nó cung cấp phần đồng nhất trong Phương trình~\eqref{eq:l8-unitarity-contraction}. Theo cách nói trước đây, tính unitary biểu thị sự bảo toàn khả năng phân biệt: hai vectơ trạng thái phân biệt được vẫn phân biệt được dưới sự tiến hóa khả nghịch. Nếu Bob có một sự tiến hóa tất định dù chỉ hơi lệch khỏi unitary, \(U^\dagger U\) sẽ không còn là đồng nhất. Khi đó ma trận mật độ rút gọn của Alice có thể thay đổi ngay lập tức, cho Bob một phương tiện gửi tín hiệu nhanh hơn ánh sáng.
+
+Mối liên hệ chặt chẽ này là một lý do khiến cơ học lượng tử khó bị sửa đổi từng mảnh. Thay đổi định luật tiến hóa, và những nguyên lý tưởng chừng xa nhau có thể cùng sụp đổ theo. Tính địa phương, sự bảo toàn xác suất, và sự tiến hóa trạng thái khả nghịch là các phần của một cấu trúc duy nhất.
+
+\begin{classroomqa}
+\audiencequestion{Một phép toán không unitary sẽ cho phép một tín hiệu nhanh hơn ánh sáng bằng cách nào?}
+\lecturerresponse{Bob sẽ chọn có áp dụng nó hay không. Nếu ánh xạ ấy làm thay đổi \(\rho_A\), Alice có thể phân biệt hai lựa chọn bằng cách lặp lại các phép đo cục bộ trên một tập hợp thống kê. Sự thay đổi sẽ xảy ra mà không cần một tín hiệu lan truyền từ Bob, và chính đó là điều mà sự triệt tiêu do tính unitary ngăn lại.}
+\end{classroomqa}
+
+\section{Sự sụp đổ thay đổi điều kiện, không thay đổi phân bố biên ở xa}
+
+Ví dụ bộ chia chùm làm hiện rõ sự băn khoăn. Một photon đơn được đặt trong chồng chập của hai đường đi, một hướng về phía Alice và một hướng về phía Bob. Nếu detector của Alice cho tín hiệu, trạng thái có điều kiện sẽ gán biên độ bằng 0 cho việc detector trên nhánh của Bob phát hiện ở thời điểm sau. Ta rất dễ nói rằng Alice đã tức thời làm thay đổi photon của Bob.
+
+Những gì Bob có thể quan sát mà không có bản ghi của Alice lại khác. Trước khi nhận được bất kỳ thông điệp nào, anh ấy phải lấy trung bình trên các kết quả có thể có của Alice. Trung bình vô điều kiện đó được mô tả bởi ma trận mật độ rút gọn của anh ấy, và nó không thay đổi. Việc detector của Alice cho tín hiệu làm thay đổi việc, một khi kết quả của cô đã được biết, lần chạy ấy được mô tả bởi phân tập con có điều kiện nào; nó không làm thay đổi phân bố biên cục bộ của Bob. Sự phân biệt giữa
+\begin{equation}
+\rho_B
+\qquad\text{and}\qquad
+\rho_{B\mid A=\text{click}}
+\end{equation}
+chính là sự phân biệt giữa không truyền tín hiệu và các tương quan hữu ích.
+
+\begin{classroomqa}
+\audiencequestion{Khi một detector cho tín hiệu, có phải hàm sóng trên nhánh kia chẳng phải sụp về 0 tức thời sao?}
+\lecturerresponse{Trạng thái được điều kiện hóa bởi sự kiện phát hiện đó thay đổi, nhưng người quan sát ở xa không nắm được điều kiện ấy cho tới khi một thông điệp thông thường đến nơi. Ma trận mật độ vô điều kiện của Bob và mọi thống kê cục bộ trung bình của anh ấy đều không đổi. Không thể dùng sự sụp đổ làm điện báo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sự nhầm lẫn ấy có phải phần nào là nhầm lẫn giữa trạng thái và thông tin về trạng thái không?}
+\lecturerresponse{Cách nói đó có sức gợi nhưng vẫn còn quá lỏng lẻo. Sự phân biệt cụ thể ở đây là giữa trạng thái chung, trạng thái rút gọn, và trạng thái được điều kiện hóa theo một kết quả được báo lại. Giữ ba đối tượng toán học đó tách biệt thì an toàn hơn là cố giải quyết vấn đề chỉ bằng riêng từ thông tin.}
+\end{classroomqa}
+
+Tuy vậy, nỗi băn khoăn Einstein--Podolsky--Rosen vẫn còn đó. Một singlet có thể cho ta tri thức tối đa về \emph{toàn thể} trong khi không thành phần nào có một trạng thái địa phương thuần. Sự đảo ngược kỳ vọng cổ điển---biết được toàn thể mà không gán các trạng thái thuần xác định cho các phần---không phải là một hiệu ứng truyền tín hiệu, nhưng quả thật là đặc biệt. Để làm lộ rõ điểm kỳ lạ ấy hơn, hãy biến cơ học lượng tử thành một bài toán lập trình.
+
+\section{Một bộ mô phỏng cổ điển cho một spin}
+
+Hãy vẽ một thiết bị đo spin trên màn hình máy tính. Người dùng có thể định hướng nó, nhấn nút đo \(M\), và đọc \(+1\) hoặc \(-1\). Bên trong máy tính cổ điển, lưu hai biên độ phức,
+\begin{equation}
+\alpha_u,\qquad \alpha_d,
+\qquad
+|\alpha_u|^2+|\alpha_d|^2=1.
+\label{eq:l8-one-spin-amplitudes}
+\end{equation}
+Giữa các lần đo, máy tính giải phương trình Schr\"odinger thích hợp. Một từ trường mô phỏng có thể làm các biên độ tiến động đúng như trạng thái spin thật.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_04.png}
+\caption{Bộ mô phỏng một spin: một thiết bị có thể định hướng và nút đo nối với một máy tính lưu hai biên độ.}
+\lectureframe{00:27:47}
+\end{figure}
+
+Khi người dùng nhấn \(M\), một bộ sinh số giả ngẫu nhiên chọn một kết quả theo các xác suất Born
+\begin{equation}
+P(+1)=|\alpha_u|^2,
+\qquad
+P(-1)=|\alpha_d|^2.
+\label{eq:l8-one-spin-born}
+\end{equation}
+Máy tính hiển thị dấu đã chọn rồi thực hiện cập nhật trạng thái. Sau \(+1\),
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(1,0),
+\end{equation}
+trong khi sau \(-1\),
+\begin{equation}
+(\alpha_u,\alpha_d)\longrightarrow(0,1).
+\end{equation}
+Sau đó nó tiếp tục sự tiến hóa unitary từ trạng thái sau phép đo. Nếu người dùng xoay thiết bị trước khi nhấn \(M\), máy tính sẽ đổi cơ sở và tính các xác suất thích hợp với trục mới.
+
+Phần cứng không cần điều gì đặc thù lượng tử. Một thuật toán giả ngẫu nhiên tất định là đủ để tạo ra một dãy trông ngẫu nhiên đối với người dùng. Đối với một spin đơn, sự bắt chước cổ điển này có thể không thể phân biệt được về mặt thao tác với thí nghiệm trong phòng thí nghiệm.
+
+\begin{classroomqa}
+\audiencequestion{Mục đích của nút đo là gì? Thời gian trôi qua trước khi nhấn nó có quan trọng không?}
+\lecturerresponse{Nút đó đánh dấu thời điểm bộ mô phỏng lấy mẫu phân bố Born và cập nhật các biên độ đang lưu. Trong lúc chờ, các biên độ tiến hóa dưới tác dụng của Hamiltonian. Nếu Hamiltonian bằng 0 thì không có gì thay đổi theo thời gian; với một từ trường, spin mô phỏng sẽ tiến động trước phép đo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ai quyết định khi nào nhấn nút hoặc đặt thiết bị theo hướng nào?}
+\lecturerresponse{Trong mô hình này, người làm thí nghiệm cung cấp các thiết đặt đó. Bộ mô phỏng liên tục theo dõi trạng thái, rồi dùng trục đã chọn và thời điểm đo khi nút được nhấn. Phần thảo luận sau sẽ quay lại giả định rằng các thiết đặt có thể được chọn độc lập với cặp đã được chuẩn bị.}
+\end{classroomqa}
+
+\section{Hai spin: nơi mô phỏng cục bộ thất bại}
+
+Hai spin ở trạng thái tích vẫn còn đơn giản. Hãy cho Alice một máy tính lưu các biên độ \(\alpha_u,\alpha_d\), và Bob một máy khác lưu \(\beta_u,\beta_d\). Mỗi máy tiến hóa và đo spin của riêng mình. Không cần liên lạc vì các hệ số chung phân tích thành nhân tử:
+\begin{equation}
+\Psi(a,b)=\alpha_a\beta_b.
+\end{equation}
+
+Một trạng thái hai spin bất kỳ cần bốn hệ số,
+\begin{equation}
+\alpha_{uu},\qquad
+\alpha_{ud},\qquad
+\alpha_{du},\qquad
+\alpha_{dd},
+\qquad
+\sum_{a,b}|\alpha_{ab}|^2=1.
+\label{eq:l8-four-amplitudes}
+\end{equation}
+Một máy tính trung tâm duy nhất có thể lưu các số này và cho chúng tiến hóa theo phương trình Schr\"odinger bốn chiều. Khi một trong hai người quan sát đo, máy trung tâm lấy mẫu theo xác suất biên đúng, loại bỏ các thành phần không tương thích, chuẩn hóa lại các thành phần còn lại, rồi tiếp tục từ trạng thái có điều kiện.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_05.png}
+\caption{Một bộ mô phỏng trung tâm lưu bốn biên độ của một trạng thái hai spin bất kỳ và vẫn được nối với cả hai trạm đo.}
+\lectureframe{00:37:47}
+\end{figure}
+
+Cách xây dựng này mô phỏng vướng víu một cách hoàn hảo chừng nào bộ xử lý trung tâm còn được nối với cả hai phía. Rắc rối bắt đầu khi ta sao chép bốn biên độ vào hai máy, tách chúng ra, cắt các dây nối, và để mỗi máy dùng bộ sinh ngẫu nhiên riêng của mình. Với trạng thái singlet,
+\begin{equation}
+\ket{\Psi^-}
+=
+\frac{1}{\sqrt2}
+\left(
+\ket{u}_A\ket{d}_B-\ket{d}_A\ket{u}_B
+\right),
+\label{eq:l8-singlet}
+\end{equation}
+các phép đo trên cùng một trục phải cho kết quả đối nhau. Thay vào đó, các lựa chọn ngẫu nhiên độc lập có thể tạo ra \(++\) hoặc \(--\), nên tương quan bị mất dù cả hai máy ban đầu đều có một bản sao của các hệ số chung.
+
+\begin{classroomqa}
+\audiencequestion{Liệu hai máy có thể dùng chung một nguồn số ngẫu nhiên trước khi chúng bị tách ra không?}
+\lecturerresponse{Tính ngẫu nhiên dùng chung có thể áp đặt một tương quan cho trước đối với một trục đo cố định. Vấn đề Bell sâu hơn đặt ra câu hỏi về một sơ đồ cục bộ duy nhất tái tạo các tương quan lượng tử cho mọi cặp trục được chọn độc lập. Các biến dùng chung được nạp sẵn được tính vào các mô hình cục bộ theo Bell, và không mô hình nào như vậy tái tạo được toàn bộ hàm tương quan lượng tử.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bốn biên độ có độc lập với nhau không?}
+\lecturerresponse{Chúng là bốn tọa độ của một trạng thái chung đã được chuẩn hóa, không phải bốn trạng thái cục bộ độc lập. Trong một trạng thái vướng víu, chúng không thể được viết thành \(\alpha_a\beta_b\). Sau khi một kết quả cục bộ được chọn, các hệ số chung còn lại phải được cập nhật một cách nhất quán; hai bản sao đã ngắt kết nối không tự động thực hiện các cập nhật khớp nhau.}
+\end{classroomqa}
+
+\subsection{Ý nghĩa của những dây nối ẩn}
+
+Một bộ sinh ngẫu nhiên trung tâm được nối với cả hai trạm có thể điều phối các đầu ra. Trong một bộ mô phỏng cổ điển thông thường, những dây nối đó cũng sẽ là các kênh liên lạc. Bob có thể cố ý gửi một bit cho Alice, và nếu liên kết ấy là tức thời thì cỗ máy sẽ vi phạm tính địa phương.
+
+Hệ lượng tử không cho Bob quyền tự do đó. Những phép biến đổi cục bộ mà anh ấy được phép thực hiện đều là đơn nhất, và chứng minh bằng ma trận mật độ rút gọn đã cho thấy rằng không có phép biến đổi nào như vậy làm thay đổi thống kê biên của Alice. Vì thế, các dây nối của bộ mô phỏng là dấu hiệu cho thấy cách theo dõi thông tin cổ điển thông thường có cấu trúc không phù hợp, chứ không phải bằng chứng rằng tự nhiên chứa các đường dây siêu ánh sáng có thể sử dụng được.
+
+\begin{classroomqa}
+\audiencequestion{Những dây nối mà bộ mô phỏng cổ điển cần có có đại diện cho tính phi địa phương vật lý không?}
+\lecturerresponse{Chúng biểu thị sự phối hợp bổ sung mà một mô hình cổ điển ngây thơ cần đến. Nếu chúng là những dây nối thông thường có thể dùng được, chúng sẽ cho phép truyền tín hiệu và sẽ không mô hình hóa thí nghiệm lượng tử. Kết luận an toàn hơn là mô phỏng cổ điển cục bộ và cơ học lượng tử có những cấu trúc logic khác nhau, chứ không phải rằng người ta đã phát hiện ra các dây liên lạc ẩn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu Alice và Bob mỗi người nhận một bit ngẫu nhiên nhưng hai bit lại tương quan hoàn hảo, thì điều gì là lạ ở đó?}
+\lecturerresponse{Không có gì lạ ở một tương quan đã được sắp đặt trước; những phong bì giống hệt nhau hoặc các hạt giống ngẫu nhiên dùng chung có thể tạo ra nó. Nội dung phi cổ điển xuất hiện khi Alice và Bob chọn độc lập giữa các thiết đặt không tương thích và các tương quan thu được vi phạm một bất đẳng thức Bell trong khi mỗi kết quả cục bộ vẫn ngẫu nhiên.}
+\end{classroomqa}
+
+Thí nghiệm tưởng tượng này cũng chứa một tiền đề cần được nêu rõ: các thiết đặt đo được xem như những lựa chọn độc lập. Alice và Bob quyết định khi nào nhấn nút của mình và định hướng thiết bị ra sao mà không để các lựa chọn ấy bị các biến nguồn bí mật ấn định sẵn. Một khi những người quan sát và các cơ chế ra quyết định của họ được đưa vào bên trong một hệ vật lý kín duy nhất, cách nói triết học về sự lựa chọn tự do trở nên tế nhị. Các kiểm định Bell mang tính thao tác phát biểu điều kiện cần như tính độc lập của thiết đặt đo và sắp đặt các thiết đặt do bên ngoài tạo ra, cách nhau kiểu không gian. Bài giảng để ngỏ phần siêu hình học trong khi vẫn giữ tiền đề thực nghiệm.
+
+\begin{classroomqa}
+\audiencequestion{Việc đặt Alice và Bob vào bên trong hệ vật lý có tạo ra một lỗ hổng không?}
+\lecturerresponse{Nó làm lộ ra một giả định: các thiết đặt không được tương quan từ trước với các biến ẩn chuẩn bị cặp hạt. Người ta có thể tranh luận về ý chí tự do, nhưng mệnh đề có thể kiểm nghiệm được là tính độc lập của thiết đặt đo. Từ bỏ điều đó là khả dĩ về mặt logic, dù nó chuyển gánh nặng giải thích chứ không cung cấp một mô phỏng cục bộ thông thường.}
+\end{classroomqa}
+
+\section{Từ spin đến một hạt trên một đường thẳng}
+
+Spin đã đưa cuộc thảo luận đi từ các vectơ hữu hạn chiều qua vướng víu và tính địa phương. Bây giờ hãy mở rộng không gian Hilbert. Xét một hạt chuyển động trên một đường thẳng vô hạn. Một trạng thái riêng vị trí được ký hiệu
+\begin{equation}
+\ket{x},
+\end{equation}
+và có nghĩa là hạt có vị trí xác định \(x\). Các ket này tạo thành một cơ sở được gắn nhãn liên tục. Một trạng thái tổng quát là một chồng chập của chúng, và hàm sóng trong không gian vị trí của nó là
+\begin{equation}
+\psi(x)=\braket{x}{\Psi}.
+\label{eq:l8-position-wavefunction}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_06.png}
+\caption{Hàm sóng trong không gian vị trí như hình chiếu của trạng thái trừu tượng lên ket cơ sở \(\ket{x}\).}
+\lectureframe{00:56:51}
+\end{figure}
+
+Vị trí đang được dùng như một nhãn cơ sở đầy đủ. Điều này không nói rằng một trạng thái cổ điển có thể được xác định chỉ bằng vị trí, cũng không nói rằng hạt đồng thời có vị trí và động lượng xác định. Nó nói rằng mọi vectơ trạng thái lượng tử đều có thể được khai triển theo cơ sở vị trí. Động lượng sẽ xuất hiện như một toán tử tác dụng lên các hệ số trong không gian vị trí đó.
+
+Quy tắc Born bây giờ cho một \emph{mật độ} xác suất,
+\begin{equation}
+\rho(x)=|\psi(x)|^2.
+\label{eq:l8-probability-density}
+\end{equation}
+Đối với một biến liên tục, xác suất tại đúng một điểm thường bằng 0. Xác suất tìm thấy hạt trong một khoảng là
+\begin{equation}
+P(x_1<x<x_2)
+=
+\int_{x_1}^{x_2}|\psi(x)|^2\,dx,
+\end{equation}
+và điều kiện chuẩn hóa đòi hỏi
+\begin{equation}
+\int_{-\infty}^{\infty}|\psi(x)|^2\,dx=1.
+\label{eq:l8-continuous-normalization}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Làm sao chỉ riêng vị trí lại có thể là một cơ sở đầy đủ khi một hạt cổ điển cần cả vị trí lẫn động lượng?}
+\lecturerresponse{Tính đầy đủ ở đây liên quan đến biểu diễn của một vectơ lượng tử. Các hệ số \(\psi(x)\) với mọi \(x\) xác định trạng thái, và thông tin về động lượng được mã hóa trong các pha và sự biến thiên theo không gian của chúng. Vị trí và động lượng là những cơ sở khác nhau, về sau liên hệ với nhau bằng một biến đổi Fourier; chúng không phải là các nhãn cổ điển đồng thời.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(|\psi(x)|^2\) có phải là xác suất tìm thấy hạt tại đúng điểm \(x\) không?}
+\lecturerresponse{Đó là một mật độ. Nhân với một khoảng nhỏ \(dx\) cho xác suất xấp xỉ trong khoảng đó, còn lấy tích phân thì cho xác suất chính xác trên một vùng hữu hạn. Một mật độ có thể khác không mặc dù xác suất gán cho một điểm cô lập là bằng không.}
+\end{classroomqa}
+
+\section{Trực chuẩn liên tục và hàm delta}
+
+Đối với một cơ sở trực chuẩn rời rạc,
+\begin{equation}
+\braket{a}{a'}=\delta_{aa'}.
+\end{equation}
+Đối với một cơ sở liên tục, biểu thức tương tự là
+\begin{equation}
+\braket{x}{x'}=\delta(x-x'),
+\label{eq:l8-delta-normalization}
+\end{equation}
+trong đó delta Dirac triệt tiêu khi \(x\neq x'\) và có diện tích đơn vị:
+\begin{equation}
+\int_{-\infty}^{\infty}\delta(x-x')\,dx'=1.
+\end{equation}
+Có thể hình dung nó như một đỉnh nhọn hẹp có bề rộng \(\epsilon\), chiều cao \(1/\epsilon\), và diện tích cố định, rồi lấy giới hạn \(\epsilon\to0\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_07.png}
+\caption{Biểu diễn delta Dirac trên bảng bằng một đỉnh nhọn hẹp: bề rộng \(\epsilon\), chiều cao \(1/\epsilon\), và diện tích đơn vị.}
+\lectureframe{01:01:57}
+\end{figure}
+
+Ký hiệu này là lối viết tắt theo nghĩa phân bố. Một ket riêng vị trí không phải là một vectơ chuẩn hóa được trong không gian Hilbert khả tích bình phương thông thường; nó là một vectơ suy rộng mà chuẩn hóa delta của nó có nghĩa dưới dấu tích phân. Quy tắc làm việc cốt lõi là
+\begin{equation}
+\int_{-\infty}^{\infty}
+\delta(x-x')f(x')\,dx'
+=f(x).
+\label{eq:l8-delta-sampling}
+\end{equation}
+Hàm delta chọn ra giá trị làm cho đối số của nó triệt tiêu.
+
+Bây giờ hãy viết khai triển liên tục
+\begin{equation}
+\ket{\Psi}
+=
+\int_{-\infty}^{\infty}
+\psi(x')\ket{x'}\,dx'.
+\label{eq:l8-continuous-expansion}
+\end{equation}
+Tác dụng \(\bra{x}\) lên đó ta được
+\begin{align}
+\braket{x}{\Psi}
+&=
+\int dx'\,\psi(x')\braket{x}{x'} \notag\\
+&=
+\int dx'\,\psi(x')\delta(x-x') \notag\\
+&=
+\psi(x).
+\label{eq:l8-expansion-consistency}
+\end{align}
+Vậy hệ số trong khai triển và hình chiếu \(\braket{x}{\Psi}\) là cùng một hàm, đúng hệt như trong một cơ sở rời rạc.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_08.png}
+\caption{Khai triển trạng thái liên tục và phép kiểm tra tính nhất quán của nó bằng \(\braket{x}{x'}=\delta(x-x')\).}
+\lectureframe{01:07:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(\psi(x')\) có giữ cùng vai trò như các biên độ trong một vectơ hữu hạn chiều không?}
+\lecturerresponse{Có. Nhãn cơ sở \(a'\) trở thành nhãn liên tục \(x'\), tổng trở thành tích phân, và hệ số \(\psi(a')\) trở thành hàm \(\psi(x')\). Mệnh đề nền tảng của không gian vectơ không thay đổi.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Delta Dirac có thật sự là một hàm với giá trị vô hạn tại một điểm không?}
+\lecturerresponse{Hình ảnh đó hữu ích nhưng không theo nghĩa đen. Một cách chặt chẽ, delta là một phân bố được xác định bởi tác dụng của nó dưới dấu tích phân, phương trình~\eqref{eq:l8-delta-sampling}. Đỉnh nhọn hẹp có diện tích bằng 1 là một dãy các hàm thông thường tiến đến cùng quy tắc lấy mẫu.}
+\end{classroomqa}
+
+\section{Các hàm như những vectơ}
+
+Để thấy tích vô hướng, trước hết hãy nhắc lại phép tính rời rạc:
+\begin{align}
+\braket{\psi}{\phi}
+&=
+\sum_{a',a}
+\psi^*(a')\braket{a'}{a}\phi(a) \notag\\
+&=
+\sum_a\psi^*(a)\phi(a).
+\label{eq:l8-discrete-inner-product}
+\end{align}
+Các hệ số liên hợp phức thuộc về bra, và tính trực chuẩn rút gọn tổng kép.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_09.png}
+\caption{Tích vô hướng rời rạc được khai triển theo một cơ sở trước khi các tổng được thay bằng tích phân.}
+\lectureframe{01:11:11}
+\end{figure}
+
+Hãy thay các nhãn cơ sở bằng vị trí và thay tổng bằng tích phân:
+\begin{equation}
+\braket{\psi}{\phi}
+=
+\int_{-\infty}^{\infty}\psi^*(x)\phi(x)\,dx.
+\label{eq:l8-continuous-inner-product}
+\end{equation}
+Đổi chỗ hai vectơ thì lấy liên hợp phức của kết quả,
+\begin{equation}
+\braket{\phi}{\psi}
+=
+\braket{\psi}{\phi}^*,
+\end{equation}
+và chuẩn là
+\begin{equation}
+\|\psi\|^2=\braket{\psi}{\psi}
+=\int |\psi(x)|^2\,dx.
+\end{equation}
+
+Vì thế, các hàm là những vectơ: chúng có thể được cộng, nhân với các vô hướng phức, chuẩn hóa, và ghép cặp bằng một tích vô hướng. Các hàm sóng vật lý trên đường thẳng vô hạn là khả tích bình phương, nên các hàm tăng không bị chặn ở vô cực bị loại trừ. Các hàm cơ sở suy rộng \(\delta(x-x_0)\) nằm ngay bên ngoài không gian Hilbert đó nhưng vẫn không thể thiếu với tư cách các vectơ cơ sở theo nghĩa phân bố.
+
+\begin{classroomqa}
+\audiencequestion{Các cận tích phân không ghi rõ có phải là \(-\infty\) và \(+\infty\) không?}
+\lecturerresponse{Có, đối với đường thẳng vô hạn. Các cận đó cũng giải thích vì sao các hàm sóng chuẩn hóa được phải giảm đủ nhanh: nếu không, tích phân xác suất toàn phần sẽ không tồn tại.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Một vạch đứng bị thiếu trong một trong các biểu thức trên bảng. Điều đó có làm đổi nghĩa không?}
+\lecturerresponse{Đó chỉ là một sai sót ký hiệu. Độ chồng chập cơ sở là \(\braket{a'}{a}\), với một bra ở bên trái và một ket ở bên phải. Khôi phục vạch đó làm rõ rằng biểu thức là một tích vô hướng chứ không phải một hàng hay cột mơ hồ.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Phải chăng hầu như mọi thứ đều vướng víu với một môi trường trong phần lớn thời gian?}
+\lecturerresponse{Trong các điều kiện vĩ mô thực tế, có. Các hệ liên tục bị photon, phân tử không khí và các bậc tự do khác va chạm, làm lan truyền thông tin pha vào môi trường. Sự vướng víu với môi trường ấy giữ vai trò trung tâm đối với mất kết hợp và đối với lý do vì sao giao thoa giữa các khả năng vĩ mô khó quan sát.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Lý thuyết toán học về các phân bố đã làm thay đổi vật lý, hay chỉ đơn thuần làm cho hàm delta trở nên chính đáng?}
+\lecturerresponse{Công dụng trực tiếp trước mắt của nó là làm cho những thao tác mà các nhà vật lý đã dùng trở nên chặt chẽ. Nó cung cấp một ngôn ngữ chính xác cho các hàm suy rộng và làm giảm tranh cãi với các nhà toán học, mặc dù tự nó không giải quyết mọi khó khăn về phân bố trong lý thuyết trường lượng tử.}
+\end{classroomqa}
+
+\section{Các toán tử tuyến tính trên hàm sóng}
+
+Một toán tử tuyến tính ánh xạ một hàm thành một hàm khác đồng thời bảo toàn nguyên lý chồng chập:
+\begin{equation}
+L(c_1\psi+c_2\phi)
+=
+c_1L\psi+c_2L\phi.
+\end{equation}
+Một đại lượng quan sát được phải được biểu diễn bằng một toán tử Hermite. Trong ký hiệu hiện tại, điều kiện đó là
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{L\phi}{\psi},
+\label{eq:l8-hermitian-condition}
+\end{equation}
+hoặc tương đương
+\begin{equation}
+\braket{\phi}{L\psi}
+=
+\braket{\psi}{L\phi}^*.
+\end{equation}
+Đối với các toán tử không bị chặn, phát biểu này bao hàm miền xác định và các điều kiện biên; các phép tích phân dưới đây giả sử những hàm sóng sao cho các hạng biên triệt tiêu.
+
+\subsection{Vị trí bằng phép nhân}
+
+Toán tử đơn giản nhất nhân một hàm sóng với tọa độ:
+\begin{equation}
+(x\psi)(x)=x\psi(x).
+\label{eq:l8-position-operator}
+\end{equation}
+Nó là tuyến tính, và
+\begin{align}
+\braket{\phi}{x\psi}
+&=
+\int dx\,\phi^*(x)x\psi(x), \notag\\
+\braket{x\phi}{\psi}
+&=
+\int dx\,[x\phi(x)]^*\psi(x) \notag\\
+&=
+\int dx\,\phi^*(x)x\psi(x),
+\end{align}
+vì \(x\) là thực. Do đó, phép nhân với \(x\) là Hermite và biểu diễn đại lượng quan sát được vị trí.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_10.png}
+\caption{Kiểm tra tính Hermite của toán tử vị trí, được xem như phép nhân một hàm sóng với biến thực \(x\).}
+\lectureframe{01:26:47}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Trong \(x\psi(x)\), \(x\) là một toán tử hay chỉ đơn thuần là một số thực?}
+\lecturerresponse{Tại mỗi điểm, nó là giá trị tọa độ thực, nhưng quy tắc ánh xạ toàn bộ hàm \(\psi(x)\) thành hàm mới \(x\psi(x)\) mới là toán tử. Chính tính thực ấy làm cho hai tích vô hướng trong phép kiểm tra tính Hermite bằng nhau.}
+\end{classroomqa}
+
+\subsection{Phép lấy đạo hàm là phản Hermite}
+
+Hãy xét toán tử đạo hàm
+\begin{equation}
+D=\frac{d}{dx}.
+\end{equation}
+Nó là tuyến tính, nhưng phép tích phân từng phần cho
+\begin{align}
+\braket{\phi}{D\psi}
+&=
+\int dx\,\phi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+\left[\phi^*(x)\psi(x)\right]_{-\infty}^{\infty}
+-
+\int dx\,\frac{d\phi^*}{dx}\psi(x) \notag\\
+&=
+-\braket{D\phi}{\psi},
+\label{eq:l8-derivative-adjoint}
+\end{align}
+trong đó hạng biên triệt tiêu. Do đó
+\begin{equation}
+D^\dagger=-D.
+\end{equation}
+Đạo hàm là phản Hermite chứ không phải Hermite.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_11.png}
+\caption{Phép tích phân từng phần chuyển đạo hàm giữa hai hàm sóng và đưa vào dấu trừ mang tính quyết định.}
+\lectureframe{01:32:30}
+\end{figure}
+
+Nhân với \(-i\):
+\begin{equation}
+p=-i\frac{d}{dx}.
+\label{eq:l8-momentum-natural-units}
+\end{equation}
+Liên hợp phức biến \(-i\) thành \(+i\), còn phép tích phân từng phần đóng góp thêm một dấu trừ nữa. Các dấu triệt tiêu nhau, nên \(p^\dagger=p\). Khôi phục đơn vị,
+\begin{equation}
+p=-i\hbar\frac{d}{dx}.
+\label{eq:l8-momentum-operator}
+\end{equation}
+
+Giá trị kỳ vọng làm cho tính thực của nó trở nên tường minh:
+\begin{align}
+\expect{p}_\psi
+&=
+-i\int dx\,\psi^*(x)\frac{d\psi}{dx} \notag\\
+&=
+i\int dx\,\frac{d\psi^*}{dx}\psi(x) \notag\\
+&=
+\expect{p}_\psi^*.
+\label{eq:l8-momentum-expectation-real}
+\end{align}
+Mọi số bằng với liên hợp phức của chính nó đều là số thực, đúng như giá trị kỳ vọng của một đại lượng quan sát được buộc phải như thế.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_12.png}
+\caption{Giá trị kỳ vọng của động lượng trước và sau khi tích phân từng phần; hai dạng này là liên hợp phức của nhau và bằng nhau.}
+\lectureframe{01:39:44}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao một toán tử chứa \(i\) lại có thể biểu diễn một đại lượng quan sát được có giá trị thực?}
+\lecturerresponse{Tính Hermite liên quan đến toàn bộ toán tử khi xét dưới tích vô hướng, chứ không phải việc mọi ký hiệu trong biểu thức tọa độ của nó có thực hay không. Thừa số \(i\) bù cho dấu trừ thu được khi đạo hàm được chuyển đi bằng phép tích phân từng phần, làm cho mọi giá trị kỳ vọng đều là thực.}
+\end{classroomqa}
+
+\section{Giao hoán tử chính tắc}
+
+Thêm một phép tính nữa cho thấy vì sao toán tử trong Phương trình~\eqref{eq:l8-momentum-operator} đáng được chú ý. Trong hệ đơn vị với \(\hbar=1\), trước hết cho \(x\) tác dụng rồi cho \(p\) tác dụng:
+\begin{align}
+(px\psi)(x)
+&=
+-i\frac{d}{dx}\bigl(x\psi(x)\bigr) \notag\\
+&=
+-i\psi(x)-ix\frac{d\psi}{dx}.
+\label{eq:l8-px}
+\end{align}
+Đảo ngược thứ tự:
+\begin{equation}
+(xp\psi)(x)
+=
+-ix\frac{d\psi}{dx}.
+\label{eq:l8-xp}
+\end{equation}
+Trừ Phương trình~\eqref{eq:l8-px} khỏi Phương trình~\eqref{eq:l8-xp},
+\begin{equation}
+\bigl([x,p]\psi\bigr)(x)
+=
+\bigl(xp-px\bigr)\psi(x)
+=
+i\psi(x).
+\end{equation}
+Vì điều này đúng với mọi hàm sóng trong miền xác định của toán tử,
+\begin{equation}
+[x,p]=i,
+\end{equation}
+hoặc, khi khôi phục đơn vị,
+\begin{equation}
+[x,p]=i\hbar.
+\label{eq:l8-canonical-commutator}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_08_figure_13.png}
+\caption{Lập luận toán tử hoàn chỉnh: nếu \(([x,p]-i)\psi=0\) với mọi hàm sóng, thì \([x,p]=i\).}
+\lectureframe{01:46:24}
+\end{figure}
+
+Tương ứng cổ điển là
+\begin{equation}
+\{x,p\}_{\mathrm{PB}}=1.
+\end{equation}
+Lập luận lịch sử của Dirac đi theo hướng ngược lại với phép suy ra hiện tại. Ông bắt đầu từ sự tương tự đại số giữa các ngoặc Poisson phản đối xứng và các giao hoán tử, giả định sự tương ứng
+\begin{equation}
+[A,B]\longleftrightarrow i\hbar\{A,B\}_{\mathrm{PB}},
+\end{equation}
+và suy ra rằng toán tử động lượng phải thỏa mãn quan hệ giao hoán chính tắc với vị trí. Ở đây, chúng ta tìm ra \(-i\,d/dx\) bằng cách khắc phục việc toán tử đạo hàm không Hermite, và chỉ sau đó mới thấy cùng một cấu trúc đại số ấy.
+
+\begin{classroomqa}
+\audiencequestion{Chỉ riêng giao hoán tử có đủ để chứng minh rằng \(-i\hbar\,d/dx\) là động lượng vật lý không?}
+\lecturerresponse{Đó là bằng chứng mạnh, chứ chưa phải sự nhận diện vật lý trọn vẹn. Ta vẫn còn phải chỉ ra rằng toán tử này sinh ra các phép tịnh tiến trong không gian, rằng giá trị kỳ vọng của nó được bảo toàn khi có đối xứng tịnh tiến, và rằng một gói sóng chuyển động với vận tốc nhóm \(\expect{p}/m\) trong hệ phi tương đối thích hợp.}
+\end{classroomqa}
+
+\section{Tiếp theo là gì}
+
+Bước chuyển từ spin sang hạt đã giữ nguyên kiến trúc nhưng thay đổi quy mô của nó. Một cơ sở được gắn nhãn liên tục thay thế cho một danh sách hữu hạn các vectơ cơ sở. Các tổng trở thành tích phân, các delta Kronecker trở thành các delta Dirac, và các vectơ cột trở thành các hàm khả tích bình phương. Vị trí tác dụng bằng phép nhân, còn động lượng tác dụng bằng phép lấy đạo hàm.
+
+Những nhiệm vụ tiếp theo thuộc về vật lý chứ không chỉ thuần túy là ký hiệu. Các xác suất động lượng đòi hỏi cơ sở động lượng và phép biến đổi Fourier. Sự tiến hóa theo thời gian đòi hỏi phương trình Schr\"odinger cho \(\psi(x,t)\). Khi đó, các gói sóng sẽ nối toán tử trừu tượng \(p=-i\hbar\,d/dx\) với chuyển động: vận tốc nhóm của chúng sẽ liên hệ với động lượng chia cho khối lượng, và đối xứng tịnh tiến sẽ giải thích sự bảo toàn động lượng. Vì thế, giao hoán tử \([x,p]=i\hbar\) không phải là một mẹo cô lập. Nó là bản lề giữa cơ học không gian vectơ đã được phát triển và động lực học lượng tử của các hạt.
