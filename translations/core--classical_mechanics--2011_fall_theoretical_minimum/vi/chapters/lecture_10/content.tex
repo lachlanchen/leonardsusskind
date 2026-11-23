@@ -1,0 +1,613 @@
+\chapter{Bất biến chuẩn và chuyển động của hạt mang điện}
+
+\lectureoverview{Từ trường là một trường không phân kỳ, nên có thể được biểu diễn bằng một thế vectơ. Biểu diễn đó không duy nhất, nhưng chính điều ấy cho phép lực từ đi vào nguyên lý tác dụng. Chúng ta suy ra lực Lorentz, phân biệt động lượng chính tắc với động lượng cơ học, xây dựng Hamiltonian, và dùng hai chuẩn khác nhau để giải chuyển động trong một từ trường đều. Bài giảng kết thúc bằng cách đặt cơ học hạt này vào trong những chủ đề lớn hơn là lý thuyết Maxwell, đơn cực từ, và động lực học không gian pha.}
+
+\section{Bước cuối cùng của môn cơ học}
+
+Bài giảng mở đầu bằng một bất ngờ nhỏ về lịch trình. Kế hoạch là hoàn tất phần các hạt mang điện trong từ trường, có lẽ thêm cả điện trường, rồi quyết định xem còn gì để dành cho một buổi khác. Người nghe nhắc rằng đây đã là bài giảng thứ mười. Khi đó nhiệm vụ trở nên rõ ràng hơn: hoàn tất bài toán từ trường và dùng nó để khép lại cấu trúc hình thức của cơ học cổ điển.
+
+Ta bắt đầu bằng một điểm lại nhanh. Từ trường là một trường vectơ,
+\begin{equation}
+  \mathbf B=\mathbf B(\mathbf x),
+  \qquad
+  B_i(\mathbf x)=(B_x,B_y,B_z),
+\end{equation}
+trường này có độ lớn và hướng tại mọi điểm. Trong bài giảng này, các điện trường và từ trường ngoài được giả sử là tĩnh. Sự hạn chế này được đặt ra để làm rõ vấn đề, không phải vì các trường điện từ lúc nào cũng phải độc lập với thời gian.
+
+Còn có một ràng buộc:
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+Trong phép tương tự với chất lưu, điều này nói rằng không có đầu ống nào từ đó thông lượng từ tuôn ra ngoài, và cũng không có chỗ thoát nào vào đó nó biến mất. Trong điện động lực học cổ điển thông thường không có nguồn hay hố hút từ. Thực nghiệm chưa xác lập được một đơn cực từ cơ bản, mặc dù bài giảng nhiều lần vẫn để ngỏ khả năng rằng một lý thuyết đầy đủ hơn có thể chứa đối tượng như vậy.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_02.png}
+\caption{Các thành phần của trường, điều kiện không nguồn \(\nabla\cdot\mathbf B=0\), và biểu diễn bằng thế vectơ cùng xuất hiện ở phần đầu bài giảng.}
+\lectureframe{00:04:56}
+\end{figure}
+
+Thay vì mỗi lần đề xuất một trường lại phải kiểm tra phân kỳ của nó, ta có thể tự động thỏa mãn ràng buộc ấy. Hãy viết
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+Đồng nhất thức
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0
+\end{equation}
+khi đó sẽ tự động xử lý phần kiểm tra này cho ta. Trường mới \(\mathbf A\) là thế vectơ.
+
+\section{Cái giá của một ràng buộc tự động}
+
+Việc đưa vào \(\mathbf A\) giải quyết một vấn đề nhưng lại tạo ra một vấn đề khác: nó không duy nhất. Với mọi hàm vô hướng \(S(\mathbf x)\),
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla S
+\end{equation}
+đều có cùng xoáy, vì
+\begin{equation}
+  \nabla\times(\nabla S)=0.
+\end{equation}
+Do đó \(\mathbf A\) và \(\mathbf A'\) mô tả cùng một từ trường. Trên một miền đủ đơn giản, đây là toàn bộ sự nhập nhằng cục bộ: nếu hai thế vectơ có cùng xoáy thì hiệu của chúng cục bộ là một gradient. Tôpô toàn cục có thể đòi hỏi phải dùng nhiều mảnh hoặc cho phép những tinh tế bổ sung khác, nhưng không điều nào trong số đó cần đến cho các trường được xét ở đây.
+
+Một đại diện cụ thể được gọi là một \emph{chuẩn}, và việc đổi từ đại diện này sang đại diện khác là một \emph{phép biến đổi chuẩn}. Trường \(\mathbf B\) không đổi, nên nó là bất biến chuẩn. Nguyên tắc làm việc là vật lý quan sát được không được phụ thuộc vào việc ta đã chọn đại diện nào. Ta đã mở rộng mô tả bằng cách đưa vào \(\mathbf A\), rồi loại bỏ phần dư thừa trong mô tả bằng cách đòi hỏi các dự đoán phải bất biến chuẩn.
+
+\subsection{Ba chuẩn cho một từ trường đều}
+
+Bài giảng lập tức cụ thể hóa ý tưởng này. Chọn hệ tọa độ sao cho một từ trường đều hướng dọc theo trục \(z\):
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=B,
+\end{equation}
+trong đó \(B\) là hằng số. Một thế vectơ thứ nhất là
+\begin{equation}
+  \mathbf A^{(1)}=(0,Bx,0).
+\end{equation}
+Quả vậy,
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -
+  \frac{\partial A_x^{(1)}}{\partial y}
+  =B.
+\end{equation}
+Một lựa chọn thứ hai là
+\begin{equation}
+  \mathbf A^{(2)}=(-By,0,0),
+\end{equation}
+đối với nó,
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-By)}{\partial y}
+  =B.
+\end{equation}
+
+Để chuyển giữa chúng, lấy
+\begin{equation}
+  S=Cxy,
+  \qquad
+  \nabla S=(Cy,Cx,0).
+\end{equation}
+Bắt đầu từ \(\mathbf A^{(1)}\), các thành phần sau biến đổi là
+\begin{equation}
+  A_x'=Cy,
+  \qquad
+  A_y'=(B+C)x,
+  \qquad
+  A_z'=0.
+\end{equation}
+Lựa chọn \(C=-B\) cho \(\mathbf A^{(2)}\). Lựa chọn \(C=-B/2\) cho chuẩn đối xứng,
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \left(-\frac{B}{2}y,\frac{B}{2}x,0\right)
+  =
+  \frac12\,\mathbf B\times\mathbf r.
+\end{equation}
+Cả ba đều có cùng xoáy. Về sau chúng ta sẽ chủ ý quay lại hai cái đầu, vì mỗi cái làm lộ rõ một đối xứng tịnh tiến khác nhau.
+
+\begin{classroomqa}
+\audiencequestion{Thế vectơ có thể có cùng các đối xứng với từ trường đều không?}
+\lecturerresponse{Nó không thể hằng theo không gian theo cách của từ trường, vì một thế vectơ hằng có xoáy bằng không. Một chuẩn đơn lẻ cũng không thể làm hiển lộ mọi đối xứng tịnh tiến của một trường đều khác không. Chuẩn đối xứng quả thật làm hiển lộ các phép quay quanh trục \(z\), nên bài học chính xác không phải là mọi đối xứng đều phải vắng mặt khỏi \(\mathbf A\), mà là thế đó không nhất thiết phải biểu lộ đồng thời mọi đối xứng của trường vật lý.}
+\end{classroomqa}
+
+Họ \(S=Cxy\) chỉ là một ví dụ. Tổng quát hơn, ta có thể áp đặt những điều kiện chuẩn hữu ích, chẳng hạn làm cho một thành phần của \(\mathbf A\) triệt tiêu trong một vùng thích hợp. Tên gọi \emph{chuẩn} xuất hiện về mặt lịch sử từ một nỗ lực không thành công nhằm diễn giải độ tự do này như một sự thay đổi cục bộ của đơn vị đo. Cách diễn giải đó đã bị từ bỏ; tên gọi thì còn lại.
+
+\begin{classroomqa}
+\audiencequestion{Phép biến đổi chuẩn có phải lúc nào cũng có nghĩa là cộng thêm gradient của một vô hướng không?}
+\lecturerresponse{Đó là phép biến đổi được dùng ở đây cho một thế vectơ điện từ tĩnh. Những lý thuyết chuẩn khác có các phép biến đổi công phu hơn, và trong hấp dẫn, một phép đổi tọa độ thường được mô tả như một sự đổi chuẩn vì hình học vật lý không thể phụ thuộc vào các nhãn tọa độ. Tuy nhiên, trong chương này, phép biến đổi chuẩn có nghĩa là \(\mathbf A\mapsto\mathbf A+\nabla S\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Một chuẩn có thể thuận lợi hơn chuẩn khác về mặt tính toán không?}
+\lecturerresponse{Rất thường xuyên. Một đối xứng hay một định luật bảo toàn có thể hiện lộ ở chuẩn này và bị che khuất ở chuẩn khác. Đó không chỉ là một khả năng trừu tượng: về sau trong bài giảng này, một chuẩn sẽ làm \(y\) trở thành tọa độ chu kỳ, còn một chuẩn khác sẽ làm \(x\) trở thành tọa độ chu kỳ. Cả hai phép tính đều mô tả cùng một quỹ đạo.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sự nhập nhằng này có liên quan đến việc chọn không gian riêng hay tìm trị riêng không?}
+\lecturerresponse{Ở đây không cần một mối liên hệ trực tiếp nào. Cả hai chủ đề đều liên quan đến việc đưa ra những lựa chọn toán học hữu ích, nhưng một phép đổi cơ sở riêng và một phép biến đổi chuẩn điện từ là hai cấu trúc khác nhau.}
+\end{classroomqa}
+
+\section{Lagrangian từ}
+
+Giờ ta quay lại cơ học. Đối tượng đang được bàn đến là Lagrangian của một hạt điểm chuyển động trong một từ trường cho trước, chưa phải Lagrangian của chính trường điện từ. Với quy ước đơn vị được dùng trong bài giảng,
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{e}{c}
+  \left(
+    A_x\dot x+A_y\dot y+A_z\dot z
+  \right).
+\end{equation}
+Viết bằng ký hiệu vectơ,
+\begin{equation}
+  \boxed{
+  L=\frac12 m\mathbf v^2+\frac{e}{c}\mathbf A(\mathbf x)\cdot\mathbf v
+  }.
+\end{equation}
+Hệ số \(e\) là điện tích của hạt. Sự xuất hiện tường minh của \(c\) phụ thuộc vào quy ước đơn vị; nội dung cấu trúc là hạng ghép phụ thuộc vận tốc \(\mathbf A\cdot\mathbf v\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_03.png}
+\caption{Lagrangian của hạt trong từ trường được viết theo từng thành phần một, giữ cho ba hạng ghép với vận tốc hiện rõ.}
+\lectureframe{00:25:29}
+\end{figure}
+
+Ban đầu, hạng này được đề xuất chứ chưa được suy ra. Ta được mời thử nó và xem nó sinh ra những phương trình nào. Cũng có thể thử một hạng được xây dựng trực tiếp từ \(\mathbf B\), nhưng như thế sẽ sinh ra các đạo hàm của \(\mathbf B\), chứ không phải lực Lorentz. Thế vectơ là đối tượng cục bộ ghép đúng với quỹ đạo.
+
+\subsection{Vì sao phép đổi chuẩn không làm thay đổi quỹ đạo}
+
+Trước khi biến phân tác dụng, hãy kiểm tra xem một phép biến đổi chuẩn tác động lên nó như thế nào. Với các điểm không-thời gian đầu và cuối cố định,
+\begin{equation}
+  \mathcal S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L\,dt.
+\end{equation}
+Dưới phép \(\mathbf A\mapsto\mathbf A+\nabla S\), độ biến đổi là
+\begin{align}
+  \Delta\mathcal S
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}
+  \nabla S(\mathbf x)\cdot\dot{\mathbf x}\,dt\\
+  &=
+  \frac{e}{c}
+  \int_{t_i}^{t_f}\frac{dS(\mathbf x(t))}{dt}\,dt\\
+  &=
+  \frac{e}{c}
+  \left[
+    S(\mathbf x_f)-S(\mathbf x_i)
+  \right].
+\end{align}
+Vì vậy giá trị số của tác dụng có thay đổi. Nhưng hạng được thêm vào chỉ phụ thuộc vào các đầu mút cố định, chứ không phụ thuộc vào phần bên trong của quỹ đạo bị biến phân. Biến phân của nó bằng không và không thể làm thay đổi quỹ đạo dừng.
+
+\begin{classroomqa}
+\audiencequestion{Nói rằng các phương trình là bất biến chuẩn có nghĩa là gì?}
+\lecturerresponse{Sau phép tính Euler--Lagrange, \(\mathbf A\) chỉ được xuất hiện trong những tổ hợp xoáy được nhận ra là các thành phần của \(\mathbf B\). Bản thân thế có thể thay đổi, và tác dụng có thể dịch đi bởi một hạng đầu mút, nhưng quỹ đạo vật lý và định luật lực phải giữ nguyên.}
+\end{classroomqa}
+
+\section{Hai khái niệm về động lượng}
+
+Các phương trình Euler--Lagrange có thể được viết là
+\begin{equation}
+  \dot p_i=\frac{\partial L}{\partial x_i},
+  \qquad
+  p_i=\frac{\partial L}{\partial\dot x_i}.
+\end{equation}
+Đến đây ta phải phân biệt hai động lượng. Động lượng cơ học quen thuộc là
+\begin{equation}
+  \boldsymbol{\pi}=m\mathbf v.
+\end{equation}
+Động lượng chính tắc được xác định bởi Lagrangian:
+\begin{equation}
+  p_i
+  =
+  m\dot x_i+\frac{e}{c}A_i.
+\end{equation}
+Vì vậy
+\begin{equation}
+  \boxed{
+  \boldsymbol{\pi}
+  =
+  \mathbf p-\frac{e}{c}\mathbf A
+  =
+  m\mathbf v
+  }.
+\end{equation}
+Đối với một hạt tự do, hoặc đối với một thế thông thường phụ thuộc vị trí, động lượng chính tắc và động lượng cơ học trùng nhau. Tương tác từ phụ thuộc vào vận tốc, nên chúng không còn trùng nhau nữa.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_10_figure_04.png}
+\caption{Trên bảng, định nghĩa chính tắc \(p_i=\partial L/\partial\dot x_i\) được tách khỏi \(m\dot x_i\), rồi bắt đầu được lấy đạo hàm dọc theo quỹ đạo.}
+\lectureframe{00:37:33}
+\end{figure}
+
+Sự phân biệt này không phải là thuật ngữ vì bản thân thuật ngữ. Động lượng chính tắc là đại lượng đi vào các phương trình Hamilton, các ngoặc Poisson, và định luật bảo toàn gắn với một tọa độ chu kỳ. Động lượng cơ học là khối lượng nhân với vận tốc, đo được trực tiếp.
+
+\begin{classroomqa}
+\audiencequestion{\((e/c)\mathbf A\cdot\mathbf v\) là động năng hay thế năng, và làm sao biết phải cộng hay trừ nó?}
+\lecturerresponse{Nó không phải động năng thông thường cũng không phải thế thông thường phụ thuộc vị trí. Nó là một tương tác phụ thuộc vận tốc. Ở giai đoạn này, dấu của nó là một phần của hạng ghép được đề xuất; đổi dấu đó tương đương với việc đảo dấu điện tích hoặc đảo dấu của \(\mathbf A\). Phép kiểm tra có tính quyết định là định luật lực suy ra sau đó.}
+\end{classroomqa}
+
+\section{Lần theo phép tính đại số đến lực Lorentz}
+
+Bài giảng đi chậm qua một thành phần. Với \(p_x\),
+\begin{equation}
+  p_x=m\dot x+\frac{e}{c}A_x(\mathbf x).
+\end{equation}
+Mặc dù trường ngoài là tĩnh, \(A_x(\mathbf x(t))\) vẫn thay đổi khi hạt chuyển động. Đạo hàm toàn phần theo thời gian của nó là
+\begin{equation}
+  \frac{dA_x}{dt}
+  =
+  \frac{\partial A_x}{\partial x}\dot x
+  +
+  \frac{\partial A_x}{\partial y}\dot y
+  +
+  \frac{\partial A_x}{\partial z}\dot z.
+\end{equation}
+Do đó,
+\begin{equation}
+  \dot p_x
+  =
+  m\ddot x
+  +
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_yA_x\,\dot y
+    +
+    \partial_zA_x\,\dot z
+  \right).
+\end{equation}
+Vế phải của phương trình Euler--Lagrange là
+\begin{equation}
+  \frac{\partial L}{\partial x}
+  =
+  \frac{e}{c}
+  \left(
+    \partial_xA_x\,\dot x
+    +
+    \partial_xA_y\,\dot y
+    +
+    \partial_xA_z\,\dot z
+  \right).
+\end{equation}
+Các hạng \(\partial_xA_x\,\dot x\) triệt tiêu nhau. Gom những gì còn lại theo từng thành phần vận tốc, ta được
+\begin{align}
+  m\ddot x
+  &=
+  \frac{e}{c}
+  \left[
+    \left(\partial_xA_y-\partial_yA_x\right)\dot y
+    +
+    \left(\partial_xA_z-\partial_zA_x\right)\dot z
+  \right].
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{Phép tính thành phần \(x\) đã hoàn tất: các đạo hàm của thế vectơ đã kết hợp thành những tổ hợp xoáy.}
+\lectureframe{00:46:41}
+\end{figure}
+
+Dùng
+\begin{align}
+  B_y&=\partial_zA_x-\partial_xA_z,\\
+  B_z&=\partial_xA_y-\partial_yA_x,
+\end{align}
+ta thu được
+\begin{equation}
+  m a_x
+  =
+  \frac{e}{c}
+  \left(B_zv_y-B_yv_z\right)
+  =
+  \frac{e}{c}
+  (\mathbf v\times\mathbf B)_x.
+\end{equation}
+Phép tính tương tự cho \(y\) và \(z\) cho
+\begin{equation}
+  \boxed{
+  m\mathbf a=\frac{e}{c}\,\mathbf v\times\mathbf B
+  }.
+\end{equation}
+Đây là định luật lực Lorentz đối với từ trường. Bài giảng gọi phương trình đầy đủ là phương trình Newton--Lorentz: Newton cung cấp \(m\mathbf a\), Lorentz cung cấp lực từ.
+
+Kết quả vượt qua cả ba phép kiểm tra đã được nêu ra trước phép tính. Hạng mới sinh ra một lực khác không. Lực ấy là bất biến chuẩn vì chỉ còn \(\nabla\times\mathbf A=\mathbf B\). Và thế vectơ, tuy dư thừa, đã đem lại cho lực từ một nguyên lý tác dụng. Nếu thay \(\mathbf A\) bằng \(\mathbf B\) trong hạng tương tác, ta sẽ thu được các tổ hợp xoáy của \(\mathbf B\) và sẽ không tái tạo được định luật này.
+
+\section{Hamiltonian và ý nghĩa của năng lượng}
+
+Câu hỏi tiếp theo là liệu cùng hệ đó có một mô tả Hamiltonian hay không. Bắt đầu với
+\begin{align}
+  p_x&=m\dot x+\frac{e}{c}A_x,\\
+  p_y&=m\dot y+\frac{e}{c}A_y,\\
+  p_z&=m\dot z+\frac{e}{c}A_z.
+\end{align}
+Những hệ thức này có thể được đảo lại:
+\begin{align}
+  \dot x&=\frac{1}{m}\left(p_x-\frac{e}{c}A_x\right),\\
+  \dot y&=\frac{1}{m}\left(p_y-\frac{e}{c}A_y\right),\\
+  \dot z&=\frac{1}{m}\left(p_z-\frac{e}{c}A_z\right).
+\end{align}
+Phép biến đổi Legendre là
+\begin{equation}
+  H=\sum_i p_i\dot x_i-L.
+\end{equation}
+Thế vào và rút gọn, ta được
+\begin{equation}
+  \boxed{
+  H(\mathbf x,\mathbf p)
+  =
+  \frac{1}{2m}
+  \left(
+    \mathbf p-\frac{e}{c}\mathbf A(\mathbf x)
+  \right)^2
+  }.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\textwidth]{lecture_10_figure_06.png}
+\caption{Việc xây dựng Hamiltonian sau khi hoàn tất giữ ba động lượng chính tắc ở vế trái và các bình phương ghép tối thiểu ở vế phải.}
+\lectureframe{00:53:05}
+\end{figure}
+
+Khi viết theo các biến chính tắc, biểu thức này khác Hamiltonian của hạt tự do. Tuy nhiên, khi viết theo vận tốc vật lý,
+\begin{equation}
+  H=\frac{\boldsymbol{\pi}^{\,2}}{2m}
+  =\frac12m\mathbf v^2.
+\end{equation}
+Không có mâu thuẫn nào cả. Cùng một giá trị năng lượng bằng số được biểu diễn bởi một hàm khác của \((\mathbf x,\mathbf p)\), nên các phương trình Hamilton khác đi mặc dù năng lượng vẫn bằng động năng thông thường.
+
+Vì trường là tĩnh, \(H\) được bảo toàn. Vì vậy tốc độ không đổi. Lực Lorentz làm cho cùng sự thật ấy trở nên hiển nhiên:
+\begin{equation}
+  \frac{d}{dt}\left(\frac12mv^2\right)
+  =
+  m\mathbf v\cdot\mathbf a
+  =
+  \frac{e}{c}\,
+  \mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+Từ trường làm đổi hướng chuyển động, chứ không làm đổi độ lớn của vận tốc. Nó uốn cong quỹ đạo nhưng không sinh công.
+
+\section{Giải trường đều bằng cách đổi chuẩn}
+
+Sau giờ nghỉ, hãy xét lại trường đều
+\begin{equation}
+  \mathbf B=B\hat{\mathbf z}.
+\end{equation}
+Mục tiêu không chỉ đơn thuần là giải một quỹ đạo quen thuộc. Mục tiêu là chỉ ra vì sao việc chọn một chuẩn có thể khiến một phép tính đối xứng gần như không tốn công.
+
+\subsection{Chuẩn thứ nhất: Các tọa độ y và z là tọa độ chu kỳ}
+
+Lấy
+\begin{equation}
+  A_x=A_z=0,
+  \qquad
+  A_y=Bx.
+\end{equation}
+Khi đó
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  +
+  \frac{eB}{c}x\dot y.
+\end{equation}
+Các tọa độ \(y\) và \(z\) không xuất hiện tường minh. Chúng là các tọa độ chu kỳ, nên các xung lượng chính tắc của chúng được bảo toàn. Với \(z\),
+\begin{equation}
+  p_z=m\dot z,
+  \qquad
+  \dot p_z=0,
+\end{equation}
+và do đó
+\begin{equation}
+  a_z=0.
+\end{equation}
+Hạt chuyển động đều dọc theo trường.
+
+Với \(y\),
+\begin{equation}
+  p_y=m\dot y+\frac{eB}{c}x,
+  \qquad
+  \dot p_y=0.
+\end{equation}
+Do đó
+\begin{equation}
+  m a_y+\frac{eB}{c}v_x=0,
+  \qquad
+  \boxed{m a_y=-\frac{eB}{c}v_x}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_07.png}
+\caption{Trong chuẩn \(A_y=Bx\), bảng ghi lại các đại lượng bảo toàn \(p_z\) và \(p_y\), cùng thành phần \(y\) của lực Lorentz suy ra từ đó.}
+\lectureframe{01:03:50}
+\end{figure}
+
+\subsection{Chuẩn thứ hai: Tọa độ x là tọa độ chu kỳ}
+
+Bây giờ chuyển sang
+\begin{equation}
+  A_x=-By,
+  \qquad
+  A_y=A_z=0.
+\end{equation}
+Lagrangian trở thành
+\begin{equation}
+  L
+  =
+  \frac{m}{2}
+  \left(\dot x^2+\dot y^2+\dot z^2\right)
+  -
+  \frac{eB}{c}y\dot x.
+\end{equation}
+Lần này \(x\) là tọa độ chu kỳ:
+\begin{equation}
+  p_x=m\dot x-\frac{eB}{c}y,
+  \qquad
+  \dot p_x=0.
+\end{equation}
+Vì thế
+\begin{equation}
+  \boxed{m a_x=\frac{eB}{c}v_y}.
+\end{equation}
+Kết hợp với kết quả của chuẩn thứ nhất và \(a_z=0\), ta thu được đúng
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times B\hat{\mathbf z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_08.png}
+\caption{Sau khi đổi chuẩn, cả hai thành phần ngang của lực Lorentz đều hiện ra. Mỗi thành phần xuất hiện như một định luật bảo toàn xung lượng chính tắc trong một chuẩn khác nhau.}
+\lectureframe{01:08:05}
+\end{figure}
+
+Đối xứng tịnh tiến vật lý đã hiện diện suốt từ đầu đến cuối. Việc chọn chuẩn chỉ làm thay đổi phần nào của đối xứng ấy được biểu lộ như một tọa độ chu kỳ thông thường. Đó là lý do vì sao xung lượng chính tắc có thể được bảo toàn trong một chuẩn và có dạng khác trong một chuẩn khác, trong khi gia tốc đo được vẫn như nhau.
+
+\begin{classroomqa}
+\audiencequestion{Các thành phần của xung lượng chính tắc có bất biến chuẩn không? Chúng có mang ý nghĩa vật lý trực tiếp không?}
+\lecturerresponse{Không. Dưới \(\mathbf A\mapsto\mathbf A+\nabla S\), xung lượng chính tắc thay đổi một lượng \((e/c)\nabla S\). Xung lượng cơ học \(m\mathbf v=\mathbf p-(e/c)\mathbf A\) là bất biến chuẩn và gắn trực tiếp với vận tốc của hạt. Tuy vậy, xung lượng chính tắc vẫn không thể thiếu vì đó là biến được dùng trong các phương trình Hamilton và các dấu ngoặc Poisson.}
+\end{classroomqa}
+
+\section{Quỹ đạo trong từ trường đều}
+
+Phần hình thức đã xong; bây giờ hãy xem chuyển động. Trước hết giả sử \(v_z=0\), khi đó hạt nằm trong mặt phẳng \(xy\). Gia tốc vuông góc với vận tốc, và độ lớn của nó không đổi:
+\begin{equation}
+  |\mathbf a|
+  =
+  \frac{|e|}{mc}vB.
+\end{equation}
+Một hạt chuyển động với tốc độ không đổi dưới một gia tốc có độ lớn không đổi và luôn vuông góc với vận tốc thì chuyển động theo đường tròn.
+
+Nếu \(r\) là bán kính thì gia tốc hướng tâm là \(v^2/r\). Đồng nhất các độ lớn ta được
+\begin{equation}
+  m\frac{v^2}{r}
+  =
+  \frac{|e|}{c}vB,
+\end{equation}
+và do đó
+\begin{equation}
+  \boxed{
+  r=\frac{mcv}{|e|B}
+  }.
+\end{equation}
+Bài giảng lúc đầu viết biểu thức mà thiếu \(c\), nhận ra sự không khớp với quy ước lực Lorentz đã chọn, rồi khôi phục nó. Dấu của \(eB\) quyết định chiều quay; còn bản thân bán kính thì dương.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{Quỹ đạo tròn, vận tốc tiếp tuyến và hệ thức bán kính sau khi đã khôi phục thừa số \(c\) bị thiếu.}
+\lectureframe{01:16:50}
+\end{figure}
+
+Từ trường ấn định quan hệ giữa tốc độ và bán kính nhưng không ấn định tâm của đường tròn. Tâm có thể ở bất cứ đâu trong mặt phẳng vuông góc với trường. Tốc độ vuông góc với trường lớn hơn cho quỹ đạo lớn hơn; điện tích lớn hơn hoặc từ trường mạnh hơn cho quỹ đạo chặt hơn.
+
+Nếu \(v_z\neq0\), chuyển động ngang vẫn là tròn, còn \(z\) tăng đều. Kết hợp hai chuyển động đó lại ta được một đường xoắn ốc quanh hướng của từ trường.\editorialnote{Bài giảng suy ra riêng từng thành phần: \(a_z=0\) và chuyển động tròn ngang. Sự kết hợp của chúng chính là quỹ đạo xoắn ốc đã nêu.}
+
+\section{Hạng ghép này từ đâu mà có?}
+
+Phép tính quỹ đạo khiến người nghe quay lại điểm xuất phát. Có phải hạng \((e/c)\mathbf A\cdot\mathbf v\) đơn giản là đã được biết trước không? Câu trả lời thẳng thắn là có một số điểm xuất phát khác nhau nhưng đều nhất quán về mặt logic.
+
+\begin{classroomqa}
+\audiencequestion{Có phải ta chỉ đơn giản biết trước Lagrangian từ và viết nó ra không?}
+\lecturerresponse{Trong phần trình bày này, đúng vậy: viết hạng ghép tuyến tính theo vận tốc ra rồi khảo sát nó. Bắt đầu từ hạng đó, ta phát hiện ra bất biến chuẩn, rồi phát hiện rằng các tổ hợp xoáy trong các phương trình hành xử như một từ trường. Cũng có thể bắt đầu từ lực Lorentz quan sát được rồi tìm một hàm tác dụng, hoặc xuất phát từ đòi hỏi hiện đại về bất biến chuẩn. Về mặt lịch sử, các mảnh ghép ấy được khám phá theo một trật tự kém trực tiếp hơn.}
+\end{classroomqa}
+
+Cũng có một phép kiểm tra hữu ích để xem một Lagrangian được đề xuất có cho phép phép dựng Hamilton thông thường hay không. Các phương trình
+\begin{equation}
+  p_i=\frac{\partial L}{\partial\dot x_i}
+\end{equation}
+phải giải được theo các vận tốc, ít nhất trong hệ chính quy đang xét ở đây. Nói chính xác hơn, Hessian theo vận tốc
+\begin{equation}
+  \frac{\partial^2L}
+       {\partial\dot x_i\,\partial\dot x_j}
+\end{equation}
+phải không suy biến. Với hạt này, nó đơn giản là \(m\delta_{ij}\), nên phép biến đổi Legendre là không mơ hồ.
+
+\begin{classroomqa}
+\audiencequestion{Điều gì làm cho một Lagrangian được đề xuất là hợp lệ?}
+\lecturerresponse{Đối với cơ học thông thường đang được phát triển ở đây, nó phải cho các phương trình chuyển động không mơ hồ và cho phép thu được một Hamiltonian duy nhất sau khi giải các vận tốc theo các xung lượng. Các Lagrangian suy biến quả có xuất hiện trong các lý thuyết trường chuẩn, nhưng xử lý các ràng buộc của chúng đòi hỏi công cụ vượt ra ngoài học phần này.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bản thân đối xứng chuẩn có cho một đại lượng bảo toàn không?}
+\lecturerresponse{Không, nếu chỉ xét riêng bài toán hạt trong nền cho trước. Để bàn đúng đắn về định luật bảo toàn tương ứng, phải đưa trường điện từ vào tập các biến động lực học. Trong lý thuyết trường đầy đủ, bất biến chuẩn gắn với bảo toàn điện tích, nhưng điều đó đòi hỏi tác dụng của trường và các phương trình Maxwell.}
+\end{classroomqa}
+
+\section{Nền cố định và động lực học Maxwell}
+
+Cho tới đây chưa có gì cho biết trường điện từ tiến triển như thế nào. Trường đã được cung cấp như một nền cố định, và câu hỏi duy nhất chỉ là: với \(\mathbf E\) và \(\mathbf B\) cho trước, hạt chuyển động như thế nào?
+
+\begin{classroomqa}
+\audiencequestion{Điều này liên hệ với các phương trình Maxwell như thế nào?}
+\lecturerresponse{Để suy ra các phương trình Maxwell, phải cộng thêm tác dụng riêng của trường điện từ và biến phân cả trường lẫn quỹ đạo hạt. Hạng ghép \((e/c)\int\mathbf A\cdot d\mathbf x\) là một phần của tác dụng đầy đủ. Hạng trường không ảnh hưởng đến phép biến phân theo hạt khi nền được giữ cố định, nhưng nó là thiết yếu khi bản thân trường trở thành động lực học.}
+\end{classroomqa}
+
+Trong cơ học cổ điển, ta có thể bỏ qua hình thức tác dụng và đơn giản giả thiết
+\begin{equation}
+  m\mathbf a=\frac{e}{c}\mathbf v\times\mathbf B.
+\end{equation}
+Đối với cơ học của một hạt thử, đó hoàn toàn là một phương trình vi phân có ý nghĩa. Nhưng các cấu trúc Lagrangian và Hamiltonian trở nên không thể thiếu trong cơ học lượng tử, nơi thế vectơ đi vào trực tiếp.
+
+\section{Đơn cực từ và hình ảnh ống dây mảnh}
+
+Nếu
+\begin{equation}
+  \nabla\cdot\mathbf B\neq0?
+\end{equation}
+thì \(\mathbf B\) không thể được biểu diễn khắp nơi bằng một thế vectơ trơn duy nhất, vì phân kỳ của mọi xoáy đều triệt tiêu. Khi đó, phép dựng toàn cục đơn giản dùng trong chương này không còn hiệu lực.
+
+Bài giảng minh họa vấn đề bằng cách hình dung một thanh nam châm hoặc ống dây cực kỳ dài và cực kỳ mảnh. Ở gần một đầu, khi đầu kia được đưa ra xa tùy ý, trường bên ngoài trông giống trường của một cực từ đơn lẻ. Thông lượng hồi về không hề biến mất; nó bị giam bên trong ống mảnh. Nếu ống ấy được lý tưởng hóa đến mức không quan sát được, nó sẽ đóng vai trò sợi dây gắn với một đơn cực biểu kiến.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{Hình vẽ ống dây mảnh trên bảng: các đường sức tỏa ra từ một cực biểu kiến, còn thông lượng hồi về bị giam trong một ống hẹp.}
+\lectureframe{01:27:35}
+\end{figure}
+
+Trong điện từ học cổ điển thông thường, việc ép một từ thông cố định vào một tiết diện tiến về không làm cho cường độ trường và năng lượng trường tăng lên. Bài giảng cố ý dùng những câu trả lời cường điệu về năng lượng vô hạn để nhấn mạnh rằng một đơn cực hiện thực sẽ đòi hỏi vật lý mới, chứ không chỉ đơn thuần là một ống dây bình thường được làm mảnh đi mãi. Trong lý thuyết lượng tử, một ống từ thông được lượng tử hóa đúng cách có thể trở nên không quan sát được ở bên ngoài lõi của nó; đây là ý tưởng đằng sau phép dựng dây Dirac, mặc dù một lý thuyết đơn cực hoàn chỉnh nằm ngoài phạm vi của học phần này.
+
+\begin{classroomqa}
+\audiencequestion{Một hạt điểm có thể có mômen từ. Đó có phải là đơn cực không?}
+\lecturerresponse{Không. Mômen từ là một lưỡng cực: nó có tính cực bằng nhau và trái dấu. Một đơn cực sẽ mang một điện tích từ thuần duy nhất. Cắt một nam châm bình thường không cô lập được các cực của nó; mỗi mảnh đều có đầu bắc và đầu nam riêng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Khó khăn trong việc tách hai đầu ấy có tương tự với sự giam hãm quark không?}
+\lecturerresponse{Đó là một phép loại suy hữu ích. Kéo các quark bị giam hãm ra xa nhau không cho ra một quark cô lập trong các quan sát thông thường; trường nối giữa chúng tạo ra các trạng thái liên kết mới. Ở đây không đồng nhất các cơ chế đó, nhưng hình ảnh các đầu mút được nối bởi một cấu trúc thông lượng không thể tránh khỏi thì tương tự.}
+\end{classroomqa}
+
+Kết luận của bài giảng là thận trọng. Đơn cực từ không thuộc lý thuyết cổ điển thông thường được dùng trong phần suy ra ở đây, nhưng nhiều lý thuyết năng lượng cao có chứa chúng. Nếu chúng tồn tại như các hạt cơ bản, người ta kỳ vọng rằng chúng gắn với những thang năng lượng vượt rất xa cơ học trình bày trong lớp học này.
+
+\section{Đại số khác của Hamilton và chủ đề còn dang dở}
+
+Một câu hỏi cuối cùng từ cử tọa là về quaternion của Hamilton. Về mặt lịch sử, chúng tách biệt với cơ học Hamilton. Hamilton tìm kiếm một đại số có thể đóng vai trò đối với các phép quay ba chiều tương tự vai trò mà các số phức đảm nhiệm đối với các phép quay trong mặt phẳng. Kết quả dùng ba đơn vị ảo \(i,j,k\), với
+\begin{equation}
+  i^2=j^2=k^2=ijk=-1,
+\end{equation}
+và, chẳng hạn,
+\begin{equation}
+  ij=k,
+  \qquad
+  ji=-k.
+\end{equation}
+Các quaternion đơn vị cho một biểu diễn hiệu quả của các phép quay ba chiều. Trong cơ học lượng tử, cùng cấu trúc đại số ấy có thể được biểu diễn bằng các ma trận Pauli, với các thừa số thích hợp của đơn vị ảo thông thường. Mối liên hệ này là có thật, nhưng nó không phải là nguồn gốc của xung lượng chính tắc hay Hamiltonian được phát triển trong môn học này.
+
+Chủ đề cuối cùng được yêu cầu là hỗn loạn. Không còn thời gian để triển khai nó. Bài giảng khép lại bằng cách quay về bộ công cụ đã xây dựng: động lực học là chuyển động dọc theo các quỹ đạo trong không gian pha, và ngôn ngữ ấy là điểm khởi đầu để nghiên cứu hành vi chính quy lẫn hỗn loạn. Cấu trúc hình thức của cơ học cổ điển đã đủ hoàn chỉnh để người nghe tiếp tục từ đó.

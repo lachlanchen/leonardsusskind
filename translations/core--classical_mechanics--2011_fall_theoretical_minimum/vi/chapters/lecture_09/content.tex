@@ -1,0 +1,570 @@
+\chapter{Lực từ, thế vectơ và nguyên lý tác dụng}
+
+\lectureoverview{Lực tĩnh điện phù hợp với khuôn mẫu bảo toàn quen thuộc, nhưng lực từ lại phụ thuộc vào vận tốc. Để đưa chúng vào cơ học Lagrange, trước hết ta phát triển giải tích vectơ cần thiết, dùng tính không nguồn của từ trường để đưa vào một thế vectơ, khảo sát tự do gauge của nó, rồi xây dựng hạng từ trong tác dụng.}
+
+\section{Một loại lực mới}
+
+Phần thảo luận trước về mômen động lượng, các con quay hồi chuyển và các dấu ngoặc Poisson đã gộp lại một số chủ đề. Đặc biệt, một vật tích điện quay trong từ trường tiến động gần như theo đúng cách của một con quay hồi chuyển. Giờ đây ta chuyển từ phép tương tự đó sang chuyển động của một hạt tích điện riêng lẻ.
+
+Lực tĩnh điện không đòi hỏi cơ học mới nào. Nếu \(U(\mathbf x)\) là một thế năng, thì
+\begin{equation}
+  \mathbf F=-\nabla U(\mathbf x),
+\end{equation}
+và lập luận thông thường cho ta định luật bảo toàn tổng của động năng và thế năng. Đối với một hạt mang điện tích \(e\) trong một thế tĩnh điện \(V(\mathbf x)\),
+\begin{equation}
+  U(\mathbf x)=eV(\mathbf x),
+  \qquad
+  \mathbf F_{\mathrm{el}}=-e\nabla V.
+\end{equation}
+Lực từ có dạng khác. Chúng phụ thuộc vào vận tốc của hạt, nên không thể được đưa vào chỉ bằng cách cộng thêm một thế năng thông thường khác. Tuy vậy, chúng vẫn tuân theo một nguyên lý tác dụng và chấp nhận cả mô tả Lagrange lẫn mô tả Hamilton. Để đi tới mô tả đó cần có một đoạn xen ngắn nhưng thiết yếu về giải tích vectơ.
+
+\section{Trường và các phép toán cục bộ}
+
+\subsection{Trường ghi nhận điều gì}
+
+Một trường gán một đại lượng vật lý cho mỗi điểm trong không gian và, nói chung, cho mỗi thời điểm. Nhiệt độ và áp suất là các trường vô hướng. Vận tốc gió là một trường vectơ. Điện trường và từ trường là các trường vectơ. Những lý thuyết khác còn chứa các trường vô hướng ngay cả ở thang vi mô, còn hấp dẫn được mô tả bằng một trường tensor. Trong phần thảo luận hiện tại ta tạm bỏ qua mọi phụ thuộc thời gian và viết các trường như những hàm của \(\mathbf x\).
+
+Ý nghĩa thao tác của trường là tính cục bộ. Hãy hình dung một vùng nào đó bị che kín trong một cái túi. Để đo điện trường trong vùng ấy, ta đặt vào đó một điện tích thử nhỏ và quan sát gia tốc của nó. Lực được xác định bởi trường tại nơi điện tích ấy đang ở, chứ không phải bằng cách xét riêng từng nguồn ở xa. Phát biểu tương tự cũng đúng cho từ trường và một điện tích thử đang chuyển động. Về sau, thế vectơ sẽ buộc ta phải thêm một bảo lưu cho bức tranh đơn giản này, nhưng đây là điểm khởi đầu đúng đắn.
+
+\subsection{Toán tử đạo hàm}
+
+Các đạo hàm biến các trường thành những trường khác. Ta gộp ba đạo hàm theo không gian thành
+\begin{equation}
+  \nabla
+  =
+  \left(
+    \frac{\partial}{\partial x},
+    \frac{\partial}{\partial y},
+    \frac{\partial}{\partial z}
+  \right).
+\end{equation}
+Ký hiệu này được đọc là \emph{del} hoặc \emph{nabla}. Hình tam giác lộn ngược của nó rất dễ nhớ, nhưng ý nghĩa thật sự của nó là ở chỗ, về mặt hình thức, nó xử sự như một vectơ có các thành phần là các toán tử vi phân.
+
+Đây là không gian vật lý ba chiều thông thường, không phải không gian pha cũng không phải không gian cấu hình của nhiều hạt. Hơn nữa, \(\nabla\) không phải là một trường vectơ có thể đứng một mình. Nó phải tác dụng lên một đối tượng nào đó. Nếu \(T(\mathbf x)\) là một trường nhiệt độ vô hướng, thì
+\begin{equation}
+  \nabla T
+  =
+  \left(
+    \frac{\partial T}{\partial x},
+    \frac{\partial T}{\partial y},
+    \frac{\partial T}{\partial z}
+  \right)
+\end{equation}
+là gradient của nó, một trường vectơ thực sự.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_01.png}
+\caption{Trên bảng, \(\nabla\) được giới thiệu như một vectơ các toán tử đạo hàm theo không gian và bắt đầu được áp dụng lên một trường vô hướng \(T(\mathbf x)\).}
+\lectureframe{00:11:30}
+\end{figure}
+
+Một vô hướng không chỉ đơn thuần là một đại lượng được viết bằng một thành phần. Đó là đại lượng có giá trị không phụ thuộc vào định hướng của các trục tọa độ. Nhiệt độ là ví dụ tiêu chuẩn. Với một trường vectơ \(\mathbf E\), biểu thức cục bộ \(\mathbf E\cdot\mathbf E\) cũng là một vô hướng. Trái lại, việc dựng một thế bằng cách lấy tích phân một trường là một phép toán không cục bộ; nó dùng các giá trị dọc theo một đường đi.
+
+\subsection{Phân kỳ}
+
+Đối với một trường vectơ \(\mathbf A=(A_x,A_y,A_z)\), đại lượng vô hướng
+\begin{equation}
+  \nabla\cdot\mathbf A
+  =
+  \frac{\partial A_x}{\partial x}
+  +\frac{\partial A_y}{\partial y}
+  +\frac{\partial A_z}{\partial z}
+\end{equation}
+là phân kỳ của nó. Theo ngôn ngữ chất lưu, phân kỳ dương đo xu hướng cục bộ chảy ra ngoài, còn phân kỳ âm đo xu hướng hội tụ vào trong. Một nguồn chất lưu tạo ra phân kỳ dương; một chỗ hút tạo ra phân kỳ âm. Bức tranh này mang tính định tính, nhưng nó sẽ làm cho tính không nguồn của từ trường trở nên hiển nhiên.
+
+\section{Tích có hướng, ký hiệu epsilon và xoáy}
+
+\subsection{Tích có hướng theo các thành phần}
+
+Đối với hai vectơ \(\mathbf V\) và \(\mathbf A\), một thành phần của tích có hướng là
+\begin{equation}
+  (\mathbf V\times\mathbf A)_x
+  =
+  V_yA_z-V_zA_y.
+\end{equation}
+Hai thành phần còn lại thu được bằng cách hoán vòng \(x\to y\to z\to x\). Sẽ hữu ích nếu thay \(x,y,z\) bằng các chỉ số \(1,2,3\). Ký hiệu Kronecker là
+\begin{equation}
+  \delta_{ij}
+  =
+  \begin{cases}
+    1,&i=j,\\
+    0,&i\ne j,
+  \end{cases}
+\end{equation}
+và ký hiệu Levi--Civita được định nghĩa bởi
+\begin{equation}
+  \epsilon_{123}=\epsilon_{231}=\epsilon_{312}=1,
+  \qquad
+  \epsilon_{132}=\epsilon_{321}=\epsilon_{213}=-1,
+\end{equation}
+trong đó \(\epsilon_{ijk}=0\) bất cứ khi nào có hai chỉ số trùng nhau. Một thứ tự tuần hoàn quanh một mặt đồng hồ ba vị trí cho các dấu cộng; đảo chiều cho các dấu trừ. Đổi chỗ bất kỳ một cặp chỉ số nào cũng đảo dấu, nên \(\epsilon_{ijk}\) là phản đối xứng hoàn toàn.
+
+Ta cũng dùng quy ước lấy tổng: một chỉ số lặp lại trong một hạng được lấy tổng từ \(1\) đến \(3\). Khi đó ba phương trình của tích có hướng trở thành
+\begin{equation}
+  (\mathbf V\times\mathbf A)_i
+  =
+  \epsilon_{ijk}V_jA_k.
+\end{equation}
+Chẳng hạn, đặt \(i=1\) thì chỉ còn \((j,k)=(2,3)\) và \((3,2)\):
+\begin{equation}
+  (\mathbf V\times\mathbf A)_1
+  =
+  \epsilon_{123}V_2A_3
+  +\epsilon_{132}V_3A_2
+  =
+  V_2A_3-V_3A_2.
+\end{equation}
+Vì vậy ký pháp cô đọng này chứa chính xác quy tắc theo thành phần quen thuộc.
+
+\subsection{Một vectơ ẩn dưới dạng một ma trận phản đối xứng}
+
+Còn có một biểu diễn thứ hai:
+\begin{equation}
+  V_iA_j-V_jA_i
+  =
+  \epsilon_{ijk}(\mathbf V\times\mathbf A)_k.
+\end{equation}
+Vế trái có hai chỉ số và phản đối xứng dưới phép \(i\leftrightarrow j\). Xét như một ma trận, nó có dạng
+\begin{equation}
+  M_{ij}
+  =
+  \begin{pmatrix}
+    0&M_{12}&M_{13}\\
+    -M_{12}&0&M_{23}\\
+    -M_{13}&-M_{23}&0
+  \end{pmatrix}.
+\end{equation}
+Các phần tử trên đường chéo triệt tiêu, và tam giác dưới được xác định bởi tam giác trên. Vì thế chỉ có ba thành phần độc lập.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_02.png}
+\caption{Một thành phần của tích có hướng và mảng phản đối xứng \(3\times3\) dạng sơ đồ được dùng để đếm các phần tử độc lập của nó. Các dấu trong các ô chỉ có tính gợi nhớ chứ không phải là các ký hiệu bổ sung.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Liệu tích có hướng, hoặc việc đồng nhất nó với một vectơ khác, có còn có nghĩa ngoài ba chiều không?}
+\lecturerresponse{Đối tượng phản đối xứng hai chỉ số có ý nghĩa trong mọi số chiều, nhưng việc đồng nhất nó với một vectơ là điều đặc thù của ba chiều. Một vectơ trong ba chiều có ba thành phần, và một ma trận \(3\times3\) phản đối xứng có ba thành phần độc lập. Trong bốn chiều, các số tương ứng là bốn và sáu, vì \(4(4-1)/2=6\). Đối tượng phản đối xứng ấy vẫn tồn tại và một cách tự nhiên được xem là một 2-dạng, nhưng nó không phải là một bốn-vectơ khác.}
+\end{classroomqa}
+
+\subsection{Xoáy}
+
+Thay \(\mathbf V\) bằng \(\nabla\) sẽ định nghĩa xoáy:
+\begin{equation}
+  (\nabla\times\mathbf A)_i
+  =
+  \epsilon_{ijk}\frac{\partial A_k}{\partial x_j}.
+\end{equation}
+Theo các thành phần thông thường,
+\begin{align}
+  (\nabla\times\mathbf A)_x
+  &=
+  \frac{\partial A_z}{\partial y}
+  -\frac{\partial A_y}{\partial z},\\
+  (\nabla\times\mathbf A)_y
+  &=
+  \frac{\partial A_x}{\partial z}
+  -\frac{\partial A_z}{\partial x},\\
+  (\nabla\times\mathbf A)_z
+  &=
+  \frac{\partial A_y}{\partial x}
+  -\frac{\partial A_x}{\partial y}.
+\end{align}
+Trong khi phân kỳ đo sự loe ra cục bộ, xoáy đo sự tuần hoàn cục bộ. Một chất lưu quay quanh một trục có xoáy không triệt tiêu dọc theo trục ấy. Bức tranh này đặc biệt sinh động đối với các trường vận tốc, dù định nghĩa áp dụng cho mọi trường vectơ.
+
+\section{Hai đồng nhất thức cấu trúc}
+
+Hai mệnh đề sau sẽ đảm nhận gần như toàn bộ công việc toán học:
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)=0,
+  \qquad
+  \nabla\times(\nabla s)=0.
+\end{equation}
+Mệnh đề thứ nhất suy ra vì các đạo hàm bậc hai là đối xứng, còn \(\epsilon_{ijk}\) thì phản đối xứng:
+\begin{equation}
+  \nabla\cdot(\nabla\times\mathbf A)
+  =
+  \epsilon_{ijk}\partial_i\partial_j A_k
+  =0.
+\end{equation}
+Mệnh đề thứ hai suy ra từ sự bằng nhau của các đạo hàm riêng hỗn hợp:
+\begin{equation}
+  \bigl[\nabla\times(\nabla s)\bigr]_i
+  =
+  \epsilon_{ijk}\partial_j\partial_k s
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_03.png}
+\caption{Đồng nhất thức thứ nhất trên bảng: phân kỳ của mọi xoáy đều triệt tiêu.}
+\lectureframe{00:38:26}
+\end{figure}
+
+Đó là các chiều suy ra dễ, thích hợp cho bài tập về nhà đã hứa hoặc một bài kiểm tra đột xuất của buổi giảng. Các mệnh đề đảo cần được xử lý cẩn thận hơn. Ở địa phương, hoặc toàn cục trên một miền đơn liên hay co rút được thích hợp,
+\begin{align}
+  \nabla\cdot\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla\times\mathbf A,\\
+  \nabla\times\mathbf F=0
+  &\quad\Longrightarrow\quad
+  \mathbf F=\nabla s.
+\end{align}
+Nếu thiếu điều kiện về miền, các lỗ và những đặc điểm tô pô toàn cục khác có thể cản trở các kết luận này. Buổi giảng dùng dạng cục bộ, và đó chính xác là điều cần cho phần dưới.
+
+\section{Vì sao từ trường là một xoáy}
+
+\subsection{Không quan sát thấy nguồn từ}
+
+Một từ trường \(\mathbf B\) được định nghĩa theo nghĩa thao tác thông qua tác dụng của nó lên các hạt tích điện và các dòng điện. Trong điện từ học thông thường không có đơn cực từ,
+\begin{equation}
+  \nabla\cdot\mathbf B=0.
+\end{equation}
+Điều này khác với điện trường, mà phân kỳ của nó tỉ lệ với mật độ điện tích. Điện tích là các nguồn và các chỗ hút của thông lượng điện. Chưa từng quan sát thấy một nguồn hay chỗ hút cô lập nào của thông lượng từ.
+
+Các đơn cực từ sẽ làm thay đổi phương trình này. Các lý thuyết trường thống nhất thường cung cấp những lý do lý thuyết để trông đợi những đối tượng như vậy, nhưng nếu chúng tồn tại thì có thể chúng quá nặng để được tạo ra trong các thí nghiệm hiện có. Vì thế lý thuyết hiện tại tiếp tục với mật độ điện tích từ triệt tiêu.
+
+\begin{classroomqa}
+\audiencequestion{Một đơn cực từ sẽ là gì? Nam châm thông thường đã có cực bắc và cực nam rồi.}
+\lecturerresponse{Một đơn cực cô lập sẽ là một nguồn hay chỗ hút thật sự của từ trường, tương tự như một điện tích. Một nam châm thỏi thông thường thì khác. Các đường sức đi ra gần cực bắc của nó uốn qua không gian và quay trở lại qua cực nam, rồi tiếp tục đi qua vật liệu của nam châm. Thứ từ bên ngoài trông như một nguồn và một chỗ hút thực ra lại được nối với nhau, giống như chất lưu chuyển động qua một ống ẩn. Không có sự tạo ra hay hủy đi ròng nào của thông lượng từ.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_04.png}
+\caption{Bảng đối chiếu các nguồn biểu kiến ở cực bắc và cực nam, đồng thời nối các đường sức của chúng xuyên qua nam châm, để nhấn mạnh rằng thông lượng từ không bắt đầu hay kết thúc ở đó.}
+\lectureframe{00:44:56}
+\end{figure}
+
+Vì \(\mathbf B\) không có phân kỳ, định lý đảo cho phép ta viết, ít nhất là cục bộ,
+\begin{equation}
+  \boxed{\mathbf B=\nabla\times\mathbf A}.
+\end{equation}
+Trường \(\mathbf A\) là thế vectơ. Thoạt nhìn, điều này có thể giống như một cách mô tả lại không cần thiết của trường đo được \(\mathbf B\). Mục đích của nó chỉ trở nên rõ ràng khi ta xây dựng tác dụng.
+
+\subsection{Thế vectơ không duy nhất}
+
+Nếu \(\mathbf A\) là một thế vectơ, thì
+\begin{equation}
+  \mathbf A'=\mathbf A+\nabla s
+\end{equation}
+là một thế khác, bởi vì
+\begin{equation}
+  \nabla\times\mathbf A'
+  =
+  \nabla\times\mathbf A+\nabla\times(\nabla s)
+  =
+  \mathbf B.
+\end{equation}
+Phép thay thế này là một \emph{phép biến đổi gauge}. Từ trường là bất biến gauge.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_05.png}
+\caption{Hệ thức định nghĩa \(\mathbf B=\nabla\times\mathbf A\) và phép dịch gauge \(\mathbf A'=\mathbf A+\nabla s\) cùng xuất hiện trên bảng.}
+\lectureframe{01:03:01}
+\end{figure}
+
+Nó được phát âm là \emph{gauge}, không phải \emph{gouache} hay \emph{gouge}--một sự phân biệt mà buổi giảng nhấn mạnh với vẻ nghiêm khắc nửa đùa nửa thật. Bản thân từ này mang tính lịch sử. Nó nảy sinh từ một nỗ lực ban đầu nhằm gắn sự tự do ấy với việc so sánh các chuẩn độ dài ở những vị trí khác nhau; cách hiểu ban đầu đó không còn, nhưng tên gọi thì còn.
+
+\begin{classroomqa}
+\audiencequestion{Trong cuộc thảo luận này, một phép biến đổi gauge có nghĩa cụ thể là \(\mathbf A\mapsto\mathbf A+\nabla s\) phải không?}
+\lecturerresponse{Đúng. Đó chính là toàn bộ phép biến đổi điện từ đang được dùng ở đây. Các phép biến đổi gauge trong lý thuyết Yang--Mills và các lý thuyết trường khác khái quát cùng ý tưởng ấy, nhưng điện từ học chỉ cần cộng thêm gradient của một vô hướng.}
+\end{classroomqa}
+
+Sự không duy nhất này cũng làm sáng tỏ điều gì được đo trực tiếp. Một hạt tích điện trong một vùng nhỏ chịu tác dụng của \(\mathbf B\) cục bộ, và mọi thế vectơ liên hệ với nhau bởi một phép biến đổi gauge đều dự đoán cùng một lực tại đó. Không có thí nghiệm cục bộ nào thuộc kiểu cổ điển này gán một giá trị duy nhất cho \(\mathbf A\).
+
+\begin{classroomqa}
+\audiencequestion{Việc cộng thêm một gradient có phải là mô tả đầy đủ về sự không duy nhất không?}
+\lecturerresponse{Xét cục bộ trên một miền đơn giản thì có. Nếu \(\nabla\times\mathbf A'=\nabla\times\mathbf A\), thì \(\nabla\times(\mathbf A'-\mathbf A)=0\), nên hiệu đó là một gradient. Trên toàn cục, một miền đa liên thông có thể mang thêm những tinh tế khác. Việc cộng một vectơ hằng đã được bao hàm sẵn, vì một vectơ hằng là gradient của một hàm vô hướng tuyến tính. Việc cộng một hằng số vào chính \(s\) cũng không làm thay đổi gì vì gradient của nó triệt tiêu.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu tự do gauge có một lý do vật lý sâu xa bên dưới, thì đó là gì?}
+\lecturerresponse{Buổi giảng tạm hoãn cách diễn giải sâu hơn ấy. Bước đầu hữu ích là làm việc với sự tự do đó và xem nó đi vào biểu thức tác dụng như thế nào. Một khi hình thức luận đã quen thuộc, lý do vì sao các mô tả gauge là không thể thiếu sẽ dễ nhận ra hơn.}
+\end{classroomqa}
+
+\section{Một từ trường, nhiều thế vectơ}
+
+Xét ví dụ đơn giản nhất có thể,
+\begin{equation}
+  \mathbf B=b\,\hat{\mathbf z},
+  \qquad
+  B_x=B_y=0,
+  \qquad
+  B_z=b,
+\end{equation}
+trong đó \(b\) là hằng số. Một thế vectơ là
+\begin{equation}
+  \mathbf A^{(1)}=(0,bx,0).
+\end{equation}
+Thật vậy,
+\begin{equation}
+  (\nabla\times\mathbf A^{(1)})_z
+  =
+  \frac{\partial A_y^{(1)}}{\partial x}
+  -\frac{\partial A_x^{(1)}}{\partial y}
+  =b,
+\end{equation}
+và các thành phần xoáy khác đều triệt tiêu.
+
+Lựa chọn này dường như ưu tiên riêng phương \(y\) mặc dù trường vật lý có đối xứng quay trong mặt phẳng \(x\)-\(y\). Một lựa chọn thứ hai làm cho tính tùy ý ấy trở nên tường minh:
+\begin{equation}
+  \mathbf A^{(2)}=(-by,0,0).
+\end{equation}
+Nó cho
+\begin{equation}
+  (\nabla\times\mathbf A^{(2)})_z
+  =
+  0-\frac{\partial(-by)}{\partial y}
+  =b.
+\end{equation}
+Hai thế sai khác nhau bởi
+\begin{equation}
+  \mathbf A^{(2)}-\mathbf A^{(1)}
+  =
+  (-by,-bx,0)
+  =
+  \nabla(-bxy).
+\end{equation}
+Vì vậy chúng tương đương chuẩn. Một lựa chọn đối xứng quay,
+\begin{equation}
+  \mathbf A^{(\mathrm{sym})}
+  =
+  \frac12\,\mathbf B\times\mathbf r
+  =
+  \left(-\frac{by}{2},\frac{bx}{2},0\right),
+\end{equation}
+là một thành viên khác của cùng một họ đó.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_09_figure_06.png}
+\caption{Hai phần của bảng ghi các lựa chọn \(A_y=bx\) và \(A_x=-by\), cả hai đều tạo ra cùng một trường đều \(B_z=b\).}
+\lectureframe{01:07:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Đây có phải là cùng một sự không duy nhất như khi bố trí các cuộn dây mang dòng điện theo những cách khác nhau để tạo ra một trường không?}
+\lecturerresponse{Không. Những cách bố trí dòng điện khác nhau là những nguồn vật lý khác nhau và có thể tạo ra các trường khác nhau ở nơi khác, ngay cả khi chúng trùng nhau trong một vùng. Tự do chuẩn vẫn còn ngay cả sau khi từ trường đã được xác định ở mọi nơi: cùng một \(\mathbf B\) vật lý vẫn có nhiều thế vectơ.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có thể hình dung việc cộng thêm một gradient như là kéo dãn hoặc nén lại mà không thêm phần xoắn nào không?}
+\lecturerresponse{Đó là một trực giác hình học hữu ích. Xoáy phát hiện phần xoắn cục bộ, còn một gradient thuần túy thì có xoáy bằng không. Mệnh đề ấy được mã hóa chính xác trong \(\nabla\times\nabla s=0\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có tồn tại một quan hệ cố định nào giữa hướng của \(\mathbf A\) và hướng của \(\mathbf B\) không?}
+\lecturerresponse{Không có quan hệ nào độc lập với chuẩn. Các ví dụ ở trên tình cờ có \(A_z=0\), nhưng có thể cộng thêm một \(A_z\) hằng mà không làm thay đổi bất kỳ đạo hàm nào. Khi đó \(\mathbf A\) sẽ không còn vuông góc với \(\mathbf B\) nữa. Chỉ xoáy mới mang nội dung vật lý bất biến trong thảo luận cổ điển này.}
+\end{classroomqa}
+
+Trong tĩnh điện học cũng có một trường hợp tương tự nhưng nhẹ hơn. Vì \(\mathbf E=-\nabla V\), việc thay \(V\) bằng \(V+C\) không làm thay đổi \(\mathbf E\). Thuật ngữ \emph{thế vectơ} được chọn một phần do phép loại suy với sự tự do này của thế vô hướng thông thường: ta có thể thay đổi thế theo cách không làm đổi trường vật lý.
+
+\section{Lực Lorentz}
+
+Giờ ta có thể phát biểu định luật lực mà nguyên lý tác dụng phải tái tạo. Theo các quy ước dùng ở đây,
+\begin{equation}
+  \boxed{
+  \mathbf F
+  =
+  e\left(
+    \mathbf E+\frac{\mathbf v}{c}\times\mathbf B
+  \right)
+  =
+  -e\nabla V+\frac{e}{c}\mathbf v\times\mathbf B
+  }.
+\end{equation}
+Ký hiệu \(e\) là điện tích của hạt, \(\mathbf v=\dot{\mathbf x}\) là vận tốc của nó, và \(V\) là thế vô hướng. Ký pháp này không được khiến ta lẫn \(V\) với \(\mathbf v\). Theo ngôn ngữ SI, \(V\) được đo bằng vôn và \(e\) bằng culông; thừa số \(1/c\) được hiển thị thuộc về quy ước đơn vị dùng trong bài giảng. Điểm cốt lõi về mặt cấu trúc là độc lập với đơn vị.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_07.png}
+\caption{Các hạng điện và từ của lực Lorentz được trình bày cùng nhau. Phần đóng góp từ tỉ lệ với \(\mathbf v\times\mathbf B\).}
+\lectureframe{00:58:54}
+\end{figure}
+
+Hạng điện có tính bảo toàn và đã quen thuộc. Hạng từ là mới. Nó triệt tiêu đối với một hạt đứng yên và vuông góc với cả \(\mathbf v\) lẫn \(\mathbf B\). Do đó,
+\begin{equation}
+  \mathbf v\cdot\mathbf F_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf v\cdot(\mathbf v\times\mathbf B)
+  =0.
+\end{equation}
+Một từ trường tĩnh uốn cong quỹ đạo nhưng không thực hiện công lên hạt. Điều này khác với lực cản nhớt, vốn hướng ngược vận tốc và làm mất động năng.
+
+Thừa số \(v/c\) cũng cho thấy vì sao, với các thang độ lớn trường có thể so sánh được trong các quy ước này, các hiệu ứng từ thường nhỏ hơn các hiệu ứng điện đối với các hạt chuyển động chậm. Electron đủ nhẹ để đạt tới tốc độ lớn, nên độ lệch từ vẫn dễ quan sát.
+
+Về lịch sử, lực tác dụng lên các dây dẫn mang dòng điện đã được biết đến trước khi lực tác dụng lên một điện tích riêng lẻ được tách riêng. Lorentz nhận ra rằng lực trên dây có thể được hiểu bằng cách gán hạng phụ thuộc vận tốc cho mỗi điện tích đang chuyển động. Biểu thức đầy đủ gồm cả điện lẫn từ hiện nay được gọi là định luật lực Lorentz, mặc dù trong thảo luận hiện tại phần mới lạ chính là hạng từ.
+
+\begin{classroomqa}
+\audiencequestion{Toàn bộ biểu thức có một ký hiệu riêng hay chỉ riêng phần từ mới là lực Lorentz?}
+\lecturerresponse{Toàn bộ biểu thức đơn giản là lực \(\mathbf F=m\mathbf a\), và nó thường được gọi là lực Lorentz. Hạng từ là phần về mặt lịch sử gắn trực tiếp nhất với Lorentz. Điện trường và từ trường liên hệ sâu sắc với nhau bởi thuyết tương đối, nhưng sự thống nhất đó không cần cho bài toán cơ học hiện tại.}
+\end{classroomqa}
+
+\subsection{Phép tương tự Coriolis}
+
+Ta đã từng gặp một vận tốc nhân có hướng với một vectơ cố định. Trong một hệ quy chiếu quay với vận tốc góc \(\boldsymbol\omega\), lực Coriolis có thể viết
+\begin{equation}
+  \mathbf F_{\mathrm{Cor}}
+  =
+  2m\,\mathbf v\times\boldsymbol\omega.
+\end{equation}
+Nó có cùng dạng đại số như lực từ:
+\begin{equation}
+  2m\boldsymbol\omega
+  \quad\longleftrightarrow\quad
+  \frac{e}{c}\mathbf B.
+\end{equation}
+Vì thế, một từ trường đều vuông góc với một mặt phẳng sẽ bẻ cong quỹ đạo của hạt mang điện gần như theo đúng cách mà một hệ quay làm lệch các vật đang chuyển động.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_08.png}
+\caption{Lực Lorentz vẫn ở bên trái, còn trên bảng thì thêm dạng Coriolis tương ứng \(2m\,\mathbf v\times\boldsymbol\omega\).}
+\lectureframe{01:02:08}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Lực Coriolis được gọi là lực giả. Nó có kém thực hơn lực từ vì phụ thuộc vào vận tốc không?}
+\lecturerresponse{Sự phụ thuộc vào vận tốc không phải là vấn đề. Một người đứng trên một bệ quay có thể giữ một vật đang chuyển động và cảm nhận lực Coriolis. Nó được gọi là giả vì nó biến mất trong một hệ quy chiếu quán tính, còn hệ quay thì được xác định chính xác bởi sự hiện diện của những hạng quán tính như vậy. Từ \emph{thực} thường kém hữu ích hơn việc nêu rõ đang dùng hệ quy chiếu nào và phương trình nào.}
+\end{classroomqa}
+
+Phép tương tự này có thể được đẩy xa hơn bằng một thí nghiệm tư duy nhỏ. Trên một bệ quay, một điện trường tĩnh điện thích hợp có thể triệt tiêu hạng ly tâm đối với một hạt được chọn, trong khi một từ trường đều thích hợp có thể triệt tiêu hạng Coriolis. Sự triệt tiêu ấy chỉ có tác dụng đối với một tỉ số điện tích-trên-khối lượng được chọn: lực điện và lực từ tỉ lệ với \(e\), còn các lực quán tính tỉ lệ với \(m\). Một cách bố trí trường được chỉnh cho electron sẽ không triệt tiêu những hạng ấy đối với các hạt có \(e/m\) khác.
+
+\section{Xây dựng tác dụng của hạt mang điện}
+
+\subsection{Tác dụng dừng với các đầu mút cố định}
+
+Giờ ta nêu câu hỏi trung tâm: có thể suy ra lực Lorentz từ một nguyên lý tác dụng hay không? Câu trả lời là có, nhưng thế vectơ là không thể thiếu. Một Lagrangian được xây dựng cục bộ chỉ từ hạt cùng \(\mathbf B\) thì không tạo ra lực từ cần có. Thay vì chứng minh mệnh đề phủ định đó, ta xây dựng trực tiếp tác dụng thành công.
+
+Với một quỹ đạo \(\mathbf x(t)\), ta viết
+\begin{equation}
+  S[\mathbf x]
+  =
+  \int_{t_i}^{t_f}L(\mathbf x,\dot{\mathbf x},t)\,dt.
+\end{equation}
+Bài giảng dùng cùng một chữ viết tay cho tác dụng và thế vectơ, nhưng ở đây ta dùng \(S\) cho tác dụng và \(\mathbf A\) cho thế vectơ. Đường đi vật lý làm cho \(S\) dừng dưới các biến phân giữ cố định cả hai đầu mút. Cụm từ truyền thống \emph{tác dụng tối thiểu} là tiện dùng, dù tác dụng dừng chính xác hơn vì cực trị không nhất thiết là cực tiểu.
+
+Việc cố định các đầu mút là quan trọng. Có thể hình dung hai đầu của quỹ đạo bị ghim chặt lên bảng còn phần bên trong thì bị lay động. Đây là một quỹ đạo trong cơ học thông thường, không phải một đối tượng của lý thuyết dây; hình ảnh sợi dây chỉ là một cách để hình dung phép biến phân.
+
+\subsection{Những gì có thể đi vào Lagrangian?}
+
+Khi tắt mọi trường, Lagrangian là động năng,
+\begin{equation}
+  L_0=\frac{m}{2}\dot{\mathbf x}^{\,2}.
+\end{equation}
+Hạng tĩnh điện cũng là dạng tiêu chuẩn:
+\begin{equation}
+  L_{\mathrm{el}}=-eV(\mathbf x).
+\end{equation}
+Hạng từ phải thỏa một số đầu mối:
+\begin{enumerate}
+  \item nó phải tỉ lệ với điện tích \(e\);
+  \item nó phải chứa thừa số \(1/c\) trong đơn vị của bài giảng;
+  \item nó phải liên quan tới vận tốc;
+  \item nó phải là một đại lượng vô hướng dưới phép quay.
+\end{enumerate}
+
+Phương án thử hấp dẫn \(\mathbf B\cdot\dot{\mathbf x}\) là một vô hướng và có chứa vận tốc, nhưng nó cho phương trình chuyển động sai. Hạng đúng dùng thế vectơ:
+\begin{equation}
+  L_{\mathrm{mag}}
+  =
+  \frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  =
+  \frac{e}{c}A_i(\mathbf x)\dot x_i.
+\end{equation}
+Vì vậy, Lagrangian điện từ đầy đủ, độc lập thời gian, là
+\begin{equation}
+  \boxed{
+  L
+  =
+  \frac{m}{2}\dot{\mathbf x}^{\,2}
+  +\frac{e}{c}\mathbf A(\mathbf x)\cdot\dot{\mathbf x}
+  -eV(\mathbf x)
+  }.
+\end{equation}
+Bài giảng 10 sẽ áp dụng các phương trình Euler--Lagrange và chỉ ra tường minh rằng biểu thức này sinh ra lực Lorentz.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_09.png}
+\caption{Việc xây dựng hoàn chỉnh tác dụng trên bảng: một hạng động học tự do cộng với \((e/c)A_i\dot x_i\).}
+\lectureframe{01:26:36}
+\end{figure}
+
+\section{Phép biến đổi chuẩn chỉ làm thay đổi các đầu mút}
+
+Phần đóng góp từ vào tác dụng là
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}
+  \int_{t_i}^{t_f}A_i(\mathbf x)\dot x_i\,dt.
+\end{equation}
+Vì \(\dot x_i\,dt=dx_i\), nó là một tích phân đường dọc theo quỹ đạo \(\gamma\) của hạt:
+\begin{equation}
+  S_{\mathrm{mag}}
+  =
+  \frac{e}{c}\int_\gamma A_i\,dx_i
+  =
+  \frac{e}{c}\int_\gamma\mathbf A\cdot d\mathbf x.
+\end{equation}
+Hãy chia quỹ đạo thành các đoạn ngắn, lấy thành phần của \(\mathbf A\) dọc theo mỗi đoạn, nhân với độ dài đoạn đó, rồi cộng lại. Đó là ý nghĩa hình học của tích phân ấy.
+
+Bây giờ thực hiện phép biến đổi chuẩn
+\begin{equation}
+  A_i\longmapsto A_i+\partial_i s.
+\end{equation}
+Tác dụng thay đổi một lượng
+\begin{align}
+  \Delta S
+  &=
+  \frac{e}{c}\int_\gamma \partial_i s\,dx_i\\
+  &=
+  \frac{e}{c}\int_\gamma ds\\
+  &=
+  \frac{e}{c}
+  \left[
+    s(\mathbf x_f)-s(\mathbf x_i)
+  \right].
+\end{align}
+Mỗi đoạn vi phân đóng góp giá trị của \(s\) ở một đầu trừ đi giá trị ở đầu kia. Khi cộng lại, mọi đóng góp bên trong triệt tiêu dây chuyền, chỉ còn lại hai đầu mút.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_09_figure_10.png}
+\caption{Tích phân đường, việc chia nó thành các đoạn quỹ đạo nhỏ, và kết quả ở đầu mút \(s(\mathbf x_f)-s(\mathbf x_i)\).}
+\lectureframe{01:32:31}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Nếu tác dụng thay đổi dưới một phép biến đổi chuẩn, tại sao quỹ đạo lại không thay đổi?}
+\lecturerresponse{Nguyên lý tác dụng so sánh các đường đi với điểm đầu và điểm cuối cố định. Đại lượng được cộng thêm chỉ phụ thuộc vào các đầu mút ấy, nên nó có cùng giá trị đối với mọi đường đi trong phép so sánh. Biến phân của nó bằng không. Giá trị số của tác dụng không bất biến nghiêm ngặt, nhưng các phương trình Euler--Lagrange và quỹ đạo vật lý thì bất biến chuẩn.}
+\end{classroomqa}
+
+Sự phân biệt này là kết quả khái niệm chính của bài giảng:
+\begin{equation}
+  \begin{aligned}
+    S&\ \hbox{may shift by an endpoint term},\\
+    \delta S&\ \hbox{and the equations of motion do not}.
+  \end{aligned}
+\end{equation}
+Vì thế, tự do chuẩn là tương thích với nguyên lý tác dụng. Thế vectơ có thể đi vào Lagrangian mặc dù từ trường không chọn ra một \(\mathbf A\) duy nhất.
+
+\section{Lập luận tiếp tục từ đây}
+
+Bài giảng hiện tại đã tập hợp các công cụ và tác dụng, nhưng cố ý dừng lại trước khi lấy biến phân của tác dụng ấy. Các bước tiếp theo giờ đã được xác định:
+\begin{enumerate}
+  \item áp dụng các phương trình Euler--Lagrange và thu được
+  \(\mathbf F_{\mathrm{mag}}=(e/c)\mathbf v\times\mathbf B\);
+  \item tính xung lượng chính tắc, nó sẽ khác \(m\mathbf v\);
+  \item xây dựng Hamiltonian;
+  \item xác định các định luật bảo toàn;
+  \item giải chuyển động của một hạt mang điện trong một từ trường đều.
+\end{enumerate}
+
+Con đường đi tới các kết quả ấy giải thích vì sao thế vectơ được đưa vào. Từ trường là xoáy đo được cục bộ, nhưng thế vectơ là đối tượng ghép một cách tự nhiên với quỹ đạo của hạt. Các phép biến đổi chuẩn chỉ làm thay đổi sự ghép đó tại các đầu mút cố định, để cơ học không đổi.

@@ -1,0 +1,535 @@
+\chapter{Trạng thái, tính khả nghịch và động học}
+
+Cơ học cổ điển không chỉ là một tập hợp các phương trình cho các vật rơi, các hành tinh quay quanh quỹ đạo, hay các hạt mang điện. Trước khi chọn bất kỳ phương trình cụ thể nào, ta có thể đặt một câu hỏi tổng quát hơn: một quy luật chuyển động phải có dạng như thế nào thì mới được xem là một quy luật cổ điển? Ta sẽ bắt đầu với những hệ đơn giản đến mức mọi lịch sử khả dĩ đều có thể vẽ lên bảng đen. Một khi các ý niệm về trạng thái, tính tất định, tính khả nghịch và sự bảo toàn đã trở nên rõ ràng ở đó, ta sẽ quay lại các hạt chuyển động trong không gian thông thường.
+
+\section{Hai loại câu hỏi}
+
+Trong cơ học có hai loại câu hỏi. Một loại hỏi về quy luật cụ thể chi phối một hệ nhất định. Một hành tinh chuyển động trong trường hấp dẫn của một vật thể có khối lượng lớn tuân theo một quy luật; một hạt mang điện chuyển động trong từ trường tuân theo một quy luật khác. Đó là những câu hỏi về các quy luật chi tiết của tự nhiên.
+
+Loại câu hỏi kia liên quan đến khuôn khổ chung cho mọi ví dụ như vậy. Có những quy tắc nào mà mọi quy luật được phép đều phải thỏa mãn không? Những đặc trưng nào thuộc về chính cơ học cổ điển, độc lập với lực hay vật thể đang được nghiên cứu? Các ví dụ cụ thể sẽ minh họa câu trả lời, nhưng chính câu hỏi thứ hai này mới là trục tổ chức của môn học.
+
+Ví dụ khởi đầu hữu ích nhất là một đồng xu trừu tượng trên một cái bàn trừu tượng. Ta chỉ giữ lại một tính chất của đồng xu: nó có thể hiện mặt ngửa hoặc mặt sấp. Vì vậy không gian cấu hình của nó là
+\begin{equation}
+  \mathcal C=\{H,T\}.
+\end{equation}
+Từ \emph{configuration} có nghĩa là một trong những cách khả dĩ mà hệ có thể ở trong đó. Một điều kiện ban đầu là việc chọn một trong số chúng. Một đồng xu chỉ có một mặt còn đơn giản hơn, nhưng nó sẽ chỉ có một cấu hình và sẽ chẳng điều gì có thể xảy ra. Hai trạng thái là đủ để làm cho động lực học trở nên khả hữu.
+
+\section{Đồng xu: trạng thái, quy luật và lịch sử}
+
+Hãy để thời gian tiến theo các bước nguyên, như thể thế giới được chiếu sáng bởi một đèn nháy:
+\begin{equation}
+  t=\ldots,-2,-1,0,1,2,\ldots .
+\end{equation}
+Một quy luật chuyển động là một quy tắc cập nhật. Nó gán cho trạng thái ở thời điểm \(t\) một trạng thái tại thời điểm \(t+1\). Quy tắc đơn giản nhất là không làm gì cả:
+\begin{equation}
+  H\longmapsto H,
+  \qquad
+  T\longmapsto T.
+  \label{eq:coin-identity}
+\end{equation}
+Bắt đầu từ \(H\), toàn bộ lịch sử là \(H,H,H,\ldots\); bắt đầu từ \(T\), nó là \(T,T,T,\ldots\). Quy tắc này tẻ nhạt, nhưng nó cho phép tiên đoán hoàn toàn.
+
+Quy tắc khả nghịch còn lại hoán đổi hai trạng thái:
+\begin{equation}
+  H\longmapsto T,
+  \qquad
+  T\longmapsto H.
+  \label{eq:coin-flip}
+\end{equation}
+Các lịch sử bây giờ luân phiên:
+\begin{equation}
+  H,T,H,T,\ldots,
+  \qquad
+  T,H,T,H,\ldots .
+\end{equation}
+Một mũi tên chỉ từ trạng thái trước lần cập nhật sang trạng thái sau lần cập nhật. Vì thế, đuôi mũi tên cho biết hệ bắt đầu ở đâu, còn đầu mũi tên cho biết nó đi tới đâu.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_02.png}
+  \caption{Hai cấu hình của đồng xu và quy luật lật có hướng trên bảng đen trong bài giảng. Quy tắc cập nhật gọn gàng được cho trong phương trình~\eqref{eq:coin-flip}.}
+  \lectureframe{00:06:50}
+  \label{fig:coin-board}
+\end{figure}
+
+Ta có thể mã hóa các mặt bằng một biến hai giá trị,
+\begin{equation}
+  \sigma=
+  \begin{cases}
+    +1,&H,\\
+    -1,&T.
+  \end{cases}
+\end{equation}
+Chữ \(\sigma\) theo truyền thống được dùng cho các đại lượng hai giá trị trong vật lý, đặc biệt trong các mô tả về spin, mặc dù ở đây không cần biết gì về spin. Trong ký hiệu này, hai quy tắc trở thành các phương trình chuyển động:
+\begin{align}
+  \sigma(t+1)&=\sigma(t),
+  &&\text{identity law},\label{eq:sigma-identity}\\
+  \sigma(t+1)&=-\sigma(t),
+  &&\text{flip law}.\label{eq:sigma-flip}
+\end{align}
+Biến đó không thêm vật lý mới. Nó cung cấp một nhãn gọn cho cấu hình và biến một đồ thị thành một phương trình.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_03.png}
+  \caption{Quy luật lật được viết dưới dạng
+  \(\sigma(t+1)=-\sigma(t)\). Các giá trị đóng khung \(\sigma=\pm1\) gắn nhãn cho mặt ngửa và mặt sấp.}
+  \lectureframe{00:08:58}
+  \label{fig:sigma-board}
+\end{figure}
+
+Với một trong hai quy tắc, trạng thái ban đầu và quy luật xác định trạng thái ở mọi thời điểm muộn hơn. Mệnh đề này giả định rằng hệ là \emph{kín}. Nếu có người thò tay vào và xoay đồng xu, thì bàn tay ấy là một ảnh hưởng bên ngoài không được bao gồm trong mô tả của ta. Ta không bác bỏ tính tất định; ta đã thay đổi hệ. Một quy luật cổ điển nhằm chi phối một hệ kín, trong đó mọi ảnh hưởng liên quan đến sự tiến hóa của nó đều đã được tính đến.
+
+Có bốn hàm toán học từ một tập hai phần tử vào chính nó. Hai hàm chưa được viết ở trên đưa cả hai đầu vào đến \(H\), hoặc đưa cả hai đầu vào đến \(T\). Chúng là tất định theo hướng tương lai, nhưng xóa mất sự phân biệt giữa hai quá khứ khả dĩ. Khi áp đặt tính khả nghịch ở dưới đây, các phương trình~\eqref{eq:coin-identity} và \eqref{eq:coin-flip} chính là hai ánh xạ được phép.
+
+\section{Một con xúc xắc: quỹ đạo và các đại lượng bảo toàn}
+
+Hãy thay đồng xu bằng một con xúc xắc. Với mục đích hiện tại, sự thật quan trọng duy nhất về một con xúc xắc là nó có sáu cấu hình,
+\begin{equation}
+  \mathcal C=\{1,2,3,4,5,6\}.
+\end{equation}
+Một điều kiện ban đầu là việc chọn một con số. Ta cũng có thể lại để mọi trạng thái đứng yên, nhưng các đồ thị có hướng hữu ích hơn cho những quy tắc kém tầm thường hơn. Hãy xét
+\begin{equation}
+  1\longmapsto2\longmapsto3\longmapsto4
+  \longmapsto5\longmapsto6\longmapsto1.
+  \label{eq:six-cycle}
+\end{equation}
+Chẳng hạn, bắt đầu ở \(4\), lịch sử là
+
+\[
+  4,5,6,1,2,3,4,\ldots .
+\]
+Sáu trạng thái tạo thành một chu trình.\footnote{Ghi chú nguồn: trong lần đọc đầu tiên các mũi tên, có một câu nói rằng \(6\) quay trở lại \(6\). Tuy nhiên, cụm từ ngay sau đó, chu trình được vẽ ra, và lịch sử được liệt kê đều cho thấy phép cập nhật được chủ ý là \(6\mapsto1\).}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_06.png}
+  \caption{Chu trình đơn gồm sáu trạng thái. Ở mỗi bước của đèn nháy, một trạng thái chuyển sang trạng thái kế tiếp và quay trở lại sau sáu lần cập nhật.}
+  \lectureframe{00:12:40}
+  \label{fig:six-cycle-board}
+\end{figure}
+
+Một quy tắc có thể trông phức tạp hơn mà không khác về cấu trúc. Chẳng hạn,
+\begin{equation}
+  1\to2\to5\to3\to4\to6\to1
+  \label{eq:relabeled-cycle}
+\end{equation}
+vẫn là một chu trình sáu phần tử duy nhất. Nếu các đỉnh được đặt quanh trang theo thứ tự \(1,2,5,3,4,6\), nó trở thành cùng một hình như trong phương trình~\eqref{eq:six-cycle}. Các nhãn như \(1\) và \(5\) là tên gọi; cấu trúc chu trình không phụ thuộc vào chúng.
+
+Một quy luật thật sự khác chia sáu trạng thái thành hai chu trình, chẳng hạn
+\begin{equation}
+  1\to2\to3\to1,
+  \qquad
+  4\to6\to5\to4.
+  \label{eq:two-cycles}
+\end{equation}
+Vẫn chỉ có một con xúc xắc và một quy luật, nhưng một quỹ đạo bắt đầu trên một chu trình thì không bao giờ có thể tới chu trình kia. Ta có thể gán cho các chu trình một số \(Q\),
+\begin{equation}
+  Q=
+  \begin{cases}
+    0,&\text{on the cycle }\{1,2,3\},\\
+    1,&\text{on the cycle }\{4,5,6\}.
+  \end{cases}
+\end{equation}
+Trạng thái thay đổi ở mỗi bước, còn \(Q\) thì không.
+
+\begin{definition}
+Một đại lượng bảo toàn là một hàm của trạng thái mà giá trị của nó không bị thay đổi bởi quy luật chuyển động.
+\end{definition}
+
+Cùng ý tưởng ấy cho phép có một điểm bất động, một chu trình hai phần tử và một chu trình ba phần tử. Nhãn bảo toàn cho biết hệ chiếm quỹ đạo nào; nó không nhất thiết phải xác định trạng thái bên trong quỹ đạo ấy. Vì vậy, bảo toàn là tương thích với chuyển động. Cái được giữ nguyên không nhất thiết là toàn bộ cấu hình mà là một sự phân biệt nào đó giữa các cấu hình khả dĩ.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_07.png}
+  \caption{Một số chu trình rời nhau trên bảng: một điểm bất động, một chu trình hai phần tử và một chu trình ba phần tử. Nhãn chu trình được bảo toàn ngay cả khi trạng thái di chuyển quanh chu trình của nó.}
+  \lectureframe{00:18:40}
+  \label{fig:conserved-cycles-board}
+\end{figure}
+
+Đối với một hệ hữu hạn khả nghịch, mọi quỹ đạo đều là một chu trình. Một chu trình đơn không có nhãn bảo toàn không hằng thuộc kiểu sơ đẳng này, vì quỹ đạo rốt cuộc đi qua mọi trạng thái. Nhiều chu trình cho phép một nhãn như vậy vì sự tiến hóa không bao giờ mang một trạng thái từ thành phần này sang thành phần khác.
+
+\section{Trạng thái phải bao gồm những gì?}
+
+Các ví dụ về đồng xu đã dùng một quy tắc một bước: mặt tiếp theo chỉ phụ thuộc vào mặt hiện tại. Một câu hỏi từ người nghe kiểm tra xem hạn chế ấy có thiết yếu hay không.
+
+\begin{classroomqa}
+\audiencequestion{Liệu có thể xây dựng một chuỗi mặt ngửa và mặt sấp trong đó kết quả kế tiếp phụ thuộc vào nhiều hơn chỉ mặt đang nhìn thấy, có lẽ phụ thuộc vào một hay vài kết quả trước đó không?\lecturetimestamp{00:19:27--00:21:23}}
+
+\lecturerresponse{Có. Trong trường hợp đó, chỉ \(H\) hay \(T\) thôi không phải là trạng thái đầy đủ. Nếu cần một mặt trước đó, hãy mở rộng không gian trạng thái thành
+\(
+  \{HH,HT,TH,TT\}.
+\)
+Mỗi cặp có thứ tự ghi lại mặt hiện tại và mặt ngay trước đó. Khi ấy, sự tiến hóa lại có thể được viết như một quy tắc một bước trên không gian bốn trạng thái này. Nếu còn cần nhiều lịch sử hơn, hãy đưa cả thông tin đó vào.}
+\end{classroomqa}
+
+Câu trả lời này cho ý nghĩa thao tác của trạng thái.
+
+\begin{definition}
+Trạng thái của một hệ tại một thời điểm bao gồm toàn bộ thông tin cần thiết để, cùng với quy luật chuyển động, dự đoán tương lai của nó.
+\end{definition}
+
+Vì vậy, trạng thái không chỉ đơn thuần là một bức ảnh chụp. Nó là bất kỳ tập dữ liệu đầy đủ nào khiến sự tiến hóa trở nên xác định. Về sau, khi ta mô tả một hạt theo cơ học Newton, chỉ vị trí của nó sẽ không đủ; vận tốc cũng sẽ thuộc dữ liệu ban đầu. Đồng xu có trí nhớ là phiên bản đơn giản nhất của cùng một nguyên lý.
+
+\section{Không gian trạng thái vô hạn}
+
+Số trạng thái vô hạn không đòi hỏi số vật vô hạn. Hãy lấy một hạt bị ràng buộc vào các vị trí nguyên trên một đường thẳng vô hạn. Trạng thái của nó là một số nguyên
+\[
+  n\in\mathbb Z.
+\]
+Một quy luật làm nó dịch sang phải một vị trí ở mỗi bước:
+\begin{equation}
+  n(t+1)=n(t)+1.
+  \label{eq:lattice-one}
+\end{equation}
+Quỹ đạo này không bao giờ khép lại, nhưng nó đi qua mọi số nguyên nếu ta theo dõi nó về cả tương lai lẫn quá khứ. Theo nghĩa mở rộng đó, nó đóng vai trò của một chu trình vô tận duy nhất.
+
+Một quy luật khác làm nó di chuyển mỗi lần hai vị trí:
+\begin{equation}
+  n(t+1)=n(t)+2.
+  \label{eq:lattice-two}
+\end{equation}
+Lúc này các vị trí chẵn chỉ tiến hóa qua các vị trí chẵn, còn các vị trí lẻ chỉ qua các vị trí lẻ. Tính chẵn lẻ được bảo toàn:
+\begin{equation}
+  \begin{aligned}
+    Q_{\rm parity}(n)&=n\bmod 2,\\
+    Q_{\rm parity}(n(t+1))&=Q_{\rm parity}(n(t)).
+  \end{aligned}
+\end{equation}
+Việc chuyển từ không gian cấu hình hữu hạn sang không gian cấu hình vô hạn cho phép những lịch sử không bao giờ lặp lại, nhưng không làm thay đổi ý nghĩa của trạng thái, quỹ đạo hay sự bảo toàn.
+
+\section{Tính tất định vẫn chưa phải là tính khả nghịch}
+
+Giờ ta vẽ một quy tắc dự đoán tương lai một cách duy nhất nhưng không thỏa mãn một yêu cầu cổ điển thứ hai. Hãy gán cho một đồng xu ba mặt các trạng thái ngửa, sấp và cạnh, rồi định nghĩa
+\begin{equation}
+  H\to T,
+  \qquad
+  T\to E,
+  \qquad
+  E\to T.
+  \label{eq:nonreversible-map}
+\end{equation}
+Bắt đầu từ \(H\), lịch sử là
+\[
+  H,T,E,T,E,\ldots;
+\]
+bắt đầu từ \(T\) hoặc \(E\), sự luân phiên tiếp theo cũng rõ ràng như nhau. Ở mỗi trạng thái có đúng một mũi tên đi ra, nên quy tắc là tất định theo hướng tương lai.
+
+Khó khăn xuất hiện khi ta cố dựng lại quá khứ. Nếu trạng thái hiện tại là \(T\), thì trạng thái trước đó có thể đã là \(H\) hoặc \(E\). Hai lịch sử đã nhập lại làm một. Hãy đảo mọi mũi tên, và khuyết điểm hiện ra ngay: từ \(T\), đồ thị đảo cho hai khả năng di chuyển. Quy tắc đảo không tất định.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_08.png}
+  \caption{Quy luật \(H,T,E\) không khả nghịch và các lịch sử tiêu biểu của nó. Cả \(H\) lẫn \(E\) đều đi vào \(T\), nên hiện tại không xác định một quá khứ duy nhất.}
+  \lectureframe{00:28:50}
+  \label{fig:nonreversible-board}
+\end{figure}
+
+\begin{definition}
+Một quy luật rời rạc là khả nghịch khi trạng thái hiện tại xác định cả một trạng thái kế tiếp duy nhất lẫn một trạng thái trước đó duy nhất. Trong một đồ thị trạng thái, mỗi trạng thái phải có đúng một mũi tên đi ra và đúng một mũi tên đi vào.
+\end{definition}
+
+Đối với một không gian trạng thái hữu hạn, một phép cập nhật khả nghịch là một hoán vị của các trạng thái. Nó không bao giờ tạo ra hay phá hủy những sự phân biệt giữa các trạng thái; nó chỉ sắp xếp lại chúng. Đó là lý do đồ thị của nó phân rã thành các chu trình. Ánh xạ trong phương trình~\eqref{eq:nonreversible-map} là một hàm, nhưng không phải là đơn ánh, và vì thế không có hàm ngược.
+
+\begin{classroomqa}
+\audiencequestion{Liệu có thể chấp nhận một quy tắc kiểu này nếu các trạng thái biểu diễn xác suất của một hạt hay không?\lecturetimestamp{00:29:46--00:31:17}}
+
+\lecturerresponse{Khi đó sẽ là một khuôn khổ khác. Cơ học cổ điển cơ bản, như được trình bày ở đây, dùng các quy luật tất định chứ không dùng các quy tắc cập nhật xác suất. Dĩ nhiên người ta có thể nghĩ ra và nghiên cứu một quy tắc như vậy, nhưng theo nghĩa này nó không phải là một quy luật cơ học cổ điển. Cơ học lượng tử không tất định theo cùng một cách ấy và tuy vậy vẫn có một dạng tương tự của sự tiến hóa khả nghịch; điều đó đòi hỏi một thảo luận về sau. Cơ học thống kê cổ điển cũng dùng xác suất, nhưng nó bắt đầu từ các quy luật cơ học nền tảng và biểu diễn việc ta không biết đầy đủ dữ liệu ban đầu của chúng.}
+\end{classroomqa}
+
+Sự phân biệt này rất quan trọng. Một phân bố xác suất được dùng vì ta không biết trạng thái cổ điển chính xác không phải là một quy luật chuyển động bất định. Nó mô tả thông tin của ta về một hệ mà sự tiến hóa vi mô của nó vẫn được coi là tất định và khả nghịch.
+
+\section{Các quy luật chính xác và hiểu biết không hoàn hảo}
+
+Dự đoán đòi hỏi hai thành phần:
+\begin{enumerate}
+  \item định luật chuyển động;
+  \item trạng thái ban đầu.
+\end{enumerate}
+Một định luật chính xác không tạo ra một dự báo chính xác khi điều kiện ban đầu chỉ được biết gần đúng. Đối với đồng xu, thật dễ hình dung việc nhìn lên mặt bàn và biết hoàn toàn chính xác mặt của nó. Các biến cơ học thực là liên tục. Vị trí và vận tốc có thể nhận các giá trị thực tùy ý, và không phép đo nào cung cấp được vô hạn chữ số thập phân.
+
+Giả sử trạng thái ban đầu thực nằm trong một vùng nhỏ của các trạng thái khả dĩ.
+Dưới một số động lực học, vùng ấy vẫn nhỏ trong thời gian dài; dưới những động lực học khác, các trạng thái ban đầu lân cận tách xa nhau rất nhanh. Trong một hệ hỗn loạn, những bất định nhỏ ban đầu cuối cùng sẽ lớn lên thành những khác biệt lớn. Khí quyển là một ví dụ quen thuộc. Những phép đo tốt hơn có thể kéo dài thời gian dự báo còn hữu ích, nhưng với bất kỳ độ chính xác đo nào đã cho, luôn có một thời điểm đủ xa mà tại đó dự báo trở nên không đáng tin cậy.
+
+Giới hạn thực tiễn này không đưa sự mơ hồ vào các phương trình.
+Nếu các điều kiện ban đầu được biết chính xác, một định luật cổ điển thuận nghịch sẽ xác định cả tương lai lẫn quá khứ. Với độ chính xác hữu hạn, thay vào đó câu hỏi định lượng là: phải biết trạng thái ban đầu chính xác đến mức nào thì mới đưa ra được một dự đoán cho một khoảng thời gian xác định?
+
+Phép kiểm tra bằng đồ thị giờ đây có thể được kết luận gọn lại. Một định luật được biểu diễn bằng một mũi tên đi vào và một mũi tên đi ra tại mọi trạng thái là tất định và thuận nghịch. Những phát biểu tương ứng cho các hạt sẽ bớt sơ cấp hơn, nhưng chúng biểu đạt cùng một cấu trúc cổ điển.
+
+\section{Từ các trạng thái trừu tượng đến các điểm trong không gian}
+
+Tiếp theo, ta chuyển từ đồng xu và xúc xắc sang các chất điểm. Một hạt có thể chuyển động trong không gian một, ba, năm hoặc bất kỳ số chiều nào khác, nhưng không gian thông thường cho ví dụ trực tiếp nhất. Để mô tả một điểm một cách định lượng, hãy chọn:
+\begin{itemize}
+  \item một gốc tọa độ;
+  \item ba trục vuông góc đôi một;
+  \item một định hướng của các trục ấy;
+  \item một đơn vị độ dài.
+\end{itemize}
+Gốc tọa độ là một quy ước. Có thể đặt nó ở Palo Alto hoặc bất cứ nơi nào khác, và các kết luận vật lý không nên phụ thuộc vào lựa chọn đó. Các trục có thể được ký hiệu là \(x,y,z\), hoặc \(x_1,x_2,x_3\). Sau khi các hướng \(x\) và \(y\) đã được cố định, trục \(z\) có thể chỉ theo một trong hai hướng vuông góc. Ta chọn quy ước tay phải: với ngón cái của bàn tay phải dọc theo \(x\) và ngón trỏ dọc theo \(y\), ngón giữa chỉ dọc theo \(z\).
+
+Các vạch chia bằng nhau dọc theo các trục đòi hỏi một đơn vị, chẳng hạn mét, foot, inch hoặc năm ánh sáng. Một khi các quy ước này đã được cố định, mọi điểm đều được gán bởi ba số,
+\begin{equation}
+  (x,y,z).
+\end{equation}
+Ta có thể đi từ gốc tọa độ tới điểm đó bằng các độ dời dọc theo ba trục. Một hệ gồm nhiều hạt đòi hỏi một bộ ba như vậy cho mỗi hạt.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_09.png}
+  \caption{Các trục Descartes và ba tọa độ của một điểm. Hình vẽ cố định một quy ước tọa độ; bản thân điểm không phụ thuộc vào việc ta chọn đặt gốc tọa độ hay các trục ở đâu.}
+  \lectureframe{00:43:00}
+  \label{fig:coordinates-board}
+\end{figure}
+
+\section{Vectơ và các thành phần của chúng}
+
+Vectơ là một đối tượng có độ lớn và hướng. Độ dời từ gốc tọa độ đến một điểm là một vectơ, nhưng các vectơ cũng mô tả vận tốc, gia tốc, điện trường và nhiều đại lượng khác. Ta sẽ viết một vectơ bằng chữ đậm, chẳng hạn \(\mathbf v\), và độ lớn của nó là \(\lvert\mathbf v\rvert\). Độ lớn là không âm và chỉ bằng không đối với vectơ không.
+
+Về mặt hình học, một vectơ là một mũi tên tự do. Tịnh tiến mũi tên mà không thay đổi độ dài hay hướng của nó thì không làm thay đổi vectơ. Trong một ứng dụng cụ thể, một vectơ có thể được gắn với một điểm, như khi ta chỉ rõ điện trường tại một vị trí cho trước, nhưng sự gắn đó là thông tin bổ sung chứ không phải là một phần của chính vectơ trừu tượng.
+
+Đối với các trục Descartes, một vectơ có các thành phần
+\begin{equation}
+  \mathbf v=(v_x,v_y,v_z).
+\end{equation}
+Các thành phần là những số có dấu thông thường, thu được bằng phép chiếu lên các trục. Chúng mã hóa cả độ lớn lẫn hướng. Định lý Pythagore trong ba chiều cho
+\begin{equation}
+  \lvert\mathbf v\rvert^2
+  =v_x^2+v_y^2+v_z^2,
+  \qquad
+  \lvert\mathbf v\rvert
+  =\sqrt{v_x^2+v_y^2+v_z^2}.
+  \label{eq:vector-magnitude}
+\end{equation}
+Tỉ số giữa các thành phần xác định hướng. Một thành phần âm có nghĩa là vectơ hướng một phần theo chiều âm của trục ấy.
+
+\subsection{Phép nhân với vô hướng và phép cộng}
+
+Phép nhân với một số thực làm thay đổi độ dài của vectơ và, nếu số đó âm, đảo ngược hướng của nó. Với \(c>0\), \(c\mathbf A\) cùng hướng với \(\mathbf A\) và có độ lớn \(c\lvert\mathbf A\rvert\). Đặc biệt, \(-\mathbf A\) có cùng độ dài với \(\mathbf A\) và hướng ngược lại.
+
+Có ba cách hình dung tương đương về phép cộng vectơ. Thứ nhất, đặt đuôi của \(\mathbf B\) tại đầu của \(\mathbf A\); mũi tên từ đuôi của \(\mathbf A\) đến đầu của \(\mathbf B\) là \(\mathbf A+\mathbf B\).
+Thứ hai, đặt hai đuôi trùng nhau rồi dựng một hình bình hành; đường chéo của nó là tổng. Cách này làm tính giao hoán hiện ra rõ ràng:
+\begin{equation}
+  \mathbf A+\mathbf B=\mathbf B+\mathbf A.
+\end{equation}
+Thứ ba, cộng các thành phần tương ứng:
+\begin{equation}
+  C_i=A_i+B_i,
+  \qquad i=x,y,z,
+  \label{eq:component-addition}
+\end{equation}
+trong đó \(\mathbf C=\mathbf A+\mathbf B\). Những quy tắc này cũng xác định các tổ hợp tuyến tính bất kỳ như \(a\mathbf A+b\mathbf B\).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_10.png}
+  \caption{Phép dựng tam giác và hình bình hành cho phép cộng vectơ. Cả hai đều cho cùng một vectơ \(\mathbf A+\mathbf B\).}
+  \lectureframe{00:53:00}
+  \label{fig:vector-addition-board}
+\end{figure}
+
+Không có phép toán tổng quát nào để chia một vectơ cho một vectơ khác. Tuy nhiên, có hai phép tích vectơ tiêu chuẩn. Tích có hướng sẽ được để lại cho một bài giảng sau. Ở đây ta cần tích vô hướng.
+
+\subsection{Tích vô hướng}
+
+Chiếu \(\mathbf A\) lên trục do \(\mathbf B\) xác định. Nếu góc giữa các vectơ là \(\theta\), thì thành phần có dấu của \(\mathbf A\) dọc theo \(\mathbf B\) là \(\lvert\mathbf A\rvert\cos\theta\). Nhân hình chiếu này với \(\lvert\mathbf B\rvert\) xác định
+\begin{equation}
+  \mathbf A\cdot\mathbf B
+  =\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert\cos\theta.
+  \label{eq:dot-geometric}
+\end{equation}
+Kết quả là một vô hướng, không phải một vectơ khác. Phương trình~\eqref{eq:dot-geometric} đối xứng theo \(\mathbf A\) và \(\mathbf B\), nên \(\mathbf A\cdot\mathbf B=\mathbf B\cdot\mathbf A\).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_11.png}
+  \caption{Cách dựng tích vô hướng trên bảng bằng phép chiếu. Dạng sắp chữ là
+  \(\mathbf A\cdot\mathbf B=AB\cos\theta\).}
+  \lectureframe{00:58:30}
+  \label{fig:dot-product-board}
+\end{figure}
+
+Dấu của tích này mang thông tin hình học. Tích vô hướng dương đối với góc nhọn, âm đối với góc tù và bằng không đối với các vectơ vuông góc. Do đó
+\begin{equation}
+  \mathbf A\perp\mathbf B
+  \quad\Longleftrightarrow\quad
+  \mathbf A\cdot\mathbf B=0
+\end{equation}
+đối với các vectơ khác không.
+
+Theo các thành phần,
+\begin{equation}
+  \mathbf A\cdot\mathbf B
+  =A_xB_x+A_yB_y+A_zB_z.
+  \label{eq:dot-components}
+\end{equation}
+Công thức này làm cho việc tính toán trở nên trực tiếp. Đặc biệt,
+\begin{equation}
+  \mathbf A\cdot\mathbf A
+  =A_x^2+A_y^2+A_z^2
+  =\lvert\mathbf A\rvert^2.
+  \label{eq:self-dot}
+\end{equation}
+Khi biết các thành phần của hai vectơ, các phương trình~\eqref{eq:dot-geometric} và
+\eqref{eq:dot-components} xác định góc giữa chúng:
+\begin{equation}
+  \cos\theta
+  =\frac{\mathbf A\cdot\mathbf B}
+  {\lvert\mathbf A\rvert\,\lvert\mathbf B\rvert}.
+\end{equation}
+
+Định lý cosin suy ra từ cùng một phép đại số. Cho \(\mathbf A\) và
+\(\mathbf B\) đi từ một đỉnh chung tới hai đỉnh còn lại của một tam giác. Cạnh thứ ba là
+\(\mathbf C=\mathbf A-\mathbf B\), không phải \(\mathbf A+\mathbf B\). Do đó
+\begin{align}
+  C^2
+  &=(\mathbf A-\mathbf B)\cdot(\mathbf A-\mathbf B)\notag\\
+  &=A^2+B^2-2\mathbf A\cdot\mathbf B\notag\\
+  &=A^2+B^2-2AB\cos\theta.
+  \label{eq:law-of-cosines}
+\end{align}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_04.png}
+  \caption{Tam giác dùng cho định lý cosin. Phần sửa trên bảng xác định cạnh khép kín là
+  \(\mathbf C=\mathbf A-\mathbf B\), từ đó dẫn đến
+  Phương trình~\eqref{eq:law-of-cosines}.}
+  \lectureframe{01:04:29}
+  \label{fig:law-cosines-board}
+\end{figure}
+
+\section{Vị trí, vận tốc và gia tốc}
+
+Hãy chọn một gốc tọa độ và cho \(\mathbf r\) là vectơ vị trí từ gốc đến một chất điểm. Các thành phần của nó là các tọa độ Descartes:
+\begin{equation}
+  \mathbf r=(x,y,z),
+  \qquad
+  \lvert\mathbf r\rvert=\sqrt{x^2+y^2+z^2}.
+\end{equation}
+Thay đổi gốc tọa độ làm thay đổi \(\mathbf r\), một vấn đề mà ta sẽ tạm hoãn lại. Một khi gốc đã được cố định, chuyển động được mô tả bằng một vị trí phụ thuộc thời gian,
+\begin{equation}
+  \mathbf r(t)=\bigl(x(t),y(t),z(t)\bigr).
+\end{equation}
+Vì thế quỹ đạo được mã hóa bởi ba hàm của thời gian.
+
+Vận tốc là đạo hàm theo thời gian của vị trí:
+\begin{equation}
+  \mathbf v(t)=\frac{d\mathbf r}{dt}
+  =\dot{\mathbf r}(t),
+  \qquad
+  v_i=\frac{dx_i}{dt}=\dot x_i.
+  \label{eq:velocity}
+\end{equation}
+Dấu chấm luôn ký hiệu đạo hàm theo thời gian. Độ lớn \(\lvert\mathbf v\rvert\) là tốc độ. Hướng của vectơ vị trí và của vectơ vận tốc nói chung là độc lập nhau: một chất điểm ở một vị trí có thể đang chuyển động theo bất kỳ hướng nào mà bài toán cho phép.
+
+Gia tốc là tốc độ biến thiên của vận tốc và vì thế là đạo hàm bậc hai theo thời gian của vị trí:
+\begin{equation}
+  \mathbf a(t)=\frac{d\mathbf v}{dt}
+  =\dot{\mathbf v}(t)
+  =\frac{d^2\mathbf r}{dt^2}
+  =\ddot{\mathbf r}(t),
+  \qquad
+  a_i=\ddot x_i.
+  \label{eq:acceleration}
+\end{equation}
+Gia tốc cũng là một vectơ. Nếu một chất điểm đang chuyển động theo chiều dương \(x\) mà nhanh dần lên, thì \(a_x>0\). Nếu nó chậm dần lại, thì \(a_x<0\). Điều thường được gọi là giảm tốc đơn giản chỉ là gia tốc ngược với vận tốc hiện thời. Tổng quát hơn, vận tốc có thể thay đổi do đổi hướng ngay cả khi độ lớn của nó vẫn không đổi.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_05.png}
+  \caption{Các thành phần của vận tốc được viết như các đạo hàm theo thời gian của các thành phần vị trí. Trong ký hiệu vectơ gọn,
+  \(\mathbf v=d\mathbf r/dt\).}
+  \lectureframe{01:14:24}
+  \label{fig:velocity-board}
+\end{figure}
+
+\subsection{Gia tốc đều trên một đường thẳng}
+
+Đối với chuyển động một chiều, viết
+\begin{equation}
+  x(t)=a+bt+ct^2.
+  \label{eq:quadratic-motion}
+\end{equation}
+Tại \(t=0\), chất điểm ở \(x=a\). Lấy đạo hàm một lần rồi hai lần cho
+\begin{align}
+  v(t)=\dot x(t)&=b+2ct,\label{eq:line-velocity}\\
+  a(t)=\ddot x(t)&=2c.\label{eq:line-acceleration}
+\end{align}
+Vì thế \(b\) là vận tốc ban đầu và \(2c\) là một gia tốc không đổi. Nếu
+\(c>0\), vận tốc tăng tuyến tính; nếu \(c<0\), nó giảm tuyến tính. Định luật vị trí bậc hai này là dạng của chuyển động dưới một gia tốc không đổi, chẳng hạn như chuyển động lý tưởng hóa của một vật rơi gần bề mặt Trái Đất.
+
+\section{Chuyển động tròn đều}
+
+Trong ví dụ cuối cùng, hãy để một chất điểm chuyển động trong mặt phẳng \(x\)-\(y\) trên đường tròn đơn vị. Nó bắt đầu trên trục \(x\) dương tại \(t=0\), và tọa độ góc của nó tăng đều:
+\begin{equation}
+  \theta(t)=\omega t.
+\end{equation}
+Hằng số \(\omega\) là tần số góc. Một vòng quay tương ứng với độ tăng \(2\pi\) của góc, nên chu kỳ là
+\begin{equation}
+  T=\frac{2\pi}{\omega}.
+  \label{eq:circular-period}
+\end{equation}
+Có thể để góc tăng vượt quá \(2\pi\); vị trí lặp lại mặc dù góc được ghi liên tục không đặt lại từ đầu.
+
+Trên đường tròn đơn vị,
+\begin{equation}
+  \mathbf r(t)
+  =\bigl(\cos\omega t,\,\sin\omega t\bigr).
+  \label{eq:circular-position}
+\end{equation}
+Lấy đạo hàm cho
+\begin{equation}
+  \mathbf v(t)
+  =\omega\bigl(-\sin\omega t,\,\cos\omega t\bigr).
+  \label{eq:circular-velocity}
+\end{equation}
+Vận tốc tiếp tuyến với đường tròn. Ta có thể chứng minh tính vuông góc của nó với bán kính mà không cần dựa vào hình vẽ:
+\begin{align}
+  \mathbf r\cdot\mathbf v
+  &=\cos\omega t\,(-\omega\sin\omega t)
+    +\sin\omega t\,(\omega\cos\omega t)\notag\\
+  &=0.
+  \label{eq:r-dot-v}
+\end{align}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_12.png}
+  \caption{Các thành phần vị trí và vận tốc cho chuyển động trên đường tròn đơn vị. Sự triệt tiêu trong \(\mathbf r\cdot\mathbf v\) xác nhận rằng vận tốc
+  là tiếp tuyến với đường tròn.}
+  \lectureframe{01:24:30}
+  \label{fig:circular-velocity-board}
+\end{figure}
+
+Lấy đạo hàm thêm một lần nữa,
+\begin{equation}
+  \mathbf a(t)
+  =-\omega^2
+  \bigl(\cos\omega t,\,\sin\omega t\bigr)
+  =-\omega^2\mathbf r(t).
+  \label{eq:centripetal-acceleration}
+\end{equation}
+Gia tốc song song với bán kính nhưng chỉ theo hướng ngược lại, hướng vào tâm. Đây là gia tốc hướng tâm.\footnote{Ghi chú thuật ngữ: từ ``ly tâm'' xuất hiện tại chỗ này trong bài giảng, nhưng phương trình và phần mô tả đi kèm xác định gia tốc hướng tâm chuẩn, có hướng vào tâm.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.86\textwidth]{lecture_01_figure_13.png}
+  \caption{Phép tính theo các thành phần của gia tốc trong chuyển động tròn. Mỗi
+  thành phần bằng \(-\omega^2\) lần thành phần vị trí tương ứng, nên
+  \(\mathbf a=-\omega^2\mathbf r\).}
+  \lectureframe{01:26:30}
+  \label{fig:circular-acceleration-board}
+\end{figure}
+
+Vì bán kính bằng một,
+\begin{equation}
+  \lvert\mathbf r\rvert=1,
+  \qquad
+  \lvert\mathbf v\rvert=\omega,
+  \qquad
+  \lvert\mathbf a\rvert=\omega^2.
+\end{equation}
+Tăng \(\omega\) làm tốc độ tăng tuyến tính và gia tốc hướng tâm cần thiết tăng theo bậc hai. Đối với một đường tròn bán kính \(R\), cùng phép tính đó sẽ cho \(v=\omega R\) và
+\(\lvert\mathbf a\rvert=\omega^2R=v^2/R\); bài giảng dùng \(R=1\) để giữ cho phép tính đầu tiên gọn gàng.
+
+Giờ đây ta đã có ngôn ngữ sơ cấp cần thiết cho cơ học chất điểm: các trạng thái và dữ liệu ban đầu, sự tiến hóa thuận nghịch, tọa độ, vectơ và các đạo hàm xác định vận tốc cùng gia tốc. Nhiệm vụ tiếp theo là quyết định chính xác những dữ liệu ban đầu nào quy định một chất điểm, và tìm ra các định luật mang những dữ liệu đó từ thời điểm này sang thời điểm kế tiếp.
