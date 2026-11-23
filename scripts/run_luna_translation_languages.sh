@@ -11,7 +11,25 @@ if [[ -f .translation-work/STOP ]]; then
   printf 'STOP marker exists; remove it explicitly before resuming.\n' >&2
   exit 1
 fi
-export TRANSLATION_QUOTA_HELPER="${TRANSLATION_QUOTA_HELPER:-$root/scripts/translation_quota.py}"
+# Own the whole driver, including the intervals between Python workers.
+exec 9>".translation-work/language-driver.lock"
+flock -n 9 || { printf 'A language driver is already running.\n' >&2; exit 1; }
+export TRANSLATION_PROVIDER="${TRANSLATION_PROVIDER:-codex}"
+case "$TRANSLATION_PROVIDER" in
+  codex)
+    export TRANSLATION_QUOTA_HELPER="${TRANSLATION_QUOTA_HELPER:-$root/scripts/translation_quota.py}"
+    export TRANSLATION_MODEL=gpt-6-luna
+    batch_chars=24000
+    workers=5
+    ;;
+  aginti-openai)
+    export TRANSLATION_MODEL="${TRANSLATION_MODEL:-gpt-5.4}"
+    [[ "$TRANSLATION_MODEL" =~ ^[a-zA-Z0-9._-]+$ ]] || exit 2
+    batch_chars=12000
+    workers=3
+    ;;
+  *) printf 'Unsupported translation provider: %s\n' "$TRANSLATION_PROVIDER" >&2; exit 2 ;;
+esac
 
 if [[ $# != 0 ]]; then
   [[ $# == 2 && $1 == --resume-from ]] || exit 2
@@ -45,15 +63,16 @@ fi
 
 for language in "${languages[@]}"; do
   printf '[%s] Starting %s\n' "$(date -Is)" "$language" | tee -a .translation-work/luna-queue.log
+  printf 'Provider: %s / %s\n' "$TRANSLATION_PROVIDER" "$TRANSLATION_MODEL" | tee -a .translation-work/luna-queue.log
   for repair_round in 0 1 2 3; do
     "$python" scripts/polished_translation.py run \
-    --provider codex \
-    --model gpt-6-luna \
-    --review-model gpt-6-luna \
+    --provider "$TRANSLATION_PROVIDER" \
+    --model "$TRANSLATION_MODEL" \
+    --review-model "$TRANSLATION_MODEL" \
     --reasoning high \
     --codex-timeout 1800 \
-    --batch-chars 24000 \
-    --workers 5 \
+    --batch-chars "$batch_chars" \
+    --workers "$workers" \
     --language "$language" \
       --publish 2>&1 | tee -a .translation-work/luna-queue.log
 

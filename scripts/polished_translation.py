@@ -809,12 +809,61 @@ def codex_chat(prompt, dest, args, model):
     return value
 
 
+def aginti_openai_chat(prompt, dest, args, model):
+    """Ask AgInTi's API provider for text only, without Codex or agent tools."""
+    cwd = WORK / 'aginti-cwd'
+    cwd.mkdir(mode=0o700, parents=True, exist_ok=True)
+    command = [
+        os.environ.get('TRANSLATION_AGINTI_BIN', 'aginti'), 'run', '--stdin', '--json',
+        '--cwd', str(cwd), '--provider', 'openai', '--model', model,
+        '--main-reasoning', args.reasoning, '--routing', 'manual', '--task-profile', 'chatops',
+        '-s', 'safe', '--sandbox-mode', 'host', '--no-scs', '--no-shell', '--no-file-tools',
+        '--no-web-search', '--no-mcp', '--no-wrappers', '--no-parallel-scouts',
+        '--no-auxiliary-tools', '--no-auto-update',
+    ]
+    try:
+        run = subprocess.run(command, cwd=cwd, input=prompt + '\nReturn only the requested JSON object.',
+                             capture_output=True, text=True, encoding='utf-8', timeout=args.aginti_timeout)
+    except subprocess.TimeoutExpired as exc:
+        raise ProviderUnavailable('APITimeoutError: AgInTi OpenAI request timed out') from exc
+    except OSError as exc:
+        raise ProviderUnavailable('Cannot launch AgInTi; verify TRANSLATION_AGINTI_BIN and PATH') from exc
+    try:
+        reply = json.loads(run.stdout)
+        if not isinstance(reply, dict):
+            reply = {}
+    except ValueError:
+        reply = {}
+    if run.returncode or reply.get('ok') is not True or reply.get('failed') or reply.get('stopped'):
+        # Classify diagnostics without copying raw subprocess output (potentially sensitive).
+        diagnostic = f'{reply.get("reason", "")}\n{run.stderr}'.lower()
+        if re.search(r'insufficient.quota|billing|payment|credit balance|hard limit|exceeded your current quota', diagnostic):
+            raise ProviderUnavailable('AgInTi OpenAI API billing or quota blocked; no new requests scheduled')
+        if re.search(r'\b(?:401|403)\b|api.key|unauthori[sz]ed|authentication', diagnostic):
+            raise ProviderUnavailable('AgInTi OpenAI API authentication or permission failed')
+        if re.search(r'\b(?:408|429|50[0234])\b|rate.limit|timed?.out|econn|fetch failed|socket hang up', diagnostic):
+            raise ProviderUnavailable('APIConnectionError: AgInTi OpenAI transport or rate limit')
+        if reply.get('reason') == 'empty_result':
+            raise InvalidReply('AgInTi returned no text')
+        raise ProviderUnavailable(f'AgInTi OpenAI request failed (exit {run.returncode}); inspect AgInTi locally')
+    if reply.get('provider') != 'openai' or reply.get('model') != model:
+        raise ProviderUnavailable('AgInTi did not confirm the requested OpenAI provider and model')
+    try:
+        value = _parse_json_message(reply['result'])
+    except (ValueError, TypeError, KeyError, AttributeError) as exc:
+        raise InvalidReply('AgInTi OpenAI returned invalid translation JSON') from exc
+    write(dest, value)
+    return value
+
+
 def chat(prompt, dest, args, *, model=None):
-    if getattr(args, 'provider', 'deepseek') == 'codex':
+    provider = getattr(args, 'provider', 'deepseek')
+    if provider in {'codex', 'aginti-openai'}:
         if PROVIDER_STOP.is_set():
             raise ProviderUnavailable('Provider stopped; no new requests scheduled')
         try:
-            return codex_chat(prompt, dest, args, model or args.model)
+            call = codex_chat if provider == 'codex' else aginti_openai_chat
+            return call(prompt, dest, args, model or args.model)
         except InvalidReply:
             raise
         except Exception as exc:
@@ -855,10 +904,12 @@ def ensure_language_titles(lang, args):
         return
     path = WORK / 'titles' / f'{lang}.json'
     books = read(MANIFEST)['books']
-    if path.exists():
-        data = read(path)
-        if data.get('model') == args.model and set(data.get('translations', {})) == {b['id'] for b in books}:
-            return
+    def valid_titles(titles):
+        return (isinstance(titles, dict) and set(titles) == {b['id'] for b in books}
+                and all(isinstance(title, str) and title.strip() and not re.search(r'[{}\\]', title)
+                        for title in titles.values()))
+    if path.exists() and valid_titles(read(path).get('translations')):
+        return  # A transport/model switch must not rename established editions.
     if lang == 'zh-Hant':
         drafts = {book['id']: OPENCC_S2T.convert(book['titles']['zh']) for book in books}
         instruction = ('Polish these mechanically converted titles into natural Traditional Chinese as used in Taiwan. '
@@ -872,11 +923,8 @@ def ensure_language_titles(lang, args):
                           'english_reference': {b['id']: b['titles']['en'] for b in books}}, ensure_ascii=False))
     reply = chat(prompt, path.with_suffix('.reply.json'), args)
     translations = reply.get('translations')
-    if not isinstance(translations, dict) or set(translations) != set(drafts):
+    if not valid_titles(translations):
         raise InvalidReply(f'Invalid {lang} title response')
-    if any(not isinstance(value, str) or not value.strip() or re.search(r'[{}\\]', value)
-           for value in translations.values()):
-        raise InvalidReply(f'Unsafe {lang} title response')
     write(path, {'model': args.model, 'translations': translations})
 
 
@@ -991,7 +1039,8 @@ def request_segments(book, lang, rel, prepared, result, rows, args, stage, error
                           'source_sha256': prepared['source_sha256'], 'started_at': time.time()}
     write(result_path(book, lang, rel), result)
     print(json.dumps({'event': 'request', 'book': book['id'], 'lang': lang, 'file': rel,
-                      'stage': stage, 'segments': list(eligible), 'at': time.time()}), flush=True)
+                      'stage': stage, 'segments': list(eligible), 'at': time.time(),
+                      'provider': getattr(args, 'provider', 'deepseek')}), flush=True)
     try:
         reply = chat(prompt, dest, args, model=getattr(args, 'review_model', 'deepseek-reasoner')) if stage != 'writer' else chat(prompt, dest, args)
     except ProviderUnavailable:
@@ -1932,11 +1981,12 @@ def main():
     parser.add_argument('command', choices=['prepare', 'run', 'status', 'compile', 'approve-pilot', 'readme', 'repair', 'review', 'recheck'])
     parser.add_argument('--workers', type=int, default=5)
     parser.add_argument('--ramp-seconds', type=float, default=1)
-    parser.add_argument('--provider', choices=['deepseek', 'codex'], default='deepseek')
+    parser.add_argument('--provider', choices=['deepseek', 'codex', 'aginti-openai'], default='deepseek')
     parser.add_argument('--model', default='deepseek-chat')
     parser.add_argument('--review-model', default='deepseek-reasoner')
     parser.add_argument('--reasoning', choices=['none', 'low', 'medium', 'high', 'xhigh', 'max'], default='medium')
     parser.add_argument('--codex-timeout', type=int, default=1800)
+    parser.add_argument('--aginti-timeout', type=int, default=600)
     parser.add_argument('--batch-chars', type=int, default=4800)
     parser.add_argument('--transport-resumes', type=int, choices=range(4), default=2)
     parser.add_argument('--transport-retry-seconds', type=int, default=300)
@@ -1953,8 +2003,10 @@ def main():
         parser.error('Use 1 to 5 workers')
     if args.transport_retry_seconds < 0:
         parser.error('Transport delay cannot be negative')
-    if args.codex_timeout < 30:
-        parser.error('Codex timeout must be at least 30 seconds')
+    if min(args.codex_timeout, args.aginti_timeout) < 30:
+        parser.error('Provider timeout must be at least 30 seconds')
+    if args.provider == 'aginti-openai' and args.reasoning in {'none', 'max'}:
+        parser.error('AgInTi requires low, medium, high, or xhigh reasoning')
     if args.batch_chars < 1000:
         parser.error('Batch size must be at least 1000 characters')
     with ExitStack() as stack:

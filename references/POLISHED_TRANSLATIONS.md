@@ -103,6 +103,28 @@ semantic and PDF gates. It cannot silently skip a language, publish blocked
 outputs, increase request budgets, or modify the accepted English, Japanese or
 Simplified Chinese editions. Private prompts and results remain under
 `.translation-work/language-repairs/`.
+
+### Run Without Codex
+
+To resume on AgInTi's direct OpenAI API provider, first confirm
+`aginti keys status` reports that OpenAI is available, then run:
+
+```bash
+TRANSLATION_PROVIDER=aginti-openai bash scripts/start_luna_translation_tmux.sh --resume-from vi
+```
+
+Replace `vi` with the first unfinished language. This mode uses the existing
+AgInTi OpenAI API configuration and defaults to `gpt-5.4` with high reasoning.
+It does not use ChatGPT/Codex quota or Codex wrappers, including during repair.
+API calls are billed to the OpenAI API account configured in AgInTi; the
+queue never buys credits or changes billing settings. It stops on API
+authentication or billing failure and bounds retries for transient failures.
+The accepted caches and existing book titles carry over, but new PDFs still
+require source checks, semantic review, and a clean build. Run only one
+language driver at a time.
+
+### Codex Quota
+
 The launcher configures `TRANSLATION_QUOTA_HELPER` to
 `scripts/translation_quota.py`; an alternative helper path can be supplied
 through that environment variable. Checks reuse the helper's freshness-checked

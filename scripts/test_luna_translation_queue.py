@@ -17,6 +17,7 @@ class LunaQueueTests(unittest.TestCase):
         shutil.copy2(Path(__file__).with_name('run_luna_translation_languages.sh'), self.root / 'scripts')
         (self.root / 'scripts/repair_luna_translation_language.sh').write_text(
             'printf "%s %s\\n" "$1" "$2" >>.translation-work/repairs.log\n'
+            'printf "%s/%s\\n" "$TRANSLATION_PROVIDER" "$TRANSLATION_MODEL" >>.translation-work/repair-providers.log\n'
             'touch ".translation-work/repaired-$1"\n')
         self.bin = self.root / 'bin'
         self.bin.mkdir()
@@ -30,6 +31,8 @@ lang = sys.argv[sys.argv.index('--language') + 1]
 work = Path('.translation-work')
 with (work / 'runs.log').open('a') as stream:
     stream.write(lang + '\\n')
+with (work / 'providers.log').open('a') as stream:
+    stream.write(sys.argv[sys.argv.index('--provider') + 1] + '/' + sys.argv[sys.argv.index('--model') + 1] + '\\n')
 scenario = os.environ.get('SCENARIO', 'complete')
 state = 'complete'
 if scenario == 'provider':
@@ -111,6 +114,40 @@ elif args[0] != 'status':
         result = self.run_queue(SCENARIO='provider')
         self.assertNotEqual(result.returncode, 0)
         self.assertFalse((self.root / '.translation-work/repairs.log').exists())
+
+    def test_aginti_provider_is_pinned_across_writing_and_repair(self):
+        result = self.run_queue(SCENARIO='once', TRANSLATION_PROVIDER='aginti-openai')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for name in ('providers', 'repair-providers'):
+            values = (self.root / f'.translation-work/{name}.log').read_text().splitlines()
+            self.assertEqual(set(values), {'aginti-openai/gpt-5.4'})
+
+    def test_aginti_repair_script_does_not_call_codex_or_quota_probe(self):
+        script = 'repair_luna_translation_language.sh'
+        shutil.copy2(Path(__file__).with_name(script), self.root / 'scripts' / script)
+        self.executable('no-codex', 'raise SystemExit("unexpected Codex invocation")')
+        self.executable('recheck', '''
+import sys
+assert sys.argv[1:] == ['scripts/polished_translation.py', 'recheck', '--language', 'vi']
+''')
+        self.executable('aginti-test', '''
+import json, sys
+args = sys.argv[1:]
+assert '--no-wrappers' in args
+assert args[args.index('--provider') + 1] == 'openai'
+assert '--provider aginti-openai' in sys.stdin.read()
+print(json.dumps({'ok': True, 'failed': False, 'stopped': False,
+                  'provider': 'openai', 'model': 'gpt-5.4', 'result': 'repair evidence'}))
+''')
+        env = {**os.environ, 'TRANSLATION_PYTHON': str(self.bin / 'recheck'),
+               'TRANSLATION_CODEX_BIN': str(self.bin / 'no-codex'),
+               'TRANSLATION_AGINTI_BIN': str(self.bin / 'aginti-test'),
+               'TRANSLATION_PROVIDER': 'aginti-openai', 'TRANSLATION_MODEL': 'gpt-5.4'}
+        result = subprocess.run(['bash', f'scripts/{script}', 'vi', '1'],
+                                cwd=self.root, env=env, capture_output=True, text=True, timeout=20)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual((self.root / '.translation-work/language-repairs/vi/round-1-result.md').read_text(),
+                         'repair evidence\n')
 
     def test_stop_marker_is_not_removed(self):
         stop = self.root / '.translation-work/STOP'
