@@ -116,6 +116,7 @@ TRANSLATION_PROVIDER=aginti-openai bash scripts/start_luna_translation_tmux.sh -
 Replace `vi` with the first unfinished language. This mode uses the existing
 AgInTi OpenAI API configuration and defaults to `gpt-5.4` with high reasoning.
 It does not use ChatGPT/Codex quota or Codex wrappers, including during repair.
+AgInTi uses focused execution because the queue already owns batching and review.
 API calls are billed to the OpenAI API account configured in AgInTi; the
 queue never buys credits or changes billing settings. It stops on API
 authentication or billing failure and bounds retries for transient failures.

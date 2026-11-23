@@ -41,6 +41,7 @@ class AgintiTranslationTests(unittest.TestCase):
         self.assertIn('--no-file-tools', command)
         self.assertIn('--stdin', command)
         self.assertIn('Source text', run.call_args.kwargs['input'])
+        self.assertEqual(run.call_args.kwargs['env']['AGINTI_EXECUTION_TIER'], 'focused')
         self.assertNotIn('Source text', command)
         self.probe.assert_not_called()
 

@@ -98,7 +98,7 @@ report it rather than claiming completion. This is bounded sweep $round of 3.
 EOF
 
 if [[ "$provider" == aginti-openai ]]; then
-  timeout --kill-after=15s 45m "${TRANSLATION_AGINTI_BIN:-aginti}" run --stdin --json \
+  AGINTI_EXECUTION_TIER=focused timeout --kill-after=15s 45m "${TRANSLATION_AGINTI_BIN:-aginti}" run --stdin --json \
     --cwd "$root" --provider openai --model "$model" --main-reasoning high \
     --routing manual --task-profile coding -s normal --sandbox-mode host \
     --package-install-policy block --max-steps 60 --no-scs --allow-shell --allow-file-tools \

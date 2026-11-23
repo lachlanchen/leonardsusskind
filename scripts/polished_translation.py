@@ -823,7 +823,8 @@ def aginti_openai_chat(prompt, dest, args, model):
     ]
     try:
         run = subprocess.run(command, cwd=cwd, input=prompt + '\nReturn only the requested JSON object.',
-                             capture_output=True, text=True, encoding='utf-8', timeout=args.aginti_timeout)
+                             capture_output=True, text=True, encoding='utf-8', timeout=args.aginti_timeout,
+                             env={**os.environ, 'AGINTI_EXECUTION_TIER': 'focused'})
     except subprocess.TimeoutExpired as exc:
         raise ProviderUnavailable('APITimeoutError: AgInTi OpenAI request timed out') from exc
     except OSError as exc:
@@ -845,7 +846,9 @@ def aginti_openai_chat(prompt, dest, args, model):
             raise ProviderUnavailable('APIConnectionError: AgInTi OpenAI transport or rate limit')
         if reply.get('reason') == 'empty_result':
             raise InvalidReply('AgInTi returned no text')
-        raise ProviderUnavailable(f'AgInTi OpenAI request failed (exit {run.returncode}); inspect AgInTi locally')
+        session = str(reply.get('sessionId', ''))
+        trace = f'; AgInTi session {session}' if re.fullmatch(r'[A-Za-z0-9-]{8,80}', session) else ''
+        raise ProviderUnavailable(f'AgInTi OpenAI request failed (exit {run.returncode}){trace}')
     if reply.get('provider') != 'openai' or reply.get('model') != model:
         raise ProviderUnavailable('AgInTi did not confirm the requested OpenAI provider and model')
     try:

@@ -131,8 +131,9 @@ import sys
 assert sys.argv[1:] == ['scripts/polished_translation.py', 'recheck', '--language', 'vi']
 ''')
         self.executable('aginti-test', '''
-import json, sys
+import json, os, sys
 args = sys.argv[1:]
+assert os.environ['AGINTI_EXECUTION_TIER'] == 'focused'
 assert '--no-wrappers' in args
 assert args[args.index('--provider') + 1] == 'openai'
 assert '--provider aginti-openai' in sys.stdin.read()
