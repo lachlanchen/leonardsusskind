@@ -1,0 +1,59 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 261,
+  "outline_entries": 135,
+  "target_characters": 203010,
+  "image_placements": 82,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Các chủ đề trong lý thuyết dây",
+  "pdf_sha256": "25338737840f0188e7af11b5a5761509c221199f76b204599f01c11eb30f055c",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 402,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "77b52ceb07d858695cbe257ba2118628b08c0b3912b45f2bdefdd542990171a7",
+    "chapters/lecture_01/content.tex": "e09285f36a657a2d8a91add564a1886acdff3a01de093abb1f77468ae72eb044",
+    "chapters/lecture_02/content.tex": "01933370b815da1cbde412229a24008578851cbf3bddf9dd54f0bee65c33025a",
+    "chapters/lecture_03/content.tex": "0fe93fa66093be3ffde04059dce40848c70f16e3fbd09797a1f0edbb23e2067f",
+    "chapters/lecture_04/content.tex": "ddfab076e69f915e20fc35ce050999c603677369edb69823ed28f8f4cb4a7eaa",
+    "chapters/lecture_05/content.tex": "3deeb3f7ccf45d9c1c22353d1f3da6979c54cb70cd5f766a7ac8bf4fc92801d5",
+    "chapters/lecture_06/content.tex": "015b675373a651140f81347efe63eb65e3175258c06c9134ef0834515a46f45c",
+    "chapters/lecture_07/content.tex": "5e84d3f591322d6a1bbfb0baa602a21c2f474366d084dfadb82521f36e76f5ec",
+    "chapters/lecture_08/content.tex": "73bf1693ddf60b40121923c7fd0b8895675879426a0b59bb6d2b31014b9a03a6",
+    "chapters/lecture_09/content.tex": "b203b5771931220e24ba81e53560748379c4a897316537262457f5707ae9cb65"
+  },
+  "source_files": {
+    "course.tex": "5813fa3876488c0990af4bf15a855abc4eb833dd1e1b4a173b02a8742570c935",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "567923e017f5afbf8d6b82d2b0341bbeabbe06ae28165837759d891dfd670e56",
+    "chapters/lecture_02/content.tex": "df3935948d623649fa1bd4adf69a53f8defeec0fc0c65f1c370452d8403326bf",
+    "chapters/lecture_03/content.tex": "7eeac70ea5e86a155890a459eafd007f8d02b28f119664d2df6502ebc7f4e969",
+    "chapters/lecture_04/content.tex": "280798e99eea6e71529164540437c8fdbe22e752c03c6c39baaa153278b0060c",
+    "chapters/lecture_05/content.tex": "8fce7d01e02b32819996400e347bbc0c596655cc9a35f92f7fdd056a3b17b5fb",
+    "chapters/lecture_06/content.tex": "2ebe6be0dd8eed3ab446d3a7baebea39f33a6b1d97e5026135fdea0e9a0854aa",
+    "chapters/lecture_07/content.tex": "ad35584cafd776fe8bbde8625c31a325f7465d5507753dfefc7f06356991b9c3",
+    "chapters/lecture_08/content.tex": "28c531b7e4cf9483f0bb78491ff0f2a11411be6fee0d4aa70f68b44e949b04a6",
+    "chapters/lecture_09/content.tex": "1c889082ea6d02f33411d3bbdfd9b39ce29e5910b3708a80799a0c4e9a38bae7"
+  },
+  "translated_tex": {
+    "cover.tex": "c1eb167bc1cb058365df03b95e5b5d978c9df7a75d3d933a4ce7d1d1f76d5931",
+    "common_preamble.tex": "0d02843d67d8dc85c57ded072b4a04f055714bd40e42f0746d0607e443aab616",
+    "course.tex": "664b0f544c538dbece65c58bfacad0e5dce7415f10eba88080a10dee1fa660a4",
+    "chapters/lecture_07/content.tex": "89e5e5dd179e6e57634d83d62a9936ee7aadefbbb9f9e5dbc4d9592c5b7bfdee",
+    "chapters/lecture_02/content.tex": "94a7579009d755bbc4d17a91ba358df3b4c8b2a89aef35cbb8d94986e17672f2",
+    "chapters/lecture_09/content.tex": "fd4fd08419f36cc43bfc371660e1c9bf44ca9fa4b225486fed6c57693c0a79d1",
+    "chapters/lecture_01/content.tex": "43a5f1aac12de2cffca2c245d0345073a8e30a50d6320e0fe064feccaeec4b89",
+    "chapters/lecture_03/content.tex": "6cb6333e3d37883d180dcafbb417fc904e83b1139f7082183b47d6eccc914466",
+    "chapters/lecture_08/content.tex": "77994b82d2321bbc53cc49e9d89c7bf22c14e202c8a83634da1eaef17c8aa918",
+    "chapters/lecture_05/content.tex": "3e994bbf96c3a78b66db5a856f97d0e9d62a513cdf4ac6d9f30336ad0b888bba",
+    "chapters/lecture_04/content.tex": "5d592bd5c1a855ac1b9d36a3baf5e2cf47f7d8558aec0ac056cd93c74f3a30d3",
+    "chapters/lecture_06/content.tex": "e5b996f309fb02c04b64f0c223e003b5d708625a6de24aacb8d6a7e72676da53"
+  }
+}

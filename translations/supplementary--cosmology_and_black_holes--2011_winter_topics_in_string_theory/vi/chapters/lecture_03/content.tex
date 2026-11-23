@@ -1,0 +1,492 @@
+\chapter{Chân trời trong tọa độ phẳng và nhiệt động lực học của sự bay hơi}
+
+\lectureoverview{Metric Schwarzschild dường như trở nên kỳ dị tại chân trời, mặc dù một quan sát viên rơi tự do lẽ ra không nhận thấy điều gì đặc biệt ở đó. Ta giải quyết sự căng thẳng này bằng cách chuyển metric gần chân trời thành không-thời gian Minkowski phẳng trong tọa độ cực-hyperbol. Khi đó, cùng một hình học sẽ tách biệt mô tả rơi vào của Alice với mô tả gia tốc ở bên ngoài của Bob. Nửa sau phát triển entropy và nhiệt độ, suy ra nhiệt độ tỉ lệ nghịch với khối lượng của Hawking và định luật bay hơi \(M^3\), rồi kết thúc bằng cách đặt câu hỏi xem sự bảo toàn thông tin đòi hỏi gì ở lý thuyết vi mô của hấp dẫn.}
+
+\section{Điều khó hiểu tại \texorpdfstring{\(r=2GM\)}{r=2GM}}
+
+Hãy bắt đầu với một lỗ đen rất lớn. Chân trời của nó có thể có độ cong nhỏ đến mức một quan sát viên rơi qua đó sẽ thấy, trên bất kỳ vùng nào cỡ phòng thí nghiệm vừa phải, một không-thời gian phẳng gần như trống rỗng. Không va phải bức tường nào, và không có cảnh báo cục bộ nào báo hiệu việc băng qua. Tuy vậy, metric Schwarzschild dường như nói rằng có điều gì đó kỳ dị xảy ra đúng tại bán kính ấy. Mục đích của nửa đầu bài giảng là làm cho hai phát biểu này tương thích với nhau.
+
+Ta dùng quy ước phần lớn dấu cộng. Trong không-thời gian phẳng,
+\begin{equation}
+ds^2=-dt^2+dx^2+dy^2+dz^2,
+\end{equation}
+vì thế một đường thế giới kiểu thời gian có \(ds^2<0\) và thời gian riêng thỏa mãn \(d\tau^2=-ds^2\). Đây là phép đảo dấu tổng thể của quy ước đã dùng trong bài giảng trước; không có đại lượng quan sát được nào phụ thuộc vào lựa chọn đó.
+
+Với \(c=1\), phần tử độ dài Schwarzschild là
+\begin{equation}
+\begin{aligned}
+ds^2={}&-\left(1-\frac{2GM}{r}\right)dt^2
++\frac{dr^2}{1-\frac{2GM}{r}}
++r^2d\Omega_2^2,\\
+d\Omega_2^2={}&d\theta^2+\sin^2\theta\,d\phi^2 .
+\end{aligned}
+\label{eq:l03-schwarzschild}
+\end{equation}
+Bán kính Schwarzschild là \(R_s=2GM\), hay \(R_s=2GM/c^2\) khi khôi phục \(c\). Ở rất xa, \(r\gg R_s\), cả hai hệ số theo bán kính đều tiến tới các giá trị của không gian phẳng. Tuy nhiên, tại \(r=R_s\), hệ số của \(dt^2\) triệt tiêu còn hệ số của \(dr^2\) phân kỳ. Điều đó trông có vẻ nghiêm trọng. Câu hỏi là liệu điều nghiêm trọng nằm ở hình học hay chỉ nằm ở tọa độ.
+
+\section{Hai bài học về tọa độ}
+
+\subsection{Gốc vô hại của tọa độ cực}
+
+Trên một mặt phẳng Euclid thông thường,
+\begin{equation}
+ds^2=dx^2+dy^2.
+\end{equation}
+Đưa vào tọa độ cực
+\begin{equation}
+x=\rho\cos\theta,
+\qquad
+y=\rho\sin\theta .
+\end{equation}
+Một độ dời nhỏ có độ dài theo bán kính là \(d\rho\) và độ dài tiếp tuyến là \(\rho\,d\theta\), do đó
+\begin{equation}
+ds^2=d\rho^2+\rho^2d\theta^2.
+\label{eq:l03-polar}
+\end{equation}
+Tại \(\rho=0\), hệ số góc triệt tiêu. Điều này không làm cho tâm của mặt phẳng trở thành kỳ dị. Nó chỉ nói rằng mọi giá trị của \(\theta\) đều chỉ cùng một điểm ở đó. Vì vậy, một hệ số metric khác thường có thể chỉ ra một hệ tọa độ khác thường chứ không phải một vật lý khác thường.
+
+\subsection{Tọa độ cực-hyperbol}
+
+Bây giờ hãy thay mặt phẳng Euclid bằng không-thời gian Minkowski \(1+1\) chiều,
+\begin{equation}
+ds^2=-dT^2+dX^2.
+\end{equation}
+Trong nêm bên phải \(X>|T|\), định nghĩa
+\begin{equation}
+X=\rho\cosh\omega,
+\qquad
+T=\rho\sinh\omega,
+\qquad \rho>0 .
+\label{eq:l03-rindler-transform}
+\end{equation}
+Đồng nhất thức quen thuộc \(\cos^2\theta+\sin^2\theta=1\) được thay bằng
+\begin{equation}
+\cosh^2\omega-\sinh^2\omega=1.
+\end{equation}
+Vì vậy, một đường có \(\rho\) không đổi là đường hyperbol
+\begin{equation}
+X^2-T^2=\rho^2.
+\end{equation}
+Khác với góc tuần hoàn \(\theta\), tọa độ kiểu độ nhanh \(\omega\) chạy từ \(-\infty\) đến \(+\infty\). Khi \(\omega\) dương và lớn, \(\cosh\omega\) và \(\sinh\omega\) gần như bằng nhau và đường hyperbol tiến sát tới tia null tương lai \(X=T\).
+
+Lấy vi phân Phương trình~\eqref{eq:l03-rindler-transform} cho
+\begin{align}
+dX&=\cosh\omega\,d\rho+\rho\sinh\omega\,d\omega,\\
+dT&=\sinh\omega\,d\rho+\rho\cosh\omega\,d\omega .
+\end{align}
+Các số hạng chéo triệt tiêu, để lại
+\begin{equation}
+ds^2=-\rho^2d\omega^2+d\rho^2.
+\label{eq:l03-rindler-metric}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_02.png}
+\caption{Hình vẽ hoàn chỉnh trên bảng về tọa độ cực-hyperbol: \(X=\rho\cosh\omega\), \(T=\rho\sinh\omega\), cách dựng hyperbol đơn vị, và metric phẳng ở dạng \(ds^2=-\rho^2d\omega^2+d\rho^2\).}
+\lectureframe{00:16:55.000}
+\end{figure}
+
+Phương trình~\eqref{eq:l03-rindler-metric} vẫn mô tả một không-thời gian hoàn toàn phẳng. Hệ số thời gian của nó triệt tiêu tại \(\rho=0\), đúng như hệ số góc của Phương trình~\eqref{eq:l03-polar} triệt tiêu tại gốc. Bản đồ tọa độ suy biến ở đó; không-thời gian thì không.
+
+\section{Khảo sát cận cảnh chân trời Schwarzschild}
+
+Trở lại phần thời gian-bán kính của Phương trình~\eqref{eq:l03-schwarzschild}:
+\begin{align}
+ds^2
+&=-\frac{r-2GM}{r}\,dt^2
++\frac{r}{r-2GM}\,dr^2 .
+\label{eq:l03-rewritten-schwarzschild}
+\end{align}
+Bây giờ ta chỉ xét một lân cận hẹp của \(r=2GM\). Trong các thừa số biến thiên chậm, có thể thay \(r\) bằng \(2GM\). Phải giữ lại thừa số \(r-2GM\), vì nó triệt tiêu và đổi dấu tại chân trời. Do đó
+\begin{equation}
+ds^2\approx
+-\frac{r-2GM}{2GM}\,dt^2
++\frac{2GM}{r-2GM}\,dr^2 .
+\label{eq:l03-near-horizon-r}
+\end{equation}
+
+Chọn một tọa độ bán kính mới \(\rho\) sao cho hạng thứ hai đơn giản là \(d\rho^2\):
+\begin{equation}
+d\rho^2=\frac{2GM}{r-2GM}\,dr^2.
+\end{equation}
+Bên ngoài chân trời, lấy căn bậc hai dương và tích phân từ \(r=2GM\) cho
+\begin{align}
+d\rho&=\sqrt{\frac{2GM}{r-2GM}}\,dr,\\
+\rho&=2\sqrt{2GM}\sqrt{r-2GM},\\
+\rho^2&=8GM(r-2GM),
+\qquad
+r-2GM=\frac{\rho^2}{8GM}.
+\label{eq:l03-rho-r}
+\end{align}
+Thay vào Phương trình~\eqref{eq:l03-near-horizon-r} ta được
+\begin{equation}
+ds^2\approx
+-\frac{\rho^2}{16G^2M^2}\,dt^2+d\rho^2.
+\end{equation}
+Cuối cùng, co giãn lại thời gian Schwarzschild,
+\begin{equation}
+\omega=\frac{t}{4GM},
+\qquad
+d\omega^2=\frac{dt^2}{16G^2M^2},
+\label{eq:l03-omega}
+\end{equation}
+và thu được
+\begin{equation}
+\boxed{ds^2\approx-\rho^2d\omega^2+d\rho^2.}
+\label{eq:l03-near-horizon-rindler}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_03_figure_03.png}
+\caption{Hình trên bảng sau khi co giãn lại thời gian: metric Schwarzschild gần chân trời đã trở thành cùng một metric cực-hyperbol như của không-thời gian Minkowski phẳng.}
+\lectureframe{00:31:35.000}
+\end{figure}
+
+Phép xấp xỉ cải thiện không giới hạn khi lân cận đang xét co lại về phía chân trời. Nó chứng minh mệnh đề cục bộ mà ta cần: với một lỗ đen đủ lớn, chân trời là không-thời gian thông thường được viết trong một hệ tọa độ khác thường. Độ cong không đúng nghĩa là bằng 0 đối với một lỗ đen Schwarzschild có khối lượng hữu hạn, nhưng nó là hữu hạn tại chân trời và có thể được làm nhỏ tùy ý ở đó bằng cách tăng \(M\).\editorialnote{Thang độ cong cục bộ có bậc \(R_s^{-2}\). Metric Rindler là hạng đầu trong một khai triển cục bộ gần chân trời, chứ không phải khẳng định rằng toàn bộ hình học Schwarzschild là phẳng trên toàn cục.}
+
+\begin{classroomqa}
+\audiencequestion{Với \(r<2GM\), Phương trình~\eqref{eq:l03-rho-r} khiến \(\rho\) ở miền ngoài này trở nên ảo. Điều đó có báo hiệu một vấn đề vật lý không?\lecturetimestamp{00:32:30}}
+\lecturerresponse{Nó tái hiện cùng một sự hỏng hóc của tọa độ dưới một dạng khác. Bản đồ hiện tại được dựng cho nêm bên ngoài; để kéo dài qua chân trời cần một bản đồ khác. Sự hỏng hóc của chính \(\rho\) này không phải là một sự kiện vật lý tại chân trời.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Trong phép viết lại gần chân trời, dòng xấp xỉ suy ra từ dòng chính xác ngay trước đó như thế nào?\lecturetimestamp{00:39:21}}
+\lecturerresponse{Chỉ những chỗ xuất hiện của \(r\) biến thiên chậm mới được đặt bằng \(2GM\). Hiệu nhỏ \(r-2GM\) được giữ nguyên. Đó là phép xấp xỉ, và nó ngày càng chính xác khi \(r\) tiến tới \(2GM\).}
+\end{classroomqa}
+
+\section{Ý nghĩa của các tọa độ}
+
+Phép biến đổi xác định
+\begin{equation}
+\rho=0\quad\Longleftrightarrow\quad r=2GM.
+\end{equation}
+Miền ngoài \(r>2GM\) là nêm Rindler bên phải \(X>|T|\). Các đường hyperbol \(\rho\) không đổi biểu diễn những quan sát viên ở lại tại bán kính Schwarzschild cố định. Một tia sáng đi ra được phát từ bất kỳ đâu trong nêm đó sẽ cắt mọi đường thế giới có \(\rho\) lớn hơn, nên một quan sát viên ở bên ngoài có thể liên lạc ra ngoài. Một điểm nằm bên kia biên null tương lai không thể gửi tín hiệu ánh sáng trở lại nêm bên phải. Biên null đó chính là chân trời.
+
+\begin{classroomqa}
+\audiencequestion{Mảnh tọa độ hyperbol được vẽ ở đây có luôn mô tả miền bên ngoài chân trời không?\lecturetimestamp{00:35:22}}
+\lecturerresponse{Có. Trong cách dựng này, \(r>2GM\) cho \(\rho^2>0\) và đặt sự kiện vào nêm ngoài bên phải. Biên null \(\rho=0\) là chân trời; các tọa độ hiện tại không tiếp tục qua đó như các tọa độ ngoài thực.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Một đường hyperbol \(\rho\) không đổi biểu diễn một thời gian hay một khoảng cách?\lecturetimestamp{00:37:21}}
+\lecturerresponse{Nó biểu diễn một khoảng cách riêng cố định tới chân trời trong phép xấp xỉ gần chân trời, và vì thế là một bán kính Schwarzschild cố định. Chuyển động dọc theo đường hyperbol là sự trôi đi của thời gian đối với quan sát viên đứng tại đó.}
+\end{classroomqa}
+
+Dọc theo một quỹ đạo \(\rho\) cố định, Phương trình~\eqref{eq:l03-rindler-metric} cho
+\begin{equation}
+d\tau=\rho\,d\omega.
+\label{eq:l03-proper-time-rindler}
+\end{equation}
+Vì vậy \(\omega\) bản thân nó không phải là thời gian riêng của quan sát viên. Nó là một thời gian góc chung cho họ các đường hyperbol; mỗi quan sát viên nhân nó với \(\rho\) của chính mình, cũng như một góc thông thường được nhân với bán kính của đường tròn để cho độ dài cung.
+
+\begin{classroomqa}
+\audiencequestion{Liệu \(\omega\) có phải là thời gian riêng của quan sát viên gia tốc không?\lecturetimestamp{00:51:45}}
+\lecturerresponse{Gần như vậy. Tại \(\rho\) cố định, độ gia tăng thời gian riêng là \(\rho\,d\omega\). Thừa số \(\rho\) là thiết yếu.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_04.png}
+\caption{Hình nhân quả gần chân trời trên bảng: các biên null cắt nhau, các đường hyperbol bán kính không đổi trong nêm ngoài, và quan hệ tọa độ giữa \(\rho\) và \(r-2GM\).}
+\lectureframe{00:34:35.000}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.04,>=Latex]
+  \draw[->] (-0.3,0) -- (4.6,0) node[right] {\(X\)};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {\(T\)};
+  \draw[very thick,blue!55!black] (0,0) -- (3,3);
+  \draw[very thick,blue!55!black] (0,0) -- (3,-3);
+  \node[blue!55!black,rotate=45] at (0.72,1.02) {future horizon};
+  \draw[thick,domain=-1.45:1.45,samples=80] plot ({0.75*cosh(\x)},{0.75*sinh(\x)});
+  \draw[thick,domain=-1.25:1.25,samples=80] plot ({1.25*cosh(\x)},{1.25*sinh(\x)});
+  \draw[very thick,domain=-1.05:1.05,samples=80] plot ({2.0*cosh(\x)},{2.0*sinh(\x)});
+  \node at (3.64,2.18) {Bob: \(\rho=\mathrm{const.}\)};
+  \draw[very thick,red!65!black,->] (1.2,-2.9) -- (1.2,2.9);
+  \node[red!65!black] at (1.58,-1.75) {Alice};
+  \fill[red!65!black] (1.2,1.2) circle (1.7pt);
+  \draw[dashed,->] (1.2,0) -- (2.27,1.07);
+  \node[align=left] at (3.18,0.80) {\small pre-crossing\\[-0.2em]\small light signal};
+\end{tikzpicture}
+\caption{Bản sắp chữ tương ứng với hình trên bảng. Bob đi theo một đường hyperbol \(\rho\) không đổi có gia tốc; Alice đi theo một đường thẳng quán tính cục bộ băng qua chân trời tương lai. Biên null giới hạn khả năng tiếp cận nhân quả của Bob mà không trở thành một chướng ngại cục bộ đối với Alice.}
+\end{figure}
+
+\section{Alice rơi vào còn Bob lơ lửng}
+
+Hãy để Bob giữ một khoảng cách cố định tới chân trời trong khi Alice buông tay anh ấy và rơi vào. Đường thế giới của Bob là một đường hyperbol và vì vậy có gia tốc. Đường thế giới cục bộ của Alice xấp xỉ là đường thẳng. Cô băng qua biên null trong thời gian riêng hữu hạn và không gặp bất kỳ sự gián đoạn cục bộ nào.
+
+Các mô tả nhân quả là bất đối xứng. Sau khi Alice băng qua, ánh sáng từ cô không thể tới Bob, trong khi ánh sáng do Bob phát ra vẫn có thể tới Alice trong một thời gian. Bob nhận được những tín hiệu do Alice phát ra ở những giai đoạn ngày càng sớm hơn của quãng rơi hữu hạn của cô. Thời điểm chúng tới bị kéo giãn ra ngày càng xa nhau, tần số của chúng bị dịch đỏ, và cường độ của chúng mờ dần. Trong thời gian Schwarzschild, anh ấy không bao giờ thấy chính việc băng qua; Alice dường như tiến tới và dẹt ra trên chân trời một cách tiệm cận. Mũi của cô không dẹt ra trong khi phía sau đầu vẫn bình thường: tín hiệu từ mọi phần đều bị nén vào cùng một lớp giới hạn.
+
+\begin{classroomqa}
+\audiencequestion{Sau khi băng qua, Alice có còn nhìn thấy Bob được không vì các photon của Bob truyền vào phía trong về phía cô?\lecturetimestamp{00:42:48}}
+\lecturerresponse{Có. Mối quan hệ nhân quả một chiều mới là điểm cốt lõi: các tín hiệu đi vào của Bob có thể đi vào, còn các tín hiệu đi ra muộn hơn của Alice thì không thể thoát trở lại tới Bob.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu chân của Alice băng qua trước trong khi mắt cô vẫn còn ở ngoài, liệu cô có tạm thời mất nhìn thấy chính chân mình không?\lecturetimestamp{00:43:03}}
+\lecturerresponse{Không có sự gián đoạn thị giác thoáng qua nào trong một lần rơi thông thường. Ánh sáng luôn cần thời gian để đi từ chân tới mắt; đến khi tín hiệu liên quan tới nơi thì mắt cô cũng đã băng qua. Chỉ một nỗ lực dữ dội nhằm giữ đầu cô ở ngoài trong khi chân tiếp tục đi vào mới tạo ra một tình huống khác và có tính hủy hoại.}
+\end{classroomqa}
+
+Giữ nguyên vị trí là lựa chọn phi quán tính. Bob cần một tên lửa, cũng như một người đứng trên sàn cần lực đẩy hướng lên của sàn để tránh rơi tự do. Bob lơ lửng càng gần chân trời thì gia tốc riêng cần thiết càng lớn; trong phép xấp xỉ Rindler cục bộ, độ lớn của nó là \(a=1/\rho\) trong đơn vị \(c=1\).\editorialnote{Khi khôi phục đơn vị, ta có \(a=c^2/\rho\) cho quan sát viên Rindler cục bộ. Một quan sát viên Schwarzschild tĩnh đúng nghĩa có gia tốc riêng phân kỳ khi tiến gần chân trời.}
+
+\begin{classroomqa}
+\audiencequestion{Khi đứng đây trong giảng đường, chúng ta có đang gia tốc không?\lecturetimestamp{00:45:40}}
+\lecturerresponse{Có, so với một hệ quy chiếu rơi tự do. Sàn đang đỡ chúng ta; nếu không có nó, hoặc không có ba lô phản lực, chúng ta sẽ rơi.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu cuối cùng Bob có thấy Alice ở trong phạm vi một chiều dài Planck tính từ chân trời không, và sau đó điều gì xảy ra?\lecturetimestamp{00:49:24}}
+\lecturerresponse{Đó là chỗ mà mô tả hình học cổ điển không còn đủ nữa. Chiều dài Planck chứa \(\hbar\), nên để trả lời Bob phân giải được gì ở đó cần đến cơ học lượng tử.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các đường bán kính không đổi dường như gặp chân trời tại một góc tọa độ kiểu vuông. Có thể lấy đạo hàm tại đó không?\lecturetimestamp{00:51:12}}
+\lecturerresponse{Có điều gì đó kỳ dị xảy ra với bản đồ tọa độ này tại điểm đó, nhưng không xảy ra với vật lý cục bộ. Một bản đồ bao phủ các nêm khác sẽ loại bỏ góc nhân tạo ấy. Đối với thảo luận hiện tại về miền ngoài, bức tranh Rindler đã chứa sẵn các dữ kiện nhân quả cần thiết.}
+\end{classroomqa}
+
+Vì thế, nếu không nêu rõ người quan sát, thì hỏi liệu Alice \emph{thực sự} có băng qua hay không là không hữu ích. Theo đồng hồ của Alice, cô tới chân trời trong một thời gian riêng hữu hạn. Chuỗi tín hiệu Bob nhận được không bao giờ chứa sự kiện cô băng qua. Vật lý hỏi mỗi người quan sát đo được gì và các bản ghi của họ có thể được so sánh như thế nào.
+
+\begin{classroomqa}
+\audiencequestion{Phải chăng phát biểu chính xác là Bob chỉ có thể thấy một phần hữu hạn của tương lai Alice, mặc dù thời gian quan sát của chính ông là không bị chặn?\lecturetimestamp{00:53:33}}
+\lecturerresponse{Đúng. Alice gán cho phần nhìn thấy được của cú rơi của mình một thời gian riêng hữu hạn. Trong hình học vĩnh cửu lý tưởng hóa, Bob nhận các tín hiệu của phần đó ngày càng trễ và bị dịch đỏ mãi mãi, nhưng ông không thấy cô tiếp tục già đi vượt quá lúc băng qua chân trời.}
+\end{classroomqa}
+
+\section{Chỉ riêng các chân trời gia tốc cũng đã đủ}
+
+Không có gì trong cấu trúc nhân quả này đòi hỏi phải có hố đen. Một tên lửa gia tốc đều mãi mãi đi theo một hyperbol Rindler trong không-thời gian phẳng và có một biên null mà vượt ra ngoài đó không tín hiệu nào có thể đuổi kịp nó. Đối với người quan sát ấy, có một chân trời gia tốc, mặc dù một người quan sát quán tính xem chính miền đó là không gian Minkowski thông thường.
+
+\begin{classroomqa}
+\audiencequestion{Hiện tượng này chỉ riêng cho hố đen, hay nó xảy ra với mọi chân trời?\lecturetimestamp{00:55:25}}
+\lecturerresponse{Cùng hiện tượng đó xảy ra với một người quan sát gia tốc đều. Người quan sát như vậy có một chân trời gia tốc và không thể thấy các sự kiện ở bên kia nó. Về mặt địa phương, chân trời hố đen không khác về vật lý so với trường hợp ấy.}
+\end{classroomqa}
+
+Đây là nguyên lý tương đương đang phát huy tác dụng: trước hết hãy hiểu gia tốc đều, rồi nhận ra cùng một cấu trúc địa phương trong trường hấp dẫn. Nhìn lại, người ta đã có thể dự đoán các chân trời hấp dẫn từ các chân trời gia tốc ngay cả trước khi hố đen được chấp nhận. Bản thân Einstein cũng không chấp nhận sự hình thành vật lý của hố đen, dù chính ông đã cung cấp lý thuyết mà từ đó hình học của chúng suy ra. Chân trời không có gì đặc biệt đối với người quan sát rơi tự do và lại có hệ quả quan trọng đối với người quan sát khăng khăng ở bên ngoài. Đó là một sự căng thẳng giữa những mô tả đều hợp lệ, chưa phải là một nghịch lý.
+
+\section{Trở lại với nhiệt và entropy}
+
+Sau giờ nghỉ, ta chuyển sang góc nhìn nhiệt động học. Trong cách xây dựng trước đó, một hố đen được làm đầy như một bồn tắm, từng giọt một, chỉ khác là mỗi giọt là một photon mang xấp xỉ một bit. Mỗi bit làm tăng diện tích chân trời lên một lượng cỡ một diện tích Planck. Entropy chính xác là
+\begin{equation}
+S_{\mathrm{BH}}=\frac{k_B A}{4\ell_P^2}.
+\end{equation}
+Bài giảng đùa rằng hệ số \(1/4\) lẽ ra có thể tránh được nếu Planck đã định nghĩa độ dài mang tên mình theo cách khác. Điểm nghiêm túc là phân tích thứ nguyên cố định thang đo nhưng không cố định hệ số số học; phép tính của Hawking cố định hệ số đó.\editorialnote{Độ dài Planck có định nghĩa chuẩn là \(\ell_P=\sqrt{G\hbar/c^3}\). Hệ số \(1/4\) là vật lý một khi quy ước này và entropy nhiệt động học thông thường đã được cố định; nhận xét về việc định nghĩa lại nó chỉ là một câu đùa trên lớp về các quy ước.}
+
+Nhiệt độ có vẻ là khái niệm sơ đẳng vì ngón tay và nhiệt kế ghi nhận nó trực tiếp. Entropy thường có vẻ bí ẩn hơn. Bài giảng đảo ngược thứ bậc đó: entropy và năng lượng được coi là các biến cơ bản, còn nhiệt độ được suy ra từ việc năng lượng phải thay đổi bao nhiêu khi entropy thay đổi:
+\begin{equation}
+dE=T\,dS.
+\end{equation}
+Trong hệ đơn vị một-bit của bài giảng, \(\Delta S=1\), nên năng lượng tối thiểu gắn với việc thêm hoặc xóa một bit được gọi là \(T\). Xóa một cách cẩu thả---bằng thứ tương đương về mặt logic với một cái búa tạ---có thể làm tiêu tán nhiều năng lượng hơn tùy ý. Định nghĩa này nói về mức tiêu tán nhỏ nhất có thể khi thông tin bị mất được chuyển vào các bậc tự do vi mô của môi trường. Trong các đơn vị thông thường, một bit nhị phân mang \(\Delta S=k_B\ln2\), và sự xóa thuận nghịch tiêu tán ít nhất \(k_BT\ln2\).\editorialnote{Đây là chuẩn hóa Landauer bị ẩn đi bởi lựa chọn của bài giảng là đo cả entropy lẫn nhiệt độ trong các đơn vị tự nhiên dựa trên năng lượng.}
+
+\subsection{Ước lượng một photon}
+
+Hãy chọn một photon có bước sóng cùng cỡ với bán kính Schwarzschild:
+\begin{equation}
+\lambda\sim R_s=\frac{2GM}{c^2}.
+\end{equation}
+Năng lượng của nó, sai khác đến quy ước \(2\pi\) dùng để phân biệt \(h\) với \(\hbar\), là
+\begin{equation}
+\Delta E\sim \frac{\hbar c}{\lambda}.
+\end{equation}
+Đó là chi phí năng lượng của bit được thêm vào, nên
+\begin{equation}
+k_BT_H\sim\frac{\hbar c}{R_s}
+\sim\frac{\hbar c^3}{GM}.
+\label{eq:l03-hawking-scale}
+\end{equation}
+Lập luận heuristic không thể xác định các hệ số như \(2\) và \(\pi\). Kết quả Hawking chính xác là
+\begin{equation}
+\boxed{k_BT_H=\frac{\hbar c^3}{8\pi GM}.}
+\label{eq:l03-hawking-exact}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_05.png}
+\caption{Bảng nhiệt độ hoàn chỉnh: \(R_s=2GM/c^2\), thang một-bit \(\hbar c/R_s\), và chuẩn hóa Hawking chính xác \(8\pi\).}
+\lectureframe{01:07:48.000}
+\end{figure}
+
+Hai điều xuất hiện ngay. Thứ nhất, nhiệt độ triệt tiêu cùng với \(\hbar\), nên đây là một hiệu ứng lượng tử. Thứ hai,
+\begin{equation}
+T_H\propto\frac{1}{M}.
+\end{equation}
+Một hố đen lớn thì lạnh. Với một khối lượng Mặt Trời,
+\begin{equation}
+T_H\approx6\times10^{-8}\ {\rm K},
+\end{equation}
+điều này cùng bậc với ước lượng \(10^{-8}\,\mathrm{K}\) của bài giảng và thấp hơn rất nhiều so với nhiệt độ nền vi sóng vũ trụ cỡ \(2.7\,\mathrm{K}\).
+
+\subsection{Nhiệt dung âm}
+
+Đặt một hố đen như vậy vào môi trường ấm hơn. Nó hấp thụ năng lượng, khối lượng tăng lên, và Phương trình~\eqref{eq:l03-hawking-exact} nói rằng nó trở nên lạnh hơn. Khi đó nó lại càng hấp thụ dễ hơn nữa. Đặt nó vào môi trường lạnh hơn thì sự mất ổn định theo chiều ngược lại bắt đầu: nó bức xạ, mất khối lượng, trở nên nóng hơn, và bức xạ nhanh hơn. Về hình thức,
+\begin{equation}
+C_{\mathrm{BH}}
+=\frac{dE}{dT_H}
+=c^2\frac{dM}{dT_H}
+<0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Đây có phải là điều được gọi là nhiệt dung riêng âm không?\lecturetimestamp{01:14:08}}
+\lecturerresponse{Chính xác. Một hệ tự hấp dẫn có thể nóng lên trong khi mất năng lượng. Một ngôi sao cũng làm điều tương tự: khi nó bức xạ, áp suất giảm cho phép nó co lại, và sự nén hấp dẫn làm nhiệt độ của nó tăng lên.}
+\end{classroomqa}
+
+Bởi vậy mà một hố đen cô lập không trở nên phi vật lý. Trong vũ trụ ngày nay, một hố đen cỡ sao lạnh hơn môi trường xung quanh và chủ yếu hấp thụ. Khi vũ trụ giãn nở và nền nguội đi, cán cân cuối cùng có thể đảo ngược và sự bay hơi có thể chiếm ưu thế. Cân bằng đơn giản với một bể nhiệt hiệu dụng vô hạn là bất ổn.\editorialnote{Điều kiện biên có ý nghĩa. Một hố đen có thể được ổn định trong một hốc phản xạ hữu hạn hoặc, đối với những hố đủ lớn thích hợp, trong không-thời gian phản de Sitter; tính bất ổn được mô tả ở đây là trường hợp phẳng tiệm cận với bể nhiệt thông thường.}
+
+\section{Định luật bay hơi}
+
+Để suy ra quy luật tỉ lệ, hãy tưởng tượng không có sách tra cứu trong tay và chọn hệ đơn vị trong đó các phương trình còn nhớ được viết ngắn nhất:
+\begin{equation}
+c=\hbar=G=k_B=1.
+\end{equation}
+Đó là các đơn vị Planck. Các thang đặc trưng được nêu trong bài giảng là
+\begin{equation}
+\ell_P\sim10^{-35}\ {\rm m},
+\qquad
+t_P\sim10^{-43}\ {\rm s},
+\qquad
+m_P\sim10^{-8}\ {\rm kg}.
+\end{equation}
+Khối lượng Planck xấp xỉ một hạt bụi có thể nhìn thấy, còn độ dài và thời gian Planck thì cực kỳ nhỏ. Vì \(c=1\), nên \(t_P\) đơn giản là thời gian ánh sáng đi qua \(\ell_P\).
+
+Hãy coi hố đen như một vật đen, nghĩa là một nguồn phát nhiệt chứ không phải một vật buộc phải luôn tối hoàn toàn. Nó có thể phát ra bức xạ điện từ và, về nguyên tắc, các loại hạt khác có thể có, kể cả graviton. Công suất bức xạ tỉ lệ với diện tích phát xạ vì bức xạ thoát ra qua bề mặt. Quy luật tỉ lệ Stefan--Boltzmann là
+\begin{equation}
+L=-\frac{dE}{dt}\sim A T^4.
+\end{equation}
+Trong đơn vị Planck, \(E=M\), \(R_s\sim M\), \(A\sim R_s^2\sim M^2\), và \(T\sim R_s^{-1}\sim M^{-1}\). Do đó
+\begin{align}
+-\frac{dM}{dt}
+&\sim R_s^2\left(\frac{1}{R_s}\right)^4
+\sim\frac{1}{R_s^2}
+\sim\frac{1}{M^2},\\
+-M^2\frac{dM}{dt}&\sim1,\\
+-\frac{d(M^3)}{dt}&\sim1.
+\label{eq:l03-evap-scaling}
+\end{align}
+Bỏ qua các hệ số cỡ một, thời gian sống là
+\begin{equation}
+\boxed{t_{\mathrm{evap}}\sim M^3.}
+\label{eq:l03-lifetime}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_06.png}
+\caption{Bảng bay hơi không bị cản trở: độ sáng cho \(-dM/dt\sim1/M^2\), do đó \(M^3\) giảm đều và thời gian sống tỉ lệ với lập phương của khối lượng ban đầu.}
+\lectureframe{01:23:20.000}
+\end{figure}
+
+Cách xử lý Stefan--Boltzmann kiểu phác họa này bỏ qua các hệ số greybody và số lượng các loài hạt. Với một hố trung hòa, không quay trong phép gần đúng đơn giản nhất chỉ có phát xạ không khối lượng, việc khôi phục các hằng số cho
+\begin{equation}
+t_{\mathrm{evap}}
+=\frac{5120\pi G^2M_0^3}{\hbar c^4}.
+\label{eq:l03-exact-lifetime}
+\end{equation}
+Hệ số này là một bổ sung biên tập; bài giảng chỉ suy ra sự phụ thuộc bền vững theo \(M_0^3\).
+
+\subsection{Các thang cỡ Mặt Trời, núi và kilôgam}
+
+Mặt Trời có khối lượng \(M_\odot\sim10^{30}\,\mathrm{kg}\sim10^{38}m_P\). Lấy lập phương rồi nhân với một thời gian Planck cho chuỗi ước lượng cố ý thô của bài giảng
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{114}t_P
+\sim10^{71}\ {\rm s}
+\sim10^{64}\ {\rm yr}.
+\end{equation}
+Dù theo cách ước lượng nào thì thời gian ấy cũng dài hơn một cách khủng khiếp so với tuổi vũ trụ cỡ \(10^{10}\) năm. Khôi phục hệ số trong Phương trình~\eqref{eq:l03-exact-lifetime} nâng ước lượng chuẩn cho một khối lượng Mặt Trời lên khoảng \(2\times10^{67}\) năm.\editorialnote{Sự khác biệt này là điều được chờ đợi: phép tính trên bảng bỏ hết các hằng số số học và làm tròn các thang Planck theo lũy thừa của mười. Mục đích của nó là quy luật tỉ lệ theo lập phương khối lượng, chứ không phải tính toán thời gian sống thiên văn một cách chính xác.}
+
+Lớp học sau đó thử xét một hố đen có khối lượng cỡ \emph{một ngọn núi}. Lớp chốt giá trị gần đúng trên lớp là \(M\sim10^{10}\,\mathrm{kg}\), do đó \(M\sim10^{18}m_P\), và thu được
+\begin{equation}
+t_{\mathrm{evap}}\sim10^{54}t_P
+\sim10^{11}\ {\rm s}
+\sim10^4\ {\rm yr}.
+\end{equation}
+Điều này giữ nguyên phép tính số học đã thực sự được tiến hành trên bảng. Hình dung hình học bằng lời dùng để gợi ra khối lượng ấy---xấp xỉ \(100\,\mathrm{km}^3\) đá---trên thực tế sẽ nặng hơn nhiều, và hệ số chính xác của thời gian sống cũng sẽ làm thay đổi kết quả đáng kể.\editorialnote{Ở mật độ đá thông thường, \(100\,\mathrm{km}^3\) cỡ \(10^{14}\,\mathrm{kg}\), không phải \(10^{10}\,\mathrm{kg}\). Với \(10^{10}\,\mathrm{kg}\), Phương trình~\eqref{eq:l03-exact-lifetime} cho thời gian sống cỡ \(10^6\) năm. Những hiệu chỉnh này không làm thay đổi bài học của bài giảng rằng thời gian sống tỉ lệ theo lập phương của khối lượng.}
+
+\begin{classroomqa}
+\audiencequestion{Liệu một hố đen có khối lượng chỉ một kilôgam có cực kỳ nhỏ không?\lecturetimestamp{01:29:14}}
+\lecturerresponse{Có. Vì bán kính tỉ lệ với khối lượng và một khối lượng Mặt Trời tương ứng với vài kilômét, nên bán kính Schwarzschild của một kilôgam vào cỡ \(10^{-27}\,\mathrm{m}\). Một hố như vậy cũng sẽ cực kỳ nóng và tồn tại rất ngắn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các ước lượng bay hơi này có giả sử nhiệt độ môi trường bằng không không?\lecturetimestamp{01:29:53}}
+\lecturerresponse{Chúng áp dụng khi môi trường xung quanh lạnh hơn hố đen, để năng lượng ròng chảy ra ngoài. Một môi trường nóng hơn thay vào đó sẽ cấp năng lượng cho hố đen. Khối lượng mà tại đó nhiệt độ Hawking khớp với nhiệt độ nền hiện nay được để lại như một bài tập.}
+\end{classroomqa}
+
+Để định hướng, đặt \(T_H=2.7\,\mathrm{K}\) thì được \(M\) cỡ \(10^{22}\,\mathrm{kg}\) và bán kính Schwarzschild cỡ \(10^{-4}\,\mathrm{m}\).\editorialnote{Đây là lời giải của bài tập được nêu trong bài giảng; nó không thuộc phần suy ra được trình bày miệng.}
+
+\section{Phải có gì bên dưới metric?}
+
+\begin{classroomqa}
+\audiencequestion{Cơ chế nào khiến các photon đi ra khỏi hố đen?\lecturetimestamp{01:30:53}}
+\lecturerresponse{Trước khi đưa ra một cơ chế vi mô cho bức xạ, trước hết phải xác định các bậc tự do chịu trách nhiệm cho entropy. Lập luận nhiệt động học ràng buộc cái phải tồn tại mà chưa cần hiển thị tường minh các biến ấy.}
+\end{classroomqa}
+
+Phép loại suy là cơ học chất lưu. Thủy động lực học mô tả các trường mật độ và vận tốc trơn mà không theo dõi từng phân tử. Tuy vậy, entropy cho thấy có nhiều cấu hình vi mô ẩn nằm dưới cùng một trạng thái trơn như thế. Theo cùng cách đó, thuyết tương đối rộng cổ điển mô tả một metric trơn nhưng không bộc lộ vô số bậc tự do vi mô được entropy hố đen đếm đến. Định luật diện tích và bức xạ Hawking là những manh mối cho thấy lý thuyết Einstein là một mô tả vĩ mô hiệu dụng.
+
+\begin{classroomqa}
+\audiencequestion{Nếu hố đen bức xạ năng lượng, có phải điều đó cũng có nghĩa là nó bức xạ thông tin, để rồi thông tin bị nuốt vào trong quá trình lớn lên quay trở lại trong quá trình bay hơi không?\lecturetimestamp{01:33:27}}
+\lecturerresponse{Đó là yêu cầu: nếu tiến hóa hoàn chỉnh bảo toàn thông tin, thì bức xạ đi ra cuối cùng phải phân biệt được các trạng thái khả dĩ đã tạo nên hố đen. Điều này vẫn phải được hòa giải với bức tranh nhân quả trong đó vật chất đi qua chân trời.}
+\end{classroomqa}
+
+Thông lượng năng lượng tự nó không đủ để đặc tả thông tin. Một ma trận mật độ nhiệt hoàn toàn có thể mang năng lượng trong khi quên mất trạng thái ban đầu chi tiết. Trong một mô tả đơn nhất, thông tin cần thiết được mã hóa trong những tương quan tinh vi giữa các lượng tử phát ra.\editorialnote{Sự phân biệt này làm tường minh dạng hiện đại của bài toán thông tin. Nó làm sắc nét hơn chứ không thay đổi câu hỏi được nêu trong bài giảng.}
+
+\section{Bảo toàn thông tin như một nguyên lý cấu trúc}
+
+\begin{classroomqa}
+\audiencequestion{Liệu bảo toàn thông tin có thực sự là một nguyên lý cơ bản không?\lecturetimestamp{01:34:13}}
+\lecturerresponse{Đó là một trong những nguyên lý cơ bản nhất. Nếu các trạng thái đầu khác nhau có thể tiến hóa thành chính xác cùng một trạng thái cuối, thì các định luật sẽ xóa đi chính quá khứ của chúng. Các định luật bảo toàn thông thường không chỉ dựa vào các đối xứng mà còn dựa vào một dạng tiến hóa Hamilton khả nghịch hoặc đơn nhất.}
+\end{classroomqa}
+
+Hãy tưởng tượng, như trong bài giảng, một định luật cơ bản hư cấu chỉ đơn giản khiến mọi cục tẩy đang trượt đều dừng lại. Các vận tốc ban đầu khác nhau đều kết thúc ở cùng một trạng thái. Cục tẩy ở trạng thái cuối không còn phân biệt được các lịch sử của nó nữa: thông tin đã bị hủy. Động lượng và cơ năng cũng biến mất. Ma sát thực không làm như vậy ở mức vi mô; động lượng và năng lượng truyền sang mặt bàn, không khí và các bậc tự do nhiệt.
+
+Ngay cả một mặt bàn vô hạn hoàn toàn đồng nhất cũng có đối xứng tịnh tiến, vậy mà định luật tắt dần hư cấu ấy vẫn có thể làm cục tẩy dừng lại. Vì thế, chỉ riêng đối xứng tịnh tiến là chưa đủ để suy ra bảo toàn động lượng từ một quy tắc phi Hamilton như vậy. Định lý Noether giả định một nguyên lý tác dụng và động lực học khả nghịch đi kèm. Theo ngôn ngữ được dùng ở đây, đối xứng cộng với động lực học bảo toàn thông tin sẽ cho ra định luật bảo toàn.
+
+\begin{classroomqa}
+\audiencequestion{Bảo toàn thông tin có cơ bản hơn tính nhân quả không?\lecturetimestamp{01:37:00}}
+\lecturerresponse{Chúng là những nguyên lý khác nhau ở một mức nền tảng tương đương. Trước hết, tính nhân quả phải được phát biểu một cách chính xác---chẳng hạn, rằng các tín hiệu không thể lan truyền ngược lại ra ngoài cấu trúc nhân quả được phép---nhưng không nguyên lý nào có thể đơn giản thay thế nguyên lý kia.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Việc bảo toàn diện tích trong không gian pha được bàn tới trong cơ học Hamilton có phải là phiên bản cổ điển của ý tưởng này không?\lecturetimestamp{01:37:38}}
+\lecturerresponse{Có. Định lý Liouville phát biểu rằng dòng Hamilton bảo toàn thể tích không gian pha. Một đám mây các trạng thái đầu khả dĩ không thể co sụp thành một thể tích nhỏ hơn và xóa đi các khác biệt. Trong cơ học lượng tử, mệnh đề tương ứng là tính đơn nhất: các tích vô hướng, và do đó các khác biệt giữa các trạng thái trực giao, được bảo toàn.}
+\end{classroomqa}
+
+Trong trường hợp cổ điển,
+\begin{equation}
+\frac{d}{dt}\,\mathrm{Vol}_{\Gamma}=0,
+\end{equation}
+đối với một miền không gian pha được dòng Hamilton mang theo. Trong trường hợp lượng tử,
+\begin{equation}
+\begin{aligned}
+\ket{\psi(t)}&=U(t)\ket{\psi(0)},\\
+U^\dagger U&=I,\\
+\braket{\psi(t)}{\phi(t)}
+&=\braket{\psi(0)}{\phi(0)}.
+\end{aligned}
+\end{equation}
+Đây là những dạng phát biểu chính xác của khẳng định rằng các khác biệt vi mô được bảo toàn qua tiến hóa theo thời gian.
+
+\section{Entropy phụ thuộc theo chiều nào?}
+
+Phần trao đổi cuối cùng quay trở lại entropy theo lý thuyết thông tin. Cho các xác suất \(p_i\) ứng với các khả năng vi mô,
+\begin{equation}
+S=-k_B\sum_i p_i\ln p_i
+\label{eq:l03-shannon}
+\end{equation}
+trong đơn vị nhiệt động lực học, hoặc bỏ \(k_B\) nếu là entropy Shannon không thứ nguyên.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_03_figure_07.png}
+\caption{Công thức trên bảng ở phần cuối \(S=-\sum_i p_i\log p_i\), được viết ra trong khi phân biệt một phân bố xác suất với giá trị entropy đơn lẻ được tính từ nó.}
+\lectureframe{01:40:32.000}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Việc cực đại hóa entropy có xác định phân bố xác suất hay không, thay vì các xác suất xác định entropy?\lecturetimestamp{01:38:33}}
+\lecturerresponse{Một phân bố xác suất xác định một giá trị entropy thông qua phương trình~\eqref{eq:l03-shannon}; một con số không thể khôi phục toàn bộ các \(p_i\). Việc cực đại hóa entropy chỉ có thể chọn ra một phân bố sau khi điều kiện chuẩn hóa và các ràng buộc khác, chẳng hạn năng lượng trung bình cố định, cũng đã được cho trước.}
+\end{classroomqa}
+
+Sự phân biệt đó khép lại bài giảng đúng ở đường biên của vấn đề. Hình học trơn đã dẫn tới một chân trời; chân trời đã dẫn tới nhiệt động lực học; nhiệt động lực học đã làm lộ ra các bậc tự do ẩn; và giờ đây bảo toàn thông tin đòi hỏi rằng các bậc tự do ấy phải tiến hóa mà không xóa đi những khác biệt đã đi vào hố. Cơ chế ấy vẫn chưa được đưa ra. Thay vào đó, hình học và việc hạch toán đã làm rõ điều mà bất kỳ lý thuyết vi mô thành công nào cũng phải giải thích.
